@@ -70,12 +70,12 @@
                   items:
                     - name: A Supply Chain Management kezdőlapjának új vagy módosult elemei
                       href: get-started/whats-new-home-page.md
+                    - name: Supply Chain Management 10.0.12 (2020. augusztus)
+                      href: get-started/whats-new-scm-10-0-12.md
                     - name: Supply Chain Management 10.0.11 (2020. július)
                       href: get-started/whats-new-scm-10-0-11.md
                     - name: Supply Chain Management 10.0.10 (2020. május)
                       href: get-started/whats-new-scm-10-0-10.md
-                    - name: Supply Chain Management 10.0.9 (2020. április)
-                      href: get-started/whats-new-scm-10-0-9.md
                 - name: Eltávolított vagy elavult funkciók
                   items:
                     - name: Eltávolított vagy elavult funkciók a Dynamics 365 Supply Chain Management szolgáltatásban
@@ -595,6 +595,8 @@
                   href: cost-management/bom-calculations.md
                 - name: Darabjegyzék-számítási csoportok
                   href: cost-management/bom-calculation-groups.md
+                - name: Költségszámítási szint
+                  href: cost-management/cost-calculation-level.md
                 - name: Visszavezetéses költségelszámolás
                   href: cost-management/backflush-costing.md
                 - name: A termelési különbözetek gyakori okai
@@ -1345,6 +1347,8 @@
                   href: master-planning/planning-optimization/planning-optimization-fit-analysis.md
                 - name: Szűrők alkalmazása egy tervre
                   href: master-planning/planning-optimization/plan-filters.md
+                - name: Alaptervezés a beszerzésre vonatkozó kereskedelmi megállapodásokkal
+                  href: master-planning/planning-optimization/purchase-trade-agreement.md
                 - name: Tervelőzmények és tervezési naplók megtekintése
                   href: master-planning/planning-optimization/plan-history-logs.md
                 - name: Automatikus megerősítés a tervezési optimalizációval
@@ -1989,7 +1993,9 @@
                       href: production-control/release-production-orders.md
                     - name: Termelési rendelések jelentése befejezettként
                       href: production-control/report-production-orders-as-finished.md
-                    - name: Jelentés készként egy azonosítótábla-vezérelt helyre
+                    - name: Feladatkártya konfigurálása az eszközökhöz
+                      href: production-control/config-job-card-device.md
+                    - name: Jelentés befejezettként a feladatkártya eszközből
                       href: production-control/report-finished-job-device.md
                     - name: Termelési rendelési állapot sztornírozása
                       href: production-control/reverse-production-order-status.md
@@ -2259,6 +2265,16 @@
                   href: sales-marketing/tasks/register-sales-commissions.md
                 - name: Értékesítési jutalékok szabályainak beállítása
                   href: sales-marketing/tasks/set-up-sales-commission-rules.md
+            - name: Ügyfélportál a Dynamics 365 Supply Chain Management szolgáltatáshoz
+              items:
+                - name: Ügyfélportál áttekintése
+                  href: sales-marketing/customer-portal-overview.md
+                - name: 'Az ügyfélportál telepítése, beállítása és frissítése.'
+                  href: sales-marketing/customer-portal-setup.md
+                - name: Ügyfélportál felhasználóinak létrehozása és kezelése
+                  href: sales-marketing/customer-portal-user-admin.md
+                - name: Ügyfélportál testre szabása és használata
+                  href: sales-marketing/customer-portal-customize.md
             - name: Promóciós engedmény
               href: sales-marketing/trade-allowance.md
             - name: Új kereskedelmi szerződés létrehozása
@@ -2475,7 +2491,7 @@
                           href: service-management/reverse-changes-in-a-dispatch-board.md
                         - name: Hozzá nem rendelt szervizrendelések megtekintése
                           href: service-management/view-undispatched-service-orders.md
-                        - name: 'Szolgáltatási darabjegyzék módosítása '
+                        - name: Szerviz darabjegyzék módosítása
                           href: service-management/modify-service-bom.md
                     - name: Szolgáltatás nyújtása
                       items:
@@ -2649,12 +2665,14 @@
                   href: inventory/inventory-blocking.md
                 - name: Ciklikus leltározás
                   href: warehousing/cycle-counting.md
-                - name: 'Ciklikus leltározás meghatározása '
+                - name: Ciklikus leltározás meghatározása
                   href: warehousing/tasks/define-cycle-counting-microsoft-dynamics-365-finance-operations-enterprise-edition-july-2017.md
                 - name: Helyek részleges ciklikus leltározása
                   href: warehousing/partial-location-cycle-counting.md
-                - name: 'Részleges ciklikus leltározásos helyfolyamat meghatározása '
+                - name: Részleges ciklikus leltározásos helyfolyamat meghatározása
                   href: warehousing/tasks/define-partial-location-cycle-counting-process.md
+                - name: Raktárkezelés – készleten lévő elemek törlési feladata
+                  href: warehousing/onhand-cleanup.md
                 - name: Készletnapló
                   href: inventory/inventory-journals.md
                 - name: Készlethely

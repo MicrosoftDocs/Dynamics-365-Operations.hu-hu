@@ -70,12 +70,12 @@
                   items:
                     - name: Új vagy módosult elemek a Finance kezdőlapján
                       href: get-started/whats-new-home-page.md
+                    - name: Finance 10.0.12 (2020. augusztus)
+                      href: get-started/whats-new-changed-10-0-12.md
                     - name: Finance 10.0.11 (2020. július)
                       href: get-started/whats-new-changed-10-0-11.md
                     - name: Finance 10.0.10 (2020. május)
                       href: get-started/whats-new-changed-10-0-10.md
-                    - name: Finance 10.0.9 (2020. április)
-                      href: get-started/whats-new-changed-10-0-9.md
             - name: Eltávolított vagy elavult funkciók
               items:
                 - name: Eltávolított vagy elavult funkciók a Dynamics 365 Finance szolgáltatásban
@@ -228,10 +228,12 @@
                   href: accounts-payable/tasks/set-up-accounts-payable-invoice-matching-validation.md
             - name: Könyvelési felosztások és analitikusnapló-bejegyzések szállítói számlákhoz
               href: accounts-payable/accounting-distributions-subledger-journal-entries-vendor-invoices.md
-            - name: Számlaegyeztetés és vállalatközi beszerzési rendelés
+            - name: Számlaegyeztetés és vállalatközi beszerzési rendelések
               href: accounts-payable/invoice-matching-intercompany-purchase-orders.md
             - name: Szállítói számla irányelveinek beállítása
               href: accounts-receivable/tasks/set-up-vendor-invoice-policies.md
+            - name: Szállítói fizetési javaslatok automatizálása
+              href: accounts-payable/automate-vendor-payment-proposal.md
             - name: A szállítói számlák rögzítése és összevetése a bevételezett mennyiséggel
               href: accounts-payable/tasks/record-vendor-invoice-match-against-received-quantity.md
             - name: Ellenőrzött fizetési áttekintés
@@ -324,14 +326,6 @@
               href: accounts-receivable/copy-customer.md
             - name: Vevői munkafolyamat
               href: accounts-receivable/customer-workflow.md
-            - name: Követelések és beszedések a Kinnlevőségek modulban
-              href: accounts-receivable/collections-credit-accounts-receivable.md
-            - name: 'A Kinnlevőségek modul, követelések és beszedések konfigurálása'
-              href: accounts-receivable/accounts-receivables-set-up-overview.md
-            - name: Követelések és beszedések beállítása
-              href: accounts-receivable/set-up-collections.md
-            - name: A beszedésekkel kapcsolatos adatok felülvizsgálata
-              href: accounts-receivable/tasks/review-collections-information.md
             - name: A bevételelszámolás áttekintése
               href: accounts-receivable/revenue-recognition-overview.md
             - name: A bevételelszámolás beállítása
@@ -410,7 +404,15 @@
               items:
                 - name: Követelések és beszedések áttekintése
                   href: accounts-receivable/cm-credit-and-collections-overview.md
-                - name: Hitelkezelési beállítások
+                - name: Beszedések a Kinnlevőségek modulban
+                  href: accounts-receivable/collections-credit-accounts-receivable.md
+                - name: 'A Kinnlevőségek modul, követelések és beszedések konfigurálása'
+                  href: accounts-receivable/accounts-receivables-set-up-overview.md
+                - name: Követelések és beszedések beállítása
+                  href: accounts-receivable/set-up-collections.md
+                - name: A beszedésekkel kapcsolatos adatok felülvizsgálata
+                  href: accounts-receivable/tasks/review-collections-information.md
+                - name: Hitelkezelés beállítása
                   href: accounts-receivable/cm-credit-mgmt-setup.md
                 - name: Hitelkezelési beállítások adatai
                   href: accounts-receivable/cm-setup-information.md
@@ -448,7 +450,9 @@
               href: accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
             - name: Leírási napló létrehozása vevőhöz
               href: accounts-receivable/tasks/create-write-off-journal-customer.md
-        - name: Költségvetés-készítés
+            - name: Speciális megjegyzések kezelése
+              href: localizations/emea-ita-exil-structured-notes.md
+        - name: Költségvetés készítése
           items:
             - name: Költségvetés-készítés – kezdőlap
               href: budgeting/budgeting-overview.md
@@ -978,6 +982,8 @@
               href: project-management/tasks/configure-intercompany-project-invoicing.md
             - name: Munka és kiadások elszámolóárainak konfigurálása
               href: project-management/tasks/configure-standard-costs-labor-expenses.md
+            - name: Szállítói kifizetések visszatartási feltételeinek létrehozása és alkalmazása
+              href: project-management/create-and-apply-vendor-payment-retention-terms.md
             - name: Saját fizetés beérkezésekor fizetendő szállítói fizetések beállítása és használata
               href: project-management/setup-manage-vendor-payments.md
             - name: Projektköltség-könyvelési beszerzési bizonylatok
@@ -1000,6 +1006,10 @@
               href: project-management/project-purchase-orders.md
             - name: Projektajánlatok
               href: project-management/project-quotations.md
+            - name: 'Projekt árajánlat megerősítése, frissítése és elküldése'
+              href: project-management/confirm-update-send-project-quotation.md
+            - name: Árajánlat átvitele egy projektbe.
+              href: project-management/transfer-quote-new-existing-project.md
             - name: Projekterőforrások
               href: project-management/project-resourcing.md
             - name: Cikkek átvétele cikkszükségletből származó beszerzési rendelés alapján
@@ -1022,11 +1032,13 @@
                   href: project-management/custom-fields-mobile.md
             - name: Projekttámogatások
               href: project-management/project-grants.md
+            - name: Projektbecslés figyelmen kívül hagyása
+              href: project-management/eliminate-project-estimate.md
         - name: Állami szektor
           items:
             - name: Állami szektor – kezdőlap
               href: public-sector/public-sector-functionality.md
-            - name: Az Állami szektor funkció tervezése
+            - name: Az állami szektor funkció tervezése
               href: public-sector/plan-public-sector-functionality.md
             - name: Fedőlap és aláírási ívek létrehozása állami szektor fizetési jelentéseire vonatkozóan
               href: public-sector/tasks/create-cover-signature-pages-payments-report-public-sector.md
@@ -1396,7 +1408,7 @@
                       href: localizations/latam-bra-tax-payments.md
                     - name: Áfa az értékesítési ajánlatokban
                       href: localizations/tasks/br-00057-brazilian-taxes-sales-quotation.md
-                    - name: 'Adóelőlegek '
+                    - name: Adóelőlegek
                       href: localizations/tasks/br-00009-brazilian-withholding-taxes.md
                     - name: A vevői kifizetések adóelőlegei
                       href: localizations/tasks/br-00042-withholding-taxes-customers-payments.md
@@ -1754,15 +1766,17 @@
                   href: localizations/emea-hun-low-cost-fixed-assets.md
                 - name: Tárgyi eszköz áthelyezése készletbe
                   href: localizations/emea-hun-fixed-asset-to-inventory.md
-                - name: Adó-visszaigénylési dokumentum
+                - name: Adó-visszaigénylési dokumentumok
                   href: localizations/emea-hun-tax-reimbursement-docs.md
                 - name: Év végi zárás
                   href: localizations/emea-cze-hun-year-end.md
+                - name: Online számlázási rendszer
+                  href: localizations/emea-hun-online-invoicing.md
             - name: Izland
               items:
                 - name: Izland – áttekintés
                   href: localizations/iceland.md
-                - name: Szállítói számla létrehozása és számlabevallás-kategória csatolása
+                - name: Szállítói számla létrehozása és számlabevallási kategória csatolása
                   href: localizations/tasks/create-vendor-account-attach-invoice-declaration-category.md
                 - name: Szállítók számára történő számlabevallás beállítása
                   href: localizations/tasks/set-up-invoice-declaration-vendors.md
@@ -2008,8 +2022,6 @@
                   href: localizations/emea-ita-exil-bank-accounts-setup.md
                 - name: Vegyes költségek kilogrammonként egy Intrastat-bevallásban
                   href: localizations/emea-ita-exil-misc-charges-intrastat.md
-                - name: Speciális megjegyzések kezelése
-                  href: localizations/emea-ita-exil-structured-notes.md
                 - name: Szándéknyilatkozatok – A szokásos exportőrök számlázása
                   href: localizations/emea-ita-exil-intent-letter.md
                 - name: Ingyenesen szállított áruk adószámlája
@@ -2288,8 +2300,8 @@
                   href: localizations/tasks/nl-00010-electronic-tax-declarations-evat.md
                 - name: Semansys XBRL-integráció
                   href: localizations/tasks/nl-00003-semansys-xbrl-integration.md
-                - name: 'Könyvvizsgálati fájl - XML Auditfile Financieel, XAF'
-                  hred: localizations/emea-nl-audit-file.md
+                - name: Könyvvizsgálati fájl (XML Auditfile Financieel XAF)
+                  href: localizations/emea-nl-audit-file.md
             - name: Norvégia
               items:
                 - name: Norvégia – áttekintés
@@ -2359,7 +2371,7 @@
                     - name: Oroszország – előlegre jogosultak áttekintése
                       href: localizations/rus-advance-holders.md
                     - name: Előlegre jogosult létrehozása
-                      href: 'localizations/emea-advance-holders.md#create-an-advance-holder'
+                      href: localizations/emea-advance-holders.md#create-an-advance-holder
                     - name: Előlegre jogosultak napi műveletei
                       href: localizations/rus-advance-holders-daily-operations.md
                     - name: Előlegjelentések költségvetés-ellenőrzéssel
@@ -2970,6 +2982,8 @@
               items:
                 - name: Konfigurációk létrehozása
                   href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md?toc=/dynamics365/finance/toc.json
+                - name: Az ER-konfigurációk függőségének meghatározása más összetevőknél
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/dynamics365/finance/toc.json
                 - name: Az Elektronikus jelentéskészítés megoldás összetevőinek előkészítése
                   items:
                     - name: Tartományspecifikus adatmodell kialakítása
@@ -3252,10 +3266,6 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-qrcode.md?toc=/dynamics365/finance/toc.json
                         - name: 'Szöveg: Text'
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-text.md?toc=/dynamics365/finance/toc.json
-            - name: ER modell-leképezés kezelése külön ER-konfigurációkban
-              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/finance/toc.json
-            - name: Adatmodell-definíciók kiválasztása formátumok létrehozásakor
-              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/dynamics365/finance/toc.json
             - name: ER-formátumok tervezése kimenő elektronikus dokumentumok különböző formátumokban történő létrehozásához
               items:
                 - name: Konfigurációk tervezése a kimenő dokumentumok Excel-formátumban történő létrehozásához
@@ -3290,8 +3300,6 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/dynamics365/finance/toc.json
                 - name: Generált XML-fájlok felosztása méret és tartalommennyiség alapján
                   href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/finance/toc.json
-            - name: Az ER-konfigurációk függőségének meghatározása más összetevőknél
-              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/dynamics365/finance/toc.json
             - name: Alkalmazásadatok frissítése Elektronikus jelentéskészítés segítségével
               items:
                 - name: Elektronikus dokumentumok generálása és alkalmazásadatok frissítése
@@ -3321,31 +3329,41 @@
                     - name: Fájlok importálása XML-formátumban opcionális attribútumokkal
                       href: ../fin-ops-core/dev-itpro/analytics/rcs-optional-attributes.md?toc=/dynamics365/finance/toc.json
                     - name: ER-formátumok konfigurálása XML-formátumú fájlok opcionális attribútumokkal való importálásához
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/import-files-xml-format-optional-attributes.md
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/import-files-xml-format-optional-attributes.md?toc=/dynamics365/finance/toc.json
             - name: Konfigurációs életciklus
               items:
                 - name: Konfigurációk életciklusának kezelése
                   href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-manage-configuration-lifecycle.md?toc=/dynamics365/finance/toc.json
-                - name: Konfigurációk feltöltése a Lifecycle Services szolgáltatásba
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/dynamics365/finance/toc.json
-                - name: Konfigurációk importálása a Lifecycle Services szolgáltatásból
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?toc=/dynamics365/finance/toc.json
-                - name: Konfigurációk letöltése a Lifecycle Services szolgáltatásból
-                  href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/dynamics365/finance/toc.json
-                - name: Konfigurációk importálása
-                  href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/finance/toc.json
-                - name: Továbbfejlesztési szűrési lehetőségek a konfigurációk globális tárházban való keresése esetén
-                  href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/finance/toc.json
-                - name: ER-konfigurációk letöltése az RCS-tárházból
+                - name: Lifecycle Services (LCS)
                   items:
-                    - name: Konfigurációk letöltése az ER-tárházból az RCS-típusból
-                      href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/finance/toc.json
-                    - name: Konfigurációk importálása RCS-ből
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md
-                - name: 'Hozzon létre ER-konfigurációkat a RCS-ben, és töltse fel őket a globális tárházba'
-                  href: localizations/rcs-global-repo-upload.md
-                - name: Ossza meg az ER-konfigurációkat külső szervezetekkel RCS-ben
-                  href: localizations/rcs-global-repo-share-configuration.md
+                    - name: Konfigurációk feltöltése az LCS-be
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/dynamics365/finance/toc.json
+                    - name: Konfigurációk importálása LCS-ből
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?toc=/dynamics365/finance/toc.json
+                    - name: Konfigurációk letöltése az LCS-ből
+                      href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/dynamics365/finance/toc.json
+                    - name: Konfigurációk importálása (LBD)
+                      href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/finance/toc.json
+                - name: Regulatory services (RCS)
+                  items:
+                    - name: Kapcsolódás Regulatory Configuration Services (RCS) szolgáltatáshoz – Globalizációs jellemzők
+                      href: localizations/rcs-globalization-feature.md
+                    - name: ER konfigurációk letöltése a Finance programba
+                      items:
+                        - name: Konfigurációk letöltése az RCS-ből
+                          href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/finance/toc.json
+                        - name: Konfigurációk importálása RCS-ből
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/finance/toc.json
+                    - name: Globális adattár (GR)
+                      items:
+                        - name: Konfigurációk importálása GR-ből
+                          href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/finance/toc.json
+                        - name: Továbbfejlesztett szűrés a konfigurációk GR-ben való kereséséhez
+                          href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/finance/toc.json
+                        - name: Konfigurációk feltöltése a GR-be
+                          href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/finance/toc.json
+                        - name: Konfigurációk megosztása a GR-ben
+                          href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/finance/toc.json
             - name: Oktatóanyagok
               items:
                 - name: Az adatforrások használatának megismerése
@@ -3392,18 +3410,26 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/dynamics365/finance/toc.json
                         - name: Adatforrásokban történő hibakeresés
                           href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=dynamics365/finance/toc.json
-                - name: Országkörnyezet-függő ER-modell-leképezések konfigurálása
-                  href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=dynamics365/finance/toc.json
-                - name: ER-formátumok konfigurálása a jogi személyenként meghatározott paraméterek használatára
-                  href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md?toc=dynamics365/finance/toc.json
-                - name: Az ER-formátum paramétereinek beállítása jogi személyenként
-                  href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md?toc=dynamics365/finance/toc.json
-                - name: Az ER-formátumelemek végrehajtásának elhalasztása
+                - name: Modell-hozzárendelések konfigurálása
                   items:
-                    - name: Szekvenciaelem végrehajtásának elhalasztása
-                      href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md?toc=dynamics365/finance/toc.json
-                    - name: XML-elem végrehajtásának elhalasztása
-                      href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md?toc=dynamics365/finance/toc.json
+                    - name: Országkörnyezet-függő ER-modell-leképezések konfigurálása
+                      href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=dynamics365/finance/toc.json
+                    - name: ER modell-leképezés kezelése külön ER-konfigurációkban
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/finance/toc.json
+                - name: Formátumok konfigurálása
+                  items:
+                    - name: ER-formátumok konfigurálása a jogi személyenként meghatározott paraméterek használatára
+                      href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md?toc=dynamics365/finance/toc.json
+                    - name: Az ER-formátum paramétereinek beállítása jogi személyenként
+                      href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md?toc=dynamics365/finance/toc.json
+                    - name: Modell-definíciók kiválasztása formátumok létrehozásakor
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/dynamics365/finance/toc.json
+                    - name: Az ER-formátumelemek végrehajtásának elhalasztása
+                      items:
+                        - name: Szekvenciaelem végrehajtásának elhalasztása
+                          href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md?toc=dynamics365/finance/toc.json
+                        - name: XML-elem végrehajtásának elhalasztása
+                          href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md?toc=dynamics365/finance/toc.json
                 - name: Adatkötések relatív elérési útja
                   href: ../fin-ops-core/dev-itpro/analytics/relative-path-data-bindings-er-models-format.md?toc=dynamics365/finance/toc.json
             - name: Elektronikus jelentéskészítési megoldások használata a Finance and Operations modulban

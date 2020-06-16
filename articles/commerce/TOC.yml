@@ -88,6 +88,8 @@
                   items:
                     - name: Új vagy módosult elemek a Commerce kezdőlapján
                       href: get-started/whats-new-home-page.md
+                    - name: Commerce 10.0.12 (2020. augusztus)
+                      href: get-started/whats-new-commerce-10-0-12.md
                     - name: Commerce 10.0.11 (2020. július)
                       href: get-started/whats-new-commerce-10-0-11.md
                     - name: Commerce 10.0.10 (2020. május)
@@ -212,11 +214,11 @@
               items:
                 - name: Önkiszolgáló telepítők szinkronizálása a Dynamics 365 Commerce szolgáltatásban
                   href: dev-itpro/Synchronize-installers.md
-                - name: Commerce Scale Unit
+                - name: Commerce Scale Unit (saját tárolású)
                   href: dev-itpro/retail-store-system-begin.md
-                - name: A Commerce Scale Unit konfigurálása és telepítése
+                - name: A Commerce Scale Unit (saját tárolású) konfigurálása és telepítése
                   href: dev-itpro/retail-store-scale-unit-configuration-installation.md
-                - name: A Modern POS konfigurálása és telepítése
+                - name: Modern POS konfigurálása és telepítése
                   href: retail-modern-pos-device-activation.md
                 - name: Számlák és eszközök kezelése a központból
                   href: set-up-activation-accounts-validate-devices-hq.md
@@ -604,7 +606,7 @@
               items:
                 - name: Termékajánlatok áttekintése
                   href: product-recommendations.md
-                - name: ADLS engedélyezése Dynamics 365 Commerce környezetben
+                - name: Az Azure Data Lake Storage engedélyezése Dynamics 365 Commerce környezetben
                   href: enable-ADLS-environment.md
                 - name: Termékajánlatok engedélyezése
                   href: enable-product-recommendations.md
@@ -644,10 +646,10 @@
               items:
                 - name: Készlet
                   items:
-                    - name: Áruházi árukészlet kezelése
+                    - name: Kiskereskedelmi árukészlet kezelése
                       href: work-with-store-inventory.md
-                    - name: Szerializált cikkek használata
-                      href: ../supply-chain/sales-marketing/register-serial-numbers-sales-process.md?toc=/dynamics365/commerce/toc.json
+                    - name: Készletpufferek és készletszintek konfigurálása
+                      href: inventory-buffers-levels.md
                     - name: Szerializált cikkek használata a pénztárban
                       href: pos-serialized-items.md
                     - name: Termékek elosztása az elosztási központból az áruházba a központi elosztás használatával
@@ -824,6 +826,8 @@
                   href: authoring-home-overview.md
                 - name: Felhasználók és szerepkörök kezelése
                   href: manage-ecommerce-users-roles.md
+                - name: Készletbeállítások alkalmazása
+                  href: inventory-settings.md
                 - name: A webhely keresőmotor-optimalizálási (SEO) szempontjai
                   href: search-engine-optimization-considerations.md
                 - name: Tartalomra vonatkozó biztonsági irányelv (CSP) kezelése
@@ -848,6 +852,8 @@
                       href: select-site-theme.md
                     - name: A CSS felülíró fájljainak használata
                       href: css-override-files.md
+                    - name: Előre beállított stílusok használata
+                      href: style-presets.md
                     - name: Kedvencek ikon hozzáadása
                       href: add-favicon.md
                     - name: Üdvözlő üzenet hozzáadása
@@ -932,6 +938,10 @@
                   items:
                     - name: Tárolómodul
                       href: add-container-module.md
+                    - name: Harmonikamodul
+                      href: add-accordion.md
+                    - name: Lapmodul
+                      href: add-tab.md
                 - name: Marketingmodulok
                   items:
                     - name: Promóciós szalagcím modul
@@ -974,13 +984,17 @@
                   items:
                     - name: Számlakezelési oldalak és modulok
                       href: account-management.md
-                - name: Termékgyűjtési modulok
+                - name: Termékgyűjtemény modulok
                   items:
-                    - name: Termékgyűjtési modulok
+                    - name: Termékgyűjtemény modulok
                       href: product-collection-module-overview.md
+                - name: Navigációs modulok
+                  items:
+                    - name: Útkövetési modul
+                      href: add-breadcrumb.md
             - name: Keresés
               items:
-                - name: Az alapértelmezett kategória-céloldal és keresési találatoldal
+                - name: Az alapértelmezett kategória céloldala és keresési találatoldala
                   href: category-search-page-overview.md
                 - name: Felhőalapú keresés – áttekintés
                   href: cloud-powered-search-overview.md
@@ -1048,6 +1062,10 @@
                   href: localizations/emea-fra-cash-registers.md
                 - name: Pénztárgépek telepítésére vonatkozó irányelvek
                   href: localizations/emea-fra-deployment.md
+            - name: Németország
+              items:
+                - name: Adóügyi regisztrációs szolgáltatás integrációját bemutató minta Németországra vonatkozóan
+                  href: localizations/emea-deu-fi-sample.md
             - name: India
               items:
                 - name: Áruk és szolgáltatások adójának (GST) integrálása a pénztárgépek esetén
@@ -1976,11 +1994,13 @@
                       href: e-commerce-extensibility/create-theme.md
                     - name: Témabeállítások konfigurálása
                       href: e-commerce-extensibility/configure-theme-settings.md
-                    - name: Téma kiterjesztése
+                    - name: Téma kiterjesztése modulbővítmények hozzáadásához
+                      href: e-commerce-extensibility/theme-module-extensions.md
+                    - name: Téma kiterjesztése alaptémából
                       href: e-commerce-extensibility/extend-theme.md
                 - name: Parancsfájl betöltése
                   items:
-                    - name: Parancsfájl-betöltő
+                    - name: Parancsfájl-betöltők
                       href: e-commerce-extensibility/script-injector.md
                 - name: Telemetria és analitika
                   items:
@@ -2072,17 +2092,17 @@
                   href: dev-itpro/hardware-device-extension.md
             - name: Retail Server bővíthetősége
               items:
-                - name: Retail Server OData-vezérlőjének kiterjesztése
+                - name: Commerce Scale Unit OData-vezérlőjének kiterjesztése
                   href: dev-itpro/extend-retail-server-odata-controller.md
-                - name: Retail Server – ügyfél és fogyasztói API-k
+                - name: Commerce Scale Unit – ügyfél és fogyasztói API-k
                   href: dev-itpro/retail-server-customer-consumer-api.md
-                - name: Az alapértelmezett Retail Server metaadat-vezérlőjének kiterjesztése
+                - name: Az alapértelmezett Commerce Scale Unit metaadat-vezérlő kiterjesztése
                   href: dev-itpro/extend-metadata.md
                 - name: A CRT szolgáltatás hívása offline módban
                   href: dev-itpro/call-crt-service-offline.md
-                - name: Új Retail Server-kiterjesztés létrehozása
+                - name: Új Retail Server bővítmény létrehozása
                   href: dev-itpro/retail-server-extension.md
-                - name: 'A Retail Typescript és a C# proxyk'
+                - name: A Retail Typescript és a C# proxyk
                   href: dev-itpro/typescript-proxy-retail-pos.md
             - name: A Commerce Runtime (CRT) bővíthetősége
               items:
@@ -2096,9 +2116,7 @@
                   href: dev-itpro/add-customer-preference-channel.md
                 - name: Retail csatornák titkainak kezelése
                   href: dev-itpro/manage-secrets.md
-                - name: Tulajdonságok hozzáadása az értékesítési rendelésekhez
-                  href: dev-itpro/add-properties-sales-order.md
-                - name: A CRT bővíthetősége és az eseményindítók
+                - name: CRT bővíthetőség és eseményindítók
                   href: dev-itpro/commerce-runtime-extensibility-trigger.md
                 - name: Tranzakciók zárolása eseményindítók segítségével
                   href: dev-itpro/trigger-example-blocking-transaction.md
