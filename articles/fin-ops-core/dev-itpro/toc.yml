@@ -14,6 +14,8 @@
               items:
                 - name: Új vagy módosult elemek a Platformfrissítések kezdőlapján
                   href: get-started/whats-new-home-page.md
+                - name: Platformfrissítés a 10.0.12-es verzióhoz (2020. augusztus)
+                  href: get-started/whats-new-platform-update-10-0-12.md
                 - name: Platformfrissítés a 10.0.11-es verzióhoz (2020. július)
                   href: get-started/whats-new-platform-update-35.md
                 - name: Platformfrissítés a 10.0.10-es verzióhoz (2020. május)
@@ -198,6 +200,8 @@
                               href: data-entities/dual-write/in-house-assets.md
                             - name: 'Integrált dolgozó, feladat és beosztás'
                               href: data-entities/dual-write/integrated-hr.md
+                            - name: Készlet rendelkezésre állása
+                              href: data-entities/dual-write/inventory-availability.md
                         - name: A kettős írás támogatása
                           items:
                             - name: A Field Service- és Project Service Automation-megoldások támogatása
@@ -452,9 +456,9 @@
                   href: ../fin-ops/imp-lifecycle/architecture-overview.md
                 - name: Frissítések alkalmazása felhőalapú környezetekre
                   href: deployment/apply-deployable-package-system.md
-                - name: Frissítések és bővítmények alkalmazása a felhőben tárolt Retail-csatorna összetevőire
+                - name: Frissítések és bővítmények alkalmazása a Commerce Scale Unit (felhő) szolgáltatásra
                   href: deployment/Update-retail-channel.md
-                - name: Retail Cloud Scale Unit inicializálása
+                - name: A Commerce Scale Unit (felhő) inicializálása
                   href: deployment/Initialize-Retail-Channels.md
                 - name: Retail adattárolási hely
                   href: deployment/retail-data-residency.md
@@ -488,7 +492,9 @@
                       href: deployment/certificate-rotation-on-prem.md
                     - name: Kliens internetkapcsolata
                       href: user-interface/client-disconnected.md
-                    - name: Proxyk konfigurálása a helyszíni környezetekhez
+                    - name: Csak kötegelt és csak interaktív AOS-csomópontok konfigurálása a helyszíni telepítéseknél
+                      href: deployment/onprem-batchonly.md
+                    - name: Proxyk konfigurálása helyszíni környezetekhez
                       href: deployment/onprem-reverseproxy.md
                     - name: Helyszíni diagnosztika
                       href: deployment/on-premises-diagnostics.md
@@ -646,11 +652,11 @@
                   href: dev-tools/debug-xpp.md
                 - name: EventHandlerResult-osztályok a kérelmi vagy válaszesetekben
                   href: dev-tools/event-handler-result-class.md
-                - name: 'Üzleti logika írása C# és X++ forráskóddal'
+                - name: Üzleti logika írása C# és X++ forráskóddal
                   href: dev-tools/write-business-logic.md
                 - name: Az X ++ és az X ++ fordító változásai
                   href: dev-tools/programming-language-support.md
-                - name: 'LINQ-szolgáltató a C#-nyelvhez'
+                - name: LINQ-szolgáltató a C#-nyelvhez
                   href: dev-tools/linq-provider-c.md
                 - name: Ajánlott eljárási szabályok írása
                   href: dev-tools/author-best-practice-rules.md
@@ -710,7 +716,7 @@
                       href: dev-ref/xpp-macros.md
                     - name: X++-attribútumosztályok
                       href: dev-ref/xpp-attribute-classes.md
-                    - name: 'Az X++ és a C# összehasonlítása'
+                    - name: Az X++ és a C# összehasonlítása
                       href: dev-ref/xpp-cs-comparison.md
                     - name: Az X++ szintaxisa
                       href: dev-ref/xpp-syntax.md
@@ -1048,7 +1054,9 @@
                   href: lifecycle-services/removed-deprecated-features.md
             - name: Lifecycle Services használati útmutató
               href: lifecycle-services/lcs-user-guide.md
-            - name: Előfizetés-becslő
+            - name: Projekt felvétele
+              href: lifecycle-services/project-onboarding.md
+            - name: Előfizetésbecslő
               href: lifecycle-services/subscription-estimator.md
             - name: A biztonsági beállítások megadása
               href: lifecycle-services/configure-lcs-security.md
@@ -1118,6 +1126,20 @@
                   href: lifecycle-services/use-translation-service-ua.md
                 - name: Fordításimemória-fájlok
                   href: lifecycle-services/use-translation-service-tm.md
+        - name: Microsoft Power Platform-integráció
+          items:
+            - name: Microsoft Power Platform integráció a Finance and Operations alkalmazással
+              href: power-platform/overview.md
+            - name: Entitásmodellezés
+              href: power-platform/entity-modeling.md
+            - name: Alkalmazáséletciklus-kezelés
+              href: power-platform/application-lifecycle-management.md
+            - name: Finance and Operations és Common Data Service rendszergazdai hivatkozás
+              href: power-platform/admin-reference.md
+            - name: Power Apps portálok a Finance and Operations alkalmazáshoz
+              href: power-platform/power-portal-reference.md
+            - name: Finance and Operations virtuális entitások GYIK
+              href: power-platform/faq.md
         - name: Mobil platform
           items:
             - name: Mobil platform erőforrásai
@@ -1330,9 +1352,7 @@
               href: perf-test/rsat/rsat-overview.md
             - name: Telepítés és konfiguráció
               href: perf-test/rsat/rsat-install-configure.md
-            - name: Az adatok agnosztikus tesztelése a Regression Suite Automation Tool használatával
-              href: ../fin-ops/get-started/recommendation-data-agnostic-testing-rsat.md
-            - name: Tesztesetek futtatása
+            - name: A Regression Suite Automation Tool használata
               href: perf-test/rsat/rsat-run.md
             - name: Várható értékek ellenőrzése
               href: perf-test/rsat/rsat-validate-expected.md
@@ -1340,10 +1360,12 @@
               href: perf-test/rsat/rsat-chain-test-cases.md
             - name: Származtatott tesztesetek
               href: perf-test/rsat/rsat-derived-test-cases.md
-            - name: A Regression Suite Automation Tool-oktatóanyag használata
+            - name: A Regression Suite Automation Tool-oktatóanyag és egyéb funkciók
               href: ../fin-ops/get-started/hol-use-regression-suite-automation-tool.md
             - name: Gyakorlati tanácsok
               href: perf-test/rsat/rsat-best-practices.md
+            - name: Az adatok agnosztikus tesztelése a Regression Suite Automation Tool használatával
+              href: ../fin-ops/get-started/recommendation-data-agnostic-testing-rsat.md
             - name: Hibaelhárítás
               href: perf-test/rsat/rsat-troubleshooting.md
         - name: Megoldások kiadása a Lifecycle Services használatával
@@ -1442,6 +1464,8 @@
                   href: sysadmin/copy-batch-job.md
                 - name: Aktív kötegidőszakok
                   href: sysadmin/activeperiod.md
+                - name: Nyári időszámítás támogatása aktív kötegelési időszakoknál
+                  href: sysadmin/batch-active-period-dst.md
                 - name: Kötegkezelő biztonsági szerepköre
                   href: sysadmin/runby.md
                 - name: Kötegelt feladat az SQL-index töredezettségmentesítésének kezeléséhez
