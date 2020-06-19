@@ -3,7 +3,7 @@ title: Retail értékesítési utalványok beállítása
 description: Ez a témakör az utalványokat tekinti át, és bemutatja, hogyan állíthatja be őket.
 author: scott-tucker
 manager: AnnBe
-ms.date: 05/22/2017
+ms.date: 06/04/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: retail
 ms.author: scotttuc
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 4c580e40ae1f0398ab9f8437d42ddcb2979558c3
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: a07bed244152327047efd68cfacb329a722c0049
+ms.sourcegitcommit: 97206552616b248f88e516fea08b3f059257e8d1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057371"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "3431978"
 ---
 # <a name="set-up-coupons-for-retail-sales"></a>Retail értékesítési utalványok beállítása
 
@@ -48,8 +48,10 @@ Az utalványok korlátozottan használható utalványokként is konfigurálható
 
 A korlát az utalványon levő utalványkódonként lép érvénybe. Például egy két utalványkódot tartalmazó egyszer felhasználható utalvány kétszer használható: egy-egy alkalommal minden egyes utalványkód esetében. Az utalvány minden kódját függetlenül lehet aktiválni.
 
+A szelvények bármilyen értékesítési csatornában használhatók, de a hívásközponti rendelések esetében a korlátozott használatú utalványok csak azokra a hívásközponti rendelésekre használhatók, amelyeknél a hívásközpont **Rendelésbefejezési** beállítása engedélyezve van. Ha ez nem engedélyezett, akkor csak a nem korlátozott használat típusú utalványok használhatók a hívásközponti rendelésekben.
+
 > [!NOTE]
-> Miután egy utalványkód elérte a felhasználási korlátját, a rendszer *nem* állítja át automatikusan az utalványkód állapotát „Használt”-ra. A rendszer azonban nem engedélyezi a továbbiakban a használati határát elértő utalványkód használatát. Ha az utalványkód állapota manuális beállítás mellett bármi más, mint az „Aktív”, semelyik csatornán sem használható az utalványkód.
+> Miután egy utalványkód elérte a felhasználási korlátját, a rendszer *nem* állítja át automatikusan az utalványkód állapotát „Használt”-ra. Az utalványkód azonban elérte a használati korlátozást, ezért nem használható. Ha az utalványkód állapota manuális beállítás mellett bármi más, mint az **Aktív**, semelyik csatornán sem használható az utalványkód.  
 
 ## <a name="managing-coupons"></a>Utalványok kezelése
 

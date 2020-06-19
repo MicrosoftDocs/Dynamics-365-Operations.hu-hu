@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 55820d7376750c210d2b7f214f705ffcb222c6cd
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 0513392fe066e02f0789bcfadb0ee676559cb223
+ms.sourcegitcommit: f3456df4d91cf0c51cd395ae64e3c192bd46835e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3212503"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "3428400"
 ---
 # <a name="production-setup-requirements"></a>A termelésbeállítás követelményei
 
@@ -71,7 +71,7 @@ Ha útvonalakkal dolgozik, a műveleteket minden beállított termelési útvona
 2.  **Költségcsoportok** – Állítson be költségcsoportokat, hogy különböző költségszámítási módokat hozzon létre és tartson fent.
 3.  **Útvonalcsoportok** – Állítson be útvonalcsoportokat, az útvonalak csoportjainak vonatkozó paramétereinek meghatározásához. Be kell állítania az útvonalcsoportokat, mielőtt termelési útvonalakat tud létrehozni.
 4.  **Útvonalak** – Állítson be termelési útvonalakat, és határozzon meg alapértelmezett beállításokat, hogy irányítsa az útvonalműveletek ütemezését, költségszámítását és árképzését és hogy irányítsa az előrehaladottság jelentést.
-5.  **Útvonalak** – Állítson be útvonalverziókat, hogy engedélyezze a cikkváltozatokat a termelésben.
+5.  **Útvonalverzió** – Állítson be útvonalverziókat, hogy engedélyezze a cikkváltozatokat a termelésben.
 
 ## <a name="optional-advanced-settings"></a>Opcionális speciális beállítások
 1.  **Termelési csoportok** – Állítson be termelési csoportokat, hogy kapcsolatokat alakítson ki a termelési rendelés és a főkönyvi számlák között. A főkönyvi számlák rendelések jelentésekhez történő feladásához vagy csoportosításához használatosak.

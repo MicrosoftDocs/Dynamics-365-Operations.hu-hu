@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: SystemAdministrationWorkspaceForm, FeatureManagementWorkspace
 audience: Application User
 ms.reviewer: anbichse
 ms.search.scope: Human Resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f14056735b927d9b14f686f43bd9be121808ba23
-ms.sourcegitcommit: e789b881440f5e789f214eeb0ab088995b182c5d
+ms.openlocfilehash: f76f9cf7ec77591ed8181e639f0a9c535eb04166
+ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "3379283"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "3430992"
 ---
 # <a name="whats-new-or-changed-in-human-resources"></a>Új vagy módosult elemek a Human Resources szolgáltatásban
 
@@ -41,7 +41,9 @@ Ha további tájékoztatást szeretne kapni a hamarosan megjelenő szolgáltatá
 
 Ha látni szeretné, hogy mi új vagy módosult a Human Resources egyes kétheti verzióiban, tekintse át az alábbi cikkeket:
 
-[2020. május 14.](hr-whats-new-2020-05-14.md)</br>[2020. május 1.](hr-whats-new-2020-05-01.md)</br>
+[2020. május 28.](hr-whats-new-2020-05-28.md)</br>
+[2020. május 14.](hr-whats-new-2020-05-14.md)</br>
+[2020. május 1.](hr-whats-new-2020-05-01.md)</br>
 [2020. április 13.](hr-whats-new-2020-04-13.md)</br>
 [2020. április 3.](hr-whats-new-2020-04-03.md)</br>
 [2020. március 24.](hr-whats-new-2020-03-24.md)</br>

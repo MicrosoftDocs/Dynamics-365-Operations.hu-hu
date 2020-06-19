@@ -3,7 +3,7 @@ title: Eltávolított vagy elavult Platform-funkciók
 description: Ez a témakör azokat a funkciókat ismerteti, amelyek el lettek távolítva a platformfrissítésekben a Finance and Operations alkalmazásokból vagy az eltávolításuk be van tervezve.
 author: sericks007
 manager: AnnBe
-ms.date: 04/17/2020
+ms.date: 06/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: f6365d42de5d19d960641f188cb6052ef07d721f
-ms.sourcegitcommit: 6d6aa016c4971b0673d461b82fd80b060ae5f7a1
+ms.openlocfilehash: 6fc699907d30fff2d05e752ea055cae8d1134d9b
+ms.sourcegitcommit: 3eaa71c889545318737b3bc88b05eae1a47ad2c0
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "3268747"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "3433922"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Eltávolított vagy elavult Platform-funkciók
 
@@ -36,7 +36,39 @@ Ez a lista segít figyelembe venni az elavult és eltávolított szolgáltatáso
 > [!NOTE]
 > A Finance and Operations alkalmazások objektumaival kapcsolatban a [Technikai referenciajelentésekben](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep) talál részletes információkat. Ezen jelentések különböző verzióit összehasonlíthatja, hogy megismerje azokat az objektumokat, melyek módosítva lettek vagy el lettek távolítva a Finance and Operations alkalmazások egyes verzióiban.
 
+## <a name="platform-updates-for-version-10012-of-finance-and-operations-apps"></a>Platform-frissítések az Finance and Operations alkalmazások 10.0.12 verziójához
+
+### <a name="grid-or-group-control-form-extensions-containing-invalid-field-references"></a>Érvénytelen mezők hivatkozásait tartalmazó rács vagy csoport vezérlő képernyő-kiterjesztések
+
+|   |  |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | A rács vagy csoport vezérlőelem adatcsoport-tulajdonsága automatikusan megjeleníti a mezőcsoport összes mezőjét. A kiterjesztéssel hozzáadott rács vagy csoport tartalmazhat olyan mezőket, amelyek már nincsenek definiálva a mezőcsoportban, vagy hiányoznak azok a mezők, amelyek meg vannak határozva a mezőcsoportban. Ez inkonzisztens működést okozhat futásidőben. A Finance and Operations alkalmazások 10.0.12 verzióihoz tartozó platformfrissítések most már fordítási *figyelmeztetésként* kategorizálják ezt a problémát. A hiba elhárításához nyissa meg a képernyő-kiterjesztést, és mentse.
+| **Felváltotta másik szolgáltatás?**   | Ezt a fordítói figyelmeztetést egy jövőbeli frissítés fordítói hibára fog lecserélni. |
+| **Érintett területek**         | Visual Studio fejlesztőeszközök |
+| **Telepítési beállítás**              | Összes |
+| **Állapot**                         | Egy fordítói figyelmeztetés került bevezetésre a Finance and Operations alkalmazások 10.0.12 verziójának platformfrissítéseiben. |
+
 ## <a name="platform-updates-for-version-10011-of-finance-and-operations-apps"></a>Platform-frissítések az Finance and Operations alkalmazások 10.0.11 verziójához
+
+### <a name="explicit-whitelisting-for-self-service-environments"></a>Explicit engedélyezési lista az önkiszolgáló környezetek számára
+
+|   |  |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | Megváltozott az IP engedélyezési listázás folyamata. Az önkiszolgáló megoldás már nem támogatja az IP engedélyezési lista használatát. |
+| **Felváltotta másik szolgáltatás?**   | További információ: [Azure Active Directory feltételez hozzáférés konfigurálása](https://docs.microsoft.com/appcenter/general/configuring-aad-conditional-access).|
+| **Érintett területek**         | Biztonság |
+| **Telepítési beállítás**              | Felhőbeli |
+| **Állapot**                         | **Elavult:** Ez a funkció teljes mértékben elavult az önkiszolgáló telepítések esetében. |
+
+### <a name="visual-studio-2015"></a>Visual Studio2015
+
+|   |  |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | A Visual Studio legújabb verzióinak támogatásához néhány módosítást be tenni az X++ Visual Studio kiterjesztések esetében. Ezek a változtatások nem kompatibilisek a Visual Studio 2015 megoldással. |
+| **Felváltotta másik szolgáltatás?**   | A Visual Studio 2017 váltja a Visual Studio 2015 verziót a telepített és szükséges verzióként. |
+| **Érintett területek**         | Visual Studio fejlesztőeszközök |
+| **Telepítési beállítás**              | Összes |
+| **Állapot**                         | Amikor bejelentik az új virtuális gépek (VM) rendelkezésre állását a Visual Studio 2017 megoldással, létező, csak Visual Studio 2015 megoldást használó VM-eket újra kell telepíteni a 2021-es 1. kiadási hullámra. |
 
 ### <a name="field-groups-containing-invalid-field-references"></a>Érvénytelen mező hivatkozásokat tartalmazó mezőcsoportok
 
