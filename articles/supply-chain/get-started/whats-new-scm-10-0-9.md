@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-02-19
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: c9965d72474e5fa39fbc0a43753f7645df6881a5
-ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
+ms.openlocfilehash: 22ffe71ccb890d35f2b0d5ef2bc3767b1e700be9
+ms.sourcegitcommit: b0e4fa3fb43cf05fce4c833da73012cb01450125
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3275697"
+ms.lasthandoff: 05/30/2020
+ms.locfileid: "3413007"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-1009-april-2020"></a>Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.9. (2020. április ) szolgáltatásban
 
@@ -48,7 +48,7 @@ Ez a kiadás a következő funkciókat tartalmazza: A funkciók címei további 
 - További ténylegessúly-integráció [10.0.1](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.1), [10.0.2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.2), [10.0.3](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.3), [10.0.4](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.4), [10.0.5](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.5), [10.0.6](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.6), [10.0.7](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.7)-További tájékoztatás: [A tényleges súly szerinti termékfeldolgozás a raktárkezeléssel](../warehousing/catch-weight-processing.md) és a [Tényleges súly szerinti termékekkel kapcsolatos fejlesztések](https://www.microsoft.com/videoplayer/embed/RE4jzx8) videó.
 - [Tárgyi eszközök integrálása a Tárgyieszközkezelés-életciklussa](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/fixed-assets-integration-asset-management-lifecycle) – további tájékoztatás: [Eszközkezelés integrálása tárgyi eszközökkel](../asset-management/integration-to-fixed-assets/fixed-asset-integration.md)
 - [Rugalmas raktár-szintű dimenziófoglalás](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/flexible-warehouse-level-dimension-reservation) -további tájékoztatás: [Rugalmas raktár-szintű dimenziófoglalási irányelv](../warehousing/flexible-warehouse-level-dimension-reservation.md).
-- [Javított feladatkártya- eszköz](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/improved-job-card-device) – további információ: [Jelentéskészítés egy mobil feladatvégző eszközön elért haladásról](../production-control/tasks/report-progress-mobile-job-device.md) és [Készként történő jelentés egy azonosítótáblás szabályozású helyen a Feladatkártya eszközről](../production-control/report-finished-job-device.md)
+- [Javított feladatkártya- eszköz](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/improved-job-card-device) – további információ: [Jelentéskészítés egy mobil feladatvégző eszközön elért haladásról](../production-control/tasks/report-progress-mobile-job-device.md) és [Készként történő jelentés a feladatkártya eszközről](../production-control/report-finished-job-device.md)
 - [Bejövő minőségellenőrzés](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/inbound-quality-check)
 - [Készletkorosítási jelentés tárolása](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/inventory-aging-report-storage)
 - [Készletérték-jelentés tárolója](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/inventory-value-report-storage)
@@ -67,7 +67,7 @@ Ez a kiadás a következő funkciókat tartalmazza: A funkciók címei további 
 - [A munkarendelések vizuális ütemezése az Eszközkezelés modulban](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/visual-scheduling-work-orders-asset-management) – további tájékoztatás: [Munka az ütemezett munkarendelésekkel Gantt-diagram használatával](../asset-management/work-order-scheduling/schedule-work-orders.md#gantt)
 - [Raktári időközökre bontás](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/warehouse-slotting)
 - [Hullámcímke nyomtatási javítások](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-label-printing-enhancements)
-- [Hullámlépés kódja](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-step-code)
+- [Hullámlépés kódja](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-step-code) – További tájékoztatás: [Hullámlépéskódok](../warehousing/wave-step-codes.md)
 
 ## <a name="additional-resources"></a>További erőforrások
 

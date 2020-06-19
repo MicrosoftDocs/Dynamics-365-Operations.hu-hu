@@ -1,6 +1,6 @@
 ---
-title: Követelések és beszedések a Kinnlevőségek modulban
-description: A kinnlevőségek kezelésével kapcsolatos adatokat egyetlen központi nézetből, a Microsoft Dynamics 365 Finance Beszedések oldalán kezelheti. A hitelezési és beszedési kezelő ezt a központi vezérlőt használja a beszedések kezelésére. A pénzbehajtó elkezdheti a beszedési folyamatot az előre meghatározott beszedési feltételek használata által létrehozott vevői listából vagy a vevői listából.
+title: Beszedések a Kinnlevőségek modulban
+description: A kinnlevőségek kezelésével kapcsolatos adatokat egyetlen központi nézetből, a Microsoft Dynamics 365 Finance Beszedések oldalán kezelheti. A hitelezési és beszedési kezelő ezt a központi vezérlőt használja a beszedések kezelésére. A pénzbehajtó elkezdheti a beszedési folyamatot az előre meghatározott beszedési feltételek használata által létrehozott vevői listából vagy a Vevők oldalon.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 10/26/2017
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 471de43bc0d171e60100613a6d779a249cd9e92f
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c150eb7283b34c82e728da36ed0e1e6643eff46a
+ms.sourcegitcommit: be7e4378c8122c6e7cfc4e7991efbdffee45e006
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2189177"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "3426396"
 ---
-# <a name="credit-and-collections-in-accounts-receivable"></a>Követelések és beszedések a Kinnlevőségek modulban
+# <a name="collections-in-accounts-receivable"></a>Beszedések a Kinnlevőségek modulban
 
 [!include [banner](../includes/banner.md)]
 
@@ -68,7 +68,7 @@ A következő listaoldalak megkönnyítik beszedési információk rendezését.
 
 > [!NOTE]
 > A korosítási pillanatképet létre kell hozni, mielőtt megtekintheti ezeken az oldalakon lévő információkat. Csak olyan vevők adatai jelennek meg, akikről készült korosítási pillanatkép. A listalapon megjelenített rekordokat szűrni is lehet, a következőképpen:
-> <li>Alapértelmezés szerint a Finance and Operations-felhasználó hozzáféréssel rendelkezik az összes korosítási pillanatképpel rendelkező vevőhöz.</li>
+> <li>Alapértelmezés szerint a Finance and Operations felhasználók hozzáféréssel rendelkeznek az összes korosítási pillanatképpel rendelkező vevőhöz.</li>
 > <li>Ha léteznek vevőgyűjtők, a felhasználót pénzbehajtóként kell beállítani, hogy használhassa a gyűjtőt a beszedési listaoldalon lévő információk szűréséhez. A kiválasztott vevőgyűjtőben lévő vevők számára az információ korlátozott.</li>
 > <li>Ha egy felhasználó pénzbehajtóként van beállítva, csak annak a pénzbehajtónak kiválasztott gyűjtők érhetők el a listaoldalon. Ha a Beszedéskezelő megtekintheti az összes vevőgyűjtőt váltás van kiválasztva a Pénzbehajtó oldalon a pénzbehajtó számára, minden gyűjtő elérhető számára.</li>
 

@@ -3,7 +3,7 @@ title: Ajánlások létrehozása bemutató adatokkal
 description: Ez a témakör útmutatást ad a többcsatornás termékajánlásoknak az 1.szintű egyablakos környezetekben történő kihasználásához előre kitöltött, testreszabható demóadatok felhasználásával.
 author: bebeale
 manager: AnnBe
-ms.date: 03/30/20
+ms.date: 05/26/20
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: ec23461352abc53b90b6af539a3dd1764e4b5460
-ms.sourcegitcommit: 67cf9e2cf0f75e90526cae6bf176a40156c62a53
+ms.openlocfilehash: 68275f3e36bce0f641b0273cf3b3b8c8ce9db137
+ms.sourcegitcommit: fdc5dd9eb784c7d8e75692c8cdba083fe0dd87ce
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "3175549"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "3404325"
 ---
 # <a name="create-recommendations-with-demo-data"></a>Ajánlások létrehozása bemutató adatokkal
 
@@ -71,7 +71,7 @@ A kiterjesztés tartalmaz egy „RecoMockDataset.csv” nevű adatfájlt, amely 
 
 [Termékajánlatok áttekintése](product-recommendations.md)
 
-[ADLS engedélyezése a Dynamics 365 Commerce környezetben](enable-adls-environment.md)
+[Az Azure Data Lake Storage engedélyezése a Dynamics 365 Commerce környezetben](enable-adls-environment.md)
 
 [Termékajánlatok engedélyezése](enable-product-recommendations.md)
 

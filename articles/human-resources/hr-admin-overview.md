@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b2d65be5163e5dcb7971f04ebcad2fce55a06dad
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 9da6fc7338942e97a1a7417dbd4dfca55fa95272
+ms.sourcegitcommit: cecd97fd74ff7b31f1a677e8fdf3e233aa28ef5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3009233"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "3410058"
 ---
 # <a name="overview"></a>Áttekintés
 
@@ -35,7 +35,7 @@ Ez a rendszergazdai útmutató segít a Dynamics 365 Human Resources rendszer be
   - [Human Resources környezet létesítése](hr-admin-setup-provision.md)
   - [Példány másolása](hr-admin-setup-copy-instance.md)
   - [Példány eltávolítása](hr-admin-setup-remove-instance.md)
-  - [Folyamat frissítése](hr-admin-setup-update-process.md)
+  - [Rendelés frissítése](hr-admin-setup-update-process.md)
 
 - Adatintegráció beállítása
   - [Válasszon ki egy adatintegrációs technológiát](hr-admin-integration-choose-technology.md)
@@ -43,10 +43,10 @@ Ez a rendszergazdai útmutató segít a Dynamics 365 Human Resources rendszer be
   - [A Finance szolgáltatással való integráció konfigurálása](hr-admin-integration-finance.md)
   - [A Dayforce szolgáltatással való integráció konfigurálása](hr-admin-integration-dayforce.md)
   - [Ismétlődő adatexportálási alkalmazás létrehozása](hr-admin-integration-recurring-data-export.md)
-  - Integráció az Office programmal
+  - Integrálás az Office-szal
     - [Office-integrációs oktatóanyag](../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/talent/toc.json)
     - [Entitás adatainak frissítése az Excel alkalmazásban](../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/unified-operations/talent/toc.json)
-    - [Az Excel programban történő megnyitási gyakorlat létrehozása](../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/unified-operations/talent/toc.json)
+    - [Az Excel programban történő megnyitási élmények létrehozása](../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/unified-operations/talent/toc.json)
     - [Office-integráció – hibaelhárítás](../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/unified-operations/talent/toc.json)
 
 - [Szolgáltatások kezelése](hr-admin-manage-features.md)
@@ -75,20 +75,19 @@ Ez a rendszergazdai útmutató segít a Dynamics 365 Human Resources rendszer be
 - Dokumentum-erőforrások
   - [Súgórendszer](../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/human-resources/toc.json)
   - [A Súgórendszer csatlakoztatása](../fin-ops-core/fin-ops/get-started/help-connect.md?toc=/dynamics365/human-resources/toc.json)
-  - [Egyéni súgóoldal csatlakoztatása](../fin-ops-core/fin-ops/get-started/help-custom.md?toc=/dynamics365/human-resources/toc.json        )
   - [Mezőleírások megtekintése és exportálása](../fin-ops-core/fin-ops/get-started/view-export-field-descriptions.md?toc=/dynamics365/human-resources/toc.json)
   - [Feladatrögzítő](../fin-ops-core/dev-itpro/user-interface/task-recorder.md?toc=/dynamics365/human-resources/toc.json)
   - [Dokumentáció vagy képzés létrehozása Feladatrögzítő segítségével](../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/human-resources/toc.json)
 
-- Human Resources – hibaelhárítás
+- Emberi erőforrások – hibaelhárítás
   - [Támogatás kérése](hr-admin-troubleshooting-support.md)
   - [Teljesítmény optimalizálása automatikus tisztítási feladatokkal](hr-admin-troubleshooting-batch-history.md)
   - [Az elemzési jelentések nincsenek frissítve](hr-admin-troubleshooting-analytic-reports.md)
   - [Nem lehet környezetet létrehozni a Power Apps felügyeleti központjában](hr-admin-troubleshooting-power-apps.md)
-  - [Ügyfél kapcsolata megszakad](hr-admin-troubleshooting-disconnect.md)
-  - [Szövegcsonkolás elkerülése a pozícióhierarchián](hr-admin-troubleshooting-truncate.md)
+  - [Kliens kapcsolata megszakad](hr-admin-troubleshooting-disconnect.md)
+  - [Kerülje el a csonka szöveget a beosztási hierarchiában](hr-admin-troubleshooting-truncate.md)
   - [Kompenzációs folyamat futtatása](hr-admin-troubleshooting-compensation.md)
-  - [Feladat-útmutató mentése az LCS rendszerbe](hr-admin-troubleshooting-task-guide.md)
+  - [Feladat útmutatójának mentése az LCS-be](hr-admin-troubleshooting-task-guide.md)
   - [Hozzáférés privát címekhez biztonsági szerepkörnek megfelelően](hr-admin-troubleshooting-private-addresses.md)
   - [A Human Resources alkalmazás nem jelenik meg a Dynamics 365 alkalmazásai között](hr-admin-troubleshooting-not-in-apps.md)
   - [Jelentési funkciók](hr-admin-troubleshooting-reporting.md)

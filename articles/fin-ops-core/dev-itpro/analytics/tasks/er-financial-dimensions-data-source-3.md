@@ -3,7 +3,7 @@ title: ER Pénzügyi dimenziók használata adatforrásként (3. rész – A jel
 description: A következő lépések leírják, hogy egy rendszergazda vagy az elektronikus jelentések fejlesztője szerepkörhöz hozzárendelt felhasználó miként konfigurálhat egy elektronikusjelentés-modellt (ER-modell) a pénzügyi dimenzió használatához az ER-jelentések adatforrásaként.
 author: NickSelin
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 05/27/2020
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7bbbc81eaf8c13e8d13e30a0276e38453e07ead9
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: cef61787e50561eaac4fd52741ab5f90d9c4171d
+ms.sourcegitcommit: d9125c20b21459076e4fd92fd9ebfe2e53a0431b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3142524"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "3406497"
 ---
 # <a name="er-use-financial-dimensions-as-a-data-source-part-3---design-the-report"></a>ER Pénzügyi dimenziók használata adatforrásként (3. rész – A jelentés megtervezése)
 
@@ -95,6 +95,7 @@ A lépések végrehajtásához először hajtsa végre az „ER Pénzügyi dimen
 59. Kattintson az Attribútum hozzáadása lehetőségre.
 60. A Név mezőbe írja be a következőt: „Leír.”.
 61. Kattintson az OK gombra.
+![ER-művelettervező oldal](../media/er-financial-dimensions-guides-format1.png)
 
 ## <a name="map-report-elements-to-data-sources"></a>Rendelje hozzá a jelentés elemeit az adatforrásokhoz
 1. Kattintson a Hozzárendelés fülre.
@@ -143,4 +144,5 @@ A lépések végrehajtásához először hajtsa végre az „ER Pénzügyi dimen
 44. Kattintson a Kötés gombra.
 45. Kattintson a Mentés gombra.
 46. Zárja be a lapot.
+![ER-művelettervező oldal](../media/er-financial-dimensions-guides-format2.png)
 

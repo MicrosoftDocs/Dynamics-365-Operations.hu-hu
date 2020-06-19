@@ -3,7 +3,7 @@ title: Dynamics 365 Commerce előnézeti környezet létesítése
 description: Ez a témakör bemutatja, hogyan lehet egy Microsoft Dynamics 365 Commerce előzetes környezetet létesíteni.
 author: psimolin
 manager: annbe
-ms.date: 04/10/2020
+ms.date: 06/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: d54db89372a0f9ef5b267d25e14067e3243a803c
-ms.sourcegitcommit: 4254acb3cf8c6299fc2f3818ea6c499f058320d9
+ms.openlocfilehash: c109c2326cf01739255b49587c15aa34ad884f6a
+ms.sourcegitcommit: be7e4378c8122c6e7cfc4e7991efbdffee45e006
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "3254748"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "3426465"
 ---
 # <a name="provision-a-dynamics-365-commerce-preview-environment"></a>Dynamics 365 Commerce előnézeti környezet létesítése
 
@@ -193,7 +193,7 @@ Tegye a következőket a környezet telepítéséhez.
 
 1. A folytatás előtt győződjön meg arról, hogy a környezet állapota **Telepített**.
 
-### <a name="initialize-the-commerce-scale-unit-csu"></a>A Commerce Scale Unit (CSU) inicializálása
+### <a name="initialize-the-commerce-scale-unit-cloud"></a>A Commerce Scale Unit (felhő) inicializálása
 
 Egy CSU-cím inicializálásához kövesse az alábbi lépéseket.
 
@@ -215,7 +215,7 @@ Az e-kereskedelem inicializálásához kövesse az alábbi lépéseket.
 
 1. Az **e-kereskedelem** lapon tekintse át az előzetes jóváhagyását, majd válassza a **Beállítás** lehetőséget.
 1. Az **E-kereskedelmi bérlő neve** mezőben adjon meg egy nevet. Azonban fontos megjegyezni, hogy ez a név az e-kereskedelem példányra mutató néhány URL-címen látható lesz.
-1. A **Commerce Cloud Scale Unit neve** mezőben válassza ki az CSU-t a listából. (A listában csak egy opciónak kell lennie.)
+1. A **Commerce Scale Unit neve** mezőben válassza ki az CSU-t a listából. (A listában csak egy opciónak kell lennie.)
 
     Az **E-kereskedelmi földrajz** mező beállítása automatikus, az érték pedig nem módosítható.
 
@@ -251,7 +251,7 @@ A Kereskedelem előzetes környezetének létesítési és konfigurálási folya
 
 [Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 
-[Retail Cloud Scale Unit (RCSU)](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
+[Commerce Scale Unit (felhő)](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
 
 [Microsoft Azure-portál](https://azure.microsoft.com/features/azure-portal)
 

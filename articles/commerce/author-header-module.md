@@ -3,7 +3,7 @@ title: Fejlécmodul
 description: Ez a témakör a fejlécmodulokkal foglalkozik, és bemutatja, hogy hogyan lehet oldalfejléceket létrehozni a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: anupamar
 manager: annbe
-ms.date: 04/13/2020
+ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,15 +17,14 @@ ms.search.region: Global
 ms.author: anupamar-ms
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: cec138ebefbd2beb2f1cf6302ce58d8bbc5c4bbd
-ms.sourcegitcommit: ac966ea3a6c557fb5f9634b187b0e788d3e82d4d
+ms.openlocfilehash: a5f7ad7d9c5ff63c3c3a8fe38275eec0d138891d
+ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "3261444"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "3411208"
 ---
 # <a name="header-module"></a>Fejlécmodul
-
 
 [!include [banner](includes/banner.md)]
 
@@ -36,6 +35,10 @@ Ez a témakör a fejlécmodulokkal foglalkozik, és bemutatja, hogy hogyan lehet
 A Dynamics 365 Commerce szolgáltatásban egy oldalfejléc több modulból áll, például a fejlécből, a navigációs menüből, a keresésből, a promóciós szalagcímből és a cookie-hozzájárulás moduljaiból. 
 
 A fejlécmodul tartalmaz egy webhelyemblémát, a navigációs hierarchiára mutató hivatkozásokat, a webhely egyéb oldalaira mutató hivatkozásokat, egy kosár-szimbólumot, egy kívánságlista szimbólumot, bejelentkezési beállításokat és a keresési sávot. A program automatikusan optimalizálja a fejlécmodult arra az eszközre, amelyről a webhelyet megtekintik (azaz egy asztali eszközre vagy egy mobileszközre). Egy mobileszköz esetében például a navigációs sáv össze van csukva egy **Menü** gombba (amelyet néha *hamburger menünek* neveznek).
+
+A következő kép egy kezdőoldalon használt címsormodul egy példáját jeleníti meg.
+
+![Példa egy címsor modulra](./media/ecommerce-header.png)
 
 ## <a name="properties-of-a-header-module"></a>Fejlécmodul tulajdonságai
 
@@ -50,35 +53,44 @@ A **Saját fiókhivatkozások** tulajdonsággal megadhatók olyan fiókoldalak, 
 A következő modulban használható a fejlécmodulban:
 
 - **Navigációs menü** – A navigációs menü a csatorna navigációs hierarchiáját és más statikus navigációs hivatkozásokat jelenít meg. A csatorna navigációs hierarchiája a Dynamics 365 Commerce alkalmazásban állítható be. A navigációs menü egy **navigációs forrás** tulajdonsággal rendelkezik, amellyel megadhatók a Retail Server navigációs menüelemei és a statikus menüelemek forrásként. Ha a statikus menüelemek forrásként vannak megadva, akkor a webhely más lapjaihoz kapcsolódó relatív hivatkozásokat is meg lehet adni. A konfigurált elemek ezután fejlécnavigációként jelennek meg. 
+
 - **Keresősáv** – A keresőmodul lehetővé teszi a felhasználók számára, hogy keresési kifejezéseket írjanak be, amelyekkel termékeket kereshetnek. Az alapértelmezett keresési lap URL-jét és a keresési lekérdezések paramétereit a **Webhelybeállítások \> Bővítmények** részben kell megadni. A keresési modulnak van olyan tulajdonsága, amely lehetővé teszi a keresési gomb vagy címke elrejtését szükség esetén. A keresési modul olyan automatikus javaslati beállításokat is támogat, mint a termék, a kulcsszó és a kategória keresési eredményei.
+
 - **Kosár ikon** - A kosár ikon modul a kosárikont jeleníti meg, amely a kosárban lévő cikkek számát mutatja bármely időpontban. A további tudnivalókat lásd a [kosár ikon modul](cart-icon-module.md) részben.
 
 ## <a name="create-a-header-module-for-a-page"></a>Fejlécmodul létrehozása egy oldalhoz
 
 Fejlécmodul létrehozásához kövesse az alábbi lépéseket.
 
-1. Hozzon létre egy **Fejléctöredék** nevű töredéket, majd adjon hozzá egy tárolómodult.
-1. A tárolómodul tulajdonságlapján a **Szélesség** tulajdonságot állítsa **Tároló kitöltése** értékre.
-1. Adjon a tárolómodulhoz promóciós szalagcímet tartalmazó és cookie-kkal kapcsolatos hozzájárulásra vonatkozó modulokat.
-1. Adjon másik tárolómodult a töredékhez, és a **Szélesség** tulajdonságot állítsa **Tároló kitöltése** értékre.
-1. Vegyen fel egy fejlécmodult a második tárolómodulba.
-1. A fejlécmodul **Navigációs menü** helyére adja hozzá a navigációsmenü-modult. 
-1. A navigációs menü modul tulajdonságlapján konfigurálja a navigációs menü modul tulajdonságait.
-1. A fejlécmodul **Keresés** helyén adjon hozzá egy keresési modult. 
-1. A keresési modul tulajdonságlapján konfigurálja a keresési modul tulajdonságait. 
-1. A fejlécmodul **Kosárikon** helyére adjon hozzá egy kosár ikon modult. 
-1. A kosárikon modul tulajdonságlapján konfigurálja a keresési modul tulajdonságait. Ha azt szeretné, hogy a kosár ikon megjelenítsen egy minikosarat, amikor az egérmutatót föl viszik válassza az **Igaz** értéket a **Minikosár megjelenítése** alatt.
-1. Mentse az oldaltöredéket, fejezze be a szerkesztését, majd tegye közzé. 
-
+1. Lépjen az **Oldaltöredékek** pontra, majd válassza az **Új** lehetőséget új töredék létrehozásához.
+1. Az **Új oldaltöredék** párbeszédpanelen jelölje ki a **Tároló** modult, adja meg a laptöredék nevét, majd kattintson az **OK** gombra.
+1. Válassza ki az **Alapértelmezett tároló** helyet, majd a jobb oldali tulajdonságok ablaktáblán állítsa be a **Szélesség** tulajdonságot **Tároló kitöltése** értékre.
+1. Az **Alapértelmezett tároló** helyben válassza a három pont (**…**) gombot, majd válassza az **Modul hozzáadása** elemet.
+1. A **Modul hozzáadása** párbeszédpanelen válassza a **Promóciós banner** és a **Süti beleegyezés** modulokat majd kattintson az **OK** gombra.
+1. Az **Alapértelmezett tároló** helyben válassza a három pont (**…**) gombot, majd válassza az **Modul hozzáadása** elemet.
+1. A **Modul hozzáadása** párbeszédpanelen válassza ki az **Tároló** modult, majd kattintson az **OK** gombra.
+1. Válassza ki az **Tároló** helyet, majd a jobb oldali tulajdonságok ablaktáblán állítsa be a **Szélesség** tulajdonságot **Tároló kitöltése** értékre.
+1. Az **Tároló** helyben válassza a három pont (**…**) gombot, majd válassza az **Modul hozzáadása** elemet.
+1. A **Modul hozzáadása** párbeszédpanelen válassza ki a **Címsor** modult, majd kattintson az **OK** gombra.
+1. Válassza ki a három pont (**...**) elemet a címsor modul **Navigációs menü** helyén, amely tartalmazza a váráslásmező modult, majd válassza a **Modul hozzáadása** lehetőséget.
+1. A **Modul hozzáadása** párbeszédpanelen válassza ki a **Navigációs menü** modult, majd kattintson az **OK** gombra.
+1. A navigációs menü modul tulajdonságlapján konfigurálja a tulajdonságokat igény szerint.
+1. Válassza ki a három pont (**...**) elemet a címsor modul **Keresés** helyén, amely tartalmazza a váráslásmező modult, majd válassza a **Modul hozzáadása** lehetőséget.
+1. A **Modul hozzáadása** párbeszédpanelen válassza ki a **Keresés** modult, majd kattintson az **OK** gombra.
+1. A keresés modul tulajdonságlapján konfigurálja a tulajdonságokat igény szerint.
+1. Válassza ki a három pont (**...**) elemet a címsor modul **Kosárikon** helyén, amely tartalmazza a váráslásmező modult, majd válassza a **Modul hozzáadása** lehetőséget.
+1. A **Modul hozzáadása** párbeszédpanelen válassza ki az **Kosárikon** modult, majd kattintson az **OK** gombra.
+1. A kosárikon modul tulajdonságlapján konfigurálja a tulajdonságokat igény szerint. Ha azt szeretné, hogy a kosárikon megjelenítsen egy kosárösszegzést (más néven mini kosarat), amikor a felhasználó fölé viszi az egérmutatót, akkor válassza ki a **Mini kosár megjelenítése** lehetőséget.
+1. Válassza a **Mentés** elemet, válassza a **Szerkesztés befejezése** parancsot a töredék ellenőrzéséhez, majd a **Közzététel** elemet a közzétételhez.
 
 Ha azt szeretné, hogy minden lapon megjelenjen a fejléc, hajtsa végre az alábbi lépéseket a webhelyhez létrehozott összes oldalsablon esetében.
 
-1. Az alapértelmezett lap **Fő** helyén adja hozzá a fejlécmodul-töredéket, amely tartalmazza a fejléc fejlécmodulját.
-1. Mentse a sablont, fejezze be a szerkesztését, majd tegye közzé.
+1. Az **Alapértelmezett** lap **Címsor** helyén a láblécmodulban adja meg a létrehozott lábléctöredéket.
+1. Válassza a **Mentés** elemet, válassza a **Szerkesztés befejezése** parancsot a sablon ellenőrzéséhez, majd a **Közzététel** elemet a közzétételhez.
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[Kezdő csomag áttekintése](starter-kit-overview.md)
+[Kezdőcsomag áttekintése](starter-kit-overview.md)
 
 [Tárolómodul](add-container-module.md)
 

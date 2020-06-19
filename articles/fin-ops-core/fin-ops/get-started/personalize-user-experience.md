@@ -3,7 +3,7 @@ title: A felhasználói élmény testreszabása
 description: Ez a témakör bemutatja, hogyan lehet személyre szabni az alkalmazást.
 author: jasongre
 manager: AnnBe
-ms.date: 04/13/2020
+ms.date: 05/18/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d0a995d25cfc5e78cc76dd73ddea2fb8bd904328
-ms.sourcegitcommit: cd8a28be0acf31c547db1b8f6703dd4b0f62940c
+ms.openlocfilehash: bb66db1e41dce6987bdfc52dd58e2b704ce36720
+ms.sourcegitcommit: dc67232c9aa3223d42f22cc1f7aafbd121e7e616
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "3260506"
+ms.lasthandoff: 05/30/2020
+ms.locfileid: "3412354"
 ---
 # <a name="personalize-the-user-experience"></a>A felhasználói élmény testreszabása
 
@@ -117,7 +117,11 @@ A következő eszközök érhetők el a **Személyre szabása** eszköztáron:
 - Használja az **Áthelyezés** eszközt, ha egy elemet ki szeretne jelölni és az elemek jelenlegi csoportján belül egy másik helyre szeretné áthelyezni. Ne feledje, hogy a szülőcsoporton kívülre nem helyezhető át elem. Az eszköz használatához válassza ki az eszköztárban az **Áthelyezés** gombot, majd helyezze át a kívánt elemet. Amikor kiválaszt egy elemet, az alkalmazás meghatározza, ha azokat a helyeket, ahová az elemet át lehet helyezni. Ezek a helyek *lerakási zónákként* ismertek. Az aktuális csoporton belül az elem húzásakor minden lerakási zóna mellett a terület, ahová az elem húzható színes, félkövér sorként jelenik meg.
 - Válassza ki a **Kihagyás** eszközt egy elem eltávolítására az oldal billentyűparancs-sorozatából Ha bejelöli a **Kihagyás** gombot az eszközsoron, minden éppen kihagyott elem látható lesz, és egy árnyékolt tárolóban jelennek meg. Interaktívan eltávolíthat vagy hozzáadhat mezőket a lapsorrendhez.
 - Használja a **Megjelenítés a fejlécben** eszközt, ha azt szeretné, hogy az elem a gyorslap összesítő lapján megjelenjen. Ha kiválasztja a **Megjelenítés a fejlécben** gombot az eszközsoron , összesítő mezők szerepelnek az árnyékolt tároló bejelölt összes mezőt. Interaktívan felvehet mezőket az összesítő gyorslapra, és eltávolíthat mezőket onnan a mezők kijelölésével.
-- A **Szükséges** eszköz használatával lehet az adatbevitelhez kötelező elemet kijelölni. Ha bejelöli a **Kötelező** gombot az eszközsoron, minden kötelezőnek testreszabott elem, és egy árnyékolt tárolóban jelenik meg. Ezután újra nem kötelezővé tehetők. Ez a lehetőség csak akkor érhető el későbbi verzióban, ha a [Mentett nézetek](saved-views.md), illetve a **Mezők kijelölése kötelezőnek testreszabással** funkciók engedélyezve vannak.
+- A **Szükséges** eszköz használatával lehet az adatbevitelhez kötelező elemet kijelölni. Ha bejelöli a **Kötelező** gombot az eszközsoron, minden kötelezőnek testreszabott elem, és egy árnyékolt tárolóban jelenik meg. Ezután újra nem kötelezővé tehetők. Ez a lehetőség csak akkor érhető el a 10.0.12 vagy újabb verzióban, ha a **Mezők kijelölése kötelezőnek testreszabással** funkció engedélyezve van.
+
+    > [!IMPORTANT]
+    > A 10.0.12-es egy előzetes verzió. A tartalom és a funkciók megváltozhatnak. Az előzetes kiadásokkal kapcsolatban további információkat a [Szolgáltatásfrissítések elérhetősége](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases) oldalon találhat.
+
 - Használja a **Zárolás** eszközt, ha egy elemet Szerkeszthető vagy Nem szerkeszthető állapotúra akar állítani. Ha kiválasztja a **Zárolás** gombot az eszközsoron, minden nem szerkeszthető elem látható lesz, és egy árnyékolt tárolóban jelennek meg. Ezután újra szerkeszthetővé tehetők. Vegye figyelembe, hogy egyes mezők kötelezőek, és nem tehetők zárolttá. Lakat szimbólum jelenik meg az ilyen mezők mellett.
 - Használja az **Alkalmazás hozzáadása a Power Apps alkalmazásból** gombot, amely a Microsoft Power Apps használatával lett létrehozva az oldalon. A Power Apps-alkalmazásnak a lapba való beágyazásával kapcsolatos részletes tudnivalókat lásd: [Power Apps-alkalmazásokból származó alkalmazás beágyazása](embed-power-apps.md). Ez a lehetőség csak akkor érhető el, ha le van tiltva a [Mentett nézetek](saved-views.md) funkció.  
 - Használja az **Alkalmazás hozzáadása** gombot egy Microsoft Power Apps rendszerben létrehozott vagy külső féltől származó alkalmazás beágyazásához az oldalon. Ez a lehetőség csak akkor érhető el, ha engedélyezve van a [Mentett nézetek](saved-views.md) funkció. 
@@ -159,28 +163,21 @@ Az irányítópult testreszabásához kattintson a jobb gombbal bármelyik csemp
 - Ha szeretné módosítani a munkaterület-csempék sorrendjét, válassza ki az **Oldal személyre szabása** beállítást a Tulajdonságok ablakban a **Személyes beállítások** eszköztár megnyitásához. Az **Áthelyezés** eszköz segítségével tetszés szerint átrendezheti a csempéket.
 - Egy új munkaterület csempe hozzáadásához, a Tulajdonságok ablakban, jelölje be a **Hozzáadás munkaterülethez** lehetőséget. Egy új munkaterület lap jön létre az irányítópult alsó részén. Ez az új munkaterület csempe átnevezhető. Hozzáadhat listákat, csempéket és hivatkozásokat a munkaterülethez a témakörben itt leírtak szerint: [Listák, csempék és hivatkozások hozzáadása munkaterületekhez](#adding-a-tile-list-or-link-to-a-workspace).
 
+
+## <a name="sharing-personalizations"></a>Személyre szabások megosztása
+Az oldal személyre szabása után más felhasználókkal is megoszthatja a személyes beállításait a személyre szabott oldal exportálásával. Ezután megkérheti a többi felhasználót, hogy nyissák meg a személyre szabott lapot, és importálják az ön által létrehozott személyre szabási fájlt. Másik lehetőségként a személyre szabásokat adhat a rendszergazdai jogokkal rendelkező felhasználónak. Ez a felhasználó ezután alkalmazhatja a személyre szabási fájljait egyszerre több felhasználóra a **Személyre szabás** adminisztrációs lap használatával.
+
 ## <a name="administration-of-personalizations"></a>Testreszabások adminisztrálása
+A **Személyre szabás** oldal a személyre szabások kezelésének központja a szervezeti szinten. Az oldal tartalma és képességei attól függenek, hogy a **Mentett nézetek** funkció engedélyezve van-e.  
 
-Az oldal személyre szabása után más felhasználókkal is megoszthatja a személyes beállításait a személyre szabott oldal exportálásával. Ezután megkérheti a többi felhasználót, hogy nyissák meg a személyre szabott lapot, és importálják az ön által létrehozott személyre szabási fájlt. Másik lehetőségként a személyre szabásokat adhat a rendszergazdai jogokkal rendelkező felhasználónak. A felhasználó alkalmazhatja a személyre szabási fájlt sok felhasználóra egyszerre.
+Azon vevők esetében, akik engedélyezték a **Mentett nézetek** funkciót, tekintse meg a [Mentett nézetek](saved-views.md) témakör "Nézetek globális kezelése" szakaszát.  
 
-Rendszergazdai jogokkal rendelkező felhasználók más felhasználók személyes beállításait is kezelhetik a **Személyre szabás** lapon.
-
-Azoknak a vevőknek, akik nem kapcsolták be a [Mentett nézetek](saved-views.md) lehetőséget, ennek a weboldalnak négy lapja van:
+Azoknak a vevőknek, akik még nem kapcsolták be a [Mentett nézetek](saved-views.md) lehetőséget, ennek a weboldalnak négy lapja van:
 
 - **Alkalmazás** – Importálhat vagy kiválaszthat egy személyre szabási beállítást egy vagy több felhasználó számára. A személyre szabás alkalmazásához egy vagy több felhasználóra, először jelölje ki a szerepkört és az adott szerepkörrel rendelkező felhasználókat. Válasszon egy meglévő személyre szabást vagy importáljon egy személyre szabási fájlt a kiválasztott felhasználókra történő alkalmazáshoz. A rendszer ellenőrzi a személyre szabást, és alkalmazza az összes kijelölt felhasználóra, amikor azok legközelebb megnyitják a kijelölt lapot.
 - **Törlés** – A lap vagy a munkaterület összes személyre szabása egy vagy több felhasználó esetében is törölhető. Először válasszon egy oldalt vagy munkaterületet, hogy megtekinthesse azon felhasználók listáját, akik személyre szabták ezt az oldalt. Ezután válassza ki azokat a felhasználókat, akiknek az adott oldalhoz vagy munkaterülethez tartozó személyre szabását törölni kell, majd válassza a **Törlés** elemet. A kiválasztott felhasználók által a kiválasztott lapra vagy munkaterületre alkalmazott valamennyi személyre szabási beállítás törlődik. Ez a művelet nem vonható vissza. Ugyanakkor ha a lapnak vagy a munkaterületnek létezik mentett személyre szabási beállítása, ez a beállítás visszaimportálható.
 - **Felhasználók** – Válasszon egy felhasználót, hogy megtekinthesse a felhasználó által személyre szabott oldalak listáját. Ezután kiválaszthatja, hogy engedélyezze vagy letiltsa a kiválasztott felhasználónak a személyre szabott képességek használatát bizonyos oldalakon vagy az egész rendszerben. Emellett törölhet, importálhat és exportálhat személyre szabásokat a felhasználó számára. Ezenkívül a felhasználó számára alaphelyzetbe állíthatók a funkció-ábrafeliratok. Ebben az esetben, ha a felhasználó korábban elutasította az új funkciókat bemutató előugró ablakokat, ezek legközelebb újra megjelennek a felhasználó számra
 - **Rendszer:** – Itt tudja ideiglenesen kikapcsolni a rendszerben személyre szabásokat az összes felhasználó számára. Ebben az esetben minden személyre szabás minden felhasználónál törlődik, és az összes lap visszaáll az alapértelmezett állapotába. Amennyiben később újra bekapcsolja a személyre szabásokat, a rendszer minden személyre szabást újra alkalmaz. Véglegesen is törölheti a rendszerben szereplő személyes beállításokat az összes felhasználó számára. A törölt személyes beállításokat nem lehet visszaállítani. Ezért a lépés végrehajtása előtt ellenőrizze, hogy exportálta mindazokat a személyes beállításokat, amelyeket később esetleg importálni szeretne.
-
-Azoknak a vevőknek, akik bekapcsolták a [Mentett nézetek](saved-views.md) lehetőséget, a **Személyre szabások** weboldalnak négy lapja van:
-
-- **Közzétett nézetek** – Ezeket a nézeteket közzétették a szervezeten belül. Ha módosítani kívánja azokat a felhasználókat, akiket ezek a nézetek céloznak, módosíthatja az egyes nézetekhez társított biztonsági szerepköröket vagy jogi személyeket. Egy vagy több közzétett nézet is exportálható vagy törölhető.
-- **Nem közzétett nézetek** – Ezek a nézetek olyan sablonnézetek, amelyek importálva lettek a rendszerbe, de még nem lettek közzétéve. Ezeket a nézeteket közzéteheti, exportálhatja vagy törölheti.
-- **Személyes nézetek** – Ezeket a nézeteket a rendszerben lévő felhasználók hozták létre. Közzétehet személyes nézeteket a szervezeten belül, vagy egy vagy több nézetet másik felhasználók számára is átmásolhat. Ezeket a nézeteket igény szerint exportálhatja vagy törölheti is.
-- **Felhasználók** – Válasszon egy felhasználót, hogy megtekinthesse a felhasználó által személyre szabott oldalak listáját. Ezután kiválaszthatja, hogy engedélyezze vagy letiltsa a kiválasztott felhasználónak a személyre szabott képességek használatát bizonyos oldalakon vagy az egész rendszerben. Emellett törölhet, importálhat és exportálhat személyre szabásokat a felhasználó számára. Ezenkívül a felhasználó számára alaphelyzetbe állíthatók a funkció-ábrafeliratok. Ebben az esetben, ha a felhasználó korábban elutasította az új funkciókat bemutató előugró ablakokat, ezek legközelebb újra megjelennek a felhasználó számra
-- **Rendszer:** – Itt tudja ideiglenesen kikapcsolni a rendszerben személyre szabásokat az összes felhasználó számára. Ebben az esetben minden személyre szabás minden felhasználónál törlődik, és az összes lap visszaáll az alapértelmezett állapotába. Amennyiben később újra bekapcsolja a személyre szabásokat, a rendszer minden személyre szabást újra alkalmaz. Véglegesen is törölheti a rendszerben szereplő személyes beállításokat az összes felhasználó számára. A törölt személyes beállításokat nem lehet visszaállítani. Ezért a lépés végrehajtása előtt ellenőrizze, hogy exportálta mindazokat a személyes beállításokat, amelyeket később esetleg importálni szeretne.
-
-Azoknak a felhasználóknak, akik hozzáférnek a **Személyre szabás** lapjához, személyes vagy sablon nézeteket is importálhatunk a művelet ablak **Nézetek importálása** gombjának használatával.
 
 ## <a name="personalizing-inventory-dimensions"></a>A készletdimenziók személyre szabása
 
