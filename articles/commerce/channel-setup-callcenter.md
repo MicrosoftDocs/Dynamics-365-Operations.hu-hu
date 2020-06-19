@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 14cee020cc8aead627180343c82bf23534ae83c4
-ms.sourcegitcommit: 0681a00d60c9f8cc8f7b9888b8c5ddf07279fc04
+ms.openlocfilehash: bdaabad39484cb12537bc5f94c34dcb2575a5b2f
+ms.sourcegitcommit: ef27189efc15ce79c3c31ce2e41ef8a606fc5429
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3131731"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "3410413"
 ---
 # <a name="set-up-a-call-center-channel"></a>Hívásközpont csatorna beállítása
 
@@ -34,7 +34,7 @@ Ez a témakör azt mutatja be, hogyan lehet egy új hívásközpont csatornát l
 ## <a name="overview"></a>Áttekintés
 
 
-A Dynamics 365 Commerce szolgáltatásban a hívásközpont egyfajta kiskereskedelmi csatorna, amelyet az alkalmazásban lehet megadni. Ha meghatároz egy csatornát a hívásközpont entitások számára, azzal a rendszer képes lesz specifikus adatok és megrendelések feldolgozásához tartozó alapértelmezéseket értékesítési rendelésekhez kötni. Noha egy vállalat több hívásközpont-csatornát is megadhat a Commerce-ben, fontos megjegyezni, hogy egy egyéni felhasználót csak egy hívásközpont-csatornához lehet hozzárendelve. 
+A Dynamics 365 Commerce szolgáltatásban a hívásközpont egyfajta kereskedelmi csatorna, amelyet az alkalmazásban lehet megadni. Ha meghatároz egy csatornát a hívásközpont entitások számára, azzal a rendszer képes lesz specifikus adatok és megrendelések feldolgozásához tartozó alapértelmezéseket értékesítési rendelésekhez kötni. Noha egy vállalat több hívásközpont-csatornát is megadhat a Commerce-ben, fontos megjegyezni, hogy egy egyéni felhasználót csak egy hívásközpont-csatornához lehet hozzárendelve. 
 
 Új hívásközpont-csatorna létrehozása előtt győződjön meg arról, hogy végrehajtotta a [Csatornbeállítás előfeltételeit](channels-prerequisites.md).
 
@@ -84,7 +84,7 @@ A fizetési módok beállításához a csatornán támogatott valamennyi fizeté
 
 A következő kép egy példát mutat a készpénzfizetési módra.
 
-![Fizetési módok – példa](media/channel-setup-retail-5.png)
+![Fizetési módok – példa](media/channel-setup-callcenter-payments.png)
 
 ### <a name="set-up-modes-of-delivery"></a>Szállítási módok beállítása
 

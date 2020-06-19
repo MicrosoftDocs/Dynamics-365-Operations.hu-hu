@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2019-1-16
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 45677681ebae40210d6e2d896323f7e691b765e2
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: d2455f775fcf41bbcb1388b2e8053ede8512335d
+ms.sourcegitcommit: 52ba8d3e6af72df5dab6c04b9684a61454d353ad
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057556"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "3403215"
 ---
 # <a name="overview-of-fiscal-integration-for-commerce-channels"></a>A Commerce-csatornák pénzügyi integrálásának áttekintése
 
@@ -138,7 +138,8 @@ A Retail SDK-ban jelenleg a következő pénzügyi integráció minták érhető
 - [Adóügyi nyomtató integrációját bemutató minta Lengyelországra vonatkozóan](emea-pol-fpi-sample.md)
 - [Adóügyi regisztrációs szolgáltatás integrációját bemutató minta Ausztriára vonatkozóan](emea-aut-fi-sample.md)
 - [Adóügyi regisztrációs szolgáltatás integrációját bemutató minta Csehországra vonatkozóan](emea-cze-fi-sample.md)
-- [Ellenőrzőegység integrációs minta Svédország esetén](./emea-swe-fi-sample.md)
+- [Ellenőrzőegység integrációs mintája Svédország esetén](./emea-swe-fi-sample.md)
+- [Adóügyi regisztrációs szolgáltatás integrációját bemutató minta Németországra vonatkozóan](./emea-deu-fi-sample.md)
 
 A következő pénzügyi integrációs funkció szintén elérhető a Retail SDK-ban, de jelenleg használja ki a pénzügyi integrációs keretrendszer előnyeit. Ennek a funkciónak az áttelepítése a pénzügyi integrációs keretrendszerbe a későbbi frissítésekben tervezett.
 

@@ -3,7 +3,7 @@ title: Ajánlatok hozzáadása a tranzakciós képernyőhöz
 description: Ez a témakör ismerteti, hogyan adható hozzá ajánlásvezérlő a tranzakciós képernyőhöz pénztári (POS) eszközön a Microsoft Dynamics 365 Commerce képernyő-elrendezés tervezőjének használatával.
 author: bebeale
 manager: AnnBe
-ms.date: 03/19/20
+ms.date: 05/26/20
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a39389da0908953cbbc161f07d067ce3fc569a1b
-ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
+ms.openlocfilehash: 77870cd19ebf15a72f323f116579f7769a766995
+ms.sourcegitcommit: fdc5dd9eb784c7d8e75692c8cdba083fe0dd87ce
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154132"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "3404233"
 ---
 # <a name="add-recommendations-to-the-transaction-screen"></a>Ajánlatok hozzáadása a tranzakciós képernyőhöz
 
@@ -100,7 +100,7 @@ Két konfigurációs lehetőség áll rendelkezlésre. Válassza azt a lehetős�
 
 [Termékajánlatok áttekintése](product-recommendations.md)
 
-[ADLS engedélyezése a Dynamics 365 Commerce környezetben](enable-adls-environment.md)
+[Az Azure Data Lake Storage engedélyezése a Dynamics 365 Commerce környezetben](enable-adls-environment.md)
 
 [Termékajánlatok engedélyezése](enable-product-recommendations.md)
 

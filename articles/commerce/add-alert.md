@@ -3,7 +3,7 @@ title: Promóciós szalagcím modul
 description: Ez a témakör a promóciós szalagcím modulokkal foglalkozik, és bemutatja, hogy hogyan lehet őket hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: anupamar-ms
 manager: annbe
-ms.date: 04/14/2020
+ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,15 +18,14 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 12cabbf0b8d9f337f15a8cd6cb1f2a85100b75f7
-ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
+ms.openlocfilehash: dae824cdbaaf56f85f125c5f36aaa56171bbd6bc
+ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "3269774"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "3411365"
 ---
 # <a name="promo-banner-module"></a>Promóciós szalagcím modul
-
 
 [!include [banner](includes/banner.md)]
 
@@ -48,9 +47,15 @@ A webhely fejlécében a promóciós szalagcímeket a webhely egészére kiterje
 
 „Nagy megtakarítás az iskolakezdő akcióval. Vásároljon most.”
 
+"Vásároljon Karácsonyra AKCIÓ!" 
+
+A következő kép egy promóciós bannert mutat be.
+
+![Példa egy promóciós banner modulra](./media/ecommerce-Promobanner.PNG)
+
 ## <a name="promo-banner-module-properties"></a>Promóciós szalagcím modul tulajdonságai
 
-| Tulajdonság neve             | Value                              | Leírás |
+| Tulajdonság neve             | Érték                              | Leírás |
 |---------------------------|------------------------------------|-------------|
 | Szalagüzenetek           | Szöveg és hivatkozások                     | Szövegből és hivatkozásokból álló tömb. |
 | Automatikus lejátszás                  | **Igaz** vagy **Hamis**              | Olyan érték, amely jelzi, hogy az üzenetek automatikusan körbemennek-e, ha több üzenet van konfigurálva. |
@@ -64,7 +69,7 @@ A webhely fejlécében a promóciós szalagcímeket a webhely egészére kiterje
 
 A promóciós szalagcím modul új oldalra való felvételéhez és a kötelező tulajdonságok beállításához hajtsa végre az alábbi lépéseket.
 
-1. Válassza az **Új** lehetőséget egy oldalsablon létrehozásához.
+1. Lépjen a **Sablonok** pontra, majd új sablon készítéséhez válassza az **Új** elemet.
 1. Az **Új sablon** párbeszédablakban a **Sablon neve** alatt adja meg a **promóciós szalagcím sablon** elemet, majd válassza az **OK** gombot.
 1. Az **Oldalstruktúra** területen vegyen fel egy **Alapértelmezett oldal** modult a **Szövegtörzs** helyre. 
 1. Válassza a **Szerkesztés befejezése** parancsot a sablon ellenőrzéséhez, majd a **Közzététel** elemet a közzétételhez. 
@@ -74,7 +79,7 @@ A promóciós szalagcím modul új oldalra való felvételéhez és a kötelező
 1. A **Oldalstruktúra** területen vegyen fel egy promóciós szalagcím modult a tároló modulba.
 1. A szalagcím modul beállításainál vegyen fel egy vagy több szalagcímüzenetet. Minden üzenethez hivatkozással együtt szöveg tartozhat. A további tulajdonságokat módosíthatja, ha a modult további személyre szabására van szükség.
 1. Válassza a **Mentés** lehetőséget, majd az oldal előnézetének megtekintéséhez az **Előnézet** elemet. A lap tetején egy olyan figyelmeztetés jelenik meg, amely az Ön által hozzáadott szöveget jeleníti meg.
-1. Válassza a **Szerkesztés befejezése** parancsot az oldal ellenőrzéséhez, majd a **Közzététel** elemet a közzétételhez. 
+1. Válassza a **Szerkesztés befejezése** parancsot az oldal ellenőrzéséhez, majd a **Közzététel** elemet a közzétételhez.
 
 > [!NOTE]
 > A promóciós szalagcím általában a lap fejlécének vagy egy alfejlécének helyén használatos.

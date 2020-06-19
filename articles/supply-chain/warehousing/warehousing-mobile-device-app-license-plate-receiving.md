@@ -3,7 +3,7 @@ title: Azonosítótábla-bevételezés a raktározás alkalmazás használatáva
 description: Ez a témakör azt mutatja be, hogyan lehet beállítani a raktárkezelő mobilalkalmazást a tényleges készlet fogadására használt azonosítótábla-feldolgozási folyamathoz.
 author: perlynne
 manager: tfehr
-ms.date: 03/31/2020
+ms.date: 04/29/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 7d5ac6598ab80ece0164d7c92f5d84e91d21b385
-ms.sourcegitcommit: ffd845d4230646499b6f074cb43e69ab95787671
+ms.openlocfilehash: 82b4f40510d5bbf829508f17f1064886620a4aed
+ms.sourcegitcommit: a3cd2783ae120ac6681431c010b9b126a9ca7d94
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "3346376"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "3410885"
 ---
 # <a name="license-plate-receiving-via-the-warehousing-app"></a>Azonosítótábla-bevételezés a raktározás alkalmazás használatával
 
@@ -33,47 +33,51 @@ Az ASN-adatok a rakományokhoz és a szállítmányokhoz a *csomagolási strukt�
 > [!NOTE]
 > Hogy csökkentse a készlettranzakciók számát, amikor beágyazott azonosítótáblákkal rendelkező csomagolási struktúrák vannak használatban a rendszer rögzíti a fizikai aktuális készletet a szülő azonosítótáblára. Ha azt szeretné, hogy a rendszer a tényleges aktuális készletet a szülő rendszámtábla és a beágyazott rendszámtábla között a csomagolási struktúra adatainak megfelelően mozgassa, a mobileszköznek egy olyan menüelemet kell biztosítania, amely a *Csomagolás beágyazott azonosítótáblákhoz* munkalétrehozási folyamaton alapul.
 
-<!-- To be used later (will require further editing):
-## Warehousing mobile device app processing
+## <a name="warehousing-mobile-device-app-processing"></a>Raktározási mobileszköz-alkalmazásos feldolgozás
 
-When a worker scans an incoming license plate ID, the system initializes a license plate receiving process. Based on this information, the content of the license plate (data coming from the ASN) gets physically registered at the inbound dock location. The flows that follow will depend your business process needs.
+Amikor egy dolgozó beolvas egy bejövő azonosítótábla-azonosítót, a rendszer inicializál egy azonosítótábla-bevételezési folyamatot. Az információ alapján az azonosítótábla tartalma (az ASN-ből érkező adatok) fizikailag regisztrálva lesz a bejövő dokk helyén. A következő folyamatok függenek az üzletifolyamat-igényeitől.
 
-## Work policies
+## <a name="work-policies"></a>Munkairányelvek
 
-As with (for example) the *Report as finished* mobile device menu item process, the license plate receiving process supports several workflows based on the defined setup.
+Ahogy például a *Készként jelentés* mobileszköz-menüelem folyamatnál, az azonosítótábla-fogadó folyamat több munkafolyamatot támogat a megadott beállítások alapján.
 
-### Work policies with work creation
+### <a name="work-policies-with-work-creation"></a>Munka-létrehozással kapcsolatos munkairányelvek
 
-Registration of physical on-hand where either the same warehouse worker immediately process a put-away work process following the inbound receiving (License plate receiving and put away) or where the registration and put away process gets handled as two different warehouse operations (License plate receiving) following the processing of the put-away work by using the existing work process via another mobile device menu item.
+Ha egy munkát létrehozó munkairányelv alapján regisztrálja a bejövő cikkeket, akkor a rendszer minden regisztrációhoz létrehozza és menti az elraktározási munkarekordokat. Ha az *Azonosítótábla bevételezése és eltárolása* munkafolyamatok végzi, a regisztrációt és az eltárolást egyetlen műveletként kezeli a rendszer, egyetlen mobileszköz-menüelemet használva. Ha az *Azonosítótábla bevételezése* folyamatot használja, akkor a bevételezési és elraktározási folyamatok két különböző raktári műveletként kezeli a rendszer, és mindegyik saját mobileszköz menüelemmel rendelkezik.
 
-## Work policies without work creation
+### <a name="work-policies-without-work-creation"></a>Munka-létrehozás nélküli munkairányelvek
 
-You can use the license plate receiving process without creating work by using the *License plate receiving without creating work* feature.
+Az azonosítótábla-bevételezési folyamat munka létrehozása nélkül is használható. Ha olyan munkairányelveket határoz meg, amelyeknek *Átmozgatási bevételezés* és/vagy *Beszerzési rendelések* munkarendelési típusa van, és az *Azonosítótábla bevételezése (és eltárolása)* folyamatot használja , akkor a következő két Warehouse Mobile App folyamat nem hozza létre a munkát. Helyette csak a bejövő tényleges készletet fogja regisztráltatni az azonosítótábla a bejövő fogadó dokknál.
 
-By defining **Work policies** with a **Work order type** of *Transfer receipt* and/or *Purchase orders*, and using the **Process** for **License plate receiving (and put away)**, the two Warehousing app process:
+- *Azonosítótábla bevételezése*
+- *Azonosítótábla bevételezése és eltárolása*
 
-- License plate receiving
-- License plate receiving and put away
+> [!NOTE]
+> - Meg kell határoznia a munkairányelvhez legalább egy helyet a **Raktári helyek** szakaszban. Nem határozhatja meg ugyanazt a helyet több munkairányelvhez.
+> - A Warehouse mobileszköz menüelemek **Címkenyomtatás** lehetősége nem nyomtat azonosítótábla címkét munka létrehozása nélkül.
 
-will not create work, but only register the inbound physical inventory on the license plate at the inbound receiving dock.
+Ha azt szeretné, hogy ez a funkció elérhető legyen a rendszerben, akkor be kell kapcsolni az *Azonosítótábla fogadásával kapcsolatos fejlesztések* funkciót a [szolgáltatáskezelésben](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-For more information about the *Report as finished* production scenario, see the [Warehouse work policies overview](warehouse-work-policies.md).
+### <a name="receive-inventory-on-a-location-that-doesnt-track-license-plates"></a>Készlet fogadása olyan helyen, amely nem követi nyomon az azonosítótáblákat
 
--->
+Lehetőség van arra, hogy olyan raktári helyet alkalmazzon, amelyet a rendszer hozzárendelt egy helyprofilhoz, még ha az **Azonosítótábla követésének használata** nincs is bekapcsolva. Ezért a készlet vételekor közvetlenül regisztrálhat egy helyen aktuális készletet munka létrehozása nélkül.
+
+## <a name="add-mobile-device-menu-items-for-each-receiving-location-in-a-warehouse"></a>Mobileszköz-menüelemek hozzáadása a raktárban található összes bevételezési helyhez
+
+Az *Azonosítótábla fogadásával kapcsolatos fejlesztések* funkció lehetővé teszi, hogy a raktárban található bármelyik helyen fogadjon úgy, hogy hozzáad egy helyspecifikus azonosítótábla fogadás és betárolás menüelemet Warehouse mobilalkalmazáshoz. Korábban a rendszer csak az egyes raktárakhoz megadott alapértelmezett helyeken támogatta a fogadást. Ha azonban ez a funkció be van kapcsolva, akkor az azonosítótábla fogadás és betárolás mobileszköz-menü elemek most már rendelkezésre bocsátják az **Alapértelmezett adatok használata** beállítást, amely lehetővé teszi, hogy az egyes menüelemekhez egyéni rendeltetési helyet válasszanak. (Ez a beállítás már elérhető volt más típusú menüelemekhez.)
+
+Ha azt szeretné, hogy ez a funkció elérhető legyen a rendszerben, akkor be kell kapcsolni az *Azonosítótábla fogadásával kapcsolatos fejlesztések* funkciót a [szolgáltatáskezelésben](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="show-or-skip-the-receiving-summary-page"></a>A bevételezési összesítő lap megjelenítése vagy kihagyása
 
-Az *Annak szabályzása, hogy meg legyen-e jelenítve egy fogadás összegzése lap a mobileszközökön* funkció használatával kihasználhatja egy további részletes raktárkezelés alkalmazásfolyamat előnyeit az azonosítótábla-fogadási folyamat részeként.
-
-A funkció használata előtt be kell azt kapcsolnia saját rendszerében. A rendszergazdák használhatják a [funkciókezelési](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) beállításokat a funkció állapotának ellenőrzéséhez, és bekapcsolásához. A **Funkció kezelése** munkaterületen ez a funkció a következő módon van listázva:
-
-- **Modul:** *Raktárkezelés*
-- **Funkció neve:** *Annak beállítása hogy megjelenjen-e bevételezési összesítő lap a mobileszközökön*
+Az *Annak szabályzása, hogy meg legyen-e jelenítve egy fogadás összegzése lap a mobileszközökön* funkció használatával kihasználhatja egy további részletes Raktári alkalmazásfolyamat előnyeit az azonosítótábla-fogadási folyamat részeként.
 
 Ha ez a funkció be van kapcsolva, akkor az azonosítótábla fogadására és betárolására szolgáló menüelemek tartalmazzák a **Fogadó összesítő lap megjelenítése** beállítást. Ez a beállítás a következő lehetőségeket biztosítja:
 
 - **Részletes összefoglalás megjelenítése** – Az azonosítótábla fogadása során a dolgozók egy külön lapot fognak látni, amely a teljes ASN-információt jeleníti meg.
 - **Az összefoglalás kihagyása** – A dolgozók nem fogják látni a teljes ASN-információt. A raktári dolgozók nem állíthatnak be intézkedési kódot sem, illetve kivételeket adhatnak meg a bevételezési folyamat során.
+
+Ha azt szeretné, hogy a funkció elérhető legyen a rendszerében, akkor be kell kapcsolni az *Annak szabályzása, hogy meg legyen-e jelenítve egy fogadás összegzése lap a mobileszközökön* funkciót a [szolgáltatáskezelésben](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="prevent-transfer-ordershipped-license-plates-from-being-used-at-warehouses-other-than-the-destination-warehouse"></a>Átmozgatási rendeléssel szállított azonosítótáblák használatának megakadályozása a célraktártól eltérő raktárban
 
@@ -81,10 +85,7 @@ Az azonosítótábla-bevételezési folyamat nem használható, ha az ASN tartal
 
 Az átmozgatási rendelés esetében, amikor az átmozgatási raktár nem követi nyomon az azonosítótáblákat (és ezért nem követi a tényleges aktuális készletet azonosítótáblánként) használhatja a *Átmozgatási rendeléssel szállított azonosítótáblák használatának megakadályozása a célraktártól eltérő raktárban* funkciót, amellyel megakadályozható az átvitel alatt lévő azonosítótáblák tényleges aktuális frissítése.
 
-A funkció használata előtt be kell azt kapcsolnia saját rendszerében. A rendszergazdák használhatják a [funkciókezelési](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) beállításokat a funkció állapotának ellenőrzéséhez, és bekapcsolásához. A **Funkció kezelése** munkaterületen ez a funkció a következő módon van listázva:
-
-- **Modul:** *Raktárkezelés*
-- **Funkció neve:** *Átmozgatási rendeléssel szállított azonosítótáblák használatának megakadályozása a célraktártól eltérő raktárakban*
+Ha azt szeretné, hogy a funkció elérhető legyen a rendszerében, akkor be kell kapcsolni az *Átmozgatási rendeléssel szállított azonosítótáblák használatának megakadályozása a célraktártól eltérő raktárakban* funkciót a [szolgáltatáskezelésben](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 Ha elérhetővé szeretné tenni ezt a funkciót, hajtsa végre az alábbi lépéseket.
 
@@ -96,6 +97,8 @@ Ha elérhetővé szeretné tenni ezt a funkciót, hajtsa végre az alábbi lép�
 
 ## <a name="more-information"></a>További információ
 
-<!-- To read more about inbound loads, see [Link for Inbound load (Olga's doc.)] -->
-
 A mobileszköz-menüelemek beállításával kapcsolatos további tudnivalókat lásd: [Mobileszközök beállítása raktári munkához](configure-mobile-devices-warehouse.md).
+
+A *Készként jelentéssel* termelési forgatókönyvvel kapcsolatos további tudnivalókat lásd a [Raktári munkairányelvek áttekintése](warehouse-work-policies.md).
+
+További információ a bejövő rakományok kezeléséről: [Beszerzési rendelések bejövő rakományának kezelése a raktárban](inbound-load-handling.md).

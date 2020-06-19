@@ -3,12 +3,12 @@ title: Áttekintés
 description: A Dynamics 365 Human Resources alkalmazásban a Szabadság és távollét munkaterület rugalmas keretrendszert biztosít az új szabadságtervek és a kérések kezelésére szolgáló munkafolyamatok létrehozásához, valamint intuitív önkiszolgáló oldalt biztosít az alkalmazottak számára a szabadságok kéréséhez.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/30/2020
+ms.date: 06/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
 audience: Application User
 ms.reviewer: anbichse
 ms.search.scope: Human Resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2bb123b808615ff7d770c7c6b83338a32d922be3
-ms.sourcegitcommit: de217452a85429675994e9cc0e06eb4821cab3e5
+ms.openlocfilehash: ec72d2d741f7f8428a7daa97bb982e9fc00b8c3f
+ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "3325765"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "3428967"
 ---
 # <a name="overview"></a>Áttekintés
 
@@ -84,10 +84,9 @@ A **Tesztkörnyezet** segítségével kipróbálhatja a szabadságok és távoll
 
 Az előzetes funkciók a következők:
 
-- **Szabadság felfüggesztése** – Egy alkalmazottra vonatkozóan felfüggesztheti a szabadságokat és a távollétet. A szabadság felfüggesztése kiválasztott távolléti típusoknál leállítja az elhatárolást. Ha a felfüggesztés a könyvelés feldolgozását követően következik be, akkor a szabadság felfüggesztése az alkalmazott szabadságának egyenlegéhez egy arányosan korrigált kiigazítást hoz létre. Az alkalmazottak szabadságának felfüggesztése során okkódok is megadhatók. A felhasználói élmény frissítve lett a felfüggesztés jelzéséhez. 
+- **Szabadságelhatárolás vállalat vagy a terv szerint** – Az elhatárolási folyamatot akár minden vállalatnál, akár egyetlen vállalatnál is futtathatja. Egy adott vállalatra vonatkozóan is futtathatja az elhatárolási folyamatot egy adott szabadság- és távolléti terv esetében. 
 
-- **Átviteli szabályok** – Megadhatja, hogy az átviteli szabadságtípust az átviteli egyenlegekhez, ahová az átviteli korrekciók át lesznek helyezve. Ha például egy alkalmazott 10 napot visz át, akkor a 10 napnál más szabadság-típust is kiválaszthat. 
+- **Szabadság vásárlása** – Az alkalmazottak számára engedélyezheti és létrehozhatja a szabadságvásárlási irányelveket, hogy elküldjék a vételi kérelmüket. Az alkalmazottak elküldhetik a vásárlási kérelmeket, és automatikusan frissülnek az egyenlegek, hogy tükrözzék a kérelmeket.  
 
-- **Okkódok és megjegyzések hozzáfűzése a módosításokhoz** – Az alkalmazotti szabadság egyenlegének módosításakor egy okkódot és megjegyzést is megadhat. 
+- **Mellékletek hozzáadása a jóváhagyott szabadságkérelmekhez** – A már jóváhagyott szabadságkérelemhez csatolhat egy mellékletet. 
 
-- **Átállás a szabadság és távollét paramétereire** – Mostantól csak a szabadság és a távollét paraméterei használhatók a humán erőforrások paramétereinek használata helyett. 

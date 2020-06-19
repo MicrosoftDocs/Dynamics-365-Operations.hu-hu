@@ -3,7 +3,7 @@ title: Videólejátszó modul
 description: Ez a témakör a videólejátszó modulokkal foglalkozik, és bemutatja, hogy hogyan lehet őket hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: anupamar-ms
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e94658eed12b12d6666e63d2c06b86646c81a120
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 0612682d310362c7523bf08db40faf51c80ea2e3
+ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025648"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "3411159"
 ---
 # <a name="video-player-module"></a>Videólejátszó modul
 
@@ -47,6 +47,10 @@ A videólejátszó modul támogatja a másodlagos hangsávot is. Videó CMS-be v
 - Promóciós videók vagy irányelvekkel kapcsolatos videók bármelyik marketinglapon
 - A termék jellemzőit bemutató marketingvideók a termék részletes lapjain vagy marketinglapokon
 
+A következő kép egy kezdőoldalon használt videólejátszó modul egy példáját jeleníti meg.
+
+![Példa a videólejátszó modulra](./media/ecommerce-videoplayer.PNG)
+
 ### <a name="video-player-module-properties"></a>Videólejátszó modul tulajdonságai
 
 | Tulajdonság neve         | Érték                               | Leírás |
@@ -68,20 +72,32 @@ A videólejátszó modul támogatja a másodlagos hangsávot is. Videó CMS-be v
 
 A videólejátszó modul új oldalra való felvételéhez és a kötelező tulajdonságok beállításához hajtsa végre az alábbi lépéseket.
 
-1. Hozzon létre egy **videólejátszó sablon** nevű lapsablont.
-1. Az alapértelmezett lap **Fő** helyén adjon hozzá egy tárolómodult.
-1. A tárolómodulban adja hozzá a videólejátszó és háttérvideó-lejátszó modulokat.
-1. Fejezze be a sablon szerkesztését, és tegye közzé.
-1. A létrehozott videólejátszó sablon használatával hozzon létre egy **videólejátszó lap** nevű lapot.
-1. Az új lap **Fő** helyén adjon hozzá egy videólejátszó modult.
+1. Lépjen a **Sablonok** pontra, majd új sablon készítéséhez válassza az **Új** elemet.
+1. Az **Új sablon** párbeszédablakban a **Sablon neve** alatt adja meg a **Videólejátszó sablon** elemet, majd válassza az **OK** gombot.
+1. A **Törzs** helyben válassza a három pont (**…**) gombot, majd válassza az **Modul hozzáadása** elemet.
+1. A **Modul hozzáadása** párbeszédpanelen válassza ki az **Alapértelmezett oldal** modult, majd kattintson az **OK** gombra.
+1. Az **Alapértelmezett lap** modul **Fő** helyén válassza ki a három pont (**…**) gombot, majd válassza a **Modul hozzáadása** elemet.
+1. A **Modul hozzáadása** párbeszédpanelen válassza ki az **Tároló** modult, majd kattintson az **OK** gombra.
+1. Az **Tároló** helyben válassza a három pont (**…**) gombot, majd válassza az **Modul hozzáadása** elemet.
+1. A **Modul hozzáadása** párbeszédpanelen válassza ki a **Videólejátszó** modult, majd kattintson az **OK** gombra.
+1. Válassza a **Mentés** elemet, válassza a **Szerkesztés befejezése** parancsot a sablon ellenőrzéséhez, majd a **Közzététel** elemet a közzétételhez. 
+1. Lépjen az **Oldalak** pontra, majd válassza az **Új** lehetőséget új oldal létrehozásához.
+1. A **Sablon kiválasztása** párbeszédpanelen válassza ki a létrehozott videólejátszó-sablont. Az **Oldal neve** alatta adja meg a **Videólejátszó oldalt**, majd kattintson az **OK** gombra.
+1. Az új oldal **Fő** helyén válassza ki a három pont (**…**) gombot, majd válassza a **Modul hozzáadása** elemet.
+1. A **Modul hozzáadása** párbeszédpanelen válassza ki az **Tároló** modult, majd kattintson az **OK** gombra.
+1. Az **Tároló** helyben válassza a három pont (**…**) gombot, majd válassza az **Modul hozzáadása** elemet.
+1. A **Modul hozzáadása** párbeszédpanelen válassza ki a **Videólejátszó** modult, majd kattintson az **OK** gombra.
 1. A videolejátszó modul tulajdonságlapján válassza a **Videó hozzáadása** elemet.
 1. A **Médiaválasztó** párbeszédablakon válasszon egy videót, majd válassza az **Új médiaelem feltöltése** elemet.
-1. Mentse a lapot, és tekintse meg az előnézetét. A lapon a videómodulnak látszania kell. A további beállítások módosításával testreszabhatja a modul viselkedését.
-1. Fejezze be a lap szerkesztését, és tegye közzé.
+1. A Fájlkezelő területen jelöljön ki egy vagy videófájlt, majd válassza a **Megnyitás** lehetőséget.
+1. A **Mediaelem feltöltése** párbeszédpanelen írjon be egy címet és egyéb adatokat, majd kattintson az **OK** gombra.
+1. A **Médiaválasztó** párbeszédpanelen válassza a **Bezárás** elemet.
+1. Válassza a **Mentés** lehetőséget, majd az oldal előnézetének megtekintéséhez az **Előnézet** elemet. A lapon a videómodulnak látszania kell. A további beállítások módosításával testreszabhatja a modul viselkedését.
+1. Válassza a **Szerkesztés befejezése** parancsot az oldal ellenőrzéséhez, majd a **Közzététel** elemet a közzétételhez. 
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[Kezdő csomag áttekintése](starter-kit-overview.md)
+[Kezdőcsomag áttekintése](starter-kit-overview.md)
 
 [Promóciós szalagcím modul](add-alert.md)
 

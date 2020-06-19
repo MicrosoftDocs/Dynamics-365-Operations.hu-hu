@@ -1,0 +1,78 @@
+---
+title: Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.12 szolgáltatásban (2020. augusztus)
+description: Ez a témakör a Dynamics 365 Supply Chain Management 10.0.12 új vagy módosított szolgáltatásait írja le.
+author: kamaybac
+manager: tfehr
+ms.date: 05/29/2020
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+audience: Application User, Developer, IT Pro
+ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
+ms.custom: ''
+ms.assetid: ''
+ms.search.region: Global
+ms.author: kamaybac
+ms.search.validFrom: 2020-05-29
+ms.dyn365.ops.version: 10.0.12
+ms.openlocfilehash: c773b5e1013bbd58f48cd345f50a342175ed0c98
+ms.sourcegitcommit: 713b5dfc76a6875d0ba6d86c5cbd585ea502cf9d
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "3413893"
+---
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10012-august-2020"></a>Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.12 szolgáltatásban (2020. augusztus)
+
+[!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
+
+Ez a témakör a Microsoft Dynamics 365 Supply Chain Management 10.0.12 előzetes változatának új vagy módosított szolgáltatásait írja le. Ennek a verziónak 10.0.507 a buildszáma, és a következő módon érhető el:
+
+- **Előzetes kiadás**: 2020. május
+- **Általános elérhetőség (saját frissítés):** 2020. július
+- **Automatikus frissítés:** 2020. augusztus
+
+## <a name="features-included-in-this-release"></a>A verzióban található funkciók
+
+Ez a kiadás a következő funkciókat tartalmazza: A funkciók címei további információkra mutatnaka a [Kiadási tervek](https://docs.microsoft.com/dynamics365/release-plans/) webhelyen. A további hivatkozások az adott funkcióhoz jelenleg elérhető további dokumentációkat és videókat mutatnak be. Ezen szolgáltatások többségét a használat előtt engedélyezni kell a [Funkciók kezelése](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) alatt.
+
+- [A feladatkártya-érintőképernyő zárolásának engedélyezése fertőtlenítésre](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/allow-locking-job-card-touchscreen-sanitization) – További tájékoztatás: [Munkakártya konfigurálása eszközökhöz](../production-control/config-job-card-device.md).
+- [A termékvariánsok és a nyomon követési dimenziók rögzítése a raktározási alkalmazásban a betöltési cikk bevételezése során](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/capture-product-variants-tracking-dimensions-warehousing-app-during-load-item-receiving) – További tájékoztatás: [Mobileszközök beállítása raktári munkához](../warehousing/configure-mobile-devices-warehouse.md).
+- Költségszámítási szint (új AJ-szint) – További tájékoztatás: [Költségszámítási szint](../cost-management/cost-calculation-level.md).
+- [Dynamics 365 Supply Chain Management ügyfélportál](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/customer-self-service-experiences) – További tájékoztatás: [Dynamics 365 Supply Chain Management ügyfélportál – áttekintés](../sales-marketing/customer-portal-overview.md).
+- [Aktuális készlet szolgáltatás](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/inventory-on-hand-service)
+- [IoT-intelligencia alapismeretek](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/iot-intelligence-core-insights) -További tájékoztatás: [IoT-intelligence kezdőlap](../iot/iot-intelligence-home-page.md).
+- [Azonosítótábla fogadásával kapcsolatos fejlesztések a raktárkezelő mobilalkalmazásban (folytatás)](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app-continued) - További információ: [Azonosítótáblák fogadása a raktárkezelő mobilalkalmazásban](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md).
+- [Tömeges telepítés a Warehouse Mobile App alkalmazáshoz](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/mass-deployment-warehouse-mobile-app) – További tájékoztatás: [A raktárkezelési alkalmazás áttekintése](../warehousing/install-configure-warehousing-app.md).
+- [Raktárkezelés készleten lévő bejegyzései karbantartási feladatának maximális végrehajtási ideje](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/maximum-execution-time-warehouse-management-on-hand-entries-cleanup-job) – További tájékoztatás: [Raktárkezelés – készleten lévő elemek törlési feladata](../warehousing/onhand-cleanup.md).
+- [Beszerzési kereskedelmi megállapodások tervezésének optimalizálása](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/planning-optimization-support-purchase-trade-agreements) – További tájékoztatás: [Alaptervezés a beszerzési kereskedelmi megállapodásokkal](../master-planning/planning-optimization/purchase-trade-agreement.md).
+
+## <a name="additional-resources"></a>További erőforrások
+
+### <a name="platform-updates-for-finance-and-operations-apps"></a>A Finance and Operations-alkalmazások platformfrissítései
+
+A Microsoft Dynamics 365 Supply Chain Management 10.0.12 platformfrissítéseket tartalmaz. További tájékoztatás: [Platform-frissítések az Finance and Operations alkalmazások 10.0.12 verziójához (2020. augusztus)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-10-0-12.md).
+
+### <a name="bug-fixes"></a>Hibajavítások
+
+Ha további tájékoztatást szeretne kapni a 10.0.12 részét képező frissítésekben található hibajavításokról, lépjen be a Lifecycle Services (LCS) szolgáltatásokba, és tekintse meg a [Tudásbázis cikket](https://fix.lcs.dynamics.com/Issue/Details?bugId=453382&dbType=3&qc=a68cf77635c0ab926e7b1b75c6925c82a23058c524c4d728ba8b30fedaf41746).
+
+### <a name="dynamics-365-2020-release-wave-1-plan"></a>Dynamics 365: 2020-es 1. hullám tervei
+
+Kíváncsi a bármelyik üzleti alkalmazásával vagy platformjával kapcsolatos, közelgő és a közelmúltban bevezetett lehetőségekre?
+
+Lásd: [Dynamics 365: 2020-as 1. frissítési hullám tervét](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/index). A részleteket minden apró információmorzsáig bezárólag egyetlen dokumentumban rögzítettük, amelyet felhasználhat a tervezés során.
+
+### <a name="removed-and-deprecated-supply-chain-management-features"></a>Eltávolított és elavult Supply Chain Management szolgáltatások
+
+A [Dynamics 365 Supply Chain Management eltávolított vagy elavult szolgáltatásai](removed-deprecated-features-scm-updates.md) témakör azokat a funkciókat írja le, amelyek el lettek távolítva a Supply Chain Management szolgáltatásól vagy eltávolításuk ütemezve van.
+
+- Az *eltávolított* szolgáltatások már nem érhetők el a termékben.
+- Az *elavult* szolgáltatás már nincs aktív fejlesztés alatt, és egy jövőbeli frissítésben eltávolíthatjuk.
+
+Mielőtt a termékből eltávolítunk egy szolgáltatást, egy eltávolítással kapcsolatos értesítést teszünk közzé a [Dynamics 365 Supply Chain Management eltávolított vagy elavult funkciói](removed-deprecated-features-scm-updates.md) témakörben 12 hónappal az eltávolítás előtt.
+
+Olyan módosítások esetén, amelyek csak a fordítási időt érintik, de binárisan kompatibilisek a tesztkörnyezettel és a termelési környezettel, az elavulási idő 12 hónapnál rövidebb lesz. Ezek általában olyan funkcionális frissítések, amelyeket a fordítón kell elvégezni.

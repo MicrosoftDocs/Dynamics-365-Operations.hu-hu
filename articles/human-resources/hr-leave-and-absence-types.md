@@ -3,12 +3,12 @@ title: Szabadság- és távolléttípusok konfigurálása
 description: Beállíthatja, hogy az alkalmazottak milyen típusú szabadságot vehetnek igénybe a Dynamics 365 Human Resources alkalmazásban.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/01/2020
+ms.date: 06/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
 audience: Application User
 ms.reviewer: anbichse
 ms.search.scope: Human Resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: df6e34fe6a23e6f0a8307a035752a35a15a3431c
-ms.sourcegitcommit: 79f8aa2c0b166a423db9b8503da53e96e3fc43dc
+ms.openlocfilehash: 1802938f54a1d78e6ea60572a76177a037192ae0
+ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3198050"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "3428593"
 ---
 # <a name="configure-leave-and-absence-types"></a>Szabadság- és távolléttípusok konfigurálása
 
@@ -56,7 +56,9 @@ A Dynamics 365 Human Resources szabadságtípusai határozzák meg az alkalmazot
 
 8. A **Hozzáférés korlátozása a kijelölt szerepkörökre** beállításnál válassza ki, hogy szeretné-e korlátozni a hozzáférést. Ezután a **Szabadságtípus biztonsági szerepkörei** beállításnál válassza ki a biztonsági szerepköröket. A biztonsági szerepkörök a jelen eljárás korábbi pontján, a **Munkafolyamat-azonosító** beállításnál kiválasztott munkafolyamatban határozhatók meg.
 
-9. Válassza a **Mentés** lehetőséget.
+9. A **Felfüggesztési kapcsolatok** alatt válassza ki, hogy szeretné, hogy ez a szabadságtípus felfüggesztene egy másik szabadságtípust, vagy ezt a szabadságtípust függesztené fel egy másik. Ha egy szabadságkérelem kerül elküldésre a felfüggesztő szabadságtípusra, akkor egy szabadságfelfüggesztés automatikusan létrehozásra kerül a felfüggesztett szabadságléttípusra. 
+
+10. Válassza a **Mentés** lehetőséget.
 
 ## <a name="configure-leave-type-rules"></a>A szabadságtípus-szabályok konfigurálása
 
@@ -66,16 +68,15 @@ A Dynamics 365 Human Resources szabadságtípusai határozzák meg az alkalmazot
 
    A szabadnapokat a munkaidőnaptárban állíthatja be. További információ: [Munkaidőnaptár létrehozása](hr-leave-and-absence-working-time-calendar.md)
    
-## <a name="configure-preview-features"></a>Előzetes funkciók konfigurálása
-
-Ha engedélyezte a szabadság és a távollét előzetes funkcióit, akkor konfigurálnia kell azok beállításait.
-
-[!include [banner](includes/preview-feature-leave-absence.md)]
-
-1. Válassza ki a szabadságtípust, amelyhez az átviteli egyenlegek át lesznek irányítva. Az átvitelhez új szabadságtípust is létre lehet hozni. 
-
+ 3. Állítsa be a szabadság típusaként az **Átvihető szabadságtípust**. Ha ezt a lehetőséget választja, akkor az átvitt egyenlegek átkerülnek a megadott szabadságtípusba. Az átvitt szabadságtípust is figyelembe kell venni a szabadság- és a távolléti tervben. 
+ 
+ 4. Adja meg a szabadságtípus **Lejárati szabályait**. Ha beállítja ezt a lehetőséget, akkor a napok vagy hónapok egységét is megadhatja, és megadhatja a lejárat időtartamát. Beállíthatja a lejárat szabályának érvényességi dátumát is. A lejárati időpontokban meglévő szabadságegyenlegeket a szabadság típusából kivonja a program, és ez a szabadságegyenlegében tükröződik. 
+ 
+ 
 ## <a name="see-also"></a>Lásd még
 
 - [Szabadság és távollét áttekintése](hr-leave-and-absence-overview.md)
 - [Szabadság- és távolléti terv létrehozása](hr-leave-and-absence-plans.md)
 - [Munkaidőnaptár létrehozása](hr-leave-and-absence-working-time-calendar.md)
+- [Szabadság felfüggesztése](hr-leave-and-absence-suspend-leave.md)
+

@@ -1,6 +1,6 @@
 ---
-title: ADLS engedélyezése a Dynamics 365 Commerce környezetben
-description: Ez a témakör azt mutatja be, hogyan lehet engedélyezni és tesztelni az Azure Data Lake Storage (ADLS) megoldást egy Dynamics 365 Commerce környezet számára, amely előfeltétele a termékajánlások engedélyezésének.
+title: Az Azure Data Lake Storage engedélyezése Dynamics 365 Commerce környezetben
+description: Ez a témakör azt mutatja be, hogyan lehet engedélyezni és tesztelni az Azure Data Lake Storage megoldást egy Dynamics 365 Commerce környezet számára, amely előfeltétele a termékajánlások engedélyezésének.
 author: bebeale
 manager: AnnBe
 ms.date: 04/13/2020
@@ -19,57 +19,57 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: ba428765babb9ca7566da7a457368959b1c29083
-ms.sourcegitcommit: dbff1c6bb371a443a0cd2a310f5a48d5c21b08ca
+ms.openlocfilehash: 83b829306c2da2d10924e547fd3cac6ae6781db3
+ms.sourcegitcommit: fdc5dd9eb784c7d8e75692c8cdba083fe0dd87ce
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "3259748"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "3404186"
 ---
-# <a name="enable-adls-in-a-dynamics-365-commerce-environment"></a>ADLS engedélyezése a Dynamics 365 Commerce környezetben
+# <a name="enable-azure-data-lake-storage-in-a-dynamics-365-commerce-environment"></a>Az Azure Data Lake Storage engedélyezése Dynamics 365 Commerce környezetben
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör azt mutatja be, hogyan lehet engedélyezni és tesztelni az Azure Data Lake Storage (ADLS) megoldást egy Dynamics 365 Commerce környezet számára, amely előfeltétele a termékajánlások engedélyezésének.
+Ez a témakör azt mutatja be, hogyan lehet engedélyezni és tesztelni az Azure Data Lake Storage megoldást egy Dynamics 365 Commerce környezet számára, amely előfeltétele a termékajánlások engedélyezésének.
 
 ## <a name="overview"></a>Áttekintés
 
-A Dynamics 365 Commerce megoldásban minden termék- és tranzakciós adatot nyomon követése megtörténik a környezet Entitás tárában. Ha az adatokat elérhetővé szeretné tenni a Dynamics 365 más szolgáltatásaihoz (például az adatelemzéshez, az üzleti intelligenciához és a személyre szabott ajánlásokhoz), akkor a környezetet egy vevő által birtokolt Azure Data Lake Storage Gen 2 (ADLS) megoldáshoz kell csatlakoztatni.
+A Dynamics 365 Commerce megoldásban minden termék- és tranzakciós adatot nyomon követése megtörténik a környezet Entitás tárában. Ha az adatokat elérhetővé szeretné tenni a Dynamics 365 más szolgáltatásaihoz (például az adatelemzéshez, az üzleti intelligenciához és a személyre szabott ajánlásokhoz), akkor a környezetet egy vevő által birtokolt Azure Data Lake Storage Gen 2 megoldáshoz kell csatlakoztatni.
 
-Mivel az ADLS egy környezetben konfigurálható, az összes szükséges adatot tükrözni kell az Entitás tárból, miközben továbbra is védve vannak, az ügyfél felügyelete alatt.
+Mivel az Azure Data Lake Storage egy környezetben konfigurálható, az összes szükséges adatot tükrözni kell az Entitás tárból, miközben továbbra is védve vannak, az ügyfél felügyelete alatt.
 
-Ha a termékajánlások vagy a személyre szabott javaslatok is engedélyezve vannak a környezetben, akkor a termékajánlások készlete hozzáférési jogosultságot kap az ADLS dedikált mappájához, hogy beolvassa a vevő adatait, és kiszámítsa a javaslatokat ez alapján.
+Ha a termékajánlások vagy a személyre szabott javaslatok is engedélyezve vannak a környezetben, akkor a termékajánlások készlete hozzáférési jogosultságot kap az Azure Data Lake Storage dedikált mappájához, hogy beolvassa a vevő adatait, és kiszámítsa a javaslatokat ez alapján.
 
 ## <a name="prerequisites"></a>Előfeltételek
 
-A vevőknek a saját Azure-előfizetésben kell konfigurálniuk az ADLS-t. Ez a témakör nem terjed ki egy Azure-előfizetés vagy egy ADLS-alapú tárolási fiók beállításainak beszerzésére.
+A vevőknek a saját Azure-előfizetésben kell konfigurálniuk az Azure Data Lake Storage-t. Ez a témakör nem terjed ki egy Azure-előfizetés vagy egy Azure Data Lake Storage-alapú tárolási fiók beállításainak beszerzésére.
 
-Az ADLS-sel kapcsolatos további tudnivalókért lásd: [ADLS hivatalos dokumentációja](https://azure.microsoft.com/pricing/details/storage/data-lake).
+Az Azure Data Lake Storage-dzsel kapcsolatos további tudnivalókért lásd: [Azure Data Lake Storage Gen 2hivatalos dokumentációja](https://azure.microsoft.com/pricing/details/storage/data-lake).
   
 ## <a name="configuration-steps"></a>Konfigurációs lépések
 
-Ez a szakasz azokat a konfigurációs lépéseket ismerteti, amelyek szükségesek ahhoz, hogy a ADLS engedélyezve legyen egy környezetben, mivel a termékajánlásokhoz kapcsolódik.
-A ADLS engedélyezéséhez szükséges lépésekről a további tudnivalókat lásd: [Entitástár elérhetővé tétele Data Lake alkalmazásként](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md).
+Ez a szakasz azokat a konfigurációs lépéseket ismerteti, amelyek szükségesek ahhoz, hogy az Azure Data Lake Storage engedélyezve legyen egy környezetben, mivel a termékajánlásokhoz kapcsolódik.
+Az Azure Data Lake Storage engedélyezéséhez szükséges lépésekről a további tudnivalókat lásd: [Entitástár elérhetővé tétele Data Lake alkalmazásként](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md).
 
-### <a name="enable-adls-in-the-environment"></a>ADLS engedélyezése a környezetben
+### <a name="enable-azure-data-lake-storage-in-the-environment"></a>Azure Data Lake Storage engedélyezése a környezetben
 
 1. Jelentkezzen be a környezet back office portáljára.
 1. Keresse meg a **Rendszerparamétereket**, és navigáljon az **Adatkapcsolatok** lapra. 
 1. Állíts az **Data Lake-integráció engedélyezése** elemet **Igen** értékre.
 1. Állíts a **Data Lake folyamatos frissítése** elemet **Igen** értékre.
 1. Adja meg a következő kötelező adatokat:
-    1. **Alkalmazásazonosító** // **Alkalmazástitok** // **DNS-név** – Az ADLS titok tárolására szolgáló KeyVaulthoz való csatlakozáshoz szükséges.
-    1. **Titok neve** – A KeyVaultban tárolt titkos név, amely az ADLS-sel történő hitelesítéshez használatos.
+    1. **Alkalmazásazonosító** // **Alkalmazástitok** // **DNS-név** – Az Azure Data Lake Storage titok tárolására szolgáló KeyVaulthoz való csatlakozáshoz szükséges.
+    1. **Titok neve** – A KeyVaultban tárolt titkos név, amely az Azure Data Lake Storage-dzsel történő hitelesítéshez használatos.
 1. Mentse a módosításokat a lap bal felső sarkában.
 
-A következő kép egy példát mutat az ADLS-konfigurációra.
+A következő kép egy példát mutat az Azure Data Lake Storage-konfigurációra.
 
-![Minta ADLS-konfiguráció](./media/exampleADLSConfig1.png)
+![Minta Azure Data Lake Storage-konfiguráció](./media/exampleADLSConfig1.png)
 
-### <a name="test-the-adls-connection"></a>ADLS-kapcsolat ellenőrzése
+### <a name="test-the-azure-data-lake-storage-connection"></a>Azure Data Lake Storage-kapcsolat ellenőrzése
 
 1. Ellenőrizze a kapcsolatot a kulcstárolóval az **Azure Key Vault tesztelése** link segítségével.
-1. Ellenőrizze a kapcsolatot az ADLS-lel az **Azure Storage tesztelése** link segítségével.
+1. Ellenőrizze a kapcsolatot az Azure Data Lake Storage-dzsel az **Azure Storage tesztelése** link segítségével.
 
 > [!NOTE]
 > Ha a tesztek sikertelenek, ellenőrizze, hogy a fentiekben hozzáadott összes KeyVault-információ helyes-e, majd próbálkozzon újra.
@@ -86,7 +86,7 @@ A következő kép egy példát mutat be az Entitás tárra az automatikus friss
 
 ![Példa az automatikus frissítést engedélyező Entitás tárra](./media/exampleADLSConfig2.png)
 
-Az ADLS most be van állítva a környezethez. 
+Az Azure Data Lake Storage most be van állítva a környezethez. 
 
 Ha nem fejeződött be, akkor kövesse a [termékajánlások és a környezet személyre szabásának](enable-product-recommendations.md) engedélyezésének lépéseit.
 

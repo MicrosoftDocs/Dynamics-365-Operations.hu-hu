@@ -3,7 +3,7 @@ title: Kosármodul
 description: Ez a témakör a kosármodulokkal foglalkozik, és bemutatja, hogy hogyan lehet őket hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: anupamar-ms
 manager: annbe
-ms.date: 04/13/2020
+ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,15 +17,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: d91f6ff24f8f2c051ed23565983c2bc6a2c12b55
-ms.sourcegitcommit: ac966ea3a6c557fb5f9634b187b0e788d3e82d4d
+ms.openlocfilehash: 3ba46fd90507a9cf8da92598c8449a2e553da352
+ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "3261421"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "3411273"
 ---
 # <a name="cart-module"></a>Kosármodul
 
+[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 Ez a témakör a kosármodulokkal foglalkozik, és bemutatja, hogy hogyan lehet őket hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
@@ -36,7 +37,11 @@ A kosármodullal megjeleníthetők a kosárba tett cikkek, mielőtt az ügyfél 
 
 A kosár modul támogatja a bejelentkezett fizetést és a vendégfizetést. Támogatja a **Vissza a vásárláshoz** hivatkozást. A hivatkozáshoz vezető útvonalat a **Webhely-beállítások \> Bővítmények \> Útvonala** oldalon.
 
-A kosár modul a kosár azonosítója alapján jeleníti meg az adatokat, ami a webhely teljes területén elérhető böngésző cookie.
+A kosár modul a kosár azonosítója alapján jeleníti meg az adatokat, ami a webhely teljes területén elérhető böngésző cookie. 
+
+A következő kép a Fabrikam webhelyen használt kosároldal egy példáját jeleníti meg.
+
+![Példa egy kosármodulra](./media/cart2.PNG)
 
 ## <a name="cart-module-properties-and-slots"></a>A kosármodul tulajdonságai és helyei
 
@@ -47,14 +52,12 @@ A kosár modulnak van egy **Címsor** tulajdonsága, amelyet olyan értékekre �
 - **Szövegblokk** – Ez a modul a kosár modulban használható egyéni üzenetküldést támogatja. Az üzeneteket a tartalomkezelő rendszer (CMS) vezérli. Bármilyen üzenet megadható, például: „A rendeléssel kapcsolatos problémák esetén hívja az 1-800-Fabrikam számot”.
 - **Áruházválasztó** – Ez a modul felsorolja azokat a közeli áruházakat, ahol a cikkek elérhetők és felvehetők. Ez lehetővé teszi a felhasználók számára, hogy a közelben levő üzleteket megtalálják. A modullal kapcsolatos további tudnivalókat lásd: [Üzletkiválasztó modul](store-selector.md).
 
-
 ## <a name="module-properties"></a>Modul tulajdonságai
 
-A kosár-modulok beállításai a **Webhelybeállítások \> Bővítmények** pontban konfigurálhatók:
+A kosármodulok következő beállításai konfigurálhatók a **Webhelybeállítások \> Bővítmények** pontban:
 
 - **Maximális mennyiség** – Ez a tulajdonság megadja az egyes cikkek kosárhoz adható maximális számát. Előfordulhat például, hogy egy kiskereskedő úgy dönt, hogy egyetlen tranzakcióban csak 10 terméket lehet értékesíteni.
-- **Készletellenőrzés** – Ha **Igaz** értékre van beállítva, akkor a program a kosárba csak azután veszi fel a cikket, hogy a vásárlásmező modul meggyőződött róla, hogy az adott termék készleten van. Ez a készletellenőrzés végrehajtásra kerül azokban az esetekben, amikor a cikk kiszállításra kerül, mind azokban az esetekben, amikor a vevő az áruházban veszi fel. Ha **Hamis** értékre van állítva, akkor a program nem végez készletellenőrzést, mielőtt a cikkeket felveszi a kosárba, és a rendelés leadásra kerül. A készlet beállításainak konfigurálásával kapcsolatos további tudnivalókat lásd: [Kiskereskedelmi csatornák készletelérhetőségének kiszámítása](calculated-inventory-retail-channels.md).
-- **Készletpuffer** – ez a tulajdonság a készlethez tartozó pufferméret meghatározására szolgál. A készlet leltározása valós időben történik, és sok vevői rendelés esetén nehéz a készlet pontos leltározása. A készletellenőrzés során, ha a készlet kisebb, mint a puffermennyiség, akkor a rendszer a terméket kifogyottként kezeli. Ezért ha az értékesítések gyorsabban történnek több csatornán keresztül, és a leltározás nem teljes mértékben szinkronizált, akkor kisebb a kockázata annak, hogy a kifogyott cikkek eladásra kerülnek.
+- **Készlet** – A készletbeállítások alkalmazásával kapcsolatban a következő témakör tartalmaz további tájékoztatást: [Készletbeállítások alkalmazása](inventory-settings.md).
 - **Vissza a vásárláshoz** – a tulajdonság a **Vissza a vásárláshoz** linkhez megadott útvonal meghatározására szolgál. Az útvonal a webhely szintjén konfigurálható, amely lehetővé teszi, hogy a kiskereskedők visszavigyék a vevőt a kezdőlapra vagy más lapjára.
 
 ## <a name="commerce-scale-unit-interaction"></a>Commerce Scale Unit-interakció
@@ -65,19 +68,27 @@ A kosármodul a termék adatait a Commerce Scale Unit API-k használatával olva
 
 A kosármodul új oldalra való felvételéhez és a kötelező tulajdonságok beállításához hajtsa végre az alábbi lépéseket.
 
-1. Hozzon létre egy **Kosártöredék** nevű töredéket, majd adjon hozzá egy új töredéket.
-1. Adjon hozzá egy fejlécet a kosármodulhoz.
-1. Adjon hozzá egy üzletválasztó modult a kosár modulhoz.
-1. Mentse a töredéket, fejezze be a szerkesztését, majd tegye közzé a töredéket.
-1. Hozzon létre egy **Kosársablon** nevű sablont, és adja hozzá a most létrehozott kosártöredéket.
-1. Mentse a sablont, fejezze be a szerkesztését, majd tegye közzé a sablont.
-1. Hozzon létre egy olyan oldalt, amely az új sablont használja.
-1. Mentse a lapot, és tekintse meg az előnézetét.
-1. Fejezze be az oldal szerkesztését, majd tegye közzé.
+1. Lépjen az **Oldaltöredékek** pontra, majd válassza az **Új** lehetőséget új töredék létrehozásához.
+1. Az **Új oldaltöredék** párbeszédablakban válassza ki a **Kosár** modult.
+1. Az **Oldaltöredék neve** pontban adja meg a **Kosár töredék** nevét, majd válassza az **OK** lehetőséget.
+1. Válassza ki **Kosár** helyet.
+1. A jobb oldali tulajdonságok ablaktáblán válassza ki a ceruza szimbólumot, adja meg a címsor szövegét a mezőben, majd jelölje be a pipa jelet.
+1. A **Kosár** helyben válassza a három pont (**…**) gombot, majd válassza az **Modul hozzáadása** elemet.
+1. A **Modul hozzáadása** párbeszédpanelen válassza ki az **Áruházválasztó** modult, majd kattintson az **OK** gombra.
+1. Válassza a **Mentés** elemet, válassza a **Szerkesztés befejezése** parancsot a töredék ellenőrzéséhez, majd a **Közzététel** elemet a közzétételhez.
+1. Lépjen a **Sablonok** pontra, majd új sablon készítéséhez válassza az **Új** elemet.
+1. Az **Új sablon** párbeszédablakban a **Sablon neve** alatt adja meg a sablon nevét.
+1. A Vázlatablakban válassza ki a **Törzs** helyét, válassza a három pont (**…**) majd válassza a **Töredék hozzáadása** elemet.
+1. Az **Oldaltöredék kiválasztása** párbeszédpanelen válassza ki a **Kosártöredék** töredékét, amelyet korábban hozott létre majd kattintson az **OK** gombra.
+1. Válassza a **Mentés** elemet, válassza a **Szerkesztés befejezése** parancsot a sablon ellenőrzéséhez, majd a **Közzététel** elemet a közzétételhez.
+1. Lépjen az **Oldalak** pontra, majd válassza az **Új** lehetőséget új oldal létrehozásához.
+1. A **Sablon kiválasztása** párbeszédpanelen válassza ki a létrehozott sablont, adjon meg egy oldalnevet, majd kattintson az **OK** gombra.
+1. Válassza a **Mentés** lehetőséget, majd az oldal előnézetének megtekintéséhez az **Előnézet** elemet.
+1. Válassza a **Szerkesztés befejezése** parancsot az oldal ellenőrzéséhez, majd a **Közzététel** elemet a közzétételhez.
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[Kezdő csomag áttekintése](starter-kit-overview.md)
+[Kezdőcsomag áttekintése](starter-kit-overview.md)
 
 [Tárolómodul](add-container-module.md)
 

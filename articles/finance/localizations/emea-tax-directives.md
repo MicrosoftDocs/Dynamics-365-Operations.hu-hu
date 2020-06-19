@@ -3,7 +3,7 @@ title: Európai adóügyi irányelvek
 description: Előírhatja egy magyarázat hozzáadását az áfáról az eladások és projektek számláihoz. Nyomtathat referenciaszámokat értékesítési számlákhoz, szabadszövegű számlákhoz és projektszámlákhoz.
 author: epodkolz
 manager: AnnBe
-ms.date: 05/12/2017
+ms.date: 06/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epodkolz
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 2d054a1bdcfb3d189b343b51de77b407335a7792
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 70c86d85b66f1b5c0bf72f80f93299c3848ca158
+ms.sourcegitcommit: c5d0bd90334e259e96df17a217b2eff03c265f07
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183686"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "3422993"
 ---
 # <a name="tax-directives-for-europe"></a>Európai adóügyi irányelvek
 
@@ -31,3 +31,5 @@ Az EU-irányelv valamennyi tagállam által követendő szabályozásokat tartal
 - Az áfakódok leírásának nyomtatásához az értékesítési számlákra, szabadszöveges számlákra vagy projektszámla-jelentésekre, állítsa be az adózási irányelv áfakódokra vonatkozó hivatkozásszövegét.
 - A jóváírások esetében az eredeti számla számát és dátumát a javítás okával együtt nyomtatja a rendszer.
 
+> [!NOTE]
+> Győződjön meg róla, hogy az **Úrlapbeállítás** oldalon (**Kinnlevőségek** > **Beállítások** > **Űrlapok** > **Űrlapok beállítása** az **Általános lapon**) az **Áfa meghatározása** mező értéke **Regisztráció pénzneme** vagy **Regisztráció és vállalat pénzneme**.

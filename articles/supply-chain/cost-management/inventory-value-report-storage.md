@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2020-04-17
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 03426e86186c6aa283531eb37ae26527e6891042
-ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
+ms.openlocfilehash: 2742c5c12dcc554745b618dd1ff819c8c1e1d05f
+ms.sourcegitcommit: b0e4fa3fb43cf05fce4c833da73012cb01450125
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3276922"
+ms.lasthandoff: 05/30/2020
+ms.locfileid: "3413099"
 ---
 # <a name="inventory-value-storage-report"></a>Készletérték-tárolási jelentés
 
@@ -50,7 +50,7 @@ A következő lépéseket követve létrehozhatja és tárolhatja a **Készleté
 1. Válassza az **Új** lehetőséget.
 1. A megjelenő **Készletérték** párbeszédpanelen állítsa be a következő értékeket a jelentésben szerepeltetni kívánt rekordok meghatározásához:
 
-    - A **paraméterek** gyorslapon adjon meg egy egyedi nevet a jelentéshez, és használja a **dátumtartomány** szakasz mezőit a jelentésben szerepeltetni kívánt rekordok meghatározásához. A dátumtartomány meghatározásához válasszon egyelőre beállított tartományt (a jelentés létrehozási dátumához képest) a **Dátumtartomány kódja** mezőben, vagy válasszon meghatározott dátumokat a **Kezdő dátum** és **Záró dátum** mezőkben. <!-- KFM: What is the ID setting for here? What do its values mean? -->
+    - A **paraméterek** gyorslapon adjon meg egy egyedi nevet a jelentéshez, és használja a **dátumtartomány** szakasz mezőit a jelentésben szerepeltetni kívánt rekordok meghatározásához. A dátumtartomány meghatározásához válasszon egyelőre beállított tartományt (a jelentés létrehozási dátumához képest) a **Dátumtartomány kódja** mezőben, vagy válasszon meghatározott dátumokat a **Kezdő dátum** és **Záró dátum** mezőkben.
     - A **szerepeltetni kívánt rekordok** gyorslapján állítson be szűrőket és korlátokat a jelentésben szerepeltetni kívánt adatok meghatározásához.
     - A **Futtatás a háttérben** gyorslapon adja meg hogyan, mikor és milyen gyakran jöjjön létre a jelentés.
 

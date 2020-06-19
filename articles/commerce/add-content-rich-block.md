@@ -3,7 +3,7 @@ title: Szövegblokk modul
 description: Ez a témakör a szövegblokkmodulokkal foglalkozik, és bemutatja, hogy hogyan lehet őket hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: anupamar-ms
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: fc5b2fa35633b1ce7f7ffefacec318e14fa8db3f
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 93ad09a05d188a30b099b9a44c35e15839be80a7
+ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025597"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "3411135"
 ---
 # <a name="text-block-module"></a>Szövegblokk modul
 
@@ -46,9 +46,13 @@ A szövegblokkmodulokat a következő módokon lehet használni:
 * Egyéni üzeneteket vehet fel a termék részletes lapjára. (Például „Ingyenes szállítás 50 USD feletti megrendelések esetén”).
 * Jogkizárásokhoz és kapcsolati adatokhoz a termék részletes lapjain, a kosár lapjain, a pénztár lapjain és egyéb lapokon (például: „A szállításra és visszaküldésre az áruház irányelvei érvényesek”).
 
+A következő kép egy kezdőoldalon használt szövegblokk modul egy példáját jeleníti meg.
+
+![Példa egy szövegblokk modulra](./media/ecommerce-textblock.PNG)
+
 ## <a name="text-block-module-properties"></a>Szövegblokk modul tulajdonságai
 
-| Tulajdonság neve     | Value                                            | Leírás |
+| Tulajdonság neve     | Érték                                            | Leírás |
 |-------------------|--------------------------------------------------|-------------|
 | Rich Text         | Rich Text                                        | Bekezdés szövege. A program néhány alapvető rich text képességet támogat, mint például a félkövér, az aláhúzott és a dőlt szöveg. |
 | Egyéni osztály neve | Az egymásra épülő stílusalapok (CSS)-osztály neve        | Annak az egyéni CSS osztálynak a neve, amely a fejlesztő számára biztosítja a modul formátumát. Az osztálynevet a témacsomagban kell megadni. |
@@ -58,19 +62,25 @@ A szövegblokkmodulokat a következő módokon lehet használni:
 
 A szövegblokkmodul új oldalra való felvételéhez és a kötelező tulajdonságok beállításához hajtsa végre az alábbi lépéseket.
 
-1. Hozzon létre egy **Tartalomsablon** nevű oldalsablont. 
-1. Adja hozzá a **Törzs** tárolóhelyen az **Alapértelmezett oldal** modult.
-1. Fejezze be a sablon szerkesztését, és tegye közzé.
-1. A most létrehozott tartalomsablon használatával hozzon létre egy **Tartalomlap** nevű lapot.
-1. Az új lap **Fő** helyén adjon hozzá egy tárolómodult.
+1. Lépjen a **Sablonok** pontra, majd új sablon készítéséhez válassza az **Új** elemet.
+1. Az **Új sablon** párbeszédablakban a **Sablon neve** alatt adja meg a **Tartalomsablon** értéket.
+1. A **Törzs** helyben válassza a három pont (**…**) gombot, majd válassza az **Modul hozzáadása** elemet.
+1. A **Modul hozzáadása** párbeszédpanelen válassza ki az **Alapértelmezett oldal** modult, majd kattintson az **OK** gombra.
+1. Válassza a **Mentés** elemet, válassza a **Szerkesztés befejezése** parancsot a sablon ellenőrzéséhez, majd a **Közzététel** elemet a közzétételhez.
+1. Lépjen az **Oldalak** pontra, majd válassza az **Új** lehetőséget új oldal létrehozásához.
+1. A **Sablon kiválasztása** párbeszédpanelen válassza ki a **Tartalomsablon** sablonját. Az **Oldal neve** alatta adja meg a **Tartalom oldalt**, majd kattintson az **OK** gombra.
+1. Az új oldal **Fő** helyén válassza ki a három pont (**…**) gombot, majd válassza a **Modul hozzáadása** elemet.
+1. A **Modul hozzáadása** párbeszédpanelen válassza ki az **Tároló** modult, majd kattintson az **OK** gombra.
 1. A tárolómodul tulajdonságlapján a **Szélesség** tulajdonságot állítsa **Tároló kitöltése** értékre.
-1. Vegyen fel egy szövegblokkmodult a tárolómodulba. 
+1. Az **Tároló** helyben válassza a három pont (**…**) gombot, majd válassza az **Modul hozzáadása** elemet.
+1. A **Modul hozzáadása** párbeszédpanelen válassza ki az **Szövegblokk** modult, majd kattintson az **OK** gombra. 
 1. A szövegblokkmodul tulajdonságlapján adja meg a **Multimédiás szöveg** mező szövegét.
-1. Fejezze be a lap szerkesztését, és tegye közzé.
+1. Válassza a **Mentés** lehetőséget, majd az oldal előnézetének megtekintéséhez az **Előnézet** elemet.
+1. Válassza a **Szerkesztés befejezése** parancsot az oldal ellenőrzéséhez, majd a **Közzététel** elemet a közzétételhez.
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[Kezdő csomag áttekintése](starter-kit-overview.md)
+[Kezdőcsomag áttekintése](starter-kit-overview.md)
 
 [Promóciós szalagcím modul](add-alert.md)
 
