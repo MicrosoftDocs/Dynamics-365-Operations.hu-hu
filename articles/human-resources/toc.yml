@@ -5,6 +5,8 @@
       items:
         - name: Új vagy módosult elemek a Human Resources szolgáltatásban
           href: hr-admin-whats-new.md
+        - name: 2020. május 28.
+          href: hr-whats-new-2020-05-28.md
         - name: 2020. május 14.
           href: hr-whats-new-2020-05-14.md
         - name: 2020. május 1.
@@ -503,15 +505,17 @@
               href: hr-leave-and-absence-types.md
             - name: Szabadság- és távolléti terv létrehozása
               href: hr-leave-and-absence-plans.md
-            - name: Dolgozók hozzárendelése a szabadságtervhez
+            - name: Dolgozók hozzárendelése szabadságtervhez
               href: hr-leave-and-absence-enroll.md
             - name: Szabadság- és távolléti tervek elhatárolása
               href: hr-leave-and-absence-accrue.md
             - name: Szabadság felfüggesztése
               href: hr-leave-and-absence-suspend-leave.md
+            - name: Távollétkérelem
+              href: hr-employee-self-service-request-leave-of-absence.md
             - name: Alkalmazotti szabadság kezelése
               href: hr-leave-and-absence-manage-employee-leave.md
-            - name: A szabadság és távollét elemzéseinek megtekintése
+            - name: Szabadság és távollét elemzéseinek megtekintése
               href: hr-leave-and-absence-analytics.md
             - name: Szabadság- és távollétkérelmek kezelése
               href: hr-employee-self-service-manage-requests.md
@@ -519,6 +523,10 @@
               href: hr-employee-self-service-request-time-off.md
             - name: Csoportos és vállalati naptárak megtekintése
               href: hr-employee-self-service-calendar.md
+            - name: Szabadság vásárlásával és eladásával kapcsolatos irányelv kezelése
+              href: hr-leave-and-absence-manage-buy-and-sell-leave-policies.md
+            - name: Szabadság vásárlása és eladása
+              href: hr-employee-self-service-buy-sell-leave.md
         - name: Szabadságkérelmek kezelése a Teamsben
           href: hr-teams-leave-app.md
         - name: Alkalmazottak fejlesztése
