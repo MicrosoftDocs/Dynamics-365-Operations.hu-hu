@@ -3,7 +3,7 @@ title: Az ügyfélportál telepítése, beállítása és frissítése
 description: Ez a témakör tartalmazza az Ügyfélportál licencelési adatait és telepítési útmutatását.
 author: dasani-madipalli
 manager: tfehr
-ms.date: 04/22/2020
+ms.date: 06/08/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: b9d1e742f78254d949dc49fda008d63b8bff4d65
-ms.sourcegitcommit: 713b5dfc76a6875d0ba6d86c5cbd585ea502cf9d
+ms.openlocfilehash: 0343100362c4d7bc3e09334fb7890919bdb84941
+ms.sourcegitcommit: 7d943499f302298c6ff127f56cecc34af6cee289
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "3413970"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "3435608"
 ---
 # <a name="install-set-up-and-update-the-customer-portal"></a>Az ügyfélportál telepítése, beállítása és frissítése
 
@@ -35,7 +35,7 @@ A Ügyfélportál kiépítése érdekében a következő licencekkel kell rendel
 
 Az Ügyfélportál a Power Apps-portálokon és a kettős íráson alapul, ahogy az a következő ábrán látható.
 
-![![Ügyfélportál függőségei](media/customer-portal-elements.png "Ügyfélportál függőségei")](media/customer-portal-elements.png "Customer portal dependencies")
+![Ügyfélportál függőségei](media/customer-portal-elements.png "Ügyfélportál függőségei")
 
 A Supply Chain Management egyéb szolgáltatásaitól eltérően a Customer Portal-sablon a Power Apps-portálokra épül. Ezért az Ügyfélportált korlátozzák a Power Apps portálok és a kettős írás entitásainak funkcionalitása és képességei.
 
@@ -59,7 +59,7 @@ A Kezdés előtt győződjön meg arról, hogy már végrehajtotta a [szüksége
 
 1. Ugorjon a [make.powerapps.com](https://make.powerapps.com/) oldalra.
 2. Győződjön meg arról, hogy a környezetben, amit használ a kettős írás engedélyezve van.
-3. A **Létrehozás** lapon görgessen a **Kezdés sablonból** szakaszhoz, és válassza ki azt a sablont, amelynek neve a **Supply Chain Management ügyfél**.
+3. A **Létrehozás** lapon görgessen a **Kezdés sablonból** szakaszhoz, és válassza ki azt a sablont, amelynek neve az **Ügyfélportál**.
 4. Kövesse a képernyőn megjelenő utasításokat.
 
 A létesítés befejezése után a **Kezdőlap** a **Saját alkalmazások** területén érheti el az Ügyfélportált.
@@ -71,7 +71,7 @@ A létesítés befejezése után a **Kezdőlap** a **Saját alkalmazások** ter�
 
 Később több funkció is hozzáadható a Ügyfélportálhoz. A Microsoft által az mögöttes megoldás-összetevőkre vonatkozóan végrehajtott módosítások automatikusan megjelennek az Ön környezetében. A környezetben létesített webhely azonban nem fogja automatikusan tükrözni a konfigurációs adatokon elvégzett változtatásokat. Ezeket a változtatásokat manuálisan kell alkalmazni a kód új sablonból történő beolvasásával, és a kiépített webhellyel történő egyesítésével.
 
-## <a name="resources"></a>Erőforrások
+## <a name="additional-resources"></a>További erőforrások
 
 A Ügyfélportál beállításával és testreszabásával kapcsolatos tudnivalók elsajátítását a következő dokumentációk áttekintésével kezdheti meg:
 

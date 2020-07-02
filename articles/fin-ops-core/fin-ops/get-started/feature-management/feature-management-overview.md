@@ -1,9 +1,9 @@
 ---
 title: Funkciókezelés áttekintése
 description: Ez a témakör bemutatja a funkciókezelés szolgáltatást, valamint azt, hogy hogyan használhatja azt.
-author: mikefalkner
+author: ChrisGarty
 manager: AnnBe
-ms.date: 09/12/2019
+ms.date: 06/12/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -13,17 +13,17 @@ audience: IT Pro, Application user
 ms.reviewer: sericks
 ms.search.scope: Operations, Core
 ms.search.region: Global
-ms.author: mfalkner
+ms.author: cgarty
 ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: a9be51c4a5cdadd968de160dc0b1406c95382eeb
-ms.sourcegitcommit: 260a820038c29f712e8f1483cca9315b6dd3df55
+ms.openlocfilehash: 416c19dcf5b2c983afff7d2e8a9797fb0c0e2780
+ms.sourcegitcommit: 218e22014a964b8b52fc0152e355b07b0b84ae2c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "2778705"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "3456597"
 ---
 # <a name="feature-management-overview"></a>Funkciókezelés áttekintése
 
@@ -144,3 +144,34 @@ A funkciókezelés funkcióval szabályozhatja az egyes kiadásokban szállítot
 ## <a name="using-feature-management-to-turn-on-isv-features-or-custom-features"></a>A Funkciókezelés használata az ISV-funkciók és az egyéni funkciók bekapcsolásához
 
 A funkciókezelés jelenleg nem érhető el a független szoftvergyártók (ISV-k) funkcióihoz és egyéni funkciókhoz. A Microsoft azonban további funkciókat ad hozzá a Funkciókezelés fejlesztéséhez. A fejlesztések befejezését követően a Microsoft minden funkció számára elérhetővé teszi a Funkciókezelést, és útmutatást nyújt a funkciók használatához szükséges frissítéshez.
+
+## <a name="frequently-asked-questions-faq"></a>Gyakori kérdések (GYIK)
+
+### <a name="when-are-features-added-removed-or-changed"></a>Mikor vannak hozzáadva, eltávolítva vagy módosítva a szolgáltatások? 
+A szolgáltatások hozzáadása, eltávolítása és módosítása a kód módosításával történik. A változtatások fogadásához frissíteni kell a környezeteket.
+
+### <a name="does-a-feature-become-mandatory-automatically"></a>Automatikusan kötelezővé válik egy funkció? 
+Nem, egy funkció kötelezővé válása nem egy automatikus művelet. A termékcsopatoknak kód módosítását el kell végezniük.
+
+### <a name="when-do-features-become-mandatory"></a>Mikor válnak kötelezővé funkciók? 
+Az alapelv az, hogy minden új funkció egy 12 hónapos időszakban választható és addig nem szükséges semmilyen módosításkezelés, amíg nem engedélyezi a funkciót. A termékcsoportok eldönthetik, hogy az adott időszak lejártát követően kötelezővé teszik-e a szolgáltatást. 
+
+### <a name="why-isnt-there-a-specific-mandatory-enabled-date"></a>Miért nem létezik konkrét „kötelezően engedélyezett dátum”? 
+A frissítések kiadásának ütemezése változó, a környezet frissítésének ütemezése is változó, és az ügyfelek dönthetnek úgy, hogy kihagynak egyes frissítéseket. Ennek eredményeképpen nehéz meghatározni adott dátumokat. 
+
+### <a name="wheres-the-documentation-for-features-that-are-being-made-mandatory"></a>Hol található a kötelezővé tett szolgáltatások dokumentációját? 
+Ez a dokumentáció az alkalmazáscsoportoktól származik. Ezek gyakran meg vannak említve az [Eltávolított és az elavult szolgáltatások](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/deprecated-features) dokumentumokban. 
+
+### <a name="is-there-an-in-product-notification-or-signal-that-a-feature-is-going-to-be-mandatory-enabled"></a>Megjelenik a termékben értesítés vagy jelzés, hogy a funkció engedélyezése kötelező lesz? 
+A szolgáltatás kötelezővé tételéhez kapcsolódó értesítési mechanizmus jelenleg nem létezik.
+
+### <a name="do-features-ever-get-enabled-without-the-customer-knowing-about-it"></a>Van-e olyan funkció, amely a vevő tudta nélkül is engedélyezve lesz válik? 
+Igen, ha a funkcióknak nincs működési hatásuk, akkor alapértelmezés szerint engedélyezve lehetnek.
+
+### <a name="what-is-feature-flighting-and-how-does-it-relate-to-feature-management"></a>Mi az a funkciótesztelés, és hogyan kapcsolódik a funkciókezeléshez? 
+A funkciótesztelések valós idejű be-és ki kapcsolók, amelyeket a Microsoft vezérel. Eltérnek a Funkciókezelés által biztosított ügyfélvezérléstől. 
+- A privát előzetes funkciók nem jelennek meg a Funkciókezelés modulban mindaddig, amíg nem lettek tesztelve. A termelésben a vevőnek bele kell egyeznie e a részvételbe egy speciális programban, hogy ez bekövetkezzen.
+- A nyilvános előzetes verzió és a kiadott (általában elérhető) funkciók megjelennek meg a funkciókezelés modulban, hacsak tesztelésük nincs kikapcsolva. A tesztelés funkció kikapcsolása általában egy végső megoldás, ha a termékcsapat egy kritikus problémát talál, és általában az ügyfél szintjén van alkalmazva.
+
+### <a name="do-features-ever-get-flighted-off-without-the-customer-knowing-about-it"></a>Van-e olyan funkció, amely a vevő tudta nélkül is ki van kapcsolva? 
+Igen, ha egy funkció hatással van egy környezet működésére, és nem rendelkezik funkcionális hatással, akkor alapértelmezés szerint engedélyezve lehet.

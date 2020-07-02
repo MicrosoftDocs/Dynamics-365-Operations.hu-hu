@@ -3,7 +3,7 @@ title: Videók
 description: Ez a lap felsorolja azokat a Microsoft által létrehozott „útmutató” és technikai beszélgetés videókat, amelyek a Finance and Operations alkalmazásokra vonatkoznak, és amelyek a YouTube és más webhelyeken állnak rendelkezésre.
 author: josaw1
 manager: AnnBe
-ms.date: 05/11/2020
+ms.date: 06/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
-ms.openlocfilehash: f5e7751b71c75f80f1c3031ef00b32e80e7db42a
-ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
+ms.openlocfilehash: e4756e4d1697fdba40ad8a71a5d33594583a219a
+ms.sourcegitcommit: 9a2e9f7dfec47c42178bb67a3e099e610515baf3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "3367129"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "3456949"
 ---
 # <a name="videos"></a>Videók 
 
@@ -122,6 +122,9 @@ A [Microsoft Dynamics YouTube csatorna](https://www.youtube.com/channel/UCJGCg4r
 - [Költségellenőrzési mobil munkaterület](https://youtu.be/imsuTg8rUVk)
 - [Első lépések a költségkönyvelésben](https://youtu.be/1pUDtJQZ8FU)
 - [Az Excel használata költségelemzéshez](https://youtu.be/-HKHYdClvx8)
+
+### <a name="customer-portal"></a>Ügyfélportál
+- [A Ügyfélportál-sablon áttekintése a Dynamics 365 Supply Chain Management alkalmazásban](https://youtu.be/nPrqoLuHfV8)
 
 ### <a name="help-system"></a>Súgórendszer
 

@@ -3,7 +3,7 @@ title: Rendelési részletek modul
 description: Ez a témakör a rendelési részletek modulokkal foglalkozik, és bemutatja, hogy hogyan használhatók a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: anupamar
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 06/18/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar-ms
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: cb09a0b6ce1e48707f96021e9fad0006d9c1c55c
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: c2ec629d9fd027be01652351ab1c99001e063e30
+ms.sourcegitcommit: 49656661c89c864e8e067259a601c3bbceb8bef4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3026017"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "3464930"
 ---
 # <a name="order-details-module"></a>Rendelési részletek modul
 
@@ -35,11 +35,11 @@ Ez a témakör a rendelési részletek modulokkal foglalkozik, és bemutatja, ho
 
 A rendelési részletek modul a rendelés visszaigazolási részleteinek megjelenítésére szolgál a rendelés leadását követően. Megjeleníti a rendelés visszaigazolási azonosítóját, a rendelés kapcsolattartási adatait, valamint az egyéb rendelésre vonatkozó adatokat, például a beszerzett cikkeket, a fizetési adatokat és a szállítási módot.
 
-## <a name="order-confirmation-module-properties"></a>A Rendelés-megerősítési modul tulajdonságai
+## <a name="order-details-module-properties"></a>A Rendelés részletei modul tulajdonságai
 
 | Tulajdonság neve  | Értékek | Leírás |
 |----------------|--------|-------------|
-| Címsor        | Fejléc szövege és fejléc címkéje (**H1**, **H2**, **H3**, **H4**, **H5** vagy **H6**) | A rendelés-megerősítési modulnak lehet fejléce. Alapértelmezés szerint a program a címsorhoz a **H2** fejléccímkét használja. A címke azonban módosítható az akadálymentességi követelmények teljesítése érdekében. |
+| Címsor        | Fejléc szövege és fejléc címkéje (**H1**, **H2**, **H3**, **H4**, **H5** vagy **H6**) | A rendelés részletei modulnak lehet fejléce. Alapértelmezés szerint a program a címsorhoz a **H2** fejléccímkét használja. A címke azonban módosítható az akadálymentességi követelmények teljesítése érdekében. |
 | Kapcsolattartási telefonszám | Text | A rendeléssel kapcsolatos kérdésekhez kapcsolattartói szám adható meg. |
 
 ## <a name="modules-that-can-be-used-on-an-order-details-page"></a>A rendelési részletek oldalon használható modulok
@@ -49,26 +49,30 @@ A rendelési részletek oldal létrehozásakor a rendelési részletek modul mel
 - **Javaslatok modul** – A javaslatok modul hozzáadható a rendelési részletek oldalhoz, hogy a vevőnek más termékeket ajánljon fel.
 - **Marketingmodulok** – Bármely marketingmodul hozzáadható a rendelési részletek oldalhoz, hogy marketingtartalmakat jelenítsen meg.
 
-## <a name="create-an-order-details-page-module"></a>Rendelési részletek oldalmodul létrehozása
+## <a name="add-an-order-details-module-to-a-page"></a>Rendelés részletei modul felvétele egy oldalra
 
-1. Hozzon létre egy **Rendelési részletek sablon** nevű oldalsablont.
-1. Az alapértelmezett lap **Fő** helyén adjon hozzá egy rendelési részletek modult.
-1. A rendelési részletek modulban vegyen fel egy ajánlási modult.
-1. Mentse a sablont, és tekintse meg az előnézetét. A rendelési részletek modul nem kerül megjelenítésre, mert szükséges hozzá a rendelés megerősítési számának a környezete.
-1. Fejezze be a sablon szerkesztését, és tegye közzé.
-1. A most létrehozott rendelési részletek sablon használatával hozzon létre egy **rendelési részletek oldal** nevű oldalt.
-1. Adja hozzá az alapértelmezett lapot a lap struktúrájához.
-1. Adja meg a fejléc-töredéket a **Fejléc** bővítőhelyén.
-1. Adja meg a lábléc-töredéket a **Lábléc** bővítőhelyén.
-1. A **Fő** bővítőhelyen adjon hozzá egy rendelési rézletek modult.
-1. A rendelési részletek modul tulajdonságlapjához adja hozzá a **Rendelési részletek** fejlécet.
-1. A rendelési részletek modul alatt vegyen fel egy ajánlási modult, és konfigurálja úgy, hogy az **Új** és **Legkelendőbb** beállításokat használja.
-1. Mentse a lapot, és tekintse meg az előnézetét.
-1. Fejezze be a lap szerkesztését, és tegye közzé.
+A rendelés részletei modul új oldalra való felvételéhez és a kötelező tulajdonságok beállításához hajtsa végre az alábbi lépéseket.
+
+1. Lépjen a **Sablonok** pontra, majd új sablon készítéséhez válassza az **Új** elemet.
+1. Az **Új sablon** párbeszédablakban a **Sablon neve** alatt adja meg a **Rendelés részletei** nevet, majd válassza az **OK** gombot.
+1. A **Törzs** helyben válassza a három pont (**…**) gombot, majd válassza az **Modul hozzáadása** elemet.
+1. A **Modul hozzáadása** párbeszédpanelen válassza ki az **Alapértelmezett oldal** modult, majd kattintson az **OK** gombra.
+1. Az **Alapértelmezett lap** modul **Fő** helyén válassza ki a három pont (**…**) gombot, majd válassza a **Modul hozzáadása** elemet.
+1. A **Modul hozzáadása** párbeszédpanelen válassza ki a **Rendelés részletei** modult, majd kattintson az **OK** gombra.
+1. Válassza a **Mentés** lehetőséget, majd a sablon előnézetének megtekintéséhez az **Előnézet** elemet. A rendelési részletek modul nem kerül megjelenítésre, mert szükséges hozzá a rendelés megerősítési számának a környezete.
+1. Válassza a **Szerkesztés befejezése** parancsot a sablon ellenőrzéséhez, majd a **Közzététel** elemet a közzétételhez.
+1. Lépjen az **Oldalak** pontra, majd válassza az **Új** lehetőséget új oldal létrehozásához.
+1. A **Sablon kiválasztása** párbeszédpanelen válassza ki a **Rendelés részletei sablont**. Az **Oldal neve** alatta adja meg a **Rendelés részletei oldalt**, majd kattintson az **OK** gombra.
+1. Az **Alapértelmezett lap** modul **Fő** helyén válassza ki a három pont (**…**) gombot, majd válassza a **Modul hozzáadása** elemet.
+1. A **Modul hozzáadása** párbeszédpanelen válassza ki a **Rendelés részletei** modult, majd kattintson az **OK** gombra.
+1. A rendelés részletei modul tulajdonságlapján válassza a ceruza szimbólum melletti **Címsor** elemet.
+1. A **Címsor** párbeszédpanel **Címsor szövege** mezőjébe írja be a **Rendelés részletei** címsorszöveget, majd válassza az **OK** gombot.
+1. Válassza a **Mentés** lehetőséget, majd az oldal előnézetének megtekintéséhez az **Előnézet** elemet.
+1. Válassza a **Szerkesztés befejezése** parancsot az oldal ellenőrzéséhez, majd a **Közzététel** elemet a közzétételhez.
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[Kezdő csomag áttekintése](starter-kit-overview.md)
+[Kezdőcsomag áttekintése](starter-kit-overview.md)
 
 [Tárolómodul](add-container-module.md)
 

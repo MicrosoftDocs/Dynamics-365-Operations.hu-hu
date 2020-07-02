@@ -3,7 +3,7 @@ title: Eltávolított vagy elavult Platform-funkciók
 description: Ez a témakör azokat a funkciókat ismerteti, amelyek el lettek távolítva a platformfrissítésekben a Finance and Operations alkalmazásokból vagy az eltávolításuk be van tervezve.
 author: sericks007
 manager: AnnBe
-ms.date: 06/02/2020
+ms.date: 06/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 6fc699907d30fff2d05e752ea055cae8d1134d9b
-ms.sourcegitcommit: 3eaa71c889545318737b3bc88b05eae1a47ad2c0
+ms.openlocfilehash: 1faee75c9112b3aa584ad021ffdc1144fcf4ba32
+ms.sourcegitcommit: 3485d7f36058151cb4fff5c425ef27f56e3ee7d6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "3433922"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "3457566"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Eltávolított vagy elavult Platform-funkciók
 
@@ -36,6 +36,22 @@ Ez a lista segít figyelembe venni az elavult és eltávolított szolgáltatáso
 > [!NOTE]
 > A Finance and Operations alkalmazások objektumaival kapcsolatban a [Technikai referenciajelentésekben](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep) talál részletes információkat. Ezen jelentések különböző verzióit összehasonlíthatja, hogy megismerje azokat az objektumokat, melyek módosítva lettek vagy el lettek távolítva a Finance and Operations alkalmazások egyes verzióiban.
 
+## <a name="platform-updates-for-version-10013-of-finance-and-operations-apps"></a>Platform-frissítések az Finance and Operations alkalmazások 10.0.13 verziójához
+
+> [!NOTE]
+> A 10.0.13 verzió még nincs közzétéve. Az adatok kizárólag tervezési célt szolgálnak. A 10.0.13 verzió tartalma és a funkciók megváltozhatnak. A kiadásokkal kapcsolatban további információkat a [Szolgáltatásfrissítések elérhetősége](../../fin-ops/get-started/public-preview-releases.md) oldalon találhat.
+
+
+### <a name="upgrade-of-three-jquery-component-libraries"></a>Három jQuery-összetevő programkönyvtárának frissítése 
+
+|   |  |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | A program három jQuery- összetevőfüggvénytárat frissít biztonsági javítások és a pénznem karbantartása céljából.   
+| **Felváltotta másik szolgáltatás?**   | Az a következő könyvtárakat érinti: jQuery (3.5.0 és 2.1.4 verzió között ), jQuery UI (1.12.1 és 1.11.4 verzió között), jQuery qTip (3.0.3 és 2.2.1 verzió között). Áttelepítési útmutatót a jQuery online formában biztosítja.  |
+| **Érintett területek**         | Kiterjeszthető vezérlőelemek, egyéni JavaScript-kód kifejezetten az elavult vagy törölt API-khoz |
+| **Telepítési beállítás**              | Összes |
+| **Állapot**                         | A10.0.13-as verzió / 37-es platformfrissítéssel, a vevők tetszés szerint mozoghatnak a legújabb könyvtárakban, ha engedélyezik a „három jQuery összetevő-függvénytár frissítése” funkciót. Az új könyvtárakra történő áttérés kötelező lesz a 2021 áprilisi kiadásban, ez időt ad az érintett API-k áttelepítéséhez.   |
+
 ## <a name="platform-updates-for-version-10012-of-finance-and-operations-apps"></a>Platform-frissítések az Finance and Operations alkalmazások 10.0.12 verziójához
 
 ### <a name="grid-or-group-control-form-extensions-containing-invalid-field-references"></a>Érvénytelen mezők hivatkozásait tartalmazó rács vagy csoport vezérlő képernyő-kiterjesztések
@@ -50,11 +66,11 @@ Ez a lista segít figyelembe venni az elavult és eltávolított szolgáltatáso
 
 ## <a name="platform-updates-for-version-10011-of-finance-and-operations-apps"></a>Platform-frissítések az Finance and Operations alkalmazások 10.0.11 verziójához
 
-### <a name="explicit-whitelisting-for-self-service-environments"></a>Explicit engedélyezési lista az önkiszolgáló környezetek számára
+### <a name="explicit-safe-lists-for-self-service-environments"></a>Explicit biztonságos lista az önkiszolgáló környezetek számára
 
 |   |  |
 |------------|--------------------|
-| **Elavulás/eltávolítás oka** | Megváltozott az IP engedélyezési listázás folyamata. Az önkiszolgáló megoldás már nem támogatja az IP engedélyezési lista használatát. |
+| **Elavulás/eltávolítás oka** | Módosult az a folyamat, amely az IP-cím biztonságos listákba történő helyezésére vonatkozik. Az önkiszolgáló megoldás már nem támogatja az IP biztonságos listák használatát. |
 | **Felváltotta másik szolgáltatás?**   | További információ: [Azure Active Directory feltételez hozzáférés konfigurálása](https://docs.microsoft.com/appcenter/general/configuring-aad-conditional-access).|
 | **Érintett területek**         | Biztonság |
 | **Telepítési beállítás**              | Felhőbeli |

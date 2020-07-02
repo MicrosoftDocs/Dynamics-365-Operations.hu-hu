@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 9da6fc7338942e97a1a7417dbd4dfca55fa95272
-ms.sourcegitcommit: cecd97fd74ff7b31f1a677e8fdf3e233aa28ef5a
+ms.openlocfilehash: 981a66706c07bb350dd08307213f654e56b232ac
+ms.sourcegitcommit: 88f38d584c5befb96e4d1daab4b28af5519ef125
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "3410058"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "3443418"
 ---
 # <a name="overview"></a>Áttekintés
 
@@ -46,10 +46,12 @@ Ez a rendszergazdai útmutató segít a Dynamics 365 Human Resources rendszer be
   - Integrálás az Office-szal
     - [Office-integrációs oktatóanyag](../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/talent/toc.json)
     - [Entitás adatainak frissítése az Excel alkalmazásban](../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/unified-operations/talent/toc.json)
-    - [Az Excel programban történő megnyitási élmények létrehozása](../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/unified-operations/talent/toc.json)
+    - [Az Excel programban történő megnyitási gyakorlat létrehozása](../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/unified-operations/talent/toc.json)
     - [Office-integráció – hibaelhárítás](../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/unified-operations/talent/toc.json)
 
 - [Szolgáltatások kezelése](hr-admin-manage-features.md)
+
+- [Adatbázis-naplózás konfigurálása és kezelése](hr-admin-database-logging.md)
 
 - Ismerje meg a felhasználói felületet
   - [A felhasználói felület elemei](../fin-ops-core/fin-ops/get-started/user-interface-elements.md?toc=/dynamics365/human-resources/toc.json)
