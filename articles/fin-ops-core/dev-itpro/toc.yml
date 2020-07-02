@@ -20,8 +20,6 @@
                   href: get-started/whats-new-platform-update-35.md
                 - name: Platformfrissítés a 10.0.10-es verzióhoz (2020. május)
                   href: get-started/whats-new-platform-update-34.md
-                - name: Platform update 33 (2020. április)
-                  href: get-started/whats-new-platform-update-33.md
             - name: Eltávolított vagy elavult funkciók
               items:
                 - name: Eltávolított vagy elavult Platform-funkciók
@@ -150,6 +148,8 @@
                                   href: data-entities/dual-write/link-your-environment.md
                                 - name: Entitásleképezés engedélyezése a kettős íráshoz
                                   href: data-entities/dual-write/enable-entity-map.md
+                            - name: Pénznem-adattípus áttelepítése a kettős íráshoz
+                              href: data-entities/dual-write/currrency-decimal-places.md
                         - name: A kettős írás kezelése
                           items:
                             - name: Entitás- és mezőleképezések testreszabása
@@ -364,6 +364,8 @@
           items:
             - name: Azure Data Lake – áttekintés
               href: data-entities/azure-data-lake-overview.md
+            - name: Export konfigurálása az Azure Data Lake-hez
+              href: data-entities/configure-export-data-lake.md
             - name: Finance and Operations alkalmazások az Azure Data Lake szolgáltatásban
               href: data-entities/finance-data-azure-data-lake.md
             - name: Entitástár elérhetővé tétele Data Lake alkalmazásként
@@ -498,6 +500,8 @@
                       href: deployment/onprem-reverseproxy.md
                     - name: Helyszíni diagnosztika
                       href: deployment/on-premises-diagnostics.md
+                    - name: Helyszíni vészhelyreállítás konfigurálása
+                      href: deployment/onprem-dr.md
                     - name: PowerBI.com-integráció helyszíni környezetekkel
                       href: analytics/entity-store-on-prem.md
                     - name: Környezetek újrakonfigurálása
@@ -1428,7 +1432,7 @@
               href: sysadmin/maintenance-mode.md
             - name: Előre konfigurált rendszerfiókok
               href: sysadmin/pre-configured-system-accounts.md
-            - name: B2B-felhasználók exportálása Azure AD szolgáltatásba
+            - name: B2B-felhasználók exportálása az Azure AD szolgáltatásba
               href: sysadmin/implement-b2b.md
             - name: Biztonság
               items:
@@ -1436,6 +1440,8 @@
                   href: sysadmin/role-based-security.md
                 - name: Biztonsági architektúra
                   href: sysadmin/security-architecture.md
+                - name: Titkosítás a Finance and Operations alkalmazásokban
+                  href: sysadmin/encryption.md
                 - name: Munkamenet üresjárati időkorlátjának beállítása
                   href: sysadmin/session-idle-timeout.md
                 - name: Kulcsrakész biztonsági jelentések

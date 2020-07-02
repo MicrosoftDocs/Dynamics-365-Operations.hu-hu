@@ -1820,6 +1820,32 @@
                   items:
                     - name: India – GST áttekintése
                       href: localizations/apac-ind-gst.md
+                    - name: Új vagy módosult elemek az APAC India GST honosításban
+                      items:
+                        - name: Új vagy módosult elemek a 10.0.0-es verziójában
+                          href: localizations/apac-ind-news-letter-10-0-00.md
+                        - name: Új vagy módosult elemek a 10.0.01-es verziójában
+                          href: localizations/apac-ind-news-letter-10-0-01.md
+                        - name: Új vagy módosult elemek a 10.0.02-es verziójában
+                          href: localizations/apac-ind-news-letter-10-0-02.md
+                        - name: Új vagy módosult elemek a 10.0.03-as verziójában
+                          href: localizations/apac-ind-news-letter-10-0-03.md
+                        - name: Új vagy módosult elemek a 10.0.04-es verziójában
+                          href: localizations/apac-ind-news-letter-10-0-04.md
+                        - name: Új vagy módosult elemek a 10.0.05-ös verziójában
+                          href: localizations/apac-ind-news-letter-10-0-05.md
+                        - name: Új vagy módosult elemek a 10.0.06-os verziójában
+                          href: localizations/apac-ind-news-letter-10-0-06.md
+                        - name: Új vagy módosult elemek a 10.0.07-es verziójában
+                          href: localizations/apac-ind-news-letter-10-0-07.md
+                        - name: Új vagy módosult elemek a 10.0.08-as verziójában
+                          href: localizations/apac-ind-news-letter-10-0-08.md
+                        - name: Új vagy módosult elemek a 10.0.09-es verziójában
+                          href: localizations/apac-ind-news-letter-10-0-09.md
+                        - name: Új vagy módosult elemek a 10.0.10-es verziójában
+                          href: localizations/apac-ind-news-letter-10-0-10.md
+                        - name: Új vagy módosult elemek a 10.0.11-es verziójában
+                          href: localizations/apac-ind-news-letter-10-0-11.md
                     - name: India GST-hivatkozáscsoportok
                       href: localizations/apac-ind-gst-reference-groups.md
                     - name: GST integrációja pénztárgépekhez
@@ -2346,6 +2372,8 @@
                   href: localizations/emea-pol-interest-calculation.md
                 - name: Forgalom- és mérlegkimutatás
                   href: localizations/emea-pol-turnover-balances-statement.md
+                - name: A kötelezettségek/kinnlevőségek árfolyam-különbözetének felosztása
+                  href: localizations/emea-pol-split-ap-ar-exchange-difference.md
             - name: Oroszország
               items:
                 - name: Oroszország – áttekintés
@@ -3408,8 +3436,10 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/dynamics365/finance/toc.json
                         - name: Formátumok módosítása és futtatása Dokumentumkezelési fájlok használatára
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/dynamics365/finance/toc.json
-                        - name: Adatforrásokban történő hibakeresés
-                          href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=dynamics365/finance/toc.json
+                    - name: Adatforrásokban történő hibakeresés
+                      href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=dynamics365/finance/toc.json
+                    - name: Használja a VONALKÓDOT a vonalkódképek létrehozásához
+                      href: ../fin-ops-core/dev-itpro/analytics/er-barcode-data-sources.md?toc=/dynamics365/finance/toc.json
                 - name: Modell-hozzárendelések konfigurálása
                   items:
                     - name: Országkörnyezet-függő ER-modell-leképezések konfigurálása
@@ -3418,18 +3448,20 @@
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/finance/toc.json
                 - name: Formátumok konfigurálása
                   items:
+                    - name: Modell-definíciók kiválasztása formátumok létrehozásakor
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/dynamics365/finance/toc.json
                     - name: ER-formátumok konfigurálása a jogi személyenként meghatározott paraméterek használatára
                       href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md?toc=dynamics365/finance/toc.json
                     - name: Az ER-formátum paramétereinek beállítása jogi személyenként
                       href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md?toc=dynamics365/finance/toc.json
-                    - name: Modell-definíciók kiválasztása formátumok létrehozásakor
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/dynamics365/finance/toc.json
                     - name: Az ER-formátumelemek végrehajtásának elhalasztása
                       items:
                         - name: Szekvenciaelem végrehajtásának elhalasztása
                           href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md?toc=dynamics365/finance/toc.json
                         - name: XML-elem végrehajtásának elhalasztása
                           href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md?toc=dynamics365/finance/toc.json
+                    - name: Többnyelvű jelentések tervezése
+                      href: ../fin-ops-core/dev-itpro/analytics/er-design-multilingual-reports.md?toc=/dynamics365/finance/toc.json
                 - name: Adatkötések relatív elérési útja
                   href: ../fin-ops-core/dev-itpro/analytics/relative-path-data-bindings-er-models-format.md?toc=dynamics365/finance/toc.json
             - name: Elektronikus jelentéskészítési megoldások használata a Finance and Operations modulban
