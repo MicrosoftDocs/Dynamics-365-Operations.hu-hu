@@ -19,17 +19,19 @@ ms.search.industry: Retail, Commerce
 ms.author: asharchw
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: Application update 10.0.9
-ms.openlocfilehash: fc719348f94ff4a1fb7b4ac96f6f617872c9af92
-ms.sourcegitcommit: 437170338c49b61bba58f822f8494095ea1308c2
+ms.openlocfilehash: e3243a69b98aae25ad8514890fb984c8a0d9f694
+ms.sourcegitcommit: 218e22014a964b8b52fc0152e355b07b0b84ae2c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "3123946"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "3456573"
 ---
-# <a name="reset-receipt-numbers"></a>Nyugtaszámok visszaállítása 
+# <a name="reset-receipt-numbers"></a>Nyugta számainak visszaállítása 
 
 [!include [banner](includes/banner.md)]
 
+> [!NOTE]
+> A funkció használata előtt ki kell választania a **Független sorozat** tulajdonságot a működési profil összes nyugtatípusához. Ezenkívül az eszköz rendszeridőzónája, ahol a pénztár használatban van, meg kell egyezzen a megfelelő üzlet időzónájával. Dolgozunk azon, hogy megszabaduljunk ezektől a korlátozásoktól a jövőbeli kiadásokban. Vegye fel a kapcsolatot a Microsoft terméktámogatási szolgálatával a funkció termelésben történő használata előtt.
 
 A kiskereskedők az üzletben különböző műveletekhez, például készpénz- és szállítási tranzakciókat, visszáru-tranzakciókat, vevői rendeléseket, árajánlatokat és kifizetéseket generálnak. Bár a kiskereskedők saját nyugtaformátumokat határoznak meg, egyes országokban vagy régiókban vannak olyan rendeletek, amelyek megszabják a nyugta formátumának korlátozását. Például ezek a rendeletek korlátozhatják a nyugtán szereplő karakterek számát, megkövetelhetik az egymást követő nyugták számát, korlátozhatnak néhány speciális karaktert, illetve előírhatják, hogy a nyugta számait az év elejére kell állítani. A Microsoft Dynamics 365 Commerce nagyon rugalmasan kezeli a nyugtaszámok feldolgozását, így segít a kiskereskedőknek megfelelni a szabályozási követelményeknek. Ez a témakör azt mutatja be, hogyan kell használni a funkciókat a nyugtaszámok visszaállításához.
 

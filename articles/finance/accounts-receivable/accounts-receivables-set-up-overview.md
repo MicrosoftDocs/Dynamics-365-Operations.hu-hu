@@ -1,5 +1,5 @@
 ---
-title: A Kinnlevőségek modul, követelések és beszedések konfigurálása
+title: A Kinnlevőségek, követelések és beszedések konfigurálása
 description: A Kinnlevőségek, valamint a Követelések és beszedések konfigurálása a vevőktől érkező kifizetések és számlák nyomon követése érdekében.
 author: ShivamPandey-msft
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e6a64aeb9a98eae7b54de5870118d6c49e5370cc
-ms.sourcegitcommit: 9168621ca9b5061c65f3e05dbc5918b6a11d53d5
+ms.openlocfilehash: 1ec8ee7f8ba7493e5334c1a4106351c3661aa00a
+ms.sourcegitcommit: be7e4378c8122c6e7cfc4e7991efbdffee45e006
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "3000279"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "3426419"
 ---
-# <a name="configure-accounts-receivables-and-credit-and-collections"></a>A Kinnlevőségek modul, követelések és beszedések konfigurálása
+# <a name="configure-accounts-receivable-and-credit-and-collections"></a>A Kinnlevőségek, követelések és beszedések konfigurálása
 
 [!include [banner](../includes/banner.md)]
 

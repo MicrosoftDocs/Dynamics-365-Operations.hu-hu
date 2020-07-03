@@ -17,17 +17,16 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-04-17
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 0b71a76b348941f5a010e2f3e4bbb2fa60d37101
-ms.sourcegitcommit: ffd845d4230646499b6f074cb43e69ab95787671
+ms.openlocfilehash: e396d2f2731d3600ee9e83e419d1038571e7bd85
+ms.sourcegitcommit: b0e4fa3fb43cf05fce4c833da73012cb01450125
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "3346353"
+ms.lasthandoff: 05/30/2020
+ms.locfileid: "3413030"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10011-july-2020"></a>A Dynamics 365 Supply Chain Management 10.0.11 új vagy módosult elemei (2020. július)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Ez a témakör a Microsoft Dynamics 365 Supply Chain Management 10.0.11 előzetes változatának új vagy módosított szolgáltatásait írja le. Ennek a verziónak 10.0.464 a buildszáma, és a következő módon érhető el:
 
@@ -44,7 +43,7 @@ Ez a kiadás a következő funkciókat tartalmazza: A funkciók címei további 
 - [Sorok foglalásának fejlesztései a kötegszám foglalása képernyőhöz](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/line-reservation-enhancements-batch-number-reservation-form) – további tájékoztatás: [Ugyanazon köteg foglalása egy értékesítési rendeléshez](../sales-marketing/reserve-same-batch-sales-order.md)
 - [Új adatentitások a termelési területhez](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/new-data-entities-manufacturing-area)
 - [Rakomány-mennyiségek túlbevételezése](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/warehouse-management-inbound-load-management-enhancement) – további tájékoztatás: [A beszerzési rendelések bejövő rakományának raktári kezelése](../warehousing/inbound-load-handling.md).
-- [Készként történő jelentés a feladatkártya-eszközből származó kötegszámokhoz](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/report-as-finished-batch-numbers-job-card-device)
+- [Készként történő jelentés a feladatkártya-eszközből származó kötegszámokhoz](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/report-as-finished-batch-numbers-job-card-device) – További tájékoztatás: [Készként történő jelentés a feladatkártya-eszközből származó kötegszámokhoz](../production-control/report-finished-job-device.md)
 
 ## <a name="additional-resources"></a>További erőforrások
 

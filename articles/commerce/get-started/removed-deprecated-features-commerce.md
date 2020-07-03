@@ -3,7 +3,7 @@ title: Eltávolított vagy elavult funkciók a Dynamics 365 Commerce szolgáltat
 description: Ez a témakör azokat a funkciókat ismerteti, amelyek el lettek távolítva, vagy eltávolításuk be van tervezve a Dynamics 365 Commerce alkalmazásban.
 author: josaw
 manager: AnnBe
-ms.date: 05/04/2020
+ms.date: 06/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: c47c5430a8f5d67e13c95db609a95d5ad66933ae
-ms.sourcegitcommit: a8b6cd799eddaf5be9aec9ea3c2b55e2c3231652
+ms.openlocfilehash: 64241ef1c25359c7b3b305c4e8f2b24de7e8f5e4
+ms.sourcegitcommit: cf709f1421a0bf66ecea493088ecb4eb08004187
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "3335276"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "3443918"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-commerce"></a>Eltávolított vagy elavult funkciók a Dynamics 365 Commerce szolgáltatásban
 
@@ -35,6 +35,16 @@ Ez a lista segít figyelembe venni az elavult és eltávolított szolgáltatáso
 
 > [!NOTE]
 > A Finance and Operations alkalmazások objektumaival kapcsolatban a [Technikai referenciajelentésekben](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep) talál részletes információkat. Ezen jelentések különböző verzióit összehasonlíthatja, hogy megismerje azokat az objektumokat, melyek módosítva lettek vagy el lettek távolítva a Finance and Operations alkalmazások egyes verzióiban.
+
+## <a name="features-removed-or-deprecated-in-the-commerce-10011-release"></a>Eltávolított vagy elavult szolgáltatások a Commerce 10.0.11 kiadásában
+### <a name="data-action-hooks"></a>Adatművelet-horgok
+|   |  |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | Az adatművelet-horgok funkció a teljesítménnyel kapcsolatos problémák miatt elavult. |
+| **Felváltotta másik szolgáltatás?**   | Javasolt ehelyett az [adatművelet felülbírálások](../e-commerce-extensibility/data-action-overrides.md) használata az üzleti logika módosításához az adatműveleti rétegben.|
+| **Érintett területek**         | E-kereskedelmi bővíthetőségi adatműveletek |
+| **Telepítési beállítás**              | Összes |
+| **Állapot**                         | Elavult a 10.0.11 kiadás óta |
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-10010-release"></a>Eltávolított vagy elavult szolgáltatások a Commerce 10.0.10 kiadásában
 ### <a name="pos-operation-803---picking-and-receiving"></a>803-as pénztári művelet – Kitárolás és bevételezés

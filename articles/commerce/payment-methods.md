@@ -3,7 +3,7 @@ title: Kifizetési módok
 description: Minden egyes fizetéstípust, amelyet a kiskereskedő elfogad, konfigurálni kell a rendszer beállításakor. Ez a cikk a beállítható fizetéstípusokat mutatja be, valamint azok beállításának folyamatát.
 author: sericks007
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 06/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: yabinl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 6afbddad869c70e4527c49fc5d4b520d7602f825
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 710c2f3bbe5b76af6d0bc0bf9a469e52c98c18d2
+ms.sourcegitcommit: 550006e6376815237c21b5b30e928353f62fd97c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3022837"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "3463160"
 ---
 # <a name="payment-methods"></a>Kifizetési módok
 
@@ -39,7 +39,7 @@ A kiskereskedők fogadhat különböző típusú fizetés ellenében a termékek
 - **Pénznem** – a vállalat alapértelmezett pénznemétől eltérő elsődleges fizeti formája. A pénznem érme és papírpénz formájában jelenhet meg. A pénznem kifizetési módja a Kiskereskedelem és kereskedelem modulban használt valamennyi pénznemet jelenti. Mielőtt ezt a fizetési módot használhatná, be kell állítania a pénznemeket, és meg kell határoznia a pénznemek árfolyamait.
 - **Kártya** – Minden használt kártyatípus, például bankkártyák és hitelkártyák. Érdemes egy kártyás fizetési módot beállítani a szervezet szintjén, amely minden kártyafajtát képvisel. Ezután az egyes üzletek szintjén minden olyan kártyához, illetve kártyacsoporthoz beállítható egy fizetési mód, amelyeket ugyanazokkal a beállításokkal kell feldolgozni. A kártya fizetőeszköz-típus használata előtt be kell állítania a piacon elérhető gyártók bank- és hitelkártyáit, hogy az üzlethez társíthassa azokat.
 - **Jóváírás** – A pénztárnál kiadott és beváltott jóváírások. A jóváírás lehet visszáru-jóváírás is, amelyet visszáruértékesítésre adnak ki. Ha egy jóváírást csak részben váltanak be, akkor a program új jóváírást állít ki az új egyenlegre. Az új jóváírás új számot is kap. A jóváírásiok csak egyszer használhatók fel, és a program minden felhasznált jóváírás számát nyilvántartja. A rekord a **Jóváírások tábla** oldalon tekinthető meg. A vevők nem válthatnak be a jóváírás értékénél nagyobb összeget.
-- **Ajándékutalvány** – a pénztárnál kiállított és beváltott ajándékutalványok. Az ajándékutalványoknál nem engedélyezett a túlfizetés.
+- **Ajándékutalvány** – a pénztárnál kiállított és beváltott ajándékutalványok. Az ajándékutalványoknál nem engedélyezett a túlfizetés. Minden ajándékutalvány rendelkezik kártyaszám-hozzárendeléssel. 
 - **Vevőszámla** – Olyan fizetések, melyeket az értékesítés időpontjában a pénztáran levonnak a vevőszámláról. Ezzel a fizetési móddal emellett értékesítési információkat is gyűjthet, vagy nyilván tarthat vevőspecifikus engedményeket, amikor a vevő egy másik fizetési módon fizet. Ebben az esetben be kell állítania a vevőre jellemző információkat.
 - **Hűségpontok** – A vevők által a hűségprogramokban összegyűjtött pontok. Ha hűségprogramot hoz létre, a felhasználók pontokat gyűjthetnek, majd válthatnak be különböző módokon. Példa: egyes hűségprogramoknál a vevők engedmény formájában válthatják be a hűségpontokat, de akári fizetési módként is használhatják.
 

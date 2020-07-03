@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: v-olbara
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: e879ec53a88e5e30257608cba7604b404ac2368a
-ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
+ms.openlocfilehash: e11ccdf138adbf05ae1fc8ef739687b9212ae1fe
+ms.sourcegitcommit: 52ba8d3e6af72df5dab6c04b9684a61454d353ad
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "3383784"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "3403335"
 ---
 # <a name="configure-shipment-consolidation-policies"></a>Szállítmánykonszolidációs irányelvek konfigurálása
 
@@ -270,7 +270,7 @@ Ebben a példában létrehozza a *Konszolidációt engedélyező vevők* iránye
 
 - Az irányelv egy specifikus rendelésgyűjtőt fog lekérdezni az olyan vevők beazonosítása céljából, akik konszolidált szállítmányokat fogadnak.
 - A nyitott szállítmányok konszolidálása ki van kapcsolva.
-- A konszolidáció a rendelések között történik az alapértelmezett CrossOrder irányelv által kijelölt mezők használatával (a korábbi **raktár** jelölőnégyzet replikálásához ).
+- A konszolidáció a rendelések között történik az alapértelmezett CrossOrder irányelv által kijelölt mezők használatával (a korábbi **Szállítmány konszolidálása a raktárnak való kiadáskor** jelölőnégyzet replikálásához ).
 
 - Egy értékesítési rendelés szabályának felülbírálásához másik rendelési gyűjtőt kell kiválasztania.
 
@@ -306,7 +306,7 @@ Ebben a példában létrehozza a *Konszolidációt engedélyező raktárak* irá
 
 - Az irányelv egy specifikus rendelésgyűjtőt fog lekérdezni az olyan raktárak beazonosítása céljából, akik képesek szállítmányok konszolidálására.
 - A nyitott szállítmányok konszolidálása ki van kapcsolva.
-- A konszolidáció a rendelések között történik az alapértelmezett CrossOrder irányelv által kijelölt mezők használatával (a korábbi **raktár** jelölőnégyzet replikálásához ).
+- A konszolidáció a rendelések között történik az alapértelmezett CrossOrder irányelv által kijelölt mezők használatával (a korábbi **Szállítmány konszolidálása a raktárnak való kiadáskor** jelölőnégyzet replikálásához ).
 
 Leggyakrabban ezt az üzleti esetet meg lehet oldani, ha az [1. forgatókönyvben](#scenario-1) létrehozott alapértelmezett irányelveket használja. Azonban manuálisan is létrehozhat hasonló irányelveket az alábbi lépések követésével.
 

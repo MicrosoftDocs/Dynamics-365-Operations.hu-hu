@@ -3,7 +3,7 @@ title: Termékajánlatok engedélyezése
 description: Ez a témakör azt mutatja be, hogyan lehet olyan termékjavaslatokat létrehozni, amelyek a Microsoft Dynamics 365 Commerce-felhasználók számára elérhető mesterséges intelligencia gépi tanulás (AI-ML) technológián alapulnak.
 author: bebeale
 manager: AnnBe
-ms.date: 04/13/2020
+ms.date: 05/26/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: d38d7b0e98d84e23d7a51c5d8ee65df4a3b9e4a7
-ms.sourcegitcommit: dbff1c6bb371a443a0cd2a310f5a48d5c21b08ca
+ms.openlocfilehash: 694e5a451b8e25f3729364dfaed0adc7d242f2fe
+ms.sourcegitcommit: fdc5dd9eb784c7d8e75692c8cdba083fe0dd87ce
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "3259794"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "3404209"
 ---
 # <a name="enable-product-recommendations"></a>Termékajánlatok engedélyezése
 
@@ -34,11 +34,11 @@ Ez a témakör azt mutatja be, hogyan lehet olyan termékjavaslatokat létrehozn
 
 ## <a name="recommendations-pre-check"></a>Javaslatok előzetes ellenőrzése
 
-Az engedélyezés előtt felhívjuk figyelmét, hogy a termékjavaslatok csak azok számára a Commerce-ügyfelek számára támogatott, akik a tárhelyüket áttelepítették, és az Azure Data Lake Storage (ADLS) felhasználói. 
+Az engedélyezés előtt felhívjuk figyelmét, hogy a termékjavaslatok csak azok számára a Commerce-ügyfelek számára támogatott, akik a tárhelyüket áttelepítették, és az Azure Data Lake Storage felhasználói. 
 
 Az ajánlások engedélyezése előtt engedélyeznie kell a következő konfigurációkat a háttérirodában:
 
-1. Győződjön meg róla, hogy a ADLS-t megvásárolták és sikeresen hitelesítették a környezetben. További információ: [Győződjön meg róla, hogy a ADLS-t megvásárolták és sikeresen hitelesítették a környezetben](enable-ADLS-environment.md).
+1. Győződjön meg róla, hogy a Azure Data Lake Storage-t megvásárolták és sikeresen hitelesítették a környezetben. További információ: [Győződjön meg róla, hogy az Azure Data Lake Storage-t megvásárolták és sikeresen hitelesítették a környezetben](enable-ADLS-environment.md).
 2. Győződjön meg róla, hogy az entitástár frissítés automatizált. A további tudnivalókat lásd: [Győződjön meg róla, hogy az entitástár frissítés automatizált](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md).
 3. Győződjön meg róla, hogy az Azure AD identitáskonfiguráció tartalmaz egy Ajánlási bejegyzést. A művelet végrehajtásával kapcsolatos további információk az alábbiakban láthatók.
 
@@ -92,7 +92,7 @@ Ha további tájékoztatást szeretne a személyre szabott ajánlásokról, lás
 
 [Termékajánlatok áttekintése](product-recommendations.md)
 
-[ADLS engedélyezése a Dynamics 365 Commerce környezetben](enable-adls-environment.md)
+[Az Azure Data Lake Storage engedélyezése a Dynamics 365 Commerce környezetben](enable-adls-environment.md)
 
 [Személyre szabott ajánlatok engedélyezése](personalized-recommendations.md)
 

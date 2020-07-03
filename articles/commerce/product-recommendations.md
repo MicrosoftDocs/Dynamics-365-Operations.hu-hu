@@ -3,7 +3,7 @@ title: Termékajánlatok áttekintése
 description: Ez a témakör a rendezési termékjavaslatok ismertetését tartalmazza. A termékjavaslatoknak köszönhetően a vevők egyszerűen és gyorsan megtalálják azokat a termékeket, amelyeket szeretnének, és még olyanokat is, amelyek eredetileg nem szándékoznak megvásárolni.
 author: Moonma
 manager: AnnBe
-ms.date: 03/19/2020
+ms.date: 05/26/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: moonma
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: e61136ed296d673e14600762c6f6199093530546
-ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
+ms.openlocfilehash: 1b01589322c26b6a7b69d1b992b03603f5f3d29a
+ms.sourcegitcommit: fdc5dd9eb784c7d8e75692c8cdba083fe0dd87ce
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154226"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "3404348"
 ---
 # <a name="product-recommendations-overview"></a>Termékajánlatok áttekintése
 
@@ -40,7 +40,7 @@ Az e-kereskedelemben a termékjavaslatokat a Microsoft Recommendations gép tanu
 
 A termékajánlások szolgáltatás mesterséges intelligencia és a gépi tanulás (AI-ML) technológiák felhasználását használja a következő módon:
 
-- Az ajánlási szolgáltatásnak megfelelő formátumú adatokat a rendszer kivonja az adatokat a Commerce működési adatbázisából, és elküldi őket az Azure Data Lake Storage (ADLS) tárhelyre vagy az entitástárba.
+- Az ajánlási szolgáltatásnak megfelelő formátumú adatokat a rendszer kivonja az adatokat a Commerce működési adatbázisából, és elküldi őket az Azure Data Lake Storage megoldásba vagy az entitástárba.
 - Az ajánlási szolgáltatás a tárolt adatokat az ajánlási modellek tanításához használja a **Másoknak ez is tetszett**, **Gyakran együtt vásárolt**, **Új**, **Legkelendőbb** és **Legnépszerűbbek** listákhoz.
 
 ## <a name="scenarios"></a>Forgatókönyvek
@@ -67,7 +67,7 @@ A következő táblázat leírja, hogy milyen automatizált termék-javaslatok �
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[ADLS engedélyezése a Dynamics 365 Commerce környezetben](enable-adls-environment.md)
+[Az Azure Data Lake Storage engedélyezése a Dynamics 365 Commerce környezetben](enable-adls-environment.md)
 
 [Termékajánlatok engedélyezése](enable-product-recommendations.md)
 

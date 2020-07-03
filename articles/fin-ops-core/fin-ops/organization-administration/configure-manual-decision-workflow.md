@@ -3,7 +3,7 @@ title: Manuális döntések konfigurálása munkafolyamatban
 description: Ez a témakör bemutatja, hogy hogyan kell konfigurálni a manuális döntés tulajdonságait.
 author: sericks007
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 06/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f46b875f52d3d3e7c755ee92dcd5faddf0d94356
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 130cb50369c13bc3478340023c94f169ee5250cf
+ms.sourcegitcommit: a5009c8958037afbaa1dd4f1469255b187ced93a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2178189"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "3455033"
 ---
 # <a name="configure-manual-decisions-in-a-workflow"></a>Manuális döntések konfigurálása munkafolyamatban
 
@@ -239,26 +239,6 @@ Végezze el ezeket a lépéseket azon személyek meghatározásához, akiket a m
     <li>Miután kijelölte <strong>Felhasználó</strong> lehetőséget, kattintson a <strong>Felhasználó</strong> fülre.</li>
     <li>A <strong>Rendelkezésre álló felhasználók</strong> listája az összes felhasználót tartalmazza. Válassza ki a döntéshez hozzárendelni kívánt felhasználókat, majd ezt követően helyezze át ezeket a felhasználókat a <strong>Kijelölt felhasználók</strong> listájára.</li>
     </ol>
-    </td>
-    </tr>
-    <tr>
-    <td>Várakozási sor</td>
-    <td>Munkatétel-várólista</td>
-    <td>
-    <ol>
-    <li>Miután kijelölte <strong>Várólista</strong> lehetőséget, kattintson a <strong>Várólistán alapuló</strong> fülre.</li>
-    <li>A döntés egy specifikus várólistához történő hozzárendeléséhez, kövesse az alábbi lépéseket: <ol>
-    <li>A <strong>Várólista típusa</strong> listán, válassza ki a <strong>Munkatétel-várólisták</strong> lehetőséget.</li>
-    <li>A <strong>Várólista neve</strong> listán jelölje ki a várólistát.</li>
-    </ol>
-    </li>
-    <li>Ha egy adott feltételnek meg kell határoznia, hogy melyik várólistához rendeljék hozzá a döntést, végezze el a következő lépéseket: <ol>
-    <li>A <strong>Várólista típusa</strong> listán, válassza ki a <strong>Feltételes munkatétel-várólisták</strong> lehetőséget.</li>
-    <li>A <strong>Várólista neve</strong> listán jelölje ki a <strong>Feltételes várólista</strong> lehetőséget.</li>
-    </ol>
-    </li>
-    </ol>
-    <blockquote>[!NOTE] Ezt a beállítást csak néhány munkafolyamatnál használják, például Esetkezelésnél.</blockquote>
     </td>
     </tr>
     </tbody>

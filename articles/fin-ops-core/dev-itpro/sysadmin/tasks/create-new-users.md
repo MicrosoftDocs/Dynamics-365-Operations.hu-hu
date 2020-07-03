@@ -3,7 +3,7 @@ title: Új felhasználók létrehozása
 description: A felhasználók a szervezet olyan belső alkalmazottai vagy külső vevői és szállítói, akiknek hozzáféréssel kell rendelkezniük a rendszerhez a munkájuk elvégzéséhez.
 author: maertenm
 manager: AnnBe
-ms.date: 02/06/2020
+ms.date: 06/08/2020
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: maertenm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9db4b6d355d6499bce6c550b2fbe76b82cf69fd4
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: d126b449074663772549b96b86acb53db971a5d4
+ms.sourcegitcommit: 7d943499f302298c6ff127f56cecc34af6cee289
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3143579"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "3435584"
 ---
 # <a name="create-new-users"></a>Új felhasználók létrehozása
 
@@ -50,8 +50,9 @@ A bérlő környezetének külső felhasználóit fel kell tüntetni a gazdabér
 10. Válassza a **Mentés** lehetőséget.
 
 ## <a name="import-users"></a>Felhasználók importálása
-1. A műveleti ablaktáblán válassza a **Felhasználók importálása** lehetőséget.
-2. A listában jelölje meg a kiválasztott sort.
-3. Válassza a **Felhasználók importálása** lehetőséget.
-4. Válassza **Bezárás** lehetőséget.
+1. Ugrás a **Rendszerfelügyelet \> Felhasználók \> Felhasználók** elemre.
+2. A műveleti ablaktáblán válassza a **Felhasználók importálása** lehetőséget.
+3. A listában jelölje meg a kiválasztott sort.
+4. Válassza a **Felhasználók importálása** lehetőséget.
+5. Válassza **Bezárás** lehetőséget.
 

@@ -3,7 +3,7 @@ title: Kiskereskedelmi eladási ár kezelése
 description: Ez a témakör leírja a kiskereskedelmi eladási árak létrehozása és kezelése koncepcióit a Dynamics 365 Commerce rendszerben.
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 01/06/2020
+ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-retail
@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1eb0b218b9008b255cc5a09eefb8c7fa35836cd7
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: 84d673bef8597bd7d376c5c74737d5c7db247759
+ms.sourcegitcommit: 97206552616b248f88e516fea08b3f059257e8d1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057487"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "3432001"
 ---
 # <a name="retail-sales-price-management"></a>Kiskereskedelmi értékesítési ár kezelése
 
@@ -53,7 +53,9 @@ A következő ábrán az árcsoportok használata látható. Az ábrán láthatj
 
 Árcsoportok létrehozása esetén ne használjon egyetlen árcsoportot többféle kereskedelmi entitástípushoz. Ellenkező esetben nehéz meghatározni, hogy miért meghatározott ár vagy engedmény van alkalmazva adott tranzakcióhoz.
 
-Ahogy piros szaggatott vonal az ábrán bemutatja, a Commerce támogatja a Microsoft Dynamics 365 árcsoport alapszolgáltatását, amely közvetlenül a vevőhöz van állítva. Azonban ebben az esetben csak eladási árra vonatkozó kereskedelmi megállapodásokat fog kapni. Ha vevőspecifikus árak kíván alkalmazni, azt ajánljuk, hogy ne állítson be árcsoportokat közvetlenül a vevőhöz. Ehelyett fiókokat kell használnia.
+Ahogy piros szaggatott vonal az ábrán bemutatja, a Commerce támogatja a Microsoft Dynamics 365 árcsoport alapszolgáltatását, amely közvetlenül a vevőhöz van állítva. Azonban ebben az esetben csak eladási árra vonatkozó kereskedelmi megállapodásokat fog kapni. Ha vevőspecifikus árak kíván alkalmazni, azt ajánljuk, hogy ne állítson be árcsoportokat közvetlenül a vevőhöz. Ehelyett fiókokat kell használnia. 
+
+Ne feledje, hogy ha az árcsoport be van állítva a vevőnél, akkor ez az árcsoport lesz társítva az ehhez a vevőhöz létrehozott rendelések értékesítési rendelés fejlécéhez. Ha a felhasználó megváltoztatja a rendelés fejlécében szereplő árcsoportot, akkor a régi árcsoportot csak az aktuális rendelésnél váltja az új árcsoport. A régi árcsoport például nem befolyásolja az aktuális rendelést, de a jövőbeli rendelésekhez továbbra is a vevőhöz lesz társítva.
 
 A következő szakaszok további tájékoztatást tartalmaznak a kereskedelmi entitásokról, amelyeket különböző árak beállításához használhat az árcsoportok használatakor. Az árak és engedmények konfigurációja az összes entitáshoz két lépésből áll. Ezeket a lépéseket tetszőleges sorrendben teheti meg. Azonban a logikai sorrend először az árcsoportok beállítása az entitásokon, mivel ez a lépés valószínűleg a telepítés során végrehajtott, egyszer végrehajtandó beállítást. Ezután, az árak és engedmények létrehozásakor, az árak és engedmények esetében egyenként állíthatók be az árcsoportok.
 
@@ -226,6 +228,7 @@ Az árképzési motor **nem támogatja** a következő árképzési funkciókat:
 - Az árak beállítása hely vagy hely és raktári tárolási dimenziók szerint nem támogatott. Ha a kereskedelmi megállapodásokban csak a Hely dimenziót adja meg, akkor az árképzési motor figyelmen kívül hagyja a helyet, és a kereskedelmi megállapodást minden helyre alkalmazza. Ha a hely és raktár módot is megadja, akkor a viselkedés nem definiált/nem tesztelt, mert várható, hogy a kiskereskedők az áruház árcsoportjai segítségével szabályozzák az egyes üzletek/raktárak árait.
 - Az attribútumalapú árképzés nem támogatott.
 - A szállítói engedmény áthárítása nem támogatott.
+- A Supply Chain Management alapszolgáltatási árképzési motor a „kért szállítási dátum”, a „kért beérkezési dátum” és az aktuális dátum szerinti árképzési számítást támogatja. A kiskereskedelmi árak azonban jelenleg nem támogatják ezeket az értékeket. Ennek az az oka, hogy a B2C esetekhez a vevők nem számítanak arra, hogy a kért szállítási dátumnak hatása lehet a tárgy árára. Bizonyos esetekben a kiskereskedőknek B2B és B2C műveleteik is vannak. A B2B műveleteknél gyakori, hogy a szállítási dátumok alapján változik az ár. Ezek a kiskereskedők az ellátásilánc-gazdálkodási árképzést a B2B üzleti tevékenységhez, és kiskereskedelmi árat pedig a B2C tevékenységhez használhatják fel. A kiskereskedelmi árképzés csak abban az esetben aktiválódik, ha az alkalmazás felhasználóját hívásközponti felhasználóként adták hozzá, így a kiskereskedők bizonyos felhasználókat rendelhetnek hozzá, akik az ellátásilánc-kezelés árképzésével fognak dolgozni, illetve néhány, a kiskereskedelmi árakkal dolgozót felhasználót is hozzárendelhetnek, vagyis ezeket a felhasználókat a hívásközponti felhasználókként kell megadni. Ezenkívül be kell kapcsolni a **Mai dátum használata az árak kiszámításához** tulajdonságot a **Commerce paraméterek > árképzés és az engedmények > Vegyes** szakaszban. Ily módon a kinnlevőségek paraméter értékének a kért szállítási dátumhoz vagy a kért átadási dátumához lehet használni az ellátásilánc-kezelési árakhoz, de a kiskereskedelmi árazás továbbra is a mai árat használja az árkalkulációhoz.
 
 Emellett **csak** az árképzés motor támogatja a következő árképzési funkciókat:
 

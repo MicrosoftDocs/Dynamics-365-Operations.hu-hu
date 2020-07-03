@@ -3,12 +3,12 @@ title: Szabadság- és távolléti tervek halmozódása
 description: Elhatárolhatja a szabadságot és távollétet a Dynamics 365 Human Resources alkalmazásban több alkalmazott vagy egy egyén esetében.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/01/2020
+ms.date: 06/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
 audience: Application User
 ms.reviewer: anbichse
 ms.search.scope: Human Resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3048f9b6b52a150219067430abb54e5b5bf5c3e4
-ms.sourcegitcommit: 79f8aa2c0b166a423db9b8503da53e96e3fc43dc
+ms.openlocfilehash: f045cb7ab9f5e7aa4259f29e1b026f110425c236
+ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3197313"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "3429059"
 ---
 # <a name="accrue-leave-and-absence-plans"></a>Szabadság- és távolléti tervek halmozódása
 
@@ -103,7 +103,19 @@ Törli az adott tervhez és dátumtartományhoz tartozó elhatárolási rekordok
 
 2. A **Szabadság kezelése** alatt válassza a **Szabadságelhatárolás auditálásának törlése** lehetőséget.
 
+## <a name="configure-preview-features"></a>Előzetes funkciók konfigurálása
+
+[!include [banner](includes/preview-feature-leave-absence.md)]
+
+Ha engedélyezte a szabadság és a távollét előzetes funkcióit, akkor konfigurálnia kell azok beállításait.
+
+### <a name="accrue-leave-per-company-or-per-leave-plan"></a>Szabadság elhatárolása vállalatonként vagy szabadság tervenként
+
+A távolléti és szabadságtervek elhatárolásakor választhatja az elhatárolás elvégzését az összes vállalatra. Ha az összes vállalatot választja, akkor nem választhat ki egyéni szabadságterveket. Ha úgy dönt, hogy nem végez elhatárolást minden vállalatra, akkor elvégezheti az elhatárolást egy adott szabadságtervre. 
+
+Ezek a beállítások csak elérhetők, ha az összes alkalmazott vagy egyes alkalmazottak esetében végez elhatárolást. 
+
 ## <a name="see-also"></a>Lásd még
 
-- [Szabadság és távollét áttekintése](hr-leave-and-absence-overview.md)
-- [Szabadság- és távolléti terv létrehozása](hr-leave-and-absence-plans.md)
+[Szabadság és távollét áttekintése](hr-leave-and-absence-overview.md)</br>
+[Szabadság- és távolléti terv létrehozása](hr-leave-and-absence-plans.md)

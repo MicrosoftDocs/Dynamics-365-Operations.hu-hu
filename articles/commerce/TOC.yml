@@ -74,7 +74,7 @@
                   href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/commerce/toc.json
             - name: Frissítés és N-1-támogatás
               items:
-                - name: Frissítés és N-1 támogatás a Retail szolgáltatáshoz
+                - name: Frissítés és N-1 támogatás a Commerce szolgáltatáshoz
                   href: dev-itpro/overview-upgrade-n-minus1.md
                 - name: 'Fokozatos bevezetés (N-1) telepítése, konfigurálása és átállás'
                   href: dev-itpro/n-1-installation-configuration.md
@@ -94,8 +94,6 @@
                       href: get-started/whats-new-commerce-10-0-11.md
                     - name: Commerce 10.0.10 (2020. május)
                       href: get-started/whats-new-commerce-10-0-10.md
-                    - name: Commerce 10.0.9 (2020. április)
-                      href: get-started/whats-new-10-0-9.md
                 - name: Eltávolított vagy elavult funkciók
                   items:
                     - name: Eltávolított vagy elavult funkciók a Finance and Operations szolgáltatásban
@@ -504,6 +502,8 @@
                       href: dev-itpro/adyen-connector-listPI.md
                     - name: Erős vevőhitelesítés (SCA) az Adyen összekötővel
                       href: adyen_redirect.md
+                    - name: Dedikált fizetési terminálok és utasítások a nyomtatónak és a pénztárgépfióknak
+                      href: pos-multi-hws.md
                     - name: Zökkenőmentes offline kapcsoló ajándékutalvány- és jóváírási műveletek esetén
                       href: dev-itpro/seamless-offline-improvements.md
                     - name: Számlafizetési forgatókönyvek beállítása
@@ -572,6 +572,10 @@
                       href: set-up-bar-codes.md
                     - name: Vonalkódmaszkok beállítása
                       href: set-up-bar-code-masks.md
+                - name: Garanciák
+                  items:
+                    - name: Kiterjesztett garanciák létrehozása és konfigurálása
+                      href: extended-warranty.md
             - name: Árképzés és engedmények
               items:
                 - name: Engedmények
@@ -974,7 +978,7 @@
                       href: cart-icon-module.md
                     - name: Fizetésmodul
                       href: add-checkout-module.md
-                    - name: Rendelésmegerősítési modul
+                    - name: Rendelési részletek modul
                       href: order-confirmation-module.md
                     - name: Áruházválasztó modul
                       href: store-selector.md
@@ -1896,6 +1900,8 @@
                       href: e-commerce-extensibility/setup-dev-environment.md
                     - name: Fejlesztői környezetfájl (.env) konfigurálása
                       href: e-commerce-extensibility/configure-env-file.md
+                    - name: Hibakeresés hibákat a Tier 1-es Commerce fejlesztői környezetben
+                      href: e-commerce-extensibility/debug-tier-1.md
                     - name: Azure DevOps-kódmegosztás beállítása és buildfolyamat létrehozása
                       href: e-commerce-extensibility/set-up-code-sharing-build-pipeline.md
                 - name: Platform áttekintése
@@ -2028,6 +2034,8 @@
                   href: dev-itpro/retail-sdk/retail-sdk-packaging.md
                 - name: Fejlesztések felhőbeli fejlesztési környezetekben rendszergazdai hozzáférés nélkül
                   href: dev-itpro/cloud-dev-box.md
+                - name: Commerce SDK buildelési folyamat beállítása
+                  href: dev-itpro/retail-sdk/SDK-build-pipeline.md
             - name: Pénztár bővíthetősége
               items:
                 - name: Pénztár képernyő-elrendezései

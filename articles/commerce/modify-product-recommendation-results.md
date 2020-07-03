@@ -3,7 +3,7 @@ title: AI-ML-alapú termékajánlás eredményeinek kiigazítása
 description: Ez a témakör azt mutatja be, hogyan lehet testreszabni a termékjavaslatok eredményeit a mesterséges intelligencia gépi tanulás (AI-ML) alapján a vállalkozása számára.
 author: bebeale
 manager: AnnBe
-ms.date: 03/19/2020
+ms.date: 05/26/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: afd9271c680b1f4248d6e60036f3e79d204dc3c2
-ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
+ms.openlocfilehash: 0b4228583c4a2b89d7139b51880cea0288d7fe49
+ms.sourcegitcommit: fdc5dd9eb784c7d8e75692c8cdba083fe0dd87ce
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154341"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "3404371"
 ---
 # <a name="adjust-ai-ml-based-product-recommendation-results"></a>AI-ML-alapú termékajánlás eredményeinek kiigazítása
 
@@ -102,7 +102,7 @@ A következő lépések végrehajtásával manuálisan adhat hozzá vagy távol�
 
 [Termékajánlatok áttekintése](product-recommendations.md)
 
-[ADLS engedélyezése a Dynamics 365 Commerce környezetben](enable-adls-environment.md)
+[Az Azure Data Lake Storage engedélyezése a Dynamics 365 Commerce környezetben](enable-adls-environment.md)
 
 [Termékajánlatok engedélyezése](enable-product-recommendations.md)
 

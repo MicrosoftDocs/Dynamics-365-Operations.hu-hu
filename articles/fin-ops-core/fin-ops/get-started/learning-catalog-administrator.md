@@ -11,12 +11,12 @@ ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2019-1-29
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: c66b25e941d9492c9749043b65c929c9b81db641
-ms.sourcegitcommit: e9fadf6f6dafdcefaff8e23eaa3c85f53437db3f
+ms.openlocfilehash: ad0f33aae7651dff4f424a047eccabd691a99d83
+ms.sourcegitcommit: 840230f3dc500852791953d05c2737dd539ed0b3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "3279009"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "3418566"
 ---
 # <a name="administrators-learning-catalog"></a>Adminisztrátorok tanulási katalógusa
 
@@ -30,7 +30,7 @@ A következő katalógus az alapismeretekből a meghatározott tartományokra, a
 |-----------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|-----------|
 | [Dynamics 365 és Power Platform alapok](https://docs.microsoft.com/learn/paths/dyn-power-plat-bus-app-fundamentals/) | Érdeklik az üzleti alkalmazások? Ezzel a tanulási útvonallal kezdheti a Dynamics 365 alkalmazások használatát. További tájékoztatás a felhőalapú fogalmakról, a Power Platform, valamint a Dynamics 365 alkalmazásokkal való ismerkedéshez.  | Ingyenes, saját tempójú online tanulási útvonal  | 5.5 óra |
 | [Első lépések a Finance and Operations alkalmazásokban](https://docs.microsoft.com/learn/paths/get-started-finance-operations/)      | Ismerje meg, hogy a Finance and Operations alkalmazások hogy támogatják a vállalatok globális pénzügyi rendszereinek, működési folyamatainak és a korszerű ellátási láncok kezelésének a felhatalmazása érdekében, hogy a személyek gyors, tájékozott döntéseket hozzanak. A Finance and Operations alkalmazások használatával kapcsolatos pályafutásának első lépéseként a kívánt szerepkörtől függetlenül meg kell Ismerkedjen a jellemzőivel és a funkcionalitással. | Ingyenes, saját tempójú online tanulási útvonal   | 2 óra   |
-| [Tanfolyam MB-900T01-A: Dynamics 365 alapjai](https://www.microsoft.com/learning/course.aspx?cid=MB-900T01)   | Ez a tanfolyam a Dynamics 365 funkcionalitásával és üzleti értékével ismerteti meg a tanulót. A tanfolyam a Dynamics 365 alkalmazásokat, a Power Platform megoldást, a felhőkoncepciókat, a biztonsági modellt és a licencelési szempontokat fogja tartalmazni.  | Oktató által vezetett személyes vagy online képzés; a költség régiónként és partnertől függően változik | 1 nap     |
+
 
 
 ## <a name="core-platform-knowledge"></a>Alapplatform ismerete<a name="core-platform-knowledge"></a>
