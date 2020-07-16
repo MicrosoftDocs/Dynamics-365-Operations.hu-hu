@@ -74,8 +74,6 @@
                       href: get-started/whats-new-changed-10-0-12.md
                     - name: Finance 10.0.11 (2020. július)
                       href: get-started/whats-new-changed-10-0-11.md
-                    - name: Finance 10.0.10 (2020. május)
-                      href: get-started/whats-new-changed-10-0-10.md
             - name: Eltávolított vagy elavult funkciók
               items:
                 - name: Eltávolított vagy elavult funkciók a Dynamics 365 Finance szolgáltatásban
@@ -1184,9 +1182,11 @@
               href: ../fin-ops-core/dev-itpro/analytics/row-definitions-financial-reporting.md?toc=/dynamics365/finance/toc.json
             - name: Oszlopdefiníciók
               href: ../fin-ops-core/dev-itpro/analytics/column-definitions-financial-reports.md?toc=/dynamics365/finance/toc.json
+            - name: Jelentési fa definíciója a pénzügyi jelentésekben
+              href: ../fin-ops-core/dev-itpro/analytics/financial-reporting-tree-definitions.md?toc=/dynamics365/finance/toc.json
             - name: Sordefiniáló cellák módosítása
               href: ../fin-ops-core/dev-itpro/analytics/modify-row-definition-cells-financial-reporting.md?toc=/dynamics365/finance/toc.json
-            - name: A pénzügyi jelentéskészítési data mart alaphelyzetbe állítása
+            - name: A pénzügyi jelentéskészítési adatpiac alaphelyzetbe állítása
               href: ../fin-ops-core/dev-itpro/analytics/reset-financial-reporting-datamart-after-restore.md?toc=/dynamics365/finance/toc.json
         - name: Globalizáció
           items:
@@ -3386,12 +3386,18 @@
                       items:
                         - name: Konfigurációk importálása GR-ből
                           href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/finance/toc.json
+                        - name: Az ER-konfigurációk frissített verzióinak importálása
+                          href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=dynamics365/finance/toc.json
                         - name: Továbbfejlesztett szűrés a konfigurációk GR-ben való kereséséhez
                           href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/finance/toc.json
                         - name: Konfigurációk feltöltése a GR-be
                           href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/finance/toc.json
                         - name: Konfigurációk megosztása a GR-ben
                           href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/finance/toc.json
+            - name: Rövid útmutatók
+              items:
+                - name: ER-formátum beállítása egyéni elektronikus dokumentum generálásához
+                  href: ../fin-ops-core/dev-itpro/analytics/er-quick-start2-customize-report.md
             - name: Oktatóanyagok
               items:
                 - name: Az adatforrások használatának megismerése
