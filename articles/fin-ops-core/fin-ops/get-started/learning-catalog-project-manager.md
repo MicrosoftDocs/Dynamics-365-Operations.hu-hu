@@ -11,12 +11,12 @@ ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2019-1-29
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 7521784931cc4aac5a7e7729d045e501cba9460e
-ms.sourcegitcommit: e9fadf6f6dafdcefaff8e23eaa3c85f53437db3f
+ms.openlocfilehash: b310b787906850a60c9e2a453ce2d13330dad212
+ms.sourcegitcommit: 26399aafe2b02732c79073455f5bc9ac07bab4b4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "3279004"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "3502113"
 ---
 # <a name="implementation-project-manager-learning-catalog"></a>Projektmenedzsment-tanulási katalógus megvalósítása
 
@@ -29,7 +29,7 @@ A következő katalógus az alapismeretekből a meghatározott tartományokra, a
 | Tartalom | Leírás  | Formátum  | Hossz    |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------|-----------|
 | [Ismerje meg a Microsoft Dynamics365, valamint a Power Platform üzleti értékét](https://docs.microsoft.com/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/) | Érdeklik az üzleti alkalmazások? Talán nem tudja, hogyan kezdjen hozzá a Microsoft Dynamics 365 és Power Platform alkalmazások használatához? Ismerje meg, hogyan lehet az üzleti alkalmazások erejével segíteni a vállalkozás átalakításában. | Ingyenes, saját tempójú online tanulási útvonal   | 7 óra   |
-| [Dynamics 365 és Power Platform alapok](https://docs.microsoft.com/learn/paths/dyn-power-plat-bus-app-fundamentals/ | Érdeklik az üzleti alkalmazások? Ezzel a tanulási útvonallal kezdheti a Dynamics 365 alkalmazások használatát. További tájékoztatás a felhőalapú fogalmakról, a Power Platform, valamint a Dynamics 365 alkalmazásokkal való ismerkedéshez. | Ingyenes, saját tempójú online tanulási útvonal   | 5.5 óra |
+| [Dynamics 365 és Power Platform alapok](https://docs.microsoft.com/learn/paths/dyn-power-plat-bus-app-fundamentals/) | Érdeklik az üzleti alkalmazások? Ezzel a tanulási útvonallal kezdheti a Dynamics 365 alkalmazások használatát. További tájékoztatás a felhőalapú fogalmakról, a Power Platform, valamint a Dynamics 365 alkalmazásokkal való ismerkedéshez. | Ingyenes, saját tempójú online tanulási útvonal   | 5.5 óra |
 | [Első lépések a Finance and Operations alkalmazásokban](https://docs.microsoft.com/learn/paths/get-started-finance-operations/)  | Ismerje meg, hogy a Finance and Operations alkalmazások hogy támogatják a vállalatok globális pénzügyi rendszereinek, működési folyamatainak és a korszerű ellátási láncok kezelésének a felhatalmazása érdekében, hogy a személyek gyors, tájékozott döntéseket hozzanak. A Finance and Operations alkalmazások használatával kapcsolatos pályafutásának első lépéseként a kívánt szerepkörtől függetlenül meg kell Ismerkedjen a jellemzőivel és a funkcionalitással. | Ingyenes, saját tempójú online tanulási útvonal   | 2 óra   |
 | [Vásárlás előtti teendők](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/before-you-buy)  | Tekintse át a lépésenkénti útmutatót, amely hasznára válhat; akár még teszteli a Finance and Operations szolgáltatást, akár már készen áll a vásárlásra.| Dokumentáció  |           |
 | [Kiadási terv](https://docs.microsoft.com/dynamics365/release-plans/)  | A Dynamics 365 legújabb lehetőségeinek és továbbfejlesztéseinek megkeresése  | Dokumentáció  |           |

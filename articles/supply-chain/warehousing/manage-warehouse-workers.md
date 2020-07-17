@@ -1,6 +1,6 @@
 ---
 title: Raktári dolgozók kezelése
-description: Ez a cikk leírja, hogyan használható a Dynamics 365 Supply Chain Management - Warehousing alkalmazás az alkalmazottak által a raktárakban elvégzett munka felügyeletére és irányítására.
+description: Ez a cikk leírja, hogyan használható a raktári alkalmazás az alkalmazottak által a raktárakban elvégzett munka felügyeletére és irányítására.
 author: perlynne
 manager: tfehr
 ms.date: 06/20/2017
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0b143051ba39c74869d2ec56203ee4f1cda7268a
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: d8e7790fa8ab8d60d0e5fd8eb470d86d6728091b
+ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3205575"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3530029"
 ---
 # <a name="manage-warehouse-workers"></a>Raktári dolgozók kezelése
 
 [!include [banner](../includes/banner.md)]
 
-Ez a cikk leírja, hogyan használható a Dynamics 365 Supply Chain Management - Warehousing alkalmazás az alkalmazottak által a raktárakban elvégzett munka felügyeletére és irányítására.
+Ez a cikk leírja, hogyan használható a raktári alkalmazás az alkalmazottak által a raktárakban elvégzett munka felügyeletére és irányítására.
 
 A funkció használatakor a raktárkezelésben minden, raktári dolgozó által elvégzett művelet *munka*. Az munkákat, mint a kitárolás, áthelyezés és az aktuális készlet leltározása, mobilkészülékek segítségével rögzítik. Mielőtt egy raktári dolgozó munkát végezhetne, társítani kell őt egy dolgozóval a humán erőforrásokban. Minden egyes **Dolgozó** fiókhoz több raktárimunka-felhasználó társítható. Ezek a munkafelhasználók dolgozhatnak különböző raktárakban, és különböző szintű hozzáféréssel rendelkezhetnek a különféle mobilkészülékmenükhöz. A raktárimunka-felhasználókra úgy lehet tekinteni, mint egy adott dolgozó többszörös bejelentkezéseire. Minden egyes munkafelhasználó rendelkezik egy alapértelmezett raktárral, és a menüelemek jelenítik meg a konkrét munkafolyamatokat, amelyek elérhetők az adott munkafelhasználó számára. 
 

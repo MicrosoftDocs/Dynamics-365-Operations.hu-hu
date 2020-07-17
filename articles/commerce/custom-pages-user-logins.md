@@ -3,7 +3,7 @@ title: Felhasználói bejelentkezéshez használt egyéni lapok beállítása
 description: Ez a témakör azt mutatja be, hogyan lehet egyéni lapokat létrehozni a Microsoft Dynamics 365 Commerce alkalmazásban, amelyek az Azure Active Directory (Azure AD) cég és ügyfél (B2C) közötti bérlők felhasználóinak személyre szabott bejelentkezésit kezelik.
 author: brianshook
 manager: annbe
-ms.date: 06/16/2020
+ms.date: 07/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 71c0f0b6969985b04262b522dd2165eb1475878d
-ms.sourcegitcommit: 9a2e9f7dfec47c42178bb67a3e099e610515baf3
+ms.openlocfilehash: e9e78a4d6dc4189c927d9ef321f1eb5a6c120ee2
+ms.sourcegitcommit: adf196c51e2b6f532d99c177b4c6778cea8a2efc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "3456972"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "3533459"
 ---
 # <a name="set-up-custom-pages-for-user-sign-ins"></a>Felhasználói bejelentkezéshez használt egyéni oldalak beállítása
 
@@ -195,11 +195,9 @@ A global.json fájl frissítése és a módosítások közzététele után az ú
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[A tartománynevének konfigurálása](configure-your-domain-name.md)
+[A tartománynév konfigurálása](configure-your-domain-name.md)
 
 [Új e-commerce webhely telepítése](deploy-ecommerce-site.md)
-
-[Online áruház csatornájának beállítása](online-stores.md)
 
 [E-kereskedelmi webhely létrehozása](create-ecommerce-site.md)
 

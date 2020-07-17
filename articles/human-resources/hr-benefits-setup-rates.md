@@ -3,7 +3,7 @@ title: Díjak konfigurálása
 description: A Microsoft Dynamics 365 Human Resources szolgáltatásban a mértékek határozzák meg, hogy a munkáltatók és az alkalmazottak mennyivel járulnak hozzá a juttatáshoz.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/06/2020
+ms.date: 06/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c90a45b79f2a383f0ace0cb07e791f6613d7a3c3
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: e397e20b6b6307349020c8dfd238b4b59eeca527
+ms.sourcegitcommit: 1e6a7b50596eaf9d965e0155f3f2c50f7f50747e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3429911"
+ms.lasthandoff: 06/22/2020
+ms.locfileid: "3497356"
 ---
 # <a name="configure-rates"></a>Díjak konfigurálása
 
@@ -77,13 +77,13 @@ Dupla szinteket is használhat. Ha a **Mérték beállítása** képernyőn a **
 
    | Mező | Leírás |
    | --- | --- | 
-   | **Leírás** | A Leírás mező értékét a mértékbeállítási rekordban megadott leírás adja. Ez alapján megállapíthatja, hogy a szintmértékek melyik mértékbeállításhoz kapcsolódnak. |
+   | **Leírás** | A **Leírás** mező értékét a mértékbeállítási rekordban megadott leírás adja. Ez alapján megállapíthatja, hogy a szintmértékek melyik mértékbeállításhoz kapcsolódnak. |
    | **Szint kódja** | Válasszon szintkódot. A szintkódokat a Szintkódok képernyőn definiálhatja. A rendszer automatikusan megjeleníti a szintkód leírását a balra lévő rácson. |
-   | **Szint típusa** | Megadja, hogy melyik mezőt kell használni kiválasztási feltételként a szintmértékszámítási folyamathoz. Példa:</br></br><ul><li>Az életkor használata esetén a rendszer az alkalmazott születésnapját fogja használni a juttatási mérték kiszámítási folyamatában.</li><li>A fizetés használata esetén a rendszer az alkalmazott évi juttatásfizetési összegét fogja használni a juttatási mérték kiszámítási folyamatában.</li><li>A feladattípus használata esetén a rendszer az alkalmazott aktuális aktív pozíciójának rekordját használja a beosztáshoz kapcsolódó feladattípus meghatározására.</li></ul></br></br>A szinttípusok a következők: Életkor, Fizetés, Tényleges, Nem, Teljes munkaidőssel egyenértékű, Feladattípus, Kompenzációs régió és Szint. | 
-   | **Szint** | Az az érték, amelyet a rétegtípussal kell használni a juttatási mérték kiszámításának folyamata során. Példa:</br></br><ul><li>Ha a szinttípus az Életkor, akkor ez lesz az életkor értéke.</li><li>Ha a szinttípus a Fizetés, akkor ez lesz a fizetés összege.</li><li> Ha a szinttípus a Feladattípus, akkor ez lesz a feladat típusa.</li></ul></br></br>Életkor vagy Fizetés szinttípus esetén a rendszer növekvő megközelítést alkalmaz a szinttípus kiválasztása során, ami azt jelenti, hogy a Szint mezőben lévő érték a szint alsó határát jelöli. Feladattípus szinttípus esetén a rendszer pontos egyeztetési módszert alkalmaz a szinttípus kiválasztása során. |
+   | **Szint típusa** | Megadja, hogy melyik mezőt kell használni kiválasztási feltételként a szintmértékszámítási folyamathoz. Példa:</br></br><ul><li>Az **Életkor** használata esetén a rendszer az alkalmazott születésnapját fogja használni a juttatási mérték kiszámítási folyamatában.</li><li>A **Fizetés** használata esetén a rendszer az alkalmazott évi juttatásfizetési összegét fogja használni a juttatási mérték kiszámítási folyamatában.</li><li>A **Feladattípus** használata esetén a rendszer az alkalmazott aktuális aktív pozíciójának rekordját használja a beosztáshoz kapcsolódó feladattípus meghatározására.</li></ul></br></br>A szinttípusok a következők: **Életkor**, **Fizetés**, **Tényleges**, **Nem**, **Teljes munkaidőssel egyenértékű**, **Feladattípus**, **Kompenzációs régió** és **Szint**. | 
+   | **Szint** | Az az érték, amelyet a rétegtípussal kell használni a juttatási mérték kiszámításának folyamata során. Példa:</br></br><ul><li>Ha a szinttípus az **Életkor**, akkor ez lesz az életkor értéke.</li><li>Ha a szinttípus a **Fizetés**, akkor ez lesz a fizetés összege.</li><li> Ha a szinttípus a **Feladattípus**, akkor ez lesz a feladat típusa.</li></ul></br></br>Az **Életkor** vagy **Fizetés** fokozattípus esetén a **Szint** mezőben szereplő érték a szint felső határát jelöli. **Feladattípus** szinttípus esetén a rendszer pontos egyeztetési módszert alkalmaz a szinttípus kiválasztása során. |
    | **Számítás típusa** | Megadja, hogyan kell használni az összeget a számítási összeg mezőjében, és szükség esetén milyen matematikai számítást kell végrehajtani. Ha a számítás típusa fix összeg, akkor a rendszer az összegmezőket használja. Ha a számítás típusa a fizetés vagy a fedezet $ összege, akkor a rendszer a számítás összegét és a számítási irányt használja a matematikai számításaiban.</br></br>Ha a számítás típusa a fizetés $ összege, akkor a rendszer a következő matematikai egyenletet fogja használni:</br></br>Évi juttatásfizetés osztva a számítási összeggel (felfelé vagy lefelé kerekítve), szorozva a dohányzó vagy nem dohányzó alkalmazott vagy munkáltató összegével.</br></br>Ha a számítás típusa a fedezet $ összege, akkor a rendszer a következő matematikai egyenletet fogja használni:</br></br>Fedezet összege osztva a számítási összeggel (felfelé vagy lefelé kerekítve), szorozva a dohányzó vagy nem dohányzó alkalmazott vagy munkáltató összegével.</br></br>Mindkét számításban a számítási irány határozza meg, hogy felfelé vagy lefelé kell-e kerekíteni a számítás összegével elosztott évi juttatásfizetés vagy fedezet összegét. |
    | **Számítási összeg** | A juttatási mérték kiszámítási folyamata során használandó összeg. Ez az összeg lesz az osztó a szintmérték matematikai számításakor. |
-   | **Számítás iránya** | A kiszámított eredmény összegének kerekítési iránya (növelés vagy csökkentés). A rendszer három számítási irányt támogat: nincs (pontos módszer), növelés és csökkentés.</br></br><ul><li>Ha nincs irány, akkor a rendszer a fizetés/fedezet összegének a számítás összegével elosztott pontos értékét fogja használni. Ha az értéknek van törtrésze, akkor a rendszer használni fogja ezt a számításban.</li><li>Ha az irány a növelés, akkor a rendszer a következő egész számra növeli a fizetés/fedezet összegének a számítás összegével elosztott értékét, vagyis például a 12,25 értéket 13-ra kerekíti.</li><li>Ha az irány a csökkentés, akkor a rendszer az aktuális egész számra csökkenti a fizetés/fedezet összegének a számítás összegével elosztott értékét, vagyis például a 12,25 értéket 12-re kerekíti.</li></ul> |
+   | **Számítás iránya** | A kiszámított eredmény összegének kerekítési iránya. A rendszer három számítási irányt támogat: nincs (pontos módszer), **Növelés** és **Csökkentés**.</br></br><ul><li>Ha nincs irány, akkor a rendszer a fizetés/fedezet összegének a számítás összegével elosztott pontos értékét fogja használni. Ha az értéknek van törtrésze, akkor a rendszer használni fogja ezt a számításban.</li><li>Ha az irány a **Növelés**, akkor a rendszer a következő egész számra növeli a fizetés/fedezet összegének a számítás összegével elosztott értékét, vagyis például a 12,25 értéket 13-ra kerekíti.</li><li>Ha az irány a **Csökkentés**, akkor a rendszer az aktuális egész számra csökkenti a fizetés/fedezet összegének a számítás összegével elosztott értékét, vagyis például a 12,25 értéket 12-re kerekíti.</li></ul> |
    | **Nem dohányzó alkalmazott összege** | A nem dohányzó alkalmazottnak a juttatásszolgáltató által adott díj összege. Ez az az összeg, amelyet a munkáltató fizet a juttatásszolgáltatónak, és a mértékbeállítás kifizetési gyakoriságán kell alapulnia. |
    | **Nem dohányzó munkáltató összege** | A nem dohányzó alkalmazottnak a juttatásszolgáltató által adott díj összege. Ez az az összeg, amelyet a munkáltató fizet a juttatásszolgáltatónak, és a mértékbeállítás kifizetési gyakoriságán kell alapulnia. |
    | **Dohányzó alkalmazott összege** | A nem dohányzó alkalmazottnak a juttatásszolgáltató által adott díj összege. Ez az az összeg, amelyet a munkáltató fizet a juttatásszolgáltatónak, és a mértékbeállítás kifizetési gyakoriságán kell alapulnia. |

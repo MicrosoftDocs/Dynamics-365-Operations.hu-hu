@@ -3,7 +3,7 @@ title: B2C-bérlő beállítása a Commerce-ben
 description: Ez a témakör azt mutatja be, hogyan lehet beállítani az Azure Active Directory (Azure AD) cég-ügyfél (B2C) bérlőket felhasználói webhely-hitelesítéshez Dynamics 365 Commerce alkalmazásban.
 author: BrianShook
 manager: annbe
-ms.date: 04/28/2020
+ms.date: 06/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: BriShoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 9339b584c2d78e59f1a6b79d1610eef1581722c7
-ms.sourcegitcommit: 717346fb00c68a64ed58c846e89f41b80c7de9dd
+ms.openlocfilehash: b017b0f91960be1504134f6d46878fce956de203
+ms.sourcegitcommit: 8a1621327568edf49758b70964e0a3e637527e1b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "3488762"
+ms.lasthandoff: 06/22/2020
+ms.locfileid: "3497168"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>B2C-bérlő beállítása a Commerce-ben
 
@@ -91,7 +91,7 @@ A válasz URL-címek fontosak, mivel egy engedélyezési listát biztosítanak a
 
 A **Válasz URL** mezőben az **Azure AD B2c – Alkalmazások \> Új alkalmazás** képernyőjén a válasz URL-cím mezőben külön sorokat kell megadni a webhely-tartományához (ha a környezet létesítése megtörtént) és a Commerce által generált URL-címhez. Ezeknek az URL-címnek mindig érvényes URL-formátumot kell használniuk, és csak alap URL-címek lehetnek (nem lehetnek záró perjelek vagy elérési utak). Ezt követően az ``/_msdyn365/authresp`` karakterláncot a következő példáknak megfelelően kell hozzáfűzni az alap URL-címekhez.
 
-- ``https://www.fabrikam.com/_msdyn365/authresp``
+- ``https://www.fabrikam.com/_msdyn365/authresp`` (A tartománynak teljesen meg kell egyeznie az e-kereskedelmi tartománnyal. Ha több tartománya van, akkor mindegyik tartományhoz hozzá kell adnia ezt az URL-címet.)
 - ``https://fabrikam-prod.commerce.dynamics.com/_msdyn365/authresp``
 
 ## <a name="create-user-flow-policies"></a>Felhasználóifolyamat-irányelvek létrehozása

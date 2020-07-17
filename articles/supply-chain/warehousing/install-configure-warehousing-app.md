@@ -1,6 +1,6 @@
 ---
-title: A raktározási alkalmazás telepítése és csatlakoztatása
-description: Ez a témakör azt mutatja be, hogyan lehet telepíteni a raktározási alkalmazást mindegyik mobileszközre, és konfigurálni a Microsoft Dynamics 365 Supply Chain Management környezethez való csatlakozásra. Az egyes eszközöket manuálisan is konfigurálhatja, illetve a csatlakozási beállításokat egy fájlként vagy egy QR-kód beolvasásával is importálhatja.
+title: A raktári alkalmazás telepítése és csatlakoztatása
+description: Ez a témakör azt mutatja be, hogyan lehet telepíteni a raktári alkalmazást mindegyik mobileszközre, és konfigurálni a Microsoft Dynamics 365 Supply Chain Management környezethez való csatlakozásra. Az egyes eszközöket manuálisan is konfigurálhatja, illetve a csatlakozási beállításokat egy fájlként vagy egy QR-kód beolvasásával is importálhatja.
 author: MarkusFogelberg
 manager: tfehr
 ms.date: 05/25/2020
@@ -19,46 +19,46 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 290888dbf7d194b8cf259d7218d01d4a4f911db0
-ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
+ms.openlocfilehash: 88bce09a6d3bf154592955a6fb2dada6247f1993
+ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "3367082"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3530075"
 ---
-# <a name="install-and-connect-the-warehousing-app"></a>A raktározási alkalmazás telepítése és csatlakoztatása
+# <a name="install-and-connect-the-warehouse-app"></a>A raktári alkalmazás telepítése és csatlakoztatása
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
 > Ez a témakör ismerteti, hogyan kell konfigurálni a felhőbeli telepítések raktárkészlet-nyilvántartását. Ha azt szeretné megtudni, hogyan kell konfigurálni a helyszíni telepítések raktárkészlet-nyilvántartását, tekintse meg a következőt: [Helyszíni telepítések raktárkezelése](../../dev-itpro/deployment/warehousing-for-on-premise-deployments.md).
 
-A raktározási alkalmazás a Google Play Store-ban és a Microsoft Store-ban érhető el. Önálló összetevőként áll rendelkezésre. Ezért minden eszközre le kell töltenie, majd be kell állítania, hogy csatlakozzon a Microsoft Dynamics 365 Supply Chain Management-környezetéhez.
+A raktári alkalmazás a Google Play Store-ban és a Microsoft Store-ban érhető el. Önálló összetevőként áll rendelkezésre. Ezért minden eszközre le kell töltenie, majd be kell állítania, hogy csatlakozzon a Microsoft Dynamics 365 Supply Chain Management-környezetéhez.
 
-Ez a témakör azt mutatja be, hogyan lehet telepíteni a raktározási alkalmazást mindegyik mobileszközre, és konfigurálni a Supply Chain Management-környezethez való csatlakozásra. Az egyes eszközöket manuálisan is konfigurálhatja, illetve a csatlakozási beállításokat egy fájlként vagy egy QR-kód beolvasásával is importálhatja.
+Ez a témakör azt mutatja be, hogyan lehet telepíteni a raktári alkalmazást mindegyik mobileszközre, és konfigurálni a Supply Chain Management-környezethez való csatlakozásra. Az egyes eszközöket manuálisan is konfigurálhatja, illetve a csatlakozási beállításokat egy fájlként vagy egy QR-kód beolvasásával is importálhatja.
 
 ## <a name="system-requirements"></a>Rendszerkövetelmények
 
-A raktározási alkalmazás Windows és Android operációs rendszereken érhető el. Az alkalmazás legújabb verziójának használatához rendelkeznie kell a mobileszközökre telepített alábbi támogatott operációs rendszerek egyikével:
+A raktári alkalmazás Windows és Android operációs rendszereken érhető el. Az alkalmazás legújabb verziójának használatához rendelkeznie kell a mobileszközökre telepített alábbi támogatott operációs rendszerek egyikével:
 
 - Windows 10 (Univerzális Windows-platform \[UWP\]) őszi készítői frissítés, 1709 (10.0.16299-es build) vagy újabb
 - Android 4.4 vagy újabb
 
 > [!NOTE]
-> Ha támogatnia kell a Windows legújabb verzióját nem futtató régebbi Windows-eszközöket, akkor is továbbra is letöltheti a Microsoft Store-ból a raktározási alkalmazás 1.6.3.0-ás verzióját. Ez a verzió fut a Windows 10 (UWP) novemberi frissítés, 1511 (10.0.10586-os build) vagy később verzióján. Ne feledje azonban, hogy a raktározási alkalmazás ezen verziója nem támogatja a kapcsolati beállítások tömeges telepítését. Ezért minden olyan eszköz esetében, amely az alkalmazásnak ezt a verzióját futtatja, [kézzel kell konfigurálnia a kapcsolatot](#config-manually).
+> Ha támogatnia kell a Windows legújabb verzióját nem futtató régebbi Windows-eszközöket, akkor is továbbra is letöltheti a Microsoft Store-ból a raktári alkalmazás 1.6.3.0-ás verzióját. Ez a verzió fut a Windows 10 (UWP) novemberi frissítés, 1511 (10.0.10586-os build) vagy később verzióján. Ne feledje azonban, hogy a raktári alkalmazás ezen verziója nem támogatja a kapcsolati beállítások tömeges telepítését. Ezért minden olyan eszköz esetében, amely az alkalmazásnak ezt a verzióját futtatja, [kézzel kell konfigurálnia a kapcsolatot](#config-manually).
 
-## <a name="get-the-warehousing-app"></a>A raktározási alkalmazás beszerzése
+## <a name="get-the-warehouse-app"></a>A raktári alkalmazás letöltése
 
 Az alkalmazás letöltéséhez használja a következő hivatkozások egyikét:
 
 - **Windows (UWP):** [Dynamics 365 for Finance and Operations - Warehousing a Microsoft Store-ban](https://www.microsoft.com/store/apps/9p1bffd5tstm)
 - **Android:** [Warehousing - Dynamics 365 a Google Play Store-ban](https://play.google.com/store/apps/details?id=com.Microsoft.Dynamics365forOperationsWarehousing)
 
-Kisebb telepítések esetén előfordulhat, hogy az alkalmazást minden eszköz megfelelő áruházából telepíti, majd manuálisan konfigurálja a kapcsolatot az éppen használt környezettel. A raktározási alkalmazás 1.7.0.0-ás és újabb verzióiban azonban automatizálhatja az alkalmazások telepítését és/vagy konfigurációját. Ez a megközelítés akkor lehet hasznos, ha sok eszközt kezel, és mobileszköz-kezelő, valamint mobilalkalmazás-kezelő megoldást használ, mint a [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune). Az alkalmazások Intune használatával történő hozzáadásával kapcsolatos tudnivalókat lásd: [Alkalmazások hozzáadása a Microsoft Intune szolgáltatáshoz](https://docs.microsoft.com/mem/intune/apps/apps-add).
+Kisebb telepítések esetén előfordulhat, hogy az alkalmazást minden eszköz megfelelő áruházából telepíti, majd manuálisan konfigurálja a kapcsolatot az éppen használt környezettel. A raktári alkalmazás 1.7.0.0-ás és újabb verzióiban azonban automatizálhatja az alkalmazások telepítését és/vagy konfigurációját. Ez a megközelítés akkor lehet hasznos, ha sok eszközt kezel, és mobileszköz-kezelő, valamint mobilalkalmazás-kezelő megoldást használ, mint a [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune). Az alkalmazások Intune használatával történő hozzáadásával kapcsolatos tudnivalókat lásd: [Alkalmazások hozzáadása a Microsoft Intune szolgáltatáshoz](https://docs.microsoft.com/mem/intune/apps/apps-add).
 
 ## <a name="create-a-web-service-application-in-azure-active-directory"></a><a name="create-service"></a>Webes szolgáltatás alkalmazás létrehozása az Azure Active Directory szolgáltatásban
 
-Ahhoz, hogy a raktározási alkalmazás együttműködhessen a kívánt Supply Chain Management kiszolgálóval, regisztrálnia kell egy webszolgáltatási alkalmazást az Azure Active Directory (Azure AD) felületén a Supply Chain Management bérlő számára. A következő eljárás bemutatja a feladat végrehajtásának egyik módját. A részletes tudnivalókkal és alternatívákkal kapcsolatban lásd az eljárás utáni hivatkozásokat.
+Ahhoz, hogy a raktári alkalmazás együttműködhessen a kívánt Supply Chain Management kiszolgálóval, regisztrálnia kell egy webszolgáltatási alkalmazást az Azure Active Directory (Azure AD) felületén a Supply Chain Management bérlő számára. A következő eljárás bemutatja a feladat végrehajtásának egyik módját. A részletes tudnivalókkal és alternatívákkal kapcsolatban lásd az eljárás utáni hivatkozásokat.
 
 1. Lépjen egy böngészőben a [https://portal.azure.com](https://portal.azure.com/) címre.
 1. Adja meg a felhasználó nevét és jelszavát, aki hozzáfér az Azure-előfizetéshez.
@@ -82,7 +82,7 @@ Ahhoz, hogy a raktározási alkalmazás együttműködhessen a kívánt Supply C
 
 1. Válassza a **Tanúsítvány és titkok** lehetőséget a **Kezelés** listában. Ezt követően válassza ki a következő gombok egyikét, attól függően, hogy hogyan szeretné konfigurálni az alkalmazást hitelesítésre. (További információkért tekintse meg a [Hitelesítés tanúsítványok vagy titkos ügyfélkód használatával](#authenticate) fejezetet a témakör későbbi részében.)
 
-    - **Tanúsítvány feltöltése** – A titkos kódként használt tanúsítvány feltöltése. Ezt a megközelítést ajánljuk, mert a biztonságosabb, és nagyobb mértékben automatizálható is. Ha Windows-eszközökön futtatja a raktározási alkalmazást, jegyezze fel a tanúsítvány feltöltése után megjelenő **Ujjlenyomat** értéket. Erre az értékre akkor lesz szükségem amikor Windows-eszközökön konfigurálja a tanúsítványt.
+    - **Tanúsítvány feltöltése** – A titkos kódként használt tanúsítvány feltöltése. Ezt a megközelítést ajánljuk, mert a biztonságosabb, és nagyobb mértékben automatizálható is. Ha Windows-eszközökön futtatja a raktári alkalmazást, jegyezze fel a tanúsítvány feltöltése után megjelenő **Ujjlenyomat** értéket. Erre az értékre akkor lesz szükségem amikor Windows-eszközökön konfigurálja a tanúsítványt.
     - **Új titkos ügyfélkód** – Hozzon létre egy kulcsot a kulcs leírásának és időtartamának megadásával a **Jelszavak** részben, majd válassza a **Hozzáadás** elemet. Készítsen másolatot a kulcsról, és tárolja biztonságosan.
 
     ![Tanúsítvány és titkos kódok](media/app-connect-azure-authentication.png "Tanúsítvány és titkos kódok")
@@ -99,7 +99,7 @@ Az Azure AD webszolgáltatási alkalmazásainak beállításával kapcsolatos to
 
 A következő lépésekkel engedélyezheti az Supply Chain Management számára az Azure AD alkalmazása használatát.
 
-1. Hozzon létre egy olyan felhasználót, amely megfelel a raktározási alkalmazás felhasználói hitelesítő adatainak:
+1. Hozzon létre egy olyan felhasználót, amely megfelel a raktári alkalmazás felhasználói hitelesítő adatainak:
 
     1. A Supply Chain Management szolgáltatásban lépjen a **Rendszerfelügyelet \> Felhasználók \> Felhasználók** elemre.
     1. Hozzon létre egy felhasználót.
@@ -107,7 +107,7 @@ A következő lépésekkel engedélyezheti az Supply Chain Management számára 
 
     ![Rendelje hozzá a raktározási mobileszköz felhasználóját](media/app-connect-app-users.png "Rendelje hozzá a raktározási mobileszköz felhasználóját")
 
-1. Társítsa az Azure AD alkalmazást a raktározási alkalmazás felhasználójával:
+1. Társítsa az Azure AD alkalmazást a raktári alkalmazás felhasználójával:
 
     1. Ugrás a **Rendszerfelügyelet \> Beállítás \> Azure Active Directory alkalmazások** elemre.
     1. Hozzon létre egy sort.
@@ -119,9 +119,9 @@ A következő lépésekkel engedélyezheti az Supply Chain Management számára 
 
 Az Azure AD használatával történő hitelesítéssel biztonságos módon csatlakoztathat egy mobileszközt a Supply Chain Management alkalmazsáshoz. A hitelesítést elvégezheti titkos ügyfélkód vagy tanúsítványok használatával. Ha a csatlakozási beállításokat importálja, javasoljuk, hogy a titkos ügyfélkód helyett helyett használjon tanúsítványt. Mivel a titkos ügyfélkódot mindig biztonságosan kell tárolni, nem importálhatja azt egy kapcsolatbeállítási fájlból vagy egy QR-kódból, a témakörben később ismertetett módon.
 
-A tanúsítványok felhasználhatók titkos kódokként az alkalmazás azonosságának igazolására, ha a rendszer tokent kér. A tanúsítvány nyilvános része fel van töltve az alkalmazásregisztrációba az Azure portálon, míg a teljes tanúsítványt telepíteni kell minden olyan eszközre, amelyre a raktározási alkalmazás telepítésre kerül. A szervezet felelős a tanúsítvány rotációjának és egyéb szempontjainak kezelésével kapcsolatban. Önaláírt tanúsítványok is használhatók, de mindig nem exportálható tanúsítványokat kell használnia.
+A tanúsítványok felhasználhatók titkos kódokként az alkalmazás azonosságának igazolására, ha a rendszer tokent kér. A tanúsítvány nyilvános része fel van töltve az alkalmazásregisztrációba az Azure portálon, míg a teljes tanúsítványt telepíteni kell minden olyan eszközre, amelyre a raktári alkalmazás telepítésre kerül. A szervezet felelős a tanúsítvány rotációjának és egyéb szempontjainak kezelésével kapcsolatban. Önaláírt tanúsítványok is használhatók, de mindig nem exportálható tanúsítványokat kell használnia.
 
-A tanúsítványt helyileg elérhetővé kell tenni minden olyan eszközön, amelyen a raktározási alkalmazást futtatja. A Intune által vezérelt eszközök tanúsítványainak kezelésével kapcsolatban a következő témakör tartalmaz további tájékoztatást: [Tanúsítványok használata hitelesítéshez a Microsoft Intune szolgáltatásban](https://docs.microsoft.com/mem/intune/protect/certificates-configure).
+A tanúsítványt helyileg elérhetővé kell tenni minden olyan eszközön, amelyen a raktári alkalmazást futtatja. A Intune által vezérelt eszközök tanúsítványainak kezelésével kapcsolatban a következő témakör tartalmaz további tájékoztatást: [Tanúsítványok használata hitelesítéshez a Microsoft Intune szolgáltatásban](https://docs.microsoft.com/mem/intune/protect/certificates-configure).
 
 ## <a name="configure-the-application-by-importing-connection-settings"></a>Az alkalmazás konfigurálása a kapcsolati beállítások importálásával
 
@@ -177,7 +177,7 @@ Az adatokat JSON-fájlként mentheti, vagy generálhat egy olyan QR-kódot, amel
 
 ### <a name="save-the-connection-settings-file-on-each-device"></a>A kapcsolatbeállítási fájl mentése mindegyik eszközre
 
-Általában egy eszközkezelő eszközzel vagy parancsfájllal terjesztheti a kapcsolati beállítások fájljait mindegyik éppen kezelt eszközre. Ha az alapértelmezett nevet és helyet használja a kapcsolatbeállításokat tartalmazó fájl mentésekor az egyes eszközökön, akkor a program automatikusan importálja azt, még az alkalmazás telepítése utáni első futtatásakor is. Ha egyéni nevet vagy helyet ad meg a fájlnak, az alkalmazás felhasználójának meg kell adnia az értékeket az első futtatásakor. Az alkalmazás azonban továbbra is a megadott nevet és helyet fogja használni.
+Általában egy eszközkezelő eszközzel vagy parancsfájllal terjesztheti a kapcsolati beállítások fájljait mindegyik éppen kezelt eszközre. Ha az alapértelmezett nevet és helyet használja a kapcsolatbeállításokat tartalmazó fájl mentésekor az egyes eszközökön, akkor a program automatikusan importálja azt, még a raktári alkalmazás telepítése utáni első futtatásakor is. Ha egyéni nevet vagy helyet ad meg a fájlnak, az alkalmazás felhasználójának meg kell adnia az értékeket az első futtatásakor. Az alkalmazás azonban továbbra is a megadott nevet és helyet fogja használni.
 
 Az alkalmazás minden elindításakor újraimportálja a kapcsolatbeállításokat a korábbi helyről, és meghatározza, hogy vannak-e módosítások. Az alkalmazás csak azokat a kapcsolatokat fogja frissíteni, amelyeknek ugyanaz a neve, mint a kapcsolatbeállítási fájljához tartozó kapcsolatoknak. A felhasználó által létrehozott, más neveket használó kapcsolatok nem frissülnek.
 
@@ -197,7 +197,7 @@ A fentiek szerint az alapértelmezett fájlnév a *connections.json*. A fájl al
 
 Kövesse az alábbi lépéseket a csatlakozási beállítások egy fájlból vagy egy QR-kódból történő importálásához.
 
-1. Nyissa meg a mobileszközén a raktározási alkalmazást.
+1. Nyissa meg a mobileszközén a raktári alkalmazást.
 1. Lépjen a **Kapcsolat beállításai** elemre.
 1. A **Bemutató mód használata** lehetőséget állítsa _Nem_ értékre.
 
@@ -226,7 +226,7 @@ Kövesse az alábbi lépéseket a csatlakozási beállítások egy fájlból vag
 
 Manuálisan konfigurálhatja az alkalmazást az eszközön, hogy csatlakozni tudjon a Supply Chain Management-kiszolgálóhoz Azure AD alkalmazáson keresztül.
 
-1. Nyissa meg a mobileszközén a raktározási alkalmazást.
+1. Nyissa meg a mobileszközén a raktári alkalmazást.
 1. Lépjen a **Kapcsolat beállításai** elemre.
 1. A **Bemutató mód használata** lehetőséget állítsa _Nem_ értékre.
 

@@ -1,9 +1,9 @@
 ---
-title: Az alapértelmezett kategória-céloldal és keresési találatoldal áttekintése
+title: Alapértelmezett kategória-céloldal és keresési találatoldal áttekintése
 description: Ez a témakör a Dynamics 365 Commerce alkalmazás alapértelmezett kategória-céloldalának és keresési találatoldalának áttekintését nyújtja
-author: v-chgri
+author: ashishmsft
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 06/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,15 +17,14 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 17746d2923ab84311253c47647c0020807bdb75c
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: e85449c10fa4a768a144ce423a77bd1fc2c94352
+ms.sourcegitcommit: ce397c2759f642c595e30fef58a770b50360b2bd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002496"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3527468"
 ---
-# <a name="overview-of-default-category-landing-page-and-search-results-page"></a>Az alapértelmezett kategória-céloldal és keresési találatoldal áttekintése
-
+# <a name="default-category-landing-page-and-search-results-page-overview"></a>Alapértelmezett kategória-céloldal és keresési találatoldal áttekintése
 
 [!include [banner](includes/banner.md)]
 
@@ -96,7 +95,13 @@ A következő összetevők elengedhetetlenek a keresési találatok laphoz:
 - Az **Oldalszámozás** segítségével a webhely látogatói a kategorizált termékek találatainak egyik lapjáról a másikra kerülnek.
 - A **Teljes szám** az adott kategóriába tartozó és a keresési feltételeknek megfelelő termékek teljes számát adja meg.
 
+>[!NOTE]
+>Ezek a felhőalapú keresési funkciók a 10.0.8 verziótól érhetők el. Ellenőrizze, hogy a **Kereskedelmi paraméterek > Konfigurációs paraméterek** között van-e egy bejegyzés a következőhöz: „ProductSearch. UseAzureSearch 'igaz' értékre állítva”. 
+![A felhőalapú keresés konfigurációs paraméterei](./media/CloudPoweredSearchConfigurationParameters.png)
+
 ## <a name="additional-resources"></a>További erőforrások
+
+[Felhőalapú keresés – áttekintés](cloud-powered-search-overview.md)
 
 [Kezdőlap áttekintése](quick-tour-home-page.md)
 
@@ -104,5 +109,5 @@ A következő összetevők elengedhetetlenek a keresési találatok laphoz:
 
 [Kosár és pénztár oldalainak áttekintése](quick-tour-cart-checkout.md)
 
-[A fiókkezelési oldalak áttekintése](quick-tour-account-management.md)
+[Fiókkezelési oldalak áttekintése](quick-tour-account-management.md)
 

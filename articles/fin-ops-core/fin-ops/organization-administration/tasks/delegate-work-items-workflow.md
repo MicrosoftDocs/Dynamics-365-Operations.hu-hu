@@ -1,9 +1,9 @@
 ---
 title: Egy munkafolyamat munkatételeinek delegálása
 description: Ha azt tervezi, hogy távol lesz a munkahelyétől, vagy valamilyen más okból nem tud elvégezni egy adott munkaelemet, a munkaelemeket más felhasználóknak delegálhatja, illetve hozzárendelheti a felhasználókhoz.
-author: jasongre
+author: ChrisGarty
 manager: AnnBe
-ms.date: 07/01/2019
+ms.date: 06/23/2020
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -13,15 +13,15 @@ audience: Application User
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: jasongre
+ms.author: cgarty
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: aceafbe8dfcdac2ac7b97a4f77a9a30599c60c51
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 7d98d84b89f1f3322a9c896b74b63a3b6425b13b
+ms.sourcegitcommit: 267864eb0dccd6e26d49d280bd4ad1b770a73a77
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3140582"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "3515764"
 ---
 # <a name="delegate-work-items-in-a-workflow"></a>Egy munkafolyamat munkatételeinek delegálása
 
@@ -30,6 +30,16 @@ ms.locfileid: "3140582"
 ## <a name="manually-delegate-a-work-item"></a>Munkaelem delegálátsa manuálisan
 
 Ha egyetlen munkaelemet szeretne delegálni, válassza a **Delegálás** beállítást a **Munkafolyamat** menüben, majd adja meg a delegálni kívánt felhasználót a megjegyzéssel együtt. Ez hozzárendeli a munkaelemet újra a felhasználóhoz, így végrehajthatja.
+
+## <a name="manually-delegate-multiple-work-items"></a>Több munkatétel manuális delegálása
+
+Több munkatétel együttesen delegálható a **Hozzám rendelt munkatételek** oldalról. A következő munkafolyamat-típusok használhatók tömeges delegáláshoz: Beszerzési szerződés jóváhagyási munkafolyamata, Beszerzési rendelés munkafolyamata, Beszerzési igénylés ellenőrzése és Szállítói számla munkafolyamata. A **Több munkatétel delegálása** funkció alapértelmezés szerint le van tiltva, és a **Munkaterületek > Szolgáltatások kezelése** modulban engedélyezhető. A funkció engedélyezésével kapcsolatos segítségért forduljon a rendszergazdához.
+1.  Ugorjon a **Közös > Közös > Munkatételek >Hozzám rendelt munkatételek** pontra.
+2.  Válassza ki azokat a munkatételeket, amelyek delegálva lesznek.
+3.  Kattintson a **Munkatételek delegálása** menüre.
+4.  A **Felhasználó** mezőben jelölje ki azt a felhasználót, akihez a munkatételeket delegálni szeretné.
+5.  A **Megjegyzés** mezőben adjon meg egy megjegyzést, amely leírja, miért delegálja a munkatételeket.
+6.  A munkatétel-delegálás befejezéséhez kattintson a **Munkatételek delegálása** gombra.
 
 ## <a name="automatically-delegate-work-items"></a>Munkaelem delegálása automatikusan
 

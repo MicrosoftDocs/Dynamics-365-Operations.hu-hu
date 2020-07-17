@@ -3,7 +3,7 @@ title: Eltávolított vagy elavult funkciók a korábbi kiadásokban
 description: Ez a témakör azt mutatja be, hogy mely szolgáltatások lettek eltávolítva vagy melyek eltávolítása tervezett a Dynamics 365 for Finance and Operations alkalmazásból és a termék korábbi kiadásaiból.
 author: sericks007
 manager: AnnBe
-ms.date: 04/17/2020
+ms.date: 06/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: be266f838c5e6cd10655546179e9075e36570bfc
-ms.sourcegitcommit: 399f128d90b71bd836a1c8c0c8c257b7f9eeb39a
+ms.openlocfilehash: 8a73231a8286a412e9ec8a4eef6c58d7afd73ec0
+ms.sourcegitcommit: bdfc84aa7f607511981c0b2f20f03fabcb773510
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "3284014"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "3500412"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>Eltávolított vagy elavult funkciók a korábbi kiadásokban
 
@@ -588,7 +588,7 @@ Az eGiro az ENSZ EDIFACT CREMUL (Multiple Credit Advice Message) nemzetközi sza
 |   |  |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | A fizetési formátum már nem használható.                                                     |
-| **Felváltotta másik szolgáltatás?**   | Szám A formátum helyére ISO-20022 típusú kivonatok importformátumai kerülnek a jövőbeli kiadásokban. |
+| **Felváltotta másik szolgáltatás?**   | Igen, az ISO20022 Camt.054 értesítési import. |
 | **Érintett területek**         | Kinnlevőségek                                                                       |
 | **Állapot**                         | Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.                            |
 
@@ -621,7 +621,7 @@ Kiválaszthat egy olyan importálási formátumot a finn fizetésekhez, amely a 
 |   |  |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | A fizetési formátum már nem használható.                                                     |
-| **Felváltotta másik szolgáltatás?**   | Szám A formátum helyére ISO-20022 típusú kivonatok importformátumai kerülnek a jövőbeli kiadásokban. |
+| **Felváltotta másik szolgáltatás?**   | Igen, az ISO20022 Camt.054 értesítési import. |
 | **Érintett területek**         | Kinnlevőségek                                                                       |
 | **Állapot**                         | Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.                            |
 
@@ -632,7 +632,7 @@ Finnországra vonatkozó, specifikus formátum, amellyel könyvelési tranzakci�
 |   |  |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | A fizetési formátum már nem használható.                                                     |
-| **Felváltotta másik szolgáltatás?**   | Szám A formátum helyére ISO-20022 típusú kivonatok importformátumai kerülnek a jövőbeli kiadásokban. |
+| **Felváltotta másik szolgáltatás?**   | Igen, az ISO20022 Camt.053 banki kivonat importálása a Speciális banki egyeztetés használatával. |
 | **Érintett területek**         | Kinnlevőségek                                                                       |
 | **Állapot**                         | Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.                            |
 
@@ -698,7 +698,7 @@ Banki fizetés importálása a TeleTeenus formátumot használja.
 |   |  |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | A fizetési formátumok már nem használhatók.                                                    |
-| **Felváltotta másik szolgáltatás?**   | Szám A formátumok helyére ISO-20022 típusú kivonatok importformátumai kerülnek a jövőbeli kiadásokban. |
+| **Felváltotta másik szolgáltatás?**   | Igen, az ISO20022 Camt.054 bankértesítési import. |
 | **Érintett területek**         | Kinnlevőségek                                                                        |
 | **Állapot**                         | Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.                             |
 
@@ -784,7 +784,7 @@ TelePay fizetési formátumok közé tartozik a szállítói fizetés exportál�
 |   |  |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | A fizetési formátumok már nem használhatók.                                                        |
-| **Felváltotta másik szolgáltatás?**   | Igen, ISO20022 átutalási fizetési formátum és AvtaleGiro vevői kifizetési formátum Norvégia esetében |
+| **Felváltotta másik szolgáltatás?**   | Igen, az ISO20022 átutalási fizetési formátum és a AvtaleGiro vevői kifizetési formátum Norvégia esetében, valamint a pain.002 és a camt.054 banki értesítési visszárufájlok importja. |
 | **Érintett területek**         | Kötelezettség és kinnlevőség                                                          |
 | **Állapot**                         | Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.                                 |
 
@@ -1125,13 +1125,13 @@ Előjegyzés létrehozás nem lehetséges köteg használatával, azonban a felh
 | **Érintett területek**         | Minden modul  |
 | **Állapot**                         | Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz. |
 
-### <a name="german-dtazv-payment-format"></a>Német DTAZV fizetési formátum
+### <a name="german-dtazv-payment-format-in-domestic-currency"></a>Német DTAZV kifizetési formátum hazai pénznemben
 
 |   |  |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | A formátum már nem alkalmazható Németországban, mivel azt felváltotta a SEPA funkció. |
 | **Felváltotta másik szolgáltatás?**   | SEPA exportkifizetések    |
-| **Érintett területek**         | Minden modul   |
+| **Érintett területek**         | Kötelezettségek   |
 | **Állapot**                         | Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.    |
 
 ### <a name="german-mt940-import"></a>Német MT940 importálása

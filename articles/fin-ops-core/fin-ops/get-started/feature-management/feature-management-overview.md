@@ -3,7 +3,7 @@ title: Funkciókezelés áttekintése
 description: Ez a témakör bemutatja a funkciókezelés szolgáltatást, valamint azt, hogy hogyan használhatja azt.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 06/12/2020
+ms.date: 06/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 416c19dcf5b2c983afff7d2e8a9797fb0c0e2780
-ms.sourcegitcommit: 218e22014a964b8b52fc0152e355b07b0b84ae2c
+ms.openlocfilehash: ae2c7a0d089c81a62932c415eed5f752e7fb4ffa
+ms.sourcegitcommit: 17a8e3d48da4354ba74e35031c320a16369bfcd5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "3456597"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "3499619"
 ---
 # <a name="feature-management-overview"></a>Funkciókezelés áttekintése
 
@@ -140,6 +140,10 @@ A következő példák azt mutatják be, hogy mi történik, ha a **Funkciókeze
 ## <a name="feature-management-and-flighting"></a>Funkciókezelés és tesztelés
 
 A funkciókezelés funkcióval szabályozhatja az egyes kiadásokban szállított funkciókat. A tesztelés lehetővé teszi a Microsoft Teams számára, hogy korlátozott számú ügyfél számára adjanak ki funkciókat, így a szolgáltatások tesztelése és ellenőrzése nem érinti az összes ügyfelet. A funkciókezelés nem szabályozza a funkciók tesztelését.
+
+## <a name="new-features-are-optional-for-12-months"></a>Az új szolgáltatások nem kötelezőek 12 hónapig.
+
+Ha egy új, nem kritikus funkció van telepítve, akkor egy 12 hónapos időszakra nem kötelező. Ez lehetővé teszi az Ön és a szervezet számára, hogy előre tervezze meg a funkció felvételének idejét, és tesztelje a napi műveletein. További információkat az [Egyverziós szolgáltatásfrissítések GYIK](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/one-version#what-about-new-features) oldalon találhat.
 
 ## <a name="using-feature-management-to-turn-on-isv-features-or-custom-features"></a>A Funkciókezelés használata az ISV-funkciók és az egyéni funkciók bekapcsolásához
 
