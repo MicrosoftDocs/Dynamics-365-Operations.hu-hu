@@ -3,7 +3,7 @@ title: Online csatorna beállítása
 description: Ez a témakör azt mutatja be, hogyan lehet egy új online csatornát létrehozni a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: samjarawan
 manager: annbe
-ms.date: 01/27/2020
+ms.date: 07/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 9b7a2b8fd157df8b39e9e227d188a3802cacb4e3
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 0d803b23f9de9daf624537d1d1ef30f17dc05fea
+ms.sourcegitcommit: adf196c51e2b6f532d99c177b4c6778cea8a2efc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002427"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "3533321"
 ---
 # <a name="set-up-an-online-channel"></a>Online csatorna beállítása
 
@@ -35,9 +35,9 @@ Ez a témakör azt mutatja be, hogyan lehet egy új online csatornát létrehozn
 
 A Dynamics 365 Commerce rendszer támogatja a többszörös kiskereskedelmi csatornák használatát. Ezek a kiskereskedelmi csatornák lehetnek online áruházak, hívásközpontok és kiskereskedelmi áruházak (más néven rendes, nem online üzletek). Az online áruházak segítségével a vevők a kiskereskedelmi üzletek mellett a kiskereskedőtől online is vásárolhatnak termékeket.
 
-A Commerce online áruház létrehozásához először létre kell hoznia egy online csatornát. 
+A Commerce online áruház létrehozásához először létre kell hoznia egy online csatornát. Új online csatorna létrehozása előtt győződjön meg arról, hogy végrehajtotta a [Csatornbeállítás előfeltételeit](channels-prerequisites.md).
 
-Új online csatorna létrehozása előtt győződjön meg arról, hogy végrehajtotta a [Csatornbeállítás előfeltételeit](channels-prerequisites.md).
+Új webhely létrehozása előtt legalább egy online áruházat létre kell hoznia a Commerce alkalmazásban. További információért lásd: [E-kereskedelmi webhely létrehozása](create-ecommerce-site.md).
 
 ## <a name="create-and-configure-a-new-online-channel"></a>Új online csatorna létrehozása és konfigurálása
 

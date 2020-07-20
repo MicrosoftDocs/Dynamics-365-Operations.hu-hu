@@ -1,9 +1,9 @@
 ---
-title: A fiókkezelési oldalak áttekintése
+title: Fiókkezelési oldalak áttekintése
 description: Ez a témakör áttekintést nyújt a Microsoft Dynamics 365 Commerce fiókkezelés oldalairól.
 author: anupamar-ms
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 06/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,15 +17,14 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 722da2755734a85e915dd90e7868a5e1c7753f5a
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 03a2ebd07c2a95198f506df3fd94c967ad0315e8
+ms.sourcegitcommit: ce397c2759f642c595e30fef58a770b50360b2bd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002958"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3527608"
 ---
-# <a name="overview-of-account-management-pages"></a>A fiókkezelési oldalak áttekintése
-
+# <a name="account-management-pages-overview"></a>Fiókkezelési oldalak áttekintése
 
 [!include [banner](includes/banner.md)]
 
@@ -92,8 +91,6 @@ A fiókkezelés modulokkal és azok szerkesztésével kapcsolatban a következő
 ## <a name="additional-resources"></a>További erőforrások
 
 [Kezdőlap áttekintése](quick-tour-home-page.md)
-
-[Az alapértelmezett kategória-céloldal és keresési találatoldal áttekintése](category-search-page-overview.md)
 
 [Termékadatok oldalainak áttekintése](quick-tour-pdp.md)
 

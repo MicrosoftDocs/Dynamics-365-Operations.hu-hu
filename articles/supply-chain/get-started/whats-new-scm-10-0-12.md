@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: c773b5e1013bbd58f48cd345f50a342175ed0c98
-ms.sourcegitcommit: 713b5dfc76a6875d0ba6d86c5cbd585ea502cf9d
+ms.openlocfilehash: fd64a4ea53976293a6ff484a370d7804bf6c724f
+ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "3413893"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3530144"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10012-august-2020"></a>Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.12 szolgáltatásban (2020. augusztus)
 
@@ -40,13 +40,12 @@ Ez a témakör a Microsoft Dynamics 365 Supply Chain Management 10.0.12 előzete
 Ez a kiadás a következő funkciókat tartalmazza: A funkciók címei további információkra mutatnaka a [Kiadási tervek](https://docs.microsoft.com/dynamics365/release-plans/) webhelyen. A további hivatkozások az adott funkcióhoz jelenleg elérhető további dokumentációkat és videókat mutatnak be. Ezen szolgáltatások többségét a használat előtt engedélyezni kell a [Funkciók kezelése](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) alatt.
 
 - [A feladatkártya-érintőképernyő zárolásának engedélyezése fertőtlenítésre](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/allow-locking-job-card-touchscreen-sanitization) – További tájékoztatás: [Munkakártya konfigurálása eszközökhöz](../production-control/config-job-card-device.md).
-- [A termékvariánsok és a nyomon követési dimenziók rögzítése a raktározási alkalmazásban a betöltési cikk bevételezése során](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/capture-product-variants-tracking-dimensions-warehousing-app-during-load-item-receiving) – További tájékoztatás: [Mobileszközök beállítása raktári munkához](../warehousing/configure-mobile-devices-warehouse.md).
+- [A termékvariánsok és a nyomon követési dimenziók rögzítése a raktári alkalmazásban a betöltési cikk bevételezése során](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/capture-product-variants-tracking-dimensions-warehousing-app-during-load-item-receiving) – További tájékoztatás: [Mobileszközök beállítása raktári munkához](../warehousing/configure-mobile-devices-warehouse.md).
 - Költségszámítási szint (új AJ-szint) – További tájékoztatás: [Költségszámítási szint](../cost-management/cost-calculation-level.md).
 - [Dynamics 365 Supply Chain Management ügyfélportál](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/customer-self-service-experiences) – További tájékoztatás: [Dynamics 365 Supply Chain Management ügyfélportál – áttekintés](../sales-marketing/customer-portal-overview.md).
-- [Aktuális készlet szolgáltatás](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/inventory-on-hand-service)
 - [IoT-intelligencia alapismeretek](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/iot-intelligence-core-insights) -További tájékoztatás: [IoT-intelligence kezdőlap](../iot/iot-intelligence-home-page.md).
-- [Azonosítótábla fogadásával kapcsolatos fejlesztések a raktárkezelő mobilalkalmazásban (folytatás)](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app-continued) - További információ: [Azonosítótáblák fogadása a raktárkezelő mobilalkalmazásban](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md).
-- [Tömeges telepítés a Warehouse Mobile App alkalmazáshoz](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/mass-deployment-warehouse-mobile-app) – További tájékoztatás: [A raktárkezelési alkalmazás áttekintése](../warehousing/install-configure-warehousing-app.md).
+- [Azonosítótábla fogadásával kapcsolatos fejlesztések a raktári mobilalkalmazásban (folytatás)](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app-continued) - További információ: [Azonosítótáblák fogadása a raktári mobilalkalmazásban](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md).
+- [Tömeges telepítés a Warehouse Mobile App alkalmazáshoz](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/mass-deployment-warehouse-mobile-app) – További tájékoztatás: [A raktári alkalmazás áttekintése](../warehousing/install-configure-warehousing-app.md).
 - [Raktárkezelés készleten lévő bejegyzései karbantartási feladatának maximális végrehajtási ideje](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/maximum-execution-time-warehouse-management-on-hand-entries-cleanup-job) – További tájékoztatás: [Raktárkezelés – készleten lévő elemek törlési feladata](../warehousing/onhand-cleanup.md).
 - [Beszerzési kereskedelmi megállapodások tervezésének optimalizálása](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/planning-optimization-support-purchase-trade-agreements) – További tájékoztatás: [Alaptervezés a beszerzési kereskedelmi megállapodásokkal](../master-planning/planning-optimization/purchase-trade-agreement.md).
 

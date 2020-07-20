@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 709a75a259b1f8daa5b72e76b56942573c403f43
-ms.sourcegitcommit: 3a823444005d316bd95fc663e2dbc8252ac7d93a
+ms.openlocfilehash: 9a030f2e219c7c389d6255254545f3f895eff75b
+ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "3261336"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3530581"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>Beszerzési rendelések bejövő rakományának kezelése a raktárban
 
@@ -66,7 +66,7 @@ Amikor egy bejövő rakomány először megérkezik a raktárba, a raktári dolg
 
 - **A mobileszköz betöltést támogató menüje**
 
-    A [Dynamics 365 for Finance and Operations – Raktárkezelés alkalmazás](install-configure-warehousing-app.md) mobileszközökhöz a következő munka-létrehozási folyamatokat támogatja:
+    A [raktári alkalmazás](install-configure-warehousing-app.md) mobileszközökhöz a következő munkalétrehozási folyamatokat támogatja:
 
     - Rakomány – cikk bevételezése
     - Rakomány – cikk bevételezése és eltárolása
@@ -285,7 +285,7 @@ Ha ezeket a forgatókönyveket a megadott mintaadatok és értékek alapján kí
 
 Mielőtt a raktári fogadó adminisztrátorok egy mobileszköz segítségével regisztrálhatnak egy rakományhoz kapcsolódó bejövő készletet, egy mobileszköz-menüelemet kell létrehozni erre a célra.
 
-Ebben a szakaszban egy mobileszköz menüelemet hoz létre, és hozzáadja azt egy meglévő menühöz. A raktári dolgozó ezt követően kiválaszthatja a menüelemet a Raktározás alkalmazásban.
+Ebben a szakaszban egy mobileszköz menüelemet hoz létre, és hozzáadja azt egy meglévő menühöz. A raktári dolgozó ezt követően kiválaszthatja a menüelemet a raktári alkalmazásban.
 
 1. Nyissa meg a **Raktárkezelés \> Beállítások \> Mobileszköz \> Mobileszköz menüelemei** lehetőséget és győződjön meg arról, hogy a mobileszköz menüje tartalmaz egy olyan menüelemet, amelynek beállításai a következők:
 

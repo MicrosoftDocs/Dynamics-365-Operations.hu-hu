@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 826c955b7c99073ff41c8a5ed75254c824359925
-ms.sourcegitcommit: 4e9b3746790355f9f72bbfddc099c4065a49ad63
+ms.openlocfilehash: c397354ade1ac1d4f5f9bc0e6bb5d4be5a7ae9f3
+ms.sourcegitcommit: f7294160d18f15cb762c24f2459b4f0887c37541
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "3175154"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "3505611"
 ---
 # <a name="omni-channel-advanced-auto-charges"></a>Többcsatornás speciális automatikus költségek
 
@@ -40,7 +40,7 @@ A 10.0-s verzió előtti kiadások használata esetén a pénztárfelhasználót
 
 Szállítási költségek hozzáadására a kézi beavatkozások használata továbbra is elérhető a 10.0 és újabb verziókban. Ha a szervezet nem engedélyezi a **Speciális automatikus költségek** paramétert, a pénztár felkérései a költségek manuális bevitelére változatlanok maradnak.
 
-A speciális automatikus költségek funkcióval a POS-felhasználó számításokat végezhet bármely meghatározott vegyes költséggel az automatikus költségek beállítási táblái alapján. Ezenkívül a felhasználók képesek lesznek további költségek és díjak korlátlan mennyiségének hozzáadására vagy szerkesztésére bármelyi pénztári értékesítési tranzakcióhoz fejléc- vagy sorszinten (átvétel és fizetés helyben vagy vevői rendelés esetén).
+A speciális automatikus költségek funkcióval a POS-felhasználó számításokat végezhet bármely meghatározott vegyes költséggel az automatikus költségek beállítási táblái alapján. Ezenkívül a felhasználók képesek lesznek további költségek és díjak korlátlan számok hozzáadására vagy szerkesztésére bármelyik pénztári értékesítési tranzakcióhoz fejléc- vagy sorszinten (átvétel és fizetés helyben vagy vevői rendelés esetén).
 
 ## <a name="enabling-advanced-auto-charges"></a>Speciális automatikus költségek engedélyezése
 
@@ -52,7 +52,7 @@ Ha a speciális automatikus költségek engedélyezve vannak, a felhasználókat
 
 Ha speciális automatikus költségek engedélyezve vannak, a meglévő **Commerce paraméterek**, amelyek a **Szállítási költségek kódja** és **Szállítási költségek visszatérítése** pontokhoz tartoznak, nem használatosak. Ezek a paraméterek csak akkor érvényesek, ha a **Speciális automatikus költségek használata** paraméter értéke **Nem**.
 
-Mielőtt engedélyezi ezt a funkciót, győződjön meg róla, hogy tesztelte és képezte az alkalmazottakat, mivel ez megváltoztatja a szállítási és egyéb költségek kiszámításának és a pénztár értékesítési rendeléseinek hozzáadásának folyamatát. Ellenőrizze, hogy megérti a folyamat hatását a tranzakciók létrehozására a pénztárból. Hívásközpontból származó és e-kereskedelmi rendelések esetén a speciális automatikus költségek engedélyezésének hatása minimális. Hívásközpont és az elektronikus kereskedelmi alkalmazások továbbra is ugyanúgy viselkednek majd, ahogy korábban tették az automatikus költségekre vonatkozó táblákhoz kapcsolódó további rendelési díjak kiszámításához. Hívásközpont csatorna felhasználói továbbra is manuálisan szerkeszthetik a rendszer által kiszámított automatikus költségeket a fejléc vagy sorok szintjén, vagy manuális hozzáadhatnak a további vegyes költségeket a fejléc vagy sorok szintjén.
+Mielőtt engedélyezi ezt a funkciót, győződjön meg róla, hogy tesztelte és képezte az alkalmazottakat, mivel az engedélyezett funkció megváltoztatja a szállítási és egyéb költségek kiszámításának és a pénztár értékesítési rendeléseinek hozzáadásának folyamatát. Ellenőrizze, hogy megérti a folyamat hatását a tranzakciók létrehozására a pénztárból. Hívásközpontból származó és e-kereskedelmi rendelések esetén a speciális automatikus költségek engedélyezésének hatása minimális. Hívásközpont és az elektronikus kereskedelmi alkalmazások továbbra is ugyanúgy viselkednek majd, ahogy korábban tették az automatikus költségekre vonatkozó táblákhoz kapcsolódó további rendelési díjak kiszámításához. Hívásközpont csatorna felhasználói továbbra is manuálisan szerkeszthetik a rendszer által kiszámított automatikus költségeket a fejléc vagy sorok szintjén, vagy manuális hozzáadhatnak a további vegyes költségeket a fejléc vagy sorok szintjén.
 
 ## <a name="additional-pos-operations"></a>További pénztárműveletek
 
@@ -89,7 +89,7 @@ Két különböző fejléc szintű automatikus költséget konfiguráljon. Áll�
 
 A földi szállítási költségekhez az **Automatikus költségek** oldal sorokat tartalmazó szakaszában határozza meg a költséget 10 USD-nak, amelyeket a 0,01 és 100 dollár közti rendelésekhez alkalmaz. Hozzon létre egy másik költségek sort, ahol jelzi, hogy a 100,01 USD feletti rendeléseknek nincs költsége.
 
-![Automatikus költségek példa](media/headerchargesexample.png)
+![Példa két automatikus költség táblára](media/headerchargesexample.png)
 
 A légi szállítási költségekhez az Automatikus költségek képernyő sorokat tartalmazó szakaszában határozza meg a költséget 20 USD-nak, amelyeket mindent rendeléshez alkalmaz (0,01 és 9°999°999 USD közti érték esetén)
 
@@ -119,7 +119,7 @@ Ugorjon a **Kinnlevőségek \> Költségek beállítása \> Automatikus költsé
 
 Állítsa a **Szint** legördülő menüt **Sor** értékre, és hozzon létre egy új automatikus költségek rekordot az összes vevőre és az adott termékre vagy termékcsoportra vonatkozóan, ahol a beállítási díjakat kell fizetnie.
 
-![Automatikus költségek példa](media/linechargesexample.png)
+![Példa egy sor szintű automatikus költség táblára](media/linechargesexample.png)
 
 Küldje el a díjakat a Commerce Scale Unit/csatorna-adatbázishoz, hogy a pénztár használhassa őket a **1040 elosztási ütemezés** feladat futtatásával.
 
@@ -173,7 +173,7 @@ A **Sorköltség hozzáadása** műveletet meg kell adni a [POS képernyő-elren
 
 A forgatókönyv végrehajtásához a pénztár alkalmazásban a pénztár felhasználónak létre kell hoznia szokásos módon az értékesítési tranzakciót, a termékek és egyéb konfigurációk hozzáadásával az értékesítéshez. A fizetés begyűjtése előtt a felhasználónak ki kell választania a meghatározott sort a pénztárcikkek megjelenített listájából, amire a költségek vonatkoznak, és végre kell hajtania a **Sorköltség hozzáadása** műveletet. A felhasználót a program kéri, hogy válassza ki a költségkódot, és adja meg a költségek értékét. Ha a felhasználó befejezi a folyamatot, a költség hozzákapcsolódik a sorhoz, és hozzáadódik az értékesítési rendeléshez sor szintű költségként. A felhasználó szükség esetén megismételheti a folyamatot, és a tranzakció többi cikkének sorához is hozzáadhat sorköltségeket.
 
-Ugyanezt az eljárást lehet alkalmazni a hívásközpontban a „költségek karbantartása” funkcióval, amely a **Pénzügyek** legördülő menü alatt található az **Értékesítésirendelés-sorok** szakaszban az **Értékesítési rendelés** lapon. Ennek hatására megnyílik a **Költségek karbantartása** lap, amelyen a felhasználó hozzáadhat egy új sorspecifikus költséget a tranzakcióhoz.
+Ugyanezt az eljárást lehet alkalmazni a hívásközpontban a „költségek karbantartása” funkcióval, amely a **Pénzügyek** legördülő menü alatt található az **Értékesítésirendelés-sorok** szakaszban az **Értékesítési rendelés** lapon. A beállítás kiválasztásának hatására megnyílik a **Költségek karbantartása** lap, amelyen a felhasználó hozzáadhat egy új sorspecifikus költséget a tranzakcióhoz.
 
 ## <a name="additional-features"></a>További szolgáltatások
 

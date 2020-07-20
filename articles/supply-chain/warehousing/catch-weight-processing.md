@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 5a751b360b2da8f786dd7b8d139e1a0a44052894
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: c6598a9ac2beb799ddfc4e3cce182e1281ae8d03
+ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3211974"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3530535"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>A tényleges súllyal rendelkező termék feldolgozása a raktárkezelésben
 
@@ -107,7 +107,7 @@ Ezen kívül, ha a cikket címke alapján nyomon követik, akkor létezik egy **
 **Ténylegessúly-címke követése használata esetén** a címkét mindig létre kell hozni minden ténylegessúly-egységhez ami beérkezik, és minden címkét mindig súllyal kell társítani.
 
 Például **Doboz** a tényleges súly egysége, és kap egy raklapot nyolc dobozzal. Ebben az esetben nyolc egyedi tényleges súly címkét létre kell hozni, és a súlyt minden címkéhez társítva kell lennie. A bejövő tényleges súly címkétől függően vagy összes nyolc doboz tömege rögzíthető, és az átlagos tömeg minden dobozra leosztható, vagy egyedi tömegek rögzíthetők az egyes dobozokra.
-A **Meglévő ténylegessúly-címkék használata, ha a termelési rendeléseket készként jelentik** funkció használatakor a mobileszköz menüelemen keresztül engedélyezett folyamattal, a készletet a rendszer a meglévő ténylegessúly-címke adatai alapján frissíti. Ennek eredményeképpen a Raktározás alkalmazás nem kéri a ténylegessúly-címke adatainak rögzítését a termelési készként jelentés művelet részeként.
+A **Meglévő ténylegessúly-címkék használata, ha a termelési rendeléseket készként jelentik** funkció használatakor a mobileszköz menüelemen keresztül engedélyezett folyamattal, a készletet a rendszer a meglévő ténylegessúly-címke adatai alapján frissíti. Ennek eredményeképpen a raktáralkalmazás nem kéri a ténylegessúly-címke adatainak rögzítését a termelési készként jelentés művelet részeként.
 
 **Ha a tényleges súly címke nyomon követését nem alkalmazzák**, a súly rögzíthető az egyes dimenziókészletekre (például az egyes azonosítótáblákra és nyomon követési dimenzióra). Másik lehetőségként a súly rögzíthető az összesített szint alapján, például mint öt azonosítótábla (raklap).
 

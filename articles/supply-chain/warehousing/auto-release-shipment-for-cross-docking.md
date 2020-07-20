@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2019-10-1
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: d11db378be6b2ba845de0ac0a2252092a50bc96a
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 2d8d6e67040f19cac99f8e0164296ef49768496e
+ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3201479"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3530236"
 ---
 # <a name="auto-release-shipment-for-cross-docking"></a>Szállítmány automatikus kiadása áttároláshoz
 
@@ -164,7 +164,7 @@ Ha a késztermékek mennyiségét át szeretné tárolni a társított értékes
 8. A **Termelési rendelés** lap műveleti ablakának **Termelési rendelés** lapján a **Feldolgozás** csoportban válassza a **Becslés** elemet, majd válassza az **OK** lehetőséget. A rendelés becslése megtörténik, és a nyersanyag mennyisége a termeléshez le lesz foglalva.
 9. A **Termelési rendelés lap** műveleti ablakában a **Feldolgozás** csoportban válassza ki a **Felszabadítás** elemet, majd válassza az **OK** lehetőséget. A raktári kitárolási munka létrejön a nyersanyagokhoz.
 10. A munka megnyitása és áttekintése. A Művelet ablaktábla **Raktár** lapjának **Általános** csoportjában válassza a **Munka részletei** elemet. Jegyezze fel a munkaazonosítót
-11. Nyissa meg és jelentkezzen be a ide: Dynamics 365 for Finance and Operations – A raktározási alkalmazás munkát futtat az 51-es raktárban
+11. Jelentkezzen be raktáralkalmazásba, hogy munkát futtasson az 51-es raktárban.
 12. Válassza a **Termelés** \> **Termelési kitárolás** lehetőséget.
 13. Adja meg, hogy melyik munkaazonosító induljon el, és végezze el a nyersanyag kitárolását. 
 

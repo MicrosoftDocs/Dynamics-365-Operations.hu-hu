@@ -1,9 +1,9 @@
 ---
 title: Supply Chain Management kezdőlapja
 description: Ez az oldal a Supply Chain Management-funkciók súgótémaköreinek és más erőforrásainak listáját tartalmazza.
-author: josaw1
+author: kamaybac
 manager: tfehr
-ms.date: 11/26/2019
+ms.date: 06/30/2020
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,24 +15,25 @@ ms.custom: ''
 ms.assetid: ad2a889a-acfd-4b59-a3b3-4017dd374c7b
 ms.search.region: global
 ms.search.industry: ''
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: cf505f3e84cb8a8b4a1ac0af9f776587c06acf77
-ms.sourcegitcommit: 261b70ea358b2c231e20f320ed8bd6adc1e7d715
+ms.openlocfilehash: ab0c66ad0536b20b1ab23e9498ca3cb56b98ccf5
+ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "3386387"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3530259"
 ---
 # <a name="supply-chain-management-home-page"></a>Supply Chain Management kezdőlapja
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör a Dynamics 365 Supply Chain Management súgótémaköreinek és más erőforrásainak listáját tartalmazza. 
+Ez a témakör a Dynamics 365 Supply Chain Management súgótémaköreinek és más erőforrásainak listáját tartalmazza.
 
 ## <a name="whats-new-and-in-development"></a>Újdonságok és fejlesztés alatt levő megoldások
-A kiadott új funkciók és a kidolgozás alatt álló új szolgáltatások a <a href="https://roadmap.dynamics.com/">Dynamics 365 ütemterv</a> oldalon tekinthetők meg. 
+
+A kiadott új funkciók és a kidolgozás alatt álló új szolgáltatások a [Dynamics 365 ütemterv](https://roadmap.dynamics.com/) oldalon tekinthetők meg.
 
 ## <a name="core-concepts-and-tasks"></a>Alapvető fogalmak és feladatok
 
@@ -54,70 +55,58 @@ További információkért válasszon ki egy szolgáltatásterületet.
 
 ## <a name="dynamics-365-finance"></a>Dynamics 365 Finance
 
-A Dynamics 365 Finance szolgáltatással kapcsolatos további részletekért nyissa meg a [Pénzügyi gazdálkodás kezdőoldala](../finance/index.md) lapot.
+A Dynamics 365 Finance rendszerről a [Finance kezdőlap](../finance/index.md) tartalmaz információkat.
 
 ## <a name="videos"></a>Videók
 
-Ezek a rövid videók a Microsoft Dynamics 365 for Finance and Operations 8.0 verzióban (2018. április) található új funkciókról nyújtanak információt.
+Ez a rövid videó összefoglalja a Microsoft Dynamics 365 for Finance and Operations 8.0-ás verziójához (2018. április) hozzáadott új ellátásilánc-kezelési funkciókat.
 
 - [Munkarendelések szinkronizálása a Field Service és a Finance and Operations között](https://youtu.be/hAB4TDVMjxU)
 
-Ezek a rövid videók a Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 7.3 verzióban (2017. december) található új funkciókkal kapcsolatban nyújtanak információt.
+Ezek a rövid videók összefoglalják a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3-as verziójához (2017. december) hozzáadott új ellátásilánc-kezelési funkciókat.
 
--  [Potenciális ügyfelek készpénzre váltása – integráció](https://youtu.be/AVV9x5x-XCg) 
--  [Optimalizálási tanácsadó](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
--  [Konfiguráció másolása a raktársablon segítségével](https://www.youtube.com/watch?v=K2WIfFlqJYs&feature=youtu.be)
+- [Potenciális ügyfelek készpénzre váltása – integráció](https://youtu.be/AVV9x5x-XCg) 
+- [Optimalizálási tanácsadó](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
+- [Konfiguráció másolása a raktársablon segítségével](https://www.youtube.com/watch?v=K2WIfFlqJYs&feature=youtu.be)
 
-Ezek a rövid videók a Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition változatban (2017. július) található új funkciókkal kapcsolatban nyújtanak információt.
+Ezek a rövid videók összefoglalják a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition verzióhoz (2017. július) hozzáadott új ellátásilánc-kezelési funkciókat.
 
--  [Első lépések a költségkönyvelésben](https://youtu.be/1pUDtJQZ8FU)
--  [Költségellenőrzési mobil munkaterület](https://youtu.be/imsuTg8rUVk)
--  [Az Excel használata költségelemzéshez](https://youtu.be/-HKHYdClvx8)
--  [Beszerzési rendelések jóváhagyása mobileszközön](https://youtu.be/gZ-gOlJe7H8)
--  [Vizuális ütemezés a Gantt-diagrammal a termelési és kötegrendelésekhez](https://youtu.be/BtbuShkGj4I)
+- [Első lépések a költségkönyvelésben](https://youtu.be/1pUDtJQZ8FU)
+- [Költségellenőrzési mobil munkaterület](https://youtu.be/imsuTg8rUVk)
+- [Az Excel használata költségelemzéshez](https://youtu.be/-HKHYdClvx8)
+- [Beszerzési rendelések jóváhagyása mobileszközön](https://youtu.be/gZ-gOlJe7H8)
+- [Vizuális ütemezés a Gantt-diagrammal a termelési és kötegrendelésekhez](https://youtu.be/BtbuShkGj4I)
 
-Ezeknek a műszaki konferencián készült felvételeknek a legnagyobb része a Finance and Operations rendszer előző verziójának funkcióit tárgyalja, de ugyanazon fogalmak érvényesek továbbra is, és az eljárások is hasonlóak az aktuális verzióban. 
+A következő műszaki konferencián készült felvételek a Finance and Operations korábbi verzióinak ellátásilánc-kezelési funkcióira vonatkoznak. Ez a funkció most már a Dynamics 365 Supply Chain Management termék része; ugyanazok a fogalmak érvényesek, és az eljárások hasonlóak az aktuális verzióban.
 
-**Költségkezelés**
-
--  [Adminisztrációs költségek áttekintése](https://www.youtube.com/watch?v=vXzlC-mOBcg&feature=youtu.be)
-
-**Alaptervezés**
-
--  [Az igény-előrejelzési funkció kiterjesztése](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
--  [Alaptervezés – tippek és trükkök a hibajavítási teljesítményért](https://youtu.be/7v8BPmEs9Dg)
--  [Segítség! Lassú az MPR!](https://youtu.be/RLXybx20B5o)
-
-**Termékinformáció-kezelés**
-
--  [Termékkonfiguráló a Microsoft Dynamics AX szolgáltatásban](https://youtu.be/zotrj3SbCl4)
-
-**Raktárkezelés** 
-
-<!---  [Process inbound ASNs in Warehouse management](https://mix.office.com/watch/wpf78tr7rjuh)-->  
--  [Hozza ki a legtöbbet a raktárkezelési rendszeréből](https://www.youtube.com/watch?v=--_didmZKHo&t=10s)
--  [Fejlett R3 raktárkezelés – Bejövő feldolgozás és minimális/maximális feltöltés](https://www.youtube.com/watch?v=z5_V5Eqlf5M&t=48s)
--  [Fejlett R3 raktárkezelés – Egy szokásos nap, a kimenő feldolgozás és az igényfeltöltés](https://youtu.be/Og0gLlVp7jA)
--  [Címkék az új Microsoft Dynamics AX 2012 R3 raktárkezelési szolgáltatásban](https://youtu.be/5w1MngVchBA)
--  [Dynamics AX 2012 R3: Fejlett raktárkezelés – Egy nap a folyamatgyártásban](https://www.youtube.com/embed/QUxXUrN-7n4)
-
-**Gyártásvezérlés**
-
--  [Alvállalkozói műveletek és műveletek a gyártásban](https://youtu.be/y1jrd3A_k70)
-
-**Szállításkezelés**
-
--  [Szállításkezelés (TMS) az új Microsoft Dynamics AX szolgáltatásban](https://youtu.be/jgmTgJIgEFQ)
+- **Költségkezelés:**
+  - [Költségkezelés áttekintése](https://www.youtube.com/watch?v=vXzlC-mOBcg&feature=youtu.be)
+- **Alaptervezés:**
+  - [Az igény-előrejelzési funkció kiterjesztése](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
+  - [Alaptervezés – tippek és trükkök a hibajavítási teljesítményért](https://youtu.be/7v8BPmEs9Dg)
+  - [Segítség! Lassú az MRP!](https://youtu.be/RLXybx20B5o)
+- **Termékinformáció-kezelés:**
+  - [Termékkonfiguráló a Microsoft Dynamics AX szolgáltatásban](https://youtu.be/zotrj3SbCl4)
+- **Raktárkezelés:**
+  - [Hozza ki a legtöbbet a raktárkezelési rendszeréből](https://www.youtube.com/watch?v=--_didmZKHo&t=10s)
+  - [Fejlett R3 raktárkezelés – Bejövő feldolgozás és minimális/maximális feltöltés](https://www.youtube.com/watch?v=z5_V5Eqlf5M&t=48s)
+  - [Fejlett R3 raktárkezelés – Egy szokásos nap, a kimenő feldolgozás és az igényfeltöltés](https://youtu.be/Og0gLlVp7jA)
+  - [Címkék az új Microsoft Dynamics AX 2012 R3 raktárkezelési szolgáltatásban](https://youtu.be/5w1MngVchBA)
+  - [Dynamics AX 2012 R3: Fejlett raktárkezelés – Egy nap a folyamatgyártásban](https://www.youtube.com/embed/QUxXUrN-7n4)
+- **Gyártásvezérlési videók:**
+  - [Alvállalkozásba adási műveletek és műveletek a gyártásban](https://youtu.be/y1jrd3A_k70)
+- **Szállításkezelési videók:**
+  - [Szállításkezelés (TMS) az új Microsoft Dynamics AX szolgáltatásban](https://youtu.be/jgmTgJIgEFQ)
 
 ## <a name="blogs"></a>Blogok
-A <a href="https://blogs.msdn.microsoft.com/axmfg/">Dynamics AX Manufacturing kutatás-fejlesztési csapatának blogjában</a> és a <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/">Supply Chain Management in Dynamics AX kutatás-fejlesztési csapatának blogjában</a> több témakör is szól a gyártásról és az ellátásilánc-kezelésről. A bejegyezések legnagyobb része az előző verzióval kapcsolatban íródott, de ugyanazon fogalmak érvényesek továbbra is, és az eljárások is hasonlóak az aktuális verzióban. 
+
+A [Dynamics AX Manufacturing kutatás-fejlesztési csapatának blogjában](https://blogs.msdn.microsoft.com/axmfg/) és a [Supply Chain Management in Dynamics AX kutatás-fejlesztési csapatának blogjában](https://blogs.msdn.microsoft.com/dynamicsaxscm/) több témakör is szól a gyártásról és az ellátásilánc-kezelésről. A bejegyezések legnagyobb része az előző verzióval kapcsolatban íródott, de ugyanazon fogalmak érvényesek továbbra is, és az eljárások is hasonlóak az aktuális verzióban.
 
 ## <a name="white-papers"></a>Tanulmányok
--  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc/">Költségkönyvelési interaktív laboratórium</a> 
--  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/leanmanufkanban365opt/">Lean manufacturing: Ígérhető és kanbanfeladatok ütemezése</a> 
--  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet/">Darabjegyzék-számítás költségszámítási táblázat segítségével</a>
+
+- [Lean manufacturing: Ígérhető és kanbanfeladatok ütemezése](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/leanmanufkanban365opt/)
+- [Darabjegyzék-számítás költségszámítási táblázat segítségével](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet/)
 
 ## <a name="elearning-courses"></a>eLearning-tanfolyamok
-A Dynamics 365-képzésről a <a href="https://mbspartner.microsoft.com/AX/LearningPlans/"> Microsoft Dynamics Tanulási Portálon</a> talál további információt. (CustomerSource-fiók szükséges) 
 
-
+Az online tanfolyamokkal és tréningekkel kapcsolatban tekintse meg a következőt: [Dynamics 365 a Microsoft Learn szolgáltatásban](https://docs.microsoft.com/learn/dynamics365/).

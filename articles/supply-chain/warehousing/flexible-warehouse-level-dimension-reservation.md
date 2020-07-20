@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2020-01-15
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 6c462a87494c434a6047542d448a85b3bce9f769
-ms.sourcegitcommit: ffd845d4230646499b6f074cb43e69ab95787671
+ms.openlocfilehash: ec80346126713cc604b00e6ca7f6e8f4c242dc6f
+ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "3346468"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3530305"
 ---
 # <a name="flexible-warehouse-level-dimension-reservation-policy"></a>Rugalmas raktárszintű dimenziófoglalási irányelv
 
@@ -186,7 +186,7 @@ Ebben a példában a bemutatóadatokat kell telepíteni, és az **USMF** demó-a
 
     A **B11** kötegszámhoz tartozó menniységet (**10**) kitárolták az értékesítési rendelési sorra, és elhelyezték a **Baydoor** helyen. Ezen a ponton készen áll a teherautóra történő berakásra, és a vevő címére történő feladásra.
 
-## <a name="exception-handling-of-warehouse-work-thas-has-order-committed-batch-numbers"></a>A rendeléshez véglegesített kötegszámokkal rendelkezó raktári munka kivételkezelése
+## <a name="exception-handling-of-warehouse-work-that-has-order-committed-batch-numbers"></a>A rendeléshez véglegesített kötegszámokkal rendelkezó raktári munka kivételkezelése
 
 A rendeléshez véglegesített kötegszámokkal kitárolási raktári munkájának a kivételkezelése és műveletei ugyanazok, mint a normális munkának. Általában a nyitott munka vagy munkasor érvényteleníthető, megszakítható, mert egy felhasználói hely megtelt, a kitárolása lehet rövid, és egy mozgás miatt módosítható. Hasonlóképpen a már elvégzett munka kitárolt mennyisége is csökkenthető, illetve a munka visszafordítható.
 

@@ -3,7 +3,7 @@ title: Banki kivonatok egyeztetése továbbfejlesztett banki egyeztetés haszná
 description: A Továbbfejlesztett banki egyeztetés funkció lehetővé teszi Önnek az elektronikus banki kivonatok és az automatikus egyeztetés importálását a Microsoft Dynamics 365 Finance rendszer banki tranzakcióiba. Ez a témakör az egyeztetési folyamatot ismerteti.
 author: saraschi2
 manager: AnnBe
-ms.date: 01/11/2018
+ms.date: 06/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b37cf8d83c7134ae65da6a885bffeb01d16f9f06
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c13203217af1788fe3b8a6f9bbf805e03b650a0d
+ms.sourcegitcommit: 8a1621327568edf49758b70964e0a3e637527e1b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2178119"
+ms.lasthandoff: 06/22/2020
+ms.locfileid: "3497145"
 ---
 # <a name="reconcile-bank-statements-by-using-advanced-bank-reconciliation"></a>Banki kivonatok egyeztetése továbbfejlesztett banki egyeztetés használatával
 
@@ -41,9 +41,9 @@ Feltölthet olyan banki kivonatot, ami egy vagy több számla információt tart
 -   Egy banki kivonat egy számlához importálásához, állítsa be az **Kivonat importálása több bankszámláról az összes jogi személynél** lehetőséget **Nem** értékre, és válassza ki a kivonathoz tartozó bankszámlát. Kattintson a **Keresés** gombra, hogy kijelölje a kapcsolódó banki kivonat fájlt, majd kattintson a **Feltöltés** gombra.
 -   Egy banki kivonat fájl több fiókhoz importálásához, állítsa be a **Kivonat importálása több bankszámláról az összes jogi személynél** lehetőséget **Igen** értékre. Kattintson a **Keresés** gombra, hogy kijelölje a kapcsolódó banki kivonat fájlt, majd kattintson a **Feltöltés** gombra.
 
-Ha az elektronikus fájlban található bármelyik kivonatot nem lehet társítani egy bankszámlához az azonosító mezők használatával, akkor ez a kivonat nem lesz importálva. A fájlban található többi kimutatás importálása azonban megtörténik. A felhasználó ezután kap egy üzenetet, amely arról tájékoztatja, hogy a banki kivonatok importálása a meghatározott bankszámlák esetében sikertelen volt. Ne feledje, hogy a felhasználónak, aki a bankszámlakivonat-fájlt importálja, hozzáféréssel kell rendelkezni a jogi személyhez ahhoz, hogy importálni tudja a jogi személy bankszámlájához tartozó kivonatokat. 
+Ha az elektronikus fájlban található bármelyik kivonatot nem lehet társítani egy bankszámlához az azonosító mezők használatával, vagy több bankszámlához van társítva, akkor ez a kivonat nem lesz importálva. A fájlban található többi kimutatás importálása azonban megtörténik. A felhasználó ezután kap egy üzenetet, amely arról tájékoztatja, hogy a banki kivonatok importálása a meghatározott bankszámlák esetében sikertelen volt. Ne feledje, hogy a felhasználónak, aki a bankszámlakivonat-fájlt importálja, hozzáféréssel kell rendelkezni a jogi személyhez ahhoz, hogy importálni tudja a jogi személy bankszámlájához tartozó kivonatokat. 
 
-Egy zip-fájl segítségével egyetlen folyamatban több kivonatfájlt tölthet fel a Finance megoldásba. Több kivonat több bankszámlához importálásához, egyesítse az összes banki kivonat fájlt egy zip-fájlba. A **Banki kivonatok importálása** párbeszédpanelen, állítsa a **Kivonat importálása több bankszámláról az összes jogi személynél** lehetőséget **Igen** értékre. Kattintson a **Keresés** gombra, hogy kijelölje a zip fájl, ami a kapcsolódó banki kivonat fájlokat tartalmazza, majd kattintson a **Feltöltés** gombra. Az importálási folyamat felismeri a zip-fájlt, és feltölt minden kimutatást, amelyet tartalmaz, a bankszámla jogi személyétől függetlenül. 
+Egy zip-fájl segítségével egyetlen folyamatban több kivonatfájlt tölthet fel a Finance megoldásba. Több kivonat több bankszámlához importálásához, egyesítse az összes banki kivonat fájlt egy zip-fájlba. A **Banki kivonatok importálása** párbeszédpanelen, állítsa a **Kivonat importálása több bankszámláról az összes jogi személynél** lehetőséget **Igen** értékre. Kattintson a **Keresés** gombra, hogy kijelölje a zip fájl, ami a kapcsolódó banki kivonat fájlokat tartalmazza, majd kattintson a **Feltöltés** gombra. Az importálási folyamat felismeri a zip-fájlt, és feltölt minden kimutatást, amelyet tartalmaz, a bankszámla jogi személyétől függetlenül.
 
 Az **Egyeztetés importálás után** lehetőség elérhető. Ha ennek a lehetőségnek az értéke **Igen**, a rendszer automatikusan ellenőrzi a banki kivonatot, létrehoz egy új bank egyeztetést és egy munkalapot, majd futtatja a banki kivonat feltöltésekor Alapértelmezett egyeztetési szabálykészletet. Ez a funkció automatizálja a folyamatot addig a pontig, ahol már a tranzakciókat kézzel kell egymáshoz rendelni.
 

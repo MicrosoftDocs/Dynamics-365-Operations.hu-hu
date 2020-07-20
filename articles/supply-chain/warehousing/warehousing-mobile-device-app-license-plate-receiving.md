@@ -1,6 +1,6 @@
 ---
-title: Azonosítótábla-bevételezés a raktározás alkalmazás használatával
-description: Ez a témakör azt mutatja be, hogyan lehet beállítani a raktárkezelő mobilalkalmazást a tényleges készlet fogadására használt azonosítótábla-feldolgozási folyamathoz.
+title: Azonosítótábla-bevételezés a raktári alkalmazás használatával
+description: Ez a témakör azt mutatja be, hogyan lehet beállítani a raktári mobilalkalmazást a tényleges készlet fogadására használt azonosítótábla-feldolgozási folyamathoz.
 author: perlynne
 manager: tfehr
 ms.date: 04/29/2020
@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 82b4f40510d5bbf829508f17f1064886620a4aed
-ms.sourcegitcommit: a3cd2783ae120ac6681431c010b9b126a9ca7d94
+ms.openlocfilehash: 5330981bde98b80e81076a9b1416473135ebdac6
+ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "3410885"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3530190"
 ---
-# <a name="license-plate-receiving-via-the-warehousing-app"></a>Azonosítótábla-bevételezés a raktározás alkalmazás használatával
+# <a name="license-plate-receiving-via-the-warehouse-app"></a>Azonosítótábla-bevételezés a raktári alkalmazás használatával
 
-Ez a témakör azt mutatja be, hogyan lehet beállítani a raktárkezelő mobilalkalmazást a tényleges készlet fogadására használt azonosítótábla-feldolgozási folyamat támogatásához.
+Ez a témakör azt mutatja be, hogyan lehet beállítani a raktári mobilalkalmazást a tényleges készlet fogadására használt azonosítótábla-feldolgozási folyamat támogatásához.
 
 Ezen funkció segítségével gyorsan rögzítheti az előzetes kiszállítási értesítéshez (ASN) kapcsolódó bejövő készlet bevételezését. A rendszer automatikusan létrehoz egy ASN-t, amikor a raktárkezelési folyamatokat egy átmozgatási rendelés szállítására használják. A beszerzési rendelés folyamatahoz egy ASN manuálisan is rögzíthető, vagy automatikusan importálható a bejövő ASN adatentitás folyamata segítségével.
 

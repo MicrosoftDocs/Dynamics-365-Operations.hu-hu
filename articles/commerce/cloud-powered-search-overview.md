@@ -1,9 +1,9 @@
 ---
 title: Felhőalapú keresés – áttekintés
 description: Ez a témakör áttekintést nyújt a felhőalapú keresésről a Microsoft Dynamics 365 Commerce alkalmazásban.
-author: v-chgri
+author: ashishmsft
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 06/29/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 5501f4d39709990eb352511477b1427fb265afde
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: 00a3de2515cea341f7529b8cb6cb2caae5e33d22
+ms.sourcegitcommit: ce397c2759f642c595e30fef58a770b50360b2bd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057833"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3527443"
 ---
 # <a name="cloud-powered-search-overview"></a>Felhőalapú keresés – áttekintés
 
@@ -73,8 +73,12 @@ A következő ábra egy példát mutat be, ahol a modern automatikus javaslat va
 
 A Dynamics 365 Commerce továbbfejlesztett rendezésével a vevők rendezhetnek, kereshetnek és böngészhetnek a keresési találatok között, valamint finomíthatják azokat ár, terméknév és termékszám szerint. A vevők az eredményeket úgy is rendezhetik, hogy a termék új, a legnépszerűbb vagy újonnan hozzáadott-e.
 
+>[!NOTE]
+>Ezek a felhőalapú keresési funkciók a 10.0.8 verziótól érhetők el. Ellenőrizze, hogy a **Kereskedelmi paraméterek > Konfigurációs paraméterek** között van-e egy bejegyzés a következőhöz: „ProductSearch. UseAzureSearch 'igaz' értékre állítva”. 
+![A felhőalapú keresés konfigurációs paraméterei](./media/CloudPoweredSearchConfigurationParameters.png)
+
 ## <a name="additional-resources"></a>További erőforrások
 
-[Az alapértelmezett kategória-céloldal és keresési találatoldal](category-search-page-overview.md)
+[Alapértelmezett kategória-céloldal és keresési találatoldal áttekintése](category-search-page-overview.md)
 
 [SEO-metaadatok kezelése](manage-seo-metadata.md)
