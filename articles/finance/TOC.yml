@@ -34,7 +34,7 @@
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/notifications-service-updates.md?toc=/dynamics365/finance/toc.json
                 - name: Adatfeladat automatizálása
                   href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?toc=/dynamics365/finance/toc.json
-                - name: Egyverziós ISV-megoldások nyújtása
+                - name: ISV-megoldások nyújtása One Version használatával
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-isv.md?toc=/dynamics365/finance/toc.json
                 - name: Felhasználói tesztelés létrehozása és automatizálása
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md?toc=/dynamics365/finance/toc.json
@@ -2536,16 +2536,18 @@
                       href: localizations/rus-custom-declaration-number.md
                     - name: Készletköltség szerkezete
                       href: localizations/rus-inventory-cost-structure.md
-                    - name: Készlet-kiigazítás varázslója
+                    - name: Készlethelyesbítési varázsló
                       href: localizations/rus-inventory-adjustment-wizard.md
                     - name: Készletjelentések
                       href: localizations/rus-inventory-reports.md
-                    - name: Készletprofil áttekintése
-                      href: localizations/rus-inventory-profile-overview.md
-                    - name: Készletprofil beállítása
-                      hreF: localizations/rus-set-up-inventory-profile.md
-                    - name: Készletprofil használata dokumentumokban és lekérdezésekben
-                      href: localizations/rus-use-inventory-profile-documents-queries.md
+                    - name: Készletprofil
+                      items:
+                        - name: Készletprofil áttekintése
+                          href: localizations/rus-inventory-profile-overview.md
+                        - name: Készletprofil beállítása
+                          hreF: localizations/rus-set-up-inventory-profile.md
+                        - name: Készletprofil használata dokumentumokban és lekérdezésekben
+                          href: localizations/rus-use-inventory-profile-documents-queries.md
                 - name: Jelentéskészítés
                   items:
                     - name: Pénzügyi jelentéskészítés
@@ -3604,7 +3606,7 @@
               items:
                 - name: Számsorozatok áttekintése
                   href: ../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md?toc=/dynamics365/finance/toc.json
-                - name: Egyedi számsorozatok beállítása
+                - name: Számsorozatok beállítása egyedi alapon
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-individual-basis.md?toc=/dynamics365/finance/toc.json
                 - name: Számsorozatok beállítása a varázsló segítségével
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-wizard.md?toc=/dynamics365/finance/toc.json

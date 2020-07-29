@@ -1434,8 +1434,6 @@
               href: sysadmin/pre-configured-system-accounts.md
             - name: B2B-felhasználók exportálása az Azure AD szolgáltatásba
               href: sysadmin/implement-b2b.md
-            - name: Folyamatok automatizálása
-              href: sysadmin/process-automation.md
             - name: Biztonság
               items:
                 - name: Szerepköralapú biztonság
@@ -1458,10 +1456,16 @@
                   href: sysadmin/tasks/identify-resolve-conflicts-segregation-duties.md
                 - name: Felhasználók hozzárendelése biztonsági szerepkörökhöz
                   href: sysadmin/tasks/assign-users-security-roles.md
+                - name: Testreszabott biztonsági konfiguráció importálása vagy exportálása Adatkezelés használatával
+                  href: sysadmin/import-export-customized-security.md
                 - name: Biztonsági diagnosztika feladatrögzítésekhez
                   href: sysadmin/tasks/security-diagstics-task-recordings.md
+                - name: Bővíthető adatbiztonsági házirendek
+                  href: sysadmin/extensible-data-security-policies.md
+                - name: Biztonsági házirend létrehozása
+                  href: sysadmin/create-simple-security-policy.md
             - name: Folyamatok automatizálása
-              href: /sysadmin/process-automation.md
+              href: sysadmin/process-automation.md
             - name: Kötegelt feldolgozás
               items:
                 - name: Kötegelt feldolgozás áttekintése
@@ -1670,7 +1674,7 @@
                   href: user-interface/check-box-tree-controls.md
                 - name: Szűrési beállítások
                   href: user-interface/filtering.md
-                - name: PowerApps hosztkontroll
+                - name: Power Apps hosztkontroll
                   href: user-interface/powerapps-host-control.md
             - name: Ablakkezelés
               items:

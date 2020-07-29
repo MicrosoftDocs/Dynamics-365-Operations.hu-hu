@@ -34,7 +34,7 @@
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/notifications-service-updates.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Adatfeladat automatizálása
                   href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Egyverziós ISV-megoldások nyújtása
+                - name: ISV-megoldások nyújtása One Version használatával
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-isv.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Felhasználói tesztelés létrehozása és automatizálása
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md?toc=/dynamics365/supply-chain/toc.json
@@ -74,6 +74,8 @@
                       href: get-started/whats-new-scm-10-0-12.md
                     - name: Supply Chain Management 10.0.11 (2020. július)
                       href: get-started/whats-new-scm-10-0-11.md
+                    - name: Supply Chain Management 10.0.10 (2020. május)
+                      href: get-started/whats-new-scm-10-0-10.md
                 - name: Eltávolított vagy elavult funkciók
                   items:
                     - name: Eltávolított vagy elavult funkciók a Dynamics 365 Supply Chain Management szolgáltatásban
@@ -1351,10 +1353,12 @@
                   href: master-planning/planning-optimization/purchase-trade-agreement.md
                 - name: Tervelőzmények és tervezési naplók megtekintése
                   href: master-planning/planning-optimization/plan-history-logs.md
-                - name: Automatikus megerősítés a tervezési optimalizációval
+                - name: Automatikus megerősítés a tervezési optimalizálással
                   href: master-planning/planning-optimization/planning-optimization-auto-firming.md
                 - name: Tervezési feladat visszavonása
                   href: master-planning/planning-optimization/cancel-planning-job.md
+                - name: Tervezési optimalizálás – bővíthetőség
+                  href: master-planning/planning-optimization/extensibility.md
                 - name: Tervezési optimalizálás hibaelhárítása
                   href: master-planning/planning-optimization/planning-optimization-trouble-shooting.md
             - name: Alaptervek
@@ -1507,10 +1511,12 @@
               items:
                 - name: Számsorozatok áttekintése
                   href: ../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Egyedi számsorozatok beállítása
+                - name: Számsorozatok beállítása egyedi alapon
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-individual-basis.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Számsorozatok beállítása a varázsló segítségével
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-wizard.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Számsorozatok konfigurálása raktári folyamatokhoz
+                  href: warehousing/configure-number-sequence-extensions.md?toc=/dynamics365/supply-chain/toc.json
             - name: Szervezetek és szervezeti hierarchiák
               items:
                 - name: Szervezetek és szervezeti hierarchiák áttekintése
@@ -1817,9 +1823,13 @@
                       href: pim/tasks/obsolete-product-variants.md
                     - name: Termékek kizárása az Alaptervezésből
                       href: pim/tasks/exclude-products-master-planning.md
+                - name: Kettős felhasználású áruk
+                  href: pim/dual-use.md
+                - name: Származási ország
+                  href: pim/country-of-origin.md
                 - name: Vonalkód létrehozása termékhez
                   href: pim/tasks/create-bar-code-product.md
-                - name: Adja meg a GTIN-kódot a termékhez
+                - name: GTIN-kód megadása a termékhez
                   href: pim/tasks/enter-gtin-code-product.md
                 - name: Termék kötegattribútumainak létrehozása
                   href: pim/tasks/create-batch-attributes-product.md
@@ -2565,22 +2575,20 @@
               href: warehousing/warehouse-management-overview.md
             - name: Bejövő raktári műveletek
               items:
-                - name: A regisztráció és a betárolás bevételezési jegyei
-                  items:
-                    - name: Beszerzési rendelések bejövő rakományának kezelése a raktárban
-                      href: warehousing/inbound-load-handling.md
-                    - name: 'Cikkek regisztrálása speciális raktározásra engedélyezett cikkre, cikkérkeztetési napló használatával'
-                      href: warehousing/tasks/register-items-advanced-warehousing.md
-                    - name: 'Cikkek regisztrálása alapvető raktározásra engedélyezett cikkre, cikkérkeztetési napló használatával'
-                      href: warehousing/tasks/register-items-basic-warehousing.md
-                    - name: Termékek áttárolása a fogadó raktárból az üzletekbe
-                      href: warehousing/tasks/cross-dock-products-receiving-warehouse-stores.md
-                    - name: Helyutasítás beállítása beszerzési rendelés eltárolásához
-                      href: transportation/tasks/set-up-location-directive-purchase-order-put-away.md
-                    - name: Munkasablon beállítása beszerzési rendelésekhez
-                      href: warehousing/tasks/set-up-work-template-purchase-orders.md
-                    - name: Hely és termékdimenzió kombinálása
-                      href: warehousing/location-product-dimension-mixing.md
+                - name: Beszerzési rendelések bejövő rakományának kezelése a raktárban
+                  href: warehousing/inbound-load-handling.md
+                - name: 'Cikkek regisztrálása speciális raktározásra engedélyezett cikkre, cikkérkeztetési napló használatával'
+                  href: warehousing/tasks/register-items-advanced-warehousing.md
+                - name: 'Cikkek regisztrálása alapvető raktározásra engedélyezett cikkre, cikkérkeztetési napló használatával'
+                  href: warehousing/tasks/register-items-basic-warehousing.md
+                - name: Termékek áttárolása a fogadó raktárból az üzletekbe
+                  href: warehousing/tasks/cross-dock-products-receiving-warehouse-stores.md
+                - name: Helyutasítás beállítása beszerzési rendelés eltárolásához
+                  href: transportation/tasks/set-up-location-directive-purchase-order-put-away.md
+                - name: Munkasablon beállítása beszerzési rendelésekhez
+                  href: warehousing/tasks/set-up-work-template-purchase-orders.md
+                - name: Hely és termékdimenzió kombinálása
+                  href: warehousing/location-product-dimension-mixing.md
             - name: Kimenő raktári műveletek
               items:
                 - name: Foglalások a raktárkezelési modulban
@@ -2597,14 +2605,14 @@
                   items:
                     - name: Fürtkitárolás beállítása
                       href: warehousing/set-up-cluster-picking.md
+                    - name: Rendszer által irányított fürtkitárolás
+                      href: warehousing/system-directed-cluster-pick.md
                     - name: Tárolóra bontás beállítása
                       href: warehousing/tasks/set-up-containerization.md
                     - name: Köteg és azonosítótábla megerősítése
                       href: warehousing/batch-and-license-plate-confirmation.md
                     - name: Azonosítótábla-címke nyomtatásának engedélyezése
                       href: warehousing/tasks/license-plate-label-printing.md
-                    - name: Vonalkódok beolvasása a Dynamics 365 for Finance and Operations kamerája segítségével
-                      href: warehousing/scan-bar-codes-using-a-camera.md
                     - name: Darab kitárolásának megerősítése
                       href: warehousing/piece-picking-confirmation.md
                     - name: Csomagolóanyagok és díjak
@@ -2615,14 +2623,18 @@
                       href: warehousing/tasks/set-up-short-picking-item-reallocation.md
                     - name: A kivétel kezelésére vonatkozó raktári munka visszavonása
                       href: warehousing/cancel-warehouse-work.md
-                    - name: Rendszer által irányított fürtkitárolás
-                      href: warehousing/system-directed-cluster-pick.md
                     - name: Rendszer által irányított munka sorrendbe állítása
                       href: warehousing/system-directed-work-sequencing.md
                     - name: Kitárolási sor csoportosítása
                       href: warehousing/pick-line-grouping.md
                     - name: Raktári időközökre bontás
                       href: warehousing/warehouse-slotting.md
+                    - name: Helyutasítás – készletkitárolás korosítása
+                      href: warehousing/location-directive-inventory-picking-aging.md
+                    - name: Kimenő rendezés
+                      href: warehousing/outbound-sorting.md
+                    - name: Falhoz helyez – üzletbe helyez
+                      href: warehousing/put-to-wall-put-to-store.md
                 - name: Feltöltés
                   items:
                     - name: Feltöltés áttekintése
@@ -2645,6 +2657,8 @@
                       href: warehousing/release-to-warehouse-rule.md
                     - name: Hullámsablon csoportosítása
                       href: warehousing/wave-template-grouping.md
+                    - name: Hullámcímkék újranyomtatása és érvénytelenítése
+                      href: warehousing/reprint-and-void-wave-labels.md
                 - name: Szállítmánykonszolidációs irányelvek
                   items:
                     - name: Szállítmánykonszolidációs irányelvek
@@ -2715,6 +2729,10 @@
                       href: warehousing/work-line-details.md
                     - name: Hely és azonosítótábla pozicionálása
                       href: warehousing/location-license-plate-positioning.md
+                    - name: Munkagyűjtő módosítása a munkán
+                      href: warehousing/change-work-pool-on-work.md
+                    - name: Cikk-konszolidáció – hely kihasználtsága
+                      href: warehousing/item-consolidation-location-utilization.md
             - name: Raktár beállítása
               items:
                 - name: Raktár konfigurálása
@@ -2729,6 +2747,8 @@
                       href: warehousing/wave-step-codes.md
                     - name: A hullámfeldolgozás konfigurálása
                       href: warehousing/tasks/configure-wave-processing.md
+                    - name: Hullámcímke-nyomtatás beállítása és használata
+                      href: warehousing/configure-wave-label-printing.md
                     - name: Szállítmányok automatikus frissítése
                       href: warehousing/auto-update-shipment.md
                     - name: Helyprofil létrehozása
@@ -2753,8 +2773,6 @@
                       href: warehousing/system-group-on-open-work-list.md
                     - name: Dokumentumirányítási elrendezés azonosítótábla-címkékhez
                       href: warehousing/document-routing-layout-for-license-plates.md
-                    - name: Vonalkódok beolvasása a Dynamics 365 for Finance and Operations kamerája segítségével
-                      href: warehousing/scan-bar-codes-using-a-camera.md
                     - name: Mobil vonalkód-támogatás
                       href: warehousing/mobile-barcode-support.md
                     - name: Raktár beállítása átmozgatási rendelésekhez
@@ -2767,6 +2785,8 @@
                       href: warehousing/configure-app-field-names-priorities-warehouse.md
                     - name: Mobileszközök beállítása raktári munkához
                       href: warehousing/configure-mobile-devices-warehouse.md
+                    - name: Vonalkódok beolvasása a raktári alkalmazás kamerája segítségével
+                      href: warehousing/scan-bar-codes-using-a-camera.md
                     - name: Azonosítótábla-bevételezés a raktározási alkalmazás használatával
                       href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
                     - name: Mobileszköz-menüelem beállítása a beszerzési rendelés munkájának befejezéséhez

@@ -5,6 +5,8 @@
       items:
         - name: Új vagy módosult elemek a Human Resources szolgáltatásban
           href: hr-admin-whats-new.md
+        - name: 2020. július 8.
+          href: hr-whats-new-2020-07-08.md
         - name: 2020. június 25.
           href: hr-whats-new-2020-06-23.md
         - name: 2020. június 11.
@@ -233,7 +235,7 @@
               items:
                 - name: Számsorozatok áttekintése
                   href: ../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md?toc=/dynamics365/human-resources/toc.json
-                - name: Egyedi számsorozatok beállítása
+                - name: Számsorozatok beállítása egyedi alapon
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-individual-basis.md?toc=/dynamics365/human-resources/toc.json
                 - name: Számsorozatok beállítása a varázsló segítségével
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-wizard.md?toc=/dynamics365/human-resources/toc.json
@@ -577,5 +579,7 @@
           items:
             - name: Alkalmazotti és vezetői önkiszolgálás áttekintése
               href: hr-employee-manager-self-service-overview.md
+            - name: Alkalmazotti önkiszolgáló munkaterület nevének módosítása
+              href: hr-employee-self-service-workspace-name.md
             - name: Személyes információk szerkesztése
               href: hr-employee-manager-self-service-edit-personal-information.md
