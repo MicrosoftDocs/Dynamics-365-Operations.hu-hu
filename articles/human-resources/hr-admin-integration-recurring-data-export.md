@@ -41,7 +41,7 @@ A Microsoft Dynamics 365 integrációkkal kapcsolatos tipikus üzleti forgatók�
 Ez az oktatóanyag a következő technológiákat használja:
 
 - **[Dynamics 365 Human Resources](https://dynamics.microsoft.com/talent/overview/)** – Az exportálandó dolgozók alapadatforrása.
-- **[Azure Logic apps](https://azure.microsoft.com/services/logic-apps/)** – az ismétlődő export vezénylését és ütemezését biztosító technológia.
+- **[Azure Logic Apps](https://azure.microsoft.com/services/logic-apps/)** – az ismétlődő export vezénylését és ütemezését biztosító technológia.
 
     - **[Csatlakozók](https://docs.microsoft.com/azure/connectors/apis-list)** – a logikai alkalmazás a szükséges végpontokhoz való csatlakoztatásához használt technológia.
 
@@ -83,7 +83,7 @@ A feladat nagy része a logikai alkalmazás létrehozása lesz.
 
     ![Logikai alkalmazás létrehozása lap](media/integration-logic-app-creation-1.png)
 
-2. A logikaialkalmazás-tervező programban kezdje a munkát egy üres logikai alkalmazással.
+2. A Logic Apps Designer programban kezdje a munkát egy üres logikai alkalmazással.
 3. Adjon hozzá egy [Ismétlődésütemezési indítót](https://docs.microsoft.com/azure/connectors/connectors-native-recurrence) a logikai alkalmazás 24 óránként történő futtatásához (vagy az Ön által kiválasztott ütemezéshez).
 
     ![Ismétlődés párbeszédpanel](media/integration-logic-app-recurrence-step.png)
@@ -196,7 +196,7 @@ A logikai alkalmazás teszteléséhez válassza a **Futtatás** gombot a tervez�
 
 Ha bármilyen lépésnél hibát jelez, jelölje ki a sikertelen lépést a tervezőben, és vizsgálja meg a **Bemenetek** és **Kimenetek** mezőket. Hibakereséshez és a hibák javítása érdekében módosítsa a lépést.
 
-A következő ábra bemutatja, hogy néz ki a logikaialkalmazás-tervező, amikor a logikai alkalmazás minden lépését sikeresen futtatták.
+A következő ábra bemutatja, hogy néz ki a Logic Apps Designer, amikor a logikai alkalmazás minden lépését sikeresen futtatták.
 
 ![Sikeres futtatott logikai alkalmazás](media/integration-logic-app-successful-run.png)
 
