@@ -3,7 +3,7 @@ title: A juttatáskezelés paramétereinek beállítása
 description: A Juttatáskezelés paramétereinek konfigurálása a Microsoft Dynamics 365 Human Resources alkalmazásban.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/06/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3e001c08751ea9c8bcab0e11a04b6cf639e51d1d
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 85bbe5d3b422f2f29f1d1fe8ee269b407da691c2
+ms.sourcegitcommit: 9dc5c7dd5877cc6e7cd0059d173bcd8052ba13bc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3429987"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "3599356"
 ---
 # <a name="set-benefits-management-parameters"></a>Juttatáskezelés paramétereinek beállítása
 
@@ -31,7 +31,7 @@ Mielőtt beállítaná a szabadságterveket a Microsoft Dynamics 365 Human Resou
 
 ## <a name="configure-general-parameters"></a>Általános paraméterek konfigurálása
 
-1. A **Juttatások kezelése** munkaterület **Beállítás** részén válassza a **Paraméterek** elemet.
+1. A **Juttatások kezelése** munkaterület **Beállítás** részén válassza az **Emberi erőforrások megosztott paraméterei** elemet.
 
 2. Az **Általános** lapon adja meg a megfelelő értékeket a következő mezőkben:
 
@@ -43,8 +43,10 @@ Mielőtt beállítaná a szabadságterveket a Microsoft Dynamics 365 Human Resou
    | **Újranyitás okkódja** | Az alkalmazotti juttatási konstrukció újranyitása során használandó okkód. Egy párbeszédablakban jelenik meg az érvénytelenítési folyamat során. Ha szükséges, a felhasználók módosthatják az **Újranyitási okkód** részben. | 
    | **Életesemény okkódja** | A élettartam-esemény bekövetkezésekor használandó okkód. |
    | **Díjváltozás okkódja** | Az alkalmazotti juttatási konstrukciónak az árfolyam-módosítási frissítési folyamat során történő érvénytelenítése és újbóli megnyitása alkalmával használandó okkód. Azt jelzi, hogy az árfolyam-módosítási frissítési folyamat mely rekordokat módosította. |
+   | **Juttatások éves fizetése** | Lehetővé teszi az alkalmazottakra vonatkozó **Juttatások évi fizetési** összegének beállítását. Az emberi erőforrások a fix kompenzációs éves összeg helyett a fedezeti összegek meghatározásakor a **Juttatások évi fizetésének** összegét fogják használni. |
    | **Új dolgozó jogosult** | Megadja, hogy az új dolgozók jogosultak-e. |
-   | **Új dolgozó regisztrációs időszaka** | Az az időszak, amikor az új dolgozói regisztráció engedélyezve van.</br></br>**Megjegyzés**: Ez a beállítás felülbírál minden új dolgozói regisztrációs időszakot, amelyet a konstrukció jogosultsági szabályai között beállított. | 
+   | **Új dolgozó regisztrációs időszaka** | Az az időszak, amikor az új dolgozói regisztráció engedélyezve van.</br></br>**Megjegyzés**: Ez a beállítás felülbírál minden új dolgozói regisztrációs időszakot, amelyet a konstrukció jogosultsági szabályai között beállított. |
+   | **Alapértelmezett fizetési gyakoriság** | Az új dolgozók hozzáadásakor használt alapértelmezett fizetési gyakoriság. |
    | **Életesemények engedélyezve** | Élettartam-események engedélyezése. |
    | **Korábbi juttatási űrlapok elrejtése** | Lehetővé teszi a korábbi juttatási űrlapok elrejtését. |
 
@@ -52,7 +54,7 @@ Mielőtt beállítaná a szabadságterveket a Microsoft Dynamics 365 Human Resou
 
 ## <a name="configure-employee-self-service-parameters"></a>Alkalmazotti önkiszolgáló rendszer paramétereinek konfigurálása
 
-1. A **Juttatások kezelése** munkaterület **Beállítás** részén válassza a **Paraméterek** elemet.
+1. A **Juttatások kezelése** munkaterület **Beállítás** részén válassza az **Emberi erőforrások paraméterei** elemet.
 
 2. Az **Alkalmazotti önkiszolgáló rendszer** lapon adja meg a megfelelő értékeket a következő mezőkben:
 

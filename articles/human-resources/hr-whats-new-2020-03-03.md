@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4fdd409b33989e371d0bd2a6e21b27721336cea0
-ms.sourcegitcommit: 141e0239b6310ab4a6a775bc0997120c31634f79
+ms.openlocfilehash: d85ce8ccfcd7f1b975244cc2f65535101013ac89
+ms.sourcegitcommit: bd9ff0d28718d535356ffbe1cffaaf60310dd430
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3114427"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "3555291"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-march-3-2020"></a>Új vagy módosult elemek a Dynamics 365 Human Resources szolgáltatásban (2020. március 3.)
 
@@ -87,3 +87,10 @@ A következő előzetes funkciók érhetők el 2020. február 3-tól váltak el�
 - **Szabadság és távollét előzetes funkciói** – További tudnivalók: [Szabadság és távollét előzetes funkciói](hr-leave-and-absence-overview.md?leave-and-absence-preview-features).
 
 - **Juttatáskezelés előzetes funkciói** – További tudnivalók, beleértve az ismert problémákat: [Juttatáskezelés – áttekintése](hr-benefits-management-overview.md).
+
+## <a name="see-also"></a>Lásd még
+
+[Új vagy módosult elemek a Human Resources szolgáltatásban](hr-admin-whats-new.md)</br>
+[A Dynamics 365 Human Resources 2019 második kiadási hullámának áttekintése](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Rendelés frissítése](hr-admin-setup-update-process.md)</br>
+[Szolgáltatások kezelése](hr-admin-manage-features.md)

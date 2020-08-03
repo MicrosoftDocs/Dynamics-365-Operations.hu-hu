@@ -3,7 +3,7 @@ title: Igény-előrejelzés áttekintése
 description: Az igény-előrejelzés értékesítési rendelésekből származó független igények előrejelzésére, valamint a vevői rendelések bármely szétválasztási pontjára vonatkozó függő igények előrejelzésére használható. A továbbfejlesztett, igény-előrejelzést redukáló szabályok ideális megoldást kínálnak a tömeges egyéniesítéshez.
 author: roxanadiaconu
 manager: tfehr
-ms.date: 01/07/2020
+ms.date: 07/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: be60bb5c856020d76d185249fddf09493ea1d2ed
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 1033432d0d820516d8c9b2f58f27241351e7c64b
+ms.sourcegitcommit: 2e7454c07adfc05164121307050f6f24303d36d2
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3213883"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "3550040"
 ---
 # <a name="demand-forecasting-overview"></a>Igény-előrejelzés áttekintése
 
@@ -48,7 +48,7 @@ Az igény-előrejelzés legfontosabb funkciói közül néhány:
 Az igény-előrejelzés három fő téma szerint valósul meg:
 
 -   **Modularitás** – Az igény-előrejelzés moduláris és egyszerűen konfigurálható. A **Kereskedelem** &gt; **Készlet előrejelzése** &gt; **Igény-előrejelzés** pontban megtalálható konfigurációs kulcs megváltoztatásával a funkció be- és kikapcsolható.
--   **Microsoft-technológiák újrafelhasználása** – A Microsoft 2015 februárjában indította el a Machine Learning platformot. Az immár a Microsoft Cortana Analytics Suite programcsomag részét képező Machine Learning prediktív elemzőkísérletek (például igénybecslési kísérletek) gyors és egyszerű elkészítését teszi lehetővé, R vagy Python programnyelven írt algoritmusok és egy egyszerű, ikonok áthúzásával kezelhető felület használatával.
+-   **Microsoft-technológiák újrafelhasználása** – Az immár a Microsoft Cortana Analytics Suite programcsomag részét képező Machine Learning prediktív elemzőkísérletek (például igénybecslési kísérletek) gyors és egyszerű elkészítését teszi lehetővé, R vagy Python programnyelven írt algoritmusok és egy egyszerű, ikonok áthúzásával kezelhető felület használatával.
     -   Az Igény-előrejelzési kísérleteket letöltheti, saját üzleti igényeinek megfelelően testreszabhatja, webszolgáltatásként közzéteheti az Azure rendszeren és felhasználhatja őket igény-előrejelzések létrehozására. A kísérletek egy termeléstervező mint vállalati szintű felhasználó Supply Chain Management előfizetésének megvásárlása után tölthetőek le.
     -   A jelenleg elérhető igény-előrejelzési kísérletek bármelyikét letöltheti a [Cortana Analytics Gallery](https://gallery.cortanaanalytics.com/) oldalról. Míg az Igény-előrejelzés kísérletek a Supply Chain Management rendszerrel való integrációja automatikus, a [Cortana Analytics Gallery](https://gallery.cortanaanalytics.com/) gyűjteményből letöltött kísérletek integrálását a vevőknek és partnereknek kell kezelniük. Emiatt a [Cortana Analytics Gallery](https://gallery.cortanaanalytics.com/) oldalról származó kísérletek – a Finance and Operations Igény-előrejelzési kísérletekkel ellentétben – nem használhatóak fel közvetlenül. A Finance and Operations alkalmazásprogramozási felületének (API) megfelelően módosítania kell a kísérletek kódját.
     -   A Microsoft Azure Machine Learning Studio (klasszikus) rendszerében saját kísérleteket hozhat létre, ezeket szolgáltatásként közzéteheti az Azure rendszeren, és használatukkal igény-előrejelzéseket generálhat.
@@ -70,6 +70,16 @@ A Supply Chain Management segítségével megjelenítheti és módosíthatja a k
 
 ## <a name="limitations"></a>Korlátozások
 Az Igény-előrejelzés egy olyan eszköz, amely a gyártóiparban tevékenykedő vevők számára megkönnyíti az előrejelzési folyamatok létrehozását. Biztosítja az igény-előrejelzési megoldások alapvető funkcióit, és úgy lett tervezve, hogy egyszerűen kibővíthető legyen. Egyes iparágak (például kereskedelem, nagykereskedelem, raktározás, szállítás vagy más professzionális szolgáltatás) esetén az igény-előrejelzés nem feltétlenül a legmegfelelőbb választás.
+
+### <a name="demand-forecast-variant-conversion-limitation"></a>Igény-előrejelzés változatának átalakítási korlátozása
+
+A mértékegység (UOM) változatonkénti átalakítása nem teljesen támogatott igény-előrejelzés létrheozása során, ha a készlet mértékegysége eltér az igény-előrejelzés mértékegységétől.
+
+Az előrejelzés létrehozása ( **Készlet mértékegység > igény-előrejelzés mértékegysége**) a termék mértékegység-konverzióját használja. Amikor az igény-előrejelzési létrehozásának múltbeli adatait tölti be, akkor a rendszer mindig a termék szintjének mértékegység-konverziót használja, amikor a készlet mértékegységéről az igény-előrejelzés mértékegységére konvertál, még akkor is, ha a változat szintjén definiáltak konverziókat.
+
+Az előrejelzés engedélyezésének első része (**Igény-előrejelzés mértékegysége > készlet mértékegysége**) a termék mértékegység-konverzióját használja. Az előrejelzés engedélyezésének második része (**Készlet mértékegysége > értékesítés mértékegysége**) a változat mértékegység-konverzióját használja. Amikor a létrehozott igény-előrejelzés engedélyezve van, a készlet mértékegységéről az igény-előrejelzés mértékegységére való átváltást a termékszintű mértékegység-konverzió végrehajtásával történik. ugyanakkor a készletegység és az értékesítési mértékegység közti átváltás a változatszinten megadott konverziót veszi figyelembe.
+
+Ne feledje, hogy az igény-előrejelzés mértékegységének nem kell, hogy konkrét jelentése legyen. Meghatározható „Igény-előrejelzési egységként” is. Mindegyik terméknél meghatározhatja, hogy a készlet mértékegység konverziója 1:1 legyen a készlet mértékegységével.
 
 <a name="additional-resources"></a>További erőforrások
 --------

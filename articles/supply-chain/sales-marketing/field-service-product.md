@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 1efa4e403f5cf2cdc5fb797f05781f6d42245ed5
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: d96d1cd91bad4f950868074d9558cb403821d73f
+ms.sourcegitcommit: 137e2bd30f0a85bd2e1baf1cf16b993edd2094f9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3210016"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "3546362"
 ---
 # <a name="synchronize-products-in-supply-chain-management-to-products-in-field-service"></a>A Supply Chain Management-termékek közvetlen szinkronizálása a Field Service-termékekre
 
@@ -48,13 +48,13 @@ Ez a témakör csak a **Field Service termékek (Supply Chain Management – Fie
 
 A **Field Service termékek (Supply Chain Management – Field Service)** sablon tartalmaz egy leképezést, amely be része a **Termékek (Supply Chain Management – Sales) – Közvetlen** sablonnak. Ezt a leképezés biztosítja, hogy a szükséges Field Service-re jellemző mező, a **Szolgáltatás-terméktípus** megfelelően van beállítva.
 
-```Text
+```plaintext
 FIELDSERVICEPRODUCTTYPE        Fn        msdyn_fieldserciveproducttype
 ```
 
 A következő értékleképezés van használatban.
 
-```Text
+```plaintext
 inventory     :  690970000
 nonInventory  :  690970001 
 service       :  690970002 

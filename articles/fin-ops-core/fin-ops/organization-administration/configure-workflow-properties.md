@@ -3,7 +3,7 @@ title: Munkafolyamat-tulajdonságok konfigurálása
 description: Ez a témakör bemutatja, hogyan kell konfigurálni a munkafolyamat különböző tulajdonságait.
 author: sericks007
 manager: AnnBe
-ms.date: 04/01/2020
+ms.date: 07/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d745389b37b899760ea32ae75c5cb80d9139be2d
-ms.sourcegitcommit: 1852f08f015acd106f4cefd03fa07985dc009123
+ms.openlocfilehash: 268448049955170b8eb9e64cbd50416565a041b1
+ms.sourcegitcommit: 561d06c2a74602dfaa40334d8afac5053aebc055
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3199436"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "3541109"
 ---
 # <a name="configure-workflow-properties"></a>Munkafolyamat-tulajdonságok konfigurálása
 
@@ -91,12 +91,7 @@ A következő lépések segítségével megadhatja, hogy mikor szeretné haszná
 3. Kattintson a **Feltétel hozzáadása** parancsra.
 4. Feltétel megadása.
 5. Adja meg a további szükséges feltételeket.
-6. Ha ellenőrizni szeretné, hogy a megadott feltételek helyesen vannak-e beállítva, végezze el a következő lépéseket:
-
-    1. Kattintson a **Teszt** gombra.
-    2. A **Munkafolyamati feltétel tesztelése** oldalon, a **Feltétel érvényesítése** területen válasszon ki egy rekordot.
-    3. Kattintson a **Teszt** gombra. A rendszer értékeli a bejegyzést, annak érdekében, hogy meghatározza, hogy az megfeleljen-e a meghatározott feltételeknek. Ha például Spanyolországhoz egy beszerzési igénylési munkafolyamatot hoz létre az oldal **Feltétel érvényesítése** területe megjeleníti a beszerzési igénylések listáját. Ha a **Teszt** parancsra kattint, a rendszer kiértékeli a kijelölt beszerzési igénylést annak érdekében, hogy meghatározza, hogy az ország/terület ES vagy sem.
-    4. Kattintson az **OK** vagy a **Mégse** lehetőségre a **Tulajdonságok** lapra történő visszalépéshez.
+6. Futtassa végig a munkafolyamaton keresztül néhány célrekord használatával, és ellenőrizheti, hogy a feltétel helyesen szerepel-e, és ki vannak-e zárva a rekordok.
 
 ## <a name="specify-when-notifications-are-sent"></a>Az értesítések küldési idejének meghatározása
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2020-04-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 711cc4491024e647429b108438ce1d88483ea63c
-ms.sourcegitcommit: dbff1c6bb371a443a0cd2a310f5a48d5c21b08ca
+ms.openlocfilehash: 4f61283f3bab26f54d55ffe7cbea21b1201ed234
+ms.sourcegitcommit: bd9ff0d28718d535356ffbe1cffaaf60310dd430
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "3259817"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "3555147"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-april-13-2020"></a>Új vagy módosult elemek a Dynamics 365 Human Resources (2020. április 13.) szolgáltatásban
 
@@ -88,3 +88,10 @@ Ha egy, a SharePoint-ban tárolt dokumentum előnézete nem működik, próbálj
 3. A dokumentum előnézetének indításához nyisson meg egy mellékletet SharePoint-ban.
 
 4. Jelentkezzen be egy másik olyan felhasználói fiókkal, amely hozzáférhet a mellékletekhez, és ellenőrizze, hogy az előnézet a várt módon működik-e.
+
+## <a name="see-also"></a>Lásd még
+
+[Új vagy módosult elemek a Human Resources szolgáltatásban](hr-admin-whats-new.md)</br>
+[A Dynamics 365 Human Resources 2019 második kiadási hullámának áttekintése](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Rendelés frissítése](hr-admin-setup-update-process.md)</br>
+[Szolgáltatások kezelése](hr-admin-manage-features.md)

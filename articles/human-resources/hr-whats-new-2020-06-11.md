@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2020-06-11
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 39f18dc92fb01f9a0437f4166c0f08f8d6b1b81b
-ms.sourcegitcommit: 218e22014a964b8b52fc0152e355b07b0b84ae2c
+ms.openlocfilehash: cba6e48899ec39fc4de6656f8151a42b8aa43261
+ms.sourcegitcommit: bd9ff0d28718d535356ffbe1cffaaf60310dd430
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "3456620"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "3555195"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-june-11-2020"></a>A Dynamics 365 Human Resources új és módosult elemei (2020. június 11.)
 
@@ -95,3 +95,10 @@ A mezőket a személyre szabás segítségével kötelezővé tehet mezőket. Ez
 ## <a name="configure-the-name-of-employee-self-service"></a>Alkalmazotti önkiszolgáló rendszer nevének konfigurálása
 
 A Humánerőforrás-paraméterek között egy új beállítás érhető el, ahol az Alkalmazotti önkiszolgáló rendszer munkaterület neve Önkiszolgáló rendszerre frissíthető. 
+
+## <a name="see-also"></a>Lásd még
+
+[Új vagy módosult elemek a Human Resources szolgáltatásban](hr-admin-whats-new.md)</br>
+[A Dynamics 365 Human Resources 2019 második kiadási hullámának áttekintése](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Rendelés frissítése](hr-admin-setup-update-process.md)</br>
+[Szolgáltatások kezelése](hr-admin-manage-features.md)

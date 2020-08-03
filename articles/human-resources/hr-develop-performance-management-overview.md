@@ -3,7 +3,7 @@ title: Teljesítménykezelés
 description: A teljesítménykezelési folyamat lehetővé teszi, hogy az alkalmazottak dokumentálhassák és vezetőjükkel megbeszélhessék teljesítményüket. Továbbá a vezetők később visszajelzést és útmutatást nyújthatnak az alkalmazottaknak.
 author: andreabichsel
 manager: AnnBe
-ms.date: 12/11/2019
+ms.date: 07/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-human-resources
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 6147b5d92381d76c572f8a10e52c9ed00225e7eb
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 4786717826592973d3b049c4aa5ca615332d5bc6
+ms.sourcegitcommit: 98cfbb42fc556e1afcb2fab50d8dff0ae2b7aa67
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3430440"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "3609772"
 ---
 # <a name="performance-management"></a>Teljesítménykezelés
 
@@ -145,7 +145,7 @@ A mértékek oldala lehetővé teszi azoknak a normál mértékeknek a létrehoz
 
 ### <a name="performance-journal-source-types"></a>Teljesítménynapló forrástípusok
 
-A teljesítménynapló forrástípusai leírják, hogy honnan származnak a teljesítménynaplók. Megtekintheti, hogy egy naplótétel alapértelmezés szerint csak a vezető által, csak az alkalmazott által vagy mind a vezető, mind az alkalmazott által tekinthető-e meg. Emellett engedélyezheti vagy letilthatja a Pozitív visszajelzés küldése funkciót a Dicséret forrástípus módosításával. Ezen a ponton a többi forrástípus nem tiltható le.
+A teljesítménynapló forrástípusai leírják, hogy honnan származnak a teljesítménynaplók. Megtekintheti, hogy egy naplótétel alapértelmezés szerint csak a vezető által, csak az alkalmazott által vagy mind a vezető, mind az alkalmazott által tekinthető-e meg. Ezen a ponton a forrástípusok nem tilthatók le.
 
 ### <a name="review-types"></a>Ellenőrzési típusok
 

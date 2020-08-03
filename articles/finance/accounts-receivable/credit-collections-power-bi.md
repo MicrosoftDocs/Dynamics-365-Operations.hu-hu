@@ -3,7 +3,7 @@ title: Követelések és beszedések kezelése Power BI tartalom
 description: Ez a témakör a Követelések és beszedések kezelése Power BI-tartalom modul tartalmát ismerteti. Leírja, hogy hogyan kell hozzáférni a Power BI-jelentésekhez, és információkat nyújt a tartalomcsomag összeállításához korábban használt entitásokkal és adatmodellekkel kapcsolatban.
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 04/21/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 5c4a2289d7fa0f062735c93cf26cba9ac29ab94e
-ms.sourcegitcommit: e9fadf6f6dafdcefaff8e23eaa3c85f53437db3f
+ms.openlocfilehash: 03face220fd63962f645b4fe91f20aec2f19b1ef
+ms.sourcegitcommit: 14b554b43b9d86152ef27fdde6141589bcaf1161
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "3278874"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "3598058"
 ---
 # <a name="credit-and-collections-management-power-bi-content"></a>Követelések és beszedések kezelése Power BI tartalom
 
@@ -47,9 +47,10 @@ Alapértelmezés szerint a jelenlegi vállalat követeléseinek és beszedésein
 A következő beállításokat meg kell adni, hogy az adatok megjelenjenek a **Vevői követelések és beszedések** között, a Power BI vizuális elemei között.
 
 1. Nyissa meg a **Rendszeradminisztráció > Beállítás > Rendszerparaméterek** pontot a **Rendszerpénznem** és a **Rendszerváltási árfolyam** beállításához.
-2. Ugrás a **Főkönyv > Beállítás > Főkönyv** részre, és a **Könyvelési pénznem** és az **Árfolyamtípus** beállítása.
-3. Adja meg az árfolyamokat a tranzakció pénznemei és a könyvelési pénznem, a könyvelési pénznem és a rendszer pénzneme között. Lépjen ide: **Főkönyv > Pénznemek > Pénznemek árfolyamtípusai**.
-4. Lépjen a **Rendszerfelügyelet > Beállítás > Entitástár** részre a **CustCollectionsBIMeasurementsV2** összesítő mérték frissítéséhez.
+2. Lépjen a **Főkönyv > Naptárak > Pénzügyi naptárak** részre, hogy ellenőrizze az aktív időszakhoz hozzárendelt pénzügyi naptár dátumait.
+3. Ugrás a **Főkönyv > Beállítás > Főkönyv** részre, és a **Könyvelési pénznem** és az **Árfolyamtípus** beállítása.
+4. Adja meg az árfolyamokat a tranzakció pénznemei és a könyvelési pénznem, a könyvelési pénznem és a rendszer pénzneme között. Lépjen ide: **Főkönyv > Pénznemek > Pénznemek árfolyamtípusai**.
+5. Lépjen a **Rendszerfelügyelet > Beállítás > Entitástár** részre a **CustCollectionsBIMeasurementsV2** összesítő mérték frissítéséhez.
 
 ## <a name="accessing-the-power-bi-content"></a>A Power BI tartalom elérése
 

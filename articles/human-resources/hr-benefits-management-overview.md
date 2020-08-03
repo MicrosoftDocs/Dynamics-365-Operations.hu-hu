@@ -3,7 +3,7 @@ title: Juttatáskezelés áttekintése
 description: A juttatáskezelés funkció áttekintése a Dynamics 365 Human Resources alkalmazásban. Az alkalmazottak számára kiterjesztett juttatási lehetőségeket kínálhat könnyen használható online felületen.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/06/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4157cb1f83d686d435f3d04e47c578df455376c9
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 1043fb18c33e5ec0cde13008b168fd317c7c7be6
+ms.sourcegitcommit: 9dc5c7dd5877cc6e7cd0059d173bcd8052ba13bc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3429262"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "3599380"
 ---
 # <a name="benefits-management-overview"></a>Juttatáskezelés – áttekintés
 
@@ -59,6 +59,8 @@ A cikk azt írja le, hogyan lehet bekapcsolni funkciókat a Human Resources szol
 ## <a name="configure-employee-information"></a>Alkalmazottak adatainak konfigurálása
 
 Ahhoz, hogy az alkalmazottakat juttatásokhoz lehessen regisztrálni, meg kell adnia a szükséges adatokat. A **Fix kompenzációs konstrukcióban** egy alkalmazottat be kell regisztrálni a kezdő dátumra, és ki kell választania egy **Juttatásfizetési gyakoriságot** a **Foglalkoztatás részletei** részben a **Dolgozó** képernyőn.
+
+Ha van olyan alkalmazottja, aki kiegészítő kompenzációt kap, mint a jutalékok, akkor az alkalmazotti rekordból származó **Juttatások évi fizetése** összegét veheti fel. Az emberi erőforrások a fix kompenzációs éves összeg helyett a fedezeti összegek meghatározásakor a **Juttatások évi fizetésének** összegét fogják használni. A **juttatások évi fizetésének** érvényesnek kell lennie az alkalmazott kezdő dátumától vagy a juttatási időszak kezdetével, amelyik a legújabb. Ha egy alkalmazottnál egy fix kompenzációs és juttatás éves fizetési összege is rögzítve van, akkor a juttatások évi fizetését használják a fedezeti összegek meghatározására.
 
 Ha olyan juttatási tervet hoz létre, amely nemen vagy életkoron alapuló arányokat használ, akkor meg kell adnia a születési dátumot és a nemet az alkalmazott számára a juttatási költség kiszámításához.
 

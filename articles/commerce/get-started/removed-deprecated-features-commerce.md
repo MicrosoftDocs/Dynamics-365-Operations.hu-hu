@@ -3,7 +3,7 @@ title: Eltávolított vagy elavult funkciók a Dynamics 365 Commerce szolgáltat
 description: Ez a témakör azokat a funkciókat ismerteti, amelyek el lettek távolítva, vagy eltávolításuk be van tervezve a Dynamics 365 Commerce alkalmazásban.
 author: josaw
 manager: AnnBe
-ms.date: 06/10/2020
+ms.date: 07/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 64241ef1c25359c7b3b305c4e8f2b24de7e8f5e4
-ms.sourcegitcommit: cf709f1421a0bf66ecea493088ecb4eb08004187
+ms.openlocfilehash: aa18e7446a72a907fcad70f92ea529088b6cecbd
+ms.sourcegitcommit: 83c7e5ab54c1cad2e21e33769cc524cfa4213f58
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "3443918"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "3539879"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-commerce"></a>Eltávolított vagy elavult funkciók a Dynamics 365 Commerce szolgáltatásban
 
@@ -41,8 +41,35 @@ Ez a lista segít figyelembe venni az elavult és eltávolított szolgáltatáso
 |   |  |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | Az adatművelet-horgok funkció a teljesítménnyel kapcsolatos problémák miatt elavult. |
-| **Felváltotta másik szolgáltatás?**   | Javasolt ehelyett az [adatművelet felülbírálások](../e-commerce-extensibility/data-action-overrides.md) használata az üzleti logika módosításához az adatműveleti rétegben.|
-| **Érintett területek**         | E-kereskedelmi bővíthetőségi adatműveletek |
+| **Felváltotta másik szolgáltatás?**   | Javasolt az [adatművelet felülbírálások](../e-commerce-extensibility/data-action-overrides.md) használata az üzleti logika módosításához az adatműveleti rétegben.|
+| **Érintett területek**         | e-kereskedelmi bővíthetőségi adatműveletek |
+| **Telepítési beállítás**              | Összes |
+| **Állapot**                         | Elavult a 10.0.11 kiadás óta |
+
+### <a name="retail-sdk-support-for-visual-studio-2015-msbuild-140-and-retail-sdkreference-libraries-and-tools"></a>Retail SDK-támogatás Visual Studio 2015-höz, msbuild 14.0 és Retail SDK\Reference könyvtárakhoz és eszközökhöz
+|   |  |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | A Visual Studio 2015 kiskereskedelmi SDK-támogatás elavult és frissítve lett 2017, msbuild 15.0 támogatásához és az összes hivatkozási függvénytár és kiskereskedelmi proxy-generator eszköz a RetailSDK\References mappából át lett helyezve, és így NuGet-csomagokba, így egyszerűbbé válik a bővítési modell és az SDK frissítési folyamata.|
+| **Felváltotta másik szolgáltatás?**   | Javasoljuk, hogy kövesse [A Retail szoftverfejlesztői készlet (SDK) áttelepítése a Visual Studio 2015 szolgáltatásból a Visual Studio 2017 szolgáltatásba](../dev-itpro/retail-sdk/migrate-sdk.md) információit a rendszere frissítéséhez. |
+| **Érintett területek**         | Kiskereskedelmi SDK-bővítmények |
+| **Telepítési beállítás**              | Összes |
+| **Állapot**                         | Elavult a 10.0.11 kiadás óta |
+
+### <a name="retail-server-extension-using-iedmmodelextender-and-commercecontroller"></a>Retail Server Extension IEdmModelExtender és CommerceController használatával
+|   |  |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | A Retail Server Extension az IEdmModelExtender és a CommerceController használatával elavult egyszerűbb bővítési modell érdekében. Az új implementációnak csak vezérlőosztálya lesz további IEdmModelExtender-osztályvégrehajtás nélkül. Ezzel elkerülhető a függőség egy adott OData-verzióval (ha a OData verzió frissül, akkor a bővítmények meghibásodhatnak.) |
+| **Felváltotta másik szolgáltatás?**   |  Javasoljuk, hogy a IController Class Extension modellt használja a NuGet (Microsoft.Dynamics.Commerce.Hosting.Contracts) csomag importálásával. |
+| **Érintett területek**         | Retail-kiszolgáló bővítményei |
+| **Telepítési beállítás**              | Összes |
+| **Állapot**                         | Elavult a 10.0.11 kiadás óta |
+
+### <a name="hardware-station-extension-using-ihardwarestationcontroller"></a>Hardverállomás-bővítmény az IHardwareStationController használatával
+|   |  |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | A hardverállomás-bővítmény az IHardwareStationController használatával elavult a leegyszerűsített bővítménymodell alkalmazása érdekében. Az új implementáció csak a IController osztályt fogja tartalmazni a további osztályimplementáció nélkül, és a függőség elkerüléséhez az alapszintű hardverállomás-könyvtárakkal, a korábbi bővítmények több könyvtárra kell utalnia.) |
+| **Felváltotta másik szolgáltatás?**   | Javasoljuk, hogy a IController Class Extension modellt használja a NuGet (Microsoft.Dynamics.Commerce.Hosting.Contracts) csomag importálásával. |
+| **Érintett területek**         | Hardverállomás bővítményei |
 | **Telepítési beállítás**              | Összes |
 | **Állapot**                         | Elavult a 10.0.11 kiadás óta |
 

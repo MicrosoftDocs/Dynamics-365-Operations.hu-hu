@@ -19,12 +19,12 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2a6d792a0e52d2b82b25de461dcec358fdc8f439
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: f2422dcec1fb222f1be7162d7c799a13046329b4
+ms.sourcegitcommit: f0faa2929435cd1408c5925f0ee4d6636fec5da1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3211077"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "3552917"
 ---
 # <a name="routes-and-operations"></a>Útvonalak és műveletek
 
@@ -225,7 +225,7 @@ Ez a módszer használata esetén a **műveleti kapcsolatok** oldal lesz az els�
 Ha nem ad meg üzemi erőforrást vagy erőforráscsoportot egy művelet erőforrásigényének részeként, az alkalmazott erőforrások különböző sebességgel működhetnek. Emiatt az egy-egy művelet feldolgozásához szükséges idő változó lehet. A probléma megoldásához használhatja a műveleti kapcsolat **Képlet** mezőjét, ahol megadhatja a feldolgozási idő kiszámításának módját. Az alábbi lehetőségek közül választhat:
 
 -   **Szabványos** – (Alapértelmezett beállítás) A számítás csak a műveleti kapcsolat mezőit használja, és megszorozza a megadott futási időt a rendelés mennyiségével.
--   **Kapacitás** – A számítás magába foglalja a **Kapacitás** mezőt az üzemi erőforrásból. Ezért az idő erőforrásfüggő. Az üzemi erőforrásnál megadott érték óránkénti kapacitás. Az értéket megszorozza a rendszer a műveleti kapcsolat rendelt mennyiségével és **Tényező** értékével.
+-   **Kapacitás** – A számítás magába foglalja a **Kapacitás** mezőt az üzemi erőforrásból. Ezért az idő erőforrásfüggő. Az üzemi erőforrásnál megadott érték óránkénti kapacitás. A **Feldolgozási időt** úgy számítja ki a rendszer, hogy a **Rendelési mennyiséget** a **Kapacitással** elosztja.
 -   **Köteg** – A kötegkapacitás kiszámítása a műveleti kapcsolat adatainak felhasználásával történik. Ezt követően a rendelt mennyiség alapján kiszámítható a kötegek száma, és így a feldolgozási idő is.
 -   **Erőforrásköteg** – Ez a lehetőség gyakorlatilag megegyezik a **Köteg** beállítással. A számítás azonban magába foglalja a **Kötegkapacitás** mezőt a műveletek erőforrás mezőből. Ezért az idő erőforrásfüggő.
 

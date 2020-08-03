@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: af983b30530a7f5d0a82f98deeb12180c42d86cd
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 487188531434e65908fbf5fe9dac89bfba8b6a47
+ms.sourcegitcommit: 96ec8b7252296de0049bff406c743f8da9e0f0be
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3215815"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "3606845"
 ---
 # <a name="create-delivery-schedule"></a>Szállítási ütemezés létrehozása
 
@@ -65,4 +65,3 @@ Ez az eljárás bemutatja, hogyan hozhatja létre az értékesítési rendelése
 22. Kattintson az OK gombra.
 23. Kattintson az Igen gombra.
 24. Zárja be a lapot.
-

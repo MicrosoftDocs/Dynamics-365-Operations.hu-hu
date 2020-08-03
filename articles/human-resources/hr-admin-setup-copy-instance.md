@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e8385b7dfcd1d7294542c7f54f609b26b7988ac4
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: b14baf49517f5d606038af20366944788b22eba2
+ms.sourcegitcommit: 1ec931f8fe86bde27f6def36ea214a2a05fb22f6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3431245"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "3554325"
 ---
 # <a name="copy-an-instance"></a>Példány másolása
 
@@ -68,11 +68,11 @@ A feladat végrehajtásához először másolja a példányt, majd jelentkezzen 
 
 4. A **Példány másolása** munkaablakban válassza ki azt a példányt, amelyet felül szeretne írni, majd válassza a **Másolás** parancsot. Várjon, amíg a **Másolás állapota** mező értéke **Kész** értékre módosul.
 
-   ![[Az felülírandó példány kiválasztása](./media/copy-instance-select-target-instance.png)](./media/copy-instance-select-target-instance.png)
+   ![[Felülírandó példány kiválasztása](./media/copy-instance-select-target-instance.png)](./media/copy-instance-select-target-instance.png)
 
 5. Válassza ki a **Power Platform** lehetőséget, majd jelentkezzen be a Microsoft Power Platform Admin Centerbe.
 
-   ![[Power Platform kiválasztása](./media/copy-instance-select-power-platform.png)](./media/copy-instance-select-power-platform.png)
+   ![[Válassza a Power Platform lehetőséget](./media/copy-instance-select-power-platform.png)](./media/copy-instance-select-power-platform.png)
 
 6. Válassza ki a másolni kívánt PowerApps-környezetet, majd válassza a **Másolás** parancsot.
 
@@ -108,6 +108,6 @@ Ezenkívül a következő állapotok módosulnak egy példány másolásakor:
 
 ## <a name="environment-admin"></a>Környezeti adminisztrátor
 
-A cél védőfalkörnyezetében található összes felhasználót, többek között a rendszergazdákat is, felváltották a forráskörnyezet felhasználói. Egy példány másolása előtt győződjön meg arról, hogy Ön a célkörnyezet rendszergazdája. Ha nem, akkor nem tud bejelentkezni a cél védőfalkörnyezetébe a másolás befejezése után.
+A cél védőfalkörnyezetében található összes felhasználót, többek között a rendszergazdákat is, felváltották a forráskörnyezet felhasználói. Egy példány másolása előtt győződjön meg arról, hogy Ön a forráskörnyezet rendszergazdája. Ha nem, akkor nem tud bejelentkezni a cél védőfalkörnyezetébe a másolás befejezése után.
 
 A cél-védőfalkörnyezet minden nem rendszergazdai felhasználója le van tiltva, megakadályozva a nem kívánt bejelentkezéseket a védőfalkörnyezetben. Ha szükséges, a rendszergazdák újra engedélyezhetik a felhasználókat.

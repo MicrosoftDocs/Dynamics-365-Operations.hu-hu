@@ -1,9 +1,9 @@
 ---
-title: Dynamics 365 Commerce előzetes verziós környezet áttekintése
-description: Ez a témakör áttekintést nyújt a Microsoft Dynamics 365 Commerce előzetes verziós alkalmazásról.
+title: Dynamics 365 Commerce értékelési környezet áttekintése
+description: Ez a témakör áttekintést nyújt a Microsoft Dynamics 365 Commerce értékelési környezetről.
 author: v-chgri
 manager: annbe
-ms.date: 12/10/2019
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,45 +17,50 @@ ms.search.region: Global
 ms.author: v-chgri
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 1ff96aeb5963df9ddee56783a089dad129bbb71c
-ms.sourcegitcommit: 4ed1d8ad8a0206a4172dbb41cc43f7d95073059c
+ms.openlocfilehash: 25c0574e8d4502bcb846fba0ddf913d81eded87b
+ms.sourcegitcommit: 5175e3fae432016246244cf70fe05465f43de88c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3024683"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "3599757"
 ---
-# <a name="dynamics-365-commerce-preview-environment-overview"></a>Dynamics 365 Commerce előzetes verziós környezet áttekintése
-
+# <a name="dynamics-365-commerce-evaluation-environment-overview"></a>Dynamics 365 Commerce értékelési környezet áttekintése
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör áttekintést nyújt a Microsoft Dynamics 365 Commerce előzetes verziós alkalmazásról.
+Ez a témakör áttekintést nyújt a Microsoft Dynamics 365 Commerce értékelési környezetről.
+
+> [!NOTE]
+> A Commerce értékelési környezetek általában nem állnak rendelkezésre, és a partnerek és a vevők számára a kérelem alapján biztosítják. További információért lépjen kapcsolatba Microsoft-partnerének kapcsolattartójával.
 
 ## <a name="overview"></a>Áttekintés
 
-A Commerce előzetes verziós környezet egy opcionális, átfogó előzetes verziós környezete a Dynamics 365 Commerce alkalmazásnak, amely lehetővé teszi a potenciális vásárlók számára a Commerce termék kipróbálását, mielőtt a nyilvánosság számára megjelenne.
+A Commerce értékelési környezet egy opcionális, átfogó előzetes verziós környezete a Dynamics 365 Commerce alkalmazásnak, amely lehetővé teszi a partnerek és potenciális vásárlók számára a Commerce termék kipróbálását.
 
-Eltekintve néhány kisebb korlátozástól, amelyek nem befolyásolják a funkciókat és a működést, a Commerce előzetes verziós környezet biztosítja a teljes Commerce-élményt, és az ügyfelek és a megvalósító partnerek felhasználhatják a termék értékeléséhez, visszajelzéshez és illeszkedés-/hiányelemzés elvégzéséhez.
+Az értékelési környezetek részben előre be vannak állítva, hogy csökkentsék a szükséges kiépítés utáni lépéseket.
 
-## <a name="limitations-of-the-commerce-preview-environment"></a>A Commerce előzetes verziós környezet korlátozásai
+Eltekintve néhány kisebb korlátozástól, amelyek nem befolyásolják a funkciókat és a működést, a Commerce értékelési környezet biztosítja a teljes Commerce-élményt, és az ügyfelek és a megvalósító partnerek felhasználhatják a termék értékeléséhez, visszajelzéshez és illeszkedés-/hiányelemzés elvégzéséhez.
 
-Bár a Commerce előzetes verziós környezet teljes körű Commerce szolgáltatásokat és funkciókat kínál, néhány kisebb korlátozást van érvényben:
+## <a name="limitations-of-the-commerce-evaluation-environment"></a>A Commerce értékelési környezet korlátozásai
 
-- Bár a Commerce előzetes verziós környezet önmagában nem rendelkezik földrajzi korlátokkal, a környezet összetevői, például a Retail Cloud Scale Unit (RCSU) és az e-Commerce alkalmazások csak az Egyesült Államokban létesíthetők.
-- A Commerce előzetes verziós környezet használata 30 napra korlátozódik az e-Commerce létesítésének napjától számítva.
-- A Commerce előzetes verziós környezet csak olyan környezetben telepíthető és inicializálható, amely a demo topológiát használja, ahol a környezet minden összetevője egyetlen virtuális gépen (VM) van telepítve. Ennek a OneBox VM topológiának a fő korlátja a párhuzamos felhasználók száma, amit az előnézeti környezet támogatni tud.
-- A Commerce előzetes verziós környezet csak a Commerce termék általános elérhetőségéig (GA) értékelhető. A GA után új demo környezetek lesznek elérhetők.
+Bár a Commerce értékelési környezet teljes körű Commerce szolgáltatásokat és funkciókat kínál, néhány kisebb korlátozást van érvényben:
+
+- Bár a Commerce értékelési környezet önmagában nem rendelkezik földrajzi korlátokkal, a környezet összetevői, például a Retail Cloud Scale Unit (RCSU) és az e-Commerce alkalmazások csak az Egyesült Államokban létesíthetők.
+- A Commerce értékelési környezet használata 30 napra korlátozódik az e-Commerce létesítésének napjától számítva.
+- A Commerce értékelési környezet csak olyan környezetben telepíthető és inicializálható, amely a demó topológiát használja, ahol a környezet minden összetevője egyetlen, felhőben szolgáltatott virtuális gépen (VM) van telepítve. Ennek a topológiának a fő korlátja a párhuzamos felhasználók száma, amit a környezet támogatni tud.
 
 ## <a name="get-started"></a>Első lépések
 
-A Commerce előzetes verziós környezet létesítéséhez lásd: [Commerce előzetes verziós környezet kiépítése](provisioning-guide.md).
+A Commerce értékelési környezet létesítéséhez lásd: [Commerce értékelési környezet kiépítése](provisioning-guide.md).
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[Egy Dynamics 365 Commerce előnézeti környezet létesítése](provisioning-guide.md)
+[Dynamics 365 Commerce értékelési környezet kiépítése](provisioning-guide.md)
 
-[Dynamics 365 Commerce előzetes verziós környezet konfigurálása](cpe-post-provisioning.md)
+[Dynamics 365 Commerce értékelési környezet konfigurálása](cpe-post-provisioning.md)
 
-[A Dynamics 365 Commerce előzetes verziós környezet választható funkcióinak konfigurálása](cpe-optional-features.md)
+[BOPIS konfigurálása Dynamics 365 Commerce értékelési környezetben](cpe-bopis.md)
 
-[Dynamics 365 Commerce előzetes verziós környezet GYIK](cpe-faq.md)
+[Dynamics 365 Commerce értékelési környezet választható funkcióinak konfigurálása](cpe-optional-features.md)
+
+[Dynamics 365 Commerce értékelési környezet GYIK](cpe-faq.md)

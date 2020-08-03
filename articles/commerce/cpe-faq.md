@@ -1,9 +1,9 @@
 ---
-title: Dynamics 365 Commerce előzetes verziós környezet GYIK
-description: Ez a témakör válaszokat ad a Microsoft Dynamics 365 Commerce előzetes verziós környezettel kapcsolatos gyakori kérdésekre.
+title: Dynamics 365 Commerce értékelési környezet GYIK
+description: Ez a témakör válaszokat ad a Microsoft Dynamics 365 Commerce értékelési környezettel kapcsolatos gyakori kérdésekre.
 author: v-chgri
 manager: annbe
-ms.date: 04/10/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,73 +17,57 @@ ms.search.region: Global
 ms.author: v-chgri
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 5321d7937a9de3ba39f7a88bf0e9c26f4e62d7bc
-ms.sourcegitcommit: 4254acb3cf8c6299fc2f3818ea6c499f058320d9
+ms.openlocfilehash: 637714e28b9f8f4aa66e251e709d8f78bff2739d
+ms.sourcegitcommit: 5175e3fae432016246244cf70fe05465f43de88c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "3254724"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "3599760"
 ---
-# <a name="dynamics-365-commerce-preview-environment-faq"></a>Dynamics 365 Commerce előzetes verziós környezet GYIK
+# <a name="dynamics-365-commerce-evaluation-environment-faq"></a>Dynamics 365 Commerce értékelési környezet GYIK
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör válaszokat ad a Microsoft Dynamics 365 Commerce előzetes verziós környezettel kapcsolatos gyakori kérdésekre.
+Ez a témakör válaszokat ad a Microsoft Dynamics 365 Commerce értékelési környezettel kapcsolatos gyakori kérdésekre.
 
-**Átadható a meghívóm a Commerce előzetes verziós környezetbe egy másik bérlő számára?**
+**Használható a Commerce értékelési környezet e-kereskedelmi áruházként a jelenleg Retail alkalmazást megvalósító ügyfeleink esetében?**
 
-Igen. Meghívások átadása esetén használhatja a [Commerce előzetes verzió átadási űrlapját](https://aka.ms/Dynamics365CommercePreviewTransferForm).
+Szám A Commerce értékelési környezet csak az értékelésre szolgál. Ha a Retail alkalmazást megvalósító ügyfél számára igényel környezetet, forduljon a Microsofthoz.
 
-**Mennyi időbe kerül a meghívás átadása?**
+**Használható a Commerce értékelési környezet egy Retail alkalmazást megvalósító meglévő alkalmazáson/környezeten az e-kereskedelmi funkciók megvalósítására?**
 
-Az átadás átlagosan körülbelül három-öt munkanapot vesz igénybe. Előfordulhatnak azonban kivételes esetek.
+Nem (többnyire). A Commerce értékelési összetevők csak olyan környezetekben érhetők el, amelyek megfelelnek az előfeltételekben és a létesítési útmutatóban megadott konfigurációknak. Ezenkívül a szükséges alapszintű demóadatok nem lesznek elérhetők olyan környezetekben, amelyeknek a kezdeti kiadása korábbi, mint a 10.0.8. 
 
-**Működik a Commerce előzetes verziós környezet a Dynamics 365 Finance vagy a Dynamics 365 Supply Chain projektjeivel?**
+**Milyen költségeket von maga után a Commerce értékelési környezet telepítése a Microsoft Azure alkalmazáson a Microsoft Dynamics Lifecycle Services (LCS) segítségével?**
 
-Szám A Commerce előzetes verziós környezet csak a Dynamics 365 Retail projektekkel működik.
+Egy hagyományos Dynamics 365 Finance/Dynamics 365 Supply Chain Management/Dynamics 365 Commerce központ demókörnyezete (virtuális gép \[VM\]) fog megjelenni az Azure-előfizetésében. Az [Azure árkalkulátorral](https://azure.microsoft.com/pricing/calculator/) megbecsülheti ezt a költséget.
 
-**Használható a Commerce előzetes verziós környezet e-kereskedelmi áruházként a jelenleg Retail alkalmazást megvalósító ügyfeleink esetében?**
+Más összetevők, például a Commerce Scale Unit, a Commerce webhelyépítő és az e-commerce webhely szoftverként, valamint a Microsoft által működtetett „szoftver szolgáltatásként” (SaaS) formájában elérhetővé válik.
 
-Szám A Commerce előzetes verziós környezet csak az értékelési környezet. Ha a Retail alkalmazást megvalósító ügyfél számára igényel környezetet, forduljon a Microsofthoz.
+**Jelenleg az Azure mely földrajzi régiói támogatottak a Commerce értékelési környezete esetében?**
 
-**Használható a Commerce előzetes verziós környezet egy Retail alkalmazást megvalósító meglévő alkalmazáson/környezeten az e-kereskedelmi funkciók megvalósítására?**
-
-Szám A Commerce előzetes verziós környezet jelenleg csak olyan új környezetekben érhető el, amelyek a 10.0.6 verzióból származó bemutató adatokkal rendelkező Retail raktározási egység (SKU) projekteken vannak telepítve.
-
-**Milyen költségeket von maga után a Commerce előzetes verziós környezet telepítése a Microsoft Azure alkalmazáson a Microsoft Dynamics Lifecycle Services (LCS) segítségével?**
-
-A Retail az egyetlen olyan összetevő, amely az előfizetésében megtalálható. Az egyéb összetevőket, mint például a Retail Cloud Scale Unit (RCSU) és az e-kereskedelem, a Microsoft-előfizetésekben tárolja a rendszer. Az [Azure árkalkulátorral](https://azure.microsoft.com/pricing/calculator/) megbecsülheti ezt a költséget.
-
-**Jelenleg az Azure mely földrajzi régiói támogatottak a Commerce előzetes verziós környezete esetében?**
-
-A Commerce előzetes verziós környezet csak Észak-Amerika területén telepíthető.
+A Commerce értékelési környezet csak Észak-Amerika területén telepíthető.
 
 **Létezik letölthető virtuális merevlemez (VHD), amely rendelkezik a teljes OneBox virtuális számítógép (VM) opcióval?**
 
-A Dynamics 365 Retail Cloud Scale Unit (RCSU) és az e-Commerce teljes mértékben szoftver szolgáltatásként (SaaS) elven működnek, és a felhőben tároltak.
+A Dynamics 365 Commerce és a Commerce Scale Unit teljes mértékben „szoftver szolgáltatásként” (SaaS) elven működnek, és a felhőben tároltak.
 
-**Meddig használható a Commerce előzetes verziós környezet?**
+**Meddig használható a Commerce értékelési környezet?**
 
-A Commerce előzetes verziós környezet 30 napos határidővel rendelkezik az e-Commerce létesítésének napjától számítva.
+A Commerce értékelési környezet 30 napos határidőt tartalmaz attól a naptól számítva, amikor a SaaS-összetevők, például a Commerce Scale Unit, a Commerce webhelyépítő és az e-kereskedelmi webhely létesítése megtörtént.
 
-**Meghosszabbítható a Commerce előzetes verziós környezet időkorlátja?**
+**Meghosszabbítható a Commerce értékelési környezet időkorlátja?**
 
-Igen. A terméktámogatási csoporttal a [Commerce előzetes verzió meghosszabbítása űrlap](https://aka.ms/Dynamics365CommercePreviewExtensionForm) használatával is felveheti a kapcsolatot.
-
-**Lehet több igénylést küldeni a Commerce előzetes verziós környezetre?**
-
-Minden elfogadott kérelemhez egy Commerce előzetes verziós környezetet adunk. Ha egynél több előzetes verziós környezetre van szüksége, lépjen kapcsolatba a Microsofttal. A kapcsolattartási információkért tekintse meg a következő szakaszt.
-
-## <a name="dynamics-365-commerce-preview-environment-contact-information"></a>Dynamics 365 Commerce előzetes verziós környezet elérhetőségi adatai
-
-Ha a Commerce előzetes verziós környezethez kapcsolódó kérdései vagy kérései vannak, keresse fel a [Microsoft Dynamics 365 Commerce előzetes verzió Yammer-csoportját](https://aka.ms/Dynamics365CommercePreviewYammer) további segítségért.
+A határidő meghosszabbítása inkább kivétel a szabályra, és eseti alapon hoznak döntést róla. Segítségért forduljon a Microsoft-partnere kapcsolattartójához.
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[Dynamics 365 Commerce előzetes verziós környezet áttekintése](cpe-overview.md)
+[Dynamics 365 Commerce értékelési környezet áttekintése](cpe-overview.md)
 
-[Egy Dynamics 365 Commerce előnézeti környezet létesítése](provisioning-guide.md)
+[Dynamics 365 Commerce értékelési környezet kiépítése](provisioning-guide.md)
 
-[Dynamics 365 Commerce előzetes verziós környezet konfigurálása](cpe-post-provisioning.md)
+[Dynamics 365 Commerce értékelési környezet konfigurálása](cpe-post-provisioning.md)
 
-[A Dynamics 365 Commerce előzetes verziós környezet választható funkcióinak konfigurálása](cpe-optional-features.md)
+[BOPIS konfigurálása Dynamics 365 Commerce értékelési környezetben](cpe-bopis.md)
+
+[Dynamics 365 Commerce értékelési környezet választható funkcióinak konfigurálása](cpe-optional-features.md)
