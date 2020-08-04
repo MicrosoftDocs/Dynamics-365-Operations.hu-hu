@@ -3,7 +3,7 @@ title: Kimenő készletművelet a pénztárban
 description: Ez a témakör a pénztár (POS) kimenő készletműveletének képességeit írja le.
 author: hhaines
 manager: annbe
-ms.date: 05/14/2020
+ms.date: 07/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 22f057c20898bb4b4c34e38d62313d2634a33511
-ms.sourcegitcommit: 3b6fc5845ea2a0de3db19305c03d61fc74f4e0d4
+ms.openlocfilehash: c2c8acfaf7b84870ce00bf1ae84440dd369df9da
+ms.sourcegitcommit: 037712e348fcbf3569587089bd668ee7bf5567ff
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "3384129"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "3551625"
 ---
 # <a name="outbound-inventory-operation-in-pos"></a>Kimenő készletművelet a pénztárban
 
@@ -58,6 +58,9 @@ Az aszinkron dokumentum-keretrendszer konfigurálásához hajtsa végre a követ
 7. Az **Általános** gyorslap **Beállítások** szakaszában állítsa a **Folyamatos** elemet **Nem** értékre, így biztosíthatja, hogy ne legyenek teljesítménnyel kapcsolatos problémák.
 
 ### <a name="create-and-schedule-two-batch-jobs-for-the-document-processing-and-monitoring-tasks"></a>Hozzon létre két kötegelt feladatot a dokumentumok feldolgozási és felügyeleti feladatai számára
+
+> [!NOTE]
+> A Kiskereskedelem 10.0.13 és a későbbi verzióiban nem kell a kötegelt feladatokat a kötegelt feladat keretrendszerén belül konfigurálni. A kötegelt feldolgozások a **Kiskereskedelem és kereskedelem > Kiskereskedelem és kereskedelem IT** menüjéből is konfigurálhatók. A **Kiskereskedelem dokumentumműködés-figyelő** és **Kiskereskedelem dokumentumműködés-feldolgozás** menükkel konfigurálhatja a kötegelt feladatokat
 
 A létrehozott kötegelt feladatok felhasználhatók a meghiúsult vagy időtúllépésben érintett dokumentumok feldolgozására. Akkor is használhatók, ha a pénztárból eldolgozás alatt álló aktív készletdokumentumok száma meghaladja a rendszer által konfigurált értéket.
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2020-03-10
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7c1a9f10a434343e4c9c8a42ec5c0b7a1a18ad36
-ms.sourcegitcommit: 437170338c49b61bba58f822f8494095ea1308c2
+ms.openlocfilehash: 1843095c41428d377341154c9f2140085831e770
+ms.sourcegitcommit: bd9ff0d28718d535356ffbe1cffaaf60310dd430
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "3124016"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "3555254"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-march-10-2020"></a>Új vagy módosult elemek a Dynamics 365 Human Resources szolgáltatásban (2020. március 10.)
 
@@ -97,3 +97,10 @@ A következő előzetes funkciók érhetők el 2020. február 3-tól:
 - Javasolt mezők – A felhasználóknak gyakran kell mezőket felvenniük egy rácsba vagy egy lapra. Ez nehéz lehet ennyire sok rendelkezésre álló mezővel. Egy nagyméretű listán történő keresés helyett ez a funkció lehetővé teszi a rendszer számára, hogy megjelenítsen egy ajánlott mezőkészletet a hasonló helyzetekben a leggyakrabban használtak alapján.
 
 - Alapértelmezett beragadó műveletek a rácsokban – Ez a funkció biztosítja, hogy a rács alapértelmezett művelete egy rács egy meghatározott oszlopához kapcsolódjon, függetlenül attól, hogy az adott oszlopot áthelyezték vagy elrejtették-e.
+
+## <a name="see-also"></a>Lásd még
+
+[Új vagy módosult elemek a Human Resources szolgáltatásban](hr-admin-whats-new.md)</br>
+[A Dynamics 365 Human Resources 2019 második kiadási hullámának áttekintése](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Rendelés frissítése](hr-admin-setup-update-process.md)</br>
+[Szolgáltatások kezelése](hr-admin-manage-features.md)

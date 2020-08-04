@@ -3,7 +3,7 @@ title: Bejövő készletműveletek a pénztárban
 description: Ez a témakör a pénztár (POS) bejövő készletműveletének képességeit írja le.
 author: hhaines
 manager: annbe
-ms.date: 03/12/2020
+ms.date: 07/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: b212906dcf037171af264c60720f361215eed599
-ms.sourcegitcommit: 437170338c49b61bba58f822f8494095ea1308c2
+ms.openlocfilehash: cf3bec8ab0bfafccfe4b2b5b245d00fd6aeff635
+ms.sourcegitcommit: 037712e348fcbf3569587089bd668ee7bf5567ff
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "3123899"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "3551601"
 ---
 # <a name="inbound-inventory-operation-in-pos"></a>Bejövő készletműveletek a pénztárban
 
@@ -57,6 +57,9 @@ Az aszinkron dokumentum-keretrendszer konfigurálásához hajtsa végre a követ
 5. Az **Általános** gyorslap **Beállítások** szakaszában állítsa a **Folyamatos** elemet **Nem** értékre, így biztosíthatja, hogy ne legyenek teljesítménnyel kapcsolatos problémák.
 
 ### <a name="create-and-schedule-two-batch-jobs-for-the-document-processing-and-monitoring-tasks"></a>Hozzon létre két kötegelt feladatot a dokumentumok feldolgozási és felügyeleti feladatai számára
+
+> [!NOTE]
+> A Kiskereskedelem 10.0.13 és a későbbi verzióiban nem kell ezeket a kötegelt feladatokat a kötegelt feladat keretrendszerén belül konfigurálni. A kötegelt feldolgozások a **Kiskereskedelem és kereskedelem > Kiskereskedelem és kereskedelem IT** menüjéből is konfigurálhatók. A **Kiskereskedelem dokumentumműködés-figyelő** és **Kiskereskedelem dokumentumműködés-feldolgozás** menükkel konfigurálhatja a kötegelt feladatokat.
 
 A létrehozott kötegelt feladatok felhasználhatók a meghiúsult vagy időtúllépésben érintett dokumentumok feldolgozására. Akkor is használhatók, ha a pénztárból eldolgozás alatt álló aktív készletdokumentumok száma meghaladja a rendszer által konfigurált értéket.
 

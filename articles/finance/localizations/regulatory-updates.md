@@ -3,7 +3,7 @@ title: Jogszabály-követési frissítések
 description: Ez a témakör felsorolja azokat a Microsoft Dynamics 365 Finance tervezett és kiadott szabályozói frissítéseit.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 05/29/2020
+ms.date: 07/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: a7a26d8c506a9e61f6e4319a33176b4e92fc30ad
-ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
+ms.openlocfilehash: 785797af0fe62fa6d0ee40fb4df45bcec47780c7
+ms.sourcegitcommit: 14b554b43b9d86152ef27fdde6141589bcaf1161
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "3411412"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "3598084"
 ---
 # <a name="regulatory-updates"></a>Jogszabály-követési frissítések
 
@@ -42,48 +42,30 @@ A legújabb szabályozó frissítésekkel kapcsolatos tervekkel kapcsolatosan te
 
 |Ország|Kiadás tervezett dátuma|Kiadás verziója|Jogszabály-követési frissítés|
 |--------------------|---------------|-------|-------|
-|      Brazília         |   2020. április – 2020. január      | 10.0.10, 10.0.9HF      |   DRCST SC – 416. sz. SEF-rendelet    |
-|      Brazília         |   április 2020.      | 10.0.10      |   SPED Contribuições (PIS/COFINS) – M115 és M515 blokkok    |
-|      Brazília         |   április 2020.      | 10.0.10      |   Sped hozzájárulások –A C100 és a D100 rekordok frissítése, ha a jóváírás nem állítható vissza    |
-|      Brazília         |   2020. április – 2020. január     | 10.0.10, 10.0.9HF      |   SPED hozzájárulás - 2020 januári intézkedés    |
-|      Brazília         |   március 2020.       | 10.0.9      |   Sped fiscal – változások a D100 rekord COD_MUN_ORI mezőjében    |
-|      Brazília         |   2020. március – 2020. január       | 10.0.9      |   DRCST SC – 254/19. sz. SEF-rendelet    |
-|      Brazília         |   2020. március – 2020. január       | 10.0.9      |   SPED pénzügyi rendezés 014 |
-|      Brazília         |   2020. március – 2020. január       | 10.0.9      |   DRCST SC – 343DR. sz. SEF-rendelet   |
-|      Brazília         |   2020. május – 2020. március      | 10.0.11, 10.0.10HF, 10.0.9HF      |   SPED ECD layout 8   |
-|      Brazília         |   2020. május – 2020. április      | 10.0.11, 10.0.10HF, 10.0.9HF      |   Technikai megjegyzés: NT 2019.001 v 1.40   |
-|      Brazília         |   május 2020.      | 10.0.12, 10.0.11HF, 10.0.10HF,      |   ADCR ICMS-ST Parana állam nyilatkozata   |
+|      Brazília         |   március 2020.      | 10.0.11      |   SPED ECD layout 8   |
+|      Brazília         |   április 2020.      | 10.0.11      |   Technikai megjegyzés: NT 2019.001 v 1.40   |
+|      Brazília         |   május 2020.      | 10.0.12, 10.0.11 HF      |   ADCR ICMS-ST Parana állam nyilatkozata   |
+|      Brazília         |   2020. július – 2020. május      | 10.0.13, 10.0.12, 10.0.11      |   SPED ECF layout 6   |
+|      Brazília         |   július 2020.      | 10.0.13, 10.0.12HF      |   SPED Fiscal – Record C176 - RS state   |
+|      Cseh Köztársaság      |   július 2020.      | 10.0.13      |   Áfaellenőrzési nyilatkozat módosítások az XML-sémában (számla listázása)   |
+|      Cseh Köztársaság         |   július 2020.      | 10.0.13      |   Áfanyilatkozat XML-ben, áfabevallás előnézete az Excel programban, és áfaellenőrzési nyilatkozat XML-formátumok az adóbevallás modelljén alapulva   |
 |      Észtország         |   május 2020.       | 10.0.11      |   Elektronikus számlázás Észtországban: a vevők számláinak exportja észt specifikus formátumban 1.2 verzió.  |
-|      Franciaország         |   április 2020.       | 10.0.10      |   Az önfoglalkoztatók (DAS2) törvényi díjakkal kapcsolatos nyilatkozata az adóhatóságok felé    |
-|      Franciaország         |   március 2020.       | 10.0.9      |   Francia lokalizáció: ISO 20022 formátum nemzetközi fizetéshez és kincstári átutaláshoz    |
 |      Németország         |   május 2020.       | 10.0.12      |   Németország – Kiskereskedelem – Pénztárgépek követelményei    |
-|      Magyarország         |   2020. május – 2020. március       | 10.0.11, 10.0.10, 10.0.9HF     |   Online számlázási rendszer v. 2.0 a Finance and Operations alkalmazásban    |
-|      India         |   március 2020.      | 10.0.9      |   Új GSTR (ANX-1 & ANX-2) visszirányú offline eszköz    |
+|      Magyarország         |   március 2020.       | 10.0.11     |   Online számlázási rendszer v. 2.0 a Finance and Operations alkalmazásban    |
 |      India         |   május 2020.      | 10.0.12      |   Az egységár és az önköltségi ár kezelésének javítása a raktári átmozgatási rendelésekben  |
-|      Olaszország         |   március 2020.      | 10.0.9      |   Retail – A vevőadatok kezelése a pénztárban |
-|      Olaszország         |   március 2020.      | 10.0.9      |   Retail -A vevői adatok nyomtatása a pénzügyi nyugta esetében |
-|      Olaszország         |   május 2020.      | 10.0.12. 10.0.11      |   Modello 770/2019 formátumváltozás |
-|      Japán          |   március 2020.     | 10.0.9     |   A Japán Bankárok Szövetsége a JBA fix hosszúságú kifizetési formátumokat ISO20022-ra cseréli |
-|      Japán          |   Január 2020.      | 10.0.8       |   Fogyasztási adó kulcsának változása és csökkentett adókulcs bevezetése (Fogyasztásiadó-jelentés) |
-|      Hollandia          |   április 2020.   | 10.0.10     |   Holland rendszertan új verziója – NT14 |
-|      Norvégia          |   március 2020.   | 10.0.9     |   SAF-T XSD frissítése a 1.1 verzióra a Dynamics 365 for Finance and Operations-höz |
-|      Norvégia          |   május 2020.   | 10.0.12     |   SAF-T-jelentés újratervezése: Nyitó egyenlegek az „üzemeltetési” tranzakciótípus és az adózási adatok az áfakód pénznemében (10-es verzió) |
+|      India         |   május 2020.      | 10.0.12      |   A készletáthelyezéshez ugyanaz az adókulcs is alkalmazható a szállítás és a fogadás időpontjában (a részleges nyugtával együtt)  |
+|      Olaszország         |   május 2020.      | 10.0.12, 10.0.11      |   Modello 770/2019 formátumváltozás |
+|      Olaszország         |   július 2020.      | 10.0.13, 10.0.12HF      |   Olasz elektronikus számlák formátumának változásai – FatturaPA |
+|      Norvégia          |   május 2020.   | 10.0.12     |   SAF-T-jelentés újratervezése: Nyitó egyenlegek az „üzemeltetési” tranzakciótípus és az adózási adatok az áfakód pénznemében (10. verzió) |
 |      Norvégia          |   május 2020.   | 10.0.12     |   SAF-T-jelentés párbeszédablak-módosítás: annak a lehetősége, hogy kapcsolattartó személyeket válasszanak ki a vállalatok között |
 |      Norvégia          |   május 2020.   | 10.0.12     |   SAF-T névtér deklarációja az egyes sorokban csak a fejléc helyett |
-|      Lengyelország          |   március 2020.    | 10.0.9     |   Bemeneti áfa jegyzéke és SAF-áfajegyzék: az EV-dokumentumok szerinti egyéni Ügynökséget a harmadik fél nevének és az adómentességi számnak kell helyettesítenie |
-|      Lengyelország          |   2020. március – 2020. január   | 10.0.9     |   Retail – A vevőadatok kezelése a pénztárban |
-|      Lengyelország          |   2020. március – 2020. január     | 10.0.9    |   Retail -A vevői adatok nyomtatása a pénzügyi nyugta esetében |
-|      Lengyelország          |   március 2020.     | 10.0.9     |   SAF-számlák (JPK_FA) v.3 2019. dec. 2-től |
-|      Lengyelország          |   április 2020.     | 10.0.10, 10.0.9     |   A JPK_VDEK felváltja a JPK_VAT (SAF VAT) értéket |
 |      Lengyelország          |   május 2020.     | 10.0.11     |   Az AP/AR realizált árfolyam-különbözeti összeg felosztása a számla nettó értékének és az áfa összegének árfolyam-különbözetével  |
 |      Lengyelország          |   május 2020.     | 10.0.11     |   SAF könyvelés könyvek – Feladási rétegek szűrési fejlesztései |
-|      Lengyelország          |   május 2020.     | 10.0.11     |   JPK_VDEK kiegészítő csomag I |
+|      Lengyelország          |   március 2020.     | 10.0.11     |   JPK_VDEK kiegészítő csomag I |
 |      Lengyelország          |   május 2020.     | 10.0.12     |   JPK_VDEK kiegészítő csomag II |
-|      Lengyelország          |   május 2020.     | 10.0.11     |   Részleges jóváírás az értékesítési rendeléshez előlegszámlával |
-|      Oroszország          |   március 2020.     | 10.0.9     |   Az ingatlanadó bevallásának formátuma 2019-ben megváltozott |
-|      Oroszország          |   március 2020.     | 10.0.9     |   Nyereségadó-bevallás formátumának frissítései |
-|      Svájc           |   március 2020.     | 10.0.9      |   Svájci kifizetési bizonylat ISR-je új formátumot kap (QR-kód) |
-|      Egyesült Királyság           |   április 2020.     | 10.0.10      |   MTD csalások megakadályozása kiegészítő csomag |
+|      Lengyelország          |   március 2020.     | 10.0.11     |   Részleges jóváírás az értékesítési rendeléshez előlegszámlával |
+|      Lengyelország          |   július 2020.     | 10.0.13     |   Kötelező felosztott fizetés javításai |
+|      Oroszország          |   július 2020.     | 10.0.13    |   Értékcsökkenési számítás a beszerzési költség alapján és a jelentősebb javítások az avultatási bónusz alkalmazásában az adókönyvelésen  |
 
 
 

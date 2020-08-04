@@ -1,9 +1,9 @@
 ---
-title: BOPIS konfigurálása Dynamics 365 Commerce-környezetben
-description: Ez a témakör azt mutatja be, hogyan lehet konfigurálni „online vásárlás, átvétel az áruházban” "(BOPIS) folyamatot a Microsoft Dynamics 365 Commerce-környezetben a kiépítés után.
+title: BOPIS konfigurálása Dynamics 365 Commerce értékelési környezetben
+description: Ez a témakör azt mutatja be, hogyan lehet konfigurálni „online vásárlás, átvétel az áruházban” "(BOPIS) folyamatot a Microsoft Dynamics 365 Commerce értékelési környezetben a kiépítés után.
 author: rubendel
 manager: annbe
-ms.date: 04/21/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,23 +17,22 @@ ms.search.region: Global
 ms.author: rubendel
 ms.search.validFrom: 2020-04-20
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 956d66d09885d4d54655ce25b3aa7ba6a9c34cf4
-ms.sourcegitcommit: dfef2faf881b2db1bd0f016df36e2b838105312b
+ms.openlocfilehash: 62dabaa2610341cc8ad8e85812a317ac3123fcb1
+ms.sourcegitcommit: 5175e3fae432016246244cf70fe05465f43de88c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "3282796"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "3599796"
 ---
-# <a name="configure-bopis-in-a-dynamics-365-commerce-environment"></a>BOPIS konfigurálása Dynamics 365 Commerce-környezetben
-
+# <a name="configure-bopis-in-a-dynamics-365-commerce-evaluation-environment"></a>BOPIS konfigurálása Dynamics 365 Commerce értékelési környezetben
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör azt mutatja be, hogyan lehet konfigurálni „online vásárlás, átvétel az áruházban” "(BOPIS) folyamatot a Microsoft Dynamics 365 Commerce-környezetben a környezet kiépítése után.
+Ez a témakör azt mutatja be, hogyan lehet konfigurálni „online vásárlás, átvétel az áruházban” "(BOPIS) folyamatot a Microsoft Dynamics 365 Commerce értékelési környezetben a környezet kiépítése után.
 
 ## <a name="prerequisite"></a>Előfeltételek
 
-A jelen témakörben ismertetett eljárásokat csak a Commerce előnézet környezet létesítését és konfigurálását követően hajtsa végre. A környezet kiépítésével és konfigurálásával kapcsolatban lásd [Dynamics 365 Commerce előzetes környezet kiépítése](provisioning-guide.md) és [Dynamics 365 Commerce előzetes környezet konfigurálása](https://docs.microsoft.com/dynamics365/commerce/cpe-post-provisioning) című részeket.
+A jelen témakörben ismertetett eljárásokat csak a Commerce értékelési környezet létesítését és konfigurálását követően hajtsa végre. A környezet kiépítésével és konfigurálásával kapcsolatban lásd [Dynamics 365 Commerce értékelési környezet kiépítése](provisioning-guide.md) és [Dynamics 365 Commerce értékelési környezet konfigurálása](https://docs.microsoft.com/dynamics365/commerce/cpe-post-provisioning) című részeket.
 
 Miután kiépítette és konfigurálta a Commerce környezetet végponttól végpontig, ezzel a témakörrel engedélyezheti a BOPIS eseteket.
 
@@ -71,7 +70,7 @@ A hitelkártyás fizetést tartalmazó BOPIS esetekhez hardverállomás szüksé
 5. Megjelenik egy hitelesítési párbeszédpanel. Válassza ki azt a számlát, amely korábban a **000713 – Andrew Collette** nevű dolgozóhoz társított e-mail-címet használja.
 
     > [!NOTE]
-    > Ha még nem társított egy dolgozót az identitásához, az aktiválás sikertelen lesz. Ebben az esetben kövesse a „Dolgozó társítása az identitásához” szakaszban leírt lépéseket a [Dynamics 365 Commerce előzetes környezete konfigurálása](cpe-post-provisioning.md#associate-a-worker-with-your-identity) témakörben.
+    > Ha még nem társított egy dolgozót az identitásához, az aktiválás sikertelen lesz. Ebben az esetben kövesse a „Dolgozó társítása az identitásához” szakaszban leírt lépéseket a [Dynamics 365 Commerce értékelési környezete konfigurálása](cpe-post-provisioning.md#associate-a-worker-with-your-identity) témakörben.
     
 6. Amikor a program rákérdez, hogy engedélyezze a szervezetnek az eszköz kezelését, válassza a **Csak ez az alkalmazás** lehetőséget.
 7. Az aktiválás befejezését követően válassza az **Indítás** elemet.
@@ -144,13 +143,13 @@ Minden általános probléma esetén első lépésként mindig tekintse át a Mo
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[Dynamics 365 Commerce előzetes verziós környezet áttekintése](cpe-overview.md)
+[Dynamics 365 Commerce értékelési környezet áttekintése](cpe-overview.md)
 
-[Egy Dynamics 365 Commerce előnézeti környezet létesítése](provisioning-guide.md)
+[Dynamics 365 Commerce értékelési környezet kiépítése](provisioning-guide.md)
 
-[A Dynamics 365 Commerce előzetes verziós környezet választható funkcióinak konfigurálása](cpe-optional-features.md)
+[Dynamics 365 Commerce értékelési környezet választható funkcióinak konfigurálása](cpe-optional-features.md)
 
-[Dynamics 365 Commerce előzetes verziós környezet GYIK](cpe-faq.md)
+[Dynamics 365 Commerce értékelési környezet GYIK](cpe-faq.md)
 
 [Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 

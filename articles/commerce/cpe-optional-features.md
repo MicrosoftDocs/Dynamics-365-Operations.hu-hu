@@ -1,9 +1,9 @@
 ---
-title: A Dynamics 365 Commerce előzetes verziós környezet választható funkcióinak konfigurálása
-description: Ez a témakör bemutatja, hogyan lehet opcionális funkciókat konfigurálni egy Microsoft Dynamics 365 Commerce előzetes környezethez.
+title: Dynamics 365 Commerce értékelési környezet választható funkcióinak konfigurálása
+description: Ez a témakör bemutatja, hogyan lehet opcionális funkciókat konfigurálni egy Microsoft Dynamics 365 Commerce értékelési környezethez.
 author: psimolin
 manager: annbe
-ms.date: 12/10/2019
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,28 +17,25 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 4b17f8e9b0d8a9a62714d0073561e66642b2eaf9
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: 6f7ba7e6de3791720458b509059f008423c73a82
+ms.sourcegitcommit: 5175e3fae432016246244cf70fe05465f43de88c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057740"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "3599820"
 ---
-# <a name="configure-optional-features-for-a-dynamics-365-commerce-preview-environment"></a>A Dynamics 365 Commerce előzetes verziós környezet választható funkcióinak konfigurálása
-
+# <a name="configure-optional-features-for-a-dynamics-365-commerce-evaluation-environment"></a>Dynamics 365 Commerce értékelési környezet választható funkcióinak konfigurálása
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör bemutatja, hogyan lehet opcionális funkciókat konfigurálni egy Microsoft Dynamics 365 Commerce előzetes környezethez.
+Ez a témakör bemutatja, hogyan lehet opcionális funkciókat konfigurálni egy Microsoft Dynamics 365 Commerce értékelési környezethez.
 
 ## <a name="prerequisites"></a>Előfeltételek
 
 Ha ki szeretné próbálni tranzakciós e-mail funkciókat, akkor az alábbi előfeltételeknek kell teljesülniük:
 
-- Rendelkezik egy e-mail kiszolgálóval (Egyszerű üzenetátviteli protokoll \[SMTP\] kiszolgáló), amelyet abból a Microsoft Azure-előfizetésből lehet használni, ahol az előzetes környezetet létesítette.
+- Rendelkezik egy e-mail kiszolgálóval (Egyszerű üzenetátviteli protokoll \[SMTP\] kiszolgáló), amelyet abból a Microsoft Azure-előfizetésből lehet használni, ahol az értékelési környezetet létesítette.
 - A kiszolgáló teljes képzésű tartományneve (FQDN)/IP-címe, SMTP-portszáma és a hitelesítési adatok rendelkezésre állnak.
-
-Ha az új omnicsatornás képek fogyasztásával szeretné értékelni a Digitális eszközkezelés funkciókat, akkor rendelkezésre kell állnia a tartalomkezelő rendszer (CMS) bérlőnevének. A név megtalálásához a jelen témakör későbbi részében talál útmutatást. >>>(Q: Hol vannak az utasítások?)
 
 ## <a name="configure-the-image-back-end"></a>A képháttér konfigurálása
 
@@ -47,9 +44,9 @@ Ha az új omnicsatornás képek fogyasztásával szeretné értékelni a Digitá
 > [!NOTE]
 > A művelet végrehajtása előtt be kell fejeznie a [Webhely beállítása a Commerce alkalmazásban](cpe-post-provisioning.md#set-up-your-site-in-commerce) témakör lépéseit.
 
-1. Jelentkezzen be a Commerce webhelykezelő eszközébe azzal az URL-címmel, amelyet az e-kereskedelem inicializálásakor a létesítés során megadott (lásd: [E-kereskedelem inicializálása](provisioning-guide.md#initialize-e-commerce)).
+1. Jelentkezzen be a Commerce webhelykészítőbe azzal az URL-címmel, amelyet az e-kereskedelem inicializálásakor a létesítés során megadott (lásd: [E-kereskedelem inicializálása](provisioning-guide.md#initialize-e-commerce)).
 1. Nyissa meg a **Gyár** webhelyet.
-1. A bal oldali menüben válassza az **Eszközök** lehetőséget.
+1. A bal oldali menüben válassza az **Médiatár** lehetőséget.
 1. Válasszon ki egyetlen képeszközt.
 1. A jobb oldali tulajdonságvizsgálóban keresse meg a **Nyilvános URL** tulajdonságot. Az érték egy URL. Egy példa:
 
@@ -63,22 +60,22 @@ Ha az új omnicsatornás képek fogyasztásával szeretné értékelni a Digitá
 
 ### <a name="update-the-media-base-url"></a>A média alap URL-cím frissítése
 
-1. Jelentkezzen be a Dynamics 365 Commerce alkalmazásba.
+1. Bejelentkezés a Commerce központba.
 1. A bal oldali menü használatával nyissa meg a **Modulok \> Kiskereskedelem és kereskedelem \> Csatorna beállítása \> Csatornaprofilok** lehetőséget.
 1. Válassza ki a **Szerkesztés** opciót.
 1. A **Profil tulajdonságai** alatt cserélje le a **Médiakiszolgáló alap URL-címe** tulajdonságot a korábban létrehozott média alap URL-címre.
-1. Válassza ki a másik csatornát a bal oldali listából az **Alapértelmezett** csatorna alatt.
+1. Válassza ki a másik csatornát, az **scXXXXXXXXX** nevűt.
 1. A **Profil tulajdonságai** területen kattintson a **Hozzáadás** gombra.
 1. A hozzáadott tulajdonság esetében válassza a **Médiakiszolgáló alap URL-címe** lehetőséget tulajdonságkulcsként. A tulajdonságértékként adja meg a korábban létrehozott média alap URL-címét.
 1. Válassza a **Mentés** lehetőséget.
 
-## <a name="configure-the-email-server"></a>E-mail-kiszolgáló konfigurálása
+## <a name="configure-and-test-the-email-server"></a>E-mail-kiszolgáló konfigurálása és tesztelése
 
 > [!NOTE]
 > Az itt megadott SMTP-kiszolgálónak vagy e-mail szolgáltatásnak elérhetőnek kell lennie a környezethez használt Azure-előfizetésből.
 
-1. Bejelentkezés a Commerce alkalmazásba.
-1. A bal oldali menü használatával nyissa meg a **Modulok \> Rendszerfelügyelet \> Beállítás \> E-mail \> E-mail-paraméterek** elemet.
+1. Bejelentkezés a Commerce központba.
+1. A bal oldali menü használatával nyissa meg a **Modulok \> Kiskereskedelem és kereskedelem \> Központ beállítása \> Paraméterek \> E-mail-paraméterek**.
 1. Az **SMTP-beállítások** lapon a **Kimenő levelek kiszolgálója** mezőjébe írja be az SMTP-kiszolgáló vagy e-mail-szolgáltatás FQDN-nevét vagy IP-címét.
 1. Írja be az **SMTP portszáma** mezőbe a port számát. (Ha nem a Secure Sockets Layer \[SSL\] protokollt használja, az alapértelmezett portszám **25**.)
 1. Ha hitelesítés szükséges, írja be az értékeket a **Felhasználónév** és a **Jelszó** mezőkbe.
@@ -92,8 +89,8 @@ Ha az új omnicsatornás képek fogyasztásával szeretné értékelni a Digitá
 
 Az e-mail-sablont minden olyan tranzakciós eseményhez, amelyre e-maileket szeretne küldeni, frissíteni kell egy érvényes feladói e-mail-címmel.
 
-1. Bejelentkezés a Commerce alkalmazásba.
-1. A bal oldali menü használatával nyissa meg a **Modulok \> Szervezet felügyelete \> Beállítás \> Szervezeti e-mail-sablonok** elemet.
+1. Bejelentkezés a Commerce központba.
+1. A bal oldali menü használatával nyissa meg a **Modulok \> Kiskereskedelem és kereskedelem \> Központ beállítása \> Paraméterek \> Szervezeti e-mail-sablonok**.
 1. Válassza ki a **Lista megjelenítése** lehetőséget.
 1. A lista minden sablonja esetén hajtsa végre az alábbi lépéseket:
 
@@ -104,9 +101,9 @@ Az e-mail-sablont minden olyan tranzakciós eseményhez, amelyre e-maileket szer
 
 ## <a name="customize-email-templates"></a>E-mail-sablonok testreszabása
 
-Célszerű lehet testreszabni az e-mail sablonokat, hogy azok különböző képeket használhassanak. Előfordulhat az is, hogy frissíteni szeretné a sablonokban lévő hivatkozásokat, hogy azok az előzetes környezetbe kerüljenek. Ez az eljárás leírja, hogyan lehet letölteni az alapértelmezett sablonokat, illetve hogyan szabhatja testre és frissítheti a sablonokat a rendszerben.
+Célszerű lehet testreszabni az e-mail sablonokat, hogy azok különböző képeket használhassanak. Előfordulhat az is, hogy frissíteni szeretné a sablonokban lévő hivatkozásokat, hogy azok az értékelési környezetbe kerüljenek. Ez az eljárás leírja, hogyan lehet letölteni az alapértelmezett sablonokat, illetve hogyan szabhatja testre és frissítheti a sablonokat a rendszerben.
 
-1. A böngésző használatával letöltheti a [Microsoft Dynamics 365 Commerce Preview default email templates .zip fájlt](https://download.microsoft.com/download/d/7/b/d7b6c4d4-fe09-4922-9551-46bbb29d202d/Commerce.Preview.Default.Email.Templates.zip) a számítógépére. Ez a fájl a következő HTML-dokumentumokat tartalmazza:
+1. A böngésző használatával letöltheti a [Microsoft Dynamics 365 Commerce értékelés alapértelmezett e-mail-sablonok .zip fájlját](https://download.microsoft.com/download/d/7/b/d7b6c4d4-fe09-4922-9551-46bbb29d202d/Commerce.Preview.Default.Email.Templates.zip) a számítógépére. Ez a fájl a következő HTML-dokumentumokat tartalmazza:
 
     - Rendelés megerősítési sablon
     - Ajándékutalvány-sablon kiadása
@@ -156,7 +153,7 @@ A következő tokeneket cseréli ki a rendszer értékekre az egyes termékek es
 > [!NOTE]
 > Tegye a **Terméklista – kezdés** tokent a HTML-blokk elejére, amely minden termékre megismétlődik, majd a blokk végén helyezze el a **Terméklista – befejezés** tokent.
 
-| A token neve      | Jogkivonat |
+| A token neve      | Token |
 |------------------------|-------|
 | Terméklista – kezdés   | \<!--%tablebegin.salesline% --\> |
 | Terméklista – befejezés     | \<!--%tableend.salesline%--\> |
@@ -173,13 +170,15 @@ A következő tokeneket cseréli ki a rendszer értékekre az egyes termékek es
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[Dynamics 365 Commerce előzetes verziós környezet áttekintése](cpe-overview.md)
+[Dynamics 365 Commerce értékelési környezet áttekintése](cpe-overview.md)
 
-[Egy Dynamics 365 Commerce előnézeti környezet létesítése](provisioning-guide.md)
+[Dynamics 365 Commerce értékelési környezet kiépítése](provisioning-guide.md)
 
-[Dynamics 365 Commerce előzetes verziós környezet konfigurálása](cpe-post-provisioning.md)
+[Dynamics 365 Commerce értékelési környezet konfigurálása](cpe-post-provisioning.md)
 
-[Dynamics 365 Commerce előzetes verziós környezet GYIK](cpe-faq.md)
+[BOPIS konfigurálása Dynamics 365 Commerce értékelési környezetben](cpe-bopis.md)
+
+[Dynamics 365 Commerce értékelési környezet GYIK](cpe-faq.md)
 
 [Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 

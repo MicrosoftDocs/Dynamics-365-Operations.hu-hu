@@ -2,7 +2,7 @@
 title: Megerősítés és áthelyezés
 description: Ez a témakör azt mutatja be, hogyan kell használni a Megerősítés és áthelyezés funkciót, amely lehetővé teszi a felhasználók számára a rakományok szállítását, mielőtt elvégzik a rakományhoz társított összes munkát.
 author: mirzaab
-manager: AnnBe
+manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 488eed23972022f9437e62a462ae5f70d6833a67
-ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
+ms.openlocfilehash: cc5dcec7e50f43d3c17feef55967b32b8a261cdd
+ms.sourcegitcommit: f64fce03ec52f844b05a9e8cac286cb201385002
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "3530558"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "3597360"
 ---
 # <a name="confirm-and-transfer"></a>Megerősítés és áthelyezés
 
@@ -176,7 +176,7 @@ A mobileszközhöz kapcsolódó feladatokhoz felhasználói adatok szükségesek
 1. Válassza ki az **Értékesítési kitárolás** lehetőséget.
 1. Lehetőség van a munkaazonosító vagy az azonosítótábla azonosítójának megadására. Adja meg az első értékesítési rendelés munkaazonosítóját, majd válassza a **Bevitel** lehetőséget.
 1. A **Hely** mezőben adja meg azt a helyet, amely a kitárolási hely jóváhagyásához látható. Ezután válassza a **Bevitel** lehetőséget.
-1. Az **LP** mezőben adja meg az azonosítótábla azonosítóját. Az azonosítótábla azonosítójának meg kell egyeznie a cikk, a raktár és a kiválasztott helyről kitárolt cikk helye esetében. Amikor elkészült, válassza a **Bevitel** elemet.
+1. Az **AT** mezőben adja meg az azonosítótábla azonosítóját. Az azonosítótábla azonosítójának meg kell egyeznie a cikk, a raktár és a kiválasztott helyről kitárolt cikk helye esetében. Amikor elkészült, válassza a **Bevitel** elemet.
 1. A **Cikk** mezőben adja meg a cikknek a számát, hogy jóváhagyja a kitárolás alatt álló cikket, majd válassza a **Bevitel** lehetőséget.
 1. A **Mennyiség** mezőben adja meg a kitárolás alatt álló cikk mennyiségét, majd válassza a **Bevitel** lehetőséget.
 1. A **cél LP** mezőben adja meg a cél azonosítótábla azonosítóját. A cél azonosítótábla felhasználó által definiált. Ügyeljen arra, hogy egy olyan azonosítótábla-azonosítót adjon meg, amelyre emlékezni fog. Javasoljuk, hogy az aktuális dátumot plusz egy kétjegyű sorozatot (ÉÉHHNN\#\#) használja formátumként, például *19112301*. Amikor elkészült, válassza a **Bevitel** elemet.

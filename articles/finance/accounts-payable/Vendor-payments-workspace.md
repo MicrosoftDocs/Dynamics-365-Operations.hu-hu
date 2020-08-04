@@ -3,7 +3,7 @@ title: Szállítói kifizetések munkaterület
 description: Ez a témakör a Szállítói kifizetések munkaterülettel kapcsolatban tartalmaz tájékoztatást. A Szállítói kifizetések munkaterület a szállítói kifizetések feldolgozásához kapcsolódó információkat jeleníti meg.
 author: abruer
 manager: AnnBe
-ms.date: 04/03/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 895725eeac46b5c20a2fb8dd932595a25fe372ce
-ms.sourcegitcommit: 724f5b400a4e7c385da9d8b22db416ebc3623b93
+ms.openlocfilehash: 86091e16712092086a641d79e49afbc5b205e934
+ms.sourcegitcommit: 14b554b43b9d86152ef27fdde6141589bcaf1161
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "3225013"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "3598109"
 ---
 # <a name="vendor-payments-workspace"></a>Szállítói kifizetések munkaterület
 
@@ -34,9 +34,10 @@ A **Szállítói kifizetések** munkaterület a szállítói kifizetések feldol
 
 A következő beállításokat meg kell adni, hogy az adatok megjelenjenek a **Szállítói kifizetések** között, a Power BI vizuális elemei között.
 1. Nyissa meg a **Rendszeradminisztráció > Beállítás > Rendszerparaméterek** pontot a **Rendszerpénznem** és a **Rendszerváltási árfolyam** beállításához.
-2. Lépjen a **Főkönyv > Beállítás > Főkönyv** részre a **Könyvelési pénznem** és az **Árfolyamtípus** beállításához. 
-2. Adja meg az árfolyamokat a tranzakció pénznemei és a könyvelési pénznem, a könyvelési pénznem és a rendszer pénzneme között. Lépjen ide: **Főkönyv > Pénznemek > Pénznemek árfolyamtípusai**.
-3. Lépjen a **Rendszerfelügyelet > Beállítás > Entitástár** részre a **VendPaymentBIMeasureV2** összesítő mérték frissítéséhez. 
+2. Lépjen a **Főkönyv > Naptárak > Pénzügyi naptárak** részre, hogy ellenőrizze az aktív időszakhoz hozzárendelt pénzügyi naptár dátumait.
+3. Lépjen a **Főkönyv > Beállítás > Főkönyv** részre a **Könyvelési pénznem** és az **Árfolyamtípus** beállításához. 
+4. Adja meg az árfolyamokat a tranzakció pénznemei és a könyvelési pénznem, a könyvelési pénznem és a rendszer pénzneme között. Lépjen ide: **Főkönyv > Pénznemek > Pénznemek árfolyamtípusai**.
+5. Lépjen a **Rendszerfelügyelet > Beállítás > Entitástár** részre a **VendPaymentBIMeasureV2** összesítő mérték frissítéséhez.
 
 ## <a name="my-work-view"></a>Saját munka nézet
 
