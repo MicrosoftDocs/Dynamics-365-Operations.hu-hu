@@ -14,6 +14,8 @@
               items:
                 - name: Új vagy módosult elemek a Platformfrissítések kezdőlapján
                   href: get-started/whats-new-home-page.md
+                - name: Platformfrissítés a 10.0.13-as verzióhoz (2020. október)
+                  href: get-started/whats-new-platform-updates-10-0-13.md
                 - name: Platformfrissítés a 10.0.12-es verzióhoz (2020. augusztus)
                   href: get-started/whats-new-platform-update-10-0-12.md
                 - name: Platformfrissítés a 10.0.11-es verzióhoz (2020. július)
@@ -82,6 +84,8 @@
           items:
             - name: Adatintegrálási (importálási/exportálási) stratégia kiválasztása
               href: data-entities/integration-overview.md
+            - name: Prioritásalapú szabályozás
+              hreF: data-entities/priority-based-throttling.md
             - name: Adatintegrációs API-k
               items:
                 - name: Adatkezelési csomag REST API-ja
@@ -152,6 +156,8 @@
                           items:
                             - name: Entitás- és mezőleképezések testreszabása
                               href: data-entities/dual-write/customizing-mappings.md
+                            - name: Jogi személy szerkesztése a kettős írás beállítása után
+                              href: data-entities/dual-write/edit-legal-entity.md
                             - name: Hibakezelő és riasztási értesítések
                               href: data-entities/dual-write/errors-and-alerts.md
                             - name: Alkalmazáséletciklus-kezelés
