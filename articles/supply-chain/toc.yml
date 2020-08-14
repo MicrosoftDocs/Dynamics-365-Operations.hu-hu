@@ -70,12 +70,12 @@
                   items:
                     - name: A Supply Chain Management kezdőlapjának új vagy módosult elemei
                       href: get-started/whats-new-home-page.md
+                    - name: Supply Chain Management 10.0.13 (2020. október)
+                      href: get-started/whats-new-scm-10-0-13.md
                     - name: Supply Chain Management 10.0.12 (2020. augusztus)
                       href: get-started/whats-new-scm-10-0-12.md
                     - name: Supply Chain Management 10.0.11 (2020. július)
                       href: get-started/whats-new-scm-10-0-11.md
-                    - name: Supply Chain Management 10.0.10 (2020. május)
-                      href: get-started/whats-new-scm-10-0-10.md
                 - name: Eltávolított vagy elavult funkciók
                   items:
                     - name: Eltávolított vagy elavult funkciók a Dynamics 365 Supply Chain Management szolgáltatásban
@@ -109,23 +109,23 @@
             - name: Képzési katalógus
               items:
                 - name: Tanulási katalógus kezdőlapja
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog.md?toc=/dynamics365/supply-chain/toc.json
+                  href: ./get-started/learning-catalog.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Üzleti döntéshozók
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-bdm.md?toc=/dynamics365/supply-chain/toc.json
+                  href: ./get-started/learning-catalog-bdm.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Üzleti felhasználók
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-business-user.md?toc=/dynamics365/supply-chain/toc.json
+                  href: ./get-started/learning-catalog-business-user.md
                 - name: Megvalósítási projektvezetők
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-project-manager.md?toc=/dynamics365/supply-chain/toc.json
+                  href: ./get-started/learning-catalog-project-manager.md
                 - name: Rendszergazdák
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-administrator.md?toc=/dynamics365/supply-chain/toc.json
+                  href: ./get-started/learning-catalog-administrator.md
                 - name: Fejlesztők
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-developer.md?toc=/dynamics365/supply-chain/toc.json
+                  href: ./get-started/learning-catalog-developer.md
                 - name: Partnerértékesítés és -marketing
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-partner-sales.md?toc=/dynamics365/supply-chain/toc.json
+                  href: ./get-started/learning-catalog-partner-sales.md
                 - name: Funkcionális konzultánsok
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-functional-consultant.md?toc=/dynamics365/supply-chain/toc.json
+                  href: ./get-started/learning-catalog-functional-consultant.md
                 - name: Megoldástervezők
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-solution-architect.md?toc=/dynamics365/supply-chain/toc.json
+                  href: ./get-started/learning-catalog-solution-architect.md
             - name: Ismerje meg a felhasználói felületet
               items:
                 - name: A felhasználói felület elemei
@@ -1257,6 +1257,8 @@
               items:
                 - name: Készletnaplók
                   href: inventory/inventory-journals.md
+                - name: Készletnaplók jóváhagyási munkafolyamatai
+                  href: inventory/inventory-journal-workflow.md
                 - name: Készlethelyek
                   href: inventory/inventory-locations.md
                 - name: Készletállapotok
@@ -1267,6 +1269,8 @@
                   href: inventory/tasks/maintain-barcode-types.md
                 - name: A készlet elérhetőségének ellenőrzése
                   href: inventory/tasks/check-availability-stock.md
+                - name: Aktuális készlet listája
+                  href: inventory/inventory-on-hand-list.md
                 - name: Készletszintek inicializálása a raktárban
                   href: inventory/tasks/initialize-stock-levels-warehouse.md
                 - name: Tényleges készlet áthelyezése a raktáron belül
@@ -1951,7 +1955,7 @@
                       href: production-control/tasks/define-resource-capabilities.md
                     - name: Útvonalak és műveletek
                       href: production-control/routes-operations.md
-                    - name: Raktári munkairányelvek
+                    - name: Munkairányelvek
                       href: warehousing/warehouse-work-policies.md
                     - name: Munkaidő-ütemezési tulajdonságok létrehozása
                       href: production-control/tasks/create-working-time-scheduling-properties.md
@@ -2589,6 +2593,8 @@
                   href: warehousing/tasks/set-up-work-template-purchase-orders.md
                 - name: Hely és termékdimenzió kombinálása
                   href: warehousing/location-product-dimension-mixing.md
+                - name: Minőség-ellenőrzés
+                  href: warehousing/quality-check.md
             - name: Kimenő raktári műveletek
               items:
                 - name: Foglalások a raktárkezelési modulban
@@ -2647,10 +2653,14 @@
                       href: warehousing/tasks/set-up-min-max-replenishment-process.md
                     - name: Feltöltés a zóna küszöbértéke alapján
                       href: warehousing/zone-threshold-replenishment.md
+                    - name: Feltöltés a hely kapacitása alapján
+                      href: warehousing/replenishment-over-location-capacity.md
                 - name: Rakományok összeállítása és szállítása
                   items:
                     - name: Megerősítés és áthelyezés
                       href: warehousing/confirm-and-transfer.md
+                    - name: Kimenő szállítmányok jóváhagyása kötegelt feladatokból
+                      href: warehousing/confirm-outbound-shipments-from-batch-jobs.md
                     - name: Speciális rakomány-összeállítás hullám közben
                       href: warehousing/advanced-load-building-during-wave.md
                     - name: Raktárba kiadás szabálya
@@ -2679,10 +2689,8 @@
               items:
                 - name: Raktári munkairányelvek
                   items:
-                    - name: Raktári munkairányelvek áttekintése
+                    - name: Munkairányelvek
                       href: warehousing/warehouse-work-policies.md
-                    - name: Raktári munkairányelvek beállítása
-                      href: warehousing/tasks/set-up-warehouse-work-policies-2016-05.md
                     - name: Készlet mozgatásának engedélyezése társított munkával a Raktárkezelésben
                       href: warehousing/move-inventory-associated-work.md
                     - name: Munkaosztály létrehozása
@@ -2715,7 +2723,7 @@
                       href: warehousing/tasks/define-partial-location-cycle-counting-process.md
                     - name: Raktárkezelés – készleten lévő elemek törlési feladata
                       href: warehousing/onhand-cleanup.md
-                    - name: Készletnapló
+                    - name: Készletnaplók
                       href: inventory/inventory-journals.md
                     - name: Készlethely
                       href: inventory/inventory-locations.md
