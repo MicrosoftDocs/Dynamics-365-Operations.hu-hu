@@ -3,7 +3,7 @@ title: Többcsatornás fizetések áttekintése
 description: Ez a témakör áttekintést nyújt a többcsatornás fizetésekről a Dynamics 365 Commerce szolgáltatásban.
 author: rubendel
 manager: AnnBe
-ms.date: 11/26/2019
+ms.date: 07/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 8.1.3
-ms.openlocfilehash: 2251e523f7dfa3a06f0c45a4e156dbe097587f9a
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 2127eb60a82bef8c6b5f5e9a917160331c483649
+ms.sourcegitcommit: 59fb179c770c799918f624cf345848fd4202bbdd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3022842"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "3613177"
 ---
 # <a name="omni-channel-payments-overview"></a>Többcsatornás fizetések áttekintése
 
@@ -68,11 +68,13 @@ A következő összetevők és beállítási lépések szükségesek:
 
 - **E-kereskedelmi integráció:** A Commerce szolgáltatással való integráció szükséges az olyan esetek támogatására, ahol a rendelés egy online áruházból származik. A Retail e-kereskedelem SDK csomaggal kapcsolatos további tudnivalókat lásd: [e-kereskedelmi platform szoftverfejlesztői készlet](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/ecommerce-platform-sdk)(SDK). A bemutató környezetben a referencia-áruház támogatja a többcsatornás fizetési forgatókönyveket. 
 - **Online fizetések konfigurációja:** Az online csatorna beállításának tartalmaznia kell egy olyan kifizetési összekötőt, amely frissítve van a többcsatornás fizetések támogatásához. Azt is megteheti, hogy a beépített kifizetési összekötőt használja. Az Adyen fizetési összekötő online áruházak számára történő konfigurálásával kapcsolatos további információkért lásd: [Adyen fizetési összekötő](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3#e-commerce). Az ebben a témakörben ismertetett e-kereskedelem beállítási lépésein kívül az Adyen összekötő beállításaiban a **Fizetési információ mentésének engedélyezése az e-kereskedelemben** paramétert **Igaz** értékre kell állítani. 
-- **Többcsatornás fizetési konfiguráció:** A háttérirodában lépjen a **Retail és Commerce \> Központi beállítás \> Paraméterek \> Commerce megosztott paraméterei**. Ezután a **Többcsatornás fizetések** lapon állítsa a **Többcsatornás fizetések használata** beállítást **Igen** értékre.
+- **Többcsatornás fizetési konfiguráció:** A háttérirodában lépjen a **Retail és Commerce \> Központi beállítás \> Paraméterek \> Commerce megosztott paraméterei**. Ezután a **Többcsatornás fizetések** lapon állítsa a **Többcsatornás fizetések használata** beállítást **Igen** értékre. A Commerce 10.0.12 és újabb verzióiban ez a beállítás a **Funkciókezelés** munkaterületen szerepel. Válassza ki a **Többcsatornás kifizetések** funkciót, majd kattintson az **Engedélyezés most** lehetőségre. 
 - **Fizetési szolgáltatások:** A hívásközpont a **Fizetési szolgáltatások** oldalon szereplő alapértelmezett fizetési összekötőt használja a fizetések feldolgozásához. A „Vásárlás a hívásközpontban, átvétel az üzletben” és ehhez hasonló forgatókönyvek támogatása érdekében az alapértelmezett fizetési összekötőnek az Adyen fizetési összekötőnek kell lennie, vagy egy olyan fizetési összekötőnek, amely megfelel a többcsatornás fizetések megvalósítási követelményeinek.
 - **Elektronikus átutalási szolgáltatás** : A fizetési terminálon keresztül történő fizetéseket be kell állítani az **Elektronikus átutalási szolgáltatás** gyorslapon a hardverprofilban. Az Adyen összekötő beépítetten támogatja a többcsatornás fizetési forgatókönyveket. Azok a fizetési összekötők, amelyek támogatják az **iNamedRequestHandler** felületet, szintén használhatók, ha támogatják a többcsatornás fizetéseket.
 - **Fizetési összekötő elérhetősége** : Egy rendelés visszahívása során a rendeléssel együtt visszahívott fizetőeszközsorok tartalmazzák a rendeléshez társított jóváhagyások létrehozásához használt fizetési összekötő nevét. A rendelés teljesítése során a Fizetések SDK megpróbálja ugyanazt az összekötőt használni, amelyet az eredeti jóváhagyás létrehozására használtak. Ezért az ugyanazokkal a kereskedői tulajdonságokkal rendelkező fizetési összekötőnek elérhetőnek kell lennie a rögzítésre. 
 - **Kártyatípusok:** A többcsatornás forgatókönyvek megfelelő működéséhez minden csatornának ugyanazzal a beállított fizetőeszközzel kell rendelkeznie, amely használható többcsatornás esetekhez. Ez a beállítás tartalmazza a fizetési mód azonosítóját és a kártyatípus azonosítóját. Ha például a **Kártyák** fizetőeszköztípus azonosítója **2** az online áruház beállításában, akkor a kiskereskedelmi üzlet beállításában is ugyanezzel az azonosítóval kell rendelkeznie. Ugyanez a követelmény vonatkozik a kártyatípus azonosítójára. Ha a **12**-es kártyaszámot állítják be a **VISA** értékhez az online áruházban, akkor ugyanezt az azonosítót kell beállítani a kiskereskedelmi üzletben. 
+- A Retail Modern POS for Windows vagy Android beépített hardverállomással -vagy-
+- Modern POS for iOS vagy Cloud POS csatlakoztatott, megosztott hardverállomással. 
 
 ### <a name="basic-principle-supporting-omni-channel-payments"></a>A többcsatornás fizetéseket támogató alapelv
 
@@ -100,8 +102,10 @@ Az alábbi szakaszok bemutatják az egyes forgatókönyvek lépései, valamint a
 Az indítás előtt győződjön meg arról, hogy megtalálhatók a következő előfeltételek:
 
 - Van egy referenciaüzlet, ahol konfigurált Adyen-összekötő található.
-- A **Többcsatornás fizetések** beállítás értéke a **Commerce megosztott paraméterei** oldalon **Igaz**.
+- A **Többcsatornás fizetések** beállítás értéke a **Commerce megosztott paraméterei** oldalon **Igaz**. Az újabb verziókban ezt a beállítást áthelyezték a **Funkciókezelés** munkaterületre, ahol kiválaszthatja a **Többcsatornás fizetések** funkciót, majd kattintson az **Engedélyezés most** lehetőségre. 
 - Az Adyen fizetési összekötő a houstoni pénztárgéphez van konfigurálva.
+- A Retail Modern POS for Windows vagy Android beépített hardverállomással -vagy-
+- Modern POS for iOS vagy Cloud POS csatlakoztatott, megosztott hardverállomással. 
 
 Kövesse az alábbi lépéseket a forgatókönyv futtatásához.
 
@@ -229,3 +233,5 @@ Ha egy olyan rendelést, amelynél több fizetőeszköz és több sor van felvé
 
 - [Kifizetésekkel kapcsolatos GYIK](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
 - [Dynamics 365 fizetési összekötő az Adyen szolgáltatáshoz](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3)
+- [BOPIS konfigurálása Dynamics 365 Commerce értékelési környezetben](https://docs.microsoft.com/en-us/dynamics365/commerce/cpe-bopis)
+

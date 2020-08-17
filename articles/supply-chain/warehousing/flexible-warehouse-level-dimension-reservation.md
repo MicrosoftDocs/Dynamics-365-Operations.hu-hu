@@ -1,9 +1,9 @@
 ---
 title: Rugalmas raktárszintű dimenziófoglalási irányelv
 description: Ez a témakör azt mutatja be, hogy a készletfoglalási irányelv, amely lehetővé teszi, hogy a kötegelt nyomon követésű termékeket értékesítő és a logisztikát a WMS-kompatibilis műveletekekként futtató vállalatok lefoglaljanak bizonyos kötegeket ügyfelek értékesítési rendeléseihez, még akkor is, ha a foglalási hierarchia a termékekhez kapcsolódóan nem engedélyezi a meghatározott kötegek foglalását.
-author: omulvad
+author: perlynne
 manager: tfehr
-ms.date: 02/07/2020
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -13,25 +13,29 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: omulvad
+ms.author: perlynne
 ms.search.validFrom: 2020-01-15
-ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: ec80346126713cc604b00e6ca7f6e8f4c242dc6f
-ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
+ms.dyn365.ops.version: 10.0.13
+ms.openlocfilehash: 65304216b579b8def493d1e4218174cb9617013d
+ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "3530305"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "3652179"
 ---
 # <a name="flexible-warehouse-level-dimension-reservation-policy"></a>Rugalmas raktárszintű dimenziófoglalási irányelv
 
 [!include [banner](../includes/banner.md)]
 
-Amikor egy „kötegalatti\[hely\]” típusú készlet foglalási hierarchiája termékekhez van társítva, a kötegelt nyomon követéssel ellátott termékeket értékesítő és a logisztikai műveleteiket a Microsoft Dynamics 365 raktározási rendszerrel (WMS) kompatibilisként futtató vállalatok nem foglalhatják le az illető termékek konkrét kötegeit ügyfelek értékesítési rendeléseihez. Ez a témakör bemutatja azt a készletfoglalási irányelvet, amely alapján a vállalatok meghatározott kötegeket foglalhatnak le, még akkor is, ha a termékek a „kötegalatti\[hely\]” foglalási hierarchiával vannak társítva.
+Amikor egy „kötegalatti\[hely\]” típusú készlet foglalási hierarchiája termékekhez van társítva, a kötegelt nyomon követéssel ellátott termékeket értékesítő és a logisztikai műveleteiket a Microsoft Dynamics 365 raktározási rendszerrel (WMS) kompatibilisként futtató vállalatok nem foglalhatják le az illető termékek konkrét kötegeit ügyfelek értékesítési rendeléseihez.
+
+Ugyanígy nem foglalható le specifikus azonosítótábla az értékesítési rendelésen szereplő termékekhez, amikor ezek a termékek az alapértelmezett foglalási hierarchiához vannak társítva.
+
+Ez a témakör bemutatja azt a készletfoglalási irányelvet, amely alapján a vállalatok meghatározott kötegeket vagy azonosítótáblákat foglalhatnak le, még akkor is, ha a termékek a „kötegalatti\[hely\]” foglalási hierarchiával vannak társítva.
 
 ## <a name="inventory-reservation-hierarchy"></a>Készletfoglalási hierarchia
 
-Ez a szakasz összegzi a meglévő készletfoglalási hierarchiát. A program a kötegelt nyomon követéssel és a sorozatszámmal kezelt cikkek kezelési módjára koncentrál.
+Ez a szakasz összegzi a meglévő készletfoglalási hierarchiát.
 
 A készletfoglalási hierarchia azt írja elő, hogy a tárolási dimenziókat illetően az igény szerinti rendelés a hely, a raktár és a készlet állapotának kötelező dimenzióit hordozza. A raktári logika felelős azért, hogy a kívánt mennyiségekhez helyet rendeljen, és lefoglalja azt. Más szóval az igény szerinti rendelés és a raktári műveletek közötti interakciókban várhatóan az igény szerinti rendelése jelzi, hogy honnan kell szállítani a rendelést (azaz a helyet és a raktárat). A raktár ezután saját logikájára alapozva megkeresi a szükséges mennyiséget a raktár területén.
 
@@ -64,7 +68,7 @@ Ha a hierarchiában kiválasztja a **Kötegszám** szintjét, akkor a program au
 > [!NOTE]
 > A **Foglalás engedélyezése igény szerinti rendelésnél** jelölőnégyzet csak a raktári hely dimenzió alatti foglalási hierarchia szintjére vonatkozik.
 >
-> A **Kötegszám** a hierarchia egyetlen olyan szintje, amely nyitott a rugalmas foglalási irányelv számára. Más szóval nem jelölheti be a **Foglalás engedélyezése igény szerinti rendelésnél** jelölőnégyzetet a **Hely**, **Rendszámtábla** vagy **Sorozatszám** szinteken.
+> A **Kötegszám** és az **Azonosítótábla** a hierarchia egyetlen olyan szintjei, amelyek nyitottat a rugalmas foglalási irányelv számára. Más szóval nem jelölheti be a **Foglalás engedélyezése igény szerinti rendelésnél** jelölőnégyzetet a **Hely** vagy **Sorozatszám** szinteken.
 >
 > Ha a foglalási hierarchiában szerepel a sorozatszám dimenzió (amelynek mindig a **Kötegszám** szint alatt kell lennie), és ha bekapcsolta a kötegszám-specifikus foglalást,, a rendszer továbbra is a sorozatszám szerinti foglalási és kitárolási műveleteket fogja kezelni a „sorszámalatti\[hely\]” foglalási irányelvre vonatkozó szabályok alapján.
 
@@ -90,11 +94,11 @@ A következő szabályok érvényesek a mennyiségek feldolgozásakor, ha a köt
 
 A következő példa bemutatja a végpontok közötti áramlást.
 
-## <a name="example-scenario"></a>Példaforgatókönyv
+## <a name="example-scenario-batch-number-allocation"></a>Példaforgatókönyv: Köteg számának felosztása
 
 Ebben a példában a bemutatóadatokat kell telepíteni, és az **USMF** demó-adatvállalatot kell használnia.
 
-### <a name="set-up-an-inventory-reservation-hierarchy-to-allow-batch-specific-reservation"></a>Hozzon létre egy készletfoglalási hierarchiát, hogy lehetővé tegye a kötegspecifikus foglalást
+### <a name="set-up-an-inventory-reservation-hierarchy-to-allow-batch-specific-reservation"></a><a name="Example-batch-allocation"></a>Hozzon létre egy készletfoglalási hierarchiát, hogy lehetővé tegye a kötegspecifikus foglalást
 
 1. Nyissa meg a **Raktárkezelés** \> **Beállítás** \> **Készlet \> Foglalási hierarchia** lehetőséget.
 2. Válassza az **Új** lehetőséget.
@@ -122,7 +126,7 @@ Ebben a példában a bemutatóadatokat kell telepíteni, és az **USMF** demó-a
     | 24        | B11          | FL-001   | LP11          | 10       |
     | 24        | B22          | FL-002   | LP22          | 10       |
 
-### <a name="enter-sales-order-details"></a>Értékesítési rendelés adatainak bevitele
+### <a name="enter-sales-order-details"></a><a name="sales-order-details"></a>Értékesítési rendelés adatainak bevitele
 
 1. Ugorjon az **Értékesítés és marketing** \> **Értékesítési rendelések** \> **Minden értékesítési** rendelés pontra.
 2. Válassza az **Új** lehetőséget.
@@ -186,6 +190,176 @@ Ebben a példában a bemutatóadatokat kell telepíteni, és az **USMF** demó-a
 
     A **B11** kötegszámhoz tartozó menniységet (**10**) kitárolták az értékesítési rendelési sorra, és elhelyezték a **Baydoor** helyen. Ezen a ponton készen áll a teherautóra történő berakásra, és a vevő címére történő feladásra.
 
+## <a name="flexible-license-plate-reservation"></a>Rugalmas azonosítótábla-foglalás
+
+### <a name="business-scenario"></a>Üzleti eset
+
+Ebben a forgatókönyvben a vállalat raktárkezelést és munkafeldolgozást alkalmaz, illetve a munka létrehozása előtt, a Supply Chain Managementen kívül kezeli a rakománytervezést az egyes raklapok/tárolók szintjén. Ezeket a tárolókat a készletdimenziók modulban az azonosítótáblák jelölik. Ezért ehhez a megközelítéshez a kitárolási munka megkezdése előtt be kell jelölni a megadott azonosítótábla-kiosztást az értékesítési rendeléssorokhoz. A vállalat rugalmasan kívánja kezelni a azonosítótábla-foglalási szabályokat, így a következő viselkedések fordulhatnak elő:
+
+- Az azonosítótábla rögzíthető és lefoglalható, amikor a rendelést az értékesítési feldolgozó átveszi, és más igények során nem alkalmazható. Ez a viselkedés segít annak biztosításában, hogy a tervezett azonosítótáblát szállítsák az ügyfélnek.
+- Ha az azonosítótábla még nincs hozzárendelve értékesítési rendeléssorhoz, akkor a raktári személyzet a kitárolási munka során, az értékesítési rendelés regisztrálása és a foglalás befejeződése után kiválaszthatja az azonosítótáblát.
+
+### <a name="turn-on-flexible-license-plate-reservation"></a>Kapcsolja be a rugalmas azonosítótábla-foglalást
+
+A rugalmas azonosítótábla-foglalás használata előtt két funkciót be kall kapcsolni a rendszerében. A rendszergazdák használhatják a [funkciókezelési](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) beállításokat ezen funkciók állapotának ellenőrzéséhez, és szükség esetén a bekapcsolásához. A funkciókat a következő sorrendben kell bekapcsolni:
+
+1. **Funkció neve:** *Rugalmas raktárszintű dimenziófoglalás*
+1. **Funkció neve:** *Rugalmas rendeléshez véglegesített azonosítótábla-foglalás*
+
+### <a name="reserve-a-specific-license-plate-on-the-sales-order"></a>Specifikus azonosítótábla foglalása az értékesítési rendelésen
+
+Ha engedélyezni szeretné az azonosítótábla foglalását egy rendelésen, akkor ki kell választania a **Foglalás engedélyezése az igény szerinti rendelésnél** jelölőnégyzetet az **Azonosítótábla** szinten a megfelelő cikkel társított hierarchiához tartozó **Készletfoglalási hierarchiák** oldalon.
+
+![Készletfoglalási hierarchiák oldala a rugalmas azonosítótábla foglalási hierarchiához](media/Flexible-LP-reservation-hierarchy.png)
+
+A rendeléshez tartozó azonosítótábla-foglalást a telepítés bármely pontján engedélyezheti. A módosítás nem fogja érinteni a módosítás előtt létrehozott foglalásokat vagy nyitott raktári munkákat. Azonban a **Foglalás engedélyezése az igény szerinti rendelésnél** jelölőnégyzetet nem tudja törölni, ha az adott foglalási hierarchiához társított egy vagy több cikk esetén a *Rendelésben*, *Foglalt tényleges* vagy *Megrendelve* állapotú nyitott, kimenő készlettranzakció-problémák léteznek.
+
+Még ha az **Azonosítótábla** szintjén be is van jelölve a **Foglalás engedélyezése igény szerinti rendelésnél** jelölőnégyzet, akkor is lehetséges, hogy a rendeléshez *nem* foglalja le az adott azonosítótáblát. Ebben az esetben a foglalási hierarchiára az alapértelmezett raktári műveletek logika vonatkozik.
+
+Ha egy specifikus azonosítótábla-foglalásra van szüksége, egy [Open Data Protocol (OData)](../../fin-ops-core/dev-itpro/data-entities/odata.md) folyamatot kell használnia. Az alkalmazásban ezt a foglalást közvetlenül egy értékesítési rendelésből is megteheti az **Excel programban történő megnyitás** parancs **Azonosítótáblánkénti rendelésben véglegesített foglalások** lehetőségével. Az Excel-bővítményben megnyitott entitásadatokban meg kell adnia a következő foglaláshoz kapcsolódó adatokat, majd ki kell választania a **Közzététel** lehetőséget az adatokat Supply Chain Managementbe történő visszaküldéséhez:
+
+- Hivatkozás (Csak az *Értékesítési rendelés* értéke támogatott.)
+- Rendelésszám (Az érték az adagból származtatható.)
+- Adagazonosító
+- Azonosítótábla
+- Mennyiség
+
+Ha egy kötegelt nyomkövetésű cikkhez külön azonosítótábla-foglalásra van szüksége, használja a **Köteg lefoglalása** oldalt az [Értékesítési rendelés adatainak bevitele](#sales-order-details) szakaszban leírtaknak megfelelően.
+
+Amikor a rendeléshez véglegesített azonosítótábla-foglalást használó értékesítési rendeléssort a raktári műveletek dolgozzák fel, a rendszer nem használja a helyutasításokat.
+
+Ha egy raktári munkacikk olyan sorokból áll, amelyek egy teljes raklapnak felelnek meg, és rendelkeznek azonosítótáblával – véglegesített mennyiségekkel, akkor a kitárolási folyamatot egy olyan mobileszköz menüelemével optimalizálhatja, amin a **Kezelés azonosítótábla szerint** értéke *Igen*. A raktári dolgozó ezután a tárolási munka befejezéséhez beolvashatja az azonosítótáblát, és nem kell egyenként beolvasnia a cikkeket.
+
+![A mobileszköz menüeleme, amelyen a Kezelés azonosítótábla szerint lehetőség Igen értékre van állítva](media/Handle-by-LP-menu-item.png)
+
+Mivel a **Kezelés azonosítótábla szerint** funkció nem támogatja a több raklapot magába foglaló munkát, jobb, ha külön munkaelemet használ a különböző azonosítótáblákhoz. Ennek a módszernek a használatához adja hozzá a **Munkasablon** oldalhoz munkafejlécként a **Rendeléshez véglegesített azonosítótábla azonosítója** mezőt.
+
+## <a name="example-scenario-set-up-and-process-an-order-committed-license-plate-reservation"></a>Példaforgatókönyv: állítson be és dolgozzon fel egy rendeléshez véglegesített azonosítótábla-foglalást
+
+Ez a forgatókönyv bemutatja, hogyan állítson be és dolgozzon fel egy rendeléshez véglegesített azonosítótábla-foglalást.
+
+### <a name="make-demo-data-available"></a>A bemutató adatok elérhetővé tétele
+
+Ez a forgatókönyv olyan értékekre és rekordokra hivatkozik, amelyek szerepelnek a Supply Chain Management szolgáltatáshoz biztosított standard bemutatóadatokban. Ha a munkát az itt megadott mintaadatok és értékek alapján kívánja elvégezni, akkor egy olyan környezetben kell dolgoznia, amelynél a szokásos demóadatok telepítve vannak. Emellett a kezdés előtt állítson be egy jogi személyt az **USMF** lehetőséghez.
+
+### <a name="create-an-inventory-reservation-hierarchy-that-allows-for-license-plate-reservation"></a>Hozzon létre egy olyan készletfoglalási hierarchiát, amely lehetővé teszi az azonosítótábla foglalást
+
+1. Nyissa meg a **Raktárkezelés \> Beállítás \> Készlet \> Foglalási hierarchia lehetőséget**.
+1. Válassza az **Új** lehetőséget.
+1. Adjon meg egy értéket a **Név** mezőben (pl. *FlexibleLP*).
+1. A **Leírás** mezőben adjon meg egy értéket (például: *Rugalmas LP foglalás*).
+1. A **Kiválasztott** listában válassza ki a **Kötegszám**, **Sorozatszám**, és **Tulajdonos** értéket.
+1. Válassza az **Eltávolítás** gomb ![vissza nyíl](media/backward-button.png) lehetőségét a kiválasztott rekordok **Elérhető** listára történő átmozgatásához.
+1. Válassza ki az **OK** lehetőséget.
+1. Az **Azonosítótábla** dimenzió szintjének sorában jelölje be a **Foglalás engedélyezése igény szerinti rendelésnél** jelölőnégyzetet. A **Hely** szintje automatikusan be van jelölve, és a jelölőnégyzet nem törölhető.
+1. Válassza a **Mentés** lehetőséget.
+
+### <a name="create-two-released-products"></a>Két kiadott termék létrehozása
+
+1. Kattintson a **Termékinformációk kezelése \> Termékek \> Kiadott termékek** lehetőségre.
+1. A Műveleti ablaktáblán kattintson az **Új** elemre.
+1. Az **Új kiadás** párbeszédpanelen adja meg a következő értékeket:
+
+    - **Termékszám:** *Cikk1*
+    - **Cikkszám:** *Cikk1*
+    - **Cikkmodellcsoport:** *FIFO*
+    - **Cikkcsoport:** *Audio*
+    - **Tárolásidimenzió-csoport:** *Áru*
+    - **Nyomonkövetésidimenzió-csoport:** *Nincs*
+    - **Foglalási hierarchia:** *RugalmasLP*
+
+1. Válassza az **OK** gombot a termék létrehozásához és a párbeszédpanel bezárásához.
+1. Az új termék megnyílik. A **Raktár** gyorslapon állítsa az **Egységszekvenciacsoport-azonosító** mezőt *ea* értékre.
+1. Az előző lépések megismétlésével létrehozhat egy második terméket, amelynek ugyanaz a beállítása, de a **Termékszám** és a **Termékazonosító** mezőket a *Cikk2* értékre kell állítani.
+1. A Műveleti panelen, a **Készletkezelés lapon** a **Megtekintés** csoportban válassza ki az **Aktuális készlet** lehetőséget. Ezután válassza ki a **Mennyiség kiigazítása** lehetőséget.
+1. Állítsa be az új cikkek aktuális készletét a következő táblában meghatározott módon.
+
+    | Tétel  | Raktár | Hely | Azonosítótábla | Mennyiség |
+    |-------|-----------|----------|---------------|----------|
+    | Cikk1 | 24        | FL-010   | LP01          | 10       |
+    | Cikk1 | 24        | FL-011   | LP02          | 10       |
+    | Cikk2 | 24        | FL-010   | LP01          | 5        |
+    | Cikk2 | 24        | FL-011   | LP02          | 5        |
+
+    > [!NOTE]
+    > Létre kell hoznia a két azonosítótáblát, és olyan helyeket kell – például *FL-010* és *FL-011* – használnia, amelyek engedélyezik a vegyes cikkek használatát.
+
+### <a name="create-a-sales-order-and-reserve-a-specific-license-plate"></a>Hozzon létre értékesítési rendelést, és foglaljon le egy specifikus azonosítótáblát
+
+1. Ugorjon az **Értékesítés és marketing \> Értékesítési rendelések \> Minden értékesítési rendelés** pontra.
+1. Válassza az **Új** lehetőséget.
+1. Az **Értékesítési rendelés létrehozása** párbeszédpanelen adja meg a következő értékeket:
+
+    - **Vevőkód** *US-001*
+    - **Raktár:** *24*
+
+1. Válassza az **OK** gombot az **Értékesítési rendelés létrehozása** párbeszédpanel bezárásához, és nyissa meg az új beszerzési rendelést.
+1. Az **Értékesítésirendelés-sorok** gyorslapon adjon hozzá egy sort, amely a következő beállításokat tartalmazza:
+
+    - **Cikkszám:** *Cikk1*
+    - **Mennyiség:** *10*
+
+1. Adjon hozzá egy második értékesítési rendeléssort, amelynek beállításai a következők:
+
+    - **Cikkszám:** *Cikk2*
+    - **Mennyiség:** *5*
+
+1. Válassza a **Mentés** lehetőséget.
+1. A **Sor részletei** gyorslapon,, a **Beállítás** lapon jegyezze fel az egyes sorok **Adagazonosító** értékét. Ezekre az értékekre szükség lesz a specifikus azonosítótábla foglalásakor.
+
+    > [!NOTE]
+    > Ha egy specifikus azonosítótábla foglalására van szükség, akkor az **Azonosítótáblánkénti rendelésben véglegesített foglalások** adatentitást kell használnia. Egy kötegelt nyomkövetésű cikkhez specifikus azonosítótábla-foglaláshoz használhatja a **Köteg lefoglalása** oldalt az [Értékesítési rendelés adatainak bevitele](#sales-order-details) szakaszban leírtaknak megfelelően.
+    >
+    > Ha közvetlenül az értékesítési rendeléssorban adja meg a azonosítótáblát, és megerősíti azt a rendszerben, akkor a raktárkezelés feldolgozását nem használják a sorhoz.
+
+1. Válassza a **Megnyitás Microsoft Office-ban**, majd az **Azonosítótáblánkénti rendelésben véglegesített foglalások** lehetőséget, és töltse le a fájlt.
+1. Nyissa meg az Excel programban a letöltött fájlt, és válassza a **Szerkesztés engedélyezése** lehetőséget az Excel-bővítmény futtatásának engedélyezéséhez.
+1. Ha az Excel beépülő modult első alkalommal futtatja, válassza az **Ez a bővítmény megbízható** lehetőséget.
+1. Ha a rendszer bejelentkezést kér, válassza a **Bejelentkezés** lehetőséget, majd a Supply Chain Management bejelentkezéshez használt hitelesítő adatok használatával jelentkezzen be.
+1. Ha egy cikk foglalását egy adott azonosítótáblához szeretné lefoglalni, az Excel-bővítményben válassza az **Új** lehetőséget a foglalási sor hozzáadásához, majd állítsa be a következő értékeket:
+
+    - **Adagazonosító:** Adja meg a *Cikk1* értékesítési rendelési sorában talált **Adagazonosító** értéket.
+    - **Azonosítótábla:** *LP02*
+    - **Készletmennyiség lefoglalása:** *10*
+
+1. Válassza ki az **Új** lehetőséget egy további foglalási sor hozzáadásához, és állítsa be a következő értékeket:
+
+    - **Adagazonosító:** Adja meg a *Cikk2* értékesítési rendelési sorában talált **Adagazonosító** értéket.
+    - **Azonosítótábla:** *LP02*
+    - **Készletmennyiség lefoglalása:** *5*
+
+1. Az Excel-bővítményben válassza a **Közzététel** lehetőséget, ha vissza szeretné küldeni az adatokat a Supply Chain Management szolgáltatásba.
+
+    > [!NOTE]
+    > A foglalási sor csak akkor jelenik meg a rendszerben, ha a közzététel hibátlanul befejeződött.
+
+1. Menjen vissza a Supply Chain Management szolgáltatásba. 
+1. A cikk foglalásának megtekintéséhez kattintson az **Értékesítési rendeléssorok** gyorslapon a **Készlet** menüre, majd válassza a **Megtartás \> Foglalás** pontra. Figyelje meg, hogy a *Cikk1* értékesítési rendeléssorához a *10*-es készlet van lefoglalva, a *Cikk2* értékesítési rendeléssorához pedig az *5*-ös készlet van lefoglalva.
+1. Az értékesítési rendeléssor foglalásához kapcsolódó készlettranzakciók áttekintéséhez kattintson az **Értékesítési rendeléssorok** gyorslap **Készlet** menüre, és válassza a **Megtekintés \> Tranzakciók** pontot. Figyelje meg, hogy két olyan tranzakció van, amely a foglaláshoz kapcsolódik: az egyikben a **Hizatkozás** mező *Értékesítési rendelés* lehetőségre van állítva, a másiknál pedig a **Hivatkozás** mező *Rendelésben véglegesített foglalás* lehetőségre van állítva.
+
+    > [!NOTE]
+    > Egy olyan tranzakció, amelyben a **Hivatkozás** mező értéke *Értékesítési rendelés* értékre van állítva, a **Hely** szint fölötti készletdimenziók sorának foglalását jelenti (webhely, raktás és készletállapot). Az olyan tranzakció, amelyben a **Hivatkozás** mező a *Rendelésben véglegesített foglalás* értékre van állítva, a megadott azonosítótábla és hely rendelési sor foglalását jelenti.
+
+1. Az értékesítési rendelés kiadásához a műveleti ablaktáblán a **Raktár** lapon a **Műveletek** csoportban válassza a **Kiadás raktárhoz** lehetőséget.
+
+### <a name="review-and-process-warehouse-work-with-order-committed-license-plates-assigned"></a>A raktári munka áttekintése és feldolgozása a hozzárendelt, rendelésben véglegesített azonosítótáblával
+
+1. Az **Értékesítési rendelés sorai** gyorslap **Raktár** menüjében válassza a **Munka részletes adatai** lehetőséget.
+
+    Amikor egy adott köteg foglalása befejeződik, a rendszer nem használja a helyutasításokat, amikor létrehozza az azonosítótábla-foglalást használó értékesítési rendeléshez tartozó munkát. Mivel a rendelésben véglegesített foglalás meghatározza az összes készletdimenziót, többek között a helyet is, így nem kell használni a helyutasításokat, mivel ezek a készletdimenziók csak a munkában szerepelnek. Ezek a **Munkakészlet-tranzakciók** lap **Készletdimenziókból** szakaszában jelennek meg.
+
+    > [!NOTE]
+    > Miután létrehozta a munkát, a program eltávolítja a cikk azon készlettranzakcióját, amely esetén a **Referencia** mező beállítása *Rendelésben véglegesített foglalás*. Az a készlettranzakció, amelyben a **Referencia** mező beállása *Munka*, most a tényleges foglalást tárolja az összes mennyiség raktárdimenziójához.
+
+1. A mobileszközön végezze el a munka ki- és betárolást egy olyan menüelem használatával, ahol ki van pipálva a **Kezelés azonosítótábla szerint** jelölőnégyzet.
+
+    > [!NOTE]
+    > A **Kezelés azonosítótábla szerint** funkció segít a teljes azonosítótábla feldolgozásában. Ha az azonosítótábla egy részét mindenképpen fel kell dolgoznia, akkor ez a funkció nem használható.
+    >
+    > Azt javasoljuk, hogy minden azonosítótáblához külön hozzon létre egy munkát. Ennek érdekében használja a **Munkasablon** lap **Munkafejléc-szünetek** funkcióját.
+
+    Az *LP02* azonosítótáblát ezennel már kitárolták az értékesítési rendeléssorokban, és betárolták a *Baydoor* helyre. Ezen a ponton készen áll a berakásra, és a vevőnek történő feladásra.
+
 ## <a name="exception-handling-of-warehouse-work-that-has-order-committed-batch-numbers"></a>A rendeléshez véglegesített kötegszámokkal rendelkezó raktári munka kivételkezelése
 
 A rendeléshez véglegesített kötegszámokkal kitárolási raktári munkájának a kivételkezelése és műveletei ugyanazok, mint a normális munkának. Általában a nyitott munka vagy munkasor érvényteleníthető, megszakítható, mert egy felhasználói hely megtelt, a kitárolása lehet rövid, és egy mozgás miatt módosítható. Hasonlóképpen a már elvégzett munka kitárolt mennyisége is csökkenthető, illetve a munka visszafordítható.
@@ -194,7 +368,7 @@ A program a következő kulcsfontosságú szabályt alkalmazza az összes ilyen 
 
 ### <a name="example-scenario"></a>Példaforgatókönyv
 
-Példa erre a helyzetre olyan eset, amikor a korábban elvégzett munka kitárolását a **Kitárolt mennyiség csökkentése** funkció használatával visszavonják. Ez a példa a témakör előző példájának folytatása.
+Példa erre a helyzetre olyan eset, amikor a korábban elvégzett munka kitárolását a **Kitárolt mennyiség csökkentése** funkció használatával visszavonják. Ez a példa feltételezi, hogy már befejezte a [Példaforgatókönyv: Köteg számának felosztása](#Example-batch-allocation) részben leírt lépéseket. Ettől a példától folytatódik.
 
 1. Lépjen a **Raktárkezelés** \> **Rakományok** \> **Aktív rakományok** elemhez.
 2. Válassza ki az értékesítési rendelés szállítmányával együtt létrehozott terhelést.

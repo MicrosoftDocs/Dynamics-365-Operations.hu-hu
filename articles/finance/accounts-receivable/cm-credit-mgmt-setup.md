@@ -3,7 +3,7 @@ title: Hitelkezelési pereméterek beállítása
 description: Ez a témakör azt mutatja be, milyen beállításokkal lehet konfigurálni a Hitelkezelést a vállalkozás igényeinek kielégítésére.
 author: mikefalkner
 manager: AnnBe
-ms.date: 03/19/2020
+ms.date: 08/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 6d4ced14e51dd28d51d2081d8e92891e31eea49d
-ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
+ms.openlocfilehash: c4930d346ddc4679e6a3196c5f35adb598ed38c1
+ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154528"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "3651905"
 ---
 # <a name="credit-management-parameters-setup"></a>Hitelkezelési pereméterek beállítása
 
@@ -34,7 +34,7 @@ Négy gyorslap van a **Hitel** szakaszban, ahol megváltoztathatja a Hitelkezel�
 
 ### <a name="credit-holds"></a>Hitelfelfüggesztések
 
-- Állítsa be az **Értékesítési rendelések értékei módosításának engedélyezése a várakoztatás feloldását követően** beállítást **Igen**, hogy meg legyen követelve az, hogy a feladási szabályok ismét ellenőrizve legyenek ha az értékesítési rendelés értéke (kiterjesztett ár) módosítva lett, amióta az értékesítési rendelést felszabadították a várakoztatási listából. .
+- Állítsa be az **Értékesítési rendelések értékei módosításának engedélyezése a várakoztatás feloldását követően** beállítást **Nem**, hogy meg legyen követelve az, hogy a feladási szabályok ismét ellenőrizve legyenek ha az értékesítési rendelés értéke (kiterjesztett ár) növelve lett, amióta az értékesítési rendelést felszabadították a várakoztatási listából. .
 - A **Visszavont rendelések okai** mezőben válassza ki azt a felszabadítási okot, amelyet alapértelmezésként fog használni, amikor az értékesítési rendelést, amely a hitelkeretkezelésen esett át érvényteleníti.
 - A **Ügyfelek hitelcsoportjainak hitelkorlátjának ellenőrzése** beállítást állítsa **Igen** értékre, ha ellenőrizni szeretné egy ügyfélhitelcsoport hitelkorlátját, ha az értékesítési rendelés egy ügyfélhitelcsoporthoz tartozik. A rendszer ellenőrzi a csoport hitelkeretét, majd ha szükséges, a program ellenőrzi a vevő hitelkeretét.
 - Állítsa be a **Hitelkorlát ellenőrzése, aha a fizetési feltételek magasabbak lettek** beállítás **Igen** értékre, hogy a fizetési feltételek rangsorolása ellenőrizve legyen annak meghatározásához, hogy a fizetési feltételek az értékesítési rendelésen eltérnek az ügyfél alapértelmezett fizetési feltételeitől. Ha az új fizetési feltételek magasabb rangúak, mint az eredeti fizetési feltételek, akkor a rendelés a hitelkeretkezeléssel kapcsolatos várakoztatásra kerül.

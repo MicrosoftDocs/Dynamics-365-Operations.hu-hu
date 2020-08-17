@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 32271e967da2e7f3702b0c6c2dcdba460aa1b382
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 4c8216ebdd1f26601743e6b35849be0813d06b4a
+ms.sourcegitcommit: 4676ea9646fa1a182103ecab93e78a69001f0b8d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770620"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "3612662"
 ---
 # <a name="process-allocations"></a>Felosztások feldolgozása
 
@@ -34,8 +34,8 @@ A cikk tájékoztatást nyújt a felosztásokról, a rendszerben történő feld
 A következő képességek támogatják ezt a folyamatot:
 
 -   Manuálisan is lefoglalhatók tranzakcióösszegek a Felosztás művelettel a könyvelési felosztás pontban, vagy pénzügyi dimenzió alapértelmezett sablonjainak használatával egy dokumentumre. További tudnivalókért lásd: [Könyvelési felosztások.](../accounts-payable/accounting-distributions.md).
--   Tranzakcióösszegek automatikus felosztása az egyes fő számlán megadott felosztási feltételek alapján. Felosztási számlabejegyzések generálódnak minden naplóhoz, a százalék és a főkönyvi célszámla alapján, amikor egy számlázási bejegyzés megfelel a forrás főkönyvi számlában megadott feltételeknek.
--   főkönyvi egyenlegek, vagy fix összegek automatikus felosztása a főkönyvi felosztási szabályok alapján. A főkönyvi felosztási szabályok feldolgozása rendszeres időközönként történik, felosztási naplók használatával. 
+-   Tranzakcióösszegek automatikus felosztása az egyes fő számlán megadott felosztási feltételek alapján. Felosztási számlabejegyzések generálódnak minden naplóhoz, a százalék és a főkönyvi célszámla alapján, amikor egy számlázási bejegyzés megfelel a forrás főkönyvi számlában megadott feltételeknek. További információ: [Fő számla felosztási feltételei](../general-ledger/main-account-allocation-terms.md)
+-   főkönyvi egyenlegek, vagy fix összegek automatikus felosztása a főkönyvi felosztási szabályok alapján. A főkönyvi felosztási szabályok feldolgozása rendszeres időközönként történik, felosztási naplók használatával. További információ: [Felosztási szabályok](../general-ledger/ledger-allocation-rules.md).
 
 ###  <a name="allocations-in-budget-planning"></a>Felosztások a költségvetési tervezésben
 
@@ -43,8 +43,4 @@ Főkönyvi felosztási szabályok a költségvetési tervekhez is használhatóa
 
 > [!NOTE]
 > Kezdődő   , használhatja a Főkönyvi felosztási szabályok költségvetési tervek.
-
-
-
-
 

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: v-olbara
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 3ee74ba108008ccef53fe3b904c71ddf5f51afb7
-ms.sourcegitcommit: 137e2bd30f0a85bd2e1baf1cf16b993edd2094f9
+ms.openlocfilehash: 2f4506d2c1808198d4b10e50f4635bcc21d934e1
+ms.sourcegitcommit: 0f877ee4b53cfb002b179a53a67c4f9adae354bf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "3546434"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "3640399"
 ---
 # <a name="configure-number-sequences-for-warehouse-flows"></a>Számsorozatok konfigurálása raktári folyamatokhoz
 
@@ -36,7 +36,7 @@ Ez a funkciót következő képességeket adja hozzá:
 - A fuvarlevél (BOL) azonosítóját előre lehet létrehozni.
 - A rendszer egyedi számsorozatot hoz létre a szállítási tároló sorozatkódjának (SSCC) számaihoz.
 - A GS1-nek megfelelő számsorozatok a BOL-és a SSCC-számokhoz is létrehozhatók. A funkció beépített támogatást ad hozzá az azonosítótábla-azonosítók, tárolóazonosítók, hullámcímke-azonosítók és BOL-azonosítók számára.
-- Az azonosítótábla-azonosító számának konfigurálása rugalmas. Például felveheti vagy kizárhatja a mesterséges intelligenciát (AI), például a kezdő nullákat (00).
+- Az azonosítótábla-azonosító számának konfigurálása rugalmas. Például felveheti vagy kizárhatja az alkalmazásazonosítókat (AI), például a kezdő nullákat (00).
 
 Ez a funkció hatékonyabbá teszi a kartondobozok címkézését, és a rendszer által előállított új számok beállítását.
 

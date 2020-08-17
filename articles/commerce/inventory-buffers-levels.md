@@ -15,17 +15,16 @@ ms.search.region: global
 ms.author: boycezhu
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: cbc1f5f6fb2c35b009d65b03ffcaffc75a73f188
-ms.sourcegitcommit: 2683aacb426bfb3b541637edf1f8ec2d6cb5a745
+ms.openlocfilehash: 8a07e951aadaa1cc44b637ef9fd77f5f4e84cbda
+ms.sourcegitcommit: 4a981ee4be6d7e6c0e55541535d386bce2565cba
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "3417507"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "3621167"
 ---
 # <a name="configure-inventory-buffers-and-inventory-levels"></a>A készletpufferek és a készlet szintjeinek konfigurálása
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Ez a témakör azt mutatja be, hogyan lehet konfigurálni a készletpuffereket és a készlet szintjét, amelyek meghatározzák a Microsoft Dynamics 365 Commerce webhelyein a készletek elérhetőségével kapcsolatos üzenetküldést.
 

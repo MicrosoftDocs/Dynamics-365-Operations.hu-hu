@@ -3,7 +3,7 @@ title: Common Data Service-integráció konfigurálása
 description: A Common Data Service és a Dynamics 365 Human Resources között be- és kikacsolhatja az integrációt. Ezenkívül megtekintheti a szinkronizálási adatokat, törölheti a nyomonkövetési adatokat, valamint újraszinkronizálhat egy entitást a két környezet közötti adatproblémák elhárítása érdekében.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/01/2020
+ms.date: 07/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7aad8217d48917d6855046a6810fe994f5564d94
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 8cbead2961c4576a5394080aae2fec109bce3f10
+ms.sourcegitcommit: 4a981ee4be6d7e6c0e55541535d386bce2565cba
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3431314"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "3621304"
 ---
 # <a name="configure-common-data-service-integration"></a>Common Data Service-integráció konfigurálása
 
@@ -66,6 +66,9 @@ Előfordulhat, hogy a következő helyzetekben ki szeretné kapcsolni az integr�
 - Ha ki szeretné kapcsolni az integrációt, állítsa át a beállítást **Nem** értékre.
 
 [![Common Data Service-integráció be- és kikapcsolása](./media/hr-enable-or-disable-common-data-service-integration.png)](./media/hr-enable-or-disable-common-data-service-integration.png)
+
+> [!WARNING]
+> Az adatáttelepítési feladatok végrehajtása közben erősen ajánlott kikapcsolni a Common Data Service integrációt. A nagyméretű adatfeltöltések jelentősen befolyásolhatják a teljesítményt. Például 2000 dolgozó feltöltése több óráig is eltarthat, ha engedélyezve van az integráció, viszont kevesebb mint egy óráig tart, ha le van letiltva. A jelen példában megadott számok csak bemutató célt szolgálnak. A rekordok importálásához szükséges idő pontos mértékét számos tényező befolyásolhatja.
 
 ## <a name="view-data-integration-details"></a>Az adatintegráció részleteinek áttekintése
 

@@ -3,7 +3,7 @@ title: Vásárlásmező modul
 description: Ez a témakör a vásárlásmező moduljaival foglalkozik, és bemutatja, hogy hogyan lehet őket hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: anupamar-ms
 manager: annbe
-ms.date: 05/28/2020
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,17 +17,17 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 583937be92b62991cd13f0806df4a0a6c9ac049c
-ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
+ms.openlocfilehash: 9780aabbac6d01d41dae526c7c06139eba07de4e
+ms.sourcegitcommit: 074fe7e77feb795148c3daf2e6ccbb8a88679343
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "3411342"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "3645339"
 ---
 # <a name="buy-box-module"></a>Vásárlásmező modul
 
-[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Ez a témakör a vásárlásmező moduljaival foglalkozik, és bemutatja, hogy hogyan lehet őket hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
 
@@ -61,7 +61,7 @@ A témák segítségével eltávolíthatja vagy megváltoztathatja a vásárlás
 
 ## <a name="modules-that-can-be-used-in-a-buy-box-module"></a>A vásárlásmező modulban használható modulok
 
-- **Médiatár** – Ez a modul a termék képeinek bemutatására szolgál a termék részletes lapján. Egy vagy több képet is támogathat. Támogatja a miniatűr képeket is. A miniatűr képek vízszintes (a kép alatti sorként) vagy függőleges (a kép melletti oszlopként) elrendezésben is megadhatók. A médiatár modul a vásárlásmező modul **Média** helyén adható hozzá. Jelenleg csak képeket támogat. 
+- **Médiatár** – Ez a modul a termék képeinek bemutatására szolgál a termék részletes lapján. A modullal kapcsolatos további tudnivalókat lásd: [Médiatár modul](mediagallery-module.md).
 - **Áruházválasztó** – Ez a modul felsorolja azokat a közeli áruházakat, ahol a cikkek elérhetők és felvehetők. Ez lehetővé teszi a felhasználók számára, hogy a közelben levő üzleteket megtalálják. A modullal kapcsolatos további tudnivalókat lásd: [Áruházválasztó modul](store-selector.md).
 
 ## <a name="buy-box-module-settings"></a>Vásárlásmező modul beállításai
@@ -108,9 +108,11 @@ A vásárlásmező modul új oldalra való felvételéhez és a kötelező tulaj
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[Kezdő csomag áttekintése](starter-kit-overview.md)
+[Kezdőcsomag áttekintése](starter-kit-overview.md)
 
-[Üzletkiválasztó modul](store-selector.md)
+[Áruházválasztó modul](store-selector.md)
+
+[Médiatár modul](media-gallery-module.md)
 
 [Tárolómodul](add-container-module.md)
 

@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 7de7af1084b62a7248eeda54df215e56f2541286
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: 3b9a1485d37da614eea2427735e0e1323897682d
+ms.sourcegitcommit: 4a981ee4be6d7e6c0e55541535d386bce2565cba
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3173200"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "3621328"
 ---
 # <a name="unified-product-experience"></a>Egységes terméktapasztalat
 
@@ -86,7 +86,7 @@ Ebben a modellben a termék a következő két entitás kombinációjával van �
 Mivel a termék SKU-ként képviselteti magát, az egyedi termékek, alaptermékek és termékváltozatok koncepciója a következő módon rögzíthető Common Data Service szolgáltatásban:
 
 - **A termékek altípus termékkel rendelkező termékek** saját maguk által meghatározott termékek. Nem kell dimenziókat definiálni. Egy példa erre egy meghatározott könyv. Ezeknél a termékeknél egy rekord jön létre a **Termék** entitásban, és egy rekord jön létre a **msdyn\_sharedproductdetails** entitásban. Nem jön létre termékcsaládrekord.
-- Az **Alaptermékek** általános termékként használatosak, amelyek meghatározzák az üzleti folyamatokban történő működéséthez kapcsolódó definíciókat és szabályokat. Ezeknek a definícióknak alapján egyedei termékeket lehet létrehozni, amelyek a termék változatát jelentik. Például a póló az alaptermék, és a szín és a méret dimenzióként is megadható. A változatok adhatók ki, amelyek ezen dimenziók különböző kombinációi, például a kis kék póló vagy egy közepes zöld póló. Az integrációban egy rekord jön létre változatonként a terméktáblában. Ez a rekord tartalmazza a változatspecifikus adatokat, például a különböző dimenziókat. A termék általános információinak tárolása a **msdyn\_sharedproductdetails** entitásban történik. (Ez az általános információ az alaptermékben található.) Ezenkívül egy termékcsalád-rekord készül alaptermékenként. Az alaptermék adatait a rendszer szinkronizálja Common Data Service szolgáltatásba a kiadott alaptermék létrehozásával (de a változatok megjelenése előtt).
+- Az **Alaptermékek** általános termékként használatosak, amelyek meghatározzák az üzleti folyamatokban történő működéséthez kapcsolódó definíciókat és szabályokat. Ezeknek a definícióknak alapján egyedei termékeket lehet létrehozni, amelyek a termék változatát jelentik. Például a póló az alaptermék, és a szín és a méret dimenzióként is megadható. A változatok adhatók ki, amelyek ezen dimenziók különböző kombinációi, például a kis kék póló vagy egy közepes zöld póló. Az integrációban egy rekord jön létre változatonként a terméktáblában. Ez a rekord tartalmazza a változatspecifikus adatokat, például a különböző dimenziókat. A termék általános információinak tárolása a **msdyn\_sharedproductdetails** entitásban történik. (Ez az általános információ az alaptermékben található.) Az alaptermék adatait a rendszer szinkronizálja Common Data Service szolgáltatásba a kiadott alaptermék létrehozásával (de a változatok megjelenése előtt).
 - Az **Egyedi termékek** a termékek a termék összes altípusára és az összes termékváltozatra utalnak. 
 
 ![Adatmodell termékekhez](media/dual-write-product.png)

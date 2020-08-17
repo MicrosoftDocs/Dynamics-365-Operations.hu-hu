@@ -3,7 +3,7 @@ title: Pénzforgalmi előrejelzés
 description: Ez a témakör a pénzforgalmi előrejelzések folyamatáról nyújt áttekintést. Azt is elmagyarázza, hogy miként integrálódnak a pénzforgalm előrejelzések a rendszer más moduljaival.
 author: saraschi2
 manager: AnnBe
-ms.date: 01/11/2018
+ms.date: 08/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 9795758a60d7913d306488ae6fbbfb7f9865cfc4
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 2ffb8522729049ca98acfb70992738b45c05b552
+ms.sourcegitcommit: cf39369545a94201f367a4efada595a04a319d42
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188418"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "3653776"
 ---
 # <a name="cash-flow-forecasting"></a>Pénzforgalmi előrejelzés
 
@@ -102,7 +102,14 @@ A pénzforgalmi előrejelzés a **Pénzforgalmi előrejelzések kiszámítása**
 - Az összes pénzforgalmi előrejelzés tranzakcióinak törléséhez és újrakalkulálásához állítsa a **Pénzforgalmi előrejelzés kiszámítási módszere** mezőt **Összesen** értékre. Ezt a megközelítést akkor érdemes használni, ha már régóta nem voltak frissítve a pénzforgalmi előrejelzések. 
 - A csak az új tranzakciókra vonatkozó meglévő pénzforgalmi adatok frissítéséhez állítsa a **Pénzforgalmi előrejelzés kiszámítási módszere** mezőt **Új** értékre. Az oldal megjeleníti a dátumot, amikor utoljára futott a pénzforgalmi számítás.
 
-A pénzforgalmi előrejelzéshez kötegelt feldolgozást is használhat. Annak érdekében, hogy garantálja az előrejelzési elemzés rendszeres frissítését, hozzon létre egy ismétlődő kötegelt eljárást a pénzforgalmi előrejelzés kiszámításához.
+A pénzforgalmi előrejelzéshez kötegelt feldolgozást is használhat. Annak érdekében, hogy biztosítsa az előrejelzési elemzés rendszeres frissítését, hozzon létre egy ismétlődő kötegelt eljárást a pénzforgalmi előrejelzés kiszámításához.
+
+A 10.0.13 verzióban megjelent a számítási folyamat továbbfejlesztése, amely a folyamat automatizálási keretrendszerét használja a pénzforgalom kiszámítási feladatának ütemezéséhez. Ez a **Funkciókezelés** munkaterületen lévő **Pénzforgalmi előrejelzés automatizálása** funkcióval engedélyezhető. Engedélyezés után a **Pénzforgalmi előrejelzés automatizálása** hivatkozásra kattintva megjelenítheti az új automatizálási lapot, ahol ütemezheti a pénzforgalmi számítás folyamatát. Új pénzforgalmi előrejelzési ütemezés létrehozásához válassza ki az **Új folyamat-automatizálás létrehozása** elemet, majd az **Ütemezés típusa** legördülő menüben válassza ki a **Pénzforgalmi előrejelzés automatizálása** elemet. Minden olyan vállalatnál be kell állítania egy ütemezést, ahol frissíti a pénzforgalmi előrejelzés adatait.  Ez a lap azt is megmutatja, hogy melyik pénzforgalmi előrejelzés automatizálási feladatai vannak függőben, és mikor fejeződött be az utolsó feladat.  
+
+> [!NOTE] 
+> Ha már be vannak ütemezve kötegelt feladatok a pénzforgalmi előrejelzésekhez, akkor hibaüzenetet fog kapni, és nem tudja engedélyezni ezt a funkciót. A funkció engedélyezése előtt törölnie kell a meglévő kötegelt feladatokat. 
+
+További információért tekintse át a [Folyamat automatizálása](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md) menüpontot.
 
 ### <a name="reporting"></a>Jelentés
 
@@ -128,7 +135,7 @@ Megtekintheti a pénzforgalmi előrejelzések elemzéseit a rendszer pénzneméb
 
 Megtekintheti a pénzforgalmi előrejelzések elemzéseit a vállalat által meghatározott pénznemben a **Készpénzáttekintés – jelenlegi vállalat** munkaterületen. Az elemzésekhez használt könyvelési pénznem meghatározása a **Főkönyv** oldalon történik. Ez a munkaterület áttekintést nyújt a pénzforgalmi előrejelzésről és a bankszámla-egyenlegekről a jelenlegi vállalat vonatkozásában. A készpénzbeáramlás és -kiáramlás áttekintése áttekintést nyújt a jövőbeli pénzmozgásokról és egyenlegekről a könyvelés pénznemében, valamint részletes információkat tartalmaz az előrejelzett tranzakciókra vonatkozóan. Az előrejelzett pénznem egyenlegeit is megjelenítheti.
 
-Ha további információt szeretne a pénzforgalmi előrejelzések elemzéséről, tekintse meg a Készpénzáttekintés Power BI-tartalmat.
+Ha további információt szeretne a pénzforgalmi előrejelzések elemzéséről, tekintse meg a [Készpénzáttekintés Power BI tartalom](https://docs.microsoft.com/dynamics365/finance/cash-bank-management/cash-overview-power-bi-content) témakört.
 
 Ezenkívül a következő oldalakon megtekintheti a pénzforgalmi előrejelzési adatokat az adott fiókokhoz, rendelésekhez és cikkekhez:
 

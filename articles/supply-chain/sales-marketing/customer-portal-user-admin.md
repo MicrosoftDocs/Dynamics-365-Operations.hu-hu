@@ -3,7 +3,7 @@ title: Ügyfélportál felhasználóinak létrehozása és kezelése
 description: Ez a témakör azt mutatja be, hogyan kell létrehozni az Ügyfélportál felhasználói fiókjait, és hogyan állíthatja be a rájuk vonatkozó engedélyeket.
 author: dasani-madipalli
 manager: tfehr
-ms.date: 04/22/2020
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: c56e41b8ea5039531205083b5b42aff05e05cf66
-ms.sourcegitcommit: 713b5dfc76a6875d0ba6d86c5cbd585ea502cf9d
+ms.openlocfilehash: a751cbffd98b8d47ca7dad222f0ce374381a393d
+ms.sourcegitcommit: 074fe7e77feb795148c3daf2e6ccbb8a88679343
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "3413971"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "3645313"
 ---
 # <a name="create-and-manage-customer-portal-users"></a>Ügyfélportál felhasználóinak létrehozása és kezelése
 
@@ -30,11 +30,16 @@ Ahhoz, hogy a felhasználó használhassa a webhelyet, létre kell hozni egy kap
 
 Amikor a felhasználók magukat regisztrálják, a kapcsolattartói rekordok automatikusan jönnek létre hozzájuk. Ennélfogva nem lehet biztosítani, hogy a felhasználó a megfelelő ügyfélfiókot és jogi személyt válassza ki. Másrészről a meghívó folyamat lehetővé teszi, hogy egy rendszergazda a megfelelő ügyfélfiókot és jogi személyt rendelje hozzá a kapcsolattartói rekordhoz a meghívó kiküldése előtt. Ha úgy gondolja, hogy testreszabja a megoldást, hogy a felhasználók önállóan regisztrálhatják magukat,mindenképpen vegye figyelembe vegye a lehetséges következményeket.
 
+## <a name="video"></a>Videó
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4ADkI]
+
+A [Hívja meg a vevőket, hogy regisztráljanak és használják a portált](https://youtu.be/drGUYHX9QIQ) című videó (fent) szerepel a [Finance and Operations lejátszási listán,](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) amely elérhető a YouTube felületén.
+
 ## <a name="prerequisite-setup"></a>A beállítás előfeltételei
 
 A Power Apps portálokon található kapcsolattartók rekordokként vannak tárolva a Common Data Service **Kapcsolattartók** entitásában. A kettős írás ezt követően szükség szerint szinkronizálja ezeket a rekordokat a Microsoft Dynamics 365 Supply Chain Management alkalmazásba.
 
-![![A Ügyfélportál kapcsolattartóinak rendszerdiagramja](media/customer-portal-contacts.png "A Ügyfélportál kapcsolattartóinak rendszerdiagramja")](media/customer-portal-contacts.png "System diagram for Customer portal contacts")
+![A Ügyfélportál kapcsolattartóinak rendszerdiagramja](media/customer-portal-contacts.png "A Ügyfélportál kapcsolattartóinak rendszerdiagramja")
 
 Új vevők meghívásának megkezdése előtt győződjön meg arról, hogy a **Kapcsolattartó** entitások megfeleltetése engedélyezve van a kettős írásban.
 

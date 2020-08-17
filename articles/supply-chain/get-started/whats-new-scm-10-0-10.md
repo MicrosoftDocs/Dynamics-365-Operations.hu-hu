@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: fdf4464e5b6fc6f2f4b99dcac80eb199799bf13d
-ms.sourcegitcommit: 6d6aa016c4971b0673d461b82fd80b060ae5f7a1
+ms.openlocfilehash: e9ca2d2cd018777b4c5c01fb10d63505af3940c4
+ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "3268770"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "3652107"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10010-may-2020"></a>Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.10 szolgáltatásban (2020. május)
 
@@ -39,11 +39,11 @@ Ez a témakör a Microsoft Dynamics 365 Supply Chain Management 10.0.10 új vagy
 Ez a kiadás a következő funkciókat tartalmazza: A funkciók címei további információkra mutatnaka a [Kiadási tervek](https://docs.microsoft.com/dynamics365/release-plans/) webhelyen. A további hivatkozások az adott funkcióhoz jelenleg elérhető további dokumentációkat és videókat mutatnak be. Ezen szolgáltatások többségét a használat előtt engedélyezni kell a [Funkciók kezelése](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) alatt.
 
 - [A meglévő ténylegessúly-címkék használatának javítása a raktárkezelési modulban](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/enhancement-use-existing-catch-weight-tags-warehouse-management)
-- [Bejövő rakományok kezelésével kapcsolatos fejlesztések a raktárkezeléshez](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/warehouse-management-inbound-load-management-enhancement) - További információ [Beszerzési rendelések bejövő rakományának kezelése a raktárban](../warehousing/inbound-load-handling.md).
-- [Címkenyomtatással kapcsolatos fejlesztések a raktárkezeléshez](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/label-printing-enhancements-warehouse-management) – További információ [Dokumentumirányítás elrendezés azonosítótábla-címkékhez](../warehousing/document-routing-layout-for-license-plates.md).
+- [A Raktárkezelés modul bejövő terheléskezelésének továbbfejlesztései](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/warehouse-management-inbound-load-management-enhancement)<br> - További információ: [Beszerzési rendelések bejövő rakományának kezelése a raktárban](../warehousing/inbound-load-handling.md).
+- [Címkenyomtatással kapcsolatos fejlesztések a raktárkezeléshez](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/label-printing-enhancements-warehouse-management)<br> - További információ: [Dokumentumirányítási elrendezés azonosítótábla-címkékhez](../warehousing/document-routing-layout-for-license-plates.md).
 - [Az Alaptervezés olyan cikkeket tartalmaz, amelyek aktuális készlettel rendelkeznek, amikor előfeldolgozási szűrők engedélyezve vannak](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/master-planning-include-items-on-hand-when-pre-processing-filters-are-enabled)
 - [Új adatentitások a termelési területhez](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/new-data-entities-manufacturing-area)
-- [Raktári folyamatok minőségkezelése](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/quality-management-warehouse-processes) – további tájékoztatás: [Raktári folyamatok minőségkezelése](../inventory/quality-management-for-warehouses-processes.md).
+- [Raktári folyamatok minőségkezelése](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/quality-management-warehouse-processes)<br> - További információ: [Raktári folyamatok minőségkezelése](../inventory/quality-management-for-warehouses-processes.md).
 
 ## <a name="additional-resources"></a>További erőforrások
 

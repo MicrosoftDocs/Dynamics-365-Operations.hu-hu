@@ -3,7 +3,7 @@ title: Eltávolított vagy elavult funkciók a korábbi kiadásokban
 description: Ez a témakör azt mutatja be, hogy mely szolgáltatások lettek eltávolítva vagy melyek eltávolítása tervezett a Dynamics 365 for Finance and Operations alkalmazásból és a termék korábbi kiadásaiból.
 author: sericks007
 manager: AnnBe
-ms.date: 06/23/2020
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8a73231a8286a412e9ec8a4eef6c58d7afd73ec0
-ms.sourcegitcommit: bdfc84aa7f607511981c0b2f20f03fabcb773510
+ms.openlocfilehash: bccc9a0a2b0abfdeba248007cfdb2bd599e35f48
+ms.sourcegitcommit: 074fe7e77feb795148c3daf2e6ccbb8a88679343
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "3500412"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "3645389"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>Eltávolított vagy elavult funkciók a korábbi kiadásokban
 
@@ -62,7 +62,7 @@ A Finance and Operations alkalmazások objektumaival kapcsolatban a [Technikai r
 | **Felváltotta másik szolgáltatás?**   | Igen |
 | **Érintett területek**         | Pályázat |
 | **Telepítési beállítás**              | Összes |
-| **Állapot**                         | Elavult: 2020. április 1-től a fejlesztőknek az új API-t kell használniuk. |
+| **Állapot**                         | Elavult: 2020. április 1., a fejlesztőknek a **HasFunction** osztályban található platform API-kat kell használniuk. |
 
 ### <a name="hashcomputesha1hashstring-message"></a>Hash.ComputeSHA1Hash(string message)
 
@@ -72,7 +72,7 @@ A Finance and Operations alkalmazások objektumaival kapcsolatban a [Technikai r
 | **Felváltotta másik szolgáltatás?**   | Igen |
 | **Érintett területek**         | Platform |
 | **Telepítési beállítás**              | Összes |
-| **Állapot**                         | Elavult: 2020. április 1-től a fejlesztőknek az új API-t kell használniuk. |
+| **Állapot**                         | Elavult: 2020. április 1., a fejlesztőknek a **HasFunction** osztályban található platform API-kat kell használniuk. |
 
 
 ### <a name="formdatetimecontrolsetutcstring"></a>FormDateTimeControl.setUtcString()

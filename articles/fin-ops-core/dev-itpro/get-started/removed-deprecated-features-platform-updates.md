@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 50362ccd9df7a44961bd6e46fa16779829b1c408
-ms.sourcegitcommit: 96ec8b7252296de0049bff406c743f8da9e0f0be
+ms.openlocfilehash: 393349240d16636d3eec747126cc1ee6f6f9998d
+ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "3606822"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "3651666"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Eltávolított vagy elavult Platform-funkciók
 
@@ -38,8 +38,7 @@ A Finance and Operations alkalmazások objektumaival kapcsolatban a [Technikai r
 ## <a name="platform-updates-for-version-10013-of-finance-and-operations-apps"></a>Platform-frissítések az Finance and Operations alkalmazások 10.0.13 verziójához
 
 > [!NOTE]
-> A 10.0.13 verzió még nincs közzétéve. Az adatok kizárólag tervezési célt szolgálnak. A 10.0.13 verzió tartalma és a funkciók megváltozhatnak. A kiadásokkal kapcsolatban további információkat a [Szolgáltatásfrissítések elérhetősége](../../fin-ops/get-started/public-preview-releases.md) oldalon találhat.
-
+> A 10.0.13-es egy előzetes verzió. A tartalom és a funkciók megváltozhatnak. Az előzetes kiadásokkal kapcsolatban további információkat a [Szolgáltatásfrissítések elérhetősége](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases) oldalon találhat.
 
 ### <a name="upgrade-of-three-jquery-component-libraries"></a>Három jQuery-összetevő programkönyvtárának frissítése 
 
@@ -50,6 +49,27 @@ A Finance and Operations alkalmazások objektumaival kapcsolatban a [Technikai r
 | **Érintett területek**         | Kiterjeszthető vezérlőelemek, egyéni JavaScript-kód kifejezetten az elavult vagy törölt API-khoz |
 | **Telepítési beállítás**              | Összes |
 | **Állapot**                         | A10.0.13-as verzió / 37-es platformfrissítéssel, a vevők tetszés szerint mozoghatnak a legújabb könyvtárakban, ha engedélyezik a „három jQuery összetevő-függvénytár frissítése” funkciót. Az új könyvtárakra történő áttérés kötelező lesz a 2021 áprilisi kiadásban, ez időt ad az érintett API-k áttelepítéséhez.   |
+
+### <a name="existing-grid-controlforcelegacygrid-api"></a>Meglévő rácsvezérlő/forceLegacyGrid() API
+
+|   |  |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | A meglévő rácsvezérlőt az új rácsvezérlő helyettesíti. |
+| **Felváltotta másik szolgáltatás?**   | Az [új rácsvezérlő](../..//fin-ops/get-started/grid-capabilities.md) |
+| **Érintett területek**         | Webes ügyfél |
+| **Telepítési beállítás**              | Összes |
+| **Állapot**                         | A 10.0.13 verzióban az új rácsvezérlő általánosan elérhető, és a vevők tetszés szerint be tudják kapcsolni ezt a funkciót. Az új rácsvezérlő használata kötelezővé válik a 2021 októberi kiadástól. Amikor az új rácsvezérlő használata kötelezővé válik, a **forceLegacyGrid()** API többé nem lesz figyelembe véve. |
+
+### <a name="personalization-without-saved-views"></a>Mentett nézetek nélküli személyre szabás 
+
+|   |  |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | A személyre szabási alrendszer ki lett egészítve a mentett nézetek funkcióval, így nagyobb a teljesítménye, és további képességeket kínál. |
+| **Felváltotta másik szolgáltatás?**   | Mentett nézetek |
+| **Érintett területek**         | Webes ügyfél |
+| **Telepítési beállítás**              | Összes |
+| **Állapot**                         | A 10.0.13 vezió/Platform update 37, a mentett nézetek funkció általánosan elérhető, és a vevők tetszés szerint be tudják kapcsolni ezt a funkciót. A mentett nézetek funkció használata kötelezővé válik a 2021 októberi kiadástól. |
+
 
 ## <a name="platform-updates-for-version-10012-of-finance-and-operations-apps"></a>Platform-frissítések az Finance and Operations alkalmazások 10.0.12 verziójához
 
