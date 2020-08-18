@@ -3,7 +3,7 @@ title: Rács funkciói
 description: Ez a témakör ismerteti a rács vezérlőelem számos erőteljes funkcióját. Az új rács funkciónak engedélyezve kell lennie ahhoz, hogy hozzáférhessen ezekhez a funkciókhoz.
 author: jasongre
 manager: AnnBe
-ms.date: 06/04/2020
+ms.date: 08/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 88a4e2fe69000f8034729d468ad5fd108d435c3e
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: b1dd5e852bdc116d0848687782c930b19eae7900
+ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3431360"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "3651690"
 ---
 # <a name="grid-capabilities"></a>Rács funkciói
 
@@ -128,20 +128,47 @@ Ha azt szeretné, hogy a rendszer bizonyos értékeket kifejezésként ismerjen 
 
 Minden további felhasználói munkamenet engedélyezett új rácsvezérlővel indul.
 
+## <a name="developer-opting-out-individual-pages-from-using-the-new-grid"></a>[Fejlesztő] Egyes oldalak elutasítása az új rács használatából 
+Ha a szervezet egy olyan oldalt észlel, amelyen problémák lépnek fel az új rács használata miatt, akkor egy API felület lehetővé teszi, hogy az egyes űrlapok használhassák a régi rácsvezérlőt, miközben a rendszer további részei az új rácsvezérlőt használják. Ha el szeretné utasítani az egyes oldalakat az új rácsból, adja hozzá a következő hívásfeladást `super()` az űrlap `run()` módjához.
+
+        this.forceLegacyGrid();
+
+Ezt az API-t a 2021 októberi kiadásig kell figyelembe venni, amikor az új rácsvezérlő használata kötelezővé válik. Jelentsen minden olyan problémát a Microsoftnak, amelyek megkövetelik az API használatát. 
+
 ## <a name="known-issues"></a>Ismert problémák
 Ez a szakasz az új rácsvezérlő ismert problémáinak listáját tárolja, miközben a funkció egy előzetes állapotban van.  
 
 ### <a name="open-issues"></a>Nyitott problémák
+-  Az **Új rácsvezérlő** funkció engedélyezése után néhány oldal továbbra is a meglévő rácsvezérlőt fogja használni. Ez a következő helyzetekben fog történni:  
+    -  Egy kártyalista szerepel azon az oldalon, amely több oszlopban jelenik meg.
+    -  Egy csoportosított kártyalista szerepel az oldalon.
+    -  Nem reagáló bővíthető vezérlővel rendelkező rácsoszlop.
 
-- A több oszloposként megjelenített kártyák listája most egyetlen hasábként jelenik meg.
-- A csoportosított listák nem csoportként vagy külön oszlopként jelennek meg.
+    Amikor egy felhasználó először találkozik egy ilyen helyzettel, egy üzenet jelenik meg az oldal frissítésével kapcsolatban. Az üzenet megjelenése után az oldal a következő termékfrissítési verzióig továbbra is a meglévő rácsot használja az összes felhasználó számára. A jövőbeli frissítéshez figyelembe kell venni ezeket a forgatókönyveket, hogy az új rács használható legyen.     
 
 ### <a name="fixed-as-part-of-10013"></a>10.0.13 részeként javítva
 
-> [!NOTE]
-> A program a következő adatokat jeleníti meg, hogy ennek megfelelően tervezzen. A 10.0.13-es verzió célzott kiadásaival kapcsolatban további információkat a [Szolgáltatásfrissítések elérhetősége](../../fin-ops/get-started/public-preview-releases.md) oldalon találhat.
-
-- [KB 4563317] Képek esetében nem jelennek meg az eszközleírások.
+-  [470173. hiba] Az inaktív sorokban található jelölőnégyzetek akkor jelennek meg, ha a cellában a térközre rákattintanak
+-  [474848. hiba] A rácsokkal rendelkező továbbfejlesztett előnézetek nem jelennek meg
+-  [474851. hiba] A hivatkozási csoport vezérlőinek hivatkozásai nem használhatók 
+-  [Bug 471777] Nem lehet kiválasztani a rácsban a mezőket a mobilalkalmazás szerkesztéséhez vagy létrehozásához
+-  [KB 4569441] Többoszlopos kártyáklistákkal, képek eszköztippeivel és megjelenítési beállításokkal kapcsolatos problémák merültek fel néhány mezőben
+-  [KB 4575279] Nem törlődik ki az összes megjelölt sor az Általános naplóból
+-  [KB 4575233] A megjelenítési beállítások nem állíthatók vissza másik sorra ugrás után
+-  [KB 4571095] A termékbevételezés feladása akkor történik meg, ha véletlenül megnyomja az Enter billentyűt (az oldal alapértelmezett műveletének megfelelő kezelése)
+-  [KB 4575437] A szerkeszthető vezérlőket tartalmazó keresések váratlanul bezáródtak
+-  [KB 4569418] A szállítási ütemezés űrlapon ismétlődő sor jött létre
+-  [KB 4575435] A továbbfejlesztett előzetes verzió néha akkor is fennáll, ha az kurzor már nincs a mező közelében
+-  [KB 4575434] A keresés nincs szűrve, ha a mező módosult
+-  [KB 4575430] A jelszómezőkben szereplő értékek nincsenek eltakarva a rácsban
+-  [KB 4569438] A „feldolgozás egy érvényesítési hiba miatt leállt” felirat jelenik meg a sorok kijelölése után, a szállítói tranzakciók kiegyenlítése közben
+-  [KB 4569434] A jogi személyek űrlap frissítése kevesebb rekordot eredményez
+-  [KB 4575297] A fókusz folyamatosan a feladatrögzítő ablakra megy át egy rács szerkesztése és átlapozása közben
+-  [KB 4566773] A bizonylat-tranzakciók lekérdezésében nem negatívként jelennek meg a korrekciós tranzakciók 
+-  [KB 4575288] A fókusz visszaáll az aktív sorra az egyszerű lista sorai közti szegély kiválasztásakor
+-  [KB 4575287] A fókusz nem tér vissza az első oszlopra, amikor a le nyíllal új sort hoz létre a naplókban
+-  [KB 4564819] Szabadszöveges számla sorai nem törölhetők (mivel az adatforrás ChangeGroupMode=ImplicitInnerOuter)
+-  [KB 4563317] Képek esetében nem jelennek meg az eszközleírások/továbbfejlesztett előnézetek
 
 ### <a name="fixed-as-part-of-10012"></a>10.0.12 részeként javítva
 
@@ -158,6 +185,7 @@ Ez a szakasz az új rácsvezérlő ismert problémáinak listáját tárolja, mi
 - [KB 4562647] A fókusz a **Közzététel** párbeszédpanel első vezérlőelemére van állítva, miután új sort adott hozzá a biztonsági szerepkörök rácsához.
 - [KB 4563310] A továbbfejlesztett előnézet nem záródik be egy sor módosítása után.
 - [KB 4563313] "Váratlan ügyfélhiba" történik az Internet Explorerben, amikor egy érték van kiválasztva a keresésben.
+- [KB 4564557] A keresések és a legördülő menük nem nyithatók meg az Internet Explorerben
 - [KB 4563324] A Navigálás nem működik a **Személyzetkezelés** munkaterület megnyitása után.
 
 ### <a name="fixed-as-part-of-10011"></a>10.0.11 részeként javítva

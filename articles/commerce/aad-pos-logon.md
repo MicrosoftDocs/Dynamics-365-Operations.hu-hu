@@ -3,7 +3,7 @@ title: Azure Active Directory-hitelesítés engedélyezése a pénztári bejelen
 description: Ez a témakör azt mutatja be, hogyan lehet konfigurálni a Microsoft Dynamics 365 Commerce pénztár (POS) bejelentkezési élményét, hogy a Azure Active Directory-hitelesítést használja.
 author: boycezhu
 manager: annbe
-ms.date: 05/20/2020
+ms.date: 07/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: boycezhu
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 4f5a02348e8cef44424ae5d6a49de02d762ba245
-ms.sourcegitcommit: cecd97fd74ff7b31f1a677e8fdf3e233aa28ef5a
+ms.openlocfilehash: ccb2d62b09153d03b064d9661227f3499d67bca2
+ms.sourcegitcommit: dc1dcd0ccc40be5d45701114fa8c952c13488344
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "3410035"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "3641033"
 ---
 # <a name="enable-azure-active-directory-authentication-for-pos-sign-in"></a>Azure Active Directory-hitelesítés engedélyezése a pénztári bejelentkezéshez
 [!include [banner](includes/banner.md)]
@@ -64,9 +64,12 @@ Az Azure AD-fiók dolgozóhoz való társításához kövesse az alábbi lépés
 
 A rendszer kitölti az **Alias**, **UPN**, **Külső részazonosító** mezőket a dolgozó adatainak oldalának **Commerce** oldalán.
 
+> [!NOTE]
+> A dolgozói rekord frissítése után – például ha egy új Azure AD számlát társítanak hozzá – megváltozik egy jelszó vagy frissül egy dolgozói címjegyzék, javasoljuk, hogy futtassa az **1060** (**Személyzet**) elosztási ütemezést a legfrissebb személyzeti adatok csatornához történő szinkronizálásához. Így a pénztár alkalmazás be tudja olvasni a megfelelő adatokat a felhasználó hitelesítéséhez és a hitelesítés ellenőrzéséhez.
+
 ## <a name="additional-resources"></a>További erőforrások
 
-[Kiterjesztett bejelentkezési funkció beállítása az MPOS-hez és a felhőalapú pénztárhoz](extended-logon.md)
+[Kiterjesztett bejelentkezési funkció beállítása az MPOS-hez és a Cloud POS-hoz](extended-logon.md)
 
 [Retail funkcióprofil létrehozása](retail-functionality-profile.md)
 

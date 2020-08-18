@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0efc2b50b080b769cb103d1519217517b8330668
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 3478c4c2acb134df1c293c1c33f615595aeaadd0
+ms.sourcegitcommit: 3ae002804858f201297a729d03ec7eab8209be34
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3429658"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "3628429"
 ---
 # <a name="view-team-and-company-calendars"></a>Csoportos és vállalati naptárak megtekintése
 
@@ -33,15 +33,13 @@ Megtekintheti a csapat-és vállalati naptárakat a Dynamics 365 Human Resources
 
 ## <a name="view-your-team-calendar-as-an-employee"></a>A csoportja naptárának megtekintése alkalmazottként
 
-1. Az **Alkalmazotti önkiszolgáló rendszer** munkaterületen válassza a **Saját csapat** lehetőséget.
-
-2. Válassza a **Szabadság és távollét** lehetőséget, majd válassza a **Csapatnaptár megtekintése** lehetőséget.
+1. Az **Alkalmazotti önkiszolgáló** munkaterületen válassza az **Összegzés** alatt található **Csoport távolléti naptár** lehetőséget.
 
 ## <a name="view-your-team-calendar-as-a-manager"></a>A csoportja naptárának megtekintése vezetőként
 
 1. Az **Alkalmazotti önkiszolgáló rendszer** munkaterületen válassza a **Saját csapat** lehetőséget.
 
-2. Válassza a **Szabadság és távollét** lehetőséget, majd válassza a **Csapatnaptár megtekintése** lehetőséget.
+2. Válassza a **Szabadság és távollét** lehetőséget, majd válassza a **Vezetői távolléti naptár megtekintése** lehetőséget.
 
 A vezetők a csoport naptárát a **Saját csapathoz tartozó szabadságkérelmek**, **Jóváhagyott szabadságkérelmek** és a **Táűvolléti kérelmek** helyekről tekinthetik meg. 
 

@@ -3,7 +3,7 @@ title: Termék- és vevőkeresés a pénztárban (POS)
 description: Ez a témakör áttekintést nyújt a Dynamics 365 Commerce termék- és vevőkeresési funkcióján végrehajtott fejlesztésekről.
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 06/10/2019
+ms.date: 07/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: 2b4c17b41056a35c2d2caaedb4f52998179b3c3e
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 415e8268c504487f2b66afc2ac9a50de1b538911
+ms.sourcegitcommit: a8201e0b9033c2afc2b1702b0337facaf7ad4b92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3022726"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "3628909"
 ---
 # <a name="product-search-and-customer-search-in-the-point-of-sale-pos"></a>Termék- és vevőkeresés a pénztárban (POS)
 
@@ -95,6 +95,9 @@ A távoli vevőkeresésnél a vevőkód nem jelenik meg a más jogi személyekt�
 
 A telefonszámon alapuló keresések egyszerűbbé váltak. Ezek a keresések most figyelmen kívül hagyják a különleges karaktereket, például a szóközöket, kötőjeleket és zárójeleket, amelyeket a vevő létrehozásakor esetleg hozzáadtak. Ezért a pénztárosoknak nem kell többé a telefonszámformátum miatt aggódniuk, amikor keresnek. Kereshetnek a vevők részleges telefonszámának beírásával is. Ha egy telefonszám különleges karaktereket tartalmaz, megtalálható a speciális karakterek után megjelenő számok keresésével is. Ha például egy vevő telefonszámát **123-456-7890** formában rögzítették, a pénztáros kereshet a vevőre az **123**, **456**, **7890** vagy az **1234567890** beírásával, ill. részlegesen a telefonszám első néhány számának részbeni megadásával.
 
+> [!NOTE]
+> A vevő több telefonszámmal és több e-mail-címmel is rendelkezhet. A vevőkeresési algoritmus ezekben a másodlagos e-mail-címekben és telefonszámokban is keres, de a vevőkeresési eredmények oldalon csak az elsődleges e-mail-cím és a telefonszám jelenik meg. Ez némi zavart okozhat, mivel a visszaküldött vevőeredmények nem mutatják a keresett e-mail-címet vagy telefonszámot. A jövőbeli kiadásban a vevőkeresési eredmények képernyőjén igyekszünk megmutatni ezeket az adatokat.
+
 A hagyományos vevőkeresés időigényes lehet, mivel több mező között keres. Ehelyett a pénztárosok kereshetnek a vevő egyik tulajdonságra, például a névre, az e-mail-címre vagy a telefonszámra. A vevőkeresési algoritmus által használt tulajdonságok együttes neve: *vevőkeresési feltételek*. A rendszergazda egyszerűen konfigurálhat egy vagy több kritériumot olyan rövidítésként, amelyek megjelennek a pénztárban. Mivel a keresés egyetlen feltétel korlátozódik, csak a releváns keresési eredmények jelennek meg, és a teljesítmény sokkal nagyobb, mint a szokásos vevő keresés teljesítménye. Az alábbi ábra mutatja a pénztár vevőkeresési rövidítéseit.
 
 ![Vevők keresése – parancsikonok](./media/SearchShortcutsPOS.png "Vevők keresése – parancsikonok")
@@ -114,3 +117,4 @@ A **Megjelenítési sorrend** mező határozza meg, hogy melyik rövidítések j
 A Commerce valamelyik jövőbeli kiadásában a kiskereskedők a pénztárban be tudják majd állítani a **Keresés az összes üzletben** értéket a vevők alapértelmezett keresési módjaként. Ez akkor lehet hasznos, ha azonnal kell keresni a pénztáron kívül létrehozott vevők között (például az elosztási feladat futtatása előtt). Új, **Alapértelmezett vevőkeresési mód** nevű beállítás érhető el a pénztár működési profiljában. A **Be** érték megadásával az alapértelmezett keresési módként a **Keresés az összes üzletben** lehetőséget állítja be. Minden vevőkeresési kísérlet valós idejű hívást indít a központba.
 
 A teljesítménnyel kapcsolatos váratlan problémák megelőzése érdekében ezt a beállítást a **CUSTOMERSEARCH_ENABLE_DEFAULTSEARCH_FLIGHTING** tesztelési jelző mögé rejtettük. Így a felhasználói felület **Alapértelmezett vevőkeresési mód** beállításának megjelenítéséhez a kiskereskedőnek támogatási jegyben kell kérnie a felhasználói tesztelést (UAT) és a termelési környezet használatát. Miután megkapjuk a jegyet, a mérnöki csapat segít a kiskereskedőnek, hogy nem termelési környezetben történő teszteléssel tudja felmérni a teljesítményt, és végre tudja hajtani a szükséges optimalizációt.
+

@@ -1,9 +1,9 @@
 ---
 title: Alapértelmezett rendelési beállítások dimenziókhoz és termékváltozatokhoz
 description: Az alapértelmezett rendelési beállítások határozzák meg azt a helyet és raktárt, ahol a cikkek beszerzése és tárolása történik, illetve azt a minimális, maximális, többszörös és szokásos mennyiséget, amely felhasználásra kerül a kereskedéshez vagy a készletgazdálkodáshoz, valamint az átfutási időket, a leállító jelzőket és a rendelési ígéret módszerét.
-author: roxanadiaconu
+author: t-benebo
 manager: tfehr
-ms.date: 11/03/2017
+ms.date: 07/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,15 +16,15 @@ ms.custom: 223084
 ms.assetid: fbfbcd7b-dc75-44ab-bffc-8bad576804a4
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: roxanad
+ms.author: benebotg
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 46b1efb274c9f54f27c26884dc18fc4a317786be
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 13df8eb7873495847d994922be1acd77e57f8f23
+ms.sourcegitcommit: dfe5916d982eaa879e2afef7440c30b1d0f4380a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3211574"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "3637756"
 ---
 # <a name="default-order-settings-for-dimensions-and-product-variants"></a>Dimenziókra és termékváltozatokra vonatkozó alapértelmezett rendelésbeállítások
 
@@ -32,55 +32,58 @@ ms.locfileid: "3211574"
 
 A Dynamics 365 Supply Chain Management alapértelmezett rendelési beállításai határozzák meg azt a helyet és raktárt, ahol a cikkek beszerzése és tárolása történik, illetve azt a minimális, maximális, többszörös és szokásos mennyiséget, amely felhasználásra kerül a kereskedéshez vagy a készletgazdálkodáshoz, valamint az átfutási időket, a leállító jelzőket és a rendelési ígéret módszerét. Az alapértelmezett rendelési beállítások lesznek érvényesek a beszerzési rendelések, értékesítési rendelések, átmozgatási rendelések és készletnaplók létrehozásakor, valamint az alaptervezés elkészítésekor a tervezett rendelések létrehozásához. Az alapértelmezett rendelésbeállítások lehetnek cikkspecifikusak, helyspecifikusak, termékváltozat-specifikusak vagy termékdimenzió-specifikusak.
 
-Az alapértelmezett rendelésbeállításokat az **Alapértelmezett rendelésbeállítások** oldalon lehet beállítani. A lap megnyitásához kövesse a **Termékinformációk kezelése** &gt; **Termékek** &gt; **Kiadott termékek** &gt; lérési útvonalat, **Válasszon ki egy kiadott terméket** &gt; a**Terv oldalon** vagy kövesse a **Készlet kezelése** Műveleti ablak &gt; **Rendelési beállítások** &gt; **Alapértelmezett rendelésbeállítások** elérési útvonalat.
+Az alapértelmezett rendelésbeállításokat az **Alapértelmezett rendelésbeállítások** oldalon lehet beállítani. Az oldal megnyitásához menjen a **Termékinformációk kezelése** &gt; **Termékek** &gt; **Kiadott termékek** opcióra &gt; **Válassza ki a kiadott terméket** &gt; a **Terven**. Illetve mehet a **Készletkezelés** &gt; **Rendelésbeállítások** &gt; **Alapértelmezett rendelésbeállítások** lehetőségre is.
 
 ## <a name="default-order-settings"></a>Alapértelmezett rendelésbeállítások
+
 Háromféle alapértelmezett rendelésbeállítás van a beszerzésekhez, az értékesítésekhez és a készlethez. A beszerzések alapértelmezett rendelési beállításai használatosak a következők létrehozásakor:
 
--   Beszerzési rendelés sorai
--   Beszerzési szerződés sorai
--   Ajánlatkérés sorai
--   Beszerzési igénylési sorok
--   Bizományosi feltöltési sorok
--   Terv. besz. rendelések
+- Beszerzési rendelés sorai
+- Beszerzési szerződés sorai
+- Ajánlatkérés sorai
+- Beszerzési igénylési sorok
+- Bizományosi feltöltési sorok
+- Terv. besz. rendelések
 
 Az értékesítés alapértelmezett rendelési beállításai használatosak a következők létrehozásakor:
 
--   Értékesítési rendelés sorai
--   Értékesítésiszerződés-sorok
--   Értékesítési ajánlat sorai
--   Visszáru-rendelési sorok és cikkhelyettesítő sorok
--   Igény-előrejelzés sorai
+- Értékesítési rendelés sorai
+- Értékesítésiszerződés-sorok
+- Értékesítési ajánlat sorai
+- Visszáru-rendelési sorok és cikkhelyettesítő sorok
+- Igény-előrejelzés sorai
 
 Az alapértelmezett értékesítési rendelési beállítások alkalmazandók a következők létrehozásakor is:
 
--   Projekt cikkszükségletei
--   Szervizrendelési cikkre vonatkozó követelmények
+- Projekt cikkszükségletei
+- Szervizrendelési cikkre vonatkozó követelmények
 
 A készlet alapértelmezett rendelési beállításai használatosak a következők létrehozásakor:
 
--   Készletnaplók
--   Átmozgatási rendelések
--   Tervezett átmozgatási rendelések
+- Készletnaplók
+- Átmozgatási rendelések
+- Tervezett átmozgatási rendelések
 
 Az alapértelmezett készletrendelési beállítások alkalmazandók a következők létrehozásakor is:
 
--   Karanténutasítások
--   Minőségi rendelések
--   Termelési rendelések
--   Anyagjegyzéksorok
--   Terv. term. rendelések
+- Karanténutasítások
+- Minőségi rendelések
+- Termelési rendelések
+- Anyagjegyzéksorok
+- Terv. term. rendelések
 
 ## <a name="full-definition-of-a-released-product"></a>Egy kiadott termék teljes meghatározása
+
 A tranzakciók létrehozásakor meg kell adnia egy kiadott termék teljes meghatározását a sorban, hogy a Supply Chain Management megpróbálhassa az alapértelmezett rendelési beállításokat azonosítani. A kiadott termék teljes meghatározása azt jelenti, hogy a cikkszámot és az összes az aktív termékdimenziót, például a konfigurációt, méretet, stílus és a színt, megadták a tranzakcióban. Például, ha egy kiadott termékváltozathoz tartozó rendelési sort manuális hoz létre, meg kell adnia minden szükséges termékdimenziót, mielőtt a telephely, raktár, mennyiségek és átfutási idő megjelenik a rendeléssorban szereplő alapértelmezés szerint. 
 
-Az alapértelmezett rendelési beállítások paraméterei közül nem mindegyik kerül alkalmazásra, amikor rendelési vagy naplósorok jönnek létre. Az alapértelmezés szerint a mennyiségek és az átfutási idők csak szükség esetén jelennek meg. Például a naplósor megszámolásakor csak a telephely és raktár jelenik meg alapértelmezés szerint a sor létrehozásakor. Nyilvánvalóan nincs alapértelmezett mennyiség, illetve nincsenek ellenőrzések a többszörösökön vagy a minimum értékeken a sor létrehozásakor vagy a napló feladásakor. 
+Az alapértelmezett rendelési beállítások paraméterei közül nem mindegyik kerül alkalmazásra, amikor rendelési vagy naplósorok jönnek létre. Az alapértelmezés szerint a mennyiségek és az átfutási idők csak szükség esetén jelennek meg. Például a naplósor megszámolásakor csak a telephely és raktár jelenik meg alapértelmezés szerint a sor létrehozásakor. Éppen ezért nincs alapértelmezett mennyiség, illetve nincsenek ellenőrzések a többszörösökön vagy a minimum értékeken a sor létrehozásakor vagy a napló feladásakor. 
 
 A rendszer mindig megpróbál egy alapértelmezett telephelyet és raktárt találni, amikor egy rendeléshez vagy naplóhoz sor jön létre. Alapértelmezés szerint a telephely nem mindig látható a rendelési beállításokból. Például egy értékesítési rendelés vagy beszerzési rendelés létrehozásakor a rendelés fejlécében szereplő telephely automatikusan bekerül a rendelési sorokba. Anyagjegyzéksor létrehozásakor az anyagjegyzék fejlécében szereplő telephely használatos. A telephely meghatározása után ez felhasználásra kerül a helyspecifikus rendelésbeállítások megkeresésekor, amelyek ezután a raktár alapértelmezés szerint beállításai lehetnek. 
 
-Az alapértelmezett rendelési típust, a beszerzést és a készlet-átfutási időket felül lehet írni a cikk fedezeti szabályaival a **Cikkfedezet** lapon. Annak ellenére, hogy az alapértelmezett rendelési beállítások nem teszik lehetővé a termelés és az átviteli átfutási idő megkülönböztetését, a cikkfedezeti szabályok ezt engedélyezik. A cikkfedezeti beállításokat azonban csak akkor használja az anyagszükséglet-tervezés, amikor tervezett termelési és tervezett átviteli rendeléseket hoznak létre, és nem kerülnek alkalmazásra, amikor manuálisan hoznak létre termelési és átviteli rendeléseket. 
+Az alapértelmezett rendelési típust, a beszerzést és a készlet-átfutási időket felül lehet írni a cikk fedezeti szabályaival a **Cikkfedezet** lapon. Annak ellenére, hogy az alapértelmezett rendelési beállítások nem teszik lehetővé a termelés és az átviteli átfutási idő megkülönböztetését, a cikkfedezeti szabályok ezt engedélyezik. A cikkfedezeti beállításokat azonban csak akkor használja az Alaptervezést (MRP), amikor tervezett termelési és tervezett átviteli rendeléseket hoznak létre, és nem kerülnek alkalmazásra, amikor manuálisan hoznak létre termelési és átviteli rendeléseket. 
 
 ## <a name="default-order-settings-rules"></a>Alapértelmezett rendelésbeállítások szabályai
+
 Megadhatja az általános alapértelmezett rendelési beállításokat, és megadhat tetszőleges számú, olyan alapértelmezett rendelésbeállítási szabályt, amelyek csak bizonyos esetekben érvényesek, például a telephely vagy egy adott cikkdimenzió vagy termékdimenzió kombinációja esetében. Raktár-specifikus rendelésbeállításokat nem lehet meghatározni.
 
 ### <a name="rank-in-default-order-settings"></a>Rangsorolás az alapértelmezett rendelési beállításokban
@@ -89,17 +92,17 @@ Az alapértelmezett rendelésbeállítási szabályok rangsorolást is tartalmaz
 
 ### <a name="default-order-settings-for-released-products"></a>Alapértelmezett rendelésbeállítások kiadott termékekhez
 
-Egyedi kiadott termékek esetében általános rendelési beállításokat vagy helyspecifikus rendelésbeállításokat határozhat meg. Az általános rendelésbeállításokhoz mindig 0-ás helyezés tartozik. Ha új értékesítési, beszerzési és készletre vonatkozó rendelésbeállítások állít be együtt, egyszerre, ajánlott, hogy a **Részletes nézetet** használja az **Alapértelmezett rendelésbeállítások** oldalon. Ahhoz, hogy a Részletes nézetre váltson, kövesse ezt az elérési útvonalat: **Beállítások** műveleti ablak &gt; **Lap beállításai** &gt; **Nézet megváltoztatása** &gt; **Részletes nézet**.
+Egyedi kiadott termékek esetében általános rendelési beállításokat vagy helyspecifikus rendelésbeállításokat határozhat meg. Az általános rendelésbeállításokhoz mindig 0-ás helyezés tartozik. Ha új értékesítési, beszerzési és készletre vonatkozó rendelésbeállítások állít be egyszerre, ajánlott, hogy a **Részletes nézetet** használja az **Alapértelmezett rendelésbeállítások** oldalon. Ahhoz, hogy a részletes nézetre váltson, kövesse ezt az elérési útvonalat: **Beállítások** &gt; **Lap beállításai** &gt; **Nézet megváltoztatása** &gt; **Részletes nézet**.
 
 ### <a name="site-specific-order-settings"></a>Helyspecifikus rendelésbeállítások
 
-Helyspecifikus rendelésbeállítások létrehozásához kattintson az **Új** lehetőségre. A **Részletes nézetben** töltse ki a helyet a **Vonatkozó beállítások** &gt; **Hely** mezőjében. A **Rács nézetben**, töltse ki a helyet a **Hely** oszlopban. Az új szabály automatikusan kap egy új helyezést, amely magasabb, mint nulla. Tetszőleges számú helyspecifikus szabályt hozhat létre, és az összes helyspecifikus szabályhoz hozzárendelheti ugyanazt a helyezést, amivel azt jelzi, hogy azok ugyanolyan fontosak. 
+Helyspecifikus rendelésbeállítások létrehozásához válassza ki az **Új** lehetőséget. A **Részletes nézetben** töltse ki a helyet a **Vonatkozó beállítások** &gt; **Hely** mezőjében. A **Rács nézetben**, töltse ki a helyet a **Hely** oszlopban. Az új szabály automatikusan kap egy új helyezést, amely magasabb, mint nulla. Tetszőleges számú helyspecifikus szabályokat hozhat létre, és az összes helyspecifikus szabályhoz hozzárendelheti ugyanazt a helyezést, amivel azt jelzi, hogy azok ugyanolyan fontosak. 
 
-Ha a **Részletes nézetben** van, akkor nem lehet áttekinteni a cikkhez létrehozott szabályokat. Váltson a **Lista megjelenítése/elrejtése** gombbal az áttekintő adatok megjelenítéséhez. Amikor létrehoznak egy bármilyen típusú rendeléssort, és nincs megadva hely, a Supply Chain Management keres egy olyan szabályt, amelyhez nincs megadva telephely. Ez segíthet meghatározni a rendeléssorban szereplő alapértelmezett helyet. Ezt a helyet használja ezután a rendszer, hogy egy olyan helyspecifikus szabályt találjon, ahol az alapértelmezett raktárt esetleg beállították. Ez a raktár vonatkozik a rendelési sorra.
+Ha a **Részletes nézetben** van, akkor nem lehet áttekinteni a cikkhez létrehozott szabályokat. Használja a **Lista megjelenítése/elrejtése** gombot az áttekintő adatok megjelenítéséhez. Amikor létrehoznak egy bármilyen típusú rendeléssort, és nincs megadva hely, a Supply Chain Management keres egy olyan szabályt, amelyhez nincs megadva telephely. Ez segít meghatározni a rendeléssorban szereplő alapértelmezett helyet. Ezt a helyet használja ezután a rendszer, hogy egy olyan helyspecifikus szabályt találjon, ahol az alapértelmezett raktárt esetleg beállították. Ez a raktár vonatkozik a rendelési sorra.
 
 ### <a name="specific-order-settings-for-product-dimension"></a>Specifikus rendelésbeállítások termékdimenzióhoz
 
-Bármely aktív termékdimenzióhoz vagy aktív cikkdimenziók kombinációjához lehet rendelésbeállítási szabályokat meghatározni. Ha a termékdimenzió egyik mezője üresen marad, akkor az adott szabály a termékdimenzió összes értékére vonatkozik. 
+Bármely aktív termékdimenzióhoz vagy aktív cikkdimenziók kombinációjához lehet rendelésbeállítási szabályokat meghatározni. Ha a termékdimenzió egyik mezője üres, akkor az adott szabály a termékdimenzió összes értékére vonatkozik. 
 
 Tételezzük fel a következő termékpéldát:
 
@@ -132,7 +135,7 @@ A következő alapértelmezett rendelésbeállítási szabályokat lehet létreh
 
 A régi verziók leállításának két szabálya azonos helyezéssel rendelkezik, ami azt jelenti, azok ugyanolyan fontosak. Mindkettő helyezése magasabb, mint a C1 konfigurációra vonatkozó szabályé, ez azt jelenti, hogy elsőbbséget élveznek a C1 konfigurációs szabállyal szemben. 
 
-Ez a példa ismerteti a rangsorolását szükségességét. Ha egy beszerzési rendelést hoznak létre a C1 konfigurációhoz és az R2 verzióhoz, a rangsorolását hiányában az R2-re és a C1-re meghatározott két szabály nem lenne egyértelmű. A félreérthetőség megoldására a Supply Chain Management keresést végez a szabályok között, csökkenő sorrendben, és az első vonatkozó szabályt alkalmazza. A jelen példában, amikor beszerzési rendeléssort hoznak létre a C1 konfigurációhoz és az R2 verzióhoz, a felhasználó figyelmeztetést kap, hogy a cikk várakoztatva van, és ennek oka a verzió értéke. Ha a konfigurációra vonatkozó szabály helyezése magasabb lenne, mint a verzióra vonatkozó szabályé, akkor a C1 konfiguráció és az R2 verzió beszerzési rendeléssor létrehozása sikerült volna, és a felhasználó nem kapott volna "cikk várakoztatva" üzenetet. 
+Ez a példa ismerteti a rangsorolását szükségességét. Ha egy beszerzési rendelést hoznak létre a C1 konfigurációhoz és az R2 verzióhoz, a rangsorolását hiányában az R2-re és a C1-re meghatározott két szabály nem lenne egyértelmű. A félreérthetőség megoldására a Supply Chain Management keresést végez a szabályok között, csökkenő sorrendben, és az első vonatkozó szabályt alkalmazza. A jelen példában, amikor beszerzési rendeléssort hoznak létre a C1 konfigurációhoz és az R2 verzióhoz, a felhasználó figyelmeztetést kap, hogy a cikk várakoztatva van, és ennek oka a verzió értéke. Ha a konfigurációra vonatkozó szabály helyezése magasabb lenne, mint a verzióra vonatkozó szabályé, akkor a C1 konfiguráció és az R2 verzió beszerzési rendeléssor létrehozása sikerült volna, és a felhasználó nem kapott volna „cikk várakoztatva” üzenetet. 
 
 Vegye figyelembe a következő, alapértelmezett rendelésbeállítási szabályokat.
 
@@ -142,19 +145,19 @@ Vegye figyelembe a következő, alapértelmezett rendelésbeállítási szabály
 | 10   |      | C1            |  R2   |  2           |  21               |                                                |                    |
 | 0    |      |               |       | 1            | 11                |                                                |                    |
 
-A rendszer kétszer bejárja a szabálykészletet annak érdekében, hogy meghatározza a helyet és a raktárt. Amikor egy beszerzési rendeléssort hoznak létre a C1 konfigurációhoz és az R2 stílushoz, a hely meghatározása a 10. helyezésű szabály alapján történik. Ezután a rendszer keres egy szabályt a 2. helyhez annak érdekében, hogy meghatározza a raktárt. Megtalálja a 20. szabályt, és mivel ennek magasabb a rangsorolása, a beszerzési rendeléssoron szereplő raktár 22 lesz, és nem 21. 
+A rendszer kétszer bejárja a szabálykészletet, hogy meghatározza a helyet és a raktárt. Amikor egy beszerzési rendeléssort hoznak létre a C1 konfigurációhoz és az R2 stílushoz, a hely meghatározása a 10. helyezésű szabály alapján történik. Ezután a rendszer keres egy szabályt a 2. helyhez, hogy meghatározza a raktárt. Megtalálja a 20. szabályt, és mivel ennek magasabb a rangsorolása, a beszerzési rendeléssoron szereplő raktár 22 lesz, és nem 21.
 
 Általános útmutatásként: a specifikus szabályok és az olyan dimenziókra vonatkozó szabályok, amelyek fontosabbak más dimenzióknál, magasabb helyezést kapnak, míg az általánosabb szabályok rangsorolása alacsonyabb. 
 
 A 0-ás helyezésű szabály biztonsági hálóként szolgál. Ha nem található más szabály, a 0-ás szabály alapértelmezett rendelési beállításai kerülnek felhasználásra. 
 
-Mivel a helyezési szám ennyire fontos, az **Alapértelmezett rendelésbeállítások** műveletpanelén található egy olyan funkció, amellyel felfelé vagy lefelé lehet mozgatni és át lehet számozni a szabályokat úgy, hogy a köztük lévő lépésköz mindig 10. 
+Mivel a helyezési szám fontos, az **Alapértelmezett rendelésbeállítások** műveletpanelén található egy olyan funkció, amellyel felfelé vagy lefelé lehet mozgatni és át lehet számozni a szabályokat úgy, hogy a köztük lévő lépésköz mindig 10. 
 
-Egy kiadott termékhez létrehozott szabályok száma nagy lehet. Ahhoz, hogy jobban meg lehessen érteni, hogy egy-egy szabály miket ír felül, és miért van rá szükség, a **Rács nézet** használatát javasoljuk az **Alapértelmezett rendelésbeállítások** oldalon. A Rács nézet engedélyezéséhez kövesse ezt az elérési útvonalat: **Lehetőségek** műveleti ablak &gt; **Oldalbeállítások** &gt; **Nézet megváltoztatása** &gt; **Rácsnézet**. A rácson megjelenő oszlopok száma nagy lehet, különösen az értékesítésre és a készletre vonatkozó lapok esetében. A rácsban látható oszlopok számának korlátozásához az oszlopok csoportjait el lehet rejteni vagy láthatóvá lehet tenni az **Alapértelmezett rendelésbeállítások** &gt; **Oszlop megjelenítése** menüben lévő gombok segítségével.
+Egy kiadott termékhez létrehozott szabályok száma nagy lehet. Ahhoz, hogy jobban megértse, hogy egy-egy szabály miket ír felül, és miért van rá szükség, a **Rács nézet** használatát javasoljuk az **Alapértelmezett rendelésbeállítások** oldalon. A Rács nézet engedélyezéséhez kövesse ezt az elérési útvonalat: **Lehetőségek** &gt; **Oldalbeállítások** &gt; **Nézet megváltoztatása** &gt; **Rácsnézet**. A rácson megjelenő oszlopok száma nagy lehet, különösen az értékesítésre és a készletre vonatkozó lapok esetében. A rácsban látható oszlopok számának korlátozásához az oszlopok csoportjait el lehet rejteni vagy láthatóvá lehet tenni az **Alapértelmezett rendelésbeállítások** &gt; **Oszlop megjelenítése** menüben lévő gombok segítségével.
 
 ### <a name="specific-order-settings-for-released-product-variant"></a>Specifikus rendelésbeállítások kiadott termékváltozatokhoz
 
-Ha az alapértelmezett rendelési beállításokra vonatkozó szabály túl nehézkes, lehetőség van arra is, hogy egyszerűen meghatározzák az alapértelmezett rendelési beállításokat minden termékváltozathoz. A következő példák megmutatják, hogy ez hogy néz ki a fentiekben ismertetett terméknél és eseteknél.
+Ha az alapértelmezett rendelési beállításokra vonatkozó szabály túl nehézkes, lehetőség van arra is, hogy meghatározzák az alapértelmezett rendelési beállításokat minden termékváltozathoz. A következő példa megmutatja, hogy ez hogy néz ki a fentiekben ismertetett terméknél és eseteknél.
 
 | Helyezés | Telephely | Konfiguráció | Stílus | Beszerzés - Alapértelmezett beállítások felülbírálása | Beszerzés átfutási ideje | Beszerzés - Leállítva | Értékesítés - Alapértelmezett beállítások felülbírálása | Értékesítés - leállítva |
 |------|------|---------------|-------|--------------------------------------|--------------------|--------------------|-----------------------------------|-----------------|
@@ -168,5 +171,24 @@ Ha az alapértelmezett rendelési beállításokra vonatkozó szabály túl neh�
 
 A rangsorban elfoglalt hely ebben az esetben nem nagyon számít, így el is lehet rejteni. Ez a megoldás potenciálisan karbantartási eseményt vált ki. Ugyanakkor érdemes fontolóra venni ennek a beállításnak a használatát, ha Termékéletciklus-kezelés (PLM) rendszerekkel való integrációt tervez.
 
+## <a name="use-strict-or-standard-validation-of-default-order-quantities"></a>Az alapértelmezett rendelési mennyiségek szigorú vagy normál jóváhagyásának használata
 
+Megadhatja, hogy milyen szigorú legyen a rendszer a termékkel kapcsolatos **Alapértelmezett rendelési beállításokban** megadott mennyiségek jóváhagyásakor. Az új szigorú beállítás használata esetén a **Szokásos rendelési mennyiségnek** mindig a megadott beszerzési rendelések, készlet és értékesítési rendelések **Többszörösének** kell lennie. Ha szigorú ellenőrzést alkalmaz, nem fogja tudni menteni azokat az alapértelmezett rendelési beállításokat, amelyek nem felelnek meg ennek a követelménynek (és egy hibaüzenet jelenik meg az üzenetsávban). 
 
+A szigorú ellenőrzés az **Alapértelmezett rendelési beállítások** lapjának **Beszerzési rendelés**, **Készlet** és **Értékesítési rendelés** gyorslapján megadott **Szokásos rendelési mennyiség** értékeire vonatkozik. Minden gyorslap saját **Több** beállítással rendelkezik, amely az adott gyorslaphoz megadott **Szokásos rendelési mennyiség** érték érvényesítésére szolgál.
+
+### <a name="enable-the-strict-validation-option"></a>A szigorú ellenőrzési beállítás engedélyezése
+
+A szigorú ellenőrzési lehetőség használata előtt engedélyeznie kell a saját rendszerében. A rendszergazdák használhatják a [Funkciókezelési](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) oldalt a funkció állapotának ellenőrzéséhez, és szükség esetén engedélyezéséhez. Itt a funkció a következőként szerepel:
+
+- **Modul** - *Termékinformáció-kezelés*
+- **Funkciónév** - *Szigorú ellenőrzés az alapértelmezett rendelési mennyiségeknél*
+
+### <a name="set-the-validation-option"></a>Az ellenőrzési lehetőség beállítása
+
+Az ellenőrzési lehetőség beállításához:
+
+1. Lépjen a **Termékinformáció kezelése \> Beállítás \> Termékinformáció kezelés paraméterei** elemre.
+1. Az **Általános** lapon állítsa az **Alapértelmezett rendelési mennyiségek ellenőrzése** lehetőséget a következő értékek valamelyikére:
+    - **Szigorú** – Akkor válassza ezt a lehetőséget, ha azt szeretné, hogy az összes **Szokásos rendelési mennyiség** értékei a **Több** többszörösei legyenek minden egyes Gyorslapon (**Beszerzési rendelés**, **Készlet** és **Értékesítési rendelés**).
+    - **Szokásos** – Akkor válassza ezt a lehetőséget, ha a szokásos ellenőrzést szeretné használni (amely ugyanúgy működik, mint amikor ez a funkció nincs engedélyezve).

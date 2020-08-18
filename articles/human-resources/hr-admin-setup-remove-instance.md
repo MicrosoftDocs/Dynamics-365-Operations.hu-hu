@@ -3,7 +3,7 @@ title: Példány eltávolítása
 description: Ez a cikk végigvezeti Önt a teszt- vagy éles környezet eltávolításán a Microsoft Dynamics 365 Human Resources esetében.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 07/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 17f299f81d1326dfb06c11a6125acc54b8ef2a6e
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: a384801060b2b684f7908daaac2311edd27c773a
+ms.sourcegitcommit: 4a981ee4be6d7e6c0e55541535d386bce2565cba
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3431199"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "3621380"
 ---
 # <a name="remove-an-instance"></a>Példány eltávolítása
 
@@ -67,8 +67,21 @@ A Human Resources-környezet meglévő Power Apps környezetből való eltávol�
 1. Forduljon a támogatáshoz eltávolítási igény kezdeményezésére.
 2. A támogatási csapat eltávolítási kérelmet kezdeményez a Human Resources DevOps csapatnál. 
 3. Folytassa, miután értesült, hogy a környezet eltávolításra került.
-4.  Jelentkezzen be az LCS-be azzal a fiókkal, amelyet a Human Resources alkalmazásba való feliratkozáshoz használt. 
+4. Jelentkezzen be az LCS-be azzal a fiókkal, amelyet a Human Resources alkalmazásba való feliratkozáshoz használt. 
 5. Válassza ki azt a Human Resources-projektet, amely tartalmazza a környezetet. 
 6. Az LCS-projektben válassza a **Human Resources alkalmazás kezelése** csempét. 
 7. Válassza ki a példányt, amelyet el szeretné távolítani, amelynél fel kell tüntetni a telepítés állapotát **Nem sikerült** állapottal.
 8. Válassz a **Példány eltávolítása** lehetőséget, és hagyja jóvá a döntést. 
+
+## <a name="recover-a-soft-deleted-environment"></a>A részben törölt környezet helyreállítása
+
+Ha törli azt a Power Apps környezetet, amelyhez a Emberi erőforrások környezete csatlakozik, akkor a Lifecycle Services Emberi erőforrások környezetének állapota **részben törlődik**. Ebben az esetben a felhasználók nem tudnak az Emberi erőforrásokhoz csatlakozni.
+
+A környezet helyreállítása:
+
+1. Kövesse a [Power Apps környzete visszaállítása](/power-platform/admin/recover-environment.md) részben található utasításokat.
+
+2. Az Emberi erőforrások környezet helyreállításához forduljon a támogatáshoz. További információért lásd a [Támogatás kérése](hr-admin-troubleshooting-support.md) lehetőséget.
+
+> [!Warning]
+> A Power Apps környezeteket a törlést követően csak hét napig mentik. A környezetet a 7 napos időszakon belül kell helyreállítania.

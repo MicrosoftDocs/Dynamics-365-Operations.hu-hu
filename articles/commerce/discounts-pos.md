@@ -3,7 +3,7 @@ title: Engedmények megjelenítése a pénztárban
 description: Ez a témakör azt mutatja be, hogy a Microsoft Dynamics 365 Commerce hogyan segíti az értékesítési munkatársak számára megismerni a promóciókkal kapcsolatos tudnivalókat, valamint azt, hogy hogyan használhatók fel a keresztértékesítéshez és a felülértékesítéshez.
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 05/05/2020
+ms.date: 07/29/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-Commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, Commerce
 ms.author: asharchw
 ms.search.validFrom: 2020-02-28
 ms.dyn365.ops.version: Application update 10.0.10
-ms.openlocfilehash: 0ffa7ca6294c7b523ec743f1cb9bc4aef8ef46a8
-ms.sourcegitcommit: 4d5bcda288341572076364559125c86e2ec05273
+ms.openlocfilehash: 7531e250580019a1e9892d22fc7761770227c61f
+ms.sourcegitcommit: db1a8ffcaebc2896e8f528d7807c54f8597f450e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "3334708"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "3638182"
 ---
 # <a name="show-discounts-in-pos"></a>Engedmények megjelenítése a pénztárban
 
@@ -54,7 +54,7 @@ A **Minden engedmény** oldalon az értékesítő kulcsszavak szerint is kereshe
 
 A többsoros engedmények, például mennyiségi kedvezmények, kombinációs engedmények és küszöbérték-kedvezmények kiváló módszerek arra, hogy ösztönözzék a vevőket, hogy több terméket vegyenek vásároljanak a nagyobb engedményekhez. Éppen ezért növelik a vevők kosarát és a kiskereskedelmi bevételek mértékét is. Ezek az engedmények közzétehetők e-commerce weboldalakon, a közösségi médiában és a bolt szalaghirdetésein.
 
-Ha azonban ezek a nyilvános módszerek használva is vannak előfordulhat, hogy a vevők nem használják ki a lehetőséget, hogy igénybe vegyék a promóciókat. Annak érdekében, hogy az értékesítők egyszerűen megtanulhassák a kiválasztott sorra vagy akár a teljes kosárra vonatkozó promóciókat, a kiskereskedők az „Elérhető engedmények megtekintése” műveletre vonatkozó gombot a **Tranzakció** oldal gombrács mezőjébe felvehetik. Ily módon egy értékesítési munkatárs kiválaszthat egy tranzakciósort, majd a gombra kattintva megjelenítheti a kiválasztott sorhoz rendelkezésre álló összes engedményt. Az értékesítési munkatárs másik lapot is kiválaszthat, amelyen láthatók a teljes tranzakcióra vonatkozó kedvezmények.
+Ha azonban ezek a nyilvános módszerek használva is vannak előfordulhat, hogy a vevők nem használják ki a lehetőséget, hogy igénybe vegyék a promóciókat. Annak érdekében, hogy az értékesítők egyszerűen megtanulhassák a kiválasztott sorra vagy akár a teljes kosárra vonatkozó promóciókat, a kiskereskedők az **„Elérhető engedmények megtekintése”** műveletre vonatkozó gombot a **Tranzakció** oldal gombrács mezőjébe felvehetik. Ennek eredményelént egy értékesítési munkatárs kiválaszthat egy tranzakciósort, majd a gombra kattintva megjelenítheti a kiválasztott sorhoz rendelkezésre álló összes engedményt. Az értékesítési munkatárs másik lapot is kiválaszthat, amelyen láthatók a teljes tranzakcióra vonatkozó kedvezmények. Fontos megjegyezni, hogy az **Elérhető engedmények megtekintése** lehetőség nem jeleníti meg az értékesítési sorban már alkalmazott engedményeket, mivel az engedmény adatai már meg vannak jelenítve az értékesítési sorban. Ennek a forgatókönyvnek az a célja, hogy csak a még nem alkalmazott engedmények jelenjenek meg. Ez alól kivételek az „Alkalmazás kuponkód nélkülként” megjelölt utalvány alapján alkalmazott engedmények. Így az értékesítési társítás egyszerűen eltávolíthatja az általuk alkalmazott kupont.
 
 Az **Összes engedmény** lap csak olyan engedményeket mutat be, amelyek nem ütköznek az alkalmazott kedvezményekkel. Ez a viselkedés segít abban, hogy ha egy értékesítési munkatárs értesíti a vevőt a kedvezményről, és a vevő a szükséges lépést hajtja végre (például a vevő még egy cikket vásárol, hogy 10% kedvezményt kapjon), akkor az engedmény alkalmazva legyen a tranzakcióra. A kuponalapú kedvezmények csak akkor jelennek meg, ha az **Alkalmazás kuponkód nélkül** beállítás be van kapcsolva.
 

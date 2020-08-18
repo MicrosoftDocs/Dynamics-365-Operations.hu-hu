@@ -3,7 +3,7 @@ title: Jelentés befejezettként a feladatkártya eszközből
 description: Ez a témakör azt mutatja be, hogyan lehet konfigurálni a rendszert úgy, hogy a Feladatkártya-eszköz felhasználói a termelési rendelésből a készletbe bejelenthetik a kész termékeket.
 author: johanhoffmann
 manager: tfehr
-ms.date: 05/18/2020
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,19 +15,24 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-18
-ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: f5d34893ddc8adc3785ec50dbd72438cf8f68c5d
-ms.sourcegitcommit: 52ba8d3e6af72df5dab6c04b9684a61454d353ad
+ms.dyn365.ops.version: Release 10.0.13
+ms.openlocfilehash: 6ba5d8bc0c22f97e6d2ce61c636090e04fae5abd
+ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "3403262"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "3651616"
 ---
 # <a name="report-as-finished-from-the-job-card-device"></a>Jelentés befejezettként a feladatkártya eszközből
 
 [!include [banner](../includes/banner.md)]
 
-A dolgozók a munkakártya eszköz **jelentés-végrehajtási** lapját használják a termelési feladatokra kitöltött mennyiségek jelentése céljából.
+A dolgozók a munkakártya eszköz **jelentés-végrehajtási** lapját használják a termelési feladatokra kitöltött mennyiségek jelentése céljából. Ez a témakör azt mutatja be, hogyan lehet beállítani a különböző lehetőségeket, amelyek meghatározzák, hogy a dolgozók hogyan jelenthetik készként a munkát ezen az oldalon, és mi történik a következőn. A lehetőségek a következők:
+
+- Annak megadása, hogy a készként jelentett mennyiségeket hozzáadja-e a program a készlethez, és ha igen, akkor hogyan.
+- Annak megadása, hogy a készként jelentett kötegszámokat létrehozza és alkalmazza-e, és ha igen, akkor hogyan.
+- Annak megadása, hogy a készként jelentett sorozatszámokat létrehozza és alkalmazza-e, és ha igen, akkor hogyan.
+- Annak megadása, hogy készként jelentse-e az azonosítótáblához, és ha igen, akkor hogyan.
 
 ## <a name="control-whether-quantities-that-are-reported-as-finished-are-added-to-inventory"></a>Annak megadása, hogy a készként jelentett mennyiségeket adja-e a program a készlethez
 
@@ -42,7 +47,7 @@ A következő lépésekkel szabályozhatja, hogy az utolsó műveletben befejeze
     - **Állapot** – Csak a termelési rendelés állapota változik. A rendszer nem adja hozzá a mennyiségeket a készlethez, ha a legutóbbi műveletben mennyiséget jelentenek.
 
 > [!NOTE]
-> A mennyiségek nem követhetők a készletben, ha az ezeket készként jelentő műveletek nem az utolsó műveletként vannak meghatározva. Ezek a mennyiségek azonban felhasználhatók a haladás megjelenítésére. Olyan szabályok is szerepelhetnek, amelyek meghatározzák, hogy a dolgozók elindíthatják-e a következő műveletet, mielőtt a korábbi műveletre vonatkozóan meghatározott küszöbértéket elérnek. Ezeket a szabályokat a **Mennyiségi ellenőrzés** lapja határozza meg a **Termelési rendelés alapértelmezései** lapnak.
+> A mennyiségek nem követhetők a készletben, ha az ezeket készként jelentő műveletek nem az utolsó műveletként vannak meghatározva. Ezek a mennyiségek azonban felhasználhatók a haladás megjelenítésére. Olyan szabályok is szerepelhetnek, amelyek meghatározzák, hogy a dolgozók elindíthatják-e a következő műveletet, mielőtt a korábbi műveletre vonatkozóan meghatározott küszöbértéket elérnek. Ezeket a szabályokat a **Mennyiségi ellenőrzés** lapja határozza meg a **Termelési rendelés alapértelmezései** lapon.
 
 A **termelési rendelés alapadatai** munkalapjával kapcsolatos további tudnivalókat lásd: [Termelési paraméterek a gyártás végrehajtásánál](production-parameters-manufacturing-execution.md).
 
@@ -50,11 +55,21 @@ A **termelési rendelés alapadatai** munkalapjával kapcsolatos további tudniv
 
 A feladatkártya-eszköz három esetet támogat a kötegelt cikkek jelentéséhez. Ezek a helyzetek mind a speciális raktári folyamatokhoz engedélyezett cikkekre, mind a speciális raktári folyamatokhoz nem engedélyezett cikkekre vonatkoznak.
 
-- **Kötegelt számok kézi hozzárendelése:** A dolgozók egyéni kötegszámot adnak meg. Ez a kötegszám olyan külső forrásból származhat, amelyet a rendszer nem ismer.
-- **Előre definiált kötegszám:** A dolgozók egy kötegszámnak a kiválasztását végzik el egy listáról, amelyet a rendszer automatikusan generált, a termelési rendelésnek a feladatkártya-eszközbe történő kiadása előtt.
-- **Rögzített kötegszámok:** A dolgozók kötegszámot nem adnak meg. Helyette a rendszer automatikusan hozzárendel egy kötegszámot a termelési rendeléshez a kiadás előtt.
+- **Kötegelt számok kézi hozzárendelése** – A dolgozók egyéni kötegszámot adnak meg. Ez a kötegszám olyan külső forrásból származhat, amelyet a rendszer nem ismer.
+- **Előre definiált kötegszám** – A dolgozók egy kötegszámnak a kiválasztását végzik el egy listáról, amelyet a rendszer automatikusan generált, a termelési rendelésnek a feladatkártya-eszközbe történő kiadása előtt.
+- **Rögzített kötegszámok** – A dolgozók kötegszámot nem adnak meg. Helyette a rendszer automatikusan hozzárendel egy kötegszámot a termelési rendeléshez a kiadás előtt.
 
-Kövesse az alábbi lépéseket az egyes forgatókönyvek engedélyezéséhez:
+
+### <a name="enable-the-feature-on-your-system"></a>A funkció engedélyezése a rendszerben
+
+Ha engedélyezni szeretné, hogy a feladatkártya-eszközök elfogadhassanak egy kötegszámot a készként való jelentés során, akkor a [szolgáltatások kezelésével](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) be kell kapcsolni a következő szolgáltatásokat (ebben a sorrendben):
+
+1. Javított felhasználói élmény a feladatkártya eszközében lévő jelentés az előrehaladásról párbeszédpanelhez
+1. Engedélyezze, hogy a köteg-és sorozatszámokat megadhassa befejezettként a Feladatkártya eszközéből (előzetes)
+
+### <a name="configure-products-that-require-batch-number-reporting"></a>A kötegszám-jelentést igénylő termékek konfigurálása
+
+A következő lépésekkel engedélyezheti, hogy a termék támogassa az elérhető kötegvezérelt forgatókönyveket:
 
 1. Kattintson a **Termékinformációk kezelése \> Termékek \> Kiadott termékek** lehetőségre.
 1. Válassza ki az konfigurálni kívánt terméket.
@@ -63,14 +78,7 @@ Kövesse az alábbi lépéseket az egyes forgatókönyvek engedélyezéséhez:
 > [!NOTE]
 > Alapértelmezés szerint, ha egy köteg által vezérelt termékhez nem rendel hozzá kötegszám-csoportot, a Feladatkártya-eszköz a készként való jelentés során manuális bejegyzést ad a kötegszám számára.
 
-A következő alszakaszok azt írják le, hogyan lehet beállítani a követésiszám-csoportokat, hogy a fenti három forgatókönyvet támogassák a kötegelt cikkek jelentéséhez.
-
-### <a name="enable-batch-number-reporting-on-the-job-card-device"></a>Kötegszám-jelentés engedélyezése a feladatkártya-eszközön
-
-Ha engedélyezni szeretné, hogy a feladatkártya-eszközök elfogadhassanak egy kötegszámot a készként való jelentés során, akkor a [szolgáltatások kezelésével](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) be kell kapcsolni a következő szolgáltatásokat (ebben a sorrendben):
-
-1. Javított felhasználói élmény a feladatkártya eszközében lévő jelentés az előrehaladásról párbeszédpanelhez
-1. Engedélyezze, hogy a köteg-és sorozatszámokat megadhassa befejezettként a Feladatkártya eszközéből (előzetes)
+A következő szakaszok azt írják le, hogyan lehet beállítani a követésiszám-csoportokat, hogy a fenti három forgatókönyvet támogassák a kötegelt cikkek jelentéséhez.
 
 ### <a name="set-up-a-tracking-number-group-that-lets-workers-manually-assign-a-batch-number"></a>Olyan követésiszám-csoport megadása, amellyel a dolgozók manuálisan rendelhetik hozzá a köteg számát
 
@@ -80,7 +88,7 @@ A kötegszámok manuális kiosztásának engedélyezéséhez, kövesse az alább
 1. Hozza létre vagy válassza ki a beállítani kívánt követésiszám-csoportot.
 1. Az **Általános** gyorslapon állítsa a **Manuális** beállítást **Igen** értékre.
 
-    ![Követésiszám-csoportok lap](media/tracking-number-group-manual.png "Követésiszám-csoportok lap")
+    ![A kézi kötegszámok követési számcsoportja](media/tracking-number-group-manual.png "A kézi kötegszámok követési számcsoportja")
 
 1. A szükséges módon adja meg a többi értéket, majd válassza ki ezt a követésiszám-csoportot azon felszabadított termékek kötegszám-csoportjaként, amelyekre ezt a forgatókönyvet használni szeretné.
 
@@ -97,7 +105,7 @@ Előre meghatározott kötegszámok listájának megadásához, kövesse az alá
 1. Az **Általános** gyorslapon állítsa a **Csak készlettranzakciókra** beállítást **Igen** értékre.
 1. A **Mennyiségenként** mező használatával a kötegek számát a megadott érték alapján osztja fel. Például van egy termelési rendelés tíz darabra, és a **Mennyiségenként** mező értéke *2*. Ebben az esetben a létrehozáskor öt kötegszám lesz hozzárendelve a termelési rendeléshez.
 
-    ![Követésiszám-csoportok lap](media/tracking-number-group-predefined.png "Követésiszám-csoportok lap")
+    ![Az előre meghatározott kötegszámok követési számcsoportja](media/tracking-number-group-predefined.png "Az előre meghatározott kötegszámok követési számcsoportja")
 
 1. A szükséges módon adja meg a többi értéket, majd válassza ki ezt a követésiszám-csoportot azon felszabadított termékek kötegszám-csoportjaként, amelyekre ezt a forgatókönyvet használni szeretné.
 
@@ -114,13 +122,96 @@ Ha a kötegek számát automatikusan kell hozzárendelni, a dolgozói beavatkoz�
 1. Az **Általános** gyorslapon állítsa a **Csak készlettranzakciókra** beállítást **Nem** értékre.
 1. Állítsuk a **Manuális** beállítást **Nem** értékre.
 
-    ![Követésiszám-csoportok lap](media/tracking-number-group-fixed.png "Követésiszám-csoportok lap")
+    ![A rögzített kötegszámok követési számcsoportja](media/tracking-number-group-fixed.png "A rögzített kötegszámok követési számcsoportja")
 
 1. A szükséges módon adja meg a többi értéket, majd válassza ki ezt a követésiszám-csoportot azon felszabadított termékek kötegszám-csoportjaként, amelyekre ezt a forgatókönyvet használni szeretné.
 
 Ha ezt a forgatókönyvet választja, akkor a feladatkártya-eszköz **Kötegszám** mezője az **Előrehaladás jelentése** lapon egy értéket jelenít meg, amelyet a dolgozók nem módosíthatnak.
 
 ![Előrehaladás jelentése lap a rögzített kötegszámmal](media/job-card-device-batch-fixed.png "Előrehaladás jelentése lap a rögzített kötegszámmal")
+
+## <a name="report-serial-controlled-items-as-finished"></a>Sorozatvezérelt cikkek jelentése készként
+
+A feladatkártya-eszköz három esetet támogat a sorozatvezérelt cikkek jelentéséhez. Ezek a helyzetek mind a speciális raktári folyamatokhoz engedélyezett cikkekre, mind a speciális raktári folyamatokhoz nem engedélyezett cikkekre vonatkoznak.
+
+- **Sorozatszámok kézi hozzárendelése** – A dolgozók egyéni sorozatszámot adnak meg. Ez a sorozatszám olyan külső forrásból származhat, amelyet a rendszer nem ismer.
+- **Előre meghatározott sorozatszám** – A dolgozók egy sorozatszámnak a kiválasztását végzik el egy listáról, amelyet a rendszer automatikusan generált, a termelési rendelésnek a feladatkártya-eszközbe történő kiadása előtt.
+- **Rögzített sorozatszám** – A dolgozók sorozatszámot nem adnak meg. Helyette a rendszer automatikusan hozzárendel egy sorozatszámot a termelési rendeléshez a kiadás előtt.
+
+### <a name="enable-the-feature-on-your-system"></a>A funkció engedélyezése a rendszerben
+
+Ha engedélyezni szeretné, hogy a feladatkártya-eszközök elfogadhassanak egy sorozatszámot a készként való jelentés során, akkor a [szolgáltatások kezelésével](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) be kell kapcsolni a következő szolgáltatásokat (ebben a sorrendben):
+
+1. Javított felhasználói élmény a feladatkártya eszközében lévő jelentés az előrehaladásról párbeszédpanelhez
+1. Engedélyezze, hogy a köteg-és sorozatszámokat megadhassa befejezettként a Feladatkártya eszközéből (előzetes)
+
+### <a name="configure-products-that-require-serial-number-reporting"></a>A sorozatszám-jelentést igénylő termékek konfigurálása
+
+A következő lépésekkel engedélyezheti, hogy a termék támogassa az elérhető sorozatvezérelt forgatókönyveket:
+
+Kövesse az alábbi lépéseket az egyes forgatókönyvek engedélyezéséhez:
+
+1. Kattintson a **Termékinformációk kezelése \> Termékek \> Kiadott termékek** lehetőségre.
+1. Válassza ki az konfigurálni kívánt terméket.
+1. A **Készlet kezelése** gyorslap **Sorozatszám-csoport** mezőjében válassza ki azt a nyomon követési számot, amely a forgatókönyv támogatásához van beállítva.
+
+> [!NOTE]
+> Alapértelmezés szerint, ha egy sorozatvezérelt termékhez nem rendel hozzá sorozatszám-csoportot, a feladatkártya-eszköz a készként jelentés során manuális bejegyzést ad a sorozatszám számára.
+
+A következő szakaszok azt írják le, hogyan lehet beállítani a követési számcsoportokat, hogy a fenti három forgatókönyvet támogassák a sorozatvezérelt cikkek jelentéséhez.
+
+### <a name="set-up-a-tracking-number-group-that-lets-workers-manually-assign-a-serial-number"></a>Olyan követésiszám-csoport megadása, amellyel a dolgozók manuálisan rendelhetik hozzá a sorozatszámot
+
+A sorozatszámok manuális kiosztásának engedélyezéséhez, kövesse az alábbi lépéseket egy követési számcsoportot beállításához:
+
+1. Ugrás: **Készletkezelés \> Beállítás \> Dimenziók \> Követésiszám-csoportok**.
+1. Hozza létre vagy válassza ki a beállítani kívánt követésiszám-csoportot.
+1. Az **Általános** gyorslapon állítsa a **Manuális** beállítást **Igen** értékre.
+
+    ![Követési számcsoportok lap, sorozatszámok](media/tracking-number-group-manual-serial.png "Követési számcsoportok lap, sorozatszámok")
+
+1. A szükséges módon adja meg a többi értéket, majd válassza ki ezt a követésiszám-csoportot azon felszabadított termékek sorozatszám-csoportjaként, amelyekre ezt a forgatókönyvet használni szeretné.
+
+Ha ezt a forgatókönyvet választja, akkor a feladatkártya-eszköz **Sorozatszám** mezője az **Előrehaladás jelentése** lapon egy szövegmezőt jelenít meg, ahol a dolgozók bármilyen értéket meghatározhatnak a sorozatszámnak. Érték megadásakor az érték a sorozatszám-listára kerül. Ebben a listában a dolgozók a következőket tehetik:
+
+- Ha a sorozatszámot selejtként szeretné megjelölni, válassza ki a **Selejt** gombot a megfelelő sorhoz. A program megkéri a dolgozót, hogy töltse ki a **Hiba oka** részt.
+- Ha a sorozatszámot ki szeretné törölni, válassza a **Törlés** gombot a megfelelő sorhoz.
+
+![Előrehaladás jelentése lap a manuális sorozatszámok mezővel](media/job-card-device-serial-manual.png "Előrehaladás jelentése lap a manuális sorozatszámok mezővel")
+
+### <a name="set-up-a-tracking-number-group-that-provides-a-list-of-predefined-serial-numbers"></a>Egy követésiszám-csoport beállítása, amely előre definiált sorozatszámok listáját tartalmazza
+
+Előre meghatározott sorozatszámok listájának megadásához, kövesse az alábbi lépéseket egy követésiszám-csoport beállításához:
+
+1. Ugrás: **Készletkezelés \> Beállítás \> Dimenziók \> Követésiszám-csoportok**.
+1. Hozza létre vagy válassza ki a beállítani kívánt követésiszám-csoportot.
+1. Az **Általános** gyorslapon állítsa a **Csak készlettranzakciókra** beállítást **Igen** értékre.
+1. A **Mennyiségenként** mező használatával a sorozatszámokat egyesével feloszthatja.
+
+    ![Az előre meghatározott sorozatszámok követési számcsoportja](media/tracking-number-group-predefined-sn.png "Az előre meghatározott sorozatszámok követési számcsoportja")
+
+1. A szükséges módon adja meg a többi értéket, majd válassza ki ezt a követésiszám-csoportot azon felszabadított termékek sorozatszám-csoportjaként, amelyekre ezt a forgatókönyvet használni szeretné.
+
+Ha ezt a forgatókönyvet választja, akkor a feladatkártya-eszköz **Sorozatszámok** mezője az **Előrehaladás jelentése** lapon egy legördülő menüt jelenít meg, ahol a dolgozóknak egy előre megadott értéket kell megadniuk.
+
+![Előrehaladás jelentése lap előre megadott sorozatszámok listájával](media/job-card-device-serial-predefined.png "Előrehaladás jelentése lap előre megadott sorozatszámok listájával")
+
+### <a name="set-up-a-tracking-number-group-that-automatically-assigns-serial-numbers"></a>Olyan követésiszám-csoport megadása, amely automatikusan osztja a sorozatszámokat
+
+Ha a sorozatszámot automatikusan kell hozzárendelni dolgozói beavatkozás nélkül, a következő lépésekkel lehet beállítani a követésiszám-csoportot.
+
+1. Ugrás: **Készletkezelés \> Beállítás \> Dimenziók \> Követésiszám-csoportok**.
+1. Hozza létre vagy válassza ki a beállítani kívánt követésiszám-csoportot.
+1. Az **Általános** gyorslapon állítsa a **Csak készlettranzakciókra** beállítást **Nem** értékre.
+1. Állítsuk a **Manuális** beállítást **Nem** értékre.
+
+    ![A rögzített sorozatszámok követési számcsoportja](media/tracking-number-group-fixed-sn.png "A rögzített sorozatszámok követési számcsoportja")
+
+1. A szükséges módon adja meg a többi értéket, majd válassza ki ezt a követésiszám-csoportot azon felszabadított termékek sorozatszám-csoportjaként, amelyekre ezt a forgatókönyvet használni szeretné.
+
+Ha ezt a forgatókönyvet választja, akkor a feladatkártya-eszköz **Sorozatszám** mezője az **Előrehaladás jelentése** lapon egy értéket jelenít meg, amelyet a dolgozók nem módosíthatnak. Ez a forgatókönyv csak akkor érvényes, ha egy termelési rendelést egy több sorozatszámmal vezérelt cikkhez hoznak létre.
+
+![Előrehaladás jelentése lap a rögzített sorozatszámmal](media/job-card-device-serial-fixed.png "Előrehaladás jelentése lap a rögzített sorozatszámokkal")
 
 ## <a name="report-as-finished-to-a-license-plate"></a>Jelentés készként egy azonosítótáblára
 

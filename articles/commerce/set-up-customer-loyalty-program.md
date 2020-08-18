@@ -3,7 +3,7 @@ title: Hűség áttekintése
 description: Ez a témakör leírja a hűséggel kapcsolatos képességeket a Dynamics 365 Commerce programban és a kapcsolódó beállítási lépéseket, amelyekkel a kereskedők könnyen elindíthatják hűségprogramjukat.
 author: scott-tucker
 manager: AnnBe
-ms.date: 03/08/2019
+ms.date: 07/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 337ede63cb9175f2674bae8f2caaac5f1ba5f5cb
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: fd0ceefe1890214ab5fe2f619f6bf8ce718dec11
+ms.sourcegitcommit: 59fb179c770c799918f624cf345848fd4202bbdd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3022818"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "3613203"
 ---
 # <a name="loyalty-overview"></a>Hűség áttekintése
 
@@ -55,7 +55,7 @@ A következő táblázat minden egyes összetevőt és azok hűségkártyarendsz
 | Kedvezmények beállítása (előfeltétel)                  | Állítsa be a hűséges vevőknek kínált kedvezményeket. Például: minden ruházati termékből 5 százalék kedvezmény. | A kedvezményeket hozzá kell adni az árcsoportokhoz, hogy a hűségprogramba bekerüljenek. Az árcsoportok hűségprogramokhoz és hűségszintekhez vannak hozzárendelve. |
 | Árcsoportok beállítása (előfeltétel)               | Az árcsoportok termékek árainak és engedményeinek létrehozására és kezelésére használhatók. Úgy állítsa be árcsoportjait, hogy azok tartalmazzák azokat a kedvezményeket, melyek hűségprogramjaiban érvényesek. | Az árcsoportok hűségprogramjaihoz és hűségszintjeihez vannak hozzárendelve. |
 | Csatornák beállítása (előfeltétel)                   | A Commerce csatornák a hűségprogramokban részt vevő üzletek, így lehetnek például valódi boltok, online áruházak vagy telefonos ügyfélszolgálatok is. Be kell állítania a csatornáit, mielőtt hűségprogramokat rendelne hozzájuk. | Csatornát akkor rendel hozzá egy hűségprogramhoz, ha a csatorna részt vesz a hűségprogramban. |
-| Hűségprogram fizetési módjának beállítása (előfeltétel) | A hűségkártyák pénztárban való használata és a hűségpontok hűségprogramban való beváltása előtt be kell állítania egy fizetési módot a programhoz. A hűségprogram fizetési módját is hozzá kell adnia a csatornához, hogy a vásárlók be tudják váltani hűségpontjaikat termékvásárlásra. | Állítsa be a hűségprogram típusának fizetési módját, ezután rendelje hozzá a hűségprogram fizetési módját a hűségprogramban részt vevő csatornákhoz. |
+| Hűségprogram fizetési módjának beállítása (előfeltétel) | Ahhoz, hogy a hűségpontok bármely csatornán beválthatók legyenek – például a fizikailag létező boltokban, az online áruházakban vagy a hívásközpontokban –, be kell állítania a hűségkártyák tartományát a **Kártyaszámok** oldalon. | Állítsa be a hűségprogram típusának fizetési módját, ezután rendelje hozzá a hűségprogram fizetési módját a hűségprogramban részt vevő csatornákhoz. |
 | Időszakok beállítása                            | A dátumintervallumokkal rugalmasan beállíthatja azt az időszakot, amelyre a hűségszintek vonatkoznak. Dátumintervallumok segítségével megadhatja, hogy a mennyi vevő maradhat, egy réteg vagy az ügyfél mennyi időt van ahhoz, hogy a réteg egy tevékenység teljesítéséhez. | A dátumintervallumok csak akkor alkalmazhatók, ha hűségprogramjában szinteket használ. Kiválasztja a programszintekre vonatkozó időszakot, valamint a programszintszabályokra vonatkozó időszakot is. |
 | Hűségpontok beállítása                             | A hűségpontok olyan típusú jutalmat jelentenek, amelyet vevőinek kíván nyújtani. A hűségpontok lehetnek beválthatók vagy nem beválthatók. A beváltható hűségpontok termékekre válthatók. A nem beváltható hűségpontok vagy nyomon követési célokra szolgálnak, vagy a vevő ezzel juthat tovább a hűségprogram következő szintjére. | A hűségpontokra a szintszabályozás hivatkozik, és azt a célt szolgálják, hogy a vevőt egy adott szintre eljuttassák. A hűségpontokra a hűségprogramok jogosultsági és beváltási szabályrendszere is hivatkozik. A jogosultsági szabályrendszerben megadja, hogy egy vevő milyen jutalmat kaphat egy bizonyos tevékenységért. A beváltási szabályrendszerben megadja, hogy a vevő milyen jutalmat válthat be. |
 | Hűségprogramok beállítása                          | A hűségprogramok képezik a különböző felajánlható hűséglehetőségek magvát. Minden egyes hűségprogramhoz nullától számos lépcsőig terjedő hűségszint rendelhető hozzá. A kedvezmények, árcsoportok vagy a program szintjén vagy a hűségszint szintjén vannak hozzárendelve a hűségprogramokhoz. | Hűségprogramjaihoz hűségterveket rendel hozzá. Hűségprogramjaihoz hűségkártyákat rendel hozzá, a hűségkártyák pedig vevőkhöz rendelhetők hozzá. Acsatornák a hűségtervekhez rendelt hűségprogramokban vesznek részt. Bármely, hűségkártyával rendelkező vevő részt vehet olyan hűségprogramokban, amelyek hozzá vannak rendelve a kártyához. |

@@ -3,7 +3,7 @@ title: Bejövő készletműveletek a pénztárban
 description: Ez a témakör a pénztár (POS) bejövő készletműveletének képességeit írja le.
 author: hhaines
 manager: annbe
-ms.date: 07/10/2020
+ms.date: 07/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: cf3bec8ab0bfafccfe4b2b5b245d00fd6aeff635
-ms.sourcegitcommit: 037712e348fcbf3569587089bd668ee7bf5567ff
+ms.openlocfilehash: aba4f2d7932ebc3a0129f04c60c8b6358da68c64
+ms.sourcegitcommit: 0aabe4157f82d8c59dd2d285ab0b33f3c8ec5bbc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "3551601"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "3627538"
 ---
 # <a name="inbound-inventory-operation-in-pos"></a>Bejövő készletműveletek a pénztárban
 
@@ -33,7 +33,7 @@ ms.locfileid: "3551601"
 A Microsoft Dynamics 365 Commerce 10.0.10 és a későbbi verzióiban a bejövő és kimenő műveletek a pénztárnál (POS) lecserélik a kitárolási és bevételezési műveleteket.
 
 > [!NOTE]
-> A 10.0.10 és a későbbi verziókban a POS-alkalmazás olyan új szolgáltatásai, amelyek a beszerzési rendelések és átmozgatási rendelések fogadásával kapcsolatosak a **Bejövő műveletek** művelethez lesznek hozzáadva. Ha jelenleg a kitárolási és bevételezési műveletet használja a pénztárban, javasoljuk, hogy dolgozzon ki egy stratégiát arra, hogy ebből a műveletből a bejövő és kimenő műveletekbe költözzön. Annak ellenére, hogy a kitárolási és bevételezési művelet nem lesz eltávolítva a termékből, a 10.0.9 verzió után funkcionális és teljesítményi szempontból nem érkeznek hozzá újítások.
+> A Commerce 10.0.10 és a későbbi verziókban a POS-alkalmazás olyan új szolgáltatásai, amelyek a beszerzési rendelések és átmozgatási rendelések fogadásával kapcsolatosak a **Bejövő műveletek** művelethez lesznek hozzáadva. Ha jelenleg a kitárolási és bevételezési műveletet használja a pénztárban, javasoljuk, hogy dolgozzon ki egy stratégiát arra, hogy ebből a műveletből a bejövő és kimenő műveletekbe költözzön. Annak ellenére, hogy a kitárolási és bevételezési művelet nem lesz eltávolítva a termékből, a 10.0.9 verzió után funkcionális és teljesítményi szempontból nem érkeznek hozzá újítások.
 
 ## <a name="prerequisite-configure-an-asynchronous-document-framework"></a>Előfeltétel: Az aszinkron dokumentumkezelési keretrendszer konfigurálása
 
@@ -153,6 +153,20 @@ Csak akkor használja az alkalmazássáv **Bevételezés visszavonása** funkci�
 Ha készletet bevételez, akkor a **Bevételezés szüneteltetése** funkciót használhatja, ha szünetet szeretne tartani a bevételezési folyamatban. Előfordulhat például, hogy egy másik műveletet szeretne végrehajtani a pénztárból, például fel szeretne hívni egy vásárlói eladást egy nyugta feladását szeretné késleltetni.
 
 Amikor kiválasztja a **Bevételezés szüneteltetése**beállítást, a dokumentum állapota **Szüneteltetve** értékre. Ennélfogva a felhasználók tudni fogják, hogy a dokumentumban vannak megadva értékek, de a dokumentum még nem lett véglegesítve. Ha készen áll a bevételezési folyamat folytatására, válassza ki a szüneteltetett dokumentumot, majd válassza ki a **Rendelés részletei** elemet, A korábban mentett **Bevételezés most** mennyiségek megmaradnak, és a **Teljes rendelési lista** nézetből jeleníthetők meg.
+
+### <a name="review"></a>Ellenőrzés
+
+A Commerce központba (HQ) beérkezne, a végleges kötelezettségvállalás előtt az ellenőrzési funkció segítségével ellenőrizheti a bejövő dokumentumokat. Az ellenőrzéskor megjelenik egy figyelmeztetés minden olyan hiányzó vagy hibás adatról, amely feldolgozási hibát okozhat, és a bevételezési kérelem elküldése előtt lehetősége van a problémák megoldására. Ha engedélyezni szeretné az **Ellenőrzés** funkciót az alkalmazás eszköztárában, akkor engedélyezze az **Érvényesítés engedélyezése a pénztár bejövő és kimenő készlettranzakciók számára** funkciót a Commerce központ (HQ) **Funkciókezelési** munkaterületen.
+
+Az **Ellenőrzés** funkció a következő hibákat ellenőrzi a bejövő dokumentumoknál:
+
+- **Túlzott bevételezés** – a most bevételezett mennyiség nagyobb a megrendelt mennyiségnél. A hiba súlyosságát a Commerce központ (HQ) túlszállítási konfigurációja határozza meg.
+- **Kevesebb bevételezés** – a most bevételezett mennyiség kevesebb a megrendelt mennyiségnél. A hiba súlyosságát a Commerce központ (HQ) kevesebb szállítás konfigurációja határozza meg.
+- **Sorozatszám** – a sorozatszám nincs megadva vagy nincs érvényesítve egy szerializált cikknél, amelyhez regisztrálni kell a sorozatszámot a készletben.
+- **A hely nincs beállítva** – a hely nincs megadva olyan helyvezérelt cikknél, ahol az üres hely nem engedélyezett.
+- **Törölt sorok** – a rendelés sorait a Commerce központ (HQ) olyan felhasználója törölte, aki ismertelen a pénztár alkalmazásban.
+
+Állítsa a **Commerce paraméterek** > **Készlet** > **Üzletkészlet** lehetőségben lévő **Automatikus ellenőrzés engedélyezése** elemet **Igen** értékre ahhoz, hogy az ellenőrzést automatikusan elvégezzék a **Bevételezés befejezése** elem kiválasztásakor.
 
 ### <a name="finish-receiving"></a>Bevételezés befejezése
 

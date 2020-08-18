@@ -90,6 +90,8 @@
                   items:
                     - name: Új vagy módosult elemek a Commerce kezdőlapján
                       href: get-started/whats-new-home-page.md
+                    - name: Commerce 10.0.13 (2020. október)
+                      href: get-started/whats-new-commerce-10-0-13.md
                     - name: Commerce 10.0.12 (2020. augusztus)
                       href: get-started/whats-new-commerce-10-0-12.md
                     - name: Commerce 10.0.11 (2020. július)
@@ -127,23 +129,23 @@
             - name: Képzési katalógus
               items:
                 - name: Tanulási katalógus kezdőlapja
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog.md?toc=/dynamics365/commerce/toc.json
+                  href: ./get-started/learning-catalog.md
                 - name: Üzleti döntéshozók
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-bdm.md?toc=/dynamics365/commerce/toc.json
+                  href: ./get-started/learning-catalog-bdm.md?
                 - name: Üzleti felhasználók
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-business-user.md?toc=/dynamics365/commerce/toc.json
+                  href: ./get-started/learning-catalog-business-user.md
                 - name: Megvalósítási projektvezetők
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-project-manager.md?toc=/dynamics365/commerce/toc.json
+                  href: ./get-started/learning-catalog-project-manager.md
                 - name: Rendszergazdák
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-administrator.md?toc=/dynamics365/commerce/toc.json
+                  href: ./get-started/learning-catalog-administrator.md
                 - name: Fejlesztők
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-developer.md?toc=/dynamics365/commerce/toc.json
+                  href: ./get-started/learning-catalog-developer.md
                 - name: Partnerértékesítés és -marketing
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-partner-sales.md?toc=/dynamics365/commerce/toc.json
+                  href: ./get-started/learning-catalog-partner-sales.md
                 - name: Funkcionális konzultánsok
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-functional-consultant.md?toc=/dynamics365/commerce/toc.json
+                  href: ./get-started/learning-catalog-functional-consultant.md
                 - name: Megoldástervezők
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-solution-architect.md?toc=/dynamics365/commerce/toc.json
+                  href: ./get-started/learning-catalog-solution-architect.md
             - name: Ismerje meg a felhasználói felületet
               items:
                 - name: A felhasználói felület elemei
@@ -310,6 +312,8 @@
                           href: ../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md?toc=/dynamics365/commerce/toc.json
                         - name: Teljes összeg és intervallumszámítási opciók áfakódokhoz
                           href: ../finance/general-ledger/whole-amount-interval-options-sales-tax-codes.md?toc=/dynamics365/commerce/toc.json
+                        - name: Adómentesség számítása
+                          href: tax-exempt-price-inclusive.md
                     - name: E-mail-értesítési profil beállítása
                       href: email-notification-profiles.md
                     - name: Számsorozatok
@@ -386,6 +390,8 @@
                           href: define-maintain-channel-clients-registers-hw-stations.md
                         - name: Pénztárperifériák és szolgáltatások állapot-ellenőrzése
                           href: pos-healthcheck.md
+                        - name: Hálózati perifériák támogatása
+                          href: dev-itpro/network-peripherals.md
                     - name: Képernyő-elrendezések
                       items:
                         - name: Az MPOS/CPOS bemutató adatképernyő-elrendezései
@@ -946,6 +952,8 @@
                       href: add-accordion.md
                     - name: Lapmodul
                       href: add-tab.md
+                    - name: iFrame modul
+                      href: iframe-module.md
                 - name: Marketingmodulok
                   items:
                     - name: Promóciós szalagcím modul
@@ -968,6 +976,8 @@
                   items:
                     - name: Vásárlásmező-modul
                       href: add-buy-box.md
+                    - name: Médiagaléria modul
+                      href: media-gallery-module.md
                     - name: Minősítések és értékelések modulok
                       href: ratings-reviews-modules.md
                 - name: Beszerzési modulok
@@ -980,10 +990,14 @@
                       href: add-checkout-module.md
                     - name: Rendelési részletek modul
                       href: order-confirmation-module.md
-                    - name: Áruházválasztó modul
-                      href: store-selector.md
                     - name: Ajándékutalvány modul
                       href: add-giftcard.md
+                - name: Üzletkereső modulok
+                  items:
+                    - name: Térképmodul
+                      href: map-module.md
+                    - name: Üzletválasztó modul
+                      href: store-selector.md
                 - name: Számlakezelési modulok
                   items:
                     - name: Számlakezelési oldalak és modulok
@@ -1938,7 +1952,7 @@
                       href: e-commerce-extensibility/add-module-config-fields.md
                     - name: Előnézeti és hibakeresési modulok
                       href: e-commerce-extensibility/test-module.md
-                    - name: Modulok tesztelése álelemekkel
+                    - name: Tesztmodulok álmodulokkal
                       href: e-commerce-extensibility/test-module-mock.md
                     - name: Modulok tesztelése áloldalakkal
                       href: e-commerce-extensibility/test-page-mock.md

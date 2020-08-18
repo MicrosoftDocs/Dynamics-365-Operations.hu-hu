@@ -70,6 +70,8 @@
                   items:
                     - name: Új vagy módosult elemek a Finance kezdőlapján
                       href: get-started/whats-new-home-page.md
+                    - name: Finance 10.0.13 (2020. október)
+                      href: get-started/whats-new-changed-10-0-13.md
                     - name: Finance 10.0.12 (2020. augusztus)
                       href: get-started/whats-new-changed-10-0-12.md
                     - name: Finance 10.0.11 (2020. július)
@@ -107,23 +109,23 @@
             - name: Képzési katalógus
               items:
                 - name: Tanulási katalógus kezdőlapja
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog.md?toc=/dynamics365/finance/toc.json
+                  href: ./get-started/learning-catalog.md
                 - name: Üzleti döntéshozók
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-bdm.md?toc=/dynamics365/finance/toc.json
+                  href: ./get-started/learning-catalog-bdm.md
                 - name: Üzleti felhasználók
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-business-user.md?toc=/dynamics365/finance/toc.json
+                  href: ./get-started/learning-catalog-business-user.md
                 - name: Megvalósítási projektvezetők
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-project-manager.md?toc=/dynamics365/finance/toc.json
+                  href: ./get-started/learning-catalog-project-manager.md
                 - name: Rendszergazdák
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-administrator.md?toc=/dynamics365/finance/toc.json
+                  href: ./get-started/learning-catalog-administrator.md
                 - name: Fejlesztők
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-developer.md?toc=/dynamics365/finance/toc.json
+                  href: ./get-started/learning-catalog-developer.md
                 - name: Partnerértékesítés és -marketing
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-partner-sales.md?toc=/dynamics365/finance/toc.json
+                  href: ./get-started/learning-catalog-partner-sales.md
                 - name: Funkcionális konzultánsok
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-functional-consultant.md?toc=/dynamics365/finance/toc.json
+                  href: ./get-started/learning-catalog-functional-consultant.md
                 - name: Megoldástervezők
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-solution-architect.md?toc=/dynamics365/finance/toc.json
+                  href: ./get-started/learning-catalog-solution-architect.md
             - name: Ismerje meg a felhasználói felületet
               items:
                 - name: A felhasználói felület elemei
@@ -846,6 +848,8 @@
                   href: accounts-payable/accounting-distributions.md
                 - name: Felosztások feldolgozása
                   href: general-ledger/process-allocations.md
+                - name: Felosztási feltételek
+                  href: general-ledger/main-account-allocation-terms.md
                 - name: Pénzügyi dimenziók
                   href: general-ledger/financial-dimensions.md
                 - name: Konszolidációs csoportok és további konszolidációs számlák
@@ -1122,6 +1126,8 @@
                   href: public-sector/advanced-ledger-entries-public-sector.md
                 - name: Speciális főkönyvi bejegyzés létrehozása állami szektorban
                   href: public-sector/tasks/create-advanced-ledger-entry-public-sector.md
+                - name: Főkönyvi kivonat a tranzakciós részletek jelentésével
+                  href: public-sector/general-ledger-public-sector-trial-balance.md
                 - name: Készpénz-ellenőrzési korlátok alkalmazása
                   href: public-sector/cash-control.md
                 - name: Év végi feldolgozás az állami szektorban
@@ -1146,6 +1152,8 @@
               href: public-sector/tasks/create-fund-type-public-sector.md
             - name: Hitelesítési típus hozzáadása egy szállítóhoz az állami szektorban
               href: public-sector/tasks/add-certification-type-vendor-public-sector.md
+            - name: Kanadai harmonizált áfa kiszámítása
+              href: public-sector/Calculating-Canadian-Harmonized-sales-tax.md
         - name: Pénzügyi jelentéskészítés
           items:
             - name: Pénzügyi jelentéskészítés – áttekintés
@@ -1846,7 +1854,9 @@
                           href: localizations/apac-ind-news-letter-10-0-10.md
                         - name: Új vagy módosult elemek a 10.0.11-es verziójában
                           href: localizations/apac-ind-news-letter-10-0-11.md
-                    - name: India GST-hivatkozáscsoportok
+                        - name: Új vagy módosult elemek a 10.0.12-es verziójában
+                          href: localizations/apac-ind-news-letter-10-0-12.md
+                    - name: Indiai GST-hivatkozáscsoportok
                       href: localizations/apac-ind-gst-reference-groups.md
                     - name: GST integrációja pénztárgépekhez
                       href: ../retail/localizations/apac-ind-cash-registers.md?toc=/dynamics365/finance/toc.json
@@ -2630,12 +2640,16 @@
                   href: localizations/emea-esp-print-checks-with-spanish-layout.md
                 - name: Kötelezvény beállításai
                   href: localizations/emea-esp-promissory-note-options.md
-                - name: 340. jelentés
+                - name: 340-es jelentés
                   href: localizations/emea-esp-report-340.md
+                - name: 347-es bevallás jelentése
+                  href: localizations/emea-esp-declaration-347-report.md
                 - name: Beszerzési és értékesítési ciklusok
                   href: localizations/emea-esp-sales-purchase-cycle.md
                 - name: Speciális bevitelek és nyitólapok
                   href: localizations/emea-esp-opening-sheets-spain.md
+                - name: Azonnali áfa-információk beküldése
+                  href: localizations/emea-esp-sii.md
             - name: Svédország
               items:
                 - name: Svédország – áttekintés

@@ -3,7 +3,7 @@ title: Tartalomkézbesítési hálózat (CDN) támogatásának hozzáadása
 description: Ez a témakör azt mutatja be, hogyan lehet hozzáadni tartalomkézbesítési hálózatot (CDN) a Microsoft Dynamics 365 Commerce-környezetéhez.
 author: brianshook
 manager: annbe
-ms.date: 07/02/2020
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: febef3bcc06dc1b5868a0decebee33d76110c505
-ms.sourcegitcommit: adf196c51e2b6f532d99c177b4c6778cea8a2efc
+ms.openlocfilehash: 662d26c0157377977bd1031cd7bb13a8e692f37e
+ms.sourcegitcommit: 078befcd7f3531073ab2c08b365bcf132d6477b0
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "3533344"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "3646039"
 ---
 # <a name="add-support-for-a-content-delivery-network-cdn"></a>Tartalomkézbesítési hálózat (CDN) támogatásának hozzáadása
 
@@ -35,7 +35,7 @@ Ez a témakör azt mutatja be, hogyan lehet hozzáadni tartalomkézbesítési h�
 
 Ha egy e-kereskedelmi környezetet hoz létre a Dynamics 365 Commerce alkalmazásban, akkor konfigurálhatja úgy, hogy együttműködjön az Ön CDN-szolgáltatásával. 
 
-Az Ön egyéni tartománya az e-kereskedelmi környezet létesítési folyamata során engedélyezhető. Azt is megteheti, hogy egy szolgáltatáskérelmet használ a beállításához a létesítési folyamat befejeződését követően. Az e-kereskedelmi környezet létesítési folyamata egy olyan állomásnevet generál, amely a környezethez van társítva. Ez az állomásnév a következő formátummal rendelkezik, ahol az *e-kereskedelmi-bérlő-neve* az Ön környezetének neve:
+Az Ön egyéni tartománya az e-kereskedelmi környezet létesítési folyamata során engedélyezhető. Azt is megteheti, hogy egy szolgáltatáskérelmet használ a beállításához a létesítési folyamat befejeződését követően. Az e-kereskedelmi környezet létesítési folyamata egy olyan állomásnevet generál, amely a környezethez van társítva. Ez az állomásnév a következő formátummal rendelkezik, ahol az \<*e-commerce-tenant-name*\> az Ön környezetének neve:
 
 &lt;e-kereskedelmi-bérlő-neve&gt;.commerce.dynamics.com
 
@@ -74,18 +74,20 @@ Bármely CDN-szolgáltatás használható, de a jelen témakör példájában az
 
 Az Azure Front Door Service beállításával kapcsolatos információkat itt talál: [Rövid útmutató: Front Door létrehozása egy magas szintű rendelkezésre állású, globális webes alkalmazáshoz](https://docs.microsoft.com/azure/frontdoor/quickstart-create-front-door).
 
-### <a name="configure-a-back-end-pool-in-azure-front-door-service"></a>Háttérkészlet konfigurálása az Azure Front Door Service szolgáltatásban
+### <a name="configure-a-backend-pool-in-azure-front-door-service"></a>Háttérkészlet konfigurálása az Azure Front Door Service szolgáltatásban
 
 Kövesse az alábbi lépéseket háttérkészlet konfigurálásához az Azure Front Door Service szolgáltatásban.
 
 1. Adja hozzá az **&lt;ecom-bérlő-neve&gt;.commerce.dynamics.com** elemet egy háttérkészlethez egy egyéni állomásként, amelynek üres a háttérállomás fejléce.
-1. Az **Állapotminták** alatt, az **Útvonal** mezőbe írja be a **/keepalive** értéket.
-1. Az **Intervallumok (másodperc)** mezőbe írja be a **255** értéket.
 1. A **Terheléselosztás** alatt hagyja meg az alapértelmezett értékeket.
 
-A következő ábra a **Háttérkészlet hozzáadása** párbeszédpanelt mutatja az Azure Front Door Service szolgáltatásban.
+A következő ábra a **Háttéralkalmazás hozzáadása** párbeszédpanelt mutatja az Azure Front Door Service szolgáltatásban a megadott háttéralkalmazás állomásnevét.
 
 ![Háttérkészlet hozzáadása párbeszédpanel](./media/CDN_BackendPool.png)
+
+A következő ábra a **Háttérkészlet hozzáadása** párbeszédpanelt mutatja az Azure Front Door Service szolgáltatásban az alapértelmezett terheléselosztási értékeket.
+
+![Háttérkészlet párbeszédpanel hozzáadása folytatva](./media/CDN_BackendPool_2.png)
 
 ### <a name="set-up-rules-in-azure-front-door-service"></a>Szabályok beállítása az Azure Front Door Service szolgáltatásban
 
@@ -121,20 +123,22 @@ A következő ábra a **Szabály hozzáadása** párbeszédpanelt mutatja az Azu
 
 ![Szabály hozzáadása párbeszédpanel](./media/CDN_CachingRule.png)
 
-A kezdeti konfiguráció telepítését követően a saját tartományt fel kell vennie az Azure Front Door Service konfigurációjába. Az egyéni tartomány (például `www.fabrikam.com`) hozzáadásához be kell állítania egy kanonikus nevet (CNAME) a tartomány számára.
+> [!WARNING]
+> Ha a használni kívánt tartomány már aktív és élő, hozzon létre egy támogatási jegyet az [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com/) **Támogatás** mozaikján, és kérjen segítséget a következő lépésekhez. További információért tekintse át a [Támogatás igénylése a Finance and Operations alkalmazásokhoz vagy a Lifecycle Services (LCS)](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md) szolgáltatáshoz.
+
+Ha a tartománya új, és nem egy korábban létező élő tartomány, akkor a saját egyéni tartományát hozzáadhatja az Azure Front Door Service konfigurációhoz. Ez lehetővé teszi a webforgalom számára, hogy az Azure Front Door példányon keresztül irányítsa a webhelyét. Az egyéni tartomány (például `www.fabrikam.com`) hozzáadásához be kell állítania egy kanonikus nevet (CNAME) a tartomány számára.
 
 A következő ábra a **CNAME konfigurálása** párbeszédpanelt mutatja az Azure Front Door Service szolgáltatásban.
 
 ![CNAME konfiguráció párbeszédpanel](./media/CNAME_Configuration.png)
-
-> [!NOTE]
-> Ha a használni kívánt tartomány már aktív és élő, forduljon a támogatáshoz, hogy a tartományt az Azure Front Door Service szolgáltatással engedélyezve tesztet hozzon létre.
 
 A tanúsítványt kezelheti az Azure Front Door Service szolgáltatásával, vagy használhatja az egyéni tartományhoz tartozó saját tanúsítványát.
 
 A következő ábra az **Egyéni tartomány HTTPS** párbeszédpanelt mutatja az Azure Front Door Service szolgáltatásban.
 
 ![Egyéni tartomány HTTPS párbeszédpanel](./media/Custom_Domain_HTTPS.png)
+
+Az Azure Front Doorhoz való egyéni tartományok hozzáadásával kapcsolatos további információkat lásd az [Egyéni tartomány hozzáadása a Front Doorhoz](https://docs.microsoft.com/azure/frontdoor/front-door-custom-domain) menüpontot.
 
 A CDN-nek most már helyesen konfiguráltnak kell lennie, hogy használható legyen a Commerce webhelyével.
 
