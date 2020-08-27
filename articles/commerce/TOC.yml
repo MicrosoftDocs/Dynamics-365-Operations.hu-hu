@@ -408,15 +408,9 @@
                           href: set-up-manage-images-retail-mpos.md
                         - name: Ügyfélképek a pénztárban
                           href: pos-image.md
-                    - name: Vevői rendelések
+                    - name: Értékesítési munkatársak
                       items:
-                        - name: Vevői rendelések az MPOS-ben
-                          href: customer-orders-overview.md
-                        - name: Hibrid vevői rendelések
-                          href: hybrid-customer-orders.md
-                    - name: Értékesítési társítások
-                      items:
-                        - name: Jutalékok követése a pénztárban értékesítési csoportok révén
+                        - name: Jutalékok nyomon követése a pénztárban értékesítési csoportok révén
                           href: pos-sales-groups-track-commissions.md
                     - name: Eszköz aktiválása
                       items:
@@ -628,8 +622,10 @@
                   items:
                     - name: Személyre szabott ajánlatok engedélyezése
                       href: personalized-recommendations.md
-                    - name: Személyre szabott termékajánlatok kikapcsolása
+                    - name: Személyre szabott ajánlatok kikapcsolása
                       href: personalization-gdpr.md
+                - name: „Hasonló szettek vásárlása” javaslatok engedélyezése
+                  href: shop-similar-looks.md
                 - name: Pénztári gyakorlatok
                   items:
                     - name: Termékajánlatok hozzáadása a pénztárnál
@@ -692,6 +688,12 @@
                       href: tasks/create-product-packages-purchase-orders.md
         - name: Rendelések kezelése
           items:
+            - name: Vevői rendelések
+              items:
+                - name: Vevői rendelések az MPOS-ben
+                  href: customer-orders-overview.md
+                - name: Hibrid vevői rendelések
+                  href: hybrid-customer-orders.md
             - name: Értékesítési rendelések
               items:
                 - name: Hívásközponti rendelés létrehozása
@@ -986,8 +988,14 @@
                       href: add-cart-module.md
                     - name: Kosárikon modul
                       href: cart-icon-module.md
-                    - name: Fizetésmodul
+                    - name: Pénztármodul
                       href: add-checkout-module.md
+                    - name: Fizetési modul
+                      href: payment-module.md
+                    - name: Szállítási cím modul
+                      href: ship-address-module.md
+                    - name: Szállítási lehetőségek modul
+                      href: delivery-options-module.md
                     - name: Rendelési részletek modul
                       href: order-confirmation-module.md
                     - name: Ajándékutalvány modul
@@ -1302,11 +1310,11 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-count.md?toc=/dynamics365/commerce/toc.json
                         - name: EmptyList
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-emptylist.md?toc=/dynamics365/commerce/toc.json
-                        - name: Felsorolás
+                        - name: Enumerate
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-enumerate.md?toc=/dynamics365/commerce/toc.json
-                        - name: Szűrés
+                        - name: Filter
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-filter.md?toc=/dynamics365/commerce/toc.json
-                        - name: Első
+                        - name: First
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-first.md?toc=/dynamics365/commerce/toc.json
                         - name: FirstOrNull
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-firstornull.md?toc=/dynamics365/commerce/toc.json
@@ -1974,6 +1982,8 @@
                       href: e-commerce-extensibility/extend-module-definition.md
                     - name: Cookie API áttekintése
                       href: e-commerce-extensibility/cookie-api-overview.md
+                    - name: Interaktív összetevők – áttekintés
+                      href: e-commerce-extensibility/interactive-components.md
                     - name: Modulok globalizálása a CultureInfoFormatter osztály használatával
                       href: e-commerce-extensibility/globalize-modules.md
                 - name: Adatműveletek fejlesztése
@@ -2026,6 +2036,10 @@
                   items:
                     - name: Parancsfájl-betöltők
                       href: e-commerce-extensibility/script-injector.md
+                - name: Összekötők
+                  items:
+                    - name: Összekötők konfigurálása és engedélyezése
+                      href: e-commerce-extensibility/connectors.md
                 - name: Telemetria és analitika
                   items:
                     - name: Telemetria-naplózó
@@ -2042,6 +2056,8 @@
                   href: dev-itpro/retail-sdk/retail-sdk-overview.md
                 - name: A Retail szoftverfejlesztői készlet (SDK) közelgő változásai
                   href: dev-itpro/UpcomingSDKChanges.md
+                - name: Fontos fejlesztési és ALM-változások a 10.0.10 és 10.0.13 verzió között
+                  href: dev-itpro/dev-changes-10-13.md
                 - name: A Commerce és Finance and Operations buildrendszereinek egyesítése
                   href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
                 - name: A Retail szoftverfejlesztői készlet (SDK) áttelepítése a Visual Studio 2015 szolgáltatásból a Visual Studio 2017 szolgáltatásba
@@ -2118,15 +2134,11 @@
                   href: dev-itpro/hardware-device-extension.md
             - name: Retail Server bővíthetősége
               items:
-                - name: Commerce Scale Unit OData-vezérlőjének kiterjesztése
-                  href: dev-itpro/extend-retail-server-odata-controller.md
                 - name: Commerce Scale Unit – ügyfél és fogyasztói API-k
                   href: dev-itpro/retail-server-customer-consumer-api.md
-                - name: Az alapértelmezett Commerce Scale Unit metaadat-vezérlő kiterjesztése
-                  href: dev-itpro/extend-metadata.md
-                - name: A CRT szolgáltatás hívása offline módban
-                  href: dev-itpro/call-crt-service-offline.md
-                - name: Új Retail Server bővítmény létrehozása
+                - name: Új Retail Server-bővítmény API létrehozása (Retail szoftverfejlesztői készlet (SDK) 10.0.11 és újabb)
+                  href: dev-itpro/retail-server-icontroller-extension.md
+                - name: Új Retail Server-bővítmény API létrehozása (Retail szoftverfejlesztői készlet (SDK) 10.0.11 és korábbi)
                   href: dev-itpro/retail-server-extension.md
                 - name: A Retail Typescript és a C# proxyk
                   href: dev-itpro/typescript-proxy-retail-pos.md
@@ -2138,16 +2150,12 @@
                   href: dev-itpro/crt-services.md
                 - name: A CRT és a Retail Server bővíthetősége
                   href: dev-itpro/commerce-runtime-extensibility.md
-                - name: Ügyfélpreferencia-adatok hozzáadása csatorna-adatbázisokhoz
-                  href: dev-itpro/add-customer-preference-channel.md
                 - name: Retail csatornák titkainak kezelése
                   href: dev-itpro/manage-secrets.md
-                - name: CRT bővíthetőség és eseményindítók
+                - name: CRT bővíthetősége és eseményindítók
                   href: dev-itpro/commerce-runtime-extensibility-trigger.md
                 - name: Tranzakciók zárolása eseményindítók segítségével
                   href: dev-itpro/trigger-example-blocking-transaction.md
-                - name: Visszáruval kapcsolatos irányelvek alkalmazása eseményindítók segítségével
-                  href: dev-itpro/trigger-example-return-policy.md
                 - name: Hűségprogram bővítése
                   href: dev-itpro/retail-sdk/loyalty-extension-sample.md
                 - name: Szállítólevelek bővítési pontjai

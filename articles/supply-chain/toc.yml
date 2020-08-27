@@ -817,11 +817,11 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-count.md?toc=/dynamics365/supply-chain/toc.json
                         - name: EmptyList
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-emptylist.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Felsorolás
+                        - name: Enumerate
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-enumerate.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Szűrés
+                        - name: Filter
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-filter.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Első
+                        - name: First
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-first.md?toc=/dynamics365/supply-chain/toc.json
                         - name: FirstOrNull
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-firstornull.md?toc=/dynamics365/supply-chain/toc.json
@@ -2751,6 +2751,8 @@
                       href: inventory/warehouse-template.md
                     - name: Munka ellenőrzése munkasablonok és helyutasítások használatával
                       href: warehousing/control-warehouse-location-directives.md
+                    - name: Helyutasítások létrehozása
+                      href: warehousing/create-location-directive.md
                     - name: Hullámlépéskódok
                       href: warehousing/wave-step-codes.md
                     - name: A hullámfeldolgozás konfigurálása
@@ -2821,7 +2823,9 @@
               href: ../fin-ops-core/dev-itpro/user-interface/gantt-development-guide.md?toc=/dynamics365/supply-chain/toc.json
             - name: Új szállításkezelő motor létrehozása
               href: transportation/create-new-transportation-management-engine.md?toc=/dynamics365/supply-chain/toc.json
-    - name: Finance and Operations alkalmazások fejlesztése és adminisztrációja
+            - name: Készleten lévő tényleges adatentitások kiterjesztése
+              href: inventory/extend-on-hand-entities.md
+    - name: Finance and Operations-alkalmazások fejlesztése és adminisztrációja
       href: ../fin-ops-core/dev-itpro/index.md
     - name: Dynamics 365 Finance
       href: ../finance/index.md

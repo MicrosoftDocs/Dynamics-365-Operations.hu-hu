@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: ab0c66ad0536b20b1ab23e9498ca3cb56b98ccf5
-ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
+ms.openlocfilehash: d601ca9b28bb720fd05e25ef66df7be12a08f7e0
+ms.sourcegitcommit: e2a953bea055611023c00a55c00391d14daaca25
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "3530259"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "3696130"
 ---
 # <a name="supply-chain-management-home-page"></a>Supply Chain Management kezdőlapja
 
@@ -89,8 +89,6 @@ A következő műszaki konferencián készült felvételek a Finance and Operati
   - [Termékkonfiguráló a Microsoft Dynamics AX szolgáltatásban](https://youtu.be/zotrj3SbCl4)
 - **Raktárkezelés:**
   - [Hozza ki a legtöbbet a raktárkezelési rendszeréből](https://www.youtube.com/watch?v=--_didmZKHo&t=10s)
-  - [Fejlett R3 raktárkezelés – Bejövő feldolgozás és minimális/maximális feltöltés](https://www.youtube.com/watch?v=z5_V5Eqlf5M&t=48s)
-  - [Fejlett R3 raktárkezelés – Egy szokásos nap, a kimenő feldolgozás és az igényfeltöltés](https://youtu.be/Og0gLlVp7jA)
   - [Címkék az új Microsoft Dynamics AX 2012 R3 raktárkezelési szolgáltatásban](https://youtu.be/5w1MngVchBA)
   - [Dynamics AX 2012 R3: Fejlett raktárkezelés – Egy nap a folyamatgyártásban](https://www.youtube.com/embed/QUxXUrN-7n4)
 - **Gyártásvezérlési videók:**

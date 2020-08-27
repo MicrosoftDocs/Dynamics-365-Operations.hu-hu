@@ -5,6 +5,8 @@
       items:
         - name: Új vagy módosult elemek a Human Resources szolgáltatásban
           href: hr-admin-whats-new.md
+        - name: 2020. augusztus 6.
+          href: hr-whats-new-2020-08-06.md
         - name: 2020. július 23.
           href: hr-whats-new-2020-07-23.md
         - name: 2020. július 8.
@@ -23,16 +25,16 @@
           href: hr-whats-new-2020-04-13.md
         - name: 2020. április 3.
           href: hr-whats-new-2020-04-03.md
-        - name: 2020. március 24.
-          href: hr-whats-new-2020-03-24.md
-        - name: 2020. március 19.
-          href: hr-whats-new-2020-03-19.md
-        - name: 2020. március 10.
-          href: hr-whats-new-2020-03-10.md
-        - name: 2020. március 3.
-          href: hr-whats-new-2020-03-03.md
-        - name: Újdonságok (2020-es archívum)
+        - name: Újdonságok (2020. évi archívum)
           items:
+            - name: 2020. március 24.
+              href: hr-whats-new-2020-03-24.md
+            - name: 2020. március 19.
+              href: hr-whats-new-2020-03-19.md
+            - name: 2020. március 10.
+              href: hr-whats-new-2020-03-10.md
+            - name: 2020. március 3.
+              href: hr-whats-new-2020-03-03.md
             - name: 2020. február 25.
               href: hr-whats-new-2020-02-25.md
             - name: 2020. február 18.
@@ -221,15 +223,13 @@
           href: hr-hrpro-overview.md
         - name: Állítsa be az Emberi erőforrások modult
           items:
-            - name: Az Emberi erőforrások paramétereinek konfigurálása
+            - name: A Human Resources paramétereinek konfigurálása
               href: hr-setup-parameters.md
-            - name: Megosztott emberierőforrás-paraméterek karbantartása
+            - name: A Human Resource megosztott paramétereinek konfigurálása
               href: hr-setup-shared-parameters.md
-            - name: Emberi erőforrásokkal kapcsolatos munkafolyamatok beállítása
-              href: hr-setup-workflows.md
             - name: Dátum és Idő mezők ismertetése
               href: hr-setup-date-time-fields.md
-        - name: Szervezet-beállítások konfigurálása
+        - name: Szervezetbeállítások konfigurálása
           items:
             - name: Szervezeti adminisztráció kezdőlap
               href: ../fin-ops-core/fin-ops/organization-administration/organization-administration-home-page.md?toc=/dynamics365/human-resources/toc.json
@@ -383,6 +383,8 @@
               href: hr-personnel-actions-faq.md
             - name: Alkalmazotti adatok kezelése munkafolyamatok segítségével
               href: hr-workflow-manage-employee-information.md
+            - name: Címváltozások megtekintése és kezelése
+              href: hr-personnel-view-address-changes.md
             - name: Beosztás jelentési kapcsolatainak módosítása
               href: hr-personnel-modify-reporting-relationships-position.md
             - name: Dolgozói adatok megadása
@@ -395,8 +397,6 @@
               href: hr-personnel-loan-items.md
             - name: Utódlási terv kialakítása
               href: hr-personnel-develop-succession-plan.md
-            - name: Projekt időnyilvántartásainak megadása
-              href: hr-personnel-enter-project-timesheets.md
             - name: Tömeges felvételi projektek
               href: hr-personnel-mass-hire-projects.md
             - name: Tömeges felvételi projekt létrehozása
