@@ -1156,7 +1156,7 @@
               href: public-sector/Calculating-Canadian-Harmonized-sales-tax.md
         - name: Pénzügyi jelentéskészítés
           items:
-            - name: Pénzügyi jelentéskészítés – áttekintés
+            - name: Első lépések a Pénzügyi jelentéskészítéssel
               href: general-ledger/financial-reporting-getting-started.md
             - name: Pénzügyi jelentéskészítés – áttekintés
               href: ../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md?toc=/dynamics365/finance/toc.json
@@ -2598,8 +2598,14 @@
                       href: localizations/rus-dispose-deferrals.md
                     - name: Halasztások számbavétele
                       href: localizations/rus-counting-deferrals.md
-                    - name: Halasztásokkal kapcsolatos jelentések
+                    - name: Halasztásokkal kapcsolatos jelentéskészítés
                       href: localizations/rus-reporting-deferrals.md
+                - name: Adókönyvelés
+                  items:
+                    - name: Kiadás- és jövedelemkódok
+                      href: localizations/rus-expense-and-income-codes.md
+                    - name: Eszközök adóügyi nyilvántartásai
+                      href: localizations/rus-assets-tax-registers.md
             - name: Szaúd-Arábia
               items:
                 - name: Szaúd-Arábia – áttekintés
@@ -2722,9 +2728,9 @@
               href: ../fin-ops-core/fin-ops/hr/hr-landing-page.md
             - name: Állítsa be az Emberi erőforrások modult
               items:
-                - name: Az Emberi erőforrások paramétereinek konfigurálása
+                - name: A Human Resources paramétereinek konfigurálása
                   href: ../human-resources/hr-setup-parameters.md?toc=/dynamics365/finance/toc.json
-                - name: Megosztott emberierőforrás-paraméterek karbantartása
+                - name: A Human Resource megosztott paramétereinek konfigurálása
                   href: ../human-resources/hr-setup-shared-parameters.md?toc=/dynamics365/finance/toc.json
                 - name: Emberi erőforrásokkal kapcsolatos munkafolyamatok beállítása
                   href: ../human-resources/hr-setup-workflows.md?toc=/dynamics365/finance/toc.json
@@ -3066,7 +3072,7 @@
               items:
                 - name: Képlet nyelve
                   href: ../fin-ops-core/dev-itpro/analytics/er-formula-language.md?toc=/dynamics365/finance/toc.json
-                - name: Funkciók
+                - name: Függvények
                   items:
                     - name: Dátum és idő
                       items:
@@ -3112,11 +3118,11 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-count.md?toc=/dynamics365/finance/toc.json
                         - name: EmptyList
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-emptylist.md?toc=/dynamics365/finance/toc.json
-                        - name: Felsorolás
+                        - name: Enumerate
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-enumerate.md?toc=/dynamics365/finance/toc.json
-                        - name: Szűrés
+                        - name: Filter
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-filter.md?toc=/dynamics365/finance/toc.json
-                        - name: Első
+                        - name: First
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-first.md?toc=/dynamics365/finance/toc.json
                         - name: FirstOrNull
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-firstornull.md?toc=/dynamics365/finance/toc.json
@@ -3126,6 +3132,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-isempty.md?toc=/dynamics365/finance/toc.json
                         - name: List
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-list.md?toc=/dynamics365/finance/toc.json
+                        - name: ListDistinct
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listdistinct.md?toc=/dynamics365/finance/toc.json
                         - name: ListJoin
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listjoin.md?toc=/dynamics365/finance/toc.json
                         - name: ListOfFields
@@ -3134,7 +3142,7 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffirstitem.md?toc=/dynamics365/finance/toc.json
                         - name: OrderBy
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-orderby.md?toc=/dynamics365/finance/toc.json
-                        - name: Sztornírozás
+                        - name: Reverse
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-reverse.md?toc=/dynamics365/finance/toc.json
                         - name: Felosztás
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-split.md?toc=/dynamics365/finance/toc.json
@@ -3413,7 +3421,9 @@
             - name: Rövid útmutatók
               items:
                 - name: ER-formátum beállítása egyéni elektronikus dokumentum generálásához
-                  href: ../fin-ops-core/dev-itpro/analytics/er-quick-start2-customize-report.md
+                  href: ../fin-ops-core/dev-itpro/analytics/er-quick-start2-customize-report.md?toc=/dynamics365/finance/toc.json
+                - name: Új ER-megoldás tervezése egyéni jelentés nyomtatásához
+                  href: ../fin-ops-core/dev-itpro/analytics/er-quick-start1-new-solution.md?toc=/dynamics365/finance/toc.json
             - name: Oktatóanyagok
               items:
                 - name: Az adatforrások használatának megismerése
