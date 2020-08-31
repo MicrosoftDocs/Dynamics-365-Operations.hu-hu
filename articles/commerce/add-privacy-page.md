@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 59a2d9712a73c607cf5521f8e79e8e2558854fc4
-ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
+ms.openlocfilehash: 2ee361c2e99b79e503e8d94c12602f9427f1ed5c
+ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3274211"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "3686695"
 ---
 # <a name="add-a-privacy-policy-page"></a>Adatvédelmi irányelv oldalának hozzáadása
 
@@ -88,9 +88,9 @@ Az adatvédelmi irányelvek oldalra mutató hivatkozást hozzáadhatja egy töre
 
 A hivatkozás hozzáadásához egy lábléctöredékhez tegye a következőket.
 
-1. Lépjen az **Oldaltöredékek** pontra, majd válassza az **Új** lehetőséget az oldaltöredék létrehozásához.
-1. Az **Új oldaltöredék** párbeszédablakban válassza ki a **lábléc** modult.
-1. Az **Oldaltöredék neve** pontban adja meg a töredék nevét, majd válassza az **OK** lehetőséget.
+1. Lépjen a **Töredékek** pontra, majd válassza az **Új** lehetőséget az oldaltöredék létrehozásához.
+1. Az **Új oldaltöredék** párbeszédpanelen válassza ki a **Lábléc** modult.
+1. Az **Oldaltöredék neve** pontban adja meg a töredék nevét, majd válassza ki az **OK** lehetőséget.
 1. A **Lábléc-kategória** bővítőhelyen adja hozzá a **Láblécelem** modult.
 1. A jobb oldali tulajdonságok panelen válassza a **Hivatkozás szövege** lehetőséget.
 1. A **Hivatkozás szövege** párbeszédpanelen adja meg az adatvédelmi irányelv oldal hivatkozásszövegét és hivatkozási célját, majd kattintson az **OK** gombra.

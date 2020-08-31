@@ -3,7 +3,7 @@ title: Eltávolított vagy elavult Platform-funkciók
 description: Ez a témakör azokat a funkciókat ismerteti, amelyek el lettek távolítva a platformfrissítésekben a Finance and Operations alkalmazásokból vagy az eltávolításuk be van tervezve.
 author: sericks007
 manager: AnnBe
-ms.date: 07/20/2020
+ms.date: 08/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 393349240d16636d3eec747126cc1ee6f6f9998d
-ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
+ms.openlocfilehash: 8b26ad668b6cc15d759e10952c042acd5e85bdea
+ms.sourcegitcommit: 4909e55529f03310d24b7e40d52751e24d35259b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "3651666"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "3678222"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Eltávolított vagy elavult Platform-funkciók
 
@@ -39,6 +39,16 @@ A Finance and Operations alkalmazások objektumaival kapcsolatban a [Technikai r
 
 > [!NOTE]
 > A 10.0.13-es egy előzetes verzió. A tartalom és a funkciók megváltozhatnak. Az előzetes kiadásokkal kapcsolatban további információkat a [Szolgáltatásfrissítések elérhetősége](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases) oldalon találhat.
+
+### <a name="custom-code-defined-in-ssrs-report-properties"></a>Az SSRS-jelentés tulajdonságai között definiált egyéni kód 
+
+|   |  |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | Az egyéni kód általában korlátozott kedvezményeket biztosít, a támogatásához viszont jelentős erőforrások és számítás szükséges. Az egyéni kódokat elsősorban a jelentések készítői használják, hogy nyilvános metódusokat hívjanak egyéni kódszerelvényekből. A felhőben tárolt szolgáltatás azonban nem támogatja az SSRS-jelentésekhez az egyéni szerelvényekre mutató hivatkozásokat. |
+| **Felváltotta másik szolgáltatás?**   | A jelentés szerzője dönthetnek úgy továbbra nyilvános .NET-API-kra hivatkoznak a szövegdobozban lévő kifejezésekből származó matematikai, konverziós és formátumműveletekhez. További információ: [Kód hozzáadása jelentéshez (SSRS)](https://docs.microsoft.comsql/reporting-services/report-design/add-code-to-a-report-ssrs?view=sql-server-ver15).  |
+| **Érintett területek**         | Egyéni kódot tartalmazó, RDL-jelentésben alkalmazásjelentési megoldások csoportjai. |
+| **Telepítési beállítás**              | Összes |
+| **Állapot**                         | A 10.0.13-as verzióban a fordító figyelmeztetést küld az olyan példányok esetében, ahol egyéni kódokat észlel egy SSRS-jelentésdefinícióban. A hiba elhárításához nyissa meg a jelentéstervezési definíciót, és távolítsa el az összes egyéni kódot használó megoldás. Ezt a figyelmeztetést egy jövőbeli frissítés fordítói hibára fog lecserélni.   |
 
 ### <a name="upgrade-of-three-jquery-component-libraries"></a>Három jQuery-összetevő programkönyvtárának frissítése 
 

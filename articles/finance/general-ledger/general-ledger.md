@@ -3,7 +3,7 @@ title: Főkönyv és a pénzügyi kimutatási áttekintése
 description: A Főkönyv segítségével meghatározhatja és kezelheti a jogi személy pénzügyi nyilvántartásait.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 08/31/2017
+ms.date: 08/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b4cad11bcd1b1674055a07b5093093e33d3ac556
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: e68fee44fdc18cada99e3c7e2cba021036e869db
+ms.sourcegitcommit: 1322b94f10470e1728cf330d2d64f1471838c055
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771799"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "3696664"
 ---
-# <a name="general-ledger-and-financial-reporting-overview"></a>Főkönyv és a pénzügyi kimutatási áttekintése
+# <a name="general-ledger-home-page"></a>A Főkönyv kezdőlapja
 
 [!include [banner](../includes/banner.md)]
 
@@ -56,6 +56,9 @@ Ezenkívül a szabályokat frissíteni kell rendszeresen módosításakor adóha
 #### <a name="whats-new-and-in-development"></a>Újdonságok és fejlesztés alatt levő megoldások
 
 Lépjen a [Microsoft Dynamics 365 programverzióra vonatkozó kiadási tervek](https://go.microsoft.com/fwlink/?linkid=2010158) oldalára a tervezett új funkciók megtekintéséhez. 
+
+#### <a name="financial-reporting"></a>Pénzügyi jelentéskészítés
+A pénzügyi jelentésekről a [Financial reporting – áttekintés](../../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md) című cikkben olvashat bővebben.
 
 #### <a name="blogs"></a>Blogok
 

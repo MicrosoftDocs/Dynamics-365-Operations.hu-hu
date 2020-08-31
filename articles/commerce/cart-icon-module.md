@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 6771a84118504cd5c8e44302380eb970e4658902
-ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
+ms.openlocfilehash: 137debe3f4cad3948d20b2902ea80e66fa74ffd4
+ms.sourcegitcommit: ae0843763a8b6b232bb71db326fab28605ac6c53
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "3411089"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "3661147"
 ---
 # <a name="cart-icon-module"></a>Kosárikon modul
 
@@ -42,22 +42,22 @@ A következő képen egy példa látható a kosárikon modulra, amely egy miniko
 
 - **Mini-kosár megjelenítése** – Ha ennek értéke igaz, ez a tulajdonság lehetővé teszi a kosár összesítésének (mini kosár) megjelenítését, ha a kosár ikonja fölé viszik az egérmutatót. Ez a funkció csak az asztali nézet portjain használható.
 
-
 ## <a name="add-a-cart-icon-module-to-a-page"></a>Kosárikon modul felvétele egy oldalra
 
 Egy kosárikon modul hozzáadásához lásd: [Fejléc modul](author-header-module.md).
 
-
 ## <a name="additional-resources"></a>További erőforrások
-
-[Vásárlásmező-modul](add-buy-box.md)
 
 [Kosármodul](add-cart-module.md)
 
 [Fizetésmodul](add-checkout-module.md)
 
-[Rendelésmegerősítési modul](order-confirmation-module.md)
+[Fizetési modul](payment-module.md)
 
-[Fejlécmodul](author-header-module.md)
+[Szállítási cím modul](ship-address-module.md)
 
-[Láblécmodul](author-footer-module.md)
+[Szállítási lehetőségek modul](delivery-options-module.md)
+
+[Rendelési részletek modul](order-confirmation-module.md)
+
+[Ajándékutalvány modul](add-giftcard.md)

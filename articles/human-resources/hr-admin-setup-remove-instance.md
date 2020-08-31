@@ -3,7 +3,7 @@ title: Példány eltávolítása
 description: Ez a cikk végigvezeti Önt a teszt- vagy éles környezet eltávolításán a Microsoft Dynamics 365 Human Resources esetében.
 author: andreabichsel
 manager: AnnBe
-ms.date: 07/27/2020
+ms.date: 08/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a384801060b2b684f7908daaac2311edd27c773a
-ms.sourcegitcommit: 4a981ee4be6d7e6c0e55541535d386bce2565cba
+ms.openlocfilehash: 0a8eac74f0d840251ab56445dd5af4d19d3c0490
+ms.sourcegitcommit: f759d361fa505323b8b171a98024dca9cc9fa0f0
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "3621380"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "3668325"
 ---
 # <a name="remove-an-instance"></a>Példány eltávolítása
 
@@ -70,7 +70,7 @@ A Human Resources-környezet meglévő Power Apps környezetből való eltávol�
 4. Jelentkezzen be az LCS-be azzal a fiókkal, amelyet a Human Resources alkalmazásba való feliratkozáshoz használt. 
 5. Válassza ki azt a Human Resources-projektet, amely tartalmazza a környezetet. 
 6. Az LCS-projektben válassza a **Human Resources alkalmazás kezelése** csempét. 
-7. Válassza ki a példányt, amelyet el szeretné távolítani, amelynél fel kell tüntetni a telepítés állapotát **Nem sikerült** állapottal.
+7. Válassza ki az eltávolítani kívánt példányt, amelynél fel kell tüntetni a telepítés állapotát **Törölt** állapottal.
 8. Válassz a **Példány eltávolítása** lehetőséget, és hagyja jóvá a döntést. 
 
 ## <a name="recover-a-soft-deleted-environment"></a>A részben törölt környezet helyreállítása

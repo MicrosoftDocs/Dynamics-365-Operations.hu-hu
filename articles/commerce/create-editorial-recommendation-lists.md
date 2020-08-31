@@ -19,12 +19,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 0b866704b419fb07dcf1ddd386af2f7d6cfa02e2
-ms.sourcegitcommit: fdc5dd9eb784c7d8e75692c8cdba083fe0dd87ce
+ms.openlocfilehash: 9826785700dcc1a35e6199b7aeff4e06b6d9da39
+ms.sourcegitcommit: 8905d7a7a010e451c5435086480f66650ec54926
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "3404116"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "3665057"
 ---
 # <a name="manually-create-curated-recommendations"></a>Válogatott ajánlások manuális létrehozása
 
@@ -64,7 +64,9 @@ Válogatott termékajánlási lista létrehozásához kövesse az alábbi lépé
 
 [Személyre szabott termékajánlatok kikapcsolása](personalization-gdpr.md)
 
-[Termékajánlások hozzáadása a pénztárnál](product.md)
+[A hasonlóak megvásárlására vonatkozó javaslatok engedélyezése](shop-similar-looks.md)
+
+[Termékajánlatok hozzáadása a pénztárnál](product.md)
 
 [Ajánlatok hozzáadása a tranzakció képernyőjéhez](add-recommendations-control-pos-screen.md)
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar-ms
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 87ffc0204019f2f7122c40dc21bdb5de012929d6
-ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
+ms.openlocfilehash: e81617979a945274500c9f4ceaa8078d8dfd79e8
+ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "3411203"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "3686718"
 ---
 # <a name="footer-module"></a>Láblécmodul  
 
@@ -50,8 +50,8 @@ A legtöbb tárolóhoz hasonlóan a láblécmodul a fejlécre és a szélességr
 
 ## <a name="create-a-footer-module"></a>Láblécmodul létrehozása
 
-1. Lépjen az **Oldaltöredékek** pontra, majd válassza az **Új** lehetőséget új töredék létrehozásához.
-1. Az **Új oldaltöredék** párbeszédpanelen jelölje ki a **Tároló** modult, adja meg a laptöredék nevét, majd kattintson az **OK** gombra.
+1. Lépjen a **Töredékek** pontra, és válassza az **Új** lehetőséget új töredék létrehozásához.
+1. Az **Új oldaltöredék** párbeszédpanelen válassza ki a **Tároló** modult, adja meg az oldaltöredék nevét, majd kattintson az **OK** gombra.
 1. Az **Alapértelmezett tároló** helyben válassza a három pont (**…**) gombot, majd válassza az **Modul hozzáadása** elemet.
 1. A **Modul hozzáadása** párbeszédpanelen válassza ki a **Lábléckategória** modult, majd kattintson az **OK** gombra.
 1. A **Lábléckategória** helyben válassza a három pont (**…**) gombot, majd válassza a **Modul hozzáadása** elemet.

@@ -3,7 +3,7 @@ title: Human Resources alkalmazás a Teams rendszerben
 description: Ez a témakör bemutatja a Microsoft Dynamics 365 Human Resources alkalmazást a Microsoft Teams rendszerben.
 author: andreabichsel
 manager: AnnBe
-ms.date: 05/18/2020
+ms.date: 08/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 36684710e39c27840cc4aaa259a85579104fd8d6
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 4822cc6560926df878a8b4e9f821b331ede27a8c
+ms.sourcegitcommit: 15c68822f4d412bfc609be31b3702f18c81ea0bc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3431130"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "3666360"
 ---
 # <a name="human-resources-app-in-teams"></a>Human Resources alkalmazás a Teams rendszerben
 
@@ -45,10 +45,10 @@ A Teams alkalmazásengedélyeinek kezelésével kapcsolatos információkért l�
 
 | Kiadás | Állapot |
 | --- | --- |
+| A vízszintes görgetés nem használható Android-telefonokon | A vízszintes görgetés nem jelent problémát iOS- vagy asztali eszközön. Dolgozunk a javításon az Android rendszerhez. |
 | Hiba: Probléma adódott a kapcsolódásra szolgáló környezet keresésekor. | Ez a hibaüzenet akkor is megjelenhet, ha ellenőrizte, hogy a felhasználó hozzáférhet-e egy vagy több Human Resources környezethez. Emellett előfordulhat, hogy a várt környezetek nem mindegyike látható. A probléma megoldásáig törölje a felhasználót, majd importálja újra, hogy elkerülje a problémát. |
 | Az egyenleg nem helyes, amikor jövőbeli dátumra vonatkozó szabadságot küld be. | Az előrejelzés még nem érhető el. A megjelenített egyenleg az aktuális dátumra vonatkozik. |
 | Ha egy meglévő kérelemben szereplő órák számát csökkenti, akkor a **Fennmaradó egyenleg** csökken, ahelyett, hogy növekedne. | Ezt az ismert problémát a jövőben fogjuk kezelni. A kijelzett érték helytelen, de a megfelelő összegeket a program elküldésekor korrigálja. |
-| Két **Közelgő szabadság** kártya jelenik meg ugyanarra a dátumra. | A kártyák egyéni beküldéseket jelentenek. A visszajelzéseket továbbra is figyelembe véve módosításokat fogunk eszközölni. |
 | Nem lehet visszavonni egy **Ellenőrzés alatt** állapotú kérelmet. | Ez a funkció jelenleg nem támogatott, és egy későbbi verzióban kerül hozzáadásra. |
 | Az egyenleg adatait a mai naptól számítja ki a program. | A rendszer jelenleg nem jeleníti meg a könyvelési időszak egyenlegeit, még akkor sem, ha be van állítva a Szabadság és távollét paraméterei között. |
 

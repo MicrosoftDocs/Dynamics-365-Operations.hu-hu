@@ -19,12 +19,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 0e49b4db17ffd792e8dd536a1671773253c74d71
-ms.sourcegitcommit: fdc5dd9eb784c7d8e75692c8cdba083fe0dd87ce
+ms.openlocfilehash: 4103096f23e5568cc2bf64f21720c7c16d3e0cd1
+ms.sourcegitcommit: 8905d7a7a010e451c5435086480f66650ec54926
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "3404140"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "3664858"
 ---
 # <a name="enable-personalized-recommendations"></a>Személyre szabott ajánlatok engedélyezése
 
@@ -113,6 +113,8 @@ Személyre szabás alkalmazásához egy meglévő ajánlati listára a Commerce 
 [Az Azure Data Lake Storage engedélyezése a Dynamics 365 Commerce környezetben](enable-adls-environment.md)
 
 [Termékajánlatok engedélyezése](enable-product-recommendations.md)
+
+[A hasonlóak megvásárlására vonatkozó javaslatok engedélyezése](shop-similar-looks.md)
 
 [Személyre szabott termékajánlatok kikapcsolása](personalization-gdpr.md)
 

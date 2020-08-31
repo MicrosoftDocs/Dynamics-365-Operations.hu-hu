@@ -3,7 +3,7 @@ title: Kosármodul
 description: Ez a témakör a kosármodulokkal foglalkozik, és bemutatja, hogy hogyan lehet őket hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: anupamar-ms
 manager: annbe
-ms.date: 05/28/2020
+ms.date: 08/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,16 +17,17 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: f21268ed4cffed1d5c789f722796cdf05e965819
-ms.sourcegitcommit: 4a981ee4be6d7e6c0e55541535d386bce2565cba
+ms.openlocfilehash: 07d485012bfc93c957b3dc42e3b0ed62e761dee1
+ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "3621036"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "3686766"
 ---
 # <a name="cart-module"></a>Kosármodul
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Ez a témakör a kosármodulokkal foglalkozik, és bemutatja, hogy hogyan lehet őket hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
 
@@ -42,9 +43,17 @@ A következő kép a Fabrikam webhelyen használt kosároldal egy példáját je
 
 ![Példa egy kosármodulra](./media/cart2.PNG)
 
+A következő kép a Fabrikam webhelyen használt kosároldal egy példáját jeleníti meg. Ebben a példában egy sortételre kezelési díjat számolnak fel.
+
+![Példa egy kosármodulra](./media/ecommerce-handling-fee.png)
+
 ## <a name="cart-module-properties-and-slots"></a>A kosármodul tulajdonságai és helyei
 
-A kosár modulnak van egy **Címsor** tulajdonsága, amelyet olyan értékekre állíthat, mint **Bevásárlótáska** vagy **Kosárban levő cikkek**. 
+| Tulajdonság | Értékek | Leírás |
+|----------------|--------|-------------|
+| Fejléc | A fejléc szövege és a fejléc címkéje (**H1**, **H2**, **H3**, **H4**, **H5** vagy **H6**) | A kosarának olyan címsor, mint például a "Bevásárlótáska" vagy a "Kosárban található termékek." |
+| A nincs készleten állapottal kapcsolatos hibák megjelenítése | **Igaz** vagy **Hamis** | Ha ez a tulajdonság **Igaz** értékre van állítva, a kosár oldal a készlettel kapcsolatos hibákat fog jelezni. Azt ajánljuk Önnek, hogy állítsa ezt a tulajdonságot **igaz**-ra, ha a készlet ellenőrzés engedélyezve van az oldalon. |
+| Szállítási költségek megjelenítések sorcikkeknél | **Igaz** vagy **Hamis** | Ha ez a tulajdonság **Igaz** értékre van állítva, akkor a kosár sortételei megmutatják a szállítás költségeit, amennyiben ez az információ elérhető. Ez a funkció nem támogatott a Fabrikam témában, mert a felhasználók a csak szállítást választják a fizetési folyamaton belül. Azonban ez a funkció más munkafolyamatokban is bekapcsolható, ha az alkalmazható az adott munkafolyamatban. |
 
 ## <a name="modules-that-can-be-used-in-a-cart-module"></a>A kosármodulban használható modulok
 
@@ -67,9 +76,9 @@ A kosármodul a termék adatait a Commerce Scale Unit API-k használatával olva
 
 A kosármodul új oldalra való felvételéhez és a kötelező tulajdonságok beállításához hajtsa végre az alábbi lépéseket.
 
-1. Lépjen az **Oldaltöredékek** pontra, majd válassza az **Új** lehetőséget új töredék létrehozásához.
-1. Az **Új oldaltöredék** párbeszédablakban válassza ki a **Kosár** modult.
-1. Az **Oldaltöredék neve** pontban adja meg a **Kosár töredék** nevét, majd válassza az **OK** lehetőséget.
+1. Lépjen a **Töredékek** pontra, és válassza az **Új** lehetőséget új töredék létrehozásához.
+1. Az **Új oldaltöredék** párbeszédpanelen válassza ki a **Kosár** modult.
+1. Az **Oldaltöredék neve** pontban adja meg a **Kosár töredék** nevet, ezután válassza az **OK** lehetőséget.
 1. Válassza ki **Kosár** helyet.
 1. A jobb oldali tulajdonságok ablaktáblán válassza ki a ceruza szimbólumot, adja meg a címsor szövegét a mezőben, majd jelölje be a pipa jelet.
 1. A **Kosár** helyben válassza a három pont (**…**) gombot, majd válassza az **Modul hozzáadása** elemet.
@@ -77,8 +86,8 @@ A kosármodul új oldalra való felvételéhez és a kötelező tulajdonságok b
 1. Válassza a **Mentés** elemet, válassza a **Szerkesztés befejezése** parancsot a töredék ellenőrzéséhez, majd a **Közzététel** elemet a közzétételhez.
 1. Lépjen a **Sablonok** pontra, majd új sablon készítéséhez válassza az **Új** elemet.
 1. Az **Új sablon** párbeszédablakban a **Sablon neve** alatt adja meg a sablon nevét.
-1. A Vázlatablakban válassza ki a **Törzs** helyét, válassza a három pont (**…**) majd válassza a **Töredék hozzáadása** elemet.
-1. Az **Oldaltöredék kiválasztása** párbeszédpanelen válassza ki a **Kosártöredék** töredékét, amelyet korábban hozott létre majd kattintson az **OK** gombra.
+1. A fastruktúrában válassza ki a **Törzs** helyén a három pont menüt (**…**), ezután válassza a **Töredék hozzáadása** elemet.
+1. Az **Oldaltöredék kiválasztása** párbeszédpanelen válassza ki a **Kosártöredék** nevű töredékét, majd kattintson az **OK** gombra.
 1. Válassza a **Mentés** elemet, válassza a **Szerkesztés befejezése** parancsot a sablon ellenőrzéséhez, majd a **Közzététel** elemet a közzétételhez.
 1. Lépjen az **Oldalak** pontra, majd válassza az **Új** lehetőséget új oldal létrehozásához.
 1. A **Sablon kiválasztása** párbeszédpanelen válassza ki a létrehozott sablont, adjon meg egy oldalnevet, majd kattintson az **OK** gombra.
@@ -87,22 +96,18 @@ A kosármodul új oldalra való felvételéhez és a kötelező tulajdonságok b
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[Kezdőcsomag áttekintése](starter-kit-overview.md)
-
-[Tárolómodul](add-container-module.md)
-
-[Üzletkiválasztó modul](store-selector.md)
-
-[Vásárlásmező-modul](add-buy-box.md)
-
 [Kosárikon modul](cart-icon-module.md)
 
 [Fizetésmodul](add-checkout-module.md)
 
-[Rendelésmegerősítési modul](order-confirmation-module.md)
+[Fizetési modul](payment-module.md)
 
-[Fejlécmodul](author-header-module.md)
+[Szállítási cím modul](ship-address-module.md)
 
-[Láblécmodul](author-footer-module.md)
+[Szállítási lehetőségek modul](delivery-options-module.md)
+
+[Rendelési részletek modul](order-confirmation-module.md)
+
+[Ajándékutalvány modul](add-giftcard.md)
 
 [Kiskereskedelmi csatornák készletelérhetőségének kiszámítása](calculated-inventory-retail-channels.md)

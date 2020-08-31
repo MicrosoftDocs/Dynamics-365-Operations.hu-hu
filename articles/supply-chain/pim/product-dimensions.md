@@ -1,9 +1,9 @@
 ---
 title: Termékdimenziók
-description: 'Négy termékdimenzió létezik: szín, konfiguráció, méret és stílus. A termékdimenziókat dimenziócsoportokban kombinálhatja és hozzárendelheti a dimenziócsoportokat az alaptermékekhez. A cikkdimenziók kombinációi meghatározzák a termékváltozatokat is.'
+description: 'Öt termékdimenzió létezik: szín, konfiguráció, méret, stílus és verzió. A termékdimenziókat dimenziócsoportokban kombinálhatja és hozzárendelheti a dimenziócsoportokat az alaptermékekhez. A cikkdimenziók kombinációi meghatározzák a termékváltozatokat is.'
 author: cvocph
 manager: tfehr
-ms.date: 08/05/2019
+ms.date: 08/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,42 +18,54 @@ ms.search.region: Global
 ms.search.industry: Retail
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f5e9b10fa18ada9534ce5e279d4f1f09973a802b
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.dyn365.ops.version: 10.0.13
+ms.openlocfilehash: 72b8cd8149ab7b2074eb815231be348db62e282e
+ms.sourcegitcommit: f9917706d45693e8d3f9f6224dca9e601db44bae
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3208432"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "3657316"
 ---
 # <a name="product-dimensions"></a>Termékdimenziók
 
 [!include [banner](../includes/banner.md)]
 
-Négy termékdimenzió létezik: szín, konfiguráció, méret és stílus. A termékdimenziókat dimenziócsoportokban kombinálhatja és hozzárendelheti a dimenziócsoportokat az alaptermékekhez. A cikkdimenziók kombinációi meghatározzák a termékváltozatokat is.
+Öt termékdimenzió létezik: szín, konfiguráció, méret, stílus és verzió. A termékdimenziókat dimenziócsoportokban kombinálhatja és hozzárendelheti a dimenziócsoportokat az alaptermékekhez. A cikkdimenziók kombinációi meghatározzák a termékváltozatokat is.
 
 Termékdimenziók olyan jellemzőket termékváltozat azonosítására szolgál. Cikkdimenziók kombinációi használhatja termékváltozatok meghatározására. Termékváltozat létrehozásához meg kell adnia legalább egy termékdimenzió alaptermék.
 
 ## <a name="product-variants"></a>Termékváltozatok
 
-Termékváltozatok is nevezik cikkeket. Cikk tárgyi eszközök termék, amely nem azonos a szolgáltatás fut. Azonban lehetőség van alaptermék meghatározására is a szolgáltatástípussal. A Szolgáltatástípus használatával megadhat szolgáltatásokat magukba foglaló termékváltozatokat. Például megadhatja a tanácsadói munka és a termékbevételezés változatok vezető tanácsadók és beosztott tanácsadók által végrehajtott munka alaptermék.
+Termékváltozatok is nevezik cikkeket. A cikkek kézzelfogható eszközök, vagyis különböznek a szolgáltatásoktól. Lehetőség van alaptermék szolgáltatástípussal való meghatározására. A szolgáltatástípus használatával megadhat szolgáltatásokat magukba foglaló termékváltozatokat. Megadhatja például a tanácsadói munkát alaptermékként és olyan, a munkához tartozó termékváltozatokat, amelyeket vezető és beosztott tanácsadók hajtanak végre.
 
 ## <a name="product-dimensions"></a>Termékdimenziók
-A következő termékdimenziók léteznek: szín, konfiguráció, méret és stílus. Termékváltozat hozható létre a termékdimenzió-értékek alapján.
 
-Termékdimenzió-értékek, mint például méret, szín és stílus a **Méret**, **Szín** és **Stílus** lapokon hozhatók létre, amelyek a következő helyekről érhetők el: **Termékinformációk kezelése** &gt; **Beállítás** &gt; **Dimenzió- és változatcsoportok** &gt; **Méretek/Színek/Stílusok**. A Konfigurációdimenzió termékdimenzió-értékei általában a Termékkonfiguráló vagy a Dimenzión alapuló konfiguráló használatával hozhatók létre. A termékdimenziók létrehozása és karbantartása a **Termékdimenziók** oldalon lehetséges, amely a következő helyekről érhető el:
--   Kattintson a **Termékinformációk kezelése** &gt; **Termékek** &gt; **Alaptermékek** lehetőségekre. A **Műveleti panel** modulon kattintson a **Termékdimenziók** elemre.
--   Kattintson a  **Termékinformációk kezelése** &gt; **Termékek** &gt; **Minden termék és alaptermék** lehetőségekre. Válasszon ki egy alapterméket. A **Műveleti panel** modulon kattintson a **Termékdimenziók** elemre.
--   Kattintson a **Termékinformációk kezelése** &gt; **Kiadott termékek** lehetőségekre. Válasszon ki egy alapterméket. A **Műveleti panel** modulon kattintson a **Termék** elemre. Az **Alaptermék** csoportban kattintson a **Termékdimenziók** gombra.
+Termékváltozat hozható létre a termékdimenzió-értékek alapján.
+
+A méret, a szín és a stílus dimenzió termékdimenzióinak értéke a következő helyeken hozható létre:
+
+- **Méret** oldal (**Termékinformáció-kezelés \> Beállítás \> Dimenzió- és változatcsoportok \> Méretek**)
+- **Szín** oldal (**Termékinformáció-kezelés \> Beállítás \> Dimenzió- és változatcsoportok \> Színek**)
+- **Stílus** oldal (**Termékinformáció-kezelés \> Beállítás \> Dimenzió- és változatcsoportok \> Stílusok**)
+
+A konfigurációdimenzió termékdimenzió-értékei általában a Termékkonfiguráló vagy a Dimenzión alapuló konfiguráló használatával hozhatók létre. 
+
+A termékverziók általában meghatározott verziókhoz jönnek létre, mivel a termék fejlődik az életciklusa alatt. A termékverziókról a témakör későbbi részében lesz bővebben szó.
+
+A termékdimenziók létrehozása és karbantartása a **Termékdimenziók** oldalon lehetséges, amely a következő helyekről érhető el:
+
+- Ugorjon a **Termékinformációk kezelése \> Termékek \> Alaptermékek** lehetőségre. A Művelet ablaktáblán válassza ki a **Termékdimenziók** elemet.
+- Lépjen a **Termékinformációk kezelése \> Termékek \> Minden termék és alaptermék** részre. Válasszon ki egy alapterméket. A Művelet ablaktáblán válassza ki a **Termékdimenziók** elemet.
+- Lépjen a **Termékinformációk kezelése \> Kiadott termékek** részre. Válasszon ki egy alapterméket. A műveleti ablaktáblán a **Termék** lapon az **Alaptermék** csoportban válassza a **Termékdimenziók** lehetőséget.
 
 A változatok létrehozható egy cikkhez száma lehetséges termék cikkdimenzió-kombinációk száma korlátozza.
 
-| **Tipp**                                                                                                                                              |
-|------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Használatakor a termék, például egy olyan rendeléssort, választhat a termékdimenziókat, amellyel dolgozni szeretne termékváltozat azonosításához. |
+> [!TIP]
+> Ha terméket használ egy rendeléssoron, például kiválasztja a termékdimenziókat a használni kívánt termékváltozat azonosításához.
 
 ## <a name="example"></a>Példa
-Egy vállalat farmernadrágokat értékesít. A Farmernadrág cikknél a Szín és a Méret termékdimenziókat alkalmazzák. A farmernadrágok három különböző színben és hat különböző méretben kaphatók. Színek: Kék, Fekete, Barna Méretek: XS, S, M, L, XL, XXL Nem minden méretben érhető el mindhárom szín. Ha minden kombináció érvényes lenne, az 18 féle farmernadrágot jelentene. Ebben a példában csak a következő kilenc termék változat kombináció legyártva.
+
+Egy vállalat farmernadrágokat értékesít. A *Farmernadrág* cikk a szín és a méret termékdimenziókat használja. A farmernadrágok három különböző színben és hat különböző méretben kaphatók. A színek: kék, fekete, barna. A méretek: XS, S, M, L, XL és XXL. A három szín nem minden méretben érhető el. Ha minden kombináció elérhető lenne, akkor 18 féle farmernadrág lenne. Ebben a példában viszont csak a következő kilenc termékváltozat kombinációja érhető el.
 
 | Szín | Méret |
 |-------|------|
@@ -61,13 +73,76 @@ Egy vállalat farmernadrágokat értékesít. A Farmernadrág cikknél a Szín �
 | Kék  | V    |
 | Kék  | H    |
 | Fekete | H    |
-| Fekete | EREDMÉNY    |
+| Fekete | L    |
 | Fekete | XL   |
-| Barna | K    |
+| Barna | L    |
 | Barna | XL   |
 | Barna | XXL  |
 
+## <a name="the-version-product-dimension"></a>A verzió termékdimenzió
 
+A verzió olyan termékdimenzió, amellyel könnyebb karbantartani és nyomon követni a termék különböző verzióit az ellátási láncon keresztül. A verziók nyomon követése elengedhetetlen az olyan gyártók sikeréhez, amelyek esetében a termékéletciklus folyamatosan zsugorodik, a minőségi és megbízhatósági követelmények egyre komolyabbak lesznek, valamint a termék biztonságossága egyre fontosabb.
 
+Normál termékdimenzióként a verzió a meglévő termékdimenziókhoz (méret, stílus, szín, konfiguráció) hasonlóan viselkedik. Ennek megfelelően a termékverziók nyomon követése mellett másra is használható.
 
+### <a name="turn-on-the-version-dimension"></a><a name="enable-version-dim"></a>A verzió dimenzió bekapcsolása
 
+#### <a name="before-you-turn-on-the-version-dimension"></a>Teendők a verzió dimenzió bekapcsolása előtt
+
+A verzió dimenzió bekapcsolásakor néhány funkció helytelenül vagy nem a várt módon működhetett abban az esetben, ha olyan más megoldásokat telepített, amelyek testreszabásokat adtak a készletdimenziókhoz. Előfordulhat, hogy a verzió dimenzió tökéletes működéséhez frissítenie kell ezeket a megoldásokat, hogy a verzió dimenzió szerepeljen a hivatkozásaikban és a készletdimenzióikban.
+
+A verzió dimenzióval való kompatibilitáshoz szükséges megoldások tesztelésekor a következő elemeket keresse meg:
+
+1. **Funkcionalitás:** a legfontosabb, hogy minden készletdimenziót tartalmazó testreszabást ellenőrizni kell, hogy együttműködik a verzió dimenzióval.
+1. **A készletdimenziókra való hivatkozások:** keresse meg a készletdimenziók hivatkozásait (azokat a helyeket, amelyekre a dimenziók kifejezetten hivatkoznak). Az `InventDimId` hivatkozásai a telepítés után egyből működnek, de a stílusra vagy a színre való hivatkozásokat célszerű ellenőrizni. Ellenőrizze például a következő elemeket:
+
+    - API-hívások a kiterjesztett osztályokban
+    - A bővítménykódban lévő konkrét készletdimenziókra történő összes hivatkozás (ennek a kódnak lebegőpontosnak kell lennie, a stílus, a szín és a méret dimenzióval együtt).
+
+1. **Elavult API-hívásokra mutató hivatkozások:** a verzió dimenzió bevezetésekor a Microsoft próbálta elérni, hogy minél kevesebb API legyen elavult. A néhány elavult API figyelmeztetést küld, a **Termékdimenzió – verzió** konfigurációs kulcs bekapcsolásakor. Az ilyen API-k hívásait ki kell javítani a kiterjesztett megoldásokban, mielőtt termelési rendszerben aktiválná a verzió dimenziót. A verzióspecifikus elavult API-k a következők:
+
+    - RetailTransactionServiceInventory::getProductRecordId
+    - EcoResProductNumberIdentifiedProductVariantEntity::find
+    - EGAISAlcoholProduction_RU::findByItemDim
+    - PCVariantConfiguration::findByProductMasterAndDimensions
+
+1. **Leképezések:** ha bármelyik leképezés használ készletdimenziót, akkor az ezeknek a leképezéseknek a kapcsolódó objektumkapcsolat-leképezését úgy kell frissíteni, hogy tartalmazza a verzió dimenziót. A kiterjesztett modellben vagy a táblabővítményekben keresse meg azokat a táblákat, amelyeknél a mezők készletdimenziókat tartalmaznak.
+1. **Microsoft Dynamics 365 Commerce-funkciók:** miután be van kapcsolta, a verzió dimenzió megjelenik a Dynamics 365 Supply Chain Management Commerce-specifikus kódjában. A Commerce csatorna-adatbázisa és a pénztári alkalmazások azonban még nem támogatják a verzió dimenziót. Ez a viselkedés hasonlít a konfiguráció dimenzió Commerce-en belüli aktuális viselkedésére.
+
+#### <a name="turn-on-the-version-dimension"></a>A verzió dimenzió bekapcsolása
+
+A verzió dimenziót a használat előtt be kell kapcsolnia a rendszerben. A feladathoz rendszergazdai engedélyek szükségesek.
+
+1. Lépjen a **Rendszerfelügyelet \> Munkaterületek \> Funkciókezelés** részre.
+1. Kapcsolja be a *Termékdimenzió – verzió* szolgáltatást. (További információ: [Funkciókezelés – áttekintés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).)
+1. Állítsa [karbantartási módba](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md) a rendszert.
+1. Lépjen a **Rendszerfelügyelet \> Beállítás \> Licenckonfiguráció** elemre.
+1. A **Konfigurációs kulcsok** lapon bontsa ki a **Kereskedelem** csomópontot , és jelölje be a **Termékdimenzió – verzió** jelölőnégyzetet.
+1. Kapcsolja ki a [karbantartási módot](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
+
+### <a name="areas-where-the-version-dimension-isnt-supported"></a>Területek, ahol a verzió dimenzió nem támogatott
+
+A következő területek nem támogatják a verzió dimenziót, mivel ennek a dimenziónak a bevezetése kompatibilitástörő változásokat okozna:
+
+- Költségobjektum havi kimutatása
+- Költségobjektum-kimutatás gyorsítótára
+- MCR-értékesítési statisztikák cikkenként
+- Szállítói katalógusok
+- EcoResProductDimensionGroupEntity
+
+Ezenkívül a Commerce rendelés-létrehozási és -feldolgozási szolgáltatásai (például a pénztár, a hívásközpont és az e-kereskedelmi rendelések) sem támogatják a verzió dimenziót. Arra vonatkozóan, hogy a Commerce rendelések mikor fogják támogatni, nincs visszaigazolt idősor.
+
+### <a name="functional-characteristics-of-the-version-dimension"></a>A verzió dimenzió működési jellemzői
+
+A verzió dimenzió a többi termékdimenzióhoz hasonlóan működik. A sajátos természete miatt, és mivel arra szolgál, hogy egy termék több verzióját tartsa karban és kövesse nyomon, némileg eltérően működik. Néhány különbség és hasonlóság:
+
+- **Nincs verziócsoport.**
+
+    Csoportok használhatók a mérethez, a színhez vagy a stílushoz, (színcsoport, méretcsoport, stíluscsoport), verziócsoportok nem léteznek. A csoportokkal előre definiálhatók a megfelelő értékeket, így amikor például színcsoportot rendel a termékhez, a termék az adott színcsoport összes színét használhatja. Mindez fogalom nem vonatkozik a verzió dimenzióra, mert a termék verziói nem előredefiniáltak a termék létrehozásakor. Ehelyett a verziók a termék életciklusa alatt jönnek létre, szükség szerint. Általában ha a termék alakja, illeszkedése és funkciója ugyanaz marad, akkor nem új terméket, hanem új verziót szoktak létrehozni.
+
+- **A termékváltozat javaslatai úgy működnek, ahogy jelenleg.**
+
+    A termékváltozatok javaslatai a verzió dimenzió minden értékéhez adnak javaslatot, akárcsak a többi dimenzió esetében. A verziószámmal rendelkező termékek létrehozásának és kiadásának folyamata ugyanaz, mint a más dimenziókat használó termékek esetében. A verziószámozást használó termék létrehozásakor az első verzió (V1) termékdimenzióként jön létre, és megjelennek a változatok. Mivel a termék változik és új verziók lesznek szükségesek, az új verzió értékét (V2) hozzáadja a program, és a rendszer kiadja a szükséges változatokat. Nem kell minden verziót létrehozni (V1, V2 és V3) előre a termékhez.
+
+> [!IMPORTANT]
+> Ha bekapcsolja és használja a verzió dimenziót, akkor a készletdimenziókra hivatkozó bizonyos megoldások nem a várt módon működhetnek. A problémák megerősítéséhez és javításához forduljon az érintett megoldás független szoftverszállítójához (ISV). További információ: [A verzió dimenzió engedélyezése](#enable-version-dim).
