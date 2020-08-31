@@ -1,7 +1,7 @@
 ---
 title: A munkafolyamat-rendszer áttekintése
 description: Ez a témakör bemutatja a munkafolyamat rendszert.
-author: sericks007
+author: ChrisGarty
 manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
@@ -14,61 +14,61 @@ ms.search.scope: Core, Operations
 ms.custom: 56381
 ms.assetid: 20b78595-e1d9-439a-ae1c-a776a3438919
 ms.search.region: Global
-ms.author: tjvass
+ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eef77a5d81d12ec92eea86b1dd9902d9e3d80b33
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 068f464fe5385486827b2f904114eb663e08b2e8
+ms.sourcegitcommit: e55efd2f62bf60f678108c09ad4701a76b20cc68
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812363"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "3697969"
 ---
-# <a name="workflow-system-overview"></a><span data-ttu-id="3de19-103">A munkafolyamat-rendszer áttekintése</span><span class="sxs-lookup"><span data-stu-id="3de19-103">Workflow system overview</span></span>
+# <a name="workflow-system-overview"></a><span data-ttu-id="2b109-103">A munkafolyamat-rendszer áttekintése</span><span class="sxs-lookup"><span data-stu-id="2b109-103">Workflow system overview</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="3de19-104">Ez a témakör bemutatja a munkafolyamat rendszert.</span><span class="sxs-lookup"><span data-stu-id="3de19-104">This topic describes the workflow system.</span></span>
+<span data-ttu-id="2b109-104">Ez a témakör bemutatja a munkafolyamat rendszert.</span><span class="sxs-lookup"><span data-stu-id="2b109-104">This topic describes the workflow system.</span></span>
 
-## <a name="what-is-workflow"></a><span data-ttu-id="3de19-105">Mi az a munkafolyamat?</span><span class="sxs-lookup"><span data-stu-id="3de19-105">What is workflow?</span></span>
+## <a name="what-is-workflow"></a><span data-ttu-id="2b109-105">Mi az a munkafolyamat?</span><span class="sxs-lookup"><span data-stu-id="2b109-105">What is workflow?</span></span>
 
-<span data-ttu-id="3de19-106">A *munkafolyamat* kifejezést kétféle módon lehet meghatározni: rendszerként és üzleti folyamatként.</span><span class="sxs-lookup"><span data-stu-id="3de19-106">The term *workflow* can be defined in two ways: as a system and as a business process.</span></span>
+<span data-ttu-id="2b109-106">A *munkafolyamat* kifejezést kétféle módon lehet meghatározni: rendszerként és üzleti folyamatként.</span><span class="sxs-lookup"><span data-stu-id="2b109-106">The term *workflow* can be defined in two ways: as a system and as a business process.</span></span>
 
-### <a name="workflow-is-a-system"></a><span data-ttu-id="3de19-107">A munkafolyamat egy rendszer</span><span class="sxs-lookup"><span data-stu-id="3de19-107">Workflow is a system</span></span>
+### <a name="workflow-is-a-system"></a><span data-ttu-id="2b109-107">A munkafolyamat egy rendszer</span><span class="sxs-lookup"><span data-stu-id="2b109-107">Workflow is a system</span></span>
 
-<span data-ttu-id="3de19-108">A munkafolyamat olyan rendszer, amely az Application Object Server (AOS) kiszolgálón fut.</span><span class="sxs-lookup"><span data-stu-id="3de19-108">Workflow is a system that runs on the Application Object Server (AOS).</span></span> <span data-ttu-id="3de19-109">A munkafolyamat rendszer egy olyan funkciót biztosít, amelynek segítségével létrehozhat egyes munkafolyamatokat vagy üzleti eljárásokat.</span><span class="sxs-lookup"><span data-stu-id="3de19-109">The workflow system provides functionality that you can use to create individual workflows, or business processes.</span></span>
+<span data-ttu-id="2b109-108">A munkafolyamat olyan rendszer, amely az Application Object Server (AOS) kiszolgálón fut.</span><span class="sxs-lookup"><span data-stu-id="2b109-108">Workflow is a system that runs on the Application Object Server (AOS).</span></span> <span data-ttu-id="2b109-109">A munkafolyamat rendszer egy olyan funkciót biztosít, amelynek segítségével létrehozhat egyes munkafolyamatokat vagy üzleti eljárásokat.</span><span class="sxs-lookup"><span data-stu-id="2b109-109">The workflow system provides functionality that you can use to create individual workflows, or business processes.</span></span>
 
-### <a name="workflow-is-a-business-process"></a><span data-ttu-id="3de19-110">A munkafolyamat egy üzleti eljárás</span><span class="sxs-lookup"><span data-stu-id="3de19-110">Workflow is a business process</span></span>
+### <a name="workflow-is-a-business-process"></a><span data-ttu-id="2b109-110">A munkafolyamat egy üzleti eljárás</span><span class="sxs-lookup"><span data-stu-id="2b109-110">Workflow is a business process</span></span>
 
-<span data-ttu-id="3de19-111">A munkafolyamat egy üzleti folyamatot jelent.</span><span class="sxs-lookup"><span data-stu-id="3de19-111">A workflow represents a business process.</span></span> <span data-ttu-id="3de19-112">Azt határozza meg, hogyan halad vagy mozog egy dokumentum a rendszeren keresztül annak jelzésével, hogy kinek a feladata a feladat végrehajtása, a döntéshozatal, illetve a dokumentum jóváhagyása.</span><span class="sxs-lookup"><span data-stu-id="3de19-112">It defines how a document flows, or moves, through the system by showing who must complete a task, make a decision, or approve a document.</span></span> <span data-ttu-id="3de19-113">Az alábbi illusztráció szemlélteti a költségjelentések munkafolyamatát.</span><span class="sxs-lookup"><span data-stu-id="3de19-113">For example, the following illustration shows a workflow for expense reports.</span></span>
+<span data-ttu-id="2b109-111">A munkafolyamat egy üzleti folyamatot jelent.</span><span class="sxs-lookup"><span data-stu-id="2b109-111">A workflow represents a business process.</span></span> <span data-ttu-id="2b109-112">Azt határozza meg, hogyan halad vagy mozog egy dokumentum a rendszeren keresztül annak jelzésével, hogy kinek a feladata a feladat végrehajtása, a döntéshozatal, illetve a dokumentum jóváhagyása.</span><span class="sxs-lookup"><span data-stu-id="2b109-112">It defines how a document flows, or moves, through the system by showing who must complete a task, make a decision, or approve a document.</span></span> <span data-ttu-id="2b109-113">Az alábbi illusztráció szemlélteti a költségjelentések munkafolyamatát.</span><span class="sxs-lookup"><span data-stu-id="2b109-113">For example, the following illustration shows a workflow for expense reports.</span></span>
 
 ![Munkafolyamat felhasználókhoz rendelt elemekkel](./media/workflow_user.gif)
 
-<span data-ttu-id="3de19-115">A munkafolyamat könnyebb megértésének érdekében tegyük fel, hogy Balázs benyújt egy 7000 dolláros költségjelentést.</span><span class="sxs-lookup"><span data-stu-id="3de19-115">To better understand this workflow, suppose that Sam submits an expense report for USD 7,000.</span></span> <span data-ttu-id="3de19-116">Ebben az esetben Ivánnak ellenőriznie kell a számlákat, amelyeket Sam irányított hozzá.</span><span class="sxs-lookup"><span data-stu-id="3de19-116">In this scenario, Ivan must review the receipts that Sam routes to him.</span></span> <span data-ttu-id="3de19-117">Ezt követően Ferencnek és Zsuzsannának jóvá kell hagynia a költségjelentést.</span><span class="sxs-lookup"><span data-stu-id="3de19-117">Then Frank and Sue must approve the expense report.</span></span> <span data-ttu-id="3de19-118">Ezután tegyük fel, hogy Sam benyújt egy újabb költségjelentést, ezúttal 11 000 dollárról.</span><span class="sxs-lookup"><span data-stu-id="3de19-118">Now suppose that Sam submits an expense report for USD 11,000.</span></span> <span data-ttu-id="3de19-119">Ebben az esetben Ivánnak ellenőriznie kell a nyugtákat, majd Ferencnek, Zsuzsannának és Annának is jóvá kell hagynia a költségjelentést.</span><span class="sxs-lookup"><span data-stu-id="3de19-119">In this scenario, Ivan must review the receipts, and Frank, Sue, and Ann must approve the expense report.</span></span>
+<span data-ttu-id="2b109-115">A munkafolyamat könnyebb megértésének érdekében tegyük fel, hogy Balázs benyújt egy 7000 dolláros költségjelentést.</span><span class="sxs-lookup"><span data-stu-id="2b109-115">To better understand this workflow, suppose that Sam submits an expense report for USD 7,000.</span></span> <span data-ttu-id="2b109-116">Ebben az esetben Ivánnak ellenőriznie kell a számlákat, amelyeket Sam irányított hozzá.</span><span class="sxs-lookup"><span data-stu-id="2b109-116">In this scenario, Ivan must review the receipts that Sam routes to him.</span></span> <span data-ttu-id="2b109-117">Ezt követően Ferencnek és Zsuzsannának jóvá kell hagynia a költségjelentést.</span><span class="sxs-lookup"><span data-stu-id="2b109-117">Then Frank and Sue must approve the expense report.</span></span> <span data-ttu-id="2b109-118">Ezután tegyük fel, hogy Sam benyújt egy újabb költségjelentést, ezúttal 11 000 dollárról.</span><span class="sxs-lookup"><span data-stu-id="2b109-118">Now suppose that Sam submits an expense report for USD 11,000.</span></span> <span data-ttu-id="2b109-119">Ebben az esetben Ivánnak ellenőriznie kell a nyugtákat, majd Ferencnek, Zsuzsannának és Annának is jóvá kell hagynia a költségjelentést.</span><span class="sxs-lookup"><span data-stu-id="2b109-119">In this scenario, Ivan must review the receipts, and Frank, Sue, and Ann must approve the expense report.</span></span>
 
-## <a name="benefits-of-using-the-workflow-system"></a><span data-ttu-id="3de19-120"> A munkafolyamat rendszer használatának előnyei</span><span class="sxs-lookup"><span data-stu-id="3de19-120">Benefits of using the workflow system</span></span>
+## <a name="benefits-of-using-the-workflow-system"></a><span data-ttu-id="2b109-120"> A munkafolyamat rendszer használatának előnyei</span><span class="sxs-lookup"><span data-stu-id="2b109-120">Benefits of using the workflow system</span></span>
 
-<span data-ttu-id="3de19-121">A munkafolyamat-rendszer használata számos előnnyel jár a szervezeténél:</span><span class="sxs-lookup"><span data-stu-id="3de19-121">There are several benefits of using the workflow system in your organization:</span></span>
+<span data-ttu-id="2b109-121">A munkafolyamat-rendszer használata számos előnnyel jár a szervezeténél:</span><span class="sxs-lookup"><span data-stu-id="2b109-121">There are several benefits of using the workflow system in your organization:</span></span>
 
-- <span data-ttu-id="3de19-122">**Egységes folyamatok** — Meghatározhatja az egyes dokumentumok, például a beszerzési igénylések és költségjelentések feldolgozását.</span><span class="sxs-lookup"><span data-stu-id="3de19-122">**Consistent processes** – You can define how specific documents, such as purchase requisitions and expense reports, are processed.</span></span> <span data-ttu-id="3de19-123">A munkafolyamat-rendszer segítségével biztosítható, hogy a dokumentumok feldolgozása és jóváhagyása egységes és hatékony módon történjen.</span><span class="sxs-lookup"><span data-stu-id="3de19-123">By using the workflow system, you ensure that documents are processed and approved in a consistent and efficient manner.</span></span>
-- <span data-ttu-id="3de19-124">**A folyamat láthatósága** – Nyomon követheti a munkafolyamat-példányok állapotát, előzményeit és teljesítmény metrikáit.</span><span class="sxs-lookup"><span data-stu-id="3de19-124">**Process visibility** – You can track the status, history, and performance metrics of workflow instances.</span></span> <span data-ttu-id="3de19-125">Ennek segítségével meghatározhatja, hogy kell-e módosításokat végezni a munkafolyamatban a hatékonyság növelésének érdekében.</span><span class="sxs-lookup"><span data-stu-id="3de19-125">This helps you determine whether changes should be made to the workflow to improve efficiency.</span></span>
-- <span data-ttu-id="3de19-126">**Központi munkalista** – a felhasználók centralizált munkalistát tekinthetnek meg, amely megjeleníti a hozzájuk rendelt munkafolyamat-feladatokat és jóváhagyásokat.</span><span class="sxs-lookup"><span data-stu-id="3de19-126">**Centralized work list** – Users can view a centralized work list that displays the workflow tasks and approvals that are assigned to them.</span></span>
+- <span data-ttu-id="2b109-122">**Egységes folyamatok** — Meghatározhatja az egyes dokumentumok, például a beszerzési igénylések és költségjelentések feldolgozását.</span><span class="sxs-lookup"><span data-stu-id="2b109-122">**Consistent processes** – You can define how specific documents, such as purchase requisitions and expense reports, are processed.</span></span> <span data-ttu-id="2b109-123">A munkafolyamat-rendszer segítségével biztosítható, hogy a dokumentumok feldolgozása és jóváhagyása egységes és hatékony módon történjen.</span><span class="sxs-lookup"><span data-stu-id="2b109-123">By using the workflow system, you ensure that documents are processed and approved in a consistent and efficient manner.</span></span>
+- <span data-ttu-id="2b109-124">**A folyamat láthatósága** – Nyomon követheti a munkafolyamat-példányok állapotát, előzményeit és teljesítmény metrikáit.</span><span class="sxs-lookup"><span data-stu-id="2b109-124">**Process visibility** – You can track the status, history, and performance metrics of workflow instances.</span></span> <span data-ttu-id="2b109-125">Ennek segítségével meghatározhatja, hogy kell-e módosításokat végezni a munkafolyamatban a hatékonyság növelésének érdekében.</span><span class="sxs-lookup"><span data-stu-id="2b109-125">This helps you determine whether changes should be made to the workflow to improve efficiency.</span></span>
+- <span data-ttu-id="2b109-126">**Központi munkalista** – a felhasználók centralizált munkalistát tekinthetnek meg, amely megjeleníti a hozzájuk rendelt munkafolyamat-feladatokat és jóváhagyásokat.</span><span class="sxs-lookup"><span data-stu-id="2b109-126">**Centralized work list** – Users can view a centralized work list that displays the workflow tasks and approvals that are assigned to them.</span></span>
 
 
-## <a name="workflow-content"></a><span data-ttu-id="3de19-127">Munkafolyamat-tartalom</span><span class="sxs-lookup"><span data-stu-id="3de19-127">Workflow content</span></span>
+## <a name="workflow-content"></a><span data-ttu-id="2b109-127">Munkafolyamat-tartalom</span><span class="sxs-lookup"><span data-stu-id="2b109-127">Workflow content</span></span>
 
-+ [<span data-ttu-id="3de19-128">A munkafolyamat-rendszer felépítése</span><span class="sxs-lookup"><span data-stu-id="3de19-128">Workflow system architecture</span></span>](workflow-system-architecture.md)
-+ [<span data-ttu-id="3de19-129">Munkafolyamat-elemek</span><span class="sxs-lookup"><span data-stu-id="3de19-129">Workflow elements</span></span>](workflow-elements.md)
-+ [<span data-ttu-id="3de19-130">Munkafolyamat-jóváhagyási folyamatok műveletei</span><span class="sxs-lookup"><span data-stu-id="3de19-130">Actions in workflow approval processes</span></span>](workflow-actions.md)
-+ [<span data-ttu-id="3de19-131">Munkafolyamatok létrehozása – áttekintés</span><span class="sxs-lookup"><span data-stu-id="3de19-131">Create workflows overview</span></span>](create-workflow.md)
-+ [<span data-ttu-id="3de19-132">Munkafolyamat-tulajdonságok konfigurálása</span><span class="sxs-lookup"><span data-stu-id="3de19-132">Configure workflow properties</span></span>](configure-workflow-properties.md)
-+ [<span data-ttu-id="3de19-133">Manuális feladatok konfigurálása munkafolyamatban</span><span class="sxs-lookup"><span data-stu-id="3de19-133">Configure manual tasks in a workflow</span></span>](configure-manual-task-workflow.md)
-+ [<span data-ttu-id="3de19-134">Automatizált feladatok konfigurálása munkafolyamatban</span><span class="sxs-lookup"><span data-stu-id="3de19-134">Configure automated tasks in a workflow</span></span>](configure-automated-task-workflow.md)
-+ [<span data-ttu-id="3de19-135">Jóváhagyási folyamatok konfigurálása munkafolyamatban</span><span class="sxs-lookup"><span data-stu-id="3de19-135">Configure approval processes in a workflow</span></span>](configure-approval-process-workflow.md)
-+ [<span data-ttu-id="3de19-136">Jóváhagyási lépések konfigurálása munkafolyamatban</span><span class="sxs-lookup"><span data-stu-id="3de19-136">Configure approval steps in a workflow</span></span>](configure-approval-step-workflow.md)
-+ [<span data-ttu-id="3de19-137">Manuális döntések konfigurálása munkafolyamatban</span><span class="sxs-lookup"><span data-stu-id="3de19-137">Configure manual decisions in a workflow</span></span>](configure-manual-decision-workflow.md)
-+ [<span data-ttu-id="3de19-138">Feltételes döntések konfigurálása munkafolyamatban</span><span class="sxs-lookup"><span data-stu-id="3de19-138">Configure conditional decisions in a workflow</span></span>](configure-conditional-decision-workflow.md)
-+ [<span data-ttu-id="3de19-139">Párhuzamos tevékenységek beállítása munkafolyamatban</span><span class="sxs-lookup"><span data-stu-id="3de19-139">Configure parallel activities in a workflow</span></span>](configure-parallel-activity-workflow.md)
-+ [<span data-ttu-id="3de19-140">Párhuzamos ágak konfigurálása munkafolyamatban</span><span class="sxs-lookup"><span data-stu-id="3de19-140">Configure parallel branches in a workflow</span></span>](configure-parallel-branch-workflow.md)
-+ [<span data-ttu-id="3de19-141">Sortétel munkafolyamatainak konfigurálása</span><span class="sxs-lookup"><span data-stu-id="3de19-141">Configure line-item workflows</span></span>](configure-line-item-workflow.md)
-+ [<span data-ttu-id="3de19-142">Munkafolyamat GYIK</span><span class="sxs-lookup"><span data-stu-id="3de19-142">Workflow FAQ</span></span>](workflow-FAQ.md)
++ [<span data-ttu-id="2b109-128">A munkafolyamat-rendszer felépítése</span><span class="sxs-lookup"><span data-stu-id="2b109-128">Workflow system architecture</span></span>](workflow-system-architecture.md)
++ [<span data-ttu-id="2b109-129">Munkafolyamat-elemek</span><span class="sxs-lookup"><span data-stu-id="2b109-129">Workflow elements</span></span>](workflow-elements.md)
++ [<span data-ttu-id="2b109-130">Munkafolyamat-jóváhagyási folyamatok műveletei</span><span class="sxs-lookup"><span data-stu-id="2b109-130">Actions in workflow approval processes</span></span>](workflow-actions.md)
++ [<span data-ttu-id="2b109-131">Munkafolyamatok létrehozása – áttekintés</span><span class="sxs-lookup"><span data-stu-id="2b109-131">Create workflows overview</span></span>](create-workflow.md)
++ [<span data-ttu-id="2b109-132">Munkafolyamat-tulajdonságok konfigurálása</span><span class="sxs-lookup"><span data-stu-id="2b109-132">Configure workflow properties</span></span>](configure-workflow-properties.md)
++ [<span data-ttu-id="2b109-133">Manuális feladatok konfigurálása munkafolyamatban</span><span class="sxs-lookup"><span data-stu-id="2b109-133">Configure manual tasks in a workflow</span></span>](configure-manual-task-workflow.md)
++ [<span data-ttu-id="2b109-134">Automatizált feladatok konfigurálása munkafolyamatban</span><span class="sxs-lookup"><span data-stu-id="2b109-134">Configure automated tasks in a workflow</span></span>](configure-automated-task-workflow.md)
++ [<span data-ttu-id="2b109-135">Jóváhagyási folyamatok konfigurálása munkafolyamatban</span><span class="sxs-lookup"><span data-stu-id="2b109-135">Configure approval processes in a workflow</span></span>](configure-approval-process-workflow.md)
++ [<span data-ttu-id="2b109-136">Jóváhagyási lépések konfigurálása munkafolyamatban</span><span class="sxs-lookup"><span data-stu-id="2b109-136">Configure approval steps in a workflow</span></span>](configure-approval-step-workflow.md)
++ [<span data-ttu-id="2b109-137">Manuális döntések konfigurálása munkafolyamatban</span><span class="sxs-lookup"><span data-stu-id="2b109-137">Configure manual decisions in a workflow</span></span>](configure-manual-decision-workflow.md)
++ [<span data-ttu-id="2b109-138">Feltételes döntések konfigurálása munkafolyamatban</span><span class="sxs-lookup"><span data-stu-id="2b109-138">Configure conditional decisions in a workflow</span></span>](configure-conditional-decision-workflow.md)
++ [<span data-ttu-id="2b109-139">Párhuzamos tevékenységek beállítása munkafolyamatban</span><span class="sxs-lookup"><span data-stu-id="2b109-139">Configure parallel activities in a workflow</span></span>](configure-parallel-activity-workflow.md)
++ [<span data-ttu-id="2b109-140">Párhuzamos ágak konfigurálása munkafolyamatban</span><span class="sxs-lookup"><span data-stu-id="2b109-140">Configure parallel branches in a workflow</span></span>](configure-parallel-branch-workflow.md)
++ [<span data-ttu-id="2b109-141">Sortétel munkafolyamatainak konfigurálása</span><span class="sxs-lookup"><span data-stu-id="2b109-141">Configure line-item workflows</span></span>](configure-line-item-workflow.md)
++ [<span data-ttu-id="2b109-142">Munkafolyamat GYIK</span><span class="sxs-lookup"><span data-stu-id="2b109-142">Workflow FAQ</span></span>](workflow-FAQ.md)
