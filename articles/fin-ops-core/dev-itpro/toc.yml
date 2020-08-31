@@ -156,6 +156,8 @@
                           items:
                             - name: Entitás- és mezőleképezések testreszabása
                               href: data-entities/dual-write/customizing-mappings.md
+                            - name: Több entitásleképezés kezelése
+                              href: data-entities/dual-write/multiple-entity-maps.md
                             - name: Jogi személy szerkesztése a kettős írás beállítása után
                               href: data-entities/dual-write/edit-legal-entity.md
                             - name: Hibakezelő és riasztási értesítések
