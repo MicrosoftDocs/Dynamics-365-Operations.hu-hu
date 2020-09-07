@@ -130,11 +130,13 @@
                       items:
                         - name: Kettős írás kezdőlapja
                           href: data-entities/dual-write/dual-write-home-page.md
+                        - name: Új vagy módosult elemek a kettős írás szolgáltatásban
+                          href: data-entities/dual-write/whats-new-dual-write.md
                         - name: Kettős írás – áttekintés
                           href: data-entities/dual-write/dual-write-overview.md
                         - name: Kettős írás beállítása
                           items:
-                            - name: A Kettős írás rendszerkövetelményei
+                            - name: A kettős írás rendszerkövetelményei
                               href: data-entities/dual-write/dual-write-system-req.md
                             - name: A kettős írás beállításának támogatott esetei
                               href: data-entities/dual-write/connection-setup.md
@@ -1472,6 +1474,8 @@
                   href: sysadmin/extensible-data-security-policies.md
                 - name: Biztonsági házirend létrehozása
                   href: sysadmin/create-simple-security-policy.md
+            - name: Továbbra is feleljen meg a felhasználói licencek követelményeinek
+              href: sysadmin/stay-compliant-user-license-requirement.md
             - name: Folyamatok automatizálása
               href: sysadmin/process-automation.md
             - name: Kötegelt feldolgozás

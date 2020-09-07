@@ -5,6 +5,8 @@
       items:
         - name: Új vagy módosult elemek a Human Resources szolgáltatásban
           href: hr-admin-whats-new.md
+        - name: 2020. augusztus 20.
+          href: hr-whats-new-2020-08-20.md
         - name: 2020. augusztus 6.
           href: hr-whats-new-2020-08-06.md
         - name: 2020. július 23.
@@ -78,13 +80,91 @@
             - name: Integrálás az Office-szal
               items:
                 - name: Office-integrációs oktatóanyag
-                  href: ../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/talent/toc.json
+                  href: ../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/human-resources/toc.json
                 - name: Entitás adatainak frissítése az Excel alkalmazásban
-                  href: ../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/unified-operations/talent/toc.json
+                  href: ../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/human-resources/toc.json
                 - name: Az Excel programban történő megnyitási élmények létrehozása
-                  href: ../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/unified-operations/talent/toc.json
+                  href: ../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/human-resources/toc.json
                 - name: Office-integráció – hibaelhárítás
-                  href: ../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/unified-operations/talent/toc.json
+                  href: ../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/human-resources/toc.json
+        - name: Adatkezelés konfigurálása
+          items:
+            - name: Adatkezelési keretrendszer áttekintése
+              href: ../dev-itpro/data-entities/data-entities-data-packages.md?toc=/dynamics365/human-resources/toc.json
+            - name: Adatentitások
+              items:
+                - name: Adatentitások áttekintése
+                  href: ../dev-itpro/data-entities/data-entities.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurációs adatprojektek
+                  href: ../dev-itpro/data-entities/configuration-data-projects.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurációs adatok másolása vállalatok vagy jogi személyek között
+                  items:
+                    - name: Konfigurációs adatok másolása – áttekintés
+                      href: ../dev-itpro/data-entities/copy-configuration.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Konfigurációs adatcsomagok
+                      href: ../dev-itpro/data-entities/configuration-data-packages.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Konfigurációs adatcsomagok (csak 2017. júliusi kiadás esetén)
+                      href: ../dev-itpro/data-entities/configuration-data-packages.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurációs adatsablonok
+                  href: ../dev-itpro/data-entities/configuration-data-templates.md?toc=/dynamics365/human-resources/toc.json
+                - name: Entitás változásainak nyomon követése
+                  href: ../dev-itpro/data-entities/entity-change-track.md?toc=/dynamics365/human-resources/toc.json
+                - name: Normál adatentitásokkal kapcsolatos információk keresése
+                  href: ../dev-itpro/data-entities/data-entities-report.md?toc=/dynamics365/human-resources/toc.json
+                - name: Adatsablonok több munkalappal
+                  href: ../dev-itpro/data-entities/excel-template-multiple.md?toc=/dynamics365/human-resources/toc.json
+                - name: Változáskövetés engedélyezése az entitások esetében
+                  href: ../dev-itpro/data-entities/entity-change-track.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurációs kulcsok és adatentitások
+                  href: ../dev-itpro/data-entities/config-key-entities.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurációs adatcsomagok
+                  href: ../dev-itpro/data-entities/configuration-data-packages.md?toc=/dynamics365/human-resources/toc.json
+            - name: Adatimportálási és -exportálási feladatok
+              items:
+                - name: Adatimportálási és -exportálási feladatok áttekintése
+                  href: ../dev-itpro/data-entities/data-import-export-job.md?toc=/dynamics365/human-resources/toc.json
+                - name: Bevált gyakorlat a kuponok Általános napló entitással történő importálásához
+                  href: ../dev-itpro/data-entities/tips-tricks-import-general-journal-entity.md?toc=/dynamics365/human-resources/toc.json
+            - name: Fejlesztés adatentitásokhoz
+              items:
+                - name: Tervezési elvek és gyakorlati tanácsok az adatentitásokhoz
+                  href: ../dev-itpro/dev-tools/design-best-practices.md?toc=/dynamics365/human-resources/toc.json
+                - name: Új adatentitások létrehozása
+                  href: ../dev-itpro/data-entities/build-consuming-data-entities.md?toc=/dynamics365/human-resources/toc.json
+                - name: Adatentitás-tulajdonságok
+                  href: ../dev-itpro/data-entities/behavioral-properties-data-entities.md?toc=/dynamics365/human-resources/toc.json
+                - name: Számítási oszlopok és virtuális mezők létrehozása
+                  href: ../dev-itpro/data-entities/data-entity-computed-columns-virtual-fields.md?toc=/dynamics365/human-resources/toc.json
+                - name: Vállalatközi viselkedés
+                  href: ../dev-itpro/data-entities/cross-company-behavior.md?toc=/dynamics365/human-resources/toc.json
+                - name: Ország-/régiókódok kezelése
+                  href: ../dev-itpro/data-entities/countryregion-codes-configuration-keys.md?toc=/dynamics365/human-resources/toc.json
+                - name: Öröklődési minták
+                  href: ../dev-itpro/data-entities/support-super-type-sub-type.md?toc=/dynamics365/human-resources/toc.json
+                - name: Adatokentitás-varázsló szabályai
+                  href: ../dev-itpro/data-entities/data-entity-wizard-rules.md?toc=/dynamics365/human-resources/toc.json
+                - name: Metaadat-tulajdonságok
+                  href: ../dev-itpro/data-entities/behavioral-properties-data-entities.md?toc=/dynamics365/human-resources/toc.json
+                - name: 'Hitelesítések, alapértékek és leképezéssel nem rendelkező mezők'
+                  href: ../dev-itpro/data-entities/validations-defaults-unmapped-fields.md?toc=/dynamics365/human-resources/toc.json
+                - name: Biztonság és adatentitások
+                  href: ../dev-itpro/data-entities/security-data-entities.md?toc=/dynamics365/human-resources/toc.json
+                - name: Harmadik fél szolgáltatásának tesztelésére szolgáló segédprogramok használata
+                  href: ../dev-itpro/data-entities/third-party-service-test.md?toc=/dynamics365/human-resources/toc.json
+                - name: 'Csak olvasható entitások létrehozása, amelyek elérhetővé teszik a pénzügyi dimenziókat'
+                  href: ../dev-itpro/financial/read-only-entity-financial.md?toc=/dynamics365/human-resources/toc.json
+            - name: Saját adatbázis használata
+              href: ../dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/dynamics365/human-resources/toc.json
+            - name: BYOD kötegelt feladatok optimalizálása
+              href: hr-admin-integration-byod-batch-jobs.md
+            - name: Automatizált entitástár-frissítés
+              href: ../dev-itpro/analytics/automated-entity-store-refresh.md?toc=/dynamics365/human-resources/toc.json
+            - name: Adatfeladat automatizálása
+              href: ../dev-itpro/data-entities/data-task-automation.md?toc=/dynamics365/human-resources/toc.json
+            - name: Adatellenőrzési ellenőrzőlista munkaterülete
+              href: ../dev-itpro/user-interface/data-validation-workspace.md?toc=/dynamics365/human-resources/toc.json
+            - name: Adatkezelési hibaleírások
+              href: ../dev-itpro/data-entities/dm-error-descriptions.md?toc=/dynamics365/human-resources/toc.json
         - name: Szolgáltatások kezelése
           href: hr-admin-manage-features.md
         - name: Adatbázis-naplózás konfigurálása és kezelése
@@ -535,10 +615,12 @@
               href: hr-employee-self-service-manage-requests.md
             - name: Távollét kérelmezése
               href: hr-employee-self-service-request-time-off.md
-            - name: Csoportos és vállalati naptárak megtekintése
+            - name: Csapat és vállalati naptárak megtekintése
               href: hr-employee-self-service-calendar.md
             - name: Szabadság vásárlásával és eladásával kapcsolatos irányelv kezelése
               href: hr-leave-and-absence-manage-buy-and-sell-leave-policies.md
+            - name: Szabadság vásárlási és eladási munkafolyamatok létrehozása
+              href: hr-leave-and-absence-buy-sell-workflow.md
             - name: Szabadság vásárlása és eladása
               href: hr-employee-self-service-buy-sell-leave.md
         - name: Szabadságkérelmek kezelése a Teamsben
