@@ -158,7 +158,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Egyéni mezők létrehozása és használata
                   href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/supply-chain/toc.json
-                - name: PowerApps alkalmazások beágyazása
+                - name: Microsoft Power Apps beágyazása
                   href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Információk megtalálása keresésekkel
                   href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/supply-chain/toc.json
@@ -633,13 +633,13 @@
               href: ../fin-ops-core/dev-itpro/analytics/bi-reporting-home-page.md?toc=/dynamics365/supply-chain/toc.json
             - name: Adathozzáférés és jelentéskészítés
               href: ../fin-ops-core/dev-itpro/analytics/information-access-reporting.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Személyre szabás a PowerBI.com segítségével
+            - name: Személyre szabás a Power BI segítségével
               items:
-                - name: A PowerBI.com integrációján keresztül elérhető funkciók
+                - name: A Power BI integrációján keresztül elérhető funkciók
                   href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration.md?toc=/dynamics365/supply-chain/toc.json
-                - name: PowerBI.com tartalmának rögzítése
+                - name: Power BI-tartalom rögzítése
                   href: ../fin-ops-core/dev-itpro/analytics/pin-power-bi-reports.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Elemzési munkaterületek kiválasztása PowerBI.com felületéről
+                - name: Elemzési munkaterületek kiválasztása Power BI felületéről
                   href: ../fin-ops-core/dev-itpro/analytics/select-analytical-workspace.md?toc=/dynamics365/supply-chain/toc.json
             - name: Power BI-tartalom
               items:
@@ -773,7 +773,7 @@
               items:
                 - name: Képlet nyelve
                   href: ../fin-ops-core/dev-itpro/analytics/er-formula-language.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Funkciók
+                - name: Függvények
                   items:
                     - name: Dátum és idő
                       items:
@@ -839,9 +839,9 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffirstitem.md?toc=/dynamics365/supply-chain/toc.json
                         - name: OrderBy
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-orderby.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Sztornírozás
+                        - name: Reverse
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-reverse.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Felosztás
+                        - name: Split
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-split.md?toc=/dynamics365/supply-chain/toc.json
                         - name: SplitList
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-splitlist.md?toc=/dynamics365/supply-chain/toc.json
@@ -873,19 +873,19 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-mathematical.md?toc=/dynamics365/supply-chain/toc.json
                         - name: Abs
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-mathematical-abs.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Teljesítmény
+                        - name: Power
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-mathematical-power.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Kerekítés
+                        - name: Round
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-mathematical-round.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Lefelé kerekítés
+                        - name: RoundDown
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-mathematical-rounddown.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Felfelé kerekítés
+                        - name: RoundUp
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-mathematical-roundup.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Rekordok
                       items:
                         - name: Rekordfüggvények
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-record.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: ÜresRekord
+                        - name: EmptyRecord
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-record-emptyrecord.md?toc=/dynamics365/supply-chain/toc.json
                         - name: NullContainer
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-record-nullcontainer.md?toc=/dynamics365/supply-chain/toc.json
@@ -895,9 +895,9 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-text.md?toc=/dynamics365/supply-chain/toc.json
                         - name: Char
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-char.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Összekapcsolás
+                        - name: Concatenate
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-concatenate.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Formátum
+                        - name: Format
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-format.md?toc=/dynamics365/supply-chain/toc.json
                         - name: GetEnumValueByName
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-getenumvaluebyname.md?toc=/dynamics365/supply-chain/toc.json
@@ -1827,18 +1827,28 @@
                       href: pim/tasks/obsolete-product-variants.md
                     - name: Termékek kizárása az Alaptervezésből
                       href: pim/tasks/exclude-products-master-planning.md
-                - name: Kettős felhasználású áruk
-                  href: pim/dual-use.md
-                - name: Származási ország
-                  href: pim/country-of-origin.md
                 - name: Vonalkód létrehozása termékhez
                   href: pim/tasks/create-bar-code-product.md
-                - name: GTIN-kód megadása a termékhez
+                - name: Adja meg a GTIN-kódot a termékhez
                   href: pim/tasks/enter-gtin-code-product.md
                 - name: Termék kötegattribútumainak létrehozása
                   href: pim/tasks/create-batch-attributes-product.md
                 - name: Kép hozzáadása termékhez
                   href: pim/tasks/add-image-product.md
+                - name: Származási ország
+                  href: pim/country-of-origin.md
+                - name: Kettős felhasználású áruk
+                  href: pim/dual-use.md
+                - name: Veszélyes anyagok
+                  items:
+                    - name: Veszélyes anyagok áttekintése
+                      href: pim/hazmat-overview.md
+                    - name: Veszélyes anyagok beállítása
+                      href: pim/hazmat-setup.md
+                    - name: 'Termékekben, megrendelésekben, szállítmányokban és rakományokban lévő veszélyes anyagok'
+                      href: pim/hazmat-items.md
+                    - name: Veszélyes anyagokkal kapcsolatos lekérdezések és jelentések
+                      href: pim/hazmat-reports.md
                 - name: Termékinformációs GYIK fordítása
                   href: pim/translations-product-related-information.md
                 - name: Termék keresése rendelésbevitel során

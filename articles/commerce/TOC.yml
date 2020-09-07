@@ -68,6 +68,8 @@
                   href: ../fin-ops-core/dev-itpro/deployment/deploy-retail-onprem.md?toc=/dynamics365/commerce/toc.json
                 - name: A Finance + Operations (on-premises) megvásárlása
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/commerce/toc.json
+                - name: Commerce Data Exchange megvalósítási útmutatás
+                  href: dev-itpro/implementation-considerations-cdx.md
                 - name: 'Finance and Operations alkalmazások, amelyeket a 21Vianet működtet Kínában'
                   href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/commerce/toc.json
                 - name: Finance and Operations alkalmazások Franciaországban
@@ -178,7 +180,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/commerce/toc.json
                 - name: Egyéni mezők létrehozása és használata
                   href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/commerce/toc.json
-                - name: PowerApps alkalmazások beágyazása
+                - name: Microsoft Power Apps beágyazása
                   href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/commerce/toc.json
                 - name: Információk megtalálása keresésekkel
                   href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/commerce/toc.json
@@ -198,12 +200,18 @@
                   href: arch-auth-flow.md
                 - name: Dynamics 365 Commerce-összetevők verziószámozási követelményei
                   href: arch-component-versioning.md
-                - name: Commerce Scale Unit-architektúra
+                - name: Commerce Scale Unit architektúra
                   href: dev-itpro/retail-server-architecture.md
                 - name: Válasszon áruházi topológiát
                   href: dev-itpro/retail-in-store-topology.md
-                - name: Commerce Data Exchange és a kereskedelmi csatorna kommunikációja
-                  href: dev-itpro/define-retail-channel-communications-cdx.md
+                - name: Commerce Data Exchange
+                  items:
+                    - name: Commerce Data Exchange gyakorlati tanácsok
+                      href: dev-itpro/CDX-Best-Practices.md
+                    - name: Commerce Data Exchange és a kereskedelmi csatorna kommunikációi
+                      href: dev-itpro/define-retail-channel-communications-cdx.md
+                    - name: Commerce Data Exchange hibaelhárítás
+                      href: dev-itpro/CDX-Troubleshooting.md
                 - name: Modern POS-architektúra
                   href: dev-itpro/retail-modern-pos-architecture.md
                 - name: Online áruház közzétételi architektúrája
@@ -514,8 +522,10 @@
                       href: payinvoice.md
                     - name: Ismétlődő kifizetések megakadályozása
                       href: duplicate-payment-protection.md
-                    - name: Többcsatornás fizetések áttekintése
+                    - name: Többcsatornás kifizetések áttekintése
                       href: omni-channel-payments.md
+                    - name: Többcsatornás Commerce megrendelési kifizetések
+                      href: dev-itpro/commerce-payments.md
                     - name: Kifizetésekkel kapcsolatos GYIK
                       href: dev-itpro/payments-retail.md
                 - name: A szervezetéhez tartozó Bing Térképek kezelése
@@ -758,8 +768,6 @@
               href: disable-consistency-check-rule.md
             - name: Kiskereskedelmi áruházi tranzakciók szerkesztése és naplózása
               href: edit-audit-retail-transactions.md
-            - name: 'Kiskereskedelmi áruház kimutatásainak létrehozása, kiszámítása és feladása'
-              href: tasks/create-calculate-post-statement-retail-store.md
             - name: 'A rendelések folyamatos, apránkénti létrehozása a kiskereskedelmi áruház tranzakcióihoz'
               href: trickle-feed.md
             - name: 'Kiskereskedelmi áruház kimutatásainak létrehozása, kiszámítása és feladása'
@@ -1130,13 +1138,13 @@
               href: ../fin-ops-core/dev-itpro/analytics/bi-reporting-home-page.md?toc=/dynamics365/commerce/toc.json
             - name: Adathozzáférés és jelentéskészítés
               href: ../fin-ops-core/dev-itpro/analytics/information-access-reporting.md?toc=/dynamics365/commerce/toc.json
-            - name: Személyre szabás a PowerBI.com segítségével
+            - name: Személyre szabás a Power BI segítségével
               items:
-                - name: A PowerBI.com integrációján keresztül elérhető funkciók
+                - name: A Power BI integrációján keresztül elérhető funkciók
                   href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration.md?toc=/dynamics365/commerce/toc.json
-                - name: PowerBI.com tartalmának rögzítése
+                - name: Power BI-tartalom rögzítése
                   href: ../fin-ops-core/dev-itpro/analytics/pin-power-bi-reports.md?toc=/dynamics365/commerce/toc.json
-                - name: Elemzési munkaterületek kiválasztása PowerBI.com felületéről
+                - name: Elemzési munkaterületek kiválasztása Power BI felületéről
                   href: ../fin-ops-core/dev-itpro/analytics/select-analytical-workspace.md?toc=/dynamics365/commerce/toc.json
             - name: Power BI-tartalom
               items:
@@ -1188,7 +1196,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration-entity-store.md?toc=/dynamics365/commerce/toc.json
                 - name: Problémák megoldása az Entitástár karbantartása után
                   href: ../fin-ops-core/dev-itpro/analytics/entity-store-maintenance.md
-                - name: PowerBI.com-integráció konfigurálása
+                - name: A Power BI-integráció konfigurálása
                   href: ../fin-ops-core/dev-itpro/analytics/configure-power-bi-integration.md?toc=/dynamics365/commerce/toc.json
                 - name: Saját adatbázis használata
                   href: ../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/dynamics365/commerce/toc.json
@@ -1206,7 +1214,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/author-distribute-power-bi-reports.md?toc=/dynamics365/commerce/toc.json
                 - name: Elemzések hozzáadása munkaterületekhez Power BI Embedded használatával
                   href: ../fin-ops-core/dev-itpro/analytics/add-analytics-tab-workspaces.md?toc=/dynamics365/commerce/toc.json
-                - name: Elemzési munkaterületek és jelentések biztosításának támogatása Power BI Embedded használatával
+                - name: Elemzési munkaterületek és jelentések biztosításának segítése Power BI Embedded használatával
                   href: ../fin-ops-core/dev-itpro/analytics/secure-analytical-workspaces.md?toc=/dynamics365/commerce/toc.json
                 - name: Jelentési megoldások létrehozása
                   href: ../fin-ops-core/dev-itpro/analytics/create-nextgen-reporting-solutions.md?toc=/dynamics365/commerce/toc.json
@@ -1266,7 +1274,7 @@
               items:
                 - name: Képlet nyelve
                   href: ../fin-ops-core/dev-itpro/analytics/er-formula-language.md?toc=/dynamics365/commerce/toc.json
-                - name: Funkciók
+                - name: Függvények
                   items:
                     - name: Dátum és idő
                       items:
@@ -1366,19 +1374,19 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-mathematical.md?toc=/dynamics365/commerce/toc.json
                         - name: Abs
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-mathematical-abs.md?toc=/dynamics365/commerce/toc.json
-                        - name: Teljesítmény
+                        - name: Power
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-mathematical-power.md?toc=/dynamics365/commerce/toc.json
-                        - name: Kerekítés
+                        - name: Round
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-mathematical-round.md?toc=/dynamics365/commerce/toc.json
-                        - name: Lefelé kerekítés
+                        - name: RoundDown
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-mathematical-rounddown.md?toc=/dynamics365/commerce/toc.json
-                        - name: Felfelé kerekítés
+                        - name: RoundUp
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-mathematical-roundup.md?toc=/dynamics365/commerce/toc.json
                     - name: Rekordok
                       items:
                         - name: Rekordfüggvények
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-record.md?toc=/dynamics365/commerce/toc.json
-                        - name: ÜresRekord
+                        - name: EmptyRecord
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-record-emptyrecord.md?toc=/dynamics365/commerce/toc.json
                         - name: NullContainer
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-record-nullcontainer.md?toc=/dynamics365/commerce/toc.json
@@ -1388,9 +1396,9 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-text.md?toc=/dynamics365/commerce/toc.json
                         - name: Char
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-char.md?toc=/dynamics365/commerce/toc.json
-                        - name: Összekapcsolás
+                        - name: Concatenate
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-concatenate.md?toc=/dynamics365/commerce/toc.json
-                        - name: Formátum
+                        - name: Format
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-format.md?toc=/dynamics365/commerce/toc.json
                         - name: GetEnumValueByName
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-getenumvaluebyname.md?toc=/dynamics365/commerce/toc.json
@@ -2048,7 +2056,7 @@
                   items:
                     - name: Csomagok konfigurálása és telepítése online környezetbe
                       href: e-commerce-extensibility/package-deploy.md
-                    - name: SDK- és alapkönyvtár-frissítések
+                    - name: SDK- és áruház-kezdőcsomag frissítések
                       href: e-commerce-extensibility/sdk-updates.md
             - name: Retail szoftverfejlesztői készlet (SDK)
               items:
@@ -2184,8 +2192,10 @@
                   href: dev-itpro/end-to-end-payment-extension.md
                 - name: Fizetési csatlakozó és fizetési eszköz alkalmazása (tanulmány)
                   href: 'https://download.microsoft.com/download/e/2/7/e2735c65-1e66-4b8d-8a3c-e6ef3a319137/The Guide to Implementing Payment Connector and Payment Device_update.pdf'
-                - name: Fizetési csatlakozók telepítése
+                - name: Fizetési összekötők telepítése
                   href: dev-itpro/deploy-payment-connector.md
+                - name: A háttérrendszer-számlázás növekményes rögzítése
+                  href: dev-itpro/incremental-capture.md
                 - name: Egyéni honosított hibaüzenetek létrehozása a fizetési terminálokhoz tartozó bővítményekhez
                   href: dev-itpro/payment-custom-error-messages.md
                 - name: Windows-telepítők létrehozása fizetési összekötőkhöz
