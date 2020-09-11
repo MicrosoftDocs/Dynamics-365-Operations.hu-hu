@@ -3,7 +3,7 @@ title: Alkalmazotti és vezetői önkiszolgálás áttekintése
 description: Ez a témakör áttekintést nyújt az alkalmazottak és a vezetők önkiszolgáló munkaterületéről.
 author: andreabichsel
 manager: AnnBe
-ms.date: 03/19/2020
+ms.date: 08/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-03-19
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5934b6a1a1a8aa30aa18d9be26845c84acfa2fd0
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: fd642d0976c607b47a7874d0771e441153272ec9
+ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3429796"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3712232"
 ---
 # <a name="employee-and-manager-self-service-overview"></a>Alkalmazotti és vezetői önkiszolgálás áttekintése
 
@@ -32,6 +32,25 @@ Ez a témakör áttekintést nyújt az alkalmazottak és a vezetők önkiszolgá
 ## <a name="edit-personal-details"></a>Személyi részletek szerkesztése
 
 Ha bármilyen személyes információt kell hozzáadnia vagy módosítania, lásd: [Személyes adatok szerkesztése](hr-employee-manager-self-service-edit-personal-information.md).
+
+## <a name="user-not-assigned-to-a-worker-record"></a>Dolgozói rekordhoz nem rendelt felhasználó
+
+Ha a felhasználóját nem rendelte hozzá egy **Dolgozó** rekordhoz a **felhasználók** lapon, a következő üzenet jelenik meg:
+
+**A felhasználóazonosítója nincs társítva az alkalmazotti rekordjához a rendszerben. Ebben a helyzetben nem fogja tudni megtekinteni vagy módosítani az adatait. Segítségért forduljon a feletteséhez vagy a támogatási csapathoz.**
+
+Ha egy felhasználót egy **Dolgozó** rekordhoz szeretne társítani, navigáljon a **Felhasználók** helyre és válassza ki a felhasználót. Válassza a **Szerkesztés** parancsot , adja hozzá a megfelelő dolgozót a képernyő **Személy** mezőjében, majd válassza a **Mentés** parancsot. Most már hozzáférhet az Alkalmazotti önkiszolgáló rendszerhez.
+
+## <a name="security-requirements-for-employee-and-manager-self-service"></a>Az alkalmazotti és a vezetői önkiszolgáló rendszer követelményei
+
+Az alkalmazotti és a vezetői önkiszolgáló rendszer két biztonsági szerepkört kér:
+
+- Az alkalmazottaknak szüksége van az Alkalmazott szerepkörre.
+- A vezetőiknek mind az Alkalmazott, mind a Vezető szerepkör szükséges.
+
+>[!NOTE]
+>Az alkalmazotti és vezetői önkiszolgáló rendszerhez egyéni szerepkörök is használhatók, feltéve, hogy hozzáférést kaptak az Alkalmazott és a Vezető munkaterületekhez.<br>
+>A vezetők hozzáférése az alkalmazotti adatkhoz Emberi erőforrások modulban megadott aktuális sorszerkezet alapján van meghatározva.
 
 ## <a name="employee-self-service"></a>Alkalmazotti önkiszolgáló rendszer
 

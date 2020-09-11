@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dcf1b755959c7ae25928e3f44e988f800027786a
-ms.sourcegitcommit: fb8ad8e2b142441a6530b364f3258bbcc0c724d2
+ms.openlocfilehash: 6e51d9a1d68c48391a223fe48f396c63c206580e
+ms.sourcegitcommit: 41e165482b9bff4175c0e3b224dbeead13461956
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3201043"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "3687958"
 ---
 # <a name="list-of-er-functions-in-the-list-category"></a>A lista kategóriába tartozó ER-függvények listája
 
@@ -46,6 +46,7 @@ Az elektronikus jelentés (ER) listafüggvényeivel kezelhetők a *Rekordlista* 
 | [Index](er-functions-list-index.md)                       | Ez a függvény egy *Tároló (rekord)* értéket ad vissza, amely a megadott numerikus index használatával került kiválasztásra a megadott listában. Ha az index kívül esik a listán megadott rekordok tartományán, akkor a függvény kivételt dob. |
 | [IsEmpty](er-functions-list-isempty.md)                   | Ez a függvény **IGAZ** *Logikai* értéket ad eredményül, ha a megadott lista nem tartalmaz rekordokat. Ellenkező esetben **HAMIS** *logikai* eredményt ad. |
 | [Lista](er-functions-list-list.md)                         | Ez a függvény egy *Rekordlista* értéket ad vissza, amely a megadott argumentumokból létrehozott új listából áll.|
+| [ListDistinct](er-functions-list-listdistinct.md)         | Ez a funkció kiszámítja a megadott kifejezéseket, mint egy választót minden rekordra a megadott listában. Ez visszaállít egy új *Rekordlista* értéket, amely egyetlen rekordot tartalmaz minden egyedi választóértékhez.|
 | [ListJoin](er-functions-list-listjoin.md)                 | Ez a függvény egy *Rekordlista* értéket ad vissza, amely a megadott argumentumokból létrehozott új listát jeleníti meg.|
 | [ListOfFields](er-functions-list-listoffields.md)         | Ez a függvény egy *Rekordlista* értéket ad vissza, amely a *Felsorolás* vagy a *Tároló (rekord)* típus megadott argumentumának szerkezete alapján jön létre. |
 | [ListOfFirstItem](er-functions-list-listoffirstitem.md)   | Ez a függvény egy *Rekordlista* értéket ad vissza, amely csak a megadott lista első rekordjából áll.|

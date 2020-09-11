@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: conradv
 ms.search.validFrom: 2019-10-14
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 5006f06d90ddcc314a51878e9e21337de7d493e7
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 079c8d23250368c92e5d79f0e2624f8340db2077
+ms.sourcegitcommit: c009ec75f53872272f11c92a1ce81a391e3845a2
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3208462"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "3699536"
 ---
 # <a name="hazardous-materials"></a>Veszélyes anyagok
 
@@ -35,7 +35,7 @@ A veszélyes anyagokkal kapcsolatos információk a Termékinformáció-kezelés
 A veszélyes áruknak minősített anyagok szállításakor a szállítmányoknak további papírmunkát kell tartalmazniuk. A veszélyes anyagokra vonatkozó funkciók segítségével az ügyfelek tárolhatják az osztályozási adatokat, és azt a kiadott elemekkel összekapcsolhatják. Ezt az információt ezután felhasználhatja a szállítási dokumentáció előkészítésére.
 
 > [!IMPORTANT]
-> A veszélyes áruk szállításának kezelése céljából a Microsoft Dynamics 365 Supply Chain Management lehetővé teszi a termékekkel kapcsolatos további hivatkozási adatok beállítását. További, szállítással kapcsolatos dokumentumokat is be lehet állítani. A rendszer azonban nem felel meg automatikusan az országa vagy a régiója szabályzatának. Ehelyett egy olyan eszköz, amely segítséget nyújt az általános programjához.
+> A Microsoft Dynamics 365 Supply Chain Management veszélyes anyagokkal kapcsolatos szolgáltatásai egy olyan, hasznos termékinformációk-mezőből és a kapcsolódó funkciókból álló gyűjteményt kínál, amelyek segítik a veszélyes termékekkel kapcsolatos adatok rögzítését és hivatkozását. Ezek a szolgáltatások segítenek a szállítási dokumentumok tervezésében és kinyomtatásában is, amelyek tartalmazzák a szállítás alatt álló veszélyes anyagokra vonatkozó adatokat. A rendszer azonban nem biztosítja automatikusan a megfelelést az országa vagy a régiója vonatkozó jogszabályainak. Noha ezeknek az eszközöknek az a célja, hogy segítsenek megfelelni az általános szabályoknak, önmagában nem elégségesek, és nem is garantáljuk ezt. A szervezet felelős azért, hogy az összes vonatkozó előírás tudatában legyen, és minden szükséges lépést megtegyen azok teljesítéséhez.
 
 Ez a funkció csak akkor használható, ha végrehajtotta az alábbi beállítást:
 

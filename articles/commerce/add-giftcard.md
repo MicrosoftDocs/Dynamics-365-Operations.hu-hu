@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: a8428963e105e422dcd048863c17df0926a409ac
-ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
+ms.openlocfilehash: 41f808d671bf5e7425390484ea30470e044899d8
+ms.sourcegitcommit: ae0843763a8b6b232bb71db326fab28605ac6c53
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "3411112"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "3661242"
 ---
 # <a name="gift-card-module"></a>Ajándékutalvány-modul
 
@@ -63,8 +63,18 @@ Az ajándékutalvány-modulnak a pénztár lapra történő hozzáadásával és
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[Kezdő csomag áttekintése](starter-kit-overview.md)
+[Kosármodul](add-cart-module.md)
+
+[Kosárikon modul](cart-icon-module.md)
 
 [Fizetésmodul](add-checkout-module.md)
+
+[Fizetési modul](payment-module.md)
+
+[Szállítási cím modul](ship-address-module.md)
+
+[Szállítási lehetőségek modul](delivery-options-module.md)
+
+[Rendelési részletek modul](order-confirmation-module.md)
 
 [Támogatás külső ajándékutalványokhoz](./dev-itpro/gift-card.md)

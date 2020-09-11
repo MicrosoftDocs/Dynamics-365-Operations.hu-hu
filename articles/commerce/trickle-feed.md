@@ -3,7 +3,7 @@ title: A rendelések folyamatos, apránkénti létrehozása a kiskereskedelmi á
 description: Ez a témakör bemutatja az áruházi tranzakciók folyamatos, apránkénti rendelés-létrehozási folyamatát a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: josaw1
 manager: AnnBe
-ms.date: 10/14/2019
+ms.date: 06/08/2020
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,20 +18,20 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 7d5812893edff24a60a0e2eb3607701ac47a8a78
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: 6e097ead7cacb3f71452323656546a4be661457f
+ms.sourcegitcommit: 7061a93f9f2b54aec4bc4bf0cc92691e86d383a6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057157"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3710283"
 ---
-# <a name="trickle-feed-based-order-creation-for-retail-store-transactions-public-preview"></a>A rendelések folyamatos, apránkénti létrehozása a kiskereskedelmi áruház tranzakcióihoz (Nyilvános előzetes verzió)
+# <a name="trickle-feed-based-order-creation-for-retail-store-transactions"></a>A rendelések folyamatos, apránkénti létrehozása a kiskereskedelmi áruház tranzakcióihoz
 
 [!include [banner](includes/banner.md)]
 
 A Dynamics 365 Retail 10.0.4-es és korábbi verzióiban a kimutatások feladása nap végi műveletnek tekinthető, ahol az összes tranzakciót a nap végén számolják el a könyvekben. A nagy méretű tranzakciókat ezután korlátozott idő alatt kell feldolgozni, amely bizonyos esetekben terhelési és zárolási, valamint kimutatásfeladási hibákat okozhat. A kiskereskedők emellett nap közben nem tudják elszámolni bevételeiket és kifizetéseiket a könyvelésben.
 
-A rendelések folyamatos, apránkénti létrehozásának nyilvános előzetes verziójának köszönhetően, amelyet a Retail 10.0.5-ös verziójában vezettünk be, a rendszer napközben folyamatosan feldolgozza a tranzakciókat, és csak a fizetőeszközök pénzügyi egyeztetése és az egyéb készpénzkezelési tranzakciók feldolgozása történik a nap végén. A funkció a nap folyamán felosztja az értékesítési rendelések, számlák és fizetések létrehozásának terhét, így jobb észlelt teljesítményt képes nyújtani, és lehetővé teszi a könyvelésben a bevételek és kifizetések szinte valós idejű elszámolását. 
+A rendelések folyamatos, apránkénti létrehozásának köszönhetően, amelyet a Retail 10.0.5-ös verziójában vezettünk be, a rendszer napközben folyamatosan feldolgozza a tranzakciókat, és csak a fizetőeszközök pénzügyi egyeztetése és az egyéb készpénzkezelési tranzakciók feldolgozása történik a nap végén. A funkció a nap folyamán felosztja az értékesítési rendelések, számlák és fizetések létrehozásának terhét, így jobb észlelt teljesítményt képes nyújtani, és lehetővé teszi a könyvelésben a bevételek és kifizetések szinte valós idejű elszámolását. 
 
 
 ## <a name="how-to-use-trickle-feed-based-posting"></a>A folyamatos, apránkénti feladás használata

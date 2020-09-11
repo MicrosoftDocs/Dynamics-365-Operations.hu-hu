@@ -3,7 +3,7 @@ title: Vevői rendelések a Modern POS (MPOS) esetében
 description: Ez a témakör a vevői rendelések a Modern POS (MPOS) modulban történő kezelését ismerteti. A vevői rendelések speciális rendelések néven is ismertek. A témakör a kapcsolódó paramétereket és tranzakciófolyamatokat is tárgyalja.
 author: josaw1
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: b8ea8339c2ad25ceed2415eb5ccf5e2048c612fa
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: a6fdc7b8d7ad65c9e4bf1d3b932b62918dea6e77
+ms.sourcegitcommit: 7061a93f9f2b54aec4bc4bf0cc92691e86d383a6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3022739"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3710259"
 ---
 # <a name="customer-orders-in-modern-pos-mpos"></a>Vevői rendelések a Modern POS (MPOS) esetében
 
@@ -53,6 +53,11 @@ A kiskereskedők a készlethiány által okozott elmaradt értékesítések mini
 
     - A költségek alkalmazására az értékesítési rendelés fejlécének szintjén kerül sor, és amikor egy termékkör bizonyos mennyiségét visszaküldik, a szállítási költségek a termékekhez engedélyezett maximális visszatérítése és a mennyiség nem határozható meg úgy, hogy az minden vevő számára megfelelő legyen.
     - Minden szállítási példánynál felmerülnek szállítási költségek. Ha egy vevő többször küld vissza termékeket, és a kiskereskedő irányelve kimondja, hogy a visszatérítési szállítási költségek költségét a kiskereskedő viseli, a visszatérítési szállítási költségek összege magasabb lesz a tényleges szállítási költségeknél.
+    
+
+## <a name="disable-option-to-pay-later"></a>Későbbi fizetés lehetőségének letiltása
+
+A Commerce 10.0.12 és későbbi verzióiban a kereskedők eltávolíthatja a lehetőséget, hogy később fizessenek a vevői rendelés létrehozásakor a pénztárban. Ha le szeretné tiltani a beállítást, nyissa meg a csatorna **Funkcióprofilját**, ahol a későbbi fizetés nincs engedélyezve, majd válassza a **Szerkesztés** parancsot. Az **Általános** lapon válassza ki azt a legördülő menüt a **Fizetés szükséges a teljesítéshez** lehetőséghez. Ha az utólagos fizetést nem szeretné engedélyezni a pénztárban, akkor válassza a **Kártya szükséges**, majd a **Mentés** lehetőséget. Futtassa a **1070** elosztási ütemezést a módosítás szinkronizálásához a csatornaadatbázisba. 
 
 ## <a name="transaction-flow-for-customer-orders"></a>Tranzakció folyamata vevői rendeléseknél
 

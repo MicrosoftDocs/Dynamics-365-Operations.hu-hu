@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f045cb7ab9f5e7aa4259f29e1b026f110425c236
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 43c16c5d0de91bf1f433f4fde36e7d13775f44a0
+ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3429059"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3712164"
 ---
 # <a name="accrue-leave-and-absence-plans"></a>Szabadság- és távolléti tervek halmozódása
 
@@ -37,7 +37,9 @@ Elhatárolhatja a szabadságot és távollétet a Dynamics 365 Human Resources a
 
 3. Megjelenik a **Szabadság- és távolléti tervek elhatárolása** párbeszédpanel. Az **Elhatárolás kezdete**részben válassza a **Mai dátum** vagy az **Egyéni dátum** lehetőséget, és adjon meg egy egyéni dátumot.
 
-4. Ha a háttérben szeretné futtatni az elhatárolási folyamatot, válassza a **Futtatás a háttérben** parancsot, majd hajtsa végre a következő műveleteket:
+4. Ha minden vállalatnál szeretné futtatni az elhatárolást, válassza az **Összes vállalat** lehetőséget. Ha egyetlen szabadsági tervhez szeretné feldolgozni az elhatárolást, válassza a **Nem** lehetőséget az **Összes konstrukció** alatt, majd válasszon egy **Szabadságkonstrukciót**. Ha az összes vállalatot választja, akkor nem választhat ki egyéni szabadságtervet. 
+
+5. Ha a háttérben szeretné futtatni az elhatárolási folyamatot, válassza a **Futtatás a háttérben** parancsot, majd hajtsa végre a következő műveleteket:
 
    1. Információk megadása az elhatárolási folyamathoz.
 
@@ -55,7 +57,9 @@ Elhatárolhatja a szabadságot és távollétet a Dynamics 365 Human Resources a
 
 3. Megjelenik a **Szabadság- és távolléti tervek elhatárolása** párbeszédpanel. Az **Elhatárolás kezdete**részben válassza a **Mai dátum** vagy az **Egyéni dátum** lehetőséget, és adjon meg egy egyéni dátumot.
 
-4. Ha a háttérben szeretné futtatni az elhatárolási folyamatot, válassza a **Futtatás a háttérben** parancsot, majd hajtsa végre a következő műveleteket:
+4. Ha minden vállalatnál szeretné futtatni az elhatárolást, válassza az **Összes vállalat** lehetőséget. Ha egyetlen szabadsági tervhez szeretné feldolgozni az elhatárolást, válassza a **Nem** lehetőséget az **Összes konstrukció** alatt, majd válasszon egy **Szabadságkonstrukciót**. Ha az összes vállalatot választja, akkor nem választhat ki egyéni szabadságtervet. 
+
+5. Ha a háttérben szeretné futtatni az elhatárolási folyamatot, válassza a **Futtatás a háttérben** parancsot, majd hajtsa végre a következő műveleteket:
 
    1. Információk megadása az elhatárolási folyamathoz.
 
@@ -102,18 +106,6 @@ Törli az adott tervhez és dátumtartományhoz tartozó elhatárolási rekordok
 1. A **Szabadság és távollét** oldalon válassza a **Hivatkozások** lapot.
 
 2. A **Szabadság kezelése** alatt válassza a **Szabadságelhatárolás auditálásának törlése** lehetőséget.
-
-## <a name="configure-preview-features"></a>Előzetes funkciók konfigurálása
-
-[!include [banner](includes/preview-feature-leave-absence.md)]
-
-Ha engedélyezte a szabadság és a távollét előzetes funkcióit, akkor konfigurálnia kell azok beállításait.
-
-### <a name="accrue-leave-per-company-or-per-leave-plan"></a>Szabadság elhatárolása vállalatonként vagy szabadság tervenként
-
-A távolléti és szabadságtervek elhatárolásakor választhatja az elhatárolás elvégzését az összes vállalatra. Ha az összes vállalatot választja, akkor nem választhat ki egyéni szabadságterveket. Ha úgy dönt, hogy nem végez elhatárolást minden vállalatra, akkor elvégezheti az elhatárolást egy adott szabadságtervre. 
-
-Ezek a beállítások csak elérhetők, ha az összes alkalmazott vagy egyes alkalmazottak esetében végez elhatárolást. 
 
 ## <a name="see-also"></a>Lásd még
 

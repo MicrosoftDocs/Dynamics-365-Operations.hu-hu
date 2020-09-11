@@ -1,7 +1,7 @@
 ---
 title: Munkafolyamat-tulajdonságok konfigurálása
 description: Ez a témakör bemutatja, hogyan kell konfigurálni a munkafolyamat különböző tulajdonságait.
-author: sericks007
+author: ChrisGarty
 manager: AnnBe
 ms.date: 07/07/2020
 ms.topic: article
@@ -14,15 +14,15 @@ ms.search.scope: Core, Operations
 ms.custom: 196083
 ms.assetid: 192b7a98-7d04-4c7a-a986-29d797a8a837
 ms.search.region: Global
-ms.author: donaldc
+ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 268448049955170b8eb9e64cbd50416565a041b1
-ms.sourcegitcommit: 561d06c2a74602dfaa40334d8afac5053aebc055
+ms.openlocfilehash: 4d01a784b0f0cbfce30f1197278f015b236ef0b8
+ms.sourcegitcommit: e55efd2f62bf60f678108c09ad4701a76b20cc68
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "3541109"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "3698144"
 ---
 # <a name="configure-workflow-properties"></a>Munkafolyamat-tulajdonságok konfigurálása
 
@@ -81,8 +81,8 @@ Több, ugyanazon a munkafolyamat-típuson alapuló munkafolyamatot is megadhat. 
 
 Például, ha létrehoz egy beszerzési igénylési munkafolyamatot minden működési országhoz/régióhoz, például a beszerzési igénylés Beszerzési igénylések Dánia vagy Beszerzési igénylések Spanyolország munkafolyamatot a következő feltételekkel:
 
-- A Beszerzési igénylés Dánia akkor használandó, amikor: ország/terület = DK.
-- A Beszerzési igénylés Spanyolország akkor használandó, amikor: az ország/terület = ES.
+- A Beszerzési igénylés Dánia akkor használandó, amikor: ország/régió = DK.
+- A Beszerzési igénylés Spanyolország akkor használandó, amikor: az ország/régió = ES.
 
 A következő lépések segítségével megadhatja, hogy mikor szeretné használni az éppen konfigurált munkafolyamatot.
 

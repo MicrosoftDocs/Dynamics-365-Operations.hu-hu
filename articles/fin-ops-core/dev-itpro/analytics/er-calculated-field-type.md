@@ -3,7 +3,7 @@ title: ER adatforrások paraméterezett hívásainak támogatása a Számított 
 description: Ez a témakör azt mutatja be, hogyan kell használni a Számított mezőtípust ER-adatforrásokhoz.
 author: NickSelin
 manager: AnnBe
-ms.date: 09/09/2019
+ms.date: 08/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3f331401f8d191243f72961333e4f1dbe84d0be5
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 02d53f4326d8f31abf6ec7404575728837954bef
+ms.sourcegitcommit: c9baf9a3b4552f0317b5ec87d252834f52df1b98
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771329"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "3665610"
 ---
 # <a name="support-parameterized-calls-of-er-data-sources-of-the-calculated-field-type"></a>ER adatforrások paraméterezett hívásainak támogatása a Számított mezőtípusban
 
@@ -39,20 +39,20 @@ A jelen témakörben szereplő példák elvégzéséhez a következő hozzáfér
     - Elektronikus jelentések funkcióival foglalkozó konzulens
     - Rendszergazda
 
-- Hozzáférés a Regulatory Configuration Service (RCS) szolgáltatáshoz, amelyet ugyanarra a bérlőre telepítettek, mint a Finance and Operations szolgáltatást, a következő szerepkörök egyikéhez:
+- A Regulatory Configuration Services (RCS) szolgáltatáshoz való hozzáférés, ami ugyanattól a bérlőtől került szolgáltatásra, mint Finance and Operations Operations egyre vonatkozik az alábbi lépések közül:
 
     - Elektronikus jelentések fejlesztője
     - Elektronikus jelentések funkcióival foglalkozó konzulens
     - Rendszergazda
 
-A [Microsoft letöltőközpontból](https://go.microsoft.com/fwlink/?linkid=874684)töltse le a tömörített fájlt: **ER adatforrások paraméterezet hívásainak támogatása a Számított mezőtípusban**. A következő ER-konfigurációkat tartalmazza, amelyeket helyileg kell kibontani és tárolni.
+A következő fájlokat is le kell töltenie és helyben tárolnia.
 
 | **Tartalom**                           | **Fájlnév**                                        |
 |---------------------------------------|------------------------------------------------------|
-| Minta ER-adatmodell konfigurációja    | Model to learn parameterized calls.version.1.xml     |
-| Minta ER-metaadat konfigurációja      | Metadata to learn parameterized calls.version.1.xml  |
-| Minta ER-adatmodell leképezési konfigurációja | Mapping to learn parameterized calls.version.1.1.xml |
-| Minta ER-formátum konfigurációja        | Format to learn parameterized calls.version.1.1.xml  |
+| Minta ER-adatmodell konfigurációja    | [Model to learn parameterized calls.version.1.xml](https://mbs.microsoft.com/customersource/global/AX/downloads/hot-fixes/365optelecrepeg)     |
+| Minta ER-metaadat konfigurációja      | [Metadata to learn parameterized calls.version.1.xml](https://mbs.microsoft.com/customersource/global/AX/downloads/hot-fixes/365optelecrepeg)  |
+| Minta ER-adatmodell leképezési konfigurációja | [Mapping to learn parameterized calls.version.1.1.xml](https://mbs.microsoft.com/customersource/global/AX/downloads/hot-fixes/365optelecrepeg) |
+| Minta ER-formátum konfigurációja        | [Format to learn parameterized calls.version.1.1.xml](https://mbs.microsoft.com/customersource/global/AX/downloads/hot-fixes/365optelecrepeg)  |
 
 ## <a name="sign-in-to-your-rcs-instance"></a>Jelentkezzen be a RCS-példányba
 Ebben a példában létrehozzuk egy konfigurációt a Litware, Inc. mintavállalatra vonatkozóan. A lépések végrehajtásához először a következő eljárás lépéseit kell végrehajtani az RCS-ben: [Konfigurációszolgáltatók létrehozása, és megjelölésük aktívként](tasks/er-configuration-provider-mark-it-active-2016-11.md):
@@ -87,7 +87,7 @@ Ebben a példában létrehozzuk egy konfigurációt a Litware, Inc. mintavállal
             - Adóértékek összege.
             - Az alkalmazott adómérték minimális értéke.
 
-    Az ebben a konfigurációban szereplő modell-hozzárendelés az alapadatok modellt alkalmazza az ehhez a modellhez létrehozott, valamint a Finance and Operations megoldásban végrehajtott összes ER-formátum esetében. Ennek eredményeképpen az **Adó** és **Gr** -adatforrások tartalma ER-formátumoknak, például absztrakt adatforrásoknak van kitéve.
+    A modell-leképezés ebben a konfigurációban implementálása az alap adatmodellt bármely ER formátumhoz, amely ehhez a modellhez lett készítve és a Finance and Operations által lett végrehajtva. Ennek eredményeképpen az **Adó** és **Gr** -adatforrások tartalma ER-formátumoknak, például absztrakt adatforrásoknak van kitéve.
 
     ![Modell-hozzárendelés tervező lapja au Adó és Gr adatforrásokat jeleníti meg.](media/er-calculated-field-type-01.png)
 

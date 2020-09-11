@@ -1,6 +1,6 @@
 ---
 title: Vásárlásmező modul
-description: Ez a témakör a vásárlásmező moduljaival foglalkozik, és bemutatja, hogy hogyan lehet őket hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
+description: Ez a témakör ismerteti a Vásárlásmező modulok működését és bemutatja, hogyan tudjuk hozzáadni azokat az egyes webhelyekhez, a Dynamics 365 Commerce segítségével.
 author: anupamar-ms
 manager: annbe
 ms.date: 07/31/2020
@@ -17,35 +17,35 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 9780aabbac6d01d41dae526c7c06139eba07de4e
-ms.sourcegitcommit: 074fe7e77feb795148c3daf2e6ccbb8a88679343
+ms.openlocfilehash: 3fe5c1eb5808ef778aeda29442fa884556671296
+ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "3645339"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "3686670"
 ---
 # <a name="buy-box-module"></a>Vásárlásmező modul
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-Ez a témakör a vásárlásmező moduljaival foglalkozik, és bemutatja, hogy hogyan lehet őket hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
+Ez a témakör ismerteti a Vásárlási mező-modulok működését és bemutatja, hogyan tudjuk hozzáadni azokat az egyes webhelyekhez, a Dynamics 365 Commerce segítségével.
 
-## <a name="overview"></a>Áttekintés
+## <a name="overview"></a>Összegzés
 
-A *vásárlásmező* kifejezés általában a termék részletes lapjának azon területére utal, amely „görgetés nélkül látható”, és a termék megvásárlásához szükséges legfontosabb adat mindegyikét tartalmazza. (A „görgetés nélkül látható” terület a lap első betöltésekor jelenik meg, így a felhasználóknak nem kell legörgetni, hogy lássák azt.)
+A *Vásárlási mező* kifejezés általában a termék adatlapjának azon mezőjére utal, mely a „honlap felső részén" található, és a termék megvásárlásához szükséges legfontosabb információkat szolgáltatja. (A „honlap felső részén" alatt az a terület értendő, amely a honlap betöltésekor elsőként látható, azaz a felhasználóknak nem szükséges lejjebb görgetniük, hogy láthassák.)
 
-A vásárlásmező egy speciális tároló, amely a termék részletes lapjának vásárlásmező részén látható összes modult tárolja.
+A vásárlási mező-modul egy speciális tároló, amely arra használatos, hogy összekapcsolja az összes modult, amely a vásárlási mező területén jelenik meg a termék adatlapján.
 
-A termék részletes lapjának URL-címe tartalmazza a termékazonosítót. A vásárlásmező modul megjelenítéséhez szükséges összes adat ebből a termékazonosítóból származik. Ha nincs megadva termékazonosító, akkor a program nem jeleníti meg megfelelően a vásárlásmező modult a lapon. Ezért a vásárlásmező modul csak a termék környezetét tartalmazó lapokon használható. Ha azt szeretné, hogy egy olyan oldalon használhassa, amely nem rendelkezik a termék környezetével (például egy Kezdőlap vagy egy marketinges lapon), további testreszabásokat kell végérehajtania.
+A termék adatlapjának URL-je tartalmazza a termékazonosítót. Minden információ, ami a vásárlási mező-modul használatához szükséges, ebből a termékazonosítóból származik. Ha nincs megadva termékazonosító, akkor a vásárlási mező-modul nem fog megfelelően működni a honlapon. Ezért a vásárlási mező-modul csak olyan oldalakon használható, melyek tartalmazzák a termék részletes adatait. Hogy olyan oldalon hasznáhassa, amely nem tartalmazza a termék részletes adatait (pl. egy honlap főoldalán, vagy egy marketing weboldalon), további beállítások szükségesek.
 
-A következő kép egy termékrészletek oldalon használt vásárlásmező modul egy példáját jeleníti meg.
+A következő képen egy egy vásárlási mező-modul látható, egy termék adatlapján.
 
-![Példa egy vásárlásmező modulra](./media/ecommerce-pdp-buybox.PNG)
+![Egy példa egy vásárlásmező modulra](./media/ecommerce-pdp-buybox.PNG)
 
-## <a name="buy-box-module-properties-and-slots"></a>A vásárlásmező modul tulajdonságai és helyei 
+## <a name="buy-box-module-properties-and-slots"></a>A vásárlási mező-modul részletei és helyei 
 
-A termék részletes lapján a vásárlásmező két részre van osztva: a bal oldalon levő médiaterületre és a jobb oldali tartalomterületre. Alapértelmezés szerint a médiarégió oszlopainak szélessége a tartalmi terület oszlopainak szélességéhez képest 2:1. Mobileszközökön a két terület egymásra van halmozva, így az egyik terület a másik terület alatt jelenik meg. A témák segítségével testreszabhatja az oszlopok szélességét és a halmozási sorrendet.
+A termék adatlapján a vásárlásmező két részre van osztva: a bal oldalon levő médiaterületre és a jobb oldali tartalomterületre. Alapértelmezés szerint a médiaterület oszlopainak szélességének aranya 2:1 a tartalomterület oszlopainak szélességéhez képest. Mobileszközökön a két terület egymásra van halmozva, így az egyik terület a másik terület alatt jelenik meg. A témák segítségével testreszabhatja az oszlopok szélességét és a halmozási sorrendet.
 
 A vásárlásmező modul a termék címét, leírását, árát és értékeléseit jeleníti meg. Ezenkívül a vevők a különböző termékattribútumokkal rendelkező termékváltozatokat is választhatnak, például a méret, a stílus és a szín. Egy termékváltozat kiválasztásakor a program frissíti a vásárlásmezőbe tartozó egyéb tulajdonságokat (például a termék leírását és a képeket) a változat adatainak megjelenítéséhez. 
 
@@ -61,7 +61,7 @@ A témák segítségével eltávolíthatja vagy megváltoztathatja a vásárlás
 
 ## <a name="modules-that-can-be-used-in-a-buy-box-module"></a>A vásárlásmező modulban használható modulok
 
-- **Médiatár** – Ez a modul a termék képeinek bemutatására szolgál a termék részletes lapján. A modullal kapcsolatos további tudnivalókat lásd: [Médiatár modul](mediagallery-module.md).
+- **Médiatár** – Ez a modul a termék képeinek bemutatására szolgál a termék részletes lapján. A modullal kapcsolatos további tudnivalókat lásd: [Médiatár modul](media-gallery-module.md).
 - **Áruházválasztó** – Ez a modul felsorolja azokat a közeli áruházakat, ahol a cikkek elérhetők és felvehetők. Ez lehetővé teszi a felhasználók számára, hogy a közelben levő üzleteket megtalálják. A modullal kapcsolatos további tudnivalókat lásd: [Áruházválasztó modul](store-selector.md).
 
 ## <a name="buy-box-module-settings"></a>Vásárlásmező modul beállításai
@@ -84,8 +84,8 @@ A vásárlásmező-modul a termék adatait a Commerce Scale Unit alkalmazásprog
 
 A vásárlásmező modul új oldalra való felvételéhez és a kötelező tulajdonságok beállításához hajtsa végre az alábbi lépéseket.
 
-1. Lépjen az **Oldaltöredékek** pontra, majd válassza az **Új** lehetőséget új töredék létrehozásához.
-1. Az **Új oldaltöredék** párbeszédablakban válassza ki a **Vásárlásmező** modult.
+1. Lépjen a **Töredékek** pontra, és válassza az **Új** lehetőséget új töredék létrehozásához.
+1. Az **Új oldaltöredék** párbeszédpanelen válassza ki a **Vásárlásmező** modult.
 1. Az **Oldaltöredék neve** pontban adja meg a **Vásárlásmező-töredék** nevét, majd válassza az **OK** lehetőséget.
 1. Válassza ki a három pont (**...**) elemet a **Médiagaléria** helyén, amely tartalmazza a váráslásmező modult, majd válassza a **Modul hozzáadása** lehetőséget.
 1. A **Modul hozzáadása** párbeszédpanelen válassza ki a **Médiagaléria** modult, majd kattintson az **OK** gombra.
@@ -97,12 +97,12 @@ A vásárlásmező modul új oldalra való felvételéhez és a kötelező tulaj
 1. A **Törzs** helyben válassza a három pont (**…**) gombot, majd válassza az **Modul hozzáadása** elemet.
 1. A **Modul hozzáadása** párbeszédpanelen válassza ki az **Alapértelmezett oldal** modult, majd kattintson az **OK** gombra.
 1. Az alapértelmezett lap **Fő** helyén válassza ki a három pont (**…**) gombot, majd válassza a **Oldaltöredék hozzáadása** elemet.
-1. Az **Oldaltöredék kiválasztása** párbeszédpanelen válassza ki a **Vásárlásmező töredék** töredékét, amelyet korábban hozott létre majd kattintson az **OK** gombra.
+1. Az **Oldaltöredék kiválasztása** párbeszédpanelen válassza ki a **Vásárlásmező töredék** töredékét, amelyet korábban hozott létre ezután kattintson az **OK** gombra.
 1. Válassza a **Mentés** elemet, válassza a **Szerkesztés befejezése** parancsot a sablon ellenőrzéséhez, majd a **Közzététel** elemet a közzétételhez.
 1. Lépjen az **Oldalak** pontra, majd válassza az **Új** lehetőséget új oldal létrehozásához.
 1. A **Sablon kiválasztása** párbeszédpanelen válassza ki a **PDP-sablon** sablonját. Az **Oldal neve** alatta adja meg a **PDP-oldalt**, majd kattintson az **OK** gombra.
 1. Az új oldal **Fő** helyén válassza ki a három pont (**…**) gombot, majd válassza a **Oldaltöredék hozzáadása** elemet.
-1. Az **Oldaltöredék kiválasztása** párbeszédpanelen válassza ki a **Vásárlásmező töredék** töredékét, amelyet korábban hozott létre majd kattintson az **OK** gombra.
+1. Az **Oldaltöredék kiválasztása** párbeszédpanelen válassza ki a **Vásárlásmező töredék** töredékét, amelyet korábban hozott létre ezután kattintson az **OK** gombra.
 1. Mentse a lapot, és tekintse meg az előnézetét. Hozzáadja a **?productid=&lt;product id&gt;** lekérdezési karakterlánc paramétert az előnézeti lap URL-címéhez. A termékkontextus így az előnézeti lap betöltésére és megjelenítésére kerül felhasználásra.
 1. Válassza a **Mentés** elemet, válassza a **Szerkesztés befejezése** parancsot az oldal ellenőrzéséhez, majd a **Közzététel** elemet a közzétételhez. A termék részletes lapján meg kell jelennie vásárlásmezőnek.
 

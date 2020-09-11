@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar-ms
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: a5f7ad7d9c5ff63c3c3a8fe38275eec0d138891d
-ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
+ms.openlocfilehash: e7dde3ba1ad375b309ae66cc6d31ccad85615e45
+ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "3411208"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "3686622"
 ---
 # <a name="header-module"></a>Fejlécmodul
 
@@ -62,8 +62,8 @@ A következő modulban használható a fejlécmodulban:
 
 Fejlécmodul létrehozásához kövesse az alábbi lépéseket.
 
-1. Lépjen az **Oldaltöredékek** pontra, majd válassza az **Új** lehetőséget új töredék létrehozásához.
-1. Az **Új oldaltöredék** párbeszédpanelen jelölje ki a **Tároló** modult, adja meg a laptöredék nevét, majd kattintson az **OK** gombra.
+1. Lépjen a **Töredékek** pontra, és válassza az **Új** lehetőséget új töredék létrehozásához.
+1. Az **Új oldaltöredék** párbeszédpanelen válassza ki a **Tároló** modult, adja meg az oldaltöredék nevét, majd kattintson az **OK** gombra.
 1. Válassza ki az **Alapértelmezett tároló** helyet, majd a jobb oldali tulajdonságok ablaktáblán állítsa be a **Szélesség** tulajdonságot **Tároló kitöltése** értékre.
 1. Az **Alapértelmezett tároló** helyben válassza a három pont (**…**) gombot, majd válassza az **Modul hozzáadása** elemet.
 1. A **Modul hozzáadása** párbeszédpanelen válassza a **Promóciós banner** és a **Süti beleegyezés** modulokat majd kattintson az **OK** gombra.

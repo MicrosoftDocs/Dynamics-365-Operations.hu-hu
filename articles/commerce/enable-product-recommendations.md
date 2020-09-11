@@ -3,7 +3,7 @@ title: Termékajánlatok engedélyezése
 description: Ez a témakör azt mutatja be, hogyan lehet olyan termékjavaslatokat létrehozni, amelyek a Microsoft Dynamics 365 Commerce-felhasználók számára elérhető mesterséges intelligencia gépi tanulás (AI-ML) technológián alapulnak.
 author: bebeale
 manager: AnnBe
-ms.date: 05/26/2020
+ms.date: 08/18/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 694e5a451b8e25f3729364dfaed0adc7d242f2fe
-ms.sourcegitcommit: fdc5dd9eb784c7d8e75692c8cdba083fe0dd87ce
+ms.openlocfilehash: b201e5481cfaf5bb6cd64a89cdb6b5a91f31447f
+ms.sourcegitcommit: d3b970c3b93d8be12886b1c5a6bf91f0b33726dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "3404209"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "3700842"
 ---
 # <a name="enable-product-recommendations"></a>Termékajánlatok engedélyezése
 
@@ -65,11 +65,13 @@ Mentés és a képernyő bezárása.
 
 A termékajánlások bekapcsolásához kövesse az alábbi lépéseket.
 
-1. Válassza a **Retail and Commerce &gt; Termékjavaslatok &gt; Ajánlási paraméterek** elemet.
-1. A megosztott paraméterek listáján válassza az **Ajánlati listák** elemet.
-1. Állítsa a **Javaslatok engedélyezése** beállítást **Igen** lehetőségre.
+1. A Commerce Headquarters alkalmazásban keressen rá a **Szolgáltatások kezelése** lehetőségre.
+1. Válassza a **Mind** lehetőséget, ha meg szeretné tekinteni a rendelkezésre álló szolgáltatások listáját. 
+1. A Keresés mezőbe írja be az **Ajánlatok** kifejezést.
+1. Válassza ki a **Termékajánlatok** funkciót.
+1. A **Termékajánlatok** tulajdonságok ablaktáblán válassza az **Engedélyezés most** lehetőséget.
 
-![Termékjavaslatok bekapcsolása](./media/enablepersonalization.png)
+![Termékjavaslatok bekapcsolása](./media/FeatureManagement_Recommendations.PNG)
 
 > [!NOTE]
 > Ez az eljárás elindítja a termékjavaslati listák létrehozásának folyamatát. A listák elérhetővé tételéhez akár több óra szükséges lehet, és a pénztárban (POS) vagy a Dynamics 365 Commerce szolgáltatásban lehet megtekinteni.
@@ -95,6 +97,8 @@ Ha további tájékoztatást szeretne a személyre szabott ajánlásokról, lás
 [Az Azure Data Lake Storage engedélyezése a Dynamics 365 Commerce környezetben](enable-adls-environment.md)
 
 [Személyre szabott ajánlatok engedélyezése](personalized-recommendations.md)
+
+[A hasonlóak megvásárlására vonatkozó javaslatok engedélyezése](shop-similar-looks.md)
 
 [Személyre szabott termékajánlatok kikapcsolása](personalization-gdpr.md)
 

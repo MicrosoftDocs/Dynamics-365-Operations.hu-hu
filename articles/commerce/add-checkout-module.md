@@ -3,7 +3,7 @@ title: Fizetésmodul
 description: Ez a témakör egy fizetésmodul egy laphoz való hozzáadásának és a kötelező tulajdonságok beállításának módját mutatja be.
 author: anupamar-ms
 manager: annbe
-ms.date: 05/28/2020
+ms.date: 08/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,17 +17,17 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: bd1d66fc39872019fc38dbbfb56dc3015d57d0dd
-ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
+ms.openlocfilehash: 1d913fdc9ab9a3dbf7d5534fba38add7f942652a
+ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "3411184"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "3686742"
 ---
 # <a name="checkout-module"></a>Fizetésmodul
 
-
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Ez a témakör egy fizetésmodul egy laphoz való hozzáadásának és a kötelező tulajdonságok beállításának módját mutatja be.
 
@@ -45,51 +45,67 @@ A következő kép egy Pénztár oldalon használt Fabrikam pénztár modul egy 
 
 A fizetési modul a rendelés összesítését jeleníti meg, és biztosítja a rendelés elküldésére szolgáló funkciókat. A rendelés elküldése előtt szükséges összes ügyféladat összegyűjtéséhez további modulokat kell a fizetési modulhoz adni. Ezért a kiskereskedők rugalmasan hozzáadhatnak egyéni modulokat a fizetési folyamathoz, vagy szükség szerint kizárhatnak modulokat.
 
-### <a name="modules-that-can-be-used-in-the-checkout-module"></a>A fizetésmodulban használható modulok
+| Tulajdonság neve | Értékek | Leírás |
+|----------------|--------|-------------|
+| Pénztár címsora | A fejléc szövege és a fejléc címkéje (**H1**, **H2**, **H3**, **H4**, **H5** vagy **H6**) | A fizetésmodul címsora. |
+| Rendelés összegzésének címsora | A címsor szövege | A modul rendelésösszesítési szakaszának címsora. |
+| A kosár sortételeinek címsora | A címsor szövege | A kosár azon sortételeinek címsora, melyek a fizetésmodulon kerülnek megjelenítésre. |
+| Szállítási költségek megjelenítése a sortételeken | **Igaz** vagy **Hamis** | Ha ez a tulajdonság **Igaz** értékre van állítva, a szállítási költségek, melyek a sortételekre vonatkoznak, megjelenítésre kerülnek a bevásárlókocsi soraiban. Ha a **Fejlécköltség arányosítás nélkül** funkció be van kapcsolva, a Commerce kezelési központban, a szállítási költség a fejléc szintjén kerül hozzáadásra, nem a sor szintjén. Ez a funkció a Commerce 10.0.13-as verziójában került hozzáadásra. |
 
-- **Szállítási cím** – Ez a modul lehetővé teszi a vevő számára, hogy megadja vagy kiválassza a rendelés szállítási címét. Ha a vevő be van jelentkezve, akkor a rendszer a vevő korábban mentett címeit jeleníti meg. A vevő ezután választhatja ezekből a címekből. A vevő új címet is hozzáadhat. A szállítási cím a rendelésben szereplő összes szállítandó cikkhez használatos. Nem lehet testreszabni az egyes sortételekhez. A szállítási címek formátumai országonként vagy régiónként definiálhatók, és ez a modul érvényesíti az ország-/régióspecifikus szabályokat. Bár a modul nem biztosít címellenőrzést, a címellenőrzés személyre szabással megvalósítható. Ha a rendelés csak azokat a cikkeket tartalmazza, amelyek az üzletben kerülnek felvételre, akkor a program automatikusan elrejti ezt a modult.
+## <a name="modules-that-can-be-used-in-the-checkout-module"></a>A fizetésmodulban használható modulok
+
+- **Szállítási cím** – Ez a modul lehetővé teszi a vevő számára, hogy megadja vagy kiválassza a rendelés szállítási címét. A modullal kapcsolatos további tudnivalókért lásd: [Szállítási cím modul](ship-address-module.md).
 
     A következő kép egy Pénztár oldalon használt szállítási cím modul egy példáját jeleníti meg.
 
     ![Példa a szállítási cím modulra](./media/ecommerce-shippingaddress.PNG)
 
-- **Szállítási lehetőségek** – Ez a modul lehetővé teszi a vevő számára, hogy kiválasszon egy szállítási módot a rendeléshez. A szállítási lehetőségek a szállítási címen alapulnak. Ha a szállítási cím módosul, akkor a szállítási módokat újra le kell kérdezni. Ha a rendelés csak azokat a cikkeket tartalmazza, amelyek az üzletben kerülnek felvételre, akkor a program automatikusan elrejti ezt a modult.
+- **Szállítási lehetőségek** – Ez a modul lehetővé teszi a vevő számára, hogy kiválasszon egy szállítási módot rendeléséhez. A modullal kapcsolatos további tudnivalókért lásd: [Szállítási lehetőségek modul](delivery-options-module.md).
 
     A következő kép egy Pénztár oldalon használt szállítási lehetőségek modul egy példáját jeleníti meg.
-
+ 
     ![Példa a szállítási lehetőségek modulra](./media/ecommerce-deliveryoptions.PNG)
 
 - **Fizetési szakasz tárolója** – Ez a modul egy olyan tároló, amelyben több modult is elhelyezhet egy szakasz létrehozásához a fizetési folyamaton belül. Például az összes fizetéshez kapcsolódó modult elhelyezheti ebben a tárolóban, hogy egy szakaszként jelenjenek meg. Ez a modul csak a folyamat elrendezését érinti.
-- **Ajándékutalvány** – Ez a modul lehetővé teszi a vevők számára, hogy egy ajándékutalvány segítségével fizessenek egy rendelést. Csak a Microsoft Dynamics 365 Commerce ajándékutalványok használatát támogatja. Egy vagy több ajándékutalvány alkalmazható egy rendelésre. Ha az ajándékutalvány egyenlege nem fedi le a kosárban szereplő összeget, akkor az ajándékutalvány egy másik fizetési móddal kombinálható. Ajándékutalványok csak akkor válthatók be, ha a vevő be van jelentkezve.
+
+- **Ajándékutalvány** – Ez a modul lehetővé teszi a vevők számára, hogy egy ajándékutalvány segítségével fizessenek egy rendelést. A modullal kapcsolatos további tudnivalókért lásd: [Ajándékutalvány modul](add-giftcard.md).
+
 - **Hűségpontok** – Ez a modul lehetővé teszi, hogy a vevő a hűségpontok felhasználásával fizessen egy rendelést. A rendelkezésre álló pontok és lejáró pontok összesítését biztosítja, és lehetővé teszi a vevő számára, hogy kiválassza a beváltani kívánt pontok számát. Ha a vevő nincs bejelentkezve vagy nem tagja a hűségprogramnak, illetve a kosár teljes összege 0 (nulla), akkor a rendszer automatikusan elrejti ezt a modult.
-- **Fizetés** – Ez a modul lehetővé teszi a vevők számára, hogy egy hitelkártyával fizessenek egy rendelést. Ha a kosarat hűségpontokkal vagy ajándékutalvánnyal fedezik, vagy a kosár teljes összege 0 (nulla), akkor a rendszer automatikusan elrejti ezt a modult. A hitelkártyás integrációt ehhez a modulhoz a Adyen fizetési összekötő biztosítja. További tájékoztatás az összekötő használatáról: [Dynamics 365 Adyen fizetési összekötő](dev-itpro/adyen-connector.md).
-- **Számlázási cím** – Ez a modul lehetővé teszi a vevő számára a számlázási adatok megadását. Ezt az információt az Adyen a hitelkártyaadatokkal együtt dolgozza fel. Ez a modul egy olyan beállítást tartalmaz, amely lehetővé teszi a vevők számára a számlázási cím szállítási címként történő használatát.
 
-    A következő képen látható egy példa az ajándékutalvány, a hűségpontok, a fizetés és a számlázási cím modulokra a pénztár oldalon.
+- **Fizetés** – Ez a modul lehetővé teszi a vevő számára, hogy rendelését hitelkártyával fizethesse. A vevők számlázási címet is megadhatnak az általuk kiválasztott fizetési lehetőséghez. A modullal kapcsolatos további tudnivalókért lásd: [Fizetési modul](payment-module.md).
 
-    ![Példa az ajándékutalvány, hűségpontok, fizetés és számlázási cím modulokra](./media/ecommerce-payments.PNG)
+    A következő képen egy példa látható az ajándékutalványra, a hűségpontokra és a fizetési modulokra a fizetési oldalon.
+
+    ![Példa az ajándékutalványra, a hűségpontokra és a fizetési modulokra a fizetési oldalon](./media/ecommerce-payments.PNG)
 
 - **Kapcsolattartási adatok** – Ez a modul lehetővé teszi a vevő számára, hogy megadja vagy módosítsa a rendeléshez tartozó kapcsolattartási adatokat (e-mail-cím).
 
 - **Szövegblokk** – Ez a modul minden olyan üzenetküldést tartalmaz, amelyet a tartalomkezelő rendszer (CMS) vezérel. Például tartalmazhatja a következő üzenetet: „A rendeléssel kapcsolatos problémák esetén hívja az 1-800-Fabrikam számot”. 
 
+- **Fizetési feltételek és kikötések** – Ez a modul egy Rich Text szöveget jelenít meg, amely feltételeket és kikötéseket tartalmaz, valamint egy jelölőnégyzetet a vevői inputra vonatkozóan. A jelölőnégyzet szabadon választható és konfigurálható. A bevitel rögzítésre kerül a modul által és afféle csekként használható, mielőtt a rendelés leadásra kerül,ellenben ez nem kerül rögzítésre az rendelés összegzési információkban. Ez a modul a pénztár tárolójához, a fizetési szakasz tárolójához vagy egy feltételek és kikötések helyhez adható, üzleti igényeitől függően. Ha ez a pénztár tárolójához vagy a fizetési szakasz tárolójának helyéhez van rendelve, meg fog jelenni a fizetési folyamat egy lépéseként. Ha ez egy feltételek és kikötések helyhez van rendelve, akkor meg fog jelenni a rendelés leadása gomb közelében.
+
+    A következő képen egy példa látható szerződési feltételekről egy fizetési oldalon.
+
+    ![Példa szerződési feltételekre egy fizetési oldalon](./media/ecommerce-checkout-terms.PNG)
+
 ## <a name="commerce-scale-unit-interaction"></a>Commerce Scale Unit-interakció
 
-A legtöbb fizetési információt (például a szállítási címet és a szállítási módot) a kosár tárolja, és a rendelés részeként kerül feldolgozásra. Az egyetlen kivételt a hitelkártyával kapcsolatos adatok jelentik. Ezeket az adatokat a rendszer közvetlenül az Adyen fizetési összekötő használatával dolgozza fel. A kifizetés engedélyezve van, de nem kerül felszámításra.
+A legtöbb fizetési információt (például a szállítási címet és a szállítási módot) a kosár tárolja, és a rendelés részeként kerül feldolgozásra. Az egyetlen kivételt a hitelkártyával kapcsolatos adatok jelentik. Ezeket az adatokat a rendszer közvetlenül az Adyen fizetési összekötő használatával dolgozza fel. A kifizetés engedélyezve van, de a rendelés teljesítése előtt nem kerül sor.
 
 ## <a name="add-a-checkout-module-to-a-page-and-set-the-required-properties"></a>Fizetésmodul hozzáadása egy új oldalhoz és a kötelező tulajdonságok beállítása
 
 A fizetésmodul új oldalra való felvételéhez és a kötelező tulajdonságok beállításához hajtsa végre az alábbi lépéseket.
 
-1. Lépjen az **Oldaltöredékek** pontra, majd válassza az **Új** lehetőséget új töredék létrehozásához.
-1. Az **Új oldaltöredék** párbeszédablakban válassza ki a **Pénztár** modult.
-1. Az **Oldaltöredék neve** pontban adja meg a **Pénztár töredék** nevét, majd válassza az **OK** lehetőséget.
+1. Lépjen a **Töredékek** pontra, és válassza az **Új** lehetőséget új töredék létrehozásához.
+1. Az **Új oldaltöredék** párbeszédpanelon válassza ki a **Fizetés** modult.
+1. Az **Oldaltöredék neve** pontban adja meg a **Fizetési töredék** nevet, majd válassza az **OK** lehetőséget.
 1. Válassza ki a **Pénztár modul** helyet.
 1. A jobb oldali tulajdonságok ablaktáblán válassza ki a ceruza szimbólumot, adja meg a címsor szövegét a mezőben, majd jelölje be a pipa jelet.
 1. Az **Fizetési információk** helyben válassza a három pont (**…**) gombot, majd válassza az **Modul hozzáadása** elemet.
 1. A **Modul hozzáadása** párbeszédpanelen válassza ki a **Szállítási cím**, **Szállítási lehetőségek**, **Pénztár rész tárolója** és a **Kapcsolattartási adatok** modulokat, majd kattintson az **OK** gombra.
 1. Az **Fizetési szakasz tárolója** modulban válassza a három pont (**…**) gombot, majd válassza az **Modul hozzáadása** elemet.
 1. A **Modul hozzáadása** párbeszédpanelen válassza az **Ajándékkártya** **Hűség** és **Fizetés** modulokat majd kattintson az **OK** gombra. Így biztosíthatja, hogy az összes fizetési mód együtt jelenjen meg egy szakaszban.
+1. A **Feltételek és kikötések**helyen adja meg a **Fizetési feltételek és kikötések** modult, ha ez szükséges. A modul tulajdonságai ablakban adja meg a szerkessze meg a feltételek és kikötések szövegét szükséges esetben.
 1. Válassza a **Mentés** lehetőséget, majd a töredék előnézetének megtekintéséhez az **Előnézet** elemet. Előfordulhat, hogy egyes modulok nem jelennek meg az előnézetben, mert nem rendelkeznek kosárkontextussal.
 1. Válassza a **Szerkesztés befejezése** parancsot a töredék ellenőrzéséhez, majd a **Közzététel** elemet a közzétételhez.
 1. Hozzon létre egy olyan sablont, amely az új fizetési töredéket használja.
@@ -97,16 +113,16 @@ A fizetésmodul új oldalra való felvételéhez és a kötelező tulajdonságok
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[Kezdő csomag áttekintése](starter-kit-overview.md)
-
-[Tárolómodul](add-container-module.md)
-
-[Vásárlásmező modul](add-buy-box.md)
-
 [Kosármodul](add-cart-module.md)
 
-[Rendelésmegerősítés modul](order-confirmation-module.md)
+[Kosárikon modul](cart-icon-module.md)
 
-[Fejlécmodul](author-header-module.md)
+[Fizetési modul](payment-module.md)
 
-[Láblécmodul](author-footer-module.md)
+[Szállítási cím modul](ship-address-module.md)
+
+[Szállítási lehetőségek modul](delivery-options-module.md)
+
+[Rendelési részletek modul](order-confirmation-module.md)
+
+[Ajándékutalvány modul](add-giftcard.md)

@@ -3,7 +3,7 @@ title: Vállalat fogalma a Common Data Service szolgáltatásban
 description: Ez a témakör a vállalati adatok integrációját ismerteti a Finance and Operations és a Common Data Service között.
 author: RamaKrishnamoorthy
 manager: AnnBe
-ms.date: 07/15/2019
+ms.date: 08/04/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 9a39cf5fa980d9a815ba675e410589dbd1279c83
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: 444bfc1698a206ca34e67f742df63431a3b02649
+ms.sourcegitcommit: 7da8811f1a7db858efb76edb0bdf857a47d07600
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172900"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "3728413"
 ---
 # <a name="company-concept-in-common-data-service"></a>Vállalat fogalma a Common Data Service szolgáltatásban
 
@@ -72,3 +72,32 @@ A Common Data Service-integráció vállalati azonosító segítségével létre
 + A rekordok esetében a vállalat hozzáadása és mentése után az érték írásvédett lesz. Ezért a felhasználóknak meg kell győződniük arról, hogy a megfelelő vállalatot választják ki.
 + Csak a vállalati adatokat tartalmazó rekordok alkalmasak az alkalmazás és a Common Data Service közötti kettős írásra.
 + Meglévő Common Data Service adatokhoz egy adminisztrátor által kezelt bootstrapping-élmény is hamarosan elérhető lesz.
+
+
+## <a name="autopopulate-company-name-in-customer-engagement-apps"></a>Vállalat nevének automatikusan történő kitöltése az ügyfélkapcsolati alkalmazásokban
+
+Számos módja van annak, hogy a vállalat nevét az ügyfélkapcsolati alkalmazásokban automatikusan kitöltsék.
+
++ Ha Ön rendszergazda, akkor az alapértelmezett vállalat beállítható úgy, hogy megnyitja a **Speciális beállítások > Rendszer > Biztonság > Felhasználók** menüpontot. Nyissa meg a **Felhasználó** űrlapot, és a **Szervezet adatai** szakaszban adja állíts be az **Alapértelmezett vállalat használata az űrlapokon** értékét.
+
+    :::image type="content" source="media/autopopulate-company-name-1.png" alt-text="Alapértelmezett vállalat beállítása a szervezet adatai szakaszhoz.":::
+
++ Ha **Írás** jogosultsággal rendelkezik a **SystemUser** entitáshoz az **Üzleti egység** szintjén, akkor bármilyen űrlapon módosíthatja az alapértelmezett vállalatot, ha a **Vállalat** legördülő menüből kiválasztja a vállalatot.
+
+    :::image type="content" source="media/autopopulate-company-name-2.png" alt-text="A vállalat nevének módosítása egy új partneren.":::
+
++ Ha egynél több vállalat adataihoz rendelkezik **Írás** hozzáféréssel, akkor egy másik vállalathoz tartozó rekord kiválasztásával is módosíthatja az alapértelmezett vállalatot.
+
+    :::image type="content" source="media/autopopulate-company-name-3.png" alt-text="A rekord kiválasztása megváltoztatja az alapértelmezett vállalatot.":::
+
++ Ha Ön rendszerkonfiguráló vagy egy rendszergazda, és a vállalat adatait egy egyéni űrlapon szeretné automatikusan kitölteni, akkor használhatja az [űrlapesemények](https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/events-forms-grids) lehetőséget. Adjon hozzá JavaScript-hivatkozást az **msdyn_/DefaultCompany.js** elemhez, és használja a következő eseményeket. Használhatja az összes beépített űrlapot is, például a **Partner** űrlapot.
+
+    + **OnLoad** esemény az űrlaphoz: Állítsa be a **defaultCompany** mezőt.
+    + **OnChange** esemény a **Vállalat** mezőhöz: Állítsa be az **updateDefaultCompany** mezőt.
+
+## <a name="apply-filtering-based-on-the-company-context"></a>Szűrés alkalmazása a vállalat kontextusa alapján
+
+Ha azt szeretné, hogy az egyéni űrlapokon vagy egyéni keresési mezőkben megadott vállalati környezet alapján történjen a szűrés, nyissa meg az űrlapot, és használja a **Kapcsolódó rekordok szűrése** szakaszt a vállalati szűrő alkalmazásához. Ezt minden olyan keresési mező esetében be kell állítania, amelyhez szűrés szükséges a mögöttes vállalat alapján egy adott rekodnál. A beállítás a következő ábrán látható a **Partnerhez** jelenik meg.
+
+:::image type="content" source="media/apply-company-context.png" alt-text="Vállalati környezet alkalmazása":::
+

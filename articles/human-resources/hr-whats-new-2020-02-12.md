@@ -1,6 +1,6 @@
 ---
 title: Új vagy módosult elemek a Dynamics 365 Human Resources szolgáltatásban (2020. február 12.)
-description: Ez a cikk a Microsoft Dynamics 365 Human Resources új vagy módosított funkcióit írja le.
+description: Ez a cikk a Microsoft Dynamics 365 Human Resources új vagy módosított szolgáltatásait írja le a 2020. február 12-i kiadásban.
 author: Darinkramer
 manager: AnnBe
 ms.date: 02/07/2020
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2020-02-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1d352cae4b49efa8c893dceed448b30460e0eda5
-ms.sourcegitcommit: a688c864fc609e35072ad8fd2c01d71f6a5ee7b9
+ms.openlocfilehash: 7bcb77b74f6e484d68fd57fd1680e8c2d8c82bc4
+ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "3076293"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3712062"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-february-12-2020"></a>Új vagy módosult elemek a Dynamics 365 Human Resources szolgáltatásban (2020. február 12.)
 

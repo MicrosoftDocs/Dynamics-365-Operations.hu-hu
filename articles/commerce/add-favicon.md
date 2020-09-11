@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 2d95e8b799c3b89418657342868e0ec7e94a86f9
-ms.sourcegitcommit: ce79fb570e299a26a644e29da7ceb5a57a1374e6
+ms.openlocfilehash: 198927e3391bdb577ebc845ff41d49ca798251ff
+ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "3295080"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "3686790"
 ---
 # <a name="add-a-favicon"></a>Kedvencek ikon hozzáadása
 
@@ -62,8 +62,8 @@ A kedvencek ikon HTML-kódjának létrehozásához használja a következő HTML
 
 Az oldaltöredék létrehozásához, amely metacímkét tartalmaz a kedvenc ikonjához kövesse az alábbi lépéseket.
 
-1. Lépjen az **Oldaltöredékek** pontra, és válassza az **Új** lehetőséget.
-1. Az **Új oldaltöredék** párbeszédpanelen válassza ki **Metacímkék** annak a modulnak, amelyen az oldaltöredék alapul.
+1. Lépjen a **Töredékek** pontra, és válassza az **Új** lehetőséget.
+1. Az **Új oldaltöredék** párbeszédpanelen válassza ki **Metacímkék** lehetőséget azon modulként, melyen az oldaltöredék alapszik.
 1. Írja be az oldaltöredék nevét, majd kattintson az **OK** gombra.
 1. A töredék hierarchiafájában válassza ki az **Alapértelmezett metacímkék** gyermekét.
 1. A jobb oldali panelen a **Metacímkék** területen válassza a **Hozzáadás** lehetőséget, majd adja meg a kedvencek ikonhoz korábban létrehozott HTML-karakterláncot. 
@@ -75,7 +75,7 @@ A metacímke oldaltöredékének hozzáadásához az oldalak HTML **fejléc** sz
 
 1. Nyissa mega **Sablonok** pontot, majd nyissa meg azon oldalakhoz tartozó sablont, amelyhez hozzá szeretné adni a kedvencek ikont, majd válassza a **Szerkesztés** lehetőséget.
 1. A sablonhierarchia-fában válassza ki a **HTML-fejléc** tárolójának jobb oldalán található három pont (**…**) gombot, majd válassza az **Oldal töredék hozzáadása** lehetőséget.
-1. Az **Oldaltöredék kiválasztása** párbeszédpanelen válassza ki a metacímke oldaltöredékét, amelyet korábban hozott létre majd kattintson az **OK** gombra.
+1. Az **Oldaltöredék kiválasztása** párbeszédpanelen válassza ki a metacímke oldaltöredékét, melyet korábban hozott létre majd kattintson az **OK** gombra.
 1. Válassza a **Szerkesztés befejezése** parancsot, majd a **Közzététel** elemet a sablon közzétételhez.
 
 > [!NOTE]

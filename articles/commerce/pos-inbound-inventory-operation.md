@@ -3,7 +3,7 @@ title: Bejövő készletműveletek a pénztárban
 description: Ez a témakör a pénztár (POS) bejövő készletműveletének képességeit írja le.
 author: hhaines
 manager: annbe
-ms.date: 07/27/2020
+ms.date: 08/18/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: aba4f2d7932ebc3a0129f04c60c8b6358da68c64
-ms.sourcegitcommit: 0aabe4157f82d8c59dd2d285ab0b33f3c8ec5bbc
+ms.openlocfilehash: 16a786a4b3ca1bcbd202f6753bdf3bf7233a4333
+ms.sourcegitcommit: 7061a93f9f2b54aec4bc4bf0cc92691e86d383a6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "3627538"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3710309"
 ---
 # <a name="inbound-inventory-operation-in-pos"></a>Bejövő készletműveletek a pénztárban
 
@@ -143,6 +143,20 @@ A művelet figyelembe veszi az **Üres bevételezés engedélyezett** konfigurá
 ### <a name="receive-all"></a>Összes bevételezése
 
 Igény esetén kiválaszthatja az **Összes bevételezést** lehetőséget az alkalmazássávon hogy az összes dokumentumsorban gyorsan frissíthesse a **Bevételezés most** mennyiséget az összes dokumentumsorhoz arra a maximális értékre, amely elérhető bevételezésre azokhoz a sorokhoz.
+
+### <a name="receipt-of-unplanned-items-on-purchase-orders"></a>Nem tervezett cikkek fogadása beszerzési rendeléseken
+
+A Commerce 10.0.14 és újabb verzióiban a felhasználók olyan terméket fogadhatnak, amely eredetileg nem szerepeltek a beszerzési rendelésen. A funkció engedélyezéséhez kapcsolja be a **Sorok hozzáadása beszerzési rendeléshez a pénztári fogadás során**.  
+
+Ez a funkció csak a beszerzési rendelések bevételezéséhez használható. Az átmozgatási rendelésekből nem lehet cikkeket bevételezni, ha a cikkeket korábban nem rendelték meg és nem szállították ki a kimenő raktárból.
+
+A felhasználók nem adhatnak hozzá új termékeket a beszerzési rendeléshez a pénztári bevételezés során, ha a beszerzési rendelés [változáskezelési munkafolyamata](https://docs.microsoft.com/dynamics365/supply-chain/procurement/purchase-order-approval-confirmation) engedélyezve van a Commerce központban (HQ). A változtatások kezelésének engedélyezéséhez előbb jóvá kell hagynia a beszerzési rendelés minden módosítását, mielőtt a bevételezés engedélyezve van. Mivel ez a folyamat lehetővé teszi a bevételező számára, hogy új sorokat vegyen fel a beszerzési rendelésbe, a bevételezés sikertelen lesz, ha engedélyezve van a változáskezelési munkafolyamat. Ha minden beszerzési rendeléshez vagy a pénztári rendszerbe aktívan beérkezett beszerzési rendeléshez kapcsolódó szállítónál engedélyezve van a változtatások kezelése, akkor a felhasználó nem veheti fel a beszerzési rendelésbe az új termékeket a pénztári rendszerbe történő bevételezés során.
+
+Azok a funkciók, amelyek lehetővé teszik a sorok hozzáadását, nem használhatók megoldásként a már a beszerzési rendelésen szereplő termékek további mennyiségeinek fogadására. A túlbevétezés a szokásos [túlbevételezés](https://docs.microsoft.com/dynamics365/commerce/pos-inbound-inventory-operation#over-receiving-validations) beállításokkal történik a terméksorhoz a beszerzési rendelésen.
+
+Ha **Sorok hozzáadása beszerzési rendeléshez a pénztári fogadás során** engedélyezve van, és a felhasználó fogadja a **Bejövő műveletet** a pénztári rendszerben, ha a felhasználó olyan termékazonosítót vagy termékazonosítót olvas be, amely nem az aktuális beszerzési rendelésen szereplő cikként van azonosítva, de érvényes cikkként ismerhető fel, akkor a felhasználó üzenetet kap a cikknek a beszerzési rendelésbe történő hozzáadásáról. Ha a felhasználó hozzáadja a tételt a beszerzési rendeléshez, akkor a **Bevételezés most** helyen megaott mennyisége lesz a beszerzésirendelés-sor megrendelt mennyiségének tekintve.
+
+Amikor a beszerzési rendelés bevételezése elkészült és be lett küldve a központ számára a feldolgozásra, a program a beszerzési rendelés alapdokumentumán hozza létre a hozzáadott sorokat. A központ beszerzési rendelési sorában a **Pénztárban hozzáadva** jelölő lesz látható a beszerzésirendelés-sor **Általános** lapján. A **Pénztárban hozzáadva** jelölővel azt jelzi, hogy a beszerzési rendelési sor a pénztári bevételezési folyamat során lett hozzáadva, és a bevételezés előtt nem szerepelt az értékesítési rendelésen.
 
 ### <a name="cancel-receiving"></a>Bevételezés megszakítása
 

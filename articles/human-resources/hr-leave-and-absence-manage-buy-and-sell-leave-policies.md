@@ -3,7 +3,7 @@ title: A szabadságok vásárlásával és eladásával kapcsolatos irányelvek 
 description: Engedélyezheti az alkalmazottaknak, hogy vásárolják és eladják a szabadságukat a Dynamics 365 Human Resources alkalmazásban.
 author: andreabichsel
 manager: AnnBe
-ms.date: 06/01/2020
+ms.date: 08/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,24 +18,22 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-06-01
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 859445f2b6e980b5960e512e69129f6a8fc6df2b
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 55d29c42cc1b2d69517e2fcd458ee6a1bdf5277f
+ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3429013"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3712111"
 ---
-# <a name="manage-buy-and-sell-leave-policies"></a>A szabadságok vásárlásával és eladásával kapcsolatos irányelvek kezelése
+# <a name="manage-buy-and-sell-leave-policies"></a>Szabadság vásárlásával és eladásával kapcsolatos irányelv kezelése
 
-[!include [banner](includes/preview-feature.md)]
-
-Engedélyezheti az alkalmazottaknak, hogy szabadságot vegyenek egy szabadságvásárlási irányelv létrehozásával.  
+Engedélyezheti az alkalmazottaknak, hogy szabadságot vegyenek és adjanak el egy szabadságvásárlási és eladási irányelv létrehozásával. Ezeket a szabályokat konfigurálhatja úgy, hogy munkafolyamatot használjon jóváhagyásra, beállítsa a maximális összegeket és mértékeket, valamint megadhatja a beszerzési és eladási árat. 
 
 ## <a name="enable-employees-to-buy-and-sell-leave"></a>Szabadság vásárlásának és eladásának engedélyezése az alkalmazottak számára
 
-1. A **Szabadság- és távollétparaméterek** oldalon válassza az **Igen** lehetőséget a **Szabadság vásárlásának engedélyezése az alkalmazottak számára** esetében. 
+1. A **Szabadság- és távollét** paraméterei oldalon válassza az **Igen** lehetőséget a **Szabadság eladásának engedélyezése az alkalmazottak számára** **Szabadság eladásának engedélyezése a munkavállalók számára** lehetőséget.
 
-## <a name="create-a-buy-leave-policy"></a>Szabadságvásárlási irányelv létrehozása
+## <a name="create-a-buy-and-sell-leave-policy"></a>Szabadság vásárlási és eladási irányelv létrehozása
 
 1. A **Szabadság és távollét** oldalon válassza a **Hivatkozások** lapot. 
 
@@ -51,19 +49,23 @@ Engedélyezheti az alkalmazottaknak, hogy szabadságot vegyenek egy szabadságv�
 
 6. Válassza ki a **Kezdő dátum** és **Záró dátum** lehetőséget az irányelv esetében. A vásárlásra vagy eladásra irányuló kérelem csak ebben az időkeretben érhető el elküldéshez. 
 
-7. A **Vásárlási irányelv** alatt válassza a válassza ki a **Teljes munkaidő egyenérték** (FTE) lehetőséget a maximális összegnek az alkalmazott beosztásához megadott FTE alapján történő meghatározásához. Ha az irányelv típusa **Összeg**, adja meg a **Maximális rögzített összeg** értékét. 
+7. Válassza ki a házirend **Munkafolyamat-azonosítóját**. A vásárlási és eladási kérelmek ezt a munkafolyamatot használják áttekintés és jóváhagyás céljából. 
 
-8. Válassza a **Hozzáadás** lehetőséget azon alkalmazottak típusának megadásához, akik szabadságot vásárolhatnak. Az irányelvhez több szabadságtípust is hozzáadhat. 
+8. A **Vásárlási irányelv** alatt válassza a válassza ki a **Teljes munkaidő egyenérték** (FTE) lehetőséget a maximális összegnek az alkalmazott beosztásához megadott FTE alapján történő meghatározásához. Ha az irányelv típusa **Összeg**, adja meg a **Maximális rögzített összeg** értékét. 
 
-9. Adja meg a szabadságtípus **Munkaviszony hossza hónapokban** elemét annak engedélyezéséhez, hogy a munkaviszony hossza hónapokban határozza meg a maximális összeget, amennyit egy alkalmazott vásárolhat. 
+9. Válassza a **Hozzáadás** lehetőséget azon alkalmazottak típusának megadásához, akik szabadságot vásárolhatnak. Az irányelvhez több szabadságtípust is hozzáadhat. 
 
-10. Adja meg a szabadságtípushoz a **Maximális összeg** elemet. 
+10. Adja meg a szabadságtípus **Munkaviszony hossza hónapokban** elemét annak engedélyezéséhez, hogy a munkaviszony hossza hónapokban határozza meg a maximális összeget, amennyit egy alkalmazott vásárolhat. 
 
-11. Adja meg az **Arány** elemet, amely megadja a megvásárolható szabadság mértékét. 
+11. Adja meg a szabadságtípushoz a **Maximális összeg** elemet. 
 
-12. Tetszés szerint adja meg a szabadságvásárláshoz használt **Bevételkódot**. 
+12. Adja meg az **Arány** elemet, amely megadja a megvásárolható szabadság mértékét. 
 
-13. Opcionálisan azt is beállíthatja, hogy az FTE használatával határozza meg a szabadságtípus maximális összegét. 
+13. Tetszés szerint adja meg a szabadságvásárláshoz használt **Bevételkódot**. 
+
+14. Opcionálisan azt is beállíthatja, hogy az FTE használatával határozza meg a szabadságtípus maximális összegét. 
+
+15. Értékesítési irányelv létrehozásához kövesse a 8–14. lépéseket az **Eladási irányelv** részben. 
 
 ## <a name="add-the-buy-and-sell-leave-policy-to-a-leave-and-absence-plan"></a>A szabadság vásárlásával és eladásával kapcsolatos irányelv hozzáadása egy szabadsági és távolléti tervhez
 

@@ -3,7 +3,7 @@ title: Kiskereskedelmi csatornák készletelérhetőségének számítása
 description: Ez a témakör azt mutatja be, hogy milyen lehetőségek érhetők el az üzlet és az online csatornák aktuális készletének megjelenítéséhez.
 author: hhainesms
 manager: annbe
-ms.date: 05/15/2020
+ms.date: 08/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: hhainesms
 ms.search.validFrom: 2020-02-11
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 51e6633caa49daeedca685f3323eaf4e14e788a5
-ms.sourcegitcommit: e789b881440f5e789f214eeb0ab088995b182c5d
+ms.openlocfilehash: 6d25a426268ebfb6990eb3dadb1ad451f86f59a1
+ms.sourcegitcommit: 65a8681c46a1d99e7ff712094f472d5612455ff0
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "3379236"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "3694922"
 ---
 # <a name="calculate-inventory-availability-for-retail-channels"></a>Kiskereskedelmi csatornák készletelérhetőségének számítása
 
@@ -40,7 +40,7 @@ Ez a témakör azokat az adatszinkronizálási folyamatokat mutatja be, amelyek 
 
 A következő API-k használhatók a termék készletelérhetőségének megjelenítésére, amikor a vevők egy e-kereskedelmi webhelyen vásárolnak.
 
-- **GetEstimatedAvailability** – ezt az API-t használhatja a cikk készletelérhetőségének lekérésére az e-kereskedelmi csatorna raktárában vagy az e-kereskedelmi csatorna teljesítési csoportjának konfigurációjához kapcsolt összes raktárban. Ez az API egy adott keresési területen vagy sugárban található raktárakban is használható, a hosszúsági és a szélességi adatok alapján.
+- **GetEstimatedAvailability** – Használja ezt az API-t, hogy lekérhesse a készlet rendelkezésre állását egy cikkre az eCommerce csatorna raktárában vagy raktáraiban, amik össze vannak kapcsolva az e-Commerce csatorna teljesítése szintjével. Ez az API egy adott keresési területen vagy sugárban található raktárakban is használható, a hosszúsági és a szélességi adatok alapján.
 - **GetEstimatedProductWarehouseAvailability** – ezt az API-t használva egy adott raktárból származó cikk készletét kérheti le. Például használhatja a készletelérhetőség megjelenítésére olyan esetekben, amelyben rendelésfelvétel szerepel.
 
 > [!NOTE]
@@ -50,7 +50,7 @@ Mindkét API az adatokat a Commerce kiszolgálóról kéri le, és becslést ny�
 
 ### <a name="get-started-with-e-commerce-calculated-inventory-availability"></a>Az e-kereskedelmi számított készlet elérhetőségének megismerése
 
-A korábban említett két API használata előtt engedélyeznie kell az **Optimalizált termékelérhetőségi számítás funkciót** a **Funkciókezelés** munkaterületen a KEreskedelmi központban.
+Mielőtt használja a korábban említett két API-t, engedélyeznie kell az **Optimalizált termékelérhetőségi számítás** funkciót a **Funkciókezelés** munkaterület segítségével, a Commerce Headquartersben.
 
 Mielőtt az API-k kiszámolhatnák egy cikk készletelérhetőségének legjobb becslését, először fel kell dolgozni a Kereskedelmi központ készletelérhetőségre vonatkozó időszakos pillanatképét, és elküldeni az e-kereskedelem Commerce Scale Unit modulja által használt csatorna-adatbázishoz. A pillanatkép a Kereskedelmi központ azon adatait jeleníti meg, amelyek a termék vagy a termék változatának és a raktárnak egy meghatározott kombinációját jelentik. Itt szerepelhetnek készletmódosítások vagy -mozgatások, amelyeket készletbevételezések, szállítmányok vagy más olyan folyamatok okoztak, amelyeket a Kereskedelmi központban hajtottak végre, és az e-kereskedelmi csatorna csak a szinkronizálási folyamat révén tud róla.
 
@@ -66,7 +66,7 @@ A **Termékelérhetőség** feladat futásának befejeződése után a rögzíte
 1. Ugorjon a **Kiskereskedelem és kereskedelem \> Kiskereskedelem és kereskedelem informatika \> Elosztási ütemezés** pontra.
 1. Futtassa az **1130** (**Termékelérhetőség**) feladatot a pillanatkép-adatok szinkronizálásához, amelyeket a **Termékelérhetőség** feladat hozott létre a Kereskedelmi központból a csatorna-adatbázisaiba.
 
-Amikor a készletelérhetőséget a **GetEstimatedAvailabilty** vagy **ProductWarehouseInventoryAvailabilities** API-ból kérik, a rendszer számítást futtat, amellyel a lehető legjobb becslést próbálja lekérni a termék készletére. A számítás bármely olyan e-kereskedelmi vevői rendelésre hivatkozik, amelyek a csatorna-adatbázisban találhatók, de nem szerepelnek az 1130 feladat által biztosított pillanatképadatok között. Ezt a logikát követi a rendszer a legutóbbi feldolgozott készlettranzakció Kereskedelmi központból való nyomon követésével, és a csatorna-adatbázis tranzakciójával való összehasonlításával. Alapértéket ad a csatornaoldali számítási logikához, így a további készletmozgásokat, amelyek az e-kereskedelmi csatorna-adatábis vevői rendelkéseivel kapcsolatos értékesítési tranzakcióknál történtek, a rendszer figyelembe veszi az API által biztosított becsült készletértékben.
+Amikor a készlet rendelkezésre állása a **GetEstimatedAvailabilty** vagy a **ProductWarehouseInventoryAvailabilities** API-kból lekérhető, egy számítás kerül futtatásra, hogy megpróbálja a legpontosabban megbecsülni a termékből rendelkezésre álló készletet. A számítás bármely olyan e-kereskedelmi vevői rendelésre hivatkozik, amelyek a csatorna-adatbázisban találhatók, de nem szerepelnek az 1130 feladat által biztosított pillanatképadatok között. Ezt a logikát követi a rendszer a legutóbbi feldolgozott készlettranzakció Kereskedelmi központból való nyomon követésével, és a csatorna-adatbázis tranzakciójával való összehasonlításával. Alapértéket ad a csatornaoldali számítási logikához, így a további készletmozgásokat, amelyek az e-kereskedelmi csatorna-adatábis vevői rendelkéseivel kapcsolatos értékesítési tranzakcióknál történtek, a rendszer figyelembe veszi az API által biztosított becsült készletértékben.
 
 A csatornaoldali számítási logika becsült ténylegesen elérhető értéket ad vissza, valamint egy teljesen elérhető értéket a kért termékre és raktárra vonatkozóan. Az értékek kívánság szerint megjelenhetnek az e-kereskedelmi webhelyen, vagy felhasználhatók az e-kereskedelmi webhely egyéb üzleti logikájának kiváltására. Megjelenítheti például a "elfogyott" üzenetet, nem pedig a tényleges aktuális készletet, amelyet az API átadott.
 
@@ -80,7 +80,7 @@ Amikor a csatornaoldali számítást helyesen konfigurálták és kezelték, meg
 
 ### <a name="get-started-with-pos-channel-side-calculated-inventory-availability"></a>A pénztár csatornaoldali számított készlet elérhetőségének megismerése
 
-AA pénztáralkalmazás csatornaoldali számítási logikájának használatához és a készletkeresések valós idejű szolgáltatáshívásainak kikapcsolásához először engedélyeznie kell az **Optimalizált termékelérhetőségi számítás funkciót** a **Funkciókezelés** munkaterületen a Kereskedelmi központban. A funkció engedélyezésén kívül módosítania kell a **funkció profilját**.
+Hogy használhassa a  csatornaoldali számítási logikát és kikapcsolhassa valós idejű szolgáltatáshívásokat készletkeresésekhez a POS alkalmazásból, először engedélyeznie kell az **Optimalizált termékelérhetőségi számítás** funkciót a **Funkciókezelés** munkaterületen a Commerce Headquartersben. A funkció engedélyezésén kívül módosítania kell a **funkció profilját**.
 
 A **Funkcióprofil** módosításához az alábbi lépéseket hajtsa végre:
 
@@ -107,6 +107,8 @@ A készlet lehető legjobb becslésének biztosításához fontos, hogy a követ
 - **Tranzakciós kimutatások feladása kötegben** – ez a feladat is szükséges a folyamatos, apránkénti feladáshoz. Ez a **Tranzakciós kimutatások kötegelt kiszámítása** feladatot követi. Ez a feladat rendszeresen feladja a kiszámított kimutatásokat, hogy a Kereskedelmi központban jöjjenek létre a készpénzzel fizetett, azonnal átvett értékesítéshez tartozó értékesítési rendelések, és a Kereskedelmi központ így pontosabban mutassa az üzlet készletét.
 - **Termék elérhetősége** – ez a feladat létrehozza a Kereskedelmi központ-készletből származó készlet pillanatfelvételét.
 - **1130 (termék elérhetősége)** – Ez a feladat az **elosztási ütemezések** oldalon található, és a **termék elérhetősége** feladatát követően azonnal futtatható. Ez a feladat szállítja a készlet-pillanatfelvétel adatait a Kereskedelmi központ rendszerből a csatorna-adatbázisba.
+
+Javasolt, hogy ne futtassa túl gyakran ezeket a kötegelt feladatokat (néhány percenként). A gyakori futtatás túlterheli a Commerce Headquarters (HQ)-t, és jelentős mértékben hatással van a teljesítményre. Általánosan jó gyakorlat a termék elérhetőségének futtatása és 1130 munka végeztetése órabéren, és a P-feladat rendelések szinkronizálásának ütemezése, és a folyamatos, apránkénti feladású munkák azonos, vagy ennél is nagyobb gyakoriságú végeztetése.
 
 > [!NOTE]
 > Teljesítménnyel kapcsolatos okokból, amikor a csatornaoldali készletelérhetőségi számításokkal hoznak létre egy készletelérhetőségi kérést az e-kereskedelmi API-k vagy az új pénztári cstornaoldali készletlogika használatával, a számítás gyorsítótárat használt annak meghatározására, hogy elég idő telt-e el, hogy igazolható legyen a számítási logika újbóli futtatása. Az alapértelmezett gyorsítótár értéke 60 másodperc. Például bekapcsolta az üzlet csatorna-oldali számítását, és megtekintette egy termék tényleges készletét a **készletkeresés** oldalán. Ha a termék egy egységét értékesítik, akkor a **készletkeresés** lapja nem jeleníti meg a csökkentett készletet mindaddig, amíg a gyorsítótár ki nem ürül. Miután a felhasználó feladta a tranzakciókat a pénztárban, várnia kell 60 másodpercig, mielőtt ellenőrizheti, hogy a tényleges készlet csökkent.

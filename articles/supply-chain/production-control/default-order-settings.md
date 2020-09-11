@@ -3,7 +3,7 @@ title: Alapértelmezett rendelési beállítások dimenziókhoz és termékvált
 description: Az alapértelmezett rendelési beállítások határozzák meg azt a helyet és raktárt, ahol a cikkek beszerzése és tárolása történik, illetve azt a minimális, maximális, többszörös és szokásos mennyiséget, amely felhasználásra kerül a kereskedéshez vagy a készletgazdálkodáshoz, valamint az átfutási időket, a leállító jelzőket és a rendelési ígéret módszerét.
 author: t-benebo
 manager: tfehr
-ms.date: 07/27/2020
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,13 +18,13 @@ ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 13df8eb7873495847d994922be1acd77e57f8f23
-ms.sourcegitcommit: dfe5916d982eaa879e2afef7440c30b1d0f4380a
+ms.dyn365.ops.version: 10.0.13
+ms.openlocfilehash: 0654ba019b71dc952ea52f206bc60d8fa05dd4ff
+ms.sourcegitcommit: f9917706d45693e8d3f9f6224dca9e601db44bae
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "3637756"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "3657340"
 ---
 # <a name="default-order-settings-for-dimensions-and-product-variants"></a>Dimenziókra és termékváltozatokra vonatkozó alapértelmezett rendelésbeállítások
 
@@ -32,7 +32,16 @@ ms.locfileid: "3637756"
 
 A Dynamics 365 Supply Chain Management alapértelmezett rendelési beállításai határozzák meg azt a helyet és raktárt, ahol a cikkek beszerzése és tárolása történik, illetve azt a minimális, maximális, többszörös és szokásos mennyiséget, amely felhasználásra kerül a kereskedéshez vagy a készletgazdálkodáshoz, valamint az átfutási időket, a leállító jelzőket és a rendelési ígéret módszerét. Az alapértelmezett rendelési beállítások lesznek érvényesek a beszerzési rendelések, értékesítési rendelések, átmozgatási rendelések és készletnaplók létrehozásakor, valamint az alaptervezés elkészítésekor a tervezett rendelések létrehozásához. Az alapértelmezett rendelésbeállítások lehetnek cikkspecifikusak, helyspecifikusak, termékváltozat-specifikusak vagy termékdimenzió-specifikusak.
 
-Az alapértelmezett rendelésbeállításokat az **Alapértelmezett rendelésbeállítások** oldalon lehet beállítani. Az oldal megnyitásához menjen a **Termékinformációk kezelése** &gt; **Termékek** &gt; **Kiadott termékek** opcióra &gt; **Válassza ki a kiadott terméket** &gt; a **Terven**. Illetve mehet a **Készletkezelés** &gt; **Rendelésbeállítások** &gt; **Alapértelmezett rendelésbeállítások** lehetőségre is.
+A termék alapértelmezett rendelési beállításainak megadásához kövesse az alábbi lépéseket.
+
+1. Kattintson a **Termékinformációk kezelése** &gt; **Termékek** &gt; **Kiadott termékek** lehetőségre.
+1. Válassza ki a releváns terméket a rácsban.
+1. A műveleti panelen hajtsa végre a következő lépések valamelyikét, hogy megnyithassa a választott termék **Alapértelmezett rendelésbeállítások** adatlapját:
+
+    - A **Tervezés** lapon a **Rendelés beállításai** csoportban válassza az **Alapértelmezett rendelési beállítások** lehetőséget.
+    - A **Készlet kezelése** lapon a **Rendelés beállításai** csoportban válassza az **Alapértelmezett rendelési beállítások** lehetőséget.
+
+1. Konfigurálja a beállításokat a témakörben leírt további módon.
 
 ## <a name="default-order-settings"></a>Alapértelmezett rendelésbeállítások
 
@@ -74,7 +83,7 @@ Az alapértelmezett készletrendelési beállítások alkalmazandók a következ
 
 ## <a name="full-definition-of-a-released-product"></a>Egy kiadott termék teljes meghatározása
 
-A tranzakciók létrehozásakor meg kell adnia egy kiadott termék teljes meghatározását a sorban, hogy a Supply Chain Management megpróbálhassa az alapértelmezett rendelési beállításokat azonosítani. A kiadott termék teljes meghatározása azt jelenti, hogy a cikkszámot és az összes az aktív termékdimenziót, például a konfigurációt, méretet, stílus és a színt, megadták a tranzakcióban. Például, ha egy kiadott termékváltozathoz tartozó rendelési sort manuális hoz létre, meg kell adnia minden szükséges termékdimenziót, mielőtt a telephely, raktár, mennyiségek és átfutási idő megjelenik a rendeléssorban szereplő alapértelmezés szerint. 
+Amikor tranzakciót hoz létre, pontosan meg kell adja a kiadott termék meghatározását a sorban, így a Supply Chain Management megpróbálhatja azonosítani az alapértelmezett rendelési beállításokat. A kiadott termék teljes meghatározásában a cikk száma és minden aktív termékdimenzió, mint például a konfigurálás, a méret, a stílus, a verzió és a szín mind meghatározásra kerülnek a tranzakcióban. Például, ha manuálisan hoz létre egy beszerzési rendelési sort egy kiadott termékvariánsra, meg kell adjon minden szükséges termékdimenziót, mielőtt az oldal a raktár, a mennyiségek és az átfutás megjelenik alapértelmezés szerint a rendelési soron. 
 
 Az alapértelmezett rendelési beállítások paraméterei közül nem mindegyik kerül alkalmazásra, amikor rendelési vagy naplósorok jönnek létre. Az alapértelmezés szerint a mennyiségek és az átfutási idők csak szükség esetén jelennek meg. Például a naplósor megszámolásakor csak a telephely és raktár jelenik meg alapértelmezés szerint a sor létrehozásakor. Éppen ezért nincs alapértelmezett mennyiség, illetve nincsenek ellenőrzések a többszörösökön vagy a minimum értékeken a sor létrehozásakor vagy a napló feladásakor. 
 
@@ -96,7 +105,7 @@ Egyedi kiadott termékek esetében általános rendelési beállításokat vagy 
 
 ### <a name="site-specific-order-settings"></a>Helyspecifikus rendelésbeállítások
 
-Helyspecifikus rendelésbeállítások létrehozásához válassza ki az **Új** lehetőséget. A **Részletes nézetben** töltse ki a helyet a **Vonatkozó beállítások** &gt; **Hely** mezőjében. A **Rács nézetben**, töltse ki a helyet a **Hely** oszlopban. Az új szabály automatikusan kap egy új helyezést, amely magasabb, mint nulla. Tetszőleges számú helyspecifikus szabályokat hozhat létre, és az összes helyspecifikus szabályhoz hozzárendelheti ugyanazt a helyezést, amivel azt jelzi, hogy azok ugyanolyan fontosak. 
+Helyspecifikus rendelésbeállítások létrehozásához válassza ki az **Új** lehetőséget. A **Részletek nézet** menüpontban, adja meg a helyet a **Hely** mezőben, a **Vonatkozó beállítások** részben. A **Rácsnézet**-ben , adja meg a helyet a **Hely** oszlopban. Az új szabály automatikusan kap egy új helyezést, amely magasabb, mint 0 (nulla). Annyi helyspecifikus szabályt hozhat létre, amennyire csak szüksége van. Hogy jelezze, hogy egyformán fontosak, hozzájuk rendelheti ugyanazon helyezési számot az összes helyspecifikus szabályhoz.
 
 Ha a **Részletes nézetben** van, akkor nem lehet áttekinteni a cikkhez létrehozott szabályokat. Használja a **Lista megjelenítése/elrejtése** gombot az áttekintő adatok megjelenítéséhez. Amikor létrehoznak egy bármilyen típusú rendeléssort, és nincs megadva hely, a Supply Chain Management keres egy olyan szabályt, amelyhez nincs megadva telephely. Ez segít meghatározni a rendeléssorban szereplő alapértelmezett helyet. Ezt a helyet használja ezután a rendszer, hogy egy olyan helyspecifikus szabályt találjon, ahol az alapértelmezett raktárt esetleg beállították. Ez a raktár vonatkozik a rendelési sorra.
 
@@ -111,41 +120,41 @@ Tételezzük fel a következő termékpéldát:
 | **Termék neve**                                    | Fotoelektromos érzékelő                    |
 | **Cikkszám**                                     | XW56                                    |
 | **Konfiguráció** (a fény típusának modellezéséhez használatos) | C1 látható piros fény, C2 infravörös fény |
-| **Stílus** (mérnöki felülvizsgálat modellezéséhez használatos)  | R1, R2, R3                              |
+| **Verzió** | V1, V2, V3                              |
 
 Ebben a példában azt feltételezzük, hogy a terméket beszerzik és nem gyártják. Azt is feltételezzük, hogy a C1 konfigurációt gyakrabban használják, ezért rövidebb az átfutási ideje. 
 
 Hozza létre a következő alapértelmezett rendelésbeállítást a jelen eset modellezéséhez.
 
-| Helyezés | Telephely | Konfiguráció | Stílus | Beszerzés - Alapértelmezett beállítások felülbírálása | Beszerzés átfutási ideje | Beszerzés - Leállítva | Értékesítés - Alapértelmezett beállítások felülbírálása | Értékesítés - leállítva |
+| Helyezés | Hely | Konfiguráció | Verzió | Beszerzés - Alapértelmezett beállítások felülbírálása | Beszerzés átfutási ideje | Beszerzés - Leállítva | Értékesítés - Alapértelmezett beállítások felülbírálása | Értékesítés - leállítva |
 |------|------|---------------|-------|--------------------------------------|--------------------|--------------------|-----------------------------------|-----------------|
 | 10   |      | C1            |       | Igen                                  | 2                  |                    |                                   |                 |
 | 0    |      |               |       |                                      | 5                  |                    |                                   |                 |
 
-Amikor a beszerzési rendeléssor vagy a tervezett beszerzési rendelés létrejön az XW56, C1 konfigurációjához, a verziótól vagy a telephelytől függetlenül, a sor el van helyezve, és az átfutási idő feltételezett értéke 2. Tegyük fel, hogy az R3 verzión kívül mindegyik verzió leállt.
+Amikor egy beszerzési rendelési sor vagy egy tervezett beszerzési rendelés kerül létrehozásra az XW56 cikkre, a C1-es konfigurációval, tekintet nélkül a verzióra, vagy a helyre, ahová a sor elhelyezésre kerül, az átfutási idő 2-ként lesz megadva. Tegyük fel, hogy az V3 verzión kívül mindegyik verzió leállt.
 
 A következő alapértelmezett rendelésbeállítási szabályokat lehet létrehozni.
 
-| Helyezés | Telephely | Konfiguráció | Stílus | Beszerzés - Alapértelmezett beállítások felülbírálása | Beszerzés átfutási ideje | Beszerzés - Leállítva | Értékesítés - Alapértelmezett beállítások felülbírálása | Értékesítés - leállítva |
+| Helyezés | Hely | Konfiguráció | Verzió | Beszerzés - Alapértelmezett beállítások felülbírálása | Beszerzés átfutási ideje | Beszerzés - Leállítva | Értékesítés - Alapértelmezett beállítások felülbírálása | Értékesítés - leállítva |
 |------|------|---------------|-------|--------------------------------------|--------------------|--------------------|-----------------------------------|-----------------|
-| 20   |      |               | R2    | Igen                                  |                    | Igen                | Igen                               | Igen             |
-| 20   |      |               | R1    | Igen                                  |                    | Igen                | Igen                               | Igen             |
+| 20   |      |               | V2    | Igen                                  |                    | Igen                | Igen                               | Igen             |
+| 20   |      |               | V1    | Igen                                  |                    | Igen                | Igen                               | Igen             |
 | 10   |      | C1            |       | Igen                                  | 2                  |                    |                                   |                 |
 | 0    |      |               |       |                                      | 5                  |                    |                                   |                 |
 
-A régi verziók leállításának két szabálya azonos helyezéssel rendelkezik, ami azt jelenti, azok ugyanolyan fontosak. Mindkettő helyezése magasabb, mint a C1 konfigurációra vonatkozó szabályé, ez azt jelenti, hogy elsőbbséget élveznek a C1 konfigurációs szabállyal szemben. 
+A két szabály a régi verziók leállítására ugyanolyan rangsorolással rendelkeznek. Ettől még egyformán fontosak. Mivel hogy mindkét szabálynak magasabb rangsorolása van a C1 konfigurációban, elsőbbséget élveznek a C1 konfiguráció szabályával szemben. 
 
-Ez a példa ismerteti a rangsorolását szükségességét. Ha egy beszerzési rendelést hoznak létre a C1 konfigurációhoz és az R2 verzióhoz, a rangsorolását hiányában az R2-re és a C1-re meghatározott két szabály nem lenne egyértelmű. A félreérthetőség megoldására a Supply Chain Management keresést végez a szabályok között, csökkenő sorrendben, és az első vonatkozó szabályt alkalmazza. A jelen példában, amikor beszerzési rendeléssort hoznak létre a C1 konfigurációhoz és az R2 verzióhoz, a felhasználó figyelmeztetést kap, hogy a cikk várakoztatva van, és ennek oka a verzió értéke. Ha a konfigurációra vonatkozó szabály helyezése magasabb lenne, mint a verzióra vonatkozó szabályé, akkor a C1 konfiguráció és az R2 verzió beszerzési rendeléssor létrehozása sikerült volna, és a felhasználó nem kapott volna „cikk várakoztatva” üzenetet. 
+Ez a példa ismerteti a rangsorolását szükségességét. Ha a besorolás nincs használva, amikor egy beszerzési rendelés kerül létrehozásra a C1 konfigurációban vagy a V2 verzióban, a két szabály, ami a V2-ben és C1-ben van megadva, ütközni fognak. A félreérthetőség megoldására a Supply Chain Management keresést végez a szabályok között, csökkenő sorrendben, és az első vonatkozó szabályt alkalmazza. A jelen példában, mikor egy beszerzési rendelési sor kerül hozzáadásra a C1 konfigurációban és a V2 verzióban, a felhasználó figyelmeztető üzenetet kap arról, hogy a cikk várakoztatott állapotú, és arról, hogy ezt a várakoztatást a verzió értéke okozta. Ha a konfiguráció szabálya magasabb rangsorolási értékkel bír, mint a verzióhoz tartozó szabály, a beszerzési rendelési sor sikeresen létrehozásra kerül a C1 konfigurációban és a V2 verzióban, és a felhasználó nem kap üzenetet "várakoztatott állapotú cikkről". 
 
 Vegye figyelembe a következő, alapértelmezett rendelésbeállítási szabályokat.
 
-| Helyezés | Telephely | Konfiguráció | Stílus | Alapértelmezett hely | Alapértelmezett raktár | Beszerzés - Alapértelmezett tárolási dimenzió felülbírálása | Beszerzési raktár |
+| Helyezés | Hely | Konfiguráció | Verzió | Alapértelmezett hely | Alapértelmezett raktár | Beszerzés - Alapértelmezett tárolási dimenzió felülbírálása | Beszerzési raktár |
 |------|------|---------------|-------|--------------|-------------------|------------------------------------------------|--------------------|
 | 20   | 2    |               |       |              |                   | Igen                                            | 22                 |
-| 10   |      | C1            |  R2   |  2           |  21               |                                                |                    |
+| 10   |      | C1            |  V2   |  2           |  21               |                                                |                    |
 | 0    |      |               |       | 1            | 11                |                                                |                    |
 
-A rendszer kétszer bejárja a szabálykészletet, hogy meghatározza a helyet és a raktárt. Amikor egy beszerzési rendeléssort hoznak létre a C1 konfigurációhoz és az R2 stílushoz, a hely meghatározása a 10. helyezésű szabály alapján történik. Ezután a rendszer keres egy szabályt a 2. helyhez, hogy meghatározza a raktárt. Megtalálja a 20. szabályt, és mivel ennek magasabb a rangsorolása, a beszerzési rendeléssoron szereplő raktár 22 lesz, és nem 21.
+A rendszer kétszer bejárja a szabálykészletet, hogy meghatározza a helyet és a raktárt. Amikor egy beszerzési rendelési sort hoznak létre a C1 konfigurációban és az V2 verzióban, a hely meghatározása a 10. rangsorolású szabály alapján történik. A rendszer ezután szabályokat keres egy 2-es számú helyhez, amely meghatároz egy raktárt. A 20-as szabály megtalálásra került, és ezért nagyobb rangsorolási számot kap, a raktár a beszerzési rendelési soron 22-es lesz, nem 21-es.
 
 Általános útmutatásként: a specifikus szabályok és az olyan dimenziókra vonatkozó szabályok, amelyek fontosabbak más dimenzióknál, magasabb helyezést kapnak, míg az általánosabb szabályok rangsorolása alacsonyabb. 
 
@@ -159,14 +168,14 @@ Egy kiadott termékhez létrehozott szabályok száma nagy lehet. Ahhoz, hogy jo
 
 Ha az alapértelmezett rendelési beállításokra vonatkozó szabály túl nehézkes, lehetőség van arra is, hogy meghatározzák az alapértelmezett rendelési beállításokat minden termékváltozathoz. A következő példa megmutatja, hogy ez hogy néz ki a fentiekben ismertetett terméknél és eseteknél.
 
-| Helyezés | Telephely | Konfiguráció | Stílus | Beszerzés - Alapértelmezett beállítások felülbírálása | Beszerzés átfutási ideje | Beszerzés - Leállítva | Értékesítés - Alapértelmezett beállítások felülbírálása | Értékesítés - leállítva |
+| Helyezés | Hely | Konfiguráció | Verzió | Beszerzés - Alapértelmezett beállítások felülbírálása | Beszerzés átfutási ideje | Beszerzés - Leállítva | Értékesítés - Alapértelmezett beállítások felülbírálása | Értékesítés - leállítva |
 |------|------|---------------|-------|--------------------------------------|--------------------|--------------------|-----------------------------------|-----------------|
-| 10   |      | C2            | R3    | Igen                                  | 5                  |                    |                                   |                 |
-| 10   |      | C2            | R2    | Igen                                  | 5                  | Igen                | Igen                               | Igen             |
-| 10   |      | C2            | R1    | Igen                                  | 5                  | Igen                | Igen                               | Igen             |
-| 10   |      | C1            | R3    | Igen                                  | 2                  |                    |                                   |                 |
-| 10   |      | C1            | R2    | Igen                                  | 2                  | Igen                | Igen                               | Igen             |
-| 10   |      | C1            | R1    | Igen                                  | 2                  | Igen                | Igen                               | Igen             |
+| 10   |      | C2            | V3    | Igen                                  | 5                  |                    |                                   |                 |
+| 10   |      | C2            | V2    | Igen                                  | 5                  | Igen                | Igen                               | Igen             |
+| 10   |      | C2            | V1    | Igen                                  | 5                  | Igen                | Igen                               | Igen             |
+| 10   |      | C1            | V3    | Igen                                  | 2                  |                    |                                   |                 |
+| 10   |      | C1            | V2    | Igen                                  | 2                  | Igen                | Igen                               | Igen             |
+| 10   |      | C1            | V1    | Igen                                  | 2                  | Igen                | Igen                               | Igen             |
 | 0    |      |               |       |                                      | 5                  |                    |                                   |                 |
 
 A rangsorban elfoglalt hely ebben az esetben nem nagyon számít, így el is lehet rejteni. Ez a megoldás potenciálisan karbantartási eseményt vált ki. Ugyanakkor érdemes fontolóra venni ennek a beállításnak a használatát, ha Termékéletciklus-kezelés (PLM) rendszerekkel való integrációt tervez.

@@ -1,9 +1,9 @@
 ---
 title: Pénzügyi jelentéskészítés – áttekintés
-description: Ez a témakör azt ismerteti, hol érheti el a Microsoft Dynamics 365 Finance pénzügyi jelentéseit, és hogyan használhatja a pénzügyi jelentési képességeket. Emellett az elérhető alapértelmezett pénzügyi jelentések leírását is tartalmazza.
+description: Ez a témakör azt ismerteti, hol érheti el a Microsoft Dynamics 365 Finance pénzügyi jelentéseit, és hogyan használhatja a pénzügyi jelentési képességeket.
 author: aprilolson
 manager: AnnBe
-ms.date: 07/23/2020
+ms.date: 08/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 86022b662c265b4b98f6df86647f61ea35d31432
-ms.sourcegitcommit: f5200f37c6c436183b4ee5711026ef92a7cb9538
+ms.openlocfilehash: 1944eda5fe933ff9fdf2b9a837eb2336e8b3a0d5
+ms.sourcegitcommit: 1322b94f10470e1728cf330d2d64f1471838c055
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "3618038"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "3696688"
 ---
-# <a name="financial-reporting-overview"></a>Pénzügyi jelentéskészítés – áttekintés
+# <a name="get-started-with-financial-reporting"></a>Financial Reporting – első lépések 
 
 [!include [banner](../includes/banner.md)]
 
@@ -88,7 +88,7 @@ Miután hozzáadtunk egy felhasználót vagy egy szerepkör módosult, a felhasz
 A jelentést generáló felhasználók törölhetik saját jelentéseiket. A **Pénzügyi jelentések biztonságának karbantartása** feladattal rendelkező felhasználók törölhetik mások jelentéseit. 
 
 A 10.0.8-as verzióban bevezettük a lejárati dátumok koncepcióját. Egy új kötelező funkciót engedélyezük az **Összes** oldalon a funkciókezelési munkaterületen. A **Pénzügyi jelentés megőrzésével kapcsolatos irányelvek** funkcióban a következő módosítások történtek:
-* Az újonnan létrehozott jelentések automatikusan meg lesznek jelölve a létrehozásuktól számított 90 napos lejárati dátummal
+* Az újonnan létrehozott jelentések automatikusan meg lesznek jelölve a létrehozásuktól számított 90 napos lejárati dátummal.
 * A funkció telepítése előttről származó meglévő jelentések mindegyike 90 napos lejárati időszakot kap. A dátum egy rövid időre üresen jelenhet meg, amíg a pénzügyi jelentéskészítési szolgáltatás fut, a jelentés létrejön, és a szolgáltatás frissíti az üres lejárati dátummal rendelkező meglévő jelentéseket. 
 * Ehhez a funkcióhoz a **Pénzügyi jelentések biztonságának karbantartása** feladattal rendelkező felhasználók férhetnek hozzá. A **Pénzügyi jelentések lejáratának karbantartása** jogosultságot kapott, **Pénzügyi jelentések karbantartása** feladattal rendelkező felhasználók mindegyike szintén rendelkezik a lejárati idő módosításának képességével. Jelenleg két megőrzési lehetőség áll rendelkezésre: 
   * 90 napos lejárat.
@@ -134,6 +134,12 @@ Amikor rákattint a **Pénzügyi jelentéskészítés** menüre, a vállalat ala
 ## <a name="creating-and-modifying-financial-reports"></a>Pénzügyi jelentések létrehozása és módosítása
 A pénzügyi jelentések listából új jelentést hozhat létre, vagy módosíthat egy meglévő jelentést. Ha rendelkezik a megfelelő engedélyekkel, új pénzügyi jelentést hozhat létre az **Új** gombra kattintva a műveletpanelen. Letöltődik a készülékére egy jelentéstervező program. A jelentéstervező elindulása után új jelentést hozhat létre. Az új jelentés mentése után megjelenik a pénzügyi jelentések listájában. A listában csak a Dynamics 365 Finance rendszerben használt vállalatra vonatkozó jelentések jelennek meg. 
 
+## <a name="reporting-tree-definitions"></a>Jelentési-fa definíciók 
+A pénzügyi jelentések létrehozásához használt összetevők egyike a jelentések fastruktúrájának definíciója. Jelentési fa meghatározása segít a szervezeti szerkezet és hierarchia meghatározásában. Ez egy dimenziókon átnyúló hierarchia a pénzügyi adatok dimenzionális kapcsolatai alapján. Jelentési egység és összefoglaló szinten biztosít információt a fa minden eleméről.
+
+Korlátlan számú jelentési fát hozhat létre, hogy szervezete adatait különböző módokon jeleníthesse meg. Az egyes jelentési fák az osztályok és az összesítő egységek bármilyen kombinációját tartalmazhatják, de egy jelentésdefiníciót egyszerre csak egy jelentési fával lehet összekapcsolni. 
+
+
 ## <a name="troubleshooting-issues-opening-report-designer"></a>A jelentéskészítő megnyitásakor jelentkező problémák elhárítása
 A jelentéskészítő megnyitásakor problémák merülhetnek fel néhány gyakori probléma esetében. Ezek a problémák és a problémamegoldás lépései a következők:
 
@@ -155,10 +161,11 @@ A Microsoft .NET Framework ezen verziója a [Microsoft letöltőközpontból](ht
   Ha egy másik felhasználó megnyithatja a Jelentéskészítőt, válassza az **Eszközök** elemet , majd kiválaszthatja az **integráció állapota** elemet. Győződjön meg róla, hogy az integrációs leképezés „Vállalat felhasználói biztosítója a vállalatnak” sikeresen lefutott, mert Önhöz hozzárendelték a Financial Reporting használati jogosultságát. 
 * Előfordulhat, hogy egy másik hiba megakadályozta a **Dynamics felhasználó és Financial Reporting felhasználói integrációt** a befejezéstől. Vagy előfordulhat, hogy az adatpiac alaphelyzetbe állítása megtörtént, de még nem fejeződött be, vagy más rendszerhiba történt. Próbálja meg újra futtatni a folyamatot később. Ha a probléma továbbra is fennáll, forduljon a rendszergazdához.
 
-3. probléma: Továbbléphet a ClickOnce-jelentéskészítő bejelentkező lapjain, de a Jelentéskészítőben nem hajtható végre a bejelentkezés. 
+3. probléma: Továbbléphet a ClickOnce-jelentéstervező bejelentkezési oldalán, de a Jelentéskészítőben nem hajtható végre a bejelentkezés. 
 
-* A helyi számítógépen a bejelentkezési hitelesítő adatok megadásakor beállított idő csak a Financial Reporting kiszolgáló idejétől számított öt percen belül lehet. Ha több mint öt perc eltérés van, akkor a rendszer nem engedélyezi a bejelentkezést. 
+* A helyi számítógépen a bejelentkezési hitelesítő adatok megadásakor beállított idő csak a Financial Reporting kiszolgáló idejétől számított öt percen belül lehet. Ha több, mint öt perc eltérés van, akkor a rendszer nem engedélyezi a bejelentkezést. 
 * Ebben az esetben azt javasoljuk, hogy a Windows automatikus beállításával engedélyezze a számítógép idejét. 
 
 ## <a name="additional-resources"></a>További erőforrások
 - [Pénzügyi jelentések megtekintése](view-financial-reports.md)
+- [Jelentési fa definíciója a pénzügyi jelentésekben](../../fin-ops-core/dev-itpro/analytics/financial-reporting-tree-definitions.md)

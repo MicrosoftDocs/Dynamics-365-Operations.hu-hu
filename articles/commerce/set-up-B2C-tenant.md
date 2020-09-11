@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: BriShoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: b017b0f91960be1504134f6d46878fce956de203
-ms.sourcegitcommit: 8a1621327568edf49758b70964e0a3e637527e1b
+ms.openlocfilehash: f31f8898358626f2b008826aa69694dc16742aa0
+ms.sourcegitcommit: 59a9e840989bc9f2c7004efa3499b69c09a91b06
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/22/2020
-ms.locfileid: "3497168"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "3677904"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>B2C-bérlő beállítása a Commerce-ben
 
@@ -77,7 +77,7 @@ Miután a B2C bérlő létrejött, egy B2C alkalmazást fog létrehozni a bérl�
 
 A B2C alkalmazás létrehozásához kövesse az alábbi lépéseket.
 
-1. Az Azure portálon válassz az **Alkalmazások** lehetőséget, majd válassza a **Hozzáadás** elemet.
+1. Az Azure portálon válassz az **Alkalmazások(örökölt)** lehetőséget, majd válassza a **Hozzáadás** elemet.
 1. A **Név** mezőbe írja be a kívánt AAD B2C alkalmazás nevét.
 1. A **Webalkalmazás/webes API** esetén a **Webalkalmazás / webes API belefoglalása**elemnél válassza az **Igen** lehetőséget.
 1. Az **Implicit folyamatengedélyezése** alatt válassza az **Igen** lehetőséget (az alapértelmezett érték).

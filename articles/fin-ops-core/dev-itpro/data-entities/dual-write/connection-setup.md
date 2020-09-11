@@ -3,7 +3,7 @@ title: A kettős írás beállítás támogatott forgatókönyvei
 description: Ez a témakör azt mutatja be, hogy milyen eseteket támogat a kettős írás beállítás.
 author: RamaKrishnamoorthy
 manager: AnnBe
-ms.date: 01/06/2020
+ms.date: 08/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: d7ff514768ee8e4797b591da89e190a855385885
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: 275d24d8f32fd1d2d15356d14c5c6591e8503c65
+ms.sourcegitcommit: ec4df354602c20f48f8581bfe5be0c04c66d2927
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172854"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "3706252"
 ---
 # <a name="supported-scenarios-for-dual-write-setup"></a>A kettős írás beállítás támogatott forgatókönyvei
 
@@ -34,8 +34,11 @@ ms.locfileid: "3172854"
 
 Egy Finance and Operations-környezet és egy Common Data Service-környezet között kettős írás kapcsolatot állíthat be.
 
-+ Egy **Finance and Operations-környezet** a háttérplatformot biztosítja a **Finance and Operations-alkalmazásokhoz** (például a Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Retail és Dynamics 365 Human Resources).
++ Egy **Finance and Operations-környezet** a háttérplatformot biztosítja a **Finance and Operations-alkalmazásokhoz** (például Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, és Dynamics 365 Retail).
 + A **Common Data Service-környezet** biztosítja a **Dynamics 365 modellvezérelt alkalmazások alapjául szolgáló platformot** (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, és Dynamics 365 Project Service Automation).
+
+>[!IMPORTANT]
+>Az Emberi erőforrások a Finance and Operations kettős írás kapcsolatok használatát támogatják, de az Dynamics 365 Human Resources alkalmazás nem.
 
 A beállítási mechanizmus az előfizetéstől és a környezettől függően változik.
 

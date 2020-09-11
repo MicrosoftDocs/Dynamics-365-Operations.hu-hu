@@ -1,6 +1,6 @@
 ---
 title: A Dynamics 365 Human Resources új vagy módosult elemei (2020. július 08.)
-description: Ez a témakör a Microsoft Dynamics 365 Human Resources új vagy módosított szolgáltatásait írja le.
+description: Ez a témakör a Microsoft Dynamics 365 Human Resources új vagy módosított szolgáltatásait írja le a 2020. július 8-i kiadásban.
 author: Darinkramer
 manager: AnnBe
 ms.date: 07/08/2020
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c4382aa7473e2b67201ac00753ac9abe11b3c646
-ms.sourcegitcommit: 81296c49be9953aa01e15527c34d0ef13b4622a9
+ms.openlocfilehash: d2f542195693e825391b85efc4a7e91fdfea3944
+ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "3614362"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3711892"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-july-8-2020"></a>A Dynamics 365 Human Resources új vagy módosult elemei (2020. július 8.)
 
@@ -105,7 +105,7 @@ Néhány szervezet olyan juttatást biztosít, amely lehetővé teszi az alkalma
 
 ## <a name="leave-accrual-for-a-single-company-or-single-plan"></a>Szabadság elhatárolása egyetlen vállalat vagy egy terv esetében
 
-A vevők az elhatárolást egyetlen vállalatra vagy egyetlen szabadságtervhez is feldolgozhatják. Ez a képesség tisztává teszi az elhatárolási folyamatot a különböző szabadságévekkel rendelkező vagy elhatárolási házirendekkel rendelkező vevők esetében. A további tudnivalókat lásd: [Szabadság elhatárolása vállalatonként vagy szabadság tervenként](hr-leave-and-absence-accrue.md#accrue-leave-per-company-or-per-leave-plan).
+A vevők az elhatárolást egyetlen vállalatra vagy egyetlen szabadságtervhez is feldolgozhatják. Ez a képesség tisztává teszi az elhatárolási folyamatot a különböző szabadságévekkel rendelkező vagy elhatárolási házirendekkel rendelkező vevők esetében. A további tudnivalókat lásd: [Szabadság elhatárolása vállalatonként vagy szabadság tervenként](hr-leave-and-absence-accrue.md).
 
 ## <a name="add-attachments-to-time-off-requests"></a>Mellékletek hozzáadása szabadságkérelmekhez
 

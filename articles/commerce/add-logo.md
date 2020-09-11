@@ -19,15 +19,14 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5fc0673dcdcc8b761089be2c2d201c8488128865
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 62b8237fa0c30fa9d901d670de38416cf8615c8d
+ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025699"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "3686646"
 ---
 # <a name="add-a-logo"></a>Embléma hozzáadása
-
 
 [!include [banner](includes/banner.md)]
 
@@ -51,7 +50,7 @@ Mielőtt hozzáadná a logót a webhely összes oldalához, végre kell hajtania
 
 A logó hozzáadásához a webhelye fejléctöredékéhez, kövesse az alábbi lépéseket.
 
-1. A bal oldali navigációs ablakban válassza ki az **Oldaltöredékek** lehetőséget.
+1. A bal oldali navigációs ablakban válassza ki a **Töredékek** lehetőséget.
 1. Válassza ki a létrehozott fejléctöredéket, majd válassza a **Szerkesztés** parancsot.
 1. Nyissa meg a fejléc modult.
 1. A fejléc modul tulajdonságpanelján adjon meg egy képet és egy hivatkozást az emblémát. 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2019-08-14
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: dd1df355d39065d6959915cc916987d3c58b15a6
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 93c9f2bebd038723d50e64bdaa0e0992c003f88d
+ms.sourcegitcommit: cec5de2dcfc7210a86a220e308f80ab204f12383
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2570194"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "3665842"
 ---
 # <a name="sales-tax-calculation-on-general-journal-lines"></a>Áfa számítása az általános naplósorokhoz
 [!include [banner](../includes/banner.md)]
@@ -64,23 +64,6 @@ A következő ábra grafikusan illusztrálja a szabályt.
 
 Ha egy bizonylat olyan naplósorral rendelkezik, amelyben a számlatípus a **Szállító**, akkor a bizonylat minden naplója ugyanarra az adózási irányra vonatkozik. A következő pontok a lehetséges adóügyi irányokat mutatják a szállító számlái esetében. 
 
-• Ha az áfakód adómentes, akkor a forgalmi adó iránya adómentes vásárlás.
-
-• Ha az áfakód közösségen belüli áfa, akkor a forgalmi adó iránya visszaigényelhető áfa.
-
-• Ha az áfakód fordított áfa, akkor a forgalmi adó iránya visszaigényelhető áfa.
-
-
-Ellenkező esetben az áfa iránya a fizetendő áfa.
-
-A következő ábra grafikusan illusztrálja a szabályt.
-
-![A szállítóhoz tartozó számlák adózási irányának lehetőségei](media/Sales-Tax-Direction-Vendor.jpg)
-
-### <a name="account-type-is-customer"></a>Számla típusa ügyfél
-
-Ha egy bizonylat olyan naplósorral rendelkezik, amelyben a számlatípus a **Ügyfél**, akkor a bizonylat minden naplója ugyanarra az adózási irányra vonatkozik. A következő pontok a lehetséges adóügyi irányokat mutatják az ügyfél számlái esetében.
-
 • Ha az áfakód importadó, akkor a forgalmi adó iránya importadó.
 
 • Ha az áfakód adómentes, akkor a forgalmi adó iránya adómentes vásárlás.
@@ -90,6 +73,22 @@ Ha egy bizonylat olyan naplósorral rendelkezik, amelyben a számlatípus a **Ü
 • Ha az áfakód fordított áfa, akkor a forgalmi adó iránya fizetendő áfa.
 
 Ellenkező esetben az áfa iránya a visszaigényelhető áfa.
+
+A következő ábra grafikusan illusztrálja a szabályt.
+
+![A szállítóhoz tartozó számlák adózási irányának lehetőségei](media/Sales-Tax-Direction-Vendor.jpg)
+
+### <a name="account-type-is-customer"></a>Számla típusa ügyfél
+
+Ha egy bizonylat olyan naplósorral rendelkezik, amelyben a számlatípus a **Ügyfél**, akkor a bizonylat minden naplója ugyanarra az adózási irányra vonatkozik. A következő pontok a lehetséges adóügyi irányokat mutatják az ügyfél számlái esetében.
+
+• Ha az áfakód adómentes, akkor a forgalmi adó iránya adómentes vásárlás.
+
+• Ha az áfakód közösségen belüli áfa, akkor a forgalmi adó iránya visszaigényelhető áfa.
+
+• Ha az áfakód fordított áfa, akkor a forgalmi adó iránya visszaigényelhető áfa.
+
+Ellenkező esetben az áfa iránya a fizetendő áfa.
 
 A következő ábra grafikusan illusztrálja a szabályt.
 

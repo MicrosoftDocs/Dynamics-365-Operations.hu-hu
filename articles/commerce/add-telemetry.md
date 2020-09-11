@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 81c36685c1eccceb2f1854fe7c866186120c08a3
-ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
+ms.openlocfilehash: 4f26ed5b6674566f579e801f4b7be63c2d0dc38d
+ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154086"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "3686814"
 ---
 # <a name="add-script-code-to-site-pages-to-support-telemetry"></a>Parancsfájl hozzáadása a webhely oldalaihoz a telemetria támogatásához
 
@@ -32,7 +32,7 @@ Ez a témakör azt mutatja be, hogyan lehet ügyféloldali parancsfájlt hozzáa
 
 ## <a name="overview"></a>Áttekintés
 
-A webanalitika fontos eszköz, ha meg szeretné tudni, hogyan lépnek interakcióba a vevők a webhellyel, és amelyek alapján a felhasználói élmény maximális konverzió érdekében történő optimalizálására szolgáló döntéseket hozhat. Számos webes elemzési csomag érhető el, amely segít elérni ezeket a célokat, például a Google Analytics, a Clicky, a Moz Analytics és a KISSMetrics. A legtöbb webanalitikai csomag megköveteli, hogy a webhely összes oldalán található HTML **\<head\>**-eleméhez hozzáadjon ügyféloldali parancsfájlkódot.
+A webanalitika fontos eszköz, ha meg szeretné tudni, hogyan lépnek interakcióba a vevők a webhellyel, és amelyek alapján a felhasználói élmény maximális konverzió érdekében történő optimalizálására szolgáló döntéseket hozhat. Számos webes elemzési csomag érhető el, amely segít elérni ezeket a célokat, például a Google Analytics, a Clicky, a Moz Analytics és a KISSMetrics. A legtöbb webanalitikai csomag megköveteli, hogy ügyféloldali parancsfájlt adjon meg a HTML **\<head\>**  elemében a weboldala minden oldalán.
 
 > [!NOTE]
 > Az ebben a témakörben található utasítások a Microsoft Dynamics 365 Commerce által natív módon nem kínált egyéni ügyféloldali funkciókra is vonatkoznak.
@@ -45,9 +45,9 @@ Az oldaltöredékek lehetővé teszik a belső és a külső parancsfájlkódok 
 
 A webhelykészítőben a szövegközi parancsfájlkódhoz tartozó újrahasználható oldaltöredék létrehozásához kövesse az alábbi lépéseket.
 
-1. Lépjen az **Oldaltöredékek** pontra, majd válassza az **Új** lehetőséget.
-1. Az **Új oldaltöredék** párbeszédablakban válassza a **Szövegközi parancsfájl** lehetőséget.
-1. Az **Oldaltöredék neve** pontban adja meg a töredék nevét, majd válassza az **OK** lehetőséget.
+1. Lépjen a **Töredékek** pontra, majd válassza az **Új** lehetőséget.
+1. Az **Új oldaltöredék** párbeszédpanelen válassza ki a **Szövegközi parancsfájl** lehetőséget.
+1. Az **Oldaltöredék neve** pontban adja meg a töredék nevét, majd válassza ki az **OK** lehetőséget.
 1. Válassza ki az **alapértelmezett szövegközi parancsfájl** modult a létrehozott lapok között.
 1. A jobb oldali ablaktáblában a **Szövegközi parancsfájl** területen adja meg a kliensoldali parancsfájlt. Ezt követően konfigurálja a szükséges egyéb beállításokat.
 1. Válassza a **Mentés** parancsot, majd válassza a **Szerkesztés befejezése** elemet.
@@ -57,9 +57,9 @@ A webhelykészítőben a szövegközi parancsfájlkódhoz tartozó újrahasznál
 
 A webhelykészítőben a külső parancsfájlkódhoz tartozó újrahasználható oldaltöredék létrehozásához kövesse az alábbi lépéseket.
 
-1. Lépjen az **Oldaltöredékek** pontra, majd válassza az **Új** lehetőséget.
-1. Az **Új oldaltöredék** párbeszédablakban válassza a **Külső parancsfájl** lehetőséget.
-1. Az **Oldaltöredék neve** pontban adja meg a töredék nevét, majd válassza az **OK** lehetőséget.
+1. Lépjen a **Töredékek** pontra, majd válassza az **Új** lehetőséget.
+1. Az **Új oldaltöredék** párbeszédpanelen válassza ki a **Külső parancsfájl** lehetőséget.
+1. Az **Oldaltöredék neve** pontban adja meg a töredék nevét, majd válassza ki az **OK** lehetőséget.
 1. Válassza ki az **alapértelmezett külső parancsfájl** modult a létrehozott lapok között.
 1. A jobb oldali ablaktáblában a **Parancsfájl forrása** területen adja meg a külső parancsfájlhoz tartozó külső vagy kapcsolódó URL-címet. Ezt követően konfigurálja a szükséges egyéb beállításokat.
 1. Válassza a **Mentés** parancsot, majd válassza a **Szerkesztés befejezése** elemet.

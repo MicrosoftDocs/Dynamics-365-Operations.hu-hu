@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: b10e5f0fe97e65ad380e85815c56e88a3ce4e303
-ms.sourcegitcommit: cf709f1421a0bf66ecea493088ecb4eb08004187
+ms.openlocfilehash: a2ca0ce277a062c8d525b6a3619eaf1b0114667b
+ms.sourcegitcommit: 18c5ef10e311f3dd2dbf45c6439ae6beff921af8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "3443895"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "3719264"
 ---
 # <a name="prospect-to-cash-in-dual-write"></a>Potenciális vevők készpénzre váltása kettős írásban
 
@@ -79,7 +79,7 @@ Ha a Field Service megoldást is használja, mindenképpen engedélyezze újra a
 
 Az értékesítési rendelések létrehozása a Sales vagy Supply Chain Management programban történik. Ha a Sales alkalmazásban értékesítési rendelést hoz létre, akkor a rendszer valós időben szinkronizálja a Supply Chain Management alkalmazásba. Hasonlóan, ha a Supply Chain Management alkalmazásban értékesítési rendelést hoz létre, akkor a rendszer valós időben szinkronizálja a Sales alkalmazásba. Vegye figyelembe az alábbiakat:
 
-+ Csak akkor aktiválhatja és szinkronizálhatja a rendeléseket a Sales alkalmazásból, ha a rendelésben szereplő összes termék Finance and Operations alkalmazásokból származik. Ezért nem lehet írható termék.
++ A Dynamics 365 Sales alkalmazásban az írható termékek termékkategóriákként jelennek meg a Dynamics 365 Supply Chain Management alkalmazásban.
 + Engedmények kiszámítása és kerekítése:
 
     - A Sales árengedménykalkulációs modellje különbözik a Supply Chain Management árengedménykalkulációs modelljétől. A Supply Chain Management szolgáltatásban a záró engedmény összege az értékesítési soron az engedményösszegek és az engedményszázalékok kombinációjának eredménye is lehet. Ha ezt a végső kedvezményes árat a sorban lévő mennyiséggel osztja el a rendszer, kerekítés történhet. Ezt a kerekítést azonban nem veszik figyelembe, ha a kerekített egységenkénti engedményösszeg szinkronizálásra kerül a Sales szolgáltatással. Annak érdekében, hogy biztosítsa, hogy a Supply Chain Management értékesítési sorában szereplő teljes árengedmény helyesen szinkronizálva van a Sales-szel, a teljes összeget szinkronizálni kell, anélkül, hogy a sor mennyiségét felosztaná. Emiatt az Engedményszámítási módszer beállításnál a **Sortétel** értéket adja meg a Sales-ben.
