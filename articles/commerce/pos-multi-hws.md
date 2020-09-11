@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2019-03-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 41b0faa7ef24bdae229f7e6760d22357cb87eb0d
-ms.sourcegitcommit: 7b7cc93c0f78c6bfc7a3ea66a74a29ba0f218553
+ms.openlocfilehash: 03cb68ede82668523e6970d33df676738e65fd83
+ms.sourcegitcommit: 18c5ef10e311f3dd2dbf45c6439ae6beff921af8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "3658358"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "3719214"
 ---
 # <a name="dedicated-payment-terminals-and-prompts-for-a-printer-and-cash-drawer"></a>Dedikált fizetési terminálok és utasítások a nyomtatónak és a pénztárgépfióknak
 
@@ -78,8 +78,8 @@ A pénztárgéphez társított hardverprofil beállításához hajtsa végre az 
 
     | Eszköz | Típus | Eszköznév | További részletek |
     |---|---|---|---|
-    | Nyomtató | Tartalék | **Epson** vagy **Star** | Az eszköznév megkülönbözteti a kis- és nagybetűket. A **Nyugtaprofil azonosítója** elemnek azonosnak kell lennie a csatorna szintjén a hardverállomáshoz hozzárendelt hardverprofilban megadott hálózati nyomtató **Nyugtaprofil azonosítója** elemmel. |
-    | Pénztárfiók | Tartalék | **Epson** vagy **Star** | Az eszköznév megkülönbözteti a kis- és nagybetűket. A **Megosztott műszak használata** lehetőséget állítsa **Igen** értékre. |
+    | Nyomtató | Tartalék | *Bármely* | Az eszköznév megkülönbözteti a kis- és nagybetűket. A **Nyugtaprofil azonosítója** elemnek azonosnak kell lennie a csatorna szintjén a hardverállomáshoz hozzárendelt hardverprofilban megadott hálózati nyomtató **Nyugtaprofil azonosítója** elemmel. |
+    | Pénztárfiók | Tartalék | *Bármely* | Az eszköznév megkülönbözteti a kis- és nagybetűket. A **Megosztott műszak használata** lehetőséget állítsa **Igen** értékre. |
     | EFT szolgáltatás | Adyen | Nem alkalmazható | Az azonnal használható Adyen összekötő beállításával kapcsolatos további információkért lásd: [Dynamics 365 fizetési összekötő az Adyen szolgáltatáshoz](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3). Más fizetési összekötők is támogathatók a [Commerce szoftverfejlesztői készlet (SDK) fizetésekhez](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/end-to-end-payment-extension) használatával. |
     | PIN-billentyűzet | Hálózat | **MicrosoftAdyenDeviceV001** | Egyik sem. |
 
@@ -103,7 +103,7 @@ A hálózati nyugtanyomtató és a pénztárgépfiók csoportosítására haszn�
     | Eszköz | Típus | Leírás | További részletek |
     |---|---|---|---|
     | Nyomtató | Hálózat | **Epson** vagy **Star** | Az eszköznév megkülönbözteti a kis- és nagybetűket. A **Nyugtaprofil azonosítója** elemnek azonosnak kell lennie a pénztárgéphez hozzárendelt hardverprofilban megadott nyomtató **Nyugtaprofil azonosítója** elemmel. |
-    | Pénztárfiók | Tartalék | **Epson** vagy **Star** | Az eszköznév megkülönbözteti a kis- és nagybetűket. A **Megosztott műszak használata** lehetőséget állítsa **Igen** értékre. |
+    | Pénztárfiók | Hálózat | **Epson** vagy **Star** | Az eszköznév megkülönbözteti a kis- és nagybetűket. A **Megosztott műszak használata** lehetőséget állítsa **Igen** értékre. |
 
 5. Válassza a **Mentés** lehetőséget.
 

@@ -3,7 +3,7 @@ title: Naptárak és alaptervezés
 description: Ez a témakör áttekintést nyújt az ellátási lánc naptárakkal, illetve az alaptervezésre vonatkozó hatásukkal kapcsolatosan.
 author: t-benebo
 manager: tfehr
-ms.date: 05/08/2019
+ms.date: 08/19/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.industry: Manufacturing
 ms.author: t-benebo
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: d542c52623c1b3c0aa4b23159d56791cdc981f48
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 373af2e7bdcbf6860f21e049403fdf174d5e8ca7
+ms.sourcegitcommit: 7061a93f9f2b54aec4bc4bf0cc92691e86d383a6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3213492"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3710333"
 ---
 # <a name="calendars-and-master-planning"></a>Naptárak és alaptervezés
 
@@ -105,28 +105,28 @@ A tervezett beszerzési rendelés rendelési dátuma jelzi a rendelés leadásá
 
 ### <a name="delivery-date-of-a-planned-purchase-order"></a>Tervezett beszerzési rendelés szállítási dátuma
 Egy beszerzés kézhezvételi dátuma azt a dátumot jelzi, amikor kézhez kapja az árut. A naptárban nyitott dátum lesz. Naptár amely figyelembe lesz véve annak jelzéséhez, hogy melyik napon fogadhatók beszerzési rendelések a következők szerint lesz meghatározva a legmagasabbtól a legalacsonyabb prioritásúig: 
-    1. Szállítói naptár
-    2. Fedezetcsoport naptára
-    3. A fogadó raktár raktári naptára
+1. Szállítói naptár
+1. Fedezetcsoport naptára
+1. A fogadó raktár raktári naptára
 
 Megjegyzés: a fedezeti csoport naptára különböző lapokon is beállítható, ezek a következő sorrendben lesznek figyelembe véve:
-    1. Cikkfedezeti csoport a **Kiadott termékek részletei** lapon
-    2. Cikkfedezeti csoport a **Cikkfedezet** lapon
-    3. Alapértelmezett cikkfedezeti csoport az **Alaptervezés paramétereiben**
+1. Cikkfedezeti csoport a **Cikkfedezet** lapon
+1. Cikkfedezeti csoport a **Kiadott termékek részletei** lapon
+1. Alapértelmezett cikkfedezeti csoport az **Alaptervezés paramétereiben**
 
 ### <a name="shipping-date-of-a-planned-transfer-order"></a>Tervezett átmozgatási rendelés szállítási dátuma
 Két raktár között az átmozgatási rendelés létrehozásakor a szállítási dátum és a kézhezvételi dátum az átmozgatási rendelés fejlécében található, a „Küldő” raktárral és „Fogadó” raktárral együtt. E két dátum közötti különbség a várható szállítási idő (napokban) a raktárak között.
 
 Tervezett átmozgatási rendelés szállítási dátuma, az a dátum, amelyen a cikkek kiszállítása történik a „Küldő” raktárból. A rendelkezésre álló szállítási dátum megadására használt naptárak prioritás szerint listázva: 
-    1. A „Küldő” raktár raktári naptára
-    2. A Fedezetcsoport naptára (az ilyen naptárakra vonatkozó sorbarendezést fent találja), ha van beállítva raktári naptár a szállítási dátum nyitott dátum lesz a naptárban. Ha nincs raktári naptár beállítva a fedezetcsoport naptára lesz figyelembe véve. 
+1. A „Küldő” raktár raktári naptára
+1. A Fedezetcsoport naptára (az ilyen naptárakra vonatkozó sorbarendezést fent találja), ha van beállítva raktári naptár a szállítási dátum nyitott dátum lesz a naptárban. Ha nincs raktári naptár beállítva a fedezetcsoport naptára lesz figyelembe véve. 
 
 ### <a name="receipt-date-of-a-planned-transfer-order"></a>Tervezett átmozgatási rendelés átvételi dátuma
 Az átmozgatási rendelés fogadási dátum azt jelzi, amikor az árukat átveszik a „Fogadó” naptárban.
 
 Az átvételi dátum megadására használt naptárak prioritás szerint listázva: 
-    1. Fedezetcsoport naptára 
-    2. A „Fogadó" raktár raktéri naptára Ha van beállítva fedezeti naptár a kézhezvételi dátum nyitott dátum lesz a naptárban. Ha nincs fedezetcsoport naptár beállítva a raktár naptára lesz figyelembe véve. 
+1. Fedezetcsoport naptára 
+1. A „Fogadó" raktár raktéri naptára Ha van beállítva fedezeti naptár a kézhezvételi dátum nyitott dátum lesz a naptárban. Ha nincs fedezetcsoport naptár beállítva a raktár naptára lesz figyelembe véve. 
 
 Ha a egy tervezett átmozgatás szállítási és fogadási dátumát keresési a felhasználó küldéshez és fogadáshoz fenntartott időtartaléka is figyelembe lesz véve. 
 

@@ -3,7 +3,7 @@ title: VALUEIN ER-függvény
 description: A témakör tájékoztatást nyújt a VALUEIN Elektronikus jelentéskészítés (ER) függvény használatának módjáról.
 author: NickSelin
 manager: kfend
-ms.date: 12/17/2019
+ms.date: 08/18/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d0df97234df41d11897473dea4e85354e82d36ec
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: 44459ae56891a08eb11a6c254f4b4d5652a0e693
+ms.sourcegitcommit: 38ad6f791c3d5688a5dc201a234ba89f155f7f03
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3041699"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "3705119"
 ---
-# <a name="VALUEIN">VALUEIN ER-függvény</a>
+# <a name=""></a><a name="VALUEIN">VALUEIN ER-függvény</a>
 
 [!include [banner](../includes/banner.md)]
 
@@ -59,7 +59,7 @@ Az eredményül kapott *Logikai* érték.
 
 ## <a name="usage-notes"></a>Használati megjegyzések
 
-Általában a `VALUEIN` függvény **VAGY** feltételek egy csoportjára fordul le.
+Általában a `VALUEIN` függvény **VAGY** feltételek egy csoportjára fordul le. Ha a **VAGY** feltételek listája nagy, és az SQL-utasítás maximális hosszát túllépik, akkor a [`VALUEINLARGE`](er-functions-logical-valueinlarge.md) függvény használatát érdemes megfontolni.
 
 ```vb
 (input = list.item1.value) OR (input = list.item2.value) OR …
@@ -77,13 +77,13 @@ Adatforrás meghívásakor, ha a `VALUEIN ("B", List, LEFT(List.Value, 0))` kife
 
 Az ilyen feltétel szövegében a karakterszám felső határa 32 768 karakter. Ezért ne hozzon létre olyan adatforrásokat, amelyek túlléphetik ezt a korlátot futásidőben. Ha túllépte a korlátot, az alkalmazás leáll, és kivételt küld. Például ez a helyzet akkor fordulhat elő, ha így van beállítva az adatforrás: `WHERE (List1, VALUEIN (List1.ID, List2, List2.ID)`, és a **Lista 1** és **Lista 2** listák nagy mennyiségű rekordot tartalmaznak.
 
-Bizonyos esetekben a `VALUEIN` funkció egy adatbázis-utasításra fordul le az `EXISTS JOIN` operátor használatával. Ez a viselkedés akkor fordul elő, amikor a [FILTER](er-functions-list-filter.md) függvény használatos, és a következő feltételek teljesülnek:
+Bizonyos esetekben a `VALUEIN` funkció egy adatbázis-utasításra fordul le az `EXISTS JOIN` operátor használatával. Ez a viselkedés akkor fordul elő, amikor a [`FILTER`](er-functions-list-filter.md) függvény használatos, és a következő feltételek teljesülnek:
 
 - A **LEKÉRDEZÉS KÉRÉSE** beállítás ki van kapcsolva a `VALUEIN` függvény adatforrása esetében, amely rekordok listájára hivatkozik. További feltételek nem vonatkoznak erre az adatforrásra futásidőben.
 - Nincsenek konfigurálva beágyazott kifejezések az adatforrás `VALUEIN` függvényéhez, amely rekordok listájára hivatkozik.
 - A `VALUEIN` függvény listaeleme a megadott adatforrás mezőjére hivatkozik, nem az adatforrás kifejezésére vagy metódusára.
 
-Fontolja meg ennek használatát a [WHERE](er-functions-list-where.md) függvény helyett, ahogy ebben a példában korábban ismertettük.
+Fontolja meg ennek használatát a [`WHERE`](er-functions-list-where.md) függvény helyett, ahogy ebben a példában korábban ismertettük.
 
 ## <a name="example-2"></a>2. példa
 
@@ -118,3 +118,5 @@ Intrastat.dataAreaId IN ('DEMF', 'GBSI', 'USMF')
 ## <a name="additional-resources"></a>További erőforrások
 
 [Logikai függvények](er-functions-category-logical.md)
+
+[VALUEINLARGE függvények](er-functions-logical-valueinlarge.md)

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3bab048a58da7aa981cb807ccb0757ecb237c1ee
-ms.sourcegitcommit: 15c68822f4d412bfc609be31b3702f18c81ea0bc
+ms.openlocfilehash: 34e80ace6a0676e5702f633554a5f241cc8b00a7
+ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "3666334"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3712173"
 ---
 # <a name="whats-new-or-changed-in-human-resources"></a>Új vagy módosult elemek a Human Resources szolgáltatásban
 
@@ -41,6 +41,7 @@ Ha további tájékoztatást szeretne kapni a hamarosan megjelenő szolgáltatá
 
 Ha látni szeretné, hogy mi új vagy módosult a Human Resources egyes kétheti verzióiban, tekintse át az alábbi cikkeket:
 
+[2020. augusztus 20.](hr-whats-new-2020-08-20.md)</br>
 [2020. augusztus 6.](hr-whats-new-2020-08-06.md)</br>
 [2020. július 23.](hr-whats-new-2020-07-23.md)</br>
 [2020. július 8.](hr-whats-new-2020-07-08.md)</br>

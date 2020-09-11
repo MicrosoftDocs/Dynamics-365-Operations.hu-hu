@@ -3,7 +3,7 @@ title: Személyre szabott termékajánlatok engedélyezése
 description: Ez a témakör bemutatja, hogyan készíthet személyre szabott termékajánlatokat az ügyfelei számára a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: bebeale
 manager: AnnBe
-ms.date: 05/26/2020
+ms.date: 08/18/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 4103096f23e5568cc2bf64f21720c7c16d3e0cd1
-ms.sourcegitcommit: 8905d7a7a010e451c5435086480f66650ec54926
+ms.openlocfilehash: 8a61ef0720839d371701f2f0a1fdec7e85a5feb7
+ms.sourcegitcommit: d3b970c3b93d8be12886b1c5a6bf91f0b33726dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "3664858"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "3700866"
 ---
 # <a name="enable-personalized-recommendations"></a>Személyre szabott ajánlatok engedélyezése
 
@@ -49,11 +49,13 @@ A termékajánlásokkal kapcsolatos további tudnivalókat lásd: [Termékajánl
 
 Ha be szeretné kapcsolni a személyre szabást, hajtsa végre az alábbi lépéseket.
 
-1. Válassza a **Kiskereskedelem és kereskedelem \> Termékjavaslatok \> Ajánlási paraméterek** elemet.
-1. A Megosztott kiskereskedelmi paraméterek listáján válassza az **Ajánlati listák** elemet.
-1. Állítsa a **Személyre szabás engedélyezése** beállítást **Igen** lehetőségre.
+1. A Commerce Headquarters alkalmazásban keressen rá a **Szolgáltatások kezelése** lehetőségre.
+1. Válassza a **Mind** lehetőséget, ha meg szeretné tekinteni a rendelkezésre álló szolgáltatások listáját. 
+1. A Keresés mezőbe írja be az **Ajánlatok** kifejezést.
+1. Válassza ki a **Testreszabott termékajánlatok** funkciót.
+1. A **Testreszabott termékajánlatok** tulajdonságok ablaktáblán válassza az **Engedélyezés most** lehetőséget.
 
-![Személyre szabás bekapcsolása](./media/enablepersonalization.png)
+![Személyre szabás bekapcsolása](./media/FeatureManagement_Personalized.PNG)
 
 > [!NOTE]
 > A személyre szabás bekapcsolásakor a személyre szabott termékajánlási lista létrehozásának folyamata elindul. Előfordulhat, hogy egy napra is szükség lehet, amíg a listák elérhetővé és láthatóvá válnak online és a pénztárnál.

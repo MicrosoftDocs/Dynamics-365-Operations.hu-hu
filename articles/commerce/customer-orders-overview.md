@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 87d1217204e0c5cb22f567793b043bf399ca5685
-ms.sourcegitcommit: b07434f2bd6db67d8dd712f096329acc902751ae
+ms.openlocfilehash: a6fdc7b8d7ad65c9e4bf1d3b932b62918dea6e77
+ms.sourcegitcommit: 7061a93f9f2b54aec4bc4bf0cc92691e86d383a6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "3699369"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3710259"
 ---
 # <a name="customer-orders-in-modern-pos-mpos"></a>Vevői rendelések a Modern POS (MPOS) esetében
 
@@ -54,7 +54,10 @@ A kiskereskedők a készlethiány által okozott elmaradt értékesítések mini
     - A költségek alkalmazására az értékesítési rendelés fejlécének szintjén kerül sor, és amikor egy termékkör bizonyos mennyiségét visszaküldik, a szállítási költségek a termékekhez engedélyezett maximális visszatérítése és a mennyiség nem határozható meg úgy, hogy az minden vevő számára megfelelő legyen.
     - Minden szállítási példánynál felmerülnek szállítási költségek. Ha egy vevő többször küld vissza termékeket, és a kiskereskedő irányelve kimondja, hogy a visszatérítési szállítási költségek költségét a kiskereskedő viseli, a visszatérítési szállítási költségek összege magasabb lesz a tényleges szállítási költségeknél.
     
-- **Adószámítási viselkedés** - **Újraszámítás** az alapértelmezett és hagyományos beállítás, annak nyilvántartására, hogyan kerülnek újraszámításra az adók, amikor a rendelés importálásra kerül a háttérirodába. A **Ne számítsa újra** letiltja az adó-újraszámításokat, egészen addig, amíg a rendelés nem kerül szerkesztésre a háttérirodában, ekkor az újraszámítás indításra kerül. 
+
+## <a name="disable-option-to-pay-later"></a>Későbbi fizetés lehetőségének letiltása
+
+A Commerce 10.0.12 és későbbi verzióiban a kereskedők eltávolíthatja a lehetőséget, hogy később fizessenek a vevői rendelés létrehozásakor a pénztárban. Ha le szeretné tiltani a beállítást, nyissa meg a csatorna **Funkcióprofilját**, ahol a későbbi fizetés nincs engedélyezve, majd válassza a **Szerkesztés** parancsot. Az **Általános** lapon válassza ki azt a legördülő menüt a **Fizetés szükséges a teljesítéshez** lehetőséghez. Ha az utólagos fizetést nem szeretné engedélyezni a pénztárban, akkor válassza a **Kártya szükséges**, majd a **Mentés** lehetőséget. Futtassa a **1070** elosztási ütemezést a módosítás szinkronizálásához a csatornaadatbázisba. 
 
 ## <a name="transaction-flow-for-customer-orders"></a>Tranzakció folyamata vevői rendeléseknél
 

@@ -1,9 +1,9 @@
 ---
 title: Szabadság vásárlása és eladása
-description: Szabadság vásárlására és eladására irányuló kérelmet nyújthat be.
+description: A Dynamics 365 Human Resources alkalmazásban lehetséges benyújtani szabadáság vásárlására és eladására irányuló kérelmet a vállalatnál beállított szabadság vásárlására és eladására vonatkozó irányelvek alapján.
 author: andreabichsel
 manager: AnnBe
-ms.date: 06/01/2020
+ms.date: 08/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,18 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-06-01
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b765544dcca02ff629e4cc88e3b34d1d3b3e85dd
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: e3a10d183c50f4db31f5c08eb6c0ab8cff79b23e
+ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3429681"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3711818"
 ---
 # <a name="buy-and-sell-leave"></a>Szabadság vásárlása és eladása
 
-[!include [banner](includes/preview-feature.md)]
-
-Szabadság vásárlására irányuló kérelmet nyújthat be.  
+A Dynamics 365 Human Resources alkalmazásban lehetséges benyújtani szabadáság vásárlására és eladására irányuló kérelmet a vállalatnál beállított szabadság vásárlására és eladására vonatkozó irányelvek alapján.  
 
 ## <a name="request-to-buy-leave"></a>Szabadságvásárlási kérelem
 
@@ -39,7 +37,17 @@ Szabadság vásárlására irányuló kérelmet nyújthat be.
 
 3. Ha elkészült, válassza a **Küldés** elemet a kérés elküldéséhez. 
 
-A kérelem elküldése után a program automatikusan frissíti az egyenlegeket a megvásárolni kívánt összeggel. 
+Az egyenlegei vagy automatikusan frissülnek, vagy egy jóváhagyási folyamaton mennek keresztül a frissítés előtt. Ez attól függ, hogy hogyan lett konfigurálva a vásárlási irányelv.
+
+## <a name="request-to-sell-leave"></a>Szabadságeladási kérelem
+
+1. Az **Alkalmazotti önkiszolgáló rendszer** munkaterületen válassza a **Szabadságeladási kérelem** lehetőséget a **Szabadságegyenlegek** csempén. 
+
+2. Adjon meg egy **Szabadságtípust**, és adja meg az **Összeg** elemet az eladni kívánt szabadság összegéhez. 
+
+3. Ha elkészült, válassza a **Küldés** elemet a kérés elküldéséhez.
+
+Az egyenlegei vagy automatikusan frissülnek, vagy egy jóváhagyási folyamaton mennek keresztül a frissítés előtt. Ez attól függ, hogy hogyan lett konfigurálva a vásárlási irányelv.
 
 ## <a name="see-also"></a>Lásd még
 

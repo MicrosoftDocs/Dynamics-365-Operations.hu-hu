@@ -3,7 +3,7 @@ title: A logikai kategóriába tartozó ER-függvények listája
 description: A témakör tájékoztatást nyújt az Elektronikus jelentéskészítésben (ER) támogatott logikai függvényekről.
 author: NickSelin
 manager: kfend
-ms.date: 12/17/2019
+ms.date: 08/19/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 408b3c5ec37b24e0ccf6e368012a936701eedf0f
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: e622778c60646e5cc84cd6e23a5d4954a0fe0bb3
+ms.sourcegitcommit: 38ad6f791c3d5688a5dc201a234ba89f155f7f03
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2916637"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "3705095"
 ---
 # <a name="list-of-er-functions-in-the-logical-category"></a>A logikai kategóriába tartozó ER-függvények listája
 
@@ -41,6 +41,8 @@ Az Elektronikus jelentéskészítés (ER) logikai függvényei segítségével l
 | [Nem](er-functions-logical-not.md)                       | Ez a függvény a megadott feltétel sztornírozott logikai értékét adja eredményül *logikai* értékként. |
 | [Or](er-functions-logical-or.md)                         | Ez a függvény **HAMIS** *Logikai* értéket ad eredményül, ha a megadott feltételek mindegyike hamis. Ez a függvény **IGAZ** *Logikai* értéket ad eredményül, ha a megadott feltételek bármelyike igaz. |
 | [ValueIn](er-functions-logical-valuein.md)               | Ez a függvény azt határozza meg, hogy a megadott bemenet megegyezik-e a megadott lista valamelyik megadott elemének bármilyen értékével. A függvény *Logikai* **IGAZ** értéket ad eredményül, ha a megadott bemenet megegyezik a megadott kifejezésnek a megadott lista legalább egy rekordján való futtatásának eredményével. Ellenkező esetben **HAMIS** *logikai* eredményt ad. |
+| [ValueInLarge](er-functions-logical-valueinlarge.md)     | Ez a függvény azt határozza meg, hogy a megadott *Int64* vagy *Egész szám* típusú bemenet megegyezik-e a megadott lista valamelyik megadott elemének bármilyen értékével. A függvény *Logikai* **IGAZ** értéket ad eredményül, ha a megadott bemenet megegyezik a megadott kifejezésnek a megadott lista legalább egy rekordján való futtatásának eredményével. Ellenkező esetben **HAMIS** *logikai* eredményt ad. |
+
 
 ## <a name="additional-resources"></a>További erőforrások
 

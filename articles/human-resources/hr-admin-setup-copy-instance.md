@@ -3,7 +3,7 @@ title: Példány másolása
 description: A Microsoft Dynamics Lifecycle Services (LCS) szolgáltatással átmásolhat egy Microsoft Dynamics 365 Human Resources-adatbázist egy védőfalkörnyezetbe.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 07/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b14baf49517f5d606038af20366944788b22eba2
-ms.sourcegitcommit: 1ec931f8fe86bde27f6def36ea214a2a05fb22f6
+ms.openlocfilehash: 6b52b696d323df6bafead2418ae322d1a9cdf64a
+ms.sourcegitcommit: ec4df354602c20f48f8581bfe5be0c04c66d2927
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "3554325"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "3706228"
 ---
 # <a name="copy-an-instance"></a>Példány másolása
 
 A Microsoft Dynamics Lifecycle Services (LCS) szolgáltatással átmásolhat egy Microsoft Dynamics 365 Human Resources-adatbázist egy védőfalkörnyezetbe. Ha van másik tesztkörnyezete, akkor abból a környezetből is másolható az adatbázis a célként kiválasztott tesztkörnyezetbe.
 
-Egy példány másolásához a következőket kell biztosítania:
+Egy példány másolásához tartsa szem előtt a következő tanácsokat:
 
 - A felülírni kívánt Human Resources példánynak védőfalkörnyezetnek kell lennie.
 
@@ -37,7 +37,9 @@ Egy példány másolásához a következőket kell biztosítania:
 
 - A célkörnyezetben rendszergazdának kell lennie ahhoz, hogy a példány másolása után bejelentkezhessen.
 
-- A Human Resources adatbázisának másolása során nem másolja át a Microsoft PowerApps környezetben található elemeket (alkalmazásokat vagy adatokat). A PowerApps-környezet elemeinek másolásával kapcsolatos tudnivalókat lásd: [Környezet másolása](https://docs.microsoft.com/power-platform/admin/copy-environment). A felülírni kívánt PowerApps -könyezetnek védőfalkörnyezetnek kell lennie. A PowerApps éles környezet védőfalkörnyezetbe történő módosításához globális bérlői rendszergazdának kell lennie. A PowerApps-környezet módosításával kapcsolatos további tudnivalókat lásd: [Példány váltása](https://docs.microsoft.com/dynamics365/admin/switch-instance).
+- A Human Resources adatbázisának másolása során nem másolja át a Microsoft Power Apps környezetben található elemeket (alkalmazásokat vagy adatokat). A Power Apps-környezet elemeinek másolásával kapcsolatos tudnivalókat lásd: [Környezet másolása](https://docs.microsoft.com/power-platform/admin/copy-environment). A felülírni kívánt Power Apps -könyezetnek védőfalkörnyezetnek kell lennie. A Power Apps éles környezet védőfalkörnyezetbe történő módosításához globális bérlői rendszergazdának kell lennie. A Power Apps-környezet módosításával kapcsolatos további tudnivalókat lásd: [Példány váltása](https://docs.microsoft.com/dynamics365/admin/switch-instance).
+
+- Ha példányát egy tesztkörnyezetbe másolja , és szeretné integrálni a tesztkörnyezetét a Common Data Service szolgáltatással, akkor újra kell alkalmaznia az egyéni mezőket a Common Data Service-entitásokra. Lásd: [Egyéni mezők alkalmazása a Common Data Service-szolgáltatásra](hr-admin-setup-copy-instance.md?apply-custom-fields-to-common-data-service).
 
 ## <a name="effects-of-copying-a-human-resources-database"></a>A Human Resources-adatbázis másolásának hatásai
 
@@ -47,15 +49,15 @@ A Human Resources-adatbázis másolásakor a következő események történnek:
 
 - A célkörnyezet addig nem lesz elérhető, amíg a másolási folyamat be nem fejeződik.
 
-- A Microsoft Azure Blob-tárolóban lévő dokumentumok nem kerülnek át egyik környezetből a másikba. Emiatt a rendszer nem másolja a csatolt dokumentumokat és sablonokat, és a forráskörnyezetben maradnak.
+- A Microsoft Azure Blob-tárolóban lévő dokumentumok nem kerülnek át egyik környezetből a másikba. Ennek megfelelően a rendszer nem másolja a csatolt dokumentumokat és sablonokat, és a forráskörnyezetben maradnak.
 
-- Az összes felhasználó elérhetetlen lesz a rendszergazdai felhasználó és az egyéb belső szolgáltatási felhasználói fiókok kivételével. Emiatt a Rendszergazda felhasználó törölheti vagy álcázhatja az adatokat, mielőtt a többi felhasználó visszakerül a rendszerbe.
+- Az összes felhasználó elérhetetlen lesz a rendszergazdai felhasználó és az egyéb belső szolgáltatási felhasználói fiókok kivételével. A Rendszergazda felhasználó törölheti vagy álcázhatja az adatokat, mielőtt a többi felhasználó visszakerül a rendszerbe.
 
 - A Rendszergazda felhasználónak végre kell hajtania a szükséges konfigurációs változtatásokat, például az integrációs végpontok újracsatlakoztatását meghatározott szolgáltatásokhoz vagy URL-címekhez.
 
 ## <a name="copy-the-human-resources-database"></a>Human Resources-adatbázis másolása
 
-A feladat végrehajtásához először másolja a példányt, majd jelentkezzen be a Microsoft Power Platform Admin Center programba a PowerApps-környezet másolásához.
+A feladat végrehajtásához először másolja a példányt, majd jelentkezzen be a Microsoft Power Platform Admin Center programba a Power Apps-környezet másolásához.
 
 > [!WARNING]
 > Példány másolásakor a program törli az adatbázist a célpéldányban. A célpéldány nem érhető el a folyamat során.
@@ -74,7 +76,7 @@ A feladat végrehajtásához először másolja a példányt, majd jelentkezzen 
 
    ![[Válassza a Power Platform lehetőséget](./media/copy-instance-select-power-platform.png)](./media/copy-instance-select-power-platform.png)
 
-6. Válassza ki a másolni kívánt PowerApps-környezetet, majd válassza a **Másolás** parancsot.
+6. Válassza ki a másolni kívánt Power Apps-környezetet, majd válassza a **Másolás** parancsot.
 
 7. A másolási folyamat befejezése után jelentkezzen be a célpéldányba, és engedélyezze a Common Data Service-integrációt. További tudnivalókért és utasításokért lásd: [A Common Data Service-integráció konfigurálása](https://docs.microsoft.com/dynamics365/talent/hr-common-data-service-integration).
 
@@ -98,7 +100,13 @@ A rendszer nem másolja át a következő adatelemeket a Human Resources példá
 
 - Kapcsolati karakterlánc a **PersonnelIntegrationConfiguration** táblában
 
-Néhány elemet nem másolt át a program, mert környezetspecifikusak. Ilyenek például a **BatchServerConfig** és a **SysCorpNetPrinters** rekordok. A rendszer más elemeket nem másol a támogatási jegyek mennyisége miatt. Előfordulhat például, hogy a rendszer ismétlődő e-maileket küld el, mivel az SMTP továbbra is engedélyezve van a felhasználó jóváhagyásának tesztelésére szolgáló (védőfal-) környezetben, a rendszer érvénytelen integrációs üzeneteket küld, mert a kötegelt feladatok továbbra is engedélyezve vannak, és a felhasználók engedélyezésére csak a rendszergazdák által végrehajtott frissítés utáni törlési műveletek elvégzése után kerül sor.
+Néhány elemet nem másolt át a program, mert környezetspecifikusak. Ilyenek például a **BatchServerConfig** és a **SysCorpNetPrinters** rekordok. A rendszer más elemeket nem másol a támogatási jegyek mennyisége miatt. Példa:
+
+- Ismétlődő e-mailek küldése történhet, mert az SMTP továbbra is engedélyezve van a felhasználói elfogadás (teszt) környezetében.
+
+- A program érvénytelen integrációs üzeneteket küld, mert a kötegelt feladatok továbbra is engedélyezve vannak.
+
+- A felhasználók engedélyezhetők, mielőtt a rendszergazdák elvégezhetnék a frissítés utáni karbantartási műveleteket.
 
 Ezenkívül a következő állapotok módosulnak egy példány másolásakor:
 
@@ -111,3 +119,32 @@ Ezenkívül a következő állapotok módosulnak egy példány másolásakor:
 A cél védőfalkörnyezetében található összes felhasználót, többek között a rendszergazdákat is, felváltották a forráskörnyezet felhasználói. Egy példány másolása előtt győződjön meg arról, hogy Ön a forráskörnyezet rendszergazdája. Ha nem, akkor nem tud bejelentkezni a cél védőfalkörnyezetébe a másolás befejezése után.
 
 A cél-védőfalkörnyezet minden nem rendszergazdai felhasználója le van tiltva, megakadályozva a nem kívánt bejelentkezéseket a védőfalkörnyezetben. Ha szükséges, a rendszergazdák újra engedélyezhetik a felhasználókat.
+
+## <a name="apply-custom-fields-to-common-data-service"></a>Egyéni mezők alkalmazása a Common Data Service-szolgáltatásra
+
+Ha példányát egy tesztkörnyezetbe másolja , és szeretné integrálni a tesztkörnyezetét a Common Data Service szolgáltatással, akkor újra kell alkalmaznia az egyéni mezőket a Common Data Service-entitásokra.
+
+Az Common Data Service-entitásokon közzétett egyéni mezők esetében hajtsa végre a következő lépéseket:
+
+1. Nyissa meg az egyéni mezőt, és válassza a **Szerkesztés** elemet.
+
+2. Törölje az **Engedélyezve** jelölőnégyzet jelölését minden olyan cdm_* entitás esetében, amelynél engedélyezve van az egyéni mező.
+
+3. Válassza a **Módosítások alkalmazása** lehetőséget.
+
+4. Válassza ismét a **Szerkesztés** lehetőséget.
+
+5. Jelölj be az **Engedélyezve** jelölőnégyzetet minden olyan cdm_* entitás esetében, amelynél engedélyezve van az egyéni mező.
+
+6. Válassza ismét a **Módosítások alkalmazása** lehetőséget.
+
+A kijelölés törlése, változtatások alkalmazása, kijelölés újra, és változtatások ismételt alkalmazása arra utasítja a sémát, hogy frissítsen a Common Data Service-szolgáltatásban, hogy tartalmazza az egyéni mezőket.
+
+További információkért az egyéni mezőkről lásd: [Egyéni mezők létrehozása és felhasználása](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/user-defined-fields).
+
+## <a name="see-also"></a>Lásd még
+
+[Emberi erőforrások létesítése](hr-admin-setup-provision.md)</br>
+[Példány eltávolítása](hr-admin-setup-remove-instance.md)</br>
+[Rendelés frissítése](hr-admin-setup-update-process.md)
+
