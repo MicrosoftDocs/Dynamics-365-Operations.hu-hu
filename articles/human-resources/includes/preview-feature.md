@@ -1,2 +1,2 @@
 > [!IMPORTANT]
-> A cikkben ismertetett funkciók nyilvános előnézetként érhetők el a Sandbox vagy Trial környezetben. A Production környezetekben nem érhető el. A tartalom és a funkciók megváltozhatnak. Az előzetes funkciókkal kapcsolatos további részletekért tekintse meg a [Kezelési funkciók ](../hr-admin-manage-features.md)elérése a szolgáltatásban.
+> Az ilyen funkciók egy része vagy mindegyike nyilvános előzetesként érhetők el a teszt- vagy próbaverziós környezetekben. A Production környezetekben nem érhető el. A tartalom és a funkciók megváltozhatnak. Az előzetes funkciókkal kapcsolatos további részletekért tekintse meg a [Kezelési funkciók ](../hr-admin-manage-features.md)elérése a szolgáltatásban.
