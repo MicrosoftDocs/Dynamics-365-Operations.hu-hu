@@ -12,14 +12,14 @@
               href: ../fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
             - name: Új vagy módosult elemek a Platform frissítésekben
               items:
-                - name: Új vagy módosult elemek a Platformfrissítések kezdőlapján
+                - name: Újdonságok és változások a Platformfrissítések kezdőlapján
                   href: get-started/whats-new-home-page.md
-                - name: Platformfrissítés a 10.0.13-as verzióhoz (2020. október)
+                - name: Platformfrissítések a 10.0.14-as verzióhoz (2020. november)
+                  href: get-started/whats-new-platform-updates-10-0-14.md
+                - name: Platformfrissítések a 10.0.13-as verzióhoz (2020. október)
                   href: get-started/whats-new-platform-updates-10-0-13.md
-                - name: Platformfrissítés a 10.0.12-es verzióhoz (2020. augusztus)
+                - name: Platformfrissítések a 10.0.12-es verzióhoz (2020. augusztus)
                   href: get-started/whats-new-platform-update-10-0-12.md
-                - name: Platformfrissítés a 10.0.11-es verzióhoz (2020. július)
-                  href: get-started/whats-new-platform-update-35.md
             - name: Eltávolított vagy elavult funkciók
               items:
                 - name: Eltávolított vagy elavult Platform-funkciók
@@ -606,6 +606,14 @@
                   href: dev-tools/pipeline-create-deployable-package.md
                 - name: X++ modell-verziószámozás az Azure Pipelines szolgáltatásban
                   href: dev-tools/pipeline-model-version.md
+                - name: Eszközök letöltése az Azure Pipelines szolgáltatással
+                  href: dev-tools/pipeline-asset-download.md
+                - name: Eszközök feltöltése az Azure Pipelines szolgáltatással
+                  href: dev-tools/pipeline-asset-upload.md
+                - name: Eszközök üzembe helyezése az Azure Pipelines szolgáltatással
+                  href: dev-tools/pipeline-deploy-asset.md
+                - name: Lifecycle Services (LCS)-kapcsolat létrehozása Azure Pipelines szolgáltatásban
+                  href: dev-tools/pipeline-lcs-connection.md
             - name: Flottakezelés – mintaalkalmazás
               items:
                 - name: Végponttól végpontig érvényes eset a Flottakezelés mintaalkalmazáshoz

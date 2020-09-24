@@ -3,11 +3,13 @@
   items:
     - name: Első lépések
       items:
-        - name: Első lépések a Talent alkalmazásban
+        - name: A Talent első lépései
           href: talent-get-started.md
-        - name: Új vagy módosult elemek a Talent szolgáltatásban
+        - name: Újdonságok és változások a Talent alkalmazásban
           href: whats-new.md
           items:
+            - name: 2020. szeptember 1.
+              href: whats-new-talent-september-01-2020.md
             - name: 2020. január 21.
               href: whats-new-talent-january-21-2020.md
             - name: 2020. január 14.

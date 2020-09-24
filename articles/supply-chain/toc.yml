@@ -68,14 +68,14 @@
                   href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/supply-chain/toc.json
                 - name: A Supply Chain Management kezelésének új vagy módosított adatai
                   items:
-                    - name: A Supply Chain Management kezdőlapjának új vagy módosult elemei
+                    - name: Újdonságok és változások a Supply Chain Management kezdőlapján
                       href: get-started/whats-new-home-page.md
+                    - name: Supply Chain Management 10.0.14 (2020. november)
+                      href: get-started/whats-new-scm-10-0-14.md
                     - name: Supply Chain Management 10.0.13 (2020. október)
                       href: get-started/whats-new-scm-10-0-13.md
                     - name: Supply Chain Management 10.0.12 (2020. augusztus)
                       href: get-started/whats-new-scm-10-0-12.md
-                    - name: Supply Chain Management 10.0.11 (2020. július)
-                      href: get-started/whats-new-scm-10-0-11.md
                 - name: Eltávolított vagy elavult funkciók
                   items:
                     - name: Eltávolított vagy elavult funkciók a Dynamics 365 Supply Chain Management szolgáltatásban
@@ -333,7 +333,7 @@
                   href: asset-management/work-orders/automatic-update-of-asset-counters.md
                 - name: Karbantartási ellenőrző listák
                   href: asset-management/work-orders/maintenance-checklists.md
-                - name: Karbantartás miatti üzemkimaradás
+                - name: Karbantartás miatti üzemkimaradás munkarendelések esetén
                   href: asset-management/work-orders/maintenance-downtime.md
                 - name: Hiba hozzáadása munkarendeléshez
                   href: asset-management/work-orders/add-fault-to-work-order.md
@@ -341,7 +341,7 @@
                   href: asset-management/work-orders/work-order-report.md
                 - name: Munkarendelés-gyűjtők
                   href: asset-management/work-orders/work-order-pools.md
-                - name: Aktív munkarendelés-karbantartási feladatok
+                - name: Aktív munkarendelésen kiadott karbantartási feladatok
                   href: asset-management/work-orders/active-work-order-jobs-overview.md
                 - name: Munkarendelések és tárgyi eszközök
                   href: asset-management/work-orders/work-orders-and-fixed-assets.md
@@ -367,7 +367,7 @@
                   href: asset-management/preventive-and-reactive-maintenance/maintenance-schedule-cost.md
                 - name: Munkarendelések létrehozása
                   href: asset-management/preventive-and-reactive-maintenance/creating-work-orders.md
-                - name: Karbantartás miatti üzemkimaradás
+                - name: Karbantartás miatti üzemkimaradási tevékenységek
                   href: asset-management/preventive-and-reactive-maintenance/maintenance-stop.md
             - name: Kapacitástervezés
               items:
@@ -839,9 +839,9 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffirstitem.md?toc=/dynamics365/supply-chain/toc.json
                         - name: OrderBy
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-orderby.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Reverse
+                        - name: Sztornírozás
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-reverse.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Split
+                        - name: Felosztás
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-split.md?toc=/dynamics365/supply-chain/toc.json
                         - name: SplitList
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-splitlist.md?toc=/dynamics365/supply-chain/toc.json
@@ -1345,9 +1345,7 @@
               items:
                 - name: Tervezési optimalizálás áttekintése
                   href: master-planning/planning-optimization/planning-optimization-overview.md
-                - name: Tervezés negatív tényleges készleten lévő mennyiségekkel
-                  href: master-planning/planning-optimization/negative-on-hand.md
-                - name: Tervezési optimalizálás kezdő lépései
+                - name: Tervezési optimalizálás indítása
                   href: master-planning/planning-optimization/get-started.md
                 - name: Tervezési optimalizálás igazítási elemzése
                   href: master-planning/planning-optimization/planning-optimization-fit-analysis.md
@@ -1355,23 +1353,29 @@
                   href: master-planning/planning-optimization/plan-filters.md
                 - name: Alaptervezés a beszerzésre vonatkozó kereskedelmi megállapodásokkal
                   href: master-planning/planning-optimization/purchase-trade-agreement.md
-                - name: Tervelőzmények és tervezési naplók megtekintése
-                  href: master-planning/planning-optimization/plan-history-logs.md
+                - name: Biztonsági határok
+                  href: master-planning/planning-optimization/safety-margins.md
+                - name: Tervezett rendelések jóváhagyása
+                  href: master-planning/planning-optimization/approved-planned-order.md
                 - name: Automatikus megerősítés a tervezési optimalizálással
                   href: master-planning/planning-optimization/planning-optimization-auto-firming.md
+                - name: Tervezés negatív tényleges készleten lévő mennyiségekkel
+                  href: master-planning/planning-optimization/negative-on-hand.md
+                - name: Tervelőzmények és tervezési naplók megtekintése
+                  href: master-planning/planning-optimization/plan-history-logs.md
                 - name: Tervezési feladat visszavonása
                   href: master-planning/planning-optimization/cancel-planning-job.md
-                - name: Tervezési optimalizálás – bővíthetőség
-                  href: master-planning/planning-optimization/extensibility.md
                 - name: Tervezési optimalizálás hibaelhárítása
                   href: master-planning/planning-optimization/planning-optimization-trouble-shooting.md
+                - name: Tervezési optimalizálás – bővíthetőség
+                  href: master-planning/planning-optimization/extensibility.md
             - name: Alaptervek
               items:
                 - name: Alaptervek áttekintése
                   href: master-planning/master-plans.md
                 - name: Alaptervek beállítása
                   href: master-planning/master-planning-setup.md
-                - name: Alaptervezés beállítási varázslója
+                - name: Alaptervezés-beállítás varázslója
                   href: master-planning/master-planning-setup-wizard.md
                 - name: Fedezeti beállítások
                   href: master-planning/coverage-settings.md
@@ -2621,6 +2625,8 @@
                   items:
                     - name: Fürtkitárolás beállítása
                       href: warehousing/set-up-cluster-picking.md
+                    - name: Fürtpozíció tele
+                      href: warehousing/cluster-position-full.md
                     - name: Rendszer által irányított fürtkitárolás
                       href: warehousing/system-directed-cluster-pick.md
                     - name: Tárolóra bontás beállítása
