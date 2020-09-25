@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c7f78b687865e63e658c1c1c4f148b50595bf063
-ms.sourcegitcommit: 54bdcf8e9b6d1b1aae2a244f7a82754879d12053
+ms.openlocfilehash: 035bf720a892e987ff9fc073ab8ed6f6cc6ea18e
+ms.sourcegitcommit: 445f6d8d0df9f2cbac97e85e3ec3ed8b7d18d3a2
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "3740663"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "3745105"
 ---
-# <a name=""></a><a name="LISTJOIN">LISTJOIN ER-függvény</a>
+# <a name="listjoin-er-function"></a>LISTJOIN ER-függvény
 
 [!include [banner](../includes/banner.md)]
 
@@ -73,11 +73,11 @@ Majd adja meg a **2. rekord** adatforrását a `Container` típushoz. Ez az adat
 
 Ebben az esetben a `LISTJOIN(LIST('Record 1'), LIST('Record 2'))` kifejezés egy új, két rekordot tartalmazó listát ad eredményül.
 
-![Elektronikus jelentéskészítés – modell-leképezés tervező oldal](./media/er-functions-list-listjoin-image2.gif)
+![ER Modell-leképezés tervező lapja két rekorddal](./media/er-functions-list-listjoin-image2.gif)
 
 A lista szerkezete a `Real` típus egyetlen **Mennyiség** mezőjéből áll, mivel ez a mező az egyetlen olyan mező, amely szerepel a hívott függvény minden argumentumában megjelenik.
 
-![Elektronikus jelentéskészítés – modell-leképezés tervező oldal](./media/er-functions-list-listjoin-image3.gif)
+![Elektronikus jelentéskészítés tervező oldalának mennyiség mezője](./media/er-functions-list-listjoin-image3.gif)
 
 ## <a name="additional-resources"></a>További erőforrások
 

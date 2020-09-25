@@ -3,7 +3,7 @@ title: Kosármodul
 description: Ez a témakör a kosármodulokkal foglalkozik, és bemutatja, hogy hogyan lehet őket hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: anupamar-ms
 manager: annbe
-ms.date: 08/05/2020
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 07d485012bfc93c957b3dc42e3b0ed62e761dee1
-ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
+ms.openlocfilehash: 07d121d5a68970dd29f0e77babda735de12871ca
+ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "3686766"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3761129"
 ---
 # <a name="cart-module"></a>Kosármodul
 
@@ -77,8 +77,8 @@ A kosármodul a termék adatait a Commerce Scale Unit API-k használatával olva
 A kosármodul új oldalra való felvételéhez és a kötelező tulajdonságok beállításához hajtsa végre az alábbi lépéseket.
 
 1. Lépjen a **Töredékek** pontra, és válassza az **Új** lehetőséget új töredék létrehozásához.
-1. Az **Új oldaltöredék** párbeszédpanelen válassza ki a **Kosár** modult.
-1. Az **Oldaltöredék neve** pontban adja meg a **Kosár töredék** nevet, ezután válassza az **OK** lehetőséget.
+1. Az **Új töredék** párbeszédpanelen válassza ki a **Kosár** modult.
+1. A **Töredék neve** pontban adja meg a **Kosár töredék** nevet, ezután válassza az **OK** lehetőséget.
 1. Válassza ki **Kosár** helyet.
 1. A jobb oldali tulajdonságok ablaktáblán válassza ki a ceruza szimbólumot, adja meg a címsor szövegét a mezőben, majd jelölje be a pipa jelet.
 1. A **Kosár** helyben válassza a három pont (**…**) gombot, majd válassza az **Modul hozzáadása** elemet.
@@ -86,8 +86,8 @@ A kosármodul új oldalra való felvételéhez és a kötelező tulajdonságok b
 1. Válassza a **Mentés** elemet, válassza a **Szerkesztés befejezése** parancsot a töredék ellenőrzéséhez, majd a **Közzététel** elemet a közzétételhez.
 1. Lépjen a **Sablonok** pontra, majd új sablon készítéséhez válassza az **Új** elemet.
 1. Az **Új sablon** párbeszédablakban a **Sablon neve** alatt adja meg a sablon nevét.
-1. A fastruktúrában válassza ki a **Törzs** helyén a három pont menüt (**…**), ezután válassza a **Töredék hozzáadása** elemet.
-1. Az **Oldaltöredék kiválasztása** párbeszédpanelen válassza ki a **Kosártöredék** nevű töredékét, majd kattintson az **OK** gombra.
+1. A Vázlatablakban válassza ki a **Törzs** helyét, válassza a három pont (**…**) majd válassza a **Töredék hozzáadása** elemet.
+1. A **Töredék kiválasztása** párbeszédpanelen válassza ki a **Kosártöredék** nevű töredékét, majd kattintson az **OK** gombra.
 1. Válassza a **Mentés** elemet, válassza a **Szerkesztés befejezése** parancsot a sablon ellenőrzéséhez, majd a **Közzététel** elemet a közzétételhez.
 1. Lépjen az **Oldalak** pontra, majd válassza az **Új** lehetőséget új oldal létrehozásához.
 1. A **Sablon kiválasztása** párbeszédpanelen válassza ki a létrehozott sablont, adjon meg egy oldalnevet, majd kattintson az **OK** gombra.

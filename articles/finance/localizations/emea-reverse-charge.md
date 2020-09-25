@@ -3,7 +3,7 @@ title: Fordított áfa
 description: A cikk azt tekinti át, hogyan állítható be fordított áfa az európai országokhoz, Szaúd-Arábiához és Szingapúrhoz.
 author: epodkolz
 manager: AnnBe
-ms.date: 07/16/2019
+ms.date: 09/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -11,24 +11,25 @@ ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
-ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Saudi Arabia, Spain, Sweden, United Kingdom, Singapore
+ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Saudi Arabia, Spain, Sweden, United Kingdom, Singapore, Bahrain, Kuwait, Oman, Qatar
 ms.author: epodkolz
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 530ff52abb1dd36c473ae436d61ea925c5696a30
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 9a58ae689a6185316854bf8f01d1237a487d3981
+ms.sourcegitcommit: 241ada0945c72d769eaa70ae35aedbb6a3233fdf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183689"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3760233"
 ---
 # <a name="reverse-charge-vat"></a>Fordított áfa
 
-
 [!include [banner](../includes/banner.md)]
 
+Ez a témakör általánosan bemutatja azt, hogyan állítható be a fordított áfa számítása az EU-ben a GCC országokban és Szaúd-Arábiában.
 
-A cikk a fordított áfa európai országokhoz, Szaúd-Arábiához és Szingapúrhoz való beállításának általános leírását adja.
+> [!NOTE]                                                                                  
+> Bahrein, Kuvait, Omán és Katar esetében a **Funkció-kezelési** munkaterületen engedélyezni kell a **Fordított áfa rendelkezésre állása további országok esetén** lehetőséget. 
 
 A fordított áfaszámítás egy olyan adózási rendszer, amely az áfa könyvelésének és jelentésének felelősségét a termék vagy szolgáltatás eladójáról a vevőre ruházza. Ezért az áruk és/vagy szolgáltatások fogadói vallják be mind a kimeneti áfát (az eladó szerepében), mind a bemeneti áfát (a beszerző szerepében).
 
@@ -85,7 +86,7 @@ A **Fordított fizetésű cikkcsoportok** oldalon (**Adó** &gt; **Beállítás*
 A **Fordított fizetés szabályai** oldalon (**Adó** &gt; **Beállítás** &gt; **Áfa** &gt; **Fordított fizetés szabályai**) megadhatja az alkalmazhatósági szabályokat a beszerzési és értékesítési célokhoz. Fordított költség-alkalmazhatósági szabályokat is beállíthat. Állítsa be a következő mezőket minden egyes szabálynál:
 
 - **Dokumentumtípus** – Válassza ki: **Beszerzési rendelés**, **Szállítói számla naplója**, **Értékesítési rendelés**, **Szabadszöveges számla**, **Vevői számlanapló**, illetve **Szállítói számla**.
-- **Partner országának/régiójának típusa** – Válasszon a **Belföldi**, **EU** és **Külföldi** lehetőségek közül. Emellett ha a szabály minden kereskedelmi partnernél – a címük országától vagy régiójától függetlenül – alkalmazható a szabály, válassza a **Mindegyik** lehetőséget.
+- **Partner országának/régiójának típusa** – Válasszon a **Belföldi**, **EU**, **GCC** vagy **Külföldi** lehetőségek közül. Emellett ha a szabály minden kereskedelmi partnernél – a címük országától vagy régiójától függetlenül – alkalmazható a szabály, válassza a **Mindegyik** lehetőséget.
 - **Belföldi szállítási cím** – Jelölje be ezt a jelölőnégyzetet, ha a szabály az azonos országban vagy régióban lévő szállításokra érvényes. Ez a jelölőnégyzet nem jelölhető be a **Szállítói számla naplója** és a **Vevői számlanapló** dokumentumtípusoknál.
 - **Fordított fizetésű cikkcsoport** – Válassza ki a csoportot, amelyiknél alkalmazható a szabály.
 - **Küszöbösszeg** – A fordított adózás sémáját csak akkor kell a számlára alkalmazni, ha a fordított adótételek csoportjában szereplő tételek és/vagy szolgáltatások értéke meghaladja az itt megadott értéket.
@@ -98,13 +99,16 @@ Ezenkívül megadhatja, hogy megjelenjen-e egy értesítés, és a dokumentumsor
 - **Kérdés** – Megjelenik egy értesítés annak megerősítésére, hogy alkalmazható-e a fordított áfa.
 - **Beállítás** – A dokumentumsor külön értesítés nélkül frissül.
 
+## <a name="set-up-countryregion-properties"></a>Ország- és régiótulajdonságok beállítása
+A **Külkereskedelmi paraméterek** oldalon (**Sdó** &gt; **Beállítás** &gt; **Áfa** &gt; **Külkereskedelem** &gt; **Külkereskedelmi paraméterek**) az **Ország/régió tulajdonságai** lapon állítsa be az aktuális jogi személy országát/területét *Belföldi* értékre. Állítsa az EU kereskedelemben aktuális jogi személlyel résztvevő EU országok/régiók országok **Ország/régió típusa** menüjét *EU* értékre. Állítsa az GCC kereskedelemben aktuális jogi személlyel résztvevő GCC országok/régiók országok **Ország/régió típusa** menüjét *GCC* értékre.
+
 ## <a name="set-up-default-parameters"></a>Alapértelmezett paraméterek beállítása
 A fordított áfa funkció engedélyezéséhez a **Főkönyvi paraméterek** oldal **Fordított áfa** lapján állítsa a **Fordított fizetés engedélyezése** opciót **Igen** értékre. A **Beszerzési rendelés áfacsoportja** és az **Értékesítési rendelés áfacsoportja** mezőknél válassza ki az alapértelmezett áfacsoportokat. Ha a fordított adózási alkalmazhatósági feltétel teljesül, akkor az értékesítési vagy beszerzési sor frissül ezekkel az áfacsoportokkal.
 
 ## <a name="reverse-charge-on-a-sales-invoice"></a>Fordított áfa értékesítési számlánál
 A fordított áfa hatályába tartozó értékesítéseknél az eladó nem számítja fel az áfát Ehelyett a számlán megjelennek mind a fordított áfa hatálya alá tartozó cikkek, mint a fordított áfa teljes összege.
 
-Amikor olyan értékesítési számlát adnak fel, melyen fordított áfa szerepel, akkor az áfatranzakcióknál az **fizetendő áfa** áfairány és nulla áfa szerepel, és pipa kerül a **Fordított áfa** jelölőnégyzetbe.
+Amikor olyan értékesítési számlát adnak fel, melyen fordított áfa szerepel, akkor az áfatranzakcióknál az **Fizetendő áfa** áfairány és nulla áfa szerepel, és pipa kerül a **Fordított áfa** és **Mentes** jelölőnégyzetekbe.
 
 ## <a name="reverse-charge-on-a-purchase-invoice"></a>Fordított áfa beszerzési számlánál
 A fordított áfaszámítás alá eső beszerzéseknél a fordított áfás számlát fogadó beszerző számít vevőnek és eladónak is az áfa könyvelésének szempontjából.

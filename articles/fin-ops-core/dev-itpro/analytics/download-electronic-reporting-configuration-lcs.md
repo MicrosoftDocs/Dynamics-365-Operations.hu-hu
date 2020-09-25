@@ -3,7 +3,7 @@ title: Az elektronikus jelentési beállítások letöltése a Lifecycle Service
 description: Ez a témakör az elektronikus jelentési (ER) konfiguráció Microsoft Dynamics Lifecycle Services (LCS) rendszerből történő letöltési folyamatát mutatja be.
 author: NickSelin
 manager: AnnBe
-ms.date: 01/06/2020
+ms.date: 08/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,20 +18,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 4cc14860bd969048c4378b40d97a7940a8710e89
-ms.sourcegitcommit: 4d77d06a07ec9e7a3fcbd508afdffaa406fd3dd8
+ms.openlocfilehash: 8a18427114bddb7c72024a8d96d33f3fbf8dbe17
+ms.sourcegitcommit: 9857d5cbdc0ab2fc9db049ac5ad118fc2b29bedc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934654"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3810619"
 ---
-# <a name="download-electronic-reporting-configurations-from-lifecycle-services"></a>Az elektronikus jelentéskészítési beállítások letöltése a Lifecycle Services rendszerből
+# <a name="download-electronic-reporting-configurations-from-lifecycle-services"></a>Az elektronikus jelentéskészítési konfigurációk letöltése a Lifecycle Services rendszerből
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör az elektronikus jelentési (ER) konfiguráció Microsoft Dynamics Lifecycle Services (LCS) rendszerből történő letöltési folyamatát mutatja be.
-
-Ez az oktatóanyag bemutatja az elektronikus jelentési (ER) konfiguráció legújabb verziójának a Microsoft Dynamics Lifecycle Services (LCS) rendszerből történő letöltési folyamatát.
+Ez a témakör azt mutatja be, hogyan lehet letölteni az [Elektronikus jelentéskészítési (ER) konfigurációk](general-electronic-reporting.md#Configuration) legújabb verzióját az [Közös eszközök könyvtárából](../lifecycle-services/asset-library.md) a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásban.
 
 1. Bejelentkezés az alkalmazásba az alábbi szerepkörök egyikének használatával:
 
@@ -41,36 +39,41 @@ Ez az oktatóanyag bemutatja az elektronikus jelentési (ER) konfiguráció leg�
 
 2. Ugorjon a **Szervezeti adminisztráció** &gt; **Munkaterületek** &gt; **Elektronikus jelentés** pontra.
 3. Jelölje be a **Microsoft** lapot a **Konfigurációs szolgáltatók** részben.
-4. Kattintson a **Tárházak** lehetőségre a **Microsoft** lapon.
+4. Kattintson a **Tárak** lehetőségre a **Microsoft** lapon.
 
-    [![Az ER frissítése az MS LCS rendszerből - MS tárházak lista megnyitása](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)
+    [![Microsoft csempe a Honosítási konfigurációk lapon](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)
 
 5. A **Konfigurációs tárházak** lapon lévő rácson jelölje ki az **LCS** meglévő tárházát. Ha a tárház nem jelenik meg a rácson, tegye a következőket:
 
-    1. Kattintson a **Hozzáadás** lehetőségre egy új tárház hozzáadásához.
+    1. Kattintson a **Hozzáadás** lehetőségre egy tárház hozzáadásához.
     2. Válassza ki az **LCS** lehetőséget a tárház típusaként.
-    3. Kattintson a **Tárház létrehozása** lehetőségre.
-    4. Ha a rendszer rákérdez, kövesse engedélyezési útmutatásokat.
+    3. Válassza a **Tárház létrehozása** lehetőséget.
+    4. Ha a program rákérdez az engedélyezésre, kövesse a képernyőn megjelenő utasításokat.
     5. Írja be a tárház nevét és leírását.
-    6. Kattintson az **OK** lehetőségre az új tárház bejegyzés megerősítéséhez.
+    6. Válassza az **OK** lehetőséget az új adattárbejegyzés megerősítéséhez.
     7. A rácsban jelölje be az **LCS** típus új tárházát.
 
 6. Kattintson a **Megnyitás** lehetőségre a kijelölt tárház ER-konfigurációk listájának megtekintéséhez.
 
-    [![Az ER frissítése az MS LCS rendszerből - LCS-tárház készítése](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)
+    [![Konfigurációs tárak oldal](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)
+
+    > [!TIP]
+    > Ha nem sikerül elérnie az LCS-adattárat az LCS közös eszköz könyvtár konfigurációinak letöltéséhez, akkor helyette a [Globális adattárból](er-download-configurations-global-repo.md) is letöltheti a konfigurációkat.
 
 7. A bal oldali ablaktáblában jelölje ki a konfigurációkban jelölje ki a szükséges ER-konfigurációt.
 8. A **Verziók** gyorslapon válassza ki a kijelölt ER-konfiguráció szükséges verzióját.
-9. Kattintson az **Importálás** lehetőségre a kiválasztott verzió LCS rendszerből az aktuális példányba történő letöltéséhez.
+9. Válassza az **Importálás** lehetőséget a kiválasztott verzió LCS rendszerből az aktuális példányba történő letöltéséhez.
 
     > [!NOTE]
     > Az **Importálás** gomb nem érhető el azon ER konfigurációs verziókhoz, amelyek már szerepelnek az aktuális példányban.
 
-    [![Az ER frissítése az MS LCS rendszerből - Konfiguráció letöltése](./media/update-er-from-lcs-for-ms-download-configuration.png)](./media/update-er-from-lcs-for-ms-download-configuration.png)
+    [![Konfigurációk tárháza oldal](./media/update-er-from-lcs-for-ms-download-configuration.png)](./media/update-er-from-lcs-for-ms-download-configuration.png)
 
 > [!NOTE]
-> Az ER beállításoktól függ a konfigurációk érvényesítése azok importálását követően. Előfordulhat, hogy bármilyen észlelt ellentmondásos problémáról értesítést kap. Ezeket a problémákat meg kell oldania az importált konfiguráció verziójának használata előtt. További információkért nézze meg a jelen témakörrel kapcsolatos cikkek listáját.
+> Az ER beállításoktól függ a konfigurációk érvényesítése azok importálását követően. Előfordulhat, hogy bármilyen észlelt ellentmondásos problémáról értesítést kap. Ezeket a problémákat meg kell oldania az importált konfiguráció verziójának használata előtt. További információkért nézze meg a jelen témakörrel kapcsolatos témakörök listáját.
 
 ## <a name="additional-resources"></a>További erőforrások
 
 [Elektronikus jelentéskészítés (ER) áttekintése](general-electronic-reporting.md)
+
+[ER-konfigurációk letöltése a konfigurációs szolgáltatás globális tárából](er-download-configurations-global-repo.md)
