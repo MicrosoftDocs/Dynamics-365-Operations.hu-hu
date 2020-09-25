@@ -18,55 +18,55 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6fbaf5952222d90a855956fb93713e0f9ef81305
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: e2addace5c5606ebaae56ca658700347978a805b
+ms.sourcegitcommit: 445f6d8d0df9f2cbac97e85e3ec3ed8b7d18d3a2
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3041031"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "3744719"
 ---
-# <span data-ttu-id="bd470-103"><a name="MID">MID ER-függvény</a></span><span class="sxs-lookup"><span data-stu-id="bd470-103"><a name="MID">MID ER function</a></span></span>
+# <a name="mid-er-function"></a><span data-ttu-id="cb9c6-103">MID ER-függvény</span><span class="sxs-lookup"><span data-stu-id="cb9c6-103">MID ER function</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="bd470-104">A `MID` függvény olyan *Karakterlánc* értéket ad vissza, amely megadott számú karaktert mutat a megadott karakterlánc adott pozíciójától kiindulva.</span><span class="sxs-lookup"><span data-stu-id="bd470-104">The `MID` function returns a *String* value that presents the specified number of characters from the specified string, starting at the specified position.</span></span>
+<span data-ttu-id="cb9c6-104">A `MID` függvény olyan *Karakterlánc* értéket ad vissza, amely megadott számú karaktert mutat a megadott karakterlánc adott pozíciójától kiindulva.</span><span class="sxs-lookup"><span data-stu-id="cb9c6-104">The `MID` function returns a *String* value that presents the specified number of characters from the specified string, starting at the specified position.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="bd470-105">Szintaxis</span><span class="sxs-lookup"><span data-stu-id="bd470-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="cb9c6-105">Szintaxis</span><span class="sxs-lookup"><span data-stu-id="cb9c6-105">Syntax</span></span>
 
 ```vb
 MID (text, starting position, number of characters)
 ```
 
-## <a name="arguments"></a><span data-ttu-id="bd470-106">Argumentumok</span><span class="sxs-lookup"><span data-stu-id="bd470-106">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="cb9c6-106">Argumentumok</span><span class="sxs-lookup"><span data-stu-id="cb9c6-106">Arguments</span></span>
 
-<span data-ttu-id="bd470-107">`text`: *Karakterlánc*</span><span class="sxs-lookup"><span data-stu-id="bd470-107">`text`: *String*</span></span>
+<span data-ttu-id="cb9c6-107">`text`: *Karakterlánc*</span><span class="sxs-lookup"><span data-stu-id="cb9c6-107">`text`: *String*</span></span>
 
-<span data-ttu-id="bd470-108">Egy *Karakterlánc* érték, amely megadja, hogy milyen szövegből legyenek visszaadva karakterek.</span><span class="sxs-lookup"><span data-stu-id="bd470-108">A *String* value that specifies the text to return characters from.</span></span>
+<span data-ttu-id="cb9c6-108">Egy *Karakterlánc* érték, amely megadja, hogy milyen szövegből legyenek visszaadva karakterek.</span><span class="sxs-lookup"><span data-stu-id="cb9c6-108">A *String* value that specifies the text to return characters from.</span></span>
 
-<span data-ttu-id="bd470-109">`starting position`: *Egész*</span><span class="sxs-lookup"><span data-stu-id="bd470-109">`starting position`: *Integer*</span></span>
+<span data-ttu-id="cb9c6-109">`starting position`: *Egész*</span><span class="sxs-lookup"><span data-stu-id="cb9c6-109">`starting position`: *Integer*</span></span>
 
-<span data-ttu-id="bd470-110">Egy *Egész* érték, amely megadja az első karakter pozícióját, amelyet a megadott szövegből vissza kell adni.</span><span class="sxs-lookup"><span data-stu-id="bd470-110">An *Integer* value that specifies the position of the first character that must be returned from the specified text.</span></span>
+<span data-ttu-id="cb9c6-110">Egy *Egész* érték, amely megadja az első karakter pozícióját, amelyet a megadott szövegből vissza kell adni.</span><span class="sxs-lookup"><span data-stu-id="cb9c6-110">An *Integer* value that specifies the position of the first character that must be returned from the specified text.</span></span>
 
-<span data-ttu-id="bd470-111">`number of characters`: *Egész*</span><span class="sxs-lookup"><span data-stu-id="bd470-111">`number of characters`: *Integer*</span></span>
+<span data-ttu-id="cb9c6-111">`number of characters`: *Egész*</span><span class="sxs-lookup"><span data-stu-id="cb9c6-111">`number of characters`: *Integer*</span></span>
 
-<span data-ttu-id="bd470-112">Egy *Egész* érték, amely megadja a visszaadni szánt karakterek számát, a megadott kezdőpozíciótól kiindulva.</span><span class="sxs-lookup"><span data-stu-id="bd470-112">An *Integer* value that specifies the number of characters that must be returned, starting at the specified starting position.</span></span>
+<span data-ttu-id="cb9c6-112">Egy *Egész* érték, amely megadja a visszaadni szánt karakterek számát, a megadott kezdőpozíciótól kiindulva.</span><span class="sxs-lookup"><span data-stu-id="cb9c6-112">An *Integer* value that specifies the number of characters that must be returned, starting at the specified starting position.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="bd470-113">Visszaadott értékek</span><span class="sxs-lookup"><span data-stu-id="bd470-113">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="cb9c6-113">Visszaadott értékek</span><span class="sxs-lookup"><span data-stu-id="cb9c6-113">Return values</span></span>
 
-<span data-ttu-id="bd470-114">*Karakterlánc*</span><span class="sxs-lookup"><span data-stu-id="bd470-114">*String*</span></span>
+<span data-ttu-id="cb9c6-114">*Karakterlánc*</span><span class="sxs-lookup"><span data-stu-id="cb9c6-114">*String*</span></span>
 
-<span data-ttu-id="bd470-115">Az eredményül kapott szövegérték.</span><span class="sxs-lookup"><span data-stu-id="bd470-115">The resulting text value.</span></span>
+<span data-ttu-id="cb9c6-115">Az eredményül kapott szövegérték.</span><span class="sxs-lookup"><span data-stu-id="cb9c6-115">The resulting text value.</span></span>
 
-## <a name="usage-notes"></a><span data-ttu-id="bd470-116">Használati megjegyzések</span><span class="sxs-lookup"><span data-stu-id="bd470-116">Usage notes</span></span>
+## <a name="usage-notes"></a><span data-ttu-id="cb9c6-116">Használati megjegyzések</span><span class="sxs-lookup"><span data-stu-id="cb9c6-116">Usage notes</span></span>
 
-<span data-ttu-id="bd470-117">Ha a `starting position` argumentum értéke kisebb, mint 0 (nulla), a visszaadott karakterek a megadott karakterlánc első pozíciójától számítanak.</span><span class="sxs-lookup"><span data-stu-id="bd470-117">If the value of the `starting position` argument is less than 0 (zero), the characters that are returned are counted from the first position in the specified string.</span></span>
+<span data-ttu-id="cb9c6-117">Ha a `starting position` argumentum értéke kisebb, mint 0 (nulla), a visszaadott karakterek a megadott karakterlánc első pozíciójától számítanak.</span><span class="sxs-lookup"><span data-stu-id="cb9c6-117">If the value of the `starting position` argument is less than 0 (zero), the characters that are returned are counted from the first position in the specified string.</span></span>
 
-<span data-ttu-id="bd470-118">Ha a `starting position` argumentum értéke meghaladja a megadott karakterlánc hosszát, üres karakterláncot ad eredményül.</span><span class="sxs-lookup"><span data-stu-id="bd470-118">If the value of the `starting position` argument exceeds length of the specified string, an empty string is returned.</span></span>
+<span data-ttu-id="cb9c6-118">Ha a `starting position` argumentum értéke meghaladja a megadott karakterlánc hosszát, üres karakterláncot ad eredményül.</span><span class="sxs-lookup"><span data-stu-id="cb9c6-118">If the value of the `starting position` argument exceeds length of the specified string, an empty string is returned.</span></span>
 
-## <a name="example"></a><span data-ttu-id="bd470-119">Példa</span><span class="sxs-lookup"><span data-stu-id="bd470-119">Example</span></span>
+## <a name="example"></a><span data-ttu-id="cb9c6-119">Példa</span><span class="sxs-lookup"><span data-stu-id="cb9c6-119">Example</span></span>
 
-<span data-ttu-id="bd470-120">A `MID ("Sample", 2, 3)` az **„amp”** értéket adja vissza.</span><span class="sxs-lookup"><span data-stu-id="bd470-120">`MID ("Sample", 2, 3)` returns **"amp"**.</span></span>
+<span data-ttu-id="cb9c6-120">A `MID ("Sample", 2, 3)` az **„amp”** értéket adja vissza.</span><span class="sxs-lookup"><span data-stu-id="cb9c6-120">`MID ("Sample", 2, 3)` returns **"amp"**.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="bd470-121">További erőforrások</span><span class="sxs-lookup"><span data-stu-id="bd470-121">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="cb9c6-121">További erőforrások</span><span class="sxs-lookup"><span data-stu-id="cb9c6-121">Additional resources</span></span>
 
-[<span data-ttu-id="bd470-122">Szöveg függvények</span><span class="sxs-lookup"><span data-stu-id="bd470-122">Text functions</span></span>](er-functions-category-text.md)
+[<span data-ttu-id="cb9c6-122">Szöveg függvények</span><span class="sxs-lookup"><span data-stu-id="cb9c6-122">Text functions</span></span>](er-functions-category-text.md)

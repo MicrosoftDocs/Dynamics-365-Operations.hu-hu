@@ -18,46 +18,46 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dd692720872314d533274f392f84e5ac7d36c7c1
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: d6e5d025e7de15c27b19711ea5b597d75bdf3d41
+ms.sourcegitcommit: 445f6d8d0df9f2cbac97e85e3ec3ed8b7d18d3a2
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3041377"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "3744095"
 ---
-# <span data-ttu-id="5447f-103"><a name="ISOCREDREF">ISOCREDREF ER-függvény</a></span><span class="sxs-lookup"><span data-stu-id="5447f-103"><a name="ISOCREDREF">ISOCREDREF ER function</a></span></span>
+# <a name="isocredref-er-function"></a><span data-ttu-id="753ce-103">ISOCREDREF ER-függvény</span><span class="sxs-lookup"><span data-stu-id="753ce-103">ISOCREDREF ER function</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="5447f-104">Az `ISOCREDREF` függvény egy olyan *Karakterlánc* értéket ad vissza, amely egy ISO (Nemzetközi Szabványügyi Szervezet) hitelezői hivatkozást jelenít meg a megadott számlaszám betűi és számjegyei alapján.</span><span class="sxs-lookup"><span data-stu-id="5447f-104">The `ISOCREDREF` function returns a *String* value that represents an International Organization for Standardization (ISO) creditor reference, based on the digits and alphabetic symbols of the specified invoice number.</span></span>
+<span data-ttu-id="753ce-104">Az `ISOCREDREF` függvény egy olyan *Karakterlánc* értéket ad vissza, amely egy ISO (Nemzetközi Szabványügyi Szervezet) hitelezői hivatkozást jelenít meg a megadott számlaszám betűi és számjegyei alapján.</span><span class="sxs-lookup"><span data-stu-id="753ce-104">The `ISOCREDREF` function returns a *String* value that represents an International Organization for Standardization (ISO) creditor reference, based on the digits and alphabetic symbols of the specified invoice number.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="5447f-105">Szintaxis</span><span class="sxs-lookup"><span data-stu-id="5447f-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="753ce-105">Szintaxis</span><span class="sxs-lookup"><span data-stu-id="753ce-105">Syntax</span></span>
 
 ```vb
 ISOCREDREF (invoice number digits)
 ```
 
-## <a name="arguments"></a><span data-ttu-id="5447f-106">Argumentumok</span><span class="sxs-lookup"><span data-stu-id="5447f-106">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="753ce-106">Argumentumok</span><span class="sxs-lookup"><span data-stu-id="753ce-106">Arguments</span></span>
 
-<span data-ttu-id="5447f-107">`invoice number digits`: *Karakterlánc*</span><span class="sxs-lookup"><span data-stu-id="5447f-107">`invoice number digits`: *String*</span></span>
+<span data-ttu-id="753ce-107">`invoice number digits`: *Karakterlánc*</span><span class="sxs-lookup"><span data-stu-id="753ce-107">`invoice number digits`: *String*</span></span>
 
-<span data-ttu-id="5447f-108">A számlaszámok számjegyeit jelölő szöveges érték.</span><span class="sxs-lookup"><span data-stu-id="5447f-108">A text value that represents the digits of an invoice number.</span></span>
+<span data-ttu-id="753ce-108">A számlaszámok számjegyeit jelölő szöveges érték.</span><span class="sxs-lookup"><span data-stu-id="753ce-108">A text value that represents the digits of an invoice number.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="5447f-109">Visszaadott értékek</span><span class="sxs-lookup"><span data-stu-id="5447f-109">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="753ce-109">Visszaadott értékek</span><span class="sxs-lookup"><span data-stu-id="753ce-109">Return values</span></span>
 
-<span data-ttu-id="5447f-110">*Karakterlánc*</span><span class="sxs-lookup"><span data-stu-id="5447f-110">*String*</span></span>
+<span data-ttu-id="753ce-110">*Karakterlánc*</span><span class="sxs-lookup"><span data-stu-id="753ce-110">*String*</span></span>
 
-<span data-ttu-id="5447f-111">Az eredményül kapott szövegérték.</span><span class="sxs-lookup"><span data-stu-id="5447f-111">The resulting text value.</span></span>
+<span data-ttu-id="753ce-111">Az eredményül kapott szövegérték.</span><span class="sxs-lookup"><span data-stu-id="753ce-111">The resulting text value.</span></span>
 
-## <a name="usage-notes"></a><span data-ttu-id="5447f-112">Használati megjegyzések</span><span class="sxs-lookup"><span data-stu-id="5447f-112">Usage notes</span></span>
+## <a name="usage-notes"></a><span data-ttu-id="753ce-112">Használati megjegyzések</span><span class="sxs-lookup"><span data-stu-id="753ce-112">Usage notes</span></span>
 
 > [!NOTE] 
-> <span data-ttu-id="5447f-113">A nem ISO-szabványos betűkből származó szimbólumok eltávolításához az `invoice number digits` argumentumokat le kell fordítani a függvénynek történő megfeleltetés előtt.</span><span class="sxs-lookup"><span data-stu-id="5447f-113">To eliminate symbols from alphabets that are't ISO-compliant, the `invoice number digits` argument must be translated before it's passed to this function.</span></span>
+> <span data-ttu-id="753ce-113">A nem ISO-szabványos betűkből származó szimbólumok eltávolításához az `invoice number digits` argumentumokat le kell fordítani a függvénynek történő megfeleltetés előtt.</span><span class="sxs-lookup"><span data-stu-id="753ce-113">To eliminate symbols from alphabets that are't ISO-compliant, the `invoice number digits` argument must be translated before it's passed to this function.</span></span>
 
-## <a name="example"></a><span data-ttu-id="5447f-114">Példa</span><span class="sxs-lookup"><span data-stu-id="5447f-114">Example</span></span>
+## <a name="example"></a><span data-ttu-id="753ce-114">Példa</span><span class="sxs-lookup"><span data-stu-id="753ce-114">Example</span></span>
 
-<span data-ttu-id="5447f-115">Az `ISOCredRef ("VEND-200002")` a **"RF23VEND-200002"** értéket adja vissza.</span><span class="sxs-lookup"><span data-stu-id="5447f-115">`ISOCredRef ("VEND-200002")` returns **"RF23VEND-200002"**.</span></span>
+<span data-ttu-id="753ce-115">Az `ISOCredRef ("VEND-200002")` a **"RF23VEND-200002"** értéket adja vissza.</span><span class="sxs-lookup"><span data-stu-id="753ce-115">`ISOCredRef ("VEND-200002")` returns **"RF23VEND-200002"**.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="5447f-116">További erőforrások</span><span class="sxs-lookup"><span data-stu-id="5447f-116">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="753ce-116">További erőforrások</span><span class="sxs-lookup"><span data-stu-id="753ce-116">Additional resources</span></span>
 
-[<span data-ttu-id="5447f-117">Egyéb (üzleti területre jellemző) függvények</span><span class="sxs-lookup"><span data-stu-id="5447f-117">Other (business domain–specific) functions</span></span>](er-functions-category-other.md)
+[<span data-ttu-id="753ce-117">Egyéb (üzleti területre jellemző) függvények</span><span class="sxs-lookup"><span data-stu-id="753ce-117">Other (business domain–specific) functions</span></span>](er-functions-category-other.md)

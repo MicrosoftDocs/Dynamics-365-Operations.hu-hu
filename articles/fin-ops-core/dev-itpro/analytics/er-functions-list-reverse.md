@@ -18,45 +18,45 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a6134ae7eb1a8044cf906f2a8d02eb153522a6cf
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: ab953136b7500665bdb13e6ff585e3b76896c9ee
+ms.sourcegitcommit: 445f6d8d0df9f2cbac97e85e3ec3ed8b7d18d3a2
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3041929"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "3744985"
 ---
-# <span data-ttu-id="e8cd8-103"><a name="REVERSE">REVERSE ER-függvény</a></span><span class="sxs-lookup"><span data-stu-id="e8cd8-103"><a name="REVERSE">REVERSE ER function</a></span></span>
+# <a name="reverse-er-function"></a><span data-ttu-id="3a2dc-103">REVERSE ER-függvény</span><span class="sxs-lookup"><span data-stu-id="3a2dc-103">REVERSE ER function</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="e8cd8-104">A `REVERSE` függvény a megadott listát *Rekordlista* értékként adja vissza fordított rendezési sorrendben.</span><span class="sxs-lookup"><span data-stu-id="e8cd8-104">The `REVERSE` function returns the specified list as a *Record list* value in reversed sort order.</span></span>
+<span data-ttu-id="3a2dc-104">A `REVERSE` függvény a megadott listát *Rekordlista* értékként adja vissza fordított rendezési sorrendben.</span><span class="sxs-lookup"><span data-stu-id="3a2dc-104">The `REVERSE` function returns the specified list as a *Record list* value in reversed sort order.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="e8cd8-105">Szintaxis</span><span class="sxs-lookup"><span data-stu-id="e8cd8-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="3a2dc-105">Szintaxis</span><span class="sxs-lookup"><span data-stu-id="3a2dc-105">Syntax</span></span>
 
 ```vb
 REVERSE (list)
 ```
 
-## <a name="arguments"></a><span data-ttu-id="e8cd8-106">Argumentumok</span><span class="sxs-lookup"><span data-stu-id="e8cd8-106">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="3a2dc-106">Argumentumok</span><span class="sxs-lookup"><span data-stu-id="3a2dc-106">Arguments</span></span>
 
-<span data-ttu-id="e8cd8-107">`list`: *Rekordlista*</span><span class="sxs-lookup"><span data-stu-id="e8cd8-107">`list`: *Record list*</span></span>
+<span data-ttu-id="3a2dc-107">`list`: *Rekordlista*</span><span class="sxs-lookup"><span data-stu-id="3a2dc-107">`list`: *Record list*</span></span>
 
-<span data-ttu-id="e8cd8-108">A *Rekordlista* adattípus adatforrásának érvényes elérési útja.</span><span class="sxs-lookup"><span data-stu-id="e8cd8-108">The valid path of a data source of the *Record list* data type.</span></span>
+<span data-ttu-id="3a2dc-108">A *Rekordlista* adattípus adatforrásának érvényes elérési útja.</span><span class="sxs-lookup"><span data-stu-id="3a2dc-108">The valid path of a data source of the *Record list* data type.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="e8cd8-109">Visszaadott értékek</span><span class="sxs-lookup"><span data-stu-id="e8cd8-109">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="3a2dc-109">Visszaadott értékek</span><span class="sxs-lookup"><span data-stu-id="3a2dc-109">Return values</span></span>
 
-<span data-ttu-id="e8cd8-110">*Rekordlista*</span><span class="sxs-lookup"><span data-stu-id="e8cd8-110">*Record list*</span></span>
+<span data-ttu-id="3a2dc-110">*Rekordlista*</span><span class="sxs-lookup"><span data-stu-id="3a2dc-110">*Record list*</span></span>
 
-<span data-ttu-id="e8cd8-111">A rekordok eredményül kapott listája.</span><span class="sxs-lookup"><span data-stu-id="e8cd8-111">The resulting list of records.</span></span>
+<span data-ttu-id="3a2dc-111">A rekordok eredményül kapott listája.</span><span class="sxs-lookup"><span data-stu-id="3a2dc-111">The resulting list of records.</span></span>
 
-## <a name="example-1"></a><span data-ttu-id="e8cd8-112">1. példa</span><span class="sxs-lookup"><span data-stu-id="e8cd8-112">Example 1</span></span>
+## <a name="example-1"></a><span data-ttu-id="3a2dc-112">1. példa</span><span class="sxs-lookup"><span data-stu-id="3a2dc-112">Example 1</span></span>
 
-<span data-ttu-id="e8cd8-113">Ha megadja a *Számított mező* típusú **DS** adatforrást és az tartalmazza a `SPLIT ("C|B|A", "|")` kifejezést, akkor a `FIRST( REVERSE( ORDERBY( DS, DS. Value))).Value` kifejezés a **„C”** szöveges értéket adja vissza.</span><span class="sxs-lookup"><span data-stu-id="e8cd8-113">If you enter data source **DS** of the *Calculated field* type, and it contains the expression `SPLIT ("C|B|A", "|")`, the expression `FIRST( REVERSE( ORDERBY( DS, DS. Value))).Value` returns the text value **"C"**.</span></span>
+<span data-ttu-id="3a2dc-113">Ha megadja a *Számított mező* típusú **DS** adatforrást és az tartalmazza a `SPLIT ("C|B|A", "|")` kifejezést, akkor a `FIRST( REVERSE( ORDERBY( DS, DS. Value))).Value` kifejezés a **„C”** szöveges értéket adja vissza.</span><span class="sxs-lookup"><span data-stu-id="3a2dc-113">If you enter data source **DS** of the *Calculated field* type, and it contains the expression `SPLIT ("C|B|A", "|")`, the expression `FIRST( REVERSE( ORDERBY( DS, DS. Value))).Value` returns the text value **"C"**.</span></span>
 
-## <a name="example-2"></a><span data-ttu-id="e8cd8-114">2. példa</span><span class="sxs-lookup"><span data-stu-id="e8cd8-114">Example 2</span></span>
+## <a name="example-2"></a><span data-ttu-id="3a2dc-114">2. példa</span><span class="sxs-lookup"><span data-stu-id="3a2dc-114">Example 2</span></span>
 
-<span data-ttu-id="e8cd8-115">Ha **Szállító** a VendTable táblára hivatkozó Elektronikus jelentéskészítési (ER) adatforrásként van konfigurálva, akkor a `REVERSE (ORDERBY (Vendors, Vendors.'name()'))` kifejezés megjeleníti a név szerinti csökkenő sorrendben rendezett szállítók listáját.</span><span class="sxs-lookup"><span data-stu-id="e8cd8-115">If **Vendor** is configured as an Electronic reporting (ER) data source that refers to the VendTable table, the expression `REVERSE (ORDERBY (Vendors, Vendors.'name()'))` returns a list of vendors that is sorted by name in descending order.</span></span>
+<span data-ttu-id="3a2dc-115">Ha **Szállító** a VendTable táblára hivatkozó Elektronikus jelentéskészítési (ER) adatforrásként van konfigurálva, akkor a `REVERSE (ORDERBY (Vendors, Vendors.'name()'))` kifejezés megjeleníti a név szerinti csökkenő sorrendben rendezett szállítók listáját.</span><span class="sxs-lookup"><span data-stu-id="3a2dc-115">If **Vendor** is configured as an Electronic reporting (ER) data source that refers to the VendTable table, the expression `REVERSE (ORDERBY (Vendors, Vendors.'name()'))` returns a list of vendors that is sorted by name in descending order.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="e8cd8-116">További erőforrások</span><span class="sxs-lookup"><span data-stu-id="e8cd8-116">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="3a2dc-116">További erőforrások</span><span class="sxs-lookup"><span data-stu-id="3a2dc-116">Additional resources</span></span>
 
-[<span data-ttu-id="e8cd8-117">Lista függvények</span><span class="sxs-lookup"><span data-stu-id="e8cd8-117">List functions</span></span>](er-functions-category-list.md)
+[<span data-ttu-id="3a2dc-117">Lista függvények</span><span class="sxs-lookup"><span data-stu-id="3a2dc-117">List functions</span></span>](er-functions-category-list.md)

@@ -18,41 +18,41 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6e684a8e063cb3c049d13005cbcf6ebbe688af00
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: 95e90289f43896b83ba98a6edefe0cd6028f4043
+ms.sourcegitcommit: 445f6d8d0df9f2cbac97e85e3ec3ed8b7d18d3a2
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3041492"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "3744191"
 ---
-# <span data-ttu-id="542b6-103"><a name="CURCREDREF">CURCREDREF ER-függvény</a></span><span class="sxs-lookup"><span data-stu-id="542b6-103"><a name="CURCREDREF">CURCREDREF ER function</a></span></span>
+# <a name="curcredref-er-function"></a><span data-ttu-id="dc804-103">CURCREDREF ER-függvény</span><span class="sxs-lookup"><span data-stu-id="dc804-103">CURCREDREF ER function</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="542b6-104">A `CURCREDREF` függvény olyan *Karakterlánc* értéket ad vissza, amely a hitelezői hivatkozást képviseli a megadott számlaszám számjegyei alapján.</span><span class="sxs-lookup"><span data-stu-id="542b6-104">The `CURCREDREF` function returns a *String* value that represents a creditor reference, based on the digits of the specified invoice number.</span></span>
+<span data-ttu-id="dc804-104">A `CURCREDREF` függvény olyan *Karakterlánc* értéket ad vissza, amely a hitelezői hivatkozást képviseli a megadott számlaszám számjegyei alapján.</span><span class="sxs-lookup"><span data-stu-id="dc804-104">The `CURCREDREF` function returns a *String* value that represents a creditor reference, based on the digits of the specified invoice number.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="542b6-105">Szintaxis</span><span class="sxs-lookup"><span data-stu-id="542b6-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="dc804-105">Szintaxis</span><span class="sxs-lookup"><span data-stu-id="dc804-105">Syntax</span></span>
 
 ```vb
 CURCREDREF (invoice number digits)
 ```
 
-## <a name="arguments"></a><span data-ttu-id="542b6-106">Argumentumok</span><span class="sxs-lookup"><span data-stu-id="542b6-106">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="dc804-106">Argumentumok</span><span class="sxs-lookup"><span data-stu-id="dc804-106">Arguments</span></span>
 
-<span data-ttu-id="542b6-107">`invoice number digits`: *Karakterlánc*</span><span class="sxs-lookup"><span data-stu-id="542b6-107">`invoice number digits`: *String*</span></span>
+<span data-ttu-id="dc804-107">`invoice number digits`: *Karakterlánc*</span><span class="sxs-lookup"><span data-stu-id="dc804-107">`invoice number digits`: *String*</span></span>
 
-<span data-ttu-id="542b6-108">A számlaszámok számjegyeit jelölő szöveges érték.</span><span class="sxs-lookup"><span data-stu-id="542b6-108">A text value that represents the digits of an invoice number.</span></span>
+<span data-ttu-id="dc804-108">A számlaszámok számjegyeit jelölő szöveges érték.</span><span class="sxs-lookup"><span data-stu-id="dc804-108">A text value that represents the digits of an invoice number.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="542b6-109">Visszaadott értékek</span><span class="sxs-lookup"><span data-stu-id="542b6-109">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="dc804-109">Visszaadott értékek</span><span class="sxs-lookup"><span data-stu-id="dc804-109">Return values</span></span>
 
-<span data-ttu-id="542b6-110">*Karakterlánc*</span><span class="sxs-lookup"><span data-stu-id="542b6-110">*String*</span></span>
+<span data-ttu-id="dc804-110">*Karakterlánc*</span><span class="sxs-lookup"><span data-stu-id="dc804-110">*String*</span></span>
 
-<span data-ttu-id="542b6-111">Az eredményül kapott szövegérték.</span><span class="sxs-lookup"><span data-stu-id="542b6-111">The resulting text value.</span></span>
+<span data-ttu-id="dc804-111">Az eredményül kapott szövegérték.</span><span class="sxs-lookup"><span data-stu-id="dc804-111">The resulting text value.</span></span>
 
-## <a name="example"></a><span data-ttu-id="542b6-112">Példa</span><span class="sxs-lookup"><span data-stu-id="542b6-112">Example</span></span>
+## <a name="example"></a><span data-ttu-id="dc804-112">Példa</span><span class="sxs-lookup"><span data-stu-id="dc804-112">Example</span></span>
 
-<span data-ttu-id="542b6-113">A `CURCredRef ("VEND-200002")` a **"2200002"** értéket adja vissza.</span><span class="sxs-lookup"><span data-stu-id="542b6-113">`CURCredRef ("VEND-200002")` returns **"2200002"**.</span></span>
+<span data-ttu-id="dc804-113">A `CURCredRef ("VEND-200002")` a **"2200002"** értéket adja vissza.</span><span class="sxs-lookup"><span data-stu-id="dc804-113">`CURCredRef ("VEND-200002")` returns **"2200002"**.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="542b6-114">További erőforrások</span><span class="sxs-lookup"><span data-stu-id="542b6-114">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="dc804-114">További erőforrások</span><span class="sxs-lookup"><span data-stu-id="dc804-114">Additional resources</span></span>
 
-[<span data-ttu-id="542b6-115">Egyéb (üzleti területre jellemző) függvények</span><span class="sxs-lookup"><span data-stu-id="542b6-115">Other (business domain–specific) functions</span></span>](er-functions-category-other.md)
+[<span data-ttu-id="dc804-115">Egyéb (üzleti területre jellemző) függvények</span><span class="sxs-lookup"><span data-stu-id="dc804-115">Other (business domain–specific) functions</span></span>](er-functions-category-other.md)
