@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
-ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace
+ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace, CostObjectWithLowestAccuracy, CostVarianceChart, CostObjectWithLowestTurn
 audience: Application User, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d0bf2f843401811d601b5fe90709bf995f550870
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 54da05bb6b84390f9928d8400e3dafc3228ee2fc
+ms.sourcegitcommit: cd339f48066b1d0fc740b513cb72ea19015acd16
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771517"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3759256"
 ---
 # <a name="cost-management-power-bi-content"></a>Költségkezelés Power BI tartalom
 
@@ -37,7 +37,7 @@ A **Költségkezelés** Microsoft Power BI-tartalom készletkönyvelők, valamin
 > [!NOTE]
 > A témakörben leírt **Költségkezelés** Power BI-tartalom a Dynamics 365 Finance and Operations 8.0-s verzióra vonatkozik.
 > 
-> A **Költségkezelés** Power BI tartalomcsomag, amely az AppSource webhelyen elérhető, már elavult. További információ az ilyen elavulásról: [Eltávolított vagy elavult szolgáltatások a Finance and Operations megoldásban](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource)és műveletek modulban.
+> A **Költségkezelés** Power BI tartalomcsomag, amely az AppSource webhelyen elérhető, már elavult. További információ az ilyen elavulásról: [Eltávolított vagy elavult szolgáltatások a Finance and Operations-alkalmazásban](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
 
 Ez a Power BI-tartalom olyan kategorizált formátumot biztosít, amely segítséget nyújt a készletek teljesítményének figyelemmel kísérésében, és bemutatja a rajtuk átáramló költségeket. Ön vezetői betekintést nyerhet például a forgalom arányába, azon napok számába, amelyeken a készlet rendelkezésre áll, a pontosságba, a kívánt összesítési szinten (vállalat, cikk, cikkcsoport vagy telephely) elérhető „ABC-osztályozásba”. Az elérhető információk pénzügyi kimutatás részletes kiegészítéseként felhasználhatók.
 
@@ -176,7 +176,7 @@ Az alkalmazás adatai segítségével kitölthetők a jelentési oldalak a **Kö
 
 A következő objektumok kulcsfontosságú összesítő mértékei a Power BI-tartalom alapjául szolgálnak.
 
-| Objektum                          | Kulcs összesítő mértékek | Adatforrás a Finance and Operationsnél | Mező               |
+| Objektum                          | Kulcs összesítő mértékek | Adatforrás a Finance and Operations alkalmazáshoz | Mező               |
 |---------------------------------|----------------------------|----------------------------------------|---------------------|
 | CostObjectStatementCacheMonthly | Összeg                     | CostObjectStatementCache               | Összeg              |
 | CostObjectStatementCacheMonthly | Mennyiség                   | CostObjectStatementCache               | Mennyiség                 |
@@ -193,10 +193,10 @@ Az alábbi táblázat bemutatja a legfontosabb számított mértékeket a Power 
 | Záró egyenleg menny.                | Záró egyenleg menny. = CALCULATE(SUM(\[QTY\]), FILTER(ALL(FiscalCalendar),FiscalCalendar\[MONTHSTARTDATE\] \<= MAX(FiscalCalendar\[MONTHSTARTDATE\]))) |
 | Nettó változás                         | Nettó változás = SUM(\[AMOUNT\]) |
 | Nettó változás menny.                    | Nettó változás menny. = SUM(\[QTY\]) |
-| Készletforgalom aránya összegenként | Készletforgalom aránya összegenként = if(OR(\[Készlet átlagos egyenlege\] \<= 0, \[Értékesített vagy felhasznált készlet problémák\] \>= 0), 0, ABS(\[Értékesített vagy felhasznált készlet problémák\])/\[Készlet átlagos egyenlege\]) |
+| Készletforgalom aránya összegenként | Készletforgalom aránya összegenként = if(\[OR(Készlet átlagos egyenlege\] \<= 0, \[Inventory sold or consumed issues\] \>= 0), 0, ABS(\[Értékesített vagy felhasznált készlet problémák\])/\[Készlet átlagos egyenlege\]) |
 | Készlet átlagos egyenlege          | Készlet átlagos egyenlege = ((\[Záró egyenleg\] + \[Nyitó egyenleg\]) / 2) |
 | Napok száma, amióta a készlet rendelkezésre áll             | Napok száma, amióta a készlet rendelkezésre áll = 365 / CostObjectStatementEntries\[Készletforgalom aránya összegenként\] |
-| Készlet pontossága                 | Készletpontosság összeg alapján = IF(\[Záró egyenleg\] \<= 0, IF(OR(\[Készlet leltározott mennyisége\] \<\> 0, \[Záró egyenleg\] \< 0), 0, 1), MAX(0, (\[Záró egyenleg\] - ABS(\[Készlet leltározott mennyisége\]))/\[Záró egyenleg\])) |
+| Készlet pontossága                 | Készlet pontossága összeg = IF (\[záró egyenleg\] \<= 0, IF(OR(\[Inventory counted amount\] \<\> 0, \[záró egyenleg\] \< 0), 0, 1), MAX(0, (\[záró egyenleg\] -ABS (\[készletként számított összeg\]))/\[záró egyenleg\])) |
 
 Az alábbi táblázat megjeleníti azokat a fő dimenziókat, amelyek szűrőként szolgálnak az összesítő mértékek szeletelésére, nagyobb részletességet és mélyebb elemzési betekintések elérését téve lehetővé.
 

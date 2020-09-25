@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: 415e8268c504487f2b66afc2ac9a50de1b538911
-ms.sourcegitcommit: a8201e0b9033c2afc2b1702b0337facaf7ad4b92
+ms.openlocfilehash: 10c843670a280c86790185c8a39cb2943e2838f9
+ms.sourcegitcommit: 5472005274f2f94fba82dda90de128f39d8b8390
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "3628909"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3759935"
 ---
 # <a name="product-search-and-customer-search-in-the-point-of-sale-pos"></a>Termék- és vevőkeresés a pénztárban (POS)
 
@@ -93,7 +93,7 @@ A távoli vevőkeresésnél a vevőkód nem jelenik meg a más jogi személyekt�
 
 ### <a name="enhancements-to-local-customer-search"></a>Helyi vevőkeresés továbbfejlesztése
 
-A telefonszámon alapuló keresések egyszerűbbé váltak. Ezek a keresések most figyelmen kívül hagyják a különleges karaktereket, például a szóközöket, kötőjeleket és zárójeleket, amelyeket a vevő létrehozásakor esetleg hozzáadtak. Ezért a pénztárosoknak nem kell többé a telefonszámformátum miatt aggódniuk, amikor keresnek. Kereshetnek a vevők részleges telefonszámának beírásával is. Ha egy telefonszám különleges karaktereket tartalmaz, megtalálható a speciális karakterek után megjelenő számok keresésével is. Ha például egy vevő telefonszámát **123-456-7890** formában rögzítették, a pénztáros kereshet a vevőre az **123**, **456**, **7890** vagy az **1234567890** beírásával, ill. részlegesen a telefonszám első néhány számának részbeni megadásával.
+A telefonszámon alapuló keresések egyszerűbbé váltak. Ezek a keresések most figyelmen kívül hagyják a különleges karaktereket, például a szóközöket, kötőjeleket és zárójeleket, amelyeket a vevő létrehozásakor esetleg hozzáadtak. Ezért a pénztárosoknak nem kell többé a telefonszámformátum miatt aggódniuk, amikor keresnek. Ha például egy vevő telefonszámát 123-456-7890 formában rögzítették, a pénztáros kereshet a vevőre az **123-456-7890** vagy az **1234567890** beírásával, ill. részlegesen a telefonszám első néhány számának részbeni megadásával.
 
 > [!NOTE]
 > A vevő több telefonszámmal és több e-mail-címmel is rendelkezhet. A vevőkeresési algoritmus ezekben a másodlagos e-mail-címekben és telefonszámokban is keres, de a vevőkeresési eredmények oldalon csak az elsődleges e-mail-cím és a telefonszám jelenik meg. Ez némi zavart okozhat, mivel a visszaküldött vevőeredmények nem mutatják a keresett e-mail-címet vagy telefonszámot. A jövőbeli kiadásban a vevőkeresési eredmények képernyőjén igyekszünk megmutatni ezeket az adatokat.

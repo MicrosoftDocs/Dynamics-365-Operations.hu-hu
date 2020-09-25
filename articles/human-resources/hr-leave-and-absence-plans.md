@@ -3,7 +3,7 @@ title: Szabadság- és távolléti terv létrehozása
 description: A Dynamics 365 Human Resources szolgáltatásban szabadságterveket hozhat létre a különböző típusú szabadságokhoz.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/01/2020
+ms.date: 09/11/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 75a70c5784e7032cfebbe58c1d173923a3023507
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: cb42860292c5e3e654917cf2f62b525993aa795a
+ms.sourcegitcommit: 1edd3d4642f8fdc801b43b981b7c1a1c36ae0645
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3428709"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "3796497"
 ---
 # <a name="create-a-leave-and-absence-plan"></a>Szabadság- és távolléti terv létrehozása
 
@@ -43,7 +43,15 @@ Beosztás alapú juttatásokat is létrehozhat, például csak vezetőknek jár�
 
 2. A **Részletek**mezőbe írja be a tervre vonatkozó **Név**, **Kezdő dátum**, **Leírás** és **Szabadságtípus** értéket.
 
-Ha a **Több szabadságtípus konfigurálása egyetlen szabadság- és távolléti tervhez** funkció engedélyezve van a szabadságtervek az **Elhatárolási ütemezés** helyen vannak konfigurálva a **Részletek** alatt. A könyvelés ütemezési táblázatában szereplő mindegyik rekordnál megadhatja a szabadság típusát.
+Ha a **Több szabadságtípus konfigurálása egyetlen szabadság- és távolléti tervhez** funkció engedélyezve van a szabadságtervek az **Elhatárolási ütemezés** helyen vannak konfigurálva a **Részletek** alatt. A könyvelés ütemezési táblázatában szereplő mindegyik rekordnál megadhatja a szabadság típusát. Mindemellett, ha ez a funkció engedélyezve van, akkor az új adatentitásokat kell használni az integrációhoz, illetve más olyan esetekhez, amikor entitásokat kell használnia. 
+
+Az új entitások a következők:
+
+- Szabadsági és távolléti banki tranzakció V2
+- Szabadság és távollét bejegyzése V2
+- Szabadság- és távolléti terv szintje V2
+- Szabadság- és távolléti terv V2
+- 2. verziós távollét kérelmezése
 
  > [!IMPORTANT]
    > Miután engedélyezte, ez a funkció nem kapcsolható ki.

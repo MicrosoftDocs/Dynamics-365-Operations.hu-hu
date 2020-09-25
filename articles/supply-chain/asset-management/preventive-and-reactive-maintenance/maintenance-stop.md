@@ -1,6 +1,6 @@
 ---
-title: Karbantartás miatti üzemkimaradás
-description: Ez a cikk a karbantartás miatti üzemkimaradás Eszközkezelésben való használatát ismerteti.
+title: Karbantartás miatti üzemkimaradási tevékenységek
+description: Ez a témakör ismerteti, ahogy a karbantartás miatti üzemkimaradás révén áttekintést kaphat az adott eszközökre vonatkozó, adott időszak során esedékes karbantartási feladatok végrehajtásához szükséges kapacitásról.
 author: josaw1
 manager: tfehr
 ms.date: 08/27/2019
@@ -18,18 +18,16 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: c1b219d352b6b090c5c2cd3c063d7f890beaa35c
-ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
+ms.openlocfilehash: 2f864e7fe0129f8487cddadc99b32f75a2b6d9ca
+ms.sourcegitcommit: 5bb36b74935ffe140367fd6ecf956b4857ad12e5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "3383527"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3802821"
 ---
-# <a name="maintenance-downtime"></a>Karbantartás miatti üzemkimaradás
+# <a name="maintenance-downtime-activities"></a>Karbantartás miatti üzemkimaradási tevékenységek
 
 [!include [banner](../../includes/banner.md)]
-
- 
 
 A karbantartás miatti üzemkimaradás révén áttekintést kaphat az adott eszközökre vonatkozó, adott időszak során esedékes karbantartási feladatok végrehajtásához szükséges kapacitásról. Létrehozhat például a karbantartás miatti üzemkimaradás regisztrálására szolgáló megoldást a 29-A termelési csarnok 02 termelési helyének 10-es gyártósorához. A karbantartás miatti üzemkimaradás regisztrálásának kezdő és záró időpontja jelzi azt az időszakot, amikor a karbantartáshoz kapcsolódó eszközök nem állnak rendelkezésre a termeléshez.
 

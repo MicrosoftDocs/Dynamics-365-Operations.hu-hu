@@ -3,7 +3,7 @@ title: Kedvencek ikon hozzáadása
 description: Ez a témakör azt mutatja be, hogyan lehet egy kedvencek ikont hozzáadni a webhelyhez.
 author: bicyclingfool
 manager: annbe
-ms.date: 04/27/2020
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 198927e3391bdb577ebc845ff41d49ca798251ff
-ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
+ms.openlocfilehash: 262e478d426fd913130b21a3434331c7d27b54b2
+ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "3686790"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3761153"
 ---
 # <a name="add-a-favicon"></a>Kedvencek ikon hozzáadása
 
@@ -58,30 +58,30 @@ A kedvencek ikon HTML-kódjának létrehozásához használja a következő HTML
 
 `<link rel="shortcut icon" href="Public_URL_for_your_favicon">`
 
-## <a name="create-a-page-fragment-that-contains-a-metatag-for-your-favicon"></a>Hozzon létre egy oldaltöredékét, amely metataget tartalmaz a kedvenc ikonjához
+## <a name="create-a-fragment-that-contains-a-metatag-for-your-favicon"></a>Hozzon létre egy töredékét, amely metataget tartalmaz a kedvenc ikonjához
 
-Az oldaltöredék létrehozásához, amely metacímkét tartalmaz a kedvenc ikonjához kövesse az alábbi lépéseket.
+A töredék létrehozásához, amely metacímkét tartalmaz a kedvenc ikonjához kövesse az alábbi lépéseket.
 
 1. Lépjen a **Töredékek** pontra, és válassza az **Új** lehetőséget.
-1. Az **Új oldaltöredék** párbeszédpanelen válassza ki **Metacímkék** lehetőséget azon modulként, melyen az oldaltöredék alapszik.
-1. Írja be az oldaltöredék nevét, majd kattintson az **OK** gombra.
+1. Az **Új töredék** párbeszédpanelen válassza ki **Metacímkék** lehetőséget azon modulként, melyen a töredék alapszik.
+1. Írja be a töredék nevét, majd kattintson az **OK** gombra.
 1. A töredék hierarchiafájában válassza ki az **Alapértelmezett metacímkék** gyermekét.
 1. A jobb oldali panelen a **Metacímkék** területen válassza a **Hozzáadás** lehetőséget, majd adja meg a kedvencek ikonhoz korábban létrehozott HTML-karakterláncot. 
-1. Válassza a **Szerkesztés befejezése** parancsot, majd a **Közzététel** elemet az oldaltöredék közzétételhez.
+1. Válassza a **Szerkesztés befejezése** parancsot, majd a **Közzététel** elemet a töredék közzétételhez.
 
-## <a name="add-the-metatag-page-fragment-to-the-html-head-section-of-your-pages"></a>A metacímke oldaltöredékének hozzáadása az oldalak HTML-fejléc szakaszához
+## <a name="add-the-metatag-fragment-to-the-html-head-section-of-your-pages"></a>A metacímke töredékének hozzáadása az oldalak HTML-fejléc szakaszához
 
-A metacímke oldaltöredékének hozzáadásához az oldalak HTML **fejléc** szakaszához kövesse az alábbi lépéseket.
+A metacímke töredékének hozzáadásához az oldalak HTML **fejléc** szakaszához kövesse az alábbi lépéseket.
 
 1. Nyissa mega **Sablonok** pontot, majd nyissa meg azon oldalakhoz tartozó sablont, amelyhez hozzá szeretné adni a kedvencek ikont, majd válassza a **Szerkesztés** lehetőséget.
-1. A sablonhierarchia-fában válassza ki a **HTML-fejléc** tárolójának jobb oldalán található három pont (**…**) gombot, majd válassza az **Oldal töredék hozzáadása** lehetőséget.
-1. Az **Oldaltöredék kiválasztása** párbeszédpanelen válassza ki a metacímke oldaltöredékét, melyet korábban hozott létre majd kattintson az **OK** gombra.
+1. A sablonhierarchia-fában válassza ki a **HTML-fejléc** tárolójának jobb oldalán található három pont (**…**) gombot, majd válassza az **Töredék hozzáadása** lehetőséget.
+1. A **Töredék kiválasztása** párbeszédpanelen válassza ki a metacímke töredékét, melyet korábban hozott létre majd kattintson az **OK** gombra.
 1. Válassza a **Szerkesztés befejezése** parancsot, majd a **Közzététel** elemet a sablon közzétételhez.
 
 > [!NOTE]
-> Ha a webhely egynél több sablont használ, akkor mindegyikhez hozzá kell adnia a metacímkék oldaltöredékét.
+> Ha a webhely egynél több sablont használ, akkor mindegyikhez hozzá kell adnia a metacímkék töredékét.
 
-Ha megtekinti azon lapok előnézetét, amelyek azon a sablonon alapulnak, amelyhez hozzáadta a metacímkék oldaltöredékét, immár látható a kedvencek ikon a böngészőlapon.
+Ha megtekinti azon lapok előnézetét, amelyek azon a sablonon alapulnak, amelyhez hozzáadta a metacímkék töredékét, immár látható a kedvencek ikon a böngészőlapon.
 
 ## <a name="additional-resources"></a>További erőforrások
 

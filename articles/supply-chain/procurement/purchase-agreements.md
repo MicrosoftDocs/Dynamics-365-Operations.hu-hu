@@ -18,17 +18,16 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cdc3fe95ec0917c09128997e254f29ce863dcc38
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 253177103435c765bfe45daffeae0c436617af21
+ms.sourcegitcommit: 5bb36b74935ffe140367fd6ecf956b4857ad12e5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3208017"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3803163"
 ---
 # <a name="purchase-agreements"></a>Beszerzési szerződések
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 A cikk beszerzési szerződésekkel kapcsolatos információkról nyújt tájékoztatást. A beszerzési szerződést olyan megállapodás, amely egy szevezetet arra kötelez, hogy több beszerzési rendelés használatával egy adott mennyiségnek vagy összegnek megfelelő terméket vásároljon. Ezen kötelezettségvállalás ellenében a vevő különleges árakat és engedményeket kaphat. 
 
@@ -42,8 +41,13 @@ Ha meg szeretné akadályozni a beszerzési szerződés felhasználását és me
 
 ## <a name="responsible-workers-on-purchase-agreements"></a>Felelős dolgozók a beszerzési szerződéseken
 
-A beszerzési szerződés osztályozásában azonosíthatja az elsődleges és a másodlagos felelős dolgozót. Ezeket az értékeket az eredményül kapott beszerzési szerződés örökli. Nem kell a felelős dolgozókat hozzáadnia a beszerzési szerződéshez, és azokat közvetlenül, eseti alapon módosíthatja a beszerzési szerződésen. Nem adhat meg másodlagos felelős dolgozót elsődleges felelős dolgozó nélkül, de nem kell rendelkeznie másodlagos felelős dolgozóval. Nem adhatja meg ugyanazt a dolgozót, mint az elsődleges, mind a másodlagos felelős dolgozóként. 
+A beszerzési szerződés osztályozásában azonosíthatja az elsődleges és a másodlagos felelős dolgozót. Ezeket az értékeket az eredményül kapott beszerzési szerződés örökli. Nem kell a felelős dolgozókat hozzáadnia a beszerzési szerződéshez, és azokat közvetlenül, eseti alapon módosíthatja a beszerzési szerződésen. Nem adhat meg másodlagos felelős dolgozót elsődleges felelős dolgozó nélkül, de nem kell rendelkeznie másodlagos felelős dolgozóval. Nem adhatja meg ugyanazt a dolgozót, mint az elsődleges, mind a másodlagos felelős dolgozóként.
 
+> [!IMPORTANT]
+> A felelős fél funkció használata előtt be kell azt kapcsolnia saját rendszerében. A rendszergazdák használhatják a [funkciókezelési](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) beállításokat a funkció állapotának ellenőrzéséhez, és bekapcsolásához. A **Funkció kezelése** munkaterületen a funkció a következő módon van listázva:
+> 
+> - **Modul:** *Beszerzés és forrás*
+> - **Funkció neve:** *Beszerzési szerződésért felelős fél*
 
 ## <a name="commitment-types"></a>Kötelezettségtípusok
 A beszerzési szerződés minden sora egy-egy kötelezettségvállalás bizonyos vásárlásra. A kötelezettségvállalás kielégítésére több különböző beszerzési rendelés sorait is használhatja. A kötelezettségeknek négy típusa van:

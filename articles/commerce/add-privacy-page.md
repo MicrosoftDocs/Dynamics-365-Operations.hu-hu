@@ -3,7 +3,7 @@ title: Adatvédelmi irányelv oldalának hozzáadása
 description: Ez a témakör azt mutatja be, hogyan lehet egy adatvédelmi irányelv oldalt hozzáadni a webhelyéhez a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: v-chgri
 manager: annbe
-ms.date: 04/14/2020
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 2ee361c2e99b79e503e8d94c12602f9427f1ed5c
-ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
+ms.openlocfilehash: ce6491d176f90717877f084b11546010084c5f3b
+ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "3686695"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3761273"
 ---
 # <a name="add-a-privacy-policy-page"></a>Adatvédelmi irányelv oldalának hozzáadása
 
@@ -89,8 +89,8 @@ Az adatvédelmi irányelvek oldalra mutató hivatkozást hozzáadhatja egy töre
 A hivatkozás hozzáadásához egy lábléctöredékhez tegye a következőket.
 
 1. Lépjen a **Töredékek** pontra, majd válassza az **Új** lehetőséget az oldaltöredék létrehozásához.
-1. Az **Új oldaltöredék** párbeszédpanelen válassza ki a **Lábléc** modult.
-1. Az **Oldaltöredék neve** pontban adja meg a töredék nevét, majd válassza ki az **OK** lehetőséget.
+1. Az **Új töredék** párbeszédpanelen válassza ki a **Lábléc** modult.
+1. A **Töredék neve** pontban adja meg a töredék nevét, majd válassza ki az **OK** lehetőséget.
 1. A **Lábléc-kategória** bővítőhelyen adja hozzá a **Láblécelem** modult.
 1. A jobb oldali tulajdonságok panelen válassza a **Hivatkozás szövege** lehetőséget.
 1. A **Hivatkozás szövege** párbeszédpanelen adja meg az adatvédelmi irányelv oldal hivatkozásszövegét és hivatkozási célját, majd kattintson az **OK** gombra.

@@ -3,7 +3,7 @@ title: Rendelés frissítése
 description: A Microsoft Dynamics 365 Human Resources teljes mértékben „szoftver szolgáltatásként” (SaaS) elven működik, amely folyamatos, érintés nélküli szolgáltatásfrissítéseket és platformmódosításokat tartalmaz.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/27/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-27
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 006f3c7218436c1c70e29e51f8b1b784ae36b2dd
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: be9be5509f933ecbda5bf6d040027a7bac8b666d
+ms.sourcegitcommit: 5472005274f2f94fba82dda90de128f39d8b8390
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3431176"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3759959"
 ---
 # <a name="update-process"></a>Rendelés frissítése
 
@@ -33,7 +33,7 @@ A Microsoft Dynamics 365 Human Resources teljes mértékben „szoftver szolgál
 
 A frissítések rendszeres ütemben jelennek meg minden környezethez. A Human Resources támogatását a [Microsoft Lifecycle irányelv](https://support.microsoft.com/hub/4095338/microsoft-lifecycle-policy) szabályozza, amely egységes és kiszámítható útmutatást nyújt a termék elérhetőségével kapcsolatos támogatásról.
 
-## <a name="release-cadence"></a>A kiadások ütemezése
+## <a name="release-cadence"></a>A kiadások ütemezése 
 
 A Human Resources szolgáltatás frissítései automatikusan alkalmazva vannak az összes környezetre. A Human Resources szolgáltatáshoz kétféle kiadást biztosítunk:
 
@@ -56,14 +56,12 @@ A kiadások felülvizsgálata, tesztelése és ellenőrzése belső környezetbe
 
 ## <a name="release-cadence-exceptions-in-2020"></a>Kiadási ütemezést érintő kivételek 2020-ban
 
-A következő dátumok kivételt jelentenek a normál kiadási ütemezés alól:
+A munkaszüneti napok figyelembe vételéhez a 2020. novemberi és decemberi kiadások ütemezése a következő:
 
-| Dátum | Leírás |
-| --- | --- |
-| November 23-i hét | Nincs frissítés |
-| December 14-i hét | Csak kisebb frissítések |
-| December 21-i hét | Nincs frissítés |
-| December 28-i hét | Nincs frissítés |
+- Novemberi kiadás: november 2. – november 13.
+- Decemberi kiadás: November 30. – December 11.
+ 
+A kéthetes kiadási ütemezés a szokásos módon fog folytatódni 2021. január 11-én.
 
 ## <a name="communications"></a>Tájékoztatás
 

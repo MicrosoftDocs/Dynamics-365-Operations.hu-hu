@@ -1,5 +1,5 @@
 ---
-title: Előzetes funkciók a Dynamics 365 Supply Chain Management 10.0.13 verziójában (2020. október)
+title: Új vagy módosult elemek a Dynamics 365 Supply Chain Management szolgáltatásban – 10.0.13. (2020. október)
 description: Ez a témakör a Dynamics 365 Supply Chain Management 10.0.13 új vagy módosított szolgáltatásait írja le.
 author: kamaybac
 manager: tfehr
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: dae936ea9a72b865096cdda54d767f3e44816e20
-ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
+ms.openlocfilehash: af468f0cc5d5f1baab62afb3cf90dfca353b3291
+ms.sourcegitcommit: 5bb36b74935ffe140367fd6ecf956b4857ad12e5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "3652239"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3802943"
 ---
-# <a name="preview-features-in-dynamics-365-supply-chain-management-10013-october-2020"></a>Előzetes funkciók a Dynamics 365 Supply Chain Management 10.0.13 verziójában (2020. október)
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10013-october-2020"></a>Új vagy módosult elemek a Dynamics 365 Supply Chain Management szolgáltatásban – 10.0.13. (2020. október)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-Ez a témakör a Microsoft Dynamics 365 Supply Chain Management 10.0.13 előzetes változatának új vagy módosított szolgáltatásait írja le. Ennek a verziónak 10.0.569 a buildszáma, és a következő módon érhető el: 
+Ez a témakör a Microsoft Dynamics 365 Supply Chain Management 10.0.13 előzetes változatának új vagy módosított szolgáltatásait írja le. Ennek a verziónak 10.0.569 a buildszáma, és a következő módon érhető el:
 
 - **Előzetes kiadás:** 2020. augusztus
 - **Általános elérhetőség (saját frissítés):** 2020. szeptember
@@ -61,7 +60,7 @@ Ez a kiadás a következő funkciókat tartalmazza: A funkciók címei további 
 
 ### <a name="platform-updates-for-finance-and-operations-apps"></a>A Finance and Operations-alkalmazások platformfrissítései
 
-A Microsoft Dynamics 365 Supply Chain Management 10.0.13 platformfrissítéseket tartalmaz. További tájékoztatás: [Platform-frissítések az Finance and Operations alkalmazások 10.0.13 verziójához (2020. október)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-10-0-13.md).
+A Microsoft Dynamics 365 Supply Chain Management 10.0.13 platformfrissítéseket tartalmaz. További tájékoztatás: [Platform-frissítések az Finance and Operations alkalmazások 10.0.13 verziójához (2020. október)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-13.md).
 
 ### <a name="bug-fixes"></a>Hibajavítások
 
