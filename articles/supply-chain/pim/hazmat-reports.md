@@ -15,16 +15,17 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: a67c8d0795d31464d900eb5aa82a6d93b689950c
-ms.sourcegitcommit: c009ec75f53872272f11c92a1ce81a391e3845a2
+ms.openlocfilehash: 188c339ddf5f5c2488133924e9a0288f218f495c
+ms.sourcegitcommit: 5bb36b74935ffe140367fd6ecf956b4857ad12e5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "3699620"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3803015"
 ---
 # <a name="hazardous-materials-inquiries-and-reports"></a>Veszélyes anyagokkal kapcsolatos lekérdezések és jelentések
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 A Microsoft Dynamics 365 Supply Chain Management különböző jelentéseket tartalmaz, amelyek a veszélyes anyagokhoz kapcsolódnak. Számos ilyen jelentés szükséges annak érdekében, hogy a szállítás és a tárolás során a különböző veszélyes anyagokra vonatkozó rendeletek követelményei teljesüljenek.
 

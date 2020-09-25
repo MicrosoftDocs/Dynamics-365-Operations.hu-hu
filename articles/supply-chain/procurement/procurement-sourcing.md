@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2a23e445fa6a3133c5248aef1e5dc9fdf5aeb162
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: d38490e9155106d09c432fd965c95ad45f707b41
+ms.sourcegitcommit: 9c694772e1484df10afd72ea1a717fda0861627e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3209214"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3813834"
 ---
 # <a name="procurement-and-sourcing-home-page"></a>Beszerzési és forrásparaméterek kezdőlapja
 
@@ -55,7 +55,7 @@ A Beszerzés és forrás modul lefedi az összes lépést a termék- és szolgá
 -   [Szállítói együttműködés a vevőkkel](vendor-collaboration-work-customers-dynamics-365-operations.md)
 -   [Szállítói együttműködés felhasználóinak kezelése](manage-vendor-collaboration-users.md)
 -   [Szállítói együttműködés beállítása és karbantartása](set-up-maintain-vendor-collaboration.md)
--   [Bejövő szállítmánykészlet bemutató parancsfájl: Microsoft Dynamics 365 for Finance and Operations](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/InboundConsignmentInventoryDemoScriptDynamics365Operations)(ismertető)
+-   [Bejövő szállítmánykészlet bemutató parancsfájl: Microsoft Dynamics 365 for Finance and Operations](https://www.microsoft.com/download/details.aspx?id=101945)(ismertető)
 -   [Bizományosi készlet figyelése szállítói együttműködéssel](../inventory/tasks/monitor-consignment-inventory-vendor-collaboration.md)
 -   [Együttműködés a szállítókkal a Szállítói portálon keresztül](collaborate-vendors-vendor-portal.md) (csak a Dynamics AX 2016. februári és 2016. májusi verziói)
 -   [Szállítói portál felhasználói biztonsága](configure-security-vendor-portal-users.md) (csak a Finance and Operations 2016. februári és 2016. májusi verziói)
@@ -98,7 +98,7 @@ A Beszerzés és forrás modul lefedi az összes lépést a termék- és szolgá
 -   [Beszerzésekkel és forrásokkal kapcsolatos munkafolyamatok](procurement-sourcing-workflows.md)
 -   [Az áruk bevételezésének rögzítése a beszerzési rendelésen](tasks/record-receipt-goods-purchase-order.md)
 -   [Beszerzési igénylési munkafolyamat](purchase-requisitions-workflow.md)
--   [Üzleti folyamatok munkafolyamatainak meghatározása beszerzési igénylések számára](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions) (útmutató)
+-   [Üzleti folyamatok munkafolyamatainak meghatározása beszerzési igénylések számára](https://www.microsoft.com/download/details.aspx?id=101821) (útmutató)
 -   [Beszerzési irányelvek áttekintése](purchase-policies.md)
 -   [Beszerzési irányelvek létrehozása](tasks/create-purchasing-policies.md)
 

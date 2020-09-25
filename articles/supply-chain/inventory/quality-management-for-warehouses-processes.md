@@ -14,13 +14,13 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-04-02
-ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 3469c8936dd2eaa53e541f0ea684ea1eb12db4cb
-ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
+ms.dyn365.ops.version: Release 10.0.10
+ms.openlocfilehash: 0f39bd2ffda492fce9b3fe51feafcbc8fd32391c
+ms.sourcegitcommit: 965fa733be068dc37f482d02ebbcd77f2c3d0a45
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "3530121"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "3763479"
 ---
 # <a name="quality-management-for-warehouse-processes"></a>Raktári folyamatok minőségkezelése
 
@@ -282,7 +282,7 @@ A minőségi cikkekmintavételéhez létrehozott munka érvényteleníthető. A 
 
 ## <a name="cross-docking"></a>Áttárolás
 
-Lehet olyan minőségi társítási beállítása, amely cikkmintavételi munkát hoz létre. Ha azonban az áttárolás olyan minőségi társítással párhuzamosan történik, amely minőségi cikkmintavételezési munkát hozlétre, ha csak az áttároláshoz elegendő mennyiség áll rendelkezésre, akkor csak a cikkmintavételi munkafolyamat jön létre. Azokban az esetekben, amikor a **Minőségi rendelések engedélyezése a raktári folyamatokhoz** beállítás _Igen_ értékre van állítva a fogadó raktárban, és a **Vonatkozó raktár típusa** mező _*Csak Raktári folyamatok minőségkezelése_ értékre van állítva egy minőségi hozzárendeléshez, akkor a minőségi cikkmintavételi munka elsőbbséget élvez az áttárolási munka létrehozásával szemben. Ha a mennyiség túllépi az áttárolási igényt, akkor a rendszer továbbra is csak a cikkmintavételi munkafolyamatot hozza létre.
+Lehet olyan minőségi társítási beállítása, amely cikkmintavételi munkát hoz létre. Ha azonban az áttárolás olyan minőségi társítással párhuzamosan történik, amely minőségi cikkmintavételezési munkát hozlétre, ha csak az áttároláshoz elegendő mennyiség áll rendelkezésre, akkor csak a cikkmintavételi munkafolyamat jön létre. Azokban az esetekben, amikor a **Minőségi rendelések engedélyezése a raktári folyamatokhoz** beállítás _Igen_ értékre van állítva a fogadó raktárban, és a **Vonatkozó raktár típusa** mező _Csak Raktári folyamatok minőségkezelése_ értékre van állítva egy minőségi hozzárendeléshez, akkor a minőségi cikkmintavételi munka elsőbbséget élvez az áttárolási munka létrehozásával szemben. Ha a mennyiség túllépi az áttárolási igényt, akkor a rendszer továbbra is csak a cikkmintavételi munkafolyamatot hozza létre.
 
 ## <a name="destructive-testing"></a>Romboló tesztelés
 

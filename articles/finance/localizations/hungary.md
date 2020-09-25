@@ -3,7 +3,7 @@ title: Magyarország – áttekintés
 description: Ez a témakör a Microsoft Dynamics 365 Finance dokumentációforrásokra mutató hivatkozásokat tartalmaz Magyarországra vonatkozóan.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/03/2020
+ms.date: 09/04/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Hungary
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 50d97ceedd702cb1945478e848184a8357f0f7d5
-ms.sourcegitcommit: 80465a66511d31c180e8a0c15fe44a7642e9ec9c
+ms.openlocfilehash: 0bf0265f445c7e0cb9ef93e0b7a49babd9b34ce8
+ms.sourcegitcommit: cd3d066fd5a071a44b1709ed37d24112484e7ceb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "3423460"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "3766060"
 ---
 # <a name="hungary-overview"></a>Magyarország – áttekintés
 
@@ -34,6 +34,7 @@ Ez a témakör dokumentációforrásokra mutató hivatkozásokat tartalmaz a Mag
 - [Értékcsökkenés módjai tárgyi eszköznél](emea-hun-fixed-assets-depreciation-methods.md)
 - [Kis értékű tárgyi eszközök](emea-hun-low-cost-fixed-assets.md)
 - [Tárgyi eszköz áthelyezése készletbe](emea-hun-fixed-asset-to-inventory.md)
-- [Adó-visszaigénylési dokumentum](emea-hun-tax-reimbursement-docs.md)
+- [Adó-visszaigénylési dokumentumok](emea-hun-tax-reimbursement-docs.md)
 - [Év végi zárás](emea-cze-hun-year-end.md)
 - [Online számlázási rendszer](emea-hun-online-invoicing.md)
+- [Halasztott áfa számításai](emea-hun-deferred-vat.md)

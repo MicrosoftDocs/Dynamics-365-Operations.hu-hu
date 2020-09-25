@@ -3,7 +3,7 @@ title: Átlagos és napi árfolyam kiszámítása
 description: Ez a témakör azt mutatja be, hogyan lehet kiszámítani a kimenő banki és a készpénzfizetési tranzakciók átlagos árfolyamát.
 author: v-lurodi
 manager: AnnBe
-ms.date: 05/07/2020
+ms.date: 09/08/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Hungary
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 8f2c6a1eec1be41cd1e69a790052213e1f099ac6
-ms.sourcegitcommit: 73ae66c9464bcc9ddc1efbf4e76abb2758862fe6
+ms.openlocfilehash: fd3e9cecafa755842fef5d990cd695bec97ac761
+ms.sourcegitcommit: d03f301633175b15d46690fc97067820bf21579f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "3346689"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "3775163"
 ---
 # <a name="calculate-average-and-daily-exchange-rates"></a>Átlagos és napi árfolyam kiszámítása
 
@@ -106,8 +106,8 @@ Ez a példa végigvezeti az átlagos árfolyamszámítási funkción egy banksz�
 
 | **Dátum**      | **Számla típusa** | **Számla** | **Tartozik** | **Követel** | **Ellenszámla típusa** | **Ellenszámla** | **Pénznem** | **Árfolyam** |
 |---------------|------------------|-------------|-----------|------------|-------------------------|--------------------|--------------|-------------------|
-| 2020. március 1. | Bank             | DEMF USD    | 100       |            | Vevő                | DE - 010             | USD          | 91                |
-| 2020. március 2. | Bank             | DEMF USD    | 200       |            | Vevő                | DE - 011             | USD          | 92                |
+| 2020. március 1. | Bank             | DEMF USD    | 100       |            | Vevő                | DE - 010             | USD          | 91.0000           |
+| 2020. március 2. | Bank             | DEMF USD    | 200       |            | Vevő                | DE - 011             | USD          | 92.0000           |
 
 6. Válassza a **Feladás** parancsot.
 7. Válassza a **Főkönyv** \> **Naplóbejegyzések** \> **Általános naplók** lehetőséget, majd válassza az **Új** opciót.
@@ -116,9 +116,9 @@ Ez a példa végigvezeti az átlagos árfolyamszámítási funkción egy banksz�
 
 | **Dátum**      | **Számla típusa** | **Számla** | **Tartozik** | **Követel** | **Ellenszámla típusa** | **Ellenszámla** | **Pénznem** | **Árfolyam** |
 |---------------|------------------|-------------|-----------|------------|-------------------------|--------------------|--------------|-------------------|
-| 2020. március 3. | Bank             | DEMF USD    | 110       |            | Vevő                | DE - 012             | USD          | 93                |
-| 2020. március 3. | Bank             | DEMF USD    |           | 150        | Szállító                  | DE - 001             | USD          | 93                |
-| 2020. március 3. | Bank             | DEMF USD    |           | 250        | Szállító                  | DE - 01001           | USD          | 93                |
+| 2020. március 3. | Bank             | DEMF USD    | 100       |            | Vevő                | DE - 012             | USD          | 93.0000           |
+| 2020. március 3. | Bank             | DEMF USD    |           | 150        | Szállító                  | DE - 001             | USD          | 93.0000           |
+| 2020. március 3. | Bank             | DEMF USD    |           | 250        | Szállító                  | DE - 01001           | USD          | 93.0000           |
 
 10. Ellenőrizze, hogy a sorokba automatikusan bevitt devizaárfolyam értéke **93**.
 11. Válassza ki a **Funkciók** \> **Arfolyamszámítás** lehetőséget.
@@ -131,12 +131,14 @@ Ez a példa végigvezeti az átlagos árfolyamszámítási funkción egy banksz�
 
 | **Dátum**      | **Számla típusa** | **Számla** | **Tartozik** | **Követel** | **Ellenszámla típusa** | **Ellenszámla** | **Pénznem** | **Árfolyam** |
 |---------------|------------------|-------------|-----------|------------|-------------------------|--------------------|--------------|-------------------|
-| 2020. március 3. | Bank             | DEMF USD    | 110       |            | Vevő                | DE - 012             | USD          | 93                |
-| 2020. március 3. | Bank             | DEMF USD    |           | 150        | Szállító                  | DE - 001             | USD          | 92                |
-| 2020. március 3. | Bank             | DEMF USD    |           | 250        | Szállító                  | DE - 01001           | USD          | 92                |
+| 2020. március 3. | Bank             | DEMF USD    | 100       |            | Vevő                | DE - 012             | USD          | 93.0000           |
+| 2020. március 3. | Bank             | DEMF USD    |           | 150        | Szállító                  | DE - 001             | USD          | 92.0000           |
+| 2020. március 3. | Bank             | DEMF USD    |           | 250        | Szállító                  | DE - 01001           | USD          | 92.0000           |
 
-A **92-es** érték a (91 + 92 + 93) ÷ 3 számítás alapján került kiszámításra, ahol a 91 a bejövő feladott banki tranzakció 2020 március 1-jei átváltási árfolyama, a 92 a bejővő feladott banki tranzakció 2020. március 2-ai átváltási árfolyama, a 93 pedig a 2020. március 3-ai bejövő nem feladott banki tranzakció átváltási árfolyama ugyanabban a naplóban.
+A második sor **92,0000** értékének kiszámítása (100 * 0,91 + 200 * 0,92 + 100 * 0,93)/(100 + 200 + 100). A számítási képlet a következő három korábbi bejövő tranzakciót veszi figyelembe a 100, 200 és 100 esetében.
 
-Az átlagos árfolyam-számítási mód elérhető a kimenő banki tranzakcióhoz. Figyelembe veszi a bejövő banki tranzakciókat (az aktuális főkönyvi naplóban feladott és fel nem adott tranzakciókat is) azon időszakra vonatkozóan, amely a párbeszédpanelen megadott „kezdő dátum” beállításnál kezdődik, és a kimenő banki tranzakció dátumára végződik. Ez a módszer ezeknek a tranzakcióknak az átlagos átváltási árfolyamát a számtani közép képlet segítségével számolja ki. A program ezután a létrejövő árfolyamot hozzárendeli a kimenő tranzakciókhoz.
+A harmadik sorhoz tartozó **92,0000** érték számítása (100 * 0,91 + 200 * 0,92 + 100 * 0,93-150 * 0,92)/(100 + 200 + 100-150). Három korábbi bejövő tranzakciót és egy korábbi kimenő tranzakciót vettek figyelembe a képletben.
+
+Az átlagos árfolyam-számítási mód elérhető a kimenő banki tranzakcióhoz. Figyelembe veszi a feladott banki tranzakciókat (az aktuális főkönyvi naplóban feladott és fel nem adott banki tranzakciókat is, amelyek a figyelembe vett banki tranzakció előtt jöttek létre) azon időszakra vonatkozóan, amely a párbeszédpanelen megadott „kezdő dátum” beállításnál kezdődik, és a kimenő banki tranzakció dátumára végződik. Ez a módszer ezeknek a tranzakcióknak az átlagos átváltási árfolyamát úgy számítja ki, hogy az összes korábbi tranzakció teljes összegét a könyvelési pénznemben minden korábbi tranzakció teljes összegével elosztja. A program ezután a létrejövő árfolyamot hozzárendeli a kimenő tranzakcióhoz.
 
 A Napi árfolyamok és az Átlagos árfolyam-módszerek a bizonylatnaplóban (**Készpénz-és banki kezelés** \> **Készpénz-tranzakciók** \> **Bizonylatnaplók**) megadott pénztári tranzakciókra is használhatók. A banki tranzakcióknál használt algoritmus az átlagos arány kiszámítására is szolgál.

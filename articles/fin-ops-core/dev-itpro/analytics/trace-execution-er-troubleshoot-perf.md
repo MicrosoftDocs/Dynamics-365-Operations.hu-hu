@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 6585e44701160bf31c107c07226f992b12cf035e
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 207783f5a44d5c6432539ac27a8c491bca811da4
+ms.sourcegitcommit: 5472005274f2f94fba82dda90de128f39d8b8390
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550648"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3760031"
 ---
 # <a name="trace-the-execution-of-er-formats-to-troubleshoot-performance-issues"></a>Az ER-formátumok végrehajtásának nyomon követése a teljesítménnyel kapcsolatos problémák elhárításához
 
@@ -101,7 +101,7 @@ Tegyük fel, hogy egy új ER-megoldást tervez, amellyel szállítói tranzakci�
 
 Tegyük fel, hogy befejezte az ER-megoldás első verziójának tervezését. Ezt követően tesztelni szeretné példányában, és elemezni a végrehajtás teljesítményét.
 
-### <a id='import-configuration'></a>ER-konfiguráció importálása az RCS szolgáltatásból a Finance and Operations modulba
+### <a name="import-an-er-configuration-from-rcs-into-finance-and-operations"></a><a id='import-configuration'></a>ER konfigurációk importálása RCS-ből a Finance and Operations-alkalmazásba
 
 1. Jelentkezzen be az alkalmazás példányába.
 2. Ebben az oktatóanyagban konfigurációkat importálunk az RCS-példányból (ahol az ER-összetevőket tervezzük) az Ön példányába (ahol teszteljük és használjuk majd őket). Ezért győződjön meg arról, hogy az összes szükséges műterméket előkészítette. További útmutatásért tekintse át az [Elektronikus jelentéskészítési (ER) konfigurációk importálása a Regulatory Configuration Service (RCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/rcs-download-configurations) eljárást.
@@ -146,7 +146,7 @@ Az adatmodell- és modell-hozzárendelési konfigurációk megfelelő verzióit 
 
     ![A Felhasználói paraméterek párbeszédablak](./media/GER-PerfTrace-GER-UserParameters.png)
 
-### <a id='run-format'></a>Az ER-formátum futtatása
+### <a name="run-the-er-format"></a><a id='run-format'></a>Az ER-formátum futtatása
 
 1. Válassza a **DEMF** vállalatot.
 2. Nyissa meg a következőt: **Szervezeti adminisztráció \> Elektronikus jelentéskészítés \> Konfigurációk**.
@@ -157,7 +157,7 @@ Figyelje meg, hogy a létrejövő forrásfájl hat szállító 265 tranzakciój�
 
 ## <a name="review-the-execution-trace"></a>A végrehajtás nyomkövetésének áttekintése
 
-### <a id='export-trace'></a>A létrejövő nyomkövetés exportálása az alkalmazásból
+### <a name="export-the-generated-trace-from-the-application"></a><a id='export-trace'></a>A létrejövő nyomkövetés exportálása az alkalmazásból
 
 A teljesítmény-nyomkövetéseket leválaszthatja az ER forrásformátumából, és szerializálhatja egy külső zip-fájlba.
 
@@ -176,7 +176,7 @@ A teljesítmény-nyomkövetéseket leválaszthatja az ER forrásformátumából,
 
 Megfigyelhető, hogy végrehajtott ER-formátumhoz létrehozott teljesítmény-nyomkövetés és az ER-modell-hozzárendelés közti társítás a használt gyökérszintű leírón és a közös adatmodellen alapul. A formátum és a modell-hozzárendelés verziószámát a rendszer nem veszi figyelembe. Az **Alapértelmezett a modell-hozzárendeléshez** jelölő modell-hozzárendeléshez tartozó beállítását szintén figyelmen kívül hagyja.
 
-### <a id='import-trace'></a>A létrejövő nyomkövetés importálása az RCS szolgáltatásba
+### <a name="import-the-generated-trace-into-rcs"></a><a id='import-trace'></a>A létrejövő nyomkövetés importálása az RCS szolgáltatásba
 
 1. Az RCS szolgáltatásban az **Elektronikus jelentéskészítés** munkaterületen válassza ki a **Jelentéskészítési konfiguráció** csempét.
 2. A **Konfigurációk** lapon található konfigurációs fában bontsa ki a **Teljesítmény-nyomkövetési modell** elemet, és válassza a **Teljesítmény-nyomkövetés formátuma** lehetőséget.
@@ -201,7 +201,7 @@ Megfigyelhető, hogy végrehajtott ER-formátumhoz létrehozott teljesítmény-n
 
 2. Zárja be a **Formátumtervező** lapot.
 
-### <a id='use-trace'></a>A teljesítmény-nyomkövetés alkalmazása elemzési célokra az RCS szolgáltatásban – Modell-hozzárendelés
+### <a name="use-the-performance-trace-for-analysis-in-rcs--model-mapping"></a><a id='use-trace'></a>A teljesítmény-nyomkövetés alkalmazása elemzési célokra az RCS szolgáltatásban – Modell-hozzárendelés
 
 1. Az RCS szolgáltatásban a **Konfigurációk** oldalon található konfigurációs fában válassza ki a **Teljesítmény-nyomkövetés hozzárendelése** elemet.
 2. A Műveleti ablaktáblán kattintson a **Tervező** elemre.
@@ -293,7 +293,7 @@ A LedgerTransTypeList-adatforrásra vonatkozó lehívások számának csökkent�
 
 ### <a name="import-the-modified-er-model-mapping-configuration-from-rcs-into-the-application"></a>A módosított ER-modell-hozzárendelési konfiguráció importálása az RCS szolgáltatásból az alkalmazásba
 
-Ismételje meg a jelen témakörben korábban ismertetett, [ER-konfiguráció importálása az RCS szolgáltatásból a Finance and Operations modulba](#import-configuration) című szakasz lépéseit a **Teljesítmény-nyomkövetés hozzárendelése** konfiguráció 1.2-es verziójának importálásához.
+Ismételje meg a jelen témakörben korábban ismertetett, [ER-konfiguráció importálása az RCS szolgáltatásból a Finance and Operations-modulba](#import-configuration) című szakasz lépéseit a **Teljesítmény-nyomkövetés** hozzárendelése konfiguráció 1.2-es verziójának importálásához.
 
 ## <a name="run-the-modified-er-solution-to-trace-execution"></a>A módosított ER-megoldás futtatása a végrehajtás nyomon követéséhez
 
@@ -301,7 +301,7 @@ Ismételje meg a jelen témakörben korábban ismertetett, [ER-konfiguráció im
 
 Ismételje meg a jelen témakörben korábban ismertetett, [ER-formátum futtatása](#run-format) szakasz lépéseit az új teljesítmény-nyomkövetés létrehozásához.
 
-## <a name="review-the-execution-trace"></a>A végrehajtás nyomkövetésének áttekintése
+## <a name="work-with-the-execution-trace"></a>Munka végrehajtás nyomon követésével
 
 ### <a name="export-the-generated-trace-from-the-application"></a>A létrejövő nyomkövetés exportálása az alkalmazásból
 
@@ -347,7 +347,7 @@ Ismételje meg a jelen témakörben korábban ismertetett, [ER-formátum futtat�
 
 Megfigyelheti, hogy az internetböngésző felajánlja a zip-fájl letöltését. Ez a fájl a teljesítmény-nyomkövetést PerfView formátumban tartalmazza. Ezután használhatja a PerfView teljesítményelemzési eszközt az ER-formátum végrehajtás részleteinek elemzésére.
 
-![A végrehajtott ER-formátum információinak nyomon követése a PerfView szolgáltatásban](./media/GER-PerfTrace2-PerfViewTrace1.PNG)
+![Teljesítmény-nyomkövetési adatok PerfView formátumban](./media/GER-PerfTrace2-PerfViewTrace1.PNG)
 
 ## <a name="use-external-tools-to-review-an-execution-trace-that-includes-database-queries"></a>Külső eszközök használata az adatbázis-lekérdezéseket tartalmazó végrehajtási nyomon követés áttekintéséhez
 
@@ -363,7 +363,7 @@ Az elektronikus jelentéskészítési keretrendszer fejlesztéseinek köszönhet
     - A **Lekérdezési statisztikák gyűjtése** beállításnál adja meg az **Igen** értéket.
     - A **Lekérdezés nyomon követése** beállításhoz adja meg az **Igen** lehetőséget.
 
-    ![A Felhasználói paraméterek párbeszédablak](./media/GER-PerfTrace2-GER-UserParameters.PNG)
+    ![Végrehajtási nyomkövetési szakasz, Felhasználói paraméterek párbeszédpanel](./media/GER-PerfTrace2-GER-UserParameters.PNG)
 
 ### <a name="run-the-er-format"></a>Az ER-formátum futtatása
 
@@ -372,3 +372,8 @@ Ismételje meg a jelen témakörben korábban ismertetett, [ER-formátum futtat�
 Megfigyelheti, hogy az internetböngésző felajánlja a zip-fájl letöltését. Ez a fájl a teljesítmény-nyomkövetést PerfView formátumban tartalmazza. Ezután használhatja a PerfView teljesítményelemzési eszközt az ER-formátum végrehajtás részleteinek elemzésére. Ez a nyomon követés már az SQL-adatbázis ER-formátum végrehajtása alatti hozzáférés részleteire is vonatkozik.
 
 ![A végrehajtott ER-formátum információinak nyomon követése a PerfView szolgáltatásban](./media/GER-PerfTrace2-PerfViewTrace2.PNG)
+
+## <a name="additional-resources"></a>További erőforrások
+
+- [Elektronikus jelentések áttekintése](general-electronic-reporting.md)
+- [Az ER megoldások teljesítményének javítása a paraméterek SZÁMÍTOTT MEZŐ-adatforrások hozzáadásával](er-calculated-field-ds-performance.md)
