@@ -1,14 +1,14 @@
 ---
-title: ER - A konfiguráció importálása a Lifecycle Services szolgáltatásból
-description: A következő lépések leírják, hogy a Rendszergazda vagy az Elektronikus jelentések fejlesztője szerepkörrel rendelkező felhasználó miként importálhat új Elektronikus jelentés (ER) konfigurációt a Microsoft Lifecycle Services (LCS) rendszerből.
+title: A konfiguráció importálása a Lifecycle Services szolgáltatásból
+description: Ez a témakör leírja, hogy a Rendszergazda vagy az Elektronikus jelentések fejlesztője szerepkörrel rendelkező felhasználó miként importálhat új Elektronikus jelentés (ER) konfigurációt a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásból.
 author: NickSelin
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 09/14/2020
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ERWorkspace, ERSolutionTable,  ERSolutionRepositoryTable, ERSolutionImport
+ms.search.form: ERWorkspace, ERSolutionTable, ERSolutionRepositoryTable, ERSolutionImport
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
@@ -16,57 +16,91 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 67e09e3187ac49e12727116f55066b64a386e2de
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 59dbbf820f7a3de1e5fb31f781943320b8b1a60a
+ms.sourcegitcommit: 9857d5cbdc0ab2fc9db049ac5ad118fc2b29bedc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3142386"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3810643"
 ---
-# <a name="er-import-a-configuration-from-lifecycle-services"></a><span data-ttu-id="45f17-103">ER - A konfiguráció importálása a Lifecycle Services szolgáltatásból</span><span class="sxs-lookup"><span data-stu-id="45f17-103">ER Import a configuration from Lifecycle Services</span></span>
+# <a name="import-a-configuration-from-lifecycle-services"></a><span data-ttu-id="e86a7-103">A konfiguráció importálása a Lifecycle Services szolgáltatásból</span><span class="sxs-lookup"><span data-stu-id="e86a7-103">Import a configuration from Lifecycle Services</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="45f17-104">A következő lépések leírják, hogy a Rendszergazda vagy az Elektronikus jelentések fejlesztője szerepkörrel rendelkező felhasználó miként importálhat új Elektronikus jelentés (ER) konfigurációt a Microsoft Lifecycle Services (LCS) rendszerből.</span><span class="sxs-lookup"><span data-stu-id="45f17-104">The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can import a new version of an Electronic reporting (ER) configuration from Microsoft Lifecycle Services (LCS).</span></span>
+<span data-ttu-id="e86a7-104">Ez a témakör leírja, hogy a Rendszergazda vagy az Elektronikus jelentések fejlesztője szerepkörrel rendelkező felhasználó miként importálhat új [Elektronikus jelentés (ER) konfigurációt](../general-electronic-reporting.md#Configuration) a [projektszintű Eszközkönyvtárból](../../lifecycle-services/asset-library.md) a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásból.</span><span class="sxs-lookup"><span data-stu-id="e86a7-104">This topic explains how a user in the System administrator or Electronic reporting developer role can import a new version of an [Electronic reporting (ER) configuration](../general-electronic-reporting.md#Configuration) from the [project-level Asset library](../../lifecycle-services/asset-library.md) in Microsoft Dynamics Lifecycle Services (LCS).</span></span>
 
-<span data-ttu-id="45f17-105">Az alábbi példában kiválasztja az ER konfiguráció kívánt verzióját, majd importálja a Litware, Inc. minta vállalatra vonatkozóan. Ezeket a lépéseket a vállalat között megosztott ER konfigurációjaként bármely vállalatnál végrehajthatja.</span><span class="sxs-lookup"><span data-stu-id="45f17-105">In this example, you will select the desired version of the ER configuration and import it for sample company, Litware, Inc. These steps can be performed in any company as ER configurations are shared among companies.</span></span> <span data-ttu-id="45f17-106">A lépések végrehajtásához el kell végeznie először a „Töltse fel az ER konfigurációt a Lifecycle Services rendszerbe” eljárás lépéseit.</span><span class="sxs-lookup"><span data-stu-id="45f17-106">To complete these steps, you must first complete the steps in the "Upload an ER configuration into Lifecycle Services" procedure.</span></span> <span data-ttu-id="45f17-107">Az LCS rendszerbe való hozzáféréshez végre kell hajtani ezeket a lépéseket.</span><span class="sxs-lookup"><span data-stu-id="45f17-107">Access to LCS is also required for completion of these steps.</span></span>
+<span data-ttu-id="e86a7-105">Az alábbi példában kiválasztja az ER konfiguráció kívánt verzióját, majd importálja a Litware, Inc. nevű minta vállalatra vonatkozóan. Ezeket a lépéseket a vállalat között megosztott ER konfigurációjaként bármely vállalatnál elvégezheti.</span><span class="sxs-lookup"><span data-stu-id="e86a7-105">In this example, you will select the desired version of the ER configuration and import it for a sample company that is named Litware, Inc. These steps can be completed in any company, because ER configurations are shared among companies.</span></span> <span data-ttu-id="e86a7-106">A lépések végrehajtásához el kell végeznie először a [Töltse fel az ER konfigurációt a Lifecycle Services rendszerbe](er-upload-configuration-into-lifecycle-services.md) eljárás lépéseit.</span><span class="sxs-lookup"><span data-stu-id="e86a7-106">To complete these steps, you must first complete the steps in [Upload a configuration into Lifecycle Services](er-upload-configuration-into-lifecycle-services.md).</span></span> <span data-ttu-id="e86a7-107">Az LCS-hez való hozzáférés is szükséges.</span><span class="sxs-lookup"><span data-stu-id="e86a7-107">Access to LCS is also required.</span></span>
 
-1. <span data-ttu-id="45f17-108">Ugorjon a Szervezeti adminisztráció > Munkaterületek > Elektronikus jelentés pontra.</span><span class="sxs-lookup"><span data-stu-id="45f17-108">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
-2. <span data-ttu-id="45f17-109">Kattintson a Konfigurációk lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="45f17-109">Click Configurations.</span></span>
+1. <span data-ttu-id="e86a7-108">Bejelentkezés az alkalmazásba az alábbi szerepkörök egyikének használatával:</span><span class="sxs-lookup"><span data-stu-id="e86a7-108">Sign in to the application by using one of the following roles:</span></span>
 
-## <a name="delete-a-shared-version-of-data-model-configuration"></a><span data-ttu-id="45f17-110">Az adatmodell megosztott verziójának törlése</span><span class="sxs-lookup"><span data-stu-id="45f17-110">Delete a shared version of data model configuration</span></span>
-1. <span data-ttu-id="45f17-111">A fastruktúrában válassza ki a „Minta modell beállítása” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="45f17-111">In the tree, select 'Sample model configuration'.</span></span>
-    * <span data-ttu-id="45f17-112">A rendszer létrehozott egy minta adatmodell konfigurációjának első verzióját és közzé tette az LCS-ben a számára létrehozva és a „Töltse fel az ER konfigurációt a Lifecycle Services rendszerbe eljárás“ során.</span><span class="sxs-lookup"><span data-stu-id="45f17-112">The first version of a sample data model configuration has been created and published to LCS during the "Upload an ER configuration into Lifecycle Services" procedure.</span></span> <span data-ttu-id="45f17-113">Ebben az eljárásban törli az ER-konfiguráció ezen verzióját.</span><span class="sxs-lookup"><span data-stu-id="45f17-113">In this procedure, you will delete this version of the ER configuration.</span></span> <span data-ttu-id="45f17-114">A minta adatmodell konfigurációjának verzióját később importálják az LCS-ből.</span><span class="sxs-lookup"><span data-stu-id="45f17-114">This version of a sample data model configuration will be imported later from LCS.</span></span>  
-2. <span data-ttu-id="45f17-115">Keresse meg és jelölje ki a kívánt rekordot a listán.</span><span class="sxs-lookup"><span data-stu-id="45f17-115">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="45f17-116">Válassza ki a „Megosztott” állapotú konfiguráció verzióját.</span><span class="sxs-lookup"><span data-stu-id="45f17-116">Select the version of this configuration that is in the 'Shared' status.</span></span> <span data-ttu-id="45f17-117">Ez az állapot azt jelzi, hogy a konfigurációt közzétették az LCS-ben.</span><span class="sxs-lookup"><span data-stu-id="45f17-117">This status indicates that the configuration has been published to LCS.</span></span>  
-3. <span data-ttu-id="45f17-118">Kattintson az Állapot módosítása elemre.</span><span class="sxs-lookup"><span data-stu-id="45f17-118">Click Change status.</span></span>
-4. <span data-ttu-id="45f17-119">Kattintson a Megszüntetés gombra.</span><span class="sxs-lookup"><span data-stu-id="45f17-119">Click Discontinue.</span></span>
-    * <span data-ttu-id="45f17-120">Módosítsa a kiválasztott verzió állapotát „Megosztott” állapotról „Kifutott” állapotra annak érdekében, hogy lehetővé váljon a törlése.</span><span class="sxs-lookup"><span data-stu-id="45f17-120">Change the status of the selected version from 'Shared' to 'Discontinued' to make it available for deletion.</span></span>  
-5. <span data-ttu-id="45f17-121">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="45f17-121">Click OK.</span></span>
-6. <span data-ttu-id="45f17-122">Keresse meg és jelölje ki a kívánt rekordot a listán.</span><span class="sxs-lookup"><span data-stu-id="45f17-122">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="45f17-123">Válassza ki a „Kifutott” állapotú konfiguráció verzióját.</span><span class="sxs-lookup"><span data-stu-id="45f17-123">Select the version of this configuration that has a status of 'Discontinued'.</span></span>  
-7. <span data-ttu-id="45f17-124">Kattintson a Törlés gombra.</span><span class="sxs-lookup"><span data-stu-id="45f17-124">Click Delete.</span></span>
-8. <span data-ttu-id="45f17-125">Kattintson az Igen gombra.</span><span class="sxs-lookup"><span data-stu-id="45f17-125">Click Yes.</span></span>
-    * <span data-ttu-id="45f17-126">Ne feledje, hogy a kijelölt adatmodell konfigurációjának csak a 2-es verziója érhető el.</span><span class="sxs-lookup"><span data-stu-id="45f17-126">Note that the only draft version 2 of the selected data model configuration is available.</span></span>  
-9. <span data-ttu-id="45f17-127">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="45f17-127">Close the page.</span></span>
+    - <span data-ttu-id="e86a7-109">Elektronikus jelentések fejlesztője</span><span class="sxs-lookup"><span data-stu-id="e86a7-109">Electronic reporting developer</span></span>
+    - <span data-ttu-id="e86a7-110">Rendszergazda</span><span class="sxs-lookup"><span data-stu-id="e86a7-110">System administrator</span></span>
 
-## <a name="import-a-shared-version-of-data-model-configuration-from-lcs"></a><span data-ttu-id="45f17-128">Az adatmodell konfigurációjának megosztott verziójának importálása az LCS-rendszerből</span><span class="sxs-lookup"><span data-stu-id="45f17-128">Import a shared version of data model configuration from LCS</span></span>
-1. <span data-ttu-id="45f17-129">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="45f17-129">In the list, mark the selected row.</span></span>
-    * <span data-ttu-id="45f17-130">Nyissa meg a „Litware, Inc.” vállalatra vonatkozó tárházak listáját.</span><span class="sxs-lookup"><span data-stu-id="45f17-130">Open the list of repositories for the 'Litware, Inc.'</span></span> <span data-ttu-id="45f17-131">konfigurációszolgáltató.</span><span class="sxs-lookup"><span data-stu-id="45f17-131">configuration provider.</span></span>  
-2. <span data-ttu-id="45f17-132">Kattintson a Tárházak gombra.</span><span class="sxs-lookup"><span data-stu-id="45f17-132">Click Repositories.</span></span>
-3. <span data-ttu-id="45f17-133">Kattintson a Megnyitás gombra.</span><span class="sxs-lookup"><span data-stu-id="45f17-133">Click Open.</span></span>
-    * <span data-ttu-id="45f17-134">Válassza ki a LCS tárházat és nyissa meg.</span><span class="sxs-lookup"><span data-stu-id="45f17-134">Select the LCS repository and open it.</span></span>  
-4. <span data-ttu-id="45f17-135">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="45f17-135">In the list, mark the selected row.</span></span>
-    * <span data-ttu-id="45f17-136">Válassza ki a „Minta modell konfiguráció” első verzióját a verziók listájában.</span><span class="sxs-lookup"><span data-stu-id="45f17-136">Select the first version of the 'Sample model configuration' in the versions list.</span></span>  
-5. <span data-ttu-id="45f17-137">Kattintson az Importálás gombra.</span><span class="sxs-lookup"><span data-stu-id="45f17-137">Click Import.</span></span>
-6. <span data-ttu-id="45f17-138">Kattintson az Igen gombra.</span><span class="sxs-lookup"><span data-stu-id="45f17-138">Click Yes.</span></span>
-    * <span data-ttu-id="45f17-139">Erősítse meg a kiválasztott változatot az LCS rendszerből.</span><span class="sxs-lookup"><span data-stu-id="45f17-139">Confirm the import of the selected version from LCS .</span></span>  
-    * <span data-ttu-id="45f17-140">Vegye figyelembe, hogy az információs üzenet (a képernyő fölött) megerősíti a kiválasztott verzió importálásának sikeres elvégzését.</span><span class="sxs-lookup"><span data-stu-id="45f17-140">Note that the information message (above the form) confirms the successful completion of the import of the selected version.</span></span>  
-7. <span data-ttu-id="45f17-141">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="45f17-141">Close the page.</span></span>
-8. <span data-ttu-id="45f17-142">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="45f17-142">Close the page.</span></span>
-9. <span data-ttu-id="45f17-143">Kattintson a Konfigurációk lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="45f17-143">Click Configurations.</span></span>
-10. <span data-ttu-id="45f17-144">A fastruktúrában válassza ki a „Minta modell beállítása” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="45f17-144">In the tree, select 'Sample model configuration'.</span></span>
-11. <span data-ttu-id="45f17-145">Keresse meg és jelölje ki a kívánt rekordot a listán.</span><span class="sxs-lookup"><span data-stu-id="45f17-145">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="45f17-146">Válassza ki a „Megosztott” állapotú konfiguráció verzióját.</span><span class="sxs-lookup"><span data-stu-id="45f17-146">Select the version of this configuration that has a status of 'Shared'.</span></span>  
-    * <span data-ttu-id="45f17-147">Ne feledje, hogy már a kijelölt adatmodell konfigurációjának 1-es verziója is elérhető.</span><span class="sxs-lookup"><span data-stu-id="45f17-147">Note that the shared version 1 of the selected data model configuration is available now as well.</span></span>  
+2. <span data-ttu-id="e86a7-111">Ugorjon a **Szervezeti adminisztráció** \> **Munkaterületek** \> **Elektronikus jelentés** pontra.</span><span class="sxs-lookup"><span data-stu-id="e86a7-111">Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**.</span></span>
+3. <span data-ttu-id="e86a7-112">Válassza a **Konfigurációk** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="e86a7-112">Select **Configurations**.</span></span>
 
+<a name="accessconditions"></a>
+> [!NOTE]
+> <span data-ttu-id="e86a7-113">Győződjön meg róla, hogy az aktuális Dynamics 365 Finance felhasználó tagja annak az LCS projektnek, amely tartalmazza azt az Eszköztárat, amelyet a felhasználó [elérni](../../lifecycle-services/asset-library.md#asset-library-support) szeretne az ER-konfigurációk importálásához.</span><span class="sxs-lookup"><span data-stu-id="e86a7-113">Make sure that the current Dynamics 365 Finance user is a member of the LCS project that contains the Asset library that the user wants to [access](../../lifecycle-services/asset-library.md#asset-library-support) to import ER configurations.</span></span>
+>
+> <span data-ttu-id="e86a7-114">Nem férhet hozzá egy LCS-projekthez egy olyan ER-adattárból, amely egy másik tartományt képvisel, mint a Finance-ben használt tartomány.</span><span class="sxs-lookup"><span data-stu-id="e86a7-114">You can't access an LCS project from an ER repository that represents a different domain than the domain that is used in Finance.</span></span> <span data-ttu-id="e86a7-115">Ha megpróbálja, akkor az LCS-projektek üres listája jelenik meg, és nem fogja tudni importálni a projekt-szintű Eszközökkönyvtár ER-konfigurációit az LCS-ben.</span><span class="sxs-lookup"><span data-stu-id="e86a7-115">If you try, an empty list of LCS projects will be shown, and you won't be able to import ER configurations from the project-level Asset library in LCS.</span></span> <span data-ttu-id="e86a7-116">Ahhoz, hogy a projekt-szintű Eszköztárakat egy olyan ER-adattárból elérje, amely ER-konfigurációk importálására szolgál, a Finance alkalmazásba való bejelentkezéshez olyan felhasználó hitelesítő adatait használja, aki olyan bérlőhöz (tartomány) tartozik, amelyhez az aktuális Finance-példány ki lett építve.</span><span class="sxs-lookup"><span data-stu-id="e86a7-116">To access project-level Asset libraries from an ER repository that is used to import ER configurations, sign in to Finance by using the credentials of a user who belongs to the tenant (domain) that the current Finance instance has been provisioned for.</span></span>
+
+## <a name="delete-a-shared-version-of-a-data-model-configuration"></a><span data-ttu-id="e86a7-117">Az adatmodell-konfiguráció megosztott verziójának törlése</span><span class="sxs-lookup"><span data-stu-id="e86a7-117">Delete a shared version of a data model configuration</span></span>
+
+1. <span data-ttu-id="e86a7-118">A **Konfigurációk** oldalon található konfigurációk fájában válassza ki a **Mintamodell-konfiguráció** elemet.</span><span class="sxs-lookup"><span data-stu-id="e86a7-118">On the **Configurations** page, in the configurations tree, select **Sample model configuration**.</span></span>
+
+    <span data-ttu-id="e86a7-119">A rendszer létrehozott egy minta adatmodell konfigurációjának első verzióját és közzé tette az LCS-ben, amikro elvégezte [A konfiguráció feltöltése a Lifecycle Services szolgáltatásba](er-upload-configuration-into-lifecycle-services.md) eljárás lépéseit.</span><span class="sxs-lookup"><span data-stu-id="e86a7-119">You created the first version of a sample data model configuration and published it to LCS when you completed the steps in [Upload a configuration into Lifecycle Services](er-upload-configuration-into-lifecycle-services.md).</span></span> <span data-ttu-id="e86a7-120">Ebben az eljárásban törli az ER-konfiguráció azon verzióját.</span><span class="sxs-lookup"><span data-stu-id="e86a7-120">In this procedure, you will delete that version of the ER configuration.</span></span> <span data-ttu-id="e86a7-121">Ezt a verziót később, ebben a témakörben importálja az LCS-ből.</span><span class="sxs-lookup"><span data-stu-id="e86a7-121">You will then import that version from LCS later in this topic.</span></span>
+
+2. <span data-ttu-id="e86a7-122">Keresse meg és jelölje ki a kívánt rekordot a listán.</span><span class="sxs-lookup"><span data-stu-id="e86a7-122">In the list, find and select the desired record.</span></span>
+
+    <span data-ttu-id="e86a7-123">Ebben a példában válassza ki a **Megosztott** állapotú konfiguráció verzióját.</span><span class="sxs-lookup"><span data-stu-id="e86a7-123">For this example, select the version of the configuration that has a status of **Shared**.</span></span> <span data-ttu-id="e86a7-124">Ez az állapot azt jelzi, hogy a konfigurációt közzétették az LCS-ben.</span><span class="sxs-lookup"><span data-stu-id="e86a7-124">This status indicates that the configuration has been published to LCS.</span></span>
+
+3. <span data-ttu-id="e86a7-125">Válassza az **Állapot módosítása** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="e86a7-125">Select **Change status**.</span></span>
+4. <span data-ttu-id="e86a7-126">Válassza a **Megszüntetés** parancsot.</span><span class="sxs-lookup"><span data-stu-id="e86a7-126">Select **Discontinue**.</span></span>
+
+    <span data-ttu-id="e86a7-127">A kiválasztott verzió állapotának módosításával **Megosztott** állapotról **Megszüntetett** állapotra annak érdekében, hogy lehetővé váljon a verzió törlése.</span><span class="sxs-lookup"><span data-stu-id="e86a7-127">By changing the status of the selected version from **Shared** to **Discontinued**, you make the version available for deletion.</span></span>
+
+5. <span data-ttu-id="e86a7-128">Válassza ki az **OK** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="e86a7-128">Select **OK**.</span></span>
+6. <span data-ttu-id="e86a7-129">Keresse meg és jelölje ki a kívánt rekordot a listán.</span><span class="sxs-lookup"><span data-stu-id="e86a7-129">In the list, find and select the desired record.</span></span>
+
+    <span data-ttu-id="e86a7-130">Ebben a példában válassza ki a **Megszüntetett** állapotú konfiguráció verzióját.</span><span class="sxs-lookup"><span data-stu-id="e86a7-130">For this example, select the version of the configuration that has a status of **Discontinued**.</span></span>
+
+7. <span data-ttu-id="e86a7-131">Válassza a **Törlés** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="e86a7-131">Select **Delete**.</span></span>
+8. <span data-ttu-id="e86a7-132">Válassza ki az **Igen** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="e86a7-132">Select **Yes**.</span></span>
+
+    <span data-ttu-id="e86a7-133">Ne feledje, hogy a most a kijelölt adatmodell konfigurációjának csak a 2-es verziója érhető el.</span><span class="sxs-lookup"><span data-stu-id="e86a7-133">Notice that the only draft version 2 of the selected data model configuration is now available.</span></span>
+
+9. <span data-ttu-id="e86a7-134">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="e86a7-134">Close the page.</span></span>
+
+## <a name="import-a-shared-version-of-a-data-model-configuration-from-lcs"></a><span data-ttu-id="e86a7-135">Egy adatmodell konfiguráció megosztott verziójának importálása az LCS-rendszerből</span><span class="sxs-lookup"><span data-stu-id="e86a7-135">Import a shared version of a data model configuration from LCS</span></span>
+
+1. <span data-ttu-id="e86a7-136">Ugorjon a **Szervezeti adminisztráció \> Munkaterületek \> Elektronikus jelentés** pontra.</span><span class="sxs-lookup"><span data-stu-id="e86a7-136">Go to **Organization administration \> Workspaces \> Electronic reporting**.</span></span>
+
+2. <span data-ttu-id="e86a7-137">Jelölje be a **Litware, Inc.** csempét a **Konfigurációs szolgáltatók** részben.</span><span class="sxs-lookup"><span data-stu-id="e86a7-137">In the **Configuration providers** section, select the **Litware, Inc.** tile.</span></span>
+
+3. <span data-ttu-id="e86a7-138">Kattintson a **Tárak** lehetőségre a **Litware, Inc.** lapon.</span><span class="sxs-lookup"><span data-stu-id="e86a7-138">On the **Litware, Inc.** tile, select **Repositories**.</span></span>
+
+    <span data-ttu-id="e86a7-139">Ez lehetővé teszi a Litware, Inc. tárházak listájának megnyitását. Konfigurációszolgáltató.</span><span class="sxs-lookup"><span data-stu-id="e86a7-139">You can now open the list of repositories for the Litware, Inc. configuration provider.</span></span>
+
+4. <span data-ttu-id="e86a7-140">Válassza ki a **Megnyitás** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="e86a7-140">Select **Open**.</span></span>
+
+    <span data-ttu-id="e86a7-141">A példa esetében válassza ki a **LCS** tárházat, majd nyissa meg.</span><span class="sxs-lookup"><span data-stu-id="e86a7-141">For this example, select the **LCS** repository, and open it.</span></span> <span data-ttu-id="e86a7-142">[Hozzá kell férnie](#accessconditions) az LCS-projekthez és a kijelölt Eszköztárhoz, amit elér az ER-adattár.</span><span class="sxs-lookup"><span data-stu-id="e86a7-142">You must have [access](#accessconditions) to the LCS project and to the Asset library that is accessed by the selected ER repository.</span></span>
+
+5. <span data-ttu-id="e86a7-143">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="e86a7-143">In the list, mark the selected row.</span></span>
+
+    <span data-ttu-id="e86a7-144">Ehhez a példához válassza ki a **Minta modell konfiguráció** első verzióját a verziók listájában.</span><span class="sxs-lookup"><span data-stu-id="e86a7-144">For this example, select the first version of **Sample model configuration** in the version list.</span></span>
+
+6. <span data-ttu-id="e86a7-145">Válassza az **Importálás** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="e86a7-145">Select **Import**.</span></span>
+7. <span data-ttu-id="e86a7-146">Válassz az **Igen** lehetőséget, hogy megerősítse a kiválasztott verzió importálását az LCS-ből.</span><span class="sxs-lookup"><span data-stu-id="e86a7-146">Select **Yes** to confirm the import of the selected version from LCS.</span></span>
+
+    <span data-ttu-id="e86a7-147">Egy tájékoztató üzenet megerősíti, hogy a program sikeresen importálta a kiválasztott verziót.</span><span class="sxs-lookup"><span data-stu-id="e86a7-147">An informational message confirms that the selected version was successfully imported.</span></span>
+
+8. <span data-ttu-id="e86a7-148">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="e86a7-148">Close the page.</span></span>
+9. <span data-ttu-id="e86a7-149">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="e86a7-149">Close the page.</span></span>
+10. <span data-ttu-id="e86a7-150">Válassza a **Konfigurációk** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="e86a7-150">Select **Configurations**.</span></span>
+11. <span data-ttu-id="e86a7-151">A fastruktúrában válassza ki a **Minta modell beállítása** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="e86a7-151">In the tree, select **Sample model configuration**.</span></span>
+12. <span data-ttu-id="e86a7-152">Keresse meg és jelölje ki a kívánt rekordot a listán.</span><span class="sxs-lookup"><span data-stu-id="e86a7-152">In the list, find and select the desired record.</span></span>
+
+    <span data-ttu-id="e86a7-153">Ebben a példában válassza ki a **Megosztott** állapotú konfiguráció verzióját.</span><span class="sxs-lookup"><span data-stu-id="e86a7-153">For this example, select the version of the configuration that has a status of **Shared**.</span></span>
+
+    <span data-ttu-id="e86a7-154">Ne feledje, hogy már a kijelölt adatmodell konfigurációjának 1-es verziója is elérhető.</span><span class="sxs-lookup"><span data-stu-id="e86a7-154">Notice that shared version 1 of the selected data model configuration is also available now.</span></span>

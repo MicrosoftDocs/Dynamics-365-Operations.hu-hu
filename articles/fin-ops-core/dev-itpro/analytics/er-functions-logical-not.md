@@ -18,41 +18,41 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a518f255a4488c5ed6e007b1787e678fd88aff36
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: af588c3714069040fa339d3121e6eb404b9be979
+ms.sourcegitcommit: 445f6d8d0df9f2cbac97e85e3ec3ed8b7d18d3a2
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3041722"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "3744647"
 ---
-# <span data-ttu-id="5baf8-103"><a name="NOT">NOT ER-függvény</a></span><span class="sxs-lookup"><span data-stu-id="5baf8-103"><a name="NOT">NOT ER function</a></span></span>
+# <a name="not-er-function"></a><span data-ttu-id="176ca-103">NOT ER-függvény</span><span class="sxs-lookup"><span data-stu-id="176ca-103">NOT ER function</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="5baf8-104">A `NOT` függvény a megadott feltétel sztornírozott logikai értékét adja eredményül *logikai* értékként.</span><span class="sxs-lookup"><span data-stu-id="5baf8-104">The `NOT` function returns the reversed logical value of the specified condition as a *Boolean* value.</span></span>
+<span data-ttu-id="176ca-104">A `NOT` függvény a megadott feltétel sztornírozott logikai értékét adja eredményül *logikai* értékként.</span><span class="sxs-lookup"><span data-stu-id="176ca-104">The `NOT` function returns the reversed logical value of the specified condition as a *Boolean* value.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="5baf8-105">Szintaxis</span><span class="sxs-lookup"><span data-stu-id="5baf8-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="176ca-105">Szintaxis</span><span class="sxs-lookup"><span data-stu-id="176ca-105">Syntax</span></span>
 
 ```vb
 NOT (condition)
 ```
 
-## <a name="arguments"></a><span data-ttu-id="5baf8-106">Argumentumok</span><span class="sxs-lookup"><span data-stu-id="5baf8-106">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="176ca-106">Argumentumok</span><span class="sxs-lookup"><span data-stu-id="176ca-106">Arguments</span></span>
 
-<span data-ttu-id="5baf8-107">`condition`: *Logikai*</span><span class="sxs-lookup"><span data-stu-id="5baf8-107">`condition`: *Boolean*</span></span>
+<span data-ttu-id="176ca-107">`condition`: *Logikai*</span><span class="sxs-lookup"><span data-stu-id="176ca-107">`condition`: *Boolean*</span></span>
 
-<span data-ttu-id="5baf8-108">Érvényes feltételes kifejezés, amelyet meg kell fordítani.</span><span class="sxs-lookup"><span data-stu-id="5baf8-108">A valid conditional expression that must be reversed.</span></span>
+<span data-ttu-id="176ca-108">Érvényes feltételes kifejezés, amelyet meg kell fordítani.</span><span class="sxs-lookup"><span data-stu-id="176ca-108">A valid conditional expression that must be reversed.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="5baf8-109">Visszaadott értékek</span><span class="sxs-lookup"><span data-stu-id="5baf8-109">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="176ca-109">Visszaadott értékek</span><span class="sxs-lookup"><span data-stu-id="176ca-109">Return values</span></span>
 
-<span data-ttu-id="5baf8-110">*Logikai*</span><span class="sxs-lookup"><span data-stu-id="5baf8-110">*Boolean*</span></span>
+<span data-ttu-id="176ca-110">*Logikai*</span><span class="sxs-lookup"><span data-stu-id="176ca-110">*Boolean*</span></span>
 
-<span data-ttu-id="5baf8-111">Az eredményül kapott *Logikai* érték.</span><span class="sxs-lookup"><span data-stu-id="5baf8-111">The resulting *Boolean* value.</span></span>
+<span data-ttu-id="176ca-111">Az eredményül kapott *Logikai* érték.</span><span class="sxs-lookup"><span data-stu-id="176ca-111">The resulting *Boolean* value.</span></span>
 
-## <a name="example"></a><span data-ttu-id="5baf8-112">Példa</span><span class="sxs-lookup"><span data-stu-id="5baf8-112">Example</span></span>
+## <a name="example"></a><span data-ttu-id="176ca-112">Példa</span><span class="sxs-lookup"><span data-stu-id="176ca-112">Example</span></span>
 
-<span data-ttu-id="5baf8-113">A `NOT (TRUE)` **HAMIS** értéket ad vissza.</span><span class="sxs-lookup"><span data-stu-id="5baf8-113">`NOT (TRUE)` returns **FALSE**.</span></span>
+<span data-ttu-id="176ca-113">A `NOT (TRUE)` **HAMIS** értéket ad vissza.</span><span class="sxs-lookup"><span data-stu-id="176ca-113">`NOT (TRUE)` returns **FALSE**.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="5baf8-114">További erőforrások</span><span class="sxs-lookup"><span data-stu-id="5baf8-114">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="176ca-114">További erőforrások</span><span class="sxs-lookup"><span data-stu-id="176ca-114">Additional resources</span></span>
 
-[<span data-ttu-id="5baf8-115">Logikai függvények</span><span class="sxs-lookup"><span data-stu-id="5baf8-115">Logical functions</span></span>](er-functions-category-logical.md)
+[<span data-ttu-id="176ca-115">Logikai függvények</span><span class="sxs-lookup"><span data-stu-id="176ca-115">Logical functions</span></span>](er-functions-category-logical.md)
