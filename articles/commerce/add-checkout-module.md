@@ -3,7 +3,7 @@ title: Fizetésmodul
 description: Ez a témakör egy fizetésmodul egy laphoz való hozzáadásának és a kötelező tulajdonságok beállításának módját mutatja be.
 author: anupamar-ms
 manager: annbe
-ms.date: 08/05/2020
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 1d913fdc9ab9a3dbf7d5534fba38add7f942652a
-ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
+ms.openlocfilehash: 389e3e9d631574eac499f7c6146e2776b8126a52
+ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "3686742"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3761105"
 ---
 # <a name="checkout-module"></a>Fizetésmodul
 
@@ -97,8 +97,8 @@ A legtöbb fizetési információt (például a szállítási címet és a szál
 A fizetésmodul új oldalra való felvételéhez és a kötelező tulajdonságok beállításához hajtsa végre az alábbi lépéseket.
 
 1. Lépjen a **Töredékek** pontra, és válassza az **Új** lehetőséget új töredék létrehozásához.
-1. Az **Új oldaltöredék** párbeszédpanelon válassza ki a **Fizetés** modult.
-1. Az **Oldaltöredék neve** pontban adja meg a **Fizetési töredék** nevet, majd válassza az **OK** lehetőséget.
+1. Az **Új töredék** párbeszédpanelen válassza ki a **Fizetés** modult.
+1. A **Töredék neve** pontban adja meg a **Fizetési töredék** nevet, majd válassza az **OK** lehetőséget.
 1. Válassza ki a **Pénztár modul** helyet.
 1. A jobb oldali tulajdonságok ablaktáblán válassza ki a ceruza szimbólumot, adja meg a címsor szövegét a mezőben, majd jelölje be a pipa jelet.
 1. Az **Fizetési információk** helyben válassza a három pont (**…**) gombot, majd válassza az **Modul hozzáadása** elemet.

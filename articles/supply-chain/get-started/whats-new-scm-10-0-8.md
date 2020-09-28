@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-01-31
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 7dfa6353653c41330dba179331ccbd2373aef774
-ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
+ms.openlocfilehash: 756924c87ced7cd2d5fc4e7c2a01b571558d3550
+ms.sourcegitcommit: 06f64550b2043582de4018bdd3924fcc1fd5d310
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "3651957"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3801458"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-1008-february-2020"></a>Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.8 verziójában (2020. február)
 
@@ -41,10 +41,10 @@ Ez a kiadás a következő funkciókat tartalmazza: A funkciók címei további 
 - [További helyzóna](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/additional-location-zone)
 - [Eszközkezelés](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/dynamics-365-asset-management)<br> - További információ: [Eszközkezelés – áttekintés](../asset-management/index.md).
 - [Munka érvénytelenítése](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/cancel-work)<br> - További információ: [A kivétel kezelésére vonatkozó raktári munka visszavonása](../warehousing/cancel-warehouse-work.md).
-- [Munkagyűjtő módosítása a munkán](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/change-work-pool-work)
-- [Fürtpozíció tele](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/cluster-position-full)
-- [Megerősítés és áthelyezés](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/confirm-transfer)
-- [Helyutasítás – készletkitárolás korosítása](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/location-directive-inventory-picking-aging)
+- [Munkagyűjtő módosítása a munkán](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/change-work-pool-work)<br> - A további tudnivalókat lásd: [Munkagyűjtő módosítása a munkán](../warehousing/change-work-pool-on-work.md).
+- [Fürtpozíció tele](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/cluster-position-full) – a további tudnivalókat lásd: [Fürtpozíció tele](../warehousing/cluster-position-full.md).
+- [Megerősítés és áthelyezés](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/confirm-transfer)<br> - További tájékoztatás: [Megerősítés és átvitel](../warehousing/confirm-and-transfer.md).
+- [Helyutasítás – készletkitárolás korosítása](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/location-directive-inventory-picking-aging)<br> - További tájékoztatás: [Helyutasítás – készletkitárolás korosítása](../warehousing/location-directive-inventory-picking-aging.md).
 - [Hely állapota](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/location-status)
 - [Kitárolási sor csoportosítása](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/pick-line-grouping)<br> - További információ: [Kitárolási sor csoportosítása](../warehousing/pick-line-grouping.md).
 - [Szállítmány automatikus frissítése](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/shipment-auto-update)<br> - További információ: [Szállítmány automatikus frissítései](../warehousing/auto-update-shipment.md).
@@ -54,9 +54,9 @@ Ez a kiadás a következő funkciókat tartalmazza: A funkciók címei további 
 - [Raktári alkalmazás feladatellenőrzése az RSAT-tel](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/warehouse-app-task-validation-rsat)
 - [Raktári kiadási szabály](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/warehouse-release-rule)
 - [Hullám állapotának megjelenítése](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-status-visualization)
-- [Hullámsablon csoportosítása](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-template-grouping)
-- [Munkasor adatai](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/work-line-details)<br> - További információ a [Munkasor részletei](https://www.microsoft.com/videoplayer/embed/RE4fcYN) videóban.
-- [Feltöltés a zóna küszöbértéke alapján](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/zone-threshold-replenishment)
+- [Hullámsablon csoportosítása](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-template-grouping)<br> - További információ [Hullámsablon csoportosítása](../warehousing/wave-template-grouping.md).
+- [Munkasor adatai](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/work-line-details)<br> - További információ: [Munkasor részletei](../warehousing/work-line-details.md) részben és a [Munkasor részletei](https://www.microsoft.com/videoplayer/embed/RE4fcYN) videóban.
+- [Feltöltés a zóna küszöbértéke alapján](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/zone-threshold-replenishment)<br> - További tájékoztatás: [Feltöltés a zóna küszöbértéke alapján](../warehousing/zone-threshold-replenishment.md).
 
 ## <a name="additional-resources"></a>További erőforrások
 

@@ -3,7 +3,7 @@ title: Vásárlásmező modul
 description: Ez a témakör ismerteti a Vásárlásmező modulok működését és bemutatja, hogyan tudjuk hozzáadni azokat az egyes webhelyekhez, a Dynamics 365 Commerce segítségével.
 author: anupamar-ms
 manager: annbe
-ms.date: 07/31/2020
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3fe5c1eb5808ef778aeda29442fa884556671296
-ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
+ms.openlocfilehash: 6556ee8acf1e24a9f6ceddb622960cb3ac891852
+ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "3686670"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3761297"
 ---
 # <a name="buy-box-module"></a>Vásárlásmező modul
 
@@ -59,10 +59,13 @@ A témák segítségével eltávolíthatja vagy megváltoztathatja a vásárlás
 
 - **Címsorcímke** – ez a tulajdonság határozza meg a termék címének címsorcímkéjét. Ha a vásárlásmező a lap felső részén van, a tulajdonságot a **H1** értékre kell állítania a hozzáférhetőségi szabványok teljesítése érdekében. 
 
+- **„Hasonló szettek vásárlása” javaslatok engedélyezése** – Ez a tulajdonság lehetővé teszi a vásárlásmező számára, hogy a jelenleg nézett cikkhez hasonló termékre mutató hivatkozásokat jelenítse meg. Ez a funkció elérhető a Commerce alkalmazás 10.0.13 vagy újabb verziójában.
+
 ## <a name="modules-that-can-be-used-in-a-buy-box-module"></a>A vásárlásmező modulban használható modulok
 
 - **Médiatár** – Ez a modul a termék képeinek bemutatására szolgál a termék részletes lapján. A modullal kapcsolatos további tudnivalókat lásd: [Médiatár modul](media-gallery-module.md).
 - **Áruházválasztó** – Ez a modul felsorolja azokat a közeli áruházakat, ahol a cikkek elérhetők és felvehetők. Ez lehetővé teszi a felhasználók számára, hogy a közelben levő üzleteket megtalálják. A modullal kapcsolatos további tudnivalókat lásd: [Áruházválasztó modul](store-selector.md).
+- **Közösségi megosztás** – Azt a modult hozzáadhatja a vásárlásmezőhöz, amely lehetővé teszi a felhasználók számára a termék információinak a megosztását a közösségi médiában. További információ: [Közösségi megosztás modul](social-share-module.md).
 
 ## <a name="buy-box-module-settings"></a>Vásárlásmező modul beállításai
 
@@ -85,8 +88,8 @@ A vásárlásmező-modul a termék adatait a Commerce Scale Unit alkalmazásprog
 A vásárlásmező modul új oldalra való felvételéhez és a kötelező tulajdonságok beállításához hajtsa végre az alábbi lépéseket.
 
 1. Lépjen a **Töredékek** pontra, és válassza az **Új** lehetőséget új töredék létrehozásához.
-1. Az **Új oldaltöredék** párbeszédpanelen válassza ki a **Vásárlásmező** modult.
-1. Az **Oldaltöredék neve** pontban adja meg a **Vásárlásmező-töredék** nevét, majd válassza az **OK** lehetőséget.
+1. Az **Új töredék** párbeszédpanelen válassza ki a **Vásárlásmező** modult.
+1. Az **Töredék neve** pontban adja meg a **Vásárlásmező-töredék** nevét, majd válassza az **OK** lehetőséget.
 1. Válassza ki a három pont (**...**) elemet a **Médiagaléria** helyén, amely tartalmazza a váráslásmező modult, majd válassza a **Modul hozzáadása** lehetőséget.
 1. A **Modul hozzáadása** párbeszédpanelen válassza ki a **Médiagaléria** modult, majd kattintson az **OK** gombra.
 1. Válassza ki a három pont (**...**) elemet az **Áruházválasztó** helyén, amely tartalmazza a váráslásmező modult, majd válassza a **Modul hozzáadása** lehetőséget.
@@ -96,13 +99,13 @@ A vásárlásmező modul új oldalra való felvételéhez és a kötelező tulaj
 1. Az **Új sablon** párbeszédablakban a **Sablon neve** alatt adja meg a **PDP-sablon** elemet, majd válassza az **OK** gombot.
 1. A **Törzs** helyben válassza a három pont (**…**) gombot, majd válassza az **Modul hozzáadása** elemet.
 1. A **Modul hozzáadása** párbeszédpanelen válassza ki az **Alapértelmezett oldal** modult, majd kattintson az **OK** gombra.
-1. Az alapértelmezett lap **Fő** helyén válassza ki a három pont (**…**) gombot, majd válassza a **Oldaltöredék hozzáadása** elemet.
-1. Az **Oldaltöredék kiválasztása** párbeszédpanelen válassza ki a **Vásárlásmező töredék** töredékét, amelyet korábban hozott létre ezután kattintson az **OK** gombra.
+1. Az alapértelmezett lap **Fő** helyén válassza ki a három pont (**…**) gombot, majd válassza a **Töredék hozzáadása** elemet.
+1. A **Töredék kiválasztása** párbeszédpanelen válassza ki a **Vásárlásmező töredék** töredékét, amelyet korábban hozott létre ezután kattintson az **OK** gombra.
 1. Válassza a **Mentés** elemet, válassza a **Szerkesztés befejezése** parancsot a sablon ellenőrzéséhez, majd a **Közzététel** elemet a közzétételhez.
 1. Lépjen az **Oldalak** pontra, majd válassza az **Új** lehetőséget új oldal létrehozásához.
 1. A **Sablon kiválasztása** párbeszédpanelen válassza ki a **PDP-sablon** sablonját. Az **Oldal neve** alatta adja meg a **PDP-oldalt**, majd kattintson az **OK** gombra.
-1. Az új oldal **Fő** helyén válassza ki a három pont (**…**) gombot, majd válassza a **Oldaltöredék hozzáadása** elemet.
-1. Az **Oldaltöredék kiválasztása** párbeszédpanelen válassza ki a **Vásárlásmező töredék** töredékét, amelyet korábban hozott létre ezután kattintson az **OK** gombra.
+1. Az új oldal **Fő** helyén válassza ki a három pont (**…**) gombot, majd válassza a **Töredék hozzáadása** elemet.
+1. A **Töredék kiválasztása** párbeszédpanelen válassza ki a **Vásárlásmező töredék** töredékét, amelyet korábban hozott létre ezután kattintson az **OK** gombra.
 1. Mentse a lapot, és tekintse meg az előnézetét. Hozzáadja a **?productid=&lt;product id&gt;** lekérdezési karakterlánc paramétert az előnézeti lap URL-címéhez. A termékkontextus így az előnézeti lap betöltésére és megjelenítésére kerül felhasználásra.
 1. Válassza a **Mentés** elemet, válassza a **Szerkesztés befejezése** parancsot az oldal ellenőrzéséhez, majd a **Közzététel** elemet a közzétételhez. A termék részletes lapján meg kell jelennie vásárlásmezőnek.
 
@@ -110,22 +113,22 @@ A vásárlásmező modul új oldalra való felvételéhez és a kötelező tulaj
 
 [Kezdőcsomag áttekintése](starter-kit-overview.md)
 
-[Áruházválasztó modul](store-selector.md)
+[Üzletválasztó modul](store-selector.md)
 
-[Médiatár modul](media-gallery-module.md)
+[Médiagaléria modul](media-gallery-module.md)
 
 [Tárolómodul](add-container-module.md)
 
 [Kosármodul](add-cart-module.md)
 
-[Kosárikon modul](cart-icon-module.md)
-
-[Fizetésmodul](add-checkout-module.md)
+[Pénztármodul](add-checkout-module.md)
 
 [Rendelésmegerősítési modul](order-confirmation-module.md)
 
 [Fejlécmodul](author-header-module.md)
 
 [Láblécmodul](author-footer-module.md)
+
+[Közösségi megosztás modul](social-share-module.md)
 
 [Kiskereskedelmi csatornák készletelérhetőségének kiszámítása](calculated-inventory-retail-channels.md)

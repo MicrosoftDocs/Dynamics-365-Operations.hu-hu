@@ -3,7 +3,7 @@ title: Többnyelvű jelentések tervezése elektronikus jelentésekben
 description: Ez a témakör azt mutatja be, hogyan lehet használni az elektronikus jelentések (ER) címkéit a többnyelvű jelentések tervezéséhez és létrehozásához.
 author: NickSelin
 manager: AnnBe
-ms.date: 04/24/2020
+ms.date: 09/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 65efb8dbec925b5238acaa5d6769f3085e9715b9
-ms.sourcegitcommit: cf709f1421a0bf66ecea493088ecb4eb08004187
+ms.openlocfilehash: 26a912aa2002f1d60dd650248bd3c68e45e68596
+ms.sourcegitcommit: 9857d5cbdc0ab2fc9db049ac5ad118fc2b29bedc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "3444621"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3810667"
 ---
 # <a name="design-multilingual-reports-in-electronic-reporting"></a>Többnyelvű jelentések tervezése elektronikus jelentésekben
 
@@ -33,7 +33,7 @@ ms.locfileid: "3444621"
 
 Üzleti felhasználóként az [elektronikus jelentési (ER)](general-electronic-reporting.md) keretrendszer a különböző országok/régiók jogi követelményeinek megfelelő formátumú, kötelezően létrehozandó elektronikus dokumentumok konfigurálását teszi lehetővé. Ha ezek a követelmények megkövetelik, hogy a kimenő dokumentumok a különböző országokban vagy régiókban különböző nyelveken jöjjenek létre, akkor konfigurálhat egy olyan egységes ER [formátumot](general-electronic-reporting.md#FormatComponentOutbound), amely nyelvfüggő erőforrásokat tartalmaz. Ily módon a formátumot újra felhasználhatja a különböző országok vagy régiók kimenő dokumentumainak létrehozásához. Előfordulhat, hogy a megfelelő vevők, szállítók, leányvállalatok vagy egyéb felek számára a különböző nyelvű kimenő dokumentumok előállításához egyetlen ER-formátumot szeretne használni.
 
-Az ER-adatmodelleket és a modell-hozzárendeléseket konfigurálhatja úgy, hogy a konfigurált alapformátumok adatforrásai határozzák meg azt az adatforgalmat, amely meghatározza, hogy milyen adatok kerülnek a létrejövő dokumentumokba. ER-konfigurációs [szolgáltatóként](general-electronic-reporting.md#Provider) [közzéteheti](tasks/er-upload-configuration-into-lifecycle-services.md#upload-configuration-into-lcs) a konfigurált [adatmodelleket](general-electronic-reporting.md#data-model-and-model-mapping-components), [modell-leképezéseket](general-electronic-reporting.md#data-model-and-model-mapping-components) és [formátumokat](general-electronic-reporting.md#FormatComponentOutbound) meghatározott kimenő dokumentumok létrehozásához egy ER-megoldás részeként. Azt is lehetővé teheti a vevők számára, hogy a közzétett ER-megoldást [feltöltsék](general-electronic-reporting-manage-configuration-lifecycle.md) , hogy használhatók és testreszabhatók legyenek. Ha úgy gondolja, hogy a vevők más nyelveket is beszélnek, akkor konfigurálhatja, hogy a program a nyelvfüggő erőforrásokat tartalmazza. Ily módon egy szerkeszthető ER-komponens tartalma a vevő felhasználó által preferált nyelvén jeleníthető meg a tervezés idejében.
+Az ER-adatmodelleket és a modell-hozzárendeléseket konfigurálhatja úgy, hogy a konfigurált alapformátumok adatforrásai határozzák meg azt az adatforgalmat, amely meghatározza, hogy milyen adatok kerülnek a létrejövő dokumentumokba. ER-konfigurációs [szolgáltatóként](general-electronic-reporting.md#Provider) [közzéteheti](tasks/er-upload-configuration-into-lifecycle-services.md#upload-a-configuration-into-lcs) a konfigurált [adatmodelleket](general-electronic-reporting.md#data-model-and-model-mapping-components), [modell-leképezéseket](general-electronic-reporting.md#data-model-and-model-mapping-components) és [formátumokat](general-electronic-reporting.md#FormatComponentOutbound) meghatározott kimenő dokumentumok létrehozásához egy ER-megoldás részeként. Azt is lehetővé teheti a vevők számára, hogy a közzétett ER-megoldást [feltöltsék](general-electronic-reporting-manage-configuration-lifecycle.md) , hogy használhatók és testreszabhatók legyenek. Ha úgy gondolja, hogy a vevők más nyelveket is beszélnek, akkor konfigurálhatja, hogy a program a nyelvfüggő erőforrásokat tartalmazza. Ily módon egy szerkeszthető ER-komponens tartalma a vevő felhasználó által preferált nyelvén jeleníthető meg a tervezés idejében.
 
 A nyelvtől függő erőforrásokat beállíthatja ER-címkékként. Ezeket a címkéket akkor használhatja, ha a következő célokból konfigurálja az ER-komponenseket:
 

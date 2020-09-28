@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 02d53f4326d8f31abf6ec7404575728837954bef
-ms.sourcegitcommit: c9baf9a3b4552f0317b5ec87d252834f52df1b98
+ms.openlocfilehash: c68f0a0e2481c69add8c50a1581466ad0b1483c0
+ms.sourcegitcommit: 5472005274f2f94fba82dda90de128f39d8b8390
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "3665610"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3759911"
 ---
 # <a name="support-parameterized-calls-of-er-data-sources-of-the-calculated-field-type"></a>ER adatforrások paraméterezett hívásainak támogatása a Számított mezőtípusban
 
@@ -339,4 +339,7 @@ Az **RCS** típushoz tartozó ER-tároló használatával importálhatja az átt
 8. A generált kimenetek tartalmának összehasonlítása.
 
 ## <a name="additional-resources"></a>További erőforrások
-[Képletszerkesztő elektronikus jelentésekhez (ER)](general-electronic-reporting-formula-designer.md)
+
+- [Képletszerkesztő elektronikus jelentésekhez (ER)](general-electronic-reporting-formula-designer.md)
+- [Az ER megoldások teljesítményének javítása a paraméterek SZÁMÍTOTT MEZŐ-adatforrások hozzáadásával](er-calculated-field-ds-performance.md)
+

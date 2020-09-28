@@ -1,9 +1,9 @@
 ---
 title: Új vagy módosult elemek a Human Resources szolgáltatásban
-description: A Microsoft Dynamics 365 Human Resources szolgáltatáshoz új kiadást biztosítunk hetente. Az itt található cikkek ismertetik a hetente végrehajtott módosításokat.
+description: A Microsoft Dynamics 365 Human Resources szolgáltatáshoz új kiadást biztosítunk hetente. Az itt található témakörök ismertetik a hetente végrehajtott módosításokat.
 author: andreabichsel
 manager: AnnBe
-ms.date: 08/06/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,18 +18,26 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 34e80ace6a0676e5702f633554a5f241cc8b00a7
-ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
+ms.openlocfilehash: f814395405003464e9f101fb0f46b64e64971b68
+ms.sourcegitcommit: 241ada0945c72d769eaa70ae35aedbb6a3233fdf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "3712173"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3760301"
 ---
 # <a name="whats-new-or-changed-in-human-resources"></a>Új vagy módosult elemek a Human Resources szolgáltatásban
 
-A Microsoft Dynamics 365 Human Resources szolgáltatáshoz új kiadást biztosítunk kéthetente. Az ebben a szakaszban található cikkek ismertetik az egyes kiadásokban végrehajtott módosításokat.
+A Microsoft Dynamics 365 Human Resources szolgáltatáshoz új kiadást biztosítunk kéthetente. Az itt található témakörök ismertetik az egyes kiadások által végrehajtott módosításokat.
 
-Ha további tájékoztatást szeretne kapni a hamarosan megjelenő szolgáltatásokról, illetve a Human Resources szolgáltatás frissítési folyamatáról, olvassa el a következő cikkeket:
+>[!NOTE]
+>A munkaszüneti napok figyelembe vételéhez a 2020. novemberi és decemberi kiadások ütemezése a következő:
+>
+>- Novemberi kiadás: november 2. – november 13.
+>- Decemberi kiadás: November 30. – December 11.
+> 
+>A kéthetes kiadási ütemezés a szokásos módon fog folytatódni 2021. január 11-én.
+
+Ha további tájékoztatást szeretne kapni a hamarosan megjelenő szolgáltatásokról, illetve a Human Resources szolgáltatás frissítési folyamatáról, olvassa el a következő cikkeket: 
 
 - [A Dynamics 365 Human Resources 2019 második kiadási hullámának áttekintése](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)
 
@@ -39,8 +47,9 @@ Ha további tájékoztatást szeretne kapni a hamarosan megjelenő szolgáltatá
 
 ## <a name="human-resources-weekly-releases"></a>Human Resources heti kiadások
 
-Ha látni szeretné, hogy mi új vagy módosult a Human Resources egyes kétheti verzióiban, tekintse át az alábbi cikkeket:
+Ha tudni szeretné, hogy mi új vagy módosult a Human Resources egyes kétheti verzióiban, tekintse át az alábbi cikkeket:
 
+[2020. szeptember 3.](hr-whats-new-2020-09-03.md)</br>
 [2020. augusztus 20.](hr-whats-new-2020-08-20.md)</br>
 [2020. augusztus 6.](hr-whats-new-2020-08-06.md)</br>
 [2020. július 23.](hr-whats-new-2020-07-23.md)</br>

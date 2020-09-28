@@ -3,7 +3,7 @@ title: Parancsfájl hozzáadása a webhely oldalaihoz a telemetria támogatásá
 description: Ez a témakör azt mutatja be, hogyan lehet ügyféloldali parancsfájlt hozzáadni a webhely lapjaihoz, hogy támogassa az ügyfél-oldali telemetria gyűjtését.
 author: bicyclingfool
 manager: annbe
-ms.date: 03/20/2020
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 4f26ed5b6674566f579e801f4b7be63c2d0dc38d
-ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
+ms.openlocfilehash: a88f4f920154aafaa15a48af67365152e21111f7
+ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "3686814"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3761249"
 ---
 # <a name="add-script-code-to-site-pages-to-support-telemetry"></a>Parancsfájl hozzáadása a webhely oldalaihoz a telemetria támogatásához
 
@@ -37,48 +37,48 @@ A webanalitika fontos eszköz, ha meg szeretné tudni, hogyan lépnek interakci�
 > [!NOTE]
 > Az ebben a témakörben található utasítások a Microsoft Dynamics 365 Commerce által natív módon nem kínált egyéni ügyféloldali funkciókra is vonatkoznak.
 
-## <a name="create-a-reusable-page-fragment-for-your-script-code"></a>Újra felhasználható oldaltöredék létrehozása a parancsfájl kódjához
+## <a name="create-a-reusable-fragment-for-your-script-code"></a>Újra felhasználható töredék létrehozása a parancsfájl kódjához
 
-Az oldaltöredékek lehetővé teszik a belső és a külső parancsfájlkódok használatát a webhely összes lapján, függetlenül attól, hogy milyen sablont használnak.
+A töredékek lehetővé teszik a belső és a külső parancsfájlkódok használatát a webhely összes lapján, függetlenül attól, hogy milyen sablont használnak.
 
-### <a name="create-a-reusable-page-fragment-for-your-inline-script-code"></a>Újra felhasználható oldaltöredék létrehozása a szövegközi parancsfájl kódjához
+### <a name="create-a-reusable-fragment-for-your-inline-script-code"></a>Újra felhasználható töredék létrehozása a szövegközi parancsfájl kódjához
 
-A webhelykészítőben a szövegközi parancsfájlkódhoz tartozó újrahasználható oldaltöredék létrehozásához kövesse az alábbi lépéseket.
+A webhelykészítőben a szövegközi parancsfájlkódhoz tartozó újrahasználható töredék létrehozásához kövesse az alábbi lépéseket.
 
 1. Lépjen a **Töredékek** pontra, majd válassza az **Új** lehetőséget.
-1. Az **Új oldaltöredék** párbeszédpanelen válassza ki a **Szövegközi parancsfájl** lehetőséget.
-1. Az **Oldaltöredék neve** pontban adja meg a töredék nevét, majd válassza ki az **OK** lehetőséget.
-1. Válassza ki az **alapértelmezett szövegközi parancsfájl** modult a létrehozott lapok között.
+1. Az **Új töredék** párbeszédpanelen válassza ki a **Szövegközi parancsfájl** lehetőséget.
+1. A **Töredék neve** pontban adja meg a töredék nevét, majd válassza ki az **OK** lehetőséget.
+1. Válassza ki az **alapértelmezett szövegközi parancsfájl** modult a létrehozott töredék alatt.
 1. A jobb oldali ablaktáblában a **Szövegközi parancsfájl** területen adja meg a kliensoldali parancsfájlt. Ezt követően konfigurálja a szükséges egyéb beállításokat.
 1. Válassza a **Mentés** parancsot, majd válassza a **Szerkesztés befejezése** elemet.
 1. Válassza a **Közzététel** lehetőséget.
 
-### <a name="create-a-reusable-page-fragment-for-your-external-script-code"></a>Újra felhasználható oldaltöredék létrehozása a külső parancsfájl kódjához
+### <a name="create-a-reusable-fragment-for-your-external-script-code"></a>Újra felhasználható töredék létrehozása a külső parancsfájl kódjához
 
-A webhelykészítőben a külső parancsfájlkódhoz tartozó újrahasználható oldaltöredék létrehozásához kövesse az alábbi lépéseket.
+A webhelykészítőben a külső parancsfájlkódhoz tartozó újrahasználható töredék létrehozásához kövesse az alábbi lépéseket.
 
 1. Lépjen a **Töredékek** pontra, majd válassza az **Új** lehetőséget.
-1. Az **Új oldaltöredék** párbeszédpanelen válassza ki a **Külső parancsfájl** lehetőséget.
-1. Az **Oldaltöredék neve** pontban adja meg a töredék nevét, majd válassza ki az **OK** lehetőséget.
-1. Válassza ki az **alapértelmezett külső parancsfájl** modult a létrehozott lapok között.
+1. Az **Új töredék** párbeszédpanelen válassza ki a **Külső parancsfájl** lehetőséget.
+1. A **Töredék neve** pontban adja meg a töredék nevét, majd válassza ki az **OK** lehetőséget.
+1. Válassza ki az **alapértelmezett külső parancsfájl** modult a létrehozott töredék alatt.
 1. A jobb oldali ablaktáblában a **Parancsfájl forrása** területen adja meg a külső parancsfájlhoz tartozó külső vagy kapcsolódó URL-címet. Ezt követően konfigurálja a szükséges egyéb beállításokat.
 1. Válassza a **Mentés** parancsot, majd válassza a **Szerkesztés befejezése** elemet.
 1. Válassza a **Közzététel** lehetőséget.
 
-## <a name="add-a-page-fragment-that-includes-script-code-to-a-template"></a>Parancsfájlkódot tartalmazó oldaltöredék hozzáadása sablonhoz
+## <a name="add-a-fragment-that-includes-script-code-to-a-template"></a>Parancsfájlkódot tartalmazó töredék hozzáadása sablonhoz
 
-A webhelykészítőben egy sablonhoz egy parancsfájlkódot tartalmazó oldaltöredék hozzáadásához kövesse az alábbi lépéseket.
+A webhelykészítőben egy sablonhoz egy parancsfájlkódot tartalmazó töredék hozzáadásához kövesse az alábbi lépéseket.
 
 1. Nyissa mega **Sablonok** pontot, majd nyissa meg azon oldalakhoz tartozó sablont, amelyhez hozzá szeretné adni a parancsfájlkódot.
 1. A bal oldali panelen bontsa ki a sablon hierarchiáját a **HTML-fejléc** helyének megjelenítéséhez.
-1. A **HTML-fejléc** helyben válassza a három pont (**…**) gombot, majd válassza az **Oldaltöredék hozzáadása** elemet.
+1. A **HTML-fejléc** helyben válassza a három pont (**…**) gombot, majd válassza a **Töredék hozzáadása** elemet.
 1. Válassza ki a parancsfájl kódjához létrehozott töredéket.
 1. Válassza a **Mentés** parancsot, majd válassza a **Szerkesztés befejezése** elemet.
 1. Válassza a **Közzététel** lehetőséget.
 
 ## <a name="add-an-external-script-or-inline-script-directly-to-a-template"></a>Külső parancsfájl vagy szövegközi parancsfájl hozzáadása sablonhoz közvetlenül
 
-Ha azt szeretné, hogy egy szövegközi vagy külső parancsfájlt közvetlenül egyetlen sablon által vezérelt oldalak csoportjába szúrjunk be, akkor előbb nem kell létrehoznia az oldaltöredéket.
+Ha azt szeretné, hogy egy szövegközi vagy külső parancsfájlt közvetlenül egyetlen sablon által vezérelt oldalak csoportjába szúrjunk be, akkor előbb nem kell létrehoznia a töredéket.
 
 ### <a name="add-an-inline-script-directly-to-a-template"></a>Szövegközi parancsfájl hozzáadása sablonhoz közvetlenül
 

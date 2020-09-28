@@ -3,7 +3,7 @@ title: Helyek részleges ciklikus leltározása
 description: A ciklikus leltározási tervek vezérlik a tényleges leltározási tevékenységeket. Kérhető az, hogy csak bizonyos termékek és termékváltozatok leltározása történjen meg a hely összes aktuális készlete helyett.
 author: perlynne
 manager: tfehr
-ms.date: 11/02/2017
+ms.date: 09/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5f07c7754dbe36334e8972d49edf9fb84a78f5d0
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 46365f618b13c2bcaef9a45d2a835fda27019857
+ms.sourcegitcommit: 5472005274f2f94fba82dda90de128f39d8b8390
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3215677"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3760007"
 ---
 # <a name="partial-location-cycle-counting"></a>Helyek részleges ciklikus leltározása
 
@@ -45,7 +45,7 @@ Ha a ciklikus leltározási terveket társítja a munkasablonokkal a **Munkasors
 
 A részleges ciklikus leltározási munka feldolgozása előtt minimális követelményként ki kell választani a **Cikkszám megjelenítése** elemet a mobileszköz menüeleméhez a ciklikus leltározás telepítésének részeként. A raktárkezelőt a rendszer arra kéri, hogy csak a leltársorokhoz kapcsolódó leltározási adatokat (cikkszámok és termékdimenziók) rögzítése. A leltározási folyamat figyelmen kívül hagyja az összes többi aktuális készletet. 
 
-A részleges ciklikus leltározási folyamatban az **Utolsó ciklikus leltár** dátuma és időpontja nem frissül a helyre nézve.
+Részleges ciklikus leltározási folyamat esetében az **Utolsó ciklikus leltár** dátuma/időpontja nem lesz frissítve a helyhez, még akkor sem, ha az adott helyen található összes cikket leltározni kell. A részleges ciklikus leltározás nem veszi figyelembe a **Ciklikus leltárok közötti idő** paramétert a **Ciklikus leltározási tervek** oldalon. A részleges ciklikus leltározás nem támogatja a több cikk egyidejű leltározását ugyanazon a helyen. A részleges ciklikus leltározási funkció a **Ciklikus leltározási terv végrehajtása** futtatásakor ugyanaz a hely többször is számolva lehet egy cikkhez. A helyzet elkerüléséhez adjon meg a szűrőket a **Helyek kiválasztása** mezőben.
 
 ## <a name="example"></a>Példa
 Ebben a példában csak az A0001 cikkszámot kell leltározni a 61-es raktárban.

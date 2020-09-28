@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 64626ebdd7fbad3d47a4b4c6bbc45bf3bc0c8277
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: 8957065bcadc3f33adb60c2a8f2be78710289631
+ms.sourcegitcommit: d03f301633175b15d46690fc97067820bf21579f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172784"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "3775147"
 ---
 # <a name="dual-write-overview"></a>Kettős írás – áttekintés
 
@@ -34,7 +34,7 @@ ms.locfileid: "3172784"
 
 ## <a name="what-is-dual-write"></a>Mi az a kettős írás?
 
-A kettős írás egy olyan beépített infrastruktúra, amely közel valós idejű interakciót tesz lehetővé a Microsoft Dynamics 365 modellvezérelt alkalmazásai és a Finance and Operations alkalmazások között. Amikor a vevőkkel, termékekkel, személyekkel és műveletekkel kapcsolatos adatok az alkalmazás határain túl is eljutnak, az a szervezet minden részlegét felbátorítja.
+A kettős írás egy olyan beépített infrastruktúra, amely közel valós idejű interakciót tesz lehetővé az ügyfélkapcsolati alkalmazások és a Finance and Operations alkalmazások között. Amikor a vevőkkel, termékekkel, személyekkel és műveletekkel kapcsolatos adatok az alkalmazás határain túl is eljutnak, az a szervezet minden részlegét felbátorítja.
 
 A kettős írás szorosan összekapcsolt, kétirányú integrációt tesz lehetővé a Finance and Operations alkalmazások és a Common Data Service között. A Finance and Operations alkalmazások bármely adatmódosulása írást eredményez a Common Data Service szolgáltatásban, és a Common Data Service bármely adatváltozása írást eredményez a Finance and Operations alkalmazásokban. Ez az automatizált adatáramlás integrált felhasználói élményt nyújt az alkalmazások között.
 
@@ -49,7 +49,7 @@ A kettős írás infrastruktúrája bővíthető és megbízható, és a követk
 + Az alkalmazások közötti szinkron és kétirányú adatáramlás
 + Szinkronizálás, lejátszási, szüneteltetési és felzárkóztatás módokkal együtt a rendszer támogatása érdekében az online és offline/aszinkron mód esetében.
 + A kezdeti adatok szinkronizálásának lehetősége az alkalmazások között
-+ A tevékenység és a hibanaplók konszolidált nézete adatrendszergazdák számára
++ A tevékenység és a hibanaplók kombinált nézete adatrendszergazdák számára
 + Egyéni figyelmeztetések és küszöbértékek konfigurálásának és értesítésekre való feliratkozás képessége
 + Intuitív felhasználói felület (UI) szűréshez és átalakításokhoz
 + Entitásfüggőségek és kapcsolatok beállításának lehetősége
@@ -59,7 +59,7 @@ A kettős írás infrastruktúrája bővíthető és megbízható, és a követk
 
 ### <a name="application"></a>Alkalmazás
 
-A kettős írás megfeleltetést hoz létre a Finance and Operations alkalmazások koncepciói és a Dynamics 365 modellvezérelt alkalmazásainak koncepciói között. Ez az integráció a következő eseteket támogatja:
+A kettős írás megfeleltetést hoz létre a Finance and Operations alkalmazások és az ügyfélkapcsolati alkalmazások koncepciói között. Ez az integráció a következő eseteket támogatja:
 
 + Integrált vevői alapadat
 + A vevői hűségkártyákhoz és jutalompontokhoz való hozzáférés
@@ -90,19 +90,21 @@ A kettős írás adatintegrációt tesz lehetővé az egész Microsoft Dynamics 
 + A kettős írás infrastruktúrája a nincs kódolás/kevés kódolás elvet követi. Minimális mérnöki erőfeszítést kell tenni a szabványos táblák közti leképezések kiterjesztéséhez, és az egyéni leképezések szerepeltetéséhez.
 + A kettős írás online és offline módot is támogat. A Microsoft az egyetlen olyan vállalat, amely online és offline mód támogatását is kínálja.
 
-## <a name="what-does-dual-write-mean-for-users-and-architects-of-crm-products"></a>Mit jelent a kettős írás a CRM-termékek felhasználói és tervezői számára?
+## <a name="what-does-dual-write-mean-for-developers-and-architects-of-customer-engagement-apps"></a><a id="developer-architect"></a>Mit jelent a kettős írás az ügyfélkapcsolati alkalmazások fejlesztői és tervezői számára?
 
-A kettős írás automatizálja a Finance and Operations alkalmazások és a Common Data Service szolgáltatás közti adatáramlást. A jövőbeli kiadásokban a Dynamics 365 modellvezérelt alkalmazásainak koncepcióit (pl. ügyfél, kapcsolattartó, árajánlat és megrendelés) a közepes és a felső-közép régióban található ügyfelekre is kiterjesztik.
+A kettős írás automatizálja a Finance and Operations alkalmazások és az ügyfélkapcsolati alkalmazások közti adatáramlást. A kettős írás két olyan AppSource-megoldást tartalmaz, amelyek telepítve van Common Data Service-szolgáltatásban. A megoldások bővítik az entitás sémáját, beépülő moduljait és munkafolyamatait a Common Data Service-ben, hogy ERP méretűre skálázhatók legyenek. A sikeres végrehajtás érdekében az ügyfélkapcsolati alkalmazások fejlesztőinek és tervezőinek ismerniük kell ezeket a változtatásokat, és együtt kell működniük az ellenpéldányaikkal a Finance and Operations alkalmazásokban.
 
-Az első verzióban az automatizálás legtöbb elemét kettős írásos megoldások kezelik. A későbbi verziókban ezek a megoldások a Common Data Service program részévé válnak. Ha megértjük a Common Data Service közelgő változtatásait, akkor hosszú távon erőfeszítéseket spórolhat meg. Többek között az alábbi kritikus fontosságú módosítások történtek:
+Ha a Finance and Operations alkalmazásokkal paritást szeretne létrehozni, a kettős írás a séma néhány fontos változtatást eszközök a Common Data Service sémájában. Ha megérti a konstrukciót, akkor a későbbiekben elkerülhetők lesznek a tervezéssel és fejlesztéssel kapcsolatos javítások.
 
-+ A Common Data Service új koncepciókat fog tartalmazni, például vállalat és felek. Ezek a fogalmak hatással lesznek az összes Common Data Service szolgáltatásra épített alkalmazásra, például a Dynamics 365 Sales, Dynamics 365 Marketing, Dynamics 365 Customer Service és Dynamics 365 Field Service alkalmazásra.
++ Ha a kettős írású AppSource-csomagot telepítik, a Common Data Service új fogalmakat kap, például a vállalatot és a felet. Ezek a koncepciók elősegítik, hogy a Common Data Service-re épülő alkalmazások, köztük a Dynamics 365 Sales, Dynamics 365 Marketing, Dynamics 365 Customer Service és Dynamics 365 Field Service, zökkenőmentesen működhessenek együtt a Finance and Operations alkalmazásokkal.
+
 + A tevékenységek és megjegyzések egyesülnek, és bővítésükkel támogatják a C1 (a rendszer felhasználóit) és a C2 (a rendszer ügyfeleit).
-+ Íme a közelgő változások egy része a Common Data Service szolgáltatásban:
 
-    - A decimális adattípus veszi át a pénz adattípus helyét.
-    - A dátumérvényesség múltbéli, jelenlegi és jövőbeli dátumokat is támogatni fog ugyanazon a helyen.
-    - Több támogatás áll majd rendelkezésre pénznemekkel és árfolyamokkal kapcsolatban, és felülvizsgálják az **Árfolyam** alkalmazásfejlesztési felületet (API).
-    - A program támogatja az egységek átváltását.
++ Ha meg szeretné akadályozni, hogy a Finance and Operations alkalmazások és a Common Data Service közötti pénznemátvitelek során az adatveszteséget, bővítse ki a tizedes helyek számát az ügyfélkapcsolati alkalmazások pénznem adattípusában. A funkció a meglévő rekordokat a metaadat-réteg új kiterjesztett állapotára fordítja le. A folyamat során a program a pénzadatok helyett decimális adatokra fordítja le a pénznemet, és a pénznem értéke 10 tizedesjegyet támogat. Ez a funkció választható, és a szervezetek, amelyeknél nem szükséges a több, mint 4 tizedesjegy pontosság nem kell, hogy elfogadják. A további tudnivalókat lásd: [Pénznem-adattípus áttelepítése a kettős íráshoz](currrency-decimal-places.md).
 
-A közelgő változásokkal kapcsolatos további információkért lásd: [Adatok a Common Data Service szolgáltatásban – 1. és 2. fázis](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/data-common-data-service-phase-1).
++ [Dátum hatályossága](../../dev-tools/date-effectivity.md) hozzá lesz adva a Common Data Service-hez. A múltbéli, jelenlegi és jövőbeli dátumokat is támogatni fogja ugyanazon entitásban.
+
++ A termékek, árajánlatok, rendelések és számlák esetében támogatott a termék [egységének átváltása](../../../../supply-chain/pim/tasks/manage-unit-measure.md).
+
+További tájékoztatás a közelgő módosításokról: [Újdonságok és módosítások a kettős írásban](whats-new-dual-write.md).
+

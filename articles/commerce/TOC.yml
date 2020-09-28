@@ -90,8 +90,10 @@
                   href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/commerce/toc.json
                 - name: Új vagy módosult elemek a Commerce szolgáltatásban
                   items:
-                    - name: Új vagy módosult elemek a Commerce kezdőlapján
+                    - name: Újdonságok vagy változások a Commerce kezdőlapján
                       href: get-started/whats-new-home-page.md
+                    - name: Commerce 10.0.14 (2020. november)
+                      href: get-started/whats-new-commerce-10-0-14.md
                     - name: Commerce 10.0.13 (2020. október)
                       href: get-started/whats-new-commerce-10-0-13.md
                     - name: Commerce 10.0.12 (2020. augusztus)
@@ -242,7 +244,7 @@
                   href: retail-hardware-station-configuration-installation.md
                 - name: Önkiszolgáló összetevők központi telepítése
                   href: dev-itpro/retail-mass-deployment.md
-                - name: Retail-összetevővel kapcsolatos események a diagnosztikához és a hibaelhárításhoz
+                - name: Commerce-összetevővel kapcsolatos események a diagnosztikához és a hibaelhárításhoz
                   href: dev-itpro/retail-component-events-diagnostics-troubleshooting.md
                 - name: Telepíthető csomag alkalmazása
                   href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/commerce/toc.json
@@ -424,7 +426,7 @@
                       items:
                         - name: 'Az MPOS konfigurálása, telepítése és aktiválása'
                           href: retail-modern-pos-device-activation.md
-                        - name: Kiterjesztett bejelentkezési funkció beállítása az MPOS-hez és a Cloud POS-hoz
+                        - name: Kiterjesztett bejelentkezési funkció beállítása az MPOS-hez és a Cloud POS-hez
                           href: extended-logon.md
                         - name: A Retail aktiválási fiókjainak kezelése és az eszközök ellenőrzése
                           href: set-up-activation-accounts-validate-devices-hq.md
@@ -526,6 +528,8 @@
                       href: omni-channel-payments.md
                     - name: Többcsatornás Commerce megrendelési kifizetések
                       href: dev-itpro/commerce-payments.md
+                    - name: Hitelkártyák feldolgozása hardverállomás nélkül
+                      href: dev-itpro/cnp-pos.md
                     - name: Kifizetésekkel kapcsolatos GYIK
                       href: dev-itpro/payments-retail.md
                 - name: A szervezetéhez tartozó Bing Térképek kezelése
@@ -700,7 +704,7 @@
           items:
             - name: Vevői rendelések
               items:
-                - name: Vevői rendelések az MPOS-ben
+                - name: Vevői rendelések a pénztárban (POS)
                   href: customer-orders-overview.md
                 - name: Hibrid vevői rendelések
                   href: hybrid-customer-orders.md
@@ -770,7 +774,7 @@
               href: edit-audit-retail-transactions.md
             - name: 'A rendelések folyamatos, apránkénti létrehozása a kiskereskedelmi áruház tranzakcióihoz'
               href: trickle-feed.md
-            - name: 'Kiskereskedelmi áruház kimutatásainak létrehozása, kiszámítása és feladása'
+            - name: 'Kiskereskedelmi üzlet kimutatásainak létrehozása, kiszámítása és feladása'
               href: tasks/create-calculate-post-statement-retail-store.md
             - name: Pénzügyi egyeztetés a kiskereskedelmi áruházakban
               href: fin-recon.md
@@ -826,6 +830,8 @@
                   href: custom-pages-user-logins.md
                 - name: Több B2C-bérlő konfigurálása Commerce-környezetben
                   href: configure-multi-B2C-tenants.md
+                - name: Tartományok a Dynamics 365 Commerce szolgáltatásban
+                  href: domains-commerce.md
                 - name: Tartalomkézbesítési hálózat (CDN) támogatásának hozzáadása
                   href: add-cdn-support.md
                 - name: Helyalapú áruházészlelés engedélyezése
@@ -990,6 +996,8 @@
                       href: media-gallery-module.md
                     - name: Minősítések és értékelések modulok
                       href: ratings-reviews-modules.md
+                    - name: Közösségi megosztási modul
+                      href: social-share-module.md
                 - name: Beszerzési modulok
                   items:
                     - name: Kosármodul
@@ -1026,6 +1034,12 @@
                   items:
                     - name: Útkövetési modul
                       href: add-breadcrumb.md
+                    - name: Navigációs menü modul
+                      href: nav-menu-module.md
+                - name: Megfelelőségi modulok
+                  items:
+                    - name: Cookie-hozzájárulási modul
+                      href: cookie-consent-module.md
             - name: Keresés
               items:
                 - name: Az alapértelmezett kategória-céloldal és keresési találatoldal áttekintése
@@ -1652,9 +1666,9 @@
                   href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md?toc=/dynamics365/commerce/toc.json
                 - name: Az ER-formátumelemek végrehajtásának elhalasztása
                   items:
-                    - name: Szekvenciaelem végrehajtásának elhalasztása
+                    - name: A szekvenciaelemek végrehajtásának elhalasztása az ER-formátumokban
                       href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md
-                    - name: Egy XML-elem végrehajtásának elhalasztása
+                    - name: Az XML-elemek végrehajtásának elhalasztása az ER-formátumokban
                       href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md
             - name: Elektronikus jelentéskészítési megoldások használata a Finance and Operations modulban
               items:

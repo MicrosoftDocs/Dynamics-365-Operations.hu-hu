@@ -3,7 +3,7 @@ title: A rendelések folyamatos, apránkénti létrehozása a kiskereskedelmi á
 description: Ez a témakör bemutatja az áruházi tranzakciók folyamatos, apránkénti rendelés-létrehozási folyamatát a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: josaw1
 manager: AnnBe
-ms.date: 06/08/2020
+ms.date: 09/04/2020
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 6e097ead7cacb3f71452323656546a4be661457f
-ms.sourcegitcommit: 7061a93f9f2b54aec4bc4bf0cc92691e86d383a6
+ms.openlocfilehash: 79f99b9b401de3e3bcca6ec5a13a3b4f7bad6f8c
+ms.sourcegitcommit: 5b620f670ac0f403a0fdcdeb9c3f970b163191ee
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "3710283"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "3766736"
 ---
 # <a name="trickle-feed-based-order-creation-for-retail-store-transactions"></a>A rendelések folyamatos, apránkénti létrehozása a kiskereskedelmi áruház tranzakcióihoz
 
@@ -36,22 +36,20 @@ A rendelések folyamatos, apránkénti létrehozásának köszönhetően, amelye
 
 ## <a name="how-to-use-trickle-feed-based-posting"></a>A folyamatos, apránkénti feladás használata
   
-1. Ha engedélyezni szeretné a tranzakciók folyamatos, apránkénti feladását, lépjen a **Rendszerfelügyelet > Beállítás > Licenckonfiguráció** pontra, és tiltsa le a **Kimutatások** kulcsot.
+1. Ha engedélyezni szeretné a kiskereskedelmi tranzakciók folyamatos, apránkénti feladását, engedélyezze a **Kiskereskedelmi kimutatások – folyamatos, apránkénti feldolgozás** nevű funkciót a Funkciókezelés segítségével.
 
-2. Ugyanezen az oldalon engedélyezze a **Kimutatások (folyamatos, apránkénti feldolgozás) – előzetes verzió** licenckulcsot. A kulcs engedélyezésekor győződjön meg arról, hogy nincsenek feladásra váró, függőben lévő kimutatások. 
+    > [!IMPORTANT]
+    > A funkció engedélyezése előtt győződjön meg arról, hogy nincsenek feladásra váró, függőben lévő kimutatások.
 
-    > [!Important]
-    > A **Kimutatások (folyamatos, apránkénti feldolgozás) – előzetes verzió** licenckulcs ellenőrzése előtt győződjön meg arról, hogy nincsenek feladásra váró, függőben lévő kimutatások.
-
-3. A rendszer a jelenlegi kimutatási bizonylatot két különböző típusra osztja: tranzakciós kimutatásra és pénzügyi kimutatásra.
+2. A rendszer a jelenlegi kimutatási bizonylatot két típusra osztja: tranzakciós kimutatásra és pénzügyi kimutatásra.
 
       - A tranzakciós kimutatásban szerepel majd az összes fel nem adott és ellenőrzött tranzakció, és ez a kimutatás az Ön által megadott sorrendben hozza létre az értékesítési rendeléseket, értékesítési számlákat, fizetési és engedménynaplókat, valamint bevétel-költség tranzakciókat. Ezt a folyamatot úgy állítsa be, hogy sűrű gyakorisággal fusson, így a bizonylatok létrehozása akkor történik, amikor a tranzakciókat a rendszer a P-feladattal feltölti a Headquarters felületére. Mivel a tranzakciós kimutatás már létrehozza az értékesítési rendeléseket és értékesítési számlákat is, nincs szükség a **Készlet feladása** kötegelt feladat konfigurálására. Természetesen továbbra is használhatja az esetleges specifikus üzleti követelmények teljesítéséhez.  
       
      - A pénzügyi kimutatás terv szerint a nap végén jön létre, és csak a **Műszak** zárási módszert támogatja. Ez a kimutatás csak a pénzügyi egyeztetésre használható, és csak a különböző fizetőeszközök számított összege és tranzakciós összege közti összegeltérésekről készít naplókat, valamint a további készpénzkezelési tranzakciók naplóit hozza létre.   
 
-4. A tranzakciós kimutatás kiszámításához kattintson a **Kiskereskedelem és kereskedelem > Kiskereskedelem és kereskedelem IT > Pénztárfeladás > Tranzakciós kimutatások kötegelt kiszámítása** lehetőségre. A tranzakciós kimutatások kötegelt feladásához kattintson a **Kiskereskedelem és kereskedelem > Kiskereskedelem és kereskedelem IT > Pénztárfeladás > Tranzakciós kimutatások kötegelt feladása** lehetőségre.
+3. A tranzakciós kimutatás kiszámításához lépjen a **Retail és Commerce > Retail és Commerce IT > Pénztárfeladás > Tranzakciós kimutatások kötegelt kiszámítása** lehetőségre. A tranzakciós kimutatások kötegelt feladásához lépjen a **Retail és Commerce > Retail és Commerce IT > Pénztárfeladás > Tranzakciós kimutatások kötegelt feladása** lehetőségre.
 
-5. A pénzügyi kimutatás kiszámításához kattintson a **Kiskereskedelem és kereskedelem > Kiskereskedelem és kereskedelem IT > Pénztárfeladás > Pénzügyi kimutatások kötegelt kiszámítása** lehetőségre. A pénzügyi kimutatások kötegelt feladásához kattintson a **Kiskereskedelem és kereskedelem > Kiskereskedelem és kereskedelem IT > Pénztárfeladás > Pénzügyi kimutatások kötegelt feladása** lehetőségre.
+4. A pénzügyi kimutatás kiszámításához lépjen a **Retail és Commerce > Retail és Commerce IT > Pénztárfeladás > Pénzügyi kimutatások kötegelt kiszámítása** lehetőségre. A pénzügyi kimutatások kötegelt feladásához lépjen a **Retail és Commerce > Retail és Commerce IT > Pénztárfeladás > Pénzügyi kimutatások kötegelt feladása** lehetőségre.
 
 > [!NOTE]
 > Az új funkcióban már nincsenek jelen a **Kiskereskedelem és kereskedelem > Kiskereskedelem és kereskedelem IT > Pénztárfeladás > Kimutatások kötegelt kiszámítása** és a **Kiskereskedelem és kereskedelem > Kiskereskedelem és kereskedelem IT > Pénztárfeladás > Kimutatások kötegelt feladása** menüpontok.

@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5dbb9876b5df3309d280f242a9fce8f79f12afeb
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 9caea2d41e6d3ba74e4d156d8aeae6c4693ce7e2
+ms.sourcegitcommit: 9c694772e1484df10afd72ea1a717fda0861627e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3214749"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3813858"
 ---
 # <a name="cost-management-home-page"></a>Költségkezelés kezdőlap
 
@@ -40,7 +40,7 @@ Az alábbi területeken állíthatók be költségirányelvek:
 - [Közvetett költségkönyvelés](costing-sheets.md)
 - [Főkönyvi könyvelés](production-order-cost-analysis.md)
 
-Meghatározhatja például, hogy mely készletértékelési módszert (pl. [FIFO](fifo-physical-value-marking.md), [Súlyozott átlag](weighted-average-physical-value-marking.md), [Elszámolóár](prerequisites-standard-costs.md) vagy [Mozgó átlag](moving-average.md) szeretné alkalmazni a [Cikkmodellcsoport](../inventory/reserve-inventory-quantities.md) termékeinél a Készletkönyvelésnél.
+Meghatározhatja például, hogy mely készletértékelési módszert pl. [FIFO](fifo-physical-value-marking.md), [Súlyozott átlag](weighted-average-physical-value-marking.md), [Elszámolóár](prerequisites-standard-costs.md) vagy [Mozgó átlag](moving-average.md) szeretné alkalmazni a [Cikkmodellcsoport](../inventory/reserve-inventory-quantities.md) termékeinél a Készletkönyvelésnél.
 
 A Készletkönyvelés és Gyártási könyvelés elemeket a **Költségadminisztráció** és a **Költségelemzés** munkaterületekről érheti el. Ezek a munkaterületek átfogó áttekintést nyújtanak a jelenlegi állapotról, a fő teljesítménymutatókról (KPI-kről), valamint az eltérések észleléséről. 
 
@@ -56,7 +56,7 @@ Keresse fel a [Microsoft Dynamics 365 Ütemterv](https://roadmap.dynamics.com/) 
 
 #### <a name="white-paper"></a>Útmutató
 
-A [Darabjegyzék-számítás költségszámítási táblázat segítségével](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet) című rész ismerteti az anyagokat és a gyártást tartalmazó költségszámítási táblázat beállítását, valamint hogy a beállítás hogyan befolyásolja az anyagjegyzék-számítás eredményét. A témakör jobb magyarázata érdekében konkrét forgatókönyveket és adatokat biztosít, melyek bemutatják a különböző beállítások és konfigurációk hatását.
+A [Darabjegyzék-számítás költségszámítási táblázat segítségével](https://www.microsoft.com/download/details.aspx?id=101937) című rész ismerteti az anyagokat és a gyártást tartalmazó költségszámítási táblázat beállítását, valamint hogy a beállítás hogyan befolyásolja az anyagjegyzék-számítás eredményét. A témakör jobb magyarázata érdekében konkrét forgatókönyveket és adatokat biztosít, melyek bemutatják a különböző beállítások és konfigurációk hatását.
 
 #### <a name="blogs"></a>Blogok
 

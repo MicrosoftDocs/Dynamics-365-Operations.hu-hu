@@ -15,16 +15,17 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 77598717129742f291fae4df8f09953027ce0c60
-ms.sourcegitcommit: c009ec75f53872272f11c92a1ce81a391e3845a2
+ms.openlocfilehash: d3573aa5f8f986fa4fbf1c9ea8b322a1256aee36
+ms.sourcegitcommit: 5bb36b74935ffe140367fd6ecf956b4857ad12e5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "3699622"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3803189"
 ---
 # <a name="hazardous-materials-in-products-orders-shipments-and-loads"></a>Termékekben, megrendelésekben, szállítmányokban és rakományokban lévő veszélyes anyagok
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Ez a témakör azt mutatja be, hogyan kell megadni a kiadott termékekhez tartozó veszélyes anyagok jellemzőit, a veszélyes cikkekre vonatkozó készlet korlátozását, valamint a veszélyes anyagok értékesítési rendelésbe, szállítmányba vagy rakományba történő felvételének módját.
 

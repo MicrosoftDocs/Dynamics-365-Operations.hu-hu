@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 31ba00e3956614f57b55efc45e45ebe0dbd089eb
-ms.sourcegitcommit: 0f877ee4b53cfb002b179a53a67c4f9adae354bf
+ms.openlocfilehash: bb38c303760b45d599bc97340363448ab7781c69
+ms.sourcegitcommit: 5bb36b74935ffe140367fd6ecf956b4857ad12e5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "3640423"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3802967"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management"></a>Új vagy módosult elemek a Dynamics 365 Supply Chain Management rendszerben
 
@@ -34,13 +34,14 @@ Ha látni szeretné, hogy mi új vagy módosult a Dynamics 365 Supply Chain Mana
 
 | Verzió | Szám felépítése | Automatikus frissítés rendelkezésre állása | További információk |
 |---|---|---|---|
+| 10.0.13 | 10.0.569 | Szeptember 2020. | [Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.13. verziójában](whats-new-scm-10-0-13.md) |
 | 10.0.12 | 10.0.507 | 2020. augusztus | [Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.12. verziójában](whats-new-scm-10-0-12.md) |
 | 10.0.11 | 10.0.464 | július 2020. | [Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.11. verziójában](whats-new-scm-10-0-11.md) |
 | 10.0.10 | 10.0.420 | május 2020. | [Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.10. verziójában](whats-new-scm-10-0-10.md) |
-| 10.0.9  | 10.0.383   | április 2020. | [Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.9. verziójában](whats-new-scm-10-0-9.md) |
-| 10.0.8  | 10.0.319   | február 2020. | [Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.8. verziójában](whats-new-scm-10-0-8.md) |
-| 10.0.7  | 10.0.283   | Január 2020. | [Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.7. verziójában](whats-new-scm-10-0-7.md) |
-| 10.0.6 |   10.0.234   | 2019. november  | [Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.6-es verziójában](whats-new-scm-10-0-6.md) |
+| 10.0.9  | 10.0.383 | április 2020. | [Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.9. verziójában](whats-new-scm-10-0-9.md) |
+| 10.0.8  | 10.0.319 | február 2020. | [Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.8. verziójában](whats-new-scm-10-0-8.md) |
+| 10.0.7  | 10.0.283 | Január 2020. | [Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.7. verziójában](whats-new-scm-10-0-7.md) |
+| 10.0.6  | 10.0.234 | 2019. november  | [Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.6-es verziójában](whats-new-scm-10-0-6.md) |
 
 ## <a name="releases-before-november-2019"></a>2019. november előtti kiadások
 

@@ -3,7 +3,7 @@ title: Cookie-k megfelelősége
 description: Ez a témakör a cookie-megfelelőséggel és a Microsoft Dynamics 365 Commerce által tartalmazott alapértelmezett irányelvekkel kapcsolatos szempontokat ismerteti.
 author: BrianShook
 manager: annbe
-ms.date: 06/12/2020
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e1fa016dc9f46b048220f0f83e4b0783087de91e
-ms.sourcegitcommit: c66c4c67a21e7d7d3a94a3fd766c3184b6e65c4e
+ms.openlocfilehash: 4f54b9b8130a167dbecdb13fccd7039f827f6ed0
+ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "3446913"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3761321"
 ---
 # <a name="cookie-compliance"></a>Cookie-k megfelelősége
 
@@ -56,6 +56,10 @@ A következő táblázat felsorolja a Dynamics 365 Commerce helyek által felado
 | x-ms-cpim-sso:rushmoreb2c.onmicrosoft.com_0 | Az SSO-munkamenet fenntartására szolgál.                        |
 | x-ms-cpim-trans                             | A tranzakciók nyomon követésére szolgál (azoknak a nyitott lapoknak a száma, amelyeknek hitelesítése vállalatok közötti (B2C) helyhez történik), az aktuális tranzakciót is beleértve. |
 
+## <a name="site-user-cookie-consent-on-an-e-commerce-site"></a>Webhely felhasználó cookie-hozzájárulása egy e-kereskedelmi weboldalon 
+
+Ha egy e-kereskedelmi oldal funkciója vagy modulja nem alapvető cookie-t használ, akkor a webhely felhasználójának hozzájárulását a cookie nyomon követése előtt kell beszerezni. Ha engedélyezni szeretné, hogy a webhely felhasználói cookie-hozzájárulást adjanak az e-kereskedelemi webhelyen a webhelyhez tartozó szerzőnek hozzá kell adnia és be kell állítania egy cookie-hozzájárulási modult a lap fejlécmoduljában, hogy a rendszer biztosítsa a jóváhagyás fogadását. A webhely felhasználói hozzájárulását meg kell adni, mielőtt a nem alapvető cookie-t használó funkció vagy modul a webhely oldalán meg lenne jelenítve.
+
 ## <a name="additional-resources"></a>További erőforrások
 
 [Kisegítő funkciók és lehetőségek](accessibility.md)
@@ -65,3 +69,7 @@ A következő táblázat felsorolja a Dynamics 365 Commerce helyek által felado
 [Adatvédelmi irányelv oldalának hozzáadása](add-privacy-page.md)
 
 [Nyomon követett tartalmi változásokhoz társított felhasználói azonosítók kicserélése](replace-IDs-tracked-changes.md)
+
+[Cookie-hozzájárulás modul](cookie-consent-module.md) 
+ 
+[Fejlécmodul](author-header-module.md)
