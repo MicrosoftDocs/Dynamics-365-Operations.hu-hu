@@ -5,6 +5,8 @@
       items:
         - name: Újdonságok vagy változások a Human Resources szolgáltatásban
           href: hr-admin-whats-new.md
+        - name: 2020. szeptember 16.
+          href: hr-whats-new-2020-09-16.md
         - name: 2020. szeptember 3.
           href: hr-whats-new-2020-09-03.md
         - name: 2020. augusztus 20.
@@ -201,7 +203,7 @@
               href: ../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/human-resources/toc.json
             - name: Egyéni mezők létrehozása és használata
               href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/human-resources/toc.json
-            - name: PowerApps alkalmazások beágyazása
+            - name: Vászonalapú alkalmazások beágyazása a Power Apps szolgáltatásból
               href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/human-resources/toc.json
             - name: Információk megtalálása keresésekkel
               href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/human-resources/toc.json

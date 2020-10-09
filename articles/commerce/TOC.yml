@@ -98,8 +98,6 @@
                       href: get-started/whats-new-commerce-10-0-13.md
                     - name: Commerce 10.0.12 (2020. augusztus)
                       href: get-started/whats-new-commerce-10-0-12.md
-                    - name: Commerce 10.0.11 (2020. július)
-                      href: get-started/whats-new-commerce-10-0-11.md
                 - name: Eltávolított vagy elavult funkciók
                   items:
                     - name: Eltávolított vagy elavult funkciók a Finance and Operations szolgáltatásban
@@ -182,7 +180,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/commerce/toc.json
                 - name: Egyéni mezők létrehozása és használata
                   href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/commerce/toc.json
-                - name: Microsoft Power Apps beágyazása
+                - name: Vászonalapú alkalmazások beágyazása a Power Apps szolgáltatásból
                   href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/commerce/toc.json
                 - name: Információk megtalálása keresésekkel
                   href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/commerce/toc.json
@@ -730,7 +728,7 @@
                   href: notifications-pos.md
                 - name: Folytonossági programok eladása és értékesítési rendelések feldolgozása
                   href: tasks/use-continuity-program.md
-            - name: Visszáru
+            - name: Visszáruk
               items:
                 - name: Csatolt visszatérítések
                   href: dev-itpro/linked-refunds.md
@@ -956,9 +954,9 @@
                   href: add-privacy-page.md
                 - name: Nyomon követett tartalmi változásokhoz társított felhasználói azonosítók kicserélése
                   href: replace-IDs-tracked-changes.md
-            - name: Kezdőcsomag
+            - name: Modultár
               items:
-                - name: Kezdőcsomag áttekintése
+                - name: Modultár áttekintése
                   href: starter-kit-overview.md
                 - name: Tárolómodulok
                   items:
@@ -1976,7 +1974,7 @@
                   items:
                     - name: Új modul létrehozása
                       href: e-commerce-extensibility/create-new-module.md
-                    - name: Kezdő csomag moduljának klónozása
+                    - name: Modultármodul klónozása
                       href: e-commerce-extensibility/clone-starter-module.md
                     - name: Modul konfigurációs mezőinek hozzáadása
                       href: e-commerce-extensibility/add-module-config-fields.md
@@ -2070,7 +2068,7 @@
                   items:
                     - name: Csomagok konfigurálása és telepítése online környezetbe
                       href: e-commerce-extensibility/package-deploy.md
-                    - name: SDK- és áruház-kezdőcsomag frissítések
+                    - name: SDK- és modultár-frissítések
                       href: e-commerce-extensibility/sdk-updates.md
             - name: Retail szoftverfejlesztői készlet (SDK)
               items:
@@ -2148,6 +2146,8 @@
                   href: implementation-considerations-devices.md
                 - name: Pénztár kosárnézet eseményei és kezelései
                   href: dev-itpro/cart-view-handlers.md
+                - name: Egyéni gombok hozzáadása a pénztár fejlécsávjához
+                  href: dev-itpro/pos-header-bar.md
             - name: Hardware Station bővíthetősége
               items:
                 - name: Hardware Station és bővíthetősége

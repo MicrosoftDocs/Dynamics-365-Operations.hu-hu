@@ -158,7 +158,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Egyéni mezők létrehozása és használata
                   href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Microsoft Power Apps beágyazása
+                - name: Vászonalapú alkalmazások beágyazása a Power Apps szolgáltatásból
                   href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Információk megtalálása keresésekkel
                   href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/supply-chain/toc.json
@@ -1655,6 +1655,8 @@
               href: procurement/procurement-sourcing-overview.md
             - name: Beszerzésekkel és forrásokkal kapcsolatos munkafolyamat
               href: procurement/procurement-sourcing-workflows.md
+            - name: Beszerzésekkel és forrásokkal kapcsolatos munkafolyamatok hibajavítása
+              href: procurement/troubleshoot-procurementworkflows.md
             - name: Beszerzési katalógusok
               items:
                 - name: Beszerzési katalógusok áttekintése
@@ -1695,6 +1697,8 @@
                   href: procurement/purchase-order-mobile-workspace.md
                 - name: Az áruk bevételezésének rögzítése a beszerzési rendelésen
                   href: ../supply-chain/procurement/tasks/record-receipt-goods-purchase-order.md
+                - name: Beszerzési rendelések hibajavítása
+                  href: procurement/troubleshoot-purchaseorders.md
             - name: Beszerzési rendelés létrehozása
               items:
                 - name: Beszerzési rendelések manuális létrehozása
@@ -1725,6 +1729,8 @@
                   href: procurement/tasks/create-purchase-agreement.md
                 - name: Szállítói visszatérítések
                   href: procurement/vendor-rebates.md
+                - name: 'Árak, engedmények, szerződések és visszatérítések hibajavítása'
+                  href: procurement/troubleshooting-pricediscountagreements.md
             - name: Beszerzési irányelvek
               items:
                 - name: Beszerzési irányelvek áttekintése
@@ -1739,6 +1745,8 @@
                   href: procurement/product-receipt-against-purchase-orders.md
                 - name: Szállítói számlák áttekintése
                   href: ../finance/accounts-payable/vendor-invoices-overview.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Termékbevételezések és számlázás hibajavítása
+                  href: procurement/troubleshooting-productreceiptinvoicing.md
             - name: Szállítókezelés és együttműködés
               items:
                 - name: Szállítói együttműködés beállítása és karbantartása
@@ -1765,6 +1773,8 @@
                   href: procurement/vendor-catalogs-import.md
                 - name: Külső katalógus beállítása a PunchOut e-beszerzés számára
                   href: procurement/set-up-external-catalog-for-punchout.md
+                - name: Beszerzési cXML-fejlesztések
+                  href: procurement/purchasing-cxml-enhancements.md
                 - name: Külső katalógus használatának engedélyezése a PunchOut e-beszerzés számára
                   href: procurement/use-external-catalogs-for-punchout.md
                 - name: Szállítói együttműködési mobil munkaterület
@@ -2261,6 +2271,8 @@
                   href: sales-marketing/tasks/manage-order-holds.md
                 - name: Értékesítési rendelések megerősítése
                   href: sales-marketing/tasks/confirm-sales-orders.md
+                - name: Értékesítési rendelések hibajavítása
+                  href: sales-marketing/troubleshooting-sales.md
             - name: Értékesítési szerződések
               items:
                 - name: Értékesítési szerződések áttekintése
@@ -2283,7 +2295,9 @@
                   href: sales-marketing/tasks/mass-sales-quotations.md
                 - name: Értékesítési ajánlatok létrehozása és szerkesztése
                   href: sales-marketing/tasks/create-edit-sales-quotations.md
-            - name: Visszáru
+                - name: Értékesítési ajánlatok hibajavítása
+                  href: sales-marketing/troubleshooting-salesquotation.md
+            - name: Visszáruk
               items:
                 - name: Értékesítési visszáruk
                   href: warehousing/sales-returns.md
@@ -2807,18 +2821,20 @@
                   items:
                     - name: A raktározási alkalmazás telepítése és csatlakoztatása
                       href: warehousing/install-configure-warehousing-app.md
+                    - name: Vonalkódok beolvasása a raktári alkalmazás kamerája segítségével
+                      href: warehousing/scan-bar-codes-using-a-camera.md
                     - name: Mezőnevek konfigurálása raktározási alkalmazásban
                       href: warehousing/configure-app-field-names-priorities-warehouse.md
                     - name: Mobileszközök beállítása raktári munkához
                       href: warehousing/configure-mobile-devices-warehouse.md
-                    - name: Vonalkódok beolvasása a raktári alkalmazás kamerája segítségével
-                      href: warehousing/scan-bar-codes-using-a-camera.md
                     - name: Azonosítótábla-bevételezés a raktározási alkalmazás használatával
                       href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
                     - name: Mobileszköz-menüelem beállítása a beszerzési rendelés munkájának befejezéséhez
                       href: warehousing/tasks/set-up-mobile-device-menu.md
                     - name: Mobileszköz-menüelem beállítása a bevételezett elemek regisztrálásához
                       href: warehousing/tasks/set-up-mobile-device-menu-item-register-received-items.md
+                    - name: Mobileszköz-menüelem beállítása kitárolási sor áttekintésének biztosításához
+                      href: warehousing/pick-line-overview.md
                     - name: Menüelem létrehozása mobileszközhöz azonosítótábla-konszolidáláshoz
                       href: warehousing/tasks/create-mobile-device-license-plate-consolidation.md
                     - name: Vegyes azonosítótábla fogadása a mobileszközön
