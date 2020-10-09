@@ -146,11 +146,11 @@
           href: provisioning-talent.md
         - name: Szolgáltatások kezelése
           href: access-preview-feature.md
-        - name: Az Onboard létesítése
+        - name: Az Onboard kiépítése
           href: modular-app-tech-faq.md
         - name: Adatok exportálása az Attract és Onboard modulból
           href: attract-onboard-export-data.md
-        - name: Beágyazás Microsoft Power Apps
+        - name: Vászonalapú alkalmazások beágyazása a Power Apps szolgáltatásból
           href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
         - name: Támogatás kérése a Talent alkalmazáshoz
           href: talent-support.md
@@ -248,7 +248,9 @@
       items:
         - name: Az állások LinkedIn felületére való feladásával kapcsolatos hibák elhárítása
           href: attract-troubleshoot-linkedin.md
-        - name: 'A felhasználó hozzáfér az Emberi erőforrások alkalmazáshoz, de az Onboard és Attract alkalmazásokhoz nem'
+        - name: 'A felhasználó hozzáfér az Human Resources alkalmazáshoz, de az Onboard és Attract alkalmazásokhoz nem'
           href: user-access-core-hr.md
         - name: Azure Active Directory-felhasználók nem találhatók a Személyválasztó szolgáltatásban
           href: people-picker-user-not-found.md
+        - name: Az Attract-felhasználók nem tudnak állásokra jelentkezni a karrierportálon
+          href: attract-troubleshoot-career-portal.md
