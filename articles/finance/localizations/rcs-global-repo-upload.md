@@ -3,7 +3,7 @@ title: ER-konfigurációk létrehozása az RCS-ben, és feltöltésük a globál
 description: Ez a témakör azt mutatja be, hogyan hozhatók létre a Microsoft Regulatory Configuration Services (RCS) elektronikus jelentéskészítési (ER) konfigurációi, és tölthetők fel a globális tárba.
 author: JaneA07
 manager: AnnBe
-ms.date: 05/05/2020
+ms.date: 09/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-02-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 0e194a8b777f984412d81e315f92ab4bb8a3b0c9
-ms.sourcegitcommit: 204cec8ca2a6c4474d21dbcd408e369131a47856
+ms.openlocfilehash: 5b2b8f35b9931f8fd1824c20e9045da68af33ad5
+ms.sourcegitcommit: 91e101d7a51a8b63bd196ec80e9224e5e6e6fc95
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "3371249"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "3834233"
 ---
 # <a name="create-er-configurations-in-regulatory-configuration-services-rcs-and-upload-them-to-the-global-repository"></a>ER-konfigurációk létrehozása a Regulatory Configuration Services (RCS) rendszerben, és feltöltésük a globális tárba
 
@@ -54,7 +54,7 @@ Ha van már RCS-környezet létesítve a vállalat számára, akkor az oldal URL
 5. Adjon meg egy nevet és egy leírást, majd válassza a **Konfiguráció létrehozása** lehetőséget egy új származtatott verzió létrehozásához.
 6. Válassza ki az újonnan származtatott konfigurációt, adja meg a verzió leírását, majd kattintson az **OK** gombra. A konfiguráció állapota **Kész** értékre módosul.
 
-![Új konfigurációverzió az RCS-ben](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/RCS_CompleteConfig.JPG)
+![Új konfigurációverzió az RCS-ben](media/RCS_CompleteConfig.JPG)
 
 > [!NOTE]
 > A konfiguráció állapotának módosításakor előfordulhat, hogy a csatlakoztatott alkalmazásokhoz kapcsolódó ellenőrzési hibaüzenet jelenik meg. Ha ki szeretné kapcsolni a hitelesítést, válassza ki a Művelet panelen a **Konfigurációk** lapot, válassza a **Felhasználói paraméterek** lehetőséget, majd állítsa be a **Konfiguráció állapotváltozással és új alappal kapcsolatos érvényesítésének kihagyása** beállítást **Igen** értékre. 
@@ -66,7 +66,7 @@ Ha új vagy származtatott konfiguráció szeretne megosztani a szervezettel, ak
 1. Válassza ki a konfiguráció kész verzióját, majd válassza a **Feltöltés a tárba** parancsot.
 2. Válassza ki a **Globális (Microsoft)** beállítást, majd válassza a **Feltöltés** elemet.
 
-    ![Feltöltés a tárba beállításai](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/RCS_Upload_to_GlobalRepo_options.JPG)
+    ![Feltöltés a tárba beállításai](media/RCS_Upload_to_GlobalRepo_options.JPG)
 
 3. A megerősítő párbeszédpanelen válassza az **Igen** gombot. 
 4. Szükség szerint frissítse a verzió leírását, majd kattintson az **OK** gombra. 
@@ -74,6 +74,27 @@ Ha új vagy származtatott konfiguráció szeretne megosztani a szervezettel, ak
 A konfiguráció állapota **Megosztás** értékre frissül, és a konfiguráció feltöltésre kerül a globális tárba. Innen a következő módokon dolgozhat vele:
 
 - Importálhatja a Dynamics 365-példányába. További információ: [(ER) Konfigurációk importálása RCS-ből](../../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md).
-- Megoszthatja egy harmadik féllel vagy külső szervezettel, lásd: [RCS elektronikus jelentéskészítési (ER) konfigurációk megosztása külső szervezetekkel](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/rcs-global-share-configuration.md)
+- Megoszthatja egy harmadik féllel vagy külső szervezettel, lásd: [RCS elektronikus jelentéskészítési (ER) konfigurációk megosztása külső szervezetekkel](rcs-global-repo-share-configuration.md)
 
-![Származtatott Intrastat Contoso konfigurációverzió a globális tárban](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/RCS_Config_upload_GlobalRepo.JPG)
+    ![Származtatott Intrastat Contoso konfigurációverzió a globális tárban](media/RCS_Config_upload_GlobalRepo.JPG)
+
+## <a name="delete-a-configuration-from-the-global-repository"></a>Konfiguráció törlése a Globális adattárból
+Hajtsa végre a következő lépéseket a szervezete által létrehozott konfiguráció törléséhez.
+
+1. Az **Elektronikus jelentés** munkaterületen ellenőrizze, hogy konfigurációszolgáltató állapota **Aktív**. További információért tekintse át a [Konfigurációszolgáltatók létrehozása és megjelölése aktívként](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md) eljárást.
+2. Válassza az aktív konfiguráció szolgáltatójának **adattár** elemét.
+3. Válassza ki az adattár típusának a **Globális** értéket, majd válassza a **Megnyitás** lehetőséget.
+4. A **Szűrő** gyorslapon keresse meg azt a konfigurációt, amelyet törölni szeretne a **Szűrő** funkció segítségével.
+5. A **Verzió** gyorslapon válassza ki a törölni kívánt konfiguráció verziószámát, majd válassza a **Törlés** lehetőséget:
+
+    ![Konfiguráció törlése a globális adattárból](media/RCS_Delete_from_GlobalRepo.JPG)
+
+6. A megerősítő párbeszédpanelen válassza az **Igen** gombot.
+
+    ![Konfigurációverzió visszaigazolási üzenetének törlése](media/RCS_Delete_from_GlobalRepo_Msg.JPG)
+ 
+A konfigurációverziót törölve lesz, és egy megerősítő üzenet jelenik meg. 
+
+> [!NOTE]
+> A konfigurációkat csak az azokat létrehozó Konfigurációs szolgáltató tudja törölni. Ha egy másik szervezettel meg lett osztva a konfiguráció, akkor a konfiguráció törlése előtt a megosztást meg kell szüntetni.
+ 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5a57b96387ca5746a30b2e438d6b5f0ce3040f54
-ms.sourcegitcommit: 728cd7f723ee821337eee315a27977e99a44d9d3
+ms.openlocfilehash: 65874e5ca73c18c3df7b94b8abb6eb15491482bf
+ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "3258557"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3893135"
 ---
 # <a name="business-document-management-overview"></a>Üzletidokumentum-kezelés – áttekintés
 
@@ -31,7 +31,7 @@ ms.locfileid: "3258557"
 
 Az [elektronikus jelentési (ER)](general-electronic-reporting.md) keretrendszer a különböző országok/régiók jogi követelményeinek megfelelő formátumú elektronikus dokumentumok konfigurálását teszi lehetővé a Business felhasználói számára. A felhasználók definiálhatják az adatfolyamot, amely meghatározza, hogy milyen alkalmazásadatok kerüljenek a létrejövő dokumentumokba. Az ER keretrendszer előre definiált sablonok használatával készít kimenő dokumentumokat Microsoft Office formátumban (Excel-munkafüzetek vagy Word-dokumentumok). A sablonokat a program a szükséges adatokkal a konfigurált adatfolyammal tölti ki, miközben a szükséges dokumentumokat generálja. Minden konfigurált formátum közzétehető egy ER-megoldás részeként kimenő dokumentumok előállítása céljából. Ezt egy olyan ER formátumú konfiguráció képviseli, amely a különböző kimenő dokumentumok létrehozásához használható sablonokat tartalmazza. Az üzleti felhasználók ezt a keretrendszert használhatják a szükséges üzleti dokumentumok kezelésére.
 
-**Az Üzleti dokumentumkezelés** az ER-keretrendszerre épül, és lehetővé teszi az üzleti felhasználók számára, hogy a szolgáltatások vagy a Microsoft Office 365 szolgáltatások vagy a megfelelő Microsoft Office asztali alkalmazások segítségével szerkesszék az üzleti dokumentumok sablonjait. Az üzleti dokumentumok szerkesztésével módosulhatnak az üzleti dokumentumok megjelenése, és a további adathelyőrzők a forráskód módosítása és az új telepítések nélkül is megadhatók. Az üzleti dokumentumok sablonjainak frissítéséhez nem szükséges az ER keretrendszer ismerete.
+**Az Üzleti dokumentumkezelés** az ER-keretrendszerre épül, és lehetővé teszi az üzleti felhasználók számára, hogy a szolgáltatások vagy a Microsoft 365 szolgáltatások vagy a megfelelő Microsoft Office asztali alkalmazások segítségével szerkesszék az üzleti dokumentumok sablonjait. Az üzleti dokumentumok szerkesztésével módosulhatnak az üzleti dokumentumok megjelenése, és a további adathelyőrzők a forráskód módosítása és az új telepítések nélkül is megadhatók. Az üzleti dokumentumok sablonjainak frissítéséhez nem szükséges az ER keretrendszer ismerete.
 
 > [!NOTE]
 > Ügyeljen arra, hogy az üzleti Dokumentumkezelés lehetővé teszi az üzleti dokumentumok (például rendelések, számlák stb.) előállításához használt sablonok módosítását. Amikor egy sablon módosult, és a rendszer egy új verziót publikált, ez a verzió lesz használva a szükséges üzleti dokumentumok létrehozásához. Az Üzleti dokumentumkezelés nem használható a már létrehozott üzleti dokumentumok módosításához.
@@ -170,7 +170,7 @@ A következő eljárással beállíthatja az összes jogi személy alapvető par
 A kiválasztott dokumentumtípus a vállalatspecifikus, és akkor használatos, ha a felhasználó az Üzleti dokumentumkezelés modulban dolgozik azon a vállalatnál, amelyhez a kiválasztott dokumentumtípus be van állítva. Ha a felhasználó az Üzleti dokumentumkezelés modulban egy másik vállalatnál dolgozik, ugyanez a dokumentumtípus lesz használva, ha nem lett ehhez a vállalathoz ilyen konfigurálva. Ha egy dokumentumtípus lett konfigurálva, akkor ez lesz használva a **SharePoint-dokumentumtípus** mezőben kiválasztott típus helyett.
 
 > [!NOTE]
-> A **SharePoint dokumentumtípus** paraméterrel egy SharePoint mappa határozható meg ideiglenes tárolóhelyként a Microsoft Excel vagy a Word használatával szerkeszthető sablonokhoz. Akkor kell beállítani ezt a paramétert, ha az Office asztali alkalmazásokat szeretné használni a sablonok szerkesztéséhez. A további tudnivalókat lásd [Sablon szerkesztése az Office asztali alkalmazásban](#EditInOfficeDesktopApp). Ezt a paramétert üresen hagyhatja, ha azt tervezi, hogy a sablont csak az Office 365 funkcióinak használatával szeretné módosítani. További tájékoztatás: [Sablon szerkezstése az Office 365 megoldásban](#EditInOffice365).
+> A **SharePoint dokumentumtípus** paraméterrel egy SharePoint mappa határozható meg ideiglenes tárolóhelyként a Microsoft Excel vagy a Word használatával szerkeszthető sablonokhoz. Akkor kell beállítani ezt a paramétert, ha az Office asztali alkalmazásokat szeretné használni a sablonok szerkesztéséhez. A további tudnivalókat lásd [Sablon szerkesztése az Office asztali alkalmazásban](#EditInOfficeDesktopApp). Ezt a paramétert üresen hagyhatja, ha azt tervezi, hogy a sablont csak a Microsoft 365 funkcióinak használatával szeretné módosítani. További tájékoztatás: [Sablon szerkesztése a Microsoft 365 megoldásban](#EditInOffice365).
 
 ## <a name="configure-access-permissions"></a>Hozzáférési engedélyek konfigurálása
 
@@ -257,7 +257,7 @@ Amikor az **Office-szerű UI-élményt az üzleti Dokumentumkezelés számára**
 
 A **Sablon** lap bemutatja a kiválasztott sablon tartalmát. Válassza a **Részletek** lapot a kiválasztott sablon részleteinek áttekintéséhez, valamint annak az elektronikusjelentés-formátumkonfigurációnak a megtekintéséhez, amelyben ez a sablon található. Figyelje meg, hogy minden sablon **Közzétett**állapotú, és a **Verzió** oszlopban nem tartalmaz részleteket. Ez azt jelenti, hogy ezek a sablonok jelenleg nincsenek szerkesztve.
 
-Ha az **Office-szerű UI-élményt az üzleti Dokumentumkezelés számára*** funkció be van kapcsolva a **Funkciókezelés** munkaterületen, akkor az **Üzleti dokumentumkezelés** munkaterületének fő rácsa azokat a sablonokat jeleníti meg, amelyek az Ön ER konfigurációs szolgáltatója (azaz az **Elektronikus jelentés** munkaterületen aktívként megjelölt szolgáltató) tulajdonában vannak. Miután kiválasztotta a sablonok egyikét, a **Sablon szerkesztése** lehetőséggel elindíthatja vagy folytathatja annak szerkesztését.
+Ha az **Office-szerű UI-élményt az üzleti Dokumentumkezelés számára** funkció be van kapcsolva a **Funkciókezelés** munkaterületen, akkor az **Üzleti dokumentumkezelés** munkaterületének fő rácsa azokat a sablonokat jeleníti meg, amelyek az Ön ER konfigurációs szolgáltatója (azaz az **Elektronikus jelentés** munkaterületen aktívként megjelölt szolgáltató) tulajdonában vannak. Miután kiválasztotta a sablonok egyikét, a **Sablon szerkesztése** lehetőséggel elindíthatja vagy folytathatja annak szerkesztését.
 
 Ha más ER konfigurációs szolgáltatók által birtokolt sablonokat szeretne dolgozni, válassza az **Új dokumentum** lehetőséget, egy másolat létrehozásához, amely az Ön ER szolgáltatója tulajdonába kerül. Ezután szerkesztheti a másolatot. További információ: [Új dokumentum-felhasználói felület az üzleti Dokumentumkezelés modulban](er-business-document-management-new-template-ui.md).
 
@@ -295,13 +295,13 @@ Az **Új dokumentum** beállítás mindig elérhető olyan ER-formátumkonfigur�
 
 5. A szerkesztési folyamat kezdetének jóváhagyásához kattintson az **OK** gombra.
 
-A **BDM sablonszerkesztő** lap megnyílik. A kiválasztott sablon elérhetővé válik az online szerkesztéshez a Office 365 használatával.
+A **BDM sablonszerkesztő** lap megnyílik. A kiválasztott sablon elérhetővé válik az online szerkesztéshez a Microsoft 365 használatával.
 
 ![Üzletidokumentum-kezelés munkaterület oldala](./media/BDM-Overview-EditingLayout1.png)
 
-### <a name=""></a><a name="EditInOffice365">Sablon szerkesztése az Office 365 megoldásban</a>
+### <a name=""></a><a name="EditInOffice365">Sablon szerkesztése a Microsoft 365 megoldásban</a>
 
-Módosíthatja a sablont az Office 365 használatával. Például az Office Online webhelyen a sablon fejlécében lévő mező betűtípusát **Normál** értékről **Félkövérre** kell módosítani. Ezeket a módosításokat a rendszer automatikusan menti a szerkeszthető sablonban, amely az elsődleges sablon tárhelyén (alapértelmezés szerint az Azure blob tároló), amely konfigurálva van az ER keretrendszerben. Ez be van állítva az ER keretrendszerhez.
+Módosíthatja a sablont a Microsoft 365 használatával. Például az Office Online webhelyen a sablon fejlécében lévő mező betűtípusát **Normál** értékről **Félkövérre** kell módosítani. Ezeket a módosításokat a rendszer automatikusan menti a szerkeszthető sablonban, amely az elsődleges sablon tárhelyén (alapértelmezés szerint az Azure blob tároló), amely konfigurálva van az ER keretrendszerben. Ez be van állítva az ER keretrendszerhez.
 
 ![Az üzleti dokumentumkezelés sablonszerkesztő oldal](./media/BDM-Overview-EditingLayout2.png)
 
@@ -398,10 +398,10 @@ Amikor az aktuális aktív szolgáltató tulajdonában lévő ER-formátumból s
 
 ## <a name="frequently-asked-questions"></a>Gyakori kérdések
 
-#### <a name="i-selected-edit-document-but-instead-of-opening-the-bdm-template-editor-page-in-finance-and-operations-i-have-been-sent-to-the-office-365-web-page"></a>Kiválasztottam a **Dokumentum szerkesztése** lehetőséget, de a **BDM sablonszerkesztő lap** helyett a Finance and Operations megoldásban, az Office 365 weboldalára kerültem.
-Ez az Office 365 átirányítás egy ismert hibája. Ez akkor fordulhat elő, ha első alkalommal jelentkezik be az Office 365 rendszerbe. A hiba megkerüléséhez válassza a böngészőben a **Vissza** gombját a visszatéréshez.
+#### <a name="i-selected-edit-document-but-instead-of-opening-the-bdm-template-editor-page-in-finance-and-operations-i-have-been-sent-to-the-microsoft-365-web-page"></a>Kiválasztottam a **Dokumentum szerkesztése** lehetőséget, de a **BDM sablonszerkesztő** lap helyett a Finance and Operations megoldásban, a Microsoft 365 weboldalára kerültem.
+Ez a Microsoft 365 átirányítás egy ismert hibája. Ez akkor fordulhat elő, ha első alkalommal jelentkezik be a Microsoft 365 rendszerbe. A hiba megkerüléséhez válassza a böngészőben a **Vissza** gombját a visszatéréshez.
 
-#### <a name="i-understand-how-to-edit-a-template-by-using-office-365-in-the-first-application-session-and-how-to-use-the-template-in-the-second-application-session-adjusting-the-template-to-see-how-my-changes-affect-the-generated-business-document-can-i-do-this-using-the-office-desktop-application"></a>Értem, hogyan szerkeszthetek a sablonokat Office 365 használatával az első alkalmazásmunkamenetben, és azt, hogyan kell használni a sablont a második alkalmazásmunkamenetben a sablon módosításával, hogy megtekintsem a módosítások hogyan hatnak a létrejövő üzleti dokumentumra. Megtehetem ezt az asztali Office alkalmazás segítségével?
+#### <a name="i-understand-how-to-edit-a-template-by-using-microsoft-365-in-the-first-application-session-and-how-to-use-the-template-in-the-second-application-session-adjusting-the-template-to-see-how-my-changes-affect-the-generated-business-document-can-i-do-this-using-the-office-desktop-application"></a>Értem, hogyan szerkeszthetek a sablonokat Microsoft 365 használatával az első alkalmazásmunkamenetben, és azt, hogyan kell használni a sablont a második alkalmazásmunkamenetben a sablon módosításával, hogy megtekintsem a módosítások hogyan hatnak a létrejövő üzleti dokumentumra. Megtehetem ezt az asztali Office alkalmazás segítségével?
 Igen, megteheti. Az első alkalmazásmunkamenetben válassza a **Megnyitás az asztali alkalmazásban** lehetőséget. A sablon az ideiglenes fájltárolási helyre kerül és megnyílik az Office asztali alkalmazásban. Ezután hajtsa végre a következő lépéseket a sablon módosításának előnézetéhez a létrehozott üzleti dokumentumban:
 
 1. Végezze el a szükséges módosításokat a sablonban az Office asztali alkalmazás segítségével.

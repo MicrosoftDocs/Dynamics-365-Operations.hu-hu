@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: PlanActivity, ReqSupplyDemandSchedule
+ms.search.form: PlanActivity, ReqSupplyDemandSchedule, EcoResProductProdTypeFormulaNoActiveFormulaFormPart
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a67fa0409226432d2068c7ed4f6a876a9278d365
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 0ebe6228bdf94bbe7c8ffa282f9cd633ad25bc78
+ms.sourcegitcommit: cde71bc7d14ea6cdff2c4e991057d39a6a0473d9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3202054"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "3886969"
 ---
 # <a name="formulas-and-formula-versions"></a>Receptúrák és receptúraverziók
 
@@ -46,7 +46,7 @@ Receptúrasor létrehozásakor a sortípus segítségével adható meg, hogy a r
 | Tétel          | Válassza a **Cikk** típust, amikor a cikk készletből kiadott nyersanyag vagy félkész áru, illetve amikor a cikk szolgáltatás. |
 | Látszólagos       | Válassza a **Látszólagos** típust, amikor a receptúrasorokban szereplő alacsonyabb szintű receptúrás cikkeket akarja bontani. Ha a kötegrendelés becslését végzi, és a receptúrás cikkek bontva vannak, az sszetevő cikkek receptúrasorokként jelennek meg a kötegrendelésen. Ezenkívül a megfelelő útvonalak hozzáadódnak a termelési útvonalhoz. A receptúrás cikkek alábontása az aktuális konfiguráció használatával történik. A **Látszólagos** sortípus használata esetén kezelhetők a különböző receptúraszinteken megjelenő termelési és mérési konfigurációk. Ha egy termékhez a **Látszólagos** lehetőséget választja a **Mérnök** gyorslapon a **Kiadott termék részletei** oldalon, és ezután ezt a terméket felhasználja a receptúrában, a receptúrasor sortípusa **Látszólagos** értékre változik. A **Látszólagos** nem választható ki tényleges súllyal rendelkező cikkekhez, sem olyan cikkekhez, amelyeknél a termelés típusa **Társtermék**, **Melléktermék** vagy **Tervezési cikk**. |
 | Rögzített készletek | A receptúrasorban található összetevőhöz kötegrendelés, termelési rendelés, kanban, átmozgatási rendelés vagy beszerzési rendelés létrehozásához válassza a **Rögzített készletek** elemet. A kapcsolódó rendelés meghatározása az alapértelmezett rendelési beállítások és az összetevő termelési típusa alapján történik, és a kötegrendelés becslésekor jön létre. A szükséges összetevőmennyiségeket a program automatikusan lefoglalja a kötegrendeléshez. |
-| Szállító        | Válassza a **Szállító** lehetőséget, ha a termelési folyamat alvállalkozót használ, és az alvállalkozóhoz résztermelést vagy beszerzési rendelést szeretne létrehozni. Az alvállalkozó által végzett szolgáltatást vagy munkát receptúrás cikk vagy szolgáltatási tétel formájában kell létrehozni. Az elem a szülőcikkhez receptúrasorként csatolható. Az útvonalnak tartalmaznia kell egy az alvállalkozó műveleti erőforrásához hozzárendelt műveletet. A művelet a receptúrasorhoz a **Műveletszám** használatával kapcsolódik. mezőben történik). |
+| Szállító        | Válassza a **Szállító** lehetőséget, ha a termelési folyamat alvállalkozót használ, és az alvállalkozóhoz résztermelést vagy beszerzési rendelést szeretne létrehozni. Az alvállalkozó által végzett szolgáltatást vagy munkát receptúrás cikk vagy szolgáltatási tétel formájában kell létrehozni. Az elem a szülőcikkhez receptúrasorként csatolható. Az útvonalnak tartalmaznia kell egy az alvállalkozó műveleti erőforrásához hozzárendelt műveletet. A művelet a receptúrasorhoz a **Műveletszám** használatával kapcsolódik. mezőben történik. |
 
 ## <a name="formula-versions"></a>Receptúraverziók
 Új receptúra létrehozása esetén egy receptúraverziót kell létrehoznia, mielőtt hozzáadná a receptúra-sortételeket és ezek konkrét jellemzőit. Minden receptúrának legalább egy verzióval kell rendelkeznie. A **Jóváhagyva** gomb a receptúraverzióban csak azt követően válik elérhetővé, hogy a verzió rekordjának mentése sikeresen megtörtént. Minden egyes receptúraverzió-rekordhoz tartozik egy vagy több társ- és melléktermék, amelyek a végtermék előállítása során állhatnak elő. Számos termék állhat azonos összetevőkből különböző kötegméretben, többszörösen vagy különböző hozamok segítségével. Szükség szerint tetszőleges számú receptúraverziót létrehozhat.

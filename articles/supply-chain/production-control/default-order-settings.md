@@ -3,12 +3,12 @@ title: Alapértelmezett rendelési beállítások dimenziókhoz és termékvált
 description: Az alapértelmezett rendelési beállítások határozzák meg azt a helyet és raktárt, ahol a cikkek beszerzése és tárolása történik, illetve azt a minimális, maximális, többszörös és szokásos mennyiséget, amely felhasználásra kerül a kereskedéshez vagy a készletgazdálkodáshoz, valamint az átfutási időket, a leállító jelzőket és a rendelési ígéret módszerét.
 author: t-benebo
 manager: tfehr
-ms.date: 07/31/2020
+ms.date: 09/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: InventItemOrderSetup
+ms.search.form: InventItemOrderSetup, InventItemIdLookupByDefaultOrderSetting, EcoResProductReleasedStoppedAllChartPart, UnitTestPartitions
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations, Retail
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 0654ba019b71dc952ea52f206bc60d8fa05dd4ff
-ms.sourcegitcommit: f9917706d45693e8d3f9f6224dca9e601db44bae
+ms.openlocfilehash: c3aa800c1a996a062bcb737afa23f00a9e52bb48
+ms.sourcegitcommit: 97d4a9bd442fe20f90605d8154c3a947c7645b37
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "3657340"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "3895596"
 ---
 # <a name="default-order-settings-for-dimensions-and-product-variants"></a>Dimenziókra és termékváltozatokra vonatkozó alapértelmezett rendelésbeállítások
 
@@ -51,8 +51,11 @@ Háromféle alapértelmezett rendelésbeállítás van a beszerzésekhez, az ér
 - Beszerzési szerződés sorai
 - Ajánlatkérés sorai
 - Beszerzési igénylési sorok
-- Bizományosi feltöltési sorok
+- Bizományosi feltöltési sorok (részben támogatott, lásd a megjegyzést)
 - Terv. besz. rendelések
+
+> [!NOTE]
+> A bizományosi feltöltési rendeléssorokra az **Alapértelmezett rendelésbeállítások** lap **Beszerzési rendelés** gyorslapjából csak az **Alapértelmezett hely** mező, az **Alapértelmezett raktár** mező, és a **Leállítva** jelölőnégyzet vonatkozik.
 
 Az értékesítés alapértelmezett rendelési beállításai használatosak a következők létrehozásakor:
 

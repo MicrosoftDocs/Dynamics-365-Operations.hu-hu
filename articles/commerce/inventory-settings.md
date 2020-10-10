@@ -3,7 +3,7 @@ title: Készlet beállításainak alkalmazása
 description: Ez a témakör a készlet beállításaival foglalkozik, és leírja, hogy hogyan kell alkalmazni azokat a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: anupamar-ms
 manager: annbe
-ms.date: 06/01/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 737e71dc73750bf151629fd904081924ac15b91e
-ms.sourcegitcommit: 4a981ee4be6d7e6c0e55541535d386bce2565cba
+ms.openlocfilehash: d7d25fd62efca52dd2d60ed3435104c3507a1d19
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "3621221"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817609"
 ---
 # <a name="apply-inventory-settings"></a>Készlet beállításainak alkalmazása
 
@@ -38,6 +38,9 @@ A készlet beállításai határozzák meg, hogy ellenőrizni kell-e a készlete
 A Dynamics 365 Commerce becsléseket biztosít a termékek aktuális rendelkezésre állásáról. A becsült aktuális elérhetőségek számításával kapcsolatos további tudnivalókat lásd: [Kiskereskedelmi csatornák készletelérhetőségének kiszámítása](calculated-inventory-retail-channels.md).
 
 A Commerce webhelykészítőben egy termékhez vagy egy kategóriához lehet definiálni a készlet-küszöbértékeket és a -tartományokat. Ezek határozzák meg, hogy a készlet minősíthető készleten, alacsony készlet vagy elfogyott értékkel. További részletek: [A készletpufferek és a készlet szintjeinek konfigurálása](inventory-buffers-levels.md).
+
+> [!NOTE]
+> A Dynamics 365 Commerce 10.0.12-kiadásban elérhető a készletküszöbök és a -tartományok támogatása.
 
 ## <a name="inventory-settings"></a>Készletbeállítások
 
@@ -55,6 +58,9 @@ A Commerce alkalmazásban a készletbeállítások a **Webhelybeállítások \> 
     - Ha az **Elfogyott** lehetőség van kiválasztva, akkor csak az „Elfogyott” üzenet jelenik meg.
 
 - **Elfogyott küszöbérték** – Ez a régi numerikus beállítás csak akkor lép érvénybe, ha az **Elfogyott küszöbérték** érték van kiválasztva a **Készletszint alapja** beállítás számára.
+
+> [!IMPORTANT] 
+> Ezek a beállítások a Dynamics 365 Commerce 10.0.12-es kiadásában érhetők el. Ha a Dynamics 365 Commerce egy korábbi verziójáról frissít, akkor manuálisan kell frissítenie az appsettings.json fájlt. Az appsettings.json fájlok frissítésével kapcsolatos tudnivalókat lásd az [SDK- és modulkönyvtár-frissítések](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file) témakörben.
 
 ## <a name="modules-that-use-inventory-settings"></a>A készletbeállításokat használó modulok
 
@@ -74,9 +80,9 @@ A következő képen a kosár egy példája látható, amely egy raktáron („E
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[Kezdőcsomag áttekintése](starter-kit-overview.md)
+[Modulkönyvtár – áttekintés](starter-kit-overview.md)
 
-[A készletpufferek és a készlet szintjeinek konfigurálása](inventory-buffers-levels.md)
+[Készletpufferek és készletszintek konfigurálása](inventory-buffers-levels.md)
 
 [Kosármodul](add-cart-module.md)
 
@@ -84,4 +90,6 @@ A következő képen a kosár egy példája látható, amely egy raktáron („E
 
 [Számlakezelési oldalak és modulok](account-management.md)
 
-[Áruházválasztó modul](store-selector.md)
+[Üzletválasztó modul](store-selector.md)
+
+[SDK- és modulkönyvtár-frissítések](e-commerce-extensibility/sdk-updates.md)

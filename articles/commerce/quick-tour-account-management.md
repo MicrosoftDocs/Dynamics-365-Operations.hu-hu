@@ -3,7 +3,7 @@ title: Fiókkezelési oldalak áttekintése
 description: Ez a témakör áttekintést nyújt a Microsoft Dynamics 365 Commerce fiókkezelés oldalairól.
 author: anupamar-ms
 manager: annbe
-ms.date: 06/30/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 03a2ebd07c2a95198f506df3fd94c967ad0315e8
-ms.sourcegitcommit: ce397c2759f642c595e30fef58a770b50360b2bd
+ms.openlocfilehash: d0e066428e8c4717b5a50144f63e59b87089d286
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "3527608"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817802"
 ---
 # <a name="account-management-pages-overview"></a>Fiókkezelési oldalak áttekintése
 
@@ -46,7 +46,7 @@ A következő ábra a fiókkezelés kezdőoldalát szemlélteti.
 
 A **Saját profil** lap megjeleníti a vevő fiókjának adatait, például a nevét és telefonszámát. A vevő ezen a lapon frissítheti a profiladatait. Ez a lap testreszabható úgy, hogy a további vevői fiókokra vonatkozó beállításokat, például a marketing-e-mail-feliratkozás lehetőségét is tartalmazza.
 
-A következő ábra egy olyan **Saját profil** lap példáját mutatja be, amely az online kezdőszett és a „gyár” téma alapján készült.
+A következő ábra egy olyan **Saját profil** lap példáját mutatja be, amely a modulkönyvtár és a „gyár” téma alapján készült.
 
 ![Példa a Saját profil lapra](./media/Account-Management-MyProfile.PNG)
 
