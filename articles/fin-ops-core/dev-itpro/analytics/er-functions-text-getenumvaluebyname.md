@@ -3,7 +3,7 @@ title: GETENUMVALUEBYNAME ER-függvény
 description: A témakör tájékoztatást nyújt a GETENUMVALUEBYNAME Elektronikus jelentéskészítési (ER) függvény használatának módjáról.
 author: NickSelin
 manager: kfend
-ms.date: 12/12/2019
+ms.date: 09/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 33ccf358dc5355cd00d5ff41ebd8148a334cba38
-ms.sourcegitcommit: 445f6d8d0df9f2cbac97e85e3ec3ed8b7d18d3a2
+ms.openlocfilehash: 722ea8ea233d617b0584e21e98073428f16c0801
+ms.sourcegitcommit: ad5b7676fc1213316e478afcffbfaee7d813f3bb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "3743855"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "3885227"
 ---
 # <a name="getenumvaluebyname-er-function"></a>GETENUMVALUEBYNAME ER-függvény
 
@@ -61,11 +61,11 @@ Az eredményül kapott felsorolási érték.
 
 Nem történik kivétel, ha a *Felsorolás* érték nem található a *Karakterlánc* értékként megadott felsorolási érték nevével.
 
-## <a name="example"></a>Példa
+## <a name="example-1"></a>1. példa
 
 A következő ábra az adatmodellbe bevezetett **ReportDirection** sorszámozást mutatja be. Vegye figyelembe, hogy a címkék a felsorolási értékekhez vannak megadva.
 
-<p><a href="./media/ER-data-model-enumeration-values.PNG"><img src="./media/ER-data-model-enumeration-values.PNG" alt="Available values for a data model enumeration" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a>
+![Az adatmodell-felsorolásához elérhető értékek](./media/ER-data-model-enumeration-values.PNG)
 
 A következő ábrán ezek a részletek láthatók:
 
@@ -73,8 +73,48 @@ A következő ábrán ezek a részletek láthatók:
 - Az `$IsArrivals` kifejezés a modellfelsorolás-alapú **$Direction** adatforrást a jelen függvény paramétereként használja.
 - Az összehasonlító kifejezés értéke **IGAZ**.
 
-<a href="./media/ER-data-model-enumeration-usage.PNG"><img src="./media/ER-data-model-enumeration-usage.PNG" alt="Example of data model enumeration" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a>
+![Egy adatmodell-felsorolás példája](./media/ER-data-model-enumeration-usage.PNG)
+
+## <a name="example-2"></a>2. példa
+
+A `GETENUMVALUEBYNAME` és a [`LISTOFFIELDS`](er-functions-list-listoffields.md) funkció lehetővé teszi a támogatott felsorolások értékeinek és címkéinek szöveges értékként történő beolvasását. (A támogatott felsorolások alkalmazás-felsorolások, adatmodell-felsorolások, valamint formátum-felsorolások.)
+
+A következő ábra a modell-leképezésben bevezetett **TransType** adatforrást mutatja be. Ez az adatforrás az **LedgerTransType** alkalmazás-felsorolásra vonatkozik.
+
+![Egy alkalmazás-felsorolásra hivatkozó modell-leképezési adatforrás](./media/er-functions-text-getenumvaluebyname-example2-1.png)
+
+A következő ábra a modell-leképezésben konfigurált **TransTypeList** adatforrást mutatja be. Ez az adatforrás a **TransType** alkalmazás felsorolása alapján van konfigurálva. A `LISTOFFIELDS` funkció használatával az összes felsorolási érték visszatéríthető mezőket tartalmazó rekordok listájaként. Így az összes felsorolási érték részletei megjeleníthetők.
+
+> [!NOTE]
+> Az **EnumValue** mező a **TransTypeList** adatforráshoz a `GETENUMVALUEBYNAME(TransType, TransTypeList.Name)` kifejezés használatával van konfigurálva. Ez a mező a lista minden rekordjához egy felsorolási értéket juttat vissza.
+
+![Egy modell-leképezés adatforrása, amely egy kiválasztott felsorolás összes felsorolási értékét rekordok listájaként juttatja vissza](./media/er-functions-text-getenumvaluebyname-example2-2.png)
+
+A következő ábra a modell-leképezésben konfigurált **VendTrans** adatforrást mutatja be. Ez az adatforrás szállítói tranzakciórekordokat juttat vissza a **VendTrans** alkalmazástáblából. Minden tranzakció főkönyvi típusát a **TransType** mező értéke határozza meg.
+
+> [!NOTE]
+> Az **TransTypeTitle** mező a **VendTrans** adatforráshoz a `FIRSTORNULL(WHERE(TransTypeList, TransTypeList.EnumValue = @.TransType)).Label` kifejezés használatával van konfigurálva. Ha elérhető a felsorolási érték, akkor ez a mező szövegként juttatja vissza az aktuális tranzakció felsorolási értékének címkéjét. Ellenkező esetben üres karakterláncértéket jelenít meg.
+>
+> A **TransTypeTitle** mező egy olyan adatmodell **LedgerType** mezőjéhez van kötve, amely lehetővé teszi, hogy ez az információ minden olyan ER-formátumban használható legyen, amely az adatmodellt adatforrásként használja.
+
+![Szállítói tranzakciókat visszaadó modell-leképezési adatforrás](./media/er-functions-text-getenumvaluebyname-example2-3.png)
+
+A következő ábra bemutatja, hogyan használható az [adatforrás hibakeresője](er-debug-data-sources.md) a konfigurált modell-leképezés teszteléséhez.
+
+![A konfigurált modell-leképezés tesztelése az adatforrás hibakeresőjének segítségével](./media/er-functions-text-getenumvaluebyname-example2-4.gif)
+
+Az adatmodell **LedgerType** mezője a várt módon jeleníti meg a tranzakciótípusok címkéit.
+
+Ha nagy mennyiségű tranzakciós adathoz kívánja használni ezt a tervet, akkor figyelembe kell vennie a végrehajtás teljesítményt. További információkért lásd: [Az ER-formátumok végrehajtásának nyomon követése a teljesítménnyel kapcsolatos problémák elhárítása érdekében](trace-execution-er-troubleshoot-perf.md).
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[Szöveg függvények](er-functions-category-text.md)
+[Szöveges függvények](er-functions-category-text.md)
+
+[Az ER-formátumok végrehajtásának nyomon követése a teljesítménnyel kapcsolatos problémák elhárítása érdekében](trace-execution-er-troubleshoot-perf.md)
+
+[LISTOFFIELDS ER-függvény](er-functions-list-listoffields.md)
+
+[FIRSTORNULL ER függvény](er-functions-list-firstornull.md)
+
+[WHERE ER-függvény](er-functions-list-where.md)

@@ -1,6 +1,6 @@
 ---
 title: 'Adminisztrátor képzési katalógusa ehhez: Dynamics 365 Commerce'
-description: Minden képzési beállítás megkeresése a Dynamics 365 Commerce szolgáltatáshoz.
+description: Minden képzési beállítás megkeresése a Dynamics 365 Commerce adminisztrátor szerepkörhöz.
 author: margoc
 ms.topic: article
 ms.date: 07/23/2020
@@ -14,12 +14,12 @@ ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 7a6e0b6103bf453b74ae485f06bf139b13bae7b2
-ms.sourcegitcommit: 58d7133ae9909fa205730e3cf4c7fd5a1d5d0b75
+ms.openlocfilehash: fc4df1c7fc47608300d705616768b6c8ef135652
+ms.sourcegitcommit: ea335b4536342e496e8b61847b1ae6da3924f94c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "3793393"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "3821204"
 ---
 # <a name="learning-catalog-for-dynamics-365-commerce-administrators"></a>Képzési katalógus a Dynamics 365 Commerce adminisztrátorok számára
 
@@ -35,11 +35,11 @@ A következő katalógus az alapismeretekből a meghatározott tartományokra, a
 | [Első lépések az Dynamics 365 Commerce használatában](https://docs.microsoft.com/learn/paths/get-started-dynamics-365-commerce/)| A bevált Dynamics 365 Retail-funkciókra épülő Dynamics 365 Commerce az irodát, az üzletet, a hívásközpontot és a digitális megoldásokat egyesítő általános többcsatornás megoldást kínál. A Dynamics 365 Commerce lehetővé teszi, hogy a személyre szabott vevői bevonáson alapuló márkahűség kialakítását, a beétel növelését az alkalmazottak hatékonyabbá tételével, a műveletek optimalizálását a költségcsökkentés és a hatékonyabb ellátási lánc kialakítása érdekében, így összességében jobb üzleti eredményeket biztosítva. | Ingyenes, saját tempójú online tanulási útvonal | 2 óra   |
 | [Első lépések az Dynamics 365 Fraud Protection használatában](https://docs.microsoft.com/learn/modules/get-started-fraud-protection/)| A Dynamics 365 Fraud Protection egy felhőalapú megoldás, amely e-Kereskedelem, fizikailag létező boltok és többcsatornás kereskedők számára készült. Eszközök és képességek biztosításával segíti a bevételek és a hírnév védelmét a csalás és a visszaélés csökkentése, valamint a működési költségek és az elfogadási arányok növelése céljából. Emellett megóvja a felhasználói fiókokat a csalásnak való kitettségtől. | Ingyenes, saját tempójú online tanulási útvonal | 35 perc |
 
-## <a name="commerce"></a>Kereskedelem<a name="commerce"></a>
+## <a name="commerce"></a>Commerce<a name="commerce"></a>
 
 | Tartalom  | Leírás  | Formátum  | Hossz    |
 |---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|-----------|---------------------------------------------------------------------------|
-| [Dynamics 365 Commerce telepítése](https://docs.microsoft.com/learn/paths/deploy-dynamics-365-commerce/)                                    | Ez a tanulási útvonal bemutatja a Dynamics 365 Commerce környezetek telepítését és a kiépítés utáni lépések végrehajtását, amelyekkel sikeres kereskedelmi implementációkat végezhet az egyes kiskereskedelmi vállalatok szükségleteinek helyes topológiájának felhasználásával.                               | Ingyenes, saját tempójú online tanulási útvonal | 5 óra   |
+| [A Dynamics 365 Commerce kiépítése és bővítése](https://docs.microsoft.com/learn/paths/deploy-dynamics-365-commerce/) | Ez a tanulási útvonal bemutatja a Dynamics 365 Commerce környezetek telepítését és a kiépítés utáni lépések végrehajtását, amelyekkel sikeres kereskedelmi implementációkat végezhet az egyes kiskereskedelmi vállalatok szükségleteinek helyes topológiájának felhasználásával. | Ingyenes, saját tempójú online tanulási útvonal | 5 óra   |
 | [A pénztár (POS) konfigurálása és használata a Dynamics 365 Commerce alkalmazásban](https://docs.microsoft.com/learn/paths/configure-use-pos-commerce/)         | A tranzakcióadatokat a Pénztárban (POS) hozzák létre, majd feltöltik őket a Dynamics 365 Commerce Headquarters-ben történő feldolgozáshoz. Ez a tanulási útvonal bemutatja a pénztár telepítését és aktiválását, valamint azt, hogy hogyan tud létrehpzni napi tranzakciókat a pénztárban. | Ingyenes, saját tempójú online tanulási útvonal | 4.5 óra |
 | [Hívásközpontok a Dynamics 365 Commerce-ben – konfigurálás és használat](https://docs.microsoft.com/learn/paths/configure-work-call-centers-commerce/) | A Dynamics 365 Commerce egy olyan képességekkel rendelkező többcsatornás megoldás, amely a hívásközpont felhasználói által létrehozott értékesítési rendelések alapértelmezett, specifikus rendelésfeldolgozási beállításai és alapértelmezett adataival biztosítja a hívásközpont-csatornát.                                  | Ingyenes, saját tempójú online tanulási útvonal | 2 óra   |
 

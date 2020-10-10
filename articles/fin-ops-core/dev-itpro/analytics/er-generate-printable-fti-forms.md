@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 0bb817de583c231aa55fa81b9e28d788505e0a1f
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 4412fb08c8548c8ebe8455db0547618578e5e5b4
+ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771283"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3893363"
 ---
 # <a name="generate-printable-fti-forms"></a>Nyomtatható FTI-űrlapok generálása
 
@@ -111,7 +111,7 @@ Generálhat FTI-űrlapokat akkor is, ha FTI-t tesz közzé a **Számla nyomtatá
 Az ER keretrendszer jelenleg támogatja a következő helyeket a létrehozott dokumentumokhoz:
 
 - **Letöltött fájl** – A generált űrlapok letöltésekként vannak felajánlva, hogy a böngésző segítségével menthesse azokat.
-- **Képernyő** – A Microsoft Office 365 Excel szolgál a létrehozott FTI-űrlapok megtekintésére Excel formátumban.
+- **Képernyő** – A Microsoft 365 Excel szolgál a létrehozott FTI-űrlapok megtekintésére Excel formátumban.
 - **SharePoint-mappa** – A generált űrlapokat a Dokumentumkezelő keretrendszer beállításai alapján tárolja .
 - **Alkalmazásarchívum** –A generált űrlapokvégrehajtási naplóbejegyzések mellékleteként vannak tárolva a Microsoft Azure Storage szolgáltatásban.
 - **E-mail**– A generált űrlapok e-mail-mellékleteként lesznek küldve.

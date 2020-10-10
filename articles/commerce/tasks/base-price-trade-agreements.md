@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 022db9365f25c1d3e387870dd9d173077d864b3d
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 44dc059f7bfc3ba83a375c197ce67f1378a9bc9b
+ms.sourcegitcommit: 74b10104338222a945684d841d60ab4b8e570168
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3141522"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "3899349"
 ---
 # <a name="base-price-and-trade-agreements"></a> Alapár- és kereskedelmi megállapodások
 
@@ -58,7 +58,7 @@ Ez az eljárás bemutatja csatornaspecifikus eladási árra vonatkozó kereskede
 26. A **Név** mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
 27. Jelölje ki a **Kereskedelem** elemet a listán. A bemutató adatsorban a **Kereskedelem** naplónév a következő alapértelmezett objektumkapcsolattal rendelkezik: **Ár (eladási)**. Ez azt jelenti, hogy minden létrehozott új sor alapértelmezés szerint eladási árra vonatkozó kereskedelmi megállapodás lesz.  
 28. A **Művelet ablaktáblán** kattintson a **Sorok** elemre.
-29. A **Számlakód** mezőben válassza ki a következőt: „Csoport”.
+29. A **Fél kódtípusa** mezőben válassza ki a „Csoport” lehetőséget.
 30. A **Fiókválasztás** mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
 31. Keresse meg és jelölje ki a kívánt rekordot a listán. Ez befejezi a Csatorna és a Kereskedelmi megállapodás közötti, Árcsoport által közvetített hivatkozást.  
 32. Írjon be egy értéket a **Cikk-kapcsolat** mezőbe.

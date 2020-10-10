@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9acc4c26febacf4ec7647cf436ac678e52df3973
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 25996cbccf3e9eec6fc29b80b8241e89b5b6b4a5
+ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772558"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3893279"
 ---
 # <a name="document-printing-overview"></a>A dokumentumnyomtatás áttekintése
 
@@ -52,7 +52,7 @@ A következő táblázat leírja a három elsődleges nyomtatási esetet.
 Mivel a megoldás változó, a helyzettől függően az alkalmazások beépített szolgáltatásokkal és eszközökkel segítik a felhasználókat céljaik elérésében:
 
 - **1. eset** – a böngésző HTML5-ügyfél megjelenítése támogatja.
-- **2. eset** – ügyfélalkalmazásokat és a Microsoft Office 365 szolgáltatásokat használja.
+- **2. eset** – ügyfélalkalmazásokat és a Microsoft 365 szolgáltatásokat használja.
 - **3. eset** – ügyfélalkalmazások és a Microsoft Azure által üzemeltetett szolgáltatások támogatását igényli.
 
 Az Azure előfizetésbe telepített platform mellett a Finance and Operations integrált, első fél Azure alkalmazást nyújt az ügyfeleknek,amely segítségével könnyebben használhatják a tartomány által szolgáltatott eszközöket dokumentumok nyomtatására.

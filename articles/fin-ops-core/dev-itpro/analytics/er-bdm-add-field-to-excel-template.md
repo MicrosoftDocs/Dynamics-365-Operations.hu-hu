@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-10-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: d6e0f2c914b8d348ef6eac42557fb46c53df04a9
-ms.sourcegitcommit: d16d370dab734e09312cb06711beca9cca52d4c9
+ms.openlocfilehash: 8c3a905c90f5dd4ad3487f004a958c0dcd52115d
+ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "2809520"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3893247"
 ---
 # <a name="add-new-fields-to-a-business-document-template-in-microsoft-excel"></a>Új mezők hozzáadása üzleti dokumentum-sablonhoz a Microsoft Excel szolgáltatásban
 
@@ -67,7 +67,7 @@ Az ER-konfigurációk importálásának módjával kapcsolatos további tudnival
 5.  A **Cím** mezőbe írja be: **Szabadszöveges számla (Excel) Contoso** az új sablon címeként.
 6.  A szerkesztési folyamat kezdetének jóváhagyásához kattintson az **OK** gombra.
 
-Megjelenik a BDM sablonszerkesztő lap. A kiválasztott sablont a Microsoft Office 365 segítségével online szerkesztheti a beágyazott vezérlőben.
+Megjelenik a BDM sablonszerkesztő lap. A kiválasztott sablont a Microsoft 365 segítségével online szerkesztheti a beágyazott vezérlőben.
 
 ![BDM-sablonszerkesztő lapja](./media/BDM-AddFldExcel-EditableTemplate.png)
 
