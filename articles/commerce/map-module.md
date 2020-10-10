@@ -3,7 +3,7 @@ title: Modul feltérképezése
 description: Ez a témakör a feltérképezési modulokkal foglalkozik, és bemutatja, hogy hogyan lehet őket konfigurálni a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: anupamar-ms
 manager: annbe
-ms.date: 07/31/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: ca531e6cbf0a1044b0a13e5cdf42c7b4f0498fe5
-ms.sourcegitcommit: 629988f1a704d62648d98649056931b8c33b9e08
+ms.openlocfilehash: d2cbc67a186a76647a4f7ddc7942b15d3e469ece
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "3811184"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817206"
 ---
 # <a name="map-module"></a>Modul feltérképezése
 
@@ -38,7 +38,8 @@ A modul feltérképezése egy interaktív térképen jeleníti meg az üzleteket
 
 A modul feltérképezése az üzletválasztó modullal együtt dolgozik a térképeken megjelenített üzletek földrajzi helyeinek meghatározásában. Az üzletválasztó és a modul feltérképezések akkor lépnek interakcióba, ha a felhasználó a webhely egyik moduljában kiválaszt egy üzletet. A modul feltérképezések az üzletválasztó modulokkal való interakción túl más forgatókönyvek esetén is kiterjeszthetőek. Azonban a modul testreszabása kötelező.
 
-A modul feltérképezése a Commerce 10.0.13 verziójában lett bevezetve.
+> [!NOTE]
+> Az térkép modul a Dynamics 365 Commerce 10.0.13-as verziójában érhető el.
 
 A következő kép egy üzlet oldalán használt letérképezési modul egy példáját jeleníti meg.
 
@@ -70,13 +71,13 @@ A térképmodul oldalon lévő konfigurálásával kapcsolatban a következő t�
  
 ## <a name="additional-resources"></a>További erőforrások
 
-[Kezdőcsomag áttekintése](starter-kit-overview.md)
+[Modulkönyvtár – áttekintés](starter-kit-overview.md)
 
 [Vásárlásmező-modul](add-buy-box.md)
 
 [Kosármodul](add-cart-module.md)
 
-[Áruházválasztó modul](store-selector.md)
+[Üzletválasztó modul](store-selector.md)
 
 [A szervezetéhez tartozó Bing Térképek kezelése](./dev-itpro/manage-bing-maps.md)
 

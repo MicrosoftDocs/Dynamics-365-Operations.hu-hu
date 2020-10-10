@@ -1,9 +1,9 @@
 ---
-title: Kezdő csomag áttekintése
-description: Ez a témakör a Microsoft Dynamics 365 Commerce kezdőcsomagról nyújt áttekintést.
+title: Modulkönyvtár – áttekintés
+description: Ez a témakör a Microsoft Dynamics 365 Commerce modulkönyvtárról nyújt áttekintést.
 author: anupamar-ms
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,29 +18,28 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 1960e1354744fe1034783177ba331f5877d0bee7
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: dfc52dd8e14bb2e9f2f9c026ee0e058aee4cedcb
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025902"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817826"
 ---
-# <a name="starter-kit-overview"></a>Kezdő csomag áttekintése
-
+# <a name="module-library-overview"></a>Modulkönyvtár – áttekintés
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör a Microsoft Dynamics 365 Commerce kezdőcsomagról nyújt áttekintést.
+Ez a témakör a Microsoft Dynamics 365 Commerce modulkönyvtárról nyújt áttekintést.
 
 ## <a name="overview"></a>Áttekintés
 
-A Dynamics 365 Commerce kezdőcsomag olyan modulok gyűjteménye, amelyek egy e-kereskedelmi webhely felépítésére használhatók. A modulokban felhasználói felületi (UI) szempontok és funkcionális működéssel kapcsolatos szempontok is találhatók.
+A Dynamics 365 Commerce modulkönyvtár olyan modulok gyűjteménye, amelyek egy e-kereskedelmi webhely felépítésére használhatók. A modulokban felhasználói felületi (UI) szempontok és funkcionális működéssel kapcsolatos szempontok is találhatók.
 
-A kezdőkészlet moduljaira témák is alkalmazhatók, így módosítható megjelenésük és hangulatuk. A témák egymásra épülő stílusalapokat (CSS) használnak. A „Gyár” nevű fiktív e-kereskedelmi webhely témája a elérhető a kezdőkészlet részeként, és referenciaként használható.
+A modulkönyvtár moduljaira témák is alkalmazhatók, így módosítható megjelenésük és hangulatuk. A témák egymásra épülő stílusalapokat (CSS) használnak. A „Gyár” nevű fiktív e-kereskedelmi webhely témája a elérhető a modulkönyvtár részeként, és referenciaként használható.
 
-## <a name="starter-kit-modules"></a>A kezdőkészlet moduljai
+## <a name="module-library-modules"></a>Modulkönyvtár moduljai
 
-A következő típusú modulok érhetők el a kezdőkészletben:
+A következő típusú modulok érhetők el a modellkönyvtárban:
 
 - **Konténer modul** – Egy konténer modul egy egyszerű modul, amely más modulok számára gazdaként szolgál. A benne található modulok elrendezését szabályozza.
 - **Marketing modulok** – A marketing modulokban megtalálhatók a blokk, a szövegblokk, a videólejátszó és a forgótár modulok. Ezen a modulok mindegyike a tartalom bemutatására használható. Ezeket a modulokat bármelyik lapra el lehet helyezni, és tartalomkezelő rendszer (CMS) adatai vezérlik őket.

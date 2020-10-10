@@ -3,7 +3,7 @@ title: Pénztár felhasználói felület vizuális konfigurációja
 description: Ez a témakör a Dynamics 365 Commerce pénztár (POS) használatához kapcsolódó képernyő-elrendezésekről nyújt információkat.
 author: boycezhu
 manager: annbe
-ms.date: 04/14/2020
+ms.date: 09/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -16,15 +16,15 @@ ms.custom: 90573
 ms.assetid: a6868f93-02ed-4928-9f6a-3b7383e7e399
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: boycezhu
+ms.author: boycez
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: a037c8514d7838b3a4797f21b3ef3f6d5736e840
-ms.sourcegitcommit: f7294160d18f15cb762c24f2459b4f0887c37541
+ms.openlocfilehash: 75bce16c5e1b0898a0284659f9ce5e4716a93049
+ms.sourcegitcommit: 91e101d7a51a8b63bd196ec80e9224e5e6e6fc95
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "3505634"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "3834209"
 ---
 # <a name="pos-user-interface-visual-configurations"></a>Pénztár felhasználói felület vizuális konfigurációja
 
@@ -62,6 +62,8 @@ A vizuális profilok nyilvántartásokhoz vannak rendelve, és a nyilvántartás
 > [!NOTE]
 > A **Jobbra zárt** elrendezés és a dátum/idő megjelenítése nem érvényes a bejelentkezési képernyőre a kompakt nézetben.
 
+Az **1090** (**Pénztárgépek**) elosztási ütemezési feladat futtatásával szinkronizálni kell a legfrissebb vizuális profilkonfigurációkat a csatorna-adatbázissal.
+
 ## <a name="screen-layouts"></a>Képernyő-elrendezések
 
 A képernyő-elrendezés konfigurációja határozza meg a műveletek, a tartalom és a felhasználóifelület-vezérlők elhelyezését a pénztár **Üdvözlőképernyőjén** és **Tranzakciók** képernyőjén.
@@ -81,6 +83,8 @@ A képernyő-elrendezés konfigurációja határozza meg a műveletek, a tartalo
 ### <a name="assignment"></a>Hozzárendelés
 
 Képernyő-elrendezések üzlet-, nyilvántartás- vagy felhasználószinten rendelhetők hozzá. A felhasználó-hozzárendelés felülírja a nyilvántartás- és üzlet-hozzárendeléseket, és a nyilvántartás-hozzárendelés felülbírálja az üzlet-hozzárendelést. Egyszerű forgatókönyvek esetén, ahol minden felhasználó ugyanazt az elrendezést használja a nyilvántartástól vagy a szerepkörtől függetlenül, a képernyő-elrendezés beállítható csak az üzlet szintjén. Azokban az esetekben, ahol bizonyos nyilvántartások vagy felhasználók speciális elrendezéseket igényelnek, ezek megfelelően hozzárendelhetők.
+
+Attól függően, hogy milyen szintű képernyő-elrendezés van hozzárendelve, futtatnia kell az **1070** (**Csatornakonfiguráció**), az **1090** (**Pénztárak**) és/vagy az **1060** (**Személyzet**) elosztási ütemezési feladatokat a legfrissebb képernyő-elrendezési konfigurációk szinkronizálására a csatorna-adatbázisba.
 
 ### <a name="layout-sizes"></a>Elrendezési méretek
 

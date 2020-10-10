@@ -3,7 +3,7 @@ title: Rács funkciói
 description: Ez a témakör ismerteti a rács vezérlőelem számos erőteljes funkcióját. Az új rács funkciónak engedélyezve kell lennie ahhoz, hogy hozzáférhessen ezekhez a funkciókhoz.
 author: jasongre
 manager: AnnBe
-ms.date: 08/31/2020
+ms.date: 09/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: b4efad8423ab42bf6f7f6e2d1054307c11d31d2c
-ms.sourcegitcommit: 241ada0945c72d769eaa70ae35aedbb6a3233fdf
+ms.openlocfilehash: 1f1c27444b38360072beb5277c445161983a2480
+ms.sourcegitcommit: 28a771d81322e72d88db63a20ff360de084a6087
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "3760399"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "3835086"
 ---
 # <a name="grid-capabilities"></a>Rács funkciói
 
@@ -33,6 +33,7 @@ Az új rács vezérlőelem számos hasznos és erőteljes funkciót tartalmaz, a
 -  A rendszer előtt történő gépelés
 -  Matematikai kifejezések kiértékelése 
 -  Táblázatos adatok csoportosítása (külön lehet engedélyezni az **(Előzetes verzió) Csoportosítás rácsokban** szolgáltatással)
+-  Rögzített rendszeroszlopok
 
 ## <a name="calculating-totals"></a>Teljes összegek számítása
 A Finance and Operations alkalmazásokban a felhasználók a számokat tartalmazó oszlopok alján látható összesítéseket megtekinthetik a rácsokban. Ezeket az összegeket a rács alján látható lábléc szakasz mutatja. 
@@ -119,12 +120,19 @@ A rács első oszlopának felső részén található jelölőnégyzet bejelöl�
 ### <a name="hiding-column-names"></a>Oszlopok neveinek elrejtése
 Az adatok csoportosításakor az alapértelmezett viselkedés a csoportfej sorában az oszlop nevének megjelenítése. A verzió 10.0.14/Platform Update 38-es verziójától kezdve elhagyhatja az oszlop nevét a csoportfej soraiban, ha kiválasztja a **Rácsbeállítások** > **Csoportoszlop nevének elrejtése** lehetőséget.
 
+## <a name="pinned-system-columns"></a>Rögzített rendszeroszlopok
+Az új rács sorkiválasztás oszlopát és sorállapot oszlopát a rács bal szélső részén rögzítjük vagy fagyasztjuk. Ezért ha ezek az oszlopok egy rácsban szerepelnek, akkor mindig láthatók lesznek a felhasználó számára, attól függetlenül, hogy a rács vízszintes görgetése milyen helyzetben van.   
+
 ## <a name="frequently-asked-questions"></a>Gyakori kérdések
 ### <a name="how-do-i-enable-the-new-grid-control-in-my-environment"></a>Hogyan engedélyezhető az új rácsvezérlő a saját környezetemben? 
 
-**10.0.9/33. és későbbi platformfrissítések** esetében az **Új rácsvezérlő** funkció elérhető közvetlenül a Funkciókezelésben bármilyen környezetben. A többi nyilvános előnézeti funkcióhoz hasonlóan a funkció engedélyezése termelési környezetben a [Kiegészítő felhasználási szerződés](https://go.microsoft.com/fwlink/?linkid=2105274) hatálya alá tartozik.  
+**10.0.9 / 33-as platformfrissítés vagy újabb**
 
-**10.0.8/32-es platformfrissítés és 10.0.7 platformfrissítés 31** Az **Új rácsvezérlő** funkció engedélyezhető az 1. szintű (fejlesztés/tesztelés) és a 2. szintű (tesztkörnyezet) környezetekben, hogy az alábbi lépések követésével további teszteket és tervezési változtatásokat lehessen biztosítani.
+A **Új rácsvezérlő** funkció elérhető közvetlenül a Funkciókezelésben bármilyen környezetben. A többi nyilvános előnézeti funkcióhoz hasonlóan a funkció engedélyezése termelési környezetben a [Kiegészítő felhasználási szerződés](https://go.microsoft.com/fwlink/?linkid=2105274) hatálya alá tartozik.  
+
+**10.0.8 / 32-es platformfrissítés és 10.0.7 / 31-es platformfrissítés**
+
+Az **Új rácsvezérlő** funkció engedélyezhető az 1. szintű (fejlesztés/tesztelés) és a 2. szintű (tesztkörnyezet) környezetekben, hogy az alábbi lépések követésével további teszteket és tervezési változtatásokat lehessen biztosítani.
 
 1.  **Engedélyezze a tesztcsomagot**: hajtsa végre a következő SQL-utasítást: 
 
@@ -139,11 +147,14 @@ Az adatok csoportosításakor az alapértelmezett viselkedés a csoportfej sorá
 Minden további felhasználói munkamenet engedélyezett új rácsvezérlővel indul.
 
 ## <a name="developer-opting-out-individual-pages-from-using-the-new-grid"></a>[Fejlesztő] Egyes oldalak elutasítása az új rács használatából 
-Ha a szervezet egy olyan oldalt észlel, amelyen problémák lépnek fel az új rács használata miatt, akkor egy API felület lehetővé teszi, hogy az egyes űrlapok használhassák a régi rácsvezérlőt, miközben a rendszer további részei az új rácsvezérlőt használják. Ha el szeretné utasítani az egyes oldalakat az új rácsból, adja hozzá a következő hívásfeladást `super()` az űrlap `run()` módjához.
+Ha a szervezet egy olyan oldalt észlel, amelyen problémák lépnek fel az új rács használata miatt, akkor a 10.0.13 / 37-es platformfrissítéstől egy API felület lehetővé teszi, hogy az egyes űrlapok használhassák a régi rácsvezérlőt, miközben a rendszer további részei az új rácsvezérlőt használják. Ha el szeretné utasítani az egyes oldalakat az új rácsból, adja hozzá a következő hívásfeladást `super()` az űrlap `run()` módjához.
 
  ```this.forceLegacyGrid();```
 
-Ezt az API-t a 2021 októberi kiadásig kell figyelembe venni, amikor az új rácsvezérlő használata kötelezővé válik. Jelentsen minden olyan problémát a Microsoftnak, amelyek megkövetelik az API használatát. 
+Ezt az API-t a 2021 októberi kiadásig kell figyelembe venni, amikor az új rácsvezérlő használata kötelezővé válik. Ha bármilyen probléma az API használatát igényli jelentse azokat a Microsoftnak.
+
+## <a name="developer-size-to-available-width-columns"></a>[Fejlesztői] Oszlopok rendelkezésre álló szélességre méretezése
+Ha egy fejlesztő beállítja a **WidthMode** tulajdonságot **SizeToAvailable** értékre az új rácsban található oszlopokhoz, akkor ezek az oszlopok kezdetben ugyanolyan szélességgel rendelkeznek, mintha a tulajdonság **SizeToContent** értékre lenne állítva. A rácson belül azonban képesek kiszélesedni, hogy kihasználják az extra elérhető helyet. Ha a tulajdonság több oszlopnál **SizeToAvailable** értékre van állítva, akkor az egyes oszlopok a rácson belül a további rendelkezésre álló szélességet osztják fel. Ha viszont a felhasználó manuálisan átméretezi az egyik oszlopot, akkor az oszlop statikus lesz. Ezen a szélességen marad, és a rendszer nem nyúlik tovább, hogy kihasználja az extra elérhető szélességet.  
 
 ## <a name="known-issues"></a>Ismert problémák
 Ez a szakasz az új rácsvezérlő ismert problémáinak listáját tárolja, miközben a funkció egy előzetes állapotban van.  

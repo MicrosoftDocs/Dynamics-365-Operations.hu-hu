@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: a2ca0ce277a062c8d525b6a3619eaf1b0114667b
-ms.sourcegitcommit: 18c5ef10e311f3dd2dbf45c6439ae6beff921af8
+ms.openlocfilehash: 6fe42f43277448dc5918597ed8bb1b68f2266b6a
+ms.sourcegitcommit: 4ba10abe5be8a21b95370cd970a622e954970984
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "3719264"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "3829212"
 ---
 # <a name="prospect-to-cash-in-dual-write"></a>Potenciális vevők készpénzre váltása kettős írásban
 
@@ -99,29 +99,7 @@ Ha a Supply Chain Management alkalmazásól a Sales alkalmazásba szinkronizál,
 
 ## <a name="dual-write-solution-for-sales"></a>Kettős írási megoldás a Saleshez
 
-Új mezők kerülnek hozzáadásra a **Rendelés** entitáshoz, és megjelennek a lapon. Ezeknek a mezőknek a többsége megjelenik az értékesítés modul **Integráció** lapján. Van néhány speciális mező:
-
-+ A **Feldolgozás állapota** mező a rendelés feldolgozottsági állapotát mutatja a Supply Chain Management szolgáltatásban. Ez a mező zárolva van, és csak a Supply Chain Management alkalmazás rendelésének állapotát jeleníti meg. A következő értékek állnak rendelkezésre:
-
-    + **Aktív** – Az állapot, miután a rendelést aktiválták a Sales szolgáltatásban az **Aktiválás** gombbal.
-    + **Visszaigazolva**
-    + **Teljesítve**
-    + **Számlázva**
-    + **Részlegesen kiszállítva**
-    + **Részben számlázva**
-    + **Kitárolva**
-    + **Érvénytelenítve**
-
-    A következő táblázat bemutatja, hogy a feldolgozási állapot milyen módon van hozzárendelve a **CRM-állapotkód** értékéhez.
-
-    | Feldolgozás állapota           | CRM állapotkód    |
-    |-----------------------------|--------------------|
-    | Aktív                      | Új/Függő/Várakoztatott |
-    | Visszaigazolva/kitárazva            | Folyamatban        |
-    | Részlegesen kiszállítva         | Részleges            |
-    | Teljesítve                   | Befejezés           |
-    | Jóváhagyva/Részben számlázva | Számlázva           |
-    | Érvénytelenítve                    | Nincs pénz           |
+Új mezők kerülnek hozzáadásra a **Rendelés** entitáshoz, és megjelennek a lapon. Ezeknek a mezőknek a többsége megjelenik az értékesítés modul **Integráció** lapján. Ha további információkat szeretne arról, hogyan lehet leképezni az állapot mezőket, akkor olvassa el a dokumentációs témakört az [Értékesítési rendelés állapotához tartozó mezők alapján történő leképezés beállításhoz](https://review.docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/sales-status-map?branch=robin-dw-status-map)
 
 + A **Számla létrehozása** és a **Rendelés törlése** gombok az **Értékesítési rendelés** oldalon rejtettek a Salesben.
 + Az **Értékesítési rendelés állapota** érték **Aktív** marad annak biztosítására, hogy a Supply Chain Management módosításai átkerülhessenek az értékesítési rendelésbe a Sales szolgáltatásban. Ennek vezérléséhez az alapértelmezett **Statecode \[állapot\]** értékét **Aktívra** kell állítani.

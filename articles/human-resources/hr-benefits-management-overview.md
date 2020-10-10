@@ -3,7 +3,7 @@ title: Juttatáskezelés áttekintése
 description: A juttatáskezelés funkció áttekintése a Dynamics 365 Human Resources alkalmazásban. Az alkalmazottak számára kiterjesztett juttatási lehetőségeket kínálhat könnyen használható online felületen.
 author: andreabichsel
 manager: AnnBe
-ms.date: 07/16/2020
+ms.date: 09/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1043fb18c33e5ec0cde13008b168fd317c7c7be6
-ms.sourcegitcommit: 9dc5c7dd5877cc6e7cd0059d173bcd8052ba13bc
+ms.openlocfilehash: e2e8fcdd0b6124b459c4dc073e2929418d18bcc5
+ms.sourcegitcommit: 084eda1d5503be83e97e2e428e67ef5393535fab
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "3599380"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "3819765"
 ---
 # <a name="benefits-management-overview"></a>Juttatáskezelés – áttekintés
 
@@ -41,15 +41,9 @@ A versenyképesség megőrzéséhez juttatások széles választékát kell nyú
 
 Ha szeretne hozzáférni a bemutató adatokhoz, újra kell telepítenie a tesztkörnyezetét.
 
-## <a name="benefits-management-known-issues"></a>Juttatáskezelés – ismert problémák
-
-### <a name="flex-credit-programs"></a>Rugalmas jóváírási programok
-
-A flex credit programhoz meghatározott teljes hitelkeret nem jelenik meg a **Dolgozói juttatási tervek** képernyőn. Ha egy rugalmas jóváírási programot úgy állított be, hogy **Nincs**arányosítási szabálya legyen, akkor egy hibát kap a **Dolgozói juttatási terv** képernyőn a tervek kiválasztása és megerősítése során.
-
 ## <a name="enable-benefits-management"></a>Juttatáskezelés engedélyezése
 
-A cikk azt írja le, hogyan lehet bekapcsolni funkciókat a Human Resources szolgáltatásban. Arról is tájékoztat, hogy a Human Resources szolgáltatásban melyik meglévő funkciók lesznek lecserélve vagy letiltva, amikor bekapcsolja a juttatáskezelést.
+A témakör azt írja le, hogyan lehet bekapcsolni funkciókat a Human Resources szolgáltatásban. Arról is tájékoztat, hogy a Human Resources szolgáltatásban melyik meglévő funkciók lesznek lecserélve vagy letiltva, amikor bekapcsolja a juttatáskezelést.
 
 > [!IMPORTANT]
 > Miután engedélyezte a juttatások kezelését egy **Termelési** környezetben, azt nem lehet letiltani. Azt ajánljuk , hogy a **Termelési** környezetben történő engedélyezése előtt engedélyezze és tesztelje a juttatások kezelését egy **Teszt** környezetben. Jelentősen különböznek egymástól a korábbi Juttatási funkciók és az új Juttatáskezelés funkciók – ezek további beállításokat igényelnek, és a termelésbe történő helyezés előtt tesztelni kell azokat.

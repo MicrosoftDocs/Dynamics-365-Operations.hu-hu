@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6c46c4c060d61503779726c68d32449c87b441f1
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 7f170fc501e995bf9497d86501f4e086e486d0fb
+ms.sourcegitcommit: 8fe59d216154dbed1208274f44707465b668a8e0
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207902"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "3830749"
 ---
 # <a name="purchasing-policies-overview"></a>A beszerzési irányelvek áttekintése
 
@@ -102,9 +102,9 @@ A beszerzési igénylés ajánlatkérési szabálya meghatározza azokat a felt�
 
 ### <a name="purchase-requisition-control-rule"></a>Beszerzési igénylés ellenőrzési szabálya
 
-A beszerzési igénylés ellenőrzési szabálya egy választható szabály. Az ilyen típusú szabályok létrehozásakor különböző lapokon található beállításokat adhat meg:
+A beszerzési igénylés ellenőrzési szabálya a **fogyasztás** típusú igénylésekhez nem kötelező szabály. Az ilyen típusú szabályok létrehozásakor különböző lapokon található beállításokat adhat meg:
 
--   A **Munkafolyamat elküldése** lapon beállíthatja azokat a mezőket, amelyeket a jóváhagyásra elküldendő igénylés igénylési sorában meg kell adni, ha az igénylési cél a **Felhasználás**.
+-   A **Munkafolyamat elküldése** lapon beállíthatja azokat a mezőket, amelyeket a jóváhagyásra elküldendő igénylés igénylési sorában meg kell adni.
 -   A **Rendelési mennyiségek** lapon beállíthatja azokat a mezőket, amelyek bizonyos körülmények között szükségesek a beszerzési igényléshez. Rendelési mennyiségeket is érvényesíthet.
 -   A **Dátumok** lapon beállíthatja, hogy a könyvelési dátum és a kért dátum megegyezzen-e
 -   A **Cím** lapon megadhatja, hogy a felhasználó számára engedélyezett-e a rendszerben új cím létrehozása a beszerzési igénylésre való alkalmazáshoz.
