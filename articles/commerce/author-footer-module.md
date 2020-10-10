@@ -1,9 +1,9 @@
 ---
 title: Láblécmodul
 description: Ez a témakör a láblécmodulokkal foglalkozik, és bemutatja, hogy hogyan lehet őket létrehozni a Dynamics 365 Commerce alkalmazásban.
-author: anupamar
+author: anupamar-ms
 manager: annbe
-ms.date: 08/31/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -14,76 +14,76 @@ ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anupamar-ms
+ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 6dd9f214fbeeeaabadac4853916363c20a3288ca
-ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
+ms.openlocfilehash: 42a71ea9498461febca80952acc3158517918332
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "3761201"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3816961"
 ---
-# <a name="footer-module"></a><span data-ttu-id="c42c0-103">Láblécmodul</span><span class="sxs-lookup"><span data-stu-id="c42c0-103">Footer module</span></span>  
+# <a name="footer-module"></a><span data-ttu-id="c6a10-103">Láblécmodul</span><span class="sxs-lookup"><span data-stu-id="c6a10-103">Footer module</span></span>  
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="c42c0-104">Ez a témakör a láblécmodulokkal foglalkozik, és bemutatja, hogy hogyan lehet őket létrehozni a Microsoft Dynamics 365 Commerce alkalmazásban.</span><span class="sxs-lookup"><span data-stu-id="c42c0-104">This topic covers footer modules and describes how to create them in Microsoft Dynamics 365 Commerce.</span></span>
+<span data-ttu-id="c6a10-104">Ez a témakör a láblécmodulokkal foglalkozik, és bemutatja, hogy hogyan lehet őket létrehozni a Microsoft Dynamics 365 Commerce alkalmazásban.</span><span class="sxs-lookup"><span data-stu-id="c6a10-104">This topic covers footer modules and describes how to create them in Microsoft Dynamics 365 Commerce.</span></span>
 
-## <a name="overview"></a><span data-ttu-id="c42c0-105">Áttekintés</span><span class="sxs-lookup"><span data-stu-id="c42c0-105">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="c6a10-105">Áttekintés</span><span class="sxs-lookup"><span data-stu-id="c6a10-105">Overview</span></span>
 
-<span data-ttu-id="c42c0-106">A láblécmodul egy speciális tároló, amely a láblécben megjelenő modulok tárolására szolgál.</span><span class="sxs-lookup"><span data-stu-id="c42c0-106">The footer module is a special container that is used to host the modules that appear in the page footer.</span></span> <span data-ttu-id="c42c0-107">Például a webhely különböző lapjaira mutató hivatkozásokat is tartalmazhat, mint például a **Kapcsolat** és **Áruházi szabályzat** lapokra.</span><span class="sxs-lookup"><span data-stu-id="c42c0-107">For example, it can include links to various pages across the site, such as **Contact Us** and **Store Policies** pages.</span></span>
+<span data-ttu-id="c6a10-106">A láblécmodul egy speciális tároló, amely a láblécben megjelenő modulok tárolására szolgál.</span><span class="sxs-lookup"><span data-stu-id="c6a10-106">The footer module is a special container that is used to host the modules that appear in the page footer.</span></span> <span data-ttu-id="c6a10-107">Például a webhely különböző lapjaira mutató hivatkozásokat is tartalmazhat, mint például a **Kapcsolat** és **Áruházi szabályzat** lapokra.</span><span class="sxs-lookup"><span data-stu-id="c6a10-107">For example, it can include links to various pages across the site, such as **Contact Us** and **Store Policies** pages.</span></span>
 
-<span data-ttu-id="c42c0-108">A következő kép egy webhelyoldalon használt láblécmodul egy példáját jeleníti meg.</span><span class="sxs-lookup"><span data-stu-id="c42c0-108">The following image shows an example of a footer module on a site page.</span></span>
+<span data-ttu-id="c6a10-108">A következő kép egy webhelyoldalon használt láblécmodul egy példáját jeleníti meg.</span><span class="sxs-lookup"><span data-stu-id="c6a10-108">The following image shows an example of a footer module on a site page.</span></span>
 
 ![Példa egy lábléc modulra](./media/ecommerce-footer.PNG)
 
-## <a name="footer-module-properties"></a><span data-ttu-id="c42c0-110">Láblécmodul tulajdonságai</span><span class="sxs-lookup"><span data-stu-id="c42c0-110">Footer module properties</span></span> 
+## <a name="footer-module-properties"></a><span data-ttu-id="c6a10-110">Láblécmodul tulajdonságai</span><span class="sxs-lookup"><span data-stu-id="c6a10-110">Footer module properties</span></span> 
 
-<span data-ttu-id="c42c0-111">A legtöbb tárolóhoz hasonlóan a láblécmodul a fejlécre és a szélességre vonatkozó tulajdonságokat támogatja.</span><span class="sxs-lookup"><span data-stu-id="c42c0-111">Like most containers, a footer module supports properties for the heading and the width.</span></span> <span data-ttu-id="c42c0-112">Emellett támogatja több lábléckategória modul hozzáadását is.</span><span class="sxs-lookup"><span data-stu-id="c42c0-112">It also supports the addition of multiple footer category modules.</span></span> <span data-ttu-id="c42c0-113">Minden hozzáadott lábléckategória modul egy oszlopként jelenik meg a láblécmodulban.</span><span class="sxs-lookup"><span data-stu-id="c42c0-113">Each footer category module that is added is rendered as a column in the footer module.</span></span>
+<span data-ttu-id="c6a10-111">A legtöbb tárolóhoz hasonlóan a láblécmodul a fejlécre és a szélességre vonatkozó tulajdonságokat támogatja.</span><span class="sxs-lookup"><span data-stu-id="c6a10-111">Like most containers, a footer module supports properties for the heading and the width.</span></span> <span data-ttu-id="c6a10-112">Emellett támogatja több lábléckategória modul hozzáadását is.</span><span class="sxs-lookup"><span data-stu-id="c6a10-112">It also supports the addition of multiple footer category modules.</span></span> <span data-ttu-id="c6a10-113">Minden hozzáadott lábléckategória modul egy oszlopként jelenik meg a láblécmodulban.</span><span class="sxs-lookup"><span data-stu-id="c6a10-113">Each footer category module that is added is rendered as a column in the footer module.</span></span>
 
-## <a name="modules-available-in-a-footer-module"></a><span data-ttu-id="c42c0-114">A láblécmodulban elérhető modulok</span><span class="sxs-lookup"><span data-stu-id="c42c0-114">Modules available in a footer module</span></span>
+## <a name="modules-available-in-a-footer-module"></a><span data-ttu-id="c6a10-114">A láblécmodulban elérhető modulok</span><span class="sxs-lookup"><span data-stu-id="c6a10-114">Modules available in a footer module</span></span>
 
-<span data-ttu-id="c42c0-115">**Láblécelemek** – Az láblécelemek modul tartalmaz egy fejlécet, egy képet és egy hivatkozást.</span><span class="sxs-lookup"><span data-stu-id="c42c0-115">**Footer items** – A footer items module can contain a heading, an image, and a link.</span></span> <span data-ttu-id="c42c0-116">A fejléc használható akár önmagában, akár egy képpel és hivatkozással együtt.</span><span class="sxs-lookup"><span data-stu-id="c42c0-116">The heading can be used either alone or in combination with an image and a link.</span></span> <span data-ttu-id="c42c0-117">A lábléc minden hivatkozása konfigurálható úgy, hogy csak szöveggel (például „Kapcsolat” és „Adatvédelem” hivatkozások) vagy szöveggel és képpel (például a közösségi média hivatkozások) rendelkezzen.</span><span class="sxs-lookup"><span data-stu-id="c42c0-117">Every link in the footer can be configured so that it has just text (for example, "Contact Us" and "Privacy" links), or so that it has both text and an image (for example, social media links).</span></span>
+<span data-ttu-id="c6a10-115">**Láblécelemek** – Az láblécelemek modul tartalmaz egy fejlécet, egy képet és egy hivatkozást.</span><span class="sxs-lookup"><span data-stu-id="c6a10-115">**Footer items** – A footer items module can contain a heading, an image, and a link.</span></span> <span data-ttu-id="c6a10-116">A fejléc használható akár önmagában, akár egy képpel és hivatkozással együtt.</span><span class="sxs-lookup"><span data-stu-id="c6a10-116">The heading can be used either alone or in combination with an image and a link.</span></span> <span data-ttu-id="c6a10-117">A lábléc minden hivatkozása konfigurálható úgy, hogy csak szöveggel (például „Kapcsolat” és „Adatvédelem” hivatkozások) vagy szöveggel és képpel (például a közösségi média hivatkozások) rendelkezzen.</span><span class="sxs-lookup"><span data-stu-id="c6a10-117">Every link in the footer can be configured so that it has just text (for example, "Contact Us" and "Privacy" links), or so that it has both text and an image (for example, social media links).</span></span>
 
-<span data-ttu-id="c42c0-118">**Vissza a tetejére** – A vissza a tetejére modul egy hivatkozást biztosít a lap tetejére történő gyors navigáláshoz.</span><span class="sxs-lookup"><span data-stu-id="c42c0-118">**Back to top** – A back to top module provides a link for quick navigation to the top of the page.</span></span> <span data-ttu-id="c42c0-119">Kötelező megadni egy célt.</span><span class="sxs-lookup"><span data-stu-id="c42c0-119">A destination is required.</span></span> <span data-ttu-id="c42c0-120">Az alapértelmezett célérték a \#, amely a felhasználó a lap tetejére viszi.</span><span class="sxs-lookup"><span data-stu-id="c42c0-120">The default destination value is \#, which takes the user to the top of the page.</span></span>
+<span data-ttu-id="c6a10-118">**Vissza a tetejére** – A vissza a tetejére modul egy hivatkozást biztosít a lap tetejére történő gyors navigáláshoz.</span><span class="sxs-lookup"><span data-stu-id="c6a10-118">**Back to top** – A back to top module provides a link for quick navigation to the top of the page.</span></span> <span data-ttu-id="c6a10-119">Kötelező megadni egy célt.</span><span class="sxs-lookup"><span data-stu-id="c6a10-119">A destination is required.</span></span> <span data-ttu-id="c6a10-120">Az alapértelmezett célérték a \#, amely a felhasználó a lap tetejére viszi.</span><span class="sxs-lookup"><span data-stu-id="c6a10-120">The default destination value is \#, which takes the user to the top of the page.</span></span>
 
-## <a name="create-a-footer-module"></a><span data-ttu-id="c42c0-121">Láblécmodul létrehozása</span><span class="sxs-lookup"><span data-stu-id="c42c0-121">Create a footer module</span></span>
+## <a name="create-a-footer-module"></a><span data-ttu-id="c6a10-121">Láblécmodul létrehozása</span><span class="sxs-lookup"><span data-stu-id="c6a10-121">Create a footer module</span></span>
 
-1. <span data-ttu-id="c42c0-122">Lépjen a **Töredékek** pontra, és válassza az **Új** lehetőséget új töredék létrehozásához.</span><span class="sxs-lookup"><span data-stu-id="c42c0-122">Go to **Fragments**, and select **New** to create a new fragment.</span></span>
-1. <span data-ttu-id="c42c0-123">Az **Új töredék** párbeszédpanelen válassza ki a **Tároló** modult, adja meg a töredék nevét, majd kattintson az **OK** gombra.</span><span class="sxs-lookup"><span data-stu-id="c42c0-123">In the **New fragment** dialog box, select the **Container** module, enter a name for the fragment, and then select **OK**.</span></span>
-1. <span data-ttu-id="c42c0-124">Az **Alapértelmezett tároló** helyben válassza a három pont (**…**) gombot, majd válassza az **Modul hozzáadása** elemet.</span><span class="sxs-lookup"><span data-stu-id="c42c0-124">In the **Default container** slot, select the ellipsis (**...**), and then select **Add Module**.</span></span>
-1. <span data-ttu-id="c42c0-125">A **Modul hozzáadása** párbeszédpanelen válassza ki a **Lábléckategória** modult, majd kattintson az **OK** gombra.</span><span class="sxs-lookup"><span data-stu-id="c42c0-125">In the **Add Module** dialog box, select the **Footer category** module, and then select **OK**.</span></span>
-1. <span data-ttu-id="c42c0-126">A **Lábléckategória** helyben válassza a három pont (**…**) gombot, majd válassza a **Modul hozzáadása** elemet.</span><span class="sxs-lookup"><span data-stu-id="c42c0-126">In the **Footer category** slot, select the ellipsis (**...**), and then select **Add Module**.</span></span>
-1. <span data-ttu-id="c42c0-127">A **Modul hozzáadása** párbeszédpanelen válassza ki a **Láblécelem** modult, majd kattintson az **OK** gombra.</span><span class="sxs-lookup"><span data-stu-id="c42c0-127">In the **Add Module** dialog box, select the **Footer item** module, and then select **OK**.</span></span>
-1. <span data-ttu-id="c42c0-128">Válassza ki a **Láblécelem** helyet, majd a jobb oldali tulajdonságok panelen konfigurálja a fejlécet, a hivatkozást, a hivatkozás szövegét, valamint igény szerint a képet.</span><span class="sxs-lookup"><span data-stu-id="c42c0-128">Select the **Footer item** slot, and then, in the properties pane on the right, configure the heading, link and link text, and image as needed.</span></span>
-1. <span data-ttu-id="c42c0-129">További láblécelemek hozzáadásához ismételje meg az 5–7. mindegyikhez.</span><span class="sxs-lookup"><span data-stu-id="c42c0-129">To add more footer items, repeat steps 5 through 7 for each.</span></span>
-1. <span data-ttu-id="c42c0-130">Egy „vissza a tetejére” hivatkozás hozzáadásához a lábléchez, válassza ki a három pont gombot (**...**) a **Lábléckategória** hely esetében, majd válassza a **Modul hozzáadása** elemet.</span><span class="sxs-lookup"><span data-stu-id="c42c0-130">To add a "back to top" link to your footer, select the ellipsis (**...**) in the **Footer category** slot, and then select **Add Module**.</span></span>
-1. <span data-ttu-id="c42c0-131">A **Modul hozzáadása** párbeszédpanelen válassza ki a **Vissza a tetejére** modult, majd kattintson az **OK** gombra.</span><span class="sxs-lookup"><span data-stu-id="c42c0-131">In the **Add Module** dialog box, select the **Back to top** module, and then select **OK**.</span></span>
-1. <span data-ttu-id="c42c0-132">Válassza ki a **Vissza a tetejére** helyet, majd a jobb oldali tulajdonságok panelen konfigurálja szöveget és más modultulajdonságokat igény szerint.</span><span class="sxs-lookup"><span data-stu-id="c42c0-132">Select the **Back to top** slot, and then, in the properties pane on the right, configure the text and other module properties as needed.</span></span>
-1. <span data-ttu-id="c42c0-133">Válassza a **Szerkesztés befejezése** parancsot a töredék ellenőrzéséhez, majd a **Közzététel** elemet a közzétételhez.</span><span class="sxs-lookup"><span data-stu-id="c42c0-133">Select **Finish editing** to check in the fragment, and then select **Publish** to publish it.</span></span>
+1. <span data-ttu-id="c6a10-122">Lépjen a **Töredékek** pontra, és válassza az **Új** lehetőséget új töredék létrehozásához.</span><span class="sxs-lookup"><span data-stu-id="c6a10-122">Go to **Fragments**, and select **New** to create a new fragment.</span></span>
+1. <span data-ttu-id="c6a10-123">Az **Új töredék** párbeszédpanelen válassza ki a **Tároló** modult, adja meg a töredék nevét, majd kattintson az **OK** gombra.</span><span class="sxs-lookup"><span data-stu-id="c6a10-123">In the **New fragment** dialog box, select the **Container** module, enter a name for the fragment, and then select **OK**.</span></span>
+1. <span data-ttu-id="c6a10-124">Az **Alapértelmezett tároló** helyben válassza a három pont (**…**) gombot, majd válassza az **Modul hozzáadása** elemet.</span><span class="sxs-lookup"><span data-stu-id="c6a10-124">In the **Default container** slot, select the ellipsis (**...**), and then select **Add Module**.</span></span>
+1. <span data-ttu-id="c6a10-125">A **Modul hozzáadása** párbeszédpanelen válassza ki a **Lábléckategória** modult, majd kattintson az **OK** gombra.</span><span class="sxs-lookup"><span data-stu-id="c6a10-125">In the **Add Module** dialog box, select the **Footer category** module, and then select **OK**.</span></span>
+1. <span data-ttu-id="c6a10-126">A **Lábléckategória** helyben válassza a három pont (**…**) gombot, majd válassza a **Modul hozzáadása** elemet.</span><span class="sxs-lookup"><span data-stu-id="c6a10-126">In the **Footer category** slot, select the ellipsis (**...**), and then select **Add Module**.</span></span>
+1. <span data-ttu-id="c6a10-127">A **Modul hozzáadása** párbeszédpanelen válassza ki a **Láblécelem** modult, majd kattintson az **OK** gombra.</span><span class="sxs-lookup"><span data-stu-id="c6a10-127">In the **Add Module** dialog box, select the **Footer item** module, and then select **OK**.</span></span>
+1. <span data-ttu-id="c6a10-128">Válassza ki a **Láblécelem** helyet, majd a jobb oldali tulajdonságok panelen konfigurálja a fejlécet, a hivatkozást, a hivatkozás szövegét, valamint igény szerint a képet.</span><span class="sxs-lookup"><span data-stu-id="c6a10-128">Select the **Footer item** slot, and then, in the properties pane on the right, configure the heading, link and link text, and image as needed.</span></span>
+1. <span data-ttu-id="c6a10-129">További láblécelemek hozzáadásához ismételje meg az 5–7. mindegyikhez.</span><span class="sxs-lookup"><span data-stu-id="c6a10-129">To add more footer items, repeat steps 5 through 7 for each.</span></span>
+1. <span data-ttu-id="c6a10-130">Egy „vissza a tetejére” hivatkozás hozzáadásához a lábléchez, válassza ki a három pont gombot (**...**) a **Lábléckategória** hely esetében, majd válassza a **Modul hozzáadása** elemet.</span><span class="sxs-lookup"><span data-stu-id="c6a10-130">To add a "back to top" link to your footer, select the ellipsis (**...**) in the **Footer category** slot, and then select **Add Module**.</span></span>
+1. <span data-ttu-id="c6a10-131">A **Modul hozzáadása** párbeszédpanelen válassza ki a **Vissza a tetejére** modult, majd kattintson az **OK** gombra.</span><span class="sxs-lookup"><span data-stu-id="c6a10-131">In the **Add Module** dialog box, select the **Back to top** module, and then select **OK**.</span></span>
+1. <span data-ttu-id="c6a10-132">Válassza ki a **Vissza a tetejére** helyet, majd a jobb oldali tulajdonságok panelen konfigurálja szöveget és más modultulajdonságokat igény szerint.</span><span class="sxs-lookup"><span data-stu-id="c6a10-132">Select the **Back to top** slot, and then, in the properties pane on the right, configure the text and other module properties as needed.</span></span>
+1. <span data-ttu-id="c6a10-133">Válassza a **Szerkesztés befejezése** parancsot a töredék ellenőrzéséhez, majd a **Közzététel** elemet a közzétételhez.</span><span class="sxs-lookup"><span data-stu-id="c6a10-133">Select **Finish editing** to check in the fragment, and then select **Publish** to publish it.</span></span>
 
-<span data-ttu-id="c42c0-134">Ha azt szeretné, hogy minden lapon megjelenjen a fejléc, hajtsa végre az alábbi lépéseket a webhelyhez létrehozott összes oldalsablon esetében.</span><span class="sxs-lookup"><span data-stu-id="c42c0-134">To help guarantee that a header appears on every page, follow these steps on every page template that is created for the site.</span></span>
+<span data-ttu-id="c6a10-134">Ha azt szeretné, hogy minden lapon megjelenjen a fejléc, hajtsa végre az alábbi lépéseket a webhelyhez létrehozott összes oldalsablon esetében.</span><span class="sxs-lookup"><span data-stu-id="c6a10-134">To help guarantee that a header appears on every page, follow these steps on every page template that is created for the site.</span></span>
 
-1. <span data-ttu-id="c42c0-135">Az **Alapértelmezett** lap **Lábléc** helyén a láblécmodulban adja meg a létrehozott lábléctöredéket.</span><span class="sxs-lookup"><span data-stu-id="c42c0-135">In the **Footer** slot of the **Default page** module, add the footer fragment that you created.</span></span>
-1. <span data-ttu-id="c42c0-136">Válassza a **Szerkesztés befejezése** parancsot a sablon ellenőrzéséhez, majd a **Közzététel** elemet a közzétételhez.</span><span class="sxs-lookup"><span data-stu-id="c42c0-136">Select **Finish editing** to check in the template, and then select **Publish** to publish it.</span></span>
+1. <span data-ttu-id="c6a10-135">Az **Alapértelmezett** lap **Lábléc** helyén a láblécmodulban adja meg a létrehozott lábléctöredéket.</span><span class="sxs-lookup"><span data-stu-id="c6a10-135">In the **Footer** slot of the **Default page** module, add the footer fragment that you created.</span></span>
+1. <span data-ttu-id="c6a10-136">Válassza a **Szerkesztés befejezése** parancsot a sablon ellenőrzéséhez, majd a **Közzététel** elemet a közzétételhez.</span><span class="sxs-lookup"><span data-stu-id="c6a10-136">Select **Finish editing** to check in the template, and then select **Publish** to publish it.</span></span>
 
-<span data-ttu-id="c42c0-137">Ha hozzáadja a töredéket a lapsablonokhoz, akkor segít biztosítani azt, hogy a lábléc minden oldalon megjeleníthető legyen.</span><span class="sxs-lookup"><span data-stu-id="c42c0-137">By adding the fragment to page templates, you help guarantee that the footer is rendered on every page.</span></span>
+<span data-ttu-id="c6a10-137">Ha hozzáadja a töredéket a lapsablonokhoz, akkor segít biztosítani azt, hogy a lábléc minden oldalon megjeleníthető legyen.</span><span class="sxs-lookup"><span data-stu-id="c6a10-137">By adding the fragment to page templates, you help guarantee that the footer is rendered on every page.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="c42c0-138">További erőforrások</span><span class="sxs-lookup"><span data-stu-id="c42c0-138">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="c6a10-138">További erőforrások</span><span class="sxs-lookup"><span data-stu-id="c6a10-138">Additional resources</span></span>
 
-[<span data-ttu-id="c42c0-139">Kezdő csomag áttekintése</span><span class="sxs-lookup"><span data-stu-id="c42c0-139">Starter kit overview</span></span>](starter-kit-overview.md)
+[<span data-ttu-id="c6a10-139">Modulkönyvtár – áttekintés</span><span class="sxs-lookup"><span data-stu-id="c6a10-139">Module library overview</span></span>](starter-kit-overview.md)
 
-[<span data-ttu-id="c42c0-140">Tárolómodul</span><span class="sxs-lookup"><span data-stu-id="c42c0-140">Container module</span></span>](add-container-module.md)
+[<span data-ttu-id="c6a10-140">Tárolómodul</span><span class="sxs-lookup"><span data-stu-id="c6a10-140">Container module</span></span>](add-container-module.md)
 
-[<span data-ttu-id="c42c0-141">Vásárlásmező-modul</span><span class="sxs-lookup"><span data-stu-id="c42c0-141">Buy box module</span></span>](add-buy-box.md)
+[<span data-ttu-id="c6a10-141">Vásárlásmező-modul</span><span class="sxs-lookup"><span data-stu-id="c6a10-141">Buy box module</span></span>](add-buy-box.md)
 
-[<span data-ttu-id="c42c0-142">Kosármodul</span><span class="sxs-lookup"><span data-stu-id="c42c0-142">Cart module</span></span>](add-cart-module.md)
+[<span data-ttu-id="c6a10-142">Kosármodul</span><span class="sxs-lookup"><span data-stu-id="c6a10-142">Cart module</span></span>](add-cart-module.md)
 
-[<span data-ttu-id="c42c0-143">Fizetésmodul</span><span class="sxs-lookup"><span data-stu-id="c42c0-143">Checkout module</span></span>](add-checkout-module.md)
+[<span data-ttu-id="c6a10-143">Pénztármodul</span><span class="sxs-lookup"><span data-stu-id="c6a10-143">Checkout module</span></span>](add-checkout-module.md)
 
-[<span data-ttu-id="c42c0-144">Rendelésmegerősítési modul</span><span class="sxs-lookup"><span data-stu-id="c42c0-144">Order confirmation module</span></span>](order-confirmation-module.md)
+[<span data-ttu-id="c6a10-144">Rendelésmegerősítési modul</span><span class="sxs-lookup"><span data-stu-id="c6a10-144">Order confirmation module</span></span>](order-confirmation-module.md)
 
-[<span data-ttu-id="c42c0-145">Fejlécmodul</span><span class="sxs-lookup"><span data-stu-id="c42c0-145">Header module</span></span>](author-header-module.md)
+[<span data-ttu-id="c6a10-145">Fejlécmodul</span><span class="sxs-lookup"><span data-stu-id="c6a10-145">Header module</span></span>](author-header-module.md)
 
-[<span data-ttu-id="c42c0-146">Láblécmodul</span><span class="sxs-lookup"><span data-stu-id="c42c0-146">Footer module</span></span>](author-footer-module.md)
+[<span data-ttu-id="c6a10-146">Láblécmodul</span><span class="sxs-lookup"><span data-stu-id="c6a10-146">Footer module</span></span>](author-footer-module.md)

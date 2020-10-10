@@ -14,16 +14,16 @@ ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: a6a1fc294bb212481dd2a2d24c108cf7a665a546
-ms.sourcegitcommit: 58d7133ae9909fa205730e3cf4c7fd5a1d5d0b75
+ms.openlocfilehash: ed7ac72d47d5efd60b8a705e7ab0fa7e4edd96a4
+ms.sourcegitcommit: ea335b4536342e496e8b61847b1ae6da3924f94c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "3793201"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "3821133"
 ---
-# <a name="dynamics-365-commerce-learning-catalog"></a><span data-ttu-id="f6043-103">Dynamics 365 Commerce képzési katalógus</span><span class="sxs-lookup"><span data-stu-id="f6043-103">Dynamics 365 Commerce Learning catalog</span></span> 
+# <a name="dynamics-365-commerce-learning-catalog"></a><span data-ttu-id="92a80-103">Dynamics 365 Commerce képzési katalógus</span><span class="sxs-lookup"><span data-stu-id="92a80-103">Dynamics 365 Commerce Learning catalog</span></span> 
 
-<span data-ttu-id="f6043-104">Keresse meg a megfelelő online képzést, személyes workshopokat és rendezvények az Ön szerepéhez, a Dynamics 365 Commerce felhasználójaként.</span><span class="sxs-lookup"><span data-stu-id="f6043-104">Find the right online training, in person workshops, and events for your role as a user of Dynamics 365 Commerce applications.</span></span>
+<span data-ttu-id="92a80-104">Keresse meg a megfelelő online képzést, személyes workshopokat és rendezvények az Ön szerepéhez, a Dynamics 365 Commerce felhasználójaként.</span><span class="sxs-lookup"><span data-stu-id="92a80-104">Find the right online training, in person workshops, and events for your role as a user of Dynamics 365 Commerce applications.</span></span>
 
 <!-- ![Universal Windows Platform (UWP)](images/platform-uwp.png)  -->  
 
@@ -31,117 +31,113 @@ ms.locfileid: "3793201"
     :::column:::
 <!-- ![Universal Windows Platform (UWP)](images/platform-uwp.png)  -->  
 
-    ### <a name="business-and-technical-decision-makers"></a><span data-ttu-id="f6043-105">Üzleti és technikai döntéshozók</span><span class="sxs-lookup"><span data-stu-id="f6043-105">Business and Technical Decision Makers</span></span>
+    ### <a name="business-and-technical-decision-makers"></a><span data-ttu-id="92a80-105">Üzleti és technikai döntéshozók</span><span class="sxs-lookup"><span data-stu-id="92a80-105">Business and Technical Decision Makers</span></span>
 
-    <span data-ttu-id="f6043-106">Ön dönt arról, hogy új technológiákba fektessen be a vállalat?</span><span class="sxs-lookup"><span data-stu-id="f6043-106">Do you decide whether to invest in new technologies?</span></span> 
+    <span data-ttu-id="92a80-106">Ön dönt arról, hogy új technológiákba fektessen be a vállalat?</span><span class="sxs-lookup"><span data-stu-id="92a80-106">Do you decide whether to invest in new technologies?</span></span> 
 
-    [<span data-ttu-id="f6043-107">Üzleti és technikai döntéshozók tanulási katalógus</span><span class="sxs-lookup"><span data-stu-id="f6043-107">Business and Technical Decision Makers Learning Catalog</span></span>](learning-catalog-bdm.md#)
+    [<span data-ttu-id="92a80-107">Üzleti és technikai döntéshozók tanulási katalógus</span><span class="sxs-lookup"><span data-stu-id="92a80-107">Business and Technical Decision Makers Learning Catalog</span></span>](learning-catalog-bdm.md#)
 
-    [<span data-ttu-id="f6043-108">Első lépések</span><span class="sxs-lookup"><span data-stu-id="f6043-108">Get started</span></span>](learning-catalog-bdm.md#get-started)
+    [<span data-ttu-id="92a80-108">Első lépések</span><span class="sxs-lookup"><span data-stu-id="92a80-108">Get started</span></span>](learning-catalog-bdm.md#get-started)
 
     :::column-end:::
     :::column:::
 
-    ### <a name="business-users"></a><span data-ttu-id="f6043-109">Üzleti felhasználók</span><span class="sxs-lookup"><span data-stu-id="f6043-109">Business users</span></span>
+    ### <a name="business-users"></a><span data-ttu-id="92a80-109">Üzleti felhasználók</span><span class="sxs-lookup"><span data-stu-id="92a80-109">Business users</span></span>
 
-    <span data-ttu-id="f6043-110">Éppen egy új alkalmazást kapott használatra?</span><span class="sxs-lookup"><span data-stu-id="f6043-110">Did you just get a new application to use?</span></span> 
+    <span data-ttu-id="92a80-110">Éppen egy új alkalmazást kapott használatra?</span><span class="sxs-lookup"><span data-stu-id="92a80-110">Did you just get a new application to use?</span></span> 
 
-    [<span data-ttu-id="f6043-111">Üzleti felhasználók tanulási katalógusa</span><span class="sxs-lookup"><span data-stu-id="f6043-111">Business Users Learning Catalog</span></span>](learning-catalog-business-user.md)
+    [<span data-ttu-id="92a80-111">Üzleti felhasználók tanulási katalógusa</span><span class="sxs-lookup"><span data-stu-id="92a80-111">Business Users Learning Catalog</span></span>](learning-catalog-business-user.md)
 
-    [<span data-ttu-id="f6043-112">Első lépések</span><span class="sxs-lookup"><span data-stu-id="f6043-112">Get Started</span></span>](learning-catalog-business-user.md#get-started)
+    [<span data-ttu-id="92a80-112">Első lépések</span><span class="sxs-lookup"><span data-stu-id="92a80-112">Get Started</span></span>](learning-catalog-business-user.md#get-started)
 
-    [<span data-ttu-id="f6043-113">Kereskedelem</span><span class="sxs-lookup"><span data-stu-id="f6043-113">Commerce</span></span>](learning-catalog-business-user.md#commerce)
+    [<span data-ttu-id="92a80-113">Kereskedelem</span><span class="sxs-lookup"><span data-stu-id="92a80-113">Commerce</span></span>](learning-catalog-business-user.md#commerce)
 
-    [<span data-ttu-id="f6043-114">e-Kereskedelem</span><span class="sxs-lookup"><span data-stu-id="f6043-114">e-Commerce</span></span>](learning-catalog-business-user.md#e-commerce)
+    [<span data-ttu-id="92a80-114">e-Kereskedelem</span><span class="sxs-lookup"><span data-stu-id="92a80-114">e-Commerce</span></span>](learning-catalog-business-user.md#e-commerce)
 
     :::column-end:::
 :::row-end:::
 :::row:::
     :::column:::
 
-    ### <a name="implementation-project-managers"></a><span data-ttu-id="f6043-115">Megvalósítási projektvezetők</span><span class="sxs-lookup"><span data-stu-id="f6043-115">Implementation Project Managers</span></span>
+    ### <a name="implementation-project-managers"></a><span data-ttu-id="92a80-115">Megvalósítási projektvezetők</span><span class="sxs-lookup"><span data-stu-id="92a80-115">Implementation Project Managers</span></span>
 
-    <span data-ttu-id="f6043-116">Ön felelős a vállalati megvalósítás zökkenőmentes lebonyolításáért?</span><span class="sxs-lookup"><span data-stu-id="f6043-116">Are you in charge of making sure your company’s implementation goes smoothly?</span></span>
+    <span data-ttu-id="92a80-116">Ön felelős a vállalati megvalósítás zökkenőmentes lebonyolításáért?</span><span class="sxs-lookup"><span data-stu-id="92a80-116">Are you in charge of making sure your company’s implementation goes smoothly?</span></span>
 
-    [<span data-ttu-id="f6043-117">Projektmenedzsment-tanulási katalógus megvalósítása</span><span class="sxs-lookup"><span data-stu-id="f6043-117">Implementation Project Manager Learning Catalog</span></span>](learning-catalog-project-manager.md)
+    [<span data-ttu-id="92a80-117">Projektmenedzsment-tanulási katalógus megvalósítása</span><span class="sxs-lookup"><span data-stu-id="92a80-117">Implementation Project Manager Learning Catalog</span></span>](learning-catalog-project-manager.md)
 
-    [<span data-ttu-id="f6043-118">Első lépések</span><span class="sxs-lookup"><span data-stu-id="f6043-118">Get started</span></span>](learning-catalog-project-manager.md#get-started)
+    [<span data-ttu-id="92a80-118">Első lépések</span><span class="sxs-lookup"><span data-stu-id="92a80-118">Get started</span></span>](learning-catalog-project-manager.md#get-started)
 
     :::column-end:::
     :::column:::
 
-    ### <a name="administrators"></a><span data-ttu-id="f6043-119">Rendszergazdák</span><span class="sxs-lookup"><span data-stu-id="f6043-119">Administrators</span></span>
+    ### <a name="administrators"></a><span data-ttu-id="92a80-119">Rendszergazdák</span><span class="sxs-lookup"><span data-stu-id="92a80-119">Administrators</span></span>
 
-    <span data-ttu-id="f6043-120">Gondoskodnia kell a rendszerek és adatok folyamatos áramlásáról, kiépítéséről és biztonságáról?</span><span class="sxs-lookup"><span data-stu-id="f6043-120">Do you need to keep systems and data flowing, provisioned, and secure round-the-clock?</span></span>
+    <span data-ttu-id="92a80-120">Gondoskodnia kell a rendszerek és adatok folyamatos áramlásáról, kiépítéséről és biztonságáról?</span><span class="sxs-lookup"><span data-stu-id="92a80-120">Do you need to keep systems and data flowing, provisioned, and secure round-the-clock?</span></span>
 
-    [<span data-ttu-id="f6043-121">Adminisztrátorok tanulási katalógusa</span><span class="sxs-lookup"><span data-stu-id="f6043-121">Administrators Learning Catalog</span></span>](learning-catalog-administrator.md)
+    [<span data-ttu-id="92a80-121">Adminisztrátorok tanulási katalógusa</span><span class="sxs-lookup"><span data-stu-id="92a80-121">Administrators Learning Catalog</span></span>](learning-catalog-administrator.md)
 
-    [<span data-ttu-id="f6043-122">Első lépések</span><span class="sxs-lookup"><span data-stu-id="f6043-122">Get started</span></span>](learning-catalog-administrator.md#get-started)
+    [<span data-ttu-id="92a80-122">Első lépések</span><span class="sxs-lookup"><span data-stu-id="92a80-122">Get started</span></span>](learning-catalog-administrator.md#get-started)
 
-    [<span data-ttu-id="f6043-123">Kereskedelem</span><span class="sxs-lookup"><span data-stu-id="f6043-123">Commerce</span></span>](learning-catalog-administrator.md#commerce)
+    [<span data-ttu-id="92a80-123">Kereskedelem</span><span class="sxs-lookup"><span data-stu-id="92a80-123">Commerce</span></span>](learning-catalog-administrator.md#commerce)
 
-    [<span data-ttu-id="f6043-124">e-Kereskedelem</span><span class="sxs-lookup"><span data-stu-id="f6043-124">e-Commerce</span></span>](learning-catalog-administrator.md#e-commerce)
+    [<span data-ttu-id="92a80-124">e-Kereskedelem</span><span class="sxs-lookup"><span data-stu-id="92a80-124">e-Commerce</span></span>](learning-catalog-administrator.md#e-commerce)
 
   :::column-end:::
 :::row-end:::
 :::row:::
     :::column:::
 
-    ### <a name="developers"></a><span data-ttu-id="f6043-125">Fejlesztők</span><span class="sxs-lookup"><span data-stu-id="f6043-125">Developers</span></span>
+    ### <a name="developers"></a><span data-ttu-id="92a80-125">Fejlesztők</span><span class="sxs-lookup"><span data-stu-id="92a80-125">Developers</span></span>
 
-    <span data-ttu-id="f6043-126">Kódot kell írnia más adatforrásokkal való integrációhoz, ki kell terjesztenie az alap rendszerfunkciókat vagy egy komplex alkalmazást kell összeállítania?</span><span class="sxs-lookup"><span data-stu-id="f6043-126">Do you need to write code to integrate with other data sources, extend core system functionality, or build a complex application?</span></span>
+    <span data-ttu-id="92a80-126">Kódot kell írnia más adatforrásokkal való integrációhoz, ki kell terjesztenie az alap rendszerfunkciókat vagy egy komplex alkalmazást kell összeállítania?</span><span class="sxs-lookup"><span data-stu-id="92a80-126">Do you need to write code to integrate with other data sources, extend core system functionality, or build a complex application?</span></span>
 
-    [<span data-ttu-id="f6043-127">Fejlesztői képzési katalógus</span><span class="sxs-lookup"><span data-stu-id="f6043-127">Developer Learning Catalog</span></span>](learning-catalog-developer.md)
+    [<span data-ttu-id="92a80-127">Fejlesztői képzési katalógus</span><span class="sxs-lookup"><span data-stu-id="92a80-127">Developer Learning Catalog</span></span>](learning-catalog-developer.md)
 
-    [<span data-ttu-id="f6043-128">Első lépések</span><span class="sxs-lookup"><span data-stu-id="f6043-128">Get started</span></span>](learning-catalog-developer.md#get-started)
+    [<span data-ttu-id="92a80-128">Első lépések</span><span class="sxs-lookup"><span data-stu-id="92a80-128">Get started</span></span>](learning-catalog-developer.md#get-started)
 
-    [<span data-ttu-id="f6043-129">Kereskedelem</span><span class="sxs-lookup"><span data-stu-id="f6043-129">Commerce</span></span>](learning-catalog-developer.md#commerce)
+    [<span data-ttu-id="92a80-129">Kereskedelem</span><span class="sxs-lookup"><span data-stu-id="92a80-129">Commerce</span></span>](learning-catalog-developer.md#commerce)
 
     :::column-end:::
     :::column:::
 
-    ### <a name="functional-consultants"></a><span data-ttu-id="f6043-130">Funkcionális konzultánsok</span><span class="sxs-lookup"><span data-stu-id="f6043-130">Functional consultants</span></span>
+    ### <a name="functional-consultants"></a><span data-ttu-id="92a80-130">Funkcionális konzultánsok</span><span class="sxs-lookup"><span data-stu-id="92a80-130">Functional consultants</span></span>
 
-    <span data-ttu-id="f6043-131">Ön adott üzleti tartomány megvalósítási szakértője?</span><span class="sxs-lookup"><span data-stu-id="f6043-131">Are you an implementation expert for a business domain?</span></span> 
+    <span data-ttu-id="92a80-131">Ön adott üzleti tartomány megvalósítási szakértője?</span><span class="sxs-lookup"><span data-stu-id="92a80-131">Are you an implementation expert for a business domain?</span></span> 
 
-    [<span data-ttu-id="f6043-132">Funkcionális alkalmazás konzulens tanulási katalógus</span><span class="sxs-lookup"><span data-stu-id="f6043-132">Functional Application Consultant Learning Catalog</span></span>](learning-catalog-functional-consultant.md)
+    [<span data-ttu-id="92a80-132">Funkcionális alkalmazás konzulens tanulási katalógus</span><span class="sxs-lookup"><span data-stu-id="92a80-132">Functional Application Consultant Learning Catalog</span></span>](learning-catalog-functional-consultant.md)
 
-    [<span data-ttu-id="f6043-133">Első lépések</span><span class="sxs-lookup"><span data-stu-id="f6043-133">Get started</span></span>](learning-catalog-functional-consultant.md#get-started)
+    [<span data-ttu-id="92a80-133">Első lépések</span><span class="sxs-lookup"><span data-stu-id="92a80-133">Get started</span></span>](learning-catalog-functional-consultant.md#get-started)
 
-    [<span data-ttu-id="f6043-134">Kereskedelem</span><span class="sxs-lookup"><span data-stu-id="f6043-134">Commerce</span></span>](learning-catalog-functional-consultant.md#commerce)
+    [<span data-ttu-id="92a80-134">Kereskedelem</span><span class="sxs-lookup"><span data-stu-id="92a80-134">Commerce</span></span>](learning-catalog-functional-consultant.md#commerce)
 
-    [<span data-ttu-id="f6043-135">e-Kereskedelem</span><span class="sxs-lookup"><span data-stu-id="f6043-135">e-Commerce</span></span>](learning-catalog-functional-consultant.md#e-commerce)
+    [<span data-ttu-id="92a80-135">e-Kereskedelem</span><span class="sxs-lookup"><span data-stu-id="92a80-135">e-Commerce</span></span>](learning-catalog-functional-consultant.md#e-commerce)
 
     :::column-end:::
 :::row-end:::
 :::row:::
     :::column:::
 
-    ### <a name="partner-sales-and-marketing"></a><span data-ttu-id="f6043-136">Partnerértékesítések és marketing</span><span class="sxs-lookup"><span data-stu-id="f6043-136">Partner Sales and Marketing</span></span>
+    ### <a name="partner-sales-and-marketing"></a><span data-ttu-id="92a80-136">Partnerértékesítések és marketing</span><span class="sxs-lookup"><span data-stu-id="92a80-136">Partner Sales and Marketing</span></span>
 
-    <span data-ttu-id="f6043-137">Az Ön felelőssége segítséget nyújtani ügyfeleinek a megfelelő megoldás megvásárlásában?</span><span class="sxs-lookup"><span data-stu-id="f6043-137">Are you responsible for helping your customers buy the right solution?</span></span> 
+    <span data-ttu-id="92a80-137">Az Ön felelőssége segítséget nyújtani ügyfeleinek a megfelelő megoldás megvásárlásában?</span><span class="sxs-lookup"><span data-stu-id="92a80-137">Are you responsible for helping your customers buy the right solution?</span></span> 
 
-    [<span data-ttu-id="f6043-138">Microsoft partner értékesítési és marketing tanulás katalógus</span><span class="sxs-lookup"><span data-stu-id="f6043-138">Microsoft Partner Sales and Marketing Learning Catalog</span></span>](learning-catalog-partner-sales.md)
+    [<span data-ttu-id="92a80-138">Microsoft partner értékesítési és marketing tanulás katalógus</span><span class="sxs-lookup"><span data-stu-id="92a80-138">Microsoft Partner Sales and Marketing Learning Catalog</span></span>](learning-catalog-partner-sales.md)
 
-    [<span data-ttu-id="f6043-139">Első lépések</span><span class="sxs-lookup"><span data-stu-id="f6043-139">Get started</span></span>](learning-catalog-partner-sales.md#get-started)
-
-    [<span data-ttu-id="f6043-140">Kereskedelem</span><span class="sxs-lookup"><span data-stu-id="f6043-140">Commerce</span></span>](learning-catalog-partner-sales.md#commerce)
-
-    [<span data-ttu-id="f6043-141">e-Kereskedelem</span><span class="sxs-lookup"><span data-stu-id="f6043-141">e-Commerce</span></span>](learning-catalog-partner-sales.md#e-commerce)
+    [<span data-ttu-id="92a80-139">Első lépések</span><span class="sxs-lookup"><span data-stu-id="92a80-139">Get started</span></span>](learning-catalog-partner-sales.md#get-started)
 
     :::column-end:::
 
     :::column:::
 
-    ### <a name="solution-architects"></a><span data-ttu-id="f6043-142">Megoldástervezők</span><span class="sxs-lookup"><span data-stu-id="f6043-142">Solution architects</span></span>
+    ### <a name="solution-architects"></a><span data-ttu-id="92a80-140">Megoldástervezők</span><span class="sxs-lookup"><span data-stu-id="92a80-140">Solution architects</span></span>
 
-    <span data-ttu-id="f6043-143">Olyan megoldásokat tervez, amelyek megfelelnek ügyfelei igényeinek és pénztárcájának?</span><span class="sxs-lookup"><span data-stu-id="f6043-143">Do you design solutions that meet your customers' needs and budgets?</span></span>
+    <span data-ttu-id="92a80-141">Olyan megoldásokat tervez, amelyek megfelelnek ügyfelei igényeinek és pénztárcájának?</span><span class="sxs-lookup"><span data-stu-id="92a80-141">Do you design solutions that meet your customers' needs and budgets?</span></span>
 
-    [<span data-ttu-id="f6043-144">Solution Architects tanulási katalógus</span><span class="sxs-lookup"><span data-stu-id="f6043-144">Solution Architects Learning Catalog</span></span>](learning-catalog-solution-architect.md)
+    [<span data-ttu-id="92a80-142">Solution Architects tanulási katalógus</span><span class="sxs-lookup"><span data-stu-id="92a80-142">Solution Architects Learning Catalog</span></span>](learning-catalog-solution-architect.md)
 
-    [<span data-ttu-id="f6043-145">Első lépések</span><span class="sxs-lookup"><span data-stu-id="f6043-145">Get started</span></span>](learning-catalog-solution-architect.md#get-started)
+    [<span data-ttu-id="92a80-143">Első lépések</span><span class="sxs-lookup"><span data-stu-id="92a80-143">Get started</span></span>](learning-catalog-solution-architect.md#get-started)
 
-    [<span data-ttu-id="f6043-146">Kereskedelem</span><span class="sxs-lookup"><span data-stu-id="f6043-146">Commerce</span></span>](learning-catalog-solution-architect.md#commerce)
+    [<span data-ttu-id="92a80-144">Kereskedelem</span><span class="sxs-lookup"><span data-stu-id="92a80-144">Commerce</span></span>](learning-catalog-solution-architect.md#commerce)
 
     :::column-end:::
 :::row-end:::
