@@ -3,7 +3,7 @@ title: Értékelések és vélemények modulok
 description: Ez a témakör a Microsoft Dynamics 365 Commerce termékrészletek oldalain használt minősítési és az értékelési modulokat tárgyalja.
 author: gvrmohanreddy
 manager: annbe
-ms.date: 02/17/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: Release 10.0.6
-ms.openlocfilehash: ee2a2a781537b592fb5f80ce424a7331c4e21d41
-ms.sourcegitcommit: 0dace221e8874021dd212271567666f717d39793
+ms.openlocfilehash: 85fb1272103eed7d6e44635b7c20438471d96b34
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "3071866"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817730"
 ---
 # <a name="ratings-and-reviews-modules"></a>Értékelések és vélemények modulok
 
@@ -87,15 +87,15 @@ A termékvélemények listája modul tartalmaz egy olyan helyet, ahol hozzáadha
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[Kezdő csomag áttekintése](starter-kit-overview.md)
+[Modulkönyvtár – áttekintés](starter-kit-overview.md)
 
 [Tárolómodul](add-container-module.md)
 
 [Kosármodul](add-cart-module.md)
 
-[Fizetésmodul](add-checkout-module.md)
+[Pénztármodul](add-checkout-module.md)
 
-[Rendelésmegerősítés modul](order-confirmation-module.md)
+[Rendelésmegerősítési modul](order-confirmation-module.md)
 
 [Fejlécmodul](author-header-module.md)
 

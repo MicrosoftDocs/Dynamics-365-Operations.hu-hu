@@ -3,7 +3,7 @@ title: Felhasználói bejelentkezéshez használt egyéni lapok beállítása
 description: Ez a témakör azt mutatja be, hogyan lehet egyéni lapokat létrehozni a Microsoft Dynamics 365 Commerce alkalmazásban, amelyek az Azure Active Directory (Azure AD) cég és ügyfél (B2C) közötti bérlők felhasználóinak személyre szabott bejelentkezésit kezelik.
 author: brianshook
 manager: annbe
-ms.date: 07/02/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e9e78a4d6dc4189c927d9ef321f1eb5a6c120ee2
-ms.sourcegitcommit: adf196c51e2b6f532d99c177b4c6778cea8a2efc
+ms.openlocfilehash: 0b54bf6234dcb87c84b21259c30ca5c321869adf
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "3533459"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817306"
 ---
 # <a name="set-up-custom-pages-for-user-sign-ins"></a>Felhasználói bejelentkezéshez használt egyéni oldalak beállítása
 
@@ -181,13 +181,13 @@ Az „Új jelszó létrehozása” irányelvnek az egyéni lap információival 
 
 ## <a name="customize-default-text-strings-for-labels-and-descriptions"></a>Címkék és leírások alapértelmezett szöveges karakterláncainak testreszabása
 
-A kezdő csomagban a bejelentkezési modulok a címkék és leírások alapértelmezett szövegével kerülnek előre kitöltésre. Ezeket a karakterláncokat testreszabhatja a szoftverfejlesztői készletben (SDK) a bejelentkezési modul global.json fájljában található értékek frissítésével.
+A modulkönyvtárban a bejelentkezési modulok a címkék és leírások alapértelmezett szövegével kerülnek előre kitöltésre. Ezeket a karakterláncokat testreszabhatja a szoftverfejlesztői készletben (SDK) a bejelentkezési modul global.json fájljában található értékek frissítésével.
 
 Az elfelejtett jelszó hivatkozásának alapértelmezett szövege például **Elfelejtette a jelszót?**. A következőkben látható ez az alapértelmezett szöveg a bejelentkezési oldalon.
 
 ![Alapértelmezett szöveg a bejelentkezési oldalon található elfelejtett jelszó hivatkozáshoz](./media/B2C_SignUp_ModuleFace.png)
 
-A kezdőkészlet bejelentkezési moduljának global.json fájljában azonban szerkesztheti a szöveget az **Elfelejtett jelszó?** értékre, ahogy az a következő ábrán látható.
+A modulkönyvtár bejelentkezési moduljának global.json fájljában azonban szerkesztheti a szöveget az **Elfelejtett jelszó?** értékre, ahogy az a következő ábrán látható.
 
 ![Frissített hivatkozásszöveg a bejelentkezési modul global.json fájljában](./media/B2C_CustomizingStringsForModule.png)
 

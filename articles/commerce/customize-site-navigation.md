@@ -3,7 +3,7 @@ title: Webhely-navigáció testreszabása
 description: Ez a témakör azt mutatja be, hogyan lehet testreszabott online navigációs hierarchiát létrehozni a böngészésre szánt termékek rendszerezéséhez a Microsoft Dynamics 365 Commerce webhelyén.
 author: bicyclingfool
 manager: annbe
-ms.date: 04/14/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: ae7696dcb5cdd99cd46b89ed1de1b03c16146e2d
-ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
+ms.openlocfilehash: c2b6a7a3b35873e80be391c627d0397fd6398a99
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "3269659"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817230"
 ---
 # <a name="customize-site-navigation"></a>Webhely-navigáció testreszabása
 
@@ -81,7 +81,7 @@ Ha a navigációs hierarchiáját elérhetővé szeretné tenni az online kiraka
 Ha meg szeretné jeleníteni a kategóriahierarchiát az online kirakatában, akkor egy sablon vagy töredék megfelelő helyén egy navigációs menü modult kell hozzáadnia. A navigációs menü modul ezt követően megmutatja a navigációs hierarchiát, feltéve, hogy a navigációs hierarchiát közzétette a csatornán, amelyhez a webhelye hozzá van kötve.
 
 > [!NOTE]
-> Az áruház kezdőcsomagban található navigációs menü modul lehetővé teszi a felhasználók számára, hogy csak olyan kategóriákba navigáljanak, amelyeknél nincsenek alkategóriák. Ha a vevők olyan kategóriákhoz szeretnének navigálni, amelyek rendelkeznek alkategóriákkal, akkor testre kell szabnia a navigációs menü modulját.
+> A modulkönyvtárban található navigációs menü modul lehetővé teszi a felhasználók számára, hogy csak olyan kategóriákba navigáljanak, amelyeknél nincsenek alkategóriák. Ha a vevők olyan kategóriákhoz szeretnének navigálni, amelyek rendelkeznek alkategóriákkal, akkor testre kell szabnia a navigációs menü modulját.
 
 ## <a name="add-custom-navigation-options"></a>Egyéni navigációs beállítások hozzáadása
 

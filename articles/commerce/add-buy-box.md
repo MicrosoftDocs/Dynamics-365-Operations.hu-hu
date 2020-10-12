@@ -3,7 +3,7 @@ title: Vásárlásmező modul
 description: Ez a témakör ismerteti a Vásárlásmező modulok működését és bemutatja, hogyan tudjuk hozzáadni azokat az egyes webhelyekhez, a Dynamics 365 Commerce segítségével.
 author: anupamar-ms
 manager: annbe
-ms.date: 08/31/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 6556ee8acf1e24a9f6ceddb622960cb3ac891852
-ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
+ms.openlocfilehash: e07bf02f10c943947fdf9ed3333373b859ff5b6c
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "3761297"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817085"
 ---
 # <a name="buy-box-module"></a>Vásárlásmező modul
 
@@ -75,9 +75,12 @@ A vásárlásmező-modulok következő beállításai konfigurálhatók a **Webh
 - **Készlet** – A készletbeállítások alkalmazásával kapcsolatban a következő témakör tartalmaz további tájékoztatást: [Készletbeállítások alkalmazása](inventory-settings.md).
 - **Hozzáadás a kosárhoz** – Ezzel a tulajdonsággal lehet meghatározni, mi történjen, miután egy cikket a kosárhoz adtak. A lehetséges értékek **Navigálás a kosárhoz**, **Ne navigáljon a kosárhoz** és **Értesítések megjelenítése**. Ha az érték **Navigáció a kosárhoz**, akkor a felhasználók a kosár oldalra lesznek küldve, miután hozzáadtak egy cikket. Ha az érték **Ne navigáljon a kosárhoz**, akkor a felhasználók nem lesznek a kosár oldalra küldve, miután hozzáadtak egy cikket. Ha az érték az **Értesítések megjelenítése**, akkor a felhasználók visszaigazoló értesítést kapnak és tovább böngészhetnek a termék részletei oldalon. 
 
-    A következő kép egy példát mutat egy „kosárhoz adva” visszaigazolási értesítésre a Fabrikam oldalon.
+> [!IMPORTANT]
+> A **Hozzáadás a kosárhoz** webhely beállításai a Dynamics 365 Commerce 10.0.11-es kiadásában érhetők el. Ha a Dynamics 365 Commerce egy korábbi verziójáról frissít, akkor manuálisan kell frissítenie az appsettings.json fájlt. Az appsettings.json fájlok frissítésével kapcsolatos tudnivalókat lásd az [SDK- és modulkönyvtár-frissítések](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file) témakörben. 
 
-    ![Példa egy értesítési modulra](./media/ecommerce-addtocart-notifications.PNG)
+A következő kép egy példát mutat egy „kosárhoz adva” visszaigazolási értesítésre a Fabrikam oldalon.
+
+![Példa egy értesítési modulra](./media/ecommerce-addtocart-notifications.PNG)
 
 ## <a name="commerce-scale-unit-interaction"></a>Commerce Scale Unit-interakció
 
@@ -111,7 +114,7 @@ A vásárlásmező modul új oldalra való felvételéhez és a kötelező tulaj
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[Kezdőcsomag áttekintése](starter-kit-overview.md)
+[Modulkönyvtár – áttekintés](starter-kit-overview.md)
 
 [Üzletválasztó modul](store-selector.md)
 
@@ -129,6 +132,8 @@ A vásárlásmező modul új oldalra való felvételéhez és a kötelező tulaj
 
 [Láblécmodul](author-footer-module.md)
 
-[Közösségi megosztás modul](social-share-module.md)
+[Közösségi megosztási modul](social-share-module.md)
 
 [Kiskereskedelmi csatornák készletelérhetőségének kiszámítása](calculated-inventory-retail-channels.md)
+
+[SDK- és modulkönyvtár-frissítések](e-commerce-extensibility/sdk-updates.md)

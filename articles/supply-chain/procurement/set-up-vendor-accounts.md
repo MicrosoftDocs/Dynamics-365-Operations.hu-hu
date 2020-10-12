@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b2ea87e4147757a584e38b819faa8a0423ec0028
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 59c8071ed20740f81854d29e21f87b2e8650d10f
+ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3216078"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3893161"
 ---
 # <a name="set-up-vendor-accounts"></a>Szállítókódok beállítása
 
@@ -66,7 +66,7 @@ Szállítói kapcsolattartókat előröl kezdve is létrehozhat. Másik lehetős
 
 Kapcsolattartás rögzítése nem törölhető, ha egy dokumentumra hivatkozik a kapcsolattartási adat. Ehelyett inaktiválhatja a kapcsolattartót.  
 
-A szállítói kapcsolattartókat hozzáadhatja a Microsoft Office 365 személyes kapcsolattartókhoz. Azonban először be kell állítania a Supply Chain Management és Office 365 közötti szinkronizálást mind Microsoft Exchange Server szinkronizálásban, mind a Microsoft Outlook beállítási varázslóban.
+A szállítói kapcsolattartókat hozzáadhatja a személyes kapcsolattartókhoz a Microsoft 365-ben. Azonban először be kell állítania a Supply Chain Management és a Microsoft 365 közötti szinkronizálást mind a Microsoft Exchange Server szinkronizálásban, mind a Microsoft Outlook beállítási varázslóban.
 
 ## <a name="vendors-in-different-legal-entities"></a>Szállítók különböző jogi személyekként
 Ha a szállító csak egy jogi személyként van regisztrálva szervezetében, és más jogi személyeket kell regisztrálni ugyanahhoz a szállítóhoz, használhatja a **Szállító hozzáadása egy másik jogi személyhez** lapot, hogy konfigurálja a szállítót, hogy áll egy másik jogi személlyel üzletelhessen. Válasszon egy szállítói csoportot, egy pénznemet, és a szállító várakoztatási állapotát a kijelölt jogi személyhez.  

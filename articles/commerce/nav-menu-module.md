@@ -3,7 +3,7 @@ title: Navigációs menü modulja
 description: Ez a témakör a navigációs menü modulokkal foglalkozik, és bemutatja, hogy hogyan lehet őket hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: anupamar-ms
 manager: annbe
-ms.date: 08/31/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 9f66bbe7bf436ab6360dda7d92d6d51e47eedf16
-ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
+ms.openlocfilehash: 91239bd1db3f5819b7ad8d45ccfd8ab0d88b1b41
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "3761394"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817874"
 ---
 # <a name="navigation-menu-module"></a>Navigációs menü modulja
 
@@ -58,7 +58,7 @@ A navigációs menü modulnak a fejléc-modulba való felvételével kapcsolatos
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[Kezdőcsomag áttekintése](starter-kit-overview.md)
+[Modulkönyvtár – áttekintés](starter-kit-overview.md)
 
 [Vásárlásmező-modul](add-buy-box.md)
 

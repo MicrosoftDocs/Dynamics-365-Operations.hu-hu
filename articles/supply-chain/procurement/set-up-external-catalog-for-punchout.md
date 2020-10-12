@@ -1,6 +1,6 @@
 ---
-title: Állítson be külső katalógust a PunchOut e-beszerzés számára
-description: Ez a témakör egy külső katalógus (punchout-katalógus) használatát mutatja be, amelynek révén információt gyűjt egy szállítótól, hozzáadja egy igényléshez.
+title: Külső katalógus beállítása a PunchOut e-beszerzés számára
+description: Ez a témakör egy külső katalógus PuncOut-katalógus használatát mutatja be, amelynek révén információt gyűjt egy szállítótól, hozzáadja egy igényléshez.
 author: mkirknel
 manager: tfehr
 ms.date: 11/02/2017
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 28c9152996b7efc84b4259bd7323411df0b62258
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 7aecc2c4786a1912bf5ae44f3949428c778f1df9
+ms.sourcegitcommit: b281ac04157f6ccbd159fc89f58910b430a3b6a9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207807"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "3826828"
 ---
-# <a name="set-up-an-external-catalog-for-punchout-eprocurement"></a>Állítson be külső katalógust a PunchOut e-beszerzés számára
+# <a name="set-up-an-external-catalog-for-punchout-e-procurement"></a>Külső katalógus beállítása a PunchOut e-beszerzés számára
 
 [!include [banner](../includes/banner.md)]
 
@@ -81,12 +81,13 @@ Az alábbiakban megtalálja a sablonban szereplő címkék leírását:
 |< Header >< Sender >< Credential >< Identity >< /Identity> | A vevő vállalatának azonosítója.|
 |< Header >< Sender >< Credential >< SharedSecret >< /SharedSecret >|A vevő vállalatának közös titkos kulcsa.|
 |< Request deploymentMode=”” >|A teszt vagy az éles telepítés.|
-|< Request >< PunchOutSetupRequest >< SupplierSetup >< URL >< /URL>|A szállító külső katalógus végpontjának URL-címe.|
+|< Request >< PunchOutSetupRequest >< SupplierSetup >< URL >< /URL>|A szállító PunchOut-végpontjának URL-címe.|
 
 ### <a name="extrinsic-elements"></a>Külső elemek
 
-A külső elem további információt jelent, például egy olyan felhasználónév, amely a külső katalógust használó felhasználónak felel meg. A külső elem beállítása a külső katalógus használatakor történik, és elküldhető a beállításkérési üzenetben.
-Megtörténhet, hogy a szállítónál követelmény áll fenn egy a beállítási kérelemben levő külső elem fogadása tekintetében. Ebben az esetben hozzá kell adni a külső elemet a külső elemek listájához az **Üzenetformátum** részben a **Külső katalógus** lapon. Olyan nevet adjon a külső elemnek, amelyet a szállító felismer, és meg tudja feleltetni egy értéknek. A lehetséges értékek a következők: Felhasználónév, Felhasználói e-mail vagy Véletlenszerű érték.
+A külső elem további információt jelent, például egy olyan felhasználónév, amely a külső katalógust használó felhasználónak felel meg. A külső elem beállítása a PunchOut használatakor történik, és elküldhető a beállításkérési üzenetben.
+Megtörténhet, hogy a szállítónál követelmény áll fenn egy a beállítási kérelemben levő külső elem fogadása tekintetében. Ebben az esetben hozzá kell adni a külső elemet a külső elemek listájához az **Üzenetformátum** részben a **Külső katalógus** lapon.
+Olyan nevet adjon a külső elemnek, amelyet a szállító felismer, és meg tudja feleltetni egy értéknek. A lehetséges értékek a következők: Felhasználónév, Felhasználói e-mail vagy Véletlenszerű érték.
 A cXML-protokollal kapcsolatos további tudnivalókat lásd: [cXML.org website](http://cxml.org/).
 
 ## <a name="post-back-message"></a>Visszajelzési üzenet
@@ -109,3 +110,7 @@ Törölje a külső katalógust a lapon lévő Törlés művelettel.
 
 A külső szállítói katalógus nem törölhető, ha egy terméket kért a külső szállítói katalógusból. Ehelyett a külső szállítói katalógus állapota inaktívra vált. Ha szeretné megszüntetni, de nem szeretné törölni a külső szállítói katalógus webhelyéhez való hozzáférést, állítsa a külső katalógus állapotát inaktívra.
 
+## <a name="additional-resources"></a>További erőforrások
+
+- [Beszerzési cXML-fejlesztések](purchasing-cxml-enhancements.md)
+- [Külső katalógus használatának engedélyezése a PunchOut e-beszerzés számára](use-external-catalogs-for-punchout.md)

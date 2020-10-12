@@ -1,7 +1,7 @@
 ---
 title: Továbbfejlesztett banki egyeztetés importálásának beállítása
 description: A Továbbfejlesztett banki egyeztetés funkció lehetővé teszi Önnek az elektronikus banki kivonatok és az automatikus egyeztetés importálását a Microsoft Dynamics 365 Finance rendszer banki tranzakcióiba. Ez a cikk ismerteti, hogyan állítható be az importálás az Ön banki kivonataihoz.
-author: ShylaThompson
+author: panolte
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: 106853
 ms.assetid: 45dae275-ea45-4c7e-b38f-89297c7b5352
 ms.search.region: Global
-ms.author: saraschi
+ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4d9a2f6efad6b8ddf3a445fe7831244e161c35d5
-ms.sourcegitcommit: dd960cf07d8be791fd27c7bb72e6baa2d63ccd51
+ms.openlocfilehash: 45f997a91701e3fc63278cdba3479dec9dc7a467
+ms.sourcegitcommit: 74b10104338222a945684d841d60ab4b8e570168
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "2578195"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "3899666"
 ---
 # <a name="set-up-the-advanced-bank-reconciliation-import-process"></a>Továbbfejlesztett banki egyeztetés importálásának beállítása
 

@@ -86,6 +86,8 @@
               href: data-entities/integration-overview.md
             - name: Prioritásalapú szabályozás
               hreF: data-entities/priority-based-throttling.md
+            - name: Prioritásalapú szabályozás GYIK
+              href: data-entities/throttling-faq.md
             - name: Adatintegrációs API-k
               items:
                 - name: Adatkezelési csomag REST API-ja
@@ -154,6 +156,8 @@
                                   href: data-entities/dual-write/enable-entity-map.md
                             - name: Pénznem-adattípus áttelepítése a kettős íráshoz
                               href: data-entities/dual-write/currrency-decimal-places.md
+                            - name: Az értékesítési rendelés állapotmezőihez tartozó leképezés beállítása
+                              href: data-entities/dual-write/sales-status-map.md
                         - name: A kettős írás kezelése
                           items:
                             - name: Entitás- és mezőleképezések testreszabása
@@ -522,7 +526,7 @@
                       href: deployment/onprem-reuseadfs.md
                 - name: Helyi ügynök
                   items:
-                    - name: AD FS Office 365 kompatibilitása
+                    - name: AD FS és Microsoft 365 kompatibilitása
                       href: deployment/onprem-adfscompatibility.md
                     - name: Helyi ügynök telepítés előtti és telepítés utáni parancsfájljai
                       href: lifecycle-services/pre-post-scripts.md
@@ -627,9 +631,7 @@
                 - name: Fejlesztői eszközökkel kapcsolatos oktatóanyag
                   href: dev-tools/introduction-visual-studio.md
                 - name: Alkalmazás-ellenőrző
-                  items:
-                    - name: BaseX telepítése az alkalmazás-ellenőrzőhöz
-                      href: dev-tools/install-basex.md
+                  href: dev-tools/application-checker.md
                 - name: Alkalmazásböngésző
                   href: dev-tools/application-explorer.md
                 - name: Projektek létrehozása és hibakeresés
@@ -1368,6 +1370,24 @@
                       href: mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluedesign.md
                     - name: ValueMetadata típus
                       href: mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluemetadata.md
+        - name: Folyamatautomatizálási keretrendszer
+          items:
+            - name: Folyamatautomatizálási keretrendszer fejlesztése
+              href: process-automation/process-automation-framework.md
+            - name: Típus regisztrációja
+              href: process-automation/type-registration.md
+            - name: Sorozat regisztrációja
+              href: process-automation/series-registration.md
+            - name: Folyamatparaméterek
+              href: process-automation/process-parameters.md
+            - name: Felhasználó által konfigurálható lekérdezések
+              href: process-automation/user-queries.md
+            - name: Folyamat futtatása
+              href: process-automation/run-process.md
+            - name: Eredmények és üzenetek naplózása
+              href: process-automation/log-results.md
+            - name: A felhasználói felület testreszabása
+              href: process-automation/ui-customization.md
         - name: Regression Suite Automation Tool
           items:
             - name: Regression Suite Automation Tool áttekintése
@@ -1395,7 +1415,7 @@
             - name: Fejlesztés és kiadás
               href: lcs-solutions/lcs-solutions-app-source.md
             - name: Állapot és közzététel
-              href: lcs-solutions/marketing-content-lcs-solutions.md
+              href: /azure/marketplace/partner-center-portal/create-new-operations-offer
             - name: Módszertanok hozzáadása
               href: lcs-solutions/methodologies-lcs-solutions.md
             - name: Üzletifolyamat-modellező könyvtárak beállítása

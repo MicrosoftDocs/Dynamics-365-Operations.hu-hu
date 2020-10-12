@@ -3,7 +3,7 @@ title: Többcsatornás fizetések áttekintése
 description: Ez a témakör áttekintést nyújt a többcsatornás fizetésekről a Dynamics 365 Commerce szolgáltatásban.
 author: rubendel
 manager: AnnBe
-ms.date: 07/21/2020
+ms.date: 09/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 8.1.3
-ms.openlocfilehash: 2127eb60a82bef8c6b5f5e9a917160331c483649
-ms.sourcegitcommit: 59fb179c770c799918f624cf345848fd4202bbdd
+ms.openlocfilehash: 80eaf36fb382e0ebe0a66383ea17ab76faa07dfa
+ms.sourcegitcommit: 084eda1d5503be83e97e2e428e67ef5393535fab
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "3613177"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "3819813"
 ---
 # <a name="omni-channel-payments-overview"></a>Többcsatornás fizetések áttekintése
 
@@ -92,6 +92,9 @@ A következő többcsatornás kifizetési forgatókönyvek támogatottak:
 - Vásárlás a hívásközpontban, felvétel az üzletben
 - Vásárlás az „A” üzletben, felvétel a „B” üzletben
 - Vásárlás az „A” üzletben, kiszállítás a vevőnek
+
+    > [!NOTE]
+    > A hívásközpontban a „normál” fizetési funkcióhoz hozzárendelt kifizetéseket az **Előre fizetés** = **Igen** értékre kell állítani, hogy az tükröződjön az esedékes összegben, amikor előhívják a rendelést a pénztárban. A „Normál” típusú nem előre fizetett fizetéseket nem ismeri fel a program, ha a rendelést a pénztárban előhívják. 
 
 Az említett forgatókönyvek különböző változatai szintén támogatottak. Például egy online rendelés tartalmazhat olyan sorokat is, amelyeket kiszállítanak a vevőnek, és olyan sorokat is, amelyeket az üzletben vesznek fel. Minden rendelésteljesítési lehetőség támogatott a többcsatornás fizetéseken keresztül. 
 
@@ -190,8 +193,8 @@ Kövesse az alábbi lépéseket a forgatókönyv futtatásához.
 2. A **Tranzakció** oldalon adja a Karen Berg elemet a tranzakcióhoz a számbillentyűzeten a **2001** értéket megadva.
 3. Adjon egy vagy több sort a tranzakcióhoz.
 4. Válassza a **Rendelések** elemet a rendelési beállítások megtekintéséhez.
-5. Válassza az **Összes felvétele** elemet, majd amikor a rendszer felkéri, válassza a **Vevői rendelés** lehetőséget.
-6. A keresési sávon adja meg a **Seattle** értéket, majd válassza átvételhez a **Seattle** üzletet. 
+5. Válassza az **Összes szállítása** elemet, majd amikor a rendszer felkéri, válassza a **Vevői rendelés** lehetőséget.
+6. A szállítási mód lapon válassza ki a **Standard egynapos** beállítást, majd az **OK** gombra kattintva fogadja el a mai dátumot a szállítási dátumként. 
 7. Az **OK** gombra kattintva elfogadja az aktuális dátumot a felvételi dátumként.
 8. Válassza a **Fizetési kártya** elemet a fizetés indításához.
 9. Terhelje a kártyás fizetést a letéthez esedékes összegre. 
@@ -233,5 +236,5 @@ Ha egy olyan rendelést, amelynél több fizetőeszköz és több sor van felvé
 
 - [Kifizetésekkel kapcsolatos GYIK](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
 - [Dynamics 365 fizetési összekötő az Adyen szolgáltatáshoz](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3)
-- [BOPIS konfigurálása Dynamics 365 Commerce értékelési környezetben](https://docs.microsoft.com/en-us/dynamics365/commerce/cpe-bopis)
+- [BOPIS konfigurálása Dynamics 365 Commerce értékelési környezetben](https://docs.microsoft.com/dynamics365/commerce/cpe-bopis)
 

@@ -3,7 +3,7 @@ title: Promóciós szalagcím modul
 description: Ez a témakör a promóciós szalagcím modulokkal foglalkozik, és bemutatja, hogy hogyan lehet őket hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: anupamar-ms
 manager: annbe
-ms.date: 05/28/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: dae824cdbaaf56f85f125c5f36aaa56171bbd6bc
-ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
+ms.openlocfilehash: d9debd16b18300d090bde1862a16920d8e9185eb
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "3411365"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817254"
 ---
 # <a name="promo-banner-module"></a>Promóciós szalagcím modul
 
@@ -87,12 +87,12 @@ A promóciós szalagcím modul új oldalra való felvételéhez és a kötelező
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[Kezdő csomag áttekintése](starter-kit-overview.md)
+[Modulkönyvtár – áttekintés](starter-kit-overview.md)
 
 [Forgótármodul](add-carousel.md)
 
-[Szövegblokk modul](add-content-rich-block.md)
+[Szövegterület-modul](add-content-rich-block.md)
 
-[Tartalomblokk modul](add-hero-module.md)
+[Tartalomblokk-modul](add-hero-module.md)
 
 [Videólejátszó modul](add-video-player.md)

@@ -3,7 +3,7 @@ title: Videólejátszó modul
 description: Ez a témakör a videólejátszó modulokkal foglalkozik, és bemutatja, hogy hogyan lehet őket hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: anupamar-ms
 manager: annbe
-ms.date: 05/28/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 0612682d310362c7523bf08db40faf51c80ea2e3
-ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
+ms.openlocfilehash: 3cf7ead9a5340d5db37a87bdf131ba87681d5a82
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "3411159"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817061"
 ---
 # <a name="video-player-module"></a>Videólejátszó modul
 
@@ -97,12 +97,12 @@ A videólejátszó modul új oldalra való felvételéhez és a kötelező tulaj
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[Kezdőcsomag áttekintése](starter-kit-overview.md)
+[Modulkönyvtár – áttekintés](starter-kit-overview.md)
 
 [Promóciós szalagcím modul](add-alert.md)
 
 [Forgótármodul](add-carousel.md)
 
-[Szövegblokk modul](add-content-rich-block.md)
+[Szövegterület-modul](add-content-rich-block.md)
 
 [Tartalomblokk modul](add-hero-module.md)

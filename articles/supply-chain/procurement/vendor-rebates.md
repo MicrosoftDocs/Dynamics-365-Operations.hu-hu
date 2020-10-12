@@ -16,14 +16,15 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 2012
-ms.openlocfilehash: 44c8f3ed76698bb4b70d767d9c8881024699552f
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: acf7df09b467e0b0b0463946be018ff199d7153e
+ms.sourcegitcommit: 91e101d7a51a8b63bd196ec80e9224e5e6e6fc95
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3203451"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "3834260"
 ---
 # <a name="vendor-rebates"></a>Szállítói visszatérítések
+
 [!include [banner](../includes/banner.md)]
 
 A szállítói visszatérítések segítséget nyújtanak a vállalatoknak szállító visszatérítési programjuk könnyebb kezelésében úgy, hogy automatizálják a megszerzett visszatérítések felügyeletéhez, nyomon követéséhez és igényléséhez szükséges feladatokat.
@@ -50,6 +51,7 @@ Az ezen beosztásokban dolgozó személyek különféle módokat keresnek célja
 - Összegszerű alap biztosítása a szállítókkal folytatott, visszatérítésekkel kapcsolatos folyamatban lévő és jövőbeli tárgyalásokhoz.
 
 ## <a name="review-details-of-a-vendor-rebate-agreement"></a>Szállítói visszatérítési megállapodás részleteinek áttekintése.
+
 A szállítói visszatérítési megállapodásban egy szállítóval kötött szerződési rekordot jelent, amely rögzíti azon egyeztetett feltételeket, amelyek alapján a vállalat előzetesen lefektetett beszerzési célok elérése alapján pénzjutalomra jogosult. A szállítói visszatérítési megállapodások rögzítése a **Visszatérítési megállapodások** oldalon történik.
 
 A **szállítói visszatérítési megállapodások** oldal megnyitásához válassza a **Beszerzés és forrás** &gt; **Szállítói visszatérítések** &gt; **Visszatérítési megállapodások** elemet.
@@ -58,9 +60,11 @@ A **szállítói visszatérítési megállapodások** oldal megnyitásához vál
 
 A **Szállítói visszatérítési megállapodások** lapon megtekintheti az adott szállítói szerződés egyeztetett feltételeinek részleteit.
 
-A megállapodás fejléce mutatja az általános feltételeket, amelyek alapján a vállalatot visszatérítésekre jogosult. A fejléc adatai tulajdonképpen azt szabják meg, hogy a szállító visszatérítést biztosít, amikor egy adott termék vásárlásai elérnek egy adott mennyiséget. A fejlécen a visszatérítés beállításaként megadható a mértékegység és a számítás dátumának típusa.
+A megállapodás fejléce mutatja az általános feltételeket, amelyek alapján a vállalat visszatérítésekre jogosult. A fejléc adatai tulajdonképpen azt szabják meg, hogy a szállító visszatérítést biztosít, amikor egy adott termék vásárlásai elérnek egy adott mennyiséget. A fejlécen a visszatérítés beállításaként megadható a mértékegység és a számítás dátumának típusa.
 
-- Az **Általános** lapon a **Visszatérítés mértékegysége** mezőben határozhatja meg, hogy egy adott mértékegység feltétele legyen-e a beszerzési rendelési sornak a visszatérítési igényre való jogosultsághoz. 
+- Az **Áttekintés** lapon, ha a **Cikk-kóddal** rendelkező sorok *táblázat* értékre vannak állítva egy cikk meghatározásához, akkor a megállapodás arra az adott cikkre vonatkozik. Ha van olyan sor, amelyben a **Cikk-kód** *Csoport* vagy *Összes* értékre van állítva a cikkek megadásához, akkor a szállítói visszatérítési megállapodás külön-külön lesz feldolgozva az cikkódnak megfelelő elemenként, nem a cikkódnak megfelelő összes elemre vonatkozóan.
+
+- Az **Általános** lapon a **Visszatérítés mértékegysége** mezőben határozhatja meg, hogy egy adott mértékegység feltétele legyen-e a beszerzési rendelési sornak a visszatérítési igényre való jogosultsághoz.
 
     - **Konvertálás** – a beszerzési rendelési sor szállítói visszatérítésre jogosult a visszatérítési megállapodás szerint. A visszatérítést attól függetlenül megkapja, hogy, a sorban milyen mértékegység van alkalmazva.
     - **Pontos egyezés** – a visszatérítéshez a beszerzési soron ugyanannak a mértékegységnek kell szerepelnie, amely a szerződésben elő van írva.
@@ -97,6 +101,7 @@ A szerződési sorokban részletesebben megadhatja a szállítói visszatérít�
 Amikor egy olyan szállító kap beszerzési rendelést, amellyel a vállalatnak visszatérítési megállapodása van, a program azonosítja az esetleges jövőbeli szállítói fizetési jóváírásokat. Ha a beszerzési rendelések visszatérítésre jogosultak, visszatérítési igény jön létre minden rendelési sorhoz, amint a beszerzési számla feladása megtörtént. Ez folyamat automatikus. Később a várható visszatérítések áttekinthetők és látható ezen visszatérítések hatása a termék költségére és fedezeti mutatójára nézve.
 
 ### <a name="view-details-of-rebates-that-are-applied-to-a-purchase-order-line-per-the-vendor-rebate-agreement"></a>A szállítói visszatérítési megállapodás alapján a beszerzésirendelés-sorra alkalmazott visszatérítések részleteinek megtekintése
+
 1. A **Beszerzési rendelés** oldalon válasszon ki egy rendeléssort, és válassza a **Beszerzésirendelés-sor** &gt; **Megtekintés** &gt; **Ár részletei** elemet.
 2. Az **Ár részletei** oldalon válassza a **Visszatérítések** gyorslapot.
 
@@ -106,15 +111,18 @@ A visszatérítési információk az **Ár részletei** lap **Becsült haszonkul
 > A **Beszerzési és forrásparaméterek** oldalon az **Árak** lapon ellenőrizze, hogy az **Áradatok engedélyezése** a beállítás **Igen**-e. Ha a beállítás értéke **Nem**, nem lehet a visszatérítéseket megtekinteni.
 
 ## <a name="review-and-approve-claims"></a>Igények ellenőrzése és jóváhagyása
+
 A létrehozott visszatérítési igények a szállítótól érkező várható jövőbeli kifizetéseket képviselik. Jóváírás a szállító részére történő végrehajtása előtt a szerződés tulajdonosa általában szeretné az igényeket áttekinteni és jóváhagyni. Megjegyzendő, hogy az igény állapota határozza meg, hogy a követelés készen áll-e a jóváhagyási folyamatra.
 
 ### <a name="the-status-of-claims-and-the-effect-on-the-approval-process"></a>Az igények állapota és hatása a jóváhagyási folyamatra
+
 Igény létrehozásakor az állapot értéke **Számítandó**, ha a visszatérítés megadása halmozott alapon történik, illetve **Számított**, ha a visszatérítés megadása számlánként történik. Ha az igény állapota **Számítandó**, az igénynek egy számítási folyamaton kell átesnie, amely az Összesítés funkció kezel. Csak a **Számított** állapotú igények kerülhetnek be a jóváhagyási folyamatba.
 
 > [!NOTE]
 > Ha a **Jóváhagyás szükséges** beállítás értéke egy szállítói visszatérítési megállapodásban **Nem**, a létrehozott igények állapota  **Jóváhagyva** lesz. A jóváhagyás kötelező a halmozott adatok alapján biztosított igényeknél.
 
 ### <a name="approve-claims-and-view-postings-and-invoice-details"></a>Igények jóváhagyása, feladások és számlaadatok megtekintése
+
 Az igények jóváhagyást követően feldolgozhatók a Kötelezettségek (A/P) részéről. A jóváírást (szállítói számla) a program a visszatérítési igénylés összegéhez automatikusan generálja. Az követel tétel ezután hozzáadható a szállítói egyenleghez, az A/P-csoport pedig felveheti a normál kiegyenlítési folyamatba.
 
 1. Válassza a **Beszerzés és forrás** &gt; **Szállítói visszatérítések** &gt; **Visszatérítési igények** elemet visszatérítési igény megnyitásához.
@@ -153,6 +161,7 @@ Az igények jóváhagyást követően feldolgozhatók a Kötelezettségek (A/P) 
 9. A **Minden szállító** oldalon válassza ki a szállítót, amelytől visszatérítést fog kapni, és a műveleti ablaktáblán válassza a **Tranzakciók** elemet. Keresse meg a számla sorát. A visszatérítési összeg hozzá lett adva a szállítói egyenleghez.
 
 ## <a name="summary"></a>Összegzés
+
 A szállítói visszatérítések kezelésére szolgáló eljárásban több manuális nyomon követési feladat található, és ezek gyakran fárasztóak lehetnek. Ezeket a feladatokat automatizálva a szállítói visszatérítések kezelése segít navigálni a következő folyamatokban:
 
 - Pontos visszatérítési igények létrehozása

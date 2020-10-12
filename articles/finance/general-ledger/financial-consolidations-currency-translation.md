@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: a67e5e3aea33e874f225a6af606fc8cde2bdc6bf
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 2a6685a2dcf9d7bf7ac82c3dede9c3ece0c08698
+ms.sourcegitcommit: 7537aa8ef619eea6c48467a3ca86e3372415f8a7
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771845"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "3823455"
 ---
 # <a name="financial-consolidations-and-currency-translation-overview"></a>Pénzügyi konszolidáció és pénznemátváltás áttekintése
 
@@ -103,6 +103,7 @@ A konszolidáció eredményének megtekintésének többféle módja is van:
     ![Konszolidációs tranzakciók a Konszolidációk oldalon](./media/managing-consolidation-transactions.png "Konszolidációs tranzakciók a Konszolidációk oldalon")
 
 A Konszolidáció újrafuttatásához egyszerűen feldolgozhatja a konszolidációt. Azt is megteheti, hogy először kijelöli a **Tranzakciók eltávolítása** lehetőséget a **Konszolidációk** oldalon.
+Abban az esetben, ha a konszolidált számlán szereplő egyenlegek nem pontosak, korrigálhatja őket a **Záró időszaki kiigazítások** lapon.
 
 ## <a name="consolidate-with-import"></a>Konszolidálás importálással
 A Konszolidálás importálással funkció úgy működik, mint az Online konszolidálás funkció. Amikor kiválasztja a jogi személyeket, tallóz az adatokat tartalmazó forrásfájlhoz.
@@ -156,6 +157,7 @@ A Devizaátértékeléssel a konszolidált vállalatban kapcsolatos további tud
 - Eltávolítási naplók csak az Aktuális rétegben lehet feladni.
 - Csak a működési egyenlegek lesznek konszolidálva. Ezért nyitó egyenlegek megtekintéséhez továbbra is futtatnia kell az év végi zárást a konszolidációs vállalatnál.
 - A konszolidált vállalatban nem adhat fel napi naplókat de feladhatja azokat az eltávolítási vállalatban.
+- Egy konszolidált vállalat egyenlegeinek helyesbítéseit csak a **Záró időszaki kiigazítások** lapon lehet végrehajtani. 
 
 ## <a name="benefits-of-using-financial-reporting-for-financial-consolidations-and-currency-translation-or-to-complement-consolidate-online-for-consolidated-reporting"></a>A Pénzügyi jelentések használatának előnyei a pénzügyi konszolidálások és devizaátváltás során, vagy az online konszolidáció kiegészítéséhez konszolidált jelentéskészítés során.
 Azok az ügyfelek, akik Pénzügyi jelentéseket használnak a pénzügyi konszolidálások és devizaátváltás során, vagy az online konszolidáció kiegészítéséhez konszolidált jelentéskészítés során számos előnyt élvezhetnek.

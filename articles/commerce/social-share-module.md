@@ -3,7 +3,7 @@ title: Közösségi megosztás modul
 description: Ez a témakör a közösségi megosztás modulokkal foglalkozik, és bemutatja, hogy hogyan lehet őket hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: anupamar-ms
 manager: annbe
-ms.date: 08/31/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 0fd81aa1f4b1358528f0135c1334dc7b4ac4461f
-ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
+ms.openlocfilehash: 5052957a2f4e59791ef02c12bc2aef5ed36e95c7
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "3761395"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3816937"
 ---
 # <a name="social-share-module"></a>Közösségi megosztás modul
 
@@ -78,7 +78,7 @@ Közösségimédia-modul hozzáadásához egy vásárlásmező-modulhoz kövesse
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[Kezdőcsomag áttekintése](starter-kit-overview.md)
+[Modulkönyvtár – áttekintés](starter-kit-overview.md)
 
 [Vásárlásmező-modul](add-buy-box.md)
 

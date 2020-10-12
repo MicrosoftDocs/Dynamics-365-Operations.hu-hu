@@ -3,7 +3,7 @@ title: Vonalkódok beállítása
 description: Ez a cikk a vonalkódok használatának módját ismerteti a Dynamics 365 Commerce rendszerben.
 author: jblucher
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 09/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 52801e0d09b1d7da50719966700ca45275d702f7
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: 0785f499a3e106e36b803ae61a9acbdbb072ce17
+ms.sourcegitcommit: 28a771d81322e72d88db63a20ff360de084a6087
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057278"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "3835062"
 ---
 # <a name="set-up-bar-codes"></a>Vonalkódok beállítása
 
@@ -42,7 +42,7 @@ A vonalkódokat manuálisan és automatikusan is létre lehet hozni. A vonalkód
 1. [Vonalkódmaszk-karakterek beállítása](set-up-bar-code-masks.md).
 2. [Vonalkódmaszkok beállítása](set-up-bar-code-masks.md).
 3. Vonalkód-beállítások konfigurálása.
-4. Termékek vonalkódjainak létrehozása.
+4. [Termékek vonalkódjainak létrehozása](../supply-chain/pim/tasks/create-bar-code-product.md).
 
 ## <a name="additional-resources"></a>További erőforrások
 

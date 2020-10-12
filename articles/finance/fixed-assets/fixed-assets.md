@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bfa6dcbd8d75c1a6c40896311ed367a835eccc7f
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: e761283057ff71fb10d4a5333a0b0dd4b6b6149e
+ms.sourcegitcommit: 71a7fb9e7133d872790ec25def5453bbbb17c627
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770758"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3888084"
 ---
 # <a name="fixed-assets-home-page"></a>Tárgyi eszközök kezdőlap
 
@@ -47,7 +47,7 @@ Lépjen a [Microsoft Dynamics 365 programverzióra vonatkozó kiadási tervek](h
 
 A [Microsoft Dynamics 365 blogon](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) és a [Microsoft Dynamics 365 Finance and Operations – Pénzügyek blogon](https://community.dynamics.com/365/financeandoperations/b/financials) véleményeket, híreket és egyéb információkat talál.
 
-A [Microsoft Dynamics Operations Partner közösségi blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) egyetlen erőforrás segítségével tájékoztatja a Microsoft Dynamics-partnereket az MBS Operations új és népszerű fejlesztéseiről.
+A [Microsoft Dynamics Operations Partner közösségi blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) egyetlen erőforrás segítségével tájékoztatja a Microsoft Dynamics-partnereket a Dynamics 365 új és népszerű fejlesztéseiről.
 
 #### <a name="task-guides"></a>Feladat-útmutatók
 Feladat-útmutatók formájában további segítség is rendelkezésre áll. A feladat-útmutatók eléréséhez kattintson bármelyik lap Súgó gombjára.

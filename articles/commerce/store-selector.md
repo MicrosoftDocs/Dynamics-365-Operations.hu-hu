@@ -3,7 +3,7 @@ title: Üzletkiválasztó modul
 description: Ez a témakör az üzletválasztó modullal foglalkozik, és bemutatja, hogy hogyan lehet azt hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: anupamar-ms
 manager: annbe
-ms.date: 07/31/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,17 +18,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 1531b27dad4188dca96cf5728a9858f94001977c
-ms.sourcegitcommit: 078befcd7f3531073ab2c08b365bcf132d6477b0
+ms.openlocfilehash: 4438e46d4653a0cd2060092695f08613cd696f4e
+ms.sourcegitcommit: 97ceb24f191161ca601e0889a539df665834ac3b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "3646135"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3818250"
 ---
 # <a name="store-selector-module"></a>Üzletkiválasztó modul
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Ez a témakör az üzletválasztó modullal foglalkozik, és bemutatja, hogy hogyan lehet azt hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
 
@@ -65,7 +64,7 @@ A forgatókönyv működéséhez a termékeket az **átvétel** szállítási m�
 
 A következő kép a PDP-ben használt üzletválasztó modul egy példáját jeleníti meg.
 
-![Példa egy üzletválasztó modulra](./media/BOPIS.PNG)
+![Példa egy üzletválasztó modulra, ami a PDP-ben van használva](./media/BOPIS.PNG)
 
 ## <a name="find-stores-mode"></a>Üzletek keresése mód
 
@@ -73,7 +72,7 @@ Az üzletválasztó modul az **Üzletek keresése** módot is támogatja. Ez a m
 
 A következő ábra egy üzletválasztó modul példáját mutatja be, amely az üzlethelyek lap térkép moduljával együtt használható.
 
-![Példa egy üzletválasztó modulra](./media/ecommerce-Storelocator.PNG)
+![Példa egy üzletválasztó modulra, és egy térkép modulra egy tárolási helyek lapon](./media/ecommerce-Storelocator.PNG)
 
 ## <a name="render-a-map"></a>Térkép renderelése
 
@@ -127,7 +126,7 @@ Ha az üzlethelyekhez szeretné konfigurálni az üzletválasztó modult az elé
  
 ## <a name="additional-resources"></a>További erőforrások
 
-[Kezdőcsomag áttekintése](starter-kit-overview.md)
+[Modulkönyvtár – áttekintés](starter-kit-overview.md)
 
 [Vásárlásmező-modul](add-buy-box.md)
 

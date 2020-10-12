@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 3b9a1485d37da614eea2427735e0e1323897682d
-ms.sourcegitcommit: 4a981ee4be6d7e6c0e55541535d386bce2565cba
+ms.openlocfilehash: ed8f0351d1e16cceb6c9749f434a8980ef2be29d
+ms.sourcegitcommit: 025561f6a21fe8705493daa290f3f6bfb9f1b962
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "3621328"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "3835854"
 ---
 # <a name="unified-product-experience"></a>Egységes terméktapasztalat
 
@@ -91,7 +91,7 @@ Mivel a termék SKU-ként képviselteti magát, az egyedi termékek, alaptermék
 
 ![Adatmodell termékekhez](media/dual-write-product.png)
 
-Ha a kettős írás funkció engedélyezve van, a Finance and Operations modul alkalmazásai szinkronizálva lesznek a többi Dynamics 365 alkalmazásban a **Vázlat** állapotban. Az első azonos pénznemű árlistához lesznek hozzáadva. Más szóval a Dynamics 365 alkalmazás első árlistájához lesznek hozzáadva amely megfelel annak a jogi személynek a pénznemének, ahol a termék ki van adva a Finance and Operations-alkalmazásban. 
+Ha a kettős írás funkció engedélyezve van, a Finance and Operations modul alkalmazásai szinkronizálva lesznek a többi Dynamics 365 termékben a **Vázlat** állapotban. Az első azonos pénznemű árlistához lesznek hozzáadva. Más szóval a Dynamics 365 alkalmazás első árlistájához lesznek hozzáadva amely megfelel annak a jogi személynek a pénznemének, ahol a termék ki van adva a Finance and Operations-alkalmazásban. 
 
 Alapértelmezés szerint a Finance and Operations-alkalmazások termékeit szinkronizálja a rendszer a többi Dynamics 365-alkalmazással **Vázlat** állapotban. Ha azt szeretné, hogy az **Aktív** állapotú termék szinkronizálva legyen, hogy például közvetlenül tudja használni az értékesítési rendelések árajánlataiban, akkor az alábbi beállítást kell választani: a **Rendszer > Adminisztráció > Rendszeradminisztráció > Rendszerbeállítások > Sales** lapon válassza a **Termékek létrehozása az aktív állapotban = igen** értéket. 
 

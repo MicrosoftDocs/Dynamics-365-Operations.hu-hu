@@ -3,7 +3,7 @@ title: Kezdőlap áttekintése
 description: Ez a témakör a Microsoft Dynamics 365 Commerce kezdőlapjával kapcsolatban nyújt áttekintést.
 author: anupamar-ms
 manager: annbe
-ms.date: 06/30/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: c51c5af38f4ba50bbad124de4ac7f66be4001fa6
-ms.sourcegitcommit: ce397c2759f642c595e30fef58a770b50360b2bd
+ms.openlocfilehash: 3ebc8b4ebd3720815cdaaab708fbfdd8302cbea1
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "3527584"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817754"
 ---
 # <a name="home-page-overview"></a>Kezdőlap áttekintése
 
@@ -34,7 +34,7 @@ Ez a témakör a Microsoft Dynamics 365 Commerce kezdőlapjával kapcsolatban ny
 
 A kezdőlap az az alapértelmezett lap, amelyre a vásárlók kerülnek, amikor meglátogatnak egy e-kereskedelmi webhelyet. Ez a lap általában termékeket és promóciókat jelenít meg marketingmodulok kombinációjának használatával. A kezdőlapnak képekben és szövegben gazdagnak kell lennie ahhoz, hogy a bevonzza a vásárlókat.
 
-A következő ábra egy olyan kezdőlapot mutat be, amely az online kezdőszett és a „gyár” téma alapján készült.
+A következő ábra egy olyan kezdőlapot mutat be, amely a modulkönyvtár és a „gyár” téma alapján készült.
 
 ![Példa a kezdőlapra](./media/Homepage2.PNG)
 

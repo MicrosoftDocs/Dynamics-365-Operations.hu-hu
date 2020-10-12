@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6ae7587fc46d2907241a5da3b6329465d77b3555
-ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
+ms.openlocfilehash: e6a3330b0123605d4c7b86cedcb8bc95b3cf6de8
+ms.sourcegitcommit: a52a789044ca66c6771224a6cf0be8749bc99e5a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "3383090"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "3837263"
 ---
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>Mobileszközök beállítása raktári munkához
 
@@ -399,6 +399,9 @@ Az alábbi táblázatban található ezeknek a beállításoknak az ismertetése
 <tr class="odd">
 <td>Munkasablonkód</td>
 <td>Válassza ki azt a munkasablont, amely létrehozza a folyamathoz a munkát. Például ha cikket kap a beszerzési rendeléshez, a betárolási munka a munkasablon alapján jön létre. Ha nem jelöl be munkasablont, a Supply Chain Management hozzárendel egy sablont a lekérdezési feltételek alapján. A Munkasablonokkal kapcsolatos további információkat lásd: <a href="control-warehouse-location-directives.md">A raktári munka ellenőrzése munkasablonok és helyutasítások használatával</a>.</td>
+<tr class="even">
+<td>Munkasorlista megjelenítése</td>
+<td>Válasszon ki egy beállítást, hogy a dolgozók hogyan fogják tudni megtekinteni és megérinteni a kiválasztott kitárolási munka sorait. Ezzel a beállítással kapcsolatos további információkat lásd: <a href="pick-line-overview.md">Mobileszköz menüelemének beállítása a kitárolási sor áttekintésének biztosításához</a>.</td>
 </tr>
 </tbody>
 </table>

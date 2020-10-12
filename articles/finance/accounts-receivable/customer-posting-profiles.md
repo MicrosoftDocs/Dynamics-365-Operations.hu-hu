@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: CustPosting
+ms.search.form: CustPosting, CustVendExternalItem
 audience: Application User
 ms.reviewer: roschlom
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1bb2784d70e99c3c3443bed1b8cb040552b5b6f6
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: dff786d6e872e48f9605f9a472b7bffd409c5b3f
+ms.sourcegitcommit: 54da65a7da0efd4f0d9760c5b14ff785b28751c4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2189062"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "3830527"
 ---
 # <a name="customer-posting-profiles"></a>Vevői feladási profilok
 
@@ -61,7 +61,7 @@ Ha azt szeretné, hogy a vevői tranzakciók feladási profiljai megegyezzenek, 
 <tbody>
 <tr class="odd">
 <td><strong>Feladási sablon</strong></td>
-<td>Adjon meg egy kódot a feladási profilhoz. Például létrehozhat két feladói profilt, hogy a vevő egyenlegek hogy lekérdezze egy nemzeti pénznemet és egy külföldi valutát használó számlát a vevői egyenlegekhez. Hívhatja az egyik számlát "Nemzeti", a másikat "Külföldi" számlának.</td>
+<td>Adjon meg egy kódot a feladási profilhoz. Például létrehozhat két feladói profilt, hogy létrehozzon egy fiókot a vevői egyenlegeknek, hogy lekérdezzen egy nemzeti pénznemet és egy külföldi valutát használó számlát a vevői egyenlegekhez. Hívhatja az egyik számlát "Nemzeti", a másikat "Külföldi" számlának.</td>
 </tr>
 <tr class="even">
 <td><strong>Leírás</strong></td>

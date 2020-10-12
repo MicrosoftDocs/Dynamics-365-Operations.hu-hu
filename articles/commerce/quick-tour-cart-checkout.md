@@ -3,7 +3,7 @@ title: Kosár és pénztár oldalainak áttekintése
 description: Ez a témakör áttekintést nyújt a Microsoft Dynamics 365 Commerce kosár és pénztár oldalaihoz.
 author: anupamar-ms
 manager: annbe
-ms.date: 06/30/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: c879b90cf49dcab9cf069e4f3613602bd6673aa9
-ms.sourcegitcommit: ce397c2759f642c595e30fef58a770b50360b2bd
+ms.openlocfilehash: e932be31a301ef5aacb68fa4e710d8a9137b7263
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "3527563"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817778"
 ---
 # <a name="cart-and-checkout-pages-overview"></a>Kosár és pénztár oldalainak áttekintése
 
@@ -40,7 +40,7 @@ Az e-kereskedelmi webhely pénztár lapja lépésről lépésre bemutatja azokat
 
 A kosár lap egy bevásárlókosárként szolgál, és minden olyan cikket tartalmaz, amely a kosárba került.
 
-A következő ábra egy olyan kosár-lapot mutat be, amely az online kezdőszett és a „gyár” téma alapján készült.
+A következő ábra egy olyan kosár-lapot mutat be, amely a modulkönyvtár és a „gyár” téma alapján készült.
 
 ![Példa a kosár oldalra](./media/cart2.PNG)
 
@@ -56,7 +56,7 @@ A kosár lap létrehozásával kapcsolatos további tudnivalókat lásd [A kosá
 
 A pénztár oldalon a vevők a rendelés leadásához szükséges adatokat adják meg.
 
-A következő ábra egy olyan pénztár lapot mutat be, amely az online kezdőszett és a „gyár” téma alapján készült.
+A következő ábra egy olyan pénztár lapot mutat be, amely a modulkönyvtár és a „gyár” téma alapján készült.
 
 ![Példa a pénztár oldalra](./media/Checkout.PNG)
 
@@ -66,7 +66,7 @@ A pénztári lap fő törzse az a rész, ahol minden rendelési adatot gyűjtene
 
 Ha az árukat szállítani kell, a szállítási cím megadása kötelező. Minden egyes területhez be lehet állítani a szállítási címek formátumát a Dynamics 365 Commerce alkalmazásban. Ha például a cikkek szállítása az Egyesült Államokba történik, a szállítási címnek tartalmaznia kell egy utcacímet, egy államot és egy irányítószámot. A szállítási cím mezőiben megtörténik néhány alapvető beviteli ellenőrzés, például az alfanumerikus karakterek, a maximális hossz és a számok ellenőrzése. Noha maga a cím érvényessége nincs ellenőrizve, ez az ellenőrzés a testreszabott külső szolgáltatások használatával elvégezhető.
 
-A szállítási cím a kosár minden olyan cikkére érvényes, amelyre a „szállítás” beállítás ki van kiválasztva. Ha az online kezdőcsomagban megadott pénztár folyamatot használja, akkor az egyes kosár cikkek nem szállíthatók különböző címekre. Ha szüksége van erre a lehetőségre, akkor a pénztár modulok testreszabásával lehet megvalósítani.
+A szállítási cím a kosár minden olyan cikkére érvényes, amelyre a „szállítás” beállítás ki van kiválasztva. Ha a modulkönyvtárban megadott pénztár folyamatot használja, akkor az egyes kosár cikkek nem szállíthatók különböző címekre. Ha szüksége van erre a lehetőségre, akkor a pénztár modulok testreszabásával lehet megvalósítani.
 
 A szállítási cím megadása után megjelennek a Dynamics 365 Commerce online áruházból elérhető szállítási módok. A szállítási módokat és az általuk támogatott címeket a Commerce modulban konfigurálhatja.
 
@@ -80,7 +80,7 @@ A pénztári folyamat során a hűségprogram-tagsággal rendelkező vevő, aki 
 
 #### <a name="gift-cards"></a>Ajándékutalványok
 
-Az online kezdőszett a lehetővé teszi belső ajándékutalványok beváltását a rendeléshez. Belső ajándékutalvány alkalmazásához a vevőnek be kell jelentkeznie. A további biztonság érdekében ajánlott a folyamatot úgy testreszabni, hogy a belső ajándékkártyákhoz személyes azonosítószám (PIN) legyen használva.
+A modulkönyvtár lehetővé teszi belső ajándékutalványok beváltását a rendeléshez. Belső ajándékutalvány alkalmazásához a vevőnek be kell jelentkeznie. A további biztonság érdekében ajánlott a folyamatot úgy testreszabni, hogy a belső ajándékkártyákhoz személyes azonosítószám (PIN) legyen használva.
 
 ### <a name="signed-in-and-guest-users"></a>Bejelentkezett és vendég felhasználók
 

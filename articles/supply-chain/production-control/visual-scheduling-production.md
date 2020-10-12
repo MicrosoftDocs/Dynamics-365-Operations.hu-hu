@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: JmgShopSupervisorWorkspace, ProdTable, ProdTableListPage
+ms.search.form: JmgShopSupervisorWorkspace, ProdTable, ProdTableListPage, GanttColorTable, GanttReqExplosionColor, GanttReqExplosionSetup, GanttTable, GanttTimescaleSetup, GanttWrkCtr, GanttWrkCtrColor, GanttWrkCtrJobInfo, GanttWrkCtrLoadResources, GanttWrkCtrMoveJob, GanttWrkCtrSetup, GanttWrkCtrView
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 430a012fbc198b90df0c0bf4084705037c95f7be
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: e194f379d118ee174095229d38ba5b0a679f49ac
+ms.sourcegitcommit: cde71bc7d14ea6cdff2c4e991057d39a6a0473d9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3210157"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "3887240"
 ---
 # <a name="gantt-chart-for-job-scheduling"></a>Munkaütemezés Gantt-diagram segítségével
 
@@ -38,7 +38,7 @@ A Gantt-diagram a beütemezett tevékenységek vizuális megjelenítése a megad
 -   Tervezett termelési rendelések feladatai.
 -   Óra-előrejelzések típusú ütemezett projekttevékenységek.
 
-A Gantt-diagram két különböző nézetben nyitható meg – ezek a **Rendelés nézet** és az **Erőforrás nézet**[](https://authoring.help.dynamics.com/en/?post_type=incsub_wiki&p=1665154&preview=true). A **Rendelés nézet** alatt a tevékenységek csoportosítása termelési rendelések szerint történik. Ez hasznos lehet például olyankor, ha meg szeretné tartani az azonos rendelésekhez tartozó összes feladat áttekintését. Az **Erőforrás nézetben** az összes feladat az egyes erőforrások alatt van csoportosítva. Ez a nézet akkor lehet hasznos, amikor a tervet az erőforrás szintjén optimalizálja, például egy gép vagy gépek csoportja esetén. Az alábbi ábrákon látható Gantt-diagramok a **Rendelés megtekintése** és az **Erőforrás nézet** nézeteket jelenítik meg a következő kulcselemekkel:
+A Gantt-diagram két különböző nézetben nyitható meg – ezek a **Rendelés nézet** és az **Erőforrás nézet**. A **Rendelés nézet** alatt a tevékenységek csoportosítása termelési rendelések szerint történik. Ez hasznos lehet például olyankor, ha meg szeretné tartani az azonos rendelésekhez tartozó összes feladat áttekintését. Az **Erőforrás nézetben** az összes feladat az egyes erőforrások alatt van csoportosítva. Ez a nézet akkor lehet hasznos, amikor a tervet az erőforrás szintjén optimalizálja, például egy gép vagy gépek csoportja esetén. Az alábbi ábrákon látható Gantt-diagramok a **Rendelés megtekintése** és az **Erőforrás nézet** nézeteket jelenítik meg a következő kulcselemekkel:
 
 1.  Gantt-diagram tevékenysége
 2.  Anyaghiány ikon

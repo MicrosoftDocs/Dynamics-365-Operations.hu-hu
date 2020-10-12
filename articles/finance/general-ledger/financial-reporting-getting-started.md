@@ -3,7 +3,7 @@ title: Pénzügyi jelentéskészítés – áttekintés
 description: Ez a témakör azt ismerteti, hol érheti el a Microsoft Dynamics 365 Finance pénzügyi jelentéseit, és hogyan használhatja a pénzügyi jelentési képességeket.
 author: aprilolson
 manager: AnnBe
-ms.date: 08/14/2020
+ms.date: 09/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1944eda5fe933ff9fdf2b9a837eb2336e8b3a0d5
-ms.sourcegitcommit: 1322b94f10470e1728cf330d2d64f1471838c055
+ms.openlocfilehash: a7cc238c573a319073b451063782762c19a80017
+ms.sourcegitcommit: 28a771d81322e72d88db63a20ff360de084a6087
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "3696688"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "3835110"
 ---
 # <a name="get-started-with-financial-reporting"></a>Financial Reporting – első lépések 
 
@@ -148,9 +148,7 @@ A jelentéskészítő megnyitásakor problémák merülhetnek fel néhány gyako
 * Az Internet Explorer szolgáltatásban válassza ki a **Beállítások** elemet, majd válassza az **Internetbeállítások** lehetőséget. Válassza a **Biztonság** fület. Válassza ki a megbízható helyeket, majd válassza ki a **Helyek** elemet. A **Webhely hozzáadása a zónához** részben adja meg: „\*\.dynamics.com” (idézőjelek nélkül), majd válassza a **Hozzáadás** lehetőséget. 
 * Az Internet Explorer szolgáltatásban válassza ki a **Beállítások** elemet, majd válassza az **Internetbeállítások** lehetőséget. Válassza a **Biztonság** fület. Válassza ki a megbízható helyeket. A zóna Biztonsági szint feliratú területen módosítsa a beállítást **Közepesen alacsony** értékre.
 * Tiltsa le az előugró ablakok blokkolását a böngészőjében.
-* A Visual Studio .NET 4.6.2 vagy újabb telepítéséhez munkaállomások szükségesek.
-
-A Microsoft .NET Framework ezen verziója a [Microsoft letöltőközpontból](https://www.microsoft.com/download/details.aspx?id=53345) tölthető le és telepíthető.
+* A Microsoft .NET-keretrendszer 4.6.2 vagy újabb telepítéséhez munkaállomások szükségesek. A Microsoft .NET Framework ezen verziója a [Microsoft letöltőközpontból](https://www.microsoft.com/download/details.aspx?id=53345) tölthető le és telepíthető.
 * Chrome böngésző használata esetén, telepítenie kell a ClickOnce kiterjesztést a jelentéstervező kliens letöltéséhez. Ha a böngészőt inkognitó módban futtatja, győződjön meg arról, a ClickOnce kiterjesztés engedélyezve van-e az inkognitó módban. Ha nem tud bejelentkezni a Chrome-ba, próbálja meg az 1. problémában leírt beállítási lépéseket az Internet Explorer vagy Edge használatával. 
 
 2. probléma: A felhasználó nincs hozzárendelve a Financial Reporting használatához szükséges engedélyekhez. 

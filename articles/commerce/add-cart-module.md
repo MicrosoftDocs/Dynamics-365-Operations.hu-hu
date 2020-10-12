@@ -17,17 +17,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 07d121d5a68970dd29f0e77babda735de12871ca
-ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
+ms.openlocfilehash: d9a15f85838849796d6ce4674712636251c75bf3
+ms.sourcegitcommit: 97ceb24f191161ca601e0889a539df665834ac3b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "3761129"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3818275"
 ---
 # <a name="cart-module"></a>Kosármodul
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Ez a témakör a kosármodulokkal foglalkozik, és bemutatja, hogy hogyan lehet őket hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
 
@@ -41,11 +40,11 @@ A kosár modul a kosár azonosítója alapján jeleníti meg az adatokat, ami a 
 
 A következő kép a Fabrikam webhelyen használt kosároldal egy példáját jeleníti meg.
 
-![Példa egy kosármodulra](./media/cart2.PNG)
+![Példa egy gyár webhelyén lévő kosármodulra](./media/cart2.PNG)
 
 A következő kép a Fabrikam webhelyen használt kosároldal egy példáját jeleníti meg. Ebben a példában egy sortételre kezelési díjat számolnak fel.
 
-![Példa egy kosármodulra](./media/ecommerce-handling-fee.png)
+![Példa arra, amikor egy sortételre kezelési díjat számolnak fel](./media/ecommerce-handling-fee.png)
 
 ## <a name="cart-module-properties-and-slots"></a>A kosármodul tulajdonságai és helyei
 

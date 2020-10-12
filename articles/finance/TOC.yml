@@ -76,8 +76,6 @@
                       href: get-started/whats-new-changed-10-0-13.md
                     - name: Finance 10.0.12 (2020. augusztus)
                       href: get-started/whats-new-changed-10-0-12.md
-                    - name: Finance 10.0.11 (2020. július)
-                      href: get-started/whats-new-changed-10-0-11.md
             - name: Eltávolított vagy elavult funkciók
               items:
                 - name: Eltávolított vagy elavult funkciók a Dynamics 365 Finance szolgáltatásban
@@ -160,7 +158,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/finance/toc.json
                 - name: Egyéni mezők létrehozása és használata
                   href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/finance/toc.json
-                - name: Microsoft Power Apps beágyazása
+                - name: Vászonalapú alkalmazások beágyazása a Power Apps szolgáltatásból
                   href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/finance/toc.json
                 - name: Információk megtalálása keresésekkel
                   href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/finance/toc.json
@@ -1228,6 +1226,22 @@
               href: ../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=/dynamics365/finance/toc.json
             - name: Jogszabály-követési frissítések
               href: localizations/regulatory-updates.md
+            - name: Elektronikus számlázási bővítmény
+              items:
+                - name: Elektronikus számlázási bővítmény áttekintése
+                  href: localizations/e-invoicing-service-overview.md
+                - name: Azure-tárterület és Key Vault létrehozása
+                  href: localizations/e-invoicing-create-azure-storage-account-key-vault.md
+                - name: Első lépések az elektronikus számlázási bővítmény használata során
+                  href: localizations/e-invoicing-get-started.md
+                - name: Első lépések az Brazíliára vonatkozó elektronikus számlázási bővítmény használata során
+                  href: localizations/e-invoicing-bra-get-started.md
+                - name: Első lépések az Olaszországra vonatkozó elektronikus számlázási bővítmény használata során
+                  href: localizations/e-invoicing-ita-get-started.md
+                - name: Első lépések a Mexikóra vonatkozó elektronikus számlázási bővítmény használata során
+                  href: localizations/e-invoicing-mex-get-started.md
+                - name: Az elektronikus számlázási bővítmény beállítása
+                  href: localizations/e-invoicing-setup.md
             - name: Ausztrália
               items:
                 - name: Ausztrália – áttekintés
@@ -1268,6 +1282,8 @@
                   href: localizations/emea-bel-coda-bank-statement-import.md
                 - name: Tranzakciók létrehozása és továbbítása a BLWI számára
                   href: localizations/tasks/be-00011-create-transfer-blwi.md
+                - name: Főkönyvi tranzakciók exportálása
+                  href: localizations/emea-bel-export-ledger-transactions.md
                 - name: INTERVAT adóbevallás
                   href: localizations/emea-bel-intervat-tax-declaration.md
                 - name: Egyeztetési jelentések
@@ -2036,13 +2052,15 @@
                       href: localizations/apac-ind-GST-tax-journal.md
                     - name: GSTR-jelentés adatainak létrehozása adóbevallásokhoz
                       href: localizations/apac-ind-GST-tax-returns.md
+                    - name: GSTR-jelentésekre vonatkozó több köteges feldolgozás engedélyezése
+                      href: localizations/apac-ind-gst-multi-batch-processing-gstr-return.md
                     - name: Adóügyi lekérdezés
                       href: localizations/apac-ind-GST-tax-inquiry.md
                 - name: Adómotor
                   items:
                     - name: Adómotor áttekintése
                       href: general-ledger/tax-engine.md
-                    - name: Konfigurálás importálása
+                    - name: Importálás konfigurálása
                       href: general-ledger/tax-engine-import-configuration.md
                     - name: Továbbfejlesztett képletszerkesztő
                       href: ../fin-ops-core/dev-itpro/analytics/er-advanced-formula-editor.md?toc=/dynamics365/finance/toc.json
@@ -3560,6 +3578,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md?toc=dynamics365/finance/toc.json
                     - name: Többnyelvű jelentések tervezése
                       href: ../fin-ops-core/dev-itpro/analytics/er-design-multilingual-reports.md?toc=/dynamics365/finance/toc.json
+                    - name: Nagyméretű kimenő dokumentumok tömörítése
+                      href: ../fin-ops-core/dev-itpro/analytics/er-compress-outbound-files.md?toc=/dynamics365/finance/toc.json
                 - name: Adatkötések relatív elérési útja
                   href: ../fin-ops-core/dev-itpro/analytics/relative-path-data-bindings-er-models-format.md?toc=dynamics365/finance/toc.json
             - name: Elektronikus jelentéskészítési megoldások használata a Finance and Operations modulban

@@ -3,7 +3,7 @@ title: Forgótármodul
 description: Ez a témakör a forgótármodulokkal foglalkozik, és bemutatja, hogy hogyan lehet őket hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: anupamar-ms
 manager: annbe
-ms.date: 05/28/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 10ff0cd566a1a8d89ccadce9571dafc5a592520b
-ms.sourcegitcommit: 4a981ee4be6d7e6c0e55541535d386bce2565cba
+ms.openlocfilehash: f09f3f98d174f965a75e27ee6a5c2ed8599042fc
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "3620986"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3816986"
 ---
 # <a name="carousel-module"></a>Forgótármodul
 
@@ -77,12 +77,12 @@ A forgótármodul új oldalra való felvételéhez és a kötelező tulajdonság
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[Kezdő csomag áttekintése](starter-kit-overview.md)
+[Modulkönyvtár – áttekintés](starter-kit-overview.md)
 
 [Promóciós szalagcím modul](add-alert.md)
 
-[Szövegblokk modul](add-content-rich-block.md)
+[Szövegterület-modul](add-content-rich-block.md)
 
-[Tartalomblokk modul](add-hero-module.md)
+[Tartalomblokk-modul](add-hero-module.md)
 
 [Videólejátszó modul](add-video-player.md)
