@@ -14,7 +14,9 @@
               items:
                 - name: Újdonságok és változások a Platformfrissítések kezdőlapján
                   href: get-started/whats-new-home-page.md
-                - name: Platformfrissítések a 10.0.14-as verzióhoz (2020. november)
+                - name: Platformfrissítés a 10.0.15-ös verzióhoz (2021. január)
+                  href: get-started/whats-new-platform-updates-10-0-15.md
+                - name: Platformfrissítések a 10.0.14-es verzióhoz (2020. november)
                   href: get-started/whats-new-platform-updates-10-0-14.md
                 - name: Platformfrissítések a 10.0.13-as verzióhoz (2020. október)
                   href: get-started/whats-new-platform-updates-10-0-13.md
@@ -236,9 +238,11 @@
                                   href: data-entities/dual-write/dual-write-troubleshooting-finops-upgrades.md
                                 - name: Általános hibaelhárítás
                                   href: data-entities/dual-write/dual-write-troubleshooting.md
+                        - name: Kettős írás – gyakori kérdések
+                          href: data-entities/dual-write/dual-write-faq.md
                     - name: Integráció a Power Platform alkalmazással
                       items:
-                        - name: Potenciális vevő készpénzfizetési esetre történő konfigurálása
+                        - name: Potenciális vevő készpénzre váltási esetének konfigurálása
                           items:
                             - name: Potenciális vevők készpénzre váltása
                               href: ../../supply-chain/sales-marketing/prospect-to-cash.md
@@ -386,6 +390,8 @@
           items:
             - name: Áttekintés
               href: database/dbmovement-operations.md
+            - name: Adatbázis-áthelyezési eszköztár
+              href: database/database-movement-toolkit.md
             - name: Rövid útmutatók
               items:
                 - name: Adatbázis frissítése
@@ -1564,6 +1570,8 @@
                   href: migration-upgrade/data-upgrade-2012.md
                 - name: AX 2012 frissítés – Frissítés előtti ellenőrzőlista az adatfrissítéshez
                   href: migration-upgrade/prepare-data-upgrade.md
+                - name: AX 2012 frissítés – Adatfrissítés tesztkörnyezetekben a DACPAC-folyamat használatával
+                  href: migration-upgrade/upgrade-data-sandbox-dacpac.md
                 - name: AX 2012 frissítés – Adatfrissítés tesztkörnyezetekben
                   href: migration-upgrade/upgrade-data-sandbox.md
                 - name: AX 2012 frissítés – Helyszíni környezetek

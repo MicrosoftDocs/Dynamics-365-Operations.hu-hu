@@ -70,6 +70,8 @@
                   items:
                     - name: Újdonságok és változások a Finance kezdőlapján
                       href: get-started/whats-new-home-page.md
+                    - name: Finance 10.0.15 (2021. január)
+                      href: get-started/whats-new-changed-10-0-15.md
                     - name: Finance 10.0.14 (2020. november)
                       href: get-started/whats-new-changed-10-0-14.md
                     - name: Finance 10.0.13 (2020. október)
@@ -194,6 +196,8 @@
                   href: ../fin-ops-core/fin-ops/get-started/move-licenses-between-agreement-types.md?toc=/dynamics365/finance/toc.json
                 - name: LCS végrehajtási projektek áthelyezése másik Azure AD-bérlőkhöz
                   href: ../fin-ops-core/fin-ops/get-started/move-lcs-implementation-project-tenant.md?toc=/dynamics365/finance/toc.json
+                - name: LCS végrehajtási projektek áthelyezése helyszíni verzióból a felhőbe
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/move-on-prem-to-cloud.md?toc=/dynamics365/finance/toc.json
                 - name: Több LCS-projekt és gyártási környezet egyetlen Azure AD-bérlőnél
                   href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/finance/toc.json
         - name: Kötelezettségek
@@ -224,8 +228,18 @@
               items:
                 - name: Kötelezettségek számlaegyeztetése – áttekintés
                   href: accounts-payable/accounts-payable-invoice-matching.md
-                - name: A kötelezettségek számlaegyeztetésének hitelesítésbeállítása
+                - name: A kötelezettségek számlaegyeztetésére vonatkozó ellenőrzés beállítása
                   href: accounts-payable/tasks/set-up-accounts-payable-invoice-matching-validation.md
+            - name: Szállítói számla automatizálása
+              items:
+                - name: Automatizált szállítói számlázási folyamatok – áttekintés
+                  href: accounts-payable/auto-vendr-invc-process.md
+                - name: A szállítói számla automatizálásának beállítási lehetőségei
+                  href: accounts-payable/vnd-invoice-set-up-options.md
+                - name: Számlák elküldése a munkafolyamat-rendszerbe és a terméknyugta sorainak egyeztetése
+                  href: accounts-payable/submit-invoice-workflow-automatically.md
+                - name: Szállítói számlák automatizálási eredményeinek megtekintése
+                  href: accounts-payable/view-automated-vendor-invoice.md
             - name: Könyvelési felosztások és analitikusnapló-bejegyzések szállítói számlákhoz
               href: accounts-payable/accounting-distributions-subledger-journal-entries-vendor-invoices.md
             - name: Számlaegyeztetés és vállalatközi beszerzési rendelések
@@ -254,11 +268,11 @@
               href: accounts-payable/vendor-posting-profiles.md
             - name: A Kötelezettségek és a Kinnlevőségek modul devizaátértékelései
               href: cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable.md
-            - name: Mobil számlajóváhagyások
+            - name: Mobilos számlajóváhagyások
               href: accounts-payable/mobile-invoice-approvals.md
             - name: Szállítói együttműködés számlázási munkaterülete
               href: accounts-payable/vendor-portal-invoicing-workspace.md
-            - name: Szállítói számla automatizálása
+            - name: Számlaautomatizálás beolvasott dokumentumokhoz
               href: accounts-payable/vendor-invoice-automation.md
             - name: Ügynöki szerződéskezelés
               href: accounts-payable/broker-contract.md
@@ -450,6 +464,8 @@
               href: accounts-receivable/tasks/process-collection-letters.md
             - name: Kinnlevőségek korosítási adatainak beállítása és létrehozása
               href: accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
+            - name: Vevők korosítási jelentése
+              href: accounts-receivable/customer-aging.md
             - name: Leírási napló létrehozása vevőhöz
               href: accounts-receivable/tasks/create-write-off-journal-customer.md
             - name: Speciális megjegyzések kezelése
@@ -792,6 +808,10 @@
                   href: fixed-assets/straight-line-life-remaining-depreciation.md
                 - name: Élettartamon alapuló lineáris értékcsökkenés
                   href: fixed-assets/straight-line-service-life-depreciation.md
+        - name: Eszközlízing
+          items:
+            - name: Eszközlízing – első lépések
+              href: asset-leasing/asset-leasing-quick-start.md
         - name: Főkönyv
           items:
             - name: Főkönyv áttekintése
@@ -1882,13 +1902,13 @@
                       href: localizations/tasks/apac-ind-transfer-capital-items.md
                 - name: India GST
                   items:
-                    - name: India – GST áttekintése
+                    - name: India GST – áttekintés
                       href: localizations/apac-ind-gst.md
-                    - name: Új vagy módosult elemek az APAC India GST honosításban
+                    - name: Újdonságok és változások az India GST honosításában
                       items:
-                        - name: Új vagy módosult elemek a 10.0.0-es verziójában
+                        - name: Újdonságok vagy változások a 10.0.0-s verzióban
                           href: localizations/apac-ind-news-letter-10-0-00.md
-                        - name: Új vagy módosult elemek a 10.0.01-es verziójában
+                        - name: Újdonságok vagy változások a 10.0.01-es verzióban
                           href: localizations/apac-ind-news-letter-10-0-01.md
                         - name: Új vagy módosult elemek a 10.0.02-es verziójában
                           href: localizations/apac-ind-news-letter-10-0-02.md
@@ -1908,11 +1928,13 @@
                           href: localizations/apac-ind-news-letter-10-0-09.md
                         - name: Új vagy módosult elemek a 10.0.10-es verziójában
                           href: localizations/apac-ind-news-letter-10-0-10.md
-                        - name: Új vagy módosult elemek a 10.0.11-es verziójában
+                        - name: Újdonságok vagy változások a 10.0.11-es verzióban
                           href: localizations/apac-ind-news-letter-10-0-11.md
-                        - name: Új vagy módosult elemek a 10.0.12-es verziójában
+                        - name: Újdonságok vagy változások a 10.0.12-es verzióban
                           href: localizations/apac-ind-news-letter-10-0-12.md
-                    - name: Indiai GST-hivatkozáscsoportok
+                        - name: Újdonságok vagy változások a 10.0.13-as verzióban
+                          href: localizations/ind-news-letter-10-0-13.md
+                    - name: India GST hivatkozáscsoportjai
                       href: localizations/apac-ind-gst-reference-groups.md
                     - name: GST integrációja pénztárgépekhez
                       href: ../retail/localizations/apac-ind-cash-registers.md?toc=/dynamics365/finance/toc.json
@@ -2022,7 +2044,9 @@
                           href: localizations/apac-ind-GST-export-services-zero-rated-tax.md
                     - name: Készlettranzakció
                       items:
-                        - name: 'Készletmozgatási rendelések, ahol az átmozgatási ár adót tartalmaz'
+                        - name: Készletátmozgatási rendelések
+                          href: localizations/apac-ind-stock-transfer.md
+                        - name: 'Készletátmozgatási rendelések, ahol az átmozgatási ár adót tartalmaz'
                           href: localizations/apac-ind-GST-stock-transfer-transactions.md
                     - name: Vevői kifizetési tranzakció
                       items:
@@ -2076,8 +2100,6 @@
                       href: localizations/tax-engine-trouble-shooting.md
                 - name: Adóküszöbértékekre vonatkozó GYIK
                   href: localizations/apac-ind-tax-thresholds.md
-                - name: Készletmozgatások
-                  href: localizations/apac-ind-stock-transfer.md
             - name: Olaszország
               items:
                 - name: Olaszország – áttekintés

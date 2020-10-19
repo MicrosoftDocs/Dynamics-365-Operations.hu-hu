@@ -74,8 +74,8 @@
                   href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/commerce/toc.json
                 - name: Finance and Operations alkalmazások Franciaországban
                   href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/commerce/toc.json
-            - name: Támogatás kérése a Dynamics 365 Commerce alkalmazáshoz
-              href: retail-support.md
+            - name: Támogatás kérése
+              href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md?toc=/dynamics365/commerce/toc.json
             - name: Frissítés és N-1-támogatás
               items:
                 - name: Frissítés és N-1 támogatás a Commerce szolgáltatáshoz
@@ -92,6 +92,8 @@
                   items:
                     - name: Újdonságok vagy változások a Commerce kezdőlapján
                       href: get-started/whats-new-home-page.md
+                    - name: Commerce 10.0.15 (2021. január)
+                      href: get-started/whats-new-commerce-10-0-15.md
                     - name: Commerce 10.0.14 (2020. november)
                       href: get-started/whats-new-commerce-10-0-14.md
                     - name: Commerce 10.0.13 (2020. október)
@@ -274,6 +276,8 @@
                   href: ../fin-ops-core/fin-ops/get-started/move-licenses-between-agreement-types.md?toc=/dynamics365/commerce/toc.json
                 - name: LCS végrehajtási projektek áthelyezése másik Azure AD-bérlőkhöz
                   href: ../fin-ops-core/fin-ops/get-started/move-lcs-implementation-project-tenant.md?toc=/dynamics365/commerce/toc.json
+                - name: LCS végrehajtási projektek áthelyezése helyszíni verzióból a felhőbe
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/move-on-prem-to-cloud.md?toc=/dynamics365/commerce/toc.json
                 - name: Több LCS-projekt és gyártási környezet egyetlen Azure AD-bérlőnél
                   href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/commerce/toc.json
                 - name: Finance and Operations Commerce projektek megvalósítása
@@ -706,6 +710,8 @@
                   href: customer-orders-overview.md
                 - name: Hibrid vevői rendelések
                   href: hybrid-customer-orders.md
+                - name: Rendelési művelet visszahívása a pénztárban
+                  href: enhancedorderrecall.md
             - name: Értékesítési rendelések
               items:
                 - name: Hívásközponti rendelés létrehozása
@@ -780,8 +786,6 @@
               href: statement-posting-eod.md
             - name: Kötegelt nyomkövetésű cikkek továbbfejlesztett kezelése
               href: batch.md
-            - name: A Commerce kimutatásokat befolyásoló paraméterek konfigurálása
-              href: tasks/parameter-configurations-retail-statements.md
             - name: A kiskereskedelmi kimutatásokat befolyásoló fizetésimód-beállítások konfigurálása
               href: tasks/payment-configurations-retail-statements.md
             - name: Kimutatások számításához használt feladat konfigurálása és futtatása
@@ -864,11 +868,13 @@
                   href: add-manage-content.md
                 - name: Oldal modellszószedete
                   href: page-elements-overview.md
-                - name: Állapotok és életciklus-dokumentálás
+                - name: Állapotok és életciklus dokumentálása
                   href: document-states-overview.md
                 - name: A közzétételi csoportokkal végzett munka
                   href: publish-groups.md
-                - name: A webhely testreszabása és az áruház adatainak hozzáadása
+                - name: Csatornaközi megosztás engedélyezése és használata
+                  href: cross-channel-sharing.md
+                - name: Webhely arculatának testreszabása és az üzlet adatainak hozzáadása
                   items:
                     - name: Embléma hozzáadása
                       href: add-logo.md
@@ -1048,6 +1054,24 @@
               items:
                 - name: Online csatornajelentések készítése
                   href: generate-reports.md
+            - name: Kísérletezés
+              items:
+                - name: Kísérletezés a Dynamics 365 Commerce szolgáltatásban
+                  href: experimentation-overview.md
+                - name: Hipotézis meghatározása és mérőszámok megadása egy kísérlethez
+                  href: experimentation-identify.md
+                - name: Kísérlet beállítása
+                  href: experimentation-setup.md
+                - name: Kísérlet csatlakoztatása és szerkesztése
+                  href: experimentation-connect-edit.md
+                - name: Kísérlet előnézetének megtekintése és közzététele
+                  href: experimentation-preview-publish.md
+                - name: Kísérlet futtatása és nyomon követése
+                  href: experimentation-run-monitor.md
+                - name: Változat előléptetése és egy kísérlet végrehajtása
+                  href: experimentation-review-complete.md
+                - name: Kísérlet állapotának áttekintése
+                  href: experimentation-status.md
             - name: Hibakezelés
               items:
                 - name: Egyéni válaszlapok összeállítása a 4xx/5xx állapotkódhibákhoz
@@ -1076,10 +1100,16 @@
               href: localizations/fiscal-integration-for-retail-channel.md
             - name: A Commerce csatorna pénzügyi integrálásának beállítása
               href: localizations/setting-up-fiscal-integration-for-retail-channel.md
+            - name: A kiskereskedelmi üzletek felhasználó által megadott tanúsítványprofiljai
+              href: localizations/certificate-profiles-for-retail-stores.md
             - name: Ausztria
               items:
-                - name: Adóügyi regisztrációs szolgáltatás integrációját bemutató minta Ausztriára vonatkozóan
+                - name: Pénzügyi regisztrációs szolgáltatás integrációját bemutató minta Ausztriára vonatkozóan
                   href: localizations/emea-aut-fi-sample.md
+            - name: Brazília
+              items:
+                - name: Commerce honosítása Brazíliára vonatkozóan
+                  href: localizations/latam-bra-commerce-localization.md
             - name: Kelet-Európa
               items:
                 - name: Általános
@@ -2052,9 +2082,11 @@
                       href: e-commerce-extensibility/theme-module-extensions.md
                     - name: Téma kiterjesztése alaptémából
                       href: e-commerce-extensibility/extend-theme.md
+                    - name: Egyéni erőforrások hozzáadása a testreszabási kódhoz
+                      href: e-commerce-extensibility/add-custom-resources.md
                 - name: Parancsfájl betöltése
                   items:
-                    - name: Parancsfájl-betöltők
+                    - name: Parancsfájlbetöltők
                       href: e-commerce-extensibility/script-injector.md
                 - name: Összekötők
                   items:
@@ -2160,10 +2192,12 @@
                   href: dev-itpro/retail-server-customer-consumer-api.md
                 - name: Új Retail Server-bővítmény API létrehozása (Retail szoftverfejlesztői készlet (SDK) 10.0.11 és újabb)
                   href: dev-itpro/retail-server-icontroller-extension.md
-                - name: Új Retail Server-bővítmény API létrehozása (Retail szoftverfejlesztői készlet (SDK) 10.0.11 és korábbi)
+                - name: Új Retail Server-bővítmény API létrehozása (Retail szoftverfejlesztői készlet (SDK) 10.0.11 és korábbi verziók)
                   href: dev-itpro/retail-server-extension.md
                 - name: A Retail Typescript és a C# proxyk
                   href: dev-itpro/typescript-proxy-retail-pos.md
+                - name: Retail Server API-k felhasználása külső alkalmazásokban
+                  href: dev-itpro/consume-retail-server-api
             - name: A Commerce Runtime (CRT) bővíthetősége
               items:
                 - name: A CRT architektúrája és konfigurálása
