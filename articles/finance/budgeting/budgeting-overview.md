@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: 106043
 ms.assetid: 702f692e-ad1c-4798-8d3e-c3cf8591d3fa
 ms.search.region: Global
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5b56f56f5307c292ced30ec94d178244268c5e68
-ms.sourcegitcommit: 34395464ec80cea800b953eae49af579d436fc1b
+ms.openlocfilehash: 5a7a03e6149d3677ac4f35522e4898e1f62da329
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "2935442"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3975268"
 ---
 # <a name="budgeting-home-page"></a>Költségvetés-készítés – kezdőlap
 
@@ -40,7 +40,7 @@ A vállalatok erőforrás-tervezési ciklusa általában tervezési, költségve
 
 Mind a hosszú távú stratégiai tervezés, mind az éves költségvetés-tervezés folyamatait költségvetés-tervezési dokumentum segíti. A költségvetés-tervezési dokumentumok szorosan integrálódnak a Microsoft Excel alkalmazással. A felhasználók korlátlan számú monetáris és mennyiségi esetet konfigurálhatnak, és költségvetés-tervezési szervezeti hierarchiát is meghatározhatnak; a felülről lefelé, illetve az alulról fölfelé épülő költségvetés-tervezési módszereket egyaránt támogatja a rendszer. A költségvetés létrehozása és az alkalmazásban történő jóváhagyása után költségvetési tételjegyzék-bejegyzéssé konvertálhatja a költségvetési tervet. A költségvetési tételjegyzék-bejegyzésekkel karbantartható a költségvetés, és – költségvetési kódok segítségével – nyomon követhetők az összegek. A költségvetési tételjegyzék-bejegyzések segítségével felülvizsgálhatók az eredeti költségvetések, és áthozhatók az előző évi költségvetési összegek. A létrehozott költségvetés alapján a vállalat engedélyezheti a költségvetés-ellenőrzést. Az ellenőrzés szintje függ a szervezeti kultúrától és a szervezet érettségi szintjétől. Az alacsonyabb érettségi szintű szervezeteknél előfordulhat, hogy a költségvetést „adott állapotában” hagyják, és inkább reaktívan, mint proaktívan viselkednek, ha a költségvetés nem felel meg az elvárásoknak. Egyéb szervezeteknél előfordulhat olyan költségvetés-ellenőrzési irányelveket engedélyezhetnek, amelyek nem engedik a beszerzést a felhasználóknak, ha a költségvetési források nem érhetők el.
 
-A nagyon strukturált szervezetek olyan szervezeti kultúrát is kialakíthatnak, amelyben az alkalmazottak képzést kapnak a szervezeti célokról, és irányelveken keresztül valósítják meg ezeket a célokat (ilyen irányelv lehet például az „Online értekezletek esetleges használata utazás helyett”). Az alkalmazás olyan költségvetés-ellenőrzési keretrendszert is tartalmaz, amely lehetővé teszi a vállalat vezetésének, hogy válasszon a kemény szabályozás (amely megakadályozza a költségvetést túllépő feladásokat) és a puha szabályozás (amely figyelmezteti a felhasználókat, hogy túllépik az elérhető költségvetést, de ők eldönthetik, hogy hogyan cselekszenek) között. Végül pedig használhat gördülő előrejelzéseket is. A gördülő előrejelzés rendszeres összehasonlítás a költségvetés és a tényleges tételek között, és segítségével meghatározható, a cég milyen jól teljesíti a költségvetést. A gördülő előrejelzés trendek felfedezésére is szolgál. A Finance and Operations rendszerben a gördülő előrejelzések támogatása kezdeti tervezési tevékenységekként egy költségvetési tervezési dokumentumon keresztül történik. A gördülő előrejelzések elvégezhetőek a következő költségvetési tervezési ciklus tervezésével párhuzamosan.
+A nagyon strukturált szervezetek olyan szervezeti kultúrát is kialakíthatnak, amelyben az alkalmazottak képzést kapnak a szervezeti célokról, és irányelveken keresztül valósítják meg ezeket a célokat (ilyen irányelv lehet például az „Online értekezletek esetleges használata utazás helyett”). Az alkalmazás olyan költségvetés-ellenőrzési keretrendszert is tartalmaz, amely lehetővé teszi a vállalat vezetésének, hogy válasszon a kemény szabályozás (amely megakadályozza a költségvetést túllépő feladásokat) és a puha szabályozás (amely figyelmezteti a felhasználókat, hogy túllépik az elérhető költségvetést, de ők eldönthetik, hogy hogyan cselekszenek) között. Végül pedig használhat gördülő előrejelzéseket is. A gördülő előrejelzés rendszeres összehasonlítás a költségvetés és a tényleges tételek között, és segítségével meghatározható, a cég milyen jól teljesíti a költségvetést. A gördülő előrejelzés trendek felfedezésére is szolgál. A Finance and Operations szolgáltatásban a gördülő előrejelzések támogatása kezdeti tervezési tevékenységekként egy költségvetési tervezési dokumentumon keresztül történik. A gördülő előrejelzések elvégezhetőek a következő költségvetési tervezési ciklus tervezésével párhuzamosan.
 
 -   [Költségvetés-készítés áttekintése](basic-budgeting-overview-configuration.md)
 -   [Költségvetés-ellenőrzés áttekintése](budget-control-overview-configuration.md)

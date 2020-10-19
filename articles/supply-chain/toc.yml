@@ -70,12 +70,12 @@
                   items:
                     - name: Újdonságok és változások a Supply Chain Management kezdőlapján
                       href: get-started/whats-new-home-page.md
+                    - name: Supply Chain Management 10.0.15 (2020. december)
+                      href: get-started/whats-new-scm-10-0-15.md
                     - name: Supply Chain Management 10.0.14 (2020. november)
                       href: get-started/whats-new-scm-10-0-14.md
                     - name: Supply Chain Management 10.0.13 (2020. október)
                       href: get-started/whats-new-scm-10-0-13.md
-                    - name: Supply Chain Management 10.0.12 (2020. augusztus)
-                      href: get-started/whats-new-scm-10-0-12.md
                 - name: Eltávolított vagy elavult funkciók
                   items:
                     - name: Eltávolított vagy elavult funkciók a Dynamics 365 Supply Chain Management szolgáltatásban
@@ -194,14 +194,20 @@
                   href: ../fin-ops-core/fin-ops/get-started/move-licenses-between-agreement-types.md?toc=/dynamics365/supply-chain/toc.json
                 - name: LCS végrehajtási projektek áthelyezése másik Azure AD-bérlőkhöz
                   href: ../fin-ops-core/fin-ops/get-started/move-lcs-implementation-project-tenant.md?toc=/dynamics365/supply-chain/toc.json
+                - name: LCS végrehajtási projektek áthelyezése helyszíni verzióból a felhőbe
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/move-on-prem-to-cloud.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Több LCS-projekt és gyártási környezet egyetlen Azure AD-bérlőnél
                   href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/supply-chain/toc.json
         - name: Globalizáció
           items:
             - name: Globalizációs erőforrások
               href: ../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Jogszabály-követési frissítések
+            - name: Jogszabálykövetési frissítések
               href: ../finance/localizations/regulatory-updates.md?toc=/dynamics365/supply-chain/toc.json
+            - name: India
+              items:
+                - name: Készletátmozgatási rendelések
+                  href: ../finance/localizations/apac-ind-stock-transfer.md
             - name: Oroszország
               items:
                 - name: Oroszország – áttekintés
@@ -1407,9 +1413,11 @@
                   href: master-planning/supply-chain-calendars-master-planning.md
                 - name: Az alaptervezés teljesítményének javítása
                   href: master-planning/master-planning-performance.md
+                - name: Ütemezési motor teljesítményének javítása
+                  href: master-planning/scheduling-engine-performance.md
                 - name: Alaptervek és több telephelyes funkciók
                   items:
-                    - name: Az alaptervezés és a többhelyes funkció áttekintése
+                    - name: Az alaptervezés és a több telephelyes funkció áttekintése
                       href: master-planning/master-plan-multisite-functionality.md
                     - name: 'Alaptervezés telephely-lefedettséghez, kötelező raktár'
                       href: master-planning/master-plan-site-coverage-warehouse-mandatory.md
@@ -1935,10 +1943,12 @@
                       href: pim/tasks/add-expression-constraint-product-configuration-model.md
                     - name: Kalkuláció hozzáadása termékkonfigurációs modellhez
                       href: pim/tasks/add-calculation-product-configuration-model.md
-                    - name: Termékkonfigurációs modell anyagjegyzékének karbantartása
+                    - name: Termékkonfigurációs modell darabjegyzékének karbantartása
                       href: pim/tasks/maintain-bom-product-configuration-model.md
                     - name: Termékmodell útvonalának karbantartása
                       href: pim/tasks/maintain-route-product-model.md
+                    - name: Attribútumalapú eladási árak korlátokon alapuló termékkonfigurációhoz
+                      href: pim/attribute-based-product-configurator.md
                     - name: Termékkonfigurációs modell jóváhagyása
                       href: pim/tasks/approve-product-configuration-model.md
                     - name: Termékmodellekhez szükséges adatok továbbítása
@@ -2033,8 +2043,10 @@
                       href: production-control/report-production-orders-as-finished.md
                     - name: Feladatkártya konfigurálása az eszközökhöz
                       href: production-control/config-job-card-device.md
-                    - name: Jelentés befejezettként a feladatkártya eszközből
+                    - name: Jelentés befejezettként a feladatkártya-eszközből
                       href: production-control/report-finished-job-device.md
+                    - name: Vegyes valóságot alkalmazó útmutatók biztosítása a termelésben dolgozók számára
+                      href: production-control/instruction-guides-in-production-overview.md
                     - name: Termelési rendelési állapot sztornírozása
                       href: production-control/reverse-production-order-status.md
                     - name: Anyagkivételek láthatósága
@@ -2649,7 +2661,11 @@
                       href: warehousing/batch-and-license-plate-confirmation.md
                     - name: Azonosítótábla-címke nyomtatásának engedélyezése
                       href: warehousing/tasks/license-plate-label-printing.md
-                    - name: Darab kitárolásának megerősítése
+                    - name: Átmozgatási rendelések létrehozása a raktári alkalmazásból
+                      href: warehousing/create-transfer-order-from-warehouse-app.md
+                    - name: Raktári alkalmazás eseményeinek feldolgozása
+                      href: warehousing/warehouse-app-events.md
+                    - name: Darabkitárolás megerősítése
                       href: warehousing/piece-picking-confirmation.md
                     - name: Csomagolóanyagok és díjak
                       href: warehousing/pack-materials-packing-material-fees.md
@@ -2845,6 +2861,8 @@
                       href: warehousing/pick-oldest-batch.md
                     - name: Folyamatútmutató-keretrendszer
                       href: warehousing/process-guide-framework.md
+                    - name: Raktári alkalmazás kapcsolódási hibáinak hibaelhárítása
+                      href: warehousing/troubleshoot-warehouse-app-connection.md
                 - name: Frissítés és áttelepítés
                   items:
                     - name: A raktárkezelési folyamatok frissítése Microsoft Dynamics AX 2012-ről Finance and Operations szolgáltatásra
