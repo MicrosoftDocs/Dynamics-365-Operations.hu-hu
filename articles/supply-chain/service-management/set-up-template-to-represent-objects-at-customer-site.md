@@ -15,42 +15,42 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 35c7237bd84aeb13f6c24626a6aaa722f8ad5756
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 823ef5cddbba8a72bd67ba87edd1aa497022a81e
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3206703"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3981793"
 ---
-# <a name="set-up-template-to-represent-objects-at-customer-site"></a><span data-ttu-id="bef75-103">Sablon beállítása objektumok jelölésére vevőoldalon.</span><span class="sxs-lookup"><span data-stu-id="bef75-103">Set up template to represent objects at customer site</span></span> 
+# <a name="set-up-template-to-represent-objects-at-customer-site"></a><span data-ttu-id="bf685-103">Sablon beállítása objektumok jelölésére vevőoldalon.</span><span class="sxs-lookup"><span data-stu-id="bf685-103">Set up template to represent objects at customer site</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="bef75-104">Az alábbi eljárással létrehozhat egy sablont, amely objektumokat képvisel egy ügyfél telephelyén.</span><span class="sxs-lookup"><span data-stu-id="bef75-104">Use this procedure to set up a template that represents objects at a customer site.</span></span>
+<span data-ttu-id="bf685-104">Az alábbi eljárással létrehozhat egy sablont, amely objektumokat képvisel egy ügyfél telephelyén.</span><span class="sxs-lookup"><span data-stu-id="bf685-104">Use this procedure to set up a template that represents objects at a customer site.</span></span>
 
-1.  <span data-ttu-id="bef75-105">Kattintson a **Szolgáltatáskezelés** \> **Közös** \> **Szolgáltatási szerződések** \> **Szolgáltatási szerződések** lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="bef75-105">Click **Service management** \> **Common** \> **Service agreements** \> **Service agreements**.</span></span>
+1.  <span data-ttu-id="bf685-105">Kattintson a **Szolgáltatáskezelés** \> **Közös** \> **Szolgáltatási szerződések** \> **Szolgáltatási szerződések** lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="bf685-105">Click **Service management** \> **Common** \> **Service agreements** \> **Service agreements** .</span></span>
 
-2.  <span data-ttu-id="bef75-106">Kattintson duplán egy szolgáltatási szerződésre, vagy kattintson a **Szolgáltatási szerződés** lehetőségre új szolgáltatási szerződés létrehozásához.</span><span class="sxs-lookup"><span data-stu-id="bef75-106">Double-click a service agreement, or click **Service agreement** to create a new service agreement.</span></span>
+2.  <span data-ttu-id="bf685-106">Kattintson duplán egy szolgáltatási szerződésre, vagy kattintson a **Szolgáltatási szerződés** lehetőségre új szolgáltatási szerződés létrehozásához.</span><span class="sxs-lookup"><span data-stu-id="bf685-106">Double-click a service agreement, or click **Service agreement** to create a new service agreement.</span></span>
 
-3.  <span data-ttu-id="bef75-107">Kattintson a **Beállítás** fülre.</span><span class="sxs-lookup"><span data-stu-id="bef75-107">Click the **Setup** tab.</span></span>
+3.  <span data-ttu-id="bf685-107">Kattintson a **Beállítás** fülre.</span><span class="sxs-lookup"><span data-stu-id="bf685-107">Click the **Setup** tab.</span></span>
 
-4.  <span data-ttu-id="bef75-108">Kattintson **A szolgáltatás tárgyai** lehetőségre, ha csatolni szeretne egy darabjegyzéksablont a szolgáltatási szerződéshez.</span><span class="sxs-lookup"><span data-stu-id="bef75-108">Click **Service objects** to attach a template bill of materials (BOM) to the service agreement.</span></span>
+4.  <span data-ttu-id="bf685-108">Kattintson **A szolgáltatás tárgyai** lehetőségre, ha csatolni szeretne egy darabjegyzéksablont a szolgáltatási szerződéshez.</span><span class="sxs-lookup"><span data-stu-id="bf685-108">Click **Service objects** to attach a template bill of materials (BOM) to the service agreement.</span></span>
 
-5.  <span data-ttu-id="bef75-109">Válassza ki a szolgáltatási tárgyat **A szolgáltatás tárgyai** képernyőn, majd kattintson a következőre: **Funkciók** \> **Sablon AJ csatolása**.</span><span class="sxs-lookup"><span data-stu-id="bef75-109">In the **Service objects** form, select a service object, and then click **Functions** \> **Attach template BOM**.</span></span>
+5.  <span data-ttu-id="bf685-109">Válassza ki a szolgáltatási tárgyat **A szolgáltatás tárgyai** képernyőn, majd kattintson a következőre: **Funkciók** \> **Sablon AJ csatolása** .</span><span class="sxs-lookup"><span data-stu-id="bf685-109">In the **Service objects** form, select a service object, and then click **Functions** \> **Attach template BOM** .</span></span>
 
-6.  <span data-ttu-id="bef75-110">A **Sablon AJ csatolása** képernyőn válasszon ki egy darabjegyzéksablont a **Sablonanyagjegyzék** listáról, majd kattintson az **OK** gombra.</span><span class="sxs-lookup"><span data-stu-id="bef75-110">In the **Select template BOM** form, select a template BOM in the **Template BOM** field, and then click **OK**.</span></span>
+6.  <span data-ttu-id="bf685-110">A **Sablon AJ csatolása** képernyőn válasszon ki egy darabjegyzéksablont a **Sablonanyagjegyzék** listáról, majd kattintson az **OK** gombra.</span><span class="sxs-lookup"><span data-stu-id="bf685-110">In the **Select template BOM** form, select a template BOM in the **Template BOM** field, and then click **OK** .</span></span>
 
-7.  <span data-ttu-id="bef75-111">Kattintson **A szolgáltatás tárgyai** képernyő **Tervező** gombjára, és módosítsa a sablonanyagjegyzék sorait, hogy az anyagjegyzék megfeleljen a kívánt tárgynak.</span><span class="sxs-lookup"><span data-stu-id="bef75-111">In the **Service objects** form, click **Designer** to modify the template BOM so that the BOM represents the objects that you want.</span></span>
+7.  <span data-ttu-id="bf685-111">Kattintson **A szolgáltatás tárgyai** képernyő **Tervező** gombjára, és módosítsa a sablonanyagjegyzék sorait, hogy az anyagjegyzék megfeleljen a kívánt tárgynak.</span><span class="sxs-lookup"><span data-stu-id="bf685-111">In the **Service objects** form, click **Designer** to modify the template BOM so that the BOM represents the objects that you want.</span></span>
 
-8.  <span data-ttu-id="bef75-112">A változtatások mentéséhez zárja be a képernyőket.</span><span class="sxs-lookup"><span data-stu-id="bef75-112">Close the forms to save your changes.</span></span>
+8.  <span data-ttu-id="bf685-112">A változtatások mentéséhez zárja be a képernyőket.</span><span class="sxs-lookup"><span data-stu-id="bf685-112">Close the forms to save your changes.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="bef75-113">Lásd még</span><span class="sxs-lookup"><span data-stu-id="bef75-113">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="bf685-113">Lásd még</span><span class="sxs-lookup"><span data-stu-id="bf685-113">See also</span></span>
 
-[<span data-ttu-id="bef75-114">Anyagjegyzéksablonok kezelése tárgykapcsolatokon</span><span class="sxs-lookup"><span data-stu-id="bef75-114">Manage template BOMs on object relations</span></span>](manage-template-boms-on-object-relations.md)
+[<span data-ttu-id="bf685-114">Anyagjegyzéksablonok kezelése tárgykapcsolatokon</span><span class="sxs-lookup"><span data-stu-id="bf685-114">Manage template BOMs on object relations</span></span>](manage-template-boms-on-object-relations.md)
 
   
 

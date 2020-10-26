@@ -13,30 +13,30 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: fde4170c869bbc43e7e94bb6d36ed8fd645a564d
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 77b156a4710fd574b939a1e930fbb8ac38acde15
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3203641"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3985389"
 ---
-# <a name="define-configuration-groups"></a><span data-ttu-id="f603e-103">Konfigurációs csoportok meghatározása</span><span class="sxs-lookup"><span data-stu-id="f603e-103">Define configuration groups</span></span>
+# <a name="define-configuration-groups"></a><span data-ttu-id="aa23c-103">Konfigurációs csoportok meghatározása</span><span class="sxs-lookup"><span data-stu-id="aa23c-103">Define configuration groups</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="f603e-104">Ez az eljárás bemutatja, hogyan határozhatja meg a termékkonfigurációs csoportokat az USMF bemutatócégben két csoport létrehozásával.</span><span class="sxs-lookup"><span data-stu-id="f603e-104">This procedure shows how to define product configuration groups by creating two groups in the demo data company USMF Company.</span></span> <span data-ttu-id="f603e-105">Ez a negyedik eljárás a nyolcból, amely a dimenzión alapuló konfiguráció-kombinációk létrehozását ismerteti.</span><span class="sxs-lookup"><span data-stu-id="f603e-105">This is the fourth procedure out of eight which explains how to build combinations for dimension-based configuration.</span></span>
+<span data-ttu-id="aa23c-104">Ez az eljárás bemutatja, hogyan határozhatja meg a termékkonfigurációs csoportokat az USMF bemutatócégben két csoport létrehozásával.</span><span class="sxs-lookup"><span data-stu-id="aa23c-104">This procedure shows how to define product configuration groups by creating two groups in the demo data company USMF Company.</span></span> <span data-ttu-id="aa23c-105">Ez a negyedik eljárás a nyolcból, amely a dimenzión alapuló konfiguráció-kombinációk létrehozását ismerteti.</span><span class="sxs-lookup"><span data-stu-id="aa23c-105">This is the fourth procedure out of eight which explains how to build combinations for dimension-based configuration.</span></span>
 
-1. <span data-ttu-id="f603e-106">Ugorjon a Termékinformációk kezelése > Beállítás > Anyagjegyzékek és képletek > Konfigurációs csoportok pontra.</span><span class="sxs-lookup"><span data-stu-id="f603e-106">Go to Product information management > Setup > Bills of materials and formulas > Configuration groups.</span></span>
-2. <span data-ttu-id="f603e-107">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="f603e-107">Click New.</span></span>
-3. <span data-ttu-id="f603e-108">Írjon be egy értéket a Konfigurációs csoport mezőbe.</span><span class="sxs-lookup"><span data-stu-id="f603e-108">In the Configuration group field, type a value.</span></span>
-    * <span data-ttu-id="f603e-109">Írja be az anyagjegyzéksorokhoz használni kívánt konfigurációs csoport nevét.</span><span class="sxs-lookup"><span data-stu-id="f603e-109">Type a name for the configuration group that will be used for the bill of material lines.</span></span>  
-4. <span data-ttu-id="f603e-110">Írjon be egy értéket a Név mezőbe.</span><span class="sxs-lookup"><span data-stu-id="f603e-110">In the Name field, type a value.</span></span>
-5. <span data-ttu-id="f603e-111">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="f603e-111">Click New.</span></span>
-6. <span data-ttu-id="f603e-112">Írjon be egy értéket a Konfigurációs csoport mezőbe.</span><span class="sxs-lookup"><span data-stu-id="f603e-112">In the Configuration group field, type a value.</span></span>
-    * <span data-ttu-id="f603e-113">Írja be az anyagjegyzéksorokhoz használni kívánt konfigurációs csoport nevét.</span><span class="sxs-lookup"><span data-stu-id="f603e-113">Type a name for the configuration group that will be used for the bill of material lines.</span></span>  
-7. <span data-ttu-id="f603e-114">Írjon be egy értéket a Név mezőbe.</span><span class="sxs-lookup"><span data-stu-id="f603e-114">In the Name field, type a value.</span></span>
-8. <span data-ttu-id="f603e-115">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="f603e-115">Close the page.</span></span>
+1. <span data-ttu-id="aa23c-106">Ugorjon a Termékinformációk kezelése > Beállítás > Anyagjegyzékek és képletek > Konfigurációs csoportok pontra.</span><span class="sxs-lookup"><span data-stu-id="aa23c-106">Go to Product information management > Setup > Bills of materials and formulas > Configuration groups.</span></span>
+2. <span data-ttu-id="aa23c-107">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="aa23c-107">Click New.</span></span>
+3. <span data-ttu-id="aa23c-108">Írjon be egy értéket a Konfigurációs csoport mezőbe.</span><span class="sxs-lookup"><span data-stu-id="aa23c-108">In the Configuration group field, type a value.</span></span>
+    * <span data-ttu-id="aa23c-109">Írja be az anyagjegyzéksorokhoz használni kívánt konfigurációs csoport nevét.</span><span class="sxs-lookup"><span data-stu-id="aa23c-109">Type a name for the configuration group that will be used for the bill of material lines.</span></span>  
+4. <span data-ttu-id="aa23c-110">Írjon be egy értéket a Név mezőbe.</span><span class="sxs-lookup"><span data-stu-id="aa23c-110">In the Name field, type a value.</span></span>
+5. <span data-ttu-id="aa23c-111">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="aa23c-111">Click New.</span></span>
+6. <span data-ttu-id="aa23c-112">Írjon be egy értéket a Konfigurációs csoport mezőbe.</span><span class="sxs-lookup"><span data-stu-id="aa23c-112">In the Configuration group field, type a value.</span></span>
+    * <span data-ttu-id="aa23c-113">Írja be az anyagjegyzéksorokhoz használni kívánt konfigurációs csoport nevét.</span><span class="sxs-lookup"><span data-stu-id="aa23c-113">Type a name for the configuration group that will be used for the bill of material lines.</span></span>  
+7. <span data-ttu-id="aa23c-114">Írjon be egy értéket a Név mezőbe.</span><span class="sxs-lookup"><span data-stu-id="aa23c-114">In the Name field, type a value.</span></span>
+8. <span data-ttu-id="aa23c-115">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="aa23c-115">Close the page.</span></span>
 

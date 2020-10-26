@@ -13,33 +13,33 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0bf15359e085b541407bb49c266f7d9505893e25
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 2a4745fe4fc44f85bcfd388ee573f5a6d0cd8519
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3203710"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3986168"
 ---
-# <a name="create-a-new-product"></a><span data-ttu-id="98a2d-103">Új termék létrehozása</span><span class="sxs-lookup"><span data-stu-id="98a2d-103">Create a new product</span></span>
+# <a name="create-a-new-product"></a><span data-ttu-id="311a2-103">Új termék létrehozása</span><span class="sxs-lookup"><span data-stu-id="311a2-103">Create a new product</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="98a2d-104">Ez a témakör azt mutatja be, hogyan lehet új megosztott terméket létrehozni.</span><span class="sxs-lookup"><span data-stu-id="98a2d-104">This topic describes how to create a new shared product.</span></span> <span data-ttu-id="98a2d-105">Ezt az eljárást általában a termék tervező végzi.</span><span class="sxs-lookup"><span data-stu-id="98a2d-105">It is usually carried out by a product designer.</span></span> <span data-ttu-id="98a2d-106">A feladat létrehozásához az USMF bemutató vállalatot használtuk példaként.</span><span class="sxs-lookup"><span data-stu-id="98a2d-106">The demo data company used to create this task is USMF.</span></span>
+<span data-ttu-id="311a2-104">Ez a témakör azt mutatja be, hogyan lehet új megosztott terméket létrehozni.</span><span class="sxs-lookup"><span data-stu-id="311a2-104">This topic describes how to create a new shared product.</span></span> <span data-ttu-id="311a2-105">Ezt az eljárást általában a termék tervező végzi.</span><span class="sxs-lookup"><span data-stu-id="311a2-105">It is usually carried out by a product designer.</span></span> <span data-ttu-id="311a2-106">A feladat létrehozásához az USMF bemutató vállalatot használtuk példaként.</span><span class="sxs-lookup"><span data-stu-id="311a2-106">The demo data company used to create this task is USMF.</span></span>
 
 
-## <a name="create-a-product"></a><span data-ttu-id="98a2d-107">Termék létrehozása</span><span class="sxs-lookup"><span data-stu-id="98a2d-107">Create a product</span></span>
-1. <span data-ttu-id="98a2d-108">A Navigációs ablaktáblán ugorjon a **Modulok > Termékinformációk kezelése > Termékek > Termékek** lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="98a2d-108">In the Navigation pane, go to **Modules > Product information management > Products > Products**.</span></span>
-2. <span data-ttu-id="98a2d-109">Válassza az **Új** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="98a2d-109">Select **New**.</span></span>
-3. <span data-ttu-id="98a2d-110">Írjon be egy értéket a **Termékszám** mezőbe.</span><span class="sxs-lookup"><span data-stu-id="98a2d-110">In the **Product number** field, type a value.</span></span> <span data-ttu-id="98a2d-111">Ha a számsorozatot nem állították be a termékszámra vonatkozóan, akkor manuálisan kell megadni.</span><span class="sxs-lookup"><span data-stu-id="98a2d-111">If a number sequence has not been set up for the product number, it must be entered manually.</span></span>  
-4. <span data-ttu-id="98a2d-112">Írjon be egy értéket a **Terméknév** mezőbe.</span><span class="sxs-lookup"><span data-stu-id="98a2d-112">In the **Product name** field, type a value.</span></span> <span data-ttu-id="98a2d-113">A Termék neve az alapértelmezett keresési név.</span><span class="sxs-lookup"><span data-stu-id="98a2d-113">The product name defaults to the search name.</span></span> <span data-ttu-id="98a2d-114">Ez szükség szerint módosítható.</span><span class="sxs-lookup"><span data-stu-id="98a2d-114">You can change this if needed.</span></span>  
-5. <span data-ttu-id="98a2d-115">Válassza ki az **OK** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="98a2d-115">Select **OK**.</span></span>
+## <a name="create-a-product"></a><span data-ttu-id="311a2-107">Termék létrehozása</span><span class="sxs-lookup"><span data-stu-id="311a2-107">Create a product</span></span>
+1. <span data-ttu-id="311a2-108">A Navigációs ablaktáblán ugorjon a **Modulok > Termékinformációk kezelése > Termékek > Termékek** lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="311a2-108">In the Navigation pane, go to **Modules > Product information management > Products > Products** .</span></span>
+2. <span data-ttu-id="311a2-109">Válassza az **Új** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="311a2-109">Select **New** .</span></span>
+3. <span data-ttu-id="311a2-110">Írjon be egy értéket a **Termékszám** mezőbe.</span><span class="sxs-lookup"><span data-stu-id="311a2-110">In the **Product number** field, type a value.</span></span> <span data-ttu-id="311a2-111">Ha a számsorozatot nem állították be a termékszámra vonatkozóan, akkor manuálisan kell megadni.</span><span class="sxs-lookup"><span data-stu-id="311a2-111">If a number sequence has not been set up for the product number, it must be entered manually.</span></span>  
+4. <span data-ttu-id="311a2-112">Írjon be egy értéket a **Terméknév** mezőbe.</span><span class="sxs-lookup"><span data-stu-id="311a2-112">In the **Product name** field, type a value.</span></span> <span data-ttu-id="311a2-113">A Termék neve az alapértelmezett keresési név.</span><span class="sxs-lookup"><span data-stu-id="311a2-113">The product name defaults to the search name.</span></span> <span data-ttu-id="311a2-114">Ez szükség szerint módosítható.</span><span class="sxs-lookup"><span data-stu-id="311a2-114">You can change this if needed.</span></span>  
+5. <span data-ttu-id="311a2-115">Válassza ki az **OK** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="311a2-115">Select **OK** .</span></span>
 
-## <a name="set-up-dimension-groups"></a><span data-ttu-id="98a2d-116">Állítsa be a Dimenziócsoportok lehetőséget</span><span class="sxs-lookup"><span data-stu-id="98a2d-116">Set up dimension groups</span></span>
-1. <span data-ttu-id="98a2d-117">A **Méretcsoportok** gombra kattintva megnyithatja a legördülő párbeszédablakot.</span><span class="sxs-lookup"><span data-stu-id="98a2d-117">Select **Dimension groups** to open the drop dialog.</span></span>
-2. <span data-ttu-id="98a2d-118">A **Tárolási dimenziócsoport** mezőben adjon meg, vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="98a2d-118">In the **Storage dimension group** field, enter or select a value.</span></span> <span data-ttu-id="98a2d-119">A tárolásidimenzió-csoport határozza meg, hogy mely tárolási dimenziót kell megadni termék minden egyes tranzakciójában és hogy hogyan követi nyomon a rendszer a készletben.</span><span class="sxs-lookup"><span data-stu-id="98a2d-119">The storage dimension group determines which storage dimensions you must enter on each transaction for the product and how it will be tracked in inventory.</span></span>  
-3. <span data-ttu-id="98a2d-120">A **Nyomon követési dimenziócsoport** mezőben adjon meg, vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="98a2d-120">In the **Tracking dimension group** field, enter or select a value.</span></span> <span data-ttu-id="98a2d-121">A tárolásidimenzió-csoport határozza meg, hogy mely nyomon követési dimenzióit kell megadni termék minden egyes tranzakciójában és hogy hogyan kezeli a rendszer a készletben.</span><span class="sxs-lookup"><span data-stu-id="98a2d-121">The tracking dimension group determines which tracking dimensions you must enter for each transaction for the product, and how it will be handled in inventory.</span></span>  
-4. <span data-ttu-id="98a2d-122">Válassza ki az **OK** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="98a2d-122">Select **OK**.</span></span>
+## <a name="set-up-dimension-groups"></a><span data-ttu-id="311a2-116">Állítsa be a Dimenziócsoportok lehetőséget</span><span class="sxs-lookup"><span data-stu-id="311a2-116">Set up dimension groups</span></span>
+1. <span data-ttu-id="311a2-117">A **Méretcsoportok** gombra kattintva megnyithatja a legördülő párbeszédablakot.</span><span class="sxs-lookup"><span data-stu-id="311a2-117">Select **Dimension groups** to open the drop dialog.</span></span>
+2. <span data-ttu-id="311a2-118">A **Tárolási dimenziócsoport** mezőben adjon meg, vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="311a2-118">In the **Storage dimension group** field, enter or select a value.</span></span> <span data-ttu-id="311a2-119">A tárolásidimenzió-csoport határozza meg, hogy mely tárolási dimenziót kell megadni termék minden egyes tranzakciójában és hogy hogyan követi nyomon a rendszer a készletben.</span><span class="sxs-lookup"><span data-stu-id="311a2-119">The storage dimension group determines which storage dimensions you must enter on each transaction for the product and how it will be tracked in inventory.</span></span>  
+3. <span data-ttu-id="311a2-120">A **Nyomon követési dimenziócsoport** mezőben adjon meg, vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="311a2-120">In the **Tracking dimension group** field, enter or select a value.</span></span> <span data-ttu-id="311a2-121">A tárolásidimenzió-csoport határozza meg, hogy mely nyomon követési dimenzióit kell megadni termék minden egyes tranzakciójában és hogy hogyan kezeli a rendszer a készletben.</span><span class="sxs-lookup"><span data-stu-id="311a2-121">The tracking dimension group determines which tracking dimensions you must enter for each transaction for the product, and how it will be handled in inventory.</span></span>  
+4. <span data-ttu-id="311a2-122">Válassza ki az **OK** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="311a2-122">Select **OK** .</span></span>
 

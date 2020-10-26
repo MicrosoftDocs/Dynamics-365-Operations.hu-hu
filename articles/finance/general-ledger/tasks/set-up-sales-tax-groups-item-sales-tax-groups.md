@@ -13,40 +13,40 @@ audience: Application User
 ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: vstehman
+ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 126e1de2d59d33fd7a5df1e011aa8c1aff63dfc6
-ms.sourcegitcommit: ac47e8679fb104515f7dcca509294264bd05d2b1
+ms.openlocfilehash: 24210129f7595c6544234c20915f4003bf0e1eb8
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "3454665"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3984697"
 ---
-# <a name="set-up-sales-tax-groups-and-item-sales-tax-groups"></a><span data-ttu-id="a576e-103">Adócsoportok és cikkáfacsoportok beállítása</span><span class="sxs-lookup"><span data-stu-id="a576e-103">Set up sales tax groups and item sales tax groups</span></span>
+# <a name="set-up-sales-tax-groups-and-item-sales-tax-groups"></a><span data-ttu-id="7cb25-103">Adócsoportok és cikkáfacsoportok beállítása</span><span class="sxs-lookup"><span data-stu-id="7cb25-103">Set up sales tax groups and item sales tax groups</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="a576e-104">Ez a feladatfelvétel végigvezeti az Áfa- és Cikkáfacsoportok létrehozásának lépésein.</span><span class="sxs-lookup"><span data-stu-id="a576e-104">This task recording walks you through the setup of Sales tax and Item sales tax groups.</span></span> <span data-ttu-id="a576e-105">Az áfacsoportok a vevőkhöz és szállítókhoz társított áfakódok csoportjai.</span><span class="sxs-lookup"><span data-stu-id="a576e-105">Sales tax groups are groups of sales tax codes that are attached to customers and vendors.</span></span> <span data-ttu-id="a576e-106">Főkönyvi számlákhoz is hozzá vannak rendelve olyan tranzakcióknál, amelyek nem kerülnek feladásra konkrét szállítóra vagy vevőre.</span><span class="sxs-lookup"><span data-stu-id="a576e-106">They are also attached to ledger accounts for transactions that are not posted to a particular vendor or customer.</span></span>  <span data-ttu-id="a576e-107">A Cikkáfacsoportok az erőforrásokhoz, például termékekhez rendelt áfakódok csoportjai.</span><span class="sxs-lookup"><span data-stu-id="a576e-107">Item sales tax groups are groups of sales tax codes that are attached to resources like products.</span></span>  <span data-ttu-id="a576e-108">Az egyes tranzakciókra alkalmazandó áfakódok azok az áfakódok, amelyek mind az áfacsoportban, mind a tranzakció cikkáfacsoportjában szerepelnek.</span><span class="sxs-lookup"><span data-stu-id="a576e-108">The sales taxes that apply to a particular transaction are determined by the sales tax codes that are included both in the sales tax group and in the item sales tax group of the transaction.</span></span>  <span data-ttu-id="a576e-109">Az áfa kiszámításához szükséges, hogy minden olyan tranzakciónál, amelyre áfát kell számítani vagy rögzíteni, ki legyen választva egy áfacsoport és egy cikkáfacsoport.</span><span class="sxs-lookup"><span data-stu-id="a576e-109">Sales tax can be calculated only if a sales tax group and an item sales tax group are selected for each transaction for which sales tax must be calculated or recorded.</span></span>  
+<span data-ttu-id="7cb25-104">Ez a feladatfelvétel végigvezeti az Áfa- és Cikkáfacsoportok létrehozásának lépésein.</span><span class="sxs-lookup"><span data-stu-id="7cb25-104">This task recording walks you through the setup of Sales tax and Item sales tax groups.</span></span> <span data-ttu-id="7cb25-105">Az áfacsoportok a vevőkhöz és szállítókhoz társított áfakódok csoportjai.</span><span class="sxs-lookup"><span data-stu-id="7cb25-105">Sales tax groups are groups of sales tax codes that are attached to customers and vendors.</span></span> <span data-ttu-id="7cb25-106">Főkönyvi számlákhoz is hozzá vannak rendelve olyan tranzakcióknál, amelyek nem kerülnek feladásra konkrét szállítóra vagy vevőre.</span><span class="sxs-lookup"><span data-stu-id="7cb25-106">They are also attached to ledger accounts for transactions that are not posted to a particular vendor or customer.</span></span>  <span data-ttu-id="7cb25-107">A Cikkáfacsoportok az erőforrásokhoz, például termékekhez rendelt áfakódok csoportjai.</span><span class="sxs-lookup"><span data-stu-id="7cb25-107">Item sales tax groups are groups of sales tax codes that are attached to resources like products.</span></span>  <span data-ttu-id="7cb25-108">Az egyes tranzakciókra alkalmazandó áfakódok azok az áfakódok, amelyek mind az áfacsoportban, mind a tranzakció cikkáfacsoportjában szerepelnek.</span><span class="sxs-lookup"><span data-stu-id="7cb25-108">The sales taxes that apply to a particular transaction are determined by the sales tax codes that are included both in the sales tax group and in the item sales tax group of the transaction.</span></span>  <span data-ttu-id="7cb25-109">Az áfa kiszámításához szükséges, hogy minden olyan tranzakciónál, amelyre áfát kell számítani vagy rögzíteni, ki legyen választva egy áfacsoport és egy cikkáfacsoport.</span><span class="sxs-lookup"><span data-stu-id="7cb25-109">Sales tax can be calculated only if a sales tax group and an item sales tax group are selected for each transaction for which sales tax must be calculated or recorded.</span></span>  
 
-1. <span data-ttu-id="a576e-110">Ugorjon a **Navigációs ablaktábla >Modulok > Adók > Közvetett adók > Áfa > Áfacsoportok** lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="a576e-110">Go to **Navigation pane > Modules > Tax > Indirect taxes > Sales tax > Sales tax groups**.</span></span>
-2. <span data-ttu-id="a576e-111">Kattintson az **Új** elemre.</span><span class="sxs-lookup"><span data-stu-id="a576e-111">Click **New**.</span></span>
-3. <span data-ttu-id="a576e-112">Az **Áfacsoport** mezőbe írjon be egy értéket.</span><span class="sxs-lookup"><span data-stu-id="a576e-112">In the **Sales tax group** field, type a value.</span></span>
-4. <span data-ttu-id="a576e-113">Írjon egy értéket a **Leírás** mezőbe.</span><span class="sxs-lookup"><span data-stu-id="a576e-113">In the **Description** field, type a value.</span></span>
-5. <span data-ttu-id="a576e-114">Váltsa át a **Beállítás** szakasz kibontását.</span><span class="sxs-lookup"><span data-stu-id="a576e-114">Toggle the expansion of the **Setup** section.</span></span>
-6. <span data-ttu-id="a576e-115">Kattintson a **Hozzáadás** parancsra.</span><span class="sxs-lookup"><span data-stu-id="a576e-115">Click **Add**.</span></span>
-7. <span data-ttu-id="a576e-116">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="a576e-116">In the list, mark the selected row.</span></span>
-8. <span data-ttu-id="a576e-117">Az **Áfakód** mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="a576e-117">In the **Sales tax code** field, click the drop-down button to open the lookup.</span></span>
-9. <span data-ttu-id="a576e-118">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="a576e-118">In the list, click the link in the selected row.</span></span>
-10. <span data-ttu-id="a576e-119">Kattintson a **Mentés** gombra.</span><span class="sxs-lookup"><span data-stu-id="a576e-119">Click **Save**.</span></span>
-11. <span data-ttu-id="a576e-120">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="a576e-120">Close the page.</span></span>
-12. <span data-ttu-id="a576e-121">Ugorjon az **Adó > Közvetett adók > Áfa > Áfacsoportok** pontra.</span><span class="sxs-lookup"><span data-stu-id="a576e-121">Go to **Tax > Indirect taxes > Sales tax > Item sales tax groups**.</span></span>
-13. <span data-ttu-id="a576e-122">Kattintson az **Új** elemre.</span><span class="sxs-lookup"><span data-stu-id="a576e-122">Click **New**.</span></span>
-14. <span data-ttu-id="a576e-123">A **Cikkáfacsoport** mezőbe írjon be egy értéket.</span><span class="sxs-lookup"><span data-stu-id="a576e-123">In the **Item sales tax group** field, type a value.</span></span>
-15. <span data-ttu-id="a576e-124">Írjon egy értéket a **Leírás** mezőbe.</span><span class="sxs-lookup"><span data-stu-id="a576e-124">In the **Description** field, type a value.</span></span>
-16. <span data-ttu-id="a576e-125">Kattintson a **Hozzáadás** parancsra.</span><span class="sxs-lookup"><span data-stu-id="a576e-125">Click **Add**.</span></span>
-17. <span data-ttu-id="a576e-126">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="a576e-126">In the list, mark the selected row.</span></span>
-18. <span data-ttu-id="a576e-127">Az **Áfakód** mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="a576e-127">In the **Sales tax code** field, click the drop-down button to open the lookup.</span></span>
-19. <span data-ttu-id="a576e-128">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="a576e-128">In the list, click the link in the selected row.</span></span>
-20. <span data-ttu-id="a576e-129">Kattintson a **Mentés** gombra.</span><span class="sxs-lookup"><span data-stu-id="a576e-129">Click **Save**.</span></span>
+1. <span data-ttu-id="7cb25-110">Ugorjon a **Navigációs ablaktábla >Modulok > Adók > Közvetett adók > Áfa > Áfacsoportok** lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="7cb25-110">Go to **Navigation pane > Modules > Tax > Indirect taxes > Sales tax > Sales tax groups** .</span></span>
+2. <span data-ttu-id="7cb25-111">Kattintson az **Új** elemre.</span><span class="sxs-lookup"><span data-stu-id="7cb25-111">Click **New** .</span></span>
+3. <span data-ttu-id="7cb25-112">Az **Áfacsoport** mezőbe írjon be egy értéket.</span><span class="sxs-lookup"><span data-stu-id="7cb25-112">In the **Sales tax group** field, type a value.</span></span>
+4. <span data-ttu-id="7cb25-113">Írjon egy értéket a **Leírás** mezőbe.</span><span class="sxs-lookup"><span data-stu-id="7cb25-113">In the **Description** field, type a value.</span></span>
+5. <span data-ttu-id="7cb25-114">Váltsa át a **Beállítás** szakasz kibontását.</span><span class="sxs-lookup"><span data-stu-id="7cb25-114">Toggle the expansion of the **Setup** section.</span></span>
+6. <span data-ttu-id="7cb25-115">Kattintson a **Hozzáadás** parancsra.</span><span class="sxs-lookup"><span data-stu-id="7cb25-115">Click **Add** .</span></span>
+7. <span data-ttu-id="7cb25-116">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="7cb25-116">In the list, mark the selected row.</span></span>
+8. <span data-ttu-id="7cb25-117">Az **Áfakód** mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="7cb25-117">In the **Sales tax code** field, click the drop-down button to open the lookup.</span></span>
+9. <span data-ttu-id="7cb25-118">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="7cb25-118">In the list, click the link in the selected row.</span></span>
+10. <span data-ttu-id="7cb25-119">Kattintson a **Mentés** gombra.</span><span class="sxs-lookup"><span data-stu-id="7cb25-119">Click **Save** .</span></span>
+11. <span data-ttu-id="7cb25-120">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="7cb25-120">Close the page.</span></span>
+12. <span data-ttu-id="7cb25-121">Ugorjon az **Adó > Közvetett adók > Áfa > Áfacsoportok** pontra.</span><span class="sxs-lookup"><span data-stu-id="7cb25-121">Go to **Tax > Indirect taxes > Sales tax > Item sales tax groups** .</span></span>
+13. <span data-ttu-id="7cb25-122">Kattintson az **Új** elemre.</span><span class="sxs-lookup"><span data-stu-id="7cb25-122">Click **New** .</span></span>
+14. <span data-ttu-id="7cb25-123">A **Cikkáfacsoport** mezőbe írjon be egy értéket.</span><span class="sxs-lookup"><span data-stu-id="7cb25-123">In the **Item sales tax group** field, type a value.</span></span>
+15. <span data-ttu-id="7cb25-124">Írjon egy értéket a **Leírás** mezőbe.</span><span class="sxs-lookup"><span data-stu-id="7cb25-124">In the **Description** field, type a value.</span></span>
+16. <span data-ttu-id="7cb25-125">Kattintson a **Hozzáadás** parancsra.</span><span class="sxs-lookup"><span data-stu-id="7cb25-125">Click **Add** .</span></span>
+17. <span data-ttu-id="7cb25-126">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="7cb25-126">In the list, mark the selected row.</span></span>
+18. <span data-ttu-id="7cb25-127">Az **Áfakód** mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="7cb25-127">In the **Sales tax code** field, click the drop-down button to open the lookup.</span></span>
+19. <span data-ttu-id="7cb25-128">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="7cb25-128">In the list, click the link in the selected row.</span></span>
+20. <span data-ttu-id="7cb25-129">Kattintson a **Mentés** gombra.</span><span class="sxs-lookup"><span data-stu-id="7cb25-129">Click **Save** .</span></span>
 

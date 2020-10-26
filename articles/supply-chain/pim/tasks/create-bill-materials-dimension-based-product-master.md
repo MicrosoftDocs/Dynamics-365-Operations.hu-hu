@@ -13,69 +13,69 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: acac36a1078e3f45f59989e62accbc63d596cc26
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: e7961cfb4ad0e20c49d327d83f56c08811598ac1
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3209283"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3986287"
 ---
-# <a name="create-a-bill-of-materials-for-a-dimension-based-product-master"></a><span data-ttu-id="75ae1-103">A dimenzión alapuló alaptermékre vonatkozó anyagjegyzék létrehozása</span><span class="sxs-lookup"><span data-stu-id="75ae1-103">Create a bill of materials for a dimension-based product master</span></span>
+# <a name="create-a-bill-of-materials-for-a-dimension-based-product-master"></a><span data-ttu-id="dc176-103">A dimenzión alapuló alaptermékre vonatkozó anyagjegyzék létrehozása</span><span class="sxs-lookup"><span data-stu-id="dc176-103">Create a bill of materials for a dimension-based product master</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="75ae1-104">Ehhez az eljáráshoz el kellett végeznie az előző 4 útmutatót a nyolc rögzítés sorrendjében.</span><span class="sxs-lookup"><span data-stu-id="75ae1-104">For this procedure you should have completed the previous 4 guides in this sequence of eight recordings.</span></span> <span data-ttu-id="75ae1-105">Az első 4 rögzítés beállítja azt az adatot, ami szükséges az eljárás végrehajtásához.</span><span class="sxs-lookup"><span data-stu-id="75ae1-105">The first 4 recordings set up data that is required to complete this procedure.</span></span> <span data-ttu-id="75ae1-106">Ez az eljárás az USMF bemutatócéget használja.</span><span class="sxs-lookup"><span data-stu-id="75ae1-106">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="75ae1-107">Ezt a feladatot általában a termék tervező kezeli.</span><span class="sxs-lookup"><span data-stu-id="75ae1-107">This task is typically handled by the product designer.</span></span>
+<span data-ttu-id="dc176-104">Ehhez az eljáráshoz el kellett végeznie az előző 4 útmutatót a nyolc rögzítés sorrendjében.</span><span class="sxs-lookup"><span data-stu-id="dc176-104">For this procedure you should have completed the previous 4 guides in this sequence of eight recordings.</span></span> <span data-ttu-id="dc176-105">Az első 4 rögzítés beállítja azt az adatot, ami szükséges az eljárás végrehajtásához.</span><span class="sxs-lookup"><span data-stu-id="dc176-105">The first 4 recordings set up data that is required to complete this procedure.</span></span> <span data-ttu-id="dc176-106">Ez az eljárás az USMF bemutatócéget használja.</span><span class="sxs-lookup"><span data-stu-id="dc176-106">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="dc176-107">Ezt a feladatot általában a termék tervező kezeli.</span><span class="sxs-lookup"><span data-stu-id="dc176-107">This task is typically handled by the product designer.</span></span>
 
 
-## <a name="select-the-product"></a><span data-ttu-id="75ae1-108">Válassza ki a terméket</span><span class="sxs-lookup"><span data-stu-id="75ae1-108">Select the product</span></span>
-1. <span data-ttu-id="75ae1-109">Kattintson a Kiadott termék karbantartása lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="75ae1-109">Click Released product maintenance.</span></span>
-2. <span data-ttu-id="75ae1-110">Kattintson a Kibocsátott termék lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="75ae1-110">Click Released products.</span></span>
-3. <span data-ttu-id="75ae1-111">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="75ae1-111">In the list, mark the selected row.</span></span>
-    * <span data-ttu-id="75ae1-112">Keresse meg azt a dimenzión alapuló konfiguráció technológiájával kiadott alapterméket, amelyet az itt látható sorrendben hozott létre az első feladat útmutatójában.</span><span class="sxs-lookup"><span data-stu-id="75ae1-112">Find the released product master with dimension-based configuration technology that you created in the first task guide in this sequence.</span></span>  
-4. <span data-ttu-id="75ae1-113">A Művelet panelen kattintson a Mérnök elemre.</span><span class="sxs-lookup"><span data-stu-id="75ae1-113">On the Action Pane, click Engineer.</span></span>
-5. <span data-ttu-id="75ae1-114">Kattintson az Anyagjegyzék verziókra.</span><span class="sxs-lookup"><span data-stu-id="75ae1-114">Click BOM versions.</span></span>
+## <a name="select-the-product"></a><span data-ttu-id="dc176-108">Válassza ki a terméket</span><span class="sxs-lookup"><span data-stu-id="dc176-108">Select the product</span></span>
+1. <span data-ttu-id="dc176-109">Kattintson a Kiadott termék karbantartása lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="dc176-109">Click Released product maintenance.</span></span>
+2. <span data-ttu-id="dc176-110">Kattintson a Kibocsátott termék lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="dc176-110">Click Released products.</span></span>
+3. <span data-ttu-id="dc176-111">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="dc176-111">In the list, mark the selected row.</span></span>
+    * <span data-ttu-id="dc176-112">Keresse meg azt a dimenzión alapuló konfiguráció technológiájával kiadott alapterméket, amelyet az itt látható sorrendben hozott létre az első feladat útmutatójában.</span><span class="sxs-lookup"><span data-stu-id="dc176-112">Find the released product master with dimension-based configuration technology that you created in the first task guide in this sequence.</span></span>  
+4. <span data-ttu-id="dc176-113">A Művelet panelen kattintson a Mérnök elemre.</span><span class="sxs-lookup"><span data-stu-id="dc176-113">On the Action Pane, click Engineer.</span></span>
+5. <span data-ttu-id="dc176-114">Kattintson az Anyagjegyzék verziókra.</span><span class="sxs-lookup"><span data-stu-id="dc176-114">Click BOM versions.</span></span>
 
-## <a name="create-new-bom-and-bom-version"></a><span data-ttu-id="75ae1-115">Hozzon létre új anyagjegyzéket és anyagjegyzék-verziót</span><span class="sxs-lookup"><span data-stu-id="75ae1-115">Create new BOM and BOM version</span></span>
-1. <span data-ttu-id="75ae1-116">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="75ae1-116">Click New.</span></span>
-2. <span data-ttu-id="75ae1-117">Kattintson az Anyagjegyzék és az Anyagjegyzék verzió elemre.</span><span class="sxs-lookup"><span data-stu-id="75ae1-117">Click BOM and BOM version.</span></span>
-3. <span data-ttu-id="75ae1-118">Írjon be egy értéket a Név mezőbe.</span><span class="sxs-lookup"><span data-stu-id="75ae1-118">In the Name field, type a value.</span></span>
-    * <span data-ttu-id="75ae1-119">Hely beállítása</span><span class="sxs-lookup"><span data-stu-id="75ae1-119">Setting a site</span></span>  
-    * <span data-ttu-id="75ae1-120">Ebben az eljárásban nem állítunk be egy adott helyet az anyagjegyzékre vonatkozóan.</span><span class="sxs-lookup"><span data-stu-id="75ae1-120">In this procedure we don't set a specific site for the BOM.</span></span>  
-4. <span data-ttu-id="75ae1-121">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="75ae1-121">Click OK.</span></span>
-5. <span data-ttu-id="75ae1-122">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="75ae1-122">Click New.</span></span>
-    * <span data-ttu-id="75ae1-123">Ebben az eljárásban négy sort adunk az Anyagjegyzékhez.</span><span class="sxs-lookup"><span data-stu-id="75ae1-123">In this procedure we will add four lines to the BOM.</span></span> <span data-ttu-id="75ae1-124">Két sor a kábel beállításokat és két sor pedig kabinetfájl beállításokat jelöli.</span><span class="sxs-lookup"><span data-stu-id="75ae1-124">Two lines represent cable options and two lines represent cabinet options.</span></span>  
-6. <span data-ttu-id="75ae1-125">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="75ae1-125">In the list, mark the selected row.</span></span>
-7. <span data-ttu-id="75ae1-126">Az Elemszám mezőben adjon meg, vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="75ae1-126">In the Item number field, enter or select a value.</span></span>
-    * <span data-ttu-id="75ae1-127">Válassza ki a A0001 -es cikkszámot, HDMI 6'-os kábelt.</span><span class="sxs-lookup"><span data-stu-id="75ae1-127">Select item number A0001, HDMI 6' Cables.</span></span>  
-8. <span data-ttu-id="75ae1-128">A Konfigurációs csoport mezőben adjon meg, vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="75ae1-128">In the Configuration group field, enter or select a value.</span></span>
-    * <span data-ttu-id="75ae1-129">Válassza ki a 4-es útmutatóban létrehozott Kábel konfigurációs csoportot ebben a sorozatban.</span><span class="sxs-lookup"><span data-stu-id="75ae1-129">Select the Cable configuration group created in guide 4 in this sequence.</span></span>  
-9. <span data-ttu-id="75ae1-130">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="75ae1-130">Click New.</span></span>
-    * <span data-ttu-id="75ae1-131">Válassza ki a A0002-es cikkszámot, HDMI 12'-os kábelt.</span><span class="sxs-lookup"><span data-stu-id="75ae1-131">Select item number A0002, HDMI 12' Cables.</span></span>  
-10. <span data-ttu-id="75ae1-132">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="75ae1-132">In the list, mark the selected row.</span></span>
-11. <span data-ttu-id="75ae1-133">Az Elemszám mezőben adjon meg, vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="75ae1-133">In the Item number field, enter or select a value.</span></span>
-12. <span data-ttu-id="75ae1-134">A Konfigurációs csoport mezőben adjon meg, vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="75ae1-134">In the Configuration group field, enter or select a value.</span></span>
-    * <span data-ttu-id="75ae1-135">Válassza ki újból a Kábel konfigurációs csoportot.</span><span class="sxs-lookup"><span data-stu-id="75ae1-135">Select the Cable configuration group again.</span></span>  
-13. <span data-ttu-id="75ae1-136">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="75ae1-136">Click New.</span></span>
-14. <span data-ttu-id="75ae1-137">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="75ae1-137">In the list, mark the selected row.</span></span>
-15. <span data-ttu-id="75ae1-138">Az Elemszám mezőben adjon meg, vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="75ae1-138">In the Item number field, enter or select a value.</span></span>
-    * <span data-ttu-id="75ae1-139">Válassza ki a D0002 cikkszámú kabinetfájlt.</span><span class="sxs-lookup"><span data-stu-id="75ae1-139">Select item number D0002 Cabinet.</span></span>  
-16. <span data-ttu-id="75ae1-140">A Konfigurációs csoport mezőben adjon meg, vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="75ae1-140">In the Configuration group field, enter or select a value.</span></span>
-    * <span data-ttu-id="75ae1-141">Válassza ki a Kabinetfájl konfigurációs csoportot ezen anyagjegyzék sorára vonatkozóan.</span><span class="sxs-lookup"><span data-stu-id="75ae1-141">Select the Cabinet configuration group for this BOM line.</span></span>  
-17. <span data-ttu-id="75ae1-142">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="75ae1-142">Click New.</span></span>
-18. <span data-ttu-id="75ae1-143">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="75ae1-143">In the list, mark the selected row.</span></span>
-19. <span data-ttu-id="75ae1-144">Az Elemszám mezőben adjon meg, vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="75ae1-144">In the Item number field, enter or select a value.</span></span>
-    * <span data-ttu-id="75ae1-145">Válassza ki az M0007 cikkszámú StandardCabinet elemet az utolsó Anyagjegyzék soraként.</span><span class="sxs-lookup"><span data-stu-id="75ae1-145">Select Item number M0007 StandardCabinet as the last BOM line.</span></span>  
-20. <span data-ttu-id="75ae1-146">A Konfigurációs csoport mezőben adjon meg, vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="75ae1-146">In the Configuration group field, enter or select a value.</span></span>
-    * <span data-ttu-id="75ae1-147">Válassza ki a Kabinetfájl konfigurációs csoportot az utolsó anyagjegyzék sorára vonatkozóan.</span><span class="sxs-lookup"><span data-stu-id="75ae1-147">Select the Cabinet configuration group for the laste BOM line.</span></span>  
+## <a name="create-new-bom-and-bom-version"></a><span data-ttu-id="dc176-115">Hozzon létre új anyagjegyzéket és anyagjegyzék-verziót</span><span class="sxs-lookup"><span data-stu-id="dc176-115">Create new BOM and BOM version</span></span>
+1. <span data-ttu-id="dc176-116">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="dc176-116">Click New.</span></span>
+2. <span data-ttu-id="dc176-117">Kattintson az Anyagjegyzék és az Anyagjegyzék verzió elemre.</span><span class="sxs-lookup"><span data-stu-id="dc176-117">Click BOM and BOM version.</span></span>
+3. <span data-ttu-id="dc176-118">Írjon be egy értéket a Név mezőbe.</span><span class="sxs-lookup"><span data-stu-id="dc176-118">In the Name field, type a value.</span></span>
+    * <span data-ttu-id="dc176-119">Hely beállítása</span><span class="sxs-lookup"><span data-stu-id="dc176-119">Setting a site</span></span>  
+    * <span data-ttu-id="dc176-120">Ebben az eljárásban nem állítunk be egy adott helyet az anyagjegyzékre vonatkozóan.</span><span class="sxs-lookup"><span data-stu-id="dc176-120">In this procedure we don't set a specific site for the BOM.</span></span>  
+4. <span data-ttu-id="dc176-121">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="dc176-121">Click OK.</span></span>
+5. <span data-ttu-id="dc176-122">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="dc176-122">Click New.</span></span>
+    * <span data-ttu-id="dc176-123">Ebben az eljárásban négy sort adunk az Anyagjegyzékhez.</span><span class="sxs-lookup"><span data-stu-id="dc176-123">In this procedure we will add four lines to the BOM.</span></span> <span data-ttu-id="dc176-124">Két sor a kábel beállításokat és két sor pedig kabinetfájl beállításokat jelöli.</span><span class="sxs-lookup"><span data-stu-id="dc176-124">Two lines represent cable options and two lines represent cabinet options.</span></span>  
+6. <span data-ttu-id="dc176-125">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="dc176-125">In the list, mark the selected row.</span></span>
+7. <span data-ttu-id="dc176-126">Az Elemszám mezőben adjon meg, vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="dc176-126">In the Item number field, enter or select a value.</span></span>
+    * <span data-ttu-id="dc176-127">Válassza ki a A0001 -es cikkszámot, HDMI 6'-os kábelt.</span><span class="sxs-lookup"><span data-stu-id="dc176-127">Select item number A0001, HDMI 6' Cables.</span></span>  
+8. <span data-ttu-id="dc176-128">A Konfigurációs csoport mezőben adjon meg, vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="dc176-128">In the Configuration group field, enter or select a value.</span></span>
+    * <span data-ttu-id="dc176-129">Válassza ki a 4-es útmutatóban létrehozott Kábel konfigurációs csoportot ebben a sorozatban.</span><span class="sxs-lookup"><span data-stu-id="dc176-129">Select the Cable configuration group created in guide 4 in this sequence.</span></span>  
+9. <span data-ttu-id="dc176-130">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="dc176-130">Click New.</span></span>
+    * <span data-ttu-id="dc176-131">Válassza ki a A0002-es cikkszámot, HDMI 12'-os kábelt.</span><span class="sxs-lookup"><span data-stu-id="dc176-131">Select item number A0002, HDMI 12' Cables.</span></span>  
+10. <span data-ttu-id="dc176-132">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="dc176-132">In the list, mark the selected row.</span></span>
+11. <span data-ttu-id="dc176-133">Az Elemszám mezőben adjon meg, vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="dc176-133">In the Item number field, enter or select a value.</span></span>
+12. <span data-ttu-id="dc176-134">A Konfigurációs csoport mezőben adjon meg, vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="dc176-134">In the Configuration group field, enter or select a value.</span></span>
+    * <span data-ttu-id="dc176-135">Válassza ki újból a Kábel konfigurációs csoportot.</span><span class="sxs-lookup"><span data-stu-id="dc176-135">Select the Cable configuration group again.</span></span>  
+13. <span data-ttu-id="dc176-136">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="dc176-136">Click New.</span></span>
+14. <span data-ttu-id="dc176-137">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="dc176-137">In the list, mark the selected row.</span></span>
+15. <span data-ttu-id="dc176-138">Az Elemszám mezőben adjon meg, vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="dc176-138">In the Item number field, enter or select a value.</span></span>
+    * <span data-ttu-id="dc176-139">Válassza ki a D0002 cikkszámú kabinetfájlt.</span><span class="sxs-lookup"><span data-stu-id="dc176-139">Select item number D0002 Cabinet.</span></span>  
+16. <span data-ttu-id="dc176-140">A Konfigurációs csoport mezőben adjon meg, vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="dc176-140">In the Configuration group field, enter or select a value.</span></span>
+    * <span data-ttu-id="dc176-141">Válassza ki a Kabinetfájl konfigurációs csoportot ezen anyagjegyzék sorára vonatkozóan.</span><span class="sxs-lookup"><span data-stu-id="dc176-141">Select the Cabinet configuration group for this BOM line.</span></span>  
+17. <span data-ttu-id="dc176-142">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="dc176-142">Click New.</span></span>
+18. <span data-ttu-id="dc176-143">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="dc176-143">In the list, mark the selected row.</span></span>
+19. <span data-ttu-id="dc176-144">Az Elemszám mezőben adjon meg, vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="dc176-144">In the Item number field, enter or select a value.</span></span>
+    * <span data-ttu-id="dc176-145">Válassza ki az M0007 cikkszámú StandardCabinet elemet az utolsó Anyagjegyzék soraként.</span><span class="sxs-lookup"><span data-stu-id="dc176-145">Select Item number M0007 StandardCabinet as the last BOM line.</span></span>  
+20. <span data-ttu-id="dc176-146">A Konfigurációs csoport mezőben adjon meg, vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="dc176-146">In the Configuration group field, enter or select a value.</span></span>
+    * <span data-ttu-id="dc176-147">Válassza ki a Kabinetfájl konfigurációs csoportot az utolsó anyagjegyzék sorára vonatkozóan.</span><span class="sxs-lookup"><span data-stu-id="dc176-147">Select the Cabinet configuration group for the laste BOM line.</span></span>  
 
-## <a name="approve-and-activate"></a><span data-ttu-id="75ae1-148">Jóváhagyás és aktiválás</span><span class="sxs-lookup"><span data-stu-id="75ae1-148">Approve and activate</span></span>
-1. <span data-ttu-id="75ae1-149">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="75ae1-149">Close the page.</span></span>
-2. <span data-ttu-id="75ae1-150">Kattintson a Jóváhagyás lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="75ae1-150">Click Approve.</span></span>
-3. <span data-ttu-id="75ae1-151">A Jóváhagyó mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="75ae1-151">In the Approved by field, enter or select a value.</span></span>
-4. <span data-ttu-id="75ae1-152">A „Szeretné az anyagjegyzéket is jóváhagyni?” kérdésre válaszolva válassza ki az Igen lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="75ae1-152">Select Yes in the Do you also want to approve the bill of materials? field.</span></span>
-5. <span data-ttu-id="75ae1-153">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="75ae1-153">Click OK.</span></span>
-6. <span data-ttu-id="75ae1-154">Kattintson az Aktiválás gombra.</span><span class="sxs-lookup"><span data-stu-id="75ae1-154">Click Activate.</span></span>
+## <a name="approve-and-activate"></a><span data-ttu-id="dc176-148">Jóváhagyás és aktiválás</span><span class="sxs-lookup"><span data-stu-id="dc176-148">Approve and activate</span></span>
+1. <span data-ttu-id="dc176-149">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="dc176-149">Close the page.</span></span>
+2. <span data-ttu-id="dc176-150">Kattintson a Jóváhagyás lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="dc176-150">Click Approve.</span></span>
+3. <span data-ttu-id="dc176-151">A Jóváhagyó mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="dc176-151">In the Approved by field, enter or select a value.</span></span>
+4. <span data-ttu-id="dc176-152">A „Szeretné az anyagjegyzéket is jóváhagyni?” kérdésre válaszolva válassza ki az Igen lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="dc176-152">Select Yes in the Do you also want to approve the bill of materials? field.</span></span>
+5. <span data-ttu-id="dc176-153">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="dc176-153">Click OK.</span></span>
+6. <span data-ttu-id="dc176-154">Kattintson az Aktiválás gombra.</span><span class="sxs-lookup"><span data-stu-id="dc176-154">Click Activate.</span></span>
 

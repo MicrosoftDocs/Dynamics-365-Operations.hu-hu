@@ -13,92 +13,92 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6970b37594bc999f8f1ea112a6056f15faccc02c
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 5f75d7e493255b9c09c10b121f388854861cb0fc
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3213246"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3985999"
 ---
-# <a name="create-a-product-number-nomenclature-for-configured-product-variants"></a><span data-ttu-id="ca10c-103">Termékszám elnevezési rendszerének létrehozása konfigurált termékváltozatokhoz</span><span class="sxs-lookup"><span data-stu-id="ca10c-103">Create a product number nomenclature for configured product variants</span></span>
+# <a name="create-a-product-number-nomenclature-for-configured-product-variants"></a><span data-ttu-id="05545-103">Termékszám elnevezési rendszerének létrehozása konfigurált termékváltozatokhoz</span><span class="sxs-lookup"><span data-stu-id="05545-103">Create a product number nomenclature for configured product variants</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="ca10c-104">Ez az eljárás bemutatja, hogyan állítható be termékszámozás-elnevezési rendszer konfigurált termékváltozatok számára, és hogyan rendelhető hozzá konfigurálható alaptermékhez.</span><span class="sxs-lookup"><span data-stu-id="ca10c-104">This procedure shows you how to set up a product number nomenclature for configured product variants, and how it can be attached to a configurable product master.</span></span> <span data-ttu-id="ca10c-105">Az eljárás emellett bemutatja, hogyan készíthető konfigurációelnevezési rendszer termékkonfigurációs modell összetevőjéhez.</span><span class="sxs-lookup"><span data-stu-id="ca10c-105">This procedure also demonstrates how you can build a configuration nomenclature for a product configuration model component.</span></span> <span data-ttu-id="ca10c-106">Ez az eljárás az USMF bemutatócéget használja.</span><span class="sxs-lookup"><span data-stu-id="ca10c-106">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="ca10c-107">Az új termékszám-elnevezési rendszer a D0004 alaptermékhez van rendelve.</span><span class="sxs-lookup"><span data-stu-id="ca10c-107">The new product number nomenclature is assigned to the D0004 product master.</span></span> <span data-ttu-id="ca10c-108">Ezt a feladatot általában egy terméktervező végzi.</span><span class="sxs-lookup"><span data-stu-id="ca10c-108">This task would typically be done by a product designer.</span></span>
+<span data-ttu-id="05545-104">Ez az eljárás bemutatja, hogyan állítható be termékszámozás-elnevezési rendszer konfigurált termékváltozatok számára, és hogyan rendelhető hozzá konfigurálható alaptermékhez.</span><span class="sxs-lookup"><span data-stu-id="05545-104">This procedure shows you how to set up a product number nomenclature for configured product variants, and how it can be attached to a configurable product master.</span></span> <span data-ttu-id="05545-105">Az eljárás emellett bemutatja, hogyan készíthető konfigurációelnevezési rendszer termékkonfigurációs modell összetevőjéhez.</span><span class="sxs-lookup"><span data-stu-id="05545-105">This procedure also demonstrates how you can build a configuration nomenclature for a product configuration model component.</span></span> <span data-ttu-id="05545-106">Ez az eljárás az USMF bemutatócéget használja.</span><span class="sxs-lookup"><span data-stu-id="05545-106">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="05545-107">Az új termékszám-elnevezési rendszer a D0004 alaptermékhez van rendelve.</span><span class="sxs-lookup"><span data-stu-id="05545-107">The new product number nomenclature is assigned to the D0004 product master.</span></span> <span data-ttu-id="05545-108">Ezt a feladatot általában egy terméktervező végzi.</span><span class="sxs-lookup"><span data-stu-id="05545-108">This task would typically be done by a product designer.</span></span>
 
 
-## <a name="create-a-product-number-nomenclature"></a><span data-ttu-id="ca10c-109">Termékszámozási rendszer létrehozása</span><span class="sxs-lookup"><span data-stu-id="ca10c-109">Create a product number nomenclature</span></span>
-1. <span data-ttu-id="ca10c-110">Kattintson a Termékváltozat modelldefinícióra.</span><span class="sxs-lookup"><span data-stu-id="ca10c-110">Click Product variant model definition.</span></span>
-2. <span data-ttu-id="ca10c-111">Kattintson a Termékek elnevezési rendszere elemre</span><span class="sxs-lookup"><span data-stu-id="ca10c-111">Click Product nomenclature.</span></span>
-3. <span data-ttu-id="ca10c-112">Kattintson az Új elemre.</span><span class="sxs-lookup"><span data-stu-id="ca10c-112">Click New.</span></span>
-4. <span data-ttu-id="ca10c-113">Írjon be egy értéket a Név mezőbe.</span><span class="sxs-lookup"><span data-stu-id="ca10c-113">In the Name field, type a value.</span></span>
-5. <span data-ttu-id="ca10c-114">A Leírás mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="ca10c-114">In the Description field, type a value.</span></span>
-6. <span data-ttu-id="ca10c-115">Kattintson a Hozzáadás gombra.</span><span class="sxs-lookup"><span data-stu-id="ca10c-115">Click Add.</span></span>
-7. <span data-ttu-id="ca10c-116">Kattintson az Alaptermék száma elemre.</span><span class="sxs-lookup"><span data-stu-id="ca10c-116">Click Product master number.</span></span>
-8. <span data-ttu-id="ca10c-117">Kattintson a Hozzáadás gombra.</span><span class="sxs-lookup"><span data-stu-id="ca10c-117">Click Add.</span></span>
-9. <span data-ttu-id="ca10c-118">Kattintson a Szöveges állandó elemre.</span><span class="sxs-lookup"><span data-stu-id="ca10c-118">Click Text constant.</span></span>
-10. <span data-ttu-id="ca10c-119">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="ca10c-119">In the list, mark the selected row.</span></span>
-11. <span data-ttu-id="ca10c-120">Írjon be egy értéket a Szöveg mezőbe.</span><span class="sxs-lookup"><span data-stu-id="ca10c-120">In the Text field, type a value.</span></span>
-12. <span data-ttu-id="ca10c-121">Kattintson a Hozzáadás gombra.</span><span class="sxs-lookup"><span data-stu-id="ca10c-121">Click Add.</span></span>
-13. <span data-ttu-id="ca10c-122">Kattintson a Konfiguráció lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="ca10c-122">Click Configuration.</span></span>
-14. <span data-ttu-id="ca10c-123">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="ca10c-123">Close the page.</span></span>
+## <a name="create-a-product-number-nomenclature"></a><span data-ttu-id="05545-109">Termékszámozási rendszer létrehozása</span><span class="sxs-lookup"><span data-stu-id="05545-109">Create a product number nomenclature</span></span>
+1. <span data-ttu-id="05545-110">Kattintson a Termékváltozat modelldefinícióra.</span><span class="sxs-lookup"><span data-stu-id="05545-110">Click Product variant model definition.</span></span>
+2. <span data-ttu-id="05545-111">Kattintson a Termékek elnevezési rendszere elemre</span><span class="sxs-lookup"><span data-stu-id="05545-111">Click Product nomenclature.</span></span>
+3. <span data-ttu-id="05545-112">Kattintson az Új elemre.</span><span class="sxs-lookup"><span data-stu-id="05545-112">Click New.</span></span>
+4. <span data-ttu-id="05545-113">Írjon be egy értéket a Név mezőbe.</span><span class="sxs-lookup"><span data-stu-id="05545-113">In the Name field, type a value.</span></span>
+5. <span data-ttu-id="05545-114">A Leírás mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="05545-114">In the Description field, type a value.</span></span>
+6. <span data-ttu-id="05545-115">Kattintson a Hozzáadás gombra.</span><span class="sxs-lookup"><span data-stu-id="05545-115">Click Add.</span></span>
+7. <span data-ttu-id="05545-116">Kattintson az Alaptermék száma elemre.</span><span class="sxs-lookup"><span data-stu-id="05545-116">Click Product master number.</span></span>
+8. <span data-ttu-id="05545-117">Kattintson a Hozzáadás gombra.</span><span class="sxs-lookup"><span data-stu-id="05545-117">Click Add.</span></span>
+9. <span data-ttu-id="05545-118">Kattintson a Szöveges állandó elemre.</span><span class="sxs-lookup"><span data-stu-id="05545-118">Click Text constant.</span></span>
+10. <span data-ttu-id="05545-119">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="05545-119">In the list, mark the selected row.</span></span>
+11. <span data-ttu-id="05545-120">Írjon be egy értéket a Szöveg mezőbe.</span><span class="sxs-lookup"><span data-stu-id="05545-120">In the Text field, type a value.</span></span>
+12. <span data-ttu-id="05545-121">Kattintson a Hozzáadás gombra.</span><span class="sxs-lookup"><span data-stu-id="05545-121">Click Add.</span></span>
+13. <span data-ttu-id="05545-122">Kattintson a Konfiguráció lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="05545-122">Click Configuration.</span></span>
+14. <span data-ttu-id="05545-123">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="05545-123">Close the page.</span></span>
 
-## <a name="assign-the-product-number-nomenclature-to-a-product-master"></a><span data-ttu-id="ca10c-124">Termékszámozási rendszer hozzárendelése az alaptermékhez</span><span class="sxs-lookup"><span data-stu-id="ca10c-124">Assign the product number nomenclature to a product master</span></span>
-1. <span data-ttu-id="ca10c-125">Kattintson az Összes alaptermék elemre.</span><span class="sxs-lookup"><span data-stu-id="ca10c-125">Click Product masters.</span></span>
-2. <span data-ttu-id="ca10c-126">Rekordok kereséséhez használja a gyorsszűrőt.</span><span class="sxs-lookup"><span data-stu-id="ca10c-126">Use the Quick Filter to find records.</span></span> <span data-ttu-id="ca10c-127">Például szűkítsen a Termékszám mezőre a „D” értéket beírva.</span><span class="sxs-lookup"><span data-stu-id="ca10c-127">For example, filter on the Product number field with a value of 'D'.</span></span>
-3. <span data-ttu-id="ca10c-128">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="ca10c-128">In the list, click the link in the selected row.</span></span>
-4. <span data-ttu-id="ca10c-129">Kattintson a Szerkesztés lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="ca10c-129">Click Edit.</span></span>
-5. <span data-ttu-id="ca10c-130">Válassza az Igen lehetőséget az Elnevezési rendszer használata mezőben.</span><span class="sxs-lookup"><span data-stu-id="ca10c-130">Select Yes in the Use nomenclature field.</span></span>
-6. <span data-ttu-id="ca10c-131">A Termékváltozat-számozási rendszer mezőben adjon meg, vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="ca10c-131">In the Product variant number nomenclature field, enter or select a value.</span></span>
-7. <span data-ttu-id="ca10c-132">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="ca10c-132">Close the page.</span></span>
-8. <span data-ttu-id="ca10c-133">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="ca10c-133">Close the page.</span></span>
+## <a name="assign-the-product-number-nomenclature-to-a-product-master"></a><span data-ttu-id="05545-124">Termékszámozási rendszer hozzárendelése az alaptermékhez</span><span class="sxs-lookup"><span data-stu-id="05545-124">Assign the product number nomenclature to a product master</span></span>
+1. <span data-ttu-id="05545-125">Kattintson az Összes alaptermék elemre.</span><span class="sxs-lookup"><span data-stu-id="05545-125">Click Product masters.</span></span>
+2. <span data-ttu-id="05545-126">Rekordok kereséséhez használja a gyorsszűrőt.</span><span class="sxs-lookup"><span data-stu-id="05545-126">Use the Quick Filter to find records.</span></span> <span data-ttu-id="05545-127">Például szűkítsen a Termékszám mezőre a „D” értéket beírva.</span><span class="sxs-lookup"><span data-stu-id="05545-127">For example, filter on the Product number field with a value of 'D'.</span></span>
+3. <span data-ttu-id="05545-128">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="05545-128">In the list, click the link in the selected row.</span></span>
+4. <span data-ttu-id="05545-129">Kattintson a Szerkesztés lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="05545-129">Click Edit.</span></span>
+5. <span data-ttu-id="05545-130">Válassza az Igen lehetőséget az Elnevezési rendszer használata mezőben.</span><span class="sxs-lookup"><span data-stu-id="05545-130">Select Yes in the Use nomenclature field.</span></span>
+6. <span data-ttu-id="05545-131">A Termékváltozat-számozási rendszer mezőben adjon meg, vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="05545-131">In the Product variant number nomenclature field, enter or select a value.</span></span>
+7. <span data-ttu-id="05545-132">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="05545-132">Close the page.</span></span>
+8. <span data-ttu-id="05545-133">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="05545-133">Close the page.</span></span>
 
-## <a name="create-nomenclature-for-a-product-configuration-model-component"></a><span data-ttu-id="ca10c-134">Elnevezési rendszer létrehozása egy termékkonfigurációs modell összetevőjéhez</span><span class="sxs-lookup"><span data-stu-id="ca10c-134">Create nomenclature for a product configuration model component</span></span>
-1. <span data-ttu-id="ca10c-135">Kattintson a Termékkonfigurációs modellek lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="ca10c-135">Click Product configuration models.</span></span>
-2. <span data-ttu-id="ca10c-136">Keresse meg és jelölje ki a kívánt rekordot a listán.</span><span class="sxs-lookup"><span data-stu-id="ca10c-136">In the list, find and select the desired record.</span></span>
-3. <span data-ttu-id="ca10c-137">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="ca10c-137">In the list, click the link in the selected row.</span></span>
-4. <span data-ttu-id="ca10c-138">Kattintson a Szerkesztés lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="ca10c-138">Click Edit.</span></span>
-5. <span data-ttu-id="ca10c-139">Válassza az Igen lehetőséget a Konfiguráció elnevezési rendszerének használata mezőben.</span><span class="sxs-lookup"><span data-stu-id="ca10c-139">Select Yes in the Use configuration nomenclature field.</span></span>
-6. <span data-ttu-id="ca10c-140">Kattintson a Hozzáadás gombra.</span><span class="sxs-lookup"><span data-stu-id="ca10c-140">Click Add.</span></span>
-7. <span data-ttu-id="ca10c-141">Kattintson az Attribútum értéke elemre.</span><span class="sxs-lookup"><span data-stu-id="ca10c-141">Click Attribute value.</span></span>
-8. <span data-ttu-id="ca10c-142">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="ca10c-142">In the list, mark the selected row.</span></span>
-9. <span data-ttu-id="ca10c-143">Az Attribútum mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="ca10c-143">In the Attribute field, enter or select a value.</span></span>
-10. <span data-ttu-id="ca10c-144">Kattintson a Hozzáadás gombra.</span><span class="sxs-lookup"><span data-stu-id="ca10c-144">Click Add.</span></span>
-11. <span data-ttu-id="ca10c-145">Kattintson a Szöveges állandó elemre.</span><span class="sxs-lookup"><span data-stu-id="ca10c-145">Click Text constant.</span></span>
-12. <span data-ttu-id="ca10c-146">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="ca10c-146">In the list, mark the selected row.</span></span>
-13. <span data-ttu-id="ca10c-147">Írjon be egy értéket a Szöveg mezőbe.</span><span class="sxs-lookup"><span data-stu-id="ca10c-147">In the Text field, type a value.</span></span>
-14. <span data-ttu-id="ca10c-148">Kattintson a Hozzáadás gombra.</span><span class="sxs-lookup"><span data-stu-id="ca10c-148">Click Add.</span></span>
-15. <span data-ttu-id="ca10c-149">Kattintson az Attribútum értéke elemre.</span><span class="sxs-lookup"><span data-stu-id="ca10c-149">Click Attribute value.</span></span>
-16. <span data-ttu-id="ca10c-150">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="ca10c-150">In the list, mark the selected row.</span></span>
-17. <span data-ttu-id="ca10c-151">Az Attribútum mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="ca10c-151">In the Attribute field, enter or select a value.</span></span>
-18. <span data-ttu-id="ca10c-152">Kattintson a Hozzáadás gombra.</span><span class="sxs-lookup"><span data-stu-id="ca10c-152">Click Add.</span></span>
-19. <span data-ttu-id="ca10c-153">Kattintson a Szöveges állandó elemre.</span><span class="sxs-lookup"><span data-stu-id="ca10c-153">Click Text constant.</span></span>
-20. <span data-ttu-id="ca10c-154">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="ca10c-154">In the list, mark the selected row.</span></span>
-21. <span data-ttu-id="ca10c-155">Írjon be egy értéket a Szöveg mezőbe.</span><span class="sxs-lookup"><span data-stu-id="ca10c-155">In the Text field, type a value.</span></span>
-22. <span data-ttu-id="ca10c-156">Kattintson a Hozzáadás gombra.</span><span class="sxs-lookup"><span data-stu-id="ca10c-156">Click Add.</span></span>
-23. <span data-ttu-id="ca10c-157">Kattintson az Attribútum értéke elemre.</span><span class="sxs-lookup"><span data-stu-id="ca10c-157">Click Attribute value.</span></span>
-24. <span data-ttu-id="ca10c-158">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="ca10c-158">In the list, mark the selected row.</span></span>
-25. <span data-ttu-id="ca10c-159">Az Attribútum mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="ca10c-159">In the Attribute field, enter or select a value.</span></span>
-26. <span data-ttu-id="ca10c-160">Kattintson a Hozzáadás gombra.</span><span class="sxs-lookup"><span data-stu-id="ca10c-160">Click Add.</span></span>
-27. <span data-ttu-id="ca10c-161">Kattintson a Szöveges állandó elemre.</span><span class="sxs-lookup"><span data-stu-id="ca10c-161">Click Text constant.</span></span>
-28. <span data-ttu-id="ca10c-162">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="ca10c-162">In the list, mark the selected row.</span></span>
-29. <span data-ttu-id="ca10c-163">Írjon be egy értéket a Szöveg mezőbe.</span><span class="sxs-lookup"><span data-stu-id="ca10c-163">In the Text field, type a value.</span></span>
-30. <span data-ttu-id="ca10c-164">Kattintson a Hozzáadás gombra.</span><span class="sxs-lookup"><span data-stu-id="ca10c-164">Click Add.</span></span>
-31. <span data-ttu-id="ca10c-165">Kattintson az Attribútum értéke elemre.</span><span class="sxs-lookup"><span data-stu-id="ca10c-165">Click Attribute value.</span></span>
-32. <span data-ttu-id="ca10c-166">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="ca10c-166">In the list, mark the selected row.</span></span>
-33. <span data-ttu-id="ca10c-167">Az Attribútum mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="ca10c-167">In the Attribute field, enter or select a value.</span></span>
-34. <span data-ttu-id="ca10c-168">Kattintson a Hozzáadás gombra.</span><span class="sxs-lookup"><span data-stu-id="ca10c-168">Click Add.</span></span>
-35. <span data-ttu-id="ca10c-169">Kattintson a Szöveges állandó elemre.</span><span class="sxs-lookup"><span data-stu-id="ca10c-169">Click Text constant.</span></span>
-36. <span data-ttu-id="ca10c-170">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="ca10c-170">In the list, mark the selected row.</span></span>
-37. <span data-ttu-id="ca10c-171">Írjon be egy értéket a Szöveg mezőbe.</span><span class="sxs-lookup"><span data-stu-id="ca10c-171">In the Text field, type a value.</span></span>
-38. <span data-ttu-id="ca10c-172">Kattintson a Hozzáadás gombra.</span><span class="sxs-lookup"><span data-stu-id="ca10c-172">Click Add.</span></span>
-39. <span data-ttu-id="ca10c-173">Kattintson a Számsorozat értéke elemre.</span><span class="sxs-lookup"><span data-stu-id="ca10c-173">Click Number sequence value.</span></span>
-40. <span data-ttu-id="ca10c-174">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="ca10c-174">In the list, mark the selected row.</span></span>
-41. <span data-ttu-id="ca10c-175">A Számsorrend mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="ca10c-175">In the Number sequence field, enter or select a value.</span></span>
-42. <span data-ttu-id="ca10c-176">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="ca10c-176">Close the page.</span></span>
-43. <span data-ttu-id="ca10c-177">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="ca10c-177">Close the page.</span></span>
-44. <span data-ttu-id="ca10c-178">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="ca10c-178">Close the page.</span></span>
+## <a name="create-nomenclature-for-a-product-configuration-model-component"></a><span data-ttu-id="05545-134">Elnevezési rendszer létrehozása egy termékkonfigurációs modell összetevőjéhez</span><span class="sxs-lookup"><span data-stu-id="05545-134">Create nomenclature for a product configuration model component</span></span>
+1. <span data-ttu-id="05545-135">Kattintson a Termékkonfigurációs modellek lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="05545-135">Click Product configuration models.</span></span>
+2. <span data-ttu-id="05545-136">Keresse meg és jelölje ki a kívánt rekordot a listán.</span><span class="sxs-lookup"><span data-stu-id="05545-136">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="05545-137">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="05545-137">In the list, click the link in the selected row.</span></span>
+4. <span data-ttu-id="05545-138">Kattintson a Szerkesztés lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="05545-138">Click Edit.</span></span>
+5. <span data-ttu-id="05545-139">Válassza az Igen lehetőséget a Konfiguráció elnevezési rendszerének használata mezőben.</span><span class="sxs-lookup"><span data-stu-id="05545-139">Select Yes in the Use configuration nomenclature field.</span></span>
+6. <span data-ttu-id="05545-140">Kattintson a Hozzáadás gombra.</span><span class="sxs-lookup"><span data-stu-id="05545-140">Click Add.</span></span>
+7. <span data-ttu-id="05545-141">Kattintson az Attribútum értéke elemre.</span><span class="sxs-lookup"><span data-stu-id="05545-141">Click Attribute value.</span></span>
+8. <span data-ttu-id="05545-142">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="05545-142">In the list, mark the selected row.</span></span>
+9. <span data-ttu-id="05545-143">Az Attribútum mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="05545-143">In the Attribute field, enter or select a value.</span></span>
+10. <span data-ttu-id="05545-144">Kattintson a Hozzáadás gombra.</span><span class="sxs-lookup"><span data-stu-id="05545-144">Click Add.</span></span>
+11. <span data-ttu-id="05545-145">Kattintson a Szöveges állandó elemre.</span><span class="sxs-lookup"><span data-stu-id="05545-145">Click Text constant.</span></span>
+12. <span data-ttu-id="05545-146">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="05545-146">In the list, mark the selected row.</span></span>
+13. <span data-ttu-id="05545-147">Írjon be egy értéket a Szöveg mezőbe.</span><span class="sxs-lookup"><span data-stu-id="05545-147">In the Text field, type a value.</span></span>
+14. <span data-ttu-id="05545-148">Kattintson a Hozzáadás gombra.</span><span class="sxs-lookup"><span data-stu-id="05545-148">Click Add.</span></span>
+15. <span data-ttu-id="05545-149">Kattintson az Attribútum értéke elemre.</span><span class="sxs-lookup"><span data-stu-id="05545-149">Click Attribute value.</span></span>
+16. <span data-ttu-id="05545-150">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="05545-150">In the list, mark the selected row.</span></span>
+17. <span data-ttu-id="05545-151">Az Attribútum mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="05545-151">In the Attribute field, enter or select a value.</span></span>
+18. <span data-ttu-id="05545-152">Kattintson a Hozzáadás gombra.</span><span class="sxs-lookup"><span data-stu-id="05545-152">Click Add.</span></span>
+19. <span data-ttu-id="05545-153">Kattintson a Szöveges állandó elemre.</span><span class="sxs-lookup"><span data-stu-id="05545-153">Click Text constant.</span></span>
+20. <span data-ttu-id="05545-154">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="05545-154">In the list, mark the selected row.</span></span>
+21. <span data-ttu-id="05545-155">Írjon be egy értéket a Szöveg mezőbe.</span><span class="sxs-lookup"><span data-stu-id="05545-155">In the Text field, type a value.</span></span>
+22. <span data-ttu-id="05545-156">Kattintson a Hozzáadás gombra.</span><span class="sxs-lookup"><span data-stu-id="05545-156">Click Add.</span></span>
+23. <span data-ttu-id="05545-157">Kattintson az Attribútum értéke elemre.</span><span class="sxs-lookup"><span data-stu-id="05545-157">Click Attribute value.</span></span>
+24. <span data-ttu-id="05545-158">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="05545-158">In the list, mark the selected row.</span></span>
+25. <span data-ttu-id="05545-159">Az Attribútum mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="05545-159">In the Attribute field, enter or select a value.</span></span>
+26. <span data-ttu-id="05545-160">Kattintson a Hozzáadás gombra.</span><span class="sxs-lookup"><span data-stu-id="05545-160">Click Add.</span></span>
+27. <span data-ttu-id="05545-161">Kattintson a Szöveges állandó elemre.</span><span class="sxs-lookup"><span data-stu-id="05545-161">Click Text constant.</span></span>
+28. <span data-ttu-id="05545-162">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="05545-162">In the list, mark the selected row.</span></span>
+29. <span data-ttu-id="05545-163">Írjon be egy értéket a Szöveg mezőbe.</span><span class="sxs-lookup"><span data-stu-id="05545-163">In the Text field, type a value.</span></span>
+30. <span data-ttu-id="05545-164">Kattintson a Hozzáadás gombra.</span><span class="sxs-lookup"><span data-stu-id="05545-164">Click Add.</span></span>
+31. <span data-ttu-id="05545-165">Kattintson az Attribútum értéke elemre.</span><span class="sxs-lookup"><span data-stu-id="05545-165">Click Attribute value.</span></span>
+32. <span data-ttu-id="05545-166">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="05545-166">In the list, mark the selected row.</span></span>
+33. <span data-ttu-id="05545-167">Az Attribútum mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="05545-167">In the Attribute field, enter or select a value.</span></span>
+34. <span data-ttu-id="05545-168">Kattintson a Hozzáadás gombra.</span><span class="sxs-lookup"><span data-stu-id="05545-168">Click Add.</span></span>
+35. <span data-ttu-id="05545-169">Kattintson a Szöveges állandó elemre.</span><span class="sxs-lookup"><span data-stu-id="05545-169">Click Text constant.</span></span>
+36. <span data-ttu-id="05545-170">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="05545-170">In the list, mark the selected row.</span></span>
+37. <span data-ttu-id="05545-171">Írjon be egy értéket a Szöveg mezőbe.</span><span class="sxs-lookup"><span data-stu-id="05545-171">In the Text field, type a value.</span></span>
+38. <span data-ttu-id="05545-172">Kattintson a Hozzáadás gombra.</span><span class="sxs-lookup"><span data-stu-id="05545-172">Click Add.</span></span>
+39. <span data-ttu-id="05545-173">Kattintson a Számsorozat értéke elemre.</span><span class="sxs-lookup"><span data-stu-id="05545-173">Click Number sequence value.</span></span>
+40. <span data-ttu-id="05545-174">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="05545-174">In the list, mark the selected row.</span></span>
+41. <span data-ttu-id="05545-175">A Számsorrend mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="05545-175">In the Number sequence field, enter or select a value.</span></span>
+42. <span data-ttu-id="05545-176">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="05545-176">Close the page.</span></span>
+43. <span data-ttu-id="05545-177">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="05545-177">Close the page.</span></span>
+44. <span data-ttu-id="05545-178">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="05545-178">Close the page.</span></span>
 

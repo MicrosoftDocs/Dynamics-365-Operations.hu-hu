@@ -15,36 +15,36 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fb0333950525c4e05a63f0dc99fec7d2d52e4477
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 7a98d096c0eec6b1d585856b63113fd6dd60c0a4
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3206726"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3984895"
 ---
-# <a name="set-up-subscription-groups"></a><span data-ttu-id="f62fd-103">Előfizetési csoportok beállítása</span><span class="sxs-lookup"><span data-stu-id="f62fd-103">Set up subscription groups</span></span> 
+# <a name="set-up-subscription-groups"></a><span data-ttu-id="de68e-103">Előfizetési csoportok beállítása</span><span class="sxs-lookup"><span data-stu-id="de68e-103">Set up subscription groups</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
 
-1.  <span data-ttu-id="f62fd-104">Kattintson a következőkre: **Szolgáltatáskezelés**\>**Beállítás**\>**Szolgáltatási előfizetések**\>**Előfizetési csoportok**.</span><span class="sxs-lookup"><span data-stu-id="f62fd-104">Click **Service management** \> **Setup** \> **Service subscriptions** \> **Subscription groups**.</span></span>
+1.  <span data-ttu-id="de68e-104">Kattintson a következőkre: **Szolgáltatáskezelés**\>**Beállítás**\>**Szolgáltatási előfizetések**\>**Előfizetési csoportok** .</span><span class="sxs-lookup"><span data-stu-id="de68e-104">Click **Service management** \> **Setup** \> **Service subscriptions** \> **Subscription groups** .</span></span>
 
-2.  <span data-ttu-id="f62fd-105">Nyomja le a CTRL+N billentyűkombinációt, vagy kattintson az **Új** gombra, ha új előfizetési csoportot szeretne létrehozni.</span><span class="sxs-lookup"><span data-stu-id="f62fd-105">Press Ctrl+N or click **New** to create a new subscription group.</span></span>
+2.  <span data-ttu-id="de68e-105">Nyomja le a CTRL+N billentyűkombinációt, vagy kattintson az **Új** gombra, ha új előfizetési csoportot szeretne létrehozni.</span><span class="sxs-lookup"><span data-stu-id="de68e-105">Press Ctrl+N or click **New** to create a new subscription group.</span></span>
 
-3.  <span data-ttu-id="f62fd-106">Az **Előfizetési csoport** mezőbe írja be az új előfizetés-csoport kívánt, jól felismerhető nevét.</span><span class="sxs-lookup"><span data-stu-id="f62fd-106">In the **Subscription group** field, enter a name for the new subscription group.</span></span>
+3.  <span data-ttu-id="de68e-106">Az **Előfizetési csoport** mezőbe írja be az új előfizetés-csoport kívánt, jól felismerhető nevét.</span><span class="sxs-lookup"><span data-stu-id="de68e-106">In the **Subscription group** field, enter a name for the new subscription group.</span></span>
 
-4.  <span data-ttu-id="f62fd-107">A **Számlázás** mezőben válasszon ki egy számlázási gyakoriságot az előfizetéshez.</span><span class="sxs-lookup"><span data-stu-id="f62fd-107">In the **Invoicing** field, select an invoicing frequency for the subscription.</span></span> <span data-ttu-id="f62fd-108">A számlagyakoriságot egy időszakkód jelöli, amelynek beállítása az **Időszaktípusok** képernyőn történik.</span><span class="sxs-lookup"><span data-stu-id="f62fd-108">The invoicing frequency is indicated by a period code that is set up in the **Period types** form.</span></span>
+4.  <span data-ttu-id="de68e-107">A **Számlázás** mezőben válasszon ki egy számlázási gyakoriságot az előfizetéshez.</span><span class="sxs-lookup"><span data-stu-id="de68e-107">In the **Invoicing** field, select an invoicing frequency for the subscription.</span></span> <span data-ttu-id="de68e-108">A számlagyakoriságot egy időszakkód jelöli, amelynek beállítása az **Időszaktípusok** képernyőn történik.</span><span class="sxs-lookup"><span data-stu-id="de68e-108">The invoicing frequency is indicated by a period code that is set up in the **Period types** form.</span></span>
 
-5.  <span data-ttu-id="f62fd-109">A bevétel elhatárolásához előfizetési tranzakciókra vonatkozóan, jelölje be a **Bevétel elhatárolása** jelölőnégyzetet, majd az **Elhatárolás** mezőben válassza ki a gyakoriságát.</span><span class="sxs-lookup"><span data-stu-id="f62fd-109">To accrue revenue for subscription transactions, select the **Accrue revenue** check box, and then in the **Accrual** field, select a frequency.</span></span> <span data-ttu-id="f62fd-110">Ahogy a számlagyakoriságnak, az elszámolási gyakoriságnak is egy időszakkód az alapja, amelyet az **Időszakok** képernyőn lehet beállítani.</span><span class="sxs-lookup"><span data-stu-id="f62fd-110">The accrual frequency is based on a period code that is set up in the **Periods** form.</span></span>
+5.  <span data-ttu-id="de68e-109">A bevétel elhatárolásához előfizetési tranzakciókra vonatkozóan, jelölje be a **Bevétel elhatárolása** jelölőnégyzetet, majd az **Elhatárolás** mezőben válassza ki a gyakoriságát.</span><span class="sxs-lookup"><span data-stu-id="de68e-109">To accrue revenue for subscription transactions, select the **Accrue revenue** check box, and then in the **Accrual** field, select a frequency.</span></span> <span data-ttu-id="de68e-110">Ahogy a számlagyakoriságnak, az elszámolási gyakoriságnak is egy időszakkód az alapja, amelyet az **Időszakok** képernyőn lehet beállítani.</span><span class="sxs-lookup"><span data-stu-id="de68e-110">The accrual frequency is based on a period code that is set up in the **Periods** form.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="f62fd-111">Lásd még</span><span class="sxs-lookup"><span data-stu-id="f62fd-111">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="de68e-111">Lásd még</span><span class="sxs-lookup"><span data-stu-id="de68e-111">See also</span></span>
 
-<span data-ttu-id="f62fd-112">[Előfizetési csoportok (képernyő)](https://technet.microsoft.com/library/aa553150\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="f62fd-112">[Subscription groups (form)](https://technet.microsoft.com/library/aa553150\(v=ax.60\))</span></span>
+<span data-ttu-id="de68e-112">[Előfizetési csoportok (képernyő)](https://technet.microsoft.com/library/aa553150\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="de68e-112">[Subscription groups (form)](https://technet.microsoft.com/library/aa553150\(v=ax.60\))</span></span>
 
-[<span data-ttu-id="f62fd-113">Előfizetési csoportok</span><span class="sxs-lookup"><span data-stu-id="f62fd-113">Subscription groups</span></span>](subscription-groups.md)
+[<span data-ttu-id="de68e-113">Előfizetési csoportok</span><span class="sxs-lookup"><span data-stu-id="de68e-113">Subscription groups</span></span>](subscription-groups.md)
 
   
 

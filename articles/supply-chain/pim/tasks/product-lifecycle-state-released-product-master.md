@@ -12,45 +12,45 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Operations
 ms.search.region: Global
-ms.author: conradv
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ab8c4e02a064fe84446fa54cc05b9a6a902c1860
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 2c644f118e0bdb46b296cec7e4a3ea89031f2d52
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3213147"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3981134"
 ---
-# <a name="assign-a-product-lifecycle-state-to-a-released-product-master"></a><span data-ttu-id="3813a-103">Termékéletciklus-állapot hozzárendelése egy kiadott alaptermékhez</span><span class="sxs-lookup"><span data-stu-id="3813a-103">Assign a product lifecycle state to a released product master</span></span>
+# <a name="assign-a-product-lifecycle-state-to-a-released-product-master"></a><span data-ttu-id="9e5cf-103">Termékéletciklus-állapot hozzárendelése egy kiadott alaptermékhez</span><span class="sxs-lookup"><span data-stu-id="9e5cf-103">Assign a product lifecycle state to a released product master</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="3813a-104">Ez az eljárás bemutatja a termékéletciklus-állapotnak a kiadott alaptermékhez és annak változataihoz történő hozzáadását.</span><span class="sxs-lookup"><span data-stu-id="3813a-104">This procedure shows how to assign a product lifecycle state to a released product master and its variants.</span></span> <span data-ttu-id="3813a-105">Előfeltétel: Először le kell játszania az „Új termékéletciklus-állapot létrehozása” feladat-útmutatót, hogy megbizonyosodjon arról, hogy legalább egy termékéletciklus-állapotot létrehozott a jelen feladat-útmutató lejátszása előtt.</span><span class="sxs-lookup"><span data-stu-id="3813a-105">Prerequisite: You need to play the task guide "Create a new product lifecycle state" first to make sure that you have at least one product lifecycle state created before you can play this task guide.</span></span>
+<span data-ttu-id="9e5cf-104">Ez az eljárás bemutatja a termékéletciklus-állapotnak a kiadott alaptermékhez és annak változataihoz történő hozzáadását.</span><span class="sxs-lookup"><span data-stu-id="9e5cf-104">This procedure shows how to assign a product lifecycle state to a released product master and its variants.</span></span> <span data-ttu-id="9e5cf-105">Előfeltétel: Először le kell játszania az „Új termékéletciklus-állapot létrehozása” feladat-útmutatót, hogy megbizonyosodjon arról, hogy legalább egy termékéletciklus-állapotot létrehozott a jelen feladat-útmutató lejátszása előtt.</span><span class="sxs-lookup"><span data-stu-id="9e5cf-105">Prerequisite: You need to play the task guide "Create a new product lifecycle state" first to make sure that you have at least one product lifecycle state created before you can play this task guide.</span></span>
 
 
-## <a name="find-a-released-product-master"></a><span data-ttu-id="3813a-106">Keressen meg egy kiadott alapterméket</span><span class="sxs-lookup"><span data-stu-id="3813a-106">Find a released product master</span></span>
-1. <span data-ttu-id="3813a-107">Kattintson a Termékinformációk kezelése > Termékek > Kiadott termékek lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="3813a-107">Go to Product information management > Products > Released products.</span></span>
-2. <span data-ttu-id="3813a-108">Keresse meg és jelölje ki a kívánt rekordot a listán.</span><span class="sxs-lookup"><span data-stu-id="3813a-108">In the list, find and select the desired record.</span></span>
-
-> [!NOTE]
-> <span data-ttu-id="3813a-109">Az alaptermék az Alaptermék termékaltípussal rendelkezik.</span><span class="sxs-lookup"><span data-stu-id="3813a-109">A product master has the Product subtype Product master.</span></span>  
-
-## <a name="update-the-lifecycle-state"></a><span data-ttu-id="3813a-110">Az életciklus-állapot frissítése</span><span class="sxs-lookup"><span data-stu-id="3813a-110">Update the lifecycle state</span></span>
-1. <span data-ttu-id="3813a-111">Kattintson a Szerkesztés lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="3813a-111">Click Edit.</span></span>
-2. <span data-ttu-id="3813a-112">A Termékéletciklus állapota mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="3813a-112">In the Product lifecycle state field, enter or select a value.</span></span>
-3. <span data-ttu-id="3813a-113">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="3813a-113">Click Save.</span></span>
-4. <span data-ttu-id="3813a-114">Kattintson az Igen gombra.</span><span class="sxs-lookup"><span data-stu-id="3813a-114">Click Yes.</span></span>
+## <a name="find-a-released-product-master"></a><span data-ttu-id="9e5cf-106">Keressen meg egy kiadott alapterméket</span><span class="sxs-lookup"><span data-stu-id="9e5cf-106">Find a released product master</span></span>
+1. <span data-ttu-id="9e5cf-107">Kattintson a Termékinformációk kezelése > Termékek > Kiadott termékek lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="9e5cf-107">Go to Product information management > Products > Released products.</span></span>
+2. <span data-ttu-id="9e5cf-108">Keresse meg és jelölje ki a kívánt rekordot a listán.</span><span class="sxs-lookup"><span data-stu-id="9e5cf-108">In the list, find and select the desired record.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="3813a-115">Ha az Igen van bejelölve, minden kapcsolódó azon kiadott termékváltozat, amelyek eredeti állapota megegyezik a kiadott alaptermékével, ugyancsak frissül az új termékélettartam-állapotra.</span><span class="sxs-lookup"><span data-stu-id="3813a-115">If Yes is selected, all the related released product variants that have the same original status as the released product master are also updated to the new product lifecycle state.</span></span> <span data-ttu-id="3813a-116">Ha a Nem van bejelölve, minden változat megőrzi az aktuális állapotát.</span><span class="sxs-lookup"><span data-stu-id="3813a-116">If No is selected, all variants keep their actual state.</span></span> <span data-ttu-id="3813a-117">A kiadott alapterméktől eltérő termékéletciklus-állapottal rendelkező változatokat a rendszer nem frissíti.</span><span class="sxs-lookup"><span data-stu-id="3813a-117">Variants that have a different product lifecycle state from the released product master are not updated.</span></span>  
+> <span data-ttu-id="9e5cf-109">Az alaptermék az Alaptermék termékaltípussal rendelkezik.</span><span class="sxs-lookup"><span data-stu-id="9e5cf-109">A product master has the Product subtype Product master.</span></span>  
 
-## <a name="verify-the-lifecycle-state-of-the-variants"></a><span data-ttu-id="3813a-118">A változatok életciklus-állapotának ellenőrzése</span><span class="sxs-lookup"><span data-stu-id="3813a-118">Verify the lifecycle state of the variants</span></span>
-1. <span data-ttu-id="3813a-119">Kattintson a Kiadott termékváltozatok lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="3813a-119">Click Released product variants.</span></span>
+## <a name="update-the-lifecycle-state"></a><span data-ttu-id="9e5cf-110">Az életciklus-állapot frissítése</span><span class="sxs-lookup"><span data-stu-id="9e5cf-110">Update the lifecycle state</span></span>
+1. <span data-ttu-id="9e5cf-111">Kattintson a Szerkesztés lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="9e5cf-111">Click Edit.</span></span>
+2. <span data-ttu-id="9e5cf-112">A Termékéletciklus állapota mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="9e5cf-112">In the Product lifecycle state field, enter or select a value.</span></span>
+3. <span data-ttu-id="9e5cf-113">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="9e5cf-113">Click Save.</span></span>
+4. <span data-ttu-id="9e5cf-114">Kattintson az Igen gombra.</span><span class="sxs-lookup"><span data-stu-id="9e5cf-114">Click Yes.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="3813a-120">Vegye figyelembe, hogy minden változat esetében öröklődik a kiadott alaptermék kiválasztott életciklus-állapota.</span><span class="sxs-lookup"><span data-stu-id="3813a-120">Note that all variants have inherited the selected lifecycle state from the released product master.</span></span>  
+> <span data-ttu-id="9e5cf-115">Ha az Igen van bejelölve, minden kapcsolódó azon kiadott termékváltozat, amelyek eredeti állapota megegyezik a kiadott alaptermékével, ugyancsak frissül az új termékélettartam-állapotra.</span><span class="sxs-lookup"><span data-stu-id="9e5cf-115">If Yes is selected, all the related released product variants that have the same original status as the released product master are also updated to the new product lifecycle state.</span></span> <span data-ttu-id="9e5cf-116">Ha a Nem van bejelölve, minden változat megőrzi az aktuális állapotát.</span><span class="sxs-lookup"><span data-stu-id="9e5cf-116">If No is selected, all variants keep their actual state.</span></span> <span data-ttu-id="9e5cf-117">A kiadott alapterméktől eltérő termékéletciklus-állapottal rendelkező változatokat a rendszer nem frissíti.</span><span class="sxs-lookup"><span data-stu-id="9e5cf-117">Variants that have a different product lifecycle state from the released product master are not updated.</span></span>  
 
-2. <span data-ttu-id="3813a-121">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="3813a-121">In the list, mark the selected row.</span></span>
-3. <span data-ttu-id="3813a-122">A Termékéletciklus állapota mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="3813a-122">In the Product lifecycle state field, enter or select a value.</span></span>
+## <a name="verify-the-lifecycle-state-of-the-variants"></a><span data-ttu-id="9e5cf-118">A változatok életciklus-állapotának ellenőrzése</span><span class="sxs-lookup"><span data-stu-id="9e5cf-118">Verify the lifecycle state of the variants</span></span>
+1. <span data-ttu-id="9e5cf-119">Kattintson a Kiadott termékváltozatok lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="9e5cf-119">Click Released product variants.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="9e5cf-120">Vegye figyelembe, hogy minden változat esetében öröklődik a kiadott alaptermék kiválasztott életciklus-állapota.</span><span class="sxs-lookup"><span data-stu-id="9e5cf-120">Note that all variants have inherited the selected lifecycle state from the released product master.</span></span>  
+
+2. <span data-ttu-id="9e5cf-121">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="9e5cf-121">In the list, mark the selected row.</span></span>
+3. <span data-ttu-id="9e5cf-122">A Termékéletciklus állapota mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="9e5cf-122">In the Product lifecycle state field, enter or select a value.</span></span>
 
