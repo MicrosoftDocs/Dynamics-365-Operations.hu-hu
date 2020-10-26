@@ -16,15 +16,15 @@ ms.custom: 53111
 ms.assetid: 5c12b1f2-eb89-4648-a755-de412f2eadd6
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: conradv
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3d85d10113e7cc4e95a25efe7fee6d1f23990694
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: be9d9ae48d21db077928ba7bd5615fea47ea5181
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3208470"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3979828"
 ---
 # <a name="expression-constraints-and-table-constraints-in-product-configuration-models"></a>A termékkonfigurációs modellek kifejezésmegszorításai
 
@@ -86,7 +86,7 @@ A termék a következő megszorítás beállítások használatával konfigurál
 (Szín == "Fekete" & (méret == "30" | méret == "50")) | (szín == "Piros" & mérete = "20")
 
 ## <a name="should-i-use-operators-or-infix-notation-when-i-write-expression-constraints"></a>I. operátorokkal, vagy infix a jelölés kifejezés megszorítások írva?
-Előtag rendelkezésre álló operátorok a használatával egy Kifejezésmegszorítás írhat vagy használatával infix jelölés. A **Min**, **Max** és **Abs** operátoroknál nem használhat infix jelölést. A legtöbb programnyelven alapértelmezésként ezen operátorok jelennek meg.
+Előtag rendelkezésre álló operátorok a használatával egy Kifejezésmegszorítás írhat vagy használatával infix jelölés. A **Min** , **Max** és **Abs** operátoroknál nem használhat infix jelölést. A legtöbb programnyelven alapértelmezésként ezen operátorok jelennek meg.
 
 ## <a name="what-operators-and-infix-notation-can-i-use-when-i-write-expression-constraints"></a>I. operátorokkal, vagy infix a jelölés kifejezés megszorítások írva?
 A következő táblázatokban a listában az operátorok és infix jelölések, amely lehet használni, amikor egy Kifejezésmegszorítás összetevőhöz ír egy termékkonfigurációs modell. A példákban a első táblázatban megtekintheti a kifejezés írása infix jelöléssel, vagy az operátorok segítségével.

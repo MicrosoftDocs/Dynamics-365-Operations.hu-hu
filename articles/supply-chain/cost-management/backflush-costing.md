@@ -16,15 +16,15 @@ ms.custom: 272063
 ms.assetid: 62a2a7da-ff79-49bf-a6e8-29460ba5252f
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: conradv
+ms.author: kamaybac
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 698ffc05823a796c63646d18036a23464c275815
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 0c8ef901afacd4ae191f2d01114bbf4bac38b9cd
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3209053"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3984994"
 ---
 # <a name="backflush-costing"></a>Visszavezetéses költségelszámolás
 
@@ -52,7 +52,7 @@ A költségszámítási táblázat a vállalat költségeinek szerkezetét model
 
 -   **Határozzon meg egy költségszámítási verziót.** A költségszámítási verzióban a vállalat határozza meg a költség karbantartásának módját. A költségszámítási verzió elszámolóár-rekordokat vagy tervezett költség rekordok halmazát tartalmazhatja attól függően, hogy milyen költségszámítás-típus van társítva a költségszámítási verzióhoz. A lean manufacturing költségszámításához használt költségszámítási verziónak elszámolóáron kell alapulnia.
 -   **Rendeljen egy készletmodellcsoportot a kiadott termékekhez.** A termelési folyamathoz kapcsolódó összes terméket hozzá kell rendelni egy **Elszámolóáras** készletmodellcsoportot használó készletmodellcsoporthoz, Az elszámolóárat a hely és az aktiválás dátuma szerint kell karbantartani. Alaptermékek esetén a készletmodellcsoport választható ki, ha a költség változatonként vagy alaptermékenként van karbantartva.
--   **Alapértelmezés szerint az alvállalkozói szolgáltatások nem jegyzett szolgáltatásoknak minősülnek.** Az alvállalkozói tevékenységek nem rendelkeznek készletmodellcsoporttal. Az alvállalkozói tevékenységek a megfelelő költségszámításához meg kell győződnie arról, hogy a szolgáltatási tevékenység egy olyan készletmodellcsoporthoz tartozik, amelyben a készlet házirendjének értéke **Raktározott termék = Hamis**.
+-   **Alapértelmezés szerint az alvállalkozói szolgáltatások nem jegyzett szolgáltatásoknak minősülnek.** Az alvállalkozói tevékenységek nem rendelkeznek készletmodellcsoporttal. Az alvállalkozói tevékenységek a megfelelő költségszámításához meg kell győződnie arról, hogy a szolgáltatási tevékenység egy olyan készletmodellcsoporthoz tartozik, amelyben a készlet házirendjének értéke **Raktározott termék = Hamis** .
 
 Elkészült termékek esetén a termelési folyamatot alapul vevő költségszámítás előírja, hogy elszámolóárat kell karbantartani az alvállalkozói tevékenységekhez kapcsolódó szolgáltatások esetén. A szolgáltatásokhoz társított költségcsoport segítségével lehet meghatározni az alvállalkozói tevékenység költségeltéréseit.
 
@@ -76,7 +76,7 @@ Ha az anyagot a készletből használják fel a folyamatban lévő munkában, az
 ## <a name="receiving-products-from-the-production-flow"></a>Termékek fogadása a termelési folyamatból
 A termékek termelési folyamatból történő fogadása a következő feltételek fennállása esetén történik:
 
--   Olyan befejezett feldolgozási feladatok esetén, amelyek esetében a **Készlet frissítése bevételezéskor** beállítása **Igen**.
+-   Olyan befejezett feldolgozási feladatok esetén, amelyek esetében a **Készlet frissítése bevételezéskor** beállítása **Igen** .
 -   Olyan befejezett átviteli feladatok esetén, amelyek frissítik a készletet a bevételezéskor, de amelyek esetében a **Készlet frissítése kitároláskor** beállítása **Nem** (Átvitel folyamatban lévő munkából készletbe). Ez a beállítás lehetővé teszi, hogy bevételezhesse a termelési folyamaton kívül levő termékeket az anyagjegyzék és az útvonal konfigurációjától függetlenül. A folyamat kizárólag a fizikai áramlást követi. Ez a beállítás akkor különösen a melléktermékek, társtermékek vagy a termelési folyamaton kívül eső selejt bevételezése esetén hasznos, valamint a termelési folyamat folyamatban lévő munkája költségegyenlegének ennek megfelelően történő kiigazításához.
 
 A termelési folyamatból érkező termékeket a folyamatban lévő munkából vonják le.
@@ -85,7 +85,7 @@ A termelési folyamatból érkező termékeket a folyamatban lévő munkából v
 A lean manufacturing befejezetlen termelés típusú modell lehetővé teszi, hogy a kanban anyagkezelési egység állapota segítségével használja azokat az anyagokat, félkész termékeket és késztermékeket, amelyek a befejezetlen termelés részei.
 
 -   **Hozzárendelve** – A kanban tartalmazhat a folyamatban lévő munkában elszámolt felhasznált anyagot.
--   **Fogadva** – Ha a kanban egy legutóbbi tevékenységre hivatkozik, amelyben a **Készlet frissítése bevételezéskor** beállítása **Nem**, az azt jelenti, hogy egy termék vagy félkész termék olyan teljes anyagkezelési egységének felel meg, amely nincs regisztrálva a készletbe.
+-   **Fogadva** – Ha a kanban egy legutóbbi tevékenységre hivatkozik, amelyben a **Készlet frissítése bevételezéskor** beállítása **Nem** , az azt jelenti, hogy egy termék vagy félkész termék olyan teljes anyagkezelési egységének felel meg, amely nincs regisztrálva a készletbe.
 
 Ne feledje, hogy a befejezetlen termelés anyaga nem látható a készlet aktuális áttekintésében. Látható azonban a kanbanmennyiség áttekintéseiben.
 

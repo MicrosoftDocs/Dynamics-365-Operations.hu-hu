@@ -16,15 +16,15 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: conradv
+ms.author: kamaybac
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: 44e5496904c10c644b33f5cf5d9e51c39bcd4a9e
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 259c9f07fb69b07f73baeb5ce94e0a7bc29bb2d6
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3209536"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3984802"
 ---
 # <a name="product-identifiers"></a>Termékazonosítók
 
@@ -101,7 +101,7 @@ A vonalkódok meghatározása előtt meghatározhat egy vagy több vonalkód-be�
 
 Azt ajánljuk, hogy a vonalkód-beállítást használja a nemzetközi cikkszám (EAN) vagy a globális kereskedelmi cikkszám (GTIN) kódok karbantartására.
 
-A vonalkódok karbantartásához a **Kiadott termékek** oldalon, a **Készletkezelés** lapon, a **Raktár** csoportban, válassza **Vonalkódok lehetőséget**.
+A vonalkódok karbantartásához a **Kiadott termékek** oldalon, a **Készletkezelés** lapon, a **Raktár** csoportban, válassza **Vonalkódok lehetőséget** .
 
 ## <a name="gtin-codes"></a>GTIN-kódok
 
@@ -145,7 +145,7 @@ Kétféle számsorozatot lehet megadni:
 - A **Cikkszám** számsorozata a cikkszámot jelenti, jogi személyenként
 
 > [!NOTE]
-> A cikkszámot külön azonosítóként csak akkor célszerű használni, ha áttelepít különböző jogi személyeket különböző forrásokból, amelyek különböző számozási rendszereket használtak. Mindig olyan termékazonosítót kell használnia, amely egyedi minden jogi személy között. Ennek megfelelően kell beállítani a **Kézi** lehetőséget **Igen** beállításra a **Cikkszám** számsorozat esetében. Ily módon a cikkszám követni fogja a termékszámot a létrehozás során. Ha a Supply Chain Management nem az új termékszámok fő rendszere, állítsa a **Kézi** lehetőséget **Igen** értékre mind a **Cikkszám**, mind a **Termékszám** számsorozatoknál.
+> A cikkszámot külön azonosítóként csak akkor célszerű használni, ha áttelepít különböző jogi személyeket különböző forrásokból, amelyek különböző számozási rendszereket használtak. Mindig olyan termékazonosítót kell használnia, amely egyedi minden jogi személy között. Ennek megfelelően kell beállítani a **Kézi** lehetőséget **Igen** beállításra a **Cikkszám** számsorozat esetében. Ily módon a cikkszám követni fogja a termékszámot a létrehozás során. Ha a Supply Chain Management nem az új termékszámok fő rendszere, állítsa a **Kézi** lehetőséget **Igen** értékre mind a **Cikkszám** , mind a **Termékszám** számsorozatoknál.
 
 Ha a **Kiadott termék létrehozása V2** entitást használja termékek létrehozásához, több beállítás van hatással arra, hogy hogyan történik a számsorozatok használata a termékszám és a cikkszám létrehozásához:
 
@@ -175,7 +175,7 @@ Tegye a következőket a környezet konfigurálásához.
 
 1. Válassza ki a kategóriahierarchiát a CDS-hez. A **Kategóriahierarchiához tartozó szerepkör társításai** oldalon, ha a hierarchia nincs társítva a **Common Data Service** szerepkörrel, létre kell hoznia egy új társítást. Válassza ki a **Common Data Service** szerepet, és ezután társítása azt a kategóriahierarchiát, amelyik azt a termékportfóliót képviseli, amelyet szinkronizálni kell a CDS-sel.
 2. Válassza ki a jogi személyt a termék globális alapadataihoz. A **Termékinformáció-kezelési paraméterek** oldalon, a **Termékattribútumok** fülön válassza ki a fő vállalatot, ahol a termék- és cikkazonosítók karbantartása elsősorban történik.
-3. Adja meg az exportálandó azonosító kódtípusokat és kódokat. Lépjen a **Termékinformációk kezelése** &gt; **Beállítás** &gt; **Termékazonosító kódok** elemre. Az azonosítókód-típusok létrehozásához jelölje be a **Kódok generálása**. A kiválasztott jogi személyben található azonosítók mindegyik típusához kódtípus-bejegyzés jön létre.
+3. Adja meg az exportálandó azonosító kódtípusokat és kódokat. Lépjen a **Termékinformációk kezelése** &gt; **Beállítás** &gt; **Termékazonosító kódok** elemre. Az azonosítókód-típusok létrehozásához jelölje be a **Kódok generálása** . A kiválasztott jogi személyben található azonosítók mindegyik típusához kódtípus-bejegyzés jön létre.
 
     Vegye figyelembe, hogy a vonalkódoknál, minden vonalkód-beállításhoz kódtípus jön létre. Külső kódok esetén minden külső kódosztályhoz kódtípus generálódik.
 
@@ -183,7 +183,7 @@ Tegye a következőket a környezet konfigurálásához.
 
 4. Amikor befejezte a termékazonosító kódtípusok meghatározását, létrehozhatja az azonosítókat a globális táblában a **Termékentitás-azonosítók létrehozása** feladat elindításával a **Termékentitás azonosítókódok** lapon. A feladatot kötegelt módban kell futtatni. Ez a feladatot ismétlődő kötegelt feladatként kell beállítani úgy, hogy a tábla az új bejegyzések alapján legyen feltöltve.
 
-Most már használhatók a **Termékentitás Common Data Service azonosító entitás**, a **Termékentitás azonosító kód** és a **Termékentitás azonosító hatókör** adatentitások az azonosítók exportálásához bármilyen célrendszerbe.
+Most már használhatók a **Termékentitás Common Data Service azonosító entitás** , a **Termékentitás azonosító kód** és a **Termékentitás azonosító hatókör** adatentitások az azonosítók exportálásához bármilyen célrendszerbe.
 
 ## <a name="related-topic"></a>Kapcsolódó témakör
 

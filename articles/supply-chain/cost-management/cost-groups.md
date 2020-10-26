@@ -16,15 +16,15 @@ ms.custom: 50871
 ms.assetid: 1855f744-f73f-4fa8-8290-a7ee126d368b
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d78649cd371b51bf6b9403aea0358630ed57b8c7
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 9dee8e40de43480cd010b5acc41a3d87611c2ab6
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3201801"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3981608"
 ---
 # <a name="cost-groups"></a>Költségcsoportok
 
@@ -49,7 +49,7 @@ A költségcsoport-szegmentálás egy elszámolóáras cikk eltéréseire is von
 A költségcsoporthoz egy költségcsoport-típust lehet hozzárendelni és azt, hogy a kiegészítő szegmentálásnál miként viselkedjen.
 
 -   **Költségcsoport-típus** − Minden költségcsoporthoz egy költségcsoport-típust kell hozzárendelni, amely jelzi, hogy a költségcsoport közvetlen anyag, közvetlen gyártás vagy közvetlen kiszervezés, vagy pedig közvetett, illetve definiálatlan. A költségcsoportok, amelyek közvetlen anyagként vannak meghatározva, cikkekhez rendelhetők hozzá. A közvetlen gyártási költségcsoportokat költségkategóriákhoz lehet hozzárendelni. A közvetlen kiszervezési költségcsoport szolgáltatási terméktípusokhoz rendelhető hozzá, amely lehetővé teszi a szolgáltatás beszerzési költségeinek alvállalkozói tevékenységekhez történő társítását. A közvetett költségcsoportok a felárak és pótdíjak közvetett költségéhez rendelhetők hozzá. A meghatározatlannak szánt költségcsoportokat cikkekhez, költségcsoportokhoz és közvetett költségekhez lehet hozzárendelni. Egy költségcsoport-típus társítása számos célt szolgál. Először is, korlátozza egy költségcsoport hozzárendelhetőségét és az alkalmazható költségcsoportok listájának megjeleníthetőségét. Másodszor, jelentési célokat szolgáló kiegészítő szegmentálást biztosít. Harmadszor, felhasználható arra, hogy főkönyvi számlákat rendeljenek az eltérésekhez.
--   **Viselkedés** − Minden költségcsoport opcionálisan hozzárendelhető egy viselkedéshez, amely jelzi, hogy a költségcsoport a fix költségekre vagy a változó költségekre vonatkozik. Az olyan költségcsoportot, amelynek viselkedése nulla értékre van állítva, változó költségként kezeli a program. A viselkedés hozzárendelése csak jelentési célokat szolgál. Például a költségeket megjelenítheti a költségszámítási táblázaton fix és változó költségek szegmentálásával és a**Költségösszegzés költségcsoportok szerint** oldalon. Ha százalékos nyereségbeállítást rendel az egyes költségcsoportokhoz, az anyagjegyzék-számítás megadja a „költség plusz árrés” elv alapján javasolt eladási árat.
+-   **Viselkedés** − Minden költségcsoport opcionálisan hozzárendelhető egy viselkedéshez, amely jelzi, hogy a költségcsoport a fix költségekre vagy a változó költségekre vonatkozik. Az olyan költségcsoportot, amelynek viselkedése nulla értékre van állítva, változó költségként kezeli a program. A viselkedés hozzárendelése csak jelentési célokat szolgál. Például a költségeket megjelenítheti a költségszámítási táblázaton fix és változó költségek szegmentálásával és a **Költségösszegzés költségcsoportok szerint** oldalon. Ha százalékos nyereségbeállítást rendel az egyes költségcsoportokhoz, az anyagjegyzék-számítás megadja a „költség plusz árrés” elv alapján javasolt eladási árat.
 
 
 

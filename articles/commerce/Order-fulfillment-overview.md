@@ -14,15 +14,15 @@ ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
 ms.search.region: Global
 ms.search.industry: retail
-ms.author: rubencdelgado
+ms.author: rubendel
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 74347e06dec8517145e79f77f553970324757128
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: fb535b1f20d97042e6205b680de1cc687350f071
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3022729"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3975147"
 ---
 # <a name="store-order-fulfillment"></a>Rendelésteljesítés az üzletben
 
@@ -64,11 +64,11 @@ Ha több sor van bejelölve, a rendelési sor részletei úszó menü csak azt j
 
 ## <a name="pending-order-lines"></a>Függő rendelési sorok
 
-Az összesített rendelésteljesítés magában foglalja a lehetőséget a rendelések manuális elfogadására. Alapértelmezés szerint az üzletben teljesítendő rendeléseinek már el vannak fogadva. Azonban, ha az üzleti folyamatok azt határozzák meg, hogy az üzlet szintjén a dolgozónak el kell fogadnia a rendeléseket, a manuális elfogadás bekapcsolható a kiskereskedelmi üzlet szintjén. A rendelés elfogadásának engedélyezéséhez ugorjon ide: **Retail és Commerce** \> **Csatornák** \> **Áruházak** \> **Minden kiskereskedelmi üzlet**. Nyissa meg a kívánt üzletet az **Általános** lapon, keresse meg a **Rendelés teljesítése** alfejlécet. A fejléc tartalmaz egy **Manuális elfogadás** beállítást, amelynek az értéke alapértelmezés szerint **Nem**. Ha a beállítás **Igen**, és a módosításokat a csatorna-adatbázisba szinkronizálja, a rendeléssorok átmehetnek az elfogadási folyamaton.
+Az összesített rendelésteljesítés magában foglalja a lehetőséget a rendelések manuális elfogadására. Alapértelmezés szerint az üzletben teljesítendő rendeléseinek már el vannak fogadva. Azonban, ha az üzleti folyamatok azt határozzák meg, hogy az üzlet szintjén a dolgozónak el kell fogadnia a rendeléseket, a manuális elfogadás bekapcsolható a kiskereskedelmi üzlet szintjén. A rendelés elfogadásának engedélyezéséhez ugorjon ide: **Retail és Commerce** \> **Csatornák** \> **Áruházak** \> **Minden kiskereskedelmi üzlet** . Nyissa meg a kívánt üzletet az **Általános** lapon, keresse meg a **Rendelés teljesítése** alfejlécet. A fejléc tartalmaz egy **Manuális elfogadás** beállítást, amelynek az értéke alapértelmezés szerint **Nem** . Ha a beállítás **Igen** , és a módosításokat a csatorna-adatbázisba szinkronizálja, a rendeléssorok átmehetnek az elfogadási folyamaton.
 
 A **Rendelés elfogadásának engedélyezése** engedéllyel rendelkező dolgozók megnyithatják a rendelésteljesítést, és kiválaszthatják a sorokat elfogadásra. Miután sor került a sorok elfogadására, az állapotuk megváltozik: **Függő** helyett **Elfogadott** lesz, és végrehajtható a rendelésteljesítési folyamat fennmaradó része. Ha a **Manuális elfogadás** be van kapcsolva, a rendelések nem dolgozhatók fel, amíg nincsenek elfogadva.
 
-Az üzleten belüli felvételre váró rendelések állapota soha nem lehez **Függő**. Erre azért van szükség, hogy ne forduljon elő az, hogy az üzletbe érkezik egy vevő, és a rendelési sort nem lehet feldolgozni, mert nem érhető el a megfelelő jogosultsággal rendelkező dolgozó.
+Az üzleten belüli felvételre váró rendelések állapota soha nem lehez **Függő** . Erre azért van szükség, hogy ne forduljon elő az, hogy az üzletbe érkezik egy vevő, és a rendelési sort nem lehet feldolgozni, mert nem érhető el a megfelelő jogosultsággal rendelkező dolgozó.
 
 ## <a name="accepted-order-lines"></a>Elfogadott rendeléssorok
 
@@ -180,7 +180,7 @@ A sorokat vagy a részleges sorokat el lehet utasítani. Ez lehetővé teszi a t
 - **Eredmény állapot:** Elutasítva
 - **Eredmény háttérirodai állapot:** Nincs módosítás
 
-Az elutasított rendeléssorok megtekinthetők az **Értékesítési rendelés feldolgozása és lekérdezése** munkaterületen. Törölje a személy szűrőt a munkaterületen az összes elutasított rendeléssor megtekintéséhez az áruházakra nézve. Az **Elutasított rendeléssorok** lap a **Rendelések és kedvencek** szakaszban megjeleníti a rendeléssorok adatait. Ezenkívül a felhasználóknak rákattinthatnak az **Elutasított rendeléssorok** gombra az **Összegzés** szakaszban az értékesítési rendelés nézet megjelenítéséhez. Ez megjelenít minden olyan rendelést, amelynek van egy vagy több elutasított rendeléssora. Ha az elosztott rendeléskezelés (DOM) engedélyezve van, akkor az elutasított rendelések automatikusan hozzá lesznek rendelve a megfelelő üzletekhez teljesítésre, azonban ezek a rendeléssorok manuálisan is hozzárendelhetők. Ehhez válassza ki a sort, amelynél a **Teljesítési állapot** **Elutasítva**, és szükség szerint módosítsa a helyet/raktárt. Kattintson a **Sor frissítése** legördülő menüre, majd kattintson a **Teljesítési állapot visszaállítása** elemre a teljesítési állapot módosításához **Elutasítva** állapotról **Elfogadott** vagy **Függő** állapotra, a rendelésteljesítés beállításától függően. A teljesítési állapota visszaállítását követően az üzlet dolgozói megtekinthetik a rendeléssorokat a pénztárban.
+Az elutasított rendeléssorok megtekinthetők az **Értékesítési rendelés feldolgozása és lekérdezése** munkaterületen. Törölje a személy szűrőt a munkaterületen az összes elutasított rendeléssor megtekintéséhez az áruházakra nézve. Az **Elutasított rendeléssorok** lap a **Rendelések és kedvencek** szakaszban megjeleníti a rendeléssorok adatait. Ezenkívül a felhasználóknak rákattinthatnak az **Elutasított rendeléssorok** gombra az **Összegzés** szakaszban az értékesítési rendelés nézet megjelenítéséhez. Ez megjelenít minden olyan rendelést, amelynek van egy vagy több elutasított rendeléssora. Ha az elosztott rendeléskezelés (DOM) engedélyezve van, akkor az elutasított rendelések automatikusan hozzá lesznek rendelve a megfelelő üzletekhez teljesítésre, azonban ezek a rendeléssorok manuálisan is hozzárendelhetők. Ehhez válassza ki a sort, amelynél a **Teljesítési állapot** **Elutasítva** , és szükség szerint módosítsa a helyet/raktárt. Kattintson a **Sor frissítése** legördülő menüre, majd kattintson a **Teljesítési állapot visszaállítása** elemre a teljesítési állapot módosításához **Elutasítva** állapotról **Elfogadott** vagy **Függő** állapotra, a rendelésteljesítés beállításától függően. A teljesítési állapota visszaállítását követően az üzlet dolgozói megtekinthetik a rendeléssorokat a pénztárban.
 
 ## <a name="line-quantity-tracking"></a>Sormennyiség követése
 
@@ -192,11 +192,11 @@ A fenti példánál maradva, ha 200 deszka csomagoltként van megjelölve, és a
 
 ## <a name="line-statuses"></a>Sorállapotok
 
-A pénztárban levő rendeléssoroknak több állapota van, hogy tükrözzék a rendelési sor állapotát. A pénztárban és a háttérirodában levő állapotok nem egyeznek meg minden esetben. A rendelésisor-állapotokat a pénztárban a rendelésteljesítési folyamat használatával lehet megtekinteni. A háttérirodában a rendelési sorokat a rendelés részleteinél lehet megtekinteni. A rendelés részletei itt érhetők el: **Retail és Commerce** \> **Vevők** \> **Minden vevői rendelés**. A rendelés adatainak megtekintéséhez válassza ki a **Rendelésazonosító** lehetőséget. A rendelés részleteinél válassza ki az **Értékesítési rendelés** fület, majd válassza ki a **Részletes állapot** elemet a **Megtekintés** alfejléc alatt.
+A pénztárban levő rendeléssoroknak több állapota van, hogy tükrözzék a rendelési sor állapotát. A pénztárban és a háttérirodában levő állapotok nem egyeznek meg minden esetben. A rendelésisor-állapotokat a pénztárban a rendelésteljesítési folyamat használatával lehet megtekinteni. A háttérirodában a rendelési sorokat a rendelés részleteinél lehet megtekinteni. A rendelés részletei itt érhetők el: **Retail és Commerce** \> **Vevők** \> **Minden vevői rendelés** . A rendelés adatainak megtekintéséhez válassza ki a **Rendelésazonosító** lehetőséget. A rendelés részleteinél válassza ki az **Értékesítési rendelés** fület, majd válassza ki a **Részletes állapot** elemet a **Megtekintés** alfejléc alatt.
 
 - **Függőben** – Azoknak a rendelési soroknak, amelyeket egy üzlethez társítottak, de még nem fogadták el őket, **Függőben** az állapota, amikor megtekintjük a pénztárban. A pénztárban elfogadásra váró sorok állapota a **Rendelés feldolgozása** a háttérirodában.
 - **Elfogadva** – Azoknak a rendelési soroknak, amelyeket manuálisan vagy automatikusan fogadtak el, **Elfogadva** lesz az állapota a pénztárban. Az **Elfogadva** állapotú sorok megjelenő állapota **Rendelés feldolgozása** a háttérirodában.
-- **Kitárolás** – Az üzlet szintjén jelenleg kitárolás alatt levő sorok állapota **Kitárolás**. Ugyanezek a sorok a háttérirodából megtekintve a **Rendelés feldolgozása** állapotot jelzik ki.
+- **Kitárolás** – Az üzlet szintjén jelenleg kitárolás alatt levő sorok állapota **Kitárolás** . Ugyanezek a sorok a háttérirodából megtekintve a **Rendelés feldolgozása** állapotot jelzik ki.
 - **Kitárolva** és **részlegesen kitárolt** – A pénztárnál kitárolt vagy részben kitárolt sorok állapota **Kitárolva** vagy **Részben kitárolva** lesz. A háttérirodában ugyanezek a sorok szintén a **Kitárolva** és a **Részben kitárolva** állapottal jelennek meg.
 - **Csomagolva** és **Részben csomagolva** – A pénztárnál csomagolt vagy részben csomagolt sorok állapota **Csomagolva** vagy **Részben csomagolva** lesz. A háttérirodában ugyanezek a sorok szintén a **Csomagolva** és a **Részben csomagolva** állapottal jelennek meg.
 - **Részben számlázva** – A részben felvett vagy részben szállított sorok állapota **Részben számlázva** lesz a pénztárnál és a háttérirodában.

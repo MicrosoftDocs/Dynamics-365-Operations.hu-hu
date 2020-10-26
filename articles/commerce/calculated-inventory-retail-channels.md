@@ -14,15 +14,15 @@ ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: hhainesms
+ms.author: hhaines
 ms.search.validFrom: 2020-02-11
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 6d25a426268ebfb6990eb3dadb1ad451f86f59a1
-ms.sourcegitcommit: 65a8681c46a1d99e7ff712094f472d5612455ff0
+ms.openlocfilehash: de4ee98198f441b8f42a8a55aa5ff1015f485234
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "3694922"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3975992"
 ---
 # <a name="calculate-inventory-availability-for-retail-channels"></a>Kiskereskedelmi csatornák készletelérhetőségének számítása
 
@@ -64,7 +64,7 @@ Ha a Kereskedelmi központ alkalmazásban szeretné pillanatképet készíteni a
 A **Termékelérhetőség** feladat futásának befejeződése után a rögzített adatokat közzé kell tenni az e-kereskedelmi csatorna-adatbázisokba, hogy a legújabb Kereskedelmi központ-készletpillanatképet figyelembe vehessék a becsült tényleges készlet számításakor.
 
 1. Ugorjon a **Kiskereskedelem és kereskedelem \> Kiskereskedelem és kereskedelem informatika \> Elosztási ütemezés** pontra.
-1. Futtassa az **1130** (**Termékelérhetőség**) feladatot a pillanatkép-adatok szinkronizálásához, amelyeket a **Termékelérhetőség** feladat hozott létre a Kereskedelmi központból a csatorna-adatbázisaiba.
+1. Futtassa az **1130** ( **Termékelérhetőség** ) feladatot a pillanatkép-adatok szinkronizálásához, amelyeket a **Termékelérhetőség** feladat hozott létre a Kereskedelmi központból a csatorna-adatbázisaiba.
 
 Amikor a készlet rendelkezésre állása a **GetEstimatedAvailabilty** vagy a **ProductWarehouseInventoryAvailabilities** API-kból lekérhető, egy számítás kerül futtatásra, hogy megpróbálja a legpontosabban megbecsülni a termékből rendelkezésre álló készletet. A számítás bármely olyan e-kereskedelmi vevői rendelésre hivatkozik, amelyek a csatorna-adatbázisban találhatók, de nem szerepelnek az 1130 feladat által biztosított pillanatképadatok között. Ezt a logikát követi a rendszer a legutóbbi feldolgozott készlettranzakció Kereskedelmi központból való nyomon követésével, és a csatorna-adatbázis tranzakciójával való összehasonlításával. Alapértéket ad a csatornaoldali számítási logikához, így a további készletmozgásokat, amelyek az e-kereskedelmi csatorna-adatábis vevői rendelkéseivel kapcsolatos értékesítési tranzakcióknál történtek, a rendszer figyelembe veszi az API által biztosított becsült készletértékben.
 
@@ -80,18 +80,18 @@ Amikor a csatornaoldali számítást helyesen konfigurálták és kezelték, meg
 
 ### <a name="get-started-with-pos-channel-side-calculated-inventory-availability"></a>A pénztár csatornaoldali számított készlet elérhetőségének megismerése
 
-Hogy használhassa a  csatornaoldali számítási logikát és kikapcsolhassa valós idejű szolgáltatáshívásokat készletkeresésekhez a POS alkalmazásból, először engedélyeznie kell az **Optimalizált termékelérhetőségi számítás** funkciót a **Funkciókezelés** munkaterületen a Commerce Headquartersben. A funkció engedélyezésén kívül módosítania kell a **funkció profilját**.
+Hogy használhassa a  csatornaoldali számítási logikát és kikapcsolhassa valós idejű szolgáltatáshívásokat készletkeresésekhez a POS alkalmazásból, először engedélyeznie kell az **Optimalizált termékelérhetőségi számítás** funkciót a **Funkciókezelés** munkaterületen a Commerce Headquartersben. A funkció engedélyezésén kívül módosítania kell a **funkció profilját** .
 
 A **Funkcióprofil** módosításához az alábbi lépéseket hajtsa végre:
 
-1. Ugorjon a következő elemre: **Retail és Commerce \>  Csatorna beállítása \> Pénztárbeállítás \>  Pénztárprofilok \> Funkcióprofilok**.
+1. Ugorjon a következő elemre: **Retail és Commerce \>  Csatorna beállítása \> Pénztárbeállítás \>  Pénztárprofilok \> Funkcióprofilok** .
 1. Válasszon funkcióprofilt.
-1. A **Funkciók** gyorslap **Készletelérhetőségi számítás** szakaszában módpsítsa a **Készletelérhetőségi számítás módja** mező értékét **Valós idejű szolgáltatásról** **Csatornára**. Alapértelmezés szerint az összes funkcióprofil valós idejű szolgáltatási hívásokat használ. Ennek megfelelően módosítania kell ennek a mezőnek az értékét, ha csatornaoldali számítási logikát szeretne használni. A módosítás hatással van minden olyan kiskereskedelmi üzletre, amely a kiválasztott funkcióprofilhoz van társítva.
+1. A **Funkciók** gyorslap **Készletelérhetőségi számítás** szakaszában módpsítsa a **Készletelérhetőségi számítás módja** mező értékét **Valós idejű szolgáltatásról** **Csatornára** . Alapértelmezés szerint az összes funkcióprofil valós idejű szolgáltatási hívásokat használ. Ennek megfelelően módosítania kell ennek a mezőnek az értékét, ha csatornaoldali számítási logikát szeretne használni. A módosítás hatással van minden olyan kiskereskedelmi üzletre, amely a kiválasztott funkcióprofilhoz van társítva.
 
 Ezután a következő lépések végrehajtásával szinkronizálni kell a csatornán végzett módosításokat az elosztási ütemezési folyamaton keresztül:
 
 1. Ugorjon a **Kiskereskedelem és kereskedelem \> Kiskereskedelem és kereskedelem informatika \> Elosztási ütemezés** pontra.
-1. Futtassa a **1070** (**csatornakonfiguráció**) feladatot.
+1. Futtassa a **1070** ( **csatornakonfiguráció** ) feladatot.
 
 A konfiguráció befejezését követően a fizikailag elérhető készletről kapott adatok már nem használnak valós idejű szolgáltatási hívást, amikor a pénztár alkalmazásban a felhasználó a **Készletkeresés** műveletet használja (normál és mátrix nézet). Helyette az aktuális üzlet, valamint a teljesítési csoportba tartozó összes üzlet ténylegesen rendelkezésre álló készletét a Kereskedelmi központ programból a csatorna-adatbázishoz szállított legutóbbi pillanatkép alapján számítja ki a program. A csatornaoldali számítás tovább finomítja a pillanatfelvétel értékét, hogy a ténylegesen rendelkezésre álló értéket módosítsa a csatorna-adatbázis azon kiválasztott termékéhez tartozó további értékesítési vagy visszáru-tranzakciók alapján, amelyek nem szerepelnek az 1130-as feladat legutóbbi szinkronizált pillanatképén. Ha a csatorna-adatbázis nem tartalmaz tranzakciós adatokat a teljesítési csoportban szereplő bármely raktárakhoz vagy üzletekhez, akkor nem tartalmaz olyan további tranzakciókat, amelyek az érték újraszámításához használhatók fel. Ezért az adott raktáraknál vagy üzleteknél a tényleges készletre vonatkozóan megjelenített legjobb besclés a legutóbb ismert Kereskedelmi központ-pillanatképről származó adat.
 

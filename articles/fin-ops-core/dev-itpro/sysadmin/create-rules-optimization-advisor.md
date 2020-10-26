@@ -16,25 +16,25 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: roxanad
+ms.author: sericks
 ms.search.validFrom: 2017-12-01
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: e14949b871534868c42d2b26a116e10ff9f05179
-ms.sourcegitcommit: 8ff2413b6cb504d2b36fce2bb50441b2e690330e
+ms.openlocfilehash: 8c4f5eff01ab20ce9de2a30b27b163df8cf83e02
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "3081996"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3985219"
 ---
 # <a name="create-rules-for-optimization-advisor"></a>Optimalizálási tanácsadó szabályainak létrehozása
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör elmagyarázza, hogyan hozhatók létre új szabályok az **Optimalizálási tanácsadóhoz**. Például létrehozhat egy új szabályt, amely azonosítja, melyik ajánlatkérési esetek címe üres. Címek az eseteken történő használata könnyen azonosíthatóvá és kereshetővé teszi őket. Bár nagyon egyszerű, az alábbi példa bemutatja, mit lehet elérni optimalizálási szabályokkal. 
+Ez a témakör elmagyarázza, hogyan hozhatók létre új szabályok az **Optimalizálási tanácsadóhoz** . Például létrehozhat egy új szabályt, amely azonosítja, melyik ajánlatkérési esetek címe üres. Címek az eseteken történő használata könnyen azonosíthatóvá és kereshetővé teszi őket. Bár nagyon egyszerű, az alábbi példa bemutatja, mit lehet elérni optimalizálási szabályokkal. 
 
 A *szabály* egy ellenőrzés az alkalmazásadatokon. Ha teljesül a feltétel, amelyet a szabály értékel, lehetőség nyílik folyamatok optimalizálására vagy adatok javítására. Ezek a lehetőségek kihasználhatók, és opcionálisan mérhető az intézkedések hatása. 
 
-Új szabály létrehozásához az **Optimalizálási tanácsadó** részére adjon hozzá egy új osztályt, amely bővíti a **SelfHealingRule** absztrakt osztályt, implementálja az **IDiagnosticsRule** interfészt, és fel van szerelve a **DiagnosticRule** attribútummal. Az osztálynak olyan metódussal is kell rendelkeznie, amelynél megvan a **DiagnosticsRuleSubscription** attribútum. Megegyezés alapján ez az **opportunityTitle** metódus révén történik, amelyet később tárgyalunk. Ez az új osztály hozzáadható egy egyéni modellhez, amely a **SelfHealingRules** modelltől függ. A következő példában az implementált szabály neve **RFQTitleSelfHealingRule**.
+Új szabály létrehozásához az **Optimalizálási tanácsadó** részére adjon hozzá egy új osztályt, amely bővíti a **SelfHealingRule** absztrakt osztályt, implementálja az **IDiagnosticsRule** interfészt, és fel van szerelve a **DiagnosticRule** attribútummal. Az osztálynak olyan metódussal is kell rendelkeznie, amelynél megvan a **DiagnosticsRuleSubscription** attribútum. Megegyezés alapján ez az **opportunityTitle** metódus révén történik, amelyet később tárgyalunk. Ez az új osztály hozzáadható egy egyéni modellhez, amely a **SelfHealingRules** modelltől függ. A következő példában az implementált szabály neve **RFQTitleSelfHealingRule** .
 
 ```xpp
 [DiagnosticsRule] 
@@ -98,17 +98,17 @@ private container findRFQCasesWithEmptyTitle()
 } 
 ```
 
-Két további módszer, amelyet implementálni kell, az **opportunityTitle** és az **opportunityDetails**. A korábbi egy a lehetőséghez tartozó rövid címet ad vissza, az utóbbi a lehetőség részletes leírását adja vissza, amely adatokat is tartalmazhat.
+Két további módszer, amelyet implementálni kell, az **opportunityTitle** és az **opportunityDetails** . A korábbi egy a lehetőséghez tartozó rövid címet ad vissza, az utóbbi a lehetőség részletes leírását adja vissza, amely adatokat is tartalmazhat.
 
 A **opportunityTitle** által visszaadott cím az **Optimalizálási lehetőség** oszlopban jelenik az **Optimalizálási tanácsadó** munkaterületen. Emellett az oldalsó panel fejléceként is megjelenik, és a lehetőséggel kapcsolatos további információkat jelenít meg. Megegyezés alapján ez a metódus el van látva a **DiagnosticRuleSubscription** attribútummal, amely a következő argumentumokat veszi fel: 
 
-* **Diagnosztikai terület** – egy **DiagnosticArea** típusú felsorolás, amely leírja, az alkalmazás mely területéhez tartozik a szabály, mint például **DiagnosticArea::SCM**. 
+* **Diagnosztikai terület** – egy **DiagnosticArea** típusú felsorolás, amely leírja, az alkalmazás mely területéhez tartozik a szabály, mint például **DiagnosticArea::SCM** . 
 
-* **Szabály neve** – karakterlánc a szabály nevével. Ez a **Szabály neve** oszlopban jelenik meg a **Diagnosztikai ellenőrzési szabály** képernyőn (**DiagnosticsValidationRuleMaintain**). 
+* **Szabály neve** – karakterlánc a szabály nevével. Ez a **Szabály neve** oszlopban jelenik meg a **Diagnosztikai ellenőrzési szabály** képernyőn ( **DiagnosticsValidationRuleMaintain** ). 
 
-* **Futtatás gyakorisága** – egy **DiagnosticRunFrequency** típusú felsorolás, amely leírja, hogy milyen gyakran fusson a szabály, például: **DiagnosticRunFrequency::Daily**. 
+* **Futtatás gyakorisága** – egy **DiagnosticRunFrequency** típusú felsorolás, amely leírja, hogy milyen gyakran fusson a szabály, például: **DiagnosticRunFrequency::Daily** . 
 
-* **Szabály leírása** – karakterlánc a szabály részletesebb leírásával. Ez a **Szabály leírása** oszlopban jelenik meg a **Diagnosztikai ellenőrzési szabály** képernyőn (**DiagnosticsValidationRuleMaintain**). 
+* **Szabály leírása** – karakterlánc a szabály részletesebb leírásával. Ez a **Szabály leírása** oszlopban jelenik meg a **Diagnosztikai ellenőrzési szabály** képernyőn ( **DiagnosticsValidationRuleMaintain** ). 
 
 > [!NOTE]
 > A **DiagnosticRuleSubscription** attribútum szükséges a szabály működéséhez. Általában az **opportunityTitle** révén használatos, de az osztály bármely metódusához hozzárendelhető.
@@ -149,7 +149,7 @@ public str opportunityDetails(SelfHealingOpportunity _opportunity)
 }
 ```
 
-A fennmaradó kettő implementálandó absztrakt metódus a **provideHealingAction** és a **securityMenuItem**. 
+A fennmaradó kettő implementálandó absztrakt metódus a **provideHealingAction** és a **securityMenuItem** . 
 
 A **provideHealingAction** IGAZ értéket ad vissza gyógyító művelet esetén, ellenkező esetben az eredmény HAMIS. Ha az eredmény IGAZ, a **performAction** metódust kell implementálni, vagy hiba történik. A **performAction** metódus **SelfHealingOpportunity** argumentumot vesz fel, amelyben az adatok felhasználhatók a művelethez. Ebben a példában a művelet megnyitja a **PurchRFQCaseTableListPage** elemet kézi javításhoz. 
 
@@ -170,7 +170,7 @@ A szabály jellemzőitől függően lehetséges lehet automatikus műveletet vé
 A **securityMenuItem** egy műveleti menüpont nevét adja vissza, úgy, hogy a szabály csak azoknak a felhasználóknak látható, akik hozzáférhetnek a műveleti menüponthoz. A biztonság megkövetelheti, hogy konkrét szabályok és lehetőségek csak az engedélyezett felhasználók számára legyenek elérhetők. Ebben a példában csak a **PurchRFQCaseTitleAction** elemhez hozzáféréssel rendelkező felhasználók tekinthetik meg a lehetőséget. Figyelje meg, hogy ez a műveleti menüpont ehhez a példához készült, és belépési pontként lett hozzáadva a **PurchRFQCaseTableMaintain** biztonsági jogosultsághoz. 
 
 > [!NOTE]
-> A menüelemnek műveleti menüelemnek kell lennie a biztonságnál a helyes működéshez. Az egyéb menüelemtípusok, például a **megjelenítendő menüelemek**, nem működnek megfelelően.
+> A menüelemnek műveleti menüelemnek kell lennie a biztonságnál a helyes működéshez. Az egyéb menüelemtípusok, például a **megjelenítendő menüelemek** , nem működnek megfelelően.
 
 ```xpp
 public MenuName securityMenuItem() 
@@ -193,7 +193,7 @@ class ScanNewRulesJob
 } 
 ```
 
-A szabály megjelenik a **Diagnosztikai ellenőrzési szabály** képernyőn, amely a **Rendszerfelügyelet** > **Időszakos feladatok** > **Diagnosztikai ellenőrzési szabály karbantartása** elemnél elérhető. Az értékeléséhez lépjen a **Rendszerfelügyelet** > **Időszakos feladatok** > **Diagnosztikai ellenőrzési szabály ütemezése** elemre, és válassza ki a szabály gyakoriságát, például: **Napi**. Kattintson az **OK** gombra. Lépjen a **Rendszerfelügyelet** > **Optimalizálási tanácsadó** elemre az új lehetőség megtekintéséhez. 
+A szabály megjelenik a **Diagnosztikai ellenőrzési szabály** képernyőn, amely a **Rendszerfelügyelet** > **Időszakos feladatok** > **Diagnosztikai ellenőrzési szabály karbantartása** elemnél elérhető. Az értékeléséhez lépjen a **Rendszerfelügyelet** > **Időszakos feladatok** > **Diagnosztikai ellenőrzési szabály ütemezése** elemre, és válassza ki a szabály gyakoriságát, például: **Napi** . Kattintson az **OK** gombra. Lépjen a **Rendszerfelügyelet** > **Optimalizálási tanácsadó** elemre az új lehetőség megtekintéséhez. 
 
 A következő példa egy kódrészlet egy olyan szabály vázlatával, amely tartalmaz minden kötelező módszert és attribútumot. Segít a kezdő lépésekben az új szabályok elkészítése során. A példában használt címkék és műveleti menüelemek csak bemutató célt szolgálnak.
 

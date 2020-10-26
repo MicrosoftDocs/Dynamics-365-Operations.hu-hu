@@ -19,12 +19,12 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4bb2f340afffc5f62c200b4daac311db435d796e
-ms.sourcegitcommit: 97d4a9bd442fe20f90605d8154c3a947c7645b37
+ms.openlocfilehash: adf890f5305f4e6a62c2d7527ff3b593ed61eff3
+ms.sourcegitcommit: c55fecae96b4bb27bc313ba10a97eddb9c91350a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "3895377"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "3989241"
 ---
 # <a name="routes-and-operations"></a>Útvonalak és műveletek
 
@@ -37,10 +37,10 @@ Ez a témakör információkat nyújt az útvonalakkal és a műveletekkel kapcs
 
 Az útvonal leírja azoknak a műveleteknek a sorrendjét, amelyek egy termék vagy termékváltozat előállításához szükségesek. Az útvonal minden egyes műveletnél meghatározza azt is, hogy milyen üzemi erőforrások szükségesek, mennyi idő kell a művelet beállítására és végrehajtására továbbá azt is, hogy miként kell kiszámítani a költséget. Azonos útvonallal több termék is előállítható, de meghatározhat egyedi útvonalat is minden egyes termékhez vagy termékváltozathoz. Akár egyetlen termékhez is létrehozhat több útvonalat. Ebben az esetben az útvonal olyan tényezők alapján váltakozik, mint például az előállítandó mennyiség. Az útvonal meghatározása a Supply Chain Management szolgáltatásban négy olyan különálló elemből áll, amelyek együttesen leírják a termelési folyamatot:
 
--   **Útvonal** – Az útvonal határozza meg az előállítási folyamat szerkezetét. Más szavakkal a műveletek sorrendjét határozza meg.
--   **Művelet** – A művelet egy névvel ellátott lépést jelent az útvonalban, mint például **Összeszerelés**. Azonos művelet több útvonalnál is előfordulhat, így a műveleti számok eltérőek lehetnek.
--   **Művelet kapcsolata** – Egy művelet kapcsolata a művelet tulajdonságait határozza meg, így például a beállítási és futási időket, a költségkategóriákat, a fogyasztási paramétereket, valamint az erőforrás-szükségletet. A művelet kapcsolata lehetővé teszi a művelet tulajdonságai számára a változtathatóságot, azon útvonaltól függően, amelyet a művelet használ, illetve az előállított termékektől függően.
--   **Útvonalverzió** – Az útvonalverzió határozza meg a termék vagy termékváltozat előállításánál használt útvonalat. Az útvonalverziók lehetővé teszik az útvonalak újrahasznosítását a különböző termékekben, és időről időre módosíthatók. Azt is lehetővé teszik, hogy ugyanannál a terméknél más és más útvonalakat használjanak. Ebben az esetben az útvonal olyan tényezők alapján váltakozik, mint például a hely vagy az előállítandó mennyiség.
+- **Útvonal** – Az útvonal határozza meg az előállítási folyamat szerkezetét. Más szavakkal a műveletek sorrendjét határozza meg.
+- **Művelet** – A művelet egy névvel ellátott lépést jelent az útvonalban, mint például **Összeszerelés** . Azonos művelet több útvonalnál is előfordulhat, így a műveleti számok eltérőek lehetnek.
+- **Művelet kapcsolata** – Egy művelet kapcsolata a művelet tulajdonságait határozza meg, így például a beállítási és futási időket, a költségkategóriákat, a fogyasztási paramétereket, valamint az erőforrás-szükségletet. A művelet kapcsolata lehetővé teszi a művelet tulajdonságai számára a változtathatóságot, azon útvonaltól függően, amelyet a művelet használ, illetve az előállított termékektől függően.
+- **Útvonalverzió** – Az útvonalverzió határozza meg a termék vagy termékváltozat előállításánál használt útvonalat. Az útvonalverziók lehetővé teszik az útvonalak újrahasznosítását a különböző termékekben, és időről időre módosíthatók. Azt is lehetővé teszik, hogy ugyanannál a terméknél más és más útvonalakat használjanak. Ebben az esetben az útvonal olyan tényezők alapján váltakozik, mint például a hely vagy az előállítandó mennyiség.
 
 ## <a name="routes"></a>Útvonalak
 Az útvonal leírja azoknak a műveleteknek a sorrendjét, amelyek egy termék vagy termékváltozat előállításánál használatosak. Minden egyes művelethez műveletszámot és következő műveletet rendel a rendszer. A műveletek sorrendje olyan útvonalhálózatot alkot, amely olyan irányított diagramon jeleníthető meg, amelyik egy vagy több kezdőponttal és egy végponttal rendelkezik. A Supply Chain Management programban az útvonalak a szerkezettípus alapján különülnek el. A két útvonaltípus az egyszerű útvonal és az útvonalhálózat. A Gyártásvezérlés paramétereinél megadhatja, hogy csak egyszerű útvonalakat lehet használni vagy összetettebb útvonalhálózatokat is.
@@ -60,9 +60,9 @@ Ha engedélyezi az összetettebb útvonalhálózatokat a Gyártásvezérlési pa
 [![Útvonalhálózat](./media/routes-and-operations-2-route-network.png)](./media/routes-and-operations-2-route-network.png)  
 
 > [!NOTE]
-> -   Minden egyes művelethez csak egy következő művelet tartozhat, és a teljes útvonalnak egyetlen művelettel kell befejeződnie.
-> -   Ez nem biztosítja, hogy több olyan művelet, amelynek azonos a következő művelete (az előző példában a 30-as és 40-es művelet), ténylegesen párhuzamosan fog futni. Az erőforrások rendelkezésre állása és kapacitása korlátokat szabhat a műveletek ütemezésére vonatkozóan.
-> -   Műveleti számként a 0 (zéró) nem használható. Ez a szám foglalt, és segítségével megadhatja, hogy az útvonal utolsó művelete nem rendelkezik következő művelettel.
+> - Minden egyes művelethez csak egy következő művelet tartozhat, és a teljes útvonalnak egyetlen művelettel kell befejeződnie.
+> - Ez nem biztosítja, hogy több olyan művelet, amelynek azonos a következő művelete (az előző példában a 30-as és 40-es művelet), ténylegesen párhuzamosan fog futni. Az erőforrások rendelkezésre állása és kapacitása korlátokat szabhat a műveletek ütemezésére vonatkozóan.
+> - Műveleti számként a 0 (zéró) nem használható. Ez a szám foglalt, és segítségével megadhatja, hogy az útvonal utolsó művelete nem rendelkezik következő művelettel.
 
 ### <a name="parallel-operations"></a>Párhuzamos műveletek
 
@@ -99,14 +99,14 @@ A művelet tulajdonságai a művelet olyan tulajdonságait határozzák meg, min
 ## <a name="operation-relations"></a>Műveleti kapcsolatok
 A műveletek következő tulajdonságai maradnak meg a műveleti kapcsolatnál:
 
--   Költségkategóriák
--   Fogyasztási paraméterek
--   Feldolgozási idők
--   Feldolgozási mennyiségek
--   Erőforrásigények
--   Megjegyzések és utasítások
+- Költségkategóriák
+- Fogyasztási paraméterek
+- Feldolgozási idők
+- Feldolgozási mennyiségek
+- Erőforrásigények
+- Megjegyzések és utasítások
 
-Egy műveletnél több műveleti kapcsolatot is meghatározhat. Azonban minden egyes műveleti kapcsolat egyetlen műveletre jellemző, és olyan tulajdonságokat tárol, amelyek egy cikkcsoporthoz kapcsolódó útvonalhoz, kiadott termékhez vagy kiadott termékek egy készletéhez tartoznak. Emiatt ugyanazt a műveletet több olyan útvonalnál is használni lehet, amelyek különböző műveleti tulajdonságokkal rendelkeznek. Ezen túlmenően egyszerűbben tudja karbantartani az alapadatokat, ha olyan szabványos műveleteket használ, melyeknek azonosak a műveleti tulajdonságai, tekintet nélkül a használt útvonalra és az előállított termékre. A műveleti kapcsolat hatóköre a **Cikk-kód**, a **Cikk-kapcsolat**, az **Útvonalkód** és az **Útvonalkapcsolat** tulajdonságokkal határozható meg, ahogyan az a következő táblázatban is látható.
+Egy műveletnél több műveleti kapcsolatot is meghatározhat. Azonban minden egyes műveleti kapcsolat egyetlen műveletre jellemző, és olyan tulajdonságokat tárol, amelyek egy cikkcsoporthoz kapcsolódó útvonalhoz, kiadott termékhez vagy kiadott termékek egy készletéhez tartoznak. Emiatt ugyanazt a műveletet több olyan útvonalnál is használni lehet, amelyek különböző műveleti tulajdonságokkal rendelkeznek. Ezen túlmenően egyszerűbben tudja karbantartani az alapadatokat, ha olyan szabványos műveleteket használ, melyeknek azonosak a műveleti tulajdonságai, tekintet nélkül a használt útvonalra és az előállított termékre. A műveleti kapcsolat hatóköre a **Cikk-kód** , a **Cikk-kapcsolat** , az **Útvonalkód** és az **Útvonalkapcsolat** tulajdonságokkal határozható meg, ahogyan az a következő táblázatban is látható.
 
 | Cikk kódja | Cikk-kapcsolat         | Útvonal kódja | Útvonalkapcsolat   | A műveleti kapcsolat hatóköre                                                                                                                                                                                                                                                                              |
 |-----------|-----------------------|------------|------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -166,12 +166,13 @@ Amikor műveletek megkeresi a leginkább megfelelő kapcsolat engedélyezett ter
 Ezért egy műveletet csak egyszer szabad használni minden egyes útvonalnál. Ha a művelet ugyanazon az útvonalon többször is előfordul, akkor az adott művelet mindegyik előfordulásának ugyanaz lesz a műveletkapcsolata, és Ön nem adhat meg különböző tulajdonságokat (például futtatási időket) az egyes előfordulásokhoz.
 
 ## <a name="route-versions"></a>Útvonalverziók
+
 Az útvonalverziók az egyes termékek előállításában fennálló különbségek kezelését teszik lehetővé, illetve kiterjedtebb ellenőrzést biztosítanak Önnek a termelési folyamat felett. Meghatározzák, hogy melyik útvonalat kell használni, amikor egy kiadott termék vagy termékváltozat elkészül. Az alábbi megszorítások segítségével megadhatja, hogy melyik útvonalat szeretné használni a kiadott terméknél:
 
--   Termékdimenziók (méret, szín, stílus vagy konfiguráció)
--   Termelési mennyiség
--   Termelés helye
--   Termelés dátuma
+- Termékdimenziók (méret, szín, stílus vagy konfiguráció)
+- Termelési mennyiség
+- Termelés helye
+- Termelés dátuma
 
 Ha meg vagyunk egy adott helyen egy adott mennyiségű terméket előállító, vagy egy adott időszakban kijelölhet egy adott útvonalverzión az alapértelmezett útvonal verzió. Megjegyzendő azonban, hogy csak egyetlen aktív útvonal engedélyezett egy adott kiadott termék és korlátozások egy adott készletét.  
 
@@ -194,6 +195,7 @@ Ha naplót kell vezetnie, amely rögzíti, hogy melyik útvonalverziót ki hagyt
 A termékmódosítási eset új vagy módosított anyagjegyzékek vagy anyagjegyzék verziók jóváhagyása és aktiválása esetén egyszerű módot biztosít, hogy áttekintsük az anyagjegyzék verziók megszorításait. Jóváhagyása és aktiválása adott módosítását egyetlen művelettel kapcsolatos, és az eredményeket a termék Kisbetű-nagybetű dokumentum összes útvonalat is.
 
 ## <a name="maintaining-routes"></a>Útvonalak karbantartása
+
 Üzleti szükségletektől függően előfordulhat, amely szükséges annak érdekében, hogy a folyamat meghatározása az erőkifejtés csökkentése érdekében.
 
 ### <a name="making-routes-independent-of-resources"></a>Erőforrásoktól független útvonalak készítése
@@ -224,10 +226,10 @@ Ez a módszer használata esetén a **műveleti kapcsolatok** oldal lesz az els�
 
 Ha nem ad meg üzemi erőforrást vagy erőforráscsoportot egy művelet erőforrásigényének részeként, az alkalmazott erőforrások különböző sebességgel működhetnek. Emiatt az egy-egy művelet feldolgozásához szükséges idő változó lehet. A probléma megoldásához használhatja a műveleti kapcsolat **Képlet** mezőjét, ahol megadhatja a feldolgozási idő kiszámításának módját. Az alábbi lehetőségek közül választhat:
 
--   **Szabványos** – (Alapértelmezett beállítás) A számítás csak a műveleti kapcsolat mezőit használja, és megszorozza a megadott futási időt a rendelés mennyiségével.
--   **Kapacitás** – A számítás magába foglalja a **Kapacitás** mezőt az üzemi erőforrásból. Ezért az idő erőforrásfüggő. Az üzemi erőforrásnál megadott érték óránkénti kapacitás. A **Feldolgozási időt** úgy számítja ki a rendszer, hogy a **Rendelési mennyiséget** a **Kapacitással** elosztja.
--   **Köteg** – A kötegkapacitás kiszámítása a műveleti kapcsolat adatainak felhasználásával történik. Ezt követően a rendelt mennyiség alapján kiszámítható a kötegek száma, és így a feldolgozási idő is.
--   **Erőforrásköteg** – Ez a lehetőség gyakorlatilag megegyezik a **Köteg** beállítással. A számítás azonban magába foglalja a **Kötegkapacitás** mezőt a műveletek erőforrás mezőből. Ezért az idő erőforrásfüggő.
+- **Szabványos** – (Alapértelmezett beállítás) A számítás csak a műveleti kapcsolat mezőit használja, és megszorozza a megadott futási időt a rendelés mennyiségével.
+- **Kapacitás** – A számítás magába foglalja a **Kapacitás** mezőt az üzemi erőforrásból. Ezért az idő erőforrásfüggő. Az üzemi erőforrásnál megadott érték óránkénti kapacitás. A **Feldolgozási időt** úgy számítja ki a rendszer, hogy a **Rendelési mennyiséget** a **Kapacitással** elosztja.
+- **Köteg** – A kötegkapacitás kiszámítása a műveleti kapcsolat adatainak felhasználásával történik. Ezt követően a rendelt mennyiség alapján kiszámítható a kötegek száma, és így a feldolgozási idő is.
+- **Erőforrásköteg** – Ez a lehetőség gyakorlatilag megegyezik a **Köteg** beállítással. A számítás azonban magába foglalja a **Kötegkapacitás** mezőt a műveletek erőforrás mezőből. Ezért az idő erőforrásfüggő.
 
 ### <a name="set-up-route-groups"></a>Útvonalcsoportok beállítása
 
@@ -244,7 +246,7 @@ A feladattípusok között megtalálja az Átfedést. Átfedés lehetővé teszi
 Ezért, ha az Aktiválás van kiválasztva az Átfedéshez a többi beállítás (feladatkezelés, munkaidő és a kapacitás) nem befolyásolják ezt az útvonalcsoportot. 
 
 > [!NOTE]
-> Verziók frissítésekor előfordulhat a következő hiba: **„Az ütemezési motor meghívása során CLR-hiba történt.”**. Ha ezt a hibát kapja menjen az **Útvonal-csoportok** lap és minden az útvonalon, ahol aktiválta az **Átfedést**, törölje a jelet a **Feladatkezelés**, **Munkaidő** és **Kapacitás** beállításokból. 
+> Verziók frissítésekor előfordulhat a következő hiba: **„Az ütemezési motor meghívása során CLR-hiba történt.”** . Ha ezt a hibát kapja menjen az **Útvonal-csoportok** lap és minden az útvonalon, ahol aktiválta az **Átfedést** , törölje a jelet a **Feladatkezelés** , **Munkaidő** és **Kapacitás** beállításokból. 
 
 ## <a name="additional-resources"></a>További erőforrások
 

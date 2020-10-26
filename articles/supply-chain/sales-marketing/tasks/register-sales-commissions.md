@@ -13,15 +13,15 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: omulvad
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 83cea952f4883d49621a9f7d16440927a8eddb98
-ms.sourcegitcommit: 54da65a7da0efd4f0d9760c5b14ff785b28751c4
+ms.openlocfilehash: 57e3b95cb1f4a13b49ddcd336efaeabb12e5defc
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3830561"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3979526"
 ---
 # <a name="register-sales-commissions"></a>Értékesítési jutalékok regisztrálása
 
@@ -62,8 +62,8 @@ Jegyezze fel a jutalékfolyamathoz kiválasztott vevő és cikkszámokat, majd h
 20. Válassza ki az **OK** lehetőséget, majd ismét az **OK** lehetőséget a következő ablaktáblán. A tranzakció feladása körülbelül egy percet vesz igénybe. Engedélyezze a folyamat befejezését és ne zárja be az ablakot.  
 
 ## <a name="review-the-registered-sales-commissions"></a>A regisztrált értékesítési jutalékok áttekintése
-1. A műveleti ablaktáblán válassza ki a **Számla**, majd ismét a **Számla** elemet.
-2. A műveleti ablaktáblán válassza ki a **Számla**, majd a **Jutaléktranzakciók** elemet.
+1. A műveleti ablaktáblán válassza ki a **Számla** , majd ismét a **Számla** elemet.
+2. A műveleti ablaktáblán válassza ki a **Számla** , majd a **Jutaléktranzakciók** elemet.
 
     - Az **Áttekintés** lap megjeleníti a számlázott értékesítési megrendeléshez társított értékesítőknek kifizethető jutalék összegeit jelölő sorokat. Most ellenőrizze a részleteket.  
     - Ha az „Értékesítési jutalékok szabályainak beállítása” útmutatót használta a **Jutalék értékesítési csoportja** beállításához, két ember kapja az értékesítési jutalékokat, és a jutalék egyenlően oszlik el közöttük.  

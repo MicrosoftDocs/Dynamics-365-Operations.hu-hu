@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a7cc238c573a319073b451063782762c19a80017
-ms.sourcegitcommit: 28a771d81322e72d88db63a20ff360de084a6087
+ms.openlocfilehash: 363ce16b31a199e519c969746c4f10430d9d7497
+ms.sourcegitcommit: 165e082e59ab783995c16fd70943584bc3ba3455
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3835110"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "3967258"
 ---
 # <a name="get-started-with-financial-reporting"></a>Financial Reporting – első lépések 
 
@@ -149,7 +149,12 @@ A jelentéskészítő megnyitásakor problémák merülhetnek fel néhány gyako
 * Az Internet Explorer szolgáltatásban válassza ki a **Beállítások** elemet, majd válassza az **Internetbeállítások** lehetőséget. Válassza a **Biztonság** fület. Válassza ki a megbízható helyeket. A zóna Biztonsági szint feliratú területen módosítsa a beállítást **Közepesen alacsony** értékre.
 * Tiltsa le az előugró ablakok blokkolását a böngészőjében.
 * A Microsoft .NET-keretrendszer 4.6.2 vagy újabb telepítéséhez munkaállomások szükségesek. A Microsoft .NET Framework ezen verziója a [Microsoft letöltőközpontból](https://www.microsoft.com/download/details.aspx?id=53345) tölthető le és telepíthető.
-* Chrome böngésző használata esetén, telepítenie kell a ClickOnce kiterjesztést a jelentéstervező kliens letöltéséhez. Ha a böngészőt inkognitó módban futtatja, győződjön meg arról, a ClickOnce kiterjesztés engedélyezve van-e az inkognitó módban. Ha nem tud bejelentkezni a Chrome-ba, próbálja meg az 1. problémában leírt beállítási lépéseket az Internet Explorer vagy Edge használatával. 
+* Ha a Chrome böngészőt használja a Microsoft Edge-hez, akkor telepítenie kell a ClickOnce kiterjesztést a jelentéstervező kliens letöltéséhez. Ha a böngészőt inkognitó módban futtatja, győződjön meg arról, a ClickOnce kiterjesztés engedélyezve van-e az inkognitó módban. 
+     1. Új böngésző megnyitása a Microsoft Edge-ben.
+     2. Adja az **edge://flags** parancsot, és válassza az **Enter** billentyűt.
+     3. Keresse meg a **ClickOnce támogatás** beállítást, vagy használja ezt a közvetlen hivatkozást: **edge://flags/#edge-click-once** .
+     4. A legördülő menü beállítását állítsa **Engedélyezett** értékre.
+     5. Válassza a **Böngésző újraindítása** lehetőséget.
 
 2. probléma: A felhasználó nincs hozzárendelve a Financial Reporting használatához szükséges engedélyekhez. 
 

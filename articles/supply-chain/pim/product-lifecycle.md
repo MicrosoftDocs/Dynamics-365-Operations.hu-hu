@@ -16,15 +16,15 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: conradv
+ms.author: kamaybac
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: 7889f1d21bf38a9063fff6a64da50febd15df5d6
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 20d472c399c75dbbef5e197e8f7f495e81b14ca2
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3209444"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3980864"
 ---
 # <a name="product-lifecycle-state-overview"></a>A termékéletciklus-állapot áttekintése
 
@@ -36,9 +36,9 @@ Egy kiadott termék vagy termékváltozat társítható egy termékéletciklus-�
 
 ## <a name="create-a-new-product-lifecycle-state"></a>Új termékéletciklus-állapot létrehozása 
 
-- Új termékéletciklus-állapot létrehozásáhaz játssza le vagy olvassa el a következő feladat-útmutatót: **Új termékéletciklus-állapot létrehozása**. 
+- Új termékéletciklus-állapot létrehozásáhaz játssza le vagy olvassa el a következő feladat-útmutatót: **Új termékéletciklus-állapot létrehozása** . 
 
--  Alapértelmezett termékéletciklus-állapot létrehozásáhaz játssza le vagy olvassa el a következő feladat-útmutatót: **Alapértelmezett termékéletciklus-állapot létrehozása**.   
+-  Alapértelmezett termékéletciklus-állapot létrehozásáhaz játssza le vagy olvassa el a következő feladat-útmutatót: **Alapértelmezett termékéletciklus-állapot létrehozása** .   
 
 ## <a name="associate-product-lifecycle-states-to-released-products"></a>Termékéletciklus-állapotok társítása kiadott termékekhez  
 
@@ -50,24 +50,24 @@ Többféleképpen lehet társítani egy termékéletciklus-állapotot kiadott te
 
 A termékéletciklus-állapot manuálisan frissíthető a következők használatával: 
 
--    A **Kiadott termékek** listaoldal vagy a **Részletek nézet**. 
--  A **Kiadott termékváltozatok** listaoldal vagy a **Részletek nézet**. 
+-    A **Kiadott termékek** listaoldal vagy a **Részletek nézet** . 
+-  A **Kiadott termékváltozatok** listaoldal vagy a **Részletek nézet** . 
 -  Keresse meg az elavult termékeket vagy termékváltozatokat igény alapján, és társítson hozzájuk egy életciklus-állapotot.  
 
 A termékéletciklus-állapotok társítására vonatkozó részletes tudnivalókért játssza le vagy olvassa el a következő feladat-útmutatót.
 
--  Egy termékéletciklus-állapot társításához egy kiadott alaptermékhez, játssza le vagy olvassa el a következő feladat-útmutatót: **Termékéletciklus-állapot társítása egy kiadott alaptermékhez**. 
+-  Egy termékéletciklus-állapot társításához egy kiadott alaptermékhez, játssza le vagy olvassa el a következő feladat-útmutatót: **Termékéletciklus-állapot társítása egy kiadott alaptermékhez** . 
 
--  Egy termékéletciklus-állapot társításához egy kiadott termékhez, játssza le vagy olvassa el a következő feladat-útmutatót: **Termékéletciklus-állapot társítása egy kiadott termékhez**. 
+-  Egy termékéletciklus-állapot társításához egy kiadott termékhez, játssza le vagy olvassa el a következő feladat-útmutatót: **Termékéletciklus-állapot társítása egy kiadott termékhez** . 
 
 ## <a name="impact-on-master-planning"></a>Hatás az alaptervezésre 
 
-A termékéletciklus-állapotnak egyetlen vezérlőjelzője van: **Aktív a tervezéshez**. Alapértelmezés szerint a beállított értéke **Igen** az összes létrehozott termékéletciklus-állapotra, de meg is változtatható **Nem** értékre. Ha a beállítás **Nem**, a társított kiadott termékek és kiadott termékváltozatok: 
+A termékéletciklus-állapotnak egyetlen vezérlőjelzője van: **Aktív a tervezéshez** . Alapértelmezés szerint a beállított értéke **Igen** az összes létrehozott termékéletciklus-állapotra, de meg is változtatható **Nem** értékre. Ha a beállítás **Nem** , a társított kiadott termékek és kiadott termékváltozatok: 
 
 -  Ki vannak zárva az alaptervezésből. 
 -  Ki vannak zárva az anyagjegyzékszint-számításból. 
 
-Részletes információkért arról, hogyan lehet a termékéletciklus-állapotot termékek kizárására használni az alaptervezésből és az anyagjegyzékszint-számításból, játssza le vagy olvassa el a következő feladat-útmutatót: **Termékéletciklus-állapot létrehozása termékek kizárására az alaptervezésből**.
+Részletes információkért arról, hogyan lehet a termékéletciklus-állapotot termékek kizárására használni az alaptervezésből és az anyagjegyzékszint-számításból, játssza le vagy olvassa el a következő feladat-útmutatót: **Termékéletciklus-állapot létrehozása termékek kizárására az alaptervezésből** .
 
 > [!NOTE]
 > A megfelelő teljesítmény érdekében ajánlott társítani az összes elavult kiadott terméket vagy termékváltozatot, különösen, ha nem újrahasználható termékkonfigurációs változatokkal dolgozik, az alaptervezéshez inaktivált termékéletciklus-állapottal.  
@@ -78,7 +78,7 @@ Az adatentitások támogatják a termékéletciklus-állapotokat, és az életci
 
 ## <a name="find-obsolete-products-and-products-variants"></a>Elavult termékek és termékváltozatok keresése 
 
-Lefuttatható egy elemzésszimuláció az elavult kiadott termékek vagy termékváltozatok felkutatására, és ezt követően frissíthető a termékéletciklus-állapotuk. Az elavult termékek felkutatásához játssza le vagy olvassa el a következő feladat-útmutatót: **Elavult termékváltozatok keresése és termékéletciklus-állapot hozzárendelése**. Ez a feladat-útmutató bemutatja, hogyan lehet megkeresni az elavult kiadott termékeket vagy termékváltozatokat, és hogyan lehet termékéletciklus-állapotot társítani az elavult termékekhez. Azt is bemutatja, hogyan lehet megtekinteni a szimulációs eredményeket, és kiértékeli, hogy hány termékhez és termékváltozathoz lesz új termékéletciklus-állapot társítva, ha a frissítést szimuláció nélkül futtatjuk.  
+Lefuttatható egy elemzésszimuláció az elavult kiadott termékek vagy termékváltozatok felkutatására, és ezt követően frissíthető a termékéletciklus-állapotuk. Az elavult termékek felkutatásához játssza le vagy olvassa el a következő feladat-útmutatót: **Elavult termékváltozatok keresése és termékéletciklus-állapot hozzárendelése** . Ez a feladat-útmutató bemutatja, hogyan lehet megkeresni az elavult kiadott termékeket vagy termékváltozatokat, és hogyan lehet termékéletciklus-állapotot társítani az elavult termékekhez. Azt is bemutatja, hogyan lehet megtekinteni a szimulációs eredményeket, és kiértékeli, hogy hány termékhez és termékváltozathoz lesz új termékéletciklus-állapot társítva, ha a frissítést szimuláció nélkül futtatjuk.  
 
 Az elemzés szimulációs üzemmódban való futtatásával az elavultként azonosított termékek és termékváltozatok egy erre a célra szolgáló képernyőn jelennek meg, ahol egyszerűen ellenőrizhetők. Az elemzés tranzakciókat és alapadatokat keres azzal a céllal, hogy azonosítsa azokat a termékeket, amelyek iránt nincs igény egy változtatható időperióduson belül, és nincs igényt eredményező alapadat. Az elemzésből ki lehet zárni a beállítható időn belül újonnan kiadott termékeket. Amikor az elemzésszimuláció visszaadja a várt eredményt, a felhasználó lefuttathatja az elemzést, és új termékéletciklus-állapotot állíthat be az összes, az elemzés által elavultként azonosított termékhez.  
 

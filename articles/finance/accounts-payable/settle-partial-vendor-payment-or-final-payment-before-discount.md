@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0d5961b2459a1c43cee24b611cf73879c6e776a4
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 34d941c3806ccc9d2b8baa29eef45fbd4216686e
+ms.sourcegitcommit: 165e082e59ab783995c16fd70943584bc3ba3455
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2178165"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "3967310"
 ---
 # <a name="settle-a-partial-vendor-payment-and-the-final-payment-in-full-before-the-discount-date"></a>Részleges szállítói kifizetés kiegyenlítése és az utolsó részlet teljes kiegyenlítése a készpénzfizetési engedmény dátuma előtt
 
@@ -64,7 +64,7 @@ April rákattint a **Készpénzfizetési engedmény** lapra, hogy megnézze az e
 | 2015/07/25          | 0,00                 | 1000,00                       |
 
 ## <a name="partial-payment-on-july-1-by-using-the-settle-transactions-page"></a>Részleges kifizetés július 1.-én a Tranzakciók kiegyenlítése lapon
-April kifizetési naplót hozhat létre ehhez a fizetéshez, ha megnyitja a **Fizetési napló** lapot a Kötelezettségek modulban. Létrehoz egy új naplót, és rögzít egy sort a 3064-es szállítónak. Anna ezután megnyitja a **Tranzakciók kiegyenlítése** oldalt, hogy a számlát kiegyenlítettnek jelölje. April megjelöli a számlát, és a **Kiegyenlítendő összeg** mezőt **-500,00** értékre módosítja. Látható, hogy a **Készpénzfizetési engedmény összege** mező értéke **-10,00** a teljes számála, és az érték az **Alkalmazandó készpénzfizetési engedmény összege** mezőben **-5,05**. Ezért April -505,05 értéket egyenlít ki ebből a számlából.
+April kifizetési naplót hozhat létre ehhez a fizetéshez, ha megnyitja a **Fizetési napló** lapot a Kötelezettségek modulban. Létrehoz egy új naplót, és rögzít egy sort a 3064-es szállítónak. Anna ezután megnyitja a **Tranzakciók kiegyenlítése** oldalt, hogy a számlát kiegyenlítettnek jelölje. April megjelöli a számlát, és a **Kiegyenlítendő összeg** mezőt **-500,00** értékre módosítja. Látható, hogy a **Készpénzfizetési engedmény összege** mező értéke **-10,00** a teljes számála, és az érték az **Alkalmazandó készpénzfizetési engedmény összege** mezőben **-5,05** . Ezért April -505,05 értéket egyenlít ki ebből a számlából.
 
 | Jelölés     | Készpénzfizetési engedmény használata | Bizonylat   | Fiók | Dátum      | Fiz. határidő  | Számla | Összeg a tranzakció pénznemében. | Pénznem | Kiegyenlítendő összeg |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
@@ -105,7 +105,7 @@ April bezárja a **Tranzakciók kiegyenlítése** oldalt. 495,00 értékű kifiz
 | DISC-10010 | Készpénzfizetési engedmény    | 2015-1-7  |         | 5,00                                 |                                       | 0,00    | dollár      |
 
 ## <a name="remaining-amount-paid-on-july-8"></a>A fennmaradó összeg kifizetése július 8-án
-April kifizeti a 3064-es szállító számlájának fennmaradó részét július 8.-án, ami még beleesik a kedvezményes időszakba. April létrehozza a kifizetési naplót július 8.-án, és a tranzakciót kiegyenlítésre jelöli. Látja, hogy az elszámolandó összeg 495,00. Az érték a **Becsült készpénzfizetési engedmény** mezőben **-5,00**, mert az 5,00 engedményt korábban már érvényesítették
+April kifizeti a 3064-es szállító számlájának fennmaradó részét július 8.-án, ami még beleesik a kedvezményes időszakba. April létrehozza a kifizetési naplót július 8.-án, és a tranzakciót kiegyenlítésre jelöli. Látja, hogy az elszámolandó összeg 495,00. Az érték a **Becsült készpénzfizetési engedmény** mezőben **-5,00** , mert az 5,00 engedményt korábban már érvényesítették
 
 |                         |        |
 |-------------------------|--------|

@@ -14,15 +14,15 @@ ms.reviewer: v-chgri
 ms.search.scope: ''
 ms.search.region: Global
 ms.search.industry: retail
-ms.author: BriShoo
+ms.author: brshoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f31f8898358626f2b008826aa69694dc16742aa0
-ms.sourcegitcommit: 59a9e840989bc9f2c7004efa3499b69c09a91b06
+ms.openlocfilehash: 1910563865a21dab3345a82711ead9b9e57b92fa
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "3677904"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3980964"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>B2C-bérlő beállítása a Commerce-ben
 
@@ -44,19 +44,19 @@ A Dynamics 365 Commerce az Azure AD B2C protokollt használja a felhasználók h
 1. Nyissa meg az **Identitás \> Azure Active Directory B2C** elemet.
 1. A **AAD B2C-bérlő létrehozása vagy hivatkozás egy meglévő bérlőre az Azure Portal webhelyen** lapon, használja vállalat igényeinek leginkább megfelelő alábbi lehetőséget:
 
-    - **Új Azure AD B2C bérlő létrehozása**: Ezzel a lehetőséggel hozhat létre egy új AAD B2C-bérlőt.
+    - **Új Azure AD B2C bérlő létrehozása** : Ezzel a lehetőséggel hozhat létre egy új AAD B2C-bérlőt.
         1. Válassza az **Új Azure AD B2C-bérlő létrehozása** lehetőséget.
-        1. A **Szervezet neve**területen írja be a szervezet nevét.
+        1. A **Szervezet neve** területen írja be a szervezet nevét.
         1. A **Kezdeti tartománynév** mezőbe írja be a kezdeti tartománynevet.
-        1. Az **Ország vagy régió**helyen válassza ki az országot vagy régiót.
+        1. Az **Ország vagy régió** helyen válassza ki az országot vagy régiót.
         1. Válassza a **Létrehozás** lehetőséget a bérlő létrehozásához.
 
      ![Új Azure AD-bérlő létrehozása](./media/B2CImage_2.png)
 
-     - **Meglévő Azure AD B2C-bérlő csatolása a saját Azure előfizetésemhez**: Akkor használja ezt a lehetőséget, ha már van egy Azure AD B2C bérlője, amelyhez csatolni kívánja.
+     - **Meglévő Azure AD B2C-bérlő csatolása a saját Azure előfizetésemhez** : Akkor használja ezt a lehetőséget, ha már van egy Azure AD B2C bérlője, amelyhez csatolni kívánja.
         1. Válassza ki a **Meglévő Azure AD B2C bérlő csatolása saját Azure előfizetéshez** lehetőséget.
-        1. Az **Azure AD B2C bérlő**esetében válassza ki a megfelelő B2C-bérlőt. Ha a kiválasztási mezőben a „Nem jogosult B2C-bérlők találhatók” üzenet jelenik meg, akkor nem rendelkezik jogosult B2C Bérlővel, és újat kell létrehoznia.
-        1. Az **Erőforráscsoport** helyen válassza az **Új létrehozása** lehetőséget. Írja be annak a csoportnak a **Nevét**, amely a bérlőt fogja tartalmazni, válassza ki az **Erőforráscsoport helyét** ,majd válassza a **Létrehozás** parancsot.
+        1. Az **Azure AD B2C bérlő** esetében válassza ki a megfelelő B2C-bérlőt. Ha a kiválasztási mezőben a „Nem jogosult B2C-bérlők találhatók” üzenet jelenik meg, akkor nem rendelkezik jogosult B2C Bérlővel, és újat kell létrehoznia.
+        1. Az **Erőforráscsoport** helyen válassza az **Új létrehozása** lehetőséget. Írja be annak a csoportnak a **Nevét** , amely a bérlőt fogja tartalmazni, válassza ki az **Erőforráscsoport helyét** ,majd válassza a **Létrehozás** parancsot.
 
     ![Válassza ki a Meglévő Azure AD B2C bérlő csatolása saját Azure előfizetéshez lehetőséget](./media/B2CImage_3.png)
 
@@ -79,7 +79,7 @@ A B2C alkalmazás létrehozásához kövesse az alábbi lépéseket.
 
 1. Az Azure portálon válassz az **Alkalmazások(örökölt)** lehetőséget, majd válassza a **Hozzáadás** elemet.
 1. A **Név** mezőbe írja be a kívánt AAD B2C alkalmazás nevét.
-1. A **Webalkalmazás/webes API** esetén a **Webalkalmazás / webes API belefoglalása**elemnél válassza az **Igen** lehetőséget.
+1. A **Webalkalmazás/webes API** esetén a **Webalkalmazás / webes API belefoglalása** elemnél válassza az **Igen** lehetőséget.
 1. Az **Implicit folyamatengedélyezése** alatt válassza az **Igen** lehetőséget (az alapértelmezett érték).
 1. A **Válasz URL** területen adja meg a dedikált válasz-URL-címeket. A [válasz URL](#reply-urls) -címeivel kapcsolatos tudnivalókat lásd a válasz URL-címei között.
 1. A **Natív ügyfél belefoglalása** helyen válassza a **Nem** (az alapértelmezett érték) beállítást.
@@ -114,7 +114,7 @@ Feliratkozási és bejelentkezési felhasználóifolyamat-házirend konfigurál�
 1. Az Azure Portal modul bal oldali navigációs ablakában válassza ki a **Felhasználói folyamatok (házirendek)** elemet.
 1. Az **Azure AD B2C – Felhasználói folyamatok (házirendek)** lapon válassza az **Új felhasználói folyamat** elemet.
 1. A **Javasolt** lapon válassza a **Feliratkozás és bejelentkezés** lehetőséget.
-1. A **Név**mezőbe írja be a házirend nevét. Ez a név azután jelenik meg, hogy a portál hozzárendel egy előtagot (például „B2C_1_”).
+1. A **Név** mezőbe írja be a házirend nevét. Ez a név azután jelenik meg, hogy a portál hozzárendel egy előtagot (például „B2C_1_”).
 1. Jelölje be a megfelelő jelölőnégyzetet az **Identitás-szolgáltatók** helyen.
 1. A **Többlépcsős hitelesítés** területen válassza ki a vállalat számára a megfelelő lehetőséget. 
 1. A **Felhasználói attribútumok és igények** területen válassza ki az attribútumok gyűjtését vagy igénylések visszaküldését szükség szerint. A Commerce a következő alapértelmezett beállításokat igényli:
@@ -144,14 +144,14 @@ Profilszerkesztési felhasználóifolyamat-házirend konfigurálásához kövess
 1. Az Azure Portal modul bal oldali navigációs ablakában válassza ki a **Felhasználói folyamatok (házirendek)** elemet.
 1. Az **Azure AD B2C – Felhasználói folyamatok (házirendek)** lapon válassza az **Új felhasználói folyamat** elemet.
 1. A **Javasolt** lapon válassza ki a **Profiszerkesztés** lehetőséget.
-1. A **Név**mezőbe adja meg a profilszerkesztési felhasználói folyamatot. Ez a név azután jelenik meg, hogy a portál hozzárendel egy előtagot (például „B2C_1_”).
+1. A **Név** mezőbe adja meg a profilszerkesztési felhasználói folyamatot. Ez a név azután jelenik meg, hogy a portál hozzárendel egy előtagot (például „B2C_1_”).
 1. Az **Identitásszolgáltatók** területen válassza a **Helyi fiókbejelentkezés** lehetőséget.
 1. A **Felhasználói attribútumok** alatt jelölje be az alábbi jelölőnégyzeteket:
-    - **E-mail-címek** (Csak **Igény visszaküldése**)
-    - **Utónév** (**Attribútum összegyűjtése** és **Igény visszaküldése**)
-    - **Identitásszolgáltató** (csak**Visszaküldési igény**)
-    - **Vezetéknév** (**Attribútum összegyűjtése** és **Igény visszaküldése**)
-    - **Felhasználói objektumazonosítója** (Csak**Visszaküldési igény**)
+    - **E-mail-címek** (Csak **Igény visszaküldése** )
+    - **Utónév** ( **Attribútum összegyűjtése** és **Igény visszaküldése** )
+    - **Identitásszolgáltató** (csak **Visszaküldési igény** )
+    - **Vezetéknév** ( **Attribútum összegyűjtése** és **Igény visszaküldése** )
+    - **Felhasználói objektumazonosítója** (Csak **Visszaküldési igény** )
 1. Válassza a **Létrehozása** lehetőséget.
 
 A következő kép egy példát mutat be a Azure AD B2C profilszerkesztő felhasználói folyamatára.
@@ -165,7 +165,7 @@ Jelszóvisszaállítás felhasználóifolyamat-házirend konfigurálásához kö
 1. Az Azure Portal modul bal oldali navigációs ablakában válassza ki a **Felhasználói folyamatok (házirendek)** elemet.
 1. Az **Azure AD B2C – Felhasználói folyamatok (házirendek)** lapon válassza az **Új felhasználói folyamat** elemet.
 1. A **Javasolt** lapon válassza ki a **Jelszóvisszaállítás** lehetőséget.
-1. A **Név**mezőben adjon meg egy nevet a jelszóvisszaállítási felhasználói folyamat számára.
+1. A **Név** mezőben adjon meg egy nevet a jelszóvisszaállítási felhasználói folyamat számára.
 1. Az **Identitásszolgáltatók** alatt válassza az **Új jelszó beállítása e-mail-cím használatával** lehetőséget.
 1. Válassza a **Létrehozása** lehetőséget.
 1. A **Jelentkezési igények** alatt jelölje be az alábbi jelölőnégyzeteket:
@@ -208,12 +208,12 @@ Egy közösségi identitásszolgáltató hozzáadásához és beállításához 
 
 1. Az Azure portálon menjen az **Identitásszolgáltató** részre.
 1. Válassza a **Hozzáadás** lehetőséget. Megjelenik az **Identitásszolgáltató** hozzáadása képernyő.
-1. A **Név**mezőbe írja be azt a nevet, amelyet meg szeretne jeleníteni a bejelentkezési képernyőn a felhasználók számára.
+1. A **Név** mezőbe írja be azt a nevet, amelyet meg szeretne jeleníteni a bejelentkezési képernyőn a felhasználók számára.
 1. Az **Identitásszolgáltatótípusa** területen válasszon ki egy identitásszolgáltatót a listából.
 1. Válassza ki az **OK** lehetőséget.
 1. Válassza az **Identitásszolgáltató beállítása** lehetőséget, hogy elérje a **Közösségi identitásszolgáltató beállítása** képernyőt.
-1. Az **Ügyfélazonosító**területen írja be az ügyfél azonosítóját, amelyet az identitásszolgáltató alkalmazás-beállításaiban kapott.
-1. A **Titkos ügyfélkód**területen írja be aza titkos ügyfélkódot, amelyet az identitásszolgáltató alkalmazás-beállításaiban kapott.
+1. Az **Ügyfélazonosító** területen írja be az ügyfél azonosítóját, amelyet az identitásszolgáltató alkalmazás-beállításaiban kapott.
+1. A **Titkos ügyfélkód** területen írja be aza titkos ügyfélkódot, amelyet az identitásszolgáltató alkalmazás-beállításaiban kapott.
 1. Felhasználói folyamat csatolása a bejelentkezési házirendekhez:
 1. Nyissa meg az **Azure AD B2C – Felhasználói folyamatok (házirendek) \> {az Ön regisztrációs házirendje} \> Identitásszolgáltatók** lehetőséget.
 1. A regisztráció/bejelentkezés felhasználóifolyamat-házirend csatolásához válassza ki a fiókhoz beállított egyes identitásszolgáltatókat. Ezek teszteléséhez válassza ki a **Felhasználói folyamat futtatása** lehetőséget az egyes identitásszolgáltatókhoz. Egy új lap a bejelentkezési lapot jeleníti meg, amely az új identitásszolgáltató kiválasztási dobozát jeleníti meg.
@@ -236,12 +236,12 @@ Miután az Azure AD B2C létesítési lépések befejeződtek, az Azure AD B2C a
 
 Az új Azure AD B2C információval rendelkező központ frissítéséhez hajtsa végre az alábbi lépéseket.
 
-1. A Commerce menüben nyissa meg a **Commerce megosztott paraméterei elemet**, és válassza ki a bal oldali menüben az **Identitásszolgáltatók** elemet.
+1. A Commerce menüben nyissa meg a **Commerce megosztott paraméterei elemet** , és válassza ki a bal oldali menüben az **Identitásszolgáltatók** elemet.
 1. Az **identitás-szolgáltatók** területen hajtsa végre a következő műveleteket:
     1. A **Kibocsátó** mezőbe írja be az identitásszolgáltató kiállítójának URL-jét. A kiállító URL-címének megkereséséhez lásd alább a [Kiállító URL-címének megszerzése](#obtain-issuer-url) részt.
     1. A **Név** mezőbe írja be a kiállító rekordjának nevét.
     1. A **Típus** mezőbe írja be a **Azure AD B2C (id_token)** értéket.
-1. A **Függő felek**területen, a fenti B2C identitásszolgáltató kiválasztása után tegye a következőket:
+1. A **Függő felek** területen, a fenti B2C identitásszolgáltató kiválasztása után tegye a következőket:
     1. Az **Ügyfélazonosító** mezőbe írja be a B2C alkalmazás azonosítóját. Ezt a B2C alkalmazás tulajdonságlapján található **Alkalmazásazonosító** mezőben találja.
     1. A **Típus** mezőbe írja be a **Nyilvános** kifejezést.
     1. A **Felhasználó típusa** mezőbe írja be az **Ügyfél** kifejezést.
@@ -299,12 +299,12 @@ Az AAD B2C bérlői alkalmazás adatainak a Commerce rendszerbe történő hozz�
 1. Válassza a **B2C alkalmazás hozzáadása** elemet.
 1. A megjelenő képernyőn adja meg a következő szükséges elemeket a B2C bérlő és az alkalmazás értékeit használva. A nem kötelező mezők (a csillag nélküliek) üresen maradhatnak.
 
-    - **Alkalmazás neve**: A B2C alkalmazás neve (például „Fabrikam B2C”).
-    - **Bérlő neve**: A B2C bérlője neve (például használja a „fabrikam” beállítást, ha a B2C-bérlőnek a tartomány „fabrikam.onmicrosoft.com” néven jelenik meg). 
-    - **Felejtse el a jelszót házirend azonosító**: A felejtse el a jelszót felhasználóifolyamat házirend azonosítója „B2C_1_PasswordReset”.
-    - **Regisztrációs bejelentkezési házirendazonosító**: A regisztrációs és bejelentkezési felhasználói folyamatok házirendjének azonosítója, például „B2C_1_signup_signin”.
-    - **Ügyfél GUID**: A B2C alkalmazás azonosítója: (például „22290eb2-c52e-42e9-8b35-a2b0a3bcb9e6” B2C).
-    - **Profilirányelv azonosítója**: A profilszerkesztő felhasználói folyamatazonosító, például „B2C_1A_ProfileEdit”.
+    - **Alkalmazás neve** : A B2C alkalmazás neve (például „Fabrikam B2C”).
+    - **Bérlő neve** : A B2C bérlője neve (például használja a „fabrikam” beállítást, ha a B2C-bérlőnek a tartomány „fabrikam.onmicrosoft.com” néven jelenik meg). 
+    - **Felejtse el a jelszót házirend azonosító** : A felejtse el a jelszót felhasználóifolyamat házirend azonosítója „B2C_1_PasswordReset”.
+    - **Regisztrációs bejelentkezési házirendazonosító** : A regisztrációs és bejelentkezési felhasználói folyamatok házirendjének azonosítója, például „B2C_1_signup_signin”.
+    - **Ügyfél GUID** : A B2C alkalmazás azonosítója: (például „22290eb2-c52e-42e9-8b35-a2b0a3bcb9e6” B2C).
+    - **Profilirányelv azonosítója** : A profilszerkesztő felhasználói folyamatazonosító, például „B2C_1A_ProfileEdit”.
 
 1. Válassza ki az **OK** lehetőséget. Ekkor megjelenik a B2C alkalmazásának neve a listán.
 1. A változtatások mentéséhez válassza a **Mentés** elemet.
@@ -320,7 +320,7 @@ A B2C alkalmazás társításához a webhelyéhez és a csatornához kövesse az
 
 1. Nyissa meg a webhelyét a Commerce webhelykészítőben.
 1. A bal oldali navigációs panelen válassza a **Webhelybeállítások** elemet a kibontáshoz.
-1. A **Webhely beállításai**alatt válassza ki a **Csatornák** elemet.
+1. A **Webhely beállításai** alatt válassza ki a **Csatornák** elemet.
 1. Válassza ki a **Csatorna** elem alatti fő ablakban válassza ki a csatornáját.
 1. A jobb oldali csatorna tulajdonságai ablaktáblán válassza ki a B2C alkalmazás nevét a **B2C alkalmazás kiválasztása** legördülő menüből.
 1. Válassza a **Bezárás** parancsot, majd válassza a **Mentés és közzététel** parancsot.

@@ -16,15 +16,15 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: f07483d0ccb8593f0e7ce8dbd3c83f63ce60d457
-ms.sourcegitcommit: cd339f48066b1d0fc740b513cb72ea19015acd16
+ms.openlocfilehash: c240e11394582ad1af563ee4a8e58632babfff3a
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "3759376"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3976379"
 ---
 # <a name="cost-rollup-policy-and-overhead-calculation"></a>Költségösszesítési irányelv többletköltségek kiszámítása 
 
@@ -186,7 +186,7 @@ Az **Eredménykimutatás** dimenzióhierarchiát frissíteni kell az új dimenzi
 | &nbsp;&nbsp;&nbsp;&nbsp;Elsődleges költség                        | 10001                   | 10003               |
 | &nbsp;&nbsp;&nbsp;&nbsp;Másodlagos költség                         | **SC-CC001**            | **SC-CC004**        |
 
-Hozzon létre egy **Költségösszegzési irányelvet**, ahol az egyes költséghelyekhez a kapcsolódó **Másodlagos** típusú költségelemet rendeli a rendszer.
+Hozzon létre egy **Költségösszegzési irányelvet** , ahol az egyes költséghelyekhez a kapcsolódó **Másodlagos** típusú költségelemet rendeli a rendszer.
 
 **Költségösszegzési irányelvek**
 
@@ -211,7 +211,7 @@ Hozzon létre egy **Költségösszegzési irányelvet**, ahol az egyes költség
 |---------|-------------------------|------------------------|------|--------|---------------|
 | 00002   | Költségfelosztási napló | Pénzügyi                 | 2017    | 1. időszak | Járulékos költség számítása / 01-02-2017 11:51:00 PM / Főkönyv /2017 / 1. időszak |
 
-A rendszer akkor alkalmazza a **Költségösszegzési irányelvet**, amikor létrehozza a **Költségobjektum-egyenlegek naplóbejegyzéseit**.
+A rendszer akkor alkalmazza a **Költségösszegzési irányelvet** , amikor létrehozza a **Költségobjektum-egyenlegek naplóbejegyzéseit** .
 
 **Költségobjektum-egyenlegek naplóbejegyzései**
 

@@ -13,15 +13,15 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: fd44c458da03807ddc1dc9d652da29c1404dbe64
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 11d92185bdbcf7aa1a668b6d2aa311805e42293c
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3209605"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3974980"
 ---
 # <a name="define-coverage-rules-for-items"></a>Cikkek fedezeti szabályainak meghatározása
 
@@ -47,7 +47,7 @@ Ez az eljárás az USMF bemutatócéget használja. Ez az eljárás bemutatja, h
 14. Kattintson a **Mentés** gombra.
 
 ## <a name="create-a-new-product"></a>Új termék létrehozása
-1. Kattintson ide: **Navigációs ablaktábla > Modulok > Termékinformációk kezelése > Termékek > Kiadott termékek**.
+1. Kattintson ide: **Navigációs ablaktábla > Modulok > Termékinformációk kezelése > Termékek > Kiadott termékek** .
 2. Kattintson az **Új** elemre.
 3. Írjon be egy értéket a **Termékszám** mezőbe.
 4. Írjon be egy értéket a **Terméknév** mezőbe.
@@ -67,7 +67,7 @@ Ez az eljárás az USMF bemutatócéget használja. Ez az eljárás bemutatja, h
 
 ## <a name="setup-default-order-settings"></a>Alapértelmezett rendelésbeállítások beállítása
 1. A **Művelet panelen** kattintson a **Tervezés** elemre.
-2. Kattintson a **Rendelésbeállításai** alatta az **Alapértelmezett rendelés beállításai**elemre.
+2. Kattintson a **Rendelésbeállításai** alatta az **Alapértelmezett rendelés beállításai** elemre.
 3. A **Beszerzési rendelés** alatta az **Alapértelmezett telephely** mezőbe írja be azt a telephelyet amelyet alapértelmezettként használtak a beszerzési rendelések létrehozásakor.
 4. Az **Alapértelmezett raktár** mezőjébe írja be azt a helyet, ahol a cikket tárolják.
 5. Bontsa ki vagy csukja össze a **Készlet** szakaszt.
@@ -90,7 +90,7 @@ Ez az eljárás az USMF bemutatócéget használja. Ez az eljárás bemutatja, h
 
 ## <a name="create-item-coverage-rules"></a>Cikkfedezet szabályainak létrehozása
 1. A **Művelet panelen** kattintson a **Tervezés** elemre.
-2. A **Fedezet**területen kattintson a **Cikkfedezeti**elemre.
+2. A **Fedezet** területen kattintson a **Cikkfedezeti** elemre.
 3. Kattintson az **Új** elemre.
 4. Kattintson az **Általános** fülre.
 5. Jelölje be a négyzetet a fejlécben a **Fedezeticsoport** beállítások felülbírálatában.

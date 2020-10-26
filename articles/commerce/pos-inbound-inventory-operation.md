@@ -3,7 +3,7 @@ title: Bejövő készletműveletek a pénztárban
 description: Ez a témakör a pénztár (POS) bejövő készletműveletének képességeit írja le.
 author: hhaines
 manager: annbe
-ms.date: 08/18/2020
+ms.date: 09/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 16a786a4b3ca1bcbd202f6753bdf3bf7233a4333
-ms.sourcegitcommit: 7061a93f9f2b54aec4bc4bf0cc92691e86d383a6
+ms.openlocfilehash: 89021a85c2b215695d7cc25215c049205f71956d
+ms.sourcegitcommit: 6e0d6d291d4881b16a677373f712a235e129b632
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "3710309"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "3971497"
 ---
 # <a name="inbound-inventory-operation-in-pos"></a>Bejövő készletműveletek a pénztárban
 
@@ -94,14 +94,14 @@ A bejövő készlet dokumentumlista három lapból áll:
 Amikor bármelyik lapon megtekinti a dokumentumokat, az **Állapot** mező segít megérteni azt a fázist, ahol a dokumentum tart.
 
 - **Vázlat** – az átmozgatási rendelés dokumentum csak helyileg lett mentve az üzlet csatorna-adatbázisában. Az átmozgatási rendelési kérelemmel kapcsolatos adatokat még nem küldték el a Commerce központba.
-- **Kérelmezve** – A beszerzési rendelés vagy átmozgatási rendelés a Commerce központ alkalmazásban lett létrehozva, és teljesen nyitva van. Még nem történt meg a bizonylattal szemben nyugta feldolgozása. A beszerzési rendelési dokumentum típus dokumentumaihoz a bevételezés bármikor elindítható, amíg az állapot **Kérelmezve**.
+- **Kérelmezve** – A beszerzési rendelés vagy átmozgatási rendelés a Commerce központ alkalmazásban lett létrehozva, és teljesen nyitva van. Még nem történt meg a bizonylattal szemben nyugta feldolgozása. A beszerzési rendelési dokumentum típus dokumentumaihoz a bevételezés bármikor elindítható, amíg az állapot **Kérelmezve** .
 - **Részben szállított** – Az átmozgatási rendelés dokumentumának egy vagy több sora vagy részlege somennyisége fel lett adva szállítottként a kimenő raktárba. A leszállított sorok készen állnak a bejövő műveleten keresztüli fogadásra.
 - **Teljesem kiszállított** – Az átmozgatási rendelésnek minden sora és teljes sormennyisége a kimenő raktár által szállítottként feladva. A teljes dokumentum készen áll a bejövő műveleten keresztüli fogadásra.
 - **Részben bevételezve** – A beszerzési rendelésen vagy az átmozgatási rendelésen szereplő sorok vagy sormennyiségek bevételezve lettek az üzlet által, néhány sor azonban nyitva marad.
-- **Teljesen bevételezve**– A beszerzési rendelésen vagy átmozgatási rendelésen szereplő összes sor és mennyiség teljes mértékben bevételezve lett. A dokumentumok csak a **Kész** lapon érhetők el, és csak olvashatók az üzlet felhasználói számára.
+- **Teljesen bevételezve** – A beszerzési rendelésen vagy átmozgatási rendelésen szereplő összes sor és mennyiség teljes mértékben bevételezve lett. A dokumentumok csak a **Kész** lapon érhetők el, és csak olvashatók az üzlet felhasználói számára.
 - **Folyamatban** – Ez az állapot tájékoztatja az eszköz felhasználóit, hogy a dokumentummal egy másik felhasználó aktívan dolgozik.
 - **Szüneteltetve** – Ez az állapot azt követően jelenik meg, hogy a **Szüneteltetés kérelmezve** ki van választva fogadási folyamat ideiglenes leállításához.
-- **Feldolgozás a központban**– Ezt a dokumentumot a Commerce Headquarters modulból átadták a pénztárba, de még nem lett sikeresen feladva a Commerce Headquarters modulba.. A dokumentum az aszinkron dokumentumfeladási folyamaton megy keresztül. Miután sikeresen feladta a dokumentumot a Commerce Headquarters modulba állapota a **Teljesen bevételezve** vagy **Részben bevételezve** kell legyen.
+- **Feldolgozás a központban** – Ezt a dokumentumot a Commerce Headquarters modulból átadták a pénztárba, de még nem lett sikeresen feladva a Commerce Headquarters modulba.. A dokumentum az aszinkron dokumentumfeladási folyamaton megy keresztül. Miután sikeresen feladta a dokumentumot a Commerce Headquarters modulba állapota a **Teljesen bevételezve** vagy **Részben bevételezve** kell legyen.
 - **A feldolgozás nem sikerült** – A dokumentumot a Commerce Headquarters modulba adták fel, és elutasították. A **Részletek** ablaktábla a feladási hiba okát jeleníti meg. Az adathibák javítása érdekében szerkeszteni kell a dokumentumot, majd újra el kell küldeni a Commerce Headquarters modulba feldolgozásra.
 
 Amikor kiválaszt egy bizonylatsort a listából, megjelenik egy **Részletek** ablaktábla. Ez a ablaktábla a dokumentum további adatait jeleníti meg, mint például a szállítási és a dátumadatokat. Egy folyamatjelző sáv azt mutatja, hogy hány cikket kell még feldolgozni. Ha a dokumentumot nem sikerült feldolgozni a Commerce Headquarters modulban, a **Részletek** ablaktábla megjeleníti a hibához kapcsolódó hibaüzeneteket.
@@ -134,6 +134,18 @@ Az ellenőrzések a bizonylatsor bevételezési folyamata során történnek meg
 
 Átmozgatási rendeléshez tartozó dokumentumok esetében nem engedélyezett a túlzott bevételezés. A felhasználók mindig hibát kapnak, ha az átmozgatási rendelés sorában szereplőnél nagyobb mennyiséget próbálnak bevételezni.
 
+### <a name="close-purchase-order-lines"></a>Lezárt beszerzésirendelés-sorok
+
+A bevételezési folyamat alatt akkor zárhatja le egy bejövő beszerzési rendelés hátralévő mennyiségét, ha a szállító visszaigazolta, hogy nem tudja leszállítani a teljes igényelt mennyiséget. Ehhez a vállalatot be kell állítani, hogy engedélyezze az beszerzési rendelések alulteljesítését. Ezenkívül a beszerzési rendelési sorhoz meg kell adni egy alulteljesítési toleranciaszázalékot is.
+
+Ha azt szeretné, hogy a vállalat engedélyezze a beszerzési rendelések kiszállítását, akkor a Commerce-központban lépjen a **Beszerzés és forrás** > **Beállítás** > **Beszerzés és forrás paraméterei** menüpontba. A **Szállítás** fülön kapcsolja be az **Alulteljesítés elfogadása** paramétert. Ezt követően futtassa az **1070** ( **Csatornakonfiguráció** ) elosztási ütemezési feladatot a beállításokban tett módosítások csatornákkal való szinkronizálásához.
+
+A beszerzési rendelés soraihoz tartozó alulteljesítési toleranciaszázalékok a Commerce-központban a termékek konfigurációinak részeként előre is megadhatók. Alternatív megoldásként a Commerce-központ alkalmazáson keresztül egy adott beszerzési rendelés sorában megadhatók vagy felülírhatók.
+
+Miután egy szervezet befejezte a beszerzési rendelés alulteljesítésének konfigurálását, a pénztár-felhasználók egy új **Fenmmaradó mennyiség lezárása** lehetőséget látnak a **Részletek** panelen, amikor kiválasztják a bejövő beszerzési rendelési sort a pénztár **Bejövő készlet** művelettel. Ha a felhasználó lezárja a fennmaradó mennyiséget, akkor a pénztár ellenőrzi, hogy a lezárni kívánt mennyiség a beszerzési rendelés sorában megadott alulteljesítés százalékos tűréshatárán belül van-e. Ha túllépi az alulteljesítési tűréshatárt, akkor egy hibaüzenet jelenik meg, és a felhasználó nem tudja lezárni a fennmaradó mennyiséget egészen addig, amíg a korábban bevételezett mennyiség plusz a **Bevételezés most** mennyiség el nem éri vagy meg nem haladja azt a mennyiséget, amelyet az alulteljesítés százalékos tűréshatára alapján bevételezni kell. 
+
+Ha egy beszerzésirendelés-sorhoz bekapcsolja a **Fennmaradó mennyiség lezárása** lehetősége, akkor amikor a **Bevételezés befejezése** művelettel a felhasználó befejezi a bevételezést, akkor egy lezárási kérelmet küld a program a Commerce-központba, és minden, ehhez a rendeléssorhoz nem bevételezett mennyiséget visszavon a program. Ezen a ponton a sor teljes egészében bevételezettnek tekintendő. 
+
 ### <a name="receiving-location-controlled-items"></a>Helyvezérlet cikkek bevételezése
 
 Ha a bevételezett cikkek helyvezéreltek, a felhasználók kiválaszthatják, hogy melyik helyen szeretnének bevételezni a cikkeket a bevételezési folyamat során. Javasoljuk, hogy a folyamat hatékonyabbá tételéhez konfiguráljon az üzlet raktárához egy alapértelmezett bevételezési helyet. Ha van alapértelmezett hely beállítva, akkor a felhasználó igény szerint felülbírálhatja a kiválasztott sorokban a bevételezési helyet.
@@ -146,7 +158,7 @@ Igény esetén kiválaszthatja az **Összes bevételezést** lehetőséget az al
 
 ### <a name="receipt-of-unplanned-items-on-purchase-orders"></a>Nem tervezett cikkek fogadása beszerzési rendeléseken
 
-A Commerce 10.0.14 és újabb verzióiban a felhasználók olyan terméket fogadhatnak, amely eredetileg nem szerepeltek a beszerzési rendelésen. A funkció engedélyezéséhez kapcsolja be a **Sorok hozzáadása beszerzési rendeléshez a pénztári fogadás során**.  
+A Commerce 10.0.14 és újabb verzióiban a felhasználók olyan terméket fogadhatnak, amely eredetileg nem szerepeltek a beszerzési rendelésen. A funkció engedélyezéséhez kapcsolja be a **Sorok hozzáadása beszerzési rendeléshez a pénztári fogadás során** .  
 
 Ez a funkció csak a beszerzési rendelések bevételezéséhez használható. Az átmozgatási rendelésekből nem lehet cikkeket bevételezni, ha a cikkeket korábban nem rendelték meg és nem szállították ki a kimenő raktárból.
 
@@ -166,7 +178,7 @@ Csak akkor használja az alkalmazássáv **Bevételezés visszavonása** funkci�
 
 Ha készletet bevételez, akkor a **Bevételezés szüneteltetése** funkciót használhatja, ha szünetet szeretne tartani a bevételezési folyamatban. Előfordulhat például, hogy egy másik műveletet szeretne végrehajtani a pénztárból, például fel szeretne hívni egy vásárlói eladást egy nyugta feladását szeretné késleltetni.
 
-Amikor kiválasztja a **Bevételezés szüneteltetése**beállítást, a dokumentum állapota **Szüneteltetve** értékre. Ennélfogva a felhasználók tudni fogják, hogy a dokumentumban vannak megadva értékek, de a dokumentum még nem lett véglegesítve. Ha készen áll a bevételezési folyamat folytatására, válassza ki a szüneteltetett dokumentumot, majd válassza ki a **Rendelés részletei** elemet, A korábban mentett **Bevételezés most** mennyiségek megmaradnak, és a **Teljes rendelési lista** nézetből jeleníthetők meg.
+Amikor kiválasztja a **Bevételezés szüneteltetése** beállítást, a dokumentum állapota **Szüneteltetve** értékre. Ennélfogva a felhasználók tudni fogják, hogy a dokumentumban vannak megadva értékek, de a dokumentum még nem lett véglegesítve. Ha készen áll a bevételezési folyamat folytatására, válassza ki a szüneteltetett dokumentumot, majd válassza ki a **Rendelés részletei** elemet, A korábban mentett **Bevételezés most** mennyiségek megmaradnak, és a **Teljes rendelési lista** nézetből jeleníthetők meg.
 
 ### <a name="review"></a>Ellenőrzés
 
@@ -202,7 +214,7 @@ A bejövő átmozgatási rendelés sorainak megadása után a **Mentés** paranc
 
 Ha a dokumentum helyben lett mentve, az a **Vázlatok** helyen található a **Bejövő művelet** dokumentumlistában. Amikor egy dokumentum **Vázlat** állapotú, szerkesztéshez válassza a **Szerkesztés** parancsot. A sorokat igény szerint frissítheti, hozzáadhatja vagy törölheti. A **Piszkozatok** lapon a **Törlés** gombra kattintva a teljes dokumentumot is törölheti, amíg az **Vázlat** állapotban van.
 
-Miután sikeresen elküldte a vázlatdokumentumot a Commerce Headquarters modulba, az az **Aktív** lapon jelenik meg, és állapota **Kérelmezve**. Ezen a ponton a bejövő üzlet vagy raktár felhasználói már nem módosíthatják a kért bejövő átmozgatási rendelési dokumentumot. Csak a kimenő raktár felhasználói módosíthatják a dokumentumot a Pénztár alkalmazás **Kimenő művelet** elemének kiválasztásával. A szerkesztési zárolás biztosítja, hogy nem fordulnak elő ütközések, mert a bejövő kérelmező éppen akkor módosítja az átmozgatási rendelést, amikor a kimenő szállító aktívan kitárolja és szállítja a rendelést. Ha az átmozgatási rendelés elküldése után a bejövő üzletből vagy raktárból változtatások szükségesek, a kimenő szállítmányozóval kell felvenni a kapcsolatot, és kérni tőle a változtatásokat.
+Miután sikeresen elküldte a vázlatdokumentumot a Commerce Headquarters modulba, az az **Aktív** lapon jelenik meg, és állapota **Kérelmezve** . Ezen a ponton a bejövő üzlet vagy raktár felhasználói már nem módosíthatják a kért bejövő átmozgatási rendelési dokumentumot. Csak a kimenő raktár felhasználói módosíthatják a dokumentumot a Pénztár alkalmazás **Kimenő művelet** elemének kiválasztásával. A szerkesztési zárolás biztosítja, hogy nem fordulnak elő ütközések, mert a bejövő kérelmező éppen akkor módosítja az átmozgatási rendelést, amikor a kimenő szállító aktívan kitárolja és szállítja a rendelést. Ha az átmozgatási rendelés elküldése után a bejövő üzletből vagy raktárból változtatások szükségesek, a kimenő szállítmányozóval kell felvenni a kapcsolatot, és kérni tőle a változtatásokat.
 
 Miután a dokumentum **Kérelmezett** állapotban van, az **Aktív** lapon látható. Azonban a bejövő üzlet vagy raktár nem bevételezheti. Miután a kimenő raktár már szállított egy vagy több átmozgatási rendelést, a bejövő üzlet vagy raktár feladhatja a pénztárból a nyugtákat. Miután a kimenő oldal feldolgozta az átmozgatási rendelés dokumentumait állapotuk **Kérelmezett** állapotból **Szállítva** vagy **Részben szállítva** értékre módosul. Miután a dokumentumok **Kiszállított** vagy **Részben kiszállított** állapotban vannak, a bejövő üzlet vagy a raktár a bejövő művelet bevételezési folyamata alapján is feladhatja a bevételezéseket azokkal szemben.
 

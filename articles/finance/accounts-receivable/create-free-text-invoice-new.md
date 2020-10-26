@@ -12,15 +12,15 @@ audience: Application User
 ms.reviewer: roschlom
 ms.search.scope: Operations
 ms.search.region: Global
-ms.author: mfalkner
+ms.author: roschlom
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 909dd5bcaf1fa3b82adb44d265e312f9acc607d2
-ms.sourcegitcommit: 9168621ca9b5061c65f3e05dbc5918b6a11d53d5
+ms.openlocfilehash: 1ac06e7d702ffe3a8cdb6bd2823f2ffdc055c722
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "3000070"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3976523"
 ---
 # <a name="create-a-free-text-invoice"></a>Szabadszöveges számla létrehozása
 
@@ -30,7 +30,7 @@ Ez a témakör bemutatja, hogyan lehet szabadszöveges számlákat létrehozni. 
 
 ## <a name="create-a-free-text-invoice"></a>Szabadszöveges számla létrehozása
 
-1. Ugorjon a következőre: **Kinnlévőségek \> Számlák \> Kizárólag szabadszöveges számlák**.
+1. Ugorjon a következőre: **Kinnlévőségek \> Számlák \> Kizárólag szabadszöveges számlák** .
 2. **Új** kiválasztása.
 3. Válasszon egy értéket a **Vevői számla** mezőnek.
 

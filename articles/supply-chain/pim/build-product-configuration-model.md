@@ -16,15 +16,15 @@ ms.custom: 75083
 ms.assetid: f08072b8-cb0b-43aa-9509-f5ec32caecd9
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: conradv
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 40d30feadf43c7683a31ff879e869a8f39076a2f
-ms.sourcegitcommit: 97d4a9bd442fe20f90605d8154c3a947c7645b37
+ms.openlocfilehash: 8b7d1186b4141a18e1283505713e67018927672d
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "3895523"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3982926"
 ---
 # <a name="product-configuration-overview"></a>Termékkonfiguráció áttekintése
 
@@ -112,7 +112,7 @@ A modell tesztelése hasonlít egy tényleges konfigurációs munkamenet futtat�
 
 ### <a name="the-configuration-page"></a>Konfiguráció oldal
 
-Kattintva válthat az összetevők között, **Következő**, vagy kattintson a konfigurációs termékmodellfa fókuszt meg összetevő.
+Kattintva válthat az összetevők között, **Következő** , vagy kattintson a konfigurációs termékmodellfa fókuszt meg összetevő.
 
 ## <a name="finalizing-a-model-for-configuration"></a>Egy modell konfigurációjának véglegesítése
 A termékkonfigurációs modell konfigurálása rendelésre esetekben használandó elkészül, ha létre kell hozni egy verziót. Azonban, amelyek a modellezési tapasztalat növelheti többféle lehetőség kínálkozik.

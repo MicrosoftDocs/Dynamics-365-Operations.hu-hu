@@ -13,15 +13,15 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: omulvad
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7dcb60b524d375cbb533e88ea456eaa2c7ca6316
-ms.sourcegitcommit: 54da65a7da0efd4f0d9760c5b14ff785b28751c4
+ms.openlocfilehash: d6476271689feaaa00e44f98f17ac34976c46644
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3830428"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3981257"
 ---
 # <a name="confirm-sales-orders"></a>Értékesítési rendelések megerősítése
 
@@ -57,7 +57,7 @@ Ez az eljárás bemutatja, hogyan kell az értékesítési rendeléseket megerő
 6. Kattintson az **OK** gombra.
     - Az **Áttekintés** lapon a lekérdezési feltételeknek megfelelő rendelések listája jelenik meg. Ezek a visszaigazolásban fognak szerepelni.  
     - Az **Összegző frissítés** mező a **Paraméterek** szakaszban meghatározza azt a paramétert, amellyel több rendelés összegzése történik egy visszaigazoló dokumentumba. Alapértelmezés szerint az opció a **Kinnlevőségek paraméterei** oldal **Összesítő frissítés beállítás alapértékeiből** lesz átmásolva.  
-7. Az **Összegzés frissítése a következőhöz** mezőben válassza ki a Rendelés elemet. Az összesítő frissítések létrehozásához szükséges minimális paraméterek a **Számlafiók** és a **Pénznem**. Ez azt jelenti, hogy olyan összesítő frissítések nem megengedettek, amelyeknek eltérő a számlafiókjuk és a pénznemük. Az **Összesítő frissítések paramétereinek** oldalán beállíthatók további paraméterek is, amely a **Kinnlevőségek paraméterei** oldalról érhető el. 
+7. Az **Összegzés frissítése a következőhöz** mezőben válassza ki a Rendelés elemet. Az összesítő frissítések létrehozásához szükséges minimális paraméterek a **Számlafiók** és a **Pénznem** . Ez azt jelenti, hogy olyan összesítő frissítések nem megengedettek, amelyeknek eltérő a számlafiókjuk és a pénznemük. Az **Összesítő frissítések paramétereinek** oldalán beállíthatók további paraméterek is, amely a **Kinnlevőségek paraméterei** oldalról érhető el. 
 8. Az **Értékesítési rendelés** mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
 9. A listában válassza ki a rendelésszámot, amely az összesítő rendelés lesz.
 10. Kattintson az **Elrendezés** elemre.

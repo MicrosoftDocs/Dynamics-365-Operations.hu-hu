@@ -12,15 +12,15 @@ audience: Application User
 ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 000a2861bfc108754860f4090ea34901aee5949e
-ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
+ms.openlocfilehash: b5887efc32c71759e4cb3c31e1b18c4c8b64f173
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3092060"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3977191"
 ---
 # <a name="electronic-messaging"></a>Elektronikus üzenetküldés
 
@@ -78,19 +78,19 @@ A következő részekben további információkat találhat minden egyes elemrő
 
 ### <a name="number-sequences"></a>Számsorozatok
 
-Üzenetek és a üzenetelemek számsorozatainak beállítása. A számsorozatok segítségével a rendszer automatikusan számozza az üzeneteket és az üzenetelemeket. A hozzárendelt számok az üzenetek és üzenetelemek egyedi azonosítójaként szolgálnak majd a rendszerben. Az elektronikus üzenetküldéshez a számsorozatokat a **Főkönyvi paraméterek** oldalon (**Főkönyv** \> **Főkönyv beállítása** \> **Főkönyvi paraméterek**) menüpontban lehet beállítani.
+Üzenetek és a üzenetelemek számsorozatainak beállítása. A számsorozatok segítségével a rendszer automatikusan számozza az üzeneteket és az üzenetelemeket. A hozzárendelt számok az üzenetek és üzenetelemek egyedi azonosítójaként szolgálnak majd a rendszerben. Az elektronikus üzenetküldéshez a számsorozatokat a **Főkönyvi paraméterek** oldalon ( **Főkönyv** \> **Főkönyv beállítása** \> **Főkönyvi paraméterek** ) menüpontban lehet beállítani.
 
 ### <a name="message-item-types-and-statuses"></a>Üzenetelem-típusok és -állapotok
 
-Az üzenetelem-típusok azonosítják a rekordok típusait, amelyeket elektronikus üzenetekben használnak majd. Az üzenetelem-típusokat az **Üzenetelem-típusok** oldalon állíthat be (**Adó** \> **Beállítás** \> **Elektronikus üzenetek** \> **Üzenetelem-típusok**).
+Az üzenetelem-típusok azonosítják a rekordok típusait, amelyeket elektronikus üzenetekben használnak majd. Az üzenetelem-típusokat az **Üzenetelem-típusok** oldalon állíthat be ( **Adó** \> **Beállítás** \> **Elektronikus üzenetek** \> **Üzenetelem-típusok** ).
 
-Az üzenetelem-állapotok azonosítják az állapotokat, amelyek az üzenetelemre vonatkoznak majd a feldolgozásban, amelyet beállít. Az üzenetelem-típusokat az **Üzenetelem-állapotok** oldalon állíthat be (**Adó** \> **Beállítás** \> **Elektronikus üzenetek** \> **Üzenetelem-állapotok**).
+Az üzenetelem-állapotok azonosítják az állapotokat, amelyek az üzenetelemre vonatkoznak majd a feldolgozásban, amelyet beállít. Az üzenetelem-típusokat az **Üzenetelem-állapotok** oldalon állíthat be ( **Adó** \> **Beállítás** \> **Elektronikus üzenetek** \> **Üzenetelem-állapotok** ).
 
 A **Törlés engedélyezése** paraméter egy üzenet elemállapotában határozza meg, hogy felhasználók törölhetik-e azokat az üzenetelemeket, amelyek ezzel az állapottal rendelkeznek az **Elektronikus üzenetek** vagy **Elektronikusüzenet-elemek** képernyőn.
 
 ### <a name="message-statuses"></a>Üzenetállapotok
 
-Üzenetállapotok beállítása, amelyek rendelkezésre állnak az üzenetek feldolgozása során. Az üzenetállapotokat az **Üzenetállapotok** oldalon állíthat be (**Adó** \> **Beállítás** \> **Elektronikus üzenetek** \> **Üzenetállapotok**).
+Üzenetállapotok beállítása, amelyek rendelkezésre állnak az üzenetek feldolgozása során. Az üzenetállapotokat az **Üzenetállapotok** oldalon állíthat be ( **Adó** \> **Beállítás** \> **Elektronikus üzenetek** \> **Üzenetállapotok** ).
 
 Az alábbi táblázat ismerteti az **Üzenetállapotok** oldalon elérhető mezőket.
 
@@ -104,7 +104,7 @@ Az alábbi táblázat ismerteti az **Üzenetállapotok** oldalon elérhető mez�
 
 ### <a name="additional-fields"></a>További mezők
 
-Az Elektronikus üzenetek funkció segítségével kitöltheti a rekordokat egy tranzakciós táblából. Ezzel a módszerrel a rekordokat előkészítheti a jelentéskészítésre, majd jelentheti őket. Azonban néha a tranzakciós táblák nem tartalmaznak elég információt ahhoz, hogy a rekordokat a jelentéskészítési követelményeknek megfelelő módon ki lehessen tölteni. Annak érdekében, hogy a rekordhoz tartozó jelentéshez szükséges összes adatot ki tudja tölteni, létrehozhat további mezőket. A további mezőket az üzenetekhez és üzenetelemekhez is társíthatja. További mezőket a **További mezők** oldalon állíthat be (**Adó** \> **Beállítás** \> **Elektronikus üzenetek** \> **További mezők**).
+Az Elektronikus üzenetek funkció segítségével kitöltheti a rekordokat egy tranzakciós táblából. Ezzel a módszerrel a rekordokat előkészítheti a jelentéskészítésre, majd jelentheti őket. Azonban néha a tranzakciós táblák nem tartalmaznak elég információt ahhoz, hogy a rekordokat a jelentéskészítési követelményeknek megfelelő módon ki lehessen tölteni. Annak érdekében, hogy a rekordhoz tartozó jelentéshez szükséges összes adatot ki tudja tölteni, létrehozhat további mezőket. A további mezőket az üzenetekhez és üzenetelemekhez is társíthatja. További mezőket a **További mezők** oldalon állíthat be ( **Adó** \> **Beállítás** \> **Elektronikus üzenetek** \> **További mezők** ).
 
 Az alábbi táblázat ismerteti a **További mezők** oldalon elérhető általános mezőket.
 
@@ -122,19 +122,19 @@ Minden további mező eltérő értékeket tartalmazhat a feldolgozáshoz. Ezeke
 |----------------------|-------------|
 | Mező értéke          | Adja meg a jelentés során az üzenethez vagy üzenetelemhez kapcsolódóan használandó mezőértéket. |
 | Leírás          | Adja meg a mezőérték leírását. |
-| Számla típusa         | Lehetséges, hogy bizonyos mezőértékek meghatározott számlatípusokra van korlátozva. Válassza ki a következő értékek egyikét: **Összes**, **Vevő**, vagy **Szállító**. |
+| Számla típusa         | Lehetséges, hogy bizonyos mezőértékek meghatározott számlatípusokra van korlátozva. Válassza ki a következő értékek egyikét: **Összes** , **Vevő** , vagy **Szállító** . |
 | Számlakód         | Ha a **Számlatípus** mezőben **Vevő** vagy **Szállító** lehetőséget választott, a mezőérték használatát tovább korlátozhatja egy meghatározott csoportra vagy táblára. |
 | Számla/csoport száma | Ha a **Számlatípus** mezőben **Vevő** vagy **Szállító** lehetőséget választott, és ha a **Számlakód** mezőben megadott egy csoportot vagy táblát, akkor ebben a mezőben megadhat egy meghatározott csoportot vagy ellenoldali felet. |
 | Érvénybe lépés            | Adja meg a dátumot, amikortól az értéket figyelembe kell venni. |
 | Lejárat           | Adja meg a dátumot, amikortól az értéket már nem kell figyelembe venni. |
 
-Alapértelmezés szerint a **Számla/csoport száma**, **Számlakód**, **Hatályos** és **Lejárat** mezők által meghatározott feltételek kombinációi nem befolyásolják a további mezők értékeinek kiválasztását. Azonban ezek a kombinációk használhatók egy végrehajtható osztályban egy meghatározott logika megvalósításához, amely a további mezők értékeit kiszámítja.
+Alapértelmezés szerint a **Számla/csoport száma** , **Számlakód** , **Hatályos** és **Lejárat** mezők által meghatározott feltételek kombinációi nem befolyásolják a további mezők értékeinek kiválasztását. Azonban ezek a kombinációk használhatók egy végrehajtható osztályban egy meghatározott logika megvalósításához, amely a további mezők értékeit kiszámítja.
 
 ### <a name="executable-class-settings"></a>Végrehajtható osztály beállításai
 
 Egy végrehajtható osztály egy olyan X++ metódus vagy osztály, amelyet az elektronikus üzenetfeldolgozás le tud hívni egy művelettel kapcsolatban, ha a folyamathoz értékelés szükséges.
 
-Manuálisan beállíthat egy végrehajtható osztályt a **Végrehajtható osztály beállításai** oldalon (**Adó** \> **Beállítás** \> **Elektronikus üzenetek** \> **Végrehajtható osztály beállításai**). Hozzon létre egy sort, és állítsa be a következő mezőket.
+Manuálisan beállíthat egy végrehajtható osztályt a **Végrehajtható osztály beállításai** oldalon ( **Adó** \> **Beállítás** \> **Elektronikus üzenetek** \> **Végrehajtható osztály beállításai** ). Hozzon létre egy sort, és állítsa be a következő mezőket.
 
 | Mező                 | Leírás |
 |-----------------------|-------------|
@@ -148,7 +148,7 @@ Előfordulhat, hogy az egyes végrehajtható osztályok kötelező paramétereke
 
 ### <a name="populate-records-actions"></a>Rekordok műveletek feltöltése
 
-A rekordfeltöltési műveletek használatával olyan műveleteket állíthat be, amelyek rekordokat adnak az Üzenetelemek táblához azért, hogy az elektronikus üzenethez lehessen adni őket. Például, ha az elektronikus üzenetnek vevői számlákat kell jelentenie, be kell állítania a Rekordok feltöltése műveletet, amely a Vevői számla naplója táblában található **Adatforrás** mezőre hivatkozik. Rekordfeltöltési műveleteket a **Rekordfeltöltési művelet** oldalon állíthat be (**Adó** \> **Beállítás** \> **Elektronikus üzenetek** \> **Rekordfeltöltési műveletek**). Hozzon létre egy új rekordot minden művelethez, amelynek rekordokat kell adnia a táblához, és állítsa be az alábbi mezőket.
+A rekordfeltöltési műveletek használatával olyan műveleteket állíthat be, amelyek rekordokat adnak az Üzenetelemek táblához azért, hogy az elektronikus üzenethez lehessen adni őket. Például, ha az elektronikus üzenetnek vevői számlákat kell jelentenie, be kell állítania a Rekordok feltöltése műveletet, amely a Vevői számla naplója táblában található **Adatforrás** mezőre hivatkozik. Rekordfeltöltési műveleteket a **Rekordfeltöltési művelet** oldalon állíthat be ( **Adó** \> **Beállítás** \> **Elektronikus üzenetek** \> **Rekordfeltöltési műveletek** ). Hozzon létre egy új rekordot minden művelethez, amelynek rekordokat kell adnia a táblához, és állítsa be az alábbi mezőket.
 
 | Mező       | Leírás |
 |-------------|-------------|
@@ -170,7 +170,7 @@ Az **Adatforrások beállítása** gyorslapon adjon hozzá egy sort minden olyan
 
 ### <a name="web-applications"></a>Webalkalmazások
 
-A webalkalmazás beállításai segítségével beállíthat egy olyan webalkalmazást, amely támogatja az Open Authorization (OAuth) 2.0 szolgáltatást. Az OAuth az a nyitott szabvány, amelynek segítségével a felhasználók saját nevükben „biztonságos delegált hozzáférést” biztosíthatnak az alkalmazásnak anélkül, hogy a hozzáféréshez használt hitelesítési adataikat meg kellene vele osztaniuk. Az engedélyezési folyamatot is elvégezheti, amelyhez kérhet egy ellenőrzőkódot és hozzáférési tokent. A webes alkalmazás beállításait a **Webes alkalmazások** oldalon (**Adó** \> **Beállítások** \> **Elektronikus üzenetek** \> **Webes alkalmazások**) állíthatja be.
+A webalkalmazás beállításai segítségével beállíthat egy olyan webalkalmazást, amely támogatja az Open Authorization (OAuth) 2.0 szolgáltatást. Az OAuth az a nyitott szabvány, amelynek segítségével a felhasználók saját nevükben „biztonságos delegált hozzáférést” biztosíthatnak az alkalmazásnak anélkül, hogy a hozzáféréshez használt hitelesítési adataikat meg kellene vele osztaniuk. Az engedélyezési folyamatot is elvégezheti, amelyhez kérhet egy ellenőrzőkódot és hozzáférési tokent. A webes alkalmazás beállításait a **Webes alkalmazások** oldalon ( **Adó** \> **Beállítások** \> **Elektronikus üzenetek** \> **Webes alkalmazások** ) állíthatja be.
 
 Az alábbi táblázat ismerteti a **Webes alkalmazások** oldalon elérhető mezőket.
 
@@ -189,8 +189,8 @@ Az alábbi táblázat ismerteti a **Webes alkalmazások** oldalon elérhető mez
 | Jogkivonat modell-leképezésének importálása   | Válasszon egy ER importáló modell-leképezést, amely a hozzáférési token tárolására szolgál. |
 | Kiadott hatókör                | Az alkalmazáshoz a kérelmek esetére biztosított hatókör. Ez a mező automatikusan frissül. |
 | A hozzáférési jogkivonat lejár ennyi idő múlva:  | A hozzáférési token lejáratáig fennmaradó idő. | 
-| Elfogadás                       | Határozza meg a webes kérelem **Elfogadás** tulajdonságát. Például adja meg a következőt: **application/vnd.hmrc.1.0+json**. |
-| Tartalomtípus                 | Határozza meg a tartalom típusát. Például adja meg a következőt: **application/json**. |
+| Elfogadás                       | Határozza meg a webes kérelem **Elfogadás** tulajdonságát. Például adja meg a következőt: **application/vnd.hmrc.1.0+json** . |
+| Tartalomtípus                 | Határozza meg a tartalom típusát. Például adja meg a következőt: **application/json** . |
 
 Ezenkívül a **Webalkalmazások** Műveleti ablaktábláján a következő gombok találhatók, amelyek támogatják a hitelesítési folyamatot:
 
@@ -202,7 +202,7 @@ Amikor egy webalkalmazás hozzáférési tokenjét titkosított formátumban tá
 
 ### <a name="web-service-settings"></a>Webszolgáltatás-beállítások
 
-Webes szolgáltatás beállításainak segítségével beállíthatja a közvetlen adatátvitelt a webes szolgáltatáshoz. A webes szolgáltatás beállításait a **Webes szolgáltatás beállításai** oldalon (**Adó** \> **Beállítások** \> **Elektronikus üzenetek** \> **Webes szolgáltatás beállításai**) állíthatja be.
+Webes szolgáltatás beállításainak segítségével beállíthatja a közvetlen adatátvitelt a webes szolgáltatáshoz. A webes szolgáltatás beállításait a **Webes szolgáltatás beállításai** oldalon ( **Adó** \> **Beállítások** \> **Elektronikus üzenetek** \> **Webes szolgáltatás beállításai** ) állíthatja be.
 
 Az alábbi táblázat ismerteti a **Webes szolgáltatás beállításai** oldalon elérhető mezőket.
 
@@ -214,7 +214,7 @@ Az alábbi táblázat ismerteti a **Webes szolgáltatás beállításai** oldalo
 | Diploma                    | Válasszon ki egy korábban beállított Key Vault-tanúsítványt. |
 | Webalkalmazás                | Válasszon ki egy korábban beállított Key Vault-tanúsítványt. |
 | A válasz típusa – XML        | Állítsa ezt a beállítást **Igen** értékre, ha a választípus XML. |
-| Kérelemmetódus                 | Adja meg a kérés metódusát. A HTTP meghatároz egy készlet kérésmetódust, amely jelzi a műveletet, amelyet az adott erőforráshoz el kell végezni. A kérelem metódusa lehet **GET**, **POST**, vagy más HTTP-metódus. |
+| Kérelemmetódus                 | Adja meg a kérés metódusát. A HTTP meghatároz egy készlet kérésmetódust, amely jelzi a műveletet, amelyet az adott erőforráshoz el kell végezni. A kérelem metódusa lehet **GET** , **POST** , vagy más HTTP-metódus. |
 | Kérelem fejléce                | Adja meg a kérés fejléceit. A kérés fejléce egy HTTP-fejlév, amelyet egy HTTP-kérésben lehet használni, és amely nem kapcsolódik az üzenet tartalmához. |
 | Elfogadás                         | Határozza meg a webes kérelem **Elfogadás** tulajdonságát. |
 | Kódolás elfogadása                | Adja me az **Accept-Encoding** értékét. Az Accept-Encoding kérés HTTP-fejléce a tartalom kódolását hirdeti, amelyet a kliens is megért. Ez a tartalomkódolás általában egy kompressziós algoritmus. |
@@ -224,7 +224,7 @@ Az alábbi táblázat ismerteti a **Webes szolgáltatás beállításai** oldalo
 
 ### <a name="message-processing-actions"></a>Üzenetfeldolgozási műveletek
 
-Az üzenetfeldolgozási műveletek segítségével műveleteket hozhat létre a folyamataihoz, és beállíthatja paramétereiket. Az üzenetfeldolgozási műveleteket az **Üzenetfeldolgozási műveletek** oldalon állíthat be (**Adó** \> **Beállítás** \> **Elektronikus üzenetek** \> **Üzenetfeldolgozási műveletek**).
+Az üzenetfeldolgozási műveletek segítségével műveleteket hozhat létre a folyamataihoz, és beállíthatja paramétereiket. Az üzenetfeldolgozási műveleteket az **Üzenetfeldolgozási műveletek** oldalon állíthat be ( **Adó** \> **Beállítás** \> **Elektronikus üzenetek** \> **Üzenetfeldolgozási műveletek** ).
 
 Az alábbi táblázat ismerteti az **Üzenetfeldolgozási műveletek** oldalon elérhető mezőket.
 
@@ -233,9 +233,9 @@ Az alábbi táblázat ismerteti az **Üzenetfeldolgozási műveletek** oldalon e
 | Mező                       | Leírás |
 |-----------------------------|-------------|
 | Művelettípus                 | Válassza ki a művelet típusát. A rendelkezésre álló lehetőségekkel kapcsolatos további tudnivalókat lásd az [Üzenetfeldolgozási művelettípusok](#message-processing-action-types) szakaszban. |
-| Formátum leképezése              | Válassza ki, hogy a művelethez milyen ER-formátumot kell lehívni. Ez a mező csak az **Elektronikus jelentéskészítés exportálása**, **Elektronikus jelentéskészítés importálása** és **Elektronikus jelentéskészítés exportálási üzenete** típusokhoz tartozó műveletekhez érhető el. |
+| Formátum leképezése              | Válassza ki, hogy a művelethez milyen ER-formátumot kell lehívni. Ez a mező csak az **Elektronikus jelentéskészítés exportálása** , **Elektronikus jelentéskészítés importálása** és **Elektronikus jelentéskészítés exportálási üzenete** típusokhoz tartozó műveletekhez érhető el. |
 | Formátum megfeleltetése az URL-cím elérési útvonalára vonatkozóan | Válassza ki, hogy a művelethez milyen ER-formátumot kell lehívni. Ez a mező csak a **Webszolgáltatás** típusú műveletekhez érhető el. Ennek segítségével lehet létrehozni az URL-cím elérési útvonalát, amelyet a kiválasztott webkiszolgálóhoz meghatározott alap internetes címhez adnak hozzá. |
-| Üzenetelem típusa           | Válassza ki a rekordok típusát, amelyhez a műveletet értékelni kell. Ez a mező az **Üzenetelem végrehajtási szint**, **Elektronikus jelentéskészítés exportálása**, **Elektronikus jelentéskészítés importálása** és **Webszolgáltatás** típusokhoz tartozó műveletekhez érhető el, és még néhány másik típushoz. Ha üresen hagyja ezt a mezőt, minden olyan üzenetelem-típus értékelésre kerül, amely az üzenetfeldolgozáshoz meg van határozva. |
+| Üzenetelem típusa           | Válassza ki a rekordok típusát, amelyhez a műveletet értékelni kell. Ez a mező az **Üzenetelem végrehajtási szint** , **Elektronikus jelentéskészítés exportálása** , **Elektronikus jelentéskészítés importálása** és **Webszolgáltatás** típusokhoz tartozó műveletekhez érhető el, és még néhány másik típushoz. Ha üresen hagyja ezt a mezőt, minden olyan üzenetelem-típus értékelésre kerül, amely az üzenetfeldolgozáshoz meg van határozva. |
 | Végrehajtható osztály            | Jelölje ki a korábban létrehozott végrehajthatóosztály-beállításokat. Ez a mező csak az **Üzenetelem-végrehajtási szint** és **Üzenetelem-végrehajtási szint** típusokhoz tartozó műveletekhez érhető el. |
 | Rekordok művelet feltöltése     | Válasszon ki egy korábban már beállított rekordfeltöltési műveletet. Ez a mező csak a **Rekordfeltöltés** típusú műveletekhez érhető el. |
 | Webes szolgáltatás                 | Válasszon ki egy korábban már beállított webszolgáltatást. Ez a mező csak a **Webszolgáltatás** típusú műveletekhez érhető el. |
@@ -261,7 +261,7 @@ A **Művelettípus** mezőben az alábbi lehetőségek éérhetők el:
 #### <a name="initial-statuses-fasttab"></a>Kiindulási állapotok gyorslap
 
 > [!NOTE]
-> A **Kiindulási állapotok** gyorslap nem érhető el olyan műveletekhez, amelyeknek kiindulási művelettípusa **Üzenet létrehozása**.
+> A **Kiindulási állapotok** gyorslap nem érhető el olyan műveletekhez, amelyeknek kiindulási művelettípusa **Üzenet létrehozása** .
 
 | Mező               | Leírás |
 |---------------------|-------------|
@@ -295,7 +295,7 @@ Az alábbi táblázat bemutatja az eredményállapotokat, amelyeket a különbö
 
 ### <a name="electronic-message-processing"></a>Elektronikus üzenetek feldolgozása
 
-Az elektronikus üzenetfeldolgozás az Elektronikus üzenetek funkció alapvető koncepciója. Összesíti azokat a műveleteket, amelyeket az elektronikus üzenet esetén értékelni kell. A műveletek összekapcsolása kiindulási állapoton és eredményállapoton keresztül történhet. Másik lehetőségként a **Felhasználó feldolgozás** típusú műveletek önállóan is elindíthatók. Az **Elektronikus üzenetek feldolgozása** lapon (**Adó** \> **Beállítás** \> **Elektronikus üzenetek** \> **Elektronikus üzenetek feldolgozása**) további mezőket választhat ki, amelyeket a rendszer támogatni fog feldolgozás közben vagy üzenetszinten vagy üzenetelemek szintjén.
+Az elektronikus üzenetfeldolgozás az Elektronikus üzenetek funkció alapvető koncepciója. Összesíti azokat a műveleteket, amelyeket az elektronikus üzenet esetén értékelni kell. A műveletek összekapcsolása kiindulási állapoton és eredményállapoton keresztül történhet. Másik lehetőségként a **Felhasználó feldolgozás** típusú műveletek önállóan is elindíthatók. Az **Elektronikus üzenetek feldolgozása** lapon ( **Adó** \> **Beállítás** \> **Elektronikus üzenetek** \> **Elektronikus üzenetek feldolgozása** ) további mezőket választhat ki, amelyeket a rendszer támogatni fog feldolgozás közben vagy üzenetszinten vagy üzenetelemek szintjén.
 
 A **Művelet** gyorslapon előre meghatározott műveleteket adhat a feldolgozáshoz. Megadhatja, hogy egy műveletet külön kell-e futtatni, vagy a feldolgozás során elindítható. Annak meghatározásához, hogy egy művelet a feldolgozás során csak egy felhasználó által elindítható, állítsa az adott művelet **Futtatás külön** mezőjének értékét **Igen** értékre. Ha egy művelet elindítható azon üzenetek vagy üzenetelemek feldolgozása által is, amelyeket a művelet kezdő állapotaként megadott állapotban szerepelnek, állítsa a **Futtatás külön** mezőt **Nem** értékre. A **Felhasználói művelet** típusű műveletet mindig csak külön szabad futtatni.
 
@@ -311,7 +311,7 @@ A **Köteg** gyorslap lehetővé teszi annak beállítását, hogy kötegrendsze
 
 ## <a name="work-with-the-electronic-messages-functionality"></a>Elektronikus üzenetek funkcióval való munkavégzés
 
-Ha az üzenet szintjén dolgozik, az **Elektronikus üzenetek** oldal (**Adó** \> **Lekérdezések és jelentések** \> **Elektronikus üzenetek** \> **Elektronikus üzenetek**) hasznosabb. Ha az adatgyűjtés (üzenetelem) szintjén üzemel, az **Elektronikus üzenetelemek** oldal (**Adó** \> **Lekérdezések és jelentések** \> **Elektronikus üzenetek** \> **Elektronikus üzenetelemek**) hasznosabb.
+Ha az üzenet szintjén dolgozik, az **Elektronikus üzenetek** oldal ( **Adó** \> **Lekérdezések és jelentések** \> **Elektronikus üzenetek** \> **Elektronikus üzenetek** ) hasznosabb. Ha az adatgyűjtés (üzenetelem) szintjén üzemel, az **Elektronikus üzenetelemek** oldal ( **Adó** \> **Lekérdezések és jelentések** \> **Elektronikus üzenetek** \> **Elektronikus üzenetelemek** ) hasznosabb.
 
 ### <a name="electronic-messages"></a>Elektronikus üzenetek
 
@@ -496,16 +496,16 @@ Ebben a példában az alábbi műveleteket fogja létrehozni:
 - **Frissítés kiindulási állapotra** (nem kötelező)
 
 1. Lépjen az **Adó \> Beállítás \> Elektronikus üzenetek \> Üzenetfeldolgozási műveletek** menüpontra.
-2. Hozzon létre egy műveletet, amelynek a neve **Üzenet létrehozása**. Az **Általános** gyorslapon a **Művelettípus** mezőben válassza az **Üzenet létrehozása** lehetőséget.
-3. Hozzon létre egy **Frissítés Előkészítve értékre**, majd állítsa be a következő mezőket:
+2. Hozzon létre egy műveletet, amelynek a neve **Üzenet létrehozása** . Az **Általános** gyorslapon a **Művelettípus** mezőben válassza az **Üzenet létrehozása** lehetőséget.
+3. Hozzon létre egy **Frissítés Előkészítve értékre** , majd állítsa be a következő mezőket:
 
     - Az **Általános** gyorslapon a **Művelettípus** mezőben válassza az **Üzenetszint felhasználói feldolgozás** lehetőséget.
     - A **Kiindulási állapotok** gyorslapon az **Üzenetállapot** mezőben válassza az **Új** lehetőséget.
     - Az **Eredményállapotok** gyorslapon az **Üzenetállapot** mezőben válassza az **Előkészítve** lehetőséget. A **Választípus** mezőben adja meg a **Sikeresen végrehajtva** lehetőséget.
 
-4. Hozzon létre egy **Jelentés létrehozása**, majd állítsa be a következő mezőket:
+4. Hozzon létre egy **Jelentés létrehozása** , majd állítsa be a következő mezőket:
 
-    - Az **Általános** gyorslapon a **Művelettípus** mezőben válassza az **Elektronikus jelentéskészítés exportálása** lehetőséget. A **Formátumleképezés** mezőben válassza ki az exportálási ER-formátumot. A lehetőségek a következők: **Excel**, **XML**, **JSON**, **Szöveg** és **Egyéb**.
+    - Az **Általános** gyorslapon a **Művelettípus** mezőben válassza az **Elektronikus jelentéskészítés exportálása** lehetőséget. A **Formátumleképezés** mezőben válassza ki az exportálási ER-formátumot. A lehetőségek a következők: **Excel** , **XML** , **JSON** , **Szöveg** és **Egyéb** .
     - A **Kiindulási állapotok** gyorslapon az **Üzenetállapot** mezőben válassza az **Előkészítve** lehetőséget.
     - Az **Eredményállapotok** gyorslapon az **Üzenetállapot** mezőben válassza a **Létrehozva** lehetőséget. A **Választípus** mezőben adja meg a **Sikeresen végrehajtva** lehetőséget.
 
@@ -515,7 +515,7 @@ Ebben a példában az alábbi műveleteket fogja létrehozni:
 
     - Az **Általános** gyorslapon a **Művelettípus** mezőben válassza az **Üzenetszint felhasználói feldolgozás** lehetőséget.
     - A **Kiindulási állapotok** gyorslapon az **Üzenetállapot** mezőben válassza a **Létrehozva** lehetőséget.
-    - Az **Eredményállapotok** gyorslapon adjon hozzá külön sort mindkét üzenetállapothoz (**Előkészítve** és **Új**). Mindkét sorban állítsa a **Választípus** mezőt **Sikeresen végrehajtva** értékre.
+    - Az **Eredményállapotok** gyorslapon adjon hozzá külön sort mindkét üzenetállapothoz ( **Előkészítve** és **Új** ). Mindkét sorban állítsa a **Választípus** mezőt **Sikeresen végrehajtva** értékre.
 
 #### <a name="electronic-message-processing"></a>Elektronikus üzenetek feldolgozása
 

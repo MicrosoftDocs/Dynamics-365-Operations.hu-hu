@@ -16,15 +16,15 @@ ms.custom: 28991
 ms.assetid: 945d5088-a99d-4e54-bc42-d2bd61c61e22
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cb3f781c82c0c1e13966f1490bcb4a76b5e7ed69
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: d36f60a13fbee91100e406150e7f5ca890320436
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3204953"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3982257"
 ---
 # <a name="weighted-average-date"></a>Dátum szerinti súlyozott átlag
 
@@ -38,7 +38,7 @@ Ha az adott napon vagy azelőtt csak egy bevételezés történt akkor nem kell 
 
 A rendszerben az alábbi képlet segítségével számítja ki a súlyozott átlagos dátum költségét: 
 
-Súlyozott átlag = (\[Q1 × P1\] + \[Q2 × P2\] + \[Q*n* × P*n*\]) ÷ (Q1 + Q2 + Q*n*) 
+Súlyozott átlag = (\[Q1 × P1\] + \[Q2 × P2\] + \[Q *n* × P *n*\]) ÷ (Q1 + Q2 + Q *n* ) 
 
 A készlet zárása során a számítás minden nap lefut a zárási időszak alatt, ahogy az alábbi ábrán is látható. 
 
@@ -86,12 +86,12 @@ A következő ábrán ezek a tranzakciók láthatók:
 -   Ha zárójelbe van téve egy készlettranzakció értéke, akkor az arra utal, hogy a készlettranzakció fizikailag van feladva a készletre.
 -   Ha nincs zárójelbe téve egy készlettranzakció értéke, akkor az arra utal, hogy a készlettranzakció pénzügyileg van feladva a készletre.
 -   Minden új bevételezési és kiadási tranzakciót egy új címke jelöl.
--   Mindegyik függőleges nyíl egy sorszámozott azonosítóval van ellátva, például *1a*. Az azonosítók a készlettranzakciók feladásának időbeli sorrendjét jelölik.
+-   Mindegyik függőleges nyíl egy sorszámozott azonosítóval van ellátva, például *1a* . Az azonosítók a készlettranzakciók feladásának időbeli sorrendjét jelölik.
 -   A készletzárásokat egy piros színű, szaggatott függőleges vonal és a *Készletzárás* felirat jelöli.
 -   A készletzárás által végrehajtott elszámolásokat szaggatott piros nyilak jelölik, amelyek átlósan haladnak egy bevételezéstől egy kiadás felé.
 
 ## <a name="weighted-average-date-summarized-settlement-when-the-include-physical-value-option-isnt-used"></a>Dátummal súlyozott átlagot alkalmazó összesített elszámolás a Tényleges értékkel együtt beállítás aktiválása nélkül
-A súlyozott átlag az alábbi elven alapul: minden bevétel a zárási időszakban összeadódik egy új készlettranszfer tranzakcióba. A tranzakció neve *súlyozott átlagú készletzárás*. A nap bevételezéseit az újonnan létrehozott készletmozgási tranzakcióval szemben számolja el a program. A nap minden kiadását az új készletmozgási tranzakció bevételezésével szemben számolja el a program. Ha pozitív a tényleges készlet a készletzárás után, akkor ezt a tényleges készletet és a készlet értékét összegzi az új készletmozgási tranzakció-bevételezés. Ha negatív a készlet a készletzárás után, a tényleges készlet és a készletérték a nem teljesen elszámolt egyes kiadások összege. 
+A súlyozott átlag az alábbi elven alapul: minden bevétel a zárási időszakban összeadódik egy új készlettranszfer tranzakcióba. A tranzakció neve *súlyozott átlagú készletzárás* . A nap bevételezéseit az újonnan létrehozott készletmozgási tranzakcióval szemben számolja el a program. A nap minden kiadását az új készletmozgási tranzakció bevételezésével szemben számolja el a program. Ha pozitív a tényleges készlet a készletzárás után, akkor ezt a tényleges készletet és a készlet értékét összegzi az új készletmozgási tranzakció-bevételezés. Ha negatív a készlet a készletzárás után, a tényleges készlet és a készletérték a nem teljesen elszámolt egyes kiadások összege. 
 
 Az alábbi helyzetben az időszak során több pénzügyi szempontból frissített bevételezés és kiadás feladására került sor. A rendszer a készletzárás során minden egyes nap kiértékelésével állapítja meg, hogy a zárásnak hogyan kell kezelnie az egyes napokat. 
 
@@ -140,7 +140,7 @@ Az alábbi ábrán ez a tranzakciósorozat, és a súlyozott átlag készletmode
 -   Ha zárójelbe van téve egy készlettranzakció értéke, akkor az arra utal, hogy a készlettranzakció fizikailag van feladva a készletre.
 -   Ha nincs zárójelbe téve egy készlettranzakció értéke, akkor az arra utal, hogy a készlettranzakció pénzügyileg van feladva a készletre.
 -   Minden új bevételezési és kiadási tranzakciót egy új címke jelöl.
--   Mindegyik függőleges nyíl egy sorszámozott azonosítóval van ellátva, például *1a*. Az azonosítók a készlettranzakciók feladásának időbeli sorrendjét jelölik.
+-   Mindegyik függőleges nyíl egy sorszámozott azonosítóval van ellátva, például *1a* . Az azonosítók a készlettranzakciók feladásának időbeli sorrendjét jelölik.
 -   A készletzárásokat egy piros színű, szaggatott függőleges vonal és a *Készletzárás* felirat jelöli.
 -   A készletzárás által végrehajtott elszámolásokat szaggatott piros nyilak jelölik, amelyek átlósan haladnak egy bevételezéstől egy kiadás felé.
 -   A piros átlós nyilak jelzik azt a bevételezési tranzakciót, amelyet a rendszer által létrehozott kiadási tranzakciókkal szemben elszámol a program.
@@ -189,7 +189,7 @@ Az új, mozgóátlagon alapuló önköltségi ár a pénzügyileg és fizikailag
 -   Ha zárójelbe van téve egy készlettranzakció értéke, akkor az arra utal, hogy a készlettranzakció fizikailag van feladva a készletre.
 -   Ha nincs zárójelbe téve egy készlettranzakció értéke, akkor az arra utal, hogy a készlettranzakció pénzügyileg van feladva a készletre.
 -   Minden új bevételezési és kiadási tranzakciót egy új címke jelöl.
--   Mindegyik függőleges nyíl egy sorszámozott azonosítóval van ellátva, például *1a*. Az azonosítók a készlettranzakciók feladásának időbeli sorrendjét jelölik.
+-   Mindegyik függőleges nyíl egy sorszámozott azonosítóval van ellátva, például *1a* . Az azonosítók a készlettranzakciók feladásának időbeli sorrendjét jelölik.
 -   A készletzárásokat egy piros színű, szaggatott függőleges vonal és a *Készletzárás* felirat jelöli.
 -   A készletzárás által végrehajtott elszámolásokat szaggatott piros nyilak jelölik, amelyek átlósan haladnak egy bevételezéstől egy kiadás felé.
 

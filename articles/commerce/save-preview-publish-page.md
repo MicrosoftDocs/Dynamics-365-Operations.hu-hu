@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e1e19594327c0042915bfae87f480434a7fcb159
-ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
+ms.openlocfilehash: db4866b22060b764fdde3e4a44e99e969133c0a0
+ms.sourcegitcommit: f16db76c1c235dfa445b50614bcee9219782d6dc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "3269981"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "3961610"
 ---
 # <a name="save-preview-and-publish-a-page"></a>Oldal mentése, megtekintése és közzététele
 
@@ -38,9 +38,9 @@ A lapok mentésekor a módosítások csak az Ön számára láthatók. A mentés
 
 ## <a name="preview-a-page"></a>Egy lap előnézetének megtekintése
 
-A szerkesztő eszköz kétféle előnézeti funkciót kínál: a „valós megjelenítésű” (WYSIWYG) előnézeti ablak a lap szerkesztőjében és egy külön előnézeti ablak.
+A szerkesztő eszköz kétféle előnézeti funkciót kínál: vizuális oldalkészítő, amely egy „valós megjelenítésű” (WYSIWYG) előnézeti ablak a lap szerkesztőjében, és egy külön előnézeti ablak.
 
-A lapszerkesztő használata közben a központ ablaktáblájában megjelenik a „valós megejelenítésű” (WYSIWYG) előnézet. A program automatikusan frissíti ezt az előnézetet a lap mentésekor. A parancssori **Frissítés** lehetőséget kiválaszva manuálisan is frissítheti ezt. A WYSIWYG előnézete ugyanúgy jeleníti meg a lapot, ahogy a webhely felhasználói látni fogják, de felette láthatók a szerkesztői segédeszközök.
+A lapszerkesztő használata közben a központ ablaktáblájában megjelenik a „valós megejelenítésű” (WYSIWYG) előnézet. A program automatikusan frissíti ezt az előnézetet a lap mentésekor. A parancssori **Frissítés** lehetőséget kiválaszva manuálisan is frissítheti ezt. Az előnézet ugyanúgy jeleníti meg a lapot, ahogy a webhely felhasználói látni fogják, de felette láthatók a szerkesztői segédeszközök.
 
 Ha befejezte a lap módosítását, megtekintheti előnézetét, tehát azt, hogy a vásárlók mit fognak látni. A lap előnézetéhez válassza a parancssáv **Előnézet** elemét. Az előnézet egy külön böngészőablakban fog megjelenni. Az előnézeti ablak lapja ugyanúgy jelenik meg, ahogy a webhely felhasználója látni fogja azt. Az ablak átméretezésével meggyőződhet arról, hogy a reszponzív modulok helyesen legyenek megjelenítve minden nézetben.
 

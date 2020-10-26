@@ -16,15 +16,15 @@ ms.custom: 72704
 ms.assetid: e7c5d44e-07bc-40b1-a4b3-8ba46483ef9e
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: ''
+ms.author: kamaybac
 ms.search.validFrom: 2019-06-07
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9e9df6fcdbc894741e56f117ee1a5e370db333d9
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 5e64a4bd9e65b62bb782785a363aa2eee5264e3a
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3208777"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3987022"
 ---
 # <a name="negative-days-and-dynamic-negative-days"></a>Negatív napok és dinamikus negatív napok
 
@@ -78,7 +78,7 @@ Ahhoz, hogy a cikk átfutási ideje és a negatív napok időkorlátja automatik
 
 Dinamikus negatív napok időkorlátja = Beszerzési átfutási idő + Negatív napok időkorlátja + (Aktuális dátum – Igény dátuma)
 
-(Ha a DemoProduct cikk alapértelmezett rendelési típusa **Termelés** vagy **Átmozgatás**, akkor az átfutási idő a **készlet** átfutási ideje.)
+(Ha a DemoProduct cikk alapértelmezett rendelési típusa **Termelés** vagy **Átmozgatás** , akkor az átfutási idő a **készlet** átfutási ideje.)
 
 Ha dinamikus negatív napokat használ, akkor az időkorlát, amelyet az MRP megnéz a bevételezésekhez, jelenleg 6 + 2 + 0 = 8 nap. Az MRP megkeresi a meglévő beszerzési rendelést, és az értékesítési rendeléshez rögzíti. Nem jön létre új tervezett rendelés. Ezért az MRP futási ideje rövidebb. A következő ábra bemutatja a DemoProduct cikkhez megállapított nettó igényeket.
 
@@ -224,7 +224,7 @@ A negatív napokat hosszú időkorlátra is beállíthatja, és ezt követően a
 - A nulladik napon (január 1.) értékesítési rendelést kap 10 darab DemoProduct cikkre.
 - A tízedik napon (január 10.) értékesítési rendelést kap 10 darab DemoProduct cikkre.
 - A tizenkettedik napon (január 12.) már van egy beszerzési rendelés 10 darab DemoProduct cikkre.
-- A negatív napok beállítása **20**, ami jóval több, mint a cikk átfutási ideje.
+- A negatív napok beállítása **20** , ami jóval több, mint a cikk átfutási ideje.
 
 Az alábbi ábra grafikus nézetben mutatja be, mi történik ebben az esetben.
 

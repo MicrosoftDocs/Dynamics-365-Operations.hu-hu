@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6cf056f9c8f1f24bb6eb0f619c476b1095a854bb
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: e9334bb8a594d19aa82167cfa11a9522bbba4bea
+ms.sourcegitcommit: 4a32634690a741535f3f4babfd753f7c227ad6fe
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3428639"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "3958843"
 ---
 # <a name="develop-succession-plan"></a>Utódlási terv kialakítása
 
@@ -38,7 +38,7 @@ Ha a szervezet növekedésével Ön utánpótlás-tervezés mellett dönt, előf
 7. Kattintson a Személy parancsra.
 8. A Személy mezőben adjon meg egy nevet, vagy válasszon a legördülő listából.  Példa: Cassie Hicks.
 9. Kattintson az OK gombra.
-10. Bontsa ki a tanúsítványok gyorslapot, így láthatja vagy szerkesztheti a szakértelem-feltérképezésben szereplő tanúsítványokat.
+10. Bontsa ki a tanúsítványok gyorsfület, így láthatja vagy szerkesztheti a szakértelem-feltérképezésben szereplő tanúsítványokat.
 11. Bontsa ki a Szakértelmek gyorslapot a belefoglalandó Szakértelmek megjelenítéséhez és szerkesztéséhez.
 12. A listában jelölje meg az első sort.  Például: könyvelés
 13. Kattintson az Opcionális jelölőnégyzetre.

@@ -16,15 +16,15 @@ ms.custom: 94063
 ms.assetid: 63e1b7dc-c2c5-41b0-81ed-e3e02d1b39e0
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 522c7f5b29e109f63dab9fd79f1fe9caf2db733e
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 6e4f53401d604ce3c8308ed475a0b6147805cb78
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3202031"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3983573"
 ---
 # <a name="bom-calculations-groups"></a>Anyagjegyzék-számítási csoportok
 
@@ -76,7 +76,7 @@ Ha például kiválasztja a **Nincs AJ** jelölőnégyzetet, a felhasználó egy
 
 Jóváhagyhatja és ellenőrizheti a fogyasztást is. A fogyasztás a mennyiség a megadott útvonalon. Általában a termelési folyamat egy adott műveletének végrehajtásához szükséges idő mennyiségét jelzi. Ellenőrizheti, hogy egy cikk rendelkezik-e önköltségi árral. Ha nem rendelkezik önköltségi árral, akkor nem kerül költség hozzáadásra az Anyajegyzék-számításhoz. 
 
-Jóváhagyhatja és ellenőrizheti az önköltségi ár korát is. Például adjon meg értéknek **60**-at, hogy jelezze, hogy az egység önköltségi árát 60 nap után felül kell vizsgálni. Ha a rendszer eléri ezt a határt, egy figyelmeztetést hoz létre. Például egy cikk önköltségi ára ezen év januárjában lett megadva. Ha most augusztus van, ami több, mint 60 nappal a cikk önköltségi árának megadása után van, a felhasználó egy figyelmeztetést fog kapni az Anyajegyzéki-számítás során. A **Minimálisan engedélyezett árrés** mezőben megadhat százalékos értéket. Ez az érték azt a pontot jelöli, ahol nem lett elérve a minimálisan engedélyezett árrés. Ha egy bizonyos összetevő esetében nem lett elérve a minimálisan engedélyezett árrés, a felhasználó kap egy figyelmeztetést. Ezért ez a mező segít biztosítani, hogy az árát és a további szállítási költségeket a cikk számára ne állítsa túl alacsonyra.
+Jóváhagyhatja és ellenőrizheti az önköltségi ár korát is. Például adjon meg értéknek **60** -at, hogy jelezze, hogy az egység önköltségi árát 60 nap után felül kell vizsgálni. Ha a rendszer eléri ezt a határt, egy figyelmeztetést hoz létre. Például egy cikk önköltségi ára ezen év januárjában lett megadva. Ha most augusztus van, ami több, mint 60 nappal a cikk önköltségi árának megadása után van, a felhasználó egy figyelmeztetést fog kapni az Anyajegyzéki-számítás során. A **Minimálisan engedélyezett árrés** mezőben megadhat százalékos értéket. Ez az érték azt a pontot jelöli, ahol nem lett elérve a minimálisan engedélyezett árrés. Ha egy bizonyos összetevő esetében nem lett elérve a minimálisan engedélyezett árrés, a felhasználó kap egy figyelmeztetést. Ezért ez a mező segít biztosítani, hogy az árát és a további szállítási költségeket a cikk számára ne állítsa túl alacsonyra.
 
 ### <a name="default-setup-in-inventory-and-warehouse-management-parameters"></a>A Készlet- és raktárkezelési paraméterek alapértelmezett beállítása
 

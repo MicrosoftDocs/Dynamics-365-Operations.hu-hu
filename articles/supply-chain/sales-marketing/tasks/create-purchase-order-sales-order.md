@@ -13,15 +13,15 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: omulvad
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3379f5899fedbe8944585388bdb98c4d810c2e26
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 914400d2e8acff0bfa762708ba421812c31be32b
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3204356"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3982089"
 ---
 # <a name="create-a-purchase-order-from-a-sales-order"></a>Beszerzési rendelés létrehozása értékesítési rendelésből
 
@@ -63,7 +63,7 @@ Ez az eljárás bemutatja, hogyan hozhat létre egy beszerzési rendelést egy �
 ## <a name="review-purchase-orders-created-from-sales-orders"></a>Értékesítési rendelésekből létrehozott beszerzési rendelések áttekintése
 1. A **Művelet panelen** kattintson az **Általános** elemre.
 2. Kattintson a **Kapcsolódó rendelések** lehetőségre. A **Kapcsolódó rendelések** lap felsorolja az értékesítési rendelésből létrehozott összes rendelést. Ebben a példában a program két beszerzési rendelés hoz létre két különböző szállítóhoz. 
-3. Kattintson a **Beszerzési rendelés** mezőben található hivatkozásra. Minden beszerzésirendelés-sor társítva van az értékesítésirendelés-sorhoz, amely a beszerzéshez vezetett. Az értékesítési rendeléshez való viszony a **Termék lapon** van feltüntetve a **Sorrészletek** gyorslapon, a **Hivatkozás típusa**, a **Hivatkozási szám** és a **Referenciatétel** mezőkben.  
+3. Kattintson a **Beszerzési rendelés** mezőben található hivatkozásra. Minden beszerzésirendelés-sor társítva van az értékesítésirendelés-sorhoz, amely a beszerzéshez vezetett. Az értékesítési rendeléshez való viszony a **Termék lapon** van feltüntetve a **Sorrészletek** gyorslapon, a **Hivatkozás típusa** , a **Hivatkozási szám** és a **Referenciatétel** mezőkben.  
 4. Bontsa ki vagy csukja össze a **Soradatok** szakaszt.
 5. Kattintson a **Termék** fülre.
     - A **Referenciatétel** biztosítja, hogy az aktuális beszerzés költségei terhelésként jelennek meg a csatolt értékesítési rendelésen.  

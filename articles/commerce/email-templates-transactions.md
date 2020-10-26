@@ -1,7 +1,7 @@
 ---
 title: E-mail-sablonok létrehozása a tranzakciók eseményeihez
 description: Ez a témakör azt mutatja be, hogyan lehet létrehozni, feltölteni és konfigurálni a Microsoft Dynamics 365 Commerce tranzakciós eseményeihez tartozó e-mail-sablonokat.
-author: stuharg
+author: bicyclingfool
 manager: annbe
 ms.date: 06/01/2020
 ms.topic: article
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: a02839088addfa9b405af486f3b795eace1671cc
-ms.sourcegitcommit: 4db8c30c2f26af1896938dd3ece3756577374ecb
+ms.openlocfilehash: ea484bfc1e9b293c53d7293c50630c4955000131
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "3416579"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3983157"
 ---
 # <a name="create-email-templates-for-transactional-events"></a>E-mail-sablonok létrehozása a tranzakciók eseményeihez
 
@@ -57,7 +57,7 @@ E-mail-sablon létrehozásához kövesse az alábbi lépéseket.
 
 ## <a name="create-an-email-message-body-by-using-html"></a>E-mail-üzenet törzsének létrehozása HTML használatával
 
-Az e-mail-üzenet törzse HTML-ben szerkesztett. Bármilyen elrendezést, stílust és védjegyezést használhat, amit a HTML és a szövegközti stíluslapok (CSS) lehetővé tesznek. A képek akkor is használhatók, ha egy nyilvánosan elérhető webes végponton tárolja azokat. Kép hozzáadásához írja be a kép URL-címét az **src**-attribútumba, ami a HTML **&lt;img&gt;**-címkéjébe tartozik.
+Az e-mail-üzenet törzse HTML-ben szerkesztett. Bármilyen elrendezést, stílust és védjegyezést használhat, amit a HTML és a szövegközti stíluslapok (CSS) lehetővé tesznek. A képek akkor is használhatók, ha egy nyilvánosan elérhető webes végponton tárolja azokat. Kép hozzáadásához írja be a kép URL-címét az **src** -attribútumba, ami a HTML **&lt;img&gt;** -címkéjébe tartozik.
 
 > [!NOTE]
 > Az e-mail kliensek olyan elrendezési és stílusbeli korlátozásokat írnak elő, amelyekhez HTML-kiigazítás szükséges, és CSS amit az üzenet törzséhez használhat. Azt ajánljuk, hogy ismerkedjen meg a legjobb megoldásokkal, amelyek a legnépszerűbb levelezőprogramok által támogatott HTML-létrehozási eljárásokat jelentik.
@@ -111,7 +111,7 @@ A következő helyőrzők az értékesítési rendelés egyes termékeinek (sora
 | productid                      | A sor termékazonosítója. |
 | lineproductname                | A termék neve. |
 | lineproductdescription         | A termék leírása. |
-| linequantity                   | A sorhoz rendelt egységek száma, valamint a mértékegység (például **db** vagy **pár**). |
+| linequantity                   | A sorhoz rendelt egységek száma, valamint a mértékegység (például **db** vagy **pár** ). |
 | lineunit                       | A sor mértékegysége. |
 | linequantity_withoutunit       | A sorhoz rendelt egységek száma a mértékegység nélkül. |
 | linequantitypicked             | A **PickOrder** esemény használatakor a kiválasztott egységek száma. Ellenkező esetben **0** (nulla). |

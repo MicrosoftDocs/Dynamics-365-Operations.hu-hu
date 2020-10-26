@@ -13,15 +13,15 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: v-olbara
+ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 373b6bf6219ef76bacef3c67a816aec4c084c405
-ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
+ms.openlocfilehash: f4d095456435a3401daa173d79b80b81176a3c17
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "3383783"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3987118"
 ---
 # <a name="consolidate-shipments-when-they-are-released-to-the-warehouse-by-using-automatic-release-of-sales-orders"></a>Szállítmányok konszolidálása a raktárba történő kiadáskor Értékesítési rendelések automatikus kiadása funkció használatával
 
@@ -33,7 +33,7 @@ A forgatókönyv során értékesítési rendelések készletét hozza létre, �
 
 ## <a name="make-demo-data-available"></a>A bemutató adatok elérhetővé tétele
 
-Az ebben a témakörben szereplő minden egyes forgatókönyv olyan értékekre és rekordokra hivatkozik, amelyek szerepelnek a Microsoft Dynamics 365 Supply Chain Management szolgáltatáshoz biztosított standard bemutatóadatokban. Ha azt szeretné, hogy az itt megadott értékeket használja a feladatok végrehajtásához, akkor győződjön meg róla, hogy olyan környezetben dolgozik, ahol a bemutatóadatokat telepítették, és a jogi személy beállítása legyen **USMF**.
+Az ebben a témakörben szereplő minden egyes forgatókönyv olyan értékekre és rekordokra hivatkozik, amelyek szerepelnek a Microsoft Dynamics 365 Supply Chain Management szolgáltatáshoz biztosított standard bemutatóadatokban. Ha azt szeretné, hogy az itt megadott értékeket használja a feladatok végrehajtásához, akkor győződjön meg róla, hogy olyan környezetben dolgozik, ahol a bemutatóadatokat telepítették, és a jogi személy beállítása legyen **USMF** .
 
 ## <a name="set-up-shipment-consolidation-policies-and-product-filters"></a>Szállítmánykonszolidációs irányelvek és a termékszűrők beállítása
 
@@ -99,12 +99,12 @@ Nyissa meg a **Kinnlevőségek \> Rendelések \> Összes értékesítési rendel
 
 1. Adjon hozzá egy olyan rendelési sort, amelynek beállításai a következők:
 
-    - **Cikkszám:** *M9200* (olyan cikk, amelynél a **4.kód** szűrő beállítása *Gyúlékony*)
+    - **Cikkszám:** *M9200* (olyan cikk, amelynél a **4.kód** szűrő beállítása *Gyúlékony* )
     - **Mennyiség:** *1.00*
 
 1. Adjon hozzá egy második rendelési sort, amelynek beállításai a következők:
 
-    - **Cikkszám:** *M9201* (olyan cikk, amelynél a **4.kód** szűrő beállítása *Robbanásveszélyes*)
+    - **Cikkszám:** *M9201* (olyan cikk, amelynél a **4.kód** szűrő beállítása *Robbanásveszélyes* )
     - **Mennyiség:** *1.00*
     - **Szállítási mód:** *Légitá-légi*
 
@@ -118,12 +118,12 @@ Nyissa meg a **Kinnlevőségek \> Rendelések \> Összes értékesítési rendel
 
 1. Adjon hozzá egy olyan rendelési sort, amelynek beállításai a következők:
 
-    - **Cikkszám:** *M9200* (olyan cikk, amelynél a **4.kód** szűrő beállítása *Gyúlékony*)
+    - **Cikkszám:** *M9200* (olyan cikk, amelynél a **4.kód** szűrő beállítása *Gyúlékony* )
     - **Mennyiség:** *1.00*
 
 1. Adjon hozzá egy második rendelési sort, amelynek beállításai a következők:
 
-    - **Cikkszám:** *M9201* (olyan cikk, amelynél a **4.kód** szűrő beállítása *Robbanásveszélyes*)
+    - **Cikkszám:** *M9201* (olyan cikk, amelynél a **4.kód** szűrő beállítása *Robbanásveszélyes* )
     - **Mennyiség:** *1.00*
     - **Szállítási mód:** *Légitá-légi*
 
@@ -236,7 +236,7 @@ A korábban létrehozott értékesítési rendelések mindegyik készletéhez v�
 
 1. Ugorjon a **Raktárkezelés \> Beállítás \> Hullámok \> Hullámsablonok** pontra.
 1. Állítsa a **Hullámsablontípus** mezőt *Szállítás* értékre.
-1. Keresse meg és válassza ki azt a hullámsablont, amely az adott esethez létrehozott rendeléskészletekben használt raktárhoz van társítva. Ha például a *24*-es számú raktárat használta, akkor válassza a **24 – szállítás – alapértelmezett** hullámsablont. Ha a *61*-es számú raktárat használta, akkor válassza a **61 – szállítás** hullámsablont.
+1. Keresse meg és válassza ki azt a hullámsablont, amely az adott esethez létrehozott rendeléskészletekben használt raktárhoz van társítva. Ha például a *24* -es számú raktárat használta, akkor válassza a **24 – szállítás – alapértelmezett** hullámsablont. Ha a *61* -es számú raktárat használta, akkor válassza a **61 – szállítás** hullámsablont.
 1. A műveleti ablaktáblán válassza a **Szerkesztés** lehetőséget.
 1. Állítsa a **Hullám feldolgozása a raktárba történő kiadáskor** lehetőséget *Nem* értékre.
 
@@ -292,7 +292,7 @@ Ha befejezte a műveletet, a következő műveletek végrehajtását kell látni
 
 A 4. rendeléskészlet értékesítési rendeléseinek kiadásához kövesse az [Alapszintű eljárás raktárba történő kiadáshoz](#release-procedure) lépéseit.
 
-Ha befejezte a munkát, akkor látnia kell, hogy egy meglévő szállítmány frissült (ahol a **Vevői igénylés** mező értéke *1*). Egy új sor lett hozzáadva a szállítmányhoz.
+Ha befejezte a munkát, akkor látnia kell, hogy egy meglévő szállítmány frissült (ahol a **Vevői igénylés** mező értéke *1* ). Egy új sor lett hozzáadva a szállítmányhoz.
 
 ### <a name="release-sales-orders-from-order-set-5"></a>Értékesítési rendelések kiadása az 5. rendeléskészletből
 
@@ -300,7 +300,7 @@ Az 5. rendeléskészlet értékesítési rendeléseinek kiadásához kövesse az
 
 Ha befejezte a műveletet, a következő műveletek végrehajtását kell látnia:
 
-- Egy meglévő szállítmány frissült (ahol a **Vevői igénylés** mező értéke *1*). A rendszer hozzáadta az 5-3. értékesítési rendelés (ahol a **Vevői igénylés** mező értéke *1*) egyik sorát.
+- Egy meglévő szállítmány frissült (ahol a **Vevői igénylés** mező értéke *1* ). A rendszer hozzáadta az 5-3. értékesítési rendelés (ahol a **Vevői igénylés** mező értéke *1* ) egyik sorát.
 - Egy új szállítmány jött létre, ahol az 5-1. és 5-2. értékesítési rendelések sorai egyetlen szállítmányba vannak csoportosítva.
 
 ### <a name="release-sales-orders-from-order-set-6"></a>Értékesítési rendelések kiadása a 6. rendeléskészletből

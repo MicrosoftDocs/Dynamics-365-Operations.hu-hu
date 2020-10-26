@@ -16,15 +16,15 @@ ms.custom: 19251
 ms.assetid: aa9e0dfb-6052-4a2e-9378-89507c02fdf2
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: roxanad
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 76105cad18047d58a835b6c325575c58451a7c1a
-ms.sourcegitcommit: cde71bc7d14ea6cdff2c4e991057d39a6a0473d9
+ms.openlocfilehash: 1fc2b63bfdec1c663027cb4e551589a705c2164e
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "3887064"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3981426"
 ---
 # <a name="forecast-reduction-keys"></a>Előrejelzés csökkentési kulcsok
 
@@ -203,7 +203,7 @@ Az előrejelzési csökkentési kulcs a **Tranzakciók - csökkentési kulcs** �
 3. A **csökkentési kulcs** mezőben írjon be az előre jelzett csökkentési kulcs egyedi azonosítóját. Majd a **Név** mezőben adjon meg egy nevet. 
 4. Adja meg az időszakokat és a csökkentési kulcs százalékát az egyes időszakokhoz:
 
-    - Az **Érvényesség dátuma** mező jelzi az időszakok létrehozása megkezdésének dátumát. Ha az **Érvényesség dátuma** mezőt értéke **Igen**, az időszakok érvényesség dátumán kezdődnek. Ha az érték **Nem**, az időszakok azon a napon kezdődnek, amikor az alaptervezést futtatják.
+    - Az **Érvényesség dátuma** mező jelzi az időszakok létrehozása megkezdésének dátumát. Ha az **Érvényesség dátuma** mezőt értéke **Igen** , az időszakok érvényesség dátumán kezdődnek. Ha az érték **Nem** , az időszakok azon a napon kezdődnek, amikor az alaptervezést futtatják.
     - Határozza meg az előrejelzés-csökkentés bekövetkezésének időszakait.
     - Egy adott időszakhoz adja meg a százalékokat, amelyekkel az előrejelzési követelmények csökkenteni kell. A követelmények csökkentése érdekében pozitív értékeket, a követelmények növelése érdekében negatív értékek adjon meg.
 
@@ -222,7 +222,7 @@ Előre jelzett csökkentési kulcsot a cikk fedezeti csoportjához kell hozzáre
 
 ## <a name="reduce-a-forecast-by-transactions"></a>Előrejelzés csökkentése tranzakciókkal
 
-Ha bejelöli a **Tranzakciók - csökkentési kulcs** vagy **Tranzakciók - dinamikus időszak** az előrejelzési követelmények csökkentésének módszereként, megadhatja a tranzakciók az előrejelzés csökkentéséhez. A **Fedezeti csoportok** oldalon, az **Egyéb** gyorslapon, akkor az **Előrejelzés csökkentése ennyivel:** mezőben válassza ki az **Összes tranzakció**, ha az összes tranzakció csökkentse az előrejelzést, vagy a **Rendelések** lehetőséget, ha csak az értékesítési rendelések csökkentsék az előrejelzést.
+Ha bejelöli a **Tranzakciók - csökkentési kulcs** vagy **Tranzakciók - dinamikus időszak** az előrejelzési követelmények csökkentésének módszereként, megadhatja a tranzakciók az előrejelzés csökkentéséhez. A **Fedezeti csoportok** oldalon, az **Egyéb** gyorslapon, akkor az **Előrejelzés csökkentése ennyivel:** mezőben válassza ki az **Összes tranzakció** , ha az összes tranzakció csökkentse az előrejelzést, vagy a **Rendelések** lehetőséget, ha csak az értékesítési rendelések csökkentsék az előrejelzést.
 
 ## <a name="additional-resources"></a>További erőforrások
 

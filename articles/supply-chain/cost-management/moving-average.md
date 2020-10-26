@@ -16,15 +16,15 @@ ms.custom: 65531
 ms.assetid: dfd10099-8f7f-44b1-917e-df37c2fe8773
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 40cb135c285afb4466f36dbe637368829fec196f
-ms.sourcegitcommit: 097e92f4da7ed9c33f8eb0a7e09969260c399446
+ms.openlocfilehash: fb0472a0d2ac9b552cd16e4d6bf516a876ea4a0e
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "3763609"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3981511"
 ---
 # <a name="moving-average"></a>Mozgó átlag
 
@@ -141,7 +141,7 @@ Ha az új aktuális készlet pozitív a tranzakció után, akkor a tranzakciót 
 
 ## <a name="inventory-value-report"></a>Készletérték-jelentés
 
-Jelen mozgó átlagos példában kinyomtatásra kerül a készletérték-jelentés, így segítve az aktuális mozgó átlag számításokat a termékre vonatkozóan. A készletérték-jelentést ki lehet nyomtatni a tranzakciók időrendi sorrendjében a költségekkel együtt, így segítve az aktuális mozgó átlag számításokat a termékre vonatkozóan. Ezen jelentésben szerepel a termékre vonatkozó mozgó átlagköltség. A **Készletérték-jelentések** párbeszédpanelen dátumintervallum lehetővé teszi, hogy kiválassza a **Tranzakció időpontja** vagy a **Feladási dátum** opciókat a jelentések rendezéséhez. A **Feladási dátum** beállítás a jelentés hagyományos nyomtatási módja. A **Tranzakció időpontja** lehetőség a tranzakció tényleges jelentési dátuma és a termék mozgó átlagköltségének tényleges frissítési ideje. Kinyomtathatja a Készletérték-jelentést a**Tranzakció ideje szerinti rendezés** lehetőség segítségével, ha a mozgó átlagköltséggel kapcsolatos számításokat az idő függvényében szeretné megtekinteni. A következő táblázatban láthatja azon termékre vonatkozó tranzakciókat, amelyhez a jelentés a **Tranzakció ideje szerinti rendezés** beállítás használatával lett kinyomtatva.
+Jelen mozgó átlagos példában kinyomtatásra kerül a készletérték-jelentés, így segítve az aktuális mozgó átlag számításokat a termékre vonatkozóan. A készletérték-jelentést ki lehet nyomtatni a tranzakciók időrendi sorrendjében a költségekkel együtt, így segítve az aktuális mozgó átlag számításokat a termékre vonatkozóan. Ezen jelentésben szerepel a termékre vonatkozó mozgó átlagköltség. A **Készletérték-jelentések** párbeszédpanelen dátumintervallum lehetővé teszi, hogy kiválassza a **Tranzakció időpontja** vagy a **Feladási dátum** opciókat a jelentések rendezéséhez. A **Feladási dátum** beállítás a jelentés hagyományos nyomtatási módja. A **Tranzakció időpontja** lehetőség a tranzakció tényleges jelentési dátuma és a termék mozgó átlagköltségének tényleges frissítési ideje. Kinyomtathatja a Készletérték-jelentést a **Tranzakció ideje szerinti rendezés** lehetőség segítségével, ha a mozgó átlagköltséggel kapcsolatos számításokat az idő függvényében szeretné megtekinteni. A következő táblázatban láthatja azon termékre vonatkozó tranzakciókat, amelyhez a jelentés a **Tranzakció ideje szerinti rendezés** beállítás használatával lett kinyomtatva.
 
 | Tranzakció időpontja | Dátum         | Tranzakció típusa           | Mennyiség | Összeg | Átlagos egységenkénti költség |
 |------------------|--------------|----------------------------|----------|--------|-------------------|

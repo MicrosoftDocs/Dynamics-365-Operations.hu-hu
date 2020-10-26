@@ -13,15 +13,15 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7382cdfa11e89896bba9518f36eb6caab56b98f6
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 3a75f3afcf4761ac6a9575eae9a620a1e9f01c8e
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3213055"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3981038"
 ---
 # <a name="set-up-attribute-based-pricing-for-configurable-products"></a>Állítsa be a konfigurálható termékek attribútum-alapú árképzését
 
@@ -47,7 +47,7 @@ Ez a témakör azt ismerteti, hogyan állítható be az attribútumalapú árké
 3. Válassza a **Hozzáadás** lehetőséget.
 4. A **Név** mezőbe írja be a `Rosewood` kifejezést. Az árkifejezés neve azt segít azonosítani, amit az ár elem jelöl. Ebben a példában ár elemet hozunk létre a Rosewood hangszórókabinet befejezés opciójához.  
 5. Válassza ki a **Szerkesztési feltétel** lehetőséget. Ár feltétel segít garantálni, hogy az eladási árnak csak akkor legyen része az árkifejezés elem, ha jelen van az attribútumok egyedi kombinációja.  
-6. A**ConstraintBody** mezőben adja meg a `CabinetFinish=="Rosewood"` értéket.
+6. A **ConstraintBody** mezőben adja meg a `CabinetFinish=="Rosewood"` értéket.
 7. Válassza ki az **OK** lehetőséget.
 8. Adjon meg egy értéket a **Kifejezés** mezőben. Például írja be a `50` értéket. 
 9. Zárja be a lapot.

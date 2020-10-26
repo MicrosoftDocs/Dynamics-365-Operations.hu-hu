@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a5b1c0e300edc45ae3f4be9eae8afa56e06cccd6
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 41497eacae8bcc0e57df8062f7f318a39c2b4909
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3203089"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3978773"
 ---
 # <a name="add-an-address-to-a-service-order"></a>Cím hozzáadása szolgáltatási rendeléshez    
 
@@ -38,7 +38,7 @@ Létre is hozhat új címeket. Alapértelmezés szerint az új cím átkerül a 
 
 Egy cím hozzáadásához a szervizrendeléshez, tegye a következőket:
 
-1.  Kattintson a következőkre: **Szolgáltatáskezelés** \> **Közös** \> **Szervizrendelések** \> **Szervizrendelések**.
+1.  Kattintson a következőkre: **Szolgáltatáskezelés** \> **Közös** \> **Szervizrendelések** \> **Szervizrendelések** .
 
 2.  Nyissa meg azt a szervizrendelést, amelyhez címet szeretne létrehozni.
 
@@ -59,7 +59,7 @@ Egy cím hozzáadásához a szervizrendeléshez, tegye a következőket:
 
 Egy másodlagos cím hozzáadásához a szervizrendeléshez, tegye a következőket:
 
-1.  Kattintson a következőkre: **Szolgáltatáskezelés** \> **Közös** \> **Szervizrendelések** \> **Szervizrendelések**.
+1.  Kattintson a következőkre: **Szolgáltatáskezelés** \> **Közös** \> **Szervizrendelések** \> **Szervizrendelések** .
 
 2.  Nyissa meg azt a szervizrendelést, amelyhez másodlagos címet szeretne megadni.
 

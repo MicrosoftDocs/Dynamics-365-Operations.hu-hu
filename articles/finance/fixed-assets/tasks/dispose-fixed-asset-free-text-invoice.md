@@ -13,15 +13,15 @@ audience: Application User
 ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: knelson
+ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 09a0c8087f610e7ff19bc2da66036e248ecfd637
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 7014e3a4384e08b0c218585a3c2110243360ec08
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3142777"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3980792"
 ---
 # <a name="dispose-of-a-fixed-asset-using-a-free-text-invoice"></a>Tárgyi eszköz kivezetése szabadszöveges számlával
 
@@ -29,14 +29,14 @@ ms.locfileid: "3142777"
 
 Ez a témakör bemutatja, hogyan értékesíthető egy tárgyi eszköz szabadszöveges számla használatával.
 
-1. A navigációs panelen ugorjon ide: **Modulok > Kinnlévőségek > Számlák > Kizárólag szabadszöveges számlák**.
+1. A navigációs panelen ugorjon ide: **Modulok > Kinnlévőségek > Számlák > Kizárólag szabadszöveges számlák** .
 2. Válassza az **Új** lehetőséget.
 3. A **Vevőszámla** mezőben adjon meg vagy válasszon ki egy értéket.
 4. Ellenőrizze, és szükség szerint módosítsa a **Számla** alapértelmezett dátumát.
-5. Ellenőrizze a hátralévő alapértelmezett fejlécmezőket, például a **Pénznemet**, és ha szükséges, módosítsa.
+5. Ellenőrizze a hátralévő alapértelmezett fejlécmezőket, például a **Pénznemet** , és ha szükséges, módosítsa.
 6. A **Számlasorok** szakaszban ellenőrizze a **Leírás** és a **Fő számla** mezőket.
 7. Ellenőrizze az alapértelmezett **Áfacsoportot** és a **Cikk áfacsoportja** mezőket.
-8. Írja be az **Egységárat** vagy a tárgyi eszköz értékesítésének **összegét**.
+8. Írja be az **Egységárat** vagy a tárgyi eszköz értékesítésének **összegét** .
 9. Jelölje ki a **Sorrészletek** szakaszt.  
 10. A **Tárgyi eszköz** mezőben adjon meg vagy válasszon ki egy értéket.
 11. Válassza a **Feladás** parancsot. 

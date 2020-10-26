@@ -12,15 +12,15 @@ audience: Application User
 ms.reviewer: roschloma
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: mfalkner
+ms.author: roschlom
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 8a0e006be8a72f35d6c6009ca9d67d083b8fac89
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: 102ea4285407a4f4985cc8dd46ebc1ad21fc6f67
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124254"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3977911"
 ---
 # <a name="credit-holds-for-sales-orders"></a>Értékesítési rendelések hitelvisszatartása
 [!include [banner](../includes/banner.md)]
@@ -47,62 +47,62 @@ Amikor egy vevő egy értékesítési tranzakciót kezdeményez, az értékesít
 ### <a name="days-overdue"></a>Késedelmes napok
 
 Nyissa meg a **Késedelmes napok** lapot, ha a zárolási szabály egy vagy több olyan számlára vonatkozik, amely egy adott számú napnál korábban lejárt.
-1. Válassza ki a vevőknek azt a tartományát , amelyrea szabály **Érvényes**.
+1. Válassza ki a vevőknek azt a tartományát , amelyrea szabály **Érvényes** .
    - Válassza ki a **Tábla** lehetőséget, ha a szabály egy adott vevőre vonatkozik.
    - Válassza ki a **Csoport** lehetőséget, ha a vevő csoport szintjén alkalmazza a szabályt. 
    - Válassza **Összes** lehetőséget, ha a szabály összes vevőre vonatkozik.
-2. A tartomány megadásakor meg kell adnia a tartományban használandó **Számlát/csoportot**.
+2. A tartomány megadásakor meg kell adnia a tartományban használandó **Számlát/csoportot** .
    - A **Tábla** tartomány esetében a keresés a kiválasztott vevők listáját fogja visszaadni. 
-   - Válasszon egy **Csoportot**, ha a szabály egy vevői hitelcsoportra vonatkozik.
+   - Válasszon egy **Csoportot** , ha a szabály egy vevői hitelcsoportra vonatkozik.
    - Válassza **Összes** lehetőséget, ha a szabály összes vevőre vonatkozik. 
 3. Válassza ki a **Kockázati csoport** lehetőséget, a hitelkezelés felfüggesztéséhez olyan ügyfelekhez akik egy közös tényezőhalmaz alapján csoportosíthatók, például Dun- és Bradstreet-értékelésük alapján vagy az üzletben eltöltött évek alapján, vagy azon idő alapján, amióta az Ön ügyfelei stb.  
 4. Válassza ki a szabálytípust, amit beállít. A **Zárolás** beállítás egy rendelést zároló szabályt hoz létre. A **Kizárás** beállítás egy olyan szabályt fog létrehozni, amely kizár egy másik szabályt egy rendelés zárolásából. 
-5. Válasszon **Értéktípust**. Az alapértelmezett bejegyzés egy rögzített számú nap. Ha kizárást hoz létre, akkor egy rögzített számú nap vagy egy összeg adható meg. 
-6. Adja meg a **Késedelmes** napok számát, amely a kiválasztott zárolási szabályhoz engedélyezve van, mielőtt egy rendelés hitelkezelési zárolásra kerül felülvizsgálat céljából. A késedelmes napok száma további türelmi napokat jelent, amelyek hozzá lesznek adva a számla fizetési határidején túli napokhoz, mielőtt azt késedelmesnek tekintené a rendszer. Ha egy kizáráshoz összegként megadott egy **Értéktípust**, akkor adjon meg egy összeget és egy pénznemet ahhoz az összeghez.
+5. Válasszon **Értéktípust** . Az alapértelmezett bejegyzés egy rögzített számú nap. Ha kizárást hoz létre, akkor egy rögzített számú nap vagy egy összeg adható meg. 
+6. Adja meg a **Késedelmes** napok számát, amely a kiválasztott zárolási szabályhoz engedélyezve van, mielőtt egy rendelés hitelkezelési zárolásra kerül felülvizsgálat céljából. A késedelmes napok száma további türelmi napokat jelent, amelyek hozzá lesznek adva a számla fizetési határidején túli napokhoz, mielőtt azt késedelmesnek tekintené a rendszer. Ha egy kizáráshoz összegként megadott egy **Értéktípust** , akkor adjon meg egy összeget és egy pénznemet ahhoz az összeghez.
 
 ### <a name="accounts-status"></a>Számlák állapota
 
 Akkor nyissa meg a **Számla állapota** lapot, ha a zárolási szabály egy kiválasztott számlaállapotú vevőre vonatkozik.
-1. Válassza ki a szabálytípust, amit beállít.  **Zárolás**: egy rendelést zároló szabályt hoz létre. **Kizárás**: egy olyan szabályt fog létrehozni, amely kizár egy másik szabályt egy rendelés zárolásából. 
-2. Válassza ki azt a **Számlaállapotot**, amely miatt a szabály várakoztat egy értékesítési rendelést vagy kizárja azt.
+1. Válassza ki a szabálytípust, amit beállít.  **Zárolás** : egy rendelést zároló szabályt hoz létre. **Kizárás** : egy olyan szabályt fog létrehozni, amely kizár egy másik szabályt egy rendelés zárolásából. 
+2. Válassza ki azt a **Számlaállapotot** , amely miatt a szabály várakoztat egy értékesítési rendelést vagy kizárja azt.
 
 ### <a name="terms-of-payment"></a>Fizetési feltételek
 
 Válassza ki a **Fizetési feltételek** lehetőséget, ha a kiválasztott fizetési feltétel esetében a zárolási szabály érvényes.
-1. Válassza ki a szabálytípust, amit beállít.  **Zárolás**: egy rendelést zároló szabályt hoz létre. **Kizárás**: egy olyan szabályt fog létrehozni, amely kizár egy másik szabályt egy rendelés zárolásából. 
-2. Válassza ki azt a **Fizetési feltételt**, amely miatt a szabály várakoztat egy értékesítési rendelést vagy kizárja azt.
+1. Válassza ki a szabálytípust, amit beállít.  **Zárolás** : egy rendelést zároló szabályt hoz létre. **Kizárás** : egy olyan szabályt fog létrehozni, amely kizár egy másik szabályt egy rendelés zárolásából. 
+2. Válassza ki azt a **Fizetési feltételt** , amely miatt a szabály várakoztat egy értékesítési rendelést vagy kizárja azt.
 
 ### <a name="credit-limit-expired"></a>Lejárt hitelkeret
 
 Nyissa meg a **Hitelkeret lejárt** lapot, ha a zárolási szabály olyan vevőkre vonatkozik, amelyeknél lejárt a hitelkeret.
-1. Válassza ki a vevőknek azt a tartományát , amelyrea szabály **Érvényes**.
+1. Válassza ki a vevőknek azt a tartományát , amelyrea szabály **Érvényes** .
    - Válassza ki a **Tábla** lehetőséget, ha a szabály egy adott vevőre vonatkozik.
    - Válassza ki a **Csoport** lehetőséget, ha a Vevőcsoport szintjén alkalmazza a szabályt. 
    - Válassza **Összes** lehetőséget, ha a szabály összes vevőre vonatkozik.
-2. A tartomány megadása után meg kell adnia a tartományban használandó **Számlát/csoportot**.
+2. A tartomány megadása után meg kell adnia a tartományban használandó **Számlát/csoportot** .
    - A **Tábla** tartomány esetében a keresés a kiválasztható vevők listáját fogja visszaadni. 
-   - Válasszon egy **Csoportot**, ha a szabály egy vevői hitelkezelési csoportra vonatkozik.
+   - Válasszon egy **Csoportot** , ha a szabály egy vevői hitelkezelési csoportra vonatkozik.
    - Válassza **Összes** lehetőséget, ha a szabály összes vevőre vonatkozik. 
 3. A **Kockázati csoport** kiválasztásával tovább korlátozhatja a hitelkezelés céljából várakoztatott vevők listáját. 
 4. Válassza ki a szabálytípust, amit beállít. 
-   - Válassz a **Zárolás**:lehetőséget egy rendelést zároló szabály létrehozásához. 
+   - Válassz a **Zárolás** :lehetőséget egy rendelést zároló szabály létrehozásához. 
    - Válassza a **Kizárás** lehetőséget egy olyan szabály létrehozásához, amely kizár egy másik szabályt egy rendelés zárolásából. 
 5. Adja meg **Hitelkeret túllépve ennyi napja** értéket a kijelölt zárolási szabályhoz, annak meghatározásához, hogy mennyi idő teljen el, mielőtt egy megrendelés hitelkezelés céljából várakoztatva lesz. A késésben lévő napok száma olyan további türelmi napokat jelent, amelyek hozzá lesznek adva hitelkeret lejárta utáni napokhoz.
 
 ### <a name="overdue-amount"></a>Késedelmes összeg
 
 Nyissa meg a **Lejárt összeg** lapot, ha a zárolást szabály a lejárt összegekkel rendelkező vonatkozik.
-1. Válassza ki a vevőknek azt a tartományát , amelyrea szabály **Érvényes**.
+1. Válassza ki a vevőknek azt a tartományát , amelyrea szabály **Érvényes** .
    - Válassza ki a **Tábla** lehetőséget, ha a szabály egy adott vevőre vonatkozik.
    - Válassza ki a **Csoport** lehetőséget, ha a Vevőcsoport szintjén alkalmazza a szabályt. 
    - Válassza **Összes** lehetőséget, ha a szabály összes vevőre vonatkozik.
-2. A tartomány megadása után meg kell adnia a tartományban használandó **Számlát/csoportot**.
+2. A tartomány megadása után meg kell adnia a tartományban használandó **Számlát/csoportot** .
    - A **Tábla** tartomány esetében a keresés a egy ügyfélkeresését fog visszaadni. 
-   - Válasszon egy **Csoportot**, ha a szabály egy vevői hitelkezelési csoportra vonatkozik.
+   - Válasszon egy **Csoportot** , ha a szabály egy vevői hitelkezelési csoportra vonatkozik.
    - Válassza **Összes** lehetőséget, ha a szabály összes vevőre vonatkozik. 
 3. Válassza ki a **Kockázati csoport** lehetőséget, ha tovább szeretné korlátozni a hitelkezelés céljából várakoztatásra kerülő vevők listáját. 
 4. Válassza ki a szabálytípust, amit beállít. 
-   - Válassz a **Zárolás**:lehetőséget egy rendelést zároló szabály létrehozásához. 
+   - Válassz a **Zárolás** :lehetőséget egy rendelést zároló szabály létrehozásához. 
    - Válassza a **Kizárás** lehetőséget egy olyan szabály létrehozásához, amely kizár egy másik szabályt egy rendelés zárolásából. 
 5. Adja meg a **Késedelmes összeg** értéket a kijelölt zárolási szabályhoz, annak meghatározásához, hogy mennyi idő teljen el, mielőtt egy megrendelés hitelkezelési várakoztatásra kerül ellenőrzéshez. 
 6. Válassza ki az **Érték típusát** amely meghatározza, hogy milyen típusú értékkel lesz használva, illetve annak tesztelését, hogy mennyi lett felhasználva a hitelkorlátból. A zárolási szabályoknak százalékértéket kell megadni, de a kizáráshoz megadható rögzített összeg vagy százalékos érték. A Küszöb a hitelkeretre vonatkozik.
@@ -112,17 +112,17 @@ Nyissa meg a **Lejárt összeg** lapot, ha a zárolást szabály a lejárt össz
 ### <a name="sales-order"></a>Értékesítési rendelés 
 
 Válassza ki az **Értékesítési rendelés** lehetőséget, ha a zárolási szabály az értékesítési rendelés értékére vonatkozik.
-1. Válassza ki a vevőknek azt a tartományát , amelyrea szabály **Érvényes**.
+1. Válassza ki a vevőknek azt a tartományát , amelyrea szabály **Érvényes** .
    - Válassza ki a **Tábla** lehetőséget, ha a szabály egy adott vevőre vonatkozik.
    - Válassza ki a **Csoport** lehetőséget, ha a Vevőcsoport szintjén alkalmazza a szabályt. 
    - Válassza **Összes** lehetőséget, ha a szabály összes vevőre vonatkozik.
-2. A tartomány megadása után meg kell adnia a tartományban használandó **Számlát/csoportot**.
+2. A tartomány megadása után meg kell adnia a tartományban használandó **Számlát/csoportot** .
    - A **Tábla** tartomány esetében a keresés a egy ügyfélkeresését fog visszaadni. 
-   - Válasszon egy **Csoportot**, ha a szabály egy vevői hitelkezelési csoportra vonatkozik.
+   - Válasszon egy **Csoportot** , ha a szabály egy vevői hitelkezelési csoportra vonatkozik.
    - Válassza **Összes** lehetőséget, ha a szabály összes vevőre vonatkozik. 
 3. Válassza ki a **Kockázati csoport** lehetőséget, ha tovább szeretné korlátozni a hitelkezelés céljából várakoztatásra kerülő vevők listáját. 
 4. Válassza ki a szabálytípust, amit beállít.  
-   - Válassz a **Zárolás**:lehetőséget egy rendelést zároló szabály létrehozásához. 
+   - Válassz a **Zárolás** :lehetőséget egy rendelést zároló szabály létrehozásához. 
    - Válassza a **Kizárás** lehetőséget egy olyan szabály létrehozásához, amely kizár egy másik szabályt egy rendelés zárolásából. 
 5. Adja meg az **Értékesítési rendelés összege** értéket a kijelölt zárolási szabályhoz, annak meghatározásához, hogy mennyi idő teljen el, mielőtt egy megrendelés hitelkezelési várakoztatásra kerül. 
 
@@ -130,18 +130,18 @@ Az értékesítési rendelés szabálya egy további beállítást tartalmaz, am
 
 ### <a name="credit-limit-used"></a>Hitelkeret felhasználva
 
-Jelölje be a **Felhasznált hitelkeret**, ha a vevő hitelkeret-összegére vonatkozik a zárolási szabály.
-1. Válassza ki a vevőknek azt a tartományát , amelyrea szabály **Érvényes**.
+Jelölje be a **Felhasznált hitelkeret** , ha a vevő hitelkeret-összegére vonatkozik a zárolási szabály.
+1. Válassza ki a vevőknek azt a tartományát , amelyrea szabály **Érvényes** .
    - Válassza ki a **Tábla** lehetőséget, ha a szabály egy adott vevőre vonatkozik.
    - Válassza ki a **Csoport** lehetőséget, ha a Vevőcsoport szintjén alkalmazza a szabályt. 
    - Válassza **Összes** lehetőséget, ha a szabály összes vevőre vonatkozik.
-2. A tartomány megadása után meg kell adnia a tartományban használandó **Számlát/csoportot**.
+2. A tartomány megadása után meg kell adnia a tartományban használandó **Számlát/csoportot** .
    - A **Tábla** tartomány esetében a keresés a egy ügyfélkeresését fog visszaadni. 
-   - Válasszon egy **Csoportot**, ha a szabály egy vevői hitelkezelési csoportra vonatkozik.
+   - Válasszon egy **Csoportot** , ha a szabály egy vevői hitelkezelési csoportra vonatkozik.
    - Válassza **Összes** lehetőséget, ha a szabály összes vevőre vonatkozik. 
 3. Válassza ki a **Kockázati csoport** lehetőséget, ha tovább szeretné korlátozni a hitelkezelés céljából várakoztatásra kerülő vevők listáját. 
 4. Válassza ki a szabálytípust, amit beállít.
-   - Válassz a **Zárolás**:lehetőséget egy rendelést zároló szabály létrehozásához. 
+   - Válassz a **Zárolás** :lehetőséget egy rendelést zároló szabály létrehozásához. 
    - Válassza a **Kizárás** lehetőséget egy olyan szabály létrehozásához, amely kizár egy másik szabályt egy rendelés zárolásából. 
 5. Válassza ki a **Fennmaradó küszöb** lehetőséget, amely meghatározza az értékesítési rendelést zároló hitelkeret százalékos értéket. Ha egy rendelés értéke a megadott százalékérték fölé emeli hitelkorlát összegét, akkor a rendelést a várakoztatva lesz. 
 
@@ -162,7 +162,7 @@ A hitelkeret-ellenőrzési szabályok végrehajtását kényszerítheti, ha a ki
 
 A fizetési feltételek rangsorát a **Hitelkezelés > Beállítások > Hitelkeret beállítása >Kiegyenlítési engedmények rangsorolása** lapon állíthatja be.
 
-1. Válassza ki a rangsorolni kívánt **Készpénzfizetési** engedményt. Megjelenik a kiegyenlítési engedmény **Leírása**.
+1. Válassza ki a rangsorolni kívánt **Készpénzfizetési** engedményt. Megjelenik a kiegyenlítési engedmény **Leírása** .
 2. Válassza ki a **Helyezés** értéket. Az értékek relatívak egymáshoz képest, így 1, 2, 3 vagy 10, 20, 30 értékeket is használhat. A legtöbb kiegyenlítési engedményhez ugyanazt az értéket használhatja, ífy csak egy vagy két kiegyenlítési engedmény indítja el a hitelellenőrzést.
 
 ## <a name="sequence-the-application-of-rules"></a>Szabályok alkalmazásának sorrendje
@@ -189,7 +189,7 @@ A rendelések kizárható a hitelkezelésből, még akkor is, ha léteznek szab�
 
 ## <a name="processing-orders-on-hold-using-the-credit-management-hold-list"></a>A várakoztatott rendelések feldolgozása a hitelkezelés várakozási lista használatával
 
-A Hitelkezelés várakozási lista lehetővé teszi a hitelezési vezetők számára minden olyan értékesítési rendelést megtekintését, amely a várakoztatott állapotban van, és lehetővé teszi számukra a várakoztatás feloldását, amikor a hitelproblémák megoldásra kerültek. A **Hitelkezelés várkoztatási lista** lap megjeleníti az összes várakoztatott értékesítési rendelést. Megtekintheti a várakoztatási listát az **Összes hitelvárakoztatás** oldalon (**Hitelkezelés > Hitelkezelési várakoztatási listák > Összes hitelvárakoztatás**).
+A Hitelkezelés várakozási lista lehetővé teszi a hitelezési vezetők számára minden olyan értékesítési rendelést megtekintését, amely a várakoztatott állapotban van, és lehetővé teszi számukra a várakoztatás feloldását, amikor a hitelproblémák megoldásra kerültek. A **Hitelkezelés várkoztatási lista** lap megjeleníti az összes várakoztatott értékesítési rendelést. Megtekintheti a várakoztatási listát az **Összes hitelvárakoztatás** oldalon ( **Hitelkezelés > Hitelkezelési várakoztatási listák > Összes hitelvárakoztatás** ).
 Az összes jogi személy értékesítési rendelései ugyanarra a hitelkezelés várakoztatási listára kerülnek, amely a figyelmet igénylő tranzakciók központosított megjelenítését biztosítja. A felhasználók csak azon jogi személyek adatait látják, amelyekhez rendelkeznek hozzáféréssel.
 
 Egy értékesítési rendelés a következő okok miatt helyezhető el a várakoztatási listán:
@@ -203,7 +203,7 @@ Egy értékesítési rendelés a következő okok miatt helyezhető el a várako
 8. A fizetési feltételek eltérnek a vevő alapértelmezett fizetési feltételeitől.
 9. A kiegyenlítési engedmények eltérnek a vevő alapértelmezett kiegyenlítési engedményeitől.
 
-A zárolási ok megjelenik minden értékesítési rendeléshez a várakoztatási listán. Ha egynél több oka van a várakoztatásnak, akkor az ok értéke **Több**. A Műveleti panel **Zárolási okok** menüjében megtekintheti az értékesítési rendelés várakoztatásának okát. A **Várakoztatási okokat** egy adatterületen is megjelenítheti.
+A zárolási ok megjelenik minden értékesítési rendeléshez a várakoztatási listán. Ha egynél több oka van a várakoztatásnak, akkor az ok értéke **Több** . A Műveleti panel **Zárolási okok** menüjében megtekintheti az értékesítési rendelés várakoztatásának okát. A **Várakoztatási okokat** egy adatterületen is megjelenítheti.
 
 ### <a name="releasing-orders-from-the-hold-list-for-processing"></a>Rendelések felszabadítása a várakoztatási listáról feldolgozás céljából
 
@@ -231,8 +231,8 @@ Az **Értékelés feloldáshoz** menü segítségével ellenőrizheti az érték
 4. Amikor az OK gombra kattint, a rendszer a háttérben futtatja a folyamatot, és folytathatja a munkát más feladatokon. Ha a kötegelt feldolgozást választja, mielőtt az OK gombra kattint, a folyamat a kötegben fog futni, amikor az OK gombra kattint. Hosszabb időt vehet igénybe a listán várakozó rendelések feldolgozására, így a Frissítés használatával frissítheti a rendelések állapotát. 
 5.  Ha egy rendelés esetében a zárolás oka már nem alkalmazható, akkor a zárolási ok nem érvényesnek lesz tekintve, és ezt követően már nem látható a pipa az ok mellett, amikor megtekinti a zárolási okokat.
 6.  Ha a zárolási okok mindegyike törölve lett, akkor egy új, **Feloldásra kész** ok lesz hozzáadva zárolási okok listájához. Az értékesítési rendelést automatikusan fel lehet szabadítani.
-7.  Ha az **Automatikus felszabadítás** paraméter **a Hitel és beszedések > Beállítás >Hitel és beszedések paraméterei > Hitel > Automatikus felszabadítás** értéke **Feladással**, akkor a rendszer arra kéri, hogy adja fel ez elemet azzal a feladási móddal, amely akkor lett használva, amikor a dokumentum zárolva lett.
-8.  Ha az **Automatikus felszabadítás** paraméter **a Hitel és beszedések > Beállítás >Hitel és beszedések paraméterei > Hitel > Automatikus felszabadítás** értéke **Feladás nélkül**, akkor manuálisan kell feladnia a rendelést.
+7.  Ha az **Automatikus felszabadítás** paraméter **a Hitel és beszedések > Beállítás >Hitel és beszedések paraméterei > Hitel > Automatikus felszabadítás** értéke **Feladással** , akkor a rendszer arra kéri, hogy adja fel ez elemet azzal a feladási móddal, amely akkor lett használva, amikor a dokumentum zárolva lett.
+8.  Ha az **Automatikus felszabadítás** paraméter **a Hitel és beszedések > Beállítás >Hitel és beszedések paraméterei > Hitel > Automatikus felszabadítás** értéke **Feladás nélkül** , akkor manuálisan kell feladnia a rendelést.
 
 ### <a name="credit-management-approval-workflow"></a>Hitelkezelés jóváhagyási munkafolyamata
 

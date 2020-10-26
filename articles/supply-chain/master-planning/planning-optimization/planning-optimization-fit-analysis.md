@@ -3,7 +3,7 @@ title: A tervezésoptimalizálása illeszkedési elemzése
 description: Ez a témakör azt mutatja be, hogyan lehet ellenőrizni az aktuális beállításokat és adatokat a Tervezésoptimalizálás funkció szolgáltatásaival szemben.
 author: ChristianRytt
 manager: tfehr
-ms.date: 09/23/2020
+ms.date: 10/09/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,18 +19,22 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 73549097eed6d9418d5ff73e108d1dbae7ed66b3
-ms.sourcegitcommit: cde71bc7d14ea6cdff2c4e991057d39a6a0473d9
+ms.openlocfilehash: 769bd84b4ba23c9de4638df9186381936221414a
+ms.sourcegitcommit: ae04c7cb48f7ecafe71bbe77a0f97715e6290991
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "3887138"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "3973452"
 ---
-# <a name="planning-optimization-fit-analysis"></a>A tervezésoptimalizálása illeszkedési elemzése
+# <a name="planning-optimization-fit-analysis"></a>Tervezési optimalizálás igazítási elemzése
 
 [!include [banner](../../includes/banner.md)]
 
-Ha szeretné megtekinteni, hogy az aktuális beállítások és adatok kompatibilisek-e a tervezésoptimalizálás funkcióval, nyissa meg az **Alaptervezés** \> **Beállítás** \> **Tervezésoptimalizálás illeszkedési elemzése** lehetőséget, majd az **Elemzés futtatása** parancsot. Ha az elemzés bármilyen következetlenséget talál, akkor ugyanazon a lapon szerepelnek. (Az elemzés néhány percet is igénybe vehet.)
+Az áttelepítési folyamat részeként elemezze a tervezési optimalizálás illeszkedési elemzésének eredményét. Ne felejtse el, hogy a tervezési optimalizálás hatóköre nem egyezik meg a beépített alaptervezés aktuális funkcióival. Javasoljuk, hogy folytasson együttműködést a partnerével, és olvassa el a dokumentációt az áttelepítés előkészítése érdekében. 
+
+A tervezési optimalizálás illeszkedési elemzése segít azonosítani azokat a pontokat, ahol az eredményben eltérés lehet a beépített alaptervezési motor és a tervezési optimalizálás esetén. Ez az elemzés a jelenlegi beállítások és adatok alapján történik. 
+
+Ha meg szeretné tekinteni a tervezési optimalizálás illeszkedési elemzésének eredményét, akkor lépjen az **Alaptervezés** \> **Beállítás** \> **Tervezési optimalizálás illeszkedési elemzése** menüpontra, majd válassza az **Elemzés futtatása** parancsot. Ha az elemzés bármilyen következetlenséget talál, akkor ugyanazon a lapon szerepelnek. (Az elemzés néhány percet is igénybe vehet.)
 
 > [!NOTE]
 > Ha találhatók következetlenségek, akkor a tervezésoptimalizálása továbbra is használható. Az illeszkedési elemzés eredményei csak azokat a helyeket jelenítik meg, ahol a tervezési szolgáltatás nem tiszteli az aktuális beállításokat. Más szóval azokat a helyeket jelenítik meg, ahol bizonyos folyamatok figyelmen kívül lehetnek hagyva, vagy esetleg nem támogatottak.
@@ -49,7 +53,7 @@ Ha szeretné megtekinteni, hogy az aktuális beállítások és adatok kompatibi
 
 ## <a name="overview-of-possible-results-from-the-fit-analysis"></a>Az illeszkedési elemzés lehetséges eredményeinek áttekintése
 
-A következő táblázat bemutatja, hogy milyen eredmények jelenhetnek meg az illeszkedési elemzés után. A szám jeleket (_\#_) a rendszer egy számmal helyettesíti, amely a felsorolt problémával rendelkező rekordok számát jelzi.
+A következő táblázat bemutatja, hogy milyen eredmények jelenhetnek meg az illeszkedési elemzés után. A szám jeleket ( _\#_ ) a rendszer egy számmal helyettesíti, amely a felsorolt problémával rendelkező rekordok számát jelzi.
 
 | Funkció | Felsorolt probléma | Magyarázat | Várható elérhetőség |
 | --- | --- | --- | --- |
@@ -63,7 +67,7 @@ A következő táblázat bemutatja, hogy milyen eredmények jelenhetnek meg az i
 | Megerősítés | Alaptervek, amelyekhez be van állítva az automatikus megerősítés: _\#_ | A 10.0.7 és a későbbi verziókban az automatikus megerősítést az Alaptervezés befejezését követően külön megerősítő kötegelt feladatként támogatják (feltéve hogy az _Automatikus megerősítés a tervezési optimalizációhoz_ funkció engedélyezve van a [funkciókezelés](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) pontban). Ne felejtse el, hogy az Automatikus megerősítés a tervezési optimalizációhoz a megrendelés dátumától (kezdő dátum) függ, nem a követelmény dátumától (záró dátum). Ez a viselkedés biztosítja, hogy a tervezett rendelések megerősítése időben történjen, anélkül, hogy az átfutási időt bele kellene foglalni a megerősítési időkorlátba. | Támogatott |
 | FitAnalysisPlanningItems | Tervezési cikkek: _\#_ | Ez a funkció függőben van. Jelenleg a tervezési cikkek ugyanúgy kezelhetők, mint a normál cikkek, amikor a tervezés optimalizálása engedélyezve van. | Október 2021. |
 | Előrejelzés | A "vállalatközi rendelések szerepeltetése" beállítású fedezeti csoportok engedélyezve vannak: _\#_ | Ez a funkció függőben van. Jelenleg a tervezés optimalizálása engedélyezése esetén az alaptervezésbe nem szerepel az alacsonyabb szintű tervezett igény, a beállítástól függetlenül. Ne feledje, hogy a kiadott/megerősített rendelések továbbra is a szokásos vállalatközi funkciókkal együtt működnek, és a legtöbb esetet lefedik. | Október 2020. |
-| Előrejelzés | Azok a fedezeti csoportok, amelyeknél az „Előrejelzés csökkentésének mennyisége” beállítás értéke eltér a „Megrendelések” értékétől: _\#_ | Alapértelmezés szerint a tervezés optimalizálása a beállítástól függetlenül „Előrejelzések csökkentésének mennyisége” beállítást használja a megrendelésekhez. | Október 2020. |
+| Előrejelzés | Azok a fedezeti csoportok, amelyeknél az „Előrejelzés csökkentésének mennyisége” beállítás értéke eltér a „Megrendelések” értékétől: _\#_ | Alapértelmezés szerint a tervezés optimalizálása a beállítástól függetlenül „Előrejelzések csökkentésének mennyisége” beállítást használja a megrendelésekhez. | 2020. november |
 | Előrejelzés | Almodellekkel rendelkező előrejelzési modellek: _\#_ | Ez a funkció függőben van. Jelenleg az almodelleket használó előrejelzések nem támogatottak, ha a tervezés optimalizálása engedélyezve van. A program figyelmen kívül hagyja ezeket, a beállítástól függetlenül. | április 2021. |
 | Előrejelzés | Olyan alaptervek, amelyekhez engedélyezve van az „ellátási előrejelzést tartalmaz”: _\#_ | Ez a funkció függőben van. Jelenleg az ellátási előrejelzések nem támogatottak, ha a tervezés optimalizálása engedélyezve van. A program figyelmen kívül hagyja ezeket, a beállítástól függetlenül. | Október 2021. |
 | Befagyasztási időkorlát | Lefedettségi csoportok, amelyekhez van beállítva befagyasztási időkorlát: _\#_ | A befagyasztási időkorlát nem gyakran használatos, és jelenleg nem szerepel a tervezés optimalizálásával kapcsolatos tervekben. Jelenleg a rendszer figyelmen kívül hagyja a befagyasztási időkorlát beállítását, ha a tervezés optimalizálása engedélyezve van a beállítástól függetlenül. | N.a. |
@@ -72,7 +76,7 @@ A következő táblázat bemutatja, hogy milyen eredmények jelenhetnek meg az i
 | Vállalatok közötti | Tervezett alsóbb rétegbeli igényt tartalmazó alaptervek: _\#_ | Ez a funkció függőben van. Jelenleg a tervezés optimalizálása engedélyezése esetén az alaptervezésbe nem szerepel az alacsonyabb szintű tervezett igény, a beállítástól függetlenül. Ne feledje, hogy a kiadott/megerősített rendelések továbbra is a szokásos vállalatközi funkciókkal együtt működnek, és a legtöbb esetet lefedik. | Október 2020. |
 | Kanban | Tervezett rendelési típusú kanbannal rendelkező cikklefedettségi rekordok: _\#_ | Ez a funkció függőben van. Jelenleg a tervezés optimalizálása során a program figyelmen kívül hagyja a kanban beállítású cikkfedezeti beállítást. A kanban tervezett rendelési típusa figyelmeztetést hoz létre az Alaptervezés során, és a rendszer a kapcsolódó igény fedezésére tervezett beszerzési rendeléseket hoz létre. | Október 2021. |
 | Kanban | Kanban alapértelmezett rendelési típussal rendelkező cikkek: _\#_ | Jelenleg a tervezés optimalizálása során a program figyelmen kívül hagyja a kanban beállítású alapértelmezett megrendeléstípust. A kanban alapértelmezett rendelési típus figyelmeztetést hoz létre az Alaptervezés során, és a rendszer a kapcsolódó igény fedezésére tervezett beszerzési rendeléseket hoz létre. | Október 2021. |
-| Termékéletciklus állapota   | A termékéletciklus állapotai nem aktívak a tervezéshez: _\#_ | Ez a funkció függőben van. Jelenleg a termék életciklusállapota figyelmen kívül van hagyva bekapcsolat Tervezési optimalizálás esetén. A tervszintű termékszűrő módosításával elkerülhető olyan termékek belefoglalása, amelyeknél a termék életciklus-állapota le van tiltva a tervezéshez. | Október 2020. |
+| Termékéletciklus állapota   | A termékéletciklus állapotai nem aktívak a tervezéshez: _\#_ | Ez a funkció függőben van. Jelenleg a termék életciklusállapota figyelmen kívül van hagyva bekapcsolat Tervezési optimalizálás esetén. A tervszintű termékszűrő módosításával elkerülhető olyan termékek belefoglalása, amelyeknél a termék életciklus-állapota le van tiltva a tervezéshez. | 2020. november |
 | Termelés | Darabjegyzéksorok kerekítéssel vagy többszörös beállítással: _\#_ | Ez a funkció függőben van. Jelenleg a kerekítés és a többszörös beállítás figyelmen kívül marad a darabjegyzéksorokban, amikor a tervezés optimalizálása engedélyezve van a beállítástól függetlenül. | április 2021. |
 | Termelés | Darabjegyzék-/képletsorok képletmértékkel: _\#_ | Ez a funkció függőben van. Jelenleg a képletmérték figyelmen kívül marad a darabjegyzék- és képletsorokban, amikor a tervezés optimalizálása engedélyezve van a beállítástól függetlenül. | Október 2021. |
 | Termelés | Darabjegyzék-/képletsorok cikkhelyettesítéssel (tervcsoportok): _\#_ | Ez a funkció függőben van. Jelenleg a cikkhelyettesítés (tervcsoportok) figyelmen kívül marad a darabjegyzék- és képletsorokban, amikor a tervezés optimalizálása engedélyezve van a beállítástól függetlenül. | Október 2021. |

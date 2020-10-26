@@ -16,15 +16,15 @@ ms.custom: 19832
 ms.assetid: 0e83c7ea-feba-4ed6-8717-8b48a3b8804a
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: conradv
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a9d6893531ec4386ea7c6101aa9368019e2a0946
-ms.sourcegitcommit: 175f9394021322c685c5b37317c2f649c81a731a
+ms.openlocfilehash: d6f0c63459bb61bef9251a677f7fc050120e53fe
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "3826166"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3979194"
 ---
 # <a name="production-process-overview"></a>Termelési folyamat áttekintése
 
@@ -34,7 +34,7 @@ Ez a témakör a gyártási folyamatokról nyújt áttekintést. Bemutatja a ter
 
 A termékek legyártása, más néven a termelési életciklus specifikus lépésekben történik, amelyeket a termék előállításához végre kell hajtani. Az életciklus kezdete a termelési rendelés, kötegrendelés vagy a kanban. A vége egy legyártott, kész cikk, amelyik átadható a vevőnek vagy egy másik gyártási fázisnak. Az életciklus minden lépése másféle információkat igényel a feladat végrehajtásához. Amikor az egyes lépések végrehajtása megtörténik, a termelési rendelés vagy kanban műveletben változás látható a gyártási állapotnál. Különböző termékekhez különböző gyártási folyamatok szükségesek.  
 
-A **Gyártásvezérlés** modul egyéb modulokkal van összekötve, például **Termékinformációk kezelése**, **Készletkezelés**, **Főkönyv**, **Raktárkezelés**, **Projekt-könyvelés** és **Szervezeti adminisztráció**. Ez az integráció teremti meg annak az információáramlásnak a feltételeit, amely egy elkészült termék legyártásához szükséges.  
+A **Gyártásvezérlés** modul egyéb modulokkal van összekötve, például **Termékinformációk kezelése** , **Készletkezelés** , **Főkönyv** , **Raktárkezelés** , **Projekt-könyvelés** és **Szervezeti adminisztráció** . Ez az integráció teremti meg annak az információáramlásnak a feltételeit, amely egy elkészült termék legyártásához szükséges.  
 
 A gyártási folyamatot általában a költségkönyvelés és a készletértékelési módszerek befolyásolják, amelyeket egy specifikus gyártási folyamathoz határoztak meg. A Supply Chain Management támogatja a tényleges költség (elsőként be, elsőként ki \[FIFO\]; utolsóként be, utolsóként ki \[LIFO\]; mozgóátlag; és időszakos súlyozott átlag) és standard költség módszereket is. A lean gyártás a visszavezetéses költségelszámolás elv alapján valósítható meg.  
 
@@ -69,7 +69,7 @@ Az alábbi lépések a gyártás életciklusában felléphetnek minden rendelés
 4.  **Kiadott** – Kiadhatja a termelési rendelést vagy a kötegrendelést, ha az ütemezés lezajlott és az anyagok kitárolhatók vagy előkészítettek. Az anyag rendelkezésre állását mutató jelölőnégyzet segíti az üzemirányítási felelőst a termelési rendelésekhez vagy kötegrendelésekhez szükséges anyagok elérhetőségének felmérésében. Ki lehet továbbá nyomtatni a termelési rendelési dokumentumokat, például kitárolási listákat, feladatkártyákat, útvonalkártyákat és útvonalfeladatokat. Amikor a termelési rendelést kiadják, a rendelés állapota megváltozik, ezzel jelezve, hogy a termelés elkezdődhet. Raktározási rendszer használata esetén a termelési rendelés kiadása, vagy a kötegrendelés felszabadítja a termelési AJ sorokat a raktárkezeléshez. Raktárhullámok és raktári munkák jönnek létre a raktárbeállítások alapján.
 5.  **Előkészített**/**Kitárolva** – Ha az összes anyag és erőforrás elő lett készítve a termelés helyén, a termelési anyagjegyzék sorok vagy kanban sorok **Kitárolva** állapotra frissülnek. A rögzített készletrendelések és a kapcsolódó raktározási munka általában befejeződött ebben a szakaszban. A kanbankártyák vagy útvonalkártyákat, amelyek a termelésben elért haladás jelentéséhez szükségesek, hozzá kell rendelni és ki kell nyomtatni.
 6.  **Elindítva** – Ha egy termelési rendelés, kötegrendelés vagy kanban elindul, akkor jelentheti az anyag és erőforrás felhasználást a rendeléssel kapcsolatban. A rendszerben beállítható, hogy automatikusan adja fel az anyag és erőforrás fogyasztást, amelyet a rendeléshez különítettek el indításkor. Ezt a felosztást előzetes ürítésnek, előre ürítésnek vagy automatikus fogyasztásnak is nevezik. Manuálisan hozzárendelhet termelési rendelésekhez vagy kötegrendelésekhez anyagokat, ha létrehoz további kitárolási listasorokat. Manuálisan feloszthatja a munka- és egyéb útvonalköltségeket is a rendeléshez. Ha műveletütemezést használ, akkor útvonalkártya-napló létrehozásával is feloszhatja ezeket a költségeket. Ha feladatütemezést használ, akkor feladatkártya-napló létrehozásával is feloszthatja ezeket a költségeket. Termelési rendelések vagy kötegrendelések indítása a kötegeknél lehetséges, az igényelt végső mennyiséggel. Egy termelési rendelésben, kötegrendelésben vagy kanbanban létrehozott munkák külön elindíthatók és jelenthetők a naplókon keresztül, a gyártás végrehajtási terminálon keresztül (MES terminál) vagy a kanbantáblán keresztül.
-7.  Haladás jelentése/**Kész** munkák – Használjon MES terminált, termelési naplókat, kanbantáblákat vagy mobil beolvasási lehetőségeket a termelési folyamat haladásának jelentéséhez, feladat vagy erőforrás szerint. Az anyag és erőforrás felhasználás feladásra kerül, és a kapcsolódó kanbanok, termelési rendelések, és kötegrendelések állapota frissíthető **Beérkezett** vagy **Készként jelentett** állapotra. Betárolási munka jöhet létre a raktárban, a raktár beállításaitól függően.
+7.  Haladás jelentése/ **Kész** munkák – Használjon MES terminált, termelési naplókat, kanbantáblákat vagy mobil beolvasási lehetőségeket a termelési folyamat haladásának jelentéséhez, feladat vagy erőforrás szerint. Az anyag és erőforrás felhasználás feladásra kerül, és a kapcsolódó kanbanok, termelési rendelések, és kötegrendelések állapota frissíthető **Beérkezett** vagy **Készként jelentett** állapotra. Betárolási munka jöhet létre a raktárban, a raktár beállításaitól függően.
 8.  **Készként jelentett** – (a termékbevételezés) – Amikor a termelési rendelést vagy kötegrendelést készként jelentik, a befejezett késztermék mennyisége frissül a készletben. Ez a mennyiség tartalmazza a vonatkozó társtermékeket és melléktermékeket. Amennyiben folyamatban lévő munkán alapuló könyvelést használ, egy főkönyvi napló jön létre a folyamatban lévő munka számlák egyenlegének csökkentésére és a késztermékek készletének növelésére. A termelési rendelés költségének kiszámításakor a program feladja a termelés tényleges költségét. Ha a termeléssel kapcsolatos anyag- és munkaköltségek még nem lettek felosztva egy naplóban vagy előzetes kiürítéssel, akkor utólagos ürítéssel automatikusan feloszthatók. A vissza-könyvelési felosztás tartalmazza a készlettranzakciós folyamatok utólagos levonását. Ha a termelési rendelés elkészült, jelölje be a **Záró feladat** jelölőmezőt, és változtassa a megmaradó állapotot **Befejezett** értékűre. Ellenkező esetben a mező üresen hagyható, így a kiegészítő termelt mennyiségek jelentése a későbbiekben is lehetséges.
 9.  **Minőségellenőrzése** – A termékbevételezés minőségi rendelések létrehozását indíthatja el a tesztfolyamatok és a minőségi szabályok beállításaitól függően, amelyek az adott termékre vonatkoznak. A tesztelt termékek minőségi rendelése frissítheti a készletállapotot vagy a kötegattribútumokat, ezért a minőségellenőrzés kötelező számos iparágban.
 10. **Betárolás** és **Szállítás rendelésre** – A termékbevételezés és minőségellenőrzés után a választható betárolási munka a bevételezett termékeket a felhasználás következő pontjára irányítja, egy késztermék raktárba vagy egy szállítási zónába, ha nincsenek szállítás rendelésre igények.

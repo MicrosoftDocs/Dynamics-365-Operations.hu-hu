@@ -13,15 +13,15 @@ audience: Application User
 ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: mikefalkner
+ms.author: roschlom
 ms.search.validFrom: 2018-11-30
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 01764db27eb7061deeddc01997f16a43f9cb00c6
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: d41a69bed3d1340736cc7df35aa3ded032d4d79d
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2186440"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3977119"
 ---
 # <a name="ledger-settlements"></a>Főkönyvi kiegyenlítések
 
@@ -59,7 +59,7 @@ A **Főkönyvi kiegyenlítések** a lap tartalmazza a lehetőségeket, amelyek m
 
 - A **Kijelöltek megjelölésének megszüntetése** gomb törli a **Megjelölt** mezőt minden olyan sorban, amely ki van választva.
 - A **Megjelölt** szűrő lehetővé teszi a tranzakciók szűrését az alapján, hogy a **Megjelölt** mezőjük kijelölt vagy törölt.
-- Az **Állapot** szűrő lehetővé teszi a tranzakciók szűrését az alapján, hogy állapotuk **Kiegyenlített** vagy **Ki nem egyenlített**.
+- Az **Állapot** szűrő lehetővé teszi a tranzakciók szűrését az alapján, hogy állapotuk **Kiegyenlített** vagy **Ki nem egyenlített** .
 - A **Rendezés abszolút összeg szerint** gomb lehetővé teszi, hogy az összegeket abszolút érték szerint rendezze, így csoportosíthatja azokat a tartozásokat és követeléseket, amelyek összege egyenlő.
 
 ## <a name="reverse-a-settlement"></a>Kiegyenlítés sztornírozása
