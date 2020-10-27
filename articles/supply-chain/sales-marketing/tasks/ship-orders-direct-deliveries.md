@@ -13,15 +13,15 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: omulvad
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 29358b3eba0b827d5920069a303d5ed8abf65908
-ms.sourcegitcommit: 54da65a7da0efd4f0d9760c5b14ff785b28751c4
+ms.openlocfilehash: 98ce5584f869fef57b542e6aa364045554ef0fde
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3830539"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3984178"
 ---
 # <a name="ship-orders-as-direct-deliveries"></a>Szállítási rendelés közvetlen kiszállításként
 
@@ -40,7 +40,7 @@ Ez a témakör bemutatja, hogyan hozhatja létre az értékesítési rendelések
     - A **Szállítószámla** mező ekkor lehet üres, de szerepelhet is benne egy szállítószám. Ha van alapértelmezett szállítói beállítva a termékhez (a kapcsolódó cikkfedezetnél), akkor az ez a szállító be lesz másolva a sorba. Ellenkező esetben a szállítót manuálisan kell megadni. Ebben a példában egy új szállítót választunk ki a következő lépésben, még akkor is, ha már be van írva egy.   
 7. A **Szállítói számla** mezőben adjon meg vagy válasszon ki egy értéket, majd nyomja meg az **OK** gombot. Az üzenet tájékoztat arról, hogy a beszerzési rendelés létrehozása megtörtént.   
 8. Bontsa ki a **Sorrészletek** szakaszt.
-9. Válassza ki a **Szállítás** lapot, és ellenőrizze, hogy a **Közvetlen kiszállítás** mező értéke **Igen**-e.
+9. Válassza ki a **Szállítás** lapot, és ellenőrizze, hogy a **Közvetlen kiszállítás** mező értéke **Igen** -e.
 10. A Művelet ablaktáblán válassza ki az **Általános** elemet.
 11. Válassza ki a **Tervezett rendelések** lehetőséget.
 12. Válassza ki a **Beszerzési rendelés** mezőben található hivatkozást.

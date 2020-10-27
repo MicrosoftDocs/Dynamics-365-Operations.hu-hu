@@ -13,15 +13,15 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: omulvad
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7b94d187458a903669d4ec988c7f83737b797b1f
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: e98203f03f10b3a7c530cb91211df2af025710dc
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3210180"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3978990"
 ---
 # <a name="credit-limits-for-customers"></a>Hitelkeretet a vevőknek
 
@@ -59,9 +59,9 @@ Használja a **Kinnlevőségek paraméterei** képernyőt annak a megadásához,
 
 Automatikus hitelkeret-ellenőrzés történik, ha a következők valamelyike be van állítva:
 
--   A **Kinnlevőségek paraméterei** képernyőn a **Hitelkeret típusa** mező értéke bármi más, mint **Nincs**. Minden vevő esetében történik hitelkeret-ellenőrzés.
+-   A **Kinnlevőségek paraméterei** képernyőn a **Hitelkeret típusa** mező értéke bármi más, mint **Nincs** . Minden vevő esetében történik hitelkeret-ellenőrzés.
 
--   A **Kinnlevőségek paraméterei** képernyőn a **Hitelkeret típusa** mező értéke **Nincs**, de a **Kötelező hitelkeret** be van jelölve a vevőhöz a **Vevők** képernyőn. Csak bizonyos vevők esetében történik hitelkeret-ellenőrzés.
+-   A **Kinnlevőségek paraméterei** képernyőn a **Hitelkeret típusa** mező értéke **Nincs** , de a **Kötelező hitelkeret** be van jelölve a vevőhöz a **Vevők** képernyőn. Csak bizonyos vevők esetében történik hitelkeret-ellenőrzés.
 
 Hitelkeretek ellenőrzéséhez a következő dokumentumok esetében további beállításokat is meg kell adnia.
 
@@ -120,7 +120,7 @@ Használja a **Kinnlevőségek paraméterei** képernyőt annak a megadásához,
 
 Használja a **Vevők** képernyőt az adott vevőhöz tartozó hitelkeret összegének megadására. A Vevő alapadatainak karbantartása (CustCustomersMaintain) feladat hozzárendelésével rendelkező biztonsági szerepkör tagjának kell lennie ahhoz, hogy ezen a képernyőn módosításokat végzhessen.
 
-1.  Kattintson a következőre: **Kinnlevőségek** \> **Közös** \> **Vevők** \> **Minden vevő**. Kattintson duplán egy vevőkódra.
+1.  Kattintson a következőre: **Kinnlevőségek** \> **Közös** \> **Vevők** \> **Minden vevő** . Kattintson duplán egy vevőkódra.
 
 2.  A **Vevők** képernyő Művelet ablakában kattintson a **Szerkesztés** elemre.
 
@@ -129,12 +129,12 @@ Használja a **Vevők** képernyőt az adott vevőhöz tartozó hitelkeret össz
 4.  Ha szükséges, írjon be licencszámot vagy más államilag kiállított azonosítót a **Személyi szám** mezőbe.
 
 > [!NOTE]
-> A **Kinnlevőségek paraméterei** képernyőn, általában ki van választva egy hitelkerettípus. Ha azonban a hitelkerettípus beállítása **Nincs**, be kell jelölnie a **Kötelező hitelkeret** jelölőnégyzetet is a **Vevők** képernyőn a vevő hitelkeretének összevetéséhez a vevői egyenleggel. A hitelkártyatípusokkal kapcsolatos további tudnivalókat lásd: „Milyen dokumentumokhoz és folyamatokhoz ellenőrizhetem a hitelkeretet?” ebben a témakörben. 
+> A **Kinnlevőségek paraméterei** képernyőn, általában ki van választva egy hitelkerettípus. Ha azonban a hitelkerettípus beállítása **Nincs** , be kell jelölnie a **Kötelező hitelkeret** jelölőnégyzetet is a **Vevők** képernyőn a vevő hitelkeretének összevetéséhez a vevői egyenleggel. A hitelkártyatípusokkal kapcsolatos további tudnivalókat lásd: „Milyen dokumentumokhoz és folyamatokhoz ellenőrizhetem a hitelkeretet?” ebben a témakörben. 
 
 **Hogyan ellenőrizhetem manuálisan az értékesítési rendelések hitelkeretét?**
 
 Néha előfordulhat, hogy manuálisan kell ellenőrizni a vevő hitelkeretét. Például előfordulhat, hogy manuálisan ellenőrzi egy vevő hitelkeretét az értékesítési rendelés létrehozának megkezdése előtt. Használhatja az **Értékesítési rendelés** képernyőt a hitelkeret manuális ellenőrzéséhez. Az Értékesítési rendelés karbantartása (SalesOrderMaintain) feladat hozzárendelésével rendelkező biztonsági szerepkör tagjának kell lennie ahhoz, hogy ezen a képernyőn módosításokat végzhessen.
 
-1.  Kattintson ide: **Értékesítés és marketing** \> **Közös** \> **Értékesítési rendelések** \> **Minden értékesítési rendelés**. Kattintson duplán egy értékesítési rendelésre.
+1.  Kattintson ide: **Értékesítés és marketing** \> **Közös** \> **Értékesítési rendelések** \> **Minden értékesítési rendelés** . Kattintson duplán egy értékesítési rendelésre.
 
 2.  Az **Értékesítési rendelés** képernyőn, a Művelet ablakban, a **Kezelés** lapon, kattintson a **Hitelkeretének ellenőrzése** elemre.

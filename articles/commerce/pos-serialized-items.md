@@ -12,15 +12,15 @@ audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
 ms.search.region: global
-ms.author: boycezhu
+ms.author: boycez
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: b63ffc7921e37b0591c66a76d57214a5efe5a1ef
-ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
+ms.openlocfilehash: 6ba01abc3d1a4496ec586a621aa03b4981f84d76
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "3761345"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3978363"
 ---
 # <a name="work-with-serialized-items-in-the-pos"></a>Szerializált cikkek használata a pénztárban
 
@@ -46,7 +46,7 @@ A **Sorozatszám-kezelés** lap felsorolja az összes olyan nyitott sorozatszám
 A **Sorozatszám-kezelés** lap **Állapot** mezője az aktuális állapotra vonatkozó adatokat tartalmaz, amelyekben az egyes sorozatszámok vannak:
 
 - **Nincs regisztrálva** – A sorozatszám nem lett megadva, vagy az előregisztrált sorozatszám még nincs ellenőrizve ( a fogadási folyamatban).
-- **Regisztrálás** – A sorozatszám regisztrálva lett, és helyben mentették az üzlet csatorna-adatbázisába, vagy az előregisztrált sorozatszám ellenőrizve lett. A bevételezés vagy teljesítés befejezését követően csak azok a sorozatszámok lesznek beküldve a Commerce Headquarters alkalmazásba, amelyek állapota **Regisztrálás**.
+- **Regisztrálás** – A sorozatszám regisztrálva lett, és helyben mentették az üzlet csatorna-adatbázisába, vagy az előregisztrált sorozatszám ellenőrizve lett. A bevételezés vagy teljesítés befejezését követően csak azok a sorozatszámok lesznek beküldve a Commerce Headquarters alkalmazásba, amelyek állapota **Regisztrálás** .
 
 ## <a name="receive-serialized-items"></a>Szerializált cikkek bevételezése
 
@@ -88,7 +88,7 @@ Lehetőség van arra is, hogy a sorozatszám-elérhetőség érvényesítését 
 Ha engedélyezni szeretné az ilyen érvényesítést előfeltételként a következő feladatokat kell ütemeznie, hogy ismétlődően fussanak:
 
 - Ugorjon a **Kiskereskedelem és kereskedelem** > **Kiskereskedelem és kereskedelem IT** > **Termékek és készlet** > **Termékelérhetőség nyomon követési dimenziókkal** lehetőségre
-- **Kiskereskedelem és kereskedelem** > **Elosztási ütemezések** > **1130** (**Termék elérhetősége**)
+- **Kiskereskedelem és kereskedelem** > **Elosztási ütemezések** > **1130** ( **Termék elérhetősége** )
 
 ## <a name="additional-resources"></a>További erőforrások
 

@@ -14,15 +14,15 @@ ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: 268504
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
-ms.author: v-elgolu
+ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 90be02b98f98e46fa68fb65aadbc4f302eae45f6
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 890300d1251b2befce47f62535f44771378f3cb7
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551187"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3984675"
 ---
 # <a name="petty-cash-for-eastern-europe-and-russia"></a>Pénztár Kelet Európához és Oroszországhoz
 
@@ -149,7 +149,7 @@ A készpénzfeladási profilok határozzák meg a főkönyvi feladásokat. Kész
 
 ### <a name="set-up-number-sequences-for-cash-documents"></a>Készpénzbizonylatok számsorozatainak beállítása
 
-Készpénzbizonylatok számsorozatainak beállításához lépjen a **Készpénz- és bankkezelés** &gt; **Beállítás** &gt; **Készpénz- és bankkezelési paraméterek** elemre. A **Számsorozat** lapon adja meg a számsorozat-kódokat a **Bevételezési pénztárbizonylatok**, **Készpénz-kifizetési bizonylatok**, **Készpénzkorrekciós bizonylatok** és **Árfolyam-korrekció** bizonylatok, valamint a **Készpénzjelentés száma** számára.
+Készpénzbizonylatok számsorozatainak beállításához lépjen a **Készpénz- és bankkezelés** &gt; **Beállítás** &gt; **Készpénz- és bankkezelési paraméterek** elemre. A **Számsorozat** lapon adja meg a számsorozat-kódokat a **Bevételezési pénztárbizonylatok** , **Készpénz-kifizetési bizonylatok** , **Készpénzkorrekciós bizonylatok** és **Árfolyam-korrekció** bizonylatok, valamint a **Készpénzjelentés száma** számára.
 
 ### <a name="set-up-default-values-for-cash-and-bank-management-parameters"></a>Alapértelmezett értékek és paraméterek beállítása készpénz és bank kezeléséhez
 
@@ -413,7 +413,7 @@ Készpénztranzakció Általános naplón keresztüli létrehozásához lépjen 
 A **Számla** lapon adhatja meg a kijelölt számlához és ellenszámlához a feladási profilokat. Ha a regisztrált tranzakció egy előleg, jelölje be az **Előleg** jelölőnégyzetet a **Fizetés** lapon. A **Képviselő** mezőcsoportban töltse ki a mezőket a bizonylatnaplósorokban megadottaknak megfelelően; ezek nyomtatásnál bekerülnek a **Készpénz** jelentésbe. A naplóbejegyzések ellenőrzéséhez a műveletpanelen kattintson az **Ellenőrzés** elemre.
 
 ## <a name="cash-transaction-approval-and-posting"></a>Készpénztranzakciók jóváhagyása és feladása
-Készpénztranzakciók esetén a következő állapotok alkalmazhatók: **Nincs**, **Visszaigazolva**, **Jóváhagyva** és **Elutasítva**. A **Készpénz- és bankkezelés** &gt; **Beállítás** &gt; **Készpénz- és bankkezelési paraméterek** **Készpénz** lapjának **Jóváhagyás** gyorslapján szereplő **Jóváhagyási állapot használata** paraméter lehetővé teszi két további állapot aktiválását: **Visszaigazolva** és **Elutasítva**. Megerősítés akkor alkalmazható, ha a készpénzbizonylatok kiadására kerül sor, és a készpénzbefizetések vagy -kifizetések két alkalmazott: könyvelő és pénztáros között oszlanak meg. Az **Állapot visszaállítása** funkció az aktuális tranzakció állapotától függően változik. A **Jóváhagyva** állapotból **Visszaigazolva**, a **Visszaigazolva** állapotból pedig **Nincs** lesz. A pénztárnaplótételek szerkesztése csak akkor lehetséges, ha az állapot **Nincs**. A készpénzes tranzakciókat akkor lehet elutasítani, ha a tranzakció állapota **Visszaigazolva**. Az elutasított készpénzbizonylatok szerepelnek a **Pénztárbizonylatok regisztrációs naplója** jelentésben, de nem jelennek meg a **Pénztárkönyv** jelentésben. Tranzakció megerősítéséhez válassza ki a megfelelő bizonylatnaplósort, és kattintson a **Dokumentumok jóváhagyása** &gt; **Megerősítés** elemre. Létrejön egy rendelésszám a megadott számsorozat alapján. A tranzakció állapota **Visszaigazolva** értékre változik, és a naplósor többé nem szerkeszthető. A készpénzes számla egyenlege változatlan marad. Készpénzbizonylat elutasításához kattintson a **Dokumentumok jóváhagyása** &gt; **Elutasítás** elemre. Ez a beállítás csak azon dokumentumoknál érhető el, amelyek állapota **Visszaigazolva**. Tranzakció jóváhagyásához válassza ki a megfelelő bizonylatnaplósort, és kattintson a **Dokumentumok jóváhagyása** &gt; **Jóváhagyás** elemre. A **Jóváhagyva** állapot azt jelzi, hogy a pénzalapok beérkezése vagy elküldése megtörtént. A készpénzegyenleg módosul. A készpénztranzakciót fel lehet adni. **Jóváhagyva** állapot törléséhez és az állapot **Nincs** értékű alaphelyzetbe állításához kattintson a **Dokumentumok jóváhagyása** &gt; **Állapot visszaállítása** elemre. Csak jóváhagyott készpénztranzakciók adhatók fel. Napló feladásához kattintson a **Feladás** &gt; **Feladás** elemre.
+Készpénztranzakciók esetén a következő állapotok alkalmazhatók: **Nincs** , **Visszaigazolva** , **Jóváhagyva** és **Elutasítva** . A **Készpénz- és bankkezelés** &gt; **Beállítás** &gt; **Készpénz- és bankkezelési paraméterek** **Készpénz** lapjának **Jóváhagyás** gyorslapján szereplő **Jóváhagyási állapot használata** paraméter lehetővé teszi két további állapot aktiválását: **Visszaigazolva** és **Elutasítva** . Megerősítés akkor alkalmazható, ha a készpénzbizonylatok kiadására kerül sor, és a készpénzbefizetések vagy -kifizetések két alkalmazott: könyvelő és pénztáros között oszlanak meg. Az **Állapot visszaállítása** funkció az aktuális tranzakció állapotától függően változik. A **Jóváhagyva** állapotból **Visszaigazolva** , a **Visszaigazolva** állapotból pedig **Nincs** lesz. A pénztárnaplótételek szerkesztése csak akkor lehetséges, ha az állapot **Nincs** . A készpénzes tranzakciókat akkor lehet elutasítani, ha a tranzakció állapota **Visszaigazolva** . Az elutasított készpénzbizonylatok szerepelnek a **Pénztárbizonylatok regisztrációs naplója** jelentésben, de nem jelennek meg a **Pénztárkönyv** jelentésben. Tranzakció megerősítéséhez válassza ki a megfelelő bizonylatnaplósort, és kattintson a **Dokumentumok jóváhagyása** &gt; **Megerősítés** elemre. Létrejön egy rendelésszám a megadott számsorozat alapján. A tranzakció állapota **Visszaigazolva** értékre változik, és a naplósor többé nem szerkeszthető. A készpénzes számla egyenlege változatlan marad. Készpénzbizonylat elutasításához kattintson a **Dokumentumok jóváhagyása** &gt; **Elutasítás** elemre. Ez a beállítás csak azon dokumentumoknál érhető el, amelyek állapota **Visszaigazolva** . Tranzakció jóváhagyásához válassza ki a megfelelő bizonylatnaplósort, és kattintson a **Dokumentumok jóváhagyása** &gt; **Jóváhagyás** elemre. A **Jóváhagyva** állapot azt jelzi, hogy a pénzalapok beérkezése vagy elküldése megtörtént. A készpénzegyenleg módosul. A készpénztranzakciót fel lehet adni. **Jóváhagyva** állapot törléséhez és az állapot **Nincs** értékű alaphelyzetbe állításához kattintson a **Dokumentumok jóváhagyása** &gt; **Állapot visszaállítása** elemre. Csak jóváhagyott készpénztranzakciók adhatók fel. Napló feladásához kattintson a **Feladás** &gt; **Feladás** elemre.
 
 ## <a name="print-a-cash-order"></a>Készpénzutalvány nyomtatása
 Készpénzutalvány nyomtatásához válasszon bizonylatnaplósort, majd a műveletek panelen kattintson a **Nyomtatása** &gt; **Készpénzutalvány-jelentés** elemre. Létrejön egy nyomtatási űrlap bevételezési pénztárbizonylathoz vagy készpénzkifizetési bizonylathoz, attól függően, hogy az összeg a **Tartozik** vagy a **Követel** mezőben szerepel-e a a kijelölt sornál:
@@ -421,7 +421,7 @@ Készpénzutalvány nyomtatásához válasszon bizonylatnaplósort, majd a műve
 -   Ha az összeg a **Tartozik** mezőben szerepel: bevételezési pénztárbizonylat jön létre
 -   Ha az összeg a **Követel** mezőben szerepel: készpénzkifizetési bizonylat jön létre
 
-Azok a bizonylatnaplósorok nyomtathatók, amelyek állapota **Visszaigazolva**, **Jóváhagyva** vagy **Elutasítva**. A készpénzbefizetési utalványok a **Készpénz- és bankkezelés** &gt; **Lekérdezések és jelentések** &gt; **Készpénzutalvány** menüpontban is kinyomtathatók.
+Azok a bizonylatnaplósorok nyomtathatók, amelyek állapota **Visszaigazolva** , **Jóváhagyva** vagy **Elutasítva** . A készpénzbefizetési utalványok a **Készpénz- és bankkezelés** &gt; **Lekérdezések és jelentések** &gt; **Készpénzutalvány** menüpontban is kinyomtathatók.
 
 ## <a name="periodic-tasks"></a>Időszakos feladatok
 A következő feladatok a **Készpénz- és bankkezelés** &gt; **Időszakos feladatok** pontban hajthatók végre.

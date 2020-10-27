@@ -16,15 +16,15 @@ ms.custom: 20981
 ms.assetid: 2b92eec1-d28c-4965-9086-939c77b3c62b
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: conradv
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0c97e58f6f608efd3b964e7fad229a00e1ae603a
-ms.sourcegitcommit: 59a9e840989bc9f2c7004efa3499b69c09a91b06
+ms.openlocfilehash: 2e845b05d77701191a267de45354c3da25bd7699
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "3677831"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3979502"
 ---
 # <a name="bom-designer-functionality"></a>Anyagjegyzék-tervező funkció
 
@@ -96,7 +96,7 @@ Az anyagjegyzékre és az útvonalra érvényes szűrő megjelenik az Anyagjegyz
 Ha az Anyagjegyzék-tervezőt egy- vagy többszintű kitárolási értékkel rendelkező látszólagos típusok áttekintésére vagy szerkesztésére használja, a felső cikkhez rendelt útvonal általában a teljes anyagjegyzék-hierarchiára is kiterjed. Az áttekintés egyszerűsítéséhez zárolhatja a felső szintű útvonalat a nézetben, ha a **Megtekintés** &gt; **Útvonal zárolása** menüpontra kattint. Az útvonal zárolásának feloldásához kattintson a **Megtekintés** &gt; **Útvonal feloldása** menüpontra.
 
 ## <a name="adding-and-editing-boms-and-bom-lines"></a>Anyagjegyzékek és anyagjegyzéksorok hozzáadása és módosítása
-Használja az **Anyagjegyzéksorok**vagy az **Anyagjegyzék** funkciókat anyagjegyzéksorok és anyagjegyzékek módosítására. Ha kiválaszt a fában egy csomópontot, a csomópont típusa határozza meg, milyen funkciók érhetők el.
+Használja az **Anyagjegyzéksorok** vagy az **Anyagjegyzék** funkciókat anyagjegyzéksorok és anyagjegyzékek módosítására. Ha kiválaszt a fában egy csomópontot, a csomópont típusa határozza meg, milyen funkciók érhetők el.
 
 | Funkció                            | Leírás                                                                                               | Csomóponttípus és feltételek                                                                                                                                                                                                                                                                       |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -105,7 +105,7 @@ Használja az **Anyagjegyzéksorok**vagy az **Anyagjegyzék** funkciókat anyagj
 | Anyagjegyzéksorok &gt; Hozzáadás a sor előtt      | Párbeszédpanel megnyitása, ahol kiválaszthatja a kiválasztott anyagjegyzéksor előtt szerepeltetendő termékváltozatot.         | Ez a funkció csak akkor érhető el, ha ki van jelölve egy anyagjegyzéksor-csomópont.                                                                                                                                                                                                                                   |
 | Anyagjegyzéksorok &gt; Hozzáadás anyagjegyzék-összetevőhöz | Párbeszédpanel megnyitása, ahol kiválaszthatja a kiválasztott anyagjegyzék végén szerepeltetendő termékváltozatot.       | Ez a funkció csak akkor érhető el, ha a kijelölt csomópont rendelkezik kijelölt anyagjegyzékkel. Ha ez a funkció nem elérhető, egy anyagjegyzék-verzió hiányozhat a kiválasztott cikkváltozathoz. Ebben az esetben kattintson az **Anyagjegyzék** &gt; **Verzió létrehozása** menüpontra a hiányzó verzió létrehozásához a kiválasztott csomópontban. |
 | Anyagjegyzéksorok &gt; Hozzáadás a sor után       | Párbeszédpanel megnyitása, ahol kiválaszthatja a kiválasztott anyagjegyzéksor után szerepeltetendő termékváltozatot.          | Ez a funkció csak akkor érhető el, ha ki van jelölve egy anyagjegyzéksor-csomópont.                                                                                                                                                                                                                                   |
-| Anyagjegyzék &gt; Verzió létrehozása             | Új anyagjegyzék-verzió vagy anyagjegyzék létrehozása a kiválasztott csomópont termékváltozatához.                             | Ez a funkció akkor érhető el, ha a kiválasztott anyagjegyzéksor-csomópont össze van kapcsolva egy cikkel, amelynek a termelési típusa **Anyagjegyzék** vagy **Receptúra**.                                                                                                                                                  |
+| Anyagjegyzék &gt; Verzió létrehozása             | Új anyagjegyzék-verzió vagy anyagjegyzék létrehozása a kiválasztott csomópont termékváltozatához.                             | Ez a funkció akkor érhető el, ha a kiválasztott anyagjegyzéksor-csomópont össze van kapcsolva egy cikkel, amelynek a termelési típusa **Anyagjegyzék** vagy **Receptúra** .                                                                                                                                                  |
 | Anyagjegyzék &gt; Számítás                | Párbeszédpanel megnyitása, ahol a költség- vagy eladásiár-számítást futtathatja a kiválasztott termékváltozatnál. | Ez a funkció akkor érhető el, ha a kijelölt csomópont kapcsolódik egy anyagjegyzék-verzióhoz.                                                                                                                                                                                                         |
 | Anyagjegyzék &gt; Ellenőrzés                      | A kiválasztott anyagjegyzék érvényesítése és ellenőrzése.                                                                      | Ez a funkció akkor érhető el, ha a kijelölt csomópont kapcsolódik egy anyagjegyzék-verzióhoz.                                                                                                                                                                                                         |
 

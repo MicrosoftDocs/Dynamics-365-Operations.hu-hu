@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e4ba2cf115faacda14e25838a488fc54c53f48f3
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 914df1626b02110264b895e82dc9301f3aa0afce
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3202721"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3985118"
 ---
 # <a name="create-service-orders-automatically"></a>Szervizrendelések automatikus létrehozása    
 
@@ -56,7 +56,7 @@ Ha manuálisan vagy automatikusan szervizrendeléseket hoz létre a szolgáltat�
 
 ## <a name="create-service-orders-automatically-for-several-service-agreements"></a>Szervizrendelések automatikus létrehozása több szolgáltatási megállapodáshoz
 
-1.  Kattintson a következőkre: **Szolgáltatáskezelés** \> **Rendszeres** \> **Szervizrendelések** \> **Szervizrendelések létrehozása**.
+1.  Kattintson a következőkre: **Szolgáltatáskezelés** \> **Rendszeres** \> **Szervizrendelések** \> **Szervizrendelések létrehozása** .
 
 2.  Kattintson a **Kiválasztás** lehetőségre ahhoz, hogy a szervizrendelések létrehozásához használt kritériumokat adjon hozzá vagy távolítson el.
 

@@ -1,9 +1,9 @@
 ---
 title: Minősítések és értékelések kezelése
-description: Ez a témakör azt mutatja be, hogyan lehet kezelni a minősítéseket és értékeléseket a Microsoft Dynamics 365 Commerce minősítések és értékelések moderálása eszközével.
+description: Ez a témakör azt mutatja be, hogyan kezelheti az értékeléseket és véleményeket a Microsoft Dynamics 365 Commerce webhelykészítőjében.
 author: gvrmohanreddy
 manager: annbe
-ms.date: 01/30/2020
+ms.date: 10/09/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,38 +18,30 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-01
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: a7fa2ae3124a0a68b3890987c5dce2730e5c2183
-ms.sourcegitcommit: 1e6c8163da5818196769eb278afb3a2335d0cbe3
+ms.openlocfilehash: 3fc88bc5a5868dce7c0539bf3f0ddc5b751e7b75
+ms.sourcegitcommit: 83ec80382bfeb693d5c5949b6f65296bd50eed12
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3027242"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "3974006"
 ---
 # <a name="manage-ratings-and-reviews"></a>Minősítések és értékelések kezelése
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör azt mutatja be, hogyan lehet kezelni a minősítéseket és értékeléseket a Microsoft Dynamics 365 Commerce minősítések és értékelések moderálása eszközével.
+Ez a témakör azt mutatja be, hogyan kezelheti az értékeléseket és véleményeket a Microsoft Dynamics 365 Commerce webhelykészítőjében.
 
 ## <a name="overview"></a>Áttekintés
 
-A Dynamics 365 Commerce a Microsoft Azure kognitív szolgáltatását használja a szöveg automatikus moderálására a profán szavak kivonásával. Ezenkívül a moderátorok a minősítések és a értékelések moderálása eszközt a következő manuális feladatokhoz használhatják:
+A Dynamics 365 Commerce a Microsoft Azure kognitív szolgáltatását használja a szöveg automatikus moderálására a profán szavak kivonásával. Ezenkívül a moderátorok a Dynamics 365 Commerce webhelykészítő segítségével a következő manuális feladatokat hajthatják végre:
 
 - Értékelések moderálása válaszadással vagy eltávolításukkal.
 - Vevői értékelések törlése a vevő kérésére.
 - Minősítések és értékelése tömeges importálása egy Microsoft Power BI sablonba hogy elemezhetők legyenek a minősítések és a vélemények trendjei.
 
-## <a name="access-ratings-and-reviews-moderation-features"></a>A minősítések és értékelések moderációs funkcióinak elérése
-
-Az e-Commerce webhelykezelő eszköz minősítések és ellenőrzések moderálási szolgáltatásainak eléréséhez hajtsa végre az alábbi lépéseket.
-
-1. Jelentkezzen be a [Microsoft Lifecycle Services (LCS)](https://lcs.dynamics.com) szolgáltatásba.
-1. Nyissa meg azt a projektet, amely tartalmazza a projektet, ahol az e-kereskedelmet inicializálni kívánja.
-1. A **Környezetek** szakaszban válassza ki a környezetet.
-1. A **Környezeti funkciók** területen kattintson a**Kiskereskedelem kezelése** elemre.
-1. Az **e-Commerce** lap **Hivatkozások** területén válassza az **e-Commerce webhelykezelő eszköz** elemet.
-
 ## <a name="read-a-review"></a>Értékelés elolvasása 
+
+Ha a Commerce webhelykészítőben egy értékelést szeretne elolvasni, akkor a következő lépéseket kövesse.
 
 1. Nyissa meg a **Kezdőlap \> Értékelések \> Moderálás** elemet.
 1. A lap jobb felső részén található keresési mező használatával szűrheti a megjelenített értékeléseket a termék azonosítója, a terméknév vagy az értékelés szövege szerint.
@@ -62,7 +54,7 @@ A további szűrők használatával időszak, minősítés, csatorna vagy probl�
 
 Előfordulhat, hogy azok a vevőkk, akik egy terméket megvásároltak, kifejezik elégedettségüket vagy elégedetlenségüket, vagy jelzik, hogy nem értik, hogyan kell használni a terméket. Moderátorként válaszolhat értékelésekre.. Ez a válasz a az értékeléssel együtt jelenik meg a webhelyen. 
 
-Az értékelés megválaszolásához kövesse az alábbi lépéseket.
+Ha a Commerce webhelykészítőben egy értékelésre szeretne válaszolni, akkor a következő lépéseket kövesse.
 
 1. Nyissa meg a **Kezdőlap \> Értékelések \> Moderálás** elemet.
 1. Keresse meg és válassza ki a megválaszolandó értékelést.
@@ -76,20 +68,20 @@ Az értékelés megválaszolásához kövesse az alábbi lépéseket.
 
 Előfordulhat, hogy üzleti érdek fűződik ahhoz, hogy a moderátorok eltávolítsanak bizonyos vevői értékeléseket. 
 
-Az értékelés levételéhez kövesse az alábbi lépéseket.
+Ha a Commerce webhelykészítőben egy értékelést szeretne félretenni, akkor a következő lépéseket kövesse.
 
 1. Nyissa meg a **Kezdőlap \> Értékelések \> Moderálás** elemet.
 1. Keresse meg és válassza ki azt az értékelést, amelyet le kell venni.
-1. A jobb oldali tulajdonságok ablaktáblán válasszon ki egy eltávolítási okot, majd válassza a **Levétel** parancsot.
+1. A jobb oldali tulajdonságok ablaktáblán, a **Értékelés félretétele** elemnél válassza ki a félretétel okot, majd válassza **Félretétel** lehetőséget.
     
 ## <a name="delete-a-customers-reviews-at-the-customers-request"></a>Vevői értékelések törlése a vevő kérésére 
 
 Előfordulhat, hogy a vevők az értékelést és az értékelés adatait véglegesen törölni szeretnék egy e-kereskedelmi webhelyről. A vevőtől érkező eltávolítási kérelmet fogadó moderátor eltávolíthatja a vevő adatait az értékelés törlése funkcióval. A vevő adatainak megkereséséhez és törléséhez a moderátornak be kell írnia azt az e-mail-címet, amelyet a vevő a bejelentkezéshez és az értékelés elkészítéséhez használt. 
 
-A vevői adatok megkereséséhez és törléséhez hajtsa végre az alábbi lépéseket.
+A Commerce webhelykészítő vevői adatainak megkereséséhez és törléséhez az alábbi lépéseket hajtsa végre.
 
 1. Nyissa meg a **Kezdőlap \> Értékelések \> Törlés** elemet.
-1. A **Vevő keresése e-mail-cím alapján** mezőben adja meg a felhasználó e-mail-címét, majd válassza a **Keresés** lehetőséget.
+1. A **Vevő keresése e-mail-cím alapján** négyzetben adja meg a felhasználó e-mail-címét, majd válassza a **Keresés** lehetőséget.
 1. Ha a vevőnek van valamilyen értékelési tevékenysége (például a beküldött értékelések, szavazás más vásárlói értékelések hasznosságával kapcsolatosan vagy megjegyzések egy másik vásárló értékelésére), az eredmények megjelennek. Mindegyik tételhez tartozik egy **Törlés** gomb.
 1. Minden egyes törlendő elemhez válassza ki a **Törlés** gombot. Amikor a program megerősítést kér, válassza az **Igen** lehetőséget. 
     
@@ -101,28 +93,28 @@ A vevői adatok megkereséséhez és törléséhez hajtsa végre az alábbi lép
 
 ## <a name="download-ratings-and-reviews-data"></a>A minősítések és a értékelések adatainak letöltése
 
-A minősítések és értékelések moderálása eszközzel a moderátorok importálhatják a minősítések és értékelések adatait, hogy elemezhessék a trendeket. Elérhető egy alapvető Power BI-metrikákat tartalmazó sablon. A moderátorok ezt a sablont használhatják a kötegben importált adatok összekapcsolására és egy irányítópult megjelenítésére is. Nem kell egyéni irányítópultot létrehozniuk. A moderátorok a Power BI-sablont is testreszabhatják, hogy az megfeleljen igényeiknek. 
+A Commerce webhelykészítővel a moderátorok importálhatják a minősítések és értékelések adatait, hogy elemezhessék a trendeket. Elérhető egy alapvető Power BI-metrikákat tartalmazó sablon. A moderátorok ezt a sablont használhatják a kötegben importált adatok összekapcsolására és egy irányítópult megjelenítésére is. Nem kell egyéni irányítópultot létrehozniuk. A moderátorok a Power BI-sablont is testreszabhatják, hogy az megfeleljen igényeiknek. 
 
-A minősítések és a értékelések adatainak letöltéséhez hajtsa végre a következő lépéseket.
+A Commerce webhelykészítőben az értékelések és vélemények letöltéséhez az alábbi lépéseket hajtsa végre.
 
 1. Nyissa meg a **Kezdőlap \> Értékelések \> Jelentéskészítés** elemet.
-1. Válassza az **Étrékelések adatainak letöltése** lehetőséget a minősítések és értékelések adatainak tömeges letöltéséhez vesszővel tagolt (CSV) formátumban.
+1. Válassza az **Étrékelés adatainak letöltése** lehetőséget a minősítések és értékelések adatainak tömeges letöltéséhez vesszővel tagolt (CSV) formátumban.
 
 ## <a name="view-ratings-and-reviews-trends"></a>Minősítések és értékelések trendjeinek áttekintése
 
 A moderátorok letölthetik a Power BI-sablont, így megtekinthetik az trendeket az irányítópultokon.
 
-A minősítések és a értékelések trendjeinek megtekintéséhez hajtsa végre a következő lépéseket.
+A Commerce webhelykészítőben az értékelések és vélemények trendjeinek megtekintéséhez az alábbi lépéseket hajtsa végre.
 
 1. Nyissa meg a **Kezdőlap \> Értékelések \> Jelentéskészítés** elemet.
-1. A sablon letöltéséhez válassza ki a **PowerBI-sablont**.
+1. A sablon letöltéséhez válassza ki a **PowerBI-sablont** .
 
-    ![A Power BI-sablon letöltése](media/rnr-moderation-reports.png) 
+    ![Töltse le a Power BI sablont](media/rnr-moderation-reports.png) 
 
 1. Nyissa meg a letöltött sablont a Power BI alkalmazás segítségével. Zárja be a megjelenő **Webtartalomhoz való hozzáférés** párbeszédpanelt, majd zárja be a megjelenő „Frissítési” hibaüzenetet.
-1. Menjen a **Kezdőlapra**, válassza a **Lekérdezések szerkesztése** lehetőséget, majd válassza az **Adatforrás-beállítások** elemet.
+1. Menjen a **Kezdőlapra** , válassza a **Lekérdezések szerkesztése** lehetőséget, majd válassza az **Adatforrás-beállítások** elemet.
 1. Az **Adatforrás beállításai** párbeszédpanelen jelölje be a **Forrás módosítása** lehetőséget.
-1. Az **URL-cím** mezőbe írja be az előző eljárásban letöltött értékelés adatainak elérési útját (például **c:\\reviews\\ReviewsData.csv**).
+1. Az **URL-cím** mezőbe írja be az előző eljárásban letöltött értékelés adatainak elérési útját (például **c:\\reviews\\ReviewsData.csv** ).
 
     ![A Vesszővel tagolt értékek párbeszédpanel URL-mezője](media/rnr-powerbi-datasource-settings.png) 
 

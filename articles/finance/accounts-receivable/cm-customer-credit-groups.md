@@ -12,15 +12,15 @@ audience: Application User
 ms.reviewer: roschloma
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: mfalkner
+ms.author: roschlom
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 90d75493b928bfa4edafeef7730bc272c9146192
-ms.sourcegitcommit: cd8a28be0acf31c547db1b8f6703dd4b0f62940c
+ms.openlocfilehash: 1ddf41d88d085b102a7d69eeeff0ec463d8b4137
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "3261257"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3977959"
 ---
 # <a name="customer-credit-groups"></a>Vevői hitelcsoportok
 
@@ -30,7 +30,7 @@ Meghatározhatja a vevők olyan csoportjait, akiknek megosztott hitelkerete van.
 
 A vevői hitelcsoport tagjait különböző jogi személyek közül lehet kiválasztani. Amikor egy vevőt ad hozzá a vevők listájához a vevői hitelcsoportban, akkor az egyes vevők hitelkeretének lejárati dátuma a csoporthoz rendelt lejárati dátumra módosul.
 
-Beállíthat vevői hitelcsoportokat a **Vevői hitelcsoportok** oldalon (**Hitelkezelés \> Vevői hitelcsoportok \> Vevői hitelcsoportok**).
+Beállíthat vevői hitelcsoportokat a **Vevői hitelcsoportok** oldalon ( **Hitelkezelés \> Vevői hitelcsoportok \> Vevői hitelcsoportok** ).
 
 1. A **Csoport száma** és **Leírás** mezőkben adja meg a csoport azonosítóját és leírását.
 2. A **Hitelkeret** és a **Pénznem** mezőkben adja meg azt a hitelkeretet és pénznemet, amelyet akkor kell használni, amikor a rendszer a csoport bármely tagja számára ellenőrzi a hitelkeretet.

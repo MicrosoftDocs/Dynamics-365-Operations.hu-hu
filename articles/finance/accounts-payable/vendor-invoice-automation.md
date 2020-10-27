@@ -1,5 +1,5 @@
 ---
-title: Szállítói számla automatizálása
+title: Számlaautomatizálás beolvasott dokumentumokhoz
 description: Ez a témakör azokat a funkciókat mutatja be, amelyek a szállítói számlák végponttól végpontig történő automatizálására érhetők el, még a mellékleteket tartalmazó számlák esetében is.
 author: abruer
 manager: AnnBe
@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4560d7b61fa8f014f9a1185da087df8b1c8e61ba
-ms.sourcegitcommit: b7af921189048d9f2eb4d3fd57c704c742bc96e8
+ms.openlocfilehash: f6d19d0e10f477e498e8f0fff1f431bc4bfdd9a1
+ms.sourcegitcommit: 6ffbae02de2eee1f3be9bab2da37a3771aae8bec
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "3396009"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "3904955"
 ---
-# <a name="vendor-invoice-automation"></a>Szállítói számla automatizálása
+# <a name="invoice-automation-for-scanned-documents"></a>Számlaautomatizálás beolvasott dokumentumokhoz
 
 [!include [banner](../includes/banner.md)]
 
@@ -66,7 +66,7 @@ Az adatcsomagokkal kapcsolatos részletes tudnivalók: [Adatkezelés – átteki
 A számlákat és mellékleteket tartalmazó tesztadatok gyors létrehozásához kövesse az alábbi lépéseket.
 
 1. Jelentkezzen be a példányába.
-1. Ugorjon a következőre: **Kötelezettségek** > **Számlák** > **Nyitott szállítói számlák**.
+1. Ugorjon a következőre: **Kötelezettségek** > **Számlák** > **Nyitott szállítói számlák** .
 1. Hozzon létre sorokat és mellékleteket tartalmazó számlákat.
 
     > [!NOTE]
@@ -93,7 +93,7 @@ Olyan esetekben, amikor szállítói számlák integráción keresztül kerülne
 
 ### <a name="exceptions-list-page"></a>Kivételek listájának oldala
 
-A számlázási kivételeket tartalmazó új listaoldal itt érhető el: **Kötelezettségek** > **Számlák** > **Importálási hibák** > **Szállítói számlák, amelyeknek sikertelen volt az importálása**. Ez a lap a Szállítói számla fejlécének adatentitásában szereplő előkészítési tábla szállítói számla fejlécrekordjait jeleníti meg. Vegye figyelembe, hogy ugyanezeket a rekordokat tekintheti meg az **Adatkezelés** munkaterületen is, ahol elvégezheti ugyanazokat a műveleteket, amelyek a kivételkezelési funkcióban szerepelnek. Azonban a kivételkezelési funkció által nyújtott felhasználói felület a funkcionális felhasználókra van optimalizálva.
+A számlázási kivételeket tartalmazó új listaoldal itt érhető el: **Kötelezettségek** > **Számlák** > **Importálási hibák** > **Szállítói számlák, amelyeknek sikertelen volt az importálása** . Ez a lap a Szállítói számla fejlécének adatentitásában szereplő előkészítési tábla szállítói számla fejlécrekordjait jeleníti meg. Vegye figyelembe, hogy ugyanezeket a rekordokat tekintheti meg az **Adatkezelés** munkaterületen is, ahol elvégezheti ugyanazokat a műveleteket, amelyek a kivételkezelési funkcióban szerepelnek. Azonban a kivételkezelési funkció által nyújtott felhasználói felület a funkcionális felhasználókra van optimalizálva.
 
 ![Kivételek listájának oldala](media/vendor_invoice_automation_02.png)
 
@@ -186,7 +186,7 @@ Csak egy dokumentum állítható be alapértelmezett mellékletként. Ha egy dok
 
 ### <a name="showhide-invoice-attachments"></a>Számlamellékletek megjelenítése/elrejtése
 
-A **Kivétel feldolgozása**, **Függőben lévő számla** és **Számlanapló** lekérdezési lapok lehetővé teszik a mellékletmegjelenítő megjelenítését vagy elrejtését.
+A **Kivétel feldolgozása** , **Függőben lévő számla** és **Számlanapló** lekérdezési lapok lehetővé teszik a mellékletmegjelenítő megjelenítését vagy elrejtését.
 
 ### <a name="security"></a>Biztonság
 
@@ -211,7 +211,7 @@ A következő feladatok csak írásvédett hozzáférést vagy olvasási/írási
 A következő szerepkörök írásvédett hozzáférést vagy olvasási/írási hozzáférést biztosítanak a mellékletek megtekintéséhez a következő műveletekhez:
 
 + **Kötelezettségkezelő adminisztrátor** és **Kötelezettségkezelő vezető** – A Szállítói számlák karbantartása feladat hozzá van rendelve ezen szerepkörökhöz.
-+ **Kötelezettségkezelő adminisztrátor**, **Kötelezettségkezelő vezető**, **Kötelezettségek központosított fizetési adminisztrátora** és **Kötelezettségkifizetési adminisztrátor** – A szállítói számlák állapotának lekérdezése feladat hozzá van rendelve ezen szerepkörökhöz.
++ **Kötelezettségkezelő adminisztrátor** , **Kötelezettségkezelő vezető** , **Kötelezettségek központosított fizetési adminisztrátora** és **Kötelezettségkifizetési adminisztrátor** – A szállítói számlák állapotának lekérdezése feladat hozzá van rendelve ezen szerepkörökhöz.
 
 ### <a name="invoice-exception-details-page"></a>Kivételszámla-adatok lap
 

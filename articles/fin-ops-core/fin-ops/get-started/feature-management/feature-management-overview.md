@@ -3,7 +3,7 @@ title: Funkciókezelés áttekintése
 description: Ez a témakör bemutatja a funkciókezelés szolgáltatást, valamint azt, hogy hogyan használhatja azt.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 06/15/2020
+ms.date: 10/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: ae2c7a0d089c81a62932c415eed5f752e7fb4ffa
-ms.sourcegitcommit: 17a8e3d48da4354ba74e35031c320a16369bfcd5
+ms.openlocfilehash: 22e5333859d37ad33f5806d63fc874b1b5a52831
+ms.sourcegitcommit: 165e082e59ab783995c16fd70943584bc3ba3455
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "3499619"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "3967334"
 ---
 # <a name="feature-management-overview"></a>Funkciókezelés áttekintése
 
@@ -56,7 +56,7 @@ A **Funkciókezelés** munkaterület több lapot is tartalmaz, amelyek mindegyik
 
 Ha egy funkció nincs bekapcsolva, az **Engedélyezés most** gomb látható a részletek ablaktáblán. Ezt a gombot használhatja a funkció bekapcsolásához.
 
-- Válassza ki a bekapcsolni kívánt funkciót, majd a részletek ablaktáblán válassza az **Engedélyezés most**lehetőséget. A funkció be van kapcsolva.
+- Válassza ki a bekapcsolni kívánt funkciót, majd a részletek ablaktáblán válassza az **Engedélyezés most** lehetőséget. A funkció be van kapcsolva.
 
 Néhány funkció nem kapcsolható ki a bekapcsolás után. Ha a bekapcsolni kívánt funkció nem kapcsolható ki, egy figyelmeztetés jelenik meg. Ezen a ponton választhatja **Mégsem** lehetőséget a művelet visszavonásához és a szolgáltatás kikapcsolásának fenntartásához. Ha azonban az **Engedélyezés** lehetőséget választja a bekapcsoláshoz, és engedélyezi a funkciót, akkor nem fogja tudni kikapcsolni később.
 
@@ -72,7 +72,7 @@ A jövőre ütemezett bekapcsolású funkciók az **Ütemezett** lapon jelennek 
 
 Ha egy funkció a jövőre vonatkozóan van bekapcsolásra ütemezve, az **Ütemezés** gomb látható a részletek ablaktáblán. Ezzel a gombbal módosíthatja az **Engedélyezés dátuma** értékét egy másik dátumra.
 
-1. Válassza ki az ütemezett funkciót, amelyet át szeretne ütemezni, majd a részletek ablaktáblán válassza az **Ütemezés**lehetőséget.
+1. Válassza ki az ütemezett funkciót, amelyet át szeretne ütemezni, majd a részletek ablaktáblán válassza az **Ütemezés** lehetőséget.
 2. A megjelenő párbeszédpanelen az **Engedélyezés dátuma** mezőben adja meg azt az új dátumot, amikor a funkciót be kell kapcsolni.
 3. Válassza az **Engedélyezés** lehetőséget a funkció újraütemezéséhez, vagy a **Letiltás** lehetőséget az ütemezés megszüntetéséhez.
 
@@ -130,7 +130,7 @@ A **Funkciókezelés** nevű adatentitás segítségével exportálhatja a Funkc
 
 A következő példák azt mutatják be, hogy mi történik, ha a **Funkciókezelés** entitást használja az adatok importálásához.
 
-- Ha az **Engedélyezett** mező értékét **Igen**értékre módosítja, akkor a funkció be van kapcsolva, és az **Engedélyezés dátuma** mező az aktuális dátumra van állítva.
+- Ha az **Engedélyezett** mező értékét **Igen** értékre módosítja, akkor a funkció be van kapcsolva, és az **Engedélyezés dátuma** mező az aktuális dátumra van állítva.
 - Ha az **Engedélyezett** mező értékét **Nem** értékre módosítja, vagy az **EnableDate** mezőt üresen hagyja, akkor a funkció ki van kapcsolva, és az **Engedélyezés dátuma** mező törlődik. Nem lehet kikapcsolni a kötelező funkciókat vagy egy olyan funkciót, amely nem kapcsolható ki, ha be van kapcsolva.
 - Ha az **EnableDate** mező értékét a jövőbeli dátumra módosítja, akkor a szolgáltatás erre a dátumra van ütemezve.
 - Ha az **Engedélyezett** mező értékét **Igen** értékre módosítja, és az **EnableDate** mező értékét egy jövőbeli dátumra állítja, akkor a funkció az adott dátumra lesz ütemezve. 
@@ -179,3 +179,24 @@ A funkciótesztelések valós idejű be-és ki kapcsolók, amelyeket a Microsoft
 
 ### <a name="do-features-ever-get-flighted-off-without-the-customer-knowing-about-it"></a>Van-e olyan funkció, amely a vevő tudta nélkül is ki van kapcsolva? 
 Igen, ha egy funkció hatással van egy környezet működésére, és nem rendelkezik funkcionális hatással, akkor alapértelmezés szerint engedélyezve lehet.
+
+### <a name="how-can-feature-enablement-be-checked-in-code"></a>Milyen módon ellenőrizhető a funkció engedélyezése a kódban?
+A **isFeatureEnabled** módszert alkalmazza a **FeatureStateProvider** osztályon úgy, hogy a funkcióosztály egy példányát átadja a számára. Példa: 
+
+    if (FeatureStateProvider::isFeatureEnabled(BatchContentionPreventionFeature::instance()))
+
+### <a name="how-can-feature-enablement-be-checked-in-metadata"></a>Milyen módon ellenőrizhető a funkció engedélyezése a metaadatokban?
+A **FeatureClass** tulajdonsággal jelezheti, hogy néhány metaadatot társítottak egy funkcióhoz. A funkcióhoz használt osztálynevet használhatja, például **BatchContentionPreventionFeature** . Ezek a metaadatok csak az adott funkcióban láthatók. A **FeatureClass** tulajdonság a menükben, a menüelemekben, a sorszámozott értékekben és a tábla/nézet mezőkben érhető el.
+
+### <a name="what-is-a-feature-class"></a>Mi a funkcióosztály?
+A Funkciókezelő funkcióit a program *funkcióosztályokként* definiálja. A funkcióosztályok **IFeatureMetadata** -kat hajtanak végre, és a funkcióosztály attribútumát használják a Funkciókezelő munkaterületen való azonosításukhoz. A rendelkezésre álló funkcióosztályokra számos példa van, amelyeknek a kódban való engedélyezését a **FeatureStateProvider** API-val, a metaadatokban pedig a **FeatureClass** tulajdonsággal ellenőrizheti. Példa: 
+
+    [ExportAttribute(identifierStr(Microsoft.Dynamics.ApplicationPlatform.FeatureExposure.IFeatureMetadata))]
+    internal final class BankCurrencyRevalGlobalEnableFeature implements IFeatureMetadata
+    
+### <a name="what-is-the-ifeaturelifecycle-implemented-by-some-feature-classes"></a>Mit jelent az egyes funkcióosztályok által végrehajtott IFeatureLifecycle?
+Az IFeatureLifecycle a Microsoft egyik belső mechanizmusa a funkció életciklusa szakaszának jelzésére. A funkciók a következők lehetnek:
+- PrivatePreview – Tesztcsomagra van szükség ahhoz, hogy látható legyen.
+- PublicPreview – Alapértelmezés szerint megjelenik, de figyelmeztetés jelzi, hogy a funkció előnézetben van.
+- Közzétéve – Teljesen közzétéve.
+

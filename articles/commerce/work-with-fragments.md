@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 671caf1feeb7ac9e7d5a166c5de12540ab9b9792
-ms.sourcegitcommit: 97ceb24f191161ca601e0889a539df665834ac3b
+ms.openlocfilehash: b3e3299388190f03e761591a0c23164b705db9e8
+ms.sourcegitcommit: f16db76c1c235dfa445b50614bcee9219782d6dc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3818350"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "3961658"
 ---
 # <a name="work-with-fragments"></a>Töredékek használata 
 
@@ -61,8 +61,8 @@ Létrehozhat új töredéket hozhat, illetve egy meglévő modul konfigurációj
 Ha egy korábban konfigurált modult újra felhasználható töredékké szeretne átalakítani, hajtsa végre az alábbi lépéseket.
 
 1. Nyisson meg egy olyan lapot vagy sablont, amely a töredékké alakítandó modult tartalmazza.
-1. A bal oldali vázlat ablaktáblán vagy közvetlenül a fő vásznon, válassza ki az előzőleg konfigurált modult.
-1. Válassza ki a modul neve mellett lévő azt a három pont (**...**) a vázlat ablaktáblán vagy a kiválasztott modul eszköztárában található vásznon. 
+1. A bal oldali vázlat ablaktáblán vagy közvetlenül a vizuális oldalkészítőben, válassza ki az előzőleg konfigurált modult.
+1. Válassza ki a modul neve mellett lévő azt a három pont ( **...** ) a vázlat ablaktáblán vagy a kiválasztott modul eszköztárában, a vizuális oldalkészítőben. 
 1. Válassza ki a **Megosztás oldaltöredékként** lehetőséget. 
 1. A **Mentés oldaltöredékként** párbeszédpanelen adjon nevet a töredéknek.
 1. Az **OK** gombra kattintva mentheti a modulkonfigurációt olyan töredékként, amely más lapokhoz is hozzáadható.
@@ -94,8 +94,8 @@ A következő eljárások leírják a töredékek hozzáadását, eltávolítás
 
 Töredék hozzáadásához a oldalhoz tegye a következőket:
 
-1. A bal oldali vázlat ablaktáblán vagy közvetlenül a fő vásznon, válassza ki azt a tárolót vagy helyet, amelyhez hozzá szeretné adni a származtatott modulokat.
-1. Az online ablaktáblán válassza ki a tároló vagy a hely neve melletti három pontot (**...**).  Másik lehetőségként, ha a fő vásznat használja, válassza ki a plusz jelet (**+**).  
+1. A bal oldali vázlat ablaktáblán vagy közvetlenül a vizuális oldalkészítőben, válassza ki azt a tárolót vagy helyet, amelyhez hozzá szeretné adni a származtatott modulokat.
+1. Az online ablaktáblán válassza ki a tároló vagy a hely neve melletti három pontot ( **...** ).  Másik lehetőségként, ha a vizuális oldalkészítőt használja, válassza ki a pluszjelet ( **+** ).  
 1. Válassza a **Töredék hozzáadása** lehetőséget.
 
     ![A meglévő töredékek bővítőhelyhez vagy konténerhez történő hozzáadásának képernyőfelvétele](./media/add-fragment.png)
@@ -115,7 +115,7 @@ Töredék hozzáadásához a oldalhoz tegye a következőket:
 
 A következő lépésekkel lehet eltávolítani egy töredéket egy helyről vagy tárolóból az oldalon.
 
-1. A bal oldali vázlat ablaktáblán válassza az eltávolítani kívánt töredék neve melletti három pontot (**...**), majd válassza a kuka gombját.  Másik lehetőségként kiválaszthatja a töredéket a vásznon, és kiválaszthatja a kuka lehetőséget a töredék eszköztárában.
+1. A bal oldali vázlat ablaktáblán válassza az eltávolítani kívánt töredék neve melletti három pontot ( **...** ), majd válassza a kuka gombját.  Másik lehetőségként kiválaszthatja a töredéket a vizuális oldalkészítőben, és kiválaszthatja a kuka lehetőséget a töredék eszköztárában.
 1. Amikor a program megkérdezi, hogy szeretné-e eltávolítani a töredéket, válassza az **OK** lehetőséget.
 
 > [!NOTE]

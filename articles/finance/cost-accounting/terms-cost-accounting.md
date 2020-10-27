@@ -16,15 +16,15 @@ ms.custom: 223114
 ms.assetid: 1c798592-77d0-4a8f-beaa-9159c75957da
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b2e4f16ef6f96261c819289e6ade76e15005ce0e
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 948beb7baa19c69530dca52b5d4c119b69f8f011
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2178096"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3977527"
 ---
 # <a name="cost-accounting-terminology"></a>Költségkönyvelési terminológia
 
@@ -202,6 +202,6 @@ A kimutatások a költségellenőrzésért felelős vezetők számára létrehoz
 
 **Verzió**
 
-Verziók segítségével történik a különböző eredmények szimulálása, megtekintése és összevetése. Alapértelmezés szerint minden tényleges költséget egy alapverzióban tekintünk meg, amelynek a neve a *tényleges*. A költségvetések és a számítások esetében tetszőleges számú verzióval dolgozhat. Például költségvetési adatokat importálhat az eredeti verzióban, majd felülvizsgálhatja a költségvetést egy módosított verzióban. A számításokhoz több verziót hozhat létre. Ezekben a különböző verziókban számításokat hozhat létre különböző, a költségfelosztáshoz alkalmazott számítási szabályok segítségével.
+Verziók segítségével történik a különböző eredmények szimulálása, megtekintése és összevetése. Alapértelmezés szerint minden tényleges költséget egy alapverzióban tekintünk meg, amelynek a neve a *tényleges* . A költségvetések és a számítások esetében tetszőleges számú verzióval dolgozhat. Például költségvetési adatokat importálhat az eredeti verzióban, majd felülvizsgálhatja a költségvetést egy módosított verzióban. A számításokhoz több verziót hozhat létre. Ezekben a különböző verziókban számításokat hozhat létre különböző, a költségfelosztáshoz alkalmazott számítási szabályok segítségével.
 
 

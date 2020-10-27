@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b167714dc81cf0e4ee70d7092f2ec030043abe71
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 1e50b4322c65097ab4f8aba9c36e4d5e6cc4c01b
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3202606"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3978630"
 ---
 # <a name="create-service-task-relations"></a>Szervizfeladat-kapcsolatok létrehozása    
 
@@ -51,7 +51,7 @@ A szolgáltatási szerződéshez kapcsolt szervizfeladatok elérhetők minden ol
 
 ## <a name="create-a-relation-with-a-service-order"></a>Kapcsolat létrehozása szervizrendeléssel
 
-1.  Kattintson a következőkre: **Szolgáltatáskezelés** \> **Közös** \> **Szervizrendelések** \> **Szervizrendelések**.
+1.  Kattintson a következőkre: **Szolgáltatáskezelés** \> **Közös** \> **Szervizrendelések** \> **Szervizrendelések** .
 
 2.  Válasszon ki egy meglévő szervizrendelést, vagy hozzon létre egy új szervizrendelést.
 

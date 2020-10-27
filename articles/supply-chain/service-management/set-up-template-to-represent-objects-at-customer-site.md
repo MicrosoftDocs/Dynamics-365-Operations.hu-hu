@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 35c7237bd84aeb13f6c24626a6aaa722f8ad5756
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 823ef5cddbba8a72bd67ba87edd1aa497022a81e
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3206703"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3981793"
 ---
 # <a name="set-up-template-to-represent-objects-at-customer-site"></a>Sablon beállítása objektumok jelölésére vevőoldalon. 
 
@@ -40,7 +40,7 @@ Az alábbi eljárással létrehozhat egy sablont, amely objektumokat képvisel e
 
 4.  Kattintson **A szolgáltatás tárgyai** lehetőségre, ha csatolni szeretne egy darabjegyzéksablont a szolgáltatási szerződéshez.
 
-5.  Válassza ki a szolgáltatási tárgyat **A szolgáltatás tárgyai** képernyőn, majd kattintson a következőre: **Funkciók** \> **Sablon AJ csatolása**.
+5.  Válassza ki a szolgáltatási tárgyat **A szolgáltatás tárgyai** képernyőn, majd kattintson a következőre: **Funkciók** \> **Sablon AJ csatolása** .
 
 6.  A **Sablon AJ csatolása** képernyőn válasszon ki egy darabjegyzéksablont a **Sablonanyagjegyzék** listáról, majd kattintson az **OK** gombra.
 

@@ -14,15 +14,15 @@ ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 146eb0822566a9bae59d486e39c8227938eb2375
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 25fabeeb9bcedd888cdebc1ffeee9f0aef5b43cd
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3216850"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3980840"
 ---
 # <a name="set-up-a-mobile-device-menu-item-to-register-received-items"></a>Mobileszköz-menüelem beállítása a bevételezett elemek regisztrálásához
 
@@ -38,7 +38,7 @@ Ezt az útmutatót használhatja az USMF bemutatócégen. Ezt az eljárást a ra
 2. Válassza az **Új** lehetőséget.
 3. Írjon be egy értéket a **Menüelem neve** mezőbe. Ez az egyedi azonosító a mobileszköz menücikk számára. Például megadhatja a `My PO registration` kifejezést.  
 4. Érték beírása a **Cím** mezőbe. Ez az a cím, amely a felhasználók mobileszközein a jelenik meg. Például megadhatja a `PO registration` kifejezést.  
-5. A **Mód** mezőben válassza ki a **Munka** lehetőséget. A beszerzési rendelés sorhoz érkezett készleten lévő mennyiség regisztrálása egy munkát hoz létre a cikkek mozgatására, az átvételi helyről a készletbe. Csak a cikkek beregisztrálása után jön létre a munka. Ezért hagyja a **Meglévő munka használata** beállítás értékét **Nem**-en.
+5. A **Mód** mezőben válassza ki a **Munka** lehetőséget. A beszerzési rendelés sorhoz érkezett készleten lévő mennyiség regisztrálása egy munkát hoz létre a cikkek mozgatására, az átvételi helyről a készletbe. Csak a cikkek beregisztrálása után jön létre a munka. Ezért hagyja a **Meglévő munka használata** beállítás értékét **Nem** -en.
 6. Az **Általános** szakasz **Munkalétrehozási folyamat** mezőjében válassza ki a **Beszerzési rendelési cikk bevételezése** lehetőséget.
     - A beszerzési rendelési sort egyedi módon azonosítani kell, mielőtt az aktuális készletet a raktárban regisztrálni lehet. Ebben az esetben a mobileszköz regisztrál egy beszerzési rendelés számot és cikkszámot, ez lehetővé teszi a rendszernek a BR sor azonosítását. Betárolás munka jön létre, és egy másik dolgozó kitárolhatja. A kiválasztott munka-létrehozási módszer határozza meg, hogy mely mezők válnak elérhetővé az **Általános** gyorslapon.  
     - Ha az **Alapértelmezett adatok** használata beállítást választja, az **Alapértelmezett** gomb aktív. Itt kiválaszthatja a dolgozó napi munkájához szükséges adatokat megjelenítő mezőket, így ezek az értékek megjelennek a mobileszközön.  

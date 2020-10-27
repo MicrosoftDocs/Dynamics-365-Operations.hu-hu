@@ -13,15 +13,15 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: omulvad
+ms.author: kamaybac
 ms.search.validFrom: 2019-10-1
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 2d8d6e67040f19cac99f8e0164296ef49768496e
-ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
+ms.openlocfilehash: b86fe2f3ea4321dbe598233018934187ba0d713a
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "3530236"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3983979"
 ---
 # <a name="auto-release-shipment-for-cross-docking"></a>Szállítmány automatikus kiadása áttároláshoz
 
@@ -85,10 +85,10 @@ Ennél a helyzetnél a demo adatokat kell telepíteni, és az **USMF** demó ada
 
 1. Ugorjon a **Raktárkezelés** \> **Beállítás** \> **Munka** \> **Munkasablonokra** helyre.
 2. Válassza az **Új** lehetőséget.
-3. A **Sorozat száma** mezőben írja be az **1**-es számot.
-4. Az **Áttárolási sablon azonosítója** mezőben adjon meg egy nevet, például **XDock\_RAF**.
+3. A **Sorozat száma** mezőben írja be az **1** -es számot.
+4. Az **Áttárolási sablon azonosítója** mezőben adjon meg egy nevet, például **XDock\_RAF** .
 5. Válassza az **Igény szerinti kiadási irányelv** mezőben az **Ellátási elismervény esetén** lehetőséget.
-6. A **Raktár** mezőbe írja be annak a raktárnak a számát, amelybe be szeretné állítani az áttárolási folyamatot. Ehhez a példához válassza ki a következőt: **51**.
+6. A **Raktár** mezőbe írja be annak a raktárnak a számát, amelybe be szeretné állítani az áttárolási folyamatot. Ehhez a példához válassza ki a következőt: **51** .
 
     > [!NOTE]
     > Amint kiválasztja az **Ellátási elismervény esetén** lehetőséget az igény szerinti kiadás irányelvnek a sablonhoz, az oldal többi mezője nem érhető el. Hasonlóképpen nem lehet megadni beszerzési forrásokat sem. Ez a viselkedés azért fordul elő, mert automatikus kiadású szállítmányt használó áttárolási funkció csak termelési rendeléseket támogat ellátási forrásként, és azt igényli, hogy az értékesítési rendelések és a termelési rendelések között legyen jelölés. Ha azt választja, hogy a **Beszerzési nyugta** előtt legyen az igény szerinti kiadás házirendje, akkor elérhetők a **Tervezés** és az **Ellátási források** lap mezői elérhetők és szerkeszthetők.
@@ -104,11 +104,11 @@ Ha korlátozni szeretné, hogy milyen típusú raktárakban állíthatók be az 
 
 #### <a name="work-templates"></a>Munkasablonok
 
-1. Ugrás a **Raktárkezelés** \> **Beállítás** \> **Munka** \> **Munkasablonokra**.
+1. Ugrás a **Raktárkezelés** \> **Beállítás** \> **Munka** \> **Munkasablonokra** .
 2. A **Munka rendeléstípusa** mezőben válassza ki az **Áttárolás** elemet.
 3. Válassza az **Új** lehetőséget.
-4. A **Sorozat száma** mezőben írja be az **1**-es számot.
-5. A **Munkasablon** azonosítója mezőbe írjon be egy nevet, például **CrossDock\_51**.
+4. A **Sorozat száma** mezőben írja be az **1** -es számot.
+5. A **Munkasablon** azonosítója mezőbe írjon be egy nevet, például **CrossDock\_51** .
 6. Válassza a **Mentés** lehetőséget.
 7. A **Munkasablon részletei** szakaszban válassza az **Új** elemet.
 8. Az új sorhoz a **Munkatípus** mezőben válassza ki a **Kitárolás** elemet. A **Munkaosztály-azonosító** mezőben válassza a **CrossDock** lehetőséget.
@@ -124,13 +124,13 @@ A áttárolás esetében a késztermékek szokásos elraktározásához hasonló
 1. Ugrás a **Raktárkezelés** \> **Beállítás** \> **Helyutasítások** elemre.
 2. A **Munka rendeléstípusa** mezőben válassza ki az **Áttárolás** elemet.
 3. Válassza az **Új** lehetőséget.
-4. A **Sorozat száma** mezőben írja be az **1**-es számot.
+4. A **Sorozat száma** mezőben írja be az **1** -es számot.
 5. A **Név** mezőbe írjon be egy nevet, például **Baydoor.**
 6. A **Munkatípus** mezőben válassza a **Betárolás** lehetőséget.
 7. A **Site** mezőben válasszon ki a **5** értéket.
 8. A **Raktár** mezőben válassza ki az **51** értéket.
 9. A **Sorok** gyorslapon válassza az **Új** értéket.
-10. A **Záró mennyiség** mezőbe írja be a tartomány maximális mennyiségét (például **1000000**).
+10. A **Záró mennyiség** mezőbe írja be a tartomány maximális mennyiségét (például **1000000** ).
 11. Válassza a **Mentés** lehetőséget.
 12. A **Helyutasítások műveletei** gyorslapon válassza az **Új** lehetőséget.
 13. A **Név** mezőbe írjon be egy nevet, például **Baydoor.**
@@ -168,7 +168,7 @@ Ha a késztermékek mennyiségét át szeretné tárolni a társított értékes
 12. Válassza a **Termelés** \> **Termelési kitárolás** lehetőséget.
 13. Adja meg, hogy melyik munkaazonosító induljon el, és végezze el a nyersanyag kitárolását. 
 
-    Miután a munkát készként jelentik, a nyersanyagok mennyisége a termelési bemenet helyen elérhető el (**005** az USMF demóadatokban), és a termelési rendelés végrehajtása elindulhat.
+    Miután a munkát készként jelentik, a nyersanyagok mennyisége a termelési bemenet helyen elérhető el ( **005** az USMF demóadatokban), és a termelési rendelés végrehajtása elindulhat.
 
 14. A **Termelési rendelés** lap műveleti ablakának **Termelési rendelés** lapján a **Feldolgozás** csoportban válassza a **Kezdés** elemet, majd válassza az **OK** lehetőséget.
 15. Az alkalmazásban nyissa meg a **Termelés** \> **Befejezés és betárolás** lehetőséget.

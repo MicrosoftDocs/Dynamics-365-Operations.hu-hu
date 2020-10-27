@@ -16,15 +16,15 @@ ms.custom: 201853
 ms.assetid: c0286bba-f54b-42de-904c-81fd796bdd1d
 ms.search.region: global
 ms.search.industry: Product information
-ms.author: conradv
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 424919625f39127a1b2dcc6be446d01804f79f7e
-ms.sourcegitcommit: 3cc289399e8879b499e31a9559e1031d6ca8570a
+ms.openlocfilehash: 08cdf168ab64a34e781c85db2990f483ce7f7463
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "3885969"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3980990"
 ---
 # <a name="product-related-translations-faq"></a>Termékekkel kapcsolatos GYIK
 
@@ -57,12 +57,12 @@ A termékattribútum-fordítások létrehozásához tegye a következőket:
 2.  A **Beállítás** pontban kattintson az **Attribútumok** lehetőségre, majd kattintson az **Attribútumok** pontra.
 3.  A **Attribútumok** lapon kattintson a **Fordítás** lehetőségre.
 4.  A **Szöveg fordítása** lapon a **Nyelv** mezőben válasszon egy nyelvet. További nyelvek hozzáadásához bontsa ki a **Nyelv** mezőt, majd kattintson az **OK** lehetőségre.
-5.  A **Lefordított szöveg** csoportban adja meg a fordításokat a **Leírás**, a **Rövid név** és a **Súgószöveg** mezőkben.
+5.  A **Lefordított szöveg** csoportban adja meg a fordításokat a **Leírás** , a **Rövid név** és a **Súgószöveg** mezőkben.
 
 Termékdimenzió-értékek létrehozásához tegye a következőket:
 1.  Kattintson a **Termékinformációk kezelése** &gt; **Közös** &gt; **Kiadott termékek** lehetőségre.
 2.  Válasszon ki egy terméket, majd kattintson a **Termékdimenziók** elemre.
-3.  Válasszon egyet a termékdimenziók linkjei közül: **Konfigurációk**, **Méretek**, **Színek** vagy **Stílus**.
+3.  Válasszon egyet a termékdimenziók linkjei közül: **Konfigurációk** , **Méretek** , **Színek** vagy **Stílus** .
 4.  Válasszon egy dimenzióértéket, majd kattintson a **Fordítás** elemre.
 5.  A **Szöveg fordítása** lapon a **Nyelv** mezőben válasszon egy nyelvet. További nyelvek hozzáadásához bontsa ki a **Nyelv** mezőt, majd kattintson az **OK** lehetőségre.
 6.  A **Lefordított szöveg** csoportban adja meg a fordításokat a **Név** és a **Leírás** mezőkben.
@@ -78,9 +78,9 @@ Az Ön terméke egy póló, amely különböző méretű és színű változatok
 -   Méretdimenzió-értékek méret: kicsi, közepes, nagy
 -   Színdimenzió-értékek: piros, zöld, fekete
 
-A Kicsi és Piros dimenzióértékeken alapuló termékváltozat neve **\#3:Small:Red**.  
+A Kicsi és Piros dimenzióértékeken alapuló termékváltozat neve **\#3:Small:Red** .  
 
-Ha a vevő meg kíván vásárolni néhány kis méretű, piros pólót, a póló nevének francia nyelven kell szerepelnie a számlán. A dimenzióértékeket – a Kicsit és a Pirosat – le kell fordítani franciára, a termékváltozat neve pedig **\#3:Petit:Rouge**.
+Ha a vevő meg kíván vásárolni néhány kis méretű, piros pólót, a póló nevének francia nyelven kell szerepelnie a számlán. A dimenzióértékeket – a Kicsit és a Pirosat – le kell fordítani franciára, a termékváltozat neve pedig **\#3:Petit:Rouge** .
 <table>
 <colgroup>
 <col width="100%" />
@@ -113,12 +113,12 @@ Vállalata különböző stílusú pólókat gyárt, és minden stílus Kicsi, K
 Termékkel dimenzióváltozat-csoporton keresztül társított dimenzióértéket a termékváltozat-csoportban tud karbantartani.   
 Dimenzióérték-csoport létrehozásához tegye a következőket:
 1.  Kattintson a **Termékinformációk kezelése** &gt; **Beállítás** &gt; **Változatcsoportok** lehetőségre.
-2.  Válasszon a **Méretcsoportok**, **Színcsoportok** vagy **Stíluscsoportok** közül.
-3.  Kattintson az **Új** lehetőségre, és írjon be egy csoportnevet a **Méret** **csoport**, **Színcsoport** vagy **Stíluscsoport** mezőbe. Kattintson a **Méretek**, **Színek** vagy **Stílusok** lehetőségre sorok csoportokban történő létrehozásához.
+2.  Válasszon a  , **Színcsoportok** vagy **Stíluscsoportok** közül.
+3.  Kattintson az **Új** lehetőségre, és írjon be egy csoportnevet a **Méret** **csoport** , **Színcsoport** vagy **Stíluscsoport** mezőbe. Kattintson a **Méretek** , **Színek** vagy **Stílusok** lehetőségre sorok csoportokban történő létrehozásához.
 4.  A **Méret** **csoport** sorok, **Szín** **csoport** **sorok** vagy **Stílus csoportsorok** lapon kattintson az **Új** lehetőségre, majd hozza létre a csoportokban használandó méreteket, színeket és a stílusokat.
 
 Az értékek fordításainak dimenzióérték-csoportban történő kezeléséhez kövesse az alábbi lépéseket:
-1.  Kövesse az előző – dimenzióérték-csoportot létrehozó – eljárás lépéseit a **Méretcsoportsorok**, a **Színcsoportsorok** vagy a **Stíluscsoportsorok** lap megnyitásához.
+1.  Kövesse az előző – dimenzióérték-csoportot létrehozó – eljárás lépéseit a **Méretcsoportsorok** , a **Színcsoportsorok** vagy a **Stíluscsoportsorok** lap megnyitásához.
 2.  Kattintson a **Szöveg fordítása** lehetőségre. A **Szöveg fordítása** lapon a **Lefordított szöveg** csoportban adja meg a fordításokat a **Név** és a **Leírás** mezőkben.
 
 ## <a name="when-can-translations-of-product-related-information-be-managed"></a>Mikor módosíthatók a termékkel kapcsolatos információk fordításai?

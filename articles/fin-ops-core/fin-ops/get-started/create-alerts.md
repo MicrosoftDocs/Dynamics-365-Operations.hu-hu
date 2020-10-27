@@ -3,7 +3,7 @@ title: Figyelmeztetési szabályok létrehozása
 description: Ez a témakör a figyelmeztetések kapcsolatban tartalmaz tájékoztatást, és ismerteti, hogyan kell létrehozni egy figyelmeztetésszabályt, hogy értesítést kapjon például az olyan eseményekről, mint az elérkező dátumok vagy bizonyos módosítások.
 author: tjvass
 manager: AnnBe
-ms.date: 02/19/2020
+ms.date: 10/08/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
-ms.openlocfilehash: 85d4774bc710f0c48b384601e5505f11394cf5d5
-ms.sourcegitcommit: a688c864fc609e35072ad8fd2c01d71f6a5ee7b9
+ms.openlocfilehash: 94b68138066867fad641c70a1674c9292920ec6a
+ms.sourcegitcommit: d540998ad6f9c894ca99498c045ae4b86b779806
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "3075924"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "3970679"
 ---
 # <a name="create-alert-rules"></a>Figyelmeztetési szabályok létrehozása
 
@@ -35,7 +35,7 @@ Egy figyelmeztetési szabály létrehozása esetén meg kell adni a feltételeke
 
 ## <a name="ensure-the-alert-batch-jobs-are-running"></a>A figyelmeztetési kötegelt feladatok futásának biztosítása
 
-Az adatmódosítási és a határidővel kapcsolatos figyelmeztetéseket tartalmazó kötegelt feladatok futtatása szükséges a figyelmeztetési feltételek feldolgozásához, valamint az értesítések küldéséhez. A kötegelt feladatok futtatásához nyissa meg a **Rendszeradminisztráció** > **Ismétlődő feladatok** > **Figyelmeztetések** pontot, és adjon hozzá egy új kötegelt feladatot a **Módosításon alapuló figyelmeztetésekhez** és/vagy a **Határidős figyelmeztetésekhez**. Ha hosszú és gyakran futtatott kötegelt feladatra van szükség, válassza az **Ismétlődést**, és állítsa **Nincs befejezési dátum** értékre, az **Ismétlődési minta** értéke legyen **Percek**, a **Szám** pedig **1**.
+Az adatmódosítási és a határidővel kapcsolatos figyelmeztetéseket tartalmazó kötegelt feladatok futtatása szükséges a figyelmeztetési feltételek feldolgozásához, valamint az értesítések küldéséhez. A kötegelt feladatok futtatásához nyissa meg a **Rendszeradminisztráció** > **Ismétlődő feladatok** > **Figyelmeztetések** pontot, és adjon hozzá egy új kötegelt feladatot a **Módosításon alapuló figyelmeztetésekhez** és/vagy a **Határidős figyelmeztetésekhez** . Ha hosszú és gyakran futtatott kötegelt feladatra van szükség, válassza az **Ismétlődést** , és állítsa **Nincs befejezési dátum** értékre, az **Ismétlődési minta** értéke legyen **Percek** , a **Szám** pedig **1** .
 
 ## <a name="events"></a>Események
 
@@ -87,8 +87,19 @@ A figyelmeztetéseket az üzleti események keretrendszerén kívül is el lehet
 2. A műveleti ablakban a **Beállítások** lapon a **Megosztás** csoportban válassza az **Figyelmeztetési szabály létrehozása** lehetőséget.
 3. A **Figyelmeztetési szabály létrehozása** párbeszédablak **Mező** mezőjében válassza ki a megfigyelni kívánt mezőt.
 4. Az **Esemény** mezőben jelölje ki az esemény típusát.
-5. A **Figyelmeztetés időszaka** gyorslapon válassz a kívánt beállítást. Ha üzleti eseményként szeretné elküldeni a figyelmeztetést, győződjön meg arról, hogy az **Egész szervezet** beállítás értéke **Nem**.
+5. A **Figyelmeztetés időszaka** gyorslapon válassz a kívánt beállítást. Ha üzleti eseményként szeretné elküldeni a figyelmeztetést, győződjön meg arról, hogy az **Egész szervezet** beállítás értéke **Nem** .
 6. Ha azt szeretné, hogy egy figyelmeztetési szabály egy megadott dátumon érvényét veszítse, válasszon ki egy befejezési dátumot a **Figyelmeztetés vége** gyorslapon.
 7. A **Figyelmeztetés módja** gyorslapon a **Tárgy** mezőben fogadja el az e-mail üzenet alapértelmezett tárgyát, vagy adjon meg egy új tárgyat. A szöveg a figyelmeztetés kezdeményezése esetén küldött e-mail üzenet tárgya lesz. Ha üzleti eseményként szeretné elküldeni a figyelmeztetést, akkor a **Külső küldést** az **igen** értékre állítja.
 8. Az **Üzenet** mezőbe beírható egy üzenet, ez azonban nem kötelező. Ez az az üzenet, amely megjelenik egy figyelmeztetés kezdeményezése esetén.
 9. Kattintson az **OK** gombra a beállítások mentéséhez és a figyelmeztetési szabály létrehozásához.
+
+## <a name="limitations-and-workarounds"></a>Korlátozások és megkerülő megoldások
+
+### <a name="workaround-for-creating-alerts-for-the-secondary-data-sources-of-a-form"></a>Megkerülő megoldás az űrlap másodlagos adatforrásaihoz tartozó figyelmeztetések létrehozásához
+Nem hozhatók létre figyelmeztetések az űrlapok egyes másodlagos adatforrásaihoz. Ha például figyelmeztetéseket hoz létre a vevői vagy a szállítói feladási profilok űrlapon, akkor csak a fejléc (CustLedger vagy VendLedger) mezői érhetők el, a dimenziószámlák pedig nem. Ehhez a korlátozáshoz a megkerülő megoldás az, ha a **SysTableBrowser** segítségével a táblát elsődleges adatforrásként nyitja meg. 
+1. Nyissa meg a táblát a **SysTableBrowser** űrlapon.
+    ```
+        https://<EnvironmentURL>/?cmp=USMF&mi=SysTableBrowser&TableName=<TableName>
+    ```
+2. Hozzon létre figyelmeztetést a SysTableBrowser űrlapról.
+

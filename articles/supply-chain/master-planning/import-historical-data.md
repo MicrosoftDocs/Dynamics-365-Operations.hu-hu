@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.assetid: 59c0d269-9db0-48e7-b8c7-9a388781a9ca
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: roxanad
+ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 97e84b478b8fd65313d8c3be5c9a50756d8b4924
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: c66481b1dd8650960cad2947425c1e6c7450afcb
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3213841"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3982821"
 ---
 # <a name="import-historical-data-for-demand-forecasts"></a>Előzményadatok importálása az igény-előrejelzésekhez
 
@@ -36,7 +36,7 @@ Az **Adatkezelés** munkaterületen megtekintheti az entitás összes mezőjéne
 1. Nyissa meg az **Adatkezelés** munkaterületet.
 2. Kattintson az **Adatentitások** mozaikra.
 3. Keresse ki a **Korábbi külső igény** entitáslistáját.
-4. Kattintson a **Célmezők** pontra. A következő entitásmezők kötelezőek: hely (**DeliveringSiteId**), dátum (**DemandDate**), mennyiség (**DemandQuantity**), továbbá vagy a cikkszám (**ItemNumber**), vagy a cikkfelosztási kulcs (**ProductAllocationKeyId**).
+4. Kattintson a **Célmezők** pontra. A következő entitásmezők kötelezőek: hely ( **DeliveringSiteId** ), dátum ( **DemandDate** ), mennyiség ( **DemandQuantity** ), továbbá vagy a cikkszám ( **ItemNumber** ), vagy a cikkfelosztási kulcs ( **ProductAllocationKeyId** ).
 
 Az adatentitás használatához rendelkeznie kell egy olyan Microsoft Excel fájllal vagy CSV-fájllal, amely tartalmazza a korábbi igényadatokat. Az alábbi példa az adatok CSV-fájlból való importálását mutatja be.
 
@@ -47,7 +47,7 @@ A következő fájlt példaként használhatja. Töltse le a [HistoricalDemandDa
 1. Válassza ki azt a vállalatot, amelyikbe a korábbi igényadatokat importálni szeretné.
 2. Nyissa meg az **Adatkezelés** munkaterületet.
 3. Kattintson az **Importálás** mozaikra.
-4. Adjon meg egy nevet az importálási projektnek, mint például a következőt: **A D0001 cikk korábbi igényének importálása**.
+4. Adjon meg egy nevet az importálási projektnek, mint például a következőt: **A D0001 cikk korábbi igényének importálása** .
 5. A **Forrásadatok formátuma** mezőben válassza ki az importált fájl formátumát. Ennél a példánál a HistoricalDemandData fájl importálásához jelölje be a **CSV** lehetőséget.
 6. Az **Entitásnév** mezőben válassza a **Korábbi külső igény** lehetőséget.
 7. Mentse a fájlt a számítógépre, majd töltse fel.

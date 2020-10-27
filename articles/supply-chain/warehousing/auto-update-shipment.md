@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: baa8207f9f3a3de071033c4c70f60a339ec5e083
-ms.sourcegitcommit: d25d0feb3f8a5a760eba50ba5f46e1db02737d25
+ms.openlocfilehash: 7fa2684340f5ce45b99ff9aee9937071f936b81a
+ms.sourcegitcommit: 2bc8e760c7a82572c7eafd51f2e57ef11b4ca98b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "3677338"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "3900986"
 ---
 # <a name="shipment-auto-updates"></a>Szállítmányok automatikus frissítései
 
@@ -39,16 +39,16 @@ A szállítmányok automatikus frissítése funkció az értékesítésirendelé
 
 A szállítmányok automatikus frissítése funkció elsősorban a szállítmány állapotára alapoz annak meghatározására, hogy a rakománysorban szereplő mennyiséget módosítani kell-e egy értékesítésirendelés-sorban vagy az átmozgatási rendelési sorban. Elsősorban a szállítmány állapotán alapul annak meghatározása, hogy mikor kell automatikusan új rakománysort adni egy meglévő rakományhoz. Ha a szállítmány állapota **Hullámba sorolva** vagy magasabb, akkor nem történik automatikus frissítés.
 
-Az automatikus frissítések esetében is figyelembe van véve a hullám állapota. Amikor a rakománysorhoz kapcsolódó hullám állapota **Várakoztatva**, **Végrehajtás folyamatban**, **Kiadva**, **Kitárolva** vagy **Kiszállítva**, ha egy felhasználó megpróbálja csökkenteni a mennyiséget egy terhelési soron (az értékesítési rendelési sor vagy az átviteli rendelési sor mennyiségi csökkentésével), a következő hibaüzenet jelenik meg: „A foglalások nem távolíthatók el, mert létezik a foglalásokon alapuló munka”. Ezenkívül amikor a hullám a korábban említett hullám-állapotok egyikével rendelkezik, ha a felhasználó indirekt módon megpróbálja növelni a rakománysor terhelését azáltal, hogy csökkenti a mennyiséget az értékesítési rendelés sorában, a rakománysorban található mennyiség nem növekszik automatikusan. Ebben az esetben a rakománysort manuálisan kell frissíteni.
+Az automatikus frissítések esetében is figyelembe van véve a hullám állapota. Amikor a rakománysorhoz kapcsolódó hullám állapota **Várakoztatva** , **Végrehajtás folyamatban** , **Kiadva** , **Kitárolva** vagy **Kiszállítva** , ha egy felhasználó megpróbálja csökkenteni a mennyiséget egy terhelési soron (az értékesítési rendelési sor vagy az átviteli rendelési sor mennyiségi csökkentésével), a következő hibaüzenet jelenik meg: „A foglalások nem távolíthatók el, mert létezik a foglalásokon alapuló munka”. Ezenkívül amikor a hullám a korábban említett hullám-állapotok egyikével rendelkezik, ha a felhasználó indirekt módon megpróbálja növelni a rakománysor terhelését azáltal, hogy növeli a mennyiséget az értékesítési rendelés sorában, a rakománysorban található mennyiség nem növekszik automatikusan. Ebben az esetben a rakománysort manuálisan kell frissíteni.
 
 ## <a name="scenarios"></a>Esetek
 
 A szállítmány automatikus frissítése funkció négy esetet támogat: új rendelési sor hozzáadása, egy rendeléssor mennyiségének növelése, egy rendelési sorban szereplő mennyiség csökkentése és egy rendelési sor eltávolítása.
 
-- **Új rendelési sor létrehozása** – Amikor a **Szállítmány automatikus frissítése** mezőben a **Raktárak** gyorslapon a **Raktárak** oldalon (**Raktárkezelés \> Beállítások \> Raktár \> Raktárak**) **Mindig** értékre van állítva, ha van szállítmány a rendeléshez, és egy új rendelési sort ad hozzá egy értékesítési rendeléshez vagy átmozgatási rendeléshez, miután az értékesítési rendeléshez már létrehoztak egy rakományt a meglévő rakomány nem frissül. Létrejön egy új rakománysor, amely nem hivatkozik a meglévő rakományra, és a meglévő szállítmányhoz van társítva. Az új sor hozzáadódik a rakományhoz, és ki van adva.
-- **Rendelési sorban szereplő mennyiség növelése** – Amikor a **Szállítmány automatikus frissítése** mező értéke **Mindig**, ha a rendeléshez létezik szállítmány, és egy meglévő értékesítésirendelés-sorban vagy átmozgatási rendelési sorban szereplő mennyiség megnő, miután már létrehoztak egy rakományt az értékesítési rendeléshez, a a rakománysor ugyanazzal a mennyiséggel nő, mint a rendelési sor. Ha a rakomány ki lett adva, de nem jött létre munka, akkor a program a rendelési sor összegével megegyező mennyiséggel növeli a rakománysort.
-- **Rendelési sorban szereplő mennyiség csökkentése** – Amikor a **Szállítmány automatikus frissítése** mező értéke **Mindig** vagy a **Mennyiség csökkenése**, ha van szállítmány a rendeléshez, és egy meglévő értékesítésirendelési-sorban vagy átviteli rendelési sorban a mennyiség csökken, miután már lett rakomány létrehozva az értékesítési rendeléshez, a kapcsolódó rakománysor is ennek megfelelően frissül, hacsak a rakománysoron található már nem egyenlő vagy kisebb, mint az új mennyiség a rendelési soron. Ebben az esetben a rakománysor nem érintett. Ha a rakomány ki lett adva, de nem jött létre munka, akkor a kapcsolódó rakománysorban szereplő mennyiség frissítve lesz, hogy ehhez illeszkedjen, kivéve ha a rakomány sorban szereplő mennyiség már kisebb vagy egyenlő mint a rendelési sor új mennyisége. Ebben az esetben a rakománysor érintett.
-- **Rendelési sor eltávolítása** – Amikor a **szállítmány automatikus frissítése** mező értéke **Mindig** vagy **Mennyiség csökkenésekor**, ha a felhasználó megpróbálja eltávolítani azt a rendelési sort, amelyhez meg van adva egy rakománysor, akkor egy hibaüzenet jelenik meg.
+- **Új rendelési sor létrehozása** – Amikor a **Szállítmány automatikus frissítése** mezőben a **Raktárak** gyorslapon a **Raktárak** oldalon ( **Raktárkezelés \> Beállítások \> Raktár \> Raktárak** ) **Mindig** értékre van állítva, ha van szállítmány a rendeléshez, és egy új rendelési sort ad hozzá egy értékesítési rendeléshez vagy átmozgatási rendeléshez, miután az értékesítési rendeléshez már létrehoztak egy rakományt a meglévő rakomány nem frissül. Létrejön egy új rakománysor, amely nem hivatkozik a meglévő rakományra, és a meglévő szállítmányhoz van társítva. Az új sor hozzáadódik a rakományhoz, és ki van adva.
+- **Rendelési sorban szereplő mennyiség növelése** – Amikor a **Szállítmány automatikus frissítése** mező értéke **Mindig** , ha a rendeléshez létezik szállítmány, és egy meglévő értékesítésirendelés-sorban vagy átmozgatási rendelési sorban szereplő mennyiség megnő, miután már létrehoztak egy rakományt az értékesítési rendeléshez, a a rakománysor ugyanazzal a mennyiséggel nő, mint a rendelési sor. Ha a rakomány ki lett adva, de nem jött létre munka, akkor a program a rendelési sor összegével megegyező mennyiséggel növeli a rakománysort.
+- **Rendelési sorban szereplő mennyiség csökkentése** – Amikor a **Szállítmány automatikus frissítése** mező értéke **Mindig** vagy a **Mennyiség csökkenése** , ha van szállítmány a rendeléshez, és egy meglévő értékesítésirendelési-sorban vagy átviteli rendelési sorban a mennyiség csökken, miután már lett rakomány létrehozva az értékesítési rendeléshez, a kapcsolódó rakománysor is ennek megfelelően frissül, hacsak a rakománysoron található már nem egyenlő vagy kisebb, mint az új mennyiség a rendelési soron. Ebben az esetben a rakománysor nem érintett. Ha a rakomány ki lett adva, de nem jött létre munka, akkor a kapcsolódó rakománysorban szereplő mennyiség frissítve lesz, hogy ehhez illeszkedjen, kivéve ha a rakomány sorban szereplő mennyiség már kisebb vagy egyenlő mint a rendelési sor új mennyisége. Ebben az esetben a rakománysor érintett.
+- **Rendelési sor eltávolítása** – Amikor a **szállítmány automatikus frissítése** mező értéke **Mindig** vagy **Mennyiség csökkenésekor** , ha a felhasználó megpróbálja eltávolítani azt a rendelési sort, amelyhez meg van adva egy rakománysor, akkor egy hibaüzenet jelenik meg.
 
 ## <a name="example-scenario"></a>Példaforgatókönyv
 
@@ -86,7 +86,7 @@ Fontos, hogy a hullám-létrehozási folyamat részeként a program nem hozza l�
 5. Válassza a **Mentés** lehetőséget.
 6. Válassza ki a művelet ablaktáblán a **Raktár** lapon a **Műveletek** csoportjának **Kiadás raktárba** parancsát. Létrejön egy szállítmány és egy hullám.
 
-Mivel megváltoztatta a hullám sablonját az előző eljárásban, nem jön létre rakomány vagy munka. A szállítmány állapota **Nyitott**, és a hullám állapota **Létrehozva**.
+Mivel megváltoztatta a hullám sablonját az előző eljárásban, nem jön létre rakomány vagy munka. A szállítmány állapota **Nyitott** , és a hullám állapota **Létrehozva** .
 
 ### <a name="decrease-the-quantity-on-a-sales-order-line"></a>Az értékesítési rendeléssoron szereplő mennyiség csökkentése
 
@@ -94,7 +94,7 @@ Ha csökkenteni szeretné az értékesítésirendelés-sorban szereplő mennyis�
 
 1. Ugorjon az **Értékesítés és marketing \> Értékesítési rendelések \> Minden értékesítési rendelés** pontra.
 2. Válassza ki azt az értékesítési rendelést, amelyet most adott ki a raktárba.
-3. Jelölje ki az értékesítésirendelés-sort. A **Mennyiség** mezőben módosítsa az értéket erről: **10**, erre: **8**.
+3. Jelölje ki az értékesítésirendelés-sort. A **Mennyiség** mezőben módosítsa az értéket erről: **10** , erre: **8** .
 4. Válassza ki az értékesítési rendelés sorában a **Raktár \> Szállítmány adatai** lehetőséget. A **Szállítmány részletei** lap **Rakománysorok** gyorslapján a mennyiség tükrözi az értékesítésirendelés-sor változását.
 
 ### <a name="increase-the-quantity-on-a-sales-order-line"></a>Az értékesítési rendeléssoron szereplő mennyiség növelése
@@ -103,7 +103,7 @@ Ha növelni szeretné az értékesítésirendelés-sorban szereplő mennyiséget
 
 1. Ugorjon az **Értékesítés és marketing \> Értékesítési rendelések \> Minden értékesítési rendelés** pontra.
 2. Válassza ki azt az értékesítési rendelést, amelyet korábban adott ki a raktárba.
-3. Módosítsa a sor mennyiségét **8**-ról **12**-re.
+3. Módosítsa a sor mennyiségét **8** -ról **12** -re.
 4. Válassza a **Mentés** lehetőséget.
 5. Térjen vissza az **Összes értékesítési rendelés** lapra, majd válassza ki újra az értékesítési rendelést.
 5. A Művelet ablaktábla **Raktár** lapjának **Kapcsolódó információk** csoportjában válassza a **Szállítmány részletei** elemet. A **Szállítmány részletei** lap **Rakománysorok** gyorslapján a mennyiség tükrözi az értékesítésirendelés-sor változását.
@@ -120,7 +120,7 @@ Annak ellenére, hogy a rakománysorban szereplő mennyiség 8-ról 12-re nőtt,
 1. Ugorjon az **Értékesítés és marketing \> Értékesítési rendelések \> Minden értékesítési rendelés** pontra.
 2. Válassza ki azt az értékesítési rendelést, amelyet korábban adott ki a raktárba.
 3. Hozzon létre egy sort az **A0002** cikkszámhoz.
-4. Írja be a **10** értéket a **Mennyiség** mezőbe. (Ügyeljen arra, hogy a **24**. raktárat használja.) Az új sor automatikusan hozzáadódik a meglévő szállítmányhoz.
+4. Írja be a **10** értéket a **Mennyiség** mezőbe. (Ügyeljen arra, hogy a **24** . raktárat használja.) Az új sor automatikusan hozzáadódik a meglévő szállítmányhoz.
 5. Válassza a **Mentés** lehetőséget.
 6. Térjen vissza az **Összes értékesítési rendelés** lapra, majd válassza ki újra az értékesítési rendelést.
 7. A Művelet ablaktábla **Raktár** lapjának **Kapcsolódó információk** csoportjában válassza a **Szállítmány részletei** elemet. A **Szállítmány részletei** oldalon a **Rakománysorok** gyorslapon figyelje meg a második sort.

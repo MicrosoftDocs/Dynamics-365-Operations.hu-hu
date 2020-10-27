@@ -16,15 +16,15 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: ''
-ms.author: conradv
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4a45d305f7229a2411770a38da8fbd349944e42a
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 8778d6a4d834af2151e0bced0b0f27d98f088a34
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3211514"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3986998"
 ---
 # <a name="formula-designer"></a>Képletszerkesztő
 
@@ -108,7 +108,7 @@ Használja az **Anyagjegyzéksorok** vagy a **Receptúra** funkciókat receptúr
 | Anyagjegyzéksorok &gt; Hozzáadás a sor előtt      | Párbeszédpanel megnyitása, ahol kiválaszthatja a kiválasztott receptúrasor előtt szerepeltetendő termékváltozatot.     | Ez a funkció csak akkor érhető el, ha ki van jelölve egy receptúrasor-csomópont. |
 | Anyagjegyzéksorok &gt; Hozzáadás anyagjegyzék-összetevőhöz | Párbeszédpanel megnyitása, ahol kiválaszthatja a kiválasztott receptúra végén szerepeltetendő termékváltozatot.   | Ez a funkció csak akkor érhető el, ha a kijelölt csomópont rendelkezik kijelölt receptúrával. Ha ez a funkció nem elérhető, egy receptúraverzió hiányozhat a kiválasztott cikkváltozathoz. Ebben az esetben kattintson a **Receptúra** &gt; **Verzió létrehozása** menüpontra a hiányzó verzió létrehozásához a kiválasztott csomópontban. |
 | Anyagjegyzéksorok &gt; Hozzáadás a sor után       | Párbeszédpanel megnyitása, ahol kiválaszthatja a kiválasztott receptúrasor után szerepeltetendő termékváltozatot.      | Ez a funkció csak akkor érhető el, ha ki van jelölve egy receptúrasor-csomópont. |
-| Receptúra &gt; Verzió létrehozása         | Új receptúraverzió vagy receptúra létrehozása a kiválasztott csomópont termékváltozatához.                     | Ez a funkció akkor érhető el, ha a kiválasztott receptúrasor-csomópont össze van kapcsolva egy cikkel, amelynek a termelési típusa **Anyagjegyzék** vagy **Receptúra**. |
+| Receptúra &gt; Verzió létrehozása         | Új receptúraverzió vagy receptúra létrehozása a kiválasztott csomópont termékváltozatához.                     | Ez a funkció akkor érhető el, ha a kiválasztott receptúrasor-csomópont össze van kapcsolva egy cikkel, amelynek a termelési típusa **Anyagjegyzék** vagy **Receptúra** . |
 | Receptúra &gt; Számítás            | Párbeszédpanel megnyitása, ahol a költség- vagy eladásiár-számítást futtathatja a kiválasztott termékváltozatnál. | Ez a funkció akkor érhető el, ha a kijelölt csomópont kapcsolódik egy receptúraverzióhoz. |
 | Receptúra &gt; Ellenőrzés                  | A kiválasztott receptúra érvényesítése és ellenőrzése.                                                                  | Ez a funkció akkor érhető el, ha a kijelölt csomópont kapcsolódik egy receptúraverzióhoz. |
 

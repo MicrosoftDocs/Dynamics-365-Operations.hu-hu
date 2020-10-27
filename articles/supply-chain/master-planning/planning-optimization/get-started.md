@@ -3,7 +3,7 @@ title: Első lépések a tervezési optimalizálással
 description: Ez a témakör bemutatja, hogyan kezdje el használni a tervezési optimalizáció funkciót.
 author: ChristianRytt
 manager: tfehr
-ms.date: 05/06/2020
+ms.date: 10/09/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,20 +19,25 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 04b39469ccf4f088bb33bdfc73ce40eece6f5f2e
-ms.sourcegitcommit: cde71bc7d14ea6cdff2c4e991057d39a6a0473d9
+ms.openlocfilehash: 49025d0aa0f6a627b816a43dd4260449942b400c
+ms.sourcegitcommit: ae04c7cb48f7ecafe71bbe77a0f97715e6290991
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "3887264"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "3973476"
 ---
-# <a name="get-started-with-planning-optimization"></a>Első lépések a tervezési optimalizálással
+# <a name="get-started-with-planning-optimization"></a>Tervezési optimalizálás kezdő lépései
 
 [!include [banner](../../includes/banner.md)]
 
-A tervezés optimalizálása funkció jelenleg nem támogatja az összes olyan funkciót, amely a Microsoft Dynamics 365 Supply Chain Management szolgáltatásba épített tervezési motorban rendelkezésre áll. Ezért fontos, hogy meggyőződjön, hogy a tervezésoptimalizálásban jelenleg elérhető szolgáltatáskészlet kielégíti-e a követelményeket. Alapértelmezés szerint a Tervezés optimalizálása funkció nincs bekapcsolva a Dynamics Lifecycle Services (LCS) modulban. Ennek megfelelően lehetősége van arra, hogy az értékelést a bekapcsolás előtt végezze el.
+A [korábbi bejelentésnek megfelelően](https://docs.microsoft.com/dynamics365/supply-chain/get-started/removed-deprecated-features-scm-updates#use-of-built-in-supply-chain-management-master-planning-engine-for-distribution-scenarios) a Tervezési optimalizálás várhatóan felváltja a meglévő beépített alaptervezési motort.
 
-Végül a Tervezés optimalizálása átveszi a meglévő beépített Supply Chain Management tervezési motorját.
+Ha jelenleg a beépített alaptervezési motort használja, akkor most el kell indítania a Tervezési optimalizálását az áttelepítéshez. Fontos, hogy a program rögtön elindítsa az áttelepítési folyamatot, mert az elavulás kényszerítése hatással lehet a folyamatban lévő műveleteire. Az elavulás kikényszerítésekor az utolsó pillanatban jelentkező nehézségek elkerülése érdekében erősen javasoljuk, hogy végezze el az áttelepítést még 2020. december 1-je előtt. 
+
+A tervezési optimalizálás funkció jelenleg nem támogatja az összes olyan funkciót, amely a Supply Chain Managementbe épített tervezőmotorban jelenleg elérhető. Ezért fontos, hogy meggyőződjön, hogy a tervezésoptimalizálásban jelenleg elérhető szolgáltatáskészlet kielégíti-e a követelményeket. A tervezési optimalizálás funkció alapértelmezés szerint nincs bekapcsolva a Dynamics Lifecycle Services (LCS) modulban, így még a funkció bekapcsolása előtt lehetősége van az értékelésre.
+
+> [!NOTE]
+> Ha az alaptervezési folyamat nem foglalja magában a termelést (az alaptervezés által létrehozott tervezett termelési rendeléseket), akkor kivételt kell kérnie a tervezési optimalizálás miatt szükséges áttelepítés alól, és egy 10.0.15-ös verzión túli beépített alaptervezési motort kell igényelnie. A 10.0.16 verziótól kezdődően egy hiba jelenik meg a környezetekben, amikor a tervezett termelési rendelések létrehozása nélkül futtatja a beépített alaptervezést. A tervezési optimalizálás minden olyan új telepítésnél használható, amely nem hoz létre tervezett termelési rendeléseket az alaptervezés során. Azok, akik beépített alaptervezési motort a tervezett termelési rendelések létrehozása nélkül, a meglévő környezetekben futtatnak, egy levelet fognak kapni, amely a kivételezési folyamat részleteit ismerteti. Javasoljuk, hogy egy partnerrel folytasson együttműködést a tervezési optimalizáláshoz szükséges áttelepítés értékeléséhez és megtervezéséhez.
 
 A tervezés optimalizálása előtt kifejezetten ajánljuk, hogy értékelje a tervezésoptimalizálás illeszkedési elemzésének eredményeit. További tájékoztatás: [Tervezésoptimalizálás illeszkedési elemzése](planning-optimization-fit-analysis.md).
 
@@ -86,7 +91,7 @@ A **Tervezés optimalizálása használata** beállítás határozza meg, hogy m
 - **Nem** – Az alaptervezéshez a Supply Chain Management beépített tervezési motorja használatos.
 
 > [!NOTE]
-> Ha meglévő tervezett kötegelt feladatok, amelyeket a beépített Supply Chain Management tervezési morothoz hoztak létre, elindulnak, miközben a **Tervezésoptimalizálás használata** beállítás értéke **Igen**, a feladatok sikertelenek lesznek.
+> Ha meglévő tervezett kötegelt feladatok, amelyeket a beépített Supply Chain Management tervezési morothoz hoztak létre, elindulnak, miközben a **Tervezésoptimalizálás használata** beállítás értéke **Igen** , a feladatok sikertelenek lesznek.
 
 ### <a name="integration-with-the-setup"></a>Integráció a beállítással
 

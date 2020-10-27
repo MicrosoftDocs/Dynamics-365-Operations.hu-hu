@@ -16,15 +16,15 @@ ms.custom: 19191
 ms.assetid: 8993f9a1-d1c0-49f5-afd3-5e1077ded0fe
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: conradv
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ee92f7f5cc7cbbb4af8455bdcaf1b2265102ad7c
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: f7fac3ec6df53dcc6e459f62f76d856a11d294b6
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3209490"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3981352"
 ---
 # <a name="calculations-for-product-configuration-models-faq"></a>Kalkulációk a termékkonfigurációs modellekhez - GYIK
 
@@ -76,7 +76,7 @@ Felülírhatja az értéket, amely a célattribútumhoz van számítva, kivéve,
 ## <a name="how-do-i-set-a-target-attribute-as-hidden-or-read-only"></a>Hogyan állítható be a célattribútum rejtettként vagy írásvédettként?
 Rejtett vagy csak olvasható attribútum beállításához kövesse az alábbi lépéseket.
 
-1.  Kattintson a **Termékinformációk kezelése** &gt; **Közös** &gt; **Termékkonfigurációs modellek** elemre.
+1.  Kattintson a **Termékinformációk kezelése**  &gt; **Közös**  &gt; **Termékkonfigurációs modellek** elemre.
 2.  Jelölje be az egyik termékkonfigurációs modellt, majd a műveleti ablakban kattintson a **Szerkesztés** gombra.
 3.  A **Megszorításon alapuló termékkonfigurációs modell adatai** oldalon válassza ki a célattribútumként használandó attribútumot.
 4.  Az **Attribútumok** gyorslapon jelölje be a **Rejtett** vagy az **Írásvédett** opciót.
@@ -99,7 +99,7 @@ Ez az üzenet jelenik meg, ha a számításban hiba vagy ellentmondás szerepel 
 ## <a name="why-do-i-receive-an-error-message-even-though-i-successfully-validated-my-product-model"></a>Miért jelenik meg hibaüzenet, annak ellenére, hogy a termékmodellt sikeresen érvényesítettem?
 Az ellenőrzésben nem szerepelnek a számítások. Tesztelnie kell a termék konfigurációt, hogy megtalálja a hibákat a számításokban. A termékkonfigurációs modell teszteléséhez kövesse az alábbi lépéseket.
 
-1.  Kattintson a **Termékinformációk kezelése** &gt; **Közös** &gt; **Termékkonfigurációs modellek** elemre.
+1.  Kattintson a **Termékinformációk kezelése**  &gt; **Közös**  &gt; **Termékkonfigurációs modellek** elemre.
 2.  Jelölje be az egyik termékkonfigurációs modellt, majd a műveleti ablakban kattintson a **Futtatás** csoport **Teszt** gombjára.
 
 

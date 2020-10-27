@@ -16,15 +16,15 @@ ms.custom: 19331
 ms.assetid: c19b437a-2de2-4728-9477-2bcb0c2b1f5e
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: conradv
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d0a02bc506057a02e822733077c45286f3e23db2
-ms.sourcegitcommit: 97d4a9bd442fe20f90605d8154c3a947c7645b37
+ms.openlocfilehash: b226dd61c758cf17c8e4784ec22d2628145c1836
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "3895329"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3985609"
 ---
 # <a name="bills-of-materials-and-formulas"></a>Anyagjegyzékek és receptúrák
 
@@ -94,7 +94,7 @@ Amikor tervezett rendelések, termelési rendelések vagy kanban-ok készülnek 
 ## <a name="bom-and-formula-lines"></a>Anyagjegyzék–és receptúrasorok
 Minden anyaghoz, szolgáltatáshoz vagy alapanyaghoz anyagjegyzék sor készül. A sor meghatározza egy adott termékváltozat tervezett fogyasztását, továbbá a tervezett fogyasztáshoz tarozó különféle tulajdonságokat.  
 
-Az anyagjegyzék sorok a következő sortípusokkal rendelkezhetnek: **Cikk**, **Látszólagos**, **Rögzített készletek**, **Szállítói**.
+Az anyagjegyzék sorok a következő sortípusokkal rendelkezhetnek: **Cikk** , **Látszólagos** , **Rögzített készletek** , **Szállítói** .
 
 ### <a name="item"></a>Cikk
 
@@ -108,7 +108,7 @@ Vegye figyelembe, hogy a látszólagos típusok jellemzően azért kerülnek has
 
 ### <a name="pegged-supply"></a>Rögzített készletek
 
-Válassza ki a**Rögzített készletek** sortípust amikor résztermelést, ami egy anyagjegyzék sor esemény kanban, vagy közvetlen beszerzési rendelést kíván létrehozni bármely olyan termékváltozathoz, amire az anyagjegyzék sor hivatkozik. A résztermelés, az esemény kanban vagy a beszerzési rendelés akkor készül el, amikor Ön elvégzi a termelési megrendelés becslését. A szükséges cikkmennyiségeket a program automatikusan lefoglalja a fogyasztó termelési rendeléshez.
+Válassza ki a **Rögzített készletek** sortípust amikor résztermelést, ami egy anyagjegyzék sor esemény kanban, vagy közvetlen beszerzési rendelést kíván létrehozni bármely olyan termékváltozathoz, amire az anyagjegyzék sor hivatkozik. A résztermelés, az esemény kanban vagy a beszerzési rendelés akkor készül el, amikor Ön elvégzi a termelési megrendelés becslését. A szükséges cikkmennyiségeket a program automatikusan lefoglalja a fogyasztó termelési rendeléshez.
 
 ### <a name="vendor"></a>Szállító
 

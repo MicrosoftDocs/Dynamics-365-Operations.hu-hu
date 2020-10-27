@@ -13,15 +13,15 @@ ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: ''
 ms.search.region: Hungary
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0bf0265f445c7e0cb9ef93e0b7a49babd9b34ce8
-ms.sourcegitcommit: cd3d066fd5a071a44b1709ed37d24112484e7ceb
+ms.openlocfilehash: 811e13814c800cc559043e97d90a68a7f354fd8d
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "3766060"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3987328"
 ---
 # <a name="hungary-overview"></a>Magyarország – áttekintés
 

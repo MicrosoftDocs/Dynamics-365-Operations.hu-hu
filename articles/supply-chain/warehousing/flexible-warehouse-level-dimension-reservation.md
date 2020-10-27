@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-01-15
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 65304216b579b8def493d1e4218174cb9617013d
-ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
+ms.openlocfilehash: d75e6a8b48447a33156e03d50e990b8514bacda9
+ms.sourcegitcommit: d540998ad6f9c894ca99498c045ae4b86b779806
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "3652179"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "3970703"
 ---
 # <a name="flexible-warehouse-level-dimension-reservation-policy"></a>Rugalmas raktárszintű dimenziófoglalási irányelv
 
@@ -41,8 +41,8 @@ A készletfoglalási hierarchia azt írja elő, hogy a tárolási dimenziókat i
 
 Ha azonban az üzlet műveleti modelljét szeretné tükrözni, a nyomonkövetési dimenziók esetén (köteg-és sorozatszámok) nagyobb rugalmasságra van szükség. A készletfoglalási hierarchia olyan esetekhez használható, amelyekben teljesülnek az alábbi feltételek:
 
-- A vállalat a raktári műveletei alapján kezeli a köteg-vagy sorozatszámmal ellátott mennyiségek kiválasztását, miután a mennyiségeket a rendszer megtalálta a raktározási tárolóhelyen. Ezt a modellt gyakran nevezzük *kötegalatti\[helynek\]*. Ezt általában akkor használják, ha a termék köteg- vagy sorozatszám-azonosítója nem fontos azoknak a vevőknek, akik a rendelést tették az értékesítő vállalatnál.
-- Ha a köteg-vagy sorozatszámok a vevői rendelési specifikáció részei, és a program rögzíti azokat az igény szerinti rendelésen, akkor a raktári műveleteket, amelyek megkeresik a raktárban lévő mennyiségeket, az egyes igényelt számokkal korlátozni lehet, és azok nem módosíthatók. Ezt a modellt nevezzük *kötegfeletti\[helynek\]*.
+- A vállalat a raktári műveletei alapján kezeli a köteg-vagy sorozatszámmal ellátott mennyiségek kiválasztását, miután a mennyiségeket a rendszer megtalálta a raktározási tárolóhelyen. Ezt a modellt gyakran nevezzük *kötegalatti\[helynek\]* . Ezt általában akkor használják, ha a termék köteg- vagy sorozatszám-azonosítója nem fontos azoknak a vevőknek, akik a rendelést tették az értékesítő vállalatnál.
+- Ha a köteg-vagy sorozatszámok a vevői rendelési specifikáció részei, és a program rögzíti azokat az igény szerinti rendelésen, akkor a raktári műveleteket, amelyek megkeresik a raktárban lévő mennyiségeket, az egyes igényelt számokkal korlátozni lehet, és azok nem módosíthatók. Ezt a modellt nevezzük *kötegfeletti\[helynek\]* .
 
 Ezekben az esetekben a kihívás az, hogy csak egyetlen készletfoglalási hierarchiát lehet hozzárendelni az egyes kiadott termékekhez. Ezért ahhoz, hogy WMS kezelje a nyomon követett cikkeket, miután a hierarchia-hozzárendelés meghatározza, hogy mikor kell lefoglalni a köteg-vagy sorozatszámot (vagy az igény szerinti rendelés fogadásakor, vagy a raktári kitárolási munka során), ez az időzítés nem módosítható ad hoc módon.
 
@@ -72,7 +72,7 @@ Ha a hierarchiában kiválasztja a **Kötegszám** szintjét, akkor a program au
 >
 > Ha a foglalási hierarchiában szerepel a sorozatszám dimenzió (amelynek mindig a **Kötegszám** szint alatt kell lennie), és ha bekapcsolta a kötegszám-specifikus foglalást,, a rendszer továbbra is a sorozatszám szerinti foglalási és kitárolási műveleteket fogja kezelni a „sorszámalatti\[hely\]” foglalási irányelvre vonatkozó szabályok alapján.
 
-A telepítés során bármikor engedélyezheti a kötegspecifikus foglalást egy létező „kötegalatti\[hely\]” foglalási hierarchiában a telepítésben. A módosítás nem fogja érinteni a módosítás előtt létrehozott foglalásokat és nyitott raktári munkákat. Azonban a **Foglalás engedélyezése az igény szerinti rendelésnél** jelölőnégyzetet nem lehet törölni, ha az adott foglalási hierarchiához társított egy vagy több cikk esetén a **Foglalt rendelt**, **Foglalt tényleges** vagy **Megrendelve** típusú problémák készlettranzakciói léteznek.
+A telepítés során bármikor engedélyezheti a kötegspecifikus foglalást egy létező „kötegalatti\[hely\]” foglalási hierarchiában a telepítésben. A módosítás nem fogja érinteni a módosítás előtt létrehozott foglalásokat és nyitott raktári munkákat. Azonban a **Foglalás engedélyezése az igény szerinti rendelésnél** jelölőnégyzetet nem lehet törölni, ha az adott foglalási hierarchiához társított egy vagy több cikk esetén a **Foglalt rendelt** , **Foglalt tényleges** vagy **Megrendelve** típusú problémák készlettranzakciói léteznek.
 
 > [!NOTE]
 > Ha egy elem meglévő foglalási hierarchiája nem teszi lehetővé a köteg megadását a rendelésen, akkor újra hozzárendelheti azt egy olyan foglalási hierarchiához, amely lehetővé teszi a köteg megadását, feltéve, hogy a hierarchia szintjének szerkezete mindkét hierarchiában ugyanaz. Az ismételt hozzárendeléshez használja a **Cikkek foglalási hierarchiájának módosítása** funkciót. Ez a módosítás akkor lehet fontos, ha el akarja kerülni a rugalmas kötegelt rendelést a kötegelt nyomonkövetésű cikkek egy csoportja esetén, azonban engedélyezni akarja azt a termékportfólió többi eleme számára.
@@ -84,7 +84,7 @@ Függetlenül attól, hogy bejelölte-e a **Foglalás engedélyezése igény sze
 Ha egy kötegelt nyomonkövetésű elem „kötegalatti\[hely\]” típusú készle foglalási hierarchiája úgy van beállítva, hogy engedélyezze az értékesítési rendeléseken a konkrét kötegszám foglalását, akkor az értékesítési rendelések feldolgozói a vevői igényektől függően a következő módokon vehetik fel a vevői rendeléseket ugyanarra a tételre:
 
 - **Rendelés részleteinek megadása a kötegszám megadása nélkül** – ezt a megközelítést akkor kell használni, ha a termékköteg megadása nem fontos a vevő számára. Az ilyen típusú rendelések kezelésével kapcsolatos összes meglévő folyamat változatlan marad. A felhasználók részéről nem szükséges további megfontolás.
-- **Rendelés részleteinek megadása és egy konkrét kötegszám lefoglalása** – ezt a megközelítést akkor kell használni, ha a vevő egy konkrét köteget kér. A vevők általában akkor kérnek egy konkrét köteget, ha egy korábban vásárolt terméket rendelnek újra. Ezt a típusú kötegspecifikus foglalást nevezik *Rendelésben véglegesített foglalásnak*.
+- **Rendelés részleteinek megadása és egy konkrét kötegszám lefoglalása** – ezt a megközelítést akkor kell használni, ha a vevő egy konkrét köteget kér. A vevők általában akkor kérnek egy konkrét köteget, ha egy korábban vásárolt terméket rendelnek újra. Ezt a típusú kötegspecifikus foglalást nevezik *Rendelésben véglegesített foglalásnak* .
 
 A következő szabályok érvényesek a mennyiségek feldolgozásakor, ha a köteg számát egy konkrét rendeléshez kötötték:
 
@@ -102,8 +102,8 @@ Ebben a példában a bemutatóadatokat kell telepíteni, és az **USMF** demó-a
 
 1. Nyissa meg a **Raktárkezelés** \> **Beállítás** \> **Készlet \> Foglalási hierarchia** lehetőséget.
 2. Válassza az **Új** lehetőséget.
-3. Adja meg a feladat egyedi nevét a **Név** mezőben (pl. **BatchFlex**).
-4. A **Leírás** mezőben adjon meg egy leírást (például: **Rugalmas alatti kötteg**).
+3. Adja meg a feladat egyedi nevét a **Név** mezőben (pl. **BatchFlex** ).
+4. A **Leírás** mezőben adjon meg egy leírást (például: **Rugalmas alatti kötteg** ).
 5. A **Kijelölve** mezőben válassza ki a **Sorozatszám** és a **Tulajdonos** lehetőségeket, majd a bal nyílgombra kattintva helyezze át őket a **Rendelkezésre áll** mezőbe.
 6. Válassza ki az **OK** lehetőséget.
 7. A **Kötegszám** dimenzió szintjének sorában jelölje be a **Foglalás engedélyezése igény szerinti rendelésnél** jelölőnégyzetet. A **Rendszámtábla** és a **Hely** szintje automatikusan be van jelölve, és a jelölőnégyzetek nem törölhetők.
@@ -117,7 +117,7 @@ Ebben a példában a bemutatóadatokat kell telepíteni, és az **USMF** demó-a
     - A **Nyomon követési dimenziócsoport** mezőben válassza a **Batch-Phy** lehetőséget.
     - A **Foglalási hierarchia** mezőben válassza ki a **BatchFlex** lehetőséget.
 
-2. Hozzon létre két kötegszámot, például **B11** és **B22**.
+2. Hozzon létre két kötegszámot, például **B11** és **B22** .
 3. Az alábbi értékek használatával adjon hozzá cikkmennyiségeket az aktuális készlethez.
 
     | Raktár | Köteg száma | Helyszín | Azonosítótábla | Mennyiség |
@@ -130,7 +130,7 @@ Ebben a példában a bemutatóadatokat kell telepíteni, és az **USMF** demó-a
 
 1. Ugorjon az **Értékesítés és marketing** \> **Értékesítési rendelések** \> **Minden értékesítési** rendelés pontra.
 2. Válassza az **Új** lehetőséget.
-3. Az értékesítési rendelés fejlécében a **Vevői számla** mezőbe írja be az **US-003**értéket.
+3. Az értékesítési rendelés fejlécében a **Vevői számla** mezőbe írja be az **US-003** értéket.
 4. Adjon hozzá egy sort az új elemhez, és adja meg a **10** mennyiséget. Győződjön meg arról, hogy a **Raktár** mező értéke **24** legyen.
 5. Válassza ki az **Értékesítési rendelés sorai** gyorslapot, válassza a **Készlet** elemet majd a **Karbantartás** csoportban válassza a **Köteg lefoglalása** elemet. A **Köteg lefoglalása** lapon látható a rendelési sor foglalásra használható kötegeinek listája. Ebben a példában a mennyiség **20** a **B11** kötegszámra, és **10** a **B22** kötegszámra. Figyelem, el, hogy a **Köteg lefoglalása** lap nem érhető el a sorból, ha a sorban szereplő tételt „kötegalatti\[hely\]” foglalási hierarchiához társították, hacsak nem úgy állították be, hogy engedélyezze a kötegspecifikus foglalást.
 
@@ -161,8 +161,8 @@ Ebben a példában a bemutatóadatokat kell telepíteni, és az **USMF** demó-a
 
 8. Tekintse át az értékesítési rendelés sorfoglalásához kapcsolódó készlettranzakciókat.
 
-    - Egy olyan tranzakció, amelyben a **Referencia** mező értéke **Értékesítési rendelés**, és a **Kiadás** mező értéke **Foglalt tényleges** értékre van állítva, a **Hely** szint fölötti készletdimenziók sorának foglalását jelenti. A cikkek foglalási hierarchiája szerint ezek a dimenziók a telep, a raktár és a készletállapot.
-    - Egy olyan tranzakció, amelyben a **Referencia** mező értéke **Rendelésben véglegesített foglalás**, és a **Kiadás** mező értéke **Foglalt tényleges** értékre van állítva, konkrét köteg és a fölötte levő összes készletdimenzió sorának foglalását jelenti. A cikkek foglalási hierarchiája szerint ezek a dimenziók a kötegszám és hely. Ebben a példában a hely **Bulk-001**.
+    - Egy olyan tranzakció, amelyben a **Referencia** mező értéke **Értékesítési rendelés** , és a **Kiadás** mező értéke **Foglalt tényleges** értékre van állítva, a **Hely** szint fölötti készletdimenziók sorának foglalását jelenti. A cikkek foglalási hierarchiája szerint ezek a dimenziók a telep, a raktár és a készletállapot.
+    - Egy olyan tranzakció, amelyben a **Referencia** mező értéke **Rendelésben véglegesített foglalás** , és a **Kiadás** mező értéke **Foglalt tényleges** értékre van állítva, konkrét köteg és a fölötte levő összes készletdimenzió sorának foglalását jelenti. A cikkek foglalási hierarchiája szerint ezek a dimenziók a kötegszám és hely. Ebben a példában a hely **Bulk-001** .
 
 9. Az értékesítési rendelés fejlécében válassza ki a **Raktár** \> **Műveletek** \> **Kiadás raktárba** lehetőséget. A rendelési sor mostantól hullámos, és létrejön a terhelés és a munka.
 
@@ -177,7 +177,7 @@ Ebben a példában a bemutatóadatokat kell telepíteni, és az **USMF** demó-a
 
         ![Raktári készlet tranzakciója olyan munkához, amely rendelésben véglegesített foglalásból származik](media/Work-inventory-transactions-for-order-committed-reservation.png)
 
-    - Miután létrehozta a munkát, a program eltávolítja a cikk azon készlettranzakcióját, amely esetén a **Referencia** mező beállítása **Rendelésben véglegesített foglalás**. Az a készlettranzakció, amelyben a **Referencia** mező beállása **Munka**, most a tényleges foglalást tárolja az összes mennyiség raktárdimenziója esetén.
+    - Miután létrehozta a munkát, a program eltávolítja a cikk azon készlettranzakcióját, amely esetén a **Referencia** mező beállítása **Rendelésben véglegesített foglalás** . Az a készlettranzakció, amelyben a **Referencia** mező beállása **Munka** , most a tényleges foglalást tárolja az összes mennyiség raktárdimenziója esetén.
 
         A raktári műveletek a szokásos módon folytathatják a munka végrehajtásának kezelését. A mobileszközön érkező utasítások azonban arra utasítják a dolgozót, hogy jelöljön ki egy konkrét kötegszámot. Olyan raktárakban, ahol a helyek rendszámtábla alapján vezéreltek, miután a dolgozó elér egy olyan helyet, ahol ugyanazt a köteget több rendszámtáblán tárolják, kiválaszthatja bármelyik rendszámtáblát, amelyik még nincs lefoglalva (például egy másik rendelésben véglegesített foglalást vagy olyan munkát, amely az adott típusú foglalásból származik.)
 
@@ -188,7 +188,7 @@ Ebben a példában a bemutatóadatokat kell telepíteni, és az **USMF** demó-a
 
 2. Fejezze be a kitárolást és a munka elhelyezését a mobileszközön.
 
-    A **B11** kötegszámhoz tartozó menniységet (**10**) kitárolták az értékesítési rendelési sorra, és elhelyezték a **Baydoor** helyen. Ezen a ponton készen áll a teherautóra történő berakásra, és a vevő címére történő feladásra.
+    A **B11** kötegszámhoz tartozó menniységet ( **10** ) kitárolták az értékesítési rendelési sorra, és elhelyezték a **Baydoor** helyen. Ezen a ponton készen áll a teherautóra történő berakásra, és a vevő címére történő feladásra.
 
 ## <a name="flexible-license-plate-reservation"></a>Rugalmas azonosítótábla-foglalás
 
@@ -212,7 +212,7 @@ Ha engedélyezni szeretné az azonosítótábla foglalását egy rendelésen, ak
 
 ![Készletfoglalási hierarchiák oldala a rugalmas azonosítótábla foglalási hierarchiához](media/Flexible-LP-reservation-hierarchy.png)
 
-A rendeléshez tartozó azonosítótábla-foglalást a telepítés bármely pontján engedélyezheti. A módosítás nem fogja érinteni a módosítás előtt létrehozott foglalásokat vagy nyitott raktári munkákat. Azonban a **Foglalás engedélyezése az igény szerinti rendelésnél** jelölőnégyzetet nem tudja törölni, ha az adott foglalási hierarchiához társított egy vagy több cikk esetén a *Rendelésben*, *Foglalt tényleges* vagy *Megrendelve* állapotú nyitott, kimenő készlettranzakció-problémák léteznek.
+A rendeléshez tartozó azonosítótábla-foglalást a telepítés bármely pontján engedélyezheti. A módosítás nem fogja érinteni a módosítás előtt létrehozott foglalásokat vagy nyitott raktári munkákat. Azonban a **Foglalás engedélyezése az igény szerinti rendelésnél** jelölőnégyzetet nem tudja törölni, ha az adott foglalási hierarchiához társított egy vagy több cikk esetén a *Rendelésben* , *Foglalt tényleges* vagy *Megrendelve* állapotú nyitott, kimenő készlettranzakció-problémák léteznek.
 
 Még ha az **Azonosítótábla** szintjén be is van jelölve a **Foglalás engedélyezése igény szerinti rendelésnél** jelölőnégyzet, akkor is lehetséges, hogy a rendeléshez *nem* foglalja le az adott azonosítótáblát. Ebben az esetben a foglalási hierarchiára az alapértelmezett raktári műveletek logika vonatkozik.
 
@@ -228,11 +228,14 @@ Ha egy kötegelt nyomkövetésű cikkhez külön azonosítótábla-foglalásra v
 
 Amikor a rendeléshez véglegesített azonosítótábla-foglalást használó értékesítési rendeléssort a raktári műveletek dolgozzák fel, a rendszer nem használja a helyutasításokat.
 
-Ha egy raktári munkacikk olyan sorokból áll, amelyek egy teljes raklapnak felelnek meg, és rendelkeznek azonosítótáblával – véglegesített mennyiségekkel, akkor a kitárolási folyamatot egy olyan mobileszköz menüelemével optimalizálhatja, amin a **Kezelés azonosítótábla szerint** értéke *Igen*. A raktári dolgozó ezután a tárolási munka befejezéséhez beolvashatja az azonosítótáblát, és nem kell egyenként beolvasnia a cikkeket.
+Ha egy raktári munkacikk olyan sorokból áll, amelyek egy teljes raklapnak felelnek meg, és rendelkeznek azonosítótáblával – véglegesített mennyiségekkel, akkor a kitárolási folyamatot egy olyan mobileszköz menüelemével optimalizálhatja, amin a **Kezelés azonosítótábla szerint** értéke *Igen* . A raktári dolgozó ezután a tárolási munka befejezéséhez beolvashatja az azonosítótáblát, és nem kell egyenként beolvasnia a cikkeket.
 
 ![A mobileszköz menüeleme, amelyen a Kezelés azonosítótábla szerint lehetőség Igen értékre van állítva](media/Handle-by-LP-menu-item.png)
 
 Mivel a **Kezelés azonosítótábla szerint** funkció nem támogatja a több raklapot magába foglaló munkát, jobb, ha külön munkaelemet használ a különböző azonosítótáblákhoz. Ennek a módszernek a használatához adja hozzá a **Munkasablon** oldalhoz munkafejlécként a **Rendeléshez véglegesített azonosítótábla azonosítója** mezőt.
+
+> [!NOTE]
+> A rendeléssel kapcsolatos munka-létrehozási folyamathoz a program egy „rendeléssel kapcsolatos készletdimenzió” értéket rendel a kitárolási munkasorokhoz, és nem lehet közvetlenül megtekinteni a azonosítótábla értékét. A *Felhasználó által irányított* folyamat támogatott a mobileszköz-menüpont beállításakor.
 
 ## <a name="example-scenario-set-up-and-process-an-order-committed-license-plate-reservation"></a>Példaforgatókönyv: állítson be és dolgozzon fel egy rendeléshez véglegesített azonosítótábla-foglalást
 
@@ -244,11 +247,11 @@ Ez a forgatókönyv olyan értékekre és rekordokra hivatkozik, amelyek szerepe
 
 ### <a name="create-an-inventory-reservation-hierarchy-that-allows-for-license-plate-reservation"></a>Hozzon létre egy olyan készletfoglalási hierarchiát, amely lehetővé teszi az azonosítótábla foglalást
 
-1. Nyissa meg a **Raktárkezelés \> Beállítás \> Készlet \> Foglalási hierarchia lehetőséget**.
+1. Nyissa meg a **Raktárkezelés \> Beállítás \> Készlet \> Foglalási hierarchia lehetőséget** .
 1. Válassza az **Új** lehetőséget.
-1. Adjon meg egy értéket a **Név** mezőben (pl. *FlexibleLP*).
-1. A **Leírás** mezőben adjon meg egy értéket (például: *Rugalmas LP foglalás*).
-1. A **Kiválasztott** listában válassza ki a **Kötegszám**, **Sorozatszám**, és **Tulajdonos** értéket.
+1. Adjon meg egy értéket a **Név** mezőben (pl. *FlexibleLP* ).
+1. A **Leírás** mezőben adjon meg egy értéket (például: *Rugalmas LP foglalás* ).
+1. A **Kiválasztott** listában válassza ki a **Kötegszám** , **Sorozatszám** , és **Tulajdonos** értéket.
 1. Válassza az **Eltávolítás** gomb ![vissza nyíl](media/backward-button.png) lehetőségét a kiválasztott rekordok **Elérhető** listára történő átmozgatásához.
 1. Válassza ki az **OK** lehetőséget.
 1. Az **Azonosítótábla** dimenzió szintjének sorában jelölje be a **Foglalás engedélyezése igény szerinti rendelésnél** jelölőnégyzetet. A **Hely** szintje automatikusan be van jelölve, és a jelölőnégyzet nem törölhető.
@@ -312,7 +315,7 @@ Ez a forgatókönyv olyan értékekre és rekordokra hivatkozik, amelyek szerepe
     >
     > Ha közvetlenül az értékesítési rendeléssorban adja meg a azonosítótáblát, és megerősíti azt a rendszerben, akkor a raktárkezelés feldolgozását nem használják a sorhoz.
 
-1. Válassza a **Megnyitás Microsoft Office-ban**, majd az **Azonosítótáblánkénti rendelésben véglegesített foglalások** lehetőséget, és töltse le a fájlt.
+1. Válassza a **Megnyitás Microsoft Office-ban** , majd az **Azonosítótáblánkénti rendelésben véglegesített foglalások** lehetőséget, és töltse le a fájlt.
 1. Nyissa meg az Excel programban a letöltött fájlt, és válassza a **Szerkesztés engedélyezése** lehetőséget az Excel-bővítmény futtatásának engedélyezéséhez.
 1. Ha az Excel beépülő modult első alkalommal futtatja, válassza az **Ez a bővítmény megbízható** lehetőséget.
 1. Ha a rendszer bejelentkezést kér, válassza a **Bejelentkezés** lehetőséget, majd a Supply Chain Management bejelentkezéshez használt hitelesítő adatok használatával jelentkezzen be.
@@ -334,7 +337,7 @@ Ez a forgatókönyv olyan értékekre és rekordokra hivatkozik, amelyek szerepe
     > A foglalási sor csak akkor jelenik meg a rendszerben, ha a közzététel hibátlanul befejeződött.
 
 1. Menjen vissza a Supply Chain Management szolgáltatásba. 
-1. A cikk foglalásának megtekintéséhez kattintson az **Értékesítési rendeléssorok** gyorslapon a **Készlet** menüre, majd válassza a **Megtartás \> Foglalás** pontra. Figyelje meg, hogy a *Cikk1* értékesítési rendeléssorához a *10*-es készlet van lefoglalva, a *Cikk2* értékesítési rendeléssorához pedig az *5*-ös készlet van lefoglalva.
+1. A cikk foglalásának megtekintéséhez kattintson az **Értékesítési rendeléssorok** gyorslapon a **Készlet** menüre, majd válassza a **Megtartás \> Foglalás** pontra. Figyelje meg, hogy a *Cikk1* értékesítési rendeléssorához a *10* -es készlet van lefoglalva, a *Cikk2* értékesítési rendeléssorához pedig az *5* -ös készlet van lefoglalva.
 1. Az értékesítési rendeléssor foglalásához kapcsolódó készlettranzakciók áttekintéséhez kattintson az **Értékesítési rendeléssorok** gyorslap **Készlet** menüre, és válassza a **Megtekintés \> Tranzakciók** pontot. Figyelje meg, hogy két olyan tranzakció van, amely a foglaláshoz kapcsolódik: az egyikben a **Hizatkozás** mező *Értékesítési rendelés* lehetőségre van állítva, a másiknál pedig a **Hivatkozás** mező *Rendelésben véglegesített foglalás* lehetőségre van állítva.
 
     > [!NOTE]
@@ -349,7 +352,7 @@ Ez a forgatókönyv olyan értékekre és rekordokra hivatkozik, amelyek szerepe
     Amikor egy adott köteg foglalása befejeződik, a rendszer nem használja a helyutasításokat, amikor létrehozza az azonosítótábla-foglalást használó értékesítési rendeléshez tartozó munkát. Mivel a rendelésben véglegesített foglalás meghatározza az összes készletdimenziót, többek között a helyet is, így nem kell használni a helyutasításokat, mivel ezek a készletdimenziók csak a munkában szerepelnek. Ezek a **Munkakészlet-tranzakciók** lap **Készletdimenziókból** szakaszában jelennek meg.
 
     > [!NOTE]
-    > Miután létrehozta a munkát, a program eltávolítja a cikk azon készlettranzakcióját, amely esetén a **Referencia** mező beállítása *Rendelésben véglegesített foglalás*. Az a készlettranzakció, amelyben a **Referencia** mező beállása *Munka*, most a tényleges foglalást tárolja az összes mennyiség raktárdimenziójához.
+    > Miután létrehozta a munkát, a program eltávolítja a cikk azon készlettranzakcióját, amely esetén a **Referencia** mező beállítása *Rendelésben véglegesített foglalás* . Az a készlettranzakció, amelyben a **Referencia** mező beállása *Munka* , most a tényleges foglalást tárolja az összes mennyiség raktárdimenziójához.
 
 1. A mobileszközön végezze el a munka ki- és betárolást egy olyan menüelem használatával, ahol ki van pipálva a **Kezelés azonosítótábla szerint** jelölőnégyzet.
 
@@ -381,8 +384,8 @@ Példa erre a helyzetre olyan eset, amikor a korábban elvégzett munka kitárol
 A visszatárolási művelet eredményei:
 
 - A korábban lezárt munka állapotát a rendszer **Visszavonva** értékre állítja.
-- Új, **Készletmozgás** típusú munka jön létre a **B11** kötegszám esetén visszatárolt mennyiséghez (**10**). Ez a munka a **Baydoor** helyről az **FL-001** helyen található **LP33** rendszámtáblához való mozgást jelzi. Az rendszer átállítja az állapotot erre: **Lezárva**.
-- A rendszer újra lefoglalja az eredetileg megrendelt kötegszámot, és hozzárendeli a helyet és a rendszámtábla azonosítóit. (Ez a folyamat egyenértékű a rendeléssor **Sor foglalása** funkciójának futtatásával egy adott kötegszám esetén). Ennek eredményekétten a **B11** köteg a **Köteg lefoglalása** oldal **Forrássorhoz vállalt kötegszámok** gyorslapján vállaltként jelenik meg, és a **Foglalás** mező a **B11** kötegszám esetén a **10** mennyiséget tartalmazza. Ezenkívül a **Hely** mező értéke **FL-001**, és a **Rendszámtábla** mező értéke **LP11**. (Hozzáadhatja ezeket a mezőket a rácshoz, ha nem láthatók.)
+- Új, **Készletmozgás** típusú munka jön létre a **B11** kötegszám esetén visszatárolt mennyiséghez ( **10** ). Ez a munka a **Baydoor** helyről az **FL-001** helyen található **LP33** rendszámtáblához való mozgást jelzi. Az rendszer átállítja az állapotot erre: **Lezárva** .
+- A rendszer újra lefoglalja az eredetileg megrendelt kötegszámot, és hozzárendeli a helyet és a rendszámtábla azonosítóit. (Ez a folyamat egyenértékű a rendeléssor **Sor foglalása** funkciójának futtatásával egy adott kötegszám esetén). Ennek eredményekétten a **B11** köteg a **Köteg lefoglalása** oldal **Forrássorhoz vállalt kötegszámok** gyorslapján vállaltként jelenik meg, és a **Foglalás** mező a **B11** kötegszám esetén a **10** mennyiséget tartalmazza. Ezenkívül a **Hely** mező értéke **FL-001** , és a **Rendszámtábla** mező értéke **LP11** . (Hozzáadhatja ezeket a mezőket a rácshoz, ha nem láthatók.)
 
 Az alábbi táblázatokban egy áttekintés látható, amely bemutatja, hogy a rendszer hogyan kezeli a konkrét raktári műveletekhez rendelt rendelésben véglegesített kötegfoglalásokat. A táblázatok tartalmának értelmezéséhez tételezzük fel, hogy minden egyes raktári művelet egy már létező raktári munka kontextusában fut, amely egy rendelésben véglegesített kötegfoglalásból származi, vagy hogy az egyes raktározási műveletek végrehajtása hatással van az adott típusú munkára.
 

@@ -14,15 +14,15 @@ ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: 272683
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
-ms.author: v-elgolu
+ms.author: kfend
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 5026cf0ba71b756b44aa4813f7988195096de4fa
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 8ea7993312434a25805bd7d22ade2c7b772a5c1d
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183694"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3978293"
 ---
 # <a name="exchange-rate-adjustments"></a>Árfolyam-korrekciók
 
@@ -93,7 +93,7 @@ Az átértékelésben figyelje meg, hogy a 2013. január 1-i bejegyzés a fölö
 |13-jan-3 | Tartozik  | 0 CAD/5 000 USD | Kinnlevőségek                             | Devizaátértékelés | Árfolyamnyereség |   |   |
 |13-jan-3 | Jóváírás | 0 CAD/5 000 USD | Nem realizált árfolyam-korrekciós nyereség | Devizaátértékelés | Árfolyamnyereség | X |   |
 
-A rendszer viselkedése megegyezik, függetlenül attól, hogy a **Helyesbítés** lehetőség beállítása a **Tranzakció sztornírozása** szakaszban a **Főkönyvi paraméterek** lapon **Igen** vagy **Nem**.
+A rendszer viselkedése megegyezik, függetlenül attól, hogy a **Helyesbítés** lehetőség beállítása a **Tranzakció sztornírozása** szakaszban a **Főkönyvi paraméterek** lapon **Igen** vagy **Nem** .
 
 
 

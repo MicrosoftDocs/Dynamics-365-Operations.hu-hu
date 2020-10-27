@@ -12,15 +12,15 @@ audience: Application User
 ms.reviewer: v-chgri
 ms.search.scope: Core, Operations, Retail
 ms.search.region: global
-ms.author: boycezhu
+ms.author: boycez
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 8a07e951aadaa1cc44b637ef9fd77f5f4e84cbda
-ms.sourcegitcommit: 4a981ee4be6d7e6c0e55541535d386bce2565cba
+ms.openlocfilehash: ef58dbb756c7bed3924010cb33eff27af66cd0bd
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "3621167"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3982600"
 ---
 # <a name="configure-inventory-buffers-and-inventory-levels"></a>A készletpufferek és a készlet szintjeinek konfigurálása
 
@@ -45,7 +45,7 @@ A funkció bekapcsolását követően a készletszintet a **Retail és Commerce 
 
 ## <a name="create-and-configure-an-inventory-level-profile"></a>Készletmodellprofil létrehozása és konfigurálása
 
-A *Készletmodellprofil* határozza meg, hogy az adott termékmennyiség állapota készleten, elfogyott vagy más egyéni állapotúnak minősül-e. Jogi személyenként több készletmodellprofilt hozhat létre és állíthat be. Minden profil készletszintek halmazából áll, és a szintek egy *tartomány*, egy *kód* és egy *címke* szerint vannak meghatározva.
+A *Készletmodellprofil* határozza meg, hogy az adott termékmennyiség állapota készleten, elfogyott vagy más egyéni állapotúnak minősül-e. Jogi személyenként több készletmodellprofilt hozhat létre és állíthat be. Minden profil készletszintek halmazából áll, és a szintek egy *tartomány* , egy *kód* és egy *címke* szerint vannak meghatározva.
 
 - **Tartomány** – A tartományokat a *kezdő mennyiség* és a *záró mennyiség* határozza meg. A mennyiségérték egy tartományba esik, ha a tartomány kezdő mennyiségét meghaladja, és nem haladja meg a záró mennyiségét.
 - **Kód** – A kód a szintet jelölő belső rövidítés. Azok az ügyfelek, akik közvetlenül integrálják a készlet API-ket, kódokat alkalmazhatnak egy adott készletszint további logikájának létrehozásához. Például ki tudják kapcsolni a termékre vonatkozó vásárlási képességet, amikor a készlet szintjének kódja **OOS** ("out of stock" – elfogyott).
@@ -57,7 +57,7 @@ Készletszintprofil létrehozásához hajtsa végre az alábbi lépéseket.
 
 1. Nyissa meg a **Retail és Commerce** \> **Készletkezelés** \> **Készletszintek** modult.
 1. A Művelet panelen válassza az **Új** lehetőséget, majd írja be az értékeket a **Profil azonosítója** és a **Leírás** mezőbe.
-1. Új szint hozzáadásához válassza a **Tartományok** gyorslap **Hozzáadás** elemét, majd adja meg az értékeket a szint **Kezdő mennyiség**, **Záró mennyiség**, **Kód**és a **Címke** oszlopaiban. Ismételje meg ezt a lépést a további szintek hozzáadásához. A szükséges módon szerkesztheti az adatrács értékét, de a **Törlés** lehetőséget is kiválaszthatja a szint eltávolításához.
+1. Új szint hozzáadásához válassza a **Tartományok** gyorslap **Hozzáadás** elemét, majd adja meg az értékeket a szint **Kezdő mennyiség** , **Záró mennyiség** , **Kód** és a **Címke** oszlopaiban. Ismételje meg ezt a lépést a további szintek hozzáadásához. A szükséges módon szerkesztheti az adatrács értékét, de a **Törlés** lehetőséget is kiválaszthatja a szint eltávolításához.
 1. A műveleti ablaktáblán válassza a **Mentés** lehetőséget.
 
 Új profil létrehozásakor a program automatikusan két készletszintet inicializál:
@@ -68,7 +68,7 @@ Készletszintprofil létrehozásához hajtsa végre az alábbi lépéseket.
 > [!NOTE]
 > A profil definíciós tartományai között nem lehetnek hézagok vagy átfedések.
 
-A Művelet panel **Fordítások** gombjával konfigurálhatja a címkeüzenetekhez tartozó honosított karakterláncokat. Ezt követően futtatnia kell az **1110** (**Globális konfiguráció**) elosztási ütemezési feladatot, hogy szinkronizálja a honosított karakterláncokat a csatornával.
+A Művelet panel **Fordítások** gombjával konfigurálhatja a címkeüzenetekhez tartozó honosított karakterláncokat. Ezt követően futtatnia kell az **1110** ( **Globális konfiguráció** ) elosztási ütemezési feladatot, hogy szinkronizálja a honosított karakterláncokat a csatornával.
 
 ### <a name="configure-an-inventory-level-profile"></a>Készletszintprofil létrehozása
 
@@ -85,7 +85,7 @@ A Művelet panel **Termékek frissítése** gombjánka használatával továbbí
 
 Kiadott termék készletszintprofiljának konfigurálásához hajtsa végre az alábbi lépéseket.
 
-1. Nyissa meg a következőt: **Kiskereskedelem és kereskedelem** \> **Termékek és kategóriák** \> **Felszabadított termékek kategóriák szerint**.
+1. Nyissa meg a következőt: **Kiskereskedelem és kereskedelem** \> **Termékek és kategóriák** \> **Felszabadított termékek kategóriák szerint** .
 1. Válasszon ki egy terméket, majd nyissa meg a termék részletes adatait tartalmazó lapot.
 1. Az **Eladás** gyorslapon a **Kereskedelmi készlet** szakasz **Készletszintprofil** mezőjében válassza ki az előre definiált készletszintprofilok egyikét.
 
@@ -97,7 +97,7 @@ Kiadott termék készletszintprofiljának konfigurálásához hajtsa végre az a
 A következő lépésekkel szinkronizálhatja a készletmodellprofilok konfigurációit a csatornára.
 
 1. Ugorjon a **Kiskereskedelem és kereskedelem** \> **Kiskereskedelem és kereskedelem informatika** \> **Elosztási ütemezés** pontra.
-1. Futtassa az **1040** (**Termék**) elosztási ütemezést.
+1. Futtassa az **1040** ( **Termék** ) elosztási ütemezést.
 
 ## <a name="configure-an-inventory-buffer"></a>Készletpuffer konfigurálása
 
@@ -114,7 +114,7 @@ A Művelet panel **Termékek frissítése** gombjánka használatával továbbí
 
 Kiadott termék készletpufferének konfigurálásához hajtsa végre az alábbi lépéseket.
 
-1. Nyissa meg a következőt: **Kiskereskedelem és kereskedelem** \> **Termékek és kategóriák** \> **Felszabadított termékek kategóriák szerint**.
+1. Nyissa meg a következőt: **Kiskereskedelem és kereskedelem** \> **Termékek és kategóriák** \> **Felszabadított termékek kategóriák szerint** .
 1. Válasszon ki egy terméket, majd nyissa meg a termék részletes adatait tartalmazó lapot.
 1. Az **Eladás** gyorslapon, a **Kereskedelmi készlet** szakasz **Készletpuffer** mezőjébe írjon be egy pozitív értéket.
 
@@ -126,7 +126,7 @@ Kiadott termék készletpufferének konfigurálásához hajtsa végre az alábbi
 A következő lépésekkel szinkronizálhatja a készletpufferek konfigurációit a csatornára.
 
 1. Ugorjon a **Kiskereskedelem és kereskedelem** \> **Kiskereskedelem és kereskedelem informatika** \> **Elosztási ütemezés** pontra.
-1. Futtassa az **1040** (**Termék**) elosztási ütemezést.
+1. Futtassa az **1040** ( **Termék** ) elosztási ütemezést.
 
 ## <a name="use-inventory-buffers-and-inventory-levels-in-e-commerce-scenario"></a>A készletpufferek és a készletszintek használata az e-Commerce forgatókönyvben
 
@@ -140,7 +140,7 @@ A termékelérhetőségi API-k válaszának konfigurálásához kövesse az alá
 
 1. Menjen a **Kiskereskedelem és kereskedelem** \> **Központ beállítása** \> **Paraméterek** \> **Kiskereskedelmi paraméterek** lehetőségre.
 1. A **Kiskereskedelmi árukészlet** szakasz **Készlet** lapján, az **Termékelérhetőségi API-k e-Commerce-hez** mezőben válasszon egy értéket.
-1. A beállítások csatornákra történő alkalmazásához futtassa az **1110** (**Globális konfiguráció**) elosztási ütemezési feladatot.
+1. A beállítások csatornákra történő alkalmazásához futtassa az **1110** ( **Globális konfiguráció** ) elosztási ütemezési feladatot.
 
 ## <a name="additional-resources"></a>További erőforrások
 

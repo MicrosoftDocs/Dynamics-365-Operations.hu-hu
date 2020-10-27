@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c3b97b1921044ae35aa04dfa2133842c2d23246d
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: f06d3b7efa57d88d33ab256e0d8c6ebcdea1a41c
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3216229"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3975536"
 ---
 # <a name="service-activities"></a>Szolgáltatási tevékenységek        
 
@@ -32,7 +32,7 @@ ms.locfileid: "3216229"
 
 Hozzon létre szolgáltatási tevékenységeket a szolgáltatási rendelés definiálásához és fenntartásához. Egy szolgáltatási rendeléshez egy vagy több dolgozó által elvégzendő szolgáltatási tevékenység is tartozhat.
 
-A szolgáltatási tevékenységek a **Tevékenységtípusok** képernyőn vannak meghatározva. (Kattintson ide: **Értékesítés és marketing** \> **Beállítás** \> **Tevékenységek** \> **Tevékenységtípusok**.) A tevékenységek beállítása után automatikusan hozzáadhatja azokat a kapcsolódó szolgáltatási megállapodások szerint, vagy kézzel is hozzáadhatja a tevékenységeket a sorok hozzáadásakor a szervizrendeléshez.
+A szolgáltatási tevékenységek a **Tevékenységtípusok** képernyőn vannak meghatározva. (Kattintson ide: **Értékesítés és marketing** \> **Beállítás** \> **Tevékenységek** \> **Tevékenységtípusok** .) A tevékenységek beállítása után automatikusan hozzáadhatja azokat a kapcsolódó szolgáltatási megállapodások szerint, vagy kézzel is hozzáadhatja a tevékenységeket a sorok hozzáadásakor a szervizrendeléshez.
 
 A tevékenységek státusza megtekinthető a **Diszpécserközpont** lapon. Azon a lapon az egyes tevékenységeket átadhatja az egyik dolgózótól a másiknak.
 

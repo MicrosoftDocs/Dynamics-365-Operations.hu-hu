@@ -16,15 +16,15 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: roxanad
+ms.author: sericks
 ms.search.validFrom: 2017-12-01
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 4bcc6937da0e9f66014d9c00668e0c6790433ba8
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 25ca62466c00b038e0d7e1758fd4f13f776cb2f0
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811970"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3982552"
 ---
 # <a name="optimization-advisor-overview"></a>Optimalizálási tanácsadó – áttekintés
 
@@ -52,9 +52,9 @@ Ha többet szeretne megtudni optimalizálási tanácsadóról nézze meg a rövi
 
 ## <a name="optimization-rules"></a>Optimalizálási szabályok
 
-Az Optimalizálási tanácsadó szabályok teljes listájának megtekintéséhez, és annak a megtekintéséhez, hogy milyen gyakran történik meg a szabályok kiértékelése, ugorjon a **Rendszerfelügyelet** &gt; **Időszakos feladatok** &gt; **Diagnosztikai érvényesítési szabály karbantartása** elemre. Csak az **Aktív** állapotú szabályok értékelésére kerül sor. Az értékelési gyakoriság beállítása lehet **Napi**, **Heti**, **Havi** vagy **Nem ütemezett**.
+Az Optimalizálási tanácsadó szabályok teljes listájának megtekintéséhez, és annak a megtekintéséhez, hogy milyen gyakran történik meg a szabályok kiértékelése, ugorjon a **Rendszerfelügyelet** &gt; **Időszakos feladatok** &gt; **Diagnosztikai érvényesítési szabály karbantartása** elemre. Csak az **Aktív** állapotú szabályok értékelésére kerül sor. Az értékelési gyakoriság beállítása lehet **Napi** , **Heti** , **Havi** vagy **Nem ütemezett** .
 
-A nem ütemezett szabályok értékelésének kiváltására, vagy az időszakos szabályok megadott ütemezéstől eltérő felülvizsgálatára indítsa el a következőt: **Rendszerfelügyelet** &gt; **Időszakos feladatok** &gt; **Diagnosztikai ellenőrzési szabály ütemezése**. Ezután a **Diagnosztikai szabály ellenőrzése** párbeszédpanelen jelölje ki az értékelési gyakoriságot. Minden megadott gyakorisággal rendelkező szabály újraértékelésre kerül.
+A nem ütemezett szabályok értékelésének kiváltására, vagy az időszakos szabályok megadott ütemezéstől eltérő felülvizsgálatára indítsa el a következőt: **Rendszerfelügyelet** &gt; **Időszakos feladatok** &gt; **Diagnosztikai ellenőrzési szabály ütemezése** . Ezután a **Diagnosztikai szabály ellenőrzése** párbeszédpanelen jelölje ki az értékelési gyakoriságot. Minden megadott gyakorisággal rendelkező szabály újraértékelésre kerül.
 
 Az optimalizálási szabályok aktuális készletét a következő kategóriákba lehet osztani.
 
@@ -66,7 +66,7 @@ Ezenkívül néhány szabály ellenőrzi, hogy a funkciók, amelyek engedélyezv
 
 ### <a name="system-configuration"></a>Rendszerkonfiguráció
 
-Ha egy adott konfigurációs kulccsal vezérelhető funkció nincs használatban, optimalizálási lehetőség jön létre, és javasolja, hogy kapcsolja ki a konfigurációs kulcsot. Néhány példa a konfigurációs kulcsokra: **Tényleges súly**, **Költségvetés-tervezés**, **Projekt** és **Engedélyezett szállítók listája**.
+Ha egy adott konfigurációs kulccsal vezérelhető funkció nincs használatban, optimalizálási lehetőség jön létre, és javasolja, hogy kapcsolja ki a konfigurációs kulcsot. Néhány példa a konfigurációs kulcsokra: **Tényleges súly** , **Költségvetés-tervezés** , **Projekt** és **Engedélyezett szállítók listája** .
 
 ### <a name="business-data-consistency-and-cleanup"></a>Üzleti adatok összefüggései és tisztítása
 

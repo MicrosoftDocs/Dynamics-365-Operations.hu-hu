@@ -13,15 +13,15 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: omulvad
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: debfce7eb5e6dcf64830475db53f719cf56525c9
-ms.sourcegitcommit: 54da65a7da0efd4f0d9760c5b14ff785b28751c4
+ms.openlocfilehash: a8ebc281036842bdc8965e062990438e1fb466ff
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3830598"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3986864"
 ---
 # <a name="generate-and-process-customer-rebates"></a>Vevői visszatérítések létrehozása és feldolgozása
 
@@ -48,7 +48,7 @@ Ez az eljárás bemutatja, hogyan lehet feldolgozni az ügyfél-visszatérítés
 4. Kattintson az **OK** gombra.
 5. Az **Cikkszám** mezőben adjon meg vagy válasszon ki egy értéket.
 6. Állítsa a **Mennyiség** lehetőséget „40-re”.
-7. Az **Értékesítésirendelés-sorok** szakaszban válassza ki az **Értékesítésirendelés-sort**.
+7. Az **Értékesítésirendelés-sorok** szakaszban válassza ki az **Értékesítésirendelés-sort** .
 8. Kattintson az **Ár részletei** elemre. Ha nem látja ezt a lehetőséget, az azért lehet, mert az útmutató indítása előtt nem állította az **Árrészletek beállítását** az Igen lehetőségre.     
 9. Bontsa ki a **Visszatérítések** szakaszt. A **Visszatérítések** lap felsorolja az aktuális rendelési sorra vonatkozó összes visszatérítési megállapodást, illetve megjeleníti a becsült visszatérítési összeget is. Ne feledje, hogy a megjelenített összegek csak iránymutatóak a jövőbeli visszatérítési követelésekre vonatkozóan. A tényleges visszatérítési összegek eltérők lehetnek a következők alapján: időszakos visszatérítési megállapodás alapján a vevő által elért teljes értékesítési mennyiség, hogy a vevő a teljes vagy csak részleges mennyiséget hozott-e vissza; és hogy az értékesítési rendelést kiszámlázták-e.
 10. Zárja be a lapot.

@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 88df5732f8f2373de79d804a5c6765b7f1420142
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 2d6593d0eb1949140b23bc1ea6bcb87b12193aa7
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3216252"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3975560"
 ---
 # <a name="reverse-changes-in-a-dispatch-board"></a>Változtatások visszavonása egy diszpécserközpontban 
 
@@ -34,7 +34,7 @@ Ez az útmutató leírja, hogyan lehet visszavonni a diszpécserközpontban elv�
 
 A következő lépések segítségével vonhatja vissza a diszpécserközpontban nem mentett változtatásokat:
 
-1.  Kattintson a következőkre: **Szolgáltatáskezelés** \> **Rendszeres** \> **Diszpécserközpont**.
+1.  Kattintson a következőkre: **Szolgáltatáskezelés** \> **Rendszeres** \> **Diszpécserközpont** .
 
 2.  A **Diszpécserközpont** űrlapon töltse ki a mezőket a megfelelő információkkal, majd kattintson az **OK** gombra. 
 

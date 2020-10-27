@@ -13,15 +13,15 @@ audience: Application User
 ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: mikefalkner
+ms.author: roschlom
 ms.search.validFrom: 2018-12-01
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 6b1b1ddbc8eb8b1d926e68715336edc8e275ff29
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 52b0b456a6d9879c480ac3f076a32e382426a89c
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2178118"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3977791"
 ---
 # <a name="settle-remainder"></a>Hátralék kiegyenlítése
 
@@ -65,7 +65,7 @@ A hátralék kiegyenlítéséhez tegye a következőket:
 2)  Kattintson a **Hátralék kiegyenlítése** elemre
 3)  A párbeszédpanelen jelenik meg, a főkönyvi számla ellenében kiegyenlítendő összeggel, a hátralék kiegyenlítéséhez használt dátummal, az alapértelmezett okkóddal a paraméterekhez és az alapértelmezett számlával a paraméterekből. 
 4)  Ha meg szeretné változtatni az alapértelmezett okot válasszon egy új kiegyenlítési okot. A kiegyenlítési számla módosítva lesz az okkódhoz társított számlára.
-5)  Ha módosítani szeretné a **kiegyenlítési számlát**, szerkessze a kiegyenlítési számlát.
+5)  Ha módosítani szeretné a **kiegyenlítési számlát** , szerkessze a kiegyenlítési számlát.
 6)  Ha vevői tranzakciókat egyenlít ki, és a fennmaradó összeget egy másik vevőhöz szeretné átvinni, válasszon ki egy vevőt a **Vevői számlával szembeni hátralék kiegyenlítése** menüben. Ha beszállítói tranzakciókat egyenlít ki, és a fennmaradó összeget egy másik szállítóhoz szeretné átvinni, válasszon ki egy szállítót a **Szállítói számlával szembeni hátralék kiegyenlítése** menüben
 7)  Azt is teheti, hogy kifizetési naplót hoz létre a kiegyenlített hátralékkal, vagy napló nélkül is beküldheti. Válassza ki **Igen** lehetőséget a **Szerkesztés naplóban** menüben kifizetési napló létrehozásához. A létrehozott kifizetési naplót szerkeszteni is lehet.
 8)  Kattintson a **Hátralék kiegyenlítése** elemre. Ha azt választotta, hogy hozzon létre egy naplót, a gomb módosul a **Napló létrehozása** értékre. Ehelyett kattintson a **Napló létrehozása** gombra.

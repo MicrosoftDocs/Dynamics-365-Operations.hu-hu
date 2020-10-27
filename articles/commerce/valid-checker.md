@@ -3,7 +3,7 @@ title: Kiskereskedelmi tranzakció konzisztencia-ellenőrzése
 description: Ebben a témakörben részletes leírást találhat a Dynamics 365 Commerce tranzakció konzisztencia-ellenőrzésre használatos funkciójáról.
 author: josaw1
 manager: AnnBe
-ms.date: 10/14/2019
+ms.date: 10/07/2020
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-01-15
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: eb5c7389ba29d50232f9321e40bccceecd5f5fc6
-ms.sourcegitcommit: 02640a0f63daa9e509146641824ed623c4d69c7f
+ms.openlocfilehash: 3c7ca41b9e8a4c3127c98c756348959530a87996
+ms.sourcegitcommit: 1631296acce118c51c182c989e384e4863b03f10
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "3265618"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "3968772"
 ---
 # <a name="retail-transaction-consistency-checker"></a>Kiskereskedelmi tranzakció konzisztencia-ellenőrzése
 
@@ -47,12 +47,12 @@ Az **Üzleti tranzakciók ellenőrzése** kötegfolyamat ellenőrzi a kereskedel
 
 - **Vevői számla** – Ellenőrzi, hogy a kereskedelmi tranzakciós táblában szereplő vevői számla létezik a HQ-ban a vevői alapadatok között.
 - **Sorok száma** – Ellenőrzi, hogy a tranzakciós fejléctáblában rögzített sorok száma megegyezik az értékesítési tranzakciók táblájában található sorok számával.
-- **Az ár tartalmazza az adót** – Ellenőrzi, hogy az **Ár tartalmazza az adót** paraméter konzisztens-e a tranzakció soraiban.
-- **Kifizetetti összeg** – Ellenőrzi, hogy a kifizetési rekordok megegyeznek-e a fejlécben található kifizetett összeggel.
-- **Bruttó összeg** – Ellenőrzi, hogy a fejlécben szereplő bruttó összeg megfelel-e a sorokban található nettó összegek és az adó összegének összesítésével.
-- **Nettó összeg** – Ellenőrzi, hogy a fejlécben szereplő nettó összeg megfelel-e a sorokban található nettó összegek összesítésével.
-- **Alulfizetés/Túlfizetés** – Ellenőrzi, hogy a fejlécben található bruttó összeg és a kifizetett összeg közti különbség nem haladja meg a maximális alulfizetés/túlfizetés konfigurációját.
-- **Engedmény összege** – Ellenőrzi, hogy az engedménytáblákban szereplő engedmény összege és a tranzakció sorában szereplő engedmény összege konzisztens-e, és hogy a fejlécben található engedmény összege egyenlő-e a sorok engedményeinek összegével.
+- **Az ár tartalmazza az adót** – Ellenőrzi, hogy az **Ár tartalmazza az adót** paraméter konzisztens-e a tranzakció soraiban, és az értékesítési soron szereplő ár egyezik-e az adót tartalmazó ár és az adómentesség konfigurációjával.
+- **Kifizetett összeg** – Ellenőrzi, hogy a kifizetési rekordok megegyeznek-e a fejlécben található kifizetett összeggel, miközben figyelembe veszik a főkönyvben szereplő fillérkerekítési konfigurációt.
+- **Bruttó összeg** – Ellenőrzi, hogy a fejlécben szereplő bruttó összeg megfelel-e a sorokban található nettó összegek és az adó összegének összesítésével, miközben figyelembe veszi a főkönyvben szereplő fillérkerekítési konfigurációt is.
+- **Nettó összeg** – Ellenőrzi, hogy a fejlécben szereplő nettó összeg megfelel-e a sorokban található nettó összegeknek, miközben figyelembe veszi a főkönyvben szereplő fillérkerekítési konfigurációt is.
+- **Alulfizetés/Túlfizetés** – Ellenőrzi, hogy a fejlécben található bruttó összeg és a kifizetett összeg közti különbség nem haladja meg a maximális alulfizetés/túlfizetés konfigurációját, miközben figyelembe veszi a főkönyvben szereplő fillérkerekítési konfigurációt.
+- **Engedmény összege** – Ellenőrzi, hogy az engedménytáblákban szereplő engedmény összege és a kiskereskedelmi tranzakció sorában szereplő engedmény összege konzisztens-e, és hogy a fejlécben található engedmény összege egyenlő-e a sorok engedményeinek összegével, miközben figyelembe veszi a főkönyvben szereplő fillérkerekítési konfigurációt.
 - **Sorengedmény** – Ellenőrzi, hogy a tranzakciós sorban található sorengedmény megegyezik-e az adott tranzakciós sorhoz kapcsolódó engedménytábla összes sorának összegével.
 - **Ajándékutalvány-cikk** – A Commerce alkalmazás nem támogatja az ajándékutalvány-cikkek visszaküldését. Azonban az ajándékutalvány egyenlegét ki lehet fizetni készpénzben. Ha az ajándékutalványcikket visszárusorként dolgozzák fel készpénzes kifizetési sor helyett, akkor a kimutatás feladási folyamata sikertelen lesz. Az ajándékutalvány-cikkek ellenőrzési folyamata segítségével garantálható, hogy a tranzakciós táblákban szereplő, ajándékutalvány-cikkek visszaküldésére vonatkozó sorok ajándékutalvány készpénzes kifizetési sorok legyenek.
 - **Negatív ár** – Ellenőrzi, hogy nincsenek negatív árt tartalmazó tranzakciós sorok.
@@ -61,10 +61,11 @@ Az **Üzleti tranzakciók ellenőrzése** kötegfolyamat ellenőrzi a kereskedel
 - **Sorozatszám** – Ellenőrzi, hogy azon cikkekhez tartozó tranzakciósorokban szerepeljen a sorozatszám, amelyek ellenőrzése sorozatszámmal történik.
 - **Előjel** – Ellenőrzi, hogy a mennyiség és a nettó összeg előjele megegyezik-e az összes tranzakciós sorban.
 - **Üzleti dátum** – Ellenőrzi, hogy a tranzakciókhoz tartozó összes üzleti dátum pénzügyi időszaka nyitott-e.
+- **Költségek** – ellenőrzi, hogy a fejléc és a sor költségösszege megfelel-e az adót tartalmazó ár és az adómentesség konfigurációjának.
 
 ## <a name="set-up-the-consistency-checker"></a>Konzisztencia-ellenőrző beállítása
 
-Konfigurálja az „Üzleti tranzakciók ellenőrzése” kötegfolyamatot időszakos futásokhoz a **Kiskereskedelem és kereskedelem \> Kiskereskedelem és kereskedelem IT \> Pénztárfeladás** menüpontban. A kötegelt feladat az üzlet szervezeti hierarchiája alapján ütemezhető, hasonlóan a „Kimutatások kötegelt kiszámítása” és a „Kimutatások kötegelt feladása” folyamatok beállításához. Javasoljuk, hogy úgy konfigurálja ezt a kötegfolyamatot, hogy az naponta többször fusson, és úgy ütemezze, hogy minden P-feladat végrehajtása végén fusson.
+Konfigurálja az „Üzleti tranzakciók ellenőrzése” kötegfolyamatot időszakos futásokhoz a **Retail és Commerce \> Retail és Commerce IT \> Pénztárfeladás** menüpontban. A kötegelt feladat az üzlet szervezeti hierarchiája alapján ütemezhető, hasonlóan a „Kimutatások kötegelt kiszámítása” és a „Kimutatások kötegelt feladása” folyamatok beállításához. Javasoljuk, hogy úgy konfigurálja ezt a kötegfolyamatot, hogy az naponta többször fusson, és úgy ütemezze, hogy minden P-feladat végrehajtása végén fusson.
 
 ## <a name="results-of-validation-process"></a>Ellenőrzési folyamat eredményei
 

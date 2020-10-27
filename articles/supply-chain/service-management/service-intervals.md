@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5766d8ce1fa382f3f014e160d311b2dfab2bf774
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 1027a6a1ddb1057ba039382d394522d6f9538a90
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3216275"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3979136"
 ---
 # <a name="service-intervals"></a>Szolgáltatás intervallumai
 
@@ -44,7 +44,7 @@ Ez a példa azt mutatja be, hogy miként befolyásolja a szerviz intervalluma a 
 Először hozzon létre egy szolgáltatási szerződést, és állítsa a **Szervizrendelések kombinálása** beállítást **Szolgáltatási szerződés szerint** értékre.
 
 1. Kattintson a **Szolgáltatási szerződések** pontra
-2. A **Műveleti ablaktáblán**, a **Szolgáltatási szerződés** lapon, az **Új** csoportban, kattintson a **Szolgáltatási szerződés** lehetőségre egy új szolgáltatási szerződés létrehozásához.
+2. A **Műveleti ablaktáblán** , a **Szolgáltatási szerződés** lapon, az **Új** csoportban, kattintson a **Szolgáltatási szerződés** lehetőségre egy új szolgáltatási szerződés létrehozásához.
 3. Adjon meg egy leírást, válasszon ki egy projektet a **Projektazonosító** mezőben, és adjon meg egy dátumot a **Kezdő dátum** mezőben.
 4. A **Szervizrendelések kombinálása** mezőben válassza ki a **Szolgáltatási szerződés szerint** lehetőséget.
 
@@ -56,7 +56,7 @@ Ezzel létrehozta a következő szolgáltatási szerződést:
 
 ### <a name="create-a-service-agreement-line"></a>Szolgáltatásiszerződés-sor létrehozása
 
-A következő lépésben hozzon létre egy szolgáltatásiszerződés-sort, amelynek tranzakciótípusa **Óra**.
+A következő lépésben hozzon létre egy szolgáltatásiszerződés-sort, amelynek tranzakciótípusa **Óra** .
 
 A példa jelen részének végrehajtásához létre kell hoznia egy 10 napos szolgáltatás-intervallumot a **Szolgáltatás-intervallum** lapon. 
 
@@ -79,7 +79,7 @@ Nincs megadott időszak a sornál.
 
 Ekkor létrehozhatja a tervezett szervizrendeléseket és azok sorait a következő hónapra.
 
-1. A **Szolgáltatási szerződések** lap **műveleti ablaktábláján**, a **Szállítás** lapon kattintson a **Tervezett szervizrendelések** lehetőségre.
+1. A **Szolgáltatási szerződések** lap **műveleti ablaktábláján** , a **Szállítás** lapon kattintson a **Tervezett szervizrendelések** lehetőségre.
 2. A **Szervizrendelések létrehozása** lapon adja meg az aktuális dátumot a **Kezdő dátum** mezőben, illetve az aktuális dátum után egy hónappal lévő dátumot a **Záró dátum** mezőben.
 3. Állítsa az **Óra** csúszkát **Igen** értékre. 
 4. Kattintson az **OK** gombra.
@@ -88,7 +88,7 @@ Mivel a szervizrendelésen nincs csoportosítás (amit a **Szolgáltatási szerz
 
 ### <a name="service-orders-created"></a>A létrehozott szervizrendelések
 
-Az ebben a példányban létrehozott három szervizrendeléssor a **Szervizrendelések létrehozása** párbeszédpanelen beállított időkeretbe esik. A szervizrendeléseket a **Szolgáltatási szerződések** lapon tekintheti meg (**Műveleti ablaktábla** \> **Szállítás** lap \>**Megjelenítés** gomb).
+Az ebben a példányban létrehozott három szervizrendeléssor a **Szervizrendelések létrehozása** párbeszédpanelen beállított időkeretbe esik. A szervizrendeléseket a **Szolgáltatási szerződések** lapon tekintheti meg ( **Műveleti ablaktábla** \> **Szállítás** lap \>**Megjelenítés** gomb).
 
 ## <a name="related-topics"></a>Kapcsolódó témakörök
 

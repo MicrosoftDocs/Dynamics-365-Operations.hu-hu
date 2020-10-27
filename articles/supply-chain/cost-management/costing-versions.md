@@ -16,15 +16,15 @@ ms.custom: 54532
 ms.assetid: cd239da5-f434-4d1b-8196-5414c888d76d
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 16af19fb7f4f18c417522175643649681e5912da
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: cefee7d678789f462eedbf9f9a3fbc9b591e25a2
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3201848"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3978531"
 ---
 # <a name="costing-versions-overview"></a>Költségszámítási verziók áttekintése
 
@@ -46,7 +46,7 @@ A költségszámítási verziók a cikkek és gyártási folyamatok tervezett k�
 ## <a name="entering-costs"></a>Költségek megadása.
 A költségszámítási verzió költségrekord-adatainak karbantartása során rögzíteni kell a beszerzett cikkek és a telephelyek között áthelyezett cikkek költségeit. A gyártó vállalatoknál további adatkarbantartást jelent az útvonalműveletekhez kötődő költségkategóriák költségeinek megadása, a gyártási többletköltséget kifejező közvetett költségek számítási képleteinek megadása, valamint a gyártott cikkek költségeinek számítása. 
 
-A költségszámítási verziókon belül az egyes cikkek költségadatai az adott cikk egy vagy több költségrekordjából állnak össze. A cikk-költségrekordok a legelső bevitelkor **Függőbben** állapottal és egy tervezett érvénybelépési dátummal rendelkeznek. A cikk-költség rekord aktiválásakor az állapot **Aktív** lesz, továbbá az érvénybelépési dátum az aktiválási dátumra módosul. Egy cikk költségrekordjai a telephelyben, az érvénybe lépési dátumban és az állapotban különbözhetnek. A gyártott termékek jövőbeni dátumra vonatkozó költségszámításakor az anyagjegyzék-számításban a megfelelő érvényességi dátumú költségrekordok fognak szerepelni, akár **Függőben**, akár **Aktív** állapotúak. A cikkek aktuális aktív költségrekordja a termelési rendelés költségének becslésében és a készlettranzakció értékének meghatározásában vesz részt az elszámolóár szerinti készletmodellben. A költségkategóriák és a közvetett költség számítási képleteinek költségrekordjai a cikkek költségrekordjaihoz hasonlóan tarthatók karban. 
+A költségszámítási verziókon belül az egyes cikkek költségadatai az adott cikk egy vagy több költségrekordjából állnak össze. A cikk-költségrekordok a legelső bevitelkor **Függőbben** állapottal és egy tervezett érvénybelépési dátummal rendelkeznek. A cikk-költség rekord aktiválásakor az állapot **Aktív** lesz, továbbá az érvénybelépési dátum az aktiválási dátumra módosul. Egy cikk költségrekordjai a telephelyben, az érvénybe lépési dátumban és az állapotban különbözhetnek. A gyártott termékek jövőbeni dátumra vonatkozó költségszámításakor az anyagjegyzék-számításban a megfelelő érvényességi dátumú költségrekordok fognak szerepelni, akár **Függőben** , akár **Aktív** állapotúak. A cikkek aktuális aktív költségrekordja a termelési rendelés költségének becslésében és a készlettranzakció értékének meghatározásában vesz részt az elszámolóár szerinti készletmodellben. A költségkategóriák és a közvetett költség számítási képleteinek költségrekordjai a cikkek költségrekordjaihoz hasonlóan tarthatók karban. 
 
 A költségszámítási verziók két blokkolási szabálya határozza meg, hogy a függő költségek karbantarthatók-e, illetve azt, hogy a függő költség aktiválható-e. A blokkolási szabályokkal engedélyezheti az adatkarbantartást, majd ugyanezek használatával megakadályozhatja a költségrekordok adatainak karbantartását a költségszámítási verzióban. 
 

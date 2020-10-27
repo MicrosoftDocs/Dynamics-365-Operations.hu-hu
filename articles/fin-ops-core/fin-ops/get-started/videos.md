@@ -3,7 +3,7 @@ title: Videók
 description: Ez a lap felsorolja azokat a Microsoft által létrehozott „útmutató” és technikai beszélgetés videókat, amelyek a Finance and Operations alkalmazásokra vonatkoznak, és amelyek a YouTube és más webhelyeken állnak rendelkezésre.
 author: sericks007
 manager: AnnBe
-ms.date: 07/31/2020
+ms.date: 10/12/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: sericks
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
-ms.openlocfilehash: c620e5e75ba1c547f0a1ee6830a5cf1b7fa58377
-ms.sourcegitcommit: 074fe7e77feb795148c3daf2e6ccbb8a88679343
+ms.openlocfilehash: f61872e25cd2e91724d4918b8f974ee913913d37
+ms.sourcegitcommit: 47166b3e10097cc2754e0c8459f62dcdeef27053
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "3645365"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "3991452"
 ---
 # <a name="videos"></a>Videók 
 
@@ -82,6 +82,7 @@ A [Microsoft Dynamics YouTube csatorna](https://www.youtube.com/channel/UCJGCg4r
 - [A feladatrögzítő használata a Regression suite automation tool (RSAT) tesztesetének létrehozásához](https://youtu.be/bBr4BXAxTNI)
 - [A Regression suite automation tool (RSAT) alkalmazásban használható tesztterv létrehozása az Azure DevOps alkalmazásban](https://youtu.be/3jIuBleAnQk) 
 - [A Regression Suite Automation Tool (RSAT) használata](https://youtu.be/uhN9JItzGAk)
+- [A továbbfejlesztett Excel-élmény Regression Suite Automation Tool (RSAT) 2.0.](https://youtu.be/fcEkSIVQ1Bg)
 
 
 ## <a name="videos-for-dynamics-365-finance"></a>Videók a Dynamics 365 Finance szolgáltatáshoz
@@ -90,7 +91,7 @@ A [Microsoft Dynamics YouTube csatorna](https://www.youtube.com/channel/UCJGCg4r
 - [Egyéni mezők hozzáadása](https://www.youtube.com/watch?v=gWSGZI9Vtnc)
 - [A Power Apps beágyazása](https://www.youtube.com/watch?v=x3qyA1bH-NY)
 
-### <a name="expenses"></a>Költségek
+### <a name="expenses"></a>Kiadás
 - [Költséggel kapcsolatos gyakorlat](https://youtu.be/Ocy-MsTvEE0)
 
 ### <a name="financial-reporting"></a>Pénzügyi jelentéskészítés

@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cbb43bc4f696935bba9fca6435eb73fc9a2e5149
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 6e8205db277715f4f4f9c1ee589f264c0ded6617
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3202100"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3983819"
 ---
 # <a name="pass-returned-items-on-to-inspection"></a>A visszaadott cikkek továbbadása vizsgálatra 
 
@@ -32,11 +32,11 @@ ms.locfileid: "3202100"
 
 Visszáru cikkek rögzítésekor a cikkeket vizsgálatra küldheti, mielőtt visszajuttatná azokat a készletbe, vagy valamilyen más intézkedést hozna.
 
-1.  Kattintson a következőkre **Készletgazdálkodás** \> **Naplók** \> **Cikkérkeztetés** \> **Cikkérkeztetés**.
+1.  Kattintson a következőkre **Készletgazdálkodás** \> **Naplók** \> **Cikkérkeztetés** \> **Cikkérkeztetés** .
     
     \-vagy-
     
-    Kattintson a következőkre **Készletgazdálkodás** \> **Naplók** \> **Cikkérkeztetés** \> **Termelések beérkezése**.
+    Kattintson a következőkre **Készletgazdálkodás** \> **Naplók** \> **Cikkérkeztetés** \> **Termelések beérkezése** .
 
 2.  A cikkbevételezéseket a szokásos módon regisztrálja a **Helynapló** képernyőn.
     

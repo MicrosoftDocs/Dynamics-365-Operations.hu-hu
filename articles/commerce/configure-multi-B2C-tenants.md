@@ -14,15 +14,15 @@ ms.reviewer: v-chgri
 ms.search.scope: ''
 ms.search.region: Global
 ms.search.industry: retail
-ms.author: BriShoo
+ms.author: brshoo
 ms.search.validFrom: 2020-02-12
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 6ca48badbe15b7e1bf543716a9b0e3da31477a20
-ms.sourcegitcommit: 236672932ffd0a758012ebb7b2df9bc51249c126
+ms.openlocfilehash: d0b14e0c662af74464768b66c1c86d03d2944014
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "3096508"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3976016"
 ---
 # <a name="configure-multiple-b2c-tenants-in-a-commerce-environment"></a>Több B2C bérlő konfigurálása egy Commerce-környezetben
 
@@ -73,19 +73,19 @@ Ha Azure AD B2C-bérlőt szeretne hozzáadni a környezethez, hajtsa végre az a
 1. Rendszeradminisztrátorként jelentkezzen be a Commerce webhelykészítőbe a saját környezetében. Az Azure AD B2C-bérlők konfigurálásához rendszeradminisztrátornak kell lennie a Commerce környezethez.
 1. A bal oldali navigációs panelen válassza a **Bérlőbeállítások** elemet a kibontáshoz.
 1. Válassza a **B2C beállítások** lehetőséget, majd válassza ki a **Kezelés** pontot.
-1. Válassza ki az **B2C-alkalmazás hozzáadása**, majd írja be a következő adatokat:
+1. Válassza ki az **B2C-alkalmazás hozzáadása** , majd írja be a következő adatokat:
 
-    - **Alkalmazás neve**: Adja meg azt a nevet, amelyet az alkalmazáshoz kell használni a Commerce-ben való kezelésével kapcsolatban. Azt ajánljuk, hogy a Azure AD B2C alkalmazások Azure portálon történő beállításakor használt alkalmazásnevet használja. Ily módon csökkenthető a zűrzavar a Commerce-ben a B2C-bérlők kezelése során.
-    - **Bérlő neve**: adja meg az Azure portálon megjelenő B2C bérlő nevét.
-    - **Jelszó elfelejtésére vonatkozó irányelv azonosítója**: adja meg az irányelv azonosítóját (a házirend nevét az Azure portálon).
-    - **Regisztrációra és bejelentkezésre vonatkozó irányelv azonosítója**: adja meg az irányelv azonosítóját (a házirend nevét az Azure portálon).
-    - **Ügyfél GUID-azonosítója**: adja meg az Azure portálon megjelenő Azure AD B2C bérlő azonosítóját (nem a B2C bérlő alkalmazásazonosítóját).
-    - **Profil szerkesztésére vonatkozó irányelv azonosítója**: adja meg az irányelv azonosítóját (a házirend nevét az Azure portálon).
+    - **Alkalmazás neve** : Adja meg azt a nevet, amelyet az alkalmazáshoz kell használni a Commerce-ben való kezelésével kapcsolatban. Azt ajánljuk, hogy a Azure AD B2C alkalmazások Azure portálon történő beállításakor használt alkalmazásnevet használja. Ily módon csökkenthető a zűrzavar a Commerce-ben a B2C-bérlők kezelése során.
+    - **Bérlő neve** : adja meg az Azure portálon megjelenő B2C bérlő nevét.
+    - **Jelszó elfelejtésére vonatkozó irányelv azonosítója** : adja meg az irányelv azonosítóját (a házirend nevét az Azure portálon).
+    - **Regisztrációra és bejelentkezésre vonatkozó irányelv azonosítója** : adja meg az irányelv azonosítóját (a házirend nevét az Azure portálon).
+    - **Ügyfél GUID-azonosítója** : adja meg az Azure portálon megjelenő Azure AD B2C bérlő azonosítóját (nem a B2C bérlő alkalmazásazonosítóját).
+    - **Profil szerkesztésére vonatkozó irányelv azonosítója** : adja meg az irányelv azonosítóját (a házirend nevét az Azure portálon).
 
 1. Ha befejezte megadni ezeket az adatokat, akkor a módosítások mentéséhez kattintson az **OK** gombra.
 
 > [!NOTE]
-> A **Hatókör**, **Nem interaktív irányelv azonosítója**, **Nem interaktív ügyfélazonosító**, **Bejelentkezés egyéni tartománya** és **Regisztrációs irányelv azonosítója** mezőket üresen, hacsak a Dynamics 365 Commerce-csapat nem kéri ezek beállítását.
+> A **Hatókör** , **Nem interaktív irányelv azonosítója** , **Nem interaktív ügyfélazonosító** , **Bejelentkezés egyéni tartománya** és **Regisztrációs irányelv azonosítója** mezőket üresen, hacsak a Dynamics 365 Commerce-csapat nem kéri ezek beállítását.
 Az új Azure AD B2C bérlő most a **B2C alkalmazások kezelése** területen jelenik meg a listán.
 
 ### <a name="manage-or-delete-an-azure-ad-b2c-tenant"></a>Azure AD B2C-bérlő kezelése vagy törlése

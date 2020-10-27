@@ -3,7 +3,7 @@ title: Billentyűparancsok
 description: Ez a témakör áttekintést nyújt azokról a billentyűparancsokról, amelyeket a Finance and Operations alkalmazásokkal folytatott munka során használhat.
 author: jasongre
 manager: AnnBe
-ms.date: 10/02/2019
+ms.date: 10/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 41d5fb270e7b01effc650b24626b81ced647a399
-ms.sourcegitcommit: 95d06006142e6bf83351fb075b413fdc2074d5ee
+ms.openlocfilehash: 982fbef1af504ad70aa0e7c4ecf19f09fb599d16
+ms.sourcegitcommit: ebb110b0b73c99929636d26811a6f9c186080ddb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "3761621"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "3962520"
 ---
 # <a name="keyboard-shortcuts"></a>Billentyűparancsok
 
@@ -32,6 +32,8 @@ A következő billentyűparancsok segítségével gyorsan és hatékonyan viheti
 
 > [!NOTE]
 > Az itt ismertetett billentyűparancsok az Egyesült Államokban használt billentyűelrendezésre vonatkoznak. Egyéb billentyűzetkiosztások billentyűi esetén előfordulhat, hogy nem az amerikai billentyűzet billentyűinek felelnek meg.
+
+Az ezen a lapon található billentyűparancsok egy része a *billentyűkombináció* , ami azt jelenti, hogy két egymást követő billentyűkombinációt kell megadni (vesszővel elválasztva), amelyet a szükséges művelet elindításához külön kell lenyomni. Az „ALT + M, A” billentyűparancshoz például a felhasználónak először le kell nyomnia az „ALT + M” billentyűket, majd pedig le kell nyomnia az „A” billentyűt. 
 
 ## <a name="finding-a-shortcut"></a>Billentyűparancs megkeresése
 
@@ -193,7 +195,7 @@ A 11-es platformfrissítés óta a felhasználók a jelenleg elérhető billenty
 | Ugrás a fő oldal tartalmára (a fókusszal egy másik ablakban)                    | Alt+M,M                    |
 | Ugrás az adatterület panelre (ami a megnyitását is jelentheti)                       | Alt+M,B vagy Ctrl+F2         |
 
-## <a name="personalization-shortcuts"></a>Személyre szabási gyorsbillentyűk
+## <a name="personalization-shortcuts"></a>[Személyre szabási](personalize-user-experience.md) gyorsbillentyűk 
 
 | Művelet                                                                                                             | Billentyű vagy billentyűkombináció                               |
 |------------------------------------------------------------------------------------------------------------------------|-------------------------------------|
@@ -237,7 +239,20 @@ A 11-es platformfrissítés óta a felhasználók a jelenleg elérhető billenty
 | Ugrás egy oldallal feljebb/lentebb a keresőben                                                                                       | Page up / Page down              |
 | Ugrás a keresés tetejére/aljára                                                                                    | Home/End                       |
 
+## <a name="task-recordershortcuts"></a>[Feladatrögzítő](../../dev-itpro/user-interface/task-recorder.md)billentyűparancsok 
+
+| Művelet                                                                    | Nyomja meg a(z)  billentyűt                      |
+|-------------------------------------------------------------------------------|----------------------------|
+| A rögzítés leállítása (rögzítés közben)                                          | Alt+R,S                    |
+| A feladatrögzítő panel láthatóságának átkapcsolása (rögzítés közben)             | Alt+R,T                    |
+| A Sínes mód bekapcsolása (a feladat útmutatójának lejátszásakor)                                | Alt+R,L                    |
+| Ugrás az előző lépésre (a feladat útmutatójának lejátszása közben)                          | Alt+R,P                    |
+| Ugrás a következő lépésre (a feladat útmutatójának lejátszása közben)                              | Alt+R,N                    |
+| Fókusz váltása az oldal és az animált előugró ablak között (a feladat útmutatójának lejátszásakor) | Alt+R,F               |
+| Az animált előugró ablak kibontása/összecsukása (a feladat útmutatójának lejátszása közben)              | Alt+R,C                    |
+| Az animált előugró ablakon több/kevesebb adat megjelenítése (a feladatok útmutatójának lejátszásakor) | Alt+R,M                    |
+
 ## <a name="additional-resources"></a>További erőforrások
 
-- [Billentyűparancsok a hiányzó számla elemzéshez](../../../finance/general-ledger/financial-reporting-keyboard-shortcuts.md)
+[Billentyűparancsok a hiányzó számla elemzéshez](../../../finance/general-ledger/financial-reporting-keyboard-shortcuts.md)
 

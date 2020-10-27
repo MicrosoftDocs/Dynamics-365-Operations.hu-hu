@@ -13,15 +13,15 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: omulvad
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1cd28e38c0ffbc2cb154cd38cb4aaeea76087bf7
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: b6b1dbb4d53785c226f7c9d40339d9dd19f47152
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3203181"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3984154"
 ---
 # <a name="ship-sales-orders-without-warehousing"></a>Értékesítési rendelések szállítása raktározás nélkül
 
@@ -36,8 +36,8 @@ Ez a témakör azt ismerteti, hogyan lehet egy értékesítési rendelést friss
 4. Válassza ki a **Szállítólevél feladása** elemet.
 5. Bontsa ki vagy csukja össze a **Paraméterek** szakaszt.
 6. A **Mennyiség** mezőben válassza a **Mind** lehetőséget.
-    - Egyéb lehetőségek a következők: **Szállítás most** és **Kitárolt**. Ha a rendelési sort részlegesen kell szállítani és a rendelési sor **Szállítás most** mezőjében van érték, válassza ki a **Szállítás most** lehetőséget. Ha a szervezete teljesítési folyamatában a kitárolás külön folyamatként szerepel, amelyet egy kitárolási lista kezel és regisztrál, válassza a **Kitárolt** lehetőséget.  
-    - Ellenőrizze, hogy a **Feladás** értéke **Igen**-re van-e állítva.  
+    - Egyéb lehetőségek a következők: **Szállítás most** és **Kitárolt** . Ha a rendelési sort részlegesen kell szállítani és a rendelési sor **Szállítás most** mezőjében van érték, válassza ki a **Szállítás most** lehetőséget. Ha a szervezete teljesítési folyamatában a kitárolás külön folyamatként szerepel, amelyet egy kitárolási lista kezel és regisztrál, válassza a **Kitárolt** lehetőséget.  
+    - Ellenőrizze, hogy a **Feladás** értéke **Igen** -re van-e állítva.  
 7. Állítsa a **Szállítólevél nyomtatása** lehetőséget **Igen** értékre. Az **Áttekintés** lapon található az ehhez a feladáshoz létrehozandó szállítólevelek listája. Ha egy egyedülálló rendelést szállít, általában egy szállítólevél van. Azonban ha a megrendelés sorai több oldalról kerülnek szállításra, a feladást automatikusan a megfelelő számú dokumentumra bontja a rendszer. Ez egy kötelező feltétel, nem lehet megváltoztatni. Ehhez hasonlóan a feladási is több dokumentumra oszlik, ha a rendelési sorok eltérő szállítási címekkel rendelkeznek, és a szállítási irányelv előírja a felosztást.  
 8. A **Sorok** lapon válassza ki a szállítandó rendelési sort.
 9. A **Frissítés** mezőben adjon meg egy számot, amely kisebb, mint az eredeti mennyiség.
