@@ -3,8 +3,14 @@
   items:
     - name: Újdonságok
       items:
-        - name: Újdonságok vagy változások a Human Resources szolgáltatásban
+        - name: Újdonságok és változások a Human Resources szolgáltatásban
           href: hr-admin-whats-new.md
+        - name: 2002. október 22.
+          href: hr-whats-new-2020-10-22.md
+        - name: 2020. október 6.
+          href: hr-whats-new-2020-10-06.md
+        - name: 2020. szeptember 26.
+          href: hr-whats-new-2020-09-26.md
         - name: 2020. szeptember 16.
           href: hr-whats-new-2020-09-16.md
         - name: 2020. szeptember 3.
@@ -83,7 +89,9 @@
               href: hr-admin-integration-dayforce.md
             - name: Ismétlődő adatexportálási alkalmazás létrehozása
               href: hr-admin-integration-recurring-data-export.md
-            - name: Integrálás az Office-szal
+            - name: Integráció a LinkedIn Talent Hub szolgáltatással
+              href: hr-admin-integration-linkedin.md
+            - name: Integráció az Office-szal
               items:
                 - name: Office-integrációs oktatóanyag
                   href: ../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/human-resources/toc.json
@@ -217,6 +225,10 @@
               href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/dynamics365/human-resources/toc.json
         - name: Human Resources alkalmazás a Teamsben
           href: hr-admin-teams-leave-app.md
+        - name: Felkészülés az éles indításra
+          href: hr-admin-go-live-prepare.md
+        - name: Éles indítás GYIK
+          href: hr-admin-go-live-faq.md
         - name: Dokumentum-erőforrások
           items:
             - name: Súgórendszer
@@ -281,7 +293,7 @@
               href: hr-admin-integration-dayforce.md
             - name: Ismétlődő adatexportálási alkalmazás létrehozása
               href: hr-admin-integration-recurring-data-export.md
-            - name: Integrálás az Office-szal
+            - name: Integráció az Office-szal
               items:
                 - name: Office-integrációs oktatóanyag
                   href: ../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/talent/toc.json
@@ -665,10 +677,12 @@
               href: hr-learning-create-closed-ended-question.md
             - name: Függő kérdés létrehozása
               href: hr-learning-depending-question.md
-        - name: Alkalmazotti és vezetői önkiszolgálás beállítása
+        - name: Alkalmazotti és vezetői önkiszolgáló rendszer beállítása
           items:
-            - name: Alkalmazotti és vezetői önkiszolgálás áttekintése
+            - name: Alkalmazotti és vezetői önkiszolgáló rendszer áttekintése
               href: hr-employee-manager-self-service-overview.md
+            - name: Egyéni hivatkozások létrehozása a vezetői önkiszolgáló rendszerhez
+              href: hr-employee-manager-self-service-custom-links.md
             - name: Alkalmazotti önkiszolgáló munkaterület nevének módosítása
               href: hr-employee-self-service-workspace-name.md
             - name: Személyes információk szerkesztése

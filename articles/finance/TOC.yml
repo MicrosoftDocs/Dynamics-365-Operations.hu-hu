@@ -236,10 +236,12 @@
                   href: accounts-payable/auto-vendr-invc-process.md
                 - name: A szállítói számla automatizálásának beállítási lehetőségei
                   href: accounts-payable/vnd-invoice-set-up-options.md
-                - name: Számlák elküldése a munkafolyamat-rendszerbe és a terméknyugta sorainak egyeztetése
+                - name: Számlák elküldése a munkafolyamat-rendszerbe és a terméknyugtasorok egyeztetése
                   href: accounts-payable/submit-invoice-workflow-automatically.md
                 - name: Szállítói számlák automatizálási eredményeinek megtekintése
                   href: accounts-payable/view-automated-vendor-invoice.md
+                - name: Szállítói számla bejegyzésének munkaterülete
+                  href: accounts-payable/vendor-invoices-workspace.md
             - name: Könyvelési felosztások és analitikusnapló-bejegyzések szállítói számlákhoz
               href: accounts-payable/accounting-distributions-subledger-journal-entries-vendor-invoices.md
             - name: Számlaegyeztetés és vállalatközi beszerzési rendelések
@@ -922,6 +924,8 @@
                   href: general-ledger/open-lines-excel-journals-documents.md
                 - name: Naplóbejegyzések és tranzakciók megtekintése
                   href: general-ledger/view-journal-entries-transactions.md
+                - name: Főkönyvi kivonat a tranzakciós részletek jelentésével
+                  href: public-sector/general-ledger-public-sector-trial-balance.md
                 - name: Feladott naplóbejegyzések naplózása
                   href: general-ledger/tasks/journalize-posted-journal-entries.md
                 - name: Devizaátértékelés konszolidált vállalatban
@@ -1170,8 +1174,6 @@
                   href: public-sector/advanced-ledger-entries-public-sector.md
                 - name: Speciális főkönyvi bejegyzés létrehozása állami szektorban
                   href: public-sector/tasks/create-advanced-ledger-entry-public-sector.md
-                - name: Főkönyvi kivonat a tranzakciós részletek jelentésével
-                  href: public-sector/general-ledger-public-sector-trial-balance.md
                 - name: Készpénz-ellenőrzési korlátok alkalmazása
                   href: public-sector/cash-control.md
                 - name: Év végi feldolgozás az állami szektorban
@@ -1398,6 +1400,8 @@
                       href: localizations/tasks/br-00053-3-generate-emails-approved-nf-e-attach-danfe-pdf-files-nf-e-xml-files-emails.md
                     - name: NF-e tanúsítványok
                       href: localizations/latam-bra-nfe-certs.md
+                    - name: NF-e egyéni tanúsítvány érvényesítése
+                      href: localizations/nf-e-custom-certificate-validation.md
                     - name: 'NF-e XML-dokumentumok és a DANFE-fájlok beállítása, importálása és ellenőrzése'
                       href: localizations/latam-bra-set-up-import-nfe.md
                     - name: NF-e szövetségi paraméterek beállítása
@@ -2080,11 +2084,13 @@
                       href: localizations/apac-ind-gst-multi-batch-processing-gstr-return.md
                     - name: Adóügyi lekérdezés
                       href: localizations/apac-ind-GST-tax-inquiry.md
+                    - name: A TaxDocumentJSON tábla tisztítása
+                      href: localizations/gte-clean-up-tax-document-json-table.md
                 - name: Adómotor
                   items:
                     - name: Adómotor áttekintése
                       href: general-ledger/tax-engine.md
-                    - name: Importálás konfigurálása
+                    - name: Konfiguráció importálása
                       href: general-ledger/tax-engine-import-configuration.md
                     - name: Továbbfejlesztett képletszerkesztő
                       href: ../fin-ops-core/dev-itpro/analytics/er-advanced-formula-editor.md?toc=/dynamics365/finance/toc.json
@@ -2651,7 +2657,7 @@
                         - name: Készletprofil áttekintése
                           href: localizations/rus-inventory-profile-overview.md
                         - name: Készletprofil beállítása
-                          hreF: localizations/rus-set-up-inventory-profile.md
+                          href: localizations/rus-set-up-inventory-profile.md
                         - name: Készletprofil használata dokumentumokban és lekérdezésekben
                           href: localizations/rus-use-inventory-profile-documents-queries.md
                 - name: Jelentéskészítés
