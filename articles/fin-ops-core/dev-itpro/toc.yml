@@ -142,8 +142,10 @@
                           items:
                             - name: A kettős írás rendszerkövetelményei
                               href: data-entities/dual-write/dual-write-system-req.md
-                            - name: A kettős írás beállításának támogatott esetei
+                            - name: Útmutató a kettős írás beállításához
                               href: data-entities/dual-write/connection-setup.md
+                            - name: Szempontok a kezdeti szinkronizáláshoz
+                              href: data-entities/dual-write/initial-sync-guidance.md
                             - name: Kettős írás beállítása a Lifecycle Services szolgáltatásból
                               href: data-entities/dual-write/lcs-setup.md
                             - name: A kettős írás engedélyezése a meglévő Finance and Operations alkalmazásoknál
@@ -404,6 +406,8 @@
                   href: database/database-point-in-time-restore.md
                 - name: Termelési adatbázis időhöz kötött visszaállítása tesztkörnyezetté
                   href: database/database-pitr-prod-sandbox.md
+                - name: Az igény szerinti adatbázis-hozzáférés engedélyezése
+                  href: database/database-just-in-time-jit-access.md
             - name: Oktatóanyagok
               items:
                 - name: Oktatási célú frissítés
@@ -480,7 +484,9 @@
                   href: deployment/Update-retail-channel.md
                 - name: A Commerce Scale Unit (felhő) inicializálása
                   href: deployment/Initialize-Retail-Channels.md
-                - name: Retail adattárolási hely
+                - name: Csatornák áttelepítése másik Commerce Scale Unit szolgáltatásba
+                  href: deployment/Reassign-CSU.md
+                - name: Kiskereskedelmi adattárolási hely
                   href: deployment/retail-data-residency.md
             - name: Helyszíni telepítés
               items:
@@ -1458,9 +1464,9 @@
               href: 'https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json'
             - name: A 21Vianet által Kínában működtetett Finance and Operations támogatása
               href: lifecycle-services/21vianet-support.md
-            - name: Technikai támogatás beállítása a Finance and Operations szolgáltatáshoz
+            - name: Technikai támogatás beállítása a Finance and Operations alkalmazásokhoz
               href: lifecycle-services/support-experience.md
-            - name: A Finance and Operations támogatásával kapcsolatos tapasztalatok kezelése
+            - name: A Finance and Operations alkalmazások támogatásával kapcsolatos tapasztalatok kezelése
               href: lifecycle-services/cloud-powered-support-lcs.md
         - name: Rendszerfelügyelet
           items:
