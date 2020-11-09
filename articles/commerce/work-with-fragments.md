@@ -3,7 +3,7 @@ title: Töredékek használata
 description: Ez a témakör azt mutatja be, miért, hogyan és mikor lehet a töredékeket a Microsoft Dynamics 365 Commerce rendszerben használni.
 author: phinneyridge
 manager: annbe
-ms.date: 07/31/2020
+ms.date: 10/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,128 +17,122 @@ ms.search.industry: retail
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: b3e3299388190f03e761591a0c23164b705db9e8
-ms.sourcegitcommit: f16db76c1c235dfa445b50614bcee9219782d6dc
+ms.openlocfilehash: f1525610fb16edd5ff9ccefe0194f6f27b797b62
+ms.sourcegitcommit: b063bf3a52f19baa11ddba31ef9313d58a0f610e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "3961658"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4019564"
 ---
-# <a name="work-with-fragments"></a>Töredékek használata 
+# <a name="work-with-fragments"></a><span data-ttu-id="e2b79-103">Töredékek használata</span><span class="sxs-lookup"><span data-stu-id="e2b79-103">Work with fragments</span></span> 
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör azt mutatja be, miért, hogyan és mikor lehet a töredékeket a Microsoft Dynamics 365 Commerce rendszerben használni.
+<span data-ttu-id="e2b79-104">Ez a témakör azt mutatja be, miért, hogyan és mikor lehet a töredékeket a Microsoft Dynamics 365 Commerce rendszerben használni.</span><span class="sxs-lookup"><span data-stu-id="e2b79-104">This topic describes why, when, and how to use fragments in Microsoft Dynamics 365 Commerce.</span></span>
 
-## <a name="overview"></a>Áttekintés
+## <a name="overview"></a><span data-ttu-id="e2b79-105">Áttekintés</span><span class="sxs-lookup"><span data-stu-id="e2b79-105">Overview</span></span>
 
-A töredékek lehetővé teszik a modul-konfigurációk központosított szerkesztési élményének létrehozásár, amelyet a webhely minden területén újra fel lehet használni. Például a fejléceket, élőlábakat és szalagcímeket gyakran töredékként konfigurálják, mivel több oldal megosztva használja azokat. A töredékeket úgy képzelje el, mint kicsiny weboldalakat, amelyek a webhely egyéb oldalaiba illeszthetők be. A töredékek saját életciklussal rendelkeznek. Más szóval a létrehozásuk, hivatkozásuk, frissítése és törlése független entitásként történik a szerkesztőeszközökben.
+<span data-ttu-id="e2b79-106">A töredékek lehetővé teszik a modul-konfigurációk központosított szerkesztési élményének létrehozásár, amelyet a webhely minden területén újra fel lehet használni.</span><span class="sxs-lookup"><span data-stu-id="e2b79-106">Fragments allow for a centralized authoring experience for module configurations that must be reused throughout your site.</span></span> <span data-ttu-id="e2b79-107">Például a fejléceket, élőlábakat és szalagcímeket gyakran töredékként konfigurálják, mivel több oldal megosztva használja azokat.</span><span class="sxs-lookup"><span data-stu-id="e2b79-107">For example, headers, footers, and banners are often configured as fragments, because they are shared across many pages.</span></span> <span data-ttu-id="e2b79-108">A töredékeket úgy képzelje el, mint kicsiny weboldalakat, amelyek a webhely egyéb oldalaiba illeszthetők be.</span><span class="sxs-lookup"><span data-stu-id="e2b79-108">You can think of fragments as miniature webpages that can be inserted into other pages on your site.</span></span> <span data-ttu-id="e2b79-109">A töredékek saját életciklussal rendelkeznek.</span><span class="sxs-lookup"><span data-stu-id="e2b79-109">Fragments have their own lifecycle.</span></span> <span data-ttu-id="e2b79-110">Más szóval a létrehozásuk, hivatkozásuk, frissítése és törlése független entitásként történik a szerkesztőeszközökben.</span><span class="sxs-lookup"><span data-stu-id="e2b79-110">In other words, they are created, referenced, updated, and deleted as independent entities in the authoring tools.</span></span>
 
-A töredékek konfigurálását követően azok használhatók, ahol modulok használhatók a weboldal struktúrájában. A töredékekre a lapokon, az elrendezésekben, a sablonokban és más töredékekben is hivatkozni lehet.
-
-> [!NOTE]
-> A töredékek a többi töredéken belül legfeljebb hét szint mélyen ágyazhatók be.
-
-Például, ha szeretné népszerűsíteni egy szezonális eseményt több oldalon a honlapon, akkor egy töredéket is használhat. Az új töredékek létrehozási folyamatának első lépése a kiinduló modul típusának kiválasztása. Ebben a példában egy hős modulból hozhat létre egy töredéket.
+<span data-ttu-id="e2b79-111">A töredékek konfigurálását követően azok használhatók, ahol modulok használhatók a weboldal struktúrájában.</span><span class="sxs-lookup"><span data-stu-id="e2b79-111">After fragments are configured, they can be used wherever modules can be used in your site structure.</span></span> <span data-ttu-id="e2b79-112">A töredékekre a lapokon, az elrendezésekben, a sablonokban és más töredékekben is hivatkozni lehet.</span><span class="sxs-lookup"><span data-stu-id="e2b79-112">Fragments can be referenced on pages, in layouts, in templates, and in other fragments.</span></span>
 
 > [!NOTE]
-> A töredékeket bármilyen típusú modulból fel lehet építeni.
+> <span data-ttu-id="e2b79-113">A töredékek a többi töredéken belül legfeljebb hét szint mélyen ágyazhatók be.</span><span class="sxs-lookup"><span data-stu-id="e2b79-113">Fragments can be nested up to seven levels deep inside other fragments.</span></span>
 
-Ezt követően a hős töredéket konfigurálhatja az adott promóciós tartalommal. Igény szerint lokalizálhatja is azt. Ezt követően az új, önálló hős töredéket egy előre konfigurált modulként lehet használni a webhelyen. Egyszerűen hozzáadhatja azt sablonokhoz meghatározott oldalakhoz illetve a hero modulokat tartalmazó más töredékekhez.
+<span data-ttu-id="e2b79-114">Például, ha szeretné népszerűsíteni egy szezonális eseményt több oldalon a honlapon, akkor egy töredéket is használhat.</span><span class="sxs-lookup"><span data-stu-id="e2b79-114">For example, if you want to promote a seasonal event cross many pages on our site, you can use a fragment.</span></span> <span data-ttu-id="e2b79-115">Az új töredékek létrehozási folyamatának első lépése a kiinduló modul típusának kiválasztása.</span><span class="sxs-lookup"><span data-stu-id="e2b79-115">The first step in the process of creating a new fragment is to select the type of module that you want to start from.</span></span> <span data-ttu-id="e2b79-116">Ebben a példában egy hős modulból hozhat létre egy töredéket.</span><span class="sxs-lookup"><span data-stu-id="e2b79-116">For this example, you can build the fragment from a hero module.</span></span>
 
-Minden olyan hely, ahová a töredéket hozzáadták, a létrehozott központi hős-töredékre hivatkozik. Ha a töredékekhez módosításokat tesz közzé, akkor ezek a módosítások azonnal megjelennek az összes olyan helyen, ahol a töredékre hivatkoznak a webhelyen. Ennek megfelelően a töredékek hatékony módszert biztosítanak a webhely modul-konfigurációinak újrahasznosításához és központi kezeléséhez. A hatékony használat révén jelentősen növelheti az agilitást, és csökkentheti a webhely tartalomkezelésének költségeit.
+> [!NOTE]
+> <span data-ttu-id="e2b79-117">A töredékeket bármilyen típusú modulból fel lehet építeni.</span><span class="sxs-lookup"><span data-stu-id="e2b79-117">Fragments can be built from any module type.</span></span>
 
-A következő ábra bemutatja, hogy hogyan használhatók a töredékek a megosztott modul-konfigurációk létrehozásához egy e-kereskedelmi webhely szintjén.
+<span data-ttu-id="e2b79-118">Ezt követően a hős töredéket konfigurálhatja az adott promóciós tartalommal.</span><span class="sxs-lookup"><span data-stu-id="e2b79-118">You can then configure the hero fragment with your specific promotional content.</span></span> <span data-ttu-id="e2b79-119">Igény szerint lokalizálhatja is azt.</span><span class="sxs-lookup"><span data-stu-id="e2b79-119">You can also localize it as you require.</span></span> <span data-ttu-id="e2b79-120">Ezt követően az új, önálló hős töredéket egy előre konfigurált modulként lehet használni a webhelyen.</span><span class="sxs-lookup"><span data-stu-id="e2b79-120">The new stand-alone hero fragment can then be consumed as a preconfigured module throughout your site.</span></span> <span data-ttu-id="e2b79-121">Egyszerűen hozzáadhatja azt sablonokhoz meghatározott oldalakhoz illetve a hero modulokat tartalmazó más töredékekhez.</span><span class="sxs-lookup"><span data-stu-id="e2b79-121">You can easily add it to templates, to specific pages, or to other fragments that can contain hero modules.</span></span>
+
+<span data-ttu-id="e2b79-122">Minden olyan hely, ahová a töredéket hozzáadták, a létrehozott központi hős-töredékre hivatkozik.</span><span class="sxs-lookup"><span data-stu-id="e2b79-122">All the places where the fragment is added are references to the central hero fragment that you created.</span></span> <span data-ttu-id="e2b79-123">Ha a töredékekhez módosításokat tesz közzé, akkor ezek a módosítások azonnal megjelennek az összes olyan helyen, ahol a töredékre hivatkoznak a webhelyen.</span><span class="sxs-lookup"><span data-stu-id="e2b79-123">If you publish changes to the fragment, those changes are immediately reflected in all the places where the fragment is referenced across the site.</span></span> <span data-ttu-id="e2b79-124">Ennek megfelelően a töredékek hatékony módszert biztosítanak a webhely modul-konfigurációinak újrahasznosításához és központi kezeléséhez.</span><span class="sxs-lookup"><span data-stu-id="e2b79-124">Therefore, fragments provide a powerful and efficient way to reuse and centrally manage module configurations on a site.</span></span> <span data-ttu-id="e2b79-125">A hatékony használat révén jelentősen növelheti az agilitást, és csökkentheti a webhely tartalomkezelésének költségeit.</span><span class="sxs-lookup"><span data-stu-id="e2b79-125">By effectively using them, you can significantly increase agility and help reduce the cost that is associated with managing site content.</span></span>
+
+<span data-ttu-id="e2b79-126">A következő ábra bemutatja, hogy hogyan használhatók a töredékek a megosztott modul-konfigurációk létrehozásához egy e-kereskedelmi webhely szintjén.</span><span class="sxs-lookup"><span data-stu-id="e2b79-126">The following illustration shows how fragments can be used to centralize authoring of shared module configurations across an e-Commerce site.</span></span>
 
 ![Egy ábra bemutatja, hogy hogyan használhatók a töredékek a megosztott modul-konfigurációk létrehozásához egy e-kereskedelmi webhely szintjén.](./media/fragment-figure1.png)
 
-## <a name="create-a-fragment"></a>Töredék létrehozása
+## <a name="create-a-fragment"></a><span data-ttu-id="e2b79-128">Töredék létrehozása</span><span class="sxs-lookup"><span data-stu-id="e2b79-128">Create a fragment</span></span>
 
-Létrehozhat új töredéket hozhat, illetve egy meglévő modul konfigurációját mentheti töredékként.
+<span data-ttu-id="e2b79-129">Létrehozhat új töredéket hozhat, illetve egy meglévő modul konfigurációját mentheti töredékként.</span><span class="sxs-lookup"><span data-stu-id="e2b79-129">You can either create a new fragment or save an existing module configuration as a fragment.</span></span>
 
-### <a name="save-an-existing-module-configuration-as-a-fragment"></a>Meglévő modulkonfiguráció mentése töredékként
+### <a name="save-an-existing-module-configuration-as-a-fragment"></a><span data-ttu-id="e2b79-130">Meglévő modulkonfiguráció mentése töredékként</span><span class="sxs-lookup"><span data-stu-id="e2b79-130">Save an existing module configuration as a fragment</span></span>
 
-Ha egy korábban konfigurált modult újra felhasználható töredékké szeretne átalakítani, hajtsa végre az alábbi lépéseket.
+<span data-ttu-id="e2b79-131">Ha egy korábban konfigurált modult újra felhasználható töredékké szeretne átalakítani a Commerce webhelykészítőben, hajtsa végre az alábbi lépéseket.</span><span class="sxs-lookup"><span data-stu-id="e2b79-131">To convert a previously configured module to a reusable fragment in Commerce site builder, follow these steps.</span></span>
 
-1. Nyisson meg egy olyan lapot vagy sablont, amely a töredékké alakítandó modult tartalmazza.
-1. A bal oldali vázlat ablaktáblán vagy közvetlenül a vizuális oldalkészítőben, válassza ki az előzőleg konfigurált modult.
-1. Válassza ki a modul neve mellett lévő azt a három pont ( **...** ) a vázlat ablaktáblán vagy a kiválasztott modul eszköztárában, a vizuális oldalkészítőben. 
-1. Válassza ki a **Megosztás oldaltöredékként** lehetőséget. 
-1. A **Mentés oldaltöredékként** párbeszédpanelen adjon nevet a töredéknek.
-1. Az **OK** gombra kattintva mentheti a modulkonfigurációt olyan töredékként, amely más lapokhoz is hozzáadható.
+1. <span data-ttu-id="e2b79-132">Nyisson meg egy olyan lapot vagy sablont, amely a töredékké alakítandó modult tartalmazza.</span><span class="sxs-lookup"><span data-stu-id="e2b79-132">Open a page or template that contains the module that you want to convert to a fragment.</span></span>
+1. <span data-ttu-id="e2b79-133">A bal oldali vázlat ablaktáblán vagy közvetlenül a vizuális oldalkészítőben, válassza ki az előzőleg konfigurált modult.</span><span class="sxs-lookup"><span data-stu-id="e2b79-133">In the outline pane on the left or directly in visual page builder, select the previously configured module.</span></span>
+1. <span data-ttu-id="e2b79-134">Válassza ki a modul neve mellett lévő azt a három pont ( **...** ) a vázlat ablaktáblán vagy a kiválasztott modul eszköztárában, a vizuális oldalkészítőben.</span><span class="sxs-lookup"><span data-stu-id="e2b79-134">Select the ellipsis ( **...** ) next to the name of the module in either the outline pane or the selected module's toolbar in visual page builder.</span></span> 
+1. <span data-ttu-id="e2b79-135">Válassza ki a **Megosztást töredékként** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="e2b79-135">Select **Share as fragment**.</span></span> 
+1. <span data-ttu-id="e2b79-136">A **Mentés töredékként** párbeszédpanelen adjon nevet a töredéknek.</span><span class="sxs-lookup"><span data-stu-id="e2b79-136">In the **Save as fragment** dialog box, enter a name for the fragment.</span></span>
+1. <span data-ttu-id="e2b79-137">Az **OK** gombra kattintva mentheti a modulkonfigurációt olyan töredékként, amely más lapokhoz is hozzáadható.</span><span class="sxs-lookup"><span data-stu-id="e2b79-137">Select **OK** to save the module configuration as a fragment that can be added to other pages.</span></span>
+<!-- The following image shows how to save a module configuration as a fragment.-->
+<!--![A screen capture of how to save a module configuration as a fragment](./media/save-as-fragment.png)-->
 
-A következő kép azt ábrázolja, hogyan kell menteni a modulok konfigurációját töredékként.
+### <a name="create-a-new-fragment"></a><span data-ttu-id="e2b79-138">Új töredék létrehozása</span><span class="sxs-lookup"><span data-stu-id="e2b79-138">Create a new fragment</span></span>
 
-![A modulok konfigurációjának töredékként való mentésének képernyőfelvétele](./media/save-as-fragment.png)
+<span data-ttu-id="e2b79-139">A következő lépésekkel hozhat létre új töredéket a Commerce webhelykészítőben.</span><span class="sxs-lookup"><span data-stu-id="e2b79-139">To create a new fragment in Commerce site builder, follow these steps.</span></span>
 
-### <a name="create-a-new-fragment"></a>Új töredék létrehozása
+1. <span data-ttu-id="e2b79-140">A bal oldali navigációs ablakban válassza ki a **Töredékek** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="e2b79-140">In the navigation pane on the left, select **Fragments**.</span></span>
+1. <span data-ttu-id="e2b79-141">Válassza az **Új** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="e2b79-141">Select **New**.</span></span> <span data-ttu-id="e2b79-142">Megjelenik az **Új töredék** párbeszédpanel, amelyen az összes elérhető modultípus látható.</span><span class="sxs-lookup"><span data-stu-id="e2b79-142">A **New fragment** dialog box appears that shows all the available module types.</span></span> <span data-ttu-id="e2b79-143">A korábban említetteknek megfelelően a töredékek bármilyen típusú modulból létrehozhatók.</span><span class="sxs-lookup"><span data-stu-id="e2b79-143">As was mentioned earlier, fragments can be created from any module type.</span></span>
+1. <span data-ttu-id="e2b79-144">A modul típusának kiválasztása a töredékhez.</span><span class="sxs-lookup"><span data-stu-id="e2b79-144">Select a module type for your fragment.</span></span>
 
-Új töredék létrehozásához kövesse az alábbi lépéseket.
-
-1. A bal oldali navigációs ablakban válassza ki a **Töredékek** lehetőséget.
-1. Válassza az **Új oldaltöredék** lehetőséget. Megjelenik egy párbeszédpanel, amelyen az összes elérhető modultípus látható. A korábban említetteknek megfelelően a töredékek bármilyen típusú modulból létrehozhatók.
-1. A modul típusának kiválasztása a töredékhez.
-
-A következő kép bemutatja, hogy hol hozzon létre új töredéket.
-
-![Új töredék létrehozási helyének képernyőfelvétele](./media/fragment-nav-menu.png)
-
+<!-- The following image shows where to create a new fragment.-->
+<!-- ![A screen capture of where to create a new fragment](./media/fragment-nav-menu.png)-->
 > [!TIP]
-> Egy általános tárolómodul-típus kiválasztásával a legrugalmasabban frissítheti és konfigurálhatja a töredéket később.
+> <span data-ttu-id="e2b79-145">Egy általános tárolómodul-típus kiválasztásával a legrugalmasabban frissítheti és konfigurálhatja a töredéket később.</span><span class="sxs-lookup"><span data-stu-id="e2b79-145">By selecting a generic container module type, you get the most flexibility when you need to update and configure your fragment later.</span></span>
 
-## <a name="add-remove-or-edit-fragments-on-a-page"></a>Töredékek hozzáadása, eltávolítása vagy szerkesztése egy lapon
+## <a name="add-remove-or-edit-fragments-on-a-page"></a><span data-ttu-id="e2b79-146">Töredékek hozzáadása, eltávolítása vagy szerkesztése egy lapon</span><span class="sxs-lookup"><span data-stu-id="e2b79-146">Add, remove, or edit fragments on a page</span></span>
 
-A következő eljárások leírják a töredékek hozzáadását, eltávolítását és szerkesztését.
+<span data-ttu-id="e2b79-147">A következő eljárások leírják a töredékek hozzáadását, eltávolítását és szerkesztését.</span><span class="sxs-lookup"><span data-stu-id="e2b79-147">The following procedures describe how to add, remove, and edit fragments.</span></span>
 
-### <a name="add-a-fragment"></a>Töredék hozzáadása
+### <a name="add-a-fragment"></a><span data-ttu-id="e2b79-148">Töredék hozzáadása</span><span class="sxs-lookup"><span data-stu-id="e2b79-148">Add a fragment</span></span>
 
-Töredék hozzáadásához a oldalhoz tegye a következőket:
+<span data-ttu-id="e2b79-149">A következő lépésekkel adhat hozzá új töredéket egy oldalhoz a Commerce webhelykészítőben.</span><span class="sxs-lookup"><span data-stu-id="e2b79-149">To add a fragment to a page in Commerce site builder, follow these steps.</span></span>
 
-1. A bal oldali vázlat ablaktáblán vagy közvetlenül a vizuális oldalkészítőben, válassza ki azt a tárolót vagy helyet, amelyhez hozzá szeretné adni a származtatott modulokat.
-1. Az online ablaktáblán válassza ki a tároló vagy a hely neve melletti három pontot ( **...** ).  Másik lehetőségként, ha a vizuális oldalkészítőt használja, válassza ki a pluszjelet ( **+** ).  
-1. Válassza a **Töredék hozzáadása** lehetőséget.
-
-    ![A meglévő töredékek bővítőhelyhez vagy konténerhez történő hozzáadásának képernyőfelvétele](./media/add-fragment.png)
+1. <span data-ttu-id="e2b79-150">A bal oldali vázlat ablaktáblán vagy közvetlenül a vizuális oldalkészítőben, válassza ki azt a tárolót vagy helyet, amelyhez hozzá szeretné adni a származtatott modulokat.</span><span class="sxs-lookup"><span data-stu-id="e2b79-150">In the outline pane on the left or directly in visual page builder, select a container or slot to which child modules can be added.</span></span>
+1. <span data-ttu-id="e2b79-151">Válassza ki a tároló vagy a hely neve melletti három pontot ( **...** ).</span><span class="sxs-lookup"><span data-stu-id="e2b79-151">Select the ellipsis ( **...** ) next to the name of the container or slot.</span></span>  <span data-ttu-id="e2b79-152">Másik lehetőségként, ha a vizuális oldalkészítőt használja, válassza ki a pluszjelet ( **+** ).</span><span class="sxs-lookup"><span data-stu-id="e2b79-152">Alternately, if using visual page builder, select the plus symbol ( **+** ).</span></span>  
+1. <span data-ttu-id="e2b79-153">Válassza a **Töredék hozzáadása** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="e2b79-153">Select **Add fragment**.</span></span>
+    <!-- ![A screen capture of how to add an existing fragment to a slot or container](./media/add-fragment.png)-->
  
     > [!NOTE]
-    > Ha a tároló vagy a bővítőhely nem támogatja az új származtatott modulokat, akkor a **Töredék hozzáadása** lehetőség nem érhető el.
+    > <span data-ttu-id="e2b79-154">Ha a tároló vagy a bővítőhely nem támogatja az új származtatott modulokat, akkor a **Töredék hozzáadása** lehetőség nem érhető el.</span><span class="sxs-lookup"><span data-stu-id="e2b79-154">If the container or slot doesn't support new child modules, the **Add fragment** option is unavailable.</span></span>
     
-1. A **Töredék hozzáadása** párbeszédpanelen keressen meg és válasszon ki egy töredéket, hogy hozzáadja. Ha nincs elérhető töredék a listán, először létre kell hozni egy töredéket egy olyan modultípusból, amelyet a kiválasztott tároló vagy bővítőhely támogat.
-1. Válassza ki és adja hozzá a kívánt töredéket a tárolóhoz vagy helyhez a lapon.
-
-    ![A töredékkiválasztó modális ablak képernyőfelvétele](./media/fragment-picker.png)
-
-> [!NOTE]
-> A tárolókban vagy bővítőhelyekben engedélyezett modulokat a lapsablonja vagy a modulok saját definíciói határozzák meg.
-
-### <a name="remove-a-fragment"></a>Töredék eltávolítása
-
-A következő lépésekkel lehet eltávolítani egy töredéket egy helyről vagy tárolóból az oldalon.
-
-1. A bal oldali vázlat ablaktáblán válassza az eltávolítani kívánt töredék neve melletti három pontot ( **...** ), majd válassza a kuka gombját.  Másik lehetőségként kiválaszthatja a töredéket a vizuális oldalkészítőben, és kiválaszthatja a kuka lehetőséget a töredék eszköztárában.
-1. Amikor a program megkérdezi, hogy szeretné-e eltávolítani a töredéket, válassza az **OK** lehetőséget.
+1. <span data-ttu-id="e2b79-155">A **Töredék kiválasztása** párbeszédpanelen keressen meg és válasszon ki egy töredéket a hozzáadáshoz.</span><span class="sxs-lookup"><span data-stu-id="e2b79-155">In the **Select fragment** dialog box, search for and select a fragment to add.</span></span> <span data-ttu-id="e2b79-156">Ha nincs elérhető töredék a listán, először létre kell hozni egy töredéket egy olyan modultípusból, amelyet a kiválasztott tároló vagy bővítőhely támogat.</span><span class="sxs-lookup"><span data-stu-id="e2b79-156">If no available fragments are listed, you might first have to create a fragment from a module type that the selected container or slot supports.</span></span>
+1. <span data-ttu-id="e2b79-157">Válassza ki és adja hozzá a kívánt töredéket a tárolóhoz vagy helyhez a lapon.</span><span class="sxs-lookup"><span data-stu-id="e2b79-157">Select your desired fragment to add it to the container or slot on your page.</span></span>
+<!--    ![A screen capture of the fragment picker modal window](./media/fragment-picker.png)-->
 
 > [!NOTE]
-> Ha eltávolít egy töredéket egy lapról, akkor csak az adott oldalról távolítja el a hivatkozást. **Nem** törli a töredéket az oldalról. Ha törölni szeretne egy töredékeket a webhelyről, akkor a töredékvizsgáló felhasználói felülteét kell használnia. A webhely töredékeit csak akkor törölheti, ha a lapok, sablonok vagy más töredékek jelenleg nem hivatkoznak rájuk.
+> <span data-ttu-id="e2b79-158">A tárolókban vagy bővítőhelyekben engedélyezett modulokat a lapsablonja vagy a modulok saját definíciói határozzák meg.</span><span class="sxs-lookup"><span data-stu-id="e2b79-158">The modules that are allowed in a container or slot are defined by the page's template or the modules' own definitions.</span></span>
 
-### <a name="edit-a-fragment"></a>Töredék szerkesztése
+### <a name="remove-a-fragment"></a><span data-ttu-id="e2b79-159">Töredék eltávolítása</span><span class="sxs-lookup"><span data-stu-id="e2b79-159">Remove a fragment</span></span>
 
-A töredékek szerkesztéséhez a töredék-szerkesztő felhasználói felületét kell használnia. Ez korlátozás szándékos. Ez segít szavatolni, hogy a szerzők nem tévesztik össze a modulok szerkesztési folyamatát a több lapon megosztott töredékek szerkesztési folyamatával.
+<span data-ttu-id="e2b79-160">A Commerce webhelykészítő egy lapján lévő bővítőhelyen vagy tárolóban levő töredék eltávolításához kövesse az alábbi lépéseket.</span><span class="sxs-lookup"><span data-stu-id="e2b79-160">To remove a fragment from a slot or container on a page in Commerce site builder, follow these steps.</span></span>
 
-Egy töredék szerkesztéséhez kövesse az alábbi lépéseket.
+1. <span data-ttu-id="e2b79-161">A bal oldali vázlat ablaktáblán válassza az eltávolítani kívánt töredék neve melletti három pontot ( **...** ), majd válassza a kuka gombját.</span><span class="sxs-lookup"><span data-stu-id="e2b79-161">In the outline pane on the left, select the ellipsis ( **...** ) next to the name of the fragment to be removed, and then select the trash can symbol.</span></span>  <span data-ttu-id="e2b79-162">Másik lehetőségként kiválaszthatja a töredéket a vizuális oldalkészítőben, és kiválaszthatja a kuka lehetőséget a töredék eszköztárában.</span><span class="sxs-lookup"><span data-stu-id="e2b79-162">Alternately, you can select the fragment in visual page builder and select the trash can symbol in the fragment's toolbar.</span></span>
+1. <span data-ttu-id="e2b79-163">Amikor a program megkérdezi, hogy szeretné-e eltávolítani a töredéket, válassza az **OK** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="e2b79-163">When you're prompted to confirm that you want to remove the fragment, select **OK**.</span></span>
 
-1. A bal oldali navigációs ablakban válassza ki a **Töredékek** lehetőséget.
-1. A **Töredékek** alatt válassza ki a szerkeszteni kívánt töredéket.
-1. Igény szerint szerkesztheti a töredék moduljának jellemzőit és szerkezetét. A folyamat hasonló a modulok szerkesztési folyamataihoz a lap szerkesztőnézetében.
+> [!NOTE]
+> <span data-ttu-id="e2b79-164">Ha eltávolít egy töredéket egy lapról, akkor csak az adott oldalról távolítja el a hivatkozást.</span><span class="sxs-lookup"><span data-stu-id="e2b79-164">When you remove a fragment from a page, you just remove the reference to it from that page.</span></span> <span data-ttu-id="e2b79-165">**Nem** törli a töredéket az oldalról.</span><span class="sxs-lookup"><span data-stu-id="e2b79-165">You do **not** delete the fragment from your site.</span></span> <span data-ttu-id="e2b79-166">Ha törölni szeretne egy töredékeket a webhelyről, akkor a töredékvizsgáló felhasználói felülteét kell használnia.</span><span class="sxs-lookup"><span data-stu-id="e2b79-166">To delete fragments from your site, you must use the fragment inspector user interface (UI).</span></span> <span data-ttu-id="e2b79-167">A webhely töredékeit csak akkor törölheti, ha a lapok, sablonok vagy más töredékek jelenleg nem hivatkoznak rájuk.</span><span class="sxs-lookup"><span data-stu-id="e2b79-167">You can delete fragments from a site only if they aren't currently referenced by any pages, templates, or other fragments.</span></span>
 
-A töredékeket úgy is szerkesztheti, hogy kijelöli azt egy lapon, egy sablonban vagy egy szülő töredékben, majd a jobb oldali Tulajdonságok ablaktáblában kiválasztja a **Töredék szerkesztése** elemet.
+### <a name="edit-a-fragment"></a><span data-ttu-id="e2b79-168">Töredék szerkesztése</span><span class="sxs-lookup"><span data-stu-id="e2b79-168">Edit a fragment</span></span>
 
-## <a name="additional-resources"></a>További erőforrások
+<span data-ttu-id="e2b79-169">A töredékek szerkesztéséhez a töredék-szerkesztő felhasználói felületét kell használnia.</span><span class="sxs-lookup"><span data-stu-id="e2b79-169">To edit fragments, you must use the fragment editor UI.</span></span> <span data-ttu-id="e2b79-170">Ez korlátozás szándékos.</span><span class="sxs-lookup"><span data-stu-id="e2b79-170">This restriction is by design.</span></span> <span data-ttu-id="e2b79-171">Ez segít szavatolni, hogy a szerzők nem tévesztik össze a modulok szerkesztési folyamatát a több lapon megosztott töredékek szerkesztési folyamatával.</span><span class="sxs-lookup"><span data-stu-id="e2b79-171">It helps guarantee that authors don't confuse the process of editing the modules for a specific page with the process of editing fragments that might be shared across many pages.</span></span>
 
-[Sablonok és elrendezések áttekintése](templates-layouts-overview.md)
+<span data-ttu-id="e2b79-172">A következő lépésekkel szerkeszthet új töredéket a Commerce webhelykészítőben.</span><span class="sxs-lookup"><span data-stu-id="e2b79-172">To edit a fragment in Commerce site builder, follow these steps.</span></span>
 
-[Sablonok használata](work-with-templates.md)
+1. <span data-ttu-id="e2b79-173">A bal oldali navigációs ablakban válassza ki a **Töredékek** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="e2b79-173">In the navigation pane on the left, select **Fragments**.</span></span>
+1. <span data-ttu-id="e2b79-174">A **Töredékek** alatt válassza ki a szerkeszteni kívánt töredéket.</span><span class="sxs-lookup"><span data-stu-id="e2b79-174">Under **Fragments** , select the fragment to edit.</span></span>
+1. <span data-ttu-id="e2b79-175">Igény szerint szerkesztheti a töredék moduljának jellemzőit és szerkezetét.</span><span class="sxs-lookup"><span data-stu-id="e2b79-175">Edit the fragment's module properties and structure as you require.</span></span> <span data-ttu-id="e2b79-176">A folyamat hasonló a modulok szerkesztési folyamataihoz a lap szerkesztőnézetében.</span><span class="sxs-lookup"><span data-stu-id="e2b79-176">The process resembles the process for editing modules are edited in the page editor view.</span></span>
 
-[Előre beállított elrendezések használata](work-with-layouts.md)
+<span data-ttu-id="e2b79-177">A töredékeket úgy is szerkesztheti, hogy kijelöli azt egy lapon, egy sablonban vagy egy szülő töredékben, majd a jobb oldali Tulajdonságok ablaktáblában kiválasztja a **Töredék szerkesztése** elemet.</span><span class="sxs-lookup"><span data-stu-id="e2b79-177">You can also edit a fragment by selecting it on a page, in a template, or in a parent fragment, and then selecting **Edit Fragment** in the properties pane on the right.</span></span>
 
-[A közzétételi csoportokkal végzett munka](publish-groups.md)
+## <a name="additional-resources"></a><span data-ttu-id="e2b79-178">További erőforrások</span><span class="sxs-lookup"><span data-stu-id="e2b79-178">Additional resources</span></span>
+
+[<span data-ttu-id="e2b79-179">Sablonok és elrendezések áttekintése</span><span class="sxs-lookup"><span data-stu-id="e2b79-179">Templates and layouts overview</span></span>](templates-layouts-overview.md)
+
+[<span data-ttu-id="e2b79-180">Sablonok használata</span><span class="sxs-lookup"><span data-stu-id="e2b79-180">Work with templates</span></span>](work-with-templates.md)
+
+[<span data-ttu-id="e2b79-181">Előre beállított elrendezések használata</span><span class="sxs-lookup"><span data-stu-id="e2b79-181">Work with preset layouts</span></span>](work-with-layouts.md)
+
+[<span data-ttu-id="e2b79-182">A közzétételi csoportokkal végzett munka</span><span class="sxs-lookup"><span data-stu-id="e2b79-182">Work with publish groups</span></span>](publish-groups.md)

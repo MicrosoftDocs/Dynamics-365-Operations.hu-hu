@@ -8,7 +8,7 @@ ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: SysCorpNetPrinterList, WHSParameters, NumberSequenceTableListPage, NumberSequenceDetails, WHSDocumentRoutingLayout, WHSDocumentRouting, WHSRFMenuItem, WHSRFMenu, WHSWorkTemplateTable
+ms.search.form: SysCorpNetPrinterList, WHSParameters, NumberSequenceTableListPage, NumberSequenceDetails, WHSDocumentRoutingLayout, WHSDocumentRouting, WHSRFMenuItem, WHSRFMenu, WHSWorkTemplateTable, WHSLicensePlateLabelBuildConfig, WHSLicensePlateLabel
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -17,87 +17,87 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 43dc913e84fa53179855d7ab8dbbf4d179e2cc63
-ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
+ms.openlocfilehash: 9e548e5e5528733412d47478dd740b87217cdac2
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "3383044"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016102"
 ---
-# <a name="enable-license-plate-label-printing"></a><span data-ttu-id="0e57f-103">Azonosítótábla-címke nyomtatásának engedélyezése</span><span class="sxs-lookup"><span data-stu-id="0e57f-103">Enable license plate label printing</span></span>
+# <a name="enable-license-plate-label-printing"></a><span data-ttu-id="ae6f7-103">Azonosítótábla-címke nyomtatásának engedélyezése</span><span class="sxs-lookup"><span data-stu-id="ae6f7-103">Enable license plate label printing</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="0e57f-104">Ez az eljárás bemutatja a Konténer sorszáma (SSCC) címke automatikus nyomtatásának engedélyezését, miután az utolsó cikk készletből való kitárolása is megtörtént az értékesítési kiválasztási munkafolyamat során.</span><span class="sxs-lookup"><span data-stu-id="0e57f-104">This topic shows how to enable the automatic printing of a Serial shipping container code (SSCC) label after the last item is picked from inventory in a sales picking work process.</span></span> <span data-ttu-id="0e57f-105">Ezt a folyamatot lefuttathatja az USMF bemutatócégen.</span><span class="sxs-lookup"><span data-stu-id="0e57f-105">You can run this procedure in demo data company USMF.</span></span> <span data-ttu-id="0e57f-106">Ha a saját adatok használatával futtatja le, akkor szüksége lesz egy az azonosítótáblákhoz beállított számsorozatra.</span><span class="sxs-lookup"><span data-stu-id="0e57f-106">If you're run it using your own data, you need to have a number sequence set up for license plates.</span></span> <span data-ttu-id="0e57f-107">A feladat megkezdése előtt be kell állítania egy címkenyomtatót.</span><span class="sxs-lookup"><span data-stu-id="0e57f-107">You need to set up a label printer before you begin this task.</span></span> <span data-ttu-id="0e57f-108">Lépjen a Szervezetadminisztráció > Beállítás > Hálózati nyomtatókra.</span><span class="sxs-lookup"><span data-stu-id="0e57f-108">Go to Organization administration > Setup > Network printers.</span></span> <span data-ttu-id="0e57f-109">A Művelet panelen kattintson az Opciókra, majd a Dokumentumirányítási ügynök telepítőjének letöltése gombra.</span><span class="sxs-lookup"><span data-stu-id="0e57f-109">On the Action Pane, click Options, and then click the Download document routing agent installer button.</span></span> <span data-ttu-id="0e57f-110">Futtassa a telepítőt, és győződjön meg arról, hogy van-e működő hálózati nyomtató, amely aktív, mielőtt folytatná a műveletet.</span><span class="sxs-lookup"><span data-stu-id="0e57f-110">Run the installer and make sure that you have a working network printer set to Active before you continue with the procedure.</span></span>
+<span data-ttu-id="ae6f7-104">Ez az eljárás bemutatja a Konténer sorszáma (SSCC) címke automatikus nyomtatásának engedélyezését, miután az utolsó cikk készletből való kitárolása is megtörtént az értékesítési kiválasztási munkafolyamat során.</span><span class="sxs-lookup"><span data-stu-id="ae6f7-104">This topic shows how to enable the automatic printing of a Serial shipping container code (SSCC) label after the last item is picked from inventory in a sales picking work process.</span></span> <span data-ttu-id="ae6f7-105">Ezt a folyamatot lefuttathatja az USMF bemutatócégen.</span><span class="sxs-lookup"><span data-stu-id="ae6f7-105">You can run this procedure in demo data company USMF.</span></span> <span data-ttu-id="ae6f7-106">Ha a saját adatok használatával futtatja le, akkor szüksége lesz egy az azonosítótáblákhoz beállított számsorozatra.</span><span class="sxs-lookup"><span data-stu-id="ae6f7-106">If you're run it using your own data, you need to have a number sequence set up for license plates.</span></span> <span data-ttu-id="ae6f7-107">A feladat megkezdése előtt be kell állítania egy címkenyomtatót.</span><span class="sxs-lookup"><span data-stu-id="ae6f7-107">You need to set up a label printer before you begin this task.</span></span> <span data-ttu-id="ae6f7-108">Lépjen a Szervezetadminisztráció > Beállítás > Hálózati nyomtatókra.</span><span class="sxs-lookup"><span data-stu-id="ae6f7-108">Go to Organization administration > Setup > Network printers.</span></span> <span data-ttu-id="ae6f7-109">A Művelet panelen kattintson az Opciókra, majd a Dokumentumirányítási ügynök telepítőjének letöltése gombra.</span><span class="sxs-lookup"><span data-stu-id="ae6f7-109">On the Action Pane, click Options, and then click the Download document routing agent installer button.</span></span> <span data-ttu-id="ae6f7-110">Futtassa a telepítőt, és győződjön meg arról, hogy van-e működő hálózati nyomtató, amely aktív, mielőtt folytatná a műveletet.</span><span class="sxs-lookup"><span data-stu-id="ae6f7-110">Run the installer and make sure that you have a working network printer set to Active before you continue with the procedure.</span></span>
 
 
-## <a name="set-up-the-gs1-company-prefix"></a><span data-ttu-id="0e57f-111">GS1 vállalatelőtag felállítása.</span><span class="sxs-lookup"><span data-stu-id="0e57f-111">Set up the GS1 company prefix</span></span>
-1. <span data-ttu-id="0e57f-112">Ugrás a **Navigációs ablaktábla > Modulok > Raktárkezelés > Beállítás > Raktárkezelési paraméterekre**</span><span class="sxs-lookup"><span data-stu-id="0e57f-112">Go to **Navigation pane > Modules > Warehouse management > Setup > Warehouse management parameters**.</span></span>
-2. <span data-ttu-id="0e57f-113">Az **GS1 vállalatelőtag** mezőbe írja be vállalata 7-jegyű GS1 számát.</span><span class="sxs-lookup"><span data-stu-id="0e57f-113">In the **GS1 company prefix** field, enter the 7 numbers for your GS1 company number.</span></span>
-3. <span data-ttu-id="0e57f-114">Válassza a **Mentés** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="0e57f-114">Select **Save**.</span></span>
-4. <span data-ttu-id="0e57f-115">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="0e57f-115">Close the page.</span></span>
+## <a name="set-up-the-gs1-company-prefix"></a><span data-ttu-id="ae6f7-111">GS1 vállalatelőtag felállítása.</span><span class="sxs-lookup"><span data-stu-id="ae6f7-111">Set up the GS1 company prefix</span></span>
+1. <span data-ttu-id="ae6f7-112">Ugrás a **Navigációs ablaktábla > Modulok > Raktárkezelés > Beállítás > Raktárkezelési paraméterekre**</span><span class="sxs-lookup"><span data-stu-id="ae6f7-112">Go to **Navigation pane > Modules > Warehouse management > Setup > Warehouse management parameters**.</span></span>
+2. <span data-ttu-id="ae6f7-113">Az **GS1 vállalatelőtag** mezőbe írja be vállalata 7-jegyű GS1 számát.</span><span class="sxs-lookup"><span data-stu-id="ae6f7-113">In the **GS1 company prefix** field, enter the 7 numbers for your GS1 company number.</span></span>
+3. <span data-ttu-id="ae6f7-114">Válassza a **Mentés** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="ae6f7-114">Select **Save**.</span></span>
+4. <span data-ttu-id="ae6f7-115">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="ae6f7-115">Close the page.</span></span>
 
-## <a name="setup-the-sscc-license-plate-number-sequence"></a><span data-ttu-id="0e57f-116">SSCC azonosítótábla számsorozat beállítása</span><span class="sxs-lookup"><span data-stu-id="0e57f-116">Setup the SSCC license plate number sequence</span></span>
-1. <span data-ttu-id="0e57f-117">Ugorjon a **Navigációs ablaktábla > Modulok > Szervezeti adminisztráció > Számsorozatok > Számsorozatok** elemre.</span><span class="sxs-lookup"><span data-stu-id="0e57f-117">Go to **Navigation pane > Modules > Organization administration > Number sequences > Number sequences**.</span></span>
-2. <span data-ttu-id="0e57f-118">Egy lehetőség kiválasztása a **Terület** mezőben.</span><span class="sxs-lookup"><span data-stu-id="0e57f-118">In the **Area** field, select an option.</span></span>
-3. <span data-ttu-id="0e57f-119">Egy lehetőség kiválasztása a **Hivatkozás** mezőben.</span><span class="sxs-lookup"><span data-stu-id="0e57f-119">In the **Reference** field, select an option.</span></span>
-4. <span data-ttu-id="0e57f-120">Írjon be egy értéket a **Vállalat** mezőbe.</span><span class="sxs-lookup"><span data-stu-id="0e57f-120">In the **Company** field, type a value.</span></span>
-5. <span data-ttu-id="0e57f-121">Bontsa ki a **Szegmensek** szakaszt.</span><span class="sxs-lookup"><span data-stu-id="0e57f-121">Expand the **Segments** section.</span></span>
-6. <span data-ttu-id="0e57f-122">Válassza ki a **Szerkesztés** opciót.</span><span class="sxs-lookup"><span data-stu-id="0e57f-122">Select **Edit**.</span></span>
-7. <span data-ttu-id="0e57f-123">A **Szegmensek** táblában válassza ki az első sort.</span><span class="sxs-lookup"><span data-stu-id="0e57f-123">In the **Segments** table, select the first row</span></span>
-8. <span data-ttu-id="0e57f-124">Válassza az **Eltávolítás** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="0e57f-124">Select **Remove**.</span></span>
-9. <span data-ttu-id="0e57f-125">Válassza az **Eltávolítás** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="0e57f-125">Select **Remove**.</span></span>
-10. <span data-ttu-id="0e57f-126">Válassza a **Mentés** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="0e57f-126">Select **Save**.</span></span>
-11. <span data-ttu-id="0e57f-127">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="0e57f-127">Close the page.</span></span>
+## <a name="setup-the-sscc-license-plate-number-sequence"></a><span data-ttu-id="ae6f7-116">SSCC azonosítótábla számsorozat beállítása</span><span class="sxs-lookup"><span data-stu-id="ae6f7-116">Setup the SSCC license plate number sequence</span></span>
+1. <span data-ttu-id="ae6f7-117">Ugorjon a **Navigációs ablaktábla > Modulok > Szervezeti adminisztráció > Számsorozatok > Számsorozatok** elemre.</span><span class="sxs-lookup"><span data-stu-id="ae6f7-117">Go to **Navigation pane > Modules > Organization administration > Number sequences > Number sequences**.</span></span>
+2. <span data-ttu-id="ae6f7-118">Egy lehetőség kiválasztása a **Terület** mezőben.</span><span class="sxs-lookup"><span data-stu-id="ae6f7-118">In the **Area** field, select an option.</span></span>
+3. <span data-ttu-id="ae6f7-119">Egy lehetőség kiválasztása a **Hivatkozás** mezőben.</span><span class="sxs-lookup"><span data-stu-id="ae6f7-119">In the **Reference** field, select an option.</span></span>
+4. <span data-ttu-id="ae6f7-120">Írjon be egy értéket a **Vállalat** mezőbe.</span><span class="sxs-lookup"><span data-stu-id="ae6f7-120">In the **Company** field, type a value.</span></span>
+5. <span data-ttu-id="ae6f7-121">Bontsa ki a **Szegmensek** szakaszt.</span><span class="sxs-lookup"><span data-stu-id="ae6f7-121">Expand the **Segments** section.</span></span>
+6. <span data-ttu-id="ae6f7-122">Válassza ki a **Szerkesztés** opciót.</span><span class="sxs-lookup"><span data-stu-id="ae6f7-122">Select **Edit**.</span></span>
+7. <span data-ttu-id="ae6f7-123">A **Szegmensek** táblában válassza ki az első sort.</span><span class="sxs-lookup"><span data-stu-id="ae6f7-123">In the **Segments** table, select the first row</span></span>
+8. <span data-ttu-id="ae6f7-124">Válassza az **Eltávolítás** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="ae6f7-124">Select **Remove**.</span></span>
+9. <span data-ttu-id="ae6f7-125">Válassza az **Eltávolítás** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="ae6f7-125">Select **Remove**.</span></span>
+10. <span data-ttu-id="ae6f7-126">Válassza a **Mentés** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="ae6f7-126">Select **Save**.</span></span>
+11. <span data-ttu-id="ae6f7-127">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="ae6f7-127">Close the page.</span></span>
 
-## <a name="create-the-document-route-layout"></a><span data-ttu-id="0e57f-128">Dokumentum útvonal-elrendezés létrehozása</span><span class="sxs-lookup"><span data-stu-id="0e57f-128">Create the document route layout</span></span>
-1. <span data-ttu-id="0e57f-129">Ugrás a **Raktárkezelés > Beállítás > Dokumentumirányítás > Dokumentumirányító elrendezésekre**.</span><span class="sxs-lookup"><span data-stu-id="0e57f-129">Go to **Navigation pane > Modules > Warehouse management > Setup > Document routing > Document routing layouts**.</span></span> <span data-ttu-id="0e57f-130">SSCC-elrendezés engedélyezése.</span><span class="sxs-lookup"><span data-stu-id="0e57f-130">Enable the SSCC layout.</span></span>  
-2. <span data-ttu-id="0e57f-131">Válassza az **Új** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="0e57f-131">Select **New**.</span></span>
-3. <span data-ttu-id="0e57f-132">Írjon be egy értéket az **Elrendezésazonosító** mezőbe.</span><span class="sxs-lookup"><span data-stu-id="0e57f-132">In the **Layout ID** field, type a value.</span></span>
-4. <span data-ttu-id="0e57f-133">Írjon egy értéket a **Leírás** mezőbe.</span><span class="sxs-lookup"><span data-stu-id="0e57f-133">In the **Description** field, type a value.</span></span>
-5. <span data-ttu-id="0e57f-134">Válassza a **Beszúrás szöveg végére** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="0e57f-134">Select **Insert at end of text**.</span></span>
-6. <span data-ttu-id="0e57f-135">Válassza a **Mentés** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="0e57f-135">Select **Save**.</span></span>
-7. <span data-ttu-id="0e57f-136">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="0e57f-136">Close the page.</span></span>
+## <a name="create-the-document-route-layout"></a><span data-ttu-id="ae6f7-128">Dokumentum útvonal-elrendezés létrehozása</span><span class="sxs-lookup"><span data-stu-id="ae6f7-128">Create the document route layout</span></span>
+1. <span data-ttu-id="ae6f7-129">Ugrás a **Raktárkezelés > Beállítás > Dokumentumirányítás > Dokumentumirányító elrendezésekre**.</span><span class="sxs-lookup"><span data-stu-id="ae6f7-129">Go to **Navigation pane > Modules > Warehouse management > Setup > Document routing > Document routing layouts**.</span></span> <span data-ttu-id="ae6f7-130">SSCC-elrendezés engedélyezése.</span><span class="sxs-lookup"><span data-stu-id="ae6f7-130">Enable the SSCC layout.</span></span>  
+2. <span data-ttu-id="ae6f7-131">Válassza az **Új** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="ae6f7-131">Select **New**.</span></span>
+3. <span data-ttu-id="ae6f7-132">Írjon be egy értéket az **Elrendezésazonosító** mezőbe.</span><span class="sxs-lookup"><span data-stu-id="ae6f7-132">In the **Layout ID** field, type a value.</span></span>
+4. <span data-ttu-id="ae6f7-133">Írjon egy értéket a **Leírás** mezőbe.</span><span class="sxs-lookup"><span data-stu-id="ae6f7-133">In the **Description** field, type a value.</span></span>
+5. <span data-ttu-id="ae6f7-134">Válassza a **Beszúrás szöveg végére** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="ae6f7-134">Select **Insert at end of text**.</span></span>
+6. <span data-ttu-id="ae6f7-135">Válassza a **Mentés** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="ae6f7-135">Select **Save**.</span></span>
+7. <span data-ttu-id="ae6f7-136">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="ae6f7-136">Close the page.</span></span>
 
-## <a name="set-up-the-document-routing"></a><span data-ttu-id="0e57f-137">Dokumentumirányítás beállítása</span><span class="sxs-lookup"><span data-stu-id="0e57f-137">Set up the document routing</span></span>
-1. <span data-ttu-id="0e57f-138">Ugrás a **Raktárkezelés > Beállítás > Dokumentumirányítás > Dokumentumirányítás** helyre.</span><span class="sxs-lookup"><span data-stu-id="0e57f-138">Go to **Navigation pane > Modules > Warehouse management > Setup > Document routing > Document routing**.</span></span>
-2. <span data-ttu-id="0e57f-139">A **Munkarendelés típusa** mezőben válasszon ki egy lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="0e57f-139">In the **Work order type** field, select an option.</span></span>
-3. <span data-ttu-id="0e57f-140">Válassza az **Új** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="0e57f-140">Select **New**.</span></span>
-4. <span data-ttu-id="0e57f-141">Érték beírása a **Raktár** mezőbe.</span><span class="sxs-lookup"><span data-stu-id="0e57f-141">In the **Warehouse** field, type a value.</span></span>
-5. <span data-ttu-id="0e57f-142">Írjon be egy értéket a **Név** mezőbe.</span><span class="sxs-lookup"><span data-stu-id="0e57f-142">In the **Name** field, type a value.</span></span>
-6. <span data-ttu-id="0e57f-143">Válassza az **Új** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="0e57f-143">Select **New**.</span></span>
-7. <span data-ttu-id="0e57f-144">Az **Elrendezésazonosító** mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="0e57f-144">In the **Layout ID** field, enter or select a value.</span></span>
-8. <span data-ttu-id="0e57f-145">A **Név** mezőben adja meg a használni kívánt nyomtató nevét.</span><span class="sxs-lookup"><span data-stu-id="0e57f-145">In the **Name** field, enter the printer name that you want to use.</span></span>
-9. <span data-ttu-id="0e57f-146">Válassza a **Mentés** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="0e57f-146">Select **Save**.</span></span>
-10. <span data-ttu-id="0e57f-147">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="0e57f-147">Close the page.</span></span>
+## <a name="set-up-the-document-routing"></a><span data-ttu-id="ae6f7-137">Dokumentumirányítás beállítása</span><span class="sxs-lookup"><span data-stu-id="ae6f7-137">Set up the document routing</span></span>
+1. <span data-ttu-id="ae6f7-138">Ugrás a **Raktárkezelés > Beállítás > Dokumentumirányítás > Dokumentumirányítás** helyre.</span><span class="sxs-lookup"><span data-stu-id="ae6f7-138">Go to **Navigation pane > Modules > Warehouse management > Setup > Document routing > Document routing**.</span></span>
+2. <span data-ttu-id="ae6f7-139">A **Munkarendelés típusa** mezőben válasszon ki egy lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="ae6f7-139">In the **Work order type** field, select an option.</span></span>
+3. <span data-ttu-id="ae6f7-140">Válassza az **Új** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="ae6f7-140">Select **New**.</span></span>
+4. <span data-ttu-id="ae6f7-141">Érték beírása a **Raktár** mezőbe.</span><span class="sxs-lookup"><span data-stu-id="ae6f7-141">In the **Warehouse** field, type a value.</span></span>
+5. <span data-ttu-id="ae6f7-142">Írjon be egy értéket a **Név** mezőbe.</span><span class="sxs-lookup"><span data-stu-id="ae6f7-142">In the **Name** field, type a value.</span></span>
+6. <span data-ttu-id="ae6f7-143">Válassza az **Új** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="ae6f7-143">Select **New**.</span></span>
+7. <span data-ttu-id="ae6f7-144">Az **Elrendezésazonosító** mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="ae6f7-144">In the **Layout ID** field, enter or select a value.</span></span>
+8. <span data-ttu-id="ae6f7-145">A **Név** mezőben adja meg a használni kívánt nyomtató nevét.</span><span class="sxs-lookup"><span data-stu-id="ae6f7-145">In the **Name** field, enter the printer name that you want to use.</span></span>
+9. <span data-ttu-id="ae6f7-146">Válassza a **Mentés** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="ae6f7-146">Select **Save**.</span></span>
+10. <span data-ttu-id="ae6f7-147">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="ae6f7-147">Close the page.</span></span>
 
-## <a name="create-mobile-device-menu"></a><span data-ttu-id="0e57f-148">Mobileszköz menüjének létrehozása</span><span class="sxs-lookup"><span data-stu-id="0e57f-148">Create mobile device menu</span></span>
-1. <span data-ttu-id="0e57f-149">A **Navigációs ablaktáblán ugorjon a Modulok > Raktárkezelés > Beállítás > Mobileszköz > Mobileszköz menüpontjai** elemre.</span><span class="sxs-lookup"><span data-stu-id="0e57f-149">Go to **Navigation pane > Modules > Warehouse management > Setup > Mobile device > Mobile device menu items**.</span></span>
-2. <span data-ttu-id="0e57f-150">Válassza az **Új** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="0e57f-150">Select **New**.</span></span>
-3. <span data-ttu-id="0e57f-151">Írjon be egy értéket a **Menüelem neve** mezőbe.</span><span class="sxs-lookup"><span data-stu-id="0e57f-151">In the **Menu item name** field, type a value.</span></span>
-4. <span data-ttu-id="0e57f-152">Érték beírása a **Cím** mezőbe.</span><span class="sxs-lookup"><span data-stu-id="0e57f-152">In the **Title** field, type a value.</span></span>
-5. <span data-ttu-id="0e57f-153">Egy lehetőség kiválasztása a **Mód** mezőben.</span><span class="sxs-lookup"><span data-stu-id="0e57f-153">In the **Mode** field, select an option.</span></span>
-6. <span data-ttu-id="0e57f-154">A **Meglévő munka használata** mezőben válassza az **Igen** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="0e57f-154">Select **Yes** in the **Use existing work** field.</span></span>
-7. <span data-ttu-id="0e57f-155">Válassza az **Igen** lehetőséget az **Azonosítótábla előállítása** mezőben.</span><span class="sxs-lookup"><span data-stu-id="0e57f-155">Select **Yes** in the **Generate license plate** field.</span></span>
-8. <span data-ttu-id="0e57f-156">Bontsa ki a **Munkaosztályok** szakaszt.</span><span class="sxs-lookup"><span data-stu-id="0e57f-156">Expand the **Work classes** section.</span></span>
-9. <span data-ttu-id="0e57f-157">Válassza az **Új** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="0e57f-157">Select **New**.</span></span>
-10. <span data-ttu-id="0e57f-158">Írjon be egy értéket a **Munkaosztály** azonosítója mezőbe.</span><span class="sxs-lookup"><span data-stu-id="0e57f-158">In the **Work class ID** field, type a value.</span></span>
-11. <span data-ttu-id="0e57f-159">Válassza a **Mentés** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="0e57f-159">Select **Save**.</span></span>
-12. <span data-ttu-id="0e57f-160">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="0e57f-160">Close the page.</span></span>
-13. <span data-ttu-id="0e57f-161">A **Navigációs ablaktáblán ugorjon a Modulok > Raktárkezelés > Beállítás > Mobileszköz > Mobileszköz menü** elemre.</span><span class="sxs-lookup"><span data-stu-id="0e57f-161">Go to **navigation pane > Modules > Warehouse management > Setup > Mobile device > Mobile device menu**.</span></span>
-14. <span data-ttu-id="0e57f-162">A fán válassza ki az előzőleg létrehozott menüpontot.</span><span class="sxs-lookup"><span data-stu-id="0e57f-162">In the tree, select the menu item that you created before.</span></span>
-15. <span data-ttu-id="0e57f-163">Válassza ki a **Szerkesztés** opciót.</span><span class="sxs-lookup"><span data-stu-id="0e57f-163">Select **Edit**.</span></span>
-16. <span data-ttu-id="0e57f-164">Kattintson a nyílra a menüpont menühöz való hozzáadásához.</span><span class="sxs-lookup"><span data-stu-id="0e57f-164">Select the arrow to add the menu item to the menu.</span></span>
-17. <span data-ttu-id="0e57f-165">Válassza a **Mentés** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="0e57f-165">Select **Save**.</span></span>
-18. <span data-ttu-id="0e57f-166">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="0e57f-166">Close the page.</span></span>
+## <a name="create-mobile-device-menu"></a><span data-ttu-id="ae6f7-148">Mobileszköz menüjének létrehozása</span><span class="sxs-lookup"><span data-stu-id="ae6f7-148">Create mobile device menu</span></span>
+1. <span data-ttu-id="ae6f7-149">A **Navigációs ablaktáblán ugorjon a Modulok > Raktárkezelés > Beállítás > Mobileszköz > Mobileszköz menüpontjai** elemre.</span><span class="sxs-lookup"><span data-stu-id="ae6f7-149">Go to **Navigation pane > Modules > Warehouse management > Setup > Mobile device > Mobile device menu items**.</span></span>
+2. <span data-ttu-id="ae6f7-150">Válassza az **Új** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="ae6f7-150">Select **New**.</span></span>
+3. <span data-ttu-id="ae6f7-151">Írjon be egy értéket a **Menüelem neve** mezőbe.</span><span class="sxs-lookup"><span data-stu-id="ae6f7-151">In the **Menu item name** field, type a value.</span></span>
+4. <span data-ttu-id="ae6f7-152">Érték beírása a **Cím** mezőbe.</span><span class="sxs-lookup"><span data-stu-id="ae6f7-152">In the **Title** field, type a value.</span></span>
+5. <span data-ttu-id="ae6f7-153">Egy lehetőség kiválasztása a **Mód** mezőben.</span><span class="sxs-lookup"><span data-stu-id="ae6f7-153">In the **Mode** field, select an option.</span></span>
+6. <span data-ttu-id="ae6f7-154">A **Meglévő munka használata** mezőben válassza az **Igen** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="ae6f7-154">Select **Yes** in the **Use existing work** field.</span></span>
+7. <span data-ttu-id="ae6f7-155">Válassza az **Igen** lehetőséget az **Azonosítótábla előállítása** mezőben.</span><span class="sxs-lookup"><span data-stu-id="ae6f7-155">Select **Yes** in the **Generate license plate** field.</span></span>
+8. <span data-ttu-id="ae6f7-156">Bontsa ki a **Munkaosztályok** szakaszt.</span><span class="sxs-lookup"><span data-stu-id="ae6f7-156">Expand the **Work classes** section.</span></span>
+9. <span data-ttu-id="ae6f7-157">Válassza az **Új** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="ae6f7-157">Select **New**.</span></span>
+10. <span data-ttu-id="ae6f7-158">Írjon be egy értéket a **Munkaosztály** azonosítója mezőbe.</span><span class="sxs-lookup"><span data-stu-id="ae6f7-158">In the **Work class ID** field, type a value.</span></span>
+11. <span data-ttu-id="ae6f7-159">Válassza a **Mentés** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="ae6f7-159">Select **Save**.</span></span>
+12. <span data-ttu-id="ae6f7-160">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="ae6f7-160">Close the page.</span></span>
+13. <span data-ttu-id="ae6f7-161">A **Navigációs ablaktáblán ugorjon a Modulok > Raktárkezelés > Beállítás > Mobileszköz > Mobileszköz menü** elemre.</span><span class="sxs-lookup"><span data-stu-id="ae6f7-161">Go to **navigation pane > Modules > Warehouse management > Setup > Mobile device > Mobile device menu**.</span></span>
+14. <span data-ttu-id="ae6f7-162">A fán válassza ki az előzőleg létrehozott menüpontot.</span><span class="sxs-lookup"><span data-stu-id="ae6f7-162">In the tree, select the menu item that you created before.</span></span>
+15. <span data-ttu-id="ae6f7-163">Válassza ki a **Szerkesztés** opciót.</span><span class="sxs-lookup"><span data-stu-id="ae6f7-163">Select **Edit**.</span></span>
+16. <span data-ttu-id="ae6f7-164">Kattintson a nyílra a menüpont menühöz való hozzáadásához.</span><span class="sxs-lookup"><span data-stu-id="ae6f7-164">Select the arrow to add the menu item to the menu.</span></span>
+17. <span data-ttu-id="ae6f7-165">Válassza a **Mentés** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="ae6f7-165">Select **Save**.</span></span>
+18. <span data-ttu-id="ae6f7-166">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="ae6f7-166">Close the page.</span></span>
 
-## <a name="update-a-work-template"></a><span data-ttu-id="0e57f-167">Munkasablon frissítése</span><span class="sxs-lookup"><span data-stu-id="0e57f-167">Update a work template</span></span>
-1. <span data-ttu-id="0e57f-168">A **Navigációs ablaktáblán > ugorjon a Modulok > Raktárkezelés > Beállítás > Munka > Munkasablonok** lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="0e57f-168">Go to **Navigation pane > Modules > Warehouse management > Setup > Work > Work templates**.</span></span>
-2. <span data-ttu-id="0e57f-169">Válassza ki a **Szerkesztés** opciót.</span><span class="sxs-lookup"><span data-stu-id="0e57f-169">Select **Edit**.</span></span>
-3. <span data-ttu-id="0e57f-170">Válassza az **Új** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="0e57f-170">Select **New**.</span></span>
-4. <span data-ttu-id="0e57f-171">A **Munkatípus** mezőben válassza a **Nyomtatás** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="0e57f-171">In the **Work type** field, select **Print**.</span></span>
-5. <span data-ttu-id="0e57f-172">A **Munkaosztály-azonosító** mezőben írjon be vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="0e57f-172">In the **Work class ID** field, enter or select a value.</span></span>
-6. <span data-ttu-id="0e57f-173">Válassza a **Feljebb** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="0e57f-173">Select **Move up**.</span></span>
-7. <span data-ttu-id="0e57f-174">Válassza a **Mentés** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="0e57f-174">Select **Save**.</span></span>
-8. <span data-ttu-id="0e57f-175">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="0e57f-175">Close the page.</span></span>
+## <a name="update-a-work-template"></a><span data-ttu-id="ae6f7-167">Munkasablon frissítése</span><span class="sxs-lookup"><span data-stu-id="ae6f7-167">Update a work template</span></span>
+1. <span data-ttu-id="ae6f7-168">A **Navigációs ablaktáblán > ugorjon a Modulok > Raktárkezelés > Beállítás > Munka > Munkasablonok** lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="ae6f7-168">Go to **Navigation pane > Modules > Warehouse management > Setup > Work > Work templates**.</span></span>
+2. <span data-ttu-id="ae6f7-169">Válassza ki a **Szerkesztés** opciót.</span><span class="sxs-lookup"><span data-stu-id="ae6f7-169">Select **Edit**.</span></span>
+3. <span data-ttu-id="ae6f7-170">Válassza az **Új** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="ae6f7-170">Select **New**.</span></span>
+4. <span data-ttu-id="ae6f7-171">A **Munkatípus** mezőben válassza a **Nyomtatás** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="ae6f7-171">In the **Work type** field, select **Print**.</span></span>
+5. <span data-ttu-id="ae6f7-172">A **Munkaosztály-azonosító** mezőben írjon be vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="ae6f7-172">In the **Work class ID** field, enter or select a value.</span></span>
+6. <span data-ttu-id="ae6f7-173">Válassza a **Feljebb** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="ae6f7-173">Select **Move up**.</span></span>
+7. <span data-ttu-id="ae6f7-174">Válassza a **Mentés** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="ae6f7-174">Select **Save**.</span></span>
+8. <span data-ttu-id="ae6f7-175">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="ae6f7-175">Close the page.</span></span>
 

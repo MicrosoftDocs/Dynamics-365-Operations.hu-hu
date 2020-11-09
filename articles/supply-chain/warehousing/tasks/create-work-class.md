@@ -8,6 +8,7 @@ ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: WHSWorkClass
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Operations
@@ -16,26 +17,26 @@ ms.search.industry: Distribution
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dc0eb4c0a6397164d068b5dd44a0807dfdf65814
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: ed9b72d891df4d40213d4854da6b09bd9876effa
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3979599"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016056"
 ---
-# <a name="create-a-work-class"></a><span data-ttu-id="90637-103">Munkaosztály létrehozása</span><span class="sxs-lookup"><span data-stu-id="90637-103">Create a work class</span></span>
+# <a name="create-a-work-class"></a><span data-ttu-id="62b9a-103">Munkaosztály létrehozása</span><span class="sxs-lookup"><span data-stu-id="62b9a-103">Create a work class</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="90637-104">Ez az eljárás bemutatja, hogyan állíthat be egy munkaosztályt.</span><span class="sxs-lookup"><span data-stu-id="90637-104">This procedure shows you how to set up a work class.</span></span> <span data-ttu-id="90637-105">A munkaosztályokkal irányítható és/vagy korlátozható azon munkarendeléssorok típusa, amelyeket egy raktári dolgozó feldolgozhat egy mobileszközön.</span><span class="sxs-lookup"><span data-stu-id="90637-105">Work classes are used to direct and/or limit the type of work order lines that a warehouse worker can process on a mobile device.</span></span> <span data-ttu-id="90637-106">A sorokat, amelyeket egy dolgozó feldolgozhat, a mobileszköz-menü elemeinek munkaosztályai, amelyekhez a raktári dolgozó hozzáférésre jogosult, és a munkasorokban megadott munkaosztályok határozzák meg.</span><span class="sxs-lookup"><span data-stu-id="90637-106">The lines that a worker can process are determined from the work classes on the mobile device menu items that the warehouse worker has access to and the work class that's specified on the work lines.</span></span> <span data-ttu-id="90637-107">Munkaosztályok használhatók a betárolási hely ellenőrzéséhez is munkarendelési sorhoz.</span><span class="sxs-lookup"><span data-stu-id="90637-107">Work classes can also be used to validate the put location for a work order line.</span></span> <span data-ttu-id="90637-108">Ezt a folyamatot az USMF bemutatócéggel vagy saját adataival is futtathatja.</span><span class="sxs-lookup"><span data-stu-id="90637-108">You can run this procedure in demo data company USMF or on your own data.</span></span> <span data-ttu-id="90637-109">Ezt az eljárást a raktári vezető használja.</span><span class="sxs-lookup"><span data-stu-id="90637-109">This procedure is intended for the warehouse manager.</span></span>
+<span data-ttu-id="62b9a-104">Ez az eljárás bemutatja, hogyan állíthat be egy munkaosztályt.</span><span class="sxs-lookup"><span data-stu-id="62b9a-104">This procedure shows you how to set up a work class.</span></span> <span data-ttu-id="62b9a-105">A munkaosztályokkal irányítható és/vagy korlátozható azon munkarendeléssorok típusa, amelyeket egy raktári dolgozó feldolgozhat egy mobileszközön.</span><span class="sxs-lookup"><span data-stu-id="62b9a-105">Work classes are used to direct and/or limit the type of work order lines that a warehouse worker can process on a mobile device.</span></span> <span data-ttu-id="62b9a-106">A sorokat, amelyeket egy dolgozó feldolgozhat, a mobileszköz-menü elemeinek munkaosztályai, amelyekhez a raktári dolgozó hozzáférésre jogosult, és a munkasorokban megadott munkaosztályok határozzák meg.</span><span class="sxs-lookup"><span data-stu-id="62b9a-106">The lines that a worker can process are determined from the work classes on the mobile device menu items that the warehouse worker has access to and the work class that's specified on the work lines.</span></span> <span data-ttu-id="62b9a-107">Munkaosztályok használhatók a betárolási hely ellenőrzéséhez is munkarendelési sorhoz.</span><span class="sxs-lookup"><span data-stu-id="62b9a-107">Work classes can also be used to validate the put location for a work order line.</span></span> <span data-ttu-id="62b9a-108">Ezt a folyamatot az USMF bemutatócéggel vagy saját adataival is futtathatja.</span><span class="sxs-lookup"><span data-stu-id="62b9a-108">You can run this procedure in demo data company USMF or on your own data.</span></span> <span data-ttu-id="62b9a-109">Ezt az eljárást a raktári vezető használja.</span><span class="sxs-lookup"><span data-stu-id="62b9a-109">This procedure is intended for the warehouse manager.</span></span>
 
-1. <span data-ttu-id="90637-110">Ugorjon a Raktárkezelés > Beállítás > Munka > Munkaosztályok pontra.</span><span class="sxs-lookup"><span data-stu-id="90637-110">Go to Warehouse management > Setup > Work > Work classes.</span></span>
-2. <span data-ttu-id="90637-111">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="90637-111">Click New.</span></span>
-3. <span data-ttu-id="90637-112">Írjon be egy értéket a Munkaosztály azonosítója mezőbe.</span><span class="sxs-lookup"><span data-stu-id="90637-112">In the Work class ID field, type a value.</span></span>
-4. <span data-ttu-id="90637-113">A Leírás mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="90637-113">In the Description field, type a value.</span></span>
-5. <span data-ttu-id="90637-114">A Munkarendelés típusa mezőben válasszon ki egy lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="90637-114">In the Work order type field, select an option.</span></span>
-6. <span data-ttu-id="90637-115">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="90637-115">Click New.</span></span>
-7. <span data-ttu-id="90637-116">Írjon be egy értéket a Helytípus mezőbe.</span><span class="sxs-lookup"><span data-stu-id="90637-116">In the Location type field, type a value.</span></span>
-    * <span data-ttu-id="90637-117">Ha kiválaszt egy helytípust, azzal korlátozza a cikkek elhelyezését a kitárolás után.</span><span class="sxs-lookup"><span data-stu-id="90637-117">If you select a location type, this sets a restriction on where items can be put after they've been picked.</span></span> <span data-ttu-id="90637-118">Akkor használja ezt a beállítást, ha egy helyutasítás a hely feloldására tesz kísérletet, vagy ha egy raktári dolgozó manuálisan biztosítja a mobileszköz-menüpont helyét.</span><span class="sxs-lookup"><span data-stu-id="90637-118">This setting is used when a location directive tries to resolve the location, or if a warehouse worker manually provides the location for the mobile device menu item.</span></span>  
-8. <span data-ttu-id="90637-119">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="90637-119">Close the page.</span></span>
+1. <span data-ttu-id="62b9a-110">Ugorjon a Raktárkezelés > Beállítás > Munka > Munkaosztályok pontra.</span><span class="sxs-lookup"><span data-stu-id="62b9a-110">Go to Warehouse management > Setup > Work > Work classes.</span></span>
+2. <span data-ttu-id="62b9a-111">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="62b9a-111">Click New.</span></span>
+3. <span data-ttu-id="62b9a-112">Írjon be egy értéket a Munkaosztály azonosítója mezőbe.</span><span class="sxs-lookup"><span data-stu-id="62b9a-112">In the Work class ID field, type a value.</span></span>
+4. <span data-ttu-id="62b9a-113">A Leírás mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="62b9a-113">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="62b9a-114">A Munkarendelés típusa mezőben válasszon ki egy lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="62b9a-114">In the Work order type field, select an option.</span></span>
+6. <span data-ttu-id="62b9a-115">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="62b9a-115">Click New.</span></span>
+7. <span data-ttu-id="62b9a-116">Írjon be egy értéket a Helytípus mezőbe.</span><span class="sxs-lookup"><span data-stu-id="62b9a-116">In the Location type field, type a value.</span></span>
+    * <span data-ttu-id="62b9a-117">Ha kiválaszt egy helytípust, azzal korlátozza a cikkek elhelyezését a kitárolás után.</span><span class="sxs-lookup"><span data-stu-id="62b9a-117">If you select a location type, this sets a restriction on where items can be put after they've been picked.</span></span> <span data-ttu-id="62b9a-118">Akkor használja ezt a beállítást, ha egy helyutasítás a hely feloldására tesz kísérletet, vagy ha egy raktári dolgozó manuálisan biztosítja a mobileszköz-menüpont helyét.</span><span class="sxs-lookup"><span data-stu-id="62b9a-118">This setting is used when a location directive tries to resolve the location, or if a warehouse worker manually provides the location for the mobile device menu item.</span></span>  
+8. <span data-ttu-id="62b9a-119">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="62b9a-119">Close the page.</span></span>
 
