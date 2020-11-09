@@ -3,7 +3,7 @@ title: Töredékek használata
 description: Ez a témakör azt mutatja be, miért, hogyan és mikor lehet a töredékeket a Microsoft Dynamics 365 Commerce rendszerben használni.
 author: phinneyridge
 manager: annbe
-ms.date: 07/31/2020
+ms.date: 10/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: b3e3299388190f03e761591a0c23164b705db9e8
-ms.sourcegitcommit: f16db76c1c235dfa445b50614bcee9219782d6dc
+ms.openlocfilehash: f1525610fb16edd5ff9ccefe0194f6f27b797b62
+ms.sourcegitcommit: b063bf3a52f19baa11ddba31ef9313d58a0f610e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "3961658"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4019564"
 ---
 # <a name="work-with-fragments"></a>Töredékek használata 
 
@@ -58,31 +58,27 @@ Létrehozhat új töredéket hozhat, illetve egy meglévő modul konfigurációj
 
 ### <a name="save-an-existing-module-configuration-as-a-fragment"></a>Meglévő modulkonfiguráció mentése töredékként
 
-Ha egy korábban konfigurált modult újra felhasználható töredékké szeretne átalakítani, hajtsa végre az alábbi lépéseket.
+Ha egy korábban konfigurált modult újra felhasználható töredékké szeretne átalakítani a Commerce webhelykészítőben, hajtsa végre az alábbi lépéseket.
 
 1. Nyisson meg egy olyan lapot vagy sablont, amely a töredékké alakítandó modult tartalmazza.
 1. A bal oldali vázlat ablaktáblán vagy közvetlenül a vizuális oldalkészítőben, válassza ki az előzőleg konfigurált modult.
 1. Válassza ki a modul neve mellett lévő azt a három pont ( **...** ) a vázlat ablaktáblán vagy a kiválasztott modul eszköztárában, a vizuális oldalkészítőben. 
-1. Válassza ki a **Megosztás oldaltöredékként** lehetőséget. 
-1. A **Mentés oldaltöredékként** párbeszédpanelen adjon nevet a töredéknek.
+1. Válassza ki a **Megosztást töredékként** lehetőséget. 
+1. A **Mentés töredékként** párbeszédpanelen adjon nevet a töredéknek.
 1. Az **OK** gombra kattintva mentheti a modulkonfigurációt olyan töredékként, amely más lapokhoz is hozzáadható.
-
-A következő kép azt ábrázolja, hogyan kell menteni a modulok konfigurációját töredékként.
-
-![A modulok konfigurációjának töredékként való mentésének képernyőfelvétele](./media/save-as-fragment.png)
+<!-- The following image shows how to save a module configuration as a fragment.-->
+<!--![A screen capture of how to save a module configuration as a fragment](./media/save-as-fragment.png)-->
 
 ### <a name="create-a-new-fragment"></a>Új töredék létrehozása
 
-Új töredék létrehozásához kövesse az alábbi lépéseket.
+A következő lépésekkel hozhat létre új töredéket a Commerce webhelykészítőben.
 
 1. A bal oldali navigációs ablakban válassza ki a **Töredékek** lehetőséget.
-1. Válassza az **Új oldaltöredék** lehetőséget. Megjelenik egy párbeszédpanel, amelyen az összes elérhető modultípus látható. A korábban említetteknek megfelelően a töredékek bármilyen típusú modulból létrehozhatók.
+1. Válassza az **Új** lehetőséget. Megjelenik az **Új töredék** párbeszédpanel, amelyen az összes elérhető modultípus látható. A korábban említetteknek megfelelően a töredékek bármilyen típusú modulból létrehozhatók.
 1. A modul típusának kiválasztása a töredékhez.
 
-A következő kép bemutatja, hogy hol hozzon létre új töredéket.
-
-![Új töredék létrehozási helyének képernyőfelvétele](./media/fragment-nav-menu.png)
-
+<!-- The following image shows where to create a new fragment.-->
+<!-- ![A screen capture of where to create a new fragment](./media/fragment-nav-menu.png)-->
 > [!TIP]
 > Egy általános tárolómodul-típus kiválasztásával a legrugalmasabban frissítheti és konfigurálhatja a töredéket később.
 
@@ -92,28 +88,26 @@ A következő eljárások leírják a töredékek hozzáadását, eltávolítás
 
 ### <a name="add-a-fragment"></a>Töredék hozzáadása
 
-Töredék hozzáadásához a oldalhoz tegye a következőket:
+A következő lépésekkel adhat hozzá új töredéket egy oldalhoz a Commerce webhelykészítőben.
 
 1. A bal oldali vázlat ablaktáblán vagy közvetlenül a vizuális oldalkészítőben, válassza ki azt a tárolót vagy helyet, amelyhez hozzá szeretné adni a származtatott modulokat.
-1. Az online ablaktáblán válassza ki a tároló vagy a hely neve melletti három pontot ( **...** ).  Másik lehetőségként, ha a vizuális oldalkészítőt használja, válassza ki a pluszjelet ( **+** ).  
+1. Válassza ki a tároló vagy a hely neve melletti három pontot ( **...** ).  Másik lehetőségként, ha a vizuális oldalkészítőt használja, válassza ki a pluszjelet ( **+** ).  
 1. Válassza a **Töredék hozzáadása** lehetőséget.
-
-    ![A meglévő töredékek bővítőhelyhez vagy konténerhez történő hozzáadásának képernyőfelvétele](./media/add-fragment.png)
+    <!-- ![A screen capture of how to add an existing fragment to a slot or container](./media/add-fragment.png)-->
  
     > [!NOTE]
     > Ha a tároló vagy a bővítőhely nem támogatja az új származtatott modulokat, akkor a **Töredék hozzáadása** lehetőség nem érhető el.
     
-1. A **Töredék hozzáadása** párbeszédpanelen keressen meg és válasszon ki egy töredéket, hogy hozzáadja. Ha nincs elérhető töredék a listán, először létre kell hozni egy töredéket egy olyan modultípusból, amelyet a kiválasztott tároló vagy bővítőhely támogat.
+1. A **Töredék kiválasztása** párbeszédpanelen keressen meg és válasszon ki egy töredéket a hozzáadáshoz. Ha nincs elérhető töredék a listán, először létre kell hozni egy töredéket egy olyan modultípusból, amelyet a kiválasztott tároló vagy bővítőhely támogat.
 1. Válassza ki és adja hozzá a kívánt töredéket a tárolóhoz vagy helyhez a lapon.
-
-    ![A töredékkiválasztó modális ablak képernyőfelvétele](./media/fragment-picker.png)
+<!--    ![A screen capture of the fragment picker modal window](./media/fragment-picker.png)-->
 
 > [!NOTE]
 > A tárolókban vagy bővítőhelyekben engedélyezett modulokat a lapsablonja vagy a modulok saját definíciói határozzák meg.
 
 ### <a name="remove-a-fragment"></a>Töredék eltávolítása
 
-A következő lépésekkel lehet eltávolítani egy töredéket egy helyről vagy tárolóból az oldalon.
+A Commerce webhelykészítő egy lapján lévő bővítőhelyen vagy tárolóban levő töredék eltávolításához kövesse az alábbi lépéseket.
 
 1. A bal oldali vázlat ablaktáblán válassza az eltávolítani kívánt töredék neve melletti három pontot ( **...** ), majd válassza a kuka gombját.  Másik lehetőségként kiválaszthatja a töredéket a vizuális oldalkészítőben, és kiválaszthatja a kuka lehetőséget a töredék eszköztárában.
 1. Amikor a program megkérdezi, hogy szeretné-e eltávolítani a töredéket, válassza az **OK** lehetőséget.
@@ -125,7 +119,7 @@ A következő lépésekkel lehet eltávolítani egy töredéket egy helyről vag
 
 A töredékek szerkesztéséhez a töredék-szerkesztő felhasználói felületét kell használnia. Ez korlátozás szándékos. Ez segít szavatolni, hogy a szerzők nem tévesztik össze a modulok szerkesztési folyamatát a több lapon megosztott töredékek szerkesztési folyamatával.
 
-Egy töredék szerkesztéséhez kövesse az alábbi lépéseket.
+A következő lépésekkel szerkeszthet új töredéket a Commerce webhelykészítőben.
 
 1. A bal oldali navigációs ablakban válassza ki a **Töredékek** lehetőséget.
 1. A **Töredékek** alatt válassza ki a szerkeszteni kívánt töredéket.

@@ -18,12 +18,12 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 22e5333859d37ad33f5806d63fc874b1b5a52831
-ms.sourcegitcommit: 165e082e59ab783995c16fd70943584bc3ba3455
+ms.openlocfilehash: 46095e4ec21aac7cbf98dc1265ea7c8de27148ab
+ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "3967334"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4015043"
 ---
 # <a name="feature-management-overview"></a>Funkciókezelés áttekintése
 
@@ -183,17 +183,21 @@ Igen, ha egy funkció hatással van egy környezet működésére, és nem rende
 ### <a name="how-can-feature-enablement-be-checked-in-code"></a>Milyen módon ellenőrizhető a funkció engedélyezése a kódban?
 A **isFeatureEnabled** módszert alkalmazza a **FeatureStateProvider** osztályon úgy, hogy a funkcióosztály egy példányát átadja a számára. Példa: 
 
-    if (FeatureStateProvider::isFeatureEnabled(BatchContentionPreventionFeature::instance()))
+```xpp
+if (FeatureStateProvider::isFeatureEnabled(BatchContentionPreventionFeature::instance()))
+```
 
 ### <a name="how-can-feature-enablement-be-checked-in-metadata"></a>Milyen módon ellenőrizhető a funkció engedélyezése a metaadatokban?
-A **FeatureClass** tulajdonsággal jelezheti, hogy néhány metaadatot társítottak egy funkcióhoz. A funkcióhoz használt osztálynevet használhatja, például **BatchContentionPreventionFeature** . Ezek a metaadatok csak az adott funkcióban láthatók. A **FeatureClass** tulajdonság a menükben, a menüelemekben, a sorszámozott értékekben és a tábla/nézet mezőkben érhető el.
+A **FeatureClass** tulajdonsággal jelezheti, hogy néhány metaadatot társítottak egy funkcióhoz. A funkcióhoz használt osztálynevet használhatja, például **BatchContentionPreventionFeature**. Ezek a metaadatok csak az adott funkcióban láthatók. A **FeatureClass** tulajdonság a menükben, a menüelemekben, a sorszámozott értékekben és a tábla/nézet mezőkben érhető el.
 
 ### <a name="what-is-a-feature-class"></a>Mi a funkcióosztály?
 A Funkciókezelő funkcióit a program *funkcióosztályokként* definiálja. A funkcióosztályok **IFeatureMetadata** -kat hajtanak végre, és a funkcióosztály attribútumát használják a Funkciókezelő munkaterületen való azonosításukhoz. A rendelkezésre álló funkcióosztályokra számos példa van, amelyeknek a kódban való engedélyezését a **FeatureStateProvider** API-val, a metaadatokban pedig a **FeatureClass** tulajdonsággal ellenőrizheti. Példa: 
 
-    [ExportAttribute(identifierStr(Microsoft.Dynamics.ApplicationPlatform.FeatureExposure.IFeatureMetadata))]
-    internal final class BankCurrencyRevalGlobalEnableFeature implements IFeatureMetadata
-    
+```xpp
+[ExportAttribute(identifierStr(Microsoft.Dynamics.ApplicationPlatform.FeatureExposure.IFeatureMetadata))]
+internal final class BankCurrencyRevalGlobalEnableFeature implements IFeatureMetadata
+```
+
 ### <a name="what-is-the-ifeaturelifecycle-implemented-by-some-feature-classes"></a>Mit jelent az egyes funkcióosztályok által végrehajtott IFeatureLifecycle?
 Az IFeatureLifecycle a Microsoft egyik belső mechanizmusa a funkció életciklusa szakaszának jelzésére. A funkciók a következők lehetnek:
 - PrivatePreview – Tesztcsomagra van szükség ahhoz, hogy látható legyen.

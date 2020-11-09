@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: bdaabad39484cb12537bc5f94c34dcb2575a5b2f
-ms.sourcegitcommit: ef27189efc15ce79c3c31ce2e41ef8a606fc5429
+ms.openlocfilehash: 3f8c47c00b920dae01213d1d241ac8ee6a18d4e3
+ms.sourcegitcommit: 776758a0ff95c3c7398986095104d1d2b9814514
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "3410413"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "4107184"
 ---
 # <a name="set-up-a-call-center-channel"></a>Hívásközpont csatorna beállítása
 

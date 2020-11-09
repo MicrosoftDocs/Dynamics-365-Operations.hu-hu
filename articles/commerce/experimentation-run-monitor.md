@@ -3,7 +3,7 @@ title: Kísérlet futtatása és nyomon követése
 description: Ez a témakör azt mutatja be, hogyan indíthat el és követhet nyomon kísérletet egy harmadik fél szolgáltatásban. Ez a témakör azt is leírja, hogy hogyan lehet módosítani a változatokat a kísérlet elindítása után.
 author: sushma-rao
 manager: AnnBe
-ms.date: 10/01/2020
+ms.date: 10/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,16 +18,18 @@ ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 4cb7d863d9d69612aa0c340099c1f7861c9d12ba
-ms.sourcegitcommit: b6ab46f6e5ce60e2c3d70a348827eaf60c84cae2
+ms.openlocfilehash: ee86a6761b27f3c08a65a2e250659cdcfd71db44
+ms.sourcegitcommit: 7592c2dec0428d56843ab395d2a52c89f77f99b5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "3930211"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "4097022"
 ---
 # <a name="run-and-monitor-an-experiment"></a>Kísérlet futtatása és nyomon követése
 
-Ez a témakör azt mutatja be, hogyan futtathatja és követheti nyomon a kísérleteit egy harmadik fél alkalmazásban, továbbá hogyan módosíthatja szükség esetén a változatokat. A témakör lépéseinek végrehajtása előtt [közzé kell tennie](experimentation-preview-publish.md) a kísérletet a Commerce modulban. A következő ábra azokat a lépéseket mutatja be, amelyekkel egy e-kereskedelmi webhelyhez tartozó kísérletet lehet létrehozni és futtatni a Dynamics 365 Commerce rendszerben. A további lépések külön témákban szerepelnek.
+Ez a témakör azt mutatja be, hogyan futtathatja és követheti nyomon a kísérleteit egy harmadik fél alkalmazásban, továbbá hogyan módosíthatja szükség esetén a változatokat. A témakör lépéseinek végrehajtása előtt először [közzé kell tennie](experimentation-preview-publish.md) a kísérletet a Commerce modulban. 
+
+A következő ábra azokat a lépéseket mutatja be, amelyekkel egy e-kereskedelmi webhelyhez tartozó kísérletet lehet létrehozni és futtatni a Dynamics 365 Commerce rendszerben. A további lépések külön témákban szerepelnek.
 
 [ ![Kísérletezés felhasználói interakciósorozata – Futtatás és nyomon követés](./media/experimentation_run_monitor.svg) ](./media/experimentation_run_monitor.svg#lightbox)
 
@@ -41,7 +43,7 @@ Ha bármilyen oknál fogva módosítania kell a változatokat, az alábbi lépé
 > [!IMPORTANT]
 > Ha módosít egy élő kísérletet a Commerce modulban vagy a harmadik fél szolgáltatásban, akkor az jelentős mértékben befolyásolhatja az eredményeket. Esetleg hagyja végigfutni a kísérletet, és aztán a jelentősebb módosításokhoz új kísérletet hozzon létre.
 
-1. Lépjen a webhelykészítő **Kísérletek** fülére, és válassza ki a kísérletet. 
+1. A Commerce webhelykészítőben lépjen a **Kísérletek** fülre a bal oldali navigációs panelen, majd válassza ki a kísérletet. 
 1. Válassza ki a frissíteni kívánt változatot a legördülő menüből.
 1. Végezze el a szükséges módosításokat, majd tekintse meg előnézetben és tegye közzé a változatokat. További tudnivalókért lásd: [Egy kísérlet előnézete és közzététele](experimentation-preview-publish.md).
 1. Nyissa meg a harmadik fél szolgáltatást a kísérletezéssel kapcsolatos módosítások elvégzéséhez.

@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: VendProspectiveVendorRegistrationRequests,SysUserRequestListPage
+ms.search.form: VendProspectiveVendorRegistrationRequests, SysUserRequestListPage, VendRequestListPage, VendRequestCompanyProfile
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,14 +16,15 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: a7168f9042bae561eb46ecdc8eea377862af8df0
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 171d3b57333cc325fa675627e4c38f764d89f32c
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3203411"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018652"
 ---
 # <a name="onboard-vendors"></a>Szállítók felvétele
+
 [!include [banner](../includes/banner.md)]
 
 ---
@@ -102,7 +103,7 @@ További tudnivalókért a szállítókérési konfigurációval kapcsolatban l�
 | Szállító adatai         | Ez a lap tartalmazza a szállító nevét, amely automatikusan megjelenik a potenciális szállító eredeti regisztrációs kéréséből. Ezenkívül tartalmazza a szervezeti számot, a szállító telefonszámát, faxszámát és e-mail címét, illetve a szállító címeit különféle célokra. |
 | Kapcsolattartó adatai | Ez az oldal tartalmazza a kapcsolattartó nevét, amely automatikusan megjelenik a potenciális szállító eredeti regisztrációs kéréséből. Ezenkívül tartalmazza a kapcsolattartó telefonszámát és e-mail címét, illetve a címét különféle célokra. |
 | Üzleti adatok       | Ez az oldal az adószámokat (a különböző országokban vagy régiókban) és az alkalmazottak számát tartalmazza. Azt is mutatja, hogy az üzlet kisebbség tulajdonában van-e. |
-| Beszerzési kategóriák     | Ez a lap azokat a beszerzési kategóriákat tartalmazza, amikre a szállító jóváhagyást kér. A felhasználó kiválaszthat kategóriákat a beszerzési kategóriahierarchiában. Beállíthatja a hierarchiában megjelenő szintek számát itt: **Beszerzési- és forrásparaméterek** &gt; **Szállítói együttműködés**, ez alatt: **Beszerzés és forrás** &gt; **Beállítás**. |
+| Beszerzési kategóriák     | Ez a lap azokat a beszerzési kategóriákat tartalmazza, amikre a szállító jóváhagyást kér. A felhasználó kiválaszthat kategóriákat a beszerzési kategóriahierarchiában. Beállíthatja a hierarchiában megjelenő szintek számát itt: **Beszerzési- és forrásparaméterek** &gt; **Szállítói együttműködés** , ez alatt: **Beszerzés és forrás** &gt; **Beállítás**. |
 | Kérdőívek             | A varázsló tartalmazhat egy kérdőívcsoportot a szállító számára. A varázslóban megjelenő kérdőívek beállítása vagy a szállítókérésben, vagy beszerzési kategóriánként történik. Ha a kérdőív beállítása beszerzési kategóriánként történik, akkor a varázslóban megjelenő kérdőíveket azok a beszerzési kategóriák határozzák meg, amikre a szállító jóváhagyást kér. A **Beszerzési kategóriák** oldalon megadhat egy kérdőívet a kívánt kategória alatt és a tevékenységtípust átállíthatja erre: **Szállító felvétele**. |
 
 Ha a potenciális szállítói felhasználó befejezte a szállítói regisztrációs varázslót, egy szállítókérés jön létre.
@@ -111,7 +112,7 @@ Ha a potenciális szállítói felhasználó befejezte a szállítói regisztrá
 
 A szállítókérés vázlatként is létrejöhet, majd manuális elküldésre kerülhet egy munkafolyamathoz. Másik lehetőségként a szállítókérés munkafolyamathoz küldése automatikusan is történhet, a szállítói regisztrációs varázsló befejezése után. A kérelem elküldése történhet manuálisan, ha például egy beszerző meg szeretné állapítani, hogy a kérelmet továbbítani kell-e egy jóváhagyási folyamathoz, mielőtt elküldésre kerül a munkafolyamathoz.
 
-- Válassza ki ezt: **Beszerzési- és forrásparaméterek** &gt; **Szállítói együttműködés**, majd ezt: **Potenciális szállítói regisztráció automatikus küldése a munkafolyamathoz** , ha be szeretné állítani, hogy a szállítókérés munkafolyamathoz küldése automatikusan történjen a szállítói regisztrációs varázsló befejezésekor.
+- Válassza ki ezt: **Beszerzési- és forrásparaméterek** &gt; **Szállítói együttműködés** , majd ezt: **Potenciális szállítói regisztráció automatikus küldése a munkafolyamathoz** , ha be szeretné állítani, hogy a szállítókérés munkafolyamathoz küldése automatikusan történjen a szállítói regisztrációs varázsló befejezésekor.
 
 ## <a name="vendor-requests"></a>Szállítókérések
 
@@ -143,7 +144,7 @@ Mielőtt jóváhagyja a szállítókérést az **Új szállító** oldalon, vál
 
 Ha a potenciális szállítói felhasználónak a szállítót képviselő szállítói együttműködéssel kapcsolatos felhasználói hozzáféréssel kell rendelkeznie a Supply Chain Management rendszerhez, akkor állítsa a szállítói együttműködéssel kapcsolatos hozzáférési engedélyt erre: **Igen**. Ha inaktiválni szeretné a potenciális szállító által regisztrálásra használt felhasználói fiókot, akkor állítsa az engedélyt erre: **Nem**.
 
-Ha a szállítói együttműködéssel kapcsolatos hozzáférési engedély erre van állítva: **Igen**, és a szállítókérés jóváhagyásra kerül, akkor elküldésre kerül egy kérelem a felhasználó szerepköreinek módosítására olyan módon, hogy a felhasználó rendelkezzen a **Szállító** típusban, a **Külső szerepkörök** szakaszban leírt szerepkörökkel. Ha az engedély erre van állítva: **Nem**, és a szállítókérés jóváhagyásra kerül, akkor elküldésre kerül egy kérelem a felhasználó inaktiválására. Ebben az esetben be kell állítani a felhasználót inaktiváló munkafolyamatot.
+Ha a szállítói együttműködéssel kapcsolatos hozzáférési engedély erre van állítva: **Igen** , és a szállítókérés jóváhagyásra kerül, akkor elküldésre kerül egy kérelem a felhasználó szerepköreinek módosítására olyan módon, hogy a felhasználó rendelkezzen a **Szállító** típusban, a **Külső szerepkörök** szakaszban leírt szerepkörökkel. Ha az engedély erre van állítva: **Nem** , és a szállítókérés jóváhagyásra kerül, akkor elküldésre kerül egy kérelem a felhasználó inaktiválására. Ebben az esetben be kell állítani a felhasználót inaktiváló munkafolyamatot.
 
 Ahhoz, hogy a szállítókérés jóváhagyásakor egy szállítói számla jöjjön létre, a szállítók szállítókérésekből való létrehozásának számsorozatát erre kell állítani: **Automatikus**.
 

@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: WHSRFMenuItem,WHSWorkTemplateTable
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations, Supply Chain Management
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-12-31
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 4b9cd7dac680c1691fb4c6dd4078f109254be784
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: b3497d43a500898207ed5154721ee0e3a327fb93
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3215596"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017736"
 ---
 # <a name="pick-line-grouping"></a>Kitárolási sor csoportosítása
 
@@ -130,3 +130,4 @@ A kitárolási sor csoportosításának beállítása előtt létre kell hoznia 
 >    - Darab kitárolása.
 >    - Befejezetlen feltöltési munkával rendelkező munkasorok.
 >    - Előírtnál nagyobb mennyiség kitárolása.
+>    - Rövid kitárolás cikkek újbóli felosztásával

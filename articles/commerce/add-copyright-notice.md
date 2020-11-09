@@ -3,7 +3,7 @@ title: Szerzői jogi értesítés hozzáadása
 description: Ez a témakör azt mutatja be, hogyan lehet az e-kereskedelmi webhelyhez szerzői jogi nyilatkozatot hozzáadni.
 author: psimolin
 manager: AnnBe
-ms.date: 04/13/2020
+ms.date: 10/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: a2ed52dbd19508e07fcced92a7fad831180b1d1d
-ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
+ms.openlocfilehash: 838047cac694c65047332e146a7c43ee2ae0f401
+ms.sourcegitcommit: b063bf3a52f19baa11ddba31ef9313d58a0f610e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "3269590"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4019541"
 ---
 # <a name="add-a-copyright-notice"></a>Szerzői jogi értesítés hozzáadása
 
@@ -41,10 +41,10 @@ Ahhoz, hogy szerzői jogi nyilatkozatot adhasson a webhelyhez, a következő ele
 
 A következő lépésekkel lehet hozzáadni egy szerzői jogi nyilatkozatot az összes olyan oldal aljához, amely egy adott sablont használ.
 
-1. Lépjen a **Töredékek** pontra, majd válassza az **Új oldaltöredék** lehetőséget.
-1. A párbeszédpanelen válassza ki a **lábléc** modult, majd nevezze el a töredéket. Írja be például a **Lábléc-Szerzői jog** értéket.
+1. Lépjen a **Töredékek** pontra, majd válassza az **Új** lehetőséget.
+1. Az **Új töredék** párbeszédpanelen válassza ki a **Lábléc** modult, és nevezze át a töredéket. Írja be például a **Lábléc-Szerzői jog** értéket.
 1. Válassza ki az **OK** lehetőséget.
-1. A navigációs panelen válassza ki az válassza ki a **Lábléc** melletti három pontot (**…**) majd válassza a **Modul hozzáadása** elemet.
+1. A navigációs panelen válassza ki az válassza ki a **Lábléc** melletti három pontot ( **…** ) majd válassza a **Modul hozzáadása** elemet.
 1. A párbeszédpanelen válassza ki a **Lábléc-kategória** elemet, majd kattintson az **OK** gombra.
 1. A navigációs panelen válassza ki az válassza ki a **Lábléc-kategória** melletti három pontot, majd válassza a **Modul hozzáadása** elemet.
 1. A párbeszédpanelen válassza ki a **Szövegblokk** elemet, majd kattintson az **OK** gombra.

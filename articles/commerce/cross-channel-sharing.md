@@ -3,7 +3,7 @@ title: Csatornaközi megosztás engedélyezése és használata
 description: Ez a témakör azt mutatja be, hogyan lehet engedélyezni és használni a Microsoft Dynamics 365 Commerce webhelykészítő csatornaközi megosztás funkcióját.
 author: psimolin
 manager: annbe
-ms.date: 10/09/2020
+ms.date: 10/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 5dad866250bc57a9b158ee73948da509ecccd52c
-ms.sourcegitcommit: 83ec80382bfeb693d5c5949b6f65296bd50eed12
+ms.openlocfilehash: 77284045bda193500117978102c0565c5f15ec6d
+ms.sourcegitcommit: b063bf3a52f19baa11ddba31ef9313d58a0f610e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "3974079"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4019518"
 ---
 # <a name="enable-and-use-cross-channel-sharing"></a>Csatornaközi megosztás engedélyezése és használata
 
@@ -72,7 +72,7 @@ Csatornaközi tartalom többféleképpen is létrehozható és használható. L�
 A következő lépésekkel hozhat létre csatornaközi töredéket a Commerce webhelyszerkesztőben.
 
 1. Lépjen a **Töredékek** pontra, és válassza az **Új** lehetőséget új töredék létrehozásához.
-1. Az **Új oldaltöredék** párbeszédpanelen válassza ki a **Promóciós szalagcím** modult, majd az **Oldaltöredék neve** alatt adjon meg egy nevet (például **Csatornaközi szalagcím** ). Majd kattintson az **OK** lehetőségre.
+1. Az **Új töredék** párbeszédpanelen válassza ki a **Promóciós szalagcím** modult, majd a **Töredék neve** alatt adjon meg egy nevet (például **Csatornaközi szalagcím** ). Majd kattintson az **OK** lehetőségre.
 1. A **Promóciós szalagcím** modul tulajdonságlapján válassza az **Üzenet hozzáadása** lehetőséget, majd válassza az **Üzenet** elemet.
 1. Az **Üzenet** párbeszédpanelben a **Szöveg** alatt írja be, hogy **Csatornaközi** , majd kattintson az **OK** gombra. 
 1. Válassza a **Mentés** elemet, válassza a **Szerkesztés befejezése** parancsot az oldal ellenőrzéséhez, majd a **Közzététel** elemet a közzétételhez.

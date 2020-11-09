@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSLocationBuild
+ms.search.form: WHSLocationBuild, WHSZone
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations, Supply Chain Management
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: c0bed8c95760b3dee350048c5f824f974b784f26
-ms.sourcegitcommit: 7b7cc93c0f78c6bfc7a3ea66a74a29ba0f218553
+ms.openlocfilehash: 6cf81939989b8faffcda51bbbd5bc6b27aec7eea
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "3658334"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016308"
 ---
 # <a name="additional-location-zones"></a>További helyzónák
 
@@ -52,9 +52,9 @@ A *További helyzóna* funkciót használata előtt be kell kapcsolni a rendszer
     - A **Helyprofil azonosítója** mezőben válassza ki az _EMELET_ elemet.
 
 3. Válassza ki az **Emelet** sort.
-4. A **Kezdő szám** mezőben adja meg az _1_-es számot. A **Befejező szám** mezőben adja meg az _3_-es számot.
+4. A **Kezdő szám** mezőben adja meg az _1_ -es számot. A **Befejező szám** mezőben adja meg az _3_ -es számot.
 5. Válassza ki a **Folyosó** sort.
-6. A **Kezdő szám** mezőben adja meg az _1_-es számot. A **Befejező szám** mezőben adja meg az _5_-ös számot.
+6. A **Kezdő szám** mezőben adja meg az _1_ -es számot. A **Befejező szám** mezőben adja meg az _5_ -ös számot.
 7. Válassza a **Létrehozása** lehetőséget.
 8. Olyan üzeneteket kap, amelyek tájékoztatnak az új helyek hozzáadásáról. Válassza ki az **Üzenetek megjelenítése** gombot az üzenetek megtekintéséhez.
 9. Ugorjon a **Raktárkezelés \> Beállítás \> Raktár \> Helyek pontra**. Az új helyek megjelennek a listán, és az összes zónamező elérhető (azaz a meglévő zónamezőn kívül az új zónamezők is).

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 03face220fd63962f645b4fe91f20aec2f19b1ef
-ms.sourcegitcommit: 14b554b43b9d86152ef27fdde6141589bcaf1161
+ms.openlocfilehash: 6d6880e258510a79cdd5937f96af28e5ae148292
+ms.sourcegitcommit: 1329b3b98854422c4c3773ede44a5cefa7d07085
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "3598058"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "4040053"
 ---
 # <a name="credit-and-collections-management-power-bi-content"></a>Követelések és beszedések kezelése Power BI tartalom
 
@@ -51,6 +51,9 @@ A következő beállításokat meg kell adni, hogy az adatok megjelenjenek a **V
 3. Ugrás a **Főkönyv > Beállítás > Főkönyv** részre, és a **Könyvelési pénznem** és az **Árfolyamtípus** beállítása.
 4. Adja meg az árfolyamokat a tranzakció pénznemei és a könyvelési pénznem, a könyvelési pénznem és a rendszer pénzneme között. Lépjen ide: **Főkönyv > Pénznemek > Pénznemek árfolyamtípusai**.
 5. Lépjen a **Rendszerfelügyelet > Beállítás > Entitástár** részre a **CustCollectionsBIMeasurementsV2** összesítő mérték frissítéséhez.
+
+>[!NOTE] 
+> A korosítási időszak definícióit be kell állítani a **Kinnlevőségi paraméterek > Gyűjtemények > Gyűjtemények alapértelmezett értékei** pontban, hogy a Power BI tartalomban az öregedési adatok engedélyezve legyenek.
 
 ## <a name="accessing-the-power-bi-content"></a>A Power BI tartalom elérése
 

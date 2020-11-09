@@ -18,17 +18,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 5052957a2f4e59791ef02c12bc2aef5ed36e95c7
-ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
+ms.openlocfilehash: 82a8795360f453cdee19fa6e9e376a42e8276849
+ms.sourcegitcommit: 69075e001d1fb4ef69282667052cd8d082273094
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3816937"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4022077"
 ---
 # <a name="social-share-module"></a>Közösségi megosztás modul
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Ez a témakör a közösségi megosztás modulokkal foglalkozik, és bemutatja, hogy hogyan lehet őket hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
 
@@ -54,7 +53,7 @@ A következő ábra bemutatja a termék részletei oldalon használt közösség
 ## <a name="social-share-item-module-properties"></a>Közösségi megosztási elem modultulajdonságai
 | Tulajdonság neve             | Érték                 | Leírás |
 |---------------------------|-----------------------|-------------|
-| Közösségi média              | **Facebook**, **Twitter**, **Pinterest**, **LinkedIn**, **E-mail** | Egy legördülő menü a közösségimédia-platformok listájával. |
+| Közösségi média              | **Facebook** , **Twitter** , **Pinterest** , **LinkedIn** , **E-mail** | Egy legördülő menü a közösségimédia-platformok listájával. |
 | Ikon |Kép    | Ez lesz a megfelelő közösségi médiához megjelenített kép. Gyakorlati tanácsként a közösségi média-felület SDK-ját tekintse meg az egyes platformokhoz javasolt képekért. |
 
 ## <a name="add-a-social-share-module-to-a-buy-box-module"></a>Közösségimédia-modul hozzáadása egy vásárlásmező-modulhoz
@@ -62,12 +61,12 @@ A következő ábra bemutatja a termék részletei oldalon használt közösség
 Közösségimédia-modul hozzáadásához egy vásárlásmező-modulhoz kövesse az alábbi lépéseket.
 
 1. A Fabrikam webhelyén válassza ki az **Oldalak** lehetőséget, majd válassza ki a **DefaultPDP** a termékrészletek oldal megnyitásához. 
-1. A **Vásárlásmező (kötelező)** helyben válassza a három pont (**…**) gombot, majd válassza az **Modul hozzáadása** elemet.
+1. A **Vásárlásmező (kötelező)** helyben válassza a három pont ( **…** ) gombot, majd válassza az **Modul hozzáadása** elemet.
 1. A **Modul hozzáadása** párbeszédpanelen válassza ki az **Közösségi megosztás** modult, majd kattintson az **OK** gombra.
-1. Az **Közösségi megosztás** helyben válassza a három pont (**…**) gombot, majd válassza a **Modul hozzáadása** elemet.
+1. Az **Közösségi megosztás** helyben válassza a három pont ( **…** ) gombot, majd válassza a **Modul hozzáadása** elemet.
 1. A **Modul hozzáadása** párbeszédpanelen válassza ki a **SocialShare** modult, majd kattintson az **OK** gombra.
 1. A **SocialShare** modul tulajdonságok ablaktáblájában , a **Tájolás** területen válassza a **Vízszintes** elemet. Szükség szerint adjon meg egy feliratot.
-1. Az **SocialShare** helyben válassza a három pont (**…**) gombot, majd válassza a **Modul hozzáadása** elemet.
+1. Az **SocialShare** helyben válassza a három pont ( **…** ) gombot, majd válassza a **Modul hozzáadása** elemet.
 1. A **Modul hozzáadása** párbeszédpanelen válassza ki a **SocialShareItem** modult, majd kattintson az **OK** gombra.
 1. A **SocialShareItem** modulban, a **Közösségi média** alatt válassza a **Facebook** lehetőséget.
 1. A **SocialShareItem** modulban az **Ikon** alatt válassza a **+ Kép hozzáadása** lehetőséget.

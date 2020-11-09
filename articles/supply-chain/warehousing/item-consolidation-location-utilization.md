@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: WHSPhysDimUOM, WHSMovementType, WHSItemConsolidationForm, WHSRFMenu, WHSRFMenuItem
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 5e4172a8d3f82e6eeb8868aac87abd183a94c088
-ms.sourcegitcommit: 14b554b43b9d86152ef27fdde6141589bcaf1161
+ms.openlocfilehash: 6a328b20c1cfb2fc376ab4656c64cf585a5aa015
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "3598785"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017184"
 ---
 # <a name="item-consolidation---location-utilization"></a>Cikk-konszolidáció – hely kihasználtsága
 
@@ -80,7 +81,7 @@ Ez a szakasz bemutatja, hogyan kell előkészíteni a rendszert a cikk-konszolid
 1. Válassza a **Mentés** lehetőséget.
 
     > [!IMPORTANT]
-    > Ha a **Cikk engedélyezése helyen**, és a **Hely állapotának engedélyezése** beállítás már *Igen* értékre van állítva , ugorjon a **Dimenziók** gyorslap beállításával kapcsolatosa utasításokra a 10. lépésben. Ha a lehetőségek nem lettek volna beállítva *Igen* értékre , akkor a kézi beállítás után futtatnia kell a **Raktárkezelési modul** konzisztenciavizsgálatát. Ebben az esetben folytassa a következő lépéssel.
+    > Ha a **Cikk engedélyezése helyen** , és a **Hely állapotának engedélyezése** beállítás már *Igen* értékre van állítva , ugorjon a **Dimenziók** gyorslap beállításával kapcsolatosa utasításokra a 10. lépésben. Ha a lehetőségek nem lettek volna beállítva *Igen* értékre , akkor a kézi beállítás után futtatnia kell a **Raktárkezelési modul** konzisztenciavizsgálatát. Ebben az esetben folytassa a következő lépéssel.
 
 1. A konzisztencia-ellenőrzés futtatásához nyissa meg a **Rendszeradminisztráció \> Ismétlődő feladatok \> Adatbázis \> Konzisztenciaellenőrzés** lehetőségét.
 1. Az **Konzisztenciaellenőrzés** párbeszédpanelen adja meg a következő értékeket:

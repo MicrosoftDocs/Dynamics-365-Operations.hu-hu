@@ -3,7 +3,7 @@ title: Vonalkód-adatforrások használata vonalkód-képek létrehozásához
 description: Ez a témakör bemutatja, hogy hogyan lehet vonalkód-adatforrásokat használni vonalkód-képek létrehozásához.
 author: NickSelin
 manager: AnnBe
-ms.date: 06/05/2020
+ms.date: 10/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: Version 10.0.13
-ms.openlocfilehash: fdb70c7e72647de4c6cd977b286c19c906559438
-ms.sourcegitcommit: a56b22729fbbb941471e927e2f932acaf624cf5e
+ms.openlocfilehash: c549a476f854ffcf962ffb62e430b459d3445734
+ms.sourcegitcommit: cc78f9bf585082ce65c2ab0b011ff62620fa883d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "3435465"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "4088197"
 ---
 # <a name="use-barcode-data-sources-to-generate-bar-code-images"></a>Vonalkód-adatforrások használata vonalkód-képek létrehozásához
 
@@ -54,16 +54,17 @@ A **Vonalkód** típusú adatforrás használatával a következő formátumokba
     - EAN-8
     - EAN-13
     - ITF-14
+    - Intelligens e-mail
+    - MSI
+    - Plessey
     - PDF417
     - UPC-A
     - UPC-E
-    - MSI
-    - Plessey
 
 - Kétdimenziós vonalkódok:
 
     - Aztec
-    - DataMatrix
+    - Adatmátrix
     - QR-kód
 
 **Vonalkód** adatforrás konfigurálásakor megadhatók a lemezképek létrehozásához használt speciális renderelési paraméterek:
@@ -157,7 +158,7 @@ Ezenkívül töltse le a következő Excel-fájlt, amely tartalmazza a megadott 
 2. A **Bankszámlák** lapon válassza ki az **USMF OPER** fiókot.
 3. A bankszámla részletei oldal műveleti ablaktábláján, a **Beállítás** lapon, az **Elrendezés** csoportban válassza ki az **Ellenőrzés** lehetőséget.
 4. Az **Elrendezés ellenőrzése** lapon válassza a **Szerkesztés** parancsot.
-5. Adja meg az **Általános** gyorslap **Általános elektronikus export formátum** beállítását**Igen** értékre.
+5. Adja meg az **Általános** gyorslap **Általános elektronikus export formátum** beállítását **Igen** értékre.
 6. Az **Exportálási formátum konfigurálása** mezőben válassza ki a **Csekkek nyomtatási formátuma** korábban importált ER-formátumot.
 7. A Művelet ablaktáblán válassza ki a **Nyomtatási tesz** elemet.
 8. A párbeszédpanelen állítsa az **Átruházható csekkformátum** beállítását **Igen** értékre, majd kattintson az **OK** gombra.
@@ -191,7 +192,7 @@ Most módosítania kell az ER-megoldást, majd [újra alkalmaznia kell](modify-e
     ![A cellaformázás elemek kötése az ER műveletek tervezője adatforrásaihoz](./media/er-barcode-data-source-cells-bound.png)
 
 7. Válassza ki a **Formátum** lapot az oldal jobb oldalán.
-8. A műveleti ablaktáblán válassza ki a három pontot (**...**), majd válassza az **Importálás** elemet.
+8. A műveleti ablaktáblán válassza ki a három pontot ( **...** ), majd válassza az **Importálás** elemet.
 9. Az **Importálás** csoportban válassza a **Frissítés az Excel programból** elemet, majd válassza a **Sablon frissítése** parancsot.
 10. A párbeszédpanelen tallózással keresse meg a számítógépre mentett **Cheque template Excel.xlsx** fájlt, majd válassza ki, majd az **OK** gombra kattintva erősítse meg, hogy a kiválasztott sablont kell alkalmazni.
 11. Válassza ki az oldal jobb oldalán található **Leképezés** lapot, majd a bal oldali formátum ablaktáblán válassza a **Kibontás/összecsukás** parancsot.

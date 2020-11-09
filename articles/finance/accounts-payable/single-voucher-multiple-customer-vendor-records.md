@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2bd741cdf86ef73742a75bac910d7560cb380cfb
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 7cbc638b684ad6eb59b852e599cf36cbd0b66faf
+ms.sourcegitcommit: d61c43b6bc04bb8786aa3c47932be0ccd84ebaeb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2189545"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "4006236"
 ---
 # <a name="single-voucher-with-multiple-customer-or-vendor-records"></a>Egyetlen bizonylat több vevő- vagy szállítórekorddal
 
@@ -50,9 +50,8 @@ Egy több vevő- vagy szállítórekordot tartalmazó bizonylat feladásakor egy
 
 A következő példában a főkönyvben több szállítói számla van rögzítve egy bizonylaton a **Főkönyvi napló** oldalon. Ezek a számlák több számladimenzión vannak elosztva.
 
-|             |                  |              |                 |           |            |
+| Bizonylat  | Számla típusa | Könyvelési számla  | Leírás | Tartozik | Követel |
 |-------------|------------------|--------------|-----------------|-----------|------------|
-| **Bizonylat** | **Számla típusa** | **Számla**  | **Leírás** | **Tartozik** | **Követel** |
 | GNJL001     | Szállító           | 1001         | INV1            |           | 100,00     |
 | GNJL001     | Szállító           | 1001         | INV2            |           | 200,00     |
 | GNJL001     | Szállító           | 1001         | INV3            |           | 300,00     |
@@ -63,9 +62,8 @@ A következő példában a főkönyvben több szállítói számla van rögzítv
 
 A feladást követően egy bizonylat jön létre.
 
-|             |              |                  |                                    |
+| Bizonylat  | Könyvelési számla  | Feladás típusa | Összeg a tranzakció pénznemében. |
 |-------------|--------------|------------------|------------------------------------|
-| **Bizonylat** | **Számla**  | **Feladás típusa** | **Összeg a tranzakció pénznemében.** |
 | GNJL001     | 606300-001-- | Főkönyvi napló   | 50,00                              |
 | GNJL001     | 606300-002-- | Főkönyvi napló   | 50,00                              |
 | GNJL001     | 606300-003-- | Főkönyvi napló   | 200,00                             |
@@ -78,9 +76,8 @@ Figyelje meg, hogy a bizonylat három bejegyzést tartalmaz a Szállítóegyenle
 
 A példa segítségével elemezhető az egy bizonylatos megoldás hatása a lefelé irányuló kiegyenlítéskönyvelésre. Tegyük fel, hogy a 197,00 összeget fizeti ki a 200,00 összegű számlára, 3,00 készpénzfizetési engedményt érvényesítve. Figyelje meg, hogy a készpénzfizetési engedmény számlaérték a számlabizonylat költségszámláiról az összes dimenzióra ki van osztva. Ennek az oka az, hogy egy bizonylatot használtak a fenti számla feladásához, és az egyetlen bizonylaton semmi sem mutatja, hogy a felhasználó hogyan szándékozta megvalósítani a költségfelosztások megfeleltetését a szállítói egyenlegnek.
 
-|             |              |                      |           |            |
+| Bizonylat  | Könyvelési számla  | Feladás típusa     | Tartozik | Követel |
 |-------------|--------------|----------------------|-----------|------------|
-| **Bizonylat** | **Számla**  | **Feladás típusa**     | **Tartozik** | **Követel** |
 | APPAYM001   | 200110-001-  | Szállítói egyenleg       | 197.00    |            |
 | APPAYM001   | 110110-001-  | Bank                 |           | 197.00     |
 | 14000056    | 520200-001-- | Szállító készpénzfizetési engedménye |           | 0.25       |
@@ -91,9 +88,8 @@ A példa segítségével elemezhető az egy bizonylatos megoldás hatása a lefe
 
 Ha a felhasználó elégedetlen azzal, hogy a készpénzfizetési engedményt az eredeti számláról a költségfelosztások mindegyikéhez kiosztották, a számlák rögzítéséhez több bizonylatot kell használnia. Íme egy példa arra, hogyan lehet több bizonylatot bevinni a főkönyvbe egy bizonylat helyett, ahogy az a példa elején látható.
 
-|             |                  |              |                 |           |            |                 |                    |
+| Bizonylat  | Számla típusa | Könyvelési számla  | Leírás | Tartozik | Követel | Ellenszámla típusa | Ellenszámla |
 |-------------|------------------|--------------|-----------------|-----------|------------|-----------------|--------------------|
-| **Bizonylat** | **Számla típusa** | **Számla**  | **Leírás** | **Tartozik** | **Követel** | **Ellenszámla típusa** | **Ellenszámla** |
 | GNJL001     | Szállító           | 1001         | INV1            |           | 100,00     | Főkönyv          | &lt;üres&gt;      |
 | GNJL001     | Főkönyv           | 606300-001-- | INV1            |   50,00   |            | Főkönyv          | &lt;üres&gt;:      |
 | GNJL001     | Főkönyv           | 606300-002-- | INV1            |   50,00   |            | Főkönyv          | &lt;üres&gt;:      |
@@ -102,9 +98,8 @@ Ha a felhasználó elégedetlen azzal, hogy a készpénzfizetési engedményt az
 
 Az INV2 kifizetésekor a következő bejegyzés történik. Figyelje meg, hogy a készpénzfizetési engedmény pénzügyi dimenziói a társított kiadás pénzügyi dimenzióit követik.
 
-|             |              |                      |           |            |
+| Bizonylat  | Könyvelési számla  | Feladás típusa     | Tartozik | Követel |
 |-------------|--------------|----------------------|-----------|------------|
-| **Bizonylat** | **Számla**  | **Feladás típusa**     | **Tartozik** | **Követel** |
 | APPAYM001   | 200110-001-  | Szállítói egyenleg       | 197.00    |            |
 | APPAYM001   | 110110-001-  | Bank                 |           | 197.00     |
 | 14000056    | 520200-003-- | Szállító készpénzfizetési engedménye |           | 3,00       |
@@ -112,17 +107,15 @@ Az INV2 kifizetésekor a következő bejegyzés történik. Figyelje meg, hogy a
 
 ### <a name="one-voucher-with-multiple-vendors-and-the-impact-on-realized-gainloss-accounting"></a>Egy bizonylat több szállítóval, és a hatás a realizált nyereség/veszteség könyvelésére
 
-|             |                  |             |                 |           |            |                  |              |
+| Bizonylat  | Számla típusa | Könyvelési számla | Leírás | Tartozik | Követel | Számla típusa | Könyvelési számla  |
 |-------------|------------------|-------------|-----------------|-----------|------------|------------------|--------------|
-| **Bizonylat** | **Számla típusa** | **Számla** | **Leírás** | **Tartozik** | **Követel** | **Számla típusa** | **Számla**  |
 | GNJL001     | Szállító           | 1001        | INV1            |           | 100,00     | Főkönyv           | 606300-001-- |
 | GNJL001     | Szállító           | 1001        | INV2            |           | 200,00     | Főkönyv           | 606300-002-- |
 
 A következő példában a főkönyvben több szállítói számla van rögzítve egy bizonylaton a **Főkönyvi napló** oldalon. Ezek a számlák több számladimenzión vannak elosztva. A feladást követően egy bizonylat jön létre.
 
-|             |              |                  |                                          |                                         |
+| Bizonylat  | Könyvelési számla  | Feladás típusa | Összeg a tranzakció pénznemében (EUR) | Összeg könyvelési pénznemben (USD) |
 |-------------|--------------|------------------|------------------------------------------|-----------------------------------------|
-| **Bizonylat** | **Számla**  | **Feladás típusa** | **Összeg a tranzakció pénznemében (EUR)** | **Összeg könyvelési pénznemben (USD)** |
 | GNJL001     | 606300-001-- | Főkönyvi napló   | 100,00                                   | 114.00                                  |
 | GNJL001     | 606300-002-- | Főkönyvi napló   | 200,00                                   | 228.00                                  |
 | GNJL001     | 200110-001-  | Szállítói egyenleg   | -100,00                                  | -114.00                                 |
@@ -132,9 +125,8 @@ Figyelje meg, hogy a bizonylat két bejegyzést tartalmaz a Szállítóegyenleg 
 
 A példa segítségével elemezhető az egy bizonylatos megoldás hatása a lefelé irányuló kiegyenlítéskönyvelésre. Tegyük fel, hogy a könyvelés pénzneme USD, és a fenti tranzakciók feladása EUR tranzakciós pénznemben történt. Tegyük fel, hogy teljes egészében kifizeti a 200,00 eurós számlát, de veszteséget realizál, mivel eltérés van a számla feladásai időpontjának és a kifizetés időpontjának árfolyama között. Figyelje meg, hogy a realizált veszteség számlaérték a számlabizonylat költségszámláiról az összes dimenzióra ki van osztva. Ebben az esetben a 001 és a 002 dimenzió egyaránt fel van osztva, bár a felhasználó azt gondolhatja, hogy csak a 002 tartozik a kiegyenlítés alatt levő számla költségszámlájához. Ennek az oka az, hogy egy bizonylatot használtak a fenti számla feladásához, és így semmi sem mutatja, hogy a felhasználó hogyan szándékozta megvalósítani a költségfelosztások megfeleltetését a szállítói egyenlegnek.
 
-|             |             |                    |                                          |                                         |
+| Bizonylat  | Könyvelési számla | Feladás típusa   | Összeg a tranzakció pénznemében (EUR) | Összeg könyvelési pénznemben (USD) |
 |-------------|-------------|--------------------|------------------------------------------|-----------------------------------------|
-| **Bizonylat** | **Számla** | **Feladás típusa**   | **Összeg a tranzakció pénznemében (EUR)** | **Összeg könyvelési pénznemben (USD)** |
 | APPAYM001   | 200110-001- | Szállítói egyenleg     | 200,00                                   | 230.00                                  |
 | APPAYM001   | 110110-001- | Bank               | -200,00                                  | -230.00                                 |
 | 14000056    | 801300-001- | Árfolyamveszteség | 0,00                                     | 0.67                                    |
@@ -143,17 +135,15 @@ A példa segítségével elemezhető az egy bizonylatos megoldás hatása a lefe
 
 Ha a felhasználó elégedetlen azzal, hogy az árfolyamveszteséget az eredeti számláról a költségfelosztások mindegyikéhez kiosztották, a számlák rögzítéséhez több bizonylatot kell használnia. Íme egy példa arra, hogyan lehet több bizonylatot bevinni a főkönyvbe egy bizonylat helyett, ahogy az a példa elején látható.
 
-|             |                  |             |                 |           |            |                 |                    |
+| Bizonylat  | Számla típusa | Könyvelési számla | Leírás | Tartozik | Követel | Ellenszámla típusa | Ellenszámla |
 |-------------|------------------|-------------|-----------------|-----------|------------|-----------------|--------------------|
-| **Bizonylat** | **Számla típusa** | **Számla** | **Leírás** | **Tartozik** | **Követel** | **Ellenszámla típusa** | **Ellenszámla** |
 | GNJL002     | Szállító           | 1001        | INV1            |           | 100,00     | Főkönyv          | 606300-001--       |
 | GNJL003     | Szállító           | 1001        | INV2            |           | 200,00     | Főkönyv          | 606300-002--       |
 
 Az INV2 kifizetésekor a következő bejegyzés történik. Figyelje meg, hogy az árfolyamveszteség pénzügyi dimenziói a társított kiadás pénzügyi dimenzióit követik.
 
-|             |             |                    |                                          |                                         |
+| Bizonylat  | Könyvelési számla | Feladás típusa   | Összeg a tranzakció pénznemében (EUR) | Összeg könyvelési pénznemben (USD) |
 |-------------|-------------|--------------------|------------------------------------------|-----------------------------------------|
-| **Bizonylat** | **Számla** | **Feladás típusa**   | **Összeg a tranzakció pénznemében (EUR)** | **Összeg könyvelési pénznemben (USD)** |
 | APPAYM001   | 200110-001- | Szállítói egyenleg     | 200,00                                   | 230.00                                  |
 | APPAYM001   | 110110-001- | Bank               | -200,00                                  | -230.00                                 |
 | 14000056    | 801300-002- | Árfolyamveszteség | 0,00                                     | 2.00                                    |
@@ -168,64 +158,56 @@ A következő példa egy olyan értékesítést tételez fel, amelynél a vevő 
 
 Illusztrálásként tegyük fel, hogy a következő értékesítés az ACME vevőnek történik. Az alábbi könyvelési tételek felelnek meg az értékesítésnek.
 
-|                    |                  |           |            |
+| Főkönyvi számla | Feladás típusa | Tartozik | Követel |
 |--------------------|------------------|-----------|------------|
-| **Főkönyvi számla** | **Feladás típusa** | **Tartozik** | **Követel** |
 | 401100-002-023-    | Bevétel          |           | 100        |
 | 130100-002-        | Vevői egyenleg | 100       |            |
 
 Ezután a felhasználó átviszi az ACME-től esedékes egyenleget a biztosítótársasághoz, egy bizonylaton a kinnlevőségek kifizetési naplóban. A biztosítótársaság Biztosítás vevőként van beállítva.
 
-|             |                  |             |                 |           |            |                 |                    |
+| Bizonylat  | Számla típusa | Könyvelési számla | Leírás | Tartozik | Követel | Ellenszámla típusa | Ellenszámla |
 |-------------|------------------|-------------|-----------------|-----------|------------|-----------------|--------------------|
-| **Bizonylat** | **Számla típusa** | **Számla** | **Leírás** | **Tartozik** | **Követel** | **Ellenszámla típusa** | **Ellenszámla** |
 | ARPAYM001   | Vevő         | ACME        | Átvitel        |           | 100,00     | Vevő        | Biztosítás          |
 
 Figyelje meg, hogy fenti bejegyzést egy bizonylat tartalmazza. Ez a bizonylat két vevőrekordot tartalmaz. A következő bizonylat a fenti főkönyvi bejegyzés feladásakor jön létre.
 
-|             |             |                  |                                    |
+| Bizonylat  | Könyvelési számla | Feladás típusa | Összeg a tranzakció pénznemében. |
 |-------------|-------------|------------------|------------------------------------|
-| **Bizonylat** | **Számla** | **Feladás típusa** | **Összeg a tranzakció pénznemében.** |
 | ARPAYM001   | 130100-002- | Vevői egyenleg | 100,00                             |
 | ARPAYM001   | 130100-002- | Vevői egyenleg | -100,00                            |
 
 Ezután tegyük fel, hogy kifizetés érkezik 98,00 értékben a Biztosítás vevőtől, és úgy döntünk, hogy a kiegyenlítést az egyenlegátvitel által létrehozott számlával végezzük el. Ez a következő bizonylat feladását eredményezi. Létező elvárás lehet, hogy a kiegyenlítés az eredeti számláról használja a pénzügyi dimenziókat, de ez nem lehetséges, mert a Biztosítás vevőtől nem létezik számladokumentum. Figyelje meg, hogy alapértelmezés szerint a készpénzfizetési engedmény felosztási dimenzióinak származási helye az átvitellel létrehozott vevői tranzakció, és nem az eredeti számla bevételi számlája. Az alapértelmezett érték annak az eredménye, hogy az egyenlegek átvitele egyetlen bizonylat segítségével történik.
 
-|             |             |                  |           |            |
+| Bizonylat  | Könyvelési számla | Feladás típusa | Tartozik | Követel |
 |-------------|-------------|------------------|-----------|------------|
-| **Bizonylat** | **Számla** | **Feladás típusa** | **Tartozik** | **Követel** |
 | ARPAYM002   | 110110-002- | Bank             | 98.00     |            |
 | ARPAYM002   | 130100-002- | Vevői egyenleg |           | 98.00      |
 
 A készpénzfizetési engedményhez kapcsolódó bizonylaton a pénzügyi dimenzió alapértelmezetten az átadásból létrehozott vevői tranzakcióból származik, mert az átadásnak egynél több vevője van.
 
-|             |             |                        |           |            |
+| Bizonylat  | Könyvelési számla | Feladás típusa       | Tartozik | Követel |
 |-------------|-------------|------------------------|-----------|------------|
-| **Bizonylat** | **Számla** | **Feladás típusa**       | **Tartozik** | **Követel** |
 | ARP-00001   | 403300-002- | Vevő készpénzfizetési engedménye | 2.00      |            |
 | ARP-00001   | 130100-002- | Vevői egyenleg       |           | 2.00       |
 
 Ha a felhasználó elégedetlen a készpénzfizetési engedmény pénzügyi dimenzióinak alapértelmezésével, egy bizonylat helyett több bizonylatot kell használni az egyenlegátvitel rögzítése érdekében. Ezt a forgatókönyvet úgy kell kivitelezni, hogy létrehozunk egy jóváírást a vevő számára, AMELYBŐL áthelyezzük az egyenleget, és létrehozunk egy megbízást vagy számlát annak a vevőnek, AKINEK az egyenleg átvisszük. A következő példa bemutatja, hogyan lehet több bizonylatot bevinni a kinnlevőségek kifizetések naplójába az egyenleg átviteléhez egy bizonylat helyett, ahogy az a példa elején látható.
 
-|             |                  |             |                 |           |            |                 |                    |
+| Bizonylat  | Számla típusa | Könyvelési számla | Leírás | Tartozik | Követel | Ellenszámla típusa | Ellenszámla |
 |-------------|------------------|-------------|-----------------|-----------|------------|-----------------|--------------------|
-| **Bizonylat** | **Számla típusa** | **Számla** | **Leírás** | **Tartozik** | **Követel** | **Ellenszámla típusa** | **Ellenszámla** |
 | ARPAYM001   | Vevő         | ACME        |                 |           | 100,00     | Főkönyv          | 401100-002-023-    |
 | ARPAYM002   | Vevő         | Biztosítás   |                 | 100,00    |            | Főkönyv          | 401100-002-023-    |
 
 Ez azt jelenti, hogy amikor a Biztosítás vevő kifizet 98,00 összeget az ARPAYM02 bizonylattal, a rendszer az ARPAYM002 bizonylat főkönyviszámla-bejegyzésének helyes pénzügyi dimenziót fogja használni.
 
-|             |             |                  |           |            |
+| Bizonylat  | Könyvelési számla | Feladás típusa | Tartozik | Követel |
 |-------------|-------------|------------------|-----------|------------|
-| **Bizonylat** | **Számla** | **Feladás típusa** | **Tartozik** | **Követel** |
 | ARPAYM003   | 110110-002- | Bank             | 98.00     |            |
 | ARPAYM003   | 130100-002  | Vevői egyenleg |           | 98.00      |
 
 A készpénzfizetési engedményhez kapcsolódó bizonylaton a rendszer az ARPAYM002 bizonylatán megjelenő ellentételező bevételi számláról származó pénzügyi dimenziókat fogja használni.
 
-|             |                 |                        |           |            |
+| Bizonylat  | Könyvelési számla     | Feladás típusa       | Tartozik | Követel |
 |-------------|-----------------|------------------------|-----------|------------|
-| **Bizonylat** | **Számla**     | **Feladás típusa**       | **Tartozik** | **Követel** |
 | ARP-00001   | 403300-002-023- | Vevő készpénzfizetési engedménye | 2.00      |            |
 | ARP-00001   | 130100-002-     | Vevői egyenleg       |           | 2.00       |
 
@@ -236,16 +218,14 @@ A nettóérték-számítás akkor lehet hasznos, amikor egy szervezet ugyanazzal
 
 Illusztrációként tegyük fel, hogy az 1001 jelzetű szállító és az USA-008 jelzetű vevő ugyanaz a jogi személy, így a vállalat el akarja végezni a kötelezettségek és kinnlevőségek egyenlegének nettóérték-számítását a maradványösszeg kifizetése/fogadása előtt. Tegyük fel, hogy a vevőrekord fizetendő értéke 75,00 EUR, és a szállítói rekord tartozása 100,00 EUR, ami azt jelenti, hogy előnyben részesítjük a nettóérték-számítás elvégzését, és csak 25,00 EUR kifizetését szeretnénk megtenni a szállító számára. Tegyük fel továbbá, hogy az alapértelmezett pénznem az USD. Ebben az esetben egy nettóérték-számítási tranzakciót viszünk be egyetlen bizonylaton a kötelezettségek fizetési naplóba.
 
-|             |                  |             |                 |           |            |                 |                    |
+| Bizonylat  | Számla típusa | Könyvelési számla | Leírás | Tartozik | Követel | Ellenszámla típusa | Ellenszámla |
 |-------------|------------------|-------------|-----------------|-----------|------------|-----------------|--------------------|
-| **Bizonylat** | **Számla típusa** | **Számla** | **Leírás** | **Tartozik** | **Követel** | **Ellenszámla típusa** | **Ellenszámla** |
 | APPAYM001   | Szállító           | 1001        | Nettóérték-számítás         |  75,00    |            | Vevő        | US-008             |
 
 A tranzakció jövőbeli kiegyenlítésével kapcsolatos nemkívánatos problémák elkerülése érdekében a naplóba több bizonylatot kell bevinni a nettóérték-számítási tranzakció rögzítésére. Figyelje meg, hogy a vevői és szállítói egyenlegek ellentételezése egyetlen elszámolószámlával történik egyetlen, több vevői és szállítói egyenleget tartalmazó bizonylat használatának az elkerülése érdekében.
 
-|             |                  |             |                 |           |            |                 |                    |
+| Bizonylat  | Számla típusa | Könyvelési számla | Leírás | Tartozik | Követel | Ellenszámla típusa | Ellenszámla |
 |-------------|------------------|-------------|-----------------|-----------|------------|-----------------|--------------------|
-| **Bizonylat** | **Számla típusa** | **Számla** | **Leírás** | **Tartozik** | **Követel** | **Ellenszámla típusa** | **Ellenszámla** |
 | 001         | Vevő         | US-008      |                 |           |  75,00     | Főkönyv          | 999999---          |
 | 002         | Szállító           | 1001        |                 |  75,00    |            | Főkönyv          | 999999---          |
 

@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: WHSReplenishmentTemplates, WHSLocationLimit
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 5591af5fce4eb3fc901919b98f654faa5e160c54
-ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
+ms.openlocfilehash: 8e9ae16fea892d1d6b6a6b5d06137576623e7f5b
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "3652237"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016608"
 ---
 # <a name="replenishment-over-location-capacity"></a>Feltöltés a hely kapacitása alapján
 
@@ -177,7 +178,7 @@ Miután elvégezte az összes korábban leírt mintaadatok elérhetővé tétel�
 
 #### <a name="create-sales-order-2"></a>2. értékesítési rendelés létrehozása
 
-1. Az **Összes értékesítési rendelés**oldalon, a műveleti ablaktáblán kattintson az **Új** gombra az új értékesítési rendelés létrehozása párbeszédpanel megnyitásához.
+1. Az **Összes értékesítési rendelés** oldalon, a műveleti ablaktáblán kattintson az **Új** gombra az új értékesítési rendelés létrehozása párbeszédpanel megnyitásához.
 1. A párbeszédpanelen adja meg a következő értéket:
 
     - **Vevőkód** *US-001*
@@ -224,7 +225,7 @@ Miután elvégezte az összes korábban leírt mintaadatok elérhetővé tétel�
 #### <a name="view-work-details"></a>Munka részletes adatainak megtekintése
 
 1. Ugorjon a **Raktárkezelés \> Munka \> Munka részletei** pontra.
-1. Az **Áttekintés** szakaszban szűrje a **Raktár** oszlopot a *61*-es raktár kereséséhez.
+1. Az **Áttekintés** szakaszban szűrje a **Raktár** oszlopot a *61* -es raktár kereséséhez.
 1. Ekkor látnia kell, hogy a három igény értékesítési rendeléshez hét munkaazonosító jött létre.
 
     - A hét munkaazonosító közül háromnak van *Feltöltés* értékű **Munkarendelés típus** lehetősége, négynek pedig *Munkarendelés* értékű **Munkarendelés típus** értéke.
@@ -266,7 +267,7 @@ A raktárhely feltöltését az első két munkaazonosítónál fogja végrehajt
 
 #### <a name="replenishment"></a>Feltöltés
 
-1. Jelentkezzen be az *61*-es raktárban lévő felhasználóként a raktár alkalmazásba. (Írja be a felhasználói azonosítóhoz a *61*-et, a jelszóhoz pedig az *1*-et.)
+1. Jelentkezzen be az *61* -es raktárban lévő felhasználóként a raktár alkalmazásba. (Írja be a felhasználói azonosítóhoz a *61* -et, a jelszóhoz pedig az *1* -et.)
 1. Lépjen a **Készlet \> Feltöltés** lehetőségre.
 
     A program megkérdezi, hogy befejezi-e az első feltöltési munkát. Megjelenik a kiválasztható cikkszám, mennyiség, és hely.
@@ -286,7 +287,7 @@ A raktárhely feltöltését az első két munkaazonosítónál fogja végrehajt
 
 1. A második munkafeladathoz tartozó feltöltési munka befejezéséhez ismételje meg a fenti lépéseket. A mennyiség és a cél azonosítótábla különbözni fog az első munkafeladat mennyiségétől és a cél azonosítótáblától.
 
-A második feltöltési munka befejezése után a „Munka befejezve” üzenet jelenik meg. A mobileszköz arról is tájékoztatja, hogy nem érhető el a munka, még akkor is, ha a feltöltési munka továbbra is folyik. Ez a viselkedés akkor fordul elő, ha a feltöltési munka elérhetőségi állapota *Visszatartva*, és ezért **Zárolva** értékkel lesz megjelölve.
+A második feltöltési munka befejezése után a „Munka befejezve” üzenet jelenik meg. A mobileszköz arról is tájékoztatja, hogy nem érhető el a munka, még akkor is, ha a feltöltési munka továbbra is folyik. Ez a viselkedés akkor fordul elő, ha a feltöltési munka elérhetőségi állapota *Visszatartva* , és ezért **Zárolva** értékkel lesz megjelölve.
 
 A *Visszatartva* állapotot az váltja ki, hogy a munkához társított kitárolási hely helyprofil **Túlcsordulási mennyiség** értéke *0,65 PL*. A két korábbi feltöltési munkafeladat majdnem túllépte a hely *T0100* cikkének túlcsordulási korlátját. (A cikk mértékegység-átváltása *1 PL = 100 ea*.) Ennélfogva a hátralévő feltöltési munka túllépné a hely túlcsordulási korlátját.
 
@@ -296,7 +297,7 @@ Addig, amíg a raktárból elég készletet ki nem tárolnak ahhoz, hogy a mobil
 
 Mielőtt befejezhetné a hátralévő feltöltési munkafeladatot, a kitárolási helyen a készletek olyan szintre kell csökkennie, hogy a hátralévő feltöltési munka feloldhatóvá váljon. Más szóval a raktárban lévő aktuális készlet mennyiségének és a feltöltési mennyiségnek az összege nem haladhatja meg a **Túlcsordulási mennyiség** értékét. Ha ez az összeg kevesebb, mint a túlcsorduló mennyiség, akkor feloldódik a hátralévő feltöltési munka.
 
-1. Jelentkezzen be az *61*-es raktárban lévő felhasználóként a raktár alkalmazásba. (Írja be a felhasználói azonosítóhoz a *61*-et, a jelszóhoz pedig az *1*-et.)
+1. Jelentkezzen be az *61* -es raktárban lévő felhasználóként a raktár alkalmazásba. (Írja be a felhasználói azonosítóhoz a *61* -et, a jelszóhoz pedig az *1* -et.)
 1. Lépjen a **Kimenő \> Értékesítési kitárolás** lehetőségre.
 1. Adja meg az 1. értékesítési rendelés első munkaazonosítóját.
 
