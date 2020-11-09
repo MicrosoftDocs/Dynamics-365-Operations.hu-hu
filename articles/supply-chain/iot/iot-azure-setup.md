@@ -1,7 +1,7 @@
 ---
 title: A IoT Intelligencia Azure-erőforrásainak beállítása
 description: Ez a témakör azt mutatja be, hogyan lehet létrehozni és konfigurálni a Microsoft Azure-erőforrásokat, amelyekre az IoT Intelligencia alkalmazáshoz szükség van.
-author: ''
+author: robinarh
 manager: tfehr
 ms.date: 08/16/2019
 ms.topic: article
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-04-04
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: bbac1676d28c7285c19ed48f77426a37ce123a29
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 1277d2ab8bb1f2925874f7469250e164f6bde62d
+ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3982894"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4014912"
 ---
 # <a name="set-up-azure-resources-for-iot-intelligence"></a>A IoT Intelligencia Azure-erőforrásainak beállítása
 
@@ -39,11 +39,11 @@ Hajtsa végre az alábbi lépéseket egy IoT-központ, egy Redis-gyorsítótár 
 Ha ellenőrizni szeretné, hogy a Microsoft Dynamics ERP Microservices -szolgáltatások belső alkalmazás azonosítója a bérlőben található, kövesse az alábbi lépéseket.
 
 1. Jelentkezzen be az Azure portálon: <https://portal.azure.com>.
-2. Ugorjon ide: **Azure Active Directory** .
-3. Nyissa meg a **Vállalati alkalmazásokat** .
+2. Ugorjon ide: **Azure Active Directory**.
+3. Nyissa meg a **Vállalati alkalmazásokat**.
 4. Az **Alkalmazás típusa** mezőben válassza ki a **Microsoft-alkalmazások** lehetőséget.
 5. A keresőmezőbe írja be a **Microsoft Dynamics ERP Microservices** kifejezést.
-6. Ellenőrizze, hogy a **Microsoft Dynamics ERP Microservices** szerepel-e a listán. Más alkalmazások neve hasonló lehet. Ezért győződjön meg arról, hogy megtalálta a megfelelő alkalmazást. Az alkalmazás azonosítója: **0cdb527f-a8d1-4bf8-9436-b352c68682b2** .
+6. Ellenőrizze, hogy a **Microsoft Dynamics ERP Microservices** szerepel-e a listán. Más alkalmazások neve hasonló lehet. Ezért győződjön meg arról, hogy megtalálta a megfelelő alkalmazást. Az alkalmazás azonosítója: **0cdb527f-a8d1-4bf8-9436-b352c68682b2**.
 
     Ha az alkalmazás nem szerepel a listában, akkor azt fel kell venni a bérlőhöz:
 

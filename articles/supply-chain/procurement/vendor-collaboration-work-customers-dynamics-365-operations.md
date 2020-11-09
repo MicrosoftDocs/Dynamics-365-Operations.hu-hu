@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ConsignmentProductReceiptLines, ConsignmentVendorPortalOnHand, PurchVendorPortalConfirmedOrders, PurchVendorPortalOriginalOrder, PurchVendorPortalResponsesHistoryList, PurchVendorPortalResponsesPart
+ms.search.form: ConsignmentProductReceiptLines, ConsignmentVendorPortalOnHand, PurchVendorPortalConfirmedOrders, PurchVendorPortalOriginalOrder, PurchVendorPortalResponsesHistoryList, PurchVendorPortalResponsesPart, VendVendorProfileCard, PurchVendorPortalAllResponse, PurchVendorPortalPendingResponsesPart, PurchVendorPortalResponses, PurchVendorPortalConfirmedOpenOrdersPart
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 240fdfb3519e1c4526c46fa3d5e3fbaa8e5a467e
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 540f4f4e4a047b5bc33c9be387c8940175f5f919
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207347"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018155"
 ---
 # <a name="vendor-collaboration-with-customers"></a>Szállítói együttműködés a vevőkkel
 
@@ -59,7 +59,7 @@ A következő oldalakat használhatja a beszerzési rendelések kezeléséhez:
 
 A vevő által küldött beszerzési rendelések a **Beszerzési rendelések visszaigazolási** munkaterületén és a **Beszerzési rendelések véleményezésre** lapon jelennek meg. A beszerzési rendelés megnyitása után elfogadhatja, elutasíthatja vagy módosításokkal elfogadhatja azt. A beszerzési rendelés fejlécében vagy az egyes sorokhoz csatolva mellékletek lehetnek. Lehetősége van arra is, hogy adatokat csatoljon a válaszában a beszerzési rendelés fejlécében vagy az egyes sorokban. Például előfordulhat, hogy az egyik sorhoz helyettesítő cikket javasol.
 
-A beszerzési rendelést PDF-fájlként megtekintheti nyomtatási előnézetben és ki is nyomtathatja az **Előnézet/nyomtatás** lehetőség használatával. A **Dimenziók megjelenítése** műveletet is használhatja a következő dimenzióoszlopok elrejtésére vagy megjelenítésére **Telephely**, **Raktár**, **Szín**, **Méret**, **Stílus**, és **Konfiguráció**. 
+A beszerzési rendelést PDF-fájlként megtekintheti nyomtatási előnézetben és ki is nyomtathatja az **Előnézet/nyomtatás** lehetőség használatával. A **Dimenziók megjelenítése** műveletet is használhatja a következő dimenzióoszlopok elrejtésére vagy megjelenítésére **Telephely** , **Raktár** , **Szín** , **Méret** , **Stílus** , és **Konfiguráció**. 
 
 Ha az **Elfogadás módosításokkal** lehetőséget használja, akkor elfogadhatja vagy elutasíthatja az egyes sorokat. A sorokban az alábbi módosításokat lehet még végrehajtani:
 
@@ -89,11 +89,11 @@ A munkaterület ezen kívül az összes megnyert és elvesztett ajánlatkérést
 
 Nyissa meg a **szállítói ajánlattételek** munkaterületet a következő adatok eléréséhez:
 
-- Válassza ki ezt: **Új eladásiár-meghívások**, ha meg szeretné tekinteni azokat az ajánlatkéréseket, amelyek megválaszolására az ön cégét meghívták. Itt megtekinthet egy ajánlatkérést és megkezdheti az ajánlattételi folyamatot. Megtekintheti azokat a módosított ajánlatkéréseket is, amelyekhez új ajánlatot kell benyújtani.
-- Válassza ki ezt: **Visszaküldött ajánlatok**, ha meg szeretné tekinteni azokat az ajánlattételeket, amiket a vevő visszaküldött önnek, hogy ön több információt nyújthasson, vagy módosíthassa az ajánlatot.
-- Válassza ki ezt: **Folyamatban lévő ajánlatok**, ha meg szeretné tekinteni azokat az ajánlattételeket, amiket ön vagy egy, az ön cégét képviselő kapcsolattartó kezel, de még nem küldte el.
-- Válassza ki ezt: **Megítélt ajánlatok**, ha meg szeretné tekinteni, hogy mikor került legalább egy sortétel a vevőhöz.
-- Válassza ki ezt: **Elvesztett ajánlatok**, ha meg szeretné tekinteni azokat az ajánlatokat, ahol mindegyik sor elutasításra került.
+- Válassza ki ezt: **Új eladásiár-meghívások** , ha meg szeretné tekinteni azokat az ajánlatkéréseket, amelyek megválaszolására az ön cégét meghívták. Itt megtekinthet egy ajánlatkérést és megkezdheti az ajánlattételi folyamatot. Megtekintheti azokat a módosított ajánlatkéréseket is, amelyekhez új ajánlatot kell benyújtani.
+- Válassza ki ezt: **Visszaküldött ajánlatok** , ha meg szeretné tekinteni azokat az ajánlattételeket, amiket a vevő visszaküldött önnek, hogy ön több információt nyújthasson, vagy módosíthassa az ajánlatot.
+- Válassza ki ezt: **Folyamatban lévő ajánlatok** , ha meg szeretné tekinteni azokat az ajánlattételeket, amiket ön vagy egy, az ön cégét képviselő kapcsolattartó kezel, de még nem küldte el.
+- Válassza ki ezt: **Megítélt ajánlatok** , ha meg szeretné tekinteni, hogy mikor került legalább egy sortétel a vevőhöz.
+- Válassza ki ezt: **Elvesztett ajánlatok** , ha meg szeretné tekinteni azokat az ajánlatokat, ahol mindegyik sor elutasításra került.
 - Válassza ki az **Ajánlatkérések** hivatkozást, ha meg szeretné tekinteni az összes szállítói ajánlatkérés-meghívás listáját és az összes elküldött ajánlatot. Az **Ajánlatkérések** oldal felsorolja az összes ajánlatkérést, amelyben a szállító részt vett. Kereshet állapot szerint.
 - Válassza ki az **Elutasított ajánlatok** hivatkozást, ha meg szeretné tekinteni az összes olyan ajánlatkérés listáját, ahol a szállító kapcsolattartója nem tett ajánlatot.
 
@@ -126,11 +126,11 @@ Az állami szektorban dolgozó emberek megtekinthetik azokat a nyitott és lejá
 
     Egyes ajánlatkérések engedélyezik az alternatív ajánlatokat. Csak **Kategória** típusú vonalak esetén adhat meg alternatív ajánlatokat, mert konkrét elemeket nem adhat hozzá alternatívaként. 
 
-- Válassza ki ezt: **Ajánlatkérés melléklete** vagy ezt: **Ajánlatkérési sorok melléklete** a vevő által az ajánlatkéréshez csatolt mellékletek megnyitásához. Válassza ki ezt: **Ajánlat mellékletei** vagy ezt: **Ajánlat sorainak mellékletei**, ha mellékleteket kíván feltölteni az ajánlattal együtt
+- Válassza ki ezt: **Ajánlatkérés melléklete** vagy ezt: **Ajánlatkérési sorok melléklete** a vevő által az ajánlatkéréshez csatolt mellékletek megnyitásához. Válassza ki ezt: **Ajánlat mellékletei** vagy ezt: **Ajánlat sorainak mellékletei** , ha mellékleteket kíván feltölteni az ajánlattal együtt
 
     Előfordulhat, hogy meg kell válaszolnia egy kérdőívet, mielőtt engedélyt nyer ajánlatok beküldésére.
 
-- Válassza ki ezt: **Elutasítás**, ha nem szeretne ajánlat tenni. Miután kijelölte ezt: **Elutasítás**, nem vonhatja vissza a műveletet, és nem adhat meg ajánlatot.
+- Válassza ki ezt: **Elutasítás** , ha nem szeretne ajánlat tenni. Miután kijelölte ezt: **Elutasítás** , nem vonhatja vissza a műveletet, és nem adhat meg ajánlatot.
 
 Ha az Ajánlatkérés módosul, akkor meg kell adnia egy új ajánlatot. További információkat a módosításról az Ajánlatkérés oldal **Módosítások** lapján találhat. A módosított ajánlatkérések az **Új eladásiár-meghívások** oldalon jelennek meg.
 

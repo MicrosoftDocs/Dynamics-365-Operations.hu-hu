@@ -18,17 +18,16 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: e7f58b8a449e056c4718ac6db30dcd0f0623d2a4
-ms.sourcegitcommit: 6e0d6d291d4881b16a677373f712a235e129b632
+ms.openlocfilehash: 7b2a3aae43d42060c7fcd9e1ea3db814fc5d8f22
+ms.sourcegitcommit: d6250ee5ced43be39e789324a895fd1c07178935
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "3971472"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "4039846"
 ---
 # <a name="get-started-with-the-electronic-invoicing-add-on"></a>Első lépések az Elektronikus számlázásbővítménnyel
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 Ez a témakör olyan információkat tartalmaz, amelyek bemutatják az Elektronikus számlázásbővítménnyel kapcsolatos első lépéseket. Első lépésként végigvezeti a Microsoft Dynamics Lifecycle Services (LCS), Regulatory Configuration Services (RCS), és Dynamics 365 Finance konfigurációs lépésein. Ezt követően leírja a dokumentumok szolgáltatáson keresztül történő elküldésének folyamatát a Dynamics 365 Finance vagy Dynamics 365 Supply Chain Management használatával. Azt is megtudhatja, hogyan értelmezze a beküldési naplókat.
 
@@ -90,7 +89,7 @@ A következő ábra bemutatja azt az öt fő lépést, amelyet ebben a témakör
 4. Válassza ki az LCS-telepítési projektet. A projektnek a kiválasztás előtt működőképesnek kell lennie.
 5. A **Környezetbővítmények** gyorslapon válassza az **Új bővítmény telepítése** lehetőséget.
 6. Válassza az **Üzleti dokumentum küldése** lehetőséget.
-7. A **Bővítmény beállítása** párbeszédpanel **AAD-alkalmazásazonosító** mezőjébe írja ezt: **091c98b0-a1c9-4b02-b62c-7753395ccabe** . Ez egy rögzített érték.
+7. A **Bővítmény beállítása** párbeszédpanel **AAD-alkalmazásazonosító** mezőjébe írja ezt: **091c98b0-a1c9-4b02-b62c-7753395ccabe**. Ez egy rögzített érték.
 8. Az **AAD-bérlőazonosító** mezőbe írja be az Azure előfizetési fiókja azonosítóját.
 
     ![A bővítmény párbeszédpanelének beállítása az LCS-ben](media/e-invoicing-services-get-started-lcs-addin-setup.png)
@@ -137,7 +136,7 @@ Az RCS beállítása során a következő feladatokat kell elvégeznie:
 1. A **Globalizációs funkciók** munkaterületen, a **Kapcsolódó beállítások** szakaszban, válassza az **Elektronikus jelentéskészítés paraméterei** hivatkozást.
 2. Válassza ki a **Kattintson ide a Lifecycle Services szolgáltatáshoz való kapcsolódáshoz** lehetőséget. Ha nem szeretne az LCS-hez csatlakozni, válassza a **Mégsem** lehetőséget.
 3. Az **e-számlázási szolgáltatások** fülön, a **Szolgáltatási végpont URI** mezőben írja be a rendelkezésre álló földrajzi területeknek megfelelő értéket: `https://businessdocumentsubmission.us.operations365.dynamics.com/` vagy `https://businessdocumentsubmission.eu.operations365.dynamics.com/`.
-4. Az **Alkalmazásazonosító** mezőben erősítse meg, hogy az azonosító jelenik meg **0cdb527f-a8d1-4bf8-9436-b352c68682b2** . Ez egy rögzített érték.
+4. Az **Alkalmazásazonosító** mezőben erősítse meg, hogy az azonosító jelenik meg **0cdb527f-a8d1-4bf8-9436-b352c68682b2**. Ez egy rögzített érték.
 5. Az **LCS-környezet azonosítója** mezőbe írja be az LCS előfizetési fiókja azonosítóját.
 
 ![Elektronikus számlázásbővítény paramétereinek megadása](media/e-invoicing-services-get-started-enter-e-invoicing-parameters.png)
@@ -235,7 +234,7 @@ Ha az elküldött számlán szereplő dokumentumnak frissítésre van szüksége
 4. A **Válaszüzenet-modell** , a **Válaszüzenet importálási formátuma** , a **Válaszüzenet-modell leképezése a célhoz** , és a **Fájl tartalmának importálási formátuma** lehetőségek importálása.
 5. Menjen a **Szervezeti adminisztráció \> Beállítás \> Elektronikus dokumentumparaméterek** lehetőségre.
 6. Az **Elektronikus dokumentum** lap **Hozzáadás** elemét kiválasztva adja meg annak a táblának a nevét, amely az adott ország-/régióspecifikus számlához kapcsolódik. Az azzal kapcsolatos tudnivalókat, hogy melyik táblaneveket válassza ki, lásd az „Első lépések az Elektronikus számlázásbővítménnyel” című témakört.
-7. A választípusok konfigurálásához válassza ki a kívánt **Választípusokat** . Az azzal kapcsolatos tudnivalókat, hogy melyik táblaneveket válassza ki, lásd az „Első lépések az Elektronikus számlázásbővítménnyel” című témakört.
+7. A választípusok konfigurálásához válassza ki a kívánt **Választípusokat**. Az azzal kapcsolatos tudnivalókat, hogy melyik táblaneveket válassza ki, lásd az „Első lépések az Elektronikus számlázásbővítménnyel” című témakört.
 
 ![Választípusok beállítása](media/e-invoicing-services-get-started-set-up-response-types.png)
 
@@ -293,7 +292,7 @@ A rendszeres beküldési folyamat során a program kétirányú kommunikációt 
 4. Kattintson az **OK** gombra a kiválasztott üzleti dokumentumok Elektronikus számlázásbővítményhez való beküldéséhez.
 
     > [!NOTE]
-    > A dokumentum szolgáltatáson keresztüli beküldésének első kísérlete során a program rákérdez, hogy megerősíti-e a kapcsolatot az Elektronikus számlázásbővítménnyel. Válassza a **Kattintson az Elektronikus dokumentumbeküldési szolgáltatáshoz való csatlakozáshoz** .
+    > A dokumentum szolgáltatáson keresztüli beküldésének első kísérlete során a program rákérdez, hogy megerősíti-e a kapcsolatot az Elektronikus számlázásbővítménnyel. Válassza a **Kattintson az Elektronikus dokumentumbeküldési szolgáltatáshoz való csatlakozáshoz**.
     >
     > ![Csatlakozzon az Elektronikus dokumentumbeküldési szolgáltatás üzenetablakához](media/e-invoicing-services-get-started-dialog-form-connect-e-Invoicing-services.png)
     >

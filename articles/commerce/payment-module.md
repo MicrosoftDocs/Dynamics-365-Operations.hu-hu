@@ -3,7 +3,7 @@ title: Fizetési modul
 description: Ez a témakör ismerteti a fizetési modult, és bemutatja, hogyan konfigurálhatjuk őket a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: anupamar-ms
 manager: annbe
-ms.date: 08/05/2020
+ms.date: 10/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 4267391edaf70ec645933b2c5c08a72735f52894
-ms.sourcegitcommit: 97ceb24f191161ca601e0889a539df665834ac3b
+ms.openlocfilehash: 894ac35973927c193d6e9c54e326daefb8a3f4a5
+ms.sourcegitcommit: 765056b5dc1d0a8c27e56ff2cbd310ad3349ff09
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3818326"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "4055381"
 ---
 # <a name="payment-module"></a>Fizetési modul
 
@@ -41,6 +41,9 @@ A fizetési modul lehetővé teszi a bejelentkezett vásárlóknak menteni a fiz
 A fizetési modul fedez minden egyes rendelési változtatást, melyek nem kerülnek fedezésre hűségpontok által vagy ajándékutalványokkal. Ha a rendelés összegét teljes mértékben fedezik a hűségpontok és/vagy ajándékutalványok, a fizetési modul elrejtésre kerül, és a vásárló enélkül is leadhatja rendelését.
 
 Az Adyen fizetési összekötő támogatja az erős vevőhitelesítést (SCA) is. Az Európai Unió (EU) Pénzforgalmi szolgáltatási irányelvek 2.0 (PSD2.0) megköveteli, hogy az online vásárlók hitelesítve legyenek az online vásárlási tapasztalataikon kívül is, amikor egy elektronikus fizetési módot használnak. A fizetési folyamat során a vásárlók átirányításra kerülnek a saját bankolási oldalukra. Ezután, a hitelesítés után a program visszairányítja őket a Commerce fizetési folyamathoz. Ezalatt az átirányítás alatt az információ, amit egy vásárló megadott a fizetési folyamatban (például szállítási cím, szállítási lehetőségek, ajándékutalvány információ, hűségadatok) láthatók maradnak. Mielőtt bekapcsolhatná ezt a funkciót, a fizetési összekötő konfigurálva kell legyen az SCA-hoz a Commerce headquartersben. További tudnivalókért lásd: [Erős vevőhitelesítés az Adyen használatával](adyen_redirect.md).
+
+> [!NOTE]
+> Az Adyen payment összekötő esetében a kifizetési modul iframe modulja csak akkor jeleníthető meg, ha hozzáadja az Adyen URL-címet a webhely engedélyezési listájához. A lépés végrehajtásához adja hozzá az **\*.adyen.com** címet az oldala tartalmi biztonsági házirendjének **child-src** , **connect-src** , **img-src** , **script-src** és **style-src** direktíváihoz. További információ: [Tartalomra vonatkozó biztonsági irányelv kezelése](manage-csp.md). 
 
 A következő ábrán egy példa látható az ajándékutalvány-, a hűség- és a fizetési modulokra a fizetési oldalon.
 

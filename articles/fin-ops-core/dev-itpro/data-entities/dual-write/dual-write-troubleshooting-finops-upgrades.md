@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 53df00de82b101aa02160d865a9c3bbebcfcae15
-ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
+ms.openlocfilehash: 07d6bd0bab796d7839daa2bad91f7e88c2e881b5
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3275464"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997918"
 ---
 # <a name="troubleshoot-issues-related-to-upgrades-of-finance-and-operations-apps"></a>A(z) Finance and Operations alkalmazások frissítésével kapcsolatos problémák elhárítása
 
@@ -67,7 +66,7 @@ Egy hiba javításához kövesse az alábbi lépéseket.
 
 A **Kettős írás** oldalon a következő példához hasonló hibaüzenet jelenhet meg:
 
-*Hiányzó forrásmező \<mező neve\> a sémában.*
+*Hiányzó forrásmező mező (\<field name\>) a sémában.*
 
 ![Példa a hiányzó forrásmező hibaüzenetére](media/error_missing_field.png)
 

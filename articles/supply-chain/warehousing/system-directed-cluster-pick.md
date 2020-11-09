@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: WHSWorkCluster, WHSClusterProfile
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations, Supply Chain Management
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-12-31
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: b7ac243a04309a41ab0e06c1b2d4843ae8ac0e22
-ms.sourcegitcommit: 7c32e4739c07d825a8562564ea9e78922db2ce38
+ms.openlocfilehash: 0838405bcb5ee0d8e582093fbbd69553228cb2b6
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "3406381"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016033"
 ---
 # <a name="system-directed-cluster-picking"></a>Rendszer által irányított fürtkitárolás
 
@@ -102,7 +102,7 @@ Ha új mobileszköz-menüelemet szeretne létrehozni a rendszer által irányít
     - **Munkaosztály azonosítója** – Értékesítés
     - **Munkarendelés típusa** – Értékesítési rendelések
 
-1. A **mobileszköz menü cikkek** műveleti paneljén válassza ki a **rendszer által irányított munkaszekvencia-lekérdezéseket**, majd kövesse az alábbi lépéseket az új rendszer által irányított munkaszekvencia-lekérdezés megadásához:
+1. A **mobileszköz menü cikkek** műveleti paneljén válassza ki a **rendszer által irányított munkaszekvencia-lekérdezéseket** , majd kövesse az alábbi lépéseket az új rendszer által irányított munkaszekvencia-lekérdezés megadásához:
     - A műveleti ablaktáblán válassza ki az **Új** elemet.
     - **Sorszám** – 1
     - **Leírás** – Munkaprioritás – Munka azonosítója
@@ -153,7 +153,7 @@ A rendszer által irányított fürtkitárolás beállítása előtt alkalmas ki
         - **Mennyiség** – 3
     - Készlet foglalása az imént létrehozott sorokhoz.
         - **1. sor** kijelölése.
-        - Az **Értékesítési rendelés sorai** műveleti panelen válassza a **Készlet**, majd a **Foglalás** elemet a listáról.
+        - Az **Értékesítési rendelés sorai** műveleti panelen válassza a **Készlet** , majd a **Foglalás** elemet a listáról.
         - A **Foglalás** képernyőn válassza ki a **Készlet foglalása** elemet a készlet lefoglalásához.
         - Zárja be a **Foglalás** képernyőt, amikor a foglalás kész.
         - Hajtsa végre ezeket a lépéseket a **2. sorra** vonatkozó készlet foglalásához.
@@ -170,14 +170,14 @@ A rendszer által irányított fürtkitárolás beállítása előtt alkalmas ki
         - **Mennyiség** – 2
     - Készlet foglalása az imént létrehozott két sorhoz.
         - **1. sor** kijelölése.
-        - Az **Értékesítési rendelés sorai** műveleti panelen válassza a **Készlet**, majd a **Foglalás** elemet a listáról.
+        - Az **Értékesítési rendelés sorai** műveleti panelen válassza a **Készlet** , majd a **Foglalás** elemet a listáról.
         - A **Foglalás** képernyőn válassza ki a **Készlet foglalása** elemet a készlet lefoglalásához.
         - Zárja be a **Foglalás** képernyőt, amikor a foglalás kész.
         - Hajtsa végre ezeket a lépéseket a **2. sorra** vonatkozó készlet foglalásához.
     - Zárja be az értékesítési rendelést, és térjen vissza az **Összes értékesítési rendelés** listaoldalra.
 1. Keresse meg a most létrehozott két értékesítési rendelést (előfordulhat, hogy frissítenie kell a lapot). A táblában jelölje be mindkét értékesítési rendelést a szakasz jelölőnégyzetének használatával.
     - A **Minden értékesítési rendelés** műveleti paneljén válassza a **Raktár** fület.
-    - A **Műveletek** csoportban válassza a **Kiadás a raktárba lehetőséget**, ha mindkét értékesítési rendelést fel szeretné adni a raktárba.
+    - A **Műveletek** csoportban válassza a **Kiadás a raktárba lehetőséget** , ha mindkét értékesítési rendelést fel szeretné adni a raktárba.
 1. Amikor a kiadás a raktárba folyamatba kész, a program tájékoztató üzenetet jelenít meg.
     - A program minden értékesítési rendeléshez létrehoz szállítmányt.
     - A program hullámot hoz létre, és mindkét szállítmányt a hullámhoz rendeli hozzá. Jegyezze fel a **hullámazonosítót**.
@@ -190,7 +190,7 @@ A rendszer által irányított fürtkitárolás beállítása előtt alkalmas ki
 
 ### <a name="run-the-mobile-device-flow"></a>Futtassa a mobileszközön a folyamatot
 
-1. Jelentkezzen be a **62**-es raktárban lévő felhasználó számára a mobileszközön.
+1. Jelentkezzen be a **62** -es raktárban lévő felhasználó számára a mobileszközön.
 1. Válassza a **Főmenü** **Kimenő** elemét.
 1. Válassza ki a **Kimenő** menüben az **SD-fürt** menüelemet a kitárolás kezdeményezéséhez.
     - Létrejön egy fürt, és a két korábban létrehozott munkaazonosító hozzá van csatolva. Ha kettőnél több munkaazonosítót hozott létre, csak az első kettő kerül hozzáadásra a fürthöz. Figyelje meg, hogy a munkaazonosítók növekvő sorrendben adódnak hozzá a fürthöz, ahogy a lekérdezési beállításnál megadta.

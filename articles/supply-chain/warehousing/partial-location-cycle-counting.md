@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSCycleCountPlan, WHSWorkLineCycleCount, WHSWorkTemplateLineGroup, WHSWorkTemplateTable
+ms.search.form: WHSCycleCountPlan, WHSWorkLineCycleCount, WHSWorkTemplateLineGroup, WHSWorkTemplateTable, WHSRFMenuItemCycleCount, WHSCycleCountPlanListPage
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -19,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 46365f618b13c2bcaef9a45d2a835fda27019857
-ms.sourcegitcommit: 5472005274f2f94fba82dda90de128f39d8b8390
+ms.openlocfilehash: 5d69b1e9444785058a2b3e62b9a76cb6e70abf03
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "3760007"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017598"
 ---
 # <a name="partial-location-cycle-counting"></a>Helyek részleges ciklikus leltározása
 
@@ -51,7 +51,7 @@ Részleges ciklikus leltározási folyamat esetében az **Utolsó ciklikus lelt�
 Ebben a példában csak az A0001 cikkszámot kell leltározni a 61-es raktárban.
 
 1.  A ciklikus leltározáshoz új munkasablon jön létre. A **Munkasorszünetek** beállítás szolgál a leltári munkasorok csoportosítására cikkszám szerint. Emiatt a létrehozott ciklikus leltározási munka sorokkal fog rendelkezni cikkszámonként. A sorokat termékváltozatszám szerint is lehet csoportosítani.
-2.  Létrejön egy új ciklikus leltári terv, amely az újonnan létrehozott munkasablonra hivatkozik. A ciklikus leltározási terv minden helyet tartalmaz a 61-es raktárban (**Helyek kiválasztása** lekérdezés), ahol készleten van az A0001-es cikkszám. A konkrét termékek körét a **Ciklikus leltározási terv termékkiválasztások** szakasz határozza meg.
+2.  Létrejön egy új ciklikus leltári terv, amely az újonnan létrehozott munkasablonra hivatkozik. A ciklikus leltározási terv minden helyet tartalmaz a 61-es raktárban ( **Helyek kiválasztása** lekérdezés), ahol készleten van az A0001-es cikkszám. A konkrét termékek körét a **Ciklikus leltározási terv termékkiválasztások** szakasz határozza meg.
 3.  Ciklikus leltározási tervekhez úgy lehet termékeket kiválasztani, hogy az **Üres helyek** mező beállításának az **Üresek nélkül** lehetőséget adja meg. A ciklikus leltározási terv feldolgozásakor létrejön a részleges ciklikus leltározási munka az A0001 cikkszámhoz. A tényleges leltározási folyamat az irányított ciklikus leltározás mobileszköz-menüelemének használatával hajtható végre.
 
 

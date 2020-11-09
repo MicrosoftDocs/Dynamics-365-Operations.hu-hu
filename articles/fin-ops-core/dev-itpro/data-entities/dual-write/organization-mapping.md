@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,18 +18,16 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: fc5db8d04a2860df0c917816e2910c6fbda941ff
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: f502519ba419cb8fa322eb1d22f06d2b805f5f05
+ms.sourcegitcommit: afc43699c0edc4ff2be310cb37add2ab586b64c0
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3173154"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "4000734"
 ---
 # <a name="organization-hierarchy-in-common-data-service"></a>Szervezeti hierarchia a Common Data Service szolgáltatásban
 
 [!include [banner](../../includes/banner.md)]
-
-
 
 Mivel a Dynamics 365 Finance egy pénzügyi rendszer a *szervezet* egy alapvető koncepciója, és a rendszerbeállítás a szervezeti hierarchia konfigurációjával kezdődik. A vállalati pénzügyei nyomon követhetők a szervezet szintjén, illetve a szervezeti hierarchia bármely szintjén.
 
@@ -41,8 +38,6 @@ Bár a Common Data Service nem rendelkezik a szervezeti hierarchia koncepciójá
 Egy olyan üzleti ökoszisztéma, amely a Finance and Operations alkalmazásokból és Common Data Service alkalmazásokból áll továbbra is rendelkezik szervezeti hierarchiával. Ez a szervezeti hierarchia a Finance and Operations alkalmazásokra épül, de látható a Common Data Service szolgáltatásban is tájékoztatási és bővítési célból. A következő ábrán a szervezeti hierarchiát tartalmazó adatok láthatók, amelyek megjelennek a Common Data Service szolgáltatásban egyirányú adatáramlásként a Finance and Operations alkalmazások és a Common Data Service között.
 
 ![Architektúra képe](media/dual-write-data-flow.png)
-
-## <a name="templates"></a>Sablonok
 
 A szervezeti hierarchiához tartozó entitásleképezések a Finance and Operations alkalmazások és a Common Data Service szolgáltatás közötti egyirányú adatáramlást szolgálják.
 
@@ -55,10 +50,9 @@ Finance and Operations-alkalmazásoknak | Egyéb Dynamics 365 alkalmazások | Le
 Szervezeti hierarchiához kapcsolódó célok | msdyn_internalorganizationhierarchypurposes | Ez a sablon a Szervezeti hierarchia célja entitás egyirányú szinkronizálását teszi lehetővé.
 Szervezeti hierarchia típusa | msdyn_internalorganizationhierarchytypes | Ez a sablon a Szervezeti hierarchia típusa entitás egyirányú szinkronizálását teszi lehetővé.
 Szervezeti hierarchia – közzétett | msdyn_internalorganizationhierarchies | Ez a sablon a Szervezeti hierarchia közzétéve entitás egyirányú szinkronizálását teszi lehetővé.
-Üzemi egység | msdyn_internalorganizations | 
-Jogi személyek | msdyn_internalorganizations | 
+Üzemi egység | msdyn_internalorganizations |
+Jogi személyek | msdyn_internalorganizations |
 Jogi személyek | cdm_companies | A jogi személy (vállalat) adatainak kétirányú szinkronizálását teszi lehetővé.
-
 
 [!include [banner](../../includes/dual-write-symbols.md)]
 
@@ -77,4 +71,3 @@ A Common Data Service belső szervezeti adati két entitásból származnak: **�
 [!include [Legal entities](includes/LegalEntities-msdyn-internalorganizations.md)]
 
 [!include [Legal entities](includes/LegalEntities-Companies.md)]
-

@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: WHSReplenishmentTemplates, WHSLocDirHint, WHSLocDirTable
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 7e9fdf0a546bf449f249eacdded1f4b4d1b4d1af
-ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
+ms.openlocfilehash: e13b5fd895fca7f8fe77809348d63ed8867dea9e
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "3530604"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017322"
 ---
 # <a name="zone-threshold-replenishment"></a>Feltöltés a zóna küszöbértéke alapján
 
@@ -101,7 +102,7 @@ Ez a példa azt mutatja be, hogyan kell előkészíteni egy feltöltési sablont
     - **Leírás:** Adja meg a _Ktárolási zóna feltöltése_ értéket.
     - **Feltöltési egység:** Válassza az _ea_ elemet.
     - **Kérés típusa:** Hagyja üresen ezt a mezőt.
-    - **Utasításkód**: Ez a mező hozzákapcsolja a helyutasításokat a feltöltési sablonhoz. Válassza ki a korábban létrehozott bemutatóadat utasításkódot (_Zóne felt_).
+    - **Utasításkód** : Ez a mező hozzákapcsolja a helyutasításokat a feltöltési sablonhoz. Válassza ki a korábban létrehozott bemutatóadat utasításkódot ( _Zóne felt_ ).
     - **Munkasablon:** Hagyja üresen ezt a mezőt.
     - **Minimális mennyiség:** Ez a mező azt a mennyiséget adja meg, amelynél a feltöltés aktiválódik. Adja meg az _50_ értéket.
     - **Maximális mennyiség:** Ez a mező azt a maximális mennyiséget állítja be, amennyi egy adott cikkből egy zónában jelen lehet. A létrejövő feltöltési munka növeli a készletet erre a mennyiségre. Adja meg a _150_ értéket.
@@ -274,8 +275,8 @@ Miután kiválasztotta az **USMF** jogi személyt, vegye fel a szükséges tová
 
 Kövesse az alábbi lépéseket, és győződjön meg arról, hogy a rendszer elegendő készletet tartalmaz a mintaeset támogatására.
 
-1. Győződjön meg róla, hogy az *A0001* cikk esetében feltöltési sablonban megadott kitárolási zóna (*EMELET*) két különböző helyén is van aktuális készlet. A teljes készletnek azonban kisebbnek kell lennie, mint a feltöltési sablonban megadott kötelező minimális mennyiség (*50*). Ily módon szimulálhatja, hogy hogyan történik a számítás az egész zónában, nem csak egy helyen. **A raktári folyamatokkal a szükséges módon módosíthatja a készletet.**
-1. Győződjön meg róla, hogy elegendő készlet van az *A0001* cikkből az ömlesztett tárolóhelyen, amely a zóna kitárolási helyutasításában meg van adva, ahonnan a feltöltési munkának ki kell tárolnia a cikkeket az *ÖMLESZTETT* zónaazonosítóból. A teljes készletnek azonban többnek kell lennie, mint a feltöltési sablonban megadott kötelező maximális mennyiség (*150*).
+1. Győződjön meg róla, hogy az *A0001* cikk esetében feltöltési sablonban megadott kitárolási zóna ( *EMELET* ) két különböző helyén is van aktuális készlet. A teljes készletnek azonban kisebbnek kell lennie, mint a feltöltési sablonban megadott kötelező minimális mennyiség ( *50* ). Ily módon szimulálhatja, hogy hogyan történik a számítás az egész zónában, nem csak egy helyen. **A raktári folyamatokkal a szükséges módon módosíthatja a készletet.**
+1. Győződjön meg róla, hogy elegendő készlet van az *A0001* cikkből az ömlesztett tárolóhelyen, amely a zóna kitárolási helyutasításában meg van adva, ahonnan a feltöltési munkának ki kell tárolnia a cikkeket az *ÖMLESZTETT* zónaazonosítóból. A teljes készletnek azonban többnek kell lennie, mint a feltöltési sablonban megadott kötelező maximális mennyiség ( *150* ).
 1. Nem kötelező, de javasolt: Hajtsa végre a következő lépéseket egy készlethelyesbítési napló létrehozásához:
 
     1. Lépjen a **Készletgazdálkodás \> Naplóbejegyzések \> Cikkek \> Készlethelyesbítés** lehetőségre.

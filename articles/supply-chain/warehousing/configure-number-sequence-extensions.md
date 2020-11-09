@@ -8,7 +8,7 @@ ms.topic: configure-number-sequence-extensions
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSNumberSequenceExtension
+ms.search.form: WHSNumberSequenceExt
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 2512fc9b530530a9f82995a9eefcd59bbd518d96
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: cee5047a8c80aa850d9dd1bb872188a822ba8328
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3975392"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016125"
 ---
 # <a name="configure-number-sequences-for-warehouse-flows"></a>Számsorozatok konfigurálása raktári folyamatokhoz
 
@@ -88,7 +88,7 @@ A számsorozatok létrehozásához és szerkesztéséhez hajtsa végre az alább
     | Számsorozat | Az **érték** mezőbe írjon be egy számjelet ( *\#* ) az egyes karakterekhez, amelyeket a létrehozott sorrendben kell megjeleníteni. A számsorozat maga hosszabb számokat is létrehozhat, de csak a leginkább jobb oldali karakterek jelennek meg. A **Hossz** mezőt a program automatikusan frissíti az **érték** mezőben megadott számjelek számára.<p>Ha meg szeretne felelni az SSCC-18 számokra vonatkozó GS1-követelményeket, győződjön meg arról, hogy a szegmens hossza 16 mínusz a GS1-előtag hossza.</p> |
     | GS1-előtag | Ez a szegmens típus hozzáadja a **raktárkezelési paraméterek** lap **GS1 Company előtag** mezőjében megadott értéket. Az **Érték** mező a **Raktárkezelési paraméterek** lapon megadott értéket jeleníti meg , a **Hossz** mező pedig az érték karaktereinek számát. Mind az **Érték** mező, mind a **Hossz** mező írásvédett. |
     | Alkalmazásazonosító | Az **érték** mezőbe írja be az alkalmazás azonosítóját, amelyet a megfelelő GS1-irányelv határoz meg az ilyen típusú számsorozathoz. Írja be például a *00* értéket az SSCC esetén vagy a *420* értéket a BOL esetében. A **Hossz** mezőt a program automatikusan frissíti az **érték** mezőben megadott azonosító hosszára. |
-    | Csomagolási típus | Az egyértelműen azonosítható cikkek esetében ez a szegmenstípus mezőértéket ad hozzá a megfelelő egységszekvencia-csoportból (az **Egységszekvencia-csoportok** lapról). (Ez a viselkedés megfelel az azonosítótábla-azonosítók meglévő logikájának.) A több raktározási egységet (SKU) tartalmazó azonosítótábla esetében ez a szegmenstípus alapértelmezés szerint *0* (nulla) értéked ad hozzá. Ehhez a szegmenstípushoz az **Érték** mező értéke mindig *P* , a **Hossz** mező értéke pedig mindig *1* .|
-    | Ellenőrző számjegy | Ez a szegmenstípus egy ellenőrző számjegyet ad hozzá, amely a 10. számú maradékszámítás. (Ez a viselkedés megfelel az azonosítótábla-azonosítók meglévő logikájának.) Ehhez a szegmenstípushoz az **Érték** mező értéke mindig hiányjel ( *^* ), a **Hossz** mező értéke pedig mindig *1* . |
+    | Csomagolási típus | Az egyértelműen azonosítható cikkek esetében ez a szegmenstípus mezőértéket ad hozzá a megfelelő egységszekvencia-csoportból (az **Egységszekvencia-csoportok** lapról). (Ez a viselkedés megfelel az azonosítótábla-azonosítók meglévő logikájának.) A több raktározási egységet (SKU) tartalmazó azonosítótábla esetében ez a szegmenstípus alapértelmezés szerint *0* (nulla) értéked ad hozzá. Ehhez a szegmenstípushoz az **Érték** mező értéke mindig *P* , a **Hossz** mező értéke pedig mindig *1*.|
+    | Ellenőrző számjegy | Ez a szegmenstípus egy ellenőrző számjegyet ad hozzá, amely a 10. számú maradékszámítás. (Ez a viselkedés megfelel az azonosítótábla-azonosítók meglévő logikájának.) Ehhez a szegmenstípushoz az **Érték** mező értéke mindig hiányjel ( *^* ), a **Hossz** mező értéke pedig mindig *1*. |
 
 1. Ha meg szeretne tekinteni egy példát a végső számformátumra, tekintse át a **Szegmensek** gyorslap alján található **Formátum** mezőt.

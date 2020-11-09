@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 1121cc89b278c3694d0bbd667f1a540d17f4d180
-ms.sourcegitcommit: b7af921189048d9f2eb4d3fd57c704c742bc96e8
+ms.openlocfilehash: 3a83bd6e997110d107bac836abf237f99db78d99
+ms.sourcegitcommit: 361050bed5e0feabd370d225ec70784fc1933258
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "3396032"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "4013157"
 ---
 # <a name="distributed-order-management-dom"></a>Felosztott rendeléskezelés (DOM)
 
@@ -37,7 +37,7 @@ A DOM optimalizálja a rendelések teljesítését még a rendszerek és folyama
 
 A következő ábra bemutatja egy értékesítési rendelés teljes életútját a DOM rendszerben.
 
-![![Értékesítési rendelés életciklusa a DOM környezetében](./media/flow.png "Értékesítési rendelés életciklusa a DOM környezetében")](./media/flow.png "Sales order lifecycle in the context of DOM")
+![Értékesítési rendelés életciklusa a DOM környezetében](./media/flow.png "Értékesítési rendelés életciklusa a DOM környezetében")
 
 ## <a name="set-up-dom"></a>DOM beállítása
 
@@ -50,7 +50,7 @@ A következő ábra bemutatja egy értékesítési rendelés teljes életútját
     - **Bing Térképek-használat megerősítése a DOM-hoz** – Állítsa a beállítást **Igen** értékre.
 
         > [!NOTE]
-        > Ezt a beállítást csak akkor állíthatja **Igen** értékre, ha a **Megosztott kereskedelmi paraméterek** oldal **Bing Térképek** lapján a **Bing Térképek engedélyezése** beállítás (**Kiskereskedelem és kereskedelem \> Központ beállítása \> Paraméterek \> Megosztott kereskedelmi paraméterek**) értéke is **Igen** értékre van állítva, valamint a **Bing Térképek-kulcs** mezőben érvényes kulcsot adtak meg.
+        > Ezt a beállítást csak akkor állíthatja **Igen** értékre, ha a **Megosztott kereskedelmi paraméterek** oldal **Bing Térképek** lapján a **Bing Térképek engedélyezése** beállítás ( **Kiskereskedelem és kereskedelem \> Központ beállítása \> Paraméterek \> Megosztott kereskedelmi paraméterek** ) értéke is **Igen** értékre van állítva, valamint a **Bing Térképek-kulcs** mezőben érvényes kulcsot adtak meg.
 
     - **Megőrzési időszak (nap)** – Adja meg, hogy a DOM-futtatások által létrehozott teljesítési terveket a rendszer milyen hosszan őrizze meg. A **DOM teljesítési adatok törlése feladatbeállítás** kötegelt feladat minden olyan teljesítési tervet törölni fog, amely régebbi, mint az itt megadott napok száma.
     - **Elutasítási időszak (napokban)** – Adja meg, mennyi időnek kell eltelnie, mielőtt egy elutasított rendelési sort ugyanahhoz a helyhez lehetne rendelni.
@@ -58,11 +58,11 @@ A következő ábra bemutatja egy értékesítési rendelés teljes életútját
 5. A **Feloldás** lapon állítsa be a következő értékeket:
 
     - **Maximális automatikus teljesítési próbálkozások száma** – Adja meg, hogy a DOM-motor hányszor próbálkozzon egy rendelési sor adott helyhez való közvetítésével. Ha a DOM-motor nem tudja a rendelés sort az adott helyhez közvetíteni a meghatározott számú próbálkozás során, akkor kivételként jelöli meg a rendelési sort. A jövőbeli futások során a rendszer kihagyja majd a sort egészen addig, amíg az állapotát manuálisan vissza nem állítják.
-    - **Helyi üzlet régiójának hatósugara** – Adjon meg egy értéket. A mező segítségével megállapíthatja, hogy a helyeket a rendszerek hogyan csoportosítja és értelmezi egyenlőként a távolság tekintetében. Például ha a bevitt érték **100**, akkor a rendszer minden üzletet vagy elosztási központot, amely a teljesítési cím 100 mérföldes körzetében található, egyenlőként fog kezelni a távolság tekintetében.
-    - **Feloldás típusa** – Válasszon ki egy értéket. A kereskedelmi szolgáltatásban két feloldási típus áll rendelkezésre: a **Termelési feloldás** és az **Egyszerűsített feloldás**. Az összes, DOM-ot futtató berendezés esetében (ide értendő az összes szerver, amely a DOMBatch csoportba tartozik) a **Termelési feloldás** lehetőséget kell kiválasztani. A Termelési feloldáshoz egy speciális licenckulcsra van szükség, amely alapértelmezett módon a termelési környezetekben licencelt és telepített. A nem termelési környezetekben a licenckulcsot manuálisan kell telepíteni. A licenckulcs manuális telepítéséhez kövesse az alábbi lépéseket:
+    - **Helyi üzlet régiójának hatósugara** – Adjon meg egy értéket. A mező segítségével megállapíthatja, hogy a helyeket a rendszerek hogyan csoportosítja és értelmezi egyenlőként a távolság tekintetében. Például ha a bevitt érték **100** , akkor a rendszer minden üzletet vagy elosztási központot, amely a teljesítési cím 100 mérföldes körzetében található, egyenlőként fog kezelni a távolság tekintetében.
+    - **Feloldás típusa** – Válasszon ki egy értéket. A kereskedelmi szolgáltatásban két feloldási típus áll rendelkezésre: a **Termelési feloldás** és az **Egyszerűsített feloldás** . Az összes, DOM-ot futtató berendezés esetében (ide értendő az összes szerver, amely a DOMBatch csoportba tartozik) a **Termelési feloldás** lehetőséget kell kiválasztani. A Termelési feloldáshoz egy speciális licenckulcsra van szükség, amely alapértelmezett módon a termelési környezetekben licencelt és telepített. A nem termelési környezetekben a licenckulcsot manuálisan kell telepíteni. A licenckulcs manuális telepítéséhez kövesse az alábbi lépéseket:
 
         1. A Microsoft Dynamics Lifecycle Services szolgáltatásban nyissa meg a Közös eszközök tárát, az eszköz típusaként válassza ki a **Modell** lehetőséget, majd töltse le a **DOM-licenc** fájlt.
-        2. Indítsa el a Microsoft IIS-kezelő szolgáltatást, jobb gombbal kattintson az **AOSService weboldal** lehetőségre, majd válassza a **Felfedezés** elemet. Ekkor az **\<AOS szolgáltatásgyökér\>\\webes gyökérről** megnyílik egy új Windows Explorer-ablak. Jegyezze fel az \<AOS szolgáltatásgyökér\> elérési útvonalát, mert a következő lépésnél szüksége lesz rá.
+        2. Indítsa el a Microsoft Internet Information Services (IIS)-kezelő szolgáltatást, jobb gombbal kattintson az **AOSService weboldal** lehetőségre, majd válassza a **Felfedezés** elemet. Ekkor az **\<AOS service root\>\\webroot** helyen megnyílik egy Windows Explorer-ablak. Jegyezze fel az \<AOS Service root\> elérési útvonalát, mert a következő lépésnél szüksége lesz rá.
         3. Másolja a konfigurációs fájlt az **\<AOS Service root\>\\PackagesLocalDirectory\\DOM\\bin** könyvtárába.
         4. Lépjen a Headquarters kliensre, és nyissa meg a **DOM-paraméterek** oldalt. A **Feloldás** lapon található **Feloldás típusa** mezőben válassza a **Termelési feloldás** lehetőséget, és erősítse meg, hogy nem jelentek meg hibaüzenetek.
 
@@ -75,7 +75,7 @@ A következő ábra bemutatja egy értékesítési rendelés teljes életútját
 7. A **Számsorozatok** lapon rendelje hozzá a szükséges számsorozatokat a különböző DOM-entitásokhoz.
 
     > [!NOTE]
-    > A számsorozatok entitásokhoz való hozzárendelése előtt ezeket meg kell határozni a **Számsorozatok** oldalon (**Szervezeti adminisztráció \> Számsorozatok \> Számsorozatok**).
+    > A számsorozatok entitásokhoz való hozzárendelése előtt ezeket meg kell határozni a **Számsorozatok** oldalon ( **Szervezeti adminisztráció \> Számsorozatok \> Számsorozatok** ).
 
 8. A DOM funkció támogatja a különböző típusú DOM-szabályok meghatározását, a szervezetek több szabályt is konfigurálhatnak üzleti igényeiknek megfelelően. A DOM-szabályokat meg lehet határozni helyek csoportjára vagy egyéni helyekre, valamint specifikus termékkategóriára, termékre vagy változatra. A DOM-szabályokban használandó helyek csoportosításának létrehozásához kövesse az alábbi lépéseket:
 
@@ -106,7 +106,7 @@ A következő ábra bemutatja egy értékesítési rendelés teljes életútját
 
         Az alábbi táblázat bemutatja, mi történik akkor, ha ezeknek a paramétereknek a kombinációja kerül meghatározásra.
 
-        |      | Részleges rendelések teljesítése | Részleges sorok teljesítése | Rendelés teljesítése csak egy helyről | Leírás |
+        | Kombináció száma | Részleges rendelések teljesítése | Részleges sorok teljesítése | Rendelés teljesítése csak egy helyről | Leírás |
         |------|------------------------|-----------------------|--------------------------------------|-------------|
         | 1    | Igen                    | Igen                   | Igen                                  | Az adott DOM-futáspéldányban a rendelés néhány sora teljesíthető, valamint az egyes soroknál is lehetséges a részleges teljesítés, azonban minden sort ugyanarról a helyről kell teljesíteni. (Ez a kombináció jelenleg nem támogatott.) |
         | 2    | Igen                    | Nem                    | Igen                                  | Az adott DOM-futáspéldányban a rendelés néhány sora teljesíthető, de az egyes soroknál nem lehetséges a részleges teljesítés, és minden teljesített sor ugyanarról a helyről kell, hogy származzon. (Ez a kombináció jelenleg nem támogatott.) |
@@ -198,7 +198,7 @@ A feldolgozás időpontjában a DOM az alábbiak szerint veszi majd figyelembe a
 
 Miután a DOM alkalmazta a szabályokat, a készletkorlátokat és az optimalizációt, kiválasztja a vevő szállítási címéhez legközelebbi helyet.
 
-![![Értékesítési rendelés feltételei](./media/ordercriteria.png "Értékesítési rendelés feltételei")](./media/ordercriteria.png "Sales order criteria")
+![Értékesítési rendelés feltételei](./media/ordercriteria.png "Értékesítési rendelés feltételei")
 
 ## <a name="results-of-dom-runs"></a>DOM-futások eredményei
 

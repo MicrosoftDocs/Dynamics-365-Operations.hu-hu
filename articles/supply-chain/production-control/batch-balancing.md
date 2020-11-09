@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: BOMTable
+ms.search.form: BOMTable, WHSReservationHierarchy, WHSInventTableReservationHierarchy
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: 555c76651609718aeed11230b4de4fec3bb39ce9
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 2ef0a43480e547c6bd19d5f9b7377ed8b73425e7
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3203342"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016885"
 ---
 # <a name="batch-balancing"></a>Kötegalapú kiigazítás
 
@@ -97,7 +97,7 @@ A B összetevő alapattribútuma X, a célszintje 30, és egy olyan receptúráb
 
 ### <a name="none"></a>Nincs
 
-A tételalapú kiigazítás folyamat alkalmazásakor, ha az összetevő típusa **Nincs**, a receptúrasor becsült mennyisége és kiegyenlített mennyisége a kötegrendelésben megegyezik.
+A tételalapú kiigazítás folyamat alkalmazásakor, ha az összetevő típusa **Nincs** , a receptúrasor becsült mennyisége és kiegyenlített mennyisége a kötegrendelésben megegyezik.
 
 **Példa**
 

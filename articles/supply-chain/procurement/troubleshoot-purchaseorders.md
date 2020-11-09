@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: PurchTable
+ms.search.form: PurchTable, PurchTablePart
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: smnatara
 ms.search.validFrom: 2020-9-16
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: e55974f65577170880e60095f1ba74ea7366e592
-ms.sourcegitcommit: 91e101d7a51a8b63bd196ec80e9224e5e6e6fc95
+ms.openlocfilehash: 234458f865e37a2d962aee8ab218b9521847081d
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3834368"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018560"
 ---
 # <a name="troubleshoot-purchase-orders"></a>Beszerzési rendelések hibaelhárítása
 
@@ -118,7 +118,7 @@ Ez szándékosan van. A beszerzési rendeléseken a termék mindig a rendszer ny
 
 ### <a name="issue-description"></a>Probléma leírása
 
-A termék olyan engedélyezett szállítóval rendelkezik, amely például 2018. január 11-i (*01/11/2018*) érvényességi dátummal és a *Soha* lejárati dátummal rendelkezik. Ha a hatályosság dátumát 2018. január 10-re (*01/10/2018*) vagy 2018. január 12-re (*01/12/2018*) szeretné módosítani, akkor a következő hibaüzenet jelenik meg:
+A termék olyan engedélyezett szállítóval rendelkezik, amely például 2018. január 11-i ( *01/11/2018* ) érvényességi dátummal és a *Soha* lejárati dátummal rendelkezik. Ha a hatályosság dátumát 2018. január 10-re ( *01/10/2018* ) vagy 2018. január 12-re ( *01/12/2018* ) szeretné módosítani, akkor a következő hibaüzenet jelenik meg:
 
 > Nem hozható létre rekord az Engedélyezett szállítói listán (PdsApproveVendorList). A „Lejárat” értéknek nagyobbnak kell lennie, mint a „Hatályos” értéknek.
 
@@ -130,7 +130,7 @@ Csak addig hosszabbíthatja meg azt az időszakot, ameddig a szállítót jóvá
 - Ha módosítani szeretné a lejárati dátumot úgy, hogy az később legyen, mint a meglévő időszakok, akkor az érvényességi dátumnak a legkésőbbi lejárati dátum után kell lennie minden meglévő rekordban.
 - Ha csökkenteni szeretné a szállító számára jóváhagyott teljes időszakot, akkor törölnie kell vagy módosítania kell a meglévő rekordokat. Azt is megteheti, hogy az Importálás során a **csonkolás** kapcsolót használja. Ez a kapcsoló törli a táblából a jóváhagyott szállítókhoz tartozó összes meglévő rekordot.
 
-A probléma leírásában ismertetett példa esetében, amikor a rekord érvényességi dátuma *01/11/2018* érvényességi dátuma és a lejárati dátuma *Soha*, importálhat egy olyan új rekordot, amelynek érvényességi dátuma *01/10/2018*, és a lejárati dátuma *Soha*. Az időszakot azonban nem lehet csökkenteni úgy, hogy az érvényességi dátumot *01/12/2018* értékre módosítja az adatkezelési folyamaton keresztül. Ezt a módosítást a felhasználói felületen keresztül kell elvégeznie.
+A probléma leírásában ismertetett példa esetében, amikor a rekord érvényességi dátuma *01/11/2018* érvényességi dátuma és a lejárati dátuma *Soha* , importálhat egy olyan új rekordot, amelynek érvényességi dátuma *01/10/2018* , és a lejárati dátuma *Soha*. Az időszakot azonban nem lehet csökkenteni úgy, hogy az érvényességi dátumot *01/12/2018* értékre módosítja az adatkezelési folyamaton keresztül. Ezt a módosítást a felhasználói felületen keresztül kell elvégeznie.
 
 ## <a name="after-i-change-the-delivery-address-on-a-purchase-order-header-the-delivery-nameisnt-synced"></a>A beszerzési rendelés fejlécében szereplő szállítási cím módosítása után a szállítási név nincs szinkronizálva.
 

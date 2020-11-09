@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4ec10e0f79e4eca7f51ba48c679dcf6fe745eb29
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: dce2fdd9d91c2bd867f0455573733aefb0796fa7
+ms.sourcegitcommit: 776758a0ff95c3c7398986095104d1d2b9814514
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3141430"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "4107352"
 ---
 # <a name="create-call-center-orders"></a>Hívásközponti rendelések létrehozása
 
@@ -30,29 +30,29 @@ ms.locfileid: "3141430"
 
 Ez az eljárás bemutatja, hogy hogyan kereshet ki egy vevőt, hozhat létre egy új rendelést és kereshet rá egy termére, továbbá hogyan szedhet be kifizetést a vevőtől. Az eljárás az USRT bemutatócéget használja, és az Értékesítési adminisztrátor számára készült. Előfeltételek: Az eljárást elvégző felhasználók a Hívásközpont felhasználóiként vannak beállítva, valamint a Gyári Féléves Katalógus közzététele megtörtént, legalább egy Forráskóddal.
 
-1. Nyissa meg a következőt: Commerce > Vevők > Ügyfélszolgálat.
-2. A Keresés szövegben mezőbe írja be a feltételeket a vevő kikereséséhez.
-    * Ebben a példaeljárásban írja be: „karen”, majd nyomja meg a TAB billentyűt.  
-3. Kattintson a Keresés gombra.
-    * Mivel a bemutató adatsor csak egy „Karen” nevű vevőt tartalmaz, az ő kiválasztása automatikusan megtörténik.  
-4. Kattintson az Új értékesítési rendelés gombra.
-5. Bontsa ki vagy csukja össze az Értékesítési rendelés fejléce szakaszt.
+1. Nyissa meg a következőt: **Kiskereskedelem és kereskedelem \> Ügyfelek \> Ügyfélszolgálat**.
+2. A **Keresés szövegben** mezőbe írja be a feltételeket a vevő kikereséséhez.
+    * Ebben a példaeljárásban írja be: „karen”, majd nyomja meg a **TAB** billentyűt.  
+3. Válassza a Keresés lehetőséget.
+    * Mivel a bemutató adatsor csak egy „Karen” nevű vevőt tartalmaz, az eredmény kiválasztása automatikusan megtörténik.  
+4. Válassza ki az **Új értékesítési rendelés** lehetőséget.
+5. Bontsa ki vagy csukja össze az **Értékesítési rendelés** fejléce szakaszt.
 6. Válassza ki a katalógus forráskódját.
-    * Amennyiben nincsenek aktív Forráskódok, bezárhatja a Forrás mezőt, és kihagyhatja ezt a lépést.  
-7. Kattintson az Új sor hozzáadása lehetőségre.
-8. A Cikkszám mezőbe írja be írja be a cikk-keresési kifejezést.
-    * Ebben a mintaeljárásban írja be a következő cikkszám-részletet: „8111”, majd nyomja meg a TAB billentyűt. Ekkor megjelenik a cikk-kereső ablak.  
+    * Amennyiben nincsenek aktív Forráskódok, kihagyhatja ezt a lépést.  
+7. Válassza a **Sor hozzáadása** lehetőséget.
+8. A **Cikkszám** mezőbe írja be írja be a cikk-keresési kifejezést.
+    * Ebben a mintaeljárásban írja be a következő cikkszám-részletet: „8111”, majd nyomja meg a TAB billentyűt. Ezzel a művelettel megjelenik a cikk-kereső ablak.  
 9. Válassza ki az értékesítési rendeléshez hozzáadandó terméket.
 10. Adja meg az értékesítési mennyiséget.
-11. Kattintson az Új > lehetőségre.
-12. Kattintson a Befejezés gombra a vevői fizetés rögzítéséhez.
-13. Kattintson a Hozzáadás gombra.
+11. Válassza a **Létrehozása** lehetőséget.
+12. Kattintson a **Befejezés** gombra a vevői fizetés rögzítéséhez.
+13. Válassza a **Hozzáadás** lehetőséget.
     * A Hivatkozás hozzáadása a Kifizetések lapon található. Bontsa ki a Kifizetések lapot, ha össze van csukva.  
 14. Válassza ki a fizetési módot.
     * Ebben az eljárásban válassza ki a készpénzfizetési módszert.  
 15. Zárja be a lapot.
 16. Írja be az összeget.
-    * Ennél az eljárásnál írjon be egy olyan összeget, amely megegyezik a rendelési egyenleggel. Ez az Értékesítési rendelés összesítése oldalon látható, az összeg mezőtől balra. Ez lehetővé teszi, hogy teljesen kifizetett állapotban befejezze a rendelést.  
-17. Kattintson az OK gombra.
-18. Kattintson a Küldés hivatkozásra.
+    * Ennél az eljárásnál írjon be egy olyan összeget, amely megegyezik a rendelési egyenleggel. Ez az Értékesítési rendelés összesítése oldalon látható, az összeg mezőtől balra. Ez a művelet lehetővé teszi, hogy teljesen kifizetett állapotban befejezze a rendelést.  
+17. Válassza ki az **OK** lehetőséget.
+18. Válassza a **Beküldés** lehetőséget.
 

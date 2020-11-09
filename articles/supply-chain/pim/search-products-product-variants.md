@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: MCRFullTextIndexField, MCRFullTextParameters, PurchTable, SalesTable
+ms.search.form: MCRFullTextIndexField, MCRFullTextParameters, PurchTable, PurchTablePart, SalesTable
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 6acfdf819ffce496f0a9b5d6242b55d857510b49
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 532f437bee490743847cf5617579c579f9202b71
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3986599"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018330"
 ---
 # <a name="search-for-products-and-product-variants-during-order-entry"></a>Termékek és termékváltozatok keresése a rendelésbevitel során
 
@@ -65,7 +65,7 @@ A termék és termékváltozat keresési funkció használata előtt hajtsa vég
 
 ### <a name="step-1include-all-the-relevant-product-and-product-variant-identifiers-and-dimensions-in-the-search-criteria"></a>1. lépés: A keresési feltételek közé vegyen fel minden releváns termék- és termékváltozat-azonosítót és dimenziót
 
-Néhány példa a kereséshez használható termék- és termékváltozat-azonosítókra és dimenziókra:  **Terméknév, Cikkszám** , **Termékszám megjelenítése, Konfiguráció, Szín, Méret, Stílus, Keresési név stb.** .  
+Néhány példa a kereséshez használható termék- és termékváltozat-azonosítókra és dimenziókra:  **Terméknév, Cikkszám** , **Termékszám megjelenítése, Konfiguráció, Szín, Méret, Stílus, Keresési név stb.**.  
 
 Nyissa meg az **Értékesítés és marketing &gt; Beállítás &gt; Keresés &gt; Keresési feltételek** lapot. A **Keresési feltételek** lap lehetővé teszi a vevő, a potenciális vevő és a termékek keresési feltételeinek meghatározását. Győződjön meg arról, hogy a termék keresési feltételek megadásával szűri a lapot. Ehhez váltson a **Termék** lehetőségre a lap menüjében.  
 

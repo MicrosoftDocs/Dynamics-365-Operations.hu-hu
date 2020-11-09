@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: VendProspectiveVendorRegistrationRequests
+ms.search.form: VendProspectiveVendorRegistrationRequests, CatVendorCatalogDetails, CatVendorCatalogReleaseApprovedProducts, CatVendorCMRDetails, CatVendorCatalogProductPerCompanyStatus, CatVendorMaintenanceEventLog, CatVendorCatalogReviewTool, CatVendorCatalogFileUpload, CatVendorCatalogMaintenanceRequest, CatVendorCatalogFileInLegalEntity, CatVendorCatalogSchema, CatVendorCatalogFilePreviewPane, CatVendorCatalogImportParameter
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: mkirknel
 ms.search.validFrom: 2018-04-20
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 608d2b57bb4d5ab80d75b22ed5c8a4df5263e5f3
-ms.sourcegitcommit: 86052c58e3c365c443bd6f37ad1054bea395e21b
+ms.openlocfilehash: 7ed2c50b28fdbd1baf4caa0a8a7f2f05d6a53fd6
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "3338308"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018583"
 ---
 # <a name="import-vendor-catalogs"></a>Szállítói katalógusok importálása
 
@@ -41,7 +41,7 @@ A termékadatoknak, amelyeket egy szállító ad át egy katalógus-karbantartá
 
 Egy szállító katalógusadatainak importálásához végezze el a következő feladatokat:
 
-1. Projekt beállítása az adatok kezelése munkaterületen, ahol hozzárendelési szabályainak adta meg. Válassza ki az **Adatkezelés**, majd az **Szerepek beállítása adatprojektekhez** elemet.
+1. Projekt beállítása az adatok kezelése munkaterületen, ahol hozzárendelési szabályainak adta meg. Válassza ki az **Adatkezelés** , majd az **Szerepek beállítása adatprojektekhez** elemet.
 
 2. Állítsa be a beszerzési kategóriák hierarchiáját, és rendelje a szállítókat beszerzési kategóriákhoz. Árucikk-kódok használatakor az árucikk-kódokat adja a beszerzési kategóriákhoz. Beszerzési kategóriahierarchia beállításával kapcsolatos további tudnivalókat lásd: [Beszerzési kategóriák hierarchiájának beállítása](../procurement/tasks/set-up-procurement-category-hierarchy.md).
 
@@ -63,7 +63,7 @@ A katalógusimportálási fájlsablon egy XSD-fájl, amely egy szállító term�
 
 1. Válassza a **Beszerzés és forrás** \> **Katalógusok** \> **Szállítói katalógusok** elemet, és kattintson duplán a használni kívánt katalógusra.
 
-2. Töltse le az aktuális katalógus importálási sablonját (XSD-fájl). Itt: **Katalógus módosítása** oldal, **Műveleti ablak**, **Katalógusok** lap, **Kapcsolódó információk** csoport, kattintson a **Katalógussablon előállítása** elemre, és válassza ki a **Beszerzési kategória** elemet.
+2. Töltse le az aktuális katalógus importálási sablonját (XSD-fájl). Itt: **Katalógus módosítása** oldal, **Műveleti ablak** , **Katalógusok** lap, **Kapcsolódó információk** csoport, kattintson a **Katalógussablon előállítása** elemre, és válassza ki a **Beszerzési kategória** elemet.
 
     - A **Beszerzési kategória** lehetőséggel olyan katalógussablon generálható, amely tartalmazza azokat a beszerzési kategóriákat, amelyekben a szállító jogosult termékeket kínálni.
 

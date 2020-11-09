@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 408767539628a14f8ea039155c72f5e9aa6803af
-ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
+ms.openlocfilehash: 3a92970f2e3639090f51cf9e59ffcb148e210494
+ms.sourcegitcommit: cb94f16d69455cbf6fd059f9f394e7623810c924
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "3070760"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "4011633"
 ---
 # <a name="column-definitions-in-financial-reports"></a>Oszlopdefiníciók a pénzügyi jelentésben
 
@@ -48,7 +48,7 @@ Az oszlopdefiníció 2 - 255 oszlopot tartalmazhat.
 
 ### <a name="add-a-column-to-a-column-definition"></a>Oszlop hozzáadása oszlopdefinícióhoz
 
-1. A Jelentéstervező eszközben, kattintson **Oszlopefiníciók**, majd nyissa meg az oszlopdefiníciót, hogy módosítsa.
+1. A Jelentéstervező eszközben, kattintson **Oszlopefiníciók** , majd nyissa meg az oszlopdefiníciót, hogy módosítsa.
 2. Válassza ki azt az oszlopot, ahová új oszlopot szeretne beszúrni.
 3. A **Szerkesztés** menüben kattintson az **Oszlop beszúrása** elemre. Az új oszlop megjelenik a kijelölt oszloptól balra.
 
@@ -112,7 +112,7 @@ A következő táblázat az oszlopkorlátozás kódokat írja le.
 
 | Oszlopkorlátozás kód | Leírás |
 |-------------------------|-------------|
-| SU                      | Az oszlop aláhúzásjelének elrejtése, ha aláhúzás parancs (**---**) vagy dupla aláhúzás parancs (**===**) van megadva a sordefinícióban. Például előfordulhat, hogy nem szeretné aláhúzni azokat az összegeket, amelyeket egy százalékszámítás adott. |
+| SU                      | Az oszlop aláhúzásjelének elrejtése, ha aláhúzás parancs ( **---** ) vagy dupla aláhúzás parancs ( **===** ) van megadva a sordefinícióban. Például előfordulhat, hogy nem szeretné aláhúzni azokat az összegeket, amelyeket egy százalékszámítás adott. |
 | ST                      | Összegek letiltása, így csak a részletek jelennek meg az oszlopban (például statisztikai oszlopnál). |
 | SD                      | Részletek letiltása, hogy csak a **TOT** és **CAL** sorok jelenjenek meg (a sordefinícióból) az oszlopban. |
 | ST                      | Az összegek korlátozása kizárólag tartozik összegekre egy **FD** oszlopban. |
@@ -170,7 +170,7 @@ Az **Oszlopfejléc** párbeszédablakban hozzáadhat, módosíthat és törölhe
 
 ### <a name="create-an-automatically-generated-header"></a>Automatikusan generált fejléc létrehozása
 
-A Jelentéstervező automatikusan oszlopfejléceket generálhat a készszövegkódok alapján. A készszövegkódok változók, amelyek minden jelentés előállításának alkalmával frissülnek. Bármely oszlopfejléc tartalmazhat ilyen kódokat, amelyek változó jelentésinformációkat, például dátumokat vagy időszakszámokat adhatnak meg. Ezért egy oszlopdefiníciót több jelentésdefiníciókhoz, időszakhoz és jelentési fához használhat. Mivel a készszövegkódok az oszlopdefiníció részletsorainak naptárinformációjára alapszanak, ezért csak **CALC** és **FD** oszlopoknál használhatóak. Egy készszövegkód megjelenésének módja az oszlopfejlécben befolyásolja az információ megjelenését a jelentésben. Az **Oszlopfejléc** párbeszédablakban a készszövegkódok kis- és nagybetűket egyaránt használva jelennek meg. Így a szöveg is kis- és nagybetűkkel jelenik meg a jelentésben. Egy normál naptári évben például a **\@CalMonthLong** kód használata esetén a **7**. hónap **júliusként** jelenik meg. Ha a hónap nevét csupa nagybetűvel szeretné látni (például **JÚLIUS**), akkor a készszövegkódot csupa nagybetűvel kell megadni az **Oszlopfejléc szövege** mezőben. Így például a **\@CALMONTHLONG** kódot kell beírni. A kódokat és a szövegeket össze is kombinálhatja. Például a következőt is beírhatja az oszlopfejléc szövegébe: **Period \@FiscalPeriod-\@FiscalYear from \@StartDate to \@EndDate**. A létrehozott jelentés fejléce ekkor a következőképpen fog megjelenni: **1-02 időszak, 01/01/02 és 01/31/02 között**.
+A Jelentéstervező automatikusan oszlopfejléceket generálhat a készszövegkódok alapján. A készszövegkódok változók, amelyek minden jelentés előállításának alkalmával frissülnek. Bármely oszlopfejléc tartalmazhat ilyen kódokat, amelyek változó jelentésinformációkat, például dátumokat vagy időszakszámokat adhatnak meg. Ezért egy oszlopdefiníciót több jelentésdefiníciókhoz, időszakhoz és jelentési fához használhat. Mivel a készszövegkódok az oszlopdefiníció részletsorainak naptárinformációjára alapszanak, ezért csak **CALC** és **FD** oszlopoknál használhatóak. Egy készszövegkód megjelenésének módja az oszlopfejlécben befolyásolja az információ megjelenését a jelentésben. Az **Oszlopfejléc** párbeszédablakban a készszövegkódok kis- és nagybetűket egyaránt használva jelennek meg. Így a szöveg is kis- és nagybetűkkel jelenik meg a jelentésben. Egy normál naptári évben például a **\@CalMonthLong** kód használata esetén a **7**. hónap **júliusként** jelenik meg. Ha a hónap nevét csupa nagybetűvel szeretné látni (például **JÚLIUS** ), akkor a készszövegkódot csupa nagybetűvel kell megadni az **Oszlopfejléc szövege** mezőben. Így például a **\@CALMONTHLONG** kódot kell beírni. A kódokat és a szövegeket össze is kombinálhatja. Például a következőt is beírhatja az oszlopfejléc szövegébe: **Period \@FiscalPeriod-\@FiscalYear from \@StartDate to \@EndDate**. A létrehozott jelentés fejléce ekkor a következőképpen fog megjelenni: **1-02 időszak, 01/01/02 és 01/31/02 között**.
 
 > [!NOTE]
 > Egyes szövegrészek, például a hosszú dátum a szerver regionális beállításaitól függ. Ezen beállítások módosításához kattintson a **Start** gombra, majd a **Vezérlőpult** elemre, majd válassza a **Régiók és nyelv** opciót. Az alábbi táblázat felsorolja az oszlopfejlécekhez elérhető készszöveg-beállítáokat.
@@ -195,10 +195,10 @@ A Jelentéstervező automatikusan oszlopfejléceket generálhat a készszövegk�
 
 A feltételesen terjesztett fejlécek több oszlopon átterjedhetnek, amelyek adott időszakadatokon alapulnak. Ha például a költségvetési jelentés az adott pénzügyi évre vonatkozik, és az elmúlt hónapok valós költségvetéseit össze szeretné vetni a következő hónapok előrejelzett költségvetéseivel, akkor a feltételesen terjesztett fejléc használatával mindig automatikusan frissítheti a jelentés fejlécét. Feltételes átívelő fejléc készítésekor mérlegelje az alábbi helyzeteket:
 
-- A program bármely leállítási feltételt (**Elosztva ide** mező), amely egyeztetve van egy kezdő feltétel előtt (**Elosztva innen** mező) figyelmen kívül hagy. Tegyük fel, hogy a B oszlop terjesztési feltétele ALAP+1 kezdetű és ALAP végződésű, az ALAP a C oszlop, az ALAP+1 pedig a D oszlop. Ebben az esetben a C oszlop leállítási feltételét a rendszer nem veszi figyelembe, és a fejléc nyomtatása a D oszlopban kezdődik.
+- A program bármely leállítási feltételt ( **Elosztva ide** mező), amely egyeztetve van egy kezdő feltétel előtt ( **Elosztva innen** mező) figyelmen kívül hagy. Tegyük fel, hogy a B oszlop terjesztési feltétele ALAP+1 kezdetű és ALAP végződésű, az ALAP a C oszlop, az ALAP+1 pedig a D oszlop. Ebben az esetben a C oszlop leállítási feltételét a rendszer nem veszi figyelembe, és a fejléc nyomtatása a D oszlopban kezdődik.
 - Ha olyan oszlopfejléceket ad meg, amelyek átfedésben vannak, akkor a jelentés kinyomtatásakor átfedésben jelennek meg. A jelentés elkészül, de a következő figyelmeztetés jelenik meg a **Jelentés-várólista állapota** mezőben: „Az Alap elemet használó oszlopfejlécek átfedésben vannak más fejlécekkel, így a szöveg átfedésben lehet." Ha például a B oszlop fejlécdefiníciója B-től ALAP+1 elemig terjed, és a D oszlop fejlécdefiníciója ALAP+1 kezdetű és F végű, akkor a fejlécek egymásra lesznek nyomtatva, így nem lesznek olvashatóak. Ha ALAP elemet használ az **Ettől terjed/Eddig terjed** definícióban, akkor mindig nézze meg a generált jelentést, hogy nem fedik-e át egymást a fejlécek.
-- Ha az ALAP elemet a terjesztési definícióban egy nem nyomtatandó (**NP**) oszlopban adja meg, akkor a rendszer nem veszi azt figyelembe, függetlenül attól, mi áll az oszlopdefinícióban. Lényegében ez az eset megegyezik azzal, mint ha nem hozott volna létre oszlopfejléc-definíciót.
-- A feltételesen nyomtatandó oszlopok (**P&lt;B**, **P&gt;=B**) esetében a feltételes terjesztésű fejlécek ugyanúgy viselkednek, mint a szokásos oszlopfejléc-definíciók esetén. Ha például a feltétel hamis, minden olyan további oszlop, amely megegyezik a terjesztési feltétellel, elindítja a fejléc nyomtatását.
+- Ha az ALAP elemet a terjesztési definícióban egy nem nyomtatandó ( **NP** ) oszlopban adja meg, akkor a rendszer nem veszi azt figyelembe, függetlenül attól, mi áll az oszlopdefinícióban. Lényegében ez az eset megegyezik azzal, mint ha nem hozott volna létre oszlopfejléc-definíciót.
+- A feltételesen nyomtatandó oszlopok ( **P&lt;B** , **P&gt;=B** ) esetében a feltételes terjesztésű fejlécek ugyanúgy viselkednek, mint a szokásos oszlopfejléc-definíciók esetén. Ha például a feltétel hamis, minden olyan további oszlop, amely megegyezik a terjesztési feltétellel, elindítja a fejléc nyomtatását.
 
 #### <a name="create-a-conditional-spanning-header"></a>Feltételesen fejlesztett fejléc létrehozása
 
@@ -206,7 +206,7 @@ A feltételesen terjesztett fejlécek több oszlopon átterjedhetnek, amelyek ad
 2. Kattintson duplán egy fejléccellára.
 3. Az **Oszlopfejléc** párbeszédpanelben írja be az oszlopfejléc szövegét. Alternatív lehetőségként kattintson az **Kész szöveg beszúrása** elemre, majd válasszon egy lehetőséget.
 4. A **Formázási beállítások** mezőben válassza ki a fejléc formázási stílusát.
-5. Adjon meg egy időszakot ahhoz az alapidőszakhoz képest, amelyet a jelentés létrehozásakor adtak meg. Az **Ettől terjed** és az **Eddig terjed** mezőkben adja meg a következő értékek egyikét: **ALAP**, **ALAP-X** vagy **ALAP+X**, ahol az X az időszakok számát jelenti az alapidőszakhoz viszonyítva. Ha például az **ALAP** értéket adja meg az **Ettől terjed** mezőben, a feltételes terjesztésű oszlopfejlécszöveg abban az oszlopfejlécben kezdődik, ahol a jelentésdefiníció **Alapidőszak** értéke megegyezik az oszlopdefiníció **Időszak** értékével. Abban az oszlopban fog végződni, amelyet az **Eddig terjed** mezőben megadott. Így tehát ha a terjesztés kiterjedése ALAP-tól M-ig, és a jelentésdefiníció **Alapidőszak** értéke **4**, akkor a fejléc abban az oszlopban kezdődik, ahol az időszak értéke **4**, és az M oszlopig tart. A fejlécek csak a nyomtatandó oszlopoknál kezdődnek el és záródnak le.
+5. Adjon meg egy időszakot ahhoz az alapidőszakhoz képest, amelyet a jelentés létrehozásakor adtak meg. Az **Ettől terjed** és az **Eddig terjed** mezőkben adja meg a következő értékek egyikét: **ALAP** , **ALAP-X** vagy **ALAP+X** , ahol az X az időszakok számát jelenti az alapidőszakhoz viszonyítva. Ha például az **ALAP** értéket adja meg az **Ettől terjed** mezőben, a feltételes terjesztésű oszlopfejlécszöveg abban az oszlopfejlécben kezdődik, ahol a jelentésdefiníció **Alapidőszak** értéke megegyezik az oszlopdefiníció **Időszak** értékével. Abban az oszlopban fog végződni, amelyet az **Eddig terjed** mezőben megadott. Így tehát ha a terjesztés kiterjedése ALAP-tól M-ig, és a jelentésdefiníció **Alapidőszak** értéke **4** , akkor a fejléc abban az oszlopban kezdődik, ahol az időszak értéke **4** , és az M oszlopig tart. A fejlécek csak a nyomtatandó oszlopoknál kezdődnek el és záródnak le.
 6. Az **Igazítás** elemnél válassza ki, hogy az oszlopfejléc szövege jobbra, középre vagy balra igazított legyen.
 7. Kattintson az **OK** gombra.
 
@@ -214,8 +214,7 @@ A feltételesen terjesztett fejlécek több oszlopon átterjedhetnek, amelyek ad
 
 Phyllis egy jelentést készít egy dinamikus hat hónapos előrejelzéshez. Azt szeretné, ha a „Tényleges” szó jelenne meg minden olyan oszlopban, amely tényadatokat tartalmaz, és a „Költségvetés” szó azoknál, amelyek csak költségkeret-előrejelzést tartalmaznak. A jelentés futtatásának minden egyes hónapja esetében, van egy további tényleges oszlop és kisebb költségvetés oszlop. Bár Phyllis kézzel is módosíthatná az oszlopdefiníciót a fejlécek kiigazítására, valahányszor jelentést generál, mégis időt és munkát spórol azzal, ha úgy dönt, feltételes terjesztésű fejléceket használ, amelyek automatikusan hozzák létre a fejléceket az érintett oszlopokban, valahányszor legenerálódik a jelentés. Phyllis megnyitja a Jelentéstervezőt, rákattint az **Oszlopdefiníció** menüpontra a navigációs ablakban, és megnyitja az oszlopdefiníciót a jelentéshez. Az alábbi adatokat adja meg. Az alapidőszak a jelentésdefinícióban 4.
 
-
-|                     |  N   | B             | C             | D             | E:             | F             | G:             | S             | I             | J             | ezer             | L             | E             |
+|      Formátum         |  A   | milliárd             | K             | T             | E             | P             | G             | H             | I             | J             | ezer             | L             | H             |
 |---------------------|------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|
 | 1. fejléc            |      | Tényleges        | Költségvetés        |               |               |               |               |               |               |               |               |               |               |
 | 2. fejléc            |      | @TeljNaptáriHónap | @TeljNaptáriHónap | @TeljNaptáriHónap | @TeljNaptáriHónap | @TeljNaptáriHónap | @TeljNaptáriHónap | @TeljNaptáriHónap | @TeljNaptáriHónap | @TeljNaptáriHónap | @TeljNaptáriHónap | @TeljNaptáriHónap | @TeljNaptáriHónap |
@@ -275,7 +274,7 @@ Az oszlopdefinícióban a formázási oszlop részletsorok a kiválaszott oszlop
 
 ### <a name="changing-the-column-width"></a>Az oszlop szélességének módosítása
 
-Az **Oszlopszélesség** cella határozza meg, hogy mennyi karaktert kell használni az adott oszlop szélességéhez a nyomtatott jelentésen. Az oszlop szélessége az összegeket (**CALC**, **WKS** vagy **FD** típusú), leírást (**DESC** típusú) és a kitöltés (**FILL** típusú) oszlopok esetében fontos adat. A rendszerben alapértelmezésként az **Automatikus illesztés** opció van beállítva, így az oszlopok szélessége automatikusan az oszloptartalom hosszához illeszkedik.
+Az **Oszlopszélesség** cella határozza meg, hogy mennyi karaktert kell használni az adott oszlop szélességéhez a nyomtatott jelentésen. Az oszlop szélessége az összegeket ( **CALC** , **WKS** vagy **FD** típusú), leírást ( **DESC** típusú) és a kitöltés ( **FILL** típusú) oszlopok esetében fontos adat. A rendszerben alapértelmezésként az **Automatikus illesztés** opció van beállítva, így az oszlopok szélessége automatikusan az oszloptartalom hosszához illeszkedik.
 
 #### <a name="specify-the-width-of-a-column-on-a-report"></a>A jelentés egy oszlopa szélességének megadása
 
@@ -340,7 +339,7 @@ A **Nyomtatásvezérlő** cella olyan kódokat tartalmazhat, amelyek módosítj�
 > Nyomtatásvezérlő kódokat közvetlenül a **Nyomtatásvezérlés** cellába is beírhat. Ha több nyomtatásvezérlő kód van, ezeket vesszővel válassza el egymástól.
 
 ## <a name="column-types"></a>Oszloptípusok
-A jelentés egyes oszlopaiban megjelenő információ típusát az **Oszloptípus** sor határozza meg a sordefinícióban. Minden oszlopdefiníciónak tartalmaznia kell legalább egy leírás oszlopot (**DESC**) és egy összegoszlopot (**FD**, **WKS** vagy **CALC**).
+A jelentés egyes oszlopaiban megjelenő információ típusát az **Oszloptípus** sor határozza meg a sordefinícióban. Minden oszlopdefiníciónak tartalmaznia kell legalább egy leírás oszlopot ( **DESC** ) és egy összegoszlopot ( **FD** , **WKS** vagy **CALC** ).
 
 > [!NOTE]
 > Az Oszloptípus bemutatott kódjai nem minden könyvelési rendszerben érvényesek. Ha olyan típust választ, amelyik nem érvényes ebben a könyvelési rendszerben, az oszlop üres marad a jelentésben.
@@ -463,7 +462,7 @@ Az **Érintett időszakok** cella azonosítja az összeget, amely az oszlopba ke
 
 ### <a name="attribute-filter-in-a-column-definition"></a>Attribútumszűrő az oszlopdefinícióban
 
-Az attribútumok olyan pénzügyi adatértékek, amelyek továbbdefiniálnak egy számlát vagy tranzakciót. A számlaattribútumok közé tartozik az **Eszköz**, **Kötelezettség**, **Bevétel**, és a **Költség**. A tranzakcióattribútumok közé tartozik a **Tranzakcióleírás** és a **Tranzakció alkalmazási dátuma**. Az attribútumok támogatása eltérő lehet a különböző Microsoft Dynamics ERP rendszerek között. A **Attribútumszűrő** cella az **FD** oszlopokban megjelenő adatokat az attribútumkategóriák adott értékeire vagy tartományaira korlátozza. Habár ez a funkció együtt használható az **ATTR** oszloppal, az **ATTR** oszlop nem kötelező. Az **FD** oszlopokban korlátozva van az attribútumszűrő által a jelentésbe bekerülő számlák vagy tranzakciók száma.
+Az attribútumok olyan pénzügyi adatértékek, amelyek továbbdefiniálnak egy számlát vagy tranzakciót. A számlaattribútumok közé tartozik az **Eszköz** , **Kötelezettség** , **Bevétel** , és a **Költség**. A tranzakcióattribútumok közé tartozik a **Tranzakcióleírás** és a **Tranzakció alkalmazási dátuma**. Az attribútumok támogatása eltérő lehet a különböző Microsoft Dynamics ERP rendszerek között. A **Attribútumszűrő** cella az **FD** oszlopokban megjelenő adatokat az attribútumkategóriák adott értékeire vagy tartományaira korlátozza. Habár ez a funkció együtt használható az **ATTR** oszloppal, az **ATTR** oszlop nem kötelező. Az **FD** oszlopokban korlátozva van az attribútumszűrő által a jelentésbe bekerülő számlák vagy tranzakciók száma.
 
 > [!NOTE]
 > Az ERP rendszer által támogatott attribútumokat illetően olvassa el a rendszer integrációs útmutatóját.
@@ -480,7 +479,7 @@ Az attribútumok olyan pénzügyi adatértékek, amelyek továbbdefiniálnak egy
 
 A következő példa bemutatja az oszlopleírás azon részét, amely számlaattribútummal rendelkezik a **Könyvelési kód / Attribútumkategória** sorban. Ezen oszlop attribútumszűrőjre határozza meg a jelentésbe bekerülő értékek tartományát.
 
-|                              | N    | B                   |
+|      Szűrés                  | A    | milliárd                   |
 |------------------------------|------|---------------------|
 | Oszloptípus                  | DESC | FD                  |
 | Könyvelési kód / Attribútumkategória |      | TÉNYLEGES              |
@@ -525,7 +524,7 @@ A vállalat könyvelési pénznemének meghatározásához kövesse az alábbi l
 #### <a name="specify-the-currency-on-a-multiple-currency-report"></a>Pénznem meghatározása több pénznemű jelentésen
 
 1. Nyissa meg a módosítandó oszlopdefiníciót a jelentéstervezőben.
-2. Kattintson duplán a **Pénznem megjelenítése** cellára a megfelelő **FD** oszlopban, és válassza ki a pénznemadatok megjelenítése lehetőséget: **Főkönyvi könyvelési pénznem**, **Főkönyvi jelentések** vagyválassza, hogy átváltja egy másik jelentési pénznembe.
+2. Kattintson duplán a **Pénznem megjelenítése** cellára a megfelelő **FD** oszlopban, és válassza ki a pénznemadatok megjelenítése lehetőséget: **Főkönyvi könyvelési pénznem** , **Főkönyvi jelentések** vagyválassza, hogy átváltja egy másik jelentési pénznembe.
 3. Kattintson duplán a **Pénznemszűrő** cellára a megfelelő **FD** oszlopban, és válassza ki a listában a megfelelő pénznemkódot. Csak az ebben a pénznemben megadott tranzakciók jelennek meg a jelentésben.
 
 
@@ -552,7 +551,7 @@ Az alábbi táblázat bemutatja a jelentés különböző eredményeit, amelyek 
 
 ### <a name="calculation-column-in-a-column-definition"></a>Számítás oszlop egy oszlopdefinícióban
 
-Egy oszlopdefiníció **CALC** típusú oszlopa támogatja az összetett számításokat a **Képlet** cellában, és tartalmazhatja a **+**, **-**, **\*** és **/** operátorokat, valamint az **IF/THEN/ELSE** utasításokat. Egy számításoszlop továbbá vonatkozhat bármely másik oszlopra, akár később következő oszlopokra is. Emellett a számítási oszlopok tartalmazhatják a pénzügyi évet és időszakot is, így támogatják az oszlopfejlécet. A számítási képlet legfeljebb 1,024 karakterből állhat. A számítás eredményének százalékban való kifejezéséhez használjon egy speciális formátumfelülírást.
+Egy oszlopdefiníció **CALC** típusú oszlopa támogatja az összetett számításokat a **Képlet** cellában, és tartalmazhatja a **+** , **-** , **\*** és **/** operátorokat, valamint az **IF/THEN/ELSE** utasításokat. Egy számításoszlop továbbá vonatkozhat bármely másik oszlopra, akár később következő oszlopokra is. Emellett a számítási oszlopok tartalmazhatják a pénzügyi évet és időszakot is, így támogatják az oszlopfejlécet. A számítási képlet legfeljebb 1,024 karakterből állhat. A számítás eredményének százalékban való kifejezéséhez használjon egy speciális formátumfelülírást.
 
 > [!NOTE]
 > A számítási képletek eredményeinek kiszámításakor a rendszer a nem nyomtatandó oszloptartományokat nem veszi figyelembe. Például az **A:D** kód a **0** (nulla) összeget nyomtatja ki, míg az **A+B+C** képlet nem nyomtatandó értékekre kiszámítja az értéket.

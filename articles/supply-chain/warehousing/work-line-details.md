@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: WHSWorkLocationChange, WHSWorkLineDetails
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Retail, Core, Operations
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 4f0952cc8778ffc509bed80b3a5038dbf4fb76c2
-ms.sourcegitcommit: f64fce03ec52f844b05a9e8cac286cb201385002
+ms.openlocfilehash: bcb340b21e06b294a40784bf3a1da71b0daf7655
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "3597192"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4015895"
 ---
 # <a name="work-line-details"></a>Munkasor adatai
 

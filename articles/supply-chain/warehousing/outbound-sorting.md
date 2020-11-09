@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: WHSPack, WHSOutboundSortTemplate, WHSOutboundSortPositionAssignments, WHSLocationType, WHSLoactionProfile
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: e72249e26fb8f291f804cf5f2e4ce98bf88cd5bf
-ms.sourcegitcommit: 70d0b4e6bdacc15ec75935550ae55fc02cb79624
+ms.openlocfilehash: 84c4ec83ed16762e6c3c1a22425cf60e5b3ae8da
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "3596236"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017690"
 ---
 # <a name="outbound-sorting"></a>Kimenő rendezés
 
@@ -149,7 +150,7 @@ Ehhez a forgatókönyvhöz létrehoz egy kimenő rendezési sablont, amely a rak
 
     - **Pozíció hozzárendelése:** *Automatikus*
 
-        Ha a mező értéke *Manuális* akkor a felhasználónak mindig meg kell adnia, a készlet melyik pozíciójához kell rendezni. Ha értéke *Automatikus*, akkor a rendszer automatikusan egy pozícióhoz irányítja a készletet, ha lehetséges, a rendezési sablontörések alapján.
+        Ha a mező értéke *Manuális* akkor a felhasználónak mindig meg kell adnia, a készlet melyik pozíciójához kell rendezni. Ha értéke *Automatikus* , akkor a rendszer automatikusan egy pozícióhoz irányítja a készletet, ha lehetséges, a rendezési sablontörések alapján.
 
 1. Válassza a **Mentés** parancsot, hogy a **Lekérdezés szerkesztése** gomb elérhető legyen a Műveleti panelen.
 1. A műveleti ablaktáblán válassza a **Lekérdezés szerkesztése** lehetőséget.
@@ -208,7 +209,7 @@ Hozzon létre egy új csomagolási profilt, amelyet a rendezési funkcióval egy
     - **Konténer csomagolási irányelve:** *Rendezés*
     - **Tároló-azonosító mód:** *Automatikus*
     - **Tároló típusa:** *Nagyméretű doboz*
-    - **Tároló automatikus létrehozása a tároló lezárásakor:** Törölve (= *Nem*)
+    - **Tároló automatikus létrehozása a tároló lezárásakor:** Törölve (= *Nem* )
 
 1. Válassza a **Mentés** lehetőséget.
 
@@ -469,7 +470,7 @@ Végezze el a létrehozott munkát úgy, hogy a mobileszköz segítségével át
 1. Válassza a **Kimenő** menü **Értékesítési kitárolás** elemét.
 1. Az **Azonosító** mezőbe írja be az 1. értékesítési rendeléshez létrehozott munkaazonosítót.
 1. Válassza ki az **OK** lehetőséget.
-1. Az **Értékesítési rendelések – Kitárolás** oldalon adja meg az 1. értékesítési rendeléshez létrehozott azonosítótáblát. Figyelje meg, hogy a kitárolási hely (*bulk-001*), a cikk (*A0001*) és a mennyiség (*2 db*) jelenik meg.
+1. Az **Értékesítési rendelések – Kitárolás** oldalon adja meg az 1. értékesítési rendeléshez létrehozott azonosítótáblát. Figyelje meg, hogy a kitárolási hely ( *bulk-001* ), a cikk ( *A0001* ) és a mennyiség ( *2 db* ) jelenik meg.
 1. Válassza ki az **OK** lehetőséget.
 1. Tekintse át a **Beszerzési rendelések – Betárolás** oldalon látható információkat. A **Hely** mezőnek jeleznie kell, hogy a kitárolt cikkek a *Csomagolás* helyre mennek.
 1. Válassza ki az **OK** lehetőséget.
@@ -480,7 +481,7 @@ Végezze el a létrehozott munkát úgy, hogy a mobileszköz segítségével át
 
 1. Az **Azonosító** mezőbe írja be a 2. értékesítési rendeléshez létrehozott munkaazonosítót, ahol az 1. sor cikke *A0001*.
 1. Válassza ki az **OK** lehetőséget.
-1. Az **Értékesítési rendelések – Kitárolás** oldalon adja meg a cél azonosítótáblát. Figyelje meg, hogy a kitárolási hely (*bulk-001*), a cikk (*A0001*) és a mennyiség (*1 db*) jelenik meg.
+1. Az **Értékesítési rendelések – Kitárolás** oldalon adja meg a cél azonosítótáblát. Figyelje meg, hogy a kitárolási hely ( *bulk-001* ), a cikk ( *A0001* ) és a mennyiség ( *1 db* ) jelenik meg.
 1. Válassza ki az **OK** lehetőséget.
 1. Tekintse át a **Beszerzési rendelések – Betárolás** oldalon látható információkat. A **Hely** mezőnek jeleznie kell, hogy a kitárolt cikkek a *Csomagolás* helyre mennek.
 1. Válassza ki az **OK** lehetőséget.
@@ -489,7 +490,7 @@ Végezze el a létrehozott munkát úgy, hogy a mobileszköz segítségével át
 
 1. Az **Azonosító** mezőbe írja be a 2. értékesítési rendeléshez létrehozott munkaazonosítót, ahol az 2. sor cikke *A0002*.
 1. Válassza ki az **OK** lehetőséget.
-1. Az **Értékesítési rendelések – Kitárolás** oldalon adja meg a cél azonosítótáblát. Figyelje meg, hogy a kitárolási hely (*bulk-002*), a cikk (*A0001*) és a mennyiség (*1 db*) jelenik meg.
+1. Az **Értékesítési rendelések – Kitárolás** oldalon adja meg a cél azonosítótáblát. Figyelje meg, hogy a kitárolási hely ( *bulk-002* ), a cikk ( *A0001* ) és a mennyiség ( *1 db* ) jelenik meg.
 1. Válassza ki az **OK** lehetőséget.
 1. Tekintse át a **Beszerzési rendelések – Betárolás** oldalon látható információkat. A **Hely** mezőnek jeleznie kell, hogy a kitárolt cikkek a *Csomagolás* helyre mennek.
 1. Válassza ki az **OK** lehetőséget.
@@ -521,7 +522,7 @@ Végezze el a létrehozott munkát úgy, hogy a mobileszköz segítségével át
     - **Azonosító:** Cikk *A0001*
 
 1. A műveleti ablaktáblán kattintson az **Tároló bezárása** elemre.
-1. A **Tároló lezárása** párbeszédpanelen válassza a **Rendszertömeg beolvasása lehetőséget**, ha szeretné, hogy a rendszer frissítse a **Bruttó súly** mezőt.
+1. A **Tároló lezárása** párbeszédpanelen válassza a **Rendszertömeg beolvasása lehetőséget** , ha szeretné, hogy a rendszer frissítse a **Bruttó súly** mezőt.
 1. Válassza ki az **OK** lehetőséget. A program áthelyezi a tárolót a *SORT* helyre, és készen áll a rendezésre.
 1. Hozzon létre egy másik tárolót, és adja hozzá a második elemet az 1. értékesítési rendelés azonosítótáblájáról egy új tárolóhoz.
 1. A műveleti ablaktáblán kattintson az **Új tároló** elemre.
@@ -532,7 +533,7 @@ Végezze el a létrehozott munkát úgy, hogy a mobileszköz segítségével át
     - **Azonosító:** Cikk *A0001*
 
 1. A műveleti ablaktáblán kattintson az **Tároló bezárása** elemre.
-1. A **Tároló lezárása** párbeszédpanelen válassza a **Rendszertömeg beolvasása lehetőséget**, ha szeretné, hogy a rendszer frissítse a **Bruttó súly** mezőt.
+1. A **Tároló lezárása** párbeszédpanelen válassza a **Rendszertömeg beolvasása lehetőséget** , ha szeretné, hogy a rendszer frissítse a **Bruttó súly** mezőt.
 1. Válassza ki az **OK** lehetőséget. A program áthelyezi a tárolót a *SORT* helyre, és készen áll a rendezésre.
 
 #### <a name="pack-sales-order-2-into-containers"></a>Az 2. értékesítési rendelés csomagolása tárolókba
@@ -546,7 +547,7 @@ Végezze el a létrehozott munkát úgy, hogy a mobileszköz segítségével át
     - **Azonosító:** Cikk *A0001*
 
 1. A műveleti ablaktáblán kattintson az **Tároló bezárása** elemre.
-1. A **Tároló lezárása** párbeszédpanelen válassza a **Rendszertömeg beolvasása lehetőséget**, ha szeretné, hogy a rendszer frissítse a **Bruttó súly** mezőt.
+1. A **Tároló lezárása** párbeszédpanelen válassza a **Rendszertömeg beolvasása lehetőséget** , ha szeretné, hogy a rendszer frissítse a **Bruttó súly** mezőt.
 1. Válassza ki az **OK** lehetőséget. A program áthelyezi a tárolót a *SORT* helyre, és készen áll a rendezésre.
 1. Az **Azonosítótábla vagy szállítmány** mezőbe írja be a 2. értékesítési rendelés második sorának cél azonosítótábláját. Ezután a billentyűzet **Tab** vagy **Enter** gombjával lépjen ki a mezőből.
 1. A műveleti ablaktáblán kattintson az **Új tároló** elemre.
@@ -557,7 +558,7 @@ Végezze el a létrehozott munkát úgy, hogy a mobileszköz segítségével át
     - **Azonosító mező:** Cikk *A0002*
 
 1. A műveleti ablaktáblán kattintson az **Tároló bezárása** elemre.
-1. A **Tároló lezárása** párbeszédpanelen válassza a **Rendszertömeg beolvasása lehetőséget**, ha szeretné, hogy a rendszer frissítse a **Bruttó súly** mezőt.
+1. A **Tároló lezárása** párbeszédpanelen válassza a **Rendszertömeg beolvasása lehetőséget** , ha szeretné, hogy a rendszer frissítse a **Bruttó súly** mezőt.
 1. Válassza ki az **OK** lehetőséget. A program áthelyezi a tárolót a *SORT* helyre, és készen áll a rendezésre.
 
 A tároló adatainak megtekintéséhez nyissa meg a **Raktárkezelés \> Csomagolás és tárolólétrehozás \> Tárolók** lehetőséget, és keresse meg a csomagolás során létrehozott tárolóazonosítókat.
@@ -647,7 +648,7 @@ El kell végeznie a rendezett készlet kitárolási munkafolyamatát. Amikor ez 
 1. A mobileszközön jelentkezzen be a *62-es* raktárba a forgatókönyvhöz létrehozott felhasználói azonosító (vagy egy meglévő demóadat-felhasználó) használatával.
 1. Válassza a főmenü **Kimenő** elemét.
 1. Válassza a **Kimenő** menü **Rakomány rendezésből** elemét.
-1. Adja meg a cél Azonosítótábla azonosítóját az első rendezési pozícióból, az *SP01*-ből. Állítsa az **Azonosító** mezőt *PLP01* értékre.
+1. Adja meg a cél Azonosítótábla azonosítóját az első rendezési pozícióból, az *SP01* -ből. Állítsa az **Azonosító** mezőt *PLP01* értékre.
 1. Válassza ki az **OK** lehetőséget.
 1. A **Rendezett készlet kitárolása: kitárolás** lap megjeleníti a kitárolási munkát, amelyet el kell végezni. Válassza ki a *SORT* helyet, és a cél *PLP01* azonosítótáblát, amely több cikket és *3* mennyiséget tartalmaz.
 1. Válassza ki az **OK** lehetőséget.
@@ -656,7 +657,7 @@ El kell végeznie a rendezett készlet kitárolási munkafolyamatát. Amikor ez 
 
     A munka befejeződött.
 
-1. Adja meg a cél azonosítótábla azonosítóját a második rendezési pozícióból, az *SP02*-ből. Állítsa az **Azonosító** mezőt *PLP02* értékre.
+1. Adja meg a cél azonosítótábla azonosítóját a második rendezési pozícióból, az *SP02* -ből. Állítsa az **Azonosító** mezőt *PLP02* értékre.
 1. Válassza ki az **OK** lehetőséget.
 1. A **Rendezett készlet kitárolása: kitárolás** lap megjeleníti a kitárolási munkát, amelyet el kell végezni. Válassza ki a *SORT* helyet, és a cél *PLP02* azonosítótáblát, amely több cikket és *1* mennyiséget tartalmaz.
 1. Válassza ki az **OK** lehetőséget.

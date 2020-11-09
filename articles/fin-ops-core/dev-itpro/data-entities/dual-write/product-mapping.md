@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,18 +18,16 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: ed8f0351d1e16cceb6c9749f434a8980ef2be29d
-ms.sourcegitcommit: 025561f6a21fe8705493daa290f3f6bfb9f1b962
+ms.openlocfilehash: 3c564d580d2743d8a80cdf5667b1f95e00736d60
+ms.sourcegitcommit: afc43699c0edc4ff2be310cb37add2ab586b64c0
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "3835854"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "4000764"
 ---
 # <a name="unified-product-experience"></a>Egységes terméktapasztalat
 
 [!include [banner](../../includes/banner.md)]
-
-
 
 Ha egy üzleti ökoszisztéma olyan Dynamics 365-alkalmazásokból áll, mint a Finance, a Supply Chain Management vagy a Sales, akkor a vállalkozások ezeket az alkalmazásokat használják a termék adatainak forrásaként. Ennek az az oka, hogy ezek az alkalmazások megbízható termék-infrastruktúrát biztosítanak, kiegészítve a kifinomult árképzési koncepciókkal és az aktuális készlet pontos adataival. Azok a vállalkozások, amelyek külső termékéletciklus-kezelő (PLM) rendszert használnak a termék adatainak lekéréséhez, a termékeket becsatornázhatják a Finance and Operations-alkalmazásokból más Dynamics 365-alkalmazásokba. Az egységes termékélmény az integrált termékadat-modellt elérhetővé teszi a Common Data Service szolgáltatásban, így az alkalmazás minden felhasználója (beleértve a Power Platform-felhasználókat is) igénybe veheti Finance and Operations-alkalmazáskból származó részletes termékadatokat.
 
@@ -109,7 +106,7 @@ Alapértelmezés szerint a Finance and Operations-alkalmazások termékeit szink
 
 Termékdimenziók olyan jellemzők, amelyek termékváltozat azonosítására szolgálnak. A négy termékdimenzió (szín, méret, stílus és konfiguráció) a termék változatának meghatározásához hozzá van hozzárendelve a Common Data Service szolgáltatáshoz is. A következő ábra a Szín cikkdimenzió adatmodelljét mutatja be. Ugyanez a modell a méretekre, stílusokra és a konfigurációkra is érvényes. 
 
-![Adatmodell termékekhez](media/dual-write-product-two.png)
+![Adatmodell a termékdimenziókhoz](media/dual-write-product-two.png)
 
 [!include [product colors](includes/EcoResProductColorEntity-msdyn-productcolor.md)]
 
@@ -145,7 +142,7 @@ Az alapértelmezett rendelési beállítások határozzák meg azt a helyet és 
 
 A mértékegységek és a kapcsolódó átváltás a diagramon látható adatmodellben érhetők el a Common Data Service szolgáltatásban.
 
-![Adatmodell termékekhez](media/dual-write-product-three.png)
+![Adatmodell mértékegységhez](media/dual-write-product-three.png)
 
 A mértékegység fogalma integrálva van a Finance and Operations-alkalmazások és más Dynamics 365 alkalmazások között. A Finance and Operations-alkalmazás minden egységosztálya esetében létrejön egy olyan egységcsoport a Dynamics 365-alkalmazásban, amely az egységosztályhoz tartozó egységeket tartalmazza. Minden egységcsoporthoz egy alapértelmezett alapegység is létrejön. 
 
@@ -203,7 +200,7 @@ A termékirányelvek a termékek és a készletbeli jellemzőik meghatározásá
 
 Ha egyedileg szeretné azonosítani a termékeket a Dynamics 365 for Finance and Operations és a Common Data Service-termékek között, akkor integrációs kulcsot kell használni. A termékek esetében a **(termékszám)** az az egyedi kulcs, amely azonosít egy terméket a Common Data Service szolgáltatásban. Ez a következők összefűzésével jön létre: **(company, msdyn_productnumber)**. A **company** jelöli a jogi személyt a Finance and Operations szolgáltatásban; a **msdyn_productnumber** jelöli az adott termék termékszámát a Finance and Operations szolgáltatásban. 
 
-Egy másik Dynamics 365-alkalmazás felhasználói esetén a termék a felhasználói felületen lévő **msdyn_productnumber** értékkel azonosítható (a mező címkéje a **Termékszám**). A termék képernyőjén mind a vállalat, mind a msydn_productnumber látható. A (productnumber) mező, a termék egyedi kulcsa viszont nem jelenik meg. 
+Egy másik Dynamics 365-alkalmazás felhasználói esetén a termék a felhasználói felületen lévő **msdyn_productnumber** értékkel azonosítható (a mező címkéje a **Termékszám** ). A termék képernyőjén mind a vállalat, mind a msydn_productnumber látható. A (productnumber) mező, a termék egyedi kulcsa viszont nem jelenik meg. 
 
 Ha alkalmazásokat épít a Common Data Service szolgáltatásban, akkor ügyeljen arra, hogy a **productnumber** elemet (az egyedi termékazonosító) használja integrációs kulcsként. Ne használja az **msdyn_productnumber** elemet, mert az nem egyedi. 
 

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 20847ea4651b816fc95135ca03667ae297cde5be
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 4b7d2da346880278f684a796f2d649e7da52b647
+ms.sourcegitcommit: 7592c2dec0428d56843ab395d2a52c89f77f99b5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188487"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "4097186"
 ---
 # <a name="bank-management-workspace"></a>Bankkezelési munkaterület
 
@@ -63,4 +63,4 @@ Az **Elemzés** oldalon fontos mérőszámok tekinthetők meg a jelenlegi válla
 -   Egyenleg bankszámla szerint
 -   Egyenleg pénznemenként
 
-Megtekintheti a banki elemzéseket az összes vállalatra vonatkozóan a **Készpénzáttekintés – minden vállalat** munkaterületen.
+Megtekintheti a banki elemzéseket az összes vállalatra vonatkozóan a **Készpénzáttekintés – minden vállalat** munkaterületen. További információkért lásd: [Készpénz áttekintés - Power BI tartalom](Cash-Overview-Power-BI-content.md).

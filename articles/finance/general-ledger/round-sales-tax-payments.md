@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: 6134
 ms.assetid: 7dcd3cf5-ebdf-4a9f-806c-1296c7da0331
 ms.search.region: Global
-ms.author: yijialuan
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: adc48d1841903670577684b1c3d773d323c19ea1
-ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
+ms.openlocfilehash: 998dbd01352d3fa5040187e81b564d14133464db
+ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3275674"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4014959"
 ---
 # <a name="sales-tax-payments-and-rounding-rules"></a>Forgalmi adókifizetések és kerekítési szabályok
 
@@ -46,15 +46,15 @@ A jogi személy olyan kerekítési módszert szeretne alkalmazni, amely az egyen
 1. Kattintson az **Adó** > **Közvetett adók** > **Áfa** > **Adóhatóságok** pontra.
 2. Az **Általános** gyorslapon a **Kerekítési képernyő** mezőjében válassza a **Normál** lehetőséget.
 3. A **Lekerekítés** mezőben ezt adja meg: 1,00.
-4. Amikor az áfa kifizetése esedékes az adóhatóság felé, nyissa meg az **Adó** > **Nyilatkozatok** > **Áfa** > **Áfa kiegyenlítése és feladása** lehetőséget. Az áfakiegyenlítési számlán látható az adókötelezettség, amely **98 765,43** és **98 765**-re lesz kerekítve.
+4. Amikor az áfa kifizetése esedékes az adóhatóság felé, nyissa meg az **Adó** > **Nyilatkozatok** > **Áfa** > **Áfa kiegyenlítése és feladása** lehetőséget. Az áfakiegyenlítési számlán látható az adókötelezettség, amely **98 765,43** és **98 765** -re lesz kerekítve.
 
-Az alábbi táblázat bemutatja, hogyan kerekítjük a 98 765,43 összeget az egyes kerekítési módok használatával az **Adóhatóságok lapon**, a **Kerekítési képernyő** mezőjében.
+Az alábbi táblázat bemutatja, hogyan kerekítjük a 98 765,43 összeget az egyes kerekítési módok használatával az **Adóhatóságok lapon** , a **Kerekítési képernyő** mezőjében.
 
 > [!NOTE]                                                                                  
 > Ha a kerekítési érték 0,00, akkor:
 >
 > - Normál kerekítés esetén a kerekítési mód ugyanaz, mint a **Lekerekítés = 0,01** esetében.
-> - A **Kerekítési képernyő beállításai**, **Lefelé**, **Felkerekítés** és **Saját előny** esetében a viselkedés ugyanaz, mint a **Lekerekítés = 1,00** esetében.
+> - A **Kerekítési képernyő beállításai** , **Lefelé** , **Felkerekítés** és **Saját előny** esetében a viselkedés ugyanaz, mint a **Lekerekítés = 1,00** esetében.
 
 | Kerekítési képernyőopció                | Lekerekítési érték = 0,01 | Lekerekítési érték = 0,10 | Lekerekítési érték = 1,00 | Lekerekítési érték = 100,00 | Lekerekítési érték = 0,00   |
 |-------------------------------------|------------------------|------------------------|------------------------|--------------------------|--------------------------|

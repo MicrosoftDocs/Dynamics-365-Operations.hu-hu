@@ -14,15 +14,15 @@ ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anupamar-ms
+ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 5876b953a3b3d960c106acf37731fde13b93f8e7
-ms.sourcegitcommit: ae0843763a8b6b232bb71db326fab28605ac6c53
+ms.openlocfilehash: 6610d2abe0a1b03ddd763f9a65fc1dab42f1da1b
+ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "3661172"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4015180"
 ---
 # <a name="order-details-module"></a>Rendelési részletek modul
 
@@ -38,7 +38,7 @@ A rendelési részletek modul a rendelés visszaigazolási részleteinek megjele
 
 | Tulajdonság neve  | Értékek | Leírás |
 |----------------|--------|-------------|
-| Címsor        | Fejléc szövege és fejléc címkéje (**H1**, **H2**, **H3**, **H4**, **H5** vagy **H6**) | A rendelés részletei modulnak lehet fejléce. Alapértelmezés szerint a program a címsorhoz a **H2** fejléccímkét használja. A címke azonban módosítható az akadálymentességi követelmények teljesítése érdekében. |
+| Címsor        | Fejléc szövege és fejléc címkéje ( **H1** , **H2** , **H3** , **H4** , **H5** vagy **H6** ) | A rendelés részletei modulnak lehet fejléce. Alapértelmezés szerint a program a címsorhoz a **H2** fejléccímkét használja. A címke azonban módosítható az akadálymentességi követelmények teljesítése érdekében. |
 | Kapcsolattartási telefonszám | Text | A rendeléssel kapcsolatos kérdésekhez kapcsolattartói szám adható meg. |
 
 ## <a name="modules-that-can-be-used-on-an-order-details-page"></a>A rendelési részletek oldalon használható modulok
@@ -54,15 +54,15 @@ A rendelés részletei modul új oldalra való felvételéhez és a kötelező t
 
 1. Lépjen a **Sablonok** pontra, majd új sablon készítéséhez válassza az **Új** elemet.
 1. Az **Új sablon** párbeszédablakban a **Sablon neve** alatt adja meg a **Rendelés részletei** nevet, majd válassza az **OK** gombot.
-1. A **Törzs** helyben válassza a három pont (**…**) gombot, majd válassza az **Modul hozzáadása** elemet.
+1. A **Törzs** helyben válassza a három pont ( **…** ) gombot, majd válassza az **Modul hozzáadása** elemet.
 1. A **Modul hozzáadása** párbeszédpanelen válassza ki az **Alapértelmezett oldal** modult, majd kattintson az **OK** gombra.
-1. Az **Alapértelmezett lap** modul **Fő** helyén válassza ki a három pont (**…**) gombot, majd válassza a **Modul hozzáadása** elemet.
+1. Az **Alapértelmezett lap** modul **Fő** helyén válassza ki a három pont ( **…** ) gombot, majd válassza a **Modul hozzáadása** elemet.
 1. A **Modul hozzáadása** párbeszédpanelen válassza ki a **Rendelés részletei** modult, majd kattintson az **OK** gombra.
 1. Válassza a **Mentés** lehetőséget, majd a sablon előnézetének megtekintéséhez az **Előnézet** elemet. A rendelési részletek modul nem kerül megjelenítésre, mert szükséges hozzá a rendelés megerősítési számának a környezete.
 1. Válassza a **Szerkesztés befejezése** parancsot a sablon ellenőrzéséhez, majd a **Közzététel** elemet a közzétételhez.
 1. Lépjen az **Oldalak** pontra, majd válassza az **Új** lehetőséget új oldal létrehozásához.
-1. A **Sablon kiválasztása** párbeszédpanelen válassza ki a **Rendelés részletei sablont**. Az **Oldal neve** alatta adja meg a **Rendelés részletei oldalt**, majd kattintson az **OK** gombra.
-1. Az **Alapértelmezett lap** modul **Fő** helyén válassza ki a három pont (**…**) gombot, majd válassza a **Modul hozzáadása** elemet.
+1. A **Sablon kiválasztása** párbeszédpanelen válassza ki a **Rendelés részletei sablont**. Az **Oldal neve** alatta adja meg a **Rendelés részletei oldalt** , majd kattintson az **OK** gombra.
+1. Az **Alapértelmezett lap** modul **Fő** helyén válassza ki a három pont ( **…** ) gombot, majd válassza a **Modul hozzáadása** elemet.
 1. A **Modul hozzáadása** párbeszédpanelen válassza ki a **Rendelés részletei** modult, majd kattintson az **OK** gombra.
 1. A rendelés részletei modul tulajdonságlapján válassza a ceruza szimbólum melletti **Címsor** elemet.
 1. A **Címsor** párbeszédpanel **Címsor szövege** mezőjébe írja be a **Rendelés részletei** címsorszöveget, majd válassza az **OK** gombot.

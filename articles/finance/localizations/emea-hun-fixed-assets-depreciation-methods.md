@@ -18,12 +18,12 @@ ms.search.region: Hungary
 ms.author: anasyash
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: d7c8c31e16a9c6dffb6a203c99df9faea0e52807
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 0d37adc40d33e465536fc3a39160392eca3132c9
+ms.sourcegitcommit: d61c43b6bc04bb8786aa3c47932be0ccd84ebaeb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175773"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "4006272"
 ---
 # <a name="fixed-assets-depreciation-methods-for-hungary"></a>Tárgyi eszközök értékcsökkenési módjai Magyarország esetében
 
@@ -39,13 +39,13 @@ Ez a témakör a magyarországi jogi személyek tárgyi eszközeinek értékcsö
 Az egyes értékcsökkenési módokban az értékcsökkenési összeg kiszámítása az egyes időszakok naptári napjain alapul a magyar vállalati adózási törvények előírásai alapján. Az értékcsökkenési szabályok le vannak tiltva a kapcsolódó értékcsökkenési profilokban.
 
 ## <a name="depreciation-method-straight-line-hungary"></a>Értékcsökkenési mód: lineáris (Magyarország)
-Ha tárgyieszköz-értékcsökkenési profilt állít be, és a **Lineáris (Magyarország** lehetőséget választja az **Értékcsökkenési mód** mezőben, akkor az ehhez az értékcsökkenési profilhoz társított eszközök értékcsökkenése az eszközök teljes élettartamán és az egyes időszakok napjainak tényleges számán fog alapulni.
+Ha tárgyieszköz-értékcsökkenési profilt állít be, és a **Lineáris (Magyarország)** lehetőséget választja az **Értékcsökkenési mód** mezőben, akkor az ehhez az értékcsökkenési profilhoz társított eszközök értékcsökkenése az eszközök teljes élettartamán és az egyes időszakok napjainak tényleges számán fog alapulni.
 
 ### <a name="example-straight-line-hungary-depreciation"></a>Példa: Lineáris (Magyarország) értékcsökkenés
 
 Tegyük fel, hogy egy tárgyi eszköz a következő jellemzőkkel rendelkezik.
 
-|                    |                                       |
+|    &nbsp;          | &nbsp;                                |
 |--------------------|---------------------------------------|
 | Beszerzési költség   | 120 000                               |
 | Beszerzési dátum   | Január 1.                             |
@@ -70,7 +70,7 @@ Ha beállít egy tárgyi eszközök értékcsökkenésével kapcsolatos profilt,
 
 Tegyük fel, hogy egy tárgyi eszköz a következő jellemzőkkel rendelkezik.
 
-|                    |           |
+|  &nbsp;            | &nbsp;    |
 |--------------------|-----------|
 | Beszerzési költség   | 120 000   |
 | Beszerzési dátum   | Január 1. |
@@ -91,7 +91,7 @@ Az éves értékcsökkenési összeg az év manuális százalékán alapul: Ért
 | 1. év | 48 000 (= 120 000 × 40%)                      |
 | 2. év | 72 000 (= 120 000 × 60%)                      |
 
-Ha egy egységhez beállított időszak gyakorisága kisebb, mint az **Éves** (például **Féléves**, **Negyedéves** vagy **Havi**), az éves értékcsökkenési összeget a rendszer az egyes időszakokra osztja el. Az elosztás az év napjainak számán (365 vagy 366) és az adott időszak hosszán alapul. Az alábbi táblázat a Szorzótényezős értékcsökkenési mód számítási eredményeit mutatja be, amikor az időszak gyakoriságának beállítása **Féléves**.
+Ha egy egységhez beállított időszak gyakorisága kisebb, mint az **Éves** (például **Féléves** , **Negyedéves** vagy **Havi** ), az éves értékcsökkenési összeget a rendszer az egyes időszakokra osztja el. Az elosztás az év napjainak számán (365 vagy 366) és az adott időszak hosszán alapul. Az alábbi táblázat a Szorzótényezős értékcsökkenési mód számítási eredményeit mutatja be, amikor az időszak gyakoriságának beállítása **Féléves**.
 
 | Időszak     | Napok száma | Szorzótényezős értékcsökkenés összege |
 |------------|----------------|-----------------------------------------------|
@@ -101,13 +101,13 @@ Ha egy egységhez beállított időszak gyakorisága kisebb, mint az **Éves** (
 | H2, 2. év | 184            | 36 295,89 (= 72 000 ÷ 365 × 181)              |
 
 ## <a name="depreciation-method-factor-hungary"></a>Értékcsökkenési mód: tényező (Magyarország)
-Ha beállít egy tárgyi eszközök értékcsökkenésével kapcsolatos profilt, és a **Tényező (Magyarország** értéket választja az **Értékcsökkenési mód** mezőben, akkor az ehhez az értékcsökkenési profilhoz társított eszközök esetében az értékcsökkenés számítása a **Tényező** mezőben beállított egyetlen százalékérték alapján történik minden évben.
+Ha beállít egy tárgyi eszközök értékcsökkenésével kapcsolatos profilt, és a **Tényező (Magyarország)** értéket választja az **Értékcsökkenési mód** mezőben, akkor az ehhez az értékcsökkenési profilhoz társított eszközök esetében az értékcsökkenés számítása a **Tényező** mezőben beállított egyetlen százalékérték alapján történik minden évben.
 
 ### <a name="example-factor-hungary-depreciation"></a>Példa: Tényezős (Magyarország) értékcsökkenés
 
 Tegyük fel, hogy egy tárgyi eszköz a következő jellemzőkkel rendelkezik.
 
-|                    |           |
+|  &nbsp;            | &nbsp;    |
 |--------------------|-----------|
 | Beszerzési költség   | 120 000   |
 | Beszerzési dátum   | Január 1. |
@@ -122,7 +122,7 @@ Az éves értékcsökkenési összeg az év tényezős százalékán alapul: Ér
 | 1. év | 60 000 (= 120 000 × 50%)                 |
 | 2. év | 60 000 (= 120 000 × 50%)                 |
 
-Ha egy egységhez beállított időszak gyakorisága kisebb, mint az **Éves** (például **Féléves**, **Negyedéves** vagy **Havi**), az éves értékcsökkenési összeget a rendszer az egyes időszakokra osztja el. Az elosztás az év napjainak számán (365 vagy 366) és az adott időszak hosszán alapul. Az alábbi táblázat a Tényezős (Magyarország) értékcsökkenési mód számítási eredményeit mutatja be, amikor az időszak gyakoriságának beállítása **Féléves**.
+Ha egy egységhez beállított időszak gyakorisága kisebb, mint az **Éves** (például **Féléves** , **Negyedéves** vagy **Havi** ), az éves értékcsökkenési összeget a rendszer az egyes időszakokra osztja el. Az elosztás az év napjainak számán (365 vagy 366) és az adott időszak hosszán alapul. Az alábbi táblázat a Tényezős (Magyarország) értékcsökkenési mód számítási eredményeit mutatja be, amikor az időszak gyakoriságának beállítása **Féléves**.
 
 | Időszak     | Napok száma | Tényezős (Magyarország) értékcsökkenés összege |
 |------------|----------------|------------------------------------------|
@@ -138,7 +138,7 @@ Ha beállít egy tárgyi eszközök értékcsökkenésével kapcsolatos profilt,
 
 Tegyük fel, hogy egy tárgyi eszköz a következő jellemzőkkel rendelkezik.
 
-|                    |           |
+|  &nbsp;            | &nbsp;    |
 |--------------------|-----------|
 | Beszerzési költség   | 120 000   |
 | Beszerzési dátum   | Január 1. |
@@ -154,7 +154,7 @@ Az éves értékcsökkenési összeg az adott évre kiszámított százalékon a
 | 3. év | 20% (= 2 ÷ 10) | 24 000 (= 120 000 × 20%)                     |
 | 4. év | 10% (= 1 ÷ 10) | 12 000 (= 120 000 × 10%)                     |
 
-Ha egy egységhez beállított időszak gyakorisága kisebb, mint az **Éves** (például **Féléves**, **Negyedéves** vagy **Havi**), az éves értékcsökkenési összeget a rendszer az egyes időszakokra osztja el. Az elosztás az év napjainak számán (365 vagy 366) és az adott időszak hosszán alapul. Az alábbi táblázat az Évek összegének számjegyei értékcsökkenési mód egy évre vonatkozó számítási eredményeit mutatja be, amikor az időszak gyakoriságának beállítása **Féléves**.
+Ha egy egységhez beállított időszak gyakorisága kisebb, mint az **Éves** (például **Féléves** , **Negyedéves** vagy **Havi** ), az éves értékcsökkenési összeget a rendszer az egyes időszakokra osztja el. Az elosztás az év napjainak számán (365 vagy 366) és az adott időszak hosszán alapul. Az alábbi táblázat az Évek összegének számjegyei értékcsökkenési mód egy évre vonatkozó számítási eredményeit mutatja be, amikor az időszak gyakoriságának beállítása **Féléves**.
 
 | Időszak     | Százalék     | Napok száma | Évek összegének számjegyei összege |
 |------------|----------------|----------------|----------------------------------------------|

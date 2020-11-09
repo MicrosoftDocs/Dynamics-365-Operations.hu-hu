@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c240e11394582ad1af563ee4a8e58632babfff3a
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: b02bfd83cfc4f1585c9044ebca8b20413042124a
+ms.sourcegitcommit: d61c43b6bc04bb8786aa3c47932be0ccd84ebaeb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3976379"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "4006166"
 ---
 # <a name="cost-rollup-policy-and-overhead-calculation"></a>Költségösszesítési irányelv többletköltségek kiszámítása 
 
@@ -76,7 +76,7 @@ A szervezeti jelentési követelményeket teljesítő dimenziók hierarchiája a
 
 **Dimenzióhierarchia**
 
-|              | Dimenziótag tartományok |                     |
+|    &nbsp;    | Dimenziótag tartományok | &nbsp;              |
 |--------------|-------------------------|---------------------|
 | **Csomópontok**        | **Forrásdimenzió-tag**   | **Céldimenziótag** |
 | Szervezet |                         |                     |
@@ -97,7 +97,7 @@ Az irányelvi követelményeket teljesítő dimenziók hierarchiája az alábbia
 
 **Dimenzióhierarchia**
 
-|                         | Dimenziótag tartományok |                     |
+|      &nbsp;             | Dimenziótag tartományok |      &nbsp;         |
 |-------------------------|-------------------------|---------------------|
 | Csomópontok                   | Forrásdimenzió-tag   | Céldimenziótag |
 | Eredménykimutatás |                         |                     |
@@ -105,7 +105,7 @@ Az irányelvi követelményeket teljesítő dimenziók hierarchiája az alábbia
 
 A főkönyvi bejegyzések feldolgozását követően a költségobjektum szerinti költségbejegyzés-egyenleg a következőképpen néz ki.
 
-|                      | **Költségobjektum** |           |           |           | **Összesen**     |
+|      &nbsp;          | **Költségobjektum** | &nbsp;    |  &nbsp;   |  &nbsp;   | **Összesen**     |
 |----------------------|-----------------|-----------|-----------|-----------|---------------|
 | **Költségösszetevő**     | **CC001**       | **CC002** | **CC003** | **CC004** |               |
 | **1001 Villamos energia** | 100,00          | 200 000    | 6.000,00  | 2.000,00  | **8.300,00**  |
@@ -159,7 +159,7 @@ Ha meg szeretné tudni, hogyan megy végbe a költségforgalom a szervezet költ
 
 A költségelemek dimenziótagjait a következőképpen lehet megadni.
 
-| Költségösszetevők | Típus          |               |
+| Költségösszetevők | Típus          |     &nbsp;    |
 |---------------|---------------|---------------|
 | 1001          | Villamos energia   | Elsődleges       |
 | 1002          | Bérek      | Elsődleges       |
@@ -179,7 +179,7 @@ Az **Eredménykimutatás** dimenzióhierarchiát frissíteni kell az új dimenzi
 
 **Dimenzióhierarchia**
 
-|                         | Dimenziótag tartományok |                     |
+|      &nbsp;             | Dimenziótag tartományok |  &nbsp;             |
 |-------------------------|-------------------------|---------------------|
 | Csomópontok                   | Forrásdimenzió-tag   | Céldimenziótag |
 | Eredménykimutatás |                         |                     |
@@ -211,7 +211,7 @@ Hozzon létre egy **Költségösszegzési irányelvet** , ahol az egyes költsé
 |---------|-------------------------|------------------------|------|--------|---------------|
 | 00002   | Költségfelosztási napló | Pénzügyi                 | 2017    | 1. időszak | Járulékos költség számítása / 01-02-2017 11:51:00 PM / Főkönyv /2017 / 1. időszak |
 
-A rendszer akkor alkalmazza a **Költségösszegzési irányelvet** , amikor létrehozza a **Költségobjektum-egyenlegek naplóbejegyzéseit** .
+A rendszer akkor alkalmazza a **Költségösszegzési irányelvet** , amikor létrehozza a **Költségobjektum-egyenlegek naplóbejegyzéseit**.
 
 **Költségobjektum-egyenlegek naplóbejegyzései**
 
@@ -258,7 +258,7 @@ A dimenzióhierarchiák lehetővé teszik az adatok különböző aggregációs 
 
 Íme egy példa a Power Pivot kimutatásokról az Excelben:
 
-| **Eredménykimutatás** | **Költségobjektum** |                |               |               |  **Összesen**    |
+| **Eredménykimutatás** | **Költségobjektum** |      &nbsp;    |   &nbsp;      |     &nbsp;    |  **Összesen**    |
 |-----------------------------|-----------------|----------------|---------------|---------------|---------------|
 |                             | **CC001**       | **CC002**      | **CC003**     | **CC004**     |               |
 | **Elsődleges költség**            | **10.100,00**   | **14.200,00**  | **14.000,00** | **8.500,00**  | **46.800,00** |
@@ -276,7 +276,7 @@ A **Költségösszegzési irányelv** és a **Másodlagos típusú költségelem
 
 Ha ugyanezt a példát a **Költségösszegzési irányelv** létrehozása nélkül hajtanánk végre, akkor a jelentési eredmény az alábbiak szerint alakulna. A költségforgalom helyesen történik, de elveszik a nyomon követhetőség és a költséghelyek közötti költségforgalomra való rálátás.
 
-| **Eredménykimutatás** | **Költségobjektum** |           |               |               |          **Összesen**  |
+| **Eredménykimutatás** | **Költségobjektum** |   &nbsp;  |    &nbsp;     |  &nbsp;       |          **Összesen**  |
 |-----------------------------|-----------------|-----------|---------------|---------------|---------------|
 |                             | **CC001**       | **CC002** | **CC003**     | **CC004**     |               |
 | **Elsődleges költség**            | **0,00**        | **0,00**  | **31.082,75** | **15.717,25** | **46.800,00** |

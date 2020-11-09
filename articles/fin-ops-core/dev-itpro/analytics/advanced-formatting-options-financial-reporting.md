@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 3b04f78f2a8210837e16c8246609ad2fddd804f0
-ms.sourcegitcommit: 0dace221e8874021dd212271567666f717d39793
+ms.openlocfilehash: 5dbc856f21b6398109ab1ac4da409252050385df
+ms.sourcegitcommit: cb94f16d69455cbf6fd059f9f394e7623810c924
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "3071590"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "4011579"
 ---
 # <a name="advanced-formatting-options-in-financial-reporting"></a>Speciális formázási beállítások a pénzügyi jelentésben
 
 [!include [banner](../includes/banner.md)]
 
-Pénzügyi jelentésről készült jelentés létrehozásakor további formázási funkciók érhetők el, többek között a dimenziók szűrői, oszlopok és jelentési egységek korlátozásai, a nem nyomtatható sorok és a számításokban szereplő IF/THEN/ELSE kimutatások. 
+Pénzügyi jelentésről készült jelentés létrehozásakor további formázási funkciók érhetők el, többek között a dimenziók szűrői, oszlopok és jelentési egységek korlátozásai, a nem nyomtatható sorok és a számításokban szereplő IF/THEN/ELSE kimutatások.
 
 Az alábbi táblázat bemutatja a rendelkezésre álló formázási funkciókat a jelentések tervezésekor.
 
@@ -44,6 +44,7 @@ Az alábbi táblázat bemutatja a rendelkezésre álló formázási funkciókat 
 | Egyszeres idézőjelek ('') és „és” jel (&) használata a dimenzióértékeknél | A jelentéstervezéshez használhat dimenzióértékeket, többek között az „és” jelet. |
 
 ## <a name="advanced-cell-placement"></a>Speciális cella elhelyezése
+
 A speciális cella elhelyezése, vagy a *Kényszerítés* adott értékek meghatározott cellába való elhelyezését jelenti. Például a kényszerítés gyakran használatos a megfelelő egyenleg elmozdítására egy pénzforgalmi jelentésben. A kényszerítést például a következő célokra használhatja:
 
 - Microsoft Excel-táblázatokból származó értékeket helyezhet el adott cellákban.
@@ -52,11 +53,12 @@ A speciális cella elhelyezése, vagy a *Kényszerítés* adott értékek meghat
 
 > [!NOTE]
 > Sok esetben úgy kell konfigurálnia a jelentésdefiníciót, hogy az oszlopszámítások a sorszámítások előtt történjenek. Ennek a konfigurációnak a befejezéséhez kövesse az alábbi lépéseket.
-> 
+>
 > 1. A Jelentéstervezőben nyissa meg a jelentésdefiníciót.
 > 2. A **Beállítások** lapon, a **Számítási prioritás** lehetőségnél jelölje be az **Először az oszlopszámítás, majd a sorszámítás végrehajtása** lehetőséget.
 
 ## <a name="designing-the-report"></a>A jelentés megtervezése
+
 A jelentés tervezésekor először hozza létre a leíró sorokat, hogy az értékek az elvárások szerint legyenek behúzva. Ezután adja hozzá a **NP** (nem nyomtatható) formátumot, hogy elrejtse a végleges értékeket tartalmazó részleteket.
 
 > [!IMPORTANT]
@@ -65,6 +67,7 @@ A jelentés tervezésekor először hozza létre a leíró sorokat, hogy az ért
 A kényszerítéshez a képletek a következő formátumot használják: &lt;<céloszlop&gt;=&lt;forrásoszlop&gt;.&lt;sor kódja&gt; A sor további hozzáadott helyeit vesszővel és szóközzel kell elválasztani. Példa: D=C.190,E=C.100
 
 ## <a name="examples-of-advanced-formatting-options"></a>Példák speciális formázási beállításokra
+
 Az alábbi példák bemutatják, hogyan formatáljuk a sordefiníciót és az oszlopdefiníciót, hogy alapvető pénzforgalmi jelentést (1. példa) és statisztikai jelentést (2. példa) kapjunk.
 
 ### <a name="example-1-basic-forcing"></a>1. példa: alapvető kényszerítés
@@ -78,17 +81,17 @@ Az alábbi táblázat egy sordefiníció példáját mutatja be, amely alapvető
 | 160      |                                  |             |                             |                            |                              |
 | 190      |                                  |             |                             |                            |                              |
 
-> [!NOTE] 
+> [!NOTE]
 > Az előző táblázatban a bemutató céljára üres oszlopok lettek eltávolítva: a Formátum felülbírálásához, a Normál egyenleg, a Nyomtatás-ellenőrzés és az Oszlopkorlátozás oszlopok nem jelennek meg.
 
 Az alábbi táblázat egy oszlopdefiníció példáját mutatja be, amely alapvető kényszerítést használ a sorban.
 
-|                              | N   | milliárd    | K        | A      | E:      | P    |
+|           Formátum             | A   | milliárd    | K        | T      | E      | P    |
 |------------------------------|-----|------|----------|--------|--------|------|
 | 1. fejléc                     |     |      |          |        |        |      |
-| 2. fejléc                     | N   | milliárd    | K        | A      | E:      | P    |
+| 2. fejléc                     | A   | milliárd    | K        | T      | E      | P    |
 | 3. fejléc                     |     |      |          |        |        |      |
-| Oszloptípus                  | SOR | DESC | FD       | FD     | FD     | CALC |
+| Oszloptípus                  | ROW | DESC | FD       | FD     | FD     | CALC |
 | Könyvelési kód / Attribútumkategória |     |      | TÉNYLEGES   | TÉNYLEGES | TÉNYLEGES |      |
 | Pénzügyi év                  |     |      | ALAP     | ALAP   | ALAP   |      |
 | Időszak                       |     |      | ALAP     | ALAP   | ALAP   |      |
@@ -113,14 +116,14 @@ Az alábbi táblázat egy sordefiníció példáját mutatja be, amely kényszer
 | 310      | Egyesült államokbeli értékesítés                  | CAL         | D=C.190,E=C.100,F=(C.100/C.190) |                      |                |                                            |
 | 340      | Nemzetközi értékesítés       | CAL         | D=C.220,E=C115,F=(C.220/C.115)  |                      |                |                                            |
 
-> [!NOTE] 
+> [!NOTE]
 > Az előző táblázatban a bemutató céljára üres oszlopok lettek eltávolítva: a Nyomtatás-ellenőrzés, az Oszlopkorlátozás és a Sormódosító oszlopok nem jelennek meg.
 
 Az alábbi táblázat egy oszlopdefiníció példáját mutatja be, amely kényszerítést használ a statisztikai jelentéshez.
 
-|                              | A:   | milliárd    | K      | T            | E:     | P            |
+|    Formátum                    | A   | milliárd    | K      | T            | E     | P            |
 |------------------------------|-----|------|--------|--------------|-------|--------------|
-| 1. fejléc                     | A:   | milliárd    | K      | T            | E:     | P            |
+| 1. fejléc                     | A   | milliárd    | K      | T            | E     | P            |
 | 2. fejléc                     | -   | -    | Folyó évi    | Éves értékesítés | Munkatárs | $ személyenként |
 | 3. fejléc                     |     |      |        |              |       |              |
 | Oszloptípus                  | SOR | DESC | FD     | CALC         | CALC  | CALC         |
@@ -132,6 +135,7 @@ Az alábbi táblázat egy oszlopdefiníció példáját mutatja be, amely kénys
 | Oszlopszélesség                 | 5   | 30   | 14     | 14           | 14    | 14           |
 
 ## <a name="restricting-a-row-to-a-specific-reporting-unit"></a>Egy meghatározott jelentési egységre korlátozza a sort.
+
 Ha egy jelentési sort egy bizonyos jelentési egységre korlátozunk, akkor az a sor a csatolt adatokat csak a megnevezett jelentési egységhez mutatja, és a jelentési fa egyéb jelentési egységeinél az adatokat figyelmen kívül hagyja. Például létrehozhat egy sort, amely a teljes működési költségek egy adott részleghez tartozó részleteit jeleníti meg. A jelentés ismétlődő adatokat tartalmazhat, ha a jelentés tartalmaz egy jelentési fát és sordefiníciót is, amely a természetes fiókon túl többet is tartalmaz. Például adott egy jelentési fa, amely a cégen belül hat részleget sorol fel, és adott egy sordefiníció is, amely egy számla és egy részleg meghatározott kombinációját sorolja fel. A jelentés létrehozásakor a számla és a részleg a megadott kombinációja lesz rányomtatva a jelentési fa minden szintjére annak ellenére, hogy az adott részleg lehet, hogy nem felel meg annak, ami a fában van. Ennek az az oka, hogy a sor felülbírálja azt, amit a jelentésdefiníció általában kiszűr. Az adatismétlődés elkerülésének egyik módja, hogy egy sort egy meghatározott jelentési egységre korlátozunk.
 
 > [!NOTE]
@@ -139,13 +143,14 @@ Ha egy jelentési sort egy bizonyos jelentési egységre korlátozunk, akkor az 
 
 ### <a name="restrict-a-row-to-a-reporting-unit"></a>Sor korlátozása egy jelentési egységre
 
-1. A Jelentés Tervező eszközben, kattintson a **Sor Definíciók**, majd válassza ki a sor definíciót, hogy módosítsa.
+1. A Jelentés Tervező eszközben, kattintson a **Sor Definíciók** , majd válassza ki a sor definíciót, hogy módosítsa.
 2. Kattintson duplán a megfelelő **Kapcsolódó képletek/sorok/egységek** cellára.
 3. A **Jelentési egység kiválasztása** párbeszédpanelen található **Jelentésfa** mezőben válassza ki a jelentésdefinícióban megadott fát.
 4. Válasszon ki egy jelentési egységet, és kattintson az **OK** gombra. A korlátozás a sordefiníció cellájában jelenik meg.
 5. Kattintson duplán a cellára a korlátozott sor **Hivatkozás a pénzügyi dimenziókhoz** oszlopában, és írjon be egy hivatkozást a pénzügyi adatok rendszerébe.
 
 ## <a name="selecting-print-control-in-a-row-definition"></a>Nyomtatásvezérlés kijelölése sordefinícióban
+
 Az egyes oszlopokhoz megadhat nyomtatásvezérlő kódokat a **Nyomtatásvezérlés** cella használatával.
 
 ### <a name="add-print-control-codes-to-a-report-row"></a>Nyomtatásvezérlő kódok hozzáadása a jelentés sorához
@@ -182,24 +187,26 @@ A következő táblázat leírja a sordefiníció feltételes nyomtatásvezérl�
 | K                 | Csak a követel egyenlegek nyomtatása a sorban. |
 
 ## <a name="column-restriction-cell-in-a-row-definition"></a>Oszlopkorlátozás cella egy oszlopdefinícióban
+
 Az **Oszlopkorlátozás** cellának a sordefinícióban több célja van. Attól függően, hogy milyen típusú sorról van szó, használhatja az **Oszlopkorlátozás** cellát a következő funkciók egyikének megadására:
 
 - A cella a sor összegeinek nyomtatását egy adott oszlopra korlátozhatja. Ez a funkció akkor hasznos, ha táblázatos mérleget hoz létre.
 - A cella meg tudja határozni a rendezni kívánt összegek oszlopát.
 
 ## <a name="using-a-calculation-formula-in-a-row-definition"></a>Számítási képlet alkalmazása egy sordefinícióban
-Egy sordefinícióban a számítási képlet a **+**, **-**, **\*** és **/** operátorokat tartalmazhatja, és az **IF/THEN/ELSE** utasításokat. Továbbá a számítás egyes cellákat és abszolút összegeket (a képletben szereplő tényleges számokat) foglalhat magában. A képlet legfeljebb 1,024 karakterből állhat. A számítások nem alkalmazhatók olyan sorokra, melyek **Hivatkozás a pénzügyi dimenziókhoz** (FD) típusú cellákat tartalmaznak. Azonban alkalmazhat számításokat egymás utáni sorokon, kihagyhatja ezen sorok nyomtatását, és ezután összesítheti a számítási sorokat.
+
+Egy sordefinícióban a számítási képlet a **+** , **-** , **\*** és **/** operátorokat tartalmazhatja, és az **IF/THEN/ELSE** utasításokat. Továbbá a számítás egyes cellákat és abszolút összegeket (a képletben szereplő tényleges számokat) foglalhat magában. A képlet legfeljebb 1,024 karakterből állhat. A számítások nem alkalmazhatók olyan sorokra, melyek **Hivatkozás a pénzügyi dimenziókhoz** (FD) típusú cellákat tartalmaznak. Azonban alkalmazhat számításokat egymás utáni sorokon, kihagyhatja ezen sorok nyomtatását, és ezután összesítheti a számítási sorokat.
 
 ### <a name="operators-in-a-calculation-formula"></a>Egy számítási képlet operátorai
 
 A számítási képletek összetettebb operátorokat használnak, mint a sorösszegző képletek. Azonban használhatja a **\*** és **/** operátorokat a további operátorokkal együtt az összegek szorzásához (\*) és (/) elosztásához. Egy tartomány vagy az összeg számítási képletben való használatához a kukac (@) jelet kell használni minden sorkód előtt, kivéve, ha oszlopot használ a sordefinícióban. Például ha a 100. sor összegét szeretné hozzáadni a 330. sor összegéhez, használhatja a **100 + 330** sorösszeg képletet vagy a **@100+@330** számítási képletet.
 
 > [!NOTE]
-> Minden sorkód előtt, amelyet számítási képletben használ, használnia kell a kukac (@) jelet. Ellenkező esetben a szám abszolút összegként lesz beolvasva. Ha például a képlet **@100 + 330**, akkor 330 USD-t ad a 100-as sorban lévő összeghez. Amikor a számítási képletben szereplő oszlopra hivatkozik, nem szükséges a kukac jel (@).
+> Minden sorkód előtt, amelyet számítási képletben használ, használnia kell a kukac (@) jelet. Ellenkező esetben a szám abszolút összegként lesz beolvasva. Ha például a képlet **@100 + 330** , akkor 330 USD-t ad a 100-as sorban lévő összeghez. Amikor a számítási képletben szereplő oszlopra hivatkozik, nem szükséges a kukac jel (@).
 
 ### <a name="create-a-calculation-formula"></a>Számítási képlet létrehozása
 
-1. A Jelentés Tervező eszközben, kattintson **Sor Definíciók**, majd nyissa meg a sor definíciót, hogy módosítsa.
+1. A Jelentés Tervező eszközben, kattintson **Sor Definíciók** , majd nyissa meg a sor definíciót, hogy módosítsa.
 2. Kattintson duplán a **Formátumkód** cellára, majd válassza ki a **CAL** lehetőséget.
 3. A **Kapcsolódó képletek/Sorok/Egységek** cellába írja be a számítási képletet.
 
@@ -213,10 +220,10 @@ Ebben a példában a **@100+@330** számítási képlet azt jelenti, hogy a 100-
 | 370      | Készpénz az év kezdetén   | CAL         | @100+@330                  | NP            |              |                              |
 | 400      | Készpénz az időszak kezdetén | TOT         | 340+370                    |               |              |                              |
 
-Ha a sor a sordefinícióban **CAL** formátumkóddal rendelkezik, és matematikai számítást ír be a **Kapcsolódó képletek/Sorok/Egységek** cellába, akkor is meg kell adnia a jelentésen a kapcsolódó oszlop és sor betűjét. Például adja meg a következőt: **A.120** az A oszlop és 120. sor jelölésére. Másik lehetőségként használhatja a kukac (@) jelet az összes oszlop kijelölésére. Például adja meg a következőt: **@120**, amely a 120. sor összes oszlopára vonatkozik. Minden olyan matematikai számítás, amely nem rendelkezik oszlopbetűvel vagy kukac (@) jellel, valós számként lesz értelmezve.
+Ha a sor a sordefinícióban **CAL** formátumkóddal rendelkezik, és matematikai számítást ír be a **Kapcsolódó képletek/Sorok/Egységek** cellába, akkor is meg kell adnia a jelentésen a kapcsolódó oszlop és sor betűjét. Például adja meg a következőt: **A.120** az A oszlop és 120. sor jelölésére. Másik lehetőségként használhatja a kukac (@) jelet az összes oszlop kijelölésére. Például adja meg a következőt: **@120** , amely a 120. sor összes oszlopára vonatkozik. Minden olyan matematikai számítás, amely nem rendelkezik oszlopbetűvel vagy kukac (@) jellel, valós számként lesz értelmezve.
 
 > [!NOTE]
-> Megjegyzés: címke sorkód használatakor pontot (.) kell használni az oszlopbetű és a címke elválasztására (például **A.BRUTTÓ\_NYERESÉG/A.ÉRTÉKESÍTÉS**). Ha kukac jelet (@) használ, az elválasztó nem kötelező (például **\@BRUTTÓ\_HASZON/@ÉRTÉKESÍTÉS**).
+> Megjegyzés: címke sorkód használatakor pontot (.) kell használni az oszlopbetű és a címke elválasztására (például **A.BRUTTÓ\_NYERESÉG/A.ÉRTÉKESÍTÉS** ). Ha kukac jelet (@) használ, az elválasztó nem kötelező (például **\@BRUTTÓ\_HASZON/@ÉRTÉKESÍTÉS** ).
 
 ### <a name="example-of-a-calculation-formula-for-a-specific-column"></a>Példa a számítási képletre egy adott sorhoz
 
@@ -235,8 +242,8 @@ Ebben a példában a számítási képlet **E=C.340** azt jelenti, hogy a C oszl
 
 Amikor módosít egy számot vagy számítást egy bizonyos sor egyik oszlopában, de nem szeretné, hogy ez a jelentés többi oszlopára hatással legyen, megadhatja a **CAL** (Számítás) lehetőséget a sordefiníció **Formátumkód** oszlopában.
 
-- Ha egy számítást a jelentés összes (**FD**) oszlopán el szeretne végezni, ne adjon meg oszlop-hozzárendelést.
-- Ha egy képletet bizonyos oszlopokra kíván korlátozni, írja be az oszlopbetűt, egy egyenlőségjelet (**=**), és ezután a képletet.
+- Ha egy számítást a jelentés összes ( **FD** ) oszlopán el szeretne végezni, ne adjon meg oszlop-hozzárendelést.
+- Ha egy képletet bizonyos oszlopokra kíván korlátozni, írja be az oszlopbetűt, egy egyenlőségjelet ( **=** ), és ezután a képletet.
 - Megadhat hogy több oszlopot. Ha a kukac jelet (@) megadott oszlopelhelyezéssel használja, a kukac jel (@) a sorhoz kapcsolódik.
 - Több oszlopképletet is megadhat egy sorban. A képleteket vesszővel válassza el egymástól.
 
@@ -266,9 +273,9 @@ Az **Időszakok** kifejezés az **IF** állításban az időszakok számát jele
 
 A **THEN** és AZ **ELSE** képletek lehetnek bármilyen érvényes számítások, a nagyon egyszerű értékhozzárendelésektől az összetett képletekig. Például az **IF A.200&gt;0 THEN A=B.200** utasítás azt jelenti, hogy „Ha a 200. sor A osztlopában a cella értéke nagyobb, mint 0 (nulla), a 200. sor B oszlopában lévő cella értékét másolja át az aktuális sor A oszlopában lévő cellába." A megelőző **IF/THEN** állítás ad meg értéket az aktuális sor egy oszlopában. Azonban használhatja a kukac jelet (@) is az igaz/hamis értékelésekben, vagy pedig a képletet, az összes oszlop jelölésére. Íme néhány további példa, amelyek a következő szakaszokban vannak leírva:
 
-- **IF A.200 &gt;0 THEN B.200**: Ha az A.200 cella értéke pozitív, akkor a B.200 cella értékét az aktuális sor minden oszlopába be kell írni.
-- **IF A.200&gt;0, THEN @200**: Ha az A.200 cella értéke pozitív, akkor a 200. sor minden oszlopának értékét az aktuális sor megfelelő oszlopába be kell írni.
-- **IF @200 &gt;0 THEN @200**: Ha az aktuális oszlop 200. sorában az érték pozitív, akkor a 200. sor értéke ugyanabba az oszlopba, az aktuális sorba kerül.
+- **IF A.200 &gt;0 THEN B.200** : Ha az A.200 cella értéke pozitív, akkor a B.200 cella értékét az aktuális sor minden oszlopába be kell írni.
+- **IF A.200&gt;0, THEN @200** : Ha az A.200 cella értéke pozitív, akkor a 200. sor minden oszlopának értékét az aktuális sor megfelelő oszlopába be kell írni.
+- **IF @200 &gt;0 THEN @200** : Ha az aktuális oszlop 200. sorában az érték pozitív, akkor a 200. sor értéke ugyanabba az oszlopba, az aktuális sorba kerül.
 
 ### <a name="restricting-a-calculation-to-a-reporting-unit-in-a-row-definition"></a>Egy számítás egy sordefiníció egyik jelentési egységére korlátozása
 
@@ -280,7 +287,7 @@ A jelentési fában egy számítás egyetlen jelentési egységére való korlá
 A számítási sor vonatkozhat egy számítási sorra vagy egy pénzügyi adatsorra. A számítást a rendszer rögzíti a sordefiníció **Kapcsolódó képletek/Sorok/Egységek** cellájába és a pénzügyi adat típusú korlátozásba. A számításnak feltételes számítást kell használnia, amely **IF @Unit** szerkezettel kezdődik. Példa: IF @Unit(SALES) THEN @100 ELSE 0 Ez a számítás a jelentés minden oszlopának a 100. sorában szereplő összegre vonatkozik, de csak az ÉRTÉKESÍTÉSI (SALES) egység számára. Ha több egységnek is ÉRTÉKESÍTÉS (SALES) a neve, az összeg minden ilyen egységben megjelenik. Ezenkívül a 100. sor lehet pénzügyi adatokat tartalmazó sor, és meg lehet adni, hogy ne legyen nyomtatható. Ebben az esetben az összeget a rendszer nem jeleníti meg a fa összes egységében. Az összeget a jelentés egyetlen oszlopára is korlátozhatja, például a H oszlopra, úgy, hogy oszlopkorlátozást használ, melynek segítségével az érték a jelentésnek csak ebben az oszlopában lesz kinyomtatva. Felvehet **OR** kombinációkat is az **IF** kimutatásban. Példa: IF @Unit(SALES) OR @Unit(SALESWEST), THEN 5 ELSE @100 A számítási típus korlátozásában a következő módokon adhat meg egységet:
 
 - Egységnév megadása a megfelelő egységek szerepeltetéséhez Például az **IF @Unit(SALES)** lehetővé teszi, hogy minden ÉRTÉKESÍTÉS (SALES) nevű egységre vonatkozzon a számítás, akkor is, ha több ÉRTÉKESÍTÉSI (SALES) egység szerepel a jelentési fában.
-- Ha a számítást a cégen belül csak bizonyos egységekre kívánja korlátozni, adja meg a cég és az egység nevét. Például adja meg az **IF @Unit(ACME:SALES**) kódot, ha a számítást az ACME vállalaton belül az ÉRTÉKESÍTÉSI (SALES) egységekre szeretné korlátozni.
+- Ha a számítást a cégen belül csak bizonyos egységekre kívánja korlátozni, adja meg a cég és az egység nevét. Például adja meg az **IF @Unit(ACME:SALES** ) kódot, ha a számítást az ACME vállalaton belül az ÉRTÉKESÍTÉSI (SALES) egységekre szeretné korlátozni.
 - Adja meg a teljes hierarchiakódot a jelentési fából, hogy egy meghatározott egységre korlátozza a számítást. Például adja meg az **IF @Unit(SUMMARY^ACME^WEST COAST^SALES)** kódot.
 
 > [!NOTE]
@@ -301,6 +308,6 @@ Az **IF/THEN/ELSE** állítás lehetővé teszi, hogy bármely számítás bárm
 
 #### <a name="use-single-quotes-and-an-ampersand-for-dimension-values-in-a-row-column-or-tree"></a>Egyszeres idézőjelek ('') és „és” jel (&) használata a dimenzióértékeknél egy sorban, oszlopban vagy fastruktúrában
 
-Jelentéseket tervezhet dimenzióértékek használatával, amelyekben „és” jel (&) szerepel. 
+Jelentéseket tervezhet dimenzióértékek használatával, amelyekben „és” jel (&) szerepel.
 
-Bármely **Kapcsolás pénzügyi dimenziókhoz** mezőn belül megadhat olyan értéket, mint például az **Eredmény (P&L)**. A dimenzióérték mindkét oldalán szereplő egyszeres idézőjelek ('') azt jelzik, hogy szövekonstans értéket használ, például az „és” (&) jelet. 
+Bármely **Kapcsolás pénzügyi dimenziókhoz** mezőn belül megadhat olyan értéket, mint például az **Eredmény (P&L)**. A dimenzióérték mindkét oldalán szereplő egyszeres idézőjelek ('') azt jelzik, hogy szövekonstans értéket használ, például az „és” (&) jelet.

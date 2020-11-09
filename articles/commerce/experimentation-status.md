@@ -3,7 +3,7 @@ title: Kísérlet állapotának áttekintése
 description: Ez a témakör azt mutatja be, hogy a Dynamics 365 Commerce rendszeren belüli kísérletezési életciklusban mi lehet egy adott kísérlet állapota.
 author: sushma-rao
 manager: AnnBe
-ms.date: 10/01/2020
+ms.date: 10/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,17 +18,17 @@ ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 097206c0aa487e14499bdf3907465e17b7d337e2
-ms.sourcegitcommit: b6ab46f6e5ce60e2c3d70a348827eaf60c84cae2
+ms.openlocfilehash: eea67ddc1718902198b74614ee1a910fc6e29c1d
+ms.sourcegitcommit: 7592c2dec0428d56843ab395d2a52c89f77f99b5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "3930209"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "4097070"
 ---
 # <a name="review-the-status-of-an-experiment"></a>Kísérlet állapotának áttekintése
 A kísérletek Dynamics 365 Commerce rendszerben való beállítása és futtatása számos lépést igényel. A kísérletezési életciklussal kapcsolatos tudnivalókért lásd: [Kísérletezés a Dynamics 365 Commerce rendszerben](experimentation-overview.md).
 
-Ha meg szeretné tudni, hol tart egy kísérlet az életciklusban, lépjen a **Kísérletek** fülre a webhelykészítőben. A kísérletek listája az egyes kísérletek állapotával együtt megjelenik a Commerce modulban és a kísérletek létrehozásához, változatok hozzárendeléséhez és adatok elemzésére használt harmadik fél szolgáltatásban is.
+Ha meg szeretné tudni, hol tart egy kísérlet az életciklusban, a Commerce webhelykészítőben lépjen a **Kísérletek** fülre a bal oldali navigációs panelen. A kísérletek listája az egyes kísérletek állapotával együtt megjelenik a Commerce modulban és a kísérletek létrehozásához, változatok hozzárendeléséhez és adatok elemzésére használt harmadik fél szolgáltatásban is.
 
 A **Commerce állapot** oszlopban a következő értékek jelenhetnek meg. 
 - **Piszkozat** – A kísérletet egy Commerce modulon belüli oldalhoz vagy töredékhez csatlakoztatták, és éppen a szerkesztése tart.

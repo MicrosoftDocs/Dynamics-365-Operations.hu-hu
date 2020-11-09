@@ -6,7 +6,7 @@ manager: PJacobse
 ms.date: 07/09/2020
 ms.topic: reprint-and-void-wave-labels
 ms.service: dynamics-ax-applications
-ms.search.form: WHSWaveLabel, WHSWaveLabelTemplate
+ms.search.form: WHSWaveLabel, WHSWaveLabelTemplate, WHSWaveLabelLayoutRow, WHSWaveTableListPage, WHSWorkException, WHSMobileDisplayWaveLabelListLookup, WHSWaveLabelLayout, WHSWaveLabelType, WHSWaveLabelTemplateGroup
 audience: Application User
 ms.reviewer: PJacobse
 ms.search.scope: Core, Operations
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-07-09
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 0b831361631aa66712813706eaa4ff3339683868
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: af92334af28824b3fcebde5f046bd7c6da459885
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3986647"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016654"
 ---
 # <a name="reprint-and-void-wave-labels"></a>Hullámcímkék újranyomtatása és érvénytelenítése
 

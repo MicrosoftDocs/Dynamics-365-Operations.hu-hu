@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 363ce16b31a199e519c969746c4f10430d9d7497
-ms.sourcegitcommit: 165e082e59ab783995c16fd70943584bc3ba3455
+ms.openlocfilehash: cd87983ce062bd1fa57e97628986cadced9971ab
+ms.sourcegitcommit: 374298f0816b57c95c0c3e3fd7e852399e1d8696
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "3967258"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3999549"
 ---
 # <a name="get-started-with-financial-reporting"></a>Financial Reporting – első lépések 
 
@@ -152,7 +152,7 @@ A jelentéskészítő megnyitásakor problémák merülhetnek fel néhány gyako
 * Ha a Chrome böngészőt használja a Microsoft Edge-hez, akkor telepítenie kell a ClickOnce kiterjesztést a jelentéstervező kliens letöltéséhez. Ha a böngészőt inkognitó módban futtatja, győződjön meg arról, a ClickOnce kiterjesztés engedélyezve van-e az inkognitó módban. 
      1. Új böngésző megnyitása a Microsoft Edge-ben.
      2. Adja az **edge://flags** parancsot, és válassza az **Enter** billentyűt.
-     3. Keresse meg a **ClickOnce támogatás** beállítást, vagy használja ezt a közvetlen hivatkozást: **edge://flags/#edge-click-once** .
+     3. Keresse meg a **ClickOnce támogatás** beállítást, vagy használja ezt a közvetlen hivatkozást: **edge://flags/#edge-click-once**.
      4. A legördülő menü beállítását állítsa **Engedélyezett** értékre.
      5. Válassza a **Böngésző újraindítása** lehetőséget.
 

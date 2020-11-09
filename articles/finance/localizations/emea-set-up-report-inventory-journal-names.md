@@ -17,12 +17,12 @@ ms.search.region: Estonia, Hungary, Latvia, Lithuania, Poland
 ms.author: v-lenest
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d051c8ab7f15f69dd06db0986c3151b61d595b6d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: f8b52043f9c09dfe7e80f9fec7b495acd3ccb590
+ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175769"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4015025"
 ---
 # <a name="inventory-journal-reports"></a>Készletnapló-jelentések
 
@@ -30,11 +30,10 @@ ms.locfileid: "2175769"
 
 Konfigurálható készletjelentések elektronikus jelentés alapján történő használatakor be kell állítani egy kapcsolatot az adott jelentés és egy naplótípusa között.
 
-Egy adott jelentés és naplótípus közötti kapcsolat beállításához a **Készletnaplónevek** oldalon (**Készletgazdálkodás** &gt; **Beállítás** &gt; **Naplónevek** &gt; **Készlet**) adja meg a jelentés nevét. **Megjegyzés:** támogatott konfigurációk beállításához töltse le a szükséges elektronikus jelentési konfigurációkat. További tudnivalókért lásd: [Az elektronikus jelentési beállítások letöltése a Lifecycle Services rendszerből](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md). Az alábbi táblázatban példák találhatók Európában támogatott konfigurációjú készletjelentésekre.
+Egy adott jelentés és naplótípus közötti kapcsolat beállításához a **Készletnaplónevek** oldalon ( **Készletgazdálkodás** &gt; **Beállítás** &gt; **Naplónevek** &gt; **Készlet** ) adja meg a jelentés nevét. **Megjegyzés:** támogatott konfigurációk beállításához töltse le a szükséges elektronikus jelentési konfigurációkat. További tudnivalókért lásd: [Az elektronikus jelentési beállítások letöltése a Lifecycle Services rendszerből](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md). Az alábbi táblázatban példák találhatók Európában támogatott konfigurációjú készletjelentésekre.
 
-|                    |                                     |                  |                                         |
+| Ország/régió            |    Jelentés leírása               | Napló típusa     |    Formátum-hozzárendelés neve                  |
 |--------------------|-------------------------------------|------------------|-----------------------------------------|
-| **Ország**        | **Jelentés leírása**              | **Napló típusa** | **Formátum-hozzárendelés neve**                 |
 | Litvánia, Magyarország | Készletkimutatás-jelentés          | Számlálás         | Készletkimutatás (HU, LT)            |
 | Lettország, Lengyelország     | Készletátsorolási bizonylat | Átvitel         | InventoryReclassificationDocument\_PLLV |
 | Észtország            | Készletátsorolási bizonylat | Átvitel         | InventoryReclassificationDocument\_EE   |

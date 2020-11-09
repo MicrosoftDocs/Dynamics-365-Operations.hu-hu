@@ -16,15 +16,15 @@ ms.custom: 19311
 ms.assetid: 5ffb1486-2e08-4cdc-bd34-b47ae795ef0f
 ms.search.region: Global
 ms.search.industry: ''
-ms.author: roxanad
+ms.author: kamaybac
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 18a9b7ed4cd26a806002fb1b4684de1e84f39889
-ms.sourcegitcommit: c55fecae96b4bb27bc313ba10a97eddb9c91350a
+ms.openlocfilehash: 1c1b940754021956998fe27ba16020d4b16aedf1
+ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "3989275"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4015067"
 ---
 # <a name="improve-scheduling-engine-performance"></a>Az ütemezési motor teljesítményének javítása
 
@@ -238,11 +238,7 @@ Ha például egy erőforráscsoport munkaideje egy adott napon 8:00 és 16:00 k�
 
 A feladatütemezésből adott napon az erőforráscsoport összes erőforrására háruló terhelést az erőforráscsoport azonos napi elérhető kapacitásának kiszámításánál figyelembe veszi a rendszer. Minden dátum esetén a számítás a következő:
 
-> Elérhető erőforráscsoport-kapacitás =  
-> (a csoport erőforrásainak kapacitása a naptár alapján) -  
-> (a csoport erőforrásainak feladatütemezés szerinti terhelése) -  
-> (a csoport erőforrásainak műveletütemezés szerinti terhelése) -  
-> (az erőforráscsoport műveletütemezés szerinti terhelése)
+*Elérhető erőforráscsoport-kapacitás = a csoport erőforrásainak kapacitása a naptáruk alapján &ndash; a csoport erőforrásainak ütemezett munkaterhelése &ndash; a csoport erőforrásainak ütemezett műveleti terhelése &ndash; az erőforráscsoport ütemezett műveleti terhelése*
 
 Az útvonal-művelet **Erőforrásigények** lapján az erőforrásigények egy adott erőforrás használatával (amely esetben a művelet ütemezése az adott erőforrás használatával történik), egy erőforráscsoport, egy erőforrástípus, illetve egy vagy több képesség, szakértelem, tanfolyam vagy tanúsítvány szerint adhatók meg. Bár az összes ilyen beállítás használatával nagy rugalmasság érhető el az útvonaltervezésben, ez a motor számára egyben az ütemezést is bonyolítja, mert a kapacitást a „tulajdonság” (a motorban a képességek, szakértelmek stb. esetében használt absztrakt név) alapján kell elszámolni.
 
@@ -252,11 +248,7 @@ Műveletütemezés során a rendszer csökkenti az erőforráscsoport számára 
 
 Minden dátum esetén a szükséges számítás a következő:
 
-> Egy képességhez rendelkezésre álló kapacitás =  
-> (a képesség kapacitása) -  
-> (feladatütemezési terhelés az erőforráscsoportba tartozó és az adott képességgel rendelkező erőforrásokon) -  
-> (műveletütemezési terhelés az erőforráscsoportba tartozó és az adott képességgel rendelkező erőforrásokon) -  
-> (műveletütemezési terhelés magán az adott képességet igénylő erőforráscsoporton)
+*Egy képességhez rendelkezésre álló kapacitás = a képesség kapacitása &ndash; az illető képességgel rendelkező erőforrások ütemezett munkaterhelése, ideértve az erőforráscsoportot &ndash; az erőforráscsoportba tartozó, illető képességgel rendelkező erőforrások ütemezett műveleti terhelése &ndash; az erőforráscsoport ütemezett, az illető képességet igénylő műveleti terhelése*
 
 Ez azt jelenti, hogy ha egy adott erőforráson terhelés van, akkor a rendszer a terhelést figyelembe veszi az erőforráscsoport képességek szerinti elérhető kapacitásának kiszámításában, mert egy adott erőforrás terhelése csökkenti annak hozzájárulását az erőforráscsoport képesség szerinti kapacitásához, függetlenül attól, hogy az adott erőforrás terhelése az adott tulajdonságra vonatkozik-e. Ha az erőforráscsoport szintjén van terhelés, akkor a rendszer csak akkor veszi figyelembe az erőforráscsoport képesség szerinti rendelkezésre álló kapacitás kiszámításában, ha a terhelés olyan műveletből származik, amelyhez az adott képesség szükséges.
 

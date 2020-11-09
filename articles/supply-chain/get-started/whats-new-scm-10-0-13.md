@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: af468f0cc5d5f1baab62afb3cf90dfca353b3291
-ms.sourcegitcommit: 5bb36b74935ffe140367fd6ecf956b4857ad12e5
+ms.openlocfilehash: 49b90037c182e10d0cc9d449649e8501537fdc4f
+ms.sourcegitcommit: 9dd2d38e76d4d93171315ec319e6ce7d51d4e6c7
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "3802943"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "4012390"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10013-october-2020"></a>Új vagy módosult elemek a Dynamics 365 Supply Chain Management szolgáltatásban – 10.0.13. (2020. október)
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör a Microsoft Dynamics 365 Supply Chain Management 10.0.13 előzetes változatának új vagy módosított szolgáltatásait írja le. Ennek a verziónak 10.0.569 a buildszáma, és a következő módon érhető el:
+Ez a témakör a Microsoft Dynamics 365 Supply Chain Management 10.0.13 új vagy módosított szolgáltatásait sorolja fel. Ennek a verziónak 10.0.569 a buildszáma, és a következő módon érhető el:
 
 - **Előzetes kiadás:** 2020. augusztus
 - **Általános elérhetőség (saját frissítés):** 2020. szeptember
@@ -49,8 +49,6 @@ Ez a kiadás a következő funkciókat tartalmazza: A funkciók címei további 
 - [Új készletdimenziók a termékverzió nyomon követéséhez és továbbfejlesztett bővíthetőségéhez](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/new-inventory-dimensions-product-version-tracking-enhanced-extensibility)<br> - További információ: [Termékdimenziók](../pim/product-dimensions.md).
 
 - [Rendelésben véglegesített foglalás azonosítótáblák alapján](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/order-committed-reservation-based-license-plates-lp-picking-processing)<br> - További információ: [Rugalmas azonosítótábla-foglalás](../warehousing/flexible-warehouse-level-dimension-reservation.md#flexible-license-plate-reservation).
-
-- [Kimenő munkaterhelések megjelenítése](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/warehouse-management--workload-visualization)
 
 - [Munka kitárolási sora – áttekintés](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/work-pick-line-overview)
 

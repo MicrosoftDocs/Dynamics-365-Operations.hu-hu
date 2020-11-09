@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ConsignmentDraftReplenishmentOrderJournal, ConsignmentProductReceiptLines, ConsignmentReplenishmentOrder, ConsignmentVendorPortalOnHand, InventJournalOwnershipChange, InventOnHandItemListPage, PurchTable, PurchVendorPortalConfirmedOrders, DirPartyTable, EcoResTrackingDimensionGroup, InventJournalName, InventOwner, InventTableInventoryDimensionGroups, VendTable
+ms.search.form: ConsignmentDraftReplenishmentOrderJournal, ConsignmentProductReceiptLines, ConsignmentReplenishmentOrder, ConsignmentVendorPortalOnHand, InventJournalOwnershipChange, InventOnHandItemListPage, PurchTable, PurchTablePart, PurchVendorPortalConfirmedOrders, DirPartyTable, EcoResTrackingDimensionGroup, InventJournalName, InventOwner, InventTableInventoryDimensionGroups, VendTable
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: af30938929677ad0e1388760e6b7a992a8718240
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 0127cc64688bc7878623b08ef143dfd040484ce0
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3212894"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018376"
 ---
 # <a name="set-up-consignment"></a>Bizomány beállítása
 
@@ -40,7 +40,7 @@ Ebben a példában az USMF vállalat szállítmányozási szerződést köt az U
 2.  A szállító tájékoztatást kap a várható szállításról. Erre az alábbi három módszer egyikével kerül sor:
     -   Valaki, aki az USMF-nél dolgozik, elküldi a rendelési adatokat a szállítónak.
     -   A szállító figyelemmel követheti a várható, rendelkezésre álló készletet a szállítói együttműködés felhasználói felületén.
-    -   Valaki, aki az USMF-nél dolgozik, szűri az **aktuális készlet** lapján lévő adatokat, hogy csak az USA-104 szállító rekordjai jelenjenek meg, ahol a bevételezés állapota **Megrendelve**, majd ezeket az adatokat elküldi a szállítónak.
+    -   Valaki, aki az USMF-nél dolgozik, szűri az **aktuális készlet** lapján lévő adatokat, hogy csak az USA-104 szállító rekordjai jelenjenek meg, ahol a bevételezés állapota **Megrendelve** , majd ezeket az adatokat elküldi a szállítónak.
 3.  A készlet leszállításra kerül az USA-104-től az USMF-nek.
 4.  Amikor az anyag megérkezik az USMF-hez, a szállítmány feltöltési rendelése frissül a termékbevételezéssel. Csak a szállító által birtokolt készlet tényleges mennyisége kerül rögzítésre. Nem jönnek főkönyvi tranzakciók, mert a készlet tulajdonosa továbbra is a szállító.
 5.  A szállító figyeli a tényleges, aktuális készlet frissítését a **Szállítmány aktuális készlete** lapon.
@@ -53,7 +53,7 @@ Ebben a példában az USMF vállalat szállítmányozási szerződést köt az U
 Az USMF további ismétlődő folyamatokat végez:
 
 -   A szállító által birtokolt készletnek a különböző raktárok közötti fizikai mozgatásának feldolgozása átviteli napló segítségével történik.
--   A tényleges, rendelkezésre álló készlet egy**Cikkleltár**napló segítségével frissül. A leltárt a szállító is használhatja az aktuális készlet frissítésére, ha rendelkezik ehhez engedéllyel.
+-   A tényleges, rendelkezésre álló készlet egy **Cikkleltár** napló segítségével frissül. A leltárt a szállító is használhatja az aktuális készlet frissítésére, ha rendelkezik ehhez engedéllyel.
 
 Az US-104 szállító figyelemmel követheti a frissítéseket a **Szállítmány aktuális készlete** oldal segítségével.
 
@@ -67,7 +67,7 @@ A **Tulajdonos** dimenzió segítségével lehet különválasztani azokat az in
 ## <a name="inventory-ownership-change-journal"></a>Készlet tulajdonosváltozási naplója
 A készlettulajdonos-változási napló segítségével végezhető el az a folyamat, amelynek során a tulajdonjog átszáll a szállítóról a fogadó jogi személyre. Várhatóan nem jönnek létre készlettranzakciók a naplóhoz kapcsolódóan. Csak olyan készlettranzakciók jönnek létre, amelyek a feladott naplóhoz kapcsolódnak. Mikor kerül feladásra a napló?
 
--   A szállító által birtokolt készlet kiadása egy **Eladva**állapotú **Tulajdonos módosítása** hivatkozással történik.
+-   A szállító által birtokolt készlet kiadása egy **Eladva** állapotú **Tulajdonos módosítása** hivatkozással történik.
 -   Megtörténik az aktuális készlet érkeztetése felhasználást végző jogi személyhez egy termékbevételezéssel frissített készlettranzakcióval, a beszerzési rendelésen. Ezzel a rendelés állapotát **Beérkezettre** állítja. A szállítmányhoz használt beszerzési rendelések **Származás** mezőjének beállítása **Szállítmány**.
 
 A szállítmány beszerzési rendelésének soraiban szereplő mennyiséget nem lehet frissíteni a rendelés létrehozása után.
@@ -82,17 +82,17 @@ A szállítói együttműködés felülete három oldallal rendelkezik a bejöv�
 -   **Az aktuális szállítmány készlete** - olyan szállítmányelemekről mutat információkat, amelyek várhatóan leszállításra kerülnek, és olyan cikkekről, amelyek már ténylegesen rendelkezésre állnak a vevő telephelyén.
 
 ## <a name="inventory-owners"></a>Készlettulajdonosok
-Fizikai bejövő bizományosi készlet rögzítéséhez meg kell határozni a szállító-tulajdonost. Ez a **készlettulajdonos** oldalon történik. Ha bejelöli a **szállítói számlát**, ezzel létrehozza a **Név** és **Tulajdonos** mezők alapértelmezett értékeit. Az a **tulajdonos** mezőben lévő érték látható a szállító számára, ezért érdemes úgy módosítani, hogy a szállítói számla nevei ne legyenek könnyen felismerhetők külső felhasználók számára. A **tulajdonos** mezőt lehet módosítani, de csak addig a pontig, amikor menti a **készlettulajdonos** rekordot. A **Név** mezőt a rendszer automatikusan beírja annak a félnek a neve alapján, akihez a szállítói számla hozzá van rendelve, és ez nem módosítható.
+Fizikai bejövő bizományosi készlet rögzítéséhez meg kell határozni a szállító-tulajdonost. Ez a **készlettulajdonos** oldalon történik. Ha bejelöli a **szállítói számlát** , ezzel létrehozza a **Név** és **Tulajdonos** mezők alapértelmezett értékeit. Az a **tulajdonos** mezőben lévő érték látható a szállító számára, ezért érdemes úgy módosítani, hogy a szállítói számla nevei ne legyenek könnyen felismerhetők külső felhasználók számára. A **tulajdonos** mezőt lehet módosítani, de csak addig a pontig, amikor menti a **készlettulajdonos** rekordot. A **Név** mezőt a rendszer automatikusan beírja annak a félnek a neve alapján, akihez a szállítói számla hozzá van rendelve, és ez nem módosítható.
 
 [![készlettulajdonosok](./media/inventory-owners.png)](./media/inventory-owners.png)
 
 ## <a name="tracking-dimension-group"></a>Nyomonkövetésidimenzió-csoport
-A bizományosi folyamatokban használandó cikkeket társítani kell egy **nyomon követési dimenziócsoporttal**, ahol a **tulajdonos** dimenzió értéke **aktív**. A tulajdonos dimenzió esetében a **leltár** és a **pénzügyi készlet** opció mindig ki van választva. A **fedezeti terv dimenziónként** soha nincs bejelölve.
+A bizományosi folyamatokban használandó cikkeket társítani kell egy **nyomon követési dimenziócsoporttal** , ahol a **tulajdonos** dimenzió értéke **aktív**. A tulajdonos dimenzió esetében a **leltár** és a **pénzügyi készlet** opció mindig ki van választva. A **fedezeti terv dimenziónként** soha nincs bejelölve.
 
 [![nyomonkövetésidimenzió-csoport](./media/tracking-dimension-group.png)](./media/tracking-dimension-group.png)
 
 ## <a name="inventory-ownership-change-journal"></a>Készlet tulajdonosváltozási naplója
-A **készlettulajdonos-változási**napló arra szolgál, hogy rögzítse, amikor a bizományosi készlet tulajdonosa a szállítóról a felhasználó jogi személyre változik. Mint bármely készletnapló esetében ezt is azonosítani kell egy készletnapló-névvel. Ezeknek a neveknek a létrehozása a **készletnapló-nevek** lapon történik, és a **naplótípust** **tulajdonos módosítása** értékre kell állítani.
+A **készlettulajdonos-változási** napló arra szolgál, hogy rögzítse, amikor a bizományosi készlet tulajdonosa a szállítóról a felhasználó jogi személyre változik. Mint bármely készletnapló esetében ezt is azonosítani kell egy készletnapló-névvel. Ezeknek a neveknek a létrehozása a **készletnapló-nevek** lapon történik, és a **naplótípust** **tulajdonos módosítása** értékre kell állítani.
 
 [![készlet tulajdonosváltozási naplója](./media/inventory-ownership-change-journal.png)](./media/inventory-ownership-change-journal.png)
 

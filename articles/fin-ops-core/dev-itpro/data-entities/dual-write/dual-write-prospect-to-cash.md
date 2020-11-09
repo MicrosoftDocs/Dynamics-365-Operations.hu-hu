@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: 6fe42f43277448dc5918597ed8bb1b68f2266b6a
-ms.sourcegitcommit: 4ba10abe5be8a21b95370cd970a622e954970984
+ms.openlocfilehash: b21d468d672277be14877b93e291e9833659c54a
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3829212"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997400"
 ---
 # <a name="prospect-to-cash-in-dual-write"></a>Potenciális vevők készpénzre váltása kettős írásban
 
@@ -57,15 +56,15 @@ A Supply Chain Management alkalmazásban az ajánlati sorokban és a rendelési 
 
 A Supply Chain Management és a Sales számsorozatai nem kapcsolódnak, amikor árajánlatokat és rendeléseket hoz létre, és szinkronizálja azokat a Sales és Supply Chain Management alkalmazásokban. Ha a Sales alkalmazásban létrehozott értékesítési rendelés szinkronizálva van a Supply Chain Management alkalmazásba, ugyanaz az értékesítésirendelés-száma van a Supply Chain Management alkalmazásban. Annak elősegítéséhez, hogy az értékesítési rendelés száma ne legyen duplikálva, a két alkalmazásban különböző számsorozat-rendszereket kell használni.
 
-Például a Supply Chain Management számsorozata **1, 2, 3, 4, 5, ...**, a Sales számsorozata pedig **100, 99, 98, ...**. Ha 100 értékesítési rendelést hoz létre a Sales alkalmazásban, akkor az végül létrejön egy olyan szám, ami már létezik a Supply Chain Management alkalmazásban. Más szóval a két számsorozat átfedésben lesz, mivel az értékesítési rendeléseket a Supply Chain Management és a Sales alkalmazásokban is létrehozzák. Helyette lehet használni egy más számsorozatot, például **F1, F2, F3, ...** a Supply Chain Management alkalmazásban és egy másik számsorozatot, például **C1, C2, C3, ...** a Sales alkalmazásban. Ezek a Számsorozatok soha nem hoznak létre dupla értékesítési rendelési számokat.
+Például a Supply Chain Management számsorozata **1, 2, 3, 4, 5, ...** , a Sales számsorozata pedig **100, 99, 98, ...**. Ha 100 értékesítési rendelést hoz létre a Sales alkalmazásban, akkor az végül létrejön egy olyan szám, ami már létezik a Supply Chain Management alkalmazásban. Más szóval a két számsorozat átfedésben lesz, mivel az értékesítési rendeléseket a Supply Chain Management és a Sales alkalmazásokban is létrehozzák. Helyette lehet használni egy más számsorozatot, például **F1, F2, F3, ...** a Supply Chain Management alkalmazásban és egy másik számsorozatot, például **C1, C2, C3, ...** a Sales alkalmazásban. Ezek a Számsorozatok soha nem hoznak létre dupla értékesítési rendelési számokat.
 
 ## <a name="sales-quotations"></a>Értékesítési ajánlatok
 
 Az értékesítési ajánlat létrehozása a Sales vagy Supply Chain Management programban történik. Ha a Sales alkalmazásban árajánlatot hoz létre, akkor a rendszer valós időben szinkronizálja a Supply Chain Management alkalmazásba. Hasonlóan, ha a Supply Chain Management alkalmazásban árajánlatot hoz létre, akkor a rendszer valós időben szinkronizálja a Sales alkalmazásba. Vegye figyelembe az alábbiakat:
 
-+ A termékre kedvezmény adható az árajánlatban. Ebben az esetben a rendszer szinkronizálja az engedményt a Supply Chain Management alkalmazásba. A fejlécen az **Engedmény**, **Költségek** és **Adó** mezők a Supply Chain Management szolgáltatásból szabályozhatók. Ez a beállítás nem támogatja integrációs megfeleltetést. Ehelyett az **Ár**, **Engedmény**, **Költség**, és **Adó** mezők karbantartása és kezelése a Supply Chain Management alkalmazásban történik.
++ A termékre kedvezmény adható az árajánlatban. Ebben az esetben a rendszer szinkronizálja az engedményt a Supply Chain Management alkalmazásba. A fejlécen az **Engedmény** , **Költségek** és **Adó** mezők a Supply Chain Management szolgáltatásból szabályozhatók. Ez a beállítás nem támogatja integrációs megfeleltetést. Ehelyett az **Ár** , **Engedmény** , **Költség** , és **Adó** mezők karbantartása és kezelése a Supply Chain Management alkalmazásban történik.
 + Az **Árengedmény %** **Árengedmény** és **Szállítási mennyiség** mezők az értékesítési ajánlat fejlécében csak olvashatók.
-+ A **Szállítási feltételek**, **Kiszállítási feltételek**, **Szállítási módszer**, és **Szállítási mód** mezők nem találhatók meg a alapértelmezett-leképezései. Ezek a mezők megfeleltetéséhez be kell állítania egy adott szervezetek között szinkronizált entitás adatainak értékmegfeleltetések.
++ A **Szállítási feltételek** , **Kiszállítási feltételek** , **Szállítási módszer** , és **Szállítási mód** mezők nem találhatók meg a alapértelmezett-leképezései. Ezek a mezők megfeleltetéséhez be kell állítania egy adott szervezetek között szinkronizált entitás adatainak értékmegfeleltetések.
 
 Ha a Field Service megoldást is használja, mindenképpen engedélyezze újra az **ajánlati sor gyorslétrehozása** paraméterét. A paraméter ismételt engedélyezése lehetővé teszi az Árajánlati sorok létrehozásának folytatását a gyorslétrehozás funkció segítségével.
 1. Keresse meg a Dynamics 365 Sales alkalmazást.
@@ -111,7 +110,7 @@ Az értékesítési számlák létrehozása a Supply Chain Management történik
 + Egy **Számla száma mező** hozzáadódik a **Számla** entitáshoz, és megjelenik a lapon.
 + A **Számla létrehozása** gomb az **Értékesítési rendelés** lapon rejtve van, mivel a számlák létrehozása a Supply Chain Management szolgáltatásban történik, és szinkronizálódik a Sales szolgáltatásba. A **Számla** lap tartalma nem szerkeszthető, mert a számlák a Supply Chain Management szolgáltatásból szinkronizálódnak.
 + Az **Értékesítési rendelés állapota** automatikusan **Számlázott** értékre változik, amikor a Supply Chain Management szolgáltatásból a kapcsolódó számla szinkronizálása a Sales szolgáltatásba megtörténik. Az értékesítési rendelés tulajdonosa, amelyből a számlát létrehozták, hozzárendelésre kerül a számla tulajdonosaként. Emiatt az értékesítési rendelés tulajdonosa megtekintheto a számlát.
-+ A **Szállítási feltételek**, **Kiszállítási feltételek** és **Kiszállítási mód** mezők nem szerepelnek a alapértelmezett-leképezései. Ezek a mezők megfeleltetéséhez be kell állítania egy adott szervezetek között szinkronizált entitás adatainak értékmegfeleltetések.
++ A **Szállítási feltételek** , **Kiszállítási feltételek** és **Kiszállítási mód** mezők nem szerepelnek a alapértelmezett-leképezései. Ezek a mezők megfeleltetéséhez be kell állítania egy adott szervezetek között szinkronizált entitás adatainak értékmegfeleltetések.
 
 ## <a name="templates"></a>Sablonok
 

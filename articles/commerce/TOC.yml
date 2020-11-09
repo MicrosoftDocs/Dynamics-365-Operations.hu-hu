@@ -98,8 +98,6 @@
                       href: get-started/whats-new-commerce-10-0-14.md
                     - name: Commerce 10.0.13 (2020. október)
                       href: get-started/whats-new-commerce-10-0-13.md
-                    - name: Commerce 10.0.12 (2020. augusztus)
-                      href: get-started/whats-new-commerce-10-0-12.md
                 - name: Eltávolított vagy elavult funkciók
                   items:
                     - name: Eltávolított vagy elavult funkciók a Finance and Operations szolgáltatásban
@@ -1040,6 +1038,8 @@
                       href: add-breadcrumb.md
                     - name: Navigációs menü modul
                       href: nav-menu-module.md
+                    - name: Telephelyválasztó modul
+                      href: site-selector.md
                 - name: Megfelelőségi modulok
                   items:
                     - name: Cookie-hozzájárulási modul
@@ -1986,9 +1986,11 @@
                       href: e-commerce-extensibility/cli-command-reference.md
                 - name: Modulanatómia
                   items:
+                    - name: Modulok áttekintése
+                      href: e-commerce-extensibility/modules-overview.md
                     - name: Modul definíciós fájlja
                       href: e-commerce-extensibility/module-definition-file.md
-                    - name: Modul React összetevőfájlja
+                    - name: React modul összetevőfájlja
                       href: e-commerce-extensibility/module-react-file.md
                     - name: Modulnézeti fájl
                       href: e-commerce-extensibility/module-view-file.md
@@ -2034,12 +2036,18 @@
                       href: e-commerce-extensibility/cookie-api-overview.md
                     - name: Interaktív összetevők – áttekintés
                       href: e-commerce-extensibility/interactive-components.md
+                    - name: Bejelentkezett állapot tettetése helyi fejlesztés során
+                      href: e-commerce-extensibility/mock-sign-in.md
                     - name: Modulok globalizálása a CultureInfoFormatter osztály használatával
                       href: e-commerce-extensibility/globalize-modules.md
+                    - name: Azure Key Vault beállítása a biztonságos kulcskezeléshez
+                      href: e-commerce-extensibility/set-up-key-vault.md
                 - name: Adatműveletek fejlesztése
                   items:
                     - name: Adatműveletek áttekintése
                       href: e-commerce-extensibility/data-actions.md
+                    - name: Adatművelet-gyorsítótár beállításai
+                      href: e-commerce-extensibility/data-action-cache.md
                     - name: Adatműveletek tesztelése vezérlőkkel
                       href: e-commerce-extensibility/test-data-action-mocks.md
                     - name: Oldal terhelési adatainak műveletei
@@ -2080,6 +2088,8 @@
                       href: e-commerce-extensibility/theme-style-presets.md
                     - name: Téma kiterjesztése modulbővítmények hozzáadásához
                       href: e-commerce-extensibility/theme-module-extensions.md
+                    - name: Modultár-összetevő felülbírálása egy témában
+                      href: e-commerce-extensibility/override-theme-component.md
                     - name: Téma kiterjesztése alaptémából
                       href: e-commerce-extensibility/extend-theme.md
                     - name: Egyéni erőforrások hozzáadása a testreszabási kódhoz
@@ -2102,6 +2112,10 @@
                       href: e-commerce-extensibility/package-deploy.md
                     - name: SDK- és modultár-frissítések
                       href: e-commerce-extensibility/sdk-updates.md
+                - name: Gyakorlati tanácsok
+                  items:
+                    - name: Gyakorlati tanácsok a Dynamics 365 Commerce fejlesztéséhez
+                      href: e-commerce-extensibility/best-practices-dev.md
             - name: Retail szoftverfejlesztői készlet (SDK)
               items:
                 - name: A Retail szoftverfejlesztői készlet (SDK) architektúrája
@@ -2197,7 +2211,7 @@
                 - name: A Retail Typescript és a C# proxyk
                   href: dev-itpro/typescript-proxy-retail-pos.md
                 - name: Retail Server API-k felhasználása külső alkalmazásokban
-                  href: dev-itpro/consume-retail-server-api
+                  href: dev-itpro/consume-retail-server-api.md
             - name: A Commerce Runtime (CRT) bővíthetősége
               items:
                 - name: A CRT architektúrája és konfigurálása

@@ -3,7 +3,7 @@ title: A szállítói számla automatizálásának beállítási lehetőségei (
 description: Ez a témakör a szállítóiszámla-automatizálás beállításának és konfigurálásának lehetőségeit ismerteti.
 author: abruer
 manager: AnnBe
-ms.date: 08/30/2020
+ms.date: 10/16/2020
 ms.topic: articl
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,22 +17,21 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-30
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: eedc5ae1ed20da4c506b3510eaeac32c0ada3b70
-ms.sourcegitcommit: 6ffbae02de2eee1f3be9bab2da37a3771aae8bec
+ms.openlocfilehash: c3ee1112a409f87fdb433d5d43442a858dbd1798
+ms.sourcegitcommit: 9e7ceb5604472f3088f611aa0360bd6a716db32b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "3905016"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4022590"
 ---
-# <a name="setup-options-for-vendor-invoice-automation-preview"></a>A szállítói számla automatizálásának beállítási lehetőségei (előzetes verzió)
+# <a name="setup-options-for-vendor-invoice-automation"></a>A szállítói számla automatizálásának beállítási lehetőségei
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Ez a témakör a szállítóiszámla-automatizálás beállításának és konfigurálásának lehetőségeit ismerteti. A számlázásautomatizáló szolgáltatások a következő típusú beállítási paramétereket használják:
 
 - Az importált szállítói számlák munkafolyamat-rendszerbe történő beküldésének paraméterei és a feladott terméknyugta sorainak egyeztetése a függőben lévő szállítói számlák soraival.
-- A folyamatautomatizálás háttérfeladatainak paraméterei. A folyamatautomatizálási keretrendszer segítségével importált szállítói számlákat küldhet a munkafolyamat-rendszerbe. Alkalmas továbbá a feladott terméknyugta sorainak a függőben lévő szállítói számlák soraival való automatikus egyeztetésére. A különböző üzleti folyamatok ezt a keretrendszert alkalmazzák annak meghatározására, hogy a kiválasztott folyamat milyen gyakorisággal fusson. A **terméknyugta egyeztetése a számlasorokkal** és a **Szállítói számlák beküldése a munkafolyamatba** háttérfolyamatokhoz elérhető gyakoriságok az **Óra** és a **Napi** .
+- A folyamatautomatizálás háttérfeladatainak paraméterei. A folyamatautomatizálási keretrendszer segítségével importált szállítói számlákat küldhet a munkafolyamat-rendszerbe. Alkalmas továbbá a feladott terméknyugta sorainak a függőben lévő szállítói számlák soraival való automatikus egyeztetésére. A különböző üzleti folyamatok ezt a keretrendszert alkalmazzák annak meghatározására, hogy a kiválasztott folyamat milyen gyakorisággal fusson. A **terméknyugta egyeztetése a számlasorokkal** és a **Szállítói számlák beküldése a munkafolyamatba** háttérfolyamatokhoz elérhető gyakoriságok az **Óra** és a **Napi**.
 
 Egy adott háttérfeladat beállításához vagy azzal kapcsolatos információk megtekintéséhez lépjen a **Rendszerfelügyelet \> Beállítás \> Folyamatautomatizációk** felületre, majd válassza ki a **Háttérfeladat** fület.
 

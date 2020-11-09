@@ -18,17 +18,17 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 6472672f5d618cc6d100298dd35939afa4c0066d
-ms.sourcegitcommit: 025561f6a21fe8705493daa290f3f6bfb9f1b962
+ms.openlocfilehash: fb3ec2d60875d7a0747d64b397aafaa0a3d26348
+ms.sourcegitcommit: d6250ee5ced43be39e789324a895fd1c07178935
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "3835971"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "4039869"
 ---
 # <a name="get-started-with-the-electronic-invoicing-add-on-for-brazil"></a>Első lépések a brazil elektronikus számlázásbővítménnyel 
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
+
 
 > [!IMPORTANT]
 > Előfordulhat, hogy a Brazil elektronikus számlázásbővítmény jelenleg nem támogatja a Microsoft Dynamics 365 Finance vagy Dynamics 365 Supply Chain Management szolgáltatásba épített pénzügyi bizonylatintegrációban elérhető összes funkciót.
@@ -135,9 +135,9 @@ Az NF-e érvénytelenítésre való beküldéséhez az **Érvénytelenítés** f
 
 #### <a name="set-up-the-url-for-sefaz-web-services"></a>A SEFAZ webszolgáltatások URL-címének beállítása 
 
-1. A **Funkcióverzió beállítása** oldal **Műveletek** lapjának **Műveletek** gyorslapján válassza a **Brazil SEFAZ szolgáltatás hívása** (műveletazonosító: **3**) lehetőséget.
+1. A **Funkcióverzió beállítása** oldal **Műveletek** lapjának **Műveletek** gyorslapján válassza a **Brazil SEFAZ szolgáltatás hívása** (műveletazonosító: **3** ) lehetőséget.
 2. A **Paraméterek** gyorslap **URL-cím paramétere** mezőjébe írja be a SEFAZ webszolgáltatás URL-címét az NF-e beküldéséhez.
-3. Válassza a **Műveletek** gyorslap **Brazil SEFAZ szolgáltatás hívása** (műveletazonosító: **7**) lehetőséget.
+3. Válassza a **Műveletek** gyorslap **Brazil SEFAZ szolgáltatás hívása** (műveletazonosító: **7** ) lehetőséget.
 4. A **Paraméterek** gyorslap **URL-cím paramétere** mezőjébe írja be a SEFAZ webszolgáltatás URL-címét az NF-e beküldéséhez.
 
 #### <a name="configure-the-cancellation-feature-setup"></a>Az Érvénytelenítési funkcióbeállítás konfigurálása
@@ -156,7 +156,7 @@ Az NF-e érvénytelenítésre való beküldéséhez az **Érvénytelenítés** f
 
 #### <a name="set-up-the-url-for-sefaz-web-services"></a>A SEFAZ webszolgáltatások URL-címének beállítása
 
-1. A **Funkcióverzió beállítása** oldal **Műveletek** lapjának **Műveletek** gyorslapján válassza a **Brazil SEFAZ szolgáltatás hívása** (műveletazonosító: **3**) lehetőséget.
+1. A **Funkcióverzió beállítása** oldal **Műveletek** lapjának **Műveletek** gyorslapján válassza a **Brazil SEFAZ szolgáltatás hívása** (műveletazonosító: **3** ) lehetőséget.
 2. A **Paraméterek** gyorslap **URL-cím paramétere** mezőjébe írja be a SEFAZ webszolgáltatás URL-címét az engedélyezett NF-e érvénytelenítéséhez.
 
 ### <a name="make-an-e-invoicing-environment-available-and-assign-a-draft-version"></a>E-számlázási környezet elérhetővé tétele és a Piszkozat verzió hozzárendelése
@@ -206,17 +206,17 @@ A beállítás során a következő feladatokat kell elvégeznie:
 1. Az **Elektronikus jelentéskészítés** munkaterületen, a **Konfigurációszolgáltatók** szakaszban, válassza a **Microsoft** csempét.
 2. Válassza ki a **Tárházak** lehetőséget.
 3. Válassza ki a **Globális erőforrás \> Megnyitás** lehetőséget.
-4. Az **NF-e hibanapló importálása (BR)**, az **NF-e válaszadatok importálási formátuma (BR)**, és az **NF-e válaszüzenet importálása (BR)** importálása.
+4. Az **NF-e hibanapló importálása (BR)** , az **NF-e válaszadatok importálási formátuma (BR)** , és az **NF-e válaszüzenet importálása (BR)** importálása.
 5. Menjen a **Szervezeti adminisztráció \> Beállítás \> Elektronikus dokumentumparaméterek** lehetőségre.
 6. Az **Elektronikus dokument** lapon válassza a **Hozzáadás** lehetőséget.
 6. A **Tábla neve** mezőben adja meg a **Pénzügyi bizonylat fejléce** értéket.
 7. A **Dokumentum kontextusa** mezőben válassza a **Vevői számla kontextusmodellje – Pénzügyi bizonylat kontextusa** elemet.
 8. Válassza ki a **Választípusok** lehetőséget.
-9. Válassza az **Új**, majd a **Válasz típusa** mezőt, majd a **Válasz** elemet.
+9. Válassza az **Új** , majd a **Válasz típusa** mezőt, majd a **Válasz** elemet.
 10. A **Beküldés állapota** mezőben válassza a **Függőben** lehetőséget.
 11. A **Modell-leképezés** mezőben válassza a **Válaszüzenet importálási formátuma – Modell-leképezés válaszüzenetből** lehetőséget.
 12. Válassza a **Mentés** lehetőséget.
-13. Válassza az **Új**, majd a **Válasz típusa** mezőt, majd adja meg a **Válaszadatok** elemet.
+13. Válassza az **Új** , majd a **Válasz típusa** mezőt, majd adja meg a **Válaszadatok** elemet.
 14. A **Beküldés állapota** mezőben válassza a **Függőben** lehetőséget.
 15. A **Modell-leképezés** mezőben válassza ki az **NFe-válaszadatok importálási formátuma – Válaszadatok importálása** lehetőséget.
 16. Válassza a **Mentés** lehetőséget.
@@ -231,7 +231,7 @@ A Finance szolgáltatásban történő feldolgozás során a következő feladat
 
 ### <a name="submit-nf-e-fiscal-documents-for-sefaz-authorization"></a>Küldje be az NF-e pénzügyi bizonylatokat a SEFAZ engedélyezéséhez 
 
-A **Konfigurálható elektronikus számlázásbővítmény integrációja** funkció bekapcsolását követően az NF-e pénzügyi bizonylatok érvényesítésre való beküldésének régi folyamata (**NF-e exportálási/importálási folyamata**) már nem használható. Ezt felváltotta egy új, **Elektronikus dokumentumok beküldése** nevű folyamat.
+A **Konfigurálható elektronikus számlázásbővítmény integrációja** funkció bekapcsolását követően az NF-e pénzügyi bizonylatok érvényesítésre való beküldésének régi folyamata ( **NF-e exportálási/importálási folyamata** ) már nem használható. Ezt felváltotta egy új, **Elektronikus dokumentumok beküldése** nevű folyamat.
 
 > [!NOTE]
 > Mielőtt folytatná, győződjön meg róla, hogy van legalább egy vevői pénzügyi intézmény által kiállított 55-ös modellű vevői pénzügyi bizonylata. A pénzügyi bizonylatok irányát **Kimenő** értékre, illetve az állapotot **Létrehozott** értékre kell állítani. További információkért lásd a [Vevői pénzügyi bizonylat kiadása (Brazília)](https://docs.microsoft.com/dynamics365/finance/localizations/tasks/br-00038-issuing-customer-fiscal-document) lehetőséget.

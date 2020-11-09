@@ -8,6 +8,7 @@ ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: WHSRFMenuItemCycleCount, WHSCycleCountThreshold, WHSCycleCountPlan, WHSCycleCountPlanListPage, WHSParameters, WHSRFMenu, WHSRFMenuItem
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Operations
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1503ef3646657a4b7bb7e240144af2ac559a62d0
-ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
+ms.openlocfilehash: a8b7f39fc9a91d9fe219445e409d000266e24775
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "3383021"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016148"
 ---
 # <a name="define-cycle-counting"></a>Ciklikus leltározás meghatározása  
 
@@ -59,7 +60,7 @@ A ciklikus leltározás egy olyan raktározási folyamat, amelyet az aktuális k
 20. Kattintson a **Mentés** gombra.
 
 ## <a name="create-a-counting-threshold"></a>Leltározási küszöbérték létrehozása
-1. A **Navigációs ablakban**nyissa meg a **Modulok > Raktárkezelés > Beállítás > Viklikus leltározási > Viklikus leltározási küszöbértékek** elemet.
+1. A **Navigációs ablakban** nyissa meg a **Modulok > Raktárkezelés > Beállítás > Viklikus leltározási > Viklikus leltározási küszöbértékek** elemet.
 2. Kattintson az **Új** elemre.
 3. A **Ciklikus leltározási küszöbérték azonosítója** mezőbe írjon be egy értéket.
 4. A **Ciklikus leltározás végrehajtása azonnal** lehetőséget állítsa Igenre.
@@ -72,7 +73,7 @@ A ciklikus leltározás egy olyan raktározási folyamat, amelyet az aktuális k
 11. Zárja be a lapot.
 
 ## <a name="create-a-cycle-count-plan"></a>Ciklikus leltározási terv létrehozása
-1. A **Navigációs ablakban**nyissa meg a **Modulok > Raktárkezelés > Beállítás > Viklikus leltározási > Ciklikus leltározási tervek** elemet.
+1. A **Navigációs ablakban** nyissa meg a **Modulok > Raktárkezelés > Beállítás > Viklikus leltározási > Ciklikus leltározási tervek** elemet.
 2. Kattintson az **Új** elemre.
 3. A **Ciklikus leltározási terv azonosítója** mezőbe írjon be egy értéket.
 4. Írjon egy értéket a **Leírás** mezőbe.

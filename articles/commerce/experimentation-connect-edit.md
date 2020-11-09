@@ -3,7 +3,7 @@ title: Kísérlet csatlakoztatása és változatok szerkesztése
 description: Ez a témakör azt mutatja be, hogyan lehet egy külső szolgáltatásból származó kísérletet csatlakoztatni a Dynamics 365 Commerce rendszerhez, illetve hogyan lehet szerkeszteni a kísérlet változatait.
 author: sushma-rao
 manager: AnnBe
-ms.date: 10/01/2020
+ms.date: 10/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,16 +18,18 @@ ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: ea1da0a7dc90b7197f3ee532bccc55d2ddbe4ddd
-ms.sourcegitcommit: b6ab46f6e5ce60e2c3d70a348827eaf60c84cae2
+ms.openlocfilehash: 030640ba8907ae52c198ac96ad2c243b533d8c53
+ms.sourcegitcommit: 7592c2dec0428d56843ab395d2a52c89f77f99b5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "3930214"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "4096967"
 ---
 # <a name="connect-an-experiment-and-edit-variations"></a>Kísérlet csatlakoztatása és változatok szerkesztése
 
-Ez a témakör azt mutatja be, kísérletét hogyan csatlakoztathatja a Commerce modulban, illetve hogyan módosíthatja az egyes változatokat úgy, hogy azok egybevágjanak a hipotézisével. A következő ábra azokat a lépéseket mutatja be, amelyekkel egy e-kereskedelmi webhelyhez tartozó kísérletet lehet létrehozni és futtatni a Dynamics 365 Commerce rendszerben. A további lépések külön témákban szerepelnek.
+Ez a témakör azt mutatja be, kísérletét hogyan csatlakoztathatja a Commerce modulban, illetve hogyan módosíthatja az egyes változatokat úgy, hogy azok egybevágjanak a hipotézisével. 
+
+A következő ábra azokat a lépéseket mutatja be, amelyekkel egy e-kereskedelmi webhelyhez tartozó kísérletet lehet létrehozni és futtatni a Dynamics 365 Commerce rendszerben. A további lépések külön témákban szerepelnek.
 
 [![Kísérletezés felhasználói interakciósorozata – Csatlakoztatás és szerkesztés](./media/experimentation_connect_edit.svg) ](./media/experimentation_connect_edit.svg#lightbox)
 
@@ -40,7 +42,7 @@ Mielőtt a kísérletet a Commerce modulban csatlakoztatja, el kell döntenie, h
 ### <a name="determine-the-scope-of-your-experiment"></a>A kísérlet hatókörének meghatározása
 Amikor egy kísérletet csatlakoztat, a program felkéri arra, hogy határozza meg a kísérlet hatókörét. A kísérletek rendelkezhetnek **részleges** vagy **teljes** hatókörrel.
 - A **részleges** lehetőséget akkor válassza, ha a kísérletet egy oldal meghatározott részén kívánja végrehajtani. Ha ezt a lehetőséget választja, akkor meg kell adnia, hogy mely modulok szerepeljenek a kísérletben. Az alapértelmezett oldal vagy töredék azon részein végrehajtott változtatások, amelyek nem kapcsolódnak a kísérlethez, automatikusan szinkronizáltak lesznek a változatok között.
-- A **teljes** lehetőséget akkor válassza, ha egy teljes oldalon vagy töredéken szeretne kísérletet végezni. Az alapértelmezett oldal vagy töredék külön példányai jönnek létre. Azt nem kell kiválasztania, hogy mely modulok kerüljenek a kísérletbe, mivel a szerkesztési felület egésze módosítható. Szükség szerint modulokat adhat hozzá, törölhet és rendelhet újra. Ha azonban a kísérlethez társított alapértelmezett oldalon vagy töredékben módosítások történnek, akkor ezeket a módosításokat manuálisan kell szinkronizálni a változatok között.
+- A **teljes** lehetőséget akkor válassza, ha egy teljes oldalon vagy töredéken szeretne kísérletet végezni. Az alapértelmezett oldal vagy töredék külön példányai jönnek létre. Azt nem kell kiválasztania, hogy mely modulok kerüljenek a kísérletbe, mivel a szerkesztési felület egésze módosítható. Szükség szerint modulokat adhat hozzá, törölhet vagy rendelhet újra. Ha azonban a kísérlethez társított alapértelmezett oldalon vagy töredékben módosítások történnek, akkor ezeket a módosításokat manuálisan kell szinkronizálni a változatok között.
 
 <!-- not to editors, we're adding an image here to illustrate the difference. it will help.) -->
 
@@ -56,17 +58,19 @@ A közzétételi csoportokkal kapcsolatos további tudnivalókat lásd: [Munka a
 ## <a name="connect-your-experiment"></a>A kísérlet csatlakoztatása
 A kísérlet csatlakoztatásához a **Kísérlet csatlakoztatása** varázslót indítsa el. A varázsló végigvezeti a kísérlet csatlakoztatásához szükséges lépéseken. Amikor a varázsló végére ér, a kísérlet csatlakoztatottá válik, és a változatok jönnek létre, amelyek készen állnak a szerkesztésre.
 
-1. A varázsló elindításához válassza ki a webhelykészítőn található **Kísérletek** fület, majd válassza ki a **Csatlakoztatás** elemet. A varázsló az oldal- vagy töredékszerkesztőből is megnyitható. Szerkesztési módban válassza ki a **Kísérlet csatlakoztatása** parancsot a parancssorból.
+A Commerce webhelykészítőben a kísérlethez történő csatlakozás elkezdéséhez hajtsa végre az alábbi lépéseket.
 
-> [!NOTE]
-> Egy oldal egyszerre csak egy kísérlethez kapcsolható. Ha egy másik kísérlethez szeretne egy oldalt csatlakoztatni, először törölje azt a kísérletet, amelyhez az oldal aktuálisan kapcsolódik.
+1. A **Kísérlet csatlakoztatása** varázsló indításához válassza a bal oldali navigációs panel **Kísérletek** elemét, majd a **Csatlakozás** lehetőséget. Azt is megteheti, hogy a varázslót az oldal vagy a töredék szerkesztőjéből nyitja meg úgy, hogy szerkeszti, és kiválasztja a **Kísérlet csatlakoztatása** elemet a parancssorból.
+
+    > [!NOTE]
+    > Egy oldal egyszerre csak egy kísérlethez kapcsolható. Ha egy másik kísérlethez szeretne egy oldalt csatlakoztatni, először törölje azt a kísérletet, amelyhez az oldal aktuálisan kapcsolódik.
 
 1. Válassza ki azt az oldalt vagy töredéket, amelyen futtatni szeretné a kísérletet.
 1. A kísérletezési hatókört **részlegesre** vagy **egészre** kell állítani a fenti [Kísérlet hatókörének meghatározása](#determine-the-scope-of-your-experiment) szakaszban kiválasztott beállítástól függően.
     > [!NOTE]
     > Ha teljes oldalon vagy töredéken szeretne kísérletezni, akkor engedélyezni kell a **Kísérlet oldalakon vagy töredékeken** zászlót. További tudnivalókért lásd a [Kísérletezés a Dynamics 365 Commerce rendszerben](experimentation-overview.md) témakört.
     
-1. A varázsló utolsó lépésében válassza ki a **Változatok létrehozása és kilépés a varázslóból** . A kísérlethez változatok jönnek létre. 
+1. A varázsló utolsó lépésében válassza ki a **Változatok létrehozása és kilépés a varázslóból**. A kísérlethez változatok jönnek létre. 
 
 ## <a name="edit-your-variations"></a>A változatok szerkesztése
 A varázslóból való kilépéskor a változatok jönnek létre. 

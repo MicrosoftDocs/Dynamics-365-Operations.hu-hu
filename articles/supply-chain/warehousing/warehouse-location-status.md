@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: WHSLocationProfile,WHSLocation
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations, Supply Chain Management
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 7b17df2afee22dde1af5c44de31c585069daa349
-ms.sourcegitcommit: d03f301633175b15d46690fc97067820bf21579f
+ms.openlocfilehash: 31216c24f54f22ec928eb143d4a913aabcd50cf8
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "3775174"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016010"
 ---
 # <a name="warehouse-location-status"></a>Raktár helyállapota
 
@@ -78,7 +78,7 @@ A példaforgatókönyvhöz két helyprofilt kell előkészíteni.
 1. Ismételje meg a 3–4. lépést a **KITÁROLÁS-06** profil esetében.
 
 > [!NOTE]
-> Ha a hely profiljának paraméterei (**Cikk engedélyezése helyen**, **Helytevékenység engedélyezése**, **Helyállapot engedélyezése**) *Igen* értékre vannak állítva , akkor a rendszer azonnal frissíti a megfelelő helyeket *A raktár helyállapotának konzisztencia-ellenőrzése* feladatának végrehajtásával.
+> Ha a hely profiljának paraméterei ( **Cikk engedélyezése helyen** , **Helytevékenység engedélyezése** , **Helyállapot engedélyezése** ) *Igen* értékre vannak állítva , akkor a rendszer azonnal frissíti a megfelelő helyeket *A raktár helyállapotának konzisztencia-ellenőrzése* feladatának végrehajtásával.
 
 ### <a name="scenario"></a>Forgatókönyv
 
@@ -100,8 +100,8 @@ A példaforgatókönyvhöz két helyprofilt kell előkészíteni.
 
     A mennyiséget a következő módok egyikén adhatja meg:
 
-    - Numerikus érték hozzáadásához vagy kivonásához válassza a pluszjelet (**+**) vagy a mínuszjelet (**–**) tartalmazó gombot.
-    - Válassza a pluszjel (**+**) és a mínusz jel (**–**) gomb között látható üres mezőt a számbillentyűzet megnyitásához.
+    - Numerikus érték hozzáadásához vagy kivonásához válassza a pluszjelet ( **+** ) vagy a mínuszjelet ( **–** ) tartalmazó gombot.
+    - Válassza a pluszjel ( **+** ) és a mínusz jel ( **–** ) gomb között látható üres mezőt a számbillentyűzet megnyitásához.
 
 1. Hagyja jóvá az *A0002* cikkszám és az *5* mennyiség kiválasztását. A „Munka befejezve” üzenet jelenik meg a lap alján.
 1. Válassza ki a jobb felső sarokban látható Menü gombot (más néven hamburger vagy a hamburgergomb), majd válassza a **Mégse** lehetőséget a **Beszerzés fogadása** lehetőségből való kilépéshez, és a **Bejövő** menühöz való visszatéréshez.
@@ -143,7 +143,7 @@ A példaforgatókönyvhöz két helyprofilt kell előkészíteni.
     - **Mennyiség:** _1_
 
 1. Az **Értékesítési rendelés sorai** gyorslap **Készlet** menüjében válassza a **Foglalás** lehetőséget.
-1. A **Foglalás** oldalon válassza ki a **Készlet foglalása** elemet a rendelési sor lefoglalásához. Ezután válassza a **Bezárás** gombot (**X**) a jobb felső sarokban az oldal bezárásához.
+1. A **Foglalás** oldalon válassza ki a **Készlet foglalása** elemet a rendelési sor lefoglalásához. Ezután válassza a **Bezárás** gombot ( **X** ) a jobb felső sarokban az oldal bezárásához.
 1. Válassza ki a művelet ablaktáblán a **Raktár** lapon a **Műveletek** csoportjának **Kiadás raktárba** parancsát.
 1. Az **Értékesítési rendelés sorai** szakasz **Raktár** menüjében válassza a **Munka részletei** lehetőséget.
 1. Másolja a létrehozott **Munkaazonosító** értéket.
@@ -157,8 +157,8 @@ A példaforgatókönyvhöz két helyprofilt kell előkészíteni.
 
     A mennyiséget a következő módok egyikén adhatja meg:
 
-    - Numerikus érték hozzáadásához vagy kivonásához válassza a pluszjelet (**+**) vagy a mínuszjelet (**–**) tartalmazó gombot.
-    - Válassza a pluszjel (**+**) és a mínusz jel (**–**) gomb között látható üres mezőt a számbillentyűzet megnyitásához.
+    - Numerikus érték hozzáadásához vagy kivonásához válassza a pluszjelet ( **+** ) vagy a mínuszjelet ( **–** ) tartalmazó gombot.
+    - Válassza a pluszjel ( **+** ) és a mínusz jel ( **–** ) gomb között látható üres mezőt a számbillentyűzet megnyitásához.
 
 1. Válassza ki a **CÉL LP** mezőt, adjon meg egy felhasználó által definiált cél azonosítótábla-azonosítót, majd hagyja jóvá.
 1. A kitárolási munka befejezéséhez ismételten hagyja jóvá. A „Munka befejezve” üzenet jelenik meg a lap alján.

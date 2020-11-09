@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: WHSLoadTable, WHSLoadPlanningListPage, WHSLoadPlanningWorkbench, WHSRFMenu, WHSRFMenuItem
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: f165a6187332a45e77c22de6eb10e227bc1c8f4c
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 41a05bcd0148d0a553cb50575cae47f48397ae9b
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3985018"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017621"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>Beszerzési rendelések bejövő rakományának kezelése a raktárban
 
@@ -62,7 +63,7 @@ Amikor egy bejövő rakomány először megérkezik a raktárba, a raktári dolg
 
 - **Olyan bejövő rakományrekord, amely leírja a szállítmányban várható mennyiséget**
 
-    A szállító általában megerősíti a bejövő rakomány rekordját, mielőtt a szállítmány megérkezne a raktárba. Ennek megfelelően a rakomány állapota _Szállítva_ . A raktári dolgozók azonban a _Nyitott_ vagy _Bevételezett_ állapotú rakományokhoz is regisztrálhatnak cikkmennyiségeket.
+    A szállító általában megerősíti a bejövő rakomány rekordját, mielőtt a szállítmány megérkezne a raktárba. Ennek megfelelően a rakomány állapota _Szállítva_. A raktári dolgozók azonban a _Nyitott_ vagy _Bevételezett_ állapotú rakományokhoz is regisztrálhatnak cikkmennyiségeket.
 
 - **A mobileszköz betöltést támogató menüje**
 
@@ -70,8 +71,8 @@ Amikor egy bejövő rakomány először megérkezik a raktárba, a raktári dolg
 
     - Rakomány – cikk bevételezése
     - Rakomány – cikk bevételezése és eltárolása
-    - Vegyes azonosítótábla fogadás, amelyen a mobileszköz menüelemének **Forrásdokumentum-sor azonosítási módja** mezője _Rakomány – cikk bevételezése_ . A további tudnivalókat lásd: [Vegyes azonosítótábla fogadás](mixed-license-plate-receiving.md).
-    - Vegyes azonosítótábla fogadás és betárolás, ahol a mobileszköz menüelemének **Forrásdokumentum-sor azonosítási módja** mezője _Rakomány – cikk bevételezése_ . A további tudnivalókat lásd: [Vegyes azonosítótábla fogadás](mixed-license-plate-receiving.md).
+    - Vegyes azonosítótábla fogadás, amelyen a mobileszköz menüelemének **Forrásdokumentum-sor azonosítási módja** mezője _Rakomány – cikk bevételezése_. A további tudnivalókat lásd: [Vegyes azonosítótábla fogadás](mixed-license-plate-receiving.md).
+    - Vegyes azonosítótábla fogadás és betárolás, ahol a mobileszköz menüelemének **Forrásdokumentum-sor azonosítási módja** mezője _Rakomány – cikk bevételezése_. A további tudnivalókat lásd: [Vegyes azonosítótábla fogadás](mixed-license-plate-receiving.md).
 
     > [!NOTE]
     > A folyamattól függetlenül a rendszer olyan munkát hoz létre hoz létre, amelyek a bevételezési helyen regisztrált mennyiségeket a szokásos tárolási helyre helyezi. Amikor a _Rakomány – cikk bevételezése és eltárolása_ vagy _Vegyes azonosítótábla bevételezése és eltárolása_ folyamatot használja a program, a rakományt regisztráló dolgozó is utasítást kap az eszköztől, hogy az elraktározási munkát a regisztrációs feladat részeként végezze el. Ezzel szemben a _Rakomány – cikk bevételezése_ és _Vegyes azonosítótábla fogadása_ folyamatok esetében a feltételezés az, hogy az elraktározási munka a regisztrációs feladattól elkülönítve fog történni.
@@ -93,7 +94,7 @@ Miután a dolgozó befejezte ezeket a lépéseket, a rendszer a megfelelő entit
 | Entitás | Frissítések | Jegyzet |
 |---|---|---|
 | Betöltés | A program frissíti a **Munka létrehozva mennyiség** mezőjét a rakománysoron a regisztrált mennyiség megjelenítéséhez. | A **Rakomány állapota** értéke továbbra is _Leszállított_ vagy _Nyitott_ , ha a rakományhoz nem állítottak be szállítási visszaigazolást. Ha legalább egy elraktározási munka elindult, akkor az _folyamatban_ állapotra módosul. |
-| Olyan beszerzési rendeléshez tartozó készlettranzakció, amelyhez kapcsolódó rakomány-mennyiségek vannak regisztrálva |<p>Az alábbi mezőket frissíti a program:</p><ul><li>A <b>Bevételezés</b> mező be van állítva <i>Regisztrált</i> értékre.</li><li>A <b>Hely</b> mezőt a program a bevételezési tároló helykódjával frissíti. (Ez a kód az egyes raktárak <b>Alapértelmezett bevételezési hely</b> mezőjében van megadva.)</li><li>Az <b>Azonosítótábla</b> mező a regisztráció során megadott vagy létrehozott azonosítótábla-számmal frissül.</li><li>A <b>Rakományazonosító</b> mező értéke annak a rakománynak a számával lesz frissítve, amelyhez a mennyiség regisztrálva van. (Lásd a megjegyzést.)</li></ul> | A beszerzési rendelési készlettranzakciók és a rakománnyal szemben regisztrált mennyiségek közötti kapcsolatot a 10.0.9 verzióban vezették be opcionális funkcióként, amelynek neve _Beszerzésirendelés-készlettranzakciók társítása egy rakománnyal_ . Ez a funkció különösen olyan folyamatok esetében hasznos, ha a beszerzett áruk egyetlen rendelését több rakományként szállítják, vagy ha a rakomány több beszerzési rendeléshez tartalmaz mennyiségeket. |
+| Olyan beszerzési rendeléshez tartozó készlettranzakció, amelyhez kapcsolódó rakomány-mennyiségek vannak regisztrálva |<p>Az alábbi mezőket frissíti a program:</p><ul><li>A <b>Bevételezés</b> mező be van állítva <i>Regisztrált</i> értékre.</li><li>A <b>Hely</b> mezőt a program a bevételezési tároló helykódjával frissíti. (Ez a kód az egyes raktárak <b>Alapértelmezett bevételezési hely</b> mezőjében van megadva.)</li><li>Az <b>Azonosítótábla</b> mező a regisztráció során megadott vagy létrehozott azonosítótábla-számmal frissül.</li><li>A <b>Rakományazonosító</b> mező értéke annak a rakománynak a számával lesz frissítve, amelyhez a mennyiség regisztrálva van. (Lásd a megjegyzést.)</li></ul> | A beszerzési rendelési készlettranzakciók és a rakománnyal szemben regisztrált mennyiségek közötti kapcsolatot a 10.0.9 verzióban vezették be opcionális funkcióként, amelynek neve _Beszerzésirendelés-készlettranzakciók társítása egy rakománnyal_. Ez a funkció különösen olyan folyamatok esetében hasznos, ha a beszerzett áruk egyetlen rendelését több rakományként szállítják, vagy ha a rakomány több beszerzési rendeléshez tartalmaz mennyiségeket. |
 | Raktári elraktározás | A munka egy munkasablon alapján jön létre, és utasítja a dolgozót, hogy helyezze át a regisztrált mennyiségeket a bevételezési helyről egy szabályos tárolási helyre. | A tárolóhely választását az Elraktározási helyutasítás vezérli. Ha nincs meghatározva helyutasítás, akkor a munka elraktározási helye üres. |
 
 Ne felejtse el, hogy a raktári dolgozók egy vagy több társított rakománnyal regisztrálhatnak egy beszerzési rendelést a _Rakomány – cikk bevételezése_ folyamat használata nélkül. A következő módszerek állnak rendelkezésre:
@@ -130,10 +131,10 @@ Az alábbi táblázatban a **Terhelés túlbevételezése** mezőhöz rendelkez�
 |---|---|
 | Engedélyezés | A dolgozók regisztrálhatják azokat a mennyiségeket, amelyek meghaladják a fennmaradó nem regisztrált mennyiséget a kiválasztott rakományhoz, de csak akkor, ha a teljes regisztrált mennyiség nem haladja meg a rakományhoz társított beszerzésirendelés-sor mennyiségét (a túlszállítás százalék módosítását követően). |
 | Zárolás | <p>A dolgozók nem regisztrálhatják az olyan mennyiségek bevételezését, amelyek meghaladják a kiválasztott rakomány fennmaradó nem regisztrált mennyiségét (a túlszállítási százalékhoz igazítás után). Az a dolgozó, aki megpróbálja regisztrálni a beérkezőket hibaüzenetet kap, és mindaddig nem fog tudni folytatni, amíg nem jegyez be olyan mennyiséget, amely nem egyezik meg vagy nem kevesebb a fennmaradó nem regisztrált rakomány mennyiségénél.</p><p>Alapértelmezés szerint a program átmásolja a terhelési sor túlszállítási százalékértékét a kapcsolódó beszerzési rendelési sorból. Amikor a <b>Terhelés túlbevételezése</b> mező értéke <i>Zárolás</i>, a rendszer a túlszállítás százalékos értéke alapján számítja ki a terhelési sorhoz regisztrálható teljes mennyiséget. Ez az érték azonban a szükség esetén felülírható az egyes rakományokhoz. Ez a viselkedés akkor válik hasznossá, amikor olyan folyamatokat kap, amelyekben túlzott mennyiség, amely megfelel a túlszállítás százalékának aránytalanul van elosztva több rakomány között. Egy példaforgatókönyv:</p><ul><li>Több rakomány van egy beszerzésirendelés-sorhoz.</li><li>A beszerzési rendelés sorának túlszállítási százaléka több, mint 0 (nulla).</li><li>Mennyiségek lettek már regisztrálva van egy vagy több rakománnyal szemben a túlszállítási százalék figyelembe vétele nélkül.</li><li>A túlszállítási mennyiség a legutóbbi rakományhoz érkezik.</li></ul><p>Ebben a helyzetben egy mobileszköz csak akkor használható, ha az utolsó rakományhoz tartozó túlmennyiség regisztrálásához ha a raktári felügyelő a megfelelő terhelési sorhoz az alapértelmezett értékről olyan értékre növeli a túlszállítási százalékot, amely elég nagy ahhoz, hogy a teljes túlszállítás regisztrálható legyen a végső rakományhoz.</p> |
-| Zárolás csak a lezárt rakományokhoz | A dolgozók túlfogadhatják a nyitott rakományokhoz tartozó rakománysor mennyiségeket, de olyan terhelésekhez nem, amelyek állapota _Fogadott_ . |
+| Zárolás csak a lezárt rakományokhoz | A dolgozók túlfogadhatják a nyitott rakományokhoz tartozó rakománysor mennyiségeket, de olyan terhelésekhez nem, amelyek állapota _Fogadott_. |
 
 > [!NOTE]
-> A **Terhelés túlbevételezése** mező alapértelmezett értéke _Engedélyezés_ . Ha ez az érték van használatban, akkor a viselkedés megfelel a szokásos működésnek, amely a 10.0.11 verzióban a _Rakomány mennyiségek túlbevételezése_ funkció bevezetése előtt állt rendelkezésre.
+> A **Terhelés túlbevételezése** mező alapértelmezett értéke _Engedélyezés_. Ha ez az érték van használatban, akkor a viselkedés megfelel a szokásos működésnek, amely a 10.0.11 verzióban a _Rakomány mennyiségek túlbevételezése_ funkció bevezetése előtt állt rendelkezésre.
 
 ### <a name="put-away-the-registered-quantities"></a>A regisztrált mennyiségek elraktározása
 
@@ -156,9 +157,9 @@ Egy olyan lap megnyitásához, ahol feladhatják a termékbevételezést, a műv
 - Nyissa meg a megfelelő terhelési rekordot, majd válassza ki a **Termékbevételezés** műveletet.
 - Nyissa meg a **Raktárkezelés \> Ismétlődő feladatok \> Termékbevételezések frissítése** menüt majd a **Rakomány azonosítója** mezőben adja meg a feladni kívánt rakományt.
 - Nyissa meg a kapcsolódó beszerzési rendelést, majd válassza ki a **Termékbevételezés** műveletet.
-- Ugorjon a következőre: **Beszerzés és forrás \> Beszerzési rendelések \> Termékek bevételezése \> Termékbevételezési munka feladása** .
+- Ugorjon a következőre: **Beszerzés és forrás \> Beszerzési rendelések \> Termékek bevételezése \> Termékbevételezési munka feladása**.
 
-A **Termékbevételezés** művelet, amely elérhető a **Rakomány** lapon (és a frissítési feladat megfelelő lapján, a **Termékbevételezések frissítése** oldalon) a termékbevételezési mennyiségeket csak olyan beszerzésirendelés-mennyiségekhez frissítheti, amelyek állapota _Regisztrált_ . Ugyanakkor a **Beszerzési rendelés** lapon elérhető **Termékbevételezés** művelet tartalmazhatja mindkét feldolgozási állapotú mennyiségeket ( _Megrendelve_ és _Regisztrált_ ). Ezenkívül a termék bevételezési feladása hatókörét további paraméterekkel is szabályozhatja, például a _Most Bevételezett mennyiség_ és _Regisztrált mennyiség és szolgáltatások_ .
+A **Termékbevételezés** művelet, amely elérhető a **Rakomány** lapon (és a frissítési feladat megfelelő lapján, a **Termékbevételezések frissítése** oldalon) a termékbevételezési mennyiségeket csak olyan beszerzésirendelés-mennyiségekhez frissítheti, amelyek állapota _Regisztrált_. Ugyanakkor a **Beszerzési rendelés** lapon elérhető **Termékbevételezés** művelet tartalmazhatja mindkét feldolgozási állapotú mennyiségeket ( _Megrendelve_ és _Regisztrált_ ). Ezenkívül a termék bevételezési feladása hatókörét további paraméterekkel is szabályozhatja, például a _Most Bevételezett mennyiség_ és _Regisztrált mennyiség és szolgáltatások_.
 
 Csak a _Visszaigazolva_ állapotú rendelések lehetnek termékbevételezéssel feladva. Nem visszaigazolt beszerzési rendelések esetén a **Termékbevételezés** művelet nem érhető el.
 
@@ -319,7 +320,7 @@ Ebben az eljárásban manuálisan létrehoz egy beszerzési rendelést és egy k
     - **Raktár:** _24_
     - **Mennyiség:** _10_
 
-1. A **Beszerzés lap** műveleti ablaktáblájában kattintson a **Műveletek \> Megerősítés** pontra. A rendelés állapota most _Visszaigazolt_ .
+1. A **Beszerzés lap** műveleti ablaktáblájában kattintson a **Műveletek \> Megerősítés** pontra. A rendelés állapota most _Visszaigazolt_.
 1. A **Raktár** műveleti ablaktáblájában kattintson a **Műveletek \> Rakománytervező munkaterület** pontra.
 1. A **Rakománytervezés munkaterület** oldalon, a műveleti ablaktáblán, a **Kínálat és kereslet** lapon válassza a **Hozzáadás \> Az új rakományhoz** lehetőséget.
 1. A **Rakománysablon hozzárendelése** párbeszédpanelen állítsa be a **Rakománysablon azonosítója** mezőt _20 lábas konténer_ értékre.
@@ -387,7 +388,7 @@ Ha a beszerzési csoport nem várja meg, hogy a szállító a fennmaradó 1 rend
 - A mennyiség regisztrálása ugyanazzal a rakománnyal szemben. Ebben az esetben a **Rakomány állapota** mezőt a program visszaállítja a _Leszállított_ értékre, és a **Létrehozott munka mennyisége** értéke _10_ -re lesz frissítve. Ez a választás csak a következő helyzetekben érhető el:
 
     - A _Rakománymennyiségek túlbevételezése_ funkció nem érhető el, vagy nincs engedélyezve.
-    - A _Rakománymennyiségek túlbevételezése_ funkció elérhető és engedélyezve van, és a **Rakománysor túlbevételezése** mező beállítása _Engedélyezve_ .
+    - A _Rakománymennyiségek túlbevételezése_ funkció elérhető és engedélyezve van, és a **Rakománysor túlbevételezése** mező beállítása _Engedélyezve_.
 
 - Adja hozzá a mennyiséget egy új vagy meglévő rakományhoz, és dolgozza fel a szokásos módon.
 - A mennyiség regisztrálása és/vagy fogadása olyan módon, amely nem jár együtt a rakomány kezelésével.
@@ -421,7 +422,7 @@ Azt is megtanulja, hogy hogyan lehet a beszerzésirendelés-sort úgy beállíta
     - **Mennyiség:** _10_
 
 1. A **Sor részletei** gyorslap **Szállítás** lapján állítsa be a **Túlszállítás** mezőt _20_ értékre.
-1. A **Beszerzés lap** műveleti ablaktáblájában kattintson a **Műveletek \> Megerősítés** pontra. A rendelés állapota most _Visszaigazolt_ .
+1. A **Beszerzés lap** műveleti ablaktáblájában kattintson a **Műveletek \> Megerősítés** pontra. A rendelés állapota most _Visszaigazolt_.
 1. A **Raktár** műveleti ablaktáblájában kattintson a **Műveletek \> Rakománytervező munkaterület** pontra.
 1. A **Rakománytervezés munkaterület** oldalon, a műveleti ablaktáblán, a **Kínálat és kereslet** lapon válassza a **Hozzáadás \> Az új rakományhoz** lehetőséget.
 1. A **Rakománysablon hozzárendelése** párbeszédpanelen állítsa be a **Rakománysablon azonosítója** mezőt _20 lábas konténer_ értékre. A **Részletek** lapon módosítsa a **Mennyiséget** _10_ helyett _5_ értékre a beszerzésirendelés-sor mennyiségének részleges hozzáadásához.

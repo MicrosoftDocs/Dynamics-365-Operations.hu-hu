@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSQualityCheckTemplate,WHSWorkClass,WHSWorkTemplateTable.WHSLocDirTable
+ms.search.form: WHSQualityCheckTemplate, WHSWorkClass, WHSWorkTemplateTable, WHSLocDirTable, WHSQualityCheckResult
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 44a4694281f3dd53581c9d8245a0105b37b2b155
-ms.sourcegitcommit: 7dc2ff9461c310324937bea2fc160ff056fefd8a
+ms.openlocfilehash: dfb71f74732d65409003c4f6f74145442a1efa3f
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "3686357"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016631"
 ---
 # <a name="quality-check"></a>Minőség-ellenőrzés
 
@@ -219,7 +219,7 @@ A helyutasítások olyan szabályok, amik segítik a kitárolási és betárolá
     A *QMS* hely a minőséghez használandó raktári hely.
 
 1. Az **OK** gombbal zárja be a párbeszédpanelt.
-1. EKkor módosítania kell a beszerzési rendelés helyutasításokat az *51*-es raktárhoz. Mentse az új *51 Minőséghez* helyutasítást, frissítse a lapot, majd válassza ki a helyutasítást a listából. Ezután a Műveleti ablaktáblán lévő **Feljebb** és **Lejjebb** gombokkal helyezze át a helyutasítást az *51*-es raktárhoz a következő sorrendben. (Mielőtt kiválasztja a **Feljebb** vagy **Lejjebb** gombot, ki kell választania egy helyutasítást a listából.)
+1. EKkor módosítania kell a beszerzési rendelés helyutasításokat az *51* -es raktárhoz. Mentse az új *51 Minőséghez* helyutasítást, frissítse a lapot, majd válassza ki a helyutasítást a listából. Ezután a Műveleti ablaktáblán lévő **Feljebb** és **Lejjebb** gombokkal helyezze át a helyutasítást az *51* -es raktárhoz a következő sorrendben. (Mielőtt kiválasztja a **Feljebb** vagy **Lejjebb** gombot, ki kell választania egy helyutasítást a listából.)
 
     1. 51 Minőséghez
     2. 51 közvetlen beszerzési rendelés
@@ -302,16 +302,16 @@ A beszerzési rendelés létrehozása után a program a **Beszerzési rendelési
 
 #### <a name="receive-pallet-1"></a>1. raklap fogadása
 
-1. Jelentkezzen be az *51*-es raktár felhasználójaként a raktár alkalmazásba. (Írja be a felhasználói azonosítóhoz a *51*-et, a jelszóhoz pedig az *1*-et.)
+1. Jelentkezzen be az *51* -es raktár felhasználójaként a raktár alkalmazásba. (Írja be a felhasználói azonosítóhoz a *51* -et, a jelszóhoz pedig az *1* -et.)
 1. Menjen a **Bejövő \> Beszerzési rendelési sor bevételezése** lehetőségre.
 1. A **PONUM** mezőbe adja meg a beszerzési rendelés számát.
 1. Erősítse meg újra a beszerzési rendelés számát.
-1. A **LINENUM** mezőbe adja meg a bevételezett beszerzési rendelés sorszámát. Mivel a rendelésnek ebben a forgatókönyvben csak egy sora van, ezért a **LINENUM** mezőbe az *1*-es értéket kell beírnia mindegyik bevételezési lépésnél.
+1. A **LINENUM** mezőbe adja meg a bevételezett beszerzési rendelés sorszámát. Mivel a rendelésnek ebben a forgatókönyvben csak egy sora van, ezért a **LINENUM** mezőbe az *1* -es értéket kell beírnia mindegyik bevételezési lépésnél.
 1. A sor számának megerősítése.
-1. A **Mennyiség** mezőbe írja be a bevételezett mennyiséget. Mivel ebben a forgatókönyvben a beszerzési rendelés három raklapra (*PL*) szól, és három bevételezési lépés van, ezért az *1*-es értéket kell megadnia a **MENNYISÉG** mezőben minden egyes bevételezési lépésnél.
+1. A **Mennyiség** mezőbe írja be a bevételezett mennyiséget. Mivel ebben a forgatókönyvben a beszerzési rendelés három raklapra ( *PL* ) szól, és három bevételezési lépés van, ezért az *1* -es értéket kell megadnia a **MENNYISÉG** mezőben minden egyes bevételezési lépésnél.
 1. Nyugtázza a mennyiséget.
 
-    A megjelenő **Minőségellenőrzés** lap nem tartalmaz bejegyzési mezőket. Csak a megerősítés (pipa) gombot alul, és a Menü gombot (**≡**) felül. (A Menü gombot néha hamburgernek vagy a hamburger gombnak is nevezik.) A minőségellenőrzési folyamat meggyorsításához – amikor a raklap átmegy a minőségellenőrzésen – a felhasználónak csak meg kell erősítenie a **Minőségellenőrzés** lapot.
+    A megjelenő **Minőségellenőrzés** lap nem tartalmaz bejegyzési mezőket. Csak a megerősítés (pipa) gombot alul, és a Menü gombot ( **≡** ) felül. (A Menü gombot néha hamburgernek vagy a hamburger gombnak is nevezik.) A minőségellenőrzési folyamat meggyorsításához – amikor a raklap átmegy a minőségellenőrzésen – a felhasználónak csak meg kell erősítenie a **Minőségellenőrzés** lapot.
 
     ![Minőségellenőrzés lap](media/quality-check.png "Minőségellenőrzés lap")
 
@@ -342,7 +342,7 @@ Ennél a forgatókönyvnél a 2. raklapot el fogja utasítani a program.
 
     Megjelenik a **Minőségellenőrzés** oldal. Ezen nyugta esetében a raklapot elutasítja a program a minősége miatt, és a *QMS* minőséghelyre kerül.
 
-1. Válassza ki a lap tetején látható Menü gombot (**≡**), majd válassza az **Elutasítás** lehetőséget a menüben.
+1. Válassza ki a lap tetején látható Menü gombot ( **≡** ), majd válassza az **Elutasítás** lehetőséget a menüben.
 1. A megjelenő **Feladat** oldalon adja meg a **QMS** éréket, mint *Betárolási* helyet, hogy a raklapot elküldhesse további ellenőrzésre.
 
     A megjelenő **Minőség a minőségellenőrzésben: Eltárolás** lap az eltárolási munka részleteit jeleníti meg:
@@ -394,6 +394,6 @@ Ennél a forgatókönyvnél a 3. raklapot el fogja fogadni a program.
 
     A beszerzési rendeléssor **Feladat** lapján a „Munka befejezve” üzenet jelenik meg. A **LINENUM** mező elérhető, úgyhogy fogadhatja a következő raklapot.
 
-1. Válassza ki a lap tetején látható Menü gombot (**≡**), majd válassza a **Mégsem** lehetőséget a menühöz való visszatéréshez.
+1. Válassza ki a lap tetején látható Menü gombot ( **≡** ), majd válassza a **Mégsem** lehetőséget a menühöz való visszatéréshez.
 
 Most már bezárhatja a mobilalkalmazást.

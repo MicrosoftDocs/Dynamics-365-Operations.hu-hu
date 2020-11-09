@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: e9ca2d2cd018777b4c5c01fb10d63505af3940c4
-ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
+ms.openlocfilehash: 647c62c489e65596be87a658a3d53e74e53455d7
+ms.sourcegitcommit: 9dd2d38e76d4d93171315ec319e6ce7d51d4e6c7
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "3652107"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "4012367"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10010-may-2020"></a>Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.10 szolgáltatásban (2020. május)
 
@@ -30,7 +30,7 @@ ms.locfileid: "3652107"
 
 Ez a témakör a Microsoft Dynamics 365 Supply Chain Management 10.0.10 új vagy módosított szolgáltatásait sorolja fel. Ennek a verziónak 10.0.420 a buildszáma, és a következő módon érhető el:
 
-- **Előzetes kiadás**: 2020. március
+- **Előzetes kiadás** : 2020. március
 - **Általános elérhetőség (saját frissítés):** 2020. április
 - **Automatikus frissítés:** 2020. május
 
@@ -39,10 +39,15 @@ Ez a témakör a Microsoft Dynamics 365 Supply Chain Management 10.0.10 új vagy
 Ez a kiadás a következő funkciókat tartalmazza: A funkciók címei további információkra mutatnaka a [Kiadási tervek](https://docs.microsoft.com/dynamics365/release-plans/) webhelyen. A további hivatkozások az adott funkcióhoz jelenleg elérhető további dokumentációkat és videókat mutatnak be. Ezen szolgáltatások többségét a használat előtt engedélyezni kell a [Funkciók kezelése](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) alatt.
 
 - [A meglévő ténylegessúly-címkék használatának javítása a raktárkezelési modulban](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/enhancement-use-existing-catch-weight-tags-warehouse-management)
+
 - [A Raktárkezelés modul bejövő terheléskezelésének továbbfejlesztései](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/warehouse-management-inbound-load-management-enhancement)<br> - További információ: [Beszerzési rendelések bejövő rakományának kezelése a raktárban](../warehousing/inbound-load-handling.md).
+
 - [Címkenyomtatással kapcsolatos fejlesztések a raktárkezeléshez](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/label-printing-enhancements-warehouse-management)<br> - További információ: [Dokumentumirányítási elrendezés azonosítótábla-címkékhez](../warehousing/document-routing-layout-for-license-plates.md).
+
 - [Az Alaptervezés olyan cikkeket tartalmaz, amelyek aktuális készlettel rendelkeznek, amikor előfeldolgozási szűrők engedélyezve vannak](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/master-planning-include-items-on-hand-when-pre-processing-filters-are-enabled)
+
 - [Új adatentitások a termelési területhez](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/new-data-entities-manufacturing-area)
+
 - [Raktári folyamatok minőségkezelése](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/quality-management-warehouse-processes)<br> - További információ: [Raktári folyamatok minőségkezelése](../inventory/quality-management-for-warehouses-processes.md).
 
 ## <a name="additional-resources"></a>További erőforrások

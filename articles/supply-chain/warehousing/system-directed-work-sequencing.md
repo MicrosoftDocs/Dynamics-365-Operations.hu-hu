@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: WHSRFSystemDirectedWorkSequenceQuery, WHSLocDirTable
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-03
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 2884c480d20090266f7cffb5e7d0aca58c1174f0
-ms.sourcegitcommit: edb46dce498df42b09e8f5ad6de00f86c8022dfa
+ms.openlocfilehash: 86d396b069a354b8fa7e15793372a8293273d238
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "3534850"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017025"
 ---
 # <a name="system-directed-work-sequencing"></a>Rendszer által irányított munka sorrendbe állítása
 
@@ -46,7 +47,7 @@ A rendszer által irányított munka sorrendbe állításának használata előt
 
 ### <a name="make-demo-data-available"></a>A bemutató adatok elérhetővé tétele
 
-Ha ezt a forgatókönyvet az ebben a témakörben megadott mintaadatok és értékek alapján kívánja elvégezni, akkor egy olyan rendszeren kell dolgoznia, amelynél a szokásos demóadatok telepítve vannak. Ezenkívül ki kell választania az **USMF** jogi személyt. A forgatókönyv az *51*-es raktárt használja a demóadatokból.
+Ha ezt a forgatókönyvet az ebben a témakörben megadott mintaadatok és értékek alapján kívánja elvégezni, akkor egy olyan rendszeren kell dolgoznia, amelynél a szokásos demóadatok telepítve vannak. Ezenkívül ki kell választania az **USMF** jogi személyt. A forgatókönyv az *51* -es raktárt használja a demóadatokból.
 
 > [!IMPORTANT]
 > Mielőtt kiadja a rendeléseket a raktárba, győződjön meg arról, hogy a kitárolási helyek elegendő készlettel rendelkeznek a rendelések minden cikkéhez.
@@ -129,7 +130,7 @@ Ha ezt a forgatókönyvet az ebben a témakörben megadott mintaadatok és ért�
     - **Feltételek:** *!FOKOZAT*
 
         > [!IMPORTANT]
-        > Ügyeljen arra, hogy a felkiáltójel (*!*) szerepeljen a *FOKOZAT* előtt.
+        > Ügyeljen arra, hogy a felkiáltójel ( *!* ) szerepeljen a *FOKOZAT* előtt.
 
 1. Az **OK** gombra kattintva mentse és zárja be a lekérdezést.
 1. Válassza a **Mentés** lehetőséget.
@@ -255,7 +256,7 @@ Ezt követően minden értékesítési rendelést kiad a raktárba, hogy létreh
 ### <a name="get-work-ids-for-the-work-that-was-created"></a>Munkaazonosítók beolvasása a létrehozott munkához
 
 1. Ugorjon a **Raktárkezelés \> Munka \> Munka részletei** pontra.
-1. Szűrjön a **Raktár** mezőre úgy, hogy csak az *51*-es raktárban lévő munka jelenjen meg.
+1. Szűrjön a **Raktár** mezőre úgy, hogy csak az *51* -es raktárban lévő munka jelenjen meg.
 1. Négy munkaazonosítónak kellett létrejönnie. Jegyezze fel az egyes értékesítési rendelések munkaazonosítóját.
 
     | Értékesítési rendelés azonosítója | Munkaazonosító | Munkakészlet |
@@ -265,10 +266,10 @@ Ezt követően minden értékesítési rendelést kiad a raktárba, hogy létreh
     | 3. értékesítési rendelés | 3. munkaazonosító | 15 ea (mindkét sor összege) |
     | 4. értékesítési rendelés | 4. munkaazonosító | 35 ea (mindkét sor összege) |
 
-Mielőtt futtatná a folyamatot a mobileszközön, győződjön meg arról, hogy csak az imént létrehozott munka van *Nyitva* állapotban van az *51*-es raktár és az *Értékesítési rendelés* munkarendelés-típus esetében. Ellenkező esetben a teszt eredményei eltérőek lehetnek, mivel a rendszer által irányított kitárolás az összes alkalmas munkát tartalmazni fogja.
+Mielőtt futtatná a folyamatot a mobileszközön, győződjön meg arról, hogy csak az imént létrehozott munka van *Nyitva* állapotban van az *51* -es raktár és az *Értékesítési rendelés* munkarendelés-típus esetében. Ellenkező esetben a teszt eredményei eltérőek lehetnek, mivel a rendszer által irányított kitárolás az összes alkalmas munkát tartalmazni fogja.
 
 1. Lépjen a **Raktárkezelés \> Munka \> Kimenő \> Nyitott értékesítési munka** lehetőségre.
-1. A **Nyitott értékesítési munka** rácsban szűrjön a **Raktár** mezőre úgy, hogy csak az *51*-es raktárban lévő munka jelenjen meg.
+1. A **Nyitott értékesítési munka** rácsban szűrjön a **Raktár** mezőre úgy, hogy csak az *51* -es raktárban lévő munka jelenjen meg.
 1. Győződjön meg róla, hogy csak a korábban létrehozott négy munkaazonosító jelenik meg.
 1. Zárja be a **Munka** oldalt.
 
@@ -280,7 +281,7 @@ Ne feledje, hogy ez a beállítás rögzíti azokat a munkafolyamatokat, amelyek
 
 #### <a name="mobile-app"></a>Mobilalkalmazás
 
-1. Jelentkezzen be az *51*-es raktárban lévő felhasználóként a raktárkezelési alkalmazásba.
+1. Jelentkezzen be az *51* -es raktárban lévő felhasználóként a raktárkezelési alkalmazásba.
 1. Lépjen a **Kimenő \> Értékesítési kitárolás – Rendszer** lehetőségre.
 
     Megjelenik a *4*. munkaazonosító kitárolási lépése. Ezt a munkaazonosítót először a rendszer által irányított lekérdezési rendelés beállítása miatt jelenik meg, ahol megadhatja, hogy a munkát csökkenő munkasormennyiség alapján kell sorba állítani.
@@ -299,7 +300,7 @@ Ne feledje, hogy ez a beállítás rögzíti azokat a munkafolyamatokat, amelyek
 
 ## <a name="tips"></a>Tippek
 
-A rendszer által irányított munka sorrendbe állítás lekérdezések *inkluzívak*. Fontos, hogy néhány beállítás esetében ne feledkezzen meg erről. Például előfordulhat, hogy azt szeretné, hogy egy konkrét menüelem csak olyan munkát dolgozzon fel, ahol a munkaegység *ea*, és megadja ezt a korlátozást a lekérdezés **Tartomány** lapján. Ebben az esetben a dolgozó megkapja az összes olyan munkát, amelyben legalább egy munkasor az *ea* munkaegységgel van beállítva. Ennek megfelelően ez a munka olyan munkafolyamatot is tartalmazhat, amelyben a munkasorok nem az *ea* munkaegységgel rendelkeznek (például *doboz* vagy *raklap*). A lekérdezés csak akkor zár ki munkát, ha nincs olyan munkasor, ahol a munkaegység *ea* értékre van állítva.
+A rendszer által irányított munka sorrendbe állítás lekérdezések *inkluzívak*. Fontos, hogy néhány beállítás esetében ne feledkezzen meg erről. Például előfordulhat, hogy azt szeretné, hogy egy konkrét menüelem csak olyan munkát dolgozzon fel, ahol a munkaegység *ea* , és megadja ezt a korlátozást a lekérdezés **Tartomány** lapján. Ebben az esetben a dolgozó megkapja az összes olyan munkát, amelyben legalább egy munkasor az *ea* munkaegységgel van beállítva. Ennek megfelelően ez a munka olyan munkafolyamatot is tartalmazhat, amelyben a munkasorok nem az *ea* munkaegységgel rendelkeznek (például *doboz* vagy *raklap* ). A lekérdezés csak akkor zár ki munkát, ha nincs olyan munkasor, ahol a munkaegység *ea* értékre van állítva.
 
 Emiatt a forgatókönyv példájában a lekérdezés a *4.* munkaazonosítót is rögzítette. A létrehozásakor két sor lett hozzáadva: egy 25 ea-val, egy másik pedig 10 ea-val. A munka továbbra is megjelenik a felhasználó számára, mert legalább egy munkasornak 20 ea-nál kisebb a mennyisége.
 

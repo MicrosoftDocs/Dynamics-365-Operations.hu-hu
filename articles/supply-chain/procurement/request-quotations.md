@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: PurchRFQCaseTable, PurchRFQCaseTableListPage, PurchRFQCompare, PurchRFQReplyTable, PurchRFQVendReplyTableListPage, BOMExpandPurchRFQ
+ms.search.form: PurchRFQCaseTable, PurchRFQCaseTableListPage, PurchRFQCompare, PurchRFQReplyTable, PurchRFQVendReplyTableListPage, BOMExpandPurchRFQ, PurchRFQReplyFollowupItem, PurchRFQCaseVend, PurchRFQReplyFollowup, PurchRFQCaseAmendmentInfo, PurchRFQReplyFollowupCase, PurchRFQReplyStatus, PurchRFQCaseReplyFields, PurchRFQAddQuestionnaire, PurchRFQAmendmentWizard, PurchRFQReplyTableStatus, PurchRFQReplyTableListPage, PurchRFQCancelWizard
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4aec0ce03d438f8153b9555a079b6fd97f6a95a5
-ms.sourcegitcommit: ae04c7cb48f7ecafe71bbe77a0f97715e6290991
+ms.openlocfilehash: cd0ee376da52dc3b36ec32859283a410e5b71854
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "3973500"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018399"
 ---
 # <a name="requests-for-quotation-rfqs-overview"></a>Ajánlatkérések (RFQ-k) áttekintése
 
@@ -132,7 +132,7 @@ Manuálisan létrehozhat ajánlatkérést a **Beszerzési rendelés** vagy **Bes
 
 Ha az Ajánlatkérési eset **Beszerzési rendelés** típusú, a következő történik, amely eltér a más típusú ajánlatkérési esetektől:
 
-- Az ajánlatkérési esetek sorainak létrehozásakor olyan készlettranzakciók létrehozása történik, amelyek bevételezési állapota **Árajánlat-bevételezés** .
+- Az ajánlatkérési esetek sorainak létrehozásakor olyan készlettranzakciók létrehozása történik, amelyek bevételezési állapota **Árajánlat-bevételezés**.
 - Egy ajánlat elfogadásakor létrejön egy beszerzési rendelés.
 
 Ha az Ajánlatkérési eset **Beszerzési szerződés** típusú, a következő történik, amely eltér a többi ajánlatkérési esettől:
@@ -184,7 +184,7 @@ Az ajánlat adatainak megadásakor – amennyiben az Ajánlatkérési eset lehet
 
 Ha megadott választ, de új ajánlatra van szükség a szállítótól, visszaküldheti az ajánlatkérést. A rendszer egy új naplót és egy új jelentést hoz létre, amelyeket elküldhet a szállítónak.
 
-Az **Árajánlatkérések követése** oldalon áttekintheti az összes ajánlatkérést és a hozzájuk tartozó válaszok állapotát: **Elküldve, Beérkezett, Jóváhagyva, Elutasítva, Visszavonva, Visszautasítva** .
+Az **Árajánlatkérések követése** oldalon áttekintheti az összes ajánlatkérést és a hozzájuk tartozó válaszok állapotát: **Elküldve, Beérkezett, Jóváhagyva, Elutasítva, Visszavonva, Visszautasítva**.
 
 ### <a name="accepting-and-rejecting-bids-and-transferring-accepted-bids-to-downstream-documents"></a>Ajánlatok elfogadása és elutasítása, valamint az elfogadott ajánlatok átvitele a feldolgozott dokumentumokhoz
 

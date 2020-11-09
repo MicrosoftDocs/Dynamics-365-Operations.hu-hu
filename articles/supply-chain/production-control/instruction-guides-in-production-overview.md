@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: cabeln
 ms.search.validFrom: 2020-08-01
 ms.dyn365.ops.version: AX 10.0.15
-ms.openlocfilehash: d8c2da17d4e3df37c55844f0aad00f883725f741
-ms.sourcegitcommit: c55fecae96b4bb27bc313ba10a97eddb9c91350a
+ms.openlocfilehash: 14645f592275d07a6b633146bb6da35b89c1bf77
+ms.sourcegitcommit: 6d2fc497c8a7f49c48e7662995e27b5f8cc10296
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "3989276"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "4000978"
 ---
 # <a name="provide-mixed-reality-guides-for-workers-in-production"></a>Vegyes valóság útmutató a termelésben dolgozók számára
 
@@ -118,13 +118,13 @@ A szolgáltatás elérhetővé tételéhez a rendszerén engedélyeznie kell a k
   
 ## <a name="configure-how-guides-appear-on-the-shop-floor"></a>Az Útmutatók üzemben használt felületének konfigurálása
 
-Az Útmutatók üzemben használt felületének konfigurálásához folytassa itt: **Mixed Reality \> Dynamics 365 Guides \> Útmutatók integrálásának konfigurálása** .
+Az Útmutatók üzemben használt felületének konfigurálásához folytassa itt: **Mixed Reality \> Dynamics 365 Guides \> Útmutatók integrálásának konfigurálása**.
 
 ![Útmutató integrálásának konfigurálása a gyártáshoz](media/instruction-guides-configure-integration.png "Útmutató integrálásának konfigurálása a gyártáshoz")
 
 Állítsa be a következő mezőket:
 
-- **CDS-környezeti altartomány** – A mezőnek már tartalmaznia kell értéket. A mező annak a Common Data Service környezetnek az altartományát tartalmazza, ahol Ön létrehozza az Útmutatókat. Az altartomány az URL-cím első része, és általában a szervezet nevét tartalmazza. Ha például a Common Data Service URL-cím „contoso.crm4.dynamics.com”, akkor itt a *contoso* szót kell megadnia. Ez az érték használatos az útmutatók címeinek összeállításához, és beleíródik a QR-kódba.
+- **Common Data Service-környezeti altartomány** – A mezőnek már tartalmaznia kell értéket. A mező annak a Common Data Service környezetnek az altartományát tartalmazza, ahol Ön létrehozza az Útmutatókat. Az altartomány az URL-cím első része, és általában a szervezet nevét tartalmazza. Ha például a Common Data Service URL-cím „contoso.crm4.dynamics.com”, akkor itt a *contoso* szót kell megadnia. Ez az érték használatos az útmutatók címeinek összeállításához, és beleíródik a QR-kódba.
 - **QR-kód mérete** – Beállítja a megjelenített QR-kód méretét. Olyan méret választása ajánlott, amely kitölti a képernyő nagy részét, de nem nagyobb. Általában a *15* a megfelelő méret.
 - **QR-kód hibajavító szintje** – Beállítja a QR-kód részletességét. A magasabb részletességgel növelheti a kód megbízhatóságát, de a **QR-kódnak** elég nagynak kell lennie ahhoz, hogy támogassa a kiválasztott korrekciós szinthez szükséges részletességi szintet.
 
@@ -271,7 +271,7 @@ Az anyagjegyzékhez csatolt útmutatók az üzemi dolgozóknak utasításokat ad
 
 Útmutató hozzáadása egy anyagjegyzékhez:
 
-1. Válassza a **Termelési adatok kezelése \> Anyagjegyzékek és receptúrák \> Anyagjegyzékek** .
+1. Válassza a **Termelési adatok kezelése \> Anyagjegyzékek és receptúrák \> Anyagjegyzékek**.
 1. Nyissa meg az anyagjegyzéket, amelyhez útmutatót szeretne hozzárendelni.
 1. Nyissa meg a **Fejléc** lapot a felső gyorslap fölött.
 1. Bontsa ki a **Társított útmutatók** gyorslapot.
@@ -294,7 +294,7 @@ Az egyes anyagjegyzék-verziókhoz csatolt útmutatók az üzemi dolgozóknak ut
 
 Útmutató hozzáadása egy anyagjegyzék-verzióhoz:
 
-1. Válassza a **Termelési adatok kezelése \> Anyagjegyzékek és receptúrák \> Anyagjegyzékek** .
+1. Válassza a **Termelési adatok kezelése \> Anyagjegyzékek és receptúrák \> Anyagjegyzékek**.
 1. Nyissa meg azt az anyagjegyzéket, amely tartalmazza azt a verziót, amelyhez útmutatót szeretne rendelni.
 1. Nyissa meg a **Fejléc** lapot a felső gyorslap fölött.
 1. Válassza ki az **Anyagjegyzék-verziók** gyorslapján azt a verziót, amelyhez útmutatót szeretne társítani.

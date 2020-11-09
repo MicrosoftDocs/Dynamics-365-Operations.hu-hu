@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSCatchWeightTag, WHSCatchWeightItemHandlingPolicy
+ms.search.form: WHSCatchWeightTag, WHSCatchWeightItemHandlingPolicy, TMSLoadBuildWorkbench
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: b1d106fa6fe5072eb74813495253731dd988c376
-ms.sourcegitcommit: 9a0be1ceee90e80f4c75f241aba847547b5032e5
+ms.openlocfilehash: 710446db7746ed3cd3fb9754caeaa15fd2f76641
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "3693279"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016262"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>A tényleges súllyal rendelkező termék feldolgozása a raktárkezelésben
 
@@ -97,7 +97,7 @@ A ténylegessúly-címkék nyilvántartási folyamata a cikkeknél használható
 
 A ténylegessúly-címkék feldolgozásával kapcsolatos másik fontos paraméter a **Ténylegessúly-címke dimenziójának követési módja**. A címkéket lehet részlegesen vagy teljeskörűen nyomon követni. Ha egy címke részben nyomon követhető, akkor nyomon követi a termékdimenziókat, a nyomon követési dimenziókat és a készlet állapotát. Ha egy címke teljeskörűen nyomon követhető, akkor nyomon követi a termékdimenziókat, a nyomon követési dimenziókat és az **összes** tárolási dimenziót.
 
-Ezen kívül, ha a cikket címke alapján nyomon követik, akkor létezik egy **Kimenő címkerögzítési módszer** paraméter. Ez a paraméter beállítható úgy, hogy a mobileszközön a rendszer mindig kérje a kimenő tranzakciókat tartalmazó címkét. A paraméter úgy is beállítható, hogy csak a rendszer csak szükség esetén kérje a címkéket. Például a készletben öt ténylegessúly-címke található egy adott azonosítótáblán, és Ön jelezte, hogy mind az öt címkét szeretné kitárolni az azonosítótábláról. Ebben az esetben ha a **Kimenő címkerögzítési módszer** paraméter beállítása **Címke kérése csak szükség esetén**, a rendszer automatikusan kitárolja az öt címkét. Nem kell minden címkét beolvasni. Ha a paraméter beállítása **Mindig kérje a címkét**, akkor minden egyes címkét be kell olvasni, akkor is, ha az összes címkét kitárolja.
+Ezen kívül, ha a cikket címke alapján nyomon követik, akkor létezik egy **Kimenő címkerögzítési módszer** paraméter. Ez a paraméter beállítható úgy, hogy a mobileszközön a rendszer mindig kérje a kimenő tranzakciókat tartalmazó címkét. A paraméter úgy is beállítható, hogy csak a rendszer csak szükség esetén kérje a címkéket. Például a készletben öt ténylegessúly-címke található egy adott azonosítótáblán, és Ön jelezte, hogy mind az öt címkét szeretné kitárolni az azonosítótábláról. Ebben az esetben ha a **Kimenő címkerögzítési módszer** paraméter beállítása **Címke kérése csak szükség esetén** , a rendszer automatikusan kitárolja az öt címkét. Nem kell minden címkét beolvasni. Ha a paraméter beállítása **Mindig kérje a címkét** , akkor minden egyes címkét be kell olvasni, akkor is, ha az összes címkét kitárolja.
 
 > [!NOTE]
 > Szabály szerint a címkéket a rendszer csak a mobileszköz menüelemeiből rögzíti és frissíti. Ennek ellenére van néhány olyan eset, amikor a címkéket máshol rögzítik (például a kézi csomagoló állomástól). Általában viszont a mobileszköz menüelemeit kell használni az összes raktári tevékenységhez, ha címkéket használnak.
@@ -109,7 +109,7 @@ Ezen kívül, ha a cikket címke alapján nyomon követik, akkor létezik egy **
 Például **Doboz** a tényleges súly egysége, és kap egy raklapot nyolc dobozzal. Ebben az esetben nyolc egyedi tényleges súly címkét létre kell hozni, és a súlyt minden címkéhez társítva kell lennie. A bejövő tényleges súly címkétől függően vagy összes nyolc doboz tömege rögzíthető, és az átlagos tömeg minden dobozra leosztható, vagy egyedi tömegek rögzíthetők az egyes dobozokra.
 A **Meglévő ténylegessúly-címkék használata, ha a termelési rendeléseket készként jelentik** funkció használatakor a mobileszköz menüelemen keresztül engedélyezett folyamattal, a készletet a rendszer a meglévő ténylegessúly-címke adatai alapján frissíti. Ennek eredményeképpen a raktáralkalmazás nem kéri a ténylegessúly-címke adatainak rögzítését a termelési készként jelentés művelet részeként.
 
-**Ha a tényleges súly címke nyomon követését nem alkalmazzák**, a súly rögzíthető az egyes dimenziókészletekre (például az egyes azonosítótáblákra és nyomon követési dimenzióra). Másik lehetőségként a súly rögzíthető az összesített szint alapján, például mint öt azonosítótábla (raklap).
+**Ha a tényleges súly címke nyomon követését nem alkalmazzák** , a súly rögzíthető az egyes dimenziókészletekre (például az egyes azonosítótáblákra és nyomon követési dimenzióra). Másik lehetőségként a súly rögzíthető az összesített szint alapján, például mint öt azonosítótábla (raklap).
 
 A kimenő súly rögzítésének módszereinél a **Ténylegessúly-egységenként** beállítással beállíthatja, hogy a súlyt minden egyes ténylegessúly-egységnél végezzék (például dobozonként). A **Kitárolási egységenként** beállítással megadhatja, hogy a rendszer a súlyt a kitárolandó mennyiség alapján rögzítse (például három doboz). Vegye figyelembe, hogy a termelési sor kitárolási és belső átmozgatási folyamatához az átlagos súlyt használják, ha a **Nem rögzített** beállítás van használatban.
 
@@ -209,4 +209,4 @@ A tényleges súllyal rendelkező termékekre jelenleg érvényes korlátozások
 - A munka sztornózása funkció nem támogatott a ténylegessúly-cikkek esetén, amelyek címkeszámát nyomon követik.
 
 > [!NOTE]
-> Az előző információk a ténylegessúly-címkékről csak akkor érvényesek, ha a tényleges súllyal rendelkező termék olyan ténylegessúly-címke dimenziókövetési metódussal rendelkezik, amely teljes körűen nyomon követett (azaz ha a **Ténylegessúly-címke dimenziójának követési módja** paraméter a ténylegesssúly-cikk kezelési irányelvében a következő beállítású: **Termékdimenziók, a nyomon követési dimenziók és az összes tárolási dimenzió**). Ha a ténylegessúly-cikk csak részlegesen címke által nyomon követett (azaz ha a **Ténylegessúly-címke dimenziójának követési módja** paraméter a ténlyegessúly-cikk kezelési irányelvében **Termékdimenziók, nyomon követési dimenziók és készletállapot** beállítású), akkor további korlátozások érvényesek. Mivel a láthatóság elveszik ebben az esetben a címke és a készlet között, bizonyos további esetek nem támogatottak.
+> Az előző információk a ténylegessúly-címkékről csak akkor érvényesek, ha a tényleges súllyal rendelkező termék olyan ténylegessúly-címke dimenziókövetési metódussal rendelkezik, amely teljes körűen nyomon követett (azaz ha a **Ténylegessúly-címke dimenziójának követési módja** paraméter a ténylegesssúly-cikk kezelési irányelvében a következő beállítású: **Termékdimenziók, a nyomon követési dimenziók és az összes tárolási dimenzió** ). Ha a ténylegessúly-cikk csak részlegesen címke által nyomon követett (azaz ha a **Ténylegessúly-címke dimenziójának követési módja** paraméter a ténlyegessúly-cikk kezelési irányelvében **Termékdimenziók, nyomon követési dimenziók és készletállapot** beállítású), akkor további korlátozások érvényesek. Mivel a láthatóság elveszik ebben az esetben a címke és a készlet között, bizonyos további esetek nem támogatottak.

@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: e4ee3bf07a1df445875197f38f655464cc9b44d3
-ms.sourcegitcommit: cf709f1421a0bf66ecea493088ecb4eb08004187
+ms.openlocfilehash: 4d0ca1fb4b7a4964194516544686b6bb7d26e76c
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "3443849"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997326"
 ---
 # <a name="troubleshoot-issues-during-initial-synchronization"></a>Problémák elhárítása a kezdeti szinkronizációkor
 
@@ -37,7 +36,7 @@ Ez a cikk a Finance and Operations és a Common Data Service alkalmazások köz�
 
 ## <a name="check-for-initial-synchronization-errors-in-a-finance-and-operations-app"></a>A kezdeti szinkronizálási hibák keresése egy Finance and Operations-alkalmazásban
 
-Miután engedélyezte a leképezési sablonokat, a leképezések állapotának **Fut** állapotnak kell lennie. Ha az állapot **Nem fut**, akkor hiba történt a kezdeti szinkronizálás során. A hibák megtekintéséhez válassza a **Kettős írás** oldal **Kezdeti szinkronizálás adatai** lapját.
+Miután engedélyezte a leképezési sablonokat, a leképezések állapotának **Fut** állapotnak kell lennie. Ha az állapot **Nem fut** , akkor hiba történt a kezdeti szinkronizálás során. A hibák megtekintéséhez válassza a **Kettős írás** oldal **Kezdeti szinkronizálás adatai** lapját.
 
 ![Hiba a kezdeti szinkronizálás részletek lapján](media/initial_sync_status.png)
 
@@ -114,7 +113,7 @@ Ha a szállítói entitásnak a **PrimaryContactPersonId** és az **InvoiceVendo
 
     1. Nyissa meg a **Vendors V2 (msdyn\_vendors)** kettős írás leképezési lapját , és válassza ki az **Entitás-leképezések** fület: A bal oldali szűrőben válassza a **Finance and Operations apps.Vendors V2** lehetőséget. A jobb oldali szűrőben válassz a **Sales.Vendor** lehetőséget.
     2. Keressen rá a **primarycontactperson** elemre a **PrimaryContactPersonId** forrásmező megkereséséhez.
-    3. Válassza a **Műveletek**, majd a **Törlés** lehetőséget.
+    3. Válassza a **Műveletek** , majd a **Törlés** lehetőséget.
 
         ![A PrimaryContactPersonId mező törlése](media/vend_selfref3.png)
 
@@ -128,7 +127,7 @@ Ha a szállítói entitásnak a **PrimaryContactPersonId** és az **InvoiceVendo
 
     1. Az **Adatkezelés** munkaterületen válassza az **Adatentitások** csempét.
     2. Válassza ki a **Szállítók V2** entitást.
-    3. A műveleti ablaktáblán válassza a **Beállítások**, majd a **Változáskövetés** elemet.
+    3. A műveleti ablaktáblán válassza a **Beállítások** , majd a **Változáskövetés** elemet.
 
         ![A módosítás nyomon követése beállítás kiválasztása](media/selfref_options.png)
 
@@ -161,7 +160,7 @@ Ha az ügyfélentitásnak a **ContactPersonId** és az **InvoiceAccount** mezőb
 
     1. Nyissa meg az **Ügyfelek V3 (partnerek)** kettős írás leképezési lapját , és válassza ki az **Entitás-leképezések** fület: A bel oldali szűrőben válassza a **Finance and Operations app.Customers V3** lehetőséget. A jobb oldali szűrőben válassza a **Common Data Service.Account** lehetőséget.
     2. Keressen rá a **contactperson** elemre a **ContactPersonID** forrásmező megkereséséhez.
-    3. Válassza a **Műveletek**, majd a **Törlés** lehetőséget.
+    3. Válassza a **Műveletek** , majd a **Törlés** lehetőséget.
 
         ![A ContactPersonID mező törlése](media/cust_selfref3.png)
 
@@ -175,7 +174,7 @@ Ha az ügyfélentitásnak a **ContactPersonId** és az **InvoiceAccount** mezőb
 
     1. Az **Adatkezelés** munkaterületen válassza az **Adatentitások** csempét.
     2. Válassza ki az **Ügyfelek V3** entitást.
-    3. A műveleti ablaktáblán válassza a **Beállítások**, majd a **Változáskövetés** elemet.
+    3. A műveleti ablaktáblán válassza a **Beállítások** , majd a **Változáskövetés** elemet.
 
         ![A módosítás nyomon követése beállítás kiválasztása](media/selfref_options.png)
 

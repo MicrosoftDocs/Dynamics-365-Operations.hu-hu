@@ -1735,6 +1735,8 @@
                   href: procurement/purchase-agreements.md
                 - name: Beszerzési szerződés létrehozása
                   href: procurement/tasks/create-purchase-agreement.md
+                - name: A kiadások automatikus felosztása
+                  href: procurement/automatic-charges-allocation.md
                 - name: Szállítói visszatérítések
                   href: procurement/vendor-rebates.md
                 - name: 'Árak, engedmények, szerződések és visszatérítések hibajavítása'
@@ -2041,6 +2043,14 @@
                       href: production-control/release-production-orders.md
                     - name: Termelési rendelések jelentése befejezettként
                       href: production-control/report-production-orders-as-finished.md
+                    - name: A termelési üzem végrehajtási felületének beállítása és használata
+                      items:
+                        - name: A termelési üzem végrehajtási felületének konfigurálása
+                          href: production-control/production-floor-execution-configure.md
+                        - name: A termelési üzem végrehajtási felületének futtatására szolgáló eszköz beállítása
+                          href: production-control/production-floor-execution-setup.md
+                        - name: A termelési üzem végrehajtási felületének használata dolgozók számára
+                          href: production-control/production-floor-execution-use.md
                     - name: Feladatkártya konfigurálása az eszközökhöz
                       href: production-control/config-job-card-device.md
                     - name: Jelentés befejezettként a feladatkártya-eszközből
@@ -2275,6 +2285,8 @@
                   href: sales-marketing/tasks/ship-orders-direct-deliveries.md
                 - name: Értékesítési rendelések szállítása raktározás nélkül
                   href: sales-marketing/tasks/ship-sales-orders-without-warehousing.md
+                - name: A kiadások automatikus felosztása
+                  href: procurement/automatic-charges-allocation.md
                 - name: Beszerzési rendelés létrehozása értékesítési rendelésből
                   href: sales-marketing/tasks/create-purchase-order-sales-order.md
                 - name: Értékesítési rendelések létrehozása
@@ -2663,8 +2675,6 @@
                       href: warehousing/tasks/license-plate-label-printing.md
                     - name: Átmozgatási rendelések létrehozása a raktári alkalmazásból
                       href: warehousing/create-transfer-order-from-warehouse-app.md
-                    - name: Raktári alkalmazás eseményeinek feldolgozása
-                      href: warehousing/warehouse-app-events.md
                     - name: Darabkitárolás megerősítése
                       href: warehousing/piece-picking-confirmation.md
                     - name: Csomagolóanyagok és díjak
@@ -2843,6 +2853,8 @@
                       href: warehousing/configure-app-field-names-priorities-warehouse.md
                     - name: Mobileszközök beállítása raktári munkához
                       href: warehousing/configure-mobile-devices-warehouse.md
+                    - name: Raktározási alkalmazás eseményeinek feldolgozása
+                      href: warehousing/warehouse-app-events.md
                     - name: Azonosítótábla-bevételezés a raktározási alkalmazás használatával
                       href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
                     - name: Mobileszköz-menüelem beállítása a beszerzési rendelés munkájának befejezéséhez

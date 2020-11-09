@@ -8,7 +8,7 @@ ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSWaveTemplateTable, InventLocationIdLookup, WHSContainerType, WHSContainerGroup, WHSContainerizationTable, WHSContainerizationBreak, WHSCreateContainerBreak
+ms.search.form: WHSWaveTemplateTable, InventLocationIdLookup, WHSContainerType, WHSContainerGroup, WHSContainerizationTable, WHSContainerizationBreak, WHSCreateContainerBreak, WHSContainerStructure, WHSContainerTable, WHSContainerizatonHistory, WHSContainerPackingPolicyChange, WHSManifestShipmentContainers, WHSAllowedContainerTypeGroup, WHSPostMethod, WHSContainerCreateDialog, WHSContainerCloseDiag, WHSContainer
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d08b89ac32b8ec40ae9dff15dbbd3264800cfb1a
-ms.sourcegitcommit: ac47e8679fb104515f7dcca509294264bd05d2b1
+ms.openlocfilehash: 1f961dc379ceeeae9bbceec1baaa9b9be21316f3
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "3454718"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017782"
 ---
 # <a name="set-up-containerization"></a>Tárolóra bontás beállítása
 
@@ -75,7 +75,7 @@ Ez a témakör azt mutatja be, hogy hogyan lehet automatizálni a szállítmány
 5. A **Hullámlépés kódja** mezőben írjon be egy értéket.
 6. Jelölje be a **Kitárolások szétosztásának engedélyezése** jelölőnégyzetet.
 7. Válassza a **Mentés** lehetőséget.
-8. Válassza ki a **Tárolóvegyesítési megszorítások** lehetőséget. A Vegyítési logika felbontásai lehetővé teszik a szabályok felállítását a felosztási sorok tárolóba való csomagolásához. Például ha hozzáadja a **Cikkszám mezőt**, amikor a rendszer a cikkeket a tárolóhoz rendeli, egy új tárolót hoz létre egy új cikkszám esetén. A rendszer így megakadályozza, hogy a munkavállalók két különböző vevőhöz tartozó felosztási sort ugyanabba a tárolóba csomagoljanak.  
+8. Válassza ki a **Tárolóvegyesítési megszorítások** lehetőséget. A Vegyítési logika felbontásai lehetővé teszik a szabályok felállítását a felosztási sorok tárolóba való csomagolásához. Például ha hozzáadja a **Cikkszám mezőt** , amikor a rendszer a cikkeket a tárolóhoz rendeli, egy új tárolót hoz létre egy új cikkszám esetén. A rendszer így megakadályozza, hogy a munkavállalók két különböző vevőhöz tartozó felosztási sort ugyanabba a tárolóba csomagoljanak.  
 9. Válassza az **Új** lehetőséget.
 10. Válasszon ki egy lehetőséget a **Tábla** mezőben.
 11. A **Mezőválasztás** mezőben adjon meg vagy válasszon ki egy értéket.

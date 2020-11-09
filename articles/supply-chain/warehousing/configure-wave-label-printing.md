@@ -8,7 +8,7 @@ ms.topic: configure-wave-label-printing
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSWaveLabel, WHSWaveLabelTemplate
+ms.search.form: WHSWaveLabel, WHSWaveLabelTemplate, WHSWaveLabelLayoutRow, WHSDocumentRouting, WHSWaveTableListPage, WHSPostMethod, WHSMobileDisplayWaveLabelListLookup, WHSWaveLabelType, WHSWaveLabelTemplateGroup, WHSDocumentRoutingLayout
 audience: Application User
 ms.reviewer: PJacobse
 ms.search.scope: Core, Operations
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: e3b04eea7bd7dd689f8a918820ffdb4a72d813dc
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 1f51ed9f05caede3d4f320ddb6b705e67df9aa1f
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3986023"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016954"
 ---
 # <a name="set-up-and-use-wave-label-printing"></a>A hullámcímkék nyomtatásának beállítása és használata
 
@@ -134,7 +134,7 @@ A címke elrendezése határozza meg, hogy milyen adatok jelennek meg a címkén
 
 1. Ha azt szeretné, hogy a fuvarlevél-azonosító kinyomtatása megtörténjen, az **illesztések** lapon válassza ki a **munkasorok** táblát, majd a **szállítmányok** tábláját illessze hozzá.
 1. Zárja be a lekérdezéstervező párbeszédpanelt.
-1. A **nyomtató szövegének elrendezése** gyorslap három szakaszból áll, ahol megadhatja a nyomtató kódját: **fejléc szakasz** , **szövegtörzs** és **lábléc szakasz** . A **Fejléc szakasz** szakaszban a **Címkefejléc** mezőben adja meg a kívánt fejléc kódját. Ha például Zebra nyomtatókat használ, a következő kódot használhatja.
+1. A **nyomtató szövegének elrendezése** gyorslap három szakaszból áll, ahol megadhatja a nyomtató kódját: **fejléc szakasz** , **szövegtörzs** és **lábléc szakasz**. A **Fejléc szakasz** szakaszban a **Címkefejléc** mezőben adja meg a kívánt fejléc kódját. Ha például Zebra nyomtatókat használ, a következő kódot használhatja.
 
     ```plaintext
     CT~~CD,~CC^~CT~
@@ -200,7 +200,7 @@ A címke elrendezése határozza meg, hogy milyen adatok jelennek meg a címkén
     ```
 
     > [!NOTE]
-    > Ez a beállítás kinyomtatja az egyes címkék egy példányát. Ha több példányra van szükség (például egy példány a raklap mindkét oldalára), akkor állítsa be a lábléc **\^PQn** szakaszának **n** értékét a példányok szükséges számára. Ha például az egyes címkékből négy másolatot szeretne nyomtatni, adja meg: **\^PQ4** .
+    > Ez a beállítás kinyomtatja az egyes címkék egy példányát. Ha több példányra van szükség (például egy példány a raklap mindkét oldalára), akkor állítsa be a lábléc **\^PQn** szakaszának **n** értékét a példányok szükséges számára. Ha például az egyes címkékből négy másolatot szeretne nyomtatni, adja meg: **\^PQ4**.
 
 A címke készen áll a használatra.
 
@@ -391,7 +391,7 @@ A hullámsablonokkal összekötheti a hullámmetódusok megadott példányait a 
 
 1. Ha azt szeretné, hogy a fuvarlevél-azonosító kinyomtatása megtörténjen, az **illesztések** lapon válassza ki a **munkasorok** táblát, majd a **szállítmányok** tábláját illessze hozzá.
 1. Zárja be a lekérdezéstervező párbeszédpanelt.
-1. A **nyomtató szövegének elrendezése** gyorslap három szakaszból áll, ahol megadhatja a nyomtató kódját: **fejléc szakasz** , **szövegtörzs** és **lábléc szakasz** . A **Fejléc szakasz** szakaszban a **Címkefejléc** mezőben adja meg a kívánt fejléc kódját. Ha például Zebra nyomtatókat használ, a következő kódot használhatja.
+1. A **nyomtató szövegének elrendezése** gyorslap három szakaszból áll, ahol megadhatja a nyomtató kódját: **fejléc szakasz** , **szövegtörzs** és **lábléc szakasz**. A **Fejléc szakasz** szakaszban a **Címkefejléc** mezőben adja meg a kívánt fejléc kódját. Ha például Zebra nyomtatókat használ, a következő kódot használhatja.
 
     ```plaintext
     CT~~CD,~CC^~CT~
@@ -423,7 +423,7 @@ A hullámsablonokkal összekötheti a hullámmetódusok megadott példányait a 
     ```
 
     > [!NOTE]
-    > Ez a beállítás kinyomtatja az egyes címkék egy példányát. Ha több példányra van szükség (például egy példány a raklap mindkét oldalára), akkor állítsa be a lábléc **\^PQn** szakaszának **n** értékét a példányok szükséges számára. Ha például az egyes címkékből négy másolatot szeretne nyomtatni, adja meg: **\^PQ4** .
+    > Ez a beállítás kinyomtatja az egyes címkék egy példányát. Ha több példányra van szükség (például egy példány a raklap mindkét oldalára), akkor állítsa be a lábléc **\^PQn** szakaszának **n** értékét a példányok szükséges számára. Ha például az egyes címkékből négy másolatot szeretne nyomtatni, adja meg: **\^PQ4**.
 
 A címke készen áll a használatra.
 
@@ -583,7 +583,7 @@ A jelen forgatókönyv követéséhez a demó adatokat kell telepíteni, és az 
 
 1. Ha azt szeretné, hogy a fuvarlevél-azonosító kinyomtatása megtörténjen, az **illesztések** lapon válassza ki a **munkasorok** táblát, majd a **szállítmányok** tábláját illessze hozzá. 
 1. Zárja be a lekérdezéstervező párbeszédpanelt.
-1. A **nyomtató szövegének elrendezése** gyorslap három szakaszból áll, ahol megadhatja a nyomtató kódját: **fejléc szakasz** , **szövegtörzs** és **lábléc szakasz** . A **Fejléc szakasz** szakaszban a **Címkefejléc** mezőben adja meg a kívánt fejléc kódját. Ha például Zebra nyomtatókat használ, a következő kódot használhatja.
+1. A **nyomtató szövegének elrendezése** gyorslap három szakaszból áll, ahol megadhatja a nyomtató kódját: **fejléc szakasz** , **szövegtörzs** és **lábléc szakasz**. A **Fejléc szakasz** szakaszban a **Címkefejléc** mezőben adja meg a kívánt fejléc kódját. Ha például Zebra nyomtatókat használ, a következő kódot használhatja.
 
 
     ```plaintext
@@ -650,7 +650,7 @@ A jelen forgatókönyv követéséhez a demó adatokat kell telepíteni, és az 
     ```
 
     > [!NOTE]
-    > Ez a beállítás kinyomtatja az egyes címkék egy példányát. Ha több példányra van szükség (például egy példány a raklap mindkét oldalára), akkor állítsa be a lábléc **\^PQn** szakaszának **n** értékét a példányok szükséges számára. Ha például az egyes címkékből négy másolatot szeretne nyomtatni, adja meg: **\^PQ4** .
+    > Ez a beállítás kinyomtatja az egyes címkék egy példányát. Ha több példányra van szükség (például egy példány a raklap mindkét oldalára), akkor állítsa be a lábléc **\^PQn** szakaszának **n** értékét a példányok szükséges számára. Ha például az egyes címkékből négy másolatot szeretne nyomtatni, adja meg: **\^PQ4**.
 
 1. Az első címke készen áll a használatra.
 1. Hozzon létre egy második elrendezésrekordot, amelynek beállításai a következők:
@@ -695,7 +695,7 @@ A jelen forgatókönyv követéséhez a demó adatokat kell telepíteni, és az 
 
 1. Ha azt szeretné, hogy a fuvarlevél-azonosító kinyomtatása megtörténjen, az **illesztések** lapon válassza ki a **munkasorok** táblát, majd a **szállítmányok** tábláját illessze hozzá.
 1. Zárja be a lekérdezéstervező párbeszédpanelt.
-1. A **nyomtató szövegének elrendezése** gyorslap három szakaszból áll, ahol megadhatja a nyomtató kódját: **fejléc szakasz** , **szövegtörzs** és **lábléc szakasz** . A **Fejléc szakasz** szakaszban a **Címkefejléc** mezőben adja meg a kívánt fejléc kódját. Ha például Zebra nyomtatókat használ, a következő kódot használhatja.
+1. A **nyomtató szövegének elrendezése** gyorslap három szakaszból áll, ahol megadhatja a nyomtató kódját: **fejléc szakasz** , **szövegtörzs** és **lábléc szakasz**. A **Fejléc szakasz** szakaszban a **Címkefejléc** mezőben adja meg a kívánt fejléc kódját. Ha például Zebra nyomtatókat használ, a következő kódot használhatja.
 
     ```plaintext
     CT~~CD,~CC^~CT~
@@ -724,7 +724,7 @@ A jelen forgatókönyv követéséhez a demó adatokat kell telepíteni, és az 
     ```
 
     > [!NOTE]
-    > Ez a beállítás kinyomtatja az egyes címkék egy példányát. Ha több példányra van szükség (például egy példány a raklap mindkét oldalára), akkor állítsa be a lábléc **\^PQn** szakaszának **n** értékét a példányok szükséges számára. Ha például az egyes címkékből négy másolatot szeretne nyomtatni, adja meg: **\^PQ4** .
+    > Ez a beállítás kinyomtatja az egyes címkék egy példányát. Ha több példányra van szükség (például egy példány a raklap mindkét oldalára), akkor állítsa be a lábléc **\^PQn** szakaszának **n** értékét a példányok szükséges számára. Ha például az egyes címkékből négy másolatot szeretne nyomtatni, adja meg: **\^PQ4**.
 
 1. A második címke készen áll a használatra.
 1. Hozzon létre egy harmadik elrendezésrekordot, amelynek beállításai a következők:
@@ -733,7 +733,7 @@ A jelen forgatókönyv követéséhez a demó adatokat kell telepíteni, és az 
     - **Leírás:** *Szünetcímke*
 
 1. A műveleti ablaktáblán válassza a **Mentés** lehetőséget.
-1. A **nyomtató szövegének elrendezése** gyorslap három szakaszból áll, ahol megadhatja a nyomtató kódját: **fejléc szakasz** , **szövegtörzs** és **lábléc szakasz** . A **Fejléc szakasz** szakaszban a **Címkefejléc** mezőben adja meg a kívánt fejléc ZPL-kódját. Íme, egy példa.
+1. A **nyomtató szövegének elrendezése** gyorslap három szakaszból áll, ahol megadhatja a nyomtató kódját: **fejléc szakasz** , **szövegtörzs** és **lábléc szakasz**. A **Fejléc szakasz** szakaszban a **Címkefejléc** mezőben adja meg a kívánt fejléc ZPL-kódját. Íme, egy példa.
 
     ```plaintext
     CT~~CD,~CC^~CT~

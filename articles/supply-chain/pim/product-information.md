@@ -1,7 +1,7 @@
 ---
 title: Termékek adatainak áttekintése
 description: Ez a témakör a termékinformációk kezelésével kapcsolatban tartalmaz tájékoztatást. A termékinformációk kezelése megosztott termékmeghatározás, kategorizálás és azonosítók révén működik a jogi személyeken belül, valamint egy termék egyes konfigurációi révén is, hogy beférjen a üzleti folyamatokba.
-author: benebotg
+author: t-benebo
 manager: tfehr
 ms.date: 06/01/2017
 ms.topic: article
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c118bc37a26d6d3a65905f2fd955ceb3554e9557
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 5c9ff3d0c7eabe2670c4818173d88c3ab5da7ff0
+ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3980888"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4015129"
 ---
 # <a name="product-information-overview"></a>Termékek adatainak áttekintése
 
@@ -63,7 +63,7 @@ Vegye figyelembe, hogy a dinamikus és aktív szervezeteknél a termékinformác
 
 ## <a name="product-masters-and-product-variants"></a>Alaptermékek és termékváltozatok
 
-Egy olyan mozgékony világban, amelyben a termékeket gyorsan hozzá kell igazítani az ügyfelek igényeihez, a termékmeghatározások termékkészletre vonatkoznak az egyedi termékek helyett. A Supply Chain Management rendszerben ezeket az általános termékeket *alaptermékeknek* nevezik. Az alaptermékek tárolják azokat a meghatározásat és szabályokat, amelyek meghatározzák az egyedi termékek leírását és az üzleti folyamatokban történő viselkedésüket. E meghatározások alapján egyedi termékek hozhatók létre. Ezen egyedi termékek a *Termékváltozatok* .
+Egy olyan mozgékony világban, amelyben a termékeket gyorsan hozzá kell igazítani az ügyfelek igényeihez, a termékmeghatározások termékkészletre vonatkoznak az egyedi termékek helyett. A Supply Chain Management rendszerben ezeket az általános termékeket *alaptermékeknek* nevezik. Az alaptermékek tárolják azokat a meghatározásat és szabályokat, amelyek meghatározzák az egyedi termékek leírását és az üzleti folyamatokban történő viselkedésüket. E meghatározások alapján egyedi termékek hozhatók létre. Ezen egyedi termékek a *Termékváltozatok*.
 
 Az alaptermék egy termékdimenzió-csoporthoz és egy konfigurációs technológiához van társítva az üzleti szabályok meghatározása érdekében. A termékdimenziók (szín, méret, stílus és konfiguráció) olyan meghatározott attribútumkészletet jelentenek, amelyek az alkalmazás egészében használhatók a kapcsolódó termékek konkrét viselkedésének meghatározására és nyomon követésére. Ezek a dimenziók segítik a felhasználókat a termékek keresésében és azonosításában is.
 

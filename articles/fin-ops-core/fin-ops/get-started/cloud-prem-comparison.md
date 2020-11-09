@@ -3,7 +3,7 @@ title: Felhő és helyszíni szolgáltatások összehasonlítása
 description: A témakör bemutatja, hogy mely szolgáltatásokat támogatja a felhőalapú és a helyszíni megoldás.
 author: sericks007
 manager: AnnBe
-ms.date: 03/04/2020
+ms.date: 10/04/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 50ab5827f864b53137acb77e75055e995ea6f439
-ms.sourcegitcommit: 1789a78de1cbeac19d96767812df653a191c67e9
+ms.openlocfilehash: fd73dd649e7c10916835fbb4573dd2e65bbdb39c
+ms.sourcegitcommit: 1329b3b98854422c4c3773ede44a5cefa7d07085
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "3100282"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "4040099"
 ---
 # <a name="comparison-of-cloud-and-on-premises-features"></a>Felhőalapú és helyszíni szolgáltatások összehasonlítása
 
@@ -58,10 +58,10 @@ A következő táblázatokban az alkalmazási területek listája található. A
 |                                      | ER: Integráció az LCS rendszerrel                                                                  | Igen       | Nem              |
 |                                      | ER: Integráció a SharePoint szolgáltatással                                                           | Igen       | Nem              |
 |                                      | ER: Integráció a Regulatory Configuration Service (RCS) szolgáltatással                              | Igen       | Nem              |
-|                                      | ER: Helyi fájlrendszer használata ER konfigurációk tárhelyeként, amelyeket ER tárházakon keresztül lehet elérni | Nem        | Igen             |
-|                                      | PowerBI.com integrálása                                                              | Igen       | Nem              |
-|                                      | Integráció a PowerBI Desktop rendszerrel                                                          | Nem        | Igen             |
-|                                      | Elemzési munkaterületek                                                                     | Igen       | Nem              |
+|                                      | ER: Helyi fájlrendszer használata ER konfigurációk tárhelyeként, amelyeket ER tárházakon keresztül lehet elérni | Nincs        | Igen             |
+|                                      | PowerBI.com integrálása                                                              | Igen       | Nincs              |
+|                                      | PowerBI Desktop integrálása                                                          | Nincs        | Igen             |
+|                                      | Elemzési munkaterületek                                                                     | Igen       | Nincs              |
 |                                      | Intelligens üzleti folyamat: ajánlások                                             | Igen       | Szám              |
 |                                      | Power BI jelentések készítése az OData segítségével a Power BI asztal vagy az Excel PowerQuery eszközök használatával    | Igen       | Szám              |
 |                                      | Az SQL Server Reporting Services (SSRS) támogatja a méretezést                                 | Igen       | Nem              |
@@ -87,6 +87,7 @@ A következő táblázatokban az alkalmazási területek listája található. A
 
 | **Terület**                | **Funkció**             | **Felhőbeli** | **Helyszíni** |
 |-------------------------|-------------------|-----------|-----------------|
+| Eszközkezelés                     |                                                                                           | Igen       | Nincs |
 | Megfelelés és tanúsítványok        |                                                                                           | Igen       | Igen             |
 |                                      | SOC 1 1. típusú tanúsítvány                                                                | Igen       | Szám              |
 | Költségkönyvelés                      |                                                                                           | Igen       | Igen             |
@@ -106,10 +107,10 @@ A következő táblázatokban az alkalmazási területek listája található. A
 |                                      | ER: Integráció az LCS rendszerrel                                                                  | Igen       | Nem              |
 |                                      | ER: Integráció a SharePoint szolgáltatással                                                           | Igen       | Nem              |
 |                                      | ER: Integráció a Regulatory Configuration Service (RCS) szolgáltatással                              | Igen       | Nem              |
-|                                      | ER: Helyi fájlrendszer használata ER konfigurációk tárhelyeként, amelyeket ER tárházakon keresztül lehet elérni | Nem        | Igen             |
-|                                      | PowerBI.com integrálása                                                              | Igen       | Nem              |
-|                                      | Integráció a PowerBI Desktop rendszerrel                                                          | Nem        | Igen             |
-|                                      | Elemzési munkaterületek                                                                     | Igen       | Nem              |
+|                                      | ER: Helyi fájlrendszer használata ER konfigurációk tárhelyeként, amelyeket ER tárházakon keresztül lehet elérni | Nincs        | Igen             |
+|                                      | PowerBI.com integrálása                                                              | Igen       | Nincs              |
+|                                      | PowerBI Desktop integrálása                                                          | Nincs        | Igen             |
+|                                      | Elemzési munkaterületek                                                                     | Igen       | Nincs              |
 |                                      | Intelligens üzleti folyamat: ajánlások                                             | Igen       | Szám              |
 |                                      | Power BI jelentések készítése az OData segítségével a Power BI asztal vagy az Excel PowerQuery eszközök használatával    | Igen       | Szám              |
 |                                      | Az SQL Server Reporting Services (SSRS) támogatja a méretezést                                 | Igen       | Nincs              |

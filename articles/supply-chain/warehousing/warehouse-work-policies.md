@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: WHSWorkPolicy
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 5ea93324547ed81df120db3412ee41fce2a93f4a
-ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
+ms.openlocfilehash: 08c04caeace7b8ced40915ace1561d817426cba3
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "3652005"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017667"
 ---
 # <a name="work-policies"></a>Munkairányelvek
 
@@ -28,7 +29,7 @@ ms.locfileid: "3652005"
 
 Ez a témakör azt mutatja be, hogyan lehet beállítani a rendszert és a raktári alkalmazást úgy, hogy támogassák a munkairányelveket. Ez a funkció a beszerzési vagy átmozgatási rendelések fogadása, illetve a termelési folyamatok befejezése esetén a készlet gyors regisztrálására használható, eltárolási munka létrehozása nélkül. Ez a témakör általános tájékoztatást tartalmaz. Az azonosítótábla-beszerzéssel kapcsolatos részletes információk: [Azonosítótábla-bevételezés a raktári alkalmazás használatával](warehousing-mobile-device-app-license-plate-receiving.md).
 
-A munkairányelvek azt vezérlik, hogy a gyártott cikk készként jelentésekor vagy a raktári alkalmazásba történő bevételezéskor történik-e a raktári munka létrehozása. Minden munkairányelvet úgy állíthat be, hogy meghatározza a feltételeket: a munkarendelés-típusokat és folyamatokat, a készlet helyét és a termékeket (ha van). Például egy beszerzési rendelést az *A0001* terméknél el kell fogadni a *RECV* helyen a *24*-es raktárban. Később a termék egy másik folyamatban lesz felhasználva a *RECV* helyen. Ebben az esetben munkairányelvet állíthat be, amellyel megakadályozhatja, hogy az eltárolási munka létrejöjjön, amikor egy dolgozó jelenti a beérkezett *A0001* terméket a *RECV* helyen.
+A munkairányelvek azt vezérlik, hogy a gyártott cikk készként jelentésekor vagy a raktári alkalmazásba történő bevételezéskor történik-e a raktári munka létrehozása. Minden munkairányelvet úgy állíthat be, hogy meghatározza a feltételeket: a munkarendelés-típusokat és folyamatokat, a készlet helyét és a termékeket (ha van). Például egy beszerzési rendelést az *A0001* terméknél el kell fogadni a *RECV* helyen a *24* -es raktárban. Később a termék egy másik folyamatban lesz felhasználva a *RECV* helyen. Ebben az esetben munkairányelvet állíthat be, amellyel megakadályozhatja, hogy az eltárolási munka létrejöjjön, amikor egy dolgozó jelenti a beérkezett *A0001* terméket a *RECV* helyen.
 
 > [!NOTE]
 > - Ahhoz, hogy egy munkairányelv aktív legyen, legalább egy helyet meg kell határozni a **Munkairányelvek** lap **Készlethelyek** gyorslapján. 
@@ -112,7 +113,7 @@ A mobileszközök menüelemének beállításához a következő lépések végr
 
 ## <a name="example-scenario-warehouse-receiving"></a>Példaforgatókönyv: raktári bevételezés
 
-A *Beszerzési rendelési cikk bevételezési (és eltárolási)* folyamata által fogadott összes terméket regisztrálni kell az *FL-001* helyen, és elérhetőnek kell lenniük a *24.* raktárban. A munkát azonban nem szabad létrehozni. Azokat a termékeket, amelyeket bármilyen más folyamat fogad (más mobileszköz menüelemek használatával), regisztrálni kell az alapértelmezett raktár bevételezési helyén (*RECV*), és a munkát a szokásos módon kell létrehozni. (Ez a forgatókönyv nem jeleníti meg az alapértelmezett bevételezési beállításokat.)
+A *Beszerzési rendelési cikk bevételezési (és eltárolási)* folyamata által fogadott összes terméket regisztrálni kell az *FL-001* helyen, és elérhetőnek kell lenniük a *24.* raktárban. A munkát azonban nem szabad létrehozni. Azokat a termékeket, amelyeket bármilyen más folyamat fogad (más mobileszköz menüelemek használatával), regisztrálni kell az alapértelmezett raktár bevételezési helyén ( *RECV* ), és a munkát a szokásos módon kell létrehozni. (Ez a forgatókönyv nem jeleníti meg az alapértelmezett bevételezési beállításokat.)
 
 Ennek a forgatókönyvnek a következő elemekre van szüksége:
 
@@ -187,7 +188,7 @@ A jelen szakaszban szereplő példa bemutatja, hogyan lehet beszerzési rendelé
 
 #### <a name="receive-a-purchase-order"></a>Beszerzési rendelés fogadása
 
-1. Jelentkezzen be a mobileszközön a *24*-es raktárhoz. Felhasználói azonosító: *24*, jelszó: *1*.
+1. Jelentkezzen be a mobileszközön a *24* -es raktárhoz. Felhasználói azonosító: *24* , jelszó: *1*.
 1. Válassza ki a **Bejövő** lehetőséget.
 1. Válassza a **Bevételezés fogadása** lehetőséget. A **Hely** mezőt *FL-001* értékre kell állítani.
 1. Az előző eljárásban létrehozott beszerzési rendeléshez tartozó beszerzési rendelés számának megadása.
@@ -213,7 +214,7 @@ Amikor raktári munkairányelv konfigurálását tervezi ehhez az esethez, vegye
 
 - **Munkairányelv neve:** *Nem eltárolási munka*
 - **Munkarendelés típusok:** *Késztermékek eltárolása* és *Társtermék és melléktermékek eltárolása*
-- **Készlethelyek:** *51*-es raktár és *001*-es hely
+- **Készlethelyek:** *51* -es raktár és *001* -es hely
 - **Termékek:** *SC1*
 
 Az alábbi példaforgatókönyv lépésről lépésre ismerteti, hogyan lehet a raktári munkairányelvet beállítani ehhez a forgatókönyvhöz.
@@ -259,7 +260,7 @@ A raktárkezelési folyamatok nem mindig tartalmaznak raktári munkát. A munka 
 ### <a name="set-up-an-output-location"></a>A kimeneti helyek beállítása
 
 1. Menjen a **Szervezet felügyelete \> Erőforrások \> Erőforráscsoportok** részhez.
-1. A bal oldali ablaktáblában válassza az **5102**-es erőforráscsoportot.
+1. A bal oldali ablaktáblában válassza az **5102** -es erőforráscsoportot.
 1. Az **Általános** gyorslapon állítsa be a következő értékeket:
 
     - **Kimeneti raktár:** *51*
