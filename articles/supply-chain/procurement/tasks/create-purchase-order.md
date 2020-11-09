@@ -8,7 +8,7 @@ ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: PurchTable, PurchCreateOrder, InventDimParmFixed, InventItemIdLookupPurchase, InventProductDimensionLookup, PurchTotals
+ms.search.form: PurchTable, PurchTablePart, PurchCreateOrder, InventDimParmFixed, InventItemIdLookupPurchase, InventProductDimensionLookup, PurchTotals
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7ed359521dd018047fdbd5312d0cb73d764de925
-ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
+ms.openlocfilehash: ec91174f291bcfa7027a93ca344823561cc29e3f
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "3383228"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018154"
 ---
 # <a name="create-a-purchase-order"></a>Beszerzési rendelés létrehozása
 
@@ -60,7 +60,7 @@ Ez a témakör bemutatja, hogy hogyan lehet manuálisan létrehozni beszerzési 
     - Az **Egységár** mező általában vagy a beszerzési szerződésből vagy a kereskedelmi megállapodásból származó értéket tartalmazza. Lehetőség van arra, hogy módosítsa az egységárat az egyes rendelési sorokban, ha például az egyedi ár meg van beszélve a szállítóval.  
     - Az **Engedmény** mező az engedmény összegét jeleníti meg a termékegységre vetítve. Ezért az engedmény csökkenti az egységárat az engedmény alapján. Ezt az engedményt gyakran a beszerzési szerződésekből vagy a kereskedelmi megállapodásból alkalmazzák, de felül is lehet írni az egyéni sorokban, ha a szállítóval meg vannak tárgyalva az egyedi engedmények.  
     - Meg lehet adni az engedmény százalékát, ami csökkenti a sor nettó összegét a sornak megfelelően. Az engedmény százalékát gyakran a beszerzési szerződésekből vagy a kereskedelmi megállapodásból alkalmazzák, de felül is lehet írni az egyéni sorokban, ha a szállítóval meg van tárgyalva az egyedi engedmény százaléka.  
-    - A rendszer a **Nettó összeg** mező értéket a mennyiséget, az egységárat, az engedményt, és az engedmény százalékát tartalmazó sorban található mezőkből számolja ki. Módosítani lehet a Nettó összeget, de ezt követően az **Egységár**, az **Engedmény**, és az **Engedmény százalék** mező üres lesz, és amikor feladja a sorhoz, a feladott összeg a nettó összeggel lesz arányos. A **Nettó összeg** mezőt általában csak a sor nettó összegének megjelenítésére használják.  
+    - A rendszer a **Nettó összeg** mező értéket a mennyiséget, az egységárat, az engedményt, és az engedmény százalékát tartalmazó sorban található mezőkből számolja ki. Módosítani lehet a Nettó összeget, de ezt követően az **Egységár** , az **Engedmény** , és az **Engedmény százalék** mező üres lesz, és amikor feladja a sorhoz, a feladott összeg a nettó összeggel lesz arányos. A **Nettó összeg** mezőt általában csak a sor nettó összegének megjelenítésére használják.  
 
 8. Bontsa ki a **Sorrészletek** szakaszt.
 9. Válassza a **Szállítás** fület. Mindegyik rendelési sorhoz hozzá lehet rendelni az egyedi szállítási dátumot. A dátum a beszerzési rendelés fejlécén található mezőből öröklődik, de ez módosítható.  

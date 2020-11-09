@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-09-20
-ms.openlocfilehash: 1ed97d7c388347eb5afe101f51173b6d48b18fcd
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: a2adf284111f2ccc9a830635ab3fb8f4731c84d9
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172923"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997576"
 ---
 # <a name="bootstrap-with-company-data-faq"></a>Rendszerindítás vállalati adatokkal – GYIK
  
@@ -59,7 +58,7 @@ A mintakódban csak a vállalat entitásrekordjainak kategorizálására szolgá
 ## <a name="what-should-i-expect"></a>Mi várható?
 Alapértelmezés szerint a mintapályázattal az üzleti egységek és a vállalat közötti kódleképezések tára adható meg. Az **OwningBusinessUnit** mező használatával rendszerindított entitás automatikusan a megadott vállalatot használja. Az **OwningBusinessUnit** mező nélküli entitások (pl. egy termék) üres üzletiegység-értékkel való leképezés alapján állítja be a vállalatot.
 
-A konzolpályázat egy paramétert vár: a **–szimuláció** vagy az **–alkalmaz** paramétert. Ha a **–szimuláció** parancssori paramétert használja, akkor semmilyen adat nem frissül. Csak **simulation_<entityname>.csv**-fájlok jönnek létre, ugyanabban a könyvtárban, mint amelyikben az eszköz van; minden olyan entitáshoz egy, amelyik frissülne. Ezeket a fájlokat munka közben iteratívan ellenőrizheti, hogy a kód csakugyan a várt módon frissítse a vállalat értékeit. 
+A konzolpályázat egy paramétert vár: a **–szimuláció** vagy az **–alkalmaz** paramétert. Ha a **–szimuláció** parancssori paramétert használja, akkor semmilyen adat nem frissül. Csak **simulation_<entityname>.csv** -fájlok jönnek létre, ugyanabban a könyvtárban, mint amelyikben az eszköz van; minden olyan entitáshoz egy, amelyik frissülne. Ezeket a fájlokat munka közben iteratívan ellenőrizheti, hogy a kód csakugyan a várt módon frissítse a vállalat értékeit. 
 
 Ha befejezte a szimulált frissítéseket, használja az **–alkalmaz** paramétert. Ez frissíti az összes olyan rekordot, amelyen jelenleg hibás a vállalati érték, egyszerre 1000 rekordos kötegekben (alapértelmezés szerint). A kód a megadott módon idempotens, vagyis újra futtatható, és csak a helytelenül hozzárendelt vállalatok lesznek frissítve. Az **–alkalmaz** paraméter futtatásakor a kód az elvégzett változtatások CSV-fájljait adja eredményként; a fájlok neve **applied_<entityname>.csv**. 
 

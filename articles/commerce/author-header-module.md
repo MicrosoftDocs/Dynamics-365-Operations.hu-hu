@@ -3,7 +3,7 @@ title: Fejlécmodul
 description: Ez a témakör a fejlécmodulokkal foglalkozik, és bemutatja, hogy hogyan lehet oldalfejléceket létrehozni a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: anupamar-ms
 manager: annbe
-ms.date: 09/15/2020
+ms.date: 10/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,17 +17,16 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 99457b2c98eae0ddd898f852630d690140a5a4c5
-ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
+ms.openlocfilehash: 52069af5ca2211473d4a096ad850b5be1290bba1
+ms.sourcegitcommit: 765056b5dc1d0a8c27e56ff2cbd310ad3349ff09
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3817010"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "4055450"
 ---
 # <a name="header-module"></a>Fejlécmodul
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Ez a témakör a fejlécmodulokkal foglalkozik, és bemutatja, hogy hogyan lehet oldalfejléceket létrehozni a Microsoft Dynamics 365 Commerce alkalmazásban.
 
@@ -43,7 +42,7 @@ A következő kép egy kezdőoldalon használt címsormodul egy példáját jele
 
 ## <a name="properties-of-a-header-module"></a>Fejlécmodul tulajdonságai
 
-A fejlécmodul az **Emblémakép**, **Embléma hivatkozása** és **Saját fiókhivatkozások** tulajdonságokat támogatja. 
+A fejlécmodul az **Emblémakép** , **Embléma hivatkozása** és **Saját fiókhivatkozások** tulajdonságokat támogatja. 
 
 Az **Emblémakép** és az **Emblémahivatkozás** tulajdonságokkal adható meg az embléma az oldalon. További tudnivalók: [Embléma hozzáadása](add-logo.md). 
 
@@ -59,6 +58,15 @@ A következő modulban használható a fejlécmodulban:
 
 - **Kosár ikon** - A kosár ikon modul a kosárikont jeleníti meg, amely a kosárban lévő cikkek számát mutatja bármely időpontban. A további tudnivalókat lásd a [kosár ikon modul](cart-icon-module.md) részben.
 
+- **Telephely-választó** – a telephely-választó modul lehetővé teszi a felhasználók számára, hogy a piaci, a régiós és a területi beállítások alapján különböző előre meghatározott telephelyeket böngésszenek. További információ: [Telephely-választó modul](site-selector.md).
+
+- **Üzletválasztó** – az üzletválasztó modul szerepelhet a fejléc modul üzletválasztó helyén. Lehetővé teszi, hogy a felhasználók böngésszenek és megtalálják a közeli üzleteket. A felhasználók megadhatnak egy preferált üzletet is. Ez az üzlet a fejlécben jelenik meg. Amikor az üzletválasztó modul szerepel a fejléc modulban, a **mód** tulajdonsága beállítása legyen **üzletek keresése**. További információ: [Üzletválasztó modul](store-selector.md).
+
+> [!NOTE]
+> - A kosárikon modul használatának támogatása a fejlécmodulban a Dynamics 365 Commerce 10.0.11-es kiadásában érhető el.
+> - A telephely-választó modul használatának támogatása a fejlécmodulban a Dynamics 365 Commerce 10.0.14-es kiadásában érhető el.
+> - Az üzletválasztó modul használatának támogatása a fejlécmodulban a Dynamics 365 Commerce 10.0.15-es kiadásában érhető el.
+
 ## <a name="create-a-header-fragment-for-a-page"></a>Fejléctöredék létrehozása egy oldalhoz
 
 Fejléctöredék létrehozásához kövesse az alábbi lépéseket.
@@ -66,12 +74,12 @@ Fejléctöredék létrehozásához kövesse az alábbi lépéseket.
 1. Lépjen a **Töredékek** pontra, és válassza az **Új** lehetőséget új töredék létrehozásához.
 1. Az **Új töredék** párbeszédpanelen válassza ki a **Tároló** modult, adja meg a töredék nevét, majd kattintson az **OK** gombra.
 1. Válassza ki az **Alapértelmezett tároló** helyet, majd a jobb oldali tulajdonságok ablaktáblán állítsa be a **Szélesség** tulajdonságot **Képernyő kitöltése** értékre.
-1. Az **Alapértelmezett tároló** helyben válassza a három pont (**…**) gombot, majd válassza az **Modul hozzáadása** elemet.
+1. Az **Alapértelmezett tároló** helyben válassza a három pont ( **…** ) gombot, majd válassza az **Modul hozzáadása** elemet.
 1. A **Modul hozzáadása** párbeszédpanelen válassza a **Cookie hozzájárulás** **Fejléc** és **Promóciós banner** modulokat majd kattintson az **OK** gombra.
 1. A **Promóciós banner** modul tulajdonságok ablaktábláján válassza az **Üzenet hozzáadása** lehetőséget, majd válassza az **Üzenet** elemet.
 1. Az **Üzenet** párbeszédpanelen adja meg a szöveget és a promóciós tartalomhoz tartozó hivatkozásokat, majd kattintson az **OK** gombra.
 1. A **Cookie-hozzájárulás** modul tulajdonságok ablaktáblájában adja meg a szöveget és a webhelye adatvédelmi oldalára mutató hivatkozást.
-1. Válassza ki a három pont (**...**) elemet a címsor modul **Navigációs menü** helyén, amely tartalmazza a váráslásmező modult, majd válassza a **Modul hozzáadása** lehetőséget.
+1. Válassza ki a három pont ( **...** ) elemet a címsor modul **Navigációs menü** helyén, amely tartalmazza a váráslásmező modult, majd válassza a **Modul hozzáadása** lehetőséget.
 1. A **Modul hozzáadása** párbeszédpanelen válassza ki a **Navigációs menü** modult, majd kattintson az **OK** gombra.
 1. A navigációs menü modul tulajdonság lapján, a **Navigációs menü forrása** alatt válassza a **Retail Server** elemet.
 1. A navigációs menü modul tulajdonságlapján, a **Statikus menüelemek** területen válassza a **Menüelem hozzáadása** lehetőséget. majd válassza a **Menüelem** lehetőséget. 
@@ -79,10 +87,10 @@ Fejléctöredék létrehozásához kövesse az alábbi lépéseket.
 1. A **Menüelem** párbeszédpanelen a **Menüelem-hivatkozás célja** alatt válassz a **Hivatkozás hozzáadása** lehetőséget.
 1. A **Hivatkozás hozzáadása** párbeszédpanelen jelölje ki a „Kapcsolat” lap URL-címét, majd kattintson az **OK** gombra.  
 1. A **Menüelem** párbeszédpanelen válassza az **OK** lehetőséget.
-1. Válassza ki a három pont (**...**) elemet a címsor modul **Keresés** helyén, amely tartalmazza a váráslásmező modult, majd válassza a **Modul hozzáadása** lehetőséget.
+1. Válassza ki a három pont ( **...** ) elemet a címsor modul **Keresés** helyén, amely tartalmazza a váráslásmező modult, majd válassza a **Modul hozzáadása** lehetőséget.
 1. A **Modul hozzáadása** párbeszédpanelen válassza ki a **Keresés** modult, majd kattintson az **OK** gombra.
 1. A keresés modul tulajdonságlapján konfigurálja a tulajdonságokat igény szerint.
-1. Válassza ki a három pont (**...**) elemet a címsor modul **Kosárikon** helyén, amely tartalmazza a váráslásmező modult, majd válassza a **Modul hozzáadása** lehetőséget.
+1. Válassza ki a három pont ( **...** ) elemet a címsor modul **Kosárikon** helyén, amely tartalmazza a váráslásmező modult, majd válassza a **Modul hozzáadása** lehetőséget.
 1. A **Modul hozzáadása** párbeszédpanelen válassza ki az **Kosárikon** modult, majd kattintson az **OK** gombra.
 1. A kosárikon modul tulajdonságlapján konfigurálja a tulajdonságokat igény szerint. Ha azt szeretné, hogy a kosárikon megjelenítsen egy kosárösszegzést (más néven mini kosarat), amikor a felhasználó fölé viszi az egérmutatót, akkor válassza ki a **Mini kosár megjelenítése** lehetőséget.
 1. Válassza a **Mentés** elemet, válassza a **Szerkesztés befejezése** parancsot a töredék ellenőrzéséhez, majd a **Közzététel** elemet a közzétételhez.
@@ -107,3 +115,7 @@ Ha azt szeretné, hogy minden lapon megjelenjen a fejléc, hajtsa végre az alá
 [Cookie-kkal kapcsolatos hozzájárulás](cookie-consent-module.md)
 
 [Láblécmodul](author-footer-module.md)
+
+[Telephelyválasztó modul](site-selector.md)
+
+[Üzletválasztó modul](store-selector.md)

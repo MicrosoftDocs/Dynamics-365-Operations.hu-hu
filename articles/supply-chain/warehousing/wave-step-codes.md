@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: WHSWaveTableListPage, WHSWaveStepCode, WHSReplenishmentTemplates, WHSWaveTemplateTable
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 251e9982451c888424589e0f0d6fce48aab42df1
-ms.sourcegitcommit: 68092ed283bfbb7b6f611cce1b62c791f9b6a208
+ms.openlocfilehash: 9332e45f7213ed815e4417969b617256778598db
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "3323577"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017805"
 ---
 # <a name="wave-step-codes"></a>Hullámlépéskódok
 
@@ -59,7 +59,7 @@ Az engedélyezés során az érvényesítés az adatfrissítés során történi
 
 Miután feloldotta az ellenőrzések során azonosított ütközéseket, próbálja újra engedélyezni a funkciót.
 
-Amikor a funkció engedélyezve van, elérhetővé válik a **Hullámlépéskódok** oldal (**Raktárkezelés \> Beállítás \> Hullámok \> Hullámlépéskódok**). Ez a lap felsorolja azokat a hullámlépéskódokat, amelyek a Szervezet egészére kiterjedő hullámlépéskód funkció bekapcsolásakor engedélyezve lettek.
+Amikor a funkció engedélyezve van, elérhetővé válik a **Hullámlépéskódok** oldal ( **Raktárkezelés \> Beállítás \> Hullámok \> Hullámlépéskódok** ). Ez a lap felsorolja azokat a hullámlépéskódokat, amelyek a Szervezet egészére kiterjedő hullámlépéskód funkció bekapcsolásakor engedélyezve lettek.
 
 ### <a name="create-new-wave-step-codes"></a>Új hullámlépéskódok létrehozása
 

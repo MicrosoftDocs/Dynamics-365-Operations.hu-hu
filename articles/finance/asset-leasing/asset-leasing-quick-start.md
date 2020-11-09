@@ -3,7 +3,7 @@ title: Eszközlízing – első lépések
 description: Ez a témakör az eszközlízing-képességet ismerteti, valamint bemutatja az eszközlízing létrehozásának, valamint a lízingekkel kapcsolatos információk megtekintésének lépéseit.
 author: moaamer
 manager: Ann Beebe
-ms.date: 09/24/2020
+ms.date: 10/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,17 +18,16 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-09-24
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 5f8f86861f65f3da71843f6fd4a64e4199e86627
-ms.sourcegitcommit: 9668af8d918faec37abe1881e550872cd6b73259
+ms.openlocfilehash: 9e206569aad3f53a2f6f66e6d6253226e5980078
+ms.sourcegitcommit: 9e7ceb5604472f3088f611aa0360bd6a716db32b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "3970008"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4022567"
 ---
 # <a name="asset-leasing-get-started"></a>Eszközlízing – első lépések
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Ez a témakör az eszközlízing-képességet ismerteti, valamint bemutatja az eszközlízing létrehozásának, valamint a lízingekkel kapcsolatos információk megtekintésének lépéseit. A témakör a felhasználói felületen és a dokumentációban használt terminológiát is meghatározza. Az eszközlízing egy speciális modul, amely lehetővé teszi a lízingelt eszközökre vonatkozó pénzügyi tranzakciók kezelését, nyomon követését és automatizálását a Microsoft Dynamics 365 Finance alkalmazásban. Az eszközlízing megfelel a nemzetközi könyvelési szabványoknak (IFRS 16) és az Egyesült Államokban GAAP szabványainak (ASC 842). Az eszközlízing modul rögzíti és dolgozza fel a lízinggel kapcsolatos adatokat, és segítséget nyújt a naplóbejegyzések létrehozásában a lízing életciklusa alatt – a kezdő elszámolástól és a havi naplóbejegyzésektől egészen a lízing értékvesztéséig és lezárásáig. Az eszközlízing modul zökkenőmentesen épül be a Dynamics 365 Finance egyéb összetevőibe, így például a tárgyi eszközökbe, a kötelezettségekbe és a főkönyvbe is.
 
@@ -224,7 +223,7 @@ Ez a használatijog-eszköz átvitt egyenlegének csökkentését jelenti. Az é
 
 4. Válassza ki a **Könyvek** lehetőséget. 
 
-5. Váltson át az **Általános** gyorsfülre. A program kiszámítja a **Kezdeti használatijog-eszközt** és a **lízingkötelezettséget** . 
+5. Váltson át az **Általános** gyorsfülre. A program kiszámítja a **Kezdeti használatijog-eszközt** és a **lízingkötelezettséget**. 
 
 6. Lépjen a **Lízingminősítési teszt** gyorsfülre a **Lízingtípus** mező értékének ellenőrzéséhez. 
 
@@ -244,7 +243,7 @@ Ez a használatijog-eszköz átvitt egyenlegének csökkentését jelenti. Az é
  
    A **Lízingkötelezettség amortizációjának ütemezése** az egyes időszakokra kiszámított kamat összegét jeleníti meg.
    
-10. Hozza létre a naplót, majd kattintson az **Eszközlízing naplókra** . A **Lízingkötelezettség amortizációjának ütemezése** a kamattranzakciókban is látható.
+10. Hozza létre a naplót, majd kattintson az **Eszközlízing naplókra**. A **Lízingkötelezettség amortizációjának ütemezése** a kamattranzakciókban is látható.
 
    Az **Eszköz értékcsökkenésének ütemezése** oldal a kiválasztott lízingazonosítóhoz tartozó értékcsökkenési tranzakciókat jeleníti meg. 
 

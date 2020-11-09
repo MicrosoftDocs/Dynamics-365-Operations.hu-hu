@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: PurchTable
+ms.search.form: PurchTable, PurchTablePart, PurchOrderInReview, PurchOrderApproved, PurchOrderInDraft, PurchOrderAssignedToMe, VendPurchOrderJournalListPage, PurchTableWorkflowDropDialog, VendPurchOrderJournal
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations, Retail
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6b331b7e7725b3dd284deb02e59fcf2d699822c4
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: e3879079e233a881ea0adc1f5e2ba39ab70b372d
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207994"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018813"
 ---
 # <a name="approve-and-confirm-purchase-orders"></a>Beszerzési rendelések jóváhagyása és megerősítése
 
@@ -57,7 +57,7 @@ Azok a szállítók, akik a szállítói portált használják, áttekintheti a 
 
 A pro-forma megerősítés generálására is van lehetőség, olyan megrendeléshez, amihez még nem készült aktuális megerősítés. Ez a beállítás olyan jelentést hoz létre, amit megoszthat a szállítóval. Ez nem hoz létre napló adatokat.
 
-Miután a szállító jóváhagyta a megrendelést, a következő lépés a beszerzési rendelés vállaltként való rögzítése. Ez vagy a **Megerősítés**, vagy a **Megerősít** művelettel végezheti el. Mind a két művelet **Megerősítve** állapotra módosítja a megrendelést. A megrendelés megerősítése további két folyamatot indít el:
+Miután a szállító jóváhagyta a megrendelést, a következő lépés a beszerzési rendelés vállaltként való rögzítése. Ez vagy a **Megerősítés** , vagy a **Megerősít** művelettel végezheti el. Mind a két művelet **Megerősítve** állapotra módosítja a megrendelést. A megrendelés megerősítése további két folyamatot indít el:
 
 -   Létrejön egy napló, ami tárolja a rendszerben megerősítettek pontos másolatát. A megrendeléseket néha módosítani kell, ezért további naplók jönnek létre, miután a frissített rendelés megerősítést nyer. Ezek a naplók teszik lehetővé a korábbi verziójú megerősített megrendelés előzményének a megtekintését.
 -   Létrejön a könyvelési felosztás, valamint rendelési és költségvetési ellenőrzések történnek, ha ez a funkció engedélyezve van. Ha valamelyik ellenőrzés sikertelen, megjelenhet egy hibaüzenet arról, hogy módosításokat kell végezni a beszerzési rendelésen, mielőtt újra megerősítik.

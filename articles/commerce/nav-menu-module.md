@@ -3,7 +3,7 @@ title: Navigációs menü modulja
 description: Ez a témakör a navigációs menü modulokkal foglalkozik, és bemutatja, hogy hogyan lehet őket hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: anupamar-ms
 manager: annbe
-ms.date: 09/15/2020
+ms.date: 10/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,17 +18,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 91239bd1db3f5819b7ad8d45ccfd8ab0d88b1b41
-ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
+ms.openlocfilehash: b0e8168ca9ec9ca68011650a73cc09983deca645
+ms.sourcegitcommit: 765056b5dc1d0a8c27e56ff2cbd310ad3349ff09
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3817874"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "4055737"
 ---
 # <a name="navigation-menu-module"></a>Navigációs menü modulja
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Ez a témakör a navigációs menü modulokkal foglalkozik, és bemutatja, hogy hogyan lehet őket hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
 
@@ -45,9 +44,13 @@ A következő ábra egy navigációs menüt mutat be a Fabrikam, webhelyen, amel
 
 | Tulajdonság neve             | Érték                 | Leírás |
 |---------------------------|-----------------------|-------------|
-| Forrás                  | **Kiskereskedelem**, **Kézi szerkesztés**, **Kiskereskedelem és kézi készítés** | A **Kiskereskedelem** érték lehetővé teszi a csatorna navigációs hierarchiájának megjelenítését a Commerce központból a navigációs menüben. A **Manuális szerkesztés** érték lehetővé teszi a statikus menüelemek válogatását. A **Kiskereskedelem és a manuális szerkesztés** érték a kettő kombinációját is lehetővé teszi. |
+| Forrás                  | **Kiskereskedelem** , **Kézi szerkesztés** , **Kiskereskedelem és kézi készítés** | A **Kiskereskedelem** érték lehetővé teszi a csatorna navigációs hierarchiájának megjelenítését a Commerce központból a navigációs menüben. A **Manuális szerkesztés** érték lehetővé teszi a statikus menüelemek válogatását. A **Kiskereskedelem és a manuális szerkesztés** érték a kettő kombinációját is lehetővé teszi. |
 | Kategóriaképek megjelenítése | **Igaz** vagy **Hamis**    | Ha ez a tulajdonság engedélyezve van, megjeleníti a kategóriaképeket a navigációs menüben, ahogy az definiálva van a Commerce központban az egyes kategóriákhoz. Hozzáadva a Commerce 10.0.14-es kiadásában. |
+| Többszintű navigációs menü engedélyezése | **Igaz** vagy **Hamis** | Ha ezt a tulajdonságot engedélyezi, a navigációs menü több szinten is megjelenítheti a navigációs hierarchiát. Ez a funkció a Dynamics 365 Commerce 10.0.15 kiadásban elérhető. |
+| Szintek száma | egész szám | Ez a tulajdonság határozza meg a szintek számát, amelyeket meg kell jeleníteni, ha a **Többszintű navigációs menü engedélyezése** tulajdonság értéke **Igaz**. |
 | Statikus menüelem| Értékek tömbje| A statikus menüelemek menüelemek nevét társítják egy statikus webhely-lapra mutató hivatkozással. A menüelemek más menüelemek alatt is létrehozhatók. Alapértelmezés szerint a statikus menük a gyökér szintjén jelennek meg, és a csatorna navigációs hierarchiához lesznek hozzáfűzve, ha van ilyen. |
+| Gyökérmenü megjelenítése | **Igaz** vagy **Hamis** | Ha ezt a tulajdonságot engedélyezte, a navigációs menü definiálható egy egyéni gyökér (például a **Vásárlás most** ) alapján is. Ez a funkció a Dynamics 365 Commerce 10.0.15 kiadásban elérhető. |
+| Gyökérmenü | karakterlánc | Ez a tulajdonság használható egy egyéni gyökér szövegének meghatározására, ha a **Gyökérmenü megjelenítése** tulajdonság értéke **Igaz**. |
 
 A következő ábra egy példát mutat be egy kategóriakép megjelenítésére a Fabrikam webhely navigációs menüjében.
 ![Példa egy navigációs menü moduljára a kategóriaképekkel](./media/ecommerce-categoryimages.PNG)
@@ -58,7 +61,11 @@ A navigációs menü modulnak a fejléc-modulba való felvételével kapcsolatos
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[Modulkönyvtár – áttekintés](starter-kit-overview.md)
+[Modultár áttekintése](starter-kit-overview.md)
+
+[Útkövetési modul](add-breadcrumb.md)
+
+[Oldalválasztó modul](site-selector.md)
 
 [Vásárlásmező-modul](add-buy-box.md)
 

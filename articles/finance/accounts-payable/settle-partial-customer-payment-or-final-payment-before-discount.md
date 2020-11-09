@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 37c378a424d89a884d1f3f0f14e1d544b3af178b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: f9ae9218a85c50582c8c4999da463833fc91d260
+ms.sourcegitcommit: d61c43b6bc04bb8786aa3c47932be0ccd84ebaeb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2178164"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "4006115"
 ---
 # <a name="settle-a-partial-customer-payment-and-the-final-payment-in-full-before-the-discount-date"></a>Részleges vevői kifizetés kiegyenlítése és az utolsó részlet teljes kiegyenlítése a készpénzfizetési engedmény dátuma előtt
 
@@ -48,7 +48,7 @@ A **Vevő** vagy a **Vevői tranzakciók** lapon Arnie megnyithatja a **Tranzakc
 
 Az engedményadatok **Tranzakciók kiegyenlítése** lap alján jelennek meg a kijelölt számlához.
 
-|                              |           |
+|    &nbsp;                    |  &nbsp;   |
 |------------------------------|-----------|
 | Készpénzfizetési engedmény dátuma           | 2015-07-09 |
 | Készpénzfizetési engedmény összege         | 10,00     |
@@ -79,7 +79,7 @@ Ahelyett, hogy megnyitná a **Vevői kifizetések rögzítése** lapot a kifizet
 
 Az engedményadatok a **Nyitott tranzakciók kiegyenlítése** lap alján jelennek meg.
 
-|                              |           |
+|        &nbsp;                | &nbsp;    |
 |------------------------------|-----------|
 | Készpénzfizetési engedmény dátuma           | 2015-07-09 |
 | Készpénzfizetési engedmény összege         | 10,00     |
@@ -95,7 +95,7 @@ Ha a vevő pontosan a számla felét akarja kiegyenlíteni, akkor a vevő egy 49
 
 Az engedményadatok a **Nyitott tranzakciók kiegyenlítése** lap alján jelennek meg.
 
-|                              |           |
+|     &nbsp;                   | &nbsp;    |
 |------------------------------|-----------|
 | Készpénzfizetési engedmény dátuma           | 2015-07-09 |
 | Készpénzfizetési engedmény összege         | 10,00     |
@@ -112,9 +112,9 @@ Arnie bezárja a **Tranzakciók kiegyenlítése** lapot. 495,00 értékű kifize
 | DISC-10010 |  Készpénzfizetési engedmény   | 2015-01-07  |         |                                      | 5,00                                  | 0,00    | dollár      |
 
 ## <a name="payment-for-the-remaining-amount"></a>A fennmaradó összeg kifizetése
-A 4028-as vevő kifizeti a fennmaradó 495,00 összeget július 8-án, ami a készpénzfizetési engedmény időszakába esik. Arnie létrehoz egy kifizetési naplót július 8-án és megjelöli a tranzakciót kiegyenlítettnek. Látja, hogy a kiegyenlítendő összeg 495,00. Az érték a **Becsült készpénzfizetési engedmény** mezőben **5,00**, mert az 5,00 engedményt korábban már érvényesítették.
+A 4028-as vevő kifizeti a fennmaradó 495,00 összeget július 8-án, ami a készpénzfizetési engedmény időszakába esik. Arnie létrehoz egy kifizetési naplót július 8-án és megjelöli a tranzakciót kiegyenlítettnek. Látja, hogy a kiegyenlítendő összeg 495,00. Az érték a **Becsült készpénzfizetési engedmény** mezőben **5,00** , mert az 5,00 engedményt korábban már érvényesítették.
 
-|                         |        |
+|   &nbsp;                | &nbsp; |
 |-------------------------|--------|
 | Megjelölt összesen            | 495,00 |
 | Becsült készpénzfizetési engedmény | 5,00   |
@@ -127,7 +127,7 @@ A kijelölt tranzakcióval kapcsolatos információk megjelennek a **Nyitott tra
 
 Az engedményadatok a **Nyitott tranzakciók kiegyenlítése** lap alján jelennek meg.
 
-|                              |           |
+|  &nbsp;                      |  &nbsp;   |
 |------------------------------|-----------|
 | Készpénzfizetési engedmény dátuma           | 2015-07-09 |
 | Készpénzfizetési engedmény összege         | 10,00     |

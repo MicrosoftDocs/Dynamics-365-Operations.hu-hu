@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: WHSClusterProfile
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 8d030afb568b158e6caf48b0044d595d6ec024f6
-ms.sourcegitcommit: 06f64550b2043582de4018bdd3924fcc1fd5d310
+ms.openlocfilehash: 3610725815b35609ee98b69b367db2945bbf166a
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "3802214"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016171"
 ---
 # <a name="cluster-position-full"></a>Fürtpozíció tele
 
@@ -213,7 +214,7 @@ Két munkaazonosítót kellett létrehozni, amelyek mindegyikében két kitárol
 
 ### <a name="mobile-device-flow-execution--work-confirmation-setup-for-the-product"></a>Mobileszköz-folyamat végrehajtása – A termékre vonatkozó munka-visszaigazolás beállítása
 
-1. Jelentkezzen be az *61*-es raktárban lévő felhasználóként a raktár alkalmazásba.
+1. Jelentkezzen be az *61* -es raktárban lévő felhasználóként a raktár alkalmazásba.
 1. Menjen a **Kimenő \> Fürtkitárolás létrehozása** helyre.
 
     Megjelenik a **Feladat: Munka hozzárendelése a fürthöz** lap.
@@ -236,10 +237,10 @@ A következő lépések során bármikor a **Részletek** lapon megtekintheti a 
 
     Megjelenik **FELADAT: Rendezés: Fürtkitárolás létrehozása** oldal. Itt rendezni fogja a két kitárolt raklapot egy kitárolási pozícióba. Ez a beosztás olyan ládát vagy tároló lehet, amely a kitárolt készlet értékesítési rendelés szerinti elkülönítésére szolgál.
 
-1. A cikkhez (*L0101*) és mennyiséghez (*20* ea) megjelenített részletek megjelenítésem amelyek az 1-es pozícióba lesznek rendezve (az 1. értékesítési rendeléshez).
+1. A cikkhez ( *L0101* ) és mennyiséghez ( *20* ea) megjelenített részletek megjelenítésem amelyek az 1-es pozícióba lesznek rendezve (az 1. értékesítési rendeléshez).
 1. Állítsa a **POZÍCIÓ NA** mezőt *1* értékre.
 1. Jelölje be az **OK** lehetőséget (pipa szimbólum).
-1. A cikkhez (*L0101*) és mennyiséghez (*20* ea) megjelenített részletek megjelenítésem amelyek az 2-es pozícióba lesznek rendezve (az 2. értékesítési rendeléshez).
+1. A cikkhez ( *L0101* ) és mennyiséghez ( *20* ea) megjelenített részletek megjelenítésem amelyek az 2-es pozícióba lesznek rendezve (az 2. értékesítési rendeléshez).
 1. Állítsa a **POZÍCIÓ NA** mezőt *2* értékre.
 1. Jelölje be az **OK** lehetőséget (pipa szimbólum).
 
@@ -258,10 +259,10 @@ Ebben az esetben az 1. pozíció nem fogadja el a cikkek teljes mennyiségét, a
 1. Jelölje be az **OK** lehetőséget (pipa szimbólum).
 1. Adja meg azt az azonosítótáblát, amelyből az elem ki lesz tárolva, ehhez az **LP** mezőt *LPREPL04* értékre kell állítani.
 1. Jelölje be az **OK** lehetőséget (pipa szimbólum).
-1. A cikkhez (*T0100*) és mennyiséghez (*2* ea) megjelenített részletek megjelenítésem amelyek az 2-es pozícióba lesznek rendezve (az 2. értékesítési rendeléshez).
+1. A cikkhez ( *T0100* ) és mennyiséghez ( *2* ea) megjelenített részletek megjelenítésem amelyek az 2-es pozícióba lesznek rendezve (az 2. értékesítési rendeléshez).
 1. Állítsa a **POZÍCIÓ NA** mezőt *2* értékre.
 1. Jelölje be az **OK** lehetőséget (pipa szimbólum).
-1. A cikkhez (*T0100*) és mennyiséghez (*2* ea) megjelenített részletek megjelenítésem amelyek az 1-es pozícióba lesznek rendezve (az 1. értékesítési rendeléshez).
+1. A cikkhez ( *T0100* ) és mennyiséghez ( *2* ea) megjelenített részletek megjelenítésem amelyek az 1-es pozícióba lesznek rendezve (az 1. értékesítési rendeléshez).
 1. Állítsa a **POZÍCIÓ NA** mezőt *1* értékre.
 1. Jelölje be az **OK** lehetőséget (pipa szimbólum).
 

@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSLicensePlateLabel
+ms.search.form: WHSLicensePlateLabel, WHSLicensePlateLabelBuildConfig, WHSLicensePlateLabel, WHSDocumentRoutingLayout
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2012-04-01
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 9af077022ab0759534d2c1da5f39997712e6a354
-ms.sourcegitcommit: 965fa733be068dc37f482d02ebbcd77f2c3d0a45
+ms.openlocfilehash: 8c96aef5d66ed8f8c44d74eee9b60f0a7d38a46d
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "3763455"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017713"
 ---
 # <a name="document-routing-layout-for-license-plate-labels"></a>Dokumentumirányítás elrendezés azonosítótábla-címkékhez
 
@@ -63,10 +63,10 @@ $FieldName:FormatString$
 
 Itt találja a formátum magyarázatát:
 
-- `FieldName` az adatmező neve (például **Mennyiség**).
+- `FieldName` az adatmező neve (például **Mennyiség** ).
 - `FormatString` azt határozza meg, hogy hogyan kell kinyomtatni az adatokat.
 
-A következő példák azt mutatják be, hogyan lehet testreszabni a munkamennyiség (**Mennyiség**) mezőt:
+A következő példák azt mutatják be, hogyan lehet testreszabni a munkamennyiség ( **Mennyiség** ) mezőt:
 
 - Ha azt szeretné, hogy a program mindig négy számjegyet jelenítse meg (nullák használatával helyőrzőként), használja `$Qty:0000$` értéket. Ha például a mennyiség 10, akkor a címkén „0010” jelenik meg.
 - Ha mindig két tizedesjegyet kíván megjeleníteni, használja a `$Qty:0.00$` értéket. Ha például a mennyiség 10, akkor a címkén „10.00” jelenik meg.

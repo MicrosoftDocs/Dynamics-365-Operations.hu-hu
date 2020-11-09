@@ -18,17 +18,16 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: d719c3ba68458130d415c50319fdcdeafcfc783e
-ms.sourcegitcommit: 025561f6a21fe8705493daa290f3f6bfb9f1b962
+ms.openlocfilehash: a30f5a9b585c826222108563ea10ac4194ee441c
+ms.sourcegitcommit: d6250ee5ced43be39e789324a895fd1c07178935
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "3835967"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "4039822"
 ---
 # <a name="get-started-with-the-electronic-invoicing-add-on-for-mexico"></a>Első lépések a mexikói elektronikus számlázásbővítménnyel
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 > [!IMPORTANT]
 > Előfordulhat, hogy a Mexikói elektronikus számlázásbővítmény jelenleg nem támogatja a CFDI dokumentumban elérhető összes funkciót, valamint a Microsoft Dynamics 365 Finance vagy Dynamics 365 Supply Chain Management szolgáltatással kapcsolatos beépített integrációt.
@@ -96,7 +95,7 @@ A **CFDI-számlák (MX)** funkció Globális adattárból történő importálá
 
 ## <a name="manage-the-e-invoicing-feature-setups"></a>Kezelje az e-számlázás funkció beállításait
 
-- Az **e-számlázási funkciók** oldal **Beállítások** lapján válassza a **Hozzáadás**, **Törlés** vagy **Szerkesztés** parancsot az e-számlázási funkciók beállításainak kezeléséhez.
+- Az **e-számlázási funkciók** oldal **Beállítások** lapján válassza a **Hozzáadás** , **Törlés** vagy **Szerkesztés** parancsot az e-számlázási funkciók beállításainak kezeléséhez.
 
 ![Az e-számlázás funkció beállításainak kezelése](media/e-Invoicing-services-get-started-MEX-Manage-e-Invoicing-feature-Setup.png)
 
@@ -168,7 +167,7 @@ Az Elektronikus számlázásbővítmény Finance szolgáltatásban történő be
 2. Az **Elektronikus jelentéskészítés** munkaterületen, a **Konfigurációszolgáltatók** szakaszban, válassza a **Microsoft** címet. Győződjön meg róla, hogy ez a konfigurációszolgáltató **Aktív** értékre van állítva. A szolgáltatók **Aktív** értékre állításával kapcsolatban tekintse át a [Konfigurációszolgáltatók létrehozása és megjelölése aktívként](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11) elemet.
 3. Válassza ki a **Tárházak** lehetőséget.
 4. Válassza ki a **Globális erőforrás \> Megnyitás** lehetőséget.
-5. **Számlamodell**, **Számlamodell-lekérdezés**, **CFDI-számlaformátum (MX)**, **CFDI-számlavisszavonási kérelemformátum (MX)**, és a **CFDI-számla érvénytelenítés formátum (MX)** importálása.
+5. **Számlamodell** , **Számlamodell-lekérdezés** , **CFDI-számlaformátum (MX)** , **CFDI-számlavisszavonási kérelemformátum (MX)** , és a **CFDI-számla érvénytelenítés formátum (MX)** importálása.
 
 ### <a name="turn-on-the-feature-for-processing-cfdi-invoices"></a>Kapcsolja be a CFDI-számlák feldolgozására szolgáló funkciót
 
@@ -184,7 +183,7 @@ Az Elektronikus számlázásbővítmény Finance szolgáltatásban történő be
 1. Az **Elektronikus jelentéskészítés** munkaterületen, a **Konfigurációszolgáltatók** szakaszban, válassza a **Microsoft** címet.
 3. Válassza ki a **Tárházak** lehetőséget.
 4. Válassza ki a **Globális erőforrás \> Megnyitás** lehetőséget.
-5. A **Válaszüzenet-modell**, a **CFDI-hibanapló-importálás (MX)**, a **CFDI-hibanapló-importálás (MX)**, és a **CFDI-üzenetválasz-importálás (MX)** importálása.
+5. A **Válaszüzenet-modell** , a **CFDI-hibanapló-importálás (MX)** , a **CFDI-hibanapló-importálás (MX)** , és a **CFDI-üzenetválasz-importálás (MX)** importálása.
 
 #### <a name="set-up-the-response-types"></a>A választípusok beállítása
 
@@ -196,12 +195,12 @@ Az Elektronikus számlázásbővítmény Finance szolgáltatásban történő be
     - A **Vevői számla naplóban** adja meg az **Vevői számla kontextusát**.
     - A **Projektszámlához** adja meg a **Projektszámla kontextusát**.
 
-4. Válassza ki azokat a konfigurálni kívánt **Választípusokat**, amelyek a vevői számlanaplón vagy a projektszámlán keresztül visszaállíthatók az elektronikus számlázásból.
-5. Válassza az **Új**, majd a **Válasz típusa** mezőt, majd a **Válasz** elemet.
+4. Válassza ki azokat a konfigurálni kívánt **Választípusokat** , amelyek a vevői számlanaplón vagy a projektszámlán keresztül visszaállíthatók az elektronikus számlázásból.
+5. Válassza az **Új** , majd a **Válasz típusa** mezőt, majd a **Válasz** elemet.
 6. A **Beküldés állapota** mezőben válassza a **Függőben** lehetőséget.
 7. A **Modell-leképezés** mezőben válassza a **Válaszüzenet importálási formátuma – Modell-leképezés válaszüzenetből** lehetőséget.
 8. Válassza a **Mentés** lehetőséget.
-9. Válassza az **Új**, majd a **Válasz típusa** mezőt, majd a **Válaszadatok** elemet.
+9. Válassza az **Új** , majd a **Válasz típusa** mezőt, majd a **Válaszadatok** elemet.
 10. A **Beküldés állapota** mezőben válassza a **Függőben** lehetőséget.
 11. A **Modell-leképezés** mezőben válassza ki a **CFDI-válaszadatok importálási formátuma (részletek) – Válaszadatok importálása** lehetőséget.
 12. Válassza a **Mentés** lehetőséget.
@@ -216,7 +215,7 @@ A CFDI-számlák Finance szolgáltatásban lévő Elektronikus számlázásbőv�
 
 ### <a name="submit-cfdi-invoices"></a>CFDI-számlák beküldése
 
-A **Konfigurálható elektronikus számlázásbővítmény integrációja** funkció bekapcsolását követően a CFDI-számlák küldéséhez szükséges **Elektronikus számlák exportálása/importálása** folyamat (**Kinnlevőségek \> Számlák \> E-számlák**) már nem használható. Ezt felváltotta egy új, **Elektronikus dokumentumok beküldése** nevű folyamat.
+A **Konfigurálható elektronikus számlázásbővítmény integrációja** funkció bekapcsolását követően a CFDI-számlák küldéséhez szükséges **Elektronikus számlák exportálása/importálása** folyamat ( **Kinnlevőségek \> Számlák \> E-számlák** ) már nem használható. Ezt felváltotta egy új, **Elektronikus dokumentumok beküldése** nevű folyamat.
 
 > [!NOTE]
 > Az új **Elektronikus dokumentumok beküldése folyamat** használata előtt győződjön meg arról, hogy a mexikói e-számlákhoz szükséges beállítások el lettek végezve. További tájékoztatást a [CFDI-elrendezés 3.3-as verziója](https://docs.microsoft.com/dynamics365/finance/localizations/latam-mex-cfdi-3-3) részben talál.

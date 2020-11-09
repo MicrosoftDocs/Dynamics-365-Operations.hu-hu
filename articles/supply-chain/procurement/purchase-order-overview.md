@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: PurchTable
+ms.search.form: PurchTable, PurchTablePart, PurchLineOpenOrder, PurchConfirmationRequestJournal
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations, Retail
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d4792cf982b9d5be3b30755483a5185a6d5a5a21
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: cfb35d6db74f965911329dbd6215d1108149fa6c
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207925"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018767"
 ---
 # <a name="purchase-order-overview"></a>Beszerzési rendelések áttekintése
 
@@ -73,7 +73,7 @@ A **Dokumentum állapota** a mező segíti a rendelés állapotának gyors átte
 
 A **Jóváhagyási állapot** mező akkor használatos, ha egy beszerzési rendelés halad át az ellenőrzési folyamaton vagy a munkafolyamaton. A következő értékek állnak rendelkezésre:
 
--   **Tervezet**, **Ellenőrzés alatt**, és **Elutasítva** – ezeket az állapotokat csak akkor használják, ha jóváhagyási munkafolyamatot használnak a beszerzési rendeléshez.
+-   **Tervezet** , **Ellenőrzés alatt** , és **Elutasítva** – ezeket az állapotokat csak akkor használják, ha jóváhagyási munkafolyamatot használnak a beszerzési rendeléshez.
 -   **Jóváhagyva** – Ez az állapot a befejezett munkafolyamat-jóváhagyással rendelkező rendelésekhez van társítva. Jóváhagyási munkafolyamat használata nélkül létrehozott rendelések állapota azonnal **Jóváhagyva** lesz.
 -   **Külső ellenőrzés alatt** – Ez az állapot olyan esetekben használatos, amikor egy beszerzési értesítést küldenek a szállítónak, hogy a beszerzési rendelésen szereplő feltételeket megerősíthesse. Ez az állapot is használatban van a folyamat során, amelyet a **Megerősítés kérés** művelet kezdeményez. Ehhez a folyamathoz a szállítónak meg kell erősítenie a Beszerzési rendelés feltételeit a rendszerhez való kapcsolódással és a rendelés megerősítésének vagy elutasításának regisztrálásával.
 -   **Megerősített** – Ez az állapot a rendelés megerősítése után kerül hozzárendelésre. Általában ez az állapot van hozzárendelve a rendelés utolsó jóváhagyási állapotához.

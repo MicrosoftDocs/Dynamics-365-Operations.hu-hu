@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0bf61aa839d4d59b2c93eee9931eef0e6c51d4ac
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 798e26badfd2a1f44891ea92f277de327fbed9c7
+ms.sourcegitcommit: d61c43b6bc04bb8786aa3c47932be0ccd84ebaeb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2178054"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "4006213"
 ---
 # <a name="foreign-currency-revaluation-for-general-ledger"></a>Főkönyvi devizaátértékelés
 
@@ -76,38 +76,33 @@ A nem realizált nyereség/veszteség tranzakcióit másképpen hozza létre a r
 
 **Példa** A 110110 fő számlához a következő egyenlegek léteznek.
 
-|            |                    |                        |                       |
+| Dátum   | Főkönyvi számla| Tranzakció összege | Könyvelési összeg |
 |------------|--------------------|------------------------|-----------------------|
-| **Dátum**   | **Főkönyvi számla** | **Tranzakció összege** | **Könyvelési összeg** |
 | Január 20. | 110110 (készpénz)      | 500 EUR (tartozik)        | 1000 USD (tartozik)      |
 
 A fő számla január 31-én kerül átértékelésre.  A nem realizált nyereség/veszteség kiszámítása a következőképpen történik.
 
-|                                             |                                            |                                  |                                    |                             |
+| Aktuális egyenleg a tranzakció pénznemében | Aktuális egyenleg a könyvelési pénznemben | Átértékelési árfolyam | Új könyvelési pénznem összege | Nem realizált nyereség/veszteség    |
 |---------------------------------------------|--------------------------------------------|----------------------------------|------------------------------------|-----------------------------|
-| **Aktuális egyenleg a tranzakció pénznemében** | **Aktuális egyenleg a könyvelési pénznemben** | **Átértékelési árfolyam** | **Új könyvelési pénznem összege** | **Nem realizált nyereség/veszteség**    |
 | 500 EUR                                     | 1000 USD                                   | 166.6667                         | 833,33 EUR (500 x 1,666667)        | 166,67 veszteség (833,33 – 1000) |
 
 A következő könyvelési bejegyzés jön létre.
 
-|            |                          |           |            |
+| Dátum   | Főkönyvi számla       | Tartozik | Követel |
 |------------|--------------------------|-----------|------------|
-| **Dátum**   | **Főkönyvi számla**       | **Tartozik** | **Követel** |
 | Január 31. | 110110 (készpénz)            |           | 166.67     |
 | Január 31. | 801400 (Nem realizált veszteség) | 166.67    |            |
 
 Február hónapra nem történik új tranzakciófeladás.  A fő számla átértékelése február 28-án történik.
 
-|                                             |                                            |                                  |                                    |                             |
+| Aktuális egyenleg a tranzakció pénznemében | Aktuális egyenleg a könyvelési pénznemben | Átértékelési árfolyam | Új könyvelési pénznem összege | Nem realizált nyereség/veszteség    |
 |---------------------------------------------|--------------------------------------------|----------------------------------|------------------------------------|-----------------------------|
-| **Aktuális egyenleg a tranzakció pénznemében** | **Aktuális egyenleg a könyvelési pénznemben** | **Átértékelési árfolyam** | **Új könyvelési pénznem összege** | **Nem realizált nyereség/veszteség**    |
 | 500 EUR                                     | 833,33 USD (1000 - 166,67)                 | 250.0000                         | 1250 USD (500 x 2,5)               | 416,67 nyereség (1250 – 833,33) |
 
 A következő könyvelési bejegyzés jön létre.
 
-|             |                          |           |            |
+| Dátum    | Főkönyvi számla       | Tartozik | Követel |
 |-------------|--------------------------|-----------|------------|
-| **Dátum**    | **Főkönyvi számla**       | **Tartozik** | **Követel** |
 | február 28. | 110110 (készpénz)            | 416.67    |            |
 | február 28. | 801600 (Nem realizált nyereség) |           | 416.67     |
 

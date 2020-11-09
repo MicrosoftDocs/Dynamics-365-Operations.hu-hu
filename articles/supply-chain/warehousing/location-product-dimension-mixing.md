@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: WHSLocationProfile, WHSReservationHierarchy, WHSInventTableReservationHierarchy
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 968777b918d59b810a189139fbf4d6fee1b5d3f5
-ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
+ms.openlocfilehash: 73519f3fe79d3d7d917d3044255f735640b8ccfd
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "3529983"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017161"
 ---
 # <a name="location-product-dimension-mixing"></a>Hely és termékdimenzió kombinálása
 
@@ -215,7 +216,7 @@ Olyan beszerzési rendelést hoz létre, amelynek három sora van: két sor ugya
 1. Hagyja jóvá a bejegyzést a lap alján látható jóváhagyás gombra (✔) kattintva.
 1. Adja meg a sor számát a bevételezett beszerzési rendelésből. Válassza ki a **LINENUM** mezőt, majd a számbillentyűzeten adja meg az *1* értéket.
 1. Hagyja jóvá a bejegyzést.
-1. Írja be a fogadásra kerülő mennyiséget. Nyomja meg kétszer a pluszjelet (**+**) a **Mennyiség** mező értékének *2*-re.
+1. Írja be a fogadásra kerülő mennyiséget. Nyomja meg kétszer a pluszjelet ( **+** ) a **Mennyiség** mező értékének *2* -re.
 1. Regisztrálja a bejegyzését a lap alján látható (✔) gombot megnyomva, majd hagyja jóvá a bejegyzést ismét a (✔) gombot megnyomva.
 1. Tekintse meg a **Beszerzési rendelések: Betárolás** oldalon látható információkat. Ez a lap az elraktározáshoz létrehozott munkát jeleníti meg (1. munka).
 

@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: CatCXMLParameters, CatCXMLPurchRequest
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-08-03
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: cd0435fd89050311ecd4f24400d5830cbcf8fdfd
-ms.sourcegitcommit: b281ac04157f6ccbd159fc89f58910b430a3b6a9
+ms.openlocfilehash: d7184f14ab67d646451c8c2b1313336d47e59316
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "3826925"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018307"
 ---
 # <a name="purchasing-cxml-enhancements"></a>Beszerzési cXML fejlesztései
 
@@ -64,7 +65,7 @@ Nyissa meg a **Beszerzési és forrás \> Beállítások \> cXML-kezelése \> cX
 
 ## <a name="set-up-vendor-purchase-orders-to-use-cxml"></a><a name="vendor-setup"></a>Szállítói beszerzési rendelések beállítása cXML használatára
 
-Minden alkalommal, amikor megerősít egy beszerzési rendelést, amelynél a **beszerzési rendelés küldése cXML-en keresztül** beállítás értéke _Igen_, a rendszer automatikusan létrehozza a cXML üzenetet, és leszállítja az adott beszerzési rendeléshez társított szállítónak. A beszerzési rendelésekhez kétféle módszerrel lehet szabályozni ezt a beállítást:
+Minden alkalommal, amikor megerősít egy beszerzési rendelést, amelynél a **beszerzési rendelés küldése cXML-en keresztül** beállítás értéke _Igen_ , a rendszer automatikusan létrehozza a cXML üzenetet, és leszállítja az adott beszerzési rendeléshez társított szállítónak. A beszerzési rendelésekhez kétféle módszerrel lehet szabályozni ezt a beállítást:
 
 - Ha azt szeretné beállítani, hogy a szállító automatikusan cXML-t használjon az igénylésből létrehozott összes új beszerzési rendeléshez, nyissa meg a **Beszerzés és forrás \> Szállítók \> Összes szállító** lehetőséget , majd válasszon ki, vagy hozzon létre egy szállítót a részletek lapjának megnyitásához. Ezt követően a **Beszerzési rendelés alapértelmezései** gyorslapján állítsa a **Beszerzési rendelés küldése cXML-en keresztül** lehetőséget _Igen_ értékre. Ha a cXML a nem **igénylésből** létrejövő új beszerzési rendelésekhez is automatikusan használni kell , akkor az **ENABLEMANUALPO** rendelési tulajdonságot is _Igaz_ értékre kell állítani a kapcsolódó külső katalógus esetében, a témakör [A rendelés tulajdonságainak beállítása](#set-order-properties) című későbbi részében leírtak szerint.
 - Az egyes beszerzési rendelések esetében nyissa meg a **Beszerzési és forrás \> Beszerzési rendelések \> Összes beszerzési rendelés** lehetőséget, és válassza ki vagy hozzon létre egy beszerzési rendelést a részletek lapjának megnyitásához. Váltson át a **Fejléc** nézetre, majd a **Beállítás** gyorslapon a **Beszerzési rendelés küldése cXML-en keresztül** beállítást kötelezőre.
@@ -118,7 +119,7 @@ Az alapértelmezett tulajdonságokat a következőképpen lehet használni:
 - **RESPONSETEXT** – Adja meg azt a saját szöveget, amelyet a szállítónak a cXML-válasz üzenetbe történő visszaküldéséhez elvár. Ily módon a rendszer képes megjelölni az üzenetet a _Nyugtázott_ értékkel. Ha a válasz nem egyezik meg a normál szöveggel vagy az itt megadott vevő szövegével, akkor a kérést a program _Hibaként_ jelöli meg.
 - **RESPONSETEXTSUB** – Ezt a tulajdonságot állítsa _IGAZ_ értékre ha a szállítói válasz szövegében a **RESPONSETEXT** mezőben megadott értékekre kívánja keresni. Előfordulhat például, hogy a szállító hosszú karakterláncot ad vissza, amely a válaszban az „OK” értéket tartalmazza. Ebben az esetben megadhatja az _OK_ értéket a **RESPONSETEXT** mezőben és a **RESPONSETESTSUB** tulajdonságot _IGAZ_ értékre állítva az „OK” kifejezésre bárhol kereshet a válaszban. Ezt követően a rendelést _Nyugtázott_ értékre lehet állítani.
 - **CONTENTTYPE** – Egy tipikus katalógus-beállításban nem kell beállítani ezt a tulajdonságot. Ha egy beszerzési rendelés elküldésekor a 500-as kiszolgálóhibát kap a szállító rendszerétől, akkor a tesztelést a tulajdonság _HAMIS_ értékre állításával végezheti el. Ez az érték megváltoztatja a webes kérelem beállítását, és lehetővé teheti, hogy bizonyos platformokra elküldjék az üzenetet.
-- **ENABLEHEADERS** – Ezt a tulajdonságot állítsa _IGAZ_ értékre, ha a beszerzési rendeléssel együtt a fejléceket is el kell küldeni. Ezt a tulajdonságot csak akkor kell megadni, ha a szállító igényli. Ha _IGAZ_ értékűre állítja ezt a tulajdonságot , adja meg a szállító által biztosított neveken alapuló további egyéni tulajdonságokat, és adja hozzájuk a _H\__ előtagot. Ilyan például a **H\_USERID**, **H\_PASSWORD**, **H\_RECEIVERID**, and **H\_ACTIONREQUEST**. A következő egyéni tulajdonságok szerepelnek az alapértelmezett tulajdonságok között:
+- **ENABLEHEADERS** – Ezt a tulajdonságot állítsa _IGAZ_ értékre, ha a beszerzési rendeléssel együtt a fejléceket is el kell küldeni. Ezt a tulajdonságot csak akkor kell megadni, ha a szállító igényli. Ha _IGAZ_ értékűre állítja ezt a tulajdonságot , adja meg a szállító által biztosított neveken alapuló további egyéni tulajdonságokat, és adja hozzájuk a _H\__ előtagot. Ilyan például a **H\_USERID** , **H\_PASSWORD** , **H\_RECEIVERID** , and **H\_ACTIONREQUEST**. A következő egyéni tulajdonságok szerepelnek az alapértelmezett tulajdonságok között:
 
     - **H\_USERID** – Ha a kereskedelmi partner azt szeretné, hogya a beszerzési rendelés elküldéséhez szükséges URL-cím részeként egy felhasználói azonosítót küldjön, itt adja meg az értéket.
     - **H\_USERID** – Ha a kereskedelmi partner azt szeretné, hogya a beszerzési rendelés elküldéséhez szükséges URL-cím részeként egy jelszót is küldjön, itt adja meg az értéket.
@@ -200,7 +201,7 @@ Ha befejezte a beszerzési rendelés összes adatának kitöltését, mindenkép
 
 A beszerzési rendelés visszaigazolása után a visszaigazolás állapotát a **Beszerzési rendelések visszaigazolása** naplóban lehet megtekinteni. A Műveleti ablaktáblán, a **Beszerzés** lapon a **Naplók** csoportban kattintson a **Beszerzési rendelés visszaigazolások** elemre.
 
-Minden beszerzési rendeléshez tartozhat több visszaigazolás is. Minden visszaigazolást növekményes számmal kell jelölni. A következő ábrán a beszerzési rendelés száma *00000275*, és a visszaigazolásé *00000275-1*. Ez a sorszámozás az Supply Chain Management funkciókat tükrözi, ahol a beszerzési rendelés módosításait, és ennek megfelelően a szállító számára küldendő cXML-üzenet típusát a megerősítés alapján lehet azonosítani. Ahogy az ábra mutatja, hogy a **Beszerzési rendelés visszaigazolása** lap tartalmazza a **Rendelés küldési állapota** és a **Rendelési kérelem szállítói állapota** mezőket is. Ha további tájékoztatást szeretne kapni a lapon megjelenő különböző állapotértékekről, tekintse meg a témakör későbbi, [Beszerzési rendelési kérelmek figyelése](#monitor-po-requests) című szakaszát.
+Minden beszerzési rendeléshez tartozhat több visszaigazolás is. Minden visszaigazolást növekményes számmal kell jelölni. A következő ábrán a beszerzési rendelés száma *00000275* , és a visszaigazolásé *00000275-1*. Ez a sorszámozás az Supply Chain Management funkciókat tükrözi, ahol a beszerzési rendelés módosításait, és ennek megfelelően a szállító számára küldendő cXML-üzenet típusát a megerősítés alapján lehet azonosítani. Ahogy az ábra mutatja, hogy a **Beszerzési rendelés visszaigazolása** lap tartalmazza a **Rendelés küldési állapota** és a **Rendelési kérelem szállítói állapota** mezőket is. Ha további tájékoztatást szeretne kapni a lapon megjelenő különböző állapotértékekről, tekintse meg a témakör későbbi, [Beszerzési rendelési kérelmek figyelése](#monitor-po-requests) című szakaszát.
 
 ![Beszerzési rendelések visszaigazolása lap](media/cxml-po-confirmations.png "Beszerzési rendelések visszaigazolása lap")
 
@@ -210,7 +211,7 @@ A **beszerzési rendelési kérelem** lap két rácsot tartalmaz. A lap felső r
 
 ![Beszerzési rendelési kérelem lap](media/cxml-po-request.png "Beszerzési rendelési kérelem lap")
 
-Ha a kötegelt feladat be van állítva, és fut, akkor a program elküldi a dokumentumot. A dokumentum elküldését követően megtekintheti az állapot változását. A következő ábrán a **Rendelés küldési állapota** mező _Elküldve_ értékre van állítva. A **rendelési kérelem szállítójának állapota** mező értéke _Nyugtázva_, így jelezve, hogy a szállító megkapta a dokumentumot, és képes volt olvasni és tárolni a rendszerben. A **Beszerzési rendelés előzményei** lap rácsa a dokumentum elküldésének időpontját jeleníti meg. Ha további tájékoztatást szeretne kapni a lapon megjelenő különböző állapotértékekről, tekintse meg a [Beszerzési rendelési kérelmek figyelése](#monitor-po-requests) című szakaszt.
+Ha a kötegelt feladat be van állítva, és fut, akkor a program elküldi a dokumentumot. A dokumentum elküldését követően megtekintheti az állapot változását. A következő ábrán a **Rendelés küldési állapota** mező _Elküldve_ értékre van állítva. A **rendelési kérelem szállítójának állapota** mező értéke _Nyugtázva_ , így jelezve, hogy a szállító megkapta a dokumentumot, és képes volt olvasni és tárolni a rendszerben. A **Beszerzési rendelés előzményei** lap rácsa a dokumentum elküldésének időpontját jeleníti meg. Ha további tájékoztatást szeretne kapni a lapon megjelenő különböző állapotértékekről, tekintse meg a [Beszerzési rendelési kérelmek figyelése](#monitor-po-requests) című szakaszt.
 
 ![Állapotüzenetek a beszerzési rendelési kérelem lapon](media/cxml-po-request-2.png "Állapotüzenetek a beszerzési rendelési kérelem lapon")
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0848b7556100fba38fcab0aa2a1a109e2e055fc9
-ms.sourcegitcommit: b89baab13e530b5b1f079231619c628309a4742d
+ms.openlocfilehash: 0d6f79ea569a7a9b0d25e73e8666bf9ba19095d0
+ms.sourcegitcommit: a8665c47696028d371cdc4671db1fd8fcf9e1088
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "3959575"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "4058154"
 ---
 # <a name="configure-common-data-service-virtual-entities"></a>Common Data Service-virtuális entitások konfigurálása
 
@@ -62,13 +62,13 @@ Először az Azure Portal webhelyen kell regisztrálnia az alkalmazást, hogy a 
 
 3. Válassza ki az **Új regisztráció** elemet.
 
-4. A **Név** mezőbe írja be az alkalmazás ismertető nevét. Például **Dynamics 365 Human Resources Virtuális entitások** .
+4. A **Név** mezőbe írja be az alkalmazás ismertető nevét. Például **Dynamics 365 Human Resources Virtuális entitások**.
 
 5. Az **Átirányítási URL-cím** mezőben adja meg a saját HR-instancia URL-névterét.
 
 6. Válassza a **Regisztrálás** lehetőséget.
 
-7. A regisztráció befejezését követően az Azure Portal megjeleníti az alkalmazás regisztrációjának **Áttekintés** ablaka, amelyen látható az **alkalmazás (ügyfél) azonosítója** . Ekkor jegyezze fel az **alkalmazás (ügyfél) azonosítóját** . Ezt az információt akkor kell megadnia, amikor a [virtuális entitás adatforrását konfigurálja](hr-admin-integration-common-data-service-virtual-entities.md#configure-the-virtual-entity-data-source).
+7. A regisztráció befejezését követően az Azure Portal megjeleníti az alkalmazás regisztrációjának **Áttekintés** ablaka, amelyen látható az **alkalmazás (ügyfél) azonosítója**. Ekkor jegyezze fel az **alkalmazás (ügyfél) azonosítóját**. Ezt az információt akkor kell megadnia, amikor a [virtuális entitás adatforrását konfigurálja](hr-admin-integration-common-data-service-virtual-entities.md#configure-the-virtual-entity-data-source).
 
 8. A bal oldali navigációs ablakban válassza ki a **Tanúsítványok és titkos kódok** elemet.
 
@@ -157,31 +157,32 @@ Engedélyek kiosztása a HR-ben lévő két Azure AD-alkalmazáshoz:
 
 A telepítés befejezését követően kiválaszthatja, hogy mely virtuális entitásokat szeretné létrehozni és engedélyezni a saját Common Data Service-példányában.
 
-1. Nyissa meg a [Power Platform felügyeleti központot](https://admin.powerplatform.microsoft.com).
+1. A HR-modulban nyissa meg a **Common Data Service (CDS) integrációja** oldalt.
 
-2. A **Környezetek** listán válassza ki a saját HR-instanciájához társított Power Apps környezetet.
-
-3. Válassza ki a **Környezet URL-je** elemet az oldal **Részletek** részében.
-
-4. A **Megoldás-állapotfelügyeleti központ** felületén válassza ki az oldal jobb felső sarkában található **Összetett keresés** ikont.
-
-5. Az **Összetett keresés** oldalon, az **Elem keresése** legördülő listán válassza ki az **Elérhető HR-entitások** elemet.
-
-6. A szűrőbeállítások segítségével megkeresheti az engedélyezni kívánt entitást vagy entitásokat.
-
-7. Válasszon egy entitást a listából.
-
-8. Az entitás oldalán módosítsa a **Létrehozva** tulajdonságot **Igen** értékre az adott entitáshoz.
-
-9. Mentse el és zárja be az entitás oldalát.
+2. Válassza ki a **Virtuális entitások** lapot.
 
 > [!NOTE]
-> A **Több rekord módosítása** oldalon egyszerre több virtuális entitást is létre lehet hozni. Jelöljön ki több rekordot az oldalon, és válassza a **Szerkesztés** elemet a menüszalagon. Ezután a **Létrehozva** tulajdonságot összes kiválasztott rekordra vonatkozóan módosíthatja.
+> A **Virtuális entitások engedélyezése** váltógombot a rendszer automatikusan az **Igen** értékre állítja, ha befejezte a szükséges beállításokat. Ha a váltógomb értéke **Nem** , tekintse át a dokumentum előző szakaszaiban ismertetett lépéseket, és győződjön meg arról, hogy minden előfeltétel-beállítást befejezett.
 
-![Elérhető HR-entitások](./media/hr-admin-integration-virtual-entities-available.jpg)
+3. Válassza ki a Common Data Service szolgáltatásban létrehozni kívánt entitást vagy entitásokat.
 
-> [!NOTE]
-> Annak érdekében, hogy a virtuális entitások létrehozási folyamat egyszerűbb legyen a jövőbeli verziókban is, a folyamat egy HR-en belüli oldalon megy végbe.
+4. Válassza a **Létrehozás/frissítés** lehetőséget.
+
+![Common Data Service-integráció](./media/hr-admin-integration-common-data-service-integration.jpg)
+
+## <a name="check-entity-generation-status"></a>Entitásgenerálási állapot ellenőrzése
+
+A virtuális entitások a Common Data Service szolgáltatásban aszinkron háttérfolyamatok során jönnek létre. A folyamat frissítései a műveleti központban láthatók. A folyamatra vonatkozó részletek, többek között a hibanaplók, a **Folyamatok automatizálása** oldalon láthatók.
+
+1. Az Emberi Erőforrások modulban nyissa meg **Folyamatok automatizálása** lapot.
+
+2. Válassza ki a **Háttérfolyamatok** lapot.
+
+3. Válassza ki a **Virtuális entitás lekérdezése – aszinkron háttérfolyamat** lehetőséget.
+
+4. Válassza ki a **Legutóbbi eredmények megtekintése** lehetőséget.
+
+A kicsúszó ablaktábla megjeleníti a folyamat legutóbbi végrehajtásának eredményeit. Megtekintheti a folyamat naplóját, többek között a Common Data Service szolgáltatásból visszaküldött hibákat is.
 
 ## <a name="see-also"></a>Lásd még
 

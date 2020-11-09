@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: EcoResStorageDimensionGroup, WHSInventStatus
+ms.search.form: EcoResStorageDimensionGroup, WHSInventStatus, WHSWarehouseStatusChange
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e96ed6d01e22ee2cbc5b3b2be8168fbb43904c89
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 07426eee2a79f21d7e91a82a1832cfdb35fd8683
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3212710"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017345"
 ---
 # <a name="inventory-statuses"></a>Készletállapotok
 
@@ -42,7 +42,7 @@ A készletállapotok a készlet csoportosítására használhatók. Ezután a el
 
 A készletállapot a tárolásidimenzió-csoport dimenziói közé tartozik. Készletállapotok kategóriája lehet elérhető vagy nem elérhető, és használhatja a **Készletzárolás** paramétert a nem elérhető állapotú cikkek blokkolására. A zárolt állapotú cikkek tényleges készletnek tekinthetők, és nem használhatók termelési rendelésben, értékesítési rendelésben, átmozgatási rendelésben vagy kimenő tranzakcióban.
 
-Bejövő munkához elérhető vagy nem elérhető készletállapotú cikkeket is használhat. Például létrehozhat egy elérhető állapotot, amely neve **Kész**, nem elérhető állapotot, amely neve **Sérült**, és zárolt állapotot, amely neve **Zárolva**. Bevételezett, vagy visszaküldött cikkek beszerzési rendelésének létrehozásakor, ha a cikkek megsérültek vagy eltörtek, a készlet állapotát módosíthatja **Sérült** értékre a beszerzési rendelésen. A cikkek bevételezése után, az állapot értéke automatikusan **Zárolva**. Ha mobileszköz használatával olvas be a sérült cikkeket, a Supply Chain Management használhat helyutasításokat és munkasablonokat, hogy mutassa a megfelelő helyet és helytartományokat, ahova be lehet tárolni azokat a cikkeket. Visszaküldött cikkekhez **Foglalás** kiadástpus jön létre a **Készlettranzakciók** oldalon.
+Bejövő munkához elérhető vagy nem elérhető készletállapotú cikkeket is használhat. Például létrehozhat egy elérhető állapotot, amely neve **Kész** , nem elérhető állapotot, amely neve **Sérült** , és zárolt állapotot, amely neve **Zárolva**. Bevételezett, vagy visszaküldött cikkek beszerzési rendelésének létrehozásakor, ha a cikkek megsérültek vagy eltörtek, a készlet állapotát módosíthatja **Sérült** értékre a beszerzési rendelésen. A cikkek bevételezése után, az állapot értéke automatikusan **Zárolva**. Ha mobileszköz használatával olvas be a sérült cikkeket, a Supply Chain Management használhat helyutasításokat és munkasablonokat, hogy mutassa a megfelelő helyet és helytartományokat, ahova be lehet tárolni azokat a cikkeket. Visszaküldött cikkekhez **Foglalás** kiadástpus jön létre a **Készlettranzakciók** oldalon.
 
 Kimenő munka esetén mindig elérhető készletállapotú cikkeket használjon. Ha **Törött** állapotú cikkekkel futtat alaptervezést, a rendszer hiányzónak fogja tekinteni őket, és automatikusan feltölti a készletet.
 

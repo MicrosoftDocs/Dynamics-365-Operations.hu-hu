@@ -8,6 +8,7 @@ ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: WHSInventFixedLocation
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Operations
@@ -16,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2c14fb92103fdd3c32ebc287a74a5dc4f4882b0e
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: b07cd8af0fd619a71d3fe5188f41d0a0ed954f93
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3981945"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016493"
 ---
 # <a name="set-up-a-location-directive-for-purchase-order-put-away"></a>Helyutasítás beállítása beszerzési rendelés eltárolásához
 
@@ -36,7 +37,7 @@ Ez a témakör bemutatja, hogyan állíthat be egyszerű helyutasítást. A pél
 1. Válassza az **Új** lehetőséget.
 2. Adjon meg egy számot a **Sorozatszám** mezőben. Ez az a sorrend, ahogyan a helyutasítás feldolgozása történik a kijelölt munkatétel típusához. A sorrendet módosíthatja ha szükséges.  
 3. Írjon be egy értéket a **Név** mezőbe. Ez ennek az utasításnak az egyedi azonosítója.  
-4. A **Munkatípus** mezőben válassza a **Betárolás** lehetőséget. A másolandó mezőtípusok kijelölése. A Beszerzési rendelés munkarendelés-típusnál az utasítás egyetlen támogatott értéke a **Betárolás** .  
+4. A **Munkatípus** mezőben válassza a **Betárolás** lehetőséget. A másolandó mezőtípusok kijelölése. A Beszerzési rendelés munkarendelés-típusnál az utasítás egyetlen támogatott értéke a **Betárolás**.  
 5. Adjon meg egy értéket a **Telephely** mezőben.
 6. Érték beírása a **Raktár** mezőbe. Az Irányelv kódja mezőt hagyja üresen.  Az utasításkódokat a Betárolási típusú munkarendeléssor csatolásához használjuk egy adott irányelvhez. A beszerzési rendelések esetében a betárolás típusú utolsó munkarendeléssor feloldása a munkasablon meghatározása előtt történik meg. Ezért nem lehet hozzákapcsolódni a munkasablon utolsó sorát egy adott irányelvhez.   
 7. Adjon meg egy értéket az **Intézkedési kód** mezőben. Az Intézkedési kód korlátozza a helyutasítás használatát, így a helyutasítás csak akkor használható, ha a raktári dolgozó bevisz egy adott értéket a cikk regisztrálása során a mobileszközön.  

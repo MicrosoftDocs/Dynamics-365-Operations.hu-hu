@@ -3,7 +3,7 @@ title: Számlák feldolgozása
 description: Ez a témakör a kelet-európai számlafeldolgozással kapcsolatban tartalmaz tájékoztatást.
 author: v-kikozl
 manager: AnnBe
-ms.date: 07/21/2017
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -12,16 +12,16 @@ ms.search.form: CustParameters, VendParameters
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
-ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
+ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia, Italy
 ms.author: v-kikozl
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 945b082528109f6f8c9292d2388749bebd4cfba4
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 87a06e1b17e9c0bdb4147f49b2dacb74236360fa
+ms.sourcegitcommit: d6250ee5ced43be39e789324a895fd1c07178935
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175771"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "4039807"
 ---
 # <a name="invoice-processing"></a>Számlák feldolgozása
 
@@ -68,9 +68,10 @@ Ez a témakör röviden leír néhány országspecifikus forgatókönyvet, péld
 </tr>
 <tr>
 <td>Dokumentum dátuma az árfolyamokhoz</td>
-<td>Lengyelország, Magyarország, Cseh Köztársaság</td>
+<td>Lengyelország, Magyarország, Cseh Köztársaság, Olaszország</td>
 <td>
 <p>A jogszabályok eltérő szabályokat adnak meg az érvényes árfolyamok kiválasztásához az üzleti tranzakciók számára. Az <strong>Árfolyam dátuma</strong> mezőben a <strong>Kinnlevőségek paraméterei</strong> és a <strong>Kötelezettségek paraméterei</strong> lapon, kiválaszthatja a dátumot, amely a könyvelési pénznemben szereplő összegekre használandó a beszerzési és értékesítési bizonylatok számításánál. Adatbevitel közben a rendszer beolvassa a tranzakció átváltási árfolyamát ennek a paraméternek az alapján.</p>
+<blockquote>[!NOTE]<br>Olaszország esetében ez a funkció csak a kötelezettségek modulban használható. A kötelezettségek paraméterei között a felhasználó kiválaszthatja a <strong>feladási dátumot</strong> vagy a <strong>bizonylat dátumát</strong> az <strong>árfolyam dátuma</strong> mezőben.   </blockquote>
 <blockquote>[!NOTE]<br>Az <strong>Árfolyam dátuma</strong> mező beállításakor a <strong>Bizonylat dátuma (csak EU-kereskedelemben)</strong> lehetőségre, a rendszer az áfacsoportot használja. Az áfacsoportra nézve van egy <strong>EU-kereskedelem</strong> paraméter az <strong>Általános</strong> lapon. Ha az <strong>EU-kereskedelem</strong> beállítás <strong>Igen</strong> az áfacsoport esetében, és a bizonylat fejlécében létezik ez az áfacsoport, a rendszer beolvassa az átváltási árfolyamot a bizonylat dátuma alapján. Ha az <strong>EU-kereskedelem</strong> beállítás <strong>Nem</strong> az áfacsoport esetében, a rendszer a bizonylat feladási dátuma alapján olvassa be az árfolyamot.</blockquote>
 </td>
 </tr>

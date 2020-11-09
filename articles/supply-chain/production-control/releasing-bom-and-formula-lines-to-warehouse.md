@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: SysOperationTemplateForm, ProdParmReleaseToWarehouse
+ms.search.form: SysOperationTemplateForm, ProdParmReleaseToWarehouse, WHSReleaseToWarehouseProdBOM
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: ab0a6e7de02b4b69d3f7a129392a1057482f0c26
-ms.sourcegitcommit: 175f9394021322c685c5b37317c2f649c81a731a
+ms.openlocfilehash: bf2beef30ba1cf6877325e686b76de5dc8d3ba55
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "3826335"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017230"
 ---
 # <a name="release-bom-and-formula-lines-to-the-warehouse"></a>Az anyagjegyzék- és receptúrasorok kiadása a raktárba
 
@@ -46,7 +46,7 @@ Ha gyors áttekintést szeretne arról, hogy miként adható ki az anyagjegyzék
 
 ## <a name="releasing-the-bom-and-formula-lines-by-using-a-batch-job"></a>Anyagjegyzék- és receptúrasorok kiadása kötegelt feladat segítségével
 
-Az **Anyagjegyzék és receptúrasorok automatikus kiadása** kötegelt feladat végighalad azokon a kiválasztott anyagjegyzék- és receptúrasorokon, amelyeknek van fennmaradó, kiadható mennyisége. A feladat csak a következő állapotú rendeléseket veszi figyelembe: **Kiadva**, **Elindítva** vagy **Készként jelentve**. Ha egy anyagjegyzék- vagy receptúrasornak van fennmaradó kiadható mennyisége, a feladat maximálisan akkora mennyiséget adhat ki, amennnyi a már ténylegesen lefoglalt mennyiség, és a fizikailag rendelkezésre álló mennyiség.
+Az **Anyagjegyzék és receptúrasorok automatikus kiadása** kötegelt feladat végighalad azokon a kiválasztott anyagjegyzék- és receptúrasorokon, amelyeknek van fennmaradó, kiadható mennyisége. A feladat csak a következő állapotú rendeléseket veszi figyelembe: **Kiadva** , **Elindítva** vagy **Készként jelentve**. Ha egy anyagjegyzék- vagy receptúrasornak van fennmaradó kiadható mennyisége, a feladat maximálisan akkora mennyiséget adhat ki, amennnyi a már ténylegesen lefoglalt mennyiség, és a fizikailag rendelkezésre álló mennyiség.
 
 ### <a name="example-of-a-batch-job-release"></a>Példa egy kötegelt feladattal való kiadásra
 
@@ -77,7 +77,7 @@ Ha az anyagok kiadása a **Termelési rendelés kiadásán** paraméter beállí
 
 Az anyag kiadását meghatározó műveletek szabályozására használja a **Kiadás raktárba** oldalt.
 
-- Válassza ki a következőt: **Gyártásvezérlés** \> **Termelési rendelések** \> **Minden termelési rendelés**, válasszon termelési rendelést, majd a **Raktár** lapon jelölje be a **Kiadás raktárba** lehetőséget. Ezután használja a **Kezdő műveletszám** és a **Záró műveletszám** mezőt a műveletszámok tartományának meghatározásához.
+- Válassza ki a következőt: **Gyártásvezérlés** \> **Termelési rendelések** \> **Minden termelési rendelés** , válasszon termelési rendelést, majd a **Raktár** lapon jelölje be a **Kiadás raktárba** lehetőséget. Ezután használja a **Kezdő műveletszám** és a **Záró műveletszám** mezőt a műveletszámok tartományának meghatározásához.
 
 A következő ábrán egy termelési rendelés látható, amelyhez két művelet tartozik, 10 és 20. Ebben a példában, ha a kiadást a 10-es műveletre korlátozza, csak az M9203 anyag kiadása történik meg.
 
@@ -89,11 +89,11 @@ Ha gyors áttekintést szeretne arról, hogyan lehet kiadni a késztermékek ar�
 
 Nyersanyagok kiadhatók késztermékek részleges mennyiségéhez vagy meghatározott egységben.
 
-- Nyersanyagok kiadásához késztermékek részleges mennyiségéhez válassza ki a következőt: **Gyártásvezérlés** \> **Termelési rendelések** \> **Minden termelési rendelés**, válasszon termelési rendelést, majd a **Raktár** lapon jelölje be a **Kiadás raktárba** lehetőséget. Ezután írjon be egy mennyiséget a **Mennyiség** mezőbe.
+- Nyersanyagok kiadásához késztermékek részleges mennyiségéhez válassza ki a következőt: **Gyártásvezérlés** \> **Termelési rendelések** \> **Minden termelési rendelés** , válasszon termelési rendelést, majd a **Raktár** lapon jelölje be a **Kiadás raktárba** lehetőséget. Ezután írjon be egy mennyiséget a **Mennyiség** mezőbe.
 
     Létrehozunk például egy termelési rendelést, és 1000 darabra (db) ütemezzük. Az üzemirányítási felügyelő 100 darabra tervezi a termelést a következő műszakra, és csak az adott műszakra szeretne anyagokat kiadni. Ebben az esetben a felügyelő a **Mennyiség** mezőt használhatja az anyagok kiadására 100 darabhoz: ez a következő műszakra tervezett mennyiség.
 
-- Nyersanyagok kiadásához adott egységben válassza ki a következőt: **Gyártásvezérlés** \> **Termelési rendelések** \> **Minden termelési rendelés**, válasszon termelési rendelést, majd a **Raktár** lapon jelölje be a **Kiadás raktárba** lehetőséget. Ezután használja az **Egység** mezőt a késztermék egységének a kiválasztásához, amelyhez anyagot szeretne felszabadítani.
+- Nyersanyagok kiadásához adott egységben válassza ki a következőt: **Gyártásvezérlés** \> **Termelési rendelések** \> **Minden termelési rendelés** , válasszon termelési rendelést, majd a **Raktár** lapon jelölje be a **Kiadás raktárba** lehetőséget. Ezután használja az **Egység** mezőt a késztermék egységének a kiválasztásához, amelyhez anyagot szeretne felszabadítani.
 
     A rendelkezésre álló egységek a késztermék egység-szekvenciacsoportazonosítójában vannak meghatározva.
 

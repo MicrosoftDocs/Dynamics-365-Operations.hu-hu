@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: c397354ade1ac1d4f5f9bc0e6bb5d4be5a7ae9f3
-ms.sourcegitcommit: f7294160d18f15cb762c24f2459b4f0887c37541
+ms.openlocfilehash: 2d463bf01659aeb6599023ce46da0c604f8eeff0
+ms.sourcegitcommit: 776758a0ff95c3c7398986095104d1d2b9814514
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "3505611"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "4107375"
 ---
 # <a name="omni-channel-advanced-auto-charges"></a>Többcsatornás speciális automatikus költségek
 
@@ -32,7 +32,7 @@ ms.locfileid: "3505611"
 
 Ez a témakör tájékoztatást nyújt a speciális automatikus költségek funkció konfigurációjáról és telepítéséről, amely rendelkezésre áll a Dynamics 365 for Retail 10.0 verziójában.
 
-Ha a speciális automatikus költségek funkciók engedélyezve vannak, akkor az összes támogatott Commerce csatornában (pénztár (POS), hívásközpont, és az interneten keresztül) kihasználhatja az [automatikus költségek](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) konfigurációk előnyeit, amelyeket a fejléc- és sorszintű kapcsolódó költségekre vonatkozóan meghatároztak az ERP alkalmazásban.
+Ha a speciális automatikus költségek funkciók engedélyezve vannak, akkor az összes támogatott Commerce-csatornában (pénztár (POS), hívásközpont, és az interneten keresztül) kihasználhatja az [automatikus költségek](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) konfigurációk előnyeit, amelyeket a fejléc- és sorszintű kapcsolódó költségekre vonatkozóan meghatároztak az ERP-alkalmazásban.
 
 A Retail 10.0 verzió előtti kiadásokban az [automatikus költség](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) konfigurációi csak az elektronikus kereskedelmi és a hívásközponti csatornákban létrehozott rendelések számára hozzáférhetők. A 10.0 és a későbbi verziókban a pénztár által létrehozott rendelések is kihasználhatják az automatikus költségek konfigurációit. Ezzel a módszerrel a további vegyes költségek szisztematikusan hozzáadhatók az értékesítési tranzakciókhoz.
 
@@ -50,7 +50,7 @@ A **Retail és Commerce \> Központ beállítása \> Paraméterek \> Commerce pa
 
 Ha a speciális automatikus költségek engedélyezve vannak, a felhasználókat már nem szólítja fel a rendszer, hogy manuálisan adja meg a POS terminálon a szállítási költséget összes szállítása vagy kiválasztottak szállítása típusú vevői rendelés létrehozásakor. A pénztár rendelési költségeket a rendszer szisztematikusan kiszámítja és hozzáadja a pénztártranzakcióhoz (ha megtalálható a megfelelő automatikus költségek tábla, amely megfelel a létrehozott rendelés feltételének). A felhasználók hozzáadhatnak vagy karbantarthatnak fejléc- vagy sorszintű költségeket manuálisan az újonnan hozzáadott pénztárműveleteken keresztül, amelyeket hozzá lehet adni a pénztár képernyő-elrendezésekhez.
 
-Ha speciális automatikus költségek engedélyezve vannak, a meglévő **Commerce paraméterek**, amelyek a **Szállítási költségek kódja** és **Szállítási költségek visszatérítése** pontokhoz tartoznak, nem használatosak. Ezek a paraméterek csak akkor érvényesek, ha a **Speciális automatikus költségek használata** paraméter értéke **Nem**.
+Ha speciális automatikus költségek engedélyezve vannak, a meglévő **Commerce-paraméterek** , amelyek a **Szállítási költségek kódja** és **Szállítási költségek visszatérítése** pontokhoz tartoznak, nem használatosak. Ezek a paraméterek csak akkor érvényesek, ha a **Speciális automatikus költségek használata** paraméter értéke **Nem**.
 
 Mielőtt engedélyezi ezt a funkciót, győződjön meg róla, hogy tesztelte és képezte az alkalmazottakat, mivel az engedélyezett funkció megváltoztatja a szállítási és egyéb költségek kiszámításának és a pénztár értékesítési rendeléseinek hozzáadásának folyamatát. Ellenőrizze, hogy megérti a folyamat hatását a tranzakciók létrehozására a pénztárból. Hívásközpontból származó és e-kereskedelmi rendelések esetén a speciális automatikus költségek engedélyezésének hatása minimális. Hívásközpont és az elektronikus kereskedelmi alkalmazások továbbra is ugyanúgy viselkednek majd, ahogy korábban tették az automatikus költségekre vonatkozó táblákhoz kapcsolódó további rendelési díjak kiszámításához. Hívásközpont csatorna felhasználói továbbra is manuálisan szerkeszthetik a rendszer által kiszámított automatikus költségeket a fejléc vagy sorok szintjén, vagy manuális hozzáadhatnak a további vegyes költségeket a fejléc vagy sorok szintjén.
 
@@ -91,7 +91,7 @@ A földi szállítási költségekhez az **Automatikus költségek** oldal sorok
 
 ![Példa két automatikus költség táblára](media/headerchargesexample.png)
 
-A légi szállítási költségekhez az Automatikus költségek képernyő sorokat tartalmazó szakaszában határozza meg a költséget 20 USD-nak, amelyeket mindent rendeléshez alkalmaz (0,01 és 9°999°999 USD közti érték esetén)
+A légi szállítási költségekhez az Automatikus költségek képernyő sorokat tartalmazó szakaszában határozza meg a költséget 20 USD-nak, amelyeket mindent rendeléshez alkalmaz (0,01 és 9 999 999 USD közti érték esetén).
 
 Küldje el a módosításokat a Commerce Scale Unit/csatorna-adatbázishoz, hogy a pénztár használhassa őket a **1040 elosztási ütemezés** feladat futtatásával.
 
@@ -189,7 +189,7 @@ Ha az okkódot rögzítették a felülírt költségekre, új jelentés érthet�
 
 ### <a name="refunding-charges-on-a-pos-return-transaction"></a>Költségek visszatérítése pénztár visszáru-tranzakciójában
 
-Ha a **Speciális automatikus költségek használata** paraméter értéke **Igen**, a meglévő **Szállítási költségek visszatérítése** Commerce-paraméter már nem érvényes. Annak jelzésére, hogy a speciális automatikus költségek alkalmazása esetén mely költségeket kell szisztematikusan visszatéríteni a vevőnek, győződjön meg arról, hogy a kapcsolódó költségkódot **Visszatéríthető** értékkel konfigurálta a **Költségkód** beállító oldalon. Győződjön meg arról, hogy a beállításokat szinkronizálta a Commerce csatorna-adatbázisokkal az elosztási ütemezés feldolgozásán keresztül.
+Ha a **Speciális automatikus költségek használata** paraméter értéke **Igen** , a meglévő **Szállítási költségek visszatérítése** Commerce-paraméter már nem érvényes. Annak jelzésére, hogy a speciális automatikus költségek alkalmazása esetén mely költségeket kell szisztematikusan visszatéríteni a vevőnek, győződjön meg arról, hogy a kapcsolódó költségkódot **Visszatéríthető** értékkel konfigurálta a **Költségkód** beállító oldalon. Győződjön meg arról, hogy a beállításokat szinkronizálta a Commerce csatorna-adatbázisokkal az elosztási ütemezés feldolgozásán keresztül.
 
 ### <a name="refunding-charges-on-a-return-order-transaction"></a>Költségek visszatérítése visszárurendelési tranzakcióban
 

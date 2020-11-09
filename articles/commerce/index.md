@@ -19,15 +19,14 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 08e6a521818c919b364033e22643b9ee4ce0ec65
-ms.sourcegitcommit: 4ed1d8ad8a0206a4172dbb41cc43f7d95073059c
+ms.openlocfilehash: 211bcf3f4938b438e417f92cd385aaa04278a404
+ms.sourcegitcommit: 776758a0ff95c3c7398986095104d1d2b9814514
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3024660"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "4107161"
 ---
 # <a name="commerce-home-page"></a>Commerce kezdőlap
-
 
 [!include [banner](includes/banner.md)]
 
@@ -50,7 +49,7 @@ További információkért válasszon ki egy szolgáltatásterületet.
 - [Commerce előzetes verziós környezet konfigurálása](provisioning-guide.md)
 - [Commerce architektúra](retail-components.md)
 - [Saját csatornák beállítása](channels-overview.md)
-- [Saját termékek és szolgáltatások árusítása](set-up-retail-products.md)
+- [A termékek és szolgáltatások árusítása](set-up-retail-products.md)
 - [Rendelések kezelése](Order-fulfillment-overview.md)
 - [Saját vevők kezelése](set-up-customer-loyalty-program.md)
 - [Saját pénzügyek kezelése](retail-statements.md)

@@ -1,9 +1,9 @@
 ---
-title: Újdonságok a Dynamics 365 Supply Chain Management 10.0.15-ös előzetes kiadásában (2020. december)
+title: A Dynamics 365 Supply Chain Management 10.0.15 (2021. január) előzetes verziója
 description: Ez a témakör a Dynamics 365 Supply Chain Management 10.0.15 új vagy módosított szolgáltatásait írja le.
 author: kamaybac
 manager: tfehr
-ms.date: 10/09/2020
+ms.date: 10/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,35 +17,43 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 7c7ac0e795ec085584be9cfdef65333969255ed6
-ms.sourcegitcommit: c55fecae96b4bb27bc313ba10a97eddb9c91350a
+ms.openlocfilehash: 0b8e69261563f61de022a626dd12d15d81535392
+ms.sourcegitcommit: 9dd2d38e76d4d93171315ec319e6ce7d51d4e6c7
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "3989311"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "4012275"
 ---
-# <a name="whats-new-in-the-dynamics-365-supply-chain-management-preview-of-release-10015-december-2020"></a>Újdonságok a Dynamics 365 Supply Chain Management 10.0.15-ös előzetes kiadásában (2020. december)
+# <a name="preview-of-dynamics-365-supply-chain-management-10015-january-2021"></a>A Dynamics 365 Supply Chain Management 10.0.15 (2021. január) előzetes verziója
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
 Ez a témakör a Microsoft Dynamics 365 Supply Chain Management 10.0.15 előzetes kiadásának új vagy módosított szolgáltatásait írja le. Ennek a verziónak 10.0.644 a buildszáma, és a következő módon érhető el:
 
-- **A 10.0.15-ös előzetes kiadás:** 2020. október
-- **A 10.0.15-ös kiadás általános elérhetővé tétele (kézi frissítés):** 2020. november
-- **A 10.0.15-ös kiadás általános elérhetővé tétele (automatikus frissítés):** 2020. december
+- **A kiadás előzetes verziója** 2020. október
+- **A kiadás általános elérhetővé tétele (saját frissítés):** 2020. november
+- **A kiadás általános elérhetővé tétele (automatikus frissítés):** 2021. január
 
 ## <a name="features-included-in-this-release"></a>A verzióban található funkciók
 
-Ez a kiadás a következő funkciókat tartalmazza: A funkciók címei további információkra mutatnaka a [Kiadási tervek](https://docs.microsoft.com/dynamics365/release-plans/) webhelyen. A további hivatkozások az adott funkcióhoz jelenleg elérhető további dokumentációkat mutatnak be. A felsorolt szolgáltatások egy része továbbra is előnézeti módban van, mások azonban már általánosan elérhetők. A kiadási dátumok megjelenítéséhez kövesse a kiadási tervre mutató hivatkozásokat, vagy az összes kiadott és tervezett szolgáltatás dátumainak áttekintéséhez lépjen az [A Dynamics 365 Supply Chain Management új és tervezett elemei](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/planned-features) részre. Ezen szolgáltatások többségét a használat előtt engedélyezni kell a [Funkciók kezelése](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) alatt.
+Ez a kiadás a következő funkciókat tartalmazza: A felsorolt szolgáltatások egy része továbbra is előnézeti módban van, mások azonban már általánosan elérhetők. Kövesse a [kiadási tervet](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/planned-features) az egyes funkciók hivatalos kiadási dátumainak megtekintéséhez.
 
-- Felhőalapú és peremhálózat-lépték szerinti egységkezelés a gyártás és raktári végrehajtás munkaterheléseivel
+- Felhőalapú és peremhálózat-lépték szerinti egységkezelés a gyártás és raktári végrehajtás munkaterheléseivel<!-- <br> - For more information, see [Cloud and edge scale units for manufacturing and warehouse management workloads](../cloud-edge/cloud-edge-landing-page.md).-->
+
 - [Átmozgatási rendelések létrehozása és feldolgozása a raktári alkalmazásból](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/ad-hoc-transfer-order-creation-warehousing-mobile-app)<br> - További információért lásd: [Átmozgatási rendelések létrehozása raktári alkalmazásból](../warehousing/create-transfer-order-from-warehouse-app.md).
+
 - [Alapértelmezett ajánlatkérő-válaszmezők a szállítók ajánlataihoz](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/default-rfq-reply-fields-for-vendor-bidding)<br> - További információkért lásd: [Ajánlatkérések (RFQ-k) áttekintése](../procurement/request-quotations.md).
+
 - [Mérnöki változtatások kezelése bővítmény a következőhöz: Dynamics 365 Supply Chain Management](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/engineering-change-management)<!-- <br> - For more information, see [Engineering change management overview](../engineering-change-management/product-engineering-overview.md).-->
+
 - [Útmutatók a vegyes valósághoz a gyártásban](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/mixed-reality-guides-manufacturing)<br> - További tudnivalókért lásd: [Vegyes valóságot alkalmazó útmutatók biztosítása a termelésben dolgozók számára](../production-control/instruction-guides-in-production-overview.md).
-- [Új felhasználói élmény a termelő üzemben](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/mes-terminal-enhancements-discrete-manufacturing)<!-- <br> - For more information, see [How workers use the production floor execution interface](../production-control/production-floor-execution-use.md).-->
+
+- [Új felhasználói élmény a termelő üzemben](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/mes-terminal-enhancements-discrete-manufacturing)<br> - További tájékoztatás: [A termelési üzem végrehajtási felületének dolgozók általi használata](../production-control/production-floor-execution-use.md).
+
 - [Raktári alkalmazás eseményeinek feldolgozása](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/process-warehouse-app-events)<br> - A további tudnivalókat lásd: [Raktári alkalmazás eseményeinek feldolgozása](../warehousing/warehouse-app-events.md).
+
+Ezen szolgáltatások többségét a használat előtt engedélyezni kell a [Funkciók kezelése](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) alatt.
 
 ## <a name="additional-resources"></a>További erőforrások
 

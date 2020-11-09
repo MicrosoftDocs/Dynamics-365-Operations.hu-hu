@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: c78752aa1544b12f61071fa06617af4ac2809233
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: f49eba1748861af6ee3353a6c58005ee84ccae23
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172992"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3998108"
 ---
 # <a name="dual-write-setup-from-lifecycle-services"></a>Kettős írás beállítása a Lifecycle Services modulból
 
@@ -75,7 +74,7 @@ A kettős írási kapcsolat beállításához kövesse az alábbi lépéseket.
         ![A Common Data Service lap, amikor a bérlő még nem rendelkezik Common Data Service-környezettel](../dual-write/media/lcs_setup_2.png)
 
 7. Hajtsa végre a **Telepítési beállítások** varázsló fennmaradó lépéseit.
-8. Miután a környezet állapota már **Telepített**, nyissa meg a környezeti részletek lapot. A **Common Data Service környezeti információ** szakasz az összekapcsolt Finance and Operations környezet és Common Data Service környezet nevét jeleníti meg.
+8. Miután a környezet állapota már **Telepített** , nyissa meg a környezeti részletek lapot. A **Common Data Service környezeti információ** szakasz az összekapcsolt Finance and Operations környezet és Common Data Service környezet nevét jeleníti meg.
 
     ![Common Data Service környezeti információ szakasz](../dual-write/media/lcs_setup_3.png)
 

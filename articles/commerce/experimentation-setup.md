@@ -3,7 +3,7 @@ title: Kísérlet beállítása
 description: Ez a témakör azt mutatja be, hogyan állíthat be kísérletet egy harmadik fél szolgáltatásban.
 author: sushma-rao
 manager: AnnBe
-ms.date: 10/01/2020
+ms.date: 10/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 0f7db0ce009f6ee7603952891aacfdc16fcde016
-ms.sourcegitcommit: b6ab46f6e5ce60e2c3d70a348827eaf60c84cae2
+ms.openlocfilehash: 29c21ceb4c259f463f4a039942e51141201a9809
+ms.sourcegitcommit: 7592c2dec0428d56843ab395d2a52c89f77f99b5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "3930212"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "4097047"
 ---
 # <a name="set-up-an-experiment"></a>Kísérlet beállítása
 
@@ -35,12 +35,14 @@ Miután [meghatározott egy hipotézist, valamint a használni kívánt sikeress
 ## <a name="set-up-your-experiment-in-the-third-party-service"></a>A kísérlet beállítása a harmadik szolgáltatásban
 Eddigre már eldöntötte, hogy harmadik fél szolgáltatással futtatja és követi nyomon a kísérletet, és beállította a kísérlet-összekötőt. Ezeket az előfeltételeket a [Kísérletezés a Dynamics 365 Commerce rendszerben](experimentation-overview.md) rész sorolja fel.
 
-Kövesse a kísérlet harmadik fél szolgáltatásban való létrehozásához szükséges lépéseket. Ha az összekötőt jól konfigurálta, a harmadik fél szolgáltatásban beállított kísérletek teljes listája mintegy 5 percen belül megjelenik a webhelykészítőben.
+Kövesse a kísérlet harmadik fél szolgáltatásban való létrehozásához szükséges lépéseket. Ha az összekötőt jól konfigurálta, a harmadik fél szolgáltatásban beállított kísérletek teljes listája mintegy 5 percen belül megjelenik a Commerce webhelykészítőben.
 
 ## <a name="set-up-your-success-metrics"></a>A sikerességi mérőszámok beállítása
 Minden kísérlethez mérőszámok szükségesek a változatok hatásainak mérésére és a hipotézis ellenőrzésére. Hajtsa végre az alábbi lépéseket, ha engedélyezni szeretné a mérőszámok számítását a harmadik fél szolgáltatásban a Dynamics 365 Commerce rendszerben élő telemetria eseményei segítségével.
 
-1. A webhelykészítőben a bal oldali navigációs ablakban válassza ki az **Oldalak** fület, majd válassza ki azt az oldalt, amelyen a mérőszámokat gyűjteni szeretné. 
+A sikermutatók beállításához kövesse az alábbi lépéseket.
+
+1. A Commerce webhelykészítőben a bal oldali navigációs ablakban válassza ki az **Oldalak** fület, majd válassza ki azt az oldalt, amelyhez a mérőszámokat gyűjteni szeretné. 
 1. Lépjen a követni kívánt oldal vagy modul jobb oldali tulajdonságok panelján lévő **Követendő eseményazonosítók** szakaszra.
 1. Válassza ki a **Nézet** lehetőséget. Megjelenik az összes eseményazonosító listája. Másolja ki a nyomon követni kívánt eseményt, majd illessze be az eseménykulcsot a harmadik fél szolgáltatás által meghatározott helyre. Ha egynél több eseményre van szüksége, akkor egyenként másolja át a kulcsokat. 
     - A rendelkezésre álló események és attribútumok, köztük az oldalmegtekintések és a bevételek nyomon követése megtekintéséhez a következő témakör tartalmaz további tájékoztatást: [Commerce-összetevővel kapcsolatos események a diagnosztikához és a hibaelhárításhoz](dev-itpro/retail-component-events-diagnostics-troubleshooting.md).

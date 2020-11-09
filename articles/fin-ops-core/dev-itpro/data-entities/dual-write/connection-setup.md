@@ -1,9 +1,9 @@
 ---
-title: A kettős írás beállítás támogatott forgatókönyvei
+title: Útmutató a kettős írás beállításához
 description: Ez a témakör azt mutatja be, hogy milyen eseteket támogat a kettős írás beállítás.
 author: RamaKrishnamoorthy
 manager: AnnBe
-ms.date: 08/17/2020
+ms.date: 10/12/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,14 +18,14 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: b4f69e7933bc5a50cccad6911c99cf08d2768578
-ms.sourcegitcommit: b3df62842e62234e8eaa16992375582518976131
+ms.openlocfilehash: 2d77a1458f3f4c79b231e6a6d7cc320b8ee1fad9
+ms.sourcegitcommit: ee643d651d57560bccae2f99238faa39881f5c64
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "3818596"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "4088506"
 ---
-# <a name="supported-scenarios-for-dual-write-setup"></a>A kettős írás beállítás támogatott forgatókönyvei
+# <a name="guidance-for-how-to-set-up-dual-write"></a>Útmutató a kettős írás beállításához
 
 [!include [banner](../../includes/banner.md)]
 
@@ -35,7 +34,7 @@ ms.locfileid: "3818596"
 Egy Finance and Operations-környezet és egy Common Data Service-környezet között kettős írás kapcsolatot állíthat be.
 
 + Egy **Finance and Operations-környezet** a háttérplatformot biztosítja a **Finance and Operations-alkalmazásokhoz** (például Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, és Dynamics 365 Retail).
-+ A **Common Data Service-környezet** biztosítja a **Dynamics 365 modellvezérelt alkalmazások alapjául szolgáló platformot** (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, és Dynamics 365 Project Service Automation).
++ A **Common Data Service-környezet** biztosítja a **ügyfélkapcsolati alkalmazások** alapjául szolgáló platformot (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, és Dynamics 365 Project Service Automation).
 
 >[!IMPORTANT]
 >Az Emberi erőforrások a Finance and Operations kettős írás kapcsolatok használatát támogatják, de az Dynamics 365 Human Resources alkalmazás nem.
@@ -45,28 +44,33 @@ A beállítási mechanizmus az előfizetéstől és a környezettől függően v
 + A Finance and Operations-alkalmazások új példányainál a kettős írás kapcsolat beállítása a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásban kezdődik. Ha rendelkezik licenccel a Power Platform szolgáltatáshoz, akkor új Common Data Service-környezetbe kerül, ha a bérlő nem rendelkezik eggyel.
 + A meglévő példányú Finance and Operations-alkalmazások esetében a kettős írás kapcsolat beállítása a Finance and Operations-környezetben kezdődik.
 
+Mielőtt egy entitásra kettős írást alkalmaz, futtathatja a kezdeti szinkronizálást, amely az Finance and Operations-alkalmazások és az ügyfélkapcsolati alkalmazások mindkét oldalán meglévő adatokat kezeli. Ha nem szükséges szinkronizálni a két környezet adatait, akkor ki lehet hagyni a kezdeti szinkronizálást.
+
+A kezdeti szinkronizálás lehetővé teszi a meglévő adatok másolását egyik alkalmazásból a másikba. Számos különböző telepítési eset van, attól függően, hogy mely környezetekkel rendelkezik már, és milyen típusú adatok találhatók a környezetben.
+
 A következő beállítású forgatókönyvek támogatottak:
 
-+ [Egy új Finance and Operations-alkalmazáspéldány és egy új modellvezérelt alkalmazáspéldány](#new-new)
-+ [Egy új Finance and Operations-alkalmazáspéldány és egy meglévő modellvezérelt alkalmazáspéldány](#new-existing)
-+ [Egy új Finance and Operations-alkalmazáspéldány, amely bemutatóadatokkal rendelkezik, és egy új modellvezérelt alkalmazáspéldány](#new-demo-new)
-+ [Egy új Finance and Operations-alkalmazáspéldány, amely bemutatóadatokkal rendelkezik, és egy meglévő modellvezérelt alkalmazáspéldány](#new-demo-existing)
-+ [Egy meglévő Finance and Operations-alkalmazáspéldány és egy új vagy meglévő modellvezérelt alkalmazáspéldány](#existing-existing)
++ [Egy új Finance and Operations-alkalmazáspéldány és egy új ügyfélkapscsolati alkalmazáspéldány](#new-new)
++ [Egy új Finance and Operations-alkalmazáspéldány és egy meglévő ügyfélkapcsolati alkalmazáspéldány](#new-existing)
++ [Egy új Finance and Operations-alkalmazáspéldány, amely adatokkal rendelkezik, és egy új ügyfélkapcsolati alkalmazáspéldány](#new-data-new)
++ [Egy új Finance and Operations-alkalmazáspéldány, amely bemutatóadatokkal rendelkezik, és egy meglévő ügyfélkapcsolati alkalmazáspéldány](#new-data-existing)
++ [Egy meglévő Finance and Operations-alkalmazáspéldány és egy új ügyfélkapcsolati alkalmazáspéldány](#existing-new)
++ [Egy meglévő Finance and Operations-alkalmazáspéldány és egy meglévő ügyfélkapcsolati alkalmazáspéldány](#existing-existing)
 
-## <a name="a-new-finance-and-operations-app-instance-and-a-new-model-driven-app-instance"></a><a id="new-new"></a>Egy új Finance and Operations-alkalmazáspéldány és egy új modellvezérelt alkalmazáspéldány
+## <a name="a-new-finance-and-operations-app-instance-and-a-new-customer-engagement-app-instance"></a><a id="new-new"></a>Egy új Finance and Operations-alkalmazáspéldány és egy új ügyfélkapscsolati alkalmazáspéldány
 
-Ha a kettős írás kapcsolatot olyan Finance and Operations-alkalmazás új példányával szeretné beállítani, amelyben nincsenek adatok, és a Dynamics 365 modellvezérelt alkalmazásainak egy új példányával, kövesse a lépéseket itt: [Kettős írás beállítása a Lifecycle Services szolgáltatásból](lcs-setup.md). A kapcsolat beállításának végeztével a következő műveletek történnek automatikusan:
+Ha a kettős írás kapcsolatot olyan Finance and Operations-alkalmazás új példányával szeretné beállítani, amelyben nincsenek adatok, és a Dynamics 365 ügyfélkapcsolati alkalmazásainak egy új példányával, kövesse a lépéseket itt: [Kettős írás beállítása a Lifecycle Services szolgáltatásból](lcs-setup.md). A kapcsolat beállításának végeztével a következő műveletek történnek automatikusan:
 
 - Egy új, üres Finance and Operations-környezet létesítése megtörténik.
-- A modellvezérelt alkalmazások egy új, üres példánya létesítésre kerül, ahol a CRM Prime megoldást telepítik.
+- Az ügyfélkapcsolati alkalmazások egy új, üres példánya létesítésre kerül, ahol a CRM Prime megoldást telepítik.
 - A DAT vállalati adatokhoz egy kettős írás kapcsolat jön létre.
 - Az entitás-leképezések engedélyezve vannak az élő szinkronizáláshoz.
 
 A két környezet készen áll az élő adatszinkronizálására.
 
-## <a name="a-new-finance-and-operations-app-instance-and-an-existing-model-driven-app-instance"></a><a id="new-existing"></a>Egy új Finance and Operations-alkalmazáspéldány és egy meglévő modellvezérelt alkalmazáspéldány
+## <a name="a-new-finance-and-operations-app-instance-and-an-existing-customer-engagement-app-instance"></a><a id="new-existing"></a>Egy új Finance and Operations-alkalmazáspéldány és egy meglévő ügyfélkapcsolati alkalmazáspéldány
 
-Ha a kettős írás kapcsolatot olyan Finance and Operations-alkalmazás új példányával szeretné beállítani, amelyben nincsenek adatok, és a Dynamics 365 modellvezérelt alkalmazásainak egy meglévő példányával, kövesse a lépéseket itt: [Kettős írás beállítása a Lifecycle Services szolgáltatásból](lcs-setup.md). A kapcsolat beállításának végeztével a következő műveletek történnek automatikusan:
+Ha a kettős írás kapcsolatot olyan Finance and Operations-alkalmazás új példányával szeretné beállítani, amelyben nincsenek adatok, és a Dynamics 365 ügyfélkapcsolati alkalmazásainak egy meglévő példányával, kövesse a lépéseket itt: [Kettős írás beállítása a Lifecycle Services szolgáltatásból](lcs-setup.md). A kapcsolat beállításának végeztével a következő műveletek történnek automatikusan:
 
 - Egy új, üres Finance and Operations-környezet létesítése megtörténik.
 - A DAT vállalati adatokhoz egy kettős írás kapcsolat jön létre.
@@ -79,19 +83,22 @@ Ha a meglévő Common Data Service-adatokat szinkronizálni szeretné Finance an
 1. Hozzon létre egy új vállalatot az Finance and Operations alkalmazásban.
 2. Adja hozzá a vállalatot a kettős írás kapcsolat beállításhoz.
 3. [Rendszerindítás](bootstrap-company-data.md) a Common Data Service-adatokkal a három betűs Nemzetközi Szabványügyi Szervezet (ISO) vállalati kóddal.
+4. Futtassa a **kezdeti szinkronizálási** funkciókat azon entitások esetében, amelyekhez szinkronizálni szeretné az adatokat.
 
-Mivel a kettős írás élő szinkronizálási módban van, a Common Data Service adatai automatikusan átáramlanak a Finance and Operations alkalmazásba.
+Egy példát és alternatív megközelítést lásd: [Példa](#example).
 
-## <a name="a-new-finance-and-operations-app-instance-that-has-demo-data-and-a-new-model-driven-app-instance"></a><a id="new-demo-new"></a>Egy új Finance and Operations-alkalmazáspéldány, amely bemutatóadatokkal rendelkezik, és egy új modellvezérelt alkalmazáspéldány
+## <a name="a-new-finance-and-operations-app-instance-that-has-data-and-a-new-customer-engagement-app-instance"></a><a id="new-data-new"></a>Egy új Finance and Operations-alkalmazáspéldány, amely adatokkal rendelkezik, és egy új ügyfélkapcsolati alkalmazáspéldány
 
-Ha a kettős írás kapcsolatot olyan Finance and Operations-alkalmazás új példányával szeretné beállítani, amelyben bemutatóadatok vannak, és a Dynamics 365 modellvezérelt alkalmazásainak egy új példányával, kövesse a lépéseket itt: [Az új Finance and Operations alkalmazáspéldány és egy új modellvezérelt alkalmazáspéldány](#new-new) szakaszt a témakör korábbi részében. Ha befejezte a kapcsolat beállítását, hajtsa végre az alábbi lépéseket, ha szinkronizálni szeretné a demó adatait a modell alapú alkalmazással.
+Ha a kettős írás kapcsolatot olyan Finance and Operations-alkalmazás új példányával szeretné beállítani, amelyben adatok vannak, és a Dynamics 365 ügyfélkapcsolati alkalmazásainak egy új példányával, kövesse a lépéseket itt: [Az új Finance and Operations alkalmazáspéldány és egy új ügyfélkapcsolati alkalmazáspéldány](#new-new) szakaszt a témakör korábbi részében. Ha befejezte a kapcsolat beállítását, hajtsa végre az alábbi lépéseket, ha szinkronizálni szeretné az adatait az ügyfélkapcsolati alkalmazással.
 
 1. Nyissa meg a Finance and Operations alkalmazást a LCS oldalon, jelentkezzen be, majd kattintson az **Adatkezelés \> kettős írás** elemre.
 2. Futtassa a **kezdeti szinkronizálási** funkciókat azon entitások esetében, amelyekhez szinkronizálni szeretné az adatokat.
 
-## <a name="a-new-finance-and-operations-app-instance-that-has-demo-data-and-an-existing-model-driven-app-instance"></a><a id="new-demo-existing"></a>Egy új Finance and Operations-alkalmazáspéldány, amely bemutatóadatokkal rendelkezik, és egy meglévő modellvezérelt alkalmazáspéldány
+Egy példát és alternatív megközelítést lásd: [Példa](#example).
 
-Ha a kettős írás kapcsolatot olyan Finance and Operations-alkalmazás új példányával szeretné beállítani, amelyben bemutatóadatok vannak, és a Dynamics 365 modellvezérelt alkalmazásainak egy meglévő példányával, kövesse a lépéseket itt: [Az új Finance and Operations alkalmazáspéldány és egy meglévő modellvezérelt alkalmazáspéldány](#new-existing) szakaszt a témakör korábbi részében. Ha befejezte a kapcsolat beállítását, hajtsa végre az alábbi lépéseket, ha szinkronizálni szeretné a demó adatait a modell alapú alkalmazással.
+## <a name="a-new-finance-and-operations-app-instance-that-has-data-and-an-existing-customer-engagement-app-instance"></a><a id="new-data-existing"></a>Egy új Finance and Operations-alkalmazáspéldány, amely adatokkal rendelkezik, és egy meglévő ügyfélkapcsolati alkalmazáspéldány
+
+Ha a kettős írás kapcsolatot olyan Finance and Operations-alkalmazás új példányával szeretné beállítani, amelyben adatok vannak, és a Dynamics 365 ügyfélkapcsolati alkalmazásainak egy meglévő példányával, kövesse a lépéseket itt: [Az új Finance and Operations alkalmazáspéldány és egy meglévő ügyfélkapcsolati alkalmazáspéldány](#new-existing) szakaszt a témakör korábbi részében. Ha befejezte a kapcsolat beállítását, hajtsa végre az alábbi lépéseket, ha szinkronizálni szeretné az adatait az ügyfélkapcsolati alkalmazással.
 
 1. Nyissa meg a Finance and Operations alkalmazást a LCS oldalon, jelentkezzen be, majd kattintson az **Adatkezelés \> kettős írás** elemre.
 2. Futtassa a **kezdeti szinkronizálási** funkciókat azon entitások esetében, amelyekhez szinkronizálni szeretné az adatokat.
@@ -101,14 +108,31 @@ Ha a meglévő Common Data Service-adatokat szinkronizálni szeretné Finance an
 1. Hozzon létre egy új vállalatot az Finance and Operations alkalmazásban.
 2. Adja hozzá a vállalatot a kettős írás kapcsolat beállításhoz.
 3. [Rendszerindítás](bootstrap-company-data.md) a Common Data Service-adatokkal a három betűs ISO vállalati kóddal.
+4. Futtassa a **kezdeti szinkronizálási** funkciókat azon entitások esetében, amelyekhez szinkronizálni szeretné az adatokat.
 
-Mivel a kettős írás élő szinkronizálási módban van, a Common Data Service adatai automatikusan átáramlanak a Finance and Operations alkalmazásba.
+Egy példát és alternatív megközelítést lásd: [Példa](#example).
 
-## <a name="an-existing-finance-and-operations-app-instance-and-a-new-or-existing-model-driven-app-instance"></a><a id="existing-existing"></a>Egy meglévő Finance and Operations-alkalmazáspéldány és egy új vagy meglévő modellvezérelt alkalmazáspéldány
+## <a name="an-existing-finance-and-operations-app-instance-and-a-new-customer-engagement-app-instance"></a><a id="existing-new"></a>Egy meglévő Finance and Operations-alkalmazáspéldány és egy új ügyfélkapcsolati alkalmazáspéldány
 
-A Finance and Operations alkalmazás egy létező példánya és a Dynamics 365 modellvezérelt alkalmazás új vagy létező példánya között egy kettős írás kapcsolat létrehozása a Finance and Operation környezetben történik.
+A Finance and Operations alkalmazás egy létező példánya és egy ügyfélkapcsolati alkalmazás új példánya között egy kettős írás kapcsolat létrehozása a Finance and Operation környezetben történik.
+
+1. [A kapcsolat beállítása a Finance and Operations alkalmazásból](enable-dual-write.md).
+2. Futtassa a **kezdeti szinkronizálási** funkciókat azon entitások esetében, amelyekhez szinkronizálni szeretné az adatokat.
+
+Egy példát és alternatív megközelítést lásd: [Példa](#example).
+
+## <a name="an-existing-finance-and-operations-app-instance-and-an-existing-customer-engagement-app-instance"></a><a id="existing-existing"></a>Egy meglévő Finance and Operations-alkalmazáspéldány és egy meglévő ügyfélkapcsolati alkalmazáspéldány
+
+A Finance and Operations alkalmazás egy létező példánya és egy ügyfélkapcsolati alkalmazás meglévő példánya között egy kettős írás kapcsolat létrehozása a Finance and Operation környezetben történik.
 
 1. A kapcsolat beállítása az Finance and Operations alkalmazásból.
 2. Ha a meglévő Common Data Service-adatokat szinkronizálni szeretné Finance and Operations alkalmazással, [indítson rendszerindítást](bootstrap-company-data.md) a Common Data Service adatokkal a három betűs ISO vállalati kóddal.
+3. Futtassa a **kezdeti szinkronizálási** funkciókat azon entitások esetében, amelyekhez szinkronizálni szeretné az adatokat.
 
-Mivel a kettős írás élő szinkronizálási módban van, a Common Data Service adatai automatikusan átáramlanak a Finance and Operations alkalmazásba.
+Egy példát és alternatív megközelítést lásd: [Példa](#example).
+
+## <a name="example"></a>Példa
+
+Példa: [a Vevők v3-a kapcsolattartó-entitás leképezésének engedélyezése](enable-entity-map.md#example-enabling-the-customers-v3contacts-entity-map)
+
+A kezdeti szinkronizálás futtatását igénylő entitások adatmennyiségein alapuló alternatív megközelítéshez lásd [a kezdeti szinkronizálás szempontjait](initial-sync-guidance.md).
