@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: f6bf4b6c946ebc63d3d84140f762cd4b789deb03
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4459148"
+---
 Adatbázisok környezetek között történő másolásához futtatnia kell a környezetlétesítő eszközt a másolt adatbázis teljes működőképessége előtt annak érdekében, hogy az összes Commerce-összetevő naprakész legyen.
 
 > [!IMPORTANT]

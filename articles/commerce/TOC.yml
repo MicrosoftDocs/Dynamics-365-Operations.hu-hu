@@ -14,6 +14,8 @@
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md?toc=/dynamics365/commerce/toc.json
                 - name: Egyverziós szolgáltatásfrissítések GYIK
                   href: ../fin-ops-core/fin-ops/get-started/one-version.md?toc=/dynamics365/commerce/toc.json
+                - name: 'A frissítések és az egyéni kód életciklusának kezelése, beleértve a Dynamics 365 Commerce szolgáltatást'
+                  href: ../fin-ops-core/dev-itpro/migration-upgrade/update-guide.md?toc=/dynamics365/commerce/toc.json
                 - name: A szoftver életciklusára vonatkozó irányelv – Felhő
                   href: ../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md?toc=/dynamics365/commerce/toc.json
                 - name: A szoftver életciklusára vonatkozó irányelv – Helyszíni
@@ -92,12 +94,12 @@
                   items:
                     - name: Újdonságok vagy változások a Commerce kezdőlapján
                       href: get-started/whats-new-home-page.md
+                    - name: Commerce 10.0.16 (2021. február)
+                      href: get-started/whats-new-commerce-10-0-16.md
                     - name: Commerce 10.0.15 (2021. január)
                       href: get-started/whats-new-commerce-10-0-15.md
                     - name: Commerce 10.0.14 (2020. november)
                       href: get-started/whats-new-commerce-10-0-14.md
-                    - name: Commerce 10.0.13 (2020. október)
-                      href: get-started/whats-new-commerce-10-0-13.md
                 - name: Eltávolított vagy elavult funkciók
                   items:
                     - name: Eltávolított vagy elavult funkciók a Finance and Operations szolgáltatásban
@@ -106,8 +108,6 @@
                       href: get-started/removed-deprecated-features-commerce.md
                 - name: Az AX 2012 elhalasztott funkciói
                   href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/commerce/toc.json
-                - name: A helyszíni telepítésekben nem megvalósított funkciók
-                  href: ../fin-ops-core/fin-ops/get-started/features-not-implemented-on-prem.md?toc=/dynamics365/commerce/toc.json
                 - name: A Microsoft Dynamics AX 2009 és 2012 fő támogatásának vége
                   href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/commerce/toc.json
             - name: Dokumentum-erőforrások
@@ -324,6 +324,8 @@
                           href: ../finance/general-ledger/whole-amount-interval-options-sales-tax-codes.md?toc=/dynamics365/commerce/toc.json
                         - name: Adómentesség számítása
                           href: tax-exempt-price-inclusive.md
+                        - name: Az online rendelések áfájának konfigurálása
+                          href: sales-tax-config.md
                     - name: E-mail-értesítési profil beállítása
                       href: email-notification-profiles.md
                     - name: Számsorozatok
@@ -362,12 +364,10 @@
                       href: MPOS-or-CPOS.md
                     - name: Online és offline pénztárműveletek
                       href: pos-operations.md
-                    - name: Testreszabott Modern POS eszköz aktiválása
+                    - name: Testreszabott Modern POS-eszköz aktiválása
                       href: dev-itpro/retail-POS-activation-changes.md
                     - name: Azure Active Directory-hitelesítés engedélyezése a pénztári bejelentkezéshez
                       href: aad-pos-logon.md
-                    - name: Az MPOS és Cloud POS bemutató adatképernyő-elrendezései
-                      href: demo-data.md
                     - name: Termék és vevő keresése a pénztárban
                       href: POS-search-improvements.md
                     - name: Termékek és termékváltozatok keresése a rendelésbevitel során
@@ -510,6 +510,8 @@
                       href: cash-denominations.md
                     - name: Hitelkártya-feldolgozás konfigurálása
                       href: tasks/configure-credit-card-processing.md
+                    - name: A „visszajáró” párbeszédpanel kihagyása a POS-eszközön
+                      href: dev-itpro/skip-change-due.md
                     - name: Adyen fizetési összekötő
                       href: dev-itpro/adyen-connector.md
                     - name: Online fizetési eszközök mentése az Adyen összekötővel
@@ -526,14 +528,20 @@
                       href: duplicate-payment-protection.md
                     - name: Többcsatornás kifizetések áttekintése
                       href: omni-channel-payments.md
-                    - name: Többcsatornás Commerce megrendelési kifizetések
+                    - name: Omni-channel Commerce rendelési kifizetések
                       href: dev-itpro/commerce-payments.md
                     - name: Hitelkártyák feldolgozása hardverállomás nélkül
                       href: dev-itpro/cnp-pos.md
+                    - name: Dynamics 365 Payment Connector a PayPal szolgáltatáshoz
+                      href: paypal.md
+                    - name: Pénztárcás fizetés támogatása
+                      href: wallets.md
                     - name: Kifizetésekkel kapcsolatos GYIK
                       href: dev-itpro/payments-retail.md
                 - name: A szervezetéhez tartozó Bing Térképek kezelése
                   href: dev-itpro/manage-bing-maps.md
+                - name: Időközök létrehozása és frissítése a vevői átvételhez
+                  href: dev-itpro/pickup-timeslots.md
         - name: A termékek és szolgáltatások árusítása
           items:
             - name: 'Kategóriák, termékek és szortimentek'
@@ -710,10 +718,14 @@
                   href: hybrid-customer-orders.md
                 - name: Rendelési művelet visszahívása a pénztárban
                   href: enhancedorderrecall.md
+                - name: Több átvételi kézbesítési mód engedélyezése
+                  href: multiple-pickup-modes.md
             - name: Értékesítési rendelések
               items:
-                - name: Hívásközponti rendelés létrehozása
+                - name: Hívásközponti rendelések létrehozása
                   href: tasks/create-call-center-orders.md
+                - name: Tranzakciós e-mailek testreszabása kézbesítési mód szerint
+                  href: customize-email-delivery-mode.md
                 - name: Szállítási mód módosítása a pénztárban
                   href: POS-change-delivery-mode.md
             - name: Felosztott rendeléskezelés
@@ -773,7 +785,17 @@
             - name: Kiskereskedelmi tranzakciók konzisztencia-ellenőrzési szabályainak letiltása
               href: disable-consistency-check-rule.md
             - name: Kiskereskedelmi áruházi tranzakciók szerkesztése és naplózása
-              href: edit-audit-retail-transactions.md
+              items:
+                - name: 'Készpénzzel fizetett, azonnal átvett és készpénzkezelési tranzakciók szerkesztése és auditálása'
+                  href: edit-cash-trans.md
+                - name: Online rendeléses és aszinkron vevői rendeléses tranzakciók szerkesztése és auditálása
+                  href: edit-order-trans.md
+                - name: Kiskereskedelmi tranzakciók pénzügyi dimenzióinak szerkesztése
+                  href: edit-financial-dim.md
+                - name: Excel-munkafüzet létrehozása a kiskereskedelmi tranzakciók szerkesztéséhez
+                  href: create-excel-edit.md
+                - name: Mezők hozzáadása Excel-munkafüzethez a kiskereskedelmi tranzakciók szerkesztéséhez
+                  href: add-fields-excel.md
             - name: 'A rendelések folyamatos, apránkénti létrehozása a kiskereskedelmi áruház tranzakcióihoz'
               href: trickle-feed.md
             - name: 'Kiskereskedelmi üzlet kimutatásainak létrehozása, kiszámítása és feladása'
@@ -808,7 +830,7 @@
               href: task-mgmt-pos.md
         - name: Az e-kereskedelmi webhely kezelése
           items:
-            - name: Online áruház áttekintése
+            - name: E-kereskedelmi webhely áttekintése
               href: online-store-overview.md
             - name: E-kereskedelmi webhely létrehozása
               items:
@@ -818,9 +840,9 @@
                   href: deploy-ecommerce-site.md
                 - name: E-kereskedelmi webhely létrehozása
                   href: create-ecommerce-site.md
-                - name: E-kereskedelmi webhely társítása online csatornával
+                - name: Dynamics 365 Commerce webhely társítása online csatornával
                   href: associate-site-online-store.md
-                - name: Robots.txt fájlok kezelése
+                - name: robots.txt fájlok kezelése
                   href: manage-robots-txt-files.md
                 - name: URL-átirányítások tömeges feltöltése
                   href: upload-bulk-redirects.md
@@ -946,6 +968,8 @@
                   href: dam-crop-images.md
                 - name: Képfókuszpontok testreszabása
                   href: dam-custom-focal-point.md
+                - name: Statikus fájlok feltöltése és kiszolgálása
+                  href: upload-serve-static-files.md
             - name: Webhely megfelelőségének biztosítása
               items:
                 - name: Megfelelőség áttekintése
@@ -1014,6 +1038,8 @@
                       href: ship-address-module.md
                     - name: Szállítási lehetőségek modul
                       href: delivery-options-module.md
+                    - name: Átvételi információ modul
+                      href: pickup-info-module.md
                     - name: Rendelési részletek modul
                       href: order-confirmation-module.md
                     - name: Ajándékutalvány modul
@@ -1966,21 +1992,23 @@
                   href: e-commerce-extensibility/overview.md
                 - name: Első lépések
                   items:
+                    - name: Első lépések az e-kereskedelem online bővíthetőségének fejlesztésében
+                      href: e-commerce-extensibility/sdk-getting-started.md
                     - name: Rendszerkövetelmények
                       href: e-commerce-extensibility/system-requirements.md
                     - name: Fejlesztői környezet beállítása
                       href: e-commerce-extensibility/setup-dev-environment.md
                     - name: Fejlesztői környezetfájl (.env) konfigurálása
                       href: e-commerce-extensibility/configure-env-file.md
-                    - name: Hibakeresés hibákat a Tier 1-es Commerce fejlesztői környezetben
+                    - name: E-kereskedelmi fejlesztési környezet konfigurálása Commerce felhőalapú környezetben
                       href: e-commerce-extensibility/debug-tier-1.md
                     - name: Azure DevOps-kódmegosztás beállítása és buildfolyamat létrehozása
                       href: e-commerce-extensibility/set-up-code-sharing-build-pipeline.md
                 - name: Platform áttekintése
                   items:
-                    - name: Architekturális áttekintés
+                    - name: E-kereskedelmi architektúra áttekintése
                       href: e-commerce-extensibility/architectural-overview.md
-                    - name: Online összetevők
+                    - name: E-kereskedelmi összetevők
                       href: e-commerce-extensibility/ecommerce-components.md
                     - name: CLI-parancs referenciája
                       href: e-commerce-extensibility/cli-command-reference.md
@@ -2112,10 +2140,12 @@
                       href: e-commerce-extensibility/package-deploy.md
                     - name: SDK- és modultár-frissítések
                       href: e-commerce-extensibility/sdk-updates.md
-                - name: Gyakorlati tanácsok
+                - name: Gyakorlati tanácsok és GYIK
                   items:
                     - name: Gyakorlati tanácsok a Dynamics 365 Commerce fejlesztéséhez
                       href: e-commerce-extensibility/best-practices-dev.md
+                    - name: Dynamics 365 Commerce online SDK GYIK
+                      href: e-commerce-extensibility/sdk-faq.md
             - name: Retail szoftverfejlesztői készlet (SDK)
               items:
                 - name: A Retail szoftverfejlesztői készlet (SDK) architektúrája
@@ -2136,6 +2166,8 @@
                   href: dev-itpro/cloud-dev-box.md
                 - name: Commerce szoftverfejlesztői készlet (SDK) buildelési folyamat beállítása
                   href: dev-itpro/retail-sdk/SDK-build-pipeline.md
+                - name: Minták és csomagok letöltése a GitHub és NuGet portálról
+                  href: dev-itpro/retail-sdk/sdk-github.md
                 - name: Retail szoftverfejlesztői készlet (SDK) GYIK
                   href: dev-itpro/retail-sdk/sdk-faq.md
             - name: Pénztár bővíthetősége
@@ -2156,6 +2188,8 @@
                   href: dev-itpro/POS-APIs.md
                 - name: Pénztárkifizetés kiterjesztése
                   href: dev-itpro/pos-payment-extension.md
+                - name: Borravaló támogatása a pénztárkifizetések SDK-jában
+                  href: dev-itpro/tipping.md
                 - name: Támogatás külső ajándékutalványokhoz
                   href: dev-itpro/gift-card.md
                 - name: Márkajelzés létrehozása és alkalmazása a Retail Experience alkalmazáshoz
@@ -2218,7 +2252,7 @@
                   href: dev-itpro/commerce-runtime-overview.md
                 - name: CRT-szolgáltatások
                   href: dev-itpro/crt-services.md
-                - name: A CRT és a Retail Server bővíthetősége
+                - name: CRT-kiterjesztésminta
                   href: dev-itpro/commerce-runtime-extensibility.md
                 - name: Retail csatornák titkainak kezelése
                   href: dev-itpro/manage-secrets.md

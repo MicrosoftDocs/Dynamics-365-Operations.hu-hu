@@ -11,25 +11,24 @@ ms.technology: ''
 ms.search.form: ERWorkspace
 audience: Application User
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 ms.custom: 104173
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0d81471036d88e4faaf2cae4f3cc25d1eeaaa821
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 8ee422b2bdc8b94c2a465d0e48f5da983a410674
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3979304"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685053"
 ---
 # <a name="globalization-resources"></a>Globalizációs erőforrások
 
 ## <a name="local-and-regional-deployments"></a>Helyi és regionális telepítések
 Ha a kormányzati szabályozás előírja, hogy az adatokat a többi országtól/régiótól eltérően kell tárolni vagy karbantartani, előfordulhat, hogy az adott országban/régióban érvényes követelményeknek kell megfelelni a rendszer telepítésekor. Vegye figyelembe a következő erőforrásokat, amelyek fontosak lehetnek az Ön számára:
 
-[Finance and Operations-alkalmazások, amelyeket a 21Vianet működtet Kínában](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/china-local-deployment)
+[Finance and Operations alkalmazások, amelyeket a 21Vianet működtet Kínában](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/china-local-deployment)
 
 ## <a name="localization-and-regulatory-features"></a>Honosítási és szabályozási funkciók
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5a7a03e6149d3677ac4f35522e4898e1f62da329
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 8a910aa7f54905f305ed69e9dd9eea0909e5558d
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3975268"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528545"
 ---
 # <a name="budgeting-home-page"></a>Költségvetés-készítés – kezdőlap
 
@@ -64,7 +64,7 @@ További információ arról, hogy hogyan hívhatók be tervezési adatok más m
 ## <a name="user-interface-and-reporting-capabilities"></a>Felhasználói felület és jelentéskészítési funkciók
 A felhasználók költségvetési terveket hozhatnak létre, vagy közvetlenül a kliensben (konfigurálható költségvetésiterv-dokumentumlap használatával), vagy az Excel programon keresztül. Az Excel számos további lehetőséget kínál. Például használhat külső adatokat egy költségvetési terv forrásaként, egyéni számításokat végezhet, és használhat Microsoft-kimutatásokat és -diagramokat. A költségvetés-tervezési folyamat változóinak nagy része konfigurálható. 
 
-Meghatározhatja például, ki tervezi a költségvetést, mire vonatkozik a költségvetés, illetve milyen legyen a folyamat. Ugyan az Excel program is használható a költségvetés megtervezéséhez, azonban kizárólag az alkalmazás számít hiteles információforrásnak, így megelőzhetők a költségvetés-ellenőrzési problémák. Ismétlődő folyamatok felhasználásával a kezdeti költségvetés-tervezési adatok átemelhetők a költségvetési tervbe. A jelentésekhez az alkalmazás számos olyan szabványos lekérdezési oldalt biztosít, amely lehetővé teszi a költségvetés adatainak megtekintését és elemzését. A költségvetési terv adatai a Felügyeleti jelentéskészítőn keresztül érhetők el; külön költségvetésiterv-esetek jeleníthetők meg oszlopokként a Felügyeleti jelentéskészítő jelentésében.
+Meghatározhatja például, ki tervezi a költségvetést, mire vonatkozik a költségvetés, illetve milyen legyen a folyamat. Ugyan az Excel program is használható a költségvetés megtervezéséhez, azonban kizárólag az alkalmazás számít hiteles információforrásnak, így megelőzhetők a költségvetés-ellenőrzési problémák. Ismétlődő folyamatok felhasználásával a kezdeti költségvetés-tervezési adatok átemelhetők a költségvetési tervbe. A jelentésekhez az alkalmazás számos olyan szabványos lekérdezési oldalt biztosít, amely lehetővé teszi a költségvetés adatainak megtekintését és elemzését. A költségvetési terv adatai a [Pénzügyi jelentéskészítésőn](../general-ledger/financial-reporting-getting-started.md) keresztül érhetők el; külön költségvetési tervváltozatok jeleníthetők meg oszlopokként a Pénzügyi jelentésben.
 
 
 
