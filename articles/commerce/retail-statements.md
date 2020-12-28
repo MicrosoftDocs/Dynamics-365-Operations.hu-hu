@@ -1,0 +1,90 @@
+---
+title: Kiskereskedelmi nyilatkozatok
+description: Ez a témakör a kimutatások létrehozását és feladását mutatja be.
+author: ashishmsft
+manager: AnnBe
+ms.date: 04/04/2017
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-365-retail
+ms.technology: ''
+ms.search.form: RetailParameters
+audience: Application User
+ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
+ms.custom: 85183
+ms.assetid: df9c62a2-6f13-4a08-bdca-07d041172c1b
+ms.search.region: Global
+ms.search.industry: Retail
+ms.author: asharchw
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: Retail July 2017 update
+ms.openlocfilehash: 4409811d2ef60174a316db10307dc7af4697398c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412981"
+---
+# <a name="retail-statements"></a><span data-ttu-id="e802a-103">Kiskereskedelmi kimutatások</span><span class="sxs-lookup"><span data-stu-id="e802a-103">Retail statements</span></span>
+
+[!include [banner](includes/banner.md)]
+
+<span data-ttu-id="e802a-104">A Dynamics 365 Commerce programban a kimutatások feladásával számolhatók el azok a tranzakciók, amelyek a felhőalapú pénztárban (POS) vagy a Modern POS rendszerű pénztárban (MPOS) jönnek létre.</span><span class="sxs-lookup"><span data-stu-id="e802a-104">In Dynamics 365 Commerce, the statement posting process is used to account for the transactions that occur in Cloud point of sale (POS) or Modern POS (MPOS).</span></span> <span data-ttu-id="e802a-105">A kimutatás feladási folyamatában az elosztási ütemezés lekérés a POS-tranzakciók a központ (HQ) ügyfél történő sorozatát használja.</span><span class="sxs-lookup"><span data-stu-id="e802a-105">The statement posting process uses the distribution schedule to pull a set of POS transactions into the headquarters (HQ) client.</span></span> <span data-ttu-id="e802a-106">A **Kereskedelmi paraméterek** és **Üzletek** lapokon megadott paraméterek segítségével egyedi kimutatásokba húzott tranzakciók választhatók ki.</span><span class="sxs-lookup"><span data-stu-id="e802a-106">The parameters that are defined on the **Commerce parameters** and **Stores** pages are used to select the transactions that are pulled into individual statements.</span></span>
+
+<span data-ttu-id="e802a-107">A következő ábra bemutatja a kimutatás feladási folyamatot:</span><span class="sxs-lookup"><span data-stu-id="e802a-107">The following illustration shows the statement posting process.</span></span> <span data-ttu-id="e802a-108">Ebben a folyamatban a rögzített tranzakciók a pénztárnál továbbításra kerülnek a vevőnek a Commerce ütemező segítségével.</span><span class="sxs-lookup"><span data-stu-id="e802a-108">In this process, transactions that are recorded in the POS are transmitted to the client by using the Commerce scheduler.</span></span> <span data-ttu-id="e802a-109">Miután a vevő megkapta a tranzakciókat, létrehozhatja, számíthatja, és feladhatja a tranzakció kimutatást az üzlet számára.</span><span class="sxs-lookup"><span data-stu-id="e802a-109">After the client receives the transactions, you can create, calculate, and post the transaction statement for the store.</span></span>
+
+<span data-ttu-id="e802a-110">[![Kimutatás feladási folyamata](./media/retail-statements.png)](./media/retail-statements.png)</span><span class="sxs-lookup"><span data-stu-id="e802a-110">[![Statement posting process](./media/retail-statements.png)](./media/retail-statements.png)</span></span>
+
+## <a name="creating-and-posting-statements"></a><span data-ttu-id="e802a-111">Kimutatások létrehozása és feladása</span><span class="sxs-lookup"><span data-stu-id="e802a-111">Creating and posting statements</span></span>
+
+<span data-ttu-id="e802a-112">Kimutatást létrehozhat manuálisan vagy a kötegelt folyamatok használatával, amelyeket úgy állít be, hogy időszakosan fussanak a nap folyamán.</span><span class="sxs-lookup"><span data-stu-id="e802a-112">You can create a statement manually or by using batch processes that you set up to run periodically throughout the day.</span></span> <span data-ttu-id="e802a-113">Mindkét esetben a következő lépések segítségével hozhat létre és adhat fel kimutatásokat.</span><span class="sxs-lookup"><span data-stu-id="e802a-113">In both cases, the following steps are used to create and post statements.</span></span>
+
+### <a name="create-the-statement"></a><span data-ttu-id="e802a-114">A kimutatás létrehozása.</span><span class="sxs-lookup"><span data-stu-id="e802a-114">Create the statement</span></span>
+
+<span data-ttu-id="e802a-115">Ez a lépés azonosítja az üzletet, amelyhez a kimutatás manuálisan jön létre.</span><span class="sxs-lookup"><span data-stu-id="e802a-115">This step identifies the store that the statement is manually created for.</span></span> <span data-ttu-id="e802a-116">Kötegfeldolgozás konfigurálásakor, automatikusan létrehozhat kimutatásokat minden üzlethez, a meghatározott ütemezést alapján.</span><span class="sxs-lookup"><span data-stu-id="e802a-116">If you configure a batch process, you can automatically create statements for all stores, based on a schedule that you define.</span></span>
+
+### <a name="calculate-the-statement"></a><span data-ttu-id="e802a-117">A kimutatás számítása</span><span class="sxs-lookup"><span data-stu-id="e802a-117">Calculate the statement</span></span>
+
+<span data-ttu-id="e802a-118">Ebben a lépésben a tranzakció sorai vannak kijelölve az egyes üzletekhez meghatározott feltételek alapján a **Kereskedelmi paraméterek** és **Üzletek** képernyőkben.</span><span class="sxs-lookup"><span data-stu-id="e802a-118">In this step, the transaction lines are selected based on criteria that are defined for each store on the **Commerce parameters** and **Stores** pages.</span></span> <span data-ttu-id="e802a-119">Ezeken az oldalakon határozza meg a feltételeket, majd adja meg, hogyan történik a tranzakciók számítása.</span><span class="sxs-lookup"><span data-stu-id="e802a-119">On these pages, you define the criteria and specify how the transactions are calculated.</span></span> <span data-ttu-id="e802a-120">A kimutatás számítása előtt a kimutatásban szereplő tranzakciók listájának megtekintéséhez használja a **Tranzakciók** képernyőt.</span><span class="sxs-lookup"><span data-stu-id="e802a-120">To view a list of the transactions that are included in the statement before you calculate the statement, use the **Transactions** page.</span></span>
+
+<span data-ttu-id="e802a-121">A kimutatásszámítás fizetőeszköz-elszámolásokat használ a pénztárgépekről a leszámolt összegként.</span><span class="sxs-lookup"><span data-stu-id="e802a-121">Statement calculation uses tender declarations from the registers as the counted amount.</span></span> <span data-ttu-id="e802a-122">Másik lehetőségként manuálisan is meg lehet adni a leszámolt összeget.</span><span class="sxs-lookup"><span data-stu-id="e802a-122">Alternatively, you can enter the counted amount manually.</span></span> <span data-ttu-id="e802a-123">A kimutatás megmutatja a különbséget az értékesítés összege között a tranzakciókhoz és a fizetési módok ténylegesen leszámlált összege között.</span><span class="sxs-lookup"><span data-stu-id="e802a-123">The statement shows the difference between the sales amount for the transactions and the actual counted amount in all payment methods.</span></span> <span data-ttu-id="e802a-124">A kimutatás feladására csak akkor kerül sor, ha ez a különbözet kevesebb mint az üzlethez meghatározott maximális feladási különbség.</span><span class="sxs-lookup"><span data-stu-id="e802a-124">The statement is posted only if this difference is less than the maximum posting difference that is defined for the store.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="e802a-125">A kimutatás számítási folyamat a globális számsorozatot használja.</span><span class="sxs-lookup"><span data-stu-id="e802a-125">The statement calculation process uses the global number sequence.</span></span>
+
+<span data-ttu-id="e802a-126">Amikor kimutatást számít, akkor a számítás a következő feladatokból áll:</span><span class="sxs-lookup"><span data-stu-id="e802a-126">When you calculate a statement, the calculation includes the following tasks:</span></span>
+
+- <span data-ttu-id="e802a-127">Tranzakciók, amelyek nem szerepeltek az előző kimutatásszámításban, a kiválasztott dátumtartományban.</span><span class="sxs-lookup"><span data-stu-id="e802a-127">For the selected date range, mark transactions that weren't included in a previous statement calculation.</span></span>
+- <span data-ttu-id="e802a-128">A teljes olyan összegek kiszámítása, amelyek a kijelölt tranzakciókban lettek ajánlatba véve.</span><span class="sxs-lookup"><span data-stu-id="e802a-128">Calculate the total amounts that were tendered in the selected transactions.</span></span> <span data-ttu-id="e802a-129">Az eredmények láthatók a kimutatási sorokon a kimutatás módszerétől függően:</span><span class="sxs-lookup"><span data-stu-id="e802a-129">The results are shown on the statement lines, depending on the statement method:</span></span>
+
+    - <span data-ttu-id="e802a-130">Ha a kimutatás módszere az **Összesen**, egy sor jön létre minden egyes fizetési módszerhez a kiválasztott tranzakciókban.</span><span class="sxs-lookup"><span data-stu-id="e802a-130">If the statement method is **Total**, a line is created for each payment method in the selected transactions.</span></span>
+    - <span data-ttu-id="e802a-131">Ha a kimutatás módszere **Személyzet**, egy sor jön létre minden egyes fizetési módszerhez a a kijelölt munkatárs által végrehajtott tranzakciókban.</span><span class="sxs-lookup"><span data-stu-id="e802a-131">If the statement method is **Staff**, a line is created for each payment method in transactions that were performed by the selected staff member.</span></span>
+    - <span data-ttu-id="e802a-132">Ha a kimutatás módszere **POS terminál**, egy sor jön létre minden egyes fizetési módszerhez a kijelölt jegyzéken végrehajtott tranzakciókban.</span><span class="sxs-lookup"><span data-stu-id="e802a-132">If the statement method is **POS terminal**, a line is created for each payment method in transactions that were performed on the selected register.</span></span>
+    - <span data-ttu-id="e802a-133">Ha a kimutatás módszere **Műszak** egy sor jön létre minden egyes fizetési módszerhez a kijelölt jegyzéken végrehajtott tranzakciókban egy műszak alatt.</span><span class="sxs-lookup"><span data-stu-id="e802a-133">If the statement method is **Shift**, a line is created for each payment method in transactions that were performed during a shift.</span></span>
+
+<span data-ttu-id="e802a-134">Ha a **kimutatás szerinti bontás módszere** jelölőnégyzet be van jelölve a **üzletek** lapon külön kimutatást alapján jön létre a kiválasztott érték a **kimutatás módszere** mező.</span><span class="sxs-lookup"><span data-stu-id="e802a-134">If the **Split by Statement method** check box is selected on the **Stores** page, a separate statement is created based on the value that is selected in the **Statement method** field.</span></span>
+
+<span data-ttu-id="e802a-135">Ha az üzlet munkaideje meghaladta az éjfelet, a kimutatásokat a munkanap vége szerint adjon fel, ahelyett, hogy a naptári nap vége szerint tenné.</span><span class="sxs-lookup"><span data-stu-id="e802a-135">If your store's operating hours extend past midnight, you can configure statement posting so that it's based on the end of the business day instead of the end of the calendar day.</span></span>
+
+<span data-ttu-id="e802a-136">Az **Üzletek** képernyőn a **Kimutatás/zárás** gyorslapon, a **Munkanap vége** mezőbe írja be az időt, amikor az utolsó tranzakciónak szerepelnie kell a munkanap kimutatásában.</span><span class="sxs-lookup"><span data-stu-id="e802a-136">On the **Stores** page, on the **Statement/closing** FastTab, in the **End of business day** field, enter the time that the last transaction must be recorded to be included in the business day's statement.</span></span> <span data-ttu-id="e802a-137">Jelölje be a **Feladás munkanapként** jelölőnégyzetet az ugyanazon a munkanapon feladni kívánt tranzakciókhoz.</span><span class="sxs-lookup"><span data-stu-id="e802a-137">Select the **Post as business day** check box to post the transactions within the same business day.</span></span> <span data-ttu-id="e802a-138">A kimutatás feladásakor az ugyanazon a munkanapon belül rögzített tranzakciók szerepelhetnek ugyanabban az értékesítési rendelésben, akkor is, ha éjfél előtt vagy éjfél után következnek be egyes tranzakciók.</span><span class="sxs-lookup"><span data-stu-id="e802a-138">When the statement is posted, transactions that are recorded within the same business day can be included on the same sales order, even if some transactions occur before midnight and other transactions occur after midnight.</span></span>
+
+#### <a name="example-post-a-statement-for-a-business-day-that-extends-over-two-calendar-days"></a><span data-ttu-id="e802a-139">Példa:, Kimutatás feladása munkanaphoz, amely meghalad két naptári napot</span><span class="sxs-lookup"><span data-stu-id="e802a-139">Example: Post a statement for a business day that extends over two calendar days</span></span>
+
+<span data-ttu-id="e802a-140">Üzlet meg nyitva, 8:00 óra között 3:00 óra, és a **feladás munkanapként** jelölőnégyzet be van jelölve, az áruház-konfigurációban.</span><span class="sxs-lookup"><span data-stu-id="e802a-140">A store is open between 8:00 AM and 3:00 AM, and the **Post as business day** check box is selected in the store's configuration.</span></span> <span data-ttu-id="e802a-141">Az üzlet május 31-én 8:00 óra, és éjfél közötti tranzakcióit tartja nyilván.</span><span class="sxs-lookup"><span data-stu-id="e802a-141">On May 31, the store records transactions between 8:00 AM and midnight.</span></span> <span data-ttu-id="e802a-142">Az üzlet is 12 óra 1 és 3:00 óra június 1-jén közötti tranzakcióit tartja nyilván.</span><span class="sxs-lookup"><span data-stu-id="e802a-142">The store also records transactions between 12:01 AM and 3:00 AM on June 1.</span></span>
+
+<span data-ttu-id="e802a-143">Ha az üzlet feladja a kivonatot a a munkanap lezárásához, egy értékesítési rendelés generálódik, amely tartalmazza az összes tranzakciót, amely reggel 8:00 óra és hajnali 3:00 óra között került rögzítésre, annak ellenére, hogy a tranzakciók két napon, május 31-én és június 1-jén történtek.</span><span class="sxs-lookup"><span data-stu-id="e802a-143">When the store posts its statement for the close of the business day, the sales order that is generated includes all transactions that were recorded between the business hours of 8:00 AM and 3:00 AM, even though the transactions occurred on two days, May 31 and June 1.</span></span>
+
+<span data-ttu-id="e802a-144">Ha ugyanannál az üzletnél a **Feladás munkanapként** jelölőnégyzet nincs bejelölve, külön értékesítési rendelések jönnek létre, amikor az üzlet feladja az a munkanap zárása kivonatot.</span><span class="sxs-lookup"><span data-stu-id="e802a-144">If the **Post as business day** check box is cleared for the same store, separate sales orders are generated when the store posts its statement for the close of the business day.</span></span> <span data-ttu-id="e802a-145">Egy értékesítési rendelés tartalmazza a tranzakciókat, amelyek május 31-én reggel 8 óra és éjfél között kerültek nyilvántartásra és a második értékesítési rendelés tartalmazza a tranzakciókat, amelyek június 1-jén 12 óra 1 perc és hajnali 3 óra között lettek nyilvántartva.</span><span class="sxs-lookup"><span data-stu-id="e802a-145">One sales order includes the transactions that were recorded between the business hours of 8:00 AM and midnight on May 31, and the second sales order includes the transactions that were recorded between the business hours of 12:01 AM and 3:00 AM on June 1.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="e802a-146">Kimutatások létrehozása előtt zárja le a műszakokat a kimutatás időszakában.</span><span class="sxs-lookup"><span data-stu-id="e802a-146">Before you can create statements, you should close the shifts in the statement period.</span></span>
+
+### <a name="post-the-statement"></a><span data-ttu-id="e802a-147">A kimutatás feladása</span><span class="sxs-lookup"><span data-stu-id="e802a-147">Post the statement</span></span>
+
+<span data-ttu-id="e802a-148">A kimutatás feladásakor értékesítési rendelések és számlák jönnek létre az értékesítés kimutatásban.</span><span class="sxs-lookup"><span data-stu-id="e802a-148">When you post a statement, sales orders and invoices are created for the sales in the statement.</span></span>
+
+- <span data-ttu-id="e802a-149">Készpénz és átviteli értékesítés berakodása egy értékesítési rendelésre történik, és számlázása az alapértelmezett vevőhöz történik, akit a rendszer az üzlethez társított.</span><span class="sxs-lookup"><span data-stu-id="e802a-149">Cash and carry sales are aggregated onto one sales order, and are invoiced for the default customer who is assigned to the store.</span></span>
+- <span data-ttu-id="e802a-150">Értékesítések, amelyeknél egy vevőt adtak a pénztári tranzakcióhoz, külön értékesítési rendeléseket és számlákat hoznak létre az egyes egyedi vevőkhöz.</span><span class="sxs-lookup"><span data-stu-id="e802a-150">Sales for which a customer was added to the transaction in POS generate separate sales orders and invoices, one for each unique customer.</span></span>
+
+<span data-ttu-id="e802a-151">Kifizetési naplók automatikusan létrejönnek a fizetési kimutatásban, és a készlet úgy frissül, ahogy a POS üzlet.</span><span class="sxs-lookup"><span data-stu-id="e802a-151">Payment journals are automatically created for the payments in the statement, and the inventory is updated for the POS store.</span></span>
