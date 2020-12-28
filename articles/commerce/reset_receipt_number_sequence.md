@@ -20,11 +20,11 @@ ms.author: asharchw
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: Application update 10.0.9
 ms.openlocfilehash: 31ba82ac5e032734e00f2aee12339bc85a53550b
-ms.sourcegitcommit: 165e082e59ab783995c16fd70943584bc3ba3455
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "3967286"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412794"
 ---
 # <a name="reset-receipt-numbers"></a>Nyugta számainak visszaállítása 
 
@@ -46,13 +46,13 @@ A Commerce-ben a nyugta formátuma alfanumerikus lehet. A statikus tartalmat és
 | MM         | Az **MM** karakterek a hónapokat jelölik két számjeggyel. Például januárban az **MM** formátum „01”-ként jelenik meg a nyugtán. |
 | DD         | A **DD** karakterek a hónapok napjait jelölik két számjeggyel. Például január 15-én a **DD** formátum „15”-ként jelenik meg a nyugtán. |
 | YY         | Az **YY** karakterek az évet jelölik két számjeggyel. Például 2020 bármelyik hónapjánál az **YY** formátum „20”-ként jelenik meg a nyugtán. |
-| \#         | A kettőskereszt ( **\#** ) egymást követő számoknál használatos. Például a **####** „0001”, „0002”, „0003” stb. számsort jelöl a nyugtán.  |
+| \#         | A kettőskereszt (**\#**) egymást követő számoknál használatos. Például a **####** „0001”, „0002”, „0003” stb. számsort jelöl a nyugtán.  |
 
 A nyugta sorszámozását egy adott dátumra állíthatja vissza. Ezt követően a rendszer az első olyan tranzakciónál, amely a kiválasztott visszaállítási dátumon 12:00 után jelentkezik, a nyugta számsorozatát 1 értékre állítja vissza. Megadhatja azt is, hogy a visszaállítás csak egy alkalommal, vagy minden évben újra megtörténjen-e. Ha meg van adva az éves ismétlődés, a visszaállítás automatikusan ismétlődik, amíg a kiskereskedő úgy nem dönt, hogy leállítja. 
 
 Ha be szeretné kapcsolni a visszaállítást, hajtsa végre az alábbi lépéseket.
 
-1. Ugorjon a következő elemre: **Retail és Commerce \>  Csatorna beállítása \> Pénztárbeállítás \>  Pénztárprofilok \> Funkcióprofilok** .
+1. Ugorjon a következő elemre: **Retail és Commerce \>  Csatorna beállítása \> Pénztárbeállítás \>  Pénztárprofilok \> Funkcióprofilok**.
 1. A **Nyugtaszámozás** gyorslapon válassza **Visszaállítási szám visszaállítási dátuma** lehetőséget.
 1. Válassza ki a legördülő párbeszédpanelen a **Dátum visszaállítása** mezőben azt a jövőbeli dátumot, amikor a visszaállításnak meg kell történnie.
 1. A **Nyugtatípus visszaállítása** mezőben válassza ki az **Egy alkalommal** vagy **Évente** lehetőséget.
@@ -67,4 +67,4 @@ Ha a visszaállítás dátuma esedékes, akkor a program visszaállítja a nyugt
 A jövőbeli visszaállítási dátumok törléséhez használja a **Visszaállítási dátum törlése** funkciót. Ha azonban a visszaállítás dátuma korábban történt meg, akkor nem vonható vissza. Ezért a visszaállítás még mindig megtörténik minden olyan jegyzék esetében, amelyeknél még nem történt meg a visszaállítás.
 
 > [!NOTE]
-> A kiválasztott Alapbeállítási dátumtól és a nyugta formátumtól függően lehet, hogy ismétlődő nyugta-szám van. Annak ellenére, hogy a pénztárrendszer képes kezelni ezeket a helyzeteket, növeli a visszáru feldolgozásához szükséges időt, mivel az értékesítési munkatársaknak választaniuk kell a duplikált nyugták között. Az adattisztítással kapcsolatos egyéb komplikációk akkor is előfordulhatnak, ha az ismétlődő nyugták nem tervezett következmények voltak. Ezért azt ajánljuk, hogy dinamikus dátumú karaktereket (például **ddd** , **MM** , **DD** és **YY** ) használjon, hogy megakadályozza az ismétlődő nyugtaszámok visszaállítását.
+> A kiválasztott Alapbeállítási dátumtól és a nyugta formátumtól függően lehet, hogy ismétlődő nyugta-szám van. Annak ellenére, hogy a pénztárrendszer képes kezelni ezeket a helyzeteket, növeli a visszáru feldolgozásához szükséges időt, mivel az értékesítési munkatársaknak választaniuk kell a duplikált nyugták között. Az adattisztítással kapcsolatos egyéb komplikációk akkor is előfordulhatnak, ha az ismétlődő nyugták nem tervezett következmények voltak. Ezért azt ajánljuk, hogy dinamikus dátumú karaktereket (például **ddd**, **MM**, **DD** és **YY**) használjon, hogy megakadályozza az ismétlődő nyugtaszámok visszaállítását.

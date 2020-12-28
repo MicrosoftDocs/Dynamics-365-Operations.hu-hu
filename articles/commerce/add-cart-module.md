@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 39026ec56ebf25342410330f2ba3e2e7773dfd6a
-ms.sourcegitcommit: 765056b5dc1d0a8c27e56ff2cbd310ad3349ff09
+ms.openlocfilehash: 33db06ecfa2a8fa93cde3c4f1b31d6b30bfd0c34
+ms.sourcegitcommit: 12d271bb26c7490e7525d9b4bbf125cdc39fef43
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "4055427"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "4413019"
 ---
 # <a name="cart-module"></a>Kosármodul
 
@@ -50,8 +50,8 @@ A következő kép a Fabrikam webhelyen használt kosároldal egy példáját je
 
 | Tulajdonság | Értékek | Leírás |
 |----------------|--------|-------------|
-| Fejléc | A fejléc szövege és a fejléc címkéje ( **H1** , **H2** , **H3** , **H4** , **H5** vagy **H6** ) | A kosarának olyan címsor, mint például a "Bevásárlótáska" vagy a "Kosárban található termékek." |
-| A nincs készleten állapottal kapcsolatos hibák megjelenítése | **Igaz** vagy **Hamis** | Ha ez a tulajdonság **Igaz** értékre van állítva, a kosár oldal a készlettel kapcsolatos hibákat fog jelezni. Azt ajánljuk Önnek, hogy állítsa ezt a tulajdonságot **igaz** -ra, ha a készlet ellenőrzés engedélyezve van az oldalon. |
+| Fejléc | A fejléc szövege és a fejléc címkéje (**H1**, **H2**, **H3**, **H4**, **H5** vagy **H6**) | A kosarának olyan címsor, mint például a "Bevásárlótáska" vagy a "Kosárban található termékek." |
+| A nincs készleten állapottal kapcsolatos hibák megjelenítése | **Igaz** vagy **Hamis** | Ha ez a tulajdonság **Igaz** értékre van állítva, a kosár oldal a készlettel kapcsolatos hibákat fog jelezni. Azt ajánljuk Önnek, hogy állítsa ezt a tulajdonságot **igaz**-ra, ha a készlet ellenőrzés engedélyezve van az oldalon. |
 | Szállítási költségek megjelenítések sorcikkeknél | **Igaz** vagy **Hamis** | Ha ez a tulajdonság **Igaz** értékre van állítva, akkor a kosár sortételei megmutatják a szállítás költségeit, amennyiben ez az információ elérhető. Ez a funkció nem támogatott a Fabrikam témában, mert a felhasználók a csak szállítást választják a fizetési folyamaton belül. Azonban ez a funkció más munkafolyamatokban is bekapcsolható, ha az alkalmazható az adott munkafolyamatban. |
 
 ## <a name="modules-that-can-be-used-in-a-cart-module"></a>A kosármodulban használható modulok
@@ -83,12 +83,12 @@ A kosármodul új oldalra való felvételéhez és a kötelező tulajdonságok b
 1. A **Töredék neve** pontban adja meg a **Kosár töredék** nevet, ezután válassza az **OK** lehetőséget.
 1. Válassza ki **Kosár** helyet.
 1. A jobb oldali tulajdonságok ablaktáblán válassza ki a ceruza szimbólumot, adja meg a címsor szövegét a mezőben, majd jelölje be a pipa jelet.
-1. A **Kosár** helyben válassza a három pont ( **…** ) gombot, majd válassza az **Modul hozzáadása** elemet.
+1. A **Kosár** helyben válassza a három pont (**…**) gombot, majd válassza az **Modul hozzáadása** elemet.
 1. A **Modul hozzáadása** párbeszédpanelen válassza ki az **Áruházválasztó** modult, majd kattintson az **OK** gombra.
 1. Válassza a **Mentés** elemet, válassza a **Szerkesztés befejezése** parancsot a töredék ellenőrzéséhez, majd a **Közzététel** elemet a közzétételhez.
 1. Lépjen a **Sablonok** pontra, majd új sablon készítéséhez válassza az **Új** elemet.
 1. Az **Új sablon** párbeszédablakban a **Sablon neve** alatt adja meg a sablon nevét.
-1. A Vázlatablakban válassza ki a **Törzs** helyét, válassza a három pont ( **…** ) majd válassza a **Töredék hozzáadása** elemet.
+1. A Vázlatablakban válassza ki a **Törzs** helyét, válassza a három pont (**…**) majd válassza a **Töredék hozzáadása** elemet.
 1. A **Töredék kiválasztása** párbeszédpanelen válassza ki a **Kosártöredék** nevű töredékét, majd kattintson az **OK** gombra.
 1. Válassza a **Mentés** elemet, válassza a **Szerkesztés befejezése** parancsot a sablon ellenőrzéséhez, majd a **Közzététel** elemet a közzétételhez.
 1. Lépjen az **Oldalak** pontra, majd válassza az **Új** lehetőséget új oldal létrehozásához.
@@ -107,6 +107,8 @@ A kosármodul új oldalra való felvételéhez és a kötelező tulajdonságok b
 [Szállítási cím modul](ship-address-module.md)
 
 [Szállítási lehetőségek modul](delivery-options-module.md)
+
+[Átvételi információk modul](pickup-info-module.md)
 
 [Rendelési részletek modul](order-confirmation-module.md)
 

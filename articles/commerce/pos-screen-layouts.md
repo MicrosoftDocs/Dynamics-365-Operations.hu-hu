@@ -20,11 +20,11 @@ ms.author: boycez
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.openlocfilehash: 2a6fdbc957a50adba38627bc37622c17ab4be419
-ms.sourcegitcommit: 9e7ceb5604472f3088f611aa0360bd6a716db32b
+ms.sourcegitcommit: 510ca8b14d8b5334e50aca1b15d636c65fcc9888
 ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4022471"
+ms.locfileid: "4412994"
 ---
 # <a name="pos-user-interface-visual-configurations"></a>Pénztár felhasználói felület vizuális konfigurációja
 
@@ -62,7 +62,7 @@ A vizuális profilok nyilvántartásokhoz vannak rendelve, és a nyilvántartás
 > [!NOTE]
 > A **Jobbra zárt** elrendezés és a dátum/idő megjelenítése nem érvényes a bejelentkezési képernyőre a kompakt nézetben.
 
-Az **1090** ( **Pénztárgépek** ) elosztási ütemezési feladat futtatásával szinkronizálni kell a legfrissebb vizuális profilkonfigurációkat a csatorna-adatbázissal.
+Az **1090** (**Pénztárgépek**) elosztási ütemezési feladat futtatásával szinkronizálni kell a legfrissebb vizuális profilkonfigurációkat a csatorna-adatbázissal.
 
 ## <a name="screen-layouts"></a>Képernyő-elrendezések
 
@@ -70,7 +70,7 @@ A képernyő-elrendezés konfigurációja határozza meg a műveletek, a tartalo
 
 ![Pénztár képernyő-elrendezés megtekintése](../commerce/media/POS-Screen-Layout-View.png)
 
-- **Üdvözlőképernyő** - A legtöbb esetben az üdvözlőképernyő az a lap, amely a felhasználók látnak, amikor először jelentkeznek be pénztárba. Az üdvözlőképernyő védjegyképből és a POS-műveletekhez való hozzáférést biztosító gombrácsokból állhat. Jellemzően a műveletek, amelyek nem kötődnek a jelenlegi tranzakcióhoz, itt vannak elhelyezve.
+- **Üdvözlőképernyő**- A legtöbb esetben az üdvözlőképernyő az a lap, amely a felhasználók látnak, amikor először jelentkeznek be pénztárba. Az üdvözlőképernyő védjegyképből és a POS-műveletekhez való hozzáférést biztosító gombrácsokból állhat. Jellemzően a műveletek, amelyek nem kötődnek a jelenlegi tranzakcióhoz, itt vannak elhelyezve.
 
     ![Pénztár üdvözlő képernyő](../commerce/media/POS-Welcome-Screen.png)
 
@@ -84,7 +84,7 @@ A képernyő-elrendezés konfigurációja határozza meg a műveletek, a tartalo
 
 Képernyő-elrendezések üzlet-, nyilvántartás- vagy felhasználószinten rendelhetők hozzá. A felhasználó-hozzárendelés felülírja a nyilvántartás- és üzlet-hozzárendeléseket, és a nyilvántartás-hozzárendelés felülbírálja az üzlet-hozzárendelést. Egyszerű forgatókönyvek esetén, ahol minden felhasználó ugyanazt az elrendezést használja a nyilvántartástól vagy a szerepkörtől függetlenül, a képernyő-elrendezés beállítható csak az üzlet szintjén. Azokban az esetekben, ahol bizonyos nyilvántartások vagy felhasználók speciális elrendezéseket igényelnek, ezek megfelelően hozzárendelhetők.
 
-Attól függően, hogy milyen szintű képernyő-elrendezés van hozzárendelve, futtatnia kell az **1070** ( **Csatornakonfiguráció** ), az **1090** ( **Pénztárak** ) és/vagy az **1060** ( **Személyzet** ) elosztási ütemezési feladatokat a legfrissebb képernyő-elrendezési konfigurációk szinkronizálására a csatorna-adatbázisba.
+Attól függően, hogy milyen szintű képernyő-elrendezés van hozzárendelve, futtatnia kell az **1070** (**Csatornakonfiguráció**), az **1090** (**Pénztárak**) és/vagy az **1060** (**Személyzet**) elosztási ütemezési feladatokat a legfrissebb képernyő-elrendezési konfigurációk szinkronizálására a csatorna-adatbázisba.
 
 ### <a name="layout-sizes"></a>Elrendezési méretek
 
@@ -151,7 +151,7 @@ A teljes képernyőelrendezés-tervező segítségével a felhasználók felhasz
     - **Bevételezés panel** - A bevételezés panel tartalmazza az eladási sorokat, a fizetési sorokat és a pénztárban feldolgozott termékek és szolgáltatások szállítási adatait. Megadhatja az oszlopokat, a szélességüket és az elhelyezésüket. A kompakt elrendezések esetében további információkat is beállíthat, amelyek a fő vonal alatti sorban jelennek meg.
     - **Vevőkártya** - A vevőkártya a jelenlegi tranzakcióhoz társított vevővel kapcsolatos információkat jelenít meg. A vevőkártya beállítható úgy, hogy a további információk megjelenjenek vagy el legyenek rejtve.
     - **Lap vezérlőelem** - A lap vezérlőelem hozzáadható a képernyő-elrendezéshez, és a többi vezérlőelemet, például a számbillentyűzetet, a vevőkártyát vagy a gombrácsokat a lapon belül lehet elhelyezni. A lap vezérlőelem olyan tároló, amely segít több tartalom elhelyezésében a képernyőn. A lap vezérlőelem csak a teljes elrendezésekben érhető el.
-    - **Kép** - A kép vezérlőelem segítségével az üzlet emblémája vagy más márkajelzése jeleníthető meg a **Tranzakció** képernyőn. A kép vezérlőelem csak a teljes elrendezésekben érhető el.
+    - **Kép**- A kép vezérlőelem segítségével az üzlet emblémája vagy más márkajelzése jeleníthető meg a **Tranzakció** képernyőn. A kép vezérlőelem csak a teljes elrendezésekben érhető el.
     - **Javasolt termékek** - Ha a környezethez konfigurálva van, a javasolt termékek vezérlő termékjavaslatokat jelenít meg a gépi tanulás alapján.
     - **Egyéni vezérlő** - Az egyéni vezérlő helyőrzőként működik a képernyő-elrendezésen belül, és lehetővé teszi a hely fenntartását egyéni tartalom számára. Az egyéni vezérlőelem csak a teljes elrendezésekben érhető el.
 

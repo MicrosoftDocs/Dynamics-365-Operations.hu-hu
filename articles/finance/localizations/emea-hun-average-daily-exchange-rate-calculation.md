@@ -18,11 +18,11 @@ ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 10.0.0
 ms.openlocfilehash: fd3e9cecafa755842fef5d990cd695bec97ac761
-ms.sourcegitcommit: d03f301633175b15d46690fc97067820bf21579f
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "3775163"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408038"
 ---
 # <a name="calculate-average-and-daily-exchange-rates"></a>Átlagos és napi árfolyam kiszámítása
 

@@ -18,11 +18,11 @@ ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.openlocfilehash: 74229628e48ffb8ac974acd868e325eeca77d91e
-ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "3270050"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412844"
 ---
 # <a name="manage-seo-metadata"></a>SEO-metaadatok kezelése
 
@@ -74,7 +74,7 @@ Az oldal metaadatainak módosításához kövesse az alábbi lépéseket.
 1. Válassza ki a kezdőlapot a megnyitáshoz a lapszerkesztőben.
 1. Válassza a parancssáv **Szerkesztés** elemét.
 1. A jobb oldali tulajdonságok ablaktáblán bontsa ki az **Alapértelmezett metacímkék** lehetőséget.
-1. Új metacímke hozzáadásához kattintson a **Hozzáadás**gombra, majd írja be a címkét a mezőbe. Ha törölni szeretne egy létező metacímkét, válassza a mellette, jobbra található kuka szimbólumot.
+1. Új metacímke hozzáadásához kattintson a **Hozzáadás** gombra, majd írja be a címkét a mezőbe. Ha törölni szeretne egy létező metacímkét, válassza a mellette, jobbra található kuka szimbólumot.
 1. Válassza a **Mentés** parancsot, majd válassza a **Szerkesztés befejezése** elemet.
 1. A **Megjegyzések** mezőbe írja be a **Frissített metacímkék** szöveget, majd kattintson az **OK** gombra.
 1. A oldal előnézetének megjelenítéséhez válassza az **Előnézet** lehetőséget. Ha befejezte, zárja be az előnézeti lapot, és térjen vissza a szerkesztési eszközhöz.

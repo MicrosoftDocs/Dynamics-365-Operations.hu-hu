@@ -3,7 +3,7 @@ title: Dynamics 365 Commerce értékelési környezet kiépítése
 description: Ez a témakör bemutatja, hogyan lehet egy Microsoft Dynamics 365 Commerce értékelési környezetet létesíteni.
 author: psimolin
 manager: annbe
-ms.date: 07/16/2020
+ms.date: 11/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: e5ce2002c66a1c36d5647d3c76684b394fc1ff79
-ms.sourcegitcommit: 5175e3fae432016246244cf70fe05465f43de88c
+ms.openlocfilehash: b54216a565c264dfcfe821581fee9df7b5e22323
+ms.sourcegitcommit: 715508547f9a71a89a138190e8540686556c753d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "3599850"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "4413017"
 ---
 # <a name="provision-a-dynamics-365-commerce-evaluation-environment"></a>Dynamics 365 Commerce értékelési környezet kiépítése
 
@@ -48,6 +48,7 @@ A Kereskedelem értékelési környezetének létesítés utáni konfigurálás�
 
 A következő előfeltételeknek kell érvényben lenniük a Kereskedelem értékelési környezetének létesítése előtt:
 
+- Önt már beléptették az értékelési programba, és kapacitást biztosítottak egy értékelési környezethez.
 - Elérhetővé teszi a Microsoft Dynamics Lifecycle Services (LCS) portál elérését.
 - Ön meglévő Microsoft Dynamics 365 partner vagy vevő, és létre tud hozni egy Dynamics 365 Commerce projektet.
 - Rendszergazdai jogosultsággal rendelkezik a Microsoft Azure-előfizetéshez, vagy kapcsolatba lép egy előfizetési adminisztrátorral, aki a szükség esetén segítséget nyújthat.
@@ -89,9 +90,9 @@ Tegye a következőket a környezet telepítéséhez.
 > [!NOTE]
 > Előfordulhat, hogy nem kell a 6., 7. és/vagy 8. lépést végrehajtania, mert az egyetlen lehetőséggel rendekező oldalakat a rendszer átugorja. Amikor a **Környezeti paraméterek** nézetben van, erősítse meg, hogy a **Dynamics 365 Commerce – bemutató (10.0.* x* a Platform update *xx* frissítéssel)** szöveg közvetlenül a **Környezet neve** mező felett jelenik meg. További részletekért lásd a 8. lépés után megjelenő ábrát.
 
-1. Válassza a felső menü **Felhőalapú környezetek**pontját.
+1. Válassza a felső menü **Felhőalapú környezetek** pontját.
 1. Környezet hozzáadásához kattintson a **+ hozzáadás** gombra.
-1. Válassza ki az **Alkalmazás verziószáma** mezőben a legfrissebb verziót. Ha a legfrissebb verziótól különböző verziót kell kijelölni, akkor ne válasszon **10.0.8** előtti verziót.
+1. Válassza ki az **Alkalmazás verziószáma** mezőben a legfrissebb verziót. Ha a legfrissebb verziótól különböző verziót kell kijelölni, akkor ne válasszon **10.0.14** előtti verziót.
 1. A **Platform verziószáma** mezőben használja a kiválasztott alkalmazás verziójának automatikusan kiválasztott platform verzióját. 
 
     ![Válassza ki az alkalmazás- és a platformverziókat](./media/project1.png)
@@ -120,7 +121,7 @@ Egy CSU-cím inicializálásához kövesse az alábbi lépéseket.
 
 1. A **felhőalapú környezetek** nézetben válassza ki a saját környezetét a listából.
 1. Kattintson a jobb oldalon található környezeti nézet **Minden részlet** elemére. Megjelenik a környezeti részletek nézet.
-1. A **Környezeti funkciók**területen kattintson a**Kezelés** elemre.
+1. A **Környezeti funkciók** területen kattintson a **Kezelés** elemre.
 1. A **Commerce** lapon válassza az **Inicializálás** parancsot. Megjelenik a CSU inicializálási paraméterei nézet.
 1. A **Régió** mezőben válassza ki azt a régiót, amely ugyanazon vagy azon a területen vagy annak közelében van, amelybe a környezetet telepítették.
 1. Hagyja a **Verzió** mező értékét változatlanul.
@@ -146,7 +147,7 @@ Az e-kereskedelem inicializálásához kövesse az alábbi lépéseket.
 1.  Írja be a használni kívánt biztonsági csoport nevének első néhány betűjét az **AAD biztonsági csoport minősítési és értékelési moderátornak** mezőbe, majd válassza ki a nagyító szimbólumot a keresési eredmények megtekintéséhez. Válassza ki a megfelelő biztonsági csoportot a listából.
 1. Hagyja az **Értékelések és vélemények szolgáltatás engedélyezése** beállítást **Igen** értéken.
 1. Válassza az **Inicializálás** elemet. Újra megjelenik a **Commerce Management** nézet, amelyen a **e-kereskedelem** lap ki van választva. Az e-kereskedelem inicializálása elindult.
-1. A folytatás előtt várja meg, amíg az e-kereskedelem inicializálási állapota **Az inicializálás sikerült**állapotra nem vált.
+1. A folytatás előtt várja meg, amíg az e-kereskedelem inicializálási állapota **Az inicializálás sikerült** állapotra nem vált.
 1. A jobb alsó sarokban található **Hivatkozások** részben jegyezze fel a következő hivatkozások URL-címeit:
 
     * **e-kereskedelmi webhely** -Az e-kereskedelmi webhely gyökerére mutató hivatkozás.

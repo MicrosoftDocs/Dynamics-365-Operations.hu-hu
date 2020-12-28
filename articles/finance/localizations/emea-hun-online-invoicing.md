@@ -18,11 +18,11 @@ ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 10.0.0
 ms.openlocfilehash: 67bb84957bd3c400a5121855496a1fa79eb632ac
-ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
+ms.sourcegitcommit: 092ef6a45f515b38be2a4481abdbe7518a636f85
 ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4014948"
+ms.locfileid: "4408059"
 ---
 # <a name="online-invoicing-system"></a>Online számlázási rendszer
 
@@ -79,7 +79,7 @@ A logikai típusú **lineExpressionIndicator** elemet jelenteni kell a számlaso
 
     - **Keresés eredménye:** Természetes
     - **Sor:** 1
-    - **Mértékegység kódja:** km ez az érték a jogi személy **Mértékegységek** lapjáról származik ( **Szervezeti adminisztráció** \> **Beállítások** \> **Mértékegységek** ).
+    - **Mértékegység kódja:** km ez az érték a jogi személy **Mértékegységek** lapjáról származik (**Szervezeti adminisztráció** \> **Beállítások** \> **Mértékegységek**).
 
 > [!IMPORTANT]
 > A lista végén adja hozzá a következő két sort.
@@ -140,7 +140,7 @@ Az EM-funkció segítségével különféle dokumentumtípusokhoz különböző 
 Az EM funkciónak a RTIR-hez történő beállításának folyamata számos lépésből áll. Mivel néhány előre definiált entitás használva van az ER-konfigurációkban, fontos, előre meghatározott értéke csomagját használja, amelyek a kapcsolódó táblákhoz adatentitások csomagjaként vannak közzé téve.
 
 1. Az [LCS-ben](https://lcs.dynamics.com/v2) nyissa meg a Közös eszköz könyvtárat, és válassza ki az **Adatcsomag** eszköztípust.
-2. Az adatcsomagok listájában keresse meg a **HU RTIR setup.zip** , és töltse le a számítógépére. A csomagnak számos verziója lehet. Ügyeljen arra, hogy a legújabb verziót töltse le.
+2. Az adatcsomagok listájában keresse meg a **HU RTIR setup.zip**, és töltse le a számítógépére. A csomagnak számos verziója lehet. Ügyeljen arra, hogy a legújabb verziót töltse le.
 3. A hu RTIR Setup. zip fájl letöltése után nyissa meg a Finance alkalmazást, válassza ki azt a vállalatot, amelynek együtt fog működni a Magyar online számlázási rendszerrel, majd nyissa meg a **Munkaterületek** \> **Adatkezelés** lehetőséget.
 4. Az **Adatkezelés** munkaterületen nyissa meg a **Keretrendszer paraméterei** \> **Entitás beállításai** elemet, majd válassza az **Entitáslista frissítése** lehetőséget. Várja meg a megerősítést a frissítés elvégzéséről. Az entitások listájának frissítésével kapcsolatos további tudnivalókat lásd: [Entitáslista frissítése](https://docs.microsoft.com/dynamics365/dev-itpro/data-entities/data-entities#entity-list-refresh).
 5. Annak az ellenőrzése, hogy a forrásadatok és a céladatok megfelelően vannak leképezve. A további tudnivalókat lásd az [Adatimportálási és -exportálási feladatok](https://docs.microsoft.com/dynamics365/dev-itpro/data-entities/data-import-export-job#validate-that-the-source-data-and-target-data-are-mapped-correctly) szakaszban.
@@ -156,7 +156,7 @@ Az EM funkciónak a RTIR-hez történő beállításának folyamata számos lép
 
 ![Adatkezelési munkaterület](media/1_Setup_EM.png)
 
-Értesítést fog kapni az **Üzenetekben** , vagy a lap manuális frissítésével megtekintheti az adatimportálási folyamatokat. Az importálási folyamat befejezésekor a **Végrehajtási összesítő** lap az eredményeket jeleníti meg.
+Értesítést fog kapni az **Üzenetekben**, vagy a lap manuális frissítésével megtekintheti az adatimportálási folyamatokat. Az importálási folyamat befejezésekor a **Végrehajtási összesítő** lap az eredményeket jeleníti meg.
 
 A HU RTIR setup.zip csomag a Magyar online számlázási rendszerrel való együttműködésre képes **Online számlázás** feldolgozás beállítását teszi lehetővé. A következő ábra az **Online számlázás** feldolgozásának sémáját mutatja be.
 
@@ -181,7 +181,7 @@ A következő táblázat leírja az **Online számlázás** feldolgozásának fe
 | EM-elemek kizárása               | Felhasználói feldolgozás                     | Ez a kézi felhasználói művelet visszaállítja az EM-elem állapotát a **Kiértékelt** értékről **Kizárva** értékre, és kizárja az elemet a feldolgozásból.                                                                                                                                                                                                                                                                                 |
 | EM cikkek belefoglalása a fedolgozásba | Felhasználói feldolgozás                     | Ez a manuális felhasználói művelet visszaállítja az EM-elem állapotát a **Kizárt** vagy **Manuális szerkesztés** értékről **Kiértékelve** értékre.                                                                                                                                                                                                                                                                                                |
 | EM elem állapotának visszaállítása           | Felhasználói feldolgozás                     | Ez a manuális felhasználói művelet visszaállítja az EM-elem állapotát a **Elutasítva** értékről **Létrehozva** értékre.                                                                                                                                                                                                                                                                                                                         |
-| EM állapot visszaállítása                | Üzenetszint felhasználói feldolgozás       | Ez a manuális felhasználói művelet alaphelyzetbe állítja az elektronikus üzenet állapotát **Hiba a számlaválasz importálása során** , **Hiba a számlakérelem elküldése során** vagy **Hiba a tokenválasz importálása során** állapotról **Létrehozva** állapotra, hogy az elektronikus üzenet feldolgozása folytatódhasson.                                                                                                                                               |
+| EM állapot visszaállítása                | Üzenetszint felhasználói feldolgozás       | Ez a manuális felhasználói művelet alaphelyzetbe állítja az elektronikus üzenet állapotát **Hiba a számlaválasz importálása során**, **Hiba a számlakérelem elküldése során** vagy **Hiba a tokenválasz importálása során** állapotról **Létrehozva** állapotra, hogy az elektronikus üzenet feldolgozása folytatódhasson.                                                                                                                                               |
 
 Ha további tájékoztatást szeretne kapni az RTIR-hez tartozó csomag adatentiásainak előbeállításiaról, lásd [1. függelék: Elektronikus üzenetek beállítása az RTIR-hez](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/HU-RTIR/articles/finance/localizations/emea-hun-online-invoicing.md#appendix-1-electronic-message-setup-for-rtir) részt a témakör későbbi szakaszában.
 
@@ -287,7 +287,7 @@ Minden üzenetelem további, a feldolgozáshoz szükséges mezőkkel rendelkezik
 
 | **További mező**       | **Leírás**                                                                                                                                                                                                                                                                                                                                                                                                                        |
 |----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Művelet                  | Az értékek többek között a **Létrehozás** , **Helyesbítés** és **Sztornó**. A Finance a kiegészítő mező értékét az **EM elemek kiértékelése** művelet végrehajtása során állítja be. A **Művelethez** tartozó további mező értéke automatikusan vagy a számlán szereplő pénzügyi indokkal definiálható. További tudnivalókért lásd a [Pénzügyi okok beállítása az RTIR-hez](#set-up-financial-reasons-for-rtir) című részt, a témakör korábbi részében.                           |
+| Művelet                  | Az értékek többek között a **Létrehozás**, **Helyesbítés** és **Sztornó**. A Finance a kiegészítő mező értékét az **EM elemek kiértékelése** művelet végrehajtása során állítja be. A **Művelethez** tartozó további mező értéke automatikusan vagy a számlán szereplő pénzügyi indokkal definiálható. További tudnivalókért lásd a [Pénzügyi okok beállítása az RTIR-hez](#set-up-financial-reasons-for-rtir) című részt, a témakör korábbi részében.                           |
 | Eredeti számlaelem      | Ha a **Művelet** kiegészítő mező **Helyesbítés** vagy **Sztornó** értékre van beállítva , akkor az eredeti **Számla elem** kiegészítő mezőt be kell állítani. Ha a rendszer nem tudja beállítani ezt a mezőt, a kapcsolódó üzenet elemét **Manuális szerkesztés** értékre állítja , és ezt a mezőt manuálisan kell beállítania.                                                                                                                                                  |
 | Index                      | Ez a kiegészítő mező meghatározza a számla pozícióját a kérelemben (a számlák csomagja). Az érték jelentése a **ManageInvoiceRequest.xml** fájl **\<index\>** elemében történik. Ezt a kiegészítő mezőt a program automatikusan kitölti, amikor a **Számlázási kérelem létrehozása** művelet fut.                                                                                                                                          |
 | Utolsó sor hivatkozási száma | A **Létrehozás** művelettípusú üzenetelemeknél ez a kiegészítő mező a csomag utolsó számát (a számlasor mennyiségét) tartalmazza. A **Helyesbítés** vagy **Sztornó** művelettípusú üzeneteknél ez a kiegészítő mező az eredeti számla **Index** értékét tartalmazza a **\<modificationIndex\>** elemnek megfelelően. Ezt a kiegészítő mezőt a program automatikusan kitölti, amikor a **Kiértékelés** művelet fut. |

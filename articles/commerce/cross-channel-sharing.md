@@ -18,11 +18,11 @@ ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.openlocfilehash: 77284045bda193500117978102c0565c5f15ec6d
-ms.sourcegitcommit: b063bf3a52f19baa11ddba31ef9313d58a0f610e
+ms.sourcegitcommit: 1a12b42cc17f004a981c716aed3da6cf538475a5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4019518"
+ms.locfileid: "4412991"
 ---
 # <a name="enable-and-use-cross-channel-sharing"></a>Csatornaközi megosztás engedélyezése és használata
 
@@ -72,9 +72,9 @@ Csatornaközi tartalom többféleképpen is létrehozható és használható. L�
 A következő lépésekkel hozhat létre csatornaközi töredéket a Commerce webhelyszerkesztőben.
 
 1. Lépjen a **Töredékek** pontra, és válassza az **Új** lehetőséget új töredék létrehozásához.
-1. Az **Új töredék** párbeszédpanelen válassza ki a **Promóciós szalagcím** modult, majd a **Töredék neve** alatt adjon meg egy nevet (például **Csatornaközi szalagcím** ). Majd kattintson az **OK** lehetőségre.
+1. Az **Új töredék** párbeszédpanelen válassza ki a **Promóciós szalagcím** modult, majd a **Töredék neve** alatt adjon meg egy nevet (például **Csatornaközi szalagcím**). Majd kattintson az **OK** lehetőségre.
 1. A **Promóciós szalagcím** modul tulajdonságlapján válassza az **Üzenet hozzáadása** lehetőséget, majd válassza az **Üzenet** elemet.
-1. Az **Üzenet** párbeszédpanelben a **Szöveg** alatt írja be, hogy **Csatornaközi** , majd kattintson az **OK** gombra. 
+1. Az **Üzenet** párbeszédpanelben a **Szöveg** alatt írja be, hogy **Csatornaközi**, majd kattintson az **OK** gombra. 
 1. Válassza a **Mentés** elemet, válassza a **Szerkesztés befejezése** parancsot az oldal ellenőrzéséhez, majd a **Közzététel** elemet a közzétételhez.
 
 Ez a csatornaközi töredék bármely webhelycsatornán létrehozott csatornaközi és csatornaspecifikus oldalon használható.
@@ -87,9 +87,9 @@ Ha a Commerce webhelykészítőben csatornaközi tartalmat használó csatornak�
 
 1. Lépjen az **Oldalak** pontra, majd válassza az **Új** lehetőséget új oldal létrehozásához.
 1. A **Sablon kiválasztása** párbeszédpanelen válassza ki a sablont, pl. a **Marketing** sablont.
-1. Az **Oldal neve** alatt adjon nevet az oldalnak (pl. **Csatornaközi oldal** ).
-1. Az **Oldal URL-címe** alatt adja meg az oldal URL-címét (pl. **mintaoldal** ), majd kattintson az **OK** gombra.
-1. Az új oldal **Fő** helyén válassza ki a három pont ( **…** ) gombot, majd válassza a **Töredék hozzáadása** elemet.
+1. Az **Oldal neve** alatt adjon nevet az oldalnak (pl. **Csatornaközi oldal**).
+1. Az **Oldal URL-címe** alatt adja meg az oldal URL-címét (pl. **mintaoldal**), majd kattintson az **OK** gombra.
+1. Az új oldal **Fő** helyén válassza ki a három pont (**…**) gombot, majd válassza a **Töredék hozzáadása** elemet.
 1. A **Töredék hozzáadása** párbeszédpanelen válassza ki a korábban létrehozott, promóciós szalagcímet tartalmazó csatornaközi töredéket, majd kattintson az **OK** gombra.
 1. Válassza a **Mentés** lehetőséget, majd az oldal előnézetének megtekintéséhez az **Előnézet** elemet. Megjelenik a „Csatornaközi” promóciós szalagcím.
 1. Válassza a **Szerkesztés befejezése** parancsot az oldal ellenőrzéséhez, majd a **Közzététel** elemet a közzétételhez.
@@ -100,11 +100,11 @@ A csatornaspecifikus oldalakon csatornaközi tartalmat használva egyszer kell c
 
 Ha a Commerce webhelykészítőben csatornaspecifikus tartalmat használó csatornaközi oldalt szeretne létrehozni, hajtsa végre az alábbi lépéseket.
 
-1. Egy adott csatornából, például a **Fabrikam bővített online áruházból** , lépjen az **Oldalak** elemre, majd válassza az **Új** lehetőséget az új oldal létrehozásához.
+1. Egy adott csatornából, például a **Fabrikam bővített online áruházból**, lépjen az **Oldalak** elemre, majd válassza az **Új** lehetőséget az új oldal létrehozásához.
 1. A **Sablon kiválasztása** párbeszédpanelen válassza ki a sablont, pl. a **Marketing** sablont.
-1. Az **Oldal neve** alatt adjon nevet az oldalnak (pl. **Csatornaspecifikus oldal** ).
-1. Az **Oldal URL-címe** alatt adja meg az oldal URL-címét (pl. **csatornaspecifikusoldal** ), majd kattintson az **OK** gombra.
-1. Az új oldal **Fő** helyén válassza ki a három pont ( **…** ) gombot, majd válassza a **Töredék hozzáadása** elemet.
+1. Az **Oldal neve** alatt adjon nevet az oldalnak (pl. **Csatornaspecifikus oldal**).
+1. Az **Oldal URL-címe** alatt adja meg az oldal URL-címét (pl. **csatornaspecifikusoldal**), majd kattintson az **OK** gombra.
+1. Az új oldal **Fő** helyén válassza ki a három pont (**…**) gombot, majd válassza a **Töredék hozzáadása** elemet.
 1. A **Töredék hozzáadása** párbeszédpanelen a **Csatorna** alatt válassza a **Csatornaközi online áruház** elemet. A korábban létrehozott csatornaközi töredéknek meg kell jelennie a listán. Válassza ki, majd kattintson az **OK** gombra.
 1. Válassza a **Mentés** lehetőséget, majd az oldal előnézetének megtekintéséhez az **Előnézet** elemet. Megjelenik a „Csatornaközi” promóciós szalagcím.
 1. Válassza a **Szerkesztés befejezése** parancsot az oldal ellenőrzéséhez, majd a **Közzététel** elemet a közzétételhez.
@@ -119,10 +119,10 @@ Ha a Commerce webhelykészítőben létre szeretné hozni a csatornaközi oldal 
 1. Nyissa meg a korábban létrehozott csatornaközi oldalt.
 1. A jobb oldalon felül található **Csatorna** mezőben válassza ki azt a csatornát, amelyhez más tartalmat szeretne. Az oldalszerkesztő üzenetet jelenít meg, amely arra kéri, hogy hozzon létre új oldalváltozatot.
 1. Válassza az **Oldalváltozat létrehozása** lehetőséget.
-1. Az oldalváltozat **Fő** helyén válassza ki a három pont ( **…** ) gombot, majd válassza a **Modul hozzáadása** elemet.
+1. Az oldalváltozat **Fő** helyén válassza ki a három pont (**…**) gombot, majd válassza a **Modul hozzáadása** elemet.
 1. A **Modul hozzáadása** párbeszédpanelen válassza a **Promóciós szalagcím** modult, majd kattintson az **OK** gombra.
 1. A **Promóciós szalagcím** modul tulajdonságlapján válassza az **Üzenet hozzáadása** lehetőséget, majd válassza az **Üzenet** elemet.
-1. Az **Üzenet** párbeszédpanelben a **Szöveg** alatt írja be, hogy **Csatornaspecifikus** , majd kattintson az **OK** gombra.
+1. Az **Üzenet** párbeszédpanelben a **Szöveg** alatt írja be, hogy **Csatornaspecifikus**, majd kattintson az **OK** gombra.
 1. Válassza a **Mentés** lehetőséget, majd az oldal előnézetének megtekintéséhez az **Előnézet** elemet. Megjelenik a „Csatornaspecifikus” promóciós szalagcím.
 1. Válassza a **Szerkesztés befejezése** parancsot az oldal ellenőrzéséhez, majd a **Közzététel** elemet a közzétételhez.
 

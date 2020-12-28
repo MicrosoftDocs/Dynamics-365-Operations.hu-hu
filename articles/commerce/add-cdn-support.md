@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 662d26c0157377977bd1031cd7bb13a8e692f37e
-ms.sourcegitcommit: 078befcd7f3531073ab2c08b365bcf132d6477b0
+ms.openlocfilehash: 0e888fca4a5401f1df6e61b10358489846ad4b0e
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "3646039"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517208"
 ---
 # <a name="add-support-for-a-content-delivery-network-cdn"></a>Tartalomkézbesítési hálózat (CDN) támogatásának hozzáadása
 
@@ -97,8 +97,8 @@ Ha be szeretne állítani egy útvonaltervezési szabályt az Azure Front Door S
 1. A **Név** mezőbe írja be az **alapértelmezett** szót.
 1. Az **Elfogadott protokoll** mezőben válassza a **HTTP és HTTPS** lehetőséget.
 1. Az **Előtéri állomások** mezőbe írja be a **dynamics-ecom-bérlő-neve.azurefd.net** kifejezést.
-1. Az **Egyeztetendő minták** alatt a felső mezőbe írja be a következőt: **/\***.
-1. Az **Útvonal részletei** adja meg az **Útvonal típusa** beállítás számára a **Továbbítás** értéket.
+1. Az **Egyeztetendő minták** alatt a felső mezőbe írja be a következőt: **/\** _.
+1. Az **Útvonal részletei** részben adja meg az **Útvonal típusa** beállítás számára a **Továbbítás** értéket.
 1. Válassza ki a **Háttérkészlet** mezőben az **ecom-backend** elemet.
 1. A **Továbbítási protokollok** mezőcsoportban válassza ki az **Egyeztetési kérelem** beállítást. 
 1. Állítsa az **URL újraírása** beállítást **Letiltva** értékre.
@@ -110,8 +110,8 @@ Ha be szeretne állítani egy gyorsítótárazási szabályt az Azure Front Door
 1. A **Név** mezőbe írja be a **statikák** szót.
 1. Az **Elfogadott protokoll** mezőben válassza a **HTTP és HTTPS** lehetőséget.
 1. Az **Előtéri állomások** mezőbe írja be a **dynamics-ecom-bérlő-neve.azurefd.net** kifejezést.
-1. Az **Egyeztetendő minták** alatt a felső mezőbe írja be a következőt: **/\_msdyn365/\_scnr/\***.
-1. Az **Útvonal részletei** adja meg az **Útvonal típusa** beállítás számára a **Továbbítás** értéket.
+1. Az **Egyeztetendő minták** alatt a felső mezőbe írja be a következőt: **/\_msdyn365/\_scnr/\** _.
+1. Az **Útvonal részletei** részben adja meg az **Útvonal típusa** beállítás számára a **Továbbítás** értéket.
 1. Válassza ki a **Háttérkészlet** mezőben az **ecom-backend** elemet.
 1. A **Továbbítási protokollok** mezőcsoportban válassza ki az **Egyeztetési kérelem** beállítást.
 1. Állítsa az **URL újraírása** beállítást **Letiltva** értékre.
@@ -144,17 +144,17 @@ A CDN-nek most már helyesen konfiguráltnak kell lennie, hogy használható leg
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[A tartománynév konfigurálása](configure-your-domain-name.md)
+[Tartománynév konfigurálása](configure-your-domain-name.md)
 
-[Új e-commerce webhely telepítése](deploy-ecommerce-site.md)
+[Új e-kereskedelmi bérlő telepítése](deploy-ecommerce-site.md)
 
 [E-kereskedelmi webhely létrehozása](create-ecommerce-site.md)
 
-[Online webhely társítása csatornával](associate-site-online-store.md)
+[Dynamics 365 Commerce webhely társítása online csatornával](associate-site-online-store.md)
 
 [Robots.txt fájlok kezelése](manage-robots-txt-files.md)
 
-[URL-átirányítások feltöltése ömlesztett formában](upload-bulk-redirects.md)
+[URL-átirányítások tömeges feltöltése](upload-bulk-redirects.md)
 
 [B2C-bérlő beállítása a Commerce-ben](set-up-B2C-tenant.md)
 

@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2019-12-18
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 1f7a779d69bf49d3416de3e92d4414cfabf358eb
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: ad87594b9c20d0c2b53e8d4e7c1170a78babe74b
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3983623"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517452"
 ---
 # <a name="manage-robotstxt-files"></a>Robots.txt fájlok kezelése
 
@@ -88,17 +88,17 @@ A robots.txt fájl törléséhez a Commerce alkalmazásban, kövesse az alábbi 
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[A tartománynév konfigurálása](configure-your-domain-name.md)
+[Tartománynév konfigurálása](configure-your-domain-name.md)
 
-[Új e-commerce webhely telepítése](deploy-ecommerce-site.md)
+[Új e-kereskedelmi bérlő telepítése](deploy-ecommerce-site.md)
 
 [E-kereskedelmi webhely létrehozása](create-ecommerce-site.md)
 
-[Online webhely társítása csatornával](associate-site-online-store.md)
+[Dynamics 365 Commerce webhely társítása online csatornával](associate-site-online-store.md)
 
-[URL-átirányítások feltöltése ömlesztett formában](upload-bulk-redirects.md)
+[URL-átirányítások tömeges feltöltése](upload-bulk-redirects.md)
 
-[B2C-bérlő beállítása a Commerce-ben](set-up-B2C-tenant.md)
+[B2C-bérlő beállítása a Commerce alkalmazásban](set-up-B2C-tenant.md)
 
 [Felhasználói bejelentkezéshez használt egyéni lapok beállítása](custom-pages-user-logins.md)
 

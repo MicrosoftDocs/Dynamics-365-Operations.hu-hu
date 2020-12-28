@@ -19,11 +19,11 @@ ms.author: anasyash
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.openlocfilehash: 0d37adc40d33e465536fc3a39160392eca3132c9
-ms.sourcegitcommit: d61c43b6bc04bb8786aa3c47932be0ccd84ebaeb
+ms.sourcegitcommit: b40d6ce45aeb07724fc41d1a41923970b007fbcf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 10/14/2020
-ms.locfileid: "4006272"
+ms.locfileid: "4408058"
 ---
 # <a name="fixed-assets-depreciation-methods-for-hungary"></a>Tárgyi eszközök értékcsökkenési módjai Magyarország esetében
 
@@ -91,7 +91,7 @@ Az éves értékcsökkenési összeg az év manuális százalékán alapul: Ért
 | 1. év | 48 000 (= 120 000 × 40%)                      |
 | 2. év | 72 000 (= 120 000 × 60%)                      |
 
-Ha egy egységhez beállított időszak gyakorisága kisebb, mint az **Éves** (például **Féléves** , **Negyedéves** vagy **Havi** ), az éves értékcsökkenési összeget a rendszer az egyes időszakokra osztja el. Az elosztás az év napjainak számán (365 vagy 366) és az adott időszak hosszán alapul. Az alábbi táblázat a Szorzótényezős értékcsökkenési mód számítási eredményeit mutatja be, amikor az időszak gyakoriságának beállítása **Féléves**.
+Ha egy egységhez beállított időszak gyakorisága kisebb, mint az **Éves** (például **Féléves**, **Negyedéves** vagy **Havi**), az éves értékcsökkenési összeget a rendszer az egyes időszakokra osztja el. Az elosztás az év napjainak számán (365 vagy 366) és az adott időszak hosszán alapul. Az alábbi táblázat a Szorzótényezős értékcsökkenési mód számítási eredményeit mutatja be, amikor az időszak gyakoriságának beállítása **Féléves**.
 
 | Időszak     | Napok száma | Szorzótényezős értékcsökkenés összege |
 |------------|----------------|-----------------------------------------------|
@@ -122,7 +122,7 @@ Az éves értékcsökkenési összeg az év tényezős százalékán alapul: Ér
 | 1. év | 60 000 (= 120 000 × 50%)                 |
 | 2. év | 60 000 (= 120 000 × 50%)                 |
 
-Ha egy egységhez beállított időszak gyakorisága kisebb, mint az **Éves** (például **Féléves** , **Negyedéves** vagy **Havi** ), az éves értékcsökkenési összeget a rendszer az egyes időszakokra osztja el. Az elosztás az év napjainak számán (365 vagy 366) és az adott időszak hosszán alapul. Az alábbi táblázat a Tényezős (Magyarország) értékcsökkenési mód számítási eredményeit mutatja be, amikor az időszak gyakoriságának beállítása **Féléves**.
+Ha egy egységhez beállított időszak gyakorisága kisebb, mint az **Éves** (például **Féléves**, **Negyedéves** vagy **Havi**), az éves értékcsökkenési összeget a rendszer az egyes időszakokra osztja el. Az elosztás az év napjainak számán (365 vagy 366) és az adott időszak hosszán alapul. Az alábbi táblázat a Tényezős (Magyarország) értékcsökkenési mód számítási eredményeit mutatja be, amikor az időszak gyakoriságának beállítása **Féléves**.
 
 | Időszak     | Napok száma | Tényezős (Magyarország) értékcsökkenés összege |
 |------------|----------------|------------------------------------------|
@@ -154,7 +154,7 @@ Az éves értékcsökkenési összeg az adott évre kiszámított százalékon a
 | 3. év | 20% (= 2 ÷ 10) | 24 000 (= 120 000 × 20%)                     |
 | 4. év | 10% (= 1 ÷ 10) | 12 000 (= 120 000 × 10%)                     |
 
-Ha egy egységhez beállított időszak gyakorisága kisebb, mint az **Éves** (például **Féléves** , **Negyedéves** vagy **Havi** ), az éves értékcsökkenési összeget a rendszer az egyes időszakokra osztja el. Az elosztás az év napjainak számán (365 vagy 366) és az adott időszak hosszán alapul. Az alábbi táblázat az Évek összegének számjegyei értékcsökkenési mód egy évre vonatkozó számítási eredményeit mutatja be, amikor az időszak gyakoriságának beállítása **Féléves**.
+Ha egy egységhez beállított időszak gyakorisága kisebb, mint az **Éves** (például **Féléves**, **Negyedéves** vagy **Havi**), az éves értékcsökkenési összeget a rendszer az egyes időszakokra osztja el. Az elosztás az év napjainak számán (365 vagy 366) és az adott időszak hosszán alapul. Az alábbi táblázat az Évek összegének számjegyei értékcsökkenési mód egy évre vonatkozó számítási eredményeit mutatja be, amikor az időszak gyakoriságának beállítása **Féléves**.
 
 | Időszak     | Százalék     | Napok száma | Évek összegének számjegyei összege |
 |------------|----------------|----------------|----------------------------------------------|

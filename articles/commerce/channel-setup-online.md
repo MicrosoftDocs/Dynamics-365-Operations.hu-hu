@@ -18,11 +18,11 @@ ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
 ms.openlocfilehash: 07225d97af76ea665fa28362cc205c6e8dc4fdf4
-ms.sourcegitcommit: 776758a0ff95c3c7398986095104d1d2b9814514
+ms.sourcegitcommit: 4c6d31f3ebd88212d3d1497a4bba9c64c5300444
 ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 10/24/2020
-ms.locfileid: "4107230"
+ms.locfileid: "4413013"
 ---
 # <a name="set-up-an-online-channel"></a>Online csatorna beállítása
 
@@ -76,7 +76,7 @@ A **fizetési számla** szakaszból kiválaszthatja azt a külső fél fizetési
 
 Az online csatorna beállításához szükséges további feladatok közé tartozik a fizetési módok, szállítási módok és a teljesítési csoport hozzárendelésének beállítása.
 
-A következő képen láthatók a **Szállítási módok** , a **Fizetési módok** és a **Teljesítési csoport hozzárendelése** beállított lehetőségei a **Beállítás** lapon.
+A következő képen láthatók a **Szállítási módok**, a **Fizetési módok** és a **Teljesítési csoport hozzárendelése** beállított lehetőségei a **Beállítás** lapon.
 
 ![További online csatorna-beállítási műveletek](media/channel-setup-online-3.png)
 
@@ -87,7 +87,7 @@ A fizetési módok beállításához a csatornán támogatott valamennyi fizeté
 1. A műveleti ablaktáblán válassza a **Beállítás** lapot, majd válassza ki a **Fizetési módokat**.
 1. A műveleti ablaktáblán kattintson az **Új** elemre.
 1. A navigációs ablakban válassza ki a kívánt fizetési módot.
-1. Az **általános** szakaszban adjon meg egy **művelet nevét** , és adja meg a kívánt beállításokat.
+1. Az **általános** szakaszban adjon meg egy **művelet nevét**, és adja meg a kívánt beállításokat.
 1. Adja meg a fizetési típushoz szükséges további beállításokat.
 1. A műveleti ablaktáblán válassza a **Mentés** lehetőséget.
 

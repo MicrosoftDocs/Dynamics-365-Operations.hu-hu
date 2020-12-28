@@ -17,11 +17,11 @@ ms.author: epopov
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: f4393931dd68a919b1c123a37bea4be82a068a2c
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183697"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408057"
 ---
 # <a name="year-end-close-for-czech-republic-and-hungary"></a>Év végi zárás Magyarország és Csehország esetén
 [!include[banner](../includes/banner.md)]

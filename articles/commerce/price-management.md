@@ -18,11 +18,11 @@ ms.author: shajain
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: a90f5706c87d398f495fae40f42f6c2d408b1c2a
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3980816"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412738"
 ---
 # <a name="retail-sales-price-management"></a>Kiskereskedelmi értékesítési ár kezelése
 
@@ -112,7 +112,7 @@ Egy nemzeti kiskereskedő régiónként állítja be a legtöbb árat, és négy
 
 Ebben a példában az északkeleti régiót vizsgáljuk meg részletesebben. Az 1. üzlet Bostonban, a 2. üzlet Manhattanben van. A bostoni üzlet esetében két árcsoport kapcsolódik a csatornához: északkelet és 1. üzlet. A manhattani üzlet esetében három árcsoport kapcsolódik a csatornához: északkelet, NYC és 2. üzlet.
 
-A kiskereskedő két árképzési prioritást állít be: a magas költség prioritási száma 5, és az üzlet árak prioritási száma 10. (Ne feledje, hogy alapértelmezés szerint az árképzési prioritás értéke 0 \[nulla\], és az ár vagy engedmény, amely magasabb prioritással rendelkezik, előbb kerül felhasználásra, min az alacsonyabb prioritású ár vagy engedmény.) Az északkelet árcsoport árképzési prioritása marad az alapértelmezett értékű, **0** (nulla). A NYC árcsoport árképzési prioritás értéke **5** , mivel New York magas költségű piac. Az 1. és 2. üzlet árcsoportoknál az árképzési prioritás értéke **10** .
+A kiskereskedő két árképzési prioritást állít be: a magas költség prioritási száma 5, és az üzlet árak prioritási száma 10. (Ne feledje, hogy alapértelmezés szerint az árképzési prioritás értéke 0 \[nulla\], és az ár vagy engedmény, amely magasabb prioritással rendelkezik, előbb kerül felhasználásra, min az alacsonyabb prioritású ár vagy engedmény.) Az északkelet árcsoport árképzési prioritása marad az alapértelmezett értékű, **0** (nulla). A NYC árcsoport árképzési prioritás értéke **5**, mivel New York magas költségű piac. Az 1. és 2. üzlet árcsoportoknál az árképzési prioritás értéke **10**.
 
 Két, a kiskereskedő által értékesített termék az 1. termék, egy átlagos, márkázatlan póló, és a 2. termék, egy márkaspecifikus divat farmernadrág.
 
@@ -150,7 +150,7 @@ Bár az áregység nem gyakori forgatókönyv, az árképzés motor támogatja. 
 
 ### <a name="sales-price-trade-agreement"></a>Az eladási áras kereskedelmi megállapodás
 
-A kereskedelmi megállapodási napló használata esetén minden termékhez értékesítési kereskedelmi megállapodásokat hozhat létre. A Microsoft Dynamics 365 megoldásban három vevői hatókör van az eladási árra vonatkozó kereskedelmi megállapodásokhoz: **Tábla** , **Csoport** és **Minden** . A vevőhatókör határozza meg a vevőket, akikre az adott kereskedelmi megállapodás eladási ár vonatkozik.
+A kereskedelmi megállapodási napló használata esetén minden termékhez értékesítési kereskedelmi megállapodásokat hozhat létre. A Microsoft Dynamics 365 megoldásban három vevői hatókör van az eladási árra vonatkozó kereskedelmi megállapodásokhoz: **Tábla**, **Csoport** és **Minden**. A vevőhatókör határozza meg a vevőket, akikre az adott kereskedelmi megállapodás eladási ár vonatkozik.
 
 A **Tábla** eladási árra vonatkozó kereskedelmi megállapodás egyetlen vevőre vonatkozik, és közvetlenül a kereskedelmi megállapodásban állítják be. Ez a forgatókönyv nem tipikus cég és ügyfél (B2C) közötti helyzet. Azonban ha előfordul, az árképzési motor a **Tábla** kereskedelmi megállapodásokat használja árak meghatározásakor.
 
@@ -175,7 +175,7 @@ Az árképzés motor három árat ad vissza minden termékre: alapár, kereskede
 
 Az alapár csak a termék tulajdonsága, és azonos mindenki számára, mindenhol.
 
-Az eladási áras kereskedelmi megállapodás esetében, amennyiben a **Következő keresése** beállítása **Igen** , az alkalmazható eladási áras kereskedelmi megállapodásokhoz található legalacsonyabb ár lesz használva kereskedelmi megállapodás árként. Az árcsoportok segítségével találhatók meg a kereskedelmi megállapodások, vagy a **MINDEN** számlakóddal. A kereskedelmi megállapodások másik megoldásként közvetlenül is a vevőhöz rendelhetők. Ha a **Következő keresése** beállítás értéke **Nem** , az első megtalált kereskedelmi megállapodás ár lesz használatos. Ha nincsenek eladási árra vonatkozó kereskedelmi megállapodások, a kereskedelmi megállapodás ár az alapárral egyenlő értékre lesz állítva.
+Az eladási áras kereskedelmi megállapodás esetében, amennyiben a **Következő keresése** beállítása **Igen**, az alkalmazható eladási áras kereskedelmi megállapodásokhoz található legalacsonyabb ár lesz használva kereskedelmi megállapodás árként. Az árcsoportok segítségével találhatók meg a kereskedelmi megállapodások, vagy a **MINDEN** számlakóddal. A kereskedelmi megállapodások másik megoldásként közvetlenül is a vevőhöz rendelhetők. Ha a **Következő keresése** beállítás értéke **Nem**, az első megtalált kereskedelmi megállapodás ár lesz használatos. Ha nincsenek eladási árra vonatkozó kereskedelmi megállapodások, a kereskedelmi megállapodás ár az alapárral egyenlő értékre lesz állítva.
 
 Az aktív ár kiszámítása úgy történik, hogy a kereskedelmi megállapodás árat vesszük alapul, és alkalmazzuk rá a termékre vonatkozó legnagyobb ármódosítást. Ha nem találhatók ármódosítások, vagy ha a számított aktív ár több, mint a kereskedelmi megállapodás ár, az aktív ár értéke a kereskedelmi megállapodás árra lesz állítva. Ne feledje, hogy Ön nem emelheti a termék árát ármódosítás használatával. Az alkalmazandó ármódosítások csak egy csatornához, katalógushoz, fiókhoz vagy hűségkártyához rendelt árcsoportok segítségével találhatók meg.
 

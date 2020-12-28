@@ -19,11 +19,11 @@ ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
 ms.openlocfilehash: 5d9279e1076796bb455429e5ff004c89ec5829e7
-ms.sourcegitcommit: 3cc289399e8879b499e31a9559e1031d6ca8570a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "3885945"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412860"
 ---
 # <a name="create-a-variant-group"></a>Változatcsoport létrehozása
 
@@ -54,7 +54,7 @@ Attribútum hozzáadásához egy méretcsoporthoz kövesse az alábbi lépéseke
 
 1. A navigációs ablaktáblán lépjen ide: **Modulok \> Kiskereskedelmi és kereskedelem \> Termékek és kategóriák \> Változatcsoportok \> Méretcsoportok**
 1. A navigációs ablaktáblán válasszon egy kategóriát.
-1. A **Méret csoport sorai**területen válassza a **Hozzáadás** elemet.
+1. A **Méret csoport sorai** területen válassza a **Hozzáadás** elemet.
 1. A **Méret** mezőbe írjon be egy karakterláncot a mérethez (például „XL”).
 1. A **Méret neve** mezőbe írja be a méret nevét (például „Extranagy”).
 1. A **Feltöltési súly** mezőbe írjon be egy számot, amely a feltöltési súlyt jelenti.

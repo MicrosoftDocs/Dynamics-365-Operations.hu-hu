@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 24ef0ad8528d1d094f59736b7a36fd77f57fb227
-ms.sourcegitcommit: 161e85eb0a6b772b60ba8b2578a3de149ce5bfd7
+ms.openlocfilehash: 7dc9f85bf90e6ddf9badf656eb136e28a71b036f
+ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "3081339"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "4594113"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Online és offline pénztár (POS) műveletek
 
@@ -197,6 +197,8 @@ A következő oszlopok megadása, amennyiben a műveletek meghívhatók:
 | 500 | Tranzakció érvénytelenítése | Az aktuális tranzakció érvénytelenítése. | Igen | Igen | Nincs | Igen | Nincs |
 | 916 | Windows folyamatkövető alaprendszer | A művelet nem támogatott. | Nem alkalmazható | Nem alkalmazható | Nem alkalmazható | Nem alkalmazható | Nincs |
 | 924 | Bankkártyák X-jelentése | A művelet nem támogatott. | Nem alkalmazható | Nem alkalmazható | Nem alkalmazható | Nem alkalmazható | Igen |
+| 311 | Rendszerengedmények eltávolítása a tranzakciókból | Távolítsa el az összes rendszer által alkalmazott engedményt, beleértve a kupon alapú kedvezmények, a tranzakcióból. Ez nem távolítja el a manuális engedményeket. | Igen | Igen | Igen | Igen | Nincs |
+| 312 | Rendszerengedmények újbóli alkalmazása | Alkalmazza újra a tranzakcióra vonatkozó rendszerengedményeket, ha azokat a **Rendszerengedmények eltávolítása a tranzakcióból** művelettel távolították el. | Igen | Igen | Igen | Igen | Nincs |
 
 \* A művelet csak akkor, amikor a vevői rendelés vagy értékesítési ajánlat létrehozása folyamatban van, az offline módban érhető el, de csak akkor, ha a vevői rendelések és értékesítési ajánlatok létrehozása offline helyesek-e a POS funkcióprofil. A művelet nem hajtható végre, rendelések létrehozásakor a Real-time Service segítségével, vagy ha a rendelések visszahívásához vagy szerkeszteni.
 

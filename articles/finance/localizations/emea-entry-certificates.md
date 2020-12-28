@@ -18,11 +18,11 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 46a4180163adea72e7d8712ed5ce6a3306e477c5
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175774"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408043"
 ---
 # <a name="eu-entry-certificates"></a>EU beérkezési igazolások
 
@@ -84,7 +84,7 @@ Létrehozhat egy EU-s beérkezési igazolást automatikusan a szállítólevél 
 
 ### <a name="registering-an-eu-entry-certificate"></a>EU beérkezési igazolás regisztrálása
 
-Ha regisztráció szükséges, regisztrálhat egy olyan EU beérkezési igazolást, amelyet egy harmadik fél bocsátott ki a**Beérkezési igazolások naplója** képernyőn keresztül.
+Ha regisztráció szükséges, regisztrálhat egy olyan EU beérkezési igazolást, amelyet egy harmadik fél bocsátott ki a **Beérkezési igazolások naplója** képernyőn keresztül.
 
 ### <a name="uploading-a-received-eu-entry-certificate"></a>Átvett EU-s beérkezési igazolás feltöltése
 

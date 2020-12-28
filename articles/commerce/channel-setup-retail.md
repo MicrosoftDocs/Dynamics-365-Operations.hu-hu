@@ -18,11 +18,11 @@ ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
 ms.openlocfilehash: a9291dddf7d4dc080b6eb1ec60702de32a761f45
-ms.sourcegitcommit: 141e0239b6310ab4a6a775bc0997120c31634f79
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3113828"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412824"
 ---
 # <a name="set-up-a-retail-channel"></a>Kiskereskedelmi csatorna beállítása
 
@@ -126,11 +126,11 @@ A bevétel/kiadási számla beállításához kövesse az alábbi lépéseket.
 
 1. A műveleti ablaktáblán válassza a **Beállítás** lapot, és válassza ki a **Bevételi/kiadási számla**.
 1. A műveleti ablaktáblán kattintson az **Új** elemre.
-1. A **Név**mezőbe írjon be egy nevet.
-1. A **Keresési név**mezőbe írjon be egy keresési nevet.
+1. A **Név** mezőbe írjon be egy nevet.
+1. A **Keresési név** mezőbe írjon be egy keresési nevet.
 1. A **Számlatípus** részben adja meg a számlatípust.
 1. Szükség szerint adjon meg szöveget a következőkhöz: **Üzenet 1. sora**, **Üzenet 2. sora**, **1. bizonylatszöveg** és **2. bizonylatszöveg**.
-1. A **feladás**területen írja be a feladási adatokat.
+1. A **feladás** területen írja be a feladási adatokat.
 1. A műveleti ablaktáblán válassza a **Mentés** lehetőséget.
 
 A következő kép egy példát mutat egy bevételi/kiadási számlára.

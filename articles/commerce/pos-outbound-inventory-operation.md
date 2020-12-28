@@ -20,11 +20,11 @@ ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
 ms.openlocfilehash: 1f74df94b1647520880ff994581872b9d9f8e067
-ms.sourcegitcommit: 6e0d6d291d4881b16a677373f712a235e129b632
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "3971545"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412748"
 ---
 # <a name="outbound-inventory-operation-in-pos"></a>Kimenő készletművelet a pénztárban
 
@@ -88,7 +88,7 @@ Amikor a pénztári alkalmazásból indul el a kimenő művelet, megjelenik a li
 
 A kimenő készlet dokumentumlista három lapból áll.
 
-- **Aktív** – Ez a lap azokat az átmozgatási rendeléseket jeleníti meg, amelyek állapota **Kérelmezve** vagy **Részben leszállított** . A rendelések olyan sorokat vagy sorokban található mennyiségeket tartalmaznak felhasználó aktuális üzletének kell szállítani. Ez a lap azokat a rendeléseket is megjeleníti, amelyek állapota **Feldolgozás a központban** (azaz a Commerce központ (HQ) rendszerből történő sikeres feladás megerősítésére várnak) vagy **Feldolgozás nem sikerült** (azaz a Commerce központ (HQ) rendszerbe történő feladás sikertelen volt, és a felhasználónak ki kell javítania az adatokat, és újra el kell küldenie a rendeléseket).
+- **Aktív** – Ez a lap azokat az átmozgatási rendeléseket jeleníti meg, amelyek állapota **Kérelmezve** vagy **Részben leszállított**. A rendelések olyan sorokat vagy sorokban található mennyiségeket tartalmaznak felhasználó aktuális üzletének kell szállítani. Ez a lap azokat a rendeléseket is megjeleníti, amelyek állapota **Feldolgozás a központban** (azaz a Commerce központ (HQ) rendszerből történő sikeres feladás megerősítésére várnak) vagy **Feldolgozás nem sikerült** (azaz a Commerce központ (HQ) rendszerbe történő feladás sikertelen volt, és a felhasználónak ki kell javítania az adatokat, és újra el kell küldenie a rendeléseket).
 - **Vázlat** – Ezen a lapon láthatók a felhasználó üzlete által létrehozott kimenő átmozgatásirendelés-kérelmek. A dokumentumok azonban csak helyben lettek mentve. A Commerce központba (HQ) még nem küldték be feldolgozásra.
 - **Kész** – Ez a lap felsorolja azokat az átmozgatási rendelési dokumentumokat, amelyeket az üzlet teljesen kiszállított a legutóbbi hét napban. Ez a lap csak tájékoztatásra szolgál. A dokumentumokkal kapcsolatos összes adat írásvédett az üzlethez.
 
@@ -100,7 +100,7 @@ Amikor bármelyik lapon megtekinti a dokumentumokat, az **Állapot** mező segí
 - **Teljesem kiszállított** – Az átmozgatási rendelésnek minden sora és teljes sormennyisége a kimenő raktár által szállítottként feladva.
 - **Folyamatban** – Ez az állapot tájékoztatja az eszköz felhasználóit, hogy a dokumentummal egy másik felhasználó aktívan dolgozik.
 - **Szüneteltetve** – Ez az állapot azt követően jelenik meg, hogy a **Szüneteltetés kérelmezve** ki van választva fogadási folyamat ideiglenes leállításához.
-- **Feldolgozás a központban** – Ezt a dokumentumot a Commerce központ (HQ) modulból átadták a pénztárba, de még nem lett sikeresen feladva a Commerce központ (HQ) modulba. A dokumentum az aszinkron dokumentumfeladási folyamaton megy keresztül. Miután sikeresen feladta a dokumentumot a Commerce központ (HQ) modulba állapota a **Teljesen bevételezve** vagy **Részben bevételezve** kell legyen.
+- **Feldolgozás a központban**– Ezt a dokumentumot a Commerce központ (HQ) modulból átadták a pénztárba, de még nem lett sikeresen feladva a Commerce központ (HQ) modulba. A dokumentum az aszinkron dokumentumfeladási folyamaton megy keresztül. Miután sikeresen feladta a dokumentumot a Commerce központ (HQ) modulba állapota a **Teljesen bevételezve** vagy **Részben bevételezve** kell legyen.
 - **A feldolgozás nem sikerült** – A dokumentumot a Commerce központ (HQ) modulba adták fel, és elutasították. A **Részletek** ablaktábla a feladási hiba okát jeleníti meg. Az adathibák javítása érdekében szerkeszteni kell a dokumentumot, majd újra el kell küldeni a Commerce központ (HQ) modulba feldolgozásra.
 
 Amikor kiválaszt egy bizonylatsort a listából, megjelenik egy **Részletek** ablaktábla. Ez a ablaktábla a dokumentum további adatait jeleníti meg, mint például a szállítási és a dátumadatokat. Egy folyamatjelző sáv azt mutatja, hogy hány cikket kell még feldolgozni. Ha a dokumentumot nem sikerült feldolgozni a Commerce központ (HQ) modulban, a **Részletek** ablaktábla megjeleníti a hibához kapcsolódó hibaüzeneteket.
@@ -125,7 +125,7 @@ Az ellenőrzések a bizonylatsor bevételezési folyamata során történnek meg
 
 A Commerce 10.0.12-es verziójában egy olyan funkció került hozzáadásra, amellyel a pénztárfelhasználók lezárhatják vagy törölhetik a fennmaradó mennyiségeket a kimenő rendelési szállítás során, ha a kimenő raktár megállapítja, hogy a kért teljes mennyiséget nem lehet szállítani. A mennyiségeket később is le lehet zárni vagy törölni. A funkció használatához a vállalatot be kell állítani, hogy engedélyezze az átmozgatási rendelések alulteljesítését. Ezenkívül az átmozgatási rendelési sorhoz meg kell adni egy alulteljesítési százalékot is.
 
-Ha azt szeretné, hogy a vállalat engedélyezze az átmozgatási rendelések alulszállítását, a Commerce központ (HQ) alkalmazásban nyissa meg a **Készletkezelés \> Beállítás \> Készlet- és raktárkezelési paraméterek** pontot. A **Készlet- és raktárkezelési paraméterek** oldalon az **Átmozgatási rendelések** lapon kapcsolja be az **Alulszállítás elfogadása** paramétert. Ezt követően futtassa az **1070** -es felosztási ütemezési feladatot, és szinkronizálja a paraméter-módosításokat az üzlet csatornájára.
+Ha azt szeretné, hogy a vállalat engedélyezze az átmozgatási rendelések alulszállítását, a Commerce központ (HQ) alkalmazásban nyissa meg a **Készletkezelés \> Beállítás \> Készlet- és raktárkezelési paraméterek** pontot. A **Készlet- és raktárkezelési paraméterek** oldalon az **Átmozgatási rendelések** lapon kapcsolja be az **Alulszállítás elfogadása** paramétert. Ezt követően futtassa az **1070**-es felosztási ütemezési feladatot, és szinkronizálja a paraméter-módosításokat az üzlet csatornájára.
 
 Az átmozgatási rendelés soraihoz tartozó alulszállítási százalékok a Commerce-központ termékekkonfigurációjának részeként előre is megadhatók. Alternatív megoldásként a Commerce központ (HQ) alkalmazáson keresztül egy adott átmozgatási rendelés sorában megadhatók vagy felülírhatók.
 
@@ -184,7 +184,7 @@ A kimenő átmozgatási rendelés sorainak megadása után a **Mentés** parancs
 
 Ha a dokumentum helyben lett mentve, az a **Vázlatok** helyen található a **Bejövő művelet** dokumentumlistában. Amikor egy dokumentum **Vázlat** állapotú, szerkesztéshez válassza a **Szerkesztés** parancsot. A sorokat igény szerint frissítheti, hozzáadhatja vagy törölheti. A **Piszkozatok** lapon a **Törlés** gombra kattintva a teljes dokumentumot is törölheti, amíg az **Vázlat** állapotban van.
 
-Miután sikeresen elküldte a vázlatdokumentumot a Commerce központ (HQ) modulba, az az **Aktív** lapon jelenik meg, és állapota **Kérelmezve** . Ezen a ponton csak a kimenő raktár felhasználói módosíthatják a dokumentumot a Pénztár alkalmazás **Kimenő művelet** elemének kiválasztásával. A bejövő raktár felhasználói megtekinthetik az átmozgatási rendelést az **Aktív** lapon a **Bejövő művelet** dokumentumlistában de nem szerkeszthetik vagy törölhetik. A szerkesztési zárolás biztosítja, hogy nem fordulnak elő ütközések, mert a bejövő kérelmező éppen akkor módosítja az átmozgatási rendelést, amikor a kimenő szállító aktívan kitárolja és szállítja a rendelést. Ha az átmozgatási rendelés elküldése után a bejövő üzletből vagy raktárból változtatások szükségesek, a kimenő szállítmányozóval kell felvenni a kapcsolatot, és kérni tőle a változtatásokat.
+Miután sikeresen elküldte a vázlatdokumentumot a Commerce központ (HQ) modulba, az az **Aktív** lapon jelenik meg, és állapota **Kérelmezve**. Ezen a ponton csak a kimenő raktár felhasználói módosíthatják a dokumentumot a Pénztár alkalmazás **Kimenő művelet** elemének kiválasztásával. A bejövő raktár felhasználói megtekinthetik az átmozgatási rendelést az **Aktív** lapon a **Bejövő művelet** dokumentumlistában de nem szerkeszthetik vagy törölhetik. A szerkesztési zárolás biztosítja, hogy nem fordulnak elő ütközések, mert a bejövő kérelmező éppen akkor módosítja az átmozgatási rendelést, amikor a kimenő szállító aktívan kitárolja és szállítja a rendelést. Ha az átmozgatási rendelés elküldése után a bejövő üzletből vagy raktárból változtatások szükségesek, a kimenő szállítmányozóval kell felvenni a kapcsolatot, és kérni tőle a változtatásokat.
 
 Miután a dokumentum a **Kérelmezett** állapotú, készen áll a teljesítési feldolgozására a kimenő raktár részéről. Mivel a szállítmány feldolgozása a kimenő művelet alapján történik, az átmozgatási rendelési dokumentumok állapota **Kérelmezett** állapotból **Teljesen szállítva** vagy **részben szállítva** értékre módosul. Miután a dokumentumok **Teljesen kiszállított** vagy **Részben kiszállított** állapotban vannak, a bejövő üzlet vagy a raktár a bejövő művelet bevételezési folyamata alapján is feladhatja a bevételezéseket azokkal szemben.
 

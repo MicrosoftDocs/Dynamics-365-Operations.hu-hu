@@ -19,11 +19,11 @@ ms.author: gmohanv
 ms.search.validFrom: 2019-10-01
 ms.dyn365.ops.version: Release 10.0.5
 ms.openlocfilehash: 3fc88bc5a5868dce7c0539bf3f0ddc5b751e7b75
-ms.sourcegitcommit: 83ec80382bfeb693d5c5949b6f65296bd50eed12
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "3974006"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412884"
 ---
 # <a name="manage-ratings-and-reviews"></a>Minősítések és értékelések kezelése
 
@@ -107,14 +107,14 @@ A moderátorok letölthetik a Power BI-sablont, így megtekinthetik az trendeket
 A Commerce webhelykészítőben az értékelések és vélemények trendjeinek megtekintéséhez az alábbi lépéseket hajtsa végre.
 
 1. Nyissa meg a **Kezdőlap \> Értékelések \> Jelentéskészítés** elemet.
-1. A sablon letöltéséhez válassza ki a **PowerBI-sablont** .
+1. A sablon letöltéséhez válassza ki a **PowerBI-sablont**.
 
     ![Töltse le a Power BI sablont](media/rnr-moderation-reports.png) 
 
 1. Nyissa meg a letöltött sablont a Power BI alkalmazás segítségével. Zárja be a megjelenő **Webtartalomhoz való hozzáférés** párbeszédpanelt, majd zárja be a megjelenő „Frissítési” hibaüzenetet.
-1. Menjen a **Kezdőlapra** , válassza a **Lekérdezések szerkesztése** lehetőséget, majd válassza az **Adatforrás-beállítások** elemet.
+1. Menjen a **Kezdőlapra**, válassza a **Lekérdezések szerkesztése** lehetőséget, majd válassza az **Adatforrás-beállítások** elemet.
 1. Az **Adatforrás beállításai** párbeszédpanelen jelölje be a **Forrás módosítása** lehetőséget.
-1. Az **URL-cím** mezőbe írja be az előző eljárásban letöltött értékelés adatainak elérési útját (például **c:\\reviews\\ReviewsData.csv** ).
+1. Az **URL-cím** mezőbe írja be az előző eljárásban letöltött értékelés adatainak elérési útját (például **c:\\reviews\\ReviewsData.csv**).
 
     ![A Vesszővel tagolt értékek párbeszédpanel URL-mezője](media/rnr-powerbi-datasource-settings.png) 
 

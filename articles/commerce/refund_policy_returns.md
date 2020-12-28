@@ -18,11 +18,11 @@ ms.author: rapraj
 ms.search.validFrom: 2020-01-21
 ms.dyn365.ops.version: Retail 10.0.9 update
 ms.openlocfilehash: c2a9325f09ffe43c3436b7e0ca2ab511e1f57f83
-ms.sourcegitcommit: 02640a0f63daa9e509146641824ed623c4d69c7f
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "3265583"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412962"
 ---
 # <a name="create-and-update-a-returns-and-refunds-policy-for-a-channel"></a>Visszáruk és visszatérítések irányelvének létrehozása és frissítése a csatornához
 
@@ -82,7 +82,7 @@ Hajtsa végre a következő lépéseket a kiskereskedelmi üzlet vagy online kis
 Kövesse az alábbi lépések egyikét, ha a pénztárban engedélyezett visszárueszköz-típusokat szeretné megtekinteni.
 
 1. Jelentkezzen be a pénztárba pénztárosként vagy vezetőként.
-2. A **Műszak és a fiók**területen válassza a **Napló megjelenítése** lehetőséget.
+2. A **Műszak és a fiók** területen válassza a **Napló megjelenítése** lehetőséget.
 3. Válassza ki azt a tranzakciót, amely a visszáru része. 
 4. Válassza ki a visszatérítéshez használandó cikkeket, és válassza ki a fizetési módot.  
 - Ha a kiválasztott fizetési mód szerepel a visszárueszköz-típusok engedélyezett listáján, a pénztáros elvégezheti a tranzakciót.

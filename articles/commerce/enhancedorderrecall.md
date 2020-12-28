@@ -15,18 +15,18 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 41944fb7819b5527f6bc023a60acd9450d9e43c2
-ms.sourcegitcommit: 25909c6ad3616e4f75a2fe006057dda18d7cc856
+ms.openlocfilehash: 42b11ff16757d633b868dfdf248341193a44378f
+ms.sourcegitcommit: 9c05d48f6e03532aa711e1d89d0b2981e9d37200
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "3974838"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4665298"
 ---
 # <a name="recall-order-operation-in-pos"></a>Rendelési művelet visszahívása a pénztárban
 
 [!include [banner](includes/banner.md)]
 
-A Commerce pénztárban (POS) elérhető rendelés-visszahívási művelet frissített rendeléskeresési és -szűrési funkciókat, valamint rendeléshez kapcsolódó információkat nyújt. Ez a funkció a 10.0.15-ös vagy újabb verziójú Commerce modulban elérhető.
+A Commerce pénztárban (POS) elérhető **Rendelés-visszahívási** művelet frissített rendeléskeresési és -szűrési funkciókat, valamint rendeléshez kapcsolódó információkat nyújt. Ez a funkció a 10.0.15-ös vagy újabb verziójú Commerce modulban elérhető.
 
 A funkció engedélyezéséhez kapcsolja be a **Továbbfejlesztett rendelés-visszahívási művelet a pénztárban** funkciót a Commerce központban található **Funkciókezelés** munkaterületen. Miután engedélyezte a funkciót, esetleg frissítse a [képernyő-elrendezéseket](pos-screen-layouts.md) a pénztárban a módosított képességek előnyeinek kihasználása érdekében.
 

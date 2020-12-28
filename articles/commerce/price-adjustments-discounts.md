@@ -3,7 +3,7 @@ title: Ármódosítások és engedmények
 description: Ez a cikk ármódosításokkal és engedményekkel kapcsolatban tartalmaz tájékoztatást a Dynamics 365 Commerce rendszerben.
 author: scott-tucker
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: dfaacfa7681258e3b2273083017c0c398d566651
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 0c2adaa5cd935d5b593bfbb3215d3466fcafab7b
+ms.sourcegitcommit: 1d74636bf9db5fb33e998322899504b709b4f89f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3022828"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "4584315"
 ---
 # <a name="price-adjustments-and-discounts"></a>Ármódosítások és engedmények
 
@@ -41,11 +41,13 @@ Az ármódosítások és engedmények alkalmazhatók termékekre, változatokra 
 
 ## <a name="types-of-discounts"></a>Kedvezmények típusai
 
-Négyféle engedmény érhető el:
+Számos típusú engedmény érhető el:
 
 - **Egyszerű engedmény** – egy adott százalék vagy összeg.
 - **Mennyiségi engedmény** – A két vagy több termék megvásárlásakor alkalmazott engedmény.
 - **Kombinációs engedmény** – A kombinációs engedmény akkor biztosít engedményt, ha a termékek meghatározott kombinációját vásárolják meg.
 - **Küszöbérték szerinti engedmény** – Olyan engedmény, amely esetében a tranzakció összege több mint egy meghatározott mennyiség.
+- **Fizetőeszköz-alapú engedmény** – Olyan engedmény, amely akkor kerül alkalmazásra, ha a tranzakció összege meghaladja a megadott összeget, és egy adott fizetési típus (például készpénz, hitel vagy betéti kártya) kerül a fizetéshez.
+- **Szállítási engedmény** – Olyan engedmény, amely akkor kerül alkalmazásra, ha a tranzakció összege meghaladja a megadott összeget, és a rendelésen egy adott szállítási mód (például kétnapos szállítás vagy egynapos szállítás) kerül alkalmazásra.
 
 Az ármódosításokat és az engedményeket konkrét árcsoportokhoz is hozzárendelheti. Az árcsoportok ezután társíthatók csatornákhoz, katalógusokhoz, fiókokhoz és hűségprogramokhoz.

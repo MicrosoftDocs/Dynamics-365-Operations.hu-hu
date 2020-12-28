@@ -17,17 +17,17 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 0b8bf49a8eb78d0557ef105b40dd4cb5f0d24ce4
-ms.sourcegitcommit: 83ec80382bfeb693d5c5949b6f65296bd50eed12
+ms.openlocfilehash: 75edc1b683c4ea6c2bac8e509e6f6da8c56c5e6a
+ms.sourcegitcommit: 9c05d48f6e03532aa711e1d89d0b2981e9d37200
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "3973933"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4665247"
 ---
 # <a name="user-defined-certificate-profiles-for-retail-stores"></a>A kiskereskedelmi üzletek felhasználó által megadott tanúsítványprofiljai
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
+
 
 ## <a name="overview"></a>Áttekintés
 
@@ -61,7 +61,7 @@ A következő eljárás a tanúsítványprofilok beállítását mutatja be. Mie
 
 1. A **Funkciókezelés** munkaterületen kapcsolja be a **Felhasználó által definiált tanúsítványprofilok kiskereskedelmi üzleteket számára** funkciót.
 2. Lépjen a **Rendszerfelügyelet \> Beállítás \> Tanúsítványprofilok** elemre.
-3. Hozzon létre egy rekordot, és töltse ki a **Tanúsítványprofil** , **Név** és **Leírás** mezőt.
+3. Hozzon létre egy rekordot, és töltse ki a **Tanúsítványprofil**, **Név** és **Leírás** mezőt.
 
     > [!NOTE]
     > A tanúsítványprofil a tanúsítvány egyedi azonosítója az összes vállalatnál és Commerce egységnél.
@@ -74,23 +74,23 @@ A következő eljárás a tanúsítványprofilok beállítását mutatja be. Mie
 Amikor a tanúsítványprofil-sorokhoz a **Beállítások** elemet kiválasztja, megjelenik a **Tanúsítványprofil beállításai** lap. Ezen az oldalon megadhatja, hogy mely tanúsítványok használhatók az aktuális tanúsítványprofil Commerce csatornákon való behívásakor. Megadhatja azt a rendelést is, amelyben a tanúsítványokat keresni kell.
 
 > [!NOTE]
-> A **Prioritás** mező beállítása automatikus. Az **1** érték jelenti a legmagasabb prioritást. Amikor új sort ad hozzá a **Tanúsítványprofilok beállításai** lapon, prioritásként egy olyan számot kap, amely eggyel nagyobb, mint az előző sor prioritása. Egy adott sor prioritásának módosításához jelölje ki a sort, és a prioritás növeléséhez válassza a **Mozgatás felfelé** , csökkentéséhez a **Mozgatás felfelé** lehetőséget.
+> A **Prioritás** mező beállítása automatikus. Az **1** érték jelenti a legmagasabb prioritást. Amikor új sort ad hozzá a **Tanúsítványprofilok beállításai** lapon, prioritásként egy olyan számot kap, amely eggyel nagyobb, mint az előző sor prioritása. Egy adott sor prioritásának módosításához jelölje ki a sort, és a prioritás növeléséhez válassza a **Mozgatás felfelé**, csökkentéséhez a **Mozgatás felfelé** lehetőséget.
 
 Ha új sort ad hozzá a **Tanúsítványprofil beállításai** laphoz, következő mezőket kell megadnia:
 
-- **Hely típusa** – Válassza ki azt a helyet, ahol a tanúsítványt tárolni kívánja. A mező két lehetséges értéket kaphat: **Helyi tanúsítvány** és **Key Vault** .
+- **Hely típusa** – Válassza ki azt a helyet, ahol a tanúsítványt tárolni kívánja. A mező két lehetséges értéket kaphat: **Helyi tanúsítvány** és **Key Vault**.
 - **Key Vault tanúsítvány** – A mezőt akkor kell megadni, ha a **Hely típusa** mezőt a **Key Vault** értékre állítja. Segítségével megadhatja a Key Vault tanúsítvány titkos kódját.
 
     > [!NOTE]
     > Mielőtt Key Vault tanúsítványt használna tanúsítványprofilokban, feltétlenül töltsön fel egy tanúsítványt a kulcstartó tárolójába, és kövesse az [Azure Key Vault ügyfél beállítása](https://docs.microsoft.com/dynamics365/finance/localizations/setting-up-azure-key-vault-client) utasításait.
 
-- **Üzlet neve** – Ez a mező nem kötelező, és csak akkor érhető el, ha a **Hely típusa** mező értéke **Helyi tanúsítvány** . Itt megadhat egy alapértelmezett üzletnevet, amelyet a helyi tanúsítványok keresésénél használni kell.
-- **Üzlet helye** – Ez a mező nem kötelező, és csak akkor érhető el, ha a **Hely típusa** mező értéke **Helyi tanúsítvány** . Itt megadhat egy alapértelmezett üzlethelyet, amelyet a helyi tanúsítványok keresésénél lehet használni.
+- **Üzlet neve** – Ez a mező nem kötelező, és csak akkor érhető el, ha a **Hely típusa** mező értéke **Helyi tanúsítvány**. Itt megadhat egy alapértelmezett üzletnevet, amelyet a helyi tanúsítványok keresésénél használni kell.
+- **Üzlet helye** – Ez a mező nem kötelező, és csak akkor érhető el, ha a **Hely típusa** mező értéke **Helyi tanúsítvány**. Itt megadhat egy alapértelmezett üzlethelyet, amelyet a helyi tanúsítványok keresésénél lehet használni.
 
     > [!NOTE]
     > Az alapértelmezett üzletnév és üzlethely hozzáadása azért történik, hogy egyszerűbbé váljon a helyi tanúsítványok keresése a Commerce Runtime során. Az X509StoreProvider a mappák listáját tartalmazza, ahol a tanúsítványokat tárolják. Ha az alapértelmezett üzletnév és az alapértelmezett üzlethely nincs megadva, az X509StoreProvider a tanúsítványt a listán található többi mappában próbálja megtalálni.
 
-- **Ujjlenyomat** – Ez a mező nem kötelező, és csak akkor érhető el, ha a **Hely típusa** mező értéke **Helyi tanúsítvány** . Segítségével megadhatja a tanúsítvány ujjlenyomatát.
+- **Ujjlenyomat** – Ez a mező nem kötelező, és csak akkor érhető el, ha a **Hely típusa** mező értéke **Helyi tanúsítvány**. Segítségével megadhatja a tanúsítvány ujjlenyomatát.
 - **Megjegyzések** – Ez a mező nem kötelező; megjegyzések bevitelét teszi lehetővé a felhasználók számára.
 
 ### <a name="workflow-searching-certificates-in-the-commerce-runtime"></a>Munkafolyamat: tanúsítványok keresése a Commerce Runtime-ban
@@ -98,12 +98,12 @@ Ha új sort ad hozzá a **Tanúsítványprofil beállításai** laphoz, követke
 Itt található az az alapvető munkafolyamat, amely tanúsítvány keresésére szolgál, amikor tanúsítványprofilt hívnak meg a Commerce runtime-ban.
 
 1. A rendszer ellenőrzi, hogy a tanúsítványprofil rendelkezik-e vállalatspecifikus beállításokkal az aktuális jogi személy számára.
-1. A rendszer megpróbálja megkeresni a tanúsítványt a **Tanúsítványprofil beállításai** lap azon sorában, ahol a **Prioritás** mező értéke **1** .
+1. A rendszer megpróbálja megkeresni a tanúsítványt a **Tanúsítványprofil beállításai** lap azon sorában, ahol a **Prioritás** mező értéke **1**.
 
-    - Ha a **Hely típusa** mező értéke **Key Vault** , a **Key Vault tanúsítvány titkos kódja** mező értékét használja a rendszer a tanúsítvány kereséséhez a **Key vault paraméterek** oldalon. Ezt követően a tanúsítvány keresése a kulcstartóban folytatódik.
+    - Ha a **Hely típusa** mező értéke **Key Vault**, a **Key Vault tanúsítvány titkos kódja** mező értékét használja a rendszer a tanúsítvány kereséséhez a **Key vault paraméterek** oldalon. Ezt követően a tanúsítvány keresése a kulcstartóban folytatódik.
     - Ha a **Hely típusa** mező a **Helyi tanúsítvány** értékre van állítva, akkor az X509StoreProvider először az alapértelmezett üzletnévvel és az üzlethellyel keresi a tanúsítványt, ha ezek a paraméterek meg vannak adva. Ezt követően a keresés a mappalista összes többi mappájában folytatódik.
 
-1. Ha a tanúsítvány nem található, akkor a rendszer megismétli a folyamatot annál a sornál, ahol a **Prioritás** mező értéke **2** , és így tovább.
+1. Ha a tanúsítvány nem található, akkor a rendszer megismétli a folyamatot annál a sornál, ahol a **Prioritás** mező értéke **2**, és így tovább.
 
 > [!NOTE]
 > Ha a tanúsítványprofilnál nincs beállítva az aktuális jogi személy, vagy ha a tanúsítvány keresése nem járt sikerrel a **Tanúsítványprofil beállításai** lap egyik sorában sem, akkor a tanúsítvány nem található.

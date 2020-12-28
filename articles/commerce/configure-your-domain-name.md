@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: afc8c7fffbded82be32357bdeb30546afc8b0957
-ms.sourcegitcommit: adf196c51e2b6f532d99c177b4c6778cea8a2efc
+ms.openlocfilehash: ac1b0c8baaddd6ca62cc49657fff364df21c14f2
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "3533298"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517122"
 ---
 # <a name="configure-your-domain-name"></a>A tartománynév konfigurálása
 
@@ -35,7 +35,7 @@ Ez a témakör azt mutatja be, hogyan lehet konfigurálni a tartománynevet egy 
 
 ## <a name="add-domains-during-e-commerce-initialization"></a>Tartományok hozzáadása az e-kereskedelem inicializálásakor
 
-Ha e-kereskedelmi környezethez szeretné társítani a tartományokat, akkor az [Új e-commerce webhely telepítése](deploy-ecommerce-site.md) részben leírtaknak megfelelően végezze el az e-kereskedelem inicializálását. Inicializáláskor a program megkéri, hogy az e-kereskedelmi környezet létrehozásához szükséges adatokat adja meg. A **Támogatott állomásnevek** mezőbe vegye fel az összes olyan tartományt, amelyet ezzel a környezettel használni szándékozik. Több tartományt kell elkülöníteni pontosvesszővel. Ily módon a tartományok konfigurálása az összes szükséges e-kereskedelem összetevőben megtörténik, és a program készen áll arra, hogy a tartalomkézbesítési hálózatból (CDN) vagy webkiszolgálóról érkező forgalmat váltson át, és azt az e-kereskedelmi frontendre irányítja.
+Ha a Dynamics 365 Commerce e-kereskedelmi környezethez szeretné társítani a tartományokat, akkor az [Új e-kereskedelmi bérlő üzembe helyezése](deploy-ecommerce-site.md) részben leírtaknak megfelelően végezze el az e-kereskedelem inicializálását. Inicializáláskor a program megkéri, hogy az e-kereskedelmi környezet létrehozásához szükséges adatokat adja meg. A **Támogatott állomásnevek** mezőbe vegye fel az összes olyan tartományt, amelyet ezzel a környezettel használni szándékozik. Több tartományt kell elkülöníteni pontosvesszővel. Ily módon a tartományok konfigurálása az összes szükséges Kereskedelmi összetevőben megtörténik, és a program készen áll arra, hogy a tartalomkézbesítési hálózatból (CDN) vagy webkiszolgálóról érkező forgalmat váltson át, és azt az e-kereskedelmi frontendre irányítja.
 
 ## <a name="add-domains-after-e-commerce-initialization"></a>Tartományok hozzáadása az e-kereskedelem inicializálása után
 
@@ -43,15 +43,15 @@ Ha az e-kereskedelem inicializálását követően az e-kereskedelmi környezeth
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[Új e-commerce webhely telepítése](deploy-ecommerce-site.md)
+[Új e-kereskedelmi bérlő telepítése](deploy-ecommerce-site.md)
 
 [E-kereskedelmi webhely létrehozása](create-ecommerce-site.md)
 
-[Online webhely társítása csatornával](associate-site-online-store.md)
+[Dynamics 365 Commerce webhely társítása online csatornával](associate-site-online-store.md)
 
 [Robots.txt fájlok kezelése](manage-robots-txt-files.md)
 
-[URL-átirányítások feltöltése ömlesztett formában](upload-bulk-redirects.md)
+[URL-átirányítások tömeges feltöltése](upload-bulk-redirects.md)
 
 [B2C-bérlő beállítása a Commerce-ben](set-up-B2C-tenant.md)
 

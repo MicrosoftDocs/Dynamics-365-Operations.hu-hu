@@ -20,11 +20,11 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.openlocfilehash: 9abe493746719d2e229ef09c2eb5f436b91b2171
-ms.sourcegitcommit: 776758a0ff95c3c7398986095104d1d2b9814514
+ms.sourcegitcommit: 4c6d31f3ebd88212d3d1497a4bba9c64c5300444
 ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 10/24/2020
-ms.locfileid: "4107279"
+ms.locfileid: "4413009"
 ---
 # <a name="call-center-catalogs"></a>Hívásközpont-katalógusok
 
@@ -64,7 +64,7 @@ A **Forráskódok** FastTabon kattintson a **Hozzáadás** lehetőségre, és ad
 
 ## <a name="use-the-source-id-to-track-costs-and-response-rates"></a>A forrásazonosító használata a költségek és a válaszarány nyomon követésére
 
-A **forráskód-azonosító** meghatározásakor tetszés szerint hozzárendelheti az azonosítót egy **célpiac-azonosítóhoz**. A **Célpiac-azonosítót** a **Kiskereskedelem és kereskedelem** \> **Vevők** \> **Célpiac** pontban határozhatja meg. A célpiac a felhasználó által meghatározott szegmenshez tartozó vevők és/vagy potenciális vevők listája. A vevő vagy a potenciális vevő adatainak hozzákapcsolása a forráskód-azonosítóhoz lehetővé teszi a katalógus címzettjeinek jobb átláthatóságát. Ha egy vevő hozzá van kapcsolva egy célpiachoz, a célpiac pedig hozzá van kapcsolva egy aktív forráskód-azonosítóhoz/katalógushoz, a hívásközpont felhasználói láthatják, hogy a vevő milyen katalógusokat kapott, ha kiválasztják a **Forráskódok** menüpontot az **Ügyfélszolgálat** oldalon található **Vevők** menülapon. A rendelésbevitel során a hívásközpont felhasználói a vevő számára küldött konkrét katalógusokat is láthatják a rendelésbevitel fejlécében található **Forrás** legördülő listában. Ha módosítják a szűrőt **Összesről** **Megcélzottra** , a felhasználók láthatják a vevő számára küldött aktív katalógusokat. Ez akkor hasznos, ha a vevő megfeledkezett a katalógusról, nem találja vagy nem tudja elolvasni a katalóguskódot, amikor betelefonál értékesítési rendelés leadása céljából.
+A **forráskód-azonosító** meghatározásakor tetszés szerint hozzárendelheti az azonosítót egy **célpiac-azonosítóhoz**. A **Célpiac-azonosítót** a **Kiskereskedelem és kereskedelem** \> **Vevők** \> **Célpiac** pontban határozhatja meg. A célpiac a felhasználó által meghatározott szegmenshez tartozó vevők és/vagy potenciális vevők listája. A vevő vagy a potenciális vevő adatainak hozzákapcsolása a forráskód-azonosítóhoz lehetővé teszi a katalógus címzettjeinek jobb átláthatóságát. Ha egy vevő hozzá van kapcsolva egy célpiachoz, a célpiac pedig hozzá van kapcsolva egy aktív forráskód-azonosítóhoz/katalógushoz, a hívásközpont felhasználói láthatják, hogy a vevő milyen katalógusokat kapott, ha kiválasztják a **Forráskódok** menüpontot az **Ügyfélszolgálat** oldalon található **Vevők** menülapon. A rendelésbevitel során a hívásközpont felhasználói a vevő számára küldött konkrét katalógusokat is láthatják a rendelésbevitel fejlécében található **Forrás** legördülő listában. Ha módosítják a szűrőt **Összesről** **Megcélzottra**, a felhasználók láthatják a vevő számára küldött aktív katalógusokat. Ez akkor hasznos, ha a vevő megfeledkezett a katalógusról, nem találja vagy nem tudja elolvasni a katalóguskódot, amikor betelefonál értékesítési rendelés leadása céljából.
 
 Egy katalógushoz több forráskód-azonosítót is hozzá lehet kapcsolni. Ez gyakran szükséges, ha egy vállalat különböző szegmensek szerint szeretné nyomon követni a válaszarányt. A vállalat egyedi katalóguskódot rendel hozzá a különböző vevőszegmensekhez, amely lehetővé teszi, hogy a válaszarányt nyomon kövessék egészen a szegmens szintjéig egy adott katalóguseseményen belül.
 
@@ -100,4 +100,4 @@ A **Katalógusok** lapon lehetősége van a **Fizetési ütemezés** és az **In
 
 ## <a name="additional-notes"></a>További megjegyzések
 
-Jelenleg ha egy forráskód-azonosítót alkalmaznak egy értékesítési rendelésre a hívásközpontban, arra használják, hogy katalógusspecifikus árak, promóciók, forgatókönyvek és értéknövelő/párhuzamosan értékesített cikkek hajtóereje legyen. A rendszer nem tiltja és nem akadályozza meg a katalógusban nem szereplő termékek értékesítési rendelés során történő rendelését. Ha egy katalógusban nem szereplő cikket rendelnek, a rendszer először a hívásközponti csatornában meghatározott **Árcsoportot** használja ( **Kiskereskedelem és kereskedelem** \> **Csatornák** \> **Hívásközpontok** \> **Összes hívásközpont** ) a cikk árához vagy a promóciókhoz. Ha nem talál konkrét árat a csatornában, a termék alap eladási árát használja.
+Jelenleg ha egy forráskód-azonosítót alkalmaznak egy értékesítési rendelésre a hívásközpontban, arra használják, hogy katalógusspecifikus árak, promóciók, forgatókönyvek és értéknövelő/párhuzamosan értékesített cikkek hajtóereje legyen. A rendszer nem tiltja és nem akadályozza meg a katalógusban nem szereplő termékek értékesítési rendelés során történő rendelését. Ha egy katalógusban nem szereplő cikket rendelnek, a rendszer először a hívásközponti csatornában meghatározott **Árcsoportot** használja (**Kiskereskedelem és kereskedelem** \> **Csatornák** \> **Hívásközpontok** \> **Összes hívásközpont**) a cikk árához vagy a promóciókhoz. Ha nem talál konkrét árat a csatornában, a termék alap eladási árát használja.

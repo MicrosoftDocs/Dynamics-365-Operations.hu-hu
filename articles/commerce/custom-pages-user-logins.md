@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 0b54bf6234dcb87c84b21259c30ca5c321869adf
-ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
+ms.openlocfilehash: 5d9f2febc912b35897b063019146d219cadea1fa
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3817306"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517232"
 ---
 # <a name="set-up-custom-pages-for-user-sign-ins"></a>Felhasználói bejelentkezéshez használt egyéni oldalak beállítása
 
@@ -195,17 +195,17 @@ A global.json fájl frissítése és a módosítások közzététele után az ú
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[A tartománynév konfigurálása](configure-your-domain-name.md)
+[Tartománynév konfigurálása](configure-your-domain-name.md)
 
-[Új e-commerce webhely telepítése](deploy-ecommerce-site.md)
+[Új e-kereskedelmi bérlő telepítése](deploy-ecommerce-site.md)
 
 [E-kereskedelmi webhely létrehozása](create-ecommerce-site.md)
 
-[Online webhely társítása csatornával](associate-site-online-store.md)
+[Dynamics 365 Commerce webhely társítása online csatornával](associate-site-online-store.md)
 
 [Robots.txt fájlok kezelése](manage-robots-txt-files.md)
 
-[URL-átirányítások feltöltése ömlesztett formában](upload-bulk-redirects.md)
+[URL-átirányítások tömeges feltöltése](upload-bulk-redirects.md)
 
 [B2C-bérlő beállítása a Commerce-ben](set-up-B2C-tenant.md)
 

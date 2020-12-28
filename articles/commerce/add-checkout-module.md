@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 8439b88ccda3f72e5a9b918c6c89bd406599b516
-ms.sourcegitcommit: 97ceb24f191161ca601e0889a539df665834ac3b
+ms.openlocfilehash: 28d58caba71ea98ccf163e756e879587aa254bb3
+ms.sourcegitcommit: 12d271bb26c7490e7525d9b4bbf125cdc39fef43
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3818226"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "4413020"
 ---
 # <a name="checkout-module"></a>Fizetésmodul
 
@@ -104,7 +104,7 @@ A fizetésmodul új oldalra való felvételéhez és a kötelező tulajdonságok
 1. A **Modul hozzáadása** párbeszédpanelen válassza ki a **Szállítási cím**, **Szállítási lehetőségek**, **Pénztár rész tárolója** és a **Kapcsolattartási adatok** modulokat, majd kattintson az **OK** gombra.
 1. Az **Fizetési szakasz tárolója** modulban válassza a három pont (**…**) gombot, majd válassza az **Modul hozzáadása** elemet.
 1. A **Modul hozzáadása** párbeszédpanelen válassza az **Ajándékkártya** **Hűség** és **Fizetés** modulokat majd kattintson az **OK** gombra. Így biztosíthatja, hogy az összes fizetési mód együtt jelenjen meg egy szakaszban.
-1. A **Feltételek és kikötések**helyen adja meg a **Fizetési feltételek és kikötések** modult, ha ez szükséges. A modul tulajdonságai ablakban adja meg a szerkessze meg a feltételek és kikötések szövegét szükséges esetben.
+1. A **Feltételek és kikötések** helyen adja meg a **Fizetési feltételek és kikötések** modult, ha ez szükséges. A modul tulajdonságai ablakban adja meg a szerkessze meg a feltételek és kikötések szövegét szükséges esetben.
 1. Válassza a **Mentés** lehetőséget, majd a töredék előnézetének megtekintéséhez az **Előnézet** elemet. Előfordulhat, hogy egyes modulok nem jelennek meg az előnézetben, mert nem rendelkeznek kosárkontextussal.
 1. Válassza a **Szerkesztés befejezése** parancsot a töredék ellenőrzéséhez, majd a **Közzététel** elemet a közzétételhez.
 1. Hozzon létre egy olyan sablont, amely az új fizetési töredéket használja.
@@ -121,6 +121,8 @@ A fizetésmodul új oldalra való felvételéhez és a kötelező tulajdonságok
 [Szállítási cím modul](ship-address-module.md)
 
 [Szállítási lehetőségek modul](delivery-options-module.md)
+
+[Átvételi információk modul](pickup-info-module.md)
 
 [Rendelési részletek modul](order-confirmation-module.md)
 

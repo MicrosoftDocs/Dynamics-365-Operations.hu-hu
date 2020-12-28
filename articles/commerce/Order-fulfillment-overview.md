@@ -18,11 +18,11 @@ ms.author: rubendel
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
 ms.openlocfilehash: 68132a78921e0a38c61c85bcc2b89dca3c25b04e
-ms.sourcegitcommit: 776758a0ff95c3c7398986095104d1d2b9814514
+ms.sourcegitcommit: 4c6d31f3ebd88212d3d1497a4bba9c64c5300444
 ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 10/24/2020
-ms.locfileid: "4107207"
+ms.locfileid: "4413011"
 ---
 # <a name="store-order-fulfillment"></a>Rendelésteljesítés az üzletben
 
@@ -64,7 +64,7 @@ Ha több sor van bejelölve, a rendelési sor részletei úszó menü csak azt j
 
 ## <a name="pending-order-lines"></a>Függő rendelési sorok
 
-Az összesített rendelésteljesítés magában foglalja a lehetőséget a rendelések manuális elfogadására. Alapértelmezés szerint az üzletben teljesítendő rendeléseinek már el vannak fogadva. Azonban, ha az üzleti folyamatok azt határozzák meg, hogy az üzlet szintjén a dolgozónak el kell fogadnia a rendeléseket, a manuális elfogadás bekapcsolható a kiskereskedelmi üzlet szintjén. A rendelés elfogadásának engedélyezéséhez ugorjon ide: **Retail és Commerce** \> **Csatornák** \> **Áruházak** \> **Minden kiskereskedelmi üzlet**. Nyissa meg a kívánt üzletet az **Általános** lapon, keresse meg a **Rendelés teljesítése** alfejlécet. A fejléc tartalmaz egy **Manuális elfogadás** beállítást, amelynek az értéke alapértelmezés szerint **Nem**. Ha a beállítás **Igen** , és a módosításokat a csatorna-adatbázisba szinkronizálja, a rendeléssorok átmehetnek az elfogadási folyamaton.
+Az összesített rendelésteljesítés magában foglalja a lehetőséget a rendelések manuális elfogadására. Alapértelmezés szerint az üzletben teljesítendő rendeléseinek már el vannak fogadva. Azonban, ha az üzleti folyamatok azt határozzák meg, hogy az üzlet szintjén a dolgozónak el kell fogadnia a rendeléseket, a manuális elfogadás bekapcsolható a kiskereskedelmi üzlet szintjén. A rendelés elfogadásának engedélyezéséhez ugorjon ide: **Retail és Commerce** \> **Csatornák** \> **Áruházak** \> **Minden kiskereskedelmi üzlet**. Nyissa meg a kívánt üzletet az **Általános** lapon, keresse meg a **Rendelés teljesítése** alfejlécet. A fejléc tartalmaz egy **Manuális elfogadás** beállítást, amelynek az értéke alapértelmezés szerint **Nem**. Ha a beállítás **Igen**, és a módosításokat a csatorna-adatbázisba szinkronizálja, a rendeléssorok átmehetnek az elfogadási folyamaton.
 
 A **Rendelés elfogadásának engedélyezése** engedéllyel rendelkező dolgozók megnyithatják a rendelésteljesítést, és kiválaszthatják a sorokat elfogadásra. Miután sor került a sorok elfogadására, az állapotuk megváltozik: **Függő** helyett **Elfogadott** lesz, és végrehajtható a rendelésteljesítési folyamat fennmaradó része. Ha a **Manuális elfogadás** be van kapcsolva, a rendelések nem dolgozhatók fel, amíg nincsenek elfogadva.
 
@@ -180,7 +180,7 @@ A sorokat vagy a részleges sorokat el lehet utasítani. Ez lehetővé teszi a t
 - **Eredmény állapot:** Elutasítva
 - **Eredmény háttérirodai állapot:** Nincs módosítás
 
-Az elutasított rendeléssorok megtekinthetők az **Értékesítési rendelés feldolgozása és lekérdezése** munkaterületen. Törölje a személy szűrőt a munkaterületen az összes elutasított rendeléssor megtekintéséhez az áruházakra nézve. Az **Elutasított rendeléssorok** lap a **Rendelések és kedvencek** szakaszban megjeleníti a rendeléssorok adatait. Ezenkívül a felhasználóknak rákattinthatnak az **Elutasított rendeléssorok** gombra az **Összegzés** szakaszban az értékesítési rendelés nézet megjelenítéséhez. Ez megjelenít minden olyan rendelést, amelynek van egy vagy több elutasított rendeléssora. Ha az elosztott rendeléskezelés (DOM) engedélyezve van, akkor az elutasított rendelések automatikusan hozzá lesznek rendelve a megfelelő üzletekhez teljesítésre, azonban ezek a rendeléssorok manuálisan is hozzárendelhetők. Ehhez válassza ki a sort, amelynél a **Teljesítési állapot** **Elutasítva** , és szükség szerint módosítsa a helyet/raktárt. Kattintson a **Sor frissítése** legördülő menüre, majd kattintson a **Teljesítési állapot visszaállítása** elemre a teljesítési állapot módosításához **Elutasítva** állapotról **Elfogadott** vagy **Függő** állapotra, a rendelésteljesítés beállításától függően. A teljesítési állapota visszaállítását követően az üzlet dolgozói megtekinthetik a rendeléssorokat a pénztárban.
+Az elutasított rendeléssorok megtekinthetők az **Értékesítési rendelés feldolgozása és lekérdezése** munkaterületen. Törölje a személy szűrőt a munkaterületen az összes elutasított rendeléssor megtekintéséhez az áruházakra nézve. Az **Elutasított rendeléssorok** lap a **Rendelések és kedvencek** szakaszban megjeleníti a rendeléssorok adatait. Ezenkívül a felhasználóknak rákattinthatnak az **Elutasított rendeléssorok** gombra az **Összegzés** szakaszban az értékesítési rendelés nézet megjelenítéséhez. Ez megjelenít minden olyan rendelést, amelynek van egy vagy több elutasított rendeléssora. Ha az elosztott rendeléskezelés (DOM) engedélyezve van, akkor az elutasított rendelések automatikusan hozzá lesznek rendelve a megfelelő üzletekhez teljesítésre, azonban ezek a rendeléssorok manuálisan is hozzárendelhetők. Ehhez válassza ki a sort, amelynél a **Teljesítési állapot** **Elutasítva**, és szükség szerint módosítsa a helyet/raktárt. Kattintson a **Sor frissítése** legördülő menüre, majd kattintson a **Teljesítési állapot visszaállítása** elemre a teljesítési állapot módosításához **Elutasítva** állapotról **Elfogadott** vagy **Függő** állapotra, a rendelésteljesítés beállításától függően. A teljesítési állapota visszaállítását követően az üzlet dolgozói megtekinthetik a rendeléssorokat a pénztárban.
 
 ## <a name="line-quantity-tracking"></a>Sormennyiség követése
 

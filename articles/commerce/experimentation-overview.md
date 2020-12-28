@@ -19,11 +19,11 @@ ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
 ms.openlocfilehash: 85eb7a661cc66c42699797cca4fa6820941de7c0
-ms.sourcegitcommit: 7592c2dec0428d56843ab395d2a52c89f77f99b5
+ms.sourcegitcommit: cd83f2bc0e52e13071ad306e07e4c255fc65cb03
 ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 10/22/2020
-ms.locfileid: "4097139"
+ms.locfileid: "4413001"
 ---
 # <a name="experimentation-in-dynamics-365-commerce"></a>Kísérletezés a Dynamics 365 Commerce szolgáltatásban
 A Dynamics 365 Commerce szolgáltatáson belüli kísérletezést az e-kereskedelmi oldalak hatékonyságával kapcsolatos hipotézisek igazolására, valamint adatokra alapozott döntések meghozatalára alkalmazhatja. A Commerce támogatja az oldalakon, modulokon és töredékeken végzendő A/B tesztelést, valamint lehetővé teszi a webhellyel összefüggésben javasolt változtatások hatásának felmérését.

@@ -18,11 +18,11 @@ ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.openlocfilehash: 8ca23dcf568cb0df6934f0d6201e4aafba5f9ba1
-ms.sourcegitcommit: f16db76c1c235dfa445b50614bcee9219782d6dc
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "3961634"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412942"
 ---
 # <a name="modify-an-existing-site-page"></a>Meglévő webhelyoldal módosítása
 
@@ -44,7 +44,7 @@ Ha a lap még nincs kivéve akkor a parancssávon válassza a **Szerkesztés** l
 
 A következő lépés a tényleges módosítások elvégzése. Gyakran a lap bal oldalon látható faszerkezetét kell használni a módosítani kívánt modul megtalálásához és kiválasztásához, majd a jobb oldali Tulajdonságok ablaktáblán végezheti el a szükséges módosításokat. 
 
-Előfordulhat azonban, hogy a változás néha modellek vagy töredékek hozzáadásával vagy eltávolításával jár. Egy töredék vagy egy modul hozzáadásához használja a lap faszerkezettét és keresse meg azt a bővítőhelyet, amelyhez hozzá szeretné adni a modult vagy a töredéket, majd válassza a három pont gombot ( **...** ) ahhoz a bővítőhelyhez. Megjelenik egy menü, amely modul vagy töredék hozzáadására szolgáló parancsokat tartalmazza. Egy modul vagy töredék eltávolításához keresse meg és válassza ki azt a lap fastruktúrájában, válassza ki a három pont gombot, majd válassza ki a modul vagy a töredék törlésére szolgáló parancsot.
+Előfordulhat azonban, hogy a változás néha modellek vagy töredékek hozzáadásával vagy eltávolításával jár. Egy töredék vagy egy modul hozzáadásához használja a lap faszerkezettét és keresse meg azt a bővítőhelyet, amelyhez hozzá szeretné adni a modult vagy a töredéket, majd válassza a három pont gombot (**...**) ahhoz a bővítőhelyhez. Megjelenik egy menü, amely modul vagy töredék hozzáadására szolgáló parancsokat tartalmazza. Egy modul vagy töredék eltávolításához keresse meg és válassza ki azt a lap fastruktúrájában, válassza ki a három pont gombot, majd válassza ki a modul vagy a töredék törlésére szolgáló parancsot.
 
 > [!TIP]
 > Azon modulok tulajdonságait is megtekintheti és szerkesztheti, amelyek láthatók a vizuális oldalkészítő előnézetben, ha közvetlenül kiválasztja.

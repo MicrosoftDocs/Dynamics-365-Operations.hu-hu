@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 4d3a423bf64900e547a23f2e5eeb90aa679ec5d1
-ms.sourcegitcommit: adf196c51e2b6f532d99c177b4c6778cea8a2efc
+ms.openlocfilehash: f87d29a8cffb70e4dea211cea7538e5e4c85295c
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "3533390"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517306"
 ---
 # <a name="enable-location-based-store-detection"></a>Helyalapú áruházészlelés engedélyezése
 
@@ -50,17 +50,17 @@ Ha be szeretné kapcsolni a helyalapú áruházészlelést a Commerce szolgálta
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[A tartománynév konfigurálása](configure-your-domain-name.md)
+[Tartománynév konfigurálása](configure-your-domain-name.md)
 
-[Új e-commerce webhely telepítése](deploy-ecommerce-site.md)
+[Új e-kereskedelmi bérlő telepítése](deploy-ecommerce-site.md)
 
 [E-kereskedelmi webhely létrehozása](create-ecommerce-site.md)
 
-[Online webhely társítása csatornával](associate-site-online-store.md)
+[Dynamics 365 Commerce webhely társítása online csatornával](associate-site-online-store.md)
 
 [Robots.txt fájlok kezelése](manage-robots-txt-files.md)
 
-[URL-átirányítások feltöltése ömlesztett formában](upload-bulk-redirects.md)
+[URL-átirányítások tömeges feltöltése](upload-bulk-redirects.md)
 
 [B2C-bérlő beállítása a Commerce-ben](set-up-B2C-tenant.md)
 

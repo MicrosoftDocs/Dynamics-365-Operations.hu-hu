@@ -15,11 +15,11 @@ ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
 ms.openlocfilehash: c42baed36c0163a6254cadd8e27f91fb4562d6c2
-ms.sourcegitcommit: ea335b4536342e496e8b61847b1ae6da3924f94c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "3821108"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412836"
 ---
 # <a name="learning-catalog-for-commerce-microsoft-partner-sales-and-marketing-roles-for-dynamics-365-commerce"></a>Commerce Microsoft partner Dynamics 365 Commerce szolgáltatással kapcsolatos értékesítési és marketing szerepköreinek képzési katalógusa
 

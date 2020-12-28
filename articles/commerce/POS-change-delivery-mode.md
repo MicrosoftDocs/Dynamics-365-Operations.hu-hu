@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2020-02-20
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 1e9f8d202fa81546a9f84af62824e6d8f620cf35
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: eaffe7821b60dd787a7d8b7533c1b8599033ba68
+ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3975097"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "4594137"
 ---
 # <a name="change-mode-of-delivery-in-pos"></a>Szállítási mód módosítása a pénztárban
 
@@ -36,8 +36,14 @@ A szállítási mód módosítása funkció a pénztári tranzakcióban egy vagy
 
 Ha további tájékoztatást szeretne arról, hogyan lehet hozzáadni egy műveletet a pénztári gombrács egy gombjához, tekintse meg a [Képernyő-elrendezések a pénztár (POS) számára](https://docs.microsoft.com/dynamics365/commerce/pos-screen-layouts) című cikket.
 
-Ha ez a funkció a pénztárban be van állítva, és a **Szállításimód módosítása** lehetőséget választja, akkor egy lista jelenik meg, amely lehetővé teszi, hogy kiválassza azoknak a tranzakcióknak a sorait, amelyekhez a szállítási módot módosítani szeretné. Egy vagy az összes is kiválaszthatja, illetve módosítás nélkül kiléphet. A korábban szállítmányként konfigurált értékesítési sorok azok a sorok a listában, amelyeket módosíthat. Ha módosítani kívánja a felvételi vagy a kiszállítási sorokat akkor az **Összes szállítása** vagy a **Kijelöltek szállítása** műveleteket kell használnia. Ha viszont a szállítmányként kijelölt sort egy felvételi vagy kiszállításra szeretné módosítani, akkor az **Összes felvétele** , a **Kijelöltek felvétele** , **Összes kiszállítása** vagy **Kijelöltek kiszállítása** műveleteket kell választania.
+Ha ez a funkció a pénztárban be van állítva, és a **Szállításimód módosítása** lehetőséget választja, akkor egy lista jelenik meg, amely lehetővé teszi, hogy kiválassza azoknak a tranzakcióknak a sorait, amelyekhez a szállítási módot módosítani szeretné. Egy vagy az összes is kiválaszthatja, illetve módosítás nélkül kiléphet. A korábban szállítmányként konfigurált értékesítési sorok azok a sorok a listában, amelyeket módosíthat. Ha módosítani kívánja a felvételi vagy a kiszállítási sorokat akkor az **Összes szállítása** vagy a **Kijelöltek szállítása** műveleteket kell használnia. Ha viszont a szállítmányként kijelölt sort egy felvételi vagy kiszállításra szeretné módosítani, akkor az **Összes felvétele**, a **Kijelöltek felvétele**, **Összes kiszállítása** vagy **Kijelöltek kiszállítása** műveleteket kell választania.
 
 Miután kiválasztotta a módosítani kívánt sorokat, kattintson a **Szállítási mód módosítása** lehetőségre, hogy lehetősége legyen a szállítási mód beállításainak kiválasztására. Ha több sort választott ki módosításra, akkor a pénztár csak a kiválasztott termékre vonatkozóan megengedettnek konfigurált szállítási módokat jeleníti meg. A szállítási módok beállítható meghatározott termékek és szállítási címek támogatásához. Ha egy olyan szállítási mód van, amely elfogadható egy termék és cím kombináció esetében, de egy másik kiválasztott termék-és címkombináció esetében nem elfogadható, akkor a szállítási mód nem érhető el. Előfordulhat, hogy egyenként kell kiválasztania a sorokat, és minden egyes sorhoz külön-külön kell módosítani a szállítási módot, ha ki szeretné választani egy olyan szállítási módot,amely egy másik termék által nem támogatott.  
 
-Miután kiválasztotta az új szállítási módot, megjelenik a tranzakció lap. Az új szállítási mód beállításainak áttekintéséhez válassza ki a tranzakció listán a **Szállítás** fület.   
+Miután kiválasztotta az új szállítási módot, megjelenik a tranzakció lap. Az új szállítási mód beállításainak áttekintéséhez válassza ki a tranzakció listán a **Szállítás** fület.
+
+## <a name="additional-resources"></a>További erőforrások
+
+[Hívásközponti rendelések létrehozása](tasks/create-call-center-orders.md)
+
+[Tranzakciós e-mailek testreszabása szállítási mód szerint](customize-email-delivery-mode.md)

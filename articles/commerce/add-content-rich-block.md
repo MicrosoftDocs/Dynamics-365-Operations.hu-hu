@@ -18,11 +18,11 @@ ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.openlocfilehash: c6527ad00e74fa105f3873036eb56557b98b05aa
-ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3817378"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412797"
 ---
 # <a name="text-block-module"></a>Szövegblokk modul
 
@@ -55,7 +55,7 @@ A következő kép egy kezdőoldalon használt szövegblokk modul egy példájá
 |-------------------|--------------------------------------------------|-------------|
 | Rich Text         | Rich Text                                        | Bekezdés szövege. A program néhány alapvető rich text képességet támogat, mint például a félkövér, az aláhúzott és a dőlt szöveg. |
 | Egyéni osztály neve | Az egymásra épülő stílusalapok (CSS)-osztály neve        | Annak az egyéni CSS osztálynak a neve, amely a fejlesztő számára biztosítja a modul formátumát. Az osztálynevet a témacsomagban kell megadni. |
-| Betűméret         | **Kis**, **közepes**, **Nagy**vagy **Nagyon nagy** | A tartalom betűmérete. |
+| Betűméret         | **Kis**, **közepes**, **Nagy** vagy **Nagyon nagy** | A tartalom betűmérete. |
 
 ## <a name="add-a-text-block-module-to-a-page"></a>A szövegblokkmodul hozzáadása a laphoz
 

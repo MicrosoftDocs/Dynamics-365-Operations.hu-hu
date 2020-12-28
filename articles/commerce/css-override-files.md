@@ -18,11 +18,11 @@ ms.author: niholman
 ms.search.validFrom: 2019-12-12
 ms.dyn365.ops.version: Release 10.0.8
 ms.openlocfilehash: 3ec43b16b1df07400cffe597378ad4035e4d07e0
-ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "3411247"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412865"
 ---
 # <a name="work-with-css-override-files"></a>A CSS felülíró fájljainak használata
 
@@ -70,7 +70,7 @@ A CSS felülírási fájl előzetes megtekintéséhez kövesse az alábbi lépé
 
 1. A bal oldali navigációs ablaktáblán válassza ki a **Terv** elemet, majd a **CSS felülírása** lapon, a **Rendelkezésre álló CSS felülírások** alatt keresse meg az előzetesként megtekinteni kívánt CSS-t.
 1. A CSS fájlnév mellett válassza ki a **Webhely előnézete** lehetőséget.
-1. A **Válasszon egy URL-t** párbeszédpanelen válassza ki annak a webhelynek az URL-címét, amelyre alkalmazni szeretné a felülírást, majd kattintson az **OK**gombra.
+1. A **Válasszon egy URL-t** párbeszédpanelen válassza ki annak a webhelynek az URL-címét, amelyre alkalmazni szeretné a felülírást, majd kattintson az **OK** gombra.
 1. Ha a kiválasztott URL-címnek több változata van, válassza ki a kívánt változatot a megjelenő **Előnézet változatai** párbeszédpanelen.
 
 Egy új böngésző fül vagy ablak nyílik meg, ahol érvényesítheti a stílusfelülírásokat a webhelyen. Az URL-címet megoszthatja más hitelesített Commerce-felhasználókkal véleményezés és visszajelzés céljából.

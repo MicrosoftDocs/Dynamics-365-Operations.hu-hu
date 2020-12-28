@@ -17,11 +17,11 @@ ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
 ms.openlocfilehash: 82cec9861b759037f40315fb2e6f36002a0ac059
-ms.sourcegitcommit: 80cbb7d22267aa6a0ae0568d0063fb95556958a5
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "3036809"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412928"
 ---
 # <a name="assign-task-lists-to-stores-or-employees"></a>Feladatlisták hozzárendelése áruházakhoz vagy alkalmazottakhoz
 
@@ -61,7 +61,7 @@ A kiskereskedőnek néha ismétlődő feladatai is vannak, például a „Csüt�
 1. Válassz a **Folyamat indítása** lehetőséget.
 1. A **Folyamat indítása** párbeszédpanelen az **Általános** lapon a **Folyamat neve** mezőbe írjon be egy nevet.
 1. Állítsa az **Ismétlődés** beállítást **Igen** értékre.
-1. Írjon be a napok számár az **Ismétlődés céldátumának eltolása napokban** mezőbe. Ha például a **4**értéket adja meg, akkor a céldátum az ismétlődés dátuma plusz négy nap.
+1. Írjon be a napok számár az **Ismétlődés céldátumának eltolása napokban** mezőbe. Ha például a **4** értéket adja meg, akkor a céldátum az ismétlődés dátuma plusz négy nap.
 1. A **Futtatás a háttérben** lapon válassz az **Ismétlődés** elemet.
 1. Az **Ismétlődés definiálása** párbeszédpanelen írja be a gyakorisági feltételeket, majd kattintson az **OK** gombra.
 

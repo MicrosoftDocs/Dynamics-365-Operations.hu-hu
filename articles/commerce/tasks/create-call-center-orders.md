@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: dce2fdd9d91c2bd867f0455573733aefb0796fa7
-ms.sourcegitcommit: 776758a0ff95c3c7398986095104d1d2b9814514
+ms.openlocfilehash: c875eaa85d9da997b75b296ad9ace99ae1e91798
+ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "4107352"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "4594236"
 ---
 # <a name="create-call-center-orders"></a>Hívásközponti rendelések létrehozása
 
@@ -55,4 +55,10 @@ Ez az eljárás bemutatja, hogy hogyan kereshet ki egy vevőt, hozhat létre egy
     * Ennél az eljárásnál írjon be egy olyan összeget, amely megegyezik a rendelési egyenleggel. Ez az Értékesítési rendelés összesítése oldalon látható, az összeg mezőtől balra. Ez a művelet lehetővé teszi, hogy teljesen kifizetett állapotban befejezze a rendelést.  
 17. Válassza ki az **OK** lehetőséget.
 18. Válassza a **Beküldés** lehetőséget.
+
+## <a name="additional-resources"></a>További erőforrások
+
+[Tranzakciós e-mailek testreszabása szállítási mód szerint](../customize-email-delivery-mode.md)
+
+[Szállítási mód módosítása a pénztárban](../pos-change-delivery-mode.md)
 

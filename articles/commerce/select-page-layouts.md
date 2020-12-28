@@ -18,11 +18,11 @@ ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.openlocfilehash: 0cbcba7ce4f40298e0f2665fa811b125f11e9490
-ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "3269912"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412985"
 ---
 # <a name="select-page-layouts"></a>Oldalelrendezések kiválasztása
 
@@ -59,7 +59,7 @@ Ha egy meglévő laphoz szeretne másik elrendezést kiválasztani, hajtsa végr
 1. Menjen a **Lapok** menübe, és keresse meg a meglévő lapot a listán. Igény szerint keresés funkciót is használhatja.
 1. Válassza ki a lapot, majd válassza ki a **Szerkesztés** lehetőséget a kivételhez, majd válassza ki annak az oldalnak a nevét, amelyet meg szeretne nyitni.
 1. Válassza az **Oldalelrendezés módosítása** lehetőséget.
-1. Válassza ki a lap új elrendezését, majd kattintson az **OK**gombra. A lap szerkesztője frissül, és az új elrendezést jeleníti meg.
+1. Válassza ki a lap új elrendezését, majd kattintson az **OK** gombra. A lap szerkesztője frissül, és az új elrendezést jeleníti meg.
 1. Válassza a **Szerkesztés befejezése** parancsot az oldal ellenőrzéséhez, majd a **Közzététel** elemet a közzétételhez.
 
 ## <a name="additional-resources"></a>További erőforrások

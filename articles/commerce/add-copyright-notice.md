@@ -18,11 +18,11 @@ ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.openlocfilehash: 838047cac694c65047332e146a7c43ee2ae0f401
-ms.sourcegitcommit: b063bf3a52f19baa11ddba31ef9313d58a0f610e
+ms.sourcegitcommit: 1a12b42cc17f004a981c716aed3da6cf538475a5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4019541"
+ms.locfileid: "4412989"
 ---
 # <a name="add-a-copyright-notice"></a>Szerzői jogi értesítés hozzáadása
 
@@ -44,7 +44,7 @@ A következő lépésekkel lehet hozzáadni egy szerzői jogi nyilatkozatot az �
 1. Lépjen a **Töredékek** pontra, majd válassza az **Új** lehetőséget.
 1. Az **Új töredék** párbeszédpanelen válassza ki a **Lábléc** modult, és nevezze át a töredéket. Írja be például a **Lábléc-Szerzői jog** értéket.
 1. Válassza ki az **OK** lehetőséget.
-1. A navigációs panelen válassza ki az válassza ki a **Lábléc** melletti három pontot ( **…** ) majd válassza a **Modul hozzáadása** elemet.
+1. A navigációs panelen válassza ki az válassza ki a **Lábléc** melletti három pontot (**…**) majd válassza a **Modul hozzáadása** elemet.
 1. A párbeszédpanelen válassza ki a **Lábléc-kategória** elemet, majd kattintson az **OK** gombra.
 1. A navigációs panelen válassza ki az válassza ki a **Lábléc-kategória** melletti három pontot, majd válassza a **Modul hozzáadása** elemet.
 1. A párbeszédpanelen válassza ki a **Szövegblokk** elemet, majd kattintson az **OK** gombra.

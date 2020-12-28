@@ -20,11 +20,11 @@ ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: 9a1f9abae20d0f2e71790a3b27337338dc042b52
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3003533"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412750"
 ---
 # <a name="manage-e-commerce-users-and-roles"></a>Az e-kereskedelem felhasználóinak és szerepköreinek kezelése
 
@@ -60,7 +60,7 @@ Amikor új webhelyet hoz létre a Commerce szolgáltatásban, meg kell adnia egy
 Miután létrehozta a webhelyet, csak azok a felhasználók férhetnek hozzá a webhely szerzői környezetéhez, akik **Rendszergazda** és az **Adminisztrátor** szerepkörökhöz társított biztonsági csoportnak tagjai. Ha felhasználókat szeretne hozzárendelni a **Webes gyártó**, **RnR moderátor** és a **Olvasó** szerepkörökhöz biztonsági csoportokat kell hozzárendelnie azokhoz a szerepkörökhöz. Ha egy szerepkörhöz egy biztonsági csoportot szeretne hozzáadni, vagy egy szerepkörhöz aktuálisan hozzárendelt biztonsági csoportot szeretne frissíteni, hajtsa végre az alábbi lépéseket.
 
 1. Menjen a frissíteni kívánt webhelyre.
-1. A **Webhely kezelése**modulban nyissa meg a **Biztonság** lapot.
+1. A **Webhely kezelése** modulban nyissa meg a **Biztonság** lapot.
 1. Válassza ki a módosítani kívánt szerepkört.
 1. Adja hozzá a biztonsági csoportokat a szerepkörökhöz, vagy távolítson el biztonsági csoportokat a szerepköröktől.
 

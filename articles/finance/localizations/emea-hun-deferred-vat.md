@@ -18,11 +18,11 @@ ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 10.0.0
 ms.openlocfilehash: 467536f87fd4318ea82849ef6df62d4141fc22fa
-ms.sourcegitcommit: cd3d066fd5a071a44b1709ed37d24112484e7ceb
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "3766086"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408037"
 ---
 # <a name="deferred-sales-tax-calculations"></a>Halasztott áfa számítása
 
@@ -52,7 +52,7 @@ Szabad szöveges számlák és beszerzési rendelések esetén, ha a dokumentums
 Megadhatja, hogy az áfa feladása halasztott áfaszámlára történjen.
 
 1. Ugorjon az **Adó** \> **Közvetett adók** \> **Áfa** \> **Áfacsoportok** pontra.
-2. A **Cikkáfacsoport** lapon jelölje be a **Halasztott ÁFA** jelölőnégyzetet, ha meg szeretné adni, hogy az áfa feladása halasztott áfa számlára történjen.
+2. A  **Cikkáfacsoport** lapon jelölje be a **Halasztott ÁFA** jelölőnégyzetet, ha meg szeretné adni, hogy az áfa feladása halasztott áfa számlára történjen.
 
 ## <a name="set-up-ledger-accounts-for-deferred-vat-posting"></a>Főkönyvi számlák beállítása áfafeladáshoz
 

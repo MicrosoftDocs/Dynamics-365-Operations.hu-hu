@@ -20,11 +20,11 @@ ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: 6a64b45e1326673dd84c3c705491c9c100cdd069
-ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3817523"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412834"
 ---
 # <a name="opt-out-of-personalized-recommendations"></a>Leiratkozás a személyre szabott ajánlatokról
 
@@ -51,7 +51,7 @@ A Commerce háttérrendszer Fiókkezelés részében a kereskedők elvégezhetik
 
     ![Kiskereskedelem gyorslap](./media/Disablepersonalizationpart1.png)
 
-1. Az **Adatvédelem** alatt állítsa a **Személyre szabás letiltása** beállítást **Igen**értékre.
+1. Az **Adatvédelem** alatt állítsa a **Személyre szabás letiltása** beállítást **Igen** értékre.
 
     ![Adatvédelmi beállítások](./media/Disablepersonalizationpart2.png)
 

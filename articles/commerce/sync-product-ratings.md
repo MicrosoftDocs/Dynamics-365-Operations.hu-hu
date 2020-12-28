@@ -19,11 +19,11 @@ ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.openlocfilehash: dec87b548f3a218e1f833b752305f373e893b14c
-ms.sourcegitcommit: 58d7133ae9909fa205730e3cf4c7fd5a1d5d0b75
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "3793587"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412929"
 ---
 # <a name="sync-product-ratings-in-dynamics-365-commerce"></a>A termék minősítések szinkronizálása a következőben: Dynamics 365 Commerce
 
@@ -108,7 +108,7 @@ A termékértékelések bekapcsolásához a pénztárban hajtsa végre az alább
 
 1. Menjen a **Retail és Commerce \> Commerce beállítása \> Paraméterek \> Commerce paraméterek** lehetőségre. Vagy keressen rá a „Commerce paraméterek” elemre.
 1. Válassza a **Konfigurációs paraméterek** lap **Új** elemét.
-1. Írjon be egy nevet, például **RatingsAndReviews.EnableProductRatingsForRetailStores**, és az értéket állítsa be **igaz**értékre.
+1. Írjon be egy nevet, például **RatingsAndReviews.EnableProductRatingsForRetailStores**, és az értéket állítsa be **igaz** értékre.
 1. Válassza a **Mentés** lehetőséget.
 1. Ugorjon a **Kiskereskedelem és kereskedelem \> Kiskereskedelem és kereskedelem informatika \> Elosztási ütemezés** pontra. Vagy keressen rá az „Elosztási ütemezés” elemre.
 1. A feladatok listájában válassza az **1110** (**Globális konfiguráció**) elemét, majd válassza a **Futtatás most** parancsot.

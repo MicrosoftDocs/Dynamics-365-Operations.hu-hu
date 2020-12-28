@@ -1,6 +1,6 @@
 ---
 title: E-kereskedelmi webhely létrehozása
-description: Ez a témakör bemutatja azokat a lépéseket és információkat, amelyek egy új e-Commerce webhely létrehozásához szükségesek Dynamics 365 Commerce webhelyépítőben.
+description: Ez a témakör bemutatja azokat a lépéseket és információkat, amelyek egy új e-kereskedelmi webhely létrehozásához szükségesek Dynamics 365 Commerce webhelyépítőben.
 author: bicyclingfool
 manager: AnnBe
 ms.date: 07/02/2020
@@ -19,20 +19,20 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: ea3517a4f2b84db8a87a97d2f644bb4436f8693f
-ms.sourcegitcommit: adf196c51e2b6f532d99c177b4c6778cea8a2efc
+ms.openlocfilehash: 7d552f29fd8f52b512a7c21b36b0a814cac50646
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "3533436"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517184"
 ---
 # <a name="create-an-e-commerce-site"></a>E-kereskedelmi webhely létrehozása
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör bemutatja azokat a lépéseket és információkat, amelyek egy új e-Commerce webhely létrehozásához szükségesek Dynamics 365 Commerce webhelyépítőben.
+Ez a témakör bemutatja azokat a lépéseket és információkat, amelyek egy új e-kereskedelmi webhely létrehozásához szükségesek Dynamics 365 Commerce webhelyépítőben.
 
-Az e-kereskedelmi lehetőségek licencelése esetén a webhelykészítő a saját webhely alapjaként használható kezdő webhellyel lesz biztosítva. Ha azonban a nulláról szeretné kezdeni, vagy egy második webhelyet szeretne létrehozni, akkor egy új helyet kell létrehoznia a webhelylétrehozási környezetben. 
+A Dynamics 365 Commerce e-kereskedelmi lehetőségek licencelése esetén a webhelykészítő a saját webhely alapjaként használható kezdő webhellyel lesz biztosítva. Ha azonban a nulláról szeretné kezdeni, vagy egy második webhelyet szeretne létrehozni, akkor egy új helyet kell létrehoznia a webhelylétrehozási környezetben. 
 
 ## <a name="set-up-your-site"></a>A webhely beállítása
 
@@ -56,15 +56,15 @@ Miután létrehozta a webhelyet, a **Termékek** lap kiválasztásával ellenőr
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[A tartománynév konfigurálása](configure-your-domain-name.md)
+[Tartománynév konfigurálása](configure-your-domain-name.md)
 
-[Új e-commerce webhely telepítése](deploy-ecommerce-site.md)
+[Új e-kereskedelmi bérlő telepítése](deploy-ecommerce-site.md)
 
-[Online webhely társítása csatornával](associate-site-online-store.md)
+[Dynamics 365 Commerce webhely társítása online csatornával](associate-site-online-store.md)
 
 [Robots.txt fájlok kezelése](manage-robots-txt-files.md)
 
-[URL-átirányítások feltöltése ömlesztett formában](upload-bulk-redirects.md)
+[URL-átirányítások tömeges feltöltése](upload-bulk-redirects.md)
 
 [B2C-bérlő beállítása a Commerce-ben](set-up-B2C-tenant.md)
 

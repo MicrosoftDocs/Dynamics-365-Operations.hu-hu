@@ -18,11 +18,11 @@ ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
 ms.openlocfilehash: 6a1ae960f0f530104af7bdea9a8fcb78b01571f5
-ms.sourcegitcommit: 5175e3fae432016246244cf70fe05465f43de88c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "3599724"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412755"
 ---
 # <a name="configure-a-dynamics-365-commerce-evaluation-environment"></a>Dynamics 365 Commerce értékelési környezet konfigurálása
 
@@ -40,7 +40,7 @@ Miután a Commerce értékelési környezet teljes körűen kiépítésre kerül
 
 1. Jelentkezzen be az [LCS portálra](https://lcs.dynamics.com).
 1. Lépjen a projektjére.
-1. Válassza a felső menü **Felhőalapú környezetek**pontját.
+1. Válassza a felső menü **Felhőalapú környezetek** pontját.
 1. A listából válassza ki a környezetét.
 1. Kattintson a jobb oldalon található környezeti információk **Bejelentkezés a környezetbe** elemére. Megnyílik a Commerce központ modul.
 1. Győződjön meg róla , hogy az **USRT** jogi személy van kiválasztva a jobb felső sarokban.
@@ -67,7 +67,7 @@ Ha a munkavállalót az identitásához szeretné társítani, kövesse az aláb
 
 A Felhőalapú pénztár aktiválásához hajtsa végre az alábbi lépéseket az LCS-ben.
 
-1. Válassza a felső menü **Felhőalapú környezetek**pontját.
+1. Válassza a felső menü **Felhőalapú környezetek** pontját.
 1. A listából válassza ki a környezetét.
 1. Kattintson a jobb oldalon található környezeti információk **Bejelentkezés a felhőalapú pénztárba** elemére.
 1. Kattintson a **Következő** gombra az **Indítás előtt** párbeszédpanel megnyitásához.

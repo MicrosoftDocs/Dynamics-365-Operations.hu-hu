@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: beb705852be99ce817997d7017c41a0159f75419
-ms.sourcegitcommit: 69075e001d1fb4ef69282667052cd8d082273094
+ms.openlocfilehash: fa9d42c20540f2ee2240cc4f2b180140c3f9a628
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4022029"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517088"
 ---
 # <a name="buy-box-module"></a>Vásárlásmező modul
 
@@ -72,10 +72,10 @@ A vásárlásmező-modulok következő beállításai konfigurálhatók a **Webh
 
 - **Kosár mennyiségi korlátja** – Ez a tulajdonság megadja az egyes cikkek kosárhoz adható maximális számát. Előfordulhat például, hogy egy kiskereskedő úgy dönt, hogy egyetlen tranzakcióban csak 10 terméket lehet értékesíteni.
 - **Készlet** – A készletbeállítások alkalmazásával kapcsolatban a következő témakör tartalmaz további tájékoztatást: [Készletbeállítások alkalmazása](inventory-settings.md).
-- **Hozzáadás a kosárhoz** – Ezzel a tulajdonsággal lehet meghatározni, mi történjen, miután egy cikket a kosárhoz adtak. A lehetséges értékek **Navigálás a kosárhoz** , **Ne navigáljon a kosárhoz** és **Értesítések megjelenítése**. Ha az érték **Navigáció a kosárhoz** , akkor a felhasználók a kosár oldalra lesznek küldve, miután hozzáadtak egy cikket. Ha az érték **Ne navigáljon a kosárhoz** , akkor a felhasználók nem lesznek a kosár oldalra küldve, miután hozzáadtak egy cikket. Ha az érték az **Értesítések megjelenítése** , akkor a felhasználók visszaigazoló értesítést kapnak és tovább böngészhetnek a termék részletei oldalon. 
+- **Termék hozzáadása a kosárhoz** – Ezzel a tulajdonsággal lehet meghatározni, mi történjen, miután egy cikket a kosárhoz adtak. A lehetséges értékek **Navigálás a kosárhoz oldal**, **Ne navigáljon a kosárhoz oldal** és **Értesítés megjelenítése**. Ha az érték **Navigáció a kosárhoz oldal**, akkor a felhasználók a kosár oldalra lesznek küldve, miután hozzáadtak egy cikket. Ha az érték **Ne navigáljon a kosárhoz oldal**, akkor a felhasználók nem lesznek a kosár oldalra küldve, miután hozzáadtak egy cikket. Ha az érték az **Értesítés megjelenítése**, akkor a felhasználók visszaigazoló értesítést kapnak és tovább böngészhetnek a termék részletei oldalon. 
 
 > [!IMPORTANT]
-> A **Hozzáadás a kosárhoz** webhely beállításai a Dynamics 365 Commerce 10.0.11-es kiadásában érhetők el. Ha a Dynamics 365 Commerce egy korábbi verziójáról frissít, akkor manuálisan kell frissítenie az appsettings.json fájlt. Az appsettings.json fájlok frissítésével kapcsolatos tudnivalókat lásd az [SDK- és modulkönyvtár-frissítések](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file) témakörben. 
+> A **Termék hozzáadása a kosárhoz** webhely beállításai a Dynamics 365 Commerce 10.0.11-es kiadásában érhetők el. Ha a Dynamics 365 Commerce egy korábbi verziójáról frissít, akkor manuálisan kell frissítenie az appsettings.json fájlt. Az appsettings.json fájlok frissítésével kapcsolatos tudnivalókat lásd az [SDK- és modulkönyvtár-frissítések](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file) témakörben. 
 
 A következő kép egy példát mutat egy „kosárhoz adva” visszaigazolási értesítésre a Fabrikam oldalon.
 
@@ -92,21 +92,21 @@ A vásárlásmező modul új oldalra való felvételéhez és a kötelező tulaj
 1. Lépjen a **Töredékek** pontra, és válassza az **Új** lehetőséget új töredék létrehozásához.
 1. Az **Új töredék** párbeszédpanelen válassza ki a **Vásárlásmező** modult.
 1. Az **Töredék neve** pontban adja meg a **Vásárlásmező-töredék** nevét, majd válassza az **OK** lehetőséget.
-1. Válassza ki a három pont ( **...** ) elemet a **Médiagaléria** helyén, amely tartalmazza a váráslásmező modult, majd válassza a **Modul hozzáadása** lehetőséget.
+1. Válassza ki a három pont (**...**) elemet a **Médiagaléria** helyén, amely tartalmazza a váráslásmező modult, majd válassza a **Modul hozzáadása** lehetőséget.
 1. A **Modul hozzáadása** párbeszédpanelen válassza ki a **Médiagaléria** modult, majd kattintson az **OK** gombra.
-1. Válassza ki a három pont ( **...** ) elemet az **Áruházválasztó** helyén, amely tartalmazza a váráslásmező modult, majd válassza a **Modul hozzáadása** lehetőséget.
+1. Válassza ki a három pont (**...**) elemet az **Áruházválasztó** helyén, amely tartalmazza a váráslásmező modult, majd válassza a **Modul hozzáadása** lehetőséget.
 1. A **Modul hozzáadása** párbeszédpanelen válassza ki az **Áruházválasztó** modult, majd kattintson az **OK** gombra.
 1. Válassza a **Mentés** elemet, válassza a **Szerkesztés befejezése** parancsot a töredék ellenőrzéséhez, majd a **Közzététel** elemet a közzétételhez.
 1. Lépjen a **Sablonok** pontra, majd új sablon készítéséhez válassza az **Új** elemet.
 1. Az **Új sablon** párbeszédablakban a **Sablon neve** alatt adja meg a **PDP-sablon** elemet, majd válassza az **OK** gombot.
-1. A **Törzs** helyben válassza a három pont ( **…** ) gombot, majd válassza az **Modul hozzáadása** elemet.
+1. A **Törzs** helyben válassza a három pont (**…**) gombot, majd válassza az **Modul hozzáadása** elemet.
 1. A **Modul hozzáadása** párbeszédpanelen válassza ki az **Alapértelmezett oldal** modult, majd kattintson az **OK** gombra.
-1. Az alapértelmezett lap **Fő** helyén válassza ki a három pont ( **…** ) gombot, majd válassza a **Töredék hozzáadása** elemet.
+1. Az alapértelmezett lap **Fő** helyén válassza ki a három pont (**…**) gombot, majd válassza a **Töredék hozzáadása** elemet.
 1. A **Töredék kiválasztása** párbeszédpanelen válassza ki a **Vásárlásmező töredék** töredékét, amelyet korábban hozott létre ezután kattintson az **OK** gombra.
 1. Válassza a **Mentés** elemet, válassza a **Szerkesztés befejezése** parancsot a sablon ellenőrzéséhez, majd a **Közzététel** elemet a közzétételhez.
 1. Lépjen az **Oldalak** pontra, majd válassza az **Új** lehetőséget új oldal létrehozásához.
-1. A **Sablon kiválasztása** párbeszédpanelen válassza ki a **PDP-sablon** sablonját. Az **Oldal neve** alatta adja meg a **PDP-oldalt** , majd kattintson az **OK** gombra.
-1. Az új oldal **Fő** helyén válassza ki a három pont ( **…** ) gombot, majd válassza a **Töredék hozzáadása** elemet.
+1. A **Sablon kiválasztása** párbeszédpanelen válassza ki a **PDP-sablon** sablonját. Az **Oldal neve** alatta adja meg a **PDP-oldalt**, majd kattintson az **OK** gombra.
+1. Az új oldal **Fő** helyén válassza ki a három pont (**…**) gombot, majd válassza a **Töredék hozzáadása** elemet.
 1. A **Töredék kiválasztása** párbeszédpanelen válassza ki a **Vásárlásmező töredék** töredékét, amelyet korábban hozott létre ezután kattintson az **OK** gombra.
 1. Mentse a lapot, és tekintse meg az előnézetét. Hozzáadja a **?productid=&lt;product id&gt;** lekérdezési karakterlánc paramétert az előnézeti lap URL-címéhez. A termékkontextus így az előnézeti lap betöltésére és megjelenítésére kerül felhasználásra.
 1. Válassza a **Mentés** elemet, válassza a **Szerkesztés befejezése** parancsot az oldal ellenőrzéséhez, majd a **Közzététel** elemet a közzétételhez. A termék részletes lapján meg kell jelennie vásárlásmezőnek.

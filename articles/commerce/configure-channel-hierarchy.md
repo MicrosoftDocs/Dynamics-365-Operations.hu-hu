@@ -18,11 +18,11 @@ ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
 ms.openlocfilehash: 7b5041d35d310125c314ab2cb77d3cc40cdb7113
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002220"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412766"
 ---
 # <a name="configure-a-channel-to-use-a-channel-navigation-hierarchy"></a>Csatorna konfigurálása csatorna navigációs hierarchiájának használatára
 
@@ -44,7 +44,7 @@ Egy csatorna navigációs hierarchia használatára vonatkozó konfigurálásáh
 1. Válassza a műveleti ablakban az **Attribútum-metaadatok beállítása** lehetőséget.
 1. A **Kategóriahierarchia** legördülő listában válassza ki a megfelelő csatornanavigációs hierarchiát.
 1. A műveleti ablaktáblán válassza a **Mentés** lehetőséget.
-1. Az **Attribútum csoportban**adja meg azokat az attribútum-csoportokat, amelyek az összes csomópont globális attribútumai lesznek.
+1. Az **Attribútum csoportban** adja meg azokat az attribútum-csoportokat, amelyek az összes csomópont globális attribútumai lesznek.
 
 A következő kép bemutatja egy csatorna konfigurálását csatorna navigációs hierarchia használatára.
 

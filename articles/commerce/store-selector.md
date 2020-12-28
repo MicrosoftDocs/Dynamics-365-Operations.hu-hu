@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 4438e46d4653a0cd2060092695f08613cd696f4e
-ms.sourcegitcommit: 97ceb24f191161ca601e0889a539df665834ac3b
+ms.openlocfilehash: 5400a2e743a78124dca4bf9be3ccaf7870ea8b7d
+ms.sourcegitcommit: 9c05d48f6e03532aa711e1d89d0b2981e9d37200
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3818250"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4665272"
 ---
 # <a name="store-selector-module"></a>Üzletkiválasztó modul
 
@@ -47,7 +47,7 @@ Az üzletválasztó modul lehetővé teszi a felhasználók számára, hogy beí
 
 Az üzletválasztó modul integrálva van a [Bing Maps REST alkalmazásfejlesztési felületei (API)](https://docs.microsoft.com/bingmaps/rest-services/) funkcióval a Bing geokódolási és az Automatikus javaslat szolgáltatásainak használatához. A Bing Maps API-kulcsot kötelező megadni, és hozzá kell adni a Commerce központ megosztott paraméterei oldalhoz. A geokódolási API a helyet a hosszúsági és a szélességi adatok alapján alakítja értékekre. Az automatikusan javasolt API-val való integráció a keresési javaslatok megjelenítésére szolgál, amikor a felhasználók helyeket adnak meg a keresési mezőben.
 
-Az automatikusan javasolt REST API esetében gondoskodni kell arról, hogy a webhely tartalmának biztonsági házirendjében (CSP) a következő leképezési URL-címeket engedélyezzék (más néven „engedélyezési listához adva”). Ez a beállítás a Commerce webhelykészítőben végezhető el azzal, ha engedélyezett URL-címeket ad a webhely CSP-utasításokhoz (például **img-src**). További információ: [Tartalomra vonatkozó biztonsági irányelv (CSP)](manage-csp.md). 
+Az Autosuggest REST API esetében gondoskodni kell arról, hogy a webhely tartalmának biztonsági házirendjében (CSP) a következő leképezési URL-címeket engedélyezzék. Ez a beállítás a Commerce webhelykészítőben végezhető el azzal, ha engedélyezett URL-címeket ad a webhely CSP-utasításokhoz (például **img-src**). További információ: [Tartalomra vonatkozó biztonsági irányelv (CSP)](manage-csp.md). 
 
 - A **connect-src** utasításhoz adja hozzá a **&#42;.bing.com** kiterjesztést.
 - Az **img-src** utasításhoz adja hozzá a **&#42;virtualearth.net** kiterjesztést.
@@ -65,6 +65,9 @@ A forgatókönyv működéséhez a termékeket az **átvétel** szállítási m�
 A következő kép a PDP-ben használt üzletválasztó modul egy példáját jeleníti meg.
 
 ![Példa egy üzletválasztó modulra, ami a PDP-ben van használva](./media/BOPIS.PNG)
+
+> [!NOTE]
+> A 10.0.16-os és újabb verzióban egy új funkció engedélyezhető, amely lehetővé teszi a szervezet számára, hogy több szállítási módot határozzon meg az ügyfelek számára.  Ha ez a funkció engedélyezve van, az áruházválasztó és az e-kereskedelem egyéb moduljai javulni fognak, hogy a vásárló a potenciálisan több felvételi szállítási lehetőség közül választhasson, ha be van állítva.  A funkcióról többet is megtudhat, olvassa el [ezt a dokumentációt](https://docs.microsoft.com/dynamics365/commerce/multiple-pickup-modes). 
 
 ## <a name="find-stores-mode"></a>Üzletek keresése mód
 

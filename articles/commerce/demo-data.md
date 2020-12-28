@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2017-10-05
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: d3701046487e1c2004cea57aa3fe244133634854
-ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
+ms.openlocfilehash: 935e1a550160515e2c325c39eab86be3b9fa5394
+ms.sourcegitcommit: d82f319cf7dd26c93a3fd342de4fd537272fa8d2
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4014886"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "4413018"
 ---
 # <a name="demo-data-screen-layouts-in-modern-pos-mpos-and-cloud-pos"></a>A Modern POS (MPOS) bemutató adatképernyő-elrendezései
 
@@ -64,6 +64,7 @@ A képernyő-elrendezés azonosítója legfeljebb 10 karaktert tartalmazhat. Az 
 |----------------|--------------------------------------------------------------------------------------------|
 | 3              | A többféle eszközhöz és oldalarányhoz több képernyőméretet támogató alapverzió |
 | 3.1            | Az alapverzió, amely további támogatást nyújt a **Javasolt termékek** panelhez        |
+| 4              | A kiterjesztett változat a kiterjesztett Fabrikam frissített elrendezéshez                                  |
 
 ### <a name="persona"></a>Személyiség
 
@@ -75,9 +76,9 @@ A képernyő-elrendezés azonosítója legfeljebb 10 karaktert tartalmazhat. Az 
 
 ### <a name="example-layout"></a>Példa elrendezés
 
-Íme egy példa, a Gyár vállalat képernyőelrendezés-azonosítója, 3-as elrendezésverzió, az üzletvezető személyiséggel:
+Íme egy példa, a Gyár vállalat képernyőelrendezés-azonosítója, 4-as elrendezésverzió, az üzletvezető személyiséggel:
 
-F3MGR
+F4MGR
 
 A következő ábrán a Gyár üzletvezetőjének üdvözlőképernyője látható.
 
@@ -103,6 +104,7 @@ Az alábbi táblázat bemutatja a jellemző képernyőfelbontásokhoz rendelkez�
 | Teljes\*      | 1280 × 720 | 16:9         | Táblagépek                 |
 | Teljes        | 1366 × 768 | 16:9         | Táblagépek, nagyobb képernyők |
 | Teljes        | 1440 × 960 | 3:2          | Táblagépek, nagyobb képernyők |
+| Teljes\*      | 1536 × 864 | 16:9         | Táblagépek, nagyobb képernyők |
 
 \*Ezek a további elrendezési méretek csak a Kalandorbolt és a Gyár elrendezésekben érhetők el.
 
@@ -120,7 +122,7 @@ Minden fiktív vállalat eltérő kiskereskedelmi szegmenst céloz, és termékk
 | Cég         | Tárolóhely | Szegmens        | Kiemelés | Téma |
 |-----------------|----------|----------------|--------|-------|
 | Kalandorbolt | Seattle  | Sportcikkek | Kék   | Sötét  |
-| Gyár        | Houston  | Divatáru        | Zöld  | Világos |
+| Fabrikam        | San Francisco  | Divatáru        | Zöld  | Világos |
 | Contoso         | Boston   | Elektronika    | Piros    | Sötét  |
 
 > [!NOTE]
@@ -153,9 +155,9 @@ A különböző képernyő-elrendezésekhez felhasználókat is rendelkezésre b
 | Kalandorbolt | A3MGR            | Üzletvezető | 000154, 000137, 000073 |
 | Kalandorbolt | A3CSH            | Pénztáros       | 000150, 000175, 000165 |
 | Kalandorbolt | A3STK            | Készletadminisztrátor   | 000155, 000181, 000152 |
-| Gyár        | F3MGR            | Üzletvezető | 000160, 000168, 000163 |
-| Gyár        | F3CSH            | Pénztáros       | 000161, 000113, 000114 |
-| Gyár        | F3STK            | Készletadminisztrátor   | 000164, 000112, 000123 |
+| Fabrikam        | F4MGR            | Üzletvezető | 000160, 000713         |
+| Fabrikam        | F3CSH            | Pénztáros       | 000161, 000113, 000114 |
+| Fabrikam        | F3STK            | Készletadminisztrátor   | 000164, 000112, 000123 |
 | Contoso         | C3MGR            | Üzletvezető | 000100, 000111         |
 | Contoso         | C3CSH            | Pénztáros       | 000110, 000120         |
 | Contoso         | Nem alkalmazható   | Készletadminisztrátor   | Nem alkalmazható         |

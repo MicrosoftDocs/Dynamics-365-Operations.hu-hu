@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 1910563865a21dab3345a82711ead9b9e57b92fa
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: af2ec75328b6377c5d92656d011d21576417a63f
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3980964"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517380"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>B2C-bérlő beállítása a Commerce-ben
 
@@ -44,7 +44,7 @@ A Dynamics 365 Commerce az Azure AD B2C protokollt használja a felhasználók h
 1. Nyissa meg az **Identitás \> Azure Active Directory B2C** elemet.
 1. A **AAD B2C-bérlő létrehozása vagy hivatkozás egy meglévő bérlőre az Azure Portal webhelyen** lapon, használja vállalat igényeinek leginkább megfelelő alábbi lehetőséget:
 
-    - **Új Azure AD B2C bérlő létrehozása** : Ezzel a lehetőséggel hozhat létre egy új AAD B2C-bérlőt.
+    - **Új Azure AD B2C bérlő létrehozása**: Ezzel a lehetőséggel hozhat létre egy új AAD B2C-bérlőt.
         1. Válassza az **Új Azure AD B2C-bérlő létrehozása** lehetőséget.
         1. A **Szervezet neve** területen írja be a szervezet nevét.
         1. A **Kezdeti tartománynév** mezőbe írja be a kezdeti tartománynevet.
@@ -53,10 +53,10 @@ A Dynamics 365 Commerce az Azure AD B2C protokollt használja a felhasználók h
 
      ![Új Azure AD-bérlő létrehozása](./media/B2CImage_2.png)
 
-     - **Meglévő Azure AD B2C-bérlő csatolása a saját Azure előfizetésemhez** : Akkor használja ezt a lehetőséget, ha már van egy Azure AD B2C bérlője, amelyhez csatolni kívánja.
+     - **Meglévő Azure AD B2C-bérlő csatolása a saját Azure előfizetésemhez**: Akkor használja ezt a lehetőséget, ha már van egy Azure AD B2C bérlője, amelyhez csatolni kívánja.
         1. Válassza ki a **Meglévő Azure AD B2C bérlő csatolása saját Azure előfizetéshez** lehetőséget.
         1. Az **Azure AD B2C bérlő** esetében válassza ki a megfelelő B2C-bérlőt. Ha a kiválasztási mezőben a „Nem jogosult B2C-bérlők találhatók” üzenet jelenik meg, akkor nem rendelkezik jogosult B2C Bérlővel, és újat kell létrehoznia.
-        1. Az **Erőforráscsoport** helyen válassza az **Új létrehozása** lehetőséget. Írja be annak a csoportnak a **Nevét** , amely a bérlőt fogja tartalmazni, válassza ki az **Erőforráscsoport helyét** ,majd válassza a **Létrehozás** parancsot.
+        1. Az **Erőforráscsoport** helyen válassza az **Új létrehozása** lehetőséget. Írja be annak a csoportnak a **Nevét**, amely a bérlőt fogja tartalmazni, válassza ki az **Erőforráscsoport helyét** ,majd válassza a **Létrehozás** parancsot.
 
     ![Válassza ki a Meglévő Azure AD B2C bérlő csatolása saját Azure előfizetéshez lehetőséget](./media/B2CImage_3.png)
 
@@ -147,11 +147,11 @@ Profilszerkesztési felhasználóifolyamat-házirend konfigurálásához kövess
 1. A **Név** mezőbe adja meg a profilszerkesztési felhasználói folyamatot. Ez a név azután jelenik meg, hogy a portál hozzárendel egy előtagot (például „B2C_1_”).
 1. Az **Identitásszolgáltatók** területen válassza a **Helyi fiókbejelentkezés** lehetőséget.
 1. A **Felhasználói attribútumok** alatt jelölje be az alábbi jelölőnégyzeteket:
-    - **E-mail-címek** (Csak **Igény visszaküldése** )
-    - **Utónév** ( **Attribútum összegyűjtése** és **Igény visszaküldése** )
-    - **Identitásszolgáltató** (csak **Visszaküldési igény** )
-    - **Vezetéknév** ( **Attribútum összegyűjtése** és **Igény visszaküldése** )
-    - **Felhasználói objektumazonosítója** (Csak **Visszaküldési igény** )
+    - **E-mail-címek** (Csak **Igény visszaküldése**)
+    - **Utónév** (**Attribútum összegyűjtése** és **Igény visszaküldése**)
+    - **Identitásszolgáltató** (csak **Visszaküldési igény**)
+    - **Vezetéknév** (**Attribútum összegyűjtése** és **Igény visszaküldése**)
+    - **Felhasználói objektumazonosítója** (Csak **Visszaküldési igény**)
 1. Válassza a **Létrehozása** lehetőséget.
 
 A következő kép egy példát mutat be a Azure AD B2C profilszerkesztő felhasználói folyamatára.
@@ -236,7 +236,7 @@ Miután az Azure AD B2C létesítési lépések befejeződtek, az Azure AD B2C a
 
 Az új Azure AD B2C információval rendelkező központ frissítéséhez hajtsa végre az alábbi lépéseket.
 
-1. A Commerce menüben nyissa meg a **Commerce megosztott paraméterei elemet** , és válassza ki a bal oldali menüben az **Identitásszolgáltatók** elemet.
+1. A Commerce menüben nyissa meg a **Commerce megosztott paraméterei elemet**, és válassza ki a bal oldali menüben az **Identitásszolgáltatók** elemet.
 1. Az **identitás-szolgáltatók** területen hajtsa végre a következő műveleteket:
     1. A **Kibocsátó** mezőbe írja be az identitásszolgáltató kiállítójának URL-jét. A kiállító URL-címének megkereséséhez lásd alább a [Kiállító URL-címének megszerzése](#obtain-issuer-url) részt.
     1. A **Név** mezőbe írja be a kiállító rekordjának nevét.
@@ -299,12 +299,12 @@ Az AAD B2C bérlői alkalmazás adatainak a Commerce rendszerbe történő hozz�
 1. Válassza a **B2C alkalmazás hozzáadása** elemet.
 1. A megjelenő képernyőn adja meg a következő szükséges elemeket a B2C bérlő és az alkalmazás értékeit használva. A nem kötelező mezők (a csillag nélküliek) üresen maradhatnak.
 
-    - **Alkalmazás neve** : A B2C alkalmazás neve (például „Fabrikam B2C”).
-    - **Bérlő neve** : A B2C bérlője neve (például használja a „fabrikam” beállítást, ha a B2C-bérlőnek a tartomány „fabrikam.onmicrosoft.com” néven jelenik meg). 
-    - **Felejtse el a jelszót házirend azonosító** : A felejtse el a jelszót felhasználóifolyamat házirend azonosítója „B2C_1_PasswordReset”.
-    - **Regisztrációs bejelentkezési házirendazonosító** : A regisztrációs és bejelentkezési felhasználói folyamatok házirendjének azonosítója, például „B2C_1_signup_signin”.
-    - **Ügyfél GUID** : A B2C alkalmazás azonosítója: (például „22290eb2-c52e-42e9-8b35-a2b0a3bcb9e6” B2C).
-    - **Profilirányelv azonosítója** : A profilszerkesztő felhasználói folyamatazonosító, például „B2C_1A_ProfileEdit”.
+    - **Alkalmazás neve**: A B2C alkalmazás neve (például „Fabrikam B2C”).
+    - **Bérlő neve**: A B2C bérlője neve (például használja a „fabrikam” beállítást, ha a B2C-bérlőnek a tartomány „fabrikam.onmicrosoft.com” néven jelenik meg). 
+    - **Felejtse el a jelszót házirend azonosító**: A felejtse el a jelszót felhasználóifolyamat házirend azonosítója „B2C_1_PasswordReset”.
+    - **Regisztrációs bejelentkezési házirendazonosító**: A regisztrációs és bejelentkezési felhasználói folyamatok házirendjének azonosítója, például „B2C_1_signup_signin”.
+    - **Ügyfél GUID**: A B2C alkalmazás azonosítója: (például „22290eb2-c52e-42e9-8b35-a2b0a3bcb9e6” B2C).
+    - **Profilirányelv azonosítója**: A profilszerkesztő felhasználói folyamatazonosító, például „B2C_1A_ProfileEdit”.
 
 1. Válassza ki az **OK** lehetőséget. Ekkor megjelenik a B2C alkalmazásának neve a listán.
 1. A változtatások mentéséhez válassza a **Mentés** elemet.
@@ -343,21 +343,21 @@ Egy opcionális, másodlagos adminisztrátori fiók is hozzáadható a B2C bérl
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[A tartománynevének konfigurálása](configure-your-domain-name.md)
+[Tartománynév konfigurálása](configure-your-domain-name.md)
 
-[Új e-commerce webhely telepítése](deploy-ecommerce-site.md)
+[Új e-kereskedelmi bérlő telepítése](deploy-ecommerce-site.md)
 
 [E-kereskedelmi webhely létrehozása](create-ecommerce-site.md)
 
-[Online webhely társítása csatornával](associate-site-online-store.md)
+[Dynamics 365 Commerce webhely társítása online csatornával](associate-site-online-store.md)
 
 [Robots.txt fájlok kezelése](manage-robots-txt-files.md)
 
-[URL-átirányítások feltöltése ömlesztett formában](upload-bulk-redirects.md)
+[URL-átirányítások feltöltése tömegesen](upload-bulk-redirects.md)Dynamics 365 Commerce webhely társítása online csatornával
 
 [Felhasználói bejelentkezéshez használt egyéni lapok beállítása](custom-pages-user-logins.md)
 
-[Több B2C-bérlő konfigurálása egy Commerce környezetben](configure-multi-B2C-tenants.md)
+[Több B2C-bérlő konfigurálása Commerce-környezetben](configure-multi-B2C-tenants.md)
 
 [Tartalomkézbesítési hálózat (CDN) támogatásának hozzáadása](add-cdn-support.md)
 

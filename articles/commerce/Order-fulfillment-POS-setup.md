@@ -18,11 +18,11 @@ ms.author: rubendel
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
 ms.openlocfilehash: 118517fe0d7208113bd361a0295ff00cacd14f3d
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3975123"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412768"
 ---
 # <a name="set-up-order-fulfillment-for-stores"></a>Rendelésteljesítés beállítása az üzletek esetében
 
@@ -40,7 +40,7 @@ A rendelés teljesítése művelet a pénztárban egységes munkaterületet bizt
 
 A rendelésteljesítés, [Művelet azonosítója 928](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-operations), használható az üzletben való rendelésteljesítés munkaterület elérésére a pénztárban.
 
-Kövesse a [Művelet hozzáadása a gombrácshoz](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts) lépéseit annak a megadásához, hogy melyik paramétert kell használni a rendelésteljesítés meghívásakor a pénztárnál. Miután megadta a rendelésteljesítés műveleteket, alapértelmezés szerint a **Minden rendelés** van kiválasztva. Ha ez a paraméter van beállítva, a művelet felsorolja az aktuális üzletben teljesítésre váró összes rendeléssort. Ugyancsak rendelkezésre áll a **Szállítandó rendelések** , amely egy gombhoz rendelhető, és akkor használható, amikor a felhasználó csak az üzletből kiszállított rendeléseket szeretné megtekinteni. Végül rendelkezésre áll a **Rendelések átvételre** is. Amikor meghívják a pénztárnál, csak azokat a rendeléseket listázza, amelyeket az üzletben lehet átvenni. A különböző paraméterek különböző gombokhoz rendelhetők, többféle módot adva a felhasználónak a rendelésteljesítés megtekintésére.
+Kövesse a [Művelet hozzáadása a gombrácshoz](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts) lépéseit annak a megadásához, hogy melyik paramétert kell használni a rendelésteljesítés meghívásakor a pénztárnál. Miután megadta a rendelésteljesítés műveleteket, alapértelmezés szerint a **Minden rendelés** van kiválasztva. Ha ez a paraméter van beállítva, a művelet felsorolja az aktuális üzletben teljesítésre váró összes rendeléssort. Ugyancsak rendelkezésre áll a **Szállítandó rendelések**, amely egy gombhoz rendelhető, és akkor használható, amikor a felhasználó csak az üzletből kiszállított rendeléseket szeretné megtekinteni. Végül rendelkezésre áll a **Rendelések átvételre** is. Amikor meghívják a pénztárnál, csak azokat a rendeléseket listázza, amelyeket az üzletben lehet átvenni. A különböző paraméterek különböző gombokhoz rendelhetők, többféle módot adva a felhasználónak a rendelésteljesítés megtekintésére.
 
 ### <a name="enable-users-to-access-order-fulfillment-at-the-point-of-sale"></a>A rendelésteljesítéshez való hozzáférés engedélyezése a felhasználók számára a pénztárnál.
 
@@ -50,7 +50,7 @@ Az üzlet szintjén egy beállítás érhető el annak a meghatározásához, ho
 
 ### <a name="enable-manual-order-acceptance"></a>Rendelés kézi elfogadásának engedélyezése
 
-Alapértelmezés szerint az üzlethez társított rendeléssorok jelölése **Elfogadva** . Ez azt jelenti, hogy azt feltételezzük, hogy a kijelölt üzletből lesznek teljesítve, és a további hozzárendelés nem szükséges. Bizonyos esetekben a kiskereskedők manuálisan szeretnék elfogadni a rendeléseket, mielőtt teljesíthetővé válnának. Ha például egy üzlet hiányos személyzettel rendelkezik és nem tudja teljesíteni a rendeléseket, az üzletvezető csak annyi rendelést fogad el feldolgozására, amennyit egy adott napon megfelelően feldolgozhatónak tart. Amíg el nem fogadják a rendelést, a háttériroda módosítással hozzárendelheti egy másik üzlethez. Ezzel a módszerrel a rendeléselfogadás azt is lehetővé teszi, hogy jelezze, hogy egy rendelést elfogadott egy üzlet, teljesítve lesz.
+Alapértelmezés szerint az üzlethez társított rendeléssorok jelölése **Elfogadva**. Ez azt jelenti, hogy azt feltételezzük, hogy a kijelölt üzletből lesznek teljesítve, és a további hozzárendelés nem szükséges. Bizonyos esetekben a kiskereskedők manuálisan szeretnék elfogadni a rendeléseket, mielőtt teljesíthetővé válnának. Ha például egy üzlet hiányos személyzettel rendelkezik és nem tudja teljesíteni a rendeléseket, az üzletvezető csak annyi rendelést fogad el feldolgozására, amennyit egy adott napon megfelelően feldolgozhatónak tart. Amíg el nem fogadják a rendelést, a háttériroda módosítással hozzárendelheti egy másik üzlethez. Ezzel a módszerrel a rendeléselfogadás azt is lehetővé teszi, hogy jelezze, hogy egy rendelést elfogadott egy üzlet, teljesítve lesz.
 
 Üzletben való átvétel rendelési sorai **Függő** megjelölésűek, és nem kell elfogadni őket.
 
@@ -109,7 +109,7 @@ Alapértelmezés szerint a rendelések állapota **Elfogadott** lesz. A rendelé
 
 - **Szerkesztés** – Ha egy rendelés állapota függőben, akkor szükség esetén módosítható pénztárnál. A már részlegesen kitárolt, csomagolt vagy számlázott rendelések nem szerkeszthetők a rendelésteljesítési nézetből.
 - **Elfogadás** – Ha a **Manuális elfogadás** van konfigurálva a csatorna szintjén, a sorokat először el kell fogadni, mielőtt végighaladhatnának a rendelésteljesítési folyamaton.
-- **Kitárolás** – A kitárolási beállítás több műveletet is támogat. Először, a **Kitárolás** frissíti a rendelési sor állapotát, hogy mások az üzletben ne próbálják meg kitárolni ugyanazt a sort. Ezt követően a **Kitárolási lista nyomtatása** kinyomtatja a kijelölt sor vagy sorok a kitárolási listáját, és frissíti az állapotukat a **Kitárolásba** . A kitárolási listaformátumok a nyugtaformátumok részeként vannak szabályozva. A nyugtaprofilok beállítási módjával kapcsolatos további tudnivalókat lásd: [Nyugta minták és nyomtatás](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing). Végül a **Megjelölés kitároltként** azt jelzi, hogy a sor ki van tárolva. A **Megjelölés kitároltként** kezdeményezi a megfelelő háttérirodai készlettranzakciókat. A kitárolási műveletek egyszerre több rendelés rendelési soraira, illetve az összes szállítási módra nézve elvégezhetők.
+- **Kitárolás** – A kitárolási beállítás több műveletet is támogat. Először, a **Kitárolás** frissíti a rendelési sor állapotát, hogy mások az üzletben ne próbálják meg kitárolni ugyanazt a sort. Ezt követően a **Kitárolási lista nyomtatása** kinyomtatja a kijelölt sor vagy sorok a kitárolási listáját, és frissíti az állapotukat a **Kitárolásba**. A kitárolási listaformátumok a nyugtaformátumok részeként vannak szabályozva. A nyugtaprofilok beállítási módjával kapcsolatos további tudnivalókat lásd: [Nyugta minták és nyomtatás](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing). Végül a **Megjelölés kitároltként** azt jelzi, hogy a sor ki van tárolva. A **Megjelölés kitároltként** kezdeményezi a megfelelő háttérirodai készlettranzakciókat. A kitárolási műveletek egyszerre több rendelés rendelési soraira, illetve az összes szállítási módra nézve elvégezhetők.
 - **Elutasítás** – A sorokat vagy a részleges sorokat el lehet utasítani. Ez lehetővé teszi a társítás megváltoztatását a háttérirodáról egy másik üzletre vagy raktárra. A sorok csak akkor utasíthatók el, ha még nem lettek felvéve vagy csomagolva. Az olyan sorok elutasításához, amelyet már felvettek vagy csomagoltak, a háttérirodából kell visszavonni a felvételt vagy a csomagolást.
 - **Csomag** – A csomag beállítás két műveletet támogat: a **Szállítólevél nyomtatása** szállítólevelet nyomtat ki a kiválasztott sorokhoz, a **Megjelölés csomagoltként** pedig megjelöli a sorokat csomagoltként, és a sorokat kiszállítottként jelöli meg a háttérirodában. Csak az ugyanazon rendeléshez tartozó és ugyanolyan szállítási módú sorokat lehet egyszerre csomagolni. A szállítólevél-formátumok a nyugtaformátumok részeként vannak szabályozva. A nyugtaprofilok beállítási módjával kapcsolatos további tudnivalókat lásd: [Nyugta minták és nyomtatás](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing).
 - **Szállítás** – A szállítási művelet megjelöli a kijelölt sorokat **Szállítva** állapottal a háttérirodában. Miután a sort teljes egészében kiszállították, többé már nem jelenik meg a megrendelés teljesítési nézetében.

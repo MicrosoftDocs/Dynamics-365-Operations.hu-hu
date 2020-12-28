@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: BrShoo
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: 84becee12363ca38951ff13073d87d1b1f14b616
-ms.sourcegitcommit: a47a4652a29fdb567a8ba67c4f914a8698e8c48c
+ms.openlocfilehash: cb2b003168d32d05387bd45796d313736b11a41f
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "3765001"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517355"
 ---
 # <a name="domains-in-dynamics-365-commerce"></a>Tartományok a Dynamics 365 Commerce-alkalmazásban
 
@@ -34,26 +34,26 @@ A tartományok a webböngészőkben a Dynamics 365 Commerce webhelyekhez való n
 
 ## <a name="provisioning-and-supported-host-names"></a>Üzembe helyezés és támogatott állomásnevek
 
-Egy e-commerce rendszernek a [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/) szolgáltatásban történő létesítése során az e-commerce létesítési képernyőn látható **Támogatott állomásnevek** mezője segítségével megadhatja azokat a tartományokat, amelyek a telepített Commerce környezethez lesznek társítva. Ezek a tartományok az e-commerce webhelyeket tároló, az ügyfelek számára elérhető tartományi névkiszolgálók (DNS). Ha ebben a szakaszban megad egy tartományt, akkor nem indítja el a tartomány forgalmának átirányítását a Dynamics 365 Commerce alkalmazás felé. A tartomány forgalma csak akkor lesz a Commerce végpontjára irányítva, amikor a DNS-CNAME rekord frissítve lesz, hogy a Commerce végpontját használja a tartományhoz.
+Egy e-kereskedelmi rendszernek a [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/) szolgáltatásban történő létesítése során az e-kereskedelmi létesítési képernyőn látható **Támogatott állomásnevek** mezője segítségével megadhatja azokat a tartományokat, amelyek a telepített Commerce környezethez lesznek társítva. Ezek a tartományok az e-kereskedelmi webhelyeket tároló, az ügyfelek számára elérhető tartományi névkiszolgálók (DNS). Ha ebben a szakaszban megad egy tartományt, akkor nem indítja el a tartomány forgalmának átirányítását a Dynamics 365 Commerce alkalmazás felé. A tartomány forgalma csak akkor lesz a Commerce végpontjára irányítva, amikor a DNS-CNAME rekord frissítve lesz, hogy a Commerce végpontját használja a tartományhoz.
 
 > [!NOTE]
 > A **Támogatott állomásnevek** mezőbe több tartományt is megadhat a pontosvesszőkel elválasztva.
 
-A következő ábra a LCS e-Commerce létesítési képernyőt mutatja, ahol a **Támogatott állomásnevek** mező ki van emelve. 
+A következő ábra a LCS e-kereskedelmi létesítési képernyőt mutatja, ahol a **Támogatott állomásnevek** mező ki van emelve. 
 
-![LCS e-Commerce létesítési képernyőn a **Támogatott állomásnevek** mező kijelölve](./media/Domains_ProvisioningeCommerceScreen.png)
+![LCS e-kereskedelmi létesítési képernyőn a **Támogatott állomásnevek** mező kijelölve](./media/Domains_ProvisioningeCommerceScreen.png)
 
 Szolgáltatási kérelmeket úgy is létrehozhat, hogy további tartományokat adjon hozzá egy környezethez, ha az üzembe helyezés már megtörtént. Szolgáltatási kérelem létrehozásához az LCS-ben a környezeten belül válassza a **Támogatás \> Támogatási problémák** lehetőséget, majd válassza a **Probléma beküldése** elemet.
 
 ## <a name="commerce-generated-urls"></a>Commerce által létrehozott URL-címek
 
-Az e-commerce környezet létesítése során a Commerce egy URL-címet fog generálni, amely a környezet működési címe lesz. Ez az URL-cím a környezet létesítése után, szerepel az e-Commerce oldal hivatkozásában, ami megjelenik az LCS-ben. A Commerce által generált URL-cím formátuma `https://<e-Commerce tenant name>.commerce.dynamics.com`, ahol az e-Commerce bérlő neve az LCS-ben a Commerce környezethez megadott név.
+A Dynamics 365 Commerce e-kereskedelmi környezet létesítése során a Commerce egy URL-címet fog generálni, amely a környezet működési címe lesz. Ez az URL-cím a környezet létesítése után, szerepel az e-kereskedelmi oldal hivatkozásában, ami megjelenik az LCS-ben. A Commerce által generált URL-cím formátuma `https://<e-commerce tenant name>.commerce.dynamics.com`, ahol az e-kereskedelmi bérlő neve az LCS-ben a Commerce környezethez megadott név.
 
 A termelési webhely állomásneveit a tesztkörnyezetben is használhatja. Ez a beállítás akkor lehet hasznos, ha a wehelyet egy tesztkörnyezetből termelésbe másolja.
 
 ## <a name="site-setup"></a>Hely beállítása
 
-Az e-Commerce környezet létesítése után be kell állítania a webhelyet a Commerce webhelyépítőben, hogy a webhelyet a munka URL-címhez rendelje.
+Az e-kereskedelmi környezet létesítése után be kell állítania a webhelyet a Commerce webhelyépítőben, hogy a webhelyet a munka URL-címhez rendelje.
 
 Amikor először állít be webhelyet a webhelykészítőben megjelenik a **Webhely beállítása** párbeszédpanel.
 
@@ -68,7 +68,7 @@ Az **Elérési út** mezőt üresen hagyhatja, vagy hozzáadhat egy további el�
 > [!NOTE]
 > Ez az elérési út **Egyeztetési útvonal** néven is ismert, amikor csatornát adnak hozzá a **Webhelybeállítások \> Csatornák** konfigurációs részben a webhelykészítőben.
 
-Ha például egy „xyz” nevű e-Commerce bérlőhöz van egy „fabrikam” nevű webhelye a webhelykészítőben és a webhelyet üres útvonallal állítja be, akkor a webböngészőben elérhetővé teszi a közzétett webhely-tartalmat úgy, hogy közvetlenül a Commerce által létrehozott alap URL-címre irányítja a webhelyet:
+Ha például egy „xyz” nevű e-kereskedelmi bérlőhöz van egy „fabrikam” nevű webhelye a webhelykészítőben és a webhelyet üres útvonallal állítja be, akkor a webböngészőben elérhetővé teszi a közzétett webhely-tartalmat úgy, hogy közvetlenül a Commerce által létrehozott alap URL-címre irányítja a webhelyet:
 
 `https://xyz.commerce.dynamics.com`
 
@@ -102,9 +102,9 @@ Ha egy tartományilekérdezési karakterlánc nincs megadva olyan környezetben,
 
 ## <a name="traffic-forwarding-in-production"></a>Forgalom továbbítása a termelésben
 
-Több tartomány szimulálható a tartományi lekérdezési karakterlánc paraméterei használatával a commerce.dynamics.com végponton is. Ha azonban a élesítés szükséges, akkor az egyéni tartomány forgalmát továbbítania kell a `<e-Commerce tenant name>.commerce.dynamics.com` végpontnak.
+Több tartomány szimulálható a tartományi lekérdezési karakterlánc paraméterei használatával a commerce.dynamics.com végponton is. Ha azonban a élesítés szükséges, akkor az egyéni tartomány forgalmát továbbítania kell a `<e-commerce tenant name>.commerce.dynamics.com` végpontnak.
 
-Az `<e-Commerce tenant name>.commerce.dynamics.com` végpont nem támogatja az egyéni tartományi biztonságos csomagrétegeket (SSL), ezért egyéni tartományokat kell beállítania a front door-szolgáltatás vagy content delivery network (CDN) használatával. 
+Az `<e-commerce tenant name>.commerce.dynamics.com` végpont nem támogatja az egyéni tartományi biztonságos csomagrétegeket (SSL), ezért egyéni tartományokat kell beállítania a front door-szolgáltatás vagy content delivery network (CDN) használatával. 
 
 Ha a Front Door-szolgáltatás vagy a CDN használatával egyéni tartományokat szeretne beállítani, akkor két lehetőség közül választhat:
 
@@ -115,7 +115,7 @@ A CDN-szolgáltatások közvetlen beállításával kapcsolatban a következő t
 
 A Commerce által biztosított Azure Front Door-példány használatához létre kell hoznia egy szolgáltatási kérelmet a CDN telepítéséhez a Commerce előkészítő csapatával. 
 
-- Meg kell adnia a vállalat nevét, a termelési tartományt, a környezet azonosítóját és a termelési e-Commerce-bérlő nevét. 
+- Meg kell adnia a vállalat nevét, a termelési tartományt, a környezet azonosítóját és a termelési e-kereskedelmi-bérlő nevét. 
 - Meg kell erősítenie, ha ez egy létező (jelenleg aktív helyen használt) tartomány vagy egy új tartomány. 
 - Új tartomány esetében a tartományhitelesítés és az SSL-tanúsítvány egyetlen lépésben érhető el. 
 - A meglévő webhelyet kiszolgáló tartományhoz egy több lépésből álló folyamat szükséges a tartományhitelesítés és az SSL-tanúsítvány létrehozásához. Ennek a folyamatnak egy 7 munkanapos szolgáltatásiszint-szerződése (SLA) egy tartomány élesítéséhez, mivel több egymást követő lépést is tartalmaz.
@@ -152,17 +152,17 @@ A Commerce rendszerbeli Azure Front Door példány nem támogatja a apex-tartom�
 
   ## <a name="additional-resources"></a>További erőforrások
 
-  [Új e-commerce webhely telepítése](deploy-ecommerce-site.md)
+  [Új e-kereskedelmi bérlő telepítése](deploy-ecommerce-site.md)
 
   [Online áruház csatornájának beállítása](online-stores.md)
 
   [E-kereskedelmi webhely létrehozása](create-ecommerce-site.md)
 
-  [Online webhely társítása csatornával](associate-site-online-store.md)
+  [Dynamics 365 Commerce webhely társítása online csatornával](associate-site-online-store.md)
 
   [Robots.txt fájlok kezelése](manage-robots-txt-files.md)
 
-  [URL-átirányítások feltöltése ömlesztett formában](upload-bulk-redirects.md)
+  [URL-átirányítások tömeges feltöltése](upload-bulk-redirects.md)
 
   [B2C-bérlő beállítása a Commerce-ben](set-up-B2C-tenant.md)
 

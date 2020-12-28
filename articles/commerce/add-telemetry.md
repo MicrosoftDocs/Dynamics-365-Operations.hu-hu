@@ -18,11 +18,11 @@ ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.openlocfilehash: e15ba6a0d624bd97c25936aa6d3bfafb844b66c0
-ms.sourcegitcommit: 7e8a9f92a2675bf5b620889678a2918f63f3e199
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "3901496"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412805"
 ---
 # <a name="add-script-code-to-site-pages-to-support-telemetry"></a>Parancsfájl hozzáadása a webhely oldalaihoz a telemetria támogatásához
 
@@ -74,7 +74,7 @@ A webhelykészítőben egy sablonhoz egy parancsfájlkódot tartalmazó töredé
 
 1. Nyissa mega **Sablonok** pontot, majd nyissa meg azon oldalakhoz tartozó sablont, amelyhez hozzá szeretné adni a parancsfájlkódot.
 1. A bal oldali panelen bontsa ki a sablon hierarchiáját a **HTML-fejléc** helyének megjelenítéséhez.
-1. A **HTML-fejléc** helyben válassza a három pont ( **…** ) gombot, majd válassza a **Töredék hozzáadása** elemet.
+1. A **HTML-fejléc** helyben válassza a három pont (**…**) gombot, majd válassza a **Töredék hozzáadása** elemet.
 1. Válassza ki a parancsfájl kódjához létrehozott töredéket.
 1. Válassza a **Mentés** parancsot, majd válassza a **Szerkesztés befejezése** elemet.
 1. Válassza a **Közzététel** lehetőséget.
@@ -89,7 +89,7 @@ Ha egy szövegközi parancsfájlt közvetlenül egy sablonhoz szeretne hozzáadn
 
 1. Nyissa mega **Sablonok** pontot, majd nyissa meg azon oldalakhoz tartozó sablont, amelyhez hozzá szeretné adni a parancsfájlkódot.
 1. A bal oldali panelen bontsa ki a sablon hierarchiáját a **HTML-fejléc** helyének megjelenítéséhez.
-1. A **HTML-fejléc** helyben válassza a három pont ( **…** ) gombot, majd válassza az **Modul hozzáadása** elemet.
+1. A **HTML-fejléc** helyben válassza a három pont (**…**) gombot, majd válassza az **Modul hozzáadása** elemet.
 1. A **Modul hozzáadása** párbeszédablakban válassza a **Szövegközi parancsfájl** lehetőséget.
 1. A jobb oldali ablaktáblában a **Szövegközi parancsfájl** területen adja meg a kliensoldali parancsfájlt. Ezt követően konfigurálja a szükséges egyéb beállításokat.
 1. Válassza a **Mentés** parancsot, majd válassza a **Szerkesztés befejezése** elemet.
@@ -101,7 +101,7 @@ Ha egy külső parancsfájlt közvetlenül egy sablonhoz szeretne hozzáadni a w
 
 1. Nyissa mega **Sablonok** pontot, majd nyissa meg azon oldalakhoz tartozó sablont, amelyhez hozzá szeretné adni a parancsfájlkódot.
 1. A bal oldali panelen bontsa ki a sablon hierarchiáját a **HTML-fejléc** helyének megjelenítéséhez.
-1. A **HTML-fejléc** helyben válassza a három pont ( **…** ) gombot, majd válassza az **Modul hozzáadása** elemet.
+1. A **HTML-fejléc** helyben válassza a három pont (**…**) gombot, majd válassza az **Modul hozzáadása** elemet.
 1. A **Modul hozzáadása** párbeszédablakban válassza a **Külső parancsfájl** lehetőséget.
 1. A jobb oldali ablaktáblában a **Parancsfájl forrása** területen adja meg a külső parancsfájlhoz tartozó külső vagy kapcsolódó URL-címet. Ezt követően konfigurálja a szükséges egyéb beállításokat.
 1. Válassza a **Mentés** parancsot, majd válassza a **Szerkesztés befejezése** elemet.

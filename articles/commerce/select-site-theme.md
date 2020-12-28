@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 1f92b31e870cbb4d3cc04870273693bed1378c5e
-ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
+ms.openlocfilehash: c54a3e9471fdeb56f27fe7c567c7cd7f0b7fd218
+ms.sourcegitcommit: 2ef23dcd4e42362186b9951e675010d97d55c6bd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3817706"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4556429"
 ---
 # <a name="select-a-site-theme"></a>Webhely témájának kiválasztása
 
@@ -32,9 +32,9 @@ Ez a témakör azt mutatja be, hogyan lehet egy webhely témáját beállítani 
 
 ## <a name="overview"></a>Áttekintés
 
-A webhely elrendezését és stílusát (például a betűtípusokat, a méreteket és a színeket) a kiválasztott téma határozza meg, amely a webhelyre alkalmazva van. A témát a vállalat fejlesztője hozza létre és telepíti. A témák áttekintését a [Témahasználat áttekintése](http://)című témakörben tekintheti meg. További információ a témák létrehozásáról és telepítéséről: [Új téma létrehozása](http://).
+A webhely elrendezését és stílusát (például a betűtípusokat, a méreteket és a színeket) a kiválasztott téma határozza meg, amely a webhelyre alkalmazva van. A témát a vállalat fejlesztője hozza létre és telepíti. A témák áttekintését a [Témahasználat áttekintése](e-commerce-extensibility/theming.md)című témakörben tekintheti meg. További információ a témák létrehozásáról és telepítéséről: [Új téma létrehozása](e-commerce-extensibility/create-theme.md).
 
-Alapértelmezés szerint,m amikor először létrehoz egy webhelyet, az a **Gyár**elnevezésű témát használja. Ez az alapértelmezett téma a Commerce modulkönyvtár részeként érhető el. Miután telepítette további témákat a webhelyhez, konfigurálhatja úgy a webhelyet, hogy valamelyiket használja ehelyett.
+Alapértelmezés szerint,m amikor először létrehoz egy webhelyet, az a **Gyár** elnevezésű témát használja. Ez az alapértelmezett téma a Commerce modulkönyvtár részeként érhető el. Miután telepítette további témákat a webhelyhez, konfigurálhatja úgy a webhelyet, hogy valamelyiket használja ehelyett.
 
 ## <a name="select-the-site-theme"></a>A webhely témájának kiválasztása
 
@@ -42,7 +42,7 @@ Ha ki szeretné választani a webhelyre alkalmazott témát, hajtsa végre az al
 
 1. A webhelyszerkesztő környezetben menjen a weboldalához.
 1. Lépjen a **Webhely kezelése** \> **Bővíthetőség** lehetőségre.
-1. A **Téma**területen válasszon ki egy témát a legördülő menüből.
+1. A **Téma** területen válasszon ki egy témát a legördülő menüből.
 1. Ha a kiválasztott témát a webhelyre szeretné alkalmazni , válassza a **Mentés és közzététel** parancsot.
 
 > [!NOTE]
@@ -63,3 +63,8 @@ Ha ki szeretné választani a webhelyre alkalmazott témát, hajtsa végre az al
 [Nyelvek hozzáadása a webhelyhez](add-languages-to-site.md)
 
 [Parancsfájl hozzáadása a webhely oldalaihoz a telemetria támogatásához](add-telemetry.md)
+
+[Témahasználat áttekintése](e-commerce-extensibility/theming.md)
+
+[Új téma létrehozása](e-commerce-extensibility/create-theme.md)
+

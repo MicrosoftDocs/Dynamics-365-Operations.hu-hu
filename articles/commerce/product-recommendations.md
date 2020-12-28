@@ -20,11 +20,11 @@ ms.author: moonma
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: 5aa7db8e53906f9e1416b912fe2c3b70d5430258
-ms.sourcegitcommit: 8905d7a7a010e451c5435086480f66650ec54926
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "3664882"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412735"
 ---
 # <a name="product-recommendations-overview"></a>Termékajánlatok áttekintése
 
@@ -47,7 +47,7 @@ A termékajánlások szolgáltatás mesterséges intelligencia és a gépi tanul
 
 Az alábbi POS-esetekben érhetők el a termékajánlások.
 
-- **Az e-Commerce-ben egy üzlet böngészési vagy érkezőoldalán**: Ha a vevők vagy az üzlet munkatársai meglátogatják a bolt egy oldalát, akkor az ajánlási rendszer az **Új**, **Legkelendőbb**és **Legnépszerűbb** listákban javasolhat termékeket.
+- **Az e-Commerce-ben egy üzlet böngészési vagy érkezőoldalán**: Ha a vevők vagy az üzlet munkatársai meglátogatják a bolt egy oldalát, akkor az ajánlási rendszer az **Új**, **Legkelendőbb** és **Legnépszerűbb** listákban javasolhat termékeket.
 - **A Termékrészletek oldalon:** Ha a vevők vagy az üzlet munkatársai felkeresnek egy **Termékrészletek** lapot, akkor az ajánlási motor további, valószínűleg megvásárolni kívánt cikkeket javasol. Ezek a cikkek a **Másoknak ez is tetszett** listán jelennek meg.
 - **A tranzakció oldalon vagy a pénztár oldalon:** Az ajánlási motor a kosárban található cikkek teljes listája alapján javasolja a cikkeket. Ezek a cikkek megjelennek a **Gyakran együtt vásárolt** listán.
 - **Személyre szabott ajánlások:**: a kereskedők a bejelentkezett vevők számára személyre szabott **kitárolásokat** adhatnak meg a listán, emellett olyan új funkciókat, amelyek lehetővé teszik a meglévő lista-forgatókönyvek személyre szabását a vevő alapján. További információ: [Személyre szabott ajánlatok engedélyezése.](personalized-recommendations.md).

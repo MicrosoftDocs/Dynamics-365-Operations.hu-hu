@@ -16,11 +16,11 @@ ms.author: boycez
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.10
 ms.openlocfilehash: 6946cb5f8bc8aa451f72d1eebcd324f408ad5f7a
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3975071"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412784"
 ---
 # <a name="enable-azure-active-directory-authentication-for-pos-sign-in"></a>Azure Active Directory-hitelesítés engedélyezése a pénztári bejelentkezéshez
 [!include [banner](includes/banner.md)]
@@ -34,7 +34,7 @@ Ahhoz, hogy az Azure AD az üzlet pénztári bejelentkezésének hitelesítési 
 
 A funkcióprofil konfigurálásához az alábbi lépéseket hajtsa végre.
 
-1. Ugorjon a következő elemre: **Retail és Commerce** \> **Csatorna beállítása** \> **Pénztárbeállítás** \> **Pénztárprofilok** \> **Funkcióprofilok** .
+1. Ugorjon a következő elemre: **Retail és Commerce** \> **Csatorna beállítása** \> **Pénztárbeállítás** \> **Pénztárprofilok** \> **Funkcióprofilok**.
 1. Válassza ki a módosítani kívánt funkcióprofilt.
 1. A **Funkciók** gyorslapon, a **Pénztár személyzeti bejelentkezés** szakaszban módosítsa a **Bejelentkezés hitelesítési módja** mező értékét **Személyzeti aozonosító és jelszó** értékről **Azure Active Directory** értékre.
 
@@ -43,7 +43,7 @@ Alapértelmezés szerint az összes funkcióprofil **személyzeti azonosítót �
 A beállítások alkalmazásához a pénztárkliensre kövesse ezeket a lépéseket.
 
 1. Ugorjon a **Kiskereskedelem és kereskedelem** \> **Kiskereskedelem és kereskedelem informatika** \> **Elosztási ütemezés** pontra.
-1. Futtassa a **1070** ( **Csatornakonfiguráció** ) elosztási ütemezést.
+1. Futtassa a **1070** (**Csatornakonfiguráció**) elosztási ütemezést.
 
 > [!NOTE]
 > Azure AD-hitelesítéshez internetkapcsolat szükséges. Nem működik, ha a pénztár offline módban van.
@@ -56,16 +56,16 @@ Ahhoz, hogy egy üzlet dolgozója Azure AD-fiókkal jelentkezhessen be a pénzt�
 
 Az Azure AD-fiók dolgozóhoz való társításához kövesse az alábbi lépéseket.
 
-1. Nyissa meg a következőt: **Kiskereskedelem és kereskedelem** \> **Alkalmazottak** \> **Dolgozók** .
+1. Nyissa meg a következőt: **Kiskereskedelem és kereskedelem** \> **Alkalmazottak** \> **Dolgozók**.
 1. A dolgozó részletes lapjának megnyitása.
 1. A műveleti ablaktáblán a **Kereskedelem** lapon a **Külső identitás** csoportban válassza a **Meglévő identitás társítása** lehetőséget.
 1. A **Meglévő külső identitás használata** párbeszédpanelen válassza a **Keresés e-maillel** parancsot, adja meg Azure AD-e-mail címet, majd válassza a **Keresés** lehetőséget.
 1. Válassza ki a visszaadott Azure AD-fiókot, majd az **OK** elemet.
 
-A rendszer kitölti az **Alias** , **UPN** , **Külső részazonosító** mezőket a dolgozó adatainak oldalának **Commerce** oldalán.
+A rendszer kitölti az **Alias**, **UPN**, **Külső részazonosító** mezőket a dolgozó adatainak oldalának **Commerce** oldalán.
 
 > [!NOTE]
-> A dolgozói rekord frissítése után – például ha egy új Azure AD számlát társítanak hozzá – megváltozik egy jelszó vagy frissül egy dolgozói címjegyzék, javasoljuk, hogy futtassa az **1060** ( **Személyzet** ) elosztási ütemezést a legfrissebb személyzeti adatok csatornához történő szinkronizálásához. Így a pénztár alkalmazás be tudja olvasni a megfelelő adatokat a felhasználó hitelesítéséhez és a hitelesítés ellenőrzéséhez.
+> A dolgozói rekord frissítése után – például ha egy új Azure AD számlát társítanak hozzá – megváltozik egy jelszó vagy frissül egy dolgozói címjegyzék, javasoljuk, hogy futtassa az **1060** (**Személyzet**) elosztási ütemezést a legfrissebb személyzeti adatok csatornához történő szinkronizálásához. Így a pénztár alkalmazás be tudja olvasni a megfelelő adatokat a felhasználó hitelesítéséhez és a hitelesítés ellenőrzéséhez.
 
 ## <a name="additional-resources"></a>További erőforrások
 

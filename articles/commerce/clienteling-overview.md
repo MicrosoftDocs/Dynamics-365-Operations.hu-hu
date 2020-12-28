@@ -20,11 +20,11 @@ ms.author: shajain
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: Version 10.0.7
 ms.openlocfilehash: d76668fa16a7634e7fbd953afaa6c89eed5457a2
-ms.sourcegitcommit: 21943fa91c35f063a5bd064290bf2c005394df52
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "3456507"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412857"
 ---
 # <a name="clienteling-overview"></a>Ügyfélkör áttekintése
 
@@ -93,7 +93,7 @@ Ha be szeretné kapcsolni az Ügyfélkör funkciót, hajtsa végre az alábbi l�
     > [!NOTE]
     > A tevékenységtípusokat a Commerce Scale Unit kéri le, amikor először kezdeményez valós idejű hívást. A tevékenységeket a lekérésük után néhány órán át gyorsítótárazza a rendszer. Ha módosítja a tevékenységtípusokat, várja meg, amíg a gyorsítótár érvénytelen lesz. Másik lehetőségként – nem termelési környezetek esetében – indítsa újra a Commerce Scale Unit szolgáltatást.
 
-8. Vegyen fel két gombot a megfelelő pénztári képernyő-elrendezésre, hogy az értékesítési munkatársak megtekinthessék a saját ügyfélkönyvüket és az üzlet ügyfélkönyvét. (Az üzlet ügyfélkönyvei között az összes olyan munkatárs ügyfélkönyvében szereplő ügyfél megtalálható, aki közös címjegyzéket használ az üzlettel.) A megfelelő műveletek neve **Vevők megtekintése az ügyfélkönyvben** és **A bolt ügyfélkönyvéből származó vevők megtekintése**. Az ügyfélkönyvekhez kapcsolódóan három további művelet érhető el. Ezek a műveletek határozzák meg, hogy melyik munkatársak adhatnak hozzá vevőket az ügyfélkönyvhöz, távolíthatnak el vevőket onnan, illetve rendelhetnek hozzá újra vevőket. A műveletek neve: **Vevő hozzáadása az ügyfélkönyvhöz**, **Vevő eltávolítása az ügyfélkönyvből**és **Vevő újbóli hozzárendelése az ügyfélkönyvhöz**.
+8. Vegyen fel két gombot a megfelelő pénztári képernyő-elrendezésre, hogy az értékesítési munkatársak megtekinthessék a saját ügyfélkönyvüket és az üzlet ügyfélkönyvét. (Az üzlet ügyfélkönyvei között az összes olyan munkatárs ügyfélkönyvében szereplő ügyfél megtalálható, aki közös címjegyzéket használ az üzlettel.) A megfelelő műveletek neve **Vevők megtekintése az ügyfélkönyvben** és **A bolt ügyfélkönyvéből származó vevők megtekintése**. Az ügyfélkönyvekhez kapcsolódóan három további művelet érhető el. Ezek a műveletek határozzák meg, hogy melyik munkatársak adhatnak hozzá vevőket az ügyfélkönyvhöz, távolíthatnak el vevőket onnan, illetve rendelhetnek hozzá újra vevőket. A műveletek neve: **Vevő hozzáadása az ügyfélkönyvhöz**, **Vevő eltávolítása az ügyfélkönyvből** és **Vevő újbóli hozzárendelése az ügyfélkönyvhöz**.
 9. Futtassa a következő felosztásütemezési feladatokat: 1040, 1150, 1110 és 1090.
 
 Miután elvégezte ezt az eljárást, az értékesítési munkatársak meg tudják nyitni a vevő részleteit tartalmazó lapot a pénztárban, és hozzá tudnak adni vevőket az ügyfélkönyvhöz, megtekinthetik és rögzíthetik a vevőkhöz tartozó tevékenységeket és jegyzeteket, valamint a vevők és az ügyfélkönyv attribútumaival megcélozhatnak vevőket az ügyfélkönyv szűrésére. A következő ábrán az ügyfélkönyv képe látható.

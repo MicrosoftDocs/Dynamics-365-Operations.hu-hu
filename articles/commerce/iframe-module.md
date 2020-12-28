@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 58446289c9a53af30d4d6d331a1a609ae0d2a0ad
-ms.sourcegitcommit: 97ceb24f191161ca601e0889a539df665834ac3b
+ms.openlocfilehash: 4afd8f60938c99d1981be1625ef28f91d9e4bb4c
+ms.sourcegitcommit: 9c05d48f6e03532aa711e1d89d0b2981e9d37200
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3818198"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4665396"
 ---
 # <a name="iframe-module"></a>iFrame modul
 
@@ -35,7 +35,7 @@ Ez a témakör az iFrame modullal foglalkozik, és bemutatja, hogy hogyan lehet 
 
 Az iFrame modul egy iFrame (szövegközi keretet), amely külső tartalmat tárol a webhelyen. Felhasználható például YouTube-videó vagy PDF-megjelenítő tárolására bármilyen webhelyen. 
 
-Az iFrame modulhoz cél URL-cím szükséges. Ezt követően egy HTML **iFrame** elemen belül tárolja a céloldal tartalmát. A külső URL-címeknek a webhely tartalmi biztonsági házirendjével (CSP) kapcsolatos határozatok engedélyezett elemek listáján (más néven „engedélyezési lista”) kell szerepelniük. Az iFrame-tartalom esetében az URL-címeket a **keret -elődelem** utasítással kell engedélyezni. További információ: [Tartalomra vonatkozó biztonsági irányelv (CSP) kezelése](manage-csp.md).
+Az iFrame modulhoz cél URL-cím szükséges. Ezt követően egy HTML **iFrame** elemen belül tárolja a céloldal tartalmát. A külső URL-címeknek a webhely tartalmi biztonsági házirendjével (CSP) kapcsolatos határozatok engedélyezett elemek listáján kell szerepelniük. Az iFrame-tartalom esetében az URL-címeket a **keret -elődelem** utasítással kell engedélyezni. További információ: [Tartalomra vonatkozó biztonsági irányelv (CSP) kezelése](manage-csp.md).
 
 > [!NOTE]
 > Az iFrame modul a Dynamics 365 Commerce 10.0.13-as verziójában érhető el.

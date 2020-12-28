@@ -20,11 +20,11 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.openlocfilehash: c7cb79fa82b579bee01e51cb635597cc5f711a98
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3022795"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412937"
 ---
 # <a name="set-up-recency-frequency-and-monetary-rfm-analysis"></a>Recency/gyakorisági/monetáris (RFM) elemzés beállítása
 
