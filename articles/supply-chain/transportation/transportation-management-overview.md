@@ -1,0 +1,89 @@
+---
+title: Szállítás kezelés áttekintése
+description: Ez a témakör áttekintést ad a szállításkezelés funkcióiról a Supply Chain Management szolgáltatásban.
+author: MarkusFogelberg
+manager: tfehr
+ms.date: 06/20/2017
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: TMSParameters,TMSRateRouteWorkbench, WHSLoadPlanningWorkbench, TMSLoadBuildTemplateApply, WHSLoadTemplate, TMSTransportationStatus, TMSLoadSeal, TMSLoadBuildProposal, TMSLoadBuildWorkbench, TMSLoadBuildStrategy, TMSLoadBuildStrategyAttributeValue
+audience: Application User
+ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
+ms.custom: 30251
+ms.assetid: d4e3550c-bca8-469c-82df-56ac0083e4ac
+ms.search.region: Global
+ms.author: mafoge
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 4affc5846ee329a4571d6fb3e0c42873387241ad
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4429886"
+---
+# <a name="transportation-management-overview"></a><span data-ttu-id="c1508-103">Szállításkezelés áttekintése</span><span class="sxs-lookup"><span data-stu-id="c1508-103">Transportation management overview</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="c1508-104">Ez a témakör áttekintést ad a szállításkezelés funkcióiról a Supply Chain Management szolgáltatásban.</span><span class="sxs-lookup"><span data-stu-id="c1508-104">This topic gives an overview of the transportation management functionality in Supply Chain Management.</span></span>
+
+<span data-ttu-id="c1508-105">A Szállításkezelés lehetővé teszi, hogy a vállalata szállítását használja, továbbá hogy azonosítsa a szállítót és az útvonal-tervezési megoldásokat a bejövő és a kimenő rendelésekhez.</span><span class="sxs-lookup"><span data-stu-id="c1508-105">Transportation management lets you use your company’s transportation, and also lets you identify vendor and routing solutions for inbound and outbound orders.</span></span> <span data-ttu-id="c1508-106">Például azonosíthatja a leggyorsabb vagy a legolcsóbb útvonalat a szállítmányhoz.</span><span class="sxs-lookup"><span data-stu-id="c1508-106">For example, you can identify the fastest route or the least expensive rate for a shipment.</span></span> <span data-ttu-id="c1508-107">A következő táblázat bemutatja a szállításkezelésben használatos fő eseteket.</span><span class="sxs-lookup"><span data-stu-id="c1508-107">The following table describes the main scenarios for using Transportation management.</span></span>
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><span data-ttu-id="c1508-108">Eset</span><span class="sxs-lookup"><span data-stu-id="c1508-108">Scenario</span></span></th>
+<th><span data-ttu-id="c1508-109">A szállításkezelés segíthet:</span><span class="sxs-lookup"><span data-stu-id="c1508-109">How Transportation management can help</span></span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span data-ttu-id="c1508-110">A külső logisztikai szolgáltatók használatában a szállítási tevékenységekhez.</span><span class="sxs-lookup"><span data-stu-id="c1508-110">Use external logistics providers for transportation activities.</span></span></td>
+<td><span data-ttu-id="c1508-111">A szállításkezelés használatában a bejövő és/vagy kimenő szállításhoz.</span><span class="sxs-lookup"><span data-stu-id="c1508-111">Use Transportation management for inbound and/or outbound transportation.</span></span></td>
+</tr>
+<tr class="even">
+<td><span data-ttu-id="c1508-112">A vállalat saját flottája elérhető kiszállításhoz/felvételhez, és a szállítási költségek a vevőkre vannak terhelve.</span><span class="sxs-lookup"><span data-stu-id="c1508-112">The company&#39;s own fleet is available for delivery/pickup, and delivery charges are passed on to customers.</span></span></td>
+<td><span data-ttu-id="c1508-113">A kimenő folyamatokhoz használhatja a szállításkezelést, hogy meghatározza a szállítási díjakat és a vevőkre terhelje azokat.</span><span class="sxs-lookup"><span data-stu-id="c1508-113">For the outbound processes, you can use Transportation management to determine the transportation charges and pass them on to customers.</span></span> <span data-ttu-id="c1508-114">Azonban a szállítói számlák egyeztetési folyamata nem szükséges.</span><span class="sxs-lookup"><span data-stu-id="c1508-114">However, the carrier invoice reconciliation process isn&#39;t required.</span></span></td>
+</tr>
+<tr class="odd">
+<td><span data-ttu-id="c1508-115">A vállalat saját flottája elérhető kiszállításhoz/felvételhez, de a szállítási díjak nincsenek a vevőkre terhelve, mert a termékárak tartalmazzák a szállítást.</span><span class="sxs-lookup"><span data-stu-id="c1508-115">The company&#39;s own fleet is available for delivery/pickup, but delivery charges aren&#39;t passed on to customers, because product prices include transportation.</span></span></td>
+<td><span data-ttu-id="c1508-116">Sok szállításkezelési funkcióra nincs szükség.</span><span class="sxs-lookup"><span data-stu-id="c1508-116">A lot of the Transportation management functionality isn&#39;t required.</span></span> <span data-ttu-id="c1508-117">Azonban használhatja a szállításkezelést, hogy meghatározza a szállítási díjakat, és ennek megfelelően állítsa be az eladási árat.</span><span class="sxs-lookup"><span data-stu-id="c1508-117">However, you can use Transportation management to determine the transportation rates and adjust the sales price accordingly.</span></span></td>
+</tr>
+<tr class="even">
+<td><span data-ttu-id="c1508-118">A logisztikai szolgáltatást egy másik jogi személy biztosítja, ugyanazon vállalatból.</span><span class="sxs-lookup"><span data-stu-id="c1508-118">Logistics service is provided by another legal entity in the same company.</span></span></td>
+<td><ul>
+<li><span data-ttu-id="c1508-119">Úgy használhatja a szállításkezelést, hogy a másik jogi személyt úgy kezeli, mint bármely másik szállítmányozót.</span><span class="sxs-lookup"><span data-stu-id="c1508-119">You can use Transportation management by treating the other legal entity like any other shipping carrier.</span></span> <span data-ttu-id="c1508-120">Nem automatizálhatja a gazdasági tranzakciókat jogi személyek között.</span><span class="sxs-lookup"><span data-stu-id="c1508-120">You can&#39;t automate the economic transactions between legal entities.</span></span> <span data-ttu-id="c1508-121">Ezért ezeket a tranzakciókat manuálisan kell kezelnie (például egy beszerzési rendelés létrehozásával).</span><span class="sxs-lookup"><span data-stu-id="c1508-121">Therefore, you must handle these transactions manually (for example, by creating a purchase order).</span></span></li>
+<li><span data-ttu-id="c1508-122">Abban a jogi személyben, amely a logisztikai szolgáltatást biztosítja a szállításkezelés használható a szállítási díjak megállapításához.</span><span class="sxs-lookup"><span data-stu-id="c1508-122">In the legal entity that provides the logistics services, Transportation management can be used to determine transportation rates.</span></span></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+
+## <a name="planning-transportation-in-supply-chain-management"></a><span data-ttu-id="c1508-123">Szállítás tervezése a Supply Chain Management alkalmazásban</span><span class="sxs-lookup"><span data-stu-id="c1508-123">Planning transportation in Supply Chain Management</span></span>
+<span data-ttu-id="c1508-124">A szállításkezelésben a szállítási tervezés alapulhat rendeléseken vagy az adott rendelések alapján létrehozott szállítmányokon.</span><span class="sxs-lookup"><span data-stu-id="c1508-124">In Transportation management, transportation planning can be based either on orders or on the shipments that are created based on those orders.</span></span> <span data-ttu-id="c1508-125">A szállítmány mindig létezik valamikor a folyamat során, de nem szükséges a szállítási tervezéshez.</span><span class="sxs-lookup"><span data-stu-id="c1508-125">The shipments always exist at some point in time but aren't required for transportation planning.</span></span> <span data-ttu-id="c1508-126">Az átmozgatási rendelések a kimeneti eset részei, és megtervezhetők az értékesítési rendelésekkel közösen.</span><span class="sxs-lookup"><span data-stu-id="c1508-126">Transfer orders are part of the outbound scenario and can be planned together with sales orders.</span></span> 
+
+![Rajz betöltése](./media/Load-drawing1-1024x477.jpg)
+
+## <a name="inbound-transportation"></a><span data-ttu-id="c1508-128">Kimenő szállítás</span><span class="sxs-lookup"><span data-stu-id="c1508-128">Inbound transportation</span></span>
+<span data-ttu-id="c1508-129">Amikor cikkeket rendel szállítótól, és a cikkeket a raktárába kell szállítani, akkor érdemes saját magának elrendeznie a cikkek szállítását.</span><span class="sxs-lookup"><span data-stu-id="c1508-129">When you order items from a vendor, and the items must be delivered to your warehouse, you might want to arrange the transport of the items yourself.</span></span> <span data-ttu-id="c1508-130">Arra használhatja a Supply Chain Management rendszert, hogy megtervezze egy beérkező rakomány fogadását.</span><span class="sxs-lookup"><span data-stu-id="c1508-130">You can use Supply Chain Management to plan the transportation and receipt of the inbound load.</span></span> <span data-ttu-id="c1508-131">A következő ábra bemutatja a szállítás bejövő terhelésének tervezéséhez és feldolgozásához használatos üzleti folyamatokat.</span><span class="sxs-lookup"><span data-stu-id="c1508-131">The following illustration shows the business process flow for planning transportation for an inbound load.</span></span> 
+
+![Üzleti folyamatábra: bejövő szállítási rakományok](./media/Businessprocessflowforinboundloadtransportation.jpg)
+
+## <a name="outbound-transportation"></a><span data-ttu-id="c1508-133">Kimenő szállítás</span><span class="sxs-lookup"><span data-stu-id="c1508-133">Outbound transportation</span></span>
+<span data-ttu-id="c1508-134">Megtervezheti és feldolgozhat egy kimenő terhelést bizonyos cikkek szállításához a cég raktárából a vevőhöz.</span><span class="sxs-lookup"><span data-stu-id="c1508-134">You can plan and process an outbound load to ship specific items from a company’s warehouse to a customer.</span></span> <span data-ttu-id="c1508-135">Arra használhatja a Supply Chain Management rendszert, hogy megtervezze egy kimenő rakomány szállítását.</span><span class="sxs-lookup"><span data-stu-id="c1508-135">You can use Supply Chain Management to plan the transportation and shipping of an outbound load.</span></span> <span data-ttu-id="c1508-136">A következő ábra bemutatja a szállítás kimenő terhelésének tervezéséhez és feldolgozásához használatos üzleti folyamatokat.</span><span class="sxs-lookup"><span data-stu-id="c1508-136">The following illustration shows the business process flow for planning and processing outbound loads for shipping.</span></span> 
+
+![Kimenő rakományok tervezése és feldolgozása](./media/Planningandprocessingoutboundloads.jpg)
+
+## <a name="load-building"></a><span data-ttu-id="c1508-138">Rakomány-összeállítás</span><span class="sxs-lookup"><span data-stu-id="c1508-138">Load building</span></span>
+<span data-ttu-id="c1508-139">A Supply Chain Management biztosít egy rakomány-összeállítási stratégiát, amely a Térfogaton alapuló rakomány-összeállítási stratégia nevet viseli.</span><span class="sxs-lookup"><span data-stu-id="c1508-139">Supply Chain Management provides a load building strategy that is named the Volume-based load building strategy.</span></span> <span data-ttu-id="c1508-140">Ez a stratégia lehetővé teszi a rakomány-sablonban megadott maximális magasság- és súlyértékek használatát, vagy a beállítások felülírását új értékek megadásával.</span><span class="sxs-lookup"><span data-stu-id="c1508-140">This strategy lets you use the maximum values that are specified for height and weight in the load template, or you can override the settings by entering new values.</span></span> <span data-ttu-id="c1508-141">A használatához válassza ki a stratégiát a **Rakomány-összeállító munkaterület** oldal **Beállítások** gyorslapján található **Rakomány-összeállítási stratégia** mezőben.</span><span class="sxs-lookup"><span data-stu-id="c1508-141">To use this strategy, select it in the **Load building strategy** field on the **Setup** FastTab on the **Load building workbench** page.</span></span> <span data-ttu-id="c1508-142">Ezenkívül hozzáadhatja a saját rakomány-összeállítási stratégiáját egy új osztály létrehozásával az alkalmazásobjektum-fán (AOT) belül.</span><span class="sxs-lookup"><span data-stu-id="c1508-142">In addition, you can add your own load-building strategies by creating a new class in the Application Object Tree (AOT).</span></span>
+
+
+
