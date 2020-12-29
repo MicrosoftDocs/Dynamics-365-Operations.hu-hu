@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: 552b1b211460ae86af06e183af91c062a3ee569a
-ms.sourcegitcommit: c986d5234b81d31cc6d054298be6f6ec92c1754c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3889721"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429714"
 ---
 # <a name="procurement"></a>Beszerzés
 
@@ -80,7 +80,7 @@ Az **Összes munkarendelés** listaoldalon kiválaszthatja a munkarendelési fel
 
 4. Válassza a **Cikkfeladatok** > **Beszerzési rendelés munkarendelési feladatból** elemet.
 
-5. A **Projekt beszerzési rendelései** listaoldalon kattintson az **Új**gombra.
+5. A **Projekt beszerzési rendelései** listaoldalon kattintson az **Új** gombra.
 
 6. Hozza létre a beszerzési rendelést.
 

@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 3903f1fe5b5f7d2755ec895eded73de6d165e68e
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3978701"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429348"
 ---
 # <a name="create-service-subscriptions-from-a-project"></a>Előfizetés létrehozása projektből    
 
@@ -32,9 +32,9 @@ ms.locfileid: "3978701"
 
 Szolgáltatási előfizetést egy adott projektből a **Projektvezetés és könyvelés** területen tud létrehozni.
 
-1.  Kattintson a következőkre: **Projektvezetés és könyvelés** \> **Közös** \> **Projektek** \> **Minden projekt** . Nyissa meg azt a projektet, amelyhez előfizetést kíván létrehozni.
+1.  Kattintson a következőkre: **Projektvezetés és könyvelés** \> **Közös** \> **Projektek** \> **Minden projekt**. Nyissa meg azt a projektet, amelyhez előfizetést kíván létrehozni.
 
-2.  A **Projektek** képernyőn, a **Műveleti ablakban** , a **Kezelés** lapon kattintson a **Szolgáltatás** \> **Szolgáltatási előfizetés** lehetőségre.
+2.  A **Projektek** képernyőn, a **Műveleti ablakban**, a **Kezelés** lapon kattintson a **Szolgáltatás** \> **Szolgáltatási előfizetés** lehetőségre.
 
 3.  Az **Előfizetés** képernyőn, a **Szolgáltatási előfizetés** mezőbe írjon be egy egyedi azonosító számot. A projektszámot a rendszer automatikusan beírja a kiválasztott projekt előfizetésébe.
 

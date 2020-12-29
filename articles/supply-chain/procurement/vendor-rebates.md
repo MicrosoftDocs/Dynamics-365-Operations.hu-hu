@@ -17,11 +17,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 2012
 ms.openlocfilehash: 7c0f98ffc6ede74f93523b9fa9800e7b6617d9b6
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3978337"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429733"
 ---
 # <a name="vendor-rebates"></a>Szállítói visszatérítések
 
@@ -92,7 +92,7 @@ A szerződési sorokban részletesebben megadhatja a szállítói visszatérít�
 - A **Sorok** gyorslapon látható, hogyan állíthatók be különböző visszatérítések megadásához használt mennyiségi rétegek. Például az előző példában a **Kezdő érték** és a **Záró érték** mezők mutatják, hogy a 10 és 19 egység közötti termékmennyiség egységenkénti 15 USD visszatérítésre jogosít.
 
     > [!NOTE]
-    > A **Kezdő érték** érték tartalmazza a határértéket, a **Záró érték** érték pedig nem. Például a **Visszatérítéssor törésének típusa** mező értéke **Mennyiség** , és Ön **1** -et ad meg a **Kezdő érték** mezőben és **3** -at a **Záró érték** mezőben. Ebben az esetben a visszatérítési összeg egy vagy két cikk beszerzése esetén érvényes, de nem három cikk beszerzése esetén.
+    > A **Kezdő érték** érték tartalmazza a határértéket, a **Záró érték** érték pedig nem. Például a **Visszatérítéssor törésének típusa** mező értéke **Mennyiség**, és Ön **1**-et ad meg a **Kezdő érték** mezőben és **3**-at a **Záró érték** mezőben. Ebben az esetben a visszatérítési összeg egy vagy két cikk beszerzése esetén érvényes, de nem három cikk beszerzése esetén.
 
 - A **Munkafolyamat-jóváhagyási állapot** mezőben a **Jóváhagyva** érték azt jelzi, hogy a megállapodás alkalmazható azon beszerzési rendelésekre, amelyek megfelelnek a megállapodás feltételeinek.
 
@@ -108,7 +108,7 @@ Amikor egy olyan szállító kap beszerzési rendelést, amellyel a vállalatnak
 A visszatérítési információk az **Ár részletei** lap **Becsült haszonkulcs** részének **Szállítói visszatérítés** mezőjében is megjelennek.
 
 > [!NOTE]
-> A **Beszerzési és forrásparaméterek** oldalon az **Árak** lapon ellenőrizze, hogy az **Áradatok engedélyezése** a beállítás **Igen** -e. Ha a beállítás értéke **Nem** , nem lehet a visszatérítéseket megtekinteni.
+> A **Beszerzési és forrásparaméterek** oldalon az **Árak** lapon ellenőrizze, hogy az **Áradatok engedélyezése** a beállítás **Igen**-e. Ha a beállítás értéke **Nem**, nem lehet a visszatérítéseket megtekinteni.
 
 ## <a name="review-and-approve-claims"></a>Igények ellenőrzése és jóváhagyása
 
@@ -116,10 +116,10 @@ A létrehozott visszatérítési igények a szállítótól érkező várható j
 
 ### <a name="the-status-of-claims-and-the-effect-on-the-approval-process"></a>Az igények állapota és hatása a jóváhagyási folyamatra
 
-Igény létrehozásakor az állapot értéke **Számítandó** , ha a visszatérítés megadása halmozott alapon történik, illetve **Számított** , ha a visszatérítés megadása számlánként történik. Ha az igény állapota **Számítandó** , az igénynek egy számítási folyamaton kell átesnie, amely az Összesítés funkció kezel. Csak a **Számított** állapotú igények kerülhetnek be a jóváhagyási folyamatba.
+Igény létrehozásakor az állapot értéke **Számítandó**, ha a visszatérítés megadása halmozott alapon történik, illetve **Számított**, ha a visszatérítés megadása számlánként történik. Ha az igény állapota **Számítandó**, az igénynek egy számítási folyamaton kell átesnie, amely az Összesítés funkció kezel. Csak a **Számított** állapotú igények kerülhetnek be a jóváhagyási folyamatba.
 
 > [!NOTE]
-> Ha a **Jóváhagyás szükséges** beállítás értéke egy szállítói visszatérítési megállapodásban **Nem** , a létrehozott igények állapota  **Jóváhagyva** lesz. A jóváhagyás kötelező a halmozott adatok alapján biztosított igényeknél.
+> Ha a **Jóváhagyás szükséges** beállítás értéke egy szállítói visszatérítési megállapodásban **Nem**, a létrehozott igények állapota  **Jóváhagyva** lesz. A jóváhagyás kötelező a halmozott adatok alapján biztosított igényeknél.
 
 ### <a name="approve-claims-and-view-postings-and-invoice-details"></a>Igények jóváhagyása, feladások és számlaadatok megtekintése
 
@@ -138,7 +138,7 @@ Az igények jóváhagyást követően feldolgozhatók a Kötelezettségek (A/P) 
 
     Az igények a normál A/P folyamatba való átviteléhez az A/P adminisztrátornak végre kell hajtania a visszatérítési igényt, amihez a Folyamat funkciót kell futtatni.
 
-6. A műveleti ablaktáblán válassza a **Folyamat** , majd a **Szűrő** elemet. A **Szállítói számla** mező **Feltételek** mezőjében válassza ki a szállítót, amelynél visszatérítési igényt kíván feldolgozni, válassza ki a többi vonatkozó szűrőt, majd válassza az **OK** gombot.
+6. A műveleti ablaktáblán válassza a **Folyamat**, majd a **Szűrő** elemet. A **Szállítói számla** mező **Feltételek** mezőjében válassza ki a szállítót, amelynél visszatérítési igényt kíván feldolgozni, válassza ki a többi vonatkozó szűrőt, majd válassza az **OK** gombot.
 
     Az üzenetoszlopok és az, hogy az állapot **Kész** értékre vált, jelzik, hogy a következő eseményeket megtörténtek:
 

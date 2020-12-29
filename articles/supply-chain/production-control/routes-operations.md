@@ -20,11 +20,11 @@ ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: adf890f5305f4e6a62c2d7527ff3b593ed61eff3
-ms.sourcegitcommit: c55fecae96b4bb27bc313ba10a97eddb9c91350a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "3989241"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429329"
 ---
 # <a name="routes-and-operations"></a>Útvonalak és műveletek
 
@@ -38,7 +38,7 @@ Ez a témakör információkat nyújt az útvonalakkal és a műveletekkel kapcs
 Az útvonal leírja azoknak a műveleteknek a sorrendjét, amelyek egy termék vagy termékváltozat előállításához szükségesek. Az útvonal minden egyes műveletnél meghatározza azt is, hogy milyen üzemi erőforrások szükségesek, mennyi idő kell a művelet beállítására és végrehajtására továbbá azt is, hogy miként kell kiszámítani a költséget. Azonos útvonallal több termék is előállítható, de meghatározhat egyedi útvonalat is minden egyes termékhez vagy termékváltozathoz. Akár egyetlen termékhez is létrehozhat több útvonalat. Ebben az esetben az útvonal olyan tényezők alapján váltakozik, mint például az előállítandó mennyiség. Az útvonal meghatározása a Supply Chain Management szolgáltatásban négy olyan különálló elemből áll, amelyek együttesen leírják a termelési folyamatot:
 
 - **Útvonal** – Az útvonal határozza meg az előállítási folyamat szerkezetét. Más szavakkal a műveletek sorrendjét határozza meg.
-- **Művelet** – A művelet egy névvel ellátott lépést jelent az útvonalban, mint például **Összeszerelés** . Azonos művelet több útvonalnál is előfordulhat, így a műveleti számok eltérőek lehetnek.
+- **Művelet** – A művelet egy névvel ellátott lépést jelent az útvonalban, mint például **Összeszerelés**. Azonos művelet több útvonalnál is előfordulhat, így a műveleti számok eltérőek lehetnek.
 - **Művelet kapcsolata** – Egy művelet kapcsolata a művelet tulajdonságait határozza meg, így például a beállítási és futási időket, a költségkategóriákat, a fogyasztási paramétereket, valamint az erőforrás-szükségletet. A művelet kapcsolata lehetővé teszi a művelet tulajdonságai számára a változtathatóságot, azon útvonaltól függően, amelyet a művelet használ, illetve az előállított termékektől függően.
 - **Útvonalverzió** – Az útvonalverzió határozza meg a termék vagy termékváltozat előállításánál használt útvonalat. Az útvonalverziók lehetővé teszik az útvonalak újrahasznosítását a különböző termékekben, és időről időre módosíthatók. Azt is lehetővé teszik, hogy ugyanannál a terméknél más és más útvonalakat használjanak. Ebben az esetben az útvonal olyan tényezők alapján váltakozik, mint például a hely vagy az előállítandó mennyiség.
 
@@ -106,7 +106,7 @@ A műveletek következő tulajdonságai maradnak meg a műveleti kapcsolatnál:
 - Erőforrásigények
 - Megjegyzések és utasítások
 
-Egy műveletnél több műveleti kapcsolatot is meghatározhat. Azonban minden egyes műveleti kapcsolat egyetlen műveletre jellemző, és olyan tulajdonságokat tárol, amelyek egy cikkcsoporthoz kapcsolódó útvonalhoz, kiadott termékhez vagy kiadott termékek egy készletéhez tartoznak. Emiatt ugyanazt a műveletet több olyan útvonalnál is használni lehet, amelyek különböző műveleti tulajdonságokkal rendelkeznek. Ezen túlmenően egyszerűbben tudja karbantartani az alapadatokat, ha olyan szabványos műveleteket használ, melyeknek azonosak a műveleti tulajdonságai, tekintet nélkül a használt útvonalra és az előállított termékre. A műveleti kapcsolat hatóköre a **Cikk-kód** , a **Cikk-kapcsolat** , az **Útvonalkód** és az **Útvonalkapcsolat** tulajdonságokkal határozható meg, ahogyan az a következő táblázatban is látható.
+Egy műveletnél több műveleti kapcsolatot is meghatározhat. Azonban minden egyes műveleti kapcsolat egyetlen műveletre jellemző, és olyan tulajdonságokat tárol, amelyek egy cikkcsoporthoz kapcsolódó útvonalhoz, kiadott termékhez vagy kiadott termékek egy készletéhez tartoznak. Emiatt ugyanazt a műveletet több olyan útvonalnál is használni lehet, amelyek különböző műveleti tulajdonságokkal rendelkeznek. Ezen túlmenően egyszerűbben tudja karbantartani az alapadatokat, ha olyan szabványos műveleteket használ, melyeknek azonosak a műveleti tulajdonságai, tekintet nélkül a használt útvonalra és az előállított termékre. A műveleti kapcsolat hatóköre a **Cikk-kód**, a **Cikk-kapcsolat**, az **Útvonalkód** és az **Útvonalkapcsolat** tulajdonságokkal határozható meg, ahogyan az a következő táblázatban is látható.
 
 | Cikk kódja | Cikk-kapcsolat         | Útvonal kódja | Útvonalkapcsolat   | A műveleti kapcsolat hatóköre                                                                                                                                                                                                                                                                              |
 |-----------|-----------------------|------------|------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -246,7 +246,7 @@ A feladattípusok között megtalálja az Átfedést. Átfedés lehetővé teszi
 Ezért, ha az Aktiválás van kiválasztva az Átfedéshez a többi beállítás (feladatkezelés, munkaidő és a kapacitás) nem befolyásolják ezt az útvonalcsoportot. 
 
 > [!NOTE]
-> Verziók frissítésekor előfordulhat a következő hiba: **„Az ütemezési motor meghívása során CLR-hiba történt.”** . Ha ezt a hibát kapja menjen az **Útvonal-csoportok** lap és minden az útvonalon, ahol aktiválta az **Átfedést** , törölje a jelet a **Feladatkezelés** , **Munkaidő** és **Kapacitás** beállításokból. 
+> Verziók frissítésekor előfordulhat a következő hiba: **„Az ütemezési motor meghívása során CLR-hiba történt.”**. Ha ezt a hibát kapja menjen az **Útvonal-csoportok** lap és minden az útvonalon, ahol aktiválta az **Átfedést**, törölje a jelet a **Feladatkezelés**, **Munkaidő** és **Kapacitás** beállításokból. 
 
 ## <a name="additional-resources"></a>További erőforrások
 

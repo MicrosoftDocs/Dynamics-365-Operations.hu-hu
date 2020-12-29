@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: cba680d0ad626e0275539d7478a83639a9d22635
-ms.sourcegitcommit: c986d5234b81d31cc6d054298be6f6ec92c1754c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3889649"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429582"
 ---
 # <a name="asset-loans"></a>Kölcsönzött eszközök
 
@@ -36,7 +36,7 @@ Ha a vállalat a javítási vagy karbantartási feladatokhoz a belső helyekről
 ## <a name="register-asset-loans-on-a-maintenance-request"></a>Kölcsönzött eszközök rögzítése karbantartási kéréshez
 
 1. Válassza az **Eszközkezelés** \> **Közös** \> **Karbantartási kérések** \> **Összes karbantartási kérés** vagy **Aktív karbantartási kérések** lehetőséget.
-2. Válassza ki azt a karbantartási kérést, amelyre azeszköz kölcsönzését regisztrálni szeretné, majd válassza a **Szerkesztés**parancsot.
+2. Válassza ki azt a karbantartási kérést, amelyre azeszköz kölcsönzését regisztrálni szeretné, majd válassza a **Szerkesztés** parancsot.
 3. A **Kérelem** oldalon válassza a **Kölcsönzött eszköz küldése** lehetőséget.
 4. Válassza ki az eszközt, és adja meg a várható visszaadási dátumot.
 5. Válassza ki az **OK** lehetőséget.

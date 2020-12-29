@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: 4a4b148d9ac5d032d2caa5fcea0398a5a3726f0e
-ms.sourcegitcommit: c986d5234b81d31cc6d054298be6f6ec92c1754c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3888977"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429335"
 ---
 # <a name="manually-created-work-orders"></a>Manuálisan létrehozott munkarendelések
 
@@ -74,7 +74,7 @@ Vegye figyelembe az alábbiakat:
 
 - A program minden alkalommal újraszámolja a munkarendelési feladaton szereplő kritikusságot, amikor a munkarendeléshez hozzáadnak vagy róla eltávolítanak egy munkarendelési feladatot.
 
-- Az **Összes munkarendelés** részletek nézet > **Fejléc** lap > **Ütemezés** gyorslapon kiválaszthatja a felelős karbantartási dolgozói csoportot vagy a felelős karbantartási dolgozót a **Felelős csoport**vagy a **Felelős** mezőben. Ezek a beállítások módosíthatók, amíg a munkarendelés aktív. Módosíthatók például akkor, amikor a munkarendelés életciklus-állapota megváltozik. A munkarendelés létrehozása során végzett automatikus kiválasztás a **Felelős karbantartási dolgozók** oldal beállításain alapul. Ha egy munkarendelés létrehozása után hozzáadja vagy eltávolítja a munkarendelési feladatokat, és a **Felelős csoport** és a **Felelős** mező üresen marad, amikor frissíti a munkarendelést, az Eszközkezelő megpróbálja megtalálni a felelős karbantartási dolgozói csoportot vagy felelős karbantartási dolgozót a beállítási képernyőn. Ha a **Felelős csoport** mező vagy a **Felelős** mező ki már be van állítva a munkarendelés frissítésekor, akkor nem történik módosítás. A karbantartási dolgozók és karbantartási dolgozói csoportok beállítására vonatkozó további tudnivalókért tanulmányozza a [Felelős karbantartási dolgozók](../setup-for-maintenance-requests/responsible-workers.md) című témakört.
+- Az **Összes munkarendelés** részletek nézet > **Fejléc** lap > **Ütemezés** gyorslapon kiválaszthatja a felelős karbantartási dolgozói csoportot vagy a felelős karbantartási dolgozót a **Felelős csoport** vagy a **Felelős** mezőben. Ezek a beállítások módosíthatók, amíg a munkarendelés aktív. Módosíthatók például akkor, amikor a munkarendelés életciklus-állapota megváltozik. A munkarendelés létrehozása során végzett automatikus kiválasztás a **Felelős karbantartási dolgozók** oldal beállításain alapul. Ha egy munkarendelés létrehozása után hozzáadja vagy eltávolítja a munkarendelési feladatokat, és a **Felelős csoport** és a **Felelős** mező üresen marad, amikor frissíti a munkarendelést, az Eszközkezelő megpróbálja megtalálni a felelős karbantartási dolgozói csoportot vagy felelős karbantartási dolgozót a beállítási képernyőn. Ha a **Felelős csoport** mező vagy a **Felelős** mező ki már be van állítva a munkarendelés frissítésekor, akkor nem történik módosítás. A karbantartási dolgozók és karbantartási dolgozói csoportok beállítására vonatkozó további tudnivalókért tanulmányozza a [Felelős karbantartási dolgozók](../setup-for-maintenance-requests/responsible-workers.md) című témakört.
 
 - A [Karbantartás állapota](../controlling-and-reporting/maintenance-status.md) oldalon számítást végezhet, hogy áttekintést kapjon a beérkező és a teljesített munkarendelésekre vonatkozó terhelésekről.  
 

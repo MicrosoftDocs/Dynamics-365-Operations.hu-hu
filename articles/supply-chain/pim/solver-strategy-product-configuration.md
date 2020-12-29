@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: cb0fc054e0feec4c54c0bd916e01ce3a2a4cd903
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3986551"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429749"
 ---
 # <a name="solver-strategy-for-product-configuration"></a>Feloldási stratégia termékkonfigurációhoz
 
@@ -45,7 +45,7 @@ A feloldási stratégia fogalma most a következő stratégiákból áll:
 
 A termékkonfigurációs modell [kényszerkielégítési problémaként (CSP)](http://aima.cs.berkeley.edu/2nd-ed/newchap05.pdf) fogalmazható meg. A Microsoft Solver Foundation (MSF) kétféle feloldási stratégiát kínál a CSP-k megoldására, amelyek termékkonfigurációs modellekből használhatók. E feloldási stratégiák [heurisztikára](https://techterms.com/definition/heuristic) támaszkodnak, amelynek segítségével meghatározható a CSP a probléma megoldása során figyelembe vett változóinak sorrendje. A heurisztika jelentősen befolyásolhatja a teljesítményt probléma vagy problémaosztály megoldásánál.
 
-A termékkonfigurációs modellek feloldási stratégiája határozza meg, hogy melyik feloldást kell használni heurisztikával. Az **Alapértelmezett** , **Előbb a minimumtartományok** és **Felülről lefelé** stratégiák az MSF-ből származó két megoldót használják, míg a  **Z3** stratégia a Z3 feloldót alkalmazza. 
+A termékkonfigurációs modellek feloldási stratégiája határozza meg, hogy melyik feloldást kell használni heurisztikával. Az **Alapértelmezett**, **Előbb a minimumtartományok** és **Felülről lefelé** stratégiák az MSF-ből származó két megoldót használják, míg a  **Z3** stratégia a Z3 feloldót alkalmazza. 
 
 Valós vevői végrehajtási tanulmányok kimutatták, hogy a termékkonfigurációs modell feloldási stratégiájának változása a válaszidőt percekről milliszekundumokra csökkentheti. Ezért érdemes különböző feloldási stratégiák kipróbálására törekedni a termékkonfigurációs modellhez illő leghatékonyabb stratégia megtalálásához.
 

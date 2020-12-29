@@ -20,11 +20,11 @@ ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 8ebd53d66eb81bbee9d3e67d05102c8df413d2a3
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3214093"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429479"
 ---
 # <a name="update-standard-costs-for-a-new-manufactured-item"></a>Újonnan gyártott cikkek elszámoló árának frissítése
 
@@ -37,7 +37,7 @@ Az alábbi irányelvek feltételezik, hogy a kétverziós megközelítés segít
 -   Rendeljen hozzá egy **Alapköltség** típusú költségszámítást.
 -   Rendeljen hozzá egy egyértelmű azonosítót a költségverzióhoz, amely utal a költségverzió tartalmára. Például: **2016-FRISSÍTÉSEK**.
 -   Az **Ártípusok engedélyezése** mezőcsoportban, győződjön meg róla, hogy az **Önköltségi ár** értéke **Igen**.
--   Engedélyezze a költség feljegyzések bevitelét minden webhely számára úgy, hogy üresen hagyja a **Webhely**mezőt. Ha megad egy webhelyet, akkor a költségrekordok csak arra a webhelyre rögzíthetők.
+-   Engedélyezze a költség feljegyzések bevitelét minden webhely számára úgy, hogy üresen hagyja a **Webhely** mezőt. Ha megad egy webhelyet, akkor a költségrekordok csak arra a webhelyre rögzíthetők.
 -   Használja az **Aktív** tartalékelvet.
 
 Ha a befagyasztott időszak során új gyártott cikkeket kíván hozzáadni, tegye a következőket:

@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: c7fb37483412fdd09fe3734ddb148b050ec02951
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3986974"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429452"
 ---
 # <a name="formulas-and-formula-versions"></a>Receptúrák és receptúraverziók
 
@@ -44,7 +44,7 @@ Receptúrasor létrehozásakor a sortípus segítségével adható meg, hogy a r
 | Sor típusa     | Leírás  |
 |---------------|--------------|
 | Tétel          | Válassza a **Cikk** típust, amikor a cikk készletből kiadott nyersanyag vagy félkész áru, illetve amikor a cikk szolgáltatás. |
-| Látszólagos       | Válassza a **Látszólagos** típust, amikor a receptúrasorokban szereplő alacsonyabb szintű receptúrás cikkeket akarja bontani. Ha a kötegrendelés becslését végzi, és a receptúrás cikkek bontva vannak, az sszetevő cikkek receptúrasorokként jelennek meg a kötegrendelésen. Ezenkívül a megfelelő útvonalak hozzáadódnak a termelési útvonalhoz. A receptúrás cikkek alábontása az aktuális konfiguráció használatával történik. A **Látszólagos** sortípus használata esetén kezelhetők a különböző receptúraszinteken megjelenő termelési és mérési konfigurációk. Ha egy termékhez a **Látszólagos** lehetőséget választja a **Mérnök** gyorslapon a **Kiadott termék részletei** oldalon, és ezután ezt a terméket felhasználja a receptúrában, a receptúrasor sortípusa **Látszólagos** értékre változik. A **Látszólagos** nem választható ki tényleges súllyal rendelkező cikkekhez, sem olyan cikkekhez, amelyeknél a termelés típusa **Társtermék** , **Melléktermék** vagy **Tervezési cikk** . |
+| Látszólagos       | Válassza a **Látszólagos** típust, amikor a receptúrasorokban szereplő alacsonyabb szintű receptúrás cikkeket akarja bontani. Ha a kötegrendelés becslését végzi, és a receptúrás cikkek bontva vannak, az sszetevő cikkek receptúrasorokként jelennek meg a kötegrendelésen. Ezenkívül a megfelelő útvonalak hozzáadódnak a termelési útvonalhoz. A receptúrás cikkek alábontása az aktuális konfiguráció használatával történik. A **Látszólagos** sortípus használata esetén kezelhetők a különböző receptúraszinteken megjelenő termelési és mérési konfigurációk. Ha egy termékhez a **Látszólagos** lehetőséget választja a **Mérnök** gyorslapon a **Kiadott termék részletei** oldalon, és ezután ezt a terméket felhasználja a receptúrában, a receptúrasor sortípusa **Látszólagos** értékre változik. A **Látszólagos** nem választható ki tényleges súllyal rendelkező cikkekhez, sem olyan cikkekhez, amelyeknél a termelés típusa **Társtermék**, **Melléktermék** vagy **Tervezési cikk**. |
 | Rögzített készletek | A receptúrasorban található összetevőhöz kötegrendelés, termelési rendelés, kanban, átmozgatási rendelés vagy beszerzési rendelés létrehozásához válassza a **Rögzített készletek** elemet. A kapcsolódó rendelés meghatározása az alapértelmezett rendelési beállítások és az összetevő termelési típusa alapján történik, és a kötegrendelés becslésekor jön létre. A szükséges összetevőmennyiségeket a program automatikusan lefoglalja a kötegrendeléshez. |
 | Szállító        | Válassza a **Szállító** lehetőséget, ha a termelési folyamat alvállalkozót használ, és az alvállalkozóhoz résztermelést vagy beszerzési rendelést szeretne létrehozni. Az alvállalkozó által végzett szolgáltatást vagy munkát receptúrás cikk vagy szolgáltatási tétel formájában kell létrehozni. Az elem a szülőcikkhez receptúrasorként csatolható. Az útvonalnak tartalmaznia kell egy az alvállalkozó műveleti erőforrásához hozzárendelt műveletet. A művelet a receptúrasorhoz a **Műveletszám** használatával kapcsolódik. mezőben történik. |
 

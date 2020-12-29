@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 0e83e7008c2547ba0d9e7061772db825e69469a0
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3985068"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429670"
 ---
 # <a name="view-dispatch-teams"></a>Kiszálló csoportok megjelenítése   
 
@@ -32,7 +32,7 @@ ms.locfileid: "3985068"
 
 A **Diszpécserközpont** képernyőn szereplő szervizrendelések kiszálló csoportok szerint vannak csoportosítva.
 
-1.  Kattintson a következőkre: **Szolgáltatáskezelés** \> **Rendszeres** \> **Diszpécserközpont** .
+1.  Kattintson a következőkre: **Szolgáltatáskezelés** \> **Rendszeres** \> **Diszpécserközpont**.
 
 2.  Adja meg a dátumtartományt, majd kattintson az **OK** gombra.
 

@@ -20,11 +20,11 @@ ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
 ms.openlocfilehash: 769bd84b4ba23c9de4638df9186381936221414a
-ms.sourcegitcommit: ae04c7cb48f7ecafe71bbe77a0f97715e6290991
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "3973452"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429542"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Tervezési optimalizálás igazítási elemzése
 
@@ -53,7 +53,7 @@ Ha meg szeretné tekinteni a tervezési optimalizálás illeszkedési elemzésé
 
 ## <a name="overview-of-possible-results-from-the-fit-analysis"></a>Az illeszkedési elemzés lehetséges eredményeinek áttekintése
 
-A következő táblázat bemutatja, hogy milyen eredmények jelenhetnek meg az illeszkedési elemzés után. A szám jeleket ( _\#_ ) a rendszer egy számmal helyettesíti, amely a felsorolt problémával rendelkező rekordok számát jelzi.
+A következő táblázat bemutatja, hogy milyen eredmények jelenhetnek meg az illeszkedési elemzés után. A szám jeleket (_\#_) a rendszer egy számmal helyettesíti, amely a felsorolt problémával rendelkező rekordok számát jelzi.
 
 | Funkció | Felsorolt probléma | Magyarázat | Várható elérhetőség |
 | --- | --- | --- | --- |

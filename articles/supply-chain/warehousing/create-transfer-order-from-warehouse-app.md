@@ -17,11 +17,11 @@ ms.author: perlynne
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
 ms.openlocfilehash: c30b0e74053480a08f84f4d7579021084ded5799
-ms.sourcegitcommit: 286786445f72db20e993d37a63df0b886f8f5e99
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "3988381"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429301"
 ---
 # <a name="create-transfer-orders-from-the-warehouse-app"></a>Átmozgatási rendelések létrehozása a raktári alkalmazásból
 
@@ -96,13 +96,13 @@ Az átmozgatási rendelés létrehozásának mobileszköz-menüelemekben törté
 
 ### <a name="example-scenario-blueprint"></a>Példa
 
-Ön kiskereskedő, és több azonosítótáblája van, amelyek több elemet tartalmaznak, és ezek mindegyike az egyik raktárának adott helyén található ( *51-es raktár* ). Szeretné engedélyezni azt a folyamatot, amely lehetővé teszi, hogy a dolgozók átmozgatási rendelést hozzanak létre egy másik raktárba ( *61-es raktár* ), a beolvasott azonosítótáblák egy csoportjára. Automatikusan kiszállítja illetve frissíti az átmozgatási rendelést, amint a megrendelés utolsó azonosítótábláját is felismerte a rendszer.
+Ön kiskereskedő, és több azonosítótáblája van, amelyek több elemet tartalmaznak, és ezek mindegyike az egyik raktárának adott helyén található (*51-es raktár*). Szeretné engedélyezni azt a folyamatot, amely lehetővé teszi, hogy a dolgozók átmozgatási rendelést hozzanak létre egy másik raktárba (*61-es raktár*), a beolvasott azonosítótáblák egy csoportjára. Automatikusan kiszállítja illetve frissíti az átmozgatási rendelést, amint a megrendelés utolsó azonosítótábláját is felismerte a rendszer.
 
 ![Példa automatizált átmozgatási rendelés feldolgozására](media/create-transfer-order-from-app-example.png "Példa automatizált átmozgatási rendelés feldolgozására")
 
 ### <a name="create-a-mobile-device-menu-item-for-creating-transfer-orders"></a>Mobileszköz-menüelem létrehozása átmozgatási rendelések létrehozásához
 
-Ez a szakasz bemutatja, hogyan lehet új mobileszköz-menüelemet létrehozni az átmozgatási rendelések létrehozásához. Állítsa a **Mód** elemet *Közvetett* értékre, a **Tevékenységkód** pedig legyen *Átviteli rendelés létrehozása az azonosítótáblákból* .
+Ez a szakasz bemutatja, hogyan lehet új mobileszköz-menüelemet létrehozni az átmozgatási rendelések létrehozásához. Állítsa a **Mód** elemet *Közvetett* értékre, a **Tevékenységkód** pedig legyen *Átviteli rendelés létrehozása az azonosítótáblákból*.
 
 1. Lépjen a **Raktárkezelés \> Beállítás \> Mobileszköz \> Mobileszköz-menüelemek** részre.
 1. Válassza az **Új** lehetőséget.
@@ -114,7 +114,7 @@ Ez a szakasz bemutatja, hogyan lehet új mobileszköz-menüelemet létrehozni az
 1. A **Kimenő szállítások irányelvei** alatt válassza a *Kiadás és szállítás megerősítése* elemet.
 1. Lépjen a **Raktárkezelés \> Beállítás \> Mobileszköz \> Mobileszköz menü** elemre.
 1. Válassza ki a **Szerkesztés** opciót.
-1. Válassza ki a meglévő **Készlet** menüt, majd válassza az új menüpontot a **Rendelkezésre álló menük és menüelemek** alatt. A menüelem a jobbra mutató nyíl kiválasztásával adható hozzá a **Készlethez** .
+1. Válassza ki a meglévő **Készlet** menüt, majd válassza az új menüpontot a **Rendelkezésre álló menük és menüelemek** alatt. A menüelem a jobbra mutató nyíl kiválasztásával adható hozzá a **Készlethez**.
 
 ### <a name="set-up-work-templates-to-auto-process-and-break-work-by-located-license-plate"></a>Munkasablonok beállítása, a munka azonosítótábla alapján való automatikus feldolgozására és megszakítására
 
@@ -123,8 +123,8 @@ Ez a szakasz azt mutatja be, hogyan lehet engedélyezni egy munkasablont a hull�
 1. Lépjen a **Raktárkezelés \> Beállítás \> Munka \> Munkasablonok** elemre.
 1. A **Munkarendelés típusa** mezőben válassza ki az *Átmozgatás* elemet.
 1. Válassza az **Új** lehetőséget egy új munkasablon létrehozásához.
-1. A **Munkasablon** mezőbe írja be: *51 AT automatikus feldolgozása* .
-1. A **Munkasablon leírása** mezőbe írja be: *51 AT automatikus feldolgozása* .
+1. A **Munkasablon** mezőbe írja be: *51 AT automatikus feldolgozása*.
+1. A **Munkasablon leírása** mezőbe írja be: *51 AT automatikus feldolgozása*.
 1. Jelölje be az **Automatikus feldolgozás** jelölőnégyzetet. Ezt az összes automatizálási lépés feldolgozása miatt kell bejelölni.
 1. A bemutatóadatok között már létezik egy *51 Átmozgatás* munkasablon; a **Sorszám** mező felülírásával adjon az új munkasablonnak alacsonyabb sorszámot, mint a meglévő *51 Átmozgatás* sorszáma.
 1. Az eszköztár **Mentés** gombjára kattintva engedélyezheti a **Munkasablon részletei** gyorslapot.
@@ -138,12 +138,12 @@ Ez a szakasz azt mutatja be, hogyan lehet engedélyezni egy munkasablont a hull�
 1. A **Munkatípus** *Eltárolás* sorában válassza az **Utasításkód** *Baydoor* elemét. Gondoskodjon róla, hogy az új munkasablon a legalacsonyabb **Sorszámot** kapja.
 1. Válassza az eszköztár **Lekérdezés szerkesztése** elemét a lekérdezéstervező megnyitásához.
 1. A **Tartomány** lapon válassza a **Hozzáadás** lehetőséget.
-1. A hozzáadott sor **Mező** elemében válassza a *Raktárt* .
-1. A **Feltételek** mezőben válassza az *51-et* .
+1. A hozzáadott sor **Mező** elemében válassza a *Raktárt*.
+1. A **Feltételek** mezőben válassza az *51-et*.
 1. Lépjen a **Rendezés** lapra.
-1. Válassza a **Hozzáadást** , majd a **Mező** értékét állítsa *Megtalált azonosítótábla-azonosítóra* . Ennek a mezőnek a bejelölésével aktiválhatja az eszköztár **Munkafejléczónák** gombját.
+1. Válassza a **Hozzáadást**, majd a **Mező** értékét állítsa *Megtalált azonosítótábla-azonosítóra*. Ennek a mezőnek a bejelölésével aktiválhatja az eszköztár **Munkafejléczónák** gombját.
 1. Kattintson az **OK** majd az **Igen** gombra a csoportosítás visszaállításához és a visszalépéshez a **Munkasablonok** lapra.
-1. Válassza a **Munkafejléczónák** elemet, és aktiválja a **Csoportosítás ezen mező szerint** funkciót a **Megtalált azonosítótábla-azonosítóhoz** , majd zárja be.
+1. Válassza a **Munkafejléczónák** elemet, és aktiválja a **Csoportosítás ezen mező szerint** funkciót a **Megtalált azonosítótábla-azonosítóhoz**, majd zárja be.
 
 > [!NOTE]
 > Nem minden beállítást lehet automatikusan feldolgozni; ilyen például a tényleges súly szerinti cikkek és a vegyes nyomon követési dimenziók használata.
@@ -158,7 +158,7 @@ Ez a szakasz bemutatja, hogyan kell beállítani egy helyutasításos kitárolá
 1. A navigációs listán válassza ki az **51-esből Kitároláshoz** meglévő helyutasítást.
 1. A **Sorok** gyorslapon jelölje be a **Felosztás engedélyezése** jelölőnégyzetet.
 1. A **Helyutasítási műveletek** gyorslapon válassza az **Új** parancsot, ha egy új műveleti sort szeretne hozzáadni.
-1. A **Név** mezőbe írja be: *AT-vezérelt* .
+1. A **Név** mezőbe írja be: *AT-vezérelt*.
 1. A **Stratégia** mezőben válassza az *Azonosítótábla-vezérelt* elemet. Ennek a műveletnek a legalacsonyabb sorszámúnak kell lennie.
 1. Kattintson az eszköztár **Mentés** gombjára.
 1. Válassza az eszköztár **Frissítés** ikonját.
@@ -189,7 +189,7 @@ Ez a szakasz bemutatja, hogyan lehet beállítani ütemezett kötegelt feladatok
 1. Az új sor **Tábla** mezőjében válassza ki a legördülő menüt, és válassza ki az **Átmozgatási sor kiadása a raktárba** táblát.
 1. A **Mező** legördülő menüben válassza a **Kimenő szállítások irányelvei** elemet.
 1. A **Feltételek** mezőben válassza a **Kiadás és szállítás megerősítése** elemet.
-1. Abban a sorban, ahol a **Mező** tartalma *Raktárból* a **Feltételek** mezőben, válassza ki az *51-et* .
+1. Abban a sorban, ahol a **Mező** tartalma *Raktárból* a **Feltételek** mezőben, válassza ki az *51-et*.
 1. Az **OK** gombbal térjen vissza a fő párbeszédpanelhez.
 1. Nyissa meg a **Futtatás a háttérben** szakaszt a kötegelt feldolgozás beállításához.
 1. Engedélyezze a **Kötegelt feldolgozást** a **Futtatás a háttérben** szakaszban.
@@ -217,11 +217,11 @@ Ez a szakasz azt mutatja be, hogyan lehet beállítani az ütemezett kötegelt f
 1. Válassza ki a **Tartomány** lapot.
 1. A **Tartomány** lekérdezési tábláiban három lekérdezésifeltétel-tartományt kell beállítania. Sor hozzáadásához válassza a **Hozzáadás** gombot.
 1. Adjon hozzá tartományt a **Rakományok** táblához. Állítsa a **Mezőt** *Állapot betöltése* értékre, a **Feltételeket** pedig *Berakodva* értékre.
-1. Adjon hozzá még egy tartományt a **Raktári áttárolás további sorai** táblához. Állítsa a **Mezőt** a *Kimenő szállítások irányelveire* , majd állítsa a **Feltételeket** *Kiadás és szállítás megerősítésére* .
+1. Adjon hozzá még egy tartományt a **Raktári áttárolás további sorai** táblához. Állítsa a **Mezőt** a *Kimenő szállítások irányelveire*, majd állítsa a **Feltételeket** *Kiadás és szállítás megerősítésére*.
 1. Adjon hozzá egy másik tartományt a **Rakomány adatai** táblához. Állítsa a **Mezőt** *Hivatkozás* értékre, majd állítsa a **Feltételeket** *Átmozgatási rendelés szállítása* értékre.
 1. Az **OK** gombbal térjen vissza a fő párbeszédpanelhez.
 1. Bontsa ki a **Futtatás a háttérben** szakaszt.
-1. Engedélyezze a **Kötegelt feldolgozást** .
+1. Engedélyezze a **Kötegelt feldolgozást**.
 1. Válassza az **Ismétlődés** lehetőséget, majd állítsa be a kötegelt feladatot a feldolgozásra, a vállalat által igényelt intervallum szerint.
 1. Az **OK** gombbal térjen vissza a fő párbeszédpanelhez.
 1. A fő párbeszédpanel **OK** gombjára kattintva adja hozzá a feladatot a kötegelt feladatok várólistájához.
@@ -249,13 +249,13 @@ Adjon hozzá ténylegesen rendelkezésre álló mennyiségeket a következő ér
 
 1. Nyissa meg az alkalmazást, és jelentkezzen be *51-es* felhasználóként. A jelenlegi felhasználói raktár az 51-es lesz.
 1. Válassza ki a **Létrehozás IDE** menüelemet a beállítás során hozzáadott menühelyről.
-1. Kezdje el az átmozgatási rendelés létrehozását, ehhez adja meg a célraktárat (célraktár) a **Raktár** mezőben, majd adja meg: *61* . Az új átmozgatási rendelés az 51-es aktuális raktárból (Kiinduló raktár) a *61-es* célraktárba kerül áttárolásra.
+1. Kezdje el az átmozgatási rendelés létrehozását, ehhez adja meg a célraktárat (célraktár) a **Raktár** mezőben, majd adja meg: *61*. Az új átmozgatási rendelés az 51-es aktuális raktárból (Kiinduló raktár) a *61-es* célraktárba kerül áttárolásra.
 1. Válassza ki az **OK** lehetőséget.
-1. Olvasson be egy azonosítótábla-azonosítót az **Azonosítótábla** mezőbe. Adja meg a korábban hozzáadott készlet-azonosítótáblát, *LP10* .
+1. Olvasson be egy azonosítótábla-azonosítót az **Azonosítótábla** mezőbe. Adja meg a korábban hozzáadott készlet-azonosítótáblát, *LP10*.
 1. Válassza ki az **OK** lehetőséget.
 1. Válassza a menü gombot, majd válassza ki a **Rendelés teljesítése** elemet a raktári alkalmazás átmozgatási rendelésének létrehozásához.
 
-Az említett példában két **Raktári alkalmazási esemény** ( *Átmozgatási rendelés létrehozása* és az *Átmozgatási rendelés teljesítése* ) került alkalmazásra.
+Az említett példában két **Raktári alkalmazási esemény** (*Átmozgatási rendelés létrehozása* és az *Átmozgatási rendelés teljesítése*) került alkalmazásra.
 
 ### <a name="inquire-the-warehouse-app-events"></a><a name="#inquire-the-warehouse-app-events"></a>Raktári alkalmazás eseményeinek lekérdezése
 
@@ -265,9 +265,9 @@ Az *Átmozgatási rendelés létrehozása* esemény üzenetei *Várakozás* áll
 
 Mivel az átmozgatási rendelés adatainak létrehozásához szükséges **Raktári alkalmazási eseményeket** a kötegelt feladat nem dolgozza fel az előtt, hogy az üzenetek státusza *Várólistára* módosul, a kért átmozgatási rendelési számokat az **Azonosító** mezőben kell megkeresni. Az **Azonosító** mező a **Raktári alkalmazási esemény** lap fejlécében található.
 
-A raktári esemény feldolgozásakor előfordulhat, hogy az átmozgatási rendelési sor létrehozása sikertelen. Ebben az esetben az eseményüzenet állapota *Sikertelen* ; a **Köteg naplófájl** adataiból lehet megtudni ennek az okát, és hogy milyen lépéseket lehet tenni a problémák megoldása érdekében.
+A raktári esemény feldolgozásakor előfordulhat, hogy az átmozgatási rendelési sor létrehozása sikertelen. Ebben az esetben az eseményüzenet állapota *Sikertelen*; a **Köteg naplófájl** adataiból lehet megtudni ennek az okát, és hogy milyen lépéseket lehet tenni a problémák megoldása érdekében.
 
-Általában a folyamat hiányzó beállításával kapcsolatos problémák fordulnak elő, például hiányzó tranzitraktár az *Átmozgatási rendelés létrehozása* eseményhez. Ilyen esetben adjon hozzá egy tranzitraktárt a szállítási raktárhoz, és változtassa meg az **Alaphelyzet** opcióval a raktáralkalmazás-esemény összes üzenetének állapotát *Sikertelenről* *Várólistára* , hogy a kötegelt feladat a beállítási adatok kijavítása után újra feldolgozza az eseményüzeneteket.
+Általában a folyamat hiányzó beállításával kapcsolatos problémák fordulnak elő, például hiányzó tranzitraktár az *Átmozgatási rendelés létrehozása* eseményhez. Ilyen esetben adjon hozzá egy tranzitraktárt a szállítási raktárhoz, és változtassa meg az **Alaphelyzet** opcióval a raktáralkalmazás-esemény összes üzenetének állapotát *Sikertelenről* *Várólistára*, hogy a kötegelt feladat a beállítási adatok kijavítása után újra feldolgozza az eseményüzeneteket.
 
 A termelési környezeteken belül a kivételek inkább a feldolgozással kapcsolatosak, például egy igényelt azonosítótábla esetében, amely a kötegelt feladat feldolgozási ideje alatt üres, és így nem jönnek létre átmozgatásirendelés-sorok. Vagy ezt a sikertelen eseményüzenetet távolítja el a **Törlés** opcióval, vagy hozzáadja a szükséges tényleges aktuális készletet az azonosítótáblán, és alkalmazza az **Alaphelyzet** opciót az összes kapcsolódó eseményüzenetre.
 
@@ -281,10 +281,10 @@ Ebben az esetben a következő történt:
 1. Az alkalmazás kérte, hogy az átmozgatási rendeléshez válassza ki a célraktárt. A forrás raktár mindig az, amelynél Ön aktuálisan dolgozóként van bejelentkezve.
 1. A célraktár kiválasztásakor a rendszer lefoglalt egy azonosító számot a közelgő átmozgatási rendelés számára (a rendszerben definiált átmozgatási rendelésszámsorrend alapján), de még nem hozta létre az átmozgatási rendelést.
 1. Amikor Ön beolvasta az *LP10* azonosítótáblát, amely az új raktárba áttárolandó aktuális készletet tartalmazza, egy **Raktári alkalmazásesemény** lett hozzáadva a későbbiekben feldolgozandó események várólistájához. A raktári esemény tartalmazott beolvasással kapcsolatos adatokat, például a tervezett átmozgatási rendelésszámot.
-1. A raktári alkalmazásban, ha a **Rendelés teljesítése** gomb be van jelölve, létrejön egy új raktári alkalmazási esemény, az **Átmozgatási rendelés teljesítése** , valamint a kapcsolódó meglévő esemény, az **Átmozgatási rendelés létrehozása** állapota módosul **Várólistára** .
+1. A raktári alkalmazásban, ha a **Rendelés teljesítése** gomb be van jelölve, létrejön egy új raktári alkalmazási esemény, az **Átmozgatási rendelés teljesítése**, valamint a kapcsolódó meglévő esemény, az **Átmozgatási rendelés létrehozása** állapota módosul **Várólistára**.
 1. A háttérben a **Raktáralkalmazás-események feldolgozásának kötegelt feladata** felvette a **Várólista** eseményt, és összegyűjtötte a beolvasott azonosítótáblával kapcsolatos aktuális készletet. Az aktuális készlet alapján létrejön a tényleges átmozgatási rendelés rekordja és a kapcsolódó sorok. A feladat az átmozgatási rendelés **Kimenő szállítások irányelvei** mezőjét is kitöltötte a *Kiadás és szállítás megerősítéséhez* beállított értékkel, és összekapcsolta az azonosítótáblát az **Azonosítótábla-vezérelt** stratégia soraival.
-1. Az átmozgatási rendeléssor **Kimenő szállítások irányelvei** mezőjének értéke alapján az **Átmozgatási rendelések automatikus kiadása kötegelt feladat** lekérdezésének eredménye az, hogy az átmozgatási rendelés kiadásra kerül a szállítási raktárba. Az alkalmazott **Hullámsablon** , **Munkasablon** és a **Helyutasítások** beállítása miatt a munka automatikus folyamatainak eredményeképpen a **Rakomány állapota** *Berakodva* értékre frissült.
-1. A rendszer végrehajtja a rakomány **Kimenő szállítmányok feldolgozása kötegelt feladatát** , és ekkor megtörténik az átmozgatási rendelés kiszállítása és az előzetes kiszállítási értesítés (ASN) létrehozása.
+1. Az átmozgatási rendeléssor **Kimenő szállítások irányelvei** mezőjének értéke alapján az **Átmozgatási rendelések automatikus kiadása kötegelt feladat** lekérdezésének eredménye az, hogy az átmozgatási rendelés kiadásra kerül a szállítási raktárba. Az alkalmazott **Hullámsablon**, **Munkasablon** és a **Helyutasítások** beállítása miatt a munka automatikus folyamatainak eredményeképpen a **Rakomány állapota** *Berakodva* értékre frissült.
+1. A rendszer végrehajtja a rakomány **Kimenő szállítmányok feldolgozása kötegelt feladatát**, és ekkor megtörténik az átmozgatási rendelés kiszállítása és az előzetes kiszállítási értesítés (ASN) létrehozása.
 1. Ezeknek az eseményeknek az ütemezése a létrehozott kötegelt feladatok **Ismétlődési** beállításától függ.
 
 ## <a name="frequently-asked-questions"></a>Gyakori kérdések

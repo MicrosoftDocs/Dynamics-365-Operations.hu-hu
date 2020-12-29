@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 141975e0a3218b18b67d22e04f6f6e8da332ed3d
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3975680"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429263"
 ---
 # <a name="reduce-the-days-on-subscription-fees"></a>Előfizetési díjak napjainak csökkentése 
 
@@ -34,7 +34,7 @@ Ha egy meglévő előfizetési díjnál csökkenteni szeretné a napok számát,
 
 ## <a name="reduce-the-days-on-a-subscription-fee"></a>Előfizetési díj napjainak csökkentése
 
-1.  Kattintson a következőkre: **Szolgáltatáskezelés**\>**Közös**\>**Szolgáltatási előfizetések**\>**Minden szolgáltatási előfizetés** . Jelölje ki a szolgáltatási előfizetést, majd a műveleti ablaktáblán kattintson az **Előfizetési díjak** elemre.
+1.  Kattintson a következőkre: **Szolgáltatáskezelés**\>**Közös**\>**Szolgáltatási előfizetések**\>**Minden szolgáltatási előfizetés**. Jelölje ki a szolgáltatási előfizetést, majd a műveleti ablaktáblán kattintson az **Előfizetési díjak** elemre.
 
 2.  Az **Előfizetés típusa** mezőben válassza ki a **Csökkentési napok** lehetőséget.
 

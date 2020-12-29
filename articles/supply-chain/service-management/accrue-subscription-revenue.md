@@ -19,18 +19,18 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 90054b17283a9e081f9993e76a6860404dadac0f
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3978845"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429469"
 ---
 # <a name="accrue-subscription-revenue"></a>Előfizetési bevétel könyvelése 
 
 [!include [banner](../includes/banner.md)]
 
 
-1.  Kattintson a következőkre: **Szolgáltatáskezelés**\>**Időszakos**\>**Szolgáltatási előfizetések**\>**Előfizetési bevétel könyvelése** .
+1.  Kattintson a következőkre: **Szolgáltatáskezelés**\>**Időszakos**\>**Szolgáltatási előfizetések**\>**Előfizetési bevétel könyvelése**.
 
 2.  Az **Időszakkód** mezőben válasszon időszakkódot. A bevétel feladása az összes olyan előfizetésidíj-tranzakcióhoz történik, amely a kijelölt időszakkóddal rendelkezik.
 

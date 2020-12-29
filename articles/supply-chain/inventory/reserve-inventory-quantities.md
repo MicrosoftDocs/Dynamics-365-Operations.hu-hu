@@ -19,11 +19,11 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: ea7311ce34fec476ad9953e954a07a86acd13afc
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207232"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429790"
 ---
 # <a name="reserve-inventory-quantities"></a>Tartalék készletmennyiségek
 
@@ -44,7 +44,7 @@ A készletfoglalásnak számos lehetséges oka lehet:
 Automatikusan végre lehet hajtani készletfoglalást új rendeléssor létrehozása esetén, vagy kézzel is be lehet állítani az egyes rendelések foglalásait. A termelési folyamat különböző szakaszaiban is lehet készletet foglalni. Csak raktározott termékeket lehet lefoglalni. Szolgáltatásokat nem lehet foglalni, mivel nincs aktuális készletük. A tényleges és a megrendelt, de még meg nem érkezett készletből is lehet foglalni. Ha nagyobb mennyiséget foglal, mint amennyi az aktuális készletben szerepel, akkor megjelenik egy üzenet, hogy ekkora mennyiséget nem lehet foglalni. Ezután választani lehet, hogy mégis megtörténjen-e a foglalás, vagy módosítja a rendelt mennyiséget. A mennyiség lefoglalható vagy módosítható. Ha több cikket foglal, mint amennyi rendelkezésre áll, akkor a hiányt a következő olyan alkalommal fogja fedezni a program, amikor rendelkezésre állnak a szállítandó cikkek.
 
 ## <a name="inventory-reservation-policies"></a>Készletfoglalási szabályok
-A készletfoglalási szabályok a **Cikkmodellcsoportok**lapon, a **Készlet- és raktárkezelési paraméterek** lapon és a **Termelési paraméterek** lapon olvashatók.
+A készletfoglalási szabályok a **Cikkmodellcsoportok** lapon, a **Készlet- és raktárkezelési paraméterek** lapon és a **Termelési paraméterek** lapon olvashatók.
 ### <a name="policies-on-the-item-model-groups-page"></a>A Cikkmodellcsoportok lap szabályai
 
 A **Készletszabályok** szakasz tartalmazza a következő foglalási szabályokat.

@@ -20,11 +20,11 @@ ms.author: aevengir
 ms.search.validFrom: 2020-03-01
 ms.dyn365.ops.version: Release 10.0.9
 ms.openlocfilehash: 73e43a685f390fd718028de6add0370dfcd6cf3b
-ms.sourcegitcommit: cd339f48066b1d0fc740b513cb72ea19015acd16
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "3759640"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429718"
 ---
 # <a name="compare-item-prices-storage-report"></a>Cikkárak tárhelyének összehasonlítása jelentés
 
@@ -94,7 +94,7 @@ A következő példa bemutatja, hogyan lehet exportálni egy **Cikkárak tárhel
 
 1. Válassza az **exportálás** gombot az **Adatkezelés** részben.
 
-1. Megjelenik az **Exportálás** lap, amelyen beállíthatja az exportálási feladatot. A kezdő művelet a **csoport nevének**megadása.
+1. Megjelenik az **Exportálás** lap, amelyen beállíthatja az exportálási feladatot. A kezdő művelet a **csoport nevének** megadása.
 
 1. A **Kiválasztott entitások** szakaszban válassza az **Entitás hozzáadása** lehetőséget a párbeszédpanel megnyitásához, amelyen beállíthatja a következő beállításokat:
 

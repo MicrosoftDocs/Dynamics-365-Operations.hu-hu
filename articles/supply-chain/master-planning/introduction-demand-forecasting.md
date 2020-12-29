@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 62ee31b7931c6e7d8f54c1efb556a2ba01eb7746
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3981450"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429760"
 ---
 # <a name="demand-forecasting-overview"></a>Igény-előrejelzés áttekintése
 
@@ -75,9 +75,9 @@ Az Igény-előrejelzés egy olyan eszköz, amely a gyártóiparban tevékenyked�
 
 A mértékegység (UOM) változatonkénti átalakítása nem teljesen támogatott igény-előrejelzés létrheozása során, ha a készlet mértékegysége eltér az igény-előrejelzés mértékegységétől.
 
-Az előrejelzés létrehozása ( **Készlet mértékegység > igény-előrejelzés mértékegysége** ) a termék mértékegység-konverzióját használja. Amikor az igény-előrejelzési létrehozásának múltbeli adatait tölti be, akkor a rendszer mindig a termék szintjének mértékegység-konverziót használja, amikor a készlet mértékegységéről az igény-előrejelzés mértékegységére konvertál, még akkor is, ha a változat szintjén definiáltak konverziókat.
+Az előrejelzés létrehozása ( **Készlet mértékegység > igény-előrejelzés mértékegysége**) a termék mértékegység-konverzióját használja. Amikor az igény-előrejelzési létrehozásának múltbeli adatait tölti be, akkor a rendszer mindig a termék szintjének mértékegység-konverziót használja, amikor a készlet mértékegységéről az igény-előrejelzés mértékegységére konvertál, még akkor is, ha a változat szintjén definiáltak konverziókat.
 
-Az előrejelzés engedélyezésének első része ( **Igény-előrejelzés mértékegysége > készlet mértékegysége** ) a termék mértékegység-konverzióját használja. Az előrejelzés engedélyezésének második része ( **Készlet mértékegysége > értékesítés mértékegysége** ) a változat mértékegység-konverzióját használja. Amikor a létrehozott igény-előrejelzés engedélyezve van, a készlet mértékegységéről az igény-előrejelzés mértékegységére való átváltást a termékszintű mértékegység-konverzió végrehajtásával történik. ugyanakkor a készletegység és az értékesítési mértékegység közti átváltás a változatszinten megadott konverziót veszi figyelembe.
+Az előrejelzés engedélyezésének első része (**Igény-előrejelzés mértékegysége > készlet mértékegysége**) a termék mértékegység-konverzióját használja. Az előrejelzés engedélyezésének második része (**Készlet mértékegysége > értékesítés mértékegysége**) a változat mértékegység-konverzióját használja. Amikor a létrehozott igény-előrejelzés engedélyezve van, a készlet mértékegységéről az igény-előrejelzés mértékegységére való átváltást a termékszintű mértékegység-konverzió végrehajtásával történik. ugyanakkor a készletegység és az értékesítési mértékegység közti átváltás a változatszinten megadott konverziót veszi figyelembe.
 
 Ne feledje, hogy az igény-előrejelzés mértékegységének nem kell, hogy konkrét jelentése legyen. Meghatározható „Igény-előrejelzési egységként” is. Mindegyik terméknél meghatározhatja, hogy a készlet mértékegység konverziója 1:1 legyen a készlet mértékegységével.
 

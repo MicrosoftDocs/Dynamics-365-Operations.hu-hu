@@ -16,11 +16,11 @@ ms.author: sorenand
 ms.search.validFrom: 2020-08-17
 ms.dyn365.ops.version: Release 10.0.15
 ms.openlocfilehash: c0f9c1bb94b4dcc3c3c1e7656868ef6e6bd903db
-ms.sourcegitcommit: 9ca63cbc6bc6d6baed9d45bce30d0b32e156301c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "3988322"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429183"
 ---
 # <a name="attribute-based-sales-prices-for-constraint-based-product-configuration"></a>Attribútumalapú értékesítési árak a megszorításon alapuló termékkonfigurációhoz
 
@@ -38,7 +38,7 @@ Az alapértelmezett pénznem beállítása:
 
     ![A megszorításon alapuló termékkonfiguráció alapértelmezett pénznemének beállítása](media/prod-config-currency.png "A megszorításon alapuló termékkonfiguráció alapértelmezett pénznemének beállítása")
 
-1. Ha szeretné csatolni az összes rendelési vagy árajánlati sor árának részletezését tartalmazó Excel-fájlt, akkor az **Ármodell** szakaszban a **Csatolás** elemet állítsa *Igen* -re.
+1. Ha szeretné csatolni az összes rendelési vagy árajánlati sor árának részletezését tartalmazó Excel-fájlt, akkor az **Ármodell** szakaszban a **Csatolás** elemet állítsa *Igen*-re.
 
 ## <a name="build-your-sales-price-models"></a><a name="build-price-model"></a>Eladásiár-modell létrehozása
 
@@ -79,7 +79,7 @@ Explicit árak megadása más pénznemben:
     - **Alapértelmezett kifejezés** – Az alapértelmezett pénznemben (ez az **Alapértelmezett pénznem** mezőben található) megadott ár létrehozásánál használt kifejezés (vagy konstans érték).
 
     > [!NOTE]
-    > A kifejezésszabályok **Feltétel** mezője az alapértelmezett pénznemé, ami azt jelenti, hogy nem lehet módosítani a feltételt más pénznemekre. Nem adhat hozzá új kifejezésszabályt, míg az alapértelmezettől eltérő pénznem a kijelölt **Aktuális pénznem** .
+    > A kifejezésszabályok **Feltétel** mezője az alapértelmezett pénznemé, ami azt jelenti, hogy nem lehet módosítani a feltételt más pénznemekre. Nem adhat hozzá új kifejezésszabályt, míg az alapértelmezettől eltérő pénznem a kijelölt **Aktuális pénznem**.
 1. Szükség szerint módosítsa a **Kifejezés** oszlop értékeit az aktuális pénznemnek megfelelően.
 
 A következő példában az _EUR_ az alapértelmezett pénznem, az _USD_ pedig a „további pénznem”.
@@ -121,7 +121,7 @@ Ha az ármodelljei használatban vannak, akkor legalább egy kiválasztási krit
 
     ![Ármodellfeltételek](media/prod-config-price-model-criteria.png "Ármodellfeltételek")
 
-1. Válassza ki a sort a meghatározni kívánt lekérdezéshez, majd válassza a **Szerkesztést** a **Művelet panelen** . Megnyílik a lekérdezéstervező párbeszédpanel. Úgy működik, mint a legtöbb lekérdezéstervező a Supply Chain Managementben. Használatával meghatározható, hogy milyen feltételek mellett kell alkalmazni a kiválasztott sor ármodelljét.
+1. Válassza ki a sort a meghatározni kívánt lekérdezéshez, majd válassza a **Szerkesztést** a **Művelet panelen**. Megnyílik a lekérdezéstervező párbeszédpanel. Úgy működik, mint a legtöbb lekérdezéstervező a Supply Chain Managementben. Használatával meghatározható, hogy milyen feltételek mellett kell alkalmazni a kiválasztott sor ármodelljét.
 
 1. Ismételje meg a 4–5. lépést minden lekérdezésnél.
     > [!TIP]
@@ -139,5 +139,5 @@ Az utolsó lépés az attribútumalapuló eladási árak megadása a termékmode
 1. Lépjen a **Termékinformáció-kezelés \> Termékek \> Termékkonfigurációs modellek** elemre.
 1. Válassza ki a cél termékkonfigurációs modellt.
 1. A Művelet panelen nyissa meg a **Modell** lapot, és a **Termékmodell részletei** csoportban válassza a **Verziók** elemet.
-1. Megnyílik a **Verziók** lap. Az **Árképzési mód** beállítása legyen **Attribútumalapú** .
+1. Megnyílik a **Verziók** lap. Az **Árképzési mód** beállítása legyen **Attribútumalapú**.
     ![Az árképzési mód beállítása attribútumalapúra](media/prod-config-versions.png "Az árképzési mód beállítása attribútumalapúra")

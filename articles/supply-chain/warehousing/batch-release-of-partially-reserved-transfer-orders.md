@@ -18,11 +18,11 @@ ms.author: pjacobse
 ms.search.validFrom: 2017-09-20
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 7807ae109a4a708f3530112feed1a4fb210a30ef
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016287"
+ms.locfileid: "4429881"
 ---
 # <a name="batch-release-of-partially-reserved-transfer-orders"></a>Részlegesen foglalt átmozgatási rendelések kötegelt kiadása
 
@@ -47,7 +47,7 @@ Az átmozgatási rendelések és az értékesítési rendelések teljesítési i
 
 -   Teljesítési irányelvek létrehozásához az átmozgatási rendelésekhez és az értékesítési rendelésekhez kattintson a **Raktárkezelés** \> **Beállítás** \> **Raktárba való kiadás** \> **Teljesítési irányelv**  elemre, és hozzon létre egy teljesítési irányelvet: ehhez írjon be egy nevet és egy leírást.
 
--   Teljesítési ráta, értéktípus és üzenet beállításához, amely a teljesítési irányelv megszegése esetén jelenik meg, kattintson a **Raktárkezelés** \> **Beállítás** \> **Raktárba való kiadás** \> **Teljesítési irányelv** elemre, majd adja meg a **Teljesítési ráta** , az **Értéktípus** és a **Teljesítési szabálytalanságok üzenetei** mezők tartalmát.
+-   Teljesítési ráta, értéktípus és üzenet beállításához, amely a teljesítési irányelv megszegése esetén jelenik meg, kattintson a **Raktárkezelés** \> **Beállítás** \> **Raktárba való kiadás** \> **Teljesítési irányelv** elemre, majd adja meg a **Teljesítési ráta**, az **Értéktípus** és a **Teljesítési szabálytalanságok üzenetei** mezők tartalmát.
 
 ### <a name="set-the-fulfillment-policies-for-transfer-orders-and-sales-orders"></a>Átmozgatási rendelések és értékesítési rendelések teljesítési irányelveinek megadása
 

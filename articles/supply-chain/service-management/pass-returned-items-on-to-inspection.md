@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 6e8205db277715f4f4f9c1ee589f264c0ded6617
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3983819"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429543"
 ---
 # <a name="pass-returned-items-on-to-inspection"></a>A visszaadott cikkek továbbadása vizsgálatra 
 
@@ -32,11 +32,11 @@ ms.locfileid: "3983819"
 
 Visszáru cikkek rögzítésekor a cikkeket vizsgálatra küldheti, mielőtt visszajuttatná azokat a készletbe, vagy valamilyen más intézkedést hozna.
 
-1.  Kattintson a következőkre **Készletgazdálkodás** \> **Naplók** \> **Cikkérkeztetés** \> **Cikkérkeztetés** .
+1.  Kattintson a következőkre **Készletgazdálkodás** \> **Naplók** \> **Cikkérkeztetés** \> **Cikkérkeztetés**.
     
     \-vagy-
     
-    Kattintson a következőkre **Készletgazdálkodás** \> **Naplók** \> **Cikkérkeztetés** \> **Termelések beérkezése** .
+    Kattintson a következőkre **Készletgazdálkodás** \> **Naplók** \> **Cikkérkeztetés** \> **Termelések beérkezése**.
 
 2.  A cikkbevételezéseket a szokásos módon regisztrálja a **Helynapló** képernyőn.
     

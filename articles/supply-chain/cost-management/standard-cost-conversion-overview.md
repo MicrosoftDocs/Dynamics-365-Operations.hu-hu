@@ -20,11 +20,11 @@ ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: e9874d3b44a687a60ea1fd26889af3d1b644f86a
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3214389"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429598"
 ---
 # <a name="standard-cost-conversion-overview"></a>Átalakítás elszámolóárra – áttekintés
 
@@ -60,13 +60,13 @@ Az újonnan létrehozott költségszámítási verzió hozzá van rendelve az á
 A hozzárendelt költségszámítási verzióban lévő cikk-költség adatokat csak az **Átalakítások elszámolóárra** képernyőn keresztül lehet karbantartani. Nem használhatja a **Költségszámítási verzió beállítása** lapot vagy a **Költségszámítási verzió karbantartása** lapot a költségszámítási verzióra vonatkozó költségek kiszámítására az átalakítás során. Ezen lapokat azonban csak akkor használhatja a hozzárendelt költségszámítási verzió tartására, miután befejezte az átalakítási verziót.
 
 ## <a name="3-identify-the-items-to-convert-to-standard-cost"></a>3. Határozza meg, hogy cikket alakítja át elszámoló áras cikké.
-Használja az**Elszámolóár-átalakítások** lapot azon cikkek azonosítására, amelyeket elszámolóáras cikkekké kell konvertálni. A **Cikkek hozzáadása az elszámolóárra való átalakítás** oldal segítségével több cikket is megadhat. Az egyetlen átalakítási rekordnak minden gyártott cikket tartalmaznia kell ahhoz, hogy a költségek számítása megfelelő legyen.
+Használja az **Elszámolóár-átalakítások** lapot azon cikkek azonosítására, amelyeket elszámolóáras cikkekké kell konvertálni. A **Cikkek hozzáadása az elszámolóárra való átalakítás** oldal segítségével több cikket is megadhat. Az egyetlen átalakítási rekordnak minden gyártott cikket tartalmaznia kell ahhoz, hogy a költségek számítása megfelelő legyen.
 
 ## <a name="4-enter-or-calculate-the-pending-standard-cost-for-each-item-that-is-being-converted"></a>4. Adja meg vagy számítsa ki a függő elszámolóárat minden egyes átalakítandó cikkre.
 A **Cikk ára** képernyőn adja meg a függő elszámolóárat a beszerzett cikkek és átvitt cikkek hozzárendelt költségszámítási verziójában. A költségrekordok telephelyfüggőek, tehát a cikkek függő költségeit minden telephelyre külön meg kell adni. A **Cikk ára** képernyőn számítsa ki a gyártott cikkek függő elszámolóárát. A gyártott cikkek függő költségeit minden termékgyártási webhelyre vonatkozóan kell kiszámítani, kivéve ha a webhely egy átmeneti telephelyként működik. Ebben az esetben a függő költségeket manuálisan kell beírni. Egyes cikkek rendelkezhetnek szín, méret vagy konfigurációs termékdimenziókkal. Az **Elszámolóár-átalakítások** lapon a **Változatonkénti önköltségi ár használata** jelölőnégyzet a cikkdimenziók összes kombinációjára vonatkozó elszámolóárát megjeleníti. Ha a jelölőnégyzet nincs bejelölve, akkor csak egy függő költséget kell megadni a cikkhez.
 
 ## <a name="5-check-and-resolve-any-issues-for-the-items-that-are-being-converted"></a>5. Ellenőrizze, hogy vannak-e hibák az átalakítandó cikkekben, és javítsa ki azokat.
-Az**Elszámolóár-Átalakítás elszámolóárra-ellenőrzések** jelentés segítségével azonosíthatja az átalakítandó cikkre vonatkozó kiadásokat. Ha egy cikk problémamentes, akkor az átalakítási rekordban látható állapotot **Ellenőrizve** értékre kell állítani. Ha cikkben észlelhető probléma, akkor ki kell javítani azokat, majd újra kell futtatni a jelentést egészen addig, amíg a cikk állapota **Ellenőrizve** értékű nem lesz. Ha egy cikk problémái nem oldhatók meg elfogadható időn belül, akkor lehetőség van arra, hogy törölje a cikket az átalakítási rekordból, és a cikket egy későbbi időpontban alakítsa át.
+Az **Elszámolóár-Átalakítás elszámolóárra-ellenőrzések** jelentés segítségével azonosíthatja az átalakítandó cikkre vonatkozó kiadásokat. Ha egy cikk problémamentes, akkor az átalakítási rekordban látható állapotot **Ellenőrizve** értékre kell állítani. Ha cikkben észlelhető probléma, akkor ki kell javítani azokat, majd újra kell futtatni a jelentést egészen addig, amíg a cikk állapota **Ellenőrizve** értékű nem lesz. Ha egy cikk problémái nem oldhatók meg elfogadható időn belül, akkor lehetőség van arra, hogy törölje a cikket az átalakítási rekordból, és a cikket egy későbbi időpontban alakítsa át.
 
 ## <a name="6-change-the-status-of-the-conversion-record-to-ready"></a>6. Módosítsa az átalakítási rekord állapotát Kész értékre.
 Ha az átalakítási rekord állapotát **Kész** értékre állította, a rendszer elvégzi a végső ellenőrzést az Átalakítás elszámolóárra funkció futtatását megelőzően. Az állapota csak akkor vált **Kész** értékre, ha teljesülnek a következő feltételek:

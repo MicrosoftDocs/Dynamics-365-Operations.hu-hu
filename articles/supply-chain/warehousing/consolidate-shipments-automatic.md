@@ -17,11 +17,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
 ms.openlocfilehash: ac3ab25dc1355ee15e1209950ff0f3b3933b7095
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016862"
+ms.locfileid: "4429861"
 ---
 # <a name="consolidate-shipments-when-they-are-released-to-the-warehouse-by-using-automatic-release-of-sales-orders"></a>Szállítmányok konszolidálása a raktárba történő kiadáskor Értékesítési rendelések automatikus kiadása funkció használatával
 
@@ -99,12 +99,12 @@ Nyissa meg a **Kinnlevőségek \> Rendelések \> Összes értékesítési rendel
 
 1. Adjon hozzá egy olyan rendelési sort, amelynek beállításai a következők:
 
-    - **Cikkszám:** *M9200* (olyan cikk, amelynél a **4.kód** szűrő beállítása *Gyúlékony* )
+    - **Cikkszám:** *M9200* (olyan cikk, amelynél a **4.kód** szűrő beállítása *Gyúlékony*)
     - **Mennyiség:** *1.00*
 
 1. Adjon hozzá egy második rendelési sort, amelynek beállításai a következők:
 
-    - **Cikkszám:** *M9201* (olyan cikk, amelynél a **4.kód** szűrő beállítása *Robbanásveszélyes* )
+    - **Cikkszám:** *M9201* (olyan cikk, amelynél a **4.kód** szűrő beállítása *Robbanásveszélyes*)
     - **Mennyiség:** *1.00*
     - **Szállítási mód:** *Légitá-légi*
 
@@ -118,12 +118,12 @@ Nyissa meg a **Kinnlevőségek \> Rendelések \> Összes értékesítési rendel
 
 1. Adjon hozzá egy olyan rendelési sort, amelynek beállításai a következők:
 
-    - **Cikkszám:** *M9200* (olyan cikk, amelynél a **4.kód** szűrő beállítása *Gyúlékony* )
+    - **Cikkszám:** *M9200* (olyan cikk, amelynél a **4.kód** szűrő beállítása *Gyúlékony*)
     - **Mennyiség:** *1.00*
 
 1. Adjon hozzá egy második rendelési sort, amelynek beállításai a következők:
 
-    - **Cikkszám:** *M9201* (olyan cikk, amelynél a **4.kód** szűrő beállítása *Robbanásveszélyes* )
+    - **Cikkszám:** *M9201* (olyan cikk, amelynél a **4.kód** szűrő beállítása *Robbanásveszélyes*)
     - **Mennyiség:** *1.00*
     - **Szállítási mód:** *Légitá-légi*
 
@@ -236,7 +236,7 @@ A korábban létrehozott értékesítési rendelések mindegyik készletéhez v�
 
 1. Ugorjon a **Raktárkezelés \> Beállítás \> Hullámok \> Hullámsablonok** pontra.
 1. Állítsa a **Hullámsablontípus** mezőt *Szállítás* értékre.
-1. Keresse meg és válassza ki azt a hullámsablont, amely az adott esethez létrehozott rendeléskészletekben használt raktárhoz van társítva. Ha például a *24* -es számú raktárat használta, akkor válassza a **24 – szállítás – alapértelmezett** hullámsablont. Ha a *61* -es számú raktárat használta, akkor válassza a **61 – szállítás** hullámsablont.
+1. Keresse meg és válassza ki azt a hullámsablont, amely az adott esethez létrehozott rendeléskészletekben használt raktárhoz van társítva. Ha például a *24*-es számú raktárat használta, akkor válassza a **24 – szállítás – alapértelmezett** hullámsablont. Ha a *61*-es számú raktárat használta, akkor válassza a **61 – szállítás** hullámsablont.
 1. A műveleti ablaktáblán válassza a **Szerkesztés** lehetőséget.
 1. Állítsa a **Hullám feldolgozása a raktárba történő kiadáskor** lehetőséget *Nem* értékre.
 
@@ -292,7 +292,7 @@ Ha befejezte a műveletet, a következő műveletek végrehajtását kell látni
 
 A 4. rendeléskészlet értékesítési rendeléseinek kiadásához kövesse az [Alapszintű eljárás raktárba történő kiadáshoz](#release-procedure) lépéseit.
 
-Ha befejezte a munkát, akkor látnia kell, hogy egy meglévő szállítmány frissült (ahol a **Vevői igénylés** mező értéke *1* ). Egy új sor lett hozzáadva a szállítmányhoz.
+Ha befejezte a munkát, akkor látnia kell, hogy egy meglévő szállítmány frissült (ahol a **Vevői igénylés** mező értéke *1*). Egy új sor lett hozzáadva a szállítmányhoz.
 
 ### <a name="release-sales-orders-from-order-set-5"></a>Értékesítési rendelések kiadása az 5. rendeléskészletből
 
@@ -300,7 +300,7 @@ Az 5. rendeléskészlet értékesítési rendeléseinek kiadásához kövesse az
 
 Ha befejezte a műveletet, a következő műveletek végrehajtását kell látnia:
 
-- Egy meglévő szállítmány frissült (ahol a **Vevői igénylés** mező értéke *1* ). A rendszer hozzáadta az 5-3. értékesítési rendelés (ahol a **Vevői igénylés** mező értéke *1* ) egyik sorát.
+- Egy meglévő szállítmány frissült (ahol a **Vevői igénylés** mező értéke *1*). A rendszer hozzáadta az 5-3. értékesítési rendelés (ahol a **Vevői igénylés** mező értéke *1*) egyik sorát.
 - Egy új szállítmány jött létre, ahol az 5-1. és 5-2. értékesítési rendelések sorai egyetlen szállítmányba vannak csoportosítva.
 
 ### <a name="release-sales-orders-from-order-set-6"></a>Értékesítési rendelések kiadása a 6. rendeléskészletből

@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: da09d670fd952d885f013693b6362cf9002343ff
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3982696"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429763"
 ---
 # <a name="delays"></a>Késések
 
@@ -43,7 +43,7 @@ Beállíthatja, hogyan számítsa ki a rendszer a fedezetcsoport késéseit. Ezt
 Az **Alaptervezés paraméterei** lapon beállíthatja a késések számításának kezdő időpontját. Ha egy rendelés ezen időpont után teljesül, akkor egy nap hozzáadódik a rendelés késési dátumához. 
 
 > [!NOTE]
-> A korábbi változatokban a késések kiszámítását *határidős üzeneteknek* nevezték, a késleltetett dátum neve *határidős dátum* volt, a késleltetett tranzakcióé pedig *beállított jövőbeli tranzakció* .
+> A korábbi változatokban a késések kiszámítását *határidős üzeneteknek* nevezték, a késleltetett dátum neve *határidős dátum* volt, a késleltetett tranzakcióé pedig *beállított jövőbeli tranzakció*.
 
 ## <a name="limited-delays-in-production-setup-with-multiple-bom-levels"></a>Korlátozott késések a termelési beállításokban több anyagjegyzék-szinttel
 Ha több anyagjegyzék-szintet tartalmazó termelési beállításnál késéseket dolgozik, fontos megjegyezni, hogy csak a késést okozó cikk fölött közvetlenül található cikkek (az anyagjegyzék szerkezetben) lesznek frissítve a késéssel az alaptervezés futtatásakor. Az anyagjegyzék-szerkezet többi cikkér nem lesz alkalmazva a késleltetés az első alaptervezés-futtatásig, amikor a felső szintű tervezett rendelés jóvá van hagyva vagy meg van erősítve. 
@@ -53,7 +53,7 @@ A műveletüzenetek a későbbi dátumra áthelyezhető tervezett rendelések az
 
 ## <a name="desired-date"></a>Kívánt dátum
 
-A **Tervezett rendelés** oldalon a **Késések** lapon található a tervezett rendelés **Kívánt dátuma** . Egy tervezett rendelés kívánt dátuma a késések alapdátuma, amely egy számított dátum, a **Kért dátum** értékével egyezik meg, amelyet a **Nettó követelmény** értékéből számítottak. Ha a tervezett rendelés anyagjegyzéksor, termelési sor vagy kanbansor, akkor a kívánt dátum kiszámítása a **Követelmény dátuma** értékén alapul, és a kívánt dátum nem jelenik meg a **Tervezett rendelés** oldalon.
+A **Tervezett rendelés** oldalon a **Késések** lapon található a tervezett rendelés **Kívánt dátuma**. Egy tervezett rendelés kívánt dátuma a késések alapdátuma, amely egy számított dátum, a **Kért dátum** értékével egyezik meg, amelyet a **Nettó követelmény** értékéből számítottak. Ha a tervezett rendelés anyagjegyzéksor, termelési sor vagy kanbansor, akkor a kívánt dátum kiszámítása a **Követelmény dátuma** értékén alapul, és a kívánt dátum nem jelenik meg a **Tervezett rendelés** oldalon.
 
 <a name="additional-resources"></a>További erőforrások
 --------

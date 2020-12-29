@@ -20,11 +20,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: e3879079e233a881ea0adc1f5e2ba39ab70b372d
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018813"
+ms.locfileid: "4429838"
 ---
 # <a name="approve-and-confirm-purchase-orders"></a>Beszerzési rendelések jóváhagyása és megerősítése
 
@@ -57,7 +57,7 @@ Azok a szállítók, akik a szállítói portált használják, áttekintheti a 
 
 A pro-forma megerősítés generálására is van lehetőség, olyan megrendeléshez, amihez még nem készült aktuális megerősítés. Ez a beállítás olyan jelentést hoz létre, amit megoszthat a szállítóval. Ez nem hoz létre napló adatokat.
 
-Miután a szállító jóváhagyta a megrendelést, a következő lépés a beszerzési rendelés vállaltként való rögzítése. Ez vagy a **Megerősítés** , vagy a **Megerősít** művelettel végezheti el. Mind a két művelet **Megerősítve** állapotra módosítja a megrendelést. A megrendelés megerősítése további két folyamatot indít el:
+Miután a szállító jóváhagyta a megrendelést, a következő lépés a beszerzési rendelés vállaltként való rögzítése. Ez vagy a **Megerősítés**, vagy a **Megerősít** művelettel végezheti el. Mind a két művelet **Megerősítve** állapotra módosítja a megrendelést. A megrendelés megerősítése további két folyamatot indít el:
 
 -   Létrejön egy napló, ami tárolja a rendszerben megerősítettek pontos másolatát. A megrendeléseket néha módosítani kell, ezért további naplók jönnek létre, miután a frissített rendelés megerősítést nyer. Ezek a naplók teszik lehetővé a korábbi verziójú megerősített megrendelés előzményének a megtekintését.
 -   Létrejön a könyvelési felosztás, valamint rendelési és költségvetési ellenőrzések történnek, ha ez a funkció engedélyezve van. Ha valamelyik ellenőrzés sikertelen, megjelenhet egy hibaüzenet arról, hogy módosításokat kell végezni a beszerzési rendelésen, mielőtt újra megerősítik.

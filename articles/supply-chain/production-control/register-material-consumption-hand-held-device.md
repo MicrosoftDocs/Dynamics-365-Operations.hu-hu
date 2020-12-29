@@ -19,11 +19,11 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 67fbb8eebb637a96638c574373441213c66e9ddc
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3211261"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429799"
 ---
 # <a name="register-material-consumption-using-a-mobile-device"></a>Anyagfelhasználás regisztrálása mobileszköz segítségével
 
@@ -68,7 +68,7 @@ Ez az anyagot az ömlesztett tárolóhelyről a PIL-01 termelési bemeneti helyr
 
 A termelési rendelés elindítása után regisztrálhatja a nyersanyag-felhasználását a munkafolyamat segítségével a kézi eszközön. Kezdjük azzal, hogy a B1 köteghez 25 kg felhasználást regisztrálunk.
 
-6.  Válassza ki az **Anyag regisztrálása** **Felhasználás** menüelemet a kézi eszközhöz, és írja be a következő adatokat: 
+6.  Válassza ki az  **Anyag regisztrálása** **Felhasználás** menüelemet a kézi eszközhöz, és írja be a következő adatokat: 
 
 -    A termelési rendelés száma. 
 -    Az anyagfelhasználás helye, ebben az esetben: PIL-01. 

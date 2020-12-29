@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 64c7c2787e2ac996e3016f5b23fc48582f5533ad
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018905"
+ms.locfileid: "4429847"
 ---
 # <a name="procurement-catalogs-overview"></a>Beszerzési katalógusok áttekintése
 
@@ -66,7 +66,7 @@ A frissítéseket automatikusan vagy manuálisan teszik közzé, attól függőe
 
 -   **Dinamikus** – A katalógus automatikusan frissül, ahányszor csak megváltozik.
 -   **Statikus** – A katalógusokat kézzel kell frissíteni.
--   **Mindkét** – Ha a katalógus tartalmaz, megadhat egy alapértelmezett típusának módosítása termékkategóriák **statikus** , akkor kézzel kell frissíteni ezekbe a kategóriákba frissítésekor. Ha a katalógus olyan termékkategóriákat tartalmaz, amelyeknek az alapértelmezett frissítési típusa **Dinamikus** , automatikusan frissül, amennyiben megváltoznak.
+-   **Mindkét** – Ha a katalógus tartalmaz, megadhat egy alapértelmezett típusának módosítása termékkategóriák **statikus**, akkor kézzel kell frissíteni ezekbe a kategóriákba frissítésekor. Ha a katalógus olyan termékkategóriákat tartalmaz, amelyeknek az alapértelmezett frissítési típusa **Dinamikus**, automatikusan frissül, amennyiben megváltoznak.
 
 
 <a name="additional-resources"></a>További erőforrások

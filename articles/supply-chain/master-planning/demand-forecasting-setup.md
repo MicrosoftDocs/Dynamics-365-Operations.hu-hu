@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 6d0de588d54948d89f636cadeb66c3d9e6878015
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3982869"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429762"
 ---
 # <a name="demand-forecasting-setup"></a>Igény-előrejelzési beállítások
 
@@ -81,15 +81,15 @@ Az igény-előrejelzési szolgáltatás beállítható paramétereinek megtekint
 ### <a name="forecast-algorithm-parameters"></a>Az előrejelzési algoritmus paraméterei
 
 A **Felosztási kulcsok** lapon beállíthatja az **Előrejelzési algoritmus paramétereit** az egyes cikkfelosztási kulcsokhoz. Az alábbi lehetőségek közül választhat.
-- **Megbízhatósági szint százaléka** : A megbízhatósági intervallum olyan értékek tartományból áll, amelyek az igény-előrejelzés jó becslését adják. A 95 %-os megbízhatósági szint azt jelenti, hogy 5 % a kockázata annak, hogy az igény-előrejelzés eredménye a megbízhatósági intervallum tartományán kívül esik.
+- **Megbízhatósági szint százaléka**: A megbízhatósági intervallum olyan értékek tartományból áll, amelyek az igény-előrejelzés jó becslését adják. A 95 %-os megbízhatósági szint azt jelenti, hogy 5 % a kockázata annak, hogy az igény-előrejelzés eredménye a megbízhatósági intervallum tartományán kívül esik.
 - **Szezonalitás kényszerítése** Megadja, hogy a modellt egy bizonyos típusú szezonalitási típusra szeretné-e kényszeríteni. Csak az ARIMA és ETS lehetőségekre vonatkozik. Lehetőségek: AUTÓ (alapértelmezett), NINCS, ADDITÍV, SZORZÓ.
-- **Előrejelzési modell** : Beállítások: ARIMA, ETS, STL, ETS+ARIMA, ETS+STL, MIND. A legjobb illeszkedésű modellez válassza a **MIND** lehetőséget.
-- **Maximális előre jelzett érték** : Az előrejelzésekhez használandó maximális értéket adja meg. Formátum: + 1E[n] vagy numerikus állandó.
-- **Minimális előre jelzett érték** : Az előrejelzésekhez használandó minimális értéket adja meg. Formátum: -1E[n] vagy numerikus állandó.
-- **Hiányzó érték-helyettesítés** : Meghatározza a múltbeli adatok hiányosságainak kitöltésének módját. Beállítások: numerikus érték, ÁTLAG, ELŐZŐ, INTERPOLÁLT LINEÁRIS, INTERPOLÁCIÓS POLINOM.
-- **Hiányzó érték-helyettesítésihatóköre** : Megadja, hogy az érték-helyettesítés csak az egyéni granularítású attribútumok adattartományára vagy a teljes adathalmazra vonatkozik-e. Beállítások: GRANULARITY_ATTRIBUTE (alapértelmezett), GLOBÁLIS.
-- **Szezonalitás tipp** : A szezonális adatokhoz az előrejelzési pontosság javítása érdekében adjon meg egy tippet az előrejelzési modellhez. Formátum: egész szám, amely az időszakok számát, jelenti, amikor egy minta ismétlése szükséges. Például a "6" értéket írja be a 6 havonta önmagukat ismétlő adatokhoz.
-- **Tesztkészlet mérete százalékban** : Az előrejelzés pontosságának számításához tesztkészletként használni kívánt előzményadatok százaléka. 
+- **Előrejelzési modell**: Beállítások: ARIMA, ETS, STL, ETS+ARIMA, ETS+STL, MIND. A legjobb illeszkedésű modellez válassza a **MIND** lehetőséget.
+- **Maximális előre jelzett érték**: Az előrejelzésekhez használandó maximális értéket adja meg. Formátum: + 1E[n] vagy numerikus állandó.
+- **Minimális előre jelzett érték**: Az előrejelzésekhez használandó minimális értéket adja meg. Formátum: -1E[n] vagy numerikus állandó.
+- **Hiányzó érték-helyettesítés**: Meghatározza a múltbeli adatok hiányosságainak kitöltésének módját. Beállítások: numerikus érték, ÁTLAG, ELŐZŐ, INTERPOLÁLT LINEÁRIS, INTERPOLÁCIÓS POLINOM.
+- **Hiányzó érték-helyettesítésihatóköre**: Megadja, hogy az érték-helyettesítés csak az egyéni granularítású attribútumok adattartományára vagy a teljes adathalmazra vonatkozik-e. Beállítások: GRANULARITY_ATTRIBUTE (alapértelmezett), GLOBÁLIS.
+- **Szezonalitás tipp**: A szezonális adatokhoz az előrejelzési pontosság javítása érdekében adjon meg egy tippet az előrejelzési modellhez. Formátum: egész szám, amely az időszakok számát, jelenti, amikor egy minta ismétlése szükséges. Például a "6" értéket írja be a 6 havonta önmagukat ismétlő adatokhoz.
+- **Tesztkészlet mérete százalékban**: Az előrejelzés pontosságának számításához tesztkészletként használni kívánt előzményadatok százaléka. 
 
 <a name="additional-resources"></a>További erőforrások
 --------

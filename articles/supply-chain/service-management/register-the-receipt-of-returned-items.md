@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 42ca1d4d2d9b45d79cf479833f83e498e3b73540
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3975632"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429261"
 ---
 # <a name="register-the-receipt-of-returned-items"></a>A visszaadott cikkek bevételezésének rögzítése 
 
@@ -34,9 +34,9 @@ Kétféle módszerrel lehet regisztrálni a visszajuttatott cikkek bevételezés
 
 ## <a name="register-the-receipt-of-returned-items-in-the-arrival-overview-form"></a>A visszáru bevételezésének regisztrálása a Beérkezés áttekintése képernyőn
 
-A visszáruk a **Beérkezés áttekintése** képernyő használatával azonosíthatóak a visszáru-jóváhagyási szám (Return Materials Authorization – RMA) alapján. Ha a **Beállítás** lapon meg van adva napló neve, és vannak olyan naplósorok, amelyek megfelelnek a **Beérkezés áttekintése** képernyőn kijelölt soroknak, az **Érkeztetés indítása** . elemre történő kattintáskor új naplófejléc jön létre.
+A visszáruk a **Beérkezés áttekintése** képernyő használatával azonosíthatóak a visszáru-jóváhagyási szám (Return Materials Authorization – RMA) alapján. Ha a **Beállítás** lapon meg van adva napló neve, és vannak olyan naplósorok, amelyek megfelelnek a **Beérkezés áttekintése** képernyőn kijelölt soroknak, az **Érkeztetés indítása**. elemre történő kattintáskor új naplófejléc jön létre.
 
-1.  Kattintson a következőkre: **Készletkezelés** \> **Rendszeres** \> **Beérkezés áttekintése** .
+1.  Kattintson a következőkre: **Készletkezelés** \> **Rendszeres** \> **Beérkezés áttekintése**.
 
 2.  A **Beállítás neve** mezőben válassza ki a **Visszárurendelés** lehetőséget, és kattintson a **Frissítés** elemre.
     
@@ -68,7 +68,7 @@ A visszáruk a **Beérkezés áttekintése** képernyő használatával azonosí
 
 
 
-6.  Kattintson a következőkre **Készletgazdálkodás** \> **Naplók** \> **Cikkérkeztetés** \> **Cikkérkeztetés** .
+6.  Kattintson a következőkre **Készletgazdálkodás** \> **Naplók** \> **Cikkérkeztetés** \> **Cikkérkeztetés**.
 
 7.  A **Naplósorok, helyek** képernyő megnyitásához jelölje ki az imént létrehozott cikkérkezési naplót, és kattintson a **Sorok** elemre.
 
@@ -90,7 +90,7 @@ A visszáruk a **Beérkezés áttekintése** képernyő használatával azonosí
 
 A **Beérkezés áttekintése** képernyő helyett másik lehetőségként a **Regisztráció** képernyő is használható a visszaküldött cikkek beérkezésének nyilvántartásba vételére.
 
-1.  Kattintson a következőkre: **Értékesítés és marketing** \> **Közös** \> **Visszárurendelések** \> **MInden visszárurendelés** . Hozzon létre új visszárurendelést, vagy nyissa meg a listáról a visszárurendelést. Válassza ki a visszárurendelés-sort a **Sorok** gyorslapon. Kattintson a **Sor frissítése** gombra, majd kattintson a **Regisztráció** elemre.
+1.  Kattintson a következőkre: **Értékesítés és marketing** \> **Közös** \> **Visszárurendelések** \> **MInden visszárurendelés**. Hozzon létre új visszárurendelést, vagy nyissa meg a listáról a visszárurendelést. Válassza ki a visszárurendelés-sort a **Sorok** gyorslapon. Kattintson a **Sor frissítése** gombra, majd kattintson a **Regisztráció** elemre.
 
 2.  Rendeljen hozzá intézkedési kódot az **Intézkedéskód** mezőben, majd kattintson az **OK** gombra.
     

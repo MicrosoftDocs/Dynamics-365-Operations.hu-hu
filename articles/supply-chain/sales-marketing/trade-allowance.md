@@ -17,11 +17,11 @@ ms.author: benebotg
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
 ms.openlocfilehash: 13b665427a4caf206e0a3b3aca6b04c1529b9206
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3978869"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429474"
 ---
 # <a name="trade-allowance-management"></a>Promóciós engedmények kezelése
 
@@ -112,11 +112,11 @@ A **Kereskedelmi kedvezmény** sorok szakaszban megadhatja a mennyiségi vagy ö
 
 **Továbbszámlázás** típusú árusítási esemény esetén az **Összegek** lap felső része határozza meg azokat a szabályokat, amelyek alapján a továbbszámlázás alkalmazható, generálható és fizethető. Például a szabályok a következő feltételeket határozhatják meg a továbbszámlázási követelésre vonatkozóan:
 
-- Az értékesítési rendelés létrehozásának dátumán alapul (a **Számítási dátum típus** értéke **Létrehozott** ).
-- Az értékesítési rendelés sorának engedmények előtti összege alapján kerül kiszámításra, nem a nettó összeg alapján, amely az engedményeket tartalmazza (a **Forrás** értéke **Bruttó** ).
-- Az eladott termékek mennyiségén alapul, nem az összegükön (a **Visszatérítés sortörés típus** értéke **Mennyiség** ).
-- Egyhavi időszakonként kerül kiszámításra (az **Értékesítés összesítés alapja** értéke a **Hónap** ). 
-- Levonásként kerül kiegyenlítésre, nem pedig A/P használatával (a **Kifizetés típusa** értéke **Vevői levonások** ).
+- Az értékesítési rendelés létrehozásának dátumán alapul (a **Számítási dátum típus** értéke **Létrehozott**).
+- Az értékesítési rendelés sorának engedmények előtti összege alapján kerül kiszámításra, nem a nettó összeg alapján, amely az engedményeket tartalmazza (a **Forrás** értéke **Bruttó**).
+- Az eladott termékek mennyiségén alapul, nem az összegükön (a **Visszatérítés sortörés típus** értéke **Mennyiség**).
+- Egyhavi időszakonként kerül kiszámításra (az **Értékesítés összesítés alapja** értéke a **Hónap**). 
+- Levonásként kerül kiegyenlítésre, nem pedig A/P használatával (a **Kifizetés típusa** értéke **Vevői levonások**).
 
 Abban az esetben, ha egy árusítási esemény **Egyösszegű** típusú, az **Összegek** lap azt a mennyiséget mutatja, amelyet a vevőnek levonás formájában fognak kifizetni, amikor a vevő elér egy bizonyos teljesítményt. Egy **Nyitott** jóváhagyási állapot azt jelzi, hogy az egyösszegű kifizetést még nem teljesítették.
 
@@ -163,7 +163,7 @@ A folyamat befejezéséhez a Kinnlevőségek adminisztrátornak kezelnie kell az
 
 A feladat megkezdéséhez válassza a **Beszedés** \> **Tranzakciók kiegyenlítése** lehetőséget a **Vevő** oldalhoz tartozó Műveletpanelen. Majd a **Tranzakciók kiegyenlítése** oldalon válassza a **Funkciók** \> **Továbbszámlázási program** lehetőséget. Ez a visszatérítési oldal az összes továbbszámlázási követelést megjelenít, amelyeket korábban már feldolgoztak.
 
-Ha jóváírást szeretne létrehozni, jelölje be a **Jelölés** jelölőnégyzetet minden sorra vonatkozóan, majd válassza a **Funkciók** \> **Jóváírás létrehozása** .
+Ha jóváírást szeretne létrehozni, jelölje be a **Jelölés** jelölőnégyzetet minden sorra vonatkozóan, majd válassza a **Funkciók** \> **Jóváírás létrehozása**.
 
 A jóváírás létrehozása után a napló feladásra került. (A feladott napló az AR felhasználási napló, az A/R paramétereknek megfelelően). Ennek eredményeképp a valós kötelezettségek (jóváírás) összege átkerült a vevői egyenlegbe. Pénzügyi tekintetben ez a helyzet azt jelzi, hogy a következő események történtek:
 

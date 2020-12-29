@@ -20,11 +20,11 @@ ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
 ms.openlocfilehash: a74d2987eac7409b5f576a52eccc37cf29566c7b
-ms.sourcegitcommit: 4a32634690a741535f3f4babfd753f7c227ad6fe
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "3958793"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429332"
 ---
 # <a name="set-up-master-planning"></a>Alaptervezés beállítása
 
@@ -72,9 +72,9 @@ Kéttervű stratégia esetében a szállítási dátum ellenőrzése ígérhető
 
 ### <a name="setting-up-the-plans"></a>A tervek beállítása
 
-A tervek az **Alaptervek** oldalon hozhatók létre ( **Alaptervezés \> Beállítás \> Tervek \> Alaptervek** ).
+A tervek az **Alaptervek** oldalon hozhatók létre (**Alaptervezés \> Beállítás \> Tervek \> Alaptervek**).
 
-A **Alaptervezés paraméterei** oldal **Jelenlegi statikus alapterv** és **Jelenlegi dinamikus alapterv** mezőinek beállításával megadhatja, hogy mely tervek szerepeljenek a statikus tervben és a dinamikus tervben ( **Alaptervezés \> Beállítás \> Alaptervezés paraméterei** ). Egytervű stratégia használatához a **Jelenlegi statikus alapterv** és **Jelenlegi dinamikus alapterv** mezőben válassza ki ugyanazt a tervet.
+A **Alaptervezés paraméterei** oldal **Jelenlegi statikus alapterv** és **Jelenlegi dinamikus alapterv** mezőinek beállításával megadhatja, hogy mely tervek szerepeljenek a statikus tervben és a dinamikus tervben (**Alaptervezés \> Beállítás \> Alaptervezés paraméterei**). Egytervű stratégia használatához a **Jelenlegi statikus alapterv** és **Jelenlegi dinamikus alapterv** mezőben válassza ki ugyanazt a tervet.
 
 ## <a name="types-of-planning-methods"></a>A tervezési módszerek típusai
 
@@ -105,7 +105,7 @@ A nettó változás minimalizált tervezési módszere tervezett rendeléseket h
 
 ## <a name="types-of-scheduling-methods"></a>Az ütemezési módszerek típusai
 
-Minden terv esetében az **Alaptervek** lap **Általános** gyorslapján  ( **Alaptervezés \> Beállítás \> Tervek \> Alaptervek** ) ki kell választani a termelési rendelésekhez használt ütemezési módszert. A termelést műveleti szinten és feladatszinten is ütemezheti.
+Minden terv esetében az **Alaptervek** lap **Általános** gyorslapján  (**Alaptervezés \> Beállítás \> Tervek \> Alaptervek**) ki kell választani a termelési rendelésekhez használt ütemezési módszert. A termelést műveleti szinten és feladatszinten is ütemezheti.
 
 ### <a name="operations-scheduling"></a>Műveletek ütemezése
 
@@ -117,7 +117,7 @@ A feladatütemezés részletesebb ütemezési módszer, amely feladatokra bontja
 
 ## <a name="time-fences-in-days"></a>Időkorlát napokban
 
-Minden tervnél kiválaszthatja, hogy az alaptervezés alapján a jövőben mennyire előretekintve kell számítani a különböző igényeket és egyéb szempontokat. Ennek az időszaknak *időkorlát* a neve. Az alaptervezésben a legjobb teljesítmény elérése érdekében ajánlott úgy módosítani a különböző időkorlátokat, hogy megfeleljenek az Ön üzleti követelményeinek. Az időkorlátokat minden terv esetében az **Alaptervek** oldal **Időkorlát napokban** gyorslapján találja ( **Alaptervezés \> Beállítás \> Tervek \> Alaptervek** ).
+Minden tervnél kiválaszthatja, hogy az alaptervezés alapján a jövőben mennyire előretekintve kell számítani a különböző igényeket és egyéb szempontokat. Ennek az időszaknak *időkorlát* a neve. Az alaptervezésben a legjobb teljesítmény elérése érdekében ajánlott úgy módosítani a különböző időkorlátokat, hogy megfeleljenek az Ön üzleti követelményeinek. Az időkorlátokat minden terv esetében az **Alaptervek** oldal **Időkorlát napokban** gyorslapján találja (**Alaptervezés \> Beállítás \> Tervek \> Alaptervek**).
 
 > [!NOTE]
 > Minden időkorlátnál megadhatja, hogy az alaptervezés alapján a jövőben mennyire előretekintve legyenek kiszámítva a különböző igények és egyéb szempontok. Az ezen az oldalon kiválasztott időkorlátok felülbírálják a fedezeti csoportban meghatározott időkorlátot. Ez azt jelenti, hogy az időkorlátot igen értékre kell állítani, és a napok meghatározása felülbírálja a fedezeti csoportban meghatározott időkorlátot. Ha nem értéket állít be, akkor az időkorlátot a fedezeti csoport határozza meg. Végezetül ha nem szeretne egy beállítást használni (például nem szeretné használni a műveletkérő üzeneteket), állítsa **lgen** értékre, majd állítsa az időkorlátot **0** (nulla) napra.
@@ -198,13 +198,13 @@ Amikor a **Számított késés hozzáadása a követelménydátumhoz** lehetős�
 
 ## <a name="positive-and-negative-days"></a>Pozitív és negatív napok
 
-A pozitív és a negatív napok hatással vannak az alaptervezés tervezett rendelésekhez és műveletekhez adott javaslatára. A pozitív és negatív napokat a cikk fedezeti csoportjához állítja be a rendszer. Meghatározhatja a különböző fedezeti csoportokat, és beállíthatja paramétereiket a **Fedezeti csoportok** oldalon ( **Alaptervezés \> Beállítás \> Fedezet\> Fedezeti csoportok** ).
+A pozitív és a negatív napok hatással vannak az alaptervezés tervezett rendelésekhez és műveletekhez adott javaslatára. A pozitív és negatív napokat a cikk fedezeti csoportjához állítja be a rendszer. Meghatározhatja a különböző fedezeti csoportokat, és beállíthatja paramétereiket a **Fedezeti csoportok** oldalon (**Alaptervezés \> Beállítás \> Fedezet\> Fedezeti csoportok**).
 
 ### <a name="positive-days"></a>Pozitív napok
 
-A pozitív napok azt jelzik, hogy az alaptervezés a jövőben mennyire előretekintve vegye figyelembe az aktuális készletet vagy nyugtákat egy jövőbeli igény teljesítéséhez. Ha például a pozitív napok értéke **100** , akkor az aktuális készlet a következő 100 napban történő igény kielégítésére használható. Ha van egy 150 napos rendelés az aktuális dátumtól számítva, akkor az alaptervezés létrehoz egy tervezett rendelést az igény kielégítésére, még akkor is, ha a cikk aktuális készletéből teljesíthető a rendelés. A rövid átfutási idejű, gyorsan mozgatott cikkek esetében előfordulhat, hogy az aktuális készletet nem szeretné egy jóval későbbi rendeléshez használni. Gyors mozgatás esetén az aktuális készlet gyorsan elfogy, és a jövőben több rendelés is leadható a jövőbeli igény időre történő teljesítéséhez, amely a cikk rövid átfutási ideje miatt lehetséges.
+A pozitív napok azt jelzik, hogy az alaptervezés a jövőben mennyire előretekintve vegye figyelembe az aktuális készletet vagy nyugtákat egy jövőbeli igény teljesítéséhez. Ha például a pozitív napok értéke **100**, akkor az aktuális készlet a következő 100 napban történő igény kielégítésére használható. Ha van egy 150 napos rendelés az aktuális dátumtól számítva, akkor az alaptervezés létrehoz egy tervezett rendelést az igény kielégítésére, még akkor is, ha a cikk aktuális készletéből teljesíthető a rendelés. A rövid átfutási idejű, gyorsan mozgatott cikkek esetében előfordulhat, hogy az aktuális készletet nem szeretné egy jóval későbbi rendeléshez használni. Gyors mozgatás esetén az aktuális készlet gyorsan elfogy, és a jövőben több rendelés is leadható a jövőbeli igény időre történő teljesítéséhez, amely a cikk rövid átfutási ideje miatt lehetséges.
 
-A pozitív napok a műveletkérő üzenetekre is hatással vannak. Előfordulhat például, hogy a rendszer egy tervezett beszerzési rendelés növelésére tesz javaslatot, mégpedig úgy, hogy a rendelés a jövőbeli pozitív napok számán belüli igényt tartalmazzon. Ha a pozitív napok értéke **100** , és ha az aktuális dátumtól számított 30 nap múlva van igény egy adott cikkre, akkor a rendszer tervezett rendelést hoz létre az igény kielégítésére. Ha az aktuális dátumtól 90 napon belül van igény ugyanarra a cikkre, akkor a rendszer azt javasolja, hogy a rendelés mennyiségét az aktuális dátumtól számítva 30 napon belül emelje, így a rendelés a 90 napon belüli igényre is kiterjed. Ha azonban az aktuális dátumtól 150 napon belül igény van a cikkre, akkor a rendszer nem javasolja, hogy növelje a már tervezett rendelés mennyiségét. Helyette új tervezett rendelést hoz létre.
+A pozitív napok a műveletkérő üzenetekre is hatással vannak. Előfordulhat például, hogy a rendszer egy tervezett beszerzési rendelés növelésére tesz javaslatot, mégpedig úgy, hogy a rendelés a jövőbeli pozitív napok számán belüli igényt tartalmazzon. Ha a pozitív napok értéke **100**, és ha az aktuális dátumtól számított 30 nap múlva van igény egy adott cikkre, akkor a rendszer tervezett rendelést hoz létre az igény kielégítésére. Ha az aktuális dátumtól 90 napon belül van igény ugyanarra a cikkre, akkor a rendszer azt javasolja, hogy a rendelés mennyiségét az aktuális dátumtól számítva 30 napon belül emelje, így a rendelés a 90 napon belüli igényre is kiterjed. Ha azonban az aktuális dátumtól 150 napon belül igény van a cikkre, akkor a rendszer nem javasolja, hogy növelje a már tervezett rendelés mennyiségét. Helyette új tervezett rendelést hoz létre.
 
 Szabály szerint a pozitív napokat a cikkek leghosszabb átfutási ideje és a fedezeti időkorlát között megadott számra állítja be a rendszer. Azt ajánljuk, hogy a rendszeresen beszerezett vagy előállított cikkeket egy fedezeti csoporthoz rendelje hozzá, ahol a pozitív napok megegyeznek a cikk átfutási idejével.
 

@@ -19,11 +19,11 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 8.0.0
 ms.openlocfilehash: 2ef0a43480e547c6bd19d5f9b7377ed8b73425e7
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016885"
+ms.locfileid: "4429867"
 ---
 # <a name="batch-balancing"></a>Kötegalapú kiigazítás
 
@@ -97,7 +97,7 @@ A B összetevő alapattribútuma X, a célszintje 30, és egy olyan receptúráb
 
 ### <a name="none"></a>Nincs
 
-A tételalapú kiigazítás folyamat alkalmazásakor, ha az összetevő típusa **Nincs** , a receptúrasor becsült mennyisége és kiegyenlített mennyisége a kötegrendelésben megegyezik.
+A tételalapú kiigazítás folyamat alkalmazásakor, ha az összetevő típusa **Nincs**, a receptúrasor becsült mennyisége és kiegyenlített mennyisége a kötegrendelésben megegyezik.
 
 **Példa**
 

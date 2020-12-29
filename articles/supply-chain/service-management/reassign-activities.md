@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: fe7f93782ff52797a6978a2490aab992bed065de
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3975752"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429266"
 ---
 # <a name="reassign-activities"></a>Tevékenységek ismételt hozzárendelése 
 
@@ -34,7 +34,7 @@ Ez a témakör leírja, hogyan tudja a szolgáltatási tevékenységeket az egyi
 
 A következő lépések segítségével tudja átadni a tevékenységet egy másik dolgozónak:
 
-1.  Kattintson a következőkre: **Szolgáltatáskezelés** \> **Rendszeres** \> **Diszpécserközpont** .
+1.  Kattintson a következőkre: **Szolgáltatáskezelés** \> **Rendszeres** \> **Diszpécserközpont**.
 
 2.  A megtekinteni kívánt időszak meghatározásához írja be a megfelelő dátumokat a **Kezdő dátum** és **Záró dátum** mezőkbe.
 

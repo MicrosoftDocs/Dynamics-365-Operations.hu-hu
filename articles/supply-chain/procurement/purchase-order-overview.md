@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: cfb35d6db74f965911329dbd6215d1108149fa6c
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018767"
+ms.locfileid: "4429953"
 ---
 # <a name="purchase-order-overview"></a>Beszerzési rendelések áttekintése
 
@@ -73,7 +73,7 @@ A **Dokumentum állapota** a mező segíti a rendelés állapotának gyors átte
 
 A **Jóváhagyási állapot** mező akkor használatos, ha egy beszerzési rendelés halad át az ellenőrzési folyamaton vagy a munkafolyamaton. A következő értékek állnak rendelkezésre:
 
--   **Tervezet** , **Ellenőrzés alatt** , és **Elutasítva** – ezeket az állapotokat csak akkor használják, ha jóváhagyási munkafolyamatot használnak a beszerzési rendeléshez.
+-   **Tervezet**, **Ellenőrzés alatt**, és **Elutasítva** – ezeket az állapotokat csak akkor használják, ha jóváhagyási munkafolyamatot használnak a beszerzési rendeléshez.
 -   **Jóváhagyva** – Ez az állapot a befejezett munkafolyamat-jóváhagyással rendelkező rendelésekhez van társítva. Jóváhagyási munkafolyamat használata nélkül létrehozott rendelések állapota azonnal **Jóváhagyva** lesz.
 -   **Külső ellenőrzés alatt** – Ez az állapot olyan esetekben használatos, amikor egy beszerzési értesítést küldenek a szállítónak, hogy a beszerzési rendelésen szereplő feltételeket megerősíthesse. Ez az állapot is használatban van a folyamat során, amelyet a **Megerősítés kérés** művelet kezdeményez. Ehhez a folyamathoz a szállítónak meg kell erősítenie a Beszerzési rendelés feltételeit a rendszerhez való kapcsolódással és a rendelés megerősítésének vagy elutasításának regisztrálásával.
 -   **Megerősített** – Ez az állapot a rendelés megerősítése után kerül hozzárendelésre. Általában ez az állapot van hozzárendelve a rendelés utolsó jóváhagyási állapotához.

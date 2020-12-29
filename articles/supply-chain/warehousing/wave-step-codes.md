@@ -19,11 +19,11 @@ ms.author: perlynne
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: 9332e45f7213ed815e4417969b617256778598db
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017805"
+ms.locfileid: "4429927"
 ---
 # <a name="wave-step-codes"></a>Hullámlépéskódok
 
@@ -59,7 +59,7 @@ Az engedélyezés során az érvényesítés az adatfrissítés során történi
 
 Miután feloldotta az ellenőrzések során azonosított ütközéseket, próbálja újra engedélyezni a funkciót.
 
-Amikor a funkció engedélyezve van, elérhetővé válik a **Hullámlépéskódok** oldal ( **Raktárkezelés \> Beállítás \> Hullámok \> Hullámlépéskódok** ). Ez a lap felsorolja azokat a hullámlépéskódokat, amelyek a Szervezet egészére kiterjedő hullámlépéskód funkció bekapcsolásakor engedélyezve lettek.
+Amikor a funkció engedélyezve van, elérhetővé válik a **Hullámlépéskódok** oldal (**Raktárkezelés \> Beállítás \> Hullámok \> Hullámlépéskódok**). Ez a lap felsorolja azokat a hullámlépéskódokat, amelyek a Szervezet egészére kiterjedő hullámlépéskód funkció bekapcsolásakor engedélyezve lettek.
 
 ### <a name="create-new-wave-step-codes"></a>Új hullámlépéskódok létrehozása
 

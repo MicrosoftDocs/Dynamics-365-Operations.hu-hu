@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 85e590322c75cfb2ad21236af56656061037a4b7
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3983525"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429659"
 ---
 # <a name="cost-objects"></a>Költségobjektumok
 
@@ -65,7 +65,7 @@ Az alábbi táblázat bemutatja, hogy mi a költségobjektum és mi a készletob
     -   Feladott mennyiség
 -   Az **Átlagos egységenkénti költség** mező egy kiszámított mező. Az értékét az **Érték** mező **Mennyiség** mezővel való elosztásával kapjuk meg.
 
-**Megjegyzés** : A **Tényleges érték beszámítása** paraméter nem befolyásolja az előző számításokat.
+**Megjegyzés**: A **Tényleges érték beszámítása** paraméter nem befolyásolja az előző számításokat.
 
 <a name="additional-resources"></a>További erőforrások
 --------

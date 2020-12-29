@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 49025d0aa0f6a627b816a43dd4260449942b400c
-ms.sourcegitcommit: ae04c7cb48f7ecafe71bbe77a0f97715e6290991
+ms.openlocfilehash: 54ad180b7f4691ead3563b077eadadc3b9b20588
+ms.sourcegitcommit: 5f21cfde36c43887ec209bba4a12b830a1746fcf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "3973476"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "4429964"
 ---
 # <a name="get-started-with-planning-optimization"></a>Tervezési optimalizálás kezdő lépései
 
@@ -67,6 +67,8 @@ A Tervezés optimalizálása modul használatához telepíteni kell a Tervezés 
 1. A **Környezeti bővítmények** gyorslapon látnia kell, hogy a Tervezési optimalizálás telepítése folyamatban van.
 1. Néhány perc múlva a **Telepítés** felirat erre módosul: **Telepítve** (előfordulhat, hogy frissíteni kell az oldalt). A telepítés befejezésekor készen áll a Tervezési optimalizálás funkció aktiválására a Dynamics 365 Supply Chain Management alkalmazásban.
 
+A Tervezésoptimalizálás bővítmény telepítésének fő célja a szolgáltatás és a környezet csatlakoztatása. Ezért a bővítményt külön kell telepíteni minden olyan környezetre, ahol a tervezésoptimalizálást fogja használni, függetlenül a környezetek között áthelyezett kódoktól.
+
 ### <a name="planning-optimization-integration"></a>A tervezésoptimalizálás integrációja
 
 Annak konfigurálásához, hogy a Tervezési optimalizálás bővítményt használja-e a rendszer az alaptervezéshez, nyissa meg az **Alaptervezés** \> **Beállítás** \> **Tervezési optimalizálás paraméterei** lehetőséget.
@@ -91,11 +93,11 @@ A **Tervezés optimalizálása használata** beállítás határozza meg, hogy m
 - **Nem** – Az alaptervezéshez a Supply Chain Management beépített tervezési motorja használatos.
 
 > [!NOTE]
-> Ha meglévő tervezett kötegelt feladatok, amelyeket a beépített Supply Chain Management tervezési morothoz hoztak létre, elindulnak, miközben a **Tervezésoptimalizálás használata** beállítás értéke **Igen** , a feladatok sikertelenek lesznek.
+> Ha meglévő tervezett kötegelt feladatok, amelyeket a beépített Supply Chain Management tervezési morothoz hoztak létre, elindulnak, miközben a **Tervezésoptimalizálás használata** beállítás értéke **Igen**, a feladatok sikertelenek lesznek.
 
 ### <a name="integration-with-the-setup"></a>Integráció a beállítással
 
-Ha a Tervezésoptimalizálás előzetes verziója be van kapcsolva, akkor az alaptervezést a rendszer a Tervezésoptimalizálás bővítménnyel végzi. Ebben az esetben az Alaptervezés eredményeit és funkcióit érinti a program.
+Ha a Tervezésoptimalizálás be van kapcsolva, akkor az alaptervezést a rendszer a Tervezésoptimalizálás bővítménnyel végzi. Ebben az esetben az Alaptervezés eredményeit és funkcióit érinti a program.
 
 ## <a name="additional-resources"></a>További erőforrások
 

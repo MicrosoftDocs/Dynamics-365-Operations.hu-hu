@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 206d6d6769d1dedcbfefa589fd72903e65a25ba6
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018790"
+ms.locfileid: "4429837"
 ---
 # <a name="create-purchase-orders"></a>Beszerzési rendelések létrehozása
 
@@ -70,7 +70,7 @@ A költségeket automatikusan hozzá lehet adni a beszerzésirendelés-sorokhoz,
 ## <a name="purchase-order-actions"></a>Beszerzési rendelés műveletei
 A fejléc és a sorok beszerzési rendeléshez történő hozzáadása után gyakori, hogy további lépéseket kell végrehajtani a beszerzési rendelés megerősítése előtt. Mivel sok lehetőség áll rendelkezésre, érdemes lehet a [Műveletkeresés](../../fin-and-ops/get-started/action-search.md) opciót használni a megfelelő elem megtalálására a menüben.  
 
-A rendelésen a termékek konfigurálhatók úgy, hogy kiegészítő cikkeket tartalmazzanak. A kiegészítő cikkek olyan termékek, vagy más termékekkel együtt lehet vagy kell megvásárolni. A kiegészítő termékek költségmentesen hozzáadhatók, mint kísérő termékek, vagy eldöntheti, hogy hozzáadja-e őket a rendeléshez vagy sem. A kiegészítő elemeket minden hozzáadott rendelési sor után ellenőrizheti. Azonban a kiegészítő termékek ellenőrzése és hozzáadása kényelmesebb lehet a Kiegészítő termékek oldal használatával a **Műveletek oldalon** , ahol az összes rendeléssort egyszerre kezelheti.  
+A rendelésen a termékek konfigurálhatók úgy, hogy kiegészítő cikkeket tartalmazzanak. A kiegészítő cikkek olyan termékek, vagy más termékekkel együtt lehet vagy kell megvásárolni. A kiegészítő termékek költségmentesen hozzáadhatók, mint kísérő termékek, vagy eldöntheti, hogy hozzáadja-e őket a rendeléshez vagy sem. A kiegészítő elemeket minden hozzáadott rendelési sor után ellenőrizheti. Azonban a kiegészítő termékek ellenőrzése és hozzáadása kényelmesebb lehet a Kiegészítő termékek oldal használatával a **Műveletek oldalon**, ahol az összes rendeléssort egyszerre kezelheti.  
 
 A kedvezmények általában a sorok létrehozásakor kerülnek hozzáadásra. Azonban bizonyos engedmények a teljes rendelésre vonatkoznak:
 

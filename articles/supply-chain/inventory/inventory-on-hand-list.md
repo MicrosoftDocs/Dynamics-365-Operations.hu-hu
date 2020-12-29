@@ -17,11 +17,11 @@ ms.author: chuzheng
 ms.search.validFrom: 2020-07-07
 ms.dyn365.ops.version: Release 10.0.12
 ms.openlocfilehash: 33e5ccc454191e27e33835a05094b823ec54e891
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017391"
+ms.locfileid: "4429934"
 ---
 # <a name="inventory-on-hand-list"></a>Aktuális készlet listája
 
@@ -54,14 +54,14 @@ Az egyező cikkekhez az **Aktuális** rács minden a következő készletadatok 
 | Megrendelt | A kimenő rendelésekben szereplő teljes pozitív mennyiség vagy azok, amelyek különböző készletnaplókban negatív mennyiséggel rendelkeznek. |
 | Rendelt, lefoglalt | A megrendelt bevételezéseken lefoglalt teljes mennyiség. Az ebben a mezőben szereplő érték a kimenő tranzakciók azon cikkeinek teljes mennyiségét jeleníti meg, amelyek állapota _Rendelt, lefoglalt_. A rendelt, lefoglalt cikkek ténylegesen nem érhetők el a készletben. Ezért nem lehet őket közvetlenül kitárolni és szállítani. |
 | Foglalásra elérhető | A lefoglalható aktuális készlet teljes mennyisége.<p>**Megjegyzés:** Ha a **Készlet-és raktárkezelési paraméterek** lapon be van jelölve a **Rendelt, lefoglalt cikkek** jelölőnégyzet, akkor a mező értéke a várható bevételezéseket is tartalmazza. Ha törli a jelet a jelölőnégyzetből, akkor az érték nem tartalmazza a várható bevételezéseket.</p> |
-| Összes rendelkezésre álló | A teljes elérhető mennyiség.<p>A **Teljes elérhető** lehetőség egy kiszámított mező. összesenAz érték egyenlő az **Elérhető tényleges** értékkel, plusz a **Megrendelve összesen** , mínusz a **Rendelésben lévő** érték.</p> |
+| Összes rendelkezésre álló | A teljes elérhető mennyiség.<p>A **Teljes elérhető** lehetőség egy kiszámított mező. összesenAz érték egyenlő az **Elérhető tényleges** értékkel, plusz a **Megrendelve összesen**, mínusz a **Rendelésben lévő** érték.</p> |
 
 ## <a name="apply-filters-to-find-the-records-that-youre-looking-for"></a><a name="filters-pane"></a>Szűrők alkalmazása a keresett rekordok megtalálásához
 
 Használja a **Szűrők** lehetőséget az ablaktáblán az aktuális készletlista szűréséhez, hogy csak olyan rekordokat tartalmazzon, amelyeknél a mezőértékek megfelelnek a szűrési feltételeknek. A szűrő meghatározásához tegye a következőket.
 
 1. A **Szűrők** ablaktáblában keresse meg a szűrni kívánt mezőt.
-2. A cél mező neve alatti mezőben válasszon ki egy logikai operátort (például *így kezdődik* , *egyenlő* , vagy *nagyobb, mint* ).
+2. A cél mező neve alatti mezőben válasszon ki egy logikai operátort (például *így kezdődik*, *egyenlő*, vagy *nagyobb, mint*).
 3. Adja meg vagy válassza ki a keresendő értéket.
 
 > [!IMPORTANT]
@@ -73,7 +73,7 @@ Használja a **Szűrők** lehetőséget az ablaktáblán az aktuális készletli
 
 A **Szűrők** ablaktáblában elérhető szűrőkészletet a következő lépésekkel módosíthatja.
 
-- Ha törölni szeretne egy szűrőt az ablaktáblából, akkor válassza a **Bezárás** gombot ( **X** ).
+- Ha törölni szeretne egy szűrőt az ablaktáblából, akkor válassza a **Bezárás** gombot (**X**).
 - Szűrő hozzáadásához válassza a **Szűrők** ablaktábla felső részén lévő **Hozzáadás** lehetőséget. A megjelenő **Szűrőmezők hozzáadása** párbeszédpanel megjeleníti az elérhető mezők listáját. Illetve megjeleníti az egyes mezők adattípusának és táblájának adatait is. Az oszlopfejlécek segítségével szükség szerint szűrheti és rendezheti a listát, majd bejelölheti a jelölőnégyzetet minden olyan mezőnél, amelyet hozzá szeretne adni a **Szűrő** ablaktáblához. Ha befejezte, válassza a **Beszúrás** lehetőséget a módosítások alkalmazásához.
 
 ## <a name="select-which-dimensions-to-show"></a><a name="dimensions"></a>Válassza ki, hogy mely dimenziók jelenjenek meg

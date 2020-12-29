@@ -18,11 +18,11 @@ ms.author: benebotg
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
 ms.openlocfilehash: 2c32957b0bd234ed14e6333a36a46c6a83ec2e91
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3983916"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429541"
 ---
 # <a name="calendars-and-master-planning"></a>Naptárak és alaptervezés
 
@@ -34,7 +34,7 @@ Ez a témakör áttekintést nyújt az ellátási lánc naptárakkal, illetve az
 
 Megadhatja a szervezetben használt naptárt a **Szervezet felügyelete > Beállítás > Naptárak > Naptárak** helyen. 
 
-Minden naptárbejegyzés a naptárban lehet **nyitott** vagy **lezárt** vagy **alapnaptár** . Ez a **Vezérlő** oszlopban van meghatározva a **Munkaidők** lapon. Az egyes dátumoknál: 
+Minden naptárbejegyzés a naptárban lehet **nyitott** vagy **lezárt** vagy **alapnaptár**. Ez a **Vezérlő** oszlopban van meghatározva a **Munkaidők** lapon. Az egyes dátumoknál: 
 - **Nyitott** -azt jelzi, hogy munkavégzés történik az adott napon. A naptár a munkaidő-sablonnak megfelelően lesz frissítve.
 - **Lezárt** -azt jelzi, hogy nem történik munkavégzés az adott napon. 
 - **Alapnaptár** - Azt jelzi, hogy az adott dátumra a munkaidőket és nyitott/zárt státuszt az alapnaptárból örökli. Tehát, az alapnaptár frissítésekor a kiválasztott naptár örökli a műveleti időket. 
@@ -82,7 +82,7 @@ Naptárt rendelhet egy raktárhoz is, hogy jelölje a nyitott fogadási és szá
 Ha jelezni szeretné, hogy a raktár nyitva van fogadáshoz, de felvétel nem lehetséges használhatja a **Felvételre lezárva irányelv** lehetőséget a raktár naptárában. Ez vonatkozik az ügyfelek átvételeire is. 
 
 ### <a name="transport-calendar"></a>Szállítási naptár 
-Ha jelezni szeretné azokat a dátumokat, amelyek elérhetők átmozgatási rendelések szállításra egy **Forrás raktárból** , hozzárendelheti egy **Szállítási naptárat** . Szállítási naptárat beállíthat a szállítás módja szerint vagy a szállítás módja és forrás raktár szerint. Szállítási naptár beállítása az **Értékesítés és marketing > Beállítás > Kiosztás > Szállítási módok** helyen történik. Válasszon egy szállítási módot, és kattintson a **Szállítási naptár** gombra
+Ha jelezni szeretné azokat a dátumokat, amelyek elérhetők átmozgatási rendelések szállításra egy **Forrás raktárból**, hozzárendelheti egy **Szállítási naptárat**. Szállítási naptárat beállíthat a szállítás módja szerint vagy a szállítás módja és forrás raktár szerint. Szállítási naptár beállítása az **Értékesítés és marketing > Beállítás > Kiosztás > Szállítási módok** helyen történik. Válasszon egy szállítási módot, és kattintson a **Szállítási naptár** gombra
 
 Létrehozható egy sor minden egyes raktárhoz és a szállítási módhoz, ahol a naptár a **Szállítási naptár** oszlophoz lesz hozzáadva. Ez határozza meg a szállítási naptárt, amely akkor lesz alkalmazva, ha az áruk egy bizonyos szállítási mód használatával lesznek szállítva a raktárból. Szállítási naptár alkalmazásához egy adott szállítási módszer összes szállítmányára létrehozható egy sor raktár megadása nélkül.  Ez összes szállítmányt érinti az adott szállítási módhoz, függetlenül a raktártól. 
 

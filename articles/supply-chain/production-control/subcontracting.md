@@ -16,11 +16,11 @@ ms.author: josaw
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: ''
 ms.openlocfilehash: 1cc1040393d843f39ca8c741a7c51435c7169c00
-ms.sourcegitcommit: edb46dce498df42b09e8f5ad6de00f86c8022dfa
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "3346422"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429254"
 ---
 # <a name="subcontracting"></a>Alvállalkozásba adás
 
@@ -112,7 +112,7 @@ Ez az eljárás végigvezeti Önt a kiadott D8100 termék, a "Bevont kabinet" be
 Meg kell adni egy jelszót a kéziszámítógépet használó raktári dolgozóknak.
 
 1. Válassza ki a **Raktárkezelés \> Beállítás \> Dolgozó** opciót a **Munkafelhasználók** oldal megnyitásához.
-2. A **Felhasználók** gyorslapon válassza ki az **51-es**felhasználó sorát.
+2. A **Felhasználók** gyorslapon válassza ki az **51-es** felhasználó sorát.
 
     ![Munkafelhasználók oldal](./media/subcontract11_work-users-page.png)
 

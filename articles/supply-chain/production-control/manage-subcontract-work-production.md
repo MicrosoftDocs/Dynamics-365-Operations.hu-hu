@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 9119655384cd05e5aa3622712e699b346a43f492
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3981328"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429742"
 ---
 # <a name="manage-subcontracting-work-in-production"></a>Gyártás területén végzett alvállalkozói munka kezelése
 
@@ -57,7 +57,7 @@ A gyártási műveletek során igénybe vett alvállalkozói munka modellezésé
     -   A költségkontroll az alvállalkozói munkát saját költségrészletezési blokkjába sorolja be.
 
 ## <a name="subcontracting-of-route-operations"></a>Útvonalműveletek alvállalkozásba adása
-Útvonalműveletek alvállalkozásba adása gyártásnál vagy kötegrendeléseknél úgy történhet, hogy a szolgáltatás beszerzésére szolgáló szolgáltatási terméket, **Szolgáltatási** típusú termékként kell meghatározni. Ezenkívül rendelkeznie kell olyan cikkmodellcsoporttal, amelynél a **Raktározott termék** beállítás a **Készletházirendben** **Igen** értékre van állítva. Ez a beállítás határozza meg, hogy egy termék elszámolása készletként történik-e a termék átvételekor ( **Raktározott termék** = **Igen** ), vagy hogy a termék kiadásként van-e könyvelve egy eredményszámlán ( **Raktározott termék** = **nem** ). Bár ez a viselkedés ellentmondásosnak tűnhet, azon alapszik, hogy csak az ehhez a házirendhez tartozó termékeknél jön létre olyan készlettranzakció, amely felhasználható a költségkontrollban a tervezett költség kiszámítására és a tényleges költség meghatározására akkor, amikor a gyártási rendelés lezárul.  
+Útvonalműveletek alvállalkozásba adása gyártásnál vagy kötegrendeléseknél úgy történhet, hogy a szolgáltatás beszerzésére szolgáló szolgáltatási terméket, **Szolgáltatási** típusú termékként kell meghatározni. Ezenkívül rendelkeznie kell olyan cikkmodellcsoporttal, amelynél a **Raktározott termék** beállítás a **Készletházirendben** **Igen** értékre van állítva. Ez a beállítás határozza meg, hogy egy termék elszámolása készletként történik-e a termék átvételekor (**Raktározott termék** = **Igen**), vagy hogy a termék kiadásként van-e könyvelve egy eredményszámlán (**Raktározott termék** = **nem**). Bár ez a viselkedés ellentmondásosnak tűnhet, azon alapszik, hogy csak az ehhez a házirendhez tartozó termékeknél jön létre olyan készlettranzakció, amely felhasználható a költségkontrollban a tervezett költség kiszámítására és a tényleges költség meghatározására akkor, amikor a gyártási rendelés lezárul.  
 
 Tervezésbe és költségszámításba a szolgáltatás akkor kerülhet be, ha hozzá van adva az AJ-hez. Az AJ-sornak **Szállító** típusúnak kell lennie, és ahhoz az útvonalművelhez kell tartoznia, amelyhez a szolgáltatás tartozik. Az útvonalműveletnek rendelkeznie kell költségszámítási erőforrással és olyan erőforráskövetelménnyel, amely egy olyan, **Szállító** típusú erőforrásra mutat, amely összeköti a műveletet és a kapcsolódó szolgáltatást a megfelelő szállítói számlával.  
 

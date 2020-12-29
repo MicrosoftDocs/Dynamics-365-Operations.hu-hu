@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: 82249f460e5ddce9b9d43906008a3248a80daafb
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018744"
+ms.locfileid: "4429920"
 ---
 # <a name="vendor-collaboration-with-external-vendors"></a>A külső szállítókkal történő szállítói együttműködés
 
@@ -60,8 +60,8 @@ A rendszergazda konfigurálja a szállítói együttműködés általános beál
 
 Mielőtt felhasználói fiókokat hozna létre egy külső szállító számára, konfigurálnia kell a szállítókódot a szállítói együttműködés engedélyezése érdekében. Használja az **Együttműködés aktiválása** mezőt az **Általános** lapon, a **Szállítók** oldalon. Ehhez a következő lehetőségek állnak rendelkezésre:
 
-- **Aktív (beszerzési rendelés automatikus megerősítése)** – a rendszer automatikusan megerősíti a beszerzési rendeléseket, amikor a szállító módosítások nélkül fogadja el azokat.
-- **Aktív (beszerzési rendelés nincs automatikusan megerősítve)** – A beszerzési rendeléseket szervezetének manuálisan kell jóváhagynia, miután a szállító elfogadta őket.
+- **Aktív (beszerzési rendelés automatikus megerősítése)**– a rendszer automatikusan megerősíti a beszerzési rendeléseket, amikor a szállító módosítások nélkül fogadja el azokat.
+- **Aktív (beszerzési rendelés nincs automatikusan megerősítve)**– A beszerzési rendeléseket szervezetének manuálisan kell jóváhagynia, miután a szállító elfogadta őket.
 
 ### <a name="specifying-whether-the-vendor-should-see-price-information"></a>Annak megadása, hogy a szállító láthatja-e az árakkal kapcsolatos adatokat
 
@@ -71,7 +71,7 @@ Ahhoz, hogy megossza a beszerzési rendelések árinformációit a szállítói 
 
 ### <a name="sending-a-po-to-a-vendor"></a>Beszerzési rendelés küldése egy szállítónak
 
-A beszerzési rendeléseket a Supply Chain Management szolgáltatásban hozzák létre. Amikor a beszerzési rendelés állapota **Jóváhagyva** , a szállítónak a **Elküldés visszaigazolásra** művelet használatával elküldheti a rendelést a **Beszerzési rendelés** lapon. A beszerzési rendelés állapota ekkor **Külső ellenőrzés alatt** státuszra változik. A beszerzési rendelés elküldése után a szállító megtekintheti azt a **Beszerzési rendelések ellenőrzésre** lapon a szállító együttműködési felületen. A szállító ezután elfogadhatja, elutasíthatja a beszerzési rendelést,vagy módosításokat javasolhat hozzá. A szállító hozzászólások hozzáadásával oszthat meg olyan információkat, mint a beszerzési rendelés módosítása. Ha fel szeretné hívni a szállító figyelmét az új beszerzési rendelésre, elküldheti azt egy e-mailben is a nyomtatáskezelő rendszer segítségével.
+A beszerzési rendeléseket a Supply Chain Management szolgáltatásban hozzák létre. Amikor a beszerzési rendelés állapota **Jóváhagyva**, a szállítónak a **Elküldés visszaigazolásra** művelet használatával elküldheti a rendelést a **Beszerzési rendelés** lapon. A beszerzési rendelés állapota ekkor **Külső ellenőrzés alatt** státuszra változik. A beszerzési rendelés elküldése után a szállító megtekintheti azt a **Beszerzési rendelések ellenőrzésre** lapon a szállító együttműködési felületen. A szállító ezután elfogadhatja, elutasíthatja a beszerzési rendelést,vagy módosításokat javasolhat hozzá. A szállító hozzászólások hozzáadásával oszthat meg olyan információkat, mint a beszerzési rendelés módosítása. Ha fel szeretné hívni a szállító figyelmét az új beszerzési rendelésre, elküldheti azt egy e-mailben is a nyomtatáskezelő rendszer segítségével.
 
 ### <a name="confirmation-and-acceptance-of-a-po-by-a-vendor"></a>A beszerzési rendelés szállító általi visszaigazolása és elfogadása
 

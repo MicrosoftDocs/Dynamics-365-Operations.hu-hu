@@ -20,11 +20,11 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: bc6d53fc87bac2e23c0d1e67954be02749042004
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3211238"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429796"
 ---
 # <a name="release-production-orders"></a>Termelési rendelések kiadása
 
@@ -52,7 +52,7 @@ Az útvonalkártya áttekintő információt tartalmaz az útvonal és a művele
 Az útvonalfeladat egy művelet mindegyik feladatát részletesen felsorolja, és tartalmazza a beállítási, feldolgozási, várakozási és szállítási időket is. Például egy festési művelethez olyan egyéni feladatok lehetnek szükségesek, mint a beállítási és a futási idő a festési feladathoz, és a várakozási idő a száradáshoz.
 
 ## <a name="job-cards"></a>Feladatkártyák
-A feladatkártya egy adott művelet egyéni feladatszámait sorolja fel. Egy feladat jelenik meg minden oldalon. A feladatkártyán szereplő feladatok és becsült idejük az útvonal és a művelet beállítási adataiból származik. A feladatkártyáról megnyithatók a **Termelésinapló-sorok**, a **Feladatkártya**oldalon. A műveleti erőforrásokat működtető emberek visszajelzést adhatnak a termelési folyamatról. Vannak olyan mezők, ahol felhasználási statisztikai adatokat és egyéb információkat adhatnak meg, például a hibák mennyiségét.
+A feladatkártya egy adott művelet egyéni feladatszámait sorolja fel. Egy feladat jelenik meg minden oldalon. A feladatkártyán szereplő feladatok és becsült idejük az útvonal és a művelet beállítási adataiból származik. A feladatkártyáról megnyithatók a **Termelésinapló-sorok**, a **Feladatkártya** oldalon. A műveleti erőforrásokat működtető emberek visszajelzést adhatnak a termelési folyamatról. Vannak olyan mezők, ahol felhasználási statisztikai adatokat és egyéb információkat adhatnak meg, például a hibák mennyiségét.
 
 ## <a name="warehouse-work-for-raw-material-picking"></a>Raktári munka a nyersanyag-kitároláshoz.
 A nyersanyag-kitárolási munka a kiadás során jön létre. A munka csak ahhoz az anyagmennyiséghez jön létre, amelyet ténylegesen lefoglaltak a termelési rendeléshez a rendelés kiadása előtt. A következő beállítás szükséges raktári munka létrehozásához a nyersanyag-kitároláshoz:

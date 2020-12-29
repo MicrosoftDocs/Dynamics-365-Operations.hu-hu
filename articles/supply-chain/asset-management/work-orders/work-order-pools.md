@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: 3e95a4fdfaf4817867f3d2df7774df6a27ee6599
-ms.sourcegitcommit: c986d5234b81d31cc6d054298be6f6ec92c1754c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3889505"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429813"
 ---
 # <a name="work-order-pools"></a>Munkarendelés-gyűjtők
 
@@ -99,7 +99,7 @@ Az előző szakaszban leírt módon munkarendeléseket adhat hozzá a munkarende
 
 2. Válassza ki a munkarendelést a listán, majd kattintson a **Munkarendelés-gyűjtő** elemre.
 
-3. A **Munkarendelés-gyűjtő karbantartása** párbeszédablakban a **Hozzáadás /eltávolítás** mezőben válassza a **Hozzáadás**elemet.
+3. A **Munkarendelés-gyűjtő karbantartása** párbeszédablakban a **Hozzáadás /eltávolítás** mezőben válassza a **Hozzáadás** elemet.
 
 4. Válassza a munkarendelés-gyűjtőt a **Gyűjtő** mezőben.
 

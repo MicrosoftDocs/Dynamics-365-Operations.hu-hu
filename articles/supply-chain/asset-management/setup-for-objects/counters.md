@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: adadb1df7b41488fad496f937ecbc24e0761e42d
-ms.sourcegitcommit: c986d5234b81d31cc6d054298be6f6ec92c1754c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3889769"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429626"
 ---
 # <a name="counters"></a>Számlálók
 
@@ -31,7 +31,7 @@ ms.locfileid: "3889769"
 
 A témakör bemutatja, hogyan lehet számláló típusokat létrehozni az Eszközkezelés modulban. Az számlálótípusokkal lehet mérni a számlálókat lehet regisztrálni eszközökön, például a termelési órák száma vagy a tárgyi eszközön termelt mennyiség tekintetében. Az eszköztípusok az számlálótípusokhoz kapcsolódnak. Ez azt jelenti, hogy egy eszköz esetében csak akkor használható egy számláló, ha az eszköz típusánál be van állítva a számláló.
 
-Az eszközökre vonatkozó számlálóregisztrációk előtt létre kell hoznia a **Számlálókban**használni kívánt számlálótípusokat. Ezután az eszközökre vonatkozó számlálóregisztrációkat kell létrehoznia a **Számlálók**helyen. 
+Az eszközökre vonatkozó számlálóregisztrációk előtt létre kell hoznia a **Számlálókban** használni kívánt számlálótípusokat. Ezután az eszközökre vonatkozó számlálóregisztrációkat kell létrehoznia a **Számlálók** helyen. 
 
 Az számlálók a karbantartási tervekben használhatók. Egy karbantartási terv sora lehet „Számláló” típusú például, amely a termelési órák számához vagy a termelt mennyiséggel kapcsolatos. 
 
@@ -46,7 +46,7 @@ Az számláló regisztrálása manuálisan vagy automatikusan történhet, a ter
 
 ## <a name="create-counter-types-for-asset-counter-registrations"></a>Számlálótípusok létrehozása eszközszámláló regisztrációkhoz
 
-1. Válassza az **Eszközkezelés** > **Beállítás** > **Eszköztípusok** > **Számlálók**lehetőséget.
+1. Válassza az **Eszközkezelés** > **Beállítás** > **Eszköztípusok** > **Számlálók** lehetőséget.
 2. Válassza ki az **Új** lehetőséget egy új számlálótípus létrehozásához.
 3. Szúrjon be egy azonosítót a **Számláló** mezőbe, és a számláló nevét a **Név** mezőbe.
 4. Az **Általános** gyorslapon válassza ki a számlálóegységet az **Egység** mezőben.
@@ -63,7 +63,7 @@ Az számláló regisztrálása manuálisan vagy automatikusan történhet, a ter
 >[!NOTE]
 >A kapcsolódó számlálót csak akkor frissíti automatikusan a program, ha a kapcsolódó számláló tárgyieszköz-típusa szerepel a számláló beállításaiban. Például: Beállít egy számlálót a „Termelési órák” elemhez és hozzáadja a „Teherautómotor” eszköztípust. Ha a számláló frissítése megtörtént, akkor a program a kapcsolódó „Olaj” számlálót is frissíti ugyanazzal az számlálóértékkel. A **Számlálók** beállítása tartalmazza az „Órák” beállítást. Ezenkívül az „Olaj" számláló esetében a „Teherautómotor” eszköztípust hozzá kell adni az **Eszköztípusok** gyorslaphoz, hogy biztosítva legyen a számláló kapcsolata. Az alábbi képernyőképek láthatók az Óra és Olaj számlálók beállításával kapcsolatos példa.
 
-Ha eszköztípusokat ad egy számlálóhoz a **Számlálók**alatt, akkor a számláló automatikusan hozzá lesz adva az eszköztípusokhoz **Számlálók** gyorslapon az [Eszköztípusok](../setup-for-objects/object-types.md) alatt.
+Ha eszköztípusokat ad egy számlálóhoz a **Számlálók** alatt, akkor a számláló automatikusan hozzá lesz adva az eszköztípusokhoz **Számlálók** gyorslapon az [Eszköztípusok](../setup-for-objects/object-types.md) alatt.
 
 ![1. ábra](media/071-setup-for-objects.png)
 

@@ -17,11 +17,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
 ms.openlocfilehash: adb88bbd29a89a1d18d7fd4781c2541ffb4e721f
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016217"
+ms.locfileid: "4429862"
 ---
 # <a name="configure-shipment-consolidation-policies"></a>Szállítmánykonszolidációs irányelvek konfigurálása
 
@@ -84,7 +84,7 @@ Kövesse az alábbi lépéseket az alapértelmezett szállítmánykonszolidáci�
 
 Kövesse az alábbi lépéseket az alapértelmezett szállítmánykonszolidációs irányelvek beállításához egy teljesen új környezetben.
 
-1. A [funkciókezelés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) használatával kapcsolja be a *Szállítmánykonszolidációs irányelvek* , ha még nem kapcsolta be. A **Funkciókezelés** munkaterületen a funkció neve *Szállítmány konszolidálása*.
+1. A [funkciókezelés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) használatával kapcsolja be a *Szállítmánykonszolidációs irányelvek*, ha még nem kapcsolta be. A **Funkciókezelés** munkaterületen a funkció neve *Szállítmány konszolidálása*.
 1. Nyissa meg a **Raktárkezelés \> Beállítás \> Kiadás raktárnak \> Szállítmánykonszolidációs irányelvek** pontot.
 1. A műveleti ablaktáblán válassza az **Alapértelmezett beállítás létrehozása** elemet a következő irányelvek létrehozásához:
 
@@ -166,7 +166,7 @@ Ha még nem kapcsolta be, akkor a funkciókezelés segítségével kapcsolja be 
 
 Ebben a példában létrehozza a *Vevő+mód* irányelvet, amely a következő üzleti esetben használatos:
 
-- Az irányelv egy specifikus vevői számlát ( *US-001* ) és specifikus szállítási módot ( *Légitá-Légi* ) fog lekérdezni.
+- Az irányelv egy specifikus vevői számlát (*US-001*) és specifikus szállítási módot (*Légitá-Légi*) fog lekérdezni.
 - A nyitott szállítmányok konszolidálása ki van kapcsolva.
 - A konszolidáció rendelésazonosítónként történik. (Más szóval külön szállítmányok jönnek létre rendelésenként, raktáranként stb.)
 
@@ -184,7 +184,7 @@ Kövesse az alábbi lépéseket az üzleti esethez tartozó szállítmánykonszo
 1. A **Konszolidációs mezők** gyorslapon a **Fennmaradó mezők** listában válassza ki a sort, ahol a **Mező neve** mező beállítása *Szállítási mód*.
 1. Válassza a **Hozzáadás** gombot ![Jobbra nyíl](media/forward-button.png) a mező **Kiválasztott mezők** listára történő átmozgatásához.
 1. A műveleti ablaktáblán válassza a **Lekérdezés szerkesztése** lehetőséget.
-1. A lekérdezéstervező párbeszédablakában a **Tartomány** lapon levő rácsban keresse meg a sort, ahol a **Mező** mező beállítása *Vevői számla* , és állítsa az adott sor **Feltételek** mezőjének értékét: *US-001*.
+1. A lekérdezéstervező párbeszédablakában a **Tartomány** lapon levő rácsban keresse meg a sort, ahol a **Mező** mező beállítása *Vevői számla*, és állítsa az adott sor **Feltételek** mezőjének értékét: *US-001*.
 1. A **Hozzáadás** gombbal adjon hozzá egy sort a rácshoz a következő beállításokkal:
 
     - **Tábla:** *Rendeléssorok*
@@ -195,13 +195,13 @@ Kövesse az alábbi lépéseket az üzleti esethez tartozó szállítmánykonszo
 1. Az **OK** gombbal zárja be a párbeszédpanelt.
 
 > [!NOTE]
-> Ennél az üzleti esetnél az *US-001* vevőhöz tartozó rendelési sorok, amelyek szállítási módja *Légitá-Légi* , nem lesznek rendelések között konszolidálva. Ezt az irányelvet először sorrendben kell használni, olyan esetekben, ahol az összes többi szállítási módhoz tartozó szállítmányok konszolidálva vannak ehhez a vevőhöz.
+> Ennél az üzleti esetnél az *US-001* vevőhöz tartozó rendelési sorok, amelyek szállítási módja *Légitá-Légi*, nem lesznek rendelések között konszolidálva. Ezt az irányelvet először sorrendben kell használni, olyan esetekben, ahol az összes többi szállítási módhoz tartozó szállítmányok konszolidálva vannak ehhez a vevőhöz.
 
 ### <a name="create-example-policy-2"></a>2. példairányelv létrehozása
 
 Ebben a példában létrehozza a *Veszélyes áruk* irányelvet, amely a következő üzleti esetben használatos:
 
-- Az irányelv egy specifikus szűrőkódot ( *veszélyes* ) és specifikus szállítási módot ( *Légitá-Légi* ) fog lekérdezni.
+- Az irányelv egy specifikus szűrőkódot (*veszélyes*) és specifikus szállítási módot (*Légitá-Légi*) fog lekérdezni.
 - A nyitott szállítmányok konszolidálása be van kapcsolva.
 - A konszolidáció rendeléseken át történik. (Más szóval külön szállítmányok jönnek létre számlánként, raktáronként stb., de csak a lekérdezésben megadott cikkcsoporton belül.)
 
@@ -232,7 +232,7 @@ Kövesse az alábbi lépéseket az üzleti esethez tartozó szállítmánykonszo
 1. Az **OK** gombbal zárja be a párbeszédpanelt.
 
 > [!NOTE]
-> Ebben az üzleti esetben az összes olyan sor, amelyben a cikkek specifikus szűrőkóddal rendelkeznek (azaz a szűrőkód, ahol a **4. kód** mező beállítása *Gyúlékony* ), konszolidálva lesz az ugyanolyan típusú másik cikkekkel a rendelések között. Ha ugyanahhoz a számlához, raktárhoz és cikkcsoporthoz nyitott szállítmány tartozik, az új sorok hozzákapcsolódnak.
+> Ebben az üzleti esetben az összes olyan sor, amelyben a cikkek specifikus szűrőkóddal rendelkeznek (azaz a szűrőkód, ahol a **4. kód** mező beállítása *Gyúlékony*), konszolidálva lesz az ugyanolyan típusú másik cikkekkel a rendelések között. Ha ugyanahhoz a számlához, raktárhoz és cikkcsoporthoz nyitott szállítmány tartozik, az új sorok hozzákapcsolódnak.
 
 ### <a name="create-example-policy-3"></a>3. példairányelv létrehozása
 
@@ -258,7 +258,7 @@ Kövesse az alábbi lépéseket az üzleti esethez tartozó szállítmánykonszo
 1. A **Fennmaradó mezők** listában válassza ki a sort, ahol a **Mező neve** mező beállítása *Szállítási mód*.
 1. Válassza a **Hozzáadás** gombot ![Jobbra nyíl](media/forward-button.png) a mező **Kiválasztott mezők** listára történő átmozgatásához.
 1. A műveleti ablaktáblán válassza a **Lekérdezés szerkesztése** lehetőséget.
-1. A lekérdezéstervező párbeszédablakában a **Tartomány** lapon keresse meg a sort, ahol a **Mező** mező beállítása *Vevői számla* , és állítsa az adott sor **Feltételek** mezőjének értékét: *US-001*.
+1. A lekérdezéstervező párbeszédablakában a **Tartomány** lapon keresse meg a sort, ahol a **Mező** mező beállítása *Vevői számla*, és állítsa az adott sor **Feltételek** mezőjének értékét: *US-001*.
 1. Az **OK** gombbal zárja be a párbeszédpanelt.
 
 > [!NOTE]
@@ -322,7 +322,7 @@ Leggyakrabban ezt az üzleti esetet meg lehet oldani, ha az [1. forgatókönyvbe
 1. A **Konszolidációs mezők** gyorslapon a **Fennmaradó mezők** mezőben válassza ki a sort, ahol a **Mező neve** mező beállítása *Szállítási mód*.
 1. Válassza a **Hozzáadás** gombot ![Jobbra nyíl](media/forward-button.png) a mező **Kiválasztott mezők** listára történő átmozgatásához.
 1. A műveleti ablaktáblán válassza a **Lekérdezés szerkesztése** lehetőséget.
-1. A lekérdezéstervező párbeszédablakában a **Tartomány** lapon keresse meg a sort, ahol a **Mező** mező beállítása *Raktár* , és állítsa az adott sor **Feltételek** mezőjének értékét: *61, 63*.
+1. A lekérdezéstervező párbeszédablakában a **Tartomány** lapon keresse meg a sort, ahol a **Mező** mező beállítása *Raktár*, és állítsa az adott sor **Feltételek** mezőjének értékét: *61, 63*.
 1. Az **OK** gombbal zárja be a párbeszédpanelt.
 
 ### <a name="set-the-order"></a>Sorrend beállítása

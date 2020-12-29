@@ -20,11 +20,11 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: f58365278200344169b93658e9c92dea2bc4f18f
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3211634"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429585"
 ---
 # <a name="calculate-material-consumption"></a>Anyagfelhasználás kiszámítása
 
@@ -35,7 +35,7 @@ Ez a cikk tájékoztatást nyújt az anyagfelhasználás kiszámításához kapc
 A következő, anyagfelhasználás kiszámításához való lehetőségek a **Beállítás** és **Fokozatos felhasználás** a lapokon, a **Sor adatai** gyorslapjon, az **Anyagjegyzék** oldalon érhetők el.
 
 ## <a name="variable-and-constant-consumption"></a>Változó és állandó felhasználás
-A **Felhasználás** mezőben kiválaszthatja, hogy a felhasználás állandó vagy változó mennyiségként legyen kiszámolva. Válassza az **Állandó** lehetőséget, ha egy fix mennyiség vagy terjedelem szükséges a termeléshez, a termelt mennyiségtől függetlenül. Válassza a **Változó**lehetőséget, amely az alapértelmezett beállítás, ha a szükséges anyag a késztermékek mérete arányos a befejezett termékek számával.
+A **Felhasználás** mezőben kiválaszthatja, hogy a felhasználás állandó vagy változó mennyiségként legyen kiszámolva. Válassza az **Állandó** lehetőséget, ha egy fix mennyiség vagy terjedelem szükséges a termeléshez, a termelt mennyiségtől függetlenül. Válassza a **Változó** lehetőséget, amely az alapértelmezett beállítás, ha a szükséges anyag a késztermékek mérete arányos a befejezett termékek számával.
 
 ## <a name="calculating-consumption-from-a-formula"></a>Felhasználás számítása képletből
 A **Képlet** mezőben be lehet állítani különböző képleteket az anyagfelhasználás kiszámítására. Ha az alapértelmezett **Normál** értéket használja, a felhasználás a nem képletből lesz kiszámolva. A következő képletek együttműködnek a **Magasság**, **Szélesség**, **Mélység**, **Dűrűség**, és **Állandó** mezőkkel:
@@ -63,7 +63,7 @@ A feltételezés szerint 0,5 méter selejtcső keletkezik minden 5 darab felhasz
 
 ### <a name="consumption"></a>Felhasználás
 
-Általában a**Felhasználás** lehetőséget kell kerekítési módszerként választani, ha a nyersanyagot a termék egy adott anyagkezelési egység teljes mennyiségében kell megadni. Például 2 liter festékre van szükség egy darab késztermékhez, és a festéket 25 literes tartályokban tárolják ki. Ebben az esetben a **Felhasználás** kerekítési mechanizmusa használható a 25 literes tartályok esetében az egész számokra való kerekítéshez. Ha 180 darab késztermékre van szükség, így lehet kiszámítani a szükséges festék mennyiségét.
+Általában a **Felhasználás** lehetőséget kell kerekítési módszerként választani, ha a nyersanyagot a termék egy adott anyagkezelési egység teljes mennyiségében kell megadni. Például 2 liter festékre van szükség egy darab késztermékhez, és a festéket 25 literes tartályokban tárolják ki. Ebben az esetben a **Felhasználás** kerekítési mechanizmusa használható a 25 literes tartályok esetében az egész számokra való kerekítéshez. Ha 180 darab késztermékre van szükség, így lehet kiszámítani a szükséges festék mennyiségét.
 
 1.  Szükséges festék, a selejtet leszámítva: 180 x 2 = 360 liter
 2.  Festékes dobozok száma: 360 ÷ 25 = 14,4, amely kerekítve 15.

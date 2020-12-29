@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 7ec7203506d7fa3e71211bd1547dc8474f5d17dc
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3984226"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429395"
 ---
 # <a name="master-planning-home-page"></a>Alaptervezés kezdőlap
 
@@ -39,7 +39,7 @@ Az Alaptervezés az információk alapján kiszámítja a követelményeket és 
 
 A három fő tervezési folyamat a következő:
 
--  **Alaptervezés** – az alapterv kiszámítja a nettó követelményeket. Tényleges aktuális rendeléseken alapul, és lehetővé teszi a vállalatoknak a készlet feltöltésének szabályozását rövid távú, napi alapon. Egy másik kifejezés ugyanerre a *Nettó szükségleti terv* . További informáciért lásd: [Alaptervek áttekintése](master-plans.md). 
+-  **Alaptervezés** – az alapterv kiszámítja a nettó követelményeket. Tényleges aktuális rendeléseken alapul, és lehetővé teszi a vállalatoknak a készlet feltöltésének szabályozását rövid távú, napi alapon. Egy másik kifejezés ugyanerre a *Nettó szükségleti terv*. További informáciért lásd: [Alaptervek áttekintése](master-plans.md). 
 
 -  **Előrejelzési tervezés** – az előrejelzési ütemezés a bruttó követelményeket számítja ki. Jövőbeli projekciókon (vagy előrejelzéseken) alapul, és lehetővé teszi a vállalatoknak az anyagok és a kapacitás hosszú távú tervezését. A további tudnivalókat lásd: [Igény-előrejelzés áttekintése](introduction-demand-forecasting.md). 
 

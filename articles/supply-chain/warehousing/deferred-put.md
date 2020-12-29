@@ -17,11 +17,11 @@ ms.author: perlynne
 ms.search.validFrom: 2019-6-31
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: cc8321c55bc867db065af0cddf356fb497a956e8
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016701"
+ms.locfileid: "4429856"
 ---
 # <a name="deferred-processing-of-warehouse-work"></a>Raktári munka halasztott feldolgozása
 
@@ -44,7 +44,7 @@ A házirendek a **Munkafeldolgozási házirendek** lapon vannak konfigurálva. A
 | Munkafeldolgozási irányelv neve     | A munkafeldolgozási irányelv neve. |
 | Munkarendelés típusa                 | Az a munkarendelés típusa, amelyre az irányelv alkalmazva van. |
 | Művelet                       | Az irányelv használatával feldolgozott művelet. |
-| Munkafeldolgozási módszer          | A munkasor feldolgozásához használt módszer. Ha a metódus beállítása **Azonnali** , a működés hasonlít arra viselkedésre, amikor a sor feldolgozásához nem használnak munkafeldolgozási irányelvet. Ha a metódus **Halasztott** értékre van állítva, a rendszer a kötegkeretrendszert használó halasztott feldolgozást használja. |
+| Munkafeldolgozási módszer          | A munkasor feldolgozásához használt módszer. Ha a metódus beállítása **Azonnali**, a működés hasonlít arra viselkedésre, amikor a sor feldolgozásához nem használnak munkafeldolgozási irányelvet. Ha a metódus **Halasztott** értékre van állítva, a rendszer a kötegkeretrendszert használó halasztott feldolgozást használja. |
 | Halasztott feldolgozási küszöbérték   | A **0** (nulla) érték azt jelzi, hogy nincs küszöbérték. Ebben az esetben a halasztott feldolgozás lesz használva, ha használható. Ha a meghatározott küszöbérték kiszámítása a küszöbérték alatt van, az azonnali módszer lesz használva. Máskülönben a rendszer a Halasztott metódust használja, ha az használható. Az értékesítéssel és átadással kapcsolatos munkák esetében a küszöbérték számítása a munka során a hozzárendelt forrás terhelésisorok száma szerint történik. Feltöltési munka esetén a küszöb kiszámítása a munka során feltöltött munkasorok számának használatával történik. Ha például az eladásokhoz **5** értéket ad meg a küszöbértékhez a kisebb munkák, amelyeknek kevesebb, mint öt kezdeti forrássora van, nem fogják használni a halasztott feldolgozást, de a nagyobb munkák igen. A küszöbérték csak akkor érvényes, ha a munka feldolgozási módszere **Halasztott**. |
 | Halasztott feldolgozási kötegcsoport |A feldolgozáshoz használt kötegcsoport. |
 

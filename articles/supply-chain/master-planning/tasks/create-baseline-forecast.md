@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0a1d8fd665ec40efede0a3db8b0c59ac89751a64
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 47e26a48cdde3a6996f4c0a4ca85222c402f44e2
+ms.sourcegitcommit: 436731d8b3889bebfe6f17922b0a31b1994f6796
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3987190"
+ms.lasthandoff: 10/26/2020
+ms.locfileid: "4429958"
 ---
 # <a name="create-a-baseline-forecast"></a>Kiinduló előrejelzés létrehozása
 
@@ -43,7 +43,7 @@ A termeléstervező létrehozhat egy kiinduló előrejelzést az idősorozat sze
 7. Zárja be a lapot.
 8. Zárja be a lapot.
 
-## <a name="set-up-the-demand-forecasting-paramters"></a>Igény-előrejelzési paraméterek beállítása
+## <a name="set-up-the-demand-forecasting-parameters"></a>Igény-előrejelzési paraméterek beállítása
 1. Ugorjon az Alaptervezés > Beállítás > Igény-előrejelzés > Igény-előrejelzési paraméterek lehetőségre.
 2. Bontsa ki Az előrejelzési algoritmus paraméterei szakaszt.
 3. Az Előrejelzés-generálási stratégia mezőben válassza ki a „Korábbi igény átmásolása” lehetőséget.

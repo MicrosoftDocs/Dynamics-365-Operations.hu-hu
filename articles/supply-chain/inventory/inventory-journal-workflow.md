@@ -17,11 +17,11 @@ ms.author: chuzheng
 ms.search.validFrom: 2020-07-21
 ms.dyn365.ops.version: Release 10.0.13
 ms.openlocfilehash: 623c628f3359efc1f76e1d06387905f981deca0b
-ms.sourcegitcommit: 8cbaeb6443ce47a4c4bc02b5e1a1212eb0056b38
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3829825"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429276"
 ---
 # <a name="inventory-journal-approval-workflows"></a>Készletnapló-jóváhagyási munkafolyamatok
 
@@ -43,7 +43,7 @@ A saját készletnapló-jóváhagyási munkafolyamatai létrehozásához:
 1. Menjen a **Készletkezelés \> Beállítás \> Készletkezelési munkafolyamatok** lehetőségre.
 1. A Művelet panelen válassza az **Új** lehetőséget.
 1. Válassza ki azt a készletnapló-típust, amelyhez be szeretné állítani a munkafolyamatot:
-    - l**Készlet címkeszámlálási naplója**
+    - l **Készlet címkeszámlálási naplója**
     - **Készlet tulajdonosváltozási naplója**
     - **Készletmozgási napló**
     - **Készletátviteli napló**

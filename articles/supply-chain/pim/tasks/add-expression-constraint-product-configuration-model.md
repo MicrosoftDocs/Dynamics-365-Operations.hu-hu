@@ -17,11 +17,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: c43d7f768069c5ef201a2823a9aa626b38220073
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3986479"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429532"
 ---
 # <a name="add-an-expression-constraint-to-a-product-configuration-model"></a>Kifejezésmegszorítás hozzáadása a termékkonfigurációs modellhez
 
@@ -44,7 +44,7 @@ Ez az eljárás bemutatja, hogyan lehet hozzáadni egy új megszorítási kifeje
 ## <a name="enter-expression"></a>Kifejezés megadása
 1. Kattintson a Kifejezés szerkesztése lehetőségre.
     * Ha a feladatrögzítésben feloldja a felhasználói felületet ebben a fázisban, akkor az IntelliSense és a szimbólumlista segítségével felépítheti a megszorítási kifejezést.  
-2. A ConstraintBody mezőben írja be „Implies [FrontGrill =="Metal", CornerProtection]”.
+2. A ConstraintBody mezőben írja be „Implies[FrontGrill =="Metal", CornerProtection] ”.
     * Ez a kifejezéslogika a következőt állítja: Ha az előlapi rács fém, akkor ki kell választani a sarokvédő lehetőséget.  
 3. Kattintson az Érvényesítés gombra.
     * Az érvényesítési funkció ellenőrzi a megszorítási kifejezést, és szintaktikai hibákat keres.  

@@ -4,7 +4,7 @@ description: Ez a témakör azt mutatja be, hogyan lehet érvényteleníteni és
 author: GarmMSFT
 manager: PJacobse
 ms.date: 07/09/2020
-ms.topic: reprint-and-void-wave-labels
+ms.topic: article
 ms.service: dynamics-ax-applications
 ms.search.form: WHSWaveLabel, WHSWaveLabelTemplate, WHSWaveLabelLayoutRow, WHSWaveTableListPage, WHSWorkException, WHSMobileDisplayWaveLabelListLookup, WHSWaveLabelLayout, WHSWaveLabelType, WHSWaveLabelTemplateGroup
 audience: Application User
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-07-09
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: af92334af28824b3fcebde5f046bd7c6da459885
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.openlocfilehash: 0efa9400a3bf29e4e0dd56d9138cf8c3825556c7
+ms.sourcegitcommit: a26e4963d40796da21ce6581cfb2f4d9db4f6776
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016654"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "4429961"
 ---
 # <a name="reprint-and-void-wave-labels"></a>Hullámcímkék újranyomtatása és érvénytelenítése
 
@@ -118,7 +118,7 @@ Hajtsa végre a következő lépéseket, ha új menüelemeket szeretne létrehoz
     - **Csoportosító rendszercímke:** *Szállítmányazonosító*
     - **Nyomtatási mód:** *Számbavétel*
 
-1. A műveleti ablaktáblán válassza ki a **Mezőlista** elemet , majd a legördülő lista segítségével válassza ki azokat a mezőket, amelyeket meg szeretne jeleníteni, hogy a dolgozók azonosíthassák a megfelelő címketekercset (például *LabelItemId* , *LabelItemName* , *InventQty* , *LabelUnitId* és *NumberOfLabels* ).
+1. A műveleti ablaktáblán válassza ki a **Mezőlista** elemet , majd a legördülő lista segítségével válassza ki azokat a mezőket, amelyeket meg szeretne jeleníteni, hogy a dolgozók azonosíthassák a megfelelő címketekercset (például *LabelItemId*, *LabelItemName*, *InventQty*, *LabelUnitId* és *NumberOfLabels*).
 1. Zárja be a lapot.
 1. Hozzon létre egy negyedik menüelemet, és állítsa be hozzá a következő értékeket:
 
@@ -131,7 +131,7 @@ Hajtsa végre a következő lépéseket, ha új menüelemeket szeretne létrehoz
     - **Csoportosító rendszercímke:** *Szállítmányazonosító*
     - **Nyomtatási mód:** *Utolsó helyes hullámcímke-azonosító*
 
-1. A műveleti ablaktáblán válassza ki a **Mezőlista** elemet , majd a legördülő lista segítségével válassza ki azokat a mezőket, amelyeket meg szeretne jeleníteni, hogy a dolgozók azonosíthassák a megfelelő címketekercset (például *LabelItemId* , *LabelItemName* , *InventQty* , *LabelUnitId* és *NumberOfLabels* ).
+1. A műveleti ablaktáblán válassza ki a **Mezőlista** elemet , majd a legördülő lista segítségével válassza ki azokat a mezőket, amelyeket meg szeretne jeleníteni, hogy a dolgozók azonosíthassák a megfelelő címketekercset (például *LabelItemId*, *LabelItemName*, *InventQty*, *LabelUnitId* és *NumberOfLabels*).
 1. Zárja be a lapot.
 
 #### <a name="set-up-the-mobile-device-menu"></a>A Mobileszköz-menü beállítása
@@ -154,7 +154,7 @@ Az használati esetek elvégzése előtt a következő előfeltételeknek kell t
 
 #### <a name="use-case-21-a-single-wave-label-is-scratched-and-must-be-reprinted"></a>2.1. használati eset: Egy hullámcímke megsérült, és újra kell nyomtatni.
 
-1. Jelentkezzen be az *62* -es raktárt elérő felhasználóként a raktárkezelési alkalmazásba. (A normál demóadatokban *62* felhasználó azonosító és az *1* jelszó használatával jelentkezzen be.)
+1. Jelentkezzen be az *62*-es raktárt elérő felhasználóként a raktárkezelési alkalmazásba. (A normál demóadatokban *62* felhasználó azonosító és az *1* jelszó használatával jelentkezzen be.)
 1. Ugrás a **Kimenő \> Egy hullámcímke újranyomtatása** helyre.
 1. Adja meg vagy olvassa be a hullám-címke azonosítóját.
 1. Válassza ki azt a nyomtatót, amelyen újra szeretné nyomtatni.
@@ -162,7 +162,7 @@ Az használati esetek elvégzése előtt a következő előfeltételeknek kell t
 
 #### <a name="use-case-22-several-labels-for-boxes-of-the-same-item-were-damaged-and-must-be-reprinted-each-label-has-a-product-bar-code-but-no-enumeration-or-sscc-number"></a>2.2. használati eset: Ugyanazon cikkhez tartozó dobozok több címkéje sérült, és újra kell nyomtatni. Minden címkéhez tartozik egy termékvonalkód, de nincs sorozatszám vagy SSCC-szám.
 
-1. Jelentkezzen be az *62* -es raktárt elérő felhasználóként a raktárkezelési alkalmazásba. (A normál demóadatokban *62* felhasználó azonosító és az *1* jelszó használatával jelentkezzen be.)
+1. Jelentkezzen be az *62*-es raktárt elérő felhasználóként a raktárkezelési alkalmazásba. (A normál demóadatokban *62* felhasználó azonosító és az *1* jelszó használatával jelentkezzen be.)
 1. Ugrás a **Kimenő \> Címkék újranyomtatása (cikk)** lehetőséget.
 1. Adja meg vagy olvassa be a szállítmányazonosítót.
 1. Válassza ki azt a csempét, amely a megfelelő címketekercset tartalmazza az újranyomtatáshoz.
@@ -173,7 +173,7 @@ Az használati esetek elvégzése előtt a következő előfeltételeknek kell t
 
 #### <a name="use-case-23-several-labels-for-boxes-werent-printed-because-of-a-printer-jam-because-the-labels-have-enumeration-you-can-define-the-carton-range-to-reprint"></a>2.3 használati eset: A dobozok több címkéje nem lett kinyomtatva a nyomtató elakadása miatt. Mivel a címkék számozottak, meg lehet határozni az újranyomtatni kívánt kartondoboz-tartományt.
 
-1. Jelentkezzen be az *62* -es raktárt elérő felhasználóként a raktárkezelési alkalmazásba. (A normál demóadatokban *62* felhasználó azonosító és az *1* jelszó használatával jelentkezzen be.)
+1. Jelentkezzen be az *62*-es raktárt elérő felhasználóként a raktárkezelési alkalmazásba. (A normál demóadatokban *62* felhasználó azonosító és az *1* jelszó használatával jelentkezzen be.)
 1. Ugrás a **Kimenő \> Címkék újranyomtatása (Enum)** lehetőséget.
 1. Adja meg vagy olvassa be a szállítmányazonosítót.
 1. Válassza ki azt a csempét, amely a megfelelő címketekercset tartalmazza az újranyomtatáshoz.
@@ -184,7 +184,7 @@ Az használati esetek elvégzése előtt a következő előfeltételeknek kell t
 
 #### <a name="use-case-24-several-labels-for-boxes-werent-printed-because-of-a-printer-jam-the-last-good-label-has-a-wave-label-id-that-is-printed-as-a-bar-code"></a>2.4 használati eset: A dobozok több címkéje nem lett kinyomtatva a nyomtató elakadása miatt. Az utolsó jó címke egy olyan hullámazonosítóval rendelkezik, amelyet vonalkódként nyomtat a program.
 
-1. Jelentkezzen be az *62* -es raktárt elérő felhasználóként a raktárkezelési alkalmazásba. (A normál demóadatokban *62* felhasználó azonosító és az *1* jelszó használatával jelentkezzen be.)
+1. Jelentkezzen be az *62*-es raktárt elérő felhasználóként a raktárkezelési alkalmazásba. (A normál demóadatokban *62* felhasználó azonosító és az *1* jelszó használatával jelentkezzen be.)
 1. Ugrás a **Kimenő \> Címkék újranyomtatása (utolsó szerint)** lehetőséget.
 1. Adja meg vagy olvassa be a szállítmányazonosítót.
 1. Válassza ki azt a csempét, amely a megfelelő címketekercset tartalmazza az újranyomtatáshoz.
@@ -213,7 +213,7 @@ Munkakivételek vezérlik a rövid kitárolás viselkedését. Munkakivétel be�
 
 ### <a name="void-and-reprint-after-a-short-pick"></a>Érvénytelenítés és újranyomtatás rövid kitárolás után
 
-1. Jelentkezzen be az *62* -es raktárt elérő felhasználóként a raktárkezelési alkalmazásba. (A normál demóadatokban *62* felhasználó azonosító és az *1* jelszó használatával jelentkezzen be.)
+1. Jelentkezzen be az *62*-es raktárt elérő felhasználóként a raktárkezelési alkalmazásba. (A normál demóadatokban *62* felhasználó azonosító és az *1* jelszó használatával jelentkezzen be.)
 1. Nyisson meg egy munkafolyamatot az értékesítési rendelés munkájához, amelyet eredetileg a hullámcímkék nyomtatásakor lett létrehozva.
 1. Válassza ki a **Rövid kitárolás** lehetőséget.
 1. Válassza ki az ehhez a forgatókönyvhöz létrehozott munkakivételi kódot.

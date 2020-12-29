@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 77ba67de5585022ab7d506c8cd2acb380a4e3a54
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3979451"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429744"
 ---
 # <a name="kanban-job-scheduling-for-lean-manufacturing"></a>Kanbanfeladat ütemezése lean manufacturing céljára
 
@@ -35,12 +35,12 @@ Ez a cikk a kanban-feladat ütemezés feletti vizuális ellenőrzésről és a k
 A **Kanbanfeladat ütemezése** oldal a lean manufacturing munkacellák ütemezéseinek vizuális ellenőrzésére szolgál. Áttekintheti az összes kanbanfeladatot és szűréseket végezhet számos különféle módon. Erről az oldalról lehetősége van minden más, kanbanok konfigurálásával és végrehajtásával kapcsolatos oldalra átváltani.
 
 ## <a name="automatic-scheduling-of-kanban-jobs"></a>Kanbanfeladatok automatikus ütemezése
-Az ütemezés indítása akkor történhet automatikusan, ha a kanbanszabályhoz megadja az **Automatikus tervezési mennyiség** paramétert. Amennyiben az **Automatikus tervezési mennyiség** értéke **1** , az egyes kanbanfeladatok a létrehozás után azonnal tervezetté válnak. Az eredmény egy műveletekből álló sorozat, amelynek végrehajtása a lekérés sorrendjében történik. Amennyiben az **Automatikus tervezési mennyiség** értéke 1-nél nagyobb, a rendszer a tervezés előtt csoportosítja a kanbanfeladatokat. 
+Az ütemezés indítása akkor történhet automatikusan, ha a kanbanszabályhoz megadja az **Automatikus tervezési mennyiség** paramétert. Amennyiben az **Automatikus tervezési mennyiség** értéke **1**, az egyes kanbanfeladatok a létrehozás után azonnal tervezetté válnak. Az eredmény egy műveletekből álló sorozat, amelynek végrehajtása a lekérés sorrendjében történik. Amennyiben az **Automatikus tervezési mennyiség** értéke 1-nél nagyobb, a rendszer a tervezés előtt csoportosítja a kanbanfeladatokat. 
 
 Ez a koncepció lehetővé teszi, hogy a kanbanok méretét a tényleges gazdaságos kötegméret alá csökkentsük. Tegyük fel például, hogy egy adott cikk (vagy egy cikkcsalád) gazdaságos kötegmérete 30. Ez esetben 30-as termékmennyiséget használó kanbanok létrehozása helyett úgy is konfigurálhatja a kanbanszabályt, hogy a termék mennyisége 10, az **Automatikus tervezési mennyiség** pedig **3** legyen. Bár az automatikus tervezés csak akkor ütemezi a munkacella kanbanfeladatait, ha három nem tervezett feladat létezik, a tervező és az üzemirányítási felügyelő számára világosan látható, hogy két nem tervezett feladat végrehajtásra várhat. A tervező vagy üzemvezető ezután kézzel megtervezheti ezt a két feladatot, vagy ezek mellé további kanbanokat hozhat létre.
 
 ## <a name="manual-scheduling"></a>Kézi ütemezés
-A Microsoft Dynamics AX 2012 rendszerben bevezettük a kézi ütemezésre szolgáló kanbanütemezési táblát. A kézi ütemezés kombinálható az automatikus ütemezéssel. A kanbanütemezési tábla segítségével tervezetté vagy nem tervezetté teheti a feladatokat, sorrendbe rakhatja, valamint időszakból időszakba helyezheti azokat. Azok a feladatok, amelyek **0** -nál nagyobb **Automatikus tervezés** értékű kanbanszabályon alapulnak, kézzel átállíthatók nem tervezetté. Azonban ezek a feladatok újra tervezetté válnak, amint megtörténik a következő automatikus tervezési esemény (tehát amint új kanban jön létre). Kézi ütemezés során a következő lehetőségek közül választhat:
+A Microsoft Dynamics AX 2012 rendszerben bevezettük a kézi ütemezésre szolgáló kanbanütemezési táblát. A kézi ütemezés kombinálható az automatikus ütemezéssel. A kanbanütemezési tábla segítségével tervezetté vagy nem tervezetté teheti a feladatokat, sorrendbe rakhatja, valamint időszakból időszakba helyezheti azokat. Azok a feladatok, amelyek **0**-nál nagyobb **Automatikus tervezés** értékű kanbanszabályon alapulnak, kézzel átállíthatók nem tervezetté. Azonban ezek a feladatok újra tervezetté válnak, amint megtörténik a következő automatikus tervezési esemény (tehát amint új kanban jön létre). Kézi ütemezés során a következő lehetőségek közül választhat:
 
 -   Az **Ütemezés** lehetőség az esedékességi dátumok alapján ütemezi a kiválasztott feladatokat. (Az automatikus tervezéshez hasonlóan)
 -   Az **Ütemezés megadott dátumtól előre** lehetőség megkísérli a kiválasztott feladatok esedékességi dátum szerinti ütemezését, azonban az eredményt a megadott legkorábbi kezdő dátum alapján leszűkíti.

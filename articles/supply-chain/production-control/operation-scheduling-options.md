@@ -20,11 +20,11 @@ ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: c3865bfc3b66c018f836e21bbddf658de0351e57
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3211376"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429362"
 ---
 # <a name="operations-scheduling-options"></a>A műveletek ütemezésének beállításai
 
@@ -97,7 +97,7 @@ Amikor a hivatkozások a termelési rendelésektől függnek, ezeket altermelés
 
 ### <a name="synchronize-references"></a>Hivatkozások szinkronizálása
 
-Szinkronizálhatja a hivatkozásokat a termeléssel. Ha ez a beállítás van kiválasztva, akkor a termelési ütemezés módosításakor az altermelések dátuma is megváltozik és ehhez igazodik. Ha a termelési rendelésnek egy vagy több altermelése van, érdemes az altermelések és a fő termelés együttes ütemezése. Ilyenkor a fő termelés nem indítható el mindaddig, amíg a kapcsolódó altermelések be nem fejeződnek. Ezért jelölje be ezt a jelölőnégyzetet, ha az altermelések ütemezésének alapjául a kiválasztott termelés kezdési és befejezési ideje szolgál. Ezt a jelölőnégyzet csak akkor választhatja ki, ha a**Hivatkozások ütemezése** jelölőnégyzet is be van jelölve.
+Szinkronizálhatja a hivatkozásokat a termeléssel. Ha ez a beállítás van kiválasztva, akkor a termelési ütemezés módosításakor az altermelések dátuma is megváltozik és ehhez igazodik. Ha a termelési rendelésnek egy vagy több altermelése van, érdemes az altermelések és a fő termelés együttes ütemezése. Ilyenkor a fő termelés nem indítható el mindaddig, amíg a kapcsolódó altermelések be nem fejeződnek. Ezért jelölje be ezt a jelölőnégyzetet, ha az altermelések ütemezésének alapjául a kiválasztott termelés kezdési és befejezési ideje szolgál. Ezt a jelölőnégyzet csak akkor választhatja ki, ha a **Hivatkozások ütemezése** jelölőnégyzet is be van jelölve.
 
 ## <a name="cancellation"></a>Érvénytelenítés
 ### <a name="cancel-queue-time"></a>Várakozási idő érvénytelenítése

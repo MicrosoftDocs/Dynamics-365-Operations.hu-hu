@@ -20,11 +20,11 @@ ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 758015c566e39df7306e1b34b8d3b42f1f1eba79
-ms.sourcegitcommit: 5419f2b8f51cd5de55be66d1389b5b9d7771fd52
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "3262673"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429272"
 ---
 # <a name="total-cost-allocation-method"></a>Teljes költségfelosztási módszer
 
@@ -48,7 +48,7 @@ Az összköltség felosztás (TCA) a kötegrendelés fő receptúrás cikkének 
     -   Társtermékeket adott hozzá.
     -   A költségfelosztás százalékos értéke nagyobb, mint 0 (nulla).
 -   Egy receptúraszámítás sikeres végrehajtása előtt meg kell becsülnie a költségfelosztás százalékait. Ezt a lépést elvégezheti manuálisan vagy a **Költség becslése** beállítás segítségével a **Társtermékek** lapon. **Megjegyzés:** a **Költség becslése** a beállítás csak akkor érhető el, ha a **Teljes költségfelosztás** csúszka értéke **Igen** a receptúraverzióhoz. Akkor tekintheti meg a várható felosztást, ha a készként jelentett kötegrendelés mennyiségei megegyeznek a receptúrán megjelenő mennyiségekkel.
--   Amikor egy kötegrendelést manuálisan hoznak létre vagy egy tervezett kötegrendelést megerősítenek, akkor a receptúraverzióhoz tartozó **Teljes költségfelosztás** csúszka értéke a kötegrendelésbe másolódik. Azonban ezt a beállítást megváltoztathatja a kötegrendelésben. Ha a **Teljes költségfelosztás** csúszka értéke **Nem** a receptúraverzióban, majd **Igen** értékre módosul a kötegrendelésben, akkor a költségfelosztás módszere minden olyan sorban, amelyben **Manuális** volt **TCA** értékre módosul. A **Nincs** értékű sorok költségfelosztása változatlan marad. Ha a **Teljes költségfelosztás** csúszka értéke **Igen** a receptúraverzióban, majd **Nem** értékre módosul a kötegrendelésben, akkor a költségfelosztás módszere minden **Termelés** típusú társterméknél **Manuális**értékre módosul. A költségfelosztás százalékos értékei változatlanok maradnak.
+-   Amikor egy kötegrendelést manuálisan hoznak létre vagy egy tervezett kötegrendelést megerősítenek, akkor a receptúraverzióhoz tartozó **Teljes költségfelosztás** csúszka értéke a kötegrendelésbe másolódik. Azonban ezt a beállítást megváltoztathatja a kötegrendelésben. Ha a **Teljes költségfelosztás** csúszka értéke **Nem** a receptúraverzióban, majd **Igen** értékre módosul a kötegrendelésben, akkor a költségfelosztás módszere minden olyan sorban, amelyben **Manuális** volt **TCA** értékre módosul. A **Nincs** értékű sorok költségfelosztása változatlan marad. Ha a **Teljes költségfelosztás** csúszka értéke **Igen** a receptúraverzióban, majd **Nem** értékre módosul a kötegrendelésben, akkor a költségfelosztás módszere minden **Termelés** típusú társterméknél **Manuális** értékre módosul. A költségfelosztás százalékos értékei változatlanok maradnak.
 -   A **Társtermék költségfelosztási** oldal jeleníti meg a költségfelosztás számított százalékos értékét. Ezt a lapot megnyithatja a **Kötegrendelés** oldalról. Ez az információ akkor hasznos, amikor a jelentett termékek és mennyiségek eltérnek kötegrendelésben található ütemezett vagy elindított mennyiségektől. Amikor a költség elkészült ezek új, TCA-ból származó százalékos felosztások a **Társtermék költségfelosztása** oldalon jelennek meg.
 
 ## <a name="calculating-the-burden-for-byproducts"></a>A melléktermékek költségterhelésének számítása

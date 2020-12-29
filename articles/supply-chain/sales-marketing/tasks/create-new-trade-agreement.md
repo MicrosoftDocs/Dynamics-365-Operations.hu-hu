@@ -17,11 +17,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 43426e77c30e46f4dd1cc117c38cf6ba5437655b
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3987365"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429323"
 ---
 # <a name="create-a-new-trade-agreement"></a>Új kereskedelmi szerződés létrehozása
 
@@ -61,7 +61,7 @@ Ez az eljárás bemutatja, hogyan hozhat létre egy kereskedelmi megállapodást
 20. Kattintson az **OK** gombra.
 
 ## <a name="view-trade-agreements-for-a-product"></a>Termékkel kapcsolatos kereskedelmi megállapodások megtekintése
-1. Kattintson ide: **Navigációs ablaktábla > Modulok > Termékinformációk kezelése > Termékek > Kiadott termékek** .
+1. Kattintson ide: **Navigációs ablaktábla > Modulok > Termékinformációk kezelése > Termékek > Kiadott termékek**.
 2. A listában keresse meg és válassza ki a terméket, amelynek éppen frissítette az árát.
 3. A **Művelet panelen** kattintson az **Értékesítés** elemre.
 4. Kattintson a **Kereskedelmi megállapodások megtekintése** pontra.

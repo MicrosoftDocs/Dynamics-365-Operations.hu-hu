@@ -19,11 +19,11 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 8bb256514175166621847a5d40c16b9b749b1ddc
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016194"
+ms.locfileid: "4429883"
 ---
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>Mobileszközök beállítása raktári munkához
 
@@ -38,7 +38,7 @@ Ez a témakör bemutatja, hogyan kell konfigurálni azokat a menüpontokat, amel
 - Hozzon létre egy másik folyamaton keresztül elvégzendő munkát. Például egy beszerzési rendelés elemének fogadása betárolási munkát hozhat létre egy másik dolgozó számára.
 - Munka elvégzése, amelyet egy másik folyamatban hoztak létre (meglévő munka), például betárolási munkáé, amely beszerzési rendeléshez tartozó elem fogadásakor jött létre.
 
-Menüelem létrehozásához tevékenységhez vagy lekérdezéshez állítsa a **Mód** mezőt **Közvetett** értékre. Ekkor elérhetővé válik a **Tevékenységkód** -lehetőségek listája, és kiválaszthatja a lekérdezés vagy tevékenység típusát, amelyre a menüelem vonatkozni fog. Raktári munka létrehozására szolgáló menüelem készítéséhez állítsa a **Mód** mezőt **Munka** értékre. Ekkor elérhetővé válik a **Munkalétrehozási folyamat** lehetőségeinek listája. Ha szeretne létrehozni egy meglévő raktári munka feldolgozására való menüelemet, állítsa a **Mód** mezőt **Munka** állásba, majd állítsa a **Meglévő munka használata** opciót az **Igen** lehetőségre. 
+Menüelem létrehozásához tevékenységhez vagy lekérdezéshez állítsa a **Mód** mezőt **Közvetett** értékre. Ekkor elérhetővé válik a **Tevékenységkód**-lehetőségek listája, és kiválaszthatja a lekérdezés vagy tevékenység típusát, amelyre a menüelem vonatkozni fog. Raktári munka létrehozására szolgáló menüelem készítéséhez állítsa a **Mód** mezőt **Munka** értékre. Ekkor elérhetővé válik a **Munkalétrehozási folyamat** lehetőségeinek listája. Ha szeretne létrehozni egy meglévő raktári munka feldolgozására való menüelemet, állítsa a **Mód** mezőt **Munka** állásba, majd állítsa a **Meglévő munka használata** opciót az **Igen** lehetőségre. 
 
 > [!NOTE]
 > A menüelemhez kiválasztott módtól, és attól függően, hogy a menüelem használatos-e meglévő munkához, további mezők lehetnek elérhetők a menüelemhez. A mezőkijelölésekkel kapcsolatos további tudnivalókért lásd a jelen témakör „Kiegészítő menüpont-lehetőségek” című szakaszát.

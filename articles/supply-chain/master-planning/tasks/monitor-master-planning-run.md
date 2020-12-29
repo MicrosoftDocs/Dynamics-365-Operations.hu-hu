@@ -17,11 +17,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 045b82af6f65b22e1c683f8de47a6df282711e6a
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3978129"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429294"
 ---
 # <a name="monitor-a-master-planning-run"></a>Alaptervezés futtatásának megfigyelése
 
@@ -67,8 +67,8 @@ A Gantt-diagram hasznos eszköz, ha meg szeretné tekinteni a műveletkérő üz
 
 #### <a name="navigation-in-the-gantt-chart"></a>Navigálás a Gantt-diagramon
 
-- A kiválasztott csoport kibontásához és a részletek megjelenítéséhez válassza ki a fanézetben a pluszjelet ( **+** ).
-- A kiválasztott csoport összecsukásához válassza ki a mínusz jelet ( **–** ) a fanézetben.
+- A kiválasztott csoport kibontásához és a részletek megjelenítéséhez válassza ki a fanézetben a pluszjelet (**+**).
+- A kiválasztott csoport összecsukásához válassza ki a mínusz jelet (**–**) a fanézetben.
 - A billentyűzetet navigálásra használhatja. A **Felfelé nyíl** és **Lefelé nyíl** billentyűk segítségével mozoghat a sorok között. A **Jobbra nyíl** és a **Balra nyíl** billentyűk segítségével bonthatja ki és csukhatja össze a csoportokat.
 - A Gantt-diagram minden szintjének megnyitásához vagy bezárásához válassza az **Összes kibontása** vagy **Össze összecsukása** elemet.
 - A kapcsolódó feldolgozási idő megtekintéséhez vigye a mutatót egy feladatra. (A feladatok a Gantt-diagram legalacsonyabb szintje.)

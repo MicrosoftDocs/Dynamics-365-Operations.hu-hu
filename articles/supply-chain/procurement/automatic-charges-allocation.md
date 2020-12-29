@@ -16,11 +16,11 @@ ms.author: damadipa
 ms.search.validFrom: 2020-10-01
 ms.dyn365.ops.version: Release 10.0.15
 ms.openlocfilehash: 818affc7591577b69309928eb9b0e71130884cec
-ms.sourcegitcommit: 3feccc9facb33e3dee18f04e202f7b20785df0a8
+ms.sourcegitcommit: 66ecc6cb36ef4f723c77e09d6a33f9c42f8fa392
 ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 10/13/2020
-ms.locfileid: "3998876"
+ms.locfileid: "4429818"
 ---
 # <a name="automatic-allocation-of-charges"></a>A kiadások automatikus felosztása
 
@@ -53,8 +53,8 @@ A kiadások felosztásához először meg kell határoznia a költségkódokat.
 
 1. A **feladás** gyorslapon **Tartozik** és **követel** szakaszok találhatók. Adja meg a következő mezőket, attól függően, hogy milyen főkönyvbe szeretné feladni a költséget:
 
-    - **Típus** – válassza ki annak a számlának a típusát, amelybe a feladás folyamatban van ( *Főkönyv* , *vevő* vagy *cikk* ).
-    - **Feladás** – válassza ki a létrehozni kívánt feladások típusát (például *ügynöki díj* vagy *Vevői elszámolás* ).
+    - **Típus** – válassza ki annak a számlának a típusát, amelybe a feladás folyamatban van ( *Főkönyv*, *vevő* vagy *cikk*).
+    - **Feladás** – válassza ki a létrehozni kívánt feladások típusát (például *ügynöki díj* vagy *Vevői elszámolás*).
     - **Számla** – válassza ki azt a számlát, amelyre feladja a költséget.
 
 1. A műveleti ablaktáblán válassza a **Mentés** lehetőséget.
@@ -88,7 +88,7 @@ Az értékesítési rendelésekhez tartozó költségcsoportok létrehozásához
     - **Leírás** – Adja meg a költségcsoportok leírását.
 
 1. A műveleti ablaktáblán válassza a **Mentés** lehetőséget.
-1. Lépjen a **Kinnlevőségek \> Ügyfelek \> Összes ügyfél** , és vagy nyisson meg egy meglévő ügyfelet, vagy hozzon létre egy új ügyfelet.
+1. Lépjen a **Kinnlevőségek \> Ügyfelek \> Összes ügyfél**, és vagy nyisson meg egy meglévő ügyfelet, vagy hozzon létre egy új ügyfelet.
 1. A **beszerzési rendelés alapértelmezett értékei** gyorslapján a **értékesítési rendelés** szakaszban adja meg a **költségcsoport** mezőt az imént létrehozott költség csoportnak.
 
 ## <a name="define-auto-charges"></a>Automatikus költségek meghatározása
@@ -174,6 +174,6 @@ A következő eljárás bemutatja, hogy hogyan lehet a fejléc-szintű költség
     - **Választások megjelenítése és meghatározott sorok törlése** – jelölje be ezt a jelölőnégyzetet, ha ki szeretné hagyni a felosztásból a kívánt sorokat. Ha bejelöli ezt a jelölőnégyzetet, megnyílik a **Felosztásból kizárandó sorok kiválasztása** rács. A rácsban csak azok a sorok jelennek meg, amelyeket a **Költségek foglalása sorokhoz** és a **Raktározott** beállítások határozzák meg. Ha például a *Pozitív sorok* opciót választja a **Költségek foglalása sorokhoz** mezőben, és bejelöli a **Raktározott** jelölőnégyzetet, akkor csak azok a sorok jelennek meg a rácsban, amelyek pozitívak és raktározva is vannak. Ezenkívül a rács automatikusan kiszűri azokat a sorokat, amelyeknél a teljes mennyiség már bevételezett. Ha meg van nyitva a rács, törölje a jelet a **Tartalmazza** jelölőnégyzetből minden olyan sorhoz, amelyet ki szeretne zárni a felosztásból. 
 
         > [!IMPORTANT]
-        > A **felosztásból kizárandó sorok kiválasztása** rács használata esetén ügyeljen arra, hogy a rács nyitva maradjon a **felosztás** kiválasztásáig. Ha bezárja a rácsot, mielőtt kiválasztja a **felosztást** , akkor a rácsban megadott beállítások elvesznek. Ezért a rendszer a korábban meghatározott feltételek alapján osztja fel a költséget.
+        > A **felosztásból kizárandó sorok kiválasztása** rács használata esetén ügyeljen arra, hogy a rács nyitva maradjon a **felosztás** kiválasztásáig. Ha bezárja a rácsot, mielőtt kiválasztja a **felosztást**, akkor a rácsban megadott beállítások elvesznek. Ezért a rendszer a korábban meghatározott feltételek alapján osztja fel a költséget.
 
 1. Az **Felosztás** gombra kattintva alkalmazza a beállításokat, és zárja be a párbeszédpanelt.

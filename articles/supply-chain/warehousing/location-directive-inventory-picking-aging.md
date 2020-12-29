@@ -17,11 +17,11 @@ ms.author: mirzaab
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: Release 10.0.8
 ms.openlocfilehash: 3ae2826b54cb2ff516840443e01185a5342aedcc
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017137"
+ms.locfileid: "4429839"
 ---
 # <a name="location-directive-inventory-picking-aging"></a>Helyutasítás – készletkitárolás korosítása
 
@@ -70,7 +70,7 @@ A demo adatokhoz beállítás és készletkorrekciók szükségesek a helyzetek 
 1. Ugrás a **Raktárkezelés \> Beállítás \> Helyutasítások** elemre.
 1. Az irányelvek listáiban válassza a **63 SO kitárolási tárolóra bontás** elemet.
 1. Válassza ki a **Szerkesztés** parancsot, hogy a lapot szerkesztési módba helyezze.
-1. A **Helyutasítás-műveletek** gyorslapon keresse meg azt a sort, amelynél a **Sorozatszám** mező értéke *1* , és kövesse az alábbi lépések egyikét:
+1. A **Helyutasítás-műveletek** gyorslapon keresse meg azt a sort, amelynél a **Sorozatszám** mező értéke *1*, és kövesse az alábbi lépések egyikét:
 
     - Ha FIFO-esetet állít be, akkor módosítsa a **Stratégia** mező értékét a *FIFO-helykorosítás* értékére.
     - Ha LIFO-esetet állít be, akkor módosítsa a **Stratégia** mező értékét a *LIFO-helykorosítás* értékére.
@@ -98,7 +98,7 @@ A demo adatokhoz beállítás és készletkorrekciók szükségesek a helyzetek 
 
     Ezekkel a lépésekkel két helyen hagy készletet a demóadatokban. Mindegyik helynek eltérő a korosítási dátuma. Az *FL-001* hely korosítási dátuma 2017. április 15, és az *FL-002* hely korosítási dátuma 2017. január 29. Mindkét hely tartalmazza az *A0001* cikket.
 
-    Ezeknek az adatoknak a megtekintéséhez nyissa meg a **Készletkezelés \> Lekérdezések és jelentések \> Aktuális lista** lehetőséget, majd szűrjön a *63* -as raktárra és az *A0001* cikkre. Azokban a sorokban, amelyeknél a **Hely** mező értéke *FL-001* vagy *FL-002* , jelöljön ki egy pozitív **Tényleges készlet** értéket tartalmazó sort , majd a műveleti ablaktáblán válassza ki a **Tranzakciók** lehetőséget. A **Tényleges dátum** mező azt a dátumot jeleníti meg, amely megfelel a korábban említett korosítási dátumok egyikének.
+    Ezeknek az adatoknak a megtekintéséhez nyissa meg a **Készletkezelés \> Lekérdezések és jelentések \> Aktuális lista** lehetőséget, majd szűrjön a *63*-as raktárra és az *A0001* cikkre. Azokban a sorokban, amelyeknél a **Hely** mező értéke *FL-001* vagy *FL-002*, jelöljön ki egy pozitív **Tényleges készlet** értéket tartalmazó sort , majd a műveleti ablaktáblán válassza ki a **Tranzakciók** lehetőséget. A **Tényleges dátum** mező azt a dátumot jeleníti meg, amely megfelel a korábban említett korosítási dátumok egyikének.
 
 ### <a name="scenario-1-set-up-and-use-fifo-location-aging"></a><a name="fifo-demo"></a>1. eset: FIFO-hely korosításának beállítása és használata
 

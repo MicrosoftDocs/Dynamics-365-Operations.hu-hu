@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: 647358fcdd53ba95b571185ae269bc8d6b869c18
-ms.sourcegitcommit: c986d5234b81d31cc6d054298be6f6ec92c1754c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3889385"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429569"
 ---
 # <a name="service-level-and-description"></a>Szolgáltatási szint és leírás
 
@@ -42,10 +42,10 @@ Munkarendelések létrehozásakor megadhatja, hogy az adott munkarendelés milye
 
     A **Munkarendelések** gyorslapon meghatározhatja a várt kezdő és befejező dátumokat és időpontokat. A gyorslap mezői határozzák meg azt az időszakot, amikor a munkarendeléseket el kell indítani és be kell fejezni. Ezek a saját kezűleg létrehozott munkarendelések, valamint a karbantartási kérések alapján létrehozott munkarendelések esetében használhatók. 
 
-5. A **Kezdő nap** mezőben adja meg azt az időszakot (napok számát), ameddig a munkarendelésnek meg kell kezdődnie. A napok számát a munkarendelés létrehozásától kezdődően számolja ki a rendszer. Ha például a munkarendelést a létrehozáskor kell elindítani, adja meg a **0**értéket. Ha a munkarendelést a létrehozása után egy héten belül el kell indítani, akkor a **7-et** írja be.
-6. Ha a munkarendelés kezdő időpontját is meg szeretné adni a kezdő dátumon kívül, állítsa a **Kezdő dátum beállítása** lehetőséget **Igen** értékre. Ezután írja be a kezdő időpontot a **Kezdő időpont** mezőbe. Ha a beállítást **Nem**értékre állítja, akkor a program az aktuális időpontot használja.
+5. A **Kezdő nap** mezőben adja meg azt az időszakot (napok számát), ameddig a munkarendelésnek meg kell kezdődnie. A napok számát a munkarendelés létrehozásától kezdődően számolja ki a rendszer. Ha például a munkarendelést a létrehozáskor kell elindítani, adja meg a **0** értéket. Ha a munkarendelést a létrehozása után egy héten belül el kell indítani, akkor a **7-et** írja be.
+6. Ha a munkarendelés kezdő időpontját is meg szeretné adni a kezdő dátumon kívül, állítsa a **Kezdő dátum beállítása** lehetőséget **Igen** értékre. Ezután írja be a kezdő időpontot a **Kezdő időpont** mezőbe. Ha a beállítást **Nem** értékre állítja, akkor a program az aktuális időpontot használja.
 7. A **Záró nap** mezőben adja meg azt az időszakot (napok számát), ameddig a munkarendelésnek be kell fejeződnie. A napok számát a munkarendelés kezdő dátumától kezdődően számolja ki a rendszer. Ha például a munkarendelésnek a kezdő dátumtól számítva egy héten belül be kell fejeződnie, akkor a **7-et** írja be.
-8. Ha a munkarendelés záró időpontját is meg szeretné adni a záró dátumon kívül, állítsa a **Záró dátum beállítása** lehetőséget **Igen** értékre. Ezután írja be a záró időpontot a **Záró időpont** mezőbe. Ha a beállítást **Nem**értékre állítja, akkor a program az aktuális időpontot használja.
+8. Ha a munkarendelés záró időpontját is meg szeretné adni a záró dátumon kívül, állítsa a **Záró dátum beállítása** lehetőséget **Igen** értékre. Ezután írja be a záró időpontot a **Záró időpont** mezőbe. Ha a beállítást **Nem** értékre állítja, akkor a program az aktuális időpontot használja.
 9. Válassza a **Mentés** lehetőséget.
 
 ![Munkarendelések szolgáltatási szintje oldal](media/19-setup-for-work-orders.png)

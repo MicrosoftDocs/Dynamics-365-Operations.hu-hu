@@ -20,11 +20,11 @@ ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: dcc155a7fe5ca16e7543bf5917dbedadef987b62
-ms.sourcegitcommit: 175f9394021322c685c5b37317c2f649c81a731a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "3826718"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429604"
 ---
 # <a name="production-order-cost-analysis"></a>Termelési rendelés költségelemzése
 
@@ -49,7 +49,7 @@ A következő ábra bemutatja a négyféle különbözetet, amelyek a termelési
 A **Különbözet** lapon vagy a **Termelési különbözet** jelentésben elemezheti a termelési különbözeteket. A megjelenítési beállítások használatával a részletes különbözetek cikkenként, üzemi erőforrásonként vagy költségcsoportonként jeleníthetők meg. A készletparaméterekben szereplő költség-alábontási szabály határozza meg, hogy a különbözetek nyomon-követése költségcsoportok szerint történik-e. Használhatja még az **egyszeres**, **többszörös**, és **teljes** megjelenítési beállításokat az összesített különbözetek megjelenítéséhez. A részletes különbözetekről szóló információk a segítségére lehetnek a különbözetek okának megértésében. Az eltérések előrejelzéséhez a termelési rendelés befejezése előtt elemezze a **Költségbecslés és kalkulációk** jelentésben található részletes információkat.
 
 ## <a name="cost-analysis-for-current-production-orders"></a>Az aktuális termelési rendelések költségelemzése
-Különálló jelentések nyújtanak információt az egyes tranzakciótípusokkal kapcsolatban. A jelentett termelési tevékenységek költségeinek elemzésére használja ezeket a jelentéseket. Csak azon aktuális termelési rendelések adatai jelennek meg, amelyek állapota **Elindított** vagy**Készként jelentett**.
+Különálló jelentések nyújtanak információt az egyes tranzakciótípusokkal kapcsolatban. A jelentett termelési tevékenységek költségeinek elemzésére használja ezeket a jelentéseket. Csak azon aktuális termelési rendelések adatai jelennek meg, amelyek állapota **Elindított** vagy **Készként jelentett**.
 
 -   **Feldolgozás alatt lévő anyagok**− Ez a jelentés felsorolja azokat a kitárolásilista-tranzakciókat, amelyeket az aktuális termelési rendelések ellenében egy adott tranzakciódátumra jelentettek. A jelentés kimutatja egy kiadott összetevő mennyiségét és az egyes tranzakciók költségösszegét. Használja a kiválasztási feltételeket egy adott összetevő cikk eléréséhez. Például a kinyomtathatja a megfelelő termelési rendelések ellenében egy összetevő kiadott mennyiségének adatait. A kiadott mennyiség nem frissül a szülőcikkhez készként jelentett mennyiségek által. Emiatt a folyamatban lévő tényleges nyersanyagok mennyisége túlbecsült lehet.
 -   **Folyamatban lévő munka**− Ez a jelentés felsorolja azokat az útvonal-tranzakciókat (vagy feladat-tranzakciókat) amelyeket az aktuális termelési rendelések ellenében egy adott tranzakciódátumra jelentettek. A jelentés kimutatja az egyes tranzakciókhoz jelentett órákat, összeget és mennyiséget (mind a helyes, mind a hibás mennyiséget). Tartalmaz továbbá olyan információkat, mint a műveletszám, művelet azonosító és üzemi erőforrás. Továbbá ez a jelentés megjeleníti a termelési rendelés ellenében létrehozott összes tranzakció teljes idejét és összegét, valamint a készként jelentett mennyiséget.

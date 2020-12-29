@@ -17,11 +17,11 @@ ms.author: perlynne
 ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: Release 10.0.11
 ms.openlocfilehash: 0d6894c0adb5671818e976dbb5116ecb947025d2
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016562"
+ms.locfileid: "4429901"
 ---
 # <a name="license-plate-receiving-via-the-warehouse-app"></a>Azonosítótábla-bevételezés a raktári alkalmazás használatával
 

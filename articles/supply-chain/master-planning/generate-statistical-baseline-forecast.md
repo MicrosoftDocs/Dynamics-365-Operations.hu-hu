@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: db0ac2d56db46f283716df6615e404a5354f8d3e
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3982845"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429761"
 ---
 # <a name="generate-a-statistical-baseline-forecast"></a>Statisztikai kiinduló előrejelzés létrehozása
 
@@ -40,7 +40,7 @@ Az előrejelzési időszakot előrejelzés generálásakor lehet kiválasztani. 
 
 Az **Előrejelzési horizont** mezőben adható meg azoknak az időszakoknak a száma, amelyekre vonatkozóan létrejön az előrejelzés. 
 
-Ha az előrejelzési stratégia **Korábbi igény átmásolása** -ként van megadva, az előzményhorizont végét a rendszer figyelmen kívül hagyja. A rendszer átmásolja az időszakok az **Előrejelzési horizont** mezőben beállított számát a jelzett igénybe az **Előzményhorizont** alatti **Kezdő dátum** mezőben megadott dátumtól indulva. Egy bizonyos dátumtól előrefelé elhelyezkedő előzményigények másolásával a termeléstervezők képesek elkészíteni a következő negyedév tervét. Az alábbi két módszer használható:
+Ha az előrejelzési stratégia **Korábbi igény átmásolása**-ként van megadva, az előzményhorizont végét a rendszer figyelmen kívül hagyja. A rendszer átmásolja az időszakok az **Előrejelzési horizont** mezőben beállított számát a jelzett igénybe az **Előzményhorizont** alatti **Kezdő dátum** mezőben megadott dátumtól indulva. Egy bizonyos dátumtól előrefelé elhelyezkedő előzményigények másolásával a termeléstervezők képesek elkészíteni a következő negyedév tervét. Az alábbi két módszer használható:
 
 -   Igénymásolás az előző év ugyanazon negyedévéből.
 -   Igénymásolás az előző negyedévből.

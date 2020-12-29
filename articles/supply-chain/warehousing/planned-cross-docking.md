@@ -17,11 +17,11 @@ ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.7
 ms.openlocfilehash: cc217f21a5fa70feb9ef9161f3ef2e2b6a333f35
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017759"
+ms.locfileid: "4429918"
 ---
 # <a name="planned-cross-docking"></a>Tervezett áttárolás
 
@@ -274,14 +274,14 @@ A létrehozott első munkaazonosítónak van egy *Áttárolás* értékű **Munk
 
 A létrehozott második munkaazonosítónak van egy *Beszerzési rendelések* értékű **Munkarendelés típusa** eleme, amely a beszerzési rendeléshez van kapcsolva. A fennmaradó 2 mennyiséget nem lehetett áttárolni, és a rendszer az elraktározásra irányítja.
 
-1. Jelentkezzen be a *51* -es raktárban lévő felhasználóként a mobileszközön.
+1. Jelentkezzen be a *51*-es raktárban lévő felhasználóként a mobileszközön.
 1. Lépjen a **Bejövő \> Beszerzés fogadása** elemre.
 1. A **PONum** mezőbe adja meg a beszerzési rendelés számát.
 1. Írja be az *5* értéket a **Mennyiség** mezőbe.
 1. Válassza ki az **OK** lehetőséget.
 1. A következő lapon adja meg a **Cikk** mező számára az *A0001* értéket.
 1. Válassza ki az **OK** lehetőséget.
-1. A következő oldalon hagyja jóvá a **PONum** , a **Cikk** és a **Mennyiség** értékét az **OK** gombra kattintva.
+1. A következő oldalon hagyja jóvá a **PONum**, a **Cikk** és a **Mennyiség** értékét az **OK** gombra kattintva.
 
     A „Munka befejezve” üzenet jelenik meg.
 
@@ -294,7 +294,7 @@ Jelenleg mindkét munkaazonosítónak ugyanaz a cél azonosítótáblája. A kö
 1. A mobileszközön nyissa meg a **Bejövő \> Beszerzés eltárolása** lehetőséget, és írja be a cél azonosítótáblát a munkából.
 1. Az **Azonosító** mezőbe írja be a cél azonosítótábla azonosítóját a munka részleteiből.
 
-    Az áttárolási kitárolás oldalon megjeleníti a kitárolási helyet ( *RECV* ), a cél azonosítótáblát ( *azonosítótábla* ), a cikket ( *A0001* ) és a mennyiséget ( *3* ).
+    Az áttárolási kitárolás oldalon megjeleníti a kitárolási helyet (*RECV*), a cél azonosítótáblát (*azonosítótábla*), a cikket (*A0001*) és a mennyiséget (*3*).
 
 1. Válassza ki az **OK** lehetőséget.
 1. A **Cél LP** mezőbe írja be annak az azonosítótábla-azonosítónak a cél azonosítótábláját, amelyet a szállítási helyen el kell helyezni (áttárolni). Tetszőleges azonosítótábla-azonosítót választhat.

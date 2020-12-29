@@ -4,7 +4,7 @@ description: Ez a témakör bemutatja a hullámcímkék nyomtatását, és elmag
 author: GarmMSFT
 manager: PJacobse
 ms.date: 05/01/2020
-ms.topic: configure-wave-label-printing
+ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 1f51ed9f05caede3d4f320ddb6b705e67df9aa1f
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.openlocfilehash: 6314fd25d8d8a0013984d484f57a832c26f82b5a
+ms.sourcegitcommit: a26e4963d40796da21ce6581cfb2f4d9db4f6776
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016954"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "4429959"
 ---
 # <a name="set-up-and-use-wave-label-printing"></a>A hullámcímkék nyomtatásának beállítása és használata
 
@@ -322,7 +322,7 @@ Ez a forgatókönyv lehetővé teszi a hullámcímkék kinyomtatását, amikor a
 Itt találhatók a jelen forgatókönyv és az 1. eset közötti legfontosabb különbségek:
 
 - **Hullámcímkesablonok:** Nem kell kiválasztani a hullámcímkék típusát a hullámcímkesablonon, és a címke-összeállítás csoportosítására nem lesz szükség. Ellenkező esetben a hullámcímke sablonját kell konfigurálni, és a hullámsablonra mutató hivatkozást ugyanúgy kell konfigurálni, mint az 1. forgatókönyvben leírt módon. Ha meg szeretné akadályozni a hullámcímkék létrehozását, hagyja üresen a hullámcímke típusát.
-- **Hullámcímke-elrendezések** : a hullámcímkék elrendezési sorait a hullámcímkerekordok helyett a munkasorokhoz konfigurálja. Konfigurálnia kell a sor beállításait a címkeelrendezéshez a **WHSWorkLine** tábla használatával a **WHSWaveLabel** tábla helyett. A **sorok oldalanként** beállítás határozza meg, hogy hány sor lesz a szövegtörzsben. 
+- **Hullámcímke-elrendezések**: a hullámcímkék elrendezési sorait a hullámcímkerekordok helyett a munkasorokhoz konfigurálja. Konfigurálnia kell a sor beállításait a címkeelrendezéshez a **WHSWorkLine** tábla használatával a **WHSWaveLabel** tábla helyett. A **sorok oldalanként** beállítás határozza meg, hogy hány sor lesz a szövegtörzsben. 
 
 Ez a konfiguráció olyan üzleti esetekhez is használható, amikor több különböző cikket csomagolnak be egy címkézett dobozba vagy egy raklapra, és ezt a csomagolási folyamatot munkalétrehozással (például szállítmány szerint csoportosított munka) lehet definiálni.
 
@@ -378,7 +378,7 @@ A hullámsablonokkal összekötheti a hullámmetódusok megadott példányait a 
         Ez a mező határozza meg, hogy hány sort lehet nyomtatni az egyes címkékre.
 
         > [!NOTE]
-        > Ez a beállítás számos ZPL címkét fog nyomtatni munkánként, ahol mindegyik lap legfeljebb öt munkasorral rendelkezhet. Ha például egy 12 soros tárolóhoz nyomtat egy címkét, akkor három címkét nyomtat. Ha minden egyes kitárolási sorhoz külön címkét szeretne nyomtatni, akkor ezt az értéket *1* -re kell állítania.
+        > Ez a beállítás számos ZPL címkét fog nyomtatni munkánként, ahol mindegyik lap legfeljebb öt munkasorral rendelkezhet. Ha például egy 12 soros tárolóhoz nyomtat egy címkét, akkor három címkét nyomtat. Ha minden egyes kitárolási sorhoz külön címkét szeretne nyomtatni, akkor ezt az értéket *1*-re kell állítania.
 
 1. Zárja be a lapot.
 1. A műveleti ablaktáblán válassza a **Lekérdezés szerkesztése** lehetőséget.
@@ -534,9 +534,9 @@ A jelen forgatókönyv követéséhez a demó adatokat kell telepíteni, és az 
 1. Ugorjon a **Raktárkezelés \> Beállítás \> Hullámok \> Hullámsablonok** pontra.
 2. Válasszon sablont, például a **62 Szállítási alapértelmezés** sablont.
 3. A **metódusok** gyorslapon helyezze át a **hullámcímke-nyomtatás** módszert a **kiválasztott metódusok** oszlopba.
-4. A **kiválasztott metódusok** oszlopában állítsa be a **hullámlépés kódja** értékét (például *kartondoboz* ) a **Hullámcímke-nyomtatás** módhoz. További tájékoztatás: [Hullámlépéskódok](wave-step-codes.md).
+4. A **kiválasztott metódusok** oszlopában állítsa be a **hullámlépés kódja** értékét (például *kartondoboz*) a **Hullámcímke-nyomtatás** módhoz. További tájékoztatás: [Hullámlépéskódok](wave-step-codes.md).
 5. Ismét helyezze át a **Hullámcímke-nyomtatás** módszert a **kiválasztott metódusok** oszlopba.
-6. A **kiválasztott metódusok** oszlopában állítson be eltérő **hullámlépés kódja** értékét (például *raklap* ) a második **Hullámcímke-nyomtatás** módhoz. További tájékoztatás: [Hullámlépéskódok](wave-step-codes.md).
+6. A **kiválasztott metódusok** oszlopában állítson be eltérő **hullámlépés kódja** értékét (például *raklap*) a második **Hullámcímke-nyomtatás** módhoz. További tájékoztatás: [Hullámlépéskódok](wave-step-codes.md).
 
 ### <a name="create-three-wave-label-layouts"></a>Három hullámcímke-elrendezés létrehozása
 

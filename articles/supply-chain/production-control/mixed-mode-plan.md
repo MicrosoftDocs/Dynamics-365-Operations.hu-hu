@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 6c16cf5bf1346cad7d5310a74b84c199ae2c71a4
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3986888"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429363"
 ---
 # <a name="mixed-mode-planning---combine-discrete-process-and-lean-sourcing"></a>Vegyes módú tervezése - Elkülönített, folyamatos és lean típusú források kombinálása
 
@@ -65,7 +65,7 @@ Az erőforrás-felhasználáshoz szükséges, hogy a raktárat, ahonnan kitárol
 Az ellátási irányelvektől független munka esetében nem kell megváltoztatnia az anyagjegyzéken szereplő információt, ha az ellátás módosul. Az eseti változások esetében a Supply Chain Management garantálja, hogy az anyagok forrása a megfelelő raktár lesz.
 
 ## <a name="process-manufacturing--the-production-type"></a>Folyamatgyártás – A termelési típus
-A kevert mód teljes rugalmassága érdekében azt ajánljuk, hogy minden termékhez termeléstípusú anyagjegyzéket használjon. Így termelési rendeléseket, kanbanokat, szállítási rendeléseket vagy beszerzési rendeléseket használhat a termék biztosításához. A folyamatgyártás esetében a következő termeléstípusok közül kell választani: **receptúra** , **társtermék** , **melléktermék** vagy **tervezési cikk** . A kanbanok és a termelési rendelések nem használhatók ezen termeléstípusok esetében.
+A kevert mód teljes rugalmassága érdekében azt ajánljuk, hogy minden termékhez termeléstípusú anyagjegyzéket használjon. Így termelési rendeléseket, kanbanokat, szállítási rendeléseket vagy beszerzési rendeléseket használhat a termék biztosításához. A folyamatgyártás esetében a következő termeléstípusok közül kell választani: **receptúra**, **társtermék**, **melléktermék** vagy **tervezési cikk**. A kanbanok és a termelési rendelések nem használhatók ezen termeléstípusok esetében.
 
 
 

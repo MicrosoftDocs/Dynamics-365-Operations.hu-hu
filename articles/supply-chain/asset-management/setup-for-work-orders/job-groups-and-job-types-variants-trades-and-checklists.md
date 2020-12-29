@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: 8bf7c53a6150a2beeca5c6e9b5ab4ea98584158d
-ms.sourcegitcommit: c986d5234b81d31cc6d054298be6f6ec92c1754c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3889075"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429500"
 ---
 # <a name="maintenance-job-type-categories-and-maintenance-job-types-maintenance-job-type-variants-maintenance-job-trades-and-maintenance-checklists"></a>Karbantartásifeladat-típusok kategóriái és karbantartásifeladat-típusok, karbantartásifeladat-típusok változatai, karbantartási szakmák és karbantartási ellenőrző listák
 
@@ -41,7 +41,7 @@ A karbantartásfeladat-típusok szakterületekről adnak információt, példáu
 
 Minden karbantartásifeladat-típushoz az karbantartásifeladat-típus beállítások különböző változatait lehet létrehozni. Ha például egy karbantartásifeladat-típus neves **Szerviz**, akkor a következő eltérések változatok hozhatók létre a karbantartásifeladat-típushoz: **Teherautók 30 000 km**, **Autók 30 000 km** és **Furgonok 30 000 km**.
 
-A karbantartási feladattípus-kategóriák a karbantartási feladattípusok egy csoportját gyűjtik összes áttekintés céljából. A karbantartási feladattípus-kategóriákra példák lehetnek a **Kalibráció**, **Vizsgálat**, **Nagyjavítás**és **Műszerezés**.
+A karbantartási feladattípus-kategóriák a karbantartási feladattípusok egy csoportját gyűjtik összes áttekintés céljából. A karbantartási feladattípus-kategóriákra példák lehetnek a **Kalibráció**, **Vizsgálat**, **Nagyjavítás** és **Műszerezés**.
 
 A karbantartási ellenőrzőlista sablonokat és karbantartási ellenőrzőlista változókat a karbantartási ellenőrzőlisták beállításához lehet használni. A karbantartási ellenőrzőlisták a karbantartási feladattípusokon állíthatók be, és a munkarendelésekben használatosak.
 
@@ -160,7 +160,7 @@ A karbantartási ellenőrzőlista sablonokat olyan gyakori feladatokhoz lehet ha
 7. A **Leírás** gyorslapon adja meg a karbantartási feladattípus leírását.
 8. A **Karbantartási feladattípus változatai** gyorslapon változatokat adhat meg a karbantartási feladat típusához.
 9. A **Szükséges szakértelmek** és a **Szükséges tanúsítványok** gyorslapokon szakértelem és tanúsítvány követelményei adhatók meg a karbantartási feladattípushoz.
-10. Ha egy bizonyos karbantartási feladattípust végre kell hajtani következőként, adja azt hozzá a **Következő feladatok** gyorslapon. A karbantartási feladattípushoz kapcsolódó, a karbantartási feladattípus-változatot is be lehet állítani. Ha a következő feladatnak meghatározott számú nappal előbb vagy később el kell kezdődnie ahhoz feladathoz képest, amely ezt a karbantartásifeladat-típust használja, adja meg a napok számát a **Késleltetés napokban** mezőben. A pozitív számok a kapcsolódó feladat kezdetét követő napokat jelentik, a negatív számok pedig a kapcsolódó feladat ütemezett kezdése előtti napokat jelentik. Ha például az **5**értéket adja meg, a következő feladat a karbantartási feladattípushoz kapcsolódó feladat kezdete után öt nappal fog kezdődni. Ha a **-3**értéket adja meg, a következő feladat a karbantartási feladattípushoz kapcsolódó feladat kezdete előtt három nappal fog kezdődni.
+10. Ha egy bizonyos karbantartási feladattípust végre kell hajtani következőként, adja azt hozzá a **Következő feladatok** gyorslapon. A karbantartási feladattípushoz kapcsolódó, a karbantartási feladattípus-változatot is be lehet állítani. Ha a következő feladatnak meghatározott számú nappal előbb vagy később el kell kezdődnie ahhoz feladathoz képest, amely ezt a karbantartásifeladat-típust használja, adja meg a napok számát a **Késleltetés napokban** mezőben. A pozitív számok a kapcsolódó feladat kezdetét követő napokat jelentik, a negatív számok pedig a kapcsolódó feladat ütemezett kezdése előtti napokat jelentik. Ha például az **5** értéket adja meg, a következő feladat a karbantartási feladattípushoz kapcsolódó feladat kezdete után öt nappal fog kezdődni. Ha a **-3** értéket adja meg, a következő feladat a karbantartási feladattípushoz kapcsolódó feladat kezdete előtt három nappal fog kezdődni.
 
     > [!NOTE]
     > Ha egynél több karbantartási feladattípus sort ad hozzá, a sorok sorrendje jelzi, hogy milyen sorrendben kell elvégezni azokat. A sorrend a lista tetején kezdődik.
@@ -182,7 +182,7 @@ A karbantartási ellenőrzőlista sablonokat olyan gyakori feladatokhoz lehet ha
 4. A **Karbantartási feladattípus** mezőben válassza ki a karbantartási feladattípust, ha az nem lett automatikusan kiválasztva.
 5. A **karbantartási feladattípus változója** és a **Szakma** mezőben válasszon ki egy karbantartási feladattípust és karbantartási feladat szakmát.
 6. Válassza az **Előrejelzés** lehetőséget.
-7. A **Karbantartási feladattípus alapértelmezett előrejelzése** lapon előrejelzéseket készíthet az órákról, cikkekről és kiadásokról. A megfelelő lapokon válassza a **Hozzáadás**lehetőséget, majd válasszon lehetőségeket a szükséges előrejelzések létrehozásához a karbantartási feladattípushoz.
+7. A **Karbantartási feladattípus alapértelmezett előrejelzése** lapon előrejelzéseket készíthet az órákról, cikkekről és kiadásokról. A megfelelő lapokon válassza a **Hozzáadás** lehetőséget, majd válasszon lehetőségeket a szükséges előrejelzések létrehozásához a karbantartási feladattípushoz.
 8. A **Cikkek előrejelzése** lapon kiválaszthatja a cikksorban megjelenítendő készletdimenziókat. Válassza a **Készlet** \> **Dimenziók** lehetőséget, válassza ki a megjelenítendő dimenziókat, állítsa a **Beállítás mentése** lehetőséget **Igen** értékre, majd válassza az **OK** lehetőséget.
 9. A **Cikk előrejelzése** lapon válassza a **Cikket hol használják** lehetőséget, ha szeretne áttekintést kapni arról, hogy az Eszközkezelésben hol használják a kiválasztott sorban található cikk az eszközökkel, alapértelmezett feladattípusokkal, pótalkatrészekkel és munkarendelésekkel kapcsolatban. 
 
@@ -216,7 +216,7 @@ A karbantartási ellenőrzőlista sablonokat olyan gyakori feladatokhoz lehet ha
 20. A változtatások mentéséhez válassza a **Mentés** elemet.
 21. Térjen vissza a **Karbantartási feladattípusának alapértelmezései** lapra.
 22. Válassz a **Munkaleírás** lehetőséget.
-23. A **Munkaleírás** lapon válassza a **Szerkesztés**elemét, majd vegyen fel egy leírást, amely a kiválasztott karbantartási feladattípushoz kapcsolódik.
+23. A **Munkaleírás** lapon válassza a **Szerkesztés** elemét, majd vegyen fel egy leírást, amely a kiválasztott karbantartási feladattípushoz kapcsolódik.
 24. A Leírás mentéséhez válassza a **Mentés** parancsot.
 
     Ha itt egy munkaleírást ad meg, akkor felülbírál minden, a karbantartási feladattípushoz beállított leírást a **Karbantartás feladattípusok** oldalon. Ha nem ad hozzá itt munkaleírást, akkor a program a karbantartási feladattípushoz beállított bármely leírást használja. A leírásokat a program automatikusan átviszi az olyan munkarendelésekre, amelyek a karbantartás feladattípust vagy a karbantartás feladattípus alapértelmezést használnak.

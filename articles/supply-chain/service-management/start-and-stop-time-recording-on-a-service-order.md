@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 9590a4924442ceccf6f30c35e1dce907f54d368e
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3983181"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429188"
 ---
 # <a name="start-and-stop-time-recording-on-a-service-order"></a>Szervizrendeléshez kapcsolódó időrögzítés elindítása és leállítása 
 
@@ -34,7 +34,7 @@ Ezzel a művelettel indíthatja el és állíthatja le az idő rögzítését ol
 
 ## <a name="start-time-recording"></a>Az időrögzítés elindítása
 
-1.  Kattintson a következőkre: **Szolgáltatáskezelés** \> **Közös** \> **Szervizrendelések** \> **Szervizrendelések** .
+1.  Kattintson a következőkre: **Szolgáltatáskezelés** \> **Közös** \> **Szervizrendelések** \> **Szervizrendelések**.
 
 2.  Kattintson a **Szervizrendelés** lapra. A **Műveleti ablak** esetében, a **Szolgáltatásiszint-szerződés** csoportban, kattintson a **Kezdés** elemre.
 
@@ -42,7 +42,7 @@ Ezzel a művelettel indíthatja el és állíthatja le az idő rögzítését ol
 
 ## <a name="stop-time-recording"></a>Időrögzítés leállítása
 
-1.  Kattintson a következőkre: **Szolgáltatáskezelés** \> **Közös** \> **Szervizrendelések** \> **Szervizrendelések** .
+1.  Kattintson a következőkre: **Szolgáltatáskezelés** \> **Közös** \> **Szervizrendelések** \> **Szervizrendelések**.
 
 2.  Kattintson a **Szervizrendelés** lapra. A **Műveleti ablak** esetében, a **Szolgáltatásiszint-szerződés** csoportban, kattintson a **Leállítás** elemre.
 

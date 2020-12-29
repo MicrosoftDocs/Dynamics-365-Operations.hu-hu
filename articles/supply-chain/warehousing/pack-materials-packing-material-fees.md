@@ -20,11 +20,11 @@ ms.author: mafoge
 ms.search.validFrom: 2020-02-19
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 1061f336701461df7a2cf78661788e4c6100c84d
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3215700"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429402"
 ---
 # <a name="packing-materials-and-fees"></a>Csomagolóanyagok és díjak
 
@@ -51,7 +51,7 @@ A csomagolóanyag súlyának, a csomagolóanyagok díjainak vagy mindkettőnek a
     > Miután létrehozta a csomagolási csoportokat, igény szerint hozzárendelheti az egyes termékekhez a szükséges csoportokat. Válassz a **Termék információ kezelése \> Termékek \> Kiadott termékek** lehetőséget, válasszon ki egy terméket, majd válassza ki a megfelelő csomagolási csoportot a **Készlet kezelése** gyorslap **Csomagolási csoport** mezőjében.
 
 1. Nyissa meg a **Készletkezelés \> Beállítások \> Csomagolóanyag \> Csomagolóanyag-kódok** lehetőséget, adja meg az egyes használt csomagolóanyag-típusokat, és adja meg a csomagolóanyag felhasználásnak egységét szállítmányok előkészítése során.
-1. Nyissa meg a **Készletkezelés \> Beállítások \> Csomagolóanyag \> Csomagolóanyag-díjak**lehetőséget és adjon meg egy díjat az imént definiált csomagolóanyagokhoz. A díjak számítása a felhasznált egységár alapján történik.
+1. Nyissa meg a **Készletkezelés \> Beállítások \> Csomagolóanyag \> Csomagolóanyag-díjak** lehetőséget és adjon meg egy díjat az imént definiált csomagolóanyagokhoz. A díjak számítása a felhasznált egységár alapján történik.
 1. A csomagolóanyagok cikkekhez történő elosztáshoz nyissa meg a **Készletkezelés \> Beállítások \> Csomagolóanyag \> Csomagolóanyag-felosztás** lehetőséget, és hozza létre a felosztásokat. Annyi elosztást hozhat létre, amennyire szüksége van. Az egyes cikkekhez, cikkcsoportokhoz (csomagolási csoportokhoz) vagy az összes cikkhez lehet hozzárendelni a csomagolóanyagokat, attól függően, hogy milyen részletesnek kell lennie a felosztásoknak.
 
     Az alábbi lépéseket minden létrehozott felosztásra vonatkozóan el kell végezni:
@@ -111,4 +111,4 @@ Olyan jelentés létrehozásához, amely megjeleníti a vállalat által fizeten
 A számlákra rá lehet nyomtatni a csomagolóanyag súlyadatait, és jelezni lehet, hogy ki fizeti a kapcsolódó csomagolóanyag-díjakat. A súlyok összegzése a csomagolóanyag-kód alapján történik.
 
 1. Lépjen a **Kinnlevőségek \> Beállítások \> Kinnlevőségek paraméterei** pontra.
-1. A **Frissítések** lap **Számla** gyorslapján állítsa be a **Csomagolóanyag-súly nyomtatása** beállítást **Igen**értékre.
+1. A **Frissítések** lap **Számla** gyorslapján állítsa be a **Csomagolóanyag-súly nyomtatása** beállítást **Igen** értékre.

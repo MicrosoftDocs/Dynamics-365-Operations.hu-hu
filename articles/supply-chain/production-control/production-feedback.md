@@ -20,11 +20,11 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 0cc44592bd60e89f1dc67114098d701d8965e4fe
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3212549"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429394"
 ---
 # <a name="production-feedback"></a>Termelési visszajelzés
 
@@ -32,7 +32,7 @@ ms.locfileid: "3212549"
 
 Ez a cikk információt biztosít a termékvisszajelzéssel kapcsolatban. A termékvisszajelzés termelési feladatokkal kapcsolatos visszajelzésekkel szolgál a munkások részére. A cikk a termelési visszajelzés frissítésének számos módjáról szolgál információval.
 
-A Termelési visszajelzés a termelési feladatokkal kapcsolatos visszajelzést ad a dolgozóknak. Idő- és anyagfelhasználást rögzít a termelési rendeléseken, továbbá műveleti mennyiségeket és az állapotot, és olyan hibákat, amelyek megakadályozzák egy feladat vagy művelet végrehajtását. A termelési visszajelzést a termelési rendelésekhez kapcsolódó naplókban lehet frissíteni. A **Termelési feladatkártya** és a **Termelési útvonalkártya** naplókban a feladat vagy művelet idejét és mennyiségeit lehet jelenteni. Az utolsó feladatra vagy műveletre vonatkozó jelentéshez a késztermékre vonatkozó mennyiségek készként jelenthetők. A termelési visszajelzés frissíthető a **Feladatkártya terminál** és a **Feladatkártya eszköze** lapokon. Ezek a lapok lehetővé teszik a termelési visszajelzés frissítését kell az üzemben, és a gyártásvégrehajtás funkció részét képezik a **Gyártásvezérlés**modulban. A**Feladatkártya terminál** lapjához tartozik egy konfigurálható felhasználói felület, amely a kiadott feladatok listáját jeleníti meg prioritási sorrendben egy kiválasztott munkaterületen. Ezenkívül speciális beállításokat nyújt, például a feladatok kötegelése és csapatmunka. A **Feladatkártya eszköze** lapjához tartozik egy érintésre optimalizált felhasználói felület. A termelési visszajelzés mindkét lapon a termelési naplókból történik.
+A Termelési visszajelzés a termelési feladatokkal kapcsolatos visszajelzést ad a dolgozóknak. Idő- és anyagfelhasználást rögzít a termelési rendeléseken, továbbá műveleti mennyiségeket és az állapotot, és olyan hibákat, amelyek megakadályozzák egy feladat vagy művelet végrehajtását. A termelési visszajelzést a termelési rendelésekhez kapcsolódó naplókban lehet frissíteni. A **Termelési feladatkártya** és a **Termelési útvonalkártya** naplókban a feladat vagy művelet idejét és mennyiségeit lehet jelenteni. Az utolsó feladatra vagy műveletre vonatkozó jelentéshez a késztermékre vonatkozó mennyiségek készként jelenthetők. A termelési visszajelzés frissíthető a **Feladatkártya terminál** és a **Feladatkártya eszköze** lapokon. Ezek a lapok lehetővé teszik a termelési visszajelzés frissítését kell az üzemben, és a gyártásvégrehajtás funkció részét képezik a **Gyártásvezérlés** modulban. A **Feladatkártya terminál** lapjához tartozik egy konfigurálható felhasználói felület, amely a kiadott feladatok listáját jeleníti meg prioritási sorrendben egy kiválasztott munkaterületen. Ezenkívül speciális beállításokat nyújt, például a feladatok kötegelése és csapatmunka. A **Feladatkártya eszköze** lapjához tartozik egy érintésre optimalizált felhasználói felület. A termelési visszajelzés mindkét lapon a termelési naplókból történik.
 
 
 

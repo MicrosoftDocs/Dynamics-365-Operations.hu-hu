@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: df5bcd57c611ed5f77a417a28f28fca84057d734
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3205989"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429631"
 ---
 # <a name="schedule-maintenance-plans"></a>Karbantartási tervek ütemezése
 
@@ -51,7 +51,7 @@ A megelőző karbantartás ütemezése az eszközökön beállított karbantart�
 
 >*Példa:* egy megadott munkavégzési helyszínhez szeretne létrehozni karbantartási tervet olyan módon, hogy a munkavégzési helyszín összes, mindenkori eszközbeállítása szerepeljen benne, amikor a karbantartási tervet ütemezi. Ebben az esetben hozzon létre egy karbantartási tervet, és válassza ki a megfelelő munkavégzési helyszínt, de NE adjon eszközöket a karbantartási tervhez. Ennek eredményeképpen a karbantartási terv ütemezésekor létrejönnek a karbantartási ütemezési sorok minden olyan eszközhöz, amelyek az adott időpontban a munkavégzési helyszínhez kapcsolódnak.
 
-- Ha módosítja az eszköztípusokat, az eszközgyártókat és az eszközmodelleket  az **Eszköztípusok**menüpontban, ezek a módosítások csak a frissített eszköztípust használó új eszközöket érintik. Az eszköztípusok beállításairól további információt itt talál: [Eszköztípusok](../setup-for-objects/object-types.md).  
+- Ha módosítja az eszköztípusokat, az eszközgyártókat és az eszközmodelleket  az **Eszköztípusok** menüpontban, ezek a módosítások csak a frissített eszköztípust használó új eszközöket érintik. Az eszköztípusok beállításairól további információt itt talál: [Eszköztípusok](../setup-for-objects/object-types.md).  
 
 5. Az **OK** gombra kattintva megkezdheti az eszközök karbantartási ütemezési bejegyzéseinek létrehozását. A létrehozott bejegyzések az **Összes karbantartási ütemezés** listaoldalon jelennek meg. A következő ábra egy példát mutat be a **Karbantartási tervek ütemezése** párbeszédablakra.
 

@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: b226dd61c758cf17c8e4784ec22d2628145c1836
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3985609"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429586"
 ---
 # <a name="bills-of-materials-and-formulas"></a>Anyagjegyzékek és receptúrák
 
@@ -94,7 +94,7 @@ Amikor tervezett rendelések, termelési rendelések vagy kanban-ok készülnek 
 ## <a name="bom-and-formula-lines"></a>Anyagjegyzék–és receptúrasorok
 Minden anyaghoz, szolgáltatáshoz vagy alapanyaghoz anyagjegyzék sor készül. A sor meghatározza egy adott termékváltozat tervezett fogyasztását, továbbá a tervezett fogyasztáshoz tarozó különféle tulajdonságokat.  
 
-Az anyagjegyzék sorok a következő sortípusokkal rendelkezhetnek: **Cikk** , **Látszólagos** , **Rögzített készletek** , **Szállítói** .
+Az anyagjegyzék sorok a következő sortípusokkal rendelkezhetnek: **Cikk**, **Látszólagos**, **Rögzített készletek**, **Szállítói**.
 
 ### <a name="item"></a>Cikk
 

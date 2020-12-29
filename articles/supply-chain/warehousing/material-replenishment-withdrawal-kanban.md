@@ -20,11 +20,11 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: d0caa0020083138f702e4a1fda457b7075a9c87e
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017073"
+ms.locfileid: "4429834"
 ---
 # <a name="replenishment-with-withdrawal-kanbans"></a>Feltöltés visszavonási kanbanokkal
 
@@ -54,7 +54,7 @@ Ennek a forgatókönyvnek az esetében a gyártási folyamat (4) egy termelési 
 
 ## <a name="configure-warehouse-work-for-kanban-picking-for-the-withdrawal-kanban"></a>Raktári munka konfigurálása a kanbankitároláshoz a visszavonási kanban esetében
 
-Ahhoz, hogy a nyersanyag kitárolható legyen a visszavonási kanban esetében, konfigurálja a hullámsablonokat, munkasablonokat és helyutasításokat a **Kanban kitárolás** munkarendelés-típushoz. Ez a munkarendelés-típus nem csak a visszavonási kanban esetében támogatja a kitárolási folyamatot. A kitárolási folyamatot a gyártási kanban esetében is támogatja. Ugyanakkor mindegyik kanbantípushoz konfigurálható külön kitárolási folyamat a hullámsablonok, a munkasablonok és a helyutasítások elválasztásával. A hullámsablonok, a munkasablonok és a helyutasítások elválasztására állítson be feltételeket a tevékenység típusára ( **Folyamat** vagy **Átvitel** ) az érintett entitások lekérdezéseiben.
+Ahhoz, hogy a nyersanyag kitárolható legyen a visszavonási kanban esetében, konfigurálja a hullámsablonokat, munkasablonokat és helyutasításokat a **Kanban kitárolás** munkarendelés-típushoz. Ez a munkarendelés-típus nem csak a visszavonási kanban esetében támogatja a kitárolási folyamatot. A kitárolási folyamatot a gyártási kanban esetében is támogatja. Ugyanakkor mindegyik kanbantípushoz konfigurálható külön kitárolási folyamat a hullámsablonok, a munkasablonok és a helyutasítások elválasztásával. A hullámsablonok, a munkasablonok és a helyutasítások elválasztására állítson be feltételeket a tevékenység típusára (**Folyamat** vagy **Átvitel**) az érintett entitások lekérdezéseiben.
 
 ## <a name="configure-the-withdrawal-kanban"></a>A visszavonási kanban konfigurálása
 

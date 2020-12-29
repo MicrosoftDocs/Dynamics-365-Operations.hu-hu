@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: fcc46fad8d57b7d4d57edfa4f2ae06de923d1c14
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3209171"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429340"
 ---
 # <a name="automatic-update-of-asset-counters"></a>Eszközök számlálóinak automatikus frissítése
 
@@ -31,7 +31,7 @@ ms.locfileid: "3209171"
 
 Az eszközök számlálóinak manuális regisztrálásával kapcsolatos tudnivalókat lásd: [Eszközszámlálók manuális frissítése](../work-orders/manual-update-of-asset-counters.md). Az eszközszámlálók beállításával kapcsolatos további információkat lásd: [Számlálók](../setup-for-objects/counters.md).
 
-A számlálók értékei automatikusan is frissíthetők a termelési regisztrációk alapján, a termelési órák vagy termelési mennyiségek alapján (ez a gyártott mennyiség). Ez a frissítés az **Eszközök frissítése** lapon történik. Egy vagy több eszköz frissítéséhez egy paramétert, a **Kezdő dátumot**kell beállítani. Ez a paraméter a termelési regisztrációk (termelési órák vagy termelési mennyiségek) kezdődátumát határozza meg. Más szóval azt a dátumot határozza meg, amikortól a számlálók értékét frissíteni kell.
+A számlálók értékei automatikusan is frissíthetők a termelési regisztrációk alapján, a termelési órák vagy termelési mennyiségek alapján (ez a gyártott mennyiség). Ez a frissítés az **Eszközök frissítése** lapon történik. Egy vagy több eszköz frissítéséhez egy paramétert, a **Kezdő dátumot** kell beállítani. Ez a paraméter a termelési regisztrációk (termelési órák vagy termelési mennyiségek) kezdődátumát határozza meg. Más szóval azt a dátumot határozza meg, amikortól a számlálók értékét frissíteni kell.
 
 Minden olyan eszköz, amely egy erőforráshoz van rendelve *és* amelyekhez eszközszámláló van beállítva, amely a gyártott mennyiség vagy termelési óra alapján történő frissítésre van beállítva, az automatikus frissítés része lesz. Új számlálóértékek jönnek létre.
 

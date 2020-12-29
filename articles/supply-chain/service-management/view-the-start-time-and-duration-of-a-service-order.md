@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: f8ec7cbfea709c74b73a189c24da8978a501794d
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3984729"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429676"
 ---
 # <a name="view-the-start-time-and-duration-of-a-service-order"></a>Szervizrendelés kezdési időpontjának és tartamának megtekintése 
 
@@ -36,19 +36,19 @@ Azt is megjelenítheti, hogy mikor indították el és állították le a szervi
 
 ## <a name="view-the-start-time-for-a-service-order"></a>A szervizrendelés kezdési idejének megjelenítése
 
-1.  Kattintson a következőkre: **Szolgáltatáskezelés** \> **Közös** \> **Szervizrendelések** \> **Szervizrendelések** . Jelöljön ki egy rendelést, majd kattintson rá duplán a részleteket tartalmazó képernyő megnyitásához.
+1.  Kattintson a következőkre: **Szolgáltatáskezelés** \> **Közös** \> **Szervizrendelések** \> **Szervizrendelések**. Jelöljön ki egy rendelést, majd kattintson rá duplán a részleteket tartalmazó képernyő megnyitásához.
 
 2.  Az **Általános** lap **Kezdési idő** mezőjében megtekintheti, mikor kezdődött el a munka egy szervizrendelés teljesítéséhez.
 
 ## <a name="view-the-time-remaining-to-complete-a-service-order"></a>A szervizrendelés befejezéséig hátralévő idő megjelenítése
 
-1.  Kattintson a következőkre: **Szolgáltatáskezelés** \> **Közös** \> **Szervizrendelések** \> **Szervizrendelések** . Jelöljön ki egy rendelést, majd kattintson rá duplán a részleteket tartalmazó képernyő megnyitásához.
+1.  Kattintson a következőkre: **Szolgáltatáskezelés** \> **Közös** \> **Szervizrendelések** \> **Szervizrendelések**. Jelöljön ki egy rendelést, majd kattintson rá duplán a részleteket tartalmazó képernyő megnyitásához.
 
 2.  Az **Általános** lap **Utolsó teljesítési idő** mezőjében megtekintheti egy szervizrendelés befejezéséig hátralevő időt.
 
 ## <a name="view-the-start-time-and-stop-time-recording-entries-for-a-service-order"></a>A szervizrendelés idő-nyilvántartási bejegyzéseinek megjelenítése
 
-1.  Kattintson a következőkre: **Szolgáltatáskezelés** \> **Közös** \> **Szervizrendelések** \> **Szervizrendelések** . Jelöljön ki egy rendelést, majd kattintson rá duplán a részleteket tartalmazó képernyő megnyitásához.
+1.  Kattintson a következőkre: **Szolgáltatáskezelés** \> **Közös** \> **Szervizrendelések** \> **Szervizrendelések**. Jelöljön ki egy rendelést, majd kattintson rá duplán a részleteket tartalmazó képernyő megnyitásához.
 
 2.  Kattintson a **Műveleti ablaktábla** **Elküldés** lapján levő \> **Idő rögzítése** lehetőségre az **Szolgáltatásiszint-szerződés idő-nyilvántartása** képernyő megnyitásához, és tekintse meg a szervizrendeléshez tartozó idő-nyilvántartási bejegyzéseket.
 

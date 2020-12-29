@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: ''
 ms.openlocfilehash: 1c1b940754021956998fe27ba16020d4b16aedf1
-ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
+ms.sourcegitcommit: 092ef6a45f515b38be2a4481abdbe7518a636f85
 ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4015067"
+ms.locfileid: "4429831"
 ---
 # <a name="improve-scheduling-engine-performance"></a>Az ütemezési motor teljesítményének javítása
 
@@ -180,7 +180,7 @@ A megszorításmegoldó nem ismeri az ütemezési algoritmus jellemzőit. A „v
 
 A motor (belső) megszorításainak nagy része az erőforrások munkaidejét és kapacitását vezérli. A feladat lényegében az erőforrás munkaidőhelyeinek adott pontról adott irányban történő eltolása és kellő hosszúságú intervallum keresése, amelyben a feladatokhoz szükséges kapacitás (idő) elfér.
 
-Ehhez a motornak ismernie kell az erőforrás munkaidőit. A fő modell adataival szemben a munkaidő *lustán van betöltve* , ami azt jelenti, hogy szükség szerint töltődnek be a motorba. E megközelítés oka, hogy a Supply Chain Management rendszerben a naptárakhoz tartozó munkaidők gyakran hosszú ideig megtalálhatók, és jellemzően számos naptár létezik, így az adatok túl nagyok az előzetes betöltéshez.
+Ehhez a motornak ismernie kell az erőforrás munkaidőit. A fő modell adataival szemben a munkaidő *lustán van betöltve*, ami azt jelenti, hogy szükség szerint töltődnek be a motorba. E megközelítés oka, hogy a Supply Chain Management rendszerben a naptárakhoz tartozó munkaidők gyakran hosszú ideig megtalálhatók, és jellemzően számos naptár létezik, így az adatok túl nagyok az előzetes betöltéshez.
 
 A naptárinformációkat a motor darabokban, az X++ `WrkCtrSchedulingInteropDataProvider.getWorkingTimes` osztály mód meghívásával kéri le. A kérelem egy adott naptári azonosítóra, adott időintervallumban vonatkozik. A Supply Chain Management kiszolgáló-gyorsítótárának állapotától függően, a kérelmek mindegyike több adatbázis-hívásba is bekerülhet, ami hosszú időt igényel (a tiszta számítási időhöz képest). Ha a naptár nagyon bonyolult munkaidő-meghatározásokat tartalmaz sok napi munkaidő-intervallummal, az szintén megnöveli a betöltéshez szükséges időt.
 
@@ -305,7 +305,7 @@ A véges kapacitás használatához a motornak be kell töltenie a kapacitás ad
 
 ### <a name="setting-hard-links"></a>Rögzített hivatkozások beállítása
 
-Az útvonal normál hivatkozásának típusa *lágy* , ami azt jelenti, hogy az egyik művelet befejező ideje és a következő kezdete között időeltérés megengedett. Ennek engedélyezése azzal a kellemetlen hatással járhat, hogy ha az egyik művelethez anyagok vagy kapacitások igen hosszú ideig nem állnak rendelkezésre, akkor a termelés hosszabb ideig tétlen lehet, ami a folyamatban lévő munka esetleges megnövekedését jelenti. Ez rögzített hivatkozásokkal nem fog megtörténni, mert a befejezésnek és a kezdésnek tökéletesen kell illeszkednie. A rögzített hivatkozások beállítása azonban fokozza az ütemezési nehézségeket, mert a műveletek két erőforrása esetében a munkaidő és a kapacitás metszéspontját kell kiszámítani. Ha párhuzamos műveletek is vannak, akkor ez jelentős számítási időt ad hozzá. Ha a két művelet erőforrásainak különböző naptárai vannak, amelyek egyáltalán nem fedik egymást, akkor a probléma megoldhatatlan.
+Az útvonal normál hivatkozásának típusa *lágy*, ami azt jelenti, hogy az egyik művelet befejező ideje és a következő kezdete között időeltérés megengedett. Ennek engedélyezése azzal a kellemetlen hatással járhat, hogy ha az egyik művelethez anyagok vagy kapacitások igen hosszú ideig nem állnak rendelkezésre, akkor a termelés hosszabb ideig tétlen lehet, ami a folyamatban lévő munka esetleges megnövekedését jelenti. Ez rögzített hivatkozásokkal nem fog megtörténni, mert a befejezésnek és a kezdésnek tökéletesen kell illeszkednie. A rögzített hivatkozások beállítása azonban fokozza az ütemezési nehézségeket, mert a műveletek két erőforrása esetében a munkaidő és a kapacitás metszéspontját kell kiszámítani. Ha párhuzamos műveletek is vannak, akkor ez jelentős számítási időt ad hozzá. Ha a két művelet erőforrásainak különböző naptárai vannak, amelyek egyáltalán nem fedik egymást, akkor a probléma megoldhatatlan.
 
 Javasoljuk, hogy rögzített hivatkozásokat csak feltétlenül szükséges esetben használja, és gondosan mérlegelje, hogy az útvonal minden műveletéhez szükségesek-e.
 

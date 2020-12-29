@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: b364c1f19888b711626312b77335b06ef3959886
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3980610"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429432"
 ---
 # <a name="monitor-service-activities"></a>Szolgáltatási tevékenységek figyelése 
 
@@ -47,7 +47,7 @@ A napi szolgáltatási tevékenységeket figyelve észreveszi, hogy az egyik sze
 
 ## <a name="open-the-dispatch-board-form"></a>A Diszpécserközpont képernyő megnyitása
 
-Kattintson a következőkre: **Szolgáltatáskezelés** \> **Rendszeres** \> **Diszpécserközpont** .
+Kattintson a következőkre: **Szolgáltatáskezelés** \> **Rendszeres** \> **Diszpécserközpont**.
 
 ## <a name="see-also"></a>Lásd még
 

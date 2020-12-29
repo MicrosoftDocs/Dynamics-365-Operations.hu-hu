@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 2e845b05d77701191a267de45354c3da25bd7699
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3979502"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429564"
 ---
 # <a name="bom-designer-functionality"></a>Anyagjegyzék-tervező funkció
 
@@ -105,7 +105,7 @@ Használja az **Anyagjegyzéksorok** vagy az **Anyagjegyzék** funkciókat anyag
 | Anyagjegyzéksorok &gt; Hozzáadás a sor előtt      | Párbeszédpanel megnyitása, ahol kiválaszthatja a kiválasztott anyagjegyzéksor előtt szerepeltetendő termékváltozatot.         | Ez a funkció csak akkor érhető el, ha ki van jelölve egy anyagjegyzéksor-csomópont.                                                                                                                                                                                                                                   |
 | Anyagjegyzéksorok &gt; Hozzáadás anyagjegyzék-összetevőhöz | Párbeszédpanel megnyitása, ahol kiválaszthatja a kiválasztott anyagjegyzék végén szerepeltetendő termékváltozatot.       | Ez a funkció csak akkor érhető el, ha a kijelölt csomópont rendelkezik kijelölt anyagjegyzékkel. Ha ez a funkció nem elérhető, egy anyagjegyzék-verzió hiányozhat a kiválasztott cikkváltozathoz. Ebben az esetben kattintson az **Anyagjegyzék** &gt; **Verzió létrehozása** menüpontra a hiányzó verzió létrehozásához a kiválasztott csomópontban. |
 | Anyagjegyzéksorok &gt; Hozzáadás a sor után       | Párbeszédpanel megnyitása, ahol kiválaszthatja a kiválasztott anyagjegyzéksor után szerepeltetendő termékváltozatot.          | Ez a funkció csak akkor érhető el, ha ki van jelölve egy anyagjegyzéksor-csomópont.                                                                                                                                                                                                                                   |
-| Anyagjegyzék &gt; Verzió létrehozása             | Új anyagjegyzék-verzió vagy anyagjegyzék létrehozása a kiválasztott csomópont termékváltozatához.                             | Ez a funkció akkor érhető el, ha a kiválasztott anyagjegyzéksor-csomópont össze van kapcsolva egy cikkel, amelynek a termelési típusa **Anyagjegyzék** vagy **Receptúra** .                                                                                                                                                  |
+| Anyagjegyzék &gt; Verzió létrehozása             | Új anyagjegyzék-verzió vagy anyagjegyzék létrehozása a kiválasztott csomópont termékváltozatához.                             | Ez a funkció akkor érhető el, ha a kiválasztott anyagjegyzéksor-csomópont össze van kapcsolva egy cikkel, amelynek a termelési típusa **Anyagjegyzék** vagy **Receptúra**.                                                                                                                                                  |
 | Anyagjegyzék &gt; Számítás                | Párbeszédpanel megnyitása, ahol a költség- vagy eladásiár-számítást futtathatja a kiválasztott termékváltozatnál. | Ez a funkció akkor érhető el, ha a kijelölt csomópont kapcsolódik egy anyagjegyzék-verzióhoz.                                                                                                                                                                                                         |
 | Anyagjegyzék &gt; Ellenőrzés                      | A kiválasztott anyagjegyzék érvényesítése és ellenőrzése.                                                                      | Ez a funkció akkor érhető el, ha a kijelölt csomópont kapcsolódik egy anyagjegyzék-verzióhoz.                                                                                                                                                                                                         |
 

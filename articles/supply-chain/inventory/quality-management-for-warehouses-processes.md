@@ -16,11 +16,11 @@ ms.author: henrikan
 ms.search.validFrom: 2020-04-02
 ms.dyn365.ops.version: Release 10.0.10
 ms.openlocfilehash: 0f39bd2ffda492fce9b3fe51feafcbc8fd32391c
-ms.sourcegitcommit: 965fa733be068dc37f482d02ebbcd77f2c3d0a45
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "3763479"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429794"
 ---
 # <a name="quality-management-for-warehouse-processes"></a>Raktári folyamatok minőségkezelése
 
@@ -126,7 +126,7 @@ Ha a **Hivatkozástípus** értéke _Beszerzés_, és a **Vonatkozó raktártíp
 
 A _Raktári folyamatok minőségkezelése_ funkció lehetővé teszi a munka létrehozását csak a cikk-mintavétel alapján. Ez lehetővé teszi a könnyű feldolgozást. A munka által létrehozott készlet a minőségi társításhoz társított cikk-mintavételezéstől függ. A könnyű eljárás alkalmazása esetén, miután a dolgozó a minőség-ellenőrzési helyre elhelyezi a mennyiséget, ha minőségi rendelés szükséges, akkor a minőségbiztoítási osztály manuálisan létrehozhatja a minőségi rendelést.
 
-A **Minőségfeldolgozási házirend** mező a **Minőségi rendelés folyamata** gyorslapon határozza meg, hogy egy minőségi rendelés is létrejön-e, amikor munkát hoznak létre egy cikk elhelyezéséhez a minőségellenőrzés helyére. A mező értéke _Minőségi rendelés létrehozása_ vagy _Csak munka létrehozása_ lehet. Az alapértelmezett érték a _Minőségi rendelés_létrehozása.
+A **Minőségfeldolgozási házirend** mező a **Minőségi rendelés folyamata** gyorslapon határozza meg, hogy egy minőségi rendelés is létrejön-e, amikor munkát hoznak létre egy cikk elhelyezéséhez a minőségellenőrzés helyére. A mező értéke _Minőségi rendelés létrehozása_ vagy _Csak munka létrehozása_ lehet. Az alapértelmezett érték a _Minőségi rendelés_ létrehozása.
 
 > [!NOTE]
 > Attól függetlenül, hogy manuálisan vagy automatikusan hozza létre a minőségi rendeléseket, a rendszer automatikusan létrehozza a munkát, hogy a cikkeket áthelyezze a minőségellenőrzés helyéről, ha minőségi rendelés ellenőrzöttnek van megjelölve.
@@ -603,7 +603,7 @@ A 51 raktárhoz beállította a munka- és a helyadatokat, hogy biztosítsa a mu
 
 1. Ugorjon a **Készletkezelés \> Időszakos feladatok \> Minőségkezelés \> Minőségi rendelések** lehetőségre.
 1. A regisztrált mennyiségek első minőségi rendelését válassza ki.
-1. A **Validálás**kiválasztása. Az teszt állapota *Nem felelt meg* értékre frissül.
+1. A **Validálás** kiválasztása. Az teszt állapota *Nem felelt meg* értékre frissül.
 1. Ugrás a **Raktárkezelés \> Minden munka** lehetőségre.
 1. Nyissa meg az imént létrehozott munkát, és figyelje meg, hogy a **Munkarendelés típusa** értéke *Minőségi rendelés*. A munka tartalmaz egy sort, amelyben a betárolási hely a *Visszaküldés*, az állapot pedig *Nem felelt meg*. (Ha a minőségi rendelés állapota *Megfelelt*, az eltárolási hely *Ömlesztett* lenne ehelyett.)
 1. Lépjen vissza a **Készletkezelés \> Időszakos feladatok \> Minőségkezelés \> Minőségi rendelések** lehetőségre.

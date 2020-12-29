@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: 617fca55226e216197c385c88a9d7a8e3de03b03
-ms.sourcegitcommit: c986d5234b81d31cc6d054298be6f6ec92c1754c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3889985"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429550"
 ---
 # <a name="maintenance-downtime-activities"></a>Karbantartás miatti üzemkimaradási tevékenységek
 
@@ -56,7 +56,7 @@ Kattintson az **Eszközkezelés** > **Közös** > **Karbantartás miatti üzemki
 
 4. A karbantartási leállás időszakát szúrja be a **Kezdő dátum/idő** és a **Záró dátum/idő** mezőbe.
 
-5. A **Karbantartás miatti üzemkimaradási tevékenységek eszközei** gyorslapon kattintson a **Sor hozzáadása**elemre, ha a tárgyi eszközt szeretne hozzáadni (egyesével) a karbantartás miatti üzemkimaradási tevékenységhez.
+5. A **Karbantartás miatti üzemkimaradási tevékenységek eszközei** gyorslapon kattintson a **Sor hozzáadása** elemre, ha a tárgyi eszközt szeretne hozzáadni (egyesével) a karbantartás miatti üzemkimaradási tevékenységhez.
 
 6. Ha minden eszközt felvett, kattintson a **Mentés** gombra. A lenti ábra a kapcsolódó eszközökkel és karbantartási feladatokkal kapcsolatos karbantartási állásidőt mutatja be.
 

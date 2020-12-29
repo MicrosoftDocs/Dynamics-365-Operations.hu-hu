@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 4438487fa234cf093b557bca9455717b2cd3ca0b
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3979232"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429206"
 ---
 # <a name="service-object-groups"></a>A szolgáltatás tárgyainak csoportjai 
 
@@ -53,7 +53,7 @@ Hozzon létre csoportokat, amelyekhez szolgáltatási objektumokat rendelhet. A 
 
 Szolgáltatási objektumcsoportok létrehozásához tegye a következőket:
 
-1. Kattintson a **Szolgáltatáskezelés > Beállítás > A szolgáltatás tárgyai > A szolgáltatás tárgyai lehetőségre** .
+1. Kattintson a **Szolgáltatáskezelés > Beállítás > A szolgáltatás tárgyai > A szolgáltatás tárgyai lehetőségre**.
 
 2. Kattintson az **Új** lehetőségre egy új szolgáltatási objektumcsoport létrehozásához.
 

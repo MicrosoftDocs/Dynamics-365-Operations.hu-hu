@@ -17,11 +17,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 4576e442c2f270932e20472a6c340dcac6d45246
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018698"
+ms.locfileid: "4429917"
 ---
 # <a name="create-a-purchase-order-from-a-sales-order"></a>Beszerzési rendelés létrehozása értékesítési rendelésből
 
@@ -63,7 +63,7 @@ Ez az eljárás bemutatja, hogyan hozhat létre egy beszerzési rendelést egy �
 ## <a name="review-purchase-orders-created-from-sales-orders"></a>Értékesítési rendelésekből létrehozott beszerzési rendelések áttekintése
 1. A **Művelet panelen** kattintson az **Általános** elemre.
 2. Kattintson a **Kapcsolódó rendelések** lehetőségre. A **Kapcsolódó rendelések** lap felsorolja az értékesítési rendelésből létrehozott összes rendelést. Ebben a példában a program két beszerzési rendelés hoz létre két különböző szállítóhoz. 
-3. Kattintson a **Beszerzési rendelés** mezőben található hivatkozásra. Minden beszerzésirendelés-sor társítva van az értékesítésirendelés-sorhoz, amely a beszerzéshez vezetett. Az értékesítési rendeléshez való viszony a **Termék lapon** van feltüntetve a **Sorrészletek** gyorslapon, a **Hivatkozás típusa** , a **Hivatkozási szám** és a **Referenciatétel** mezőkben.  
+3. Kattintson a **Beszerzési rendelés** mezőben található hivatkozásra. Minden beszerzésirendelés-sor társítva van az értékesítésirendelés-sorhoz, amely a beszerzéshez vezetett. Az értékesítési rendeléshez való viszony a **Termék lapon** van feltüntetve a **Sorrészletek** gyorslapon, a **Hivatkozás típusa**, a **Hivatkozási szám** és a **Referenciatétel** mezőkben.  
 4. Bontsa ki vagy csukja össze a **Soradatok** szakaszt.
 5. Kattintson a **Termék** fülre.
     - A **Referenciatétel** biztosítja, hogy az aktuális beszerzés költségei terhelésként jelennek meg a csatolt értékesítési rendelésen.  

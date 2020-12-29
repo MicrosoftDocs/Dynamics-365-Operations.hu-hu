@@ -18,11 +18,11 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 1f961dc379ceeeae9bbceec1baaa9b9be21316f3
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017782"
+ms.locfileid: "4429849"
 ---
 # <a name="set-up-containerization"></a>Tárolóra bontás beállítása
 
@@ -75,7 +75,7 @@ Ez a témakör azt mutatja be, hogy hogyan lehet automatizálni a szállítmány
 5. A **Hullámlépés kódja** mezőben írjon be egy értéket.
 6. Jelölje be a **Kitárolások szétosztásának engedélyezése** jelölőnégyzetet.
 7. Válassza a **Mentés** lehetőséget.
-8. Válassza ki a **Tárolóvegyesítési megszorítások** lehetőséget. A Vegyítési logika felbontásai lehetővé teszik a szabályok felállítását a felosztási sorok tárolóba való csomagolásához. Például ha hozzáadja a **Cikkszám mezőt** , amikor a rendszer a cikkeket a tárolóhoz rendeli, egy új tárolót hoz létre egy új cikkszám esetén. A rendszer így megakadályozza, hogy a munkavállalók két különböző vevőhöz tartozó felosztási sort ugyanabba a tárolóba csomagoljanak.  
+8. Válassza ki a **Tárolóvegyesítési megszorítások** lehetőséget. A Vegyítési logika felbontásai lehetővé teszik a szabályok felállítását a felosztási sorok tárolóba való csomagolásához. Például ha hozzáadja a **Cikkszám mezőt**, amikor a rendszer a cikkeket a tárolóhoz rendeli, egy új tárolót hoz létre egy új cikkszám esetén. A rendszer így megakadályozza, hogy a munkavállalók két különböző vevőhöz tartozó felosztási sort ugyanabba a tárolóba csomagoljanak.  
 9. Válassza az **Új** lehetőséget.
 10. Válasszon ki egy lehetőséget a **Tábla** mezőben.
 11. A **Mezőválasztás** mezőben adjon meg vagy válasszon ki egy értéket.

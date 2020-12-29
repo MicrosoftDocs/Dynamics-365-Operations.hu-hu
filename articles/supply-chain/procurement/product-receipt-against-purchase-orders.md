@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: cead310eaa86d755399e512f99d6782bfa551211
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018859"
+ms.locfileid: "4429842"
 ---
 # <a name="product-receipt-against-purchase-orders"></a>Termékbevételezés összevetése a beszerzési rendelésekkel
 
@@ -42,7 +42,7 @@ A termékbevételezési regisztráció gyakran a raktár érkeztetési terület�
 A raktárban átvett termékek minőségellenőrzésen is áteshetnek, mielőtt a készletbe kerülnek. Minőségi rendelések vagy a karanténutasítások használhatók minőségellenőrzés elvégzéséhez. Ha a minőségi rendelés kerül használatra, a folyamat konfigurálható úgy, hogy bizonyos termékeket foglalással visszatartson, amíg azokat át nem vizsgálják. Karanténutasítások használatakor a vizsgálandó termékeket ellenőrzésre egy másik raktárba szállítják. Ez a raktár a karanténraktár. Mindkét minőségellenőrzési folyamat során megtörténhet, hogy néhány termék kiselejtezésre kerül, mert nem felelnek meg a minőségi elvárásoknak, vagy mert a minőségellenőrzési folyamat egy adott minta vagy termék megsemmisülésével jár.
 
 ## <a name="product-receipt"></a>Termékbevételezés
-A termékek beszerzési rendelésen történő **Átvett** státuszúként történő megjelölése leggyakrabban a **Beszerzési rendelések** oldalon található **Termékbevételezés** művelettel történik. A **Termékbevételezés** feladása oldalon számos beállítás található az átvettként könyvelt mennyiségre vonatkozóan. A **Mennyiség** mezőt beállíthatja például a következőkre: **Megrendelt mennyiség** , **Átveendő mennyiség**. Másik megoldásként, raktári érkeztetési folyamat során ez a mező gyakran kaphatja a **Regisztrált mennyiség** beállítást. Minden egyes **Átvett** megjelöléssel ellátott rendeléssor mennyiségeit módosíthatja a diszkrepanciáknak, mint pl. az alul- vagy túlszállításnak megfelelően. A termékbevételezés során meg kell adnia a termékbevételezési azonosítót, ami általában a megegyezik a szállító által biztosított szállítószámmal. Ez az azonosító szükséges a könyveléshez, mert így auditok vagy ellenőrzések során a szállítólevelek összeegyeztethetők a ténylegesen átvett mennyiségekkel, a számba vett készlettel vagy kiadással.  
+A termékek beszerzési rendelésen történő **Átvett** státuszúként történő megjelölése leggyakrabban a **Beszerzési rendelések** oldalon található **Termékbevételezés** művelettel történik. A **Termékbevételezés** feladása oldalon számos beállítás található az átvettként könyvelt mennyiségre vonatkozóan. A **Mennyiség** mezőt beállíthatja például a következőkre: **Megrendelt mennyiség**, **Átveendő mennyiség**. Másik megoldásként, raktári érkeztetési folyamat során ez a mező gyakran kaphatja a **Regisztrált mennyiség** beállítást. Minden egyes **Átvett** megjelöléssel ellátott rendeléssor mennyiségeit módosíthatja a diszkrepanciáknak, mint pl. az alul- vagy túlszállításnak megfelelően. A termékbevételezés során meg kell adnia a termékbevételezési azonosítót, ami általában a megegyezik a szállító által biztosított szállítószámmal. Ez az azonosító szükséges a könyveléshez, mert így auditok vagy ellenőrzések során a szállítólevelek összeegyeztethetők a ténylegesen átvett mennyiségekkel, a számba vett készlettel vagy kiadással.  
 
 A beszerzési megrendeléseket olyan termékekre is ki lehet állítani, amelyeket nem szándékoznak készletbe venni, viszont ugyanúgy költségnek számítanak. Ebbe a kategóriába tartoznak azok a rendelési sorok, ahol a termékeket **Nem raktározott** jelöléssel látják el a készletmodell-csoportjukban, valamint azok a sorok, amelyek beszerzési kategóriákat használnak. Ebben az esetben a cikkek lehet, hogy nem mennek keresztül a raktárban az érkezési regisztráción és a termékbevételezésen. Ehelyett a **Termékbevételezés** művelettel a bevételezést közvetlenül a beszerzési rendelésen rögzítik, és a bevételezés nem a regisztrált, hanem a megrendelt mennyiség alapján történik.  
 

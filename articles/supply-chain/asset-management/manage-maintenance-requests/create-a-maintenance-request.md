@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: 22d5e371c386abc71946bf64ed8792647f78cf1b
-ms.sourcegitcommit: c986d5234b81d31cc6d054298be6f6ec92c1754c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3889218"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429580"
 ---
 # <a name="create-maintenance-requests"></a>Karbantartási kérések létrehozása
 
@@ -46,7 +46,7 @@ Az **Aktív karbantartási kérések** részben a **Kapcsolódó információk**
     Ha már van hozzárendelve egy karbantartási kérés a kiválasztott eszközhöz, akkor egy üzenetsáv jelenik meg a **Kérés létrehozása** párbeszédpanel tetején, amely tájékoztatja a meglévő karbantartási kérés azonosítójáról. Egy üzenetsáv azt is jelzi, ha az eszközhöz garancia tartozik.
 
 6. A **Szolgáltatási szint** mezőben válassza ki azt a szolgáltatási szintet, amely a kérés sürgősségét jelzi.
-7. Ha az 5. lépésben kiválasztott egy eszközt, akkor a **Hiba tünete**, **Hibás terület**és **Hiba típusa** mezőket használhatja a hiba regisztrálásának létrehozásához.
+7. Ha az 5. lépésben kiválasztott egy eszközt, akkor a **Hiba tünete**, **Hibás terület** és **Hiba típusa** mezőket használhatja a hiba regisztrálásának létrehozásához.
 8. Ha a karbantartási kérés karbantartás miatti üzemkimaradást okozott, adja meg az üzemkimaradás kezdő dátumát és időpontját.
 
     A program automatikusan az Ön nevére állítja az **Elindította** mezőt.

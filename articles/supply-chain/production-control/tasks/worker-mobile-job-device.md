@@ -18,11 +18,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: ada42a98a8a87e377f939d063b17f9904f6b3408
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3978234"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429684"
 ---
 # <a name="configure-a-worker-using-the-mobile-job-device"></a>Dolgozó konfigurálása mobil feladatvégző eszközzel
 
@@ -62,7 +62,7 @@ Ebben a példában a dolgozó fiókjának konfigurálása előtt ellenőrizze, h
 ## <a name="assign-worker-to-device-group"></a>Dolgozó társítása eszközcsoporthoz
 1. Ugorjon a **Gyártásvezérlés > Beállítás > Gyártásvégrehajtás > Feladatkártya konfigurálása az eszközökhöz** elemre.
 2. Válassza a **Hozzáadás** lehetőséget.
-3. Válassza ki a listából a kívánt dolgozót. Ebben a példában válassza ki **SHANNON-t** .
+3. Válassza ki a listából a kívánt dolgozót. Ebben a példában válassza ki **SHANNON-t**.
 4. Válassza ki az **OK** lehetőséget.
 5. Válassza ki a **Szerkesztés** opciót.
 6. A **Termelési egység** mezőben megadhatja az alapértelmezett szűrőt a dolgozóhoz. Ez biztosítja, hogy csak a kijelölt termelési egység termelési feladatai jelenjenek meg, amikor a dolgozó bejelentkezik az eszközön. Adja meg a kívánt értéket.

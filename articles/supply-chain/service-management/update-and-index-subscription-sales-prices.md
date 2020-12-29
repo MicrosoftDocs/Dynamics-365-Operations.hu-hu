@@ -19,22 +19,22 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 5b192cd6316f8e4de7919b7a3feda29fcbf54059
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3978966"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429673"
 ---
 # <a name="update-and-index-subscription-sales-prices"></a>Előfizetési árak frissítése és indexelése 
 
 [!include [banner](../includes/banner.md)]
 
 
-1.  Kattintson a következőkre: **Szolgáltatáskezelés**\>**Közös**\>**Szolgáltatási előfizetések**\>**Minden szolgáltatási előfizetés** .
+1.  Kattintson a következőkre: **Szolgáltatáskezelés**\>**Közös**\>**Szolgáltatási előfizetések**\>**Minden szolgáltatási előfizetés**.
 
 2.  Válassza ki azt az előfizetést, amelynek módosítani szeretné az indexárát vagy az alapárát.
 
-3.  Kattintson ide: **Index** . A **Változtatás** mezőben jelezze, hogy az alapárat vagy az indexet hogyan szeretné módosítani, és hogy százalék vagy új érték alapján történjen a módosítás. A választható lehetőségek a következők:
+3.  Kattintson ide: **Index**. A **Változtatás** mezőben jelezze, hogy az alapárat vagy az indexet hogyan szeretné módosítani, és hogy százalék vagy új érték alapján történjen a módosítás. A választható lehetőségek a következők:
     
       - **Indexelés százalékkal**
     

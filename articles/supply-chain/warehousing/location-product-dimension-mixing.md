@@ -17,11 +17,11 @@ ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.7
 ms.openlocfilehash: 73519f3fe79d3d7d917d3044255f735640b8ccfd
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017161"
+ms.locfileid: "4429841"
 ---
 # <a name="location-product-dimension-mixing"></a>Hely és termékdimenzió kombinálása
 
@@ -216,7 +216,7 @@ Olyan beszerzési rendelést hoz létre, amelynek három sora van: két sor ugya
 1. Hagyja jóvá a bejegyzést a lap alján látható jóváhagyás gombra (✔) kattintva.
 1. Adja meg a sor számát a bevételezett beszerzési rendelésből. Válassza ki a **LINENUM** mezőt, majd a számbillentyűzeten adja meg az *1* értéket.
 1. Hagyja jóvá a bejegyzést.
-1. Írja be a fogadásra kerülő mennyiséget. Nyomja meg kétszer a pluszjelet ( **+** ) a **Mennyiség** mező értékének *2* -re.
+1. Írja be a fogadásra kerülő mennyiséget. Nyomja meg kétszer a pluszjelet (**+**) a **Mennyiség** mező értékének *2*-re.
 1. Regisztrálja a bejegyzését a lap alján látható (✔) gombot megnyomva, majd hagyja jóvá a bejegyzést ismét a (✔) gombot megnyomva.
 1. Tekintse meg a **Beszerzési rendelések: Betárolás** oldalon látható információkat. Ez a lap az elraktározáshoz létrehozott munkát jeleníti meg (1. munka).
 

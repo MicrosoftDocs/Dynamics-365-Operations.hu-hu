@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 045bb59642d766ac23939dee0900ea6911fe50fe
-ms.sourcegitcommit: c986d5234b81d31cc6d054298be6f6ec92c1754c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3890033"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429297"
 ---
 # <a name="create-an-asset"></a>Eszköz létrehozása
 
@@ -103,7 +103,7 @@ A **Cím** gyorslapon be lehet szúrni a berendezés címét. Ha az eszközhöz 
 A karbantartási tervek a megelőző karbantartási feladatok ütemezésére használhatók rendszeres időközönként a tárgyi eszközhöz. Ezen a gyorslapon a kiválasztott tárgyi eszközhöz beállíthatja a karbantartási terv sorait. A karbantartási köröket különböző eszközökhöz lehet beállítani, amelyekhez rendszeres időközönként hasonló feladatot kell végrehajtani. A **Funkcionális hely karbantartási tervei** lapon megtekintheti a munkavégzési helyszínhez kapcsolódó karbantartási terveket, amelyre az eszköz telepítve van.
 
 >[!NOTE]
->Ha egy tárgyi eszközhöz kapcsolódó karbantartási terv sort vagy karbantartási kört töröl az **Összes eszköz**részben, akkor automatikusan törli a karbantartási terv vagy karbantartási kör alapján létrehozott összes "létrehozott" állapotú karbantartási ütemezést is.
+>Ha egy tárgyi eszközhöz kapcsolódó karbantartási terv sort vagy karbantartási kört töröl az **Összes eszköz** részben, akkor automatikusan törli a karbantartási terv vagy karbantartási kör alapján létrehozott összes "létrehozott" állapotú karbantartási ütemezést is.
 
 ## <a name="functional-location-maintenance-plans"></a>Munkavégzési helyszín karbantartási tervei
 

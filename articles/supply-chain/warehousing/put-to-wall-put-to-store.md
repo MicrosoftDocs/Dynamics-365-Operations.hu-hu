@@ -17,11 +17,11 @@ ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.9
 ms.openlocfilehash: 12501b90e4b31ec11e3c59784ace9fd9a8b7d934
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017828"
+ms.locfileid: "4429853"
 ---
 # <a name="put-to-wall---put-to-store"></a>Falhoz helyez – üzletbe helyez
 
@@ -343,13 +343,13 @@ Létre kell hoznia egy helyirányelvet a rendezés befejezését követően lét
 1. A **Munkasablon részletei** részben két sort fog létrehozni. Válassza az **Új** lehetőséget, majd állítsa be a következő értékeket az 1. sorhoz:
 
     - **Munka típusa:** *Kitárolás*
-    - **Kötelező:** Kiválasztva (= *Igen* )
+    - **Kötelező:** Kiválasztva (= *Igen*)
     - **Munkaosztály azonosítója:** *Rendezés*
 
 1. Válassza ismét az **Új** lehetőséget, majd állítsa be a következő értékeket az 2. sorhoz:
 
     - **Munka típusa:** *Eltárolás*
-    - **Kötelező:** Kiválasztva (= *Igen* )
+    - **Kötelező:** Kiválasztva (= *Igen*)
     - **Munkaosztály azonosítója:** *Rendezés*
 
 1. Válassza a **Mentés** lehetőséget.
@@ -458,7 +458,7 @@ Egy munkaazonosító lett létrehozva amely a cikkeket a kitárolási helyekről
 
 ### <a name="sales-order-picking-to-the-sorting-location"></a>Értékesítési rendelés kitárolása a rendezési helyre
 
-1. Jelentkezzen be a *62* -es raktárba felhasználóként a mobileszközön.
+1. Jelentkezzen be a *62*-es raktárba felhasználóként a mobileszközön.
 1. Válassza a főmenü **Kimenő** elemét.
 1. Válassza a **Kimenő** menü **Értékesítési kitárolás** elemét.
 1. Válassza ki az **Azonosító** mezőt, majd írja be a munkaazonosítót a hullámfeldolgozásból.

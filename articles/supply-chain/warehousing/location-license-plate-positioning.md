@@ -17,11 +17,11 @@ ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.7
 ms.openlocfilehash: 7b0ebfb965e5a8f1bfe1857a9642d998dac2faf3
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017116"
+ms.locfileid: "4429840"
 ---
 # <a name="location-license-plate-positioning"></a>Hely és azonosítótábla pozicionálása
 
@@ -109,13 +109,13 @@ A funkciót minden olyan hely helyprofiljában be kell kapcsolni, ahol használa
 
 ### <a name="set-up-sample-data-for-this-scenario"></a>A mintaadatok beállítása ehhez a helyzethez
 
-Ennél a helyzetnél a felhasználónak be kell jelentkeznie a raktározási mobilalkalmazásba egy olyan dolgozóval, aki a *61* -es raktárhoz be van állítva munkavégzéshez. A felhasználónak is végre kell hajtania a tranzakciókat.
+Ennél a helyzetnél a felhasználónak be kell jelentkeznie a raktározási mobilalkalmazásba egy olyan dolgozóval, aki a *61*-es raktárhoz be van állítva munkavégzéshez. A felhasználónak is végre kell hajtania a tranzakciókat.
 
 Mivel a *Helyazonosító tábla elhelyezése* funkció új azonosítót ad hozzá az azonosítótábla helyhez egy adott helyen, először létre kell hoznia néhány adatot a forgatókönyv támogatásához.
 
 #### <a name="spot-count-the-first-location"></a>Az első hely eseti leltározása
 
-1. Nyissa meg a raktározási alkalmazást, és jelentkezzen be a *61* -es raktárba.
+1. Nyissa meg a raktározási alkalmazást, és jelentkezzen be a *61*-es raktárba.
 1. Lépjen a **Készlet \> Eseti leltár** lehetőségre.
 1. Az **Eseti leltár** oldalon adja meg a **Hely** mezőt a *01A01R1S1B* értékkel.
 1. Válassza ki az **OK** lehetőséget.
@@ -195,7 +195,7 @@ A munka ezzel befejeződött.
 1. A rácsban válassza ki a *Ciklikus leltározás* munkarendelés-típus első munkaazonosítóját.
 1. A Művelet ablaktábla **Munka** lapjának **Munka** csoportjában válassza a **Ciklikus leltározás** elemet.
 
-    Két sor látható, egy-egy a cikkek és az azonosítótábla számára. A **Megszámlált mennyiség** , a **Hely** , az **Azonosítótábla** és a **Cikk** mező értékeinek meg kell egyezniük a mobileszköz által létrehozott leltárbejegyzésekkel. Ha ezek a mezők nem láthatók, akkor válassza a **Dimenziók megjelenítése** lehetőséget a Művelet panelen a rácshoz való hozzáadásukhoz.
+    Két sor látható, egy-egy a cikkek és az azonosítótábla számára. A **Megszámlált mennyiség**, a **Hely**, az **Azonosítótábla** és a **Cikk** mező értékeinek meg kell egyezniük a mobileszköz által létrehozott leltárbejegyzésekkel. Ha ezek a mezők nem láthatók, akkor válassza a **Dimenziók megjelenítése** lehetőséget a Művelet panelen a rácshoz való hozzáadásukhoz.
 
 1. Válassza ki mindkét sort.
 1. A Művelet ablaktáblán válassza ki a **Számlálás elfogadása** lehetőségre.
@@ -213,7 +213,7 @@ A munka ezzel befejeződött.
 1. Az **Áttekintés** lapon válassza ki a *Ciklikus leltározás* munkarendelés-típus második munkaazonosítóját.
 1. A Művelet ablaktábla **Munka** lapjának **Munka** csoportjában válassza a **Ciklikus leltározás** elemet.
 
-    Egy sor jelenik meg a cikk és az azonosítótábla esetében. A **Megszámlált mennyiség** , a **Hely** , az **Azonosítótábla** és a **Cikk** mező értékeinek meg kell egyezniük a mobileszköz által létrehozott leltárbejegyzésekkel.
+    Egy sor jelenik meg a cikk és az azonosítótábla esetében. A **Megszámlált mennyiség**, a **Hely**, az **Azonosítótábla** és a **Cikk** mező értékeinek meg kell egyezniük a mobileszköz által létrehozott leltárbejegyzésekkel.
 
 1. Jelölje ki a sort.
 1. A Művelet ablaktáblán válassza ki a **Számlálás elfogadása** lehetőségre.
@@ -237,12 +237,12 @@ A munka ezzel befejeződött.
 
 1. Figyelje meg, hogy a *01A01R1S1B* hely kétféle azonosítótáblával rendelkezik:
 
-    - **A0001** , ahol az **LP hely** mező értéke *1.*
-    - **A0002** , ahol az **LP hely** mező értéke *2.*
+    - **A0001**, ahol az **LP hely** mező értéke *1.*
+    - **A0002**, ahol az **LP hely** mező értéke *2.*
 
 1. Figyelje meg, hogy a *01A01R1S2B* hely egyféle azonosítótáblával rendelkezik:
 
-    - **A0002** , ahol az **LP hely** mező értéke *1.*
+    - **A0002**, ahol az **LP hely** mező értéke *1.*
 
 ### <a name="sales-order-scenario"></a>Értékesítési rendelés forgatókönyve
 
@@ -273,7 +273,7 @@ Most, hogy a *Helyazonosító tábla elhelyezése* funkció be van állítva, é
 
 ### <a name="sales-picking-scenario"></a>Értékesítési kitárolási eset
 
-1. Nyissa meg a mobilalkalmazást, és jelentkezzen be a *61* -es raktárba.
+1. Nyissa meg a mobilalkalmazást, és jelentkezzen be a *61*-es raktárba.
 1. Lépjen a **Kimenő \> Értékesítési kitárolás** lehetőségre.
 1. A **Munkaazonosító/azonosítótábla azonosítójának beolvasása** oldalon válassza ki az **Azonosító** mezőt, majd adja meg az értékesítési sor munkaazonosítóját.
 1. Figyelje meg, hogy a kitárolási munka az *A0002* cikknek a *01A01R1S2B* helyről való kitárolására utasítja. Ez az utasítás akkor jelenik meg, ha az *A0002* cikk olyan azonosítótáblán van, amely az adott helyen az *1*. pozícióban szerepel.

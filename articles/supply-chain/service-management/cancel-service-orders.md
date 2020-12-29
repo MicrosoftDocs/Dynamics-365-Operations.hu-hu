@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: ce3cb9ebc3536ba1b333a7bef6b5c679e09d7516
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3980411"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429695"
 ---
 # <a name="cancel-service-orders"></a>Szervizrendelések érvénytelenítése   
 
@@ -39,11 +39,11 @@ A szervizrendelést és annak sorait magából a rendelésből is érvénytelen�
 
 ## <a name="cancel-a-service-order-in-the-service-orders-form"></a>Szervizrendelés érvénytelenítése a Szervizrendelések képernyőn
 
-1.  Kattintson a következőkre: **Szolgáltatáskezelés** \> **Közös** \> **Szervizrendelések** \> **Szervizrendelések** . Válassza ki a szervizrendelést, majd kattintson a **Rendelés törlése** gombra a Műveletpanelen.
+1.  Kattintson a következőkre: **Szolgáltatáskezelés** \> **Közös** \> **Szervizrendelések** \> **Szervizrendelések**. Válassza ki a szervizrendelést, majd kattintson a **Rendelés törlése** gombra a Műveletpanelen.
 
 ## <a name="cancel-a-service-order-line"></a>Szervizrendeléssor érvénytelenítése
 
-1.  Kattintson a következőkre: **Szolgáltatáskezelés** \> **Közös** \> **Szervizrendelések** \> **Szervizrendelések** . Kattintson duplán az érvényteleníteni kívánt sort tartalmazó szervizrendelésre.
+1.  Kattintson a következőkre: **Szolgáltatáskezelés** \> **Közös** \> **Szervizrendelések** \> **Szervizrendelések**. Kattintson duplán az érvényteleníteni kívánt sort tartalmazó szervizrendelésre.
 
 2.  Válassza ki a érvényteleníteni kívánt szervizrendeléssort, és kattintson a **Rendelési sor érvénytelenítése** lehetőségre ahhoz, hogy a sor állapotát **töröltre** módosítsa.
 
@@ -54,7 +54,7 @@ A szervizrendelést és annak sorait magából a rendelésből is érvénytelen�
 
 ## <a name="cancel-multiple-service-orders"></a>Több szervizrendelés érvénytelenítése
 
-1.  Kattintson a következőkre: **Szolgáltatáskezelés** \> **Rendszeres** \> **Szervizrendelések** \> **Szervizrendelések érvénytelenítése** .
+1.  Kattintson a következőkre: **Szolgáltatáskezelés** \> **Rendszeres** \> **Szervizrendelések** \> **Szervizrendelések érvénytelenítése**.
 
 2.  Kattintson a **Kiválaszt** gombra.
 

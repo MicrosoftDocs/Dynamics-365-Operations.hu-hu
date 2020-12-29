@@ -19,18 +19,18 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: bdc42f9c5ece8e2c2570cadf623f52648b7b174e
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3985791"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429679"
 ---
 # <a name="take-returned-items-through-inspection"></a>A visszaadott cikkek vizsgálatának végigvitele 
 
 [!include [banner](../includes/banner.md)]
 
 
-1.  Kattintson ide: **Készletkezelés** \> **Időszakos** \> **Minőségkezelés** \> **Karanténutasítások** .
+1.  Kattintson ide: **Készletkezelés** \> **Időszakos** \> **Minőségkezelés** \> **Karanténutasítások**.
 
 2.  Keresse meg azt a rendeléssort, amely megfelel a vizsgált visszáru cikknek.
 

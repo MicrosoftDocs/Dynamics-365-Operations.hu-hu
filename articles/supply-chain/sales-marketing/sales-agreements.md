@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: b848a0450c1cce1b3c6f7954397c75a44526d2b1
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3982137"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429444"
 ---
 # <a name="sales-agreements-overview"></a>Értékesítési szerződések áttekintése
 
@@ -42,15 +42,15 @@ Az értékesítési szerződés érvényességi időszakát a szerződés **Érv
 ## <a name="commitment-types"></a>Kötelezettségtípusok
 Az értékesítési szerződés minden sora egy-egy kötelezettségvállalás bizonyos eladásra. A kötelezettségek alapvetően két csoportra oszlanak:
 
--   **Érték-kötelezettség** – a vevő elfogadja, hogy termékeket vásárol egy meghatározott összegért.
--   **Mennyiség-kötelezettség** – A vevő elfogadja, hogy meghatározott mennyiségű terméket fog vásárolni.
+-   **Érték-kötelezettség**– a vevő elfogadja, hogy termékeket vásárol egy meghatározott összegért.
+-   **Mennyiség-kötelezettség**– A vevő elfogadja, hogy meghatározott mennyiségű terméket fog vásárolni.
 
 Továbbá a szerződés kötelezheti a vevőt, hogy meghatározott terméket vagy termékeket vásároljon egy termék kategóriában. E két tényező (érték–mennyiség és meghatározott termékek–termékkategóriák), kombinálásával a kötelezettségvállalás négy típusát kapjuk meg:
 
 -   **Termékmennyiségi kötelezettség** – a vevő elfogadja, hogy meghatározott mennyiségű terméket vásárol. Azok a sorok, amelyek ezt a kötelezettség-típust használják egy elfogadott cikkszám és mennyiség által vannak meghatározva. Az **Összeg** mező nem érhető el.
--   **Termék értékére vonatkozó kötelezettség** – a vevő elfogadja, hogy meghatározott termékeket vásárol meghatározott összegért. Azok a sorok, amelyek ezt a kötelezettség-típust használják egy elfogadott cikkszám és összeg által vannak meghatározva. A **Mennyiség** és az **Egység** mezők nem érhetők el.
--   **Termékkategória értékére vonatkozó kötelezettség** – a vevő elfogadja, hogy egy meghatározott értékesítési kategóriából vásárol termékeket egy meghatározott összegért. Azok a sorok, amelyek ezt a kötelezettség-típust használják egy az értékesítési kategóriák hierarchiájában szereplő értékesítési kategória és egy összeg által vannak meghatározva. A **Mennyiség** és az **Egység** mezők nem érhetők el.
--   **Érték-kötelezettség** – a vevő elfogadja, hogy bármely terméket, vagy termékeket vásárol bármely beszerzési kategóriában egy meghatározott összegért. A **Mennyiség** és az **Egység** mezők nem érhetők el.
+-   **Termék értékére vonatkozó kötelezettség**– a vevő elfogadja, hogy meghatározott termékeket vásárol meghatározott összegért. Azok a sorok, amelyek ezt a kötelezettség-típust használják egy elfogadott cikkszám és összeg által vannak meghatározva. A **Mennyiség** és az **Egység** mezők nem érhetők el.
+-   **Termékkategória értékére vonatkozó kötelezettség**– a vevő elfogadja, hogy egy meghatározott értékesítési kategóriából vásárol termékeket egy meghatározott összegért. Azok a sorok, amelyek ezt a kötelezettség-típust használják egy az értékesítési kategóriák hierarchiájában szereplő értékesítési kategória és egy összeg által vannak meghatározva. A **Mennyiség** és az **Egység** mezők nem érhetők el.
+-   **Érték-kötelezettség**– a vevő elfogadja, hogy bármely terméket, vagy termékeket vásárol bármely beszerzési kategóriában egy meghatározott összegért. A **Mennyiség** és az **Egység** mezők nem érhetők el.
 
 Ugyanazon értékesítési szerződés sorainak lehetnek különböző típusú kötelezettségvállalásai.
 

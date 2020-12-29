@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: daa36dad4009cc25b89363dcff6b4496205522e3
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3981487"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429404"
 ---
 # <a name="inventory-object-values"></a>Készletobjektum-értékek
 
@@ -32,7 +32,7 @@ ms.locfileid: "3981487"
 
 Ez a cikk tájékoztatást egy készletobjektum értékekének számításáról. 
 
-Egy új funkció, aminek a neve **Fizikai mennyiség** , lehetővé teszi, hogy lássa egy megadott készletobjektum értékét. 
+Egy új funkció, aminek a neve **Fizikai mennyiség**, lehetővé teszi, hogy lássa egy megadott készletobjektum értékét. 
 
 Egy költségobjektum annak az entitás szintnek felel meg, ahol a készletkönyvelést végzik. A költségobjektummal kapcsolatos további tudnivalókat lásd: [Költségobjektum](cost-object.md). 
 

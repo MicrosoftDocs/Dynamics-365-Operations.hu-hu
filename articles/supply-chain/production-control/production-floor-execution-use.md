@@ -16,11 +16,11 @@ ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Release 10.0.15
 ms.openlocfilehash: 40c6794fdf25da44a75aba4a502a89966c0ec4d0
-ms.sourcegitcommit: 9dd2d38e76d4d93171315ec319e6ce7d51d4e6c7
+ms.sourcegitcommit: f27f5d07c040bdca1bcd616f5d3f2320d3b3337e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 10/15/2020
-ms.locfileid: "4012479"
+ms.locfileid: "4429828"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>A termelési üzem végrehajtási felületének dolgozók általi használata
 
@@ -41,7 +41,7 @@ A témakör többi része leírja, hogy a dolgozók hogyan használják a kezel�
 
 ## <a name="all-jobs-tab"></a>Minden feladat lap
 
-A **Minden feladat** lap egy feladatlistát tartalmaz, amelyen látható az összes olyan termelési feladat, amely állapota *Nincs elindítva* , *Leállítva* , vagy *Elindítva*.
+A **Minden feladat** lap egy feladatlistát tartalmaz, amelyen látható az összes olyan termelési feladat, amely állapota *Nincs elindítva*, *Leállítva*, vagy *Elindítva*.
 
 ![Minden feladat lap](media/pfei-all-jobs-tab.png "Minden feladat lap")
 
@@ -85,13 +85,13 @@ A dolgozók bármilyen állapotú feladatot elindíthatnak. Amikor egy dolgozó 
 
 ## <a name="reporting-good-quantities"></a>Jó mennyiségek jelentése
 
-Amikor egy dolgozó befejezte vagy részben befejezte a feladatot, akkor az **Aktív feladatok** lapon kiválaszthatna az **Előrehaladás jelentése** lehetőséget, hogy jelentse a legyártott jó mennyiséget. Ezután az **Előrehaladás jelentése** párbeszédpanelen a dolgozó beírja a jó mennyiséget a numerikus billentyűzet segítségével. Alapértelmezetten a mennyiségben semmi nem látható. A mennyiség megadása után a dolgozó a feladatra vonatkozó állapotot frissítheti az alábbiak valamelyikére: *Folyamatban* , *Leállítva* vagy *Befejezve*.
+Amikor egy dolgozó befejezte vagy részben befejezte a feladatot, akkor az **Aktív feladatok** lapon kiválaszthatna az **Előrehaladás jelentése** lehetőséget, hogy jelentse a legyártott jó mennyiséget. Ezután az **Előrehaladás jelentése** párbeszédpanelen a dolgozó beírja a jó mennyiséget a numerikus billentyűzet segítségével. Alapértelmezetten a mennyiségben semmi nem látható. A mennyiség megadása után a dolgozó a feladatra vonatkozó állapotot frissítheti az alábbiak valamelyikére: *Folyamatban*, *Leállítva* vagy *Befejezve*.
 
 ![Az Előrehaladás jelentése párbeszédpanel](media/pfei-report-progress-dialog.png "Az Előrehaladás jelentése párbeszédpanel")
 
 ## <a name="reporting-scrap"></a>Selejt jelentése
 
-Amikor egy dolgozó befejezte vagy részben befejezte a feladatot, akkor az **Aktív feladatok** lapon kiválaszthatna a **Selejtek jelentése** lehetőséget, hogy jelentse a legyártott leselejtezett mennyiséget. Ezután a **Selejtek jelentése** párbeszédpanelen a dolgozó beírja a leselejtezett mennyiséget a numerikus billentyűzet segítségével. A dolgozó az okot ( *Semmilyen* , *Gép* , *Kezelő* vagy *Anyag* ) is kiválasztja.
+Amikor egy dolgozó befejezte vagy részben befejezte a feladatot, akkor az **Aktív feladatok** lapon kiválaszthatna a **Selejtek jelentése** lehetőséget, hogy jelentse a legyártott leselejtezett mennyiséget. Ezután a **Selejtek jelentése** párbeszédpanelen a dolgozó beírja a leselejtezett mennyiséget a numerikus billentyűzet segítségével. A dolgozó az okot (*Semmilyen*, *Gép*, *Kezelő* vagy *Anyag*) is kiválasztja.
 
 ![A Selejtek jelentése párbeszédpanel](media/pfei-report-scrap-dialog.png "A Selejtek jelentése párbeszédpanel")
 

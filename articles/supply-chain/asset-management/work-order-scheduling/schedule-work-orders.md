@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: 095ff2697a7cc8486afc6e77fd7d06f761e74e75
-ms.sourcegitcommit: c986d5234b81d31cc6d054298be6f6ec92c1754c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3888905"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429621"
 ---
 # <a name="schedule-work-orders"></a>Munkarendelések ütemezése
 
@@ -88,7 +88,7 @@ A lenti példákban a kritikussági pontszám „2”, a szolgáltatási szint p
 | WO-00010817   | Mától két napra   | 2                      | 20              | (-2 \* 10) + (2 \* 2) + 5 / 20     | \- 15.75   |
 | WO-00010818   | Mától két napra   | 3                      | 5               | (-2 \* 10) + (2 \* 3) + 5 / 5      | \- 13      |
 
-A munkarendeléseket a következő sorrendben ütemezi a program: WO-000108**16**, WO-000108**18**, WO-000108**17**.
+A munkarendeléseket a következő sorrendben ütemezi a program: WO-000108 **16**, WO-000108 **18**, WO-000108 **17**.
 
 **2. példa:**
 
@@ -98,7 +98,7 @@ A munkarendeléseket a következő sorrendben ütemezi a program: WO-000108**16*
 | WO-00010817   | Mától két napra   | 2                      | 20                  | (-2 \* 10) + (2 \* 2) + 100 / 20 | \- 11    |
 | WO-00010818   | Mától két napra   | 3                      | 5                   | (-2 \* 10) + (2 \* 3) + 100 / 5  | 6        |
 
-Ha a szolgáltatási szint pontszáma „100”-ra nő „5” helyett, akkor az ütemezési sorrend a következő lesz: WO-000108**18**, WO-000108**16**, WO-000108**17**.
+Ha a szolgáltatási szint pontszáma „100”-ra nő „5” helyett, akkor az ütemezési sorrend a következő lesz: WO-000108 **18**, WO-000108 **16**, WO-000108 **17**.
 
 A munkarendeléseken dolgozó karbantartási munkatársak meghatározásával kapcsolatos besorolási pontszámok számokként vannak beállítva, amelyeket a rendszer hozzáad az egyes karbantartási dolgozók számításaihoz a munkarendelés-ütemezés során. A legmagasabb pontszámmal rendelkező karbantartási dolgozó lesz kiválasztva a munkarendeléshez. A karbantartási dolgozók pontszámainak rövid leírása:
 

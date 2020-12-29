@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: e451b419da59817ccf397fbb231a1cd112fd45ca
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018445"
+ms.locfileid: "4429950"
 ---
 # <a name="collaborate-with-vendors-by-using-the-vendor-portal"></a>Együttműködés a szállítókkal a Szállítói portálon keresztül
 
@@ -38,7 +38,7 @@ A Szállítói portál olyan szállítók számára készült, akik nem rendelke
 A folyamat konfigurálható, így a szállítótól érkező visszaigazolás automatikusan megerősíti a rendelés. Ez azt jelenti, hogy a követésre szükség van időnként, a rendelés elutasítása esetén, vagy ha szállító visszaigazolás választ regisztrált, de a beszerzési rendelés állapota nem módosul **Megerősítve** állapotra a visszaigazolás folyamat hibája miatt.
 
 ## <a name="po-confirmation-and-rejection"></a>Beszerzési rendelés visszaigazolása és visszautasítása
-A beszerzési rendelések Dynamics AX-ben készülnek. Ha rendelkezik egy olyan beszerzési rendeléssel, aminek az állapota **Jóváhagyva** , visszaigazolási kérés generálásával elküldheti a szállítónak. Ha fel szeretné hívni a szállító figyelmét az új beszerzési rendelésre, elküldheti azt egy e-mailben is a nyomtatáskezelő rendszer segítségével. A beszerzési rendelés megjelenik a Szállítói portálon és a szállító megerősítheti vagy elutasíthatja azt. A szállító hozzászólások hozzáadásával oszthat meg olyan információkat, mint a beszerzési rendelés módosítása.  
+A beszerzési rendelések Dynamics AX-ben készülnek. Ha rendelkezik egy olyan beszerzési rendeléssel, aminek az állapota **Jóváhagyva**, visszaigazolási kérés generálásával elküldheti a szállítónak. Ha fel szeretné hívni a szállító figyelmét az új beszerzési rendelésre, elküldheti azt egy e-mailben is a nyomtatáskezelő rendszer segítségével. A beszerzési rendelés megjelenik a Szállítói portálon és a szállító megerősítheti vagy elutasíthatja azt. A szállító hozzászólások hozzáadásával oszthat meg olyan információkat, mint a beszerzési rendelés módosítása.  
 
 A szállító láthatja a rendeléssorokat a Szállítói portálon. Ezek a sorok olyan információkat tartalmaznak, mint a külső termékszám, dimenziók, az árral kapcsolaton információk, szállítási dátum és szállítási cím. A szállítók létrehozhatnak egy jelentést, hogy lássák a beszerzési rendeléseket, és ezen szerepel a teljes ár is. A szállítóhoz kapcsolódó költségek akkor jelennek meg, ha a szállító rákattint a **Költségek** gombra a fejlécen vagy a soroknál. A szállítók importálhatják a beszerzési rendelésen szereplő adatokat a saját rendszerükbe az **Exportálás Excelbe** funkciókat segítségével.  
 
@@ -74,7 +74,7 @@ Azok a rendelések, amelyeket válaszért küldtek a szállítóknak, és **Kül
 
 A szállítóknak nem kell jóváhagyniuk a beszerzési rendelést a Szállítói portálon. Küldhetnek email üzenetet, illetve egyéb csatornákon keresztül is kommunikálhatják a beszerzési rendelés elfogadását. Ezután a rendelést manuálisan is jóváhagyhatja a Dynamics AX rendszerben. Ebben az esetben egy figyelmeztetést fog kapni, ami jelzi, hogy a rendelés jóvá lesz hagyva annak ellenére is, hogy nincs válasz a szállítótól. A beszerzési rendelés ezután megjelenik a jóváhagyási előzményekben a Szállítói portálon, úgy, mint egy megnyitott rendelés amelyre nem érkezett válasz. Ezenkívül a szállító többé nem tudja majd se elfogadni, se visszautasítani a beszerzési rendelést.  
 
-**Megjegyzés** : A Dynamics AX rendszerben mindig a beszerzési rendelés legutolsó verziója érhető el a további folyamatok számára, még akkor is, ha ez a verzió nincs még regisztrálva.
+**Megjegyzés**: A Dynamics AX rendszerben mindig a beszerzési rendelés legutolsó verziója érhető el a további folyamatok számára, még akkor is, ha ez a verzió nincs még regisztrálva.
 
 ### <a name="change-management"></a>Változáskezelés
 

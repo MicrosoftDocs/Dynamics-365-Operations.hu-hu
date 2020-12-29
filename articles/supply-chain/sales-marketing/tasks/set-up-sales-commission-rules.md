@@ -17,11 +17,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 2b1ea016817462269a13e450c8c7576546c7f0eb
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3984202"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429443"
 ---
 # <a name="set-up-sales-commission-rules"></a>Értékesítési jutalékok szabályainak beállítása
 
@@ -31,13 +31,13 @@ Ez az eljárás bemutatja, hogyan állíthatja be és engedélyezheti az érték
 
 
 ## <a name="set-up-commission-groups-and-commission-rates"></a>Jutalékcsoportok és jutalékarányok beállítása
-1. Lépjen a következőhöz: **Navigációs ablaktábla > Modulok > Értékesítés és marketing > Jutalékok > Vevői csoportok jutalékhoz** .
+1. Lépjen a következőhöz: **Navigációs ablaktábla > Modulok > Értékesítés és marketing > Jutalékok > Vevői csoportok jutalékhoz**.
 2. Válassza az **Új** lehetőséget.
 3. A **Csoport** mezőben adjon meg egy értéket.
 4. Írjon be egy értéket a **Név** mezőbe.
 5. Válassza a **Mentés** lehetőséget.
 6. Zárja be a lapot.
-7. Lépjen a következőhöz: **Navigációs ablaktábla > Modulok > Értékesítés és marketing > Jutalékok > Cikkcsoportok** .
+7. Lépjen a következőhöz: **Navigációs ablaktábla > Modulok > Értékesítés és marketing > Jutalékok > Cikkcsoportok**.
 8. Válassza az **Új** lehetőséget.
 9. A **Csoport** mezőben adjon meg egy értéket.
 10. Írjon be egy értéket a **Név** mezőbe.
@@ -53,7 +53,7 @@ Ez az eljárás bemutatja, hogyan állíthatja be és engedélyezheti az érték
 18. Állítsa a **Jutalékfelosztás** értékét „50”-re.
 19. Kattintson az **Új** elemre.
 20. A **Név** mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
-21. Rekordok kereséséhez használja a **Gyorsszűrőt** . Például szűkítsen a „Név” mezővel a „Susan Burk” szót beírva.
+21. Rekordok kereséséhez használja a **Gyorsszűrőt**. Például szűkítsen a „Név” mezővel a „Susan Burk” szót beírva.
 22. Kattintson a **Kiválasztás** lehetőségre.
 23. Állítsa a **Jutalékfelosztás** értékét „50”-re.
 24. Kattintson a **Mentés** gombra.
@@ -73,7 +73,7 @@ Ez az eljárás bemutatja, hogyan állíthatja be és engedélyezheti az érték
 36. Kattintson a **Mentés** gombra.
 
 ## <a name="setting-up-commission-posting"></a>Jutalékfeladás beállítása
-1. Lépjen a következőhöz: **Navigációs ablaktábla > Értékesítés és marketing > Jutalékok > Jutalékfeladás** . A jutalékdíjak kifizethetőek az alkalmazottaknak, ezért be kell azokat állítani, a megfelelő pénzügyi feladások biztosítása érdekében, a **Főkönyv** megfelelő számláira. Ezt a **Jutalékfeladás** lapon lehet intézni. Ellenőrizze a beállítást, amely az aktuális vállalathoz érhető el. A jutalék összegét általában egy külön költség számlára adja fel, és egy kijelölt fizethető számlával ellenszámlázott. Ha nem rendelkezik beállított jutalékfeladási szabályokkal, a rendszer nem tudja befejezni a jogosult jutalékokkal rendelkező értékesítési rendelés számlázását.  
+1. Lépjen a következőhöz: **Navigációs ablaktábla > Értékesítés és marketing > Jutalékok > Jutalékfeladás**. A jutalékdíjak kifizethetőek az alkalmazottaknak, ezért be kell azokat állítani, a megfelelő pénzügyi feladások biztosítása érdekében, a **Főkönyv** megfelelő számláira. Ezt a **Jutalékfeladás** lapon lehet intézni. Ellenőrizze a beállítást, amely az aktuális vállalathoz érhető el. A jutalék összegét általában egy külön költség számlára adja fel, és egy kijelölt fizethető számlával ellenszámlázott. Ha nem rendelkezik beállított jutalékfeladási szabályokkal, a rendszer nem tudja befejezni a jogosult jutalékokkal rendelkező értékesítési rendelés számlázását.  
 2. Zárja be a lapot.
 
 ## <a name="assign-a-commission-group-to-a-customer-and-a-product"></a>Jutalékcsoport vevőhöz és termékhez rendelése.
@@ -87,8 +87,8 @@ Ez az eljárás bemutatja, hogyan állíthatja be és engedélyezheti az érték
 8. Az **Értékesítési csoport** mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
 9. Keresse meg és jelölje ki a kívánt rekordot a listán.
 10. Kattintson a **Mentés** gombra.
-11. Kattintson ide: **Navigációs ablaktábla > Modulok > Termékinformációk kezelése > Termékek > Kiadott termékek** .
-12. Rekordok kereséséhez használja a **Szűrőt** . Például szűkítsen a Cikkszám mezővel a „T0020” értéket beírva.
+11. Kattintson ide: **Navigációs ablaktábla > Modulok > Termékinformációk kezelése > Termékek > Kiadott termékek**.
+12. Rekordok kereséséhez használja a **Szűrőt**. Például szűkítsen a Cikkszám mezővel a „T0020” értéket beírva.
 13. A listában kattintson a kijelölt sorban lévő hivatkozásra.
 14. Kattintson a **Szerkesztés** lehetőségre.
 15. Bontsa ki a **Értékesítés** szakaszt.

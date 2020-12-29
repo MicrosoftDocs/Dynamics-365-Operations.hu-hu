@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 1322d43d536bf7ff4c40fcdecebbd95a46f70d2d
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3981584"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429498"
 ---
 # <a name="fifo-with-physical-value-and-marking"></a>FIFO tényleges értékkel és jelöléssel
 
@@ -65,7 +65,7 @@ Az önköltség új mozgóátlaga a pénzügyi tranzakciók átlagát tükrözi.
 - Ha zárójelbe van téve egy készlettranzakció értéke, akkor az arra utal, hogy a készlettranzakció fizikailag van feladva a készletre.
 - Ha zárójelbe van téve egy készlettranzakció értéke, akkor az arra utal, hogy a készlettranzakció pénzügyileg van feladva a készletre.
 - Minden új bevételezési és kiadási tranzakciót egy új címke jelöl.
-- Mindegyik függőleges nyíl egy sorszámozott azonosítóval van ellátva, például *1a* . Az azonosítók a készlettranzakciók feladásának időbeli sorrendjét jelölik.
+- Mindegyik függőleges nyíl egy sorszámozott azonosítóval van ellátva, például *1a*. Az azonosítók a készlettranzakciók feladásának időbeli sorrendjét jelölik.
 - A készletzárásokat egy piros színű, szaggatott függőleges vonal és a *Készletzárás* felirat jelöli.
 - A készletzárás által végrehajtott elszámolásokat szaggatott piros nyilak jelölik, amelyek átlósan haladnak egy bevételezéstől egy kiadás felé.
 
@@ -97,7 +97,7 @@ Az 5b jelű tranzakciót az 1b jelű bevételezési tranzakció egyenlíti ki. E
 - Ha zárójelbe van téve egy készlettranzakció értéke, akkor az arra utal, hogy a készlettranzakció fizikailag van feladva a készletre.
 - Ha zárójelbe van téve egy készlettranzakció értéke, akkor az arra utal, hogy a készlettranzakció pénzügyileg van feladva a készletre.
 - Minden új bevételezési és kiadási tranzakciót egy új címke jelöl.
-- Mindegyik függőleges nyíl egy sorszámozott azonosítóval van ellátva, például *1a* . Az azonosítók a készlettranzakciók feladásának időbeli sorrendjét jelölik.
+- Mindegyik függőleges nyíl egy sorszámozott azonosítóval van ellátva, például *1a*. Az azonosítók a készlettranzakciók feladásának időbeli sorrendjét jelölik.
 - A készletzárásokat egy piros színű, szaggatott függőleges vonal és a *Készletzárás* felirat jelöli.
 - A készletzárás által végrehajtott elszámolásokat szaggatott piros nyilak jelölik, amelyek átlósan haladnak egy bevételezéstől egy kiadás felé.
 
@@ -129,7 +129,7 @@ Az új, mozgóátlagon alapuló önköltségi ár a pénzügyileg és fizikailag
 - Ha zárójelbe van téve egy készlettranzakció értéke, akkor az arra utal, hogy a készlettranzakció fizikailag van feladva a készletre.
 - Ha zárójelbe van téve egy készlettranzakció értéke, akkor az arra utal, hogy a készlettranzakció pénzügyileg van feladva a készletre.
 - Minden új bevételezési és kiadási tranzakciót egy új címke jelöl.
-- Mindegyik függőleges nyíl egy sorszámozott azonosítóval van ellátva, például *1a* . Az azonosítók a készlettranzakciók feladásának időbeli sorrendjét jelölik.
+- Mindegyik függőleges nyíl egy sorszámozott azonosítóval van ellátva, például *1a*. Az azonosítók a készlettranzakciók feladásának időbeli sorrendjét jelölik.
 - A készletzárásokat egy piros színű, szaggatott függőleges vonal és a *Készletzárás* felirat jelöli.
 - A készletzárás által végrehajtott elszámolásokat szaggatott piros nyilak jelölik, amelyek átlósan haladnak egy bevételezéstől egy kiadás felé.
 

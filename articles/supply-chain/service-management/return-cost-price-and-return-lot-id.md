@@ -1,6 +1,6 @@
 ---
 title: Visszáru önköltségi ára és visszáru adagazonosítója
-description: Hasznos, ha a visszáruk költsége megegyezik a termékeknek az akkori költségével, amikor a termékeket az ügyfélnek eladta. Ehhez használhatja a **Visszáru adagazonosítóját** .
+description: Hasznos, ha a visszáruk költsége megegyezik a termékeknek az akkori költségével, amikor a termékeket az ügyfélnek eladta. Ehhez használhatja a **Visszáru adagazonosítóját**.
 author: ShylaThompson
 manager: tfehr
 ms.date: 04/30/2018
@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 0d5ac48dd390e2f57a7312e3c54af53dd49fd4f7
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3975584"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429610"
 ---
 # <a name="return-cost-price-and-return-lot-id"></a>Visszáru önköltségi ára és visszáru adagazonosítója        
 
@@ -41,7 +41,7 @@ Ha nem akarja a vevő által visszaküldött termékek jelenlegi költségeit ha
 
 Alapértelmezés szerint, amikor cikkeket ad hozzá egy visszárurendeléshez, a cikkek visszakerülnek készletbe, az aktuális önköltségi áron. Ahhoz, hogy másik önköltségi árat adjon meg a visszáruhoz, kövesse az alábbi lépéseket.
 
-1.  Kattintson a következőkre: **Értékesítés és marketing** \> **Közös** \> **Visszárurendelések** \> **MInden visszárurendelés** .
+1.  Kattintson a következőkre: **Értékesítés és marketing** \> **Közös** \> **Visszárurendelések** \> **MInden visszárurendelés**.
 
 2.  A **Műveleti ablaktáblán** az **Új** csoportban kattintson a **Visszárurendelés** lehetőségre.
 
@@ -57,7 +57,7 @@ Alapértelmezés szerint, amikor cikkeket ad hozzá egy visszárurendeléshez, a
 
 Ez az elsődlegesen ajánlott módszer a visszárusorok létrehozásához. Ahhoz, hogy a terméknek az akkori költségét használja, amikor a termékeket az ügyfélnek eladta, hozzon létre egy visszárurendelést, és adjon meg egy értékesítési sort a visszáruhoz.
 
-1.  Kattintson a következőkre: **Értékesítés és marketing** \> **Közös** \> **Visszárurendelések** \> **MInden visszárurendelés** .
+1.  Kattintson a következőkre: **Értékesítés és marketing** \> **Közös** \> **Visszárurendelések** \> **MInden visszárurendelés**.
 
 2.  A **Műveleti ablaktáblán** az **Új** csoportban kattintson a **Visszárurendelés** lehetőségre.
 
@@ -101,7 +101,7 @@ Amikor egy visszárurendelési sor **Visszáruadag-azonosító** mezőjét haszn
 
 7.  Adjon fel egy szállítólevelet a visszaküldött cikkekhez.
 
-8.  Számla feladása egy visszárurendeléshez. A **Minden értékesítési rendelés** listaoldalon jelöljön ki egy értékesítési rendelést, amelynél a rendelés típusa **Visszaküldött rendelés** .
+8.  Számla feladása egy visszárurendeléshez. A **Minden értékesítési rendelés** listaoldalon jelöljön ki egy értékesítési rendelést, amelynél a rendelés típusa **Visszaküldött rendelés**.
 
 9.  Nyissa meg a **Készlettranzakciók** képernyőjét. Győződjön meg róla, hogy a visszáru költsége 7,00/darabonkénti áron van elszámolva a **Visszáru önköltségi ára** mezőben lévő értéket használva, és a **Költségösszeg** mezőben összesen 35,00 szerepel. A **Készlettranzakciók** képernyőt a **Visszárurendelések - RMA szám: %1, %2** képernyőn nyithatja meg. A **Sorok** rácsban kattintson a **Készlet** \> **Tranzakciók** lehetőségre.
 
