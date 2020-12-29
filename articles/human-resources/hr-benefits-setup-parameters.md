@@ -1,9 +1,9 @@
 ---
-title: A juttatáskezelés paramétereinek beállítása
-description: A Juttatáskezelés paramétereinek konfigurálása a Microsoft Dynamics 365 Human Resources alkalmazásban.
+title: Juttatáskezelési és alkalmazotti önkiszolgáló paraméterek beállítása minden vállalatnál
+description: Juttatáskezelési és alkalmazotti önkiszolgáló paraméterek konfigurálása a Microsoft Dynamics 365 Human Resources alkalmazásban.
 author: andreabichsel
 manager: tfehr
-ms.date: 07/16/2020
+ms.date: 12/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,22 +18,22 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: cb9dd6eb8ef840dab54eabab8526200a3a8e21f0
-ms.sourcegitcommit: e100c1c7c8dcdacf066defc206dd2f44b8ce6100
+ms.openlocfilehash: b50c4f71789c34f08ce810312f3c3198303b031e
+ms.sourcegitcommit: fd097f6f76f0d8428038fa3655b3188bf093b517
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "4057028"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4692697"
 ---
-# <a name="set-benefits-management-parameters"></a>Juttatáskezelés paramétereinek beállítása
+# <a name="set-benefits-management-and-employee-self-service-parameters-for-all-companies"></a>Juttatáskezelési és alkalmazotti önkiszolgáló paraméterek beállítása minden vállalatnál
 
-Mielőtt beállítaná a szabadságterveket a Microsoft Dynamics 365 Human Resources alkalmazásban, konfigurálnia kell a Juttatáskezelés paramétereit. Ezek a paraméterek az alapértelmezett értékeket, okkódokat és egyéb beállításokat határozzák meg.
+Mielőtt beállítaná a juttatásterveket a Microsoft Dynamics 365 Human Resources alkalmazásban, konfigurálnia kell a Juttatáskezelés paramétereit. Ezek a paraméterek az alapértelmezett értékeket, okkódokat és egyéb beállításokat határozzák meg. 
 
 ## <a name="configure-general-parameters"></a>Általános paraméterek konfigurálása
 
 1. A **Juttatások kezelése** munkaterület **Beállítás** részén válassza az **Emberi erőforrások megosztott paraméterei** elemet.
 
-2. Az **Általános** lapon adja meg a megfelelő értékeket a következő mezőkben:
+2. A **Juttatások kezelése** lapon adja meg a megfelelő értékeket az alábbi mezőkben:
 
    | Mező | Leírás |
    | --- | --- |
@@ -45,10 +45,12 @@ Mielőtt beállítaná a szabadságterveket a Microsoft Dynamics 365 Human Resou
    | **Díjváltozás okkódja** | Az alkalmazotti juttatási konstrukciónak az árfolyam-módosítási frissítési folyamat során történő érvénytelenítése és újbóli megnyitása alkalmával használandó okkód. Azt jelzi, hogy az árfolyam-módosítási frissítési folyamat mely rekordokat módosította. |
    | **Juttatások éves fizetése** | Lehetővé teszi az alkalmazottakra vonatkozó **Juttatások évi fizetési** összegének beállítását. Az emberi erőforrások a fix kompenzációs éves összeg helyett a fedezeti összegek meghatározásakor a **Juttatások évi fizetésének** összegét fogják használni. |
    | **Új dolgozó jogosult** | Megadja, hogy az új dolgozók jogosultak-e. |
-   | **Új dolgozó regisztrációs időszaka** | Az az időszak, amikor az új dolgozói regisztráció engedélyezve van.</br></br>**Megjegyzés** : Ez a beállítás felülbírál minden új dolgozói regisztrációs időszakot, amelyet a konstrukció jogosultsági szabályai között beállított. |
+   | **Új dolgozó regisztrációs időszaka** | Az az időszak, amikor az új dolgozói regisztráció engedélyezve van.</br></br>**Megjegyzés**: Ez a beállítás felülbírál minden új dolgozói regisztrációs időszakot, amelyet a konstrukció jogosultsági szabályai között beállított. |
    | **Alapértelmezett fizetési gyakoriság** | Az új dolgozók hozzáadásakor használt alapértelmezett fizetési gyakoriság. |
    | **Életesemények engedélyezve** | Élettartam-események engedélyezése. |
    | **Korábbi juttatási űrlapok elrejtése** | Lehetővé teszi a korábbi juttatási űrlapok elrejtését. |
+   | **Juttatás ellenőrzése** | Az önkiszolgáló juttatásfizetés során használandó ellenőrzési szöveg. |
+   | **Kijelölt személyek automatikus kiválasztása** | Megadja, hogy a program automatikusan kiválassza-e a függő feleket és a kedvezményezetteket a konstrukció opcióira való jogosultságuk alapján. |
 
 3. Válassza a **Mentés** lehetőséget.
 
@@ -64,3 +66,5 @@ Mielőtt beállítaná a szabadságterveket a Microsoft Dynamics 365 Human Resou
    | **Kijelölt személyek automatikus kiválasztása** | Megadja, hogy a program automatikusan kiválassza-e a függő feleket és a kedvezményezetteket a konstrukció opcióira való jogosultságuk alapján. |
 
 3. Válassza a **Mentés** lehetőséget.
+
+

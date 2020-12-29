@@ -1,5 +1,5 @@
 ---
-title: A Dynamics 365 Supply Chain Management 10.0.15 (2021. január) előzetes verziója
+title: Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.15 szolgáltatásban (2021. január)
 description: Ez a témakör a Dynamics 365 Supply Chain Management 10.0.15 új vagy módosított szolgáltatásait írja le.
 author: kamaybac
 manager: tfehr
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 0b8e69261563f61de022a626dd12d15d81535392
-ms.sourcegitcommit: 9dd2d38e76d4d93171315ec319e6ce7d51d4e6c7
+ms.openlocfilehash: 02f343c5351168375eca38893b9d8eef4549dc5a
+ms.sourcegitcommit: 0eb33909a419d526eb84b4e4b64d3595d01731ef
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "4012275"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4700957"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10015-january-2021"></a>A Dynamics 365 Supply Chain Management 10.0.15 (2021. január) előzetes verziója
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10015-january-2021"></a>Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.15 szolgáltatásban (2021. január)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-Ez a témakör a Microsoft Dynamics 365 Supply Chain Management 10.0.15 előzetes kiadásának új vagy módosított szolgáltatásait írja le. Ennek a verziónak 10.0.644 a buildszáma, és a következő módon érhető el:
+Ez a témakör a Microsoft Dynamics 365 Supply Chain Management 10.0.15 változatának új vagy módosított szolgáltatásait írja le. Ennek a verziónak 10.0.644 a buildszáma, és a következő módon érhető el:
 
 - **A kiadás előzetes verziója** 2020. október
 - **A kiadás általános elérhetővé tétele (saját frissítés):** 2020. november
@@ -39,19 +38,23 @@ Ez a témakör a Microsoft Dynamics 365 Supply Chain Management 10.0.15 előzete
 
 Ez a kiadás a következő funkciókat tartalmazza: A felsorolt szolgáltatások egy része továbbra is előnézeti módban van, mások azonban már általánosan elérhetők. Kövesse a [kiadási tervet](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/planned-features) az egyes funkciók hivatalos kiadási dátumainak megtekintéséhez.
 
-- Felhőalapú és peremhálózat-lépték szerinti egységkezelés a gyártás és raktári végrehajtás munkaterheléseivel<!-- <br> - For more information, see [Cloud and edge scale units for manufacturing and warehouse management workloads](../cloud-edge/cloud-edge-landing-page.md).-->
+- Felhőalapú és peremhálózat-lépték szerinti egységkezelés a gyártás és raktári végrehajtás munkaterheléseivel<br> - További információt a [Felhőalapú és peremhálózat-lépték szerinti egységkezelés a gyártás és raktári végrehajtás munkaterheléseivel](../cloud-edge/cloud-edge-landing-page.md) talál.
 
 - [Átmozgatási rendelések létrehozása és feldolgozása a raktári alkalmazásból](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/ad-hoc-transfer-order-creation-warehousing-mobile-app)<br> - További információért lásd: [Átmozgatási rendelések létrehozása raktári alkalmazásból](../warehousing/create-transfer-order-from-warehouse-app.md).
 
 - [Alapértelmezett ajánlatkérő-válaszmezők a szállítók ajánlataihoz](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/default-rfq-reply-fields-for-vendor-bidding)<br> - További információkért lásd: [Ajánlatkérések (RFQ-k) áttekintése](../procurement/request-quotations.md).
 
-- [Mérnöki változtatások kezelése bővítmény a következőhöz: Dynamics 365 Supply Chain Management](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/engineering-change-management)<!-- <br> - For more information, see [Engineering change management overview](../engineering-change-management/product-engineering-overview.md).-->
+- [Mérnöki változtatások kezelése bővítmény a következőhöz: Dynamics 365 Supply Chain Management](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/engineering-change-management)<br> - További tájékoztatást a [Mérnöki változtatáskezelés – áttekintés](../engineering-change-management/product-engineering-overview.md) részben talál.
 
 - [Útmutatók a vegyes valósághoz a gyártásban](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/mixed-reality-guides-manufacturing)<br> - További tudnivalókért lásd: [Vegyes valóságot alkalmazó útmutatók biztosítása a termelésben dolgozók számára](../production-control/instruction-guides-in-production-overview.md).
 
 - [Új felhasználói élmény a termelő üzemben](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/mes-terminal-enhancements-discrete-manufacturing)<br> - További tájékoztatás: [A termelési üzem végrehajtási felületének dolgozók általi használata](../production-control/production-floor-execution-use.md).
 
 - [Raktári alkalmazás eseményeinek feldolgozása](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/process-warehouse-app-events)<br> - A további tudnivalókat lásd: [Raktári alkalmazás eseményeinek feldolgozása](../warehousing/warehouse-app-events.md).
+
+- [Mentett nézetek a Kiadott termékek laphoz](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/saved-views-released-products-page)<br> - További információ: [Mentett nézetek](../../fin-ops-core/fin-ops/get-started/saved-views.md).
+
+- USMCA-eredettanúsítvány dokumentuma<br> - További tájékoztatást az [USMCA eredettanúsítvány](../transportation/usmca-certification-of-origin.md) részben talál.
 
 Ezen szolgáltatások többségét a használat előtt engedélyezni kell a [Funkciók kezelése](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) alatt.
 
