@@ -18,11 +18,11 @@ ms.author: anbichse
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
 ms.openlocfilehash: 8275a8a7c68fa13d6b9880c4c411deaa2dcbb998
-ms.sourcegitcommit: 54baab2a04e5c534fc2d1fd67b67e23a152d4e57
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3017873"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4461359"
 ---
 # <a name="embed-power-apps-apps-in-dynamics-365-human-resources"></a>Power Apps alkalmazások beágyazása a Dynamics 365 Human Resources megoldásba
 

@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-06-21
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 071aa79ea75e9a94187dd74dabab940e2cce0f92
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 6175061456a03228043ea13767845cf4b54d6b2e
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551956"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4461447"
 ---
-# <a name="update-onboarding-guides-in-dynamics-365-talent---onboard"></a>Felvételi útmutatók frissítése a Dynamics 365 Talent – Onboard szolgáltatásban
+# <a name="update-onboarding-guides"></a>Felvételi útmutatók frissítése
 
 [!include [banner](includes/banner.md)]
 
@@ -38,7 +38,7 @@ Ha módosítania kell a felvételi útmutatókat a Microsoft Dynamics 365 Talent
 2. Jelölje ki a szerkeszteni kívánt útmutatót.
 3. Végezze el az összes kívánt változtatást, majd válassza a **Mentés** gombra (a lemez szimbólumra).
 
-    ![[A felvételi útmutató módosításainak mentéése](./media/onboard-save.png)](./media/onboard-save.png)
+    ![[Az előkészítési útmutató változásainak mentése](./media/onboard-save.png)](./media/onboard-save.png)
 
 Az Onboard automatikusan e-mailt küld az újonnan felvett személynek, amelyben bemutatja a változtatásokat. Az egyszerű azonosítás érdekében egy piros **Új** címke jelenik meg minden egyes változtatás mellett.
 

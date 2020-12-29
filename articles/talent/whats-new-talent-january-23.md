@@ -19,11 +19,11 @@ ms.author: dkrame
 ms.search.validFrom: 2019-01-23
 ms.dyn365.ops.version: Talent
 ms.openlocfilehash: f97462f088fc1a3cb94f2a34204fc09f1cd66fb0
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2899128"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4461348"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent---core-hr-january-23-2019"></a>Új vagy módosult elemek a Dynamics 365 Talent – Core HR szolgáltatásban (2019. január 23.)
 
@@ -51,5 +51,5 @@ Egy beosztás feladatának módosításakor feladat mezők alapértelmezettek le
 ### <a name="probation-period-and-calendar-are-not-displayed-for-future-hired-employees"></a>Próbaidőszak és a naptár jövőben felvett alkalmazottak számára nem láthatók.
 Ezzel a módosítással a **Próbaidő** és a **Naptár** mezők hozzá lettek adva a **Változások kezelése** oldalra jövőbeni és korábbi alkalmazottak adatbevitelének engedélyezéséhez.
 
-### <a name="platform-update-23-for-finance-and-operations"></a>Platform update 23 a Finance and Operations szolgáltatáshoz
+### <a name="platform-update-23-for-finance-and-operations"></a>A Finance and Operations 23-es platformfrissítése
 Kisebb hibajavítások a Finance and Operations 23-as platformfrissítés részeként. További tudnivalókért lásd: [Újdonságok és változások a Dynamics 365 Finance and Operations 23-as platformfrissítésében (2019. január)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-23). 

@@ -17,11 +17,11 @@ ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
 ms.openlocfilehash: 474c7cc82aaccf6b3bcfb3bbe879725497961c43
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897143"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4461448"
 ---
 # <a name="share-content-with-other-contributors"></a>Osszon meg tartalmakat más közreműködőkkel
 
@@ -51,7 +51,7 @@ A Microsoft Dynamics 365 Talent: Onboard segítségével megoszthatja a bevezet�
 
     [![Osszon meg sablonokat más közreműködőkkel](./media/onboard-share-template.png)](./media/onboard-share-template.png)
 
-3. Ha a **Címzett** területen a címzetteknek képesnek kell lennie a sablon felülvizsgálatára, megadhatja az **Engedélyezi ezen személyek számára a szerkesztést?** pontnál a **Be** lehetőséget. Ha a címzetteket e-mailben kell értesíteni arról, hogy a sablont már megosztotta velük **, állítsa az e-mail küldése** értesítést a **címzettek**számára lehetőségre.
+3. Ha a **Címzett** területen a címzetteknek képesnek kell lennie a sablon felülvizsgálatára, megadhatja az **Engedélyezi ezen személyek számára a szerkesztést?** pontnál a **Be** lehetőséget. Ha a címzetteket e-mailben kell értesíteni arról, hogy a sablont már megosztotta velük **, állítsa az e-mail küldése** értesítést a **címzettek** számára lehetőségre.
 
     [![Sablonhoz tartozó hozzáférés és e-mail-beállítások megadása](./media/onboard-share-template-access-and-email.png)](./media/onboard-share-template-access-and-email.png)
 

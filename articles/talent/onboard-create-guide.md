@@ -17,11 +17,11 @@ ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
 ms.openlocfilehash: 2371d86165390503312c2848842acf4745a8ed7a
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2898248"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4461377"
 ---
 # <a name="create-and-send-an-onboarding-guide"></a>Felvételi útmutató létrehozása és küldése
 
@@ -34,7 +34,7 @@ Miután létrehozta a felvételi útmutatót, elküldheti azt egy újonnan felve
 ## <a name="create-an-onboarding-guide-from-a-template-and-send-it-to-a-single-new-hire"></a>Felvételi útmutató létrehozása sablonból és küldés egyetlen újonnan felvett munkatársnak
 
 1. A bal oldali menüben válassza a **Sablonok** lehetőséget.
-2. A **Saját sablonok**területen válassza ki azt a sablont, amelyet be szeretne állítani az újonnan felvett munkatársnak a felvételi útmutatóként.
+2. A **Saját sablonok** területen válassza ki azt a sablont, amelyet be szeretne állítani az újonnan felvett munkatársnak a felvételi útmutatóként.
 3. Igény szerint szerkessze a sablont. Ne felejtse el rendszeresen elmenteni a munkát.
 4. Ha befejezte a sablon szerkesztését, válassza az **Útmutatólétrehozása** parancsot.
 
@@ -58,7 +58,7 @@ Miután létrehozta a felvételi útmutatót, elküldheti azt egy újonnan felve
 Az Onboard lehetővé teszi, hogy egyszerre több újonnan felvett munkatársnak küldjön felvételi útmutatót.
 
 1. A bal oldali menüben válassza a **Sablonok** lehetőséget.
-2. A **Saját sablonok**területen válassza ki azt a sablont, amelyet be szeretne állítani az újonnan felvett munkatársaknak a felvételi útmutatóként.
+2. A **Saját sablonok** területen válassza ki azt a sablont, amelyet be szeretne állítani az újonnan felvett munkatársaknak a felvételi útmutatóként.
 3. Igény szerint szerkessze a sablont. Ne felejtse el rendszeresen elmenteni a munkát.
 4. Ha befejezte a sablon szerkesztését, válassza az **Útmutatólétrehozása** parancsot.
 5. Az **Útmutató létrehozása** ablakban válassza ki az **Egyszerre több embert kell felvennie?** lehetőséget.
@@ -66,7 +66,7 @@ Az Onboard lehetővé teszi, hogy egyszerre több újonnan felvett munkatársnak
     [![A fedélzeti útmutató létrehozása több új munkatársnak](./media/onboard-send-guide-multiple-people.png)](./media/onboard-send-guide-multiple-people.png)
 
 6. Válassza az **új felvételi sablon** lehetőséget.
-7. Az. xlsx fájl letöltését követően válassza a **Megnyitás**parancsot, adja meg az alkalmazottak adatait az Excel-munkafüzetben, majd mentse a munkafüzetet.
+7. Az. xlsx fájl letöltését követően válassza a **Megnyitás** parancsot, adja meg az alkalmazottak adatait az Excel-munkafüzetben, majd mentse a munkafüzetet.
 
     [![Az Excel-sablon letöltése a fedélzeti útmutató több új munkatársnak történő küldéséhez](./media/onboard-send-guide-download-spreadsheet.png)](./media/onboard-send-guide-download-spreadsheet.png)
 

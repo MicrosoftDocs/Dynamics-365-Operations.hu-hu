@@ -17,11 +17,11 @@ ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
 ms.openlocfilehash: 2039c09372381ef2c078e1f4d4ed8a25c22de5c7
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2814720"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4461446"
 ---
 # <a name="view-the-status-of-onboarding-employees-and-your-tasks"></a>Az alkalmazottak és a feladatok bevezetési állapotának megtekintése
 
@@ -33,12 +33,12 @@ A Microsoft Dynamics 365 Talent: Onboard segítségével megtekintheti az előre
 
 1. A bal oldali menüben válassza a **Guides** lehetőséget. Megtekintheti az összes Ön által elküldött bevezetési útmutató előrehaladásának áttekintését.
 
-    ![[A bevezetési útmutatók állapotának megtekintése](./media/onboard-guide-status.png)](./media/onboard-guide-status.png)
+    ![[Az előkészítési útmutatók állapotának megtekintése](./media/onboard-guide-status.png)](./media/onboard-guide-status.png)
 
 2. A lebontáshoz jelölje ki a megtekinteni kívánt útmutatót.
 3. Válassza ki a **Tevékenységek** lapfület annak megtekintéséhez, hogy mely tevékenységeket végezte már el az új alkalmazott.
 
-    ![[Azon tevékenységek megtekintése, melyeket az új alkalmazott befejezett](./media/onboard-status-activities.png)](./media/onboard-status-activities.png)
+    ![[Az új felvétel véglegesítéséhez kapcsolódó tevékenységek megtekintése](./media/onboard-status-activities.png)](./media/onboard-status-activities.png)
 
 ## <a name="view-onboarding-tasks-that-are-assigned-to-you"></a>Az Önhöz rendelt bevezetési feladatok megtekintése
 

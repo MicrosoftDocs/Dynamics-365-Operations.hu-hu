@@ -3,7 +3,7 @@ title: Köteg és azonosítótábla megerősítése
 description: Ez a témakör a kötegalkalmazás és az azonosítótábla-megerősítés mobileszközről való beállítását és alkalmazását mutatja be.
 author: Mirzaab
 manager: tfehr
-ms.date: 05/26/2017
+ms.date: 11/11/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,28 +17,34 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 020d33bfb7e23df7898414f5becf96d31307f2fa
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: a953b677b1188750241772d7ae966a1dba77b92e
+ms.sourcegitcommit: 9f32389715b226c11e74c53547527e0a8b51e300
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3201318"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "4514302"
 ---
 # <a name="batch-and-license-plate-confirmation"></a>Köteg és azonosítótábla megerősítése
 
 [!include [banner](../includes/banner.md)]
 
-A kötegelés megerősítésével meggyőződhet arról, hogy a helyes tételt tárolta ki a mobileszközről. A csak a fenti tételek kitárolásánál, amennyiben a fentiek kötegelése azt jelzi, hogy a köteg tartománya magasabb, mint a hely a keresési hierarchiában, így ellenőriznie kell, hogy a kitárolt köteg egyezik a munkasoron lévő köteggel. 
+A kötegelés megerősítésével meggyőződhet arról, hogy a helyes tételt tárolta ki a mobileszközről. A csak a fenti tételek kitárolásánál, amennyiben a fentiek kötegelése azt jelzi, hogy a köteg tartománya magasabb, mint a hely a keresési hierarchiában, így ellenőriznie kell, hogy a kitárolt köteg egyezik a munkasoron lévő köteggel.
 
 Az azonosítótábla megerősítésével meggyőződhet arról, hogy a helyes azonosítótáblát tárolta ki a mobileszközről. Amikor egy betervezett helyről tárol ki munkát, ellenőriznie kell, hogy a kitárolni kívánt azonosítótábla egyezik-e a munkához kapcsolódó azonosítótáblával. Ha a munka azonosítótábla leolvasásával kezdődik, akkor ezt a megerősítő lépést átugorja a rendszer.
 
 ## <a name="where-it-applies"></a>Alkalmazási kör
+
 A visszaigazolás az alábbi esetekben alkalmazandó:
 
 - A kötegelés megerősítése a fenti cikkek munkáinak kezdeti kitárolására vonatkozik.
 - Az azonosítótábla megerősítése az előkészítési helyeknél lévő kitárolásokra érvényes.
 
+> [!IMPORTANT]
+> A feltöltés nem támogatott az azonosítótábla megerősítéséhez. A feltöltési munka végrehajtásakor nem jön létre azonosítótábla-megerősítési lépés.
+
 ## <a name="set-up-batch-and-license-plate-confirmation"></a>Köteg és azonosítótábla beállításának megerősítése
-Ez a témakör a kötegalkalmazás és az azonosítótábla-megerősítés mobileszközről való beállítását és alkalmazását mutatja be.  
-1.  Lépjen be a munka-visszaigazolás beállításához a mobileszköz menüelemeitől.  
-2.  Válassza ki, hogy kötegelést vagy azonosítótábla-megerősítést szeretne végezni. Mindkét lehetőség rendelkezésre áll azoknál a munkatípus-kitárolásoknál, amelyeknél nincs engedélyezve az automatikus visszaigazolás.  
+
+Ez a témakör a kötegalkalmazás és az azonosítótábla-megerősítés mobileszközről való beállítását és alkalmazását mutatja be.
+
+1. Lépjen be a munka-visszaigazolás beállításához a mobileszköz menüelemeitől.  
+1. Válassza ki, hogy kötegelést vagy azonosítótábla-megerősítést szeretne végezni. Mindkét lehetőség rendelkezésre áll azoknál a munkatípus-kitárolásoknál, amelyeknél nincs engedélyezve az automatikus visszaigazolás.  

@@ -19,11 +19,11 @@ ms.author: anbichse
 ms.search.validFrom: 2018-01-09
 ms.dyn365.ops.version: AX 7.1.0, Talent October 2017 update
 ms.openlocfilehash: 0f4d2b8e5f78c5815c5ad7e5eae0d13ad7d15c12
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2898689"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4461356"
 ---
 # <a name="formalize-business-processes"></a>Üzleti folyamatok formalizálása
 
@@ -53,7 +53,7 @@ A feladat esedékességi dátuma az üzleti folyamat elején bevitt céldátumt�
 A komplex feladatok több lépést igényelhetnek, vagy a feladatokat végrehajtó egyéneknek további információkat kell megadniuk. Ilyen esetben a tevékenységhez lehet utasításokat adni. Az utasítások annak a személynek, aki hozzá van rendelve a feladat végrehajtásához, további információt nyújthatnak a végrehajtással kapcsolatban. Rich text formázást is adhat az utasításokhoz.
 
 ## <a name="starting-a-business-process"></a>Üzleti folyamat indítása
-Az üzleti folyamat egy üzletifolyamat-sablonban indítható el a **Folyamat indítása** lehetőség kiválasztásával. A folyamat indításakor a kijelölt, a sablonban megtalálható feladatokban meghatározott dolgozókhoz és/vagy beosztásokhoz létrejönnek a feladatok. A határidő is hozzá lesz rendelve az egyes feladatokhoz úgy, hogy a külön napokat hozzáadjuk vagy kivonjuk a céldátumból, a „Feladatok„ részben leírtak szerint). Az aktív üzleti folyamatok az **üzleti folyamatok** munkaterületen tekinthetők meg.
+Az üzleti folyamat egy üzletifolyamat-sablonban indítható el a **Folyamat indítása** lehetőség kiválasztásával. A folyamat indításakor a kijelölt, a sablonban megtalálható feladatokban meghatározott dolgozókhoz és/vagy beosztásokhoz létrejönnek a feladatok. A határidő is hozzá lesz rendelve az egyes feladatokhoz úgy, hogy a külön napokat hozzáadjuk vagy kivonjuk a céldátumból, a „Feladatok„ részben leírtak szerint. Az aktív üzleti folyamatok az **üzleti folyamatok** munkaterületen tekinthetők meg.
 
 ## <a name="employee-self-service"></a>Alkalmazotti önkiszolgáló rendszer
 A feladat kiosztása után egy alkalmazottnak, az alkalmazott megtekintheti, az összes többi hozzárendelt feladatával együtt, az **Alkalmazotti önkiszolgáló rendszer** lapon. Minden egyes hozzá rendelt üzleti folyamat feladatnál, az alkalmazott láthatja a feladat nevét és leírását, az elvégzésével kapcsolatos tudnivalókat, és a kapcsolattartó személy nevét. Az **Alkalmazotti önkiszolgáló rendszer** lapról az alkalmazott megnyithatja a kapcsolódó lapot a Microsoft Dynamics 365 megoldásban, vagy a kapcsolódó weblapot, és megjelölheti a feladatokat folyamatban lévő, törölt vagy befejeződött feladatként.

@@ -19,11 +19,11 @@ ms.author: dkrame
 ms.search.validFrom: 2019-09-17
 ms.dyn365.ops.version: Talent
 ms.openlocfilehash: b7bdbbee7468eba100dedc96b5bcee7e03f249e1
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897281"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4461392"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-september-17-2019"></a>Új vagy módosult elemek a Dynamics 365 for Talent szolgáltatásban (2019. szeptember 17.)
 
