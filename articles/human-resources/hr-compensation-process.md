@@ -18,11 +18,11 @@ ms.author: anbichse
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
 ms.openlocfilehash: 979a4f311d59cb51cdf0fc6ce85d5b3338ffa870
-ms.sourcegitcommit: 4a32634690a741535f3f4babfd753f7c227ad6fe
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "3958717"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418846"
 ---
 # <a name="process-compensation"></a>Folyamatkompenzáció
 
@@ -40,7 +40,7 @@ Az **Időpont szerinti** feldolgozási esemény dátum csak bizonyos változó k
 
 A feldolgozási esemény paramétereinek mentése után kattinthat a **Beállítás** gombra, hogy megadja a feldolgozásba bevenni kívánt konstrukciókat, valamint hogy milyen fix kompenzációs műveletet kell végrehajtani minden egyes konstrukcióhoz.
 
-Kattintson a **Hozzáadás** gombra a **Csomagok** lapon egy kompenzációs konstrukció feldolgozási eseményhez történő hozzáadása érdekében. A **Más emelés használata** , **Emelési tényező** és **Emelés leírása** oszlopok csak a változó kompenzációs konstrukciók használatosak, és nem tartoznak ebbe a cikkbe.
+Kattintson a **Hozzáadás** gombra a **Csomagok** lapon egy kompenzációs konstrukció feldolgozási eseményhez történő hozzáadása érdekében. A **Más emelés használata**, **Emelési tényező** és **Emelés leírása** oszlopok csak a változó kompenzációs konstrukciók használatosak, és nem tartoznak ebbe a cikkbe.
 
 Mentse a rekordot, majd kattintson a **Hozzáadás** gombra a **Műveletek** lapon a fix kompenzációs műveletek kijelölt konstrukcióhoz való hozzáadásához. Használja az **Ajánlás engedélyezése** lehetőséget, ha a művelethez más összeget szeretne megadni, mint a kiszámított előirányzott növekmény. Ha azt szeretné, hogy egy művelet az előző, több kompenzációs konstrukciót összekapcsoló művelet eredménye alapján legyen kiszámolva, jelölje be az **Előző eredmény használata** lehetőséget. A fix kompenzációs műveletek a kompenzációs logika olyan típusai, amelyeknek jól felismerhető neveket adhat. Fokozatos vagy széles sávú konstrukciójú terv esetén csak a következő típusú fix kompenzációs műveleteket adhatja hozzá:
 

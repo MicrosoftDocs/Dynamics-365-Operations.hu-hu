@@ -18,11 +18,11 @@ ms.author: anbichse
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: 7e2c7753da69f85307eccd22f6a315e9fd1e4bd6
-ms.sourcegitcommit: 3ae002804858f201297a729d03ec7eab8209be34
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "3628453"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418860"
 ---
 # <a name="performance-management"></a>Teljesítménykezelés
 
@@ -132,7 +132,7 @@ A dolgozói ellenőrzés munkafolyamat segítségével szabályozhatja az ellen�
 
 1.  Az értékelés az elkészültekor a **Nincs elkezdve** állapotba kerül. Az értékelést bárki szerkesztheti.
 
-2.  Miután az alkalmazott lenyomta az **Ellenőrzés megkezdése** gombot, az értékelés állapota**Folyamatban** állapotra vált. Az alkalmazott ezt követően megkezdi a tartalom hozzáadását. Ekkor a vezető már nem tekintheti meg az értékelés dokumentumát.
+2.  Miután az alkalmazott lenyomta az **Ellenőrzés megkezdése** gombot, az értékelés állapota **Folyamatban** állapotra vált. Az alkalmazott ezt követően megkezdi a tartalom hozzáadását. Ekkor a vezető már nem tekintheti meg az értékelés dokumentumát.
 
 3.  Az alkalmazott állapota az **Ellenőrzésre kész** értékre vált.
 

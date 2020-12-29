@@ -2,8 +2,8 @@
 title: Szabadság- és távollétparaméterek konfigurálása
 description: Emberi erőforrások paramétereinek meghatározása a szabadsághoz és a távolléthez a Dynamics 365 Human Resources alkalmazásban.
 author: andreabichsel
-manager: AnnBe
-ms.date: 08/20/2020
+manager: tfehr
+ms.date: 11/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 196c3901b5bc19f73b882bac7d3361e5bcc37e07
-ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
+ms.openlocfilehash: e1b2de94f9d9ac1ada16b6ef0e7628edbc9d683f
+ms.sourcegitcommit: ffb5998e611b83c2e4f98323f39e3e8f6419c652
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "3712376"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "4418939"
 ---
 # <a name="configure-leave-and-absence-parameters"></a>Szabadság- és távollétparaméterek konfigurálása
 
@@ -48,11 +48,24 @@ Mielőtt beállítaná a szabadság- és a távollétterveket a Dynamics 365 Hum
 
 7. Válassza a **Mentés** lehetőséget.
 
+>[!IMPORTANT]
+>A szabadság és a távollét megtekintése a vállalatok között jelenleg előzetes verzióban érhető el. Engedélyeznie kell azt a **Tesztkörnyezetben** a szabadság és távollét lehetőségének megjelenítéséhez. Az előzetes funkciók engedélyezésével kapcsolatos további részletekért tekintse meg a [Kezelési funkciók](hr-admin-manage-features.md) cikket.
+
+## <a name="view-and-change-human-resources-shared-parameters"></a>A Human Resources megosztott paraméterek megtekintése és módosítása
+
+1. A **Személyzetkezelés** oldalon válassza a **Hivatkozások** lapot.
+
+2. A **Beállítás** alatt válassza a **Humán erőforrás megosztott paraméterek** lehetőséget.
+
+3. Az **Előzetes hozzáférés** lapon válassza az **Igen** lehetőséget a **Vállalatközi szabadságnézet engedélyezése** elemnél, hogy a szabadság megtekinthető legyen a vállalatok között.
+
+4. Válassza a **Mentés** lehetőséget.
+
 ## <a name="view-and-change-leave-and-absence-parameters"></a>Szabadság és távollét paramétereinek megtekintése és módosítása
 
 1. A **Szabadság és távollét** oldalon válassza a **Hivatkozások** lapot.
 
-2. A **Beállítás**területen válassza a **Szabadság- és távollétparaméterek** lehetőséget.
+2. A **Beállítás** területen válassza a **Szabadság- és távollétparaméterek** lehetőséget.
 
 3. Az **Általános** lapon állítsa be a következő paramétereket:
  
@@ -70,7 +83,7 @@ Mielőtt beállítaná a szabadság- és a távollétterveket a Dynamics 365 Hum
 
 1. A **Szabadság és távollét** oldalon válassza a **Hivatkozások** lapot.
 
-2. A **Beállítás**területen válassza a **Szabadság- és távollétparaméterek** lehetőséget.
+2. A **Beállítás** területen válassza a **Szabadság- és távollétparaméterek** lehetőséget.
 
 3. A **Naptár** lapon szükség szerint módosítsa a naptár beállításait.
 

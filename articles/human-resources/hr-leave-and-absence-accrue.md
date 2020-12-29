@@ -19,11 +19,11 @@ ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 ms.openlocfilehash: 43c16c5d0de91bf1f433f4fde36e7d13775f44a0
-ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "3712164"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418908"
 ---
 # <a name="accrue-leave-and-absence-plans"></a>Szabadság- és távolléti tervek halmozódása
 
@@ -35,7 +35,7 @@ Elhatárolhatja a szabadságot és távollétet a Dynamics 365 Human Resources a
 
 2. A **Szabadság kezelése** alatt válassza a **Szabadság- és távolléti tervek elhatárolása** lehetőséget.
 
-3. Megjelenik a **Szabadság- és távolléti tervek elhatárolása** párbeszédpanel. Az **Elhatárolás kezdete**részben válassza a **Mai dátum** vagy az **Egyéni dátum** lehetőséget, és adjon meg egy egyéni dátumot.
+3. Megjelenik a **Szabadság- és távolléti tervek elhatárolása** párbeszédpanel. Az **Elhatárolás kezdete** részben válassza a **Mai dátum** vagy az **Egyéni dátum** lehetőséget, és adjon meg egy egyéni dátumot.
 
 4. Ha minden vállalatnál szeretné futtatni az elhatárolást, válassza az **Összes vállalat** lehetőséget. Ha egyetlen szabadsági tervhez szeretné feldolgozni az elhatárolást, válassza a **Nem** lehetőséget az **Összes konstrukció** alatt, majd válasszon egy **Szabadságkonstrukciót**. Ha az összes vállalatot választja, akkor nem választhat ki egyéni szabadságtervet. 
 
@@ -55,7 +55,7 @@ Elhatárolhatja a szabadságot és távollétet a Dynamics 365 Human Resources a
 
 2. Válassza a **Szabadság- és távolléti tervek elhatárolása** lehetőséget.
 
-3. Megjelenik a **Szabadság- és távolléti tervek elhatárolása** párbeszédpanel. Az **Elhatárolás kezdete**részben válassza a **Mai dátum** vagy az **Egyéni dátum** lehetőséget, és adjon meg egy egyéni dátumot.
+3. Megjelenik a **Szabadság- és távolléti tervek elhatárolása** párbeszédpanel. Az **Elhatárolás kezdete** részben válassza a **Mai dátum** vagy az **Egyéni dátum** lehetőséget, és adjon meg egy egyéni dátumot.
 
 4. Ha minden vállalatnál szeretné futtatni az elhatárolást, válassza az **Összes vállalat** lehetőséget. Ha egyetlen szabadsági tervhez szeretné feldolgozni az elhatárolást, válassza a **Nem** lehetőséget az **Összes konstrukció** alatt, majd válasszon egy **Szabadságkonstrukciót**. Ha az összes vállalatot választja, akkor nem választhat ki egyéni szabadságtervet. 
 

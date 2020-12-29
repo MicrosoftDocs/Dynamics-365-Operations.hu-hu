@@ -1,9 +1,9 @@
 ---
 title: Alkalmazotti szabadság kezelése
-description: Emberi erőforrások paramétereinek meghatározása a szabadsághoz és a távolléthez a Dynamics 365 Human Resources alkalmazásban.
+description: Alkalmazotti szabadság kezelése a Dynamics 365 Human Resources alkalmazásban.
 author: andreabichsel
-manager: AnnBe
-ms.date: 04/30/2020
+manager: tfehr
+ms.date: 11/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4c45d2c57d89929ac9c423ab58aee4cbfa213509
-ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
+ms.openlocfilehash: 627c8959b1845fbad761a85bdca7dc93bfc6a105
+ms.sourcegitcommit: ffb5998e611b83c2e4f98323f39e3e8f6419c652
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "3712129"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "4418938"
 ---
 # <a name="manage-employee-leave"></a>Alkalmazotti szabadság kezelése
 
@@ -44,6 +44,13 @@ Az alkalmazottak szabadságát szabadságtípusonként kezelheti. Ez magában fo
 6. Opcionálisan kiválaszthat egy **Dátumot**. 
 
 Az alkalmazott szabadságegyenlegének módosításakor az okkódok és a megjegyzések is megadhatók. 
+
+>[!IMPORTANT]
+>A szabadságegyenlegekkel kapcsolatos további információk megtekintése előzetes verzióban érhető el. Engedélyeznie kell azt a **Tesztkörnyezetében**. Az előzetes funkciók engedélyezésével kapcsolatos további részletekért tekintse meg a [Kezelési funkciók](hr-admin-manage-features.md) cikket.<br>
+>Ha az egérmutatót a szabadság egyenlege fölé viszi, akkor a következőket fogja látni:<br>
+>- **Elérhető** : Összesen ebben az évben – Kivett ebben az évben
+>- **Összesen ebben az évben**: Minden elhatárolás, kiigazítás és átvitel az évre
+>- **Kivett ebben az évben**: Minden jóváhagyott távollét
 
 ## <a name="see-also"></a>Lásd még
 

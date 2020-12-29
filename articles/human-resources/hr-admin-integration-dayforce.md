@@ -19,11 +19,11 @@ ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 ms.openlocfilehash: c66ec772ea66732e042f50081f04a6569852f211
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3431291"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418773"
 ---
 # <a name="configure-integration-with-dayforce"></a>A Dayforce szolgáltatással való integráció konfigurálása
 
@@ -284,7 +284,7 @@ Alkalmazottak hozzárendelhetők meghatározott bevételekhez adott fizetési gy
 - Munkavállalási engedély száma
 
 > [!NOTE]
-> A fizetési módhoz Mexikó támogatja a **Készpénzt**, **Csekket** (a vállalat fizikai csekkjét és az **Elektronikus fizetést**. Ha nincs fizetési mód van megadva, alapértelmezés szerint a **Csekk** használt.
+> A fizetési módhoz Mexikó támogatja a **Készpénzt**, **Csekket** (a vállalat fizikai csekkjét) és az **Elektronikus fizetést**. Ha nincs fizetési mód van megadva, alapértelmezés szerint a **Csekk** használt.
 
 #### <a name="employment-details"></a>Foglalkoztatás részletei
 

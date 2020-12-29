@@ -18,11 +18,11 @@ ms.author: anbichse
 ms.search.validFrom: 2020-08-07
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: a69d723b45e834b022491c8eaf2a7fb580e54f1d
-ms.sourcegitcommit: 288df4fe766536e51ca9b5306c5bb948b7772ac5
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "3688321"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418794"
 ---
 # <a name="view-and-manage-address-changes"></a>A cím változásainak megtekintése és kezelése
 
@@ -64,7 +64,7 @@ Az alkalmazottak frissíthetik a saját címüket az **Alkalmazotti önkiszolgá
 
 8. Adja meg az **Utcát**.
 
-9. Írja be a **Várost**, az **Államot**és a **Megyét**. Ezeket a mezőket a rendszer általában automatikusan beállítja az **Irányítószám** mező alapján.
+9. Írja be a **Várost**, az **Államot** és a **Megyét**. Ezeket a mezőket a rendszer általában automatikusan beállítja az **Irányítószám** mező alapján.
 
 10. Lehetőség van az **Elsődleges** mező kiválasztására, amely elsődleges címet jelez. Csak egy címet lehet elsődlegesként megjelölni. Ha egy másik cím már meg van jelölve elsődleges címként, meg kell erősítenie, hogy a megadott címet szeretné elsődlegesként használni.
 
@@ -92,7 +92,7 @@ A cím a **Személyzetkezelés** munkaterületen frissíthető. Cím létrehozá
 
 8. Adja meg az **Utcát**.
 
-9. Írja be a **Várost**, az **Államot**és a **Megyét**. Ezeket a mezőket a rendszer általában automatikusan beállítja az **Irányítószám** mező alapján.
+9. Írja be a **Várost**, az **Államot** és a **Megyét**. Ezeket a mezőket a rendszer általában automatikusan beállítja az **Irányítószám** mező alapján.
 
 10. Lehetőség van az **Elsődleges** mező kiválasztására, amely elsődleges címet jelez. Csak egy címet lehet elsődlegesként megjelölni. Ha egy másik cím már meg van jelölve elsődleges címként, meg kell erősítenie, hogy a megadott címet szeretné elsődlegesként használni.
 

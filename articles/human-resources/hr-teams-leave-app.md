@@ -3,7 +3,7 @@ title: Szabadság- és távollétkérelmek kezelése a Teams alkalmazásban
 description: Ez a témakör azt mutatja be, hogyan lehet szabadságot kérelmezni a Dynamics 365 Human Resources alkalmazásban a Microsoft Teams rendszerben.
 author: andreabichsel
 manager: AnnBe
-ms.date: 09/30/2020
+ms.date: 10/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c6856e417ee47f8f582f797c5bcedcff23a1432f
-ms.sourcegitcommit: b6ab46f6e5ce60e2c3d70a348827eaf60c84cae2
+ms.openlocfilehash: d24c257054578282f1a2eafa050094194a358aa0
+ms.sourcegitcommit: 369639cd92e03fe792ed9d61a329d842aafa052f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "3929993"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "4418936"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Szabadság- és távollétkérelmek kezelése a Teams alkalmazásban
 
 [!include [banner](includes/preview-feature.md)]
 
-A Microsoft Dynamics 365 Human Resources alkalmazás a Microsoft Teams rendszerben lehetővé teszi, hogy gyorsan kérelmezzen szabadságot, és megtekintse a szabadságegyenlegét közvetlenül a Microsoft Teams rendszerben. A robottal együttműködhet a szükséges adatok lekéréséhez és a szabadságkérelem elindításához. A **Szabadság** lapon részletesebb információk olvashatók. Ezenkívül a közelgő szabadságairól információkat küldhet az embereknek a Teamsben és a Human Resources alkalmazáson kívüli csevegőfelületeken.
+A Microsoft Dynamics 365 Human Resources alkalmazás a Microsoft Teams rendszerben lehetővé teszi, hogy gyorsan kérelmezzen szabadságot, és megtekintse a szabadságegyenlegét közvetlenül a Microsoft Teams rendszerben. A robottal együttműködhet a szükséges adatok lekéréséhez és a szabadságkérelem elindításához. A **Szabadság** lapon részletesebb információk olvashatók. A közelgő szabadságairól is információkat küldhet az embereknek a Teamsben és a Human Resources alkalmazáson kívüli csevegőfelületeken.
 
 ## <a name="install-the-app"></a>Az alkalmazás telepítése
 
@@ -164,7 +164,7 @@ Ha Ön közvetlen beosztottakkal rendelkező vezető, akkor megtekintheti a csop
 
 1. A Teamsben a Human Resources alkalmazásban válassza a **Távollét** lehetőséget.
 
-2. Válassza ki a **Csoport naptárát** .
+2. Válassza ki a **Csoport naptárát**.
 
    ![Naptár megtekintése a Human Resources Teams alkalmazásban](./media/hr-teams-leave-app-view-calendar.png)
 
@@ -182,11 +182,25 @@ Ha nem tud bejelentkezni az alkalmazásba, akkor előfordulhat, hogy a Microsoft
 
 ### <a name="error-when-approving-leave-requests-in-the-human-resources-app-in-teams"></a>Hiba történt a Teamsen belüli Human Resource alkalmazásban a szabadságkérelmek jóváhagyásakor.
 
-Ha hibaüzenetet kap, amikor megpróbálja jóváhagyni a szabadságkérelmeket a Teams alkalmazásban, hajtsa végre a következő hibaelhárítási lépéseket:
+Ha hibaüzenetet kap, amikor megpróbálja jóváhagyni a szabadságkérelmeket a Teams alkalmazásban, próbálja végrehajtani a következő hibaelhárítási lépéseket:
 
 1. Ellenőrizze, hogy a Microsoft Teamsbe való bejelentkezéshez használt fiók megegyezik-e a Dynamics 365 Human Resources eléréséhez használt fiókkal.
 
 2. Ellenőrizze, hogy Ön-e a kérelem érvényes jóváhagyója a szabadság jóváhagyására vonatkozó munkafolyamaton belüli beállítások ellenőrzésével. A szabadságkérelem munkafolyamatairól további tudnivalókért lásd: [Szabadságkérelmezési munkafolyamat létrehozása](hr-leave-and-absence-workflow.md).
+
+## <a name="known-accessibility-issues"></a>Ismert kisegítő lehetőségekkel kapcsolatos problémák
+
+A Teams Human Resources alkalmazásában a következőak adálymentességgel kapcsolatos problémák tapasztalhatók amelyeket a későbbi kiadásokban kijavítunk.
+
+| Kiadás | Megoldás vagy magyarázat |
+| --- | --- |
+| Ha az asztalon 400%-ra nagyít, a műveletgombok egy része kikerül a képből. | Ehelyett azt javasoljuk, hogy használja a nagyítót, amíg nem tudjuk támogatni ezt a nagyítási szintet. |
+| A **Szabadságolás** lapon a Narrátor egy gombműveletet jelent be, miközben elolvassa a szabadságolás rács fejlécét. | A rács fejléce és elemei év szerint vannak csoportosítva, és összecsukhatók. A Narrátor ezt végrehajtható elemként értelmezi, de valójában nem az. |
+| Ha pöccint, miközben egy előugró ablak vagy menü meg van nyitva, a Narrátor kihagyja a felugró ablak vagy a menü tartalmának olvasását. | Fedezze fel a tartalmat az ujjszkenneléssel. |
+| A **Szabadságolás** lapon egy további pöccintési kézmozdulat jelenik meg, amikor egy új kérelemben az **Okkódra** navigál. | Nincs olyan rejtett vezérlő, amelyhez a pöccintési navigáció megpróbálna eljutni. |
+| Ha a **Szabadságolás** lapon pöccint, miközben a naptár meg van nyitva, akkor a vezérlőn kívülre kerül, nem pedig egy új kérés tetejére, vagy egy kérés szerkesztése közben. | Amikor eléri az **Ugrás a mai napra** elemet, vegye úgy, hogy elért a vezérlő végére, és pöccintsen az ellenkező irányba, hogy visszakerüljön felülre. |
+| A Narrátor nem olvassa el a dátumok címkéit. | A párokban előforduló dátumok mindig **Kezdő dátum** és **Záró dátum**. |
+| A **Csevegés** lapon a fókusz visszaugrik a képernyő tetejére, amikor dátumot ad meg a kisegítő eszközt vagy a billentyűzetes navigációt használja. | Használja a Tab billentyűt addig, amíg újra el nem éri a beviteli területet. |
 
 ## <a name="privacy-notice"></a>Adatvédelmi nyilatkozat
 

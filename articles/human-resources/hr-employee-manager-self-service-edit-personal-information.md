@@ -19,11 +19,11 @@ ms.author: anbichse
 ms.search.validFrom: 2020-03-19
 ms.dyn365.ops.version: Human Resources
 ms.openlocfilehash: 0158bd4ee74e24006e338c0477ee0ac4210b1bf5
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3429359"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418776"
 ---
 # <a name="edit-personal-information"></a>Személyes információk szerkesztése
 
@@ -47,15 +47,15 @@ A globális címjegyzékben megadott paraméterek határozzák meg, hogy milyen 
 3. A cím módosításához válassza a **Címek** lapot. Az elvégzett módosítások megjelennek a **Személyzetkezelés** munkaterületen a HR figyelmeztetéséhez. 
 
     - Kattintson a **Hozzáadás** lehetőségre egy új cím hozzáadásához.
-    - Meglévő cím szerkesztéséhez jelölje ki a címet, majd válassza a **Szerkesztés**parancsot.
+    - Meglévő cím szerkesztéséhez jelölje ki a címet, majd válassza a **Szerkesztés** parancsot.
     - Egy térkép megtekintéséhez válassza a **Térkép** elemet.
     - Kapcsolattartó hozzáadásához vagy eltávolításához válassza ki a **További beállítások** lehetőséget majd a **Speciális** elemet. A **Kapcsolattartási adatok** területen válassza a **Hozzáadás** vagy az **Eltávolítás** lehetőséget, és módosítsa a mezőket, ha szükséges.
-    - Az időzóna és a hely beállításához válassza ki a **További beállítások** lehetőséget, majd válassza a **Speciális** elemet. Az **Általános**területen igény szerint szerkessze a mezőket.
+    - Az időzóna és a hely beállításához válassza ki a **További beállítások** lehetőséget, majd válassza a **Speciális** elemet. Az **Általános** területen igény szerint szerkessze a mezőket.
 
 4. A kapcsolattartási adatok módosításához válassza a **Kapcsolattartási adatok** lapot. A kapcsolattartási adatok különböző típusait adhatja meg, például a telefon, e-mail-cím és közösségi oldalra mutató hivatkozások. A kapcsolattartó adatait elsődlegesként is beállíthatja, de mindegyik típusból csak egyet állíthat be elsődlegesként. 
 
     - Kattintson a **Hozzáadás** lehetőségre egy új kapcsolattartói információ hozzáadásához. Szükség szerint szerkessze a mezőket.
-    - Meglévő cím kapcsolattartási adatok szerkesztéséhez válassza ki az elemet, majd válassza a **Szerkesztés**parancsot. Szükség szerint szerkessze a mezőket.
+    - Meglévő cím kapcsolattartási adatok szerkesztéséhez válassza ki az elemet, majd válassza a **Szerkesztés** parancsot. Szükség szerint szerkessze a mezőket.
     - Ha privátként szeretne beállítani kapcsolattartói adatokat, válassza a **Speciális** lehetőséget, majd állítsa a **Privát** kapcsolót **Igen** állásba. Válassza ki az **OK** lehetőséget.
   
 5. A személyes kapcsolattartók módosításához válassz a **Személyes kapcsolattartók** lapot. Kijelölhet vészhelyzeti kapcsolattartókat, a kedvezményezetteket és a gondozottakat. Egy kapcsolattartó lehet személy vagy szervezet. A **Juttatások kezelése** funkció személyes kapcsolattartási adatokat használ. További információ: [A személyes kapcsolattartó jogosultsági beállításainak konfigurálása](hr-benefits-setup-contact-eligibility-options.md).
@@ -70,5 +70,5 @@ A globális címjegyzékben megadott paraméterek határozzák meg, hogy milyen 
 8. Ha módosítani szeretné a Human Resources alkalmazásban a profiljához megjelenítő képet, válassza a **Kép** lapot. A szervezet beállításaitól függően előfordulhat, hogy a képek jóváhagyásra lesznek küldve.
 
     - Kép feltöltéséhez válassza az **Új kép feltöltése** lehetőséget.
-    - Kép eltávolításához jelölje ki a képet, majd válassza az **Eltávolítás**elemet.
+    - Kép eltávolításához jelölje ki a képet, majd válassza az **Eltávolítás** elemet.
 

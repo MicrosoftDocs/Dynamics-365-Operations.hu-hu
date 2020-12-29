@@ -19,11 +19,11 @@ ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 ms.openlocfilehash: 6e6ca7d04b86232ba48474fcbe288a18995661ae
-ms.sourcegitcommit: 6a89816f94c8cdcae6e56fa89843eb99c28b21fa
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "3969022"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418823"
 ---
 # <a name="configure-leave-and-absence-types"></a>Szabadság- és távolléttípusok konfigurálása
 
@@ -48,7 +48,7 @@ A Dynamics 365 Human Resources szabadságtípusai határozzák meg az alkalmazot
 
 4. Írjon be a szabadságtípus nevét a **Típus** mezőbe, válasszon egy munkafolyamatot a **Munkafolyamat-azonosító** listáról, és adja meg a leírást a **Leírás** mezőben.
 
-5. Az **Általános** lapon válassza ki a **Nincs** , az **Ütemezett** vagy a **Nem ütemezett** elemet a **Kategória** legördülő listáról.
+5. Az **Általános** lapon válassza ki a **Nincs**, az **Ütemezett** vagy a **Nem ütemezett** elemet a **Kategória** legördülő listáról.
 
 6. Válasszon bevételkódot a **Bevételkód** legördülő listáról.
 
@@ -64,15 +64,15 @@ A Dynamics 365 Human Resources szabadságtípusai határozzák meg az alkalmazot
 
 ## <a name="configure-leave-type-rules"></a>A szabadságtípus-szabályok konfigurálása
 
-1. Adja meg a szabadságtípus kerekítési beállításait. Választási lehetőségek: **Nincs** , **Fel** , **Le** és **Legközelebbi** . A szabadságtípus kerekítési pontosságát is megadhatja.
+1. Adja meg a szabadságtípus kerekítési beállításait. Választási lehetőségek: **Nincs**, **Fel**, **Le** és **Legközelebbi**. A szabadságtípus kerekítési pontosságát is megadhatja.
 
 2. Adja meg a szabadságtípus **Munkaszünet-korrekció** beállítását. Ha bejelöli ezt a lehetőséget, akkor a Human Resources szolgáltatás a munkanapra eső napok száma alapján határozza meg, hogyan kell elszámolni a szabadságtípus távolléti idejét. Ha például karácsony napja hétfőre esik, akkor a Human Resources szolgáltatás levon egy napot a szabadságtípusból a könyvelés feldolgozásakor.
 
    A szabadnapokat a munkaidőnaptárban állíthatja be. További információ: [Munkaidőnaptár létrehozása](hr-leave-and-absence-working-time-calendar.md)
    
- 3. Állítsa be a szabadság típusaként az **Átvihető szabadságtípust** . Ha ezt a lehetőséget választja, akkor az átvitt egyenlegek átkerülnek a megadott szabadságtípusba. Az átvitt szabadságtípust is figyelembe kell venni a szabadság- és a távolléti tervben. 
+ 3. Állítsa be a szabadság típusaként az **Átvihető szabadságtípust**. Ha ezt a lehetőséget választja, akkor az átvitt egyenlegek átkerülnek a megadott szabadságtípusba. Az átvitt szabadságtípust is figyelembe kell venni a szabadság- és a távolléti tervben. 
  
- 4. Adja meg a szabadságtípus **Lejárati szabályait** . Ha beállítja ezt a lehetőséget, akkor a napok vagy hónapok egységét is megadhatja, és megadhatja a lejárat időtartamát. Beállíthatja a lejárat szabályának érvényességi dátumát is. A lejárati időpontokban meglévő szabadságegyenlegeket a szabadság típusából kivonja a program, és ez a szabadságegyenlegében tükröződik. 
+ 4. Adja meg a szabadságtípus **Lejárati szabályait**. Ha beállítja ezt a lehetőséget, akkor a napok vagy hónapok egységét is megadhatja, és megadhatja a lejárat időtartamát. Beállíthatja a lejárat szabályának érvényességi dátumát is. A lejárati időpontokban meglévő szabadságegyenlegeket a szabadság típusából kivonja a program, és ez a szabadságegyenlegében tükröződik. 
  
  
 ## <a name="see-also"></a>Lásd még

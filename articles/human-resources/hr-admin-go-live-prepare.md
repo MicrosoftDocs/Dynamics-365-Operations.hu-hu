@@ -19,11 +19,11 @@ ms.author: raprofit
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
 ms.openlocfilehash: 59d7274c3b40e78209d90960c4514321b736876a
-ms.sourcegitcommit: d66fd72342931fad25a696b251c05781280d36c4
+ms.sourcegitcommit: b40d6ce45aeb07724fc41d1a41923970b007fbcf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 10/14/2020
-ms.locfileid: "4011419"
+ms.locfileid: "4418925"
 ---
 # <a name="prepare-for-human-resources-go-live"></a>Felkészülés a Human Resources éles indításra
 
@@ -57,7 +57,7 @@ Az egyes megvalósítási projektek egyik fő mérföldköve az éles környezet
 
 Annak érdekében, hogy az éles környezet élő műveletekhez való használható legyen, a Microsoft csak akkor biztosítja az éles példányt, ha a megvalósítás közeledik az **Üzemeltetés** fázishoz, miután az LCS-módszertanban szükséges tevékenységek befejeződtek. Az előfizetés környezeteiről a  [Dynamics 365 licencelési útmutatójában](https://go.microsoft.com/fwlink/?LinkId=866544) talál további információt. 
 
-Az ügyfeleknek teljesíteniük kell az LCS módszertan **Elemzés** , **Tervezés és fejlesztés** és **Tesztelés fázisát** , mielőtt elérhetővé válik a  **Konfigurálás**  gomb az éles környezet kéréséhez. Az LCS fázisának befejezéséhez először be kell fejeznie minden szükséges lépést ebben a fázisban. Ha egy fázis összes lépése befejeződött, befejezheti az egész fázist. Ha módosításokat kell végrehajtania, később bármikor újra megnyithatja a fázist. További információért tekintse át a  [Lifecycle Services (LCS) a Finance and Operations alkalmazások ügyfeleihez](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs) szolgáltatáshoz. 
+Az ügyfeleknek teljesíteniük kell az LCS módszertan **Elemzés**, **Tervezés és fejlesztés** és **Tesztelés fázisát**, mielőtt elérhetővé válik a  **Konfigurálás**  gomb az éles környezet kéréséhez. Az LCS fázisának befejezéséhez először be kell fejeznie minden szükséges lépést ebben a fázisban. Ha egy fázis összes lépése befejeződött, befejezheti az egész fázist. Ha módosításokat kell végrehajtania, később bármikor újra megnyithatja a fázist. További információért tekintse át a  [Lifecycle Services (LCS) a Finance and Operations alkalmazások ügyfeleihez](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs) szolgáltatáshoz. 
 
 A lépés befejezése folyamat két részből áll: 
 

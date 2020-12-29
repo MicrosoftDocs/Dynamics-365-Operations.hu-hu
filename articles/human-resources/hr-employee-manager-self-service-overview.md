@@ -19,11 +19,11 @@ ms.author: anbichse
 ms.search.validFrom: 2020-03-19
 ms.dyn365.ops.version: Human Resources
 ms.openlocfilehash: 116c85c53b0ec2fe1e1fd2d1fbc2738f5b6351fb
-ms.sourcegitcommit: e100c1c7c8dcdacf066defc206dd2f44b8ce6100
+ms.sourcegitcommit: 1fdca917e01470fbd5d3051adb85fd63e8624b47
 ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 10/20/2020
-ms.locfileid: "4057052"
+ms.locfileid: "4418930"
 ---
 # <a name="employee-and-manager-self-service-overview"></a>Alkalmazotti és vezetői önkiszolgálás áttekintése
 
@@ -74,13 +74,13 @@ A **Szabadságegyenlegek** kártya az összes regisztrált terv egyenlegét jele
 
 A **Feladatok** kártya a Önhöz rendelt feladatokat jeleníti meg, és Ön megtekintheti és kezelheti őket.
 
-A **Következő regisztrált tanfolyami** kártya az elkövetkező tanfolyamot jeleníti meg, amelyre Ön regisztrált. Minden nyitott tanfolyamot megtekinthet, és regisztrálhat azokra. Az összes feliratkozáshoz nyitva álló tanfolyam állapota **Elindítva** , és a kártyán az is megjelenhet, hogy az alkalmazottak számára lehetséges az önálló regisztráció. A szervezet beállításaitól függően előfordulhat, hogy a tanfolyam-regisztráció egy jóváhagyási folyamaton megy keresztül.
+A **Következő regisztrált tanfolyami** kártya az elkövetkező tanfolyamot jeleníti meg, amelyre Ön regisztrált. Minden nyitott tanfolyamot megtekinthet, és regisztrálhat azokra. Az összes feliratkozáshoz nyitva álló tanfolyam állapota **Elindítva**, és a kártyán az is megjelenhet, hogy az alkalmazottak számára lehetséges az önálló regisztráció. A szervezet beállításaitól függően előfordulhat, hogy a tanfolyam-regisztráció egy jóváhagyási folyamaton megy keresztül.
 
 A **Tanúsítványok** kártya megjeleníti a tanúsítványt és az aktuális dátumhoz legközelebbi tanúsítványlejárati-dátumot. Lehetőség van tanúsítványok frissítésére, hozzáadására vagy eltávolítására. A szervezet beállításaitól függően előfordulhat, hogy a tanúsítványfrissítések egy jóváhagyási folyamaton mennek keresztül.
 
 A **Következő ütemezett értékelés** kártya az Ön következő teljesítmény-értékelését jeleníti meg. Erről a kártyától új értékelést is lehet indítani. A felettese vagy a személyzeti munkatárs is kezdeményezheti a értékeléseket. A szervezet beállításaitól függően előfordulhat, hogy ezen a kártyán kilépő értékeléseket is megtekintheti, frissítheti és elküldhet.
 
-A céljait a **Teljesítménycélok** kártyával lehet kezelni. Ez a kártya megjeleníti az egyes állapotokhoz tartozó céljai számát ( **Nincs elindítva** , **Rendben van** és **Fejlesztésre szorul** ). Az Önhöz rendelt szerepkör-alapú biztonsági beállításoktól függően létrehozhat, frissíthet és el is távolíthat célokat. Ha szeretné, csoportokból vagy sablonokból is hozzáadhat új célokat. A vezetők és a HR az alkalmazottak nevében is létrehozhatnak célokat, és meghatározhatják, hogy milyen részletesek legyenek az egyes célok. A vezetők és az alkalmazottak együttműködhetnek a célokon, valamint módosíthatják a tevékenységeket, mértékeket és az állapotot. Mellékleteket is hozzáadhat.
+A céljait a **Teljesítménycélok** kártyával lehet kezelni. Ez a kártya megjeleníti az egyes állapotokhoz tartozó céljai számát (**Nincs elindítva**, **Rendben van** és **Fejlesztésre szorul**). Az Önhöz rendelt szerepkör-alapú biztonsági beállításoktól függően létrehozhat, frissíthet és el is távolíthat célokat. Ha szeretné, csoportokból vagy sablonokból is hozzáadhat új célokat. A vezetők és a HR az alkalmazottak nevében is létrehozhatnak célokat, és meghatározhatják, hogy milyen részletesek legyenek az egyes célok. A vezetők és az alkalmazottak együttműködhetnek a célokon, valamint módosíthatják a tevékenységeket, mértékeket és az állapotot. Mellékleteket is hozzáadhat.
 
 A **Szakértelem** kártyán tekintheti meg a meglévő szakértelmeit. Lehetőség van a szakértelem frissítésére, újak hozzáadására vagy a többé nem relevánsak eltávolítására. A szervezet beállításaitól függően előfordulhat, hogy a szakértelmeinek módosítása egy jóváhagyási folyamaton megy keresztül.
 
@@ -96,7 +96,7 @@ A **Juttatások** hivatkozással regisztrálhat a juttatásokra. A Juttatáskeze
 
 A **Teljesítmény** területen kiválaszthatja a **Teljesítménymutatóka** elemet ahol teljesítménnyel kapcsolatos naplóbejegyzéseket hozhat létre, amelyeket a teljesítménycélokhoz és -értékelésekhez is használhat. A **Visszajelzés küldése** lehetőséget választva a szervezeten belüli más alkalmazottaknak is küldhet visszajelzést. A szervezet beállításaitól függően előfordulhat, hogy e-mailek lesznek küldve a címzettnek, a feladónak és a vezetőknek. A szervezeten belül az összes alkalmazottnak lehet visszajelzést küldeni. A visszajelzések küldése nincs vállalatra korlátozva.
 
-A **Kompetenciák** területen módosíthatók a **Tanfolyamok** , **Oktatás** , **Bizalmi beosztások** és **Szakmai tapasztalatok**. A szervezet beállításaitól függően előfordulhat, hogy a kompetenciák frissítései egy jóváhagyási folyamaton mennek keresztül.
+A **Kompetenciák** területen módosíthatók a **Tanfolyamok**, **Oktatás**, **Bizalmi beosztások** és **Szakmai tapasztalatok**. A szervezet beállításaitól függően előfordulhat, hogy a kompetenciák frissítései egy jóváhagyási folyamaton mennek keresztül.
 
 A munka részletei a **Szervezetek** területen tekinthetők meg. A munka részletei között szerepel a szakértelem, a tanúsítványok és a felelősségi területek az elsődleges beosztásához. Megtekintheti az Ön által kivett kölcsönzött felszereléseket is. A szervezet beállításaitól függően előfordulhat, hogy a kölcsönzött felszerelések módosítása egy jóváhagyási folyamaton megy keresztül.
 
@@ -211,6 +211,6 @@ A vezetők a csapatuk összes célját láthatják a **Csapat teljesítménycél
 
 #### <a name="reviews-tab"></a>Értékelések lap
 
-Az **Értékelések** lap összegzi azokat az értékeléseket, amelyekkel az alkalmazott rendelkezik az egyes fázisokban: **Folyamatban** , **Értékelésre kész** és **Végső értékelés**. Az alkalmazotti értékelésének eléréséhez válassza a **Részletek** gombot, majd válassza ki az értékeléseket, amelyeken együtt szeretne működni. Attól függően, hogy egy értékelés hol tart a munkafolyamat folyamtában van, megtekintheti, hogy az ellenőrzés elérhető-e frissítésre. 
+Az **Értékelések** lap összegzi azokat az értékeléseket, amelyekkel az alkalmazott rendelkezik az egyes fázisokban: **Folyamatban**, **Értékelésre kész** és **Végső értékelés**. Az alkalmazotti értékelésének eléréséhez válassza a **Részletek** gombot, majd válassza ki az értékeléseket, amelyeken együtt szeretne működni. Attól függően, hogy egy értékelés hol tart a munkafolyamat folyamtában van, megtekintheti, hogy az ellenőrzés elérhető-e frissítésre. 
 
 A csapata értékeléseit a **Csapat teljesítményértékelései** csempén a **Saját csapat** rész **Összegzés** szakaszában tekintheti meg.

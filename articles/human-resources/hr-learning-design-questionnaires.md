@@ -19,11 +19,11 @@ ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
 ms.openlocfilehash: da4250b281438c29c82150af8db9cb8cca41c6c9
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3429566"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418913"
 ---
 # <a name="design-questionnaires"></a>Kérdőívek tervezése
 
@@ -91,7 +91,7 @@ A számsorozat-kódok a kérdések és a válaszok rendszerezésére szolgálnak
 Az adatok elkészítése előtt ajánlott minden paramétert meghatározni. A kérdőív beállítások később bármikor módosíthatóak.
 
 ## <a name="questionnaire-components"></a>A kérdőív részei
-A kérdőívek három fő elemből állnak: válaszcsoportok, melyek a feleletválasztós kérdések válaszait tartalmazzák, kérdések és a kérdőív maga. A kérdéseket a kérdőíven válaszcsoportokba csoportosíthatja. A válaszcsoportok segítségével kérdéseket kategorizálhat és további elemzést végezhet a kérdőíven. 
+A kérdőívek három fő elemből állnak: válaszcsoportok, melyek a feleletválasztós kérdések válaszait tartalmazzák, kérdések és a kérdőív maga.  A kérdéseket a kérdőíven válaszcsoportokba csoportosíthatja. A válaszcsoportok segítségével kérdéseket kategorizálhat és további elemzést végezhet a kérdőíven. 
 
 [![QuestionnaireComponents](./media/questionnairecomponents-1024x615.png)](./media/questionnairecomponents.png)
 

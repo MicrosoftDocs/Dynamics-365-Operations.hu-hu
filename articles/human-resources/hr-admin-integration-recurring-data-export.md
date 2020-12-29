@@ -19,11 +19,11 @@ ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 ms.openlocfilehash: edd4b999624a845fc145ed9ff348ae9cba782719
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3009236"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418890"
 ---
 # <a name="create-a-recurring-data-export-app"></a>Ismétlődő adatexportálási alkalmazás létrehozása
 
@@ -142,7 +142,7 @@ A feladat nagy része a logikai alkalmazás létrehozása lesz.
 
         - **Metódus**: POST
         - **A kérelem URL-címe:** https://\<hostname\>/namespaces/\<namespace\_guid\>/data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExecutionSummaryStatus
-        - **A kérelem törzse:** body'Invoke\_\_HTTP\_request')?[value']
+        - **A kérelem törzse:** body('Invoke\_\_HTTP\_request')?[value']
 
             > [!NOTE]
             > Előfordulhat, hogy meg kell adnia **A kérelem törzse** értékét kódnézetben vagy a tervező funkciószerkesztőjében.

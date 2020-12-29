@@ -19,11 +19,11 @@ ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 ms.openlocfilehash: cb42860292c5e3e654917cf2f62b525993aa795a
-ms.sourcegitcommit: 1edd3d4642f8fdc801b43b981b7c1a1c36ae0645
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "3796497"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418901"
 ---
 # <a name="create-a-leave-and-absence-plan"></a>Szabadság- és távolléti terv létrehozása
 
@@ -41,7 +41,7 @@ Beosztás alapú juttatásokat is létrehozhat, például csak vezetőknek jár�
 
 1. A **Szabadság- és távolléti tervek** oldalon válassza az **Új terv létrehozása** elemet.
 
-2. A **Részletek**mezőbe írja be a tervre vonatkozó **Név**, **Kezdő dátum**, **Leírás** és **Szabadságtípus** értéket.
+2. A **Részletek** mezőbe írja be a tervre vonatkozó **Név**, **Kezdő dátum**, **Leírás** és **Szabadságtípus** értéket.
 
 Ha a **Több szabadságtípus konfigurálása egyetlen szabadság- és távolléti tervhez** funkció engedélyezve van a szabadságtervek az **Elhatárolási ütemezés** helyen vannak konfigurálva a **Részletek** alatt. A könyvelés ütemezési táblázatában szereplő mindegyik rekordnál megadhatja a szabadság típusát. Mindemellett, ha ez a funkció engedélyezve van, akkor az új adatentitásokat kell használni az integrációhoz, illetve más olyan esetekhez, amikor entitásokat kell használnia. 
 

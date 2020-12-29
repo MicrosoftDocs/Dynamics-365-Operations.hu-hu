@@ -17,11 +17,11 @@ ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 124d0f7f83feebabf622f00732c25bfa0f6eccdd
-ms.sourcegitcommit: de715b7fda2f1548f2f443b9e0f6d09f5b881d61
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/10/2020
-ms.locfileid: "3034263"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418878"
 ---
 # <a name="develop-a-compensation-structure"></a>Kompenzációs struktúra kialakítása
 
@@ -99,7 +99,7 @@ Az új fix kompenzációs konstrukció nem rendelhető alkalmazotthoz, amíg az 
 
 6. A **Terv** mezőben adjon meg vagy válasszon ki egy értéket. Válassza ki azokat a feltételeket, amelyeknek egy alkalmazottnak meg kell felelnie annak érdekében, hogy a kompenzációs konstrukció érvényes legyen rá. A feltételek a következők lehetnek:
 
-    - **Részleg **
+    - **Részleg**
     - **Szakszervezet**
     - **Hely** (**Kompenzációs régió**)
     - **Munka**
