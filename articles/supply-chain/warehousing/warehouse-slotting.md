@@ -3,7 +3,7 @@ title: Raktári időközökre bontás
 description: Ez a témakör a raktári időközökre bontással kapcsolatban tartalmaz információkat. A raktári időközökre bontás lehetővé teszi a kereslet cikkek és mértékegységek szerinti konszolidációját a rendelésekből, amelyek Megrendelt, Lefoglalt vagy Kiadott állapottal rendelkeznek. A raktári kezelők számára intelligens módon segít kitárolási helyeket tervezni, mielőtt a rendeléseket a raktárba kiadnák, és kitárolási munkát hoznának létre.
 author: mirzaab
 manager: tfehr
-ms.date: 07/01/2020
+ms.date: 11/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,31 +16,48 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: ed9e6eae2ecc8de8d5eeef4699678e93dd74f193
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.openlocfilehash: 31b86837735ca16610a1d304eab611b12a6aceeb
+ms.sourcegitcommit: be4b9d557511bbb43e71a93f2c3b23b5f1a4669d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017414"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "4627749"
 ---
 # <a name="warehouse-slotting"></a>Raktári időközökre bontás
 
 [!include [banner](../includes/banner.md)]
 
-A raktári időközökre bontás lehetővé teszi a kereslet cikkek és mértékegységek szerinti konszolidációját a rendelésekből, amelyek *Megrendelt* , *Lefoglalt* vagy *Kiadott* állapottal rendelkeznek. A létrejövő igény ezután alkalmazható a kitárolásra használt helyekre, mennyiség, egység, fizikai méretek, rögzített helyek és egyebek alapján. Az időközökre bontási terv létrehozását követően létrehozható a feltöltési munka, hogy a megfelelő mennyiségű készletet helyezze el minden helyen.
+A számos raktári időközökre bontási funkció elérhető a kezelők számára, hogy intelligens módon segítsen kitárolási helyeket tervezni, mielőtt a rendeléseket a raktárba kiadnák, és kitárolási munkát hoznának létre.
 
-Ez a funkció a raktári kezelők számára intelligens módon segít kitárolási helyeket tervezni, mielőtt a rendeléseket a raktárba kiadnák, és kitárolási munkát hoznának létre.
+A *Raktári időközökre bontási funkció* lehetővé teszi a kereslet cikkek és mértékegységek szerinti konszolidációját a rendelésekből, amelyek *Megrendelt*, *Lefoglalt* vagy *Kiadott* állapottal rendelkeznek. A létrejövő igény ezután alkalmazható a kitárolásra használt helyekre, mennyiség, egység, fizikai méretek, rögzített helyek és egyebek alapján. Az időközökre bontási terv létrehozását követően létrehozható a feltöltési munka, hogy a megfelelő mennyiségű készletet helyezze el minden helyen.
 
-## <a name="turn-on-the-warehouse-slotting-feature"></a>A raktári időközökre bontási funkció bekapcsolása
+A *Raktári időközökre bontás átmozgatási rendelésekhez* funkció lehetővé teszi a raktári vezetőknek, hogy feltöltsék a kitárolási helyeket az olyan rendelések áthelyezése alapján, amelyeket még nem adtak ki a raktárnak. Ez biztosítja, hogy a kitárolási helyek tartalmazzák az áthelyezési rendelésekhez szükséges összes cikket, miután kiadták őket a raktárba. Ehhez a funkcióhoz be kell kapcsolnia a *Raktár időközökre bontás* funkciót is.
 
-A funkció használata előtt be kell azt kapcsolnia saját rendszerében. A rendszergazdák használhatják a [funkciókezelési](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) beállításokat a funkció állapotának ellenőrzéséhez, és szükség esetén bekapcsolásához. A **Funkció kezelése** munkaterületen a funkció a következő módon van listázva:
+A *Raktári időközökre bontás felosztási fejlesztései* funkció lehetőséget ad a *Raktár időközökre bontási funkció* által használt sablonsorokhoz. Ez a beállítás lehetővé teszi a rendszer számára, hogy a célhelyen meglévő aktuális készletet vegye figyelembe. Ezért kevesebb feltöltés keletkezik az időközökre bontáshoz. A *Raktári időközökre bontás felosztási fejlesztései* funkcióhoz a *Raktár időközökre bontási funkciót* is be kell kapcsolnia. Opcionálisan használható a *Raktári időközökre bontás átmozgatási rendelésekhez* funkcióhoz.
 
-- **Modul:** *Raktárkezelés*
-- **Funkció neve:** *Raktári időközökre bontási funkció*
+## <a name="turn-on-the-warehouse-slotting-features"></a>A raktári időközökre bontási funkciók bekapcsolása
+
+A funkciók használata előtt be kell azokat kapcsolnia saját rendszerében. A rendszergazdák használhatják a [funkciókezelési](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) beállításokat ezen funkciók állapotának ellenőrzéséhez, és szükség esetén a bekapcsolásához. Szükség szerint kapcsolja be a következő szolgáltatásokat:
+
+- Raktári időközökre bontási funkció
+- Raktári időközökre bontás átmozgatási rendelésekhez
+
+    > [!IMPORTANT]
+    > A *Raktári időközökre bontás* funkciót be kell kapcsolni a funkció előtt.
+
+- Raktári időközökre bontási felosztás fejlesztései
+
+    > [!IMPORTANT]
+    > A *Raktári időközökre bontás* funkciót be kell kapcsolni a funkció előtt.
 
 ## <a name="set-up-warehouse-slotting"></a>Raktári időközökre bontás beállítása
 
-A raktári időközökre bontási használatához a következő elemeket kell beállítania a rendszerben.
+A raktári időközökre bontási használatához a következő elemeket kell beállítania a rendszerben:
+
+- Időközökre bontás mértékegységszintjei
+- Utasításkódok
+- Időközökre bontási sablonok
+- Helyutasítások
 
 ### <a name="create-unit-of-measure-tiers-for-slotting"></a><a name="unit-tiers"></a>Mértékegységszintek létrehozása az időközökre bontáshoz
 
@@ -93,9 +110,9 @@ Minden időközökre bontási sablon azt vezérli, hogy a készlet milyen módon
 1. Ugorjon a **Raktárkezelés \> Beállítás \> Feltöltés \> Időközökre bontási sablonok** pontra.
 1. Válassza az **Új** lehetőséget egy sablon létrehozásához.
 
-Ezután be kell állítania a sablon fejlécét, az időközökre bontási specifikációkat és a helyutasításokat, ahogyan azt a következő alszakaszok részletezik.
+Ezután be kell állítania a sablon fejlécét, az időközökre bontási specifikációkat és a helyutasításokat, ahogyan azt a következő alszakaszok részletezik. Az időközökre bontás átmozgatási rendelésekhez beállítása hasonlít az időközökre bontás értékesítési rendelések beállításaihoz, de a **Kereslet típusa** mező az *Értékesítési rendelés* helyett az *Átmozgatási rendelések* értékre van beállítva.
 
-#### <a name="set-up-a-slotting-template-header"></a>Időközökre bontási sablon fejlécének beállítása
+#### <a name="set-up-the-header-for-a-sales-order-slotting-template"></a>Értékesítési rendelés időközökre bontási sablon fejlécének beállítása
 
 1. A sablon fejlécében adja meg a következő értékeket:
 
@@ -103,7 +120,8 @@ Ezután be kell állítania a sablon fejlécét, az időközökre bontási speci
     - **Leírás:** _61_
     - **Kereslet típusa:** *Értékesítési rendelés*
 
-        Az egyedüli támogatott kereslettípus jelenleg az *Értékesítési rendelés*.
+        > [!NOTE]
+        > Jelenleg az *Értékesítési rendelések* és az *Átmozgatási rendelések* az egyetlen támogatott kereslettípusok. Csak akkor választhatja az *Átmozgatási rendeléseket,* ha az *Raktári időközökre bontás átmozgatási rendelésekhez* funkció be van kapcsolva.
 
     - **Kereslet stratégia:** _Megrendelve_
 
@@ -111,6 +129,7 @@ Ezután be kell állítania a sablon fejlécét, az időközökre bontási speci
 
         - **Megrendelt** – Az értékesítési rendelés teljes megrendelt mennyiségét keresletnek kell tekinteni.
         - **Lefoglalva** – Csak az értékesítési rendelés sor lefoglalt (tényleges és rendelt) mennyiségét kell figyelembe venni.
+        - **Kiadott** – A kiadott mennyiséget keresletnek kell tekinteni.
 
     - **Raktár:** _61_
     - **A hullám keresletének engedélyezése nem foglalt mennyiségek használatához:** _Igen_
@@ -119,7 +138,7 @@ Megadhat egy lekérdezést is a kiértékelt kereslet hatókörének leszűkít�
 
 #### <a name="set-up-slotting-specifications-for-each-template"></a>Időközökre bontási specifikációk beállítása ez egyes sablontípusokhoz
 
-Minden létrehozott sablon esetében hajtsa végre az alábbi lépéseket egy sor hozzáadásához az egyes időközökre bontási specifikációkhoz.
+Minden értékesítési rendelési sablon esetében hajtsa végre az alábbi lépéseket egy sor hozzáadásához az egyes időközökre bontási specifikációkhoz.
 
 1. Az **Időközökre bontási részletek** gyorslapján válassza az **Új** parancsot, és hozzon létre egy sablonfájlt.
 1. Az új sorban állítsa be a következő értékeket:
@@ -148,6 +167,7 @@ Minden létrehozott sablon esetében hajtsa végre az alábbi lépéseket egy so
 
         - **Üresen hagyott** – Ez a rendszer feltételezi, hogy a kitárolási terület minden helye üres, és a készlethez tartozó helyeket nem szabad ellenőrizni.
         - **Figyelembe vett mennyiség** – Ennek a rendszernek ellenőriznie kell a helyeket a készlet kitárolási területein, és ki kell hagynia minden nem üres helyet.
+        - **Aktuálisan készleten lévők figyelembe vétele** – A rendszernek ellenőriznie kell, hogy a célhely tartalmaz-e nem foglalt mennyiségeket a kereslet sorban szereplő cikkhez. Ha a mennyiség elég nagy ahhoz, hogy a kereslet sor legalább egy egységét kielégítsen, akkor a létrehozott időközökre bontási terv rekord az elérhető mennyiséggel csökken. Ha például a kereslet 10 eset, és egy eset kéznél van, a megtalált kereslet kilenc eset lesz. Ha a kereslet 10 eset, és mindegyik eset kéznél van, a megtalált kereslet 10 eset lesz. Ez az érték csak akkor érhető el , ha be van kapcsolva a *Raktári időközökre bontás felosztási fejlesztései* funkció.
 
     - **Irányelv kódja:** _Időközökre bontási_
 
@@ -168,6 +188,9 @@ Minden létrehozott sablon esetében hajtsa végre az alábbi lépéseket egy so
         - **Rögzített és nem rögzített helyek** – A rendszer nem korlátozható csak a rögzített helyek használatára.
         - **Csak a termék rögzített helyei** – A rendszer csak a termék rögzített helyeit tartalmazó tárolóhelyeket rögzít.
         - **Csak a termékváltozat rögzített helyei** – A rendszer csak a termékváltozat rögzített helyeit tartalmazó tárolóhelyeket rögzít.
+
+> [!NOTE]
+> Ha az időközökre bontás sablon legalább egy olyan sort tartalmaz, ahol az **Időköz-hozzárendelési feltétel társítása** mező az *Aktuálisan készleten lévők figyelembe vétele* beállításra van állítva, akkor a sablon egyetlen sorához sem engedélyezettek a beállítások.
 
 1. Válassza a **Mentés** lehetőséget.
 1. Ha második sablonsort szeretne létrehozni, kattintson az **Új** elemre.
@@ -207,6 +230,7 @@ A kitárolások időközökre bontásának támogatásához be kell állítani l
 1. A bal oldali ablaktáblában állítsa a **Munkarendelés típusa** mezőt a *Feltöltés* értékre.
 1. A Műveleti ablaktáblán kattintson az **Új** elemre.
 1. Az új helyutasítás fejlécében, a **Név** mezőbe írja be a *61 kitárolás időközökre bontása* értéket.
+1. A **Sorszám** mezőben fogadja el az alapértelmezett értéket.
 
 ##### <a name="configure-the-location-directives-fasttab"></a>Konfigurálja a Helyutasítások gyorslapot
 
@@ -222,11 +246,12 @@ A kitárolások időközökre bontásának támogatásához be kell állítani l
 ##### <a name="configure-the-lines-fasttab"></a>A Sorok gyorslap konfigurálása
 
 1. A **Sorok** gyorslapon kattintson az **Új** lehetőségre egy sor létrehozásához.
-1. Az új sorban állítsa be a következő értékeket. Az összes többi mezőben hagyja meg az alapértelmezett értéket.
+1. Az új sorban állítsa be a következő értékeket.
 
     - **Kezdő mennyiség:** _0_
     - **Záró mennyiség:** _1000000_
 
+1. Az fennmaradó mezőkben hagyja meg az alapértelmezett értékeket.
 1. A **Mentés** gombra kattintva elérhetővé válik a **Helyutasítási műveletek** gyorslap.
 
 ##### <a name="configure-the-location-directive-actions-fasttab"></a>Konfigurálja a Helyutasítási műveletek gyorslapot
@@ -234,9 +259,11 @@ A kitárolások időközökre bontásának támogatásához be kell állítani l
 1. A **Helyutasítási műveletek** gyorslapon kattintson az **Új** lehetőségre egy sor létrehozásához.
 1. Az új sorban állítsa be a következő értékeket. Az összes többi mezőben hagyja meg az alapértelmezett értéket.
 
+    - **Sorszám:** Fogadja el az alapértelmezett értéket.
     - **Név:** _Ömlesztett_
     - **Stratégia:** _Nincs_
 
+1. Az fennmaradó mezőkben hagyja meg az alapértelmezett értékeket.
 1. Válassza a **Mentés** lehetőséget, ha elérhetővé szeretné tenni a **Lekérdezés szerkesztése** gombot.
 
 ##### <a name="edit-the-query"></a>A lekérdezés szerkesztése
@@ -318,9 +345,16 @@ Miután létrehozta a keresletet, az **Kereslet helyének megkeresése** parancc
 
 #### <a name="slotting-plan"></a>Időközökre bontási terv
 
-Az időközökre bontási terv azt a helyet jeleníti meg, amelyhez az egyes cikkek/mennyiségek hozzá vannak rendelve, hogy történt-e túlcsordulás, létrehozásra került-e felengedési munka, valamint a sablon felhasznált sorát. **Minden olyan igényt, amelyet nem lehet időközökre bontani, piros színnel van kijelölve.**
+Az időközökre bontási terv azt a helyet jeleníti meg, amelyhez az egyes cikkek/mennyiségek hozzá vannak rendelve, hogy történt-e túlcsordulás, létrehozásra került-e felengedési munka, valamint a sablon felhasznált sorát. *Minden olyan igényt, amelyet nem lehet időközökre bontani, piros színnel van kijelölve.*
 
 - Az eredmények megtekintéséhez válassza ki az **Időközökre bontási tervet** a Művelet ablaktáblán.
+
+> [!NOTE]
+> - A **Kereslet generálása**, a **Kereslet helyének megkeresése** és a **Feltöltés futtatása** mostantól egy tesztkörnyezetben fut. (Ezek a folyamatok a Művelet panelen érhetők el az **Időközökre bontási sablonok** oldalon.)
+> - A **Kereslet generálása**, a **Kereslet helyének megkeresése**, és a **Feltöltés futtatása** zárolással rendelkezik, amely biztosítja, hogy nem lesznek egyszerre aktiválva. Ellenkező esetben a felhasznált adatok törrlődhetnek.
+> - A **Kereslet generálása**, a **Kereslet helyének megkeresése** folyamatok figyelmeztetést jelenítenek meg, ha a futtatás nem hozott létre rekordokat, vagy ha a rekordokból hiányoznak az adatok.
+> - Ha az **Időközökre bontási terv** lehetőséget választja, a lapon nem található **Új**, **Szerkesztés** vagy **Törlés** gomb a Művelet panelen, mert az adatforrás nem szerkeszthető.
+> - Ha a **Feltöltés futtatása lehetőséget** választja, a rendszer ellenőrzi a kijelölt időközsablont és folyamatokat.
 
 #### <a name="create-replenishment"></a>Feltöltés létrehozása
 

@@ -3,7 +3,7 @@ title: Egyéni hivatkozások létrehozása a vezetői önkiszolgálás szolgált
 description: Ez a témakör azt mutatja be, hogyan lehet egyéni hivatkozásokat létrehozni a Dynamics 365 Human Resources Vezetői önkiszolgálás szolgáltatásában.
 author: andreabichsel
 manager: tfehr
-ms.date: 10/21/2020
+ms.date: 11/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-human-resources
@@ -18,22 +18,20 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-10-21
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f8f6f0d2d8de2e74060cc86143a91620f42810e3
-ms.sourcegitcommit: ee643d651d57560bccae2f99238faa39881f5c64
+ms.openlocfilehash: 4c9197ee124f53ff8d4acc90cb490113d35e80b4
+ms.sourcegitcommit: 0c33864efdd66c6ac11a4f35d971c0bb4efb15db
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "4088557"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "4654289"
 ---
 # <a name="create-custom-links-in-manager-self-service"></a>Egyéni hivatkozások létrehozása a vezetői önkiszolgálás szolgáltatásban
 
-[!include [banner](includes/preview-feature.md)]
-
 Egyéni hivatkozásokat a vezetői önkiszolgáló modul **Saját csapat** lapján adhat meg. Ez a funkció gyors hozzáférést biztosít a fontos információkhoz. Ez hasonló az egyéni hivatkozások hozzáadásához az Alkalmazotti önkiszolgálás **Saját adatok** lapján.
 
-## <a name="enable-the-preview-feature"></a>Az Előzetes funkció engedélyezése
+## <a name="enable-the--feature"></a>A funkció engedélyezése
 
-A funkció használatához engedélyeznie kell az **(előzetes verzió) Egyéni hivatkozások a Vezetői önkiszolgálás szolgáltatásban** lehetőséget a **Funkciókezelés** munkaterületen. Az előzetes funkciók engedélyezésével kapcsolatos további részletekért tekintse meg a [Kezelési funkciók](hr-admin-manage-features.md) cikket.
+A funkció használatához engedélyeznie kell az **Egyéni hivatkozások a Vezetői önkiszolgálás szolgáltatásban** lehetőséget a **Funkciókezelés** munkaterületen. Az előzetes funkciók engedélyezésével kapcsolatos további részletekért tekintse meg a [Kezelési funkciók](hr-admin-manage-features.md) cikket.
 
 ## <a name="set-up-custom-links"></a>Egyéni hivatkozások beállítása
 

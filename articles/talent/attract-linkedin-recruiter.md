@@ -3,7 +3,7 @@ title: Jelöltek felkutatása a LinkedIn Recruiter használatával az Attract sz
 description: A Microsoft Dynamics 365 Talent - Attract LinkedIn integrációját használhatja a jelöltek felkutatásához a LinkedIn Recruiter megoldáson keresztül.
 author: andreabichsel
 manager: AnnBe
-ms.date: 07/08/2019
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: e05b902d745c26c08d1bac133991f51fd58c3e93
-ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
+ms.openlocfilehash: 96e4660c4958bf5f2a0910bfad770e1e713f800f
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "2833046"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528269"
 ---
 # <a name="source-candidates-with-linkedin-recruiter-in-attract"></a>Jelöltek felkutatása a LinkedIn Recruiter használatával az Attract szolgáltatásban
 
@@ -34,6 +34,9 @@ A LinkedIn a világ legnagyobb online szakmai hálózata, amely hozzáférést b
 
 Ha úgy tűnik, hogy nem rendelkezik ezzel a képességgel, forduljon a rendszergazdához. Csak akkor veheti igénybe LinkedIn Recruiter megoldást az Attract alkalmazásból ha az adminisztrátor [beállította a LinkedIn integrációt](./attract-admin-linkedin.md). Ezután beállíthatja a kapcsolatot a LinkedIn Recruiter megoldással és megkezdheti a jelöltek megtalálását.
 
+>[!IMPORTANT]
+>2020. július 1-től a LinkedIn már nem támogatja az Internet Explorer 11-et. A felhasználók továbbra is elérhetik a LinkedInt az Internet Explorer 11-gyel, de a rendszer kérni fogja a frissítést vagy egy másik böngésző használatát. További információ: [A LinkedIn által támogatott böngészők](https://www.linkedin.com/help/linkedin/answer/4135/supported-internet-browsers-for-linkedin).
+
 ## <a name="set-up-your-connection-with-linkedin-recruiter"></a>A kapcsolat beállítása a LinkedIn Recruiter megoldással
 
 Mielőtt használhatná a LinkedIn Recruiter megoldást az Attract alkalmazáson keresztül be kell állítania a kapcsolatot LinkedIn Recruiter megoldással. Ehhez a lépéshez szüksége van a LinkedIn Recruiter hitelesítő adataira.
@@ -42,19 +45,35 @@ Mielőtt használhatná a LinkedIn Recruiter megoldást az Attract alkalmazáson
 2. Válassza a **Felhasználói beállítások** lehetőséget.
 3. A **Kapcsolatok** lapon jelölje be a **Csatlakozás** lehetőséget a **LinkedIn** mellett. Kövesse a LinkedIn által biztosított utasításokat.
 
-    ![[Kapcsolat beállítása LinkedIn Recruiter és az Attract között](./media/attract-set-up-linkedin-recruiter-connection.png)](./media/attract-set-up-linkedin-recruiter-connection.png)
+    ![[Kapcsolat beállítása a LinkedIn Recruiter felé az Attracttól](./media/attract-set-up-linkedin-recruiter-connection.png)](./media/attract-set-up-linkedin-recruiter-connection.png)
 
 ## <a name="view-linkedin-candidates-in-attract"></a>A LinkedIn-jelöltek megtekintése az Attract megoldásban
 
 Miután csatlakozott a LinkedIn Recruiter alkalmazáshoz, megtekintheti a jelentkezők LinkedIn-profiljait az Attract megoldásban.
 
+>[!NOTE]
+>Ha van Recruiter munkaállomás Önhöz rendelve akkor láthatja a jelöltek összes adatát.<br><br>
+>Ha van egy Toborzási vezető munkaállomás van Önhöz rendelve vagy nincs munkaállomás Önhöz rendelve, ügyeljen arra, hogy kijelentkezzen a LinkedIn vagy a LinkedIn Recruiter szolgáltatásból, mielőtt egy jelölt LinkedIn lapjára navigálna az Attractban. Megtekintheti a jelölt alapvető nyilvános profiladatait, például a vezeték- és keresztnevét.
+
 1. Az Attract megoldásban válassza a **Munkák** vagy **Tehetségállományok** lehetőséget a bal oldalon, majd válassza ki a pályázót.
 
-    ![[A LinkedIn jelöltek megtekintése az Attract megoldásban](./media/attract-view-linkedin-candidates.png)](./media/attract-view-linkedin-candidates.png)
+    ![[A LinkedIn-jelöltek megtekintése az Attract megoldásban](./media/attract-view-linkedin-candidates.png)](./media/attract-view-linkedin-candidates.png)
 
-2. A pályázó profiljában válassza a **LinkedIn** fület. A pályázó profilját a az InMail és LinkedIn jegyzetek előzményeivel együtt tekintheti meg.
+2. A pályázó profiljában válassza a **LinkedIn** fület. A pályázó profilját az InMail előzményeivel együtt tekintheti meg.
 
-Innen mentheti a pályázót egy LinkedIn Recruiter projektbe, elküldheti az InMail-be, vagy az Update Me funkciót egy figyelmeztetés beállításához a LinkedIn Recruiter megoldásban.
+   ![A jelölt LinkedIn-adatainak megtekintése](./media/attract-candidate-linkedin-tab.png)
+
+A következő műveleteket végezheti el innen:
+
+- A **Toborzási tevékenységek** lapon megtekintheti a következőket:
+   
+   - Toborzó jegyzetek (nyilvános és magán is). Alapértelmezés szerint a jegyzetek privátak, és csak a jegyzetek tulajdonosa számára láthatók.
+   - InMail tevékenység (de nem InMail tartalom). Görgessen a lap aljára, hogy megtekinthesse a InMail párbeszédet a jelölttel, és megtekinthesse a szervezet más, a potenciális jelölttel interakcióba lépő felhasználóit.
+   - A pályázó-elutasítás tevékenysége
+
+- Válassza a **Küldés InMail-ben**, hogy anélkül küldhessem InMail-t, hogy el kellene hagynia az Attractet.
+
+- Válassza a **Mentés egy munkába** lehetőséget a munka mentéséhez az Attract elhagyása nélkül.
 
 > [!NOTE]
 > A pályázó LinkedIn-profilja akkor jelenik meg az Attract megoldásban, ha a pályázónak Attract és LinkedIn adatai megegyeznek. Itt találja a használt egyezetetési szabályokat:
@@ -80,14 +99,14 @@ Arról is meg kell győződnie arról, hogy a feladatnak van Potenciális jelöl
 A LinkedIn Recruiter megoldásban nyomon követheti, hogy pályázó jelentkezett-e a szervezeténél más állásokra, megnézheti, hogy hol tart az álláspályázatok különböző szakaszaiban, és megtekintheti az Attract visszajelzéseit és megjegyzéseit.
 
 1. Nyissa meg a LinkedIn Recruiter lehetőséget, és válassza ki a pályázó profilját.
-2. Vigye az egeret az**ATS-ben** elem fölé.
+2. Vigye az egeret az **ATS-ben** elem fölé.
 3. Válassza ki a következő lehetőségek egyikét, hogy megtekintse a jelentkezők adatait, amelyek tárolva vannak az Attract megoldásban:
 
     - **Állások és állapotok** – Azokat a állásokat jeleníti meg, amelyeken a pályázó része, a legfrissebb állapotot, valamint a pályázónak az egyes állásokra vonatkozó előrehaladását.
     - **Interjú-visszajelzés** – Az interjúbonyolítók által az Attract rendszerébe beküldött visszajelzések megtekintéséhez.
     - **Megjegyzések** – Tekintse meg, hogy milyen megjegyzések kerültek be ehhez a pályázóhoz az Attract megoldásban.
 
-    ![[Attract információk megtekintése a LinkedIn Recruiter megoldásból](./media/attract-view-information-from-linkedin-recruiter.png)](./media/attract-view-information-from-linkedin-recruiter.png)
+    ![[Az Attract információinak megtekintése a LinkedIn Recruiter-szolgáltatásban](./media/attract-view-information-from-linkedin-recruiter.png)](./media/attract-view-information-from-linkedin-recruiter.png)
 
 > [!NOTE]
 > A pályázó- és pályázati adatok nem lesznek szinkronizálva a LinkedIn Recruiter rendszerrel, ha a jelentkező nem lépett túl a Potenciális szakaszon.

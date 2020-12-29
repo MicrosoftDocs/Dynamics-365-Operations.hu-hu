@@ -17,16 +17,28 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0a3389d6ce5f1985f7515e777a2bafae4eae5f0c
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 6a94c1269cd81ecdcbdff018ec4a8f90be36f0f3
+ms.sourcegitcommit: 6aa8d6aa8276611967fb6fab44715950de49f6af
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3431107"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "4589063"
 ---
 # <a name="integration-with-finance-faq"></a>Integráció a Finance GYIK szolgáltatással
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 Ez a témakör gyakori kérdésekre válaszol azzal kapcsolatban, hogy milyen adatok szinkronizálása történik a Dynamics 365 Human Resources és a Dynamics 365 Finance integrációja esetén.
+
+## <a name="can-i-edit-the-dynamics-365-talent-application-user-in-power-apps"></a>Szerkeszthetem az Dynamics 365 Talent alkalmazás felhasználóját a Power Apps-ben?
+
+Szám Ha módosítja a Talent alkalmazás felhasználóját, a Human Resources és a Common Data Service integrációja sikertelen lehet. Az alábbi táblázat a Talent alkalmazásfelhasználó alapértelmezett beállításait mutatja be.
+
+| Teljes név | Pályázat azonosítója | Azure AD Objektumazonosító | Alkalmazásazonosító URI |
+| --- | --- | --- | --- |
+| Dynamics365 for Talent | f9be0c49-aa22-4ec6-911a-c5da515226ff | 27fd8129-4b3c-43f7-b1bf-47495d3a049b | f9be0c49-aa22-4ec6-911a-c5da515226ff |
+
+![A Talent alkalmazásfelhasználó alapértelmezett beállításai](media/DynamicsApplicationUser.png)
 
 ## <a name="is-all-data-synchronized-or-just-some-data-entities"></a>A programok minden adatokat szinkronizálják vagy csak bizonyos adatentitásokat?
 

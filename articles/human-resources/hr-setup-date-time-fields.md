@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: be1e28d0b842184ce3c4f7bd9748f5e76ac67489
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 027e46d53fd9704f5483e90409be53c1510e8cd4
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3430095"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4529852"
 ---
 # <a name="understand-date-and-time-fields"></a>Dátuma és Idő mezők ismertetése
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 **A dátum és Idő** mezők alapvető fontosságúak a Dynamics 365 Human Resources megoldásban. Fontos, hogy megtanulja, hogyan dolgozzon a **Dátum és idő** adatokkal Dynamics 365 Human Resources űrlapokon, a Common Data Service szolgáltatásban és külső forrásokon.
 

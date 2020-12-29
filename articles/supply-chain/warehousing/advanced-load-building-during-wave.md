@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSPostMethod,WHSWaveTemplateTable,WHSLoadMixGroup,WHSLoadBuildTemplate, WHSWaveTableListPage, TMSLoadBuildTemplateApply, TMSLoadBuildTemplates
+ms.search.form: WHSPostMethod,WHSWaveTemplateTable,WHSLoadMixGroup,WHSLoadBuildTemplate, WHSWaveTableListPage, TMSLoadBuildTemplateApply, TMSLoadBuildTemplates, TMSLoadBuildTemplateCreate
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Retail, Core, Operations
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 7fb47498cfb3756b0e180fe9e5500255c7312a92
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.openlocfilehash: 7f51b3d65c8dd1e11296956c37ef9dfe568e5ec2
+ms.sourcegitcommit: d9bffbeae2ba14f06294dd275383077d4d65c4fa
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016332"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "4654198"
 ---
 # <a name="advanced-load-building-during-wave"></a>Speciális rakomány-összeállítás hullám közben
 
@@ -33,9 +33,9 @@ A hullámfeldolgozás során a rendszer általában új rakományt hoz létre mi
 
 A funkció használatához a rendszert a következőképpen kell beállítania:
 
-- Hozzon létre olyan *hullámsablonokat* , amelyek tartalmazzák az új **buildLoads** módszert. Ez a módszer elérhetővé teszi a speciális hullámrakomány-összeállítást a sablonokat használó hullámokhoz.
-- Állítsa be a *rakomány-összeállítási sablonokat* , amelyek mindegyike egy adott hullámsablonhoz és metódushoz van hozzákapcsolva. A rakomány-összeállítási sablonok azt irányítják, hogy a hullámhoz rendelt rakománysorok melyik (meglévő vagy új) rakományhoz legyenek hozzáadva. A szállítmányokat olyan feltételek alapján kombinálhatja vagy különítheti el, mint például a rakománysablon, a felszerelések és a rakománysorban szereplő egyéb mezőértékek.
-- Határozza meg a *rakománykombinációs csoportokat* , hogy szabályozzák, mely cikkek legyenek és ne legyenek kombinálva egyetlen rakományban. Azt is meg kell adnia, hogy a korlátozásnak figyelmeztetést vagy hibát kell-e jeleznie, és ki kell-e értékelni a rakománysablon térfogatra vonatkozó korlátozását.
+- Hozzon létre olyan *hullámsablonokat*, amelyek tartalmazzák az új **buildLoads** módszert. Ez a módszer elérhetővé teszi a speciális hullámrakomány-összeállítást a sablonokat használó hullámokhoz.
+- Állítsa be a *rakomány-összeállítási sablonokat*, amelyek mindegyike egy adott hullámsablonhoz és metódushoz van hozzákapcsolva. A rakomány-összeállítási sablonok azt irányítják, hogy a hullámhoz rendelt rakománysorok melyik (meglévő vagy új) rakományhoz legyenek hozzáadva. A szállítmányokat olyan feltételek alapján kombinálhatja vagy különítheti el, mint például a rakománysablon, a felszerelések és a rakománysorban szereplő egyéb mezőértékek.
+- Határozza meg a *rakománykombinációs csoportokat*, hogy szabályozzák, mely cikkek legyenek és ne legyenek kombinálva egyetlen rakományban. Azt is meg kell adnia, hogy a korlátozásnak figyelmeztetést vagy hibát kell-e jeleznie, és ki kell-e értékelni a rakománysablon térfogatra vonatkozó korlátozását.
 
 ## <a name="turn-on-advanced-wave-load-building-in-your-system"></a>A speciális hullámrakomány-összeállítás bekapcsolása a rendszerben
 
@@ -116,7 +116,7 @@ Az **M9200-as** cikket hozzá kell adni a raktárhoz. Hajtsa végre a következ�
 
 ### <a name="regenerate-wave-process-methods"></a>Hullámfeldolgozási metódusok újragenerálása
 
-Előfordulhat, hogy újra kell generálnia a hullámfeldolgozási módszereket, hogy a rakomány-összeállítási módszer ( **buildLoads** ) elérhető legyen.
+Előfordulhat, hogy újra kell generálnia a hullámfeldolgozási módszereket, hogy a rakomány-összeállítási módszer (**buildLoads**) elérhető legyen.
 
 1. Ugorjon a **Raktárkezelés** \> **Beállítás** \> **Hullámok** \> **Hullámfeldolgozás metódusai** lehetőségre.
 2. Ellenőrizze, hogy a **buildLoads** szerepel-e a listán. Ha nincs megadva, akkor a műveleti ablaktáblán válassza ki a **Metódusok újragenerálása** lehetőséget a hozzáadáshoz.
@@ -142,7 +142,7 @@ Ha ki szeretné használni a hullámrakomány-összeállítás előnyét, akkor 
     1. A **Hullámlépés típusa** mezőben válassza ki a *Rakomány-összeállítás* elemet.
 
 1. Válassza a **Mentés** gombot, és zárja be az oldalt.
-1. A **buildLoads** metódus sorában, a **Hullámlépés kódja** mezőben válassza ki az imént létrehozott kódot ( **WSC2112** ).
+1. A **buildLoads** metódus sorában, a **Hullámlépés kódja** mezőben válassza ki az imént létrehozott kódot (**WSC2112**).
 1. A műveleti ablaktáblán válassza a **Mentés** lehetőséget.
 
 > [!NOTE]
@@ -201,9 +201,9 @@ Igény szerint tetszőleges számú rakomány-összeállítási sablont beállí
     | Berendezés | Berendezés összevetéséhez, amikor létező rakományokhoz rendelnek hozzá értéket, és amikor újonnan létrehozott rakományokat adnak meg. | Ezt a mezőt hagyja üresen. |
     | Rakománykombinációs csoportazonosító | Válassza ki a rakománykombinációs csoportot, amelyet akkor használnak, ha a cikk megengedett a rakományon. A kombinációs csoportok szabályokat határoznak meg az olyan típusú cikkekhez, amelyeket egyetlen rakományon lehet kombinálni. A beállításban korábban létrehozott kombinációs csoportok közül kell egyet kiválasztania. | *TV* |
     | Nyitott rakományok használata | Válassza ki, hogy meglévő nyitott rakományok hozzáadhatók-e. Ehhez a következő lehetőségek állnak rendelkezésre:<ul><li>**Nem** – Nem adható hozzá nyitott rakomány a meglévő rakományokhoz.</li><li>**Bármilyen** – Adjon hozzá nyitott rakományokat bármely meglévő rakományhoz, amely a sor szempontjából érvényes.</li><li>**Hozzárendelt** – Adjon hozzá nyitott rakományokat hullámhoz hozzárendelt rakományhoz.</li></ul> | *Bármely* |
-    | Rakományok létrehozása | Határozza meg, hogy kell-e új rakományokat létrehozni, ha a meglévő rakományok nem egyeznek meg a feltételekkel. | Kiválasztva (= *Yes* ) |
-    | Szállítmánysor megosztásának engedélyezése | Határozza meg, hogy egy rakománysor több rakomány között elosztható-e, ha a teljes sor túllépi a rakománysablon maximális kapacitását. | Törölve (= *Nem* ) |
-    | Térfogatmérés ellenőrzése | Határozza meg, hogy a rakomány-összeállításnak ellenőriznie kell-e a súlyt és a térfogatot minden rakománysor hozzáadásakor annak biztosítására, hogy a rakománysablon térfogatkorlátozásait ne lépjék túl. | Törölve (= *Nem* ) |
+    | Rakományok létrehozása | Határozza meg, hogy kell-e új rakományokat létrehozni, ha a meglévő rakományok nem egyeznek meg a feltételekkel. | Kiválasztva (= *Yes*) |
+    | Szállítmánysor megosztásának engedélyezése | Határozza meg, hogy egy rakománysor több rakomány között elosztható-e, ha a teljes sor túllépi a rakománysablon maximális kapacitását. | Törölve (= *Nem*) |
+    | Térfogatmérés ellenőrzése | Határozza meg, hogy a rakomány-összeállításnak ellenőriznie kell-e a súlyt és a térfogatot minden rakománysor hozzáadásakor annak biztosítására, hogy a rakománysablon térfogatkorlátozásait ne lépjék túl. | Törölve (= *Nem*) |
 
 1. A műveleti ablaktáblán válassza ki a **Mentés** parancsot, hogy a **Lekérdezés szerkesztése** beállítás elérhető legyen.
 1. A műveleti ablaktáblán válassza ki a **Lekérdezés szerkesztése** lehetőséget a lekérdezésszerkesztő párbeszédpanel megnyitásához.
@@ -216,7 +216,7 @@ Igény szerint tetszőleges számú rakomány-összeállítási sablont beállí
     - **Keresés iránya:** *Növekvő*
 
 1. Az **OK** gombra kattintva mentse a változtatásokat, és zárja be a párbeszédpanelt.
-1. A **Lebontás a következő szerint:** gyorslapon állítsa be a rakományok felosztására vonatkozó szabályokat. Általában a lebontás vonatkozhat a rakománysorra kiterjesztett egyedi mezőkre, ilyen például az **Útvonal** , a **Bemutatás** vagy a **Futtatás**. Ha például rendelésszámonként egy rakományt szeretne létrehozni, válassza ki a **Lebontás a következő szerint:** jelölőnégyzetet a következő értékeket tartalmazó sorban:
+1. A **Lebontás a következő szerint:** gyorslapon állítsa be a rakományok felosztására vonatkozó szabályokat. Általában a lebontás vonatkozhat a rakománysorra kiterjesztett egyedi mezőkre, ilyen például az **Útvonal**, a **Bemutatás** vagy a **Futtatás**. Ha például rendelésszámonként egy rakományt szeretne létrehozni, válassza ki a **Lebontás a következő szerint:** jelölőnégyzetet a következő értékeket tartalmazó sorban:
 
     - **Hivatkozási tábla neve:** *Rakomány részletei*
     - **Hivatkozási mező neve:** *Rendelési szám*
@@ -238,12 +238,12 @@ Ez a példa azt mutatja be, hogy az ebben a témakörben korábban ismertetett b
 1. A program megnyitja az új értékesítési rendelést. Tartalmaznia kell egy új, üres sort az **Értékesítési rendelés sorai** gyorslap rácsán. Az új sorban állítsa be a **Cikkszám** mezőt *A0001* és a **Mennyiség** mezőt *1* értékre.
 1. A rács feletti **Készlet** menüben válassza ki a **Foglalás** pontot.
 1. A **Foglalás** lap műveleti ablaktáblán válassza ki az **Adag foglalása** elemet.
-1. A lap jobb felső sarkában található **Bezárás** gombra ( **X** ) kattintva térjen vissza az értékesítési rendeléshez.
+1. A lap jobb felső sarkában található **Bezárás** gombra (**X**) kattintva térjen vissza az értékesítési rendeléshez.
 1. Válassza ki a művelet ablaktáblán a **Raktár** lapon a **Műveletek** csoportjának **Kiadás raktárba** parancsát. A rendszer létrehoz egy szállítmányt, és hozzáadja egy új rakományhoz, mert nincs olyan betöltési sorokat tartalmazó meglévő rakomány, amelyeknek ez a rendelési száma.
 
     Olyan tájékoztató üzenetek érkeznek, amelyek ehhez az értékesítési rendeléshez létrehozott munkát, hullámot és szállítmányt jelenítik meg.
 
-1. Ha meg szeretné erősíteni a rakományt, a szállítmányt és a munka adatait az értékesítési sorban, válassza ki a sort, majd a rács fölötti **Raktár** menüben válassza ki a **Rakomány részletei** , a **Szállítmány részletei** vagy a **Munka részletei** elemet.
+1. Ha meg szeretné erősíteni a rakományt, a szállítmányt és a munka adatait az értékesítési sorban, válassza ki a sort, majd a rács fölötti **Raktár** menüben válassza ki a **Rakomány részletei**, a **Szállítmány részletei** vagy a **Munka részletei** elemet.
 1. A most létrehozott értékesítési rendelésben az **Értékesítési rendelés sorai** gyorslapon válassza ki a **Sor hozzáadása** lehetőséget, ha másik sort szeretne hozzáadni.
 1. Ebben az új sorban állítsa be a **Cikkszám** mezőt *A0002* és a **Mennyiség** mezőt *1* értékre.
 1. A sorfoglaláshoz és a raktárba történő kiadáshoz ismételje meg a 6–9. sort. A rendszer **új** szállítmányt hoz létre a hozzáadott sorhoz. Mivel azonban speciális hullámrakomány-összeállítást használ, a rendszer hozzáadja azt a szállítmányt és betöltési sort a meglévő hullámhoz. Ha nem speciális hullámrakomány-összeállítást használna, akkor a rendszer új rakományt hozna létre a szállítmányhoz.

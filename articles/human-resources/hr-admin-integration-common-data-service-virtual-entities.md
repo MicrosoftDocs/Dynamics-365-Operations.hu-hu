@@ -3,7 +3,7 @@ title: Common Data Service-virtuális entitások konfigurálása
 description: Ez a témakör azt mutatja be, hogyan lehet beállítani a virtuális entitásokat a Dynamics 365 Human Resources esetén. Meglévő virtuális entitások létrehozása és frissítése, valamint létrehozott és elérhető entitások analizálása.
 author: andreabichsel
 manager: tfehr
-ms.date: 10/05/2020
+ms.date: 11/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,16 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0d6f79ea569a7a9b0d25e73e8666bf9ba19095d0
-ms.sourcegitcommit: a8665c47696028d371cdc4671db1fd8fcf9e1088
+ms.openlocfilehash: 2b590faeab600d04c9d5303693ec1e9ac682250d
+ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "4058154"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4645601"
 ---
 # <a name="configure-common-data-service-virtual-entities"></a>Common Data Service-virtuális entitások konfigurálása
 
-[!include [banner](includes/preview-feature.md)]
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 A Dynamics 365 Human Resources egy virtuális adatforrás a következőben: Common Data Service. Teljes körű létrehozási, olvasási, frissítési és törlési (CRUD) műveletek végrehajtását teszi lehetővé a következőkből: Common Data Service és Microsoft Power Platform. A virtuális entitások adatait a Common Data Service tárolja, hanem az alkalmazás-adatbázis. 
 
@@ -50,11 +50,23 @@ A HR-hez tartozó virtuális entitások nem azonosak a HR számára létrehozott
 
 ## <a name="setup"></a>Beállítás
 
-A következő lépésekkel engedélyezheti a virtuális entitások telepítését a környezetben. 
+A következő lépésekkel engedélyezheti a virtuális entitások telepítését a környezetben.
+
+### <a name="enable-virtual-entities-in-human-resources"></a>Virtuális entitások engedélyezése a Human Resources alkalmazásban
+
+Először engedélyeznie kell a virtuális entitásokat a **Szolgáltatáskezelés** munkaterületen.
+
+1. A Human Resources alkalmazásban válassza a **Rendszerfelügyelet** elemet.
+
+2. Válassza ki a **Funkció kezelése** csempét.
+
+3. Válassza a **Virtuális entitás támogatása HR/CDS alkalmazásban** elemet, majd az **Engedélyezés** lehetőséget.
+
+A funkciók aktiválásával és letiltásával kapcsolatos további részletekért tekintse meg a [Szolgáltatások kezelése](hr-admin-manage-features.md) oldalt.
 
 ### <a name="register-the-app-in-microsoft-azure"></a>Regisztrálja az alkalmazást a Microsoft Azure-ban
 
-Először az Azure Portal webhelyen kell regisztrálnia az alkalmazást, hogy a Microsoft Identity platform hitelesítési és engedélyezési szolgáltatásokat nyújthasson az alkalmazás és a felhasználók számára. Az alkalmazások Azure-ban való regisztrálásával kapcsolatos további tudnivalókat lásd: [Rövid útmutató: Alkalmazások regisztrálása a Microsoft Identity platformmal](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
+Először az Azure Portal webhelyen kell regisztrálnia a Human Resources példányt, hogy a Microsoft identitásplatform hitelesítési és engedélyezési szolgáltatásokat nyújthasson az alkalmazás és a felhasználók számára. Az alkalmazások Azure-ban való regisztrálásával kapcsolatos további tudnivalókat lásd: [Rövid útmutató: Alkalmazások regisztrálása a Microsoft Identity platformmal](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
 
 1. Nyissa meg a [Microsoft Azure portált](https://portal.azure.com).
 
@@ -121,16 +133,28 @@ A következő lépésben a virtuális entitás adatforrásának a Power Apps kö
 
 7. Válassza ki a **Microsoft HR-adatforrás** rekordot.
 
-8. Adja meg az adatforrás-konfigurációhoz szükséges adatokat.
+8. Adja meg az adatforrás-konfigurációhoz szükséges adatokat:
 
-   - **Cél URL** : A saját HR-névtér URL-je.
-   - **Bérlő azonosítója** : az Azure Active Directory (Azure AD) bérlő azonosítója.
-   - **AAD-alkalmazásazonosító** : Az Microsoft Azure portálon regisztrált alkalmazáshoz létrehozott alkalmazásazonosító (ügyfél-azonosító). Ezt az információt korábban, az [Alkalmazás regisztrálása a Microsoft Azure-ban](hr-admin-integration-common-data-service-virtual-entities.md#register-the-app-in-microsoft-azure) lépésben kapta meg.
-   - **AAD-alkalmazástitok** : A Microsoft Azure portálon regisztrált alkalmazáshoz létrehozott ügyféltitok. Ezt az információt korábban, az [Alkalmazás regisztrálása a Microsoft Azure-ban](hr-admin-integration-common-data-service-virtual-entities.md#register-the-app-in-microsoft-azure) lépésben kapta meg.
+   - **Cél URL**: A saját HR-névtér URL-je. A cél URL formátuma:
+     
+     https://\<hostname\>.hr.talent.dynamics.com/namespaces/\<namespaceID\>/
 
-9. Válassza ki a **Mentés és bezárás** lehetőséget.
+     Példa:
+     
+     `https://aos.rts-sf-5ea54e35c68-westus2.hr.talent.dynamics.com/namespaces/49d24c565-8f4d-4891-b174-bf83d948ed0c/`
+
+     >[!NOTE]
+     >Ügyeljen arra, hogy az URL-cím végén a „**/**” karakter is szerepeljen a hibák elkerülése érdekében.
+
+   - **Bérlő azonosítója**: az Azure Active Directory (Azure AD) bérlő azonosítója.
+
+   - **AAD-alkalmazásazonosító**: Az Microsoft Azure portálon regisztrált alkalmazáshoz létrehozott alkalmazásazonosító (ügyfél-azonosító). Ezt az információt korábban, az [Alkalmazás regisztrálása a Microsoft Azure-ban](hr-admin-integration-common-data-service-virtual-entities.md#register-the-app-in-microsoft-azure) lépésben kapta meg.
+
+   - **AAD-alkalmazástitok**: A Microsoft Azure portálon regisztrált alkalmazáshoz létrehozott ügyféltitok. Ezt az információt korábban, az [Alkalmazás regisztrálása a Microsoft Azure-ban](hr-admin-integration-common-data-service-virtual-entities.md#register-the-app-in-microsoft-azure) lépésben kapta meg.
 
    ![Microsoft HR-adatforrás](./media/hr-admin-integration-virtual-entities-hr-data-source.jpg)
+
+9. Válassza ki a **Mentés és bezárás** lehetőséget.
 
 ### <a name="grant-app-permissions-in-human-resources"></a>Alkalmazásengedélyek kiosztása a HR-ben
 
@@ -149,8 +173,8 @@ Engedélyek kiosztása a HR-ben lévő két Azure AD-alkalmazáshoz:
 
 3. Válassza ki az **Új** lehetőséget egy második alkalmazásrekord létrehozásához:
 
-    - **Ügyfél-azonosító** : f9be0c49-aa22-4ec6-911a-c5da515226ff
-    - **Név** : Dynamics 365 HR Virtual Entity
+    - **Ügyfél-azonosító**: f9be0c49-aa22-4ec6-911a-c5da515226ff
+    - **Név**: Dynamics 365 HR Virtual Entity
     - A **Felhasználóazonosító** mezőben válassza ki azt a felhasználót, aki rendszergazdai jogokkal rendelkezik a HR-modulban és a Power Apps környezetben.
 
 ## <a name="generate-virtual-entities"></a>Virtuális entitások létrehozása
@@ -162,7 +186,7 @@ A telepítés befejezését követően kiválaszthatja, hogy mely virtuális ent
 2. Válassza ki a **Virtuális entitások** lapot.
 
 > [!NOTE]
-> A **Virtuális entitások engedélyezése** váltógombot a rendszer automatikusan az **Igen** értékre állítja, ha befejezte a szükséges beállításokat. Ha a váltógomb értéke **Nem** , tekintse át a dokumentum előző szakaszaiban ismertetett lépéseket, és győződjön meg arról, hogy minden előfeltétel-beállítást befejezett.
+> A **Virtuális entitások engedélyezése** váltógombot a rendszer automatikusan az **Igen** értékre állítja, ha befejezte a szükséges beállításokat. Ha a váltógomb értéke **Nem**, tekintse át a dokumentum előző szakaszaiban ismertetett lépéseket, és győződjön meg arról, hogy minden előfeltétel-beállítást befejezett.
 
 3. Válassza ki a Common Data Service szolgáltatásban létrehozni kívánt entitást vagy entitásokat.
 

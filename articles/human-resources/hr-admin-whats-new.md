@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d8f70e7aa7316241adbbde6c4188c2ae0e640633
-ms.sourcegitcommit: 7537aa8ef619eea6c48467a3ca86e3372415f8a7
+ms.openlocfilehash: 675a3f0faed0ce8be4ce2633585ce8e0cf1c9be7
+ms.sourcegitcommit: 0354ca7e566fbd2eb0aabdd40000d4ac5c44ea78
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "3823527"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "4669084"
 ---
 # <a name="whats-new-or-changed-in-human-resources"></a>Új vagy módosult elemek a Human Resources szolgáltatásban
 
@@ -49,6 +49,8 @@ Ha további tájékoztatást szeretne kapni a hamarosan megjelenő szolgáltatá
 
 Ha tudni szeretné, hogy mi új vagy módosult a Human Resources egyes kétheti verzióiban, tekintse át az alábbi cikkeket:
 
+[2020. december 02.](hr-whats-new-2020-12-02.md)</br>
+[2020. október 22.](hr-whats-new-2020-10-22.md)</br>
 [2020. szeptember 16.](hr-whats-new-2020-09-16.md)</br>
 [2020. szeptember 3.](hr-whats-new-2020-09-03.md)</br>
 [2020. augusztus 20.](hr-whats-new-2020-08-20.md)</br>
@@ -74,6 +76,6 @@ Ha tudni szeretné, hogy mi új vagy módosult a Human Resources egyes kétheti 
 
 ## <a name="see-also"></a>Lásd még
 
-[A Dynamics 365 Human Resources 2019 második kiadási hullámának áttekintése](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[A Dynamics 365 Human Resources 2020. második kiadási hullámának áttekintése](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/)</br>
 [Rendelés frissítése](hr-admin-setup-update-process.md)</br>
 [Szolgáltatások kezelése](hr-admin-manage-features.md)

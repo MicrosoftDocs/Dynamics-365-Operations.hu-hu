@@ -1,5 +1,5 @@
 ---
-title: Automatikus megerősítés a tervezési optimalizációval
+title: Automatikus megerősítés a tervezési optimalizálással
 description: Ez a témakör azt mutatja be, hogyan kell használni az automatikus megerősítést a tervezési optimalizációval.
 author: ChristianRytt
 manager: tfehr
@@ -19,14 +19,14 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-11-30
 ms.dyn365.ops.version: AX 10.0.7
-ms.openlocfilehash: e412ccbc7c44d41e0a70ef8b5436901e01c671e6
-ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
+ms.openlocfilehash: 61e9e6aa660bc0828645c6bf1f2655539804831a
+ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "3383688"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "4594526"
 ---
-# <a name="auto-firming-with-planning-optimization"></a>Automatikus megerősítés a tervezési optimalizációval
+# <a name="autofirming-with-planning-optimization"></a>Automatikus megerősítés a tervezési optimalizálással
 
 [!include [banner](../../includes/banner.md)]
 
@@ -35,7 +35,7 @@ Az automatikus megerősítéssel az Alaptervezési folyamat részeként megerős
 > [!NOTE]
 > A tervezett beszerzési rendelés automatikus megerősítése csak akkor lehetséges, ha a cikk társítva van szállítóval.
 
-## <a name="turn-on-auto-firming"></a>Automatikus megerősítés bekapcsolása
+## <a name="turn-on-autofirming"></a>Automatikus megerősítés bekapcsolása
 
 Ha be szeretné kapcsolni az automatikus megerősítést, hajtsa végre az alábbi lépéseket.
 
@@ -48,7 +48,7 @@ A megerősítési időkorlátot a program az alaptervezés-futtatás dátumátó
 
 - A fedezeti csoport alapértelmezett megerősítési időkorlátjának megadásához nyissa meg az **Alaptervezés** \> **Beállítás** \> **Fedezet** \> **Fedezeti csoportok**, és válasszon ki egy fedezeti csoportot. Ezután a **Egyéb** gyorslap **automatikus megerősítési időkorlátja (nap)** mezőjébe írja be a napok számát.
 - Ha felül szeretné írni egy adott cikk fedezeti csoportjához definiált megerősítési időkorlátot, akkor a **Termékadatok kezelése** \> **Kiadott termékek** pontra lépjen, majd a Művelet panelen válassza ki a **Terv** elemet , majd válassza a **Cikk fedezete** elemet. Ezután az **Általános** lapon jelölje be az **Időkorlát felülbírálása** elemet, és az **automatikus megerősítés időkorlátja (nap)** mezőben adja meg a napok számát.
-- Ha felül szeretné írni a fedezeti csoporthoz tartozó megerősítési időkorlátot és az adott alaptervezéshez tartozó cikkfedezetet, lépjen az **Alaptervezés** \> **Beállítás** \> **Alaptervek** pontra, és válasszon alaptervet. Ezután az **Időkorlát napokban** gyorslapon állítsa a **Befagyasztás** értékét **Igen** értékre, majd adja meg a napok számát.
+- Ha felül szeretné írni a fedezeti csoporthoz tartozó megerősítési időkorlátot és az adott alaptervezéshez tartozó cikkfedezetet, lépjen az **Alaptervezés** \> **Beállítás** \> **Alaptervek** pontra, és válasszon alaptervet. Ezután az **Időkorlát napokban** gyorslapon állítsa a **Megerősítés** értékét **Igen** értékre, majd adja meg a napok számát.
 
 Ha az automatikus megerősítés be van kapcsolva egy olyan alaptervezéshez, amely tervezési optimalizációt alkalmaz, az automatikus megerősítési folyamat az automatikus megerősítési beállításnak megfelelően történik. Ha nincs bekapcsolva az automatikus megerősítés, vagy ha a tervezés a **nettó szükségletek** oldalon kezdődik, akkor a rendszer kihagyja az automatikus megerősítési folyamatot.
 

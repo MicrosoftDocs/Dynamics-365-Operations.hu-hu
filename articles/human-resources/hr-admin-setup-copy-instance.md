@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 6b52b696d323df6bafead2418ae322d1a9cdf64a
-ms.sourcegitcommit: ec4df354602c20f48f8581bfe5be0c04c66d2927
+ms.openlocfilehash: 40ca0a4d9733fc2a163daa4ea1c27a3bfae6d3bf
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "3706228"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527837"
 ---
 # <a name="copy-an-instance"></a>Példány másolása
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 A Microsoft Dynamics Lifecycle Services (LCS) szolgáltatással átmásolhat egy Microsoft Dynamics 365 Human Resources-adatbázist egy védőfalkörnyezetbe. Ha van másik tesztkörnyezete, akkor abból a környezetből is másolható az adatbázis a célként kiválasztott tesztkörnyezetbe.
 
@@ -86,7 +88,7 @@ A rendszer nem másolja át a következő adatelemeket a Human Resources példá
 
 - E-mail-címek a **LogisticsElectronicAddress** táblában
 
-- A kötegelt feladat előzményei a **BatchJobHistory**, a **BatchHistory**és a **BatchConstraintHistory** táblákban
+- A kötegelt feladat előzményei a **BatchJobHistory**, a **BatchHistory** és a **BatchConstraintHistory** táblákban
 
 - A Simple Mail Transfer Protocol (SMTP)-jelszó a **SysEmailSMTPPassword** táblában
 

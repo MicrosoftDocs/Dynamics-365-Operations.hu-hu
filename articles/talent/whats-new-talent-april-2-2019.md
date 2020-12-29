@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-04-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 68dc73b7316a3ceb7129c9ea46bc60669ed2be95
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 04b5a006d4580fe419d81986a90851bc8d611722
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2896930"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528219"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-april-2-2019"></a>Új vagy módosult elemek a Dynamics 365 Talent (2019. április 2.) szolgáltatásban
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Ez a témakör a Dynamics 365 Talent új vagy módosított szolgáltatásait írja le.
 
@@ -54,8 +56,8 @@ Attract és Onboard megoldásokban a végfelhasználók által naplózott probl�
 ## <a name="changes-in-core-hr"></a>A Core HR módosításai
 A szakaszban ismertetett módosítások a 8.1.2216-ös buildre vonatkoznak.
 
-### <a name="platform-update-25-for-finance-and-operations"></a>Platform update 25 a Finance and Operations szolgáltatáshoz
-További információ a Finance and Operations 25-es platformfrissítésről (Platform update 25): [Előzetes funkciók a Dynamics 365 for Finance and Operations platform update 25-ös verziójában (2019. április)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-25).
+### <a name="platform-update-25-for-finance-and-operations"></a>A Finance and Operations 25-es platformfrissítése
+A Finance and Operations 25. Platform frissítésével kapcsolatos további tudnivalókat lásd: [Előzets funkciók a Dynamics 365 for Finance and Operations 25. platformfrissítésében (2019. április)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-25).
 
 ###  <a name="advanced-compensation-security-fixed-and-variable"></a>Haladó kompenzációs biztonsági (fix és változó)
 Számos vállalatnál a kompenzációkért és juttatásokért felelős vezetők előfordulhat, hogy csak a bizonyos kompenzációs rekordokhoz férnek hozzá. Ezeket a rekordokat tartalmazhatnak a vezetőkhöz és regionális alkalmazottakhoz Ez a módosítás lehetővé teszi a HR számára kompenzációs tervek kezelését és karbantartását a szervezet különböző alkalmazottcsoportjaihoz. Biztonsági szerepköröket rendelhet a fix és változó konstrukciókhoz. Ezek a biztonsági szerepkörök szabályozzák a konstrukciók és a kapcsolódó alkalmazott adatok, például a fizetés vagy bónuszrekordok elérést, hogy csak ezek dolgozhassanak fel kompenzációt az alkalmazotti csoportokhoz.
@@ -77,4 +79,4 @@ Előfordulhat, hogy a szervezetek okkódok beállítását kérik, bizonyos táv
 Ez a módosítással az ismétlődések észleli a program, amikor névmezőket ad meg, és egy állapot jelenik meg a talált ismétlődések számával. A hivatkozás kiválasztásával megnyithat egy új lapot, hogy megállapítsa, hogy használja-e az észlelt egyezést. Az adatbevitel megzavarása elkerülése érdekében az ismétlődéseket tartalmazó űrlap nem nyílik meg automatikusan.
 
 ###  <a name="email-support-for-alerts"></a>E-mailek támogatása figyelmeztetésekhez
-A Finance and Operations 25-ös platformfrissítésében a felhasználók létrehozhatnak figyelmeztetési szabályokat, amely automatikusan értesítő e-maileket küldenek, a kapcsolattartóknak, ha egy esemény kezdeményezi az értesítést. 
+A Finance and Operations 25-ös platformfrissítésével a felhasználók létrehozhatnak figyelmeztetési szabályokat, amely automatikusan értesítő e-maileket küldenek, a kapcsolattartóknak, ha egy esemény kezdeményezi azt. 

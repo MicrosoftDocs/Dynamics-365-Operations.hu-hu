@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-06-11
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: f2ee23733d686480cd4323cab952ae12eceaf142
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 20dc0768463d9a5d6762cb062deb0bdbe4d53fe3
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897580"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528669"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-june-11-2019"></a>A Dynamics 365 Talent új és módosult elemei (2019. június 11.)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Ez a témakör a Microsoft Dynamics 365 Talent új vagy módosított szolgáltatásait írja le.
 
@@ -54,9 +56,9 @@ A kiadás a Dynamics 365 Talent: Onboard apró hibáinak javításait is tartalm
 
 A szakaszban ismertetett módosítások a 8.1.2337-ös buildre vonatkoznak.
 
-### <a name="platform-update-27-for-finance-and-operations"></a>Platform update 27 a Finance and Operations szolgáltatáshoz
+### <a name="platform-update-27-for-finance-and-operations"></a>A Finance and Operations 27-es platformfrissítése
 
-További információ a Finance and Operations 27-es platformfrissítésről (Platform update 27): [Előzetes funkciók a Dynamics 365 Finance and Operations platform update 27-es verziójában (2019. június)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-27).
+További információ a Finance and Operations 27-es platformfrissítésről (Platform update 27): [Előzetes funkciók a Dynamics 365 Finance and Operations platform update 27 verziójában (2019. június)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-27).
 
 ### <a name="feature-management-workspace-in-talent"></a>A funkciókezelési munkaterület a Talentben
 

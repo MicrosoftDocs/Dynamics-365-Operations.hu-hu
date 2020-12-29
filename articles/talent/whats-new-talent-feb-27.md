@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-02-27
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: d0fdc9f056ea494cf52e8483b901070dae0bcd29
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: afa1044c8adc9566149e20ade57e771b50d9c53f
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897672"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4529138"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-february-27-2019"></a>Új vagy módosult elemek a Dynamics 365 Talent szolgáltatásban (2019. február 27.)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Ez a témakör a Microsoft Dynamics 365 Talent új vagy módosított szolgáltatásait írja le.
 
@@ -75,9 +77,9 @@ Ebben a verzióban számos kisebb hibajavítás is található.
 
 Számos vállalatnál a kompenzációkért és juttatásokért felelős vezetők előfordulhat, hogy csak a bizonyos kompenzációs rekordokhoz férnek hozzá. Ezeket a rekordok a vezetőkhöz és regionális alkalmazottak hoz tartozhatnak. Ez a módosítás lehetővé teszi az Emberi erőforrások osztály (HR) számára a kompenzációs tervek kezelését és karbantartását a szervezet különböző alkalmazottcsoportjaihoz. A biztonsági szerepkörök, amelyek hozzárendelhetők fix és változó kompenzációs tervekhez, határozzák meg a hozzáférést ezekhez a tervekhez és a hozzájuk kapcsolódó alkalmazotti adatokhoz (például fizetési adatok és a bónuszrekordok). Csak a kulcsfontosságú szerepkörök, amelyek rendelkeznek a meghatározott hozzáféréssel tudnak kompenzációt feldolgozni azokhoz az alkalmazottakhoz.
 
-### <a name="platform-update-24-for-finance-and-operations"></a>Platform update 24 a Finance and Operations szolgáltatáshoz
+### <a name="platform-update-24-for-finance-and-operations"></a>A Finance and Operations 24-es platformfrissítése
 
-További információért a Microsoft Dynamics 365 Finance and Operations 24-es platformfrissítéséről (2019.március ) lásd: [Előzetes funkciók a Finance and Operations Platform Update 24 (2019. márciusi) verziójában](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24).
+További információért a Microsoft Dynamics 365 Finance and Operations 24-es platformfrissítéséről (2019.március ) lásd: [Előzetes funkciók a Finance and Operations Platform Update 24 (2019. március)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24) verziójában.
 
 ### <a name="make-employee-fixed-compensation-available-for-future-position-assignments"></a>Az alkalmazott fix kompenzációja elérhetők jövőbeli beosztás-hozzárendelésekhez
 
@@ -98,19 +100,19 @@ A meglévő sablon frissítéséhez, kövesse az alábbi lépéseket.
 
     - **Munkabeosztások munkákhoz:** Távolítsa el ezt a leképezést.
     - **Munkabeosztások munkákhoz Szülő munkahozzárendelés** Távolítsa el ezt a leképezést.
-    - **Munkabeosztások Alapbeosztásokhoz:** Adjon hozzá új leképezést a **Munkabeosztások** Common Data Service entitáshoz az **Alapbeosztás** Finance and Operations entitáshoz. Helyezze át a sorozat 7 pozíciójába.
+    - **Munkabeosztások Alapbeosztásokhoz**: Adjon hozzá új leképezést a **Munkabeosztások** Common Data Service entitáshoz az **Alapbeosztás** Finance and Operations entitáshoz. Helyezze át a sorozat 7 pozíciójába.
 
         [![Feladatbeosztások Alapbeosztásokhoz leképezése](./media/CDS-Mapping1.png)](./media/CDS-Mapping1.png)
 
-    - **Munkabeosztások a Beosztásrészletekhez:** Adjon hozzá új leképezést a **Munkabeosztások** Common Data Service entitáshoz a **Beosztásrészletek** Finance and Operations entitáshoz. Helyezze át a sorozat 8 pozíciójába.
+    - **Munkabeosztások beosztások részleteihez**: Adjon hozzá új leképezést a **Munkabeosztások** Common Data Service entitáshoz az **Beosztás részletei** Finance and Operations entitáshoz. Helyezze át a sorozat 8 pozíciójába.
 
         [![Feladatbeosztások Beosztásrészletekhez leképezése](./media/CDS-Mapping2.png)](./media/CDS-Mapping2.png)
 
-    - **Munkabeosztások a Beosztásidőtartamokhoz:** Adjon hozzá új leképezést a **Munkabeosztások** Common Data Service entitáshoz a **Beosztásidőtartamok** Finance and Operations entitáshoz.
+    - **Munkabeosztások beosztások időtartamához**: Adjon hozzá új leképezést a **Munkabeosztások** Common Data Service entitáshoz az **Beosztás időtartama** Finance and Operations entitáshoz.
 
         [![Feladatbeosztások Beosztásidőtartamokhoz leképezése](./media/CDS-Mapping3.png)](./media/CDS-Mapping3.png)
 
-    - **Munkabeosztások a Beosztáshierarchiákhoz:** Adjon hozzá új leképezést a **Munkabeosztások** Common Data Service entitáshoz a **Beosztáshierarchiák** Finance and Operations entitáshoz. Válassza **Speciális lekérdezés** lehetőséget, hogy a speciális lekérdezést elérhetővé tegye a projekt számára.
+    - **Munkabeosztások beosztások hierarchiáihoz**: Adjon hozzá új leképezést a **Munkabeosztások** Common Data Service entitáshoz az **Beosztáshierarchiák** Finance and Operations entitáshoz. Válassza **Speciális lekérdezés** lehetőséget, hogy a speciális lekérdezést elérhetővé tegye a projekt számára.
 
        [![Speciális lekérdezés gomb](./media/CDS-Advanced-Query.png)](./media/CDS-Advanced-Query.png)
 
@@ -131,7 +133,7 @@ A meglévő sablon frissítéséhez, kövesse az alábbi lépéseket.
         [![Feltételes oszlop hozzáadása parancs](./media/Add-column.png)](./media/Add-column.png)
 
     6. A **Feltételes oszlop hozzáadása** párbeszédpanelen adja meg a **HIERARCHYTYPENAME** értéket az új oszlop nevének.
-    7. A **Ha** részében a feltételnek, jelölje ki bármlyik mezőt, használja az **egyenlő** lehetőséget kapcsolatnak, és adjon meg bármilyen értéket. Az ***Akkor** és **Máskülönben** részeiben a feltételnek, adja meg a szükséges alapértelmezett értéket. Ebben az esetben adja meg **Sor** elemet mindkét résznél.
+    7. A **Ha** részében a feltételnek, jelölje ki bármlyik mezőt, használja az **egyenlő** lehetőséget kapcsolatnak, és adjon meg bármilyen értéket. Az **_Akkor_* és **Máskülönben** részeiben a feltételnek, adja meg a szükséges alapértelmezett értéket. Ebben az esetben adja meg **Sor** elemet mindkét résznél.
 
         [![Feltételes oszlop hozzáadása párbeszédpanel](./media/Add-conditional-column.png)](./media/Add-conditional-column.png)
 

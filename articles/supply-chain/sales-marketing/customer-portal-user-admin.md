@@ -15,14 +15,16 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: a751cbffd98b8d47ca7dad222f0ce374381a393d
-ms.sourcegitcommit: 074fe7e77feb795148c3daf2e6ccbb8a88679343
+ms.openlocfilehash: e2001d5c0b17ecadf4cb42529d9beb4b3b81805a
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "3645313"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528293"
 ---
 # <a name="create-and-manage-customer-portal-users"></a>Ügyfélportál felhasználóinak létrehozása és kezelése
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 A „gyári” implementációban nincs mód arra, hogy a felhasználók önállóan regisztrálhatják magukat a Ügyfélportál segítségével létrehozott webhelyeken. A bejelentkezéshez és a webhely használatához a felhasználókat az adminisztrátornak kell meghívnia. A Microsoft szándékosan zárolta a lehetőséget, hogy a felhasználók önállóan regisztrálhatják magukat.
 

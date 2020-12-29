@@ -18,16 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: e00a54db50f1360096bb5329eef660927cecde3d
-ms.sourcegitcommit: 4359e7e4eec25362df61c9a26c7218604d12da3d
+ms.openlocfilehash: 97385da9d258cc169a9976be7c7798faa41661c3
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "3078043"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527693"
 ---
 # <a name="source-candidates-with-talent-pools-in-attract"></a>Jelöltek keresése tehetségállományokkal az Attract szolgáltatásban
 
 [!include [banner](includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 A felvételi vezetők és a toborzók az Attract szaktudásgyűjtők funkciójával rendezhetik a jelölteket. A szaktudásgyűjtők segítségével nyomon követhetők a pályázók, akik állásra jelentkeznek a vállalatnál, és tartható a kapcsolat velük.
 
@@ -50,7 +52,7 @@ Kövesse az alábbi lépéseket szaktudásgyűjtő létrehozásához és megoszt
      > [!NOTE]
      > Azt is megteheti, hogy hozzáadja a közreműködőket a szaktudásgyűjtőhöz a létrehozását követően. A szaktudásgyűjtőhöz való hozzáférések is kezelhetők. Például egy felhasználó hozzáférése a szaktudásgyűjtőhöz visszavonható.
      > - Résztvevők hozzáadásához a meglévő, saját szaktudásgyűjtőhöz, a **Saját szaktudásgyűjtők** lapon, a szaktudásgyűjtő kártya jobb felső részén, válassza (**...**) gombot, majd válassza a **Szerkesztés** elemet. Személyek megkeresése a névjegyzék alapján, és a hozzáadása a listához. 
-     > - A szaktudásgyűjtőhoz való felhasználói hozzáférés visszavonásához, a képernyő a szaktudásgyűjtő kártya jobb felső sarkában, válassza a (**...**) gombot, majd válassza a **Szerkesztés**lehetőséget. A **Hozzáférés kezelése** lapon válassza a kuka gombot a felhasználó mellett.
+     > - A szaktudásgyűjtőhoz való felhasználói hozzáférés visszavonásához, a képernyő a szaktudásgyűjtő kártya jobb felső sarkában, válassza a (**...**) gombot, majd válassza a **Szerkesztés** lehetőséget. A **Hozzáférés kezelése** lapon válassza a kuka gombot a felhasználó mellett.
 
 6. Válassza a **Frissítés** elemet a művelet befejezéséhez és mentéséhez.
 
@@ -113,7 +115,7 @@ Minden felhasználó rendelkezik a pályázói profilok közös nézetével. A *
 
 - A **Dokumentumok** lap megjeleníti dokumentumokat, amelyeket a pályázó hozzáadott a profilból vagy az álláspályázatok során. Ezen lap használatával lehet kezelni a jelölt önéletrajzát, kísérőlevelét, portfóliómunkáját stb. A lap használatával dokumentumokat hozzáadni is lehet.
 
-    A dokumentum megtekintéséhez jelölje ki a dokumentumnevet a dokumentumok listáján. Megtekintheti a Microsoft Word dokumentumokat az alkalmazásban a Microsoft Office 365 használatával. Letöltheti a dokumentumokat a helyi számítógépre a **Letöltés** lehetőség használatával minden dokuemtum esetében.
+    A dokumentum megtekintéséhez jelölje ki a dokumentumnevet a dokumentumok listáján. Megtekintheti a Microsoft Word dokumentumokat az alkalmazásban a Microsoft 365 használatával. Letöltheti a dokumentumokat a helyi számítógépre a **Letöltés** lehetőség használatával minden dokuemtum esetében.
 
 - A **LinkedIn** lap a jelölt LinkedIn információit jeleníti meg. Ezen a lapon, kapcsolatot kell létesítenie a felhasználói beállítások és a LinkedIn-fiók között, és a környezet LinkedIn Recruiter kapcsolatát létre kell hozni. További információ: [Jelöltek felkutatása a LinkedIn Recruiter használatával a Microsoft Dynamics 365 Talent – Attract szolgáltatásban](./attract-linkedin-recruiter.md).
 

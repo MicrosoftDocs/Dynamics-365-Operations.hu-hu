@@ -3,7 +3,7 @@ title: Vegyes valóság útmutató a termelésben dolgozók számára
 description: Ez a témakör azt mutatja be, hogyan lehet integrálni a Microsoft Dynamics 365 Supply Chain Management modulját a Dynamics 365 Guides alkalmazással.
 author: cabeln
 manager: tfehr
-ms.date: 09/29/2020
+ms.date: 11/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,14 +19,16 @@ ms.search.industry: Manufacturing
 ms.author: cabeln
 ms.search.validFrom: 2020-08-01
 ms.dyn365.ops.version: AX 10.0.15
-ms.openlocfilehash: 14645f592275d07a6b633146bb6da35b89c1bf77
-ms.sourcegitcommit: 6d2fc497c8a7f49c48e7662995e27b5f8cc10296
+ms.openlocfilehash: 727a3bc50ea55259c7260a9d060dac59473ee3c1
+ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "4000978"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4645144"
 ---
 # <a name="provide-mixed-reality-guides-for-workers-in-production"></a>Vegyes valóság útmutató a termelésben dolgozók számára
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 A termelésben dolgozók számára hasznos, ha a megfelelő időben rendelkezésre állnak a munkájukra vonatkozó megfelelő utasítások. Az *Utasítások* számos területen használhatók, ilyenek többek között: összeállítás, szerviz, műveletek, minősítés és munkavédelem. Ezeknél az alapvető vállalati funkcióknál a folyamatos betanító utasítások segítséget jelentenek a dolgozóknak a jobb teljesítményhez és a pontosabb munkavégzéshez.
 
@@ -124,10 +126,9 @@ Az Útmutatók üzemben használt felületének konfigurálásához folytassa it
 
 Állítsa be a következő mezőket:
 
-- **Common Data Service-környezeti altartomány** – A mezőnek már tartalmaznia kell értéket. A mező annak a Common Data Service környezetnek az altartományát tartalmazza, ahol Ön létrehozza az Útmutatókat. Az altartomány az URL-cím első része, és általában a szervezet nevét tartalmazza. Ha például a Common Data Service URL-cím „contoso.crm4.dynamics.com”, akkor itt a *contoso* szót kell megadnia. Ez az érték használatos az útmutatók címeinek összeállításához, és beleíródik a QR-kódba.
+- **Microsoft Dataverse URL-cím** – A Microsoft Dataverse környezet URL-címének megadása, ahol létrehozza a Guides elemet. A formátum „contoso.crm4.dynamics.com”, ahol az URL-cím első fele általában a szervezet neve (pl. „contoso”), a második rész a környezet adatrégiójára vonatkozik (pl. „crm4.”), az utolsó rész pedig a tartomány (pl. „dynamics.com”). A helyes URL-cím megkeresésének egyik módja a [home.dynamics.com](https://home.dynamics.com/) megnyitása, majd a Guides alkalmazás megnyitása. Amikor a Guides megnyílik, megtekintheti az URL-címet a böngésző címsorában (csak az alap URL-cím, amely az előző példához hasonlít). Ez az érték használatos az útmutatók címeinek összeállításához, és beleíródik a QR-kódba."
 - **QR-kód mérete** – Beállítja a megjelenített QR-kód méretét. Olyan méret választása ajánlott, amely kitölti a képernyő nagy részét, de nem nagyobb. Általában a *15* a megfelelő méret.
 - **QR-kód hibajavító szintje** – Beállítja a QR-kód részletességét. A magasabb részletességgel növelheti a kód megbízhatóságát, de a **QR-kódnak** elég nagynak kell lennie ahhoz, hogy támogassa a kiválasztott korrekciós szinthez szükséges részletességi szintet.
-
 
 > [!TIP]
 > - A túl nagy méretű QR-kódok megjelenítése egy kicsit hosszabb időt igényel, majd le kell kicsinyíteni, hogy ráférjen a képernyőre. Ezek miatt nem előnyös.

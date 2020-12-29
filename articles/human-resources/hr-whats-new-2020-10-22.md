@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-10-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e5c66d8695ee0ff41e81c699a5d5a37075470059
-ms.sourcegitcommit: 776758a0ff95c3c7398986095104d1d2b9814514
+ms.openlocfilehash: 513fc3b35f0b6a7f5d9703d2b5eb4109289a189a
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "4107536"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4529982"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-october-22-2020"></a>Új vagy módosult elemek a Dynamics 365 Human Resources szolgáltatásban (2020. október 22.)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Ez a témakör a Dynamics 365 Human Resources új, módosított vagy nemsokára várható szolgáltatásait írja le. A frissítési folyamattal és ütemezéssel kapcsolatos további tudnivalókért lásd: [Frissítési folyamat](hr-admin-setup-update-process.md).
 
@@ -60,7 +62,7 @@ Ez a kiadás az alábbi hibajavításokat tartalmazza.
 | 505347 | A betanításkezelők elküldhetnek egy szabadságkérelmet egy alkalmazottnak, ha engedélyezték a Korszerű dolgozó funkciót. | A HR-segéd és a HR-vezető kivételével a szerepkörök nem nyújthatnak be szabadságkérelmeket az alkalmazottak számára. |
 | 513490 | Juttatáskezelések naplózása: naplózás hozzáadása a lefedettségi opció nélküli tervekhez. | Engedélyeztók az eredmények naplózását a **lefedettségi opció nélküli tervekhez**. Most már megjelennek a **Feldolgozás eredménye** táblázatban, és helyes a sorrendjük a képernyő felső részén. |
 | 517021 | Nem lehet egynél több tervet ugyanazzal a **Tervtípus** kóddal kiválasztani, ha a **Tervtípushoz** egyetlen beléptetés van típusonként. | Megváltoztattuk azoknak a terveknek a korlátozását, amelyeknél csak egy beléptetés engedélyezett. A korlátozások most a **Tervtípuskód** helyett a **Tervtípus** szinten találhatók. Ez a módosítás lehetővé teszi a HSA és az FSA – mindkettő ugyanolyan típusú – tervezését, de külön **Tervtípuskódot** adhat nekik. Így egyszerre mindkettőt kiválaszthatja ugyanarra a beléptetési időszakra is. |
-| 444791 | Nem tekinthető meg a kompenzáció az Alkalmazotti önkiszolgáló szolgáltatásban, ha a kompenzációs tervben bekapcsolták a **Hozzáférés korlátozását**. | Az Alkalmazotti önkiszolgáló **Kompenzáció** kártyáján az aktuális kompenzáció összege és a százalékos érték növelése 0, ha az alkalmazottat egy olyan tervbe léptették be, amely **korlátozza a hozzáférést** , és meghatározott szerepkörökhöz rendelték. Megoldottuk a problémát, így az alkalmazott és a vezető bármikor megtekintheti saját maga és a nekik közvetlenül jelentést tevők kompenzációs adatait. |
+| 444791 | Nem tekinthető meg a kompenzáció az Alkalmazotti önkiszolgáló szolgáltatásban, ha a kompenzációs tervben bekapcsolták a **Hozzáférés korlátozását**. | Az Alkalmazotti önkiszolgáló **Kompenzáció** kártyáján az aktuális kompenzáció összege és a százalékos érték növelése 0, ha az alkalmazottat egy olyan tervbe léptették be, amely **korlátozza a hozzáférést**, és meghatározott szerepkörökhöz rendelték. Megoldottuk a problémát, így az alkalmazott és a vezető bármikor megtekintheti saját maga és a nekik közvetlenül jelentést tevők kompenzációs adatait. |
 | 457542 | A tanfolyami részletek frissítése a tanfolyam lezárása után nem módosítja a tanfolyamo résztvevő alkalmazottra vonatkozó ugyanazon adatokat. | Az alkalmazotti adatok most már megfelelően frissülnek, amikor egy tanfolyami részletet módosítanak egy tanfolyam lezárása és újbóli megnyitása után. |
 | 515342 | Nem szúrhatók be adatok a **CDSLeaveRequestDetailEntity** segítségével. A vállalat nem található, vagy nem létezik. | Most már beszúrhatók adatok a **CDSLeaveRequestDetailEntity** segítségével. |
 | 514743 | Hiba az **E-mail-paraméter** űrlapon a Microsoft Exchange használata során. | A „Fájlok betöltése vagy összeállítása sikertelen...” üzenet az **E-mail paraméterek** oldalon látható, amikor az e-mail-szolgáltató beállítása **Árfolyam**. Ez a javítás azt is lehetővé teszi, hogy az **E-mail-paraméterek** lap töltése és mentése a várakozásnak megfelelően történjen. |

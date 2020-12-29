@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e67882c47ad37805c6f6ce8051fb58363c4bcdcf
-ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
+ms.openlocfilehash: 010920cc84897dc5d2cfc008aa04544db6b08a73
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3091991"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528317"
 ---
 # <a name="overview"></a>Áttekintés
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Ez a fejlesztői útmutató API és egyéni mezők hivatkozását tartalmazza. Tájékoztatást ad a többi alkalmazással való integrálásról is.
 
@@ -43,7 +45,7 @@ Ez a fejlesztői útmutató API és egyéni mezők hivatkozását tartalmazza. T
   - [A Finance szolgáltatással való integráció konfigurálása](hr-admin-integration-finance.md)
   - [A Dayforce szolgáltatással való integráció konfigurálása](hr-admin-integration-dayforce.md)
   - [Ismétlődő adatexportálási alkalmazás létrehozása](hr-admin-integration-recurring-data-export.md)
-  - Integrálás az Office-szal
+  - Integráció az Office-szal
     - [Office-integrációs oktatóanyag](../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/talent/toc.json)
     - [Entitás adatainak frissítése az Excel alkalmazásban](../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/unified-operations/talent/toc.json)
     - [Az Excel programban történő megnyitási élmények létrehozása](../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/unified-operations/talent/toc.json)

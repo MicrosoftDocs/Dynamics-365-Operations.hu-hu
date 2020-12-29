@@ -15,20 +15,22 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: e3ab79bc9203309c0cfa1ff18f75580297ae1001
-ms.sourcegitcommit: 713b5dfc76a6875d0ba6d86c5cbd585ea502cf9d
+ms.openlocfilehash: 7849f354817f189bf7c844bbe2944f94c8fffe83
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "3413972"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527363"
 ---
 # <a name="customize-and-use-the-customer-portal"></a>Ügyfélportál testre szabása és használata
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Ez a témakör bemutatja azokat a különböző lapokat, amelyek a Ügyfélportál modulban gyári kiépítésben elérhetők. Bemutatja, hogy mire képesek a lapok, illetve hogyan lehet ezeket testre szabni.
 
 A Ügyfélportál néhány weblapot és műveletet kínál már gyári állapotban is. A következő oldaltérkép áttekintést nyújt ezekről a weboldalakról és műveletekről, valamint a műveletek végrehajtására képes szerepkörökről.
 
-![![Ügyfélportál oldaltérképe](media/customer-portal-site-map.png "Ügyfélportál oldaltérképe")](media/customer-portal-site-map.png "Customer portal site map")
+![Ügyfélportál oldaltérképe](media/customer-portal-site-map.png "Ügyfélportál oldaltérképe")
 
 ## <a name="typical-customizations"></a>Jellemző testreszabások
 
@@ -62,28 +64,28 @@ Itt megtekintheti a rendelésnek az Ügyfélportálról történő elküldésér
     - **Igénylés száma** – Adja meg a rendelés igénylési számát. A mező kitöltése nem kötelező.
     - **Szállítás országa/régiója** – Adja meg azt az országot vagy régiót, ahová a cikkeket szállítani fogják. Ez a mező automatikusan be van állítva a nem rendszergazdai felhasználók számára.
 
-    ![![Rendelés adatai lap](media/customer-portal-order-information.png "Rendelés adatai lap")](media/customer-portal-order-information.png "Order Information page")
+    ![Rendelés adatai lap](media/customer-portal-order-information.png "Rendelés adatai lap")
 
 1. Válassza ki **Következő** lehetőséget.
 1. A **Cikkek** oldalon válassza a **Cikk hozzáadása** lehetőséget.
 
-    ![![Cikkek oldal](media/customer-portal-items.png "Cikkek oldal")](media/customer-portal-items.png "Items page")
+    ![Cikkek oldal](media/customer-portal-items.png "Cikkek oldal")
 
 1. A **Cikkinformáció** párbeszédpanelen a következő mezőket állítsa be:
 
     - **Terméknév** – A rendeléshez hozzáadandó termék keresése és kiválasztása.
     - **Mennyiség** – Adja meg a kiválasztott termék mennyiségét.
-    - **Egység** – Adja meg a mértékegységet (például **ea.**, **kg**vagy **doboz**).
+    - **Egység** – Adja meg a mértékegységet (például **ea.**, **kg** vagy **doboz**).
     - **Becsült nettó összeg** – Az érték számítása a kiválasztott egységhez tartozó mennyiség × a cikk becsült ára alapján történik.
 
-    ![![Cikkinformáció párbeszédpanel](media/customer-portal-item-information.png "Cikkinformáció párbeszédpanel")](media/customer-portal-item-information.png "Item Information dialog box")
+    ![Cikkinformáció párbeszédpanel](media/customer-portal-item-information.png "Cikkinformáció párbeszédpanel")
 
 1. Az **Beküldés** gombot választva vegye fel a cikket a rendelésbe.
 1. Ismételje meg a 4–6. lépést, amíg fel nem vette az összes megrendelni kívánt cikket.
 1. Amikor befejezte a cikkek hozzáadását, válassza a **Tovább** lehetőséget a **Cikkek** oldalon.
 1. A **Rendelés adatai** lap a rendelés összesítését tartalmazza. A rendelés tartalmának és a szállítási adatoknak az áttekintése. Ha minden megfelelőnek látszik, akkor a rendelés elküldéséhez válassza az **Elküldés** lehetőséget.
 
-    ![![Rendelés adatai lap](media/customer-portal-order-submit.png "Rendelés adatai lap")](media/customer-portal-order-submit.png "Order Information page")
+    ![Rendelés adatai lap](media/customer-portal-order-submit.png "Rendelés adatai lap")
 
 ### <a name="standard-data-setup"></a>Standard adatbeállítás
 
@@ -129,7 +131,7 @@ A cikkek esetében a következő mezők kötelezők:
 
 - **Termék** – A megrendelendő termék
 - **Mennyiség** – A kiválasztott termék mennyisége
-- **Egység** – A mértékegység (például **ea.**, **kg**vagy **doboz**)
+- **Egység** – A mértékegység (például **ea.**, **kg** vagy **doboz**)
 - **Szállítás országa/régiója** – A szállítás országa vagy régiója
 - **Szállítási cím leírása** – A rendelés szállítási címe
 
@@ -148,19 +150,19 @@ A Ügyfélportál összes vezérlője beépített Power Apps portálvezérlő. E
 
 Az Ügyfélportál sablonban szereplő egyetlen egyéni vezérlő a kezdőlapon lévő csempék létrehozásához használatos.
 
-![![A kezdőlap csempéi](media/customer-portal-home-page-tiles.png "A kezdőlap csempéi")](media/customer-portal-home-page-tiles.png "Tiles on the home page")
+![A kezdőlap csempéi](media/customer-portal-home-page-tiles.png "A kezdőlap csempéi")
 
 A csempék módosításához kövesse az alábbi lépéseket.
 
 1. Nyissa meg a [Portálkezelő alkalmazást](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-portal).
 1. A bal oldali navigációs ablakban válassza ki az **Oldalsablonok** lehetőséget.
 
-    ![![A portálkezelő navigációs panel](media/customer-portal-nav.png "A portálkezelő navigációs panel")](media/customer-portal-nav.png "Portal Management navigation pane")
+    ![A portálkezelő navigációs panel](media/customer-portal-nav.png "A portálkezelő navigációs panel")
 
 1. Válassza ki az **Otthon** nevű oldalsablont.
 1. A **Webes sablon** mezőben válassza ki a **Kezdőlap** hivatkozását a lap forráskódjának megnyitásához.
 
-    ![![Webes sablon mező](media/customer-portal-web-template.png "Webes sablon mező")](media/customer-portal-web-template.png "Web Template field")
+    ![Webes sablon mező](media/customer-portal-web-template.png "Webes sablon mező")
 
 1. Most látja a kezdőlap összes forráskódját, és azt igény szerint módosíthatja.
 

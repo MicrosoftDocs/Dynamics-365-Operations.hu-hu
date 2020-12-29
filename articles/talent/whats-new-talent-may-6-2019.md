@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: f06d989ea4e927111729dfbd4bb7700745a16a54
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: c04af27bcc446b516f14125e71fb707bfd1d7708
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897511"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4529708"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-may-6-2019"></a>Új vagy módosult elemek a Dynamics 365 Talent szolgáltatásban (2019. május 6.)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Ez a témakör a Dynamics 365 Talent új vagy módosított szolgáltatásait írja le.
 
@@ -43,9 +45,9 @@ A kiadás a Dynamics 365 Talent: Onboard apró hibáinak javításait is tartalm
 
 A szakaszban ismertetett módosítások a 8.1.2282-ös buildre vonatkoznak. A néhány fejlécben látható, zárójelben lévő számok az Microsoft Dynamics Lifecycle Services (LCS) támogatási számaira vonatkoznak.
 
-### <a name="platform-update-26-for-finance-and-operations"></a>Platform update 26 a Finance and Operations szolgáltatáshoz
+### <a name="platform-update-26-for-finance-and-operations"></a>A Finance and Operations 26-es platformfrissítése
 
-További információ a Finance and Operations 26-os platformfrissítésről (Platform update 26): [Előzetes funkciók a Dynamics 365 Finance and Operations platform update 26-os verziójában (2019. május)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-26). 
+A Finance and Operations 26. Platform frissítésével kapcsolatos további tudnivalókat lásd: [Előnézeti funkciók a Dynamics 365 Finance and Operations 26. platformfrissítésében (2019. május)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-26). 
 
 ### <a name="common-data-service-entity-support-for-custom-fields"></a>Common Data Service entitás-támogatás egyéni mezőkhöz
 
@@ -90,4 +92,4 @@ Az alkalmazotti szabadidő követésének képessége és a szabadidő kiszámí
 
 ### <a name="indicate-instance-type-when-provisioning-talent"></a>Példány típusának jelzése a Talent kiépítése alkalmával
 
-Ha egy új Talent példányt telepít akkor jelezheti, hogy a példány típusa **Termelési** vagy **Védőfal**típusú, és lehetővé teszi az új szolgáltatások korai tesztelését. Minden létező Talent példányt a termelési példány típusára lesz frissítve. Ha azt szeretné, hogy a meglévő példányok frissítve legyenek a védőfal példányra, forduljon a támogatáshoz a módosítási kérelem kezdeményezéséhez.
+Ha egy új Talent példányt telepít akkor jelezheti, hogy a példány típusa **Termelési** vagy **Védőfal** típusú, és lehetővé teszi az új szolgáltatások korai tesztelését. Minden létező Talent példányt a termelési példány típusára lesz frissítve. Ha azt szeretné, hogy a meglévő példányok frissítve legyenek a védőfal példányra, forduljon a támogatáshoz a módosítási kérelem kezdeményezéséhez.

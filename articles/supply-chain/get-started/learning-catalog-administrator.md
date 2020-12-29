@@ -14,12 +14,12 @@ ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 4b0c8a265971c4a3f0b83ac1d6404b7d4aa82660
-ms.sourcegitcommit: 58d7133ae9909fa205730e3cf4c7fd5a1d5d0b75
+ms.openlocfilehash: ba93bdcb64237af627c5a6d5adb834583f08f768
+ms.sourcegitcommit: 8eefb4e14ae0ea27769ab2cecca747755560efa3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "3793803"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4516619"
 ---
 # <a name="learning-catalog-for-dynamics-365-supply-chain-management-administrators"></a>Képzési katalógus a Dynamics 365 Supply Chain Management adminisztrátorok számára
 
@@ -46,7 +46,7 @@ A következő katalógus az alapismeretekből a meghatározott tartományokra, a
 | [Megvalósítási projekt kezelése a Finance and Operations szolgáltatáshoz](https://docs.microsoft.com/learn/paths/implement-finance-operations/) | Ismerje meg a sikeres Finance and Operations megvalósítási projektek kezelésére vonatkozó legfontosabb elemeket és bevált gyakorlatokat. Az első lépéstől, amely során a projekt módszertanát, a FastTrack szolgáltatások használatát, a fejlesztési stratégiát, adatkezelést és sok mást megtervezi és kialakítja, egészen a közzététel után a műveletek karbantartásának és nyomon követésének legjobb módjaiig. | Ingyenes, saját tempójú online tanulási útvonal | 11.5 óra |
 | [Rendszerfelügyelet kezdőlap](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/system-administration-home-page) | Ez a témakör a Microsoft Dynamics 365 for Finance and Operations rendszeradminisztrátorok számára mutat be tartalmat. A tartalom segítséget nyújt a rendszer folyamatos és hatékony működésének konfigurálásában a szervezet és a cég számára. | Dokumentáció | |
 | [Finance and Operations: Felvétel a Dynamics 365 rendszerbe (DYN542PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-onboarding-to-dynamics-365-1-10-19) | A FastTrack minden Dynamics 365 for Finance and Operations projektben Onboarding szolgáltatást nyújt. Ebben a TechTalk elmagyarázzák a felvételi folyamatot, átveszik a felvételi munkamenet tartalmát, és a közeljövőben leplezik, hogy hogyan lehet hatékonyabbá és kényelmesebbé tenni a felvételt. Ez a munkamenet különösen hasznos mindenkinek, aki a vevőkkel együtt dolgozik a projekt kezdeti szakaszaiban, a licenc-megállapodás zárása és a végrehajtási projekt kezdeményezése között. | Webes konferencia szabad rögzítése | 62 perc |
-| [Intézményi (helyi üzleti adatok) telepítés (DYN382PAL2) ](https://community.dynamics.com/365/b/techtalks/posts/on-premises-local-business-data-deployment-october-19-2017) | Kérem, csatlakozzon ehhez a Tech Talk szolgáltatáshoz a Dynamics 365 for Finance and Operations Enterprise Edition intézményi telepítési beállításának áttekintéséhez. Ebben a munkamenetben megvizsgáljuk egy helyszíni telepítés, ALM szempontok, rendszerkövetelmények és a életciklus-szolgáltatások projekt létrehozási módjának felépítését. | Webes konferencia szabad rögzítése | 48 perc |
+| [Intézményi (helyi üzleti adatok) telepítés (DYN382PAL2) ](https://community.dynamics.com/365/b/techtalks/posts/on-premises-local-business-data-deployment-october-19-2017) | Kérem, csatlakozzon ehhez a technológiai beszélgetéshez a Dynamics 365 for Finance and Operations Enterprise Edition helyszíni telepítési beállításának áttekintéséhez. Ebben a munkamenetben megvizsgáljuk egy helyszíni telepítés, ALM szempontok, rendszerkövetelmények és a életciklus-szolgáltatások projekt létrehozási módjának felépítését. | Webes konferencia szabad rögzítése | 48 perc |
 | [Másolás jogi személybe (DYN383PAL)](https://community.dynamics.com/365/b/techtalks/posts/copy-into-legal-entity-october-24-2017) | Ebben a munkamenetben megbeszéljük az adatkezelési keretrendszer Másolás jogi személybe új funkcióját. Először röviden ellenőrizzük a 8-as platformfrissítéseben adatkezelési keretrendszerhez hozzáadott új funkciókat a munkaterületen, a sablonokban és az adatprojektekben, majd megvitatjuk a Másolás jogi személybe hozzáadott további funkciókat. | Webes konferencia szabad rögzítése | 54 perc |
 
 ## <a name="core-development"></a>Alapvető fejlesztés<a name="core-development"></a>

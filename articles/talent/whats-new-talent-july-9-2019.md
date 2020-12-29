@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-07-09
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 99a7e6130d45229011a185087d4872fe34b8224a
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: feb39966d98fa7bde9a6bfad26b07fbd224da59b
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897626"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528033"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-july-9-2019"></a>A Dynamics 365 Talent új vagy módosult elemei (2019. július 9.)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Ez a témakör a Dynamics 365 Talent új vagy módosított szolgáltatásait írja le.
 
@@ -47,9 +49,9 @@ A kiadás a Dynamics 365 Talent: Onboard apró hibáinak javításait is tartalm
 
 A szakaszban ismertetett módosítások a 8.1.2374-ös buildre vonatkoznak.
 
-### <a name="platform-update-28-for-finance-and-operations"></a>Platform update 28 a Finance and Operations szolgáltatáshoz
+### <a name="platform-update-28-for-finance-and-operations"></a>A Finance and Operations 28-es platformfrissítése
 
-További információ a Finance and Operations 28-es platformfrissítésről (Platform update 28): [Előzetes funkciók a Dynamics 365 Finance and Operations platform update 28-es verziójában (2019. július)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-28).
+További információ a Finance and Operations 28-es platformfrissítésről (Platform update 28): [Előzetes funkciók a Dynamics 365 Finance and Operations platform update 28 verziójában (2019. július)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-28).
 
 ### <a name="entity-support-for-custom-fields-in-common-data-service"></a>Common Data Service – entitástámogatás egyéni mezőkhöz 
 

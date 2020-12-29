@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-03-14
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 79bb8c0ed3c3f3bee62a8bc384a9d3a15cfe881a
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: a3bb5792e6395e6fe593691f050cae03362cf659
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897603"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528621"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-march-14-2019"></a>Új vagy módosult elemek a Dynamics 365 Talent szolgáltatásban (2019. március 14.)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Ez a témakör a Talent új vagy módosított szolgáltatásait írja le.
 
@@ -44,8 +46,8 @@ Az ebben a verzióban végrehajtott módosítások engedélyezik a teljesítmén
 ### <a name="mass-assign-checklists-to-workers"></a>Ellenőrzőlisták tömeges hozzárendelése dolgozókhoz
 Ezzel a módosítással immár kiválaszthat több alkalmazottat, és egyszerre rendelhet hozzá ellenőrzőlistákat ezekhez az alkalmazottakhoz. 
 
-### <a name="platform-update-24-for-finance-and-operations"></a>Platform update 24 a Finance and Operations szolgáltatáshoz
-A Finance and Operations 24-es platformfrissítésével kapcsolatos részleteket lásd a [Újdonságok és változások a Dynamics 365 for Finance and Operations 24. platformfrissítésében (2019. március)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24). A 24-es platformfrissítés jelentős változásai a következők: 
+### <a name="platform-update-24-for-finance-and-operations"></a>A Finance and Operations 24-es platformfrissítése
+A Finance and Operations 24-es platformfrissítéssel kapcsolatos részleteket lásd a [Újdonságok és változások a Finance and Operations 24. platformfrissítésében (2019. március)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24). A 24-es platformfrissítés jelentős változásai a következők: 
 
 - Engedélyezve van az értesítések a Talent megoldásban.
 - A frissített navigációs sáv mostantól igazodik az Office fejléchez.
@@ -65,7 +67,7 @@ A Common Data Service entitások immár helyesen szinkronizálnak, ha a Common D
 Számos vállalatnál a kompenzációkért és juttatásokért felelős vezetők előfordulhat, hogy csak a bizonyos kompenzációs rekordokhoz férnek hozzá. Ezek a vezetőkhöz és regionális alkalmazottak hoz tartozhatnak. Ez a módosítás lehetővé teszi a HR számára kompenzációs tervek kezelését és karbantartását a szervezet különböző alkalmazottcsoportjaihoz. A fix és változó kompenzációs tervek, amelyeket hozzárendelhet biztonsági szerepkörökhöz, határozzák meg a hozzáférést ezekhez a tervekhez és a hozzájuk kapcsolódó alkalmazotti adatokhoz, például fizetés és bónuszrekordok. Csak a hozzáférést kapott szerepkörök dolgozhatnak fel kompenzációt azokhoz a munkavállalókhoz.
 
 ###  <a name="email-support-for-alerts"></a>E-mailek támogatása figyelmeztetésekhez
-A Finance and Operations 24-es platformfrissítésében a felhasználók létrehozhatnak figyelmeztetési szabályokat, amely automatikusan értesítő e-maileket küldenek a kapcsolattartóknak, ha egy esemény kezdeményezi az értesítést.
+A Finance and Operations 24-ös platformfrissítésével a felhasználók létrehozhatnak figyelmeztetési szabályokat, amely automatikusan értesítő e-maileket küldenek ki a kapcsolattartóknak, ha egy esemény kezdeményezi azt.
 
 ### <a name="duplicate-employee-check-interface-changes"></a>Duplikált alkalmazottak ellenőrzése: Felhasználói felület módosításai
 Ez a módosítással az ismétlődések észleli a program, amikor névmezőket ad meg, és egy állapot jelenik meg a találatok számával. A hivatkozás kiválasztásával megnyithat egy új lapot, hogy megállapítsa, hogy használja-e az észlelt egyezést. Az adatbevitel megzavarása elkerülése érdekében az ismétlődéseket tartalmazó űrlap nem nyílik meg automatikusan.

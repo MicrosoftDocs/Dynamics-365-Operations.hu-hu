@@ -19,16 +19,18 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5c9ff3d0c7eabe2670c4818173d88c3ab5da7ff0
-ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
+ms.openlocfilehash: 97e1712e38247c996af11bef051a5b1d9239f0c3
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4015129"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527386"
 ---
 # <a name="product-information-overview"></a>Termékek adatainak áttekintése
 
 [!include [banner](../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Ez a témakör a termékinformációk kezelésével kapcsolatban tartalmaz tájékoztatást. A termékinformációk kezelése megosztott termékmeghatározás, kategorizálás és azonosítók révén működik a jogi személyeken belül, valamint egy termék egyes konfigurációi révén is, hogy beférjen a üzleti folyamatokba. 
 
@@ -72,7 +74,7 @@ Az alaptermék egy termékdimenzió-csoporthoz és egy konfigurációs technoló
 Három konfigurációs technológia közül választhat:
 
 - Az előre definiált változatokat előre meghatározott cikkdimenziók határozzák meg. A termékváltozat definíciója tartalmazza a dimenziók egy konkrét érvényes kombinációjának meghatározását, például a színt, a stílust és a méretet. Minden egyes kombináció egyedi termékváltozatot eredményez.
-- A dimenzión alapuló konfigurációt általában a gyártási forgatókönyvek használják, és lehetővé teszi a Konfiguráció dimenzió használatát az anyagjegyzékek (AJ) meghatározásában. Egy adott konfigurációt kiválasztása után a rendszer azokaz az anyagjegyzéksorokat használja, amelyek az adott tervezési és termelési konfigurációra érvényesek. Ezt nevezik *Globális anyagjegyzéknek* , mert egy közös anyagjegyzéket használ egy termék minden konfigurációjához.
+- A dimenzión alapuló konfigurációt általában a gyártási forgatókönyvek használják, és lehetővé teszi a Konfiguráció dimenzió használatát az anyagjegyzékek (AJ) meghatározásában. Egy adott konfigurációt kiválasztása után a rendszer azokaz az anyagjegyzéksorokat használja, amelyek az adott tervezési és termelési konfigurációra érvényesek. Ezt nevezik *Globális anyagjegyzéknek*, mert egy közös anyagjegyzéket használ egy termék minden konfigurációjához.
 - A megszorításon alapuló konfiguráció egy termékkonfigurációs modellt használ annak érdekében, hogy leírja az összes lehetséges attribútumot és azokat az összetevőket, amelyek egy adott modell minden lehetséges változatának leírásához szükségesek. Az attribútumok kombinációinak korlátozásai szabályos kifejezésekkel vagy táblázatos alapú korlátozásokkal írhatók le. A termékkonfigurációs modellek és a konfigurátorok egyre fontosabbá válnak a termékinformációk kezelésében, és minden iparágban használatosak.
 
 Ha a Supply Chain Management rendszer végrehajtását tervezi, rendkívül fontos a megfelelő konfigurációs technológia kiválasztása az üzleti folyamat számára. Egy termék nem konvertálható egyik modellből a másikba a végrehajtást követően.
@@ -89,7 +91,7 @@ A meghatározott jogi személyhez kiadott termékeket *Kiadott termékeknek* nev
 
 A **Kiadott termék karbantartása** munkaterületet a **Munkaterület konfigurálása** menüpontban konfigurálhatja. Válasszon ki egy kategóriahierarchiát, és a munkaterület szűréséhez szükséges kategóriát. A munkaterület releváns termékadatainak módosításához napi időkorlátokat is meghatározhat a **Nemrégiben kiadott termékek** és a **Leállított kiadott termékek** esetében.
 
-A munkaterület összegző lapokból és két listából áll. A **Nyitott esetek** listája olyan termékmódosítási eseteket tartalmaz, amelyekben a kiválasztott termékkategória-hierarchiában levő termékek befejezetlenek vagy lezáratlanok. A **Nemrégiben kiadott** lista olyan termékeket jeleníti meg, amelyeket a munkaterület-konfigurációban beállított időkorláton belül adtak ki. A listában szereplő minden egyes cikk esetében a rendszer futtat egy ellenőrzést, és megjelenik az ellenőrzési állapot. Ez az állapot azt jelezheti, hogy a jogi személyhez szükséges konfigurációk még nem fejeződtek be. A listából közvetlenül hozzáférhet a **Kiadott termék részletei** , a **Termékattribútum karbantartása** , a **Termékkategóriák karbantartása** , az **Alapértelmezett rendelésbeállítások** és a **Szöveg fordításai** lapokhoz a termék szükséges konfigurációjának elvégzéséhez.
+A munkaterület összegző lapokból és két listából áll. A **Nyitott esetek** listája olyan termékmódosítási eseteket tartalmaz, amelyekben a kiválasztott termékkategória-hierarchiában levő termékek befejezetlenek vagy lezáratlanok. A **Nemrégiben kiadott** lista olyan termékeket jeleníti meg, amelyeket a munkaterület-konfigurációban beállított időkorláton belül adtak ki. A listában szereplő minden egyes cikk esetében a rendszer futtat egy ellenőrzést, és megjelenik az ellenőrzési állapot. Ez az állapot azt jelezheti, hogy a jogi személyhez szükséges konfigurációk még nem fejeződtek be. A listából közvetlenül hozzáférhet a **Kiadott termék részletei**, a **Termékattribútum karbantartása**, a **Termékkategóriák karbantartása**, az **Alapértelmezett rendelésbeállítások** és a **Szöveg fordításai** lapokhoz a termék szükséges konfigurációjának elvégzéséhez.
 
 ### <a name="manually-creating-a-new-released-product"></a>Újonnan kiadott termék manuális létrehozása
 

@@ -18,16 +18,18 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5ca2fbbf3ffbcc7c9c32490f3733b8a94731170e
-ms.sourcegitcommit: 69075e001d1fb4ef69282667052cd8d082273094
+ms.openlocfilehash: fe01a2b82b72bf38bb537ed7b2bf5560235817d9
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4022215"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4529828"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-october-6-2020"></a>Új vagy módosult elemek a Dynamics 365 Human Resources szolgáltatásban (2020. október 6.)
 
-Ez a témakör a Dynamics 365 Human Resources új, módosított vagy nemsokára várható szolgáltatásait írja le. A frissítési folyamattal és ütemezéssel kapcsolatos további tudnivalókért lásd: [Frissítési folyamat](hr-admin-setup-update-process.md).
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
+Ez a témakör a Dynamics 365 Human Resources új, módosított vagy nemsokára várható szolgáltatásait írja le. A frissítési folyamattal és ütemezéssel kapcsolatos további tudnivalókért lásd: [Frissítési folyamat](hr-admin-setup-update-process.md).
 
 További tájékoztatás az új szolgáltatásokról és a nyilvános megjelenési dátumokról: [A Dynamics 365 Human Resources 2020. második kiadási hullámának áttekintése](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/dynamics365-human-resources/).
 
@@ -45,7 +47,7 @@ Az alábbi funkció általában a következő verzióval lesz elérhető.
 
 ### <a name="bug-fixes"></a>Hibajavítások
 
-Ez a kiadás az alábbi hibajavításokat tartalmazza.
+Ez a kiadás az alábbi hibajavításokat tartalmazza.
 
 >[!NOTE]
 > Célunk, hogy a lehető leghamarabb eljuttassuk Önhöz ezeket az információkat. Előfordulhat, hogy a jelen témakör frissítései olyan hibajavításokat is tartalmazhatnak, amelyek annak első közzététele után léptek életbe.
@@ -55,7 +57,7 @@ Ez a kiadás az alábbi hibajavításokat tartalmazza.
 | 448806 | Az **Alapértelmezett azonosítótípus** a HCM-paraméterekbe **RecID** típusként exportálódik | A Human Resources paraméterek entitás ezne módosítása hozzáad egy újabb oszlopot, amely az **Alapértelmezett azonosítótípust** jeleníti meg. |
 | 492923 | A feladathoz kapcsolódó felvételeket a rendszer nem menti a Lifecycle Services (LCS) szolgáltatásba | A feladatrögzítések most már menthetők az LCS rendszerben. |
 | 429950 | A rögzített kompenzáció helytelenül jár le a beosztás módosításakor | Amikor egy dolgozó beosztását a **Dolgozó áthelyezése** lapon módosítják, egy nappal a beosztás vége előttre be kell állítani a legutolsó kompenzációs dátumot. A kompenzáció záró dátuma most már megegyezik a beosztás záró dátumával. |
-| 467214 | A **Bérezéses elemzés** lehetőség csak akkor jelenik meg, ha a **fizetési díjalap átalakításának neve** beállítása **Évente** | A bérezéses fizetési díjalapok, amelyek neve nem **Évente** , nem szerepelnek a kompenzációs elemzésekben. Ezzel a frissítéssel a kompenzációs elemzések minden fizetési díjalap átalakítását figyelembe veszik. A jelentések **Órabér** vagy **Bérezéses** lebontásban történő futtatásakor a **Fizetés** szűrő tartalmaz minden olyan fizetési díjalapot, amely az órabértől eltérő időszakot használ. Az **Órabér** szűrőben csak az **óránkénti** fizetési díjalapok szerepelnek. |
+| 467214 | A **Bérezéses elemzés** lehetőség csak akkor jelenik meg, ha a **fizetési díjalap átalakításának neve** beállítása **Évente** | A bérezéses fizetési díjalapok, amelyek neve nem **Évente**, nem szerepelnek a kompenzációs elemzésekben. Ezzel a frissítéssel a kompenzációs elemzések minden fizetési díjalap átalakítását figyelembe veszik. A jelentések **Órabér** vagy **Bérezéses** lebontásban történő futtatásakor a **Fizetés** szűrő tartalmaz minden olyan fizetési díjalapot, amely az órabértől eltérő időszakot használ. Az **Órabér** szűrőben csak az **óránkénti** fizetési díjalapok szerepelnek. |
 | 482464 | Az **Értékelések** megtekintésekor a **Részletek** nézet nem változik rácsnézetre a szűrő alkalmazása után | A szűrő alkalmazása után az értékelésrács a várt módon jelenik meg. |
 | 483184 | A Human Resources nem hozza létre az eltávozást ha a **Szabadság regisztrációja** rekordban **Szintalapként** a **Módosított kezdési időpontot** választja |A **Módosított kezdési időpont** mezőt a program kitölti és felhasználja a szabadságok létrehozásakor.  |
 | 509731 | A jövőben elbocsátott dolgozók szabadságkérelmei hibát okoznak, ha a megszűnés dátuma utánra kérnek szabadságot | A sazbadságkérelmeket most már be lehet nyújtani olyan alkalmazottakhoz, akik rendelkeznek jövőbeli megszűnési dátummal, feltéve, hogy a kérelem a felmondási dátum előttre szól. |
@@ -77,11 +79,11 @@ Az alábbi új funkciók előzetes verzióban érhetők el. A funkciók be- vagy
 
 A következő új funkciókat jövőbeli kiadásokra ütemeztük:
 
-- **Ellenőrzőlista entitások a Common Data Service szolgáltatásban** : az Előkészítés, Felszámolás, Áthelyezések és Üzleti folyamatok hamarosan elérhetők lesznek a Common Data Service alkalmazásban.
+- **Ellenőrzőlista entitások a Common Data Service szolgáltatásban**: az Előkészítés, Felszámolás, Áthelyezések és Üzleti folyamatok hamarosan elérhetők lesznek a Common Data Service alkalmazásban.
 
-- **Juttatáskezelési okkódok** : A juttatáskezelés okkódjai hamarosan kombinálva lesznek a Human Resources meglévő okkódjaival. Ha a Juttatások kezelése modulban több, mint 15 karakterből álló okkódok szerepelnek, akkor az Juttatások kezelése **Okkódok** űrlapján az okkódot maximum 15 karakter hosszúra kell módosítania. Miután frissítette a nevet, az okkód a Személyzetkezelés modul meglévő okkódok képernyőjén fog megjelenni. Ez a változtatás a jövőben elérhető lesz, és nem fogja befolyásolni a meglévő funkciókat.
+- **Juttatáskezelési okkódok**: A juttatáskezelés okkódjai hamarosan kombinálva lesznek a Human Resources meglévő okkódjaival. Ha a Juttatások kezelése modulban több, mint 15 karakterből álló okkódok szerepelnek, akkor az Juttatások kezelése **Okkódok** űrlapján az okkódot maximum 15 karakter hosszúra kell módosítania. Miután frissítette a nevet, az okkód a Személyzetkezelés modul meglévő okkódok képernyőjén fog megjelenni. Ez a változtatás a jövőben elérhető lesz, és nem fogja befolyásolni a meglévő funkciókat.
 
-- **Egyéni hivatkozások a vezetői önkiszolgáló rendszerben** : a vezetők támogatásának céljára a vezetői önkiszolgáló szolgáltatás képességei bővülnek. Lehetővé tesszük, hogy egyéni hivatkozásokat adjon hozzá a **Saját csoport** lapon. Ez a funkció hasonló az Alkalmazotti önkiszolgáló **Saját adatok** lapján található egyéni hivatkozások szolgáltatáshoz. További tájékoztatás: [Egyéni hivatkozások a vezetői önkiszolgáló szolgáltatásban](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/custom-links-manager-self-service).
+- **Egyéni hivatkozások a vezetői önkiszolgáló rendszerben**: a vezetők támogatásának céljára a vezetői önkiszolgáló szolgáltatás képességei bővülnek. Lehetővé tesszük, hogy egyéni hivatkozásokat adjon hozzá a **Saját csoport** lapon. Ez a funkció hasonló az Alkalmazotti önkiszolgáló **Saját adatok** lapján található egyéni hivatkozások szolgáltatáshoz. További tájékoztatás: [Egyéni hivatkozások a vezetői önkiszolgáló szolgáltatásban](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/custom-links-manager-self-service).
 
 A tervezett szolgáltatások és az ütemezett kiadások teljes listája az alábbi témakörben olvasható: [A Dynamics 365 Human Resources 2019. második kiadási hullámának áttekintése](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/).
 

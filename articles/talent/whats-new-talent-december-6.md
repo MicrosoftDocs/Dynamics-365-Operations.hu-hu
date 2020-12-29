@@ -18,21 +18,23 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-12-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: e46000414436b5a2fa211428dcd10131b9d588c1
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 462b87a655e3e4017cffd2ba41cb6d1f18de3e50
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897695"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4529162"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent---core-hr-december-6-2018"></a>Új vagy módosult elemek a Dynamics 365 Talent – Core HR szolgáltatásban (2018. december 6.)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 **Build 8.1.2071**
 
 Ez a témakör a Core HR aktuális verziójában található új vagy módosított szolgáltatásokat írja le.
 
 
-## <a name="platform-update-22-for-finance-and-operations"></a>Platform update 22 a Finance and Operations szolgáltatáshoz
+## <a name="platform-update-22-for-finance-and-operations"></a>A Finance and Operations 22-es platformfrissítése
 
 ### <a name="export-up-to-1-million-rows-to-excel"></a>Legfeljebb 1 millió sor exportálása az Excel programba
 
@@ -133,7 +135,7 @@ A dolgozók a munkához feladat esetében frissíteni kell a következő hozzár
 
 A Nem mezőtranszformációt is frissíteni kell. Válassza ki a **fn** (függvény) leképezéstípust a nemhez, és frissítse a következő értékleképezéseket.
 
-| Common Data Service érték   | Finance and Operations érték | | ------------|------------------ -----------| | 75440000    | Férfi                         | | 75440001    | Nő                       | | 75440002    | Nincs                         | | 75440003    | Nem meghatározott                  |
+| Common Data Service Érték   | Finance and Operations érték | | ------------|------------------ -----------| | 75440000    | Férfi                         | | 75440001    | Nő                       | | 75440002    | Nincs                         | | 75440003    | NonSpecific                  |
 
 A frissített leképezéseknek az alábbiak szerint kell kinézniük.
 

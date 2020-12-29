@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 64a85840be328702a06779390fe383fd1896fd04
-ms.sourcegitcommit: d66fd72342931fad25a696b251c05781280d36c4
+ms.openlocfilehash: cbf00f7428c9b1852a5bf54fd7e30a3bddc1a31e
+ms.sourcegitcommit: 0e60df840688932795b9c8f8fd45d98f5ab6ba8c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "4011420"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4668945"
 ---
 # <a name="go-live-faq"></a>Éles indítás GYIK 
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Ez a témakör a Dynamics 365 Human Resources megvalósítási projekttel kapcsolatos gyakori kérdéseket sorolja fel. 
 
@@ -76,7 +78,7 @@ Az adatbázisokat automatikus biztonsági mentés védi a következő frekvenci�
 | Különbözeti adatbázis biztonsági mentése | 12-24 óránként |
 | Tranzakciónapló biztonsági mentése | 5-10 percenként |
 
-A Microsoft elegendő biztonsági mentést tart meg ahhoz, hogy az elmúlt hét napban lehetővé tegye az Időponthoz kötött visszaállítás (PITR) használatát. 
+A Microsoft elegendő biztonsági mentést tart meg ahhoz, hogy az elmúlt 14 napban lehetővé tegye az Időponthoz kötött visszaállítás (PITR) használatát. 
 
 A további tudnivalókat lásd: [Tudnivalók az automatikus SQL-adatbázis biztonsági másolatokról](https://docs.microsoft.com/azure/azure-sql/database/automated-backups-overview?tabs=single-database). 
 

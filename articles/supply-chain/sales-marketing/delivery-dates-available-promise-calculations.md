@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4e969a4bc4346d05abd99022868dae3a1d78fe50
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: ae3192bcf5128c09279017e3d5e8be8f42ec6975
+ms.sourcegitcommit: 95f90ac3f248716abdab16d5de6ccbf059616e4b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3979427"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4666770"
 ---
 # <a name="order-promising"></a>Rendelési ígéretek
 
@@ -35,8 +35,14 @@ Rendelés ígéret számítja ki a lehető legkorábbi szállítási és kézhez
 
 -   **Értékesítés átfutási ideje** – Az értékesítés átfutási ideje az értékesítés rendelés létrehozása és a szállítás közti idő. A kézbesítési dátum számítása a napok egy alapértelmezett száma alapján történik, és nem veszi figyelembe a készlet rendelkezésre állását, az ismert igényt vagy a tervezett ellátást.
 -   **Ígérethez rendelkezésre áll (elérhető Ígérethez)** – Az Ígérethez rendelkezésre áll a cikk azon mennyiségét jelenti, amely elérhető és szállítható a vevőnek adott időre. Az Ígérethez rendelkezésre álló mennyiség kiszámítása tartalmazza a nem véglegesített készletet, az átfutási időket a tervezett bevételezéseket és kiadásokat.
--   **ígérethez rendelkezésre áll + Kiadási időtartalék** – A szállítás dátuma megegyezik az ígérethez rendelkezésre áll (ATP) dátummal, plusz a cikkre vonatkozó kiadási időtartalékkal. A kiadási időtartalék a szállítandó cikkek előkészítéséhez szükséges idő.
--   **Ígérhető** – Az elérhetőség az alábontás alapján számítható.
+-   **ígérethez rendelkezésre áll + Kiadási időtartalék**– A szállítás dátuma megegyezik az ígérethez rendelkezésre áll (ATP) dátummal, plusz a cikkre vonatkozó kiadási időtartalékkal. A kiadási időtartalék a szállítandó cikkek előkészítéséhez szükséges idő.
+-   **Ígérhető**– Az elérhetőség az alábontás alapján számítható.
+
+> [!NOTE]
+> Értékesítési rendelés frissítésekor a rendelési ígéret adatai csak akkor frissülnek, ha a meglévő rendelési ígéret dátuma nem teljesíthető, ahogy a következő példákban látható:
+> 
+> - **1. példa**: Az aktuális rendelési ígéret dátuma július 20., de a megnövekedett mennyiség miatt nem tud majd július 25-ig teljesíteni. Mivel az aktuális dátum már nem teljesíthető, aktiválódik a rendelési ígéret.
+> -  **2. példa**: Az aktuális rendelési ígéret dátuma július 20., de a csökkent mennyiség miatt már július 15-én teljesíteni tud. Mivel azonban az aktuális dátum még mindig teljesíthető, a rendelési ígéret nem aktiválódik, és július 20. marad a rendelési ígéret dátuma.
 
 ## <a name="atp-calculations"></a>Ígérethez rendelkezésre áll számítások
 Az ígérethez rendelkezésre álló mennyiséget a rendszer a „kumulatív és előretekintéssel meghatározott, ígérethez rendelkezésre álló mennyiség” módszerrel számítja ki. Ennek az ígérethez rendelkezésre áll számítási módszernek a fő előnye, hogy kezelhetők olyan esetek, ahol a kiadások összeg a bevételek között nagyobb, mint a legfrissebb bevétel (például amikor egy korábbi bevételezési mennyiséget fel kell használni a követelmények miatt). A „kumulatív ígérethez rendelkezésre állás és előretekintés” számítási módszer minden kiadást magába foglal, amíg a bevételezendő kumulatív mennyiség meghaladja a kumulatív kiadandó mennyiséget. Ezért az ígérethez rendelkezésre állás számítás módszer kiértékeli, hogy a mennyiség egy része a korábbi időszakból használható-e a későbbi időszakban.  

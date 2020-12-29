@@ -18,16 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-10-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e82b79858060f31a6310cc5abdb2faf87db2d6c2
-ms.sourcegitcommit: 765056b5dc1d0a8c27e56ff2cbd310ad3349ff09
+ms.openlocfilehash: 6f70e3a6ccf9770c75334d355db5e9df9ee912dd
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "4056097"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527885"
 ---
 # <a name="integrate-with-linkedin-talent-hub"></a>Integráció a LinkedIn Talent Hub szolgáltatással
 
 [!include [banner](includes/preview-feature.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 A [LinkedIn Talent hub](https://business.linkedin.com/talent-solutions/talent-hub) egy pályázókövetési rendszer (applicant tracking system, ATS) platform. Ez lehetővé teszi a munkaerő sourcingját, kezelését és alkalmazását egyetlen helyen. A Microsoft Dynamics 365 Human Resources és a LinkedIn Talent hub integrálásával könnyedén létrehozhat alkalmazotti rekordokat a Human Resources alkalmazásban azok számára, akiket felvettek valamilyen beosztásra.
 
@@ -99,7 +101,7 @@ Létre kell hozni egy alkalmazásfelhasználót a LinkedIn Talent Hub adapterhez
     1. Módosítsa a **Felhasználótípus** mező értékét erre: **Alkalmazásfelhasználó**.
     2. A **Felhasználónév** mező értékét erre: **Dynamics365 HR LinkedIn HRIS-integráció**.
     3. Állítsa az **Alkalmazásazonosító** mező értékét erre: **3a225c96-d62a-44ce-b3ec-bd4e8e9befef**.
-    4. Írjon be bármilyen értéket az **Utónév** , **Családnév** és **Elsődleges e-mail-cím** mezőkbe.
+    4. Írjon be bármilyen értéket az **Utónév**, **Családnév** és **Elsődleges e-mail-cím** mezőkbe.
     5. Kattintson az eszköztár **Mentés \& Bezárás** gombjára.
 
 ### <a name="assign-a-security-role-to-the-new-user"></a>Biztonsági szerepkör hozzárendelése az új felhasználóhoz
@@ -121,9 +123,9 @@ Miután elmentette és bezárta az új alkalmazásfelhasználót az előző szak
 1. A Dynamics 365 Human Resources alkalmazásban nyissa meg az **Azure Active Directory-alkalmazások** oldalt.
 2. Adjon hozzá egy új rekordot a listához és állítsa be a következő mezőket:
 
-    - **Ügyfélazonosító** : adja meg az alábbit: **3a225c96-d62a-44ce-b3ec-bd4e8e9befef**.
-    - **Név** : adja meg a korábban létrehozott Power Apps biztonsági szerepkör nevét, például **LinkedIn Talent Hub HRIS Integráció**.
-    - **Felhasználói azonosító** : válassza ki azt a felhasználót, akinek van engedélye a Személyzet kezelése szakasz adatainak írására.
+    - **Ügyfélazonosító**: adja meg az alábbit: **3a225c96-d62a-44ce-b3ec-bd4e8e9befef**.
+    - **Név**: adja meg a korábban létrehozott Power Apps biztonsági szerepkör nevét, például **LinkedIn Talent Hub HRIS Integráció**.
+    - **Felhasználói azonosító**: válassza ki azt a felhasználót, akinek van engedélye a Személyzet kezelése szakasz adatainak írására.
 
 ### <a name="create-the-entity-in-common-data-service"></a>Entitás létrehozása a Common Data Service szolgáltatásban
 
@@ -152,7 +154,7 @@ Miután a pályázó végigment a toborzási folyamaton, és már felvették, ex
 
 3. Válassza ki a **Szakasz módosítása** elemet, majd kattintson a **Felvéve** gombra.
 
-4. A pályázó három ponttal ( **...** ) jelölt menüpontjában válassza az **Exportálás a HRIS-be** lehetőséget.
+4. A pályázó három ponttal (**...**) jelölt menüpontjában válassza az **Exportálás a HRIS-be** lehetőséget.
 
 5. Az **Exportálás a HRIS-be** ablaktáblában adja meg a exportálandó adatokat:
 

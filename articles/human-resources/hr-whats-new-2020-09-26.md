@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d27104a08cdc899f12942d80e693f3495d90a6ec
-ms.sourcegitcommit: 1329b3b98854422c4c3773ede44a5cefa7d07085
+ms.openlocfilehash: 4103c0630b72b9b92a116f7fe702a777dd295e25
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "4040076"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527410"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-september-26-2020"></a>Új vagy módosult elemek a Dynamics 365 Human Resources szolgáltatásban (2020. szeptember 26.)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Ez a témakör a Dynamics 365 Human Resources új, módosított vagy nemsokára várható szolgáltatásait írja le. A frissítési folyamattal és ütemezéssel kapcsolatos további tudnivalókért lásd: [Frissítési folyamat](hr-admin-setup-update-process.md).
 
@@ -39,7 +41,7 @@ Ez a kiadás az alábbi új funkciókat és hibajavításokat tartalmazza. A vá
 
 Az alábbi funkció általában a következő verzióval lesz elérhető:
 
-- **A 10.0.13 platformfrissítés már elérhető** : a frissítéssel kapcsolatos további tudnivalókért lásd: [Platformfrissítések a Finance and Operations alkalmazások 10.0.13 verziójához (2020. október)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-13).
+- **A 10.0.13 platformfrissítés már elérhető**: a frissítéssel kapcsolatos további tudnivalókért lásd: [Platformfrissítések a Finance and Operations alkalmazások 10.0.13 verziójához (2020. október)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-13).
 
 ### <a name="bug-fixes"></a>Hibajavítások
 

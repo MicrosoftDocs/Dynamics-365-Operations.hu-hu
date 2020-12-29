@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-11-19
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 88ed678cdd37b4bd3d1a7ae92b505b2cfdea4fc8
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: aa984a01e9da30e6da07516fa2986833366a882b
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2896727"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527144"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-november-19-2019"></a>Új vagy módosult elemek a Dynamics 365 Talent szolgáltatásban (2019. november 19.)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Ez a cikk a Dynamics 365 Talent szolgáltatásban található új vagy módosított funkciókat írja le.
 
@@ -41,7 +43,7 @@ A kiadás a Dynamics 365 Talent: Onboard apró hibáinak javításait is tartalm
 
 A szakaszban ismertetett módosítások a 8.1.2621-ös buildre vonatkoznak. A néhány fejlécben látható, zárójelben lévő számok az Microsoft Dynamics Lifecycle Services (LCS) támogatási számaira vonatkoznak.
 
-### <a name="platform-update-31-for-finance-and-operations-apps"></a>Platform update 31 a Finance and Operations alkalmazásokhoz
+### <a name="platform-update-31-for-finance-and-operations-apps"></a>A Finance and Operations-alkalmazások 31-as platformfrissítése
 
 A további tudnivalókat lásd [Előzetes funkciók a Finance and Operations alkalmazások Platform update 31 verziójában (2020. január)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-update-31).
 
