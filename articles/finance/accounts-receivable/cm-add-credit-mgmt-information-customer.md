@@ -16,11 +16,11 @@ ms.author: roschlom
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
 ms.openlocfilehash: 919aa50136f02a44eb69146589496ad1284721f2
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3976643"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4443947"
 ---
 # <a name="add-credit-management-information-for-customers"></a>Hitelkezelési információk hozzáadása ügyfelek számára
 
@@ -30,7 +30,7 @@ Miután beállította a hitelkezelést vezérlő paramétereit, további részle
 
 ## <a name="customer-information"></a>Vevő adatai
 
-Az ügyfelek adatait a **Hitel és beszedések** gyorslapon, az **Összes ügyfél** oldalon adhatja hozzá ( **Kinnlevőségek \> Ügyfelek \> Összes ügyfél** ).
+Az ügyfelek adatait a **Hitel és beszedések** gyorslapon, az **Összes ügyfél** oldalon adhatja hozzá (**Kinnlevőségek \> Ügyfelek \> Összes ügyfél**).
 
 1. A **Korlátlan hitelkeret** beállítását állítsa **Igen** értékre, ha az ügyfelet nem korlátozhatják a hitelkerettesztek.
 2. A **Kizárás hitelkezelésből** beállítást állítsa **Igen** értékre, ha az ügyfelet ki szeretné zárni bármely műveletből, amely általában a hitelkezelési folyamatok során bekövetkezik.
@@ -61,13 +61,13 @@ Ne feledje, hogy az **Ügyfél** oldalon látható információk egy részét eg
 
 Az ideiglenes hitelkeretek felülírják az ügyfél hitelkereteit egy megadott időszakra. Az ideiglenes hitelkereteket hitelkeret-kiigazítások használatával adhat meg. A hitelkeret-korrekciók segítségével a hitelvezetők frissíthetik egyetlen ügyfél, egy ügyfélécsoport vagy az összes ügyfél hitelkereteit és lejárati dátumait egy feladási folyamat során.
 
-Hitelkeret-korrekciós bejegyzéseket a **Hitelkeret-korrekciók** oldalon hozhat létre ( **Hitelkezelés \> Hitelkeret-korrekciók \> Hitelkeret-korrekciók** ).
+Hitelkeret-korrekciós bejegyzéseket a **Hitelkeret-korrekciók** oldalon hozhat létre (**Hitelkezelés \> Hitelkeret-korrekciók \> Hitelkeret-korrekciók**).
 
 ## <a name="create-insurance-policies-and-guarantees"></a>Biztosítási kötvények és garanciák létrehozása
 
 Minden egyes ügyfélhez egy vagy több biztosítási kötvény és garancia hozható létre. Ezekkel utána kiszámíthatja a vállalat kitettségét abban az esetben, ha hitelt nyújt egy ügyfélnek. A biztosítási kötvények és a garanciák is szerepelhetnek az ügyfél hitelkeretében.
 
-A biztosítási kötvényeket és a garanciákat az **Összes ügyfél** oldalon lehet létrehozni ( **Kinnlevőségek \> Ügyfelek \> Összes ügyfél** ). Válasszon ki egy vevőt, és ezt követően a műveleti ablak **Hitelkezelés** lapján válassza a **Biztosítások és garanciák** elemet.
+A biztosítási kötvényeket és a garanciákat az **Összes ügyfél** oldalon lehet létrehozni (**Kinnlevőségek \> Ügyfelek \> Összes ügyfél**). Válasszon ki egy vevőt, és ezt követően a műveleti ablak **Hitelkezelés** lapján válassza a **Biztosítások és garanciák** elemet.
 
 > [!NOTE]
 > A következő eljárásban a globális címjegyzékből válasszon ki egy biztosítót vagy egy kezest. Ezért az eljárás elkezdése előtt győződjön meg arról, hogy a biztosítók és a kezesek hozzá vannak rendelve a globális címjegyzékhez.

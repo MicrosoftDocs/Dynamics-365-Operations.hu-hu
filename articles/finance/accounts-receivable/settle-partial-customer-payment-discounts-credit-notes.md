@@ -19,11 +19,11 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: da4353849b053ff94cf1fda7a03568438d0111da
-ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
+ms.sourcegitcommit: 092ef6a45f515b38be2a4481abdbe7518a636f85
 ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4015007"
+ms.locfileid: "4444148"
 ---
 # <a name="settle-a-partial-customer-payment-that-has-discounts-on-credit-notes"></a>Részleges szállítói kifizetés rendezése, amely szállítói jóváírásokra vonatkozó engedménnyel rendelkezik
 
@@ -51,11 +51,11 @@ A **Vevői tranzakciók** oldalon April megnyitja a **Tranzakciók kiegyenlíté
 
 Az engedményadatok a **Nyitott tranzakciók kiegyenlítése** lap alján jelennek meg.
 
-- **Készpénzfizetési engedmény dátuma** : 2015. 12. 7. 
-- **Készpénzfizetési engedmény összege** : -1,00     
-- **Készpénzfizetési engedmény használata** : normális    
-- **Alkalmazott készpénzfizetési engedmény** : 0,00      
-- **Alkalmazandó készpénzfizetési engedmény összege** : -1,00     
+- **Készpénzfizetési engedmény dátuma**: 2015. 12. 7. 
+- **Készpénzfizetési engedmény összege**: -1,00     
+- **Készpénzfizetési engedmény használata**: normális    
+- **Alkalmazott készpénzfizetési engedmény**: 0,00      
+- **Alkalmazandó készpénzfizetési engedmény összege**: -1,00     
 
 A kiegyenlítés 100,00 lesz, és a fizetés esetén 99,00 és 1,00 engedményt fog szerepelni.
 

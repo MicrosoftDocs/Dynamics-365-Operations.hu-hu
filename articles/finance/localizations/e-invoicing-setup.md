@@ -19,11 +19,11 @@ ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
 ms.openlocfilehash: 7e631f1bf64b47b5f3e85d4f98c6edafe67d627a
-ms.sourcegitcommit: d6250ee5ced43be39e789324a895fd1c07178935
+ms.sourcegitcommit: f860ac2b18f6bbbfc4a46b497baec2477105b116
 ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 10/19/2020
-ms.locfileid: "4039892"
+ms.locfileid: "4444157"
 ---
 # <a name="set-up-the-electronic-invoicing-add-on"></a>Az Elektronikus számlázás bővítményének beállítása
 
@@ -194,7 +194,7 @@ A választható paraméterek a **Műveletek** gyorslapon kiválasztott művelett
 |-----------------------------|-------------|
 | Webszolgáltatás URL-címe             | A kérelmek küldéséhez használandó URL-cím. |
 | Webes kérelem időtúllépése         | Maximális idő a webszolgáltatás válaszára (ezredmásodpercben). |
-| Művelettípus kérelmezése      | A HTTP-kérési művelet típusa (például **MEGSZERZÉS** , **KÖZZÉTÉTEL** vagy **TÖRLÉS** ). |
+| Művelettípus kérelmezése      | A HTTP-kérési művelet típusa (például **MEGSZERZÉS**, **KÖZZÉTÉTEL** vagy **TÖRLÉS**). |
 | Tanúsítvány nevei           | A tanúsítvány nevei. |
 | Választörzs kódolása      | A HTTP-választörzs várt kódolása ahhoz, hogy megfelelően lehessen dekódolni. |
 | HTTP-kérelem tartalomtípusa   | A HTTP-kérelem tartalomtípus fejlécének bemenete. |
@@ -338,7 +338,7 @@ Ha nem szeretné többé megosztani a szervezettel az elektronikus számlázásb
 
 ## <a name="versions"></a>Verziók
 
-A verziók a saját állapotuk kezelésével vezérlik az Elektronikus számlázásbővítmény-funkció életciklusát. Létrehozhatja egy létező Elektronikus számlázásbővítmény-funkció új verzióját, vagy ha az Elektronikus számlázásbővítmény-funkció minden konfigurációja be van töltve, akkor a funkció állapotát **Befejezett** , majd **Közzététel** értékre állíthatja.
+A verziók a saját állapotuk kezelésével vezérlik az Elektronikus számlázásbővítmény-funkció életciklusát. Létrehozhatja egy létező Elektronikus számlázásbővítmény-funkció új verzióját, vagy ha az Elektronikus számlázásbővítmény-funkció minden konfigurációja be van töltve, akkor a funkció állapotát **Befejezett**, majd **Közzététel** értékre állíthatja.
 
 ### <a name="create-a-new-version-of-an-existing-electronic-invoicing-add-on-feature"></a>Létező Elektronikus számlázásbővítmény-funkció új verziójának létrehozása
 

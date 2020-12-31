@@ -18,11 +18,11 @@ ms.author: panolte
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: 65970cdac114b72363d2fbbc08766c99ace00b88
-ms.sourcegitcommit: 74b10104338222a945684d841d60ab4b8e570168
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "3899373"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4443918"
 ---
 # <a name="advanced-bank-reconciliation-mt940-import--composite-data-entity-upgrade"></a>Speciális banki egyeztetés MT940 importálása - összetett adatentitás frissítése
 
@@ -55,7 +55,7 @@ A következő lépések segítségével adja hozzá a banki kivonat importálás
             3.  Feltöltési adatfájl = SampleBankCompositeEntity.xml új verziója.
             4.  Kattintson az **Igen** gombra a meglévő fájl felülírásához.
             5.  Kattintson az **Igen** egy új hozzárendelés létrehozásához.
-            6.  Győződjön meg róla, hogy a S**orszám** hozzárendelése kész van-e.
+            6.  Győződjön meg róla, hogy a S **orszám** hozzárendelése kész van-e.
                 -   Kattintson a **Térkép megtekintése** menüpontra az entitás kivonatán.
                 -   Ellenőrizze, hogy a **sorszám** hozzá van-e rendelve a forrásból az előkészítéshez.
 

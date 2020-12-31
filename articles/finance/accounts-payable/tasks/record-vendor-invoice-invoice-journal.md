@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5277081d9f7adcc43c30d30208d13c7e39d76118
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: f9f2cbe0c9d1609aa3713776f81bafa396fff301
+ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3140375"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4645281"
 ---
 # <a name="record-a-vendor-invoice-in-the-invoice-journal"></a>Szállítói számla rögzítése a számlanaplóban
 
@@ -43,7 +43,9 @@ Ez a feladat-útmutató bemutatja, hogyan rögzíthet szállítói számlákat a
     * Az **Áfacsoport** alapértelmezett értéke a szállítói számlából származik.  
     * A **Cikk áfacsoportjának** alapértelmezett értéke a főszámlán az **Ellenszámla** mezőben megadott értékből származik.  
     * A **Határidőt** a Fizetési feltételek alapján számítja ki a rendszer.  
-    * A **Készpénzfizetési engedmény** alapértelmezett értéke a Szállítói számlából származik.  
+    * A **Készpénzfizetési engedmény** alapértelmezett értéke a Szállítói számlából származik.
+12. Ha engedélyezte a Szállítói számlanapló munkafolyamatát, kattintson a **Munkafolyamat > Küldés** lehetőségre.
+    * A beküldés jóváhagyásakor a program a dátumot a következő nyitott időszak első napjára vezeti, ha a tranzakció feladási dátuma a Várakoztatott vagy a Főkönyvi könyveléshez lezárt időszakon belülre esik.
 12. Kattintson a **Bejegyzés** lehetőségre.
 13. Zárja be a lapot.
 

@@ -16,11 +16,11 @@ ms.author: roschlom
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
 ms.openlocfilehash: d55a7c5e24213f70a1b71f89691f0e5be8c36f10
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3976571"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4443945"
 ---
 # <a name="credit-limit-adjustments"></a>Hitelkeret-kiigazítások 
 
@@ -30,7 +30,7 @@ A hitelkeret-korrekciók segítségével a hitelvezetők frissíthetik egyetlen 
 
 ## <a name="set-up-credit-limit-adjustments"></a>Hitelkeret-korrekció beállítása
 
-Bejegyzéseket hozhat létre a Hitelkeret-korrekciós naplóban **Hitelkeret-korrekció** oldalon ( **Hitelkezelés \> Hitelkeret-korrekciók \> Hitelkeret-korrekciók** ).
+Bejegyzéseket hozhat létre a Hitelkeret-korrekciós naplóban **Hitelkeret-korrekció** oldalon (**Hitelkezelés \> Hitelkeret-korrekciók \> Hitelkeret-korrekciók**).
 
 1. Válassza az **Új** lehetőséget. A bejegyzések egy új csoportja jön létre, amelynek van hitelkeret-korrekciós száma.
 2. A hitelkeret-módosítás típusának kiválasztása:
@@ -46,7 +46,7 @@ Ha a **Feladott** jelölőnégyzet be van jelölve, akkor a hitelkereteket alkal
 A hitelkeret-korrekciók kézi hozzáadásához jelöljeki a **Sorok** lehetőséget, majd kövesse az alábbi lépéseket.
 
 1. Ha egy vevőhöz hitelkeret-korrekciót szeretne hozzáadni, használja **Vevői** kiigazítások menüt. Ha hitelkeretet szeretne hozzáadni egy vevőcsoporthoz válassza **Vevői jócsoport hitelkorrekciói** lehetőséget.
-2. Adjon meg egy vevői számlát a számla-ügyfélfiókhoz, amelyet az új hitelkerettel kell frissíteni. Ha az 1 . lépésben kiválasztotta a **Vevői hitelcsoportok helyesbítéseit** , akkor adja meg a vevői hitelcsoportot. Ugyanazon a naplósorban nem adhat meg vevői számlát és vevői hitelcsoport azonosítót is.
+2. Adjon meg egy vevői számlát a számla-ügyfélfiókhoz, amelyet az új hitelkerettel kell frissíteni. Ha az 1 . lépésben kiválasztotta a **Vevői hitelcsoportok helyesbítéseit**, akkor adja meg a vevői hitelcsoportot. Ugyanazon a naplósorban nem adhat meg vevői számlát és vevői hitelcsoport azonosítót is.
 
     Megjelenik az aktuális hitelkeret, és a név automatikusan megjelenik.
 
@@ -62,7 +62,7 @@ Ha azt szeretné, hogy a hitelkeret-módosítások automatikusan jöjjenek létr
 A ideiglenes hitelkeret-korrekciók kézi hozzáadásához kövesse az alábbi lépéseket.
 
 1. Ha egy vevőhöz hitelkeret-korrekciót szeretne hozzáadni, használja **Vevői** kiigazítások menüt. Ha hitelkeretet szeretne hozzáadni egy vevőcsoporthoz válassza **Vevői jócsoport hitelkorrekciói** lehetőséget.
-2. Adjon meg egy vevői számlát a számla-ügyfélfiókhoz, amelyet az új hitelkerettel kell frissíteni. Ha az 1 . lépésben kiválasztotta a **Vevői hitelcsoportok helyesbítéseit** , akkor adja meg a vevői hitelcsoportot. Ugyanazon a naplósorban nem adhat meg vevői számlát és vevői hitelcsoport azonosítót is.
+2. Adjon meg egy vevői számlát a számla-ügyfélfiókhoz, amelyet az új hitelkerettel kell frissíteni. Ha az 1 . lépésben kiválasztotta a **Vevői hitelcsoportok helyesbítéseit**, akkor adja meg a vevői hitelcsoportot. Ugyanazon a naplósorban nem adhat meg vevői számlát és vevői hitelcsoport azonosítót is.
 
     Ha már létezik aktív vagy jövőbeli ideiglenes hitelkeret, akkor minden egyes ideiglenes hitelkeretnél megjelenik az aktuális ideiglenes hitelkeret és a dátumtartományok. A név automatikusan megjelenik.
 
@@ -117,7 +117,7 @@ Miután létrehozta a hitelkeretkorrekciós sorokat, a művelet ablaktáblán a 
 
 ### <a name="credit-limit-adjustments-workflows"></a>Hitelkeret-korrekciós munkafolyamatok
 
-A **Hitelkeret-korrekciós** munkafolyamatok a munkafolyamat-jóváhagyási folyamaton keresztüli hitelkeret-korrekciók elküldésére használhatók. Két munkafolyamatot is létre lehet hozni a **Hitelkezelési munkafolyamart** oldalon **(Hitelkezelés \> Beállítások \> Hitelkezelési munkafolyamat** ):
+A **Hitelkeret-korrekciós** munkafolyamatok a munkafolyamat-jóváhagyási folyamaton keresztüli hitelkeret-korrekciók elküldésére használhatók. Két munkafolyamatot is létre lehet hozni a **Hitelkezelési munkafolyamart** oldalon **(Hitelkezelés \> Beállítások \> Hitelkezelési munkafolyamat**):
 
 - **Hitelkeret-korrekciók** – Ez a munkafolyamat használható a fejléc szintjén történő bejegyzésjóváhagyásra.
 - **Hitelkeret-helyesbítési sor** – Ez a munkafolyamat használható a korrekciós bejegyzések jóváhagyására, így a munkafolyamatban szereplő feltételek alapján különböző személyek is jóváhagyhatják a bejegyzéseket.

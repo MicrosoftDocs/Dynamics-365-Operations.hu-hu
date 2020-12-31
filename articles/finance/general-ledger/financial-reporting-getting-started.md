@@ -3,7 +3,7 @@ title: Pénzügyi jelentéskészítés – áttekintés
 description: Ez a témakör azt ismerteti, hol érheti el a Microsoft Dynamics 365 Finance pénzügyi jelentéseit, és hogyan használhatja a pénzügyi jelentési képességeket.
 author: aprilolson
 manager: AnnBe
-ms.date: 09/22/2020
+ms.date: 12/04/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cd87983ce062bd1fa57e97628986cadced9971ab
-ms.sourcegitcommit: 374298f0816b57c95c0c3e3fd7e852399e1d8696
+ms.openlocfilehash: 88436b4a5d6be4172e15fa4a9dadc34696417fb9
+ms.sourcegitcommit: eec96c64f44d1b4877d49ee15665a774019d42d7
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "3999549"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "4672444"
 ---
 # <a name="get-started-with-financial-reporting"></a>Financial Reporting – első lépések 
 
@@ -114,17 +114,17 @@ A pénzügyi jelentések között 22 alapértelmezett pénzügyi jelentés talá
 | Mérleg és bevétel-kimutatás egymás mellett – Alapértelmezett | A vállalat éves pénzügyi helyzetének és nyereségességének megjelenítése egymás mellett.                                                                                                                                                                                                                              |
 | Pénzforgalom – Alapértelmezett                                       | Betekintés a szervezet beérkező és kimenő készpénzfizetéseibe.                                                                                                                                                                                                                                   |
 | Részletes JE és TB áttekintés – Alapértelmezett                      | Nyitó egyenleg és a tevékenységi információk megtekintése az összes fiókban.                                                                                                                                                                                                                                                      |
-| Részletes főkönyvi kivonat – Alapértelmezett                         | Egyenleginformációk megtekintése minden olyan számlához, amely hitel- vagy bankkártya egyenleggel rendelkezik, valamint ezen egyenlegek nettó értéke, a tranzakció dátumával, a bizonylattal és a napló leírással együtt.                                                                                                                                  |
+| [Részletes főkönyvi kivonat – Alapértelmezett](trial-balance-financial-reports.md)| Egyenleginformációk megtekintése minden olyan számlához, amely hitel- vagy bankkártya egyenleggel rendelkezik, valamint ezen egyenlegek nettó értéke, a tranzakció dátumával, a bizonylattal és a napló leírással együtt.                                                                                                                                  |
 | Negyedéves költségtrend három évre – Alapértelmezett             | Betekintést nyújt az elmúlt három év 12 negyedévének költségeibe.                                                                                                                                                                                                                                   |
 | JE és TB pénzügyi feliratok áttekintése – Alapértelmezett            | Az eszköz, a kötelezettség, a tulajdonosi tőke, a bevétel, a kiadás, a nyereség vagy a veszteség pénzügyi feliratok egyenlegeinek és aktivitásának áttekintése.                                                                                                                                                                           |
-| Bevétel-kimutatás – Alapértelmezett                                | A szervezet nyereségességének megtekintése az aktuális időszakra és a folyó év mai napjáig.                                                                                                                                                                                                                                   |
+| [Bevétel-kimutatás – Alapértelmezett](income-statement-financial-report.md)| A szervezet nyereségességének megtekintése az aktuális időszakra és a folyó év mai napjáig.                                                                                                                                                                                                                                   |
 | Főkönyvi tranzakciók listája – Alapértelmezett                        | Az összes számla egyenlegének részletes adatainak megtekintése. Ez a jelentés a hitel- és bankkártyák egyenlegét mutatja a tranzakciók további adataival együtt, mint például a tranzakció időpontja, a napló száma, a bizonylat, a feladás típusa és a nyomkövetési szám.                                                                            |
 | Mutatószámok – Alapértelmezett                                          | A szervezet éves fizetőképességének, nyereségességének és hatékonysági rátájának megtekintése.                                                                                                                                                                                                                           |
 | 12 hónapos költségek – Alapértelmezett                       | Az elmúlt 12 hónap költségeinek megtekintése. Ez a 12 hónap több mint egy pénzügyi évre is kiterjedhet.                                                                                                                                                                                                       |
 | Folyamatos negyedéves bevétel-kimutatás – Alapértelmezett               | A szervezet nyereségességének megtekintése negyedéves lebontásban az elmúlt évben, valamint a folyó évben az aktuális időpontig.                                                                                                                                                                                                                   |
 | Mérleg egymás mellett – Alapértelmezett                      | A szervezet éves pénzügyi helyzetének megtekintése. Ez a jelentés az eszközöket és a kötelezettséget, valamint a részvényesek saját tőkéjét jeleníti meg egyidejűleg.                                                                                                                                                                                |
-| Összegző főkönyvi kivonat – Alapértelmezett                          | Egyenleg-adatok megtekintése az összes számlához, amelyekhez nyitó és záró egyenleg tartozik, hitel- vagy bankkártya egyenleggel rendelkeznek nettó eltéréssel.                                                                                                                                                                  |
-| Éves összegző főkönyvi kivonat – Alapértelmezett           | Az egyenleg-adatok megtekintése az összes olyan számlához, amelyekhez nyitó és záró egyenleg tartozik, hitel- vagy bankkártya egyenleggel rendelkeznek nettó eltéréssel.                                                                                                                           |
+| [Összegző főkönyvi kivonat – Alapértelmezett](trial-balance-financial-reports.md)| Egyenleg-adatok megtekintése az összes számlához, amelyekhez nyitó és záró egyenleg tartozik, hitel- vagy bankkártya egyenleggel rendelkeznek nettó eltéréssel.                                                                                                                                                                  |
+| [Éves összegző főkönyvi kivonat – Alapértelmezett](trial-balance-financial-reports.md)| Az egyenleg-adatok megtekintése az összes olyan számlához, amelyekhez nyitó és záró egyenleg tartozik, hitel- vagy bankkártya egyenleggel rendelkeznek nettó eltéréssel.                                                                                                                           |
 | Heti értékesítések és kedvezmények – Alapértelmezett                     | Betekintés a hónap egyes heteinek értékesítéseibe és kedvezményeibe. Ez a jelentés összesen négy hetet tartalmaz.                                                                                                                                                                                                              |
 | Rendelkezésre álló költségvetési alapok - alapértelmezett                         | A felülvizsgált költségvetés, a tényleges kiadások, költségvetési foglalások és az összes számla rendelkezésére álló költségvetési források részletes összehasonlításának megtekintése                                                                                                                                                                                  |
 
@@ -149,7 +149,8 @@ A jelentéskészítő megnyitásakor problémák merülhetnek fel néhány gyako
 * Az Internet Explorer szolgáltatásban válassza ki a **Beállítások** elemet, majd válassza az **Internetbeállítások** lehetőséget. Válassza a **Biztonság** fület. Válassza ki a megbízható helyeket. A zóna Biztonsági szint feliratú területen módosítsa a beállítást **Közepesen alacsony** értékre.
 * Tiltsa le az előugró ablakok blokkolását a böngészőjében.
 * A Microsoft .NET-keretrendszer 4.6.2 vagy újabb telepítéséhez munkaállomások szükségesek. A Microsoft .NET Framework ezen verziója a [Microsoft letöltőközpontból](https://www.microsoft.com/download/details.aspx?id=53345) tölthető le és telepíthető.
-* Ha a Chrome böngészőt használja a Microsoft Edge-hez, akkor telepítenie kell a ClickOnce kiterjesztést a jelentéstervező kliens letöltéséhez. Ha a böngészőt inkognitó módban futtatja, győződjön meg arról, a ClickOnce kiterjesztés engedélyezve van-e az inkognitó módban. 
+* Chrome böngésző használata esetén, telepítenie kell a ClickOnce kiterjesztést a jelentéstervező kliens letöltéséhez. Ha a Chrome böngészőt incognito módban futtatja, győződjön meg arról, a ClickOnce kiterjesztés engedélyezve van-e az incognito módban. A Chrome ClickOnce kiterjesztéssel kapcsolatos további tudnivalókat lásd: [Felhőtelepítések rendszerkövetelményei](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/system-requirements).
+* Ha a Microsoft Edget Chrome böngészővel használja, akkor nem kell ClickOnce-kiterjesztést telepítenie az Edge Chromium számára. Azonban engedélyeznie kell a ClickOnce lehetőséget a jelentéstervező kliens letöltéséhez. Ha a böngészőt inkognitó módban futtatja, győződjön meg arról, a ClickOnce kiterjesztés engedélyezve van-e az inkognitó módban.
      1. Új böngésző megnyitása a Microsoft Edge-ben.
      2. Adja az **edge://flags** parancsot, és válassza az **Enter** billentyűt.
      3. Keresse meg a **ClickOnce támogatás** beállítást, vagy használja ezt a közvetlen hivatkozást: **edge://flags/#edge-click-once**.

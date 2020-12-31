@@ -19,11 +19,11 @@ ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
 ms.openlocfilehash: 7b2a3aae43d42060c7fcd9e1ea3db814fc5d8f22
-ms.sourcegitcommit: d6250ee5ced43be39e789324a895fd1c07178935
+ms.sourcegitcommit: f860ac2b18f6bbbfc4a46b497baec2477105b116
 ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 10/19/2020
-ms.locfileid: "4039846"
+ms.locfileid: "4444160"
 ---
 # <a name="get-started-with-the-electronic-invoicing-add-on"></a>Első lépések az Elektronikus számlázásbővítménnyel
 
@@ -207,7 +207,7 @@ Ha engedélyezni szeretné az üzleti adatok gyűjtését és küldését az ele
 
 1. Az **Elektronikus jelentéskészítés** munkaterületen, a **Konfigurációszolgáltatók** szakaszban, válassza a **Microsoft** csempét. Győződjön meg róla, hogy ez a konfigurációszolgáltató **Aktív** értékre van állítva. A szolgáltatók **Aktív** értékre állításával kapcsolatban tekintse át a [Konfigurációszolgáltatók létrehozása és megjelölése aktívként](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11) elemet.
 3. Válassza ki a **Tárházak** lehetőséget.
-4. Válassza ki a **Globális erőforrás** , majd a **Megnyitás** lehetőséget.
+4. Válassza ki a **Globális erőforrás**, majd a **Megnyitás** lehetőséget.
 5. A **Kapcsolódás a Lifecycle Services** párbeszédpanelben válassza a **Kattintson ide a Lifecycle Service szolgáltatáshoz való kapcsolódáshoz** elemet.
 6. Attól függően, hogy melyik országban vagy régióban szeretné használni az e-számlázást, importálnia kell a megfelelő adatmodellt, az adatmodell-leképezést és a formátumokat. Az importálni kívánt ER-konfigurációkkal kapcsolatos tudnivalókat lásd az „Első lépések az Elektronikus számlázásbővítménnyel” című témakört.
 7. Importálja a **Vevői számla kontextusmodellje** lehetőséget. Ez a modell további paramétereket tartalmaz, amelyek többek között az üzleti adatok benyújtásakor az Elektronikus számlázásbővítményhez használt, Finance szolgáltatásban található környezetet írják le.
@@ -230,8 +230,8 @@ Ha az elküldött számlán szereplő dokumentumnak frissítésre van szüksége
 
 1. Az **Elektronikus jelentéskészítés** munkaterületen, a **Konfigurációszolgáltatók** szakaszban, válassza a **Microsoft** csempét.
 2. Válassza ki a **Tárházak** lehetőséget.
-3. Válassza ki a **Globális erőforrás** , majd a **Megnyitás** lehetőséget.
-4. A **Válaszüzenet-modell** , a **Válaszüzenet importálási formátuma** , a **Válaszüzenet-modell leképezése a célhoz** , és a **Fájl tartalmának importálási formátuma** lehetőségek importálása.
+3. Válassza ki a **Globális erőforrás**, majd a **Megnyitás** lehetőséget.
+4. A **Válaszüzenet-modell**, a **Válaszüzenet importálási formátuma**, a **Válaszüzenet-modell leképezése a célhoz**, és a **Fájl tartalmának importálási formátuma** lehetőségek importálása.
 5. Menjen a **Szervezeti adminisztráció \> Beállítás \> Elektronikus dokumentumparaméterek** lehetőségre.
 6. Az **Elektronikus dokumentum** lap **Hozzáadás** elemét kiválasztva adja meg annak a táblának a nevét, amely az adott ország-/régióspecifikus számlához kapcsolódik. Az azzal kapcsolatos tudnivalókat, hogy melyik táblaneveket válassza ki, lásd az „Első lépések az Elektronikus számlázásbővítménnyel” című témakört.
 7. A választípusok konfigurálásához válassza ki a kívánt **Választípusokat**. Az azzal kapcsolatos tudnivalókat, hogy melyik táblaneveket válassza ki, lásd az „Első lépések az Elektronikus számlázásbővítménnyel” című témakört.
@@ -283,7 +283,7 @@ A rendszeres beküldési folyamat során a program kétirányú kommunikációt 
 
 ### <a name="filter-query"></a>Lekérdezés szűrése
 
-1. A **Tartomány** lapon lévő **Lekérdezés** párbeszédpanelbe írja be a szűrési feltételeket a **Tábla** , **Származtatott tábl** , **Mező** , és **Feltételek** mezőket.
+1. A **Tartomány** lapon lévő **Lekérdezés** párbeszédpanelbe írja be a szűrési feltételeket a **Tábla**, **Származtatott tábl**, **Mező**, és **Feltételek** mezőket.
 2. Válassza a **Hozzáadás** lehetőséget, hogy a szükségnek megfelelően, minél több további feltételt hozzá tudjon adni az üzleti dokumentumokhoz.
 
     ![Beküldési szűrési feltételek beállítása](media/e-invoicing-services-get-started-set-up-submission-filter-criteria.png)

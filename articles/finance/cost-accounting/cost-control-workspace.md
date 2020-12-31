@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 38dc261a74eea9e45036961fdfecea1465b238de
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: c54afd0d94a56f6306a11e03448cc66c168390c2
+ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3977695"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "4444201"
 ---
 # <a name="cost-control-workspace"></a>Költségellenőrzési munkaterület 
 
@@ -36,7 +36,7 @@ A **Költségkontroll** munkaterület központi pont, ahol a menedzserek, akik f
 
 A költségkönyvelők meghatározhatnak annyi jelentéskonfigurációt, amennyire szükségük van a kívánt adatösszetételhez vagy elrendezéshez. A jelentés konfigurációja hat szakaszból áll, amelyek mindegyike hozzájárul a célzott adatösszetétel vagy az elrendezés kiválasztásához.
 
-A Költségkontroll munkaterület konfigurálásához kattintson a következőkre: **Költségkönyvelés** \> **Beállítás** \> **Költségellenőrzési munkaterület konfigurációja** .
+A Költségkontroll munkaterület konfigurálásához kattintson a következőkre: **Költségkönyvelés** \> **Beállítás** \> **Költségellenőrzési munkaterület konfigurációja**.
 
 ### <a name="general"></a>Általános
 
@@ -54,7 +54,7 @@ Az **Adatszűrés** gyorslapon meghatározhatja a jelentés adatbeli alapjait. A
 
 | Mező                                                             | Leírás |
 |-------------------------------------------------------------------|-------------|
-| Költségkönyvelési főkönyv                                            | A **Költségkönyvelési főkönyv** , amely a jelentés alapjául szolgál. Az érték a **Költség-ellenőrzőegység** mezőből származik. |
+| Költségkönyvelési főkönyv                                            | A **Költségkönyvelési főkönyv**, amely a jelentés alapjául szolgál. Az érték a **Költség-ellenőrzőegység** mezőből származik. |
 | Költség-ellenőrzőegység                                                 | A kiválasztott érték határozza meg a költségszámítási könyvelést és a költségelemeket, amelyekre ez a jelentés alapul. |
 | Statisztikai dimenzióhierarchia, költségösszetevődimenzió-hierarchia | A **Költségellenőrzés** munkaterületen konfigurációs rekord nem pénzbeli vagy monetáris értékeit is is lehet jelenteni, de nem ugyanaz az elrendezés. Válasszon ki egy értéket a **elem dimenzióhierarchia költség** mezőben monetáris értékek jelentéséhez. Válasszon ki egy értéket a **Statisztikai dimenzióhierarchia költség** mezőben nem monetáris értékek jelentéséhez. A kiválasztott dimenzióhierarchia-rekord határozza meg a jelentési és összesítési szintek szerkezetét.<blockquote>[!NOTE]<br>A nem monetáris és pénzbeli értékek egymás melletti megtekintéséhez exportálhat adatokat Microsoft Excel programba és a Microsoft Power BI tartalomcsomagba.</blockquote> |
 | Költségobjektum dimenzióhierarchia                                   | Válassza ki a költségobjektum-dimenziók hierarchiáját, amely megfelel a jelentésben megadott célnak. |
@@ -133,7 +133,7 @@ A felhasználók testre szabhatják a jelentésben szereplő oszlopokat, hogy me
 
 ### <a name="view-details"></a>Részletek megtekintése
 
-A felhasználók a munkaterületen megjelenített egyenlegek mögötti részleteket is megjeleníthetik. Ha a felhasználók válassza ki a költség dimenzió hierarchia elemcsomóponthoz, és kattintson **részleteinek megtekintése** , a **részletei költség** párbeszédpanelen a csomópont részletes adatainak megjelenítése.
+A felhasználók a munkaterületen megjelenített egyenlegek mögötti részleteket is megjeleníthetik. Ha a felhasználók válassza ki a költség dimenzió hierarchia elemcsomóponthoz, és kattintson **részleteinek megtekintése**, a **részletei költség** párbeszédpanelen a csomópont részletes adatainak megjelenítése.
 
 A rács minden költségelemet bemutat, amely összefügg a költségelem dimenzió hierarchia-csomópontjával és értékeivel. A rácsban megjelenő oszlopok megegyeznek a munkaterületi beállításokkal.
 

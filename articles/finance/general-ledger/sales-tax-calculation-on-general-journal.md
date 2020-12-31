@@ -19,11 +19,11 @@ ms.author: roschlom
 ms.search.validFrom: 2019-08-14
 ms.dyn365.ops.version: 10.0.6
 ms.openlocfilehash: 51d43c8e6d16201e1f8c392c13ead20287782dcc
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3983597"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4443831"
 ---
 # <a name="sales-tax-calculation-on-general-journal-lines"></a>Áfa számítása az általános naplósorokhoz
 [!include [banner](../includes/banner.md)]
@@ -44,7 +44,7 @@ Az ÁFA irányának meghatározási módja a bizonylaton szereplő számla típu
 
 ### <a name="account-type-is-project"></a>Számla típusa projekt
 
-Ha egy bizonylat olyan naplósorral rendelkezik, amelyben a számlatípus a **Projekt** , akkor a bizonylat minden naplója ugyanarra az adózási irányra vonatkozik. Az alábbi ábra bemutatja a szabályt. A következő pontok a lehetséges adóügyi irányokat mutatják a projekt számlái esetében.
+Ha egy bizonylat olyan naplósorral rendelkezik, amelyben a számlatípus a **Projekt**, akkor a bizonylat minden naplója ugyanarra az adózási irányra vonatkozik. Az alábbi ábra bemutatja a szabályt. A következő pontok a lehetséges adóügyi irányokat mutatják a projekt számlái esetében.
 
 • Ha az áfakód importadó, akkor a forgalmi adó iránya importadó.
 
@@ -62,7 +62,7 @@ A következő ábra grafikusan illusztrálja a szabályt.
 
 ### <a name="account-type-is-vendor"></a>Számla típusa szállító
 
-Ha egy bizonylat olyan naplósorral rendelkezik, amelyben a számlatípus a **Szállító** , akkor a bizonylat minden naplója ugyanarra az adózási irányra vonatkozik. A következő pontok a lehetséges adóügyi irányokat mutatják a szállító számlái esetében. 
+Ha egy bizonylat olyan naplósorral rendelkezik, amelyben a számlatípus a **Szállító**, akkor a bizonylat minden naplója ugyanarra az adózási irányra vonatkozik. A következő pontok a lehetséges adóügyi irányokat mutatják a szállító számlái esetében. 
 
 • Ha az áfakód importadó, akkor a forgalmi adó iránya importadó.
 
@@ -80,7 +80,7 @@ A következő ábra grafikusan illusztrálja a szabályt.
 
 ### <a name="account-type-is-customer"></a>Számla típusa ügyfél
 
-Ha egy bizonylat olyan naplósorral rendelkezik, amelyben a számlatípus a **Ügyfél** , akkor a bizonylat minden naplója ugyanarra az adózási irányra vonatkozik. A következő pontok a lehetséges adóügyi irányokat mutatják az ügyfél számlái esetében.
+Ha egy bizonylat olyan naplósorral rendelkezik, amelyben a számlatípus a **Ügyfél**, akkor a bizonylat minden naplója ugyanarra az adózási irányra vonatkozik. A következő pontok a lehetséges adóügyi irányokat mutatják az ügyfél számlái esetében.
 
 • Ha az áfakód adómentes, akkor a forgalmi adó iránya adómentes vásárlás.
 
@@ -96,7 +96,7 @@ A következő ábra grafikusan illusztrálja a szabályt.
 
 ### <a name="account-type-is-ledger"></a>Számla típusa Főkönyv
 
-A következő ábra bemutatja azt a szabályt, amelyet akkor kell alkalmazni, ha egy bizonylathoz csak olyan naplósorok vannak, amelyeknél a számla típusa **Főkönyv** . A következő pontok a lehetséges adóügyi irányokat mutatják a főkönyvi számlák esetében.
+A következő ábra bemutatja azt a szabályt, amelyet akkor kell alkalmazni, ha egy bizonylathoz csak olyan naplósorok vannak, amelyeknél a számla típusa **Főkönyv**. A következő pontok a lehetséges adóügyi irányokat mutatják a főkönyvi számlák esetében.
 
 • Ha az áfakód importadó, akkor a forgalmi adó iránya importadó.
 
@@ -110,9 +110,9 @@ A következő ábra grafikusan illusztrálja a szabályt.
 
 #### <a name="override-the-sales-tax-direction"></a>Az áfa irányának felülírása
 
-Az áfa irányát felülbírálhatja, ha a bizonylat csak olyan sorokat tartalmaz, amelyekben a számla típusa **Főkönyv** .
+Az áfa irányát felülbírálhatja, ha a bizonylat csak olyan sorokat tartalmaz, amelyekben a számla típusa **Főkönyv**.
 
-Nyissa meg a **Főkönyv \> Számlatükör \> Számlák \> Főszámlák** , és válassza ki a **Jogi személy felülbírálások** gyorslapját.
+Nyissa meg a **Főkönyv \> Számlatükör \> Számlák \> Főszámlák**, és válassza ki a **Jogi személy felülbírálások** gyorslapját.
 
 ## <a name="determine-the-sales-tax-amount"></a>Az áfa összegének meghatározása.
 

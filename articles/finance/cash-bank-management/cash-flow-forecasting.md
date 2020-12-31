@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 2ffb8522729049ca98acfb70992738b45c05b552
-ms.sourcegitcommit: cf39369545a94201f367a4efada595a04a319d42
+ms.openlocfilehash: 64d33212600a75900febbd6ec308e4bf5d4f16b7
+ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "3653776"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4645769"
 ---
 # <a name="cash-flow-forecasting"></a>Pénzforgalmi előrejelzés
 
@@ -92,6 +92,11 @@ A pénzforgalmi előrejelzésekben költségvetési modellekből készített kö
 ### <a name="inventory-management"></a>Készletgazdálkodás
 
 A készletkínálati és -keresleti előrejelzések szerepeltethetők a pénzforgalmi előrejelzésekben. A **Pénzforgalmi előrejelzés beállítása** oldalon, a **Készletgazdálkodás** lapon, válassza ki azt az előrejelzési modellt, amelyet szerepeltetni kíván a pénzforgalmi előrejelzésben. A pénzforgalmi előrejelzésbe való bekerülés felülírható az egyes kínálati és keresleti előrejelzési soroknál.
+
+### <a name="setting-up-dimensions-for-cash-flow-forecasting"></a>A Pénzforgalmi előrejelzés dimenzióinak beállítása
+A **Pénzforgalmi előrejelzés beállítása** lap egy új lapján beállíthatja, hogy milyen pénzügyi dimenziókat kell használni a **Pénzforgalmi előrejelzés** munkaterületen végzett szűréshez. Ez a lap csak akkor jelenik meg, ha engedélyezve van a Pénzforgalmi előrejelzések funkció. 
+
+A **Dimenziók** fülön válassza ki a szűréshez használni kívánt dimenziók listáját, és a nyilakkal helyezze át őket a jobb oldali oszlopba. A pénzforgalmi előrejelzések adatainak szűréséhez csak két dimenzió választható ki. 
 
 ### <a name="calculation"></a>Számítás
 

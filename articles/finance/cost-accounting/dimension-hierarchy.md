@@ -20,11 +20,11 @@ ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: 71ba02fc6be4ab9a7871c10a9f95c474e52ae765
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3976451"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4443895"
 ---
 # <a name="dimension-hierarchy"></a>Dimenzióhierarchia
 
@@ -75,7 +75,7 @@ A **Dimenzióosztályozás-hierarchia** típus a szabályokhoz és a jelentések
 
 A dimenzióhierarchiát olyan fastruktúrának hozzák létre, amely csomópont- és levélcsomópont-kapcsolatokat tartalmaz.
 
--  A csomópontnak 1: _n_ alcsomópontja lehet.
+-  A csomópontnak 1:_n_ alcsomópontja lehet.
 -  A csomóponthoz nem lehet hozzárendelni mind alcsomópontot, mind levélcsomópontot.
 -  A levélcsomópont csak a hierarchia legalacsonyabb szintjén rendelhető hozzá.
 
@@ -155,7 +155,7 @@ Az irányelv dimenzióhierarchiája az alábbiak szerint állítható be.
 |&nbsp;&nbsp;Változó költség | 40001                     | 40010                   |
 
 > [!NOTE]
-> A **Dimenziótag-tartományok** alatt egy csomópont 1: _n_ dimenziótagtartományt tartalmazhat. Dimenziótag-azonosítókat illeszthet be, amelyek még nem léteznek dimenziótagokként. Ezzel a módszerrel a hierarchia rugalmas lesz a jövőben.  
+> A **Dimenziótag-tartományok** alatt egy csomópont 1:_n_ dimenziótagtartományt tartalmazhat. Dimenziótag-azonosítókat illeszthet be, amelyek még nem léteznek dimenziótagokként. Ezzel a módszerrel a hierarchia rugalmas lesz a jövőben.  
 
 ### <a name="copy-a-hierarchy"></a>Hierarchia másolása
 
@@ -167,7 +167,7 @@ A csomópontot felfelé és lefelé mozgathatja az aktuális szinten a struktúr
 
 A csomópontot a hierarchiában lévő új helyre mozgatja a célcsomópont kiválasztásával. Kétféle módon lehet mozgatni egy csomópontot:
 
-- **Áthelyezés alá** – a kiválasztott csomópont áthelyezése a hierarchia aktuális helyéről, és szúrja be a kijelölt célcsomópont **alá** .
+- **Áthelyezés alá** – a kiválasztott csomópont áthelyezése a hierarchia aktuális helyéről, és szúrja be a kijelölt célcsomópont **alá**.
 - **Áthelyezés mögé** – a kiválasztott csomópont áthelyezése a hierarchia aktuális helyéről, és szúrja be a kijelölt célcsomópont **mögé** a saját hierarchiaszintjén.
 
 > [!NOTE] 
@@ -313,7 +313,7 @@ Egy új **Felhasználók** gyorslap áll rendelkezésre a hierarchiatervezőben.
 > [!NOTE] 
 > A költségkönyvelőket a hierarchia felső szintjéhez kell rendelni, hogy láthassák az összes költségkönyvelési tételt.
 
-A hozzáférési lista hierarchiájának és biztonsági beállításainak engedélyezéséhez lépjen ide: **Költségkönyvelés** > **Beállítás** > **Paraméterek** > **Általános** . Válassza ki a **Költségobjektumdimenzió-tagok megtekintési hozzáférésének engedélyezése** paramétert.
+A hozzáférési lista hierarchiájának és biztonsági beállításainak engedélyezéséhez lépjen ide: **Költségkönyvelés** > **Beállítás** > **Paraméterek** > **Általános**. Válassza ki a **Költségobjektumdimenzió-tagok megtekintési hozzáférésének engedélyezése** paramétert.
 
 A Hozzáférési lista hierarchiájának beállításait használja a rendszer azoknak az adatoknak az irányítására, amelyek a következő területeken jelennek meg:
 

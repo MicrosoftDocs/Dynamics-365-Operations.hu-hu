@@ -18,11 +18,11 @@ ms.search.validFrom:
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: c77d08d5877ab27f9b6549a5b2a666150938fc08
-ms.sourcegitcommit: 74b10104338222a945684d841d60ab4b8e570168
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "3899325"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4444051"
 ---
 # <a name="reconcile-a-bank-account"></a>Bankszámla egyeztetése
 
@@ -46,7 +46,7 @@ Nem lehetséges a banki kivonat és a bankszámla egyeztetése, ha a kivonaton s
     > <P>A <STRONG>Törölve</STRONG> jelölőnégyzet nem érhető el, ha a tranzakció állapota <STRONG>Visszavonásra vár</STRONG>. A tranzakciók akkor rendelkezhetnek ilyen állapottal, ha a Finance modul beállításai megkövetelik, hogy a sztornírozásokat vagy visszavonásokat elküldjék ellenőrzésre a könyvelés előtt. Miután egy ellenőr könyveli vagy elutasítja a sztornírozást vagy a visszavonást, az állapot már nem <STRONG>Visszavonásra vár</STRONG>, így már egyeztetheti a bankszámlát a banki kivonattal.</P>
 
     
-    Ha szeretné a banki kivonaton megjelenő csekkek egy adott intervallumához bejelölni a **Törölve**jelölőnégyzetet, akkor válassza a **Csekk intervallumának kijelölése** lehetőséget, majd adja meg az intervallumot.
+    Ha szeretné a banki kivonaton megjelenő csekkek egy adott intervallumához bejelölni a **Törölve** jelölőnégyzetet, akkor válassza a **Csekk intervallumának kijelölése** lehetőséget, majd adja meg az intervallumot.
 
 5.  Ha a bankszámla-tranzakció összege nem felel meg a banki kivonaton szereplő tranzakció összegének, adja meg a helyesbítő összeget a **Helyesbítő összeg** mezőben.
     
@@ -70,4 +70,4 @@ A banki kivonat egyeztetésének megszakítása funkció segítségével megszak
  
 A banki kivonat egyeztetései csak abban az időrendi sorrendben vonhatók vissza, amelyben bevitték őket. A banki kivonat egyeztetésének megszakításakor az új tranzakciókat és helyesbítéseket a program sztornírozza, és az összes többi tranzakciót nem egyeztetettként jelöli meg.
  
-A banki kivonat egyeztetésének megszakításához válassza ki a banki kivonatot, és válassza a **Banki kivonat > Banki egyeztetés visszavonása** lehetőséget. A **Banki egyeztetés visszavonása** lapon adja meg az **Okkód**, az **Okhoz kapcsolódó megjegyzés**és a **Visszavonás dátuma** értékét. A visszavonás elindításához válassza az **OK** lehetőséget. Ne feledje, hogy a banki kivonat visszavonási dátuma nem lehet korábbi a banki kivonat dátumánál. A banki kivonat egyeztetésének visszavonása után a banki kivonat **Visszavonás dátuma** mezője frissül a megadott **Visszavonási dátum** értékével. Válassza a **Tranzakciók** gombot azoknak a tranzakcióknak a megtekintéséhez, amelyek egyeztetését visszavonta.
+A banki kivonat egyeztetésének megszakításához válassza ki a banki kivonatot, és válassza a **Banki kivonat > Banki egyeztetés visszavonása** lehetőséget. A **Banki egyeztetés visszavonása** lapon adja meg az **Okkód**, az **Okhoz kapcsolódó megjegyzés** és a **Visszavonás dátuma** értékét. A visszavonás elindításához válassza az **OK** lehetőséget. Ne feledje, hogy a banki kivonat visszavonási dátuma nem lehet korábbi a banki kivonat dátumánál. A banki kivonat egyeztetésének visszavonása után a banki kivonat **Visszavonás dátuma** mezője frissül a megadott **Visszavonási dátum** értékével. Válassza a **Tranzakciók** gombot azoknak a tranzakcióknak a megtekintéséhez, amelyek egyeztetését visszavonta.

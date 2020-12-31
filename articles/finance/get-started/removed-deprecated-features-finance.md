@@ -3,7 +3,7 @@ title: Eltávolított vagy elavult funkciók a Dynamics 365 Finance szolgáltat�
 description: Ez a témakör azokat a funkciókat ismerteti, amelyek el lettek távolítva, vagy eltávolításuk be van tervezve a Dynamics 365 Finance alkalmazásban.
 author: roschlom
 manager: AnnBe
-ms.date: 03/13/2020
+ms.date: 12/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: aebce032d7d780b296ba74fea4467425a3cbe1a7
-ms.sourcegitcommit: 4e9b3746790355f9f72bbfddc099c4065a49ad63
+ms.openlocfilehash: a406db6d78302fa05596a58fffb7464222d4bfea
+ms.sourcegitcommit: 069ed5789517b550065e5e2317658fec4027359e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "3175108"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "4689494"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Eltávolított vagy elavult funkciók a Dynamics 365 Finance szolgáltatásban
 
@@ -35,6 +35,40 @@ Ez a lista segít figyelembe venni az elavult és eltávolított szolgáltatáso
 
 > [!NOTE]
 > A Finance and Operations alkalmazások objektumaival kapcsolatban a [Technikai referenciajelentésekben](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep) talál részletes információkat. Ezen jelentések különböző verzióit összehasonlíthatja, hogy megismerje azokat az objektumokat, melyek módosítva lettek vagy el lettek távolítva a Finance and Operations alkalmazások egyes verzióiban.
+
+## <a name="features-removed-or-deprecated-in-the-finance-10016-release"></a>Eltávolított vagy elavult szolgáltatások a Finance 10.0.16 kiadásában
+
+### <a name="ledger-transaction-export-format-be-electronic-reporting-format-and-respective-ledger-transaction-export-be-model-for-belgium"></a>„Főkönyvi tranzakció exportálási formátuma (BE)” elektronikus jelentési formátum és a megfelelő „Főkönyvi tranzakció exportálása (BE)” modell Belgium számára
+
+|   |  |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | A „Standard vizsgálati fájl (SAF-T)” modellt tartalmazó új formátum váltotta fel.  |
+| **Felváltotta másik szolgáltatás?**   | Igen |
+| **Érintett területek**         | Pályázat |
+| **Telepítési beállítás**              | Összes |
+| **Állapot**                         | Elavult: 2021. december 1-jén azt tervezzük, hogy tovább nem támogatjuk a „Főkönyvi tranzakció exportálási formátumát (BE)” elektronikus jelentési formátumát és a megfelelő „Főkönyvi tranzakció exportálása (BE)” modellt. A „Standard könyvvizsgálati fájl (SAF-T)” modell helyett az új „Főkönyv adatexportálás (BE)” formátum és az „Általános főkönyv-adatmodell-leképezése” lesz. |
+
+### <a name="vat-100-report-for-the-united-kingdom-in-ssrs-format"></a>„VAT 100” jelentés Egyesült Királyság-beli SSRS formátum
+
+|   |  |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | Új ER formátummal helyettesítve – „Áfabevallás Excel (UK)” formátum az „Áfabevallási modell” alatt.  |
+| **Felváltotta másik szolgáltatás?**   | Igen |
+| **Érintett területek**         | Pályázat |
+| **Telepítési beállítás**              | Összes |
+| **Állapot**                         | Elavult: 2021. december 1-jétől azt tervezzük, hogy már nem támogatjuk a „VAT 100-jelentést” az SSRS formátumban. Egy új „Adóbevallás–Excel (UK)” formátum került be az „Áfabevallási modell” alatt az [MTD ÁFA funkció](../localizations/emea-gbr-mtd-vat-integration.md) lehetőségbe. |
+
+## <a name="features-removed-or-deprecated-in-the-finance-10015-release"></a>Eltávolított vagy elavult szolgáltatások a Finance 10.0.15 kiadásában
+
+### <a name="internet-explorer-11-support-for-dynamics-365-is-deprecated"></a>Internet Explorer 11 támogatás a Dynamics 365-höz elavult
+
+|   |  |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | A 2020 decemberétől hatályos Microsoft Internet Explorer 11 támogatás az összes Dynamics 365 termékre elavulttá válik, ezért az Internet Explorer 11 nem lesz támogatott 2021. augusztus után.<br><br>Ez hatással lesz azokra, akik Dynamics 365 termékeket használnak, amelyeket a Internet Explorer 11 interfészen való használatra terveztek. 2021. augusztus után az Internet Explorer 11 nem lesz támogatott az ilyen Dynamics 365 termékek esetében. |
+| **Felváltotta másik szolgáltatás?**   | Azt ajánljuk, hogy a vevők térjenek át a Microsoft Edgere.|
+| **Érintett területek**         | Az összes Dynamics 365 termék |
+| **Telepítési beállítás**              | Összes|
+| **Állapot**                         | Elavult. Az Internet Explorer 11 támogatottsága 2021. augusztus után megszűnik.|
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10012-release"></a>Eltávolított vagy elavult szolgáltatások a Finance 10.0.12 kiadásában
 

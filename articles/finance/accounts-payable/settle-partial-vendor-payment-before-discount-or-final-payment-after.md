@@ -19,11 +19,11 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 731d0a1ad0af47d98455ba2e609a48e092a67d3f
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2189568"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4443823"
 ---
 # <a name="settle-a-partial-vendor-payment-before-the-discount-date-with-a-final-payment-after-the-discount-date"></a>A vevő az ár egy részét az engedmény dátuma előtt rendezte, azonban a végső fizetés az engedmény bevezetésének dátuma után történik.
 
@@ -66,7 +66,7 @@ April ezután feladja ezt a fizetést. A számla egyenlege jelenleg 700,00. Apri
 | DISC-10020 | Készpénzfizetési engedmény    | 2015-01-07  |         | 3,00                                 |                                       | 0,00    | dollár      |
 
 ## <a name="remaining-payment-on-july-15-use-cash-discount--normal"></a>A fennmaradó fizetés június 15-én, a készpénzfizetési engedmény használata = normál
-April kifizeti a számla fennmaradó részét július 15-én, ami a kedvezményes időszak után van. A **Nyíl tranzakciók kiegyenlítése** lapon az engedmény összege nem jelenik meg a **Becsült készpénzfizetési engedmény**mezőben, valamint a **Készpénzfizetési engedmény összege** mező értéke **0,00**. Amikor April kifizeti a maradék 700,00 egységet nem kap további engedményt.
+April kifizeti a számla fennmaradó részét július 15-én, ami a kedvezményes időszak után van. A **Nyíl tranzakciók kiegyenlítése** lapon az engedmény összege nem jelenik meg a **Becsült készpénzfizetési engedmény** mezőben, valamint a **Készpénzfizetési engedmény összege** mező értéke **0,00**. Amikor April kifizeti a maradék 700,00 egységet nem kap további engedményt.
 
 | Jelölés     | Készpénzfizetési engedmény használata | Bizonylat   | Fiók | Dátum      | Fiz. határidő  | Számla | Összeg a tranzakció pénznemében. | Pénznem | Kiegyenlítendő összeg |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|

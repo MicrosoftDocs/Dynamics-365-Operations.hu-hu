@@ -20,11 +20,11 @@ ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: b02bfd83cfc4f1585c9044ebca8b20413042124a
-ms.sourcegitcommit: d61c43b6bc04bb8786aa3c47932be0ccd84ebaeb
+ms.sourcegitcommit: b40d6ce45aeb07724fc41d1a41923970b007fbcf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 10/14/2020
-ms.locfileid: "4006166"
+ms.locfileid: "4444142"
 ---
 # <a name="cost-rollup-policy-and-overhead-calculation"></a>Költségösszesítési irányelv többletköltségek kiszámítása 
 
@@ -186,7 +186,7 @@ Az **Eredménykimutatás** dimenzióhierarchiát frissíteni kell az új dimenzi
 | &nbsp;&nbsp;&nbsp;&nbsp;Elsődleges költség                        | 10001                   | 10003               |
 | &nbsp;&nbsp;&nbsp;&nbsp;Másodlagos költség                         | **SC-CC001**            | **SC-CC004**        |
 
-Hozzon létre egy **Költségösszegzési irányelvet** , ahol az egyes költséghelyekhez a kapcsolódó **Másodlagos** típusú költségelemet rendeli a rendszer.
+Hozzon létre egy **Költségösszegzési irányelvet**, ahol az egyes költséghelyekhez a kapcsolódó **Másodlagos** típusú költségelemet rendeli a rendszer.
 
 **Költségösszegzési irányelvek**
 
@@ -211,7 +211,7 @@ Hozzon létre egy **Költségösszegzési irányelvet** , ahol az egyes költsé
 |---------|-------------------------|------------------------|------|--------|---------------|
 | 00002   | Költségfelosztási napló | Pénzügyi                 | 2017    | 1. időszak | Járulékos költség számítása / 01-02-2017 11:51:00 PM / Főkönyv /2017 / 1. időszak |
 
-A rendszer akkor alkalmazza a **Költségösszegzési irányelvet** , amikor létrehozza a **Költségobjektum-egyenlegek naplóbejegyzéseit**.
+A rendszer akkor alkalmazza a **Költségösszegzési irányelvet**, amikor létrehozza a **Költségobjektum-egyenlegek naplóbejegyzéseit**.
 
 **Költségobjektum-egyenlegek naplóbejegyzései**
 

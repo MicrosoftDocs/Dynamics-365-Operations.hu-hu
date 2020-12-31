@@ -19,11 +19,11 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 6f4d5178aeb3294fd3b40815bb294a7f2ff08b71
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188924"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4443874"
 ---
 # <a name="settle-a-partial-customer-payment-that-has-multiple-discount-periods"></a>Vevői kifizetés egy részének rendezése, amely több kedvezményes időszakkal rendelkezik
 
@@ -49,13 +49,13 @@ Arnie megtekintheti ezt a tranzakciót a **Vevői tranzakciók** oldalon.
 | FTI-10030 | Számla          | 2015-06-25 | 10030   | 1000,00                             |                                       | 1000,00 | dollár      |
 
 ## <a name="partial-payment-before-the-cash-discount-date"></a>Részleges kifizetés a készpénzfizetési engedmény dátuma előtt
-Június 28.-án a 4031. számú vevő 294,00 értékű részfizetést teljesít. Mivel június 28. az első készpénzfizetési engedményidőszakon belül van, a vevő 6,00 engedményt vesz igénybe. A **Tranzakciók kiegyenlítése** lapon a**Készpénzfizetési engedmény összege** mező értéke 20,00, és az **Alkalmazandó készpénzfizetési engedmény összege** mező értéke 6,00.
+Június 28.-án a 4031. számú vevő 294,00 értékű részfizetést teljesít. Mivel június 28. az első készpénzfizetési engedményidőszakon belül van, a vevő 6,00 engedményt vesz igénybe. A **Tranzakciók kiegyenlítése** lapon a **Készpénzfizetési engedmény összege** mező értéke 20,00, és az **Alkalmazandó készpénzfizetési engedmény összege** mező értéke 6,00.
 
 | Jelölés     | Készpénzfizetési engedmény használata | Bizonylat   | Fiók | Dátum      | Fiz. határidő  | Számla | Összeg a tranzakció pénznemében. | Pénznem | Kiegyenlítendő összeg |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
 | Kijelölve | Normál            | FTI-10030 | 4031    | 2015-06-25 | 2015/07/25 | 10030   | 1000,00                       | dollár      | 294,00           |
 
-Az engedményadatok a **Nyitott tranzakciók kiegyenlítése** lap alján jelennek meg. Ha nem módosítja a **Kiegyenlítendő összeg** értékét **294.00**-re, a **Készpénzfizetési engedmény összege** eltérő lesz. A 6,00 érték azonban készpénzfizetési engedményként jelenik meg a fizetés feladása alkalmával, mert a kiegyenlítés automatikusan módosítja a **Kiegyenlítendő összeg**értékét.
+Az engedményadatok a **Nyitott tranzakciók kiegyenlítése** lap alján jelennek meg. Ha nem módosítja a **Kiegyenlítendő összeg** értékét **294.00**-re, a **Készpénzfizetési engedmény összege** eltérő lesz. A 6,00 érték azonban készpénzfizetési engedményként jelenik meg a fizetés feladása alkalmával, mert a kiegyenlítés automatikusan módosítja a **Kiegyenlítendő összeg** értékét.
 
 |                              |           |
 |------------------------------|-----------|

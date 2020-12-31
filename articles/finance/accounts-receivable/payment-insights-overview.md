@@ -1,6 +1,6 @@
 ---
 title: Vevő fizetési információi (Előzetes)
-description: Ez a témakör bemutatja az egyes vevők szokásos fizetési gyakorlatának megértését elősegítő fizetési betekintő információkkal kapcsolatos lehetőséget, amellyel olyan körülményeket is meghatározhat, amelyek indokolttá teszik a beszedési folyamatok elindítását a megszokottnál korábban.
+description: Ez a témakör a fizetési információk képességét ismerteti, amelyek segítenek jobban megérteni az egyes vevők tipikus fizetési gyakorlatait. A funkció segítségével azonosíthatja azokat a körülményeket, amelyek indokolják a begyűjtési folyamatok korábbi megkezdését, mint amilyennel egyébként tett volna.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 11/06/2019
@@ -18,23 +18,23 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: f9f1e4ae4270380c88069723e768fd44ecf8c113
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: f151942555ac503338f0fd44aa8779e3c2970fb1
+ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2773970"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4644633"
 ---
 # <a name="customer-payment-insights-preview"></a>Vevő fizetési információi (Előzetes)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Ez a témakör bemutatja az egyes vevők szokásos fizetési gyakorlatának megértését elősegítő fizetési betekintő információkkal kapcsolatos lehetőséget, amellyel olyan körülményeket is meghatározhat, amelyek indokolttá teszik a beszedési folyamatok elindítását a megszokottnál korábban. 
+Ez a témakör a fizetési információk képességét ismerteti, amelyek segítenek jobban megérteni az egyes vevők tipikus fizetési gyakorlatait. A funkció segítségével azonosíthatja azokat a körülményeket, amelyek indokolják a begyűjtési folyamatok korábbi megkezdését, mint amilyennel egyébként tett volna. 
 
 ## <a name="overview"></a>Áttekintés
 
-Szervezetek gyakran nehezen jósolják meg, hogy a vevők mikor fizetik ki a számláikat. A háttérinformációk hiánya kevésbé pontos pénzforgalmi előrejelzéseket eredményezhet, túl későn elinduló beszedési folyamatokat, valamint rendelések kiadását olyan vevőknek, akik elmulaszthatják a kifizetést. A Vevői kifizetésre vonatkozó háttérinformációk (előzetes verzió) segítségével megjósolhatja egy vevői számla kifizetésének időpontját és segíthet a szervezetnek az optimalizálási stratégia létrehozásában, amely javítja a határidőre fizetések arányát. 
+Nehéz lehet megjósolni, hogy a vevők mikor fizetik ki a számláikat. A háttérinformációk hiánya kevésbé pontos pénzforgalmi előrejelzéseket eredményezhet, túl későn elinduló beszedési folyamatokat, valamint rendelések kiadását olyan vevőknek, akik elmulaszthatják a kifizetést. A Vevői kifizetés információk (előzetes verzió) segít a szervezetkenk megjósolni a vevői számla kifizetését.. Ez az információ segíthet a szervezeteknek olyan gyűjteménystratégiák létrehozásában, amelyek javítják az időben történő kifizetés valószínűségét. 
 
 ## <a name="predictions"></a>Előrejelzések
 
@@ -42,13 +42,13 @@ A kifizetési előrejelzések lehetővé teszik a szervezetek számára, hogy ja
 
 Egy gépi tanulási modellt alkalmaznak, amely a múltbeli számlákat, a kifizetéseket és a vevői adatokat használja fel, a vevői kifizetéssel kapcsolatos háttériformációk (előzetes verzió) pontosabban jósolja meg, ha a vevő mikor fizeti ki a kiegyenlítetlen számlát.
 
-Minden nyitott számla esetében a Vevői fizetési háttérinformációk (előzetes verzió) három fizetési valószínűséget jósol:
+Minden nyitott számla esetében a Vevői fizetési háttérinformációk (előzetes verzió) három fizetési valószínűséget jósolhat meg:
 
 -   Időben történő fizetés valószínűsége 
 -   Késve történő fizetés valószínűsége
 -   Nagyon késedelmesen történő fizetés valószínűsége
 
-Annak érdekében, hogy a szervezetek megértsék a három kategória egyikében a vevőtől elvárható teljes kifizetett összeget, az időben, későn és nagyon későn kategóriákban, a vevői kifizetéssel kapcsolatos háttérinformációk (előzetes verzió) a várható kifizetések összesített megjelenítését is lehetővé teszi.
+A vevői kifizetéssel kapcsolatos háttérinformációk (előzetes verzió) a várható kifizetések összesített megjelenítését is lehetővé teszi annak érdekében, hogy a szervezetek megértsék a három kategória egyikében a vevőtől elvárható teljes kifizetett összeget, az időben, későn és nagyon későn kategóriákban.
 
 [![Kifizetési előrejelzések összesített nézete](./media/graphic-payment-reports.png)](./media/graphic-payment-reports.png)
 
@@ -66,7 +66,7 @@ Az AI-megoldások fejlesztése és bevezetése nehéz. Adatszakértők, adott t�
 
 ## <a name="how-to-get-customer-payment-insights-preview"></a>Hogyan szerezhetem be a Vevői fizetéssel kapcsolatos háttérinformációk (előzetes verzió) szolgáltatást
 
-Írjon e-mailt a [Vevői kifizetéssel kapcsolatos háttérinformációk (előzetes verzió)](mailto:fiap@microsoft.com) számára, ha szeretné kipróbálni a Vevői kifizetéssel kapcsolatos háttérinformációk (előzetes verzió) szolgáltatást.
+Küldjön e-mailt a [Vevői kifizetéssel kapcsolatos háttérinformációk (előzetes verzió)](mailto:fiap@microsoft.com) számára, ha szeretné kipróbálni a Vevői kifizetéssel kapcsolatos háttérinformációk (előzetes verzió) szolgáltatást.
 
 ## <a name="privacy-notice"></a>Adatvédelmi nyilatkozat
 

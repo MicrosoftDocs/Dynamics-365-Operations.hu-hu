@@ -17,11 +17,11 @@ ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 58518f5291b70c63506c20717034daff0268901b
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3143361"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4443996"
 ---
 # <a name="set-up-vendor-invoice-policies"></a>Szállítói számla irányelveinek beállítása
 
@@ -66,7 +66,7 @@ Ez a témakör ismerteti a szállítói számlákkal kapcsolatos irányelvek be�
 9. Írjon be egy értéket az **Irányelvszabály leírása** mezőbe.
 10. Válassza ki a **Szűrő** elemet.
 11. Válassza a **Hozzáadás** lehetőséget. Válassza ki a kívánt rekordot.
-12. A **Táblában**, a **Származtatott táblában**és a **Mező** mezőben válassza ki vagy adja meg a beállításokat a legördülő menükből.
+12. A **Táblában**, a **Származtatott táblában** és a **Mező** mezőben válassza ki vagy adja meg a beállításokat a legördülő menükből.
 13. Zárja be a lapot.
 14. Adjon meg egy értéket a **Feltétel** mezőben.
 15. Válassza ki az **OK** lehetőséget.

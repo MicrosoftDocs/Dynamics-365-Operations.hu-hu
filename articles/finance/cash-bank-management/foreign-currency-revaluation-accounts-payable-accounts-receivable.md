@@ -19,11 +19,11 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: fb7a101fa9ef84ec3873bcd8054b8198db8d58c9
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188395"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4444116"
 ---
 # <a name="foreign-currency-revaluation-for-accounts-payable-and-accounts-receivable"></a>A kötelezettségek és Kinnlevőségek árfolyam-korrekció
 
@@ -57,7 +57,7 @@ Használja a **Devizaátértékelés** oldalt az **Időszakos feladatok** részb
 -   **Használt feladási profil a** – a feladási profilt, amely az alapértelmezett fő számlája megadására szolgál a Kinnlevőségek és kötelezettségek a könyvelési tételeket, a devizaátértékelés-tranzakciókra vonatkozó:
     -   **Feladás** – A vevői tranzakció feladási profilját használja a rendszer.
     -   **Választás** – A feladási profilt a **Feladási sablon** mezőben szereplő feladási profil határozza meg.
--   **Használt feladási profil** – Ha a**Használt feladási profil** helye mezőben a **Kiválasztás** érték szerepel, a devizaátértékelési tranzakciók feladási profilját az ebben a mezőben szereplő feladási profil határozza meg.
+-   **Használt feladási profil** – Ha a **Használt feladási profil** helye mezőben a **Kiválasztás** érték szerepel, a devizaátértékelési tranzakciók feladási profilját az ebben a mezőben szereplő feladási profil határozza meg.
 -   **Pénzügyi dimenziók** – A Tábla opció azt jelenti, hogy a vevőkód pénzügyi dimenziói lesznek feladva a devizaátértékelési tranzakcióra.
     -   **Nincs** – nem pénzügyi dimenziói vannak feladva. Ha szükséges, a pénzügyi dimenziók a számlastruktúrában, az átértékelési folyamat továbbra is fut, és, amelyeknél nincsenek dimenziók könyvelési tételeket hoz létre. Egy figyelmeztető üzenetet kap, úgy, hogy vissza tudja vonni az átértékelés.
     -   **Tábla** – A Tábla opció azt jelenti, hogy a vevőkód pénzügyi dimenziói lesznek feladva a devizaátértékelési tranzakcióra.

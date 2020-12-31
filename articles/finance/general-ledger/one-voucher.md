@@ -19,11 +19,11 @@ ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
 ms.openlocfilehash: 68ec3cb028462865e914cbcb25ff28dbaf9a4f01
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3058017"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4444033"
 ---
 # <a name="one-voucher"></a>Egy bizonylat
 
@@ -51,7 +51,7 @@ A pénzügyi naplók (főkönyvi napló, tárgyieszköz-napló, szállítói kif
 
 ## <a name="issues-with-one-voucher"></a>Problémák az Egy bizonylat funkcióval
 
-Az Egy bizonylat funkció problémákat okoz a kiegyenlítés, az adószámítás, a tranzakciók sztornírozása, egy analitikus napló egyeztetése a főkönyvvel, a pénzügyi beszámolók és egyebek egyeztetése során. (A kiegyenlítés során felmerülő problémákkal kapcsolatos további információkért tekintse át például az [Egyetlen bizonylat több vevői vagy szállítói rekorddal](https://docs.microsoft.com/dynamics365/finance/accounts-payable/single-voucher-multiple-customer-vendor-records) részt. A helyes munkavégzés és jelentéskészítés érdekében ezekhez a folyamatokhoz és jelentésekhez szükségesek a tranzakciók részletei. Bár egyes forgatókönyvek még mindig jól működhetnek a szervezete beállításaitól függően, gyakoriak a problémák, ha több tranzakció kerül egy bizonylatra.
+Az Egy bizonylat funkció problémákat okoz a kiegyenlítés, az adószámítás, a tranzakciók sztornírozása, egy analitikus napló egyeztetése a főkönyvvel, a pénzügyi beszámolók és egyebek egyeztetése során. (A kiegyenlítés során felmerülő problémákkal kapcsolatos további információkért tekintse át például az [Egyetlen bizonylat több vevői vagy szállítói rekorddal](https://docs.microsoft.com/dynamics365/finance/accounts-payable/single-voucher-multiple-customer-vendor-records) részt.) A helyes munkavégzés és jelentéskészítés érdekében ezekhez a folyamatokhoz és jelentésekhez szükségesek a tranzakciók részletei. Bár egyes forgatókönyvek még mindig jól működhetnek a szervezete beállításaitól függően, gyakoriak a problémák, ha több tranzakció kerül egy bizonylatra.
 
 Például feladhatja az alábbi többsoros bizonylatot.
 

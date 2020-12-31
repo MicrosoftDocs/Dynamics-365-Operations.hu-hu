@@ -17,11 +17,11 @@ ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 3dad006b486f7cd6714c713a3bd83a95fdf0d2b5
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3979638"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4443884"
 ---
 # <a name="set-up-sales-tax-codes"></a>Áfakódok beállítása
 
@@ -35,8 +35,8 @@ Ez a feladat az USMF bemutatócéget használja.
 2. Válassza az **Új** lehetőséget.
 3. Adjon meg egy értéket az **Áfakód** mezőben.
 4. Írjon be egy értéket a **Név** mezőbe.
-5. A lehúzható lista megnyitásával válasszon ki egy **Kiegyenlítési időszakot** , majd adja meg az adóhatóságot, és hogy milyen időközönként kell ezt az áfát bevallani és befizetni.
-6. Válassza ki a **Főkönyvi feladási csoportot** , és határozza meg azokat a fő számlákat, amelyek áfáját fel kell adni a főkönyvbe.
+5. A lehúzható lista megnyitásával válasszon ki egy **Kiegyenlítési időszakot**, majd adja meg az adóhatóságot, és hogy milyen időközönként kell ezt az áfát bevallani és befizetni.
+6. Válassza ki a **Főkönyvi feladási csoportot**, és határozza meg azokat a fő számlákat, amelyek áfáját fel kell adni a főkönyvbe.
 7. Bontsa ki a **Számítás** gyorslapot. Ezen a lapon több mező szerepel, amelyek megszabják, hogyan történik az áfaösszegek kiszámítása. Töltse ki ezeket a mezőket, ha szükséges.  
 8. A felület felső részén lévő **Műveleti ablaktáblán** válassza ki az **Áfakód** lehetőséget.
 9. Válassza ki az **Értékek** lehetőséget.

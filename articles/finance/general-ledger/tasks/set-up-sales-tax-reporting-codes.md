@@ -1,6 +1,6 @@
 ---
 title: Áfabevallás kódjainak beállítása
-description: A áfajelentési kódok az áfajelent mezőszámaira hivatkoznak.
+description: A áfajelentési kódok az áfajelentésben felsorolt mezőszámokra hivatkoznak.
 author: twheeloc
 manager: AnnBe
 ms.date: 08/08/2019
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6c18f4fb0db31a959647bb10d2b99d940646676e
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 362d30e56fe35b85d50bfa2df57364733b366fef
+ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3976793"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4646181"
 ---
 # <a name="set-up-sales-tax-reporting-codes"></a>Áfabevallás kódjainak beállítása
 
 [!include [banner](../../includes/banner.md)]
 
-A áfajelentési kódok az áfajelent mezőszámaira hivatkoznak. Ezek országspecifikus jelentési elrendezéseken és a kódonkénti áfakifizetési jelentésen használatosak az áfaösszegek nyomtatásához jelentési kód szerinti kiegyenlítési időszak összegzéséhez. A forgalmiadó-kódok létrehozása után hivatkozásként használhatja azokat az Áfakód oldal Jelentéskészítési gyorslapjain. 
+A áfajelentési kódok az áfajelentésben felsorolt mezőszámokra hivatkoznak. Ezeket országspecifikus jelentéselrendezésekben használják. Áfafizetés kód szerinti jelentéshez is használják őket. Ez a jelentés az egyes jelentéskódokhoz összesített kiegyenlítési időszak áfaösszegeit mutatja. A forgalmiadó-kódok létrehozása után hivatkozásként használhatja azokat az **Áfakód** oldalról elérhető Jelentéskészítési gyorslapjain. 
 
 Ez a felvétel az DEMF bemutatócéget használja.
 

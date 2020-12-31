@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d647dc41eb18d25101e66d3030327fc55b55a4d5
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 6f96da7f7f5374fb34e317c416238a48c3fe7d05
+ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250328"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "4444203"
 ---
 # <a name="financial-period-close-workspace"></a>Pénzügyi időszak lezárása munkaterület
 
@@ -52,7 +52,7 @@ Két kijelző használatos a feladatokhoz:
 -   A felkiáltójel azt jelzi, hogy a feladat lejárt határidejű. A lejárt határidejű feladatok határideje piros színnel is ki van emelve.
 -   A lakat ikon azt jelzi, hogy a feladat más, teljesítetlen feladatoktól függ. A függőségek miatt zárolt feladatokat nem lehet befejezettnek jelölni. A feladat függőségeit a **Függőségek beállítása** művelettel állíthatja be.
 
-A feladat neve egy hivatkozás, amely arra az oldalra mutat, amelyet a felhasználónak fel kell keresnie a feladat befejezéséhez. A **Feladathivatkozás** mezőben beállíthatja ezt a hivatkozást a feladat szerkesztésekor vagy létrehozásakor. 
+A feladat neve egy hivatkozás, amely az oldalra mutat, amelyet a felhasználónak fel kell keresnie a feladat befejezéséhez. A **Feladathivatkozás** mezőben beállíthatja ezt a hivatkozást a feladat szerkesztésekor vagy létrehozásakor. 
 
 Csatolhat fájlokat, megjegyzéseket, képeket és URL-eket egy feladathoz a **Mellékletek** művelettel. Például megjelölhet naplószámokat, amelyek a feladat részét képezik, és megjegyzéseket adhat egy adott feladathoz, vagy jelentést csatolhat a fájlhoz amelyik a feladathoz lett nyomtatva. Egy ikon jelenik meg a **Melléklet** oszlopban a feladatnál, ha a feladat rendelkezik melléklettel. 
 

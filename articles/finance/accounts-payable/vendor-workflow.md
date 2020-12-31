@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 55ae179298a980073a03a804711707a1f02c68bd
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 00cdc657fa075e84e62682e33ed3c1bace3f4ad0
+ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3977983"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "4444204"
 ---
 # <a name="vendor-workflow"></a>Szállítói munkafolyamat
 
@@ -33,7 +33,7 @@ A szállító munkafolyamat használata esetén az egyes mezőkön végrehajtott
 
 A munkafolyamat használatához előbb aktiválni kell azt.
 
-1. Ugorjon a **Kötelezettségek \> Beállítás \> Kötelezettségek paraméterei pontra** .
+1. Ugorjon a **Kötelezettségek \> Beállítás \> Kötelezettségek paraméterei pontra**.
 2. Az **Általános** lapon, a **Szállítói jóváhagyás** gyorslapon állítsa a **Feladatrögzítés engedélyezése** beállítást **Igen** értékre.
 3. Az **Adatentitás működése** mezőben, válassza ki az adatok importálásakor használandó viselkedést:
 
@@ -53,11 +53,11 @@ Ha módosít egy mezőt, amely engedélyezve van, a munkafolyamathoz, a **Javaso
 
 Minden alkalommal, amikor módosít egy mezőt, amely engedélyezve van a munkafolyamathoz, az a mező hozzáadódik **Javasolt módosítások** oldalon található listához. A mezőhöz a javasolt érték elvetéséhez, használja az **Elvetés** gombot a listában található mező mellett. Az összes változtatás elvetéséhez használja az **Összes változtatás elvetése** gombot az oldal alján. Válassza az **OK** lehetőséget az oldal bezárásához.
 
-Legalább egy javasolt módosítás után, két további lap jelenik meg a műveleti panelen: **Javasolt módosítások** és **Munkafolyamat** .
+Legalább egy javasolt módosítás után, két további lap jelenik meg a műveleti panelen: **Javasolt módosítások** és **Munkafolyamat**.
 
 1. Válassza a **Javasolt módosítások** elemet a **Javasolt módosítások** lap megnyitásához, és ellenőrizze a módosításait.
-2. Válassza a **Munkafolyamat \> Beküldés lehetőséget, hogy beküldje a módosításokat a munkafolyamathoz** .
+2. Válassza a **Munkafolyamat \> Beküldés lehetőséget, hogy beküldje a módosításokat a munkafolyamathoz**.
 
-    Az oldalon látható állapot a következőre változik: **Jóváhagyásra váró módosítások** .
+    Az oldalon látható állapot a következőre változik: **Jóváhagyásra váró módosítások**.
 
-A munkafolyamat a normál munkafolyamatot követi. A jóváhagyó a **Szállító** lapra lesz irányítva, amelyen dolgozott át tudja tekinteni a módosításokat a **Javasolt módosítások** lapon, és válassza a **Munkafolyamat \> Jóváhagyás** lehetőséget a munkafolyamat jóváhagyásához. Miután minden jóváhagyás befejeződött, a mezők a javasolt értékekre frissülnek.
+A munkafolyamat a normál munkafolyamatot követi. A jóváhagyót a rendszer a **Szállító** oldalra irányítja, ahol áttekintheti a **Javasolt módosítások** oldalon található módosításokat, majd a munkafolyamat jóváhagyásához kiválaszthatja a **Munkafolyamat \> Jóváhagyás** lehetőséget. Miután minden jóváhagyás befejeződött, a mezők a javasolt értékekre frissülnek.

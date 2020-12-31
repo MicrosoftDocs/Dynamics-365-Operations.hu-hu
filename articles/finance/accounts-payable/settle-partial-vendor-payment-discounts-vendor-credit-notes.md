@@ -19,11 +19,11 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 923ab0305ac75c1156984c7a6d051f036479a16d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2178163"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4443822"
 ---
 # <a name="settle-a-partial-vendor-payment-that-has-discounts-on-vendor-credit-notes"></a>Részleges szállítói kifizetés rendezése, amely szállítói jóváírásokra vonatkozó engedménnyel rendelkezik
 
@@ -58,7 +58,7 @@ April a **Feladás** gombra kattint. Ezután ellenőrzi a befejezett kiegyenlít
 | Kiválasztva és kiemelve | Normál            | Inv-10070 | 3050    | 2015/29/6 | 2015/29/7 | 10070    | -1000,00                      | dollár      | -200,00          |
 | Kijelölve                 | Normál            | CR-10070  | 3050    | 2015/7/2  | 2015/29/7 | CR-10070 | 200,00                         | dollár      | 198,00           |
 
-April a **Szállítói tranzakciók** oldalon tudja áttekinteni a szállítói tranzakciókat, úgy, hogy kiválaszt egyet a **Minden szállító**lapon, és a műveleti ablakban a **Tranzakciók** elemre kattint. Ezen a lapon April azt láthatja, hogy a számla egyenlege -800,00. Emellett egy 198,00 értékű jóváírást, és egy 2,00 értékű engedményt talál.
+April a **Szállítói tranzakciók** oldalon tudja áttekinteni a szállítói tranzakciókat, úgy, hogy kiválaszt egyet a **Minden szállító** lapon, és a műveleti ablakban a **Tranzakciók** elemre kattint. Ezen a lapon April azt láthatja, hogy a számla egyenlege -800,00. Emellett egy 198,00 értékű jóváírást, és egy 2,00 értékű engedményt talál.
 
 | Bizonylat    | Tranzakció típusa | Dátum      | Számla | Összeg a tranzakció pénznemtartozásában | Összeg a tranzakció pénznemtartozásában | Egyenleg | Pénznem |
 |------------|------------------|-----------|---------|--------------------------------------|---------------------------------------|---------|----------|

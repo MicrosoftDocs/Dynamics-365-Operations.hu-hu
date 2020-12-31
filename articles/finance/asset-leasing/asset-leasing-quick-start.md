@@ -19,11 +19,11 @@ ms.author: moaamer
 ms.search.validFrom: 2020-09-24
 ms.dyn365.ops.version: 10.0.14
 ms.openlocfilehash: 9e206569aad3f53a2f6f66e6d6253226e5980078
-ms.sourcegitcommit: 9e7ceb5604472f3088f611aa0360bd6a716db32b
+ms.sourcegitcommit: 30c541426cf2037b768e3556e1b170a64991f64a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4022567"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "4444152"
 ---
 # <a name="asset-leasing-get-started"></a>Eszközlízing – első lépések
 

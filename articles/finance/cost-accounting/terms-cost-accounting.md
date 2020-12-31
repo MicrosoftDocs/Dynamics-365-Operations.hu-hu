@@ -20,11 +20,11 @@ ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: 948beb7baa19c69530dca52b5d4c119b69f8f011
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3977527"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4444108"
 ---
 # <a name="cost-accounting-terminology"></a>Költségkönyvelési terminológia
 
@@ -202,6 +202,6 @@ A kimutatások a költségellenőrzésért felelős vezetők számára létrehoz
 
 **Verzió**
 
-Verziók segítségével történik a különböző eredmények szimulálása, megtekintése és összevetése. Alapértelmezés szerint minden tényleges költséget egy alapverzióban tekintünk meg, amelynek a neve a *tényleges* . A költségvetések és a számítások esetében tetszőleges számú verzióval dolgozhat. Például költségvetési adatokat importálhat az eredeti verzióban, majd felülvizsgálhatja a költségvetést egy módosított verzióban. A számításokhoz több verziót hozhat létre. Ezekben a különböző verziókban számításokat hozhat létre különböző, a költségfelosztáshoz alkalmazott számítási szabályok segítségével.
+Verziók segítségével történik a különböző eredmények szimulálása, megtekintése és összevetése. Alapértelmezés szerint minden tényleges költséget egy alapverzióban tekintünk meg, amelynek a neve a *tényleges*. A költségvetések és a számítások esetében tetszőleges számú verzióval dolgozhat. Például költségvetési adatokat importálhat az eredeti verzióban, majd felülvizsgálhatja a költségvetést egy módosított verzióban. A számításokhoz több verziót hozhat létre. Ezekben a különböző verziókban számításokat hozhat létre különböző, a költségfelosztáshoz alkalmazott számítási szabályok segítségével.
 
 

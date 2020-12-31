@@ -19,11 +19,11 @@ ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 3f0714eab80f43695b2b93f77a70f31c360277f9
-ms.sourcegitcommit: 74b10104338222a945684d841d60ab4b8e570168
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "3899517"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4444121"
 ---
 # <a name="cash-discounts-for-overpayments"></a>Készpénzfizetési engedmények túlfizetések esetére
 
@@ -38,7 +38,7 @@ Egy számla akkor tekinthető túlfizetettnek, ha a kifizetési összeg nagyobb,
 | 105,00        | 10,50                   | 94,50                                               | 95,00                             |
 
 ## <a name="cash-discount-administration--specific"></a>Készpénzfizetési engedmény adminisztrációja = Meghatározott
-Ha a **Meghatározott** beállítás van kiválasztva a **Készpénzfizetési engedmény adminisztrációja** mezőben, a **Automatikus tranzakciókhoz használt számlák** lapon, akkor a rendszer a teljes készpénzfizetési engedményt alkalmazza. A túlfizetés összegét vagy feladja egy készpénzfizetési engedménykülönbözeti főkönyvi számlára vagy megmarad a vevői számla egyenlegén. A rendszer viselkedése attól függ, hogy a túlfizetés összege 0,00 és a**Maximális túl- vagy alulfizetés** mezőben megadott összeg között van, vagy meghaladja a **Maximális túl- vagy alulfizetés** összegét.
+Ha a **Meghatározott** beállítás van kiválasztva a **Készpénzfizetési engedmény adminisztrációja** mezőben, a **Automatikus tranzakciókhoz használt számlák** lapon, akkor a rendszer a teljes készpénzfizetési engedményt alkalmazza. A túlfizetés összegét vagy feladja egy készpénzfizetési engedménykülönbözeti főkönyvi számlára vagy megmarad a vevői számla egyenlegén. A rendszer viselkedése attól függ, hogy a túlfizetés összege 0,00 és a **Maximális túl- vagy alulfizetés** mezőben megadott összeg között van, vagy meghaladja a **Maximális túl- vagy alulfizetés** összegét.
 
 ### <a name="scenario-1"></a>1. eset
 

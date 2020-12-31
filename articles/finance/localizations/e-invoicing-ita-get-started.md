@@ -19,11 +19,11 @@ ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
 ms.openlocfilehash: c513141f820c95fe3842478361693701f1e3641b
-ms.sourcegitcommit: d6250ee5ced43be39e789324a895fd1c07178935
+ms.sourcegitcommit: f860ac2b18f6bbbfc4a46b497baec2477105b116
 ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 10/19/2020
-ms.locfileid: "4039792"
+ms.locfileid: "4444156"
 ---
 # <a name="get-started-with-the-electronic-invoicing-add-on-for-italy"></a>Első lépések az olasz elektronikus számlázásbővítménnyel
 
@@ -33,7 +33,7 @@ ms.locfileid: "4039792"
 > [!IMPORTANT]
 > Előfordulhat, hogy az Olasz elektronikus számlázásbővítmény jelenleg nem támogatja az elektronikus számlákhoz rendelkezésre álló összes funkciót a Microsoft Dynamics 365 Finance és Dynamics 365 Supply Chain Management számára. 
 
-Ez a témakör olyan információkat tartalmaz, amelyek bemutatják az olasz elektronikus számlázásbővítménnyel kapcsolatos első lépéseket. Végigvezeti a Regulatory Configuration Services (RCS) és a Finance szolgáltatásban található ország-függő konfigurációs lépéseken. Továbbá a szolgáltatáson keresztül végigvezeti az Olaszország-specifikus **FatturaPA** -formátumban létrejövő elektronikus számlák küldésének folyamatán, és elmagyarázza, hogyan kell áttekinteni a feldolgozás eredményeit.
+Ez a témakör olyan információkat tartalmaz, amelyek bemutatják az olasz elektronikus számlázásbővítménnyel kapcsolatos első lépéseket. Végigvezeti a Regulatory Configuration Services (RCS) és a Finance szolgáltatásban található ország-függő konfigurációs lépéseken. Továbbá a szolgáltatáson keresztül végigvezeti az Olaszország-specifikus **FatturaPA**-formátumban létrejövő elektronikus számlák küldésének folyamatán, és elmagyarázza, hogyan kell áttekinteni a feldolgozás eredményeit.
 
 ## <a name="prerequisites"></a>Előfeltételek
 
@@ -43,7 +43,7 @@ A témakör lépéseinek végrehajtása előtt végre kell hajtania az [Első l�
 
 Az RCS beállítása során a következő feladatokat kell elvégeznie:
 
-1. A vevő elektronikus számlák exportálásához használt e-számlázási funkció importálása **FatturaPA** -formátumba.
+1. A vevő elektronikus számlák exportálásához használt e-számlázási funkció importálása **FatturaPA**-formátumba.
 2. Az elektronikus számlákkal kapcsolatos válaszok létrehozásához, küldéséhez és fogadásához szükséges fájlformátum-konfigurációk áttekintése.
 3. Az elektronikus számlabeküldési forgatókönyveket támogató események konfigurálása.
 4. Tegye közzé az e-számlázási funkciót.
@@ -96,11 +96,11 @@ Amikor az **e-számlák exportálása (IT)** funkciót a globális adattárból 
 
 ## <a name="manage-the-e-invoicing-feature-setups"></a>Kezelje az e-számlázás funkció beállításait
 
-- Az **e-számlázási funkciók** oldal **Beállítások** lapján válassza a **Hozzáadás** , **Törlés** vagy **Szerkesztés** parancsot az e-számlázási funkciók beállításainak kezeléséhez.
+- Az **e-számlázási funkciók** oldal **Beállítások** lapján válassza a **Hozzáadás**, **Törlés** vagy **Szerkesztés** parancsot az e-számlázási funkciók beállításainak kezeléséhez.
 
 ![Az e-számlázás funkció beállításainak kezelése](media/e-Invoicing-services-get-started-ITA-Manage-e-Invoicing-feature-setup.png)
 
-Ebben a lépésben konfigurálhatja az elektronikus számlákra vonatkozó eseményeket, többek között az XML kimeneti fájlok **FatturaPA** -formátumban történő létrehozását, valamint a digitális aláírást (ha szükséges).
+Ebben a lépésben konfigurálhatja az elektronikus számlákra vonatkozó eseményeket, többek között az XML kimeneti fájlok **FatturaPA**-formátumban történő létrehozását, valamint a digitális aláírást (ha szükséges).
 
 ### <a name="configure-the-sales-invoice-feature-setup"></a>Az Értékesítési számla funkció beállításainak konfigurálása
 
@@ -112,7 +112,7 @@ Ebben a lépésben konfigurálhatja az elektronikus számlákra vonatkozó esem�
 
     | Műveletazonosító | Művelet neve        | Művelet leírása                                     |
     |-----------|--------------------|--------------------------------------------------------|
-    | 1         | Dokumentum átalakítása | Az e-számla XML-fájljának létrehozása **FatturaPA** -formátumban. |
+    | 1         | Dokumentum átalakítása | Az e-számla XML-fájljának létrehozása **FatturaPA**-formátumban. |
     | 2         | Dokumentum aláírása      | Digitális aláírás alkalmazása az XML-fájlon.             |
 
 4. Válassza az **Alkalmazhatósági szabályok** lapot az alkalmazhatósági szabályok megtekintéséhez és kezeléséhez. Az alkalmazhatósági szabályok határozzák meg, hogy melyik környezetben fusson a művelet.
@@ -166,7 +166,7 @@ A Finance szolgáltatás beállítása során a következő feladatokat kell elv
 1. Az **Elektronikus jelentéskészítés** munkaterületen ellenőrizze, hogy az **Üzleti dokumentum szolgáltatás** konfigurációszolgáltatója **Aktív** értékre van állítva.
 2. Válassza ki a **Tárházak** lehetőséget.
 3. Válassza ki a **Globális erőforrás \> Megnyitás** lehetőséget.
-4. A **Számlamodell** , a **Számlamodell-leképezése** és a **Vevői számla kontextusmodell** importálása.
+4. A **Számlamodell**, a **Számlamodell-leképezése** és a **Vevői számla kontextusmodell** importálása.
 
 #### <a name="turn-on-the-feature-for-exporting-customer-electronic-invoices-for-italy"></a>Kapcsolja be a funkciót az olasz vevői elektronikus számlák exportálásához
 
@@ -239,7 +239,7 @@ Megtekintheti az összes beküldött dokumentum beküldési naplóját.
     ![A beküldési napló részleteinek megtekintése](media/e-Invoicing-services-get-started-ITA-View-Submission-log-details.png)
 
 4. A **Műveletek feldolgozása** gyorslapon az RCS-ben beállított funkcióverzióban konfigurált műveletekhez tartozó végrehajtási naplót tekintheti meg. Az **Állapot** oszlop azt jelzi, hogy a művelet futtatása sikeres volt-e.
-5. A **Műveletfájlok** gyorslapon a műveletek végrehajtása során létrehozott közbenső fájlokat tekintheti meg. Kiválaszthatja a **Megtekintés** elemet a kimeneti XML-fájl **FatturaPA** -formátumban történő letöltéséhez, illetve annak tartalmának megtekintéséhez.
+5. A **Műveletfájlok** gyorslapon a műveletek végrehajtása során létrehozott közbenső fájlokat tekintheti meg. Kiválaszthatja a **Megtekintés** elemet a kimeneti XML-fájl **FatturaPA**-formátumban történő letöltéséhez, illetve annak tartalmának megtekintéséhez.
 
 ## <a name="related-topics"></a>Kapcsolódó témakörök
 

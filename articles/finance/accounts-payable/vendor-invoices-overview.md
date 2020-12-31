@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cb797af1ae14ebbb420a1b4a1591202c42bd8824
-ms.sourcegitcommit: ff6dde637d2f5d2bd18a582eb41573d4c69acdd6
+ms.openlocfilehash: d51a5ff2dca764a534ea4bf92c30bcf0bf0a5dad
+ms.sourcegitcommit: 51cd470ee885d12f7d51c66201b092aaa16dfaa6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "3249118"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "4701676"
 ---
 # <a name="vendor-invoices-overview"></a>Szállítói számlák áttekintése
 
@@ -112,9 +112,12 @@ A **Szállítói számlák helyreállítása** laphoz csak akkor férhet hozzá,
 
 ## <a name="resetting-the-workflow-status-for-vendor-invoices-from-unrecoverable-to-draft"></a>Szállítói számlák munkafolyamat-állapotának visszaállítása Helyreállíthatatlan állapotból Tervezet állapotba
 
-A helyreállíthatatlan hiba miatt leállított munkafolyamat-példány **Helyreállíthatatlan** munkafolyamat-állapotot kap. Ha egy szállítóiszámla-munkafolyamat állapota **Helyreállíthatatlan**, a **Visszahívás** kiválasztásával visszaállíthatja **Tervezet** állapotba. Ezután szerkesztheti a szállítói számlát. Ez a funkció akkor érhető el, ha a **Funkciókezelés** oldal **Tervezet állapot visszaállítása szállítóiszámla-munkafolyamathoz** paramétere be van kapcsolva.
+A helyreállíthatatlan hiba miatt leállított munkafolyamat-példány **Helyreállíthatatlan** munkafolyamat-állapotot kap. Ha egy szállítóiszámla-munkafolyamat állapota **Helyreállíthatatlan**, a **Visszahívás** kiválasztásával visszaállíthatja **Tervezet** állapotba. Ezután szerkesztheti a szállítói számlát. Ez a funkció akkor érhető el, ha a **Funkciókezelés** oldal **Munkafolyamat állapot visszaállítása a szállítóiszámla Helyreállíthatatlan állapotból Tervezet állapotba** paramétere be van kapcsolva.
 
 A **Munkafolyamat-előzmények** oldal segítségével visszaállíthatja a munkafolyamat állapotát **Tervezet** értékre. Ezt az oldalt a **Szállítói számla**  vagy a **Közös > Lekérdezések > Munkafolyamatok** lehetőséghez navigálva nyithatja meg. A munkafolyamat állapotának **Tervezet** értékre való visszaállításához válassza ki a **Visszahívás** lehetőséget. A munkafolyamat-állapotot úgy is visszaállíthatja tervezetnek, ha a **Szállítói számla** vagy a **Függőben lévő szállítói számlák** oldalon kiválasztja a **Visszahívás** műveletet. Miután a munkafolyamat állapotát visszaállította **Tervezet** állapotba, szerkeszthetővé válik a **Szállítói számlák** lapon.
+
+## <a name="viewing-the-invoice-total-on-the-pending-vendor-invoices-page"></a>A számla végösszegének megtekintése a függőben lévő szállítói számlák lapon
+A függőben lévő szállítói számlák lapon megtekintheti a számla összegét a **Függőben lévő szállítói számlák** oldalon a **Kötelezettségek paraméterei** oldalon lévő **Számla végösszegének megjelenítése a függő szállítói számlák listájában** paraméter engedélyezésével. 
 
 
 

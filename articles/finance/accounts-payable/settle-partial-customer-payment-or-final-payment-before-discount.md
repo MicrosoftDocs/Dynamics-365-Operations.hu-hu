@@ -19,11 +19,11 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: f9ae9218a85c50582c8c4999da463833fc91d260
-ms.sourcegitcommit: d61c43b6bc04bb8786aa3c47932be0ccd84ebaeb
+ms.sourcegitcommit: b40d6ce45aeb07724fc41d1a41923970b007fbcf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 10/14/2020
-ms.locfileid: "4006115"
+ms.locfileid: "4444143"
 ---
 # <a name="settle-a-partial-customer-payment-and-the-final-payment-in-full-before-the-discount-date"></a>Részleges vevői kifizetés kiegyenlítése és az utolsó részlet teljes kiegyenlítése a készpénzfizetési engedmény dátuma előtt
 
@@ -112,7 +112,7 @@ Arnie bezárja a **Tranzakciók kiegyenlítése** lapot. 495,00 értékű kifize
 | DISC-10010 |  Készpénzfizetési engedmény   | 2015-01-07  |         |                                      | 5,00                                  | 0,00    | dollár      |
 
 ## <a name="payment-for-the-remaining-amount"></a>A fennmaradó összeg kifizetése
-A 4028-as vevő kifizeti a fennmaradó 495,00 összeget július 8-án, ami a készpénzfizetési engedmény időszakába esik. Arnie létrehoz egy kifizetési naplót július 8-án és megjelöli a tranzakciót kiegyenlítettnek. Látja, hogy a kiegyenlítendő összeg 495,00. Az érték a **Becsült készpénzfizetési engedmény** mezőben **5,00** , mert az 5,00 engedményt korábban már érvényesítették.
+A 4028-as vevő kifizeti a fennmaradó 495,00 összeget július 8-án, ami a készpénzfizetési engedmény időszakába esik. Arnie létrehoz egy kifizetési naplót július 8-án és megjelöli a tranzakciót kiegyenlítettnek. Látja, hogy a kiegyenlítendő összeg 495,00. Az érték a **Becsült készpénzfizetési engedmény** mezőben **5,00**, mert az 5,00 engedményt korábban már érvényesítették.
 
 |   &nbsp;                | &nbsp; |
 |-------------------------|--------|

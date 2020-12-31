@@ -19,11 +19,11 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: a71d0931445f3501f1b74f26c5eef583ab598b3c
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188901"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4443875"
 ---
 # <a name="settle-a-partial-customer-payment-before-the-discount-date-with-a-final-payment-after-the-discount-date"></a>A vevő az ár egy részét az engedmény dátuma előtt rendezte, azonban a végső fizetés az engedmény bevezetésének dátuma után történik.
 
@@ -82,7 +82,7 @@ Az engedményadatok a **Nyitott tranzakciók kiegyenlítése** lap alján jelenn
 | Alkalmazott készpénzfizetési engedmény          | 3,00      |
 | Alkalmazandó készpénzfizetési engedmény összege | 0,00      |
 
-Ha Anna módosítja a **Készpénzfizetési engedmény használata** mezőt **Mindig**értékűre, a **Részleges kifizetések készpénzfizetési engedményeinek számítása** beállítás érvényét veszti, és a készpénzfizetési engedményt veszi figyelembe. A kifizetés összege 693.00 értékre változik, és a fennmaradó 7.00 érték a készpénzfizetési összeg.
+Ha Anna módosítja a **Készpénzfizetési engedmény használata** mezőt **Mindig** értékűre, a **Részleges kifizetések készpénzfizetési engedményeinek számítása** beállítás érvényét veszti, és a készpénzfizetési engedményt veszi figyelembe. A kifizetés összege 693.00 értékre változik, és a fennmaradó 7.00 érték a készpénzfizetési összeg.
 
 | Jelölés     | Készpénzfizetési engedmény használata | Bizonylat   | Fiók | Dátum      | Fiz. határidő  | Számla | Összeg a tranzakció pénznemtartozásában | Összeg a tranzakció pénznemtartozásában | Pénznem | Kiegyenlítendő összeg |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------------|---------------------------------------|----------|------------------|
@@ -98,7 +98,7 @@ Az engedményadatok a **Nyitott tranzakciók kiegyenlítése** lap alján jelenn
 | Alkalmazott készpénzfizetési engedmény          | 3,00      |
 | Alkalmazandó készpénzfizetési engedmény összege | 7:00      |
 
-Anna a **Készpénzfizetési engedmény használata** mezőt visszaállítja **Normál**értékre, mert nem engedi, hogy a vevő a fennmaradó, 7.00 értékű készpénzfizetési engedményt igénybe vegye. Anna ezután feladja ezt a fizetést. Amikor Anna megnyitja a**Vevőtranzakciók** lapot, azt látja, hogy a számla egyenlege 0,00 érték. Azt is látja, hogy van két kifizetés. Az egyik kifizetés 297.00 értékű és tartozik hozzá egy 3.00 értékű készpénzfizetési kedvezmény. A másik kifizetés 700.00 értékű.
+Anna a **Készpénzfizetési engedmény használata** mezőt visszaállítja **Normál** értékre, mert nem engedi, hogy a vevő a fennmaradó, 7.00 értékű készpénzfizetési engedményt igénybe vegye. Anna ezután feladja ezt a fizetést. Amikor Anna megnyitja a **Vevőtranzakciók** lapot, azt látja, hogy a számla egyenlege 0,00 érték. Azt is látja, hogy van két kifizetés. Az egyik kifizetés 297.00 értékű és tartozik hozzá egy 3.00 értékű készpénzfizetési kedvezmény. A másik kifizetés 700.00 értékű.
 
 | Bizonylat    | Tranzakció típusa | Dátum      | Számla | Összeg a tranzakció pénznemtartozásában | Összeg a tranzakció pénznemtartozásában | Egyenleg | Pénznem |
 |------------|------------------|-----------|---------|--------------------------------------|---------------------------------------|---------|----------|

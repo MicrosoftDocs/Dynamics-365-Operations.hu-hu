@@ -19,11 +19,11 @@ ms.author: roschlom
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: 10.0.9
 ms.openlocfilehash: 9e5db8e4bbd14aa30196e3be617cdfcb72c091fd
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3977167"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4443935"
 ---
 # <a name="dual-currency-support-for-sales-tax"></a>Kettős pénznemtámogatás áfa esetén
 [!include [banner](../includes/banner.md)]

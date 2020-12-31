@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 40703622bc8c7a21451d31e7606596c5edbe90f7
-ms.sourcegitcommit: 51e626675b0130fa32a84ce2d9119b68ea928018
+ms.openlocfilehash: da2dd4889a5f4722ff60a76a4a023c63fb59ad55
+ms.sourcegitcommit: 9f32389715b226c11e74c53547527e0a8b51e300
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4000293"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "4514326"
 ---
 # <a name="split-a-fixed-asset"></a>Tárgyi eszköz felosztása
 
@@ -39,7 +39,7 @@ Ez a témakör azt ismerteti, hogyan kell egy eszközkönyv egy részét egy má
 
 ## <a name="split-a-fixed-asset"></a>Tárgyi eszköz felosztása
 
-A teljes mértékben értékcsökkentett eszköz felosztása előtt a tárgyi eszköz állapotát manuálisan módosítani kell **Lezárt** értékről **Nyitott** értékre. Ezt a lépést kötelező végrehajtani, mert a könyv állapotának **Nyitottnak** kell lennie, ha a tárgyi eszközhöz tranzakciókat kell feladnia (például egy értékesítéses kivezetés esetében). A tárgyi eszköz állapotának módosítása után az alábbi lépések segítségével oszthatja fel a tárgyi eszközt.
+A teljes mértékben értékcsökkentett eszköz felosztása előtt a tárgyi eszköz állapotát manuálisan módosítani kell **Lezárt** értékről **Nyitott** értékre. Ezt a lépést kötelező végrehajtani, mert a könyv állapotának **Nyitottnak** kell lennie, ha a tárgyi eszközhöz tranzakciókat kell feladnia (például egy értékesítéses kivezetés esetében). A **Főkönyvi paraméterek** lap **Általános** fülön be kell kapcsolnia a **Több tranzakció engedélyezése egy bizonylat** paramétert. Miután az eszközkönyv állapota megváltozott, és egy bizonylaton belül több tranzakció is engedélyezett, hajtsa végre a következő lépéseket az eszköz felosztásához.
 
 1. A listában keresse meg és válassza ki a felosztani kívánt tárgyi eszköz hivatkozását.
 2. Válassza ki a **Könyvek** lehetőséget. Válassza ki az új tárgyi eszközhöz hozzárendelni kívánt könyvet.

@@ -18,12 +18,12 @@ ms.search.region: global
 ms.author: aevengir
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 22acdcfbecc1efe78a1b1be87e40b2e7d23506fc
-ms.sourcegitcommit: cd339f48066b1d0fc740b513cb72ea19015acd16
+ms.openlocfilehash: 4fc35feb4f3a67ba9c8c70c2d2f8c07cb944b0f6
+ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "3759448"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "4444200"
 ---
 # <a name="cost-controlling-mobile-workspace"></a>Költségkontroll mobil munkaterület
 
@@ -63,7 +63,7 @@ A **Költségellenőrzés** mobil munkaterület a következő műveleteket, néz
     -   Tényleges és költségvetési (folyó év mai napig)
     -   Tényleges és módosított költségvetési (folyó év mai napig)
 
-    A következő összegek jelennek meg minden kártyán: a Tényleges, Költségvetés, Eltérés és Eltérés %.
+    A következő összegek jelennek meg minden kártyán: a Tényleges, Költségvetés, Eltérés és Eltérés %.
 
 -   **Hivatkozások:**
 
@@ -71,7 +71,7 @@ A **Költségellenőrzés** mobil munkaterület a következő műveleteket, néz
     -   Előző időszak részletei
     -   Folyó év mai dátumig részletei
 
-    Ha kiválaszt egy hivatkozást, egy kártya jelenik meg minden egyes költségösszetevőhöz. A kártyákon a következő összegek jelennek meg: Aktuális, Költségvetés, Költségvetés eltérése, Költségvetés eltérése %, Módosított költségvetés, Módosított költségvetés eltérése és Módosított költségvetés eltérése %.
+    Ha kiválaszt egy hivatkozást, egy kártya jelenik meg minden egyes költségösszetevőhöz. A kártyákon a következő összegek jelennek meg: Aktuális, Költségvetés, Költségvetés eltérése, Költségvetés eltérése %, Módosított költségvetés, Módosított költségvetés eltérése és Módosított költségvetés eltérése %.
     
     [![Kártya költségösszetevőhöz ](./media/Cost-controlling.png)](./media/Cost-controlling.png)
 

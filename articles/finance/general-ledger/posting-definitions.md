@@ -19,11 +19,11 @@ ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 22a7b0acae02738e4f14905edb13fac1da0d0213
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770597"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4444001"
 ---
 # <a name="posting-definitions"></a>Feladásdefiníciók
 
@@ -32,7 +32,7 @@ ms.locfileid: "2770597"
 A cikk feladás-definíciókról, valamint azok meghatározásáról és linkeléséről biztosít információt.
 A támogatott feladási típusok és dokumentumok esetében feladásdefiníciókat használhat a feladási profilok helyett, és ezekkel osztályozhatja a fő számlákat és a pénzügyi dimenziókat a könyvelési tételekben. A támogatott dokumentumok és feladási típusok listáját a **Tranzakció-feladásdefiníciók** oldalon tekintheti meg. 
 
-A feladásdefiníciók használatának megkezdéséhez jelölje be a**Feladásdefiníciók használata** opciót a **Főkönyvi paraméterek** oldalon. Még a feladásdefiníciók használata esetén is kell definiálnia feladási profilokat az eredeti bejegyzések és a nem támogatott feladási típusok és dokumentumok számára. 
+A feladásdefiníciók használatának megkezdéséhez jelölje be a **Feladásdefiníciók használata** opciót a **Főkönyvi paraméterek** oldalon. Még a feladásdefiníciók használata esetén is kell definiálnia feladási profilokat az eredeti bejegyzések és a nem támogatott feladási típusok és dokumentumok számára. 
 
 Feladásdefiníciókat kell használnia annak érdekében, hogy lehetővé tegye a kötelezettségvállalás-könyvelést a beszerzési rendeléseknél, és a használja, és a pre-kötelezettségvállalási könyvelsét beszerzési igényléseknél.
 

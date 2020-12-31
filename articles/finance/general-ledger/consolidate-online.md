@@ -17,11 +17,11 @@ ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
 ms.openlocfilehash: 86be6d4cc0af3f2fd92523d4ecd3825f2383fc48
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770735"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4443972"
 ---
 # <a name="online-financial-consolidations"></a>Online pénzügyi konszolidációk
 
@@ -32,7 +32,7 @@ Ez a témakör leírja az online pénzügyi konszolidációkat a főkönyvben. A
 A beállítás befejezése után adja meg a konszolidáció részleteit a **Konszolidálás [Online]** oldalon. Amikor végzett, kattintson az **OK** VAGY a **Köteg** lehetőségre a konszolidáció feldolgozásához.
 
 ## <a name="criteria"></a>Feltételek
-A **Feltételek** lapon a **Konszolidálás [Online]** oldalon megadhatja a számlákat, az időszakokat és a konszolidálandó adatok típusát.
+A **Feltételek** fülön a **Konszolidálás [Online]** oldalon megadhatja a számlákat, az időszakokat és a konszolidálandó adatok típusát.
 
 ![Feltételek lap](./media/criteria-consolidate-online.png "Feltételek lap")
 

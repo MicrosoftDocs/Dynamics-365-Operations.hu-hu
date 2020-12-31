@@ -19,11 +19,11 @@ ms.author: ryansand
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: 471c719a8e6de0ebe6fcdad0ae222453db841c87
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772099"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4444104"
 ---
 # <a name="budget-planning-templates-for-excel"></a>Költségvetés-tervezési sablonok az Excel programhoz
 
@@ -67,7 +67,7 @@ A **Tervezés** lapon kattintson a **Hozzáadás** mezőre, és válassza ki a *
 
 Vigye a kurzort a kívánt helyre az Excel fájlban. Kattintson a **Címke hozzáadása** elemre a mezőfelirat a kijelölt helyen történő hozzáadásához. Válassza az **Érték hozzáadása** elemet az értékmező a kijelölt helyre történő hozzáadásához. A tervező bezárásához kattintson a **Kész** gombra.
 
-## <a name="select-add-valuemediabpt7pngmediabpt7png"></a>[![Az Érték hozzáadása lehetőség kiválasztása](./media/bpt7.png)](./media/bpt7.png)
+## <a name="select-add-valuemediabpt7png"></a>[![Az Érték hozzáadása lehetőség kiválasztása](./media/bpt7.png)](./media/bpt7.png)
 
 <a name="add-a-calculated-column-to-budget-plan-document-template-table"></a>Számított oszlop felvétele költségvetésiterv-dokumentum táblájába
 --------------------------------------------------------------
@@ -120,7 +120,7 @@ Ajánlott zárolni a sablont, hogy a felhasználók ne tudják bezárni. A záro
 
 Kattintson a nyílra a további menü megjelenítéséhez. Válassza a **Zárolás** elemet.
 
-### <a name="select-lockmediabpt16-1024x614pngmediabpt16png"></a>[![A Zárolás elem kiválasztása](./media/bpt16-1024x614.png)](./media/bpt16.png)
+### <a name="select-lockmediabpt16png"></a>[![A Zárolás elem kiválasztása](./media/bpt16-1024x614.png)](./media/bpt16.png)
 
 ### <a name="can-i-use-other-excel-features-like-cell-formatting-colors-conditional-formatting-and-charts-with-my-budget-plan-templates"></a>Használhatok más Excel-funkciókat, például cellaformázást, színeket, feltételes formázást és diagramokat a költségvetésiterv-sablonokhoz?
 

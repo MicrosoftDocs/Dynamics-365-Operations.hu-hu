@@ -1,7 +1,7 @@
 ---
 title: Tárgyieszköz-tranzakciók feladása a feladási rétegekbe
 description: Ez a cikk a tárgyi-eszköztranzakciók feladási réteg funkciójába nyújt betekintést.
-author: ShylaThompson
+author: moaamer
 manager: AnnBe
 ms.date: 04/25/2017
 ms.topic: article
@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: 3001
 ms.assetid: 7dabde57-0843-47c3-85ef-f36b6f472e30
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bc8c4f4f41ed39447ae441dd8e01cfcf80c939b5
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: a80e4d1a081b5bd8c58238b0f154f8fbdc660ccb
+ms.sourcegitcommit: f80819c67c0a7475315fc68ce1cb568831e2c0e7
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770712"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "4493672"
 ---
 # <a name="post-fixed-asset-transactions-to-posting-layers"></a>Tárgyieszköz-tranzakciók feladása a feladási rétegekbe
 
@@ -39,8 +39,11 @@ A tárgyieszköz-naplókat a Naplónevek lapon a Főkönyv > Napló beállítás
 
 Kijelölhet főkönyvi számlákat tárgyieszköz-tranzakciókhoz a Tárgyieszköz-feladási profilok lapon. Minden feladási profilnál jelölje ki a megfelelő tranzakciótípust és a könyvet, majd jelölje ki a főkönyvi számlákat. Hozzon létre feladási profil rekordot minden, a főkönyvbe feladott könyvre.
 
+A rögzített eszköz olyan bizonylatokba vihető be, amelyek csak az **Aktuális** feladási réteget támogatják, például a **Beszerzési rendelés**, **Függőben lévő szállítói számla**, **Értékesítési rendelés** vagy a **Szabadszöveges számla**. Az eszközazonosító kiválasztásakor a program az eszközazonosítót az **Aktuális** feladási réteggel rendelkező könyvre szűri, és automatikusan kitölti a könyvelés során, amikor a rendszer ellenőrzi, hogy az eszköz feladási rétege **Aktuális**. Ha ez az ellenőrzés nem fejezhető be, a feladási folyamat leáll. 
+
 > [!NOTE] 
-> A származtatott könyvek használatával egyszerre több feladási rétegre is fel lehet adni a tranzakciókat. Az elsődleges könyv tranzakcióit egy olyan naplóban kell létrehozni, amelynek a feladási rétege megegyezik a könyv feladási rétegével. Feladás során a származtatott könyvtranzakciókat a program feladja a megfelelő feladási rétegekre.
+> A származtatott könyvek használatával egyszerre több feladási rétegre is fel lehet adni a tranzakciókat. Az elsődleges könyv tranzakcióit egy olyan naplóban vagy forrásdokumentumban kell létrehozni, amelynek a feladási rétege megegyezik a könyv feladási rétegével. Feladás során a származtatott könyvtranzakciókat a program fogja feladni a megfelelő feladási rétegekre. 
+
 
 A további tudnivalókat lásd [Származtatott könyvek](derived-books.md) és [Feladás származtatott könyvekkel](post-derived-value-models.md).
 

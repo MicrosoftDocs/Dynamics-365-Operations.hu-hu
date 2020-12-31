@@ -19,11 +19,11 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 84cde511ab0b5cbe4b99e72832bf548336b6b28c
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2187222"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4443838"
 ---
 # <a name="manual-depreciation"></a>Kézi értékcsökkenés
 
@@ -58,7 +58,7 @@ A következő táblázat mutatja, az értékcsökkenés számítását az egyes 
 | 2                | (11 000-1 000) × 50% = 5 000                | 5 000 × (10 000-5 000)                    |
 | 3                | (11 000-1 000) × 8% = 800                   | 4 200 (5 000-800)                       |
 
-Ha kiválasztja a **Havi** lehetőséget az**Időszak gyakoriság** mezőben, akkor 12 kézi ütemezési intervallum jön létre. A következő táblázat mutatja az értékcsökkenés-összegeket az első két időszakra.
+Ha kiválasztja a **Havi** lehetőséget az **Időszak gyakoriság** mezőben, akkor 12 kézi ütemezési intervallum jön létre. A következő táblázat mutatja az értékcsökkenés-összegeket az első két időszakra.
 
 | Intervallum | Értékcsökkenés összege            |
 |----------|--------------------------------|

@@ -19,11 +19,11 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 4b443630d1612b5095fefa74b5ed6d057be534b7
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188947"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4443876"
 ---
 # <a name="set-up-and-process-recurring-invoices"></a>Állítsa be és dolgozza fel az ismétlődő számlákat
 
@@ -53,12 +53,12 @@ A sablon létrehozása után hozzárendelni kell a sablont a számlázandó vev�
 Egy vevőnek lehet több, eltérő gyakorisággal rendelkező sablonja.
 
 ## <a name="generate-the-recurring-invoices"></a>Az ismétlődő számlák létrehozása
-Az **ismétlődő számlák**oldalon van egy olyan feladat, amely az ismétlődő számlasablonokat dolgozza fel. Meghatározhatja a számla dátumát és a sablont a számlák létrehozásához. A számlák létrejönnek és feldolgozott minden számlacsoporthoz egy ismétlődő azonosítószám rendelődik.
+Az **ismétlődő számlák** oldalon van egy olyan feladat, amely az ismétlődő számlasablonokat dolgozza fel. Meghatározhatja a számla dátumát és a sablont a számlák létrehozásához. A számlák létrejönnek és feldolgozott minden számlacsoporthoz egy ismétlődő azonosítószám rendelődik.
 
 <a name="post-recurring-free-text-invoices"></a>Szabadszöveges ismétlődő számlák feladása
 ---------------------------------
 
-Ismétlődő számlák generálása után a számla ismétlődés azonosító jelenik meg a feladási feladatban az **Ismétlődő számlák**oldalon. Megtekintheti az ismétlődés azonosító összes számláját a hivatkozásra kattintva. Az ismétlődés azonosító számláiak ellenőrzése során törölheti az egyes számlákat. A vevő ismétlődési beállításai a sablon beállításaira áll, így azt újra lehet generálni később. Feladhat egy, több, vagy az összes ismétlődés azonosítót. Ha engedélyezve vannak a munkafolyamatok, rá kell kattintania **Küldés** lehetőségre a számlák feladása előtt.
+Ismétlődő számlák generálása után a számla ismétlődés azonosító jelenik meg a feladási feladatban az **Ismétlődő számlák** oldalon. Megtekintheti az ismétlődés azonosító összes számláját a hivatkozásra kattintva. Az ismétlődés azonosító számláiak ellenőrzése során törölheti az egyes számlákat. A vevő ismétlődési beállításai a sablon beállításaira áll, így azt újra lehet generálni később. Feladhat egy, több, vagy az összes ismétlődés azonosítót. Ha engedélyezve vannak a munkafolyamatok, rá kell kattintania **Küldés** lehetőségre a számlák feladása előtt.
 
 <a name="print-recurring-free-text-invoices"></a>Szabadszöveges ismétlődő számlák nyomtatása
 ----------------------------------

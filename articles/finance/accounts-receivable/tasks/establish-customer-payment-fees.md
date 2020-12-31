@@ -17,11 +17,11 @@ ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: b6475671002379d84519df05a0198a17ac000677
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3143742"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4443969"
 ---
 # <a name="establish-customer-payment-fees"></a>Vevői kifizetések díjainak kialakítása
 
@@ -47,7 +47,7 @@ Ez a feladat az USMF bemutatócéget használja.
 14. Keresse meg és jelölje ki a kívánt rekordot a listán.
 15. Ha szükséges, írjon be egy Fizetési pénznemet a **Kifizetés pénznem** mezőbe. A kifizetés pénzneme további feltétel a díj értékelésére.  Például a bank további díjat számíthat fel az USD pénznemben megkapott kifizetésekre, mert az általános tranzakciók EUR pénznemben történnek.  
 16. Adja meg, hogy a díj százalék, összeg vagy intervallum legyen.
-17. A **Százalék/összeg mezőbe**írja be a díj százalékát vagy összegét. Ha a Százalék/Összeg mező Százalék, akkor az itt bevitt érték százalék. Ha a Százalék/Összeg mező Összeg, akkor az itt bevitt érték összeg. Ha a Százalék/Összeg mező Intervallum, akkor a szintek meghatározásához használja az Intervallum lapot.  
+17. A **Százalék/összeg mezőbe** írja be a díj százalékát vagy összegét. Ha a Százalék/Összeg mező Százalék, akkor az itt bevitt érték százalék. Ha a Százalék/Összeg mező Összeg, akkor az itt bevitt érték összeg. Ha a Százalék/Összeg mező Intervallum, akkor a szintek meghatározásához használja az Intervallum lapot.  
 18. A **Díj pénzneme** mezőben válassza ki a díj pénznemét. A díj ebben a pénznemben kerül létrehozásra.  
 19. Kattintson a **Mentés** gombra.
 

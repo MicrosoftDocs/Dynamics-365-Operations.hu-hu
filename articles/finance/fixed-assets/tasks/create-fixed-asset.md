@@ -1,7 +1,7 @@
 ---
 title: Tárgyi eszköz létrehozása
 description: Ez a témakör azt mutatja be, hogyan lehet új tárgyieszköz-rekordot létrehozni a tárgyi eszköz lista lapjáról.
-author: saraschi2
+author: moaamer
 manager: AnnBe
 ms.date: 07/01/2019
 ms.topic: business-process
@@ -13,15 +13,15 @@ audience: Application User
 ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2b7d65a047251fa036242fb456725bc8cba957b9
-ms.sourcegitcommit: 51e626675b0130fa32a84ce2d9119b68ea928018
+ms.openlocfilehash: 481bdb55b813dad5366f382ae35d8345b0e67d9f
+ms.sourcegitcommit: a9efbd69f2670fd6ba0ad0babf304fc206d01249
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4000243"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "4444206"
 ---
 # <a name="create-a-fixed-asset"></a>Tárgyi eszköz létrehozása
 
@@ -49,3 +49,9 @@ Eszközrekord kézi létrehozásához hajtsa végre az alábbi lépéseket.
 A tárgyi eszközök importálása az Excel-bővítmény segítségével vagy az **adatkezelés** munkaterületről származó importálási feladat futtatásával is történhet . Az importálás futtatása előtt írja be a sablonban a kötelező mezők értékeit.
 
 Ha nem definiálta a tárgyi eszköz számát az Excel-bővítmény sablonjában vagy az adatkezelés modulban, akkor a rendszer minden importált eszközhöz létrehoz egy tárgyi eszköz számát, és automatikusan megnöveli a számsorozatot mindegyikhez. Ha viszont eszközöket importál, és a sablonban adja meg a tárgyi eszköz számát, a rendszer **nem** növeli automatikusan a számsorozatot. Ebben az esetben előfordulhat, hogy a rendszergazdának manuálisan frissíteni kell a számsorozatot. Ha a tárgyi eszköz számát az Excel-bővítmény sablonjában definiálta, akkor a rendszer a meghatározott tárgyi eszköz számát használja, és növeli a számsorozatot.
+
+> [!NOTE]                                                                                                         
+> Az értékcsökkenés feladása után az **Aktivált** és az **Értékcsökkenés futtatási dátum** mezők zárolva lesznek a **Könyv** oldalon. Emellett egyik mező sem frissül az adatentitásból.
+
+> [!WARNING]
+> A rögzített eszközrekord nem törlődik, ha a tranzakciókat a kapcsolódó könyvbe adták fel, vagy ha az újonnan létrehozott eszközt naplósorban adták meg, de nem adták fel. 

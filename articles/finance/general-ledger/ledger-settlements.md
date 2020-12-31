@@ -17,11 +17,11 @@ ms.author: roschlom
 ms.search.validFrom: 2018-11-30
 ms.dyn365.ops.version: 8.1.1
 ms.openlocfilehash: d41a69bed3d1340736cc7df35aa3ded032d4d79d
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3977119"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4443890"
 ---
 # <a name="ledger-settlements"></a>Főkönyvi kiegyenlítések
 
@@ -59,7 +59,7 @@ A **Főkönyvi kiegyenlítések** a lap tartalmazza a lehetőségeket, amelyek m
 
 - A **Kijelöltek megjelölésének megszüntetése** gomb törli a **Megjelölt** mezőt minden olyan sorban, amely ki van választva.
 - A **Megjelölt** szűrő lehetővé teszi a tranzakciók szűrését az alapján, hogy a **Megjelölt** mezőjük kijelölt vagy törölt.
-- Az **Állapot** szűrő lehetővé teszi a tranzakciók szűrését az alapján, hogy állapotuk **Kiegyenlített** vagy **Ki nem egyenlített** .
+- Az **Állapot** szűrő lehetővé teszi a tranzakciók szűrését az alapján, hogy állapotuk **Kiegyenlített** vagy **Ki nem egyenlített**.
 - A **Rendezés abszolút összeg szerint** gomb lehetővé teszi, hogy az összegeket abszolút érték szerint rendezze, így csoportosíthatja azokat a tartozásokat és követeléseket, amelyek összege egyenlő.
 
 ## <a name="reverse-a-settlement"></a>Kiegyenlítés sztornírozása

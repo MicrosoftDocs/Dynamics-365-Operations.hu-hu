@@ -19,11 +19,11 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 202d6e8b0933522c2faf5fb49291f11200e4754f
-ms.sourcegitcommit: d61c43b6bc04bb8786aa3c47932be0ccd84ebaeb
+ms.sourcegitcommit: b40d6ce45aeb07724fc41d1a41923970b007fbcf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 10/14/2020
-ms.locfileid: "4006141"
+ms.locfileid: "4444140"
 ---
 # <a name="settle-a-partial-vendor-payment-and-the-final-payment-in-full-before-the-discount-date"></a>Részleges szállítói kifizetés kiegyenlítése és az utolsó részlet teljes kiegyenlítése a készpénzfizetési engedmény dátuma előtt
 
@@ -105,7 +105,7 @@ April bezárja a **Tranzakciók kiegyenlítése** oldalt. 495,00 értékű kifiz
 | DISC-10010 | Készpénzfizetési engedmény    | 2015-1-7  |         | 5,00                                 |                                       | 0,00    | dollár      |
 
 ## <a name="remaining-amount-paid-on-july-8"></a>A fennmaradó összeg kifizetése július 8-án
-April kifizeti a 3064-es szállító számlájának fennmaradó részét július 8.-án, ami még beleesik a kedvezményes időszakba. April létrehozza a kifizetési naplót július 8.-án, és a tranzakciót kiegyenlítésre jelöli. Látja, hogy az elszámolandó összeg 495,00. Az érték a **Becsült készpénzfizetési engedmény** mezőben **-5,00** , mert az 5,00 engedményt korábban már érvényesítették
+April kifizeti a 3064-es szállító számlájának fennmaradó részét július 8.-án, ami még beleesik a kedvezményes időszakba. April létrehozza a kifizetési naplót július 8.-án, és a tranzakciót kiegyenlítésre jelöli. Látja, hogy az elszámolandó összeg 495,00. Az érték a **Becsült készpénzfizetési engedmény** mezőben **-5,00**, mert az 5,00 engedményt korábban már érvényesítették
 
 |  &nbsp;                 |  &nbsp; |
 |-------------------------|--------|

@@ -19,11 +19,11 @@ ms.author: roschlom
 ms.search.validFrom: 2019-08-19
 ms.dyn365.ops.version: 10.0.6
 ms.openlocfilehash: 438a640124e778b839c660f5e161efa22c319af0
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3976091"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4443829"
 ---
 # <a name="sales-tax-specification-by-ledger-transaction-report"></a>Áfameghatározás főkönyvi tranzakció jelentésenként
 [!include [banner](../includes/banner.md)]
@@ -37,7 +37,7 @@ A **főkönyvi tranzakció jelentés szerinti ÁFA-meghatározás** mind az adó
 - **Adóügyi számla** – A számlát adóügyi számlának kell tekinteni, amikor egy adózási tranzakció fel van adva, és az **áfakód** sorában a fő számla egy adóügyi számla, például egy fizetendő forgalmiadó-számla vagy egy visszaigényelhető forgalmiadó számla.
 - **Nem adóügyi számla** – A számlát nem adóügyi számlának kell tekinteni, amikor egy adózási tranzakció fel van adva, és az eredeti tranzakció fő számlája nem adóügyi számla, például egy forgalmi számla vagy egy költségszámla.
 
-Az adóbevallások esetében a jelentés **Eredet** , **Visszaigényelhető áfa** és **Fizetendő áfa** oszlopa **0** (nulla). A nem adóügyi számláknál az oszlopok összegeket jelenítenek meg.
+Az adóbevallások esetében a jelentés **Eredet**, **Visszaigényelhető áfa** és **Fizetendő áfa** oszlopa **0** (nulla). A nem adóügyi számláknál az oszlopok összegeket jelenítenek meg.
 
 ## <a name="filtering-the-data-on-the-report"></a>A jelentésen látható adatok szűrése
 

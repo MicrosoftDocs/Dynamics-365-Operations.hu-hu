@@ -16,11 +16,11 @@ ms.author: roschlom
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
 ms.openlocfilehash: 28abef376e8462c9a69dbd8e5033ea799b6a4b3a
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3977815"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4443994"
 ---
 # <a name="manage-international-bank-account-number-iban-account-validation"></a>Nemzetközi bankszámlaszám (IBAN) számlák ellenőrzésének kezelése
 
@@ -32,14 +32,14 @@ Az IBAN szám felépítéséről szóló adatok a Microsoft Dynamics 365 Finance
 
 ## <a name="set-up-iban-structures"></a>IBAN-szerkezetek beállítása
 
-1. Nyissa meg a következőt: **Készpénz- és bankkezelés \> Beállítás \> IBAN-struktúrák** .
+1. Nyissa meg a következőt: **Készpénz- és bankkezelés \> Beállítás \> IBAN-struktúrák**.
 2. Láthatja, hogy minden egyes ország vagy régió IBAN-struktúrája automatikusan be van állítva.
 3. Ha testre akarja szabni egy adott ország vagy régió struktúráit, szerkesztheti azokat.
 4. A struktúradefiníciók az egyes új kiadások részei lesznek. Használhatja a **Struktúrák alaphelyzetbe állítása** menüt, hogy az egyes frissítések után betöltse a legfrissebb definíciókat.
 
 ## <a name="validate-the-iban-structure-in-a-bank-account"></a>A bankszámla IBAN-struktúrájának ellenőrzése
 
-1. Menjen a **Készpénz és bankkezelés \> Bankszámlák \> Bankszámlák menüpontra** .
+1. Menjen a **Készpénz és bankkezelés \> Bankszámlák \> Bankszámlák menüpontra**.
 2. Hozzon létre bankszámlát
 3. A **További információk** gyorslapon adjon meg egy IBAN-t.
 

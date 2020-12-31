@@ -16,25 +16,25 @@ ms.author: roschlom
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
 ms.openlocfilehash: 0b25bbeb270f33d1d158de2091ab86e7e98be98a
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3976547"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4443943"
 ---
 # <a name="credit-management-parameters-setup"></a>Hitelkezelési pereméterek beállítása
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör azt mutatja be, milyen beállításokkal lehet konfigurálni a Hitelkezelést a vállalkozás igényeinek kielégítésére. A Hitelkezelés szolgáltatásai használatának megkezdéséhez be kell állítani a paramétereket **Követelések és beszedések paraméterei** oldalon ( **Követelések és beszedések \> Beállítások \> Követelések és beszedések paraméterei** ).
+Ez a témakör azt mutatja be, milyen beállításokkal lehet konfigurálni a Hitelkezelést a vállalkozás igényeinek kielégítésére. A Hitelkezelés szolgáltatásai használatának megkezdéséhez be kell állítani a paramétereket **Követelések és beszedések paraméterei** oldalon (**Követelések és beszedések \> Beállítások \> Követelések és beszedések paraméterei**).
 
 ## <a name="credit-parameters"></a>Hitelparaméterek
 
-Négy gyorslap van a **Hitel** szakaszban, ahol megváltoztathatja a Hitelkezelést szabályozó paramétereket: **Hitelvárakoztatások** , **Hitelkezelési ellenőrzőpont** , **Hitelkezelési statisztikák** és **Hitelkorlátok** . A következő szakaszok az egyes gyorslapokon elérhető beállításokat írják le.
+Négy gyorslap van a **Hitel** szakaszban, ahol megváltoztathatja a Hitelkezelést szabályozó paramétereket: **Hitelvárakoztatások**, **Hitelkezelési ellenőrzőpont**, **Hitelkezelési statisztikák** és **Hitelkorlátok**. A következő szakaszok az egyes gyorslapokon elérhető beállításokat írják le.
 
 ### <a name="credit-holds"></a>Hitelfelfüggesztések
 
-- Állítsa be az **Értékesítési rendelések értékei módosításának engedélyezése a várakoztatás feloldását követően** beállítást **Nem** , hogy meg legyen követelve az, hogy a feladási szabályok ismét ellenőrizve legyenek ha az értékesítési rendelés értéke (kiterjesztett ár) növelve lett, amióta az értékesítési rendelést felszabadították a várakoztatási listából. .
+- Állítsa be az **Értékesítési rendelések értékei módosításának engedélyezése a várakoztatás feloldását követően** beállítást **Nem**, hogy meg legyen követelve az, hogy a feladási szabályok ismét ellenőrizve legyenek ha az értékesítési rendelés értéke (kiterjesztett ár) növelve lett, amióta az értékesítési rendelést felszabadították a várakoztatási listából. .
 - A **Visszavont rendelések okai** mezőben válassza ki azt a felszabadítási okot, amelyet alapértelmezésként fog használni, amikor az értékesítési rendelést, amely a hitelkeretkezelésen esett át érvényteleníti.
 - A **Ügyfelek hitelcsoportjainak hitelkorlátjának ellenőrzése** beállítást állítsa **Igen** értékre, ha ellenőrizni szeretné egy ügyfélhitelcsoport hitelkorlátját, ha az értékesítési rendelés egy ügyfélhitelcsoporthoz tartozik. A rendszer ellenőrzi a csoport hitelkeretét, majd ha szükséges, a program ellenőrzi a vevő hitelkeretét.
 - Állítsa be a **Hitelkorlát ellenőrzése, aha a fizetési feltételek magasabbak lettek** beállítás **Igen** értékre, hogy a fizetési feltételek rangsorolása ellenőrizve legyen annak meghatározásához, hogy a fizetési feltételek az értékesítési rendelésen eltérnek az ügyfél alapértelmezett fizetési feltételeitől. Ha az új fizetési feltételek magasabb rangúak, mint az eredeti fizetési feltételek, akkor a rendelés a hitelkeretkezeléssel kapcsolatos várakoztatásra kerül.
@@ -57,7 +57,7 @@ Nem adhat meg türelmi napot néhány feladási ellenőrzőponthoz, de mások es
 
 - A **Feladás** jelölőnégyzet bejelölésével futtathatja a hitelkezelési szabályokat, amikor a sorban megjelenő feladási ellenőrzőpontot futtatja. Ha nem jelöli be a jelölőnégyzetet, akkor a program csak egyszer ellenőrzi a szabályokat a teljes feladási folyamat során.
 - Ha bejelöli a **Feladás** jelölőnégyzetet, adja meg, hogy hány türelmi napnak kell eltelnie a zárolási szabályok újbóli ellenőrzése előtt. Ha a **Feladás** jelölőnégyzet nincs bejelölve, akkor nem adhat meg türelmi napokat.
-- A **Pro forma** jelölőnégyzet bejelölésével futtathatja a hitelkezelési szabályokat, amikor a sorban megjelenő pro-forma feladási ellenőrzőpontot futtatja. A legtöbb esetben az értékesítési rendelés feladásakor megjelenő párbeszédpanelen a **Feladás** mező értéke **Nem** .
+- A **Pro forma** jelölőnégyzet bejelölésével futtathatja a hitelkezelési szabályokat, amikor a sorban megjelenő pro-forma feladási ellenőrzőpontot futtatja. A legtöbb esetben az értékesítési rendelés feladásakor megjelenő párbeszédpanelen a **Feladás** mező értéke **Nem**.
 - Ha bejelöli a **Feladás** jelölőnégyzetet, adja meg, hogy hány türelmi napnak kell eltelnie a zárolási szabályok újbóli ellenőrzése előtt. Ha a **Feladás** jelölőnégyzet nincs bejelölve, akkor nem adhat meg türelmi napokat.
 
 ### <a name="credit-management-statistics"></a>Hitelkezelési statisztika

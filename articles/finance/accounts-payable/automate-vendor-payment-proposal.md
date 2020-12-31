@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-04-08
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: a1e3305bff99fa39240176ac9fc7aaee84b98e6c
-ms.sourcegitcommit: be51e892003778e71b67fb409a8e16965c89b5ac
+ms.openlocfilehash: 2b4e6b42326ecbd07efe006afb23931849f5cf58
+ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "3618411"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "4444199"
 ---
 # <a name="automate-vendor-payment-proposals"></a>Szállítói fizetési javaslatok automatizálása
 

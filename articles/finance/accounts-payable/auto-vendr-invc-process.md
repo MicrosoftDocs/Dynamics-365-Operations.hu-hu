@@ -3,7 +3,7 @@ title: Automatizált szállítói számlázási folyamatok – áttekintés
 description: Ez a témakör szállítói számla feldolgozásának automatizálási lehetőségét és az automatikus folyamat használatának előnyeit mutatja be.
 author: abruer
 manager: AnnBe
-ms.date: 10/16/2020
+ms.date: 11/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-30
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: ec3598ebd158cc23ac7c02d7e33557141d5901bc
-ms.sourcegitcommit: 9e7ceb5604472f3088f611aa0360bd6a716db32b
+ms.openlocfilehash: 677760ec15630a11bf691be4cd8af9cf5549ddf9
+ms.sourcegitcommit: 9c05d48f6e03532aa711e1d89d0b2981e9d37200
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4022496"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4665322"
 ---
 # <a name="automated-vendor-invoicing-processes-overview"></a>Automatizált szállítói számlázási folyamatok – áttekintés
 
@@ -39,8 +39,9 @@ Az automatizálási folyamatok a következő feladatok végrehajtásához haszn�
 - Importált számlák automatikus elküldése a munkafolyamat-rendszerbe.
 - Terméknyugták egyeztetése a függőben lévő szállítói számlák soraival.
 - A feladás szimulálása a szállítói számla feladását megelőzően.
-- Munkafolyamat-előzmények gyors és hatékony áttekintése.
+- Munkafolyamat- és automatizálási előzmények gyors és hatékony áttekintése.
 - A szállítói számlák feldolgozásának automatizálása eredményeinek megtekintése és elemzése.
+- Folytassa az automatikus feldolgozást több számla esetében.
 
 ## <a name="vendor-invoice-automation--submit-imported-vendor-invoices-to-the-workflow-system"></a>Szállítói számla automatizálása – Importált szállítói számlák elküldése a munkafolyamat-rendszerbe
 
@@ -58,10 +59,13 @@ A rendszer automatikusan egyezteti a feladott terméknyugtákat azokkal a száml
 
 A feladási szimuláció végrehajtja a szállítói számlák feladási folyamata során elvégzett ellenőrzési lépéseket, ekkor azonban nem frissülnek a számlák. A folyamat futtatásához akár egy számlát, akár több számlát is kiválaszthat a **Függőben lévő szállítói számlák** oldalon.
 
-## <a name="vendor-invoice-automation--enhanced-experience-for-viewing-workflow-historical-information-for-vendor-invoices"></a>Szállítói számla automatizálása – A szállítói számlákra vonatkozó munkafolyamat-előzményinformációk megtekintésének továbbfejlesztett módja.
+## <a name="vendor-invoice-automation--enhanced-experience-for-viewing-workflow-and-automation-historical-information-for-vendor-invoices"></a>Szállítói számla automatizálása – A szállítói számlákra vonatkozó munkafolyamat- és automatizálási előzményinformációk megtekintésének továbbfejlesztett módja
 
-A szállítói számla munkafolyamat-előzményeinek könnyen olvasható nézete jeleníthető meg. A szállítói számla munkafolyamat-előzményeit közvetlenül a szállítói számláról lehet elérni. Ezért kevesebb kattintás szükséges az információ megtalálásához.
+A szállítói számla munkafolyamat-előzményeinek könnyen olvasható nézete jeleníthető meg. A szállítói számla munkafolyamat-előzményeit közvetlenül a szállítói számláról lehet elérni. Ezért kevesebb kattintás szükséges az információ megtalálásához. Ha a szervezet lehetővé tette az importált szállítói számlák automatikus elküldésének lehetőségét a munkafolyamatba, az importált számlák automatizálási előzményei meg vannak adva. Az automatizálási előzmények segítségével azonosíthatja az aktuális folyamatlépést, valamint a már elvégzett lépéseket. Ha egy lépés sikertelen, a rendszer részletes információkat nyújt a hiba okának megértéséhez.
 
 ## <a name="vendor-invoice-automation--analytics-and-metrics"></a>Szállítói számla automatizálása – Elemzések és mérőszámok
 
 A **Szállítói számla tétel** munkaterület lehetővé teszi, hogy az olyan szállítói számlákra összpontosítson, amelyek nem haladtak végig az automatikus folyamaton. A munkaterületen felsorolt csempék olyan szállítói számlákról tartalmaznak információkat, amelyeknek a munkafolyamat-rendszerbe küldése nem sikerült, importáltak vagy a terméknyugtákkal egyeztetettek. A Microsoft Power BI mérőszámokkal a Kötelezettségek vezetői áttekinthetik a szállítói számlák automatizálásának hatékonyságát is.
+
+## <a name="vendor-invoice-automation---resume-automation-processing-for-multiple-invoices"></a>Szállítói számla automatizálása – Több számla automatizálásának folytatása
+Ha egy importált számlát nem küld el sikeresen a munkafolyamatnak az automatizált folyamaton keresztül, a rendszer eltávolítja azt a további automatizált feldolgozásból. A kötelezettségek ügyintézője áttekintheti és szerkesztheti a számlát, mielőtt az automatikus folyamat újra beküldi azt a munkafolyamatba. Ha egy hiba oka több számla esetében is megoldható, újraindíthatja az automatikus folyamatot az **Automatikus számlafeldolgozás folytatása** lapon. 

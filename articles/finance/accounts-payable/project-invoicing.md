@@ -19,11 +19,11 @@ ms.author: roschlom
 ms.search.validFrom: 2020-07-06
 ms.dyn365.ops.version: AX 10.0.13
 ms.openlocfilehash: ba2f9d69295f9f5cfb4a2a791be781de32b50f46
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3976669"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4443930"
 ---
 # <a name="project-invoicing"></a>Projektszámlázás
 
@@ -57,7 +57,7 @@ A következő tranzakciókhoz tud létrehozni számlajavaslatot:
 -   Egy vevő által a projekt megkezdése előtt kifizetett összegek
 
 > [!NOTE]
-> Az **Erőforrás szerinti rendezés engedélyezése a projektszámla-ajánlat** funkció lehetővé teszi a projekt könyvelője számára, hogy rendezze az erőforrásra a számlázási tranzakcióhoz rendelkezésre álló projekteket, amikor létrehoz egy új projekt-számlázási javaslatot. A rendelkezésre álló projekttranzakciók megjelenítésére szolgáló rács külön mezőket tartalmaz az **Erőforrás-azonosító** és az **Erőforrás** lehetőséghez. Ezekkel a mezőkkel szűrheti és rendezheti az erőforrás nevét. Ez a funkció alapértelmezés szerint ki van kapcsolva. Ez a funkció a **Funkciókezelés** lapon engedélyezhető ( **Munkaterületek > Funkciókezelés** ). A funkció engedélyezésével kapcsolatos segítségért forduljon a rendszergazdához.
+> Az **Erőforrás szerinti rendezés engedélyezése a projektszámla-ajánlat** funkció lehetővé teszi a projekt könyvelője számára, hogy rendezze az erőforrásra a számlázási tranzakcióhoz rendelkezésre álló projekteket, amikor létrehoz egy új projekt-számlázási javaslatot. A rendelkezésre álló projekttranzakciók megjelenítésére szolgáló rács külön mezőket tartalmaz az **Erőforrás-azonosító** és az **Erőforrás** lehetőséghez. Ezekkel a mezőkkel szűrheti és rendezheti az erőforrás nevét. Ez a funkció alapértelmezés szerint ki van kapcsolva. Ez a funkció a **Funkciókezelés** lapon engedélyezhető (**Munkaterületek > Funkciókezelés**). A funkció engedélyezésével kapcsolatos segítségért forduljon a rendszergazdához.
 
 A rendszerben díjtranzakciókat is létre tud hozni egy számlajavaslatban. Lehetőség van az eladási ár, az óra, a költség, a cikk és a díjtranzakciók módosítására is. A számlajavaslat feladásakor a frissített árak és a tranzakciók hozzáadódnak a projektjelentésekhez és a tranzakció előzményeihez. 
 
@@ -111,7 +111,7 @@ Beállíthatja például az alábbi számlázási ütemezést:
 Ha készen állnak a számlázásra a mérföldkőhöz kapcsolódó kifizetések, a részszámlázott összegek számlázására vonatkozó eljárást kell használnia.
 
 ## <a name="vendor-invoicing"></a>Szállítói számlázás
-Ha megrendel egy cikket egy szállítótól és a cikket egy projekthez rendeli, a cikk kapcsán a beszerzési rendeléshez kiválasztott sortulajdonság határozza meg, hogy a rendszer kiszámlázza-e a beszerzett cikket egy vevő felé, vagy sem. Ha alapértelmezett sortulajdonságokat állít be, úgy azok a cikk kapcsán megjelennek a beszerzési rendeléssoron ( **Soradatok > Projekt > Sortulajdonság összegei** ). A sortulajdonságot kétféleképpen tudja módosítani:
+Ha megrendel egy cikket egy szállítótól és a cikket egy projekthez rendeli, a cikk kapcsán a beszerzési rendeléshez kiválasztott sortulajdonság határozza meg, hogy a rendszer kiszámlázza-e a beszerzett cikket egy vevő felé, vagy sem. Ha alapértelmezett sortulajdonságokat állít be, úgy azok a cikk kapcsán megjelennek a beszerzési rendeléssoron (**Soradatok > Projekt > Sortulajdonság összegei**). A sortulajdonságot kétféleképpen tudja módosítani:
 
 -   A projekt vevőjét számlázza a cikkhez. Ehhez állítsa a cikkre vonatkozó sortulajdonságot számlázandó értékre a beszerzési megrendelésben, majd állítsa ki a számlát a vevő felé a helyes projektszámlázási módszer alkalmazásával.
 -   A projekt vevőjét ne számlázza a cikkhez. Ezt úgy teheti meg, hogy a tételhez tartozó beszerzési rendeléssorban nem választja ki a **Számlázható** sortulajdonság lehetőséget. Ezután le tudja számlázni a beszerzési rendelést, és nincs további teendője ezzel kapcsolatosan.

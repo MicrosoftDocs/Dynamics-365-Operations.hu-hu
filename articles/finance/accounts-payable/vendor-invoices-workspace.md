@@ -18,11 +18,11 @@ ms.author: abruer
 ms.search.validFrom: 2020-09-21
 ms.dyn365.ops.version: 10.0.14
 ms.openlocfilehash: a4ba676d9b6df69cf0a91862bcc4d2837b7cb69e
-ms.sourcegitcommit: afc43699c0edc4ff2be310cb37add2ab586b64c0
+ms.sourcegitcommit: 0efa93f11847a2b75d13cd0a49e716c76130ec44
 ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 10/14/2020
-ms.locfileid: "4000795"
+ms.locfileid: "4444137"
 ---
 # <a name="vendor-invoice-entry-workspace"></a>Szállítói számla bevitele munkaterület
 
@@ -72,7 +72,7 @@ A **Saját munka** nézet **Függőben levő számlák összegzése** mozaikja �
 
 A **Szállítói számlák helyreállítása** lap használatához a funkciót be kell kapcsolni a Kötelezettségek paraméterei részben. Nyissa meg a **Kötelezettségek \> Kötelezettségek paraméterei** részt, majd a **Számla** lapon állítsa a **Szállítói számla helyreállításának engedélyezése** beállítást **Igen** értékre.
 
-Amikor a funkció be van kapcsolva, a munkaterületen három csempe együtt szerepel a munkaterület **Naplók** nevű szakaszában. A csempék címei: **Naplók** , **Naplók – Hozzám rendelve** és **Számlagyűjtő**. 
+Amikor a funkció be van kapcsolva, a munkaterületen három csempe együtt szerepel a munkaterület **Naplók** nevű szakaszában. A csempék címei: **Naplók**, **Naplók – Hozzám rendelve** és **Számlagyűjtő**. 
 
 A **Függőben levő számlák összegzése** szakaszá adatai arra a vállalatra szerepelnek, amely a bejelentkezéskori alapértelmezett vállalat.
 
@@ -102,11 +102,11 @@ A **Beszerzési rendelési keresése** rács **Keresés** mezőjével keresheti 
 
 ### <a name="related-information"></a>Kapcsolódó információ
 
-A feladott számlákkal kapcsolatos információkat a munkaterület jobb oldalán található hivatkozásokkal tekintheti meg. Ilyen hivatkozások a **Nyitott szállítói számlák** , a **Számlázási napló** és a **Számlázási előzmények és egyeztetési részletek**. A **Szállítók** szakaszban hozzáférhet egy szűrt listához, amely megjeleníti az összes várakoztatott szállítót, vagy használhatja az **Összes szállító** hivatkozást is. Elérhetők ezenkívül az **Összes beszerzési rendelés** és az **Előlegek megnyitása** hivatkozások.
+A feladott számlákkal kapcsolatos információkat a munkaterület jobb oldalán található hivatkozásokkal tekintheti meg. Ilyen hivatkozások a **Nyitott szállítói számlák**, a **Számlázási napló** és a **Számlázási előzmények és egyeztetési részletek**. A **Szállítók** szakaszban hozzáférhet egy szűrt listához, amely megjeleníti az összes várakoztatott szállítót, vagy használhatja az **Összes szállító** hivatkozást is. Elérhetők ezenkívül az **Összes beszerzési rendelés** és az **Előlegek megnyitása** hivatkozások.
 
 ### <a name="analytics--all-companies-page"></a>Elemzés – az összes vállalat oldal
 
-Amikor az **Importált számlák automatikus elküldése a munkafolyamat-rendszerbe** beállítás értéke a **Kötelezettségek paraméterei** lapon **Igen** , megtekintheti az automatizálási elemzéseket. Az **Elemzésel – az össze vállalat** lap fontos metrikákat tartalmaz, például a jóváhagyó és a vállalat által jóváhagyott szállítói számlákat. Ezen a lapon öt jelentéslap található. Egyik lapon egy áttekintés található, a többi lap a Kötelezettségek automatizálás metrikáival kapcsolatos részletes adatokat tartalmaz.
+Amikor az **Importált számlák automatikus elküldése a munkafolyamat-rendszerbe** beállítás értéke a **Kötelezettségek paraméterei** lapon **Igen**, megtekintheti az automatizálási elemzéseket. Az **Elemzésel – az össze vállalat** lap fontos metrikákat tartalmaz, például a jóváhagyó és a vállalat által jóváhagyott szállítói számlákat. Ezen a lapon öt jelentéslap található. Egyik lapon egy áttekintés található, a többi lap a Kötelezettségek automatizálás metrikáival kapcsolatos részletes adatokat tartalmaz.
 
 Az alábbi táblázat mutatja be az egyes jelentésoldalakon rendelkezésre álló megjelenítéseket.
 
