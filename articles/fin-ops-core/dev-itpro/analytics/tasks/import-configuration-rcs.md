@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-07-28
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ea2bfd2514be666d05165410ca27041a86464715
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: b591df3d384e8dc59646ebb9d0205001db040a55
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3143223"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684187"
 ---
 # <a name="er-import-configurations-from-rcs"></a>(ER) Konfigurációk importálása RCS-ből
 
@@ -31,28 +30,28 @@ A következő lépések leírják, hogy a Rendszergazda vagy az Elektronikus jel
 
 1. Lépjen a **Szervezeti adminisztráció** > **Munkaterületek** > **Elektronikus jelentés** részre. 
 2. Ellenőrizze, hogy a Litware, Inc. mintavállalat esetében rendelkezésre áll és **aktívként** van megjelölve a konfigurációszolgáltató. Ha nem látja a konfigurációszolgáltatót, végezze el a [Konfigurációszolgáltatók létrehozása és megjelölése aktívként](er-configuration-provider-mark-it-active-2016-11.md) témakör lépéseit. 
-3. Ha nincs RCS környezete a vállalathoz, kattintson a **Regulatory services – Konfiguráció** külső hivatkozásra, és kövesse az RCS-környezet létrehozására vonatkozó instrukciókat. 
-4. Kattintson az **Elektronikus jelentéskészítés paraméterei** elemre. 
-5. Kattintson az **RCS** lapra. 
+3. Ha nincs RCS környezete a vállalathoz, válassza a **Regulatory services – Konfiguráció** külső hivatkozást, és kövesse az RCS-környezet létrehozására vonatkozó instrukciókat. 
+4. Válassza az **Elektronikus jelentéskészítés paraméterei** elemet. 
+5. Válassza az **RCS** fület. 
 6. Ha a RCS környezet már ki lett építve a vállalatnál, akkor a lapon megjelenő URL-címen érheti el. 
 7. Zárja be a lapot. 
 
 ## <a name="register-a-new-er-repository"></a>Új ER-tárház regisztrálása. 
 1. A listában jelölje meg a kiválasztott sort. 
 2. Válassza ki a Litware, Inc. szolgáltatót. 
-3. Kattintson a Tárházak gombra. 
-4. A Hozzáadása gombra kattintva nyissa meg a legördülő párbeszédpanelt. 
+3. Válassza ki a Tárházak lehetőséget. 
+4. A Hozzáadás gombra kattintva nyissa meg a legördülő párbeszédpanelt. 
 5. A Konfiguráció tárházának típusa mezőbe írja be az „RCS” értéket. 
-6. Kattintson a Tárház létrehozása lehetőségre. 
+6. Válassza a Tárház létrehozása lehetőséget. 
 7. Az RCS környezet megjelenítése mezőben adjon meg vagy válasszon ki egy értéket. 
-8. Válassza ki a kívánt RCS-példányt. Ne feledje, hogy több is lehet. 
-9. Kattintson az OK gombra. 
+8. Válassza ki a kívánt RCS-példányt. Több ilyen is lehet. 
+9. Válassza ki az OK lehetőséget. 
 
 ## <a name="import-er-configurations-from-rcs-based-repository"></a>ER-konfigurációk importálása az RCS-alapú tárházból
-1. Kattintson a **Szűrők megjelenítése** pontra. 
+1. Válassza ki a **Szűrők megjelenítése** elemet. 
 2. Adja meg az „RCS” szűrőértéket a **Név** mezőben az **ezzel kezdődik** szűrési operátor használatával. 
-3. Amikor megnyitja a kiválasztott tárházat a **Csatlakozás a Regulatory Configuration Services szolgáltatáshoz** oldalon, kattintson az **Ide kattintva csatlakozhat a Regulatory Configuration Services szolgáltatáshoz** hivatkozásra. 
-4. Kattintson a **Megnyitás** gombra. 
-5. Kattintson a **Bezárás** gombra. 
-6. Válassza ki az ER-konfiguráció kívánt verzióját, és kattintson az **Importálás** lehetőségre az aktuális példányba való behúzáshoz.
+3. Amikor megnyitja a kiválasztott tárházat a **Csatlakozás a Regulatory Configuration Services szolgáltatáshoz** oldalon, válassza az **Ide kattintva csatlakozhat a Regulatory Configuration Services szolgáltatáshoz** hivatkozást. 
+4. Válassza ki a **Megnyitás** lehetőséget. 
+5. Válassza **Bezárás** lehetőséget. 
+6. Válassza ki az ER-konfiguráció kívánt verzióját, és válassza az **Importálás** lehetőséget az aktuális példányba való behúzáshoz.
 

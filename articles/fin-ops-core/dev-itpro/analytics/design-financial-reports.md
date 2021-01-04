@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: FinancialReportingSetup
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 10814
 ms.assetid: cd5f6483-c09b-4c2d-9336-d22eb6ab6e4f
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 079439d95597056919d5a8c73b829d79a3b02211
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 97895081293d9ee5a82a718e0644bebdaa0f2777
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002543"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4686245"
 ---
 # <a name="view-and-design-financial-reports"></a>Pénzügyi jelentések megtekintése és tervezése
 
@@ -164,7 +163,7 @@ Ebben a gyakorlatban meglévő alapértelmezett jelentést fog módosítani. Fel
 14. Zárja be a **Mérleg és bevétel-kimutatás egymás mellett**.
 15. Zárja be a **Jelentéstervező** ablakot.
 
-## <a name="exercise-5-create-a-sidebyside-departmental-report"></a>5. gyakorlat: Egymás melletti részlegjelentés létrehozása
+## <a name="exercise-5-create-a-side-by-side-departmental-report"></a>Gyakorlat 5: Egymás mellett megyei jelentés létrehozása
 A következő gyakorlatban fog létrehozni új jelentés. A jelentés akkor egymás mellett megyei eredménykimutatásban. Használni egy korábbi sordefiníciót fog, de új jelentésdefiníciót és új oszlopdefiníció használó dimenzió szűrők létrehozása. A Pénzügyi jelentések listától indulunk.
 
 1. Ugrás a **Pénzügyi jelentések** pontra a Lekérdezések és jelentések rész alatt a Főkönyvben.
@@ -197,4 +196,4 @@ A következő gyakorlatban fog létrehozni új jelentés. A jelentés akkor egym
 
 [Pénzügyi jelentések megtekintése](../../../finance/general-ledger/view-financial-reports.md)
 
-[Dynamics Pénzügyi jelentések blog](https://blogs.msdn.com/b/dynamics_financial_reporting/)
+[Dynamics 365 Finance blog](https://community.dynamics.com/365/financeandoperations/b/dynamics-365-finance-blog)

@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: ERSolutionTable, ERFormatBaselineTable, ERFormatMappingRunLogTable, ERParameters
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: be641e1b2f90f4d19f7ed15e47413c0aa43d5073
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 0a2586afd56eef0f953454ad246ff3647a5b09d1
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771444"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681448"
 ---
 # <a name="automate-testing-with-electronic-reporting"></a>Elektronikus jelentéskészítéssel folytatott tesztelés automatizálása
 
@@ -60,7 +59,7 @@ A funkcionális kiemelt felhasználók futtathatják a felhasználói elfogadás
 Mielőtt teljesítené az ebben a témakörben ismertetett feladatokat, teljesítenie kell a következő előfeltételeket:
 
 - A tesztautomatizálást támogató topológia alkalmazása. A **rendszeradminisztrátori** szerepkörhöz hozzáféréssel kell rendelkeznie az ehhez a topológiához tartozó példányhoz. Ennek a topológiának tartalmaznia kell az ebben a példában használt demóadatokat. A további tudnivalókért lásd: [A folyamatos build- és tesztautomatizálást támogató környezet telepítése és használata](../perf-test/continuous-build-test-automation.md).
-- A felhasználói elfogadási és az integrációs tesztek automatikus futtatásához telepítenie kell az RSAT-t a használt topológiában, és a megfelelő módon konfigurálnia kell. A RSAT telepítésévelés konfigurálásával, illetve a Finance and Operations alkalmazások és az Azure DevOps megoldással való együttműködés konfigurálásával kapcsolatban a következő témakör tartalmaz további tájékoztatást: [Regression Suite Automation Tool](https://www.microsoft.com/download/details.aspx?id=57357). Ügyeljen az eszköz használatára vonatkozó előfeltételekre. A következő ábrán egy példa látható az RSAT-beállításokra. A kék téglalap belefoglalja azokat a paramétereket, amelyek a Azure DevOps hozzáférést határozzák meg. A zöld téglalap a példányhoz való hozzáférést meghatározó paramétereket foglalja magában.
+- A felhasználói elfogadási és az integrációs tesztek automatikus futtatásához telepítenie kell az RSAT-t a használt topológiában, és a megfelelő módon konfigurálnia kell. A RSAT telepítésével konfigurálásával és a Finance and Operations alkalmazásokkal és az Azure DevOps megoldással való együttműködés konfigurálásával kapcsolatban a következő témakör tartalmaz további tájékoztatást: [Regression Suite Automation Tool](https://www.microsoft.com/download/details.aspx?id=57357). Ügyeljen az eszköz használatára vonatkozó előfeltételekre. A következő ábrán egy példa látható az RSAT-beállításokra. A kék téglalap belefoglalja azokat a paramétereket, amelyek a Azure DevOps hozzáférést határozzák meg. A zöld téglalap a példányhoz való hozzáférést meghatározó paramétereket foglalja magában.
 
     ![RSAT-beállítások](media/GER-Configure.png "Az RSAT-beállítások párbeszédpaneljének képernyőképe")
 
@@ -90,7 +89,7 @@ Mielőtt teljesítené az ebben a témakörben ismertetett feladatokat, teljesí
     2. Válassza ki a kifizetések **Elektronikus** módszerét.
     3. A kiválasztott fizetési mód konfigurálása annak érdekében, hogy a program a **BACS (UK)** által korábban letöltött ER-formátumot használja a szállítói kifizetések feldolgozására.
 
-        1. Adja meg a **Fájlformátumok** gyorslap **Általános elektronikus export formátum** beállítását**Igen** értékre.
+        1. Adja meg a **Fájlformátumok** gyorslap **Általános elektronikus export formátum** beállítását **Igen** értékre.
         2. Az **Exportformátum konfigurációja** mezőben válassza a következőt: **BACS (UK)**.
 
     ![Fizetési módok oldala](media/GER-APParameters.png "A fizetési módok lapjának képernyőképe")
@@ -222,12 +221,12 @@ Funkcionális kiemelt felhasználóként a saját lépéseket rögzítheti a sz�
 3. Válassza a **Rögzített anyag lejátszása** elemet.
 4. Válassza a **Megnyitás erről a PC-ről** elemet.
 5. Válassza a **Tallózás** lehetőséget, majd válassza a helyben mentett **Prepare\\Recording.xml** fájlt.
-6. Válassza az**Indítás** lehetőséget.
+6. Válassza az **Indítás** lehetőséget.
 7. Válassza ki folyamatosan a **Következő függőben lévő lejátszási lépés** elemet addig, amíg a rögzítés minden lépését le nem játszották.
 
 A feladatrögzítés a következő műveleteket hajtja végre:
 
-1. A feldolgozott kifizetési sor állapotának **Nincs**értékre állítása.
+1. A feldolgozott kifizetési sor állapotának **Nincs** értékre állítása.
 
     ![3 – 4. lépés a feladatok rögzítésére](media/GER-Recording1Review1.png "A 3 – 4. lépés a feladatok rögzítésére vonatkozóan képernyőkép")
 
@@ -248,7 +247,7 @@ Javasoljuk, hogy játsszon (és szükség szerint szerkessze) a **Process\\Recor
 3. Válassza a **Rögzített anyag lejátszása** elemet.
 4. Válassza a **Megnyitás erről a PC-ről** elemet.
 5. Válassza a **Tallózás** lehetőséget, majd válassza a helyben mentett **Process\\Recording.xml** fájlt.
-6. Válassza az**Indítás** lehetőséget.
+6. Válassza az **Indítás** lehetőséget.
 7. Válassza ki folyamatosan a **Következő függőben lévő lejátszási lépés** elemet addig, amíg a rögzítés minden lépését le nem játszották.
 
 A feladatrögzítés a következő műveleteket hajtja végre:

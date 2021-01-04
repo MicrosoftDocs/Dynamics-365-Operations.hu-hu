@@ -10,23 +10,24 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.custom: 21821
 ms.assetid: 31019808-4cbf-47d7-b1ba-d791db4281ae
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a1d14003ff7595ceaa78b42f69cf1927fbd8157d
-ms.sourcegitcommit: 1329b3b98854422c4c3773ede44a5cefa7d07085
+ms.openlocfilehash: 7ce6b3fb5217ad5d5228841a91d0b0406c305969
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "4040122"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679956"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>Eltávolított vagy elavult funkciók a korábbi kiadásokban
 
 [!include [banner](../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 > [!IMPORTANT]
 > Ez a témakör már nem frissül. Ha meg szeretné tekinteni az Finance and Operations alkalmazások modulból eltávolított vagy elavult szolgáltatások aktuális listáját, keressen rá az **„Eltávolított és elavult szolgáltatások”** tartalomra, amely az éppen használt alkalmazásra vonatkozik.
@@ -266,7 +267,7 @@ A beágyazott fő teljesítménymutatók (KPI) modellezhetők a Visual Studio re
 
 | &nbsp;  |&nbsp;  |
 |------------|--------------------|
-| **Elavulás/eltávolítás oka** | Lehetőséges, hogy a táblák metaadatdefiníciói érvénytelen mezőhivatkozásokat tartalmazó mezőcsoportokat tartlmaznak. Telepítés esetén ez hibákat okozhat futásidőben a pénzügyi jelentésekben és az SQL Server Reporting Services (SSRS) szolgálatásokban. A probléma jelenleg a *fordítói figyelmeztetés* kategóriába tartozik, és nem *hiba* , tehát, hogy a telepíthető csomag létrehozása és a telepítés végrehajtható a probléma kijavítása nélkül. A probléma megoldásához:<br><br>1. Távolítsa el az érvénytelen mezőhivatkozást a tábla a mezőcsoport-definíciójából.<br><br>2. Fordítsa újra.<br><br>3. Győződjön meg arról, hogy minden hiba vagy figyelmeztetés javítva lett. |
+| **Elavulás/eltávolítás oka** | Lehetőséges, hogy a táblák metaadatdefiníciói érvénytelen mezőhivatkozásokat tartalmazó mezőcsoportokat tartlmaznak. Telepítés esetén ez hibákat okozhat futásidőben a pénzügyi jelentésekben és az SQL Server Reporting Services (SSRS) szolgálatásokban. A probléma jelenleg a *fordítói figyelmeztetés* kategóriába tartozik, és nem *hiba*, tehát, hogy a telepíthető csomag létrehozása és a telepítés végrehajtható a probléma kijavítása nélkül. A probléma megoldásához:<br><br>1. Távolítsa el az érvénytelen mezőhivatkozást a tábla a mezőcsoport-definíciójából.<br><br>2. Fordítsa újra.<br><br>3. Győződjön meg arról, hogy minden hiba vagy figyelmeztetés javítva lett. |
 | **Felváltotta másik szolgáltatás?**   | A jövőben ez a fordítói figyelmeztetés hibaüzenetre lesz módosítva. |
 | **Érintett területek**         | Visual Studio fejlesztőeszközök |
 | **Telepítési beállítás**              | Összes |
@@ -374,12 +375,12 @@ Ezt a két jelentést már nem támogatja a Finance and Operations. Ehelyett a *
 | **Állapot**                       | Elavult: A két jelentés menüpontjai el lettek távolítva a 7.3 verzióban. A jelentések kódja azonban a termékben marad. A terv szerint valamelyik jövőbeli programverzióban eltávolítjuk a kódot. |
 
 ### <a name="power-bi-content-packs-available-on-appsource"></a>Power BI tartalom csomagok elérhetők az AppSource felületén
-A **Költségkezelés** , **Pénzügyi teljesítmény** és **Retail Channel Performance** tartalomcsomagok, amelyek elérhetők a [Microsoft AppSource](https://appsource.microsoft.com) webhelyen, a Microsoft Power BI termékfrissítései miatt elavulttá válnak. A rendszerfelügyeleti képernyők, amelyeknek a segítségével ezeket a tartalmi csomagokat telepítették a PowerBI.com webhelyre, szintén elavultak a Finance and Operations megoldásban.
+A **Költségkezelés**, **Pénzügyi teljesítmény** és **Retail Channel Performance** tartalomcsomagok, amelyek elérhetők a [Microsoft AppSource](https://appsource.microsoft.com) webhelyen, a Microsoft Power BI termékfrissítései miatt elavulttá válnak. A rendszerfelügyeleti képernyők, amelyeknek a segítségével ezeket a tartalmi csomagokat telepítették a PowerBI.com webhelyre, szintén elavultak a Finance and Operations megoldásban.
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | A Microsoft Power BI termékfrissítései. |
-| **Felváltotta másik szolgáltatás?**   | A **Költségkezelés** , **Pénzügyi teljesítmény** és **Retail Channel Performance** tartalomcsomagok, amelyek elérhetők a [AppSource](https://appsource.microsoft.com) webhelyen, olyan analitikus alkalmazásokra cserélődnek le, amelyek az adatbázis szintjén tesznek lehetővé megoldásintegrációt. Az analitikai alkalmazásokkal kapcsolatos további tudnivalókat lásd: [Beágyazott Power BI-munkaterületek](../../dev-itpro/analytics/embed-power-bi-workspaces.md).    |
+| **Felváltotta másik szolgáltatás?**   | A **Költségkezelés**, **Pénzügyi teljesítmény** és **Retail Channel Performance** tartalomcsomagok, amelyek elérhetők a [AppSource](https://appsource.microsoft.com) webhelyen, olyan analitikus alkalmazásokra cserélődnek le, amelyek az adatbázis szintjén tesznek lehetővé megoldásintegrációt. Az analitikai alkalmazásokkal kapcsolatos további tudnivalókat lásd: [Beágyazott Power BI-munkaterületek](../../dev-itpro/analytics/embed-power-bi-workspaces.md).    |
 | **Érintett területek**         | Költségkezelés, pénzügy és kiskereskedelem                                                                                               |
 | **Telepítési beállítás**              | Csak felhő (A PowerBI.com webhellyel való integráció nem támogatott a helyszíni telepítések esetében.)                                                                                                            |
 | **Állapot**                         | Elavult: A funkció eltávolításának cél időkerete 2018 2. negyedéve.    |
@@ -391,7 +392,7 @@ A normál adatkezelési kezelőfelület a régebbi kezelőfelület, amely a felh
 | &nbsp;  | &nbsp; |
 |------------------|-------------------------|
 | **Elavulás/eltávolítás oka** | Befektetünk az új felhasználói élmény nyújtásában az új felhasználói felület segítségével.             |
-| **Felváltotta másik szolgáltatás?**   | Az új felhasználói felület neve *Bővített nézet* , és a régi felhasználói felületet váltja le.            |
+| **Felváltotta másik szolgáltatás?**   | Az új felhasználói felület neve *Bővített nézet*, és a régi felhasználói felületet váltja le.            |
 | **Érintett területek**         | Adatkezelési munkaterület                                                     |
 | **Telepítési beállítás**              | Mind                                                                           |
 | **Állapot**                         | Elavult: A funkció eltávolításának cél időkerete 2018 2. negyedéve. |
@@ -712,7 +713,7 @@ Emberi Erőforrások Bérlistaadatai
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | Ezt a funkciót az alapvető Bérlista és az Emberi Erőforrások lapokok váltotta fel.  |
-| **Felváltotta másik szolgáltatás?**   | A **Juttatások** és a **Bevételek** oldalakon, valamint az egyéb kapcsolódó, korábban az amerikai Bérszámfejtésben levő oldalakon újrakonfigurálást végeztünk, így ezek most az Emberi erőforrások alapkonfiguráció részei, ezért a külső bérlisták feldolgozását segítik. Ez a funkció a **Humán Erőforrások 1** \> **Bérlista** -konfigurációs kulcs használatával érhető el. |
+| **Felváltotta másik szolgáltatás?**   | A **Juttatások** és a **Bevételek** oldalakon, valamint az egyéb kapcsolódó, korábban az amerikai Bérszámfejtésben levő oldalakon újrakonfigurálást végeztünk, így ezek most az Emberi erőforrások alapkonfiguráció részei, ezért a külső bérlisták feldolgozását segítik. Ez a funkció a **Humán Erőforrások 1** \> **Bérlista**-konfigurációs kulcs használatával érhető el. |
 | **Érintett területek**         | Emberi Erőforrások, Bérlista   |
 | **Állapot**                         | Eltávolítva a Dynamics 365 for Operations 1611 verziójától kezdve.    |
 
@@ -1157,7 +1158,7 @@ Előjegyzés létrehozás nem lehetséges köteg használatával, azonban a felh
 
 ### <a name="gl-ssrs-reports"></a>GL SSRS-jelentések
 
-A következő menüpontokat tartalmazó jelentések eltávolításra kerültek: **Összegző főkönyvi kivonat** , **Részletes főkönyvi kivonat** , **Számlatükör** , **Könyvvizsgálati ellenőrzés** , **Egyenlegek** és **Egyenleglista**.
+A következő menüpontokat tartalmazó jelentések eltávolításra kerültek: **Összegző főkönyvi kivonat**, **Részletes főkönyvi kivonat**, **Számlatükör**, **Könyvvizsgálati ellenőrzés**, **Egyenlegek** és **Egyenleglista**.
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|

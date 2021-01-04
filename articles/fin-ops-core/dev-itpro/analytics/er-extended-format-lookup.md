@@ -11,25 +11,24 @@ ms.technology: ''
 ms.search.form: ERSolutionTable, ERWorkspace
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 97423
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 28bdd02c25db27536a489f9e8ab2a91a5ca0f09c
-ms.sourcegitcommit: b92c3e1b3403d0455fc4e0bf9132d6bc0d7aba5e
+ms.openlocfilehash: f7c6cb99a6c5cc6fb92ce52041296af2d0c6722e
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3138860"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679486"
 ---
 # <a name="allow-users-to-set-up-an-er-format-reference-inquiring-a-format-from-the-global-repository"></a>A felhasználók számára a Globális tárházban tárolt formátumot lekérő formátumreferencia beállításának engedélyezése
 
 [!include [banner](../includes/banner.md)]
 
-Az [Elektronikus jelentéstételi](general-electronic-reporting.md) (ER) keretrendszer segítségével a különböző országok/régiók jogi követelményeinek megfelelően konfigurálható az elektronikus dokumentumok [formátuma](general-electronic-reporting.md#FormatComponentOutbound). Az ER-keretrendszerrel ezenfelül konfigurálhatja a bejövő dokumentumok elemzésének [formátumát](general-electronic-reporting.md#FormatComponentInbound), és a dokumentumokból származó adatokat hozzáfűzheti az alkalmazás adataihoz, vagy frissítheti azokat. Mindegyik formátum használható a Dynamics 365 Finance példányában a bejövő vagy kimenő üzleti dokumentumok bizonyos üzleti folyamatok részeként történő kezeléséhez. 
+Az [Elektronikus jelentéstételi](general-electronic-reporting.md) (ER) keretrendszer segítségével a különböző országok/régiók jogi követelményeinek megfelelően konfigurálható az elektronikus dokumentumok [formátuma](general-electronic-reporting.md#FormatComponentOutbound). Az ER-keretrendszerrel ezenfelül konfigurálhatja a bejövő dokumentumok elemzésének [formátumát](general-electronic-reporting.md#FormatComponentInbound), és a dokumentumokból származó adatokat hozzáfűzheti az alkalmazás adataihoz, vagy frissítheti azokat. Mindegyik formátum használható a Dynamics 365 Finance példányában a bejövő vagy kimenő üzleti dokumentumok bizonyos üzleti folyamatok részeként történő kezeléséhez.
 
 Általában meg kell adnia, hogy egy bizonyos üzleti folyamatban milyen ER formátumot kell használni. Ehhez válasszon ki egy adott ER-formátumot a keresési mezőben, amely az üzleti folyamatspecifikus paraméterek részeként be van állítva. Ezeket a keresési mezőket általában az ER-keretrendszer megfelelő API-ja segítségével valósítják meg. További tudnivalókért láss: [ER-keretrendszer API – a formátumleképezési keresés megjelenítéséhez szükséges kód](er-apis-app73.md#code-to-display-a-format-mapping-lookup).
 
@@ -55,13 +54,13 @@ Amikor az **Importálás a globális tárházból** gyorslapjon kijelöl egy ER-
 
 [![Külkereskedelmi paraméterek oldal](./media/ER-ExtLookup-FormatImport.png)](./media/ER-ExtLookup-FormatImport.png)
 
-Ezt követően, ha az importálás sikeresen befejeződött, a program a keresési mezőben tárolja az importált értékre mutató hivatkozást. Ne feledje, hogy amikor első alkalommal nyitja meg a GR-t, követnie kell a megadott hivatkozást, hogy feliratkozzon a GR-tárolóhoz való hozzáférés kezelésére használt [Regulatory Configuration Service](https://aka.ms/rcs) szolgáltatásra (RCS).
+Ezt követően, ha az importálás sikeresen befejeződött, a program a keresési mezőben tárolja az importált értékre mutató hivatkozást. Amikor első alkalommal nyitja meg a GR-t, követnie kell a megadott hivatkozást, hogy feliratkozzon a GR-tárolóhoz való hozzáférés kezelésére használt [Regulatory Configuration Service](https://aka.ms/rcs) szolgáltatásra (RCS).
 
 [![Külkereskedelmi paraméterek oldal](./media/ER-ExtLookup-RepoSignUp.png)](./media/ER-ExtLookup-RepoSignUp.png)
 
 Alapértelmezetten az **Importálás a globális tárházból** gyorslap a teljesítmény javítása érdekében a GR-tartalom alapján automatikusan létrehozott ideiglenes tárolóból származó ER-formátumok listáját mutatja. Ez akkor fordulhat elő, ha az **Importálás a globális tárházból** gyorslapot első alkalommal nyitja meg, ami több másodpercig is eltarthat.
 
-Ha nem látja a szükséges ER-formátumot az **Importálás a globális tárházból** gyorslapon, de biztos abban, hogy ez az ER-formátum a GR-területen található, akkor jelölje be a **Szinkronizálás** beállítást. Ez frissíti az ideiglenes tárolót, és szinkronizálja azt a GR aktuális tartalmával.
+Ha nem látja a szükséges ER-formátumot az **Importálás a globális tárházból** gyorslapon, de biztos abban, hogy ez az ER-formátum a GR-területen található, akkor jelölje be a **Szinkronizálás** beállítást. Ez a lehetőség frissíti az ideiglenes tárolót, és szinkronizálja azt a GR aktuális tartalmával.
 
 ## <a name="feature-activation"></a>Funkció aktiválása
 

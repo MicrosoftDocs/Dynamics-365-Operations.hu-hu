@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: ERWorkspace, ERVendorPart, ERSolutionTable, ERSolutionCreateDropDialog, EROperationDesigner, ERComponentTypeDropDialog
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 52bc276a4a88971a7214fa09087cb1323b91aaf5
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 17fe6d772040c73959685920743225c128421951
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3143273"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684260"
 ---
 # <a name="er-upgrade-your-format-by-adopting-a-new-base-version-of-that-format"></a>ER – A formátum frissítése ezen formátum új alapverziójának elfogadásával
 
@@ -56,7 +55,7 @@ Ehhez a Proseware, Inc. rendszernek létre kell hoznia egy olyan konfigurációt
 3. Kattintson erre: Beállítás aktívként.
 4. Kattintson a Jelentéskészítés konfigurációi lehetőségre.
 5. A fastruktúrában bontsa ki a „Kifizetések (egyszerűsített modell)” lehetőséget.
-6. A fastruktúrában válassza ki a „Kifizetések (egyszerűsített modell\BACS (UK fiktív)”.
+6. A fastruktúrában válassza ki a „Kifizetések (egyszerűsített modell)\BACS (UK fiktív)”.
 
     Válassza ki a BACS (UK fiktív) konfigurációt a Litware, Inc. rendszerből. A Proseware, Inc. az 1.1-es verziót használja alapként az egyéni verzióra vonatkozóan.  
 
@@ -134,7 +133,7 @@ A tényleges szolgáltatásnyújtás kapcsolódó folyamataiban a Proseware, Inc
 3. Kattintson erre: Beállítás aktívként.
 4. Kattintson a Jelentéskészítés konfigurációi lehetőségre.
 5. A fastruktúrában bontsa ki a „Kifizetések (egyszerűsített modell)” lehetőséget.
-6. A fastruktúrában válassza ki a „Kifizetések (egyszerűsített modell\BACS (UK fiktív)”.
+6. A fastruktúrában válassza ki a „Kifizetések (egyszerűsített modell)\BACS (UK fiktív)”.
 
     A vázlatverzióval rendelkező Litware, Inc. szolgáltató BACS (UK fiktív) be van jelölve a módosítások bevezetéséhez az új országspecifikus követelmények támogatására.  
 
@@ -198,8 +197,8 @@ Ehhez a Proseware, Inc. rendszernek meg kell változtatnia az egyéni konfigurá
 3. Kattintson erre: Beállítás aktívként.
 4. Kattintson a Jelentéskészítés konfigurációi lehetőségre.
 5. A fastruktúrában bontsa ki a „Kifizetések (egyszerűsített modell)” lehetőséget.
-6. A fastruktúrában bontsa ki a „Kifizetések (egyszerűsített modell\BACS (UK fiktív)” lehetőséget.
-7. A fastruktúrában válassza ki a „Kifizetések (egyszerűsített modell\BACS (UK fiktív)\BACS (UK fiktív egyéni)” lehetőséget.
+6. A fastruktúrában bontsa ki a „Kifizetések (egyszerűsített modell)\BACS (UK fiktív)” lehetőséget.
+7. A fastruktúrában válassza ki a „Kifizetések (egyszerűsített modell)\BACS (UK fiktív)\BACS (UK fiktív egyéni)” lehetőséget.
 
     Válassza ki a Proseware, Inc. rendszer BACS (Egyesül Királyság fiktív egyéni) konfigurációját  
 
@@ -242,5 +241,5 @@ Ehhez a Proseware, Inc. rendszernek meg kell változtatnia az egyéni konfigurá
     Vegye figyelembe, hogy a rendszer a létrehozott konfigurációt teljesített 1.2.2-es verzióként menti: az alap BACS (UK fiktív egyéni) formátum 2-es verziója, amely a Kifizetések (egyszerűsített modell) adatmodell 1-es verzióján alapuló alap BACS (UK fiktív) formátum 2-es verzióján alapul.  
 
 ## <a name="test-the-customized-format-for-payment-files-generation"></a>A testreszabott formátum tesztelése a Kifizetési fájlok létrehozásához
-Hajtsa végre a „Hozzon létre elektronikus dokumentumokat a kifizetésekre vonatkozóan a létrehozott formátum segítségével” eljárásban szereplő lépéseket a párhuzamos Finance and Operations szakaszban. Válassza ki a létrehozott „BACS (UK fiktív egyéni)” formátumát az elektronikus fizetési módszer paramétereiben. Győződjön meg arról, hogy a létrehozott kifizetési fájl tartalmazza a Proseware, Inc. által a közelmúltban bevezetett XML-csomópontot, amely az IBAN-számlakódot a regionális követelményeknek megfelelően jeleníti meg. A fájlnak tartalmaznia kell a közelmúltban a Litware, Inc. által bevezetett XML-csomópontot is, amely a SWIFT-bankkódot az ország előírásainek megfelelően jeleníti meg.  
+Hajtsa végre a „Hozzon létre elektronikus dokumentumokat a kifizetésekre vonatkozóan a létrehozott formátum segítségével” eljárásban szereplő lépéseket a párhuzamos Finance and Operations szakaszban. Válassza ki a létrehozott „BACS (UK fiktív egyéni)” formátumát az elektronikus fizetési módszer paramétereiben. Győződjön meg arról, hogy a létrehozott kifizetési fájl tartalmazza a Proseware, Inc. által a közelmúltban bevezetett XML-csomópontot, amely az IBAN-számlakódot a regionális követelményeknek megfelelően jeleníti meg. A fájlnak tartalmaznia kell a közelmúltban a Litware, Inc. által bevezetett XML-csomópontot is, amely a SWIFT-bankkódot az ország előírásainak megfelelően jeleníti meg.  
 

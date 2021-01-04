@@ -3,7 +3,7 @@ title: Jelentkezők kiválasztására szolgáló eszközök azonosítása és re
 description: Nehéz megfelelően képzett személyeket találni bizonyos pozíciók betöltésére, különösen, ha az a pozíció különleges képességeket igényel.
 author: andreabichsel
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 11/20/2020
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: HcmSkillMapping, HcmJobLookup, HcmSkillMappingLine, HcmPersonCertificate, CCHTMLPrintPreview
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2d8a05ad7f100e6c54ccf1ecf7b76509cf44dbb8
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: f4e7ed6feaa1b5b27fcfc0ec99a2d75415fe7d6a
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3143949"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693064"
 ---
 # <a name="identify-and-deploy-candidate-selection-tools"></a>Jelentkezők kiválasztására szolgáló eszközök azonosítása és rendszerbe állítása
 
@@ -39,8 +38,8 @@ Nehéz megfelelően képzett személyeket találni bizonyos pozíciók betölté
 7. Kattintson a Munkára.
 8. A Munka mezőben adjon meg vagy válasszon ki egy értéket.
 9. Kattintson az OK gombra.
-10. Bontsa ki tartomány gyorslapot, és adjon meg további információkat, például részleg.
-11. Bontsa ki a tanúsítványok gyorslapot a diplomák megjelenítéséhez és szerkesztéséhez.
+10. Bontsa ki Tartomány gyorslapot, és adjon meg további információkat, például részleg.
+11. Bontsa ki a Tanúsítványok gyorslapot a diplomák megjelenítéséhez és szerkesztéséhez.
 12. Bontsa ki a Szakértelmek gyorslapot a Szakértelmek megjelenítéséhez és szerkesztéséhez.
 13. Bontsa ki a Képzettség gyorslapot a képzettségi kritériumok megjelenítéséhez és szerkesztéséhez.
 14. Kattintson a végrehajtásra.
@@ -49,7 +48,7 @@ Nehéz megfelelően képzett személyeket találni bizonyos pozíciók betölté
 17. Kattintson az Eredményre.
 18. Kattintson az Önéletrajzra.
 19. Kattintson a Bizonyítványokra.
-    * Minden megjelenő személy esetében külön megtekintheti a végzettséggel, szakértelemmel, szakmai tapasztalattal, stb. kapcsolatos részletes információkat.  
+    * Minden megjelenő személy esetében külön megtekintheti a végzettséggel, szakértelemmel és szakmai tapasztalattal kapcsolatos részletes információkat.  
 20. Zárja be a lapot.
 21. Zárja be a lapot.
 22. Válassza ki újra az eredményt.

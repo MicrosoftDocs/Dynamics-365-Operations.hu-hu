@@ -3,7 +3,7 @@ title: (ER) Az Excel formátumban létrejövő dokumentumokra vonatkozó konfigu
 description: Ez a témakör azt mutatja be, hogyan lehet az Elektronikus jelentéskészítés (ER) formátumát egy Excel-sablon kitöltéséhez tervezni, majd a kimenő Excel formátumú dokumentumokat generálni.
 author: NickSelin
 manager: AnnBe
-ms.date: 05/14/2020
+ms.date: 11/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: EROperationDesigner, ERParameters
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 220314
 ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e889b08f10c5d0c95fed7c9e422340706bdd154a
-ms.sourcegitcommit: 67ce81c57194afb26a04ae4c0b7509e0efa32afc
+ms.openlocfilehash: d5733e40c67f9c97b04f126f7c3cfea9d4f8f5b5
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "3375813"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4686538"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>(ER) Az Excel formátumban létrejövő dokumentumokra vonatkozó konfigurációk tervezése
 
@@ -37,7 +36,7 @@ Ha további tájékoztatást szeretne erről a funkcióról, kövesse a [Jelent�
 
 Amikor egy új ER formátumú konfigurációt hoz létre egy kimenő dokumentum Excel-munkafüzet-formátumban történő generálásához, vagy ki kell választania a **Excel** értéket a **Formátumtípus** attribútumához vagy hagyja a **formátumtípus** attribútumot ütesen.
 
-- Ha az **Excelt**választja, akkor a formátumot csak Excel formátumú kimenő dokumentumok generálásához állíthatja be.
+- Ha az **Excelt** választja, akkor a formátumot csak Excel formátumú kimenő dokumentumok generálásához állíthatja be.
 - Ha üresen hagyja az attribútumot, konfigurálhatja azt a formátumot, amellyel a kimenő dokumentumok bármilyen formában elkészíthetők.
 
 A konfiguráció ER formátumkomponensének konfigurálásához válassza **Tervező** lehetőséget a művelet panelen, majd nyissa meg az ER-formátumkomponenst az ER operációs tevezőben.
@@ -165,6 +164,17 @@ Ha érvényesít egy módosítható ER-formátumot, akkor következetesség-elle
 
 ![Ellenőrzési hibaüzenet](./media/er-excel-format-validate.png)
 
+## <a name="control-the-calculation-of-excel-formulas"></a>Excel-képletek számításának ellenőrzése
+
+Az Microsoft Excel munkafüzet formátumú kimenő dokumentumok létrehozásakor előfordulhat, hogy a dokumentum egyes cellái Excel-képleteket tartalmaznak. Ha az **EPPlus könyvtár használatának engedélyezése az elektronikus jelentési keretrendszerben** funkció engedélyezve van, akkor a képletek kiszámítását szabályozhatja, ha módosítja **Számítási beállítások** [paraméter](https://support.microsoft.com/office/change-formula-recalculation-iteration-or-precision-in-excel-73fc7dac-91cf-4d36-86e8-67124f6bcce4#ID0EAACAAA=Windows) értékét a használt Excel-sablonban:
+
+- Válassza az **Automatikus** lehetőséget az összes függő képlet újraszámításához minden olyan alkalommal, amikor a létrejövő dokumentumhoz új tartományokat, cellákat stb. fűznek hozzá.
+    >[!NOTE]
+    > Ennek hatására előfordulhat, hogy a több kapcsolódó képletet tartalmazó Excel sablonok teljesítménye romlik.
+- A dokumentum létrehozásakor a képlet újraszámításának elkerüléséhez válassza a **Manuális** lehetőséget.
+    >[!NOTE]
+    > A képlet-újraszámítást kézzel kell végrehajtani, amikor a generált dokumentumot előnézetre megnyitják az Excel alkalmazással.
+    > Ne használja ezt a lehetőséget, ha olyan ER-célt állított be, amely az Excel előnézete nélkül (PDF-átalakítás, e-mailek stb.) a létrejövő dokumentumok használatát feltételezi, mivel előfordulhat, hogy a létrejövő dokumentum nem tartalmaz értékeket a képleteket tartalmazó cellákban.
 
 ## <a name="additional-resources"></a>További erőforrások
 

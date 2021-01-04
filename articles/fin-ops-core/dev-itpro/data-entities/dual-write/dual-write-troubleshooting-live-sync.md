@@ -18,33 +18,35 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 82bdcc71196c22689cc65601f98187aaa9e5e9d6
-ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
+ms.openlocfilehash: ca12759096bd1bafda0a5eee18287a694083db69
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "3997302"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685563"
 ---
 # <a name="troubleshoot-live-synchronization-issues"></a>Élő szinkronizálási problémák elhárítása
 
 [!include [banner](../../includes/banner.md)]
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 
-Ez a cikk a Finance and Operations és a Common Data Service alkalmazások közötti kettős írású adatintegrációk során felmerülő hibák elhárításával kapcsolatos információkat tartalmaz. Pontosabban, olyan információkat tartalmaz, amelyek segítségével javíthatók az élő szinkronizálás problémái.
+
+Ez a cikk a Finance and Operations és a Dataverse alkalmazások közötti kettős írású adatintegrációk során felmerülő hibák elhárításával kapcsolatos információkat tartalmaz. Pontosabban, olyan információkat tartalmaz, amelyek segítségével javíthatók az élő szinkronizálás problémái.
 
 > [!IMPORTANT]
 > Előfordulhat, hogy az ebben a témakörben leírt problémák egy része a rendszergazda szerepkört vagy Microsoft Azure Active Directory (Azure AD) bérlői adminisztrátori hitelesítő adatait igénylik. Az egyes problémákat tárgyaló szakaszok leírják, hogy szükség van-e konkrét szerepkörre vagy hitelesítő adatokra.
 
-## <a name="live-synchronization-throws-a-403-forbidden-error-when-you-create-a-record-in-a-finance-and-operations-app"></a>Az élő szinkronizálás 403 Tiltott hibát jelez, amikor létrehoz egy rekordot egy Finance and Operations alkalmazásban
+## <a name="live-synchronization-throws-a-403-forbidden-error-when-you-create-a-row-in-a-finance-and-operations-app"></a>Az élő szinkronizálás 403 Tiltott hibát jelez, amikor létrehoz egy sort egy Finance and Operations alkalmazásban
 
-A következő hibaüzenet jelenhet meg, amikor létrehoz egy rekordot a Finance and Operations alkalmazásban:
+A következő hibaüzenet jelenhet meg, amikor létrehoz egy sort a Finance and Operations alkalmazásban:
 
 *\[{\\"hiba\\":{\\"kód\\":\\"0x80072560\\",\\"üzenet\\":\\„A felhasználó nem a szervezet tagja\\"}}\], A távoli kiszolgáló a következő hibát küldte vissza: (403) Tiltott.”}}".*
 
-A hiba elhárításához kövesse a [Rendszerkövetelmények és előfeltételek](requirements-and-prerequisites.md) szakasz lépéseit. Ezeknek a lépéseknek a végrehajtásához Common Data Service szolgáltatásban létrehozott kettős írású felhasználóknak rendelkezniük kell a rendszergazda szerepkörrel. Az alapértelmezett tulajdonos csapatnak is rendelkeznie kell a rendszeradminisztrátori szerepkörrel.
+A hiba elhárításához kövesse a [Rendszerkövetelmények és előfeltételek](requirements-and-prerequisites.md) szakasz lépéseit. Ezeknek a lépéseknek a végrehajtásához Dataverse szolgáltatásban létrehozott kettős írású felhasználóknak rendelkezniük kell a rendszergazda szerepkörrel. Az alapértelmezett tulajdonos csapatnak is rendelkeznie kell a rendszeradminisztrátori szerepkörrel.
 
-## <a name="live-synchronization-for-any-entity-consistently-throws-a-similar-error-when-you-create-a-record-in-a-finance-and-operations-app"></a>Egy entitás élő szinkronizálása folyamatosan hasonló hibát ad vissza, amikor egy rekordot hoz létre a Finance and Operations alkalmazásban
+## <a name="live-synchronization-for-any-entity-consistently-throws-a-similar-error-when-you-create-a-row-in-a-finance-and-operations-app"></a>Egy entitás élő szinkronizálása folyamatosan hasonló hibát ad vissza, amikor egy sort hoz létre a Finance and Operations alkalmazásban
 
 **A hiba megtekintéséhez szükséges szerepkör:** Rendszergazda
 
@@ -52,12 +54,12 @@ Előfordulhat, hogy a következőhöz hasonló hibaüzenet jelenik meg minden al
 
 *A módosítások nem menthetők az adatbázisba. A munkaegység nem tudja véglegesíteni a tranzakciót. Nem lehet adatokat írni az entitás értékesítési mértékegységeibe. A UnitOfMeasureEntity írása hibaüzenettel megszakadt, nem lehet szinkronizálni az entitás értékesítési mértékegységeivel.*
 
-A hiba elhárítása érdekében gondoskodni kell arról, hogy az előfeltételnek számító hivatkozási adatok mind a Finance and Operations alkalmazásban, mind a Common Data Service szolgáltatásban létezzenek. Ha például az Finance and Operations alkalmazásban lévő vevő egy adott vevőcsoport tagja, győződjön meg arról, hogy a vevő csoport létezik a Common Data Service szolgáltatásban.
+A hiba elhárítása érdekében gondoskodni kell arról, hogy az előfeltételnek számító hivatkozási adatok mind a Finance and Operations alkalmazásban, mind a Dataverse szolgáltatásban létezzenek. Ha például az Finance and Operations alkalmazásban lévő vevő egy adott vevőcsoport tagja, győződjön meg arról, hogy a vevő csoport létezik a Dataverse szolgáltatásban.
 
 Ha mindkét oldalon szerepel az adat, és megerősítette, hogy a probléma nem az adatokkal kapcsolatos kövesse ezeket a lépéseket.
 
 1. A kapcsolódó entitás leállítása.
-2. Jelentkezzen be az Finance and Operations alkalmazásba, és győződjön meg arról, hogy az DualWriteProjectConfiguration és a DualWriteProjectFieldConfiguration táblákban léteznek rekordok a hibát jelző entitásokhoz. Itt megtekintheti például, hogy a lekérdezés hogyan néz ki, ha a **Vevők** hiúsul meg.
+2. Jelentkezzen be az Finance and Operations alkalmazásba, és győződjön meg arról, hogy az DualWriteProjectConfiguration és a DualWriteProjectFieldConfiguration táblákban léteznek sorok a hibát jelző entitásokhoz. Itt megtekintheti például, hogy a lekérdezés hogyan néz ki, ha a **Vevők** hiúsul meg.
 
     ```sql
     Select projectname, externalenvironmentURL ,\* 
@@ -66,8 +68,8 @@ Ha mindkét oldalon szerepel az adat, és megerősítette, hogy a probléma nem 
         EXTERNALENTITYNAME = 'accounts' 
     ```
 
-3. Ha az entitás-hozzárendelés leállítása után is léteznek rekordok a hibás entitáshoz, akkor törölje a hibás entitáshoz kapcsolódó rekordokat. Jegyezze fel a DualWriteProjectConfiguration tábla **projektnév** oszlopát, és kérje le a rekordot a DualWriteProjectFieldConfiguration táblában a projektnév használatával, a rekord törléséhez.
-4. Indítsa el az entitás-hozzárendelést. Ellenőrizze, hogy az adatok szinkronizálása probléma nélkül történik-e.
+3. Ha a táblahozzárendelés leállítása után is léteznek sorok a hibás entitáshoz, akkor törölje a hibás entitáshoz kapcsolódó sorokat. Jegyezze fel a DualWriteProjectConfiguration tábla **projektnév** oszlopát, és kérje le a rekordot a DualWriteProjectFieldConfiguration táblában a projektnév használatával, a sor törléséhez.
+4. Indítsa el az tábla-hozzárendelést. Ellenőrizze, hogy az adatok szinkronizálása probléma nélkül történik-e.
 
 ## <a name="handle-read-or-write-privilege-errors-when-you-create-data-in-a-finance-and-operations-app"></a>Olvasási vagy írási jogosultsági hibák adatok létrehozása során a Finance and Operations alkalmazásban
 
@@ -89,25 +91,25 @@ A hiba elhárításához a hiányzó jogosultság engedélyezéséhez társítan
 
     ![Szerepkörök kezelése gomb](media/manage_team_roles.png)
 
-4. Rendelje hozzá a megfelelő entitásokhoz az olvasási/írási jogosultsággal rendelkező szerepkört, majd kattintson az **OK** gombra.
+4. Rendelje hozzá a megfelelő táblákhoz az olvasási/írási jogosultsággal rendelkező szerepkört, majd kattintson az **OK** gombra.
 
-## <a name="fix-synchronization-issues-in-an-environment-that-has-a-recently-changed-common-data-service-environment"></a>A szinkronizálási problémák javítása egy környezetben egy közelmúltban módosított Common Data Service környezetben
+## <a name="fix-synchronization-issues-in-an-environment-that-has-a-recently-changed-dataverse-environment"></a>A szinkronizálási problémák javítása egy környezetben egy közelmúltban módosított Dataverse környezetben
 
 **A hiba megtekintéséhez szükséges szerepkör:** Rendszergazda
 
 A következő hibaüzenet jelenhet meg, amikor adatot hoz létre a Finance and Operations alkalmazásban:
 
-*{"entityName":"CustCustomerV3Entity","executionStatus":2,"fieldResponses":\[\],"recordResponses":\[{"errorMessage":" **Nem sikerült adatcsomagot generálni az CustCustomerV3Entity entitáshoz** ","logDateTime":"2019-08-27T18:51:52.5843124Z","verboseError":"Adatcsinag létrehozása sikertelen érvénytelen URI hibával: Az URI üres."}\],"isErrorCountUpdated":true}*
+*{"entityName":"CustCustomerV3Entity","executionStatus":2,"fieldResponses":\[\],"recordResponses":\[{"errorMessage":"**Nem sikerült adatcsomagot generálni az CustCustomerV3Entity entitáshoz**","logDateTime":"2019-08-27T18:51:52.5843124Z","verboseError":"Adatcsinag létrehozása sikertelen érvénytelen URI hibával: Az URI üres."}\],"isErrorCountUpdated":true}*
 
 Így néz ki a hiba a Dynamics 365 egy modellvezérelt alkalmazásában:
 
 *Váratlan hiba történt az ISV-kódból. (ErrorType = ClientError) Váratlan kivétel a bővítménytől (végrehajtás): Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PostCommitPlugin: System.Exception: nem sikerült feldolgozni az entitás fiókját (Egy kapcsolódási kísérlet nem sikerült, mert a kapcsolódó fél egy adott időt követően nem válaszolt helyesen, vagy a létrejött kapcsolat megszakadt, mert a csatlakoztatott állomás nem válaszolt*
 
-Ez a hiba akkor fordul, ha a Common Data Service környezet helytelenül van alaphelyzetbe állítva, amikor adatokat próbál létrehozni a Finance and Operations alkalmazásban.
+Ez a hiba akkor fordul, ha a Dataverse környezet helytelenül van alaphelyzetbe állítva, amikor adatokat próbál létrehozni a Finance and Operations alkalmazásban.
 
 Egy hiba javításához kövesse az alábbi lépéseket.
 
-1. Jelentkezzen be a Finance and Operations virtuális gépére (VM), nyissa meg az SQL Server Management Studio (SSMS) szolgáltatást, és keressen rekordokat a DUALWRITEPROJECTCONFIGURATIONENTITY táblában, ahol **internalentityname** egyenlő **Customers V3** és **externalentityname** egyenlő **accounts**. A lekérdezés így néz ki.
+1. Jelentkezzen be a Finance and Operations virtuális gépére (VM), nyissa meg az SQL Server Management Studio (SSMS) szolgáltatást, és keressen sorokat a DUALWRITEPROJECTCONFIGURATIONENTITY táblában, ahol **internalentityname** egyenlő **Customers V3** és **externalentityname** egyenlő **accounts**. A lekérdezés így néz ki.
 
     ```sql
     select projectname, externalenvironmentURL ,\* 
@@ -123,5 +125,5 @@ Egy hiba javításához kövesse az alábbi lépéseket.
     where projectname = <project name from previous query>
     ```
 
-3. Ügyeljen arra, hogy az **externalenvironmentURL** oszlop helyes Common Data Service vagy alkalmazás URL-címmel rendelkezzen. Törölje a megfelelő Common Data Service URL-címre mutató ismétlődő rekordokat. Törölje a megfelelő rekordokat a DUALWRITEPROJECTFIELDCONFIGURATION és DUALWRITEPROJECTCONFIGURATION táblákból.
-4. Állítsa le az entitások hozzárendelését, majd indítsa újra
+3. Ügyeljen arra, hogy az **externalenvironmentURL** oszlop helyes Dataverse vagy alkalmazás URL-címmel rendelkezzen. Törölje a megfelelő Dataverse URL-címre mutató ismétlődő sorokat. Törölje a megfelelő sorokat a DUALWRITEPROJECTFIELDCONFIGURATION és DUALWRITEPROJECTCONFIGURATION táblákból.
+4. Állítsa le az táblák hozzárendelését, majd indítsa újra

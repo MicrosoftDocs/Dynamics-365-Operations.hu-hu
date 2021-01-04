@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: FeatureManagementWorkspace
 audience: IT Pro, Application user
 ms.reviewer: sericks
-ms.search.scope: Operations, Core
 ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 46095e4ec21aac7cbf98dc1265ea7c8de27148ab
-ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
+ms.openlocfilehash: 82c8172958f819735ea3f29fc331272f80b3a25a
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4015043"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4692966"
 ---
 # <a name="feature-management-overview"></a>Funkciókezelés áttekintése
 
@@ -191,7 +190,7 @@ if (FeatureStateProvider::isFeatureEnabled(BatchContentionPreventionFeature::ins
 A **FeatureClass** tulajdonsággal jelezheti, hogy néhány metaadatot társítottak egy funkcióhoz. A funkcióhoz használt osztálynevet használhatja, például **BatchContentionPreventionFeature**. Ezek a metaadatok csak az adott funkcióban láthatók. A **FeatureClass** tulajdonság a menükben, a menüelemekben, a sorszámozott értékekben és a tábla/nézet mezőkben érhető el.
 
 ### <a name="what-is-a-feature-class"></a>Mi a funkcióosztály?
-A Funkciókezelő funkcióit a program *funkcióosztályokként* definiálja. A funkcióosztályok **IFeatureMetadata** -kat hajtanak végre, és a funkcióosztály attribútumát használják a Funkciókezelő munkaterületen való azonosításukhoz. A rendelkezésre álló funkcióosztályokra számos példa van, amelyeknek a kódban való engedélyezését a **FeatureStateProvider** API-val, a metaadatokban pedig a **FeatureClass** tulajdonsággal ellenőrizheti. Példa: 
+A Funkciókezelő funkcióit a program *funkcióosztályokként* definiálja. A funkcióosztályok **IFeatureMetadata**-kat hajtanak végre, és a funkcióosztály attribútumát használják a Funkciókezelő munkaterületen való azonosításukhoz. A rendelkezésre álló funkcióosztályokra számos példa van, amelyeknek a kódban való engedélyezését a **FeatureStateProvider** API-val, a metaadatokban pedig a **FeatureClass** tulajdonsággal ellenőrizheti. Példa: 
 
 ```xpp
 [ExportAttribute(identifierStr(Microsoft.Dynamics.ApplicationPlatform.FeatureExposure.IFeatureMetadata))]

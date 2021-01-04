@@ -1,28 +1,27 @@
 ---
 title: Adja meg a bérlista nyitó egyenlegeit
 description: A témakör a nyitó egyenlegek bevitelének lépéseit ismerteti a kereseti kódok, levonások, juttatások és adók esetében. Ez az információ értékes a partnerek számára az adatok áttelepítéséhez vagy átviteléhez egy új Bérlista rendszerbe egy másik rendszerből.
-author: kherr75
+author: andreabichsel
 manager: AnnBe
-ms.date: 04/24/2019
+ms.date: 11/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations
 ms.custom: 20931
 ms.assetid: b48b1cb2-6e66-467e-9c0e-09b6a4aeb9fe
 ms.search.region: Global
-ms.author: kherr
+ms.author: anbichse
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e4bb8f565f5bf5630a7c5f8602b96e569692bc7c
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 4411a6b72dbb7e6f5b1a72df8dbcbd54e265164c
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3005678"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693402"
 ---
 # <a name="enter-payroll-beginning-balances"></a>Adja meg a bérlista nyitó egyenlegeit
 

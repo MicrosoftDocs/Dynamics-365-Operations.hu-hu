@@ -10,28 +10,27 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 ms.custom: 265364
 ms.assetid: c61391e4-c4bf-4f09-bd18-8107a1bf055e
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: 5861bcaa42f7bc5ec20916fe1a44418bdd9c2ffe
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 2ce91557334a4342fa85848fc1b746b6b12c8992
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550908"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4688527"
 ---
 # <a name="make-the-chart-of-accounts-delimiter-unique"></a>A számlatükör-elválasztó egyedivé tétele
 
 [!include [banner](../includes/banner.md)]
 
-A Microsoft Dynamics AX 2012-ben használható volt ugyanaz az elválasztó a számlatükörhöz és a dimenzióértékekhez. In Finance and Operations aktuális verzióiban nem használható ugyanaz az elválasztó a számlatükörhöz és a dimenzióértékekhez. Ha egy elválasztó ismétlődik, frissítés után módosíthatja. 
+A Microsoft Dynamics AX 2012-ben használható volt ugyanaz az elválasztó a számlatükörhöz és a dimenzióértékekhez. A Finance and Operations aktuális verzióiban nem használható ugyanaz az elválasztó a számlatükörhöz és a dimenzióértékekhez. Ha egy elválasztó ismétlődik, frissítés után módosíthatja. 
 
 Ez a funkció a következő verziókban érhető el:
-- Finance and Operations 8.0 verzió
+- Finance and Operations 8.0-s verzió
 - Finance and Operations 7.1 verzió, KB 4094701 Nem lehet megadni a pénzügyi dimenziókat, ha a dimenzióértékek tartalmazzák a számlatükör elválasztóját
 - Finance and Operations 7.2 verzió, KB 4092967 Részprojektet nem lehet dimenzióként kiválasztani, ha az alprojekt formátuma tartalmazza a dimenzió-elválasztót
 

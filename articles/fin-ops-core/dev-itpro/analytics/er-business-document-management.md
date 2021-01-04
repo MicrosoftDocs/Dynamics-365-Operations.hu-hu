@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERBDWorkspace, ERBDParameters, ERSecurityAccessEditor
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 65874e5ca73c18c3df7b94b8abb6eb15491482bf
-ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
+ms.openlocfilehash: 4b50a170bb9e584501fe780239228dc871ca7750
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3893135"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681304"
 ---
 # <a name="business-document-management-overview"></a>Üzletidokumentum-kezelés – áttekintés
 
@@ -255,7 +254,7 @@ Amikor az **Office-szerű UI-élményt az üzleti Dokumentumkezelés számára**
 
 ![Üzletidokumentum-kezelés munkaterület oldala](./media/BDM-Overview-EditingTemplate1.png)
 
-A **Sablon** lap bemutatja a kiválasztott sablon tartalmát. Válassza a **Részletek** lapot a kiválasztott sablon részleteinek áttekintéséhez, valamint annak az elektronikusjelentés-formátumkonfigurációnak a megtekintéséhez, amelyben ez a sablon található. Figyelje meg, hogy minden sablon **Közzétett**állapotú, és a **Verzió** oszlopban nem tartalmaz részleteket. Ez azt jelenti, hogy ezek a sablonok jelenleg nincsenek szerkesztve.
+A **Sablon** lap bemutatja a kiválasztott sablon tartalmát. Válassza a **Részletek** lapot a kiválasztott sablon részleteinek áttekintéséhez, valamint annak az elektronikusjelentés-formátumkonfigurációnak a megtekintéséhez, amelyben ez a sablon található. Figyelje meg, hogy minden sablon **Közzétett** állapotú, és a **Verzió** oszlopban nem tartalmaz részleteket. Ez azt jelenti, hogy ezek a sablonok jelenleg nincsenek szerkesztve.
 
 Ha az **Office-szerű UI-élményt az üzleti Dokumentumkezelés számára** funkció be van kapcsolva a **Funkciókezelés** munkaterületen, akkor az **Üzleti dokumentumkezelés** munkaterületének fő rácsa azokat a sablonokat jeleníti meg, amelyek az Ön ER konfigurációs szolgáltatója (azaz az **Elektronikus jelentés** munkaterületen aktívként megjelölt szolgáltató) tulajdonában vannak. Miután kiválasztotta a sablonok egyikét, a **Sablon szerkesztése** lehetőséggel elindíthatja vagy folytathatja annak szerkesztését.
 
@@ -347,7 +346,7 @@ A frissített sablon megjelenik a **Sablon** lapon. Figyelje meg, hogy a szerkes
 
 1. Az alkalmazásban módosítsa a vállalatot az **USMF** vállalatra.
 2. Válassza a következőt **Kinnlevőségek** \> **Számlák** \> **Kizárólag szabadszöveges számlák**.
-3. Válassza ki az **FTI-00000002** számlát, majd válassza a **Nyomtatáskezelő**parancsot.
+3. Válassza ki az **FTI-00000002** számlát, majd válassza a **Nyomtatáskezelő** parancsot.
 4. Válassza ki a **Modul – kintlévőségek** \> **Dokumentumok** \> **Szabadszöveges számla** \> **Eredeti dokumentum** szintet, hogy meghatározza a feldolgozandó számlák hatályát.
 5. A **Jelentés formátuma** mezőben válassza ki a **Customer FTI report (GER) másolata** ER formátumot a megadott dokumentumszinthez.
 
@@ -409,7 +408,7 @@ Igen, megteheti. Az első alkalmazásmunkamenetben válassza a **Megnyitás az a
 3. Válassza ki **BDM-sablonszerkesztő** lapján az első alkalmazásmunkamenetnél a **Tárolt másolat szinkronizálása** lehetőséget.
 4. Hajtsa végre ezt a sablon ER-formátumot a második alkalmazásmunkamentben.
 
-#### <a name="i-get-the-error-value-cannot-be-null-parameter-name-externalid-when-i-select-open-in-desktop-app-how-do-i-work-around-this"></a>Az „Érték nem lehet nulla” üzenetet kapom. Paraméter neve: „externalId”, ha a **Megnyitás asztali alkalmazásban**lehetőséget választom. Hogyan lehet ezt megoldani? 
+#### <a name="i-get-the-error-value-cannot-be-null-parameter-name-externalid-when-i-select-open-in-desktop-app-how-do-i-work-around-this"></a>Az „Érték nem lehet nulla” üzenetet kapom. Paraméter neve: „externalId”, ha a **Megnyitás asztali alkalmazásban** lehetőséget választom. Hogyan lehet ezt megoldani? 
 Valószínűleg olyan Azure AD tartományból jelentkezett be az alkalmazás jelen példányába, amely eltér a az alkalmazás ezen példányának telepítéséhez használt Azure AD tartománytól. Mivel a SharePoint szolgáltatás, amely sablonokat tárol az Office asztali alkalmazásokkal történő szerkesztésre, a program ugyanazon tartományhoz tartozik, mint az alkalmazás nincs jogosultságunk a SharePoint szolgáltatás eléréséhez. A probléma megoldásához a megfelelő Azure AD tartománnyal rendelkező felhasználó hitelesítő adataival jelentkezzen be az aktuális példányba.
 
 ## <a name="additional-resources"></a>További erőforrások

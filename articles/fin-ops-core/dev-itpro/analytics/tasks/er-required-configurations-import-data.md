@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: DefaultDashboard, ERWorkspace, ERSolutionTable, ERDataModelDesigner, ERSolutionCreateDropDialog, EROperationDesigner, ERModelMappingTable, ERModelMappingDesigner, ERExpressionDesignerFormula, Tax1099Summary, VendSettlementTax1099
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 33d3f3773fdba4b704deeca48874b10958e2ea4e
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: d9b26f4963f32be34ae1d954a3f363be7ea28d41
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3143315"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684282"
 ---
 # <a name="er-create-required-configurations-to-import-data-from-an-external-file"></a>ER – Szükséges konfigurációk létrehozása adatok importálásához egy külső fájlból
 
@@ -98,11 +97,11 @@ A részfeladat lépései megmutatják, hogyan hozható létre új formátumkonfi
 
     Megjegyzendő, hogy a tervezett formátum itt adatforrás-összetevőként jelenik meg.  
 
-6. A fastruktúrában bontsa ki ezt: „formátum: Rekord\*settlement: XML Element 1..1 (settlement): Rekord”.
-7. A fastruktúrában bontsa ki ezt: „formátum: Rekord\*settlement: XML Element 1..1 (settlement): Record\transaction: XML Element 0..* (transaction): Rekordlist”.
-8. A fastruktúrában bontsa ki ezt: „formátum: Rekord\*settlement: XML Element 1..1 (settlement): Record\transaction: XML Element 0..* (transaction): Record list\*vendor: XML Element 1..1 (vendor): Rekord”.
-9. A fastruktúrában bontsa ki ezt: „formátum: Rekord\*settlement: XML Element 1..1 (settlement): Record\transaction: XML Element 0..* (transaction): Record list\country: XML Element 0..1 (country): Rekord”.
-10. A fastruktúrában válassza ki ezt: „formátum: Rekord\*settlement: XML Element 1..1 (settlement): Record\transaction: XML Element 0..* (transaction): Record list\*vendor: XML Element 1..1 (vendor): Rekord”.
+6. A fastruktúrában bontsa ki a `format: Record\*settlement: XML Element 1..1 (settlement): Record` csomópontot.
+7. A fastruktúrában bontsa ki a `format: Record\*settlement: XML Element 1..1 (settlement): Record\transaction: XML Element 0..* (transaction): Record list` csomópontot.
+8. A fastruktúrában bontsa ki a `format: Record\*settlement: XML Element 1..1 (settlement): Record\transaction: XML Element 0..* (transaction): Record list\*vendor: XML Element 1..1 (vendor): Record` csomópontot.
+9. A fastruktúrában bontsa ki a `format: Record\*settlement: XML Element 1..1 (settlement): Record\transaction: XML Element 0..* (transaction): Record list\country: XML Element 0..1 (country): Record` csomópontot.
+10. A fastruktúrában válassza ki a `format: Record\*settlement: XML Element 1..1 (settlement): Record\transaction: XML Element 0..* (transaction): Record list\*vendor: XML Element 1..1 (vendor): Record` csomópontot.
 
     Megjegyzés: a kötelező és választható formátumelemek megjelenítése eltér az előre meghatározott „formátum” adatforrás-összetevőben.  
 11. A fastruktúrában bontsa ki ezt: „Tranzakciók: Record list= format.settlement.'$enumerated'”.
@@ -237,7 +236,7 @@ Hajtsa végre ezt a formátumleképezést tesztelési célokra. Használja a kor
 19. Zárja be a lapot.
 20. Kattintson a Szerkesztés lehetőségre.
 
-    Ha telepítette a következő gyorsjavítást: „KB 4012871 GER-modell-leképezések támogatása elkülönített konfigurációkban különböző típusú előfeltételek megadásának képességével a telepítésükhöz a Dynamics 365 Finance különböző verzióiban” (https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871), hajtsa végre a következő lépést: „Alapértelmezett modell-leképezéshez jelző bekapcsolása” a megadott formátumkonfigurációhoz. Ellenkező esetben hagyja ki a következő lépést.  
+    Ha telepítette a következő gyorsjavítást: „KB 4012871 GER-modell-leképezések támogatása elkülönített konfigurációkban különböző típusú előfeltételek megadásának képességével a telepítésükhöz a Dynamics 365 Finance különböző verzióiban” ([KB 4012871](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871)), hajtsa végre a következő lépést: „Alapértelmezett modell-leképezéshez jelző bekapcsolása” a megadott formátumkonfigurációhoz. Ellenkező esetben hagyja ki a következő lépést.  
 
 21. Válassza az Igen lehetőséget a Modell-leképezés alapértelmezett értéke mezőben.
 22. A fastruktúrában válassza ki ezt: „1099 fizetések modellje”.
@@ -245,7 +244,7 @@ Hajtsa végre ezt a formátumleképezést tesztelési célokra. Használja a kor
 24. Kattintson a Modell hozzárendelése adatforráshoz gombra.
 25. Kattintson a Futtatás elemre.
 
-    Ha telepítette a következő gyorsjavítást: „KB 4012871 GER-modell-leképezések támogatása elkülönített konfigurációkban különböző típusú előfeltételek megadásának képességével a telepítésükhöz a különböző verziókban” (https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871), válassza ki az előnyben részesített modell-leképezést a keresés mezőben. Ha még nem telepítette a gyorsjavítást, ugorjon a következő lépésre, mert a leképezést már kiválasztotta az alapértelmezett formátumkonfiguráció meghatározása.  
+    Ha telepítette a következő gyorsjavítást: KB 4012871 GER-modell-leképezések támogatása elkülönített konfigurációkban különböző típusú előfeltételek megadásának képességével a telepítésükhöz a különböző verziókban” ([KB 4012871](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871)), válassza ki az előnyben részesített modell-leképezést a keresés mezőben. Ha még nem telepítette a gyorsjavítást, ugorjon a következő lépésre, mert a leképezést már kiválasztotta az alapértelmezett formátumkonfiguráció meghatározása.  
     
     Ha még nem telepítette a KB 4012871 gyorsjavítást, figyelje meg, hogy a párbeszédpanel egy további modell-leképezési kérdést tartalmaz, amelyet a rendszer az importálandó fájl elemzéséhez használ. Ezután megtörténik az adatok portolása a párbeszédpanelből az adatmodellbe. Jelenleg az importálandó fájl típusától függően választhatja ki a használandó formátumleképezést.  
     

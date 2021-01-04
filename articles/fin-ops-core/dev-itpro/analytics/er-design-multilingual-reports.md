@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERModelMappingDesigner, EROperationDesigner, ERExpressionDesignerFormula
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 26a912aa2002f1d60dd650248bd3c68e45e68596
-ms.sourcegitcommit: 9857d5cbdc0ab2fc9db049ac5ad118fc2b29bedc
+ms.openlocfilehash: 7934f36877247460ec843201a08d4670456889f9
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "3810667"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679702"
 ---
 # <a name="design-multilingual-reports-in-electronic-reporting"></a>Többnyelvű jelentések tervezése elektronikus jelentésekben
 
@@ -158,7 +157,7 @@ Az ER különböző módszereket támogat a létrejövő jelentések nyelvének 
 
     ![Adja meg az ER műveleti tervezőben a tervezésidőben megadott t nyelvet, amely a létrejövő jelentés nyelve lesz](./media/er-multilingual-labels-language-context-fixed.png)
 
-- **Futásidőben definiálva** – Jelentés készítése a futásidőben megadott nyelven. Ha ezt az értéket választja, a **nyelv** mezőben konfiguráljon egy olyan ER-kifejezést, amely a nyelvhez tartozó nyelvi kódot adja vissza, például a megfelelő vevő nyelvét.
+- **Futásidőben definiálva** – Jelentés készítése a futásidőben megadott nyelven. Ha ezt az értéket választja, a **Nyelv** mezőben konfiguráljon egy olyan ER-kifejezést, amely a nyelvhez tartozó nyelvi kódot adja vissza, például a megfelelő vevő nyelvét.
 
     ![Adja meg az ER műveleti tervezőben a futásidőben megadott nyelvet, amely a létrejövő jelentés nyelve lesz](./media/er-multilingual-labels-language-context-runtime.png)
 

@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner, ERVendorTable
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 220314
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 67763b29744c4262249ef1ec04e7df490b31fe5b
-ms.sourcegitcommit: 1e6a7b50596eaf9d965e0155f3f2c50f7f50747e
+ms.openlocfilehash: 20e7a32ac5f6ab21f89ed3c11c64458286864c9d
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/22/2020
-ms.locfileid: "3498097"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680170"
 ---
 # <a name="adjust-an-er-format-to-generate-a-custom-electronic-document"></a>ER-formátum módosítása egyéni elektronikus dokumentum generálásához
 
@@ -220,7 +219,7 @@ Az elektronikus fizetési módot úgy kell konfigurálni, hogy az az importált 
 1. Nyissa meg a következőt: **Kötelezettségek** \> **Kifizetés beállítása** \> **Fizetési módok**.
 2. A **Fizetési módok – szállítók** oldalon válassza ki az **Elektronikus** fizetési módot a bal oldali ablaktáblán.
 3. Válassza ki a **Szerkesztés** opciót.
-4. Adja meg a **Fájlformátumok** gyorslap **Általános elektronikus export formátum** beállítását**Igen** értékre.
+4. Adja meg a **Fájlformátumok** gyorslap **Általános elektronikus export formátum** beállítását **Igen** értékre.
 5. Az **Exportálási formátum konfigurálása** mezőben válassza ki az **BACS (UK)** formátumkonfigurációt.
 
     ![Fizetési módok - szállítók oldal](./media/er-quick-start2-method-of-payment1.png)

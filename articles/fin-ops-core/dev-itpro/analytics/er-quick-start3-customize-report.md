@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner, ERVendorTable
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 220314
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c19fef3e62eec48e66f7cec824afee3ebb25209e
-ms.sourcegitcommit: cc78f9bf585082ce65c2ab0b011ff62620fa883d
+ms.openlocfilehash: 47bb8a2a9adab4ec963a1d0b95e783299aab3819
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "4088220"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683016"
 ---
 # <a name="customize-electronic-reporting-configurations-to-generate-an-electronic-document"></a>Elektronikus jelentéskészítési konfigurációk testreszabása elektronikus bizonylat előállításához
 
@@ -65,7 +64,7 @@ Elektronikus jelentések funkcióival foglalkozó tanácsadó vagy Elektronikus 
 2. A **Lokalizációs konfigurációk** oldalon, a **Kapcsolódó hivatkozások** szakaszban, válassza az **Elektronikus jelentéskészítés paraméterei** elemet.
 3. Az **Elektronikus jelentéskészítési paraméterek** oldalon, az **Általános** lapon a **Tervezői mód engedélyezése** lehetőséget állítsa **Igen** értékre.
 4. Válassza a **mellékletek** lap **konfigurációk** mezőjének **fájl** pontját.
-5. A **Feladatarchívum** , **Ideiglenes** , **Alap** és **Egyebek** mezőkben válassza a **Fájl** típust.
+5. A **Feladatarchívum**, **Ideiglenes**, **Alap** és **Egyebek** mezőkben válassza a **Fájl** típust.
 
 Az ER-paraméterekkel kapcsolatos további tudnivalókat lásd: [ER-keretrendszer konfigurálása](electronic-reporting-er-configure-parameters.md).
 
@@ -127,7 +126,7 @@ Figyelje meg, hogy a kiválasztott **Peppol értékesítési számla** ER-formá
 
 Ha szimulálni szeretné, hogy milyen állapotban lennének az ER-konfigurációk az aktuális Finance példányban, ha importálta volna a **Peppol értékesítési számla** ER-formátum **11.2.2** verzióját a múltban (például 2019. augusztus 7-én), kövesse az alábbi lépéseket.
 
-- A művelet ablaktáblán válassza a **Törlés** parancsot, ha törölni szeretné az összes olyan ER-konfigurációt, amelyet a 2019. augusztus 7. után közzétettek. Csak a **Számlamodell** , **Számlamodell-leképezés** (eredetileg **Ügyfélszámla-modell leképezése** néven), **UBL értékesítési számla** és **Peppol értékesítési számla** konfigurációk maradjanak.
+- A művelet ablaktáblán válassza a **Törlés** parancsot, ha törölni szeretné az összes olyan ER-konfigurációt, amelyet a 2019. augusztus 7. után közzétettek. Csak a **Számlamodell**, **Számlamodell-leképezés** (eredetileg **Ügyfélszámla-modell leképezése** néven), **UBL értékesítési számla** és **Peppol értékesítési számla** konfigurációk maradjanak.
 - A maradék is ER-konfigurációk esetében a **Verziók** gyorslapon válassza a **Törlés** parancsot, ha törölni szeretné az összes olyan verziót, amely a 2019. augusztus 7. után lett közzétéve.
 
 Ezután győződjön meg arról, hogy a konfigurációs fában a következő ER-konfigurációk érhetők el:
@@ -320,7 +319,7 @@ Ezután az ER-adatmodell-tervező használatával szerkesztheti a **Számlamodel
 A Szövetségi adóazonosító kód értékének megadásához egy új mező hozzáadásával módosítania kell az egyéni adatmodellt. Ez a kód a vevői adatoknak az a része, amely minden olyan ER-formátumnál szerepel, amely ezt az adatmodellt fogja használni adatforrásként.
 
 1. A **Konfigurációk** oldalon, a bal oldali panelen található konfigurációk fájában válassza a **Számlamodell (Litware)** elemet.
-2. A **Verziók** gyorslapon válassza ki a kijelölt ER-adatmodell-konfiguráció **50.1** -es verzióját **Piszkozat** állapotban.
+2. A **Verziók** gyorslapon válassza ki a kijelölt ER-adatmodell-konfiguráció **50.1**-es verzióját **Piszkozat** állapotban.
 3. A műveleti ablaktáblán válassza ki a kiválasztott konfigurációs verzió **tervezőjét**.
 4. Az **adatmodell-tervező** lap adatmodell fastruktúrájában válassza ki az **Ügyféladatok (Ügyfél)** elemet.
 5. Válassza az **Új** lehetőséget.
@@ -458,7 +457,7 @@ Az egyéni formátumot úgy kell módosítani, hogy egy új fájlformátumot ad 
     ![Formátumtervező oldal](./media/er-quick-start3-customized-format-mapping.png)
 
 4. Válassza ki a **Modell** típus **Számla** adatforrást, majd válassza a **Szerkesztés** parancsot.
-5. Válassza ki a **verzió** mezőben az Egyéni adatmodell **1** -es verzióját, majd kattintson az **OK** gombra.
+5. Válassza ki a **verzió** mezőben az Egyéni adatmodell **1**-es verzióját, majd kattintson az **OK** gombra.
 6. Válassza a **Mentés** lehetőséget.
 7. Zárja be a **Formátumtervező** lapot.
 
@@ -520,7 +519,7 @@ Ha azt szeretné, hogy a Finance példány alapértelmezett ER-konfigurációi [
 2. A **Lokalizációs konfigurációk** oldalon, a **Konfigurációszolgáltatók** szakaszban válassza ki a **Microsoft** csempét, majd válassza ki az **Adattárak** lehetőséget a Microsoft szolgáltatóhoz tartozó adattárak listájának megtekintéséhez.
 3. A **Konfigurációs adattárak** lapon válassza ki a **Globális** típusú adattárat, majd válassza a **Megnyitás** lehetőséget. Ha a rendszer felkéri a hitelesítésre a Regulatory Configuration Service szolgáltatáshoz való kapcsolódáshoz, kövesse a hitelesítési utasításokat.
 4. A **Konfigurációs adattárak** oldalon, a bal oldali panel konfigurációs fájában válassza ki a **Peppol értékesítési számla** formátumkonfigurációt.
-5. A **Verziók** gyorslapon válassza ki a kijelölt ER- formátumkonfiguráció **32.6.7** -es verzióját, amely a PEPPOL BIS 3 formátumú vevői elektronikus számlák támogatására lett kiadva. További tájékoztatás: [KB4490320](https://support.microsoft.com/help/4490320/an-update-for-european-union-to-support-export-of-customers-electronic).
+5. A **Verziók** gyorslapon válassza ki a kijelölt ER- formátumkonfiguráció **32.6.7**-es verzióját, amely a PEPPOL BIS 3 formátumú vevői elektronikus számlák támogatására lett kiadva. További tájékoztatás: [KB4490320](https://support.microsoft.com/help/4490320/an-update-for-european-union-to-support-export-of-customers-electronic).
 6. Kattintson az **Importálás** lehetőségre a kiválasztott verzió Globális tárból a jelenlegi Finance and Operations példányba történő letöltéséhez.
 
 ![A konfigurációs tárház lapon kiválasztott verzió 32.6.7](./media/er-quick-start3-import-solution2.png)
@@ -568,13 +567,13 @@ Győződjön meg arról, hogy a konfigurációs fában a következő ER-konfigur
 
 1. Nyissa meg a következőt: **Szervezeti adminisztráció** \> **Elektronikus jelentéskészítés** \> **Konfigurációk**.
 2. A **Konfigurációk** oldalon, a bal oldali panelen található konfigurációk fájában bontsa ki a **Számlamodell** elemet, majd válassza a **Számlamodell (Litware)** lehetőséget.
-3. A **Verziók** gyorslapon a kijelölt ER-adatmodell-konfiguráció **50.2** -es verziójának Piszkozat verziójához válassza az **Új alap** elemet.
-4. A **cél verziószáma** mezőben hagyja jóvá az alao ER-adatmodell-konfiguráció **206** -os verziót, majd válassza az **OK** gombot .
+3. A **Verziók** gyorslapon a kijelölt ER-adatmodell-konfiguráció **50.2**-es verziójának Piszkozat verziójához válassza az **Új alap** elemet.
+4. A **cél verziószáma** mezőben hagyja jóvá az alao ER-adatmodell-konfiguráció **206**-os verziót, majd válassza az **OK** gombot .
 
-    Az egyéni ER-adatmodell konfigurációjának piszkozatverziója újraszámozva **50.2** -ről **206.2** -re, így jelezheti, hogy a rendszer most az alapadat-modell konfigurációjának legutóbbi verziójában (206) szereplő módosításokkal összevont testreszabást tartalmazza.
+    Az egyéni ER-adatmodell konfigurációjának piszkozatverziója újraszámozva **50.2**-ről **206.2**-re, így jelezheti, hogy a rendszer most az alapadat-modell konfigurációjának legutóbbi verziójában (206) szereplő módosításokkal összevont testreszabást tartalmazza.
 
     > [!NOTE]
-    > Az új alap művelet visszafordítható. Ha az új alapra helyezést vissza szeretné vonni, válassza ki a **Számlamodell (Litware)** modell **50.1** -es verzióját a **Verziók** gyorslapon, majd válassza ki a **Verzió beszerzése** elemet. A 206.2-es verziót ezután a rendszer **50.2** -esként számozza fel, és az 50.2-es piszkozat verzió tartalma megegyezik a 50.1-es verzió tartalmával.
+    > Az új alap művelet visszafordítható. Ha az új alapra helyezést vissza szeretné vonni, válassza ki a **Számlamodell (Litware)** modell **50.1**-es verzióját a **Verziók** gyorslapon, majd válassza ki a **Verzió beszerzése** elemet. A 206.2-es verziót ezután a rendszer **50.2**-esként számozza fel, és az 50.2-es piszkozat verzió tartalma megegyezik a 50.1-es verzió tartalmával.
 
 5. Válassza a **Verziók** gyorslap **Állapot módosítása** \> **Befejezés** elemét, majd kattintson az **OK** gombra.
 
@@ -586,10 +585,10 @@ Az 206.2-es verzió állapota a **Piszkozat** értékről a **Befejezett** ért�
 
 1. Nyissa meg a következőt: **Szervezeti adminisztráció** \> **Elektronikus jelentéskészítés** \> **Konfigurációk**.
 2. A **Konfigurációk** oldalon, a bal oldali panelen található konfigurációk fájában bontsa ki a **Számlamodell** \> **Számlamodell-leképezés** elemet, majd válassza a **Számlamodell leképezése (Litware)** lehetőséget.
-3. A **Verziók** gyorslapon a kijelölt ER-modell-leképezési konfiguráció **50.19.2** -es verziójának Piszkozat verziójához válassza az **Új alap** elemet.
-4. A **cél verziószáma** mezőben hagyja jóvá az alap ER-modell-leképezési konfiguráció **206.132** -os verziót, majd válassza az **OK** gombot .
+3. A **Verziók** gyorslapon a kijelölt ER-modell-leképezési konfiguráció **50.19.2**-es verziójának Piszkozat verziójához válassza az **Új alap** elemet.
+4. A **cél verziószáma** mezőben hagyja jóvá az alap ER-modell-leképezési konfiguráció **206.132**-os verziót, majd válassza az **OK** gombot .
 
-    Az egyéni ER-modell-leképezési konfigurációjának piszkozatverziója újraszámozva **50.19.2** -ről **206.132.2** -re, így jelezheti, hogy a rendszer most az ER-modell-leképezési konfigurációjának legutóbbi verziójában (206.132) szereplő módosításokkal összevont testreszabást tartalmazza.
+    Az egyéni ER-modell-leképezési konfigurációjának piszkozatverziója újraszámozva **50.19.2**-ről **206.132.2**-re, így jelezheti, hogy a rendszer most az ER-modell-leképezési konfigurációjának legutóbbi verziójában (206.132) szereplő módosításokkal összevont testreszabást tartalmazza.
 
     Észreveheti, hogy a rendszer bizonyos új alap ütközéseket észlelt. Most manuálisan kell megoldania ezeket az ütközéseket.
 
@@ -606,7 +605,7 @@ Az 206.2-es verzió állapota a **Piszkozat** értékről a **Befejezett** ért�
 10. Válassza a **Mentés** lehetőséget, majd zárja be a **Modell-leképezések** oldalt.
 
     > [!NOTE]
-    > Az új alap művelet visszafordítható. Ha az új alapra helyezést vissza szeretné vonni, válassza ki a **Számlamodell-leképezés (Litware)** modell-leképezés **50.19.1** -es verzióját a **Verziók** gyorslapon, majd válassza ki a **Verzió beszerzése** elemet. A 206.132.2-es verziót ezután a rendszer **50.19.2** -esként számozza fel, és az 50.19.2-es piszkozat verzió tartalma megegyezik a 50.19.1-es verzió tartalmával.
+    > Az új alap művelet visszafordítható. Ha az új alapra helyezést vissza szeretné vonni, válassza ki a **Számlamodell-leképezés (Litware)** modell-leképezés **50.19.1**-es verzióját a **Verziók** gyorslapon, majd válassza ki a **Verzió beszerzése** elemet. A 206.132.2-es verziót ezután a rendszer **50.19.2**-esként számozza fel, és az 50.19.2-es piszkozat verzió tartalma megegyezik a 50.19.1-es verzió tartalmával.
 
 11. Válassza a **Verziók** gyorslap **Állapot módosítása** \> **Befejezés** elemét, majd kattintson az **OK** gombra.
 
@@ -618,10 +617,10 @@ Az 206.132.2-es verzió állapota a **Piszkozat** értékről a **Befejezett** �
 
 1. Nyissa meg a következőt: **Szervezeti adminisztráció** \> **Elektronikus jelentéskészítés** \> **Konfigurációk**.
 2. A **Konfigurációk** oldalon, a bal oldali panelen található konfigurációk fájában bontsa ki a **Számlamodell** \> **UBL értékesítési számla** \> **Peppol értékesítési számla** elemet, majd válassza a **Peppol értékesítési számla (Litware)** lehetőséget.
-3. A **Verziók** gyorslapon a kijelölt ER-formátumkonfiguráció **11.2.2.2** -es verziójának Piszkozat verziójához válassza az **Új alap** elemet.
-4. A **cél** verziómezőben hagyja jóvá az alap ER-formátumkonfiguráció **32.6.7** -os verziót, majd válassza az **OK** gombot .
+3. A **Verziók** gyorslapon a kijelölt ER-formátumkonfiguráció **11.2.2.2**-es verziójának Piszkozat verziójához válassza az **Új alap** elemet.
+4. A **cél** verziómezőben hagyja jóvá az alap ER-formátumkonfiguráció **32.6.7**-os verziót, majd válassza az **OK** gombot .
 
-    Az egyéni ER-formátum konfigurációjának piszkozatverziója újraszámozva **11.2.2.2** -ről **32.6.7.2** -re, így jelezheti, hogy a rendszer most az ER-formátumkonfigurációjának legutóbbi verziójában (32.6.7) szereplő módosításokkal összevont testreszabást tartalmazza.
+    Az egyéni ER-formátum konfigurációjának piszkozatverziója újraszámozva **11.2.2.2**-ről **32.6.7.2**-re, így jelezheti, hogy a rendszer most az ER-formátumkonfigurációjának legutóbbi verziójában (32.6.7) szereplő módosításokkal összevont testreszabást tartalmazza.
 
     Észreveheti, hogy a rendszer bizonyos új alap ütközéseket észlelt. Most manuálisan kell megoldania ezeket az ütközéseket.
 
@@ -629,11 +628,11 @@ Az 206.132.2-es verzió állapota a **Piszkozat** értékről a **Befejezett** �
 6. Minden egyes új alap ütközésnél válassza a **saját érték megtartása** beállítást, mert minden említett összetevőnél meg kell őriznie az egyéni adatmodell verziószámát.
 7. Válassza a **Mentés** lehetőséget.
 8. A **Leképezés** lapon válassza a **Számla** adatforrást a **Modell** típusnál, majd válassza a **Szerkesztés** parancsot.
-9. Válassza ki a **verzió** mezőben az Egyéni adatmodell **2** -es verzióját, majd kattintson az **OK** gombra.
+9. Válassza ki a **verzió** mezőben az Egyéni adatmodell **2**-es verzióját, majd kattintson az **OK** gombra.
 10. Válassza a **Mentés** lehetőséget.
 
     > [!NOTE]
-    > Az új alap művelet visszafordítható. Ha az új alapra helyezést vissza szeretné vonni, válassza ki a **Peppol értékesítési számla (Litware)** formátum **11.2.2.1** -es verzióját a **Verziók** gyorslapon, majd válassza ki a **Verzió beszerzése** elemet. A 32.6.7.2-es verziót ezután a rendszer **11.2.2.2** -esként számozza fel, és az 11.2.2.2-es piszkozat verzió tartalma megegyezik a 11.2.2.1-es verzió tartalmával.
+    > Az új alap művelet visszafordítható. Ha az új alapra helyezést vissza szeretné vonni, válassza ki a **Peppol értékesítési számla (Litware)** formátum **11.2.2.1**-es verzióját a **Verziók** gyorslapon, majd válassza ki a **Verzió beszerzése** elemet. A 32.6.7.2-es verziót ezután a rendszer **11.2.2.2**-esként számozza fel, és az 11.2.2.2-es piszkozat verzió tartalma megegyezik a 11.2.2.1-es verzió tartalmával.
 
 11. Zárja be a **Formátumtervező** lapot.
 12. Válassza a **Verziók** gyorslap **Állapot módosítása** \> **Befejezés** elemét, majd kattintson az **OK** gombra.

@@ -1,6 +1,6 @@
 ---
 title: Általános hibaelhárítás
-description: Ez a cikk a Finance and Operations és a Common Data Service alkalmazások közötti kettős írású adatintegrációk során felmerülő hibák elhárításával kapcsolatos általános információkat tartalmaz.
+description: Ez a cikk a Finance and Operations és a Dataverse alkalmazások közötti kettős írású adatintegrációk során felmerülő hibák elhárításával kapcsolatos általános információkat tartalmaz.
 author: RamaKrishnamoorthy
 manager: AnnBe
 ms.date: 03/16/2020
@@ -18,20 +18,22 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: c3352afd93dfc7c37a8af9dabaf85b7a1debad30
-ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
+ms.openlocfilehash: 6356ec6850667f32f9e9e4133686c40f0b6d76d7
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "3997254"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4688259"
 ---
 # <a name="general-troubleshooting"></a>Általános hibaelhárítás
 
 [!include [banner](../../includes/banner.md)]
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 
-Ez a cikk a Finance and Operations és a Common Data Service alkalmazások közötti kettős írású adatintegrációk során felmerülő hibák elhárításával kapcsolatos általános információkat tartalmaz.
+
+Ez a cikk a Finance and Operations és a Dataverse alkalmazások közötti kettős írású adatintegrációk során felmerülő hibák elhárításával kapcsolatos általános információkat tartalmaz.
 
 > [!IMPORTANT]
 > Előfordulhat, hogy az ebben a témakörben leírt problémák egy része a rendszergazda szerepkört vagy Microsoft Azure Active Directory (Azure AD) bérlői adminisztrátori hitelesítő adatait igénylik. Az egyes problémákat tárgyaló szakaszok leírják, hogy szükség van-e konkrét szerepkörre vagy hitelesítő adatokra.
@@ -51,11 +53,11 @@ A Package Deployer eszköz telepítését követően telepítse a megoldást tar
     ![A Dynamics365FinanceAndOperationsCommon.PackageDeployer.2.0.438 mappa tartalma](media/extract_package.png)
 
 3. Illessze be az összes másolt fájlt a Package Deployer eszköz **Eszközök** mappájába. 
-4. Futtassa a **PackageDeployer.exe** fájlt a Common Data Service-környezet kiválasztásához és a megoldások telepítéséhez.
+4. Futtassa a **PackageDeployer.exe** fájlt a Dataverse-környezet kiválasztásához és a megoldások telepítéséhez.
 
     ![Az Eszközök mappa tartalma](media/paste_copied_files.png)
 
-## <a name="enable-and-view-the-plug-in-trace-log-in-common-data-service-to-view-error-details"></a>A beépülő modul nyomkövetési naplójának engedélyezése és megtekintése a Common Data Service szolgáltatásban a hiba részleteinek megtekintéséhez
+## <a name="enable-and-view-the-plug-in-trace-log-in-dataverse-to-view-error-details"></a><a id="enable-view-trace"></a>A beépülő modul nyomkövetési naplójának engedélyezése és megtekintése a Dataverse szolgáltatásban a hiba részleteinek megtekintéséhez
 
 **A nyomkövetési napló bekapcsolásához és a hibák megtekintéséhez szükséges szerepkör:** Rendszergazda
 
@@ -74,7 +76,7 @@ Ha meg szeretné tekinteni a nyomkövetési naplót, hajtsa végre az alábbi l�
 
 ## <a name="enable-debug-mode-to-troubleshoot-live-synchronization-issues-in-finance-and-operations-apps"></a>Hibakeresési mód engedélyezése az Finance and Operations alkalmazások élő szinkronizálási problémáinak elhárításához
 
-**A hibák megtekintéséhez szükséges szerepkör:** a rendszeradminisztrátor A kettős írás hibák, amelyek származhatnak a Common Data Service szolgáltatásból, megjelenhetnek a Finance and Operations alkalmazásban. Bizonyos esetekben a hibaüzenet teljes szövege nem érhető el, mivel az üzenet túl hosszú, vagy személyes azonosításra alkalmas adatokat (PII) tartalmaz. A hibák részletes naplózását a következő lépések végrehajtásával kapcsolhatja be.
+**A hibák megtekintéséhez szükséges szerepkör:** a rendszeradminisztrátor A kettős írás hibák, amelyek származhatnak a Dataverse szolgáltatásból, megjelenhetnek a Finance and Operations alkalmazásban. Bizonyos esetekben a hibaüzenet teljes szövege nem érhető el, mivel az üzenet túl hosszú, vagy személyes azonosításra alkalmas adatokat (PII) tartalmaz. A hibák részletes naplózását a következő lépések végrehajtásával kapcsolhatja be.
 
 1. A Finance and Operations-alkalmazások minden projektkonfigurációjában van egy **IsDebugMode** tulajdonság a **DualWriteProjectConfiguration** entitásban. Nyissaa meg a **DualWriteProjectConfiguration** entitást az Excel-bővítmény használatával.
 
@@ -85,7 +87,7 @@ Ha meg szeretné tekinteni a nyomkövetési naplót, hajtsa végre az alábbi l�
 3. Futtassa a hibákat létrehozó esetet.
 4. A részletes naplók a DualWriteErrorLog táblában érhetők el. Az adatoknak a tábla böngészőjében való kereséséhez használja a következő URL-címet (helyettesítse az **XXX** részt a megfelelő elemmel):
 
-    `https://XXXaos.cloudax.dynamics.com/?mi=SysTableBrowser&tableName=>DualWriteErrorLog`
+    `https://XXXaos.cloudax.dynamics.com/?mi=SysTableBrowser&tableName=DualWriteErrorLog`
 
 ## <a name="check-synchronization-errors-on-the-virtual-machine-for-the-finance-and-operations-app"></a>Szinkronizálási hibák keresése a Finance and Operations alkalmazás virtuális gépén
 
@@ -99,9 +101,9 @@ Ha meg szeretné tekinteni a nyomkövetési naplót, hajtsa végre az alábbi l�
 6. Válassza az **Alkalmazás- és szolgáltatásnaplók \> Microsoft \> Dynamics \> AX-DualWriteSync \> Működő** részt.
 7. A legutóbbi hibák listájának áttekintése.
 
-## <a name="unlink-and-link-another-common-data-service-environment-from-a-finance-and-operations-app"></a>A Common Data Service-környezet leválasztása és másik csatolása a Finance and Operations-alkalmazásból
+## <a name="unlink-and-link-another-dataverse-environment-from-a-finance-and-operations-app"></a>A Dataverse-környezet leválasztása és másik csatolása a Finance and Operations-alkalmazásból
 
-**A környezet szétválasztásához szükséges szerepkör:** Rendszergazda vagy a Finance and Operations alkalmazásban vagy a Common Data Service szolgáltatásban.
+**A környezet szétválasztásához szükséges szerepkör:** Rendszergazda vagy a Finance and Operations alkalmazásban vagy a Dataverse szolgáltatásban.
 
 1. Bejelentkezés a Finance and Operations alkalmazásba.
 2. Nyissa meg a **Munkaterületek \> Adatkezelés** pontot, és válassza a **Kettős írás** csempét.
@@ -113,7 +115,7 @@ Ezután új környezet csatolható.
 
 ## <a name="unable-to-view-the-sales-order-line-information-form"></a>Nem lehet megtekinteni az értékesítésirendelés-sor adatai képernyőt 
 
-Amikor értékesítési rendelést hoz létre a Dynamics 365 Sales modulban, akkor ha a **+ Termékek hozzáadása** gombra kattint, előfordulhat, hogy a rendszer átirányítja a Dynamics 365 Projektműveletek rendelési sor űrlapjára. Az értékesítésirendelés-sor **adatainak** űrlapját nem lehet arról az űrlapról megtekinteni. Az **adatok** beállítása nem jelenik meg a legördülő listában az **új rendelési sor** alatt. Ennek az az oka, hogy a Projektműveletek már telepítve van a környezetben.
+Amikor értékesítési rendelést hoz létre a Dynamics 365 Sales modulban, akkor ha a **+ Termékek hozzáadása** gombra kattint, előfordulhat, hogy a rendszer átirányítja a Dynamics 365 Project Operations rendelési sor űrlapjára. Az értékesítésirendelés-sor **adatainak** űrlapját nem lehet arról az űrlapról megtekinteni. Az **adatok** beállítása nem jelenik meg a legördülő listában az **új rendelési sor** alatt. Ennek az az oka, hogy a Projektműveletek már telepítve van a környezetben.
 
 Az **Adatok** űrlapbeállítás újbóli engedélyezéséhez kövesse az alábbi lépéseket:
 1. Lépjen a **Rendeléssor** entitásra.

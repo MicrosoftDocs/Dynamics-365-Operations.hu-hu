@@ -3,24 +3,23 @@ title: Eltávolított vagy elavult Platform-funkciók
 description: Ez a témakör azokat a funkciókat ismerteti, amelyek el lettek távolítva a platformfrissítésekben a Finance and Operations alkalmazásokból vagy az eltávolításuk be van tervezve.
 author: sericks007
 manager: AnnBe
-ms.date: 09/24/2020
+ms.date: 12/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 51d1d0ed2ce95573ec123121999d73446a7e4ea4
-ms.sourcegitcommit: 6e0d6d291d4881b16a677373f712a235e129b632
+ms.openlocfilehash: ffd98016079ccab47864c821116c821b5df22e3b
+ms.sourcegitcommit: 069ed5789517b550065e5e2317658fec4027359e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "3971445"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "4689566"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Eltávolított vagy elavult Platform-funkciók
 
@@ -37,8 +36,16 @@ A Finance and Operations alkalmazások objektumaival kapcsolatban a [Technikai r
 
 ## <a name="platform-updates-for-version-10015-of-finance-and-operations-apps"></a>Platform-frissítések az Finance and Operations alkalmazások 10.0.15 verziójához
 
-> [!NOTE]
-> A 10.0.15-es egy előzetes verzió. A tartalom és a funkciók megváltozhatnak. Az előzetes kiadásokkal kapcsolatban további információkat az [Egyverziós szolgáltatásfrissítések GYIK](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/one-version) oldalon találhat.
+### <a name="internet-explorer-11-support-for-dynamics-365-is-deprecated"></a>Internet Explorer 11 támogatás a Dynamics 365-höz elavult
+
+|   |  |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | A 2020 decemberétől hatályos Microsoft Internet Explorer 11 támogatás az összes Dynamics 365 termékre elavulttá válik, ezért az Internet Explorer 11 nem lesz támogatott 2021. augusztus után.<br><br>Ez hatással lesz azokra, akik Dynamics 365 termékeket használnak, amelyeket a Internet Explorer 11 interfészen való használatra terveztek. 2021. augusztus után az Internet Explorer 11 nem lesz támogatott az ilyen Dynamics 365 termékek esetében. |
+| **Felváltotta másik szolgáltatás?**   | Azt ajánljuk, hogy a vevők térjenek át a Microsoft Edgere.|
+| **Érintett területek**         | Az összes Dynamics 365 termék |
+| **Telepítési beállítás**              | Összes|
+| **Állapot**                         | Elavult. Az Internet Explorer 11 támogatottsága 2021. augusztus után megszűnik.|
+
 
 ### <a name="visual-studio-add-in-to-apply-metadata-hotfixes"></a>Visual Studio-bővítmény a metaadatok gyorsjavításának alkalmazásához
 
@@ -52,10 +59,6 @@ A Finance and Operations alkalmazások objektumaival kapcsolatban a [Technikai r
 
 
 ## <a name="platform-updates-for-version-10014-of-finance-and-operations-apps"></a>Platform-frissítések az Finance and Operations alkalmazások 10.0.14 verziójához
-
-> [!NOTE]
-> A 10.0.14-es egy előzetes verzió. A tartalom és a funkciók megváltozhatnak. Az előzetes kiadásokkal kapcsolatban további információkat a [Szolgáltatásfrissítések elérhetősége](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases) oldalon találhat.
-
 
 ### <a name="online-users-page"></a>Online felhasználók oldala 
 
@@ -144,13 +147,13 @@ A Finance and Operations alkalmazások objektumaival kapcsolatban a [Technikai r
 | **Felváltotta másik szolgáltatás?**   | A Visual Studio 2017 váltja a Visual Studio 2015 verziót a telepített és szükséges verzióként. |
 | **Érintett területek**         | Visual Studio fejlesztőeszközök |
 | **Telepítési beállítás**              | Összes |
-| **Állapot**                         | Amikor bejelentik az új virtuális gépek (VM) rendelkezésre állását a Visual Studio 2017 megoldással, létező, csak Visual Studio 2015 megoldást használó VM-eket újra kell telepíteni a 2021-es 1. kiadási hullámra. |
+| **Állapot**                         | A 10.0.13-as verzió (37-es platformfrissítés) vagy újabb verzióra telepített virtuális gépek a Visual Studio 2017-et tartalmazzák. A 10.0.16-os verzió (40-es platformfrissítés) a Visual Studio 2015-ös támogatással rendelkező végleges kiadás. A csak Visual Studio 2015-tel rendelkező virtuális gépek nem tudnak frissíteni a 10.0.17-es verzióra (41-es platformfrissítés). |
 
 ### <a name="field-groups-containing-invalid-field-references"></a>Érvénytelen mező hivatkozásokat tartalmazó mezőcsoportok
 
 |   |  |
 |------------|--------------------|
-| **Elavulás/eltávolítás oka** | A tábla metaadatok definíciójában található mezőcsoportok olyan mezőhivatkozásokat tartalmazhatnak, amelyek nem érvényesek. Ezen mezőcsoportok telepítése esetén hibákat okozhatnak futásidőben a Financial Reporting és a Microsoft SQL Server Reporting Services (SSRS) szolgálatásokban. A 23-as platformfrissítés bevezetett egy fordítási *figyelmeztetést* , amely a metaadat-problémák kezelését teszi lehetővé. A Finance and Operations alkalmazások 10.0.11 verzióihoz tartozó platformfrissítések fordítási *hibaként* kategorizálják ezt a problémát.<p>Ezen hiba javításához kövesse az alábbi lépéseket.</p><ol><li>Távolítsa el az érvénytelen mezőhivatkozást a tábla a mezőcsoport-definíciójából.</li><li>Végezzen újrafordítást.</li><li>Győződjön meg arról, hogy minden hiba orvosolva lett.</li></ol> |
+| **Elavulás/eltávolítás oka** | A tábla metaadatok definíciójában található mezőcsoportok olyan mezőhivatkozásokat tartalmazhatnak, amelyek nem érvényesek. Ezen mezőcsoportok telepítése esetén hibákat okozhatnak futásidőben a Financial Reporting és a Microsoft SQL Server Reporting Services (SSRS) szolgálatásokban. A 23-as platformfrissítés bevezetett egy fordítási *figyelmeztetést*, amely a metaadat-problémák kezelését teszi lehetővé. A Finance and Operations alkalmazások 10.0.11 verzióihoz tartozó platformfrissítések fordítási *hibaként* kategorizálják ezt a problémát.<p>Ezen hiba javításához kövesse az alábbi lépéseket.</p><ol><li>Távolítsa el az érvénytelen mezőhivatkozást a tábla a mezőcsoport-definíciójából.</li><li>Végezzen újrafordítást.</li><li>Győződjön meg arról, hogy minden hiba orvosolva lett.</li></ol> |
 | **Felváltotta másik szolgáltatás?**   | Ez a fordítóhiba véglegesen lecseréli a fordítói figyelmeztetését.  |
 | **Érintett területek**         | Visual Studio fejlesztőeszközök |
 | **Telepítési beállítás**              | Összes |

@@ -11,19 +11,18 @@ ms.technology: ''
 ROBOTS: NOINDEX, NOFOLLOW
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
-ms.search.scope: Operations
 ms.custom: 221294
 ms.assetid: 357931ed-f843-4bf5-bc85-0da3de0619ec
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 03e7fcc2041363f9ddee8fdda9c4ea30bf89a9cb
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 0b3ede085533fee1bb779ed9da899f509a77fc0c
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812474"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693431"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-operations-version-1611-november-2016"></a>Új vagy módosult elemek a Dynamics 365 for Operations 1611-es verziójában (2016. november)
 
@@ -121,7 +120,7 @@ Ez a témakör a Dynamics 365 for Operations 1611 verziójában található új 
 | Az adott költségkategóriákba történő manuális költségbevitel megakadályozása. | A költségkategóriákra beállítható, hogy olyan hitelkártyás tranzakciót jelöljenek, amelyre nem módosítható a kategória. Például késedelmes fizetés miatti hitelkártyadíj. Mostantól beállítható egy költségkategória, amelynél a költségeket csak importálással lehet létrehozni. Ez a funkció megakadályozza, hogy az alkalmazottak manuálisan hozzanak létre egy költséget a kategóriában. Ugyancsak nem teszi lehetővé a kategória módosítását az importált, és ezt a kategóriát használó tranzakciók esetében. |
 | Nyugta csatolása több költséghez. | A költséggazdálkodásba feltöltött nyugták több költséggel is kapcsolatosak lehetnek. Korábban a több költséghez köthető nyugtákat mindegyik költséghez külön fel kellett tölteni. A nyugta most már csatolható egy már feltöltött költséghez, és csatolható egy másik költséghez ugyanabban a költségjelentésben. Ezenkívül ha feltölt egy nyugtát a költségjelentés fejlécébe, választhat egy vagy több sort, amelyhez a nyugta csatolása történik. |
 | Jövőbeli dátumú költségek létrehozása. | Például költségjelentés másolásakor egy adott költség tranzakciódátuma jövőbeli dátum is lehet. A korábbi kiadásokban nem voltak engedélyezettek a jövőbeli dátumú költségek. Most már létrehozhatók és menthetők jövőbeli dátumú költségek. Azonban nem küldhetők el jövőbeli dátumú költségek. |
-| Költség utáni adó beállítása államhoz/tartományhoz. | Néhány országban/régióban az egyes államokban/tartományokban felmerült költségek eltérő áfakulcsok hatálya alá tartozhatnak. A költség utáni adó most már állam/tartomány szintjén, és nem csak az ország/terület szintjén állítható be. Ha az **Állam/tartomány** mezőt üresen hagyja az **Adókonfiguráció** lapon, az áfacsoport az adott ország/régió minden államára/tartományára vonatkozik. |
+| Költség utáni adó beállítása államhoz/tartományhoz. | Néhány országban/régióban az egyes államokban/tartományokban felmerült költségek eltérő áfakulcsok hatálya alá tartozhatnak. A költség utáni adó most már állam/tartomány szintjén, és nem csak az ország/régió szintjén állítható be. Ha az **Állam/tartomány** mezőt üresen hagyja az **Adókonfiguráció** lapon, az áfacsoport az adott ország/régió minden államára/tartományára vonatkozik. |
 | Költség-hitelkártyatípusok beállítása | Korábban nem volt olyan lap, amelyen új hitelkártyatípusokat lehetett létrehozni a Költséggazdálkodás modulban történő használathoz (például Visa, MasterCard vagy AMEX). Most már létre lehet hozni hitelkártyatípusokat a Költséggazdálkodás modulban való használathoz. Az oldal a **Beállítás** területen található, a **Számítások és kódok** szakaszban. |
 | Többszintű jóváhagyási munkafolyamat meghatározása a költségjelentésekhez. | A költségjelentések új munkafolyamata támogatja a többszintű jóváhagyási folyamatot. Az alkalmazottak megadják az ideiglenes jóváhagyókat és a végleges jóváhagyókat a költségjelentés létrehozásakor. A munkafolyamat először az ideiglenes jóváhagyóhoz irányítja a költségjelentést. A költségjelentést az ezen a szinten történő jóváhagyása után a munkafolyamat továbbítja végleges jóváhagyásra a végső jóváhagyóhoz. |
 | Költségjelentéshez nem csatolt költségek létrehozása és karbantartása. | A felhasználók most már létrehozhatnak és karbantarthatnak költségeket (például úgy, hogy csatolnak vagy tételesen részleteznek nyugtákat, vagy vendégeket rendelnek hozzá) költségjelentés előzetes létrehozása nélkül. Egy vagy több költség kijelölhető és egy új költségjelentéshez adható, hogy elküldhetők legyenek jóváhagyásra. A költségek karbantartásához új lap érhető el: **Költséggazdálkodás** &gt; **Költségeim** &gt; **Költségek**. |
@@ -945,4 +944,4 @@ A Retail Modern POS jelenleg csak Windows 8.1 alkalmazásként elérhető el asz
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[Új vagy módosult elemek a Finance and Operations kezdőlapján](whats-new-changed.md)
+[Új vagy módosult elemek Finance and Operations kezdőlapján](whats-new-changed.md)

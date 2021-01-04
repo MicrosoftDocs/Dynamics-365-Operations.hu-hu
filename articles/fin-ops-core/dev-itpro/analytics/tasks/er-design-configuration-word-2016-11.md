@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, EROperationDesigner,  LedgerJournalTable, LedgerJournalTransVendPaym
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 208b1be20a8833afbf4929a7ceda706aeb5bda3b
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 9d4959b511022e1aa98544d23da6afcda1f6adf2
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3142086"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681925"
 ---
 # <a name="design-er-configurations-to-generate-reports-in-word-format"></a>ER konfigurációk tervezése jelentések Word-formátumú előállításához
 
@@ -54,7 +53,7 @@ Jelenleg az Excel-dokumentum használatos sablonként a kimenet OPENXML-formátu
 3. Kattintson az **Igen** gombra.
 4. Kattintson az **Új** elemre.
 5. Kattintson a **Fájl** lehetőségre.
-6. Kattintson a **Tallózás**lehetőségre. Keresse meg és válassza ki a korábban letöltött SampleVendPaymDocReport.docx dokumentumot. Kattintson az **OK** gombra. Válassza ki az előző lépésben letöltött sablont.  
+6. Kattintson a **Tallózás** lehetőségre. Keresse meg és válassza ki a korábban letöltött SampleVendPaymDocReport.docx dokumentumot. Kattintson az **OK** gombra. Válassza ki az előző lépésben letöltött sablont.  
 7. A **Sablon** mezőben adjon meg vagy válasszon ki egy értéket.
 
 ## <a name="extend-the-word-template-by-adding-a-custom-xml-part"></a>Terjessze ki a Word-sablont egy egyéni XML-rész hozzáadásával
@@ -76,7 +75,7 @@ A Word alkalmazásban nyissa meg ezt a dokumentumot, majd tegye a következőket
 2. Kattintson az **Igen** gombra. Adjon hozzá egy új sablont. Az előző alfeladat lépéseinek végrehajtása után válassza ki az előkészített és helyben mentett Word-dokumentumot. Ellenkező esetben válassza ki a korábban letöltött SampleVendPaymDocReportBounded.docx Microsoft Word-sablont.  
 3. Kattintson az **Új** elemre.
 4. Kattintson a **Fájl** lehetőségre.
-5. Kattintson a **Tallózás**lehetőségre. Keresse meg és válassza ki a korábban letöltött SampleVendPaymDocReportBounded.docx dokumentumot. Kattintson az **OK** gombra.
+5. Kattintson a **Tallózás** lehetőségre. Keresse meg és válassza ki a korábban letöltött SampleVendPaymDocReportBounded.docx dokumentumot. Kattintson az **OK** gombra.
 6. A **Sablon** mezőben válassza ki az előző lépésben letöltött dokumentumot.
 7. Kattintson a **Mentés** gombra.
 8. Zárja be a lapot.

@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: SysHelpSetup
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: 25391
 ms.assetid: 59bf39f8-1464-441e-8b23-9a856c73471b
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1498c09160acea2799a90e36c155523635895e5f
-ms.sourcegitcommit: 17fe0218e8e3f2f4c57c73c0c438a6ebf1ef32a6
+ms.openlocfilehash: b92ef15fc9f3f6a5ebb6ba4ea4eae1a0f7488995
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "3329852"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687792"
 ---
 # <a name="create-documentation-or-training-with-task-recorder"></a>Dokumentáció vagy képzés létrehozása Feladatrögzítő segítségével
 
@@ -37,12 +36,12 @@ Ez a témakör azt ismerteti, hogy mik azok a Feladatrögzítő és a feladat-ú
 <a name="learn-about-task-recorder"></a>További tudnivalók a Feladatrögzítőről
 -------------------------
 
-A Feladatrögzítő egy olyan eszköz, amellyel a termék felhasználói felületén (UI) elvégzett műveleteket jegyezheti fel. A Feladatrögzítő használatakor az összes, felhasználói felületben elvégzett, a szerveren végrehajtott esemény — beleértve az értékhozzáadást, beállítások megváltoztatását, adatok eltávolítását — rögzítésre kerül. A rögzített lépések összességét *feladatrögzítésnek*hívják. A Feladatrögzítő sokféleképpen használható:
+A Feladatrögzítő egy olyan eszköz, amellyel a termék felhasználói felületén (UI) elvégzett műveleteket jegyezheti fel. A Feladatrögzítő használatakor az összes, felhasználói felületben elvégzett, a szerveren végrehajtott esemény — beleértve az értékhozzáadást, beállítások megváltoztatását, adatok eltávolítását — rögzítésre kerül. A rögzített lépések összességét *feladatrögzítésnek* hívják. A Feladatrögzítő sokféleképpen használható:
 
--   **Feladatrögzítők feladat útmutatókként lejátszhatók.** A feladat-útmutatók a Súgó nyújtotta élmény szerves részét képezik. A feladat-útmutató irányított, vezérelt, interaktív élmény, amely végigvezet az üzleti folyamat lépésein. A felhasználónak teljesítenie kell minden lépést felugró kérdések (vagy "buborékdiagram") révén, amely keresztülmozog a felhasználói felületen és azon elemére mutat, amellyel a felhasználónak interakcióba kellene lépnie. A „buborékdiagram” arról is tájékoztatást ad, hogyan kellene interakcióba lépni az elemmel, például "Kattintson ide" vagy "Adjon meg egy értéket ebben a mezőben". A feladat-útmutató a felhasználó aktuális adathalmazára vonatkozóan fut és a bevitt adatok a felhasználó környezetében kerülnek mentésre.
+-   **Feladatrögzítők feladat útmutatókként lejátszhatók.** A feladat-útmutatók a Súgó nyújtotta élmény szerves részét képezik. A feladat-útmutató irányított, vezérelt, interaktív élmény, amely végigvezet az üzleti folyamat lépésein. A felhasználónak teljesítenie kell minden lépést felugró kérdések (vagy "buborékdiagram") révén, amely keresztülmozog a felhasználói felületen és azon elemére mutat, amellyel a felhasználónak interakcióba kellene lépnie. A „buborékdiagram” arról is tájékoztatást ad, hogyan kellene interakcióba lépni az elemmel, például "Kattintson ide" vagy "Adjon meg egy értéket ebben a mezőben". A feladat-útmutató a felhasználó aktuális adathalmazára vonatkozóan fut és a bevitt adatok a felhasználó környezetében kerülnek mentésre.
 -   **Feladatrögzítők Word dokumentumként menthetők.** Ez lehetővé teszi nyomtatható képzési útmutatók egyszerű létrehozását.
 
-Létrehozhatja saját feladatrögzítését, lejátszhatja a Microsoft által biztosított feladatrögzítéseket vagy módosíthatja a Microsoft által biztosított feladatrögzítéseket a saját konfigurációja szerint. A Feladatrögzítővel kapcsolatos további információkért lásd: [Feladatrögzítő](task-recorder.md).
+Létrehozhatja saját feladatrögzítését, lejátszhatja a Microsoft által biztosított feladatrögzítéseket vagy módosíthatja a Microsoft által biztosított feladatrögzítéseket a saját konfigurációja szerint. A Feladatrögzítővel kapcsolatos további információkért lásd: [Feladatrögzítő](task-recorder.md).
 
 ## <a name="plan-your-task-recording"></a>Tervezze meg feladatrögzítését
 Ha új feladatrögzítést készít vagy a rögzítéseit Microsoft feladatrögzítőre alapozza, vegye figyelembe a következőket.
@@ -62,7 +61,7 @@ Ha új feladatrögzítést készít vagy a rögzítéseit Microsoft feladatrögz
 
 **Ismerje meg a különböző jegyzettípusokat** A megjegyzések nem kötelezőek. Csak akkor adjon hozzá jegyzeteket, ha a felhasználó számára hasznos információt tartalmaznak.
 
--   **Cím**: A címhez tartozó jegyzet a Feladatrögzítő által automatikusan létrehozott lépés szövege előtt jelenik meg. A feladat útmutatóban a címjegyzet az automatikus létrehozott szöveg felett jelenik meg. E jegyzettípus használatával elmagyarázhatja, hogy a felhasználó miért is csinálja ezt a lépést, vagy további értelmezést adhat.
+-   **Cím**: A címhez tartozó jegyzet a Feladatrögzítő által automatikusan létrehozott lépés szövege előtt jelenik meg. A feladat útmutatóban a címjegyzet az automatikus létrehozott szöveg felett jelenik meg. E jegyzettípus használatával elmagyarázhatja, hogy a felhasználó miért is csinálja ezt a lépést, vagy további értelmezést adhat.
 
 Ez a szerkesztési ablak látható jegyzet hozzáadásakor, rögzítés készítése közben. Írja be a címjegyzetet a **Cím** mezőbe. 
 
@@ -82,20 +81,20 @@ Ez a szerkesztési ablak látható jegyzet hozzáadásakor, rögzítés készít
 
 [![A címmegjegyzések megjelenése a feladatok útmutatóban](./media/screen4.png)](./media/screen4.png)
 
--   **Tájékoztató lépés**: Ezek a megjegyzések létrehozhatóak jobb kattintással egy vezérlőelemen vagy bárhol a képernyőn &lt; **Feladatrögzítő** &lt; **Tájékoztató lépés hozzáadása**. A tájékoztató lépések számozott lépésként jelennek meg bárhol, ahova beszúrta őket, még akkor is, ha művelet nem volt a felhasználói felületen rögzítve. Űrlapszíntű információs lépést adhat hozzá vagy információs lépéshez hozzárendelt vezérlést. Ha az információs lépés képernyőhöz van hozzárendelve, a feladat útmutató "buborékdiagramja" jelenik meg a képernyőn, kurzor nélkül, a feladat útmutató lejátszása közben. Ha az információs lépés vezérlőelemhez van társítva, a feladat útmutató "buborékdiagramja" a vezérlőelemre elemre mutat, a feladat-útmutató lejátszása közben. A Súgó ablaktáblán egy információs lépésről szóló jegyzet jelenik meg számozott lépésként az Ön által beírt szöveggel. Használja az információs lépéseket a felhasználó következő lépésre való felkészítésére, az alkalmazáson kívüli lépések leírására, vagy más rögzítésekre való hivatkozásra (hiperhivatkozások létrehozása a jegyzetekben nem lehetséges).
+-   **Tájékoztató lépés**: Ezek a megjegyzések létrehozhatóak jobb kattintással egy vezérlőelemen vagy bárhol a képernyőn &lt; **Feladatrögzítő** &lt; **Tájékoztató lépés hozzáadása**. A tájékoztató lépések számozott lépésként jelennek meg bárhol, ahova beszúrta őket, még akkor is, ha művelet nem volt a felhasználói felületen rögzítve. Űrlapszíntű információs lépést adhat hozzá vagy információs lépéshez hozzárendelt vezérlést. Ha az információs lépés képernyőhöz van hozzárendelve, a feladat útmutató "buborékdiagramja" jelenik meg a képernyőn, kurzor nélkül, a feladat útmutató lejátszása közben. Ha az információs lépés vezérlőelemhez van társítva, a feladat útmutató "buborékdiagramja" a vezérlőelemre elemre mutat, a feladat-útmutató lejátszása közben. A Súgó ablaktáblán egy információs lépésről szóló jegyzet jelenik meg számozott lépésként az Ön által beírt szöveggel. Használja az információs lépéseket a felhasználó következő lépésre való felkészítésére, az alkalmazáson kívüli lépések leírására, vagy más rögzítésekre való hivatkozásra (hiperhivatkozások létrehozása a jegyzetekben nem lehetséges).
 
 **Határozza meg, milyen hosszú legyen a felvétel**
 
 -   A felhasználó általában vagy elolvassa vagy lejátssza a felvételt az elejétől a végéig, ezért ne kombináljon lépéseket vagy feladatokat, melyeket jobb külön elvégezni.
--   Lehetőleg ne rögzítsen több alfolyamatra kiterjedő hosszú változatokat. Például az "Üzleti ügyfélszolgálat működtetése" túl tág; válassza szét rövidebb feladatokra, például az "Visszáru elfogadása" és "Hozzáadás ajándékutalványhoz".
+-   Lehetőleg ne rögzítsen több alfolyamatra kiterjedő hosszú változatokat. Például az "Üzleti ügyfélszolgálat működtetése" túl tág; válassza szét rövidebb feladatokra, például az "Visszáru elfogadása" és "Hozzáadás ajándékutalványhoz".
 -   Ha egy feladat több különböző üzleti folyamat részeként hajtható végre, hozzon létre külön felvételt majd hivatkozzon rá a többi felvételben.
 -   Ha a folyamat több olyan feladatot tartalmaz, amelyeket a személy egyszerre végez el, egy felvételen tarthatja a feladatokat, például a "Funkcióprofilok beállítása és hozzárendelése" esetében.
 -   Ha olyasvalami, amit valaki csak egyszer végez el (például konfiguráció) és utána azonnal végrehajtható, de többször elvégezhető másik feladat, vagy magában is elvégezhető, válassza szét őket két feladatrögzítésre.
 
-**Döntse el, hol induljon a rögzítés a felhasználói felületen** Az oldal, amelyiken éppen van a feladatrögzítés indításakor, hatással van arra, hogy a feladatrögzítés melyik lapra vonatkozóan van megjelenítve. Például ha azt szeretné, hogy a feladatrögzítés a Súgó ablakban jelenjen meg, amikor a felhasználó a Főkönyvi paraméterek lapra kattint, a rögzítést a Főkönyvi paraméterek lapon kell kezdenie. **Felvétel mentése .axtr fájlként** Ha befejezte egy feladatrögzítés létrehozását vagy szerkesztését, több lehetősége is van, hogy hogyan szeretné letölteni vagy menteni a felvételt. Letöltheti a fájlt feladatrögzítő-csomagként (.axtr), nyers felvételfájlként (.xml), Word-dokumentumként vagy mentheti a fájlt egy LCS-tárba. Célszerű a feladatrögzítést mindig feladatrögzítő-csomagként menteni. Ez megkönnyíti a fájl karbantartását ha a későbbiekben jegyzetek vagy eljárások megváltoztatására lenne szükség. Ha Word-dokumentumként szeretné letölteni a fájlt, feladatrögzítő-csomagként is mentse azt.
+**Döntse el, hol induljon a rögzítés a felhasználói felületen** Az oldal, amelyiken éppen van a feladatrögzítés indításakor, hatással van arra, hogy a feladatrögzítés melyik lapra vonatkozóan van megjelenítve. Például ha azt szeretné, hogy a feladatrögzítés a Súgó ablakban jelenjen meg, amikor a felhasználó a Főkönyvi paraméterek lapra kattint, a rögzítést a Főkönyvi paraméterek lapon kell kezdenie. **Felvétel mentése .axtr fájlként** Ha befejezte egy feladatrögzítés létrehozását vagy szerkesztését, több lehetősége is van, hogy hogyan szeretné letölteni vagy menteni a felvételt. Letöltheti a fájlt feladatrögzítő-csomagként (.axtr), nyers felvételfájlként (.xml), Word-dokumentumként vagy mentheti a fájlt egy LCS-tárba. Célszerű a feladatrögzítést mindig feladatrögzítő-csomagként menteni. Ez megkönnyíti a fájl karbantartását ha a későbbiekben jegyzetek vagy eljárások megváltoztatására lenne szükség. Ha Word-dokumentumként szeretné letölteni a fájlt, feladatrögzítő-csomagként is mentse azt.
 
 ## <a name="create-your-task-recording"></a>Hozza létre saját feladatrögzítését
-Részletes leírásért lásd :[Feladatrögzítő erőforrásai](task-recorder.md).
+Részletes leírásért lásd: [Feladatrögzítő erőforrásai](task-recorder.md).
 
 ## <a name="copy-and-customize-microsofts-task-recordings"></a>A Microsoft feladatrögzítéseinek másolása és testreszabása
 Letöltheti és szerkesztheti a Microsoft feladatrögzítéseit a saját képzési anyagaihoz és súgódokumentációjához történő felhasználás érdekében. A Microsoft feladatrögzítéseinek letöltéséhez kövesse az alábbi lépéseket:
@@ -108,7 +107,7 @@ Letöltheti és szerkesztheti a Microsoft feladatrögzítéseit a saját képzé
 6.  A fastruktúrában válassza ki azt az üzleti folyamatok tára alcsomópontot, amelyhez a feladatrögzítés hozzá van rendelve.
 7.  Kattintson az **OK** gombra.
 8.  Kattintson a **Start** parancsra.
-9.  Ezen a ponton lépésenként haladjon végig a felvételen és változtassa meg bármelyik lépést az újrarögzítés közben. **Megjegyzés**: Ha csak a felvétel szövegét szeretné módosítani, megnyithatja a felvételt **Felvétel jegyzeteinek rögzítése** módban, és mentheti azt.
+9.  Ezen a ponton lépésenként haladjon végig a felvételen és változtassa meg bármelyik lépést az újrarögzítés közben. **Megjegyzés**: Ha csak a felvétel szövegét szeretné módosítani, megnyithatja a felvételt **Felvétel jegyzeteinek rögzítése** módban, és mentheti azt.
 10. Miután a felvétel végig lejátszásra került, kattintson **Leállítás** elemre a képernyő tetején található Feladatrögzítő sávon.
 11. Válassza ki, hogyan szeretné menteni a feladatrögzítést
 

@@ -1,6 +1,6 @@
 ---
 title: Egységes termékélmény
-description: Ez a témakör a termékadatok integrációját ismerteti a Finance and Operations alkalmazás és a Common Data Service között.
+description: Ez a témakör a termékadatok integrációját ismerteti a Finance and Operations alkalmazás és a Dataverse között.
 author: t-benebo
 manager: AnnBe
 ms.date: 12/12/2019
@@ -18,18 +18,20 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 3c564d580d2743d8a80cdf5667b1f95e00736d60
-ms.sourcegitcommit: afc43699c0edc4ff2be310cb37add2ab586b64c0
+ms.openlocfilehash: 46f2f846f1259d433630a69f17f7b8db9514e6fa
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "4000764"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680048"
 ---
 # <a name="unified-product-experience"></a>Egységes terméktapasztalat
 
 [!include [banner](../../includes/banner.md)]
 
-Ha egy üzleti ökoszisztéma olyan Dynamics 365-alkalmazásokból áll, mint a Finance, a Supply Chain Management vagy a Sales, akkor a vállalkozások ezeket az alkalmazásokat használják a termék adatainak forrásaként. Ennek az az oka, hogy ezek az alkalmazások megbízható termék-infrastruktúrát biztosítanak, kiegészítve a kifinomult árképzési koncepciókkal és az aktuális készlet pontos adataival. Azok a vállalkozások, amelyek külső termékéletciklus-kezelő (PLM) rendszert használnak a termék adatainak lekéréséhez, a termékeket becsatornázhatják a Finance and Operations-alkalmazásokból más Dynamics 365-alkalmazásokba. Az egységes termékélmény az integrált termékadat-modellt elérhetővé teszi a Common Data Service szolgáltatásban, így az alkalmazás minden felhasználója (beleértve a Power Platform-felhasználókat is) igénybe veheti Finance and Operations-alkalmazáskból származó részletes termékadatokat.
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
+Ha egy üzleti ökoszisztéma olyan Dynamics 365-alkalmazásokból áll, mint a Finance, a Supply Chain Management vagy a Sales, akkor a vállalkozások ezeket az alkalmazásokat használják a termék adatainak forrásaként. Ennek az az oka, hogy ezek az alkalmazások megbízható termék-infrastruktúrát biztosítanak, kiegészítve a kifinomult árképzési koncepciókkal és az aktuális készlet pontos adataival. Azok a vállalkozások, amelyek külső termékéletciklus-kezelő (PLM) rendszert használnak a termék adatainak lekéréséhez, a termékeket becsatornázhatják a Finance and Operations-alkalmazásokból más Dynamics 365-alkalmazásokba. Az egységes termékélmény az integrált termékadat-modellt elérhetővé teszi a Dataverse szolgáltatásban, így az alkalmazás minden felhasználója (beleértve a Power Platform-felhasználókat is) igénybe veheti Finance and Operations-alkalmazáskból származó részletes termékadatokat.
 
 Itt a termék adatmodellje a Sales megoldásból.
 
@@ -39,20 +41,20 @@ Itt a termék adatmodellje a Finance and Operations-alkalmazásokból.
 
 ![Adatmodell a Finance and Operations termékeihez](media/dual-write-products-5.jpg)
 
-Ez a két termékadat-modell integrálva lett a Common Data Service szolgáltatásba az alábbiakban látható módon.
+Ez a két termékadat-modell integrálva lett a Dataverse szolgáltatásba az alábbiakban látható módon.
 
 ![Adatmodell a Dynamics 365 alkalmazások termékeihez](media/dual-write-products-6.jpg)
 
-A termékekhez kapcsolódó kettős írású entitásleképezések csak egyirányú, csaknem valós idejű adatátvitelre vannak tervezve a Finance and Operations-alkalmazások és a Common Data Service között. A termék-infrastruktúra azonban nyitott, hogy szükség esetén kétirányú lehessen. Noha személyre szabható, ez azonban az Ön felelőssége; a Microsoft nem javasolja ezt a megközelítést.
+A termékekhez kapcsolódó kettős írású táblaleképezések csak egyirányú, csaknem valós idejű adatátvitelre vannak tervezve a Finance and Operations-alkalmazások és a Dataverse között. A termék-infrastruktúra azonban nyitott, hogy szükség esetén kétirányú lehessen. Noha személyre szabható, ez azonban az Ön felelőssége; a Microsoft nem javasolja ezt a megközelítést.
 
 ## <a name="templates"></a>Sablonok
 
-A termékinformációk tartalmazzák a termékhez és a termék meghatározásához kapcsolódó összes információt, például a termékdimenziókat, illetve a nyomon követési és tárolási dimenziókat. A következő táblázat bemutatja a termékek és a kapcsolódó információk szinkronizálására létrehozott entitás-leképezések gyűjteményét.
+A termékinformációk tartalmazzák a termékhez és a termék meghatározásához kapcsolódó összes információt, például a termékdimenziókat, illetve a nyomon követési és tárolási dimenziókat. A következő táblázat bemutatja a termékek és a kapcsolódó információk szinkronizálására létrehozott táblaleképezések gyűjteményét.
 
 Finance and Operations-alkalmazásoknak | Egyéb Dynamics 365 alkalmazások | Leírás
 -----------------------|--------------------------------|---
 Kiadott termékek V2 | msdyn\_sharedproductdetails | A **msdyn\_sharedproductdetails** entitás tartalmazza a termék meghatározására szolgáló mezőket a Finance and Operations-megoldásokból, illetve ez tartalmazza a termék pénzügyi és vezetési információit. 
-Common Data Service kiadott egyedi termékek | Termék | A **Termék** entitás a termék meghatározására szolgáló mezőket tartalmazza. Tartalmazza az egyedi termékeket (termék altípusú termékeket) és a termékváltozatokat. A következő táblázat a leképezéseket mutatja be.
+Dataverse kiadott egyedi termékek | Termék | A **Termék** entitás a termék meghatározására szolgáló mezőket tartalmazza. Tartalmazza az egyedi termékeket (termék altípusú termékeket) és a termékváltozatokat. A következő táblázat a leképezéseket mutatja be.
 Termékszám alapján azonosított vonalkód | msdyn\_productbarcodes | A termék vonalkódja a termékek egyedileg történő azonosítására szolgál.
 Alapértelmezett rendelésbeállítások | msdyn\_productdefaultordersettings
 Termékspecifikus alapértelmezett rendelésbeállítások | msdyn_productdefaultordersettings
@@ -63,27 +65,27 @@ Színek | msdyn\_productcolors
 Méretek | msdyn\_productsizes
 Stílusok | msdyn\_productsytles
 Konfigurációk | msdyn\_productconfigurations
-Alaptermékszínek | msdyn_sharedproductcolors | A **Megosztott termékszín** entitás azt jelzi, hogy egy adott alapterméknek milyen színei lehetnek. Ezt a koncepciót a program a Common Data Service szolgáltatásba is áthelyezi az adatok konzisztenciájának fenntartására.
-Alaptermékméretek | msdyn_sharedproductsizes | A **Megosztott termékméret** entitás azokat a méreteket jelzi, amelyekkel egy adott alaptermék rendelkezhet. Ezt a koncepciót a program a Common Data Service szolgáltatásba is áthelyezi az adatok konzisztenciájának fenntartására.
-Alaptermékstílusok | msdyn_sharedproductstyles | A **Megosztott termékstílus** entitás azt jelzi, hogy egy adott alapterméknek milyen stílusai lehetnek. Ezt a koncepciót a program a Common Data Service szolgáltatásba is áthelyezi az adatok konzisztenciájának fenntartására.
-Alaptermék-konfigurációk | msdyn_sharedproductconfigurations | A **Megosztott termékkonfiguráció** entitás azt jelzi, hogy egy adott alapterméknek milyen konfigurációi lehetnek. Ezt a koncepciót a program a Common Data Service szolgáltatásba is áthelyezi az adatok konzisztenciájának fenntartására.
+Alaptermékszínek | msdyn_sharedproductcolors | A **Megosztott termékszín** entitás azt jelzi, hogy egy adott alapterméknek milyen színei lehetnek. Ezt a koncepciót a program a Dataverse szolgáltatásba is áthelyezi az adatok konzisztenciájának fenntartására.
+Alaptermékméretek | msdyn_sharedproductsizes | A **Megosztott termékméret** entitás azokat a méreteket jelzi, amelyekkel egy adott alaptermék rendelkezhet. Ezt a koncepciót a program a Dataverse szolgáltatásba is áthelyezi az adatok konzisztenciájának fenntartására.
+Alaptermékstílusok | msdyn_sharedproductstyles | A **Megosztott termékstílus** entitás azt jelzi, hogy egy adott alapterméknek milyen stílusai lehetnek. Ezt a koncepciót a program a Dataverse szolgáltatásba is áthelyezi az adatok konzisztenciájának fenntartására.
+Alaptermék-konfigurációk | msdyn_sharedproductconfigurations | A **Megosztott termékkonfiguráció** entitás azt jelzi, hogy egy adott alapterméknek milyen konfigurációi lehetnek. Ezt a koncepciót a program a Dataverse szolgáltatásba is áthelyezi az adatok konzisztenciájának fenntartására.
 Minden termék | msdyn_globalproducts | A minden termék entitás tartalmazza a Finance and Operations-alkalmazások összes rendelkezésre álló termékét, a kiadott termékeket és a nem kiadott termékeket is.
 Egység | uoms
 Egységek átváltása | msdyn_ unitofmeasureconversions
 Termékspecifikus mértékegység-átváltás | msdyn_productspecificunitofmeasureconversion
 Termékkategóriák | msdyn_productcategories | A termékkategóriák mindegyike, valamint a szerkezetükkel és a jellemzőikkel kapcsolatos információk a termékkategória entitásban találhatók. 
-Termékkategóriák hierarchiái | msdyn_productcategoryhierarhies | A termékhierarchiák használatával kategóriákat vagy termékeket csoportosíthat. A kategória-hierarchiák a Common Data Service szolgáltatásban termékkategória-hierarchia entitás használatával érhetők el. 
+Termékkategóriák hierarchiái | msdyn_productcategoryhierarhies | A termékhierarchiák használatával kategóriákat vagy termékeket csoportosíthat. A kategória-hierarchiák a Dataverse szolgáltatásban termékkategória-hierarchia entitás használatával érhetők el. 
 Termékkategória-hierarchiához tartozó szerepkörök | msdyn_productcategoryhierarchies | A termékhierarchiák a D365 Finance and Operations különböző szerepköreiben használhatók. Azt határozzák meg, hogy melyik kategóriát használja az egyes szerepkörökben, amelyekben a termékkategória szerepkörentitáshoz használatos. 
 Termékkategóriák hozzárendelései | msdyn_productcategoryassignments | Ha terméket szeretne hozzárendelni egy kategóriához, akkor a termékkategória hozzárendelési entitását használhatja.
 
 ## <a name="integration-of-products"></a>Termékek integrálása
 
-Ebben a modellben a termék a következő két entitás kombinációjával van ábrázolva a Common Data Service: **Termék** és **msdyn\_sharedproductdetails** helyeken. Ahol az első egység a termék definícióját tartalmazza (a termék egyedi azonosítója, a termék neve és a leírás), a második entitás a termék szintjén tárolt mezőket tartalmazza. Ennek a két entitásnak a kombinációja a terméknek a készletezési egység (SKU) fogalma alapján történő meghatározására szolgál. Minden kiadott termék adatai megjelennek az említett entitásokban (Termék és Megosztott termék részletei). Az összes (kiadott és nem kiadott) termék nyomon követésére a **Globális termék** entitás szolgál. 
+Ebben a modellben a termék a következő két tábla kombinációjával van ábrázolva a Dataverse: **Termék** és **msdyn\_sharedproductdetails** helyeken. Ahol az első egység a termék definícióját tartalmazza (a termék egyedi azonosítója, a termék neve és a leírás), a második entitás a termék szintjén tárolt mezőket tartalmazza. Ennek a két táblának a kombinációja a terméknek a készletezési egység (SKU) fogalma alapján történő meghatározására szolgál. Minden kiadott termék adatai megjelennek az említett táblákban (Termék és Megosztott termék részletei). Az összes (kiadott és nem kiadott) termék nyomon követésére a **Globális termék** entitás szolgál. 
 
-Mivel a termék SKU-ként képviselteti magát, az egyedi termékek, alaptermékek és termékváltozatok koncepciója a következő módon rögzíthető Common Data Service szolgáltatásban:
+Mivel a termék SKU-ként képviselteti magát, az egyedi termékek, alaptermékek és termékváltozatok koncepciója a következő módon rögzíthető Dataverse szolgáltatásban:
 
 - **A termékek altípus termékkel rendelkező termékek** saját maguk által meghatározott termékek. Nem kell dimenziókat definiálni. Egy példa erre egy meghatározott könyv. Ezeknél a termékeknél egy rekord jön létre a **Termék** entitásban, és egy rekord jön létre a **msdyn\_sharedproductdetails** entitásban. Nem jön létre termékcsaládrekord.
-- Az **Alaptermékek** általános termékként használatosak, amelyek meghatározzák az üzleti folyamatokban történő működéséthez kapcsolódó definíciókat és szabályokat. Ezeknek a definícióknak alapján egyedei termékeket lehet létrehozni, amelyek a termék változatát jelentik. Például a póló az alaptermék, és a szín és a méret dimenzióként is megadható. A változatok adhatók ki, amelyek ezen dimenziók különböző kombinációi, például a kis kék póló vagy egy közepes zöld póló. Az integrációban egy rekord jön létre változatonként a terméktáblában. Ez a rekord tartalmazza a változatspecifikus adatokat, például a különböző dimenziókat. A termék általános információinak tárolása a **msdyn\_sharedproductdetails** entitásban történik. (Ez az általános információ az alaptermékben található.) Az alaptermék adatait a rendszer szinkronizálja Common Data Service szolgáltatásba a kiadott alaptermék létrehozásával (de a változatok megjelenése előtt).
+- Az **Alaptermékek** általános termékként használatosak, amelyek meghatározzák az üzleti folyamatokban történő működéséthez kapcsolódó definíciókat és szabályokat. Ezeknek a definícióknak alapján egyedei termékeket lehet létrehozni, amelyek a termék változatát jelentik. Például a póló az alaptermék, és a szín és a méret dimenzióként is megadható. A változatok adhatók ki, amelyek ezen dimenziók különböző kombinációi, például a kis kék póló vagy egy közepes zöld póló. Az integrációban egy rekord jön létre változatonként a terméktáblában. Ez a rekord tartalmazza a változatspecifikus adatokat, például a különböző dimenziókat. A termék általános információinak tárolása a **msdyn\_sharedproductdetails** entitásban történik. (Ez az általános információ az alaptermékben található.) Az alaptermék adatait a rendszer szinkronizálja Dataverse szolgáltatásba a kiadott alaptermék létrehozásával (de a változatok megjelenése előtt).
 - Az **Egyedi termékek** a termékek a termék összes altípusára és az összes termékváltozatra utalnak. 
 
 ![Adatmodell termékekhez](media/dual-write-product.png)
@@ -92,7 +94,7 @@ Ha a kettős írás funkció engedélyezve van, a Finance and Operations modul a
 
 Alapértelmezés szerint a Finance and Operations-alkalmazások termékeit szinkronizálja a rendszer a többi Dynamics 365-alkalmazással **Vázlat** állapotban. Ha azt szeretné, hogy az **Aktív** állapotú termék szinkronizálva legyen, hogy például közvetlenül tudja használni az értékesítési rendelések árajánlataiban, akkor az alábbi beállítást kell választani: a **Rendszer > Adminisztráció > Rendszeradminisztráció > Rendszerbeállítások > Sales** lapon válassza a **Termékek létrehozása az aktív állapotban = igen** értéket. 
 
-Ügyeljen rá, hogy a termékek szinkronizálása a Finance and Operations-alkalmazásokból a Common Data Service felé történik. Ez azt jelenti, hogy a termékentitás mezőiben szereplő értékek módosíthatók a Common Data Service szolgáltatásban, de ha a szinkronizálást aktiválják (ha egy termékmező módosul a Finance and Operations-alkalmazásban), akkor ez felülírja a Common Data Service értékeit. 
+Ügyeljen rá, hogy a termékek szinkronizálása a Finance and Operations-alkalmazásokból a Dataverse felé történik. Ez azt jelenti, hogy a termékentitás mezőiben szereplő értékek módosíthatók a Dataverse szolgáltatásban, de ha a szinkronizálást aktiválják (ha egy termékmező módosul a Finance and Operations-alkalmazásban), akkor ez felülírja a Dataverse értékeit. 
 
 [!include [symbols](../../includes/dual-write-symbols.md)]
 
@@ -104,7 +106,7 @@ Alapértelmezés szerint a Finance and Operations-alkalmazások termékeit szink
 
 ## <a name="product-dimensions"></a>Termékdimenziók 
 
-Termékdimenziók olyan jellemzők, amelyek termékváltozat azonosítására szolgálnak. A négy termékdimenzió (szín, méret, stílus és konfiguráció) a termék változatának meghatározásához hozzá van hozzárendelve a Common Data Service szolgáltatáshoz is. A következő ábra a Szín cikkdimenzió adatmodelljét mutatja be. Ugyanez a modell a méretekre, stílusokra és a konfigurációkra is érvényes. 
+Termékdimenziók olyan jellemzők, amelyek termékváltozat azonosítására szolgálnak. A négy termékdimenzió (szín, méret, stílus és konfiguráció) a termék változatának meghatározásához hozzá van hozzárendelve a Dataverse szolgáltatáshoz is. A következő ábra a Szín cikkdimenzió adatmodelljét mutatja be. Ugyanez a modell a méretekre, stílusokra és a konfigurációkra is érvényes. 
 
 ![Adatmodell a termékdimenziókhoz](media/dual-write-product-two.png)
 
@@ -118,7 +120,7 @@ Termékdimenziók olyan jellemzők, amelyek termékváltozat azonosítására sz
 
 Ha egy terméknek különböző a termékdimenziói vannak (például a az alaptermék mérete és szín termékdimenziók tartoznak), akkor mindegyik különböző termék (azaz a termék variánsa) ezen termékdimenziók kombinációja. A B0001 termékszámű termék például egy extra kis méretűfekete póló, és a B0002 termékszám egy kis fekete póló. Ebben az esetben a termékdimenziók meglévő kombinációinak meghatározása történik. Például az előző példából származó póló lehet extra kicsi és fekete, kicsi és fekete, közepes és fekete, illetve nagy és fekete, de nem lehet extra nagy és fekete. Más szóval az a termékdimenziók, amelyek az alaptermékhez tartozhatnak meghatározottak, és a változatokat ezen értékek alapján lehet kiadni.
 
-Annak érdekében, hogy nyomon követhesse a termékdimenziókat, amit egy alaptermék felvehet a következő entitások jönnek létre és lesznek leképezve a Common Data Service szolgáltatásban az egyes termékdimenziókhoz. A további tudnivalókat lásd: [Termékinformációk áttekintése](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/pim/product-information).
+Annak érdekében, hogy nyomon követhesse a termékdimenziókat, amit egy alaptermék felvehet a következő táblák jönnek létre és lesznek leképezve a Dataverse szolgáltatásban az egyes termékdimenziókhoz. A további tudnivalókat lásd: [Termékinformációk áttekintése](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/pim/product-information).
 
 [!include [product colors](includes/EcoResProductMasterColorEntity-msdyn-sharedproductcolors.md)]
 
@@ -132,7 +134,7 @@ Annak érdekében, hogy nyomon követhesse a termékdimenziókat, amit egy alapt
 
 ## <a name="default-order-settings-and-product-specific-default-order-settings"></a>Alapértelmezett rendelési beállítások és termékspecifikus alapértelmezett rendelési beállítások
 
-Az alapértelmezett rendelési beállítások határozzák meg azt a helyet és raktárt, ahol a cikkek beszerzése és tárolása történik, illetve azt a minimális, maximális, többszörös és szokásos mennyiséget, amely felhasználásra kerül a kereskedéshez vagy a készletgazdálkodáshoz, valamint az átfutási időket, a leállító jelzőket és a rendelési ígéret módszerét. Ezek az információk a Common Data Service rendszerben az alapértelmezett rendelési beállításokkal és a termékre vonatkozó alapértelmezett rendelésbeállítási entitással érhetők el. További információ az [Alapértelmezett rendelési beállítások cikkben](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/default-order-settings)olvasható.
+Az alapértelmezett rendelési beállítások határozzák meg azt a helyet és raktárt, ahol a cikkek beszerzése és tárolása történik, illetve azt a minimális, maximális, többszörös és szokásos mennyiséget, amely felhasználásra kerül a kereskedéshez vagy a készletgazdálkodáshoz, valamint az átfutási időket, a leállító jelzőket és a rendelési ígéret módszerét. Ezek az információk a Dataverse rendszerben az alapértelmezett rendelési beállításokkal és a termékre vonatkozó alapértelmezett rendelésbeállítási entitással érhetők el. További információ az [Alapértelmezett rendelési beállítások cikkben](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/default-order-settings)olvasható.
 
 [!include [product sizes](includes/InventProductDefaultOrderSettingsEntity-msdyn-productdefaultordersetting.md)]
 
@@ -140,7 +142,7 @@ Az alapértelmezett rendelési beállítások határozzák meg azt a helyet és 
 
 ## <a name="unit-of-measure-and-unit-of-measure-conversions"></a>Mértékegység és mértékegység-átváltások
 
-A mértékegységek és a kapcsolódó átváltás a diagramon látható adatmodellben érhetők el a Common Data Service szolgáltatásban.
+A mértékegységek és a kapcsolódó átváltás a diagramon látható adatmodellben érhetők el a Dataverse szolgáltatásban.
 
 ![Adatmodell mértékegységhez](media/dual-write-product-three.png)
 
@@ -152,15 +154,15 @@ A mértékegység fogalma integrálva van a Finance and Operations-alkalmazások
 
 [!include [product-specific unit of measure conversions](includes/EcoResProductSpecificUnitConversionEntity-msdyn-productspecificunitofmeasureconversions.md)]
 
-## <a name="initial-synchronization-of-units-data-matching-between-finance-and-operations-and-common-data-service"></a>Az egységadatok egyezésének eredeti kezdeti szinkronizálása a Finance and Operations és a Common Data Service között
+## <a name="initial-synchronization-of-units-data-matching-between-finance-and-operations-and-dataverse"></a>Az egységadatok egyezésének eredeti kezdeti szinkronizálása a Finance and Operations és a Dataverse között
 
 ### <a name="initial-synchronization-of-units"></a>Egységek kezdeti szinkronizálása
 
-Ha a kettős írás engedélyezett, a Finance and Operations rendszerből származó egységeket a rendszer szinkronizálja a többi Dynamics 365-alkalmazással. A Finance and Operations-alkalmazásokból a Common Data Service szolgáltatásban szinkronizált egységcsoportok olyan jelölővel rendelkeznek, amely mutatja, hogy „Külsőleg karbantartottak”.
+Ha a kettős írás engedélyezett, a Finance and Operations rendszerből származó egységeket a rendszer szinkronizálja a többi Dynamics 365-alkalmazással. A Finance and Operations-alkalmazásokból a Dataverse szolgáltatásban szinkronizált egységcsoportok olyan jelölővel rendelkeznek, amely mutatja, hogy „Külsőleg karbantartottak”.
 
 ### <a name="matching-units-and-unit-classesgroups-data-from-finance-and-operations-and-other-dynamics-365-apps"></a>Egyező egységek és egységosztályok/csoportok Finance and Operations- és más Dynamics 365-alkalmazásokból származó adatai
 
-Fontos megjegyezni, hogy az egység integrációs kulcsa az msdyn_symbol. Ennek megfelelően az értéknek egyedinek kell lennie a Common Data Service- vagy más Dynamics 365-alkalmazásokban. Mivel a többi Dynamics 365-alkalmazásban az „Egységcsoport azonosítója” és a „Név” határozza meg egy egység egyediségét, különböző eseteket kell figyelembe vennie az egységadatok Finance and Operations-alkalmazások és Common Data Service közötti egyeztetése során.
+Fontos megjegyezni, hogy az egység integrációs kulcsa az msdyn_symbol. Ennek megfelelően az értéknek egyedinek kell lennie a Dataverse- vagy más Dynamics 365-alkalmazásokban. Mivel a többi Dynamics 365-alkalmazásban az „Egységcsoport azonosítója” és a „Név” határozza meg egy egység egyediségét, különböző eseteket kell figyelembe vennie az egységadatok Finance and Operations-alkalmazások és Dataverse közötti egyeztetése során.
 
 A Finance and Operations-alkalmazások és más Dynamics 365-alkalmazások egyező/átfedő egységei:
 
@@ -169,7 +171,7 @@ A Finance and Operations-alkalmazások és más Dynamics 365-alkalmazások egyez
 
 A Finance and Operations-egységek és -egységosztályok nem léteznek más Dynamics 365-alkalmazásokban:
 
-A kettős írás részeként a Finance and Operations-alkalmazások egységcsoportjai és a megfelelő egységek más Dynamics 365-alkalmazásokban és a Common Data Service szolgáltatásban jönnek létre és szinkronizálódnak, az egységcsoportot pedig „Külsőleg karbantartottnak” állítja be a rendszer. Nincs szükség további rendszerindításra.
+A kettős írás részeként a Finance and Operations-alkalmazások egységcsoportjai és a megfelelő egységek más Dynamics 365-alkalmazásokban és a Dataverse szolgáltatásban jönnek létre és szinkronizálódnak, az egységcsoportot pedig „Külsőleg karbantartottnak” állítja be a rendszer. Nincs szükség további rendszerindításra.
 
 Más Dynamics 365-alkalmazások egységei, amelyek nem találhatók meg Finance and Operations-alkalmazásokban:
 
@@ -198,24 +200,24 @@ A termékirányelvek a termékek és a készletbeli jellemzőik meghatározásá
 
 ## <a name="integration-key-for-products"></a>Termékek integrációs kulcsa 
 
-Ha egyedileg szeretné azonosítani a termékeket a Dynamics 365 for Finance and Operations és a Common Data Service-termékek között, akkor integrációs kulcsot kell használni. A termékek esetében a **(termékszám)** az az egyedi kulcs, amely azonosít egy terméket a Common Data Service szolgáltatásban. Ez a következők összefűzésével jön létre: **(company, msdyn_productnumber)**. A **company** jelöli a jogi személyt a Finance and Operations szolgáltatásban; a **msdyn_productnumber** jelöli az adott termék termékszámát a Finance and Operations szolgáltatásban. 
+Ha egyedileg szeretné azonosítani a termékeket a Dynamics 365 for Finance and Operations és a Dataverse-termékek között, akkor integrációs kulcsot kell használni. A termékek esetében a **(termékszám)** az az egyedi kulcs, amely azonosít egy terméket a Dataverse szolgáltatásban. Ez a következők összefűzésével jön létre: **(company, msdyn_productnumber)**. A **company** jelöli a jogi személyt a Finance and Operations szolgáltatásban; a **msdyn_productnumber** jelöli az adott termék termékszámát a Finance and Operations szolgáltatásban. 
 
-Egy másik Dynamics 365-alkalmazás felhasználói esetén a termék a felhasználói felületen lévő **msdyn_productnumber** értékkel azonosítható (a mező címkéje a **Termékszám** ). A termék képernyőjén mind a vállalat, mind a msydn_productnumber látható. A (productnumber) mező, a termék egyedi kulcsa viszont nem jelenik meg. 
+Egy másik Dynamics 365-alkalmazás felhasználói esetén a termék a felhasználói felületen lévő **msdyn_productnumber** értékkel azonosítható (a mező címkéje a **Termékszám**). A termék képernyőjén mind a vállalat, mind a msydn_productnumber látható. A (productnumber) mező, a termék egyedi kulcsa viszont nem jelenik meg. 
 
-Ha alkalmazásokat épít a Common Data Service szolgáltatásban, akkor ügyeljen arra, hogy a **productnumber** elemet (az egyedi termékazonosító) használja integrációs kulcsként. Ne használja az **msdyn_productnumber** elemet, mert az nem egyedi. 
+Ha alkalmazásokat épít a Dataverse szolgáltatásban, akkor ügyeljen arra, hogy a **productnumber** elemet (az egyedi termékazonosító) használja integrációs kulcsként. Ne használja az **msdyn_productnumber** elemet, mert az nem egyedi. 
 
-## <a name="initial-synchronization-of-products-and-migration-of-data-from-common-data-service-to-finance-and-operations"></a>A termékek kezdeti szinkronizálása, és az adatok áttelepítése a Common Data Service szolgáltatásból a Finance and Operations szolgáltatásba
+## <a name="initial-synchronization-of-products-and-migration-of-data-from-dataverse-to-finance-and-operations"></a>A termékek kezdeti szinkronizálása, és az adatok áttelepítése a Dataverse szolgáltatásból a Finance and Operations szolgáltatásba
 
 ### <a name="initial-synchronization-of-products"></a>Termékek kezdeti szinkronizálása 
 
-Ha a kettős írás engedélyezett, a Finance and Operations alkalmazásokat rendszer szinkronizálja a Common Data Service szolgáltatással és a többi modellvezérelt alkalmazással a Dynamics 365 rendszerben. A Common Data Service szolgáltatásban és a többi Dynamics 365-alkalmazásban a kettős írás előtt kiadott alkalmazások nem frissülnek, és a rendszer nem egyezteti őket a Finance and Operations alkalmazások termékadataival.
+Ha a kettős írás engedélyezett, a Finance and Operations alkalmazásokat rendszer szinkronizálja a Dataverse szolgáltatással és a többi modellvezérelt alkalmazással a Dynamics 365 rendszerben. A Dataverse szolgáltatásban és a többi Dynamics 365-alkalmazásban a kettős írás előtt kiadott alkalmazások nem frissülnek, és a rendszer nem egyezteti őket a Finance and Operations alkalmazások termékadataival.
 
 ### <a name="matching-product-data-from-finance-and-operations-and-other-dynamics-365-apps"></a>A Finance and Operations és más Dynamics 365-alkalmazások termékadatainak egyeztetése
 
-Ha ugyanaz a termék szerepel (átfedő/egyező) a Finance and Operations és a Common Data Service szolgáltatásban és más Dynamics 365-alkalmazásokban, akkor a kettős írás engedélyezésekor sor kerül a Finance and Operations szolgáltatásból származó termékek szinkronizálására, és az egyes termékekhez ismétlődő rekordok jelennek meg a Common Data Service szolgáltatásban.
-Az előző helyzet elkerülése érdekében, ha más Dynamics 365-alkalmazásokban a Finance and Operations szolgáltatásban lévőkkel átfedő vagy egyező termékek vannak, akkor a kettős írást engedélyező rendszergazdának rendszerindítást kell végeznie a **Vállalat** (pl. „USMF”) és az **msdyn_productnumber** mezőn (például: „1234:Black:S”), mielőtt megtörténik a termékek szinkronizálása. Más szóval, a Common Data Service szolgáltatásban lévő termékben található két mezőben meg kell adni a termékszámot, valamint a Finance and Operations szolgáltatásban lévő azon megfelelő vállalatot, amelyhez egyeztetni kell a terméket. 
+Ha ugyanaz a termék szerepel (átfedő/egyező) a Finance and Operations és a Dataverse szolgáltatásban és más Dynamics 365-alkalmazásokban, akkor a kettős írás engedélyezésekor sor kerül a Finance and Operations szolgáltatásból származó termékek szinkronizálására, és az egyes termékekhez ismétlődő rekordok jelennek meg a Dataverse szolgáltatásban.
+Az előző helyzet elkerülése érdekében, ha más Dynamics 365-alkalmazásokban a Finance and Operations szolgáltatásban lévőkkel átfedő vagy egyező termékek vannak, akkor a kettős írást engedélyező rendszergazdának rendszerindítást kell végeznie a **Vállalat** (pl. „USMF”) és az **msdyn_productnumber** mezőn (például: „1234:Black:S”), mielőtt megtörténik a termékek szinkronizálása. Más szóval, a Dataverse szolgáltatásban lévő termékben található két mezőben meg kell adni a termékszámot, valamint a Finance and Operations szolgáltatásban lévő azon megfelelő vállalatot, amelyhez egyeztetni kell a terméket. 
 
-Amikor ezután megkezdődik a szinkronizálás, a Finance and Operations szolgáltatásból származó termékeket a rendszer szinkronizálja a Common Data Service szolgáltatásban és a többi Dynamics 365-alkalmazásban lévő egyeztetett termékekkel. Ez egyedi termékekre és termékváltozatokra is vonatkozik. 
+Amikor ezután megkezdődik a szinkronizálás, a Finance and Operations szolgáltatásból származó termékeket a rendszer szinkronizálja a Dataverse szolgáltatásban és a többi Dynamics 365-alkalmazásban lévő egyeztetett termékekkel. Ez egyedi termékekre és termékváltozatokra is vonatkozik. 
 
 
 ### <a name="migration-of-product-data-from-other-dynamics-365-apps-to-finance-and-operations"></a>A termékadatok áttelepítése más Dynamics 365-alkalmazásokból a Finance and Operations szolgáltatásba

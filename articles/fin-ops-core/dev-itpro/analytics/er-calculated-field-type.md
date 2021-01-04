@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: c68f0a0e2481c69add8c50a1581466ad0b1483c0
-ms.sourcegitcommit: 5472005274f2f94fba82dda90de128f39d8b8390
+ms.openlocfilehash: 3f21b323ddbf653bf8ca8dd1f879a6bdbddcdefc
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "3759911"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681256"
 ---
 # <a name="support-parameterized-calls-of-er-data-sources-of-the-calculated-field-type"></a>ER adatforrások paraméterezett hívásainak támogatása a Számított mezőtípusban
 
@@ -57,7 +56,7 @@ A következő fájlokat is le kell töltenie és helyben tárolnia.
 ## <a name="sign-in-to-your-rcs-instance"></a>Jelentkezzen be a RCS-példányba
 Ebben a példában létrehozzuk egy konfigurációt a Litware, Inc. mintavállalatra vonatkozóan. A lépések végrehajtásához először a következő eljárás lépéseit kell végrehajtani az RCS-ben: [Konfigurációszolgáltatók létrehozása, és megjelölésük aktívként](tasks/er-configuration-provider-mark-it-active-2016-11.md):
 
-1. Az alapértelmezett irányítópulton válassza az **Elektronikus jelentéskészítés**elemet.
+1. Az alapértelmezett irányítópulton válassza az **Elektronikus jelentéskészítés** elemet.
 2. Válassza a **Jelentéskészítési konfigurációk** elemet.
 3. A letöltött konfigurációkat importálja a következő sorrendben az RCS-be: adatmodell, metaadatok, modell-leképezés, formátum. Hajtsa végre a következő lépéseket mindegyik ER-konfiguráció esetében:
 
@@ -154,7 +153,7 @@ A megadott formátumot úgy javíthatja, hogy egy számított mezőt ad hozzá a
 3. A **Név** mezőbe írja be a következőt: **Adózási szint**.
 4. A **Típus** mezőben válassza ki a **Karakterlánc** lehetőséget.
 
-    A paraméterek argumentumának típusát csak primitív adattípusokkal lehet megadni. Ezért a **Rekordlista**, **Rekord**és **Enum** típus nem használhatók erre a célra.
+    A paraméterek argumentumának típusát csak primitív adattípusokkal lehet megadni. Ezért a **Rekordlista**, **Rekord** és **Enum** típus nem használhatók erre a célra.
 
     Az egyetlen számított mezőhöz meghatározható paraméterek maximális száma 8.
 

@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERSolutionTable, EROperationDesigner, ERLookupDesigner, ERComponentLookupStructureEditing
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: d32da76ee46ff5293ae8fefb16d251564b6be21a
-ms.sourcegitcommit: d6196d83c7b9166ddb4fe43a91e6bd0ad9da2099
+ms.openlocfilehash: 0ed1442403ae82dfc820212e3e235737f37f21a4
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "2694246"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679726"
 ---
 # <a name="configure-er-formats-to-use-parameters-that-are-specified-per-legal-entity"></a>ER formátumok konfigurálása a jogi személyenként meghatározott paraméterek használatára
 
@@ -50,7 +49,7 @@ Javasoljuk, hogy hajtsa végre az [ER adatforrások paraméterezett hívásainak
 
 ## <a name="import-er-configurations-into-rcs"></a>ER Konfigurációk importálása RCS-be
 
-A [Microsoft letöltőközpontból](https://go.microsoft.com/fwlink/?linkid=851448) töltse le az**ER adatforrások paraméterezett hívásainak támogatása a Számított mezőtípusban** nevű ZIP-fájlt. Ez a ZIP-fájl a következő ER-konfigurációkat tartalmazza, amelyeket helyileg kell kibontani és tárolni.
+A [Microsoft letöltőközpontból](https://go.microsoft.com/fwlink/?linkid=851448) töltse le az **ER adatforrások paraméterezett hívásainak támogatása a Számított mezőtípusban** nevű ZIP-fájlt. Ez a ZIP-fájl a következő ER-konfigurációkat tartalmazza, amelyeket helyileg kell kibontani és tárolni.
 
 | **Tartalom leírása**                        | **Fájlnév**                                        |
 |------------------------------------------------|------------------------------------------------------|
@@ -63,7 +62,7 @@ Ezután jelentkezzen be a RCS-példányba.
 
 Ebben a példában egy konfigurációt hoz létre a Litware, Inc. mintavállalatra vonatkozóan. A jelen eljárás befejezése előtt hajtsa végre a [Konfigurációszolgáltató létrehozása és aktívként történő megjelölése](tasks/er-configuration-provider-mark-it-active-2016-11.md) témakör lépéseit az RCS-ben.
 
-1.  Az alapértelmezett irányítópulton válassza az **Elektronikus jelentéskészítés**elemet.
+1.  Az alapértelmezett irányítópulton válassza az **Elektronikus jelentéskészítés** elemet.
 2.  Válassza a **Jelentéskészítési konfigurációk** elemet.
 3.  A korábban letöltött ER konfigurációkat importálja a következő sorrendben az RCS-be: adatmodell, metaadatok, modell-leképezés és formátum. Minden ER konfiguráció esetén hajtsa végre az alábbi lépéseket:
 

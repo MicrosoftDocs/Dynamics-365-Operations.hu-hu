@@ -3,26 +3,25 @@ title: Helyszíni telepítés kezdőlapja
 description: Ez a témakör az on-premises telepítésekhez nyújt információkat és hivatkozásokat.
 author: sericks007
 manager: AnnBe
-ms.date: 05/11/2020
+ms.date: 11/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 ms.custom: 55651
 ms.assetid: ''
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 90285c8f2e0e86e04c8f2ac401c324c888740e99
-ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
+ms.openlocfilehash: 54d236b7bca3e4529d5fff3ef71a2679b785a1a5
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "3367058"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679344"
 ---
 # <a name="on-premises-deployment-home-page"></a>Helyszíni telepítés kezdőlapja
 
@@ -67,10 +66,9 @@ Telepíthet Dynamics 365 Finance  + Operations (helyi) alkalmazást. Amikor egy 
 
 ## <a name="other-resources"></a>Egyéb erőforrások
 - [Hibaelhárítás helyszíni telepítéseknél](troubleshoot-on-prem.md)
-- [Forgatókönyvek a helyszíni környezetekben felmerülő problémák megoldásához](onprem-tsg-implementations.md)
+- [Forgatókönyvek a helyszíni környezetekben felmerült problémák megoldásához](onprem-tsg-implementations.md)
 - [Tanúsítványváltás](certificate-rotation-on-prem.md)
-- [Helyszíni diagnosztikák](on-premises-diagnostics.md)
-- [A helyszíni telepítésben nem implementált funkciók](../../fin-ops/get-started/features-not-implemented-on-prem.md)
+- [Helyszíni diagnosztika](on-premises-diagnostics.md)
 - [Eltávolított vagy elavult funkciók a Finance and Operations szolgáltatásnál](../migration-upgrade/deprecated-features.md)
 - [A szoftver életciklusára vonatkozó irányelv és a helyszíni kiadások](../migration-upgrade/on-prem-version-update-policy.md)
  

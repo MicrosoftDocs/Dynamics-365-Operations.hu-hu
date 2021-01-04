@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: ERWorkspace
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 89d36c305bc9210f7906cd4288e33e5028baecdb
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: f15b78d3ed5b4df47540f9f89cc69c0b535a7241
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771260"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680194"
 ---
 # <a name="prepare-application-specific-metadata-for-rcs-and-er"></a>Alkalmazásspecifikus metaadatok előkészítése az RCS és ER számára
 
@@ -185,7 +184,7 @@ Mielőtt teljesítené ezt az eljárást, végre kell hajtania a következő elj
     25. A faszerkezetben válassza ki ezt: **Intrastat \> \>Kapcsolatok \> IntrastatCommodity \> Kód**.
     26. A fán jelölje be a **Transaction = Intrastat \> Árucikk kódja** lehetőséget.
     27. Válassza a **Bind** elemet.
-    28. A **Validálás**kiválasztása.
+    28. A **Validálás** kiválasztása.
 
         > [!NOTE]
         > Az érvényesítés befejezését követően az adatmodell elemeit az adatforrások olyan cikkeihez társította, amelyek leírása az alkalmazási metaadatoknak a hivatkozott ER-metaadat konfigurációkból származó beállításával történik.
@@ -272,7 +271,7 @@ Amikor az eljárás befejeződött és a kapcsolat ellenőrzése sikeres volt, a
     > Ennél a pontnál már több, mint két alkalmazástábla szerepelt, mivel ez a leképezés a társított alkalmazás összes metaadatát felhasználja.
 
 8. Válassza a **Mégse** lehetőséget.
-9. A **Validálás**kiválasztása.
+9. A **Validálás** kiválasztása.
 
 Az adatmodell elemeit az adatforrások olyan cikkeihez társítottuk, amelyek leírása az ehhez a leképezéshez hozzárendelt összekapcsolt alkalmazás metaadatainak részleteivel történik.
 

@@ -1,6 +1,6 @@
 ---
 title: Kettős írás beállítása a Lifecycle Services modulból
-description: Ez a témakör azt mutatja be, hogyan lehet beállítani egy kettős írási kapcsolatot egy új Finance and Operations környezet és egy új Common Data Service környezet között a Microsoft Dynamics Lifecycle Services (LCS) megoldásból.
+description: Ez a témakör azt mutatja be, hogyan lehet beállítani egy kettős írási kapcsolatot egy új Finance and Operations környezet és egy új Dataverse környezet között a Microsoft Dynamics Lifecycle Services (LCS) megoldásból.
 author: RamaKrishnamoorthy
 manager: AnnBe
 ms.date: 01/06/2020
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: f49eba1748861af6ee3353a6c58005ee84ccae23
-ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
+ms.openlocfilehash: 25db9c58c3d09e44dcf11b48cae1a9eda4241c35
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "3998108"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683524"
 ---
 # <a name="dual-write-setup-from-lifecycle-services"></a>Kettős írás beállítása a Lifecycle Services modulból
 
@@ -31,14 +31,16 @@ ms.locfileid: "3998108"
 
 [!include [preview-banner](../../includes/preview-banner.md)]
 
-Ez a témakör azt mutatja be, hogyan lehet beállítani egy kettős írási kapcsolatot egy új Finance and Operations környezet és egy új Common Data Service környezet között a Microsoft Dynamics Lifecycle Services (LCS) megoldásból.
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
+Ez a témakör azt mutatja be, hogyan lehet beállítani egy kettős írási kapcsolatot egy új Finance and Operations környezet és egy új Dataverse környezet között a Microsoft Dynamics Lifecycle Services (LCS) megoldásból.
 
 ## <a name="prerequisites"></a>Előfeltételek
 
 A kettős írási kapcsolatot csak akkor lehet létrehozni, ha Ön adminisztrátor.
 
 + Hozzáféréssel kell rendelkeznie a bérlőhöz.
-+ Mind a Finance and Operations, mind a Common Data Service környezetek esetében adminisztrátornak kell lennie.
++ Mind a Finance and Operations, mind a Dataverse környezetek esetében adminisztrátornak kell lennie.
 
 ## <a name="set-up-a-dual-write-connection"></a>Kettős írási kapcsolat beállítása
 
@@ -49,20 +51,20 @@ A kettős írási kapcsolat beállításához kövesse az alábbi lépéseket.
 3. Válassza ki a verziót. 
 4. Válassza ki a topológiát. Ha csak egy topológia érhető el, akkor automatikusan ki van jelölve.
 5. Hajtsa végre a **Telepítési beállítások** varázsló első lépéseit.
-6. A **Common Data Service** lapon tegye a következők egyikét:
+6. A **Dataverse** lapon tegye a következők egyikét:
 
-    - Ha már egy Common Data Service környezet létesítve van a bérlő számára, akkor kiválaszthatja azt.
+    - Ha már egy Dataverse környezet létesítve van a bérlő számára, akkor kiválaszthatja azt.
 
-        1. Állítsa a **Common Data Service** konfigurálása beállítást **Igen** értékre.
+        1. Állítsa a **Dataverse** konfigurálása beállítást **Igen** értékre.
         2. Az **Elérhető környezetek** mezőben válassza ki azt a környezetet, amellyel integrálni szeretné a Finance and Operations-adatokat. A lista minden olyan környezetet tartalmaz, amelyen adminisztrátori jogosultságai vannak.
         3. Jelölje be az **Elfogadom** jelölőnégyzetet, annak jelzéséhez, hogy elfogadja-e a feltételeket.
 
-        ![A Common Data Service lap, ha már egy Common Data Service környezet létesítve van a bérlő számára](../dual-write/media/lcs_setup_1.png)
+        ![A Dataverse lap, ha már egy Dataverse környezet létesítve van a bérlő számára](../dual-write/media/lcs_setup_1.png)
 
-    - Ha a bérlő még nem rendelkezik Common Data Service-környezettel, akkor az új környezet lesz létesítve.
+    - Ha a bérlő még nem rendelkezik Dataverse-környezettel, akkor az új környezet lesz létesítve.
 
-        1. Állítsa a **Common Data Service** konfigurálása beállítást **Igen** értékre.
-        2. Adja meg egy nevet a Common Data Service környezetnek.
+        1. Állítsa a **Dataverse** konfigurálása beállítást **Igen** értékre.
+        2. Adja meg egy nevet a Dataverse környezetnek.
         3. Válassza ki azt a régiót, amelybe a környezetet szeretné létesíteni.
         4. Válassza ki a környezetre vonatkozó alapértelmezett nyelvet és pénznemet.
 
@@ -71,12 +73,12 @@ A kettős írási kapcsolat beállításához kövesse az alábbi lépéseket.
 
         5. Jelölje be az **Elfogadom** jelölőnégyzetet, annak jelzéséhez, hogy elfogadja-e a feltételeket.
 
-        ![A Common Data Service lap, amikor a bérlő még nem rendelkezik Common Data Service-környezettel](../dual-write/media/lcs_setup_2.png)
+        ![A Dataverse lap, amikor a bérlő még nem rendelkezik Dataverse-környezettel](../dual-write/media/lcs_setup_2.png)
 
 7. Hajtsa végre a **Telepítési beállítások** varázsló fennmaradó lépéseit.
-8. Miután a környezet állapota már **Telepített** , nyissa meg a környezeti részletek lapot. A **Common Data Service környezeti információ** szakasz az összekapcsolt Finance and Operations környezet és Common Data Service környezet nevét jeleníti meg.
+8. Miután a környezet állapota már **Telepített**, nyissa meg a környezeti részletek lapot. A **Dataverse környezeti információ** szakasz az összekapcsolt Finance and Operations környezet és Dataverse környezet nevét jeleníti meg.
 
-    ![Common Data Service környezeti információ szakasz](../dual-write/media/lcs_setup_3.png)
+    ![Dataverse környezeti információ szakasz](../dual-write/media/lcs_setup_3.png)
 
 9. A Finance and Operations környezethez tartozó adminisztrátornak be kell jelentkeznie a LCS-be, és ki kell választania a **CDS csatolása alkalmazásokhoz** hivatkozást az összekapcsolása befejezéséhez. A környezeti részletek lap az adminisztrátor kapcsolattartási adatait jeleníti meg.
 
@@ -84,7 +86,7 @@ A kettős írási kapcsolat beállításához kövesse az alábbi lépéseket.
 
 10. Az **Adatintegrációs** munkaterület megnyitásához a Finance and Operations környezetben és a rendelkezésre álló sablonok ellenőrzéséhez válassza a **CDS csatolása alkalmazásokhoz** lehetőséget.
 
-    ![A CDS csatolása alkalmazásokhoz gomb a Common Data Service környezeti információ területen](../dual-write/media/lcs_setup_4.png)
+    ![A CDS csatolása alkalmazásokhoz gomb a Dataverse környezeti információ területen](../dual-write/media/lcs_setup_4.png)
 
 > [!NOTE]
 > A környezetek nem csatolhatók le az LCS használatával. Egy környezet kapcsolatának megszüntetése érdekében nyissa meg az **Adatintegráció** munkaterületet a Finance and Operations környezetben , majd válassza a **Csatolás megszüntetése** parancsot.

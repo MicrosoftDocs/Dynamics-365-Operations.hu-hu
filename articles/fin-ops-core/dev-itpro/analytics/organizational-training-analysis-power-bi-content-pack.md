@@ -1,6 +1,6 @@
 ---
 title: Szervezeti képzés Power BI tartalom
-description: 'Ez a témakör a következőt ismerteti: Finance and Operations - Szervezeti képzés Power BI tartalom.'
+description: Ez a témakör a Finance and Operations – Szervezeti oktatás Power BI tartalmat ismerteti.
 author: jcart1106
 manager: AnnBe
 ms.date: 12/19/2017
@@ -10,25 +10,24 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Operations
 ms.custom: 263874
 ms.assetid: 45dbba14-aba6-4571-be0d-5d1aba3515d9
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 5c9025baccf34195c753fc50ad38cd3016c65b53
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: bbbb3069ffc43062e456721e189f671398514cfd
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2182968"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685835"
 ---
 # <a name="organizational-training-power-bi-content"></a>Szervezeti képzés Power BI tartalom
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör a következőt ismerteti: Finance and Operations - Szervezeti képzés Power BI tartalom.
+Ez a témakör a Finance and Operations – Szervezeti oktatás Power BI tartalmat ismerteti.
 
 ## <a name="reports-that-are-included-in-the-content-pack"></a>A tartalomcsomag által tartalmazott jelentések
 Miután csatlakoztatta a tartalmi csomagot a rendszer adataihoz, a jelentések megjelenítik a szervezet adatait. Ha még soha nem használt Microsoft Power BI-t, többet megtudhat róla az [Irányított tanulás oldal a Power BI szolgáltatáshoz](https://powerbi.microsoft.com/guided-learning/?WT.mc_id=PBIService_GetData) oldalon. A csomag által tartalmazott a jelentések táblázatokkal és diagramokkal jelenítenek meg információkat. Az alábbi táblázatban található ezeknek a jelentéseknek az ismertetése.

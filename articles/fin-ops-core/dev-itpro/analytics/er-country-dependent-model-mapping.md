@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERSolutionTable
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.2
-ms.openlocfilehash: 6c4b18a3cf2ba313756d5f761ef1beb2c3015516
-ms.sourcegitcommit: 56add4c49c35c65a75fa2ca5234927e7f7cd66ef
+ms.openlocfilehash: a9035f128a1db4bcd126f09c0fe30c1857fa884a
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "2781145"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680877"
 ---
 # <a name="configure-country-context-dependent-er-model-mappings"></a>Az országkörnyezet-függő modell-leképezések konfigurálása
 
@@ -144,8 +143,8 @@ Amint már láttuk, a következő módon lehet kiválasztani egy modell hozzáre
 - A modell-hozzárendelés definíciója, amelyet az ER formátum használ (**1. belépési pont** a jelen témakörben használt példákban).
 - Minden olyan leképezési konfiguráció, amely a megadott definícióval rendelkezik, és amely megfelel a konfigurált ország-/régióbeli környezeti korlátozásoknak, használható az ER-formátum futtatására (a jelen témakörben szereplő példákban: **Leképezés (általános)**, **Leképezés (általános) egyéni** és **Leképezés (FR)**).
 - Az ország-/régió környezeti korlátozásokat tartalmazó alapértelmezett modell-hozzárendelések a legmagasabb kiválasztási prioritással rendelkeznek (a jelen témakörben szereplő példákban: **Leképezés (FR)**).
-- Az ország-/régió környezeti korlátozásokat nem tartalmazó alapértelmezett modell-hozzárendelések a második legmagasabb kiválasztási prioritással rendelkeznek (a jelen témakörben szereplő példákban: **Leképezés (általános) egyéni**).
-- Az ország-/régió környezeti korlátozásokat tartalmazó modell-hozzárendelések kiválasztási prioritása magasabb, mint egy olyan modell-hozzárendelés, amely nem rendelkezik az ország-/régióbeli környezet korlátozásával.
+- Az ország/régió környezeti korlátozásokat nem tartalmazó alapértelmezett modell-hozzárendelések a második legmagasabb kiválasztási prioritással rendelkeznek (a jelen témakörben szereplő példákban: **Leképezés (általános) egyéni**).
+- Az ország/régió környezeti korlátozásokat tartalmazó modell-hozzárendelések kiválasztási prioritása magasabb, mint egy olyan modell-hozzárendelés, amely nem rendelkezik az ország-/régióbeli környezet korlátozásával.
 
 A következő táblázat a modell-hozzárendelési kiválasztéások eredményeivel kapcsolatban tartalmaz tájékoztatást a modell hozzárendelési beállítások minden egyes esetére vonatkozóan:
 
@@ -202,7 +201,7 @@ A táblában egy pluszjel (+) jelzi a modell-hozzárendelés konfigurációjána
 
 Figyelje meg, hogy a végrehajtott ER-formátumhoz új rekord lett hozzáadva a ER hibakeresési naplóhoz. Mivel a rekord **Szint** mezője az **információ** értékre van állítva, a rekord tájékoztató jellegű. Mivel a Formátum-összetevő mező **Leképezési konfiguráció** értékre van állítva, a rekord tájékoztatást nyújt a modell-leképezésről, amelyet a **Leképezés megismerési formátuma** ER formátum végrehajtása során használt a rendszer (amelyet a **Konfiguráció neve** mezőben kiválasztottak). A **létrejövő szöveg** mező tartalma azt jeleníti meg, hogy a jelentés futtatásához a **Leképezési (FR)** hozzárendelési összetevőt használja a rendszer, amely a **Leképezés (FR)** konfigurációban található.
 
-## <a name="appendix1"></a>1. függelék
+## <a name="appendix-1"></a><a name="appendix1"></a>1. függelék
 
 ### <a name="configure-a-sample-data-model"></a>Mintaadatmodell konfigurálása
 
@@ -212,7 +211,7 @@ Ebben a példában létrehozunk egy konfigurációt a Litware, Inc. mintavállal
 
 #### <a name="create-an-er-data-model-configuration"></a>ER adatmodell-konfiguráció létrehozása
 
-1.  Az alapértelmezett irányítópulton válassza az **Elektronikus jelentéskészítés**elemet.
+1.  Az alapértelmezett irányítópulton válassza az **Elektronikus jelentéskészítés** elemet.
 2.  Válassza a **Jelentéskészítési konfigurációk** csempét.
 3.  A **Konfigurációk** oldalon válassza a **Konfiguráció létrehozása** elemet.
 4.  Írja be a legördülő párbeszédpanel **Név** mezőjébe ezt: **Leképezések megismerési modellje**.
@@ -343,7 +342,7 @@ Figyelje meg, hogy ez az ER-konfiguráció 1. tervezeti verziója készen áll a
 4.  Válassza a **Mentés** lehetőséget.
 5.  Zárja be a lapot.
 
-## <a name="appendix2"></a>2. függelék
+## <a name="appendix-2"></a><a name="appendix2"></a>2. függelék
 
 ### <a name="configure-a-sample-model-mapping-for-general-customization"></a>Minta modell-leképezés konfigurálása az általános testreszabáshoz
 
@@ -403,7 +402,7 @@ Figyelje meg, hogy ez az ER-konfiguráció 1. tervezeti verziója készen áll a
 
 Ne feledje, hogy a létrehozott konfiguráció befejeződött 1-es verzióként lesz mentve.
 
-## <a name="appendix3"></a>3. függelék
+## <a name="appendix-3"></a><a name="appendix3"></a>3. függelék
 
 ### <a name="configure-a-sample-model-mapping-for-countryregion-specific-customization"></a>Minta modell-leképezés konfigurálása az ország/régióspecifikus testreszabáshoz
 

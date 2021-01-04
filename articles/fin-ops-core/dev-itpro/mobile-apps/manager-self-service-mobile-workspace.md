@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
-ms.search.scope: Operations, Human Resources
 ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: c2ad5f30ed0e69df1769eb0379b5da2865d4ce4f
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 6ac3bf0a6ce20866f749b0c14030b70770e5589c
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3005609"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680970"
 ---
 # <a name="my-team-mobile-workspace"></a>Saját csapat mobil munkaterület
 
@@ -84,16 +83,16 @@ A Finance and Operations mobilalkalmazás letöltése és telepítése:
 [![Lekérés frissítéshez](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
 ## <a name="view-team-members-by-using-the-my-team-mobile-workspace"></a>Csoporttagok megtekintése a Saját csapat mobil munkaterület használatával
-1.  A mobil alkalmazásában jelölje ki a **Saját csapat** munkaterületet. Megjelenik a csoporttagok listája. A lista emellett megjeleníti minden csapattag beosztását, valamint a közvetlen beosztottjait, ha vannak ilyenek.
+1.  A mobil alkalmazásában jelölje ki a **Saját csapat** munkaterületet. Megjelenik a csoporttagok listája. A lista emellett megjeleníti minden csapattag beosztását, valamint a tag közvetlen beosztottjait, ha vannak ilyenek.
 2.  Válasszon ki egy csapattagot. Megjelenik a **Csapattag összefoglalója** lap. Az ezen a lapon található információk tartalmazzák a csapattag születési dátumát, a szolgálati ideje dátuma, azt, hogy hány éve foglalkoztatott, a jelenlegi beosztásban eltöltött évek számát, valamint a kompenzációs adatokat.
 
 ## <a name="view-extended-team-members-by-using-the-my-team-mobile-workspace"></a>Bővített csoport tagjainak megtekintése a Saját csapat mobil munkaterület használatával
-1.  A mobil alkalmazásában jelölje ki a **Saját csapat** munkaterületet. Megjelenik a csoporttagok listája. A lista emellett megjeleníti minden csapattag beosztását, valamint a közvetlen beosztottjait, ha vannak ilyenek.
+1.  A mobil alkalmazásában jelölje ki a **Saját csapat** munkaterületet. Megjelenik a csoporttagok listája. A lista emellett megjeleníti minden csapattag beosztását, valamint a tag közvetlen beosztottjait, ha vannak ilyenek.
 1.  Válassza ki a **Közvetlen beosztottak** hivatkozást. Megjelenik a bővített csoport tagjainak listája.
 1.  Válasszon ki egy csapattagot. Megjelenik a **Csapattag összefoglalója** lap. Az ezen a lapon található információk tartalmazzák a csapattag születési dátumát, a szolgálati ideje dátuma, azt, hogy hány éve foglalkoztatott, a jelenlegi beosztásban eltöltött évek számát, valamint a kompenzációs adatokat.
 
 ## <a name="send-praise-about-team-members-by-using-the-my-team-mobile-workspace"></a>Pozitív visszajelzés a csoporttagokkal kapcsolatban a Saját csapat mobil munkaterület használatával
-1.  A mobil alkalmazásában jelölje ki a **Saját csapat** munkaterületet. Megjelenik a csoporttagok listája. A lista emellett megjeleníti minden csapattag beosztását, valamint a közvetlen beosztottjait, ha vannak ilyenek.
+1.  A mobil alkalmazásában jelölje ki a **Saját csapat** munkaterületet. Megjelenik a csoporttagok listája. A lista emellett megjeleníti minden csapattag beosztását, valamint a tag közvetlen beosztottjait, ha vannak ilyenek.
 1.  Válasszon ki egy csapattagot. Megjelenik a **Csapattag összefoglalója** lap.
 1.  Válassza ki a **Dicséret küldése** lehetőséget. 
 1. Adja meg az elküldeni kívánt pozitív visszajelzés szövegét. 

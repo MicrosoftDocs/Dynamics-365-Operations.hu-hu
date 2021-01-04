@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: EROperationDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-07-01
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: b5534c9ed0ad6cab0bc827ff626bf65a34f9df08
-ms.sourcegitcommit: b92c3e1b3403d0455fc4e0bf9132d6bc0d7aba5e
+ms.openlocfilehash: 9aa019e20b218fdaad4659fa65d9df629069204b
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3138946"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680734"
 ---
 # <a name="defer-the-execution-of-sequence-elements-in-er-formats"></a>A szekvenciaelemek végrehajtásának elhalasztása az ER-formátumokban
 
@@ -88,7 +87,7 @@ A kezdés előtt le kell tölteni és menteni kell a minta ER-megoldás követke
     1. Válassza az **Exchange** elemet, majd válassza az **XML-fájlból történő betöltést**.
     2. Válassza a **Tallózás** elemet, keresse meg és válassza ki a **Format to learn deferred sequences.1.1.xml** fájlt, majd majd kattintson az **OK** gombra.
 
-6. A konfigurációs fában bontsa ki a **Model to learn deferred elements**elemet.
+6. A konfigurációs fában bontsa ki a **Model to learn deferred elements** elemet.
 7. Tekintse át a konfigurációs fában importált ER-konfigurációk listáját.
 
     ![Importált ER-konfigurációk a Konfigurációk oldalon](./media/ER-DeferredSequence-Configurations.png)

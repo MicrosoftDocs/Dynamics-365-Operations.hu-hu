@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 220314
 ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 96426ce54ec1b37c6751d990503d95960c2913df
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: de31469e79addfb82b3b57e647ff82e4d254881a
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771306"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4688125"
 ---
 # <a name="design-er-configurations-to-fill-in-pdf-templates"></a>A PDF-sablonokat kitöltő ER-konfigurációk megtervezése
 
@@ -145,7 +144,7 @@ A következő ábra a jelentés további oldalainak PDF-sablonját jeleníti meg
 
 11. Állítsa a **Csoportmezők** beállítást **Igen** értékre. Ha a kiválasztott PDF-dokumentumon minden mezőcsoport szerepel, akkor a rendszer ezekkel a létrejövő ER formátum elemeit csoportosítja. Erre a célra egy **Mezőcsoport** formátumelem jön létre.
 
-    Ha ez a beállítás **Nem**értékre van állítva, akkor a rendszer a szükséges ER formátumelemeket olyan egyszerű elemlistaként fogja létrehozni, amelyet a létrejövő **PDF-fájl** formátumelem alá ágyaz be.
+    Ha ez a beállítás **Nem** értékre van állítva, akkor a rendszer a szükséges ER formátumelemeket olyan egyszerű elemlistaként fogja létrehozni, amelyet a létrejövő **PDF-fájl** formátumelem alá ágyaz be.
 
 12. Válassza ki az **OK** lehetőséget.
 
@@ -230,7 +229,7 @@ Ezután importálja a korábban letöltött minta ER formátumot, amellyel PDF-f
         SPLITLIST (Totals.CommodityRecord,42)
 
     - A **Paging.Pages** adatforrásban szerepel a **Paging.Pages.Enumerated** elem, amely a kötegben szereplő minden egyes rekord részleteit visszaadja. Ezek az adatok tartalmazzák a rekord sorszámát a jelenlegi kötegben ( a **Paging.Pages.Enumerated.Number** mezőt). A **Paging.Pages.Enumerated.Number** mezőt a rendszer a **PDF mező** formátumelemek **Név** kifejezésében használja mezőnevek dinamikus létrehozásához, amely a kötegben szereplő tranzakció számán alapul. A létrejövő mező neve ezután a használt PDF-sablon megfelelő PDF-mezőjének kitöltésére szolgál.
-    - A **PDF csoport** típus **Kimenet \> N.oldal \> 2. részlet**formátumeleme a **Paging.PageN.Enumerated** adatforráshoz van közve (vagy **\@.Enumerated** ha a **Relatív útvonal** nézet mód van használatban), amely a **Rekordlista** típushoz tartozik. Éppen ezért a futáridő során az adott PDF-csoport beágyazott elemeit a rendszer a hozzákötött rekordlistából származó minden egyes rekordhoz kitölti. Ily módon az egyéni PDF-sorok virtuálisan akkor jönnek létre, amikor a **Paging.PageN.Enumerated** lista 42 rekordjából minden N-edik elemhez kitöltésre kerülnek a következő PDF-mezők: Dátum N, Útvonal N, Árucikk N stb. Ezért ebben az értelemben az adott **Mezőcsoport** formátumelem viselkedése hasonlít az **XML \> Sorozat** és a **Szöveg \> Sorozat** formátumelemére.
+    - A **PDF csoport** típus **Kimenet \> N.oldal \> 2. részlet** formátumeleme a **Paging.PageN.Enumerated** adatforráshoz van közve (vagy **\@.Enumerated** ha a **Relatív útvonal** nézet mód van használatban), amely a **Rekordlista** típushoz tartozik. Éppen ezért a futáridő során az adott PDF-csoport beágyazott elemeit a rendszer a hozzákötött rekordlistából származó minden egyes rekordhoz kitölti. Ily módon az egyéni PDF-sorok virtuálisan akkor jönnek létre, amikor a **Paging.PageN.Enumerated** lista 42 rekordjából minden N-edik elemhez kitöltésre kerülnek a következő PDF-mezők: Dátum N, Útvonal N, Árucikk N stb. Ezért ebben az értelemben az adott **Mezőcsoport** formátumelem viselkedése hasonlít az **XML \> Sorozat** és a **Szöveg \> Sorozat** formátumelemére.
 
 3. A fastruktúrában bontsa ki a **Kimenet \> N. oldal \> Adatok 2** csomópontot.
 4. A fastruktúrában válassza a **Kimenet \> N. oldal \> Adatok 2 \> PageFooter** elemet.

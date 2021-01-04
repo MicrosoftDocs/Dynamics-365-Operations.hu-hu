@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e06fdda7d2d73c3fe4a4b9ee5bd44e6ef857b8d5
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 77783d629afc9abf30cdc48534fbb26eba5f8811
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3142243"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681973"
 ---
 # <a name="define-the-dependency-of-er-configurations-on-other-components"></a>ER-konfigurációk függőségének meghatározása más összetevőkhöz
 
@@ -47,7 +46,7 @@ Ez az eljárás a Rendszergazda vagy az Elektronikus jelentések fejlesztője sz
 5. Kattintson az Új lehetőségre.
 6. Válassza a Termék előfeltételeként szükséges összetevő lehetőséget.
 7. Válassza a Microsoft Dynamics 365 for Operations (1611) lehetőséget.
-8. A Verzió mezőbe írja be a következő értéket: [7.1.1541.3036,8).
+8. A Verzió mezőbe írja be a következő értéket: '[7.1.1541.3036,8).
     * [7.1.1541.3036,8)  
     * A beírt függőségeket a rendszer akkor értékeli ki, amikor ezt a beállítást letölti valamely ER-tárházból. A rendszer ezt a konfigurációs verziót tölti le az ER-tárházból, ha a Minta adatmodell konfiguráció 1-es verziója már fennáll, vagy korábban le volt töltve. Amennyiben korábban letöltötték, a kitöltését a Finance and Operations alkalmazásban kell elvégezni, amelynek verziója kötelezően 7.1.1541.3036 vagy újabb verzió, de nem haladhatja meg a 8-as főverziót.   
 9. Kattintson a Mentés gombra.
@@ -60,7 +59,7 @@ Ez az eljárás a Rendszergazda vagy az Elektronikus jelentések fejlesztője sz
 16. Kattintson az Új lehetőségre.
 17. Válassza a Termék előfeltételeként szükséges összetevő lehetőséget.
 18. Válassza ki a Microsoft Dynamics AX 7.0 RTW verziót.
-19. A Verzió mezőbe írja be a következő értéket: [7.0.1265.3015,7.1).
+19. A Verzió mezőbe írja be a következő értéket: '[7.0.1265.3015,7.1).
     * [7.0.1265.3015,7.1)  
     * A függőségeket a rendszer akkor értékeli ki, amikor a beállítást letölti valamely ER-tárházból. A rendszer ezt a konfigurációs verziót tölti le az ER-tárházból, ha a Minta adatmodell konfiguráció 1-es verziója már fennáll, vagy korábban le volt töltve. Amennyiben korábban letöltötték, a kitöltését a Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition programban kell elvégezni, amelynek verziója kötelezően 7.0.1265.3015 vagy újabb verzió, de nem haladhatja meg a 1-as alverziót.   
 20. Kattintson a Mentés gombra.

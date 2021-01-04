@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 58881
 ms.assetid: 0af492df-a84e-450c-8045-78ef1211abaf
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 318c6edc03153e02c2c4f23b07f33e8d6ebe9737
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 92d03f08fc5e34402f10068ed770b1f724cfd3a8
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2182991"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685859"
 ---
 # <a name="modify-row-definition-cells"></a>Sordefiniáló cellák módosítása
 
@@ -107,7 +106,7 @@ A **Formátum Kód** cella előre megformázott lehetőségeket kínál az adott
     |-------------------------------|-----------------------------------|--------|
     | (Nincs)                        |                                   | Törli a **Formátum Kód** cellát. |
     | TOT                           | Összesen                             | Azonosítja a matematikai operátorokat használó sorokat a **Kapcsolódó Képletek/Sorok/Egységek** oszlopban. Az összegezők mindössze egyszerű műveleteket tartalmazhat, mint például **+** vagy **-**. |
-    | CAL                           | Számítás                       | Azonosítja a matematikai operátorokat használó sorokat a **Kapcsolódó Képletek/Sorok/Egységek** oszlopban. A számítások tartalmazhatnak összetett műveleteket, mint például **+**, **-**, **\***, **/** és **IF/THEN/ELSE** utasítások. |
+    | CAL                           | Számítás                       | Azonosítja a matematikai operátorokat használó sorokat a **Kapcsolódó Képletek/Sorok/Egységek** oszlopban. A számítások tartalmazhatnak összetett műveleteket, mint például **+**, **-**, **\**_, _*/** és **IF/THEN/ELSE** utasítások. |
     | DES                           | Leírás                       | Egy fejléc sort, vagy egy üres sort azonosít a jelentésben. |
     | LFT RGT CEN                   | Bal Jobb Közép                 | A sor leíró szöveget jelentéslapra helyezi, függetlenül a szöveg igazításától az oszlopdefinícióban. |
     | CBR                           | Alapsor Módosítása                   | Azonosítja a sort, ami az alapsor lesz az oszlom számításokhoz. |
@@ -175,7 +174,7 @@ A sordefiníció **Formátum Kódja** oszlopában, a **DES**, **LFT**, **RGT**, 
 
 ### <a name="example-of-preventing-printing-of-rows"></a>Példa a sorok nyomtatásának megelőzésére
 
-A következő példában, Phyllis szeretné megakadályozni, hogy a jelentésének az **Összes Készpénz** sorában, a fejléc és az aláhúzások nyomtatásra kerüljenek, mivel nem volt tevékenység a készpénzszámlák egyikén sem. Ezért, a 220-ik sorban (amely, ahogy azt a **---** formátumkód jelzi, egy formázási sor), a **Kapcsolódó Képletek/Sorok/Egységek** cellába beír **250**-et, ami az elrejteni kívánt összegsor sorkódja.
+A következő példában, a felhasználó szeretné megakadályozni, hogy a jelentésének az **Összes Készpénz** sorában, a fejléc és az aláhúzások nyomtatásra kerüljenek, mivel nem volt tevékenység a készpénzszámlák egyikén sem. Ezért, a 220-ik sorban (amely, ahogy azt a **---** formátumkód jelzi, egy formázási sor), a **Kapcsolódó Képletek/Sorok/Egységek** cellába beír **250**-et, ami az elrejteni kívánt összegsor sorkódja.
 
 [![RelatedRowsRowDefinition](./media/relatedrowsrowdefinition-1024x144.png)](./media/relatedrowsrowdefinition.png)
 
@@ -416,7 +415,7 @@ Alapértelmezés szerint a jelentéstervező nem nyomtat ki olyan sorokat, amely
 3. A módosítások mentéséhez kattintson a **Fájl** menü **Mentés** parancsára.
 
 ## <a name="use-wildcard-characters-and-ranges-in-a-row-definition"></a>Helyettesítő karakterek és a tartományok használata a sordefinícióban
-Ha természetes szegmensértéket ír be a **Dimenziók** párbeszédpanelen, helyettesítő karaktereket (? vagy \*) is elhelyezhet a szegmens bármely részén. A Jelentéstervező a meghatározott karakterekre vonatkozóan minden értéket előhív, a helyettesítő karakterek figyelembevétele nélkül. Például, a sordefiníció csak természetes szegmensértékeket tartalmaz, és a természetes szegmensek négy karakteresek. **6???** megadásával egy sorban arra utasítja a jelentéstervezőt, hogy minden olyan számlát hívjon elő, amelynek természetes szegmensértéke 6-os számmal kezdődik. Ha a **6\*** kódot írja be, ugyanezeket a számlákat kapja meg, de ebben az esetben a rendszer minden hosszúságú értéket ki fog keresni, így a **60** és **600000** számút is. A jelentéstervező minden (?) helyettesítő karakter helyére a lehetséges értékek teljes tartományát behelyettesíti, ide értve a betűket és a különleges karaktereket is. Például ha a tartomány kezdete a **12?0**, a vége pedig **12?4**, akkor a **12?0** kód helyettesítő karaktere helyére behelyettesíti a karakterkészlet legalacsonyabb érétkét, a **12?4** kódban pedig a legmagasabb értéket.
+Ha természetes szegmensértéket ír be a **Dimenziók** párbeszédpanelen, helyettesítő karaktereket (? vagy \*) is elhelyezhet a szegmens bármely részén. A Jelentéstervező a meghatározott karakterekre vonatkozóan minden értéket előhív, a helyettesítő karakterek figyelembevétele nélkül. Például, a sordefiníció csak természetes szegmensértékeket tartalmaz, és a természetes szegmensek négy karakteresek. **6???** megadásával egy sorban arra utasítja a jelentéstervezőt, hogy minden olyan számlát hívjon elő, amelynek természetes szegmensértéke 6-os számmal kezdődik. Ha a **6\**_ kódot írja be, ugyanezeket a számlákat kapja meg, de ebben az esetben a rendszer minden hosszúságú értéket ki fog keresni, így a _* 60** és **600000** számút is. A jelentéstervező minden (?) helyettesítő karakter helyére a lehetséges értékek teljes tartományát behelyettesíti, ide értve a betűket és a különleges karaktereket is. Például ha a tartomány kezdete a **12?0**, a vége pedig **12?4**, akkor a **12?0** kód helyettesítő karaktere helyére behelyettesíti a karakterkészlet legalacsonyabb érétkét, a **12?4** kódban pedig a legmagasabb értéket.
 
 > [!NOTE]
 > A számlatartományok kezdő és záró értékeinél lehetőség szerint ne használjon helyettesítő karaktert. Ha a kezdő számlánál vagy a záró számlánál helyettesítő karaktert használ, előfordulhat, hogy nem a várt eredményt kapja.
@@ -479,7 +478,7 @@ Az alábbi táblázat bemutatja a **Dimenziók** párbeszédpanelben megjelenő 
 
 | Cikk                | Leírás |
 |---------------------|-------------|
-| Egyéni vagy tartományi | A **Kezdő** érték mezőben adja meg egy számla nevét, vagy kattintson a **Tallózás** gombra ![Tallózás](media/browse.gif "Tallózás"), ha tallózással szeretné megkeresni a számlát. Tartomány kiválasztásához, adjon meg, vagy keressen egy értéket a **Záró érték** mezőben. |
+| Egyéni vagy tartományi | A **Kezdő érték** mezőben adja meg egy számla nevét, vagy kattintson a **Tallózás** gombra ![Tallózás](media/browse.gif "Tallózás"), ha tallózással szeretné megkeresni a számlát. Tartomány kiválasztásához, adjon meg, vagy keressen egy értéket a **Záró érték** mezőben. |
 | Dimenzióérték Beállítása | A **Név** mezőbe írja be a dimenzióérték-készlet nevét. Készlet létrehozásához, módosításához, másolásához, vagy törléséhez, kattintson a **Dimenziókészletek Értékének Kezelése** gombra. A **Képlet** mezőben a sordefinícióban az ehhez a dimenzióérték-készlethez tartozó **Hivatkozás a pénzügyi dimenziókhoz** cella képlete töltődik be. |
 | Számlák összesítése   | A **Név** mezőbe írja be vagy tallózással keresse meg az összesítő számlákra vonatkozó dimenziót. A Jelentésdefinícióban, a **Képlet** mező, a számlaösszesítő **Hivatkozás Pénzügyi Dimenziókra** cellájában szereplő képlettel van kitöltve. |
 

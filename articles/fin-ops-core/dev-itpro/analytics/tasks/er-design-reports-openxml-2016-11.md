@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: ERWorkspace, ERVendorPart, ERSolutionRepositoryTable, ERSolutionRepositoryCreateDropDialog, ERSolutionImport,  ERSolutionTable, ERSolutionCreateDropDialog, EROperationDesigner, ERDataSourceAddDropDialog, ERModelGroupByFunctionEditor, VendPaymMode, LedgerJournalTable, LedgerJournalTransVendPaym
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ea5b17873dea4508230f39ffb41a50e2f427584f
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: bf909efbac5dce8e22d9713ad2e694ce624ffeb0
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3142132"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681901"
 ---
 # <a name="er-design-a-configuration-for-generating-reports-in-openxml-format-november-2016"></a>ER – Az OPENXML formátumban létrejövő jelentésekre vonatkozó konfigurációk tervezése (2016. november)
 
@@ -77,14 +76,14 @@ Hajtsa végre az alábbi lépéseket: először hajtsa végre a „Konfiguráci�
 3. A fastruktúrában válassza ki a **Funkciók\Csoportosítás alapja** lehetőséget.
 4. A **Név** mezőbe írja be a `PaymentByCurrency` kifejezést.
 5. Válassza a **Csoport szerkesztési szempontja** lehetőséget.
-6. A fastruktúrában bontsa ki a **modell**lehetőséget, majd válassza a **model\Payments** lehetőséget.
+6. A fastruktúrában bontsa ki a **modell** lehetőséget, majd válassza a **model\Payments** lehetőséget.
 7. Válassza a **Mező hozzáadása** lehetőséget.
 8. Válassza a **Csoportosítandó** lehetőséget
-9. A fastruktúrában bontsa ki a **model\Payments**lehetőséget, majd válassza a **model\Payments\Currency** lehetőséget.
+9. A fastruktúrában bontsa ki a **model\Payments** lehetőséget, majd válassza a **model\Payments\Currency** lehetőséget.
 10. Válassza a **Mező hozzáadása** lehetőséget.
 11. Válassza a **Csoportosított mezők** lehetőséget.
 12. A fastruktúrában válassza ki a **Modell\Kifizetések\Rendelkezésben megadott összeg (InstructedAmount)** lehetőséget.
-13. Válassza a **Mező hozzádása**majd válassza **Összesítési mezők** lehetőséget.
+13. Válassza a **Mező hozzádása** majd válassza **Összesítési mezők** lehetőséget.
 14. Válassza ki valamelyik lehetőséget a **Módszer** mezőben. Válassza az **Összeg aggregáció** funkciót.  
 15. A **Név** mezőbe írja be a `TotalInstructuredAmount` kifejezést.
 16. Válassza a **Mentés** lehetőséget.
@@ -104,7 +103,7 @@ Hajtsa végre az alábbi lépéseket: először hajtsa végre a „Konfiguráci�
 10. Válassza a **Bind** elemet.
 11. A fastruktúrában bontsa ki a **model\Payments\Creditor Account(CreditorAccount)\Identification\Number** és az **Excel\PaymLines\AccountNumber** lehetőséget.
 12. Válassza a **Bind** elemet.
-13. A fastruktúrában válassza ki a **Modell\Kifizetések\Rendelkezésben megadott összeg (InstructedAmount)** és az **Excel\PaymLines\Debit**lehetőséget.
+13. A fastruktúrában válassza ki a **Modell\Kifizetések\Rendelkezésben megadott összeg (InstructedAmount)** és az **Excel\PaymLines\Debit** lehetőséget.
 14. Válassza a **Bind** elemet.
 15. A fában válassza ki a **model\Payments\Currency** és az **Excel\PaymLines\Currency** lehetőséget.
 16. Válassza a **Bind** elemet.

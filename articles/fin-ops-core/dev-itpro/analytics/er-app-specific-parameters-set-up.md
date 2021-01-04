@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERSolutionTable, EROperationDesigner, ERLookupDesigner, ERComponentLookupStructureEditing
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: ca837026f18034cddb34d7a2d5a62002ed69106a
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: b51a7ae8587a3cbb65efc4af574929efcbc8fbf8
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3042757"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681472"
 ---
 # <a name="set-up-the-parameters-of-an-er-format-per-legal-entity"></a>Az ER-formátum paramétereinek beállítása jogi személyenként
 
@@ -42,7 +41,7 @@ A jelen témakörben szereplő példák végrehajtásához hozzáféréssel kell
 ## <a name="import-er-configurations"></a>ER-konfigurációk importálása
 
 1.  Jelentkezzen be a környezetébe.
-2.  Az alapértelmezett irányítópulton válassza az **Elektronikus jelentéskészítés**elemet.
+2.  Az alapértelmezett irányítópulton válassza az **Elektronikus jelentéskészítés** elemet.
 3.  Válassza a **Jelentéskészítési konfigurációk** elemet.
 4.  A Finance aktuális példányába importálja a Regulatory Configuration Service (RCS) alkalmazásból az [ER formátumok konfigurálása a jogi személyenként meghatározott paraméterek használatára](er-app-specific-parameters-configure-format.md) témakörben leírt lépések végrehajtása során exportált konfigurációkat. Hajtsa végre az alábbi lépéseket minden egyes Elektronikus jelentéskészítési (ER) konfigurációjában, a következő sorrendben: adatmodell, modell-leképezés és formátumok.
 
@@ -127,9 +126,9 @@ Az ER keretrendszerrel beállíthatja az alkalmazásra jellemző paramétereket 
     
 16. Az **Állapot** mezőben válassza ki a **Befejeződött** értéket.
 
-    A **Befejeződött** vagy **Megosztott**állapotú ER formátumverzió futtatásakor a szabálycsoportnak **Befejeződött** állapotban kell lennie. Ellenkező esetben a rendszer megszakítja az alap ER formátum végrehajtását, amikor a formátum adatokat próbál ebből a szabálycsoportból betölteni a **Választó** keresési adatforrás futtatásakor.
+    A **Befejeződött** vagy **Megosztott** állapotú ER formátumverzió futtatásakor a szabálycsoportnak **Befejeződött** állapotban kell lennie. Ellenkező esetben a rendszer megszakítja az alap ER formátum végrehajtását, amikor a formátum adatokat próbál ebből a szabálycsoportból betölteni a **Választó** keresési adatforrás futtatásakor.
     
-    A **Tervezet**állapotú ER formátumú verzió futtatásakor az alap ER formátum hozzáférhet ehhez a szabálycsoporthoz állapottól függetlenül.
+    A **Tervezet** állapotú ER formátumú verzió futtatásakor az alap ER formátum hozzáférhet ehhez a szabálycsoporthoz állapottól függetlenül.
     
 17. Válassza a **Mentés** lehetőséget.
 18. Zárja be az **Alkalmazásspecifikus paraméterek** oldalt.

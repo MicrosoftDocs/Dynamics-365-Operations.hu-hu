@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: SIGParameters, SIGProcSetup, SIGReasonCode
 audience: Application User
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 ms.custom: 13611
 ms.assetid: 98dc6b79-1895-45d8-9dd1-2c8a351b58af
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 118c4464bf4fc86ecb7eee59bf3611f6f8f2cbaf
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: df7f842477ddfb88662f37ae311215f08c6b0173
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3981716"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693184"
 ---
 # <a name="electronic-signatures-overview"></a>Az elektronikus aláírások áttekintése
 
@@ -85,7 +84,7 @@ A tanúsítvány igényléséhez ugorjon a **Beállítások** oldalon a **Száml
 
 Adja meg és erősítse meg a jelszót, amelyet aláírásra kíván használni. A jelszó a titkos kulcsot védi, valamint engedélyezi a tanúsítvány használatát. Ezt a jelszót nem tárolja az adatbázis, és senki más nem érheti el, még a rendszergazdája sem.
 
-Ha elfelejti a tanúsítványhoz tartozó jelszót, akkor a tanúsítványt alaphelyzetbe kell állítani. A tanúsítvány alaphelyzetbe állítása nincs hatással azokra a dokumentumokra, amelyeket a korábbi tanúsítvánnyal írt alá. A tanúsítvány alaphelyzetbe állításához a **Beállítások** oldalon, kattintson a **Tanúsítvány alaphelyzetbe állítása** .
+Ha elfelejti a tanúsítványhoz tartozó jelszót, akkor a tanúsítványt alaphelyzetbe kell állítani. A tanúsítvány alaphelyzetbe állítása nincs hatással azokra a dokumentumokra, amelyeket a korábbi tanúsítvánnyal írt alá. A tanúsítvány alaphelyzetbe állításához a **Beállítások** oldalon, kattintson a **Tanúsítvány alaphelyzetbe állítása**.
 
 ### <a name="sign-a-document-electronically"></a>A dokumentumok elektronikus aláírása
 

@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERModelMappingDesigner, EROperationDesigner
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-03-01
 ms.dyn365.ops.version: Release 10.0.1
-ms.openlocfilehash: 668ab28297ee7baf8f28cbbaf179d13cb5151dc4
-ms.sourcegitcommit: 248369a0da5f2b2a1399f6adab81f9e82df831a1
+ms.openlocfilehash: 0d7df12026d6d668b1f48a48cd12bf4b12e0f94e
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "3332322"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4686416"
 ---
 # <a name="use-join-data-sources-to-get-data-from-multiple-application-tables-in-electronic-reporting-er-model-mappings"></a>Több alkalmazási táblából származó adatok beolvasásához használja a JOIN adatforrásokat az elektronikus jelentéskészítési (ER) modell-leképezésekben.
 
@@ -38,7 +37,7 @@ Jelenleg a következő egyesítéstípusok támogatottak:
 - Belső (jobb) egyesítés:
     - Csak az első (bal szélső) adatforrás összes rekordjának egyesítése, majd a csak második (jobbról balra) adatforrás konfigurált feltételeinek megfelelő rekordok egyeztetése.
 
-A konfigurált **Egyesítés** adatforrásban, amikor az összes adatforrás a **Tábla rekordja** típusú, akkor az [adatbázis szintjén](#analyze) egyetlen SQL-utasítás használatával lehet végrehajtani az egyesítési adatforrást. Ezzel csökkenthető az adatbázis-meghívások száma, amely javítja a modell-leképezés teljesítményét. Ellenkező esetben az **Adatok egyesítése** forrás végrehajtását a memóriában végzi a rendszer.
+A konfigurált **Egyesítés** adatforrásban, amikor az összes adatforrás a **Tábla rekordja** típusú, akkor az [adatbázis szintjén](#analyze) egyetlen SQL-utasítás használatával lehet végrehajtani az egyesítési adatforrást. Ezzel az utasítással csökkenthető az adatbázis-meghívások száma, amely javítja a modell-leképezés teljesítményét. Ellenkező esetben az **Adatok egyesítése** forrás végrehajtását a memóriában végzi a rendszer.
 
 > [!NOTE]
 > A **VALUEIN** függvény használata az ER-kifejezésekben, amelyek meghatározzák, hogy milyen feltételekkel lehet egyesíteni rekordokat az Egyesítés típusú adatforrásokból még nem támogatott. Keresse fel a [Függvénytervező az elektronikus jelentéskészítésben](general-electronic-reporting-formula-designer.md) oldalt az ezzel a függvénnyel kapcsolatos további részletekért.
@@ -79,7 +78,7 @@ Előzetesen le kell töltenie a [Microsoft letöltőközpontból](https://go.mic
 
 1. Eléri a Finance-t vagy az RCS-t a webböngésző első munkamenetében.
 2. Ugorjon a **Szervezeti adminisztráció \> Munkaterületek \> Elektronikus jelentés** pontra.
-3. Győződjön meg róla, hogy a **Honosítási konfigurációk** lap **Konfigurációs szolgáltatók** szakaszában a Litware, Inc. (http://www.litware.com) mintavállalat konfigurációs szolgáltatója szerepel a listán, és **Aktívként** van megjelölve. Ha nem látja ezt a konfigurációszolgáltatót, végezze el a [Konfigurációszolgáltató létrehozása, és megjelölése aktívként](tasks/er-configuration-provider-mark-it-active-2016-11.md) eljárást.
+3. Győződjön meg róla, hogy a **Honosítási konfigurációk** lap **Konfigurációs szolgáltatók** szakaszában a [Litware, Inc.](http://www.litware.com) konfigurációs szolgáltatója szerepel a listán, és **Aktívként** van megjelölve. Ha nem látja ezt a konfigurációszolgáltatót, végezze el a [Konfigurációszolgáltató létrehozása, és megjelölése aktívként](tasks/er-configuration-provider-mark-it-active-2016-11.md) eljárást.
 
     ![Elektronikus jelentések munkaterülete](./media/GER-JoinDS-ActiveProvider.PNG)
 
@@ -96,20 +95,21 @@ Előzetesen le kell töltenie a [Microsoft letöltőközpontból](https://go.mic
     2. Kattintson a **Betöltés XML-fájlból** lehetőségre.
     3. A **Tallózás** gombra kattintva megkeresheti a **Mapping to learn JOIN data sources.version.1.1.xml** fájlt.
     4. Válassza ki az **OK** lehetőséget.
-4.  Az ER formátumkonfigurációs fájl importálása.
+4. Az ER formátumkonfigurációs fájl importálása.
     1. **Árfolyam** kijelölése.
     2. Kattintson a **Betöltés XML-fájlból** lehetőségre.
     3. A **Tallózás** gombra kattintva megkeresheti a **Format to learn JOIN data sources.version.1.1.xm** fájlt.
     4. Válassza ki az **OK** lehetőséget.
-5.  A konfigurációk fában bontsa ki a **Model to learn JOIN data sources** eleme, illetve a további modellelemeket (ha rendelkezésre állnak).
-6.  Figyelje meg az ER konfigurációk listáját a fában, valamint a verziószám adatait a **Verziók** gyorslapon – ezeket a program a minta jelentéshez tartozó adatok forrásaként fogja használni.
+5. A konfigurációk fában bontsa ki a **Model to learn JOIN data sources** eleme, illetve a további modellelemeket (ha rendelkezésre állnak).
+6. Figyelje meg az ER konfigurációk listáját a fában, valamint a verziószám adatait a **Verziók** gyorslapon – ezeket a program a minta jelentéshez tartozó adatok forrásaként fogja használni.
 
     ![Elektronikus jelentéskészítési konfigurációk oldala](./media/GER-JoinDS-ConfigurationsTree.PNG)
 
 ### <a name="turn-on-execution-trace-options"></a>Végrehajtási nyomkövetési beállítások bekapcsolása
-1.  Válassza a **KONFIGURÁCIÓK** lehetőséget.
-2.  Válassza a **Felhasználói paraméterek** lehetőséget.
-3.  A végrehajtási nyomkövetési paramétereket állítsa be a lenti képen látható módon.
+
+1. Válassza a **KONFIGURÁCIÓK** lehetőséget.
+2. Válassza a **Felhasználói paraméterek** lehetőséget.
+3. A végrehajtási nyomkövetési paramétereket állítsa be a lenti képen látható módon.
 
     ![Elektronikus jelentéskészítés felhasználói paraméterei lap](./media/GER-JoinDS-Parameters.PNG)
 
@@ -119,11 +119,11 @@ Előzetesen le kell töltenie a [Microsoft letöltőközpontból](https://go.mic
 
 Az ER modell-leképezési összetevő beállításainak áttekintése. Az összetevő úgy van beállítva, hogy az **Egyesítés** típusú adatforrások használata nélkül hozzáférjen a konfigurációk verzióival kapcsolatos adatokhoz, illetve a konfigurációk és a konfigurációs szolgáltatók adataihoz.
 
-1.  Válassza ki a **Mapping to learn JOIN data sources** konfigurációt.
-2.  Válassza ki a **Tervezőt** a leképezések listájának megnyitásához.
-3.  A leképezésirészletek áttekintéséhez válassza a **Tervező** elemet. 
-4.  Válassza a **Részletek megjelenítése** lehetőséget.
-5.  Bontsa ki a konfigurációk fastruktúrájában a **Set1** és a **Set1.Details** adatmodell-elemeket:
+1. Válassza ki a **Mapping to learn JOIN data sources** konfigurációt.
+2. Válassza ki a **Tervezőt** a leképezések listájának megnyitásához.
+3. A leképezésirészletek áttekintéséhez válassza a **Tervező** elemet.
+4. Válassza a **Részletek megjelenítése** lehetőséget.
+5. Bontsa ki a konfigurációk fastruktúrájában a **Set1** és a **Set1.Details** adatmodell-elemeket:
 
     1. A **Részletek: Rekordlista = Verziók** társítás jelzi, hogy a **Set1.Details** elem társítva van a **Verziók** adatforráshoz és az **ERSolutionVersionTable** tábla rekordjait adja vissza. Ennek a táblának minden rekordja egy ER konfiguráció egyetlen változatát jelöli. Ennek a táblának a tartalma a **Konfigurációk** lap **Verziók** gyorslapján jelenik meg.
     2. A **ConfigurationVersion: String = @.PublicVersionNumber** társítása azt jelenti, hogy az összes ER konfiguráció verziójának nyilvános verziójának értéke az **ERSolutionVersionTable** tábla **PublicVersionNumber** mezőjéből származik, és a **ConfigurationVersion** elembe kerül.
@@ -132,19 +132,19 @@ Az ER modell-leképezési összetevő beállításainak áttekintése. Az össze
 
     ![Elektronikus jelentéskészítés – modell-leképezés tervező oldal](./media/GER-JoinDS-Set1Review.PNG)
 
-6.  Bontsa ki a konfigurációk fastruktúrájában a **Set1.Summary** adatmodell-elemet:
+6. Bontsa ki a konfigurációk fastruktúrájában a **Set1.Summary** adatmodell-elemet:
 
     1. A **VersionsNumber: Integer = VersionsSummary.aggregated.VersionsNumber** társítása azt jelzi, hogy a **Set1.Summary.VersionsNumber** elem társítva van a **VersionsNumber** egyesített mezőjéhez a **VersionsSummary** adatforrásnak a **GroupBy** típus alatt, amely úgy van knfigurálva, hogy az **ERSolutionVersionTable** rekordajinak számát adja vissza a **Verziók** adatforráson keresztül.
 
     ![GROUPBY adatforrás paraméterek lapja](./media/GER-JoinDS-Set1GroupByReview.PNG)
 
-7.  Zárja be a lapot.
+7. Zárja be a lapot.
 
 ### <a name="review-er-model-mapping-part-2"></a><a name="review"></a>Az ER modell-leképezés áttekintése (2. rész)
 
 Az ER modell-leképezési összetevő beállításainak áttekintése. Az összetevő úgy van beállítva, hogy az **Egyesítés** típusú adatforrások egyikénke használatával hozzáférjen a konfigurációk verzióival kapcsolatos adatokhoz, illetve a konfigurációk és a konfigurációs szolgáltatók adataihoz.
 
-1.  Bontsa ki a konfigurációk fastruktúrájában a **Set2** és a **Set2.Details** adatmodell-elemeket. Ne feledje, hogy a **Details: Record list = Details** társítás azt jelzi, hogy a **Set2.Details** elem társítva van a **Részletek** adatforrással, amely az **Egyesítés** típus adatforrásaként van konfigurálva.
+1. Bontsa ki a konfigurációk fastruktúrájában a **Set2** és a **Set2.Details** adatmodell-elemeket. A **Details: Record list = Details** társítás azt jelzi, hogy a **Set2.Details** elem társítva van a **Részletek** adatforrással, amely az **Egyesítés** típus adatforrásaként van konfigurálva.
 
     ![Elektronikus jelentéskészítés – modell-leképezés tervező oldal](./media/GER-JoinDS-Set2Review.PNG)
 
@@ -152,16 +152,16 @@ Az ER modell-leképezési összetevő beállításainak áttekintése. Az össze
 
     ![Elektronikus jelentéskészítés – modell-leképezés tervező oldal](./media/GER-JoinDS-AddJoinDS.PNG)
 
-2.  Válassza ki a **Részletek** adatforrást.
-3.  Válassza az **Adatforrás** ablaktábla **Szerkesztés** elemét.
-4.  Válassza ki az **Egyesítés szerkesztése** opciót.
-5.  Válassza a **Részletek megjelenítése** lehetőséget.
+2. Válassza ki a **Részletek** adatforrást.
+3. Válassza az **Adatforrás** ablaktábla **Szerkesztés** elemét.
+4. Válassza ki az **Egyesítés szerkesztése** opciót.
+5. Válassza a **Részletek megjelenítése** lehetőséget.
 
     ![A JOIN adatforrás paraméterek lapja](./media/GER-JoinDS-JoinDSEditor.PNG)
 
-    Ez a lap az **Egyesítés típus** szükséges adatforrásának tervezéséhez használatos. Futásidőben ezt az adatforrás egyetlen egyesített rekordlistát fog létrehozni az **Egyesített lista** rács adatforrásaiból. A rekordok egyesítése a rácsban elsőként megadott **ConfigurationProviders** -adatforrás alapján kezdődik (a **Típus** oszlop üres). Minden más adatforrás egymás után lesz egyesítve a szülő adatforrás rekordjaihoz ennek a rácsnak a sorrendje alapján. Minden csatlakozó adatforrást a cél-adatforrás alá beágyazott adatforrásként kell konfigurálni (az **1Versions** adatforrás az **1Configurations** alá van beágyazva, az **1Configurations** adatforrás a **ConfigurationProviders** alá van beágyazva). Minden konfigurált adatforrásnak tartalmaznia kell az egyesítés feltételeit. Az adott **Egyesítéshez**tartozó adatforrásban a következő egyesítések vannak meghatározva:
+    Ez a lap az **Egyesítés típus** szükséges adatforrásának tervezéséhez használatos. Futásidőben ezt az adatforrás egyetlen egyesített rekordlistát fog létrehozni az **Egyesített lista** rács adatforrásaiból. A rekordok egyesítése a rácsban elsőként megadott **ConfigurationProviders** -adatforrás alapján kezdődik (a **Típus** oszlop üres). Minden más adatforrás egymás után lesz egyesítve a szülő adatforrás rekordjaihoz ennek a rácsnak a sorrendje alapján. Minden csatlakozó adatforrást a cél-adatforrás alá beágyazott adatforrásként kell konfigurálni (az `1Versions` adatforrás az `1Configurations` alá van beágyazva, az `1Configurations` adatforrás a **ConfigurationProviders** alá van beágyazva). Minden konfigurált adatforrásnak tartalmaznia kell az egyesítés feltételeit. Az adott **Egyesítéshez** tartozó adatforrásban a következő egyesítések vannak meghatározva:
 
-    - A **ConfigurationProviders** adatforrás mindegyik rekordja (hivatkozva az **ERVendorTable** táblára) csak az **1Configurations** rekordokkal van egyesítve (a **ERSolutionTable** táblára hivatkozva) ugyanazzal az értékkel, mint a **SolutionVendor** és a **RecId** mező értékei. A **Belső egyesítés** használatos ehhez az egyesítéshez, valamint következő feltételek a rekordok egyeztetéséhez: 
+    - A **ConfigurationProviders** adatforrás mindegyik rekordja (hivatkozva az **ERVendorTable** táblára) csak az **1Configurations** rekordokkal van egyesítve (a **ERSolutionTable** táblára hivatkozva) ugyanazzal az értékkel, mint a **SolutionVendor** és a **RecId** mező értékei. A **Belső egyesítés** használatos ehhez az egyesítéshez, valamint következő feltételek a rekordok egyeztetéséhez:
 
     SZŰRŐ (Configurations, Configurations.SolutionVendor = ConfigurationProviders.RecId)
 
@@ -171,32 +171,32 @@ Az ER modell-leképezési összetevő beállításainak áttekintése. Az össze
 
     - A **végrehajtás** beállítás **Lekérdezésként** van beállítva, amely azt jelenti, hogy ez az adatforrás egyesítés az adatbázis szintjén futásidőben lesz végrehajtva közvetlen SQL-meghívásként.
 
-    Ne felejtse el, hogy az alkalmazási táblákat képviselő adatforrások rekordjainak egyesítése esetén az egyesítés feltételeit úgy adhatja meg, ha olyan mezőkat használ, amelyek nem írják le az AOT-kapcsolatokat ezen táblák között. Az ilyen típusú egyesítés beállítható az adatbázis szintjén történő végrehajtásra is.
+    Az alkalmazási táblákat képviselő adatforrások rekordjainak egyesítése esetén az egyesítés feltételeit úgy adhatja meg, ha olyan mezőkat használ, amelyek nem írják le az AOT-kapcsolatokat ezen táblák között. Az ilyen típusú egyesítés beállítható az adatbázis szintjén történő végrehajtásra is.
 
-6.  Zárja be a lapot.
-7.  Válassza a **Mégse** lehetőséget.
-8.  Bontsa ki a konfigurációk fastruktúrájában a **Set2.Summary** adatmodell-elemet:
+6. Zárja be a lapot.
+7. Válassza a **Mégse** lehetőséget.
+8. Bontsa ki a konfigurációk fastruktúrájában a **Set2.Summary** adatmodell-elemet:
 
     - A **VersionsNumber: Integer = DetailsSummary.aggregated.VersionsNumber** társítása azt jelzi, hogy a **Set2.Summary.VersionsNumber** elem társítva van a **VersionsNumber** egyesített mezőjéhez a **DetailsSummary** adatforrásnak a **GroupBy** típus alatt, amely úgy van konfigurálva, hogy az **Details** egyesített rekordjainak számát adja vissza az **Egyesített** típusban.
-    - Ne feledje, hogy a **Végrehajtás** helybeállítás **Lekérdezésként** van beállítva, amely azt jelenti, hogy ez a **GroupBy** adatforrás futásidőben lesz végrehajtva közvetlen SQL-meghívásként. Ez azért lehetséges, mert az **Egyesítés** típusú **Részletek** alapadatforrás-adatait az adatbázis szintjén hajtják végre.
+    - A **Végrehajtás** helybeállítás **Lekérdezésként** van beállítva, amely azt jelenti, hogy ez a **GroupBy** adatforrás futásidőben lesz futtatva közvetlen SQL-meghívásként. Ez a viselkedés azért lehetséges, mert az **Egyesítés** típusú **Részletek** alapadatforrás-adatait az adatbázis szintjén hajtják végre.
 
     ![GROUPBY adatforrás paraméterek lapja](./media/GER-JoinDS-Set2GroupByReview.PNG)
 
-9.  Zárja be a lapot.
+9. Zárja be a lapot.
 10. Válassza a **Mégse** lehetőséget.
 
 ### <a name="execute-er-format"></a><a name="executeERformat"></a> ER formátum végrehajtása
 
-1.  Érje el a Finance-t vagy RCS-t egy második munkamenetben a böngészőjében ugyanazon hitelesítő adatoka és vállalatot használva, mint az első munkamenetben.
-2.  Nyissa meg a következőt: **Szervezeti adminisztráció \> Elektronikus jelentéskészítés \> Konfigurációk**.
-3.  Bontsa ki a **Model to learn JOIN data sources** konfigurációt.
-4.  Válassza ki a **Format to learn JOIN data sources** konfigurációt.
-5.  Válassza a **Tervező** lehetőséget.
-6.  Válassza a **Részletek megjelenítése** lehetőséget.
-7.  Válassza ki **Hozzárendelés** lehetőséget.
-8.  Válassza a **Kibontás/Összecsukás** lehetőséget.
+1. Érje el a Finance-t vagy RCS-t egy második munkamenetben a böngészőjében ugyanazon hitelesítő adatoka és vállalatot használva, mint az első munkamenetben.
+2. Nyissa meg a következőt: **Szervezeti adminisztráció \> Elektronikus jelentéskészítés \> Konfigurációk**.
+3. Bontsa ki a **Model to learn JOIN data sources** konfigurációt.
+4. Válassza ki a **Format to learn JOIN data sources** konfigurációt.
+5. Válassza a **Tervező** lehetőséget.
+6. Válassza a **Részletek megjelenítése** lehetőséget.
+7. Válassza ki **Hozzárendelés** lehetőséget.
+8. Válassza a **Kibontás/Összecsukás** lehetőséget.
 
-    Ne feledje, hogy ez a formátum úgy van kialakítva, hogy egy ER konfiguráció minden verziójának új sorával töltse fel a létrejövő szövegfájlt (**Verzió** sorozat). Minden létrehozott sor tartalmazni fogja az aktuális konfigurációt birtokló konfigurációszolgáltató nevét, a konfiguráció nevét és a konfiguráció verzióját pontosvesszővel elválasztva. A létrejövő fájlok végleges sora az ER konfigurációk felismert verzióinak számát fogja tartalmazni **( Összegzés** sorozat).
+    Ez a formátum úgy van kialakítva, hogy egy ER konfiguráció minden verziójának új sorával töltse fel a létrejövő szövegfájlt (**Verzió** sorozat). Minden létrehozott sor tartalmazni fogja az aktuális konfigurációt birtokló konfigurációszolgáltató nevét, a konfiguráció nevét és a konfiguráció verzióját pontosvesszővel elválasztva. A létrejövő fájlok végleges sora az ER konfigurációk felismert verzióinak számát fogja tartalmazni **( Összegzés** sorozat).
 
     ![ER-formátumtervező oldal](./media/GER-JoinDS-FormatReview.PNG)
 
@@ -207,7 +207,7 @@ Az ER modell-leképezési összetevő beállításainak áttekintése. Az össze
 
     ![ER-formátumtervező oldal](./media/GER-JoinDS-FormatMappingReview.PNG)
 
-9.  Válassza a **Futtatás** parancsot.
+9. Válassza a **Futtatás** parancsot.
 10. Válassza a párbeszédpanel lap **nem** elemét a **JOIN adatforrás használata** mezőben.
 11. Válassza ki az **OK** lehetőséget.
 12. Előállított fájl megtekintése.
@@ -216,40 +216,40 @@ Az ER modell-leképezési összetevő beállításainak áttekintése. Az össze
 
 #### <a name="analyze-er-format-execution-trace"></a>Az ER formátum végrehajtási nyomkövetésének elemzése
 
-1.  A Finance vagy RCS első munkamenetében válassza a **Tervező**elemet.
-2.  Válassza a **Teljesítménykövetés** elemet.
-3.  A **Teljesítmény-nyomkövetés** rácsban válassza ki azt a legfelső rekordot, amely az aktuális modell-hozzárendelési összetevőt használó ER-formátum legutóbbi végrehajtási nyomonkövetése.
-4.  Válassza ki az **OK** lehetőséget.
+1. A Finance vagy RCS első munkamenetében válassza a **Tervező** elemet.
+2. Válassza a **Teljesítménykövetés** elemet.
+3. A **Teljesítmény-nyomkövetés** rácsban válassza ki azt a legfelső rekordot, amely az aktuális modell-hozzárendelési összetevőt használó ER-formátum legutóbbi végrehajtási nyomonkövetése.
+4. Válassza ki az **OK** lehetőséget.
 
-    Ne feledje, hogy a végrehajtási statisztikák az alkalmazások tábláinak ismétlődő meghívásairól tájékoztatják:
+    A végrehajtási statisztikák az alkalmazások tábláinak ismétlődő meghívásairól tájékoztatják:
 
     - Az **ERSolutionTable** meghívása ugyanannyiszor történik, mint ahány konfigurációs verzió rekordja van az **ERSolutionVersionTable** táblában, ugyanakkor az ilyen meghívások száma csökkenthető a teljesítmény javítása érdekében.
     - Az **ERVendorTable** meghívása kétszer történik minden felfedezett konfigurációs verzió rekordjához az **ERSolutionVersionTable** táblában, ugyanakkor az ilyen meghívások száma is csökkenthető.
 
     ![Elektronikus jelentéskészítés – modell-leképezés tervező oldal](./media/GER-JoinDS-Set1Run2.PNG)
 
-5.  Zárja be a lapot.
+5. Zárja be a lapot.
 
 ### <a name="execute-er-format"></a> ER formátum végrehajtása
 
-1.  Váltson át a második Finance vagy RCS munkamenetet tartalmazó webböngészőlapra.
-2.  Válassza a **Futtatás** parancsot.
-3.  Válassza a párbeszédpanel lap **Igen** elemét a **JOIN adatforrás használata** mezőben.
-4.  Válassza ki az **OK** lehetőséget.
-5.  Előállított fájl megtekintése.
+1. Váltson át a második Finance vagy RCS munkamenetet tartalmazó webböngészőlapra.
+2. Válassza a **Futtatás** parancsot.
+3. Válassza a párbeszédpanel lap **Igen** elemét a **JOIN adatforrás használata** mezőben.
+4. Válassza ki az **OK** lehetőséget.
+5. Előállított fájl megtekintése.
 
     ![ER felhasználói párbeszédpanel](./media/GER-JoinDS-Set2Run.PNG)
 
 #### <a name="analyze-er-format-execution-trace"></a><a name="analyze"></a> Az ER formátum végrehajtási nyomkövetésének elemzése
 
-1.  A Finance vagy RCS első munkamenetében válassza a **Tervező**elemet.
-2.  Válassza a **Teljesítménykövetés** elemet.
-3.  A **Teljesítmény-nyomkövetés** rácsban válassza ki azt a legfelső rekordot, amely az aktuális modell-hozzárendelési összetevőt használó ER-formátum legutóbbi végrehajtási nyomonkövetését jelzi.
-4.  Válassza ki az **OK** lehetőséget.
+1. A Finance vagy RCS első munkamenetében válassza a **Tervező** elemet.
+2. Válassza a **Teljesítménykövetés** elemet.
+3. A **Teljesítmény-nyomkövetés** rácsban válassza ki azt a legfelső rekordot, amely az aktuális modell-hozzárendelési összetevőt használó ER-formátum legutóbbi végrehajtási nyomonkövetését jelzi.
+4. Válassza ki az **OK** lehetőséget.
 
-    Ne feledje, hogy a végrehajtási statisztikák a következőkről tájékoztatnak:
+    A statisztika a következőkről tájékoztat:
 
-    - Az alkalmazás-adatbázis hívása egyszer megtörtént az **ERVendorTable**, **ERSolutionTable**és **ERSolutionVersionTable** táblák rekordjainak lekéréséhez a szükséges mezők eléréséhez.
+    - Az alkalmazás-adatbázis hívása egyszer megtörtént az **ERVendorTable**, **ERSolutionTable** és **ERSolutionVersionTable** táblák rekordjainak lekéréséhez a szükséges mezők eléréséhez.
 
     ![Elektronikus jelentéskészítés – modell-leképezés tervező oldal](./media/GER-JoinDS-Set2Run2.PNG)
 
@@ -289,4 +289,3 @@ Amikor a konfigurált adatforrás a végrehajtása történik, amikor az ER-vég
 [Képletszerkesztő az Elektronikus jelentéskészítésben](general-electronic-reporting-formula-designer.md)
 
 [Az ER-formátum végrehajtásának nyomon követése a teljesítménnyel kapcsolatos problémák elhárításához](trace-execution-er-troubleshoot-perf.md)
-

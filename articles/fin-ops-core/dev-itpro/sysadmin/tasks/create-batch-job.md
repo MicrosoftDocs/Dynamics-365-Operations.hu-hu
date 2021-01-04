@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: BatchJob, SysRecurrence, BatchAlerts
 audience: Application User
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4903724adc9deaa40b6cd04c215273dd4b0522d4
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: e4360cd7068658a170f5b44c2ce7c71c39c44fa8
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3982526"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679888"
 ---
 # <a name="create-a-batch-job"></a>Kötegelt feladat létrehozása
 
@@ -39,7 +38,7 @@ A kötegelt feladat egy Alkalmazásobjektum-kiszolgáló (AOS) példányához el
 
 ## <a name="create-a-recurrence"></a>Ismétlődés létrehozása
 1. Kattintson a Művelet panelen a **Kötegelt feladat** lehetőségre.
-2. Kattintson az **Ismétlődésre** . E beállítások segítségével megadhatja az ismétlődés tartományát és a mintáját.  
+2. Kattintson az **Ismétlődésre**. E beállítások segítségével megadhatja az ismétlődés tartományát és a mintáját.  
 3. Kattintson az **OK** gombra.
 
 ## <a name="add-alerts"></a>Figyelmeztetések hozzáadása
@@ -52,6 +51,6 @@ A kötegelt feladat egy Alkalmazásobjektum-kiszolgáló (AOS) példányához el
 2. Jelölje ki a megfelelő kötegelt feladatokat.
 3. Kattintson a Művelet panelen a **Kötegelt feladat > Funkciók > Állapot módosítása** lehetőségre.
 4. Válassza ki a megfelelő állapotot.
-    - **Visszatartás** : A kötegelt feladat **visszatartási** értékre állítása, így a kötegelt munkaütemezőből visszatartható. A *leállítással* egyenértékű.
-    - **Várakozás** : A kötegelt feladat **várakozásra** történő beállítása, így a kötegelt munkaütemező által elindítható. A *mehettel* egyenértékű.
+    - **Visszatartás**: A kötegelt feladat **visszatartási** értékre állítása, így a kötegelt munkaütemezőből visszatartható. A *leállítással* egyenértékű.
+    - **Várakozás**: A kötegelt feladat **várakozásra** történő beállítása, így a kötegelt munkaütemező által elindítható. A *mehettel* egyenértékű.
 5. Kattintson az **OK** gombra.

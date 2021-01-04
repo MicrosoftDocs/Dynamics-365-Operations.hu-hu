@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERBDWorkspace, ERBDParameters, ERBDTemplateEditor
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-10-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 8c3a905c90f5dd4ad3487f004a958c0dcd52115d
-ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
+ms.openlocfilehash: fcfbcb021b192cef75d59b0db1796e994f3dc27d
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3893247"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681376"
 ---
 # <a name="add-new-fields-to-a-business-document-template-in-microsoft-excel"></a>Új mezők hozzáadása üzleti dokumentum-sablonhoz a Microsoft Excel szolgáltatásban
 
@@ -148,7 +147,7 @@ Az **üzleti Dokumentumkezelés** munkaterületen a **Sablon** lap jobb oldali a
 ## <a name="generate-business-documents-to-test-the-updated-template"></a>Üzleti dokumentumok létrehozása a frissített sablon teszteléséhez
 
 1.  Az alkalmazásban változtassa meg a vállalatota **USMF** értékre, és lépjen a **Kinnlevőségek \> Számlák \> összes szabadszöveges számla** lehetőségre.
-2.  Válassza ki az **FTI-00000002** számlát, majd válassza a **Nyomtatáskezelő**parancsot.
+2.  Válassza ki az **FTI-00000002** számlát, majd válassza a **Nyomtatáskezelő** parancsot.
 3.  A bal oldali ablaktáblán bontsa ki a **Modul – Kinnlevőségek \> dokumentumok \> szabadszöveges számla** elemet.
 4.  A **Szabadszöveges számla** részben válassza az **Eredeti dokumentum** szintet a feldolgozáshoz szükséges számlahatókör megadásához.
 5.  A jobb oldali ablakban a **jelentés formátuma** mezőben válassza ki a **Szabadszöveges számla (Excel) contoso** sablonját a megadott dokumentum szintjén.

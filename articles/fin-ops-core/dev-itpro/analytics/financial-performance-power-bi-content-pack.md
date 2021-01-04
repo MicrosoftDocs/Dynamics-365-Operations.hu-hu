@@ -10,31 +10,30 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 106233
 ms.assetid: 517e6a88-e7a1-4398-9971-b22fa83306ba
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3cbecf178d0588c51b831fbd55b536d3e4e41c27
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 34ebb9c6262defa5ccf520ad51101eb3bc613fef
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771119"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682745"
 ---
 # <a name="financial-performance-powerbicom-solution"></a>Pénzügyi teljesítmény PowerBI.com megoldás
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> Ez a PowerBI.com megoldás elavult, ahogy az az [Eltávolított vagy elavult funkciók a Finance and Operations szolgáltatásban](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource) részben dokumentálva van.
+> Ez a PowerBI.com megoldás elavult, ahogy az az [Eltávolított vagy elavult funkciók a Finance and Operations-szolgáltatásban](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource) részben dokumentálva van.
 
 Ez a témakör ismerteti a **Pénzügyi teljesítmény** PowerBI.com megoldást. Leírja, hogyan kell használni az irányítópultot és a megoldásban szereplő jelentéseket, és információkat nyújt a tartalmi csomag összeállításához használt entitásokkal és adatmodellekkel kapcsolatban.
 
 ## <a name="main-account-setup"></a>Fő számla beállítása
-Mivel a szervezetek szeretik, ha a kötelezettségeik és a bevételeik összegei pozitív összegként jelennek meg a jelentésekben, a fő számlák beállítása fontos szerepet játszik. Ugyanis ezen fő számlák pozitív összegként való megjelenítéséhez a fő számla típusaként **Kötelezettség** vagy **Bevétel** értéket kell megadni. E számlatípusok használatakor a Power BI szolgáltatáson keresztüli jelentéstétel megfordítja az előjeleket, és az összegeket pozitívként jeleníti meg.
+Mivel a szervezetek szeretik, ha a kötelezettségeik és a bevételeik összegei pozitív összegként jelennek meg a jelentésekben, a fő számlák beállítása fontos szerepet játszik. Ugyanis ezen fő számlák pozitív összegként való megjelenítéséhez a fő számla típusaként **Kötelezettség** vagy **Bevétel** értéket kell megadni. E számlatípusok használatakor a Power BI szolgáltatáson keresztüli jelentéstétel megfordítja az előjeleket, és az összegeket pozitívként jeleníti meg.
 
 ## <a name="dashboard-and-reports-that-are-included-in-the-powerbicom-solution"></a>A PowerBI.com megoldás által tartalmazott irányítópult és a jelentések
 Az irányítópult az alacsonyabb szintű jelentéseken alapuló adatok összesített lapjait tartalmazza. Minden egyes lap tartalmazza a folyó év összesített információit a szervezeten belüli összes vállalatnál. Az alábbiakban látható néhány ilyen lap:

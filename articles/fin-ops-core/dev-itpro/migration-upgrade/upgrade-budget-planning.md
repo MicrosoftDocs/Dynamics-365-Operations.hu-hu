@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 ms.custom: 272923
 ms.assetid: 17cdfe74-bdfd-466a-9bdd-c12583f250c7
 ms.search.region: Global
 ms.author: ryansand
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 5ba9b8a041f9eef8142cb56d7c764a5faf6071f6
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 1c62771170212039112c777e55d45a0d88d2f49d
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191500"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680998"
 ---
 # <a name="upgrade-budget-planning"></a>Költségvetés-tervezés frissítése
 
@@ -33,7 +32,7 @@ A költségvetés-tervezésben lényeges különbségek vannak a Microsoft Dynam
 A költségvetés-tervezés a Finance rendszerben sok fejlesztést kínál, amelyek nem érhetők el a Dynamics AX 2012 rendszerben. Ez a téma azokat a változásokat mutatja be, amelyeket a frissítő ügyfeleknek végre kell hajtaniuk. Emellett felhívja a figyelmet azokra az új funkciókra is, amelyeket figyelembe kell venni a frissítési folyamat során. A változtatások mértéke miatt a meglévő költségvetési tervek csak akkor nyithatók meg, ha a jelen témakörben felvázolt változtatások megtörténtek. A jelentéseknek azonban továbbra is működniük kell, és nincs szükség hozzájuk plusz módosításokra.
 
 ## <a name="overview-of-changes"></a>Változások áttekintése
-Számos jelentős változás következett be a Dynamics 365 for Finance and Operations Költségvetés részében. Ezek a változtatások arra szolgálnak, hogy könnyebben konfigurálhatóvá és újrahasználhatóbbá tegyék a költségvetés tervezését, csökkentve az évről évre szükséges karbantartási és beállítási igényt. Az AX 2012 következő területei már nem léteznek a Finance szolgáltatásban:
+Számos jelentős változás következett be a Finance and Operations Költségvetés részében. Ezek a változtatások arra szolgálnak, hogy könnyebben konfigurálhatóvá és újrahasználhatóbbá tegyék a költségvetés tervezését, csökkentve az évről évre szükséges karbantartási és beállítási igényt. Az AX 2012 következő területei már nem léteznek a Finance szolgáltatásban:
 
 -   Költségvetésiterv-sablonok (Költségvetési terv konfigurációja)
 -   Költségvetésiterv-mappák (Költségvetési terv konfigurációja)
@@ -72,7 +71,7 @@ A frissített rendszer beállításaira vonatkozó konfiguráció meghatározás
    -   Költségvetési tervek forgatókönyvei: Tényleges adatok, Kiindulás, Költségvetési kérelem, Költségvetés jóváhagyva
    -   Költségvetési terv sorai 2017 minden forgatókönyvéhez, valamint Tényleges adatok 2017-re és 2016-ra
 
-   A következő oszlopok jönnek létre a Finance and Operations programban:
+   A következő oszlopok jönnek létre a Finance and Operations alkalmazásban:
 
    | Oszlop neve    | Költségvetési tervváltozat | Oszlop időszaka | Év eltolása |
    |----------------|----------------------|--------------------|-------------|

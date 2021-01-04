@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 68843
 ms.assetid: 271df6f4-12b7-4b3e-b2d7-36ea98ef1871
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: c682ed96e47c718d3a9af1eb10aada75c59d3156
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: e8b688cb1e4589eb076015d01dc4f0f0db14787e
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181841"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4688317"
 ---
 # <a name="generate-financial-reports"></a>Pénzügyi jelentések létrehozása
 
@@ -98,7 +97,7 @@ Jelentésütemezést csak a jelentésütemezés tulajdonosa vagy egy rendszergaz
 
 Amennyiben nem adja meg a jelentésekben szereplő összes vállalathoz szükséges hitelesítő adatokat, a jelentésütemezés mentésekor a következő üzenet jelenik meg: „Meg kell adnia az ebben a jelentésütemezésben szereplő vállalatokra vonatkozó hitelesítési adatokat. Kattintson az Engedélyek gombra a hitelesítő adatok megadásához.”
 
-Például Phyllis bejelentkezik az A vállalatba a felhasználónevének és a jelszavának megadásával. Létrehoz egy ütemezést egy olyan jelentéshez, amely több vállalattól való adatgyűjtésre használ egy jelentési fa definíciót. A jelentésütemezés mentésekor a rendszer figyelmezteti Phyllist, hogy adja meg a jelentésfa-definícióban meghatározott egyéb vállalatokhoz szükséges hitelesítő adatokat. A hitelesítő adatok lejárta esetén a program nem hozza létre az érintett jelentéseket a jelentésütemezésben, amíg a hitelesítési adatok frissítése meg nem történik. Megjelenik egy üzenet a jelentés-várólistán, jelezve, hogy az engedélyeket frissíteni kell. A jelentésütemezés sikertelen lesz, amennyiben a következő esetek közül bármelyik teljesül (mivel ezekhez hitelesítő adatok szükségesek):
+Például egy felhasználó bejelentkezik az A vállalatba a felhasználónevének és a jelszavának megadásával. A felhasználó létrehoz egy ütemezést egy olyan jelentéshez, amely több vállalattól való adatgyűjtésre használ egy jelentési fa definíciót. A jelentésütemezés mentésekor a rendszer figyelmezteti a felhasználót, hogy adja meg a jelentésfa-definícióban meghatározott egyéb vállalatokhoz szükséges hitelesítő adatokat. A hitelesítő adatok lejárta esetén a program nem hozza létre az érintett jelentéseket a jelentésütemezésben, amíg a hitelesítési adatok frissítése meg nem történik. Megjelenik egy üzenet a jelentés-várólistán, jelezve, hogy az engedélyeket frissíteni kell. A jelentésütemezés sikertelen lesz, amennyiben a következő esetek közül bármelyik teljesül (mivel ezekhez hitelesítő adatok szükségesek):
 
 - Új vállalatot adtak hozzá egy egyedi jelentés jelentési fájához.
 - Módosult egy jelentés egy jelentéscsoportban.

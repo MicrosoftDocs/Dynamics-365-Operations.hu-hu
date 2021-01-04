@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner, ERVendorTable
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 220314
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ede88bc1767304a86a86ec27365db9403c5a951d
-ms.sourcegitcommit: 4909e55529f03310d24b7e40d52751e24d35259b
+ms.openlocfilehash: 7cd0d8e7aa9595e705416798772f52956ef609da
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "3678248"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680242"
 ---
 # <a name="design-a-new-er-solution-to-print-a-custom-report"></a>Új ER-megoldás tervezése egyéni jelentés nyomtatásához
 
@@ -142,10 +141,10 @@ Elektronikus jelentések fejlesztője szerepkörű felhasználóként konfigurá
 
 ### <a name="configure-er-parameters"></a><a name="ConfigureParameters"></a>ER-paraméterek konfigurálása
 
-1. Lépjen a **Szervezeti adminisztráció** \> **Munkaterületek** \> **Elektronikus jelentéskészítés** részre.
-2. Az **Elektronikus jelentéskészítés** munkaterületen válassza az **Elektronikus jelentéskészítés paraméterei** lehetőséget.
-3. Az **Elektronikus jelentéskészítési paraméterek** oldalon, az **Általános** lapon állítsa a **Tervezői mód engedélyezése** beállítást **Igen** értékre.
-4. A **Mellékletek** lapon állítsa be a következő paramétereket:
+1. Ugorjon a **Szervezeti adminisztráció** \> **Munkaterületek** \> **Elektronikus jelentés** pontra.
+2. Az **Elektronikus jelentéskészítés** munkaterületen kattintson az **Elektronikus jelentések paraméterei** hivatkozására.
+3. Az **Elektronikus jelentéskészítési paraméterek** oldalon, az **Általános** lapon a **Tervezői mód engedélyezése** lehetőséget állítsa **Igen** értékre.
+4. A **Mellékletek** lapon állítsa be a következő paramétereket:
 
     - A **Konfigurációk** mezőben állítsa be a **Fájl** értéket az **USMF** vállalathoz.
     - A **Feladatarchívum**, **Ideiglenes**, **Alap** és **Egyebek** mezőkben adja meg a **Fájl** típust.
@@ -161,28 +160,28 @@ Minden ER-konfigurációt egy ER-konfigurációszolgáltató által birtokoltké
 
 #### <a name="review-the-list-of-er-configuration-providers"></a><a name="ReviewProvidersList"></a>Az ER-konfigurációszolgáltatók listájának áttekintése
 
-1. Lépjen a **Szervezeti adminisztráció** \> **Munkaterületek** \> **Elektronikus jelentéskészítés** részre.
+1. Ugorjon a **Szervezeti adminisztráció** \> **Munkaterületek** \> **Elektronikus jelentés** pontra.
 2. Az **Elektronikus jelentéskészítés** munkaterületen, a **Kapcsolódó hivatkozások** szakaszban, válassza a **Konfigurációszolgáltatók** elemet.
 3. A **Konfigurációszolgáltatók** oldalon minden konfigurációszolgáltatói rekordnak egyedi neve és URL-címe van. Tekintse át az oldal tartalmát. Ha a már létezik a **Litware, Inc.** (`https://www.litware.com`) rekordja, hagyja ki a következő eljárást: [Új ER-konfigurációszolgáltató hozzáadása](#ActivateProvider).
 
 #### <a name="add-a-new-er-configuration-provider"></a><a name="AddProvider"></a>Új ER-konfigurációszolgáltató hozzáadása
 
 1. A **Konfigurációszolgáltatók** oldalon válassza az **Új** elemet.
-2. A **Név** mezőbe írja be a következőt: **Litware, Inc.**
-3. Az **Internetcím** mezőben adja meg a következőt:  `https://www.litware.com`.
-4. Válassza a **Mentés** lehetőséget.
+2. A **Név** mezőbe írja be a következőt: **Litware, Inc.**.
+3. Az **Internetcím** mezőben adja meg a következőt: `https://www.litware.com`.
+4. Válassza a **Mentés** lehetőséget.
 
 #### <a name="activate-an-er-configuration-provider"></a><a name="ActivateAddedProvider"></a>ER-konfigurációszolgáltató aktiválása
 
-1. Lépjen a **Szervezeti adminisztráció** \> **Munkaterületek** \> **Elektronikus jelentéskészítés** részre.
+1. Ugorjon a **Szervezeti adminisztráció** \> **Munkaterületek** \> **Elektronikus jelentés** pontra.
 2. Az **Elektronikus jelentés** munkaterületen válassza ki a **Litware, Inc.** konfigurációszolgáltatót.
-3. Válassza ki a **Beállítás aktívként** elemet.
+3. Válassza ki az **Aktív beállítása** elemet.
 
 További információért az ER-konfigurációszolgáltatókkal kapcsolatban tekintse át a [Konfigurációszolgáltatók létrehozása és megjelölése aktívként](tasks/er-configuration-provider-mark-it-active-2016-11.md) eljárást.
 
 ## <a name="design-a-domain-specific-data-model"></a><a name="DesignModel"></a>Tartományspecifikus adatmodell kialakítása
 
-Létre kell hoznia egy olyan új ER-konfigurációt, amely tartalmaz egy [adatmodell](general-electronic-reporting.md#data-model-and-model-mapping-components) összetevőt a **Kérdőív** üzleti tartományhoz. Ez az adatmodell lesz az adatforrás, amikor megtervezi az ER-formátumot a **Kérdőív** jelentés létrehozásához.
+Létre kell hoznia egy olyan új ER-konfigurációt, amely tartalmaz egy [adatmodell](general-electronic-reporting.md#data-model-and-model-mapping-components) összetevőt a **Kérdőív** üzleti tartományhoz. Ez az adatmodell lesz az adatforrás, amikor megtervezi az ER-formátumot a **Kérdőív** jelentés létrehozásához.
 
 Az [Új adatmodell-konfiguráció importálása](#ImportDataModel) szakasz lépéseivel importálhatja a szükséges adatmodellt a megadott XML-fájlból. Egy másik megoldás, hogy az [Új adatmodell-konfiguráció létrehozása](#DesignDataModel) szakasz lépéseit követve az alapoktól kezdve tervezi meg az adatmodellt.
 
@@ -811,7 +810,7 @@ A konfiguráció 1.1. verziójának állapota **Piszkozatról** **Befejezett** �
 
 Rendszergazda szerepkörű felhasználóként új logikát kell kidolgoznia, hogy a konfigurált ER-formátumot meg lehessen hívni az alkalmazás felhasználói felületéről (UI) az egyéni jelentés létrehozásához. Az ER jelenleg nem rendelkezik ilyen típusú logika konfigurálásához használható funkciókkal. Ennek megfelelően ehhez műszaki erőfeszítésre van szükség. 
 
-Az új logika kidolgozásához telepítenie kell egy olyan topológiát, amely támogatja a folyamatos buildet. A további tudnivalók: [A folyamatos build- és tesztautomatizálást támogató topológiák telepítése](../perf-test/continuous-build-test-automation.md). Ezen topológia fejlesztői környezetéhez való hozzáféréssel is kell rendelkezzen. További információ az elérhető ER API-ról: [Elektronikus jelentéskészítési keretrendszer API](er-apis-app73.md).
+Az új logika kidolgozásához telepítenie kell egy olyan topológiát, amely támogatja a folyamatos buildet. A további tudnivalókért lásd: [A folyamatos build- és tesztautomatizálást támogató topológiák telepítése](../perf-test/continuous-build-test-automation.md). Ezen topológia fejlesztői környezetéhez való hozzáféréssel is kell rendelkezzen. További információ az elérhető ER API-ról: [Elektronikus jelentéskészítési keretrendszer API](er-apis-app73.md).
 
 ### <a name="modify-source-code"></a><a name="ModifySourceCode"></a>Forráskód módosítása
 

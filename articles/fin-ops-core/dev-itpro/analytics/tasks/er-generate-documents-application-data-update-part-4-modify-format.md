@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6132d48f276b27797e86fbcde11746b7e4da7d3b
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 7dfa8fcb3525876da66659fe3bd8bbe3b81a37a3
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3142455"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684547"
 ---
 # <a name="modify-formats-to-generate-documents-that-have-application-data"></a>Formátum módosítása alkalmazásadatokkal rendelkező dokumentumok létrehozásához
 
@@ -89,22 +88,23 @@ Az eljárás lépései az elektronikus dokumentumot létrehozó elektronikus jel
 46. Kattintson a Kötés gombra.
 47. A fában bontsa ki a „model” elemet.
 48. A fastruktúrában bontsa ki ezt: „model\Transactions”.
-49. A fában jelölje ki ezt: „File\Declaration\Data\Item =  model.Transactions\Commodity rec id”.
-50. A fán válassza ki ezt: „model\Transactions\Commodity rec id”.
+49. A fában jelölje ki ezt: „File\Declaration\Data\Item = model.Transactions\Commodity rec ID”.
+50. A fán válassza ki ezt: „model\Transactions\Commodity rec ID”.
 51. Kattintson a Kötés gombra.
 52. Kattintson a Mentés gombra.
 
 ## <a name="modify-format-to-memorize-details-of-reporting"></a>Módosítsa a formátumot a jelentés adatainak memorizálásához
+
 1. Kattintson a Formátum hozzárendelése modellhez lehetőségre.
 2. Kattintson az Új elemre.
 3. A Definíció mezőben adja meg vagy válassza ki az 'Alkalmazásadatok frissítéséhez' gyökérelemet.
-    * Alkalmazásadatok módosításához  
+    * Alkalmazásadatok módosításához.
 4. A Név mezőbe írja be a következőt: „Hozzárendelés az adatok frissítéséhez”.
     * Hozzárendelés az adatok frissítéséhez  
 5. Kattintson a Mentés gombra.
-    * Ez a hozzárendelés határozza meg, hogyan kell összegyűjteni az Intrastat-jelentés adatait az adatmodellben, amelynek a szerkezetét az „Alkalmazásadatok módosításához” kiválasztott gyökérelem határozza meg. Ezeket az adatokat – a modell-hozzárendelés az azonos „Alkalmazásadatok módosításához” gyökérelemmel, valamint a „Célhoz” irány – az alkalmazásadatok frissítéséhez használja a rendszer. Az alkalmazásadatok frissítése azonnal elindul, amint megtörtént a kimenő Intrastat-jelentés előállítása. Fontos megjegyezni, hogy az alkalmazásadatok frissítése kihagyható futásidőben, de az adatmodellnek üresnek kell lennie (üres rekordok listáját tartalmazó).   
+    * Ez a hozzárendelés határozza meg, hogyan kell összegyűjteni az Intrastat-jelentés adatait az adatmodellben, amelynek a szerkezetét az „Alkalmazásadatok módosításához” kiválasztott gyökérelem határozza meg. Ezeket az adatokat – a modell-hozzárendelés az azonos „Alkalmazásadatok módosításához” gyökérelemmel, valamint a „Célhoz” irány – az alkalmazásadatok frissítéséhez használja a rendszer. Az alkalmazásadatok frissítése azonnal elindul, amint megtörtént a kimenő Intrastat-jelentés előállítása. Az alkalmazásadatok frissítése kihagyható futásidőben, de az adatmodellnek üresnek kell lennie (üres rekordok listáját tartalmazó).
 6. Kattintson a Tervező pontra.
-    * Vegye figyelembe, hogy a kimenő Intrastat-jelentésformátum alapértelmezés szerint hozzá lesz adva ehhez a modell-hozzárendeléshez adatforrásként.  
+    * A kimenő Intrastat-jelentésformátum alapértelmezés szerint hozzá lesz adva ehhez a modell-hozzárendeléshez adatforrásként.  
     * Kösse össze a tervezett jelentés elemeit (adatforrásként jelennek meg) az adatmodell elemeivel, amelynek a szűrése a kiválasztott modell gyökéreleme alapján történik.  
 7. A fában bontsa ki az „Archive header” lehetőséget.
 8. A fában bontsa ki ezt: „Archive header\Archive lines”.
@@ -120,8 +120,8 @@ Az eljárás lépései az elektronikus dokumentumot létrehozó elektronikus jel
 18. Kattintson a Függvény hozzáadása gombra.
 19. A fastruktúrában bontsa ki ezt: „format”.
 20. A fában bontsa ki a „format\Declaration: XML Element(Declaration)”.
-21. A fán jelölje bontsa ki ezt: „format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)”.
-22. A fában válassza ki a „format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)” lehetőséget.
+21. A fastruktúrában bontsa ki a `format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)` csomópontot.
+22. A fastruktúrában válassza ki a `format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)` csomópontot.
 23. Kattintson az Adatforrás hozzáadása pontra.
 24. A Képlet mezőben adja meg ezt: 'COUNT(format.Declaration.Data.Item)'.
     * COUNT(format.Declaration.Data.Item)  
@@ -130,23 +130,22 @@ Az eljárás lépései az elektronikus dokumentumot létrehozó elektronikus jel
 27. A fában válassza ki az „Archive header\File name” lehetőséget.
 28. A fán jelölje ki a „format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\File name: Item String(File name)” lehetőséget.
 29. Kattintson a Kötés gombra.
-30. A fában válassza ki a „format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Dim4: XML Element 1..1 (Item)\number: String(number)” lehetőséget.
+30. A fastruktúrában válassza ki a `format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Dim4: XML Element 1..1 (Item)\number: String(number)` csomópontot.
 31. A fában válassza ki ezt: „Archive header\Archive lines\Item number”.
 32. Kattintson a Kötés gombra.
-33. A fában válassza ki a „format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Dim3: XML Element 1..1 (Amount)\value: Numeric Real(value)” lehetőséget.
+33. A fastruktúrában válassza ki a `format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Dim3: XML Element 1..1 (Amount)\value: Numeric Real(value)` csomópontot.
 34. A fában válassza ki ezt: „Archive header\Archive lines\Amount”.
 35. Kattintson a Kötés gombra.
-36. A fában jelölje ki ezt: „format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Commodity rec id: Item Int64(Commodity rec id)”.
-37. A fában válassza ki ezt: „Archive header\Archive lines\Commodity rec id”.
+36. A fastruktúrában válassza ki a `format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Commodity rec ID: Item Int64(Commodity rec ID)` csomópontot.
+37. A fában válassza ki ezt: „Archive header\Archive lines\Commodity rec ID”.
 38. Kattintson a Kötés gombra.
 39. A fában válassza ki ezt: „Archive header\Archive lines”.
-40. A fában válassza ki a „format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)” lehetőséget.
+40. A fastruktúrában válassza ki a `format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)` csomópontot.
 41. Kattintson a Kötés gombra.
 42. A fáról válassza ki a Fejléc archiválása lehetőséget.
-43. A fán jelölje be a „format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)” lehetőséget.
+43. A fastruktúrában válassza ki a `format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)` csomópontot.
 44. Kattintson a Kötés gombra.
 45. Kattintson a Mentés gombra.
 46. Zárja be a lapot.
 47. Zárja be a lapot.
 48. Zárja be a lapot.
-

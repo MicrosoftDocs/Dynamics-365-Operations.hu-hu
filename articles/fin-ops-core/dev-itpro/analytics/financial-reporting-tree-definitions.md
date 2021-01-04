@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 57592
 ms.assetid: 747faa47-9a23-4277-bc11-8d0a1267c3a4
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 6bb16ada206434c0588ed6c140a49b6a5d94d7ed
-ms.sourcegitcommit: a3fbcd63f10f204350a058a124ba80abeb34309e
+ms.openlocfilehash: 8ae024c2d791e1219c7383dc95283219a9300eac
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "2564167"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682673"
 ---
 # <a name="reporting-tree-definitions-in-financial-reports"></a>Jelentési fa definíciója a pénzügyi jelentésekben
 
@@ -106,7 +105,7 @@ A jelentési fa segítségével összesítheti az alárendelt jelentési egység
     > Ha a dimenziókat az alá- és fölérendelt egységekben is megadjuk, ez dupla adatokat eredményezhet a jelentésben.
 
 - A jelentési egységek, amelyek a jelentési fában dimenziókat tartalmaznak, megfelelnek azoknak a dimenzióknak, melyek a sor- és oszlopdefiníciókban használatosak. A dimenziók kombinációja határozza meg az adott egységbe visszatérő összegeket. Például a 2. példában a 6. és 7. sorok csak a 00 és 01 részlegek értékeit küldik vissza.
-- A jelentési fában dimenziókat nem tartalmazó fölérendelt jelentési egységek mennyiségeit az alárendelt egység jelentéséből kell meghatározni, és ezt a mennyiséget kell összesíteni a fölérendelt egységbe. Például ha a fölérendelt egység (lásd a Contoso USA 2. példában az adatok összesítését) két alárendelt egységgel rendelkezik (022 és 023), és nem tartalmaz dimenziókat, egy jelentés keletkezik minden alárendelt egységhez és a fölérendelt egységhez. A fölérendelt egység teljes összege a két alárendelt mennyiség összege.
+- A jelentési fában dimenziókat nem tartalmazó fölérendelt jelentési egységek mennyiségeit az alárendelt egység jelentéséből kell meghatározni, és ezt a mennyiséget kell összesíteni a fölérendelt egységbe. Például ha a fölérendelt egység (lásd a Contoso USA 2. példában az adatok összesítését) két alárendelt egységgel rendelkezik (022 és 023), és nem tartalmaz dimenziókat, egy jelentés keletkezik minden alárendelt egységhez és a fölérendelt egységhez. A fölérendelt egység teljes összege a két alárendelt mennyiség összege.
 
 ### <a name="manage-reporting-units"></a>Jelentési egységek kezelése
 
@@ -165,9 +164,9 @@ Egyes felhasználók és csoportok számára megakadályozhatja a hozzáférést
 3. Az **Egységbiztonság** párbeszédpanelen válasszon ki egy nevet, majd kattintson az **Eltávolítás** gombra.
 4. Kattintson az **OK** gombra.
 
-### <a name="link-toreports"></a>Hivatkozás a jelentésekhez
+### <a name="link-to-reports"></a>Hivatkozás a jelentésekhez
 
-Miután létrehozott egy **jelentés** oszlopot a sordefinícióban, és megadta a jelentést, melynek szerepelnie kell a jelentésben, frissítenie kell a jelentési fát a csatolt oszloppal és a jelentés adataival. Egy jelentés bármely egységbe lehet importálni a jelentési fában.
+Miután létrehozott egy **jelentés** oszlopot a sordefinícióban, és megadta a jelentést, melynek szerepelnie kell a jelentésben, frissítenie kell a jelentési fát a csatolt oszloppal és a jelentés adataival. Egy jelentés bármely egységbe lehet importálni a jelentési fában.
 
 ### <a name="identify-the-report-in-a-reporting-tree"></a>A jelentés azonosítása a jelentési fában.
 

@@ -1,7 +1,7 @@
 ---
 title: Feladatkörök szétválasztásával kapcsolatos ütközések azonosítása és feloldása
 description: Ez a cikk a feladatkörök szétválasztásával kapcsolatos ütközések azonosítását és feloldását ismerteti.
-author: maertenm
+author: peakerbl
 manager: AnnBe
 ms.date: 07/08/2019
 ms.topic: business-process
@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: SysSecSegregationOfDutiesConflict, SysSecSegregationOfDutiesRule
 audience: Application User
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: sericks
+ms.author: peakerbl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 69dabb44ef08bf798b86cd031536146880c8fd40
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: b7e25a568b86ce3161e2c52045ff2361c0bc4a0e
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3982478"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681594"
 ---
 # <a name="identify-and-resolve-conflicts-in-segregation-of-duties"></a>Feladatkörök szétválasztásával kapcsolatos ütközések azonosítása és feloldása
 
@@ -35,9 +34,9 @@ Ez a cikk a feladatkörök szétválasztásával kapcsolatos ütközések azonos
 2. Válassza ki az **OK** lehetőséget. Egy értesítés megjeleníti az ellenőrzés eredményeit. Ha ütközés van, a **Felhasználók** lapon módosítsa a felhasználói szerepkörök hozzárendelését. A rendszer a **Feladatköri ütközések szétválasztása** lapon is naplózza az ütközéseket. Az ellenőrzés kötegelt feladatként való futtatásához válassza a **Kötegelt feldolgozás** lehetőséget, és adja meg a többi kötegparamétert. A kötegelt feladat lefutása után a **Feladatköri ütközések szétválasztása** tekintheti át az ütközéseket.  
 
 ## <a name="view-and-resolve-conflicting-user-role-assignments"></a>Az ütköző felhasználói szerepkör-hozzárendelések megtekintése
-1. Lépjen a **Navigációs ablaktábla > Modulok > Rendszerfelügyelet > Biztonság > Feladatkörök szétválasztása > Feladatköri ütközések szétválasztása** részre. Válasszon ki egy ütközést, és kattintson a következő gombok egyikére: **Hozzárendelés megtagadása – A felhasználó további biztonsági szerepkörökhöz való hozzárendelésének megtagadása** . Ha megtagad egy automatikus szerepkör-hozzárendelést, a felhasználót a rendszer kizárja a szerepkörből. A kizárt felhasználó nem rendelkezik majd a szerepkörhöz társított hozzáféréssel, és a felhasználót nem lehet hozzárendelni a szerepkörhöz mindaddig, amíg a rendszergazda törli a kizárást. Hozzárendelés engedélyezése – **Felülbírálja** az ütközést, és engedélyezi a felhasználó mindkét biztonsági szerepkörhöz való hozzárendelését. Ha felülbírál egy ütközést, a **Felülbírálás oka** mezőt is ki kell töltenie.  
+1. Lépjen a **Navigációs ablaktábla > Modulok > Rendszerfelügyelet > Biztonság > Feladatkörök szétválasztása > Feladatköri ütközések szétválasztása** részre. Válasszon ki egy ütközést, és kattintson a következő gombok egyikére: **Hozzárendelés megtagadása – A felhasználó további biztonsági szerepkörökhöz való hozzárendelésének megtagadása**. Ha megtagad egy automatikus szerepkör-hozzárendelést, a felhasználót a rendszer kizárja a szerepkörből. A kizárt felhasználó nem rendelkezik majd a szerepkörhöz társított hozzáféréssel, és a felhasználót nem lehet hozzárendelni a szerepkörhöz mindaddig, amíg a rendszergazda törli a kizárást. Hozzárendelés engedélyezése – **Felülbírálja** az ütközést, és engedélyezi a felhasználó mindkét biztonsági szerepkörhöz való hozzárendelését. Ha felülbírál egy ütközést, a **Felülbírálás oka** mezőt is ki kell töltenie.  
 2. Zárja be a lapot.
-3. Lépjen a **Navigációs ablaktábla > Modulok > Rendszerfelügyelet > Biztonság > Feladatkörök szétválasztása > Feladatkörök szétválasztásának feloldatlan ütközései** részre. Válasszon ki egy ütközést, és kattintson a következő gombok egyikére: **Hozzárendelés megtagadása – A felhasználó további biztonsági szerepkörökhöz való hozzárendelésének megtagadása** . Ha megtagad egy automatikus szerepkör-hozzárendelést, a felhasználót a rendszer kizárja a szerepkörből. A kizárt felhasználó nem rendelkezik majd a szerepkörhöz társított hozzáféréssel, és a felhasználót nem lehet hozzárendelni a szerepkörhöz mindaddig, amíg a rendszergazda törli a kizárást. Hozzárendelés engedélyezése – **Felülbírálja** az ütközést, és engedélyezi a felhasználó mindkét biztonsági szerepkörhöz való hozzárendelését. Ha felülbírál egy ütközést, a **Felülbírálás oka** mezőt is ki kell töltenie.    
+3. Lépjen a **Navigációs ablaktábla > Modulok > Rendszerfelügyelet > Biztonság > Feladatkörök szétválasztása > Feladatkörök szétválasztásának feloldatlan ütközései** részre. Válasszon ki egy ütközést, és kattintson a következő gombok egyikére: **Hozzárendelés megtagadása – A felhasználó további biztonsági szerepkörökhöz való hozzárendelésének megtagadása**. Ha megtagad egy automatikus szerepkör-hozzárendelést, a felhasználót a rendszer kizárja a szerepkörből. A kizárt felhasználó nem rendelkezik majd a szerepkörhöz társított hozzáféréssel, és a felhasználót nem lehet hozzárendelni a szerepkörhöz mindaddig, amíg a rendszergazda törli a kizárást. Hozzárendelés engedélyezése – **Felülbírálja** az ütközést, és engedélyezi a felhasználó mindkét biztonsági szerepkörhöz való hozzárendelését. Ha felülbírál egy ütközést, a **Felülbírálás oka** mezőt is ki kell töltenie.    
 4. Zárja be a lapot.
 
 ## <a name="verify-whether-existing-roles-comply-with-new-rules-for-segregation-of-duties"></a>Ellenőrizze, hogy a meglévő szerepkörök megfelelnek-e a feladatkörök szétválasztására vonatkozó új szabályoknak.

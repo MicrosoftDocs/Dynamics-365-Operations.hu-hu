@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 ms.custom: 267914
 ms.assetid: 4e6c7194-a059-4057-bd62-ec0c802c36fd
 ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 210231bb442928674b490d83f50bf787d7bfa60c
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 26d5f165648c1553745e3061cc89bcba42f9636a
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181013"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4688467"
 ---
 # <a name="open-entity-data-in-excel-and-update-it-by-using-the-excel-add-in"></a>Entitásadatok megnyitása az Excel programban, és frissítésük az Excel-modul használatával
 
@@ -37,8 +36,8 @@ Az entitásadatok megnyitásával az Excel programban gyorsan és egyszerűen te
 
 További tudnivalókért az Excel-bővítményről, tekintse meg a rövid videót: [Excel-sablon létrehozása a fejléc- és sormintákhoz a Dynamics 365 for Finance and Operations](https://youtu.be/RTicLb-6dbI) alkalmazásban.
 
-## <a name="open-entity-data-in-excel-when-you-start-from-finance-and-operations"></a>Nyissa meg az entitásadatokat az Excel programban a Finance and Operations indításakor
-1. A Finance and Operations egyik lapján válassza a **Megnyitás a Microsoft Office** programban lehetőséget.
+## <a name="open-entity-data-in-excel-when-you-start-from-finance-and-operations"></a>Az entitás adatainak megnyitása az Excel indításakor a Finance and Operations alkalmazásból
+1. A Finance and Operations lapján válassza a **Megnyitás Microsoft Office alkalmazásban** lehetőséget.
 
     Ha az oldal gyökér adatforrása (tábla) megegyezik bármelyik entitás gyökér adatforrásával, létrejönnek a lap alapértelmezett **Megnyitás az Excel programban** beállításai. A **Megnyitás az Excel programban** lehetőségek megtalálhatók a gyakran használt lapokon, például az **Összes szállító** és **Összes vevő** oldalon.
  
@@ -85,7 +84,7 @@ Ne feledje, hogy csak akkor hozható létre új rekord, ha mind a kulcs, mind a 
 Rekord törléséhez hajtsa végre az alábbi lépések valamelyikét:
 
 - Kattintson a jobb gombbal a törölendő munkalapsor melletti sorszámra, és kattintson a **Törlés** gombra.
-- Kattintson a jobb gombbal a törölendő munkalapsor melletti sorszámra, és kattintson a **Törlés** &gt; **Táblázatsorok**gombra.
+- Kattintson a jobb gombbal a törölendő munkalapsor melletti sorszámra, és kattintson a **Törlés** &gt; **Táblázatsorok** gombra.
 
 Ha az adatforrásokat kapcsolódóként adták meg, akkor a fejléc a sorok elé kerül. Ha más adatforrások között függőségek vannak, előfordulhat, hogy módosítania kell az alapértelmezett közzétételi sorrendet. Az Excel-bővítmény, a közzétételi sorrendjének módosítása érdekében válasszon ki a **beállítások** gomb (felszerelés szimbólumát), majd a **Data Connector** gyorslapon válassza a **Közzétételi rendelés konfigurálása** lehetőséget.
 
@@ -123,4 +122,4 @@ Vannak bizonyos problémák, amelyek néhány egyszerű lépéssel megoldhatók.
 
 - **Látszik a Kisalkalmazások betöltése gomb.** – Ha az Excel-bővítmény rendelkezik egy **Kisalkalmazások betöltése** gombbal a bejelentkezés után, akkor valószínűleg nem a megfelelő felhasználóként jelentkezett be. A probléma megoldásához ellenőrizze, hogy a helyes felhasználónév jelenik-e meg az Excel-bővítmény a jobb felső sarkában. Ha helytelen felhasználónév jelenik meg, kattintson rá, jelentkezzen ki, majd jelentkezzen be újra.
 - **A „Tiltott” üzenetet kapja.** – Ha a „Tiltott” üzenetet kapja, miközben az Excel-bővítmény a metaadatok betöltését végzi, a fiók, amelyik be van jelentkezve az Excel-bővítménybe, nem rendelkezik engedéllyel a megcélzott szolgáltatás, példány vagy adatbázis használatához. A probléma megoldásához ellenőrizze, hogy a helyes felhasználónév jelenik-e meg az Excel-bővítmény a jobb felső sarkában. Ha helytelen felhasználónév jelenik meg, kattintson rá, jelentkezzen ki, majd jelentkezzen be újra.
-- **Egy üres weblap jelenik meg az Excel felett.** – Ha üres weblap jelenik meg a bejelentkezési folyamat során, a fiók AD FS-t igényel, de az Excel-programnak a bővítményt futtató verziója nem elég friss a bejelentkezési párbeszédpanel betöltéséhez. A probléma megoldásához frissítse a használt Excel-verziót. Ha a vállalata a késleltetett csatornán van, az Excel verziójának frissítéséhez használja az [Office telepítési eszközt](https://technet.microsoft.com/library/jj219422.aspx) [a késleltetett csatornáról az aktuális csatornára váltáshoz](https://technet.microsoft.com/library/mt455210.aspx).
+- **Egy üres weblap jelenik meg az Excel felett.** – Ha üres weblap jelenik meg a bejelentkezési folyamat során, a fiók AD FS-t igényel, de az Excel-programnak a bővítményt futtató verziója nem elég friss a bejelentkezési párbeszédpanel betöltéséhez. A probléma megoldásához frissítse a használt Excel-verziót. Ha a vállalata a késleltetett csatornán van, az Excel verziójának frissítéséhez használja az [Office telepítési eszközt](https://technet.microsoft.com/library/jj219422.aspx) [a késleltetett csatornáról az aktuális csatornára váltáshoz](https://technet.microsoft.com/library/mt455210.aspx).

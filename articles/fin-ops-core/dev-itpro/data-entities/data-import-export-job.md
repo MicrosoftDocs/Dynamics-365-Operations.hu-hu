@@ -3,24 +3,23 @@ title: Adatimportálási és -exportálási feladatok áttekintése
 description: Az Adatezelése munkaterület segítségével hozhatja létre és kezelheti az adatimportálási és -exportálási feladatokat.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 04/21/2020
+ms.date: 11/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application user
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b25edf9fe09c130ea3d55b11f2698b29c7a39a8b
-ms.sourcegitcommit: e9fadf6f6dafdcefaff8e23eaa3c85f53437db3f
+ms.openlocfilehash: 3af49d9355f37e0016f491ed37050f75bbc65d72
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "3278898"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684060"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Adatimportálási és -exportálási feladatok áttekintése
 
@@ -130,7 +129,7 @@ A feladatok egy időben biztosíthatók szerepkörök, felhasználók és jogi s
 A feladat meghatározása után a feladat futtatható egyszer az **Importálás** vagy az **Exportálás** gomb megnyomásával. Ismétlődő feladat beállításához jelölje be az **Ismétlődő adatkezelési feladat létrehozása** lehetőséget.
 
 > [!NOTE]
-> Egy importálási vagy az exportálási feladat futtatható aszinkron módon az **Importálás** vagy **Exportálás** gomb kiválasztásával. Az aszinkorn futtatás az aszinkron keretrendszert használja, amely nem ugyanaz, mint a kötegkeretrendszer. Azonban a kötegkeretrendszerhez hasonlóan az aszinkron keretrendszer is leszabályozhat és ennek következtében a feladat nem futhat le azonnal. A feladatok futtatható szinkronban is az **Importálás most** vagy az **Exportálás most** kiválasztásával. Ez a azonnal elindítja a feladatot, és akkor hasznos, ha a aszinkron vagy kötegelt feladatként nem indul el lekorlátozás miatt. A feladatok végrehajthatók kötegelten is a **Futtatás kötegben** lehetőség kiválasztásával. A Kötegerőforrások leszabályozásnak lehetnek kitéve, így a kötegelt feladat nem feltétlenül indul el azonnal. Az aszinkron beállítás akkor hasznos, ha a felhasználók közvetlenül lépnek interakcióba a felhasználói felülettel, és nem haladó felhasználók akik értik a kötegelt ütemezést. A kötegelés alkalmazása egy másik megoldás akkor, ha a nagy tömegben kell importálni vagy exportálni. Kötegelt feladatok ütemezhetők futtatásához egy adott kötegcsoportban, amelynek több szabályozást tesz lehetővé a terhelés elosztása szempontjából. Ha az aszinkron és kötegelt feladat is leszabályoz magas erőforrás-kihasználtság miatt a rendszerben, akkor azonnali megoldásként az importálás és exportálás szinkronizált verziója használható. A szinkronizált beállítás azonnal indul, és a felhasználói felületet blokkolja, mert szinkronizálást hajt végre. A böngészőablaknak nyitva kell maradnia, amikor a szinkronizált művelet folyamatban van.
+> Egy importálási vagy az exportálási feladat futtatható az **Importálás** vagy **Exportálás** gomb kiválasztásával. Ennek hatására a kötegelt feladat csak egyszeri futásra lesz ütemezve. A feladat lehet, hogy nem lesz azonnal végrehajtva,, ha a kötegelt szolgáltatás a kötegelt szolgáltatásban a terhelés miatt korlátozva van. A feladatok futtatható szinkronban is az **Importálás most** vagy az **Exportálás most** kiválasztásával. Ez a azonnal elindítja a feladatot, és akkor hasznos, ha a a kötegelt feladatként nem indul el lekorlátozás miatt. A feladatok egy későbbi időpontra is ütemezhetők. Ezt úgy teheti meg, hogy kiválasztja a **Futtatás kötegben** lehetőséget. A Kötegerőforrások leszabályozásnak lehetnek kitéve, így a kötegelt feladat nem feltétlenül indul el azonnal. A köteg használata az ajánlott beállítás, mivel ez segít nagy mennyiségű adat esetében, amelyeket importálni vagy exportálni kell. Kötegelt feladatok ütemezhetők futtatásához egy adott kötegcsoportban, amelynek több szabályozást tesz lehetővé a terhelés elosztása szempontjából.
 
 ## <a name="validate-that-the-job-ran-as-expected"></a>Ellenőrizze, hogy a feladat megfelelően futott le
 A feladatelőzmények hibaelhárítási és vizsgálati célra rendelkezésre állnak mind az importálási, mint az exportálási feladatoknál. Az előzményfeladat-futtatások időtartományok szerint vannak rendezve.
@@ -195,7 +194,7 @@ Az adatkezelés során a feladatelőzmények törlési funkcióit kell használn
 
 -   DMFDEFINITIONGROUPEXECUTION
 
-A funkciókezelés modulban engedélyezni kell a funkcionalitást, ekkor elérhető lesz az **Adatkezelési \> Feladatelőzményeinek kiürítése** helyen.
+A funkciókezelés modulban engedélyezni kell a **Végrehajtási előzmények törlése** funkciót , ekkor elérhető lesz az **Adatkezelés \> Feladatelőzményeinek kiürítése** helyen.
 
 ### <a name="scheduling-parameters"></a>Ütemezési paraméterek
 
@@ -203,7 +202,7 @@ A tisztítási folyamat ütemezésekor a következő paramétereket kell megadni
 
 -   **Az előzményekben megtartandó napok száma** – ez a beállítás a megőrzendő végrehajtási előzmények mennyiségének megadására szolgál Ez napok számában van megadva. Ha a tisztítási feladat ismétlődő kötegelt feladatként van ütemezve, ez a beállítás egy folyamatosan mozgó ablakhoz hasonlóan működik, mindig megtartja a megadott szám nap eredményeit, míg a többi törli. Az alapértelmezett érték 7 nap.
 
--   A feladat**végrehajtásához tartozó óraszám** – A törlendő előzmények számától függően a törlési feladat teljes végrehajtási ideje néhány perctől néhány óráig tarthat. Ezt a paramétert a feladat által végrehajtandó órák számával kell megadni. Miután a tisztítási feladat végrehajtása megtörtént a megadott számú órán belül, a feladat kilép, és a következő futtatásakor folytatja a karbantartást.
+-   A feladat **végrehajtásához tartozó óraszám** – A törlendő előzmények számától függően a törlési feladat teljes végrehajtási ideje néhány perctől néhány óráig tarthat. Ezt a paramétert a feladat által végrehajtandó órák számával kell megadni. Miután a tisztítási feladat végrehajtása megtörtént a megadott számú órán belül, a feladat kilép, és a következő futtatásakor folytatja a karbantartást.
 
     A maximális végrehajtási idő a feladat futási idejének felső határértékével adható meg. A tisztítási logika egyszerre egy feladat-végrehajtási azonosítót végez el, időrendi sorrendben, az előzmények törlését a legrégebbivel kezdi. Nem vesz át további végrehajtási azonosítókat törésre, amikor a fennmaradó végrehajtási időtartam a megadott időtartan utolsó 10%-án belül van. Egyes esetekben várható, hogy a törlési feladat a megadott maximális idő után is folytatódni fog. Ez nagyban függ attól, hogy hány rekordot kell törölni az aktuális végrehajtási azonosító alapján amely még a 10%-os küszöb elérése előtt indult el. Az adatok sértetlenségének biztosításához az elindított törlési feladatot is el kell végezni, ami azt jelenti, hogy a törlése a megadott korlát túllépése ellenére is folytatódni fog. Ha ez befejeződött, új végrehajtási azonosító már nem lesz felvéve és a törlési feladat befejeződik. A hátralévő végrehajtási előzmények, amelyek a megfelelő végrehajtási idő hiányában nem lettek törölve, a következő alkalommal kerülnek felvételre, amikorra a törlési feladat ütemezve van. A beállítás alapértelmezett és minimális értéke 2 óra.
 
@@ -211,3 +210,36 @@ A tisztítási folyamat ütemezésekor a következő paramétereket kell megadni
 
 > [!NOTE]
 > Ha az előkészítési táblák rekordjait nem teljes mértékben tisztították meg, győződjön meg arról, hogy az tisztítási feladat futtatása ismétlődő ütemezésű. A fentieknek megfelelően a tisztítási művelet során a feladat csak annyi végrehajtási azonosítót tisztít meg, amennyi a megadott maximum órán belül lehetséges. Ha folytatni szeretné a fennmaradó előkészítési rekordok tisztítását, akkor a feladatnak rendszeresen futnia kell.
+
+## <a name="job-history-clean-up-and-archival-available-for-preview-in-platform-update-39-or-version-10015"></a>Feladatelőzmények törlése és archiválása (előzetes verzióként érhető el a 39-es platformfrissítésben vagy a 10.0.15 verzióban)
+A feladat előzmények törlése és archiválása funkció felülírja a karbantartás funkció korábbi verzióit. Ez a szakasz ezeket az új képességeket fogja elmagyarázni.
+
+A karbantartás funkció egyik fő változtatása a rendszer kötegelt munkájának használata a előzmények törlésére. A rendszer kötegelt feladatának használata lehetővé teszi a Finance and Operations alkalmazások számára, hogy amikor a rendszer készen áll, automatikusan ütemezze és futtassa a karbantartási kötegelt feladatot. A kötegelt feladat manuális ütemezésére már nincs szükség. Ebben az alapértelmezett végrehajtási módban a kötegelt feladat éjféltől óránként indul, és a legutóbbi 7 nap végrehajtási előzményeit fogja megtartani. A program archiválja a kiürített előzményeket a jövőbeli visszakeresés céljából.
+
+> [!NOTE]
+> Mivel ez a funkció előzetes verziójú, a rendszer kötegelt feladata nem törli a végrehajtási előzményeket mindaddig, amíg az nincs engedélyezve a DMFEnableExecutionHistoryCleanupSystemJob tesztfeladattal. Ha a funkció egy későbbi verzióban általánosan elérhető lesz, akkor ez a tesztművelet nem kötelező, és, amikor a rendszer készen áll a kötegelt feladat megkezdi a törlést és archiválást, a fent ismertetett ütemezés szerint. 
+
+> [!NOTE]
+> A jövőbeli verziókban a karbantartási funkciók korábbi verziói el lesznek távolítva a Finance and Operations alkalmazásokból.
+
+A karbantartási folyamat második változása a törölt végrehajtási előzmények archiválása. A karbantartási feladat archiválja a törölt rekordokat a blob-tárolóba amelyet a DIXF használ a rendszeres integrációhoz. Az archivált fájl DIXF-csomagformátumú lesz, és 7 napig elérhető lesz a blobban, és ekkor azt le lehet tölteni. Az archivált fájl alapértelmezett megtartási időtartama 7 nap, ami legfeljebb 90 napra módosítható a paraméterekben.
+
+### <a name="changing-the-default-settings"></a>Az alapértelmezett beállítások módosítása
+Ez a funkció jelenleg a előzetes verziójú, és DMFEnableExecutionHistoryCleanupSystemJob tesztfeladat engedélyezésével explicit módon be kell kapcsolni. Az előkészítés-karbantartás funkciónak is be kell lennie kapcsolva a funkciókezelés modulban.
+
+Ha módosítani szeretné az archivált fájl megtartásának alapértelmezett beállítását, nyissa meg az adatkezelési munkaterületet, és válassza a **Feladatelőzmények törlése** elemet. A **Megtartása a blobban** elemet 7és 90 közötti értékre állíthatja be. Ez a módosítás után létrejövő archívumokra lesz érvényes.
+
+### <a name="downloading-the-archived-package"></a>Az archivált csomag letöltése
+Ez a funkció jelenleg a előzetes verziójú, és DMFEnableExecutionHistoryCleanupSystemJob tesztfeladat engedélyezésével explicit módon be kell kapcsolni. Az előkészítés-karbantartás funkciónak is be kell lennie kapcsolva a funkciókezelés modulban.
+
+Az archivált végrehajtási előzmények letöltéséhez nyissa meg az adatkezelési munkaterületet, és válassza ki a **Feladatelőzmények törlése** elemet. Válassza ki a **Csomag mentési előzményeit** az előzmények képernyő megnyitásához. Ez az űrlap az archivált csomagok listáját tartalmazza. Az Archívum kiválasztható és letölthetõ a **Csomag letöltése** lehetőség kiválasztásával. A letöltött csomag a DIXF csomagformátumban lesz, és a következő fájlokat tartalmazza:
+
+-   Az entitás előkészítési táblájának fájlneve
+-   DMFDEFINITIONGROUPEXECUTION
+-   DMFDEFINITIONGROUPEXECUTIONHISTORY
+-   DMFEXECUTION
+-   DMFSTAGINGEXECUTIONERRORS
+-   DMFSTAGINGLOG
+-   DMFSTAGINGLOGDETAILS
+-   DMFSTAGINGVALIDATIONLOG
+

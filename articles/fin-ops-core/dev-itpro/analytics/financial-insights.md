@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 106233
 ms.assetid: 517e6a88-e7a1-4398-9971-b22fa83306ba
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 596a067611ac4477f4469dbbc370c971e0f7a35d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 67f6d567c7e8d4cc6332c2d661abb04d1b28d2e9
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181772"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682771"
 ---
 # <a name="financial-insights"></a>Financial Insights
 
@@ -88,7 +87,7 @@ Jelenleg a beágyazott Power BI jelentések adatait nem lehet azon jogi személy
 | Vállalatközi pénzügyi információk megtekintése   | A Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3-as verziójában ez a kötelességhez nem rendelt szerepkört. A következő kiadásban ez a feladatkör a pénzügyi igazgatói szerepkörhöz kerül hozzárendelésre. | Ez a feladatkör a Pénzügyi igazgató áttekintés munkaterület menüpontjához biztosít hozzáférést. Alapértelmezés szerint az aktív vállalat szolgál szűrőként. Viszont minden jogi személyt hozzáadhat függetlenül attól, hogy a felhasználó hozzáfér-e a többi jogi személyhez. |
 
 
-## <a name="financial-reporting-vs-finanical-insights"></a>Pénzügyi jelentések és Pénzügyi statisztikák
+## <a name="financial-reporting-vs-financial-insights"></a>Pénzügyi jelentések és Pénzügyi statisztikák
 Noha a **Pénzügyi statisztikák** tartalmaznak pénzügyi kimutatásokat, nem helyettesítik az alkalmazás funkcióját. A **Pénzügyi statisztikák** alapértelmezett pénzügyi kimutatásai korlátozottak, és nem tartalmazzák a pénzügyi kimutatások valamennyi típusát. Pénzügyi jelentéskészítő modul továbbra is elsődleges eszköz a jogszabályban meghatározott pénzügyi kimutatások megtervezéséhez, létrehozásához és előállításához.
 
 A következő összehasonlító táblázattal különbséget tehet a két lehetőség között:
@@ -131,7 +130,7 @@ A felhasználók a bal oldali **Szűrés** ablaktáblával szűrhetik a jelenté
 - **Vizuális elemszintű szűrők** – Ezek a szűrők csak a kiválasztott vizuális elemre vonatkoznak. Ezeket a szűrőket az oldalszintű szűrökön túlmenően alkalmazza a rendszer.
 - **Részletező szűrő** – Ez a szűrő olyan „forrás” vizuális elemből szűr, amelyet a jelenlegi vizuális elemre alkalmazott, amikor a forrás vizuális elemről a jelenlegi vizuális elemre részletezett.
 
-![Szűrő](./media/filter.png)
+![Szűrési beállítások](./media/filter.png)
 
 Egy adott szűrőérték eltávolításához válassza a mellette látható radírszimbólumot. Ne az X kiválasztásával távolítsa el a szűrőt. Ha kiválasztja az X-et, akkor a szűrt mező törlődik a szűrőlehetőségek közül. Ha véletlenül eltávolít egy mezőt a szűrőből, zárja be a munkaterületet, majd nyissa meg újra. Az alapértelmezett szűrőbeállítások újra alkalmazásra kerülnek.
 
@@ -176,25 +175,25 @@ Különböző leásási szintek érhetők el a Power BI segítségével. Minden 
 
 Az alábbi példában a **Főkönyvi kivonat** kimutatás összecsukódik a sorhierarchia legmagasabb szintjére, amely a fő számla típusa.
 
-![Főkönyvi kivonat](./media/trial-balance.png)
+![Főkönyvi kivonat kimutatás](./media/trial-balance.png)
 
 Ha a hierarchia következő szintjét, a főszámla-kategóriákat szeretné megtekinteni, állítsa a **Leásás célja** mezőt **Sorok** értékre, és válassza a **Kibontás** gombot (a harmadik gomb a Leásás célja mező után). Most kibontva látja az összes főszámla-kategóriát. Jelenleg a Power BI nem teszi lehetővé, hogy csak egy sort vagy oszlopot bontson ki, de mégis lássa az összes többi sort vagy oszlopot.
 
-![Főkönyvi kivonat](./media/trial-balance2.png)
+![Főkönyv leásás a sorokon](./media/trial-balance2.png)
 
 A fő számlák az összes sorra vonatkozó kibontásához újra használhatja a **Kibontás** gombot. Azonban, ha csak egy sornál szeretne leásni a fő számlákig, először válassza a **Leásás** gombot (az ablak jobb oldalán levő egyetlen lefelé mutató nyíl), majd válassza ki a sort, amelynél le szeretne ásni. Az alábbi ábrán az az eredmény látható, ha az **Értékesítés** sor van kiválasztva a **Leásás** gomb kiválasztása után.
 
-![Főkönyvi kivonat](./media/trial-balance3.png)
+![Főkönyvi kivonat kibontása gomb](./media/trial-balance3.png)
 
 Miután egy sornál leásott, több kattintás szükséges ahhoz, hogy visszatérjen a teljes főkönyvi kivonathoz. A **Felásás** gomb (az első gomb a **Leásás** mező után) csak az **Értékesítés** kategória környezetében ás felfelé, a következő ábrán látható módon.
 
-![Főkönyvi kivonat](./media/trial-balance4.png)
+![A Főkönyvi kivonat lefúrás gombja](./media/trial-balance4.png)
 
 Folytathatja a **Felásás** gomb használatát a sorok legmagasabb szintű összegzéséig.
 
 A Power BI egy olyan gombbal is rendelkezik, amely lehetővé teszi, hogy a hierarchiában a következő szintre lépjen (a második gomb a **Leásás célja** mező után). Ennek a gombnak a hatása különbözik a **Kibontás** gombétól (a harmadik gomb a **Leásás célja** mező után), amely a hierarchia kibontására használatos. A hierarchiát kibontva a jelentésben megmarad a hierarchia. Például, amint korábban bemutattuk, ha a fő számla típusára kibontva továbbra is megjelenik a fő számla típusa a jelentésben. Azonban a hierarchiában a következő szintre lépve a jelentés többé nem jeleníti meg a szülőt a hierarchiában, ahogyan az a következő ábrán látható.
 
-![Főkönyvi kivonat](./media/trial-balance5.png)
+![A Főkönyvi kivonat vissza gombja](./media/trial-balance5.png)
 
 Az összegzett egyenlegek mögötti tranzakció részleteinek megtekintéséhez kiválaszthat bizonyos összegeket a Financial and Operations alkalmazásba való visszaásáshoz.
 
@@ -245,6 +244,6 @@ Power BI nem támogatja az üres sorok elrejtését és megjelenítését. Ha eg
 
 Az alábbi erőforrásokban található információk nem szükségesek **Pénzügyi igazgató áttekintés** vagy **Financial Insights** munkaterületre vonatkozó beágyazott jelentések éles környezetben történő engedélyezéséhez. Ehelyett hasznosak fejlesztői célokra, és ha saját Power BI jelentéseit szeretné beágyazni.
 
-- <https://blogs.msdn.microsoft.com/dynamicsaxbi/2017/07/29/accessing-analytical-workspaces-on-1box-environment/>
+- [Az analitikus munkaterületek és jelentések elérése egykeretes környezetben](https://blogs.msdn.microsoft.com/dynamicsaxbi/2017/07/29/accessing-analytical-workspaces-on-1box-environment/)
 
-- <https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/add-analytics-tab-workspaces>
+- [Analitika hozzáadása munkaterületekhez a Power BI Embedded használatával](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/add-analytics-tab-workspaces)

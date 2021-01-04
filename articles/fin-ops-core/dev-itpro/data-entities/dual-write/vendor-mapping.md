@@ -1,6 +1,6 @@
 ---
 title: Integrált szállítói alapadat
-description: Ez a témakör a szállítói adatok integrációját ismerteti a Finance and Operations alkalmazás és a Common Data Service között.
+description: Ez a témakör a szállítói adatok integrációját ismerteti a Finance and Operations alkalmazás és a Dataverse között.
 author: RamaKrishnamoorthy
 manager: AnnBe
 ms.date: 07/15/2019
@@ -18,16 +18,18 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 5c4cc92fd7809f4016d8421c98f41a85fcfedc7b
-ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
+ms.openlocfilehash: 636bc57b5ef09d605744f4857fd5fbefceac4875
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "3997648"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685485"
 ---
 # <a name="integrated-vendor-master"></a>Integrált szállítói alapadat
 
 [!include [banner](../../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 
 
@@ -37,7 +39,7 @@ Mindkét módszernél a szállítói adatok integrálva lesznek a Dynamics 365 S
 
 ## <a name="vendor-data-flow"></a>Szállítói adatok áramlása
 
-Használhatja az új szállító megoldást ha a szállítói adatokat nem szeretné a **Partner/kapcsolattartó** entitásban tárolni a Common Data Service megoldásban.
+Használhatja az új szállító megoldást ha a szállítói adatokat nem szeretné a **Partner/kapcsolattartó** entitásban tárolni a Dataverse megoldásban.
 
 ![Szállítói adatok áramlása](media/dual-write-vendor-data-flow.png)
 
@@ -50,12 +52,12 @@ Ha a szállítói adatokat továbbra is a **Partner/kapcsolattartó** szeretné 
 
 ## <a name="templates"></a>Sablonok
 
-A szállítói adatok között a szállító minden részlete (például a szállítói csoport, a címek, a kapcsolatfelvételi adatok, a fizetési és a számlázási profil) szerepel. Ahogy az alábbi táblázatban látható, az entitásleképezések gyűjteménye együttműködik a szállítói adatokkal végzett interakciók során.
+A szállítói adatok között a szállító minden részlete (például a szállítói csoport, a címek, a kapcsolatfelvételi adatok, a fizetési és a számlázási profil) szerepel. Ahogy az alábbi táblázatban látható, az táblaleképezések gyűjteménye együttműködik a szállítói adatokkal végzett interakciók során.
 
 Finance and Operations-alkalmazásoknak | Egyéb Dynamics 365 alkalmazások     | Leírás
 ----------------------------|-----------------------------|------------
 Szállító V2                   | Könyvelési számla                     | Azok a cégek, amelyek a Számla entitással tárolják a szállítói adatokat, továbbra is változás nélkül használhatják ezt a megoldást. A Finance and Operations alkalmazások integrációjának köszönhető explicit szállítói funkciókat ugyancsak kihasználhatja.
-Szállító V2                   | Msdyn\_vendors              | A szállítókhoz egyéni megoldást használó cégek a Finance and Operations-alkalmazások integrációjának köszönhetően kihasználhatják a Common Data Service rendszerben bevezetett kész szállítói fogalmat. 
+Szállító V2                   | Msdyn\_vendors              | A szállítókhoz egyéni megoldást használó cégek a Finance and Operations-alkalmazások integrációjának köszönhetően kihasználhatják a Dataverse rendszerben bevezetett kész szállítói fogalmat. 
 Szállítói csoportok               | msdyn\_vendorgroups         | Ez a sablon szinkronizálja a szállítói csoport adatait.
 Szállítói fizetési mód       | msdyn\_vendorpaymentmethods | Ez a sablon szinkronizálja a szállító fizetési módra vonatkozó adatait.
 CDS névjegyek V2             | kapcsolattartók                    | A [névjegyek](customer-mapping.md#cds-contacts-v2-to-contacts) sablon a vevők és a szállítók összes elsődleges, másodlagos és harmadlagos kapcsolattartási adatát szinkronizálja.

@@ -18,20 +18,22 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 07d6bd0bab796d7839daa2bad91f7e88c2e881b5
-ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
+ms.openlocfilehash: c76b35ed3af766f42484a118a4a0407d969b5240
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "3997918"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683599"
 ---
 # <a name="troubleshoot-issues-related-to-upgrades-of-finance-and-operations-apps"></a>A(z) Finance and Operations alkalmazások frissítésével kapcsolatos problémák elhárítása
 
 [!include [banner](../../includes/banner.md)]
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 
-Ez a cikk a Finance and Operations és a Common Data Service alkalmazások közötti kettős írású adatintegrációk során felmerülő hibák elhárításával kapcsolatos információkat tartalmaz. Pontosabban ez a témakör olyan információkat tartalmaz, amelyek segítségével javíthatók a Finance and Operations-alkalmazások frissítésével kapcsolatos problémák.
+
+Ez a cikk a Finance and Operations és a Dataverse alkalmazások közötti kettős írású adatintegrációk során felmerülő hibák elhárításával kapcsolatos információkat tartalmaz. Pontosabban ez a témakör olyan információkat tartalmaz, amelyek segítségével javíthatók a Finance and Operations-alkalmazások frissítésével kapcsolatos problémák.
 
 > [!IMPORTANT]
 > Előfordulhat, hogy az ebben a témakörben leírt problémák egy része a rendszergazda szerepkört vagy Microsoft Azure Active Directory (Azure AD) bérlői adminisztrátori hitelesítő adatait igénylik. Az egyes problémákat tárgyaló szakaszok leírják, hogy szükség van-e konkrét szerepkörre vagy hitelesítő adatokra.
@@ -43,7 +45,7 @@ Ez a cikk a Finance and Operations és a Common Data Service alkalmazások köz�
 Előfordulhat, hogy egy hibaüzenet jelenik meg, amely a következő példához hasonlít, amikor megpróbálja használni a **DualWriteProjectConfiguration** entitást egy Finance and Operations-alkalmazás frissítésekor a Platform update 30 verzióra.
 
 ```console
-Infolog diagnostic message: 'Cannot select a record in Dual write project sync (DualWriteProjectConfiguration). The SQL database has issued an error.' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'Object Server Database Synchronizer: ' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: '[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'ISDELETE'.' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'SELECT T1.PROJECTNAME,T1.EXTERNALENTITYNAME,T1.INTERNALENTITYNAME,T1.EXTERNALENVIRONMENTURL,T1.STATUS,T1.ENABLEBATCHLOOKUP,T1.PARTITIONMAP,T1.QUERYFILTEREXPRESSION,T1.INTEGRATIONKEY,T1.ISDELETE,T1.ISDEBUGMODE,T1.RECVERSION,T1.PARTITION,T1.RECID FROM DUALWRITEPROJECTCONFIGURATION T1 WHERE (PARTITION=5637144576)' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'session 1043 (Admin)' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'Stack trace: Call to TTSCOMMIT without first calling TTSBEGIN.' on category 'Error'.
+Infolog diagnostic message: 'Cannot select a row in Dual write project sync (DualWriteProjectConfiguration). The SQL database has issued an error.' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'Object Server Database Synchronizer: ' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: '[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'ISDELETE'.' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'SELECT T1.PROJECTNAME,T1.EXTERNALENTITYNAME,T1.INTERNALENTITYNAME,T1.EXTERNALENVIRONMENTURL,T1.STATUS,T1.ENABLEBATCHLOOKUP,T1.PARTITIONMAP,T1.QUERYFILTEREXPRESSION,T1.INTEGRATIONKEY,T1.ISDELETE,T1.ISDEBUGMODE,T1.RECVERSION,T1.PARTITION,T1.RECID FROM DUALWRITEPROJECTCONFIGURATION T1 WHERE (PARTITION=5637144576)' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'session 1043 (Admin)' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'Stack trace: Call to TTSCOMMIT without first calling TTSBEGIN.' on category 'Error'.
 10/28/2019 15:18:20: Application configuration sync failed.
 Microsoft.Dynamics.AX.Framework.Database.TableSyncException: Custom action threw exception(s), please investigate before synchronizing again: 'InfoException:Stack trace: Call to TTSCOMMIT without first calling TTSBEGIN."
 ```
@@ -73,19 +75,19 @@ A **Kettős írás** oldalon a következő példához hasonló hibaüzenet jelen
 A hiba javításához kövesse az alábbi lépéseket, és győződjön meg arról, hogy a mezők szerepelnek az entitásban.
 
 1. Jelentkezzen be a Finance and Operations alkalmazáshoz tartozó virtuális gépre.
-2. Lépjen a **Munkaterületek \> Adatkezelés** pontra, válassza a **Keretrendszer paraméterei** csmepét, majd az **Entitásbeállítások** lapon válassza az **Entitáslista frissítése** parancsot az entitások frissítéséhez.
-3. Lépjen a **Munkaterületek \> Adatkezelés** részre, válassza az **Adatentitások** lapot, és ellenőrizze, hogy az entitás szerepel a listában. Ha az entitás nem szerepel a listában, jelentkezzen be a Finance and Operations alkalmazás virtuális gépére, és győződjön meg róla, hogy az entitás elérhető.
-4. Nyissa meg az **Entitásleképezés** oldalt a Finance and Operations alkalmazás **Kettős írás** oldalán.
-5. Az entitásleképezések mezőinek automatikus kitöltéséhez válassza az **Entitáslista frissítése** elemet.
+2. Lépjen a **Munkaterületek \> Adatkezelés** pontra, válassza a **Keretrendszer paraméterei** csmepét, majd az **Táblabeállítások** lapon válassza az **Entitáslista frissítése** parancsot a táblák frissítéséhez.
+3. Lépjen a **Munkaterületek \> Adatkezelés** részre, válassza az **Adatáblák** lapot, és ellenőrizze, hogy az entitás szerepel a listában. Ha az entitás nem szerepel a listában, jelentkezzen be a Finance and Operations alkalmazás virtuális gépére, és győződjön meg róla, hogy az entitás elérhető.
+4. Nyissa meg az **Táblaleképezés** oldalt a Finance and Operations alkalmazás **Kettős írás** oldalán.
+5. Az táblaleképezések mezőinek automatikus kitöltéséhez válassza az **Entitáslista frissítése** elemet.
 
 Ha a hiba továbbra sincs kijavítva, hajtsa végre az alábbi lépéseket.
 
 > [!IMPORTANT]
 > Ezekkel a lépésekkel egy entitás törlési folyamatát hajthatja végre, majd hozzáadhatja újra. A problémák elkerüléséhez ügyeljen arra, hogy a lépéseket pontosan kövesse.
 
-1. A Finance and Operations alkalmazásban nyissa meg a **Munkaterületek \> Adatkezelés** pontot, és válassza az **Adatentitások** csempét.
+1. A Finance and Operations alkalmazásban nyissa meg a **Munkaterületek \> Adatkezelés** pontot, és válassza az **Adatáblák** csempét.
 2. Keresse meg azt az entitást, amelynek hiányzik az attribútuma. Kattintson a **Cél-hozzárendelés módosítása** elemre az eszköztárban.
 3. Az **Előkészítés hozzárendelése a célhoz** panelen kattintson a **Leképezés létrehozása** elemre.
-4. Nyissa meg az **Entitásleképezés** oldalt a Finance and Operations alkalmazás **Kettős írás** oldalán.
+4. Nyissa meg az **Táblaleképezés** oldalt a Finance and Operations alkalmazás **Kettős írás** oldalán.
 5. Ha az attribútum nincs automatikusan kitöltve a leképezésen, vegye fel kézzel az **Attribútum hozzáadása** gombra kattintva, majd kattintson a **Mentés** gombra. 
 6. Válassza ki a leképezést, és kattintson a **Futtatás** lehetőségre.

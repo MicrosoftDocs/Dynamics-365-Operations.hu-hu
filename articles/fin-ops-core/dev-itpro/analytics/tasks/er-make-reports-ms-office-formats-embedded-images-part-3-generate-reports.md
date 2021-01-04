@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fa6324b244195e9626e259e42eef9512e64cde86
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 78dcdbd83dc717104d437662f7f451c9ecb714cf
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3143099"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684379"
 ---
 # <a name="generate-reports-in-office-format-that-have-embedded-images"></a>Jelentések készítése Office formátumokban, beágyazott képekkel
 
@@ -40,14 +39,14 @@ Ebben a példában a Litware, Inc. mintavállalatra vonatkozóan létrehozott ER
     * Futtassa a formátumot tesztelési céllal.  
 6. Válassza az Igen lehetőséget az Átruházható csekkformátum mezőben.
 7. Kattintson az OK gombra.
-    * Tekintse át a létrehozott kimenetet. Vegye figyelembe, hogy a vállalati embléma megjelenik a jelentésben, a jogosult személy aláírásával együtt. Az aláírás képe a kiválasztott bankszámlával társított csekkelrendezése-rekord „Konténer” adattípusú mezőjéből származik.  
+    * Tekintse át a létrehozott kimenetet. A vállalati embléma megjelenik a jelentésben, a jogosult személy aláírásával együtt. Az aláírás képe a kiválasztott bankszámlával társított csekkelrendezése-rekord „Konténer” adattípusú mezőjéből származik.  
 8. Bontsa ki a Példányok szakaszt.
 9. Kattintson a Szerkesztés lehetőségre.
 10. A Vízjel mezőjébe írja be a következőt: „Vízjel nyomtatása érvénytelenként”.
     * Módosítsa a vízjel elrendezése beállítást, hogy egy Excel-alakzat elemen dokumentum létrehozásakor megjelenjen a vízjel szövege.  
 11. Kattintson a Tesztnyomtatás lehetőségre.
 12. Kattintson az OK gombra.
-    * Tekintse át a létrehozott kimenetet. Vegye figyelembe, hogy a vízjel a beállítással összhangban jelenik meg a létrehozott jelentésen.  
+    * Tekintse át a létrehozott kimenetet. A vízjel a beállítással összhangban jelenik meg a létrehozott jelentésen.  
 13. Zárja be a lapot.
 14. A Művelet panelen kattintson a Kifizetések kezelése elemre.
 15. Kattintson a Csekkek lehetőségre.
@@ -56,7 +55,7 @@ Ebben a példában a Litware, Inc. mintavállalatra vonatkozóan létrehozott ER
 18. A listában jelöljön ki minden sort.
 19. Kattintson a Csekk másolatának nyomtatása elemre.
     * Futtassa a formátumot a kiválasztott csekkek újranyomtatásához.  
-    * Tekintse át a létrehozott kimenetet. Ne feledje, hogy a kiválasztott csekkek újra lettek nyomtatva. A vállalati embléma és a címkék nem lesznek kinyomtatva, mivel azok megjelennek az előre nyomtatott űrlapon.  
+    * Tekintse át a létrehozott kimenetet. A kiválasztott csekkek újra lettek nyomtatva. A vállalati embléma és a címkék nem lesznek kinyomtatva, mivel azok megjelennek az előre nyomtatott űrlapon.  
 
 ## <a name="modify-the-mapping-of-the-imported-data-model"></a>Módosítsa az importált adatok modell-hozzárendelését
 1. Zárja be a lapot.
@@ -91,7 +90,7 @@ Ebben a példában a Litware, Inc. mintavállalatra vonatkozóan létrehozott ER
 4. Kattintson az ellenőrzés lehetőségre.
 5. Kattintson a Tesztnyomtatás lehetőségre.
 6. Kattintson az OK gombra.
-    * Tekintse át a létrehozott kimenetet. Vegye figyelembe, hogy a Dokumentumkezelés mellékletéből származó kép jelenik meg a jogosult személy aláírásaként.  
+    * Tekintse át a létrehozott kimenetet. A Dokumentumkezelés mellékletéből származó kép jelenik meg a jogosult személy aláírásaként.  
 
 ## <a name="use-ms-word-document-as-a-template-in-the-imported-format"></a>Microsoft Word dokumentum sablonként való használata az importált formátumban
 1. Zárja be a lapot.
@@ -118,5 +117,5 @@ Ebben a példában a Litware, Inc. mintavállalatra vonatkozóan létrehozott ER
 21. Kattintson az ellenőrzés lehetőségre.
 22. Kattintson a Tesztnyomtatás lehetőségre.
 23. Kattintson az OK gombra.
-    * Tekintse át a létrehozott kimenetet. Vegye figyelembe, hogy a kimenet Microsoft Word dokumentumként jött létre beágyazott képekkel, amelyek a vállalati emblémát, a jogosult személy aláírását és vízjel kiválasztott szövegét tartalmazzák.  
+    * Tekintse át a létrehozott kimenetet. A kimenet Word dokumentumként jött létre beágyazott képekkel, amelyek a vállalati emblémát, a jogosult személy aláírását és vízjel kiválasztott szövegét tartalmazzák.  
 

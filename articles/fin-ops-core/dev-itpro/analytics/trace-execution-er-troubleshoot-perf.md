@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 220314
 ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 207783f5a44d5c6432539ac27a8c491bca811da4
-ms.sourcegitcommit: 5472005274f2f94fba82dda90de128f39d8b8390
+ms.openlocfilehash: 9a5f943a507483bb4c1bd7fe87c0d65353194a6e
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "3760031"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687427"
 ---
 # <a name="trace-the-execution-of-er-formats-to-troubleshoot-performance-issues"></a>Az ER-formátumok végrehajtásának nyomon követése a teljesítménnyel kapcsolatos problémák elhárításához
 
@@ -107,7 +106,7 @@ Tegyük fel, hogy befejezte az ER-megoldás első verziójának tervezését. Ez
 2. Ebben az oktatóanyagban konfigurációkat importálunk az RCS-példányból (ahol az ER-összetevőket tervezzük) az Ön példányába (ahol teszteljük és használjuk majd őket). Ezért győződjön meg arról, hogy az összes szükséges műterméket előkészítette. További útmutatásért tekintse át az [Elektronikus jelentéskészítési (ER) konfigurációk importálása a Regulatory Configuration Service (RCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/rcs-download-configurations) eljárást.
 3. A következő lépések végrehajtásával importálhatja a konfigurációkat az RCS szolgáltatásból az alkalmazásba:
 
-    1. Az **Elektronikus jelentéskészítés** munkaterületen, a **Litware, Inc.** konfigurációszolgáltató csempéjén válassza ki a **Tárházak**elemet.
+    1. Az **Elektronikus jelentéskészítés** munkaterületen, a **Litware, Inc.** konfigurációszolgáltató csempéjén válassza ki a **Tárházak** elemet.
     2. A **Konfigurációs tárházak** lapon válassza ki az **RCS** típusú tárházat, majd válassza a **Megnyitás** lehetőséget.
     3. A **Konfigurációk** gyorslapon válassza ki a **Teljesítmény-nyomkövetés formátuma** konfigurációt.
     4. A **Verziók** gyorslapon válassza ki a kiválasztott konfiguráció **1.1** verzióját, majd az **Importálás** lehetőséget.
@@ -183,7 +182,7 @@ Megfigyelhető, hogy végrehajtott ER-formátumhoz létrehozott teljesítmény-n
 3. A Műveleti ablaktáblán kattintson a **Tervező** elemre.
 4. A **Formátumtervező** lapon a Műveleti ablaktáblában válassza ki a **Teljesítmény-nyomkövetés** lehetőséget.
 5. A **Teljesítmény-nyomkövetési eredmény beállításai** párbeszédpanelen válassza a **Teljesítmény-nyomkövetés importálása** elemet.
-6. Válassza a**Tallózás** lehetőséget a korábban exportált zip fájl kiválasztásához.
+6. Válassza a **Tallózás** lehetőséget a korábban exportált zip fájl kiválasztásához.
 7. Válassza ki az **OK** lehetőséget.
 
     ![A teljesítmény-nyomkövetési eredmények beállításai párbeszédpanel az RCS szolgáltatásban](./media/GER-PerfTrace-RCS-ImportedPerfTrace.png)

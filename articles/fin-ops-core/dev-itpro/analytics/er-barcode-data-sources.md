@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERModelMappingDesigner, EROperationDesigner
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 220314
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: Version 10.0.13
-ms.openlocfilehash: c549a476f854ffcf962ffb62e430b459d3445734
-ms.sourcegitcommit: cc78f9bf585082ce65c2ab0b011ff62620fa883d
+ms.openlocfilehash: 3fb754267de1120bc3c086d49cb7c63028183bda
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "4088197"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681424"
 ---
 # <a name="use-barcode-data-sources-to-generate-bar-code-images"></a>Vonalkód-adatforrások használata vonalkód-képek létrehozásához
 
@@ -192,7 +191,7 @@ Most módosítania kell az ER-megoldást, majd [újra alkalmaznia kell](modify-e
     ![A cellaformázás elemek kötése az ER műveletek tervezője adatforrásaihoz](./media/er-barcode-data-source-cells-bound.png)
 
 7. Válassza ki a **Formátum** lapot az oldal jobb oldalán.
-8. A műveleti ablaktáblán válassza ki a három pontot ( **...** ), majd válassza az **Importálás** elemet.
+8. A műveleti ablaktáblán válassza ki a három pontot (**...**), majd válassza az **Importálás** elemet.
 9. Az **Importálás** csoportban válassza a **Frissítés az Excel programból** elemet, majd válassza a **Sablon frissítése** parancsot.
 10. A párbeszédpanelen tallózással keresse meg a számítógépre mentett **Cheque template Excel.xlsx** fájlt, majd válassza ki, majd az **OK** gombra kattintva erősítse meg, hogy a kiválasztott sablont kell alkalmazni.
 11. Válassza ki az oldal jobb oldalán található **Leképezés** lapot, majd a bal oldali formátum ablaktáblán válassza a **Kibontás/összecsukás** parancsot.

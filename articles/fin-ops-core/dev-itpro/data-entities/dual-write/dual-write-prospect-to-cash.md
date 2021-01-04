@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: b21d468d672277be14877b93e291e9833659c54a
-ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
+ms.openlocfilehash: 3b482a2754bb4bcaca5410da72c21897fd066a41
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "3997400"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683647"
 ---
 # <a name="prospect-to-cash-in-dual-write"></a>Potenciális vevők készpénzre váltása kettős írásban
 
@@ -56,15 +56,15 @@ A Supply Chain Management alkalmazásban az ajánlati sorokban és a rendelési 
 
 A Supply Chain Management és a Sales számsorozatai nem kapcsolódnak, amikor árajánlatokat és rendeléseket hoz létre, és szinkronizálja azokat a Sales és Supply Chain Management alkalmazásokban. Ha a Sales alkalmazásban létrehozott értékesítési rendelés szinkronizálva van a Supply Chain Management alkalmazásba, ugyanaz az értékesítésirendelés-száma van a Supply Chain Management alkalmazásban. Annak elősegítéséhez, hogy az értékesítési rendelés száma ne legyen duplikálva, a két alkalmazásban különböző számsorozat-rendszereket kell használni.
 
-Például a Supply Chain Management számsorozata **1, 2, 3, 4, 5, ...** , a Sales számsorozata pedig **100, 99, 98, ...**. Ha 100 értékesítési rendelést hoz létre a Sales alkalmazásban, akkor az végül létrejön egy olyan szám, ami már létezik a Supply Chain Management alkalmazásban. Más szóval a két számsorozat átfedésben lesz, mivel az értékesítési rendeléseket a Supply Chain Management és a Sales alkalmazásokban is létrehozzák. Helyette lehet használni egy más számsorozatot, például **F1, F2, F3, ...** a Supply Chain Management alkalmazásban és egy másik számsorozatot, például **C1, C2, C3, ...** a Sales alkalmazásban. Ezek a Számsorozatok soha nem hoznak létre dupla értékesítési rendelési számokat.
+Például a Supply Chain Management számsorozata **1, 2, 3, 4, 5, ...**, a Sales számsorozata pedig **100, 99, 98, ...**. Ha 100 értékesítési rendelést hoz létre a Sales alkalmazásban, akkor az végül létrejön egy olyan szám, ami már létezik a Supply Chain Management alkalmazásban. Más szóval a két számsorozat átfedésben lesz, mivel az értékesítési rendeléseket a Supply Chain Management és a Sales alkalmazásokban is létrehozzák. Helyette lehet használni egy más számsorozatot, például **F1, F2, F3, ...** a Supply Chain Management alkalmazásban és egy másik számsorozatot, például **C1, C2, C3, ...** a Sales alkalmazásban. Ezek a Számsorozatok soha nem hoznak létre dupla értékesítési rendelési számokat.
 
 ## <a name="sales-quotations"></a>Értékesítési ajánlatok
 
 Az értékesítési ajánlat létrehozása a Sales vagy Supply Chain Management programban történik. Ha a Sales alkalmazásban árajánlatot hoz létre, akkor a rendszer valós időben szinkronizálja a Supply Chain Management alkalmazásba. Hasonlóan, ha a Supply Chain Management alkalmazásban árajánlatot hoz létre, akkor a rendszer valós időben szinkronizálja a Sales alkalmazásba. Vegye figyelembe az alábbiakat:
 
-+ A termékre kedvezmény adható az árajánlatban. Ebben az esetben a rendszer szinkronizálja az engedményt a Supply Chain Management alkalmazásba. A fejlécen az **Engedmény** , **Költségek** és **Adó** mezők a Supply Chain Management szolgáltatásból szabályozhatók. Ez a beállítás nem támogatja integrációs megfeleltetést. Ehelyett az **Ár** , **Engedmény** , **Költség** , és **Adó** mezők karbantartása és kezelése a Supply Chain Management alkalmazásban történik.
++ A termékre kedvezmény adható az árajánlatban. Ebben az esetben a rendszer szinkronizálja az engedményt a Supply Chain Management alkalmazásba. A fejlécen az **Engedmény**, **Költségek** és **Adó** mezők a Supply Chain Management szolgáltatásból szabályozhatók. Ez a beállítás nem támogatja integrációs megfeleltetést. Ehelyett az **Ár**, **Engedmény**, **Költség**, és **Adó** mezők karbantartása és kezelése a Supply Chain Management alkalmazásban történik.
 + Az **Árengedmény %** **Árengedmény** és **Szállítási mennyiség** mezők az értékesítési ajánlat fejlécében csak olvashatók.
-+ A **Szállítási feltételek** , **Kiszállítási feltételek** , **Szállítási módszer** , és **Szállítási mód** mezők nem találhatók meg a alapértelmezett-leképezései. Ezek a mezők megfeleltetéséhez be kell állítania egy adott szervezetek között szinkronizált entitás adatainak értékmegfeleltetések.
++ A **Szállítási feltételek**, **Kiszállítási feltételek**, **Szállítási módszer**, és **Szállítási mód** mezők nem találhatók meg a alapértelmezett-leképezései. Ezek a mezők megfeleltetéséhez be kell állítania egy adott szervezetek között szinkronizált entitás adatainak értékmegfeleltetések.
 
 Ha a Field Service megoldást is használja, mindenképpen engedélyezze újra az **ajánlati sor gyorslétrehozása** paraméterét. A paraméter ismételt engedélyezése lehetővé teszi az Árajánlati sorok létrehozásának folytatását a gyorslétrehozás funkció segítségével.
 1. Keresse meg a Dynamics 365 Sales alkalmazást.
@@ -98,7 +98,7 @@ Ha a Supply Chain Management alkalmazásól a Sales alkalmazásba szinkronizál,
 
 ## <a name="dual-write-solution-for-sales"></a>Kettős írási megoldás a Saleshez
 
-Új mezők kerülnek hozzáadásra a **Rendelés** entitáshoz, és megjelennek a lapon. Ezeknek a mezőknek a többsége megjelenik az értékesítés modul **Integráció** lapján. Ha további információkat szeretne arról, hogyan lehet leképezni az állapot mezőket, akkor olvassa el a dokumentációs témakört az [Értékesítési rendelés állapotához tartozó mezők alapján történő leképezés beállításhoz](https://review.docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/sales-status-map?branch=robin-dw-status-map)
+Új mezők kerülnek hozzáadásra a **Rendelés** entitáshoz, és megjelennek a lapon. Ezeknek a mezőknek a többsége megjelenik az értékesítés modul **Integráció** lapján. Ha további információkat szeretne arról, hogyan lehet leképezni az állapot mezőket, lásd: [Értékesítési rendelés állapotához tartozó mezők alapján történő leképezés beállításhoz](sales-status-map.md).
 
 + A **Számla létrehozása** és a **Rendelés törlése** gombok az **Értékesítési rendelés** oldalon rejtettek a Salesben.
 + Az **Értékesítési rendelés állapota** érték **Aktív** marad annak biztosítására, hogy a Supply Chain Management módosításai átkerülhessenek az értékesítési rendelésbe a Sales szolgáltatásban. Ennek vezérléséhez az alapértelmezett **Statecode \[állapot\]** értékét **Aktívra** kell állítani.
@@ -110,11 +110,11 @@ Az értékesítési számlák létrehozása a Supply Chain Management történik
 + Egy **Számla száma mező** hozzáadódik a **Számla** entitáshoz, és megjelenik a lapon.
 + A **Számla létrehozása** gomb az **Értékesítési rendelés** lapon rejtve van, mivel a számlák létrehozása a Supply Chain Management szolgáltatásban történik, és szinkronizálódik a Sales szolgáltatásba. A **Számla** lap tartalma nem szerkeszthető, mert a számlák a Supply Chain Management szolgáltatásból szinkronizálódnak.
 + Az **Értékesítési rendelés állapota** automatikusan **Számlázott** értékre változik, amikor a Supply Chain Management szolgáltatásból a kapcsolódó számla szinkronizálása a Sales szolgáltatásba megtörténik. Az értékesítési rendelés tulajdonosa, amelyből a számlát létrehozták, hozzárendelésre kerül a számla tulajdonosaként. Emiatt az értékesítési rendelés tulajdonosa megtekintheto a számlát.
-+ A **Szállítási feltételek** , **Kiszállítási feltételek** és **Kiszállítási mód** mezők nem szerepelnek a alapértelmezett-leképezései. Ezek a mezők megfeleltetéséhez be kell állítania egy adott szervezetek között szinkronizált entitás adatainak értékmegfeleltetések.
++ A **Szállítási feltételek**, **Kiszállítási feltételek** és **Kiszállítási mód** mezők nem szerepelnek a alapértelmezett-leképezései. Ezek a mezők megfeleltetéséhez be kell állítania egy adott szervezetek között szinkronizált entitás adatainak értékmegfeleltetések.
 
 ## <a name="templates"></a>Sablonok
 
-A Potenciális vevők készpénzre váltása tartalmazza azokat a központi entitásleképezéseket, amelyek – az alábbi táblázatban látható módon – együttműködnek az adatok interakciója során.
+A Potenciális vevők készpénzre váltása tartalmazza azokat a központi táblaleképezéseket, amelyek – az alábbi táblázatban látható módon – együttműködnek az adatok interakciója során.
 
 | Finance and Operations-alkalmazásoknak | Modellvezérelt alkalmazások a Dynamics 365-ben | Leírás |
 |-----------------------------|-----------------------------------|-------------|
@@ -126,7 +126,7 @@ A Potenciális vevők készpénzre váltása tartalmazza azokat a központi enti
 | CDS értékesítésiajánlat-fejléc  | ajánlatok                            |             |
 | CDS értékesítési ajánlat sorai   | quotedetails                      |             |
 
-Itt találhatók a kapcsolódó alapentitások leképezései a Potenciális vevők készpénzre váltásához:
+Itt találhatók a kapcsolódó alaptáblák leképezései a Potenciális vevők készpénzre váltásához:
 
 + [V3 vevők a számlákhoz](customer-mapping.md#customers-v3-to-accounts)
 + [CDS V2 kapcsolattartók hozzáadása a kapcsolatok mappához](customer-mapping.md#cds-contacts-v2-to-contacts)

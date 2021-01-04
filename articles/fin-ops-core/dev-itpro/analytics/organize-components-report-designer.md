@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 59161
 ms.assetid: 32e728c5-3b06-4049-8070-ade01e951d49
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 4a4733dc4da7a8713ac7ddec5c96ae18c91edc18
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 58525da35eb9e9376cb5793ad6c6fa45b9de42e6
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2185290"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685811"
 ---
 # <a name="organize-report-components-in-report-designer"></a>Jelentés-összetevők rendezése a jelentéstervezőben
 
@@ -69,12 +68,12 @@ Ezzel egy időben a jelentésdefiníciókat csoportosíthatja több jelentés k�
 
 1. A Jelentéstervező navigációs ablakában kattintson a **Jelentéscsoportok** lehetőségre.
 2. Nyissa meg a jelentéscsoportot a jelentés készítéséhez.
-3. Kattintson a **Jelentés készítése** gombra ![Jelentés készítése](media/generate-report.gif "Jelentés készítése") jelentések készítéséhez.
+3. Kattintson a **Jelentés készítése** gombra ![Jelentés készítése](media/generate-report.gif "Jelentés létrehozása") jelentések készítéséhez.
 
 ### <a name="delete-a-report-group"></a>Jelentéscsoport törlése
 
 1. A Jelentéstervező navigációs ablakában kattintson a **Jelentéscsoportok** lehetőségre.
-2. A törléshez kattintson jobb gombbal a jelentés csoportra, és válassza **Törlés**lehetőséget.
+2. A törléshez kattintson jobb gombbal a jelentés csoportra, és válassza **Törlés** lehetőséget.
 3. Ha egy megerősítő üzenet jelenik meg, kattintson az **Igen** gombra.
 
 ## <a name="report-group-tab-controls"></a>Jelentéscsoport-lap vezérlők

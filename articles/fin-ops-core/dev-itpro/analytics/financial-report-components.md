@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 59071
 ms.assetid: a201cfcb-1672-45f6-897d-2db2dd181d9a
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 27a6745be62185b23a7e81c9aed78879e36b3a9d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 97468be0bdea679ca7a52c5cef9c1e10950736e8
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181726"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682721"
 ---
 # <a name="financial-report-components"></a>A pénzügyi jelentés összetevői
 
@@ -81,7 +80,7 @@ Mindegyik építőelem-csoporthoz rendelt építőelemet megtekintheti. Az épí
 
 ### <a name="export-a-building-block-group"></a>Építőelem-csoport exportálása
 
-Exportálhatja, vagy importálhatja is az építőelem-csoportokat, vagy egyes adott jelentés-építőelemeket. Az exportált építőelem-csoportot biztonsági másolatként is használhatja. Az exportált adatokat a telepítések között is másolhatja. A Jelentéstervező tartalmazza a hivatkozott betűstílusokat és a dimenziókészleteket, az építőelem-csoportokkal együtt.
+Exportálhatja, vagy importálhatja is az építőelem-csoportokat, vagy egyes adott jelentés-építőelemeket. Az exportált építőelem-csoportot biztonsági másolatként is használhatja. Az exportált adatokat a telepítések között is másolhatja. A Jelentéstervező tartalmazza a hivatkozott betűstílusokat és a dimenziókészleteket, az építőelem-csoportokkal együtt.
 
 1. A Jelentéstervezőben, a **Vállalat** menüben kattintson az **Építőelem-csoportok** lehetőségre.
 2. Az **Építőelem-csoportok** párbeszédpanelen válassza ki az exportálni kívánt építőelem-csoportot, majd kattintson az **Exportálás** parancsra.
