@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: EventCreateRule
 audience: Application user
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
-ms.openlocfilehash: 94b68138066867fad641c70a1674c9292920ec6a
-ms.sourcegitcommit: d540998ad6f9c894ca99498c045ae4b86b779806
+ms.openlocfilehash: 4fe97ca8e1eecdc064ad4d21d5acdeade9f33d9c
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "3970679"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4694495"
 ---
 # <a name="create-alert-rules"></a>Figyelmeztetési szabályok létrehozása
 
@@ -35,7 +34,7 @@ Egy figyelmeztetési szabály létrehozása esetén meg kell adni a feltételeke
 
 ## <a name="ensure-the-alert-batch-jobs-are-running"></a>A figyelmeztetési kötegelt feladatok futásának biztosítása
 
-Az adatmódosítási és a határidővel kapcsolatos figyelmeztetéseket tartalmazó kötegelt feladatok futtatása szükséges a figyelmeztetési feltételek feldolgozásához, valamint az értesítések küldéséhez. A kötegelt feladatok futtatásához nyissa meg a **Rendszeradminisztráció** > **Ismétlődő feladatok** > **Figyelmeztetések** pontot, és adjon hozzá egy új kötegelt feladatot a **Módosításon alapuló figyelmeztetésekhez** és/vagy a **Határidős figyelmeztetésekhez** . Ha hosszú és gyakran futtatott kötegelt feladatra van szükség, válassza az **Ismétlődést** , és állítsa **Nincs befejezési dátum** értékre, az **Ismétlődési minta** értéke legyen **Percek** , a **Szám** pedig **1** .
+Az adatmódosítási és a határidővel kapcsolatos figyelmeztetéseket tartalmazó kötegelt feladatok futtatása szükséges a figyelmeztetési feltételek feldolgozásához, valamint az értesítések küldéséhez. A kötegelt feladatok futtatásához nyissa meg a **Rendszeradminisztráció** > **Ismétlődő feladatok** > **Figyelmeztetések** pontot, és adjon hozzá egy új kötegelt feladatot a **Módosításon alapuló figyelmeztetésekhez** és/vagy a **Határidős figyelmeztetésekhez**. Ha hosszú és gyakran futtatott kötegelt feladatra van szükség, válassza az **Ismétlődést**, és állítsa **Nincs befejezési dátum** értékre, az **Ismétlődési minta** értéke legyen **Percek**, a **Szám** pedig **1**.
 
 ## <a name="events"></a>Események
 
@@ -87,7 +86,7 @@ A figyelmeztetéseket az üzleti események keretrendszerén kívül is el lehet
 2. A műveleti ablakban a **Beállítások** lapon a **Megosztás** csoportban válassza az **Figyelmeztetési szabály létrehozása** lehetőséget.
 3. A **Figyelmeztetési szabály létrehozása** párbeszédablak **Mező** mezőjében válassza ki a megfigyelni kívánt mezőt.
 4. Az **Esemény** mezőben jelölje ki az esemény típusát.
-5. A **Figyelmeztetés időszaka** gyorslapon válassz a kívánt beállítást. Ha üzleti eseményként szeretné elküldeni a figyelmeztetést, győződjön meg arról, hogy az **Egész szervezet** beállítás értéke **Nem** .
+5. A **Figyelmeztetés időszaka** gyorslapon válassz a kívánt beállítást. Ha üzleti eseményként szeretné elküldeni a figyelmeztetést, győződjön meg arról, hogy az **Egész szervezet** beállítás értéke **Nem**.
 6. Ha azt szeretné, hogy egy figyelmeztetési szabály egy megadott dátumon érvényét veszítse, válasszon ki egy befejezési dátumot a **Figyelmeztetés vége** gyorslapon.
 7. A **Figyelmeztetés módja** gyorslapon a **Tárgy** mezőben fogadja el az e-mail üzenet alapértelmezett tárgyát, vagy adjon meg egy új tárgyat. A szöveg a figyelmeztetés kezdeményezése esetén küldött e-mail üzenet tárgya lesz. Ha üzleti eseményként szeretné elküldeni a figyelmeztetést, akkor a **Külső küldést** az **igen** értékre állítja.
 8. Az **Üzenet** mezőbe beírható egy üzenet, ez azonban nem kötelező. Ez az az üzenet, amely megjelenik egy figyelmeztetés kezdeményezése esetén.

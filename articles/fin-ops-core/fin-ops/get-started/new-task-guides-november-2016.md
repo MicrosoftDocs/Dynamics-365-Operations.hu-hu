@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.custom: 270894
 ms.assetid: 1b90768d-8bf7-4e35-90c0-65962fea5d26
 ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 40317cdef777ca6524feb66caf66ddec3d855d32
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 56545e56201180bf73420bf73f9a9f6e7a426b33
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811601"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4695037"
 ---
 # <a name="new-or-updated-task-guides-november-2016"></a>Új vagy frissített feladat-útmutatók (2016. november)
 
@@ -30,7 +29,7 @@ ms.locfileid: "2811601"
 
 Ez a témakör felsorolja a Microsoft (2016 november – minden nyelv) APQC Egyesített könyvtárhoz kiadott új vagy frissített feladat-útmutatókat a Microsoft Dynamics 365 for Operations szolgáltatáshoz. Nincs új Első lépések könyvtár.
 
-A (2016. november – minden nyelv) APQC egyesített könyvtár tartalmazza a Microsoft Dynamics 365 for Operations rendszerhez, a Microsoft Dynamics 365 for Operations 3. platformfrissítéséhez, Microsoft Dynamics AX 2. platformfrissítéséhez, valamint a Dynamics AX 2016. májusi frissítéséhez és a Microsoft Dynamics AX 2016. februári kiadásához szánt, Súgóval használatos Feladat-útmutatókat. Ha további tájékoztatást szeretne ezekről a kiadásokról, tekintse meg: [Új vagy módosult elemek a Finance and Operations kezdőoldalán](whats-new-changed.md). A Feladat-útmutatók honosított verziói ebben a könyvtárban érhetők el. A Súgórendszer Feladat-útmutató könyvtárral való összekötéséhez lásd: [Súgórendszer](help-overview.md).
+A (2016. november – minden nyelv) APQC egyesített könyvtár tartalmazza a Microsoft Dynamics 365 for Operations rendszerhez, a Microsoft Dynamics 365 for Operations 3. platformfrissítéséhez, Microsoft Dynamics AX 2. platformfrissítéséhez, valamint a Dynamics AX 2016. májusi frissítéséhez és a Microsoft Dynamics AX 2016. februári kiadásához szánt, Súgóval használatos Feladat-útmutatókat. A kiadásokkal kapcsolatban további tudnivalókat lásd: [Újdonságok és változások a Finance and Operations kezdőlapján](whats-new-changed.md). A Feladat-útmutatók honosított verziói ebben a könyvtárban érhetők el. A Súgórendszer Feladat-útmutató könyvtárral való összekötéséhez lásd: [Súgórendszer](help-overview.md).
 
 > [!NOTE]
 > Egy csillag (\*) a BPM (Üzletifolyamat-modellező) címsora mellett jelzi, hogy az üzleti folyamat feladat-útmutatója a Dynamics Dynamics 365 for Operations 2016. novemberi frissítése számára készült, és a Microsoft Dynamics AX korábbi verzióiban nem támogatott.

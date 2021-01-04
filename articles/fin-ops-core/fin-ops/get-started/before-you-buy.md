@@ -3,25 +3,24 @@ title: Vásárlás előtti teendők
 description: Lépésenkénti útmutatás, ha a Dynamics 365 Finance, Dynamics 365 Supply Chain Management vagy Dynamics 365 Commerce beszerzését fontolgatja.
 author: ShellyBakke
 manager: AnnBe
-ms.date: 02/05/2020
+ms.date: 11/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 ms.custom: 21761
 ms.search.region: Global
 ms.author: smiller
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 4619a359a352d702526c576d97b666439d71ed96
-ms.sourcegitcommit: 6aceca43c53c4dde46954c0b6b855d488eb44ed2
+ms.openlocfilehash: adbc9d0bc4632c661b40001a54685192b9ae2d23
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3027724"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4694136"
 ---
 # <a name="before-you-buy"></a>Vásárlás előtti teendők
 
@@ -41,7 +40,7 @@ A következő megfontolásokat kell figyelembe venni, amikor telepítési opció
 
 - Szabályozói és megfelelési követelmények, amelyek nem szerepelnek a felhőtanúsítványokban.
 - Kapcsolat nélküli üzleti folyamat a Microsoft Dynamics Lifecycle Services (LCS) eléréséhez szükséges időszakos internetkapcsolattal az alkalmazások életciklus-kezeléséhez.
-- [A helyszíni telepítésben nem implementált funkciók](features-not-implemented-on-prem.md).
+- [Felhőalapú és helyszíni szolgáltatások összehasonlítása](cloud-prem-comparison.md).
 - [Helyszíni telepítések rendszerkövetelményei](system-requirements-on-prem.md).
 
 > [!IMPORTANT]

@@ -11,18 +11,17 @@ ms.technology: ''
 ROBOTS: NOINDEX, NOFOLLOW
 audience: Application User, Developer, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: 21761, NotInToc
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2019-05-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: f5670f6a580249491ad16ae46470160545bb8f91
-ms.sourcegitcommit: 4fdee254649a751d46632fb4d0d48698e112fa72
+ms.openlocfilehash: 4757d506239e309dcbc3e181469b17e3286cc111
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "3248713"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4695115"
 ---
 # <a name="set-up-and-install-regression-suite-automation-tool-tutorial"></a>A Regression Suite Automation Tool beállítása és telepítése oktatóanyag
 Ez a témakör egy olyan oktatóanyag, amely segítséget nyújt a beállítások végrehajtásában, és az RSAT-tal, valamint a RSAT használatával kapcsolatos eszközökkel való megismerkedésben. 
@@ -155,7 +154,7 @@ Ha korábban létrehozott egy új Azure DevOps-projektet, konfigurálja az LCS-p
 
     ![2. lépés a Visual Studio Team Services beállításaiban](./media/setup_rsa_tool_14.png)
 
-7. Ellenőrizze a beállításokat, majd válassza a **Mentés**parancsot.
+7. Ellenőrizze a beállításokat, majd válassza a **Mentés** parancsot.
 
     ![3. lépés a Visual Studio Team Services beállításaiban](./media/setup_rsa_tool_15.png)
 
@@ -273,7 +272,7 @@ Hozzon létre egy megfelelő feladatrögzítést, amely az új BPM-tárban létr
 
 8. Ha azt szeretné, hogy a feladat rögzítése helyileg történjen, és utána töltse fel a BPM-tárba az LCS-en keresztül, hajtsa végre az alábbi lépéseket:
 
-    1. A rögzítés befejezése után válassza a **Mentés erre a számítógépre**lehetőséget.
+    1. A rögzítés befejezése után válassza a **Mentés erre a számítógépre** lehetőséget.
 
         ![Mentési beállítások](./media/setup_rsa_tool_35.png)
 
@@ -286,7 +285,7 @@ Hozzon létre egy megfelelő feladatrögzítést, amely az új BPM-tárban létr
 
         ![Feltöltés gomb](./media/setup_rsa_tool_37.png)
 
-    5. Válassza a**Tallózás** lehetőséget, majd válassza ki a korábban mentett .axtr-fájltípust. Ezután válassza a **feltöltés** elemet.
+    5. Válassza a **Tallózás** lehetőséget, majd válassza ki a korábban mentett .axtr-fájltípust. Ezután válassza a **feltöltés** elemet.
 
         ![A feltölteni kívánt .axtr-fájl kiválasztása](./media/setup_rsa_tool_38.png)
 
@@ -387,7 +386,7 @@ Ha engedélyezni szeretné a hitelesítést, akkor ugyanazon a számítógépen 
 
     ![AOSService a webhelyek listáján](./media/setup_rsa_tool_49.png)
 
-3. Kattintson a jobb gombbal a **Felfedezés** gombra a **\<Meghajtó\>: \\AosService\\Webroot** mappa megnyitásához. Keresse meg a **wif.config** fájlját.
+3. Kattintson a jobb gombbal a **Felfedezés** gombra a **\<Drive\>: \\AosService\\WebRoot** mappa megnyitásához. Keresse meg a **wif.config** fájlját.
 
     ![Wif.config fájl a WebRoot mappában](./media/setup_rsa_tool_50.png)
 
@@ -407,7 +406,7 @@ Ha engedélyezni szeretné a hitelesítést, akkor ugyanazon a számítógépen 
     ```
 
     > [!NOTE]
-    > Ha több felhasználó ugyanazt az alkalmazást használja, akkor mindegyik felhasználónak külön ujjlenyomatot kell létrehoznia, és ezeket a ujjlenyomatokat is hozzá kell adni a **\<kulcsok\>** szakaszban.
+    > Ha több felhasználó ugyanazt az alkalmazást használja, akkor mindegyik felhasználónak külön ujjlenyomatot kell létrehoznia, és ezeket a ujjlenyomatokat is hozzá kell adni a **\<keys\>** szakaszban.
 
 5. Ha egynél több AOS-számítógép van, akkor minden további számítógép esetében ismételje meg a 3. és 4. lépést.
 
@@ -437,7 +436,7 @@ if ((Test-Path HKLM:\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319))
 
     ![Az összes fájl kiválasztása](./media/setup_rsa_tool_51.png)
 
-3. A telepítő futtatásához kattintson duplán a .msi csomagra. Ezt követően a telepítés befejezése után válassza a **Befejezés**parancsot.
+3. A telepítő futtatásához kattintson duplán a .msi csomagra. Ezt követően a telepítés befejezése után válassza a **Befejezés** parancsot.
 
     ![RSAT-telepítőfájl](./media/setup_rsa_tool_52.png)
 
@@ -543,7 +542,7 @@ Az RSAT régebbi verzióiban telepíteni kellett a Seleniumot és a böngésző-
 
     ![Excel-paraméterfájl létrehozva](./media/setup_rsa_tool_66.png)
 
-3. Ha menteni szeretné a paraméterfájlokat, válassza a **Feltöltés**elemet. A program az összes kiválasztott teszteset tesztautomatizálási fájljait feltölti az Azure DevOps rendszerbe jövőbeli használatra. (Ezek a fájlok tartalmazzák az Excel teszt-paraméterfájlokat.)
+3. Ha menteni szeretné a paraméterfájlokat, válassza a **Feltöltés** elemet. A program az összes kiválasztott teszteset tesztautomatizálási fájljait feltölti az Azure DevOps rendszerbe jövőbeli használatra. (Ezek a fájlok tartalmazzák az Excel teszt-paraméterfájlokat.)
 
     Ilyenmódon a **Betöltés** paranccsal a paraméterfájlokat (és automatizálási fájlokat) a tesztesetből közvetlenül az Azure DevOps rendszerből töltheti be. Nem kell újragenerálni a paraméterfájlokat. Ez a megközelítés később fontos lesz, amikor meg szeretné tartani a módosításokat a paraméterfájlban, és nem szeretné, hogy felülírják őket.
 
@@ -563,7 +562,7 @@ Az RSAT régebbi verzióiban telepíteni kellett a Seleniumot és a böngésző-
 
     ![Asztali felbontás 100%-ra állítva](./media/setup_rsa_tool_68.png)
 
-6. Ha a böngésző illesztőprogramjai nincsenek telepítve a rendszerben, akkor egy figyelmeztető üzenet jelenik meg, amely kijelenti: „Ehhez a művelethez a \<böngészőnév\> illesztőprogram szükséges. Automatikusan letölti és telepíti most?” Válassza ki az **Igen** lehetőséget.
+6. Ha a böngésző illesztőprogramjai nincsenek telepítve a rendszerben, akkor egy figyelmeztető üzenet jelenik meg, amely kijelenti: „Ehhez a művelethez a \<browser name\> illesztőprogram szükséges. Automatikusan letölti és telepíti most?” Válassza ki az **Igen** lehetőséget.
 
     ![Figyelmeztető üzenet az Internet Explorer böngészőhöz](./media/setup_rsa_tool_69.png)
 
@@ -685,7 +684,7 @@ Ebben a szakaszban egy mentett változót fog létrehozni az első tesztesethez,
 
     ![BPM-tár és üzleti folyamat kiválasztása](./media/setup_rsa_tool_89.png)
 
-7. A megfelelő feladatrögzítés neve megadásra kerül a **Rögzítés neve** mezőbe. Válassza az**Indítás** lehetőséget.
+7. A megfelelő feladatrögzítés neve megadásra kerül a **Rögzítés neve** mezőbe. Válassza az **Indítás** lehetőséget.
 
     ![A feladatrögzítés neve a Rögzítés neve mezőben](./media/setup_rsa_tool_90.png)
 
@@ -740,7 +739,7 @@ Ebben a szakaszban egy mentett változót fog létrehozni az első tesztesethez,
 
 #### <a name="save-the-task-recording-to-bpm"></a>Feladatrögzítés mentése a BPM-be
 
-1. A feladatrögzítés befejezése után válassza a **Mentés a Lifecycle Services szolgáltatásba**lehetőséget.
+1. A feladatrögzítés befejezése után válassza a **Mentés a Lifecycle Services szolgáltatásba** lehetőséget.
 
     ![Mentési beállítások](./media/setup_rsa_tool_98.png)
 

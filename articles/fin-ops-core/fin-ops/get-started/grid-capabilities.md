@@ -3,7 +3,7 @@ title: Rács funkciói
 description: Ez a témakör ismerteti a rács vezérlőelem számos erőteljes funkcióját. Az új rács funkciónak engedélyezve kell lennie ahhoz, hogy hozzáférhessen ezekhez a funkciókhoz.
 author: jasongre
 manager: AnnBe
-ms.date: 09/22/2020
+ms.date: 11/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -11,21 +11,21 @@ ms.technology: ''
 ms.search.form: DefaultDashboard
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations, Core
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 1f1c27444b38360072beb5277c445161983a2480
-ms.sourcegitcommit: 28a771d81322e72d88db63a20ff360de084a6087
+ms.openlocfilehash: fb30cdded33f90bb472c8abdb70875077b1dd985
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3835086"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693774"
 ---
 # <a name="grid-capabilities"></a>Rács funkciói
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Az új rács vezérlőelem számos hasznos és erőteljes funkciót tartalmaz, amelyek a felhasználó hatékonyságának növelésére, az adatokkal kapcsolatos érdekesebb nézetek kialakítására és az adatokkal kapcsolatos jelentőségteljes rálátás megszerzésére használhatók. Ez a cikk a következő funkciókat mutatja be: 
 
@@ -95,21 +95,23 @@ A hatékonyság javításaként a felhasználók matematikai képleteket írhatn
 Ha azt szeretné, hogy a rendszer bizonyos értékeket kifejezésként ismerjen fel, akkor az értéket egyenlőségjellel (**=**) kell bevezetnie. A támogatott operátorokkal és szintaxissal kapcsolatos további információkat lásd: [Támogatott matematikai szimbólumok](http://bugwheels94.github.io/math-expression-evaluator/#supported-maths-symbols).
 
 ## <a name="grouping-tabular-data"></a>Táblázatos adatok csoportosítása
-[!include [preview banner](../includes/preview-banner.md)]
-
-Az üzleti felhasználóknak gyakran kell ad hoc adatelemzést végezniük. Bár ez megoldható az adatok Microsoft Excel alkalmazásba való exportálásával és pivot táblákkal, a táblázatos rácsok **(Előzetes verzió) Csoportosítás rácsokban** funkciója, amely az új rácsvezérlő funkción alapul lehetővé teszi, hogy a felhasználok a Finance and Operations alkalmazásokban is érdekes módon szervezzék a táblázatos adataikat. Mivel ez a funkció kiterjeszti az **Összegek** funkciót, a **Csoportosítás** lehetővé teszi, hogy egy csoport szintjén részösszegek megadásával jelentőségteljes betekintést nyerjen az adatokba.
+Az üzleti felhasználóknak gyakran kell ad hoc adatelemzést végezniük. Bár ez megoldható az adatok Microsoft Excel alkalmazásba való exportálásával és pivot táblákkal, a táblázatos rácsok **Csoportosítás rácsokban** funkciója amely általánosan elérhető a 10.0.16 verzióban / 40-es platformfrissítésben, amely az új rácsvezérlő funkción alapul lehetővé teszi, hogy a felhasználok a Finance and Operations alkalmazásokban is érdekes módon szervezzék a táblázatos adataikat. Mivel ez a funkció kiterjeszti az **Összegek** funkciót, a **Csoportosítás** lehetővé teszi, hogy egy csoport szintjén részösszegek megadásával jelentőségteljes betekintést nyerjen az adatokba.
 
 A funkció használatához kattintson a jobb egérgombbal a csoportosítani kívánt oszlopra, és válassza ki a **Csoportosítás az oszlop szerint** lehetőséget. Ez a művelet a kiválasztott oszlop szerint rendezi az adatokat, egy új **Csoportosítás** oszlopot ad hozzá a rácshoz, majd az egyes csoportok elejére „fejlécsorokat” szúr be. Ezek a fejlécsorok a következő információkat tartalmazzák az egyes csoportokról: 
 -  A csoport adatértéke 
--  Oszlop neve (ez az információ különösen akkor hasznos, ha a csoportosítás több szintje támogatott.)  
+-  Oszlop neve (ez az információ különösen akkor hasznos, ha a csoportosítás több szintjét használja)  
 -  A csoportban levő adatsorok száma
 -  Részösszegek az összes olyan oszlophoz, amelyet összegek megjelenítésére konfiguráltak
 
 A [Mentett nézetek](saved-views.md) engedélyezése esetén ezt a csoportosítást személyre szabhatja az oldal legközelebbi meglátogatásakori gyors hozzáférés részeként.  
 
-Ha egy másik oszlophoz jelöli ki a **Csoportosítás az oszlop szerint** lehetőséget, akkor a program felülírja az eredeti csoportosítást, mivel a 10.0.9-es verzió platform Update 33 esetén csak egy csoportosítási szint támogatott.
+### <a name="multiple-levels-of-grouping"></a>Több szintű csoportosítás
+Miután egyetlen oszlop szerint csoportosította az adatokat, csoportosíthatja az adatokat egy másik oszlop szerint, ha a kívánt oszlopban a **Csoportosítás az oszlop szerint** lehetőséget választja. Ez a folyamat addig megismételhető, amíg 5 egymásba ágyazott csoportosítási szintet nem ér el, ami a maximális támogatott mélység. Ezen a ponton a továbbiakban nem tud további oszlopok szerint csoportosítani.  
 
-Ha vissza szeretné vonni a csoportosítást egy rácsban, kattintson a jobb gombbal a csoportosítási oszlopra, és válassza a **Szétválasztás** lehetőséget.  
+A csoportosítást bármikor eltávolíthatja bármelyik oszlopból, ha a jobb gombbal az adott oszlopra kattint, és a **Szétválasztás** parancsot választja. A csoportosítást az összes oszlopból úgy is eltávolíthatja, hogy a **Rácsbeállítások**, majd az **Összes szétválasztása** lehetőséget választja.   
+
+Ne feledje, hogy a 10.0.16-os verzió / 40-es platformfrissítés előtt csak egy csoportszint támogatott. Ezekben a verziókban, ha az adatok csoportosítva vannak, és egy másik oszlophoz a **Csoportosítás az oszlop szerint** lehetőséget választja, az eredeti csoportosítás lecserélődik.  
+
 
 ### <a name="expanding-and-collapsing-groups"></a>Csoportok kibontása és összecsukása
 Az adatok kezdeti csoportosítása esetén minden csoport ki lesz bontva. Az adatok összegzett nézeteit az egyes csoportok összecsukásával lehet létrehozni, illetve a csoport kibontása és összecsukása révén segítséget nyújthat a navigálásban az adatokon keresztül. Egy csoport kibontásához vagy összecsukásához válassza ki a nyíl (>) gombot a megfelelő csoportfej sorban. Ne feledje, hogy az egyes csoportok kibontása/összecsukása **nincs** mentve a személyre szabásban.
@@ -165,17 +167,34 @@ Ez a szakasz az új rácsvezérlő ismert problémáinak listáját tárolja, mi
     -  Egy csoportosított kártyalista szerepel az oldalon.
     -  Nem reagáló bővíthető vezérlővel rendelkező rácsoszlop.
 
-    Amikor egy felhasználó először találkozik egy ilyen helyzettel, egy üzenet jelenik meg az oldal frissítésével kapcsolatban. Az üzenet megjelenése után az oldal a következő termékfrissítési verzióig továbbra is a meglévő rácsot használja az összes felhasználó számára. A jövőbeli frissítéshez figyelembe kell venni ezeket a forgatókönyveket, hogy az új rács használható legyen.     
+    Amikor egy felhasználó először találkozik egy ilyen helyzettel, egy üzenet jelenik meg az oldal frissítésével kapcsolatban. Az üzenet megjelenése után az oldal a következő termékfrissítési verzióig továbbra is a meglévő rácsot használja az összes felhasználó számára. A jövőbeli frissítéshez figyelembe kell venni ezeket a forgatókönyveket, hogy az új rács használható legyen.    
+    
+-  [KB 4582758] A rekordok elmosódottak, ha a nagyítást 100-ról bármely más százalékra módosítja
+    
+### <a name="fixed-as-part-of-10015"></a>10.0.15 részeként javítva    
+
+-  [KB 4582723] A megjelenítési beállítások nem jelennek meg, ha az űrlap életciklusában később próbálja meg
+
+### <a name="fixed-as-part-of-10014"></a>10.0.14 részeként javítva
+
+-  (Minőségi frissítés) [KB 4584752] Váratlan ügyfélhiba a Projektszámla javaslatok lapján
 
 ### <a name="fixed-as-part-of-10013"></a>10.0.13 részeként javítva
 
+-  (Minőségi frissítés) [KB 4583880] Regression Suite Automation Tool (RSAT) tesztek sikertelenek az OpenLookup műveletben a „Nem olvasható tulajdonság RowIndex nem definiált” művelettel
+-  (Minőségi frissítés) [KB 4583847] Váratlan ügyfélhiba a keresések közötti navigáláskor 
+-  (Minőségi frissítés) [Bug 471777] Nem lehet kiválasztani a rácsban a mezőket a mobilalkalmazás szerkesztéséhez vagy létrehozásához
+-  [474851. hiba] A hivatkozási csoport vezérlőinek hivatkozásai nem használhatók 
+-  [474848. hiba] A rácsokkal rendelkező továbbfejlesztett előnézetek nem jelennek meg
+-  [KB 4582726] A RotateSign tulajdonság nem kerül betartására  
 -  [470173. hiba] Az inaktív sorokban található jelölőnégyzetek akkor jelennek meg, ha a cellában a térközre rákattintanak
 -  [474848. hiba] A rácsokkal rendelkező továbbfejlesztett előnézetek nem jelennek meg
 -  [474851. hiba] A hivatkozási csoport vezérlőinek hivatkozásai nem használhatók 
--  [Bug 471777] Nem lehet kiválasztani a rácsban a mezőket a mobilalkalmazás szerkesztéséhez vagy létrehozásához
+-  [471777. hiba] Nem lehet kiválasztani a rácsban a mezőket a mobilalkalmazás szerkesztéséhez vagy létrehozásához
 -  [KB 4569441] Többoszlopos kártyáklistákkal, képek eszköztippeivel és megjelenítési beállításokkal kapcsolatos problémák merültek fel néhány mezőben
 -  [KB 4575279] Nem törlődik ki az összes megjelölt sor az Általános naplóból
 -  [KB 4575233] A megjelenítési beállítások nem állíthatók vissza másik sorra ugrás után
+-  [477884. hiba] A keresések rossz értéket/rekordot adnak vissza, ha az új rácsvezérlő aktiválva van
 -  [KB 4571095] A termékbevételezés feladása akkor történik meg, ha véletlenül megnyomja az Enter billentyűt (az oldal alapértelmezett műveletének megfelelő kezelése)
 -  [KB 4575437] A szerkeszthető vezérlőket tartalmazó keresések váratlanul bezáródtak
 -  [KB 4569418] A szállítási ütemezés űrlapon ismétlődő sor jött létre
@@ -205,8 +224,8 @@ Ez a szakasz az új rácsvezérlő ismert problémáinak listáját tárolja, mi
 - [KB 4562646] Néha nem lehet a rácson kívülre kattintani, miután több sort választott ki a rácsból.
 - [KB 4562647] A fókusz a **Közzététel** párbeszédpanel első vezérlőelemére van állítva, miután új sort adott hozzá a biztonsági szerepkörök rácsához.
 - [KB 4563310] A továbbfejlesztett előnézet nem záródik be egy sor módosítása után.
-- [KB 4563313] "Váratlan ügyfélhiba" történik az Internet Explorerben, amikor egy érték van kiválasztva a keresésben.
-- [KB 4564557] A keresések és a legördülő menük nem nyithatók meg az Internet Explorerben
+- [KB 4563313] "Váratlan ügyfélhiba" történik az Internet Explorer-ben, amikor egy érték van kiválasztva a keresésben.
+- [KB 4564557] A keresések és a legördülő menük nem nyithatók meg az Internet Explorer-ben
 - [KB 4563324] A Navigálás nem működik a **Személyzetkezelés** munkaterület megnyitása után.
 
 ### <a name="fixed-as-part-of-10011"></a>10.0.11 részeként javítva
@@ -225,7 +244,7 @@ Ez a szakasz az új rácsvezérlő ismert problémáinak listáját tárolja, mi
 - [KB 4558383] A rácson kívüli vezérlőelemek nem frissülnek a legutóbbi rekord törlése után.
 - [KB 4558587] A helyettesítési mezőkhöz kombinált mezőket tartalmazó referenciacsoportok nem jelenítenek meg értékeket.
 - [KB 4562143] A mezők nem frissülnek sor módosítása után / Rácsfeldolgozás elakad a sor törlése után.
-- [KB 4562645] Kivétel történik, amikor a távoli kiszolgálófelügyeleti eszközök (RSAT) tesztjeinek futtatása közben megnyitják a keresést.
+- [KB 4562645] Kivétel történik, amikor a Regression Suite Automation Tool (RSAT) tesztjeinek futtatása közben megnyitják a keresést.
 
 ### <a name="fixed-as-part-of-10010"></a>10.0.10 részeként javítva
 

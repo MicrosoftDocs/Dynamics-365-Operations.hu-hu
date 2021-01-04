@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: SystemParameters
 audience: Application User, Developer, IT Pro
 ms.reviewer: tfehr
-ms.search.scope: Core, Operations
 ms.custom: 16381
 ms.assetid: 018c148c-9cbd-41e0-8186-d75dbf66288f
 ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 28118eddd2f85df5f9daa2c5a6c3cb00957909db
-ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
+ms.openlocfilehash: 2c84a5f346bae440fb7a0ec6b2c3b813a30e8edd
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "3367338"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4695139"
 ---
 # <a name="help-system"></a>Súgórendszer
 
@@ -49,7 +48,7 @@ A docs.microsoft.com webhely ([docs.microsoft.com/dynamics365/](https://docs.mic
 
 A docs.microsoft.com tartalmait bármilyen keresőmotor segítségével meg lehet találni. A legjobb eredmények elérése érdekében azt javasoljuk, hogy webhelyre korlátozott keresést végezzen, mint például: **site:docs.microsoft.com dynamics 365 „keresőkifejezés”**
 
-### <a name="get-notified-about-changes-through-an-rss-feed"></a>Értesítés a változásokról RSS-hírcsatornán keresztül
+## <a name="get-notified-about-changes-through-an-rss-feed"></a>Értesítés a változásokról RSS-hírcsatornán keresztül
 
 Ha fel szeretne iratkozni egy RSS (Really Simple Syndication) hírcsatornára a docs.microsoft.com tartalmára vonatkozó összes frissítésről, használja a következő hivatkozást:
 
@@ -68,7 +67,7 @@ Ha visszajelzése vagy kérdése van egy témakörrel kapcsolatban, hagyjon megj
 > [!NOTE]
 > Ha dokumentációs visszajelzést szeretne küldeni, akkor GitHub-fiókkal kell bejelentkeznie. További információ: [GitHub-profil beállítása és kezelése](https://help.github.com/github/setting-up-and-managing-your-github-profile).
 
-### <a name="contribute-to-the-documentation"></a>Közreműködés a dokumentációban
+## <a name="contribute-to-the-documentation"></a>Közreműködés a dokumentációban
 
 A dokumentációban közreműködhet, és módosításokat hajthat végre. Első lépésként kattintson a **Szerkesztés** gombra (ceruza szimbólum) egy témakörön. A következő videó bemutatja, hogyan lehet közreműködni a dokumentációban.
 

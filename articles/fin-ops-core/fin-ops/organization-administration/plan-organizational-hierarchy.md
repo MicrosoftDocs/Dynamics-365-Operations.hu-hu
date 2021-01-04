@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: OMHierarchyManager, OMLegalEntity, OMOperatingUnit
 audience: Application User
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 ms.custom: 17404
 ms.assetid: babde0c6-bb5d-45ae-95ca-2af75a0ea292
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b5df0c7a84a2c24bdbcd39837119bc184c1f3fcf
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 986d8986375aac9454483d89c46c1b2b6f52e68e
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2178185"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4694689"
 ---
 # <a name="plan-your-organizational-hierarchy"></a>Szervezeti hierarchia megtervezése
 
@@ -45,7 +44,7 @@ Hierarchiák tervezése esetén fontos figyelembe venni a szervezeti hierarchia 
 
 Rendelkeznie kell legalább egy jogi személlyel, hogy képviselje a vállalatot. A jogi személy törvényes szerződéseket köthet és pénzügyi kimutatásokat kell készítenie, amely beszámol teljesítményéről.
 
-A jogi személyek tranzakciós üzlethez vagy konszolidációhoz használhatóak. Ez azt jelenti, hogy a jogi személy a Finance and Operations programban nem feltétlenül képvisel valódi entitást a vállalkozásban. Például egy vállalat, amely részt vesz a tranzakciókban leányvállalati jogi személyeket birtokolhat. Ebben az esetben a jogi személyt meg kell adni a tranzakciókhoz, és egy virtuális jogi személynek konszolidálnia kell a leányvállalati jogi személyek eredményeit és egyenlegét.
+A jogi személyek tranzakciós üzlethez vagy konszolidációhoz használhatóak. Ez azt jelenti, hogy a jogi személy az Finance and Operations programban nem feltétlenül képvisel valódi entitást a vállalkozásban. Például egy vállalat, amely részt vesz a tranzakciókban leányvállalati jogi személyeket birtokolhat. Ebben az esetben a jogi személyt meg kell adni a tranzakciókhoz, és egy virtuális jogi személynek konszolidálnia kell a leányvállalati jogi személyek eredményeit és egyenlegét.
 
 A vállalatban lévő belső szervezetek, mint például a területi irodák további jogi személyekként vagy a fő jogi személy üzemi egységeként ábrázolhatók. Az üzemi egységnek nem kell jogilag meghatározott szervezetnek lennie. Az üzemi egységek az üzletben lévő gazdasági erőforrások és üzemeltetési folyamatok szabályozására használatosak. Például a részlegek és a költséghelyek üzemi egységek.
 
@@ -161,20 +160,20 @@ Jogi személy az adott országban/területen érvényes adóhatóság adótörv�
 
 #### <a name="if-the-organization-is-modeled-as-an-operating-unit"></a>Ha a szervezet üzemi egységként van modellezve
 
-Az üzemi egységek a fölérendelt jogi személy ország kontextusát használja. Az ugyanabban a jogi személyben lévő üzemi egységeknek nem lehetnek különböző ország-/ területspecifikus követelményei. Ha a szervezetek ugyanabban az országban/régióban találhatók és az azonos adózási beállításokat használják, akkor beállíthatja azokat üzemi egységeknek.
+Az üzemi egységek a fölérendelt jogi személy ország kontextusát használja. Az ugyanabban a jogi személyben lévő üzemi egységeknek nem lehetnek különböző ország-/régióspecifikus követelményei. Ha a szervezetek ugyanabban az országban/régióban találhatók és az azonos adózási beállításokat használják, akkor beállíthatja azokat üzemi egységeknek.
 
 ### <a name="statutory-reporting-for-a-countryregion"></a>Kötelező jelentés országhoz/régióhoz
 
 #### <a name="if-the-organization-is-modeled-as-a-legal-entity"></a>Ha a szervezet jogi személyként van modellezve
 
-Az olyan országok és régiók, amelyeket a program támogat, a legtöbb kötelező jelentés létrehozható. További információért arról, hogy milyen jelentések érhetők el minden egyes országhoz/régióhoz lásd [Microsoft Dynamics honosítási portál](https://mbs.microsoft.com/customersource/global/ax/support/support-news/GFMLocalizationPortalMC). (Egy CustomerSource bejelentkezés szükséges.)
+Az olyan országok/régiók, amelyeket a program támogat, a legtöbb kötelező jelentés létrehozható. További információért arról, hogy milyen jelentések érhetők el minden egyes országhoz/régióhoz lásd [Microsoft Dynamics honosítási portál](https://mbs.microsoft.com/customersource/global/ax/support/support-news/GFMLocalizationPortalMC). (Egy CustomerSource bejelentkezés szükséges.)
 
 > [!NOTE]
 > A főkönyvi feladási réteg segítségével végezze el a korrekciós bejegyzéseket a fölérendelt vállalatba, amely egy másik könyvelési standardot használ mint az alárendelt vállalat. Ha például egy vállalatra vonatkozóan, amely az Egyesült Királyságban (Egyesült Királyság GAAP) általánosan elfogadott könyvelési gyakorlatokat használ helyesbítő tételeket végezhet a feladási rétegben. Ezek a bejegyzések konszolidálhatók a fölérendelt vállalatba, amely az Egyesült Államokban általánosan elfogadott könyvelési elveket (GAAP) használja. A korrekciós bejegyzések nem befolyásolják a UK GAAP jelentést.
 
 #### <a name="if-the-organization-is-modeled-as-an-operating-unit"></a>Ha a szervezet üzemi egységként van modellezve
 
-Kötelező jelentéseket létre kell hozni egy másik alkalmazás segítségével. Győződjön meg arról, hogy az adatok rögzítése megtörténik a Finance and Operations alkalmazásokban az üzemi egységek követelményeinek támogatására, ahol azok különböznek a központ követelményeitől.
+Kötelező jelentéseket létre kell hozni egy másik alkalmazás segítségével. Győződjön meg arról, hogy az adatok rögzítése a Finance and Operations alkalmazásokban az üzemi egységek követelményeinek támogatására, ahol azok különböznek a központ követelményeitől.
 
 ### <a name="currency"></a>Pénznem
 
@@ -190,7 +189,7 @@ Ha a szervezetek egyetlen működési pénznemet használhatnak, a szervezetek �
 
 #### <a name="if-the-organization-is-modeled-as-a-legal-entity"></a>Ha a szervezet jogi személyként van modellezve
 
-Ha a törvények és a könyvelési szabályok eltérnek az országok/területek között, ahol a szervezetek találhatók, szükség lehet a különböző év végi eljárásokra szervezetenként. Ez azt jelenti, hogy a szervezeteket jogi személyekként kell modelleznie. Minden jogi személyhez tartozik év végi eljárás.
+Ha a törvények és a könyvelési szabályok eltérnek az országok/régiók között, ahol a szervezetek találhatók, szükség lehet a különböző év végi eljárásokra szervezetenként. Ez azt jelenti, hogy a szervezeteket jogi személyekként kell modelleznie. Minden jogi személyhez tartozik év végi eljárás.
 
 #### <a name="if-the-organization-is-modeled-as-an-operating-unit"></a>Ha a szervezet üzemi egységként van modellezve
 
