@@ -5,6 +5,10 @@
       items:
         - name: Újdonságok és változások a Human Resources szolgáltatásban
           href: hr-admin-whats-new.md
+        - name: 2021. január 28.
+          href: hr-whats-new-2021-01-28.md
+        - name: 2021. január 21.
+          href: hr-whats-new-2021-01-21.md
         - name: 2020. december 2.
           href: hr-whats-new-2020-12-02.md
         - name: 2020. október 22.
@@ -79,12 +83,16 @@
           items:
             - name: Adatintegrációs technológia kiválasztása
               href: hr-admin-integration-choose-technology.md
-            - name: Common Data Service-integráció konfigurálása
+            - name: Szabályozás – GYIK
+              href: hr-admin-integration-throttling-faq.md
+            - name: Dataverse-integráció konfigurálása
               href: hr-admin-integration-common-data-service.md
-            - name: Common Data Service-entitások
+            - name: Dataverse-táblák
               href: hr-developer-entities.md
-            - name: Common Data Service-virtuális entitások konfigurálása
+            - name: Dataverse-virtuális entitások konfigurálása
               href: hr-admin-integration-common-data-service-virtual-entities.md
+            - name: Human Resources – virtuális entitások – GYIK
+              href: hr-admin-virtual-entity-faq.md
             - name: A Finance szolgáltatással való integráció konfigurálása
               href: hr-admin-integration-finance.md
             - name: A Dayforce szolgáltatással való integráció konfigurálása
@@ -277,9 +285,9 @@
       items:
         - name: Áttekintés
           href: hr-developer-overview.md
-        - name: Bővítés a Power Apps és Power Automate szolgáltatásokkal
+        - name: Bővítés a Power Apps és a Power Automate szolgáltatásokkal
           href: hr-developer-power-apps.md
-        - name: Common Data Service entitások
+        - name: Dataverse-táblák
           href: hr-developer-entities.md
         - name: Egyéni mezők
           href: hr-developer-custom-fields.md
@@ -287,7 +295,7 @@
           items:
             - name: Adatintegrációs technológia kiválasztása
               href: hr-admin-integration-choose-technology.md
-            - name: Common Data Service-integráció konfigurálása
+            - name: Dataverse-integráció konfigurálása
               href: hr-admin-integration-common-data-service.md
             - name: A Finance szolgáltatással való integráció konfigurálása
               href: hr-admin-integration-finance.md
@@ -317,6 +325,92 @@
                       href: hr-developer-api-myleaverequests-overview.md
                     - name: Szabadságkérelem elküldése munkafolyamathoz
                       href: hr-developer-api-myleaverequests-submit.md
+        - name: ATS-integrációs API
+          items:
+            - name: Bevezetés
+              href: hr-admin-integration-ats-api-introduction.md
+            - name: Toborzási kérelem és kapcsolódó entitások
+              items:
+                - name: Toborzási kérelem
+                  href: hr-admin-integration-ats-api-recruiting-request.md
+                - name: Toborzási kérelem – végzettség
+                  href: hr-admin-integration-ats-api-recruiting-request-education.md
+                - name: Toborzási kérelem – hely
+                  href: hr-admin-integration-ats-api-recruiting-request-location.md
+                - name: Toborzási kérelem – beosztás
+                  href: hr-admin-integration-ats-api-recruiting-request-position.md
+                - name: Toborzási kérelem – készség
+                  href: hr-admin-integration-ats-api-recruiting-request-skill.md
+                - name: Példalekérdezés a toborzási kérelmekhez
+                  href: hr-admin-integration-ats-api-recruiting-request-example-query.md
+            - name: Toborzási kérelem – beállításkészletek
+              items:
+                - name: Munka mentességi állapota
+                  href: hr-admin-integration-ats-api-job-exempt-status.md
+                - name: Toborzási kérelem – beosztás állapota
+                  href: hr-admin-integration-ats-api-recruiting-request-position-status.md
+                - name: Toborzási kérelem – állapot
+                  href: hr-admin-integration-ats-api-recruiting-request-status.md
+                - name: Jogszabályban előírt munkakategória
+                  href: hr-admin-integration-ats-api-regulatory-job-category.md
+            - name: Felveendő jelentkező és kapcsolódó entitások
+              items:
+                - name: Felveendő jelentkező
+                  href: hr-admin-integration-ats-api-candidate-to-hire.md
+                - name: Tanúsítvány típusa
+                  href: hr-admin-integration-ats-api-certificate-type.md
+                - name: Fél kapcsolattartója
+                  href: hr-admin-integration-ats-api-party-contact.md
+                - name: Személy
+                  href: hr-admin-integration-ats-api-person.md
+                - name: Személy – cím
+                  href: hr-admin-integration-ats-api-person-address.md
+                - name: Személy – tanúsítvány
+                  href: hr-admin-integration-ats-api-person-certificate.md
+                - name: Személy – végzettség
+                  href: hr-admin-integration-ats-api-person-education.md
+                - name: Személy – azonosítószám
+                  href: hr-admin-integration-ats-api-person-identification-number.md
+                - name: Személy – szakmai tapasztalat
+                  href: hr-admin-integration-ats-api-person-professional-experience.md
+                - name: Személy szűrési adatai
+                  href: hr-admin-integration-ats-api-person-screening.md
+                - name: Személy – készség
+                  href: hr-admin-integration-ats-api-person-skill.md
+                - name: Minősítési szint
+                  href: hr-admin-integration-ats-api-rating-level.md
+                - name: Szűréstípusok
+                  href: hr-admin-integration-ats-api-screening-types.md
+                - name: Példalekérdezés a felveendő jelentkezőhöz
+                  href: hr-admin-integration-ats-api-candidate-to-hire-example-query.md
+            - name: Jelölt – beállításkészletek
+              items:
+                - name: Pályázó integrációs eredménye
+                  href: hr-admin-integration-ats-api-applicant-integration-result.md
+                - name: Üres Igen Nem
+                  href: hr-admin-integration-ats-api-blank-yes-no.md
+                - name: Végrehajtás állapota
+                  href: hr-admin-integration-ats-api-completion-status.md
+                - name: Kapcsolattartó típusa
+                  href: hr-admin-integration-ats-api-contact-type.md
+                - name: Végzettség – tanulmányi pontszám alapja
+                  href: hr-admin-integration-ats-api-education-credit-basis.md
+                - name: Nem
+                  href: hr-admin-integration-ats-api-gender.md
+                - name: Családi állapot
+                  href: hr-admin-integration-ats-api-marital-status.md
+                - name: Év hónapjai
+                  href: hr-admin-integration-ats-api-months-of-year.md
+                - name: Nem Igen
+                  href: hr-admin-integration-ats-api-no-yes.md
+                - name: Időszakegység
+                  href: hr-admin-integration-ats-api-period-unit.md
+                - name: Szűrési gyakoriság
+                  href: hr-admin-integration-ats-api-screening-frequency.md
+                - name: Szűrési gyakoriság létrehozásának forrása
+                  href: hr-admin-integration-ats-api-screening-frequency-generate-from.md
+                - name: Szakértelemszint típusa
+                  href: hr-admin-integration-ats-api-skill-level-type.md
     - name: Használati útmutató
       items:
         - name: Áttekintés
@@ -439,12 +533,6 @@
                   href: ../fin-ops-core/fin-ops/get-started/alerts-managing.md?toc=/dynamics365/human-resources/toc.json
                 - name: Ügyfél figyelmeztetési értesítései e-mailben
                   href: ../fin-ops-core/fin-ops/get-started/alert-email-notifications.md?toc=/dynamics365/human-resources/toc.json
-            - name: Elektronikus aláírások
-              items:
-                - name: Az elektronikus aláírások áttekintése
-                  href: ../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md?toc=/dynamics365/human-resources/toc.json
-                - name: Elektronikus aláírások beállítása
-                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-electronic-signatures.md?toc=/dynamics365/human-resources/toc.json
             - name: Esetkezelés
               items:
                 - name: Esetkezelés – áttekintés
@@ -591,6 +679,8 @@
                       href: hr-benefits-process-life-event-eligibility.md
                     - name: Módosítások arányának feldolgozása
                       href: hr-benefits-process-rate-changes.md
+                - name: ACA-jelentés
+                  href: hr-benefits-management-aca-reports.md
             - name: Juttatási program meghatározása és kezelése
               href: hr-benefits-manage-program.md
             - name: Juttatásra vonatkozó jogosultsággal kapcsolatos irányelvek

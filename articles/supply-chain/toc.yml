@@ -72,12 +72,12 @@
                   items:
                     - name: Újdonságok és változások a Supply Chain Management kezdőlapján
                       href: get-started/whats-new-home-page.md
+                    - name: Supply Chain Management 10.0.17 (2021. április)
+                      href: get-started/whats-new-scm-10-0-17.md
                     - name: Supply Chain Management 10.0.16 (2021. február)
                       href: get-started/whats-new-scm-10-0-16.md
                     - name: Supply Chain Management 10.0.15 (2021. január)
                       href: get-started/whats-new-scm-10-0-15.md
-                    - name: Supply Chain Management 10.0.14 (2020. november)
-                      href: get-started/whats-new-scm-10-0-14.md
                 - name: Eltávolított vagy elavult funkciók
                   items:
                     - name: Eltávolított vagy elavult funkciók a Dynamics 365 Supply Chain Management szolgáltatásban
@@ -154,6 +154,8 @@
                   href: ../fin-ops-core/fin-ops/get-started/personalize-user-experience.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Mentett nézetek
                   href: ../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/supply-chain/toc.json
+                - name: A Supply Chain Management standard mentett nézetei
+                  href: get-started/saved-views-scm.md
                 - name: Rácsfunkciók
                   href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Egyéni mezők létrehozása és használata
@@ -174,8 +176,8 @@
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Finance and OperationsAlkalmazások architektúrája
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Microsoft FastTrack for Finance and Operations
-                  href: ../fin-ops-core/fin-ops/get-started/fasttrack-dynamics-365-overview.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Microsoft FastTrack
+                  href: 'https://docs.microsoft.com/dynamics365/fasttrack/'
                 - name: Megvalósítási projekt előkészítése
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/onboard.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Környezet tervezése
@@ -224,6 +226,8 @@
               href: cloud-edge/cloud-edge-workload-manufacturing.md
             - name: Raktérkezelés munkaterhelései felhőalapú és peremhálózat-lépték szerinti egységekhez
               href: cloud-edge/cloud-edge-workload-warehousing.md
+            - name: Raktári rendelések felhőalapú és peremhálózati skálázási egységekből
+              href: cloud-edge/cloud-edge-warehouse-order.md
         - name: Eszközkezelés
           items:
             - name: Eszközkezelés – áttekintés
@@ -363,6 +367,8 @@
               items:
                 - name: 'Előrejelzések, munkarendelések és projektek'
                   href: asset-management/integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md
+                - name: Vevői eszközök karbantartásának számlázása
+                  href: asset-management/integration-to-project-management-and-accounting/customer-billing.md
             - name: Eszközkezelés integrálása tárgyi eszközökkel
               href: asset-management/integration-to-fixed-assets/fixed-asset-integration.md
             - name: Megelőző és reaktív karbantartás
@@ -431,7 +437,7 @@
                   href: asset-management/controlling-and-reporting/work-hour-control.md
                 - name: Hibás eszköz költségkontrollja
                   href: asset-management/controlling-and-reporting/asset-fault-cost-control.md
-                - name: Eszköz hibaelemzése
+                - name: Eszköz hibájának elemzése
                   href: asset-management/controlling-and-reporting/asset-fault-analysis.md
                 - name: Eszköz KPI-k
                   href: asset-management/controlling-and-reporting/asset-kpis.md
@@ -439,10 +445,14 @@
                   href: asset-management/controlling-and-reporting/item-where-used.md
                 - name: Karbantartás állapota
                   href: asset-management/controlling-and-reporting/maintenance-status.md
+            - name: Eszközkezelés a mobilalkalmazásból
+              items:
+                - name: Az eszközkezelési mobil munkaterület beállítása
+                  href: asset-management/set-up-asset-management-mobile.md
+                - name: Az eszközkezelési mobil munkaterület használata
+                  href: asset-management/asset-management-mobile-workspace.md
             - name: Eszközkezelés integrálása a Dynamics 365 Guides szolgáltatással
               href: asset-management/asset-management-guides-integration.md
-            - name: Eszközkezelési mobil munkaterület
-              href: asset-management/asset-management-mobile-workspace.md
         - name: Adatkezelés
           items:
             - name: Célentitások
@@ -1319,6 +1329,8 @@
                   href: sales-marketing/register-serial-numbers-sales-process.md
                 - name: Aktuális készlet mobil munkaterület
                   href: inventory/inventory-on-hand-mobile-workspace.md
+                - name: Készletműveletek hibaelhárítása
+                  href: inventory/troubleshoot-inventory-operations.md
             - name: Kimenő folyamat
               items:
                 - name: Kimenő folyamat áttekintése
@@ -1377,12 +1389,18 @@
                   href: master-planning/planning-optimization/purchase-trade-agreement.md
                 - name: Biztonsági határok
                   href: master-planning/planning-optimization/safety-margins.md
+                - name: Beszerzési igénylések
+                  href: master-planning/planning-optimization/purchase-requisitions.md
+                - name: Termeléstervezés
+                  href: master-planning/planning-optimization/production-planning.md
                 - name: Készletjelölés tervezési optimalizálással
                   href: master-planning/planning-optimization/marking.md
                 - name: Vállalatközi tervezés
                   href: master-planning/planning-optimization/Intercompany-planning.md
                 - name: Bizonyos termékéletciklus-állapotokkal rendelkező termékek kizárása
                   href: master-planning/planning-optimization/product-lifecycle-state.md
+                - name: Fedezeti időkorlátok
+                  href: master-planning/planning-optimization/coverage-time-fence.md
                 - name: Tervezett rendelések jóváhagyása
                   href: master-planning/planning-optimization/approved-planned-order.md
                 - name: Automatikus megerősítés a tervezési optimalizálással
@@ -1909,6 +1927,8 @@
                   href: production-control/bom-designer-functionality.md
                 - name: A Képletszerkesztő használata
                   href: production-control/formula-designer.md
+                - name: A gyártásban használt anyagok alapértelmezett foglalási elvének felülbírálása
+                  href: production-control/override-default-reservation-principle.md
                 - name: Változattermék hozzáadása beszerzési rendelésekhez változatsúlyokkal
                   href: pim/tasks/add-variant-products-purchase-order-variant-weights.md
                 - name: Értékesítési rendelés létrehozása konfigurálható termékhez
@@ -2027,6 +2047,8 @@
                       href: production-control/bill-of-material-bom.md
                     - name: Anyagjegyzék-tervező funkció
                       href: production-control/bom-designer-functionality.md
+                    - name: A gyártásban használt anyagok alapértelmezett foglalási elvének felülbírálása
+                      href: production-control/override-default-reservation-principle.md
                     - name: Látszólagos cikkek
                       href: production-control/phantom-items.md
                     - name: Darabjegyzék-számítások
@@ -2757,6 +2779,8 @@
                       href: warehousing/cluster-position-full.md
                     - name: Rendszer által irányított fürtkitárolás
                       href: warehousing/system-directed-cluster-pick.md
+                    - name: Különböző dimenziók beállítása csomagoláshoz és a tároláshoz
+                      href: warehousing/packing-vs-storage-dimensions.md
                     - name: Tárolóra bontás beállítása
                       href: warehousing/tasks/set-up-containerization.md
                     - name: Köteg és azonosítótábla megerősítése
@@ -2823,6 +2847,8 @@
                       href: warehousing/wave-template-grouping.md
                     - name: Hullámcímkék újranyomtatása és érvénytelenítése
                       href: warehousing/reprint-and-void-wave-labels.md
+                    - name: Kis csomagok szállítása
+                      href: warehousing/small-parcel-shipping.md
                     - name: Rakományok összeállítása és szállítása – hibaelhárítás
                       href: warehousing/troubleshoot-warehouse-loads-shipments.md
                 - name: Szállítmánykonszolidációs irányelvek
@@ -2915,12 +2941,16 @@
                       href: warehousing/control-warehouse-location-directives.md
                     - name: Munka helyutasításokkal
                       href: warehousing/create-location-directive.md
+                    - name: Termékszűrők konfigurálása a raktári tranzakciókhoz
+                      href: warehousing/filters-and-filter-codes.md
                     - name: Hely rakodási korlátai
                       href: warehousing/location-stocking-limits.md
                     - name: Hullámlépéskódok
                       href: warehousing/wave-step-codes.md
                     - name: A hullámfeldolgozás konfigurálása
                       href: warehousing/tasks/configure-wave-processing.md
+                    - name: Munka létrehozásának ütemezése a hullám során
+                      href: warehousing/configure-wave-schedule-work-creation.md
                     - name: Hullámcímke-nyomtatás beállítása és használata
                       href: warehousing/configure-wave-label-printing.md
                     - name: Szállítmányok automatikus frissítése
@@ -2955,6 +2985,8 @@
                       href: warehousing/troubleshoot-warehouse-configuration.md
                 - name: A raktározási alkalmazás telepítése és konfigurálása
                   items:
+                    - name: A Raktárkezelés mobilalkalmazás telepítése és csatlakoztatása
+                      href: warehousing/install-configure-warehouse-management-app.md
                     - name: A raktározási alkalmazás telepítése és csatlakoztatása
                       href: warehousing/install-configure-warehousing-app.md
                     - name: Vonalkódok beolvasása a raktári alkalmazás kamerája segítségével

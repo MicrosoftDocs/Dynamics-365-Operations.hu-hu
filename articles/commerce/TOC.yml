@@ -94,12 +94,12 @@
                   items:
                     - name: Újdonságok vagy változások a Commerce kezdőlapján
                       href: get-started/whats-new-home-page.md
+                    - name: Commerce 10.0.17 (2021. április)
+                      href: get-started/whats-new-commerce-10-0-17.md
                     - name: Commerce 10.0.16 (2021. február)
                       href: get-started/whats-new-commerce-10-0-16.md
                     - name: Commerce 10.0.15 (2021. január)
                       href: get-started/whats-new-commerce-10-0-15.md
-                    - name: Commerce 10.0.14 (2020. november)
-                      href: get-started/whats-new-commerce-10-0-14.md
                 - name: Eltávolított vagy elavult funkciók
                   items:
                     - name: Eltávolított vagy elavult funkciók a Finance and Operations szolgáltatásban
@@ -190,6 +190,44 @@
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-users-preferred-time-zone.md?toc=/dynamics365/commerce/toc.json
                 - name: A Lifecycle Services szolgáltatás bemutatása
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/fin-and-ops/toc.json?toc=/dynamics365/commerce/toc.json
+            - name: Végrehajtási életciklus kezelése
+              items:
+                - name: Végrehajtási életciklus-kezelés kezdőlapja
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle.md?toc=/dynamics365/commerce/toc.json
+                - name: Finance and OperationsAlkalmazások architektúrája
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/commerce/toc.json
+                - name: Microsoft FastTrack
+                  href: 'https://docs.microsoft.com/dynamics365/fasttrack/'
+                - name: Megvalósítási projekt előkészítése
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/onboard.md?toc=/dynamics365/commerce/toc.json
+                - name: Környezet tervezése
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md?toc=/dynamics365/commerce/toc.json
+                - name: Felkészülés az éles indításra
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md?toc=/dynamics365/commerce/toc.json
+                - name: Éles indítás GYIK
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/go-live-faq.md?toc=/dynamics365/commerce/toc.json
+                - name: Szolgáltatási kérelem benyújtása
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/commerce/toc.json
+                - name: 'Előfizetésekhez, LCS-projektekhez és Azure AD-bérlőkhöz kapcsolódó GYIK'
+                  href: ../fin-ops-core/fin-ops/get-started/subscription-overview.md?toc=/dynamics365/commerce/toc.json
+                - name: Környezetek áthelyezése az adatközpontok között
+                  href: ../fin-ops-core/fin-ops/get-started/move-environments-data-center.md?toc=/dynamics365/commerce/toc.json
+                - name: Licencek áthelyezése szerződéstípusok között
+                  href: ../fin-ops-core/fin-ops/get-started/move-licenses-between-agreement-types.md?toc=/dynamics365/commerce/toc.json
+                - name: LCS végrehajtási projektek áthelyezése másik Azure AD-bérlőkhöz
+                  href: ../fin-ops-core/fin-ops/get-started/move-lcs-implementation-project-tenant.md?toc=/dynamics365/commerce/toc.json
+                - name: LCS végrehajtási projektek áthelyezése helyszíni verzióból a felhőbe
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/move-on-prem-to-cloud.md?toc=/dynamics365/commerce/toc.json
+                - name: Több LCS-projekt és gyártási környezet egyetlen Azure AD-bérlőnél
+                  href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/commerce/toc.json
+                - name: Finance and Operations Commerce projektek megvalósítása
+                  href: dev-itpro/implementing-dynamics-365-fin-and-ops-retail-projects.md
+                - name: 'Új környezetek, Azure DevOps és ágak beállítása a projektekhez'
+                  href: dev-itpro/new-environments-visual-studio-teams-branch-retail-projects.md
+                - name: Kód és környezetek frissítése a Commerce-projekteknél
+                  href: dev-itpro/updating-environments.md
+                - name: Tesztelési vagy teljesítménnyel kapcsolatos problémák
+                  href: dev-itpro/retail-implementation-testing-performance.md
         - name: Architekturális áttekintés
           items:
             - name: Architektúra
@@ -248,44 +286,6 @@
                   href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/commerce/toc.json
                 - name: Kiindulási adatok inicializálása új Commerce-környezetben
                   href: enable-configure-retail-functionality.md
-            - name: Végrehajtási életciklus kezelése
-              items:
-                - name: Végrehajtási életciklus-kezelés kezdőlapja
-                  href: ../fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle.md?toc=/dynamics365/commerce/toc.json
-                - name: Finance and OperationsAlkalmazások architektúrája
-                  href: ../fin-ops-core/fin-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/commerce/toc.json
-                - name: Microsoft FastTrack for Finance and Operations
-                  href: ../fin-ops-core/fin-ops/get-started/fasttrack-dynamics-365-overview.md?toc=/dynamics365/commerce/toc.json
-                - name: Megvalósítási projekt előkészítése
-                  href: ../fin-ops-core/fin-ops/imp-lifecycle/onboard.md?toc=/dynamics365/commerce/toc.json
-                - name: Környezet tervezése
-                  href: ../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md?toc=/dynamics365/commerce/toc.json
-                - name: Felkészülés az éles indításra
-                  href: ../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md?toc=/dynamics365/commerce/toc.json
-                - name: Éles indítás GYIK
-                  href: ../fin-ops-core/fin-ops/imp-lifecycle/go-live-faq.md?toc=/dynamics365/commerce/toc.json
-                - name: Szolgáltatási kérelem benyújtása
-                  href: ../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/commerce/toc.json
-                - name: 'Előfizetésekhez, LCS-projektekhez és Azure AD-bérlőkhöz kapcsolódó GYIK'
-                  href: ../fin-ops-core/fin-ops/get-started/subscription-overview.md?toc=/dynamics365/commerce/toc.json
-                - name: Környezetek áthelyezése az adatközpontok között
-                  href: ../fin-ops-core/fin-ops/get-started/move-environments-data-center.md?toc=/dynamics365/commerce/toc.json
-                - name: Licencek áthelyezése szerződéstípusok között
-                  href: ../fin-ops-core/fin-ops/get-started/move-licenses-between-agreement-types.md?toc=/dynamics365/commerce/toc.json
-                - name: LCS végrehajtási projektek áthelyezése másik Azure AD-bérlőkhöz
-                  href: ../fin-ops-core/fin-ops/get-started/move-lcs-implementation-project-tenant.md?toc=/dynamics365/commerce/toc.json
-                - name: LCS végrehajtási projektek áthelyezése helyszíni verzióból a felhőbe
-                  href: ../fin-ops-core/dev-itpro/lifecycle-services/move-on-prem-to-cloud.md?toc=/dynamics365/commerce/toc.json
-                - name: Több LCS-projekt és gyártási környezet egyetlen Azure AD-bérlőnél
-                  href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/commerce/toc.json
-                - name: Finance and Operations Commerce projektek megvalósítása
-                  href: dev-itpro/implementing-dynamics-365-fin-and-ops-retail-projects.md
-                - name: 'Új környezetek, Azure DevOps és ágak beállítása a Commerce-projektekhez'
-                  href: dev-itpro/new-environments-visual-studio-teams-branch-retail-projects.md
-                - name: Kód és környezetek frissítése a Commerce-projekteknél
-                  href: dev-itpro/updating-environments.md
-                - name: Tesztelési vagy teljesítménnyel kapcsolatos problémák
-                  href: dev-itpro/retail-implementation-testing-performance.md
         - name: Saját csatornák beállítása
           items:
             - name: Csatornák áttekintése
@@ -498,12 +498,14 @@
                   items:
                     - name: Hívásközpont rendeléseinek várakoztatása – konfigurálás és használat
                       href: work-with-order-holds.md
-                - name: Fizetések
+                - name: Kifizetések
                   items:
                     - name: Fizetési módok
                       href: payment-methods.md
                     - name: Fizetési módok hívásközpontoknál
                       href: work-with-payments.md
+                    - name: Visszatérítési kifizetések feldolgozása a hívásközpontokban
+                      href: call-center-refund-payments.md
                     - name: 'Hitelkártya beállítása, engedélyezése és rögzítése'
                       href: ../finance/accounts-receivable/credit-card-authorizations.md?toc=/dynamics365/commerce/toc.json
                     - name: Készpénzcímletek konfigurálása a pénztárhoz
@@ -648,6 +650,8 @@
                       href: personalization-gdpr.md
                 - name: „Hasonló szettek vásárlása” javaslatok engedélyezése
                   href: shop-similar-looks.md
+                - name: „Hasonló leírású termékek vásárlása” javaslatok engedélyezése
+                  href: shop-similar-description.md
                 - name: Pénztári gyakorlatok
                   items:
                     - name: Termékajánlatok hozzáadása a pénztárnál
@@ -712,7 +716,7 @@
           items:
             - name: Vevői rendelések
               items:
-                - name: Vevői rendelések a pénztárban (POS)
+                - name: Vevői rendelések az POS-ben
                   href: customer-orders-overview.md
                 - name: Hibrid vevői rendelések
                   href: hybrid-customer-orders.md
@@ -720,6 +724,8 @@
                   href: enhancedorderrecall.md
                 - name: Több átvételi kézbesítési mód engedélyezése
                   href: multiple-pickup-modes.md
+                - name: Vevői rendelés felvételének feldolgozása a pénztárban
+                  href: process-order-pickup-POS.md
             - name: Értékesítési rendelések
               items:
                 - name: Hívásközponti rendelések létrehozása
@@ -858,6 +864,10 @@
                   href: add-cdn-support.md
                 - name: Helyalapú áruházészlelés engedélyezése
                   href: enable-store-detection.md
+                - name: E-kereskedelmi digitális ajándékkártyák
+                  href: digital-gift-cards.md
+                - name: A Dynamics 365 Commerce-webhelyekre vonatkozó böngészőkövetelmények
+                  href: browser-requirements.md
             - name: Mintawebhely áttekintése
               items:
                 - name: Kezdőlap – áttekintés
@@ -948,6 +958,8 @@
                       href: enrich-category-page.md
                     - name: Oldaltartalom hozzáférhetőségének ellenőrzése
                       href: verify-accessibility.md
+                    - name: Dinamikus e-kereskedelmi oldalak létrehozása URL-paraméterek alapján
+                      href: create-dynamic-pages.md
                 - name: Webhely-navigáció
                   items:
                     - name: Webhely-navigáció testreszabása
@@ -1054,10 +1066,12 @@
                   items:
                     - name: Számlakezelési oldalak és modulok
                       href: account-management.md
-                - name: Termékgyűjtemény modulok
+                - name: Termékgyűjtemény-modulok
                   items:
-                    - name: Termékgyűjtemény modulok
+                    - name: Termékgyűjtemény-modulok
                       href: product-collection-module-overview.md
+                    - name: Modul gyors megtekintése
+                      href: quick-view-module.md
                 - name: Navigációs modulok
                   items:
                     - name: Útkövetési modul
@@ -1066,6 +1080,10 @@
                       href: nav-menu-module.md
                     - name: Telephelyválasztó modul
                       href: site-selector.md
+                - name: Keresési modulok
+                  items:
+                    - name: Keresési eredmények modul
+                      href: search-result-module.md
                 - name: Megfelelőségi modulok
                   items:
                     - name: Cookie-hozzájárulási modul
@@ -1106,6 +1124,18 @@
           items:
             - name: Dynamics 365 Fraud Protection integráció a Dynamics 365 Commerce alkalmazással
               href: dev-itpro/DFP.md
+        - name: B2B e-kereskedelem
+          items:
+            - name: B2B e-kereskedelmi webhely beállítása
+              href: b2b/set-up-b2b-site.md
+            - name: Szervezeti hierarchiák modellezése a B2B-szervezetek számára
+              href: b2b/org-model.md
+            - name: Üzleti partner felhasználóinak kezelése a B2B e-kereskedelmi webhelyeken
+              href: b2b/manage-b2b-users.md
+            - name: A B2B e-kereskedelmi webhelyek vevői számláihoz tartozó fizetési módok konfigurálása
+              href: b2b/payment-method.md
+            - name: A termékmennyiség-limitek beállítása a B2B e-kereskedelmi webhelyeken
+              href: b2b/quantity-limits.md
         - name: Megfigyelés és elemzés
           items:
             - name: Értékesítés és teljesítménykülönbözet megfigyelése
@@ -2066,6 +2096,8 @@
                       href: e-commerce-extensibility/interactive-components.md
                     - name: Bejelentkezett állapot tettetése helyi fejlesztés során
                       href: e-commerce-extensibility/mock-sign-in.md
+                    - name: A modul megjelenítendő tulajdonságainak konfigurálása kontextus alapján
+                      href: e-commerce-extensibility/configure-properties-context.md
                     - name: Modulok globalizálása a CultureInfoFormatter osztály használatával
                       href: e-commerce-extensibility/globalize-modules.md
                     - name: Azure Key Vault beállítása a biztonságos kulcskezeléshez
@@ -2152,7 +2184,7 @@
                   href: dev-itpro/retail-sdk/retail-sdk-overview.md
                 - name: A Retail szoftverfejlesztői készlet (SDK) közelgő változásai
                   href: dev-itpro/UpcomingSDKChanges.md
-                - name: Fontos fejlesztési és ALM-változások a 10.0.10 és 10.0.13 verzió között
+                - name: Fejlesztések és ALM-változások a 10.0.10 és a 10.0.13 verzió között
                   href: dev-itpro/dev-changes-10-13.md
                 - name: A Commerce és Finance and Operations buildrendszereinek egyesítése
                   href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
@@ -2162,7 +2194,7 @@
                   href: dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md
                 - name: Telepíthető csomagok létrehozása
                   href: dev-itpro/retail-sdk/retail-sdk-packaging.md
-                - name: Fejlesztések felhőbeli fejlesztési környezetekben rendszergazdai hozzáférés nélkül
+                - name: Fejlesztések felhőbeli környezetekben rendszergazdai hozzáférés nélkül
                   href: dev-itpro/cloud-dev-box.md
                 - name: Commerce szoftverfejlesztői készlet (SDK) buildelési folyamat beállítása
                   href: dev-itpro/retail-sdk/SDK-build-pipeline.md
@@ -2238,7 +2270,7 @@
               items:
                 - name: Commerce Scale Unit – ügyfél és fogyasztói API-k
                   href: dev-itpro/retail-server-customer-consumer-api.md
-                - name: Új Retail Server-bővítmény API létrehozása (Retail szoftverfejlesztői készlet (SDK) 10.0.11 és újabb)
+                - name: Retail Server-bővítmény API-jának létrehozása (Retail szoftverfejlesztői készlet (SDK) 10.0.11 és újabb)
                   href: dev-itpro/retail-server-icontroller-extension.md
                 - name: Új Retail Server-bővítmény API létrehozása (Retail szoftverfejlesztői készlet (SDK) 10.0.11 és korábbi verziók)
                   href: dev-itpro/retail-server-extension.md
@@ -2300,7 +2332,7 @@
                   href: payment-connector-data-fields.md
                 - name: Kettős fizetési védelem engedélyezése a fizetési összekötőkhöz
                   href: dev-itpro/duplicate-payments-protection.md
-                - name: Fizetéscsomagolás létrehozása a Service Fabric telepítések alkalmazáskeresőjéhez
+                - name: Commerce-fizetéscsomag létrehozása a Finance and Operations üzemelő példányához
                   href: dev-itpro/payment-connector-package.md
             - name: Harmadik fél e-kereskedelmi bővíthetősége
               items:

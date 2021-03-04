@@ -3,14 +3,13 @@ title: Felosztott rendeléskezelés (DOM)
 description: Ez a témakör a Dynamics 365 Commerce elosztott rendeléskezelés (DOM) funkcióját részletezi.
 author: josaw1
 manager: AnnBe
-ms.date: 05/22/2020
+ms.date: 01/08/2021
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
 ms.search.region: global
@@ -18,12 +17,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 3a83bd6e997110d107bac836abf237f99db78d99
-ms.sourcegitcommit: d77e902b1ab436e5ff3e78c496f5a70ef38e737c
+ms.openlocfilehash: 367eaebfdd59d15040bfd4824b0b6f4621cb7147
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "4459192"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4982591"
 ---
 # <a name="distributed-order-management-dom"></a>Felosztott rendeléskezelés (DOM)
 
@@ -49,8 +48,12 @@ A következő ábra bemutatja egy értékesítési rendelés teljes életútját
     - **Felosztott rendeléskezelés engedélyezése** – Állítsa a beállítás értékét **Igen** értékre.
     - **Bing Térképek-használat megerősítése a DOM-hoz** – Állítsa a beállítást **Igen** értékre.
 
+
         > [!NOTE]
-        > Ezt a beállítást csak akkor állíthatja **Igen** értékre, ha a **Megosztott kereskedelmi paraméterek** oldal **Bing Térképek** lapján a **Bing Térképek engedélyezése** beállítás (**Kiskereskedelem és kereskedelem \> Központ beállítása \> Paraméterek \> Megosztott kereskedelmi paraméterek**) értéke is **Igen** értékre van állítva, valamint a **Bing Térképek-kulcs** mezőben érvényes kulcsot adtak meg.
+        > Ezt a beállítást csak akkor állíthatja az **Igen** értékre, ha a **Megosztott kereskedelmi paraméterek** oldal **Bing Térképek** lapján a **Bing Térképek engedélyezése** beállítás (**Kiskereskedelem és kereskedelem \> Központ beállítása \> Paraméterek \> Megosztott kereskedelmi paraméterek**) értéke is az **Igen** értékre van állítva, valamint a **Bing Térképek-kulcs** mezőben érvényes kulcsot adtak meg.
+        >
+        > A [Bing Térképek fejlesztői központ](https://www.bingmapsportal.com/) portál segítségével bizonyos tartományokra korlátozhatja a hozzáférést a Bing Térképek API-kulcsokhoz. Ezzel a funkcióval az ügyfelek meghatározhatják azoknak a hivatkozóérték- vagy IP-címtartományokat a szigorú készletét, amelyek alapján a rendszer hitelesíti a kulcsot. Az engedélyezési listáról származó kérelmeket a rendszer a szokásos módon dolgozza fel, míg a listán kívülről érkező kérelmek esetében „hozzáférés megtagadva” választ ad. A tartományt védő biztonsági beállítások használata az API-kulcsnál opcionális, és a nem módosított kulcsok is működni fognak. A kulcshoz tartozó engedélyezési lista független a többi kulcstól, így külön szabályokat hozhat létre az egyes kulcsokhoz. A Felosztott rendeléskezelés nem támogatja a tartományra hivatkozó tulajdonságok beállítását.
+
 
     - **Megőrzési időszak (nap)** – Adja meg, hogy a DOM-futtatások által létrehozott teljesítési terveket a rendszer milyen hosszan őrizze meg. A **DOM teljesítési adatok törlése feladatbeállítás** kötegelt feladat minden olyan teljesítési tervet törölni fog, amely régebbi, mint az itt megadott napok száma.
     - **Elutasítási időszak (napokban)** – Adja meg, mennyi időnek kell eltelnie, mielőtt egy elutasított rendelési sort ugyanahhoz a helyhez lehetne rendelni.
@@ -62,14 +65,15 @@ A következő ábra bemutatja egy értékesítési rendelés teljes életútját
     - **Feloldás típusa** – Válasszon ki egy értéket. A kereskedelmi szolgáltatásban két feloldási típus áll rendelkezésre: a **Termelési feloldás** és az **Egyszerűsített feloldás**. Az összes, DOM-ot futtató berendezés esetében (ide értendő az összes szerver, amely a DOMBatch csoportba tartozik) a **Termelési feloldás** lehetőséget kell kiválasztani. A Termelési feloldáshoz egy speciális licenckulcsra van szükség, amely alapértelmezett módon a termelési környezetekben licencelt és telepített. A nem termelési környezetekben a licenckulcsot manuálisan kell telepíteni. A licenckulcs manuális telepítéséhez kövesse az alábbi lépéseket:
 
         1. A Microsoft Dynamics Lifecycle Services szolgáltatásban nyissa meg a Közös eszközök tárát, az eszköz típusaként válassza ki a **Modell** lehetőséget, majd töltse le a **DOM-licenc** fájlt.
-        2. Indítsa el a Microsoft Internet Information Services (IIS)-kezelő szolgáltatást, jobb gombbal kattintson az **AOSService weboldal** lehetőségre, majd válassza a **Felfedezés** elemet. Ekkor az **\<AOS service root\>\\webroot** helyen megnyílik egy Windows Explorer-ablak. Jegyezze fel az \<AOS Service root\> elérési útvonalát, mert a következő lépésnél szüksége lesz rá.
-        3. Másolja a konfigurációs fájlt az **\<AOS Service root\>\\PackagesLocalDirectory\\DOM\\bin** könyvtárába.
-        4. Lépjen a Headquarters kliensre, és nyissa meg a **DOM-paraméterek** oldalt. A **Feloldás** lapon található **Feloldás típusa** mezőben válassza a **Termelési feloldás** lehetőséget, és erősítse meg, hogy nem jelentek meg hibaüzenetek.
+        1. Indítsa el a Microsoft Internet Information Services (IIS)-kezelő szolgáltatást, jobb gombbal kattintson az **AOSService weboldal** lehetőségre, majd válassza a **Felfedezés** elemet. Ekkor az **\<AOS service root\>\\webroot** helyen megnyílik egy Windows Explorer-ablak. Jegyezze fel az \<AOS Service root\> elérési útvonalát, mert a következő lépésnél szüksége lesz rá.
+        1. Másolja a konfigurációs fájlt az **\<AOS Service root\>\\PackagesLocalDirectory\\DOM\\bin** könyvtárába.
+        1. Lépjen a Headquarters kliensre, és nyissa meg a **DOM-paraméterek** oldalt. A **Feloldás** lapon található **Feloldás típusa** mezőben válassza a **Termelési feloldás** lehetőséget, és erősítse meg, hogy nem jelentek meg hibaüzenetek.
+
 
         > [!NOTE]
         > Az Egyszerűsített feloldás azért áll rendelkezésre, hogy a kiskereskedőknek lehetőségük legyen a DOM funkció kipróbálására anélkül, hogy a speciális licencet telepíteniük kellene. A szervezeteknek nem javasolt az Egyszerűsített feloldás használata termelési környezetekben.
         >
-        > Bár az Egyszerűsített feloldás ugyanolyan képességekkel rendelkezik, mint a Termelési feloldás, különböző korlátai vannak, például a teljesítményben (az egy futás során kezelt rendelések és rendelési sorok száma) és az eredmények konvergenciája (bizonyos esetekben a rendelések kötegével nem a legjobb eredményt lehet elérni).
+        > A Termelési feloldás javítja a teljesítményt (például az egy futás során kezelhető rendelések és rendelési sorok számát) és az eredmények konvergenciáját (bizonyos esetekben nem biztos, hogy a kötegelt rendeléssel lehet a legjobb eredményt elérni). Egyes szabályok, például a **Részleges rendelés** és a **Helyszínek maximális száma** szabály megkövetelik a Termelési feloldás használatát.
      
 6. Lépjen vissza a **Kiskereskedelem és kereskedelem \> Felosztott rendeléskezelés \> Beállítás \> DOM-paraméterek** lehetőségre.
 7. A **Számsorozatok** lapon rendelje hozzá a szükséges számsorozatokat a különböző DOM-entitásokhoz.
@@ -121,7 +125,7 @@ A következő ábra bemutatja egy értékesítési rendelés teljes életútját
         \* Ha a **Részleges rendelések teljesítése** beállítás **Nem** értékre van állítva, a **Részleges sorok teljesítése** beállításokat mindig **Nem** értékűnek kell tekinteni, attól függetlenül, hogy valójában mire vannak állítva.
 
         > [!NOTE]
-        > A Retail 10.0.5-ös verziójában a **Rendelés teljesítése csak egy helyről** paraméter **Maximum teljesítési helyek** paraméterre módosult. Annak beállítása helyett, hogy a rendelést csak egy helyről, vagy a lehetséges összes helyről lehessen teljesíteni, mostantól a felhasználók megadhatják, hogy a teljesítést a helyek megadott csoportjából (legfeljebb 5 hely) lehet teljesíteni, vagy a lehetséges összes helyről. Ez több rugalmasságot biztosít a rendelésteljesítés helyeinek számát illetően.
+        > A Retail 10.0.5-ös verziójában a **Rendelés teljesítése csak egy helyről** paraméter **Maximum teljesítési helyek** paraméterre módosult. Annak beállítása helyett, hogy a rendelést csak egy helyről, vagy a lehetséges összes helyről lehessen teljesíteni, mostantól a felhasználók megadhatják, hogy a teljesítést a helyek megadott csoportjából (legfeljebb 5 hely) lehet teljesíteni, vagy a lehetséges összes helyről. Ez nagyobb rugalmasságot biztosít a rendelésteljesítés helyeinek számát illetően. Ez a szabály csak a Termelési feloldás segítségével működik. 
 
    - **Offline teljesítési hely szabály** – Ez a szabály lehetővé teszi a szervezeteknek, hogy egy helyet vagy helycsoportot offline vagy nem elérhető jelzéssel lássanak el, így a rendelések nem rendelhetők hozzá teljesítésre az adott helyhez.
     - **Maximum elutasítások szabály** – Ezzel a szabállyal a szervezetek meghatározhatnak egy elutasítási küszöbértéket. Amikor a rendszer eléri a küszöbértéket, a DOM processzor kivételként megjelöli a rendelést vagy rendelési sort, és kizárja a további feldolgozásból.

@@ -11,24 +11,23 @@ ms.technology: ''
 ms.search.form: Customer
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: ace1d00ec25a57b26b1858369c32d9134a380977
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e70f2e6b3694002a11a831ac14039ccbee273a51
+ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4459169"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5115920"
 ---
 # <a name="recognize-deferred-revenue"></a>Halasztott bevétel elszámolása
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> A „Bevétel elszámolása” funkció nem kapcsolható be a Funkciókezelés helyen. Jelenleg konfigurációs kulcsok használatával kapcsolhatja be.
+> A bevételelszámolási funkció nem kapcsolható be a Funkciókezelés lehetőségen keresztül. Jelenleg konfigurációs kulcsok használatával kapcsolhatja be.
 
 Ez a témakör a bevételeknek a bevételmegjelenítési ütemezésben történő megjelenítését ismerteti. Amikor felad egy számlát egy értékesítési rendeléshez, a rendszer az értékesítési rendelés összes olyan sorához bevételmegjelenítési ütemezést hoz létre, amelyik rendelkezik bevételütemezéssel. A rendszer a sorban szereplő bevételütemezés alapján határozza meg, hogy el kell-e halasztani a sor bevételét.
 
@@ -37,9 +36,9 @@ Ez a témakör a bevételeknek a bevételmegjelenítési ütemezésben történ�
 A bevételmegjelenítési ütemezés részletes adatait két módon lehet elérni.
 
 - A bevételmegjelenítési ütemezés közvetlenül megnyitható a számlázott értékesítési rendelésekből. Ebben az esetben a program úgy szűri a bevételütemezés adatait, hogy csak a kiválasztott értékesítési rendelés részletei jelenjenek meg. Ez a módszer akkor hasznos, ha egy értékesítési rendelés ütemezésének a részleteit szeretné érvényesíteni.
-- A bevételmegjelenítési ütemezés a **Bevételkönyvelés \> Időszakos feladatok** lapon is megnyitható. Ezt a módot általában akkor használják, ha egy időszak végén kerül sor a bevétel megjelenítésére. Az oldal első megnyitásakor nem látható információ. A rács fölötti szűrőkkel adhatja meg az ütemezés megjelenítendő részleteire vonatkozó feltételeket. A számla dátumai szűrhetők: megadhat dátumtartományt, értékesítési rendelést, vevőt, projektazonosítót vagy állapotot.
+- A bevételmegjelenítési ütemezés a **Bevételkönyvelés \> Időszakos feladatok** lapon is megnyitható. Ezt a módot általában akkor használják, ha egy időszak végén kerül sor a bevétel megjelenítésére. Az oldal első megnyitásakor nem látható információ. A rács fölötti szűrőkkel adhatja meg az ütemezés megjelenítendő részleteire vonatkozó feltételeket. A számla dátumai szűrhetők: megadhat dátumtartományt, értékesítési rendelést, ügyfelet, projektazonosítót vagy állapotot.
 
-[![A Bevételek ütemezései oldal](./media/revenue-recognition-rev-revenue-schedules.png)](./media/revenue-recognition-rev-revenue-schedules.png)
+[![A Bevételek ütemezései oldalt bemutató kép](./media/revenue-recognition-schedule-page.png)](./media/revenue-recognition-schedule-page.png)
 
 A rács alatt lévő **Pénzügyi dimenzió** gyorslapon láthatók az értékesítési rendelés sorának pénzügyi dimenziói. Ezeket a dimenziókat vette figyelembe a rendszer a halasztott bevétel feladásakor. A bevétel megjelenítésekor ugyancsak figyelembe kell venni őket. A használt dimenzióértékek a bevételhez és a halasztott bevétel fő számláihoz rendelt számlastruktúrától függenek.
 
