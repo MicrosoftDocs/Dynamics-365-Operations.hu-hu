@@ -93,3 +93,6 @@ A Microsoft FastTrack for Dynamics 365 az ügyfelek sikerességére koncentrál�
 ## <a name="if-you-are-upgrading-from-dynamics-ax-2012-or-migrating-from-ax-2009"></a>Ha a Dynamics AX 2012-ről frissít, illetve az AX 2009-ről tér át
 
 Ha Ön olyan ügyfél, aki a Microsoft Dynamics AX 2012-ről frissít, illetve a Microsoft Dynamics AX 2009-ről telepít át, akkor lehet, hogy hosszabb próbaidőszakot is igénybe vehet. További információ: <daxcf@microsoft.com>.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

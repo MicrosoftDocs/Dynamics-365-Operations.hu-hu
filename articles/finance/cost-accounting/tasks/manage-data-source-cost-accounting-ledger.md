@@ -48,3 +48,6 @@ Ezzel az eljárással kezelheti a költségkönyvelési főkönyv főkönyvi ada
 14. Válassza az Aktuáls lehetőséget a Feladási réteg mezőben.
 15. Kattintson az OK gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

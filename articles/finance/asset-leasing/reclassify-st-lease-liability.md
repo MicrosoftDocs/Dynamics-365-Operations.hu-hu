@@ -41,3 +41,6 @@ A rövid távú kötelezettség újraosztályzási naplóbejegyzés létrehozás
 4. Kapcsolja be a **Feladás** paramétert. Azt is megteheti, hogy ha a bejegyzést létre kell hozni, de nem szabad feladni, akkor kikapcsolva hagyja ezt a paramétert.
 5. A feladás előtt kapcsolja be az **Előzetes verzió feladás előtt** paramétert, hogy a bejegyzést megtekinthesse feladás előtt.
 6. Válassza ki az **OK** lehetőséget.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -55,3 +55,6 @@ Miután a költségkönyvelésbe importálta az adatokat, különféle szemponto
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

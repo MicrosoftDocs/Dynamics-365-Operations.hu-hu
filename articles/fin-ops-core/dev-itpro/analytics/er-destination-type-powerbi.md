@@ -38,3 +38,6 @@ Beállíthat egy archiválási Microsoft Power BI célhelyet a kimenő dokumentu
 
 - [Elektronikus jelentéskészítés (ER) áttekintése](general-electronic-reporting.md)
 - [Elektronikus jelentéskészítés (ER) céljai](electronic-reporting-destinations.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -81,3 +81,6 @@ Ez a témakör azt mutatja be, hogy hogyan lehet automatizálni a szállítmány
 11. A **Mezőválasztás** mezőben adjon meg vagy válasszon ki egy értéket.
 12. Válassza ki az **OK** lehetőséget.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

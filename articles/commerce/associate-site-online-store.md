@@ -58,3 +58,6 @@ Miután létrehozta a webhelyet, a **Termékek** lap kiválasztásával ellenőr
 [Tartalomkézbesítési hálózat (CDN) támogatásának hozzáadása](add-cdn-support.md)
 
 [Helyalapú áruházészlelés engedélyezése](enable-store-detection.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

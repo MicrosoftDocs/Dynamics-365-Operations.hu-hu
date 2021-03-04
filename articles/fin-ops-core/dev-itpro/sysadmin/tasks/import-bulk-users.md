@@ -58,3 +58,6 @@ Az importálás befejezése után szerepköröket kell hozzárendelni a felhaszn
 ## <a name="run-in-a-sandbox-environment"></a>Futtatás védőfalkörnyezetben
 1. Válassza a **Kötegelt importálás** lehetőséget.
 2. Válassza ki az **OK** lehetőséget.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

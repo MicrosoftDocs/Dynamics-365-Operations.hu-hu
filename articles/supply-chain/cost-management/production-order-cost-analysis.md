@@ -65,3 +65,6 @@ Különálló jelentések nyújtanak információt az egyes tranzakciótípusokk
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

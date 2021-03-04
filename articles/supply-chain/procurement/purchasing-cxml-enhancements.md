@@ -277,3 +277,6 @@ Ha meg szeretné tekinteni a szállító visszaigazolásának vagy a hibaüzenet
 
 - [Külső katalógus beállítása a PunchOut e-beszerzés számára](set-up-external-catalog-for-punchout.md)
 - [Külső katalógus használatának engedélyezése a PunchOut e-beszerzés számára](use-external-catalogs-for-punchout.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

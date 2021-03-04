@@ -65,3 +65,6 @@ A kategórialap bővítéséhez tegye a következőket.
 [A termékoldal bővítése](enrich-product-page.md)
 
 [Oldaltartalom hozzáférhetőségének ellenőrzése](verify-accessibility.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

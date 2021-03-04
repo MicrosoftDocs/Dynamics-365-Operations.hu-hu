@@ -48,3 +48,6 @@ Ez a feladat-útmutató valamelyik pénzügyi dimenziókészletből helyezi át 
     * A tárgyieszköz-könyvek áthelyezése előtt tekintse át az eredményeket.  
 10. Kattintson az **Áthelyezés** elemre.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -151,3 +151,6 @@ Az alábbi táblázat azokra az erőforrásokra mutató hivatkozásokat tartalma
 
 ## <a name="troubleshooting"></a>Hibaelhárítás
 [Mobil platform erőforrásai](platform/mobile-platform-home-page.md#troubleshooting-the-app)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

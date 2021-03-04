@@ -35,3 +35,6 @@ Ez az eljárás az USMF céget használja.
 3. Keresse meg és jelölje ki a kívánt rekordot a listán.
 4. Kattintson az **OK** gombra.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

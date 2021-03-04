@@ -105,3 +105,6 @@ A „javíthatatlan” állapotú munkafolyamatok naplójának visszahívása a 
 
 ## <a name="delete-journal-lines"></a>Naplósorok törlése
 Az összes naplósor gyors törlésének lehetőség engedélyezve van egy naplóban a **Funkciók** > **Naplósorok törlése**. A funkció engedélyezéséhez kattintson a **Szolgáltatások kezelése** modul **Napló teljesítményoptimalizálásainak törlése** parancsára.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

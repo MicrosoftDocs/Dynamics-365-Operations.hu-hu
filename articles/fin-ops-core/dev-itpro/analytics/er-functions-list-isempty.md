@@ -59,3 +59,6 @@ Az `ISEMPTY (SPLIT ("",1))` kifejezés az **IGAZ** értéket adja vissza.
 ## <a name="additional-resources"></a>További erőforrások
 
 [Lista függvények](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

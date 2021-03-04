@@ -55,3 +55,6 @@ A felhasználót hozzá kell adni a környezet Környezetkészítő szerepköré
     ![Szinkronizálás gomb](media/get-more.png)
 
     A szinkronizálás befejezése után a Human Resources szolgáltatás megjelenik a kezdőlapon.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

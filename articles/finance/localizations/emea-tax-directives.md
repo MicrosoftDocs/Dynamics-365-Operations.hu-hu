@@ -33,3 +33,6 @@ Az EU-irányelv valamennyi tagállam által követendő szabályozásokat tartal
 
 > [!NOTE]
 > Győződjön meg róla, hogy az **Áfa meghatározása** mező értéke **Regisztráció pénzneme** vagy **Regisztráció és vállalat pénzneme** értékre van állítva az **Általános** lap **Űrlapbeállítás** oldalán (**Kinnlevőségek > Beállítások > Űrlapok > Űrlapok beállítása** vagy **Projektvezetés és könyvelés > Beállítások > Űrlapok > Űrlapok beállítása**).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

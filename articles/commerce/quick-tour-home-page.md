@@ -73,3 +73,6 @@ A kezdőlap fő része a termékeket, kategóriákat vagy promóciókat jelenít
 [Kosár és pénztár oldalainak áttekintése](quick-tour-cart-checkout.md)
 
 [Fiókkezelési oldalak áttekintése](quick-tour-account-management.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -65,3 +65,6 @@ A következő PowerBI.com megoldások érhetők el környezetekhez [Microsoft Ap
 - Költségkezelés
 - [Pénzügyi teljesítmény](financial-performance-power-bi-content-pack.md)
 - [Kiskereskedelmi csatorna teljesítménye ](retail-channel-performance-dashboard-power-bi-data.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

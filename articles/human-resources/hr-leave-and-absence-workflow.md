@@ -81,3 +81,6 @@ Ezek a példák azt mutatják be, hogyan lehet különböző típusú munkafolya
 ## <a name="see-also"></a>Lásd még
 
 - [Szabadság és távollét áttekintése](hr-leave-and-absence-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

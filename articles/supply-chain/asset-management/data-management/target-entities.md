@@ -53,3 +53,6 @@ Az **Adatkezelés** munkaterületen áttekintést kaphat a célentitásokról, k
 
     ![3. ábra](media/03-data-management.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

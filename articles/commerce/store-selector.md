@@ -146,3 +146,6 @@ Ha az üzlethelyekhez szeretné konfigurálni az üzletválasztó modult az elé
 [Bing Térképek REST API-k](https://docs.microsoft.com/bingmaps/rest-services/)
 
 [Térképek modul](map-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

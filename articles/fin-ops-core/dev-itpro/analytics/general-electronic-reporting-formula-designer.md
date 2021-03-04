@@ -164,3 +164,6 @@ Néhány képletet nem lehet a tervezés alatt tesztelni. Előfordulhat példáu
 
 - [Elektronikus jelentések áttekintése](general-electronic-reporting.md)
 - [Elektronikus jelentéskészítés képletének nyelve](er-formula-language.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

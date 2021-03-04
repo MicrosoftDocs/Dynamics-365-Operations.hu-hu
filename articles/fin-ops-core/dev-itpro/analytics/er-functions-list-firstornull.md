@@ -55,3 +55,6 @@ A `FIRSTORNULL(SPLIT("",1)).Value` kifejezés üres karakterláncot ad eredmény
 ## <a name="additional-resources"></a>További erőforrások
 
 [Lista függvények](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

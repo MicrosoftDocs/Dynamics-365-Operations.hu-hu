@@ -55,3 +55,6 @@ Ez az eljárás bemutatja, hogy hogyan lehet egy új termékszortimentet létreh
 1. Kattintson a Közzététel parancsra.
 2. Kattintson az Igen gombra.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

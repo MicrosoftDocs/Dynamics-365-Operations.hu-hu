@@ -90,3 +90,6 @@ Ez az eljárás bemutatja, hogyan lehet teljesíteni egy értékesítési szerz�
 23. Kattintson a Csatolt értékesítési szerződés lehetőségre.
 24. Kattintson a Teljesítés fülre.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

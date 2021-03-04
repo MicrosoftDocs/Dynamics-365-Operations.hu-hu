@@ -48,3 +48,6 @@ Az **Eszköztranzakció** lap azokat a tranzakciókat jeleníti meg, amelyek nö
 A lízingköltség-tranzakciók megtekintéséhez válasszon ki egy lízinget a **Lízing összegzése** lapon, majd válassza a **Könyvek** lehetőséget a lízingrekordhoz csatolt lízingkönyvek megnyitásához. Majd válassza ki a **Költségtranzakciók** lehetőséget.
 
 A **Költségtranzakciók** lap a lízinggel szemben feladott összes költséget megjeleníti, például a kamatköltségeket, az értékcsökkenési költségeket és a végrehajtási költségeket.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

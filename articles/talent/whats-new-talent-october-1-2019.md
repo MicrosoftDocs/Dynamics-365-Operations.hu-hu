@@ -84,3 +84,6 @@ Az eheti buildben a leírás megjelenik a kiválasztott feladatnál a **Szakért
 ### <a name="print-performance-reviews"></a>Teljesítményértékelések nyomtatása
 
 Az alkalmazottak, a vezetők és a HR szakemberek kinyomtathatják az alkalmazottak teljesítménykimutatását.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -47,3 +47,6 @@ A feladatok kezdési időpontjának és állapotának megtekintésén kívül az
 [Szűrők alkalmazása egy tervre](plan-filters.md)
 
 [Tervezési feladat érvénytelenítése](cancel-planning-job.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

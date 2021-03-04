@@ -83,3 +83,6 @@ Az üzletbeli vagy a járdaszéli felvétellel megadott csomagfelvételeket mega
 
 [Adómentesség számítása](tax-exempt-price-inclusive.md) 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -96,3 +96,6 @@ A pénzügyi jelentéskészítés következő elemeivel a jelentések létrehoz�
 
 ## <a name="additional-resources"></a>További erőforrások
 [Pénzügyi jelentések létrehozása](generate-financial-report.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

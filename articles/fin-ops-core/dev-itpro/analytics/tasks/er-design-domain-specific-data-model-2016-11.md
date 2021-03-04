@@ -187,3 +187,6 @@ Ebben a példában a mintavállalatra, Litware-ra, Inc.-ra vonatkozóan létreho
 65. Kattintson a Mentés gombra.
 66. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

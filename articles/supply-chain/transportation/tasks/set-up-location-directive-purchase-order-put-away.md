@@ -86,3 +86,6 @@ Ez a témakör bemutatja, hogyan állíthat be egyszerű helyutasítást. A pél
 4. Adjon meg egy értéket a **Feltétel** mezőben.
 5. Válassza ki az **OK** lehetőséget. Az irányelvsorokat és a műveletek irányelveit mindaddig hozzáadhatja, amíg a raktárban minden lehetséges esetet belefoglal.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

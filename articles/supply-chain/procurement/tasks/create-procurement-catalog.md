@@ -66,3 +66,6 @@ Ez a témakör a beszerzési katalógus létrehozásának lépéseit mutatja be.
 7. Válassza a **Hozzáadás a sorokhoz** lehetőséget.
 8. Válassza ki az **OK** lehetőséget.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

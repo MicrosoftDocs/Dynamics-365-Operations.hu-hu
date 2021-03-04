@@ -79,3 +79,6 @@ A `DATETIMEVALUE ("21-Gen-2016 02:55:00", "dd-MMM-yyyy hh:mm:ss", "EN-US")` visz
 ## <a name="additional-resources"></a>További erőforrások
 
 [Dátum és idő függvények](er-functions-category-datetime.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -64,3 +64,6 @@ A következő lépések segítségével adja hozzá a banki kivonat importálás
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

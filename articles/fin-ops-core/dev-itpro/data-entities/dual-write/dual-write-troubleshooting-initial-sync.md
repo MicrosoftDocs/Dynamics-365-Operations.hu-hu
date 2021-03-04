@@ -211,3 +211,6 @@ Ha az ügyfélentitás bármelyik sorának a **ContactPersonId** és az **Invoic
     A sorok kezdeti szinkronizálása most befejeződött.
 
 8. Engedélyezze újra Finance and Operations alkalmazásban az **Ügyfelek V3** entitás változáskövetését.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

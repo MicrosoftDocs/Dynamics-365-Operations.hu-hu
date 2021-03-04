@@ -51,3 +51,6 @@ Ez az eljárás bemutatja, hogyan lehet jóváhagyott és feldolgozott Vevői vi
     * Vegye figyelembe, hogy a teljes visszatérítés összegét jelentő negatív összegű tranzakciót a rendszer számlahivatkozás nélkül hozzáadta a vevő egyenlegéhez.   
 15. Kattintson a Mégse gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

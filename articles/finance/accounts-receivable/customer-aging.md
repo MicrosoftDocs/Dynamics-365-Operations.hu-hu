@@ -145,3 +145,6 @@ Ennek a jelentésnek a létrehozásakor a következő alapértelmezett paraméte
 </tbody>
 </table>
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

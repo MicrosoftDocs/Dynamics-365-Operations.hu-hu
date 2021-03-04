@@ -247,3 +247,6 @@ C. Lépjen a következőhöz: Költségvetés-készítés &gt; Beállítás &gt;
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

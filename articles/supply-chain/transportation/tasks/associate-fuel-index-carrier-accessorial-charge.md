@@ -78,3 +78,6 @@ Ez az útmutató bemutatja, hogyan lehet létrehozni egy kiegészítő szolgált
 6. A listában kattintson a kijelölt sorban lévő hivatkozásra.
 7. Kattintson a Mentés gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

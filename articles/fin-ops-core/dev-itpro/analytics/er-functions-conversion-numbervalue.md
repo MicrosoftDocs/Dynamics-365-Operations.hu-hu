@@ -63,3 +63,6 @@ A `NUMBERVALUE( "1 234,56", ",", " ")` az **1234,56** értéket adja vissza.
 ## <a name="additional-resources"></a>További erőforrások
 
 [Típuskonverziós függvények](er-functions-category-type-conversion.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

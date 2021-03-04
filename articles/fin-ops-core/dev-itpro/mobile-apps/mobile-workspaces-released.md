@@ -41,3 +41,6 @@ Ez a témakör felsorolja azokat a mobil munkaterületeket, amelyek a Dynamics 3
 | [Értékesítési rendelések](../../../supply-chain/sales-marketing/sales-orders-mobile-workspace.md)         | Naprakész maradhat az értékesítési rendeléseivel kapcsolatban.                                                                                                                          |  Január 2017.                  |
 | [Szállítói együttműködés](../../../supply-chain/procurement/vendor-collaboration-mobile-workspace.md) | A szállítóik naprakészek maradhatnak a nekik jóváhagyásra elküldött beszerzési rendelések tekintetében. Emellett az új és módosított beszerzési rendelések és a kapcsolattartók adatait is megtekinthetik. |Január 2017.    |
 | [Eszközök kezelése](../../../supply-chain/asset-management/asset-management-mobile-workspace.md) | Ez a munkaterület lehetővé teszi a felhasználók számára a karbantartási kérelmek és munkarendelések megtekintését és létrehozását. A felhasználók naptár vagy lista nézetben is megtekinthetik a hozzárendelt munkarendelési feladatokat. A tárgyi eszközök és a funkcionális helyszínek is megtekinthetők és kereshetők. |Október 2019.    |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

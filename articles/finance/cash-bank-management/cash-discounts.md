@@ -66,3 +66,6 @@ Február 15-én adnak fel egy 20D2%-os készpénzfizetési engedménnyel rendelk
 > [!NOTE]
 > Ha a részfizetés beállítás készpénzfizetési engedmény számítása van kiválasztva a Számla kötelezettségek paramétereinek vagy a Kötelezettségi paramétereinek lapjain, az az átváltási díj használatos, amely hatással van minden egyes részlet fizetés dátumára. 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -71,3 +71,6 @@ A frissítési folyamat áthelyezi a meglévő beállításokat és a meglévő 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -72,3 +72,6 @@ Ez a cikk bemutatja, hogyan lehet megtekinteni a jogosultsági folyamat eredmén
    | **Eredményállapot** | Ez jogosult vagy nem jogosult lesz. Ha a dolgozó nem teljesítette a jogosultsági szabály feltételeit, akkor az eredmény állapota nem jogosult lesz, ha a dolgozó nem rendelkezik a szükséges adatokkal, például a fizetési gyakorisággal vagy a fix kompenzációval, vagy ha a juttatási konstrukcióban hiányzik egy olyan adat, amely megakadályozza a dolgozó regisztrációját. |
    | **Eredményüzenet** | Azt jelzi, hogy a dolgozó miért nem jogosult a juttatási konstrukcióra, vagy ha a jogosultsági szabály teljesült. |
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

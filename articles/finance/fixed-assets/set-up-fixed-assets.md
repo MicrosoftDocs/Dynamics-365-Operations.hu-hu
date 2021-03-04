@@ -84,3 +84,6 @@ Beállíthatók okkódok a tárgyi eszköz módosításához vagy meghatározott
 Végül a **Számsorozatok** lapon megadhatja a tárgyi eszközök számsorozatait. A **Tárgyi eszköz** számsorozata felülbírálható a **Tárgyieszköz-csoport** számsorozata alapján, ha meg van adva.
 
 További tudnivalókért lásd: [Tárgyi eszköz létrehozása](tasks/create-fixed-asset.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

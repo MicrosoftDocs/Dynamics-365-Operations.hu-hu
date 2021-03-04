@@ -210,3 +210,6 @@ A tényleges súllyal rendelkező termékekre jelenleg érvényes korlátozások
 
 > [!NOTE]
 > Az előző információk a ténylegessúly-címkékről csak akkor érvényesek, ha a tényleges súllyal rendelkező termék olyan ténylegessúly-címke dimenziókövetési metódussal rendelkezik, amely teljes körűen nyomon követett (azaz ha a **Ténylegessúly-címke dimenziójának követési módja** paraméter a ténylegesssúly-cikk kezelési irányelvében a következő beállítású: **Termékdimenziók, a nyomon követési dimenziók és az összes tárolási dimenzió**). Ha a ténylegessúly-cikk csak részlegesen címke által nyomon követett (azaz ha a **Ténylegessúly-címke dimenziójának követési módja** paraméter a ténlyegessúly-cikk kezelési irányelvében **Termékdimenziók, nyomon követési dimenziók és készletállapot** beállítású), akkor további korlátozások érvényesek. Mivel a láthatóság elveszik ebben az esetben a címke és a készlet között, bizonyos további esetek nem támogatottak.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

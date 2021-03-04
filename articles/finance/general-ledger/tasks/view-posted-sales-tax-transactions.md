@@ -49,3 +49,6 @@ Ez a témakör a feladott áfatranzakciók néhány módját ismerteti. Attól f
 2. A Művelet panelen kattintson az **Áfakód** elemre.
 3. Válassza a **Feladott áfa** elemet.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

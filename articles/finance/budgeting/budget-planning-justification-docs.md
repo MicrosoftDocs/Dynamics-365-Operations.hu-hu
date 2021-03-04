@@ -72,3 +72,6 @@ A költségvetés-kezelő Microsoft Word programban létrehoz egy költségveté
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

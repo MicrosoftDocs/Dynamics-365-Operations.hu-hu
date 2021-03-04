@@ -124,3 +124,6 @@ Az integráció beállításához hajtsa végre az alábbi lépéseket.
     4. A Customer Insights szolgáltatásban több környezet is használható (pl. tesztkörnyezet és termelési környezet). A **Környezeti példányazonosítója** mezőbe írja be a megfelelő környezetet.
     5. A **Másodlagos vevőazonosító** mezőbe írja be a Customer Insights azon tulajdonságát, amelyet hozzárendelt a vevő számlaszámához. (A Commerce szolgáltatásban a vevő számlaszáma a vevőazonosító.)
     6. A fennmaradó három tulajdonság az az intézkedés, amely megjelenik az ügyfélkönyvben lévő vevői kártyán. Legfeljebb három intézkedés jeleníthető meg a vevő kártyáján. (Nem kötelező azonban intézkedéseket megadni.) A korábban említettek szerint a rendszer ezeket az értékeket jeleníti meg először, majd az ügyfélkönyv attribútumcsoportjának az értékeit.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

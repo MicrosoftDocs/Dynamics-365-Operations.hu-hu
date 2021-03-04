@@ -149,3 +149,6 @@ Az eljárás lépései az elektronikus dokumentumot létrehozó elektronikus jel
 46. Zárja be a lapot.
 47. Zárja be a lapot.
 48. Zárja be a lapot.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

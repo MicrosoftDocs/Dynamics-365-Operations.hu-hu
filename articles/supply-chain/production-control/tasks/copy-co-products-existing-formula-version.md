@@ -54,3 +54,6 @@ Ez az eljárás bemutatja, hogy hogyan másolhat társtermékeket egy már megl�
 6. Kattintson az OK gombra.
 7. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

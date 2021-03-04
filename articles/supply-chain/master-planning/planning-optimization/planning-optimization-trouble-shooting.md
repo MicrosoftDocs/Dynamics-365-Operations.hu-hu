@@ -75,3 +75,6 @@ Ez a termelési rendelések támogatásának részeként tervezett függő funkc
 [Tervezési optimalizálás kezdő lépései](get-started.md)
 
 [Tervezési optimalizálás igazítási elemzése](planning-optimization-fit-analysis.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

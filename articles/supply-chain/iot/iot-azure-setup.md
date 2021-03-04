@@ -162,3 +162,6 @@ A Redis-gyorsítótár kapcsolati karakterláncához tartozó titkos kód menté
 > Minden alkalommal, amikor frissít egy kapcsolati karakterláncot, frissítenie kell a titkos értékeket is.
 
 Most befejezte a szükséges Azure-erőforrások létesítését. A következő lépés az [IoT Intelligencia beépülő modul telepítése a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásban](iot-lcs-setup.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

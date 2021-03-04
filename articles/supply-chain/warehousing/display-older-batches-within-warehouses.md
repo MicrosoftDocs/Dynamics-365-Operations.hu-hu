@@ -40,3 +40,6 @@ A **Raktáron belüli régebbi kötegek megjelenítésének** konfigurálása ak
 
 - A **Raktárkezelés** > **Beállítás** > **Mobileszköz** > **Mobileszköz menüpontjai** lehetőségnél állítsa a **Meglévő munka használata** beállítást **Igen** értékre a menüpontra vonatkozóan, majd válassza ki a **Figyelmeztetés** beállítást a **Legrégebbi köteg kitárolása** mezőben. 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

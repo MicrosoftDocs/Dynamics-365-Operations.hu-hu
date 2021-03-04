@@ -108,3 +108,6 @@ A szerződés módosításai a következő hatásokkal vannak a bevételi üteme
 - Ha a termékhez tartozik megjelenített bevétel, akkor néhány bevétel megjelenítése helytelen volt, mert a megjelenítés helytelen bevételi ütemezésen alapult. Ezeket a sorokat vissza kell vonni, és – az új ütemezés alapján – újra meg kell jeleníteni őket. Ebben az esetben olyan új bevételütemezési sorok jönnek létre, amelyek negatív összeggel rendelkeznek az eredeti megjelenítési dátumon. Ezután új sorok jönnek létre az összegek új bevételi ütemezés alapján történő megjelenítéséhez. 2019. augusztus 8-án például Ön megjelenített 10,53 USD bevételt. 2019. szeptember 8-án megjelenített 13,16 USD bevételt. Ennek megfelelően két új sor jön létre ugyanazon a napon. Egy sor -10,53 USD-hez, a másik sor pedig 13,16 USD-hez. Ezt követően huszonnégy új sor jön létre; a teljes halasztott bevételt (160,61 USD) közöttük osztja el a rendszer. A sztornírozási sorok a **Napló létrehozása** folyamat futtatásával adhatók fel.
 
 [![Bevételmegjelenítési ütemezés](./media/revenue-recognition-rev-recog-schedule-03.png)](./media/revenue-recognition-rev-recog-schedule-03.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

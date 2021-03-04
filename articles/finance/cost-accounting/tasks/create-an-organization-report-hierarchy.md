@@ -95,3 +95,6 @@ Ezzel az eljárással a szervezet jelentéseihez szükséges jelentéshierarchi�
     * Válassza ki a csomópontnak megfelelő dimenziótagot.  
 59. Kattintson a Mentés gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

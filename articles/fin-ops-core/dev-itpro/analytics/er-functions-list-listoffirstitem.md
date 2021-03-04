@@ -55,3 +55,6 @@ A `FIRST( LISTOFFIRSTITEM ( SPLIT ("ABC",1))).Value` kifejezés az **„A”** s
 ## <a name="additional-resources"></a>További erőforrások
 
 [Lista függvények](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

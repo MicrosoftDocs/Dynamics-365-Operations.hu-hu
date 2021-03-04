@@ -97,3 +97,6 @@ Ha tömegesen szeretne feltölteni egy képmappát a webhelykészítőbe, hajtsa
 [Képfókuszpontok testreszabása](dam-custom-focal-point.md)
 
 [Statikus fájlok feltöltése és kiszolgálása](upload-serve-static-files.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

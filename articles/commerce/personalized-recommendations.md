@@ -131,3 +131,6 @@ Személyre szabás alkalmazásához egy meglévő ajánlati listára a Commerce 
 [Ajánlások létrehozása bemutató adatokkal](product-recommendations-demo-data.md)
 
 [Termékajánlatok GYIK-je](faq-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -173,3 +173,6 @@ A Commerce rendszerbeli Azure Front Door példány nem támogatja a apex-tartom�
   [Tartalomkézbesítési hálózat (CDN) támogatásának hozzáadása](add-cdn-support.md)
 
   [Helyalapú áruházészlelés engedélyezése](enable-store-detection.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

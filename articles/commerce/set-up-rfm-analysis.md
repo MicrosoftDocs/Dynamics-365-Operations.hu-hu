@@ -97,3 +97,6 @@ Az alábbi eljárással tudja megtekinteni vagy törölni egy RFM-elemzés rekor
 2. Az **RFM-analízis** lapon válassza ki a megtekinteni kívánt rekordot.
 3. A rekordok előzményeinek megtekintéséhez válassza ki az **Előzmények** gyorslapot.
 4. A rekord előzményeinek törléséhez válassza ki az **Előzmények törlése** lehetőséget.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

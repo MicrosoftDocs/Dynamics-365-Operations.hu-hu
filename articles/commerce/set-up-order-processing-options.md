@@ -84,3 +84,6 @@ A hívásközponti csatornák konfigurálása és a csatorna felhasználóinak m
 > [!NOTE]
 > A hívásközpont funkciójának használatához engedélyezni kell a **Több célhely** konfigurációs kulcsát. Ez a konfigurációs kulcs megtalálható a **Kereskedelem konfiguráció** kulcsai között a **Rendszerfelügyelet**\> **Beállítás** \> **Licenckonfiguráció** alatt. Ez a hívásközpont funkciók miatt szükséges, amelyek az értékesítésirendelés-sor szintjén konfigurált kézbesítési cím alapján különböző érvényesítéseket hajtanak végre. 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

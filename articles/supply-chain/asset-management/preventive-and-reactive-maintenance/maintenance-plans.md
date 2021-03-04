@@ -194,3 +194,6 @@ A következő illusztráción karbantartási tervek láthatók egy eszközön be
 
 ![7. ábra](media/08-preventive-maintenance.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

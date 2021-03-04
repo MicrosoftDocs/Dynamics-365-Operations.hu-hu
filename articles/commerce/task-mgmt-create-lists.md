@@ -93,3 +93,6 @@ A pénztári művelet konfigurálásához egy feladathoz való csatolás céljá
 [Feladatlisták hozzárendelése áruházakhoz vagy alkalmazottakhoz](task-mgmt-assign-lists.md)
 
 [Feladatkezelés a pénztárban](task-mgmt-POS.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

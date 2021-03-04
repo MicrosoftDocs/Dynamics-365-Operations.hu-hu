@@ -104,3 +104,6 @@ A látszólagos hiba magyarázatához meg kell értenie a helykészletkorlátok 
 
 > [!NOTE]
 > A helykészletezési korlátok nem használhatók például ugyanazon a helyen különböző mennyiségben lévő cikkek feltöltésének szabályozására. Ebben az esetben használjon *feltöltési sablont*.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

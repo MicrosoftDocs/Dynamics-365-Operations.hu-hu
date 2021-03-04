@@ -49,3 +49,6 @@ A további tudnivalókat lásd [Származtatott könyvek](derived-books.md) és [
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

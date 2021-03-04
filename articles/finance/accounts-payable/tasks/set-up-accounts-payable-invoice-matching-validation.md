@@ -98,3 +98,6 @@ A teljes számlaösszeg egyeztetésének szállítóspecifikus tűréshatárai a
 
 1. Ha egyes szállítóknál külön, az alapértelmezett tűréshatárt felülbíráló tűréshatárt szeretne megadni, válassza a **Szállítói számla** lehetőséget.
 2. Adja meg a szállítónál elfogadható eltérési százalékot.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

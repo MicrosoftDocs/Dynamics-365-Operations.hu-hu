@@ -57,3 +57,6 @@ Nehéz megfelelően képzett személyeket találni bizonyos pozíciók betölté
 24. Zárja be a lapot.
 25. Kattintson a Mentés gombra.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -173,3 +173,6 @@ Egy tárolómodulnak egy lapon történő konfigurálásához kövesse az alább
 
 [A közzétételi csoportokkal végzett munka](publish-groups.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

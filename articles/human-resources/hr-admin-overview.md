@@ -102,3 +102,5 @@ Ez a rendszergazdai útmutató segít a Dynamics 365 Human Resources rendszer be
 - [Új vagy módosult elemek a Human Resources alkalmazásban](hr-admin-whats-new.md)
 - [Fejlesztői útmutató](hr-developer-overview.md)
 - [Felhasználói útmutató](hr-hrpro-overview.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

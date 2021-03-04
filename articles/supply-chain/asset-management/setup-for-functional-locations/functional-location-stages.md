@@ -63,3 +63,6 @@ A munkavégzési helyszínekhez szükséges életciklus-állapotok létrehozása
 5. Ha egy modellhez az összes rendelkezésre álló állapotot ki szeretné választani, kattintson a ![minden elérhető állapot kiválasztása](media/03-setup-for-functional-locations.png) gombra. Az összes állapot átkerül az **Életciklus-állapotok kiválasztva** szakaszba.
 6. Ha el szeretne távolítani egy állapotot a kijelölt modellből, válassza ki az **Életciklus-állapotok kiválasztva** szakaszban, és kattintson a ![vissza nyíl](media/04-setup-for-functional-locations.png) gombra.
 7. Az **Életciklus-állapot frissítései** lehetőséggel megadhatja, hogy melyik életciklus-állapotok követhetnek egy kiválasztott állapotot.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

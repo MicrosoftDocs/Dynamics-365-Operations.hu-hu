@@ -53,3 +53,6 @@ Amikor a felhasználók árajánlatot kezdeményeznek a Sales alkalmazásban, a 
 ## <a name="additional-resources"></a>További erőforrások
 
 [Potenciális vevők készpénzre váltása kettős írásban](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-prospect-to-cash/)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

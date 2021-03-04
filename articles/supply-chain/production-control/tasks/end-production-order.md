@@ -46,3 +46,6 @@ Ez az eljárás bemutatja, hogyan lehet termelési rendelést befejezni. Ez az e
 1. A Művelet panelen kattintson a Költségkezelés elemre.
 2. Kattintson a Költség összehasonlítására.
     * A termelési rendelés befejezése után összehasonlíthatja a becsült önköltségi árat és a realizált önköltségi árat a termelési különbözetek áttekintése érdekében.  
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -45,3 +45,6 @@ A rakománynál figyelembe veendő tárolók számának kiszámítása a tárol�
 -   A tároló súlyának és térfogatának beállításához kattintson **Raktárkezelés** \> **Beállítás** \> **Tárolók** \> **Tárolótípusok** elemre.
 
 -   A tároló százalékos kihasználtsága beállításához kattintson a **Raktárkezelés** \> **Beállítás** \> **Tárolók** \> **Tárolócsoportok** elemre, majd írjon be egy értéket a **Tároló százalékos kihasználtsága** mezőbe.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

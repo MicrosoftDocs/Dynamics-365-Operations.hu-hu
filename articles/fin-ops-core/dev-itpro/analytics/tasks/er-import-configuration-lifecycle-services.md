@@ -103,3 +103,6 @@ Az alábbi példában kiválasztja az ER konfiguráció kívánt verzióját, ma
     Ebben a példában válassza ki a **Megosztott** állapotú konfiguráció verzióját.
 
     Ne feledje, hogy már a kijelölt adatmodell konfigurációjának 1-es verziója is elérhető.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

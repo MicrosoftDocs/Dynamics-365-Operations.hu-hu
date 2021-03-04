@@ -62,3 +62,6 @@ Ez az eljárás az USMF bemutatócéget használja. A kötelezettségeket kezel�
 9. A Művelet panelen kattintson az **Áttekintés** lehetőségre.
 10. Kattintson a **Részletek egyeztetése** elemre.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

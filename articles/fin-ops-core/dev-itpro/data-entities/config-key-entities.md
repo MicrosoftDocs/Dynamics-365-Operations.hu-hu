@@ -94,3 +94,6 @@ Az entitáslista frissítése során létrehozott konfigurációskulcs-metaadato
 Valahányszor frissíti a konfigurációs kulcsokat az entitás, tábla vagy mező szintjén, frissíteni kell az adatkezelő keretrendszerben szereplő entitások listáját. Ez a folyamat biztosítja, hogy a keretrendszer a legutóbbi konfigurációskulcs-beállításokat használja. Az entitáslista frissítéséig a következő üzenet látható az entitások listája oldalon. A frissített konfigurációskulcs-módosítások az entitáslista frissítése után azonnal életbe lépnek. Javasoljuk, hogy ellenőrizze a meglévő adatprojekteket és feladatokat, és győződjön meg arról, hogy a konfigurációs kulcsok módosításainak alkalmazása után a várt módon működnek.
 
 ![Célmezők](./media/Target_fields_3.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

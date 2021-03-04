@@ -88,3 +88,6 @@ A `NUMERALSTOTEXT (120.21, "RU", "EUR", true, 2)` az **"Сто двадцать 
 ## <a name="additional-resources"></a>További erőforrások
 
 [Szöveg függvények](er-functions-category-text.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -68,3 +68,6 @@ Az alábbi képernyőfotón a munkavégzési helyszínekkel kapcsolatos informá
 
 ![Példa a munkavégzési helyszíneket tartalmazó havi terhelésre](media/14-controlling-and-reporting.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -81,3 +81,6 @@ Egy szolgáltatási szerződéshez, amelyhez a szolgáltatásiszint-szerződés 
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

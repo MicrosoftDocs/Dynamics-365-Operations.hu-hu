@@ -92,3 +92,6 @@ Ha nyomon szeretné követni a az összes önhöz rendelt feladat feladatlista �
 [Feladatlisták létrehozása és feladatok hozzáadása](task-mgmt-create-lists.md)
 
 [Feladatkezelés a pénztárban](task-mgmt-POS.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

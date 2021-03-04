@@ -81,3 +81,6 @@ Amikor a felvételi csapat e-mailt küld, használhatja a rendszergazda által l
 
 > [!NOTE] 
 > Az automatikusan küldött e-mailekhez több sablon is létrehozható. Az aktív sablonként azonban csak egy sablon állítható be. Mivel ezt a folyamatot események váltják ki, csak a rendszergazda határozhatja meg, hogy melyik sablont kell használni, az **Alapértelmezett** és **Automatikusan küldött** jelvény kombinációja alapján a sablonkönyvtárban.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

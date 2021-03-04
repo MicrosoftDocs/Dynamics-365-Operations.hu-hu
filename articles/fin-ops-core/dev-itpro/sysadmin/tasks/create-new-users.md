@@ -55,3 +55,6 @@ A bérlő környezetének külső felhasználóit fel kell tüntetni a gazdabér
 4. Válassza a **Felhasználók importálása** lehetőséget.
 5. Válassza **Bezárás** lehetőséget.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

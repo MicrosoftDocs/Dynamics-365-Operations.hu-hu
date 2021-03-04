@@ -45,3 +45,6 @@ Amikor ugyanazon kötegből foglalja egy értékesítési rendelés termékeit, 
 - A köteg eltarthatósági napjaiból fennmaradó idő nem elégséges, a lejárati dátum és a szavatosság dátuma alapján, illetve a vevői eladhatósági napok alapján.
 
 Az engedélyezett **Raktárkezelési folyamatokkal** rendelkező tárolási csoportokhoz társított cikkek esetében a meghatározott kötegszámot foglalhat egy foglalási hierarchia használatával kötegszám raktárdimenzióval a hely dimenzió fölött. Az értékesítési és átmozgatási rendelés sorainak **Kötegelt foglalás** lapja is lehetővé teszi több sor kiválasztását és foglalását a rendelkezésre álló kötegszám alapján. Ha további tájékoztatást szeretne arról, hogy mi a teendő, ha olyan foglalási hierarchiát használ, amelyben a kötegszám dimenzió a hely alatt található, tekintse meg a [Rugalmas raktárszintű dimenzió foglalási irányelv](../warehousing/flexible-warehouse-level-dimension-reservation.md) dokumentumot.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

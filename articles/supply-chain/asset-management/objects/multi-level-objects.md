@@ -62,3 +62,6 @@ Ha egy eszköz kapcsolódó aleszközökkel rendelkezik, akkor azt csak akkor t�
 
 > [!NOTE]
 > Ha ezzel az eljárással nem lehet törölni egy eszközt, egy másik módszer a törlés kezelésére, hogy egy eszközéletciklus-állapotot állítson be erre a célra. Beállíthat például egy **Selejtezett** vagy **Törölt** életciklus-állapotot az **Eszköz életciklus-állapotai** oldalon.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

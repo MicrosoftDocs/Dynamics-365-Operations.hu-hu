@@ -61,3 +61,6 @@ Ha a fuvarlevél és a szállítói számla egyeztetését végzi, ez soronként
 5. Kattintson a Hivatkozási naplószám mezőben található hivatkozás megnyitásához.
 6. Kattintson a Sorok pontra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

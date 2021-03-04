@@ -41,3 +41,6 @@ Ez a témakör bemutatja, hogyan értékesíthető egy tárgyi eszköz szabadsz�
 10. A **Tárgyi eszköz** mezőben adjon meg vagy válasszon ki egy értéket.
 11. Válassza a **Feladás** parancsot. 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

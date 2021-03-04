@@ -49,3 +49,6 @@ Ez a témakör azt mutatja be, hogyan lehet elemezni és kezelni a biztonsági e
     - Ha a **Szerepkör** be van jelölve, akkor válassza a **Szerepkör hozzáadása a felhasználóhoz** lehetőséget. Ez megnyitja a **Felhasználók társítása a szerepkörökhöz** oldalt. További információt a [Felhasználók hozzárendelése biztonsági szerepkörökhöz](assign-users-security-roles.md) oldalon talál.
     - Ha a **Feladat** van kiválasztva, válassza a **Feladat hozzáadása a szerepkörhöz** lehetőséget , válassza ki azokat a szerepköröket, amelyekhez fel kell adni a feladatot, majd kattintson az **OK** gombra.
     - Ha a **Jogosultság** van kiválasztva, válassza a **Jogosultság hozzáadása feladatokhoz** lehetőséget , válassza ki azokat a szerepköröket, amelyekhez fel kell adni a feladatot, majd kattintson az **OK** gombra.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

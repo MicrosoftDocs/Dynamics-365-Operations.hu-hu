@@ -329,3 +329,6 @@ Az **Optimalizálási próbálkozások időtúllépése** határozza meg, hogy l
 
 > [!NOTE]
 > Az időtúllépésekhez beállított értékek a kiadott termelési rendeléseknek és a tervezett rendeléseknek az MRP részeként történő ütemezésére egyaránt vonatkozni fognak. Ennek eredményeként, nagyon magas értékek beállítása, sok tervezett termelési rendelést tartalmazó tervre történő futtatás esetén jelentősen növeli az MRP futásidejét.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

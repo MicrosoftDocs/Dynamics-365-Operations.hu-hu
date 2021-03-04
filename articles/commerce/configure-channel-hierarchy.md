@@ -84,3 +84,6 @@ A következő képen a csatornák frissítéseinek közzétételének módja lá
 [Csatorna navigációs hierarchiájának létrehozása](create-channel-hierarchy.md)
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

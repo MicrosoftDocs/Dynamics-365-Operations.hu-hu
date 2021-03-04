@@ -55,3 +55,6 @@ Továbbá ha a csökkentési időszaknál a **Kezdő dátum** értéke január 2
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

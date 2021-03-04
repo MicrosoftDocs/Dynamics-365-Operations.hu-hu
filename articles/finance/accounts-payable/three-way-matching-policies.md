@@ -145,3 +145,6 @@ További tudnivalókért lásd: [Kötelezettségek számlaegyeztete – áttekin
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

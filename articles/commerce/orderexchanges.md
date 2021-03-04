@@ -50,3 +50,6 @@ Annak érdekében, hogy a kosár különböző összegei kellően átláthatóak
 - **Alkalmazott letét** – A letét összege, amelyet a rendszer a tranzakcióra alkalmaz, amikor a felhasználó vevői rendelés felvételét végzi. Ha nincs letét-felülbírálat, és 10 százalékos letét van beállítva, akkor a mezőben található összeg a vevői rendelés teljes összegének 90 százalékát jeleníti meg.
 - **Végrehajtott összeg** – Az olyan sorok teljes összege, ahol a szállítási mód **Végrehajtás** állapotú volt, amikor a vevői rendelést létrehozták vagy szerkesztették, vagy a vevői rendelés cseréje során. A mezőben található összeg tartalmazza az adókat és díjakat.
 - **Visszáru összege** – Az olyan sorok teljes összege, amelyek negatív mennyiségekkel rendelkeznek a vevői rendelés cseréje során. A mezőben található összeg tartalmazza az adókat és díjakat.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -932,3 +932,6 @@ A következő lapokon megtekintheti és újranyomtathatja a hullámcímkéket:
 - Hullámcímke előzményei
 
 A legtöbb ilyen lap esetében a megfelelő függvényt megtalálhatja, ha ki választja a műveleti ablaktábla **Szállítmányok** lapján a **Kapcsolódó információk** csoport **Hullámcímkék** elemét.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

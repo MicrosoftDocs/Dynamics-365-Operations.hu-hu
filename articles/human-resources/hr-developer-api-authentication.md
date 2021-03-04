@@ -185,3 +185,6 @@ namespace TalentODataPoC
 ```
 
 Miután beolvasta a hozzáférési tokent, akkor a tokent az engedélyezési fejlécben kell átadnia tulajdonosi tokenként az adat-API számára elküldött minden kérés esetében a fent leírtak szerint.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

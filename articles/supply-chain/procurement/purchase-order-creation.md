@@ -96,3 +96,6 @@ Előfordulhat, hogy egy adott beszerzési megrendelés végrehajtását késlelt
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

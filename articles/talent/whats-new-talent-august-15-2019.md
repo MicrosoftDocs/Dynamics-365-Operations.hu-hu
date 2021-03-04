@@ -61,3 +61,6 @@ További információ a Finance and Operations 29-es platformfrissítéséről (
 Az alkalmazotti rekordok változásai csak ritkán lépnek érvénybe azonnal. Az adatokat az alkalmazott kezdési dátumától kezdve kell frissítenie, amely gyakran a jövőben van, és emellett frissítenie kell az adatokat a múltban is. Ezzel az optimalizált navigációs modellel a jövőbeli és a múltbeli adatok anélkül frissíthetők, hogy több képernyőt kellene megnyitni, illetve hogy módosítania kellene a dátum kontextusát. A módosítás emellett dinamikusan elősegíti és megjeleníti a legfontosabb információkat az alkalmazotti rekordok felső szalagcímterületén.
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -87,3 +87,6 @@ A Supply Chain Management biztosít egy rakomány-összeállítási stratégiát
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

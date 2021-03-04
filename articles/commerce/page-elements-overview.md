@@ -64,3 +64,6 @@ A következő táblázat bemutatja, hogy milyen kifejezéseket érdemes ismernie
 [Sablonok és elrendezések áttekintése](templates-layouts-overview.md)
 
 [Webhely-navigáció testreszabása](customize-site-navigation.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

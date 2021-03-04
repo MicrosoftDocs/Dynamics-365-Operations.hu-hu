@@ -52,3 +52,6 @@ A munkarendelés életciklus-állapotaival és projektfázisaival kapcsolatos to
 8. Válassza a **Mentés** lehetőséget.
 
 ![Munkarendelés típusai](media/16-setup-for-work-orders.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

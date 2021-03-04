@@ -177,3 +177,6 @@ A következő eljárás bemutatja, hogy hogyan lehet a fejléc-szintű költség
         > A **felosztásból kizárandó sorok kiválasztása** rács használata esetén ügyeljen arra, hogy a rács nyitva maradjon a **felosztás** kiválasztásáig. Ha bezárja a rácsot, mielőtt kiválasztja a **felosztást**, akkor a rácsban megadott beállítások elvesznek. Ezért a rendszer a korábban meghatározott feltételek alapján osztja fel a költséget.
 
 1. Az **Felosztás** gombra kattintva alkalmazza a beállításokat, és zárja be a párbeszédpanelt.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

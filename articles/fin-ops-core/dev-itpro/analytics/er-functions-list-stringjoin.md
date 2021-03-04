@@ -63,3 +63,6 @@ Ha megadja a `SPLIT("abc" , 1)` kifejezést **DS** adatforrásként, akkor a `ST
 ## <a name="additional-resources"></a>További erőforrások
 
 [Lista függvények](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -44,3 +44,6 @@ Ez az eljárás egy létező kanbanszabály másolatának létrehozásával fogl
 3. Kattintson az OK gombra.
     * Vegye figyelembe, hogy a 000017 kanbanszabályról létrejön egy másolat.    
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

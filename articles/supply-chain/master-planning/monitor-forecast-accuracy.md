@@ -50,3 +50,6 @@ A Supply Chain Management a következő típusú előrejelzési pontosságokat s
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

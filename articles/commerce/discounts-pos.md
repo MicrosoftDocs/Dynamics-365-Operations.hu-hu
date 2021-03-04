@@ -69,3 +69,6 @@ A következő ábra bemutatja azt a logikát, amely akkor használatos, ha az en
 A következő ábra bemutatja azt a logikát, amely akkor használatos, ha az engedmény vezérlőjének beállítása **Csak a legjobb ár prioritáson belül, mindig legyen kombinálás prioritások között**.
 
 ![A Csak a legjobb ár prioritáson belül, mindig legyen kombinálás prioritások között logikája](./media/Model_2.png "A Csak a legjobb ár prioritáson belül, mindig legyen kombinálás prioritások között logikája").
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

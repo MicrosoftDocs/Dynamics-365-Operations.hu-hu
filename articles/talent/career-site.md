@@ -142,3 +142,6 @@ Egy vagy több állásra való pályázás után a jelentkező kiválaszthatja a
 ## <a name="internal-jobs"></a>Belső állások
 
 Jelenleg a belsőnek megjelölt, és az Attract karrierwebhelyre feladott állások nem jelennek meg a karrierwebhelyen. Csak a közvetlen **Jelentkezés** URL-címen hozzáférhetők, amely átmásolható az Attract alkalmazásból.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

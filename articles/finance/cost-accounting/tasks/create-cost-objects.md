@@ -51,3 +51,6 @@ Ez az eljárás bemutatja, hogyan lehet költségobjektumokat létrehozni költs
 ## <a name="view-the-imported-cost-centers"></a>Az importált költséghelyek megtekintése
 1. Kattintson a Dimenziótagok megtekintése elemre.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

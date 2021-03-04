@@ -46,3 +46,6 @@ Ez az eljárás bemutatja a konfigurációs csoportok megjelenését meghatároz
 15. A listában kattintson a kijelölt sorban lévő hivatkozásra.
 16. Kattintson a Mentés gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -52,3 +52,6 @@ A megelőző karbantartási feladatok ütemezése után a következő lépés a 
 
 5. Kattintson az **OK** gombra. Egy vagy több munkarendelést hoz létre a program.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

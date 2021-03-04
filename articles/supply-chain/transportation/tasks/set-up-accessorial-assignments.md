@@ -50,3 +50,6 @@ Ez az eljárás bemutatja, hogyan állíthat be kiegészítő szolgáltatást. E
 14. A Kiegészítő szolgáltatás díja mezőben adjon meg egy számot.
 15. Kattintson a Mentés gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

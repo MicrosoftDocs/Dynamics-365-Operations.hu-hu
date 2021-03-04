@@ -70,3 +70,6 @@ A függőben lévő eszközök ellenőrzéséhez futtathat egy **Függőben lév
 3. Beállíthatja, hogy a feladat kötegelt feladatként fusson, például naponta egyszer.
 
 **Figyelmeztetés:** Ha az adatok módosulnak egy beszerzési rendelésen *miután* létrehozott egy eszközt kapcsolódó cikk alapján, ezek a módosítások nem jelennek meg az eszköznél.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

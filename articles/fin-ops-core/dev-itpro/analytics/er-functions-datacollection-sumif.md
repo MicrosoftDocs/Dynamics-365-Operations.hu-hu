@@ -67,3 +67,6 @@ A funkció használatával kapcsolatos további példákat és tudnivalókat lá
 ## <a name="additional-resources"></a>További erőforrások
 
 [Adatgyűjtési függvények](er-functions-category-data-collection.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -45,3 +45,6 @@ Ez a jelentés pillanatképet mutat a következő összegzésekről az üzlettel
 - Adóösszesítés
 - Ár-felülbírálási összesítés
 - Engedmények összesítése
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

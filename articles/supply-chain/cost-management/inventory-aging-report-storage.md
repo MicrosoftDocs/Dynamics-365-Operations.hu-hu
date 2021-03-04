@@ -57,3 +57,6 @@ A funkció használata előtt engedélyeznie kell azt saját rendszerében. A re
     > A képernyő nem tartalmaz a jelentés elrendezésében megadott részösszegeket.
 
 A **készlet korosítási jelentés** adatentitása lehetővé teszi egy **készletkorosítási jelentéstárolási** jelentés kimenetének exportálását, ha szűrőt alkalmaz a **Folyamatazonosító – Név** mezőre az adatkezelési támogatások bármely formájává.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

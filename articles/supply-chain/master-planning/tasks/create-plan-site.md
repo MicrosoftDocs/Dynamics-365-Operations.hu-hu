@@ -55,3 +55,6 @@ A termeléstervező kiszámítja az anyag és a kapacitásszükségletét egy ad
 2. Kattintson a Megerősítés gombra.
 3. Kattintson az OK gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

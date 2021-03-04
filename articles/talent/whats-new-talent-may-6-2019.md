@@ -93,3 +93,6 @@ Az alkalmazotti szabadidő követésének képessége és a szabadidő kiszámí
 ### <a name="indicate-instance-type-when-provisioning-talent"></a>Példány típusának jelzése a Talent kiépítése alkalmával
 
 Ha egy új Talent példányt telepít akkor jelezheti, hogy a példány típusa **Termelési** vagy **Védőfal** típusú, és lehetővé teszi az új szolgáltatások korai tesztelését. Minden létező Talent példányt a termelési példány típusára lesz frissítve. Ha azt szeretné, hogy a meglévő példányok frissítve legyenek a védőfal példányra, forduljon a támogatáshoz a módosítási kérelem kezdeményezéséhez.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

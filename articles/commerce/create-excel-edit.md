@@ -78,3 +78,6 @@ Ha Excel-munkafüzetet kíván létrehozni és konfigurálni, hogy szerkeszthess
 [Kiskereskedelmi tranzakciók pénzügyi dimenzióinak szerkesztése](edit-financial-dim.md)
 
 [Mezők hozzáadása Excel-munkafüzethez a kiskereskedelmi tranzakciók szerkesztéséhez](add-fields-excel.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

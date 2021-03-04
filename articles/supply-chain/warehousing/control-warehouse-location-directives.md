@@ -77,3 +77,6 @@ A helyutasítások határozzák meg, hogy a cikkek kitárolása *hol* történje
 
 - Videó: [Raktárkezelési konfiguráció teljes részletességgel](https://community.dynamics.com/365/b/techtalks/posts/warehouse-management-configuration-deep-dive-october-14-2020)
 - Súgótémakör: [Helyutasítások létrehozása](create-location-directive.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

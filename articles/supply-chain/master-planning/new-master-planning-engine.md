@@ -116,3 +116,6 @@ Az alaptervezés futtatásakor a következő hibaüzenet jelenik meg a 10.0.16-o
 > Töltse ki a következő kérdőívet a kezdéshez, illetve a szükséges, kérelmezzen kivételt a Tervezési optimalizálásra való átállítás alól.
 
 **Válasz:** Nem, az alaptervezés nem zárolt. Az alaptervezés futtatása sikeresen befejeződött, és az eredményt a megszokott módon lehet használni. Ha azonban a jövőbeli alaptervezés során nem szeretné látni ezt a hibaüzenetet, akkor vagy azonnal át kell telepítenie a rendszerét a Tervezési optimalizálásra, vagy kivételt kell kérnie a hibaüzenetben szereplő hivatkozás használatával.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

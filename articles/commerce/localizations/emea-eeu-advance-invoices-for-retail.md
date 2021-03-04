@@ -88,3 +88,6 @@ Kövesse az alábbi lépéseket ahhoz, hogy a Windows-nyomtatón, amely a hardve
 
 4. Ugorjon a **Kiskereskedelem és kereskedelem \> Kiskereskedelem és kereskedelem informatika \> Elosztási ütemezés** pontra.
 5. Válassza ki az **1090** munkát és kattintson a **Futtatás most** lehetőségre.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

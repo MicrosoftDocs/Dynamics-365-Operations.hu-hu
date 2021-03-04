@@ -62,3 +62,6 @@ Ez az eljárás a folytonos program révén történő értékesítés és a kap
     * Adja meg az eljárás során korábban feljegyzett értékesítési rendelés számát. Ez minimálisra csökkenti az eljáráshoz szükséges feldolgozási időt. A Értékesítési rendelés mező kitöltése nem kötelező - bármely programhoz feldolgozható az összes megrendelés.  
 21. Kattintson az OK gombra.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

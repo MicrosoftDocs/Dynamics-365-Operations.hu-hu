@@ -95,3 +95,6 @@ Ha a kísérlethez **teljes** hatókört állított be a **Kísérlet csatlakozt
 
 ## <a name="next-step"></a>Következő lépés
 [Kísérlet előnézetének megtekintése és közzététele](experimentation-preview-publish.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

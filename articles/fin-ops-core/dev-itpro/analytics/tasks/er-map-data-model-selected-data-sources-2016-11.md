@@ -146,3 +146,6 @@ A következő lépések leírják, hogy egy Rendszergazda vagy Elektronikus jele
 5. Válassza ki az aktuális konfiguráció teljesített verzióját.
     * Fontos, hogy a létrehozott konfiguráció teljesített 1-es verzióként lesz mentve.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

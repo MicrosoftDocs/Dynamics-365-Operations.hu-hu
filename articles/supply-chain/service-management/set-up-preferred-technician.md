@@ -68,3 +68,6 @@ Szolgáltatási szerződéshez vagy szervizrendeléshez bármelyik dolgozót kiv
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

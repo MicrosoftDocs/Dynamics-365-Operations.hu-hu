@@ -103,3 +103,6 @@ Ha felhasználók törölni akarják a várakoztatást, de további módosítás
 ## <a name="reporting-options"></a>Jelentési funkciók
 
 Ahhoz, hogy jelentést készítsen a várakoztatott rendelésekről a dátumtartomány, várakoztatási kód vagy egyéb kapcsolódó feltételek alapján, lépjen ide: **Retail és Commerce**\>**Lekérdezések és jelentések**\>**Hívásközponti jelentések**\>**Rendelésvárakoztatási jelentések**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

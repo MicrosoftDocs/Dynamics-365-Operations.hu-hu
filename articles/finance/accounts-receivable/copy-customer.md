@@ -64,3 +64,6 @@ Vevőket is másolhat az Adómentességi szám keresés funkció használatával
 
 1. Megjelenik a **Vevő másolása** lehetőség. Alapértelmezés szerint ez a beállítás **Nem** értékre van beállítva. A vevő másolásához az aktuális jogi személybe, adja meg a beállítás esetében az **Igen** értéket. 
 2. Válassza ki a **Kiválasztás** lehetőséget. Létrejön az új vevő.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -91,3 +91,6 @@ Ez az eljárás a Rendszergazda vagy az Elektronikus jelentések fejlesztője sz
     * Az előre nyomtatott csekk űrlapon megjelenő néhány címke szerepelni fog a jelentésben, amikor létrehozzák tesztelési célra. Azonban ezeket a címkéket a rendszer nem nyomtatja ki a tényleges nyomtatás közben, mert az előre nyomtatott űrlap már tartalmazza őket.  
 15. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

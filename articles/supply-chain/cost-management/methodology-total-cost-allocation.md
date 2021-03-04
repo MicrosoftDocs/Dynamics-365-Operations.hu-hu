@@ -62,3 +62,6 @@ A **Melléktermék költségfelosztása** mező a **Társtermékek** oldalon egy
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

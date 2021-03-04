@@ -218,3 +218,6 @@ Ha meg akarja tekinteni, hogy mely költségvetési tervekben szerepel egy előr
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

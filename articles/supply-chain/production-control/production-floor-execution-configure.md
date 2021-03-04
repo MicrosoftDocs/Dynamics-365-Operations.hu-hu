@@ -94,3 +94,6 @@ A kötegelt feladat időszakonként törli a hivatkozásokat tartalmazó tábla 
 1. A műveleti ablaktáblán válassza az **Ügyfélkonfigurációk megtisztítása** elemet.
 1. Az **Ügyfélkonfigurációk megtisztítása** párbeszédpanelen állítsa be a **Napok száma** mezőt az (aktuális nap előtti) szükséges inaktivitási napok megadásához. A program minden olyan eszköz konfigurációját és bejelentkezési rekordját eltávolítja, amely nem volt aktív a megadott időszakban.
 1. A **Napok száma** beállítás alapján megfelelő konfigurációk megtisztításához kattintson az **OK** gombra.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

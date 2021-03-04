@@ -53,3 +53,6 @@ Ez a módosítás hozzáad egy törlési beállítást **Munkanélküli dolgozó
 5. A **Törlési** engedélyt módosítsa Engedélyezre.
 6. Válassza ki a **Nem közzétett objektumok** lapot.
 7. Válassza az **Összes közzététele** lehetőséget.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

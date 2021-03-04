@@ -63,3 +63,6 @@ Ez az eljárás bemutatja, hogyan lehet meghatározni egy mértékegységet, meg
 6. Kattintson az **OK** gombra.
 7. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

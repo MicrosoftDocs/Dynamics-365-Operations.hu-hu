@@ -60,3 +60,6 @@ Ezen példa formátuma az ISO20022 Jóváírás átvitele, de bármilyen formát
 21. Írjon be egy értéket a Tárgy mezőbe.
 22. Kattintson az OK gombra.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

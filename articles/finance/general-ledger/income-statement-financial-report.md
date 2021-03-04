@@ -71,3 +71,6 @@ Az oszlopdefiníciók tartalmaznak különböző típusú oszlopokot, a különb
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

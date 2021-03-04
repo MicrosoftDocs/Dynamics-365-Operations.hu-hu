@@ -55,3 +55,6 @@ A `TRIM ("`&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`Sample`&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`
 ## <a name="additional-resources"></a>További erőforrások
 
 [Szöveg függvények](er-functions-category-text.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

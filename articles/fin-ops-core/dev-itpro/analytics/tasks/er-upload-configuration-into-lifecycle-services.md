@@ -145,3 +145,6 @@ Ebben a példában a mintavállalatra, a Litware-ra, Inc.-re vonatkozóan létre
     A feltöltött ER-konfigurációnak listázva kell lennie.
 
     Vegye figyelembe, hogy a feltöltött LCS konfigurációt egy másik példányába importálhatja, ha a szolgáltatók rendelkeznek hozzáféréssel ehhez az LCS projekthez.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

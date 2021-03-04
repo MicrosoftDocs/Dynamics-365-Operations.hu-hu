@@ -102,3 +102,6 @@ Egy adott dátum csak egy típushoz társítható.
 | 000337                | 2018/8/8             | Szabályos               | 8                    |
 | 000337                | 2018/7/8             | Szabályos               | 8                    |
 | 000337                | 2018/9/8             | Szabályos               | 8                    |
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

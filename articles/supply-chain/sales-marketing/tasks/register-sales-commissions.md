@@ -71,3 +71,6 @@ Jegyezze fel a jutalékfolyamathoz kiválasztott vevő és cikkszámokat, majd h
 3. Zárja be a lapot.
 4. Válassza ki a **Bizonylat** lehetőséget. Ellenőrizheti a bizonylat tranzakciókat az előre megadott jutalék költséghez és jutalék fizethető számlához feladott jutalék összegekhez.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

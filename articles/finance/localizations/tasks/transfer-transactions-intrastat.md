@@ -153,3 +153,6 @@ Ez az eljárás bemutatja, hogy hogyan lehet beállítani az Intrastat paraméte
     
 Tekintse át az átvitt adatokat, többek között a cél/feladás országát/régióját, a származási országot, a súlyt, a mennyiséget, a kiegészítő egységek mennyiségét, az árucikket, a tranzakciókódot, a számlaösszeget és a statisztikai összegeket. Szükség esetén módosíthatja az adatot.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -42,3 +42,6 @@ Ez a témakör bemutatja, hogyan állíthatók be a pénzügyi dimenzió alapér
 11. Adja meg a megadott százaléknak megfelelő pénzügyidimenzió-értékeket.
 12. Válassza a **Mentés** lehetőséget.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

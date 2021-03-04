@@ -157,3 +157,6 @@ A következő táblázat az általános szabályt mutatja be.
 | Visszaigényelhető áfa | Negatív              | Kinnlevőségek számla | Negatív (követel)  |
 | Fizetendő áfa    | Pozitív              | Adó kötelezettségek számla    | Negatív (követel)  |
 | Fizetendő áfa    | Negatív              | Adó kötelezettségek számla    | Pozitív (tartozik)  |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

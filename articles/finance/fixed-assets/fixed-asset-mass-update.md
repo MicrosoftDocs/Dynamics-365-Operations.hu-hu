@@ -42,3 +42,6 @@ Az eszközök értékcsökkenési szabályainak frissítése után elszámolhatj
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

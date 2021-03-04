@@ -63,3 +63,6 @@ Az `"abc" & "def"` kifejezés szintén az **"abcdef"** értéket adja vissza.
 ## <a name="additional-resources"></a>További erőforrások
 
 [Szöveg függvények](er-functions-category-text.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

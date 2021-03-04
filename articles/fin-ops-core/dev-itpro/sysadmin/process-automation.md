@@ -47,3 +47,6 @@ Minden előfordulás módosítható anélkül, hogy hatással lenne az azt létr
 ## <a name="developer-documentation"></a>Fejlesztői dokumentáció
 
 A folyamat-automatizálási keretrendszer lehetővé teszi a fejlesztők számára a folyamatok automatizálási keretrendszerének kiterjesztését. A [Folyamatautomatizálási keretrendszer](../process-automation/process-automation-framework.md) dokumentáció tájékoztatást ad arról, hogy hogyan lehet egyéni folyamatokat létrehozni, amelyeket a kötegelt kiszolgálón kell futtatni a folyamatautomatizálási varázslóval ütemezve, és a naptár nézetben automatikusan megjelennek.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

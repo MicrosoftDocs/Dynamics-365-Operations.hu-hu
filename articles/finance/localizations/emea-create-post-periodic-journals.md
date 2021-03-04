@@ -48,3 +48,6 @@ Például negyedéves feladások létrehozásához írja a **4**-es számot az *
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

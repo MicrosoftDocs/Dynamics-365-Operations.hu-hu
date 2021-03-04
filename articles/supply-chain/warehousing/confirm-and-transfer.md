@@ -230,3 +230,6 @@ Azt is megerősítheti, hogy a tranzakciók kapcsolatai a következő módon let
 - A **Mennyiség megosztása új rakományhoz** beállítás akkor is működik, ha a fennmaradó munkafejlécek egy része *Folyamatban* állapotú. Ennek megfelelően még akkor is használhatja a funkciót, ha a dolgozók már futtatják a kitárolási rendeléseket.
 - Ha be van jelölve a **Nem teljesített mennyiség érvénytelenítése**, miközben a fennmaradó munka állapota *Nyitott* vagy *Folyamatban*, a következő hibaüzenet jelenik meg: „Nem lehet érvényteleníteni a rakomány fennmaradó mennyiségét. A rakománnyal munkavégzés zajlik.”
 - Ha bejelöli a **Nem teljesített mennyiség érvénytelenítése** lehetőséget, ha nincs fennmaradó munka, de a rakomány nem kiadott sorokat tartalmaz, akkor a következő hibaüzenet jelenik meg: „A rakomány szállítása nem erősíthető meg, mert a cikkmennyiség meghaladja a szállítás alatti rakomány megadott arányát.” A hiba elkerüléséhez beállíthatja a **Szállítás alatt** százalékos arányát a kiadatlan rakományok sorában 100 százalékra. A kiadatlan sorok nem kerülnek át az új rakományba, de az aktuális rakományt a rendszer szállítás alattiként megerősíti. Ebben az esetben nem fogja tudni újra kiadni az eredeti rendelést. Ezért ezt Önnek másképp kell majd kezelnie.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

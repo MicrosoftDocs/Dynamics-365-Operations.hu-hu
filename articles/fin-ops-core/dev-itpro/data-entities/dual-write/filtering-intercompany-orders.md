@@ -65,3 +65,6 @@ A szabványos Common Data Service entitások mindegyike ki van bővítve az **In
 7. Miután kibővítette az **Ajánlatok** entitást, alkalmazzon szűrőt `CUSTGROUP !=  "<company>"` lekérdezési karakterlánccal.
 
     :::image type="content" source="media/filter-cust-group-edit.png" alt-text="Értékesítési ajánlat fejléce, lekérdezés szerkesztése":::
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

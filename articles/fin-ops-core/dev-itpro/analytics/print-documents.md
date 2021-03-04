@@ -74,3 +74,6 @@ A következő ábra bemutatja az alapvető összetevőket, amelyek segítik a h�
 [![service-components-for-network-printing\_2016](./media/service-components-for-network-printing_2016.png)](./media/service-components-for-network-printing_2016.png)
 
 Vegye figyelembe, hogy egyetlen nyomtatót több dokumentumot útválasztás ügynökhöz is lehet regisztrálni. A nyomtatóbeállítások feloldásához az üzemeltetett szolgáltatás a hálózati elérési utat használja, amely egyedileg azonosítja az összes hálózati nyomtatót. Emiatt akkor is, ha a nyomtató több ügyféllel van regisztrálva, egyetlen kiválasztható elemként jelenik meg az alkalmazásokban rendelkezésre álló nyomtatók listáján.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

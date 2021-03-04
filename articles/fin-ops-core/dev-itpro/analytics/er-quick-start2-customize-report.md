@@ -514,3 +514,6 @@ A 3.3-as verziójú **BACS (UK)** formátum új funkcióinak a testreszabásába
 - [Elektronikus jelentések áttekintése](general-electronic-reporting.md)
 - [ER-konfigurációk letöltése a Lifecycle Services szolgáltatásból](download-electronic-reporting-configuration-lcs.md)
 - [ER-konfigurációk letöltése a konfigurációs szolgáltatás globális tárából](er-download-configurations-global-repo.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

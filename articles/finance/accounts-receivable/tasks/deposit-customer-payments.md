@@ -48,3 +48,6 @@ Vevői kifizetések letétele. Ez a feladat az USMF bemutatócéget használja.
 17. Válassza ki az **OK** lehetőséget. Az első oldalon a letéti jegyet hozhatja létre.  
 18. Válassza ki az **OK** lehetőséget. A második lépésben kinyomtatja a letéti jegyet, de ez a lépés ne kötelező.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -136,3 +136,5 @@ Ez az eljárás bemutatja, hogy hogyan engedélyezheti a minőségkezelési foly
 
 > [!NOTE]
 > A *Raktári folyamatok minőségkezelése* funkció további lehetőségeket biztosít minőségi társítások beállításához. Hozzáad egy új feltételt (**Vonatkozó raktártípus**) és egy új beállítást (**Minőségfeldolgozási házirend**). Ha engedélyezte ezt a funkciót, a részleteket [Raktári folyamatok minőségkezelése](../quality-management-for-warehouses-processes.md) szakaszban találja.
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

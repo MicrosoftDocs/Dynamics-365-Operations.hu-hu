@@ -107,3 +107,6 @@ Az URL-címnek egy eltérő URL-címre való átirányításához kövesse az al
 [A tartománynév konfigurálása](configure-your-domain-name.md)
 
 [Nyelvek hozzáadása a webhelyhez](add-languages-to-site.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

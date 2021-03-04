@@ -114,3 +114,6 @@ A következő táblázat bemutatja, hogy milyen eredmények jelenhetnek meg az i
 [Szűrők alkalmazása egy tervre](plan-filters.md)
 
 [Tervezési feladat érvénytelenítése](cancel-planning-job.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

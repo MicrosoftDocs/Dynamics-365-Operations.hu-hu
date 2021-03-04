@@ -99,3 +99,6 @@ Ez a témakör adatok és forrásokat tartalmaz, amelyek segítenek a jogi szem�
 
 - [Az Elektronikus jelentéskészítés áttekintése](../../dev-itpro/analytics/general-electronic-reporting.md)
 - [Az elektronikus jelentési beállítások letöltése a Lifecycle Services rendszerből](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

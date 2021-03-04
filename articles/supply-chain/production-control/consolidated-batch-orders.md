@@ -46,3 +46,6 @@ Az összesített kötegrendelés a következő rendelések bármely kombináció
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

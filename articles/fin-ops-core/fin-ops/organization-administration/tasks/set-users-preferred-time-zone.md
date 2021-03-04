@@ -35,3 +35,6 @@ A következő témakör bemutatja, hogyan állíthatja be egy rendszergazda szer
 5. Az **Időzóna** mezőben válasszon ki egy opciót a legördülő listából.
 6. Válassza a **Mentés** lehetőséget.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

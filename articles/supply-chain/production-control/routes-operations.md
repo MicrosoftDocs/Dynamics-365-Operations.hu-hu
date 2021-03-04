@@ -260,3 +260,6 @@ Ezért, ha az Aktiválás van kiválasztva az Átfedéshez a többi beállítás
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -144,3 +144,6 @@ A következő mezők hozzáadódnak a mobileszköz menüelemeihez, amikor az **I
 - Alapértelmezett leltározási okkód
 - Leltározási okkód megjelenítése
 - Leltározási okkód szerkesztése
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

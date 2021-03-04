@@ -89,3 +89,6 @@ A *párhuzamos tevékenység* egy olyan munkafolyamat-elem, amely két vagy töb
 ### <a name="subworkflow"></a>Almunkafolyamat
 
 Az *almunkafolyamat* egy olyan munkafolyamat, amely egy másik munkafolyamat kontextusán belül megy végbe.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

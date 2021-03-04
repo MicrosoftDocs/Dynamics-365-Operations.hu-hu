@@ -127,3 +127,6 @@ A fizetésmodul új oldalra való felvételéhez és a kötelező tulajdonságok
 [Rendelési részletek modul](order-confirmation-module.md)
 
 [Ajándékutalvány modul](add-giftcard.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

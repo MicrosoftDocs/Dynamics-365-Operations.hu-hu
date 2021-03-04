@@ -40,3 +40,6 @@ Ez a témakör az egyedi számsorozatok beállítását ismerteti. A számsoroza
 8. Bontsa ki az **Általános** szakaszt. Az Átalános Gyorslapon adja meg, hogy a számsorozat manuális, illetve folytonos vagy nem folytonos legyen. Ezen túlmenően adja meg a számsorozatban használható legkisebb és legnagyobb számot. Nem folytonos számsorozat folytonos számsorozatra cserélése nem ajánlott. A számsorozat nem lesz valóban folyamatos. Ez a változtatás ismétlődő kulcsok miatti hibát is okozhat az adatbázisban. Ezenkívül a folyamatos számsorozatok nagyobb hatással vannak a teljesítményre.   
 9. Kattintson a **Mentés** gombra.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -57,3 +57,6 @@ A vevő előfizetéseiből minden hónap végén egy havi bevétel lekönyvelhet
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

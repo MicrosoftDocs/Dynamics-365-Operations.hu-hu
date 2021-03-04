@@ -50,3 +50,6 @@ A **Tulajdonos** követési dimenziója hiányzik, amikor a raktári alkalmazás
 ### <a name="issue-resolution"></a>Probléma megoldása
 
 A Microsoft kiértékelte ezt a hibát, és megállapította, hogy ez egy funkciókorlátozás. A raktárkezelési folyamatok jelenleg csak a jogi személy tulajdonában álló készletet támogatják.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

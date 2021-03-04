@@ -66,3 +66,6 @@ Ez az eljárás egy anyagszállításra használt visszavonási kanbanfeladattal
 2. Kattintson a Befejezés gombra.
     * Ez mindkét feladat átvitelét befejezi.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

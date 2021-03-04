@@ -53,3 +53,6 @@ Dolgozó hozzárendelésével kapcsolatban egy csoporthoz lásd: [Preferált tec
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -107,3 +107,6 @@ Az ajánlatot szállítóként vagy beszerzési szakemberként is beviheti. Tov�
 ## <a name="view-the-purchase-order-that-is-generated"></a>A létrejött beszerzési rendelés megtekintése
 
 A Műveleti ablaktábla **Általános** lapján válassza a **Beszerzési rendelés** menüpontot. Itt megjelenő oldalon látható az ajánlat elfogadásakor létrehozott beszerzési rendelés.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

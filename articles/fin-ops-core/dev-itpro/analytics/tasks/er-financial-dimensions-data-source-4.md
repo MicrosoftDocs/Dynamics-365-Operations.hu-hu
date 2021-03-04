@@ -49,3 +49,6 @@ A lépések végrehajtásához először hajtsa végre az „ER Pénzügyi dimen
 ![ER-konfigurációk oldal](../media/er-financial-dimensions-guides-run3.png)
     * Tekintse át a létrehozott kimenetet. A kiválasztott köteg minden tranzakciójához a megfelelő dimenziók pénzügyi dimenziói jelennek meg. Futtassa a jelentést, és válasszon ki különböző dimenziókat annak a megtekintéséhez, hogy a jelentés nem függ a kiválasztott dimenziók, vagy a példányhoz konfigurált dimenziók számától.  
 ![ER-konfigurációk oldal](../media/er-financial-dimensions-guides-run4.png)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

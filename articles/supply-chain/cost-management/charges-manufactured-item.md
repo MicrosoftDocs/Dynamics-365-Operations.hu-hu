@@ -40,3 +40,6 @@ A legyártott cikkeknél a költségek az elszámolóárak szempontjából mindi
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

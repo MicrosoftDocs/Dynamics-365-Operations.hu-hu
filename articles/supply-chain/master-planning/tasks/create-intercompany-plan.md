@@ -54,3 +54,6 @@ Ez az eljárás bemutatja, hogyan lehet létrehozni egy vállalatközi tervet. E
 2. A listában kattintson a kijelölt sorban lévő hivatkozásra. Kattintson a StaticPlan hivatkozására. A USMF vállalatban kell lennie.  
 3. Kattintson a **Tervezett rendelések** elemre.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -64,3 +64,6 @@ Karbantartási munkacsoportokat is létrehozhat, és társíthat hozzájuk karba
 6. Ha egy erőforráscsoportot a kiválasztott karbantartási dolgozói csoporthoz kell kapcsolni, válassza ki a **Másolás erőforráscsoportból** lehetőséget. A **Csoport** mezőben válassza ki azt az erőforráscsoportot, amelyből a naptár beállításait másolni szeretné. Ezután a **Dolgozói csoport** mezőben válassza ki azt a dolgozói csoportot, amelybe az erőforráscsoport naptárbeállításait másolni szeretné. Ez a lépés csak akkor szükséges, ha azt szeretné, hogy a karbantartási dolgozók a munkarendelés ütemezése során a erőforráshoz (műhelyhez) kapcsolódó naptárt használják.
 
     A **Részletek** gyorslapon lévő mező azoknak a karbantartási dolgozóknak a számát jeleníti meg, akik be lettek állítva a kiválasztott karbantartási dolgozói csoportban.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

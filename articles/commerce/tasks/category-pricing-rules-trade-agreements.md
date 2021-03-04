@@ -59,3 +59,6 @@ Ez az eljárás bemutatja, hogyan hozhat létre eladási árra vonatkozó keresk
 24. Kattintson a Kategória árszabályai fülre.
     * Ebben a listában megjelennek a csatornaspecifikus Kategória-árazási szabályok.  
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

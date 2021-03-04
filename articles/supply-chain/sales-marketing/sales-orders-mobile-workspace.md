@@ -142,3 +142,6 @@ A Finance and Operations mobilalkalmazás letöltése és telepítése:
 4.  Válassza ki az ügyfelet.
 5.  Válassza ki a **Kapcsolattartó adatai** vagy az **Értékesítési rendelések** lehetőséget. Az **Értékesítési rendelések** kiválasztása esetén megjelenik egy lista a vevő számára az értékesítési rendelésekről.
 6.  Válassza ki az **Értékesítési rendelés** lehetőséget. Megtekintheti az értékesítési rendelések sorairól, a szállítmányokról, a vevői kapcsolattartási adatokról és a megrendelő elérhetőségéről szóló információkat.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

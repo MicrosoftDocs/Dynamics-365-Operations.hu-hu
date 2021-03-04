@@ -73,3 +73,6 @@ A **Számított mező** típushoz adja meg a *DS* adatforrást, és az a `SPLIT 
 ## <a name="additional-resources"></a>További erőforrások
 
 [Lista függvények](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

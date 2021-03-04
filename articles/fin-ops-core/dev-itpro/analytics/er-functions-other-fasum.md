@@ -67,3 +67,6 @@ A `FA_SUM ("COMP-000001", "Current", Date1, Date2)` a **COMP-000001** tárgyi es
 ## <a name="additional-resources"></a>További erőforrások
 
 [Egyéb (üzleti területre jellemző) függvények](er-functions-category-other.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

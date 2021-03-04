@@ -37,3 +37,6 @@ Használhatja az új **Nyers XML** formátum elemet elektronikus jelentési (ER)
 > Ne feledje, hogy a keretrendszer nem ellenőrzi, hogy **Nyers XML** formátum segítségével a generált dokumentumba kerülő XML-tartalom helyes-e.
 
 A funkcióval kapcsolatos további tudnivalókért játssza le az **ER Nyers XML-adatok használata XML-jelentések létrehozásához (1. rész: Adatmodell tervezése)** és **ER Nyers XML-adatok használata XML-jelentések létrehozásához (2. rész: Jelentés tervezése és futtatása)** feladatútmutatókat, amelyek részei a **7.5.4.3 Informatikai szolgáltatások/megoldások összetevőinek beszerzése/kifejlesztése (10677)** üzleti folyamatnak, és letölthetők innen: [Microsoft letöltőközpont](https://go.microsoft.com/fwlink/?linkid=874684). A feladatútmutató tájékoztatást ad az eljárásról, amellyel az ER formátum konfigurálható nyers XML-adatok beszúrására az előállított fájlokba.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

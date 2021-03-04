@@ -301,3 +301,6 @@ A **Költségfelosztás** és a **Költségösszegzési irányelvek** egyértelm
 -  [Költségösszetevő-dimenziók](cost-elements.md)
 -  [Dimenzióhierarchia](dimension-hierarchy.md)
 -  [Járulékos költség számítása](overhead-calculation.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

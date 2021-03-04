@@ -119,3 +119,6 @@ Ebben a példában a Litware, Inc. mintavállalatra vonatkozóan létrehozott ER
 23. Kattintson az OK gombra.
     * Tekintse át a létrehozott kimenetet. A kimenet Word dokumentumként jött létre beágyazott képekkel, amelyek a vállalati emblémát, a jogosult személy aláírását és vízjel kiválasztott szövegét tartalmazzák.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

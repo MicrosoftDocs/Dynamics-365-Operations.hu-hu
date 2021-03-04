@@ -1033,3 +1033,6 @@ Van egy továbbfejlesztett „kevés támogatást igénylő” ügyfélösszetev
 [Új vagy módosult elemek Finance and Operations kezdőlapján](whats-new-changed.md)
 
 [Új feladatútmutatók (2016. február)](new-task-guides-available-february-2016.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

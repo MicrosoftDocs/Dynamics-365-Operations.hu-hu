@@ -190,3 +190,6 @@ A program az alábbi adatokat importálja és viszi fel az új alkalmazotti reko
 
 [Common Data Service-virtuális entitások konfigurálása](./hr-admin-integration-common-data-service-virtual-entities.md)<br>
 [Mi az a Common Data Service?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

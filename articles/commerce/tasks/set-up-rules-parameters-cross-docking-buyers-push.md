@@ -48,3 +48,6 @@ Ez az eljárás bemutatja a Feltöltési szabályok létrehozásának lépéseit
 14. Adjon meg egy számot a Súly mezőben.
 15. Kattintson a Mentés gombra.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -54,3 +54,6 @@ Ha be szeretné állítani, hogy a kimenő szállítmányok jóváhagyását a s
 1. Válassza az **OK** gombot a **Szállítmány jóváhagyása** párbeszédpanelen a kötegelt feladat köteg várólistájához adásához.
 
 További tudnivalókhoz lásd a [Kötegelt feldolgozás áttekintése](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) elemet.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

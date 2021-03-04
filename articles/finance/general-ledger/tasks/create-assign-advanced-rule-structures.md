@@ -59,3 +59,6 @@ Ez a témakör leírja, hogyan hozhat létre és rendelhet hozzá egy speciális
 17. Zárja be a lapot.
 18. Válassza az **Aktiválás** lehetõséget.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

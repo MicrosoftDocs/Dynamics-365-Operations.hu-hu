@@ -57,3 +57,6 @@ Miután létrehozta a globális címjegyzéket, további címjegyzéket hozhat l
 **Döntés:**
 
 - Hány további címjegyzékek kíván létrehozni?
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

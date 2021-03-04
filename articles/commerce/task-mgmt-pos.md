@@ -64,3 +64,6 @@ A következő ábrán a **Feladatlisták** lap látható.
 [Feladatlisták létrehozása és feladatok hozzáadása](task-mgmt-create-lists.md)
 
 [Feladatlisták hozzárendelése áruházakhoz vagy alkalmazottakhoz](task-mgmt-assign-lists.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

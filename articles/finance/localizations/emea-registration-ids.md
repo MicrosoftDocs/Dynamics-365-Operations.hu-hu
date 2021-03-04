@@ -112,3 +112,6 @@ A nyilvántartási azonosítók feldolgozásával kapcsolatos további informác
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

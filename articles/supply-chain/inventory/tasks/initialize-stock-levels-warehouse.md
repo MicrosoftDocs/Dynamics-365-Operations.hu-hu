@@ -60,3 +60,6 @@ Ez az eljárás bemutatja, hogyan frissítheti kézileg az aktuális készletet 
 25. Zárja be a lapot.
 26. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

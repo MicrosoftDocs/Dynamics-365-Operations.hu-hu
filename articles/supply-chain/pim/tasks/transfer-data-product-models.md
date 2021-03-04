@@ -37,3 +37,6 @@ A termékkonfigurációs modell adatexportálásához szükséges legalább egy 
 5. Kattintson a Termékmodell exportálása lehetőségre.
     * Letöltés viselkedése a biztonsági beállítások beállításától függően böngészőnként eltérő.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -53,3 +53,6 @@ Ez az eljárás azt szemlélteti, hogy hogyan lehet egy konfigurációs sablont 
 
 ## <a name="select-the-product-configuration"></a>Válassza ki a termékkonfigurációt.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

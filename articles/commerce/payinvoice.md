@@ -45,3 +45,6 @@ A forgatókönyvek engedélyezéséhez az alábbiakban leírtak szerint kell az 
 
 > [!NOTE]
 > A részleges összegek kifizetése vagy kiegyenlítése jelenleg még nem támogatott.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

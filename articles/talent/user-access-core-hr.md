@@ -46,3 +46,6 @@ További információt a témában a [Talent létesítése](https://docs.microso
 **Hosszú távú megoldás**
 
 A Microsoft javasolja a megfelelő jogok automatikus hozzárendelését az Onboard és az Attract alkalmazásokhoz, amikor egy felhasználót a Human Resources alkalmazáshoz adják.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

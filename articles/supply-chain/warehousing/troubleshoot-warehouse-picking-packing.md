@@ -110,3 +110,6 @@ A *Rendszer által irányított fürtkitárolás* folyamat használatakor, ha ol
 ### <a name="issue-resolution"></a>Probléma megoldása
 
 A probléma megoldásához szerkesztse a fürtprofilt, és állítsa a **Pozíciók aktiválása** lehetőséget *Nem* értékre.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

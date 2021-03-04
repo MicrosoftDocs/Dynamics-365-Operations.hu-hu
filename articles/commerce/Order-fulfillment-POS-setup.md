@@ -131,3 +131,6 @@ A rendelésteljesítés a pénztárban magában foglalja a szűrés lehetőség�
 - Létrehozás dátuma
 - Szállítási időpont
 - Kézhezvételi dátum
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

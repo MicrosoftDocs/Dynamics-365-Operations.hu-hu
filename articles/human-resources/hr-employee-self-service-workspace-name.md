@@ -45,3 +45,6 @@ Ha önkénteseket vagy más nem alkalmazottakat is alkalmaz, előfordulhat, hogy
 ## <a name="additional-resources"></a>További erőforrások
 
 - [Alkalmazotti és vezetői önkiszolgálás áttekintése](hr-employee-manager-self-service-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

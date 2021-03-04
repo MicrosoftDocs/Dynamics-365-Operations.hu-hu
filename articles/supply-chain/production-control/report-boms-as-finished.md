@@ -89,3 +89,6 @@ Ebben az esetben a két aktuálisan készleten lévő COMP cikkszám figyelembe 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

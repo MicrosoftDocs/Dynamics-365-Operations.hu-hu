@@ -64,3 +64,6 @@ Mielőtt ezt az eljárást elvégezné, áfaazonosítókat kell beállítania. E
 25. Az Adómentességi szám mezőben adjon meg, vagy válasszon ki egy értéket.
 26. Kattintson a Mentés gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

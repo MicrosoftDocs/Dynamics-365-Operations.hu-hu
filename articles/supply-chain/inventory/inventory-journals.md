@@ -117,3 +117,6 @@ Ez a két készletnapló csak a *Készlet inicializálása* helyzetet támogatja
 ## <a name="additional-resources"></a>További erőforrások
 
 [Adatentitások](../../dev-itpro/data-entities/data-entities.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

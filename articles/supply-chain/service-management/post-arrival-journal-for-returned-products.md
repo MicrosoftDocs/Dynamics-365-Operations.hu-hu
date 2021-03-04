@@ -58,3 +58,6 @@ A napló feladása után a program regisztrálja a visszárut a készletben, és
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

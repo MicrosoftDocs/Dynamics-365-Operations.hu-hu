@@ -53,3 +53,6 @@ Amikor az értékcsökkenési költség naplóbejegyzéseket devizában denomin�
 A végső értékcsökkenési költség összege kissé eltérő átváltási árfolyam használatával számítható ki, így a ROU-eszköz teljes mértékben amortizálódik mind a könyvelési pénznemben, mind a jelentési pénznemben.
 
 Ha a lízinget **Halasztott bérleti díjként** sorolták be, a rendszer automatikusan törli a könyvelési és jelentési pénznemek átváltási árfolyamait, ha azokat már meghatározták.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

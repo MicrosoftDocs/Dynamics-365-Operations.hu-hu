@@ -49,3 +49,6 @@ A visszatérítési tranzakciók létrehozásakor a szállítói számla a köve
 
 5. A létrehozott visszatérítési tranzakciók megtekintéséhez használja a **Visszatérítési** jelentést (**Kinnlevőségek \> Lekérdezések és jelentések \> Visszatérítési jelentés**).
 6. A kötelezettségekben hozzon létre kifizetést a szállítói számlákhoz, amelyek a bevételezési folyamat során jöttek létre. A szállítók kifizetéséről a [Szállítói kifizetések áttekintése](../accounts-payable/Vendor-payments-workspace.md) című témakörben olvashat.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

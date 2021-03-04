@@ -121,3 +121,6 @@ A következő példa bemutatja, hogyan lehet exportálni egy **Cikkárak tárhel
 1. Megjelenik a **Végrehajtási összesítés** lap, amelyen megtekintheti az exportálási feladat állapotát, valamint az exportált entitások listáját. Válassza a **Cikkárak összehasonlítása** entitást az **Entitás feldolgozási állapota** terület listájából, majd válassza a **Fájl letöltése** elemet az adott entitásból exportált adatok letöltéséhez.
 
 Ha további tájékoztatást szeretne arról, hogyan lehet az adatkezelést az adatok exportálására használni, akkor lásd: [Adatimportálási és-exportálási feladatok – áttekintés](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

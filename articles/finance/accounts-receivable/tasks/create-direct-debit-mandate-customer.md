@@ -90,3 +90,6 @@ Ez az útmutató bemutatja, hogyan hozhat létre beszedési megbízási felhatal
 3. Válassza ki a vevőt, akihez hozzáadta a felhatalmazást.
 4. A **Beszedési megbízási felhatalmazás azonosítója** mezőben adjon meg, vagy válasszon ki egy értéket.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

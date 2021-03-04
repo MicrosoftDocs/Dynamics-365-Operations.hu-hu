@@ -83,3 +83,6 @@ Ez az eljárás azt ismerteti, hogyan módosíthatja egy elektronikus jelentési
 ## <a name="use-the-modified-draft-version-of-the-er-format-for-payment-journal-processing"></a>Az ER-formátum módosított piszkozatverziójának használata a fizetési napló feldolgozásához
 
 Tekintse át a létrehozott munkalapot, beleértve a fizetési sorok új adatát, a fizetési dátumot.  
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

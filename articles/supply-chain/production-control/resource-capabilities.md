@@ -58,3 +58,6 @@ Ha **Emberi erőforrások** típusú üzemi erőforrással rendelkezik, amelyik 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

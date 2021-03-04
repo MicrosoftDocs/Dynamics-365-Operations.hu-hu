@@ -43,3 +43,6 @@ Ez az eljárás naplókat és naplósorokat hoz létre, illetve ellenőriz. Az U
 12. Kattintson a **Bejegyzés** lehetőségre.
 13. Kattintson a **Bizonylat** elemre.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

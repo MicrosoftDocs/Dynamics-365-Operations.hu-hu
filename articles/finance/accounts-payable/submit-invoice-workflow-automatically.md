@@ -54,3 +54,6 @@ A program kizárja az automatizált feldolgozásból azokat a számlasorokat, am
 - A számlasorhoz tartozó **Automatikus nyugtaegyeztetési állapot** értéke **Sikertelen**.
 - A számla használatban van.
 - A számla a munkafolyamat-rendszerben van.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -62,3 +62,6 @@ Ez az eljárás egy alapértelmezett termékéletciklus-állapot létrehozását
 > [!NOTE]
 > Tegyük fel, hogy beállította az aktív állapotot, és most kiválaszthatja az aktív állapotot, engedélyezve a termék használatát az alaptervezésben és az anyagjegyzékszintű számításban. Ennek természetesen csak akkor van értelme, ha a konzisztens tervezéshez szükséges összes termékrészlet meg van határozva.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

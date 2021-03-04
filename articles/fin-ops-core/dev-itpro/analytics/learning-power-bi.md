@@ -62,3 +62,6 @@ A **Tanulás** Power BI-tartalom jelentéseinek kitöltésére a következő ada
 | Pozíció         | Beosztás, cím és teljes munkaidős egyenérték (FTE)                  | Tanfolyami napirend, Tanfolyamrésztvevők |
 | Alkalmazott neve    | Keresztnév, vezetéknév és teljes név                             | Tanfolyamrésztvevők |
 | Alkalmazott beosztása   | Cím és szolgálati idő dátuma                                         | Tanfolyamrésztvevők |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

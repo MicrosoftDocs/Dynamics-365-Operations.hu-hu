@@ -84,3 +84,6 @@ A vevőnek mindkét SEPA beszedési megbízási rendszerben rendelkezik bizonyos
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

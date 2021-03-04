@@ -73,3 +73,6 @@ A Dataverse belső szervezeti adati két táblából származnak: **üzemi egys�
 [!include [Legal entities](includes/LegalEntities-msdyn-internalorganizations.md)]
 
 [!include [Legal entities](includes/LegalEntities-Companies.md)]
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

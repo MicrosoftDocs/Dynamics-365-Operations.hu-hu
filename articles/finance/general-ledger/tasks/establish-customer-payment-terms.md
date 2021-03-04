@@ -57,3 +57,6 @@ Ez az eljárás a készpénzfizetési engedményt és az esedékességi dátumot
 26. A **Beszállítói engedmények fő számláján** adja meg azt a fő számlát, amelyet a készpénzfizetési engedmény felad a beszállítói számlákhoz.
 27. Kattintson a **Mentés** gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

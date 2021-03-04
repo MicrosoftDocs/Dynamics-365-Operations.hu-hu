@@ -78,3 +78,6 @@ A műveleti ablak gombjai lapokon vannak rendezve. A következő táblázat röv
 | Pótalkatrészek          | Az eszközhöz használható jóváhagyott és alternatív pótalkatrészeket tartalmazó lista megtekintése.                                                                               |
 | Eszközfelhasználás    | Az eszközfelhasználási regisztrációkat tartalmazó jelentést kinyomtathatja.                                                                                                |
 | Eszközhiba          | Az eszköz hibaregisztrációit tartalmazó jelentést kinyomtathatja.                                                                                                      |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

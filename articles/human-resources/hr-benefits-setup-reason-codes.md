@@ -41,3 +41,6 @@ A Dynamics 365 Human Resources okkódokat használ annak elmagyarázása érdek�
    | **Leírás** | Az okkód leírása. |
 
 4. Válassza a **Mentés** lehetőséget. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

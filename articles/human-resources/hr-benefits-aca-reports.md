@@ -68,3 +68,6 @@ A bármely szűrési beállítás segítségével létrehozott alkalmazottlistá
 Ha jelentenie kell az eltartott személyeket, mert munkáltatóként a munkavállaló által fizetett egészségügyi biztosítást nyújt, lehetőség van a juttatási csomagok által lefedett, **ACA szerint bejelentendő** megjelölésű eltartottak megtekintésére A függő fél jogosultságának megtekintése művelet kiválasztásával a műveleti ablaktáblán.
 
 **Megjegyzés:** A lekérdezési ablakban csak az **ACA szerint bejelentendő** megjelölésű juttatáscsomagok jelennek meg.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

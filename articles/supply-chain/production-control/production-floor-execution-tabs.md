@@ -79,3 +79,6 @@ Miután megtervezte az összes szükséges lapot, hozzárendelheti őket egy kon
 1. Szükség esetén folytassa a további lapok hozzáadását.
 
 1. Az eszköztáron található **Mozgatás felfelé** és **Mozgatás lefelé** gombokkal igény szerint átrendezheti a lapokat. A lapok balról jobbra haladva jelennek meg a fenti képernyőképen látható sorrendben (a felső lap a bal oldalon látható).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

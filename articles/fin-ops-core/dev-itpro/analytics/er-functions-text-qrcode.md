@@ -61,3 +61,6 @@ A konfigurált ER-formátum futtatása esetén a **model.ListOfShelfLabels** ada
 ## <a name="additional-resources"></a>További erőforrások
 
 [Szöveg függvények](er-functions-category-text.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

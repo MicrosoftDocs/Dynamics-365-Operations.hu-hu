@@ -101,3 +101,6 @@ A következő ábra az **Eszközkezelés** modulban létrehozott különböző p
 
 ![6. ábra](media/06-integration-to-pma.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

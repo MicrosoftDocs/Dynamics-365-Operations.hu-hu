@@ -81,3 +81,6 @@ A rendszer ismét kiszámlázza a hozzáadott cikk értékesítési rendelését
 [![Bizonylattranzakciók oldal a feladott könyvelési tétellel](./media/36_rev-rec-scenarios.png)](./media/36_rev-rec-scenarios.png)
 
 Mivel a bevétel és az értékesítés összege nagyobb 319,50 $-nél, a rendszer feladja a különbözetet, ami 14,48 $. Ez az összeg törli a Részleges számlabevétel elszámolási számla egyenlegét. A rendszer az újbóli felosztás után feladott új könyvelési tétellel frissítette az egyenleget.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

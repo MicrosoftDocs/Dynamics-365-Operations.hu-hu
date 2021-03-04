@@ -91,3 +91,6 @@ Az egyes meghatározott módosítási súlyossági szintekre vonatkozó szabály
 - **Súlyosság** – Válassza ki a súlyossági szintet, amelyhez szabályokat szeretne megállapítani. A **Mérnöki változás súlyosságai** oldalon hozhatja létre és nevezheti el a szinteket. (A további tudnivalókat lásd a korábbi szakaszban.)
 
 A **Szabályok** gyorslap gombjaival hozzáadhat vagy eltávolíthat szabályokat az aktuális súlyossági beállításra vonatkozóan. Minden szabályhoz található egy **Szabályok** mező és egy **Név** mező. A szabályokat a rendszer határozza meg, és jelzik, hogy a termék milyen típusú módosításokkal rendelkezhet. A név jelzi a módosítási típust.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

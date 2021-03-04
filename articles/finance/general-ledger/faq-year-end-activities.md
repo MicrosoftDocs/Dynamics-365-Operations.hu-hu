@@ -137,3 +137,6 @@ A Dynamics 365 Finance nem nyomtatja ki az 1096-os éves összesítés és az eg
 A program az állami szektor számára készült új funkcióval, az **1099-es adatok frissítése fő számla szerint** funkcióval bővült, amelyet a **Funkciókezelés** munkaterületen lehet engedélyezni. Ezzel a funkcióval a fő számla alapján lehet társítani a szállító 1099-es értékeit a könyvelési felosztásban, nem pedig a szállítói rekordon található alapértelmezett számla alapján.
 
 További információkért lásd: [Szállítók beállítása az 1099-es kimutatáshoz](../localizations/noam-usa-set-up-vndrs-1099-rprtg.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -91,3 +91,5 @@ Az ellenőrzőlista elküldése után a FastTrack-megoldásépítész áttekinti
 ## <a name="see-also"></a>Lásd még
 
 [Éles indítás GYIK](hr-admin-go-live-faq.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

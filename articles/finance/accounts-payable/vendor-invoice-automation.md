@@ -232,3 +232,6 @@ A következő szerepkörök írásvédett hozzáférést biztosítanak a mellék
 + **Kötelezettségkezelő adminisztrátor** és **Kötelezettségkezelő vezető** – A Szállítói számlák karbantartása feladat hozzá van rendelve ezen szerepkörökhöz.
 
 Alapértelmezés szerint ha felhasználói szerepkör szerkesztési jogokat biztosít minden lapon, a felhasználónak is szerkesztési jogai lesznek a mellékletmegjelenítőn a kiemelési, zárolási és jegyzet műveletek tekintetében. Azonban ha vannak olyan forgatókönyvek, ahol egy adott szerepkörnek szerkesztési jogosultsággal kell rendelkeznie a lapon de a mellékletmegjelenítőn nem, az előző listából származó megfelelő jogosultságok használhatók a felhasználási eset kielégítésére.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

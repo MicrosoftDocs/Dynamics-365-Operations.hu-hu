@@ -73,3 +73,6 @@ Ez az eljárás bemutatja, hogyan hozhat létre egy kereskedelmi megállapodást
 ## <a name="additional-resources"></a>További erőforrások
 ### <a name="community-blogs"></a>Közösségi blogok
 - [Értékesítési árak a Dynamics 365 for Finance and Operations szolgáltatásban](https://financefunction.tech/2018/11/14/sales-prices-in-dynamics-365-for-finance-and-operations/#sales_price_in_trade_agreements)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

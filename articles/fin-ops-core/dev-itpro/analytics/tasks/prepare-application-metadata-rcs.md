@@ -80,3 +80,6 @@ A rekordok Intrastat-táblázatára vonatkozó metaadat-információkat adtunk h
 3.    Kattintson az **OK** gombra. 
     
 A létrehozott ER metaadat-konfigurációt olyan XML-fájlként mentette, amely importálható az RCS-be, és használható a külkereskedelmi üzleti tartomány metaadataira vonatkozó adatforrásként. Az információ alapján meg tudjuk határozni az alkalmazás metaadatai és az ER-adatmodell közötti leképezést.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

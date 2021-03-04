@@ -64,3 +64,6 @@ Előfordulhat, hogy egy szervezet visszavonja az egyik juttatását. Ebben az es
 A juttatások tömeges bővítése funkció hasonlóan működik: ha a tervezetthez képest tovább szeretne egy juttatást biztosítani, egyszerre bővítheti annak lejárati dátumát és módosíthatja az adott juttatásban részesülő dolgozókat.
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

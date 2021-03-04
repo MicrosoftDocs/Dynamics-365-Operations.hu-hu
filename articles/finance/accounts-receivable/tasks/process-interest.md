@@ -68,3 +68,6 @@ Ez az eljárás a kamatlevél létrehozását, nyomtatását és feladását mut
 5. Kattintson az **OK** gombra.
 6. Az **Állapot** mezőben válassza ki a „Feladott” értéket.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

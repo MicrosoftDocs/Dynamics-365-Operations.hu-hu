@@ -49,3 +49,6 @@ Ez a feladat frissíti a konkrét tárgyi eszközcsoport értékcsökkenési sza
 15. Kattintson az OK gombra.
     *  A folyamat eredményei a Tömeges frissítés jelentésen jelennek meg.     
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

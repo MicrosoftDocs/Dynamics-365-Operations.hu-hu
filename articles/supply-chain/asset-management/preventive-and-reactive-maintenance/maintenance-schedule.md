@@ -68,3 +68,6 @@ Az alábbi ábra az **Összes karbantartási ütemezés** listaoldalt mutatja.
 
 ![1. ábra](media/16-preventive-maintenance.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

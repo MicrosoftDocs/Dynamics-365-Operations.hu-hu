@@ -523,3 +523,6 @@ Miután az összes naplóbejegyzést létrehozta és feladta, akkor a következ�
 | 11         | Halmozott értékcsökkenés |                                                   |                                                   |                                                   | 0\.00                   |   |                                                 |                                                |                                                |                                                | \-949\.75                                      | \-949\.75                               |
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -55,3 +55,6 @@ Az új mezőnek és az adatoknak most már szerkeszthetőknek kell lenniük az E
 [Kiskereskedelmi tranzakciók pénzügyi dimenzióinak szerkesztése](edit-financial-dim.md)
 
 [Excel-munkafüzet létrehozása a kiskereskedelmi tranzakciók szerkesztéséhez](create-excel-edit.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

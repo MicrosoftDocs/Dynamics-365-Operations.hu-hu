@@ -236,3 +236,5 @@ Amennyiben a kérdőívben egymásra alapuló kérdéseket szeretne létrehozni,
 A jogi személy mind eszközöket, mind pedig szolgáltatásokat kínál vásárlóinak. Ahogy az gyakran előfordul, egyes vásárlók csak eszközöket, míg mások csak szolgáltatásokat vesznek igénybe, megint csak mások pedig eszközöket és szolgáltatásokat is igénybe vesznek. Ebből adódóan tehát, mikor egy jogi személy kioszt egy vásárló-elégedettségi felmérést, feltételes szerkezetet alkalmaz a kérdőívben, így azok a vásárlók akik csak a szolgáltatásokat vásárolják meg, nem kell, hogy válaszoljanak a termékekkel kapcsolatos kérdésekre. 
 
 Másik lehetőségként egy kérdőív összeállítható úgy is, hogy ha a válaszadó az 1-es kérdésre az A választ adja, akkor a sorozat következő kérdése a 2-es kérdés lesz. Ha azonban a válaszadó az 1. kérdésre a B választ adja, az 5. kérdés következik.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

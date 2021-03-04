@@ -96,3 +96,6 @@ A promóciós szalagcím modul új oldalra való felvételéhez és a kötelező
 [Tartalomblokk-modul](add-hero-module.md)
 
 [Videólejátszó modul](add-video-player.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

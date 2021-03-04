@@ -57,3 +57,6 @@ A kísérletezési folyamat egyes lépéseivel kapcsolatos további tudnivalóka
 
 ## <a name="next-step"></a>Következő lépés
 [Hipotézis meghatározása és sikerességi mérőszámok megadása egy kísérlethez](experimentation-identify.md) 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

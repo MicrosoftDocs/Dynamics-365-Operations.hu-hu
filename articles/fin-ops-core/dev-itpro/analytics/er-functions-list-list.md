@@ -73,3 +73,6 @@ Ebben az esetben a `LIST('Record 1', 'Record 2')` kifejezés egy új, két rekor
 ## <a name="additional-resources"></a>További erőforrások
 
 [Lista függvények](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

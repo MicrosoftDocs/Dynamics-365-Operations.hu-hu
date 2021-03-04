@@ -110,3 +110,6 @@ A feladás után létrehozott számlanapló nem tartalmazza a csomaghoz tartozó
 Fontos, hogy a számlanapló ne tartalmazza a csomag szülőcikkét, mert a számla feladása után végrehajtott folyamatok a számlanaplón alapulnak. Ha például a Műveletpanel **Eladás** lapján létrehoz egy jóváírást, ez a jóváírás tartalmazni fogja az összetevő cikket, de a szülőcikket nem.
 
 [![A jóváírás, amely a szülőcikket nem, de az összetevő cikkeket tartalmazza](./media/bundle-09.png)](./media/bundle-09.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

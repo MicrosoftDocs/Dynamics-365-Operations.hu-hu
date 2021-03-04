@@ -42,3 +42,6 @@ Ez az eljárás az DEMF bemutatócéget használja.
     * Csatoljon további adatokat a naplóhoz.  
     * Például csatoljon egy beolvasott képet az EU beérkezési igazolásról a naplóhoz.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

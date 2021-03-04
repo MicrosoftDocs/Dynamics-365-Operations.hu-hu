@@ -59,3 +59,6 @@ Ez az eljárás végigvezeti a folyamaton, amellyel létrehozható és feladhat�
 1. Kattintson a **Készlet** parancsra.
 2. Kattintson a **Tranzakciók** elemre. Itt láthatók a napló feladásakor létrehozott tranzakciók.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

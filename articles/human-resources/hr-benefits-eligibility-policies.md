@@ -49,3 +49,6 @@ A szabály hatáskörét az irányelven belül lehet megadni. Például ha **Vez
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

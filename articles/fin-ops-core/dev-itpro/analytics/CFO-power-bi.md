@@ -43,3 +43,6 @@ A következő táblázat azt a Power BI-tartalmat jeleníti meg, amelyből a jel
 | [Értékesítés és jövedelmezőség](sales-profitability-performance-content-pack.md) | <ul><li>Bevétel régiónként</li><li>10 vezető vevő bevétel alapján</li><li>10 vezető termék bevétel alapján</li></ul> |
 | [Követelések és beszedések kezelése](../../../finance/accounts-receivable/credit-collections-power-bi.md) | <ul><li>Késedelmes vevő</li><li>Hitelkeretet túllépő vevők</li><li>Korosított egyenlegek</li></ul> |
 | [Beszerzési és ráfordítási elemzés](../../../finance/accounts-receivable/credit-collections-power-bi.md) | <ul><li>Beszerzések nap/hónap szerint</li><li>10 legfontosabb szállító a beszerzések alapján</li><li>10 legfontosabb termék a beszerzések alapján</li></ul> |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

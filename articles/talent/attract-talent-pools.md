@@ -149,3 +149,6 @@ Gyakran sok jó jelöltet nem választanak ki egy állásra, de nem szeretnénk 
 1. A jelentkezés lapon jelölje be a **Hozzáadás tehetségállományhoz** lehetőséget. A tehetségállományok listája jelenik meg, amelyekhez hozzáféréssel rendelkezik.
 
 1. Válassza ki vagy a keresse meg a szaktudásgyűjtőt, és válassza ki a **Hozzáadás** elemet a pályázó hozzadásához.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

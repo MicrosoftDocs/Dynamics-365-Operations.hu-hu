@@ -144,3 +144,6 @@ Mivel számos különböző integrációs technológia érhető el, a használan
 <sup>2</sup>A Microsoft nagymértékben növeli a növekvő adatlefedettséget a Common Data Service entitások számára. A Common Data Service használatát ajánljuk, amikor a lefedettség elérhető. A Common Data Service adatlefedettsége jelenleg alacsony a DMF- és az OData-kompatibilis entitásokéhoz képest.
 
 <sup>3</sup>Az SQL-adatbázis programkóddal érhető el.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -62,3 +62,6 @@ Az állást akkor zárhatja le **Beosztás betöltve** értékkel, ha legalább 
    > Az állást csak akkor zárhatja le **Beosztás betöltve** értékkel, ha legalább egy potenciális jelölt befejezte az ajánlati szakaszt. Ha az álláspályázathoz nincs kiválasztva az **Ajánlat elfogadva** lehetősége, vagy jelentkezésben nem az **Elfogadott** állapot az ajánlatban, a **Beosztás betöltve** lehetőség nem jelenik meg az **Ok** legördülő menüben.
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -49,3 +49,6 @@ Ez az eljárás bemutatja, hogyan lehet kiszámítani egy késztermék költség
 11. Zárja be a lapot.
 12. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

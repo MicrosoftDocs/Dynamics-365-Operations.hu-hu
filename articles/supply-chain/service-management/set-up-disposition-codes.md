@@ -57,3 +57,6 @@ Okkód beállításával segíthet megmagyarázni, miért került sor egy cikk v
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -128,3 +128,6 @@ Amikor kiválasztja a **Címváltozások** csempét, egy új lapon megjelennek a
 > Ha figyelmeztetést vagy e-mailt szeretne kapni ezekről a címváltozásokról, akkor létrehozhat egy új riasztási szabályt a Művelet panel **Beállítások** lapján. További információ a riasztási szabályokról: [Figyelmeztetési szabályok létrehozása](/fin-ops-core/fin-ops/get-started/create-alert-rules.md).<br><br>
 
 > Ha munkafolyamatot kíván konfigurálni a címváltozásokhoz, akkor a riasztási szabály **Külső küldés** beállításának kiválasztása után használhatja a Power Automate szolgáltatást az üzleti esemény aktiválásra és a munkafolyamat konfigurálására. További tájékoztatás: [Figyelmeztetések üzleti eseményekként](/fin-ops-core/dev-itpro/business-events/alerts-business-events.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

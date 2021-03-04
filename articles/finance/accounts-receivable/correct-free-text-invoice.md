@@ -51,3 +51,6 @@ Kétféle módon határozhatja meg a számlák érvénytelenítését és javít
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

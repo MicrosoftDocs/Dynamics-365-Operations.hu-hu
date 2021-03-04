@@ -70,3 +70,6 @@ A **Cél főkönyvi számla** gyorslapon a fő számla ugyanarra a közműkiadá
 > A kiválasztott felosztás másolásához igény szerint használhatja a **Másolás** gombot is.
 
 Amikor egy fő számlához felosztási feltétel jön létre, a rendszer automatikusan felad egy új bizonylatot, amikor egy olyan bizonylatot adnak fel, amely megfelel a felosztási feltételekben szereplő forrás pénzügyi dimenzióinak.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

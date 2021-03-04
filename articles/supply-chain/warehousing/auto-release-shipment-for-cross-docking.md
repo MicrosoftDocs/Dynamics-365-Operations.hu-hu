@@ -179,3 +179,6 @@ Felhívjuk figyelmét, hogy ebben a szakaszban a következő események zajlanak
 - A raktárba történő kiadás a csatolt értékesítési rendeléshez elindítja.
 - A kiadás alapján egy szállítás és egy áttárolási munka jön létre. Ez a munka arra utasítja a raktári kezelőt, hogy kitárolja az értékesítésirendelés-sor teljesítéséhez szükséges mennyiségeket, és azokat az áttárolási hely irányelvében meghatározott kimeneti helyre helyezze.
 - Ha a termelési rendelés mennyisége meghaladja az értékesítési rendeléshez szükséges mennyiséget, létrejön a szokásos betárolási munka. Ez a munka arra utasítja a raktári kezelőt, hogy kiválassza azt a mennyiséget a készárukból, ami az áttárolás után marad, és áthelyezze azt a szokásos tárolóhelyre a helyirányelvek alapján.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

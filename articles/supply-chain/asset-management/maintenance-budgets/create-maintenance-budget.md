@@ -59,3 +59,6 @@ A karbantartási költségvetések alapját az Eszközkezeléshez használt köl
 
 > [!NOTE]
 > A karbantartási költségvetés csak a karbantartási ütemezés sorai alapján számítja ki a költségvetési költségeket. Ha ugyanarra az időszakra vonatkozóan szeretné kiszámítani a tényleges költségeket, akkor ezt az **Eszközköltség ellenőrzése** lapon teheti meg. 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

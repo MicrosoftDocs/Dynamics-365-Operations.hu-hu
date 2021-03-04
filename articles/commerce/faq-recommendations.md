@@ -100,3 +100,6 @@ A termékajánlások engedélyezése után hozzá kell adnia az ajánlások pane
 [Válogatott ajánlások manuális létrehozása](create-editorial-recommendation-lists.md)
 
 [Ajánlások létrehozása bemutató adatokkal](product-recommendations-demo-data.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

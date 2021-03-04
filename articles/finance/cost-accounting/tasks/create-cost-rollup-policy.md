@@ -68,3 +68,6 @@ Ez az eljárás bemutatja, hogyan hozhat létre költségösszegzési irányelve
     * Folytassa, amíg minden költséghely a hozzá tartozó másodlagos költségösszetevőhöz van rendelve.  
 16. Kattintson a Mentés gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

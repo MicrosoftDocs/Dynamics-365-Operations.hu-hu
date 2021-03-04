@@ -43,3 +43,6 @@ Ez a témakör bemutatja, hogyan lehet helyprofilokat létrehozni a Dynamics 365
 10. Válassza ki az **Igen** lehetőséget a **Ciklikus leltározás engedélyezése** mezőben.
 11. Válassza a **Mentés** lehetőséget.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

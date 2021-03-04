@@ -90,3 +90,6 @@ A következő táblázat bemutatja, hogy a kiadott termék és a hozzájuk kapcs
 ## <a name="additional-resources"></a>További erőforrások
 
 [Beszerzési szerződések](../../procurement/purchase-agreements.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

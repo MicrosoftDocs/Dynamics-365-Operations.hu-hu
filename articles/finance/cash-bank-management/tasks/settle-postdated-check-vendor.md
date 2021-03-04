@@ -52,3 +52,6 @@ Ezen eljárás szerepköre: Pénztáros. Ez az eljárás az USMF bemutatócéget
 10. Kattintson a Bizonylat elemre.
 11. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

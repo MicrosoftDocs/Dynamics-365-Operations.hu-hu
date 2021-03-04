@@ -249,3 +249,6 @@ Ha például meg kell adnia a jelentés fejlécében szereplő adóértékek ös
 - [Számláláshoz és összegzéshez használt formátum konfigurálása](./tasks/er-format-counting-summing-1.md)
 - [Az ER-formátum végrehajtásának nyomon követése a teljesítménnyel kapcsolatos problémák elhárításához](trace-execution-er-troubleshoot-perf.md)
 - [A XML-elemek végrehajtásának elhalasztása az ER-formátumokban](er-defer-xml-element.md#Example)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

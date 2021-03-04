@@ -56,3 +56,6 @@ A feladathoz már létrehozott verzióval és tevékenységekkel rendelkező ter
 3. A Tevékenység mezőben adjon meg vagy válasszon ki egy értéket.
 4. Kattintson az OK gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -183,3 +183,6 @@ Egy jóváhagyási eljárás jóváhagyási lépésekből áll. Az alábbi eljá
 1. A munkafolyamat-szerkesztőben kattintson duplán a jóváhagyási folyamatra. A munkafolyamat-szerkesztő megjeleníti a jóváhagyási eljárás lépéseit.
 2. Jóváhagyási lépés hozzáadásához húzza a **Munkafolyamat-elemek** lehetőséget a vászonra.
 3. A jóváhagyási lépés konfigurálása: [Jóváhagyási lépések konfigurálása munkafolyamatban](configure-approval-step-workflow.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

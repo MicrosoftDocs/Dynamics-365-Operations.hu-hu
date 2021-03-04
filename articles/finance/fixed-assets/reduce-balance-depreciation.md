@@ -85,3 +85,6 @@ A Degresszív módszerrel az értékcsökkenés alapjának (nettó könyv szerin
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -45,3 +45,6 @@ A feladat létrehozásához az USMF bemutató vállalatot használtuk példakén
 13. Keresse meg és jelölje ki a kívánt rekordot a listán. Nyomja le a Shift billentyűt, jelöljön be több szerepkört a **Kijelölt szerepkörök** ablakban való hozzáadáshoz, és kattintson a nyílra a kijelölt szerepkörök hozzáadásához.  
 14. Kattintson a **Mentés** gombra.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

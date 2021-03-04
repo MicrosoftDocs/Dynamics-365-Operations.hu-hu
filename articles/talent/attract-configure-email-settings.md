@@ -89,3 +89,6 @@ A vállalat emblémáját és egyéb adatait a saját e-mail címének márkás 
     ![Hivatkozás hozzáadása a vállalat adatvédelmi irányelvéhez és felhasználási feltételeihez az e-mail élőlábjához](./media/attract-admin-email-footer.png)
 
 4. Az e-mail sablon beállításainak mentéséhez válassza a **Mentés** lehetőséget.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

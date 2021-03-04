@@ -53,3 +53,6 @@ A **Fedezeti csoportok** lapon kiválaszthatja azokat a művelet üzeneteket, am
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

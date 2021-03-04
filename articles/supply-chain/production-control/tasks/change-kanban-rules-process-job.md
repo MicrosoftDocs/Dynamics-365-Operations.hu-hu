@@ -49,3 +49,6 @@ Ez az eljárás egy adott kanbanhoz használt kanbanszabály módosítását tek
 7. Kattintson a Finish gombra.
     * Most a kanbanfeladat már egy másik kanbanszabályt használ. Ez hasznos lehet a terhelési munkacellák szintezéséhez.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

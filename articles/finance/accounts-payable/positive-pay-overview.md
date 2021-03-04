@@ -49,3 +49,6 @@ További információért lásd: [Fizetési ellenőrző fájlok beállítása é
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

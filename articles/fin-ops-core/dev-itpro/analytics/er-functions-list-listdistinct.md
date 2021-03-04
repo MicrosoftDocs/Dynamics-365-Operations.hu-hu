@@ -97,3 +97,6 @@ A következő példa azt mutatja be, hogyan lehet lekérni azokat az egyedi vev�
 ## <a name="additional-resources"></a>További erőforrások
 
 [Listafüggvények](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

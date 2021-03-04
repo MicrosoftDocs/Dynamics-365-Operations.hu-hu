@@ -65,3 +65,6 @@ Ez az eljárás olyan receptúra létrehozására koncentrál, amely ugyanazokat
 5. Kattintson a Kiválasztás lehetőségre.
 6. Kattintson az OK gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

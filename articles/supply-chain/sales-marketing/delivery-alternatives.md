@@ -153,3 +153,6 @@ Ez a lap kiemeli a kiválasztott szállítási alternatíva hatását. Ha az **O
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

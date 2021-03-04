@@ -350,3 +350,6 @@ Kövesse az alábbi lépéseket, ha a döntést egy megadott időn belül kell m
     - **Évek** – Válassza ki, hogy mely hónap, mely hét, mely napjáig kell a döntést meghozni. Kérheti például, hogy a döntést december harmadik hetének péntekéig kell meghozni.
 
 4. Ha lejár az időkorlát, a rendszer hozza meg a döntést. Válassza ki a **Művelet** listából, hogy milyen beállítást kell a rendszernek kiválasztania.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

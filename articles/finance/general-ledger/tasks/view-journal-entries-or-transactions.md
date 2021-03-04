@@ -43,3 +43,6 @@ Ezzel az eljárással lehet a Bizonylat-tranzakciók lekérdezését naplóbejeg
 12. A Műveleti ablaktáblán kattintson az **Eredeti dokumentum** elemre.
 13. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

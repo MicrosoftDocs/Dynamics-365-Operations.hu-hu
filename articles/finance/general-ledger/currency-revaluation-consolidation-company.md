@@ -89,3 +89,6 @@ A jelentési pénznem összegeihez további tranzakciók történnek.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

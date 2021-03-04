@@ -37,3 +37,6 @@ A pénzügyi és adózási adatok a következő hozzárendelések segítségéve
 
 + [Integrált főkönyv](ledger-mapping.md)
 + [Integrált adózási alapadat](tax-mapping.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

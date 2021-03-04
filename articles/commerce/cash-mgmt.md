@@ -62,3 +62,6 @@ A Retail 10.0.3-as és újabb verzióiban a készpénzforgalmi tranzakciókkal k
 - Ha egyeztetés közben a kiválasztott tranzakció nem kerül egyensúlyba, a felhasználónak meg kell adnia a kiegyenlítetlen egyeztetés okának a leírását. A felhasználók kiválaszthatnak egy tranzakciót, és szükség szerint egyeztetik a releváns ok leírásával.
 - A felhasználók a műszak lezárása előtt folytathatják a tranzakciók egyeztetését és egyeztetések visszavonását. A műszak lezárása után nem lehet a tranzakciók egyeztetését visszavonni.
 - Amikor egy felhasználó egy műszak zárását választja, a Commerce ellenőrzi, hogy nincsenek-e nem egyeztetett készpénzgazdálkodási tranzakciók a műszakban. A felhasználó nem zárhatja le a műszakot, amíg nem egyeztetett tranzakciók vannak.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

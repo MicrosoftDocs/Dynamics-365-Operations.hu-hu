@@ -135,3 +135,6 @@ A következő ábrán egy példa látható a termékminősítésekre a hívásk�
 [Minősítések és értékelések kezelése](manage-reviews.md)
 
 [Minősítések és értékelések konfigurálása](configure-ratings-reviews.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

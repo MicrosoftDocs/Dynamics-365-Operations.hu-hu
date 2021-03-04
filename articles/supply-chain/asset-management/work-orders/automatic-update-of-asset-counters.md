@@ -70,3 +70,6 @@ Vegye figyelembe az alábbiakat:
 
 - Lehetőség van egy másik számlálóhoz kapcsolódó számlálók beállítására is. Ebben az esetben a számláló frissítését követően a kapcsolódó számlálók frissítése is egyidőben megtörténik. Az számlálók beállításával kapcsolatos további információkat lásd: [Számlálók](../setup-for-objects/counters.md).
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

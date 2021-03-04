@@ -113,3 +113,6 @@ A létrehozott modell-leképezést tesztelési célokból kell futtatni, hogy me
     * Válassza a Tallózás gombot, és válassza ki a Response4.xml fájlt.
 16. Válassza ki az OK lehetőséget.
     * Tekintse át a létrehozott kimenetet. A választípust a rendszer már megfelelően ismerte fel a Response1.xml fájllal egyenlőként.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

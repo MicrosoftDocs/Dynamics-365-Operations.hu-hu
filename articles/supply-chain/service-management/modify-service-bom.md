@@ -72,3 +72,6 @@ A szolgáltatási anyagjegyzékben rögzítheti egy elem előzményeit. Minden a
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

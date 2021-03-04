@@ -42,3 +42,5 @@ Minden olyan szervezetnek, amely juttatásokat kínál, konfigurálnia kell a be
    | **Alapértelmezett feladói e-mail-cím** | A visszaigazoló e-mail küldésekor használandó e-mail cím. |
 
 3. Válassza a **Mentés** lehetőséget.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -107,3 +107,6 @@ Az alábbi táblázat megjeleníti azokat a fő dimenziókat az Értékesítés 
 | Dátumok            | Dátumok                                                |
 
 Alapértelmezés szerint a tartalom a folyó naptári év adatait jeleníti meg. Azonban módosíthatja a dátumszűrőt a jelentésszűrők szakaszban. A vállalatszűrőt is módosíthatja.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

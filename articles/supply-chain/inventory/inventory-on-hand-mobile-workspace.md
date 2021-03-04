@@ -130,3 +130,6 @@ A Finance and Operations mobilalkalmazás letöltése és telepítése:
     -   Fizikai készlet alapján (Ez a nézet a teljes mennyiséget jelöli.)
     -   Fizikai fenntartott alapján (Ez a nézet a fenntartott mennyiséget jelöli.)
     -   Elérhető fizikai alapján (Ez a nézet a rendelkezésre álló, nem fenntartott mennyiséget jelöli.)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

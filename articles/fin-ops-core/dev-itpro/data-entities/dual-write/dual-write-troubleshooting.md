@@ -122,3 +122,6 @@ Az **Adatok** űrlapbeállítás újbóli engedélyezéséhez kövesse az alább
 2. Keresse meg az **Adatok** űrlapot az űrlapok csomópont alatt. 
 3. Válassza ki az **Adatok** űrlapot, és kattintson a **Biztonsági szerepkörök engedélyezése** pontra. 
 4. Módosítsa a biztonsági beállítást: **Megjelenítés mindenkinek**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

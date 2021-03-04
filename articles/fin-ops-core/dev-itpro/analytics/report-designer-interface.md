@@ -227,3 +227,6 @@ A Jelentéstervező eszköztár gyors hozzáférést biztosít a Jelentéstervez
 [Pénzügyi jelentéskészítés](financial-reporting-intro.md)
 
 [Pénzügyi jelentések létrehozása](generate-financial-report.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

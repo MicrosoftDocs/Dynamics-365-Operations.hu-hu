@@ -43,3 +43,6 @@ Ez a témakör bemutatja, hogyan hozható létre rekordsablon azért, hogy a gya
 13. Válassza ki az **OK** lehetőséget.
 14. Válassza **Bezárás** lehetőséget.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -91,3 +91,6 @@ Ha a **model.RoundOff** paraméter **RoundOffType.RoundUp** értékre van beáll
 [Egyéb (üzleti területre jellemző) függvények](er-functions-category-other.md)
 
 [Matematikai funkciók](er-functions-category-mathematical.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

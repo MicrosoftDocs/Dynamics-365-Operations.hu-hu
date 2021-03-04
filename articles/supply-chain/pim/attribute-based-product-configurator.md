@@ -141,3 +141,6 @@ Az utolsó lépés az attribútumalapuló eladási árak megadása a termékmode
 1. A Művelet panelen nyissa meg a **Modell** lapot, és a **Termékmodell részletei** csoportban válassza a **Verziók** elemet.
 1. Megnyílik a **Verziók** lap. Az **Árképzési mód** beállítása legyen **Attribútumalapú**.
     ![Az árképzési mód beállítása attribútumalapúra](media/prod-config-versions.png "Az árképzési mód beállítása attribútumalapúra")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

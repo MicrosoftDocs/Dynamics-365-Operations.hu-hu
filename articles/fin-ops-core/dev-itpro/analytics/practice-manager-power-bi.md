@@ -117,3 +117,6 @@ A következő szakaszok leírják az egyes entitások által használt összesí
 | Fő összesítő mérték       | Mező               | Leírás |
 |---------------------------------|---------------------|-------------|
 | Befejeződött tevékenység tervezett költsége | Sum(TotalCostPrice) | Befejeződött feladatokkal rendelkező projekttranzakció-típus becsléseinek teljes önköltségi ára. |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

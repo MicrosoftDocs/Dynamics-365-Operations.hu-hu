@@ -78,3 +78,6 @@ Az Anyagjegyzék-tervező megnyitása egy szolgáltatásitárgy-kapcsolat segít
 
 Ha automatikusan hoz létre szervizrendeléseket egy szolgáltatási szerződéshez, a szerződés szolgáltatásitárgy-kapcsolatai átkerülnek a létrehozott szervizrendelésekbe is.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

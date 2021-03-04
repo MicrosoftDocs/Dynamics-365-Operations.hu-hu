@@ -70,3 +70,6 @@ A katalógusimportálási fájlsablon egy XSD-fájl, amely egy szállító term�
 3. A **Mentés másként** párbeszédpanelen válassza ki azt a helyet, ahol a katalógusfájl-sablont tárolni szeretné, és mentse a fájlt.
 
 További tájékoztatás és példák ebben a blogbejegyzésben: [Dynamics AX](https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/05/25/vendor-catalogs-in-dynamics-ax/) szállítói katalógusok.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -57,3 +57,6 @@ A munkatételek feldolgozásához felhasznált idő elemzése segíthet javítan
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

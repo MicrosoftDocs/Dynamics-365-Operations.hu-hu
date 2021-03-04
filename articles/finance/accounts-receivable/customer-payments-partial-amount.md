@@ -60,3 +60,6 @@ A vevők részleges kifizetést is végezhetnek, amelynél a fennmaradó összeg
 
 
 További információkért lásd: [Vevői kifizetések letétele](tasks/deposit-customer-payments.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

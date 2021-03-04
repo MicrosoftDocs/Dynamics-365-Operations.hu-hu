@@ -83,3 +83,6 @@ A vonalkódokmaszkokat hozzá kell rendelni vonalkódokhoz ahhoz, hogy használn
 5. Kattintson a **Mentés** gombra.
 
 A vonalkódmaszk mostantól a termékek vonalkódjainak létrehozására használható. A fenti lépések példák arra, hogyan hozhat létre vonalkódmaszkokat a termékek számára, de bemutatják azt is, hogyan hozhat létre vonalkódmaszkokat bármely más támogatott vonalkódtípushoz. A vonalkódmaszkokat, -típusokat és -hosszokat az adott környezetéhez kell igazítania.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

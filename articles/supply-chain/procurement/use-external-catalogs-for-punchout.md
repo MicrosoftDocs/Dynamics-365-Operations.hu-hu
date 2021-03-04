@@ -55,3 +55,5 @@ Amikor az igénylés készen áll, használja a **Munkafolyamat** > **Küldés**
 
 - [Külső katalógus beállítása a PunchOut e-beszerzés számára](set-up-external-catalog-for-punchout.md)
 - [Beszerzési cXML-fejlesztések](purchasing-cxml-enhancements.md)
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

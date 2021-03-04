@@ -59,3 +59,6 @@ A szimulált költségváltozások megadása után számítsa ki a költségvál
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

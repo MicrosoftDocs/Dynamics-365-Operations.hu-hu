@@ -122,3 +122,6 @@ April ezután feladja ezt a fizetést. Amikor megnyitja a **Szállítótranzakci
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

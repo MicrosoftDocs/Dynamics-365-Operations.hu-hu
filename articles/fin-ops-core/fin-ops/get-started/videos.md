@@ -167,3 +167,6 @@ A [Microsoft Dynamics YouTube csatorna](https://www.youtube.com/channel/UCJGCg4r
 A [FastTrack műszaki előadások](https://community.dynamics.com/365/b/techtalks?c=Finance%20and%20Operations) a műszaki mélység és gyakorlati tanácsok bemutatására fókuszálnak, amelynek révén az ügyfelek és a partnerek az adott terület részletes tudását ismerhetik meg.
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

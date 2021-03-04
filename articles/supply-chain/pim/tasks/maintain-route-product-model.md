@@ -67,3 +67,6 @@ Ezen eljárás futtatásához szükség van egy már létező termékkonfigurác
 15. A Követelmény mezőben adjon meg vagy válasszon ki egy értéket.
 16. Kattintson az OK gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

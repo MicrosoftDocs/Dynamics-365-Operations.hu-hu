@@ -73,3 +73,6 @@ A látszólagos anyagjegyzékek olyan anyagjegyzéknél is használhatók, amely
 A következő példában (a) a G termék és F rész anyagjegyzéke, míg (b) a G termék és F rész útvonallapja.
 
 ![G termék és F rész útvonallapokkal](media/product-G-part-F-with-route-sheet.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

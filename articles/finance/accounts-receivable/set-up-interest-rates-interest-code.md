@@ -131,3 +131,6 @@ Különböző verziói megtekintéséhez használja a **Dátum, mint** menüt le
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -42,3 +42,6 @@ Az üzemelés első éve 2020 decemberében kezdődik ami azt jelenti, hogy az e
    [![Féléves értékcsökkenési szabály értékcsökkenési ütemezése](./media/half-yr-dprectn-cnvntn.png)](./media/half-yr-dprectn-cnvntn.png)
 
 A féléves konvencióval hozzáadott meghosszabbított értékcsökkenési időszakok pontosabban osztják fel az értékcsökkenést. A hat hónapos szabály egyenletesebben képviseli az értékcsökkenést, ami az eredménykimutatásban történő jelentéshez hasznos.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

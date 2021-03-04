@@ -134,3 +134,6 @@ A jelenlegi értékeket alapértelmezett értékekként mentheti. Két lehetős�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

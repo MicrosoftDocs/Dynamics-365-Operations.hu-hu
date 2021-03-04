@@ -101,3 +101,6 @@ Tanácsos egyedi dokumentumtípust megadni a javításokhoz a **Dokumentum típu
 [Minőségi rendelések beállítása](tasks/set-up-quality-orders.md)
 
 [Áru minőségének ellenőrzése](tasks/inspect-quality-goods.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

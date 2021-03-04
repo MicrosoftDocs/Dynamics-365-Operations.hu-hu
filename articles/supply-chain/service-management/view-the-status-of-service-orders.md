@@ -55,3 +55,6 @@ A szervizrendelés fontosságának gyors megállapítása érdekében a Gantt-di
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -103,3 +103,6 @@ A félkész termékek e szabály alól kivételt képeznek. Félkész termékek 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

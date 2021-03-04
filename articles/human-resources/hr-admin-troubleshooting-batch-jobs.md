@@ -65,3 +65,6 @@ A következő kötegelt feladatoknak éjszaka vagy munkaidő után kell futniuk.
 ## <a name="additional-resources"></a>További erőforrások
 
 [Teljesítmény optimalizálása automatikus tisztítási feladatokkal](hr-admin-troubleshooting-batch-history.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

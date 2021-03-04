@@ -51,3 +51,6 @@ A következő lehetőségek közül választhat, ha a munka típusa kitárolás 
 | Darab kitárolásának megerősítése | Elérhető kitárolási és leltározási munkatípusok esetében. A termék megerősítése automatikusan be van jelölve. Lehetővé teszi, hogy a mobileszközről erősítse meg a készlet minden elemét. |
 |  Darabok maximális száma  |                   Elérhető kitárolási munkához, ha a darabkitárolás megerősítése engedélyezve van. Beállítja a megerősítendő darabszám maximális értékét.                   |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

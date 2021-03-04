@@ -73,3 +73,6 @@ Az ország/régió előírásai befolyásolják az adóbeállítások és a pén
 
 Az ellátásilánc-kezelési funkciók a teljes beszerzésirányítási folyamat egy részéért felelősek, beleértve a kérelmezés, rendelés, bevételezés, számlázás és a szervezet által beszerzett áruk és szolgáltatások kifizetési folyamata is. A beszerzések, készletek és gyártás kezeléséhez kapcsolódó lehetőségekre vonatkozó további információkért tekintse meg a [Supply Chain Management kezdőoldalát](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/WhatsNew-SCM-10-0-6/articles/supply-chain/index.md). 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

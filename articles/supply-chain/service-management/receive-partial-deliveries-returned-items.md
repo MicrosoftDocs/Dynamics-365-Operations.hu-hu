@@ -51,3 +51,6 @@ Ha egy visszáruszállítmány nem tartalmazza a visszárurendelés-sor teljes m
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

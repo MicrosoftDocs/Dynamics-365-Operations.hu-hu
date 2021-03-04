@@ -48,3 +48,6 @@ Ez az eljárás azt mutatja be, hogy milyen lépések segítségével tudja a v�
 17. Állítsa a mennyiséget 1000 értékre.
 18. Kattintson a Mentés gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -72,3 +72,6 @@ A **Költségtételek** lap lehetővé teszi a dokumentumazonosító és a dátu
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

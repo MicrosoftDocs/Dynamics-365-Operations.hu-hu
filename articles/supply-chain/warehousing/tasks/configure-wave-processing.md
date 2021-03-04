@@ -61,3 +61,6 @@ Ez az útmutató leírja, hogy hogyan állíthatja be azokat a feltételeket, am
 Az értékesítési és a kanban rendelésekhez, a készletet a rendelés raktárból történő kiadása előtt le kell foglalni. Ellenkező esetben a cikkek vagy a felosztási sorok nem dolgozhatók fel a hullámban. A termelési rendelésekre vonatkozóan kiválaszthatja a Részleges foglalás engedélyezése lehetőséget. Ez például hasznos, ha a termelés megkezdéséhez szükséges anyagok rendelkezésére állnak, és addig pedig várni tud, amíg a további anyagok beérkeznek az eljárás végrehajtáshoz. Ha ezt a lehetőséget választja, akkor manuálisan meg kell ismételnie a raktárba kiadás folyamatát, amikor további anyagok rendelkezésre állnak.  
 25. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

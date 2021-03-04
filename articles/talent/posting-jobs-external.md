@@ -102,3 +102,6 @@ Ha probléma merül fel a feladással a Broadbean-be, próbálja meg ezeket a l�
 [Állás létrehozása, jóváhagyása és feladása az Attract alkalmazásban](./creating-jobs-attract.md)
 
 [Broadbean integráció engedélyezése a Microsoft Dynamics 365 Talent - Attract megoldásban](./attract-admin-job-board-settings.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

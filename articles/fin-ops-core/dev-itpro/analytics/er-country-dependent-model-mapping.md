@@ -496,3 +496,6 @@ Győződjön meg róla, hogy a megosztott modell-hozzárendelés konfiguráció 
 - Az ER modell-leképezési konfiguráció legalább egy verzió vagy **Befejeződött** vagy **Megosztott** állapottal rendelkezik. Ebben az esetben a legnagyobb verziószámú verziót használja a rendszer az ER formátum végrehajtásához.
 - A **Tervezet futtatása** lehetőség ez ER modell-leképezési konfigurációnál be van kapcsolva. Ebben az esetben a **Tervezet** állapottal rendelkező verziót használja a rendszer az ER formátum végrehajtásához.
 > A **Tervezet futtatása** beállítás akkor válik elérhetővé az egyes ER modell-leképezési konfigurációk **Konfigurációk** oldalán, ha a **Futtatási beállítás** ER felhasználói paraméter be van kapcsolva.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -92,3 +92,6 @@ Az eljárás végrehajtásának előfeltétele egy másik adathalmaz esetént, e
 12. Zárja be a lapot.
 13. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

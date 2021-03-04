@@ -150,3 +150,6 @@ Miután megtekintette a sablon módosításainak előnézetét, kövesse az alá
 [Sablonok és elrendezések áttekintése](templates-layouts-overview.md)
 
 [Előre beállított elrendezések használata](work-with-layouts.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

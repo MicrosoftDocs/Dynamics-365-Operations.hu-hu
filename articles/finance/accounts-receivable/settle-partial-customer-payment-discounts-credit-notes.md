@@ -61,3 +61,6 @@ A kiegyenlítés 100,00 lesz, és a fizetés esetén 99,00 és 1,00 engedményt 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

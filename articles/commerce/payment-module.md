@@ -118,3 +118,6 @@ Ha mind az Adyen, mind PayPal fizetési összekötőkre van szükség, adja hozz
 [Dynamics 365 fizetési összekötő a PayPal szolgáltatáshoz](paypal.md)
 
 [Erős vevőhitelesítés (SCA) az Adyen segítségével](adyen_redirect.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

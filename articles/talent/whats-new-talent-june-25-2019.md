@@ -93,3 +93,6 @@ Egy új beállítással a vezetők mind a közvetlen beosztottak, mind a közvet
 ### <a name="print-performance-reviews"></a>Teljesítményértékelések nyomtatása
 
 Az alkalmazottak, a vezetők és a HR alkalmazottai kinyomtathatják az alkalmazottak teljesítménykimutatását.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

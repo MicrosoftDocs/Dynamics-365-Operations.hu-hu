@@ -116,3 +116,6 @@ A következő ábra bemutatja a **Hasonló megvásárlása link engedélyezése*
 [Ajánlások létrehozása bemutató adatokkal](product-recommendations-demo-data.md)
 
 [Termékajánlatok GYIK-je](faq-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

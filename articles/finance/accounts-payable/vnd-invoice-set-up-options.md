@@ -63,3 +63,6 @@ A következő paraméterek állnak rendelkezésre:
 
 - **Automatikus egyeztetési próbálkozások száma** – Kiválaszthatja, hogy hány alkalommal próbálja meg a rendszer egyeztetni a terméknyugtákat egy adott számlasorral, mielőtt a folyamatot sikertelenként lezárná. Ha a rendszer eléri a megadott próbálkozásszámot, a számla törlődik az automatizált feldolgozásból.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

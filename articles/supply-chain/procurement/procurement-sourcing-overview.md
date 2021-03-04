@@ -93,3 +93,6 @@ A leszámlázott beszerzési rendelések a kötelezettséget rögzítik a száll
 ## <a name="vendor-performance"></a>Szállító teljesítménye
 
 A teljesítményt, illetve a beszerzés felülvizsgálatát *beszerzési és kötelezettségjelentések* támogatják, amelyek kitérnek a költések, illetve a szállítói teljesítmény elemzésére is.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -58,3 +58,6 @@ Létrehozhat célokat, tevékenységeket adhat hozzá a célokhoz, nyomon követ
     * Gyakran van több olyan cél, amely ugyanaz vagy hasonló csoporttagok vagy az összes alkalmazott esetén.     A HR-adminisztrátor vagy vezető létrehozhatnak egy vagy több célsablont tartalmazó célcsoportot. Célok hozzáadhatók célcsoportból, majd módosíthatók úgy, hogy megfeleljen az ütemtervnek.  
     * Ellenőrzés létrehozásánál célok adhatók hozzá az ellenőrzéshez. Az ellenőrzések feladat-útmutatójában megtekintheti, hogyan adhat hozzá célokat az ellenőrzésekhez.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

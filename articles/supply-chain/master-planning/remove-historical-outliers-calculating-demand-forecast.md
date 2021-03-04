@@ -51,3 +51,6 @@ A kiugró értékek kizárásával javíthatja az előrejelzés pontosságát. E
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

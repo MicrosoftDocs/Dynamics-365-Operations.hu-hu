@@ -51,3 +51,6 @@ Ez a feladat az USMF bemutatócéget használja.
 16. Válassza ki az **Új időszak intervalluma** elemet. Amint megadta az első intervallumot az új időszakok automatikusan létrejönnek. Visszatérhet és szükség szerint új intervallumokat adhat hozzá.  
 17. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

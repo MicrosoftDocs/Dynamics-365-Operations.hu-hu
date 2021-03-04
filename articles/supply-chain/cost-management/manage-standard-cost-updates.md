@@ -49,3 +49,6 @@ Ez a példa egy további költségszámítási verziót használt a 2016-os év 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

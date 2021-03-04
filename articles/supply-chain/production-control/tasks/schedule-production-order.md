@@ -55,3 +55,6 @@ Ez az eljárás bemutatja, hogyan lehet termelési rendelést ütemezni. Ez az e
 6. Zárja be a lapot.
 7. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

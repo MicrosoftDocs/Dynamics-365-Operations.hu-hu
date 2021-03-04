@@ -62,3 +62,6 @@ Ez a Feladat útmutató a készként történő jelentés példáját mutatja be
 18. Kattintson a Munka részletei lehetőségre.
     * Amikor a termelési rendelést készként jelentették, a rendszer nem hozott létre munkát a betárolásra. Ennek az az oka, hogy a munkairányelveket úgy határozzák meg, hogy megakadályozza a munka létrehozását, amikor a rendszer készként jelenti a L0101 terméket a 001 helyen.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

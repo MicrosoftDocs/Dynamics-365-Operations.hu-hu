@@ -117,3 +117,6 @@ Ha nagy mennyiségű tranzakciós adathoz kívánja használni ezt a tervet, akk
 [FIRSTORNULL ER függvény](er-functions-list-firstornull.md)
 
 [WHERE ER-függvény](er-functions-list-where.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

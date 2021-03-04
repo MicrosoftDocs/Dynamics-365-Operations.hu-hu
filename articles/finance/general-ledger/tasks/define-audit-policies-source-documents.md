@@ -88,3 +88,6 @@ Ez a témakör bemutatja, hogyan állíthatók be és működtethetők könyvviz
 57. Bontsa ki a **Társítások** szakaszt.
 58. Keresse meg és jelölje ki a kívánt rekordot a listán.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

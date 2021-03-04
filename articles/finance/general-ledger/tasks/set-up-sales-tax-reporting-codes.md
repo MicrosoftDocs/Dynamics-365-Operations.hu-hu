@@ -39,3 +39,6 @@ Ez a felvétel az DEMF bemutatócéget használja.
 6. A **Rövid leírás** mezőben adjon meg egy belső használatra szánt leírást.
 7. Kattintson a **Mentés** gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

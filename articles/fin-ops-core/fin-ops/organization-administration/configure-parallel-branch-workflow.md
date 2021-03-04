@@ -50,3 +50,6 @@ Végezze el a következő lépéseket a párhuzamos ág elemeinek megtervezésé
 ## <a name="additional-resources"></a>További erőforrások
 
 [Munkafolyamatok létrehozása – áttekintés](create-workflow.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

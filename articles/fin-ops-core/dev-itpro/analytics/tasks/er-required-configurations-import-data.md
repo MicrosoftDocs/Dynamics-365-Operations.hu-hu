@@ -254,3 +254,6 @@ Hajtsa végre ezt a formátumleképezést tesztelési célokra. Használja a kor
 27. Zárja be a lapot.
 28. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

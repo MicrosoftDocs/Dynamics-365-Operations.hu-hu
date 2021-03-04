@@ -89,3 +89,6 @@ A szövegblokkmodul új oldalra való felvételéhez és a kötelező tulajdons�
 
 [Videólejátszó modul](add-video-player.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

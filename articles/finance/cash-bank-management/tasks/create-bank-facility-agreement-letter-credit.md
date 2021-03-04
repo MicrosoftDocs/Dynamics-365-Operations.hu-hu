@@ -51,3 +51,6 @@ A feladat végigvezeti a banki hitelmegállapodás létrehozásán, az Akkredit�
 18. Kattintson a Kibontásra.
 19. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

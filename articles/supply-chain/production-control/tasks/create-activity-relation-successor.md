@@ -66,3 +66,6 @@ Előfeltételek:
 12. Zárja be a lapot.
 13. Frissítse a lapot..
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

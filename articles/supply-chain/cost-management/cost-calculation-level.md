@@ -57,3 +57,6 @@ Ezután létrejön egy termelési rendelés a C termékhez, és az A termék hoz
     - **C termék:** 2
 
 Ez a viselkedés biztosítja, hogy a termelési rendelési anyagjegyzékeinek módosításai ne befolyásolják a későbbi költségszámításokat.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

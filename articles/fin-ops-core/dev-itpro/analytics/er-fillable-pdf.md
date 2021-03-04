@@ -301,3 +301,6 @@ A következő ábra egy példát mutat be a létrejövő jelentés egy másik ol
 
 - [ER – Az OPENXML formátumban létrejövő jelentésekre vonatkozó konfigurációk tervezése (2016. november)](tasks/er-design-reports-openxml-2016-11.md)
 - [ER konfigurációk tervezése jelentések Word-formátumú előállításához](tasks/er-design-configuration-word-2016-11.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

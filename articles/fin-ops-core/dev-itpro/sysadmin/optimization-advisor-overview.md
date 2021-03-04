@@ -94,3 +94,6 @@ Adott szabályok kiértékelésének inaktiválásához válassza a szabály ál
 [Optimalizálási tanácsadó szabályainak létrehozása](./create-rules-optimization-advisor.md)
 
 [Optimalizálási tanácsadó a Dynamics 365 for Finance and Operations (Videó)](https://www.youtube.com/watch?v=MRsAzgFCUSQ)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

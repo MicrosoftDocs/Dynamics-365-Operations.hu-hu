@@ -197,3 +197,6 @@ A következő gyakorlatban fog létrehozni új jelentés. A jelentés akkor egym
 [Pénzügyi jelentések megtekintése](../../../finance/general-ledger/view-financial-reports.md)
 
 [Dynamics 365 Finance blog](https://community.dynamics.com/365/financeandoperations/b/dynamics-365-finance-blog)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

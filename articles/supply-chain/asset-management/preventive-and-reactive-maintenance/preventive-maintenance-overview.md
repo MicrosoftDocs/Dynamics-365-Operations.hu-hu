@@ -39,3 +39,6 @@ Az alábbi ábra egy olyan, a karbantartási tervek és a karbantartási körök
 
 ![1. ábra](media/01-preventive-maintenance.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -91,3 +91,6 @@ Ebben a témakörben két fő lépést kell végrehajtania:
 9. A **Rendszerbiztonsági tag** párbeszédpanelen válassza ki a rendszerbiztonsági tagot az **Elektronikus számlázásbővítmény** hozzáadásával.
 10. Válassza a **Hozzáadás** lehetőséget, majd a **Key Vault-módosítások mentése** elemet.
 11. Az **Áttekintés** oldalról másolja át a **DNS név** lehetőséghez tartozó kulcstartó értékét. Ezt az értéket fogják használni a szolgáltatás RCS-ben történő beállításakor, illetve *kulcstartó URI* néven fognak rá hivatkozni.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

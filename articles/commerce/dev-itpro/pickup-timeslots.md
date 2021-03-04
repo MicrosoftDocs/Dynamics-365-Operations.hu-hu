@@ -123,3 +123,6 @@ A következő ábra példát mutat be egy e-kereskedelmi rendelésre, amelynél 
 ## <a name="additional-resources"></a>További erőforrások
 
 [Átvételi információk modul](../pickup-info-module.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

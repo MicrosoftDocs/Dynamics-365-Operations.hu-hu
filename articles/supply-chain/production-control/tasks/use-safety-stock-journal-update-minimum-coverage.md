@@ -66,3 +66,6 @@ Ez az eljárás bemutatja, hogyan számolja ki a minimális fedezet javaslatokat
 5. A **Művelet panelen** kattintson a Tervezés elemre.
 6. Kattintson a **Cikkfedezet** elemre. Fontos megjegyezni, hogy a **Minimális mennyiség** frissült, így most már a biztonsági készlet naplójában szereplő minimum mennyiséget tükrözi.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

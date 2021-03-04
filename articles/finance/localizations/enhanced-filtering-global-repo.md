@@ -46,3 +46,6 @@ A keresés tovább finomítható a dokumentumtípus kiválasztásával, példáu
 [![Alkalmazott szűrő és Importálás az üzleti dokumentum típushoz](media/rcs-enhanced-filtering-applied.JPG)](./media/rcs-enhanced-filtering-applied.JPG) 
 
 A szűrt eredmények importálhatók egy felhasználó RCS-adattárába vagy egy Dynamics 365 Finance-környezetbe, egyesével vagy csoportban is. Ehhez válassza ki a konfigurációk csoportját, majd kattintson az **importálás** gombra.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

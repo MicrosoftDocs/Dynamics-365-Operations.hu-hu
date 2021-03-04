@@ -57,3 +57,6 @@ Ez a témakör bemutatja, hogyan hozhat létre értékesítési szerződést, am
 11. Válassza ki az **OK** lehetőséget.
 12. Zárja be a lapot. A szerződés immár hatályos. Elkezdheti a vevői rendelések csatolását a megállapodáshoz, a kötelezettség céljának kiegyenlítéséhez.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

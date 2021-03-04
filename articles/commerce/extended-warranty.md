@@ -239,3 +239,6 @@ A garancia egy olyan szolgáltatás, amely egy konkrét, egyedi termékekre vona
 [Szortimentek beállítása](set-up-assortments.md)
 
 [Számsorozatok áttekintése](../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

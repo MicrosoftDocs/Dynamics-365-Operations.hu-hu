@@ -296,3 +296,6 @@ A fürtben lévő cikkek betárolása előtt le kell zárni a fürtöt.
 ## <a name="notes-and-tips"></a>Megjegyzések és tippek
 
 Azokban az esetekben, amikor a fürt azonosítója egy beágyazott raklap számára egy szülő azonosítótábla lesz, a program automatikusan beírja a betárolási pozíciót, amikor a rendszer beolvassa a fürtazonosítót. Nem kell több azonosítótáblát beolvasni akkor sem, ha az azonosítótábla-létrehozás manuálisra van állítva.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

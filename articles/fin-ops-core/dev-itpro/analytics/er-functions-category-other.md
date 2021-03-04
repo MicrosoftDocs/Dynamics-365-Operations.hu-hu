@@ -55,3 +55,6 @@ Az Elektronikus jelentés (ER) üzleti területre jellemző függvényei a Micro
 [Képletszerkesztő az Elektronikus jelentéskészítésben](general-electronic-reporting-formula-designer.md)
 
 [Elektronikus jelentéskészítés képletének nyelve](er-formula-language.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

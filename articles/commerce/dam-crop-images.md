@@ -66,3 +66,6 @@ Az egyéni körülvágás befejezése után a képmódosítások szinte azonnal 
 [Képfókuszpontok testreszabása](dam-custom-focal-point.md)
 
 [Statikus fájlok feltöltése és kiszolgálása](upload-serve-static-files.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -52,3 +52,6 @@ Ez az eljárás bemutatja, hogyan lehet készre jelenteni egy termelési rendel�
 4. A listában kattintson a kijelölt sorban lévő hivatkozásra.
     * A Készre jelentés napló feladásra kerül. Ha módosítani szeretné a naplót, akkor manuálisan létrehozhat egy új naplót, ahol elvégezheti a módosításokat.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

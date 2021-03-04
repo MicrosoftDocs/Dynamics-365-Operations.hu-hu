@@ -87,3 +87,6 @@ A következő példa bemutatja, hogyan lehet módosítani a kezdőlap videolejá
 [Kategória céloldalának bővítése](enrich-category-page.md)
 
 [Oldaltartalom hozzáférhetőségének ellenőrzése](verify-accessibility.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

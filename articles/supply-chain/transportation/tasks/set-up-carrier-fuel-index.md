@@ -67,3 +67,6 @@ Ez az útmutató bemutatja, hogyan hozhat létre üzemanyag-mutató régiót, ü
 12. A listában kattintson a kijelölt sorban lévő hivatkozásra.
 13. Kattintson a Mentés gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

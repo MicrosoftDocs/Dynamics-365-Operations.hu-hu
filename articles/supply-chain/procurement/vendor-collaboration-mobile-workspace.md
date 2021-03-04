@@ -170,3 +170,6 @@ A rendelési soron végrehajtott összes módosítás megjelenik. A feltöltött
 
 ### <a name="open-confirmed-orders"></a>Visszaigazolt rendelések megnyitása
 Amikor a beszerzési rendelést megerősíti a vevő (ami azt jelenti, hogy a beszerzési rendelés **Megerősített** állapotra vált), megjelenik a nyitott és megerősített rendelésben. Mindaddig, amíg nincs regisztrálva fogadottként a vevő által, a listában marad.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

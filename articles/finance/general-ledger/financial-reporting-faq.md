@@ -88,3 +88,6 @@ Ha a jelentés értékei nem egyeznek a D365-ben várt értékekkel, az alábbi 
 2.  Exportálja a jelentést Excelbe.
 
 Most már a D365 főkönyvi kivonati jelentésébe másolhatja az Excelben létrehozott pénzügyi jelentés, és összehasonlíthatja a „Záró egyenleg” oszlopokat.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

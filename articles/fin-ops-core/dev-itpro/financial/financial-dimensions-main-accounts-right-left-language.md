@@ -38,3 +38,6 @@ A pénzügyi dimenziók és a fő számlák rendkívül alkotóelemek a megvaló
 - Ne használja a számlatükör kiválasztott elválasztó karakterét a pénzügyi dimenzió és a főszámla értékei esetében.
 
 Ha követi ezeket a gyakorlati tanácsokat, azzal segít garantálni a felhasználó által meghatározott sorrend pontos betartását mindenhol a rendszerben..
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

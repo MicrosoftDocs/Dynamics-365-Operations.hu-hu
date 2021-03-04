@@ -93,3 +93,6 @@ Dupla szinteket is használhat. Ha a **Mérték beállítása** képernyőn a **
    | **Rugalmas jóváírás dohányzó mértéke** | A juttatás költségének megfelelő rugalmas jóváírások száma, a dohányzókhoz meghatározott szint számítása alapján. |
 
 5. Válassza a **Mentés** lehetőséget. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

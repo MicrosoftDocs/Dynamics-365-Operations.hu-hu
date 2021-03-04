@@ -57,3 +57,6 @@ Hajtsa végre a következő lépéseket a nem elérhető ER-sablonokkal kapcsola
 Egy hasonló hiba merülhet felé, ha az alkalmazás példányát egy másik helyre telepíti át, amelyet már többször áttelepítési célhelyként alkalmaztak, és amelyhez a Blob-tárhely már tartalmaz ER-sablonfájlokat.
 
 Mivel előfordulhat, hogy a több ER formátumkonfigurációja is van, ez a folyamat időigényes lehet. Ennek megfelelően javasoljuk, hogy hibás hivatkozásokkal rendelkező sablonok automatikus helyreállításához használja az [ER-sablonok biztonságimentés-tárhelye](er-backup-storage-templates.md) funkciót.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

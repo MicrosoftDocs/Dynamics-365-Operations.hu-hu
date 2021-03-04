@@ -85,3 +85,6 @@ Ha az integrált [Microsoft hozzáférhetőségi információk](https://accessib
 [A termékoldal bővítése](enrich-product-page.md)
 
 [Kategória céloldalának gazdagítása](enrich-category-page.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -154,3 +154,6 @@ A következő beállításokat akkor használhatja, ha az anyagokat mindig manu�
 | Készként jelentés |   Automatikus anyagjegyzék-felhasználás    | <strong>Soha</strong>  |
 | Készként jelentés | Módosítás befejezésének jelentése - online | <strong>Állapot</strong> |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

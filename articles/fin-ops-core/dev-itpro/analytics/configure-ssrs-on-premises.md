@@ -93,3 +93,6 @@ Kövesse a témakörben található a lépéseket az SQL Server Reporting Servic
 13. Kattintson a **Kilépés** ikonra a **Reporting Services konfigurációkezelő** bezárásához.
 
     [![a reporting services konfigurációkezelőjének bezárása](./media/ssrs-config-manager-14.png)](./media/ssrs-config-manager-14.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

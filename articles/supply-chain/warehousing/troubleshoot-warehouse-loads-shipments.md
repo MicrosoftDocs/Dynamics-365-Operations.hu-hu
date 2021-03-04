@@ -94,3 +94,6 @@ Nem adhat ki részlegesen szállított rakomány a raktárba. Amikor elvégzi a 
 ### <a name="issue-resolution"></a>Probléma megoldása
 
 A [KB 470069 számú probléma](https://fix.lcs.dynamics.com/Issue/Details?kb=4574490&bugId=470069&dbType=3&qc=84ce1e09d7032d8b8ef86f5a0c68b86badf3dfaf29686c5ebbe97c53c0957b5f) („A részlegesen szállított rakományok újrahullámosíthatók és újra feldolgozhatók”) [a 10.0.15 kiadásban](../get-started/whats-new-scm-10-0-15.md) lett kijavítva.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

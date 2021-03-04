@@ -130,3 +130,6 @@ Emellett létrehozhatók és használhatók kimutatások és diagramok a költs�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

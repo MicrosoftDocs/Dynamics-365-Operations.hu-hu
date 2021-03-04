@@ -209,3 +209,6 @@ A Főkönyv konszolidálásához egy új beállítás lett hozzáadva, amely a f
 -  Ezután kiválaszthatja, hogy a forrás vállalattól a könyvelési pénznemet vagy a jelentési pénznemet használja-e a konszolidációs vállalatban a tranzakciós pénznemnek.
 
 - A forrásvállalat könyvelési vagy jelentési pénzneme közvetlenül lesz másolva a konszolidációs vállalat könyvelési vagy jelentési pénznemösszegeire, ha valamelyik pénznem megegyezik. A konszolidációs vállalatban a könyvelési és jelentési pénznem összegeit az árfolyam alapján számítja ki a program, ha a pénznemek egyike sem egyezik meg.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

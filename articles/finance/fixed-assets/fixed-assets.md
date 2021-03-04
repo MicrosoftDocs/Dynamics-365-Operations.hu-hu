@@ -60,3 +60,6 @@ Tekintse meg az útmutató-videókat, amelyek a [Microsoft Dynamics 365 YouTube 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

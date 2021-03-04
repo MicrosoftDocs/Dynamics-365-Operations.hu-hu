@@ -142,3 +142,6 @@ A tárolómodul új oldalra való felvételéhez és a kötelező tulajdonságok
 [Fejlécmodul](author-header-module.md)
 
 [Láblécmodul](author-footer-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

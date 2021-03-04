@@ -139,3 +139,6 @@ A Commerce felhasználója követi a munkafolyamatot, hogy kiszámolja, jóváha
 - Távollét regisztrálása
 
 Az Idő és jelenlét regisztrációkkal kapcsolatos további tudnivalókat lásd: [Feldolgozási idő és jelenlét nyilvántartása](https://technet.microsoft.com/library/aa573180.aspx).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

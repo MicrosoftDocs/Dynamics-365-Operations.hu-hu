@@ -309,3 +309,6 @@ A BR-00053 (NF-e szövetségi) funkció engedélyezése és használata korláto
 - [Elektronikus számlázásbővítmény – áttekintés](e-invoicing-service-overview.md)
 - [Első lépések az Elektronikus számlázásbővítménnyel](e-invoicing-get-started.md)
 - [Az Elektronikus számlázásbővítmény beállítása](e-invoicing-setup.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

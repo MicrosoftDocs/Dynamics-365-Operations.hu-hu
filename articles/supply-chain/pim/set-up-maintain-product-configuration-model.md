@@ -53,3 +53,6 @@ Ez a cikk bemutatja a termékkonfigurációs modell létrehozásának és beáll
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

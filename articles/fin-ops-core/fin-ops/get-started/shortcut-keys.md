@@ -255,3 +255,6 @@ A 11-es platformfrissítés óta a felhasználók a jelenleg elérhető billenty
 
 [Billentyűparancsok a hiányzó számla elemzéshez](../../../finance/general-ledger/financial-reporting-keyboard-shortcuts.md)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

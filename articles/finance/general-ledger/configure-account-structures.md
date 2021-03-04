@@ -107,3 +107,6 @@ A számlastruktúra beállításakor van néhány ajánlott eljárás, melyet k�
 Ha elégedett az új beállítással vagy a számlastruktúra módosításával, aktiválnia kell. Ha egy számlastruktúra hozzá van rendelve egy főkönyvhöz, az aktiválási folyamat hosszú ideig is eltarthat, mivel a rendszerben szereplő összes fel nem adott tranzakciót szinkronizálni kell az új struktúrával. A feladott tranzakciókat nem befolyásolja a számlastruktúra módosítása.
 
 További tudnivalókért lásd: [Számlatükör tervezése](plan-chart-of-accounts.md), [Pénzügyi dimenziók](financial-dimensions.md) és [A számla és dimenzió kombinációk megadása (szegmentált bejegyzés ellenőrzés)](enter-account-dimension-combinations-segmented-entry-control.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

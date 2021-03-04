@@ -60,3 +60,6 @@ Jegyezze fel a felhasználó **Felhasználótípus** tulajdonságát. Ha a **Use
 ```
 PS C:\>Set-AzureADUser -ObjectId "testUpn@tenant.com" -UserType Member
 ```
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

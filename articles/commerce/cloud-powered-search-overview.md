@@ -82,3 +82,6 @@ A Dynamics 365 Commerce továbbfejlesztett rendezésével a vevők rendezhetnek,
 [Alapértelmezett kategória-céloldal és keresési találatoldal áttekintése](category-search-page-overview.md)
 
 [SEO-metaadatok kezelése](manage-seo-metadata.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

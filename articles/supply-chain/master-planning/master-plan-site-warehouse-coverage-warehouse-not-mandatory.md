@@ -63,3 +63,6 @@ Az alábbi ábra az alapütemezés folyamatát illusztrálja. Az ábrán láthat
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

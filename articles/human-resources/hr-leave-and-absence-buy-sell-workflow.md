@@ -81,3 +81,6 @@ Ezek a példák azt mutatják be, hogyan lehet különböző típusú munkafolya
 [Szabadság és távollét áttekintése](hr-leave-and-absence-overview.md)<br>
 [Szabadság vásárlásával és eladásával kapcsolatos irányelv kezelése](hr-leave-and-absence-manage-buy-and-sell-leave-policies.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

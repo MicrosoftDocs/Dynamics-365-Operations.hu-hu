@@ -57,3 +57,6 @@ Az `ISVALIDCHARACTERISO7064 ("AT61")` **HAMIS** értéket ad vissza.
 ## <a name="additional-resources"></a>További erőforrások
 
 [Egyéb (üzleti területre jellemző) függvények](er-functions-category-other.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

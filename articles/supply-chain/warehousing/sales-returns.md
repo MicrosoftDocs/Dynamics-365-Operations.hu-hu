@@ -331,3 +331,6 @@ A visszáru-rendelési sor létrejön az **Értékesítési rendelés keresése*
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -66,3 +66,6 @@ A Kompenzáció és juttatások tartalomcsomag jelentéseinek feltöltésére az
 | Munkaerő\_WorkerName             | Keresztnév, vezetéknév és teljes név                                                                       | Munkaerő\_CurrentWorker, Munkaerő\_TerminatedWorker, Munkaerő\_WorkerTrend |
 | Munkaerő\_WorkerTitle            | Cím és szolgálati idő dátuma                                                                                   | Munkaerő\_CurrentWorker, Munkaerő\_TerminatedWorker, Munkaerő\_WorkerTrend |
 | Munkaerő\_WorkerTrend            | Túlórázó dolgozók, létszám, vállalat és beosztás                                                        | Munkaerő\_Vállalat, Munkaerő\_Kompenzáció, Munkaerő\_GeographicLocation, Munkaerő\_Teljesítmény, Munkaerő\_WorkerName, Munkaerő\_ReportsToWorkerName, Munkaerő\_CalendarOffset, Munkaerő\_Dátum, Munkaerő\_WorkerTitle, Munkaerő\_Demográfia, Munkaerő\_Foglalkoztatás, Munkaerő\_Feladat, Munkaerő\_WorkerBenefit |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -504,3 +504,6 @@ Definiálnia kell egy minőségi társítást az üzleti folyamat minden olyan v
 [Szabálytalanság kezelése](enable-nonconformance-management.md)
 
 [Raktári folyamatok minőségkezelése](quality-management-for-warehouses-processes.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -86,3 +86,6 @@ A Dynamics 365 Commerce csatorna létrehozása előtt számos előfeltétel-fela
 [Kiskereskedelmi csatorna beállítása](channel-setup-retail.md)
     
 [Online csatorna beállítása](channel-setup-online.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

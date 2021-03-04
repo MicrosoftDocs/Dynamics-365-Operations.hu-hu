@@ -47,3 +47,6 @@ Az ezzel a funkcióval kapcsolatos további tudnivalókért játssza le az **ER 
 [Elektronikus jelentéskészítés (ER) céljai](electronic-reporting-destinations.md)
 
 [Képletszerkesztő elektronikus jelentésekhez (ER)](general-electronic-reporting-formula-designer.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

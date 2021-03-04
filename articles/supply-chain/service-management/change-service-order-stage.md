@@ -41,3 +41,6 @@ A következő lépések segítségével vigye a szervizrendelést a következő 
 4.  A **Szolgáltatás állapotának módosítása** képernyőn válassza ki a megfelelő fokozatot.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

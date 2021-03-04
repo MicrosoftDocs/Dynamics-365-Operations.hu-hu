@@ -145,3 +145,6 @@ A Finance and Operations mobilalkalmazás letöltése és telepítése:
 11. Tekintse meg az egyedi költségelemek teljesítményét.
 12. Konkrét költségelemekre is kereshet.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

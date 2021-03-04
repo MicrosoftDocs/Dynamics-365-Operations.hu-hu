@@ -56,3 +56,6 @@ Naptár beállításához kövesse az alábbi lépéseket:
 10. Ha naptárat szeretne hozzárendelni az alkalmazottakhoz, válassza a **Hozzárendelés alkalmazottakhoz** lehetőséget a műveleti ablaktáblán. Válassza ki, hogy mely alkalmazottakhoz szeretné hozzárendelni ezt a naptárat, majd kattintson a **Hozzárendelés** elemre.
 
 Az alkalmazottaknál nem előírás, hogy legyen naptár hozzájuk rendelve. Ha van meghatározott munkaidőnaptár, akkor a munkaszüneti napok automatikusan kimaradnak a kérelemből. A mennyiség (órákban vagy napokban megadva) alapértelmezés szerint a naptárban meghatározott munkaidővel azonos. Ha nincs hozzárendelve naptár az alkalmazotthoz, akkor az összes nap rendelkezésre áll szabadságkérésre, és a szabadság mennyisége nem alapértelmezett a kérésnél. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

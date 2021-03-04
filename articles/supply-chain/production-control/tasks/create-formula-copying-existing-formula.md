@@ -57,3 +57,6 @@ Ez az eljárás bemutatja, hogyan lehet gyorsan létrehozni új receptúrát meg
 3. Kattintson az OK gombra.
 4. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

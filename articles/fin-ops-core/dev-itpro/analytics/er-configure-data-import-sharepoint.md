@@ -206,3 +206,6 @@ Tekintse át a `BankImport_RU` modell `Application Suite` osztályának kódját
 
 [Az ER keretrendszer API módosításai az Application update 7.3 számára](er-apis-app73.md)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -86,3 +86,6 @@ További súgó áll rendelkezésére feladat útmutatókon belül. A feladat-ú
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

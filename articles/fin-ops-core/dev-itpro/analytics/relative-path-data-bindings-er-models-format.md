@@ -57,3 +57,6 @@ Ez a funkció nincs hatással az elektronikus jelentéskészítési keretrendsze
 ## <a name="additional-resources"></a>További erőforrások
 
 [ER-képlet nyelve](er-formula-language.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

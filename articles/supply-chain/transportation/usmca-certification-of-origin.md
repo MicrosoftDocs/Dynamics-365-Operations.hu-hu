@@ -140,3 +140,6 @@ A tanúsítványt aláíró felhasználónak a dokumentum létrehozása után ma
 ### <a name="page-numbers"></a>Oldalszámok
 
 Az aktuális oldal és a dokumentum aljára nyomtatott oldalak száma.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

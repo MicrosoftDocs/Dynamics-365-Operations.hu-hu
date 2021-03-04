@@ -52,3 +52,6 @@ Ez az útmutató bemutatja, hogyan hozhat létre meghirdetési típust, és hogy
 8. Kattintson az OK gombra.
 9. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

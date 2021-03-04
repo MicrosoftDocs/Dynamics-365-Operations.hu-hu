@@ -77,3 +77,6 @@ Végül hozzá kell adni egy automatizált feladatot a költségvetés-tervezés
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -49,3 +49,6 @@ Létre kell hoznia egy új menüelemet olyan munka móddal, amely nem használ m
 - Vegyes azonosítótábla bevételezése és eltárolása
 
 A forrásbizonylat sorainak azonosítására szolgáló beállítások a következők: beszerzési rendelés – cikk, beszerzésirendelés-sor, visszárurendelés, átmozgatási rendelés – cikk és átmozgatási rendelés sora. Ezek a beállítások módosíthatják a bevételezési rendelést vagy egyetlen azonosítótáblát. Az utolsó beállítás a rakománycikk szerint. Több cikket lehet hozzáadni egy azonosítótáblához, de több rakomány között nem lehet váltani.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

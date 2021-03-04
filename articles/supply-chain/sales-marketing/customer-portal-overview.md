@@ -69,3 +69,6 @@ A [kettős írás](https://docs.microsoft.com/powerapps/maker/portals/overview) 
 ![Ügyfélportál függőségei](media/customer-portal-elements.png "Ügyfélportál függőségei")
 
 A Ügyfélportál kiindulási pontként szolgál olyan szervezeteknek, amelyek a Power Apps portálokat szeretnének használni egy kívülről elérhető webhely kiépítésére, amely a Supply Chain Management telepítés adatait használja. Segíti a szervezeteknek a kettős írás a Supply Chain Management és a Power Apps portálok csatlakoztatásában.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

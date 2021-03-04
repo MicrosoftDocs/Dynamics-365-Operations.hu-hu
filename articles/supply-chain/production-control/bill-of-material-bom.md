@@ -118,3 +118,6 @@ Válassz ki a **Szállító** típust, ha a termelési folyamat alvállalkozót 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -171,3 +171,6 @@ Ehhez a kombinációhoz a következő mezőket kell beállítani:
 
 > [!IMPORTANT]
 > Ha azt szeretné, hogy a DOM futtatáskor figyelembe vegye ezeket a költségeket, hozzá kell adnia a költségtényezőt a megfelelő teljesítési profilhoz.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

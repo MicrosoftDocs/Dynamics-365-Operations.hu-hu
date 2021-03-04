@@ -48,3 +48,6 @@ Részleteket tekinthet meg egy kijelölt rendelés határidőiről és művelete
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

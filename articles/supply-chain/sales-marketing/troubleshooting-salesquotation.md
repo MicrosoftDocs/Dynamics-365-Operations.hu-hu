@@ -40,3 +40,6 @@ Ha az értékesítési mennyiséget (**SalesQty** mező) egy *Szolgáltatás* t�
 
 Nem állíthat be értékesítési mennyiséget a szolgáltatási tétel termékekhez. Ha például egy terméket telepítésével kapcsolatos szolgáltatást kínál, akkor nincs értelme a mennyiséget rögzítenie, mert nincs tényleges tétel. Csak egy szolgáltatás van.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -55,3 +55,6 @@ A `COUNT (SPLIT("abcd" , 3))` a **2** értéket adja vissza, mert a példában h
 ## <a name="additional-resources"></a>További erőforrások
 
 [Lista függvények](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

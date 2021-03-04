@@ -109,3 +109,6 @@ Miután megtekintette az előre beállított elrendezés módosításainak előn
 [Sablonok és elrendezések áttekintése](templates-layouts-overview.md)
 
 [Sablonok használata](work-with-templates.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

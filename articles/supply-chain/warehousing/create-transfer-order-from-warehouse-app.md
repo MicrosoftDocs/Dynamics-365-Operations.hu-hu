@@ -334,3 +334,6 @@ Az átmozgatási rendelések létrehozása a **Szállítási dátum ellenőrzés
 #### <a name="can-i-use-a-license-plate-having-physical-negative-inventory-on-hand"></a>Használhatok negatív tényleges aktuális készlettel rendelkező azonosítótáblát?
 
 A funkció csak pozitív tényleges aktuális mennyiségeket támogat. Győződjön meg róla, hogy a raktárkészlet pozitív tényleges aktuális mennyiség, és ellenőrizze a készletállapotot, mielőtt az azonosítótáblát egy átmozgatási rendeléshez társítja.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

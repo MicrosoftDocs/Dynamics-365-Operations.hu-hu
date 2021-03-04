@@ -76,3 +76,6 @@ Ha az ön üzleti modellje lehetővé teszi a következő gyakorlatokat, azok se
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

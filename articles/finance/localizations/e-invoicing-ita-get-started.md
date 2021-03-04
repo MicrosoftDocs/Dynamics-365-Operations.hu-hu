@@ -246,3 +246,6 @@ Megtekintheti az összes beküldött dokumentum beküldési naplóját.
 - [Elektronikus számlázásbővítmény – áttekintés](e-invoicing-service-overview.md)
 - [Első lépések az Elektronikus számlázásbővítménnyel](e-invoicing-get-started.md)
 - [Az Elektronikus számlázásbővítmény beállítása](e-invoicing-setup.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -107,3 +107,6 @@ Az alábbi táblázat felsorolja azokat a képernyőket, amelyek támogatják a 
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

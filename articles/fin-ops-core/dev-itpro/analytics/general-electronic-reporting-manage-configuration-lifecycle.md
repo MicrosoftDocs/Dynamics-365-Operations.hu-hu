@@ -87,3 +87,6 @@ A fejlesztői környezetben megtervezett ER-konfigurációk feltölthetők a tes
 ## <a name="additional-resources"></a>További erőforrások
 
 [Elektronikus jelentéskészítés (ER) áttekintése](general-electronic-reporting.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

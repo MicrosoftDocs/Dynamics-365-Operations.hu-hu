@@ -90,3 +90,6 @@ Amikor automatikusan állít elő szervizrendeléseket, a szervizfeladatokat fel
 2. Válassza ki a **Beállítás** lapon a **Szervizfeladat szerint** lehetőséget a **Szervizrendelések kombinálása** mezőben.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

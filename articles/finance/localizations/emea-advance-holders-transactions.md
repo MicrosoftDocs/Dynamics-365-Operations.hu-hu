@@ -64,3 +64,6 @@ A bizonylatnapló feldolgozása után, amennyiben az **Átutalandó összeg** me
 
 - [Előleg alkalmazotthoz (Kelet-Európa)](tasks/advance-payment-employee.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

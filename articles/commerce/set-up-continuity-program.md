@@ -50,3 +50,6 @@ A folytonos program beállítása után (amelyről a fenti részben olvashat), k
 - **Folytonossági sorok meghosszabbítása** (szükség esetén) – Hosszabbítsa meg a folytonos esemény ismétlődéseinek számát. A szállítások ismétlődése túllépheti a hívásközponti paramétereknél a **Folytonos ismétlődés küszöbértéke** mezőben megadott limitet.
 - **Folytonossági frissítés elvégzése** (szükség szerint) – Szinkronizálja a módosításokat a folytonos program és a szülő folytonos értékesítési rendelések között.
 - **Folytonossági szülősorok és rendelések lezárása** – Zárja le a folytonos megrendeléseket.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

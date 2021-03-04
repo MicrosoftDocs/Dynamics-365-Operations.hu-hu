@@ -175,3 +175,6 @@ public static void initializeReportControl(
 | showFilterPane   | Logikai érték, amely azt jelzi, hogy megjelenjen (**true**) vagy rejtve maradjon (**false**) a szűrés ablaktáblája.     |
 | showNavPane      | Logikai érték, amely azt jelzi, hogy megjelenjen (**true**) vagy rejtve maradjon (**false**) a navigációs ablaktábla. |
 | defaultFilters   | A Power BI jelentés alapértelmezett szűrői.                                                                 |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

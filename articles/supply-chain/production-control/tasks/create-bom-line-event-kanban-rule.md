@@ -83,3 +83,6 @@ Ez a feladat az esemény kanbanszabály létrehozásának beállítására szolg
     * Vegye figyelembe, hogy a rendszer a kanbant az M0001 cikk beszerzésére hozta létre a becsült termelési rendelésre vonatkozóan.  
     * Ez az utolsó lépés!  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

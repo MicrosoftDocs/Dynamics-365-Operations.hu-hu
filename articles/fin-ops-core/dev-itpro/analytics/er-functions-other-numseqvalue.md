@@ -105,3 +105,6 @@ Ha a **NumSeq** adatforrást hívják meg, az új létrehozott értékét ad vis
 ## <a name="additional-resources"></a>További erőforrások
 
 [Egyéb (üzleti területre jellemző) függvények](er-functions-category-other.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

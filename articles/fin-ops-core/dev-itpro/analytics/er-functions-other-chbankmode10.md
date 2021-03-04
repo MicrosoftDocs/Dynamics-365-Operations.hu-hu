@@ -55,3 +55,6 @@ A `CH_BANK_MOD_10 ("VEND-200002")` a **3** értéket adja vissza.
 ## <a name="additional-resources"></a>További erőforrások
 
 [Egyéb (üzleti területre jellemző) függvények](er-functions-category-other.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

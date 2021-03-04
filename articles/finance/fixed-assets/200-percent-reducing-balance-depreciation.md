@@ -90,3 +90,6 @@ A 200% degresszív értékcsökkenési módszer elosztja a 200 százalékot az �
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

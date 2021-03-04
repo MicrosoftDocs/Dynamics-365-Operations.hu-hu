@@ -62,3 +62,6 @@ Ez az eljárás bemutatja, hogy hogyan kereshet ki egy vevőt, hozhat létre egy
 
 [Szállítási mód módosítása a pénztárban](../pos-change-delivery-mode.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

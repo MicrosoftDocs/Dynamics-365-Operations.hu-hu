@@ -56,3 +56,6 @@ Ezen feladati útmutatóhoz szükséges szerepkör: Pénztáros. Ez a feladat az
 16. Zárja be a lapot.
 17. Kattintson a Jövőben esedékes csekkek fülre.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

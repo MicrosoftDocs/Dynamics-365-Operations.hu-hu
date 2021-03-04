@@ -129,3 +129,6 @@ Ezek a feladatok rendszergazdáknak szólnak.
 8. Írja be a „PRT” értéket az Ország/régió mezőbe.
 9. Kattintson a Mentés gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -44,3 +44,6 @@ A **Visszárurendelés törlése** képernyőn egyszerre törölhet több vissz�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -140,3 +140,6 @@ Jóváhagyhatja a kötegegyesítés készletnaplóját **Az összes kötegegyes�
 
 ## <a name="after-i-merged-a-catchweight-item-why-cant-i-see-the-catchweight-information-in-the-inventory-journal"></a>Miután egyesítettem a tényleges súllyal rendelkező cikkeket, miért nem látszik a tényleges súly adat a készletnaplóban?
 Ugyanúgy egyesítheti a tényleges súllyal rendelkező cikkek kötegeit, mint minden más cikket. Azonban a tényleges súly adaton nem jelennek meg a készletnaplóban. Ajánlatos a tényleges súly adatok ellenőrzése a kötegegyesítés készletnaplóba történő átvitele előtt.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

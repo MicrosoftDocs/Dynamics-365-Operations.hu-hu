@@ -83,3 +83,6 @@ A műveleti ablak gombjai lapokon vannak rendezve. A következő táblázat röv
 | Hibák                              | A **Eszközhibák** oldal megnyitása, ahol megtekinthető a kijelölt munkavégzési helyszínnel összekapcsolt eszközhiba-regisztrációk listája. |
 | Munkavégzési helyszín állapotának frissítése    | A kijelölt munkavégzési helyszín állapotának frissítése.                                                                                        |
 | Életciklus-állapot naplója                 | A kijelölt munkavégzési helyszín állapotait megjelenítő napló megtekintése.                                                                        |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

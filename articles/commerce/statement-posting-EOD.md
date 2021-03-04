@@ -174,3 +174,6 @@ A kimutatásfeladási funkción egyéb, a felasználó által látható, hátté
 
     - Menjen a **Retail és Commerce** \> **Központ beállítása** \> **Paraméterek** \> **Kiskereskedelmi paraméterek** lehetőségre. Ezután a **Feladás** lapon, a **Készletmódosítás** gyorslapon, a **Részletességi szint** mezőben válassza ki az **Összegzés** lehetőséget.
     - Menjen a **Retail és Commerce** \> **Központ beállítása** \> **Paraméterek** \> **Kiskereskedelmi paraméterek** lehetőségre. Ezután a **Feladási** lapon, az **Összesítés** gyorslapon állítsa a **Bizonylattranzakciók** lehetőséget **Igen** beállításra.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

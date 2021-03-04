@@ -44,3 +44,6 @@ Ahhoz, hogy a költségobjektum-dimenziótagokat könnyebben lehessen importáln
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

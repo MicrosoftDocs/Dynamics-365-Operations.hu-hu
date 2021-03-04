@@ -423,3 +423,6 @@ Valószínűleg olyan Azure AD tartományból jelentkezett be az alkalmazás jel
 
 [Elektronikus jelentéskészítés (ER) konfigurálása az adatok Power BI-be való lehívásához](general-electronic-reporting-report-configuration-get-data-powerbi.md)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

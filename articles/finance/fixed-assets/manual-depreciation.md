@@ -76,3 +76,6 @@ Az intervallumokban megadott százalékoknak nem kell 100-at kiadniuk. Azonban �
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

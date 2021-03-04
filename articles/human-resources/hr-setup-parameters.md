@@ -50,3 +50,6 @@ A **Számsorozat** lapon található beállítások határozzák meg a sorozatok
 
 > [!NOTE]
 > A ledolgozott órák száma nem haladhatja meg az 1250-et, és a munkaviszony nem lehet hosszabb 12 hónapnál. Ezek a maximális értékek az Egyesült Államok szövetségi törvényének megfelelőek. Végül az **Alkalmazotti önkiszolgáló rendszer** lapon található beállítások határozzák meg az információkat, amelyeket a vezetők megadhatnak az alkalmazottaik nevében.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

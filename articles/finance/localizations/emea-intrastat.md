@@ -240,3 +240,6 @@ Használja a **Külkereskedelmi paraméterek** lapot az alábbi táblázatban ta
 </tbody>
 </table>
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

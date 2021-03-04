@@ -85,3 +85,6 @@ Ezzel a funkcióval kapcsolatos további információk az [Office integrációs 
 ## <a name="other-fixes"></a>Egyéb javítások
 
 Ez a verzió számos hibajavítást is tartalmaz, új entitások hozzáadása, meglévő entitások javításai és lokalizált címkemódosítások
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

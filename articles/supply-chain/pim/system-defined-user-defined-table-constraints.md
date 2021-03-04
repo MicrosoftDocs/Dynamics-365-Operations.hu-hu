@@ -67,3 +67,6 @@ Mielőtt egy táblamegszorítás érvénybe lépne a termékkonfigurációs mode
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

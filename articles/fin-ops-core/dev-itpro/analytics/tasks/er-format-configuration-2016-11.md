@@ -158,3 +158,6 @@ Ez a témakör leírja, hogy egy Rendszergazda vagy Elektronikus jelentések fej
 42. Kattintson a **Mentés** gombra.
 43. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -88,3 +88,6 @@ Az alábbi lépések a gyártás életciklusában felléphetnek minden rendelés
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

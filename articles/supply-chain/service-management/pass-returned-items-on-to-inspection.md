@@ -56,3 +56,6 @@ Ezzel arra utasítja a rendszert, hogy hozzon létre egy karanténutasítást, �
 
 [A visszaadott cikkek kivezetési módjának megadása](specify-how-to-dispose-of-returned-items.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

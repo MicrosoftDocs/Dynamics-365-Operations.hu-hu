@@ -42,3 +42,6 @@ A GTIN-kódok kiosztását a GS1 szervezet végzi. Ebben a példában terméksz�
 11. Az GTIN mezőben adjon meg egy értéket.
 12. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

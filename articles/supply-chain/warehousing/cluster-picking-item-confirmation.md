@@ -42,3 +42,6 @@ A fürtkiválasztáshoz tartozó cikkek ellenőrzése ugyanúgy működik, mint 
 |        Lehetőség        |                                    Leírás                                    |
 |----------------------|-----------------------------------------------------------------------------------|
 | Termék visszaigazolása | Lehetővé teszi, hogy a mobileszközről ellenőrizze a készlet minden elemét a beolvasáskor. |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

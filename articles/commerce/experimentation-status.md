@@ -45,3 +45,6 @@ Hasonlóképpen a **Harmadik fél állapot** oszlopban a következő értékek j
 Az alábbi ábra a két állapotot mutatja be, valamint azt, hogy hogyan kapcsolódnak egymáshoz.
 
 [ ![Kísérletezés állapotai](./media/experimentation_statuses.svg) ](./media/experimentation_statuses.svg#lightbox)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

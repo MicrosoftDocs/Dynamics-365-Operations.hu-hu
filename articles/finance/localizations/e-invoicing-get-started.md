@@ -344,3 +344,6 @@ A beküldési naplóban megjelenő eredmények attól függnek, hogy az e-száml
 - [Első lépések a mexikói Elektronikus számlázásbővítménnyel](e-invoicing-mex-get-started.md)
 - [Első lépések az olasz Elektronikus számlázásbővítménnyel](e-invoicing-ita-get-started.md)
 - [Az Elektronikus számlázásbővítmény beállítása](e-invoicing-setup.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

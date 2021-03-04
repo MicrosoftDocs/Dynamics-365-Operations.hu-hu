@@ -55,3 +55,6 @@ A következő lépések segítségével az összetett BankJournalEntity lehetős
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -103,3 +103,6 @@ Ha az Ön szállítói a szállítói együttműködési felületet használják
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

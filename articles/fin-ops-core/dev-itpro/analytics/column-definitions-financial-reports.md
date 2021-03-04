@@ -599,3 +599,6 @@ Egy oszlopban szereplő összeget időszakok egy megadott számával oszhat el. 
 [Sordefiníciók a pénzügyi jelentéstervezőben](row-definitions-financial-reporting.md)
 
 [Speciális formázási beállítások a pénzügyi jelentésben](advanced-formatting-options-financial-reporting.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

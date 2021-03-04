@@ -424,3 +424,6 @@ Az **Online számlázás** feldolgozása a következő elektronikus feldolgozás
 | Számlakérelem benyújtása         | Nincs                 |
 | Állapotkérelem elküldése          | Nincs                 |
 | Token-kérelem beküldése           | Nincs                 |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

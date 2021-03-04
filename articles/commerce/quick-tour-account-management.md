@@ -96,3 +96,6 @@ A fiókkezelés modulokkal és azok szerkesztésével kapcsolatban a következő
 
 [Kosár és pénztár oldalainak áttekintése](quick-tour-cart-checkout.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

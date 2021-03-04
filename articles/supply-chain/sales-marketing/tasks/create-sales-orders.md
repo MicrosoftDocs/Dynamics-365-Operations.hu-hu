@@ -68,3 +68,6 @@ Szervezetünk által forgalmazott termékek különböző változatokban kerülh
     Az **Összegek** oldalon a teljes rendeléssel kapcsolatos részletek láthatók. Ez magában foglalja a részösszeget, amely a sorok nettó összege az alkalmi sorengedményekhez van igazítva, a teljes számlaösszeget, amely egy részösszeg a alkalmi rendelési-szint engedményhez igazítva, díjakat és az áfát, a vevői hitelkeret helyzetét és továbbiakat. A számlaösszeg az az érték, amely megjelenik a vevő számladokumentumában.  
     
 3. Válassza ki az **OK** lehetőséget.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

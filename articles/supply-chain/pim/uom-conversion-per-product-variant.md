@@ -107,3 +107,6 @@ Az egységek átváltásának Excel programba történő exportálásához vála
 ## <a name="additional-resources"></a>További erőforrások
 
 [Mértékegység kezelése](tasks/manage-unit-measure.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

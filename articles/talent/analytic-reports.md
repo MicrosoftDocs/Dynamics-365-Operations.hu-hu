@@ -88,3 +88,6 @@ A Power BI egyik nagyszerű funkciója az a mód, ahogy a jelentés oldalának �
 ## <a name="export-to-excel"></a>Exportálás az Excel programba
 
 Ha meg szeretné tekinteni a jelentések adatait az Excel programban, kattintson a vizuális elem beállítások menüpontjára (három pont), és válassza a **Háttéradatok exportálása** lehetőséget. Az exportált adatok szűrve kerülnek exportálásra, az Attract szolgáltatásban érvényes felhasználói engedélyek figyelembe vételével. A további információkért lásd: [Adatok exportálása vizualizációból](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-export-data).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

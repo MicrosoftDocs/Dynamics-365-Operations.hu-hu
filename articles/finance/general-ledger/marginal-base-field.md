@@ -186,3 +186,6 @@ További tájékoztatás: [Teljes összeg és az Intervallum számítási beáll
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

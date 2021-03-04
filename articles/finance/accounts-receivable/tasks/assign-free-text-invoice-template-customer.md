@@ -50,3 +50,6 @@ A feladat bemutatja, hogyan kell szabadszöveges számlasablont vevőhöz hozzá
     + Évente – Válassza az Évente opciót, majd adja meg az évek számát a / mezőben. Ha például a 2 értéket adja meg, akkor a rendszer kétévente generál számlát ehhez a vevőhöz.  
 14. A **/** mezőben adjon meg egy számot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

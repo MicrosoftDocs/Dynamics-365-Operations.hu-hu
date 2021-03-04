@@ -83,3 +83,6 @@ Ha a lízingimportálási keretrendszert használja a lízingek frissítéséhez
 
 1. Nyissa meg az **Eszközlízing \> Lízingimportálási keretrendszer \> Beállítás \> Mezőgyűjtemény frissítése** lehetőséget.
 2. A megjelenő lapon jelölje ki a frissíteni kívánt mezőket, majd a zöld nyíllal helyezze át őket a **Kijelölt mezők** listára. A lízingimportálási csomag használatával csak a **Kijelölt mezők** listájában szereplő mezők frissíthetők.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

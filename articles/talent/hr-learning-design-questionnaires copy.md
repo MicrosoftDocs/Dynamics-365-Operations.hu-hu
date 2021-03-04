@@ -246,3 +246,6 @@ Másik lehetőségként egy kérdőív összeállítható úgy is, hogy ha a vá
 
 [A kérdőívek eredményeinek megtekintése és kiértékelése](evaluate-questionnaire-results.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

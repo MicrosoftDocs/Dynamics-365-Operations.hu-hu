@@ -51,3 +51,6 @@ Ez a cikk a minőségi rendelések feldolgozását ismerteti. Ezt az útmutatót
 4. Válassza ki az **OK** lehetőséget.
 5. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -73,3 +73,6 @@ Az alábbi táblázat ajánlásokat tartalmaz a különböző forgatókönyvekn�
 [Heurisztika](https://techterms.com/definition/heuristic)
 
 [Kényszerkielégítési probléma](http://aima.cs.berkeley.edu/2nd-ed/newchap05.pdf)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

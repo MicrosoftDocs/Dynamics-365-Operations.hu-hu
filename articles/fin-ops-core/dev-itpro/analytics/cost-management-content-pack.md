@@ -207,3 +207,6 @@ Az alábbi táblázat megjeleníti azokat a fő dimenziókat, amelyek szűrőké
 | Jogi személyek                                          | Jogi személyek nevei                              |
 | Pénzügyi naptárak                                        | Pénzügyi naptár, év, negyedév, időszak, hónap   |
 | Telephely                                                    | Azonosító, név, cím, állam, ország               |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

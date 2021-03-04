@@ -63,3 +63,6 @@ Ez a feladatútmutató végigvezeti a szállítói kifizetések létrehozásáho
 33. A kifizetések előállításához kattintson az **OK** gombra.
 34. Kattintson a **Feladás** gombra, ha minden kifizetés jóváhagyása és létrehozása megtörtént. 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

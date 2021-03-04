@@ -57,3 +57,6 @@ Válassza ki az alábbi témakörök egyikét az elinduláshoz.
 [Állapotok és életciklus-dokumentálás](document-states-overview.md)
 
 [Csatornaközi megosztás engedélyezése és használata](cross-channel-sharing.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -113,3 +113,6 @@ Minden egyes formátumverzió konfigurálható egy bizonyos dátumtól kezdve ha
 1. Bontsa ki az ISO Ország/régió kódok szakaszt.
     * A formátum-hozzáférések korlátozhatók egyes országok/régiók azonosításával, amelyekben a formátumok alkalmazhatók. Ha egy adott formátum országainak/régióinak listája üres, akkor ez a formátum használható bármely vállalatnál. Néhány ISO ország-/régiókód beszúrása esetén az országok/régiók adott listájába, a formátum csak akkor használható a vállalatokban, ha az elsődleges cím az országban/régióban van.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

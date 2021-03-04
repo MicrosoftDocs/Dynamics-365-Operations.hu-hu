@@ -145,3 +145,6 @@ További információért tekintse át az alábbi témaköröket:
 - [Kettős pénznem](dual-currency.md)
 - [Áfa áttekintése](indirect-taxes-overview.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

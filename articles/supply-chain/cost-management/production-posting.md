@@ -57,3 +57,6 @@ A **Gyártásvezérlési paraméterek** részen a **Főkönyvi feladás** mezőb
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

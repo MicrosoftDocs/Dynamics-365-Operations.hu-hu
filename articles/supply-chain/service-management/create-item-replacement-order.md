@@ -68,3 +68,6 @@ A cserecikkrendeléseket általában a visszajuttatott termék kivizsgálása ut
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

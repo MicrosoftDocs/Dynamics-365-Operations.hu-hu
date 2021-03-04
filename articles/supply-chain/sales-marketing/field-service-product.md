@@ -73,3 +73,6 @@ Az alábbi ábrákon látható a sablonleképezés az Adatintegrálásban.
 ### <a name="field-service-products-supply-chain-management-to-field-service-products---products"></a>Field Service-termékek (Supply Chain Management és Field Service között): Termékek – Termékek
 
 [![Sablonleképezés az adatintegrátorban](./media/FSProduct.png)](./media/FSProduct.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

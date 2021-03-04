@@ -42,3 +42,6 @@ Mielőtt feladhatna nyitó tranzakciókat különböző számlákra minden egyes
 
 ## <a name="additional-resources"></a>További erőforrások
 [Év végi zárás](../general-ledger/year-end-close.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

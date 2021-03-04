@@ -241,3 +241,6 @@ Vegye figyelembe a következő legjobb gyakorlati tanácsokat a szervezeti hiera
 - A fő átstruktúrálási tervek modellezése előtt használja a hierarchia érvényességi dátumát a hatáselemzés és az érvényességi teszt végrehajtásához.
 - A vázlat mód segítségével módosíthatja a hierarchiát az új verzió közzététele előtt termékkörnyezetben.
 - Korlátozhatja az emberek számát, akiknek engedélye van szervezetek hozzáadásához vagy eltávolításához a hierarchiából a termékkörnyezetben. A kevesebb csökkenti annak lehetőségét, hogy költséges hibák fordulnak elő és helyesbítéseket kell elvégezni.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

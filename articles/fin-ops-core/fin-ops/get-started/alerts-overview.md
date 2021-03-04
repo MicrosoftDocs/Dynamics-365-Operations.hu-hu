@@ -88,3 +88,6 @@ A [Figyelmeztetések használata szűrt adatok figyeléséhez](https://youtu.be/
 A [Figyelmeztetési szabályok beállításai](https://youtu.be/cpzimwOjicM) videó (fent látható) szerepel a [Finance and Operations lejátszási listában](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW), amely YouTube oldalon érhető el.
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

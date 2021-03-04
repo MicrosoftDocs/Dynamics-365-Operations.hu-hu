@@ -74,3 +74,6 @@ Pénzügyi tranzakció feladásakor a tranzakciórekord állapota **Eladva**. A 
 -   Negatív mennyiségű készletnaplók, például mozgás-, eredmény- és leltárnaplók, anyagjegyzékek és átmozgatás
 
 A mozgóátlagon alapuló önköltségi ár mennyiséget csökkentő tranzakciók feladása. Így a készletzárás folyamata a cikk készletmodellben kiválasztott készletértékelési módszer alapján a kiadási tranzakciókat a bevételezési tranzakciókkal szemben egyenlíti ki.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

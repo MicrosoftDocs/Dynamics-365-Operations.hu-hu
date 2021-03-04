@@ -106,3 +106,6 @@ A Supply Chain Management mostantól támogatja az olyan anyagjegyzék-kalkulác
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

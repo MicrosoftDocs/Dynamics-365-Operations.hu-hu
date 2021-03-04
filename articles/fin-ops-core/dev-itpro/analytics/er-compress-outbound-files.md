@@ -94,3 +94,6 @@ Mielőtt teljesítené az ebben a témakörben ismertetett eljárásokat, meg ke
 [Elektronikus jelentéskészítés (ER) céljai](electronic-reporting-destinations.md)
 
 [Az XML-elemek végrehajtásának elhalasztása az ER-formátumokban](er-defer-xml-element.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

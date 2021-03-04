@@ -43,3 +43,6 @@ Ez az eljárás bemutatja egy cikk előrejelzésének módosítását. Ez az elj
 1. Kattintson a **Megnyitás** elemre a Microsoft Office-ban.
 2. Kattintson az **Igény-előrejelzés szerkesztése** elemre az Excel programban. Az Excel programban hozzáadhatja, törölheti és szerkesztheti az igény-előrejelzés sorait. Ha nem lehet megtekinteni az adatokat Excelben, be kell jelentkeznie bekapcsolt „Szeretnék bejelentkezve maradni” lehetőséggel, és engedélyeznie kell az adatkommunikációs alkalmazást.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

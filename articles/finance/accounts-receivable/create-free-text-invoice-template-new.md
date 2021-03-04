@@ -68,3 +68,6 @@ Ez az eljárás az USMF bemutatócéget használja. Az eljárást az a felhaszn�
 
 ## <a name="save-a-free-text-invoice-as-a-template"></a>Szabadszöveges számla sablonként mentése
 Egy meglévő szabadszöveges számlát menthet sablonként is. Kiválasztásakor a Mentés sablonhoz a Számla lapjáról, adja meg a sablon nevét és leírását. Ha ilyen nevű sablon már létezik, értesítés jelenik meg, hogy már létezik ilyen nevű sablon. Még rákattinthat a felülíráshoz az OK gombra. 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

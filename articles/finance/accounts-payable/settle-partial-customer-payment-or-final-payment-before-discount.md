@@ -149,3 +149,6 @@ Arnie feladja ezt a naplót és áttekinti a vevői tranzakciókat a **Vevői tr
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

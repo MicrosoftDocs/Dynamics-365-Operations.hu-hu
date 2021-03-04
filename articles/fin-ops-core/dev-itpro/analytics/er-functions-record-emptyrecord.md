@@ -60,3 +60,6 @@ A `EMPTYRECORD (SPLIT ("abc", 1))` új üres rekordot ad vissza, amelynek ugyano
 ## <a name="additional-resources"></a>További erőforrások
 
 [Rekord függvények](er-functions-category-record.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

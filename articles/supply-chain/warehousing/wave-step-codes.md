@@ -93,3 +93,6 @@ A következő eljárás segít annak biztosításában, hogy a létrehozott felt
 6. A **Hullámlépéskód** mezőben válassza ki a feltöltési sablonban kiválasztott hullámlépéskódot.
 
 Ezeket a lépéseket minden egyes jogi személynél végre kell hajtani.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

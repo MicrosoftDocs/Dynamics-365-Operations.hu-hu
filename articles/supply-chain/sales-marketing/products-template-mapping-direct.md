@@ -124,3 +124,6 @@ Az alábbi ábrán sablon hozzárendelést például adatok integrátor megjelen
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

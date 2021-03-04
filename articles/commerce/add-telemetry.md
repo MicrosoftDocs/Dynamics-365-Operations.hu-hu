@@ -122,3 +122,6 @@ Ha egy külső parancsfájlt közvetlenül egy sablonhoz szeretne hozzáadni a w
 [Szerzői jogi értesítés hozzáadása](add-copyright-notice.md)
 
 [Nyelvek hozzáadása a webhelyhez](add-languages-to-site.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

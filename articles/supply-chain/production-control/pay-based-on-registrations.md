@@ -599,3 +599,6 @@ Ha a dolgozó munkanapon nem jelenik meg munkaidőben, és nincs tervezett távo
 - Távollét automatikus beillesztése
 
 Amikor egy olyan dolgozó esetében számítják ki a napi regisztrációkat, akinél engedélyezve vannak a rugalmas órák, a **Rugalmasidő-hiány automatikus beillesztése** mezőben megadott távolléti kód lesz alapértelmezett távolléti kódként használva. Ha a dolgozónál a rugalmas órák nem engedélyezettek, a **Távollét automatikus beillesztése** mezőben megadott távolléti kód kerül használatra. Ha egy vállalatnál olyan dolgozók is találhatók, akiknél engedélyezettek a rugalmas órák, és olyanok is,a kiknél a rugalmas órák nem engedélyezettek, mindkét paramétert be kell állítani.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

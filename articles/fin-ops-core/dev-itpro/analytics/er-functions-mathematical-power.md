@@ -63,3 +63,6 @@ A `POWER (4, 0.5)` az **2** értéket adja vissza.
 ## <a name="additional-resources"></a>További erőforrások
 
 [Matematikai funkciók](er-functions-category-mathematical.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

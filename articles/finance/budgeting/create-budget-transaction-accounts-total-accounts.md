@@ -46,3 +46,6 @@ Ha költségvetést használ jelentéseknél, például pénzügyi kimutatásokb
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

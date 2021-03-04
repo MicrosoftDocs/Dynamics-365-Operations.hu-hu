@@ -156,3 +156,6 @@ Hiányzó számla elemzésekor a következő billentyűparancsok használhatók.
 [Pénzügyi jelentéskészítés](financial-reporting-intro.md)
 
 [A Report Designer felhasználói kezelőfelülete](report-designer-interface.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

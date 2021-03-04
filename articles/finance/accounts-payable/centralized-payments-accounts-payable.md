@@ -301,3 +301,6 @@ A Gyár generál egy kifizetést 75,00-ről a 3004 szállítónak (Babszem Káv�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

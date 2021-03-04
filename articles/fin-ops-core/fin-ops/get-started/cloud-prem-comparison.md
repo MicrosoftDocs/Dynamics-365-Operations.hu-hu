@@ -175,3 +175,6 @@ Helyszíni telepítéseknél rendelkezésre álló lehetőségek listájának me
 
 \* A helyszíni környezetekben a PerfTimer csak az ügyfél számára jeleníti meg az eredményeket.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

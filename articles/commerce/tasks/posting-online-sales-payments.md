@@ -109,3 +109,6 @@ Ez az eljárás végigveszi egy ismétlődő kötegelt feladat konfigurálásán
 - RetailTransactionMarkupTrans
 - RetailTransactionPaymentTrans
 - RetailTransactionAttributeTrans
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -56,3 +56,6 @@ Ez az eljárás bemutatja az egy helyhez tartozó, még el nem indított termel�
 4. Kattintson az Anyagok elemre.
     * Ezen a lapon megtekintheti a becsült anyagfelhasználást a termelési rendelésben és az aktuális rendelkezésre álló készletben szereplő műveletekre vonatkozóan.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

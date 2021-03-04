@@ -123,3 +123,6 @@ A következő lépések bemutatják, hogy egy Rendszergazda vagy Elektronikus je
 
 > [!NOTE]
 > Ugyanazt a fájlt importálta, mivel a formátumtervező most az „azonosító” attribútumot a „dokumentum” elemhez opcionálisnak veszi.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

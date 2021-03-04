@@ -54,3 +54,6 @@ Ez a témakör az érkezésáttekintési profil beállítását ismerteti. Az é
 17. Válassza a **Mentés** lehetőséget.
 18. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

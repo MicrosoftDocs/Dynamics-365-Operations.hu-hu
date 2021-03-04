@@ -44,3 +44,6 @@ Főkönyvi felosztási szabályok a költségvetési tervekhez is használhatóa
 > [!NOTE]
 > Kezdődő   , használhatja a Főkönyvi felosztási szabályok költségvetési tervek.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

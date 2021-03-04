@@ -367,3 +367,6 @@ Az ER automatikusan igazodik az alapösszetevő legújabb verziójához a szárm
 
 - [Az Elektronikus jelentéskészítés (ER) konfigurációk](electronic-reporting-configuration.md)
 - [Elektronikus jelentéskészítési (ER) konfigurációk életciklusainak kezelése](general-electronic-reporting-manage-configuration-lifecycle.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

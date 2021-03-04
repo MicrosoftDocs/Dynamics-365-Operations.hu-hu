@@ -116,3 +116,6 @@ Ezen a gyorslapon a tárgyi eszközhöz kapcsolódó karbantartási köröket le
 ## <a name="financial-dimensions"></a>Pénzügyi dimenziók
 
 Kiválaszthat pénzügyi dimenziókat is az eszközhöz.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

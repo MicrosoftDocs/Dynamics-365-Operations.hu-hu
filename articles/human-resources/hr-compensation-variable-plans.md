@@ -99,3 +99,6 @@ A **Szervezeti felülbírálások** az alkalmazott jutalmának alapját képezik
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

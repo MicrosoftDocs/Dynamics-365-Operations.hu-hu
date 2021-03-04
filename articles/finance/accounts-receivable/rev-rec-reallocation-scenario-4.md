@@ -77,3 +77,6 @@ Ha a **Bizonylat** lehetőséget választja, a számlanapló az eredeti könyvel
 Ezután nyissa meg az **Összes vevő** oldalt (**Kinnlevőségek \> Vevők \> Összes vevő**), válassza ki az **US\_SI\_0003** vevőt, majd válassza a **Tranzakciók** lehetőséget. A **Vevői tranzakciók** oldalon csak az eredeti számla (000008) és az eredeti könyvelési tétel szerepel. Mivel a **Számlajavítások feladása a Kinnlevőségekbe** lehetőség a **Nem** értékre van állítva a **Főkönyvi paraméterek** oldalon, csak a főkönyv frissül. Ezért nem jelennek meg a sztornírozó és a frissített könyvelési tételek. Figyelje meg, hogy megjelennek a [3. esetnél](rev-rec-reallocation-scenario-3.md) létrehozott bevételkorrekciós tranzakciók.
 
 [![Az eredeti könyvelési tétel a Vevői tranzakciók oldalon](./media/47_rev-rec-scenarios.png)](./media/47_rev-rec-scenarios.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

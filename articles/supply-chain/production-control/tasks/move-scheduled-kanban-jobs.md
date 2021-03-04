@@ -62,3 +62,6 @@ Ez az eljárás a tervezett kanbanfeldolgozási feladatok másik időszakra tör
 2. Kattintson az **Előre** lehetőségre. Figyelje meg, hogy a feladat egy sorral lentebb került a listán. 
 
 3. Kattintson a **Vissza** lehetőségre. Figyelje meg, hogy a feladat egy sorral fentebb került a listán.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

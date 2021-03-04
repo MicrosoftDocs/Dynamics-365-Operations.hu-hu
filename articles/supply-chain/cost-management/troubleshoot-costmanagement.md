@@ -62,3 +62,6 @@ Ne felejtsen el egy %3 (2019.01.31.) időszak végének megfelelő készletet le
 ## <a name="inventory-aging-report-discrepancies"></a>Készletkorosítási jelentés eltérései
 
 A **Készletkorosítási jelentés** különböző értékeket jelenít meg különböző tárolási dimenziókban (például hely vagy raktár). A jelentési logikával kapcsolatos további tudnivalókat lásd: [Készletkorosítási jelentés példák és logika](inventory-aging-report.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

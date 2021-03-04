@@ -207,3 +207,6 @@ A rendszer által irányított fürtkitárolás beállítása előtt alkalmas ki
 1. A mobileszköz utolsó lépés az, hogy a fürtöt a végleges helyre **Betároljuk**. Válassza ki az **OK** lehetőséget
     - Ha a betárolási művelet meg van erősítve, a fürt bezáródik és felbontásra kerül, a fürtprofilban lévő **Fürt felbontása ennél** mezőben beállított érték alapján. A munkaazonosítók szintén lezárásra kerülnek.
 1. A mobileszközön a „Fürt befejezve” üzenet jelenik meg.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

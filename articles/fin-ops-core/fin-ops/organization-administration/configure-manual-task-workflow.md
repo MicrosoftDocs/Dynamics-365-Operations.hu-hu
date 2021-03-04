@@ -381,3 +381,6 @@ Amikor hozzárendelik a manuális feladatot egy felhasználóhoz, annak intézke
 5. Jelölje be a **Delegálás** jelölőnégyzetet, ha a felhasználónak hozzá kell rendelnie a feladatot egy másik felhasználóhoz.
 6. Jelölje be a **Ismételt hozzárendelés** jelölőnégyzetet, ha a felhasználónak hozzá kell rendelnie ismét a feladatot a munkatétel-várólistán szereplő felhasználóhoz.
 7. Jelölje be a **Kiadás** jelölőnégyzetet, ha a felhasználónak hozzá kell rendelnie ismét a feladatot a munkatétel-várólistához. Ezt követően a másik felhasználó hajthatja végre a feladatot.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

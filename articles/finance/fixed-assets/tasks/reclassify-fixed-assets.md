@@ -46,3 +46,6 @@ A tárgyi eszköz átsorolásához kövesse az alábbi lépéseket:
 5. Adjon meg egy dátumot az **Átsorolás dátuma** mezőben.
 6. A **Bizonylatsorozat** mezőben adjon meg vagy válasszon ki egy értéket.
 7. Kattintson az **OK** gombra.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

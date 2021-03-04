@@ -180,3 +180,6 @@ A Human Resources rendszerhez a következő erőforrások állnak rendelkezésé
 
 [Válasszon ki egy adatintegrációs technológiát](hr-admin-integration-choose-technology.md)</br>
 [A Common Data Service-integráció konfigurálása](hr-admin-integration-common-data-service.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

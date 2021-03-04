@@ -60,3 +60,6 @@ Amennyiben legalább egy javasolt módosítással rendelkezik, két további men
     Az oldalon látható állapot a következőre változik: **Jóváhagyásra váró módosítások**.
 
 A munkafolyamat az alkalmazás szokásos munkafolyamata. A jóváhagyót a rendszer a **Vevő** oldalra irányítja, ahol áttekintheti a **Javasolt módosítások** oldalon található módosításokat, majd a munkafolyamat jóváhagyásához kiválaszthatja a **Munkafolyamat \> Jóváhagyás** lehetőséget. Miután minden jóváhagyás befejeződött, a mezők a javasolt értékekre frissülnek.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -56,3 +56,6 @@ Mivel a Dynamics 365 Commerce támogatja a „valós megjelenítésű” (WYSIWY
 [Parancsfájl hozzáadása a webhely oldalaihoz a telemetria támogatásához](add-telemetry.md)
 
 [Tartalomra vonatkozó biztonsági házirend (CSP) kezelése](manage-csp.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

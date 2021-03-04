@@ -69,3 +69,6 @@ Az Alkalmazotti kompetenciák és fejlődés tartalomcsomag jelentéseinek kitö
 | Munkaerő\_WorkerName             | Keresztnév, vezetéknév és teljes név                                                                       | |
 | Munkaerő\_WorkerTitle            | Cím és szolgálati idő dátuma                                                                                   | |
 | Munkaerő\_WorkerTrend             | Túlórázó dolgozók, létszám, vállalat és beosztás                                                        | Munkaerő\_Vállalat, Munkaerő\_Kompenzáció, Munkaerő\_GeographicLocation, Munkaerő\_Teljesítmény, Munkaerő\_WorkerName, Munkaerő\_ReportsToWorkerName, Munkaerő\_CalendarOffset, Munkaerő\_Dátum, Munkaerő\_WorkerTitle, Munkaerő\_Demográfia, Munkaerő\_Foglalkoztatás, Munkaerő\_Feladat |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

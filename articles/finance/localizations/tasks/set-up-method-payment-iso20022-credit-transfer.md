@@ -48,3 +48,6 @@ Ez a harmadik azon öt eljárás közül, amelyek elektronikus jelentési beáll
 10. A Fizetési számla mezőben adja meg a „DEMF OPER” értékeket.
 11. Kattintson a Mentés gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

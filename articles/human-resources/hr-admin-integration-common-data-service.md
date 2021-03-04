@@ -118,3 +118,6 @@ Teljes szinkronizálás futtatása egy entitáshoz a Human Resources és Common 
 [![Teljes szinkronizálás futtatása](./media/hr-common-data-service-configuration-sync-now.png)](./media/hr-common-data-service-configuration-sync-now.png)
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

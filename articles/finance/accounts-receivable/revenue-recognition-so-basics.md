@@ -97,3 +97,6 @@ A **Bevételi ár felosztása** gomb továbbra is elérhető, így megtekintheti
 A program eltávolítja a várható bevételkönyvelési ütemezést és a végleges bevételkönyvelési ütemezésre cseréli. A program minden értékesítésirendelés-sor esetében karbantartja a bevételi ütemezés adatait, és a szerződéses kötelezettségek teljesítése során közzéteszi az elhalasztott bevételt a tényleges bevételhez képest.
 
 [![Végleges bevételkönyvelési ütemezés](./media/revenue-recognition-so-revenue-recognition-schedule.png)](./media/revenue-recognition-so-revenue-recognition-schedule.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

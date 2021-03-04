@@ -107,3 +107,6 @@ A főképmodul új oldalra való felvételéhez és a kötelező tulajdonságok 
 [Szövegterület-modul](add-content-rich-block.md)
 
 [Videólejátszó modul](add-video-player.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

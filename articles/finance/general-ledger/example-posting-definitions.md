@@ -128,3 +128,6 @@ Az alábbi példában minden számla esetében, amely része a Számlastruktúr�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

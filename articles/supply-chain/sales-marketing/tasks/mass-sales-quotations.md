@@ -101,3 +101,6 @@ Ez az eljárás bemutatja, hogyan lehet hatékonyan árajánlatokat létrehozni 
 11. Lépjen az Értékesítés és marketing > Értékesítési árajánlatok > Minden árajánlat menüpontba.
     * Győződjön meg róla, hogy az a kiválasztott sablonon alapján a tömeges frissítési rutinban megadott minden vevőhöz lett árajánlat létrehozva.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

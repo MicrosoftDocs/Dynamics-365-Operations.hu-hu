@@ -163,3 +163,6 @@ Ha a beállítás történik, a hely vagy akár egy vállalat, amely eltér a he
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -281,3 +281,6 @@ Ha a konfigurációs fából hiányzik a korábban felsorolt konfigurációk val
 6. A **Bankszámla** mezőben válassza a **DEMF OPER** lehetőséget.
 7. A **Kifizetések létrehozása** párbeszédpanelen válassza az **OK** lehetőséget.
 8. Az **Elektronikus jelentési paraméterek** párbeszédablakban válassza az **OK** lehetőséget.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

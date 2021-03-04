@@ -175,3 +175,6 @@ Az **AttachingFile()** esemény akkor következik be, amikor a következő ER c�
 
 - [Elektronikus jelentéskészítés (ER) céljai](electronic-reporting-destinations.md)
 - [Bővíthetőség kezdőlap](../extensibility/extensibility-home-page.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

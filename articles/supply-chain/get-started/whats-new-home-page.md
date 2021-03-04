@@ -67,3 +67,6 @@ Ha látni szeretné, hogy mi új vagy módosult a 2019 november előtti kiadáso
 | Microsoft Dynamics 365 for Operations                                 | 1611        | 7.1.1541.3036    | 2016. november    | [Új vagy módosult elemek a Dynamics 365 for Operations 1611-es verziójában (2016. november)](../../fin-ops-core/fin-ops/get-started/whats-new-dynamics-365-operations-1611.md)                |
 | Microsoft Dynamics AX                                                 | 7.0.1       | 7.0.1265.23014   | május 2016.         | [Mi az új vagy mi változott a Dynamics AX alkalmazásban verziószám 7.0.1 (2016. május)](../../fin-ops-core/fin-ops/get-started/whats-new-changed-application-version-7-0-1-may-2016.md)          |
 | Microsoft Dynamics AX                                                 | 7.0         | 7.0.1265.3015    | február 2016.    | [Újdonságok és változások a Dynamics AX 7.0 (2016. február) architektúrájában](../../fin-ops-core/fin-ops/get-started/whats-new-changed-7-0-february-2016.md)                                            |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -54,3 +54,6 @@ A kötegelt feladat egy Alkalmazásobjektum-kiszolgáló (AOS) példányához el
     - **Visszatartás**: A kötegelt feladat **visszatartási** értékre állítása, így a kötegelt munkaütemezőből visszatartható. A *leállítással* egyenértékű.
     - **Várakozás**: A kötegelt feladat **várakozásra** történő beállítása, így a kötegelt munkaütemező által elindítható. A *mehettel* egyenértékű.
 5. Kattintson az **OK** gombra.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

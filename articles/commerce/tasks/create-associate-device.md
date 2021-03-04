@@ -41,3 +41,6 @@ Ez az eljárás végigveszi, hogyan hozhat létre egy új eszközt, és hogyan t
 9. A listában kattintson a kijelölt sorban lévő hivatkozásra.
 10. Kattintson a Mentés gombra.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

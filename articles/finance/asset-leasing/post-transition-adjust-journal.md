@@ -47,3 +47,6 @@ Az új könyvelési standardoknak megfelelő átmeneti kiigazítás könyvelés�
 
 5. A naplóbejegyzés megtekintéséhez válassza ki az **Eszköz lízingnaplók** lehetőséget.
 6. Jelölje ki az új naplót, majd válassza a **Feladás** lehetőséget.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

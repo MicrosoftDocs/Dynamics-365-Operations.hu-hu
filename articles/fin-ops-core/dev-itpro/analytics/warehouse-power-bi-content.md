@@ -111,3 +111,6 @@ A következő fő összesítő mértékek szolgálnak a tartalom alapjaként.
 | Szállítási teljesítmény        | Szállítva termék szerint                       | CustPackingSlipOnTimeStatus           | Korai, időbeni és késedelmes (lásd a táblázat korábbi részében található leírást). |
 | Szállítási teljesítmény        | Vevő által szállítva                      | CustPackingSlipOnTimeStatus           | Korai, időbeni és késedelmes (lásd a táblázat korábbi részében található leírást). |
 | Szállítási teljesítmény        | Szállító hely / raktár              | CustPackingSlipOnTimeStatus           | Korai, időbeni és késedelmes (lásd a táblázat korábbi részében található leírást). |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

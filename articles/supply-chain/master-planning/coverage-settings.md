@@ -66,3 +66,6 @@ Minden feltöltési mód a következő fedezeti kódok egyikéhez van hozzárend
 ## <a name="additional-resources"></a>További erőforrások
 
 [Alaptervek áttekintése](master-plans.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

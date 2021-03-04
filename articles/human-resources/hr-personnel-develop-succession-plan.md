@@ -60,3 +60,6 @@ Ha a szervezet növekedésével Ön utánpótlás-tervezés mellett dönt, előf
 28. Kattintson a Jelentésre.
     * A jelentés a legjobb találatokat felül mutatja.  Megtekintheti, hogy van-e hiányelem felsorolva.  Ez az elem az eltérést jelzi a szakértelem feltérképezésén felsorolt szint és a személy szakértelmének szintje között.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

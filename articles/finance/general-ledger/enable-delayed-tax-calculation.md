@@ -65,3 +65,6 @@ A rendszer prioritást ad a naplófejléc beállításának. Alapértelmezés sz
 4. A **Beállítás** lapon adja meg a **Késleltetett adószámítás** beállítását **Igen** értékre.
 
 ![Általános naplólap képe](media/delayed-tax-calculation-journal-header.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

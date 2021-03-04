@@ -59,3 +59,6 @@ A **Tervezett rendelés** oldalon a **Késések** lapon található a tervezett 
 --------
 
 [Fedezeti beállítások](coverage-settings.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

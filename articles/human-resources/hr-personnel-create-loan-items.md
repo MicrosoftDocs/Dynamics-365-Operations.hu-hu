@@ -59,3 +59,6 @@ A kölcsöncikkek olyan rekordok, amelyek segítik követni a dolgozóknak kölc
 14. Kattintson az OK gombra.
 15. Frissítse a lapot..
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

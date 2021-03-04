@@ -113,3 +113,6 @@ A szolgáltatási szerződés soraira megadott időkeretek meghatározzák a sze
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

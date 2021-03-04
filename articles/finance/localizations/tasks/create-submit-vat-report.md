@@ -35,3 +35,6 @@ Ez az eljárás végigvezeti az áfajelentés létrehozásán és elküldésén 
 5. Válassza az Igen lehetőséget az Elektronikus adóbizonylat létrehozása mezőben.
 6. Kattintson az OK gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

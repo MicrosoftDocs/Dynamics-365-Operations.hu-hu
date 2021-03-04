@@ -59,3 +59,6 @@ Ez az eljárás bemutatja, hogy hogyan hozhat létre olyan kanbanszabályt, amel
     * Jegyezze meg, hogy a kanban a termelési folyamatból származó két feldolgozási feladattal rendelkezik. Az első a SpeakerAssemblyAndPolish, és a második a SpeakerTestAndPackaging.  
     * Ez az utolsó lépés!  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

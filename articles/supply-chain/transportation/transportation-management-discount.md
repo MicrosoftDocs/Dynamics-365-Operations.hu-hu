@@ -33,3 +33,6 @@ A szállításkezelési engedmények beállításához nyissa meg a **Szállít�
 Megadhatja, hogy a kedvezményt továbbadja-e az ügyfélnek (az engedménytípus ügyfélre való állításával), vagy megtarthatja a vállalatnak (az engedménytípus szállítmányozóra való állításával). Ez lehetővé teszi, hogy meghatározzon egy olyan beállítást, amellyel nyereséghez juthat a kiszámított fuvardíjakkal.
 
 Minden egyes engedményhez több minősítőt is beállíthat, például a szolgáltatót, a szállítmányozói szolgáltatást, a szállítási feltételeket, az ügyfelet, a célt stb.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

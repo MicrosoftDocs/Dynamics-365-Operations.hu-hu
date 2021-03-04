@@ -57,3 +57,6 @@ A Microsoft Dynamics 365 Talent: Onboard segítségével megtekintheti az előre
 - [Új vagy módosult elemek a Dynamics 365 Talent szolgáltatásban](./whats-new.md)
 - [Kiadási tervek](https://docs.microsoft.com/business-applications-release-notes/index)
 - [Támogatás kérése a Microsoft Dynamics 365 Talent alkalmazáshoz](./talent-support.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

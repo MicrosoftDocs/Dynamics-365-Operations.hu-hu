@@ -47,3 +47,6 @@ A kötegelt feldolgozási feladat nem tartalmazza a lezárt könyveket. Egy ért
 A program a könyvek számának korlátját alkalmazza, ha nem létezik ismétlődő eszközazonosító ugyanabban a naplóban. Ha azonban az eszközazonosító megegyezik a könyvazonosítóval, akkor a naplónkénti könyvek száma túlléphető, hogy az eszközazonosító ugyanabban a naplóban maradjon.
 
 Például 5.001 tárgyi eszközazonosító van, három könyv van társítva minden tárgyi eszközazonosítóhoz, és minden eszközkönyv ugyanarra a feladási rétegre kerül. Az értékcsökkenést három egymást követő hónapban futtatja összegzés nélkül. Az értékcsökkenési napló kötegelt feladattal jön létre, a rendszer pedig hét naplót hoz létre, amelyek 667 tárgyi eszközazonosítóval és három könyvvel rendelkeznek minden tárgyi eszközazonosítóhoz. Az eredmény 2.001 könyv lesz. Ezért három hónapon belül 6.003 naplósor lesz ugyanazon eszközazonosítók fenntartásához ugyanabban a naplóban. A rendszer létrehoz egy naplót is, amely 332 tárgyi eszközazonosítóval és három könyvvel rendelkezik minden tárgyi eszközazonosítóhoz. Három hónap múlva 2.988 sor lesz.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

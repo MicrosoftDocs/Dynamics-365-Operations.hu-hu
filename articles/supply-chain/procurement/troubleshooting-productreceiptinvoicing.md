@@ -110,3 +110,6 @@ A következő eljárás bemutatja a hiba reprodukálásának egyik módját.
 ### <a name="issue-resolution"></a>Probléma megoldása
 
 Ez a számlák és a számlázási csoportok paraméter-beállításaitól függ. A további tudnivalókat lásd a következő blogbejegyzésben: [Könyvelés beszerzési díj és készlet változásához](https://cloudblogs.microsoft.com/dynamics365/no-audience/2014/12/15/accounting-for-purchase-charge-and-stock-variation/).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -43,3 +43,6 @@ Ez a témakör leírja, hogyan szerezhető be tárgyi eszköz a Tárgyi eszköz�
 - A beszerzési javaslat kizárólag az értékmodellben beállított beszerzési dátummal és beszerzési árral rendelkező tárgyi eszközöket veszi figyelembe.  
 11. Az oldalon válassza a **Könyvek** lapot.
 12. Válassza a **Feladás** parancsot.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

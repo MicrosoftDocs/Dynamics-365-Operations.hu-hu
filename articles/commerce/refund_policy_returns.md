@@ -104,3 +104,6 @@ Kövesse az alábbi lépések egyikét, ha a pénztárban engedélyezett visszá
 
 
 ![Fizetési módok listája](media/Return-policy-page5.PNG "Engedélyezett visszatérítés-típusok")
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

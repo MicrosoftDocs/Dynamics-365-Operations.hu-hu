@@ -101,3 +101,6 @@ A **Katalógusok** lapon lehetősége van a **Fizetési ütemezés** és az **In
 ## <a name="additional-notes"></a>További megjegyzések
 
 Jelenleg ha egy forráskód-azonosítót alkalmaznak egy értékesítési rendelésre a hívásközpontban, arra használják, hogy katalógusspecifikus árak, promóciók, forgatókönyvek és értéknövelő/párhuzamosan értékesített cikkek hajtóereje legyen. A rendszer nem tiltja és nem akadályozza meg a katalógusban nem szereplő termékek értékesítési rendelés során történő rendelését. Ha egy katalógusban nem szereplő cikket rendelnek, a rendszer először a hívásközponti csatornában meghatározott **Árcsoportot** használja (**Kiskereskedelem és kereskedelem** \> **Csatornák** \> **Hívásközpontok** \> **Összes hívásközpont**) a cikk árához vagy a promóciókhoz. Ha nem talál konkrét árat a csatornában, a termék alap eladási árát használja.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

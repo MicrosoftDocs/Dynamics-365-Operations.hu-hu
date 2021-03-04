@@ -78,3 +78,6 @@ Tekintse át a létrehozott XML-fájlt.
 6. Zárja be a lapot.
 7. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

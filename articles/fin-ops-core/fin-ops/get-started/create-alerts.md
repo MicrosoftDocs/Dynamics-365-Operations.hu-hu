@@ -102,3 +102,6 @@ Nem hozhatók létre figyelmeztetések az űrlapok egyes másodlagos adatforrás
     ```
 2. Hozzon létre figyelmeztetést a SysTableBrowser űrlapról.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

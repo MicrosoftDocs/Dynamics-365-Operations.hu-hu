@@ -95,3 +95,6 @@ Sztornírozhat kamattranzakciókat az **Előzmények** gomb segítségével a **
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

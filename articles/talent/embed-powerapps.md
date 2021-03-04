@@ -66,3 +66,6 @@ A következő lépéseket is követheti.
 2. Az eszköztáron válassza az **Alkalmazás hozzáadása innen: Power Apps** elemet.
 
     ![Alkalmazás hozzáadása innen: Power Apps, a személyre szabási eszköztár segítségével](media/powerapp-bar.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

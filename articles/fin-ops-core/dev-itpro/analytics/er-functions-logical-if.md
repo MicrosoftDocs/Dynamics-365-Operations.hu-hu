@@ -69,3 +69,6 @@ Az `IF (1=2, "condition is met", "condition is not met")` a **„feltétel nem t
 ## <a name="additional-resources"></a>További erőforrások
 
 [Logikai függvények](er-functions-category-logical.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

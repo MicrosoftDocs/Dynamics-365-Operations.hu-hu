@@ -132,3 +132,6 @@ Miután lefuttatta a feldolgozási eseményt javaslatot tehet az egyes alkalmazo
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

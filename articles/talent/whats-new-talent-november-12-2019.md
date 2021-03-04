@@ -60,3 +60,6 @@ Minden új funkció megmarad előzetes verzióban legalább 30 napig, és által
 Időnként egy szerves funkció alapértelmezésben be van kapcsolva, de nem kapcsolható ki (például a **Funkciókezelési** munkaterület).
  
 Ha egy szolgáltatás általában elérhető, előfordulhat, hogy a működési környezetben be van kapcsolva vagy ki van kapcsolva. A **funkciókezelés** munkaterület jelzi, hogy egy előzetes funkció mikor válik kötelezővé. Ez a dátum általában október 1. vagy április 1., hogy a féléves kiadási tervekkel összehangolják. Nem kapcsolhatja ki a kötelező funkciókat. Amíg nem válik kötelezővé, bármely környezetben ki- és bekapcsolhatja a funkciót.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

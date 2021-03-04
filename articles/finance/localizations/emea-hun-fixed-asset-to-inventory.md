@@ -43,3 +43,6 @@ Tárgyi eszköz készletbe való áthelyezéséhez kövesse az alábbi lépések
 7.  Ellenőrizze, hogy a tárgyi eszköz és a készletügyletek helyesen lettek-e létrehozva.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

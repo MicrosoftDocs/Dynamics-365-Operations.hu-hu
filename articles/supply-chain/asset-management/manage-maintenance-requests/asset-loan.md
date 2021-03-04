@@ -58,3 +58,6 @@ Az **Aktív eszköz kölcsönzése** lapon megtekintheti az összes olyan eszkö
 3. A **Visszaadva** mezőben adja meg dátumot és az időt.
 4. Válassza ki az **OK** lehetőséget.
 5. Frissítse az **Aktív eszköz kölcsönzése** listaoldalt és figyelje meg, hogy az eszköz kölcsönzése már nem jelenik meg a listában.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

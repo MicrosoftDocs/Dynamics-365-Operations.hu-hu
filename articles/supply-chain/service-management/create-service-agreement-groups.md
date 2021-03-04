@@ -43,3 +43,6 @@ A szolgáltatásiszerződés-csoportok jól hasznosíthatók a szolgáltatási s
 ## <a name="related-topics"></a>Kapcsolódó témakörök
 
 [A szolgáltatási szerződés áttekintése](service-agreement-groups.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

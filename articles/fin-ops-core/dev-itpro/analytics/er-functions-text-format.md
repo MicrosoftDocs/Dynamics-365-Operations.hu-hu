@@ -101,3 +101,6 @@ Ha ugyanazt a jelentést 2015. december 17-én a **Litware Retail** vevőre vona
 ## <a name="additional-resources"></a>További erőforrások
 
 [Szöveg függvények](er-functions-category-text.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

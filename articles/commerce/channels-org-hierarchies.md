@@ -88,3 +88,6 @@ A következő kép azt jeleníti meg, hogy milyen jogi személy van hozzáadva a
 [Csatornák áttekintése](channels-overview.md)
 
 [Csatornák beállításának előfeltételei](channels-prerequisites.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -52,3 +52,6 @@ A következő lépésekkel egy kategóriába tartozó termékek megrendelésére
 6. Válasszon ki egy lehetőséget a **Szállító kiválasztása** mezőben. Válasszon ki egy szabályt a kiválasztható szállítók típusának ellenőrzéséhez az igénylések létrehozásakor.  
 7. Kattintson a **Bezárás** gombra. Az így definiált irányelvszabályok Felhasználás típusú igénylésekre érvényesek. Ha a Feltöltés típusú igénylések irányelveit kívánja meghatározni, „Feltöltési kategória hozzáférési irányelvszabálya” típusú irányelvszabályt kell létrehoznia.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

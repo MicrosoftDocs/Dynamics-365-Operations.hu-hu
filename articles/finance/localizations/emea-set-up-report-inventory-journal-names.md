@@ -48,3 +48,6 @@ Egy adott jelentés és naplótípus közötti kapcsolat beállításához a **K
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

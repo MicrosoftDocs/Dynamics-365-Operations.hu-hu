@@ -155,3 +155,6 @@ Ha megpróbálja használni a raktári alkalmazást a kitárolási munka feloszt
 ## <a name="other-blocked-operations"></a>Egyéb zárolt műveletek
 
 A munkasorokat, a munkakészlet-tranzakciókat vagy a felosztott munkához kapcsolódó feltöltési hivatkozásokat módosító műveletek sikertelenek lesznek, és a következő hibaüzenet jelenik meg: „A(z) \#\#\#\# azonosítóval végzett munka jelenleg felosztás alatt áll."
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

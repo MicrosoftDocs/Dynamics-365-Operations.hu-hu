@@ -65,3 +65,6 @@ A készletállapotokat módosíthatja az **Aktuális készlet hely szerint** old
 > - Az **Aktuális készlet hely szerint** oldalon a megjelenített dimenziók alapján csoportosíthatja a sorokat a **Megjelenítési dimenziók** gombbal, és módosíthatja a kijelölt sorok állapotát.
 > - Az **Aktuális készlet hely szerint** oldalon több rekordot is kijelölhet, majd a **Készletállapot módosítása** gombbal egyszerre módosíthatja az összeset.
 > - A **Készletállapot módosítása** időszakos feladattal szűrhet a nyomon követési dimenziókkal.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

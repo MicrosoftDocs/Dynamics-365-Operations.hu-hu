@@ -142,3 +142,6 @@ April feladja a kifizetési naplót, és áttekinti a szállítói tranzakcióka
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

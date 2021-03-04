@@ -77,3 +77,6 @@ A `TRANSLATE ("abccba", "abc", "123")` a **"123321"** értéket adja vissza.
 ## <a name="additional-resources"></a>További erőforrások
 
 [Szöveges függvények](er-functions-category-text.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

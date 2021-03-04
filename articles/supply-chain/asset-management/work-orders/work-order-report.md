@@ -51,3 +51,6 @@ A következő ábra példát mutat be a beállítás alapján létrejövő munka
 
 ![2. ábra](media/21-work-orders.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

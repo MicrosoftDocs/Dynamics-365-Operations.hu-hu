@@ -67,3 +67,6 @@ A változáskövetés engedélyezése az Adatentitás projektekhez.
 ### <a name="projects-supply-chain-management-to-field-service-projects"></a>Projektek (Supply Chain Management és Field Service között): Projektek
 
 [![Sablonleképezés az adatintegrátorban](./media/FSProject1.png)](./media/FSProject1.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

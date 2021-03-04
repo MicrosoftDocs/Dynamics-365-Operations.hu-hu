@@ -92,3 +92,6 @@ A kompenzációs rácsok segítségével meghatározható és fenntartható a fi
 29. A listában jelölje meg az összes sort, vagy törölje a jelölésüket.
 30. Kattintson az Alkalmazás a rácsra elemre.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -83,3 +83,6 @@ Ha a sztornírozott csekk vevői kifizetésre volt kiadva, a következő folyama
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -303,3 +303,6 @@ Ha azonban a **Vonalkód** adatforrást használja a vonalkódok létrehozásáh
 - [Elektronikus jelentéskészítés céljai](electronic-reporting-destinations.md)
 - [Elektronikus jelentéskészítés képletének nyelve](er-formula-language.md)
 - [NUMBERFORMAT függvény](er-functions-text-numberformat.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

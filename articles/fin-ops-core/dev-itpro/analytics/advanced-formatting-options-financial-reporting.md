@@ -310,3 +310,6 @@ Az **IF/THEN/ELSE** állítás lehetővé teszi, hogy bármely számítás bárm
 Jelentéseket tervezhet dimenzióértékek használatával, amelyekben „és” jel (&) szerepel.
 
 Bármely **Kapcsolás pénzügyi dimenziókhoz** mezőn belül megadhat olyan értéket, mint például az **Eredmény (P&L)**. A dimenzióérték mindkét oldalán szereplő egyszeres idézőjelek ('') azt jelzik, hogy szövekonstans értéket használ, például az „és” (&) jelet.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

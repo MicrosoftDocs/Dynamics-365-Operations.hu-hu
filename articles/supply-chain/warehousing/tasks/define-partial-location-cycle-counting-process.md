@@ -73,3 +73,6 @@ A ciklikus leltározási tervek leltározási munka létrehozásakor történő 
 14. Kattintson az OK gombra.
 15. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

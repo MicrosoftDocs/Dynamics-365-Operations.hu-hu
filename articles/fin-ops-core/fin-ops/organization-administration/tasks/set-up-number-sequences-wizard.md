@@ -38,3 +38,6 @@ A számsorozatokat az alapadatok és az azokat igénylő tranzakciós bejegyzés
 4. Válassza ki a **Következő** lehetőséget.
 5. Válassza a **Befejezés** lehetőséget.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -73,3 +73,6 @@ A folyamattulajdonosok a hozzájuk rendelt aktív üzleti folyamatokat rendeli a
 
 Az aktív folyamatok és a hozzájuk kapcsolódó feladatok megtekintéséhez nyissa meg az **Üzleti folyamatok** munkaterületet.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

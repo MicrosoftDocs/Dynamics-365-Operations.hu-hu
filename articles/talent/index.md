@@ -35,3 +35,6 @@ A Talent tartalmazza az Attract alkalmazást, amellyel azonosíthatja a szerveze
 > [!IMPORTANT]
 > A Dynamics 365 Talent: Core HR funkciója ma már része a Dynamics 365 Human Resources. Az Emberi erőforrások dokumentációját a következő címen tekintheti meg: [Üdvözöljük a Dynamics 365 Human Resources](https://docs.microsoft.com/dynamics365/human-resources/hr-welcome).
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

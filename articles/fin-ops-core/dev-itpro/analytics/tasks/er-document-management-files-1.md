@@ -74,3 +74,6 @@ A vevői számlamodellhez saját konfigurációt fog létrehozni, a Microsoft á
 3. A Név mezőbe írja be a „Vevői számlamodell (egyéni)” szöveget.
 4. Kattintson a Konfiguráció létrehozása lehetőségre.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

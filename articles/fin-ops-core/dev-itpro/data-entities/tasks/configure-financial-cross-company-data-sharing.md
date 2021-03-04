@@ -59,3 +59,6 @@ Ehhez a feladathoz 7.1-es vagy újabb verziós Dynamics AX platform szükséges.
 27. Frissítse a lapot..
 28. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

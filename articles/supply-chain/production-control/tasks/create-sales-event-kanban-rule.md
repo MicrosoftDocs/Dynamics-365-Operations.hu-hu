@@ -74,3 +74,6 @@ Ez az eljárás egy olyan kanbanszabály létrehozásához szükséges beállít
 2. Az igénykövetési fa megtekintése lehetőségre.
     * Figyelje meg, hogy a kanban mennyisége azonos az értékesítési sor létrehozásakor. Azt is láthatja, hogy az L0050 termeléséhez anyagi kiadásokra van szükség. Ez az eljárás utolsó lépése.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

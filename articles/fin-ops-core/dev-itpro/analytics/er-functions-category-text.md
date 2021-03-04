@@ -62,3 +62,6 @@ Az Elektronikus jelentéskészítés (ER) szövegfüggvényei a *Karakterlánc* 
 [Képletszerkesztő az Elektronikus jelentéskészítésben](general-electronic-reporting-formula-designer.md)
 
 [Elektronikus jelentéskészítés képletének nyelve](er-formula-language.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

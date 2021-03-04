@@ -67,3 +67,6 @@ Ha **Szállító** a VendTable táblára hivatkozó Elektronikus jelentéskész�
 ## <a name="additional-resources"></a>További erőforrások
 
 [Lista függvények](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

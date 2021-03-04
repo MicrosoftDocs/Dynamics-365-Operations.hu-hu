@@ -133,3 +133,6 @@ Hajtsa végre az alábbi lépéseket a munkarendeléshez vagy a karbantartási k
 
 > [!NOTE]
 > Igény esetén a hibák, területek, típusok, okok és javítások nevei módosíthatók. A névmódosítások automatikusan tükröződnek kapcsolódó hibaregisztrációkban.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

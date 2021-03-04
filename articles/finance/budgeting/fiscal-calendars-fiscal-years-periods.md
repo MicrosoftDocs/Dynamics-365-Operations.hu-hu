@@ -64,3 +64,6 @@ Használhatja a főkönyvi naptár oldalt, hogy megtekintse a pénzügyi naptár
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

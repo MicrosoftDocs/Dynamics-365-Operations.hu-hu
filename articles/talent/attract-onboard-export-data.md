@@ -113,3 +113,5 @@ A letöltés egy .zip-fájl, amely a következőket tartalmazza:
 ## <a name="see-also"></a>Lásd még
 
 [Dynamics 365 Talent: Attract és Dynamics 365 Talent: Onboard alkalmazások megszüntetése](https://community.dynamics.com/365/talent/b/dynamics365fortalent/posts/retiring-dynamics-365-talent-attract-and-onboard-apps)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

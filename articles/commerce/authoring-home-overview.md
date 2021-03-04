@@ -122,3 +122,6 @@ Miután betöltötte a szerkesztési eszközt, kiválaszthatja a **Kezdőlap** l
 [A webhely keresőmotor-optimalizálási (SEO) szempontjai](search-engine-optimization-considerations.md)
 
 [Tartalomra vonatkozó biztonsági házirend (CSP) kezelése](manage-csp.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

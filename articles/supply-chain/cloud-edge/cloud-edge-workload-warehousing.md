@@ -245,3 +245,6 @@ A skálázási egységek számítási feladatában a következő két kötegelt 
 
 - Hullám táblarekordjainak feldolgozása
 - Hullám-végrehajtási vezérlésátviteli események feldolgozása
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

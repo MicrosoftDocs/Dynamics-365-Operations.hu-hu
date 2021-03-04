@@ -145,3 +145,6 @@ Az alábbi tartalmak nagy része a kapcsolódó termékekre: Dynamics 365 Commer
 
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

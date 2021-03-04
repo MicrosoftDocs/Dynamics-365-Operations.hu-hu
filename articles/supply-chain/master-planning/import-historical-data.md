@@ -59,3 +59,6 @@ A korábbi igényadatok importálása után létrehozhatja az igény-előrejelz�
 ## <a name="additional-resources"></a>További erőforrások
 
 [Statisztikai kiinduló előrejelzés létrehozása](generate-statistical-baseline-forecast.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -43,3 +43,6 @@ A naptárak írják le az üzemi erőforrásokhoz munkaidejét és kapacitását
 12. Válassza ki az **OK** lehetőséget.
 13. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

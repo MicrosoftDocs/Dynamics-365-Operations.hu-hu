@@ -47,3 +47,6 @@ Az A vállalat pénzügyi nyilvántartást kezel több kisebb vállalat számár
 
 [Szolgáltatási objektumok létrehozása](create-service-objects.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

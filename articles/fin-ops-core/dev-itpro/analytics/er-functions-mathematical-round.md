@@ -75,3 +75,6 @@ A `ROUND (1200.767, -3)` az 1000 legközelebbi többszörösére kerekít és az
 ## <a name="additional-resources"></a>További erőforrások
 
 [Matematikai függvények](er-functions-category-mathematical.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

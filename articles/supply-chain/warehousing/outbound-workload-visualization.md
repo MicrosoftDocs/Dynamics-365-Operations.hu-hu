@@ -98,3 +98,6 @@ A következő ábra az eredményül kapott diagramot szemlélteti.
 ![Zóna és munkaállapot vizualizációja](media/work-viz-chart.png "Zóna és munkaállapot vizualizációja")
 
 Ez a diagram két olyan zónát mutat be, amelyek a **SZINT** és az **ÖMLESZTETT** elnevezésekkel rendelkeznek, valamint az **Üres** nevű zónát. Az **Üres** zóna minden olyan munkasort jelöl, amely nem tagja egy zónának. A diagram mindig **Üres** állapottal jeleníti meg az összes nem kapcsolódó szűrt adatot, hogy a lehető legnagyobb láthatóságot biztosítsa. A **SZINT** zónában a diagram három lezárt sort és négy nyitott sort mutat be. Az **ÖMLESZTETT** zónában a diagram négy lezárt sort és egy nyitott sort, valamint 24 érvénytelenített sort mutat be. Végezetül a diagram nyolc olyan lezárt sort jelenít meg, amelyek nem részei egy zónának sem, ezért **Üres** állapottal szerepelnek.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

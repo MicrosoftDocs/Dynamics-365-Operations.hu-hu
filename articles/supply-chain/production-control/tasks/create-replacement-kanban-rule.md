@@ -56,3 +56,6 @@ Ez az eljárás egy meglévő kanbanszabály egy új kanbanszabállyal történ�
 1. Állítsa a Maximális mennyiséget „100” értékre.
     * Bontsa ki a Mennyiségek gyorslapot a Maximális mennyiség mező megtekintéséhez. A maximális mennyiség 100-ra történő módosítása legfeljebb 100 kanban feldolgozását teszi lehetővé.    Ez az feladat utolsó lépése.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -53,3 +53,6 @@ A feladat bemutatja, hogyan hozhat létre juttatási elemeket, amelyeket az új 
 6. Az Érvényesség mezőben adjon meg dátumot és időt.
 7. Kattintson a Juttatás létrehozása hivatkozásra.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -56,3 +56,6 @@ Az eljárás egy olyan szolgáltatáshoz tartozik, amely a Dynamics 365 for Oper
 8. A fastruktúrában bontsa ki az „Instrastat modell” elemet.
 9. A fastruktúrában jelölje ki a következőt: „Intrastat modell\Intrastat (DE)”.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

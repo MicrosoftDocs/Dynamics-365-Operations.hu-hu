@@ -54,3 +54,6 @@ Az importbeszedvény segítségével garantálható, hogy az eladó megkapja a f
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

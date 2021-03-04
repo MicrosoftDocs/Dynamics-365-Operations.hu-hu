@@ -71,3 +71,6 @@ A `CONVERTCURRENCY (1, "EUR", "USD", TODAY(), "DEMF")` egy euró egyenértékét
 ## <a name="additional-resources"></a>További erőforrások
 
 [Egyéb (üzleti területre jellemző) függvények](er-functions-category-other.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

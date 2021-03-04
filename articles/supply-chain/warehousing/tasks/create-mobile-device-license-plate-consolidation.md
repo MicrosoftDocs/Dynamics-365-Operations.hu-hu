@@ -37,3 +37,6 @@ Ez az eljárás bemutatja, hogyan lehet létrehozni egy mobileszköz menüpontot
 5. A Mód mezőben válassza ki a „Közvetett” lehetőséget.
 6. A Tevékenységkód mezőben válassza ki az „Azonosítótáblák egyesítése” lehetőséget.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

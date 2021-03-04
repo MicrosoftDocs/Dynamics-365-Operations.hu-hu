@@ -55,3 +55,6 @@ Ez az eljárás bemutatja, hogyan módosítható a bizományosi készlet tulajdo
 2. Kattintson az OK gombra.
 3. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

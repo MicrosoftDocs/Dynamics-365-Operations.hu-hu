@@ -100,3 +100,6 @@ A lenti ábra egy példát mutat a **Beszerzési rendelés** oldalára, amelynek
 
 Hasonlóan, a beszerzési igénylési sorhoz kapcsolódó tevékenység számának megtekintéséhez vagy megadásához válassza ki a beszerzési rendelés rekordját a **Beszerzési rendelés igénylése** listaoldalon, majd a **Beszerzési rendelés** oszlopában válassza ki a beszerzési rendelés hivatkozását. A **Tevékenység száma** mező a **Sor részletei** gyorslap **Projekt** lapján található.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

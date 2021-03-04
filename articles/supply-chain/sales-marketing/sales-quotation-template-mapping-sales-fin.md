@@ -143,3 +143,6 @@ Az alábbi ábrákon sablon hozzárendelést például adatok integrátor megjel
 
 [A potenciális ügyfelek készpénzre váltása](prospect-to-cash.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

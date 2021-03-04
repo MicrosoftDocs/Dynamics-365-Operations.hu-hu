@@ -81,3 +81,6 @@ Az üzemi erőforrás hajtja végre egy projekt vagy egy termelési folyamat tev
 4. A Bemeneti hely mezőben adjon meg vagy válasszon ki egy értéket.
     * Adja meg annak a raktárnak az elhelyezkedését, ahonnan az üzemi erőforrás anyagot használ.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

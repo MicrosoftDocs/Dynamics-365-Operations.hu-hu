@@ -122,3 +122,6 @@ Feldolgozhatja az Elégtelen fedezetű kifizetéseket, ha rákattint a **Beszed�
 [Hitelkeret felfüggesztése értékesítési rendelésekhez](./cm-sales-order-credit-holds.md)
 
 [Vevői hitelkockázatkezelés – időszakos feladatok](./cm-periodic-tasks.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

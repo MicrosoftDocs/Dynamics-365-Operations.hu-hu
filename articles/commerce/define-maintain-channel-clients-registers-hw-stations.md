@@ -205,3 +205,6 @@ Az aktiválással kapcsolatos további információk tartalmazzák a dolgozót, 
 ### <a name="client-data-synchronization"></a>Kliensadatok szinkronizálása
 
 A pénztárkliensben az aktivációs állapotban bekövetkezett változásokon kívül minden változást szinkronizálni kell a csatorna adatbázisában, hogy érvénybe lépjenek. A módosítások szinkronizálásához a csatorna adatbázisában, navigáljon a **Kiskereskedelem és kereskedelem** &gt; **Kiskereskedelemi és kereskedelmi IT** &gt; **Elosztási ütemezés** menüpontra és futtassa a szükséges elosztási ütemezést. A kliensváltoztatásokhoz futtassa a **Pénztárak** és **Csatornakonfiguráció** elosztási ütemezéseket.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

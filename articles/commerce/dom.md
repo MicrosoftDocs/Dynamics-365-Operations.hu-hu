@@ -256,3 +256,6 @@ Alább olyan dolgokat gyűjtöttünk össze, amelyet érdemes a DOM funkció has
 - Jelenleg a DOM csak olyan rendeléseket tekint át, amelyeket kereskedelmi csatornákból hoztak létre. Az értékesítési rendeléseket a rendszer akkor azonosítja értékesítési rendelésként, ha a **Kereskedelmi értékesítés** beállítás **Igen** értékre van állítva.
 - A Microsoft még nem tesztelte a DOM-ot speciális raktárkezelési funkciókkal. A vevőknek és partnereknek óvatosnak kell lenniük, amikor annak megállapítására törekszenek, hogy a DOM kompatibilis-e a számukra releváns speciális raktárkezelési lehetőségekkel és folyamatokkal.
 - A DOM csak a kereskedelmi felhőalapú verziójában elérhető. A helyszíni telepítésű verziókban nem támogatott.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

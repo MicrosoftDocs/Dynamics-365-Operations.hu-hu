@@ -63,3 +63,6 @@ Feltételezzük, hogy szervezete korlátozni szeretné az adatokhoz való hozzá
 
 ## <a name="additional-resources"></a>További erőforrások
 Ha további információt szeretne a Power BI sorszintű biztonságáról, lásd: [Biztonság kezelése a modelljén a Power BI](https://powerbi.microsoft.com/documentation/powerbi-admin-rls/#manage-security-on-your-model) szolgáltatással.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

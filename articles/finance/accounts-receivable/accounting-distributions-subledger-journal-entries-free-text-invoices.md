@@ -136,3 +136,6 @@ Szabadszöveges számla feladása előtt meg lehet tekinteni a számla teljes k�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

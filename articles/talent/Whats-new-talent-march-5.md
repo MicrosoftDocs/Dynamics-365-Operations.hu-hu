@@ -80,3 +80,6 @@ Számos vállalatnál a kompenzációkért és juttatásokért felelős vezetők
 
 ###  <a name="platform-update-24-for-finance-and-operations"></a>A Finance and Operations 24-es platformfrissítése
 A Finance and Operations 24-es platformfrissítéssel kapcsolatos részleteket lásd a [Újdonságok és változások a Finance and Operations 24. platformfrissítésében (2019. március)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

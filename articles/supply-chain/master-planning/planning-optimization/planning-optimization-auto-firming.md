@@ -67,3 +67,6 @@ Mind a tervezés optimalizálása, mind a Microsoft Dynamics 365 Supply Chain Ma
 - Az automatikus megerősítés a követelmény dátuma (záró dátum) alapján történik.
 - Ha biztosítani szeretné, hogy a rendelések megfelelő időben legyenek megerősítve, a megerősítés időtartamának hosszabbnak kell lennie, mint az átfutási idő.
 - Ha az összes olyan rendelést meg szeretné erősíteni, amely az aktuális hét során kezdődik, a megerősítési időkorlátnak az átfutási idő plusz egy hétnek kell lennie.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

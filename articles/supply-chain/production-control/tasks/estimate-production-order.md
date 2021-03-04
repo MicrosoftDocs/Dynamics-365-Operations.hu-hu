@@ -42,3 +42,6 @@ Ezt a folyamatot az USMF bemutatócégen vagy saját adathalmaza használatával
 1. A Művelet panelen kattintson a Költségkezelés elemre.
 2. Kattintson a Számítás részleteinek megjelenítése elemre.
     * Ezen a lapon a költséglebontás látható. Megtekintheti például az első sorban a késztermék egységenkénti teljes önköltségi árát. A következő sorok az anyagjegyzékcikkek, a termelési útvonal és a közvetett költségek költségeit tartalmazzák.  
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

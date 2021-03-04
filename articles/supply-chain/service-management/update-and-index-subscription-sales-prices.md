@@ -55,3 +55,6 @@ Módosul az előfizetés alapára vagy indexe a megadott értékkel.
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

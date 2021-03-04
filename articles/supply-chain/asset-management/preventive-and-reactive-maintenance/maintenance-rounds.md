@@ -117,3 +117,6 @@ Az alábbi két illusztráció egy ütemezési feladatot mutat be a **Karbantart
 - A **Futtatás a háttérben** gyorslapon beállítható kötegelt feladat a körök szabályos időközönként történő ütemezéséhez.  
 - Ha egy kör több munkarendelési gyűjtőben is szerepel (lásd: [Munkarendelés-gyűjtők](../work-orders/work-order-pools.md)), akkor minden gyűjtőhöz egy rekord jelenik meg a **Nyitott karbantartási ütemezési csoportok** részen. Ez a munkarendelés-gyűjtők szűrési beállításainak optimalizálására szolgál.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

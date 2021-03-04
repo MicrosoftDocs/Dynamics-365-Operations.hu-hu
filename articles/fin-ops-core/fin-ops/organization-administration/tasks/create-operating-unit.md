@@ -41,3 +41,6 @@ Egy üzemi egység olyan szervezet, amelynek segítségével meg lehet osztani a
     + Adja meg a kommunikációs módszerekkel kapcsolatos adatokat, például e-mail-címeket, URL-címeket és telefonszámokat. Új kommunikációs rekord megadásához kattintson az Új gombra. Egy meglévő kommunikációs rekord módosításához kattintson a **További beállítások > Speciális** gombra.   
 6. Igény szerint módosítsa az **Üzemi egység számát**. Ne felejtse el, hogy ez a szám egyedi azonosító a vonatkozó **Fél** rekordban, és nem lehet ugyanaz, mint bármely más üzemi egységé.
 7. Válassza a **Mentés** lehetőséget.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

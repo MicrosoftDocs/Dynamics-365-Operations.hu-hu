@@ -51,3 +51,6 @@ Ez a feladat az USMF bemutatócéget használja.
 18. A **Díj pénzneme** mezőben válassza ki a díj pénznemét. A díj ebben a pénznemben kerül létrehozásra.  
 19. Kattintson a **Mentés** gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -68,3 +68,6 @@ Beállíthat *felelős* karbantartási dolgozókat is, akiket ki lehet választa
 
 A munkarendelés ütemezése során a program különböző pontszámokat számít ki annak meghatározására, hogy melyik dolgozók kapják a munkarendeléshez kapcsolódó feladatokat (ezeket a pontszámokat az **Eszközkezelés paraméterei** > **Munkarendelés ütemezése** hivatkozásra kattintva tekintheti meg). Ha a munkarendelés ütemezése során több preferált karbantartási dolgozó vagy felelős karbantartási dolgozó kap ugyanakkora pontszámot, akkor a rendszer véletlenszerűen választ. Ellenkező mindig a legmagasabb pontszámú dolgozó lesz hozzárendelve a munkarendeléshez.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

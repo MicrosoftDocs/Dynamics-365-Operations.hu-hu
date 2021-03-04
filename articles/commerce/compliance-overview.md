@@ -46,3 +46,6 @@ Ha többet szeretne megtudni a Microsoft által használt alapelvekről, keresse
 [Adatvédelmi irányelv oldalának hozzáadása](add-privacy-page.md)
 
 [Nyomon követett tartalmi változásokhoz társított felhasználói azonosítók kicserélése](replace-IDs-tracked-changes.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

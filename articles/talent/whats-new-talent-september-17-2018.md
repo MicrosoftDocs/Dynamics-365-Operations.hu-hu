@@ -54,3 +54,6 @@ A Finance and Operations 18-as platformfrissítése a Talent kiadásának rész�
 ## <a name="bug-fixes"></a>Hibajavítások
 
 Ez a kiadás számos további hibajavítást tartalmaz, beleértve azt, hogy az ACA, ADA és I9 hivatkozásai mostantól csak az USA-beli vállalatok számára engedélyezettek.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -233,3 +233,6 @@ A tranzakció jövőbeli kiegyenlítésével kapcsolatos nemkívánatos problém
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

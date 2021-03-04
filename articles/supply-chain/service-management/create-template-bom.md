@@ -111,3 +111,6 @@ Létrejön egy új sablonanyagjegyzék azoknak a soroknak a felhasználásával,
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

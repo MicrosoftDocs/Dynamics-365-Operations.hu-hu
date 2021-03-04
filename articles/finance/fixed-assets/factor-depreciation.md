@@ -79,3 +79,6 @@ A **Szorzó** mezőben szereplő érték egyenlő az **50** értékkel. Ebben az
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

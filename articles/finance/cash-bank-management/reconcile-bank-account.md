@@ -71,3 +71,6 @@ A banki kivonat egyeztetésének megszakítása funkció segítségével megszak
 A banki kivonat egyeztetései csak abban az időrendi sorrendben vonhatók vissza, amelyben bevitték őket. A banki kivonat egyeztetésének megszakításakor az új tranzakciókat és helyesbítéseket a program sztornírozza, és az összes többi tranzakciót nem egyeztetettként jelöli meg.
  
 A banki kivonat egyeztetésének megszakításához válassza ki a banki kivonatot, és válassza a **Banki kivonat > Banki egyeztetés visszavonása** lehetőséget. A **Banki egyeztetés visszavonása** lapon adja meg az **Okkód**, az **Okhoz kapcsolódó megjegyzés** és a **Visszavonás dátuma** értékét. A visszavonás elindításához válassza az **OK** lehetőséget. Ne feledje, hogy a banki kivonat visszavonási dátuma nem lehet korábbi a banki kivonat dátumánál. A banki kivonat egyeztetésének visszavonása után a banki kivonat **Visszavonás dátuma** mezője frissül a megadott **Visszavonási dátum** értékével. Válassza a **Tranzakciók** gombot azoknak a tranzakcióknak a megtekintéséhez, amelyek egyeztetését visszavonta.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

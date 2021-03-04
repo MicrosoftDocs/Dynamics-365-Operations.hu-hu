@@ -46,3 +46,6 @@ Ez a feladat az SSI-adatkészletet használja.
 12. Érték beírása a Megjegyzés mezőbe.
 13. Kattintson a Küldés hivatkozásra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

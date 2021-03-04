@@ -55,3 +55,6 @@ Ha egy tétel megsérül vagy rossz helyre kerül, adjon meg egy fiktív visszaa
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

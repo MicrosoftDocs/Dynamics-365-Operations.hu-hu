@@ -55,3 +55,6 @@ Ez az eljárás egy kereskedelmi csatorna pénzügyi dimenzió, az üzletekkel k
 24. A listában kattintson a kijelölt sorban lévő hivatkozásra.
 25. Kattintson a Mentés gombra.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

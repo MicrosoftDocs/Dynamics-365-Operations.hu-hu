@@ -57,3 +57,6 @@ Ez az eljárás bemutatja, hogyan lehet áfacsoportokat társítani kereskedelmi
 21. A listában kattintson a kijelölt sorban lévő hivatkozásra.
 22. Kattintson a Mentés gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

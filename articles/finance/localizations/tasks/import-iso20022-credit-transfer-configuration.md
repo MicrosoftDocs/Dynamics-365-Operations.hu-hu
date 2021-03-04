@@ -45,3 +45,6 @@ Ez az első azon öt eljárás közül, amelyek együtt mutatják be elektroniku
     * Ha az Importálás gomb nem elérhető, az azt jelenti, hogy a konfiguráció importálása már megtörtént.  
 9. Kattintson az Igen gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -59,3 +59,6 @@ Az `OR (1=2, "a"="a")` **IGAZ** értéket ad vissza.
 ## <a name="additional-resources"></a>További erőforrások
 
 [Logikai függvények](er-functions-category-logical.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

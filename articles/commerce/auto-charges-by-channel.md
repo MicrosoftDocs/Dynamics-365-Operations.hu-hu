@@ -128,3 +128,6 @@ Ha kiválasztja a **Tranzakcióbeállítások \> Költségék \> Költésgek kez
 [Többcsatornás speciális automatikus költségek](omni-auto-charges.md)
 
 [Fejlécköltségek arányosítása az egyező értékesítési sorokhoz](pro-rate-charges-matching-lines.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

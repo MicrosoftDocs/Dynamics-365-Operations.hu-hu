@@ -192,3 +192,6 @@ Az eseménykanbanoknál a kijelölt feladatok és a rögzített feladatok állap
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

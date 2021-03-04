@@ -56,3 +56,6 @@ Az alkalmazott szabadságegyenlegének módosításakor az okkódok és a megjeg
 
 - [Szabadság és távollét áttekintése](hr-leave-and-absence-overview.md)
 - [Szabadság- és távollétkérelmek kezelése](hr-employee-self-service-manage-requests.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -109,3 +109,6 @@ Jóváhagyók kijelöléséhez kövesse az alábbi lépéseket.
 1. A **Beállítások** oldalon a **Számlák** fülön kattintson **Jóváhagyó kijelölése** parancsra.
 2. A **Jóváhagyó felhasználó azonosítója** mezőben válassza ki annak a felhasználónak az azonosítóját, akinek alá kell írnia egy másik felhasználó által végzett módosításokat.
 3. Az **Aláírható felhasználó azonosítója** mezőben válassza ki annak a felhasználónak az azonosítóját, akinek a módosításait alá kell írni.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

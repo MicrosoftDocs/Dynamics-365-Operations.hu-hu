@@ -53,3 +53,6 @@ Közvetlen szállítás létrehozásakor az értékesített cikk soha nem jeleni
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

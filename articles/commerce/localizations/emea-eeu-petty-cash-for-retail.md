@@ -93,3 +93,6 @@ A következő eljárással készpénzes fizetés fizetési mód beállítása az
 
 > [!NOTE]
 > Ellenszámlát kell beállítani a fizetőeszköz készpénzes fizetés fizetési mód és a fizetőeszköz eltávolítása vagy váltópénz-bejegyzés üzlet fizetési módhoz. Ez a fizetőeszköz eltávolítása vagy váltópénz-bejegyzés tranzakciókhoz ellensúlyozott főkönyvi tételeket hoz létre.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

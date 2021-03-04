@@ -67,3 +67,6 @@ A `ROUNDUP (1200.767, -3)` az 1000 legközelebbi többszörösére kerekít fel,
 ## <a name="additional-resources"></a>További erőforrások
 
 [Matematikai funkciók](er-functions-category-mathematical.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

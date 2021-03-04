@@ -55,3 +55,6 @@ A többi Finance and Operations alkalmazással megosztott funkciókkal kapcsolat
 | Tartalom  | Leírás | Formátum  | Hossz    |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|-----------|---------------------------------------------------------------------------|
 | [A Dynamics 365 Commerce e-Kereskedelem konfigurálása és használata](https://docs.microsoft.com/learn/paths/configure-work-e-commerce/) | Az online csatornák és a Dynamics 365 Commerce e-Kereskedelmi webhelye lehetővé teszi a kiskereskedők számára az online jelenlét kialakítását. | Ingyenes, saját tempójú online tanulási útvonal | 4 óra   |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -53,3 +53,6 @@ Ha a termelési rendelés állapotát **Elindítva** állapotról **Kiadva** ál
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

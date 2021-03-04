@@ -45,3 +45,6 @@ A munka visszavonása funkcióval csak az **Értékesítés**, **Átmozgatási p
 A munka blokkolásának feloldásához a rendszer törli a hátralévő munkasorokat, és rögzíti a munkaazonosítóhoz társított felhasználó által megadott raktári adatokat. A program ezután folytatja az érintett cikkmennyiséget magába foglaló szokásos raktárkezelési műveleteket.
 
 Ha azt szeretné, hogy az érintett elem egy meghatározott helyre kerüljön a munka érvénytelenítése után, a felhasználónak egy készletmozgatás mennyiségi helyesbítési műveletét kell használnia egy mobileszközön.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

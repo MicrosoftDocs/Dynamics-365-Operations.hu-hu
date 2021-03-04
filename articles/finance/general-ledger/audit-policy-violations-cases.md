@@ -61,3 +61,6 @@ További információ: [Könyvvizsgálati irányelvszabály](audit-policy-rules.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

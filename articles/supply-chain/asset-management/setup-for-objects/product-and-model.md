@@ -60,3 +60,6 @@ Ez a témakör azt mutatja be, hogyan lehet eszközgyártókat és kapcsolódó 
 2. Az **Eszköz** oszlopban válassza ki az eszköz hivatkozását. Megjelenik a **Részletek** oldal.
 3. Válassza ki a **Szerkesztés** opciót.
 4. Az **Általános** gyorslapon válassza ki a **Gyártó** és **Modell** mezők értékeit.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

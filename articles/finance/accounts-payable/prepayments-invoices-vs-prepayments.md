@@ -66,3 +66,6 @@ Az előlegszámlák gyakoriak az üzleti gyakorlatban. A szállítók azért ál
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

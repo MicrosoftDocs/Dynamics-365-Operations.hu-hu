@@ -61,3 +61,6 @@ Az X termék például a *Design kabinetek* terméktulajdonosi csoportjához van
 ## <a name="product-owners-and-approvals"></a>Terméktulajdonosok és jóváhagyások
 
 Mivel a terméktulajdonosok tudják, hogy az egyes mérnöki módosítások előnyösek-e termékeik számára, gyakran érdemes ezeket belefoglalni a mérnöki változáskezelés modul jóváhagyási folyamatának részeként. Ezt a módszert úgy hajthatja végre, hogy a termék tulajdonosait a mérnöki változtatások kezeléséhez használt munkafolyamatokban résztvevő szolgáltatókként állítja be. A rendszer ezután a munkafolyamatokban hozzárendeli a jóváhagyási feladatokat a mérnöki módosítási kérelmekben és a mérnöki módosítási rendelésekben szereplő termékek alapján. További tájékoztatást [A mérnöki termékek módosításának kezelése](engineering-change-management.md) részben talál.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -55,3 +55,6 @@ Ez az eljárás olyan konfigurációs szabályokat hoz létre, amelyeket a dimen
     * Válassza ki azt a cikkszámot, amelyet a megadott módszertől függően kijelöl vagy eltávolít.  
 18. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

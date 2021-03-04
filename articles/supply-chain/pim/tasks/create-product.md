@@ -39,3 +39,6 @@ Ez az eljárás az új termék létrehozását ismerteti a Commerce termékek hi
 8. Írjon be egy értéket a Termékszám mezőbe.
 9. Kattintson az OK gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

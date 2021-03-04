@@ -89,3 +89,6 @@ Ha többet szeretne megtudni e függvény használatáról, tekintse meg az [ER 
 ## <a name="additional-resources"></a>További erőforrások
 
 [Adatgyűjtési függvények](er-functions-category-data-collection.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

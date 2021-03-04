@@ -150,3 +150,6 @@ Hajtsa végre az alábbi lépéseket: először hajtsa végre a „Konfiguráci�
 17. A **Bankszámla** mezőben írja be a `GBSI OPER` szöveget.
 18. Válassza az **OK** parancsot, majd válassza ismét az **OK** elemet. Tekintse át a létrehozott munkalapot, többek között a kifizetési sorok részleteit, valamint az ebben a fizetési üzenetben használt pénznemkódra vonatkozó összegeket is.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

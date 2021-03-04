@@ -309,3 +309,6 @@ Ha meg szeretné tudni, hogyan kell a konfigurált **LE adatok keresésének tan
 [Képletszerkesztő az Elektronikus jelentéskészítésben](general-electronic-reporting-formula-designer.md)
 
 [Az ER-formátum paramétereinek beállítása jogi személyenként](er-app-specific-parameters-set-up.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

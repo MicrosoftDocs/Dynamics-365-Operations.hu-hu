@@ -68,3 +68,6 @@ Ez a témakör ismerteti, hogyan kérhet segítséget a Finance and Operations-a
 </tr>
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

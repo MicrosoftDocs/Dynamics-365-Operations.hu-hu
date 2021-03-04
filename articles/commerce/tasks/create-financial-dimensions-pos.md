@@ -48,3 +48,6 @@ Ez az eljárás pénzügyi dimenziók, (POS-) pénztárgépek részére történ
 17. A listában keresse meg és válassza ki az éppen frissített jegyzék dimenzióértékét.
 18. Kattintson a Mentés gombra.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

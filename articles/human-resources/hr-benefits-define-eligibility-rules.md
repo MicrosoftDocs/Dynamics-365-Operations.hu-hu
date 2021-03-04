@@ -69,3 +69,6 @@ A bemutató adatsor típusa, melyet a vállalat használt az útmutató készít
 10. Kattintson a Mentés gombra.
 11. Zárja be az űrlapot.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

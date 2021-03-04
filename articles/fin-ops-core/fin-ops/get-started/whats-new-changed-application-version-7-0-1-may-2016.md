@@ -106,3 +106,6 @@ Ez a cikk a Microsoft Dynamics AX 7.0.1 alkalmazásverziójában található új
 [Új vagy módosult elemek Finance and Operations kezdőlapján](whats-new-changed.md)
 
 [Új vagy frissített feladat-útmutatók (2016. május)](new-updated-task-guides-available-may-2016.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

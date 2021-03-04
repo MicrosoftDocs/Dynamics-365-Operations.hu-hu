@@ -45,3 +45,6 @@ Ha a szolgáltatásiszerződés-sorra nem határoz meg időszakot, akkor a szerz
 
 [Időablakok létrehozása](create-time-windows.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

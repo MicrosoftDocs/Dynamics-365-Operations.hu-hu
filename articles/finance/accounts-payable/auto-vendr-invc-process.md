@@ -69,3 +69,6 @@ A **Szállítói számla tétel** munkaterület lehetővé teszi, hogy az olyan 
 
 ## <a name="vendor-invoice-automation---resume-automation-processing-for-multiple-invoices"></a>Szállítói számla automatizálása – Több számla automatizálásának folytatása
 Ha egy importált számlát nem küld el sikeresen a munkafolyamatnak az automatizált folyamaton keresztül, a rendszer eltávolítja azt a további automatizált feldolgozásból. A kötelezettségek ügyintézője áttekintheti és szerkesztheti a számlát, mielőtt az automatikus folyamat újra beküldi azt a munkafolyamatba. Ha egy hiba oka több számla esetében is megoldható, újraindíthatja az automatikus folyamatot az **Automatikus számlafeldolgozás folytatása** lapon. 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

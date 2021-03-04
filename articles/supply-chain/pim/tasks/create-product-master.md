@@ -61,3 +61,6 @@ Hozzon létre egy alapterméket az előre megadott változatokhoz. Ez az eljár�
 10. Kattintson a **Mentés** gombra.
 11. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

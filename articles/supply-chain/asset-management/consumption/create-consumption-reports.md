@@ -78,3 +78,6 @@ A felhasználás munkarendelésekre való feladásakor kinyomtathatja a munkaren
 >[!NOTE]
 >Létrehozhat egy [munkarendelési jelentést](../work-orders/work-order-report.md) is, amely több munkarendelési adatot tartalmaz.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

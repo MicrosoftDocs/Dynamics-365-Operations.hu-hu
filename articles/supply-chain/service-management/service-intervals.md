@@ -94,3 +94,6 @@ Az ebben a példányban létrehozott három szervizrendeléssor a **Szervizrende
 
 [Szolgáltatás intervallumainak beállítása](set-up-service-intervals.md)  
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

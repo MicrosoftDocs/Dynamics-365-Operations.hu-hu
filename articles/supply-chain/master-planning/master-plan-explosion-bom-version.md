@@ -48,3 +48,6 @@ A következő ábra mutatja az alaptervezési igényalábontás folyamatát. ![A
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

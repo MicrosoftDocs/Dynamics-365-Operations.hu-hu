@@ -82,3 +82,6 @@ Ha két pénznemet használ, vagy ha közös pénznemet használ, de a tranzakci
 A realizált nyereség és veszteség a befejezett tranzakciókból származó nyereség és veszteség. Ezeket az eredménykimutatásban kell elszámolni. A nem realizált nyereség és veszteség olyan nyereség és veszteség, amely megvalósult, de a tranzakció nem fejeződött be. Más szóval könyvelt például egy számlát, de a számla még nincs kiegyenlítve és kifizetve. A nem realizált nyereséget és veszteséget a mérlegben kell elszámolni.
 
 A pénznemek használatával kapcsolatos további tudnivalókat lásd: [Kettős pénznem](dual-currency.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -43,3 +43,6 @@ Ez az témakör bemutatja, hogyan hozható létre manuálisan vonalkód, példak
 12. Válassza a **Mentés** lehetőséget.
 13. Zárja be a lapot. 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

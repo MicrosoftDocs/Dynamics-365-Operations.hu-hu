@@ -74,3 +74,6 @@ Az alábbi képernyőfotón az **Eszközórák ellenőrzése** számítás egyik
 Az órák számításának másik módja az, ha többszörös kiválasztással kiválasztja az eszközöket az **Összes eszköz** vagy **Aktív eszközök** pontban. Ezután kattintson az **Óraellenőrzés** gombra az **Általános** gyorslapon. A rendszer automatikusan beilleszti a kiválasztott eszközöket az **Eszköz** mezőbe a **Szerepeltetni kívánt rekordok** gyorslapon. Kattintson az **OK** gombra az **Eszközórák ellenőrzése** párbeszédablakban, és megjelenik a kiválasztott eszközökre vonatkozó számítás. Ugyanez az eljárás hajtható végre az **Összes munkavégzési helyszín** vagy **Aktív munkavégzési helyszínek** pontban található munkavégzési helyszíneknél, valamint a munkarendeléseknél az **Összes munkarendelés** vagy **Aktív munkarendelések** pontban.
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

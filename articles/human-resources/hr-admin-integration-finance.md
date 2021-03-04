@@ -255,3 +255,5 @@ A dolgozó címében használt helyazonosító nem része számsorozatnak. A dol
 Az alábbi ábrán látható egy példa az Adatintegrátorban való sablonleképezésre. 
 
 ![Sablonleképezés](./media/IntegrationMapping.png)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -111,3 +111,6 @@ A következő összetevők elengedhetetlenek a keresési találatok laphoz:
 
 [Fiókkezelési oldalak áttekintése](quick-tour-account-management.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

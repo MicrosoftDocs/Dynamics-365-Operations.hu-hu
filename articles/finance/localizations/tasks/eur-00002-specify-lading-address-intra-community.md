@@ -73,3 +73,6 @@ Ez az eljárás minden európai országra/régióra vonatkozik. Ezt a feladatot 
 37. Kattintson az Általános fülre.
     * Keressen meg egy újonnan létrehozott sort, és győződjön meg arról, hogy a feladó az árukat Olaszországból szállította.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

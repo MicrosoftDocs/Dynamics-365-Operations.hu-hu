@@ -58,3 +58,6 @@ Az újbóli felosztás befejezéséhez válassza a **Feldolgozás** lehetősége
 > Ha szeretne magyarázatot arról, hogy miért jelennek meg itt ezek a cikkek, további oszlopokat adhat a rácshoz, például: **Újrafelosztási azonosító** és **Értékesítési rendelés**.
 > 
 > [![További oszlopok a Bevételi ár felosztása oldalon](./media/11_rev-rec-scenarios.png)](./media/11_rev-rec-scenarios.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

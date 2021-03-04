@@ -99,3 +99,6 @@ Ha megtekinti azon lapok előnézetét, amelyek azon a sablonon alapulnak, amely
 
 [Parancsfájl hozzáadása a webhely oldalaihoz a telemetria támogatásához](add-telemetry.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

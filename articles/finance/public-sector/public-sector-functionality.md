@@ -72,3 +72,6 @@ Az alábbi táblázatban arról talál információt, hogy ez a konfigurációs 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -146,3 +146,6 @@ A [Dynamics 365 Guides](https://dynamics.microsoft.com/mixed-reality/guides/) se
 1. A dolgozó az útmutatón keresztül tanulja meg a feladat végrehajtását.
 
 A HoloLens alapú útmutatók létrehozásával, hozzárendelésével és használatával kapcsolatos további információkért lásd: [Vegyes valóságot alkalmazó útmutatók biztosítása a termelésben dolgozók számára](instruction-guides-in-production-overview.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

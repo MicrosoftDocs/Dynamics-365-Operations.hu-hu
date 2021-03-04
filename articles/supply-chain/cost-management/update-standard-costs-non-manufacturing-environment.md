@@ -52,3 +52,6 @@ Az új cikkekre vonatkozó elszámoló árak javításához, korrekciójához va
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

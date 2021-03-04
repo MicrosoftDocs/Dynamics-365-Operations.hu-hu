@@ -111,3 +111,6 @@ Feldolgozhatja az Elégtelen fedezetű kifizetéseket, ha rákattint a Beszedés
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -243,3 +243,6 @@ Az archivált végrehajtási előzmények letöltéséhez nyissa meg az adatkeze
 -   DMFSTAGINGLOGDETAILS
 -   DMFSTAGINGVALIDATIONLOG
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

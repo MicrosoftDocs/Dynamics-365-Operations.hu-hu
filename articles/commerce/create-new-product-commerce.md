@@ -115,3 +115,6 @@ A következő kép egy példát mutat egy kiadott termék beállítási konfigur
 [Jogi személyek létrehozása](channels-legal-entities.md)
 
 [Változatcsoport létrehozása](create-variant-group.md) 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

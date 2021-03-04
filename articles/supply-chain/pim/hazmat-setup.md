@@ -284,3 +284,6 @@ A specifikáció értékeinek beállításához válassza a **Termékinformáci�
 A *Veszélyes anyag alagút* specifikációja korlátozza, hogy milyen típusú alagutakon vihetők át a veszélyes anyagok a használandó alagutak típusának meghatározásával. Az alagútkategóriákat a veszélyes anyagok szállítására vonatkozó szabályok határozzák meg. Ez am specifikáció általában csak a közúti szállításra vonatkozik.
 
 A specifikáció értékeinek beállításához válassza a **Termékinformáció-kezelés \> Beállítások \> Veszélyes anyagok szállítási dokumentációja \> Veszélyesanyag-alagút** lehetőséget. A **Veszélyesanyag-alagút** oldalon tetszőleges számú alagútazonosítót hozhat létre, és konfigurálhat mindegyikhez egy azonosító kódot és egy rövid leírást.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

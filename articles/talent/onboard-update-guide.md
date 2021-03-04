@@ -52,3 +52,6 @@ Az Onboard automatikusan e-mailt küld az újonnan felvett személynek, amelyben
     ![[A felvételi sablon változtatásainak érvényesítése az abból létrehozott összes felvételi útmutatóban](./media/onboard-push-changes.png)](./media/onboard-push-changes.png)
 
 A módosítások láthatóvá válnak az új dolgozóknak, akik megnyitják a felvételi útmutatókat. Az Onboard azonban nem küld e-mail-értesítést az új dolgozók számára, hogy tudassa velük, hogy a felvételi útmutató módosult. Az egyszerű azonosítás érdekében egy piros **Új** címke jelenik meg minden egyes változtatás mellett. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

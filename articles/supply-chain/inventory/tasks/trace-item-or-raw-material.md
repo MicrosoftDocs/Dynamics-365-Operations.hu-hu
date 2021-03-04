@@ -60,3 +60,6 @@ A fastruktúra felső csomópontja a kiválasztott cikk és köteg aktuális ké
 9. Kattintson a **Kiszállított értékesítési rendelések** lehetőségre.
 10. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

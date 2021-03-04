@@ -136,3 +136,6 @@ A töredékeket úgy is szerkesztheti, hogy kijelöli azt egy lapon, egy sablonb
 [Előre beállított elrendezések használata](work-with-layouts.md)
 
 [A közzétételi csoportokkal végzett munka](publish-groups.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

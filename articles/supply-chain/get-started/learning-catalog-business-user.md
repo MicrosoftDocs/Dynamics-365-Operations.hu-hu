@@ -69,3 +69,6 @@ A következő katalógus az alapismeretekből a meghatározott tartományokra, a
 | Tartalom | Leírás  | Formátum  |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
 | [Dynamics 365 alapok](https://docs.microsoft.com/learn/certifications/d365-fundamentals?wt.mc_id=learningredirect_certs-web-wwl) | Bizonyítsa be, hogy érti a Microsoft Dynamics 365 Power Platform lényegét; felhőalapú fogalmak, licencelési beállítások, és telepítési és kiadási beállítások. | Vizsga; a költség régiónként változik |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -125,3 +125,6 @@ Ez a viselkedés várható. Mivel az igényléseket nem mindig hagyják jóvá, 
 
 Az ajánlatkérésre adott válaszokhoz kereskedelmi megállapodásokat hozhat létre, függetlenül attól, hogy elfogadták vagy elutasították azokat. További információkért lásd: [Ajánlatkérések (RFQ-k) áttekintése](request-quotations.md).
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

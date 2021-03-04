@@ -45,3 +45,6 @@ Egy termelési megrendelés a következő esetekben hozható létre:
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

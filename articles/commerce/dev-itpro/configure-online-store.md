@@ -62,3 +62,6 @@ A következő táblázatban felsorolt témakörök segítenek konfigurálni a Co
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

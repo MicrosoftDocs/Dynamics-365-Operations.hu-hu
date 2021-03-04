@@ -49,3 +49,6 @@ Létrehozhat havi számlákat az egyes lízingekhez, vagy kötegelt folyamattal 
 6. A tranzakció feladása után megtekintheti a tranzakció adatainak és a lízingkötelezettség könyv szerinti értékét a **Kötelezettségtranzakciók** lehetőség kiválasztásával a lízingkönyvben.
 
     A fizetési ütemezésben be van jelölve a **Feladott napló** jelölőnégyzet, és a sorban megjelenik a számlanapló száma. A kifizetési napló és a naplóhoz való bejegyzés létrehozása után a tétel újbóli létrehozása előtt sztornírozásra van szüksége.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

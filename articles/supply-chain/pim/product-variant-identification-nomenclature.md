@@ -198,3 +198,6 @@ A konfigurálási folyamat egyik lépésében a rendszer az elnevezési rendszer
 
 [Termékszámozás-elnevezési rendszer létrehozása konfigurált termékváltozatokhoz](tasks/create-product-number-nomenclature-product-variants_2016_11.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

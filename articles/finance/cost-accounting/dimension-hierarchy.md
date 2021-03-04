@@ -333,3 +333,6 @@ A Hozzáférési lista hierarchiájának beállításait használja a rendszer a
 > [!NOTE] 
 > - Ahhoz, hogy a hozzáférési lista hierarchia befolyásolhassa a Power BI adatait, párosítani kell a hozzáférési lista hierarchiáját és a sorszintű biztonságot a Power BI-ben. További információ: [Biztonság beállítása a Költségkönyvelés tartalmi csomagban](../../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md)
 > - A hozzáférési lista hierarchiája nem segít az adatok biztonságos Excel-exportjában. Ezért a jelentési eszközt csak olyan költségkönyvelők és vezetők használhatják, akiknek teljes hozzáférésük van az adatok megtekintéséhez.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

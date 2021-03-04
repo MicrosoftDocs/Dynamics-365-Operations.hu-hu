@@ -69,3 +69,6 @@ A kevert mód teljes rugalmassága érdekében azt ajánljuk, hogy minden termé
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

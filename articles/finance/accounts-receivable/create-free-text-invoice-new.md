@@ -85,3 +85,6 @@ A sorok másolása után módosíthatja az adatokat, szükség szerint.
 Szabadszöveges számla sablonól létrehozása is lehetséges. Az **Új sablonból** kiválasztásakor a **Számla** lapon ki lehet választani a sablon nevét és az új szabadszöveges számlához kapcsolódó vevőszámlát. Alapértelmezett értékek, például a fizetési feltételek és a fizetési mód kitölthető a vevőtől, vagy a sablonnal mentett értékek is használhatók.
 
 Ekkor létrejön a szabadszöveges számla, és igény szerint szerkesztheti az értékeket.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

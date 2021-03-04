@@ -67,3 +67,6 @@ A beosztások szervezeti hierarchia alacsonyabb szintjének fontos részei. Egy 
 30. A Részleg mezőben adjon meg vagy válasszon ki egy értéket.
 31. Kattintson a Mentés gombra.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

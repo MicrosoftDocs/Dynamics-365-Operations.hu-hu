@@ -90,3 +90,6 @@ A **Vállalati egyenlegek exportálása** lehetőséggel exportálhat egy péld�
 További információ: [Devizaátértékelés konszolidációs vállalatban](../general-ledger/currency-revaluation-consolidation-company.md).
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

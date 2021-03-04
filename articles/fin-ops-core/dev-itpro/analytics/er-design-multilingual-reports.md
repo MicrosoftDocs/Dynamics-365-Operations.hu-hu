@@ -210,3 +210,6 @@ A jelen témakörben korábban ismertetett módon a **Címke** és **Leírás** 
 
 - [Elektronikus jelentések áttekintése](general-electronic-reporting.md)
 - [Az elektronikus jelentéskészítés funkciói](er-formula-language.md#functions)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

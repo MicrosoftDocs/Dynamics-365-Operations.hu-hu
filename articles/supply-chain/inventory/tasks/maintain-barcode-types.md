@@ -46,3 +46,6 @@ Ez az eljárás bemutatja, hogyan állíthat be egy új vonalkód-definíciót, 
 12. Kattintson a Mentés gombra.
 13. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

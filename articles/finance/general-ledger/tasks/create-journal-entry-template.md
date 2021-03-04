@@ -63,3 +63,6 @@ A naplóba feladott bizonylatok Bizonylatsablonként elmenthetők és egy új na
 29. Az **Összeg** mezőben adja meg a bizonylatra alkalmazandó összeget. Az **Összeg** mező csak akkor jelenik meg, ha a bizonylatsablon százalék típusú.  
 30. Kattintson az **OK** gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

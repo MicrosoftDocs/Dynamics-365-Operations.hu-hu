@@ -150,3 +150,6 @@ További információkért az egyéni mezőkről lásd: [Egyéni mezők létreho
 [Példány eltávolítása](hr-admin-setup-remove-instance.md)</br>
 [Rendelés frissítése](hr-admin-setup-update-process.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

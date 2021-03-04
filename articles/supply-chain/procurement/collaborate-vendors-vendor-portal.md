@@ -104,3 +104,6 @@ Az alábbi táblázat szemlélteti azokat az állapot- és verzióváltozásokat
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

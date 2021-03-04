@@ -40,3 +40,6 @@ ms.locfileid: "4444049"
 7. Válasszon ki egy lehetőséget az **Időszak gyakorisága** mezőben.
 8. Zárja be az űrlapot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

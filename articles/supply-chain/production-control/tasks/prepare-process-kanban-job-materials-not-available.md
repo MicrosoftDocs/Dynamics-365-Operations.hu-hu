@@ -52,3 +52,6 @@ Ez az eljárás a kanbanfeladat folyamatának előkészítését mutatja be, ami
 6. Kattintson az Előkészítés lehetőségre.
     * Figyelje meg, hogy a Feladat állapotának ikonja jelzi, ha a feladat elkészült.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

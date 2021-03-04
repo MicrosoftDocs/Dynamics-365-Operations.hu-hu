@@ -80,3 +80,6 @@ A következő ábrán egy karbantartási ellenőrzőlista példája látható.
 
 ![1. ábra](media/14-work-orders.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

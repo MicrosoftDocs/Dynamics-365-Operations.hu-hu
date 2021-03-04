@@ -139,3 +139,6 @@ A rendszer törli a létrehozott konfigurációkat, és visszatölti őket az LC
 26. A fastruktúrában bontsa ki a „Minta adatmodell” elemet.
     * Vegye figyelembe, hogy a Mintaleképezés modell-leképezési konfigurációt a rendszer a kijelölt adatmodell-konfigurációval együtt letöltötte. A két fájl letöltése együtt történik, mivel a Mintaleképezés meghatározása a kiválasztott adatmodell végrehajtása, és mivel az alkalmazásra vonatkozik. A „Mintaleképezés (másodlagos)” konfiguráció még nincs letöltve, mivel nem teljesült a kívánt alkalmazásverzióhoz kapcsolódó feltétel.   
     * Ha bejelentkezik a Finance and Operations programba, regisztrálja ugyanazt a szolgáltatót, belép ugyanabba az LCS-projektbe, és letölti ugyanazt az adatmodell-konfigurációt, a „Mintaleképezés (másodlagos)” konfigurációt tölti le, mivel a „Mintaleképezés” konfigurációt átugorja a rendszer.  
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

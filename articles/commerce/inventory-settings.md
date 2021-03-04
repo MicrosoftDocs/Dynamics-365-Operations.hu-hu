@@ -93,3 +93,6 @@ A következő képen a kosár egy példája látható, amely egy raktáron („E
 [Üzletválasztó modul](store-selector.md)
 
 [SDK- és modulkönyvtár-frissítések](e-commerce-extensibility/sdk-updates.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -165,3 +165,6 @@ Módosíthatja az előző táblázatban említett, az egyes beosztásokhoz és f
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

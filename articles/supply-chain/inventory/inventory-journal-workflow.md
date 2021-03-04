@@ -112,3 +112,6 @@ A napló munkafolyamat-előzményeinek áttekintése:
 1. A navigációs ablakban bontsa ki a **Készletkezelés \> Naplóbejegyzések \> Elemek** lehetőségben, majd válassza ki a készletnapló típusát.
 1. Az adott napló megnyitása.
 1. Válassza ki a **Munkafolyamat** gombot a Művelet ablakban a legördülő párbeszédpanel megnyitásához. Válassza a **Munkafolyamat-előzmények** lehetőséget. További információ: [Munkafolyamat-előzmények megtekintése](../../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

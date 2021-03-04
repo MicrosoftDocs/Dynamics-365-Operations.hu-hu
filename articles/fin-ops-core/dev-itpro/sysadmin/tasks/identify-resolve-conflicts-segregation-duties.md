@@ -43,3 +43,6 @@ Ez a cikk a feladatkörök szétválasztásával kapcsolatos ütközések azonos
 1. Lépjen a **Navigációs ablaktábla > Modulok > Rendszerfelügyelet > Biztonság > Feladatkörök szétválasztása > Feladatkörök szétválasztási szabályai** részre. Válasszon ki egy szabályt.  
 2. Válassza a **Feladatkörök és szerepkörök érvényesítése** lehetőséget. Ha valamely meglévő szerepkör sérti a kiválasztott szabályt, egy üzenet jelenik meg, amely tartalmazza a szerepkör nevét és az ütköző feladatok nevét. A rendszergazdának meg kell adnia vagy a biztonsági kockázat mérséklését, vagy módosítania kell a szerepkört, hogy az ne sértse a feladatkörök szétválasztására vonatkozó szabályokat. Ha nincs olyan szerepkör, amely sérti a kiválasztott szabályt, egy üzenet jelzi, hogy minden szerepkör megfelel.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -49,3 +49,6 @@ Noha egy ERP-alkalmazás működési ellenőrzése nem lehet teljes mértékben 
     - Érvényesítést csak az adott tranzakcióra vonatkozó szűrés után végezzen, az általános érvényesítés helyett. A rekordok számának megadásához például tranzakció számára vagy a tranzakció dátumára szűrjön, hogy az ellenőrzés kizárja az összes többi tranzakciót. 
     - Ha bejelöli a vevői egyenleget vagy a költségvetés-ellenőrzést, először mentse az értéket, majd adja hozzá a tranzakció értékét, hogy a várt eredményt érvényesítse a fix várt érték ellenőrzése helyett. 
  
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

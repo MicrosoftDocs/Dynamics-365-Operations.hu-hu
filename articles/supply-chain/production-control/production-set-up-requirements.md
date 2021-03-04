@@ -81,3 +81,6 @@ Ha útvonalakkal dolgozik, a műveleteket minden beállított termelési útvona
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

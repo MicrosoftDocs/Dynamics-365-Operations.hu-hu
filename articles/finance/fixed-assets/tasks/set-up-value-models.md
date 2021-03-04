@@ -54,3 +54,6 @@ Ez az eljárás bemutatja, hogyan hozzon létre új tárgyieszköz-könyvet, és
     * Ügyeljen, hogy az Értékcsökkenési időszakok értéke az Élettartam beállítását követően kerül kiszámításra.  
     * Az értékcsökkenési szabályok beállíthatók az adózási szabályokkal összhangban.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

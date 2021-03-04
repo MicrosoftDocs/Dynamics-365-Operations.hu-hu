@@ -41,3 +41,6 @@ A következő opciók, amelyek a kiadott termékek **Commerce** lapján találha
 > Ezek a beállítások nem korlátozzák az árfelülírás műveletet, mivel a beállítás az alapárat határozza meg, és nem minősül kedvezménynek.
 
 [![Engedmények megakadályozása mező](./media/prevent-discounts.png)](./media/prevent-discounts.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -163,3 +163,6 @@ A CDN-nek most már helyesen konfiguráltnak kell lennie, hogy használható leg
 [Több B2C-bérlő konfigurálása egy Commerce környezetben](configure-multi-B2C-tenants.md)
 
 [Helyalapú áruházészlelés engedélyezése](enable-store-detection.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

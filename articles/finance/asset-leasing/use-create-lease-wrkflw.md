@@ -45,3 +45,6 @@ Az eljárás használata előtt győződjön meg arról, hogy legalább a lízin
 
 8. Munkafolyamat leállításához a **Munkafolyamat előzményei** lapon válassza a **Visszahívás** lehetőséget. Megjelenik a párbeszédpanel, adjon meg egy hozzászólást, majd kattintson az **OK** gombra.
 9. A munkafolyamat inaktiválásához vagy egy korábban létrehozott munkafolyamat aktiválásához nyissa meg az **Eszközlízing \> Beállítás \> Lízingmunkafolyamat** lehetőséget. Ezután a **Lízingmunkafolyamat** lapon válassza a **Munkafolyamat \> Verziók** lehetőséget. Az aktuális munkafolyamat inaktívvá állításához jelölje ki az aktív lízinget a lízingverzió párbeszédpanelén, majd kattintson az **Inaktívvá váltás** lehetőséget. Meglévő munkafolyamat aktívvá tételéhez jelölje ki a munkafolyamatot, majd válassza az **Aktívvá tétel** lehetőséget.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

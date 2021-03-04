@@ -182,3 +182,6 @@ Az alábbiakban néhány az konszolidációs esetet, amelyeket a Financial repor
 
 ## <a name="generating-consolidated-financial-statements"></a>Konszolidált pénzügyi kimutatások generálása
 További információért azzal kapcsolatosan, hogy hol generálhat konszolidált pénzügyi kimutatásokat, lásd: [Konszolidált pénzügyi kimutatások létrehozását](./generating-consolidated-financial-statements.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

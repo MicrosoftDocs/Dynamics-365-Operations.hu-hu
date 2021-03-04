@@ -60,3 +60,6 @@ Ha úgy tervezi, hogy nem lesz az irodában vagy más okból nem lesz elérhető
 8. A **Záró dátum/idő** mezőben adjon meg egy dátumot és időpontot.
 9. A delegálási szabály aktiválásához jelölje be az **Engedélyezett** jelölőnégyzetet. 
 10. A **Megjegyzés** mezőben adjon meg egy megjegyzést, amely leírja, miért delegálja a munkatételeket.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

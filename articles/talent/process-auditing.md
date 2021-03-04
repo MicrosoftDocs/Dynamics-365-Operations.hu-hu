@@ -61,3 +61,6 @@ A következő adatok érhetők el a folyamatok auditálásával.
 |Álláspályázat előzményei | Pályázat (msdyn_JobapplicatonId)<br></br>Állapot (msdyn_status) <br></br>Állapot oka (msdyn_statusreason) <br></br>Elutasítás oka (msdyn_rejectionreason) |
 | Álláslehetőségek előzményei | Álláslehetőség (msdyn_JobopeningId) <br></br>Állapot (msdyn_jobopeningstatus) <br></br>Állapot oka (msdyn_jobopeningstatusreason) |
 | Jelentkezők előzményei | Pályázó (msdyn_CandidateId) |
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

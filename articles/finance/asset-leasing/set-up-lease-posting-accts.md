@@ -84,3 +84,6 @@ Ha fiókokat szeretne hozzárendelni a létrehozott lízingkönyvekhez és csopo
     > [!NOTE]
     > A kiválasztott pénzügyi vagy működési számla az ütemezett költség számlájának feladásakor lesz megterhelve.
     > **Lízingköltség-eltolás** a működési költségtranzakciók feladási típusaként lesz használva, de feladja a meghatározott **Ellenszámlára** a **Működési költségek fizetési ütemezési soraiban** a lízing részleteiben vagy a lízingkönyv képernyőn.   
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

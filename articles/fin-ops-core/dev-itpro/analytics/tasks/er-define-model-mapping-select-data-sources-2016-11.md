@@ -157,3 +157,6 @@ A következő lépések leírják, hogy egy Rendszergazda vagy Elektronikus jele
 71. Zárja be a lapot.
 72. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

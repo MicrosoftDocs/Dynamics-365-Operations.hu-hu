@@ -56,3 +56,6 @@ Az LCS-beállítás befejeződött. A következő lépés a [forgatókönyvek be
 2. Az LCS-ben lépjen a Supply Chain Management környezet részleteihez.
 3. Görgessen le a **Környezeti bővítmények** szakaszhoz.
 4. Válassza az **Eltávolítás** lehetőséget az IoT Intelligencia beépülő modul esetén.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

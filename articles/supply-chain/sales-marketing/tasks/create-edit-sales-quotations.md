@@ -70,3 +70,6 @@ Ez az eljárás bemutatja, hogyan hozhat létre és frissíthet értékesítési
 13. Kattintson az **Értékesítési rendelések** gombra.
 14. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

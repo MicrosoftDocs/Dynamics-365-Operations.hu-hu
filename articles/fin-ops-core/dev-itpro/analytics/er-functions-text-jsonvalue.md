@@ -59,3 +59,6 @@ A **JsonField** adatforrás a következő adatokat tartalmazza JSON formátumban
 ## <a name="additional-resources"></a>További erőforrások
 
 [Szöveg függvények](er-functions-category-text.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -91,3 +91,6 @@ A következő értékcsökkenési módok közül választhat.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -175,3 +175,6 @@ Ez az útmutató bemutatja, hogyan konfigurálhatja az új WMS-kompatibilis rakt
 6. A listában kattintson a kijelölt sorban lévő hivatkozásra.
 7. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

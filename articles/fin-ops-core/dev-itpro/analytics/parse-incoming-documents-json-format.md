@@ -50,3 +50,6 @@ Ezenkívül be kell fejeznie a [ER Kötelező konfigurációk létrehozása kül
 | Beosztás                  | Fájlnév |
 |------------------------|-----------|
 | ER modell konfigurációja | [1099model.xml](https://go.microsoft.com/fwlink/?linkid=874111) |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

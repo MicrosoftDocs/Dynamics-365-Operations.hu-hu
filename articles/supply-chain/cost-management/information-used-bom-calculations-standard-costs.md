@@ -84,3 +84,6 @@ Anyagjegyzék-számítás indításakor többféle információforrást lehet me
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -376,3 +376,6 @@ Megfigyelheti, hogy az internetböngésző felajánlja a zip-fájl letöltését
 
 - [Elektronikus jelentések áttekintése](general-electronic-reporting.md)
 - [Az ER megoldások teljesítményének javítása a paraméterek SZÁMÍTOTT MEZŐ-adatforrások hozzáadásával](er-calculated-field-ds-performance.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

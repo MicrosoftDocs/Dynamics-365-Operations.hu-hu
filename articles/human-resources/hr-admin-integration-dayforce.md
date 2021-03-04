@@ -676,3 +676,6 @@ Az alkalmazottak útlevél adatokat is nyilatkozhatnak. Az információ a **Útl
 
 Az alkalmazottak több azonosítószámot is megadhatnak az **Útlevél** azonosítótípushoz. Azonban csak az aktuális aktív útlevélbejegyzés van integrálva a Dayforce-ba. Ha az összes útlevélbejegyzés lejárt, a legutóbb kiállított lesz integrálva a Dayforce-ba.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

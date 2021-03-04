@@ -117,3 +117,6 @@ Az alábbi táblázat mutatja be az egyes jelentésoldalakon rendelkezésre áll
 | Sikertelenül importált számlák | <ul><li>Sikertelenül importált számlák</li><li>A vállalat által sikertelenül importált számlák</li></ul> |
 | Az automaizálás meghibásodásának okai | <ul><li>Sikertelen számlázások</li><li>Vállalat sikertelen számlázásai</li><li>Szállítói csoport sikertelen számlázásai</li></ul> |
 | Munkafolyamat állapota                | <ul><li>Számlák a munkafolyamatban</li><li>Szállítói számlázási munkafolyamat-példányok</li><li>Hozzárendelés jóváhagyónként</li><li>Szállítói számla-munkafolyamat vállalatonként</li><li>Átlagos napok a munkafolyamatban a jóváhagyó szerint</li></ul> |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

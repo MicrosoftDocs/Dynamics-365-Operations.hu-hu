@@ -62,3 +62,6 @@ Ez az eljárás bemutatja, hogy hogyan hagyhatja jóvá a szállítókat az adot
 31. Zárja be a lapot.
 32. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -63,3 +63,6 @@ Az alábbi ábrákon látható a sablonleképezés az Adatintegrálásban.
 ### <a name="field-service-products-with-inventory-unit-supply-chain-management-to-field-service-products"></a>Készletegységgel rendelkező Field Service termékek (Supply Chain Management – Field Service): termékek
 
 [![Sablonleképezés az adatintegrátorban](./media/FSProduct1.png)](./media/FSProduct1.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

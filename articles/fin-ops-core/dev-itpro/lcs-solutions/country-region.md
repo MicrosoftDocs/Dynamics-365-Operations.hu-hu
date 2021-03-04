@@ -133,3 +133,6 @@ További információkat a [Súgórendszer](../../fin-ops/get-started/help-overv
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

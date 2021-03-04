@@ -63,3 +63,6 @@ Ez az eljárás segít a visszaadási okkódok beállításában, melyekkel jele
  
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

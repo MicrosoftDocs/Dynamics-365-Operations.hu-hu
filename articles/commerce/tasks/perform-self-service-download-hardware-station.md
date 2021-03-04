@@ -37,3 +37,6 @@ Ez az eljárás végigveszi, hogyan tölthet le egy előre definiált hardverál
 5. Keresse meg és jelölje ki a kívánt rekordot a listán.
 6. Kattintson a Letöltés lehetőségre.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -53,3 +53,6 @@ A munkarendelés ütemezéséhez szükséges értékelési pontszámok kiszámí
 
 > [!NOTE]
 > Ha módosítja az eszköz szolgáltatási szintjéhez tartozó rekordot az **Eszköz szolgáltatási szintje** oldalon , miután már használta egy munkarendelésen, a karbantartási kérések és munkarendelések szolgáltatási szintje nem frissül ennek megfelelően.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

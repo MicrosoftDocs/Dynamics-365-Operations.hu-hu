@@ -55,3 +55,6 @@ Ez az eljárás egy helytelen kanbanfeladat-állapot visszaállítására irány
     * Válassza ki ugyanazt a feladatot.  
     * Figyelje meg, hogy a feladat visszaállt Tervezett állapotba, amelyet az üres kanban ikon jelez.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

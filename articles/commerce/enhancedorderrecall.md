@@ -64,3 +64,6 @@ Az AppBar felületen a felhasználó kiválaszthat egy műveletet. A rendelés �
 - **Szerkesztés** – Lehetővé teszi a felhasználók számára a kiválasztott vevői rendelés módosítását.
 
 - **Összeszedés** – Elindítja az összeszedési folyamatot, amellyel a felhasználó kiválaszthatja az összeszedendő termékeket, és létrehozza az összeszedési értékesítési tranzakciót.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

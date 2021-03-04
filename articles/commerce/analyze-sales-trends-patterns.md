@@ -43,3 +43,6 @@ A felhasználók órákra bontva tanulmányozhatják az értékesítési trendek
 - **Üzletkezelő** munkaterület &gt; **Kiskereskedelem és kereskedelem** &gt; **Csatornák** &gt; **Üzletkezelő** &gt; **Jelentések** &gt; **Csatorna értékesítése óra szerint jelentés**
 - **Üzlet pénzügyi adatai** munkaterület &gt; **Kiskereskedelem és kereskedelem** &gt; **Csatornák** &gt; **Üzlet pénzügyi adatai** &gt; **Jelentések** &gt; **Csatorna értékesítése óra szerint jelentés**
 - **Lekérdezések és jelentések** szekció &gt; **Kiskereskedelem és kereskedelem** &gt; **Lekérdezések és jelentések** &gt; **Értékesítési jelentések** &gt; **Csatorna értékesítése óra szerint jelentés**
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

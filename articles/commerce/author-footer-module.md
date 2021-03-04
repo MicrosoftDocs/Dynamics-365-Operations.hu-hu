@@ -87,3 +87,6 @@ Ha hozzáadja a töredéket a lapsablonokhoz, akkor segít biztosítani azt, hog
 [Fejlécmodul](author-header-module.md)
 
 [Láblécmodul](author-footer-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

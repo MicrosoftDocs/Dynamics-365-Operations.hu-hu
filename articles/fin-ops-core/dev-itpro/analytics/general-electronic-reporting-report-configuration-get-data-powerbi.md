@@ -196,3 +196,6 @@ A Power BI integrációjának beállítása. További tudnivalókért lásd: [A 
 [Elektronikus jelentéskészítés (ER) céljai](electronic-reporting-destinations.md)
 
 [Elektronikus jelentéskészítés (ER) áttekintése](general-electronic-reporting.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

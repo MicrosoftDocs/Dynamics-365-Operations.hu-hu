@@ -100,3 +100,6 @@ A munkacella egy az erőforráscsoportok egy konkrét formája, amelyet lean man
 ## <a name="save"></a>Mentés
 1. Kattintson a Mentés gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

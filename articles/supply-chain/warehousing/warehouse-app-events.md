@@ -78,3 +78,6 @@ Sikertelen raktári alkalmazáson belüli eseményüzenet alaphelyzetbe állít�
 1. Folytassa a munkát mindaddig, amíg az összes fontos üzenetet alaphelyzetbe nem állítja.
 
 A **Sikertelen** eseményüzenetet a **Raktári alkalmazás eseményüzenetei eszköztár** **Törlés** opciójával is el lehet távolítani.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

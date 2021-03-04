@@ -67,3 +67,6 @@ A karanténutasítási folyamat részeként lehetséges a készlet selejtezése.
 --------
 
 [Készletzárolás](inventory-blocking.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

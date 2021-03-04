@@ -71,3 +71,6 @@ A lenti képernyőfotó egy példát mutat be, amely az „1000” cikkszám has
 
 ![Cikk használati helye számítás példája](media/12-controlling-and-reporting.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

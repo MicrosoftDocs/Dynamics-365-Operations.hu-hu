@@ -46,3 +46,6 @@ Ez a témakör azokat a lépéseket ismerteti, amelyekkel megtekintheti azoknak 
     - Az **Ismételt hozzárendelés** gomb egy párbeszédpanel megnyitását eredményezi, ahol a munkaelemet átadhatja egy másik felhasználónak.  
     - Győződjön meg arról, hogy a **Nyomkövetési részletek** szakasz ki van bontva. Ebben a szakaszban megtekintheti a kijelölt dokumentum munkafolyamat-előzményeit.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -59,3 +59,6 @@ Az útmutató segít a korosítási időszak definíciójának, vevői egyenlege
 2. Válasszon egy egyenleggel rendelkező vevőt.
 3. Bontsa ki a **Korosítás adatterületet** a korosított egyenleg megtekintéséhez. A korosítási időszak definíciója az adatterülethez a paraméterek között meghatározott alapértelmezett korosítási időszak definíciójából származik. A Gyűjtés menü segítségével megváltoztathatja.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

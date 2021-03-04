@@ -55,3 +55,6 @@ A képernyővel kapcsolatos további információkat lásd a következő témak�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

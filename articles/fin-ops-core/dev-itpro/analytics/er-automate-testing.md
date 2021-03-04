@@ -380,3 +380,6 @@ Minden teszt állapotát elérheti. A végrehajtási naplót is megnyithatja, ho
 - [A létrehozott jelentés eredményeinek nyomon követése és összehasonlításuk a kiindulási értékekkel](er-trace-reports-compare-baseline.md)
 - [ER – A formátum frissítése ezen formátum új alapverziójának elfogadásával](tasks/er-upgrade-format.md)
 - [ER - A konfiguráció importálása a Lifecycle Services szolgáltatásból](tasks/er-import-configuration-lifecycle-services.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

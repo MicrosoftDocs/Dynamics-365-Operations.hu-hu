@@ -430,3 +430,6 @@ Itt van egy példa a költségelosztási szabályra, ha az Elektromos áram rög
 |    CC002    |     FI      | 3,075.00  | (3,075.00 ÷ 18,162.50) x Összeg  |
 |    CC003    |     Készletátadás      | 13,250.00 | (13,250.00 ÷ 18,162.50) x Összeg |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

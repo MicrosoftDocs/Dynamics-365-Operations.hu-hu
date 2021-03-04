@@ -64,3 +64,6 @@ Ez az eljárás végigvezeti a készletátviteli napló feladási létrehozásá
 2. Kattintson a Tranzakciók elemre.
     * Itt láthatók a napló feladásakor létrehozott tranzakciók.   
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

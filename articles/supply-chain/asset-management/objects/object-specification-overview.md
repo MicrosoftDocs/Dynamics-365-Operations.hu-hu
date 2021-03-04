@@ -40,3 +40,6 @@ Az **Eszközattribútum áttekintése** lap minden eszközhöz külön sort jele
 3. Válassza ki az **OK** lehetőséget. A lista a kijelölt eszköztípust használó összes eszközt tartalmazza. Az egyes eszközök esetében minden kapcsolódó eszközattribútum-típus ugyanabban a sorban jelenik meg.
 
 Az **Eszközattribútum** lap minden olyan attribútumtípushoz külön sort jelenít meg, amelyet egy eszköz használ. Az oldal megnyitásához válassza ki az **Eszközkezelés** \> **Lekérdezések** \> **Eszközök** \> **Eszközattribútum** lehetőséget.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

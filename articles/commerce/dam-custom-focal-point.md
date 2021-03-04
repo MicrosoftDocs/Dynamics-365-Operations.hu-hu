@@ -60,3 +60,6 @@ Ha egyéni fókuszpontot szeretne definiálni egy képhez, hajtsa végre az alá
 [Képek körülvágása](dam-crop-images.md)
 
 [Statikus fájlok feltöltése és kiszolgálása](upload-serve-static-files.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

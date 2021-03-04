@@ -46,3 +46,6 @@ Az eljárás a Könyvelői szerepkört, illetve bemutató adatokat használ a US
     * A **Megnöveli az élettartamot** beállításnál adja meg az **Igen** értéket, ha a kiegészítés megnöveli az eszköz élettartamát.  
     * Ez a mező csak tájékoztatásra szolgál. Az élettartam növelése, illetve az Élettartam az Értékmodellen és/vagy az eszköz Értékcsökkenés könyvében történő módosítása érdekében.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

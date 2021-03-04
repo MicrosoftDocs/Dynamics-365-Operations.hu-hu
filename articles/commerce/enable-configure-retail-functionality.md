@@ -69,3 +69,6 @@ Az inicializálás befejezése után konfigurálni kell a kiegészítő keresked
 - Kereskedelmi csatornák
 - Jegyzékek és eszközök
 - Szortimentek
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

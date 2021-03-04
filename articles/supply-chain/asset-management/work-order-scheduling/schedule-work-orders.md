@@ -138,3 +138,6 @@ A Gantt-diagram megtekintése és használata:
     - A megjelenített munkarendelés újraütemezéséhez válassza ki azt, majd húzza át a megfelelő új dátumra és időpontra.
 
 1. Ha módosításokat hajtott végre, a Művelet panelen válassza a **Mentés** parancsot a mentéshez.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

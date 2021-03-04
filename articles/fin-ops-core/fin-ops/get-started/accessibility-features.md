@@ -97,3 +97,6 @@ Okostelefonokon és más kis képernyővel rendelkező eszközökön a vezérlő
 ## <a name="guidance-to-help-developers-and-customers-incorporate-accessible-thinking-in-their-customizations"></a>Útmutatás a fejlesztők és a vevők számára a könnyű kezelhetőség koncepciójának beépítéséhez a testreszabásaikba
 
 A kisegítő lehetőségekkel kapcsolatos legjobb Microsoft-gyakorlatokkal kapcsolatos további tudnivalókért lásd: [Űrlapok, termékek és vezérlők hozzáférhetősége](../../dev-itpro/user-interface/enable-accessibility.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -62,3 +62,6 @@ Amikor a folyamatos, apránkénti kimutatásfeladás van használatban, így a t
 A műszak pénzügyi egyeztetésével kapcsolatos részletek a P-feladat segítségével szinkronizálhatók a Commerce-központtal.
 
 A Commerce-központ pénzügyi kimutatásai nem számítják ki az összegeket a kimutatás soraiban szereplő részletek megjelenítéséhez. Helyette a pénztárügyfél véglegesített összegeit kell használni a pénzügyi kimutatások létrehozásához és feladásához.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

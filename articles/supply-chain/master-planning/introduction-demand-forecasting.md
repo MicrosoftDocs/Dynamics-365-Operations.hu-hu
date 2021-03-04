@@ -100,3 +100,6 @@ Ne feledje, hogy az igény-előrejelzés mértékegységének nem kell, hogy kon
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

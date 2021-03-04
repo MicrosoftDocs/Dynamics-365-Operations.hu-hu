@@ -48,3 +48,6 @@ Amikor a rendszer tévedésből kiüríti a kanbant vagy a kapott kanbant ki kel
 2. A listában jelölje meg a kiválasztott sort.
     * Vegye figyelembe, hogy az Anyagkezelési egység állapota Kiürítve.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -72,3 +72,5 @@ Használhat kérdőív statisztikákat a kitöltött kérdőívek eredményének
 -   Válassza ki, vagy ellenőrizze az eredmények kiértékelésének feltételeit, válaszadó vagy a kérdői jellemzője alapján. Például az **Irányítószám** kiválasztásával kiértékelheti a válaszadó helye és helyes válaszai közti korrelációt.
 
 A program menti a megadott beállításokat, így ezek az eredmények ismételt újraszámításakor felhasználhatók.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

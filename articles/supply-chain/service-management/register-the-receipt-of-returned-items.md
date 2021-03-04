@@ -113,3 +113,6 @@ A **Beérkezés áttekintése** képernyő helyett másik lehetőségként a **R
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -51,3 +51,6 @@ A továbbfejlesztett banki egyeztetés szolgáltatás lehetővé teszi a banki k
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

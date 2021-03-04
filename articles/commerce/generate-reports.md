@@ -138,3 +138,6 @@ Egy **Szervezeti értékesítés** jelentés létrehozásához hajtsa végre az 
 ## <a name="additional-resources"></a>További erőforrások
 
 - [Commerce kezdőlap](../retail/index.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

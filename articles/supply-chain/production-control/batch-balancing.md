@@ -193,3 +193,6 @@ Egy kivétel van az alól a szabály alól, hogy a tételalapú kiigazítás akk
 Ha egy formula tartalmaz egy hatóanyagot egy olyan termékhez, amely a raktárkezelési folyamatokhoz engedélyezve van, de a kötegszám a hely alatt van a foglalási hierarchiában, a kötegrendelés nem alkalmazható a tételalapú kiigazításhoz.
 
 Azok a kötegelt rendelések, amelyek nem alkalmazhatók a tételalapú kiigazításhoz, a kötegrendelések rendes folyamatciklusán mennek keresztül.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

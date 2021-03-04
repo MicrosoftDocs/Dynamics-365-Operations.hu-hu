@@ -55,3 +55,6 @@ Ha nem definiálta a tárgyi eszköz számát az Excel-bővítmény sablonjában
 
 > [!WARNING]
 > A rögzített eszközrekord nem törlődik, ha a tranzakciókat a kapcsolódó könyvbe adták fel, vagy ha az újonnan létrehozott eszközt naplósorban adták meg, de nem adták fel. 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

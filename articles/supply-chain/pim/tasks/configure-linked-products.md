@@ -40,3 +40,6 @@ Ez az eljárás végigveszi a csatolt termékek konfigurálásának lépéseit. 
 10. Adjon meg egy számot a Mennyiség mezőben.
 11. Kattintson a Mentés gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -45,3 +45,6 @@ Az értékesítési rendelések kimutatásfeladáson keresztül történő szám
 
 > [!NOTE]
 > A kötegelt nyomkövetésű cikkek továbbfejlesztett kezelése a nem speciális raktárkezelési esetek kimutatásfeladása során a Retail 10.0.5 verziójában bevezetett funkció.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

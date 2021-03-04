@@ -60,3 +60,6 @@ A `NULLCONTAINER (SPLIT ("abc", 1))` új üres rekordot ad vissza, amelynek ugya
 ## <a name="additional-resources"></a>További erőforrások
 
 [Rekord függvények](er-functions-category-record.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

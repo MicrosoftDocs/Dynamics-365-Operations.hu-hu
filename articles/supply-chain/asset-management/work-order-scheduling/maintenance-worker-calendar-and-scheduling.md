@@ -39,3 +39,6 @@ Az alábbi képernyőképen egy, a „Termelés” munkaidőnaptárat használó
 
 Az eszközök naptári beállítására nincs szükség a munkarendelési ütemezéshez. A feltételezés szerint az eszközök egész nap elérhetők a karbantartáshoz.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

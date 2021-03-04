@@ -205,3 +205,6 @@ A kimutatások a költségellenőrzésért felelős vezetők számára létrehoz
 Verziók segítségével történik a különböző eredmények szimulálása, megtekintése és összevetése. Alapértelmezés szerint minden tényleges költséget egy alapverzióban tekintünk meg, amelynek a neve a *tényleges*. A költségvetések és a számítások esetében tetszőleges számú verzióval dolgozhat. Például költségvetési adatokat importálhat az eredeti verzióban, majd felülvizsgálhatja a költségvetést egy módosított verzióban. A számításokhoz több verziót hozhat létre. Ezekben a különböző verziókban számításokat hozhat létre különböző, a költségfelosztáshoz alkalmazott számítási szabályok segítségével.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

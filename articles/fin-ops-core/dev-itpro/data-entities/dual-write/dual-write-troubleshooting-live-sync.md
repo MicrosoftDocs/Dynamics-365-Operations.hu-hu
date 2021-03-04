@@ -127,3 +127,6 @@ Egy hiba javításához kövesse az alábbi lépéseket.
 
 3. Ügyeljen arra, hogy az **externalenvironmentURL** oszlop helyes Dataverse vagy alkalmazás URL-címmel rendelkezzen. Törölje a megfelelő Dataverse URL-címre mutató ismétlődő sorokat. Törölje a megfelelő sorokat a DUALWRITEPROJECTFIELDCONFIGURATION és DUALWRITEPROJECTCONFIGURATION táblákból.
 4. Állítsa le az táblák hozzárendelését, majd indítsa újra
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

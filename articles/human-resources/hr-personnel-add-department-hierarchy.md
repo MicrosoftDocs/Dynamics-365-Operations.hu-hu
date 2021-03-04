@@ -54,3 +54,6 @@ Egy részleg hozzáadásához a részleghierarchiához, tegye a következőket.
 
 ## <a name="steps-for-creating-a-department"></a>A részleg létrehozásának lépései
 Lásd az [Új részlegek meghatározása](../fin-and-ops/hr/tasks/define-new-departments.md) cikket az új osztály létrehozásának lépésről lépésre útmutatójához. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

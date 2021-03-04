@@ -132,3 +132,6 @@ A Commerce webhelykészítőben az értékelések és vélemények trendjeinek m
 [Minősítések és értékelések konfigurálása](configure-ratings-reviews.md)
 
 [A termék minősítések szinkronizálása a következőben: Dynamics 365 Retail](sync-product-ratings.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -42,3 +42,6 @@ Az áfa számítása és postázása a Főkönyvi feladási csoportok lehetősé
 11. A **Vevői eset engedmény** mezőben válassza ki a fő számlát a készpénzfizetési engedmény feladásához a **Főkönyvi feladási csoporthoz** társított **Áfakódok** esetében. Ez válaszható, és ha nincs megadva számla, a **Készpénzfizetési engedmény kódjain** található fő számlát használja a rendszer. Érdemes az egyes **Főkönyvi feladási csoportoknál** különböző számlákat használni, amennyiben fordított áfát használ az  **Áfacsoportokban** a készpénzfizetési engedmény lehetőségnél.  
 12. Kattintson a **Mentés** gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

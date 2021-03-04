@@ -56,3 +56,6 @@ Ez a témakör leírja azt a folyamatot amellyel létrehozható és feladható e
 1. Válassza a **Készlet** lehetőséget.
 2. Válassza a **Tranzakciók** lehetőséget. Itt láthatók a kapcsolódó tranzakciók, amelyek a készletleltározási napló feladásakor jönnek létre.   
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

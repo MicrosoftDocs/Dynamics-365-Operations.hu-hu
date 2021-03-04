@@ -41,3 +41,6 @@ Beállítható, hogy a rendszer küldjön e-maileket a felhasználók számára,
 
 > [!NOTE]
 > A munkafolyamat e-mail sablonjait a rendszer az e-mailek sablonjaiból vagy a szervezet e-mail sablonjaiból határozza meg attól függően, hogy a munkafolyamat rendszerszintű (nem vállalati specifikus) vagy szervezeti szintű (vállalatra jellemző) munkafolyamat-e.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

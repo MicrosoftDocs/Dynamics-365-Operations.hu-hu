@@ -66,3 +66,6 @@ Egy kosárikon modul hozzáadásához lásd: [Fejléc modul](author-header-modul
 [Rendelési részletek modul](order-confirmation-module.md)
 
 [Ajándékutalvány modul](add-giftcard.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

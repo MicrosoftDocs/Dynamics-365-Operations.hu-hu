@@ -127,3 +127,6 @@ Miután egy terméket a gyártósoron befejezettnek nyilvánítottak, áthelyezi
 -   Az áttárolási forgatókönyv támogatott a kötegelt és sorozatosan vezérelt cikkeknél, mind a köteg-, mind a sorozatszám-dimenziókkal, amelyeket a foglalási hierarchiában fent és alul találhat meg. 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

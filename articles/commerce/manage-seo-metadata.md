@@ -95,3 +95,6 @@ Az oldal metaadatainak módosításához kövesse az alábbi lépéseket.
 [Kategória céloldalának bővítése](enrich-category-page.md)
 
 [Oldaltartalom hozzáférhetőségének ellenőrzése](verify-accessibility.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

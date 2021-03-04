@@ -40,3 +40,6 @@ Beállíthat szabályokat a más felhasználók által elvégzendő feladatok el
 12. Írjon be egy értéket a **Biztonsági kockázatcsökkentés** mezőbe. Írja le a műveleteket, amelyeket a biztonsági kockázat enyhítése érdekében vezet be. A kockázatot enyhítheti például úgy, hogy részletesebb áttekintés ad a folyamatnak, havi vezetői ellenőrzést vezet be, vagy más részlegekkel is megoszt erőforrásokat.     
 13. Kattintson a **Mentés** gombra.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

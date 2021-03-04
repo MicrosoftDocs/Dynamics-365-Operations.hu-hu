@@ -81,3 +81,6 @@ Ezért a szállítási dátum az ígérethez rendelkezésre állás számítás�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

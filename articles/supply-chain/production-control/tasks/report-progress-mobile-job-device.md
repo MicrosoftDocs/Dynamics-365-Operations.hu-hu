@@ -65,3 +65,6 @@ Ezen eljárás futtatásához rendszergazdai vagy gépkezelői szerepkört kell 
 29. Kattintson az OK gombra.
 30. Válasszon egy okot, hogy miért jelentkezik ki korán.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

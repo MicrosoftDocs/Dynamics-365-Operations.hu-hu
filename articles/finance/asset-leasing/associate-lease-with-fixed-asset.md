@@ -54,3 +54,6 @@ A tárgyi eszköz értékcsökkenése a tárgyi eszközök standard értékcsök
 
 > [!NOTE]
 > Ha a tárgyi eszközt lízinghez rendeli hozzá, akkor az **Eszköz értékcsökkenése** és a **Lízing értékvesztése** gombok le vannak tiltva az Eszközlízingelésnél. Megtekintheti a tárgyi eszközökből származó eszközök értékcsökkenését és a lízing-értékvesztési tranzakciókat. Az **Eszköztranzakciók** gomb, amely megnyitja a lekérdezési képernyőt is, le van tiltva. Az **Eszközranzakciók** lekérdezési űrlapot a Tárgyi eszközökben is megnyithatja.  
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

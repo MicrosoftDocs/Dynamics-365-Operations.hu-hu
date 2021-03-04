@@ -124,3 +124,6 @@ Tesztelési célokra hajtsa végre a korábban letöltött 1099entriescsv.csv f�
     * Tekintse át az XML-formátumú kimenetet, amely azokat az adatokat jelöli, amelyeket a kiválasztott fájlból importált, és az adatmodellbe portolt a rendszer. Vegye figyelembe, hogy az importált CSV-fájl mind a 7 sora feldolgozásra került. A mezők címében az 1. sor ki lett hagyva, 4 tranzackió megfelelő elemzése megtörtént, és 2 tranzakció érvénytelenként volt felismerve.
 3. Zárja be a lapot.
 4. Zárja be a lapot.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

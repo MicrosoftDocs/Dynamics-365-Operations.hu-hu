@@ -45,3 +45,6 @@ A **Kettős írás** oldalon a következő példához hasonló hibaüzenet jelen
 *Az 'msdyn\_dualwriteentitymap' nevű namemapping='Logical' entitás nem találhat itt: MetadataCache.*
 
 A probléma megoldása érdekében győződjön meg arról, hogy a kettős írás alapmegoldás telepítve van-e a Dataverse szolgáltatásba. A kettős írás alapmegoldás a megoldásérzékenység alapfeltétele.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

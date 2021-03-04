@@ -136,3 +136,6 @@ $DisplayListOfItemsNumbers()[1]$
 ## <a name="more-information-about-how-to-print-labels"></a>A címkenyomtatással kapcsolatos további információk
 
 A címkék beállításával és nyomtatásával kapcsolatos további tudnivalókat lásd az [Azonosítótábla-címke nyomtatásának engedélyezése](tasks/license-plate-label-printing.md) című témakört.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

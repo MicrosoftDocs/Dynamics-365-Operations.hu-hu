@@ -216,3 +216,6 @@ A kicsúszó ablaktábla megjeleníti a folyamat legutóbbi végrehajtásának e
 [Külső adatforrásból származó adatokat tartalmazó virtuális entitások létrehozása és szerkesztése](https://docs.microsoft.com/powerapps/maker/common-data-service/create-edit-virtual-entities)<br>
 [Mik azok a Power Apps portálok?](https://docs.microsoft.com/powerapps/maker/portals/overview)<br>
 [Alkalmazások Power Apps-ben való létrehozásának áttekintése](https://docs.microsoft.com/powerapps/maker/)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

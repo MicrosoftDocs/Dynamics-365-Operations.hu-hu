@@ -57,3 +57,6 @@ A párbeszédpanel a Supply Chain Management „ígérethez rendelkezésre áll�
 - Bevételezés mennyisége
 - Kiadás mennyisége
 - Aktuális mennyiség
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

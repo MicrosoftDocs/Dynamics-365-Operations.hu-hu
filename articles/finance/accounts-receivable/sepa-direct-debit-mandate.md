@@ -54,3 +54,6 @@ További erőforrások
 
 [Csoportos beszedési megbízás létrehozása vevő részére](tasks/create-direct-debit-mandate-customer.md) 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -90,3 +90,6 @@ A kiterjesztés tartalmaz egy „RecoMockDataset.csv” nevű adatfájlt, amely 
 [Válogatott ajánlások manuális létrehozása](create-editorial-recommendation-lists.md)
 
 [Termékajánlatok GYIK-je](faq-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

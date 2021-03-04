@@ -99,3 +99,6 @@ A következő feladat egy Ajánlatkérés létrehozása annak érdekében, hogy 
 8. Válassza az oldalt.
 9. Válassza a Kész lehetőséget
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

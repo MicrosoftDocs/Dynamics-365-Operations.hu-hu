@@ -50,3 +50,6 @@ Termékadatok importálásához és exportálásához az adatentitásokat kell h
 
 > [!NOTE]
 > A **Kiadott termékek V2** adatentitással csak akkor importálhat termékeket a rendszerbe, ha már létrehozta a megosztott terméket. Ellenkező esetben, ha termékeket szeretne importálni a rendszerbe, a **Termék létrehozása** adatentitást kell használnia.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

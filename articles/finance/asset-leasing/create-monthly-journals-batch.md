@@ -37,3 +37,6 @@ Kötegelt feldolgozás beállításához, illetve több lízing kifizetési szá
 > A későbbi tranzakciók, például a kötelezettségek amortizációs ütemezései, a kifizetések, az értékcsökkenés és a kiadások csak a megfelelő lízingek kezdeti megjelenítésének feladása után kerülnek feladásra.
 >
 > A naplóbejegyzések létrejönnek, de nem kerülnek feladásra, amíg ki nem választja a **Futtatás** parancsot.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

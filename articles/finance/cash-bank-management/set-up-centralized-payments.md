@@ -58,3 +58,6 @@ A vállalatközi kiegyenlítési bizonylatokhoz alapértelmezett leírásokat ha
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

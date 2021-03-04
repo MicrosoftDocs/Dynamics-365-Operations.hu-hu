@@ -49,3 +49,6 @@ Az erőforrás-képességek azt mutatják, hogy az erőforrások milyen művelet
 5. Adjon meg egy számot a Szint mezőben.
     * Amikor Ön határozza meg, hogy a feladat vagy a művelet egy adott képességet igényel, meghatározhatja a szükséges minimális szintet is. A képesség szint segítségével különbséget tehet azon erőforrások között, amelyek ugyanazt a feladatot hajthatják végre, de eltérő sebességgel, méretben, és stb.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

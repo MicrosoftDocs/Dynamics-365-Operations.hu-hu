@@ -64,3 +64,6 @@ Ez a témakör végigvezeti a folyamatos program (más néven ismétlődő rende
     * Amikor sor kerül ennek a cikknek az eladására egy hívásközpontban, további üzleti logika kerül alkalmazásra a kijelölt folytonos programra.  
 7. Kattintson a Mentés gombra.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

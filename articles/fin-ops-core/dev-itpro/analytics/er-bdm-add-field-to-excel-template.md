@@ -169,3 +169,6 @@ A módosított sablon a szabadszöveges számlajelentés generálására szolgá
 [Üzletidokumentum-kezelés – áttekintés](er-business-document-management.md)
 
 [Az OPENXML formátumban létrejövő jelentésekre vonatkozó konfigurációk tervezése](tasks/er-design-reports-openxml-2016-11.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

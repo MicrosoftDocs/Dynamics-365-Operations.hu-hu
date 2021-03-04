@@ -49,3 +49,6 @@ Ez a témakör azt ismerteti, hogyan rögzíthet árubeérkezést közvetlenül 
 6. Állítsa a **Mennyiség** lehetőséget „4-re”. Itt is manuálisan adhatja meg a mennyiséget, ami a rendelés minden sorához tartozó bevételezett mennyiség.  
 7. Válassza ki az **OK** lehetőséget. Az áruk most már beérkezettként szerepelnek a beszerzési rendelésen és egy termékbevételezési napló lett létrehozva ennek a dokumentálására. A Termék-bevételezési művelet segítségével áttekintheti a beszerzési rendeléshez létrehozott naplókat, és láthatja, hogy mi érkezett és mikor.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

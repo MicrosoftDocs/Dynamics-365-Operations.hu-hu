@@ -79,3 +79,6 @@ A szolgáltatási szerződések minden egyes sora részletesen leírja a javasol
 ## <a name="related-topics"></a>Kapcsolódó témakörök
 
 [Szolgáltatási szerződések létrehozása](create-service-agreements.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -76,3 +76,6 @@ Az itt leírt példák azt mutatják, hogy az eszközön végrehajtott összes s
 
 ![4. ábra](media/12-preventive-maintenance.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

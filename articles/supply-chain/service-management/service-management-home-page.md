@@ -71,3 +71,6 @@ A szolgáltatáskezelés az alábbi modulokkal integrálható:
 
   
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

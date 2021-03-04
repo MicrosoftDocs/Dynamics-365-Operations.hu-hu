@@ -54,3 +54,6 @@ A költségcsoporthoz egy költségcsoport-típust lehet hozzárendelni és azt,
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -119,3 +119,6 @@ Ha azt szeretné, hogy minden lapon megjelenjen a fejléc, hajtsa végre az alá
 [Telephelyválasztó modul](site-selector.md)
 
 [Üzletválasztó modul](store-selector.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -75,3 +75,6 @@ A konfiguráció megosztásra kerül a külső szervezettel, és a szervezet sz�
 ![Külső szervezettel megosztott konfiguráció](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/1_RCS_Repo_for_Share_with_test.com)
 
 6. Ha egy külső szervezettel korábban megosztott konfigurációt megosztását vissza szeretné vonni, válassza ki a konfigurációt, majd kattintson a **Megosztás visszavonása** elemre , majd válassza az **OK** gombot.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

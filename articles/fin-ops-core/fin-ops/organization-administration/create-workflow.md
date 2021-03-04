@@ -83,3 +83,6 @@ Ha készen áll a munkafolyamat mentésére és aktiválására, kövesse az al�
 
     - A munkafolyamat aktuális verziójának aktiválásához kattintson az **Új verzió aktiválása** lehetőségre. Ha egy munkafolyamat aktív, akkor a felhasználók dokumentumokat küldhetnek feldolgozásra.
     - Ha nem szeretné aktiválni ezt a verziót, kattintson a **Ne aktiválja az új verziót** lehetőségre. A munkafolyamatot később is aktiválhatja.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

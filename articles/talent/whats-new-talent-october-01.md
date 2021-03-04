@@ -56,3 +56,6 @@ A szervezetek eltérően ítélhetik oda a szabadságot attól függően, hogy m
 ## <a name="known-issue"></a>Ismert probléma
 
 -   **Probléma:** Amikor új mellékletet ad egy dolgozóhoz, az **Új** és **Szerkesztés** gombok kiszürkítve jelennek meg. **Megoldás:** Mielőtt megnyitná a melléklet lapját, győződjön meg róla, hogy be vannak zárva a **Dolgozó** lap ténymezői. Ha a ténymezők be vannak zárva, amikor a **Dolgozó** lap be van töltve, akkor a **Mellékletek** gombjai engedélyezettek. (Ezt a problémát kijavítjuk a következő platformfrissítéssel.)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

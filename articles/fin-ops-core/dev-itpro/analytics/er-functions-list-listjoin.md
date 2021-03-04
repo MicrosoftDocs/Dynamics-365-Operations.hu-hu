@@ -83,3 +83,6 @@ A lista szerkezete a `Real` típus egyetlen **Mennyiség** mezőjéből áll, mi
 [Listafüggvények](er-functions-category-list.md)
 
 [Egy végrehajtott ER formátum hibakeresési adatforrásai az adatfolyam elemzéséhez és átalakításához](er-debug-data-sources.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

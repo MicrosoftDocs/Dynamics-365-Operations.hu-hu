@@ -57,3 +57,6 @@ Ha a dokumentumtípus helye **Azure tárhely**, a fájl menthető az Azure Stora
 - [Elektronikus jelentéskészítés (ER) áttekintése](general-electronic-reporting.md)
 - [Elektronikus jelentéskészítés (ER) céljai](electronic-reporting-destinations.md)
 - [A dokumentumkezelés konfigurálása](../../fin-ops/organization-administration/configure-document-management.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

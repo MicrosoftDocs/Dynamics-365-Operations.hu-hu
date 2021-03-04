@@ -129,3 +129,6 @@ Ha a jelentkezők beleegyeznek abba, hogy a saját LinkedIn-profiljaikat a szerv
 [Állások feladása a LinkedIn felületére a Microsoft Dynamics 365 Talent – Attract szolgáltatásból](./attract-post-jobs-to-linkedin.md)
 
 [A LinkedIn és a Microsoft Dynamics 365 Talent – Attract közötti integráció hibaelhárítása](./attract-troubleshoot-linkedin.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -42,3 +42,6 @@ Ez a témakör bemutatja, hogyan állítsa be a főszámla-kategóriákat. A Fő
 3. A fő számlák kiválasztásához jelölje be, vagy törölje a jelölést az **Összekapcsolt** elemnél.
 4. Válassza ki az **OK** lehetőséget.
 5. Válassza ki az **Igen** lehetőséget.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

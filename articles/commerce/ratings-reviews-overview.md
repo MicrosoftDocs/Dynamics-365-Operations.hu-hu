@@ -59,3 +59,6 @@ Az értékelések és vélemények megoldás egy üzleti intelligencia (BI) sabl
 [Minősítések és értékelések konfigurálása](configure-ratings-reviews.md)
 
 [A termék minősítések szinkronizálása a következőben: Dynamics 365 Commerce](sync-product-ratings.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

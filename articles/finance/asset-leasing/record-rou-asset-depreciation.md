@@ -86,3 +86,6 @@ A Nemzetközi pénzügyi jelentési standard 16 (IFRS 16) és ASC 842 szabványn
 | 1                                    | 22.889,87 ÷ 24 = 953,74                 |
 | 2                                    | 22.889,87 ÷ 24 = 953,74                 |
 | 3                                    | 22.889,87 ÷ 24 = 953,74                 |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

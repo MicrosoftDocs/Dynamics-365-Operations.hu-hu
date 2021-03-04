@@ -183,3 +183,6 @@ Például egy cikkek átfutási ideje egy nap és a bevételezési időtartalék
 [Tervezési optimalizálás kezdő lépései](get-started.md)
 
 [Tervezési optimalizálás igazítási elemzése](planning-optimization-fit-analysis.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

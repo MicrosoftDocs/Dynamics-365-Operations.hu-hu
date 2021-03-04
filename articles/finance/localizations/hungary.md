@@ -38,3 +38,6 @@ Ez a témakör dokumentációforrásokra mutató hivatkozásokat tartalmaz a Mag
 - [Év végi zárás](emea-cze-hun-year-end.md)
 - [Online számlázási rendszer](emea-hun-online-invoicing.md)
 - [Halasztott áfa számításai](emea-hun-deferred-vat.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

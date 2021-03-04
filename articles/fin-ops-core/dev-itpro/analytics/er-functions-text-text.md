@@ -59,3 +59,6 @@ Ha a Microsoft Dynamics 365 Finance példány kiszolgáló területi beállítá
 ## <a name="additional-resources"></a>További erőforrások
 
 [Szöveg függvények](er-functions-category-text.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

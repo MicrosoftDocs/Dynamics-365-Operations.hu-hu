@@ -131,3 +131,6 @@ Az új Azure AD B2C bérlő most a **B2C alkalmazások kezelése** területen je
 [Tartalomkézbesítési hálózat (CDN) támogatásának hozzáadása](add-cdn-support.md)
 
 [Helyalapú áruházészlelés engedélyezése](enable-store-detection.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

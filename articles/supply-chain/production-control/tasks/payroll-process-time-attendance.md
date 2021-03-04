@@ -70,3 +70,6 @@ Ez az eljárás bemutatja, hogyan lehet engedélyezni a munkaidő és jelenlét 
 7. Kattintson a Szerkesztés lehetőségre.
 8. A Fizetési megállapodás mezőben adjon meg vagy válasszon ki egy értéket.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -55,3 +55,6 @@ Az `ABS (-1)` az **1** értéket adja vissza.
 ## <a name="additional-resources"></a>További erőforrások
 
 [Matematikai funkciók](er-functions-category-mathematical.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

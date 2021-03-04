@@ -224,3 +224,6 @@ Az **Emailing.TxtToUse.Body** kifejezés a minta formátumban a helyőrzők alá
 
 ## <a name="additional-resources"></a>További erőforrások
 [Elektronikus jelentéskészítés (ER) áttekintése](general-electronic-reporting.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

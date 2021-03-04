@@ -82,3 +82,6 @@ Egy felfüggesztett tranzakció gyors és könnyű visszahívásához olvassa be
 ### <a name="void-a-suspended-transaction"></a>Felfüggesztett tranzakció érvénytelenítése
 
 A felfüggesztett tranzakciókat érvénytelenítheti úgy, hogy előhívja a tranzakciót,.majd elvégzi a **Tranzakció érvénytelenítése** műveletet, vagy a tranzakció kiválasztásával a **Tranzakció visszahívása** listán, majd az **Érvénytelenítés** kiválasztásával az alkalmazás sávján. Másik lehetőségként az üzlet beállítható úgy, hogy felkérje a felhasználókat a függőben lévő tranzakciók érvénytelenítésére, amikor lezárják műszakjukat.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -51,3 +51,6 @@ Tárgyi eszköz értékcsökkenése egyetlen lépésben futtatható jogi személ
 5. Kattintson a Napló létrehozása lehetőségre.
 6. Ugorjon a Tárgyi eszközök > Naplóbejegyzések > Tárgyi eszközök naplója pontra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

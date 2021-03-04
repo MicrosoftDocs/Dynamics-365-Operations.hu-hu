@@ -88,3 +88,6 @@ A 175 % degresszív értékcsökkenési módszer elosztja a 175 százalékot az 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

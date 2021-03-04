@@ -40,3 +40,6 @@ A kitárolási munka a függő feltöltési munka miatt le van zárolva.
 ### <a name="issue-resolution"></a>Probléma megoldása
 
 Ha a kereslet szerinti feltöltést használja, akkor a rendszer a feltöltési munkát és a kitárolási munkát egyaránt létrehozza, ha a kitárolási helyet fel kell tölteni a forrásrendelés igényének kielégítésére. A kitárolási munkát azonban csak akkor zárolja, ha a feltöltési munka be van fejezve. Ez a viselkedés szándékos, mert a kitárolási hely nem rendelkezik elegendő készlettel, ha a feltöltési munka be van fejezve. Fejezee be a feltöltési munkát, majd dolgozza fel a kitárolási munkát.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

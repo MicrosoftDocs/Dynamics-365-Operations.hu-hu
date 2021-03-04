@@ -49,3 +49,6 @@ A feladat-útmutató bemutatja az olyan főkönyvi könyvelési tranzakciók lé
 17. Kattintson az OK gombra.
 18. Kattintson a Feladás lehetőségre.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

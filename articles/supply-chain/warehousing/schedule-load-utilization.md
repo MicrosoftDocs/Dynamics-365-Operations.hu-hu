@@ -72,3 +72,6 @@ A helykihasználás tervezéséhez létrehozhatja a **Raktár terhelési kihaszn
 
 4. A **Terhelési típus** mezőben válassza ki a **Térfogat** vagy **Tömeg** elemet a raktár üzemi egységét, amelyhez a helyet meg kívánja tervezni.
 5. A **Helykihasználás beállítása** mezőben jelölje be azt a helykihasználási beállítást, amelyet alapul fog venni az előrejelzés.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

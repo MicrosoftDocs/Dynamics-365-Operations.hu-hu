@@ -50,3 +50,6 @@ A kerekítés nélkül számított értékcsökkenés 2444,44 egység. Ahogy azt
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

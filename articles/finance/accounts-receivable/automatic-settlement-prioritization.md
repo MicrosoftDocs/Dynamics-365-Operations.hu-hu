@@ -83,3 +83,6 @@ Ha nincsen felhasználó által definiált kiegyenlítési rangsor, a tranzakci�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

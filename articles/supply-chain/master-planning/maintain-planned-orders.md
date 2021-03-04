@@ -68,3 +68,6 @@ Ha egyszerre több rendelést szeretne megerősíteni, akkor a futtatás párhuz
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

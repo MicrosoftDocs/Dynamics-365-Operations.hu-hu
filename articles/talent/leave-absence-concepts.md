@@ -294,3 +294,6 @@ Előrejelzett egyenleg (30) = Könyvelési érték (10 × 1) + Aktuális egyenle
 |---------------------|-------------------|-----------------|------------|----------------|-----------------|---------|
 | Jeannette Nicholson | 0,00              | 2018/1/6        | 2018/1/6   | 1.00           | 2018/1/9        | 3,00    |
 | Jay Norman          | 0,00              | 2018/15/6       | 2018/15/6  | 1.00           | 2018/1/9        | 2.00    |
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

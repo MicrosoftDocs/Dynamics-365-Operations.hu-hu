@@ -44,3 +44,6 @@ A költségellenőr ezzel az eljárással hozzárendelhet egy költségösszetev
     * Ebben a példában válassza ki a 6001004 Telefono dimenziótagot.  
 11. Kattintson a Mentés gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

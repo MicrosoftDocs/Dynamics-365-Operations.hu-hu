@@ -141,3 +141,6 @@ A szervező szolgáltatás kezeli az ön telepítését és az ehhez kapcsolód�
 ## <a name="virtualization-and-oversubscription"></a>Virtualizáció és túljegyzés
 
 Az olyan létfontosságú szolgáltatásokat, mint az AOS, dedikált erőforrásokkal rendelkező virtuális gépeken kell tárolni. Ilyen erőforrások a processzormagok, a memória, és a lemez.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -153,3 +153,6 @@ Kövesse az alábbi lépéseket a kiválasztott feltételek alapján létrejöv�
 2. Válassza ki azt az összehasonlító operátort, amely meghatározza, hogy hogyan kell kiértékelni a pontozási csoport adatait.
 3. Írja be azt az értéket, amelyet a pontozási csoporthoz megadott értékkel kell összehasonlítani.
 4. Adja meg azt a hitelkorlátot, amelyet akkor kell hozzárendelni, ha a vevő adatai megfelelnek a pontozási csoporthoz megadott értéknek. Létrehozhat például egy automatikus hitelkeretet az **Alacsony** pontozási csoport számára. Ha az üzletben eltöltött évek egyike a pontozási csoportoknak, akkor egy olyan sor definiálható, amely egy 100 000 összegű hitelkeretet rendel hozzá, ha a vevő öt éve működik, és egy másik sort, amely 200 000 összegű hitelkeretet rendel hozzá, ha a vevő 10 éve működik.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

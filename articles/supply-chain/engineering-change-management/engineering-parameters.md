@@ -57,3 +57,6 @@ A következő táblázat felsorolja azokat a mezőket, amelyek elérhetők a **M
 | Súlyossági szabály | Válassza ki, hogyan legyen meghatározva egy mérnöki módosítási rendelés súlyossága. Válassza ki a *Manuális* beállítást, ha a felhasználónak be kell írnia egy értéket a **Súlyosság** mezőbe. Válassza a *Számítás* lehetőséget, ha azt szeretné, hogy a rendszer kiszámítsa a **Súlyosság** mező értékét, amikor a mérnöki módosítási rendelés művelet ablaktábláján kiválasztja a **Súlyosság számítása** lehetőséget. Ebben az esetben a rendszer a **Súlyossági szabálykészlet** oldalon megadott súlyossági szabályokat fogja használni. Válassza az *Automatikus számítás* lehetőséget, ha azt szeretné, hogy a program automatikusan kiszámítsa a **Súlyosság** mező értékét, és kitöltse a súlyossági szabályok alapján. |
 | Érintett termékek újbóli kiadása | Ez a mező akkor használható, ha a termékeket egy mérnöki módosítási rendelésen keresztül újra kiadják. Megadhatja, hogy az összes termék vagy csak az érintett termékek szerepeljenek-e javaslatként a **Kiadások** párbeszédpanelen. |
 | Kiadandó anyagjegyzékszintek | A kiadandó anyagjegyzék szintjének mélysége. Ha az anyagjegyzéknek több szintje van (azaz ha ez mélyebb), mint az itt megadott érték, akkor a program csak a megadott értéknek megfelelő szinteket adja ki. |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

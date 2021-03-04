@@ -50,3 +50,6 @@ Az Eszközkezelés modulban beállíthat dokumentumokat, amelyek automatikusan k
 
 4. **Mellékletek** kiválasztása. Megjelenik a szabványos **Dokumentumkezelés** lap.
 5. Állítsa be az eszközdokumentum-rekordhoz csatolandó dokumentumokat vagy jegyzeteket. Dokumentumok csatolása után a **Mellékletek** mező a rekordhoz kapcsolódó dokumentumok számát jeleníti meg.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -75,3 +75,6 @@ Az eljárás lépései az elektronikus dokumentumot létrehozó elektronikus jel
     * Tekintse át az Intrastat-jelentés elkészítéséhez használt formátum szerkezetét. Megjegyzés: úgy van tervezve, hogy létrehozzon egy XML-fájlt az adatok feltöltésével az adatmodellből, amelynek az alapja „A kimenő dokumentumok” gyökérelem. Győződjön meg arról, hogy a létrehozott fájl neve meg van-e adva a felhasználói párbeszédpanel űrlapon (erre az „fn” adatforrás szolgál).   
 30. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -92,3 +92,6 @@ Mielőtt beállítaná a szabadság- és a távollétterveket a Dynamics 365 Hum
 ## <a name="see-also"></a>Lásd még
 
 - [Szabadság és távollét áttekintése](hr-leave-and-absence-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

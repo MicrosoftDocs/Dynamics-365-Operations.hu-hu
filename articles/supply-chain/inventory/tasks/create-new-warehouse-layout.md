@@ -63,3 +63,6 @@ Ez a témakör leírja, hogyan állíthat be információkat a raktárban lévő
 7. Zárja be a lapot.
 8. Frissítse a lapot..
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -57,3 +57,6 @@ Ha megerősíti az értékesítési ajánlatokat, az ebből származó értékes
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

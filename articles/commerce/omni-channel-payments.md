@@ -238,3 +238,6 @@ Ha egy olyan rendelést, amelynél több fizetőeszköz és több sor van felvé
 - [Dynamics 365 fizetési összekötő az Adyen szolgáltatáshoz](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3)
 - [BOPIS konfigurálása Dynamics 365 Commerce értékelési környezetben](https://docs.microsoft.com/dynamics365/commerce/cpe-bopis)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

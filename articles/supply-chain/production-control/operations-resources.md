@@ -85,3 +85,6 @@ Ha olyan tevékenységet ad meg, mint például egy útvonalművelet vagy egy pr
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

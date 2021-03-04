@@ -59,3 +59,6 @@ A `RIGHT ("Sample", 3)` a **"ple"** értéket adja vissza.
 ## <a name="additional-resources"></a>További erőforrások
 
 [Szöveg függvények](er-functions-category-text.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

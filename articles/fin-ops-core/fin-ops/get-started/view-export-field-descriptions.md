@@ -107,3 +107,6 @@ A lapok különféle módon megvalósítható megkereséséről bővebben feljeb
 ## <a name="additional-resources"></a>További erőforrások
 
 [Mezőleírások testreszabása](../../dev-itpro/user-interface/customize-field-help.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

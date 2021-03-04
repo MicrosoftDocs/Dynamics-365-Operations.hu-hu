@@ -55,3 +55,6 @@ A következő lépések leírják, hogy a Rendszergazda vagy az Elektronikus jel
 5. Válassza **Bezárás** lehetőséget. 
 6. Válassza ki az ER-konfiguráció kívánt verzióját, és válassza az **Importálás** lehetőséget az aktuális példányba való behúzáshoz.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

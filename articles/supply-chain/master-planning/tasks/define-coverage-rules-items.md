@@ -102,3 +102,6 @@ Ez az eljárás az USMF bemutatócéget használja. Ez az eljárás bemutatja, h
 11. A **Beszerzés ideje** mezőbe írja be, hogy „5”.
 12. Kattintson a **Mentés** gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

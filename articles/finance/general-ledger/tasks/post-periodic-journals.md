@@ -58,3 +58,6 @@ Az időszaki naplókat olykor ismétlődő naplónak is nevezik, mivel az össze
 27. Az **Időszaki naplószám mezőben** adjon meg, vagy válasszon ki egy értéket.
 28. A listában kattintson a kijelölt sorban lévő hivatkozásra.
 29. Kattintson az **OK** gombra. Az időszaknapló készen áll a felülvizsgálatra, jóváhagyás vagy az elküldésre a követelményektől vagy a beállítástól függően.   
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

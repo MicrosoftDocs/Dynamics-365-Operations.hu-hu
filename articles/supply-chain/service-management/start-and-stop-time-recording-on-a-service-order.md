@@ -65,3 +65,6 @@ Ezzel a művelettel indíthatja el és állíthatja le az idő rögzítését ol
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

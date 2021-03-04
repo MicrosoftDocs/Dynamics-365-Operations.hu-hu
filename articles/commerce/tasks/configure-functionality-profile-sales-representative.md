@@ -37,3 +37,6 @@ Ez az eljárás bemutatja, hogyan konfigurálhatja egy áruház üzletkötőkre 
 4. Az Üzletkötő megadásának kérése mezőben válasszon egy beállítást.
 5. Válassza az Igen lehetőséget az Üzletkötő megkövetelése mezőben.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -39,3 +39,6 @@ Központ-összevonás előtt engedélyeznie kell a **Átmozgatás tervezése** b
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

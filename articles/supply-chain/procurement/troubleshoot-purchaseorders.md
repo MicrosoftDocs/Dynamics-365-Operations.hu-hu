@@ -145,3 +145,6 @@ Ez szándékosan van. A kiválasztott cím besorolása szállítási cím kell l
 ## <a name="can-i-find-the-user-who-canceled-a-purchase-order"></a>Megkereshetem azt a felhasználót, aki törölte a beszerzési rendelést?
 
 Ezt az információt csak akkor követi nyomon a program, ha a beszerzési rendelésen alkalmazva van a változások követése. Ha változáskövetést használ, megtekintheti, hogy ki küldte be a módosítást (a visszavonást), és ki hagyta jóvá.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

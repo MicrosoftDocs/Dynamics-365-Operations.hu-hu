@@ -60,3 +60,6 @@ Az alábbi ábra egy példát mutat be a kiszállási beállításokra az **Üte
 [!NOTE]
 Ha törölni szeretné az ütemezést egy munkarendelésen, akkor ezt úgy teheti meg, hogy a **Minden munkarendelés** alatt kijelöli a munkarendelést, majd az **Általános** lapon az **Ütemezés törlése** elemre kattint. Ne felejtse el manuálisan frissíteni a munkarendelés életciklus-állapotát, ha törli az ütemezést.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

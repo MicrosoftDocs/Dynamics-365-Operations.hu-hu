@@ -500,3 +500,6 @@ Az előző példákban megjelenített lekérdezések a következőhöz hasonló 
 ```
 
 Ne felejtse el, hogy a mennyiségek mezői a mértékek és a hozzájuk kapcsolódó értékek jegyzékeként vannak strukturálva.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

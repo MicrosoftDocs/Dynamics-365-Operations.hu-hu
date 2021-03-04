@@ -119,3 +119,6 @@ A különböző helyutasítássorokhoz tartozó tevékenységek meghatározása 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

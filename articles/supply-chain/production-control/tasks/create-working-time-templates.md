@@ -79,3 +79,6 @@ A munkaidősablonok határozzák meg az egész hét munkaóráit, és ezek segí
 3. Bontsa ki a Vasárnap szakaszt.
 4. A Lezárt felvétel mezőben válassza az Igen lehetőséget.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -126,3 +126,6 @@ Amikor kifizetéseket hoz létre, létrejön egy kifizetési fájl, és a rendsz
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

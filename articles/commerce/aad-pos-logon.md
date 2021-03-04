@@ -74,3 +74,6 @@ A rendszer kitölti az **Alias**, **UPN**, **Külső részazonosító** mezőket
 [Retail funkcióprofil létrehozása](retail-functionality-profile.md)
 
 [ Dolgozó konfigurálása](https://docs.microsoft.com/dynamics365/commerce/tasks/worker)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -56,3 +56,6 @@ Sztornírozott tranzakció visszavonásához kövesse az alábbi lépéseket.
 Ha a **Sztornírozott nyomkövetés** lehetőséget választja, megjelenik egy párbeszédpanel, amely az eredeti és a sztornírozott tranzakciókat is megjeleníti egy nyomkövetési számmal együtt.
 
 A visszavonásokat a megfelelő **Ütemezések** lapon is nyomon követheti. A **Sztornírozott** mező törlődik, míg a **Feladott napló** mező be van jelölve. Ezenkívül a **Legkésőbbi naplószám** mező frissül a visszavonási tranzakció naplószámával, és a **Naplószám** mező a sztornírozási naplószámmal frissül.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

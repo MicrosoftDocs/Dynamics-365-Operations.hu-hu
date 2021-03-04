@@ -38,3 +38,6 @@ A költségkönyvelési főkönyv megfelel a teljes adatszolgáltatási egységn
 8. A Statisztikai dimenzió mezőben adjon meg vagy válasszon ki egy értéket.
 9. Kattintson a Mentés gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -60,3 +60,6 @@ Az `ISOCredRef ("VEND-200002")` a **"RF23VEND-200002"** értéket adja vissza.
 ## <a name="additional-resources"></a>További erőforrások
 
 [Egyéb (üzleti területre jellemző) függvények](er-functions-category-other.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

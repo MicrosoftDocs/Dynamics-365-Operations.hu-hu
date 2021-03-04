@@ -59,3 +59,6 @@ Ez az eljárás bemutatja, hogyan hozzon létre egy szállítói számlát, és 
 7. Zárja be a lapot.
 8. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

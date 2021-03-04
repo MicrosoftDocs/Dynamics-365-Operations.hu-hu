@@ -99,3 +99,6 @@ Ha egy beszerzési rendelés változáskezelés alatt van, akkor bármilyen vál
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

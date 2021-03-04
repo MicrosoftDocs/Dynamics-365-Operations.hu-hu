@@ -384,3 +384,6 @@ Miután minden szükséges elem be van állítva, beállíthatja, hogy az idők�
 1. Ha kívánja, a program automatikusan futtatja az ismétlődést.
 
 A forgatókönyv gyakorlataihoz **ne** állítson be automatikus időközökre bontást.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

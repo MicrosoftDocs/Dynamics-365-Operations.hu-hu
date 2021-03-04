@@ -35,3 +35,6 @@ A Dynamics 365 Supply Chain Management raktári alkalmazását több Android ala
 
 Vevőként ajánlott a raktári mobil beolvasási alkalmazás tesztelése a kijelölt hardveren, mielőtt döntene a megvásárolni kívánt hardverről.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

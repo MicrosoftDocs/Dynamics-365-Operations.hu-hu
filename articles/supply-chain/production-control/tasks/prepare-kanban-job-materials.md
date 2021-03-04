@@ -42,3 +42,6 @@ Ez a feladat a feldolgozási kanbanfeladat előkészítésével foglalkozik, ami
 6. Kattintson az Előkészítés lehetőségre.
     * Az előkészítési folyamat most befejeződött. A kiválasztott jelölőnégyzet a kitárolási lista minden sorában azt mutatja, hogy az ellátási állapot kitárolt.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -44,3 +44,6 @@ Az alábbi táblázatban találhatóak hivatkozások, a kérdőív fő feladatai
 | [Kérdőívek tervezése](hr-learning-design-questionnaires.md) | Ez a cikk a kérdőívek tervezésével kapcsolatban tartalmaz tájékoztatást. A tervezési folyamat magában foglalja az előfeltételeket, a kérdéseket, a válaszokat, valamint ezek egyesítését kérdőív formába. |
 | [Kérdőívek terjesztése és ütemezése](hr-learning-distribute-questionnaires.md) | Ez a cikk a kérdőívek válaszadóknak történő kiosztásáról, valamint a kérdőívek kitöltéséről szól. |
 | [A kérdőív eredményeinek megtekintése és kiértékelése](hr-learning-evaluate-questionnaire-results.md) | Ez a cikk a kitöltött kérdőívek eredményének megtekintéséről és kiértékeléséről szól. |
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

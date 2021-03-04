@@ -104,3 +104,6 @@ A diagramban való megjelenítésre kiválasztott mezők alapján az egyes csom�
 **További lehetőség**
 
 A Human Resources modulban a **Személyek** munkaterületen is meg tudja jeleníteni a hierarchiához kapcsolódó információk egy részét.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

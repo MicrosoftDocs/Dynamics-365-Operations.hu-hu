@@ -103,3 +103,6 @@ Ez az eljárás végigvezeti egyetlen kiadott termék létrehozásán egy legál
 12. A kívánt rekord megkeresése és kijelölése a listán
 13. A listában kattintson a kijelölt sorban lévő hivatkozásra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

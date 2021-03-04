@@ -67,3 +67,6 @@ Ez az eljárás bemutatja, hogyan lehet új kategóriahierarchiát létrehozni, 
 8. A listában kattintson a kijelölt sorban lévő hivatkozásra.
 9. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

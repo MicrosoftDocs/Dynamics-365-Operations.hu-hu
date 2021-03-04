@@ -51,3 +51,6 @@ Ezek a dokumentumoknál navigálhat a tényleges forrásbizonylathoz a Könyvel�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

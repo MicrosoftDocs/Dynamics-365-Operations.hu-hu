@@ -53,3 +53,6 @@ Lízingkönyv létrehozásához kövesse az alábbi lépéseket.
     | Rövid távú küszöbérték                     | Adja meg a rövid távú lízingek küszöbértékként használandó hónapok számát. Ha a lízing időtartama kisebb vagy egyenlő az itt megadott hónapok számával, a rendszer a lízinget rövid távú lízingként osztályozza, és a halasztott bérleti díjat kell alkalmazni. |
     | Alacsony értékű küszöb                      | Adja meg az alacsony értékű lízingek küszöbértékeként használandó összeget. Ha az eszköz valós értéke kisebb vagy egyenlő az itt megadott értékkel, a rendszer a lízinget alacsony értékű lízingként osztályozza, és a halasztott bérleti díjat kell alkalmazni. |
     | Fizetés szállítónak                            | Állítsa ezt a beállítást **Igen** értékre, ha lehetővé szeretné tenni a lízingkifizetések számlaként történő feladását az egyes lízingeken megadott szállítói számlára. A lízingkifizetés feladásakor a szállítói számla jóváírásra kerül. Ha ez a beállítás **Nem** értékű, akkor a **Lízing fizetési** feladási típushoz a **Lízing feladási paraméterek** lapon megadott számla kerül jóváírásra. |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

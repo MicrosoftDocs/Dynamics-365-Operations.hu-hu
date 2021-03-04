@@ -55,3 +55,6 @@ A garanciaszerződések több szerződéssort is tartalmazhatnak a munkaórák, 
     4. A **Százalék** mezőbe írja be a garanciasor fedezeti százalékát. A százalékos érték azt jelzi, hogy a vállalat mekkora részt fedez.
 
 ![Garancia lap](media/01-warranty.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

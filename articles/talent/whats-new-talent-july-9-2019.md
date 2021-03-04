@@ -115,3 +115,6 @@ A következő entitások lesznek engedélyezve az egyéni mezőknél a Common Da
 - **Szabadság típusa**
 - **Dolgozói bankszámla**
 - **Munkanaptár**
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

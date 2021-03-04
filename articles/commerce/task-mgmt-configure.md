@@ -111,3 +111,6 @@ A következő ábra a pénztár kezdőlapján található **Feladatok** csempér
 [Feladatlisták hozzárendelése áruházakhoz vagy alkalmazottakhoz](task-mgmt-assign-lists.md)
 
 [Feladatkezelés a pénztárban](task-mgmt-POS.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

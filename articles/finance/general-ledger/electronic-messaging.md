@@ -536,3 +536,6 @@ Most törölheti vagy frissítheti az üzenet állapotát. Ha frissíteni szeret
 ![Az üzenet állapotának frissítése](media/update-status.png)
 
 Az üzenet állapota **Előkészítve** állapotra frissül, és most létrehozhatja a jelentést a **Jelentés létrehozása** kiválasztásával. A jelentés létrejött, az üzenet állapota és a műveletnapló pedig frissült. A létrehozott jelentés megtekintéséhez válassza a **Melléklet** gombot (kapocs jel) az oldal jobb felső sarkában.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

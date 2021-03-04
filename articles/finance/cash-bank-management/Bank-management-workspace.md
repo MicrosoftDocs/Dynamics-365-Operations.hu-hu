@@ -64,3 +64,6 @@ Az **Elemzés** oldalon fontos mérőszámok tekinthetők meg a jelenlegi válla
 -   Egyenleg pénznemenként
 
 Megtekintheti a banki elemzéseket az összes vállalatra vonatkozóan a **Készpénzáttekintés – minden vállalat** munkaterületen. További információkért lásd: [Készpénz áttekintés - Power BI tartalom](Cash-Overview-Power-BI-content.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

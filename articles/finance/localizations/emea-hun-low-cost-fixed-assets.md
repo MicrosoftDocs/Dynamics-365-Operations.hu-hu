@@ -51,3 +51,6 @@ Eszköz megszerzésekor egy beszerzési tranzakciót hoz létre a beszerzést me
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

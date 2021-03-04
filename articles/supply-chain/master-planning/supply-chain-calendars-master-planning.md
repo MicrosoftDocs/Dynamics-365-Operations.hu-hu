@@ -143,3 +143,6 @@ A fedezeti csoport naptárakkal kapcsolatosan fontos, hogy felülbíráló visel
 
 ### <a name="updating-scm-related-calendars"></a>SCM-hez kapcsolódó naptárak frissítése
 Ugyan fontos, hogy minden megfelelő naptár a megfelelő helyhez legyen hozzárendelve (szállító, vevői, raktár, szállítási mód vagy fedezeti csoport), a frissítésük ugyanolyan fontos, hogy tükrözzék a módosításokat. A rendszer a termelési, átmozgatási, beszerzési és értékesítési rendelések dátumait a hozzárendelt naptárak kombinációja alapján határozza meg. A legjobb megoldás tisztázni, ki felelős a megfelelő területek naptárainak hozzárendeléséért és frissítésért. Leállás vagy a munkanapok bármilyen egyéb szokatlan változása esetén fontos ennek megfelelően a naptárak frissítése. Minden feladatot, amely naptárakra támaszkodik például az alaptervezés és a termelés ütemezése, a naptárak frissítésekor újra kell futtatni. 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -48,3 +48,6 @@ A **Megnyitás új ablakban** funkció használata előtt a böngészőjében en
 A **Megnyitás új ablakban** funkció csak akkor elérhető, ha több, mint egy oldal van megnyitva az ablakban. A felugró ablakok is automatikusan bezárulnak, ha nincs több megnyitható lap (ha az ablak utolsó lapja is bezárásra kerül). A rendszer bezárja a megnyitott lapokat is, ha Ön az alkalmazás egy másik részére navigál. Ezért ha van egy megnyitott felugró ablak, és Ön az alkalmazáson belül egy másik területre navigál, a felugró ablak automatikusan bezárul, mert az ablakon belüli lapokat a rendszer automatikusan bezárta.
 
 Az előugró ablak felső sora arról a vállalatról tartalmaz információt, amiben a lap meg lett nyitva, és csak olvasható. A felugró ablakok támaszkodnak még a fő böngészőablakra. Ha a fő ablak bezárásra kerül, vagy frissítve lesz, az összes felugró ablak csak olvasható állapotba kerül. Ha ez történik, ezután is megtekintheti az információkat ezekben az ablakokban, de nem lesz képes módosítani azokat.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

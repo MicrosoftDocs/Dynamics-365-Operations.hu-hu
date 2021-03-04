@@ -44,3 +44,6 @@ Az elektronikus jelentés (ER) rekordfüggvényeivel kezelhetők a *Tároló (re
 [Képletszerkesztő az Elektronikus jelentéskészítésben](general-electronic-reporting-formula-designer.md)
 
 [Elektronikus jelentéskészítés képletének nyelve](er-formula-language.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

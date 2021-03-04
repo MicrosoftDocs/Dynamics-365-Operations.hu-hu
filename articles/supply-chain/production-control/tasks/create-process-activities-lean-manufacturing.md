@@ -94,3 +94,6 @@ Előfeltételek:
 12. Kattintson a Finish gombra.
 13. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -56,3 +56,6 @@ Ez a témakör bemutatja a pénzügyi dimenziók hozzáadását a pénzügyi iga
 16. Hozza létre a projektet, és nyissa meg az alkalmazást az eredmények megtekintéséhez.
 
     [![Kész munkaterület](./media/workspace.png)](./media/workspace.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

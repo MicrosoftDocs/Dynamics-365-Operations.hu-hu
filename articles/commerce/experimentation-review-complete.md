@@ -61,3 +61,6 @@ A következő lépésekkel törölhet egy kísérletet a Commerce webhelyszerkes
 
 ## <a name="previous-step"></a>Előző lépés
 [Kísérlet futtatása és nyomon követése](experimentation-run-monitor.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

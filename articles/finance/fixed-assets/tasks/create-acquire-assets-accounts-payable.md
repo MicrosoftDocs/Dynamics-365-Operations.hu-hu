@@ -56,3 +56,6 @@ A feladat-útmutató végigvezeti a tárgyi eszköz létrehozásán és a beszer
 17. A listában kattintson a kijelölt sorban lévő hivatkozásra.
 18. Kattintson a **Bejegyzés** lehetőségre. A tárgyi eszköz létrejön, és átkerül a számla feladásakor.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

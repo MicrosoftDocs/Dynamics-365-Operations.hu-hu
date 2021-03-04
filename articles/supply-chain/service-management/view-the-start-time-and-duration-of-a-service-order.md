@@ -59,3 +59,6 @@ Azt is megjelenítheti, hogy mikor indították el és állították le a szervi
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

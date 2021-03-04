@@ -110,3 +110,6 @@ A következő lépések segítségével elnevezheti az automatizált feladatot.
     </table>
 
 8. Ismételje meg a 3 – 7. lépést a 2. lépésben kiválasztott összes eseményhez.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

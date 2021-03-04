@@ -67,3 +67,6 @@ A következő kép egy példát mutat az online funkcióprofilra.
 [Kiskereskedelmi csatorna beállítása](channel-setup-retail.md)
 
 [Hívásközpont csatorna beállítása](channel-setup-callcenter.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

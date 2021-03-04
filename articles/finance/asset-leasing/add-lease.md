@@ -89,3 +89,6 @@ Az eszközlízing-naplóban létrehozott összes naplóbejegyzés az eszközlíz
 
 > [!NOTE]
 > Az Eszközlízing napló nem hozható létre manuálisan. Automatikusan létrejön a lízingütemezések létrehozásakor.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

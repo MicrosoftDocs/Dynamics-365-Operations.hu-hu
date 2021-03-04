@@ -111,3 +111,6 @@ A termelési tervező megtervezi az anyagszükségleteket olyan cikkekhez, amely
 19. Válassza a Nem lehetőséget Az összes tervezési folyamat letiltása mezőben.
 20. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

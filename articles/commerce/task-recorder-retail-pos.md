@@ -146,3 +146,6 @@ Amikor rákattint egy Feladat-útmutatóra a keresési találatok között, vagy
 
 > [!NOTE]
 > A Retail Modern POS és a Cloud POS Súgója nem hozza fel a feladat-útmutatókat a képernyő vagy a végzett művelet alapján. A keresőmezőbe be kell írnia a folyamat nevét, majd kattintson a **Keresés** lehetőségre.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

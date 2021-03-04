@@ -78,3 +78,6 @@ A Human resources összeköti az embereket és az üzemeltetési adatokat, így 
 [Szabadság és távollét kezelése](hr-leave-and-absence-overview.md)</br>
 [Alkalmazottak fejlesztése](hr-develop-performance-management-overview.md)</br>
 [Tanfolyamok létrehozása](hr-learning-courses.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

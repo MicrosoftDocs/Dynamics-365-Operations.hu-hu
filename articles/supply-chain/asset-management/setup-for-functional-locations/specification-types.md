@@ -64,3 +64,6 @@ Létrehozhatja saját attribútumtípusait. Ezenkívül a termékdimenziókat á
 9. Mentse a rekordot.
 
     A **Munkavégzési helyszín típusai** mezőben az attribútumtípust használó munkavégzési helyszínek száma látható. Az **Eszköztípusok** mezőben az azt használó eszköztípusok száma látható.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

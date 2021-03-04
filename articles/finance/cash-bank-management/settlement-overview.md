@@ -78,3 +78,6 @@ Ha megpróbál kiegyenlíteni egy tranzakciót, akkor észrevehet egy szimbólum
 ## <a name="additional-resources"></a>További erőforrások
 
 - [Hátralék kiegyenlítése](settle-remainder.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -73,3 +73,6 @@ Az `INTVALUE (-100.77)` az *Int* esetében a **-100** értéket adja vissza.
 ## <a name="additional-resources"></a>További erőforrások
 
 [Típuskonverziós függvények](er-functions-category-type-conversion.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

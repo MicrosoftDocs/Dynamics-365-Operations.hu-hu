@@ -69,3 +69,6 @@ Ez a negyedik azon öt eljárás közül, amelyek elektronikus jelentési beáll
 8. Kattintson az OK gombra.
 9. Kattintson a Mentés gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

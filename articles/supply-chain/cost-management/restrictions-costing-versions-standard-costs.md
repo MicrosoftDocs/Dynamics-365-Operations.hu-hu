@@ -51,3 +51,6 @@ Az elszámolóárakhoz tartozó cikk-költség adatokat át lehet másolni az el
 
 [Felkészülés a gyártott cikkek elszámolóárának karbantartására](update-standard-costs-manufacturing-environment.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

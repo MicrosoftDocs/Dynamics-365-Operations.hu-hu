@@ -147,3 +147,6 @@ A lépések végrehajtásához először hajtsa végre az „ER Pénzügyi dimen
 4. Kattintson a Befejezés gombra.
 5. Kattintson az OK gombra.
 ![Elektronikus jelentéskészítés – modell-leképezés tervező oldal](../media/er-financial-dimensions-guides-model-mapping5.png)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

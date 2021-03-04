@@ -89,3 +89,6 @@ A Commerce szervezeti hierarchiákat használ a csatornák strukturált kialakí
 > [!NOTE]
 > A Commerce értékesítési funkciójának használatához engedélyezni kell a **Több célhely** konfigurációs kulcsát. Ez a konfigurációs kulcs megtalálható a **Kereskedelem konfiguráció** kulcsai között a **Rendszerfelügyelet**\> **Beállítás** \> **Licenckonfiguráció** alatt. Ez az értékesítésirendelés-sor szintjén konfigurált kézbesítési cím alapján végrehajtott különböző érvényesítések miatt szükséges.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

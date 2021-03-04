@@ -76,3 +76,6 @@ A feladatútmutató befejezéséhez töltse le a következő fájlokat:
 
 - [ER modellkonfiguráció - CrossCompanyDataAccessModel.xml](https://go.microsoft.com/fwlink/?linkid=874111)
 - [ER-formátumkonfiguráció - CrossCompanyDataAccessFormat.xml](https://go.microsoft.com/fwlink/?linkid=874111)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

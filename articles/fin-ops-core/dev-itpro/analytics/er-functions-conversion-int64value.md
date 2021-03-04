@@ -73,3 +73,6 @@ Az `INT64VALUE ( VALUE("22565422744.77"))` az *Int64* esetében a **22565422744*
 ## <a name="additional-resources"></a>További erőforrások
 
 [Típuskonverziós függvények](er-functions-category-type-conversion.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

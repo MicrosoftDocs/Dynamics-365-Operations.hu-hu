@@ -1233,3 +1233,6 @@ Figyelje meg, hogy a létrehozott jelentés lábléce nem tartalmazza a létreho
 - [Az IF függvény](er-functions-logical-if.md)
 - [Az ORDERBY függvény](er-functions-list-orderby.md)
 - [A SESSIONNOW függvény](er-functions-datetime-sessionnow.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -44,3 +44,6 @@ A témakör leírja, hogy egy Rendszergazda vagy Elektronikus jelentések fejles
 2. Válassza ki az **Aktív beállítása** elemet.
 
 ![Elektronikus jelentések munkaterületoldala](../media/GER-Task-ActiveProvider-1.png)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

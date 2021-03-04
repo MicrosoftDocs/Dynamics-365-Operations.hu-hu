@@ -68,3 +68,6 @@ Mielőtt beállítaná a juttatásterveket a Microsoft Dynamics 365 Human Resour
 3. Válassza a **Mentés** lehetőséget.
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -203,3 +203,6 @@ Az IFeatureLifecycle a Microsoft egyik belső mechanizmusa a funkció életciklu
 - PublicPreview – Alapértelmezés szerint megjelenik, de figyelmeztetés jelzi, hogy a funkció előnézetben van.
 - Közzétéve – Teljesen közzétéve.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

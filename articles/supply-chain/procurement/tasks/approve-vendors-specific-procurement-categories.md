@@ -44,3 +44,6 @@ Ez a témakör azt mutatja be, hogyan lehet jóváhagyni a Dynamics 365 Supply C
 13. Válassza a **Nem** lehetőséget a **Szállítók öröklése szülőkategóriától:** mezőben.
 14. Válassza az **Igen** lehetőséget a **Szállítók öröklése szülőkategóriától:** mezőben.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -76,3 +76,6 @@ Ez a témakör azt mutatja be, hogyan lehet letölteni az [Elektronikus jelenté
 [Elektronikus jelentéskészítés (ER) áttekintése](general-electronic-reporting.md)
 
 [ER-konfigurációk letöltése a konfigurációs szolgáltatás globális tárából](er-download-configurations-global-repo.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

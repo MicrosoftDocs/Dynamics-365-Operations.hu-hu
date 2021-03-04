@@ -63,3 +63,6 @@ Az MPOS vagy a Felhőalapú POS grafikus felületét a kasszaelrendezés vezérl
 ## <a name="additional-resources"></a>További erőforrások
 
 [A Retail Modern POS (MPOS) konfigurálása, telepítése és aktiválása](retail-modern-pos-device-activation.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

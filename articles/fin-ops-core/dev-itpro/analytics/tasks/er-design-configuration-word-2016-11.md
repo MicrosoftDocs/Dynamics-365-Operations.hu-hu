@@ -99,3 +99,6 @@ A Word alkalmazásban nyissa meg ezt a dokumentumot, majd tegye a következőket
 16. Kattintson az **OK** gombra.
 17. Kattintson az **OK** gombra. Elemezze a létrehozott kimenetet. Ne feledje, hogy a létrehozott kimenet Word-formátumban jelenik meg, és a feldolgozott kifizetések adatait tartalmazza.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

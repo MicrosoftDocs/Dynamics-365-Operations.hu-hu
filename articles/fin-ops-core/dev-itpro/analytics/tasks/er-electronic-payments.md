@@ -81,3 +81,6 @@ Ahhoz, hogy végrehajthassa ezeket a lépéseket, hajtsa végre a „Konfigurác
 25. Kattintson az OK gombra.
     * Elemezze a létrehozott kifizetési fájlt az XML-formátumban. Hasonlítsa össze a tervezett dokumentumelrendezéssel és a meghatározott fizetési tranzakció attribútumokkal.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -42,3 +42,6 @@ A Microsoft Dynamics 365 Human Resources rendszerben a várakozási napokkal hoz
    | **Nap** | A hónap azon napja, amelyhez a rendszernek be kell állítania a várakozási időszak dátumát. |
    
 4. Válassza a **Mentés** lehetőséget.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

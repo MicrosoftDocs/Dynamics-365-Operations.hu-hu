@@ -61,3 +61,6 @@ Ez az eljárás bemutatja, hogyan lehet manuálisan karbantartani a pályázóva
 6. Kattintson a Mentés gombra.
     * Az alkalmazás elmentése után dokumentumokat adhat hozzá, beleértve a pályázó tapasztalatát, díjait és motivációs levelét.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

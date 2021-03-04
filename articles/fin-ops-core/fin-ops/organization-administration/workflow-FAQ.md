@@ -59,3 +59,6 @@ A **Munkafolyamat-elemek száma kötegenként** értéke a **Munkafolyamat param
 
 ## <a name="what-is-the-workflow-enhanced-error-feature"></a>Mi a munkafolyamat kibővített hiba funkció?
 A 10.0.13 verzió munkafolyamat kibővített hiba szolgáltatása hibakódokat ad hozzá a különböző munkafolyamat-hibák megkülönböztetéséhez. A jelentett hibaüzenetek többnyire hasonlóak kisebb eltérésekkel az egyértelműség kedvéért.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

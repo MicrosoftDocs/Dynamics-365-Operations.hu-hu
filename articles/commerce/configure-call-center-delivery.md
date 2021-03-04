@@ -95,3 +95,6 @@ Minden konfigurált szállítási módhoz opcionálisan hozzákapcsolhat egy sü
 Például azokat a rendeléseket, amelyek következő napon kerülnek kiszállításra légi úton, fel kell venni a raktárból minden nap 13:00 óráig. Ebben az esetben létre lehet hozni egy sürgősségi kódot, és ezt a kódot hozzá lehet kapcsolni a rendszerben beállított minden egyes következő napi szállítási módhoz. Amikor a raktár létrehozza a kitárolási hullámot, a **Sürgős** mezőben szereplő megfelelő sürgősségi kód szűrőként használható, így csak azoknak a rendeléseknek a kitárolása történik meg, amelyeknek a szállítási módja hozzá van kapcsolva az adott kódhoz.
 
 Továbbá a hívásközponti rendelés bevitelekor a sürgősségi kód manuális alkalmazható az értékesítési rendelés fejlécére vagy egy értékesítésirendelés-sorra. A kód rendezési és jelentési célokra használható. Bizonyos esetekben a megrendeléseket gondosan kell kezelni a vevőszolgálati hibák miatt. Ebben az esetben alkalmazhatunk egy meghatározott sürgősségi kódot a rendelés fejlécére vagy soraira, hogy segítsük a rendelés azonosítását és priorizálását a teljesítési folyamat során.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

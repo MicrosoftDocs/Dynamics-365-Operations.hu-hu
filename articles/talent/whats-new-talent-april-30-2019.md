@@ -101,3 +101,6 @@ Az alkalmazotti szabadidő követésének képessége és a szabadidő kiszámí
 ### <a name="email-support-for-alerts"></a>E-mailek támogatása figyelmeztetésekhez
 
 A Finance and Operations 26-ös platformfrissítésben a felhasználók létrehozhatnak figyelmeztetési szabályokat, amely automatikusan értesítő e-maileket küldenek, a kapcsolattartóknak, ha egy esemény kezdeményezi az értesítést.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

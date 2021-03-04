@@ -50,3 +50,6 @@ A szolgáltatás e-mailes értesítéseket küld előre megadott e-mail-sablonok
 A következő kép a figyelmeztetési értesítés szerkezetét mutatja e-mail fogadásakor.
 
 [![Sablonalapú figyelmeztetési értesítések rekord létrehozásához, mező módosításához és sablon törléséhez](./media/Alert-email-templates.png)](./media/Alert-email-templates.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

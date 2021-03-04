@@ -95,3 +95,6 @@ Ha engedélyezni szeretné az ilyen érvényesítést előfeltételként a köve
 [Bejövő készletműveletek a pénztárban](https://docs.microsoft.com/dynamics365/commerce/pos-inbound-inventory-operation)
 
 [Kimenő készletműveletek a pénztárban](https://docs.microsoft.com/dynamics365/commerce/pos-outbound-inventory-operation)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -72,3 +72,6 @@ Ez a témakör végigvezeti a beszerzési szerződés létrehozásán. Ez által
 5. Válassza a **Beszerzésiszerződés-visszaigazolások** elemet. Az **Előnézet/nyomtatás** beállítás lehetővé teszi a beszerzési szerződéshez dokumentum létrehozását, amelyet kinyomtathat vagy elküldhet a szállítónak. Ha később frissítési a szerződést, és ismételten megerősíti, mindkét verzió megjelenik itt.  
 6. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

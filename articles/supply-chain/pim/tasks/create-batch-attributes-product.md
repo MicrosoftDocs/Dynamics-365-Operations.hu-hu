@@ -55,3 +55,6 @@ Ez az eljárás bemutatja, hogyan hozható létre kötegattribútum, hogyan rend
 22. Kattintson a Mentés gombra.
 23. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

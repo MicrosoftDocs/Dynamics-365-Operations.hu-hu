@@ -75,3 +75,6 @@ A szervizrendelésen létrehozott szervizfeladat-kapcsolatok az adott szervizren
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -86,3 +86,6 @@ A költségműködés a költségek fix vagy változó osztályozása. Az irány
 15. A Költség-ellenőrzőegység mezőben adjon meg vagy válasszon ki egy értéket.
 16. Kattintson a Mentés gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

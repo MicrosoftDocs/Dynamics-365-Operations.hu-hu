@@ -52,3 +52,6 @@ Beszerzési előzmények feladása előtt meg kell adnia a következő beállít
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

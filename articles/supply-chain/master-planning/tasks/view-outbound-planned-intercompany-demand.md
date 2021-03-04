@@ -43,3 +43,6 @@ Ez az eljárás bemutatja, hogyan tekinthetők meg a vállalatközi szállítók
 8. Bontsa ki a Felfelé irányuló igény részletes adatai részt.
     * Ebben a szakaszban a kereslet jövőbeli teljesítésének részleteit láthatja. Lehet, hogy meg kell várnia, amíg az alaptervezés a beszállítónál lefut, mielőtt további információkat láthatna itt.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

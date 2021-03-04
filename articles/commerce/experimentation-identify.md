@@ -40,3 +40,6 @@ A hipotézis igazolásához egy kísérlet sikerességét vagy sikertelenségét
 
 ## <a name="next-step"></a>Következő lépés
 [Kísérlet beállítása](experimentation-setup.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

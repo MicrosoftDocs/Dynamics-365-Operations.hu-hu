@@ -65,3 +65,6 @@ Ez a lista segít figyelembe venni az elavult és eltávolított szolgáltatáso
 </tr>
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

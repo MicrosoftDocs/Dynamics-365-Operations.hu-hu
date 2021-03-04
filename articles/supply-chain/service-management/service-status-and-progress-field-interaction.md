@@ -95,3 +95,6 @@ Ha egy szervizrendelés összes sor **Feladva** állapotúnak van megjelölve, a
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

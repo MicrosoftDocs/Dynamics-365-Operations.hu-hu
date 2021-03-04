@@ -47,3 +47,6 @@ Automatikus egyeztetéshez meg kell adnia a használni kívánt egyeztetés, sz�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

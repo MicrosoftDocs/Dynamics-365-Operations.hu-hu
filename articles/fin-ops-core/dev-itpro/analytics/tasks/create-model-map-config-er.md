@@ -65,3 +65,6 @@ Ezek a lépések bármely adathalmazzal végrehajthatók. Hajtsa végre az aláb
     * Intrastat mintaleképezés  
 5. Kattintson a Konfiguráció létrehozása lehetőségre.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

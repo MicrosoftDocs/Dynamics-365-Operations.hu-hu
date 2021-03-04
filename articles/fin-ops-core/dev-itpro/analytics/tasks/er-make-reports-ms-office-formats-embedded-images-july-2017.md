@@ -90,3 +90,6 @@ A jelen eljárás lépéseinek lezáráshoz először hajtsa végre az „ER –
  30. AZ Ellenőrző tranzakció létrehozásának engedélyezése az inaktív bankszámláknál: mezőben válassza az Igen lehetőséget.  
  31. Kattintson a Mentés gombra.  
  32. Zárja be a lapot.  
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

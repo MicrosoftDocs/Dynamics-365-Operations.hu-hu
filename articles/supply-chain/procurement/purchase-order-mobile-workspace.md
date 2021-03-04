@@ -113,3 +113,6 @@ Miután megtekintette az Önhöz rendelt beszerzési rendelést, és elolvasta a
 5. Jelölje ki a megfelelő műveletet.
 6. A **Feladat elvégzése** oldalon írjon be egy megjegyzést. Vegye figyelembe, hogy ha bejelöli a **Delegált** műveletet, ki kell választania egy felhasználót, akinek delegálja a feladatot.
 7. Válassza a **Kész** lehetőséget. A munkaterület frissítése után a beszerzési rendelés nem lesz többé a listában. 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

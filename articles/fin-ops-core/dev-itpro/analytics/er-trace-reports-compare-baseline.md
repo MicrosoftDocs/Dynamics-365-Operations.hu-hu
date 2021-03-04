@@ -243,3 +243,6 @@ A program a hozzáadja az alaptervet az **ER-kiindulások tanulási formátuma**
 ## <a name="additional-resources"></a>További erőforrások
 
 - [Az elektronikus jelentéskészítési (ER) keretrendszer konfigurálása](electronic-reporting-er-configure-parameters.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

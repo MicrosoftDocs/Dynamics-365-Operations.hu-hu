@@ -39,3 +39,6 @@ A kompenzációkért és juttatásokért felelős vezető kijelölhet alkalmazot
     * Ha a fix kompenzációs terv lépés típusú terv, válassza ki az alkalmazott fizetési díját tartalmazó megfelelő lépést. Ha a fix kompenzációs terv fokozatos vagy széles sávú konstrukciójú terv, írja be az alkalmazott fizetési díját. A fizetési díj a terv tűrési beállításai, valamint a feladat kompenzációs szintjének minimum és maximum referenciapontjai szerint kerül ellenőrzésre.  
 8. Kattintson az OK gombra.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

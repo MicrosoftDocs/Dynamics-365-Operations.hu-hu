@@ -166,3 +166,6 @@ Az alábbi ábra a **Munkarendelés létrehozása** párbeszédpanel egy példá
 >[!NOTE]
 >Ha a munkarendeléseket automatikusan szeretné létrehozni, ütemezheti a karbantartási terv feladatait, vagy beállíthatja az „Automatikus létrehozású” [karbantartási terveket](../preventive-and-reactive-maintenance/maintenance-plans.md) vagy [karbantartási köröket](../preventive-and-reactive-maintenance/maintenance-rounds.md) az eszközhöz. A karbantartási kérések, amelyek az **Összes karbantartási ütemezés** listaoldalról vannak létrehozva a kiválasztott karbantartási feladattípusokkal hozza létre a program.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

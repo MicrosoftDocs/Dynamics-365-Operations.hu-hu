@@ -95,3 +95,6 @@ További tudnivalókért lásd: [Eszközök vételezése beszerzésen keresztül
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -74,3 +74,6 @@ A [Microsoft Dynamics 365 blogon](https://community.dynamics.com/b/msftdynamicsb
 
  
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

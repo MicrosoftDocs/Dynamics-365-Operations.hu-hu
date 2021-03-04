@@ -203,3 +203,6 @@ A(z) Dynamics 365 Commerce e-mailjeinek konfigurálásával kapcsolatos további
 [E-mail nyugták beállítása](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-email-receipts)
 
 [E-mailes nyugták küldése a Modern POS szolgáltatásból ](email-receipts.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

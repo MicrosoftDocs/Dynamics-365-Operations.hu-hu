@@ -82,3 +82,6 @@ A termeléstervező létrehozhat egy kiinduló előrejelzést az idősorozat sze
 5. Kattintson az Előrejelzési sor részletei lehetőségre.
     * Ezen a lapon láthatja a pontossági értékeket, igényekkel kapcsolatos előzményeket és előrejelzéseket. Az előrejelzéseket is módosíthatja.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

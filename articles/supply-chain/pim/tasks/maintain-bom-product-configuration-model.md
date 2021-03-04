@@ -58,3 +58,6 @@ Ezen eljárás futtatásához szükség van egy már létező termékkonfigurác
     * Győződjön meg róla, hogy aktív-e valamelyik termékdimenzió és ezért szükséges beállítani egy értéket vagy hozzárendelni egy attribútumot.  
 9. Kattintson az OK gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

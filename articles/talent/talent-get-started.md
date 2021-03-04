@@ -66,3 +66,6 @@ A [Dynamics 365 Talent](https://community.dynamics.com/enterprise/b/dynamics365f
 ### <a name="videos"></a>Videók
 Tekintse meg az útmutató-videókat, amelyek a [Microsoft Dynamics 365 YouTube csatornáján](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ) láthatók.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

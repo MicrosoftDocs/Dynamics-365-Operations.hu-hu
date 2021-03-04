@@ -82,3 +82,6 @@ Az Utalvány funkció több különálló funkciót tartalmaz. A Commerce Headqu
 - **A HQ részben frissül, de a Commerce Scale Unit és a pénztár nem.** Egy HQ-frissítés során az utalvány- és engedménycsoportok lapjai frissülnek, és a kereskedelmi ármotor is frissül. Ha a kettő közül csak egy összetevő frissül, a Commerce alkalmazás egyes lapjai nem egyeznek meg az árszámítási adatokkal. Emiatt nem várt engedmények vagy a hibák fordulhatnk elő az engedményszámítások során.
 - **A HQ frissül, de a Commerce Scale Unit és a pénztár nem (N-1).** Mivel nem minden áruház frissíthető ugyanakkor, javasoljuk, hogy az áruházak frissítése előtt a HQ-t frissítse. Az N-1 forgatókönyvben az utalványokhoz kapcsolódó új funkció nem érhető el a még nem frissített üzletek esetében. Például az utalványfunkció „kizárás” sorokat vezet be. Ha kizárandó sorokat használ egy engedményen, ezeket a rendszer nem alkalmazza arra az áruházra, amelyen a korábbi verzió fut.
 - **A HQ nem frissül, de a Commerce Scale Unit és a pénztár igen (N+1).** Mivel a Commerce Scale Unit frissített ármotorja az árkalkulációk során kezelheti az örökölt engedménykódokat, a frissítésnek nem kellene funkcionális hatása legyen ebben a forgatókönyvben.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

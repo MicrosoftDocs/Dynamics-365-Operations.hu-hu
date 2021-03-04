@@ -137,3 +137,6 @@ Most, ha a csatorna alap URL-címét használja, és felkeresi az adott webhelye
 [Állapotok és életciklus-dokumentálás](document-states-overview.md)
 
 [A közzétételi csoportokkal végzett munka](publish-groups.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

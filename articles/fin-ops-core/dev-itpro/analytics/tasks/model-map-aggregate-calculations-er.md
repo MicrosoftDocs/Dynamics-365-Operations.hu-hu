@@ -116,3 +116,6 @@ Ez az eljárás a Rendszergazda vagy az Elektronikus jelentések fejlesztője sz
 68. Kattintson a Mentés gombra.
     * Vegye figyelembe, hogy a Végrehajtás helye mező azt mutatja, hogy a csoportosításra a memória futásidőben kerül sor annak ellenére, hogy nincsenek definiálva aggregációk, és a Tábla rekordjai típus az Intrastat tábla megfelelő értékeire vonatkozik. Ennek oka az, hogy az adatforrás tartalmaz néhány olyan számított mezőt, amelyeket még nem lehet átszámítani az SQL-adatbázis szintjére.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

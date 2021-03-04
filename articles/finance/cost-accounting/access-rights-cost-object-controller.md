@@ -106,3 +106,6 @@ További erőforrások
 - [Költségellenőrzési munkaterület](cost-control-workspace.md)
 - [Dimenzióhierarchia](dimension-hierarchy.md)
 - [Biztonság beállítása a Költségkönyvelés tartalmi csomagban](../../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

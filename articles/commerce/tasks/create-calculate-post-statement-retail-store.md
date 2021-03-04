@@ -48,3 +48,6 @@ Ez az témakör leírja egy üzlet kimutatása létrehozásának, kiszámítás�
 12. A kezdőlapon válassza ki az **Üzlet pénzügyei** lehetőséget.
 13. Kattintson a **Feladott kimutatások** fülre.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

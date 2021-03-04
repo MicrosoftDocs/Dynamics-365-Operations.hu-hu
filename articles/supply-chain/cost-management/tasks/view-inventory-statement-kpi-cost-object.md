@@ -39,3 +39,6 @@ Ez az eljárás az USMF bemutatócéget használja. Ezt az eljárást a költsé
 7. Adjon meg egy dátumot a Kezdő dátum mezőben.
 8. Adja meg a dátumot a „Záró dátum” mezőben.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

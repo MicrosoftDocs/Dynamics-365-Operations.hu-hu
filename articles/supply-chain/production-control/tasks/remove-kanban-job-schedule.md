@@ -46,3 +46,6 @@ Ez az eljárás a tervezett kanbanfeldolgozási feladatot ütemezésből való e
 4. Kattintson az OK gombra.
     * Az aktuális feladat állapota így „Tervezett” helyett „Nem tervezett” állapotúra vált, és eltűnik a feldolgozási tábláról.   
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

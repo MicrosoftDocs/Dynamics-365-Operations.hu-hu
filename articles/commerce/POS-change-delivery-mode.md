@@ -47,3 +47,6 @@ Miután kiválasztotta az új szállítási módot, megjelenik a tranzakció lap
 [Hívásközponti rendelések létrehozása](tasks/create-call-center-orders.md)
 
 [Tranzakciós e-mailek testreszabása szállítási mód szerint](customize-email-delivery-mode.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

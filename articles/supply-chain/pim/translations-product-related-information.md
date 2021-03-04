@@ -128,3 +128,6 @@ A termékkel kapcsolatos információk fordításai bármikor módosíthatók. T
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

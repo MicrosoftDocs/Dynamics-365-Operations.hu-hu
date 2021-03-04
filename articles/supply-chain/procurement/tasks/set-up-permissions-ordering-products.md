@@ -45,3 +45,6 @@ Ez a témakör bemutatja, hogyan adhat engedélyt dolgozóknak más dolgozók ne
 2. Használja a Gyors Szűrést, hogy megtalálja azt a dolgozót, akit most adott hozzá kérelmezőként.
 3. Válassza ki a kérelmezőt. A Készítő lista azokat az embereket mutatja, akik engedéllyel rendelkeznek a bal oldali ablakban kiválasztott kérelmező nevében történő cikk rendeléshez.  További készítőknek itt is hozzáadhat. Ez a nézet lehetővé teszi a kérelmező engedély igénylés kiosztására, hogy igénylést hozhasson létre olyan jogi személyek és üzemi egységek nevében, amelyek nem az illető elsődleges jogi személye vagy üzemi egysége.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

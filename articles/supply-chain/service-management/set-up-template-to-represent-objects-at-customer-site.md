@@ -55,3 +55,6 @@ Az alábbi eljárással létrehozhat egy sablont, amely objektumokat képvisel e
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

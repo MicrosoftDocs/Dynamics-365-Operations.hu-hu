@@ -83,3 +83,6 @@ Egyéni állapotfelmérő ellenőrzések is létrehozhatók olyan eszközök tes
 ## <a name="related-articles"></a>Kapcsolódó cikkek
 
 [A Modern POS (MPOS) eseményindítói és nyomtatása](dev-itpro/pos-trigger-printing.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

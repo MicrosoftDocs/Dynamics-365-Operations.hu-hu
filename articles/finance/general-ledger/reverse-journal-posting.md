@@ -70,3 +70,6 @@ Ha a bizonylatsorok száma 100 vagy kevesebb, akkor a sztornírozási folyamat a
 
 A tranzakciókat csak akkor lehet sztornírozni, ha megfelelnek a sztornírozáshoz szükséges üzleti szabályoknak. A szállítói kifizetéseket nem lehet sztornírozni az ebben az témakörben leírt képességgel. A szállítói kifizetéseket a [Szállítói kifizetés sztornózása](https://docs.microsoft.com/dynamics365/finance/accounts-payable/reverse-vendor-payment) leírt lépésekkel lehet sztornírozni.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

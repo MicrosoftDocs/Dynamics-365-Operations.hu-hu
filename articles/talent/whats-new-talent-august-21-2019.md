@@ -70,3 +70,6 @@ Egy új beállítással a vezetők mind a közvetlen beosztottak, mind a közvet
 #### <a name="platform-update-29-for-finance-and-operations"></a>A Finance and Operations 29-es platformfrissítése
 
 További információ a Finance and Operations 29-es platformfrissítéséről (Platform update 29): [Előzetes funkciók a Dynamics 365 Finance and Operations  platform 29-es frissítésében (2019. október)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-29).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

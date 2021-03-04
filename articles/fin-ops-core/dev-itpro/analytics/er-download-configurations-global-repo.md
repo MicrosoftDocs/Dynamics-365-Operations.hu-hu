@@ -90,3 +90,6 @@ Ez a témakör azt mutatja be, hogyan lehet letölteni az [Elektronikus jelenté
 ## <a name="additional-resources"></a>További erőforrások
 
 [Elektronikus jelentéskészítés (ER) áttekintése](general-electronic-reporting.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

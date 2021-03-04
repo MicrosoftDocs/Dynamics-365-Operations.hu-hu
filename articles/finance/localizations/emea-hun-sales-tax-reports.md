@@ -214,3 +214,6 @@ A **Tételes áfakimutatás** jelentés a következő adatokat tartalmazza:
 
 Ebben a táblában a 102-es sor tartalmazza az értékesítési rendelést, a 103-as sor az értékesítési rendelés jóváírását, a 105-ös sor pedig két szállítói számlát.
 A többi szakasz az egyes partnerekre vonatkozóan is tartalmazza ugyanazokat az információkat, valamint az egyes cikkek számláinak listáját.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

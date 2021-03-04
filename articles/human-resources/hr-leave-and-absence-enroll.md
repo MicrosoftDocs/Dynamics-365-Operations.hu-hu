@@ -60,3 +60,5 @@ Miután létrehozta a szabadság- és a távolléti tervet a Dynamics 365 Human 
 
 - [Szabadság és távollét áttekintése](hr-leave-and-absence-overview.md)
 - [Szabadság- és távolléti terv létrehozása](hr-leave-and-absence-plans.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

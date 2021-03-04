@@ -64,3 +64,6 @@ Az oldalválasztó modul az oldalválasztó helyen adható hozzá a [Fejlécmodu
 [Útkövetési modul](add-breadcrumb.md)
 
 [Navigációs menü modul](nav-menu-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

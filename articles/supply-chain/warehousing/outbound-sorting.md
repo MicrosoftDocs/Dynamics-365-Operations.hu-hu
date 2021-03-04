@@ -667,3 +667,6 @@ El kell végeznie a rendezett készlet kitárolási munkafolyamatát. Amikor ez 
     A munka befejeződött.
 
 Ekkortól minden egyéb raktári folyamat érvényes.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

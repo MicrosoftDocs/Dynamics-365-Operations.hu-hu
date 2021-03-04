@@ -316,3 +316,6 @@ Jelenleg mindkét munkaazonosítónak ugyanaz a cél azonosítótáblája. A kö
 A következő ábra bemutatja, hogy hogyan jelenhet meg a teljesített áttárolási munka a Microsoft Dynamics 365 Supply Chain Management rendszerben.
 
 ![Áttárolási munka befejezve](media/PlannedCrossDockingWork.png "Áttárolási munka befejezve")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

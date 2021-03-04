@@ -56,3 +56,6 @@ A GW raktárhoz és az AAA adaghoz a mozgóátlagon alapuló önköltségi ár 1
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

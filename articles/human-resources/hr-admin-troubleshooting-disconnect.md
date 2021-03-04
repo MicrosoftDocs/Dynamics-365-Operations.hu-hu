@@ -52,3 +52,6 @@ A felhasználók kapcsolata a Microsoft Dynamics 365 Human Resources megoldássa
 Győződjön meg arról, hogy egyszerre az adott típusú böngészőben csak egy környezetet nyisson meg. A felhasználók több munkamenetet is megnyithatnak ugyanabban a környezetben (azaz egy böngészőben több lapot).
 
 A felhasználóknak, akik egyszerre két környezet között szeretnének mozogni, minden egyes környezetet különböző típusú böngészőben kell megnyitniuk. (Például A felhasználó megnyithatja az 1. környezetet Chrome-ban, és a 2. környezetet Microsoft Edge-ben.)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

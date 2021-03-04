@@ -529,3 +529,6 @@ A dimenzióérték-készlet dimenzióértékeket elnevezett csoportja. Egy dimen
 ## <a name="additional-resources"></a>További erőforrások
 
 [Pénzügyi jelentéskészítés](financial-reporting-intro.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

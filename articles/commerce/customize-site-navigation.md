@@ -110,3 +110,6 @@ A navigációs menü egyéni navigációs beállításainak hozzáadásához kö
 [Weblap URL-címének létrehozása](create-page-url.md)
 
 [A közzétételi csoportokkal végzett munka](publish-groups.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

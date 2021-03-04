@@ -55,3 +55,6 @@ A `LOWER ("Sample")` a **"sample"** értéket adja vissza.
 ## <a name="additional-resources"></a>További erőforrások
 
 [Szöveg függvények](er-functions-category-text.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

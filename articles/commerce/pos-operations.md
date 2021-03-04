@@ -209,3 +209,6 @@ A felfüggesztett tranzakciók ‡ a POS offline állapotban, ha csak az aktuál
 A felfüggesztett tranzakciók ‡ a POS offline állapotban a jelenlegi offline adatbázisban, ha csak az aktuális jegyzék offline adatbázis is hívható.
 
 \*\* A felfüggesztett tranzakciók ‡ a POS offline állapotban a jelenlegi offline adatbázisban, ha csak az aktuális jegyzék offline adatbázis látható a naplóban.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

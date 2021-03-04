@@ -59,3 +59,6 @@ A `TABLENAME2ID ("Intrastat")` az **1510** értéket adja vissza.
 ## <a name="additional-resources"></a>További erőforrások
 
 [Egyéb (üzleti területre jellemző) függvények](er-functions-category-other.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

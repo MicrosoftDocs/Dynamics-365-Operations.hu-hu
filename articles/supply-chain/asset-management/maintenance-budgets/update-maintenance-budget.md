@@ -75,3 +75,6 @@ A **Karbantartási költségvetési sorok** lapon az új költségvetési sort m
 
 - Ha tudja, hogy bizonyos eszközök felújítása jelenleg a tervezési fázisban van, de a kapcsolódó feladatok még nem lettek létrehozva az Eszközkezelés modulban. Azonban azt szeretné, hogy ezen feladatok költségvetési költségei szerepeljenek a karbantartási költségvetésben.
 - Új eszközöket vagy eszköztípusokat hoztak létre, mióta létrehozta a karbantartási költségvetést, de ezekhez az eszközökhöz vagy eszköztípusokhoz még nem állították be a karbatartási terveket. Azonban azt szeretné, hogy ezen eszköztípusok költségvetési költségei szerepeljenek a karbantartási költségvetésben.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -69,3 +69,6 @@ A `MID ("Sample", 2, 3)` az **„amp”** értéket adja vissza.
 ## <a name="additional-resources"></a>További erőforrások
 
 [Szöveg függvények](er-functions-category-text.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

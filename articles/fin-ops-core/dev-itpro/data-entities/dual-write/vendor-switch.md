@@ -78,3 +78,6 @@ A munkafolyamat-feldolgozási sablonokkal új munkafolyamat-feldolgozások létr
 4. Hozzon létre munkafolyamat-feldolgozást a **Névjegy** entitáshoz a **Személy típusú Szállítók frissítése a Szállítók táblában** munkafolyamat-feldolgozási sablonban, és kattintson az OK gombra.
 5. A munkafolyamatokat igény szerint valós idejű vagy háttérben futó munkafolyamatként állíthatja be. Ha egy munkafolyamatot háttér-munkafolyamatként szeretne beállítani, válassza az **Átalakítás háttérben futó munkafolyamattá** lehetőséget.
 6. Aktiválja a **Névjegy** és a **Szállító** táblákban létrehozott munkafolyamatokat, hogy a **Névjegy** entitást használja a **Személy** típusú szállítókhoz.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

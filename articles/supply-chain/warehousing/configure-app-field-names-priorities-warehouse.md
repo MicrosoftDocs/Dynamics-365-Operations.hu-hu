@@ -144,3 +144,6 @@ A fennmaradó metaadatok, például a Hely nem fog megjelenni a feladatlapon, de
 --------
 
 [A raktáralkalmazás telepítésének és konfigurálásának áttekintése](install-configure-warehousing-app.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

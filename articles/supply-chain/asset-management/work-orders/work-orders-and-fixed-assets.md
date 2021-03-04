@@ -65,3 +65,6 @@ A következő eljárás az eszközök, munkarendelések, munkarendelés-feladato
 
 7. A tárgyi eszközhöz társított projektek áttekintésének megtekintéséhez válassza a **Tárgyi eszközök** > **Tárgyi eszközök** > **Tárgyi eszközök** elemet, majd a **Tárgyi eszköz száma** mezőben válassza ki a tárgyi eszköz hivatkozását a megnyitásához a részletek nézetben. Bontsa ki a lap jobb oldalán a **Kapcsolódó információk** ablaktáblát, és válassza ki a **Társított projektek** gyorslapot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

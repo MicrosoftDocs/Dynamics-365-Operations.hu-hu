@@ -223,3 +223,6 @@ Amikor ezután megkezdődik a szinkronizálás, a Finance and Operations szolgá
 ### <a name="migration-of-product-data-from-other-dynamics-365-apps-to-finance-and-operations"></a>A termékadatok áttelepítése más Dynamics 365-alkalmazásokból a Finance and Operations szolgáltatásba
 
 Ha más Dynamics 365-alkalmazások olyan termékekkel rendelkeznek, amelyek nem szerepelnek a Finance and Operations modulban, akkor a rendszergazda először használhatja az **EcoResReleasedProductCreationV2Entity** entitást az ilyen termékek Finance and Operations modulba történő importálásához. Ezután a fent ismertetett módon egyeztetheti a Finance and Operations modulból és a többi Dynamics 365-alkalmazásból származó termékadatokat. 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

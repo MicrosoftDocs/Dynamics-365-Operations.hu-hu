@@ -78,3 +78,6 @@ A nyitvatartási idő kinyomtatott pénztári nyugtákon való feltüntetéséhe
 A pénztári nyugtákon ettől kezdve megjelenik a nyitvatartási idő. Ha a sablonban egy vagy több ünnepnap is meg van adva, akkor azok is megjelennek a nyugtán.
 
 ![Példanyugta](../dev-itpro/media/Storehours3.png "Példanyugta")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

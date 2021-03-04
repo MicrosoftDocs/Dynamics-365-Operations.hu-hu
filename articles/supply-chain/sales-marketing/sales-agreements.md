@@ -113,3 +113,6 @@ Pénzügyi dimenziókat másolhat a dokumentum fejlécébe vagy az értékesít�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

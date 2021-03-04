@@ -74,3 +74,6 @@ Ez az eljárás a rögzített gyártású kanbanszabály létrehozására koncen
     * Ez 5 kanbant hoz létre.  
     * Vegye figyelembe, hogy ehhez a gyártási kanbanszabályhoz 5 kanban, egyenként 10 került létrehozásra. Ez az eljárás utolsó lépése.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

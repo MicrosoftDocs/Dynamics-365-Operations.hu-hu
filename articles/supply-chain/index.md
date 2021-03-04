@@ -106,3 +106,6 @@ A [Dynamics AX Manufacturing kutatás-fejlesztési csapatának blogjában](https
 ## <a name="elearning-courses"></a>eLearning-tanfolyamok
 
 Az online tanfolyamokkal és tréningekkel kapcsolatban tekintse meg a következőt: [Dynamics 365 Supply Chain Management a Microsoft Learn szolgáltatásban](https://docs.microsoft.com/learn/browse/?products=dynamics-scm&resource_type=learning%20path).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

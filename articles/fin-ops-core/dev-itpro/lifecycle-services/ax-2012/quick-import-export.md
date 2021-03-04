@@ -40,3 +40,6 @@ Elérhetővé tettük a Gyors importálás/exportálás szolgáltatást, amely a
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

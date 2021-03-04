@@ -98,3 +98,6 @@ A figyelmeztető üzenetek közötti eltérések alapján azonosíthat több AJ 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

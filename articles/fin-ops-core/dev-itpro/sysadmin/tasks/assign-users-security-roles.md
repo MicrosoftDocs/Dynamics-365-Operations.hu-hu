@@ -57,3 +57,6 @@ A biztonsági szerepkörökhöz manuálisan hozzárendelt felhasználókat a ren
 2. A fán válasszon ki egy szerepkört, és a **Szerepkörhöz rendelt felhasználók** menüben válassza ki a **Felhasználók manuális hozzárendelését/kizárását**.
 4. A **Felhasználók szerepkörhöz rendelése vagy kizárása onnan** helyen azok a felhasználók, akik nincsenek hozzárendelve a szerepkörhöz **Hozzárendelési mód** értéke **Nincs**. Jelöljön ki egy vagy több felhasználót, akit társítani kell a szerepkörhöz.
 5. A **Műveleti ablaktáblán** válassza a **Hozzárendelés szerepkörhöz** lehetőséget. A **Hozzárendelési módot** a program **Manuális** értékre frissíti, és a felhasználókhoz egy új szerepkör van hozzárendelve.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

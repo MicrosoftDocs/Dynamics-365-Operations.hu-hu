@@ -78,3 +78,6 @@ Ha egy meglévő laphoz szeretne másik elrendezést kiválasztani, hajtsa végr
 
 [Oldaltartalom hozzáférhetőségének ellenőrzése](verify-accessibility.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

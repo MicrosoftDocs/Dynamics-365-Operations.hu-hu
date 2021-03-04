@@ -47,3 +47,6 @@ A legyártott cikk amortizált állandó költségeinek számított mennyiségé
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

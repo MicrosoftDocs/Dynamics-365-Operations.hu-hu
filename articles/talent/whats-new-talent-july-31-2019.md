@@ -72,3 +72,6 @@ További információ a módosítások közzétételéről: [A Talent létesít�
 ### <a name="view-extended-information-for-performance-in-manager-self-service"></a>Részletes teljesítményadatok megtekintése az önkiszolgáló kezelői rendszerben
 
 Egy új beállítással a vezetők mind a közvetlen beosztottak, mind a közvetett beosztottak teljesítményét megtekinthetik. Jelenleg a közvetlen felettesek hozzárendelhetnek teljesítménycélokat és frissíthetik őket, illetve olyan új értékeléseket adhatnak ki. Ezenkívül a közvetlen felettesek és alkalmazottaik karbantarthatják és frissíthetik a teljesítménymutatókat, így megbizonyosodhatnak róla, hogy a teljesítmény ellenőrzési folyamata gördülékenyen megy majd. A módosítás végrehajtásakor a vezetők a közvetlen beosztottakon kívül a bővített jelentések teljesítménnyel kapcsolatos adatait is megtekinthetik és karbantartják.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

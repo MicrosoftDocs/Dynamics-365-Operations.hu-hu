@@ -53,3 +53,6 @@ Ezzel a módosítással a **Próbaidő** és a **Naptár** mezők hozzá lettek 
 
 ### <a name="platform-update-23-for-finance-and-operations"></a>A Finance and Operations 23-es platformfrissítése
 Kisebb hibajavítások a Finance and Operations 23-as platformfrissítés részeként. További tudnivalókért lásd: [Újdonságok és változások a Dynamics 365 Finance and Operations 23-as platformfrissítésében (2019. január)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-23). 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

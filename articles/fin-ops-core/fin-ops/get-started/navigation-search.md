@@ -62,3 +62,6 @@ A keresési eredmények lista 10 cikkre van korlátozva. Ha az eredmények köz�
 ## <a name="development"></a>Fejlesztés
 
 Fejlesztői szempontból a navigációs keresés funkcionalitását egyszerű javítani, mivel virtuálisan nincs késleltetés a menüelemek telepítése és a keresési eredményekben való megjelenítése között. Mindaddig, amíg a menüelemek a navigációs ablakhoz vagy az irányítópulthoz vannak kapcsolva, automatikusan kereshetőek lesznek.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

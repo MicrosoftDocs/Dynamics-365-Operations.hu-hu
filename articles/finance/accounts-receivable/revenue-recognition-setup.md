@@ -193,3 +193,6 @@ A bevételmegjelenítés idő- és anyagelszámolású projektből létrehozott 
 
 - **Halasztott számla bevétele** (a **Bevételi számlák** részen) – Adja meg annak a bevételi árnak a fő számláját, amely a halasztott bevételhez (és nem a bevételhez) végez feladást. Ha az értékesítési rendelés sorához tartozik bevételi ütemezés, akkor a program elhalasztja a bevételi árat.
 - **Halasztott költség** (a **Költségszámlák** részen) – Adja meg az eladott áruk beszerzési értékéhez tartozó fő számlát, amely az eladott áruk halasztott beszerzési értékére végez feladást, ha a bevétel is el lett halasztva.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

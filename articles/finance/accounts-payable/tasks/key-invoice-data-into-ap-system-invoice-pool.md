@@ -68,3 +68,6 @@ Ez a témakör azt mutatja be, hogyan lehet számlákat létrehozni a számlajeg
 13. Válassza a **Tranzakciók** lehetőséget.
 14. Válassza ki a létrehozott számlát. A számlajegyzék-elhatárolás sztornírozásra, illetve a megfelelő költségszámlára feladásra került.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

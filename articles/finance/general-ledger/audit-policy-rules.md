@@ -101,3 +101,6 @@ Az egy adott auditirányelvre vonatkozó összes irányelvszabály ugyanazon kö
 [Naplózási házirendek meghatározása a forrásbizonylatok számára](tasks/define-audit-policies-source-documents.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

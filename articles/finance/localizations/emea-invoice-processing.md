@@ -122,3 +122,6 @@ Ez a témakör röviden leír néhány országspecifikus forgatókönyvet, péld
 </tr>
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

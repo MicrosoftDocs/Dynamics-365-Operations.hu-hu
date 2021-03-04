@@ -96,3 +96,6 @@ E-mailek küldése előtt konfigurálnia kell a kimenő levelek szolgáltatásá
 [Csatornák beállításának előfeltételei](channels-prerequisites.md)
 
 [Szervezetek és szervezeti hierarchiák áttekintése](../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/commerce/toc.json)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

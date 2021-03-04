@@ -45,3 +45,6 @@ ms.locfileid: "4683138"
 - [Szállítói kifizetések munkaterület](../../../finance/accounts-payable/Vendor-payments-workspace.md)
 - [Raktári teljesítmény Power BI tartalom](warehouse-power-bi-content.md)
 - [Munkaerő-mutatók Power BI tartalom](workforce-analysis-power-bi-content-pack.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -62,3 +62,6 @@ További tájékoztatás: [A külső szállítókkal történő szállítói egy
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

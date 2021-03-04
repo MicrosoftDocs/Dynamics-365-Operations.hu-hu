@@ -57,3 +57,6 @@ Beállíthatja, hogy a kezdő dinamikus terv az alaptervezés minden futtatása 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

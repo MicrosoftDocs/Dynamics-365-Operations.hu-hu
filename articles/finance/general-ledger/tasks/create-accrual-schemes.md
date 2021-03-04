@@ -41,3 +41,6 @@ Ez a témakör bemutatja, hogyan kell könyvelési sémát létrehozni. Ez a fel
 10. Adjon meg egy számot az **Előfordulások száma időszak szerint** mezőben.
 11. A **Tranzakciók feladása** mezőben válassza ki, hogy mikor szeretné a tranzakciókat feladni, például a **Havi** értéket.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

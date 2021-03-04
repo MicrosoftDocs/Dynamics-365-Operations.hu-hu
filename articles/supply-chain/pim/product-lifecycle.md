@@ -109,3 +109,6 @@ Használja a következő feltételeket a kiadott termékek vagy termékváltozat
 - [Termékéletciklus-állapot hozzárendelése kiadott termékhez](tasks/product-lifecycle-state-released-product.md)
 - [Az elavult termékváltozatok megkeresése, és egy termékéletciklus-állapot hozzárendelése](tasks/obsolete-product-variants.md)
 - [Termékéletciklus-állapot létrehozása a termékek kizárásához az alaptervezésből](tasks/exclude-products-master-planning.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

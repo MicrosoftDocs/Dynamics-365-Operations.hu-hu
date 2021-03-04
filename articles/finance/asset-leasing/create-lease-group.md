@@ -50,3 +50,6 @@ Miután létrehozta a lízingcsoportokat, minden csoporthoz könyveket rendelhet
 1. Nyissa meg az **Eszközlízing \> Beállítás \> Lízingcsoport** lehetőséget.
 2. Jelöljön ki egy lízingcsoportot, majd válassza a **Könyvek** lehetőséget.
 3. Válassza az **Új** lehetőséget, majd a **Könyv típusa** mezőben válassza ki a lízingcsoporthoz hozzárendelni kívánt könyvet. Több könyvet is hozzárendelhet egy lízingcsoporthoz, ha a lízinget különböző módon kell elszámolni.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -300,3 +300,6 @@ További információért az ER-konfigurációszolgáltatókkal kapcsolatban tek
 - [Elektronikus jelentések áttekintése](general-electronic-reporting.md)
 - [Az ER-formátumok végrehajtásának nyomon követése a teljesítménnyel kapcsolatos problémák elhárítása érdekében](trace-execution-er-troubleshoot-perf.md)
 - [ER adatforrások paraméterezett hívásainak támogatása a Számított mezőtípusban](er-calculated-field-type.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

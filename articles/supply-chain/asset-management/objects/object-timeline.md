@@ -49,3 +49,6 @@ Az idővonal minden alkalommal frissül, amikor az oldalt megnyitják. A követk
 - Munkrendelések, beleértve a könyvelt cikket és a jegyzeteket
 - Hibák
 - Állapotfelmérés
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

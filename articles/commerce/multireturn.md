@@ -54,3 +54,6 @@ Ha kijelölte a rendeléseket, megjelenik a rendelésekhez tartozó összes szá
 
 Ha a rendelést teljes egészében visszaküldték, akkor a vevőnek visszatérített adók összege megegyezik az eredetileg felszámított adó összegével.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

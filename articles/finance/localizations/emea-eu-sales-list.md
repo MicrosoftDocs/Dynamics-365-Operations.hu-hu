@@ -160,3 +160,6 @@ Amikor befejezte az adott időszakra kiterjedő jelentési folyamatot (például
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

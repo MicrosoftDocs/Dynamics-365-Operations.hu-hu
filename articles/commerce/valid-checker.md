@@ -78,3 +78,6 @@ Ha ellenőrzési probléma merül fel, a hiba javítása csak a Microsoft ügyf�
 
 > [!NOTE]
 > A jövőbeli kiadásokban olyan további ellenőrzési szabályokat adunk hozzá, amellyel még több eset ellenőrzése válik lehetővé.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -74,3 +74,6 @@ Ez az eljárás bemutatja, hogyan lehet átadási dokumentumokat létrehozni a v
 10. Kattintson a Szállítólevél lehetőségre.
 11. Kattintson az OK gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

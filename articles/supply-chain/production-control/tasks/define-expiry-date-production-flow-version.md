@@ -41,3 +41,6 @@ Egy termelésifolyamat-verzió érvényességének és feldolgozásának befejez
 6. Az Lejárati dátum mezőben adjon meg egy dátumot és időpontot.
     * A lejárati dátumon nem indul el és nem lesz aktiválva új verzió. Emellett már nem lehet létrehozni vagy elindítani feladatokat a termelési folyamathoz. Az elindított feladatok a lejárati dátum után is befejezhetők.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -36,3 +36,6 @@ A szállításkezelés segít zónákra osztani a földrajzi helyeket. A helyek 
 - **Útvonaltervezés optimalizálása** – Meghatározott útvonalak hozzárendelése meghatározott zónákhoz.
 
 A zónák a metaadat-mezőértékek (például ország, irányítószám vagy szállítmányozói szolgáltatás) alapján definiálhatók, amelyek az egyes zónákra érvényesek. A zónák definícióit nem szükséges megadni, ha a szállítási árak nem alkalmaznak zónakoncepciót.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

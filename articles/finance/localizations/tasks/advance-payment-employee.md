@@ -171,3 +171,6 @@ Ez az eljárás bemutatja, hogyan lehet tranzakciókat beállítani és regisztr
 12. Zárja be a lapot.
 13. Kattintson a Tranzakciók elemre.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -37,3 +37,6 @@ Ez az eljárás bemutatja, hogyan lehet hozzáadni képet termékhez; a feladat 
 5. Kattintson az Új lehetőségre.
     * Kattintson a Tallózáslehetőségre. Keresse meg a képet, amelyet használni szeretne, jelölje ki azt, majd zárja be a párbeszédpanelt.    
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

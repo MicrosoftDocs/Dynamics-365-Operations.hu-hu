@@ -54,3 +54,6 @@ Ez az eljárással bemutatja, hogyan működik a juttatásjogosultsági folyamat
 25. Nyissa meg az Állapot oszlopszűrőt.
 26. Rendezés ábécérendben
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -39,3 +39,6 @@ A probléma megoldásához a vevőnek az alábbi lépéseket kell követnie a du
 3. Válassza a **Mentés** lehetőséget.
 
 ![Globális címjegyzék paraméterei oldal](media/GAD-parameters.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

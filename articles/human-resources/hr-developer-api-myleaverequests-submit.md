@@ -108,3 +108,5 @@ A küldési API hívásának részeként a Human Resources elvégzi az üzleti l
 
 - [MyLeaveRequests áttekintése](hr-developer-api-myleaverequests-overview.md)
 - [Hitelesítés](hr-developer-api-authentication.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

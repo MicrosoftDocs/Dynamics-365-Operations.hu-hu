@@ -56,3 +56,6 @@ A Commerce paraméterek általában a gyorsítótárazva vannak. Ennek megfelel�
 
 - [Offline pénztárfunkció (POS)](https://docs.microsoft.com/dynamics365/retail/pos-offline-functionality)
 - [Online és offline pénztár (POS) műveletek](https://docs.microsoft.com/dynamics365/retail/pos-operations)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -54,3 +54,6 @@ A kapcsolódó bizonylat ablak vállalatközi tranzakció főkönyvi naplóból 
 3. A listában jelölje meg a kiválasztott sort.
 4. Kattintson a Bizonylat elemre.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

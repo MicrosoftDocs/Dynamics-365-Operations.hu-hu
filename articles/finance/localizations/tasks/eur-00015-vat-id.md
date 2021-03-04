@@ -61,3 +61,6 @@ Ez az információ minden európai országra/régióra vonatkozik. Ezt a feladat
     * Rendelje hozzá a létrehozott regisztrációs típust egy előre megadott nyilvántartási kategóriához.  
 22. Kattintson a Mentés gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

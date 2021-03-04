@@ -39,3 +39,6 @@ Használhat szolgáltatásisablon-csoportokat a szolgáltatási sablonok rendez�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

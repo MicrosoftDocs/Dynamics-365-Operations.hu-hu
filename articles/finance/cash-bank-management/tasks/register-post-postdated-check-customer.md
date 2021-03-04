@@ -50,3 +50,6 @@ A vevőtől érkezett, jövőben esedékes csekkek részletes adatait rögzíthe
 15. Kattintson a Feladás lehetőségre.
 16. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

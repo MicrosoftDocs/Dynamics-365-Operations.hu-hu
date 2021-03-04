@@ -60,3 +60,5 @@ A **Power Automate – SQL csatlakozás és végrehajtás** sablon letöltéséh
 ## <a name="additional-resources"></a>További erőforrások
 
 [A Microsoft Power Platform](https://docs.microsoft.com/power-platform/admin/admin-documentation)</br>
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -102,3 +102,6 @@ Ha azt szeretné, hogy az egyéni űrlapokon vagy egyéni keresési mezőkben me
 
 :::image type="content" source="media/apply-company-context.png" alt-text="Vállalati környezet alkalmazása":::
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

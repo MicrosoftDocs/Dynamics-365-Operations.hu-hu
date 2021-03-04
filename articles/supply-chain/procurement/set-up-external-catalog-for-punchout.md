@@ -114,3 +114,5 @@ A külső szállítói katalógus nem törölhető, ha egy terméket kért a kü
 
 - [Beszerzési cXML-fejlesztések](purchasing-cxml-enhancements.md)
 - [Külső katalógus használatának engedélyezése a PunchOut e-beszerzés számára](use-external-catalogs-for-punchout.md)
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

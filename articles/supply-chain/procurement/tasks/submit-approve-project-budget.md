@@ -57,3 +57,6 @@ Ez a feladat a USSI adatkészlet segítségével lett létrehozva.
 21. Írjon egy értéket a **Megjegyzés** mezőbe.
 22. Kattintson a **Küldés** elemre.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

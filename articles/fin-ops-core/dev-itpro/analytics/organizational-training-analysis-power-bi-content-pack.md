@@ -57,3 +57,6 @@ A Szervezeti képzés tartalomcsomag jelentéseinek kitöltésére az alkalmazá
 | Képzés\_Beosztás        | Beosztás, cím és teljes munkaidős egyenérték (FTE)                  | Képzés\_CourseAgenda, Képzés\_CourseAttendees |
 | Képzés\_WorkerName      | Keresztnév, vezetéknév és teljes név                             | Képzés\_CourseAttendees |
 | Képzés\_WorkerTitle     | Cím és szolgálati idő dátuma                                         | Képzés\_CourseAttendees |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -50,3 +50,6 @@ A kiadott termékek létrehozásának részeként, ki kell választania alapért
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

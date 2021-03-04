@@ -535,3 +535,6 @@ A következő változatok elvégezhetők az 1. forgatókönyvhöz a 2. forgatók
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

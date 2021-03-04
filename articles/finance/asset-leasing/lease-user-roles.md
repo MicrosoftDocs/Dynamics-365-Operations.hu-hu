@@ -44,3 +44,6 @@ Az alábbi lépésekkel rendelje hozzá a felhasználókat az Eszközlízingben 
 1. Menjen a **Rendszergazda \> Biztonság \> Felhasználók szerepkörökhöz való hozzárendelés**.
 2. Válassza a **Lízing karbantartása**, **Lízingkönyvelő** vagy a **Lízing megtekintése** szerepkört, majd válassza a **Felhasználók manuális hozzárendelése/kizárása** lehetőséget.
 3. Válassza ki a szerepkörhöz hozzárendelni kívánt felhasználót, majd válassza a **Hozzárendelés a szerepkörhöz** lehetőséget.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

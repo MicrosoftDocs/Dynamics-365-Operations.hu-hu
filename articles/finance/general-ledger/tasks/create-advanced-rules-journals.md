@@ -58,3 +58,6 @@ Ez az eljárás bemutatja a naplók speciális szabályainak létrehozását. Id
 4. A fán ellenőrizze „a csoportot, amelynek engedélyezni kívánja a naplónévhez feladást.”.
 5. Kattintson az **OK** gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

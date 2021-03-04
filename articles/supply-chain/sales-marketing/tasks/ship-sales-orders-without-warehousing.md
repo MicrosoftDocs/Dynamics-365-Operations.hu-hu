@@ -56,3 +56,6 @@ Ez a témakör azt ismerteti, hogyan lehet egy értékesítési rendelést friss
 19. A Műveleti ablaktáblán válassza ki a **Kitárolás és csomagolás** elemet.
 20. Válassza ki a **Szállítólevél** lehetőséget. A **Szállítólevél naplója** oldal tartalmazza az összes olyan szállítólevelet, amely az adott megrendeléshez lett létrehozva. Ellenőrizheti a dokumentumok részleteit és kinyomtathatja őket.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

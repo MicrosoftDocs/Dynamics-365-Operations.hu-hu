@@ -53,3 +53,6 @@ Egy adott költségvetési modellre és dimenzió értékekre létrehozhat előz
 19. Kattintson a Módosítás gombra.
     * A frissítés eredményeinek megtekintéséhez kattintson a kék sávon az Üzenetadatok gombra.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

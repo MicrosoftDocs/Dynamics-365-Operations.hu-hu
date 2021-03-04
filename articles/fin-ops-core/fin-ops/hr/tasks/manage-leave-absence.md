@@ -46,3 +46,6 @@ Ez az eljárás végigvezeti az alkalmazotti szabadságrekordok létrehozásán.
     * Például: örökbefogdás miatti szabadság  
 12. Kattintson a Mentés gombra.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -53,3 +53,6 @@ A Rakomány-összeállítási munkaterület rakományjavaslat készítésekor ve
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

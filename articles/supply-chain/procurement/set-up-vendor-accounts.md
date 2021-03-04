@@ -118,3 +118,6 @@ Alapértelmezett számlákat választhat az **Alapértelmezett számla beállít
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

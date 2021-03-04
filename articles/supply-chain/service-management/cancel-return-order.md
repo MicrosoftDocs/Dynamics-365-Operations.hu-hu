@@ -49,3 +49,6 @@ Ha egy tervezett visszaküldés rekordját menteni szeretné, akkor a visszárur
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

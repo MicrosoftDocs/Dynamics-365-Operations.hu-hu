@@ -89,3 +89,6 @@ A Finance and Operations mobilalkalmazás letöltése és telepítése:
 1.  Válassza ki a **Vállalat címtára** munkaterületet a mobilalkalmazásban.
 2.  Írja be az alkalmazott keresztnevét, vezetéknevét, beosztását vagy részlegét a **Keresés** mezőben a keresés elindításához.
 3.  Válasszon egy alkalmazottat. Megjelenik az **Alkalmazott profilja** lap. Az ezen a lapon megjelenő információ az alkalmazott keresztnevét, vezetéknevét, beosztását és a részlegét tartalmazza.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

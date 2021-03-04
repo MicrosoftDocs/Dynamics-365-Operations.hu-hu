@@ -36,3 +36,6 @@ A **Címkeleltár** lapon sorok létrehozásával minden készletcikkre szám fo
 ## <a name="additional-resources"></a>További erőforrások
 
 [Ciklikus leltározás](../warehousing/cycle-counting.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

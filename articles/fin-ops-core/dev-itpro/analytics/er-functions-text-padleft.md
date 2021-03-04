@@ -63,3 +63,6 @@ A `PADLEFT ("1234", 10, "`&nbsp;`")` a következő szöveges karakterláncot adj
 ## <a name="additional-resources"></a>További erőforrások
 
 [Szöveg függvények](er-functions-category-text.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -200,3 +200,6 @@ A promóció különböző teljesítmény-mérőszámainak részletesebb analiti
 
 A promóció különböző teljesítmény-mérőszámainak részletesebb analitikai áttekintése érdekében használja az Elemzés nézetet. Az Elemzés nézetet az **Értékesítés és marketing** \> **Kereskedelmi kedvezmények** \> **Kereskedelmi kedvezményszerződések** lehetőségre kattintva érheti el. A Műveletpanelen kattintson az **Elemzés** elemre. 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

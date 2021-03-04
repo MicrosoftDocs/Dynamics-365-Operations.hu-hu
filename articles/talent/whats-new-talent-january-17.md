@@ -45,3 +45,6 @@ Ezzel a módosítással, a **A Műveletet kérte:** mező alapértelmezett ért�
 ### <a name="ideas-portal-updated"></a>Ötletportál frissítése
 Az alkalmazásban található linkek . amelyek ötletek beküldésére szolgálnak a Talent rendszerbe frissítve lettek az új Ötletportálhoz A régi portálra megadott összes ötlet áttelepítése megtörtént, tehát minden nagyszerű ötlet megmaradt és szavazásra elérhető.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

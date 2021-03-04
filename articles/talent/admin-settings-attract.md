@@ -69,3 +69,6 @@ Megadhat a pályázói tapasztalatokkal kapcsolatos beállításokat is. Példá
 Beállíthat és kikényszeríthet egy lejárati dátumot az ajánlatokhoz. Ha beállítja a **Minden ajánlathoz szükséges lejárati dátum** opciót az **Igen** lehetőségre, az ajánlatok lejárnak a megadott számú óra vagy napok után.
 
 Ajánlat kezelésével kapcsolatos további tudnivalókat lásd: [Ajánlat kezelésének beállítása](./offer-setup.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

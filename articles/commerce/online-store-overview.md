@@ -121,3 +121,6 @@ Ha szeretne többet megtudni a webhelytartalom kezeléséről, tekintse át az a
 [Helyalapú áruházészlelés engedélyezése](enable-store-detection.md)
 
 [Felhasználói bejelentkezéshez használt egyéni lapok beállítása](custom-pages-user-logins.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

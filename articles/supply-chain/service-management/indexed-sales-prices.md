@@ -43,3 +43,6 @@ Ha például az alapár 1000 euró, az index pedig 110, az eladási ár 1100 eur
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

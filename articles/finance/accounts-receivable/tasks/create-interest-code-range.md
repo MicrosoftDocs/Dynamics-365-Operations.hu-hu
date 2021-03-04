@@ -51,3 +51,6 @@ A kamatkódokat be lehet úgy állítani, hogy különböző kamatösszegeket sz
 21. Adja meg a havi kamatszázalékot, amelyet a kamat kiszámítására használ a 7. hónaptól kezdődően. Ebben a példában ez 2,5.
 22. Kattintson a Bezár gombra a beállítás befejezéséhez.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

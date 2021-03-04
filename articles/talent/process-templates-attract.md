@@ -71,3 +71,6 @@ Felvételi folyamatsablon létrehozásához kövesse az alábbi lépéseket:
     - Egy tevékenység eltávolításához bontsa ki azt, majd kattintson a tevékenység fejlécében a szemeteskuka gombra.
 
 8. Válassza a **Mentés** lehetőséget.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

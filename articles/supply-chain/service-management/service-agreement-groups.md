@@ -42,3 +42,6 @@ A **Szolgáltatáskezelési paraméterek** lap **Szolgáltatásiszerződés-csop
 ## <a name="related-topics"></a>Kapcsolódó témakörök
 
 [Szolgáltatásiszerződés-csoportok létrehozása](create-service-agreement-groups.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -110,3 +110,6 @@ Amikor a veszélyes anyagok funkció be van kapcsolva a rendszerben, a **fuvarle
 ## <a name="packing-list-report"></a>Csomagolási lista jelentése
 
 Amikor a veszélyes anyagok funkció be van kapcsolva a rendszerben, a csomagolási listák a cikkek szállítási nyomtatási szövegével kapcsolatos további információkat tartalmazzák. Ez a jelentés a szokásos módon érhető el a **Minden rakomány** oldalon.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

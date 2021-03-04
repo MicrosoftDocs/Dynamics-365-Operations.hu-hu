@@ -148,3 +148,6 @@ A következő beállítási oldalak funkciók szerint vannak csoportosítva.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -106,3 +106,6 @@ A videólejátszó modul új oldalra való felvételéhez és a kötelező tulaj
 [Szövegterület-modul](add-content-rich-block.md)
 
 [Tartalomblokk modul](add-hero-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

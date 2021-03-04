@@ -82,3 +82,6 @@ A térképmodul oldalon lévő konfigurálásával kapcsolatban a következő t�
 [A szervezetéhez tartozó Bing Térképek kezelése](./dev-itpro/manage-bing-maps.md)
 
 [8. verziós Bing Maps webes vezérlő](https://docs.microsoft.com/bingmaps/v8-web-control/)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

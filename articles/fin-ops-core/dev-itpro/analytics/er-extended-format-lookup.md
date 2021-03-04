@@ -91,3 +91,6 @@ Ha a **Funkció kezelése** oldalon engedélyezte **A globális tárházból val
 - [Elektronikus jelentéskészítés (ER) áttekintése](general-electronic-reporting.md)
 - [Elektronikus jelentéstételi (ER) keretrendszer API](er-apis-app73.md)
 - [Elektronikus jelentéstételi (ER) konfiguráció életciklusainak kezelése](general-electronic-reporting-manage-configuration-lifecycle.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -41,3 +41,6 @@ Aktiválnia kell a verziót, mielőtt kanban feladatokat hozna létre és tevék
 5. Kattintson az Aktiválás gombra.
 6. Kattintson az OK gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

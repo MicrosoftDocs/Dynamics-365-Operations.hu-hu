@@ -53,3 +53,6 @@ Ezek csak akkor használhatók, ha az alaptervezési feladat megszakítása a **
 4. A **Kötegelt feladatok** területen válassza ki a befejezendő feladatokat.
 5. Kattintson az **Állapot módosítása**, majd a **Visszavonás** elemre, majd az **OK** gombra.
 6. A **Kötegelt feladatok** gyorslapon kattintson a **Megszakítás** parancsra.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

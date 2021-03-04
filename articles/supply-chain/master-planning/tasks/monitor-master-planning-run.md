@@ -127,3 +127,6 @@ A szín csak a Gantt-diagram legalacsonyabb szintjén jelenik meg. Az **összes 
 1. A rácsban válassza ki azt a sort, amelyben a **Mező** mezője a **Cikkszám** értékre van állítva.
 1. A **Feltétel** mezőben adjon meg egy értéket.
 1. Válassza ki az **OK** lehetőséget.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

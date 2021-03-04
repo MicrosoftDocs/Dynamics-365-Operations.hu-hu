@@ -671,3 +671,6 @@ Az 32.6.7.2-es verzió állapota a **Piszkozat** értékről a **Befejezett** é
 - [ER-konfigurációk letöltése a konfigurációs szolgáltatás globális tárából](er-download-configurations-global-repo.md)
 - [Szabadszöveges számla létrehozása](https://docs.microsoft.com/dynamics365/finance/accounts-receivable/create-free-text-invoice-new)
 - [Egyéni mezők létrehozása és használata](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/user-defined-fields)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

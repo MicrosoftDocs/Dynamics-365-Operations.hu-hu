@@ -83,3 +83,6 @@ A `CASE( DATETIMEFORMAT( NOW(), "MM"), "10", "WINTER", "11", "WINTER", "12", "WI
 ## <a name="additional-resources"></a>További erőforrások
 
 [Logikai függvények](er-functions-category-logical.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

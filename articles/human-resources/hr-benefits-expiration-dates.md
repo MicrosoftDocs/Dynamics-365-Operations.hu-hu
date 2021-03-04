@@ -46,3 +46,6 @@ Ez az eljárás bemutatja, hogyan zárhat le vagy hosszabbíthat meg egy juttat�
 15. Kattintson a Juttatások lehetőségre.
 16. Keresse meg a juttatást és válassza ki a rekordot a listában. Ne feledje a juttatás nyújtásának új záró dátumát.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

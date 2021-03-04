@@ -70,3 +70,6 @@ Meghatározhatja például, ki tervezi a költségvetést, mire vonatkozik a kö
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -109,3 +109,6 @@ A következő táblázat felsorolja azokat a lista-típusokat, amelyek a **Term�
 [Vásárlásmező-modul](add-buy-box.md)
 
 [Termékajánlatok áttekintése](product-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

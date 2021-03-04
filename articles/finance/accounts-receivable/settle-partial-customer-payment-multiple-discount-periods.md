@@ -98,3 +98,6 @@ A számla egyenlege ekkor 0,00. Arnie megtekintheti ezt az információt a **Vev
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

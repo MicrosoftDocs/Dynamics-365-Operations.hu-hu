@@ -71,3 +71,6 @@ April a **Szállítói tranzakciók** oldalon tudja áttekinteni a szállítói 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

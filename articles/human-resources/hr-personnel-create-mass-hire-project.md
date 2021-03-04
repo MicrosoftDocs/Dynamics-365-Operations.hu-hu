@@ -48,3 +48,6 @@ Ez az eljárás végigvezeti a tömeges felvételi projekt beállítási folyama
     * Kiválaszthatja a részleget is az új beosztásokhoz.  
 13. Kattintson az OK gombra.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

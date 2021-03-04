@@ -57,3 +57,6 @@ Ez az eljárás arra irányul, hogy ellenőrizze az igénykövetési fát egy ol
 5. A fán válassza ki a következőt: „Értékesítési sor: 000832\Kanban: 000558\Kiadás: L0001\Kanban: 000559”.
     * A második kanbanhoz tartozó feladat szintén tervezett, mivel az egész igénykövetési fa tervezett. Figyelje meg, hogy a kanbanfeladat állapota megváltozott: Nem tervezett helyett Tervezett lett.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

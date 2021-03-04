@@ -65,3 +65,6 @@ A POS felhasználói nyelv beállítása a **Minden dolgozó** helyről történ
 | **Vállalat** | Alapértelmezett                    | Alapértelmezett                                                       |
 | **Üzlet**   | Felülbírálja a vállalat          | Felülbírálja a vállalat                                             |
 | **Felhasználó**    | Felülbírálás üzlet vagy a vállalat | Soha                                                         |
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

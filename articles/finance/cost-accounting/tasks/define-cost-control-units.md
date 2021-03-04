@@ -41,3 +41,6 @@ Ez az eljárás bemutatja a költség-ellenőrzőegységek meghatározását a k
 10. A Dimenzió mezőben adjon meg vagy válasszon ki egy értéket.
 11. Kattintson a Mentés gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -49,3 +49,6 @@ A `GETCURRENTCOMPANY ()` az **USMF** értéket adja vissza a programban a **Cont
 ## <a name="additional-resources"></a>További erőforrások
 
 [Egyéb (üzleti területre jellemző) függvények](er-functions-category-other.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

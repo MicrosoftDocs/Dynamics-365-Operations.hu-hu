@@ -42,3 +42,6 @@ A számítást a cikkhez rendelt anyagjegyzék-számítási csoporthoz tartozó 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

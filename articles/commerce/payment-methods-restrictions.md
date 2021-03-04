@@ -61,3 +61,6 @@ Ha a **Nyugta nélkül visszatérítések korlátozása** értékre **Igen**, a 
 
 Ha egy tranzakcióhoz nyugtás és nyugata nélküli visszatérítés is tartozik akkor a korlátozási feltételek nem lesznek alkalmazva, mivel a tranzakció visszatérítés munkafolyamat lesz nyugtával. 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

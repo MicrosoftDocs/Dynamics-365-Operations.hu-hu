@@ -207,3 +207,6 @@ Az alábbi ábrákon sablon hozzárendelést például adatok integrátor megjel
 ## <a name="related-topics"></a>Kapcsolódó témakörök
 
 [A potenciális ügyfelek készpénzre váltása](prospect-to-cash.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

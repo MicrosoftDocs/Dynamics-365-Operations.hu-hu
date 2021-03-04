@@ -46,3 +46,6 @@ Amikor beír egy naplót, kattintson **Főkönyvi könyvelések** a **Funkciók*
 
 
 További tudnivalókért lásd: [Könyvelési sémák létrehozása](tasks/create-accrual-schemes.md) és [Főkönyvi könyvelés tranzakcióinak létrehozása](tasks/create-ledger-accrual-transactions.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

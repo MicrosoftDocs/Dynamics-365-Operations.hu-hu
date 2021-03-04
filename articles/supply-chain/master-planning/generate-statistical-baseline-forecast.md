@@ -78,3 +78,6 @@ Ha az előrejelzés generálása nagyszámú cikk esetén sikertelen, de példá
 - [A kiinduló előrejelzés manuális kiigazítása](manual-adjustments-baseline-forecast.md)
 
 - [Módosított előrejelzés engedélyezése](authorize-adjusted-forecast.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

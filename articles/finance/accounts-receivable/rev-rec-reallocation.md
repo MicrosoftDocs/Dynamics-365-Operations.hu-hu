@@ -114,3 +114,6 @@ A következő témakörök a bevételelszámolás során felmerülő különböz
 - [Bevételelszámolás újbóli felosztása – 2. eset](rev-rec-reallocation-scenario-2.md) – Két értékesítési rendelést visznek be, majd a vevő az első értékesítési rendelés kiszámlázása után hozzáad egy további cikket a szerződéshez.
 - [Bevételelszámolás újbóli felosztása – 3. eset](rev-rec-reallocation-scenario-3.md) –Új sort adnak egy meglévő, már kiszámlázott értékesítési rendeléshez.
 - [Bevételelszámolás újbóli felosztása – 4. eset](rev-rec-reallocation-scenario-4.md) – Egy sort eltávolítanak egy meglévő, részben kiszámlázott értékesítési rendelésből.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

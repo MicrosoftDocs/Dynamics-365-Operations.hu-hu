@@ -45,3 +45,6 @@ Ez az eljárás végigveszi az ismétlődő kötegelt feladatok konfigurálásá
 11. Kattintson az OK gombra.
 12. Kattintson az OK gombra.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

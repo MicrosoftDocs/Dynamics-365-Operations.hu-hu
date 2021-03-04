@@ -109,3 +109,6 @@ A töredék már hivatkozható más webhelyoldalak sablonjaiban. Ha erre a töre
 [Cookie-k megfelelősége](cookie-compliance.md)
 
 [Nyomon követett tartalmi változásokhoz társított felhasználói azonosítók kicserélése](replace-IDs-tracked-changes.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

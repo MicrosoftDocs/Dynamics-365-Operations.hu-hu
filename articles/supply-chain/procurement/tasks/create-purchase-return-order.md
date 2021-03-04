@@ -68,3 +68,6 @@ Ez az eljárás bemutatja, hogyan hozzon létre beszerzési visszárurendelést 
 4. Írjon be egy értéket a **Termékbevételezés** mezőbe. Ezzel a mezővel lehet megadni olyan hivatkozást, ami egy bizonylatként lesz használva a termék bevételezési naplójához.  
 5. Kattintson az **OK** gombra. Az áruk most már szállítottként szerepelnek a beszerzési visszáru rendelésen és egy termékbevételezési napló lett létrehozva. Használhatja a Termék-bevételezési műveletet, hogy áttekintse a beszerzési rendeléshez létrehozott naplókat, és láthatja, hogy mi érkezett vagy lett visszaszállítva és mikor.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

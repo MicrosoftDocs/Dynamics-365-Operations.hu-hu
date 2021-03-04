@@ -45,3 +45,6 @@ A karbantartási kérés típusa határozza meg a karbantartási kéréshez tart
 A következő ábra a **Karbantartási kérés típusai** oldalt szemlélteti.
 
 ![Karbantartási kérések típusai oldal](media/07-setup-for-requests.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

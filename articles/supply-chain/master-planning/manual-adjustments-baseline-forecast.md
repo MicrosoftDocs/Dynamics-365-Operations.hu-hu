@@ -85,3 +85,6 @@ Az előrejelzés manuális kiigazításait az **Igény-előrejelzés részletei*
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

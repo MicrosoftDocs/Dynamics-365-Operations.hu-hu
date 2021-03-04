@@ -121,3 +121,6 @@ Kattintson a **Beállítás** menüpontra a képletszerkesztő fanézetében meg
 |     Anyagjegyzék     | A jelölőnégyzetek segítségével válassza ki a feltételeket, amelyek a faszerkezetben jelennek meg. A képletszerkesztő mindkét lap alján megjeleníti a kiválasztott kritériumokat. |
 |    Útvonal    |                                           A jelölőnégyzetek segítségével válassza ki a feltételeket, amelyek az útvonalak között megjelennek.                                           |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

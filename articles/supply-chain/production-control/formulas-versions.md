@@ -71,3 +71,6 @@ A skálázható funkció akkor használható, csak ha a receptúrában az össze
 
 ## <a name="use-step-consumption"></a>Fokozatos felhasználás felhasználása
 A fokozatos felhasználással nem kell az összetevőknél mennyiséget megadni a **Receptúrasor** lapon. A fokozatos felhasználás ehelyett úgy van beállítva, hogy van egy **Kezdő sorozat** értéke és egy **Mennyiség** értéke. A rendszer a Fokozatos felhasználás sorozatonként rekordból azt az adatot választja ki, amely megfelel a kötegrendelés mennyiségének. A fokozatos felhasználás akkor hasznos, ha a felhasználási ráta nem lineáris a köterrendelés méretéhez képest, és csak konkrét mennyiségi küszöbérték elérése esetén növeli a követelményt. A funkció engedélyezéséhez új receptúrához a **Felhasználás számítása** csoportban módosítsa az érintett összetevőnél a receptúra beállítását **Normál** értékről **Lépés** értékre. A felhasználási módszer a **Beállítás** lapon adható meg a **Receptúrasor** oldalon.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

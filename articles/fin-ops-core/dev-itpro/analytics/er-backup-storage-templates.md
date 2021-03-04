@@ -102,3 +102,6 @@ A Finance and Operations 10.0.5 verziójában az ER sablonok biztonságimentés 
 [Elektronikus jelentéskészítés (ER) áttekintése](general-electronic-reporting.md)
 
 [Az elektronikus jelentéskészítési (ER) keretrendszer konfigurálása](electronic-reporting-er-configure-parameters.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -125,3 +125,6 @@ A következő lépések leírják, hogy a Regulatory Configuration Service (RCS)
 > [!NOTE]
 > Ez a módszer az alkalmazás metaadatainak információinak beolvasására az egyetlen elérhető módszer a helyileg telepített alkalmazások esetében (azaz amikor a helyi üzleti adatok LBD vagy telephelyi, telepítési modell használata történik).
         
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

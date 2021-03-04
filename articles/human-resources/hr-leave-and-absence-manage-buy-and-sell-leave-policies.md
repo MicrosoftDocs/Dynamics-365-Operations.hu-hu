@@ -80,3 +80,6 @@ Engedélyezheti az alkalmazottaknak, hogy szabadságot vegyenek és adjanak el e
 [Szabadság- és távolléti tervek elhatárolása](hr-leave-and-absence-accrue.md)</br>
 [Szabadság vásárlása és eladása](hr-employee-self-service-buy-sell-leave.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

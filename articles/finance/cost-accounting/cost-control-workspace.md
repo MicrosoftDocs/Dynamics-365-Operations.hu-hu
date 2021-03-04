@@ -158,3 +158,6 @@ További erőforrások
 [Hozzáférési jogok meghatározása költségobjektum-ellenőrök számára](access-rights-cost-object-controller.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

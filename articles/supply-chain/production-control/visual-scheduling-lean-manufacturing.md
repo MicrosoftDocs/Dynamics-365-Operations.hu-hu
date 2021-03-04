@@ -95,3 +95,6 @@ A Kanbanütemezési táblát a menüelem használatával a következő lapokon n
 
 [Kanbanfeladat ütemezése lean manufacturing céljára](lean-manufacturing-kanban-job-scheduling.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

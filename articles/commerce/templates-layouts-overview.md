@@ -112,3 +112,6 @@ Az előre beállított elrendezések használatához lásd: [Az előre definiál
 [Előre beállított elrendezések használata](work-with-layouts.md)
 
 [A közzétételi csoportokkal végzett munka](publish-groups.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

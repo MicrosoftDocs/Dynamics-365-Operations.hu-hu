@@ -303,3 +303,6 @@ Egy 10 darabos termelési rendelés jön létre a D8100, "Bevont kabinet" termé
     ![Költség-összehasonlítás diagramjai](./media/subcontract35_cost-comparison-charts.png)
 
 Hiányzó beállítás az adatoknál.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

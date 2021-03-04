@@ -56,3 +56,6 @@ Ez a témakör a műveletütemezés és feladatütemezés termelési rendelései
 6. A műveleti ablaktáblán válassza ki a **Termelési rendelés** elemet.
 7. Válassza ki a **Minden feladat** elemet. Vegye figyelembe, hogy az aktív útvonal alapján a feladatütemezéssel 5 feladat jött létre.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

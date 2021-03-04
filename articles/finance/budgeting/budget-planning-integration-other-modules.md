@@ -147,3 +147,6 @@ További rendelkezésre álló jelentés például az **Előre jelzett beosztás
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

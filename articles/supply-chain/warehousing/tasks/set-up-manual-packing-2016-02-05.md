@@ -95,3 +95,6 @@ A csomagolási folyamat lehetővé teszi az érvényesítést és a termékek t�
 8. A Súlyegység mezőben adjon meg, vagy válasszon ki egy értéket.
 9. Kattintson a Mentés gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

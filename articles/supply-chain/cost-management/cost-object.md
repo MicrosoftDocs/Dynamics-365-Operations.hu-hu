@@ -82,3 +82,6 @@ Az alábbi táblázat bemutatja, hogy mi a költségobjektum és mi a készletob
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

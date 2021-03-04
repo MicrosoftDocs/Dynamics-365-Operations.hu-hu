@@ -75,3 +75,6 @@ A tévedésből létrehozott kiegyenlítések sztornírozhatók.
 ## <a name="update-the-list-of-accounts-that-are-included-in-the-list-of-transactions"></a>A tranzakciólistában szereplő számlák listájának frissítése
 
 Válassza a **Főkönyvi kiegyenlítési számlák** lehetőséget egy párbeszédpanel megnyitásához, ahol aztán szerkeszteni lehet a számlákat, amelyek szerepelnek a tranzakciók listájában. Válassza az **Új** lehetőséget, ha új számlákat szeretne a listához adni. Ez a lista azoknak a tranzakciók listájának szűréséhez használatos, amelyek a **Főkönyvi kiegyenlítések** oldalon jelennek meg.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

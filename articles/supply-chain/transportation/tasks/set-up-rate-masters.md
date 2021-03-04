@@ -97,3 +97,6 @@ Ez az eljárás bemutatja, hogyan állíthat be egy díjnyilvántartást. Által
     * Válassza ki, hogy melyik irányítószámról legyen érvényes ez az alapdíj-hozzárendelés.
 10. A **Felvételi hely országa** mezőbe írja be az „USA” értéket.
 11. Válassza a **Mentés** lehetőséget.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

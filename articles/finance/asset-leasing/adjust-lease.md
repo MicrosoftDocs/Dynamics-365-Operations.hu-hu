@@ -82,3 +82,6 @@ Ha a lízing módosult, megtekintheti a különböző verzióit. Megtekintheti a
 
 2. Ha meg szeretné tekinteni a múltbeli ütemezéseket, nyissa meg a **Lízingösszesítő** oldalon a módosított lízinget, válassza ki a kívánt könyvet, majd a művelet ablaktáblán válassza ki a **Könyv verziójának előzményeit**.
 3. A **Könyvverzió** oldalon válassza ki a kívánt verziót, és a megtekinteni kívánt ütemezést.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

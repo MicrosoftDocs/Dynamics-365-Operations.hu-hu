@@ -40,3 +40,6 @@ Ez az eljárás bemutatja, hogyan lehet megjeleníteni egy termelési rendelés 
 6. Kattintson a Költség összehasonlítására.
 7. Kattintson a Bezárás gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

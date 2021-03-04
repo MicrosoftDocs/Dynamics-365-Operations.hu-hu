@@ -84,3 +84,6 @@ Az útmutató bemutatja, hogyan állíthatja be a leírások paramétereit, majd
 5. Kattintson az **OK** gombra.
 6. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

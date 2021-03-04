@@ -69,3 +69,6 @@ Ez az eljárás kanbanszabályt hoz létre a kanban soresemény beállítás seg
     * Jegyezze meg, hogy a rendszer a 27-es kanbant a létrehozott kanbanszabályon alapuló tevékenység feldolgozására hozta létre.  
     * Ez az utolsó lépés.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

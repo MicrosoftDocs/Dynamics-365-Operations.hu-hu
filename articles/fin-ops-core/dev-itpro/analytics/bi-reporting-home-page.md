@@ -89,3 +89,6 @@ A következő jelentések az objektumokra vonatkozóan tartalmaznak referenciain
 - [Licenckódok és konfigurációskulcs-jelentések](../sysadmin/license-codes-configuration-keys-report.md)
 - [Az SQL Server Reporting Services (SSRS) elérhető jelentései](SSRS-report.md)
 - [Munkafolyamat-típusok jelentése](../../fin-ops/organization-administration/workflow-types-report.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

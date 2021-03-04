@@ -110,3 +110,6 @@ A **Kimenő munka megfigyelése** munkaterülethez két csempe tartozik, amelyek
 ## <a name="deleting-completed-tasks"></a>Befejezett feladatok törlése
 
 A már befejezett, halasztott betárazási feldolgozási tevékenységeket törölheti, ehhez jelölje ki, és törölje azokat a lapon.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

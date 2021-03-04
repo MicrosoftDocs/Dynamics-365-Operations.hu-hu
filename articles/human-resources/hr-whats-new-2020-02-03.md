@@ -65,3 +65,6 @@ Az új Common Data Service megoldás hamarosan a következő változtatásokkal 
 [Rendelés frissítése](hr-admin-setup-update-process.md)</br>
 [Szolgáltatások kezelése](hr-admin-manage-features.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

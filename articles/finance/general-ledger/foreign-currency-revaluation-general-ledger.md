@@ -113,3 +113,6 @@ Sztornózhatja az elavult rendelés átértékelési eredményeit, de szükség 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

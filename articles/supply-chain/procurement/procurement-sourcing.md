@@ -104,3 +104,6 @@ A Beszerzés és forrás modul lefedi az összes lépést a termék- és szolgá
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

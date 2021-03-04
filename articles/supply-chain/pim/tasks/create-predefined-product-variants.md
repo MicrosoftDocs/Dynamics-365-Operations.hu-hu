@@ -72,3 +72,6 @@ Ez az eljárás bemutatja az alaptermék termékváltozatainak a termékdimenzi�
     * A termékdimenzió-értékek kombinációin alapuló összes változatra vonatkozóan létrehozhat leírásokat. A Leírások nem kötelező jellegűek.  
 5. Kattintson a Mentés gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

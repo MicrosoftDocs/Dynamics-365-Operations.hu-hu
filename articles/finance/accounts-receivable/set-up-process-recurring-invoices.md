@@ -67,3 +67,6 @@ Ismétlődő számlák feladása után, kinyomtathatja a számlákat a szabadsz�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

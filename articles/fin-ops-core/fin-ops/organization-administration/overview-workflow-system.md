@@ -71,3 +71,6 @@ A munkafolyamat-rendszer használata számos előnnyel jár a szervezeténél:
 + [Párhuzamos ágak konfigurálása munkafolyamatban](configure-parallel-branch-workflow.md)
 + [Sortétel munkafolyamatainak konfigurálása](configure-line-item-workflow.md)
 + [Munkafolyamat GYIK](workflow-FAQ.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
