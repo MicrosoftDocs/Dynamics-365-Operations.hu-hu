@@ -14,15 +14,15 @@
               items:
                 - name: Újdonságok és változások a Platformfrissítések kezdőlapján
                   href: get-started/whats-new-home-page.md
+                - name: Platformfrissítések a 10.0.17-es verzióhoz (2021. április)
+                  href: get-started/whats-new-platform-updates-10-0-17.md
                 - name: Platformfrissítés a 10.0.16-ös verzióhoz (2021. február)
                   href: get-started/whats-new-platform-updates-10-0-16.md
                 - name: Platformfrissítés a 10.0.15-ös verzióhoz (2021. január)
                   href: get-started/whats-new-platform-updates-10-0-15.md
-                - name: Platformfrissítések a 10.0.14-es verzióhoz (2020. november)
-                  href: get-started/whats-new-platform-updates-10-0-14.md
             - name: Eltávolított vagy elavult funkciók
               items:
-                - name: Eltávolított vagy elavult Platform-funkciók
+                - name: A platform eltávolított vagy elavult funkciói
                   href: get-started/removed-deprecated-features-platform-updates.md
                 - name: Eltávolított vagy elavult funkciók a korábbi kiadásokban
                   href: migration-upgrade/deprecated-features.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
@@ -122,9 +122,9 @@
                       href: data-entities/tasks/create-record-template-facilitate-data-entry.md
                     - name: Rekordok létrehozása rekordsablonokkal
                       href: data-entities/tasks/use-record-template-new-record.md
-                - name: Adatintegráció a Common Data Service használatával
+                - name: Adatintegráció a Dataverse használatával
                   items:
-                    - name: Adatintegráció a Common Data Service használatával – áttekintés
+                    - name: Adatintegráció a Dataverse használatával – áttekintés
                       href: data-entities/data-integration-cds.md
                     - name: Kettős írás integrációja
                       items:
@@ -192,11 +192,11 @@
                                   href: data-entities/dual-write/sites-warehouses-mapping.md
                             - name: Vállalati integráció
                               items:
-                                - name: Vállalati koncepció a(z) Common Data Services szolgáltatásban
+                                - name: Vállalati koncepció a Dataverse szolgáltatásban
                                   href: data-entities/dual-write/company-data.md
-                                - name: Rendszerindítás vállalati adatokkal
+                                - name: Vállalati adatok inicializálása
                                   href: data-entities/dual-write/bootstrap-company-data.md
-                            - name: Szervezeti hierarchia a(z) Common Data Service megoldásban
+                            - name: Szervezeti hierarchia a Dataverse szolgáltatásban
                               href: data-entities/dual-write/organization-mapping.md
                             - name: Pénzügyi és adóügyi adatok
                               items:
@@ -206,11 +206,13 @@
                                   href: data-entities/dual-write/ledger-mapping.md
                                 - name: Integrált adózási alapadat
                                   href: data-entities/dual-write/tax-mapping.md
+                            - name: A beszerzési műveletek integrálása a Supply Chain Management szolgáltatásban a Field Service segítségével
+                              href: data-entities/dual-write/scm-field-service-procurement.md
+                            - name: Igény szerinti szinkronizálás a Supply Chain Management árképzési motorjával
+                              href: data-entities/dual-write/pricing-engine.md
                             - name: Potenciális vevők készpénzre váltása a kettős írás szolgáltatásban
                               href: data-entities/dual-write/dual-write-prospect-to-cash.md
-                            - name: Igény szerinti szinkronizálás a Dynamics 365 Supply Chain Management árképzés motorral
-                              href: data-entities/dual-write/pricing-engine.md
-                            - name: Dynamics 365 Commerce díjszabási motor használata a Dynamics 365 Sales alkalmazással
+                            - name: A Dynamics 365 Commerce díjszabási motorjának használata a Dynamics 365 Sales alkalmazással
                               href: data-entities/dual-write/commerce-pricing.md
                             - name: Házon belüli eszközök szervizelése
                               href: data-entities/dual-write/in-house-assets.md
@@ -220,23 +222,25 @@
                               href: data-entities/dual-write/inventory-availability.md
                         - name: A kettős írás támogatása
                           items:
-                            - name: A Field Service- és Project Service Automation-megoldások támogatása
+                            - name: A Field Service és a Project Service Automation megoldások támogatása
                               href: data-entities/dual-write/field-service-project-service-automation.md
+                            - name: A Potenciális vevők készpénzre váltása megoldás adatainak migrálása az adatintegrátor megoldásból a kettős írás szolgáltatásba
+                              href: data-entities/dual-write/migrate-prospect-to-cash.md
                             - name: Hibaelhárítás
                               items:
-                                - name: 'Ellenőrizze, hogy a kettős írás be van-e állítva a(z) Finance and Operations alkalmazásokban és a(z) Common Data Service'
+                                - name: A kettős írás konfigurációjának ellenőrzése a Finance and Operations alkalmazásokban és a Dataverse szolgáltatásban
                                   href: data-entities/dual-write/dual-write-troubleshooting-verify-config.md
                                 - name: Problémák elhárítása a kezdeti beállításkor
                                   href: data-entities/dual-write/dual-write-troubleshooting-initial-setup.md
                                 - name: Problémák elhárítása a kezdeti szinkronizációkor
                                   href: data-entities/dual-write/dual-write-troubleshooting-initial-sync.md
-                                - name: A(z) Finance and Operations alkalmazásokban lévő problémák elhárítása a kettős írás modullal
+                                - name: A kettős írással kapcsolatos hibaelhárítás a Finance and Operations alkalmazásokban
                                   href: data-entities/dual-write/dual-write-troubleshooting-dual-write-module.md
                                 - name: Élő szinkronizálási problémák elhárítása
                                   href: data-entities/dual-write/dual-write-troubleshooting-live-sync.md
                                 - name: A megoldások érzékenységével kapcsolatos problémák elhárítása
                                   href: data-entities/dual-write/dual-write-troubleshooting-solution-awareness.md
-                                - name: A(z) Finance and Operations alkalmazások frissítésével kapcsolatos problémák elhárítása
+                                - name: A Finance and Operations alkalmazások frissítése miatti problémák elhárítása
                                   href: data-entities/dual-write/dual-write-troubleshooting-finops-upgrades.md
                                 - name: Általános hibaelhárítás
                                   href: data-entities/dual-write/dual-write-troubleshooting.md
@@ -338,8 +342,12 @@
               items:
                 - name: Adatimportálási és -exportálási feladatok áttekintése
                   href: data-entities/data-import-export-job.md
-                - name: Bevált gyakorlat a kuponok Általános napló entitással történő importálásához
+                - name: Dátum és idő szinkronizálása az importálási feladatokban
+                  href: data-entities/data-synchronize-date-and-time.md
+                - name: Bizonylatok importálása az Általános napló entitással
                   href: data-entities/tips-tricks-import-general-journal-entity.md
+                - name: Adatmigrálás optimalizálása a Finance and Operations alkalmazásoknál
+                  href: sysadmin/optimize-data-migration.md
             - name: Fejlesztés adatentitásokhoz
               items:
                 - name: Tervezési elvek és gyakorlati tanácsok az adatentitásokhoz
@@ -442,7 +450,9 @@
                       href: database/api/v1/reference-create-export.md
                     - name: Műveleti tevékenység állapotának lekérése
                       href: database/api/v1/reference-get-status.md
-        - name: Bemutató adatok
+                    - name: Környezetek indítása és leállítása
+                      href: database/api/v1/reference-start-stop-environments.md
+        - name: Bemutatóadatok
           items:
             - name: Bemutató adatok – áttekintés
               href: ../fin-ops/get-started/demo-data.md?toc=/dev-itpro/toc.json
@@ -808,60 +818,6 @@
                       href: dev-ref/xpp-string-run-time-functions.md
                 - name: Rendszertáblák
                   href: dev-ref/system-tables.md
-                - name: Rendszerosztályok
-                  items:
-                    - name: Rendszerosztályok listája
-                      href: dev-ref/system-classes/toc.yml
-                    - name: Betűrend szerint csoportosított rendszerosztályok
-                      items:
-                        - name: A osztályok
-                          href: dev-ref/a-classes.md
-                        - name: B osztályok
-                          href: dev-ref/b-classes.md
-                        - name: C osztályok
-                          href: dev-ref/c-classes.md
-                        - name: D osztályok
-                          href: dev-ref/d-classes.md
-                        - name: E osztályok
-                          href: dev-ref/e-classes.md
-                        - name: F osztályok
-                          href: dev-ref/f-classes.md
-                        - name: G osztályok
-                          href: dev-ref/g-classes.md
-                        - name: H osztályok
-                          href: dev-ref/h-classes.md
-                        - name: I osztályok
-                          href: dev-ref/i-classes.md
-                        - name: J osztályok
-                          href: dev-ref/j-classes.md
-                        - name: K osztályok
-                          href: dev-ref/k-classes.md
-                        - name: L osztályok
-                          href: dev-ref/l-classes.md
-                        - name: M osztályok
-                          href: dev-ref/m-classes.md
-                        - name: N osztályok
-                          href: dev-ref/n-classes.md
-                        - name: O osztályok
-                          href: dev-ref/o-classes.md
-                        - name: P osztályok
-                          href: dev-ref/p-classes.md
-                        - name: Q osztályok
-                          href: dev-ref/q-classes.md
-                        - name: R osztályok
-                          href: dev-ref/r-classes.md
-                        - name: S osztályok
-                          href: dev-ref/s-classes.md
-                        - name: T-osztályok
-                          href: dev-ref/t-classes.md
-                        - name: U-osztályok
-                          href: dev-ref/u-classes.md
-                        - name: V-osztályok
-                          href: dev-ref/v-classes.md
-                        - name: W-osztályok
-                          href: dev-ref/w-classes.md
-                        - name: X-osztályok
-                          href: dev-ref/x-classes.md
             - name: Bővíthetőség
               items:
                 - name: Bővíthetőség kezdőlap
@@ -1004,11 +960,11 @@
                   href: perf-test/trace-trace-tutorial.md
                 - name: Egyfelhasználós tesztelés a Feladatrögzítő és a Teljesítmény SDK segítségével
                   href: perf-test/single-user-test-perf-sdk.md
-                - name: Többfelhasználós tesztelés a Teljesítmény SDK és a helyi tesztvezérlő segítségével
+                - name: Többfelhasználás tesztelés a Teljesítmény SDK és a helyi tesztvezérlő segítségével
                   href: perf-test/multi-user-testing-local-test-controller.md
                 - name: Többfelhasználós tesztelés a Teljesítmény SDK és az Azure DevOps segítségével
                   href: perf-test/multi-user-testing-perfsdk-azuredevops.md
-                - name: Egyfelhasználós vagy többfelhasználós tesztekkel kapcsolatos hibaelhárítási útmutató a Performance SDK segítségével
+                - name: Hibaelhárítási útmutató a Teljesítmény SDK-val történő teszteléshez
                   href: perf-test/troubleshoot-perf-sdk-user-testing.md
                 - name: Teljesítmény SDK és többfelhasználós tesztelés helyszíni környezetben
                   href: perf-test/perfsdk-tutorial-lbd.md
@@ -1022,7 +978,7 @@
                   href: perf-test/testing-validation.md
                 - name: Tesztprojektek a Visual Studio szolgáltatásban
                   href: perf-test/testing-support.md
-                - name: A folyamatos build- és tesztautomatizálást támogató környezetek telepítése
+                - name: Folyamatos build- és tesztautomatizálási környezet üzembe helyezése és használata
                   href: perf-test/continuous-build-test-automation.md
                 - name: SysTest-szűrés osztály- és metódusattribútumok használatával
                   href: perf-test/systest-filtering.md
@@ -1172,11 +1128,13 @@
           items:
             - name: Microsoft Power Platform integráció a Finance and Operations alkalmazással
               href: power-platform/overview.md
+            - name: Bővítmények áttekintése
+              href: power-platform/add-ins-overview.md
             - name: Entitásmodellezés
               href: power-platform/entity-modeling.md
             - name: Alkalmazáséletciklus-kezelés
               href: power-platform/application-lifecycle-management.md
-            - name: Finance and Operations és Common Data Service rendszergazdai hivatkozás
+            - name: Finance and Operations és Dataverse rendszergazdai hivatkozás
               href: power-platform/admin-reference.md
             - name: Power Apps portálok a Finance and Operations alkalmazáshoz
               href: power-platform/power-portal-reference.md
@@ -1420,11 +1378,11 @@
               href: perf-test/rsat/rsat-chain-test-cases.md
             - name: Származtatott tesztesetek
               href: perf-test/rsat/rsat-derived-test-cases.md
-            - name: A Regression Suite Automation Tool-oktatóanyag és egyéb funkciók
-              href: ../fin-ops/get-started/hol-use-regression-suite-automation-tool.md
+            - name: Regression Suite Automation Tool-oktatóanyag
+              href: perf-test/rsat/rsat-tutorial.md
             - name: Gyakorlati tanácsok
               href: perf-test/rsat/rsat-best-practices.md
-            - name: Az adatok agnosztikus tesztelése a Regression Suite Automation Tool használatával
+            - name: Adatagnosztikus tesztelés a Regression Suite Automation Tool használatával
               href: ../fin-ops/get-started/recommendation-data-agnostic-testing-rsat.md
             - name: Hibaelhárítás
               href: perf-test/rsat/rsat-troubleshooting.md
@@ -1467,7 +1425,7 @@
             - name: Finance and Operations és Lifecycle Services szolgáltatások támogatása
               href: lifecycle-services/lcs-support.md
             - name: A Dynamics 365 támogatásának áttekintése
-              href: 'https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json'
+              href: /power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json
             - name: A 21Vianet által Kínában működtetett Finance and Operations támogatása
               href: lifecycle-services/21vianet-support.md
             - name: Technikai támogatás beállítása a Finance and Operations alkalmazásokhoz
@@ -1506,6 +1464,8 @@
                   href: sysadmin/tasks/create-new-users.md
                 - name: Felhasználóimunkamenet-kezelés
                   href: sysadmin/user-session-management.md
+                - name: Hozzáférés helyalapú letiltása az Azure AD Conditional Access segítségével
+                  href: /power-platform/admin/restrict-access-online-trusted-ip-rules?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json
                 - name: Felhasználók tömeges importálása
                   href: sysadmin/tasks/import-bulk-users.md
                 - name: Feladatkörök szétválasztásának beállítása
@@ -1524,6 +1484,8 @@
                   href: sysadmin/create-simple-security-policy.md
             - name: Továbbra is feleljen meg a felhasználói licencek követelményeinek
               href: sysadmin/stay-compliant-user-license-requirement.md
+            - name: Független szoftverszállítói licenc állapotának megtekintése
+              href: sysadmin/view-isv-license-status.md
             - name: Folyamatok automatizálása
               href: sysadmin/process-automation.md
             - name: Kötegelt feldolgozás
@@ -1542,15 +1504,13 @@
                   href: sysadmin/batch-active-period-dst.md
                 - name: Kötegkezelő biztonsági szerepköre
                   href: sysadmin/runby.md
-                - name: Kötegelt feladat az SQL-index töredezettségmentesítésének kezeléséhez
-                  href: sysadmin/batch-job-SQL-defragmentation.md
                 - name: Kötegelt figyelmeztetések konfigurálása
                   href: sysadmin/alerts.md
                 - name: Továbbfejlesztett kötegelt képernyők
                   href: sysadmin/enhanced-forms.md
                 - name: Kötegeltfeladat-előzmények törlése
                   href: sysadmin/batch-history-cleanup.md
-                - name: Végrehajtási kötegelt feladat megszakítása
+                - name: Végrehajtás alatt lévő kötegelt feladat megszakítása
                   href: sysadmin/batch-abort.md
             - name: Optimalizálási tanácsadó
               items:
