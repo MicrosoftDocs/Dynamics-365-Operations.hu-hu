@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: smiller
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: adbc9d0bc4632c661b40001a54685192b9ae2d23
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: ea741e3d4b3a6ce93a30c9d8c8adc7c91b513871
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694136"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798549"
 ---
 # <a name="before-you-buy"></a>Vásárlás előtti teendők
 
@@ -30,7 +30,7 @@ Még nem ismeri a Dynamics 365 Finance, Dynamics 365 Supply Chain Management vag
 
 ## <a name="step-one-try-out-finance-and-operations-free-for-30-days"></a>Első lépés: Próbálja ki a Finance and Operations szolgáltatást 30 napig ingyen
 
-A Dynamics 365 for Finance and Operations, a Dynamics 365 Supply Chain Management vagy a Dynamics 365 Commerce 30 napos kipróbálásához mindössze egy egyszerű e-mailes feliratkozás szükséges. A Finance and Operations alkalmazások próbaverziója magában foglalja az „Első lépések” bemutatókat is, amelyek lépésenként mutatják be az elvégzendő feladatokat, hogy működés közben tekinthessen meg egyes forgatókönyveket. A termék segítségével felfedezheti és kipróbálhatja a forgatókönyveket, ám nem szabhatja személyre azt. A bemutató adatok segítségével könnyebben használható a termék, és tartalmasabb az élmény. A próbaverzió lejárata előtt 3 nappal emlékeztető-e-mailt küldünk. További részletek: [www.microsoft.com/dynamics365/operations](https://www.microsoft.com/dynamics365/operations).
+A Dynamics 365 for Finance and Operations, a Dynamics 365 Supply Chain Management vagy a Dynamics 365 Commerce 30 napos kipróbálásához mindössze egy egyszerű e-mailes feliratkozás szükséges. A Finance and Operations alkalmazások próbaverziója magában foglalja az „Első lépések” bemutatókat is, amelyek lépésenként mutatják be az elvégzendő feladatokat, hogy működés közben tekinthessen meg egyes forgatókönyveket. A termék segítségével felfedezheti és kipróbálhatja a forgatókönyveket, ám nem szabhatja személyre azt. A bemutató adatok segítségével könnyebben használható a termék, és tartalmasabb az élmény. A próbaverzió lejárata előtt 3 nappal emlékeztető-e-mailt küldünk. Részletek: [Regisztrálás az előzetes előfizetésekre](../../dev-itpro/dev-tools/sign-up-preview-subscription.md#subscribe).
 
 ## <a name="step-two-choose-a-deployment-option"></a>2\. lépés: Válasszon egy telepítési beállítást
 
@@ -93,6 +93,3 @@ A Microsoft FastTrack for Dynamics 365 az ügyfelek sikerességére koncentrál�
 ## <a name="if-you-are-upgrading-from-dynamics-ax-2012-or-migrating-from-ax-2009"></a>Ha a Dynamics AX 2012-ről frissít, illetve az AX 2009-ről tér át
 
 Ha Ön olyan ügyfél, aki a Microsoft Dynamics AX 2012-ről frissít, illetve a Microsoft Dynamics AX 2009-ről telepít át, akkor lehet, hogy hosszabb próbaidőszakot is igénybe vehet. További információ: <daxcf@microsoft.com>.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

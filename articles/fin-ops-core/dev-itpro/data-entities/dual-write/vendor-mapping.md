@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 636bc57b5ef09d605744f4857fd5fbefceac4875
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: f2fc88ed0c0f4dbec55f8ca251cca3d071760b55
+ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685485"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4744515"
 ---
 # <a name="integrated-vendor-master"></a>Integrált szállítói alapadat
 
@@ -33,17 +33,17 @@ ms.locfileid: "4685485"
 
 
 
-A *szállító* kifejezés egy szállító szervezetre vagy egy olyan kizárólagos tulajdonosra vonatkozik, aki árukat vagy szolgáltatásokat nyújt egy vállalkozásnak. A *szállító* fogalmat ugyan kiterjedten használják a Microsoft Dynamics 365 Supply Chain Management alkalmazásban, a szállító fogalma nem létezik más Dynamics 365 modellvezérelt alkalmazásaiban. A szállítói adatok tárolására azonban lehetősége van az **Ügyfél/kapcsolattartó** entitás túlterhelésével. A integrált szállító alapadat a Dynamics 365 modellvezérelt alkalmazásokban explicit szállítói fogalmat vezet be. Használhatja az új szállító megoldást vagy a szállítói adatokat a **Partner/kapcsolattartó** entitásban is tárolhatja. A kettős írás mindkét megközelítést támogatja.
+A *szállító* kifejezés egy szállító szervezetre vagy egy olyan kizárólagos tulajdonosra vonatkozik, aki árukat vagy szolgáltatásokat nyújt egy vállalkozásnak. A *szállító* fogalmat ugyan kiterjedten használják a Microsoft Dynamics 365 Supply Chain Management alkalmazásban, a szállító fogalma nem létezik más Dynamics 365 modellvezérelt alkalmazásaiban. A szállítói adatok tárolására azonban lehetősége van az **Ügyfél/kapcsolattartó** tábla túlterhelésével. A integrált szállító alapadat a Dynamics 365 modellvezérelt alkalmazásokban explicit szállítói fogalmat vezet be. Használhatja az új szállító megoldást vagy a szállítói adatokat a **Partner/kapcsolattartó** táblában is tárolhatja. A kettős írás mindkét megközelítést támogatja.
 
 Mindkét módszernél a szállítói adatok integrálva lesznek a Dynamics 365 Supply Chain Management, a Dynamics 365 Sales, a Dynamics 365 Field Service és Power Apps portálok között. A Supply Chain Management alkalmazásban az adatok olyan munkafolyamatokhoz érhetők el, mint például a beszerzési igénylések és a beszerzési rendelések.
 
 ## <a name="vendor-data-flow"></a>Szállítói adatok áramlása
 
-Használhatja az új szállító megoldást ha a szállítói adatokat nem szeretné a **Partner/kapcsolattartó** entitásban tárolni a Dataverse megoldásban.
+Használhatja az új szállító megoldást ha a szállítói adatokat nem szeretné a **Partner/kapcsolattartó** táblában tárolni a Dataverse megoldásban.
 
 ![Szállítói adatok áramlása](media/dual-write-vendor-data-flow.png)
 
-Ha a szállítói adatokat továbbra is a **Partner/kapcsolattartó** szeretné tárolni, használhatja a kibővített szállítói megoldást. A kiterjesztett szállítói megoldás használatához konfigurálnia kell a szállítói munkafolyamatokat a kettős írás megoldási csomagjában. További információ: [Váltás a szállítói arculatok között](vendor-switch.md).
+Ha a szállítói adatokat továbbra is a **Partner/kapcsolattartó** táblában szeretné tárolni, használhatja a kibővített szállítói megoldást. A kiterjesztett szállítói megoldás használatához konfigurálnia kell a szállítói munkafolyamatokat a kettős írás megoldási csomagjában. További információ: [Váltás a szállítói arculatok között](vendor-switch.md).
 
 ![Bővített szállítói adatok áramlása](media/dual-write-vendor-detail.jpg)
 
@@ -56,7 +56,7 @@ A szállítói adatok között a szállító minden részlete (például a szál
 
 Finance and Operations-alkalmazásoknak | Egyéb Dynamics 365 alkalmazások     | Leírás
 ----------------------------|-----------------------------|------------
-Szállító V2                   | Könyvelési számla                     | Azok a cégek, amelyek a Számla entitással tárolják a szállítói adatokat, továbbra is változás nélkül használhatják ezt a megoldást. A Finance and Operations alkalmazások integrációjának köszönhető explicit szállítói funkciókat ugyancsak kihasználhatja.
+Szállító V2                   | Könyvelési számla                     | Azok a cégek, amelyek a Számla táblában tárolják a szállítói adatokat, továbbra is változás nélkül használhatják ezt a megoldást. A Finance and Operations alkalmazások integrációjának köszönhető explicit szállítói funkciókat ugyancsak kihasználhatja.
 Szállító V2                   | Msdyn\_vendors              | A szállítókhoz egyéni megoldást használó cégek a Finance and Operations-alkalmazások integrációjának köszönhetően kihasználhatják a Dataverse rendszerben bevezetett kész szállítói fogalmat. 
 Szállítói csoportok               | msdyn\_vendorgroups         | Ez a sablon szinkronizálja a szállítói csoport adatait.
 Szállítói fizetési mód       | msdyn\_vendorpaymentmethods | Ez a sablon szinkronizálja a szállító fizetési módra vonatkozó adatait.
@@ -75,6 +75,3 @@ Névutótagok                | msdyn\_nameaffixes          | A [névutótagok](c
 [!include [Vendor groups](includes/VendVendorGroup-msdyn-vendorgroups.md)]
 
 [!include [Vendor payment methods](includes/VendorPaymentMethod-msdyn-vendorpaymentmethods.md)]
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

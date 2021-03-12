@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0157e7e080f6b65dc6b3bb8f01ace5b521bb3dca
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 70a57741340df2aec5c20dc576672b6acc8343dd
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694813"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4796730"
 ---
 # <a name="create-an-operating-unit"></a>Üzemi egység létrehozása
 
@@ -41,6 +41,3 @@ Egy üzemi egység olyan szervezet, amelynek segítségével meg lehet osztani a
     + Adja meg a kommunikációs módszerekkel kapcsolatos adatokat, például e-mail-címeket, URL-címeket és telefonszámokat. Új kommunikációs rekord megadásához kattintson az Új gombra. Egy meglévő kommunikációs rekord módosításához kattintson a **További beállítások > Speciális** gombra.   
 6. Igény szerint módosítsa az **Üzemi egység számát**. Ne felejtse el, hogy ez a szám egyedi azonosító a vonatkozó **Fél** rekordban, és nem lehet ugyanaz, mint bármely más üzemi egységé.
 7. Válassza a **Mentés** lehetőséget.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

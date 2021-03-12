@@ -14,43 +14,43 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
-ms.openlocfilehash: 4e34685731a09131d2ab49a0e04479c9c20f4da8
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: d57586cb18c581e4a462d93a64a88310e251a7af
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693798"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798589"
 ---
 # <a name="batch-processing-of-alerts"></a>Figyelmeztetések kötegelt feldolgozása
 
 [!include [banner](../includes/banner.md)]
 
-A figyelmeztetéseket a kötegfeldolgozó funkció dolgozza fel. A figyelmeztetések elküldéséhez előbb kötegfeldolgozást kell beállítani.
+A figyelmeztetéseket a kötegfeldolgozó funkció dolgozza fel. A feldolgozás és a figyelmeztetések küldése előtt kötegfeldolgozást kell beállítani.
 
-A szolgáltatásban két eseménytípus támogatott:
+A kötegelt feldolgozási funkció kétféle eseménytípust támogat:
 
 - Módosításalapú események által kiváltott események. Ezekre az eseményekre létrehozás/törlés, és frissítés eseményként is utalunk.
-- Határidők által kiváltott események.
+- Határidő által kiváltott események.
 
 Kötegfeldolgozásokat minden ilyen típusú eseményre be lehet állítani.
-        
+
 ## <a name="batch-processing-for-change-based-events"></a>Kötegelt feldolgozás módosításalapú események esetén
 
 A rendszer beolvassa a változásalapú eseményeket, amelyek a kötegelt feldolgozás utolsó futása óta történtek. A módosításon alapuló események közé tartozik a mezőfrissítés, a rekordok törlése és létrehozása. Ezek az események a figyelmeztetési szabályokban beállított feltételekkel vannak összehasonlítva. A kötegfeldolgozás figyelmeztetést generál, ha egy esemény teljesíti egy szabály feltételeit.
 
 ### <a name="frequency-for-change-based-events"></a>Módosításalapú események gyakorisága
 
-A módosítás alapú eseményekhez beállíthat egy kötegfeladatot, amely kezdeményezi egy esemény feldolgozását nem sokkal azután, hogy a rendszer naplózta az eseményt. Ha a kötegelt feladat ismétlődését gyakrabbra állítja, felhasználók hamarabb megkapják a figyelmeztetéseket, ha változás történik. A kötegelt feldolgozás nagy gyakorisága azonban hátrányosan befolyásolhatja a rendszer teljesítményét.
+A módosításalapú eseményekhez beállíthat egy kötegfeladatot, amely kezdeményezi egy esemény feldolgozását nem sokkal azután, hogy a rendszer naplózta az eseményt. Ha a kötegelt feladat ismétlődését gyakrabbra állítja, felhasználók hamarabb megkapják a figyelmeztetéseket, ha változás történik. A kötegelt feldolgozás nagy gyakorisága azonban hátrányosan befolyásolhatja a rendszer teljesítményét.
 
 Másrészről a ritkábban ismétlődő és alacsony rendszerterhelés idejére ütemezett kötegelt feladatok javíthatják a rendszer teljesítményét. A kötegfeldolgozás gyakoriságát alacsonyra állítva azonban lehet, hogy a felhasználók nem fognak időben megkapni figyelmeztetéseket.
 
-Amikor tehát beállítja a módosítás alapú eseményekre vonatkozó kötegelt feldolgozást, akkor figyelembe kell vennie a figyelmeztetések gyorsaságát és a teljes rendszer teljesítményét, és ennek megfelelően kell kompromisszumot hoznia. Minél több olyan felhasználó van, aki figyelmeztetési szabályokat generál, annál fontosabb a fentiek megfontolása. A gyakoriság nem befolyásolja a feldolgozandó események számát. Ugyanakkor ha több felhasználó hoz létre szabályokat, több ellenőrzést kell végrehajtani. Az ilyen típusú adatcsere befolyásolhatja a rendszer teljesítményét.
+Amikor tehát beállítja a módosítás alapú eseményekre vonatkozó kötegelt feldolgozást, akkor figyelembe kell vennie a figyelmeztetések gyorsaságát és a teljes rendszer teljesítményét, és ennek megfelelően kell kompromisszumot hoznia. Minél több olyan felhasználó van, aki figyelmeztetési szabályokat generál, annál fontosabb a fentiek megfontolása. A gyakoriság nem befolyásolja a rendszer által feldolgozott események számát. Ugyanakkor ha több felhasználó hoz létre szabályokat, a folyamat több ellenőrzést hajt végre. Az ilyen típusú adatcsere befolyásolhatja a rendszer teljesítményét.
 
 #### <a name="the-risks-of-low-batch-frequency"></a>Az alacsony kötegfeldolgozási gyakoriság kockázata
 
-Ha a módosításalapú kötegfeldolgozás gyakoriságát alacsonyra állítja, akkor előfordulhat, hogy a köteg feldolgozása előtt módosulnak azok az adatok, amelyek fontosak figyelmeztetési szabály feltételeihez. Emiatt a figyelmeztetések elveszhetnek.
+Ha a módosításalapú kötegfeldolgozás gyakoriságát alacsonyra állítja, akkor előfordulhat, hogy a feldolgozás előtt módosulnak azok az adatok, amelyek fontosak figyelmeztetési szabály feltételeihez. Emiatt a figyelmeztetések elveszhetnek.
 
-Ha például egy figyelmeztetési szabály be van állítva figyelmeztetés megjelenítésére, ha az esemény **vevőkapcsolat módosul** és a feltétel **vevő = BB**. Más szóval, amikor a vevő BB ügyfélkapcsolata megváltozik, az esemény naplózásra kerül. Azonban a kötegelt feldolgozó rendszer úgy van beállítva, hogy a kötegelt feldolgozásra ritkábban kerüljön sor, mint adatbevitelre. Ha a vevő neve megváltozik **BB**-ről **AA**-ra az esemény feldolgozása előtt, az adatbázisban lévő adatok már nem felelnek meg meg a szabályban megadott feltételnek, miszerint **vevő = BB**. Ezért, amikor végül megtörténik az esemény feldolgozása, nem jön létre figyelmeztetés.
+Ha például egy figyelmeztetést hoz létre, amely be van állítva figyelmeztetés megjelenítésére, ha az esemény **vevőkapcsolat módosul** és a feltétel **vevő = BB**. Más szóval, amikor a vevő BB ügyfélkapcsolata megváltozik, a folyamat naplózza az eseményt. Azonban a kötegelt feldolgozó rendszer úgy van beállítva, hogy a kötegelt feldolgozásra ritkábban kerüljön sor, mint adatbevitelre. Ha a vevő neve megváltozik **BB**-ről **AA**-ra az esemény feldolgozása előtt, az adatbázisban lévő adatok már nem felelnek meg meg a szabályban megadott feltételnek, miszerint **vevő = BB**. Ezért, amikor végül megtörténik az esemény feldolgozása, nem jön létre figyelmeztetés.
 
 ### <a name="set-up-processing-for-change-based-alerts"></a>Változáson alapuló figyelmeztetések feldolgozásának beállítása
 
@@ -82,6 +82,3 @@ Ha kötegelt feldolgozáshoz időkeretet állít be, figyelmeztetés küldésér
 
 1. Lépjen a **Rendszerfelügyelet** &gt; **Időszakos feladatok** &gt; **Figyelmeztetések** &gt; **Határidőn alapuló figyelmeztetések** elemre.
 2. A **Határidőn alapuló figyelmeztetések** párbeszédpanelen írja be a megfelelő adatokat.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

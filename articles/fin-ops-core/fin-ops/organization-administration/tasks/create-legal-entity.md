@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 54e3176ccf4bc3218afdf085f910e6d2a9c1b9ff
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 6dc74291977d999218ebc66f72ee5b01b12827ed
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694837"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4796754"
 ---
 # <a name="create-a-legal-entity"></a>Jogi személy létrehozása
 
@@ -45,6 +45,3 @@ A jogi személy jogi hatóságnál történő regisztráción keresztül azonos�
 15. Bontsa ki az **Adóregisztráció** szakaszt. Az **Adóregisztráció** szakaszban adja meg az adóhatóságnál tett jelentéshez használt nyilvántartási számokat.
 16. Bontsa ki az **Adó - 1099** szakaszt. Az **Adó - 1099** szakaszban adja meg a 1099-es adatokat a jogi személyre vonatkozóan.  
 17. Kattintson a **Mentés** gombra.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

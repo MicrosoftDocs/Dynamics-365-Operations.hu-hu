@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 47c07dd0e2f311b61297340a48a5a31cb1de3903
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 78a7cdc18476a1c523c83c92ca6f354c3ba806dc
+ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685665"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4744853"
 ---
 # <a name="guidance-for-dual-write-setup"></a>Útmutató a kettős írás beállításához
 
@@ -36,7 +36,7 @@ ms.locfileid: "4685665"
 Egy Finance and Operations-környezet és egy Dataverse-környezet között kettős írás kapcsolatot állíthat be.
 
 + Egy **Finance and Operations-környezet** a háttérplatformot biztosítja a **Finance and Operations-alkalmazásokhoz** (például a Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce és Dynamics 365 Human Resources).
-+ A **Dataverse-környezet** biztosítja a **ügyfélkapcsolati alkalmazások** alapjául szolgáló platformot (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, és Dynamics 365 Project Service Automation).
++ A **Dataverse-környezet** biztosítja az **ügyfélkapcsolati alkalmazások** alapjául szolgáló platformot (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 column Service, Dynamics 365 Marketing és Dynamics 365 Project Service Automation).
 
 > [!IMPORTANT]
 > A Human Resources modul a Dynamics 365 Finance kettős írás kapcsolatok használatát támogatják, de az Dynamics 365 Human Resources alkalmazás nem.
@@ -138,6 +138,3 @@ A példaekre mutató hivatkozásokat és az alternatív megközelítést a [Pél
 Példa: [a Vevők v3-a kapcsolattartó-tábla leképezésének engedélyezése](enable-entity-map.md#enable-table-map)
 
 A kezdeti szinkronizálás futtatását igénylő entitások adatmennyiségein alapuló alternatív megközelítéshez lásd [a kezdeti szinkronizálás szempontjait](initial-sync-guidance.md).
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

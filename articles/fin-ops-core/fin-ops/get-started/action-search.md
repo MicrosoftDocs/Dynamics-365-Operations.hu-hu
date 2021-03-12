@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8b5d2e678b01f052db29d5a1c47eae27d27cd04f
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: dd9962451e8b72677e1a006dd9c1b8b8b268c93e
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694188"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798647"
 ---
 # <a name="action-search"></a>Műveletkeresés
 
@@ -35,7 +35,7 @@ Az oldalakon az utasítások elsősorban a műveletpaneleken láthatók, egyrés
 
 [![keyTipsAX6](./media/keytipsax6.png)](./media/keytipsax6.png)
 
-A billentyűparancs-tippek már nem érhetők el, de a műveletkeresés funkció helyettesíti. Ez az új funkció lehetővé teszi, hogy gyorsan megkeressen és működtessen egy gombot bármelyik látható műveleti ablaktáblán.
+A műveletkeresés funkció a billentyűparancs-tippeket helyettesíti, amelyek már nem érhetők el. Ez az új funkció lehetővé teszi, hogy gyorsan megkeressen és működtessen egy gombot bármelyik látható műveleti ablaktáblán.
 
 ## <a name="using-action-search"></a>A műveletkeresés használatával
 
@@ -53,7 +53,7 @@ A Ctrl+/ vagy az Alt+Q billentyűkombinációkkal is elindíthatja a műveletker
 
 ## <a name="understanding-the-results-list"></a>Az eredménylista ismertetése
 
-Gyakran a gomb helyét és környezetét is ismernünk kell ahhoz, hogy teljesen átlássuk a gomb funkcióját. Ezért az eredménylistában minden elemnél további információk is láthatók, amelyek segítenek megérteni, pontosan mely gombok láthatók a listában. Főként a gomb „elérési útja” jelenik meg. Az elérési út a felhasználói felület következő elemeihez tartozó címkéket tartalmazhatja lényegesként:
+Gyakran a gomb helyét és környezetét is ismernünk kell ahhoz, hogy teljesen átlássuk a gomb funkcióját. Ezért az eredménylistában további információk is láthatók, amelyek segítenek megérteni, pontosan mely gombok láthatók a listában. Főként a gomb „elérési útja” jelenik meg. Az elérési út a felhasználói felület következő elemeihez tartozó címkéket tartalmazhatja lényegesként:
 
 - Műveleti ablaktábla lap
 - Gombcsoport
@@ -75,6 +75,3 @@ Az előző példában a műveletkeresési funkció az oldal tetején található
 ## <a name="action-search-vs-navigation-search"></a>Műveletkeresés és navigációs keresés
 
 A műveletkereséssel műveletek kereshetők meg és futtathatók egy oldalon. Emellett van egy másik keresési funkció is, amellyel oldalak kereshetők és nyithatók meg. Ezen funkcióval kapcsolatos további információk a [Navigációs keresés](navigation-search.md) cikkben találhatók.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

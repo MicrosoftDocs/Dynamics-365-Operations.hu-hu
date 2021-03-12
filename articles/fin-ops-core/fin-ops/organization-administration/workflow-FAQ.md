@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 785b14d20a647ea2187f311f1cd056b8181d4849
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 58aa4a6d313a78e88c2858637d6de167895ec534
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694056"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797391"
 ---
 # <a name="workflow-faq"></a>Munkafolyamat GYIK
 
@@ -59,6 +59,3 @@ A **Munkafolyamat-elemek száma kötegenként** értéke a **Munkafolyamat param
 
 ## <a name="what-is-the-workflow-enhanced-error-feature"></a>Mi a munkafolyamat kibővített hiba funkció?
 A 10.0.13 verzió munkafolyamat kibővített hiba szolgáltatása hibakódokat ad hozzá a különböző munkafolyamat-hibák megkülönböztetéséhez. A jelentett hibaüzenetek többnyire hasonlóak kisebb eltérésekkel az egyértelműség kedvéért.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

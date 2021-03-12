@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5d72eaa28cfe3d114d2ab48cb1e477074a8bf739
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 3c1b63ba623eb1699938476825a77fd40d838142
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693258"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797219"
 ---
 # <a name="whats-new-or-changed-in-dynamics-ax-70-february-2016"></a>Újdonságok és változások a Dynamics AX 7.0 (2016. február) architektúrájában
 
@@ -734,7 +734,7 @@ A Kiskereskedelmi kiszolgáló és adatkezelés lehetővé teszi a vevők és v�
 </tr>
 <tr>
 <td>Adatok áthelyezése Microsoft Dynamics AX back-office és a csatornák között a Commerce Data Exchange használatával.</td>
-<td>A Commerce Data Exchange olyan rendszer, amely átviszi az adatokat a Microsoft Dynamics AX és a kiskereskedelmi csatornák között, például online áruházak és a fizikai üzletek között. További tudnivalók: <a href="https://technet.microsoft.com/library/dn741440.aspx">Commerce Data Exchange [AX 2012]</a>.</td>
+<td>A Commerce Data Exchange olyan rendszer, amely átviszi az adatokat a Microsoft Dynamics AX és a kiskereskedelmi csatornák között, például online áruházak és a fizikai üzletek között. További tájékoztatást a következő témakörben talál: <a href="https://technet.microsoft.com/library/dn741440.aspx">Commerce Data Exchange [AX 2012]</a>.</td>
 <td>A Microsoft Dynamics AX 2012 CU8-cal funkcionális paritás áll rendelkezésre. Azonban vegye figyelembe a következőket:
 <ul>
 <li>Commerce Data Exchange funkciót újra kialakították a felhő számára.</li>
@@ -1033,6 +1033,3 @@ Van egy továbbfejlesztett „kevés támogatást igénylő” ügyfélösszetev
 [Új vagy módosult elemek Finance and Operations kezdőlapján](whats-new-changed.md)
 
 [Új feladatútmutatók (2016. február)](new-task-guides-available-february-2016.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

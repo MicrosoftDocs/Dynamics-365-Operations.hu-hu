@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
-ms.openlocfilehash: 4fe97ca8e1eecdc064ad4d21d5acdeade9f33d9c
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 3721416ce720167a6f78e26583de84af9c8d086b
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694495"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798427"
 ---
 # <a name="create-alert-rules"></a>Figyelmeztetési szabályok létrehozása
 
@@ -40,7 +40,7 @@ Az adatmódosítási és a határidővel kapcsolatos figyelmeztetéseket tartalm
 
 A figyelmeztetési szabályt kiváltó esemény lehet egy elérkező dátum vagy egy bizonyos módosítás. Az események kiváltói meghatározhatók a **Figyelmeztetés feltétele** gyorslapján a **Figyelmeztetési szabály létrehozása** párbeszédpanelnek. Az adott mezőhöz rendelkezésre álló események a kiválasztott kiváltótól függően változnak.
 
-Ha például egy figyelmeztetési szabályt állít be a **Kezdő dátum** mezőhöz, a határidős események megfelelőek. Emiatt **a határidő** eseménytípus elérhető a mező esetében. Azonban a **Költséghely** és hasonló mezőkhöz a határidős események nem megfelelők. Emiatt **a határidő** eseménytípus nem érhető el. Ehelyett a **megváltozott** eseménytípus érhető el.
+Ha például egy figyelmeztetési szabályt állít be a **Kezdő dátum** mezőhöz, a határidős események megfelelőek. Emiatt az `is due in` eseménytípus elérhető a mező esetében. Azonban a **Költséghely** és hasonló mezőkhöz a határidős események nem megfelelők. Emiatt az `is due in` eseménytípus nem érhető el. Ehelyett a `has changed` eseménytípus érhető el.
 
 ## <a name="event-types"></a>Eseménytípusok
 
@@ -86,10 +86,10 @@ A figyelmeztetéseket az üzleti események keretrendszerén kívül is el lehet
 2. A műveleti ablakban a **Beállítások** lapon a **Megosztás** csoportban válassza az **Figyelmeztetési szabály létrehozása** lehetőséget.
 3. A **Figyelmeztetési szabály létrehozása** párbeszédablak **Mező** mezőjében válassza ki a megfigyelni kívánt mezőt.
 4. Az **Esemény** mezőben jelölje ki az esemény típusát.
-5. A **Figyelmeztetés időszaka** gyorslapon válassz a kívánt beállítást. Ha üzleti eseményként szeretné elküldeni a figyelmeztetést, győződjön meg arról, hogy az **Egész szervezet** beállítás értéke **Nem**.
+5. A **Figyelmeztetés időszaka** gyorslapon válassz a kívánt beállítást. Ha üzleti eseményként szeretné elküldeni a figyelmeztetést, állítsa az **Egész szervezet** beállítás értékét **Nem** értékre.
 6. Ha azt szeretné, hogy egy figyelmeztetési szabály egy megadott dátumon érvényét veszítse, válasszon ki egy befejezési dátumot a **Figyelmeztetés vége** gyorslapon.
 7. A **Figyelmeztetés módja** gyorslapon a **Tárgy** mezőben fogadja el az e-mail üzenet alapértelmezett tárgyát, vagy adjon meg egy új tárgyat. A szöveg a figyelmeztetés kezdeményezése esetén küldött e-mail üzenet tárgya lesz. Ha üzleti eseményként szeretné elküldeni a figyelmeztetést, akkor a **Külső küldést** az **igen** értékre állítja.
-8. Az **Üzenet** mezőbe beírható egy üzenet, ez azonban nem kötelező. Ez az az üzenet, amely megjelenik egy figyelmeztetés kezdeményezése esetén.
+8. Az **Üzenet** mezőbe beírható egy üzenet, ez azonban nem kötelező. A szöveg a figyelmeztetés kezdeményezésekor kapott üzenet lesz
 9. Kattintson az **OK** gombra a beállítások mentéséhez és a figyelmeztetési szabály létrehozásához.
 
 ## <a name="limitations-and-workarounds"></a>Korlátozások és megkerülő megoldások
@@ -102,6 +102,3 @@ Nem hozhatók létre figyelmeztetések az űrlapok egyes másodlagos adatforrás
     ```
 2. Hozzon létre figyelmeztetést a SysTableBrowser űrlapról.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

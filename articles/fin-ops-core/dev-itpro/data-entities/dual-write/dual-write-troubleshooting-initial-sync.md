@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: a7ba4fa4771324b4bcb8464649bd8ce8f32024c0
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: a2f0e0cbf0f8710dc020a48506775fa28df9c2d2
+ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683559"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4744637"
 ---
 # <a name="troubleshoot-issues-during-initial-synchronization"></a>Problémák elhárítása a kezdeti szinkronizációkor
 
@@ -98,7 +98,7 @@ Hibaüzenet jelenhet meg, ha bármely leképezésben önmagára mutató hivatkoz
 
 ## <a name="resolve-errors-in-the-vendors-v2tomsdyn_vendors-table-mapping"></a><a id="error-vendor-map"></a>Hibák elhárítása a szállítók V2–to–msdyn_vendors táblaleképezésben
 
-Előfordulhat, hogy kezdeti szinkronizálási hibákkal találkozik a **Szállítók V2** – **msdyn\_vendors** leképezés során, ha az táblák rendelkeznek meglévő sorokkal amelyek értékeket tartalmaznak a **PrimaryContactPersonId** és **InvoiceVendorAccountNumber** mezőkben. Ezek a hibák azért fordulnak elő, mert az **InvoiceVendorAccountNumber** egy saját magára hivatkozó mező, és a **PrimaryContactPersonId** egy körkörös hivatkozás a szállítói hozzárendelésben.
+Előfordulhat, hogy kezdeti szinkronizálási hibákkal találkozik a **Szállítók V2** – **msdyn\_vendors** leképezés során, ha az táblák rendelkeznek meglévő sorokkal amelyek értékeket tartalmaznak a **PrimaryContactPersonId** és **InvoiceVendorAccountNumber** oszlopokban. Ezek a hibák azért fordulnak elő, mert az **InvoiceVendorAccountNumber** egy saját magára hivatkozó oszlop, és a **PrimaryContactPersonId** egy körkörös hivatkozás a szállítói hozzárendelésben.
 
 A kapott hibaüzenetek a következő formátumban jelennek meg.
 
@@ -109,26 +109,26 @@ A kapott hibaüzenetek a következő formátumban jelennek meg.
 - *Nem sikerült a mező GUID-értékét feloldani: msdyn\_vendorprimarycontactperson.msdyn\_contactpersonid. A keresés nem található: 000056. Próbálja meg ezt az URL-címet, és ellenőrizze, hogy létezik-e a hivatkozási adat: `https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/contacts?$select=msdyn_contactpersonid.contactid&$filter=msdyn_contactpersonid eq '000056'`*
 - *Nem sikerült a mező GUID-értékét feloldani: msdyn\_invoicevendoraccountnumber.msdyn\_vendoraccountnumber. A keresés nem található: V24-1. Próbálja meg ezt az URL-címet, és ellenőrizze, hogy létezik-e a hivatkozási adat: `https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/msdn_vendors?$select=msdyn_vendoraccountnumber,msdyn_vendorid&$filter=msdyn_vendoraccountnumber eq 'V24-1'`*
 
-Ha a szállítói entitásnak a **PrimaryContactPersonId** és az **InvoiceVendorAccountNumber** soraiban értékei vannak, akkor a kezdeti szinkronizálás befejezéséhez kövesse az alábbi szakasz lépéseit.
+Ha a szállítói táblának a **PrimaryContactPersonId** és az **InvoiceVendorAccountNumber** oszlopaiban értékei vannak, akkor a kezdeti szinkronizálás befejezéséhez kövesse az alábbi szakasz lépéseit.
 
-1. A Finance and Operations alkalmazásban törölje a **PrimaryContactPersonId** és az **InvoiceVendorAccountNumber** mezőket a leképezésből, és mentse a leképezést.
+1. A Finance and Operations alkalmazásban törölje a **PrimaryContactPersonId** és az **InvoiceVendorAccountNumber** oszlopokat a leképezésből, és mentse a leképezést.
 
     1. Nyissa meg a **Vendors V2 (msdyn\_vendors)** kettős írás leképezési lapját , és válassza ki az **Táblaleképezések** fület: A bal oldali szűrőben válassza a **Finance and Operations apps.Vendors V2** lehetőséget. A jobb oldali szűrőben válassz a **Sales.Vendor** lehetőséget.
-    2. Keressen rá a **primarycontactperson** elemre a **PrimaryContactPersonId** forrásmező megkereséséhez.
+    2. Keressen rá a **primarycontactperson** elemre a **PrimaryContactPersonId** forrásoszlop megkereséséhez.
     3. Válassza a **Műveletek**, majd a **Törlés** lehetőséget.
 
-        ![A PrimaryContactPersonId mező törlése](media/vend_selfref3.png)
+        ![A PrimaryContactPersonId oszlop törlése](media/vend_selfref3.png)
 
-    4. Az **InvoiceVendorAccountNumber** mező törléséhez ismételje meg ezeket a lépéseket.
+    4. Az **InvoiceVendorAccountNumber** oszlop törléséhez ismételje meg ezeket a lépéseket.
 
-        ![Az InvoiceVendorAccountNumber mező törlése](media/vend-selfref4.png)
+        ![Az InvoiceVendorAccountNumber oszlop törlése](media/vend-selfref4.png)
 
     5. Mentse a leképezésen végrehajtott módosításokat.
 
-2. Kapcsolja ki a **Szállító V2** entitás módosításainak nyomon követését.
+2. Kapcsolja ki a **Szállító V2** tábla módosításainak nyomon követését.
 
     1. Az **Adatkezelés** munkaterületen válassza az **Adattáblák** csempét.
-    2. Válassza ki a **Szállítók V2** entitást.
+    2. Válassza ki a **Szállítók V2** táblát.
     3. A műveleti ablaktáblán válassza a **Beállítások**, majd a **Változáskövetés** elemet.
 
         ![A módosítás nyomon követése beállítás kiválasztása](media/selfref_options.png)
@@ -138,14 +138,14 @@ Ha a szállítói entitásnak a **PrimaryContactPersonId** és az **InvoiceVendo
         ![Kattintás a Változáskövetés tiltása lehetőségre](media/selfref_tracking.png)
 
 3. Futtassa a **Szállítók v2 (msdyn\_vendors)** hozzárendelésének kezdeti szinkronizálását. A kezdeti szinkronizálásnak hiba nélkül kell lefutnia.
-4. Futtassa a **CDS kapcsolattartók V2 (kapcsolattartók)** hozzárendelésének kezdeti szinkronizálását. Akkor kell szinkronizálnia ezt a leképezést, ha szinkronizálni szeretné az elsődleges kapcsolattartó mezőt a szállítók entitásban, mert a kapcsolattartók sorainak kezdeti szinkronizálását is el kell végezni.
-5. Adja hozzá ismét a **PrimaryContactPersonId** és **InvoiceVendorAccountNumber** mezőket a **Szállítók v2 (msdyn\_vendors)** leképezéshez, és mentse a leképezést.
+4. Futtassa a **CDS kapcsolattartók V2 (kapcsolattartók)** hozzárendelésének kezdeti szinkronizálását. Akkor kell szinkronizálnia ezt a leképezést, ha szinkronizálni szeretné az elsődleges kapcsolattartó oszlopot a szállítók táblában, mert a kapcsolattartók sorainak kezdeti szinkronizálását is el kell végezni.
+5. Adja hozzá ismét a **PrimaryContactPersonId** és **InvoiceVendorAccountNumber** oszlopokat a **Szállítók v2 (msdyn\_vendors)** leképezéshez, és mentse a leképezést.
 6. Futtassa ismét a **Szállítók v2 (msdyn\_vendors)** hozzárendelésének kezdeti szinkronizálását. Minden sor szinkronizálva lesz, mert a változások követése le van tiltva.
-7. Kapcsolja be a **Szállító V2** entitás módosításainak nyomon követését ismét.
+7. Kapcsolja be a **Szállító V2** tábla módosításainak nyomon követését ismét.
 
 ## <a name="resolve-errors-in-the-customers-v3toaccounts-table-mapping"></a><a id="error-customer-map"></a>Hibák elhárítása a Vevők v3 – Ügyfelek a táblaleképezésben
 
-Előfordulhat, hogy kezdeti szinkronizálási hibákkal találkozik a **Szállítók V3** – **Fiókok** leképezés során, ha az táblák rendelkeznek meglévő sorokkal amelyek értékeket tartalmaznak a **ContactPersonID** és **InvoiceAccount** mezőkben. Ezek a hibák azért fordulnak elő, mert az **InvoiceAccount** egy saját magára hivatkozó mező, és a **ContactPersonID** egy körkörös hivatkozás a szállítói hozzárendelésben.
+Előfordulhat, hogy kezdeti szinkronizálási hibákkal találkozik a **Szállítók V3** – **Fiókok** leképezés során, ha az táblák rendelkeznek meglévő sorokkal amelyek értékeket tartalmaznak a **ContactPersonID** és **InvoiceAccount** oszlopokban. Ezek a hibák azért fordulnak elő, mert az **InvoiceAccount** egy saját magára hivatkozó oszlop, és a **ContactPersonID** egy körkörös hivatkozás a szállítói hozzárendelésben.
 
 A kapott hibaüzenetek a következő formátumban jelennek meg.
 
@@ -156,26 +156,26 @@ A kapott hibaüzenetek a következő formátumban jelennek meg.
 - *Nem sikerült a mező GUID-értékét feloldani: primarycontactid.msdyn\_contactpersonid. A keresés nem található: 000056. Próbálja meg ezt az URL-címet, és ellenőrizze, hogy létezik-e a hivatkozási adat: `https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/contacts?$select=msdyn_contactpersonid.contactid&$filter=msdyn_contactpersonid eq '000056'`*
 - *Nem sikerült a mező GUID-értékét feloldani: msdyn\_billingaccount.accountnumber. A keresés nem található: 1206-1. Próbálja meg ezt az URL-címet, és ellenőrizze, hogy létezik-e a hivatkozási adat: `https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/accounts?$select=accountnumber.account&$filter=accountnumber eq '1206-1'`*
 
-Ha az ügyfélentitás bármelyik sorának a **ContactPersonId** és az **InvoiceAccount** mezőben értékei vannak, akkor a kezdeti szinkronizálás befejezéséhez kövesse az alábbi szakasz lépéseit. Ezt a megközelítést használhatja bármely gyári táblákhoz például a **Partnerek** és **Kapcsolattartók** entitásokhoz.
+Ha az ügyféltábla bármelyik sorának a **ContactPersonId** és az **InvoiceAccount** oszlopokban értékei vannak, akkor a kezdeti szinkronizálás befejezéséhez kövesse az alábbi szakasz lépéseit. Ezt a megközelítést használhatja bármely gyári táblákhoz például a **Partnerek** és **Kapcsolattartók** entitásokhoz.
 
-1. A Finance and Operations alkalmazásban törölje a **ContactPersonID** és **InvoiceAccount** mezőket az **Ügyfelek V3 (partnerek)** leképezésből, és mentse a leképezést.
+1. A Finance and Operations alkalmazásban törölje a **ContactPersonID** és **InvoiceAccount** oszlopokat az **Ügyfelek V3 (partnerek)** leképezésből, és mentse a leképezést.
 
     1. Nyissa meg az **Ügyfelek V3 (partnerek)** kettős írás leképezési lapját , és válassza ki az **Táblaleképezések** fület: A bal oldali szűrőben válassza a **Finance and Operations app.Customers V3** lehetőséget. A jobb oldali szűrőben válassza a **Dataverse.Account** lehetőséget.
-    2. Keressen rá a **contactperson** elemre a **ContactPersonID** forrásmező megkereséséhez.
+    2. Keressen rá a **contactperson** elemre a **ContactPersonID** forrásoszlop megkereséséhez.
     3. Válassza a **Műveletek**, majd a **Törlés** lehetőséget.
 
-        ![A ContactPersonID mező törlése](media/cust_selfref3.png)
+        ![A ContactPersonID oszlop törlése](media/cust_selfref3.png)
 
-    4. Az **InvoiceAccount** mező törléséhez ismételje meg ezeket a lépéseket.
+    4. Az **InvoiceAccount** oszlop törléséhez ismételje meg ezeket a lépéseket.
 
-        ![A InvoiceAccount mező törlése](media/cust_selfref4.png)
+        ![A InvoiceAccount oszlop törlése](media/cust_selfref4.png)
 
     5. Mentse a leképezésen végrehajtott módosításokat.
 
-2. Kapcsolja ki az **Ügyfél V3** entitás módosításainak nyomon követését.
+2. Kapcsolja ki az **Ügyfél V3** tábla módosításainak nyomon követését.
 
     1. Az **Adatkezelés** munkaterületen válassza az **Adattáblák** csempét.
-    2. Válassza ki az **Ügyfelek V3** entitást.
+    2. Válassza ki az **Ügyfelek V3** táblát.
     3. A műveleti ablaktáblán válassza a **Beállítások**, majd a **Változáskövetés** elemet.
 
         ![A módosítás nyomon követése beállítás kiválasztása](media/selfref_options.png)
@@ -190,7 +190,7 @@ Ha az ügyfélentitás bármelyik sorának a **ContactPersonId** és az **Invoic
     > [!NOTE]
     > Két olyan megfeleltetés van, amelyeknek ugyanaz a neve. Válassza ki azt a leképezést, amelynek a következő a leírása a **Részletek** lapon: **Kettős írású sablon a FO.CDS Vendor Contacts V2 – CDS.Contacts szinkronizálásához. Új csomag szükséges \[Dynamics365SupplyChainExtended\].**
 
-5. Adja hozzá ismét az **InvoiceAccount** és **ContactPersonId** mezőket az **Ügyfelek V3 (partnerek)** leképezéshez, majd mentse a leképezést. Most az **InvoiceAccount** és a **ContactPersonId** mező is újra része az élő szinkronizálási üzemmódnak. A következő lépésben végre fogja hajtani ezeknek a mezőknek a kezdeti szinkronizálását.
+5. Adja hozzá ismét az **InvoiceAccount** és **ContactPersonId** oszlopot az **Ügyfelek V3 (partnerek)** leképezéshez, majd mentse a leképezést. Most az **InvoiceAccount** és a **ContactPersonId** oszlop is újra része az élő szinkronizálási üzemmódnak. A következő lépésben végre fogja hajtani ezeknek az oszlopoknak a kezdeti szinkronizálását.
 6. Futtassa le az **Ügyfelek V3 (Partnerek)** hozzárendelésének kezdeti szinkronizálását ismét. Mivel a változások követése ki van kapcsolva, szinkronizálva lesznek az **InvoiceAccount** és a **ContactPersonId** adatai a Finance and Operations alkalmazásból a Dataverse-szolgáltatásba.
 7. Ha szinkronizálni szeretné az **InvoiceAccount** és a **ContactPersonId** adatait a Dataverse-szolgáltatásból a Finance and Operations alkalmazásba, akkor egy adatintegrációs projektet kell használnia.
 
@@ -210,7 +210,4 @@ Ha az ügyfélentitás bármelyik sorának a **ContactPersonId** és az **Invoic
 
     A sorok kezdeti szinkronizálása most befejeződött.
 
-8. Engedélyezze újra Finance and Operations alkalmazásban az **Ügyfelek V3** entitás változáskövetését.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+8. Engedélyezze újra Finance and Operations alkalmazásban az **Ügyfelek V3** tábla változáskövetését.

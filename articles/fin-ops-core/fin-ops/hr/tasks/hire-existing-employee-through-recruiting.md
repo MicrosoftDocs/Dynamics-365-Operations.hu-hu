@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5df30e403c4b1c7d3abc88ae98c73d797bceef02
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 42a6fbdad19db3c85509078c9f7549a6397f93fc
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693112"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797259"
 ---
 # <a name="hire-existing-employees-through-recruitment"></a>Meglévő dolgozók felvétele toborzás útján
 
@@ -40,6 +40,3 @@ Időnként a nyitott pozíciók feltölthetők olyan pályázókkal, akik már a
 9. Kattintson a Pozíció módosítása gombra.
     * Ezen a ponton a kompenzáció is módosítható. Ha most nem rendel hozzá kompenzációt, módosíthatja a munkaképernyőn, a Kompenzáció lap és Rögzített terv kiválasztásával. Miután kiválasztotta a Pozíció módosítása lehetőséget, az alkalmazás állapota „Alkalmazott”-ra frissül.  
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

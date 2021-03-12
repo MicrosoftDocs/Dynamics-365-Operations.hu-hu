@@ -11,25 +11,24 @@ ms.technology: ''
 ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 220314
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 72db7660c07b2f57f8609ab6c14964193e842d75
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 4ba696fb7a8d9083d11cc29953cf1340a581afcf
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688567"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797341"
 ---
 # <a name="inspect-the-configured-er-component-to-prevent-runtime-issues"></a>A konfigurált ER-összetevő ellenőrzése a futásidejű problémák megelőzése érdekében
 
 [!include[banner](../includes/banner.md)]
 
-Minden konfigurált [Elektronikus jelentéskészítési (ER)](general-electronic-reporting.md) [formátum](general-electronic-reporting.md#FormatComponentOutbound) és [modell-leképezési](general-electronic-reporting.md#data-model-and-model-mapping-components) összetevő [ellenőrizhető](er-fillable-excel.md#validate-an-er-format) a tervezés során. Ennek az ellenőrzésnek a során a rendszer konzisztenciaellenőrzést végez a futásidejű problémák megelőzése érdekében, mint például a végrehajtási hibák és a teljesítmény romlása. Minden megtalált probléma esetében a problémás elem elérési útja is meg van adva. Bizonyos problémák esetében automatikus javítás is rendelkezésre áll.
+Minden konfigurált [Elektronikus jelentéskészítési (ER)](general-electronic-reporting.md) [formátum](general-electronic-reporting.md#FormatComponentOutbound) és [modell-leképezési](general-electronic-reporting.md#data-model-and-model-mapping-components) összetevő [ellenőrizhető](er-fillable-excel.md#validate-an-er-format) a tervezés során. Ennek az ellenőrzésnek a során a rendszer konzisztencia-ellenőrzést futtat a futásidejű problémák megelőzése érdekében, mint például a végrehajtási hibák és a teljesítmény romlása. Minden megtalált probléma esetében a problémás elem elérési útja is megadja az ellenőrzés. Bizonyos problémák esetében automatikus javítás is rendelkezésre áll.
 
 Alapértelmezés szerint a program automatikusan alkalmazza az ellenőrzést a következő esetekben egy ER-konfiguráció esetében, amely tartalmazza a korábban említett ER-komponenseket.
 
@@ -101,7 +100,7 @@ Az alábbi táblázat tartalmazza az ER által kínált vizsgálatokat. Ha tová
 <td>Hiba</td>
 <td>
 <p>A típus &lt;típus&gt; kifejezés nem konvertálható típus &lt;típus&gt; mezővé.</p>
-<p><b>Futásidejű hiba:</b> Kivétel típusa</p>
+<p><b>Futásidejű hiba:</b> Kivétel típushoz</p>
 </td>
 </tr>
 <tr>
@@ -211,7 +210,7 @@ Az alábbi táblázat tartalmazza az ER által kínált vizsgálatokat. Ha tová
 
 ## <a name="type-conversion"></a><a id="i1"></a>Típuskonverzió
 
-Az ER ellenőrzi, hogy az adattípusú mező adattípusa kompatibilis-e annak a kifejezésnek az adattípusával, amely konfigurálva van a mező kötéséhez. Ha az adattípusok nem kompatíbilisek, akkor egy ellenőrzési hiba fordul elő az ER modell-leképezés tervezőben. Az az üzenet, amelyet kap tájékoztatja, hogy az ER nem tudja az A típusú kifejezést B típusú mezővé átalakítani.
+Az ER ellenőrzi, hogy az adattípusú mező adattípusa kompatibilis-e annak a kifejezésnek az adattípusával, amely konfigurálva van a mező kötéséhez. Ha az adattípusok nem kompatibilisek, akkor egy ellenőrzési hiba fordul elő az ER modell-leképezés tervezőben. Az az üzenet, amelyet kap tájékoztatja, hogy az ER nem tudja az A típusú kifejezést B típusú mezővé átalakítani.
 
 A következő lépések a problémák előfordulásának módját mutatják be.
 
@@ -330,10 +329,10 @@ A következő lépések a problémák előfordulásának módját mutatják be.
 3. Adja a következő nevet az új adatforrásnak: **Szállító**. A **Tábla** mezőben válassza ki a **VendTable** elemet és adja meg, hogy ez az adatforrás igényelni fogja a VendTable táblát.
 4. Adjon hozzá egy **Számított mező** típusú adatforrást.
 5. Nevezze el az új **FilteredVendor** adatforrást , és konfigurálja úgy, hogy a `FILTER(Vendor, Vendor.AccountNum="US-101")` kifejezést tartalmazza.
-6. Válassza az **Ellenőrzés** lehetőséget , ha ellenőrizni szeretné a **Modell-leképezés tervező** lapjának szerkeszthető modell-leképezési összetevőjét , és ellenőrizze, hogy a **Szállító** adatforrás `FILTER(Vendor, Vendor.AccountNum="US-101")` kifejezését le lehet-e kérdezni.
+6. Válassza az **Ellenőrzés** lehetőséget, ha ellenőrizni szeretné a **Modell-leképezés tervező** lapjának szerkeszthető modell-leképezési összetevőjét , és ellenőrizze, hogy a **Szállító** adatforrás `FILTER(Vendor, Vendor.AccountNum="US-101")` kifejezését le lehet-e kérdezni.
 7. Módosítsa a **Szállító** adatforrást úgy, hogy hozzáad egy **Számított mező** típusú beágyazott mezőt, hogy megkapja a rövidített szállítói számlaszámot.
 8. Nevezze el az új beágyazott mezőt **$AccNumber** néven adatforrást , és konfigurálja úgy, hogy a `TRIM(Vendor.AccountNum)` kifejezést tartalmazza.
-9. Válassza az **Ellenőrzés** lehetőséget , ha ellenőrizni szeretné a **Modell-leképezés tervező** lapjának szerkeszthető modell-leképezési összetevőjét , és ellenőrizze, hogy a **Szállító** adatforrás `FILTER(Vendor, Vendor.AccountNum="US-101")` kifejezését le lehet-e kérdezni.
+9. Válassza az **Ellenőrzés** lehetőséget, ha ellenőrizni szeretné a **Modell-leképezés tervező** lapjának szerkeszthető modell-leképezési összetevőjét , és ellenőrizze, hogy a **Szállító** adatforrás `FILTER(Vendor, Vendor.AccountNum="US-101")` kifejezését le lehet-e kérdezni.
 
     ![A kifejezés ellenőrzése a modell-leképezés tervező lapján kérdezhető le](./media/er-components-inspections-04.gif)
 
@@ -493,7 +492,7 @@ Az érvényesítési rácsban említett összes adatforrás kifejezéseit manuá
 
 ## <a name="preferability-of-allitemsquery-vs-allitems-function"></a><a id="i8"></a>Az ALLITEMSQUERY és ALLITEMS fügvények előnyben részesítése
 
-A beépített [ALLITEMS](er-functions-list-allitems.md) és [ALLITEMSQUERY](er-functions-list-allitemsquery.md) ER-függvények egy összeolvasztott **Rekordlista**-érték lehívására szolgálnak, amely a megadott elérési úttal megegyező összes elemet reprezentáló rekordok listájából áll. Az ER ellenőrzi, hogy az **ALLITEMS** függvényben megadott adatforráshoz közvetlen SQL-lekérdezés létrehozható-e. Ha sikerül megvalósítani a közvetlen hívást, akkor ellenőrzési figyelmeztetés fordul elő az ER modell-leképezés tervezőben. A kapott üzenet azt javasolja, hogy a hatásfok növelése érdekében a **ALLITEMS** függvény helyett a **ALLITEMSQUERY** függvényt használja.
+A beépített [ALLITEMS](er-functions-list-allitems.md) és [ALLITEMSQUERY](er-functions-list-allitemsquery.md) ER-függvények egy összeolvasztott **Rekordlista**-értéket adnak vissza, amely a megadott elérési úttal megegyező összes elemet reprezentáló rekordok listájából áll. Az ER ellenőrzi, hogy az **ALLITEMS** függvényben megadott adatforráshoz közvetlen SQL-lekérdezés létrehozható-e. Ha sikerül megvalósítani a közvetlen hívást, akkor ellenőrzési figyelmeztetés fordul elő az ER modell-leképezés tervezőben. A kapott üzenet azt javasolja, hogy a hatásfok növelése érdekében a **ALLITEMS** függvény helyett a **ALLITEMSQUERY** függvényt használja.
 
 A következő lépések a problémák előfordulásának módját mutatják be.
 
@@ -526,7 +525,7 @@ Az érvényesítési rácsban említett összes adatforrás kifejezéseit manuá
 
 ## <a name="consideration-of-empty-list-cases"></a><a id="i9"></a>Üres listaesetek megfontolása
 
-Az ER formátum vagy a modellleképezési összetevő konfigurálásával lekérheti **Rekordlista** típusú adatforrás mezőértékét. Az ER ellenőrzi, hogy a terv figyelembe veszi-e azt az esetet, amikor egy meghívott adatforrás nem tartalmaz rekordokat (azaz üres), hogy megakadályozza a futásidejű hibákat, amikor egy értéket nem létező rekord mezőjéből lehívnak.
+Az ER formátum vagy a modell-leképezési összetevő konfigurálásával lekérheti **Rekordlista** típusú adatforrás mezőértékét. Az ER ellenőrzi, hogy a terv figyelembe veszi-e azt az esetet, amikor egy meghívott adatforrás nem tartalmaz rekordokat (azaz üres), hogy megakadályozza a futásidejű hibákat, amikor egy értéket nem létező rekord mezőjéből lehívnak.
 
 A következő lépések a problémák előfordulásának módját mutatják be.
 
@@ -573,11 +572,11 @@ A következő lépések a problémák előfordulásának módját mutatják be.
 
     ![Adatforrásokhoz kapcsolt formátumelemek ellenőrzése a Formátumtervező lapon](./media/er-components-inspections-09c.png)
 
-16. A következő ellenőrzési hibák jelentkeznek. Az üzenet tájékoztatja, hogy hiba jelentkezhet a konfigurált **Utasítás\\Fél\\Név** és **Utasítás\\Fél\\AccountNum** formátumösszetevőkhoz futásidőben, ha a **model.Vendor** lista üres.
+16. A következő ellenőrzési hiba jelentkezik. Az üzenet tájékoztatja, hogy hiba jelentkezhet a konfigurált **Utasítás\\Fél\\Név** és **Utasítás\\Fél\\AccountNum** formátum-összetevőkhöz futásidőben, ha a `model.Vendor` lista üres.
 
     ![Ellenőrzési hiba, amely értesíti a konfigurált formátumösszetevők lehetséges hibájáról](./media/er-components-inspections-09d.png)
 
-A következő ábra bemutatja azt a futásidejű hibát, amely akkor jelentkezik, ha figyelmen kívül hagyja a figyelmeztetést, és a **Futtatás** paranccsal futtatja a formátumot és egy nem létező szállító számlaszámát választaja ki. Mivel a kért szállító nem létezik, a **model.Vendor** lista üres lesz (azaz nem tartalmaz rekordokat).
+A következő ábra bemutatja azt a futásidejű hibát, amely akkor jelentkezik, ha figyelmen kívül hagyja a figyelmeztetést, és a **Futtatás** paranccsal futtatja a formátumot és egy nem létező szállító számlaszámát választaja ki. Mivel a kért szállító nem létezik, a `model.Vendor` lista üres lesz (azaz nem tartalmaz rekordokat).
 
 ![Futásidejű hibák, mert valami történt a formátumleképezés futtatásakor](./media/er-components-inspections-09e.png)
 
@@ -589,15 +588,15 @@ A **Figyelmeztetések** lap rácsának kijelölt sorához válassza a **Kapcsol�
 
 #### <a name="option-1"></a>1. beállítás
 
-Kapcsolhatja az **Utasítás\\Fél\\Név** formátumelemet a **model.Vendor.Name** adatforrás elemhez. Futásidőben ez a kötés először meghívja a **model.Vendor** adatforrást. Amikor a **model.Vendor** üres rekordlistát ad vissza, a beágyazott formátumelemek nem futnak. Ezért nem jelennek meg érvényesítési figyelmeztetések ehhez a formátumkonfigurációhoz.
+Kapcsolhatja az **Utasítás\\Fél\\Név** formátumelemet a `model.Vendor` adatforrás elemhez. Futásidőben ez a kötés először meghívja a `model.Vendor` adatforrást. Amikor a `model.Vendor` üres rekordlistát ad vissza, a beágyazott formátumelemek nem futnak. Ezért nem jelennek meg érvényesítési figyelmeztetések ehhez a formátumkonfigurációhoz.
 
 ![Kapcsolja a formátumelemet az adatforrás-elemhez a Formátumtervező lapon](./media/er-components-inspections-09e.gif)
 
 #### <a name="option-2"></a>2. beállítás
 
-Módosítsa az **Utasítás\\Fél\\Név** formátumelemet `model.Vendor.Name` helyett `FIRSTORNULL(model.Vendor).Name` értékre. A frissített kötés feltételesen konvertálja a **model.Vendor** adatforrás első rekordját a **Rekordlista típus** típusból egy új **Rekord** típusú adatforráshoz. Ez az új adatforrás ugyanazt a mezőhalmazt tartalmazza.
+Módosítsa az **Utasítás\\Fél\\Név** formátumelemet `model.Vendor.Name` helyett `FIRSTORNULL(model.Vendor).Name` értékre. A frissített kötés feltételesen konvertálja a `model.Vendor` adatforrás első rekordját a **Rekordlista** típus típusból egy új **Rekord** típusú adatforráshoz. Ez az új adatforrás ugyanazt a mezőhalmazt tartalmazza.
 
-- Ha legalább egy rekord elérhető a **model.Vendor** adatforrásban, a rekord mezői a **model.Vendor** adatforrás első rekordja mezőinek értékeivel lesznek kitöltve. Ebben az esetben a frissített kötés a szállító nevét adja vissza.
+- Ha legalább egy rekord elérhető a `model.Vendor` adatforrásban, a rekord mezői a `model.Vendor` adatforrás első rekordja mezőinek értékeivel lesznek kitöltve. Ebben az esetben a frissített kötés a szállító nevét adja vissza.
 - Ellenkező esetben a létrehozott rekord minden mezője ki van töltve a mező adattípusának alapértelmezett értékével. Ebben az esetben az üres karakterláncot ad vissza a **Karakterlánc** adattípus alapértelmezett értékeként.
 
 Ezért nem fordulnak elő érvényesítési figyelmeztetések a **Utasítás\\Fél\\Név** formátumelemhez, ha az a `FIRSTORNULL(model.Vendor).Name` kifejezéshez van kötve.
@@ -606,13 +605,13 @@ Ezért nem fordulnak elő érvényesítési figyelmeztetések a **Utasítás\\F�
 
 #### <a name="option-3"></a>3. beállítás
 
-Ha kifejezetten szeretné meghatározni az adatokat egy generált dokumentumban, amikor a **Rekordlista** típusú **model.Vendor** adatforrás nem ad vissza rekordokat (a **Nem elérhető** szöveg ebben a példában) módosítsa az **Utasítás\\Fél\\Név** formátumelemét `model.Vendor.Name` értékről `IF(NOT(ISEMPTY(model.Vendor)), model.Vendor.Name, "Not available")` értékre. Használhatja a `IF(COUNT(model.Vendor)=0, model.Vendor.Name, "Not available")` kifejezést is.
+Ha kifejezetten szeretné meghatározni az adatokat egy generált dokumentumban, amikor a **Rekordlista** típusú `model.Vendor` adatforrás nem ad vissza rekordokat (a **Nem elérhető** szöveg ebben a példában) módosítsa az **Utasítás\\Fél\\Név** formátumelemét `model.Vendor.Name` értékről `IF(NOT(ISEMPTY(model.Vendor)), model.Vendor.Name, "Not available")` értékre. Használhatja a `IF(COUNT(model.Vendor)=0, model.Vendor.Name, "Not available")` kifejezést is.
 
 ### <a name="additional-consideration"></a><a id="i9a"></a>További megfontolandó kérdések
 
-Az ellenőrzés egy másik lehetséges problémára is figyelmezteti. Alapértelmezés szerint, amikor kapcsolja az **Utasítás\\Fél\\Név** és **Utasítás\\Fél\\AccountNum** formátumelemeket a megfelelő mezőkhöz a **Rekordlista** típusú **model.Vendor** adatforrásban, ezek a kötések futtatva lesznek, és felveszik a **model.Vendor** adatforrás első rekordja megfelelő mezőinek értékeit, ha az a lista nem üres.
+Az ellenőrzés egy másik lehetséges problémára is figyelmezteti. Alapértelmezés szerint, amikor kapcsolja az **Utasítás\\Fél\\Név** és **Utasítás\\Fél\\AccountNum** formátumelemeket a megfelelő mezőkhöz a **Rekordlista** típusú `model.Vendor` adatforrásban, ezek a kötések futtatva lesznek, és felveszik a `model.Vendor` adatforrás első rekordja megfelelő mezőinek értékeit, ha az a lista nem üres.
 
-Mert az **Utasítás\\Fél** formátumelemet nem kötötte a **model.Vendor** adatforráshoz. Szállítói adatforrás, a **Utasítás\\Fél** elem nem lesz iterálva a **model.Vendor** adatforrás minden rekordjához a formátum végrehajtása során. Ehelyett a létrehozott dokumentum csak a rekordlista első rekordjából származó adatokkal lesz kitöltve, ha az több rekordot tartalmaz. Ezért lehet, hogy probléma van, ha a formátum célja, hogy töltse ki a létrehozott dokumentumot a **model.Vendor** adatforrás összes szállítójával kapcsolatos információkkal. A probléma megoldásához kösse az **Utasítás\\Fél** elemet a **model.Vendor** adatforráshoz.
+Mert az **Utasítás\\Fél** formátumelemet nem kötötte a `model.Vendor` adatforráshoz. Szállítói adatforrás, a **Utasítás\\Fél** elem nem lesz iterálva a `model.Vendor` adatforrás minden rekordjához a formátum végrehajtása során. Ehelyett a létrehozott dokumentum csak a rekordlista első rekordjából származó adatokkal lesz kitöltve, ha az több rekordot tartalmaz. Ezért lehet, hogy probléma van, ha a formátum célja, hogy töltse ki a létrehozott dokumentumot a `model.Vendor` adatforrás összes szállítójával kapcsolatos információkkal. A probléma megoldásához kösse az **Utasítás\\Fél** elemet a `model.Vendor` adatforráshoz.
 
 ## <a name="executability-of-an-expression-with-filter-function-caching"></a><a id="i10"></a>Kifejezés végrehajthatósága a SZŰRŐ funkcióval (gyorsítótárazás)
 
@@ -699,7 +698,7 @@ A következő lépések a problémák előfordulásának módját mutatják be.
 
 14. A formátumelemeket kapcsolja a megadott adatforrásokhoz a következő módon:
 
-    - Kapcsolja az **Utasítás\\Fél** formátumelemet a **model.Vendor** adatforrás elemhez.
+    - Kapcsolja az **Utasítás\\Fél** formátumelemet a `model.Vendor` adatforrás elemhez.
     - Kapcsolja az **Utasítás\\Fél\\Név** formátumelemet a **model.Vendor.Name** adatforrás-mezőhöz.
     - Kapcsolja az **Utasítás\\Fél\\AccountNum** formátumelemet a **model.Vendor.AccountNumber** adatforrás-mezőhöz.
 
@@ -813,6 +812,3 @@ Ha meg szeretné tudni, hogyan szinkronizálható a formátumstruktúra egy ER-s
 [Az ER-formátumok végrehajtásának nyomon követése a teljesítménnyel kapcsolatos problémák elhárítása érdekében](trace-execution-er-troubleshoot-perf.md)
 
 [Üzletidokumentum-kezelés – áttekintés](er-business-document-management.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

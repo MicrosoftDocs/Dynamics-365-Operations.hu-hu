@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-04-06
-ms.openlocfilehash: 6a0f114bce6bdb7813c93e9441744d67cd043c30
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 5d39bf28dba951a1483412d967c8c6fc6dbcc610
+ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683732"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4744375"
 ---
 # <a name="currency-data-type-migration-for-dual-write"></a>Pénznem-adattípus áttelepítése kettős írás esetén
 
@@ -44,11 +44,11 @@ A migráció nem kötelező. Ha több tizedesjegyet támogatása hasznos lehet �
 
 ## <a name="requesting-migration-from-microsoft"></a>Áttelepítés kérése a Microsofttól
 
-A meglévő pénznemmezők esetében a Dataverse nem támogat négy tizedesjegynél többet. Ezért az áttelepítési folyamat során a program átmásolja az adatbázis új belső mezőibe a pénznemek értékeit. Ez a folyamat addig történik folyamatosan, amíg az összes adatot át nem telepítik. A belső működést tekintve, az áttelepítés végén az új tárolási típusok felülírják a régi tárolási típusokat, de az adatértékek változatlanok. A pénznem mező így már legfeljebb 10 tizedesjegyet képes támogatni. Az áttelepítési folyamat alatt a Dataverse megszakítás nélkül használható.
+A meglévő pénznemoszlopok esetében a Dataverse nem támogat négy tizedesjegynél többet. Ezért az áttelepítési folyamat során a program átmásolja az adatbázis új belső oszlopaiba a pénznemek értékeit. Ez a folyamat addig történik folyamatosan, amíg az összes adatot át nem telepítik. A belső működést tekintve, az áttelepítés végén az új tárolási típusok felülírják a régi tárolási típusokat, de az adatértékek változatlanok. A pénznem oszlop így már legfeljebb 10 tizedesjegyet képes támogatni. Az áttelepítési folyamat alatt a Dataverse megszakítás nélkül használható.
 
 Ugyanekkor az árfolyamok úgy módosulnak, hogy legfeljebb 12 tizedesjegyet támogassanak az aktuális 10-es határ helyett. Ennek a módosításnak meg kell lennie, hogy a tizedesjegyek száma megegyezzeb mind a Finance and Operations alkalmazásban, mind a Dataverse megoldásban.
 
-Az áttelepítés nem változtatja meg az adatokat. A pénznem és az árfolyam mező átalakítását követően az adminisztrátor beállíthatja, hogy a rendszer legfeljebb 10 tizedesjegyet használjon a pénznem mezőknek, az egyes tranzakciós pénznemek és árképzések tizedesjegyszámának megadásával.
+Az áttelepítés nem változtatja meg az adatokat. A pénznem és az árfolyam oszlop átalakítását követően az adminisztrátor beállíthatja, hogy a rendszer legfeljebb 10 tizedesjegyet használjon a pénznem oszlopoknak, az egyes tranzakciós pénznemek és árképzések tizedesjegyszámának megadásával.
 
 ### <a name="request-a-migration"></a>Áttelepítés kérése
 
@@ -72,12 +72,12 @@ Az áttelepítés befejeződése után a Dataverse több tizedesjegyet tartalmaz
 
 A módosítás érdekében a következő beállításokat kell frissítenie Power Apps megoldásban:
 
-+ **Rendszerbeállítások: Pénznem pontossága az árképzéshez** – A **Pénznem pontosságának beállítása, amely az árképzéshez használt a rendszer egészében** mező határozza meg, hogy a pénznem milyen módon viselkedjen a szervezetnél, amikor az **Árképzési pontosság** be van jelölve.
-+ **Üzleti menedzsment: Pénznemek** – A **Pénznem pontossága** mezőben egyéni számú tizedesjegyet lehet megadni egy adott pénznemhez. A szervezeti szintű beállításokra vissza lehet állni.
++ **Rendszerbeállítások: Pénznem pontossága az árképzéshez** – A **Pénznem pontosságának beállítása, amely az árképzéshez használt a rendszer egészében** oszlop határozza meg, hogy a pénznem milyen módon viselkedjen a szervezetnél, amikor az **Árképzési pontosság** be van jelölve.
++ **Üzleti menedzsment: Pénznemek** – A **Pénznem pontossága** oszlopban egyéni számú tizedesjegyet lehet megadni egy adott pénznemhez. A szervezeti szintű beállításokra vissza lehet állni.
 
 Vannak bizonyos limitációk:
 
-+ A pénznem mező nem állítható be egy entitásra.
++ A pénznem oszlop nem állítható be egy táblára.
 + Négy tizedesjegynél több tizedesjegyet csak az **Árképzés** és a **Tranzakciós pénznem** szintjén lehet megadni.
 
 ### <a name="system-settings-currency-precision-for-pricing"></a>Rendszerbeállítások: Az árképzéshez használt pénznem pontossága
@@ -88,13 +88,10 @@ Az áttelepítés befejeződése után az adminisztrátorok meghatározhatják a
 
 ### <a name="business-management-currencies"></a>Üzleti menedzsment: Pénznemek
 
-Ha azt szeretné, hogy az adott pénznemre vonatkozó pontossági érték eltérjen az árképzéshez használt pénznem pontosságától, akkor ez módosítható. Nyissa meg a **Beállítások \> Üzleti menedzsment** lehetőséget, válassza ki a **Pénznemek** elemet, majd válassza ki a módosítani kívánt pénznemet. Ezt követően állítsa be a **Pénznem pontossága** mezőt a kívánt tizedesjegyek számával, ahogy az a következő ábrán látható.
+Ha azt szeretné, hogy az adott pénznemre vonatkozó pontossági érték eltérjen az árképzéshez használt pénznem pontosságától, akkor ez módosítható. Nyissa meg a **Beállítások \> Üzleti menedzsment** lehetőséget, válassza ki a **Pénznemek** elemet, majd válassza ki a módosítani kívánt pénznemet. Ezt követően állítsa be a **Pénznem pontossága** oszlopot a kívánt tizedesjegyek számával, ahogy az a következő ábrán látható.
 
 ![Adott területi beállításhoz tartozó pénznemek beállításai](media/specific-currency.png)
 
-### <a name="tables-currency-field"></a>táblák: Pénznem mező
+### <a name="tables-currency-column"></a>táblák: Pénznem oszlop
 
-A megadott pénznem mezőkhöz konfigurálható tizedesjegyek száma legfeljebb négy lehet.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+A megadott pénznem oszlopokhoz konfigurálható tizedesjegyek száma legfeljebb négy lehet.

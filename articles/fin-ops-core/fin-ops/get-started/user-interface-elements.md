@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 0c58ac63a4eae61c9a1cc6134bd0857394895e30
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 3e087a1abec9bf177bb831b9bbfa12895054ad07
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693593"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797938"
 ---
 # <a name="user-interface-elements"></a>A felhasználói felület elemei
 
@@ -86,6 +86,3 @@ Az *eszköztár* olyan eszközöket tartalmaz, mint például a mezők hozzáad�
 A *lista* rekordok gyűjteményének a neve, amelyeket át lehet görgetni. Ezeket a rekordokat átviheti az oldalra, ha kijelöli őket. Ez a művelet gyakran egy rácsot nyit meg.
 
 ![A következő kép példákat mutat be az eszköztárakra, rácsokra és listákra.](media/user-interface-08.png)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

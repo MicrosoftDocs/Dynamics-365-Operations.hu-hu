@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d160c02403bf067ed523fbd634e65c622b522b97
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: eb2d4ab3434a563e907f6540809888cd3f671c1a
+ms.sourcegitcommit: fcc4596eeadac5dfe9a3242afa49b9b1c0c96575
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4686075"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "4740808"
 ---
 # <a name="list-of-er-functions-in-the-type-conversion-category"></a>A típuskonverzió kategóriába tartozó ER-függvények listája
 
@@ -38,6 +38,14 @@ Az Elektronikus jelentéskészítés (ER) típuskonverziós függvényei az ért
 | [IntValue](er-functions-conversion-intvalue.md)       | Ez a függvény a megadott karakterláncot jelölő *Int* értéket ad vissza. |
 | [NumberValue](er-functions-conversion-numbervalue.md) | Ez a függvény egy *Valós* értéket ad eredményül, amelyet a rendszer a megadott *Karakterlánc* értékből alakít át. Az átalakítás során a megadott tizedesjegy-elválasztókat és számjegy-csoportosítókat kell figyelembe venni. |
 | [Érték](er-functions-conversion-value.md)             | Ez a függvény egy *Valós* értéket ad eredményül, amelyet a rendszer a megadott *Karakterlánc* értékből alakít át. |
+
+## <a name="type-conversion-functions-in-the-container-category"></a>A tároló kategória típuskonverziós függvényei
+
+A következő táblázat a [tároló](er-functions-category-container.md) kategória típuskonverziós függvényeit ismerteti.
+
+| Függvény | Leírás |
+|----------|-------------|
+| [Base64StringToContainer](er-functions-container-base64stringtocontainer.md) | Ez a függvény a megadott *Karakterlánc* típusú bemenetet *Tároló* típusú adatelemmé konvertálja. |
 
 ## <a name="type-conversion-functions-in-the-date-and-time-category"></a>Típuskonverziós függvények a dátum és időpont kategóriában
 
@@ -79,6 +87,3 @@ A következő táblázat a [szöveg kategória](er-functions-category-text.md) t
 [Képletszerkesztő az Elektronikus jelentéskészítésben](general-electronic-reporting-formula-designer.md)
 
 [Elektronikus jelentéskészítés képletének nyelve](er-formula-language.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

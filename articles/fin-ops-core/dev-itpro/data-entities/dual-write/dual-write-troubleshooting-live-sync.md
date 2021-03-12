@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: ca12759096bd1bafda0a5eee18287a694083db69
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 59c8bd80b167cdfaa7a65e469f4dc7ebf8f50844
+ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685563"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4744613"
 ---
 # <a name="troubleshoot-live-synchronization-issues"></a>Élő szinkronizálási problémák elhárítása
 
@@ -46,11 +46,11 @@ A következő hibaüzenet jelenhet meg, amikor létrehoz egy sort a Finance and 
 
 A hiba elhárításához kövesse a [Rendszerkövetelmények és előfeltételek](requirements-and-prerequisites.md) szakasz lépéseit. Ezeknek a lépéseknek a végrehajtásához Dataverse szolgáltatásban létrehozott kettős írású felhasználóknak rendelkezniük kell a rendszergazda szerepkörrel. Az alapértelmezett tulajdonos csapatnak is rendelkeznie kell a rendszeradminisztrátori szerepkörrel.
 
-## <a name="live-synchronization-for-any-entity-consistently-throws-a-similar-error-when-you-create-a-row-in-a-finance-and-operations-app"></a>Egy entitás élő szinkronizálása folyamatosan hasonló hibát ad vissza, amikor egy sort hoz létre a Finance and Operations alkalmazásban
+## <a name="live-synchronization-for-any-table-consistently-throws-a-similar-error-when-you-create-a-row-in-a-finance-and-operations-app"></a>Egy tábla élő szinkronizálása folyamatosan hasonló hibát ad vissza, amikor egy sort hoz létre a Finance and Operations alkalmazásban
 
 **A hiba megtekintéséhez szükséges szerepkör:** Rendszergazda
 
-Előfordulhat, hogy a következőhöz hasonló hibaüzenet jelenik meg minden alkalommal, amikor megpróbálja menteni az entitások adatait egy Finance and Operations alkalmazásban:
+Előfordulhat, hogy a következőhöz hasonló hibaüzenet jelenik meg minden alkalommal, amikor megpróbálja menteni a táblák adatait egy Finance and Operations alkalmazásban:
 
 *A módosítások nem menthetők az adatbázisba. A munkaegység nem tudja véglegesíteni a tranzakciót. Nem lehet adatokat írni az entitás értékesítési mértékegységeibe. A UnitOfMeasureEntity írása hibaüzenettel megszakadt, nem lehet szinkronizálni az entitás értékesítési mértékegységeivel.*
 
@@ -58,8 +58,8 @@ A hiba elhárítása érdekében gondoskodni kell arról, hogy az előfeltételn
 
 Ha mindkét oldalon szerepel az adat, és megerősítette, hogy a probléma nem az adatokkal kapcsolatos kövesse ezeket a lépéseket.
 
-1. A kapcsolódó entitás leállítása.
-2. Jelentkezzen be az Finance and Operations alkalmazásba, és győződjön meg arról, hogy az DualWriteProjectConfiguration és a DualWriteProjectFieldConfiguration táblákban léteznek sorok a hibát jelző entitásokhoz. Itt megtekintheti például, hogy a lekérdezés hogyan néz ki, ha a **Vevők** hiúsul meg.
+1. A kapcsolódó tábla leállítása.
+2. Jelentkezzen be az Finance and Operations alkalmazásba, és győződjön meg arról, hogy az DualWriteProjectConfiguration és a DualWriteProjectFieldConfiguration táblákban léteznek sorok a hibát jelző táblákhoz. Itt megtekintheti például, hogy a lekérdezés hogyan néz ki, ha a **Vevők** tábla hibás.
 
     ```sql
     Select projectname, externalenvironmentURL ,\* 
@@ -68,7 +68,7 @@ Ha mindkét oldalon szerepel az adat, és megerősítette, hogy a probléma nem 
         EXTERNALENTITYNAME = 'accounts' 
     ```
 
-3. Ha a táblahozzárendelés leállítása után is léteznek sorok a hibás entitáshoz, akkor törölje a hibás entitáshoz kapcsolódó sorokat. Jegyezze fel a DualWriteProjectConfiguration tábla **projektnév** oszlopát, és kérje le a rekordot a DualWriteProjectFieldConfiguration táblában a projektnév használatával, a sor törléséhez.
+3. Ha a táblahozzárendelés leállítása után is léteznek sorok a hibás táblához, akkor törölje a hibás táblához kapcsolódó sorokat. Jegyezze fel a DualWriteProjectConfiguration tábla **projektnév** oszlopát, és kérje le a sort a DualWriteProjectFieldConfiguration táblában a projektnév használatával, a sor törléséhez.
 4. Indítsa el az tábla-hozzárendelést. Ellenőrizze, hogy az adatok szinkronizálása probléma nélkül történik-e.
 
 ## <a name="handle-read-or-write-privilege-errors-when-you-create-data-in-a-finance-and-operations-app"></a>Olvasási vagy írási jogosultsági hibák adatok létrehozása során a Finance and Operations alkalmazásban
@@ -127,6 +127,3 @@ Egy hiba javításához kövesse az alábbi lépéseket.
 
 3. Ügyeljen arra, hogy az **externalenvironmentURL** oszlop helyes Dataverse vagy alkalmazás URL-címmel rendelkezzen. Törölje a megfelelő Dataverse URL-címre mutató ismétlődő sorokat. Törölje a megfelelő sorokat a DUALWRITEPROJECTFIELDCONFIGURATION és DUALWRITEPROJECTCONFIGURATION táblákból.
 4. Állítsa le az táblák hozzárendelését, majd indítsa újra
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

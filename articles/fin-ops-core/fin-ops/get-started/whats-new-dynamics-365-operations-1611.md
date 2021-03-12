@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 0b3ede085533fee1bb779ed9da899f509a77fc0c
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 0b5856ef83ff1e101896eefbbe022e70ad954219
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693431"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797195"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-operations-version-1611-november-2016"></a>Új vagy módosult elemek a Dynamics 365 for Operations 1611-es verziójában (2016. november)
 
@@ -945,6 +945,3 @@ A Retail Modern POS jelenleg csak Windows 8.1 alkalmazásként elérhető el asz
 ## <a name="additional-resources"></a>További erőforrások
 
 [Új vagy módosult elemek Finance and Operations kezdőlapján](whats-new-changed.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

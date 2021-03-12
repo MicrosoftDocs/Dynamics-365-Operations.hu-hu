@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 088fe3c42b00a6a495aeee19a4e3640054a8aa2a
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 314f48fcac32793c96466ee807d5685e596193b1
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694765"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4796658"
 ---
 # <a name="set-up-electronic-signatures"></a>Az elektronikus aláírások beállítása
 
@@ -77,6 +77,3 @@ Ezzel a folyamattal beállíthatja az Elektronikus aláírási eljárásokat. Az
 10. Kattintson a Mentés gombra.
 11. Zárja be a lapot.
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

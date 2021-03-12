@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 2f0e3950f2b35dd8b8dbf50601b7d6b6d624863e
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: bbe634b87b3cb30ed993f9b3afeb4321d70f07e6
+ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683675"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4744879"
 ---
 # <a name="company-concept-in-dataverse"></a>Vállalat fogalma a Dataverse szolgáltatásban
 
@@ -36,7 +36,7 @@ A Finance and Operations alkalmazásban a *vállalat* koncepciója egyszerre jog
 
 A Dataverse nem rendelkezik ezzel egyenértékű koncepcióval. A legközelebbi koncepció a *részleg*, amely elsősorban biztonsági és láthatósági határ a felhasználói adatok számára. Ez a fogalom nem rendelkezik ugyanazokkal a jogi vagy üzleti vonatkozásokkal, mint a vállalat koncepciója.
 
-Mivel a részleg és a vállalat nem egyenértékű fogalmak, nem lehetséges egy-az-egyhez (1:1) leképzés kényszerítése hozzájuk a Dataverse integráció céljából. Mivel azonban a felhasználóknak alapértelmezés szerint meg kell tudniuk tekinteni ugyanazokat a sorokat az alkamazásban és a Dataverse magoldásokban, a Microsoft egy új entitást vezetett be a Dataverse megoldásban, amelynek neve cdm\_Company. Ez az entitás egyenértékű a Vállalat entitással az alkalmazásban. Annak garantálására, hogy a sorok láthatósága alapértelmezetten megegyezzen az alkalmazás és a Dataverse között, a következő beállításokat javasoljuk a Dataverse adatai számára:
+Mivel a részleg és a vállalat nem egyenértékű fogalmak, nem lehetséges egy-az-egyhez (1:1) leképzés kényszerítése hozzájuk a Dataverse integráció céljából. Mivel azonban a felhasználóknak alapértelmezés szerint meg kell tudniuk tekinteni ugyanazokat a sorokat az alkamazásban és a Dataverse megoldásokban, a Microsoft egy új táblát vezetett be a Dataverse megoldásban, amelynek neve cdm\_Company. Ez a tábla egyenértékű a Vállalat táblával az alkalmazásban. Annak garantálására, hogy a sorok láthatósága alapértelmezetten megegyezzen az alkalmazás és a Dataverse között, a következő beállításokat javasoljuk a Dataverse adatai számára:
 
 + Minden egyes kettős írási lehetőséget engedélyező Finance and Operations Vállalati sorhoz legyen létrehozva egy társított cdm\_Company sor.
 + Egy cdm\_Company sor létrehozásakor és a kettős írás engedélyezésekor egy alapértelmezett részleg jön létre ugyanazzal a névvel. Bár a részleghez automatikusan létrejön egy alapértelmezett csoport, a részleg nincs használatban.
@@ -52,23 +52,23 @@ Ezen konfigurációnak az következtében az USMF vállalathoz kapcsolódó mind
 + Az „Értékesítési menedzser” szerepkört a "„USMF Sales” csoport tagjaihoz rendelték.
 + Azok a felhasználók, akik rendelkeznek az „Értékesítési menedzser” szerepkörrel, hozzáférhetnek minden olyan partnersorhoz, amelyek ugyanannak a részlegnek a tagjai, amelynek ők is.
 + Az „USMF Sales” csapat s kapcsolva van az USMF üzleti egységhez, amely korábban említettünk.
-+ Ezért az „USMF Sales” csapat tagjai láthatnak a „USMF DW” felhasználói által birtokolt bármely olyan fiókot, amely a Finance and Operations USMF vállalati entitásából származik.
++ Ezért az „USMF Sales” csapat tagjai láthatnak a „USMF DW” felhasználói által birtokolt bármely olyan fiókot, amely a Finance and Operations USMF vállalati táblából származik.
 
 ![Hogyan használhatók a csapatok](media/dual-write-company-2.png)
 
 Ahogy az előző ábrán is látható, ez a 1:1 leképezés az üzleti egység, a vállalat és a csapat között csak egy kiindulási pont. Ebben a példában egy új „Európa” nevű részleg manuálisan lett létrehozva a Dataverse szolgáltatásban mint DEMF és ESMF szülője. Ez az új gyökérszintű részleg nem kapcsolódik kettős íráshoz. Ugyanakkor használható arra, hogy az „EUR Sales” csapat hozzáférhessen a partneradatokhoz a DEMF és az ESMF rekordokban is, azáltal, hogy az adatok láthatóságát **Szülő/gyermek részleg** értékre állítják a társított biztosági szerepkörben.
 
-Egy utolsó témában ismertetjük, hogyan határozza meg a lettős írás, hogy melyik tulajdonoshoz rendelje hozzá a sorokat. Ezt a viselkedés az **Alapértelmezett tulajdonoscsoport** mező szabályozza a cdm\_Vállalat sorban. Ha egy cdm\_Vállalat sorhoz a kettős írás engedélyezve van, egy beépülő modul automatikusan létrehozza a hozzárendelt üzleti egységet és a tulajdonos csoportot (ha még nem létezik), és beállítja az **Alapértelmezett tulajdonosi csapat** mezőt. Az adminisztrátor megváltoztathatja ezt a mezőt egy másik értékre. Azonban az adminisztrátor nem törölheti ezt a mezőt, amíg az entitiás engedélyezve van kettős íráshoz.
+Egy utolsó témában ismertetjük, hogyan határozza meg a lettős írás, hogy melyik tulajdonoshoz rendelje hozzá a sorokat. Ezt a viselkedés az **Alapértelmezett tulajdonoscsoport** oszlop szabályozza a cdm\_Vállalat sorban. Ha egy cdm\_Vállalat sorhoz a kettős írás engedélyezve van, egy beépülő modul automatikusan létrehozza a hozzárendelt üzleti egységet és a tulajdonos csoportot (ha még nem létezik), és beállítja az **Alapértelmezett tulajdonosi csapat** oszlopot. Az adminisztrátor megváltoztathatja ezt az oszlopot egy másik értékre. Azonban az adminisztrátor nem törölheti ezt az oszlopot, amíg a tábla engedélyezve van kettős íráshoz.
 
 > [!div class="mx-imgBorder"]
-![Alapértelmezett tulajdonosi csoport mező](media/dual-write-default-owning-team.jpg)
+![Alapértelmezett tulajdonosi csoport oszlop](media/dual-write-default-owning-team.jpg)
 
 ## <a name="company-striping-and-bootstrapping"></a>Cég adatcsíkozása és rendszerindítás
 
-A Dataverse-integráció vállalati azonosító segítségével létre a vállalatok paritását az adatcsíkozáshoz. Amint az alábbi ábrán látható, minden vállalatspecifikus tábla ki lesz bővítve úgy, hogy egy több-az-egyhez (N:1) kapcsolata lesz a CDM\_Companí entitással.
+A Dataverse-integráció vállalati azonosító segítségével létre a vállalatok paritását az adatcsíkozáshoz. Amint az alábbi ábrán látható, minden vállalatspecifikus tábla ki lesz bővítve úgy, hogy egy több-az-egyhez (N:1) kapcsolata lesz a CDM\_Company táblával.
 
 > [!div class="mx-imgBorder"]
-![N:1 kapcsolat a vállalatspecifikus entitás és a cdm_Company entitás között](media/dual-write-bootstrapping.png)
+![N:1 kapcsolat a vállalatspecifikus tábla és a cdm_Company tábla között](media/dual-write-bootstrapping.png)
 
 + A sorok esetében a vállalat hozzáadása és mentése után az érték írásvédett lesz. Ezért a felhasználóknak meg kell győződniük arról, hogy a megfelelő vállalatot választják ki.
 + Csak a vállalati adatokat tartalmazó sorok alkalmasak az alkalmazás és a Dataverse közötti kettős írásra.
@@ -83,7 +83,7 @@ Számos módja van annak, hogy a vállalat nevét az ügyfélkapcsolati alkalmaz
 
     :::image type="content" source="media/autopopulate-company-name-1.png" alt-text="Alapértelmezett vállalat beállítása a szervezet adatai szakaszhoz.":::
 
-+ Ha **Írás** jogosultsággal rendelkezik a **SystemUser** entitáshoz az **Üzleti egység** szintjén, akkor bármilyen űrlapon módosíthatja az alapértelmezett vállalatot, ha a **Vállalat** legördülő menüből kiválasztja a vállalatot.
++ Ha **Írás** jogosultsággal rendelkezik a **SystemUser** táblához az **Üzleti egység** szintjén, akkor bármilyen űrlapon módosíthatja az alapértelmezett vállalatot, ha a **Vállalat** legördülő menüből kiválasztja a vállalatot.
 
     :::image type="content" source="media/autopopulate-company-name-2.png" alt-text="A vállalat nevének módosítása egy új partneren.":::
 
@@ -93,15 +93,12 @@ Számos módja van annak, hogy a vállalat nevét az ügyfélkapcsolati alkalmaz
 
 + Ha Ön rendszerkonfiguráló vagy egy rendszergazda, és a vállalat adatait egy egyéni űrlapon szeretné automatikusan kitölteni, akkor használhatja az [űrlapesemények](https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/events-forms-grids) lehetőséget. Adjon hozzá JavaScript-hivatkozást az **msdyn_/DefaultCompany.js** elemhez, és használja a következő eseményeket. Használhatja az összes beépített űrlapot is, például a **Partner** űrlapot.
 
-    + **OnLoad** esemény az űrlaphoz: Állítsa be a **defaultCompany** mezőt.
-    + **OnChange** esemény a **Vállalat** mezőhöz: Állítsa be az **updateDefaultCompany** mezőt.
+    + **OnLoad** esemény az űrlaphoz: Állítsa be a **defaultCompany** oszlopot.
+    + **OnChange** esemény a **Vállalat** oszlophoz: Állítsa be az **updateDefaultCompany** oszlopot.
 
 ## <a name="apply-filtering-based-on-the-company-context"></a>Szűrés alkalmazása a vállalat kontextusa alapján
 
-Ha azt szeretné, hogy az egyéni űrlapokon vagy egyéni keresési mezőkben megadott vállalati környezet alapján történjen a szűrés, nyissa meg az űrlapot, és használja a **Kapcsolódó rekordok szűrése** szakaszt a vállalati szűrő alkalmazásához. Ezt minden olyan keresési mező esetében be kell állítania, amelyhez szűrés szükséges a mögöttes vállalat alapján egy adott sornál. A beállítás a következő ábrán látható a **Partnerhez** jelenik meg.
+Ha azt szeretné, hogy az egyéni űrlapokon vagy egyéni keresési oszlopokban megadott vállalati környezet alapján történjen a szűrés, nyissa meg az űrlapot, és használja a **Kapcsolódó rekordok szűrése** szakaszt a vállalati szűrő alkalmazásához. Ezt minden olyan keresési oszlop esetében be kell állítania, amelyhez szűrés szükséges a mögöttes vállalat alapján egy adott sornál. A beállítás a következő ábrán látható a **Partnerhez** jelenik meg.
 
 :::image type="content" source="media/apply-company-context.png" alt-text="Vállalati környezet alkalmazása":::
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
