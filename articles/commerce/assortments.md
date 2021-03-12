@@ -10,17 +10,16 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
-ms.search.scope: Retail, Operations
 ms.search.region: Global
 ms.author: jeffbl
 ms.search.validFrom: 2017-11-21
 ms.dyn365.ops.version: Application update 5
-ms.openlocfilehash: e1b177989065740eef0bd917a7ce1e0a2c79088b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 981d1c604a7ed461f207e78c8c7f073aff03be9e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412788"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4979998"
 ---
 # <a name="assortment-management"></a>Szortiment kezelése
 
@@ -107,6 +106,3 @@ A következő végrehajtási követelményeket figyelembe kell venni a szortimen
 - **Értékesítés és visszáru a szortimenteken kívül** – Ez a lehetőség segítséget nyújt a kiskereskedőknek a szortimentek hatékony kezeléséhez úgy, hogy a rendelkezésre álló termékeket az üzlet alapvető termékmixére korlátozzák. Ez a lehetőség azt is lehetővé teszi a kiskereskedők számára, hogy sikeresen kezeljék azokat a helyzeteket, amikor a termék véletlenül kimaradt egy szortimentből, vagy egy terméket a szortiment érvényességi dátumait kívül hoztak vissza.
 
 Ha egy termékadat nem szerepel a csatorna-adatbázisban, a pénztár valós idejű hívást intéz a központhoz, hogy lekérje a szükséges adatokat, és így megtörténhessen a termék értékesítése, visszavitele vagy elhelyezése egy vevői rendelésen. Az ezen a módon lekért termékinformációk csak az adott tranzakció hatóköre során érhetők el. A termék nincs hozzáadva a szortiment definíciójához. Ennek megfelelően a későbbi valós idejű hívások szükség szerint történnek meg.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: LedgerJournalTable, CustPaymEntry, CustTableLookup, LedgerJournalTransCustPaym, CustOpenTrans, BankAccountTableLookUp
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9196bedcea26a0024b3eabbbcb9c58a0155a7490
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 71e1657d738f691644b6d9cc4d34f812b853934e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4443962"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4978863"
 ---
 # <a name="customer-payment-overview"></a>Vevői kifizetések áttekintése
 
@@ -52,6 +51,3 @@ Ez a feladat-útmutató végigvezeti a vevői kifizetések megadásánál haszn�
 21. A **Fizetési hivatkozás mezőben** adja meg a fizetési hivatkozást. A kifizetési hivatkozás csak akkor szükséges, ha bejelöli azt, hogy a kifizetés egy letéti jegyen is szerepeljen.  
 22. A vállalatközi vevői számlák feladásához a **Művelet panelen** kattintson a **Feladás** gombra. 
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

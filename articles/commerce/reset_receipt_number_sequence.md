@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail, Commerce
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail, Commerce
 ms.author: asharchw
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: Application update 10.0.9
-ms.openlocfilehash: 31ba82ac5e032734e00f2aee12339bc85a53550b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f7242ed830d09a29a4b01e20ce5070c3aaeca62b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412794"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4979715"
 ---
 # <a name="reset-receipt-numbers"></a>Nyugta számainak visszaállítása 
 
@@ -68,6 +67,3 @@ A jövőbeli visszaállítási dátumok törléséhez használja a **Visszaáll�
 
 > [!NOTE]
 > A kiválasztott Alapbeállítási dátumtól és a nyugta formátumtól függően lehet, hogy ismétlődő nyugta-szám van. Annak ellenére, hogy a pénztárrendszer képes kezelni ezeket a helyzeteket, növeli a visszáru feldolgozásához szükséges időt, mivel az értékesítési munkatársaknak választaniuk kell a duplikált nyugták között. Az adattisztítással kapcsolatos egyéb komplikációk akkor is előfordulhatnak, ha az ismétlődő nyugták nem tervezett következmények voltak. Ezért azt ajánljuk, hogy dinamikus dátumú karaktereket (például **ddd**, **MM**, **DD** és **YY**) használjon, hogy megakadályozza az ismétlődő nyugtaszámok visszaállítását.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ProjInvoiceCashFlow, ProjInvoiceControl, ProjInvoiceListPage, ProjInvoiceProposalDetail, ProjInvoiceProposalListPage
 audience: Application User, IT Pro
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 23111
 ms.assetid: 1812d6f2-8b34-4258-8f5f-dcf12281547f
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2020-07-06
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: ba2f9d69295f9f5cfb4a2a791be781de32b50f46
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5a6a29b180564dc4e4dd768b9e4b97c8877ce00c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4443930"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4979587"
 ---
 # <a name="project-invoicing"></a>Projektszámlázás
 
@@ -75,7 +74,7 @@ Ha a szervezet előírja, hogy a számlajavaslatokat feladás előtt ellenőrizn
 
 ### <a name="view-grant-information-on-project-invoice-list-pages"></a>A projekthez tartozó számlalista oldalain szereplő engedélyadatok megtekintése
 
-Az állami szektor felhasználói hozzáadhatják az **Engedélyazonosítót** és az **Engedély nevét** a **Projekt számlajavaslatok** és a **Projekt számlái** lista oldalakhoz. Ezeket az oszlopokat az **Engedélyezési információk hozzáadása a projekthez tartozó számlalista oldalaihoz** funkció segítségével engedélyezheti. Ez a funkció alapértelmezés szerint ki van kapcsolva, és a **Munkaterületeken> Szolgáltatások kezelése** modulban engedélyezhető. A funkció engedélyezésével kapcsolatos segítségért forduljon a rendszergazdához.
+Az állami szektor felhasználói hozzáadhatják az **Engedélyazonosítót** és az **Engedély nevét** a **Projekt számlajavaslatok** és a **Projekt számlái** lista oldalakhoz. Ezeket az oszlopokat az **Engedélyezési információk hozzáadása a projekthez tartozó számlalista oldalaihoz** funkció segítségével engedélyezheti. Ez a funkció alapértelmezés szerint ki van kapcsolva, és a **Munkaterületeken> Funkciókezelés** modulban engedélyezhető. A funkció engedélyezésével kapcsolatos segítségért forduljon a rendszergazdához.
 
 ## <a name="on-account-invoicing"></a>Részszámla készítése
 A részszámlán a projekt kapcsán megadott összeg az időzítésen, a projekt előrehaladottságának százalékán és egyéb számlázási feltételeken múlik, amelyek a kapcsolódó projektszerződésben vannak meghatározva. Az összeg nem a projektbe feladott órák, cikkek, kiadások és díjak alapján kerül kiszámításra. 
@@ -132,6 +131,3 @@ Létrehozhat negatív összegű számlát, ami így jóváírásnak minősülő 
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

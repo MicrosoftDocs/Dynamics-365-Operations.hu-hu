@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 13991
 ms.assetid: 2a0a4789-8619-4974-bef9-0923cc848420
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2018-05-02
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: e38d0bd75ad865b7885182f798beb43551576beb
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 00810576d36339bf7ce0657b1577e1e322c36bf0
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4444007"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4979089"
 ---
 # <a name="add-location-and-party-relationship-types"></a>Helyhez és felekhez tartozó kapcsolattípusok hozzáadása 
 
@@ -74,6 +73,3 @@ Két módszer áll rendelkezésre új helyszerepkör hozzáadására a cím és 
     3.  Az új kapcsolattípus feltöltésének teszteléséhez létrehozhat egy futtaható osztályt, és hívja elő ezt: DirDataPopulation::insertDirRelationshipTypes() a Fő() menüben. Az új kapcsolattípus megjelenik a **DirRelationshipTypeTable** táblában, és az új kapcsolattípus elérhető lesz a **Kapcsolattípusok** lapon.
 
         ![Futtatható osztály](media/Runnable.PNG)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

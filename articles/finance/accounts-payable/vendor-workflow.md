@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: Vendor
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 00cdc657fa075e84e62682e33ed3c1bace3f4ad0
-ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
+ms.openlocfilehash: 1fad41fa4fb3562ab94adde522d3899271c85467
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4444204"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4979164"
 ---
 # <a name="vendor-workflow"></a>Szállítói munkafolyamat
 
@@ -61,6 +60,3 @@ Legalább egy javasolt módosítás után, két további lap jelenik meg a műve
     Az oldalon látható állapot a következőre változik: **Jóváhagyásra váró módosítások**.
 
 A munkafolyamat a normál munkafolyamatot követi. A jóváhagyót a rendszer a **Szállító** oldalra irányítja, ahol áttekintheti a **Javasolt módosítások** oldalon található módosításokat, majd a munkafolyamat jóváhagyásához kiválaszthatja a **Munkafolyamat \> Jóváhagyás** lehetőséget. Miután minden jóváhagyás befejeződött, a mezők a javasolt értékekre frissülnek.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

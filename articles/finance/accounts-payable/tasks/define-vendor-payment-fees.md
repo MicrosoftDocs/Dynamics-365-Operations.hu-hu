@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: VendPaymFee, VendPaymModeFee, BankAccountTableLookUp
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 404bd1e22caa8098f114a2dcc67dd420509cce2b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 52321851a1aa588a0bbe238e366a28d503665988
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4443817"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4979338"
 ---
 # <a name="define-vendor-payment-fees"></a>Szállítói kifizetési díjak meghatározása
 
@@ -59,6 +58,3 @@ Szállítói kifizetési díjak beállítása. Ez a feladat az USMF bemutatócé
     * Ez a pénznem a díjra vonatkozik. A fizetési pénznem azt határozza meg, hogy a díj szabálya a fizetés pénzneme alapján kerüljön-e értékelésre. Előfordulhat például, hogy a bank díjat számít fel, ha a fizetés EUR pénznemben történik, de az egyéb fizetések díjmentesek.  
 18. Kattintson a Mentés gombra.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

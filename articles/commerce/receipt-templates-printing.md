@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: RetailFormLayout
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 57841
 ms.assetid: e530dd8e-95e2-4021-90bd-ce1235f9e250
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: ab6b01d6833850af8c04167d94b0a60c7312075c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a66590f18df04d2be0500b7fb1ab183cf64718e8
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412966"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4979753"
 ---
 # <a name="set-up-and-design-receipt-formats"></a>Bevételezési formátumok beállítása és tervezése
 
@@ -46,6 +45,10 @@ Ez a cikk ismerteti, hogyan módosíthatja a képernyőelrendezések létrehozá
     - **Ne nyomtasson** – Nem nyomtatja ki a nyugtát.
     - **Felhasználó megkérdezése** – A felhasználónak engedélyeznie kell a nyugta nyomtatását.
     - **Szükség szerint** – Ez a beállítás csak ajándéknyugták esetén használatos. Ha ez a beállítás be van jelölve, a felhasználó ajándéknyugtát nyomtathat a **Változtatás** oldalon.
+
+## <a name="print-images"></a>Képek nyomtatása
+
+A nyugtatervező egy **Logó** változót tartalmaz, amely a nyugtára nyomtatandó képek megadására használható. A **Logó** változót használó nyugtákban szereplő képeknek monokróm bitkép fájltípusúnak (.bmp) kell lenniük. Ha a nyugtatervezőben meg van adva egy .bmp kép, de a nyomtatóra küldve nem nyomtat, akkor előfordulhat, hogy a fájl mérete túl nagy, vagy a képen található képpontméret nem kompatibilis a nyomtatóval. Ha ez történik, próbálja meg csökkenteni a képfájl felbontását.   
 
 ## <a name="design-a-receipt-format"></a>Nyugtaformátum tervezése
 
@@ -82,6 +85,3 @@ A nyugtaprofilok közvetlenül a nyomtatókhoz vannak rendelve a hardver profilo
 
 > [!NOTE]
 > Két nyomtató használata esetén egy nyomtató használható standard 40-oszlopos hő-papiros nyugta nyomtatására. A második nyomtató általában a teljes oldalas, több információt leíró nyugta nyomtatására szolgál. Ezek a nyugta típusok vásárlói rendelés nyugtákat és vevői számlákat tartalmaznak.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 86d9a40d991e915d3529e0c330f7559d8e7ce9ea
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 25b1962af182fc2749fcd6ec0035613d8365deb1
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4529578"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4980806"
 ---
 # <a name="customer-portal-for-dynamics-365-supply-chain-management-overview"></a>A Dynamics 365 Supply Chain Management Ügyfélportáljának áttekintése
 
@@ -64,11 +63,8 @@ Az Ügyfélportál Power Apps-portálok sablonként van szállítva. A Power App
 
 A [Power Apps-portálok](https://docs.microsoft.com/powerapps/maker/portals/overview) olyan funkció, amely lehetővé teszi, hogy a felhasználók egy kívülről elérhető hozzanak létre, amelybe a szervezeten kívüli személyek be tudnak jelentkezni. A portálok létrehozásához alig vagy nem szükséges kódolás. A Ügyfélportál a Microsoft által elérhető számos [Dynamics 365 portálsablon egyike](https://docs.microsoft.com/powerapps/maker/portals/portal-templates#environment-with-model-driven-apps-in-dynamics-365).
 
-A [kettős írás](https://docs.microsoft.com/powerapps/maker/portals/overview) egy olyan beépített infrastruktúra, amely közel valós idejű interakciót tesz lehetővé a Dynamics 365 modellvezérelt alkalmazásai és a Finance and Operations alkalmazások között. A kettős írás kétirányú integrációt tesz lehetővé a Finance and Operations alkalmazások és a Common Data Service között. Ezért integrált felhasználói élményt nyújt az alkalmazások között. A Ügyfélportál a kettős írással szinkronizált entitásokra épül. Mielőtt az Supply Chain Management alkalmazásból adatok felhasználhatók lennének a vevői portálon, a kettős írást az összes szükséges entitáshoz engedélyezni kell.
+A [kettős írás](https://docs.microsoft.com/powerapps/maker/portals/overview) egy olyan beépített infrastruktúratermék, amely közel valós idejű interakciót tesz lehetővé az ügyfélkapcsolati alkalmazások és a Finance and Operations alkalmazások között. A kettős írás kétirányú integrációt tesz lehetővé a Finance and Operations alkalmazások és a Microsoft Dataverse között. Ezért integrált felhasználói élményt nyújt az alkalmazások között. A Ügyfélportál a kettős írással szinkronizált táblákra épül. Mielőtt az Supply Chain Management alkalmazásból adatok felhasználhatók lennének a vevői portálon, a kettős írást az összes szükséges táblához engedélyezni kell.
 
 ![Ügyfélportál függőségei](media/customer-portal-elements.png "Ügyfélportál függőségei")
 
 A Ügyfélportál kiindulási pontként szolgál olyan szervezeteknek, amelyek a Power Apps portálokat szeretnének használni egy kívülről elérhető webhely kiépítésére, amely a Supply Chain Management telepítés adatait használja. Segíti a szervezeteknek a kettős írás a Supply Chain Management és a Power Apps portálok csatlakoztatásában.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

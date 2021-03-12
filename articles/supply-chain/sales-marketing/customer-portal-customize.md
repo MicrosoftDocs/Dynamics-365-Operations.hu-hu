@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 7849f354817f189bf7c844bbe2944f94c8fffe83
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 1e491100bc24718b8e5bc0f62de241835787f7ea
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527363"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4980856"
 ---
 # <a name="customize-and-use-the-customer-portal"></a>Ügyfélportál testre szabása és használata
 
@@ -40,9 +39,9 @@ A következő témakörökben megismerkedhet a Power Apps portálok alapjaival �
 - [Portáltartalom kezelése](https://docs.microsoft.com/dynamics365/portals/manage-portal-content) – Ez a témakör azt mutatja be, hogyan lehet kezelni és testreszabni a portál felületén található tartalmakat.
 - [CSS-szerkesztés](https://docs.microsoft.com/powerapps/maker/portals/edit-css) – Ez a témakör a portál felhasználói felületének (UI) bonyolultabb testreszabásához nyújt segítséget.
 - [Téma létrehozás a portálhoz](https://docs.microsoft.com/dynamics365/portals/create-theme) – Ez a témakör segít létrehozni egy UI-témát a portálhoz.
-- [A portál tartalmának egyszerű létrehozása és közzététele](https://docs.microsoft.com/dynamics365/portals/create-expose-portal-content) – Ez a témakör a portálon használt mögöttes adatok és entitások kezelését segíti.
+- [A portál tartalmának egyszerű létrehozása és közzététele](https://docs.microsoft.com/dynamics365/portals/create-expose-portal-content) – Ez a témakör a portálon használt mögöttes adatok és táblák kezelését segíti.
 - [A portálon használható kapcsolattartó konfigurálása](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-contacts) – Ez a témakör azt mutatja be, hogyan lehet létrehozni és testreszabni a felhasználói szerepköröket, valamint a biztonsági és a hitelesítés működését a Power Apps-portálokon.
-- [Az entitások űrlapjaihoz és a portálokon található webképernyőkhez tartozó megjegyzések konfigurálása](https://docs.microsoft.com/powerapps/maker/portals/configure-notes) – Ez a témakör azt mutatja be, hogyan lehet dokumentumokat és további tárolóhelyeket hozzáadni a portálhoz.
+- [A táblák űrlapjaihoz és a portálokon található webképernyőkhez tartozó megjegyzések konfigurálása](https://docs.microsoft.com/powerapps/maker/portals/configure-notes) – Ez a témakör azt mutatja be, hogyan lehet dokumentumokat és további tárolóhelyeket hozzáadni a portálhoz.
 - [Hibakezelés a portál webhelyéhez](https://docs.microsoft.com/powerapps/maker/portals/admin/view-portal-error-log) – Ez a témakör azt mutatja be, hogyan lehet megtekinteni a portál hibanaplóit, és tárolni azokat a Microsoft Azure Blob tárolási fiókban.
 
 ## <a name="customize-the-order-creation-process"></a>A rendelés létrehozási folyamatának testreszabása
@@ -91,7 +90,7 @@ Itt megtekintheti a rendelésnek az Ügyfélportálról történő elküldésér
 
 A zökkenőmentes felhasználói élmény biztosításához a Ügyfélportál automatikusan kitölti az értékeket több kötelező mező esetében. Ezek az értékek a rendelést beküldő vevő kapcsolattartói rekordjának adatain alapulnak.
 
-Minden olyan [kapcsolattartói rekordhoz](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-contacts), amely egy olyan vevőhöz tartozik, és az Ügyfélportált a rendelések elküldésére fogja használni, meg kell adni értékeket a következő kötelező mezőkben. Ellenkező esetben hibák lépnek fel.
+Minden olyan [kapcsolattartói sorhoz](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-contacts), amely egy olyan vevőhöz tartozik, és az Ügyfélportált a rendelések elküldésére fogja használni, meg kell adni értékeket a következő kötelező mezőkben. Ellenkező esetben hibák lépnek fel.
 
 - **Vállalat** A jogi személyt, amelyhez a rendelés tartozik
 - **Potenciális vevő** – A rendeléshez kapcsolódó ügyfélfiók
@@ -99,7 +98,7 @@ Minden olyan [kapcsolattartói rekordhoz](https://docs.microsoft.com/powerapps/m
 - **Pénznem** – Az ár pénzneme
 - **Szállítás országa/régiója** – Az ország vagy régió, ahová a cikkeket szállítani fogják
 
-A program automatikusan beállítja a következő mezőket az értékesítési rendelés entitásához:
+A program automatikusan beállítja a következő mezőket az értékesítési rendelés táblához:
 
 - **Nyelv** – A rendelés nyelve (alapértelmezés szerint az érték a kapcsolattartói rekordból származik).
 - **Szállítás országa/régiója** – Az az ország vagy régió, ahová a cikkeket kézbesítik (alapértelmezés szerint az érték a kapcsolattartói rekordból származik).
@@ -116,7 +115,7 @@ A program automatikusan beállítja a következő mezőket az értékesítési r
 
 Szabadon módosíthatja a Ügyfélportál megjelenését és kezelőfelületét, ha nem módosítja az alapvető rendelési létrehozási folyamatot. Ha módosítani szeretné a rendelés létrehozási folyamatát, akkor van néhány dolog, amelyet szem előtt kell tartania.
 
-Ne távolítsa el a következő mezőket az értékesítési rendelés entitásból Common Data Service-szolgáltatásban, mert ezek szükségesek egy értékesítési rendelés létrehozásához a kettős írásban:
+Ne távolítsa el a következő oszlopokat az értékesítési rendelés táblából Microsoft Dataverse-szolgáltatásban, mert ezek szükségesek egy értékesítési rendelés létrehozásához a kettős írásban:
 
 - **Vállalat** A jogi személyt, amelyhez a rendelés tartozik
 - **Név** – Az értékesítési rendelés neve
@@ -127,7 +126,7 @@ Ne távolítsa el a következő mezőket az értékesítési rendelés entitásb
 - **Nyelv** – A rendelés nyelve (általában ez a nyelv a potenciális vevő nyelve.)
 - **Szállítási cím leírása** – Az értékesítési rendelés szállítási címe
 
-A cikkek esetében a következő mezők kötelezők:
+A cikkek esetében a következő oszlopok kötelezők:
 
 - **Termék** – A megrendelendő termék
 - **Mennyiség** – A kiválasztott termék mennyisége
@@ -135,11 +134,11 @@ A cikkek esetében a következő mezők kötelezők:
 - **Szállítás országa/régiója** – A szállítás országa vagy régiója
 - **Szállítási cím leírása** – A rendelés szállítási címe
 
-Győződjön meg róla, hogy a Ügyfélportálja valamilyen módon az összes mezőhöz elküld értékeket.
+Győződjön meg róla, hogy a Ügyfélportálja valamilyen módon az összes oszlophoz elküld értékeket.
 
-Ha mezőket kíván felvenni a lapra, vagy el szeretné távolítani a mezőket, tekintse meg a következő témakört: [Gyors létrehozási űrlapok létrehozása vagy szerkesztése egyszerű adatbeviteli élményhez](https://docs.microsoft.com/dynamics365/customerengagement/on-premises/customize/create-edit-quick-create-forms).
+Ha oszlopokat kíván felvenni a lapra, vagy el szeretné távolítani az oszlopokat, tekintse meg a következő témakört: [Gyors létrehozási űrlapok létrehozása vagy szerkesztése egyszerű adatbeviteli élményhez](https://docs.microsoft.com/dynamics365/customerengagement/on-premises/customize/create-edit-quick-create-forms).
 
-Ha módosítani szeretné a mezők előbeállítását, és azt, hogy hogyan legyenek beállítva az értékek a lap mentésekor, tekintse át a következő információkat a Power Apps portálok dokumentációjában:
+Ha módosítani szeretné az oszlopok előbeállítását, és azt, hogy hogyan legyenek beállítva az értékek a lap mentésekor, tekintse át a következő információkat a Power Apps portálok dokumentációjában:
 
 - [Mező előzetes kitöltése](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-web-form-metadata#prepopulate-field)
 - [Érték beállítása mentéskor](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-web-form-metadata#set-value-on-save)
@@ -176,6 +175,3 @@ A Ügyfélportál beállításával és testreszabásával kapcsolatos további 
 - [Portál frissítése](https://docs.microsoft.com/powerapps/maker/portals/admin/upgrade-portal)
 - [Portál konfigurációjának áttelepítése](https://docs.microsoft.com/powerapps/maker/portals/admin/migrate-portal-configuration)
 - [Megoldás életciklus-kezelése: Dynamics 365 for Customer Engagement alkalmazásokhoz](https://www.microsoft.com/download/details.aspx?id=57777)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
