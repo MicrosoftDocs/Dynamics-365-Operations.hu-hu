@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: EngChgEcoResProductLifecycleStateChange
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 69ee39479424c1b629388c18e8bfefd023036d22
-ms.sourcegitcommit: 5f21cfde36c43887ec209bba4a12b830a1746fcf
+ms.openlocfilehash: 989cfd3846e4921d24f5dcf809f1735d2cf62dbb
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "4429970"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5005327"
 ---
 # <a name="product-lifecycle-states-and-transactions"></a>A termék életciklusának állapotai és tranzakciói
 
@@ -76,6 +75,3 @@ A következő mezők érhetők el az **Engedélyezett üzleti folyamatok** gyors
 | Házirend | Válasszon az alábbi értékek közül annak szabályozásához, hogy az aktuális folyamat engedélyezve legyen-e az ilyen életciklus-állapotú termékek esetében, és ha igen, hogyan:<ul><li>**Engedélyezett** – Az üzleti folyamat engedélyezett.</li><li>**Tiltott** – A folyamat nem engedélyezett. Ha egy felhasználó ilyen életciklus-állapotú terméken próbálja használni a folyamatot, a rendszer blokkolja a kísérletet, és helyette hibaüzenetet jelenít meg. Előfordulhat például, hogy letiltja az életciklus végén járó termékek vásárlását.</li><li>**Figyelmeztetéssel engedélyezve** – A folyamat engedélyezett, de figyelmeztetés jelenik meg. Előfordulhat például, hogy egy prototípus terméket szeretne elhelyezni egy termelési rendelésre, amelyet a Kutatási és Fejlesztési részleg hoz létre. Más szervezeti egységeknek azonban tisztában kell lenniük azzal, hogy még nem termelhetik a terméket.</li></ul> |
 
 Ha további életciklusállapot-szabályokat ad hozzá testreszabásként, ezeket a szabályokat a felhasználói felületen (UI) tekintheti meg, ha a felső ablaktáblában a **Folyamatok frissítése** lehetőséget választja. A **Folyamatok frissítése** gomb csak rendszergazdák számára érhető el.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

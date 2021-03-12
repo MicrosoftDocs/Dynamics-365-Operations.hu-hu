@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 2c32957b0bd234ed14e6333a36a46c6a83ec2e91
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: bbbd60ddfd46904374a2cf3ad4a09f96805bd2bf
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429541"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5001799"
 ---
 # <a name="calendars-and-master-planning"></a>Naptárak és alaptervezés
 
@@ -143,6 +142,3 @@ A fedezeti csoport naptárakkal kapcsolatosan fontos, hogy felülbíráló visel
 
 ### <a name="updating-scm-related-calendars"></a>SCM-hez kapcsolódó naptárak frissítése
 Ugyan fontos, hogy minden megfelelő naptár a megfelelő helyhez legyen hozzárendelve (szállító, vevői, raktár, szállítási mód vagy fedezeti csoport), a frissítésük ugyanolyan fontos, hogy tükrözzék a módosításokat. A rendszer a termelési, átmozgatási, beszerzési és értékesítési rendelések dátumait a hozzárendelt naptárak kombinációja alapján határozza meg. A legjobb megoldás tisztázni, ki felelős a megfelelő területek naptárainak hozzárendeléséért és frissítésért. Leállás vagy a munkanapok bármilyen egyéb szokatlan változása esetén fontos ennek megfelelően a naptárak frissítése. Minden feladatot, amely naptárakra támaszkodik például az alaptervezés és a termelés ütemezése, a naptárak frissítésekor újra kell futtatni. 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

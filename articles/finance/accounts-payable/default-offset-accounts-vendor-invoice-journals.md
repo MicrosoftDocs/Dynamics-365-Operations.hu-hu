@@ -1,5 +1,5 @@
 ---
-title: Alapértelmezett ellenszámlák szállítóiszámla-naplók és számla-jóváhagyási naplók számára
+title: Alapértelmezett ellenszámlák szállítóiszámla-naplók és számlajóváhagyási naplók számára
 description: A jelent témakör segítségével eldöntheti, hogy hová rendelje hozzá az alapértelmezett számlákat a számlanaplókhoz.
 author: abruer
 manager: AnnBe
@@ -11,21 +11,20 @@ ms.technology: ''
 ms.search.form: LedgerJournalTable
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 62093
 ms.assetid: 553933ca-928d-4031-bb8c-f9cff458320b
 ms.search.region: global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c6ff4e209f1d1c41d7c05cad735aacc320bdeb83
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c3b2ad808d5008d9a4b2d3ee975d15fa1ee13ed7
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4443897"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5003486"
 ---
-# <a name="default-offset-accounts-for-vendor-invoice-journals-and-invoice-approval-journals"></a>Alapértelmezett ellenszámlák szállítóiszámla-naplók és számla-jóváhagyási naplók számára
+# <a name="default-offset-accounts-for-vendor-invoice-and-invoice-approval-journals"></a>Alapértelmezett ellenszámlák szállítóiszámla-naplók és számlajóváhagyási naplók számára
 
 [!include [banner](../includes/banner.md)]
 
@@ -98,6 +97,3 @@ Az alábbi táblázat segítségével eldöntheti, hogy hová rendelje hozzá az
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

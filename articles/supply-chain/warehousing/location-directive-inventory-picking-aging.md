@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSLocationProfile,WHSWorkTable,WHSWaveTableListPage
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 3ae2826b54cb2ff516840443e01185a5342aedcc
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: f8d5e4d82c66d178ceafcdbfb3eb9a941172aa01
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4429839"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5004627"
 ---
 # <a name="location-directive-inventory-picking-aging"></a>Helyutasítás – készletkitárolás korosítása
 
@@ -120,7 +119,7 @@ A FIFO-stratégia megtalálja azt a helyet, amely a legrégebbi korosítási dá
 1. Az **Értékesítési rendelés** oldalán a műveleti ablaktáblán a **Raktár** lapon a **Műveletek** csoportban válassza a **Kiadás raktárhoz** lehetőséget. Tájékoztató üzeneteket kap. A rendszer létrehoz egy szállítmányt, hozzáadja azt egy új terheléshez, és létrehozza a szükséges munkát.
 1. Az **Értékesítésirendelés-sorok** gyorslap **Raktár** menüjében válassza ki a **Munka adatai** lehetőséget, és nyissa meg az ehhez az értékesítési rendeléshez létrehozott munkát. Figyelje meg, hogy a sorban, ahol a **Munkatípus** értéke *Kitárolás* egy **Hely** érték látható, ami *FL-002*. Ez a hely tartalmazza azt az azonosítótábla-típust, amelynek a legrégebbi a korosítási dátuma (FIFO).
 1. Válassza a **Raktár \> Szállítmány adatai** lehetőséget.
-1. Az **Általános** gyorslapon jegyezze fel a hullámazonosítót, hogy a 2. forgatókönyvben is használható legyen.
+1. Az *_Általános_* gyorslapon jegyezze fel a hullámazonosítót, hogy a 2. forgatókönyvben is használható legyen.
 
 ### <a name="scenario-2-set-up-and-use-lifo-location-aging"></a>2. forgatókönyv: LIFO-hely korosításának beállítása és használata
 
@@ -140,6 +139,3 @@ A LIFO-stratégia megtalálja azt a helyet, amely a legújabb korosítási dátu
 1. Figyelje meg, hogy a sorban, ahol a **Munkatípus** értéke *Kitárolás* egy **Hely** érték látható, ami *FL-001*. Ez a hely tartalmazza azt az azonosítótábla-típust, amelynek a legújabb a korosítási dátuma (LIFO).
 
 Ezekben az esetekben megismerhette, hogy hogyan irányítja a helykorosítási stratégia a munkát arra készlethelyre a hol a legrégebbi készlet vagy a legújabb készlet van a kiválasztott stratégiától függően.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14312
 ms.assetid: 585d5b0b-1b79-4a03-ab18-528918070377
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 57e8ce38241933b16252f1c918b0f763a8f1be08
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b047a1abaa6b19096740f589281c837643d796b9
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4443955"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5003528"
 ---
 # <a name="create-vendor-payments-by-using-a-payment-proposal"></a>Szállítói kifizetések készítése fizetési javaslat segítségével
 
@@ -69,7 +68,7 @@ Július 1-jén April fizeti ki a szállítókat. April fizetési javaslatot alka
 
 ### <a name="option-1-by-cash-discount"></a>Első opció: Készpénzfizetési engedmény
 
-April a **készpénzfizetési engedmény** opciót választja ki, mint a javaslat típusát. Június 26-tól július 10-ig terjedő időintervallumot ad meg. A következő számlák szerepelnek a javaslatban:
+April a **Készpénzfizetési engedmény** opciót választja ki a javaslat típusaként. Június 26-tól július 10-ig terjedő időintervallumot ad meg. A következő számlák szerepelnek a javaslatban:
 
 -   1002, mivel az engedmény dátuma (július 4.) szerepel a fizetési dátumok között.
 -   1004, mivel az engedmény dátuma (július 1.) szerepel a fizetési dátumok között.
@@ -119,10 +118,7 @@ A Dimenzió vezérlőelem lehetővé teszi a fizetési javaslat alapján létreh
 
 #### <a name="bank-account-selection"></a>Bankszámla kiválasztása
 
-Beállíthat egy szabványos terhelési fizetési számlát az országfüggő fizetési módtól függetlenül. Ezt a javaslat által létrehozott kifizetési sorokban állíthatja be. A bankszámla funkcióval több, a dimenzió és a pénznem által kezelt terhelési bankszámlát határozhat meg, vagy ezek kombinációját a különböző terhelési bankszámlák használata tekintetében az egyes kombinációktól függően. Ezeket a kombinációkat a **Fizetési módok** lapon a  **Bankszámlák** gomb használatával állíthatja be, amely minden egyes **Feladási számla típusa** = **Bank** fizetési módhoz elérhető.
+Beállíthat egy szabványos terhelési fizetési számlát az országfüggő fizetési módtól függetlenül. Ezt a javaslat által létrehozott kifizetési sorokban állíthatja be. A bankszámla funkcióval több, a dimenzió és a pénznem által kezelt terhelési bankszámlát határozhat meg, vagy ezek kombinációját a különböző terhelési bankszámlák használata tekintetében az egyes kombinációktól függően. Ezeket a kombinációkat a **Fizetési módok** lapon a **Bankszámlák** gomb használatával állíthatja be, amely minden egyes **Feladási számla típusa** = **Bank** fizetési módhoz elérhető.
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

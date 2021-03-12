@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschloma
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: d55a7c5e24213f70a1b71f89691f0e5be8c36f10
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5879f7f89d010c4d61536004c1077ca3270a98f8
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4443945"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5003435"
 ---
 # <a name="credit-limit-adjustments"></a>Hitelkeret-kiigazítások 
 
@@ -124,6 +123,3 @@ A **Hitelkeret-korrekciós** munkafolyamatok a munkafolyamat-jóváhagyási foly
 
 > [!NOTE]
 > A **Hitelkeret-korrekció** munkafolyamat létrehozásakor beállíthatja, hogy a program automatikusan feladja a korrekciókat a sorok jóváhagyása után. Egyszerűen szerepeltesse a **Napló automatikus feladása** feladatot a munkafolyamatban.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

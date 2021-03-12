@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSLoadTable, WHSLoadPlanningListPage, WHSLoadPlanningWorkbench, WHSRFMenu, WHSRFMenuItem
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 41a05bcd0148d0a553cb50575cae47f48397ae9b
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 991da4a1056bec933698d043fe45fe4e280f555a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4429844"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5004827"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>Beszerzési rendelések bejövő rakományának kezelése a raktárban
 
@@ -478,6 +477,3 @@ Ennél a forgatókönyvél a bevételezési ügyintéző bejövő mennyiséget r
     - **Mennyiség** – Adja meg a _7_ mennyiséget, vagyis azt a fennmaradó mennyiséget, amelyet a szállító jogosult szállítania teljes 12 db-os beszerzési mennyiség részeként (ahol 10 az eredeti rendelési mennyiség és 2 az engedélyezett túlszállítási mennyiség, ami 20%). Ne feledje, hogy 5 db már regisztrálva van az első rakományhoz.
 
 A második rakomány 7 darabbal frisítve lett mennyiséggel frissítette, és a termék bevételezhető-frissíthető ezen mennyiség alapján.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

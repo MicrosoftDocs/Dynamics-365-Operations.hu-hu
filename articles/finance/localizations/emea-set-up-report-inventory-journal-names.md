@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: InventJournalName
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 265144
 ms.search.region: Estonia, Hungary, Latvia, Lithuania, Poland
 ms.author: v-lenest
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: f8b52043f9c09dfe7e80f9fec7b495acd3ccb590
-ms.sourcegitcommit: 092ef6a45f515b38be2a4481abdbe7518a636f85
+ms.openlocfilehash: 4345ec1388a369e9ffc8d01b4f5153e5478fd723
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4408060"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5002845"
 ---
 # <a name="inventory-journal-reports"></a>Készletnapló-jelentések
 
@@ -48,6 +47,3 @@ Egy adott jelentés és naplótípus közötti kapcsolat beállításához a **K
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

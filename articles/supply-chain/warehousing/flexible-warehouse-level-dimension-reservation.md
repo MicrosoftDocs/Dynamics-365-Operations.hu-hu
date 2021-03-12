@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSReservationHierarchy, WHSWorkTrans, WHSWorkInventTrans, WHSInventTableReservationHierarchy, WHSReservationHierarchyCreate, WHSInventTableReservationHierarchy
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-01-15
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: b9bd4e67ed64218f9c4ac87bd143f73680af9ac4
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: bf50b0b8da2859caab4db2394f2d56f7b76793ca
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4429846"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5004802"
 ---
 # <a name="flexible-warehouse-level-dimension-reservation-policy"></a>Rugalmas raktárszintű dimenziófoglalási irányelv
 
@@ -854,6 +853,3 @@ Az alábbi táblázatokban egy áttekintés látható, amely bemutatja, hogy a r
     - Átmozgatási rendelések és nyersanyag kitárolása
 
 - A tároló utasítási egység szerinti csomagolásra vonatkozó összevonási szabályának emgvannak a korlátai. A rendelésben véglegesített foglalások esetében azt javasoljuk, hogy ne használjon olyan tárolóépítési sablonokat, amelyek **Csomagolás utasításegység szerint** mezőjét engedélyezték. A jelenlegi rendszer a raktári munka létrehozásakor nem használ helyutasításokat. Ennek megfelelően a rendszer csak az egységszekvencia-csoport (a készletegységben) legkisebb egységét alkalmazza a tárolóra bontási hullámlépés során.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -10,18 +10,17 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 264704
 ms.search.region: Czech Republic, Hungary
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 26eaf0b1cfb504e241f2f171fb79cbe6aed794c9
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 4e9a78fe87b47193a0c8a291f577c4bec641394d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408055"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5005983"
 ---
 # <a name="post-the-pre-acquisition-of-a-fixed-asset"></a>Tárgyi eszköz beszerzés előtti műveleteinek feladása
 
@@ -49,9 +48,6 @@ Beszerzési előzmények feladása előtt meg kell adnia a következő beállít
 9.  Kattintson a **OK** gombra a **Beszerzés előtti javaslat** oldal bezárásához.
 10. A beszerzés előtti tranzakció feladásához kattintson a **Feladás** &gt; **Feladás** lehetőségre. A **Könyvek** oldalon a tárgyi eszköz állapota most elvileg **Beszerzett**.
 
-
-
-
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+  > [!NOTE]
+  > A beszerzési/beszerzés-helyesbítési javaslat paramétereiben a beszerzés előtti tranzakciók kiválasztásának dátumáig beállíthatja a **Céldátum** mezőben a dátumot.
+  > Ez a funkció a 10.0.17-es és későbbi verziókban áll rendelkezésre.

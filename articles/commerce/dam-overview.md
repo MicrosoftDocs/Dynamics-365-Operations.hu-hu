@@ -10,7 +10,6 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,12 +17,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 69cbaafb9cc28d4e363d0ef028460235cded54dc
-ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
+ms.openlocfilehash: cf726c920d3d854d59fce4c6d62ab8a234e5f893
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "4594356"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5003778"
 ---
 # <a name="digital-asset-management-overview"></a>Digitális eszközkezelés – áttekintés
 
@@ -60,6 +59,3 @@ A digitális eszközök és a kezelési szolgáltatások a webhely bal oldali na
 [Képfókuszpontok testreszabása](dam-custom-focal-point.md)
 
 [Statikus fájlok feltöltése és kiszolgálása](upload-serve-static-files.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

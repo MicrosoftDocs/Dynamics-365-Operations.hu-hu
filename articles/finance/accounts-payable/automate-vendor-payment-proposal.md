@@ -10,19 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 262034
 ms.assetid: 9db38b3f-26b3-436e-8449-7ff243568a18
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-04-08
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 2b4e6b42326ecbd07efe006afb23931849f5cf58
-ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
+ms.openlocfilehash: 63f2d3dc55799efefaedb10134edb219fa8588e0
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4444199"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5003578"
 ---
 # <a name="automate-vendor-payment-proposals"></a>Szállítói fizetési javaslatok automatizálása
 
@@ -144,6 +143,3 @@ A következő feladatok és jogosultságok lettek hozzáadva a szállítói kifi
 | Ütemezési előfordulások lekérdezése | Kötelezettségek kifizetési ügyintéző, kötelezettségek központi kifizetési ügyintéző | Ez a kötelezettség jogosultságot biztosít fizetési javaslat automatizálási sorozat és előfordulás megtekintésére a következő jogosultságokon keresztül:<ul><li>Ütemezési előfordulások megtekintése</li><li>Az előfordulások heti nézetének megtekintése</li></ul> |
 | Ütemezési sorozatok lekérdezése      | None                                                                       | Ez a kötelezettség jogosultságot biztosít a sorozat és előfordulás beállításainak megtekintésére a következő jogosultságokon keresztül:<ul><li>Ütemezési előfordulások megtekintése</li><li>Az előfordulások listaoldalának megtekintése</li><li>Az előfordulások heti nézetének megtekintése</li></ul>|
 | Ütemezési előfordulások karbantartása     | None                                                                       | Ez a feladatkör a következő jogosultságok révén ad jogosultságokat egy előfordulás létrehozásához és karbantartásához:<ul><li>Ütemezési előfordulások karbantartása</li><li>Az előfordulások heti nézetének megtekintése</li></ul> |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
