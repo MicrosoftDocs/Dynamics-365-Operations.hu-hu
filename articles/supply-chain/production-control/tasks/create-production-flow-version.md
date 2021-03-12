@@ -10,18 +10,17 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d513e6898827de9a3fb1ed59006b817fb9006019
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 115463c57b28e681d4c6bdc227e35272861779aa
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429234"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5006916"
 ---
 # <a name="create-a-production-flow-version"></a>Termelési folyamat verziójának létrehozása
 
@@ -64,6 +63,3 @@ Ez az eljárás a termelési folyamat új verziójának létrehozását foglalja
     * Adja meg az Időszak a tényleges ciklusidőhöz napjainak a számát. A tényleges ciklusidő időszaka a feladatok által összesített napok száma a tényleges perctől visszafelé, a tényleges ciklusidő kiszámításához. Az érték bármikor módosítható, és azt csak a tényleges ciklusidők kiszámításához használjuk.  
 13. Kattintson a Mentés gombra.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

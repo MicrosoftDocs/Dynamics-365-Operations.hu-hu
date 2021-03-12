@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: RetailTerminalTable, SystemParameters
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 1205393
 ms.assetid: 2f13e9cf-55b5-458b-8c32-3f8cd98c9ecf
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 0ab8456d81fbe2dca495b65b932395572242a25c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b0a5ca1e116e931ba992eab51a06dae9fdf92756
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412923"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5006135"
 ---
 # <a name="task-recorder-and-help-for-retail-modern-pos-mpos-and-cloud-pos"></a>Feladatrögzítő és Súgó a Retail Modern POS (MPOS) rendszerhez és a Cloud POS-hez
 
@@ -34,7 +33,7 @@ Ez a témakör azt mutatja be, hogyan használható a Feladatrögzítő a Retail
 
 ## <a name="overview"></a>Áttekintés
 
-A Retail Modern POS és a felhőalapú POS felületén elérhető Feladatrögzítő egy olyan új megoldás, melynek megalkotásakor a gyors reakció igényét tartottuk szem előtt. Rugalmas alkalmazásprogramozási felületet (API-t) biztosít a bővítés érdekében, illetve zökkenőmentes integrációt kínál az üzleti folyamatokat rögzítő ügyfelek számára. Ezenkívül a Feladatrögzítőnek a Microsoft Dynamics Lifecycle Services ([https://bpm.lcs.dynamics.com](https://bpm.lcs.dynamics.com/)) Üzletifolyamat-modellező eszközével való integrációja is megvalósult. A felhasználók ezért továbbra is multimédiás diagramokat készíthetnek az üzleti folyamatokról a felvételek segítségével, és ez alapján elemezhetik, illetve tervezhetik az alkalmazásaikat.
+A Retail Modern POS és a Cloud POS felületén elérhető Feladatrögzítő egy olyan új megoldás, melynek megalkotásakor a gyors reakció igényét tartottuk szem előtt. Rugalmas alkalmazásprogramozási felületet (API-t) biztosít a bővítés érdekében, illetve zökkenőmentes integrációt kínál az üzleti folyamatokat rögzítő ügyfelek számára. Ezenkívül a Feladatrögzítőnek a Microsoft Dynamics Lifecycle Services ([https://bpm.lcs.dynamics.com](https://bpm.lcs.dynamics.com/)) Üzletifolyamat-modellező eszközével való integrációja is megvalósult. A felhasználók ezért továbbra is multimédiás diagramokat készíthetnek az üzleti folyamatokról a felvételek segítségével, és ez alapján elemezhetik, illetve tervezhetik az alkalmazásaikat.
 
 ## <a name="architecture"></a>Felépítés
 
@@ -146,6 +145,3 @@ Amikor rákattint egy Feladat-útmutatóra a keresési találatok között, vagy
 
 > [!NOTE]
 > A Retail Modern POS és a Cloud POS Súgója nem hozza fel a feladat-útmutatókat a képernyő vagy a végzett művelet alapján. A keresőmezőbe be kell írnia a folyamat nevét, majd kattintson a **Keresés** lehetőségre.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

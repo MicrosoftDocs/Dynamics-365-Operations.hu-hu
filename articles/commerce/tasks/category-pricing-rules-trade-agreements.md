@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: DefaultDashboard, RetailDiscountPricingWorkspace, RetailPricingDiscountCategoryPriceRule, RetailCategoryPriceRule, EcoResCategorySingleLookup, RetailCategoryPriceWizard, PriceDiscAdm, PriceDiscAdmTable
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 21b1986aa36aab23f50a5af434435f9e93318e45
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a945a0f49df92731175c1624da98831bbc5bb741
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412920"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5006085"
 ---
 # <a name="category-pricing-rules-to-create-trade-agreements"></a> Kategória-árazási szabályok kereskedelmi megállapodások létrehozásához
 
@@ -59,6 +58,3 @@ Ez az eljárás bemutatja, hogyan hozhat létre eladási árra vonatkozó keresk
 24. Kattintson a Kategória árszabályai fülre.
     * Ebben a listában megjelennek a csatornaspecifikus Kategória-árazási szabályok.  
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
