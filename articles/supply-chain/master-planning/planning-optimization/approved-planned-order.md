@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-08-21
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: b7975088be898ccecceb1f7be009cecff107f6e6
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c29ede7ad8916a97b4a04b68f41961f79810e0c8
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429491"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4983569"
 ---
 # <a name="approve-planned-orders"></a>Tervezett rendelések jóváhagyása
 
@@ -43,6 +42,3 @@ Az **Állapot** mező a következő értékek használatával segít a folyamat 
 - **Jóváhagyva:** Ha meg akarja tartabi a módosításokat, vagy tervezett rendelést szeretne megerősíteni, akkor módosítsa az állapotot *Jóváhagyott* értékre. Az Alaptervezés megerősített és várt ellátásnak veszi a *Jóváhagyott* állapotú tervezett rendeléseket, így azokat nem módosítja vagy nem törli a program későbbi alaptervezés futtatása során. Ennek elérése érdekében a tervezési logika átmásolja a *Jóváhagyott* tervezett rendeléseket a régi terv verzióból az új terv verzióba az alaptervezés során. Ne felejtse el, hogy a *Jóváhagyott* tervezett rendelések csak az adott alaptervben számítanak ellátásnak.
 
 A tervezett rendeléseket kezelheti az **Alaptervezés** munkaterületen, a **Tervezett rendelés** listában, vagy a **Tervezett termelési rendelések**, **Tervezett beszerzési rendelések**, és **Tervezett átmozgatás** listákban.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

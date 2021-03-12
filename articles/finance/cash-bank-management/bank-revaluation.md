@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: BankCurrencyRevalHistory
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2019-03-08
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: f99a5ed82fd4d74a5d20620dbe19b4f18e332432
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5b7d2e33c1edb36227a76453d1981aec5babbf75
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4444074"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4985362"
 ---
 # <a name="bank-foreign-currency-revaluation"></a>Bank – devizaátértékelés
 
@@ -88,6 +87,3 @@ A devizaátértékelési tranzakció ugyanazon dimenziók szerint kerül feloszt
 Ha az átértékelési tranzakciót sztorníroznia kell, válassza ki a **Sztornírozási tranzakció** gombot a **Devizaátértékelés** lap Műveleti ablaktábláján. Új devizaátértékelési előzményrekord jön létre az átértékelés megtörténte vagy sztornírozási időpontja könyvvizsgálati ellenőrzési előzményeinek megőrzése érdekében.
 
 Több átértékelés sztornírozásához a legutoljára létrehozott átértékelést kell először sztornírozni. Ezután dátum szerint folytassa a korábbi átértékelések sztornírozását. Ezután a sztornírozott időszakokra feldolgozhat új átértékeléseket.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

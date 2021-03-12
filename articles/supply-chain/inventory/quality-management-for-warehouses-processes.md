@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-04-02
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 0f39bd2ffda492fce9b3fe51feafcbc8fd32391c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: fd6b4b0c30a8a4cb36955e9b131c937c4db80772
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429794"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4983725"
 ---
 # <a name="quality-management-for-warehouse-processes"></a>Raktári folyamatok minőségkezelése
 
@@ -622,6 +621,3 @@ A 51 raktárhoz beállította a munka- és a helyadatokat, hogy biztosítsa a mu
 
 > [!NOTE]
 > Fontolja meg a kimenő minőség bejegyzés hozzáadását egy mobileszköz-menüelemhez, ahol a tevékenység kódja *Nyitott munkalista megjelenítése*. Példaként megtekintheti a **Munkalista** nevű mobileszköz munkaelemet a demóadatok között. A *Minőségi rendelés* munkaosztályt először adja hozzá felhasználó által irányított menüelemhez adja hozzá, mivel ez a munkaosztály szükséges munka megjelenítéséhez a munkalistában. Ezután vegye fel a *Minőségi rendelés* munkaosztályt a **Munkalista** menüelembe. Azok a felhasználóknak, akik hozzáférnek a munkalistához, ezután ki tudják választani és fel tudják dolgozni a minőségi rendelés ellenőrzése által automatikusan létrehozott munkát.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

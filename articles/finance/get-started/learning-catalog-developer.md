@@ -10,16 +10,15 @@ ms.service: Dynamics365Operations
 ms.technology: ''
 audience: Application user
 ms.reviewer: margoc
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: e57c51011f1d93a6f62eb88c9cc45a38f2d0a5f3
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 59cfc629e7c6e978715f08bc4a3383ba6f9bb089
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4528744"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4984984"
 ---
 # <a name="learning-catalog-for-dynamics-365-finance-developers"></a>Képzési katalógus a Dynamics 365 Finance fejlesztők számára
 
@@ -49,8 +48,8 @@ A következő katalógus az alapismeretekből a meghatározott tartományokra, a
 | [Finance and Operations: A Dynamics 365 for Finance and Operations kiterjesztése PowerApps szolgáltatással (DYN558PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-extending-dynamics-365-with-powerapps-2-6-2019) | A vállalatok digitális átalakításához és a felhasználó termelékenységének növeléséhez elengedhetetlen a Microsoft PowerApps egyszerűségének és a Dynamics 365 for Finance and Operations rendszerrel való integrációnak megértése. | Webes konferencia szabad rögzítése | 43 perc |
 | [Finance and Operations: Bővíthetőség (DYN518PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-extensibility-10-26-18) | Áttekintést és frissítést fogunk biztosítani a Microsoft bővíthetőségi terveiről. Részletesen megvitatjuk a megoldások kiterjesztésének különböző módszereit, mélyen beletekintünk a metaadatok bővíthetőségi funkcióiba, valamint a kód bővítésével és kiterjesztésével kapcsolatos lehetőségeikbe, többek között a hatékony parancslánc funkcióba. | Webes konferencia szabad rögzítése | 50 perc |
 | [Visual Studio Team Services (VSTS) beállítás (VIR782PAL) ](https://community.dynamics.com/365/b/techtalks/posts/visual-studio-team-services-vsts-setup-january-17-2017) | Ez a Tech Talk végigvezeti a szükséges lépéseken, hogy konfiguráljon egy VSTS-példányt és egy projektet, amely az LCS fejlesztési projekthez kapcsolódik a Dev/Test környezet konfigurációhoz. | Webes konferencia szabad rögzítése | 41 perc |
-| [CDS-adatintegrálás (DYN451PAL2) ](https://community.dynamics.com/365/b/techtalks/posts/cds-data-integrator-april-19-2018) | Csatlakozzon a lehetőségekről szóló technikai megbeszéléshez a Common Data Service (CDS) adatintegrálásról. Megvitatjuk az integrációs lehetőségeket a Dynamics 365 Customer Engagement és a Dynamics 365 Finance and Operations között, valamint a külső megoldásokkal való integrációt. | Webes konferencia szabad rögzítése | 61 perc |
-| [Integráció a Dynamics 365 for Sales és a Dynamics 365 for Finance and Operations között CDS-en keresztül (DYN340PAL) ](https://community.dynamics.com/365/b/techtalks/posts/integration-between-dynamics-365-for-sales-and-dynamics-365-for-finance-amp-operations-via-cds-september-25-2017) | Ebben a Tech Talkban bemutatjuk A potenciális vevők készpénzre váltása integrációs forgatókönyvet, ahol az értékesítési és marketingtevékenységek a Dynamics 365 for Sales esetében történnek, a teljesítés pedig a Dynamics 365 for Finance and Operations keretében. Az adatintegrátort és az integráció módosítását is áttekintjük. | Webes konferencia szabad rögzítése | 54 perc |
+| [Dataverse Data Integrator (DYN451PAL2)](https://community.dynamics.com/365/b/techtalks/posts/cds-data-integrator-april-19-2018) | Csatlakozzon a lehetőségekről szóló technikai megbeszéléshez a Dataverse Data Integratorral kapcsolatban. Megvitatjuk az integrációs lehetőségeket a Dynamics 365 Customer Engagement és a Dynamics 365 Finance and Operations között, valamint a külső megoldásokkal való integrációt. | Webes konferencia szabad rögzítése | 61 perc |
+| [Integráció a Dynamics 365 for Sales és a Dynamics 365 for Finance and Operations között Dataverse rendszeren keresztül (DYN340PAL)](https://community.dynamics.com/365/b/techtalks/posts/integration-between-dynamics-365-for-sales-and-dynamics-365-for-finance-amp-operations-via-cds-september-25-2017) | Ebben a Tech Talkban bemutatjuk A potenciális vevők készpénzre váltása integrációs forgatókönyvet, ahol az értékesítési és marketingtevékenységek a Dynamics 365 for Sales esetében történnek, a teljesítés pedig a Dynamics 365 for Finance and Operations keretében. Az adatintegrátort és az integráció módosítását is áttekintjük. | Webes konferencia szabad rögzítése | 54 perc |
 | [Adatkezelés (DYN757PAL2) ](https://community.dynamics.com/365/b/techtalks/posts/dynamics-365-finance-scm-data-management-february-14-2020) | Legyen szíves kövesse ezt a technikai megbeszélgetést az adatkezelésről. A rendelkezésre álló lehetőségek és az ajánlott forgatókönyvek ismertetése. A rendszer az adatkezelési keretrendszert, a sablonokat, az adatbázis-másolást, a több vállalatot érintő adatmegosztási és teljesítménybeli szempontokat tárgyalja. | Webes konferencia szabad rögzítése | 58 perc |
 | [Azure integrációs eszközök a Dynamics 365 for Finance and Operations alkalmazáshoz (DYN386PAL) ](https://community.dynamics.com/365/b/techtalks/posts/azure-integration-tools-for-dynamics-365-for-finance-and-operations-november-2-2017) | Ez a TechTalk fogja tárgyalni azokat az eszközöket, amelyek figyelembe veszik a Dynamics 365 Finance and Operations alkalmazásokkal való integrálását, és azt, hogy mikor kell kiválasztani az integrációs eszközt. Az alkalom az Azure integrációs szolgáltatások alkalmazásával kialakított néhány integrációs esetet is magában foglal. | Webes konferencia szabad rögzítése | 63 perc |
 | [Dynamics 365 for Finance and Operations integrációs keretrendszer (DYN385PAL) ](https://community.dynamics.com/365/b/techtalks/posts/integration-frameworks-within-dynamics-365-for-finance-amp-operations-october-31-2017) | Ez az alkalom áttekintést nyújt a Dynamics 365 for Finance and Operations integrációs keretrendszerekről, és megvitatja a megfontolásokat, amely alatt ezeket a keretrendszereket használni lehetne. | Webes konferencia szabad rögzítése | 64 perc |
@@ -94,6 +93,3 @@ A következő katalógus az alapismeretekből a meghatározott tartományokra, a
 | Tartalom | Leírás  | Formátum  |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
 |[MB-500 vizsga: Microsoft Dynamics 365: Finance and Operations Apps Developer](https://docs.microsoft.com/learn/certifications/exams/mb-500) | Ez a vizsga a következő technikai feladatok végrehajtásának képességét méri fel: architektúra- és megoldástervezés; fejlesztői eszközök alkalmazása; AOT-elemek tervezése és fejlesztése; kód fejlesztése és tesztelése; jelentés megvalósítása; az adatmegoldások integrálása és kezelése; a biztonság kialakítása és a teljesítmény optimalizálása. | Vizsga; a költség régiónként változik |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

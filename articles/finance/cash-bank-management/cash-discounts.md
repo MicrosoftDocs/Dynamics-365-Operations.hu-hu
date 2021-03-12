@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: CashDisc
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 3741
 ms.assetid: c25f9d85-2702-46aa-8e61-0b4886e069b3
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 139fb4fdb7d4f8034bff5e9668dc794f29fb327e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9d4f6d5bdf4f2fdc4529d9f51515ed2ac4b5b3b5
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4444120"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4985312"
 ---
 # <a name="cash-discounts"></a>Készpénzfizetési engedmények
 
@@ -43,7 +42,7 @@ Ha a számla kiegyenlítése időben megtörténik ahhoz, hogy a vevő készpén
 3.  A fő feladási számla a készpénzfizetési engedmények lapján vagy a vevő Fő számlája engedmények mezőben vagy a Szállító Fő számlája mezőben a kiegyenlített számláko szereplő készpénzfizetési engedmény kódokhoz.
 4.  A készpénzfizetési engedmények fő számlája az automatikus tranzakciók lapok számláján van meghatározva.
 
-## <a name="example-series-of-cash-discounts"></a> Példa: Készpénzfizetési engedmények sorozatai
+## <a name="example-series-of-cash-discounts"></a>Példa: Készpénzfizetési engedmények sorozatai
 Állítson be három kódot a készpénzfizetési engedményekhez a következők szerint:
 -   5D10% kód - 10%-os készpénzfizetési engedmény, amikor az összeg 5 napon belül kerül kiegyenlítésre.
 -   10D5% kód - 5%-os készpénzfizetési engedmény, ha az összeg 10 napon belül kerül kiegyenlítésre.
@@ -56,7 +55,7 @@ A Következő engedmény kódja mezőben:
 
 A készpénzfizetési engedmény három kódja követi egymást mivel a fizetési dátum meghaladja a számlán szereplő előző készpénzfizetési engedmény dátumát. Egy készpénzfizetési engedmény csak akkor van engedélyezve, amikro a számla ki van egyenlítve, azon alapul, hogy melyik készpénzfizetési engedmény dátuma felel meg a készpénzfizetési engedmények sorozatában.
 
-## <a name="example-exchange-rates-for-cash-discounts"></a> Példa: Készpénzfizetési engedmények átváltási díjai
+## <a name="example-exchange-rates-for-cash-discounts"></a>Példa: Készpénzfizetési engedmények átváltási díjai
 A jogi személy könyvelési pénzneme EUR és a következő árfolyamok USD-ben vannak megadva:
 -   február 1 = 110
 -   március 1 = 80
@@ -64,8 +63,5 @@ A jogi személy könyvelési pénzneme EUR és a következő árfolyamok USD-ben
 Február 15-én adnak fel egy 20D2%-os készpénzfizetési engedménnyel rendelkező 1000 USD-s számlát. A számla összege a könyvelési pénznemben 1100 EUR. A számlaösszegből 980 USD kifizetése történik meg március 1-jén. A készpénzfizetési engedmény összege 20 USD. A fizetés könyvelési pénznemének összege 784 EUR. A készpénzfizetési engedmény összegének a könyvelési pénznemben történő kiszámítása március 1-jei átváltási árfolyam alapján történik: 20 \* 80 / 100 = 16 EUR.
 
 > [!NOTE]
-> Ha a részfizetés beállítás készpénzfizetési engedmény számítása van kiválasztva a Számla kötelezettségek paramétereinek vagy a Kötelezettségi paramétereinek lapjain, az az átváltási díj használatos, amely hatással van minden egyes részlet fizetés dátumára. 
+> Ha a részfizetés beállítás készpénzfizetési engedmény számítása van kiválasztva a Számla kötelezettségek paramétereinek vagy a Kötelezettségi paramétereinek lapjain, az az átváltási díj használatos, amely hatással van minden egyes részletfizetés dátumára. 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

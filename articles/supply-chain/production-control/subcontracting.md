@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: ''
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 1cc1040393d843f39ca8c741a7c51435c7169c00
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3e282e0676e53200b0993dd9cb2b52e08fe97dca
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429254"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4981456"
 ---
 # <a name="subcontracting"></a>Alvállalkozásba adás
 
@@ -303,6 +302,3 @@ Egy 10 darabos termelési rendelés jön létre a D8100, "Bevont kabinet" termé
     ![Költség-összehasonlítás diagramjai](./media/subcontract35_cost-comparison-charts.png)
 
 Hiányzó beállítás az adatoknál.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

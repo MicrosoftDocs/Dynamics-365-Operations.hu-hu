@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: InventAgingStorage, InventAgingStorageChart, InventAgingStorageDetails, InventValueProcess, InventValueReportSetup, InventClosing
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: riluan
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: e84bb167395c06295b0e8ef8b9fd98aa4bc0cc14
-ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
+ms.openlocfilehash: b8c527e578fee6abfeeade99fba8070365c020bd
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "4429963"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4983850"
 ---
 # <a name="troubleshoot-cost-management"></a>Költségkezelés – hibaelhárítás
 
@@ -63,5 +62,22 @@ Ne felejtsen el egy %3 (2019.01.31.) időszak végének megfelelő készletet le
 
 A **Készletkorosítási jelentés** különböző értékeket jelenít meg különböző tárolási dimenziókban (például hely vagy raktár). A jelentési logikával kapcsolatos további tudnivalókat lásd: [Készletkorosítási jelentés példák és logika](inventory-aging-report.md).
 
+## <a name="an-update-conflict-occurs-when-the-inventory-valuation-method-is-either-standard-cost-or-moving-average"></a>Frissítési ütközés történik, ha a készletellenőrző módszer elszámolóáras vagy mozgóátlag
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+Ha párhuzamosan ad fel olyan dokumentumokat, mint a készletnaplók, a beszerzési rendelési számlák vagy az értékesítési rendelés számlái a skálázhatóság és a teljesítmény érdekében, hibaüzenetet kaphat egy frissítési ütközésről, és előfordulhat, hogy néhány dokumentum nem lesz feladva. Ez a hiba akkor fordulha elő, ha a készletellenőrző módszer *elszámolóáras* vagy *mozgóátlag*. Mindkét módszer végleges költségszámítási módszer. Más szóval a végső költséget a feladáskor határozzák meg.
+
+Ha a *Mozgóátlag* módszert használja, akkor a hibaüzenet hasonló ehhez a példához:
+
+> Az arányos költségszámítás után nem várható xx.xx készletérték
+
+Ha az *Elszámolóáras* módszert használja, akkor a hibaüzenet hasonló ehhez a példához:
+
+> Az elszámolóár nem egyezik meg a frissítés utáni pénzügyi készletértékkel. Érték = xx.xx, mennyiség = yy.yy, elszámolóár = zz.zz
+
+Amíg a Microsoft nem ad ki megoldást a probléma kiküszöbölésére, a hibák elkerüléséhez vagy csökkentéséhez fontolja meg a következő megoldások használatát:
+
+- Adja fel újra a sikertelen dokumentumokat.
+- Hozzon létre olyan dokumentumokat, amelyekhez kevesebb sor tartozik.
+- Kerülje a decimális értékeket az elszámolóárban. Próbálja meg meghatározni az elszámolóárat úgy, hogy az **Ár mennyisége** mező *1-re* van állítva. Ha *1*-nél több **Ármennyiség** értéket kell megadnia, próbálja meg minimálisra csökkenteni a tizedesjegyek számát az elszámolóáron. (Ideális esetben kevesebb mint két tizedesjegynek kell lennie.) Például ne definiálja az olyan elszámolóár-beállításokat, mint például **Ár** = *10* és **Ármennyiség** = *3*, mivel a készletegység elszámolóárát 3.333333 értékben fogják létrehozni (ahol a tizedesérték ismétlődik).
+- A dokumentumok többsége esetében lehetőleg ne legyen több olyan sor, amely a termék- és pénzügyi készletdimenziók ugyanazon kombinációját tartalmazza.
+- Csökkentse a párhuzamos futások mértékét. (Ebben az esetben a rendszer gyorsabb lehet, mert kevesebb frissítési ütközés és újraküldés fordulhat elő.)
