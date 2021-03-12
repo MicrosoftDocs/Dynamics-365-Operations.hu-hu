@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: AssetParameters
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 264684
 ms.search.region: Hungary
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: e79a48c185dcf9ed0cb1e41af3b931c2de2c77ff
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e090c604b867112c1da57d4a8d123603b7934f0f
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408049"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4962749"
 ---
 # <a name="low-cost-fixed-assets"></a>Kis értékű tárgyi eszközök
 
@@ -51,6 +50,3 @@ Eszköz megszerzésekor egy beszerzési tranzakciót hoz létre a beszerzést me
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

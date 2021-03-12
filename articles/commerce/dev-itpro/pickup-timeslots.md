@@ -3,7 +3,7 @@ title: Vevői átvételi időközök létrehozása és frissítése
 description: Ez a témakör azt mutatja be, hogyan lehet a Commerce központban létrehozni, konfigurálni és frissíteni a vevői átvételi időközöket.
 author: anupamar-ms
 manager: AnnBe
-ms.date: 11/06/2020
+ms.date: 01/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2020-09-20
 ms.dyn365.ops.version: Retail 10.0.15 update
-ms.openlocfilehash: f86eb47ec64dff230223ed0ecbe792373aca649f
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 125696e8f32c2452a572a2316f512779f399f5c4
+ms.sourcegitcommit: 8b4cb7b6ad4aab37566bcc91e426bd56db771416
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681542"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "4828211"
 ---
 # <a name="create-and-update-time-slots-for-customer-pickup"></a>Vevői átvételi időközök létrehozása és frissítése
 
@@ -49,17 +49,15 @@ Az időköz a következő tulajdonságok használatával van definiálva:
 
     A **Minimális napok** tulajdonság biztosítja, hogy elegendő idő álljon a kiskereskedő számára a rendelés feldolgozására, mielőtt készen állna a felvételre. A **Maximális napok** tulajdonság biztosítja, hogy a felhasználó ne választhasson ki olyan dátumot, amely túl messze van a jövőben. Ha például a minimális érték **1**, és a megrendelést szeptember 20-án adják le, a legkorábbi nap, amikor a rendelés elérhető lesz a felvételhez, a következő jogosult nap (szeptember 21.). Hasonlóképpen, a maximális érték beállításával megadhatja, hogy a rendelés legfeljebb hány napig vehető át. Ha a minimális és maximális értékek meg vannak határozva, a webhely felhasználói csak egy meghatározott napokat láthatják és választhatják ki a fizetés során.
 
-    A minimális értéket 1-nél kisebb decimális értékre is állíthatja. Ha például a felvétel a megrendelés elküldése után négy órával elérhető, állítsa a minimális értéket **0,17**-re (= 4 ÷ 24, két tizedesjegyre kerekítve). Ha azonban a minimális értéket 1-nél nagyobb decimális értékre állítja, a rendszer mindig a legközelebbi egész számra (felfelé vagy lefelé) kerekíti.
-
-    Ha a maximális értéket decimális értékre állítja, a függvény mindig felfelé kerekíti. Például egy **1,2**-es érték **2**-re lesz felkerekítve.
+    A minimális értéket 1-nél kisebb decimális értékre is állíthatja. Ha például a felvétel a megrendelés elküldése után négy órával elérhető, állítsa a minimális értéket **0,17**-re (= 4 ÷ 24, két tizedesjegyre kerekítve). Ha azonban a minimális értéket 1-nél nagyobb decimális értékre állítja, a rendszer mindig a legközelebbi egész számra (felfelé) kerekíti. Például egy **1,2**-es érték **2**-re lesz felkerekítve. Hasonlóképpen ha a maximális értéket decimális értékre állítja, a rendszer mindig a legközelebbi egész számra (felfelé) kerekíti. 
 
 - **Kezdő dátum** és **záró dátum** – adja meg az idősáv kezdő és záró dátumát. Minden időközbejegyzés rendelkezik kezdő dátummal és záró dátummal. Éppen ezért rugalmasan lehet a különböző időpontokat felvenni az egész év folyamán (például felvétel munkaszüneti órákban). Ha egy rendelés elküldése után változik egy időköz kezdete és dátumai, akkor a módosítások nem vonatkoznak erre a rendelésre. A kezdő és záró dátumok megadásakor figyelembe kell venni a szünnapok dátumát (például karácsony napja), és gondoskodniuk kell arról, hogy az időközök ne legyenek meghatározva az adott napok esetében.
-- **Aktív szállítási idő** – adja meg azt az időszakot, amikor a felvétel engedélyezve van. Például a felvételi idők naponta délután 2 és 5 óra között lehetnek. Ez a tulajdonság azt teszi lehetővé, hogy a felvételi idők függetlenek legyenek a nyitvatartási időtől. Ennélfogva a kiskereskedő beállíthat olyan átvételi időpontokat, amelyek megfelelnek a megadott üzleti követelményeknek. Amikor meghatározza az aktív felvételi órákat, figyelembe kell vennie a nyitvatartás idejét, és biztosítania kell, hogy a felvételi idők ne legyenek beállítva, amikor az üzlet zárva van.
+- **Aktív felvételi órák** – adja meg azt az időszakot, amikor a felvétel engedélyezve van. Például a felvételi idők naponta délután 2 és 5 óra között lehetnek. Ez a tulajdonság azt teszi lehetővé, hogy a felvételi idők függetlenek legyenek a nyitvatartási időtől. Ennélfogva a kiskereskedő beállíthat olyan átvételi időpontokat, amelyek megfelelnek a megadott üzleti követelményeknek. Amikor meghatározza az aktív felvételi órákat, figyelembe kell vennie a nyitvatartás idejét, és biztosítania kell, hogy a felvételi idők ne legyenek beállítva, amikor az üzlet zárva van.
 
     > [!NOTE]
     > Az üzleti felvétel idejét a megfelelő üzlet időzónájában kell megadni.
 
-- **Időköz intervalluma** – Adja meg az időtartamot, amely az egyes időpontokhoz hozzárendelhető. Például az egyes időközök hossza 15 perc, 30 perc vagy egy óra lehet.
+- **Időköz intervalluma** – Adja meg az időtartamot, amely az egyes időpontokhoz hozzárendelhető. Például az egyes időközök hossza 15 perc, 30 perc vagy egy óra lehet. Ha az időköz értéke 0, akkor az időköz a kezdési és a záró időpont közötti teljes időtartamra rendelkezésre áll.
 - **Időközök intervallumonként** – adja meg, hogy hány vevő vagy rendelés szolgálható ki az egyes időköz-intervallumokban. Például megadhatja az **1**, **2**, **3**, vagy bármely más egész szám értékét.
 - **Aktív napok** – adja meg a hét azon napjait, amikor a felvételi időközök aktívak. Ez a tulajdonság azt teszi lehetővé, hogy a kiskereskedő határozza meg azokat a napokat, amikor a felvételi rendeléseket támogatni szeretné.
 - **Kiskereskedelmi csatornák** – adja meg a kiskereskedelmi csatornákat. Minden időközt egy vagy több kiskereskedelmi üzlethez kapcsolható. Az egyes üzletek nyitvatartási idejétől függően egy vagy több időközbejegyzést lehet létrehozni és társítani a csatornához. 
@@ -84,7 +82,7 @@ A Commerce központ időköz funkciójának konfigurálásához kövesse az alá
 1. A **Rendelés felvételi idejének beállításai** gyorslapon válassza a **Hozzáadás** elemet.
 1. A **Rendelés felvételi idejének beállításai** párbeszédpanelen határozza meg a dátumtartományt, a szállítási módot, a szállítás aktív idejét, az aktív napokat, az időköz intervallumát, az időközök számát intervallumonként és más beállításokat.
 
-    Ha a belátható jövőben az időközök statikusak lesznek, hagyja a **Záró dátum** mezőt üresen.
+    Ha a belátható jövőben az időközök statikusak lesznek, állítsa a **Záró dátum** mezőt **Soha** értékre.
 
     > [!NOTE]
     > Több sablon is létrehozható, de egyetlen csatornához vagy üzlethez csak egy sablon tartozhat.
@@ -120,9 +118,12 @@ A következő ábra példát mutat be egy e-kereskedelmi rendelésre, amelynél 
 
 ![Példa egy e-kereskedelmi rendelésre, amelynél a felvételi időköz ki van kiválasztva](../dev-itpro/media/Curbside_timeslot_eCommerce_checkoutsummary.PNG)
 
+## <a name="time-slot-selection-for-call-center-orders"></a>Időköz kiválasztása hívásközponti rendelésekhez
+
+A hívásközponti alkalmazásban a hívásközponti ügynökök kiválaszthatják az átvételi áruházat vagy helyet, valamint a dátumot és az időt is, amint azt az alábbi ábra is mutatja.
+
+![Példa hívásközponti rendelésre, amelynél a felvételi időköz ki van kiválasztva](../dev-itpro/media/Curbside_timeslot_callcenter.png)
+
 ## <a name="additional-resources"></a>További erőforrások
 
 [Átvételi információk modul](../pickup-info-module.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

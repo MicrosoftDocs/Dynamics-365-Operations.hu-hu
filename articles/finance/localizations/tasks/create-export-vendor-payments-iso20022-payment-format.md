@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransVendPaym, SysQueryForm, VendPaymProposalEdit, BankAccountTableLookUp
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ff8a2858bfa96eb1d4b0afa1e48ebd1b578a4431
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1df738e3925dc23e7723d93f33acf6a9d811b113
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4444077"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4964541"
 ---
 # <a name="create-and-export-vendor-payments-using-iso20022-payment-format"></a>Szállítói kifizetések létrehozása és exportálása ISO20022 fizetési formátumban
 
@@ -50,6 +49,3 @@ Ez az ötödik azon öt eljárás közül, amelyek elektronikus jelentési beál
     3.    Írjon be egy értéket a **Fájlnév** mezőbe. Ebben a példában az euróban történő fizetés miatt a létrehozott fájl SEPA kompatibilis lesz. A ISO20022 jóváírás-átutalás és a többi szállítói fizetési dormátum is használható a fizetések létrehozására más pénznemekben.
     4.    A **Bankszámlák** mezőben adjon meg vagy válasszon ki egy értéket.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

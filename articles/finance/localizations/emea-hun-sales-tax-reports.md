@@ -10,18 +10,17 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 12641
 ms.search.region: Hungary
 ms.author: roschlom
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: dd836cc0f8b10502e00149189afacb3064406932
-ms.sourcegitcommit: 3d16522c00ba2d30aa43befbf1b7b3eaad377325
+ms.openlocfilehash: 27ce1105079a0a849bf2962c8e11847fa3c4dc0a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "4592546"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4962716"
 ---
 # <a name="sales-tax-reports-for-hungary"></a>Áfajelentések Magyarországról
 
@@ -214,6 +213,3 @@ A **Tételes áfakimutatás** jelentés a következő adatokat tartalmazza:
 
 Ebben a táblában a 102-es sor tartalmazza az értékesítési rendelést, a 103-as sor az értékesítési rendelés jóváírását, a 105-ös sor pedig két szállítói számlát.
 A többi szakasz az egyes partnerekre vonatkozóan is tartalmazza ugyanazokat az információkat, valamint az egyes cikkek számláinak listáját.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

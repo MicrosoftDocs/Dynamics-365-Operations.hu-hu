@@ -3,7 +3,7 @@ title: Új felhasználók létrehozása
 description: A felhasználók a szervezet olyan belső alkalmazottai vagy külső vevői és szállítói, akiknek hozzáféréssel kell rendelkezniük a rendszerhez a munkájuk elvégzéséhez.
 author: peakerbl
 manager: AnnBe
-ms.date: 06/08/2020
+ms.date: 01/12/2021
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,46 +15,69 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6f861b7493d039b332358be7df7d0198cbadcb7a
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: ca062ddd49f1c206c503fb6160ed436fe2d6f7e9
+ms.sourcegitcommit: 9e27a097b7eb3c8f2df66011ccc597ad18bc5445
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679840"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "4878657"
 ---
 # <a name="create-new-users"></a>Új felhasználók létrehozása
 
 [!include [banner](../../includes/banner.md)]
 
-A felhasználók a szervezet olyan belső alkalmazottai vagy külső vevői és szállítói, akiknek hozzáféréssel kell rendelkezniük a rendszerhez a munkájuk elvégzéséhez.
+A Finance and Operations alkalmazások eléréséhez először hozzá kell adni Önt a **Felhasználók** laphoz (**Rendszerfelügyelet \> Felhasználók \> Felhasználók**). A felhasználók közé tartoznak a szervezet belső alkalmazottai, illetve a külső vevők és szállítók. A felhasználókat importálni lehet, vagy kézzel lehet hozzáadni. A megfelelő használathoz minden felhasználónak megfelelő licenccel kell rendelkeznie.
 
-## <a name="associate-a-user-with-a-license-new-license-types-only"></a>Felhasználó társítása licenchez (csak az új licenctípusok esetében)
-Azoknak a vevőknek, akik a 2019 októberében hozzáadott új licenccel rendelkeznek, a felhasználókat társítaniuk kell egy licenchez. A licenchez társított felhasználók automatikusan olyan rendszerfelhasználóként jelennek meg, akiknek nincs szerepkörük az első bejelentkezés alkalmával.
+A Finance and Operations alkalmazások vásárlásával és licencelésével kapcsolatos tudnivalókért lásd: [Microsoft Dynamics 365 licencelési útmutató](https://go.microsoft.com/fwlink/?LinkId=866544&amp;clcid=0x409).
 
+## <a name="assign-a-license-to-a-user"></a>Licenc hozzárendelése egy felhasználóhoz
 A rendszeradminisztrátorok [rendelhetnek hozzá licenceket a felhasználókhoz](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users?view=o365-worldwide) a [Microsoft 365 felügyeleti központban](https://docs.microsoft.com/office365/admin/admin-overview/about-the-admin-center?view=o365-worldwide).
 
-## <a name="associate-an-external-user-with-a-license-new-license-types-only"></a>Külső felhasználó társítása licenchez (csak az új licenctípusok esetében)
-A bérlő környezetének külső felhasználóit fel kell tüntetni a gazdabérlő címtárában (Azure Active Directory (Azure AD)), hogy hozzájuk lehessen rendelni a licenceket. Ezeket a külső felhasználókat hozzá kell adni a bérlőhöz az Azure AD felületen vendég felhasználóként, majd hozzájuk rendelni a megfelelő licenceket. További tájékoztatás: [Azure Active Directory B2B együttműködő felhasználók hozzáadása az Azure Portal webhelyen](https://docs.microsoft.com/azure/active-directory/b2b/add-users-administrator).
+## <a name="add-an-external-user-in-azure-ad-and-assign-a-license"></a>Külső felhasználó hozzáadása az Azure AD megoldásban, és egy licenc hozzárendelése 
+A külső felhasználóknak meg kell jelenniük a bérlőkönyvtárban (Azure Active Directory (Azure AD)), hogy licenceket kaphassanak. Ezeket a külső felhasználókat hozzá kell adni a bérlőhöz az Azure AD felületen vendég felhasználóként, majd hozzájuk rendelni a megfelelő licenceket. A Finance and Operations alkalmazásoktól az a követelmény, hogy a vendégfelhasználó vállalatának használnia kell az Azure AD megoldást. További tájékoztatás: [Azure Active Directory B2B együttműködő felhasználók hozzáadása az Azure Portal webhelyen](https://docs.microsoft.com/azure/active-directory/b2b/add-users-administrator).
 
-## <a name="add-a-new-user"></a>Új felhasználó hozzáadása
-1. Ugrás a **Rendszerfelügyelet \> Felhasználók \> Felhasználók** elemre.
-2. A Műveleti ablaktáblán kattintson az **Új** elemre.
-3. A **Felhasználói azonosító** mezőbe írja be a felhasználó egyedi azonosítóját. A felhasználó azonosítóját kötelező megadni.  
-4. Írja be a felhasználó nevét a **Felhasználónév** mezőbe.  
-5. A **Tartomány** mezőben adja meg a felhasználó tartományát.  
-6. Az **Alias** mezőbe írja be a felhasználó aliasát.  
-7. A **Vállalat** mezőben válassza ki a vállalatot. 
-8. A **Felhasználó szerepkörei** gyorslapon válassza a **Szerepkörök társítása** lehetőséget a felhasználók biztonsági szerepkörökhöz történő hozzárendeléshez. További információ [Felhasználók hozzárendelése biztonsági szerepkörökhöz](assign-users-security-roles.md).
-9. Válassza ki az **OK** lehetőséget.
-10. Válassza a **Mentés** lehetőséget.
-
-## <a name="import-users"></a>Felhasználók importálása
-1. Ugrás a **Rendszerfelügyelet \> Felhasználók \> Felhasználók** elemre.
+## <a name="import-new-users-from-azure-ad"></a>Új felhasználók importálása az Azure AD-szolgáltatásból 
+1. Ugrás a **Rendszerfelügyelet** \> **Felhasználók** \> **Felhasználók** elemre.
 2. A műveleti ablaktáblán válassza a **Felhasználók importálása** lehetőséget.
-3. A listában jelölje meg a kiválasztott sort.
+3. Válassza ki az importálni kívánt felhasználókat. A lista olyan Azure AD felhasználókat is tartalmaz, akik jelenleg nem felhasználók ebben a környezetben.
 4. Válassza a **Felhasználók importálása** lehetőséget.
 5. Válassza **Bezárás** lehetőséget.
 
+> [!NOTE]
+> A **Vállalat** mező értéke a rendszergazda aktuális munkamenet-vállalata alapján lesz beállítva. Az importálás után a szerepköröket és a szervezeteket megfelelően kell hozzárendelni. További információ [Felhasználók hozzárendelése biztonsági szerepkörökhöz](assign-users-security-roles.md). Feltételesen előfordulhat, hogy a felhasználót egy **Személyhez** kell társítani, és frissíteni kell a felhasználói beállításokat, például a nyelvet.
 
+## <a name="manually-add-a-new-user"></a>Új felhasználó manuális hozzáadása
+1. Ugrás a **Rendszerfelügyelet** \> **Felhasználók** \> **Felhasználók** elemre.
+2. A Műveleti ablaktáblán kattintson az **Új** elemre.
+3. A **Felhasználói azonosító** mezőbe írja be a felhasználó egyedi azonosítóját.   
+4. Írja be a felhasználó nevét a **Felhasználónév** mezőbe.  
+5. A **Szolgáltató** mezőben válassza:
+ - Belső felhasználók esetén használja az alapértelmezett értéket. Például az Azure AD bérlője https://sts.windows.net/ előtaggal.  
+ - Nem Azure AD felhasználók, például a Service-2-Service fiókok esetén adjon meg egy alapvető szöveges értéket. Példa: NA. Ez az érték segít elkerülni a helytelen hitelesítési hívásokat, amelyek hibát okozhatnak, ha érvényes azonosítószolgáltató értéket használ.  
+ - Külső vagy vendég felhasználók esetén adja meg az Azure AD-bérlő nevét ezt követően: https://sts.windows.net/.
+6. Az **E-mail** mezőbe írja be a felhasználó teljes E-mailjét/Felhasználó elsődleges nevét.  
+7. A **Vállalat** mezőben válassza ki a felhasználó alapértelmezett indítási vállalatát. 
+8. Válassza a **Mentés** lehetőséget.
 
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+A rendszer a felhasználói rekord mentésekor [Microsoft Graph](https://docs.microsoft.com/graph/overview) hívás alapján frissíti az identitásszolgáltatót és a telemetriai azonosítót. A telemetriai azonosító a felhasználó alapja a felhasználó objektumazonosítója/biztonsági azonosítója az Azure AD megoldásban.
+
+> [!NOTE]
+> Miután hozzáadta a felhasználót, a szerepköröket és szervezeteket hozzá kell rendelnie a megfelelő módon. További információ [Felhasználók hozzárendelése biztonsági szerepkörökhöz](assign-users-security-roles.md). Feltételesen előfordulhat, hogy a felhasználót egy **Személyhez** kell társítani, és frissíteni kell a **Felhasználói beállításokat**, például a nyelvet.
+
+## <a name="change-a-user-id"></a>Felhasználói azonosító módosítása
+Felhasználói azonosító módosítása csak akkor változtathat meg, ha átnevezi a kulcsot az adatbázisban. Ha ezzel az eljárással módosít egy felhasználói azonosítót, minden kapcsolódó felhasználói beállítás módosul, hogy az új felhasználói azonosítót használja. A **SysLastValue** tábla használati adatai például frissülnek, hogy az új felhasználói azonosítóra hivatkozhassanak.
+
+> [!NOTE]
+> A felhasználói azonosító a felhasználói információs tábla elsődleges kulcsa. Az elsődleges kulcs átnevezése bizonyos időt vehet igénybe a meglévő felhasználók számára, mivel a kulcsra mutató összes hivatkozás is frissül az adatbázisban. 
+
+1. Ugrás a **Rendszerfelügyelet \> Felhasználók \> Felhasználók** elemre.
+2. Jelöljön ki egy felhasználót a listából, és válassza a **Beállítások\> Rekordinformáció** elemet.
+3. Válassza az **Átnevezés** lehetőséget.
+4. Adja meg a felhasználói azonosító új és egyedi nevét, majd válassza az **OK** lehetőséget. 
+5. A megerősítéshez kattintson az **Igen** gombra.
+
+## <a name="additional-resources"></a>További erőforrások
+
+A B2B-felhasználók implementálásához a további beállításokat itt találja: [B2B-felhasználók exportálása az Azure AD megoldásba](../implement-b2b.md).
+
+Az előre konfigurált rendszerfiókokkal kapcsolatos tudnivalókat lásd: [Előre konfigurált rendszerfiókok](../pre-configured-system-accounts.md)

@@ -10,16 +10,15 @@ ms.service: Dynamics365Operations
 ms.technology: ''
 audience: Application user
 ms.reviewer: margoc
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 601977cc5b8aa992b8576d30eb1412fb4e119154
-ms.sourcegitcommit: 95f90ac3f248716abdab16d5de6ccbf059616e4b
+ms.openlocfilehash: 3bd028e7d61fd57ed434a8a598bf24329a54ac1c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4666794"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4963635"
 ---
 # <a name="learning-catalog-for-dynamics-365-supply-chain-management-functional-consultants"></a>Képzési katalógus a Dynamics 365 Supply Chain Management funkcionális konzulensek számára
 
@@ -114,6 +113,3 @@ A funkcionális konzulensek esetében a feladatunk-feladat elemzése során a ku
 | [Vizsga MB-300: Microsoft Dynamics 365 Unified Operations Core](https://docs.microsoft.com/learn/certifications/exams/mb-300?wt.mc_id=learningredirect_certs-web-wwl) | Ez a vizsga a következő műszaki feladatok végrehajtásának képességét méri fel: gyakori funkciók és végrehajtási eszközök használata; a biztonság, a folyamatok és a beállítások konfigurálása; adatáttelepítés végrehajtása; a megoldás érvényesítése és támogatása. | Vizsga; a költség régiónként változik |
 | [Vizsga MB-330: Microsoft Dynamics 365 for Finance and Operations, Supply Chain Management](https://docs.microsoft.com/learn/certifications/exams/mb-330?wt.mc_id=learningredirect_certs-web-wwl) | Ez a vizsga a következő műszaki feladatok végrehajtásának képességét méri fel: termékinformációk kezelése; készletkezelés megvalósítása; az ellátási lánc folyamatainak megvalósítása és kezelése; a raktárkezelési és szállítási menedzsment és az üzleti folyamatok végrehajtása. | Vizsga; a költség régiónként változik |
 | [Vizsga MB-320: Microsoft Dynamics 365 for Finance and Operations, gyártás](https://www.microsoft.com/learning/exam-MB-320.aspx) | Ez a vizsga a következő műszaki feladatok végrehajtásának képességét méri fel: a gyártás beállítása és konfigurálása; termelési és lean rendelések létrehozása és kezelése; termelési kötegrendelések létrehozása, feldolgozása és kezelése. | Vizsga; a költség régiónként változik |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

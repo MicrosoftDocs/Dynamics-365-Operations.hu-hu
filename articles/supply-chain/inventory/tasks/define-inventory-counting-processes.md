@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: InventCountGroup, InventJournalName, InventParameters, EcoResProductDetailsExtended, InventItemLocation, InventLocationIdLookup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: mafoge
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9df5db0e71f550e82820e15b1597d9e287071f83
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3c8550e539a1b3299d89ec2b13550a13e284d807
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429781"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4961372"
 ---
 # <a name="define-inventory-counting-processes"></a>Készletleltár-folyamatok meghatározása
 
@@ -85,6 +84,3 @@ Ez az témakör bemutatja az alapvető leltározási folyamatokon a leltárcsopo
 5. A **Raktárcsoport** mezőjének legördülő menüjében válassza ki a leltározási csoportot. Kiválaszthat egy adott leltárcsoportot, amely vonatkozik a kiválasztott raktár adott cikkére. Ha abban a raktárban leltár történik, ez a leltározási irányelv felülírja az általános leltározási irányelvet a cikkre.  
 6. Válassza a **Mentés** lehetőséget.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

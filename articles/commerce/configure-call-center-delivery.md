@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: RetailMCRChannelDetailPage, MCROrderParameters
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 9919e76b5e3eb1a43c5a0ecd5dda1462bedad4f2
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: bce2dac680871e14220d3bb94afacea0a617c707
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412767"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4963110"
 ---
 # <a name="configure-call-center-delivery-modes-and-charges"></a>Szállítási módok és költségek beállítása a hívásközponthoz
 
@@ -95,6 +94,3 @@ Minden konfigurált szállítási módhoz opcionálisan hozzákapcsolhat egy sü
 Például azokat a rendeléseket, amelyek következő napon kerülnek kiszállításra légi úton, fel kell venni a raktárból minden nap 13:00 óráig. Ebben az esetben létre lehet hozni egy sürgősségi kódot, és ezt a kódot hozzá lehet kapcsolni a rendszerben beállított minden egyes következő napi szállítási módhoz. Amikor a raktár létrehozza a kitárolási hullámot, a **Sürgős** mezőben szereplő megfelelő sürgősségi kód szűrőként használható, így csak azoknak a rendeléseknek a kitárolása történik meg, amelyeknek a szállítási módja hozzá van kapcsolva az adott kódhoz.
 
 Továbbá a hívásközponti rendelés bevitelekor a sürgősségi kód manuális alkalmazható az értékesítési rendelés fejlécére vagy egy értékesítésirendelés-sorra. A kód rendezési és jelentési célokra használható. Bizonyos esetekben a megrendeléseket gondosan kell kezelni a vevőszolgálati hibák miatt. Ebben az esetben alkalmazhatunk egy meghatározott sürgősségi kódot a rendelés fejlécére vagy soraira, hogy segítsük a rendelés azonosítását és priorizálását a teljesítési folyamat során.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

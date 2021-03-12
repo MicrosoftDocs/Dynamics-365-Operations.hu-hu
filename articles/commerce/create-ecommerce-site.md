@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 7d552f29fd8f52b512a7c21b36b0a814cac50646
-ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
+ms.openlocfilehash: cf084f90d203d84c91ddf7c0d963780b895ef23d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "4517184"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4963035"
 ---
 # <a name="create-an-e-commerce-site"></a>E-kereskedelmi webhely létrehozása
 
@@ -75,6 +74,3 @@ Miután létrehozta a webhelyet, a **Termékek** lap kiválasztásával ellenőr
 [Tartalomkézbesítési hálózat (CDN) támogatásának hozzáadása](add-cdn-support.md)
 
 [Helyalapú áruházészlelés engedélyezése](enable-store-detection.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

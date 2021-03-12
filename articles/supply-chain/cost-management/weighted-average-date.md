@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations, Retail
 ms.custom: 28991
 ms.assetid: 945d5088-a99d-4e54-bc42-d2bd61c61e22
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d36f60a13fbee91100e406150e7f5ca890320436
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5df497a8590c6d60a5f0bc39469cf048c3448572
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429333"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4963738"
 ---
 # <a name="weighted-average-date"></a>Dátum szerinti súlyozott átlag
 
@@ -51,7 +50,7 @@ A készletkiadásokat hagyó készlettranzakciók, például az értékesítési
 
 Az elszámolások készletzárási feladások, amelyek módosítják a kiadásokat a záró dátumnak megfelelő helyes súlyozott átlagra. 
 
-**Megjegyzés:** További információkért a kiegyenlítéssel kapcsolatban lásd a készletzárás cikket. A következő példák azt mutatják be, hogy milyen hatást fejt ki a súlyozott átlag öt konfigurációban:
+**Megjegyzés:** További információkért a kiegyenlítéssel kapcsolatban lásd a készletzárás cikket. A következő példák azt mutatják be, hogy milyen hatást fejt ki a súlyozott átlag öt konfigurációban:
 
 -   Dátummal súlyozott átlagot alkalmazó közvetlen elszámolás a **Tényleges értékkel együtt** beállítás nincs aktiválva
 -   Dátummal súlyozott átlagot alkalmazó összesített elszámolás a **Tényleges értékkel együtt** beállítás aktiválása nélkül
@@ -196,6 +195,3 @@ Az új, mozgóátlagon alapuló önköltségi ár a pénzügyileg és fizikailag
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

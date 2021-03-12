@@ -3,7 +3,7 @@ title: Intrastat – áttekintés
 description: Ez a témakör információt biztosít az Intrastat árukereskedelemről és esetenként az Európai Unió (EU) országainak/régióinak szolgáltatásairól szóló jelentésekről. Áttekintést biztosít továbbá a jelentési folyamatot illetően és leírja a szükséges beállításokat és előfeltételeket.
 author: EvgenyPopovMBS
 manager: AnnBe
-ms.date: 07/25/2019
+ms.date: 01/13/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: Intrastat
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 28581
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a70108696d6187126c23eca1779553210cd4a9d6
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9396637c27707f1732d06ec704c7e609aa6c170b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408050"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4962726"
 ---
 # <a name="intrastat-overview"></a>Intrastat – áttekintés
 
@@ -197,7 +196,7 @@ Használja a **Külkereskedelmi paraméterek** lapot az alábbi táblázatban ta
 <td><ul>
 <li><strong>Általános</strong> – Adja meg a következő információkat:
 <ul>
-<li>Az értékesítési rendelésekre, beszerzési rendelésekre, jóváírásokra és átmozgatási rendelésre vonatkozó alapértelmezett tranzakciós kódok. A jóváírásokhoz beállított tranzakciós kódok a tényleges áruk visszatérítési kódjaiként is használatosak és használatosak az eltérő tényleges visszatérítések és jóváírási helyesbítés összevetésére.</li>
+<li>Az értékesítési rendelésekre, beszerzési rendelésekre, jóváírásokra és átmozgatási rendelésre vonatkozó alapértelmezett tranzakciós kódok. A jóváírásokhoz beállított tranzakciós kódok a tényleges áruk visszatérítési kódjaiként is használatosak és használatosak az eltérő tényleges visszatérítések és jóváírási helyesbítés összevetésére. A tényleges áruk visszáruzásának jelentése az Intrastat-átvitelben eltérő irányban történik. A rendszer az érkezés visszáruzását átvitelét kiszállításként jelenti, a kiszállítás visszáruzását pedig érkezésként.</li>
 <li>Az Intrastat-jelentés készítésért felelős alkalmazott.</li>
 </ul></li>
 <li><strong>Minimumhatár</strong> – Adja meg a küszöbérték alatt lévő tranzakciók frissítési beállításait:
@@ -240,6 +239,3 @@ Használja a **Külkereskedelmi paraméterek** lapot az alábbi táblázatban ta
 </tbody>
 </table>
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

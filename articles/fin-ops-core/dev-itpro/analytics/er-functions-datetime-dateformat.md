@@ -3,7 +3,7 @@ title: DATEFORMAT ER-függvény
 description: A témakör tájékoztatást nyújt a DATEFORMAT Elektronikus jelentéskészítési (ER) függvény használatának módjáról.
 author: NickSelin
 manager: kfend
-ms.date: 12/03/2019
+ms.date: 01/04/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1fa6bdef2168112aeb17e0edb9f9a6d1b3bd45c0
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: cdc1671f818bc2c4d8a78d0a35337298e83c5060
+ms.sourcegitcommit: 7cfe8931dd454e811a691f5118a4ecae7ba4b478
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684932"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "4826011"
 ---
 # <a name="dateformat-er-function"></a>DATEFORMAT ER-függvény
 
@@ -52,13 +52,16 @@ A formázni kívánt dátumot reprezentáló dátumérték.
 
 A kimenő karakterlánc formátuma.
 
+> [!NOTE]
+> A formátum-karakterlánc a kis- és nagybetűket megkülönbözteti, ha szabványos vagy egyedi formátumot használ. Például a [szabványos](https://msdn.microsoft.com/library/az4se3k1(v=vs.110).aspx) „d” formátum a rövid dátumminta alapján adja eredményül a dátumot, míg a szabványos „D” formátum a hosszú dátumminta használatával adja vissza a dátumot. Ezenkívül az [egyéni](https://msdn.microsoft.com/library/8kb3ddd4(v=vs.110).aspx) „M” formátum a hónapot adja vissza 1 és 12 között, míg az egyéni „m” formátum a percet adja vissza 0 és 59 között.
+
 `culture`: *Karakterlánc*
 
 A formázáshoz használandó területi beállítás.
 
-## <a name="return-values"></a>Visszaadott értékek
+## <a name="return-values"></a>Visszatérési értékek
 
-*Karakterlánc*
+*Sztring*
 
 Az eredményül kapott karakterláncérték.
 
@@ -77,6 +80,3 @@ A `DATEFORMAT (SESSIONTODAY (), "d", "DE")` az aktuális alkalmazás-munkamenet 
 ## <a name="additional-resources"></a>További erőforrások
 
 [Dátum és idő függvények](er-functions-category-datetime.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
