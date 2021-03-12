@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: BudgetPlanningConfiguration
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 10763
 ms.assetid: 0f2ba752-1f6d-4f28-b9e9-b2e97d10b6d1
 ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c9558013236a728e0fb9691f4edd719fe58d5457
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ec62af4ec62de0d63b590c79db6a8164d59e72c4
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4444107"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4971278"
 ---
 # <a name="budget-planning"></a>Költségvetés-tervezés
 
@@ -106,7 +105,7 @@ A költségvetési tervadatokhoz történő hozzáférés kapcsán a költségve
 
 2.5. Válassza a „Hozzáférés engedélyezése adott szervezetekhez” lehetőséget. Válassza ki az első lépésben létrehozott Szervezeti hierarchiát. Válassza ki a Pénzügyi csomópontot, majd kattintson a Hozzáférés biztosítása gyermekelemekkel együtt gombra. 
 
-***Fontos!*** *Győződjön meg róla, hogy a lépést a DEMF vállalatra vonatkozó szövegkörnyezetben hajtja végre, mivel a Szervezeti biztonsági beállítás az adott jogi személyre vonatkozik* 
+**_Fontos!_* _ _Győződjön meg arról, hogy a lépést a DEMF jogi személyre vonatkozó szövegkörnyezetben hajtsa végre, mivel a Szervezeti biztonsági beállítás az adott jogi személyre vonatkozik* 
 
 ### <a name="task-3-create-scenarios"></a>3. lépés: Változatok létrehozása
 3.1. Lépjen a következőhöz: Költségvetés-készítés&gt;Beállítás &gt; Költségvetés-tervezés &gt; Költségvetés-tervezési konfiguráció. Jegyezze meg a Változatok lapon a jelen oktatóanyagban a továbbiakban használt változatok nevét: Előző évi tényadatok, illetve Költségvetési. 
@@ -247,6 +246,3 @@ C. Lépjen a következőhöz: Költségvetés-készítés &gt; Beállítás &gt;
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

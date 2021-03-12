@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: InventLocationWHSProcessEnablement, WHSLocationProfile, InventTableStorageDimensionGroupChange, InventUpdateBlockedItem, WHSParameters, WHSReservationHierarchy, WHSUOMSeqGroupTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 1714054
 ms.assetid: 79a1a3b9-3a36-4162-8839-ec39b5e26602
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 123be2430f910dfbea438cb6a51be7203eb39fc8
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 45d9809d4bbf1b5a68c3f799ce5d51f9709d276b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429180"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4970281"
 ---
 # <a name="upgrade-warehouse-management-from-microsoft-dynamics-ax-2012-to-supply-chain-management"></a>Raktárkezelés frissítése a Microsoft Dynamics AX 2012-ről a Supply Chain Management szolgáltatásra 
 
@@ -83,6 +82,3 @@ Mielőtt használhatná a kiadott termékeket a **Raktárkezelés** modulban, a 
 6.  A **Tárolási dimenziócsoport módosítása cikkekhez** lapon adja hozzá a cikkszámokat, a tárolási dimenziócsoportokat és az egységszekvencia-csoportokat. Ezt a lépést közvetlenül az oldalon végezheti el a Microsoft Office-integráció használatával vagy az adatentitás folyamat segítségével az [Adatkezelés lehetőségben](../../dev-itpro/data-entities/data-entities.md).
 7.  Ellenőrizze a módosításokat. Az ellenőrzési folyamat részeként az adatok integritását különböző ellenőrzések révén vizsgálja a rendszer. A nagyobb frissítési folyamat részeként hibák fordulhatnak elő, amelyeket esetleg a forrásvégrehajtásban kell módosítani. Ebben az esetben egy további adatfrissítésre lesz szükség.
 8.  Dolgozza fel a módosításokat. A készletdimenziók frissítése eltarthat egy ideig. A kötegelt feladatok segítségével figyelemmel követheti a folyamat állapotát.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

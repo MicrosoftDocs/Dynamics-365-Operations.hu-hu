@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application user
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 16181
 ms.assetid: b1b57734-1406-4ed6-8e28-21c705ee17e2
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2019-01-18
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 91c0a96abdd7df9e85e63ca6b1b47a57f3f401eb
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e14b029a1420eda6af6e83392f295a071a29842a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412737"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4972430"
 ---
 # <a name="retail-price-reports"></a>Kiskereskedelmi árjelentések
 
@@ -44,6 +43,3 @@ Az árjelentés engedélyezéséhez az **Árjelentés engedélyezése áruházho
 | A módosult árral rendelkező termékek megjelenítése | Ha ez **Igen** értékre van állítva csak azokra dátumokra vonatkozóan jeleníti meg az árat, amelyeken az ár megváltozott. Az *Egy nappal előtte* ár a kiválasztott **Kezdő dátumtól** mindig megjelenik, így az üzletvezető egyszerűen azonosíthatja azokat a termékeket, amelyek árai nem módosultak a kijelölt teljes időtartamra, és megtekintheti az aktuális árat is. |
 
 A jelentés generálása után, az Excel-fájl bármilyen további szűrési szükséglethez letölthető. Az árjelentés a termékek árelőzményeinek ellenőrzésére is használható régebbi dátumokon.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

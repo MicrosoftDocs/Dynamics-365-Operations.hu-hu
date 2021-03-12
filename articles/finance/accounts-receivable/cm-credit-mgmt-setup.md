@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 0b25bbeb270f33d1d158de2091ab86e7e98be98a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 98ea865812a0ef187697fadbfc6f576df6595db4
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4443943"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4971753"
 ---
 # <a name="credit-management-parameters-setup"></a>Hitelkezelési pereméterek beállítása
 
@@ -79,6 +78,3 @@ A **vevői hitelkezelési statisztika** adatterületen számos hitelezési stati
 ### <a name="number-sequences-and-shared-number-sequence-parameters"></a>Számsorozatok és megosztott számsorozat paraméterei
 
 A hitelkorlát-korrekciók feldolgozásához egy napló-azonosító szükséges. Meg kell adnia a hitelkorlát-korrekció számát, amely a naplóazonosító generálására szolgál.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

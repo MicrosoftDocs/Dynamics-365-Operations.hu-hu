@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a90f5706c87d398f495fae40f42f6c2d408b1c2a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8b381ec0535676b77a62bc748fd2ca1c521839ae
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412738"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4972455"
 ---
 # <a name="retail-sales-price-management"></a>Kiskereskedelmi értékesítési ár kezelése
 
@@ -240,6 +239,3 @@ Emellett **csak** az árképzés motor támogatja a következő árképzési fun
 Az ár az egyik legfontosabb tényező, amely a vevők vásárlási döntéseit vezérli, és a vásárlás előtt számos vevő a különböző helyek árait hasonlítja össze. A kiskereskedők – annak érdekében, hogy versenyképes árakat tudjanak biztosítani – szorosan figyelemmel a kísérik versenytársaikat, és gyakran biztosítanak promóciókat. Ahhoz, hogy a kiskereskedők megfelelően fel tudják kelteni a vevők figyelmét, fontos, hogy a termékek keresése, a böngészési funkció, a listákat és a termék részleteit tartalmazó lap a legpontosabb árakat jelenítse meg.
 
 A Commerce közelgő kiadásában a **GetActivePrices** alkalmazásprogramozási felület (API) olyan árakat ad vissza, amelyek egyszerű engedményeket tartalmaznak (például egysoros engedményeket, amelyek nem függnek a kosár egyéb cikkeitől). Ily módon a megjelenített árak a cikkeknél a vevők által kifizetett tényleges összeg közelében találhatók. Ez az API az egyszerű engedmények minden típusát fogja tartalmazni: fiókon alapuló, hűségprogramon alapuló, a katalóguson alapuló és a csatorna alapú engedmények. Az API emellett az alkalmazott kedvezmények neveit és érvényességi adatait is visszaadja, így a kiskereskedők részletesebb leírást adhatnak az árhoz, és sürgető érzést teremtenek, ha a kedvezmény érvényessége hamarosan lejár.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

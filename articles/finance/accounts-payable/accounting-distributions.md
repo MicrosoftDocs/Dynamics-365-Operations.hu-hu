@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: AccountingDistribution
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 17231
 ms.assetid: 9030355d-8e6e-408b-9e7d-7b346eaa652c
 ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c9a627ba33065086d21c758a1b8d8f2fa2f6ef02
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3901fb61c1c8f9a9fd13b8ea558877daf884f3ee
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4444133"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4972236"
 ---
 # <a name="accounting-distributions"></a>Könyvelési felosztások
 
@@ -57,6 +56,3 @@ Az általános könyvelési felosztás funkciók az alábbi lehetőségeket bizt
 A 10.0.13-as verzióban egy olyan funkció található, amely ellenőrzi a könyvelési felosztási táblát annak érdekében, hogy az új mezők biztosan helyesen legyenek beállítva. Ennek a funkciónak a neve: **Dokumentumok adatainak további ellenőrzésének engedélyezése a forrásbizonylat könyvelési keretrendszer használatával**. A funkció használatához engedélyeznie kell a **Funkciókezelési** munkaterület használatával. A funkció engedélyezéséhez keressen rá a funkció nevére a **Funkció kezelése** lap **Keresés** mezőjében, majd válassza az **Engedélyezés most** lehetőséget.
 
 További tájékoztatás: [Könyvelési felosztások és az analitikus napló bejegyzései szállítói számlákhoz](accounting-distributions-subledger-journal-entries-vendor-invoices.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

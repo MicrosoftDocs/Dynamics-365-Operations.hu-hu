@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: d627633e43c2e6f5cad90dfe4100ff95a71541f7
-ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
+ms.openlocfilehash: 274fcc73b48282a8025a210dd488105500609d5a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "4444183"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4971428"
 ---
 # <a name="associate-fixed-assets-with-leases"></a>Lízingek társítása tárgyi eszközhöz
 
@@ -54,6 +53,3 @@ A tárgyi eszköz értékcsökkenése a tárgyi eszközök standard értékcsök
 
 > [!NOTE]
 > Ha a tárgyi eszközt lízinghez rendeli hozzá, akkor az **Eszköz értékcsökkenése** és a **Lízing értékvesztése** gombok le vannak tiltva az Eszközlízingelésnél. Megtekintheti a tárgyi eszközökből származó eszközök értékcsökkenését és a lízing-értékvesztési tranzakciókat. Az **Eszköztranzakciók** gomb, amely megnyitja a lekérdezési képernyőt is, le van tiltva. Az **Eszközranzakciók** lekérdezési űrlapot a Tárgyi eszközökben is megnyithatja.  
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

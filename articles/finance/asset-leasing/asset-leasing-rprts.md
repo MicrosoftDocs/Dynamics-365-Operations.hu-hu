@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-27
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: bab2b0b2b021266e50d6f4a1fad1cc4a1c1ae56e
-ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
+ms.openlocfilehash: 4bc4bac1a422a7505ef4c66b9c3b79a3d754cc4d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "4444181"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4971478"
 ---
 # <a name="asset-leasing-reports"></a>Eszközlízing-jelentések
 
@@ -165,6 +164,3 @@ A súlyozott átlagos kedvezményes árjelentés megfelel az ASC 842-20-50-4 (g)
 |     Pénznem                          |     A használt tranzakciós pénznem rövidítése. Minden jelentés átváltja a tranzakciópénznemet a jelentés pénznemére.  |
 |     Fennmaradó lízingdíjfizetések          |     A kifizetési ütemezésből származó kifizetetlen lízingfizetések teljes összege, amelyek a **Kezdő** dátumtól maradtak.            |
 |     Fennmaradó súlyozott kifizetések       |     A fennmaradó lízingdíjfizetések és a felhasznált kedvezményes ár szorzata.   |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

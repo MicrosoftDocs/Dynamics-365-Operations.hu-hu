@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: PaymTerm, CashDisc
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7e6778f61a9367399e4b71d5b2bb2459c09ba508
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1b69b505996b5536088578885c11a7e8c27f4975
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4443816"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4971853"
 ---
 # <a name="define-vendor-payment-terms"></a>Szállítói kifizetési feltételek meghatározása
 
@@ -47,6 +46,3 @@ Ez a témakör ismerteti a szállítói számlák fizetési feltételeinek beál
 16. Adja meg azt a fő számlát, amelyre a készpénzfizetési engedmény feladása történik a vevői számlákhoz, majd adja meg azt a fő számlát, amelyre a készpénzfizetési engedmény feladása történik a szállítói számlákhoz. Ha a **Kedvezmény ellenszámlák** beállításnál a **Fő számlát jelöli meg a szállítói kedvezményekhez**, akkor a rendszer a fő számlát fogja használni. Ha a beállítás a **Számlasorokon Számlák**, a készpénzfizetési engedmény feladása a számlasor eszköz-/költségszámla részére kerül feladásra.  
 17. Válassza a **Mentés** lehetőséget.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

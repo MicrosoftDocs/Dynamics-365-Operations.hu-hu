@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: RetailParameters, RetailPeriodicDiscount,
 audience: Application User, IT Pro
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 89643
 ms.assetid: 09843c9a-3e19-4e4a-a8ce-80650f2095f9
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 565722da65cbb711acedb5acf7de4edfbd615314
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 747c67812b0a357c35778c82531e9db7e99e510b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412874"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4972707"
 ---
 # <a name="determine-the-optimal-combination-of-overlapping-discounts"></a>Átfedő kedvezmények optimális kombinációjának meghatározása
 
@@ -84,6 +83,3 @@ Az exponenciálisan növekvő számú, kiértékelendő kombináció problémáj
 ![A marginális érték számításának képlete](./media/overlapping-discount-combo-06.jpg)
 
 Miután a megosztott termékcsoport minden egyes kedvezményének marginális értékét kiszámítottuk, az összes kedvezményt sorrendben alkalmazzuk a megosztott termékekre a legmagasabb marginális értéktől a legalacsonyabbig. Ennél a módszernél nem hasonlítjuk össze az összes fennmaradó engedménylehetőséget, valahányszor alkalmaztuk egy kedvezmény egy példányát. Ehelyett az egymást átfedő kedvezményeket egyszer összehasonlítjuk, majd pedig sorrendben alkalmazzuk. További összehasonlításokra nem kerül sor. A küszöbérték, amelynél a rendszer a marginálisérték-módszerre vált, a **Kereskedelmi paraméterek** oldal **Engedmény** lapján állítható be. Az összengedmény kiszámítására felhasznált elfogadható idő hossza kiskereskedelmi iparáganként változik. Az idő általában viszont a tized ezredmásodpercek és az egy másodperc közti tartományba esik.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

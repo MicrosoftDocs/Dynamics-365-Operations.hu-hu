@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: CustCollectionsPool, SysQueryForm, CustCollectionsAgent, OMTeamSelectMemberDialog, CustVendReportInterval, CustParameters, CustAgingSnapshot, CustVendAgingBucketLookUp, CustCollectionsPoolsListPage, CustCollectionsContactPart, CustCollections
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9b5cc07c5dfb2444ff086c8b1f3bcc7634d8644d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9bbfb6537118a9936c127018427b0516e7ea002a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4443998"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4971528"
 ---
 # <a name="review-collections-information"></a>A beszedésekkel kapcsolatos adatok felülvizsgálata
 
@@ -143,6 +142,3 @@ Ez a témakör végigvezet a beszedési adatok áttekintésén, valamint a kül�
 5. Válassza ki a **Lista megjelenítése** lehetőséget.
 - Válasszon egy vevőszámlát, vagy fogadja el az alapértelmezett adatot. Alapértelmezés szerint ez az a kiválasztott vevőszámla a listaoldalon vagy a képernyőn, amelyről megnyitotta a képernyőt. Ha a képernyőt egy listaoldalról nyitotta meg, a vevők a listában azok a vevők, amelyeket szerepeltet a gyűjteményékben, amelyek ezen az oldalon szerepelnek.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -10,7 +10,6 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 261234
 ms.assetid: 7cd68ecc-cc09-48ab-8cb8-48d5c304effa
 ms.search.region: global
@@ -18,12 +17,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: f513e2d857908f2b95d27bf48ff1e826724d7cbf
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 823d538bea481aef4f3657fe0ae1ebb3b0cf759c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412946"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4972530"
 ---
 # <a name="suspend-and-resume-a-transaction-in-the-point-of-sale-pos"></a>Tranzakció felfüggesztése és újraindítása a pénztárban (POS)
 
@@ -82,6 +81,3 @@ Egy felfüggesztett tranzakció gyors és könnyű visszahívásához olvassa be
 ### <a name="void-a-suspended-transaction"></a>Felfüggesztett tranzakció érvénytelenítése
 
 A felfüggesztett tranzakciókat érvénytelenítheti úgy, hogy előhívja a tranzakciót,.majd elvégzi a **Tranzakció érvénytelenítése** műveletet, vagy a tranzakció kiválasztásával a **Tranzakció visszahívása** listán, majd az **Érvénytelenítés** kiválasztásával az alkalmazás sávján. Másik lehetőségként az üzlet beállítható úgy, hogy felkérje a felhasználókat a függőben lévő tranzakciók érvénytelenítésére, amikor lezárják műszakjukat.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
