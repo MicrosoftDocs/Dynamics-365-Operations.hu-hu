@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSLoadTemplate,WHSWorkTemplateTable,WHSLoadPlanningWorkbench
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 6104e457a62f340951c187d0f2dbe48b0dffdf7f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 6ccfbe30e9d4a0fc4580c7036d222bfca9203a21
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429285"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4996326"
 ---
 # <a name="confirm-and-transfer"></a>Megerősítés és áthelyezés
 
@@ -230,6 +229,3 @@ Azt is megerősítheti, hogy a tranzakciók kapcsolatai a következő módon let
 - A **Mennyiség megosztása új rakományhoz** beállítás akkor is működik, ha a fennmaradó munkafejlécek egy része *Folyamatban* állapotú. Ennek megfelelően még akkor is használhatja a funkciót, ha a dolgozók már futtatják a kitárolási rendeléseket.
 - Ha be van jelölve a **Nem teljesített mennyiség érvénytelenítése**, miközben a fennmaradó munka állapota *Nyitott* vagy *Folyamatban*, a következő hibaüzenet jelenik meg: „Nem lehet érvényteleníteni a rakomány fennmaradó mennyiségét. A rakománnyal munkavégzés zajlik.”
 - Ha bejelöli a **Nem teljesített mennyiség érvénytelenítése** lehetőséget, ha nincs fennmaradó munka, de a rakomány nem kiadott sorokat tartalmaz, akkor a következő hibaüzenet jelenik meg: „A rakomány szállítása nem erősíthető meg, mert a cikkmennyiség meghaladja a szállítás alatti rakomány megadott arányát.” A hiba elkerüléséhez beállíthatja a **Szállítás alatt** százalékos arányát a kiadatlan rakományok sorában 100 százalékra. A kiadatlan sorok nem kerülnek át az új rakományba, de az aktuális rakományt a rendszer szállítás alattiként megerősíti. Ebben az esetben nem fogja tudni újra kiadni az eredeti rendelést. Ezért ezt Önnek másképp kell majd kezelnie.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

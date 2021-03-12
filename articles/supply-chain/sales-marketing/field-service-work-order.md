@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: d8051e21c731213e2d74ab6eeb80c239ca9932e6
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: f9395d39a68cd11f57262c791dd7646975c5e516
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4528923"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4998503"
 ---
 # <a name="synchronize-work-orders-in-field-service-to-sales-orders-in-supply-chain-management"></a>A Field Service szolgáltatásokban lévő munkarendelések szinkronizálása a Supply Chain Management értékesítési rendeléseivel
 
@@ -62,13 +61,13 @@ A következő szinkronizálási feladatok kötelezőek, mielőtt az értékesít
 
 | **Field Service** | **Ellátásilánc-kezelés** |
 |-------------------------|-------------------------|
-| msdyn_workorders        | CDS értékesítésirendelés-fejlécek |
-| msdyn_workorderservices | CDS értékesítési rendelés sorai   |
-| msdyn_workorderproducts | CDS értékesítési rendelés sorai   |
+| msdyn_workorders        | Dataverse értékesítési rendelési fejlécek |
+| msdyn_workorderservices | Dataverse értékesítési rendelés sorai   |
+| msdyn_workorderproducts | Dataverse értékesítési rendelés sorai   |
 
 ## <a name="entity-flow"></a>Entitás folyamata
 
-A munkarendelések létrejönnek a Field Service szolgáltatásban. Ha a munkarendelések csak külsőleg karbantartott termékeket tartalmaznak, és ha a **Munkarendelés állapota** érték nem **Nyitott – nincs beütemezve** és **Lezárt – visszavonva**, úgy a munkarendelések a Supply Chain Management szolgáltatásba szinkronizálhatók a Common Data Service adatintegrációs projekten keresztül. A munkarendelések frissítései értékesítési rendelésként szinkronizálódnak a Supply Chain Management szolgáltatásba. Ezek a frissítések tartalmazzák a származási típusra és állapotra vonatkozó információkat.
+A munkarendelések létrejönnek a Field Service szolgáltatásban. Ha a munkarendelések csak külsőleg karbantartott termékeket tartalmaznak, és ha a **Munkarendelés állapota** érték nem **Nyitott – nincs beütemezve** és **Lezárt – visszavonva**, úgy a munkarendelések a Supply Chain Management szolgáltatásba szinkronizálhatók a Microsoft Dataverse adatintegrációs projekten keresztül. A munkarendelések frissítései értékesítési rendelésként szinkronizálódnak a Supply Chain Management szolgáltatásba. Ezek a frissítések tartalmazzák a származási típusra és állapotra vonatkozó információkat.
 
 ## <a name="estimated-versus-used"></a>Becsült, illetve felhasznált
 
@@ -273,6 +272,3 @@ Szűrő: (msdynce_headersystemstatus ne 690970005) és (msdynce_headersystemstat
 Szűrő: (msdynce_headersystemstatus ne 690970005) és (msdynce_headersystemstatus ne 690970000) és (msdynce_orderhasexternalmaintainedproductsonly eq true) és ((msdyn_linestatus eq 690970001) vagy (msdynce_headersystemstatus eq 690970004) vagy (msdyn_allocated ne true))
 
 [![Sablonleképezés az adatintegrátorban](./media/FSWorkOrder5.png )](./media/FSWorkOrder5.png)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

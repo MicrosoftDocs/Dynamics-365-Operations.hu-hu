@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: KanbanJobSchedulingListPage, KanbanPeriodCapacityPart, SysLookupMultiSelectGrid, KanbanBoardScheduleJobForward
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c8342bf6c56adc41cc4944dc709152246ad93a3e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f97b88a2637e661146e8150cd6535ff32745227a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429713"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4996801"
 ---
 # <a name="schedule-kanban-jobs"></a>Kanbanfeladatok ütemezése
 
@@ -62,6 +61,3 @@ Ez az eljárás egy adott munkacellához tartozó kanbanfeladatok ütemezési fo
     * Mindkét feladat a kívánt időszakhoz lett hozzáadva.  
     * A Kapacitási időszak szakaszban láthatja az egyes időszakok terhelését. A Felhasználás mező az időszak tervezett felhasználását mutatja. Ha az ütemezett felhasználás magasabb, mint az időszakban rendelkezésre álló kapacitás, a rendszer a túlterhelt felhasználást választja ki.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

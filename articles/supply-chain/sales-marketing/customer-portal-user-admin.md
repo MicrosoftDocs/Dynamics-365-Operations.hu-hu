@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: e2001d5c0b17ecadf4cb42529d9beb4b3b81805a
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 0fd390e5e0054ff301c18c2507c600f954e6ce89
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4528293"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4996776"
 ---
 # <a name="create-and-manage-customer-portal-users"></a>Ügyfélportál felhasználóinak létrehozása és kezelése
 
@@ -39,11 +38,11 @@ A [Hívja meg a vevőket, hogy regisztráljanak és használják a portált](htt
 
 ## <a name="prerequisite-setup"></a>A beállítás előfeltételei
 
-A Power Apps portálokon található kapcsolattartók rekordokként vannak tárolva a Common Data Service **Kapcsolattartók** entitásában. A kettős írás ezt követően szükség szerint szinkronizálja ezeket a rekordokat a Microsoft Dynamics 365 Supply Chain Management alkalmazásba.
+A Power Apps portálokon található kapcsolattartók rekordokként vannak tárolva a Microsoft Dataverse **Kapcsolattartók** táblában. A kettős írás ezt követően szükség szerint szinkronizálja ezeket a rekordokat a Microsoft Dynamics 365 Supply Chain Management alkalmazásba.
 
 ![A Ügyfélportál kapcsolattartóinak rendszerdiagramja](media/customer-portal-contacts.png "A Ügyfélportál kapcsolattartóinak rendszerdiagramja")
 
-Új vevők meghívásának megkezdése előtt győződjön meg arról, hogy a **Kapcsolattartó** entitások megfeleltetése engedélyezve van a kettős írásban.
+Új vevők meghívásának megkezdése előtt győződjön meg arról, hogy a **Kapcsolattartó** táblák megfeleltetése engedélyezve van a kettős írásban.
 
 ## <a name="the-invitation-process"></a>A meghívás folyamata
 
@@ -58,17 +57,17 @@ Miután létrehozta a kapcsolattartót az látható lesz a Supply Chain Manageme
 
 A további tudnivalókat lásd: [A portálon használható kapcsolattartó konfigurálása](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-contacts) részt a Power Apps portálok dokumentációjában.
 
-## <a name="out-of-box-web-roles-and-entity-permissions"></a>Gyári webes szerepkörök és entitásengedélyek
+## <a name="out-of-box-web-roles-and-table-permissions"></a>Gyári webes szerepkörök és táblaengedélyek
 
-A Power Apps portálok felhasználói szerepköreit a [webes szerepkörök](https://docs.microsoft.com/powerapps/maker/portals/configure/create-web-roles) és az [entitásengedélyek](https://docs.microsoft.com/powerapps/maker/portals/configure/assign-entity-permissions) határozzák meg. A Ügyfélportál néhány szerepkört kínál már gyári állapotban is. Új szerepköröket hozhat létre, és módosíthatja vagy törölheti a meglévő szerepköröket.
+A Power Apps portálok felhasználói szerepköreit a [webes szerepkörök](https://docs.microsoft.com/powerapps/maker/portals/configure/create-web-roles) és az [táblaengedélyek](https://docs.microsoft.com/powerapps/maker/portals/configure/assign-entity-permissions) határozzák meg. A Ügyfélportál néhány szerepkört kínál már gyári állapotban is. Új szerepköröket hozhat létre, és módosíthatja vagy törölheti a meglévő szerepköröket.
 
 ### <a name="out-of-box-web-roles"></a>Gyári webes szerepkörök
 
 Ez a szakasz a Ügyfélportál szolgáltatással szállított webes szerepköröket írja le.
 
-A gyári felhasználói szerepkörök módosításával kapcsolatos további tudnivalókat lásd: [Webes szerepkörök létrehozása a portálokhoz](https://docs.microsoft.com/powerapps/maker/portals/configure/create-web-roles) és [Rekordalapú biztonság hozzáadása entitásengedélyek használatával a portálokhoz](https://docs.microsoft.com/powerapps/maker/portals/configure/assign-entity-permissions) a Power Apps dokumentációjában.
+A gyári felhasználói szerepkörök módosításával kapcsolatos további tudnivalókat lásd: [Webes szerepkörök létrehozása a portálokhoz](https://docs.microsoft.com/powerapps/maker/portals/configure/create-web-roles) és [Rekordalapú biztonság hozzáadása táblaengedélyek használatával a portálokhoz](https://docs.microsoft.com/powerapps/maker/portals/configure/assign-entity-permissions) a Power Apps dokumentációjában.
 
-#### <a name="administrator"></a>Adminisztrátor
+#### <a name="administrator"></a>Rendszergazda
 
 A rendszergazda felügyeli és tartja karban a webhelyet. Ez a személy építi ki és állítja be az Ügyfélportált. A rendszergazda karbantartja a portált informatikai és biztonsági szempontokból, és gondoskodik arról, hogy minden simán fusson. Előfordulhat, hogy a rendszergazda testreszabhatja és/vagy módosíthatja a portált új funkciók hozzáadásával, új szerepkörök létrehozásával stb.
 
@@ -96,6 +95,3 @@ A következő táblázat bemutatja, hogy a rendszerben mely értékesítési ren
 
 > [!NOTE]
 > Annak ellenére, hogy mind a Sam, mind a Jane olyan kapcsolattartó, aki az X ügyfélnek dolgozik, csak azokat a rendeléseket láthatja, amelyekhez ők maguk adtak le, és semmi mást. Annak ellenére, hogy Maynek van egy rendelése a rendszerben, az Ügyfélportálon nem láthatja ezt a rendelést mivel ő egy nem felhatalmazott felhasználó. (Ezenkívül a rendelést egy az Ügyfélportáltól eltérő csatornán adta le.)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
