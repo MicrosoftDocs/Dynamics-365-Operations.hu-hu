@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSClusterProfile
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 3610725815b35609ee98b69b367db2945bbf166a
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 9c90380cb5d109e331a2552ba779525b66d10fa6
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4429878"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5001099"
 ---
 # <a name="cluster-position-full"></a>Fürtpozíció tele
 
@@ -276,6 +275,3 @@ Ebben a helyzetben a fürt kitárolása kész, és a felhasználó azt az utasí
     Megjelenik a „Fürt befejezve” üzenet.
 
 Ezután az **Értékesítési kitárolás** menüelemmel kitárolhatja a fennmaradó mennyiséget. Ezután az **Értékesítési rakodása** menüelemmel mozgathatja a cikkeket az előkészítési helyről a rakodási helyre.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

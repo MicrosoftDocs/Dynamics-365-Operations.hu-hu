@@ -10,19 +10,18 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: c0ab56c15a37313d0a88b1174d5bcf51d391dcec
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9378fb200a239433f2023bb90f72840dace1c0eb
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412775"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5000824"
 ---
 # <a name="set-up-an-email-notification-profile"></a>E-mail-értesítési profil beállítása
 
@@ -96,6 +95,3 @@ E-mailek küldése előtt konfigurálnia kell a kimenő levelek szolgáltatásá
 [Csatornák beállításának előfeltételei](channels-prerequisites.md)
 
 [Szervezetek és szervezeti hierarchiák áttekintése](../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/commerce/toc.json)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

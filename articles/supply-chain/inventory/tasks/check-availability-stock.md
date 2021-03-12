@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: InventOnHandItemListPage, SysQueryForm, InventDimParmFixed, InventSupply, DefaultDashboard, WHSInventPhysicalOnhand, WHSOnHand, InventOnhandItem
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 28446e32c8f126e76b13f41f379ecf994a7b7a0d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d04abae36e144b429b8ebc73b4c110389fecd1f0
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429787"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5000159"
 ---
 # <a name="check-the-availability-of-stock"></a>A készlet elérhetőségének ellenőrzése
 
@@ -60,6 +59,3 @@ Ez az eljárás bemutatja, hogy hogyan ellenőrizheti egy adott cikkszám aktuá
 5. Kattintson az **OK** gombra.
 6. Zárja be a lapot.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

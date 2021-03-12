@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: ReqGroup, DefaultDashboard, EcoResProductDetailsExtended, EcoResProductCreate, InventItemOrderSetup, ReqItemTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 11d92185bdbcf7aa1a668b6d2aa311805e42293c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c156ae4a8a19a428378581a0d5c7dc01d86b5ec7
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429535"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4999881"
 ---
 # <a name="define-coverage-rules-for-items"></a>Cikkek fedezeti szabályainak meghatározása
 
@@ -102,6 +101,3 @@ Ez az eljárás az USMF bemutatócéget használja. Ez az eljárás bemutatja, h
 11. A **Beszerzés ideje** mezőbe írja be, hogy „5”.
 12. Kattintson a **Mentés** gombra.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
