@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: b302c5ace34a11a53a98c733b59633a11a463bfa
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e060f20b65153a7bbe70996e6ff4c3930468348a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429296"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4992245"
 ---
 # <a name="master-planning-with-purchase-trade-agreements"></a>Alaptervezés a beszerzésre vonatkozó kereskedelmi megállapodásokkal
 
@@ -74,22 +73,19 @@ Miután a rendszer készen áll az előző szakaszban ismertetett módon, köves
 
 ## <a name="examples-of-how-planning-optimization-finds-vendor-and-lead-times"></a>A példák arra, ahogy a tervezés optimalizálása a szállítói és az átfutási időket észleli
 
-A következő táblázat bemutatja, hogy a kiadott termék és a hozzájuk kapcsolódó beszerzési kereskedelmi megállapodások különböző beállításai hogy befolyásolják a létrejövő tervezett beszerzési rendeléshez tartozó értékeket. A két jobb szélső oszlop **félkövér** értékei a tervezés optimalizálása képernyőn kiválasztott értékek. A többi oszlop ***félkövér és dőlt*** értékei az egyes sorokhoz létrejövő értékeket létrehozó beállítások.
+A következő táblázat bemutatja, hogy a kiadott termék és a hozzájuk kapcsolódó beszerzési kereskedelmi megállapodások különböző beállításai hogy befolyásolják a létrejövő tervezett beszerzési rendeléshez tartozó értékeket. A két jobb szélső oszlop **félkövér** értékei a tervezés optimalizálása képernyőn kiválasztott értékek. A többi oszlop **_félkövér és dőlt_* _ értékei az egyes sorokhoz létrejövő értékeket létrehozó beállítások.
 
 | Kibocsátott termék: Szállító | Alapértelmezett rendelési beállítás: Átfutási idő | Cikkfedezeti tétel: Szállító felülbírálása | Cikkfedezeti tétel: Átfutási idő felülbírálása | Kereskedelmi megállapodás: Szállító | Kereskedelmi megállapodás: Átfutási idő | Kereskedelmi megállapodás: Átfutási idő figyelmen kívül hagyása | Létrejövő szállító | Létrejövő átfutási idő |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| ***US001*** | ***1*** | Nincs | Nincs | US003 | 3 | Nincs | **US001** | **1** |
-| US001 | 1 | ***Igen: US002*** | ***Igen: 2*** | US003 | 3 | Nincs | **US002** | **2** |
-| *(Üres)* | 1 | Nincs | Nincs | ***US003*** | ***3*** | Nincs | **US003** | **3** |
-| *(Üres)* | ***1*** | Nincs | Nincs | ***US003*** | 3 | Igen | **US003** | **1** |
-| *(Üres)* | ***1*** | ***Igen: US002*** | Nincs | US003 | 3 | Nincs | **US002** | **1** |
-| *(Üres)* | ***1*** | ***Igen: US002*** | Nincs | US003 | 3 | Nincs | **US002** | **1** |
-| *(Üres)* | 1 | Nincs | Igen: 2 | ***US003*** | ***3*** | Nincs | **US003** | **3** |
-| *(Üres)* | 1 | Nincs | ***Igen: 2*** | ***US003*** | 3 | Igen | **US003** | **2** |
+| _*_US001_*_ | _*_1_*_ | Nincs | Nincs | US003 | 3 | Nincs | _ *US001** | **1** |
+| US001 | 1 | **_Igen: US002_* _ | _*_Igen: 2_*_ | US003 | 3 | Nincs | _ *US002** | **2** |
+| *(Üres)* | 1 | Nincs | Nincs | ***US003** _ | _*_3_*_ | Nincs | _ *US003** | **3** |
+| *(Üres)* | ***1** _ | Nincs | Nincs | _*_US003_*_ | 3 | Igen | _ *US003** | **1** |
+| *(Üres)* | ***1** _ | _*_Igen: US002_*_ | Nincs | US003 | 3 | Nincs | _ *US002** | **1** |
+| *(Üres)* | ***1** _ | _*_Igen: US002_*_ | Nincs | US003 | 3 | Nincs | _ *US002** | **1** |
+| *(Üres)* | 1 | Nincs | Igen: 2 | ***US003** _ | _*_3_*_ | Nincs | _ *US003** | **3** |
+| *(Üres)* | 1 | Nincs | ***Igen: 2** _ | _*_US003_*_ | 3 | Igen | _ *US003** | **2** |
 
 ## <a name="additional-resources"></a>További erőforrások
 
 [Beszerzési szerződések](../../procurement/purchase-agreements.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

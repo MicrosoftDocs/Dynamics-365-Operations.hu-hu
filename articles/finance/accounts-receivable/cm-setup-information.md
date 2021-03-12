@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: d1d33dbbd37daaa75f4b64359194a2328728b27f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a2aa1980ebc1fa8412fc388e7837bc40b6902bc0
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4443849"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4991247"
 ---
 # <a name="credit-management-setup"></a>Hitelkezelés beállítása 
 
@@ -153,6 +152,3 @@ Kövesse az alábbi lépéseket a kiválasztott feltételek alapján létrejöv�
 2. Válassza ki azt az összehasonlító operátort, amely meghatározza, hogy hogyan kell kiértékelni a pontozási csoport adatait.
 3. Írja be azt az értéket, amelyet a pontozási csoporthoz megadott értékkel kell összehasonlítani.
 4. Adja meg azt a hitelkorlátot, amelyet akkor kell hozzárendelni, ha a vevő adatai megfelelnek a pontozási csoporthoz megadott értéknek. Létrehozhat például egy automatikus hitelkeretet az **Alacsony** pontozási csoport számára. Ha az üzletben eltöltött évek egyike a pontozási csoportoknak, akkor egy olyan sor definiálható, amely egy 100 000 összegű hitelkeretet rendel hozzá, ha a vevő öt éve működik, és egy másik sort, amely 200 000 összegű hitelkeretet rendel hozzá, ha a vevő 10 éve működik.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

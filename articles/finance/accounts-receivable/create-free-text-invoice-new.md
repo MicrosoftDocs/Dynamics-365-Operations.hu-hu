@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 1ac06e7d702ffe3a8cdb6bd2823f2ffdc055c722
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 726d4979059417871a00626c55da32fa4286cb53
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4443845"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4991117"
 ---
 # <a name="create-a-free-text-invoice"></a>Szabadszöveges számla létrehozása
 
@@ -30,8 +29,8 @@ Ez a témakör bemutatja, hogyan lehet szabadszöveges számlákat létrehozni. 
 
 ## <a name="create-a-free-text-invoice"></a>Szabadszöveges számla létrehozása
 
-1. Ugorjon a következőre: **Kinnlévőségek \> Számlák \> Kizárólag szabadszöveges számlák**.
-2. **Új** kiválasztása.
+1. Ugorjon a következőre: **Kinnlévőségek (vagy Értékesítési főkönyv) \> Számlák \> Kizárólag szabadszöveges számlák**.
+2. Válassza az **Új** lehetőséget.
 3. Válasszon egy értéket a **Vevői számla** mezőnek.
 
     * Alapértelmezett esetben a vevői számlához kiválasztott számla lesz pénzügyi adatnak használva
@@ -85,6 +84,3 @@ A sorok másolása után módosíthatja az adatokat, szükség szerint.
 Szabadszöveges számla sablonól létrehozása is lehetséges. Az **Új sablonból** kiválasztásakor a **Számla** lapon ki lehet választani a sablon nevét és az új szabadszöveges számlához kapcsolódó vevőszámlát. Alapértelmezett értékek, például a fizetési feltételek és a fizetési mód kitölthető a vevőtől, vagy a sablonnal mentett értékek is használhatók.
 
 Ekkor létrejön a szabadszöveges számla, és igény szerint szerkesztheti az értékeket.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

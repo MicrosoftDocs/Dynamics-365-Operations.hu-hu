@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: c7d4cacbf56243830633f4d0fd3c57071b08ab56
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 19c7de1436b2fe4a859ac20d3db1fefa445a115f
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527338"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4991865"
 ---
 # <a name="synchronize-sales-quotation-headers-and-lines-directly-from-sales-to-supply-chain-management"></a>Értékesítésiajánlat-fejlécek és -sorok szinkronizálása közvetlenül a Sales szolgáltatásból a Supply Chain Management szolgáltatásba
 
@@ -35,7 +34,7 @@ ms.locfileid: "4527338"
 Ez a témakör a sablonokat és alapul szolgáló feladatokat mutatja be, amelyeket használnak a értékesítésiajánlat-fejlécek és sorok közvetlen szinkronizálásához a Dynamics 365 Supply Chain Management és a Dynamics 365 Sales között.
 
 > [!NOTE]
-> A potenciális ügyfelek készpénzre váltása megoldás használata előtt meg kell ismernie az [Adatintegrálással a Common Data Service for Apps szolgáltatásban](https://docs.microsoft.com/powerapps/administrator/data-integrator).
+> A potenciális ügyfelek készpénzre váltása megoldás használata előtt meg kell ismernie az [Adatintegrálással a Microsoft Dataverse for Apps szolgáltatásban](https://docs.microsoft.com/powerapps/administrator/data-integrator).
 
 ## <a name="data-flow-in-prospect-to-cash"></a>A potenciális ügyfelek készpénzre váltása adatfolyama
 
@@ -63,8 +62,8 @@ A következő szinkronizálási feladatok kötelezőek, mielőtt az értékesít
 
 | Értékesítés        | Ellátásilánc-kezelés     |
 |--------------|----------------------------|
-| Idézetek       | CDS értékesítésiajánlat-fejléc |
-| QuoteDetails | CDS értékesítési ajánlat sorai  |
+| Idézetek       | Dataverse értékesítésiárajánlat-fejléc |
+| QuoteDetails | Dataverse értékesítési árajánlat sorai  |
 
 ## <a name="entity-flow"></a>Entitás folyamata
 
@@ -143,6 +142,3 @@ Az alábbi ábrákon sablon hozzárendelést például adatok integrátor megjel
 
 [A potenciális ügyfelek készpénzre váltása](prospect-to-cash.md)
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

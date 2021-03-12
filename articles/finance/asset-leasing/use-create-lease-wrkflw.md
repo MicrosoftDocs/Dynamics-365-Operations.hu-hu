@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 1805e1f87ee70a1f35d9105b8f7ad6c95861efcc
-ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
+ms.openlocfilehash: 1086231c65a726df5162d3593419a129d6ae5655
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "4444192"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4992758"
 ---
 # <a name="use-lease-approval-workflows"></a>Lízingjóváhagyási munkafolyamatok használata
 
@@ -45,6 +44,3 @@ Az eljárás használata előtt győződjön meg arról, hogy legalább a lízin
 
 8. Munkafolyamat leállításához a **Munkafolyamat előzményei** lapon válassza a **Visszahívás** lehetőséget. Megjelenik a párbeszédpanel, adjon meg egy hozzászólást, majd kattintson az **OK** gombra.
 9. A munkafolyamat inaktiválásához vagy egy korábban létrehozott munkafolyamat aktiválásához nyissa meg az **Eszközlízing \> Beállítás \> Lízingmunkafolyamat** lehetőséget. Ezután a **Lízingmunkafolyamat** lapon válassza a **Munkafolyamat \> Verziók** lehetőséget. Az aktuális munkafolyamat inaktívvá állításához jelölje ki az aktív lízinget a lízingverzió párbeszédpanelén, majd kattintson az **Inaktívvá váltás** lehetőséget. Meglévő munkafolyamat aktívvá tételéhez jelölje ki a munkafolyamatot, majd válassza az **Aktívvá tétel** lehetőséget.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

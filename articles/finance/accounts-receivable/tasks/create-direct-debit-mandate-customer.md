@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: CustTable, CustBankAccounts, BankAccountTable, CustPaymMode, CustDirectDebitMandate, BankAccountTableLookUp, SrsReportViewerForm,  LogisticsAddressCityLookup, CustFreeInvoice, CustTableLookup
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 86d29782f616219b5d84e3567910cb28c60b65ae
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f746da0bcf2b1e0cb09af6b5e2ea61938213c924
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4443871"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4991042"
 ---
 # <a name="create-a-direct-debit-mandate-for-a-customer"></a>Beszedési megbízási felhatalmazás létrehozása vevő részére
 
@@ -90,6 +89,3 @@ Ez az útmutató bemutatja, hogyan hozhat létre beszedési megbízási felhatal
 3. Válassza ki a vevőt, akihez hozzáadta a felhatalmazást.
 4. A **Beszedési megbízási felhatalmazás azonosítója** mezőben adjon meg, vagy válasszon ki egy értéket.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

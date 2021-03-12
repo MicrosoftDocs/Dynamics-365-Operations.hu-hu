@@ -1,5 +1,5 @@
 ---
-title: könyvelési felosztások és az analitikusnapló-bejegyzései a szabadszöveges számlákhoz
+title: Könyvelési felosztások és naplóbejegyzések szabadszöveges számlákhoz
 description: A könyvelési felosztások alkalmazásával meg lehet határozni, hogy hogyan legyen az összeg elszámolva, például hogyan lesznek könyvelve a bevételek, adó és költségek a szabadszöveges számlán. Minden olyan összeg, amelyet könyvelni kell a szabadszöveges számla naplózása esetén, egy vagy több könyvelési felosztással rendelkezik.
 author: ShivamPandey-msft
 manager: AnnBe
@@ -11,21 +11,20 @@ ms.technology: ''
 ms.search.form: CustFreeInvoice
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 3141
 ms.assetid: fecd17a2-d7b4-4a20-ac81-eb71abbfa9d1
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 515d0a9c35507fad04b776e1f0b6225ac5a162d3
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f3ee26825ec48a8e8e32401ceaa8c80ecd679d2e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4443826"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4993196"
 ---
-# <a name="accounting-distributions-and-subledger-journal-entries-for-free-text-invoices"></a>könyvelési felosztások és az analitikusnapló-bejegyzései a szabadszöveges számlákhoz
+# <a name="accounting-distributions-and-subledger-entries-for-free-text-invoices"></a>Könyvelési felosztások és naplóbejegyzések szabadszöveges számlákhoz
 
 [!include [banner](../includes/banner.md)]
 
@@ -75,7 +74,7 @@ Szabadszöveges számla bevitelekor minden összeg felosztása a következőkép
 <table>
 <thead>
 <tr class="header">
-<th><strong>Megjegyzés </strong></th>
+<th><strong>Megjegyzés</strong></th>
 </tr>
 </thead>
 <tbody>
@@ -131,11 +130,8 @@ Az adókra vonatkozó könyvelési felosztások nem hozhatók létre, amíg az a
 -   Az egész szabadszöveges számla könyvelési felosztásainak megtekintése.
 -   Analitikus napló megtekintése.
 
-## <a name="subledger-journals-for-free-text-invoices"></a> A szabadszöveges számlák analitikus naplóinak megtekintése
+## <a name="subledger-journals-for-free-text-invoices"></a>A szabadszöveges számlák analitikus naplóinak megtekintése
 Szabadszöveges számla feladása előtt meg lehet tekinteni a számla teljes könyvelési bejegyzését, amely tartalmazza a terheléseket és követeléseket, azért, hogy igazolják, hogy a számla a megfelelő számlákra van elküldve. A teljes könyvelési bejegyzésnek ezt a nézetét analitikus naplónak hívják. Ha az analitikus napló bejegyzése helytelen, amikor megtekinti azt a szabadszöveges számla naplózása előtt, az analitikus napló bejegyzése nem módosítható. Ehelyett módosítania kell a könyvelési felosztásokat vagy a feladási profilt. A könyvelési felosztásokat a könyvelési tétel, a tartozás tétel vagy a jóváírás egy részének meghatározására használják. Az beszámítási analitikus naplószámla számlabejegyzése a feladási profilok feladásából, például a vevői számlából vagy az adóból jön létre.
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

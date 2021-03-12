@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8281de3cb336d9392a6a97f98e51a2a139a384c5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ee4fff7b148396faecef899c7a75365d3e1f47f3
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4443844"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4991163"
 ---
 # <a name="create-a-free-text-invoice-template"></a>Szabadszöveges számlasablon létrehozása
 
@@ -68,6 +67,3 @@ Ez az eljárás az USMF bemutatócéget használja. Az eljárást az a felhaszn�
 
 ## <a name="save-a-free-text-invoice-as-a-template"></a>Szabadszöveges számla sablonként mentése
 Egy meglévő szabadszöveges számlát menthet sablonként is. Kiválasztásakor a Mentés sablonhoz a Számla lapjáról, adja meg a sablon nevét és leírását. Ha ilyen nevű sablon már létezik, értesítés jelenik meg, hogy már létezik ilyen nevű sablon. Még rákattinthat a felülíráshoz az OK gombra. 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

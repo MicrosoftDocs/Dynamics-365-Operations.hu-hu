@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschloma
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 8bee320beb411a5ee0829a0e3170de0c7f293172
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: eb2ec9969bdec985e1f8c731eade1c1a81a4766c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4443944"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4993014"
 ---
 # <a name="collections-management-key-concepts"></a>A beszedéskezelés kulcsfogalmai
 
@@ -122,6 +121,3 @@ Feldolgozhatja az Elégtelen fedezetű kifizetéseket, ha rákattint a **Beszed�
 [Hitelkeret felfüggesztése értékesítési rendelésekhez](./cm-sales-order-credit-holds.md)
 
 [Vevői hitelkockázatkezelés – időszakos feladatok](./cm-periodic-tasks.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
