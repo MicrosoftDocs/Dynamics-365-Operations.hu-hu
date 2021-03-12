@@ -10,17 +10,16 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2020-03-01
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 1be07c754e563298d82f6ca54f09ae3aa9118602
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d37b2b785dd29850dcd02d0905e5872445384990
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412840"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4993728"
 ---
 # <a name="enable-and-configure-auto-charges-by-channel"></a>Automatikus költségek csatorna szerinti engedélyezése és konfigurálása
 
@@ -77,7 +76,7 @@ Miután bekapcsolta az **Automatikus kötségek szűrésének engedélyezése cs
 
 A csatorna szerinti automatikus költségek definiálásához a Commerce alkalmazásban hajtsa végre az alábbi lépéseket.
 
-1. Ugorjon a **Kinnlevőségek \> Költségek beállítása \> Automatikus költségek** pontra.
+1. Ugorjon a **Kinnlevőségek \> Költségek beállítása \> Automatikus költségek** pontra.
 1. A bal oldali ablak **Szint** mezőjében válassza a **Fejléc** vagy **Sor** beállítást az üzleti igényektől függően.
 1. A **Kiskereskedelmi csatorna kódja** mezőben válassza ki a megfelelő csatornakódot (például **Tábla** vagy **Csoport**). Ha az alapértelmezett **Minden** beállítás van használatban, akkor minden csatornára alkalmazva lesznek a költségszabályok.
 
@@ -128,6 +127,3 @@ Ha kiválasztja a **Tranzakcióbeállítások \> Költségék \> Költésgek kez
 [Többcsatornás speciális automatikus költségek](omni-auto-charges.md)
 
 [Fejlécköltségek arányosítása az egyező értékesítési sorokhoz](pro-rate-charges-matching-lines.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

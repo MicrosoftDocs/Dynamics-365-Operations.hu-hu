@@ -10,19 +10,18 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2020-02-11
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: de4ee98198f441b8f42a8a55aa5ff1015f485234
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 68fa26daac055cd0fd72035683f05ed36052b3a3
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412849"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4995820"
 ---
 # <a name="calculate-inventory-availability-for-retail-channels"></a>Kiskereskedelmi csatornák készletelérhetőségének számítása
 
@@ -114,6 +113,3 @@ Javasolt, hogy ne futtassa túl gyakran ezeket a kötegelt feladatokat (néhány
 > Teljesítménnyel kapcsolatos okokból, amikor a csatornaoldali készletelérhetőségi számításokkal hoznak létre egy készletelérhetőségi kérést az e-kereskedelmi API-k vagy az új pénztári cstornaoldali készletlogika használatával, a számítás gyorsítótárat használt annak meghatározására, hogy elég idő telt-e el, hogy igazolható legyen a számítási logika újbóli futtatása. Az alapértelmezett gyorsítótár értéke 60 másodperc. Például bekapcsolta az üzlet csatorna-oldali számítását, és megtekintette egy termék tényleges készletét a **készletkeresés** oldalán. Ha a termék egy egységét értékesítik, akkor a **készletkeresés** lapja nem jeleníti meg a csökkentett készletet mindaddig, amíg a gyorsítótár ki nem ürül. Miután a felhasználó feladta a tranzakciókat a pénztárban, várnia kell 60 másodpercig, mielőtt ellenőrizheti, hogy a tényleges készlet csökkent.
 
 Ha az üzleti helyzethez kisebb gyorsítótárazási idő szükséges, forduljon a terméktámogatási szolgálat képviselőjéhez.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

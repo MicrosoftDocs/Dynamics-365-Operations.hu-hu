@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 7008891d194dc990d13a9f56db155c6990aae0c0
-ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
+ms.openlocfilehash: 76c7eff17df92b01317544112099e391fd05d105
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "4444191"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4995368"
 ---
 # <a name="view-liability-asset-and-expense-transactions"></a>Kötelezettség-, eszköz- és költségtranzakciók megtekintése
 
@@ -48,6 +47,3 @@ Az **Eszköztranzakció** lap azokat a tranzakciókat jeleníti meg, amelyek nö
 A lízingköltség-tranzakciók megtekintéséhez válasszon ki egy lízinget a **Lízing összegzése** lapon, majd válassza a **Könyvek** lehetőséget a lízingrekordhoz csatolt lízingkönyvek megnyitásához. Majd válassza ki a **Költségtranzakciók** lehetőséget.
 
 A **Költségtranzakciók** lap a lízinggel szemben feladott összes költséget megjeleníti, például a kamatköltségeket, az értékcsökkenési költségeket és a végrehajtási költségeket.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERSolutionTable, ERWorkspace, RCS
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 97423
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-02-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 04c46824123906eccbfff18a03974c8043729e0a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0973d36a8fddd16d02776ac6567d424ac6ebc3ae
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4444038"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4994307"
 ---
 # <a name="share-electronic-reporting-er-configurations-in-regulatory-configuration-services-rcs-global-repository-with-external-organizations"></a>A Regulatory Configuration Services (RCS) globális tár elektronikus jelentéskészítési (ER) konfigurációinak megosztása külső szervezetekkel.
 
@@ -50,7 +49,7 @@ Hajtsa végre az alábbi lépéseket, és győződjön meg arról, hogy a megosz
 
 1. Az **Elektronikus jelentés** munkaterületen válassza ki a **Tárak** lehetőséget a konfigurációszolgáltatój esetében.
 
-    ![Konfigurációszolgáltatók](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/1_RCS_Repo_for_config_provider.JPG)
+    ![Konfigurációszolgáltatók](media/1_RCS_Repo_for_config_provider.JPG)
 
 2. Válassza ki a **Globális tár** \> **Megnyitás** lehetőséget.
 3. Keresse meg a megosztani kívánt konfigurációt. A szűrő mező segítségével tovább szűkítheti a keresés eredményeit. Ha nem találja a konfigurációt a globális tárban, hajtsa végre az [Elektronikus jelentéskészítési (ER) konfiguráció új verziójának létrehozása és feltöltése](rcs-global-repo-upload.md) rész lépéseit.
@@ -64,17 +63,12 @@ Miután létrehozta a konfigurációt a konfigurációszolgáltatója alatt, a *
 3. Válassza ki a megosztani kívánt konfigurációt.
 4. Az **Megosztva a következővel:** gyorslapon válassza a **Szervezet** lehetőséget.
 
-    ![Megosztás gyorslappal](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/1_RCS_Repo_for_Share_with_org.JPG)
+    ![Megosztás gyorslappal](media/1_RCS_Repo_for_Share_with_org.JPG)
 
 5. A párbeszédpanelen írja be a külső szervezet domainnevét, majd kattintson az **OK** gombra.
 
-    ![Mentse a konfiguráció verzióját a külső szervezet párbeszédpanellel](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/1_RCS_Repo_for_Share_with_form.JPG)
+    ![Mentse a konfiguráció verzióját a külső szervezet párbeszédpanellel](media/1_RCS_Repo_for_Share_with_form.JPG)
 
 A konfiguráció megosztásra kerül a külső szervezettel, és a szervezet számára elérhető a globális tárban. Innen importálható a szervezet RCS-példányába vagy Finance and Operations alkalmazásainak példányaiba.
 
-![Külső szervezettel megosztott konfiguráció](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/1_RCS_Repo_for_Share_with_test.com)
-
 6. Ha egy külső szervezettel korábban megosztott konfigurációt megosztását vissza szeretné vonni, válassza ki a konfigurációt, majd kattintson a **Megosztás visszavonása** elemre , majd válassza az **OK** gombot.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

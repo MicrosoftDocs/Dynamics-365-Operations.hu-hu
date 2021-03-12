@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application user
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: e89a430f90374733b23fadaf53f5bab598d67d62
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: 33323a8aed44cf19db6c2c937abcb09f7e05b6c1
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4645948"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4993950"
 ---
 # <a name="troubleshoot-partial-releases-and-partial-shipments"></a>Részleges kiadások és részleges szállítmányok – hibaelhárítás
 
@@ -42,6 +41,3 @@ Például egy értékesítési rendelésnek két eleme van: egy szállításra �
 ### <a name="issue-resolution"></a>Probléma megoldása
 
 A kiadás állapota csak azokra a rendelési sorokra vonatkozik, amelyeknél a cikkek engedélyezve vannak a raktárkezelésben. Emiatt a kiadási állapot továbbra is *Részlegesen kiadott* marad ebben a forgatókönyvben. A Microsoft kiértékelte ezt a hibát, és megállapította, hogy ez egy funkciókorlátozás. A kiadási állapot frissítéséhez egy kiterjesztés adható a szállítólevél és a számlázási folyamat részeként.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

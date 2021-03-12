@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: d7d167c4a8035231ea3c5630001d3aeccbcd7988
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: 9920d24ea92196331ea318cab2f67501801937bd
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4644921"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4995090"
 ---
 # <a name="finance-insights-home-page-preview"></a>Pénzügyi információk kezdőlapja (előzetes verzió)
 
@@ -67,7 +66,7 @@ A Microsoft Dynamics 365 Finance, Microsoft Dynamics, Lifecycle Services (LCS), 
 - Az Active Directory bérlői rendszergazdájának engedélyeznie kell az AI Builder alkalmazást a Data Lake eléréséhez.
 - A funkció be lesz kapcsolva a Dynamics 365 rendszerben.
 
-Az erőforrások létrehozásának és kezelésének ismerete az Azure-ban, Common Data Service-ben, és LCS-ben hasznos lesz a folyamat befejezésekor.
+Az erőforrások létrehozásának és kezelésének ismerete az Azure-ban, Microsoft Dataverse-ben, és LCS-ben hasznos lesz a folyamat befejezésekor.
 
 ## <a name="configure-finance-insights"></a>Pénzügyi információk konfigurálása
 
@@ -130,6 +129,3 @@ Kérjük, küldjön egy e-mailt az [Ügyfél fizetési elemzés (előzetes verzi
 ## <a name="privacy-notice"></a>Adatvédelmi nyilatkozat
 
 Az előzetes verziók (1) kevesebb adatvédelmi és biztonsági intézkedést alkalmazhatnak, mint a Dynamics 365 Finance and Operations szolgáltatás (2) és nem vonatkozik a szolgáltatásiszint-szerződés (SLA) ehhez a szolgáltatáshoz, (3) nem használhatók olyan személyes adatok vagy más adatok feldolgozásához, melyekhez törvényi vagy jogszabályi megfelelési követelmények tartoznak, és (4) korlátozott támogatás tartozik hozzá.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

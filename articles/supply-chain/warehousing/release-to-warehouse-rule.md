@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSParameters
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 27030e8dd58b290d80f6b00cbd250e09c1e50819
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8c4775ca3f44486fd3cd557df49acd229048d186
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429312"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4996173"
 ---
 # <a name="release-to-warehouse-rule"></a>Raktári kiadási szabály
 
@@ -131,6 +130,3 @@ Ez a példa azt mutatja be, hogyan működik a funkció olyan raktárak esetébe
 
 > [!NOTE]
 > Ugyanez az eredmény várható, ha a második sor részben le van foglalva. Ebben az esetben a rendszer létrehozza a munkát a lefoglalt sormennyiséghez, de a nem lefoglalt mennyiséghez nem.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2020-04-17
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: cdda44d361011706fe0ba170309908533aa0c2f7
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 879950b9aeb345fcd59dfe73d3963a44607c7ac2
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429409"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4994229"
 ---
 # <a name="integrate-asset-management-with-fixed-assets"></a>Eszközkezelés integrálása tárgyi eszközökkel
 
@@ -115,6 +114,3 @@ Karbantartás alatt álló eszköz és tárgyi eszköz közti meglévő társít
 1. Keresse meg és nyissa meg a tárgyi eszközt.
 1. A **tárgyi eszköz** gyorslapon törölje a jelet az érték a **munkavégzési helyszín** mezőből.
 1. A műveleti ablaktáblán válassza a **Mentés** lehetőséget.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

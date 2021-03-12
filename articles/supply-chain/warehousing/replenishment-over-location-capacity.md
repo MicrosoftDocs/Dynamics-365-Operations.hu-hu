@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSReplenishmentTemplates, WHSLocationLimit
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 8e9ae16fea892d1d6b6a6b5d06137576623e7f5b
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 3f94053920b475ef9190b5ac65a5f9ca01dcd4a1
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4429908"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4996123"
 ---
 # <a name="replenishment-over-location-capacity"></a>Feltöltés a hely kapacitása alapján
 
@@ -408,6 +407,3 @@ Most már kitárolhatja a 2. értékesítési rendelést. A zárolás feloldása
 - Szükség szerint manuálisan is felülbírálhatja az egyes munkafejlécekhez tartozó feltöltési munka elérhetőségét a **Munkarészletek** lapon.
 - Amikor a rendszer beállítja a feltöltési munka elérhetőségét, minden olyan készletet figyelembe veszi, amely már a helyen van a munka befejezése előtt
 - Minden értékesítési rendelés munka egy adott feltöltési munkához kapcsolódik. Nincs kapcsolódó értékesítési munka elérhetőségi funkció.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

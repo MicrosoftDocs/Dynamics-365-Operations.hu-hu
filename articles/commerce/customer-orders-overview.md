@@ -3,7 +3,7 @@ title: Vevői rendelések a pénztárban (POS)
 description: Ez a témakör a pénztár (POS) vevői rendeléseivel kapcsolatban tartalmaz információkat. A vevői rendelések speciális rendelések néven is ismertek. A témakör a kapcsolódó paramétereket és tranzakciófolyamatokat is tárgyalja.
 author: josaw1
 manager: AnnBe
-ms.date: 09/03/2020
+ms.date: 01/06/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: RetailFunctionalityProfile
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 260594
 ms.assetid: 6fc835ef-d62e-4f23-9d49-50299be642ca
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 9e5770de82638e6cef6d4c1dffd1dc85549fb11f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 6fec80dd2836a5400a7178e732fe1d5da41aca4a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412848"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4995795"
 ---
 # <a name="customer-orders-in-point-of-sale-pos"></a>Vevői rendelések a pénztárban (POS)
 
@@ -52,9 +51,9 @@ A vevői rendelések használatához konfigurálni kell azokat a szállítási m
 
 ### <a name="set-up-fulfillment-groups"></a>Teljesítési csoportok beállítása
 
-Előfordulhat, hogy egyes raktárak vagy raktári helyek nem tudják teljesíteni a vevői rendeléseket. A teljesítési csoportok konfigurálásával egy szervezet meghatározhatja, hogy mely üzletekben és raktárakban jelenjen meg a vevői rendeléseket létrehozásának lehetősége a felhasználók számára a POS rendszerben. A teljesítési csoportok konfigurálása a **Teljesítési csoportok** oldalon történik. A szervezetek tetszőleges számú teljesítési csoportot hozhatnak létre. Ha definiálva van egy teljesítési csoport, akkor egy üzlethez van kapcsolva az **Üzletek** lap műveleti ablakának **Beállítás** lapján.
+Előfordulhat, hogy egyes raktárak vagy raktári helyek nem tudják teljesíteni a vevői rendeléseket. A teljesítési csoportok konfigurálásával egy szervezet meghatározhatja, hogy mely üzletekben és raktárakban jelenjen meg a vevői rendeléseket létrehozásának lehetősége a felhasználók számára a POS rendszerben. A teljesítési csoportok konfigurálása a **Teljesítési csoportok** oldalon történik. A szervezetek tetszőleges számú teljesítési csoportot hozhatnak létre. Ha definiálva van egy teljesítési csoport, társítsa egy üzlethez a **Teljesítési csoport hozzárendelése** lehetőség kiválasztásával, amely az **Üzletek** lap műveleti ablakának **Beállítás** lapján található.
 
-A Commerce 10.0.12 és újabb verzióiban a vállalatok meghatározhatják, hogy a teljesítési csoportokban definiált raktár vagy raktár/üzlet kombinációk használhatók-e vagy szállításra, felvételre vagy szállításra és felvételre is. Ennek megfelelően az üzlet további rugalmasságot kínál, hogy raktári és üzleti lehetőségeket kínáljon, amelyek megjelennek a felhasználók számára, aki átvételre vagy átvételre vagy kiszállításra hoznak létre rendelést. Ezeknek a konfigurációs beállításoknak a kihasználásához be kell kapcsolni azt a **Helyek meghatározása „Szállításra” vagy „Átvételre” engedélyezve Teljesítési csoportban** funkciót. Ha egy teljesítési csoporthoz csatolt raktár nem üzlet, akkor csak szállítási helyként konfigurálható. Nem használható, ha a pénztárban átvételre konfigurálták a rendelést.
+A Commerce 10.0.12 és újabb verzióiban a vállalatok meghatározhatják, hogy a teljesítési csoportokban definiált raktár vagy raktár- és üzletkombinációk használhatók-e vagy szállításra, felvételre vagy szállításra és felvételre is. Ezzel még nagyobb rugalmasságot biztosít a vállalat számára annak meghatározásához, hogy mely raktárak választhatók ki a szállítandó cikkek vevői rendelésének létrehozásakor, illetve, hogy a szállítandó cikkek vevői rendelésének létrehozásakor mely üzleteket lehet kiválasztani. Ezen konfigurációs beállítások hasznáaltához be kell kapcsolni azt a **Helyek meghatározása „Szállításra” vagy „Átvételre” engedélyezve Teljesítési csoportban** funkciót. Ha egy teljesítési csoporthoz csatolt raktár nem üzlet, akkor csak szállítási helyként konfigurálható. Nem használható, ha a pénztárban átvételre konfigurálták a rendelést.
 
 ![Teljesítési csoportok oldal](media/customer-order-fulfillment-group.png)
 
@@ -99,7 +98,10 @@ Győződjön meg róla, hogy a pénztár [képernyő elrendezése](https://docs.
 
 ![Műveletek a pénztár tranzakciós képernyőjén](media/customer-order-screen-layout.png)
 
-## <a name="working-with-customer-orders-in-pos"></a>Vevői rendelések használata a pénztárban
+## <a name="work-with-customer-orders-in-pos"></a>Vevői rendelések használata a pénztárban
+
+> [!NOTE]
+> A bevételelszámolás funkció jelenleg nem támogatott a Commerce-csatornákban (e-kereskedelem, pénztár, hívásközpont). A bevételelszámolással konfigurált cikkeket nem szabad hozzáadni a Commerce-csatornákban létrehozott rendelésekhez. 
 
 ### <a name="create-a-customer-order-for-products-that-will-be-shipped-to-the-customer"></a>Vevői rendelés létrehozása a vevőnek szállítandó termékekhez
 
@@ -118,7 +120,7 @@ Győződjön meg róla, hogy a pénztár [képernyő elrendezése](https://docs.
 2. Adjon hozzá termékeket a kosárhoz.
 3. Válassza ki a **Kiválasztott átvétele** vagy az **Összes átvétele** lehetőséget a rendelés átvételre konfiguráció kezdeményezéséhez.
 4. Válassza ki azt az áruházi helyet, amelyben a vevő a kiválasztott termékeket átveszi.
-5. Válassza ki az átvétel dátumát.
+5. Válassza ki a cikk felvételének dátumát.
 6. Használja a fizetési funkciókat a kiszámított esedékes összegek kifizetésére , vagy használja a **Letét felülbírálása** műveletet, ha módosítani szeretné az esedékes összegeket, majd alkalmazza a kifizetést.
 7. Ha a teljes rendelés teljes összege nem lett kifizetve, válassza ki, hogy a vevő később fizeti-e ki a kifizetést (felvételkor), vagy hogy a hitelkártyát már most beolvassák, majd a felvételkor használják.
 
@@ -127,12 +129,10 @@ Győződjön meg róla, hogy a pénztár [képernyő elrendezése](https://docs.
 Az online vagy az áruházi csatornában létrehozott kiskereskedelmi rendelések igény szerint visszahívhatók és szerkeszthetők a pénztári rendszer használatával.
 
 > [!IMPORTANT]
-> Egy hívásközpont-csatornában létrehozott rendelések nem szerkeszthetők a pénztárban ha a [Rendeléskiegészítés engedélyezése](https://docs.microsoft.com/dynamics365/commerce/set-up-order-processing-options#enable-order-completion) beállítás be van kapcsolva a hívásközpont csatornához. A helyes fizetésfeldolgozásbiztosításához a hívásközpont-csatornából származó és a rendelés kiegészítését engedélyező szolgáltatásokat a Commerce-központ hívásközpont alkalmazásán keresztül kell szerkeszteni.
+> Nem minden kiskereskedelmi rendelés szerkeszthető a pénztáralkalmazáson keresztül. Egy hívásközpont-csatornában létrehozott rendelések nem szerkeszthetők a pénztárban ha a [Rendeléskiegészítés engedélyezése](https://docs.microsoft.com/dynamics365/commerce/set-up-order-processing-options#enable-order-completion) beállítás be van kapcsolva a hívásközpont csatornához. A helyes fizetésfeldolgozásbiztosításához a hívásközpont-csatornából származó és a rendelés kiegészítését engedélyező szolgáltatásokat a Commerce-központ hívásközpont alkalmazásán keresztül kell szerkeszteni.
 
-A Commerce 10.0.13 és korábbi verzióiban a felhasználók csak akkor módosíthatják a támogatott vevői rendeléseket a pénztári rendszereken keresztül, ha a rendelések teljesen meg vannak nyitva. Ha egy rendelés bármely sorát már feldolgozták teljesítésre (kitárolás, csomagolás stb.), akkor a rendelés zárolva lesz a pénztárban történő szerkesztéssel szemben.
+A 10.0.17-es és újabb verziókban a felhasználók még akkor is szerkeszthetik a felveendő rendeléseket a pénztáralkalmazáson keresztül, ha a rendelést részlegesen teljesítették. A teljesen kiszámlázott rendelések azonban a pénztári rendszerből továbbra sem szerkeszthetők. A funkció engedélyezéséhez kapcsolja be az **(Előzetes verzió) Részben teljesített rendelések szerkesztése** funkciót a **Funkciókezelés** munkaterületen a Pénztárban. Ha ez a funkció nincs engedélyezve, vagy ha a 10.0.16-os vagy korábbi verziót használja, a felhasználók csak akkor szerkeszthetik a vevői rendeléseket a pénztárban, ha a rendelés teljesen nyitva van. Ezenkívül ha a funkció engedélyezve van, korlátozhatja, hogy mely üzletek szerkeszthetik a részlegesen teljesített rendeléseket. Ezen képesség adott üzletekre vonatkozó letiltását az **Általános** gyorslap **Funkcióprofil** pontjában állíthatja be.
 
-> [!NOTE]
-> A Commerce 10.0.14 verziójában egy funkció, amely már ki van adva a [nyilvános előzetes verzióban](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/public-preview-terms), lehetővé teszi a pénztári felhasználóknak, hogy szerkesszék a vevői rendeléseket, még akkor is, ha néhány rendelés már teljesítve lett. A teljesen kiszámlázott rendelések azonban a pénztári rendszerből továbbra sem szerkeszthetők. Az előzetes funkció teszteléséhez és a további visszajelzések adásához kapcsolja be az **(Előzetes verzió) Részben teljesített rendelések szerkesztése** funkciót a **Funkciókezelés** munkaterületen a Pénztárban. A hívásközpont csatornából származó és a Rendelés kiegészítésének engedélyezés szolgáltatásokat használó vevői rendelések akkor sem módosíthatók, ha ez a funkció engedélyezve van.
 
 1. Válassza a **Rendelés előhívása** lehetőséget.
 2. A **Keresés** segítségével megadhatja a rendelés megtalálásához használandó szűrőket, majd válassz az **Alkalmaz** lehetőséget.
@@ -170,6 +170,3 @@ Ha a **Vevői rendelés létrehozása aszinkron módban** beállítása **Igen**
 ## <a name="additional-resources"></a>További erőforrások
 
 [Hibrid vevői rendelések](hybrid-customer-orders.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

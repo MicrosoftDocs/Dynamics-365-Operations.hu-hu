@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSQualityCheckTemplate, WHSWorkClass, WHSWorkTemplateTable, WHSLocDirTable, WHSQualityCheckResult
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: dfb71f74732d65409003c4f6f74145442a1efa3f
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 585ca933726cb932290f8abf8504aeb13848a0e5
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4429916"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4996251"
 ---
 # <a name="quality-check"></a>Minőség-ellenőrzés
 
@@ -397,6 +396,3 @@ Ennél a forgatókönyvnél a 3. raklapot el fogja fogadni a program.
 1. Válassza ki a lap tetején látható Menü gombot (**≡**), majd válassza a **Mégsem** lehetőséget a menühöz való visszatéréshez.
 
 Most már bezárhatja a mobilalkalmazást.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

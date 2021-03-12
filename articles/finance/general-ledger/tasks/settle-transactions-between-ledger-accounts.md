@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: LedgerTransSettlement, LedgerTrialBalanceListPage, LedgerTrialBalanceListPageBalanceParms, LedgerTransAccount, LedgerTransSettled
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: bb53e9fee35712343f034389f00f3d4539cc652d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8220bacc8d683163e97956ec59a5af929b04319c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4444000"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4994415"
 ---
 # <a name="settle-transactions-between-ledger-accounts"></a>Kiegyenlítési tranzakciók a főkönyvi számlák között
 
@@ -49,6 +48,3 @@ Ez az eljárás bemutatja a tranzakciók kiegyenlítését a főkönyvi számlá
 7. Kattintson a Főkönyvi kiegyenlítések lehetőségre.
 8. A listában jelölje meg a kiválasztott sort.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

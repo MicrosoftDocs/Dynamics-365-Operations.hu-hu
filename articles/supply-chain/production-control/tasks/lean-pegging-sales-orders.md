@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, LeanPeggingTree
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e429fef6101f611d7a2c1b5323d6fe1e39d1cdd3
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 457e7128bed2232a3e092b31136f768940482741
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429485"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4994179"
 ---
 # <a name="lean-pegging-from-sales-orders"></a>Lean igénykövetés az értékelési rendelésekből
 
@@ -57,6 +56,3 @@ Ez az eljárás arra irányul, hogy ellenőrizze az igénykövetési fát egy ol
 5. A fán válassza ki a következőt: „Értékesítési sor: 000832\Kanban: 000558\Kiadás: L0001\Kanban: 000559”.
     * A második kanbanhoz tartozó feladat szintén tervezett, mivel az egész igénykövetési fa tervezett. Figyelje meg, hogy a kanbanfeladat állapota megváltozott: Nem tervezett helyett Tervezett lett.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

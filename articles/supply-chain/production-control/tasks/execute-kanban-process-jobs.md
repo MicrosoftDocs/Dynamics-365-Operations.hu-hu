@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: KanbanBoardWorkCell, KanbanJobStatusUpdate
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a1c32b577007c400f3528a110436eb97aaabefe2
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9da49ae17d6c25166f6b0e05e3c45fc991c9a54d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429565"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4994154"
 ---
 # <a name="execute-kanban-process-jobs"></a>Kanbanfeldolgozási feladatok végrehajtása
 
@@ -57,6 +56,3 @@ Ezzel az eljárás a kanbanfeldolgozási feladatok végrehajtására szolgál. A
 6. Adjon meg egy számot a Hibátlan mennyiség mezőben.
 7. Kattintson az OK gombra.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

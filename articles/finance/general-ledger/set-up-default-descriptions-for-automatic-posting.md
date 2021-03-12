@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 222564
 ms.assetid: ''
 ms.search.region: global
 ms.author: aolson
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: f5fc73f636a5cac25c259ce2cbae5c5407dca9b7
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d1b73b104ed8a8a015cb97dcf3055a648cfb083d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4443809"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4994740"
 ---
 # <a name="set-up-default-descriptions-for-automatic-posting"></a>Alapértelmezett leírások beállítása az automatikus feladáshoz
 
@@ -87,6 +86,3 @@ A lépések elvégzése után a korábbi [Alapértelmezett leírások beállít�
 2. A **Hivatkozási tábla** mezőben válassza ki azt a táblát, amelyből paraméteradatokat szeretne hozzáadni a leíráshoz.
 3. A **Hivatkozási mező** mezőben válassza ki azt mezőt, amelyből paraméteradatokat szeretne hozzáadni a leíráshoz.
 4. További mezők hozzáadásához ismételje meg a 1–3. lépéseket.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

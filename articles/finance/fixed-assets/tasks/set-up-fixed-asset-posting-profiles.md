@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: AssetPosting
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 07961d8613b6b5e0e1c5dc6a91b554305dcb17f5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8671d38098542afbd8d00e30e72de8dbd1fc4abb
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4444041"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4994815"
 ---
 # <a name="set-up-fixed-asset-posting-profiles"></a>Tárgyieszköz-feladási profilok beállítása
 
@@ -123,6 +122,3 @@ Ez a feladat-útmutató beállítja a Tárgyieszköz-feladási profilokat.  Ez a
 88. A **Fő számla** mezőben adja meg a kívánt értékeket.
 89. Az **Ellenszámla** mezőben adja meg a kívánt értékeket.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

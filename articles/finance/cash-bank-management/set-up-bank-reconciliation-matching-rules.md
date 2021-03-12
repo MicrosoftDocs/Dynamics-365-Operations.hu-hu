@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: BankReconciliationMatchRule, BankReconciliationMatchRuleSet
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 12971
 ms.assetid: b5073f83-31dc-404f-af42-3fd84a02a7c6
 ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3302738a05852dfb37f8266074386d9f2998994d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: dbee870848010f2dce9b6a5e2c6179849191f9cf
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4443977"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4995265"
 ---
 # <a name="set-up-bank-reconciliation-matching-rules"></a>Banki egyeztetési szabályok beállítása
 
@@ -49,6 +48,3 @@ Alapértelmezés szerint a egyeztetési szabályok megtalálják az első olyan 
 | **Egyeztetés banki bizonylattal**       | Hozzon létre feltételeket, melyek meghatározzák a banki bizonylatok és a banki kivonatok sorainak egyeztetési módját az egyeztetési szabály futtatása során a **Banki egyeztetési munkalap** lapon. A tranzakciósorokat a gyorslapokon megadott kiegészítő kritériumok alapján választja ki a rendszer.                                | **1. lépés: Adja meg az egyeztetési szabályt** – A Finance banki tranzakciókhoz kapcsolódó banki kivonatok meghatározásához válasszon ki egy feltételt. **2. lépés (nem kötelező): Válassza ki az egyeztetési szabályokkal szemben futtatandó kimutatássorokat**  Használjon szűrőt a szabályokkal szemben futattandó kimutatássorokon.                                                                                                                                                                                                                                                                                                               |
 | **Sztornírozási kivonatsorok törlése** | Hozzon létre olyan feltételeket, melyek meghatározzák a sztornírozási kivonatsorok eltávolítását a **Banki egyeztetési munkalap** oldalon az egyeztetési szabály futtatása során. Ez a lehetőség használható akkor, amikor banki hiba jelentkezik, és két banki kivonatsor található az importált a banki kivonaton, és össze kell hangolni a sorokat. | **1. lépés**: **Sztornírozási kivonatsorok keresése** – Adjon meg kiválasztási kritériumokat a banki kivonat sztornírozási sorainak kiválasztásához. Például csak a csekkek kiválasztásához válassza ki a **Banki tranzakció kódja** elemet a Mező mezőben, válassza ki a plusz jelet (+) az **Kezelő** mezőben, és írja be a **Csekkek** szót az Érték mezőbe. **2. lépés: Eredeti kivonatsorok keresése** – Olyan kiválasztási feltételeket is hozzáadhat, melyek a banki bizonylatsorokat hozzáillesztik a banki kivonatsorokhoz. **3. lépés: A Finance banki tranzakciók megkeresése** – Olyan kiválasztási feltételeket is hozzáadhat, melyek a Finance banki tranzakciókat hozzáillesztik a banki kivonatsorokhoz. |
 | **Új tranzakciók megjelölése**          | Hozzon létre olyan feltételeket, melyek meghatározzák az új tranzakciók megjelölését a **Banki egyeztetési munkalap** oldalon az egyeztetési szabály futtatása során.                                                                                                                                                                 | **1. lépés: Kivonatsorok keresése**– Adjon meg választás mezőket, amelyek a meghatározzák mely banki kivonatsorokat kell kiválasztani a **Banki egyeztetési munkalap** oldalon. **2. lépés: A Finance and Operations** megkeresése – Hozzáadhat kiválasztási feltételeket a bankibizonylat-sorok keresésére. Ha banki bizonylat nem áll rendelkezésre, egy bizonylat sor lesz megjelölve új tranzakcióként.                                                                                                                                                                                                                                             |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
