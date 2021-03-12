@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: AssetParameters, AssetProposalDepreciation, DefaultDashboard, LedgerJournalTable
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 074a1b80584050302920a95c20fb547523a4866c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8b09bbe4d0143aa521ca0a4cf67e86b7165b0f4f
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4443835"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4968954"
 ---
 # <a name="calculate-fixed-asset-depreciation-across-legal-entities"></a>Tárgyi eszköz értékcsökkenésének kiszámítása jogi személyek között
 
@@ -51,6 +50,3 @@ Tárgyi eszköz értékcsökkenése egyetlen lépésben futtatható jogi személ
 5. Kattintson a Napló létrehozása lehetőségre.
 6. Ugorjon a Tárgyi eszközök > Naplóbejegyzések > Tárgyi eszközök naplója pontra.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

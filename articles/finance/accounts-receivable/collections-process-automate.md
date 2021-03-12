@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: CustomerCollectionManagerWorkspace
 audience: Application User, IT Pro
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-26
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: db59bad2ed3caf38f22bd4d6059e57747d1d983f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a63058904df72a7fda5a67ed1e6a846eed393ce0
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4443848"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969701"
 ---
 # <a name="collections-process-automation"></a>Beszedési folyamat automatizálása
 
@@ -118,6 +117,3 @@ A következő táblázatokban azoknak a lapoknak és mezőknek a listája látha
 |     Kinnlevőségek paraméterei > Beszedési folyamatok automatizálása     |     Fizetési felszólítások automatikus közzététele           |     A fizetési felszólítás műveletitípusai feladják a levelet az automatizálás során.                                      |
 |     Kinnlevőségek paraméterei > Beszedési folyamatok automatizálása     |     Tevékenységek létrehozása automatizáláshoz                |     Tevékenységek létrehozása és bezárása a nem tevékenység típusú művelettípusokhoz a számlán végrehajtott összes automatizált lépés megtekintéséhez.        |
 |     Kinnlevőségek paraméterei > Beszedési folyamatok automatizálása     |     A beszedési folyamatok automatizálása megtartása ennyi napig     |     Azt határozza meg, hogy hány napig tárolják a beszedések előzményeit.                                                       |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

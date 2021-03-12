@@ -10,18 +10,17 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 1219713
 ms.search.region: Czech Republic, Germany, Hungary, Latvia, Lithuania, Poland, Russia
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5ee8f3f5c850ad0ae519c83a689d12b9a1471712
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9ee59d879a0500b5addfd9540f35cd818d7126c5
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408052"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4968321"
 ---
 # <a name="storno-accounting"></a>Sztornókönyvelés
 
@@ -29,10 +28,10 @@ ms.locfileid: "4408052"
 
 A sztornókönyvelés az eredeti naplószámla-bejegyzések sztornírozási gyakorlata negatív számok segítségével.
 
-A *sztornókönyvelés* az eredeti naplószámla-bejegyzések tartozik és követel összegeinek sztornírozási gyakorlata negatív számok segítségével. Mivel a könyvelők tipikusan piros tintával írják a sztornókönyvelési bejegyzéseket, ez a számviteli gyakorlat *piros sztornó* néven is ismert. A sztornókönyvelés használatával törölheti a dokumentumot helytelen összegekkel, de a lemondás után mindig be kell írnia a megfelelő dokumentum összegét.
+A *sztornókönyvelés* az eredeti naplószámla-bejegyzések tartozik és követel összegeinek sztornírozási gyakorlata negatív számok segítségével. Mivel a könyvelők tipikusan piros tintával írják a sztornókönyvelési bejegyzéseket, ez a számviteli gyakorlat *piros sztornó* néven is ismert. A sztornókönyvelés használatával törölheti a dokumentumot helytelen összegekkel, de a lemondás után mindig be kell írnia a megfelelő dokumentum összegét.
 
 ## <a name="example"></a>Példa
-Egy könyvelő feladja egy szállító számláját 120 USD összegről. A fizetési folyamat során kiderült, hogy a könyvelő tévedésből 102 USD helyett 120 USD-t írt be. Most a°könyvelőnek sztorníroznia kell az eredeti dokumentumot, majd létre kell hoznia a helyes számlát 102 USD-ról. További információ: [Szállítói számlák áttekintése](../accounts-payable/vendor-invoices-overview.md). Az alábbi tábla a sztornírozás általános bejegyzését mutatja be.
+Egy könyvelő feladja egy szállító számláját 120 USD összegről. A fizetési folyamat során kiderült, hogy a könyvelő tévedésből 102 USD helyett 120 USD-t írt be. Most a könyvelőnek sztorníroznia kell az eredeti dokumentumot, majd létre kell hoznia a helyes számlát 102 USD-ról. További információ: [Szállítói számlák áttekintése](../accounts-payable/vendor-invoices-overview.md). Az alábbi tábla a sztornírozás általános bejegyzését mutatja be.
 
 | **Dokumentumazonosító** | **Számla** | **Tartozik** | **Követel** | **Megjegyzés**                  |
 |-----------------|-------------|-----------|------------|------------------------------|
@@ -53,7 +52,7 @@ Ebben a példában az egyenleg a következőt jeleníti meg.
 | Vendor acc | 0     | 102    | -102    |
 
 ## <a name="differences-between-storno-and-reverse-entries"></a>A sztornírozás és a fordított bejegyzések közötti különbségek
-Kétféleképpen lehet javítani a bejegyzést – sztornírozással és fordított bejegyzéssel. Fordított bejegyzés használata esetén az eredeti általános bejegyzés egy példányát fordított adós- és hitelszámlával hozza létre, és az összegek ugyanazokkal a jelekkel maradnak. Sztornó használatakor a rendszer létrehoz egy példányt az eredeti főkönyvi bejegyzésből, de negatív előjellel kell elszámolni az összegeket. Az alábbi tábla a sztornírozás általános bejegyzését mutatja be.
+Kétféleképpen lehet javítani a bejegyzést – sztornírozással és fordított bejegyzéssel. Fordított bejegyzés használata esetén az eredeti általános bejegyzés egy példányát fordított adós- és hitelszámlával hozza létre, és az összegek ugyanazokkal a jelekkel maradnak. Sztornó használatakor a rendszer létrehoz egy példányt az eredeti főkönyvi bejegyzésből, de negatív előjellel kell elszámolni az összegeket. Az alábbi tábla a sztornírozás általános bejegyzését mutatja be.
 
 | **Dokumentumazonosító** | **Számla** | **Tartozik** | **Követel** | **Megjegyzés**                  |
 |-----------------|-------------|-----------|------------|------------------------------|
@@ -73,10 +72,10 @@ Ebben a példában az egyenleg a következőt jeleníti meg.
 | Purch acc  | 222   | 120    | 102     |
 | Vendor acc | 120   | 222    | -102    |
 
-Ne feledje, hogy az egyenlegek egyenlők a sztornírozottnál és a sztornírozásnál. Különbség van a beszedési forgalom és a hitelforgalom között, mert a fordított bejegyzés felesleges beszedési és hitelforgalmat hoz létre. A sztornírozási bejegyzés, ahol ritkán használja a forgalom országokban/régiókban használatos. Más országok/régiók sztornókönyvelés.
+Ne feledje, hogy az egyenlegek egyenlők a sztornírozottnál és a sztornírozásnál. Különbség van a beszedési forgalom és a hitelforgalom között, mert a fordított bejegyzés felesleges beszedési és hitelforgalmat hoz létre. A sztornírozási bejegyzés, ahol ritkán használja a forgalom országokban/régiókban használatos. Más országok/régiók sztornókönyvelés.
 
 ## <a name="partial-storno"></a>Részleges sztornírozás
-A *Részleges sztornírozás* olyan könyvelési gyakorlat, ahol a negatív tartozik és követel összegek használatával visszafordítja az eredeti napló számlabejegyzéseket. Egyes országokban/régiókban engedélyezi, hogy használja a részleges sztornírozása. Például egy könyvelő feladja egy szállító számláját 120 USD összegről. A fizetési eljárás során kiderül, hogy a könyvelő véletlenül nem megfelelően adta meg a számsorozatot. Az eredeti, 102 USD-s számlán hiba szerepelt a számsorozatban. Részleges sztornó segítségével a könyvelőnek létre kell hoznia egy sztornót 18 USD-ról. Az alábbi tábla a részleges sztornírozás általános bejegyzését mutatja be.
+A *Részleges sztornírozás* olyan könyvelési gyakorlat, ahol a negatív tartozik és követel összegek használatával visszafordítja az eredeti napló számlabejegyzéseket. Egyes országokban/régiókban engedélyezi, hogy használja a részleges sztornírozása. Például egy könyvelő feladja egy szállító számláját 120 USD összegről. A fizetési eljárás során kiderül, hogy a könyvelő véletlenül nem megfelelően adta meg a számsorozatot. Az eredeti, 102 USD-s számlán hiba szerepelt a számsorozatban. Részleges sztornó segítségével a könyvelőnek létre kell hoznia egy sztornót 18 USD-ról. Az alábbi tábla a részleges sztornírozás általános bejegyzését mutatja be.
 
 | **Dokumentumazonosító** | **Számla** | **Tartozik** | **Követel** | **Megjegyzés**                  |
 |-----------------|-------------|-----------|------------|------------------------------|
@@ -93,9 +92,9 @@ Ebben a példában az egyenleg a következőt jeleníti meg.
 | Purch acc  | 102   | 0      | 102     |
 | Vendor acc | 0     | 102    | -102    |
 
-Részleges sztornírozása hibát hoz létre az eredeti példány nyomtatása űrlapon. Az eredeti dokumentum dátuma és a Sztornírozás dátuma közötti eltérés esetén ez megnehezíti a pontos pénznemösszeg beolvasását. Részleges sztornó emiatt csak bizonyos dokumentumok esetén engedélyezett. A Dynamics 365 Finance az engedélyezett dokumentumok és országok/régiók esetén biztosít részleges sztornírozási funkciót.
+Részleges sztornírozása hibát hoz létre az eredeti példány nyomtatása űrlapon. Az eredeti dokumentum dátuma és a Sztornírozás dátuma közötti eltérés esetén ez megnehezíti a pontos pénznemösszeg beolvasását. Részleges sztornó emiatt csak bizonyos dokumentumok esetén engedélyezett. A Dynamics 365 Finance az engedélyezett dokumentumok és országok/régiók esetén biztosít részleges sztornírozási funkciót.
 
-## <a name="how-to-enter-stornoon-journal-lines"></a>Sztornírozás bejegyzésének módja a naplósorokban
+## <a name="how-to-enter-storno-on-journal-lines"></a>Sztornírozás bejegyzésének módja a naplósorokban
 Adja meg a tartozás vagy követelés összegét negatív előjellel a naplósorban a sztornóbejegyzés létrehozásához. A **Javítás** mező értékét a feladási folyamat során állítják be. 
 
 ## <a name="how-storno-is-displayed"></a>Hogyan jelenjen meg sztornírozása
@@ -121,7 +120,7 @@ A Finance különlegesen kezeli a negatív naplóösszegeket. Általános napló
 </thead>
 <tbody>
 <tr class="row-2">
-<td class="column-1"> Tartozik</td>
+<td class="column-1"> Tartozik</td>
 <td class="column-2">Nincs</td>
 <td class="column-3">&gt;0.</td>
 <td class="column-4" align="right">Összeg</td>
@@ -131,7 +130,7 @@ A Finance különlegesen kezeli a negatív naplóösszegeket. Általános napló
 <td class="column-8">Növekszik</td>
 </tr>
 <tr class="row-3">
-<td class="column-1"> Jóváírás</td>
+<td class="column-1"> Jóváírás</td>
 <td class="column-2">Nincs</td>
 <td class="column-3">&lt;0.</td>
 <td class="column-4" align="right">-Összeg</td>
@@ -168,8 +167,5 @@ Testreszabhatja a sztornírozás megjelenítését űrlapokban, rácsokban, oszl
 ![Naplóösszegekben bejegyzés sztornírozása](./media/journal-storno.png)
 
 ## <a name="how-documents-create-storno"></a>Sztornírozási dokumentumok létrehozása
-Egyes dokumentumokban lehetséges az érvénytelenítési tranzakciók létrehozása. Például a főkönyvi, a fizetendő számlák és a követelésekre vonatkozó deviza átértékelés megszünteti a nem realizált nyereséget és veszteséget. További részletek: [Főkönyvi devizaátértékelés](../general-ledger/foreign-currency-revaluation-general-ledger.md) vagy [A Kötelezettségek és a Kinnlevőségek modul devizaátértékelései](../cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable.md). Az érvénytelenítési tranzakció létrehozása után új tranzakciók jönnek létre a nem realizált nyereséggel és veszteséggel. Érvénytelenítési tranzakciók is létrejöhetnek a készlethez. További információ: [Készletzárás](../../supply-chain/cost-management/inventory-close.md). Vannak olyan dokumentumok, amelyek lehetővé teszik a korábban feladott dokumentum visszavonása. Például a felhasználó hozhat létre jóváírást ad fel, hogy egy korábban létrehozott számla érvénytelenítése. A dokumentumok meghatározott paramétereket használnak a fordított vagy sztornótranzakciók létrehozásához. Például a devizaátértékelés fordított vagy sztornótranzakciót hozhat létre a főkönyv javítási paramétere alapján. A vevői jóváírást hoz létre a fordított vagy számlák Kinnlevőségek jóváírás javítás paramétertől függő sztornótranzakciók.
+Egyes dokumentumokban lehetséges az érvénytelenítési tranzakciók létrehozása. Például a főkönyvi, a fizetendő számlák és a követelésekre vonatkozó deviza átértékelés megszünteti a nem realizált nyereséget és veszteséget. További részletek: [Főkönyvi devizaátértékelés](../general-ledger/foreign-currency-revaluation-general-ledger.md) vagy [A Kötelezettségek és a Kinnlevőségek modul devizaátértékelései](../cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable.md). Az érvénytelenítési tranzakció létrehozása után új tranzakciók jönnek létre a nem realizált nyereséggel és veszteséggel. Érvénytelenítési tranzakciók is létrejöhetnek a készlethez. További információ: [Készletzárás](../../supply-chain/cost-management/inventory-close.md). Vannak olyan dokumentumok, amelyek lehetővé teszik a korábban feladott dokumentum visszavonása. Például a felhasználó hozhat létre jóváírást ad fel, hogy egy korábban létrehozott számla érvénytelenítése. A dokumentumok meghatározott paramétereket használnak a fordított vagy sztornótranzakciók létrehozásához. Például a devizaátértékelés fordított vagy sztornótranzakciót hozhat létre a főkönyv javítási paramétere alapján. A vevői jóváírást hoz létre a fordított vagy számlák Kinnlevőségek jóváírás javítás paramétertől függő sztornótranzakciók.
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

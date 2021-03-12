@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: b5887efc32c71759e4cb3c31e1b18c4c8b64f173
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d4ecc29e47d68129df424c4212505413cf6c8889
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4444082"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4968979"
 ---
 # <a name="electronic-messaging"></a>Elektronikus üzenetküldés
 
@@ -536,6 +535,3 @@ Most törölheti vagy frissítheti az üzenet állapotát. Ha frissíteni szeret
 ![Az üzenet állapotának frissítése](media/update-status.png)
 
 Az üzenet állapota **Előkészítve** állapotra frissül, és most létrehozhatja a jelentést a **Jelentés létrehozása** kiválasztásával. A jelentés létrejött, az üzenet állapota és a műveletnapló pedig frissült. A létrehozott jelentés megtekintéséhez válassza a **Melléklet** gombot (kapocs jel) az oldal jobb felső sarkában.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

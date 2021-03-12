@@ -3,14 +3,13 @@ title: Dynamics 365 Commerce értékelési környezet kiépítése
 description: Ez a témakör bemutatja, hogyan lehet egy Microsoft Dynamics 365 Commerce értékelési környezetet létesíteni.
 author: psimolin
 manager: annbe
-ms.date: 11/05/2020
+ms.date: 12/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,12 +17,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: b54216a565c264dfcfe821581fee9df7b5e22323
-ms.sourcegitcommit: 715508547f9a71a89a138190e8540686556c753d
+ms.openlocfilehash: 8cda79a6be1aca7ad3826b9409e110524e6560e3
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "4413017"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969901"
 ---
 # <a name="provision-a-dynamics-365-commerce-evaluation-environment"></a>Dynamics 365 Commerce értékelési környezet kiépítése
 
@@ -117,7 +116,7 @@ Tegye a következőket a környezet telepítéséhez.
 
 ### <a name="initialize-the-commerce-scale-unit-cloud"></a>A Commerce Scale Unit (felhő) inicializálása
 
-Egy CSU-cím inicializálásához kövesse az alábbi lépéseket.
+A CSU-cím inicializálásához kövesse az alábbi lépéseket.
 
 1. A **felhőalapú környezetek** nézetben válassza ki a saját környezetét a listából.
 1. Kattintson a jobb oldalon található környezeti nézet **Minden részlet** elemére. Megjelenik a környezeti részletek nézet.
@@ -130,6 +129,22 @@ Egy CSU-cím inicializálásához kövesse az alábbi lépéseket.
 1. A folytatás előtt győződjön meg arról, hogy az CSU állapota **Sikeres**. Az inicializálás körülbelül két-öt órát vesz igénybe.
 
 Ha nem találja a **Kezelés** hivatkozást a környezet részletei nézetben, kérjen segítséget a Microsoft kapcsolattartótól.
+
+A következő hibaüzenet jelenhet meg a rendszerbe állítási folyamat során:
+
+> A kiértékelési (demó-/teszt-) környezetekben regisztrálni kell a skálázásiegység-csatlakoztató alkalmazást \<application ID\> a központi felületen.
+
+Ha a CSU inicializálása sikertelen, és megjelenik ez a hibaüzenet, jegyezze fel az alkalmazásazonosítót, amely globálisan egyedi azonosító (GUID), majd hajtsa végre a következő szakaszban található lépéseket a CSU telepítési alkalmazásnak a Commerce központi felületén való regisztrálásához.
+
+### <a name="register-the-csu-deployment-application-in-commerce-headquarters-if-required"></a>Regisztrálja a CSU telepítési alkalmazást a Commerce központi felületén (ha szükséges)
+
+A CSU telepítési alkalmazás Commerce központi felületén történő regisztrációjához kövesse az alábbi lépéseket.
+
+1. A Commerce központi felületén lépjen a **Rendszerfelügyelet \> Beállítás \> Azure Active Directory-alkalmazások** lehetőségre.
+1. Az **Ügyfélazonosító** oszlopban adja meg a CSU inicializálásakor kapott hibaüzenet alkalmazásazonosítóját.
+1. A **Név** oszlopban adjon meg egy leíró szöveget (például **CSU Eval**).
+1. A **Felhasználói azonosító** oszlopba írja be a **RetailServiceAccount** szöveget.
+1. Próbálja meg újra a CSU inicializálását és telepítését az LCS-ről.
 
 ### <a name="initialize-e-commerce"></a>Az elektronikus kereskedelem inicializálása
 
@@ -176,6 +191,3 @@ A Kereskedelem értékelési környezetének létesítési és konfigurálási f
 [Microsoft Azure-portál](https://azure.microsoft.com/features/azure-portal)
 
 [Dynamics 365 Commerce-webhely](https://aka.ms/Dynamics365CommerceWebsite)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

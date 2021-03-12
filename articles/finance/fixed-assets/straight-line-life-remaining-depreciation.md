@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 13851
 ms.assetid: 0fa2f71a-596c-414c-a6e6-8f7405a0bf81
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c12ca59203d6cad7f5699bc930f2af27427ca41b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d2414ea97fefbec1e975498e171496e33057541c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4444094"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969004"
 ---
 # <a name="straight-line-life-remaining-depreciation"></a>Lineáris - hátralevő élettartam értékcsökkenés
 
@@ -38,7 +37,7 @@ Kiválaszthatja a **Naptár** vagy **Pénzügyi** elemeket az **Értékcsökken�
 
 ### <a name="calendar"></a>Naptár
 
-Ha a **Naptár** beállítást választja az ***Értékcsökkenési év*** mezőben, akkor az év január 1-től december 31-ig számít, akkor is, ha a pénzügyi év ettől eltérően van definiálva. A **naptár** lehetőség választása esetén az értékcsökkenés alapja minden évben január 1-jén frissül. Jellemzően az értékcsökkenés alapja a nettó könyv szerinti érték mínusz a maradványérték. Az ebben a témában szereplő későbbi példákban az értékcsökkenés alapja a számítások oszlop első kifejezésében szereplő számláló. Ha bejelöli **Naptár** értéket az értékcsökkenés éveként a következő lehetőségek érhetők el az **Időszak-gyakoriság** mezőben:
+Ha a **Naptár** lehetőséget választja az **_Értékcsökkenés éve_*_ mezőben, a program a január 1-től december 31-ig tart, még akkor is, ha a pénzügyi naptárat másképpen definiálta. A_* Naptár** beállítással minden év január 1-jén frissül az értékcsökkenés alapja. Jellemzően az értékcsökkenés alapja a nettó könyv szerinti érték mínusz a maradványérték. Az ebben a témában szereplő későbbi példákban az értékcsökkenés alapja a számítások oszlop első kifejezésében szereplő számláló. Ha bejelöli **Naptár** értéket az értékcsökkenés éveként a következő lehetőségek érhetők el az **Időszak-gyakoriság** mezőben:
 
 -   **Éves** felad egy összeget december 31-én.
 -   **Havi**: felad egy havi összeget minden naptári hó végén.
@@ -80,6 +79,3 @@ Az értékcsökkenési összeg minden évben megegyezik: (beszerzési ár - mara
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

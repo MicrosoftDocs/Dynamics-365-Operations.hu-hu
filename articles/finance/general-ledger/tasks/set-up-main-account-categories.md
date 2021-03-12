@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: MainAccountCategory, MainAccountCategoryLink
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9e0a015283064af2287013bccc065b4467a308c5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0d53181d63f7b362662d993e21671e9b685b5dfe
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4443903"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4968427"
 ---
 # <a name="set-up-main-account-categories"></a>Fő számla kategóriáinak beállítása
 
@@ -42,6 +41,3 @@ Ez a témakör bemutatja, hogyan állítsa be a főszámla-kategóriákat. A Fő
 3. A fő számlák kiválasztásához jelölje be, vagy törölje a jelölést az **Összekapcsolt** elemnél.
 4. Válassza ki az **OK** lehetőséget.
 5. Válassza ki az **Igen** lehetőséget.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

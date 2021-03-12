@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: AssetBonus, AssetGroup, AssetGroupBookSetup, AssetGroupSetupBonus
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 91243a4cee44410a221902990d31a10f1805eb08
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 7fed9f09b4e37da00a5d78fa088e8814db48456b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4443898"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4968929"
 ---
 # <a name="set-up-bonus-depreciation"></a>Rendkívüli értékcsökkenés beállítása
 
@@ -49,6 +48,3 @@ Ez az eljárás bemutatja, hogyan hozzon létre különleges értékcsökkenési
     * A Százalék vagy Összeg alapértelmezett értéke a különleges értékcsökkenési keret beállításainak megfelelően alakul.  
 8. Adjon meg egy számot a Prioritás mezőben.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
