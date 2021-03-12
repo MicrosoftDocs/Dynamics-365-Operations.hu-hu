@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: CostingVersion
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,35 +18,35 @@ ms.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2348d7721cd281bb2a1b5af007c98ce69377a412
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5339c3c4a62b94a06cbffc200ed1e9b227d6b6af
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429601"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4963788"
 ---
-#  <a name="restrictions-on-costing-versions-for-standard-costs"></a><span data-ttu-id="f93f7-103">Az elszámolóárakkal kapcsolatos költségszámítási verziókra vonatkozó korlátozások</span><span class="sxs-lookup"><span data-stu-id="f93f7-103">Restrictions on costing versions for standard costs</span></span>
+#  <a name="restrictions-on-costing-versions-for-standard-costs"></a><span data-ttu-id="06156-103">Az elszámolóárakkal kapcsolatos költségszámítási verziókra vonatkozó korlátozások</span><span class="sxs-lookup"><span data-stu-id="06156-103">Restrictions on costing versions for standard costs</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="f93f7-104">Ez a témakör az elszámolóárakra vonatkozó költségszámítási verziókra érvényes korlátozásokat mutatja be.</span><span class="sxs-lookup"><span data-stu-id="f93f7-104">This topic describes the restrictions that apply to a costing version for standard costs.</span></span> 
+<span data-ttu-id="06156-104">Ez a témakör az elszámolóárakra vonatkozó költségszámítási verziókra érvényes korlátozásokat mutatja be.</span><span class="sxs-lookup"><span data-stu-id="06156-104">This topic describes the restrictions that apply to a costing version for standard costs.</span></span> 
 
-<span data-ttu-id="f93f7-105">A következő korlátozások segítenek biztosítani a szabványos költségszámítási elvek alkalmazását:</span><span class="sxs-lookup"><span data-stu-id="f93f7-105">The following restrictions help guarantee adherence to standard costing principles:</span></span>
+<span data-ttu-id="06156-105">A következő korlátozások segítenek biztosítani a szabványos költségszámítási elvek alkalmazását:</span><span class="sxs-lookup"><span data-stu-id="06156-105">The following restrictions help guarantee adherence to standard costing principles:</span></span>
 
--  <span data-ttu-id="f93f7-106">A cikkek költségében szerepelnie kell a költségeknek.</span><span class="sxs-lookup"><span data-stu-id="f93f7-106">Charges must be included in an item's cost.</span></span> <span data-ttu-id="f93f7-107">A legyártott cikkhez tartozó költség az anyagjegyzékben és az útvonaladatokban szereplő amortizált állandó költséget képviseli.</span><span class="sxs-lookup"><span data-stu-id="f93f7-107">The charges for a manufactured item represent the amortized constant costs in the bill of materials (BOM) and route information.</span></span> <span data-ttu-id="f93f7-108">Emiatt a költségeknek szerepelnie kell az egységköltségben.</span><span class="sxs-lookup"><span data-stu-id="f93f7-108">Therefore, the charges must be included in the unit cost.</span></span> <span data-ttu-id="f93f7-109">A beszerzett cikkek költsége szintén szerepel a cikk egységköltségében.</span><span class="sxs-lookup"><span data-stu-id="f93f7-109">The charges for a purchased item are also included in the item's unit cost.</span></span>
+-  <span data-ttu-id="06156-106">A cikkek költségében szerepelnie kell a költségeknek.</span><span class="sxs-lookup"><span data-stu-id="06156-106">Charges must be included in an item's cost.</span></span> <span data-ttu-id="06156-107">A legyártott cikkhez tartozó költség az anyagjegyzékben és az útvonaladatokban szereplő amortizált állandó költséget képviseli.</span><span class="sxs-lookup"><span data-stu-id="06156-107">The charges for a manufactured item represent the amortized constant costs in the bill of materials (BOM) and route information.</span></span> <span data-ttu-id="06156-108">Emiatt a költségeknek szerepelnie kell az egységköltségben.</span><span class="sxs-lookup"><span data-stu-id="06156-108">Therefore, the charges must be included in the unit cost.</span></span> <span data-ttu-id="06156-109">A beszerzett cikkek költsége szintén szerepel a cikk egységköltségében.</span><span class="sxs-lookup"><span data-stu-id="06156-109">The charges for a purchased item are also included in the item's unit cost.</span></span>
 
--  <span data-ttu-id="f93f7-110">A legyártott cikkek önköltségi árszámításának az elszámolóárakhoz tartozó költségszámítási verzióban szereplő költségrekordokon kell alapulnia.</span><span class="sxs-lookup"><span data-stu-id="f93f7-110">Calculation of standard costs for manufactured items must be based on the cost records in a costing version for standard costs.</span></span> <span data-ttu-id="f93f7-111">Költségadatok egyéb forrásait csak tervezett költségekhez tartozó költségszámítási verzióhoz lehet felhasználni, például beszerzett cikkekre vonatkozó, a beszerzési árakat meghatározó kereskedelmi megállapodások esetében.</span><span class="sxs-lookup"><span data-stu-id="f93f7-111">Alternative sources of cost data can be used only with a costing version for planned costs, such as purchase price trade agreements for purchased items.</span></span> <span data-ttu-id="f93f7-112">Az alternatív költségadatforrásokat az anyagjegyzék-számítási csoport határozza meg.</span><span class="sxs-lookup"><span data-stu-id="f93f7-112">Alternative sources of cost data are defined by the BOM calculation group.</span></span>
+-  <span data-ttu-id="06156-110">A legyártott cikkek önköltségi árszámításának az elszámolóárakhoz tartozó költségszámítási verzióban szereplő költségrekordokon kell alapulnia.</span><span class="sxs-lookup"><span data-stu-id="06156-110">Calculation of standard costs for manufactured items must be based on the cost records in a costing version for standard costs.</span></span> <span data-ttu-id="06156-111">Költségadatok egyéb forrásait csak tervezett költségekhez tartozó költségszámítási verzióhoz lehet felhasználni, például beszerzett cikkekre vonatkozó, a beszerzési árakat meghatározó kereskedelmi megállapodások esetében.</span><span class="sxs-lookup"><span data-stu-id="06156-111">Alternative sources of cost data can be used only with a costing version for planned costs, such as purchase price trade agreements for purchased items.</span></span> <span data-ttu-id="06156-112">Az alternatív költségadatforrásokat az anyagjegyzék-számítási csoport határozza meg.</span><span class="sxs-lookup"><span data-stu-id="06156-112">Alternative sources of cost data are defined by the BOM calculation group.</span></span>
 
--  <span data-ttu-id="f93f7-113">Az anyagjegyzék-számításokhoz egyszintű alábontást kell alkalmazni.</span><span class="sxs-lookup"><span data-stu-id="f93f7-113">BOM calculations must be performed in a single-level explosion mode.</span></span>
+-  <span data-ttu-id="06156-113">Az anyagjegyzék-számításokhoz egyszintű alábontást kell alkalmazni.</span><span class="sxs-lookup"><span data-stu-id="06156-113">BOM calculations must be performed in a single-level explosion mode.</span></span>
 
-<span data-ttu-id="f93f7-114">Az elszámolóárakhoz tartozó cikk-költség adatokat át lehet másolni az elszámolóárakat vagy tervezett költségeket tartalmazó másik költségszámítási verzióba.</span><span class="sxs-lookup"><span data-stu-id="f93f7-114">The item cost data for standard costs can be copied to another costing version that contains standard costs or planned costs.</span></span> <span data-ttu-id="f93f7-115">A tervezett költségekre vonatkozó cikk-költség adatokat azonban olyan költségszámítási verzióba nem lehet másolni, amely elszámolóárakat tartalmaz, mert a témakörben feljebb ismertetett megkötések nem érvényesek a tervezett költségekre.</span><span class="sxs-lookup"><span data-stu-id="f93f7-115">However, the item cost data for planned costs can't be copied to a cost version that contains standard costs, because the restrictions that are listed earlier in this topic don't apply to planned costs.</span></span>
+<span data-ttu-id="06156-114">Az elszámolóárakhoz tartozó cikk-költség adatokat át lehet másolni az elszámolóárakat vagy tervezett költségeket tartalmazó másik költségszámítási verzióba.</span><span class="sxs-lookup"><span data-stu-id="06156-114">The item cost data for standard costs can be copied to another costing version that contains standard costs or planned costs.</span></span> <span data-ttu-id="06156-115">A tervezett költségekre vonatkozó cikk-költség adatokat azonban olyan költségszámítási verzióba nem lehet másolni, amely elszámolóárakat tartalmaz, mert a témakörben feljebb ismertetett megkötések nem érvényesek a tervezett költségekre.</span><span class="sxs-lookup"><span data-stu-id="06156-115">However, the item cost data for planned costs can't be copied to a cost version that contains standard costs, because the restrictions that are listed earlier in this topic don't apply to planned costs.</span></span>
 
-<a name="related-topics"></a><span data-ttu-id="f93f7-116">Kapcsolódó témakörök</span><span class="sxs-lookup"><span data-stu-id="f93f7-116">Related topics</span></span>
+<a name="related-topics"></a><span data-ttu-id="06156-116">Kapcsolódó témakörök</span><span class="sxs-lookup"><span data-stu-id="06156-116">Related topics</span></span>
 --------
 
-[<span data-ttu-id="f93f7-117">Költségszámítási verziók áttekintése</span><span class="sxs-lookup"><span data-stu-id="f93f7-117">Costing versions overview</span></span>](costing-versions.md)
+[<span data-ttu-id="06156-117">Költségszámítási verziók áttekintése</span><span class="sxs-lookup"><span data-stu-id="06156-117">Costing versions overview</span></span>](costing-versions.md)
 
-[<span data-ttu-id="f93f7-118">Az elszámolóárak frissítése nem gyártási környezetben</span><span class="sxs-lookup"><span data-stu-id="f93f7-118">Update standard costs in a non-manufacturing environment</span></span>](update-standard-costs-non-manufacturing-environment.md)
+[<span data-ttu-id="06156-118">Az elszámolóárak frissítése nem gyártási környezetben</span><span class="sxs-lookup"><span data-stu-id="06156-118">Update standard costs in a non-manufacturing environment</span></span>](update-standard-costs-non-manufacturing-environment.md)
 
-[<span data-ttu-id="f93f7-119">Felkészülés a gyártott cikkek elszámolóárának karbantartására</span><span class="sxs-lookup"><span data-stu-id="f93f7-119">Prepare to maintain standard costs for manufactured items</span></span>](update-standard-costs-manufacturing-environment.md)
+[<span data-ttu-id="06156-119">Felkészülés a gyártott cikkek elszámolóárának karbantartására</span><span class="sxs-lookup"><span data-stu-id="06156-119">Prepare to maintain standard costs for manufactured items</span></span>](update-standard-costs-manufacturing-environment.md)
 

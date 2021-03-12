@@ -11,59 +11,58 @@ ms.technology: ''
 ms.search.form: RetailSPOnlineStoreDetailPage, SysLookupMultiSelectGrid, DimensionLookup, OMHierarchyManager, HierarchyDesigner, OMNodeSelection, HierarchyPublishAndCloseForm
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f15b035c01801041d637a2d315d8a3ddcc9d6540
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8e92e28c721692ed92fa931ed899c48678622349
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412915"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4964794"
 ---
-# <a name="create-online-channel-and-define-channel-attributes"></a><span data-ttu-id="ccaa9-103">Online csatorna létrehozása és a csatorna attribútumainak meghatározása</span><span class="sxs-lookup"><span data-stu-id="ccaa9-103">Create online channel and define channel attributes</span></span>
+# <a name="create-online-channel-and-define-channel-attributes"></a><span data-ttu-id="46bb2-103">Online csatorna létrehozása és a csatorna attribútumainak meghatározása</span><span class="sxs-lookup"><span data-stu-id="46bb2-103">Create online channel and define channel attributes</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="ccaa9-104">Ezzel az eljárással bemutatja, hogyan hozhat létre új online csatornát, és ezt hogyan adhatja hozzá a szervezeti hierarchiához.</span><span class="sxs-lookup"><span data-stu-id="ccaa9-104">This procedure walks through creating a new online channel and adding it to the organization hierarchy.</span></span> <span data-ttu-id="ccaa9-105">Új online csatorna létrehozása előtt létre kell hoznia a szervezeti hierarchiát.</span><span class="sxs-lookup"><span data-stu-id="ccaa9-105">You must create the organization hierarchy before you can create a new online channel.</span></span> <span data-ttu-id="ccaa9-106">Ez az eljárás az USRT bemutatócéget használja.</span><span class="sxs-lookup"><span data-stu-id="ccaa9-106">This procedure uses the USRT demo data company.</span></span>
+<span data-ttu-id="46bb2-104">Ezzel az eljárással bemutatja, hogyan hozhat létre új online csatornát, és ezt hogyan adhatja hozzá a szervezeti hierarchiához.</span><span class="sxs-lookup"><span data-stu-id="46bb2-104">This procedure walks through creating a new online channel and adding it to the organization hierarchy.</span></span> <span data-ttu-id="46bb2-105">Új online csatorna létrehozása előtt létre kell hoznia a szervezeti hierarchiát.</span><span class="sxs-lookup"><span data-stu-id="46bb2-105">You must create the organization hierarchy before you can create a new online channel.</span></span> <span data-ttu-id="46bb2-106">Ez az eljárás az USRT bemutatócéget használja.</span><span class="sxs-lookup"><span data-stu-id="46bb2-106">This procedure uses the USRT demo data company.</span></span>
 
 
-## <a name="create-a-new-online-channel"></a><span data-ttu-id="ccaa9-107">Hozzon létre egy új online csatornát.</span><span class="sxs-lookup"><span data-stu-id="ccaa9-107">Create a new online channel</span></span>
-1. <span data-ttu-id="ccaa9-108">Nyissa meg a következőt: Kiskereskedelem és kereskedelem > Csatornák > Online áruházak.</span><span class="sxs-lookup"><span data-stu-id="ccaa9-108">Go to Retail and Commerce > Channels > Online stores.</span></span>
-2. <span data-ttu-id="ccaa9-109">Kattintson az Új elemre.</span><span class="sxs-lookup"><span data-stu-id="ccaa9-109">Click New.</span></span>
-3. <span data-ttu-id="ccaa9-110">Írjon be egy értéket a Név mezőbe.</span><span class="sxs-lookup"><span data-stu-id="ccaa9-110">In the Name field, type a value.</span></span>
-4. <span data-ttu-id="ccaa9-111">A Raktár mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="ccaa9-111">In the Warehouse field, enter or select a value.</span></span>
-5. <span data-ttu-id="ccaa9-112">Válasszon ki egy lehetőséget az Üzlet időzónája mezőben.</span><span class="sxs-lookup"><span data-stu-id="ccaa9-112">In the Store time zone field, select an option.</span></span>
-6. <span data-ttu-id="ccaa9-113">Adjon meg vagy válasszon ki egy értéket az Alapértelmezett vevő mezőben.</span><span class="sxs-lookup"><span data-stu-id="ccaa9-113">In the Default customer field, enter or select a value.</span></span>
-7. <span data-ttu-id="ccaa9-114">Adjon meg vagy válasszon ki egy értéket a Vevői címjegyzék mezőben.</span><span class="sxs-lookup"><span data-stu-id="ccaa9-114">In the Customer address book field, enter or select a value.</span></span>
-8. <span data-ttu-id="ccaa9-115">Adjon meg vagy válasszon ki egy értéket a Fizetési feltételek mezőben.</span><span class="sxs-lookup"><span data-stu-id="ccaa9-115">In the Terms of payment field, enter or select a value.</span></span>
-9. <span data-ttu-id="ccaa9-116">A Fizetési mód mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="ccaa9-116">In the Method of payment field, enter or select a value.</span></span>
-10. <span data-ttu-id="ccaa9-117">Adjon meg vagy válasszon ki egy értéket az E-mail értesítési profil mezőben.</span><span class="sxs-lookup"><span data-stu-id="ccaa9-117">In the Email notification profile field, enter or select a value.</span></span>
-11. <span data-ttu-id="ccaa9-118">Bontsa ki a Pénzügyi dimenziók szakaszt.</span><span class="sxs-lookup"><span data-stu-id="ccaa9-118">Expand the Financial dimensions section.</span></span>
-12. <span data-ttu-id="ccaa9-119">Adjon meg vagy válasszon ki egy értéket az Üzleti egység mezőben.</span><span class="sxs-lookup"><span data-stu-id="ccaa9-119">In the BusinessUnit field, enter or select a value.</span></span>
-    * <span data-ttu-id="ccaa9-120">Hasonlóképpen állítsa be az értéket minden más alapértelmezett dimenzióra vonatkozóan.</span><span class="sxs-lookup"><span data-stu-id="ccaa9-120">Similarly set the value for all the other default dimensions.</span></span>  
-13. <span data-ttu-id="ccaa9-121">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="ccaa9-121">Click Save.</span></span>
+## <a name="create-a-new-online-channel"></a><span data-ttu-id="46bb2-107">Hozzon létre egy új online csatornát.</span><span class="sxs-lookup"><span data-stu-id="46bb2-107">Create a new online channel</span></span>
+1. <span data-ttu-id="46bb2-108">Nyissa meg a következőt: Kiskereskedelem és kereskedelem > Csatornák > Online áruházak.</span><span class="sxs-lookup"><span data-stu-id="46bb2-108">Go to Retail and Commerce > Channels > Online stores.</span></span>
+2. <span data-ttu-id="46bb2-109">Kattintson az Új elemre.</span><span class="sxs-lookup"><span data-stu-id="46bb2-109">Click New.</span></span>
+3. <span data-ttu-id="46bb2-110">Írjon be egy értéket a Név mezőbe.</span><span class="sxs-lookup"><span data-stu-id="46bb2-110">In the Name field, type a value.</span></span>
+4. <span data-ttu-id="46bb2-111">A Raktár mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="46bb2-111">In the Warehouse field, enter or select a value.</span></span>
+5. <span data-ttu-id="46bb2-112">Válasszon ki egy lehetőséget az Üzlet időzónája mezőben.</span><span class="sxs-lookup"><span data-stu-id="46bb2-112">In the Store time zone field, select an option.</span></span>
+6. <span data-ttu-id="46bb2-113">Adjon meg vagy válasszon ki egy értéket az Alapértelmezett vevő mezőben.</span><span class="sxs-lookup"><span data-stu-id="46bb2-113">In the Default customer field, enter or select a value.</span></span>
+7. <span data-ttu-id="46bb2-114">Adjon meg vagy válasszon ki egy értéket a Vevői címjegyzék mezőben.</span><span class="sxs-lookup"><span data-stu-id="46bb2-114">In the Customer address book field, enter or select a value.</span></span>
+8. <span data-ttu-id="46bb2-115">Adjon meg vagy válasszon ki egy értéket a Fizetési feltételek mezőben.</span><span class="sxs-lookup"><span data-stu-id="46bb2-115">In the Terms of payment field, enter or select a value.</span></span>
+9. <span data-ttu-id="46bb2-116">A Fizetési mód mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="46bb2-116">In the Method of payment field, enter or select a value.</span></span>
+10. <span data-ttu-id="46bb2-117">Adjon meg vagy válasszon ki egy értéket az E-mail értesítési profil mezőben.</span><span class="sxs-lookup"><span data-stu-id="46bb2-117">In the Email notification profile field, enter or select a value.</span></span>
+11. <span data-ttu-id="46bb2-118">Bontsa ki a Pénzügyi dimenziók szakaszt.</span><span class="sxs-lookup"><span data-stu-id="46bb2-118">Expand the Financial dimensions section.</span></span>
+12. <span data-ttu-id="46bb2-119">Adjon meg vagy válasszon ki egy értéket az Üzleti egység mezőben.</span><span class="sxs-lookup"><span data-stu-id="46bb2-119">In the BusinessUnit field, enter or select a value.</span></span>
+    * <span data-ttu-id="46bb2-120">Hasonlóképpen állítsa be az értéket minden más alapértelmezett dimenzióra vonatkozóan.</span><span class="sxs-lookup"><span data-stu-id="46bb2-120">Similarly set the value for all the other default dimensions.</span></span>  
+13. <span data-ttu-id="46bb2-121">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="46bb2-121">Click Save.</span></span>
 
-## <a name="add-the-online-channel-to-organization-hierarchy"></a><span data-ttu-id="ccaa9-122">Az online csatorna hozzáadása szervezeti hierarchiához</span><span class="sxs-lookup"><span data-stu-id="ccaa9-122">Add the online channel to organization hierarchy</span></span>
-1. <span data-ttu-id="ccaa9-123">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="ccaa9-123">Close the page.</span></span>
-2. <span data-ttu-id="ccaa9-124">Ugrás a Szervezet felügyelete > Szervezetek > Szervezeti hierarchiák menüpontokra.</span><span class="sxs-lookup"><span data-stu-id="ccaa9-124">Go to Organization administration > Organizations > Organization hierarchies.</span></span>
-3. <span data-ttu-id="ccaa9-125">Keresse meg és jelölje ki a kívánt rekordot a listán.</span><span class="sxs-lookup"><span data-stu-id="ccaa9-125">In the list, find and select the desired record.</span></span>
-4. <span data-ttu-id="ccaa9-126">Kattintson a Megtekintés menüpontra.</span><span class="sxs-lookup"><span data-stu-id="ccaa9-126">Click View.</span></span>
-5. <span data-ttu-id="ccaa9-127">Kattintson a Szerkesztés lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="ccaa9-127">Click Edit.</span></span>
-    * <span data-ttu-id="ccaa9-128">Az új csatornát bármely hierarchia-csomópont alá beillesztheti.</span><span class="sxs-lookup"><span data-stu-id="ccaa9-128">You can select any hierarchy node under which you want to insert the new channel.</span></span>  
-6. <span data-ttu-id="ccaa9-129">Kattintson a Beszúrás lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="ccaa9-129">Click Insert.</span></span>
-7. <span data-ttu-id="ccaa9-130">Kattintson a Commerce csatorna elemre.</span><span class="sxs-lookup"><span data-stu-id="ccaa9-130">Click Commerce channel.</span></span>
-8. <span data-ttu-id="ccaa9-131">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="ccaa9-131">Click OK.</span></span>
-9. <span data-ttu-id="ccaa9-132">A Közzététel gombra kattintva megnyithatja a legördülő párbeszédablakot.</span><span class="sxs-lookup"><span data-stu-id="ccaa9-132">Click Publish to open the drop dialog.</span></span>
-10. <span data-ttu-id="ccaa9-133">Az Érvényesség dátuma mezőben adjon meg egy dátumot és időpontot.</span><span class="sxs-lookup"><span data-stu-id="ccaa9-133">In the Effective date field, enter a date and time.</span></span>
-11. <span data-ttu-id="ccaa9-134">Kattintson a Közzététel parancsra.</span><span class="sxs-lookup"><span data-stu-id="ccaa9-134">Click Publish.</span></span>
+## <a name="add-the-online-channel-to-organization-hierarchy"></a><span data-ttu-id="46bb2-122">Az online csatorna hozzáadása szervezeti hierarchiához</span><span class="sxs-lookup"><span data-stu-id="46bb2-122">Add the online channel to organization hierarchy</span></span>
+1. <span data-ttu-id="46bb2-123">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="46bb2-123">Close the page.</span></span>
+2. <span data-ttu-id="46bb2-124">Ugrás a Szervezet felügyelete > Szervezetek > Szervezeti hierarchiák menüpontokra.</span><span class="sxs-lookup"><span data-stu-id="46bb2-124">Go to Organization administration > Organizations > Organization hierarchies.</span></span>
+3. <span data-ttu-id="46bb2-125">Keresse meg és jelölje ki a kívánt rekordot a listán.</span><span class="sxs-lookup"><span data-stu-id="46bb2-125">In the list, find and select the desired record.</span></span>
+4. <span data-ttu-id="46bb2-126">Kattintson a Megtekintés menüpontra.</span><span class="sxs-lookup"><span data-stu-id="46bb2-126">Click View.</span></span>
+5. <span data-ttu-id="46bb2-127">Kattintson a Szerkesztés lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="46bb2-127">Click Edit.</span></span>
+    * <span data-ttu-id="46bb2-128">Az új csatornát bármely hierarchia-csomópont alá beillesztheti.</span><span class="sxs-lookup"><span data-stu-id="46bb2-128">You can select any hierarchy node under which you want to insert the new channel.</span></span>  
+6. <span data-ttu-id="46bb2-129">Kattintson a Beszúrás lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="46bb2-129">Click Insert.</span></span>
+7. <span data-ttu-id="46bb2-130">Kattintson a Commerce csatorna elemre.</span><span class="sxs-lookup"><span data-stu-id="46bb2-130">Click Commerce channel.</span></span>
+8. <span data-ttu-id="46bb2-131">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="46bb2-131">Click OK.</span></span>
+9. <span data-ttu-id="46bb2-132">A Közzététel gombra kattintva megnyithatja a legördülő párbeszédablakot.</span><span class="sxs-lookup"><span data-stu-id="46bb2-132">Click Publish to open the drop dialog.</span></span>
+10. <span data-ttu-id="46bb2-133">Az Érvényesség dátuma mezőben adjon meg egy dátumot és időpontot.</span><span class="sxs-lookup"><span data-stu-id="46bb2-133">In the Effective date field, enter a date and time.</span></span>
+11. <span data-ttu-id="46bb2-134">Kattintson a Közzététel parancsra.</span><span class="sxs-lookup"><span data-stu-id="46bb2-134">Click Publish.</span></span>
 
-## <a name="configure-orders-for-near-real-time-notification"></a><span data-ttu-id="ccaa9-135">Megrendelések konfigurálása a szinte valós idejű értesítésekhez</span><span class="sxs-lookup"><span data-stu-id="ccaa9-135">Configure orders for near real-time notification</span></span>
-1. <span data-ttu-id="ccaa9-136">Menjen a Kiskereskedelem és kereskedelem > Központ beállítása > Paraméterek > Kiskereskedelmi paraméterek lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="ccaa9-136">Go to Retail and Commerce  > Headquarters setup > Parameters > Commerce parameters.</span></span>
-2. <span data-ttu-id="ccaa9-137">A Valós idejű szolgáltatás használata az elektronikus kereskedelmi megrendelés létrehozásához beállítást állítsa „Igen” értékre.</span><span class="sxs-lookup"><span data-stu-id="ccaa9-137">Set Use realtime service for eCommerce order creation to "Yes".</span></span>
-3. <span data-ttu-id="ccaa9-138">Futtassa a 1070 elosztási ütemezést a módosítások szinkronizálására a csatornaadatbázisba.</span><span class="sxs-lookup"><span data-stu-id="ccaa9-138">Run the 1070 distribution schedule to sync changes to the channel database.</span></span> 
+## <a name="configure-orders-for-near-real-time-notification"></a><span data-ttu-id="46bb2-135">Megrendelések konfigurálása a szinte valós idejű értesítésekhez</span><span class="sxs-lookup"><span data-stu-id="46bb2-135">Configure orders for near real-time notification</span></span>
+1. <span data-ttu-id="46bb2-136">Menjen a Kiskereskedelem és kereskedelem > Központ beállítása > Paraméterek > Kiskereskedelmi paraméterek lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="46bb2-136">Go to Retail and Commerce  > Headquarters setup > Parameters > Commerce parameters.</span></span>
+2. <span data-ttu-id="46bb2-137">A Valós idejű szolgáltatás használata az elektronikus kereskedelmi megrendelés létrehozásához beállítást állítsa „Igen” értékre.</span><span class="sxs-lookup"><span data-stu-id="46bb2-137">Set Use realtime service for eCommerce order creation to "Yes".</span></span>
+3. <span data-ttu-id="46bb2-138">Futtassa a 1070 elosztási ütemezést a módosítások szinkronizálására a csatornaadatbázisba.</span><span class="sxs-lookup"><span data-stu-id="46bb2-138">Run the 1070 distribution schedule to sync changes to the channel database.</span></span> 
 
 
