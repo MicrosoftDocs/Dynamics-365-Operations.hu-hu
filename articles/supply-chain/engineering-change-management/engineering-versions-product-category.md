@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: EngChgLookupDynastring, EngChgProductVersionNumberRule, EngChgEcmProductRoute, EngChgEcmRequestProducts, EngChgEcmProductRoute, EngChgEcmProductPreview,EngChgEcmProductBOMItemIdLookup, EngChgEcmProductBOMConsistOf, EngChgEcmProductCreate, EngChgEcmProductLookup, EngChgProductVersionPrCompany, ngChgProductTypeLookup, EngChgProductType, EngChgProductItemPart, EngChgProductItem, EngChgEcmCategory, EngChgEcmBomDesignerEditBom, EngChgEcmBomDesigner, EngChgEcmBOMCopyDialog
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 3eb5b5c4304b393008ecc5f5ff5a663295ed0d22
-ms.sourcegitcommit: 5f21cfde36c43887ec209bba4a12b830a1746fcf
+ms.openlocfilehash: c15dcd0adfcf9b9022a919bd516dcf5117ea5041
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "4429965"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4987479"
 ---
 # <a name="engineering-versions-and-engineering-product-categories"></a>Mérnöki változatok és mérnöki termékkategóriák
 
@@ -162,6 +161,3 @@ A mérnöki anyagjegyzékek és az útvonalak abból a mérnöki verzióból jö
 Olyan termékek esetében, ahol a *verzió* termékdimenzióját használja (a tranzakciókra gyakorolt logisztikai hatással együtt), a verzió hozzáadódik az anyagjegyzékekhez és az útvonalakhoz is. Ez a viselkedés segít megkülönböztetni az egymást követő verziók anyagjegyzékeit és útvonalait, függetlenül az **Érvényesség kikényszerítése** beállítástól.
 
 Olyan termékek esetében, ahol nem a *verzió* termékdimenzióját használja (a tranzakciókra gyakorolt logisztikai hatás nélkül), a verzió nem adódik hozzá az anyagjegyzékekhez vagy az útvonalakhoz. Ezért nem lesz különbség az egymást követő verziók anyagjegyzékei és útvonalai között. Ebben az esetben erősen ajánlott az **Érvényesség kikényszerítése** beállítás *Igen* értékre való beállítása. Ily módon megakadályozhatja, hogy a mérnöki verziók átfedésben legyenek, és aktiválhatja az újabb verzió anyagjegyzékét és útvonalát anélkül, hogy először inaktiválná az előző verzió anyagjegyzékét és útvonalát. Ha ebben az esetben az **Érvényesség kikényszerítése** beállítást *Igen* értékre állítja, a legújabb verzió aktiválása előtt manuálisan inaktiválnia kell a régebbi verziók anyagjegyzékeit és útvonalait.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

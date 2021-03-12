@@ -10,16 +10,15 @@ ms.service: Dynamics365Operations
 ms.technology: ''
 audience: Application user
 ms.reviewer: margoc
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 4490cd5e9ad9696fd4ef512e2671894b0e22c972
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 65f3023b9e2c71cf8bbfb0eba0362f437381f0df
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429356"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4987504"
 ---
 # <a name="learning-catalog-for-business-decision-makers-considering-dynamics-365-supply-chain-management"></a>Képzési katalógus a Dynamics 365 Supply Chain Management beszerzését fontolgató üzleti döntéshozók számára
 
@@ -42,6 +41,3 @@ A következő katalógus az alapismeretekből a meghatározott tartományokra, a
 | Tartalom  | Leírás  | Formátum  |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
 | [Dynamics 365 alapok](https://docs.microsoft.com/learn/certifications/d365-fundamentals?wt.mc_id=learningredirect_certs-web-wwl) | Bizonyítsa be, hogy érti a Microsoft Dynamics 365 Power Platform lényegét; felhőalapú fogalmak, licencelési beállítások, és telepítési és kiadási beállítások. | Vizsga; a költség régiónként változik |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

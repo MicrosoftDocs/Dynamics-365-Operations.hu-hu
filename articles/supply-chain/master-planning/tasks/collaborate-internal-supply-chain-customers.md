@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: DefaultDashboard, ReqCreatePlanWorkspace, ReqTransPlanCard, ReqOutboundIntercompanyDemand
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 84c42e550d51e40b7f777c3da67ed765519ddfd0
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f39f487ea29bf923c82c08aff56ff5350da0810e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429540"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4987229"
 ---
 # <a name="collaborate-with-internal-supply-chain-customers"></a>Együttműködés a belső ellátási lánc vevőivel
 
@@ -43,6 +42,3 @@ Ez az eljárás bemutatja, hogyan tekinthetők meg a vállalatközi szállítók
 8. Bontsa ki a Felfelé irányuló igény részletes adatai részt.
     * Ebben a szakaszban a kereslet jövőbeli teljesítésének részleteit láthatja. Lehet, hogy meg kell várnia, amíg az alaptervezés a beszállítónál lefut, mielőtt további információkat láthatna itt.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

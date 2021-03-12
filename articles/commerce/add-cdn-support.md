@@ -10,19 +10,18 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 0e888fca4a5401f1df6e61b10358489846ad4b0e
-ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
+ms.openlocfilehash: 1d9482a45cb8f2ea52e7f58d55e30cfe56694d04
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "4517208"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4985954"
 ---
 # <a name="add-support-for-a-content-delivery-network-cdn"></a>Tartalomkézbesítési hálózat (CDN) támogatásának hozzáadása
 
@@ -152,7 +151,7 @@ A CDN-nek most már helyesen konfiguráltnak kell lennie, hogy használható leg
 
 [Dynamics 365 Commerce webhely társítása online csatornával](associate-site-online-store.md)
 
-[Robots.txt fájlok kezelése](manage-robots-txt-files.md)
+[robots.txt fájlok kezelése](manage-robots-txt-files.md)
 
 [URL-átirányítások tömeges feltöltése](upload-bulk-redirects.md)
 
@@ -163,6 +162,3 @@ A CDN-nek most már helyesen konfiguráltnak kell lennie, hogy használható leg
 [Több B2C-bérlő konfigurálása egy Commerce környezetben](configure-multi-B2C-tenants.md)
 
 [Helyalapú áruházészlelés engedélyezése](enable-store-detection.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

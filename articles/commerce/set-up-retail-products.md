@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: RetailProductAndCategoryWorkspace, EcoResProductDetails
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 16181
 ms.assetid: b1b57734-1406-4ed6-8e28-21c705ee17e2
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: b2c5a8976973203a943a2cec7658a2998c54f279
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f881e8715d4a62bc753aefa0beebaf0cceafcc77
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412939"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4985711"
 ---
 # <a name="set-up-retail-products"></a>Retail termékek beállítása
 
@@ -40,6 +39,3 @@ Mielőtt kiskereskedelmi értékesítésre kínálna termékeket kereskedelmi cs
 4. **Termékek hozzáadása szortimentekhez.** Egy szortiment felel egy csatornákban kínált termékkollekciónak. Megadhat egy vagy több szortimentet, és minden termék egy vagy több szortimenthez rendelhető hozzá. Termékek csatornákhoz való hozzárendeléséhez a szortimenteket hozzá kell rendelni a csatornákhoz. Ha létrehoz egy szortimentet, hozzáadhat termékeket, ha azokat még nem adták ki jogi személynek. Mielőtt azonban a termékeket a csatornák számára elérhetővé teheti, ki kell adnia őket egy jogi személy számára.
 5. **Termékek hozzáadása a navigációs hierarchiákhoz.** Termékeket a Commerce navigációs hierarchiájában kategorizálni kell, hogy azok tallózhatók legyenek online vagy egy pénztárnál (POS).
 6. **Termékek hozzáadása a katalógusokhoz.** Annak ellenére, hogy ez a lépés nem kötelező a POS-hez, az online áruház esetében szükséges, hogy a termékek szerepeljenek legalább egy katalógusban.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

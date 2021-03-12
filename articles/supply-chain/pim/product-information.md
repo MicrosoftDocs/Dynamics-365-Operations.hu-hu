@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: EcoResProductMaintainWorkspace, EcoResProductListPage, EcoResProductVariantMaintainWorkspace, EcoResProductVariantPerCompanyImagePart, EcoResProductRelationType,EcoResProductAvailabilityPart,  EcoResProductReleasedSelect, EcoResProductLookup, EcoResProductVariantsPendingReleaseFormPart, EcoResProductSearchLookup, EcoResProductNumberRename, EcoResDimensionBasedConfigWorkspace, EcoResProductVariantImagePart, EcoResProductImagePart, EcoResProductVariantsPerCompanyPart, InventItemIdLookupByDefaultOrderSetting, EcoResProductReleaseSessions, EcoResProductVariantMaintainWorkspaceConfiguration, EcoResProductProcessManufacturingWorkspaceConfiguration, EcoResProductMasterVariantsPart, EcoResProductDiscreteManufacturingWorkspaceConfiguration, EcoResProductVariantAvailabilityPart, EcoResProductInformationFactBox, EcoResProductLookupTest, EcoResProductImageTest, EcoResProductReleasedRecentlyCreatedFormPart, EcoResPhysicalProductDimensions, PdsMRCRegulatedListItem, EcoResProductAvailabilityPart, PdsMRCRestrictionList, InventItemIdLookupAllocationId, EcoResProductAvailability, EcoResProductEntityAttributeTableFieldAssociation, EcoResProductImagePart, EcoResProductRelation, EcoResProductReleaseAddProduct, EcoResProductPerCompanyListPage, EcoResProductParameters, PdsMRCRestrictedItemByCountryState, EngChgCasePreview, InventTablePreview, PdsMRCItemDetails, EngChgCaseAssociate, PdsMRCCustomerHistory, PdsMRCVendorHistory, PdsMRCRestrictedCountryStateByItem, InventItemIdGroupLookup, InventLocationLookup, PdsMRCValidityIntervalbyCountry, PdsMRCValidityIntervalbyCountry, PdsMRCEventTracker, PdsMRCReportingCountry, PdsMRCDocument, PdsMRCReportingList, PdsMRCItemCAS, GraphicsTestForm, EngChgPicklist
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 97e1712e38247c996af11bef051a5b1d9239f0c3
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 18b371494248c8b8f395996c786bb6bf7a54a6de
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527386"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4987204"
 ---
 # <a name="product-information-overview"></a>Termékek adatainak áttekintése
 
@@ -59,7 +58,7 @@ A terméket elsősorban a termékszáma, a neve és a leírása határozza meg. 
 
 A termékdefiníció a Supply Chain Management rendszerben hozható létre. Importálható a termék életciklus-kezelési (PLM), a termékadatok kezelési (PDM) vagy a termékinformációk kezelési (PIM) rendszereiből. Ha a Supply Chain Management több példánya fut párhuzamosan, általában egy példány szolgál a többi példány termékadatainak alapjául. Ezt a megközelítést támogatja nagy számú adatkészlet, amely lehetővé teszi a termékdefiníciós adatok exportálását és importálását egyik példányból a másikba.
 
-A termékadatok sok példányban történő elosztásának támogatásához a Supply Chain Management rendszer lehetővé teszi a Common Data Service használatát. A termékdefiníciók exportálhatók a Supply Chain Management egy példányából a Common Data Service szolgáltatásba. A termékdefiníciók felhasználhatók más üzleti alkalmazások, például a Dynamics 365 Sales termékadatokkal történő ellátására.
+A termékadatok sok példányban történő elosztásának támogatásához a Supply Chain Management rendszer lehetővé teszi a Microsoft Dataverse használatát. A termékdefiníciók exportálhatók a Supply Chain Management egy példányából a Microsoft Dataverse szolgáltatásba. A termékdefiníciók felhasználhatók más üzleti alkalmazások, például a Dynamics 365 Sales termékadatokkal történő ellátására.
 
 Vegye figyelembe, hogy a dinamikus és aktív szervezeteknél a termékinformációs adatok naponta változnak. Ezért a pontos és aktuális termékadatok karbantartása önmagában kritikus üzleti folyamat.
 
@@ -96,6 +95,3 @@ A munkaterület összegző lapokból és két listából áll. A **Nyitott esete
 ### <a name="manually-creating-a-new-released-product"></a>Újonnan kiadott termék manuális létrehozása
 
 Manuálisan hozhat létre egy kiadott terméket egyetlen futtatásban a szervezet üzleti folyamataitól attól függően, valamint attól függően, hogy milyen szabályokat alkalmaz a funkció használatával kapcsolatban. Ez a funkció létrehoz egy új terméket, és automatikusan kiadja azt az aktuális jogi személynek. Új termék létrehozásához kattintson a **Kiadott termékek** lehetőségre a **Kiadott termék karbantartása** munkaterületen vagy a **Kiadott termék** listaoldalon.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
