@@ -11,94 +11,93 @@ ms.technology: ''
 ms.search.form: SMAServiceOrderTable, SMAAgreementTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 51cfdb94a368df9e7082af3c768c79df44000342
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f2c10990f96fecf55e005650257f83c28423203b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429545"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5001409"
 ---
-# <a name="create-service-orders-manually"></a><span data-ttu-id="b1fe0-103">Szervizrendelések létrehozása manuálisan</span><span class="sxs-lookup"><span data-stu-id="b1fe0-103">Create service orders manually</span></span>    
+# <a name="create-service-orders-manually"></a><span data-ttu-id="de847-103">Szervizrendelések létrehozása manuálisan</span><span class="sxs-lookup"><span data-stu-id="de847-103">Create service orders manually</span></span>    
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="b1fe0-104">Szervizrendeléseket a szolgáltatási szerződésből vagy a **Szervizrendelések** képernyőn lehet manuálisan létrehozni.</span><span class="sxs-lookup"><span data-stu-id="b1fe0-104">You can create service orders manually by using a service agreement or by using the **Service orders** form.</span></span> <span data-ttu-id="b1fe0-105">Projektekből is létre lehet hozni szervizrendelést.</span><span class="sxs-lookup"><span data-stu-id="b1fe0-105">You can also create a service order from a project.</span></span>
+<span data-ttu-id="de847-104">Szervizrendeléseket a szolgáltatási szerződésből vagy a **Szervizrendelések** képernyőn lehet manuálisan létrehozni.</span><span class="sxs-lookup"><span data-stu-id="de847-104">You can create service orders manually by using a service agreement or by using the **Service orders** form.</span></span> <span data-ttu-id="de847-105">Projektekből is létre lehet hozni szervizrendelést.</span><span class="sxs-lookup"><span data-stu-id="de847-105">You can also create a service order from a project.</span></span>
 
 > [!TIP]
-> <P><span data-ttu-id="b1fe0-106">Automatizált folyamatok segítségével hozhat létre szervizrendeléseket.</span><span class="sxs-lookup"><span data-stu-id="b1fe0-106">You can use automated processes to create service orders.</span></span> 
+> <P><span data-ttu-id="de847-106">Automatizált folyamatok segítségével hozhat létre szervizrendeléseket.</span><span class="sxs-lookup"><span data-stu-id="de847-106">You can use automated processes to create service orders.</span></span> 
 
-## <a name="create-a-service-order-manually-from-a-service-agreement"></a><span data-ttu-id="b1fe0-107">Szervizrendelés manuális létrehozása egy szolgáltatási szerződésből</span><span class="sxs-lookup"><span data-stu-id="b1fe0-107">Create a service order manually from a service agreement</span></span>
+## <a name="create-a-service-order-manually-from-a-service-agreement"></a><span data-ttu-id="de847-107">Szervizrendelés manuális létrehozása egy szolgáltatási szerződésből</span><span class="sxs-lookup"><span data-stu-id="de847-107">Create a service order manually from a service agreement</span></span>
 
-1.  <span data-ttu-id="b1fe0-108">Kattintson a **Szolgáltatáskezelés** \> **Közös** \> **Szolgáltatási szerződések** \> **Szolgáltatási szerződések** lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="b1fe0-108">Click **Service management** \> **Common** \> **Service agreements** \> **Service agreements**.</span></span>
+1.  <span data-ttu-id="de847-108">Kattintson a **Szolgáltatáskezelés** \> **Közös** \> **Szolgáltatási szerződések** \> **Szolgáltatási szerződések** lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="de847-108">Click **Service management** \> **Common** \> **Service agreements** \> **Service agreements**.</span></span>
 
-2.  <span data-ttu-id="b1fe0-109">Válasszon ki egy szolgáltatási szerződést, vagy hozzon létre egy új szolgáltatási szerződést.</span><span class="sxs-lookup"><span data-stu-id="b1fe0-109">Select a service agreement or create a new service agreement.</span></span>
+2.  <span data-ttu-id="de847-109">Válasszon ki egy szolgáltatási szerződést, vagy hozzon létre egy új szolgáltatási szerződést.</span><span class="sxs-lookup"><span data-stu-id="de847-109">Select a service agreement or create a new service agreement.</span></span>
 
-3.  <span data-ttu-id="b1fe0-110">Kattintson a **Szállítás** lapra, és a **Létrehozás** csoportban kattintson a **Tervezett szervizrendelések** lehetőségre a **Szervizrendelések létrehozása** képernyő megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="b1fe0-110">Click the **Deliver** tab and in the **Create** group click **Planned service orders** to open the **Create service orders** form.</span></span>
+3.  <span data-ttu-id="de847-110">Kattintson a **Szállítás** lapra, és a **Létrehozás** csoportban kattintson a **Tervezett szervizrendelések** lehetőségre a **Szervizrendelések létrehozása** képernyő megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="de847-110">Click the **Deliver** tab and in the **Create** group click **Planned service orders** to open the **Create service orders** form.</span></span>
 
-## <a name="create-a-service-order-manually-in-the-service-orders-form"></a><span data-ttu-id="b1fe0-111">Szervizrendelés manuális létrehozása a Szervizrendelések képernyőn</span><span class="sxs-lookup"><span data-stu-id="b1fe0-111">Create a service order manually in the Service orders form</span></span>
+## <a name="create-a-service-order-manually-in-the-service-orders-form"></a><span data-ttu-id="de847-111">Szervizrendelés manuális létrehozása a Szervizrendelések képernyőn</span><span class="sxs-lookup"><span data-stu-id="de847-111">Create a service order manually in the Service orders form</span></span>
 
-1.  <span data-ttu-id="b1fe0-112">Kattintson a következőkre: **Szolgáltatáskezelés** \> **Közös** \> **Szervizrendelések** \> **Szervizrendelések**.</span><span class="sxs-lookup"><span data-stu-id="b1fe0-112">Click **Service management** \> **Common** \> **Service orders** \> **Service orders**.</span></span>
+1.  <span data-ttu-id="de847-112">Kattintson a következőkre: **Szolgáltatáskezelés** \> **Közös** \> **Szervizrendelések** \> **Szervizrendelések**.</span><span class="sxs-lookup"><span data-stu-id="de847-112">Click **Service management** \> **Common** \> **Service orders** \> **Service orders**.</span></span>
 
-2.  <span data-ttu-id="b1fe0-113">Nyomja le a CTRL+N billentyűkombinációt új szervizrendelés létrehozásához.</span><span class="sxs-lookup"><span data-stu-id="b1fe0-113">Press Ctrl+N to create a new service order.</span></span>
+2.  <span data-ttu-id="de847-113">Nyomja le a CTRL+N billentyűkombinációt új szervizrendelés létrehozásához.</span><span class="sxs-lookup"><span data-stu-id="de847-113">Press Ctrl+N to create a new service order.</span></span>
 
-3.  <span data-ttu-id="b1fe0-114">Hozza létre a szervizrendelés szervizrendeléssorait.</span><span class="sxs-lookup"><span data-stu-id="b1fe0-114">Create service order lines for the service order.</span></span>
-
-> [!NOTE]
-> <P><span data-ttu-id="b1fe0-115">Ha a <STRONG>Szolgáltatáskezelés paraméterei</STRONG> képernyő <STRONG>Engedélyezés szolgáltatási szerződés nélkül</STRONG> jelölőnégyzete be van jelölve, akkor a szervizrendeléssorok tranzakcióit fel lehet adni anélkül, hogy szolgáltatási szerződéshez társítaná a szervizrendelést.</span><span class="sxs-lookup"><span data-stu-id="b1fe0-115">If the <STRONG>Allow without service agreement</STRONG> check box in the <STRONG>Service management parameters</STRONG> form is selected, you can post the transactions from the service order lines without attaching the service order to a service agreement.</span></span> <span data-ttu-id="b1fe0-116">Ha nincs bejelölve a jelölőnégyzet, akkor a kézzel létrehozott szervizrendelést társítani kell a projekthez a szervizrendeléssorok feladása előtt.</span><span class="sxs-lookup"><span data-stu-id="b1fe0-116">If the check box is cleared, you must attach the manually created service order to a project before posting the service order lines.</span></span></P>
-
-## <a name="create-a-service-order-from-a-project"></a><span data-ttu-id="b1fe0-117">Szervizrendelés létrehozása egy projektből</span><span class="sxs-lookup"><span data-stu-id="b1fe0-117">Create a service order from a project</span></span>
-
-1.  <span data-ttu-id="b1fe0-118">Kattintson a következőkre: **Projektvezetés és könyvelés** \> **Közös** \> **Projektek** \> **Minden projekt**.</span><span class="sxs-lookup"><span data-stu-id="b1fe0-118">Click **Project management and accounting** \> **Common** \> **Projects** \> **All projects**.</span></span>
-
-2.  <span data-ttu-id="b1fe0-119">A **Projektek** képernyőn, a **Műveleti panelen**, kattintson a **Kezelés** lapra \> kattintson **Szolgáltatás** \> **Szervizrendelések** lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="b1fe0-119">In the **Projects** form, on the **Action Pane**, click the **Manage** tab \> click **Service** \> **Service orders**.</span></span>
-
-3.  <span data-ttu-id="b1fe0-120">Az előbbi eljárás segítségével hozza létre manuálisan a szervizrendelést a **Szervizrendelések** képernyőn.</span><span class="sxs-lookup"><span data-stu-id="b1fe0-120">Follow the previous procedure to create a service order manually in the **Service orders** form.</span></span> <span data-ttu-id="b1fe0-121">A **Projekt azonosító** mezőben látható a projektreferencia.</span><span class="sxs-lookup"><span data-stu-id="b1fe0-121">The **Project ID** field displays the project reference.</span></span>
+3.  <span data-ttu-id="de847-114">Hozza létre a szervizrendelés szervizrendeléssorait.</span><span class="sxs-lookup"><span data-stu-id="de847-114">Create service order lines for the service order.</span></span>
 
 > [!NOTE]
-> <P><span data-ttu-id="b1fe0-122">Ha a <STRONG>Szolgáltatáskezelés paraméterei</STRONG> képernyő <STRONG>Engedélyezés szolgáltatási szerződés nélkül</STRONG> jelölőnégyzete be van jelölve, akkor a szervizrendeléssorok tranzakcióit fel lehet adni anélkül, hogy szolgáltatási szerződéshez társítaná a szervizrendelést.</span><span class="sxs-lookup"><span data-stu-id="b1fe0-122">If the <STRONG>Allow without service agreement</STRONG> check box in the <STRONG>Service management parameters</STRONG> form is selected, you can post the transactions from the service order lines without attaching the service order to a service agreement.</span></span> <span data-ttu-id="b1fe0-123">Ha nincs bejelölve a jelölőnégyzet, akkor a kézzel létrehozott szervizrendelést társítani kell a projekthez a szervizrendeléssorok feladása előtt.</span><span class="sxs-lookup"><span data-stu-id="b1fe0-123">If the check box is cleared, you must attach the manually created service order to a project before posting the service order lines.</span></span></P>
+> <P><span data-ttu-id="de847-115">Ha a <STRONG>Szolgáltatáskezelés paraméterei</STRONG> képernyő <STRONG>Engedélyezés szolgáltatási szerződés nélkül</STRONG> jelölőnégyzete be van jelölve, akkor a szervizrendeléssorok tranzakcióit fel lehet adni anélkül, hogy szolgáltatási szerződéshez társítaná a szervizrendelést.</span><span class="sxs-lookup"><span data-stu-id="de847-115">If the <STRONG>Allow without service agreement</STRONG> check box in the <STRONG>Service management parameters</STRONG> form is selected, you can post the transactions from the service order lines without attaching the service order to a service agreement.</span></span> <span data-ttu-id="de847-116">Ha nincs bejelölve a jelölőnégyzet, akkor a kézzel létrehozott szervizrendelést társítani kell a projekthez a szervizrendeléssorok feladása előtt.</span><span class="sxs-lookup"><span data-stu-id="de847-116">If the check box is cleared, you must attach the manually created service order to a project before posting the service order lines.</span></span></P>
 
-## <a name="create-a-service-order-from-the-sales-order-form"></a><span data-ttu-id="b1fe0-124">Szervizrendelés létrehozása az értékesítési rendelés képernyőn</span><span class="sxs-lookup"><span data-stu-id="b1fe0-124">Create a service order from the Sales order form</span></span>
+## <a name="create-a-service-order-from-a-project"></a><span data-ttu-id="de847-117">Szervizrendelés létrehozása egy projektből</span><span class="sxs-lookup"><span data-stu-id="de847-117">Create a service order from a project</span></span>
 
-<span data-ttu-id="b1fe0-125">Szervizrendelést az **Értékesítési rendelések** képernyő használatával is létrehozhat; ehhez használja az **Új szervizrendelés létrehozása az értékesítési rendelés alapján** varázslót.</span><span class="sxs-lookup"><span data-stu-id="b1fe0-125">You can create a service order from the **Sales orders** form by using the **Create a new service order based on the sales order** wizard.</span></span>
+1.  <span data-ttu-id="de847-118">Kattintson a következőkre: **Projektvezetés és könyvelés** \> **Közös** \> **Projektek** \> **Minden projekt**.</span><span class="sxs-lookup"><span data-stu-id="de847-118">Click **Project management and accounting** \> **Common** \> **Projects** \> **All projects**.</span></span>
 
-1.  <span data-ttu-id="b1fe0-126">Kattintson ide: **Értékesítés és marketing** \> **Közös** \> **Értékesítési rendelések** \> **Minden értékesítési rendelés**.</span><span class="sxs-lookup"><span data-stu-id="b1fe0-126">Click **Sales and marketing** \> **Common** \> **Sales orders** \> **All sales orders**.</span></span>
+2.  <span data-ttu-id="de847-119">A **Projektek** képernyőn, a **Műveleti panelen**, kattintson a **Kezelés** lapra \> kattintson **Szolgáltatás** \> **Szervizrendelések** lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="de847-119">In the **Projects** form, on the **Action Pane**, click the **Manage** tab \> click **Service** \> **Service orders**.</span></span>
 
-2.  <span data-ttu-id="b1fe0-127">Nyissa meg a megfelelő értékesítési rendelést.</span><span class="sxs-lookup"><span data-stu-id="b1fe0-127">Open the relevant sales order.</span></span>
+3.  <span data-ttu-id="de847-120">Az előbbi eljárás segítségével hozza létre manuálisan a szervizrendelést a **Szervizrendelések** képernyőn.</span><span class="sxs-lookup"><span data-stu-id="de847-120">Follow the previous procedure to create a service order manually in the **Service orders** form.</span></span> <span data-ttu-id="de847-121">A **Projekt azonosító** mezőben látható a projektreferencia.</span><span class="sxs-lookup"><span data-stu-id="de847-121">The **Project ID** field displays the project reference.</span></span>
 
-3.  <span data-ttu-id="b1fe0-128">Az **Értékesítési rendelés** fülön kattintson a **Szervizrendelés** lehetőségre ahhoz, hogy elindítsa az **Új szervizrendelés létrehozása az értékesítési rendelés alapján varázslót**.</span><span class="sxs-lookup"><span data-stu-id="b1fe0-128">On the **Sales order** tab, click **Service order** to start the **Create a new service order based on the sales order** wizard.</span></span>
+> [!NOTE]
+> <P><span data-ttu-id="de847-122">Ha a <STRONG>Szolgáltatáskezelés paraméterei</STRONG> képernyő <STRONG>Engedélyezés szolgáltatási szerződés nélkül</STRONG> jelölőnégyzete be van jelölve, akkor a szervizrendeléssorok tranzakcióit fel lehet adni anélkül, hogy szolgáltatási szerződéshez társítaná a szervizrendelést.</span><span class="sxs-lookup"><span data-stu-id="de847-122">If the <STRONG>Allow without service agreement</STRONG> check box in the <STRONG>Service management parameters</STRONG> form is selected, you can post the transactions from the service order lines without attaching the service order to a service agreement.</span></span> <span data-ttu-id="de847-123">Ha nincs bejelölve a jelölőnégyzet, akkor a kézzel létrehozott szervizrendelést társítani kell a projekthez a szervizrendeléssorok feladása előtt.</span><span class="sxs-lookup"><span data-stu-id="de847-123">If the check box is cleared, you must attach the manually created service order to a project before posting the service order lines.</span></span></P>
 
-4.  <span data-ttu-id="b1fe0-129">Kattintson a **Tovább \>** gombra, majd végezze el a következő lépéseket a **Válassza ki a szerződést a szervizrendeléshez** lapon:</span><span class="sxs-lookup"><span data-stu-id="b1fe0-129">Click **Next \>**, and then complete the following steps on the **Select agreement for service order** page:</span></span>
+## <a name="create-a-service-order-from-the-sales-order-form"></a><span data-ttu-id="de847-124">Szervizrendelés létrehozása az értékesítési rendelés képernyőn</span><span class="sxs-lookup"><span data-stu-id="de847-124">Create a service order from the Sales order form</span></span>
+
+<span data-ttu-id="de847-125">Szervizrendelést az **Értékesítési rendelések** képernyő használatával is létrehozhat; ehhez használja az **Új szervizrendelés létrehozása az értékesítési rendelés alapján** varázslót.</span><span class="sxs-lookup"><span data-stu-id="de847-125">You can create a service order from the **Sales orders** form by using the **Create a new service order based on the sales order** wizard.</span></span>
+
+1.  <span data-ttu-id="de847-126">Kattintson ide: **Értékesítés és marketing** \> **Közös** \> **Értékesítési rendelések** \> **Minden értékesítési rendelés**.</span><span class="sxs-lookup"><span data-stu-id="de847-126">Click **Sales and marketing** \> **Common** \> **Sales orders** \> **All sales orders**.</span></span>
+
+2.  <span data-ttu-id="de847-127">Nyissa meg a megfelelő értékesítési rendelést.</span><span class="sxs-lookup"><span data-stu-id="de847-127">Open the relevant sales order.</span></span>
+
+3.  <span data-ttu-id="de847-128">Az **Értékesítési rendelés** fülön kattintson a **Szervizrendelés** lehetőségre ahhoz, hogy elindítsa az **Új szervizrendelés létrehozása az értékesítési rendelés alapján varázslót**.</span><span class="sxs-lookup"><span data-stu-id="de847-128">On the **Sales order** tab, click **Service order** to start the **Create a new service order based on the sales order** wizard.</span></span>
+
+4.  <span data-ttu-id="de847-129">Kattintson a **Tovább \>** gombra, majd végezze el a következő lépéseket a **Válassza ki a szerződést a szervizrendeléshez** lapon:</span><span class="sxs-lookup"><span data-stu-id="de847-129">Click **Next \>**, and then complete the following steps on the **Select agreement for service order** page:</span></span>
     
-      - <span data-ttu-id="b1fe0-130">A **Szolgáltatási szerződés** mezőben válassza ki azt a szolgáltatási szerződést, amelyhez az új szervizrendelést társítani kívánja.</span><span class="sxs-lookup"><span data-stu-id="b1fe0-130">Use the **Service agreement** field to select the service agreement with which the new service order should be associated.</span></span>
+      - <span data-ttu-id="de847-130">A **Szolgáltatási szerződés** mezőben válassza ki azt a szolgáltatási szerződést, amelyhez az új szervizrendelést társítani kívánja.</span><span class="sxs-lookup"><span data-stu-id="de847-130">Use the **Service agreement** field to select the service agreement with which the new service order should be associated.</span></span>
     
-      - <span data-ttu-id="b1fe0-131">Nem kötelező: A **Projektazonosító** mező segítségével egy projekthez társíthatja a szervizrendelést.</span><span class="sxs-lookup"><span data-stu-id="b1fe0-131">Optional: Use the **Project ID** field to associate this service order with a particular project.</span></span>
+      - <span data-ttu-id="de847-131">Nem kötelező: A **Projektazonosító** mező segítségével egy projekthez társíthatja a szervizrendelést.</span><span class="sxs-lookup"><span data-stu-id="de847-131">Optional: Use the **Project ID** field to associate this service order with a particular project.</span></span>
 
-5.  <span data-ttu-id="b1fe0-132">Kattintson a **Tovább \>** gombra, majd végezze el a következő lépéseket a **Szervizrendelés létrehozása** lapon:</span><span class="sxs-lookup"><span data-stu-id="b1fe0-132">Click **Next \>**, and then complete the following steps on the **Create service order** page:</span></span>
+5.  <span data-ttu-id="de847-132">Kattintson a **Tovább \>** gombra, majd végezze el a következő lépéseket a **Szervizrendelés létrehozása** lapon:</span><span class="sxs-lookup"><span data-stu-id="de847-132">Click **Next \>**, and then complete the following steps on the **Create service order** page:</span></span>
     
-      - <span data-ttu-id="b1fe0-133">Adja meg a szervizhívás indításának dátumát és időpontját a **Preferált szolgáltatási idő** mezőben.</span><span class="sxs-lookup"><span data-stu-id="b1fe0-133">Enter a date and time for the service call to begin in the **Preferred service time** field.</span></span>
+      - <span data-ttu-id="de847-133">Adja meg a szervizhívás indításának dátumát és időpontját a **Preferált szolgáltatási idő** mezőben.</span><span class="sxs-lookup"><span data-stu-id="de847-133">Enter a date and time for the service call to begin in the **Preferred service time** field.</span></span>
     
-      - <span data-ttu-id="b1fe0-134">Nem kötelező. módosítsa a **Leírás** mezőben szereplő szöveget.</span><span class="sxs-lookup"><span data-stu-id="b1fe0-134">Optional: Modify the text in the **Description** field.</span></span> <span data-ttu-id="b1fe0-135">Alapértelmezés szerint ez a mező tartalmazza az előző lapon kiválasztott szolgáltatási szerződés leírását.</span><span class="sxs-lookup"><span data-stu-id="b1fe0-135">By default, this field contains the description of the service agreement that you selected on the previous page.</span></span>
+      - <span data-ttu-id="de847-134">Nem kötelező. módosítsa a **Leírás** mezőben szereplő szöveget.</span><span class="sxs-lookup"><span data-stu-id="de847-134">Optional: Modify the text in the **Description** field.</span></span> <span data-ttu-id="de847-135">Alapértelmezés szerint ez a mező tartalmazza az előző lapon kiválasztott szolgáltatási szerződés leírását.</span><span class="sxs-lookup"><span data-stu-id="de847-135">By default, this field contains the description of the service agreement that you selected on the previous page.</span></span>
     
-      - <span data-ttu-id="b1fe0-136">A **Felelős** mezőben válassza ki annak az alkalmazottnak az azonosítóját, aki felelős a szerződésért, illetve ha ismert, akkor adja meg annak a technikusnak az azonosítóját, akit az ügyfél előnyben részesít szervizhíváskor.</span><span class="sxs-lookup"><span data-stu-id="b1fe0-136">In the **Responsible** field, select the ID of the employee who is responsible for the agreement, and if you know what it is, enter the ID of the customer's preferred technician for the service call.</span></span>
+      - <span data-ttu-id="de847-136">A **Felelős** mezőben válassza ki annak az alkalmazottnak az azonosítóját, aki felelős a szerződésért, illetve ha ismert, akkor adja meg annak a technikusnak az azonosítóját, akit az ügyfél előnyben részesít szervizhíváskor.</span><span class="sxs-lookup"><span data-stu-id="de847-136">In the **Responsible** field, select the ID of the employee who is responsible for the agreement, and if you know what it is, enter the ID of the customer's preferred technician for the service call.</span></span>
     
-      - <span data-ttu-id="b1fe0-137">A **Kapcsolattartó azonosítója** mezőben válassza ki azt a személyt a vevő vállalatánál, akivel kapcsolatba kell lépni a szervizrendeléssel kapcsolatban.</span><span class="sxs-lookup"><span data-stu-id="b1fe0-137">In the **Contact ID** field, select the person in the customer's company who should be contacted regarding this service order.</span></span>
+      - <span data-ttu-id="de847-137">A **Kapcsolattartó azonosítója** mezőben válassza ki azt a személyt a vevő vállalatánál, akivel kapcsolatba kell lépni a szervizrendeléssel kapcsolatban.</span><span class="sxs-lookup"><span data-stu-id="de847-137">In the **Contact ID** field, select the person in the customer's company who should be contacted regarding this service order.</span></span>
 
-6.  <span data-ttu-id="b1fe0-138">Kattintson a **Új\>** gombra, majd a **Befejezés** gombra.</span><span class="sxs-lookup"><span data-stu-id="b1fe0-138">Click **Next \>**, and then click **Finish**.</span></span>
+6.  <span data-ttu-id="de847-138">Kattintson a **Új\>** gombra, majd a **Befejezés** gombra.</span><span class="sxs-lookup"><span data-stu-id="de847-138">Click **Next \>**, and then click **Finish**.</span></span>
 
 
-## <a name="see-also"></a><span data-ttu-id="b1fe0-139">Lásd még</span><span class="sxs-lookup"><span data-stu-id="b1fe0-139">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="de847-139">Lásd még</span><span class="sxs-lookup"><span data-stu-id="de847-139">See also</span></span>
 
-[<span data-ttu-id="b1fe0-140">Szervizrendelések</span><span class="sxs-lookup"><span data-stu-id="b1fe0-140">Service orders</span></span>](service-orders.md)
+[<span data-ttu-id="de847-140">Szervizrendelések</span><span class="sxs-lookup"><span data-stu-id="de847-140">Service orders</span></span>](service-orders.md)
 
-[<span data-ttu-id="b1fe0-141">Szervizrendelések automatikus létrehozása</span><span class="sxs-lookup"><span data-stu-id="b1fe0-141">Create service orders automatically</span></span>](create-service-orders-automatically.md)
+[<span data-ttu-id="de847-141">Szervizrendelések automatikus létrehozása</span><span class="sxs-lookup"><span data-stu-id="de847-141">Create service orders automatically</span></span>](create-service-orders-automatically.md)
 
-<span data-ttu-id="b1fe0-142">[Szervizrendelések létrehozása (osztályképernyő)](https://technet.microsoft.com/library/aa553901\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="b1fe0-142">[Create service orders (class form)](https://technet.microsoft.com/library/aa553901\(v=ax.60\))</span></span> 
+<span data-ttu-id="de847-142">[Szervizrendelések létrehozása (osztályképernyő)](https://technet.microsoft.com/library/aa553901\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="de847-142">[Create service orders (class form)](https://technet.microsoft.com/library/aa553901\(v=ax.60\))</span></span> 
 
