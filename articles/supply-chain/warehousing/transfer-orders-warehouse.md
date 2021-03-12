@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: InventLocation,CustVendTransportPoint2Point
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: e482567eb92b9ab891d41d82d10cbb87f9b7fb01
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 7dfb215683b4ee5d186626492bd90116d1a06a1d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4429900"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4976838"
 ---
 # <a name="set-up-warehouses-for-transfer-orders"></a>Raktárak beállítása átmozgatási rendelésekhez 
 
@@ -53,6 +52,3 @@ Be kell állítania a raktárak között a szállítás átfutási idejét is a 
 2. Válasszon egy **raktárat** a **Bevételezési pont** mezőben.
 3. Válassza ki a **Szállítási raktár**, **Fogadó raktár**, és **Szállítási napok** értékeket. 
 4. (Nem kötelező) Beállíthatja a szállítási időt, a szállítási módtól függően a **Szállítási napok a szállítás módja szerint** lapon.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

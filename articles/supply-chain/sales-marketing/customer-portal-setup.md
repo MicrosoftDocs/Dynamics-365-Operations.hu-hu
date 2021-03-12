@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: e61fc5f7151a0bb61d496d47f4ad4e727a2a1d65
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 2153bbca2be7c72e48b9dc51b1f7fdbe2ab89903
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4529530"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4977738"
 ---
 # <a name="install-set-up-and-update-the-customer-portal"></a>Az ügyfélportál telepítése, beállítása és frissítése
 
@@ -31,7 +30,7 @@ ms.locfileid: "4529530"
 A Ügyfélportál kiépítése érdekében a következő licencekkel kell rendelkeznie:
 
 - **Power Apps-portálok** – Ez a licenc szükséges a Ügyfélportál hosztolásához. A portálok a használat alapján vannak licencelve. A további tudnivalókat lásd a [Power Apps-portálok licencelési követelményei](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq#portals) részben.
-- **Kettős írás** – Rendelkeznie kell a szükséges licencekkel, hogy a Supply Chain Management entitások számára lehetővé tegye a kettős írást. További tudnivalókért lásd a [kettős írás rendszerkövetelményeit](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-system-req.md).
+- **Kettős írás** – Rendelkeznie kell a szükséges licencekkel, hogy a Supply Chain Management táblák számára lehetővé tegye a kettős írást. További tudnivalókért lásd a [kettős írás rendszerkövetelményeit](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-system-req.md).
 
 ## <a name="dependencies-on-dual-write-and-power-apps-portals"></a>A kettős írással és Power Apps-portálokkal kapcsolatos függőségek
 
@@ -39,13 +38,13 @@ Az Ügyfélportál a Power Apps-portálokon és a kettős íráson alapul, ahogy
 
 ![Ügyfélportál függőségei](media/customer-portal-elements.png "Ügyfélportál függőségei")
 
-A Supply Chain Management egyéb szolgáltatásaitól eltérően a Customer Portal-sablon a Power Apps-portálokra épül. Ezért az Ügyfélportált korlátozzák a Power Apps portálok és a kettős írás entitásainak funkcionalitása és képességei.
+A Supply Chain Management egyéb szolgáltatásaitól eltérően a Customer Portal-sablon a Power Apps-portálokra épül. Ezért az Ügyfélportált korlátozzák a Power Apps portálok és a kettős írás tábláinak funkcionalitása és képességei.
 
 ## <a name="required-setup-to-enable-the-customer-portal"></a><a name="required-setup"></a>A Ügyfélportál engedélyezéséhez szükséges beállítás
 
 Miután elvégezte a szükséges licencek megadását, a [kettős írás kezdeti szinkronizálási útmutatóban](../../fin-ops-core/dev-itpro/data-entities/dual-write/initial-sync.md) leírtaknak megfelelően beállíthatja a kettős írást.
 
-Ügyeljen arra, hogy a következő entitás-hozzárendeléseket engedélyezze a kettős írásban:
+Ügyeljen arra, hogy a következő tábla-hozzárendeléseket engedélyezze a kettős írásban:
 
 - Értékesítési rendelés fejléce
 - Értékesítési rendelés részletei
@@ -80,12 +79,9 @@ A Ügyfélportál beállításával és testreszabásával kapcsolatos tudnival�
 - [Power Apps portálok dokumentációja](https://docs.microsoft.com/powerapps/maker/portals/overview)
 - [Kettős írás dokumentációja](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page.md)
 
-A portálok hatékony kezeléséhez ismernie kell a Power Apps-portálokat és a Common Data Service-életciklust. További információért tekintse át az alábbi forrásokat:
+A portálok hatékony kezeléséhez ismernie kell a Power Apps-portálokat és a Microsoft Dataverse-életciklust. További információért tekintse át az alábbi forrásokat:
 
 - [A portál életciklusáról](https://docs.microsoft.com/powerapps/maker/portals/admin/portal-lifecycle)
 - [Portál frissítése](https://docs.microsoft.com/powerapps/maker/portals/admin/upgrade-portal)
 - [Portál konfigurációjának áttelepítése](https://docs.microsoft.com/powerapps/maker/portals/admin/migrate-portal-configuration)
 - [Megoldás életciklus-kezelése: Dynamics 365 for Customer Engagement alkalmazásokhoz](https://www.microsoft.com/download/details.aspx?id=57777)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: CustOpenTrans, CustParameters, VendOpenTrans, VendParameters
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14601
 ms.assetid: 6b61e08c-aa8b-40c0-b904-9bca4e8096e7
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 094b8876b3b10b6dcbc0ce399a1a9915271459ed
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0ebc6fcfe20082f76007eabb86d5e33dbfc900dc
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4444117"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4976449"
 ---
 # <a name="configure-settlement"></a>Kiegyenlítés konfigurálása
 
@@ -67,6 +66,3 @@ A további könyvelési bejegyzések (tartozik és követel tételek ugyanahhoz 
 
 -   A szervezetek gyakran használnak rögzített dimenziókat az olyan pénzügyi dimenziók kitöltésére, melyekre nincs szükség. Ez a helyzet általában a mérlegszámlák, például a kinnlevőségekből/kötelezettségek esetén. A számlastruktúrákat lehet úgy használni, hogy ne kövessék azokat a pénzügyi dimenziókat, amelyek általában kitöltésre kerülnek.  Eltávolíthatja a mérlegszámlák esetében a pénzügyi dimenziókat, feleslegessé téve a rögzített dimenziókat használatát.
 -   Ha a szervezet előírja a rögzített dimenziók használatát a kinnlevőségek/kötelezettségek fő számla esetén, állítsa be alapértelmezettként a rögzített dimenziót a fizetéshez, így a rögzített dimenzió értékét tárolja a fizetéshez tartozó szállítói tranzakció. Ez lehetővé teszi a rendszer számára, hogy helyreállítása a kinnlevőségek/kötelezettségek fő számlát, a rögzített dimenziók értékeit is tartalmazva. A rögzített dimenzió értékét meg lehet adni alapértelmezettként a szállítókra vagy a napló nevére vonatkozóan a fizetési naplónál.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

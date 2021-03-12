@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: LeanProductionFlowModel
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 511c466d6019cb182c9ada0b02172b8eeb3725e6
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 22aabf2d0cecf272ac25ba3adde8cc650b069af9
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429219"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4977863"
 ---
 # <a name="define-production-flow-models"></a>Termelési folyamatmodellek meghatározása
 
@@ -46,6 +45,3 @@ A termelési folyamatmodellek írják le, hogyan kell kiszámítani és karban t
 8. Egy lehetőség kiválasztása a Kapacitáshiányra való reagálás mezőben.
     * A lehetőségek a következők: Elhalasztás – Az ütemezési esemény teljes igényének elhalasztása a következő elérhető termelési napon, rendelkezésre álló kapacitással. Érvénytelenítés – Az ütemezési esemény automatikus tervezésének befejezése és a kapcsolódó feladatok nem tervezettként hagyása.   Hozzáadás a kért naphoz – A kért feladatok megtervezése a kért időszakban. Ez a cella túlterhelése az adott napra, és megkövetel egy tervező által végzett vizsgálatot és kézi beavatkozást.   Rendelkezésre álló időszakokra elosztás – Elosztja az ütemezési esemény különböző feladatait az összes rendelkezésre álló termelési napra, az első elérhető naptól kezdődően. A minimális elosztási mennyiség a kanbanfeladat-mennyiség. A felosztás hozzárendeli a minimális tervezési mennyiséget (kanbanmennyiség) minden naphoz, amely elegendő elérhető teljesítménnyel rendelkezik.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

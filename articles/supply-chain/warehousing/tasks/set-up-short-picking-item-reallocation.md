@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: WHSWorkException, WHSWorker, WHSLocationWithWorkException
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4e8f5c23f82e96145f411ec993f766a90137b5b8
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: ab8baf846d65e6fefe9ca575b5af5a2dbceac666
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4429873"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4976888"
 ---
 # <a name="set-up-short-picking-item-reallocation"></a>Rövid kitárolásra jelölt cikkek újbóli felosztásának beállítása
 
@@ -64,6 +63,3 @@ Az USMF bemutatócég adatai kerültek felhasználásra a jelen eljárás létre
 6. A listában válasszon ki egy **Felhasználóazonosító** elemet. Például, 24 elem.
 7. Bontsa ki a **Munka** gyorslapot.
 8. Válassza ki az **Igen** lehetőséget a **Cikk újbóli manuális felosztásának engedélyezése** mezőben.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

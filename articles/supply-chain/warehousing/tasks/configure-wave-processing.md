@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: WHSWaveTemplateTable, InventLocationIdLookup, WHSParameters, ProdParameters, whswavetablecreatenew, WHSWaveTable, WHSWaveAttributes, WHSKanbanWaveTable, WHSWaveTableListPage, WHSKanbanWaveTableListPage
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: aa193f6d62613893f9d5da4351d43a810dbf1596
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: e22816b33739141fbcd188d631a07313db415959
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4429906"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4977288"
 ---
 # <a name="configure-wave-processing"></a>A hullámfeldolgozás konfigurálása
 
@@ -61,6 +60,3 @@ Ez az útmutató leírja, hogy hogyan állíthatja be azokat a feltételeket, am
 Az értékesítési és a kanban rendelésekhez, a készletet a rendelés raktárból történő kiadása előtt le kell foglalni. Ellenkező esetben a cikkek vagy a felosztási sorok nem dolgozhatók fel a hullámban. A termelési rendelésekre vonatkozóan kiválaszthatja a Részleges foglalás engedélyezése lehetőséget. Ez például hasznos, ha a termelés megkezdéséhez szükséges anyagok rendelkezésére állnak, és addig pedig várni tud, amíg a további anyagok beérkeznek az eljárás végrehajtáshoz. Ha ezt a lehetőséget választja, akkor manuálisan meg kell ismételnie a raktárba kiadás folyamatát, amikor további anyagok rendelkezésre állnak.  
 25. Zárja be a lapot.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

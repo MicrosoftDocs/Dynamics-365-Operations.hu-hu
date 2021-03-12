@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSCrossDockingTemplate
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2019-10-1
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: b86fe2f3ea4321dbe598233018934187ba0d713a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: bcae977ede91dcaf4e455353f023e9eee4fcb2b1
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429317"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4977488"
 ---
 # <a name="auto-release-shipment-for-cross-docking"></a>Szállítmány automatikus kiadása áttároláshoz
 
@@ -179,6 +178,3 @@ Felhívjuk figyelmét, hogy ebben a szakaszban a következő események zajlanak
 - A raktárba történő kiadás a csatolt értékesítési rendeléshez elindítja.
 - A kiadás alapján egy szállítás és egy áttárolási munka jön létre. Ez a munka arra utasítja a raktári kezelőt, hogy kitárolja az értékesítésirendelés-sor teljesítéséhez szükséges mennyiségeket, és azokat az áttárolási hely irányelvében meghatározott kimeneti helyre helyezze.
 - Ha a termelési rendelés mennyisége meghaladja az értékesítési rendeléshez szükséges mennyiséget, létrejön a szokásos betárolási munka. Ez a munka arra utasítja a raktári kezelőt, hogy kiválassza azt a mennyiséget a készárukból, ami az áttárolás után marad, és áthelyezze azt a szokásos tárolóhelyre a helyirányelvek alapján.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

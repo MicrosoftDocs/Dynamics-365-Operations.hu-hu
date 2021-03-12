@@ -10,7 +10,6 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 261234
 ms.assetid: 7cd68ecc-cc09-48ab-8cb8-48d5c304effa
 ms.search.region: global
@@ -18,12 +17,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: afbf69c072ae205e973203d97a5fbca7504ae04f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0b020618036951e7033baadbf58b806df7877bdb
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412747"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4976589"
 ---
 # <a name="track-commissions-in-the-point-of-sale-pos-by-using-sales-groups"></a>Jutalékok követése a pénztárban (POS) értékesítési csoportok révén
 
@@ -72,7 +71,7 @@ Számos funkcióprofilbeállítás tartozik az üzletekhez, amelyek meghatározz
 
 ## <a name="displaying-the-sales-representative-information-on-the-pos-transactions-screen"></a>Az értékesítési képviselő információinak megjelenítése a pénztár tranzakciók képernyőjén
 
-A pénztár tranzakció képernyő elrendezése és tartalma a képernyőelrendezés-tervezővel és hozzárendelt képernyő-elrendezések segítségével konfigurálható az üzletek, nyilvántartások vagy dolgozók számára. Az **Üzletkötő** mező hozzáadható a Nyugta panel Sorok lapjához.  A tranzakció képernyőn ekkor megjelenik az egyes sorokhoz a megadott értékesítési csoport azonosítója.
+A pénztár tranzakció képernyő elrendezése és tartalma a képernyőelrendezés-tervezővel és hozzárendelt képernyő-elrendezések segítségével konfigurálható az üzletek, nyilvántartások vagy dolgozók számára. Az **Üzletkötő** mező hozzáadható a Nyugta panel Sorok lapjához.  A tranzakció képernyőn ekkor megjelenik az egyes sorokhoz a megadott értékesítési csoport azonosítója.
 
 ## <a name="adding-sales-representative-operations-to-pos-button-grids"></a>Üzletkötői műveletek hozzáadása a pénztár gombrácsaihoz
 
@@ -80,14 +79,11 @@ A pénztár lehetővé teszi a felhasználók számára a képernyő-elrendezés
 
 | Művelet                                 | Leírás |
 |-------------------------------------------|-------------|
-| Üzletkötő beállítása a sorban          | Ez a pénztárművelet a jogosult értékesítési csoportok listáját (Azonosító: Név) jeleníti meg az üzlethez. Egy értékesítési csoport kiválasztása a listából az aktuális tranzakciósorhoz állítja be az értéket. |
+| Üzletkötő beállítása a sorban          | Ez a pénztárművelet a jogosult értékesítési csoportok listáját (Azonosító: Név) jeleníti meg az üzlethez. Egy értékesítési csoport kiválasztása a listából az aktuális tranzakciósorhoz állítja be az értéket. |
 | Üzletkötő törlése a sorban        | Ez a pénztárművelet eltávolítja az aktuális tranzakciósorból az aktuális értékesítésicsoport-értéket. |
-| Üzletkötő beállítása a tranzakcióban   | Ez a pénztárművelet a jogosult értékesítési csoportok listáját (Azonosító: Név) jeleníti meg az üzlethez. Egy értékesítési csoport kiválasztása a listából az aktuális tranzakcióhoz állítja be az alapértelmezett értéket. A hozzárendelt értékesítési csoport nélküli összes meglévő sornak a beállítása megtörténik, ahogy a később hozzáadott soroké is. |
+| Üzletkötő beállítása a tranzakcióban   | Ez a pénztárművelet a jogosult értékesítési csoportok listáját (Azonosító: Név) jeleníti meg az üzlethez. Egy értékesítési csoport kiválasztása a listából az aktuális tranzakcióhoz állítja be az alapértelmezett értéket. A hozzárendelt értékesítési csoport nélküli összes meglévő sornak a beállítása megtörténik, ahogy a később hozzáadott soroké is. |
 | Üzletkötő törlése a tranzakcióban | Ez a pénztárművelet eltávolítja az aktuális tranzakciósorból az alapértelmezett értékesítésicsoport-értéket. Nem érinti a tranzakcióban már meglévő sorokat. |
 
 ## <a name="calculating-commissions"></a>Jutalék kiszámítása
 
-A jutalék kiszámítása a meghatározott értékesítési csoporthoz tartozó munkavállalók számára a kimutatásfeladás vagy az értékesítési rendelés feladása során történik. A jutalékösszeg meghatározásának alapja a dolgozó jutalékmegosztása, amelyet az értékesítési csoport határoz meg, valamint a kapcsolódó jutalékszámítási beállítások, amelyek a tranzakcióban szereplőre vevőre és/vagy termékekre vonatkoznak.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+A jutalék kiszámítása a meghatározott értékesítési csoporthoz tartozó munkavállalók számára a kimutatásfeladás vagy az értékesítési rendelés feladása során történik. A jutalékösszeg meghatározásának alapja a dolgozó jutalékmegosztása, amelyet az értékesítési csoport határoz meg, valamint a kapcsolódó jutalékszámítási beállítások, amelyek a tranzakcióban szereplőre vevőre és/vagy termékekre vonatkoznak.

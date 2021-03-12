@@ -10,18 +10,17 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fade659c320e0ea1059644324859c9a3cb273c96
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 7f3e121fdc0f69ace15e0fa08bde0af739ef7d28
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429217"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4977813"
 ---
 # <a name="end-a-production-order"></a>Termelési rendelés befejezése
 
@@ -46,6 +45,3 @@ Ez az eljárás bemutatja, hogyan lehet termelési rendelést befejezni. Ez az e
 1. A Művelet panelen kattintson a Költségkezelés elemre.
 2. Kattintson a Költség összehasonlítására.
     * A termelési rendelés befejezése után összehasonlíthatja a becsült önköltségi árat és a realizált önköltségi árat a termelési különbözetek áttekintése érdekében.  
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

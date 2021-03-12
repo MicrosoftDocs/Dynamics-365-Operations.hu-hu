@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: WHSLocationProfile, WHSParameters, WHSContainerType, WHSPackProfile, WHSCloseContainerProfile, InventLocationIdLookup, UnitOfMeasureLookup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 67e1e99b479752a027c60a878c57bd35d4219981
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 84a405b2a0afa3541fa0d691d751ecea0ad6606a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4429902"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4976988"
 ---
 # <a name="set-up-manual-packing-february-2016--may-2016"></a>A kézi csomagolás beállítása (2016. február és 2016. május)
 
@@ -95,6 +94,3 @@ A csomagolási folyamat lehetővé teszi az érvényesítést és a termékek t�
 8. A Súlyegység mezőben adjon meg, vagy válasszon ki egy értéket.
 9. Kattintson a Mentés gombra.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

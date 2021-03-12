@@ -10,19 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Operations, Core
 ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: c77d08d5877ab27f9b6549a5b2a666150938fc08
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1abc86aa5c3863eba34f726b543792408a542383
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4444051"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4976366"
 ---
 # <a name="reconcile-a-bank-account"></a>Bankszámla egyeztetése
 
@@ -71,6 +70,3 @@ A banki kivonat egyeztetésének megszakítása funkció segítségével megszak
 A banki kivonat egyeztetései csak abban az időrendi sorrendben vonhatók vissza, amelyben bevitték őket. A banki kivonat egyeztetésének megszakításakor az új tranzakciókat és helyesbítéseket a program sztornírozza, és az összes többi tranzakciót nem egyeztetettként jelöli meg.
  
 A banki kivonat egyeztetésének megszakításához válassza ki a banki kivonatot, és válassza a **Banki kivonat > Banki egyeztetés visszavonása** lehetőséget. A **Banki egyeztetés visszavonása** lapon adja meg az **Okkód**, az **Okhoz kapcsolódó megjegyzés** és a **Visszavonás dátuma** értékét. A visszavonás elindításához válassza az **OK** lehetőséget. Ne feledje, hogy a banki kivonat visszavonási dátuma nem lehet korábbi a banki kivonat dátumánál. A banki kivonat egyeztetésének visszavonása után a banki kivonat **Visszavonás dátuma** mezője frissül a megadott **Visszavonási dátum** értékével. Válassza a **Tranzakciók** gombot azoknak a tranzakcióknak a megtekintéséhez, amelyek egyeztetését visszavonta.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

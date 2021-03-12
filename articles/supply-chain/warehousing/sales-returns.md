@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ReturnTableListPage, ReturnTable, ReturnTableListPagePreviewPane, ReturnTableReferences, SalesReturnExpiredOrdersPart, SalesReturnFindOrderFormPart
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 269384
 ms.assetid: 98a4b517-e606-4036-b55f-1ab248898bdf
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fd194042303797fe41507065d0d7e4df28309cfb
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e8778a96030494cbb5d819bf214fca104864eff4
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429310"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4977413"
 ---
 # <a name="sales-returns"></a>Értékesítési visszáruk
 
@@ -327,10 +326,7 @@ A visszáru-rendelési sor létrejön az **Értékesítési rendelés keresése*
 
 ![A visszáru-rendelési sor létrejön az eladási rendelés keresés funkció használatával ](./media/SalesReturn11.png)  
 
->[Megjegyzés!] Az **Engedmény** és a **Visszáru-önköltségi** ár mezők helyesen vannak beállítva. Ezért a vevői számla pontos sztornírozása következik be.
+>[Megjegyzés!] Az **Engedmény** és a **Visszáru-önköltségi ár** mezők helyesen vannak beállítva. Ezért a vevői számla pontos sztornírozása következik be.
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

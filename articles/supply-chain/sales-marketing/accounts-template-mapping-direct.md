@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 8aa03f94e0fb89a6d34ce014dbb6004a1a666327
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 0499f604049240a226b4002710817034598b1e66
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4529210"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4977713"
 ---
 # <a name="synchronize-accounts-directly-from-sales-to-customers-in-supply-chain-management"></a>A Supply Chain Management-ügyfelek közvetlen szinkronizálása a Sales-ügyfelekre
 
@@ -33,7 +32,7 @@ ms.locfileid: "4529210"
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 > [!NOTE]
-> A potenciális ügyfelek készpénzre váltása megoldás használata előtt meg kell ismernie az [Adatintegrálással a Common Data Service for Apps szolgáltatásban](https://docs.microsoft.com/powerapps/administrator/data-integrator).
+> A potenciális ügyfelek készpénzre váltása megoldás használata előtt meg kell ismernie az [Adatintegrálással a Microsoft Dataverse for Apps szolgáltatásban](https://docs.microsoft.com/powerapps/administrator/data-integrator).
 
 Ez a témakör bemutatja a sablonokat és a mögöttes feladatokat, amelyek a Dynamics 365 Sales ügyfeleinek köztvetlenül a Dynamics 365 Supply Chain Management alkalmazásba történő szinkronizálására használatosak.
 
@@ -66,11 +65,11 @@ Az ügyfelek kezelése a Salesben történik, majd szinkronizálódnak a Supply 
 
 ## <a name="prospect-to-cash-solution-for-sales"></a>Potenciális vevő értékesítési készpénzfizetési megoldáshoz
 
-A **számlaszám** a mező akkor érhető el a **számla** oldalon. Tették integráláshoz a természetes és egyedi kulcs. A vevő kapcsolat kezelés (CRM) megoldás természetes kulcselemét hatással lehet a vevőknek, akik már használja a **számlaszám** használó egyedi nem, de a mező **számlaszám** számlánként értékeket. Az integrációs megoldás jelenleg ebben az esetben nem támogatja.
+A **számlaszám** oszlop akkor érhető el a **számla** oldalon. Tették integráláshoz a természetes és egyedi kulcs. A vevői kapcsolatkezelés (CRM) megoldás természetes kulcs funkciója hatással lehet a vevőkre, akik már használják a **számlaszám** oszlopot, de nem használják az egyedi **számlaszám** értéket számlánként. Az integrációs megoldás jelenleg ebben az esetben nem támogatja.
 
 Új számla létrehozása esetén, ha egy **számlaszám** értéke nem létezik, szerint egy számsorozat alapján automatikusan történik. Az érték áll **számlás**, amelyet egy növekvő számsorozat és utótag hat karakterből követ. Íme, egy példa: **ACC-01000-BVRCPS**
 
-Az integrációs megoldás értékesítési kiegyenlítésekor beállítja a frissítési parancsprogram a **számlaszám** létező számlák, értékesítési mezőt. Ha nem **Számlaszám** értékeit, a számsorozatot, amely a fentebb leírt használatos.
+A Sales integrációs megoldásának használatakor egy frissítési parancsfájl beállítja a **Számlaszám** oszlopot a létező számlákhoz a Salesben. Ha nem **Számlaszám** értékeit, a számsorozatot, amely a fentebb leírt használatos.
 
 ## <a name="preconditions-and-mapping-setup"></a>Előfeltételek és hozzárendelési beállítás
 
@@ -95,12 +94,12 @@ Az integrációs megoldás értékesítési kiegyenlítésekor beállítja a fri
 ## <a name="template-mapping-in-data-integration"></a>Sablonleképezés az adatintegrátorban
 
 > [!NOTE]
-> A **fizetési feltételek**, **feltételek áruszállítási**, **szállítási feltételek**, **szállítási mód**, és **szállítási mód** mezők nem szerepelnek a alapértelmezett-leképezései. Ezek a mezők megfeleltetéséhez be kell állítania egy adott szervezetek között szinkronizált entitás adatainak értékmegfeleltetések.
+> A **fizetési feltételek**, **feltételek áruszállítási**, **szállítási feltételek**, **szállítási mód**, és **szállítási mód** oszlopok nem szerepelnek a alapértelmezett-leképezései. Ezen oszlopok megfeleltetéséhez be kell állítania egy értékmegfeleltetést, amely az adott szervezetek adataira specifikus, amelyek között a tábla szinkronizálódik.
 
 Az alábbi ábrákon sablon hozzárendelést például adatok integrátor megjelenítése. 
 
 > [!NOTE]
-> A leképezést mutatja, hogy melyik mezőadatok szinkronizálódnak a Sales – Supply Chain Management irányban.
+> A leképezést mutatja, hogy melyik oszlopadatok szinkronizálódnak a Sales – Supply Chain Management irányban.
 
 ![Sablonleképezés az adatintegrátorban](./media/accounts-direct-template-mapping-data-integrator-1.png)
 
@@ -117,6 +116,3 @@ Az alábbi ábrákon sablon hozzárendelést például adatok integrátor megjel
 
 [Értékesítésiszámla-fejlécek és -sorok szinkronizálása közvetlenül a Supply Chain Management szolgáltatásból a Sales szolgáltatásba](sales-invoice-template-mapping-direct.md)
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
