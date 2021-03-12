@@ -11,46 +11,45 @@ ms.technology: ''
 ms.search.form: SMASubscriptionTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5b192cd6316f8e4de7919b7a3feda29fcbf54059
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d01acbfd57fdfcbc951fab738bfb062ab7b344be
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429673"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4965755"
 ---
-# <a name="update-and-index-subscription-sales-prices"></a><span data-ttu-id="e3328-103">Előfizetési árak frissítése és indexelése</span><span class="sxs-lookup"><span data-stu-id="e3328-103">Update and index subscription sales prices</span></span> 
+# <a name="update-and-index-subscription-sales-prices"></a><span data-ttu-id="96db8-103">Előfizetési árak frissítése és indexelése</span><span class="sxs-lookup"><span data-stu-id="96db8-103">Update and index subscription sales prices</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
 
-1.  <span data-ttu-id="e3328-104">Kattintson a következőkre: **Szolgáltatáskezelés**\>**Közös**\>**Szolgáltatási előfizetések**\>**Minden szolgáltatási előfizetés**.</span><span class="sxs-lookup"><span data-stu-id="e3328-104">Click **Service management** \> **Common** \> **Service subscriptions** \> **All service subscriptions**.</span></span>
+1.  <span data-ttu-id="96db8-104">Kattintson a következőkre: **Szolgáltatáskezelés**\>**Közös**\>**Szolgáltatási előfizetések**\>**Minden szolgáltatási előfizetés**.</span><span class="sxs-lookup"><span data-stu-id="96db8-104">Click **Service management** \> **Common** \> **Service subscriptions** \> **All service subscriptions**.</span></span>
 
-2.  <span data-ttu-id="e3328-105">Válassza ki azt az előfizetést, amelynek módosítani szeretné az indexárát vagy az alapárát.</span><span class="sxs-lookup"><span data-stu-id="e3328-105">Select the subscription to update the index or base price for.</span></span>
+2.  <span data-ttu-id="96db8-105">Válassza ki azt az előfizetést, amelynek módosítani szeretné az indexárát vagy az alapárát.</span><span class="sxs-lookup"><span data-stu-id="96db8-105">Select the subscription to update the index or base price for.</span></span>
 
-3.  <span data-ttu-id="e3328-106">Kattintson ide: **Index**.</span><span class="sxs-lookup"><span data-stu-id="e3328-106">Click **Index**.</span></span> <span data-ttu-id="e3328-107">A **Változtatás** mezőben jelezze, hogy az alapárat vagy az indexet hogyan szeretné módosítani, és hogy százalék vagy új érték alapján történjen a módosítás.</span><span class="sxs-lookup"><span data-stu-id="e3328-107">In the **Change** field, indicate how to update the base price or index, and whether the update must use a percentage or a new value.</span></span> <span data-ttu-id="e3328-108">A választható lehetőségek a következők:</span><span class="sxs-lookup"><span data-stu-id="e3328-108">You can select from the following options:</span></span>
+3.  <span data-ttu-id="96db8-106">Kattintson ide: **Index**.</span><span class="sxs-lookup"><span data-stu-id="96db8-106">Click **Index**.</span></span> <span data-ttu-id="96db8-107">A **Változtatás** mezőben jelezze, hogy az alapárat vagy az indexet hogyan szeretné módosítani, és hogy százalék vagy új érték alapján történjen a módosítás.</span><span class="sxs-lookup"><span data-stu-id="96db8-107">In the **Change** field, indicate how to update the base price or index, and whether the update must use a percentage or a new value.</span></span> <span data-ttu-id="96db8-108">A választható lehetőségek a következők:</span><span class="sxs-lookup"><span data-stu-id="96db8-108">You can select from the following options:</span></span>
     
-      - <span data-ttu-id="e3328-109">**Indexelés százalékkal**</span><span class="sxs-lookup"><span data-stu-id="e3328-109">**Index by a percentage**</span></span>
+      - <span data-ttu-id="96db8-109">**Indexelés százalékkal**</span><span class="sxs-lookup"><span data-stu-id="96db8-109">**Index by a percentage**</span></span>
     
-      - <span data-ttu-id="e3328-110">**Indexelés ehhez**</span><span class="sxs-lookup"><span data-stu-id="e3328-110">**Index to**</span></span>
+      - <span data-ttu-id="96db8-110">**Indexelés ehhez**</span><span class="sxs-lookup"><span data-stu-id="96db8-110">**Index to**</span></span>
     
-      - <span data-ttu-id="e3328-111">**Alapár százalékkal**</span><span class="sxs-lookup"><span data-stu-id="e3328-111">**Base price by percentage**</span></span>
+      - <span data-ttu-id="96db8-111">**Alapár százalékkal**</span><span class="sxs-lookup"><span data-stu-id="96db8-111">**Base price by percentage**</span></span>
     
-      - <span data-ttu-id="e3328-112">**Alapár ehhez**</span><span class="sxs-lookup"><span data-stu-id="e3328-112">**Base price to**</span></span>
+      - <span data-ttu-id="96db8-112">**Alapár ehhez**</span><span class="sxs-lookup"><span data-stu-id="96db8-112">**Base price to**</span></span>
 
-4.  <span data-ttu-id="e3328-113">Kattintson az **OK** gombra.</span><span class="sxs-lookup"><span data-stu-id="e3328-113">Click **OK**.</span></span>
+4.  <span data-ttu-id="96db8-113">Kattintson az **OK** gombra.</span><span class="sxs-lookup"><span data-stu-id="96db8-113">Click **OK**.</span></span>
 
-<span data-ttu-id="e3328-114">Módosul az előfizetés alapára vagy indexe a megadott értékkel.</span><span class="sxs-lookup"><span data-stu-id="e3328-114">The base price or index of the subscription is updated with the specified value.</span></span>
+<span data-ttu-id="96db8-114">Módosul az előfizetés alapára vagy indexe a megadott értékkel.</span><span class="sxs-lookup"><span data-stu-id="96db8-114">The base price or index of the subscription is updated with the specified value.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="e3328-115">Lásd még</span><span class="sxs-lookup"><span data-stu-id="e3328-115">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="96db8-115">Lásd még</span><span class="sxs-lookup"><span data-stu-id="96db8-115">See also</span></span>
 
-<span data-ttu-id="e3328-116">[Előfizetés indexelése (osztályképernyő)](https://technet.microsoft.com/library/aa558579\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="e3328-116">[Index subscription (class form)](https://technet.microsoft.com/library/aa558579\(v=ax.60\))</span></span>
+<span data-ttu-id="96db8-116">[Előfizetés indexelése (osztályképernyő)](https://technet.microsoft.com/library/aa558579\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="96db8-116">[Index subscription (class form)](https://technet.microsoft.com/library/aa558579\(v=ax.60\))</span></span>
 
   
 
