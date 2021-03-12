@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, InventDimParmFixed, InventProductDimensionLookup, SalesTotals
 audience: Application User, SalesTableDelete, SalesTableListPagePreviewPage, SalesUpdateRemain
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9aa353ad771844abc0860f06d9bc22b9f4adce92
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8bb4c7a542106161f8bc1b8db0976c24faebf907
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429322"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4974810"
 ---
 # <a name="create-sales-orders"></a>Értékesítési rendelések létrehozása
 
@@ -39,7 +38,7 @@ Ez az eljárás bemutatja, hogyan lehet eladási rendelést létrehozni. Ezt a f
 
 ## <a name="enter-sales-order-line-details"></a>Adja meg az értékesítési rendelés sorainak részleteit
     
-Szervezetünk által forgalmazott termékek különböző változatokban kerülhetnek forgalomba, amely termékek között a különbséget jelentheti a konfiguráció, szín és stílus. Továbbá a termékek tárolási dimenzióval rendelkezhetnek, például webhely, raktár, raklap, fejtéses dimenziók (köteg és sorozatszámok). A dimenziók hozzárendelésekor a dimenziókhoz tartozó értékeket ki kell választani a rendelési sorban. A rendelésbevitel hatékonyságának növelése érdekében a rendelési rácshoz rendelje hozzá a megfelelő dimenziókat.
+Szervezetünk által forgalmazott termékek különböző változatokban kerülhetnek forgalomba, amely termékek között a különbséget jelentheti a konfiguráció, szín és stílus. Továbbá a termékek tárolási dimenzióval rendelkezhetnek, például webhely, raktár, raklap, követési dimenziók (köteg és sorozatszámok). A dimenziók hozzárendelésekor a dimenziókhoz tartozó értékeket ki kell választani a rendelési sorban. A rendelésbevitel hatékonyságának növelése érdekében a rendelési rácshoz rendelje hozzá a megfelelő dimenziókat.
     
 1. Az **Értékesítésirendelés-sorok** szakaszban válassza ki az **Értékesítésirendelés-sort.**
 2. **Dimenziók** kijelölése.
@@ -68,6 +67,3 @@ Szervezetünk által forgalmazott termékek különböző változatokban kerülh
     Az **Összegek** oldalon a teljes rendeléssel kapcsolatos részletek láthatók. Ez magában foglalja a részösszeget, amely a sorok nettó összege az alkalmi sorengedményekhez van igazítva, a teljes számlaösszeget, amely egy részösszeg a alkalmi rendelési-szint engedményhez igazítva, díjakat és az áfát, a vevői hitelkeret helyzetét és továbbiakat. A számlaösszeg az az érték, amely megjelenik a vevő számladokumentumában.  
     
 3. Válassza ki az **OK** lehetőséget.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

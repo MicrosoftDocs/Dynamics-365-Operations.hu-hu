@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: TradeNonStockedConversion, TradeNonStockedConversionChangeWizard, TradeNonStockedConversionCheckWorksheet, TradeNonStockedConversionWizard, TradeNonStockedRegister
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 43426e77c30e46f4dd1cc117c38cf6ba5437655b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e49793fc7f6b3f37bafae05770d4b23d24171329
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429323"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4974885"
 ---
 # <a name="create-a-new-trade-agreement"></a>Új kereskedelmi szerződés létrehozása
 
@@ -71,8 +70,10 @@ Ez az eljárás bemutatja, hogyan hozhat létre egy kereskedelmi megállapodást
 5. Zárja be a lapot.
 
 ## <a name="additional-resources"></a>További erőforrások
+
+### <a name="whitepaper"></a>Tanulmány
+További tudnivalókért töltse le a következő (az AX 2012 támogatásához készült, de még a Dynamics 365 Supply Chain Management esetében is érvényes) tanulmányt
+- [Kereskedelmi megállapodások](https://mbs.microsoft.com/files/public/CS/AX2012R3/TradeagreementsinAX.pdf)
+
 ### <a name="community-blogs"></a>Közösségi blogok
 - [Értékesítési árak a Dynamics 365 for Finance and Operations szolgáltatásban](https://financefunction.tech/2018/11/14/sales-prices-in-dynamics-365-for-finance-and-operations/#sales_price_in_trade_agreements)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

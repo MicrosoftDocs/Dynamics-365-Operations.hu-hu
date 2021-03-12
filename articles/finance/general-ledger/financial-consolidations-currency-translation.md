@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 2a6685a2dcf9d7bf7ac82c3dede9c3ece0c08698
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c4561a1193971b131ab2b6c8d64f848d8155c1fc
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4444095"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4975764"
 ---
 # <a name="financial-consolidations-and-currency-translation-overview"></a>Pénzügyi konszolidáció és pénznemátváltás áttekintése
 
@@ -125,7 +124,7 @@ Igény szerint beállíthatja az eltávolítási szabály érvényessége kezdet
 
 Az alapvető tulajdonságok megadása után a tényleges feldolgozási szabályokat a **Sorok** gombra elem kiválasztásával határozhatja meg. Két opció létezik eltávolításokhoz: a eltávolíthatja a nettó változás összegét, vagy meghatározhat egy rögzített összeget.
 
-Válassza ki a forrásszámlákat. Helyettesítő karakterként használhat csillag (\*) karaktert. Ebben a példában az  **1\*** a felosztás adatforrásaként minden olyan számlát használni fog, amelynek **1** -gyel kezdődik a száma.
+Válassza ki a forrásszámlákat. Helyettesítő karakterként használhat csillag (\*) karaktert. Ebben a példában az **1\**_a felosztás adatforrásaként minden olyan számlát használni fog, amelynek _* 1**-gyel kezdődik a száma.
 
 A forrásszámlák kiválasztása után a **Számla meghatározása** használatával határozza meg a célvállalat használt számláját. Válassza a **Forrás** lehetőséget, ha ugyanazt a fő számlát szeretné használni, mint ami a forrásszámlában van megadva. Ha a **Felhasználó által meghatározott** lehetőséget választja, akkor meg kell adnia egy célszámlát.
 
@@ -182,6 +181,3 @@ Az alábbiakban néhány az konszolidációs esetet, amelyeket a Financial repor
 
 ## <a name="generating-consolidated-financial-statements"></a>Konszolidált pénzügyi kimutatások generálása
 További információért azzal kapcsolatosan, hogy hol generálhat konszolidált pénzügyi kimutatásokat, lásd: [Konszolidált pénzügyi kimutatások létrehozását](./generating-consolidated-financial-statements.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

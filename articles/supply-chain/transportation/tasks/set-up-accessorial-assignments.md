@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: TMSAccessorialAssignment
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8d7f48da374a0434130f2cf95bf77a126635cd63
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 28562772c52d06fbb2004bd3a01a7bfa32f58a4e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4429890"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4974035"
 ---
 # <a name="set-up-accessorial-assignments"></a>Kiegészítő szolgáltatási megbízások beállítása
 
@@ -50,6 +49,3 @@ Ez az eljárás bemutatja, hogyan állíthat be kiegészítő szolgáltatást. E
 14. A Kiegészítő szolgáltatás díja mezőben adjon meg egy számot.
 15. Kattintson a Mentés gombra.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

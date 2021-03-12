@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: LedgerJournalTable
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 261354
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland
 ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 5ea11e94c188c04c6d3d8ab0173fcc2ba56335c3
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 4ba08d2ee37e4fdd206de8ee84bd7c45fda67988
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408045"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4975362"
 ---
 # <a name="split-periods-in-periodic-journals"></a>Osztott időszakok az időszaki naplókban
 
@@ -48,6 +47,3 @@ Például negyedéves feladások létrehozásához írja a **4**-es számot az *
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

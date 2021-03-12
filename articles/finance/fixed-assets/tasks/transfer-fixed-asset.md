@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: AssetTable, AssetTransfer, DimensionLookup, AssetTransferConfirmation
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: eb38483d3ac61acb4513e87d8c36ddd0f8863a10
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a0770011a76b1e4cc8b4d13e54fab2d0fba43f8a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4443990"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4975916"
 ---
 # <a name="transfer-a-fixed-asset"></a>Tárgyi eszköz áthelyezése
 
@@ -48,6 +47,3 @@ Ez a feladat-útmutató valamelyik pénzügyi dimenziókészletből helyezi át 
     * A tárgyieszköz-könyvek áthelyezése előtt tekintse át az eredményeket.  
 10. Kattintson az **Áthelyezés** elemre.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

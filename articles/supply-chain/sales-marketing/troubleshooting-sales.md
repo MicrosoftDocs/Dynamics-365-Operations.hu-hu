@@ -8,10 +8,9 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: SalesTable, SalesTableListPage
+ms.search.form: SalesTable, SalesTableListPage, SalesTableListPage_SalesCancelOrder
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: smnatara
 ms.search.validFrom: 2020-9-16
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 6e51723915892f465ce09d09ee9ed622bab9451e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c9a5b7a5e8cac7f8816233dd2d7ff1a7f84ea480
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429475"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4974785"
 ---
 # <a name="troubleshoot-sales-orders"></a>Értékesítési rendelések hibaelhárítása
 
@@ -59,6 +58,8 @@ Beszerzési rendelést létrehozhat értékesítési rendelésből. További inf
 Csak a *Létrehozva* állapotú értékesítési rendelések és visszárurendelések vonhatók vissza. További információkkal kapcsolatban lásd: [Visszárurendelések törlése](../service-management/cancel-return-order.md).
 
 ## <a name="when-i-try-to-cancel-a-sales-order-i-receive-a-reservations-cannot-be-removed-because-there-is-work-created-which-relies-on-the-reservations-error"></a>Amikor megpróbálok érvényteleníteni egy értékesítési rendelést, a „Foglalások nem távolíthatók el, mert van olyan munkafolyamat, amely a foglalásokon alapul” hibaüzenet jelenik meg.
+
+Hibakód: WAX4661
 
 Ha van munka egy értékesítési rendeléshez van társítva, akkor az értékesítési rendelés nem törölhető, amíg a munka nincs érvénytelenítve és visszavonva. Ez a követelmény akkor is érvényes, ha az értékesítési rendeléshez társított munka le van zárva.
 
@@ -108,9 +109,6 @@ A Supply Chain Management jelenleg nem támogatja a jutalékok számítását a 
 
 ## <a name="a-bundle-item-isnt-supported-in-an-intercompany-process"></a>Egy csomagolt cikk nem támogatott a vállalatközi folyamatban.
 
-A csomagolt cikk nem érhető el a beszerzési rendeléshez, mivel a csomagolt cikkhez tartozó értékesítésirendelés-sorok vizsgálatakor láthatja, hogy a mennyiség *0* (nulla), és az állapot *Érvénytelenítve*. Ez szándékosan van. Az értékesítési rendelés csak a csomagolt cikk elemeit vásárolja. Nem vásárolja meg magát a csomagolt elemet.
+A csomagolt cikk nem érhető el a beszerzési rendeléshez, mivel a csomagolt cikkhez tartozó értékesítésirendelés-sorok vizsgálatakor láthatja, hogy a mennyiség *0* (nulla), és az állapot *Visszavonva*. Ez szándékosan van. Az értékesítési rendelés csak a csomagolt cikk elemeit vásárolja. Nem vásárolja meg magát a csomagolt elemet.
 
-Ha csomagban kell vásárolnia, gondolja végig, hogy csomagként kell-e megjelölni , mivel ez a funkció valójában bevétel-megjelenítési forgatókönyvekhez van tervezve. További információ a csomagolt cikkekkel kapcsolatosan: [Csomagok](../../finance/accounts-receivable/revenue-recognition-setup.md#bundles).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+Ha csomagban kell vásárolnia, gondolja végig, hogy csomagként kell-e megjelölni , mivel ez a funkció a bevétel-megjelenítési forgatókönyvekhez van tervezve. További információ a csomagolt cikkekkel kapcsolatosan: [Csomagok](../../finance/accounts-receivable/revenue-recognition-setup.md#bundles).
