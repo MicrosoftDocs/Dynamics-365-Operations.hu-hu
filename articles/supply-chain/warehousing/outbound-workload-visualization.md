@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-08-28
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: cbfb395c9103ff31979bfd57333f689e38915652
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: 2515a71297df7213f93a4c619f7eebf1c2411b39
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4645432"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4965552"
 ---
 # <a name="outbound-workload-visualization"></a>Kimenő munkaterhelések megjelenítése
 
@@ -98,6 +97,3 @@ A következő ábra az eredményül kapott diagramot szemlélteti.
 ![Zóna és munkaállapot vizualizációja](media/work-viz-chart.png "Zóna és munkaállapot vizualizációja")
 
 Ez a diagram két olyan zónát mutat be, amelyek a **SZINT** és az **ÖMLESZTETT** elnevezésekkel rendelkeznek, valamint az **Üres** nevű zónát. Az **Üres** zóna minden olyan munkasort jelöl, amely nem tagja egy zónának. A diagram mindig **Üres** állapottal jeleníti meg az összes nem kapcsolódó szűrt adatot, hogy a lehető legnagyobb láthatóságot biztosítsa. A **SZINT** zónában a diagram három lezárt sort és négy nyitott sort mutat be. Az **ÖMLESZTETT** zónában a diagram négy lezárt sort és egy nyitott sort, valamint 24 érvénytelenített sort mutat be. Végezetül a diagram nyolc olyan lezárt sort jelenít meg, amelyek nem részei egy zónának sem, ezért **Üres** állapottal szerepelnek.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

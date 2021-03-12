@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: InventTrackingDimTracing, InventTrackingDimTracingCriteria
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 30191
 ms.assetid: fdd0939a-855c-430f-a684-94f3baea1df4
 ms.search.region: Global
 ms.author: pjacobse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fa1be4970f1106bf4b87eeaa428bac07c645b4f5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9293578144c51baef34204a2b592d517baa3b0dd
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429772"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4967180"
 ---
 # <a name="item-and-raw-material-tracing-in-inventory-production-and-sales"></a>Cikkek és nyersanyagok nyomon követése a készletben, a gyártás során és az értékesítésben
 
@@ -140,6 +139,3 @@ Létrehozhatja a **Vevőknek szállítva** jelentést, hogy azonosítsa a kiszá
 
 ## <a name="can-i-trace-coproducts-and-byproducts"></a>A társtermékeket és melléktermékeket is nyomon követhetem?
 Nyomon követhet társtermékeket, de nem követheti le a melléktermékeket, mivel a nyomon követési dimenziók javarészt, nem a melléktermékekhez vannak hozzárendelve. Egy cikk nyomon követésekor, a nyomon követési részletek minden kapcsolódó társterméket tartalmaznak. Olyan Társtermék tartalmazó csomópont "Társtermék" szó részletes adatait tartalmazza. Megtekintheti továbbá egy társtermék részleteit a csomópont kijelölésével a nyomon-követési részletekben, majd a **Termelés** gyorslap alábontásával.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

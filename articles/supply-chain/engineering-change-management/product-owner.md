@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: EngChgProductOwner
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 4308020d66995d857e547be47216cb82caacf035
-ms.sourcegitcommit: 5f21cfde36c43887ec209bba4a12b830a1746fcf
+ms.openlocfilehash: 90f5596f9b5fc45e78cc49a3309c45864e07e70b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "4429967"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4967333"
 ---
 # <a name="product-owners"></a>Terméktulajdonosok
 
@@ -61,6 +60,3 @@ Az X termék például a *Design kabinetek* terméktulajdonosi csoportjához van
 ## <a name="product-owners-and-approvals"></a>Terméktulajdonosok és jóváhagyások
 
 Mivel a terméktulajdonosok tudják, hogy az egyes mérnöki módosítások előnyösek-e termékeik számára, gyakran érdemes ezeket belefoglalni a mérnöki változáskezelés modul jóváhagyási folyamatának részeként. Ezt a módszert úgy hajthatja végre, hogy a termék tulajdonosait a mérnöki változtatások kezeléséhez használt munkafolyamatokban résztvevő szolgáltatókként állítja be. A rendszer ezután a munkafolyamatokban hozzárendeli a jóváhagyási feladatokat a mérnöki módosítási kérelmekben és a mérnöki módosítási rendelésekben szereplő termékek alapján. További tájékoztatást [A mérnöki termékek módosításának kezelése](engineering-change-management.md) részben talál.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: smnatara
 ms.search.validFrom: 2020-11-04
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 63993fca2164301d31dbfa1474a4cf5eb16273e6
-ms.sourcegitcommit: 8eefb4e14ae0ea27769ab2cecca747755560efa3
+ms.openlocfilehash: d999c91aa1cc14f29ebfa6be8e456e45ef0d3fa4
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "4516795"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4966180"
 ---
 # <a name="troubleshoot-process-manufacturing"></a>Folyamatszerű gyártás – hibaelhárítás
 
@@ -41,6 +40,3 @@ A 10.0.13-as verzió előtti kiadásokban, ha nem használja a lean termelési k
 > Készletzárást készül végrehajtani %1. Az %1 egyeztetési időszak végén nem sikerült visszavezetéses költségelszámolás kiszámítását végrehajtani. Ne felejtse el végrehajtani az %1 egyeztetési időszak végén végrehajtani a visszavezetéses költségelszámolás kiszámítását. A készletekre, az eladott áruk beszerzési értékére és az eltérésekre vonatkozó becslések nem lehetnek helyesek az alfőkönyv vagy a főkönyv modulban mindaddig, amíg nem történt meg a végrehajtás.
 
 A problémát a 10.0.13-as és újabb verzióiban javítottuk. További tájékoztatást a [KB 4582468](https://fix.lcs.dynamics.com/Issue/Details?kb=4582468&bugId=468844&dbType=3&qc=fcd64080446a27382cfde3e4c3bdcfb714279185932259cd11ceb0d500617296) témakörben talál.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
