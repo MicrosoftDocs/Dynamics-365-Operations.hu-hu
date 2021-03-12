@@ -11,42 +11,41 @@ ms.technology: ''
 ms.search.form: TMSAccessorialAssignment
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8d7f48da374a0434130f2cf95bf77a126635cd63
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 28562772c52d06fbb2004bd3a01a7bfa32f58a4e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4429890"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4974035"
 ---
-# <a name="set-up-accessorial-assignments"></a><span data-ttu-id="6cbcd-103">Kiegészítő szolgáltatási megbízások beállítása</span><span class="sxs-lookup"><span data-stu-id="6cbcd-103">Set up accessorial assignments</span></span>
+# <a name="set-up-accessorial-assignments"></a><span data-ttu-id="d259d-103">Kiegészítő szolgáltatási megbízások beállítása</span><span class="sxs-lookup"><span data-stu-id="d259d-103">Set up accessorial assignments</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="6cbcd-104">Ez az eljárás bemutatja, hogyan állíthat be kiegészítő szolgáltatást.</span><span class="sxs-lookup"><span data-stu-id="6cbcd-104">This procedure shows how to set up an accessorial assignment.</span></span> <span data-ttu-id="6cbcd-105">Ezt általában egy szállítási koordinátor végzi.</span><span class="sxs-lookup"><span data-stu-id="6cbcd-105">This is typically done by a transportation coordinator.</span></span> <span data-ttu-id="6cbcd-106">Az útmutató használata előtt futassa le a „Központi kiegészítő szolgáltatások díjainak és kiegészítő alaptermékek beállítása” útmutatót.</span><span class="sxs-lookup"><span data-stu-id="6cbcd-106">Before you use this guide you need to run the "Set up hub accessorial charges and accessorial masters" guide.</span></span>
+<span data-ttu-id="d259d-104">Ez az eljárás bemutatja, hogyan állíthat be kiegészítő szolgáltatást.</span><span class="sxs-lookup"><span data-stu-id="d259d-104">This procedure shows how to set up an accessorial assignment.</span></span> <span data-ttu-id="d259d-105">Ezt általában egy szállítási koordinátor végzi.</span><span class="sxs-lookup"><span data-stu-id="d259d-105">This is typically done by a transportation coordinator.</span></span> <span data-ttu-id="d259d-106">Az útmutató használata előtt futassa le a „Központi kiegészítő szolgáltatások díjainak és kiegészítő alaptermékek beállítása” útmutatót.</span><span class="sxs-lookup"><span data-stu-id="d259d-106">Before you use this guide you need to run the "Set up hub accessorial charges and accessorial masters" guide.</span></span>
 
 
-## <a name="set-up-accessorial-assignment"></a><span data-ttu-id="6cbcd-107">Kiegészítő szolgáltatás beállítása</span><span class="sxs-lookup"><span data-stu-id="6cbcd-107">Set up Accessorial assignment</span></span>
-1. <span data-ttu-id="6cbcd-108">Ugorjon a Szállításkezelés > Beállítás > Minősítés > Kiegészítő szolgáltatások lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="6cbcd-108">Go to Transportation management > Setup > Rating > Accessorial assignments.</span></span>
-2. <span data-ttu-id="6cbcd-109">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="6cbcd-109">Click New.</span></span>
-3. <span data-ttu-id="6cbcd-110">Írjon be egy értéket a Név mezőbe.</span><span class="sxs-lookup"><span data-stu-id="6cbcd-110">In the Name field, type a value.</span></span>
-4. <span data-ttu-id="6cbcd-111">Bontsa ki a Részletek részt.</span><span class="sxs-lookup"><span data-stu-id="6cbcd-111">Toggle the expansion of the Details section.</span></span>
-5. <span data-ttu-id="6cbcd-112">A Központ mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="6cbcd-112">In the Hub field, click the drop-down button to open the lookup.</span></span>
-6. <span data-ttu-id="6cbcd-113">A listában válassza ki a Központot, amely számára létrehozta a kiegészítő alaptermékeket a „Központi kiegészítő szolgáltatások díjainak és kiegészítő alaptermékek beállítása” útmutató futtatásakor.</span><span class="sxs-lookup"><span data-stu-id="6cbcd-113">In the list, select the Hub that you created an accessorial master for when you ran the "Set up hub accessorial charges and accessorial masters" guide.</span></span> 
-7. <span data-ttu-id="6cbcd-114">A Központi kiegészítő szolgáltatás azonosítója mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="6cbcd-114">In the Hub accessorial ID field, click the drop-down button to open the lookup.</span></span>
-8. <span data-ttu-id="6cbcd-115">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="6cbcd-115">In the list, click the link in the selected row.</span></span>
-9. <span data-ttu-id="6cbcd-116">Bontsa ki a Feltételek részt.</span><span class="sxs-lookup"><span data-stu-id="6cbcd-116">Toggle the expansion of the Criteria section.</span></span>
-    * <span data-ttu-id="6cbcd-117">A Kritériumok részben kiválaszthatja a pontos kritériumot a költség alkalmazására az itt felkínált különböző lehetőségek alapján.</span><span class="sxs-lookup"><span data-stu-id="6cbcd-117">In the Criteria section you can choose the exact criteria for when the charge should apply, based on the different values offered here.</span></span>  
-10. <span data-ttu-id="6cbcd-118">Állítsa a Mindig alkalmazza lehetőséget Igenre.</span><span class="sxs-lookup"><span data-stu-id="6cbcd-118">Set the Always apply option to Yes.</span></span>
-11. <span data-ttu-id="6cbcd-119">Válasszon ki egy lehetőséget a Kiegészítő szolgáltatás társítási szintje mezőben.</span><span class="sxs-lookup"><span data-stu-id="6cbcd-119">In the Accessorial assignment level field, select an option.</span></span>
-12. <span data-ttu-id="6cbcd-120">Bontsa ki a Számítás részt.</span><span class="sxs-lookup"><span data-stu-id="6cbcd-120">Toggle the expansion of the Calculation section.</span></span>
-13. <span data-ttu-id="6cbcd-121">A Kiegészítő szolgáltatás díja mezőben válassza ki a „Fix” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="6cbcd-121">In the Accessorial fee type field, select 'Flat'.</span></span>
-    * <span data-ttu-id="6cbcd-122">A Kiegészítő díj típusa határozza meg, hogy hogyan kell kiszámítani a tényleges költséget.</span><span class="sxs-lookup"><span data-stu-id="6cbcd-122">The Accessorial fee type determines how to calculate the actual charge.</span></span> <span data-ttu-id="6cbcd-123">Ebben a példában fix költségről van szó.</span><span class="sxs-lookup"><span data-stu-id="6cbcd-123">In this example it's a flat charge.</span></span>  
-14. <span data-ttu-id="6cbcd-124">A Kiegészítő szolgáltatás díja mezőben adjon meg egy számot.</span><span class="sxs-lookup"><span data-stu-id="6cbcd-124">In the Accessorial fee field, enter a number.</span></span>
-15. <span data-ttu-id="6cbcd-125">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="6cbcd-125">Click Save.</span></span>
+## <a name="set-up-accessorial-assignment"></a><span data-ttu-id="d259d-107">Kiegészítő szolgáltatás beállítása</span><span class="sxs-lookup"><span data-stu-id="d259d-107">Set up Accessorial assignment</span></span>
+1. <span data-ttu-id="d259d-108">Ugorjon a Szállításkezelés > Beállítás > Minősítés > Kiegészítő szolgáltatások lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="d259d-108">Go to Transportation management > Setup > Rating > Accessorial assignments.</span></span>
+2. <span data-ttu-id="d259d-109">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="d259d-109">Click New.</span></span>
+3. <span data-ttu-id="d259d-110">Írjon be egy értéket a Név mezőbe.</span><span class="sxs-lookup"><span data-stu-id="d259d-110">In the Name field, type a value.</span></span>
+4. <span data-ttu-id="d259d-111">Bontsa ki a Részletek részt.</span><span class="sxs-lookup"><span data-stu-id="d259d-111">Toggle the expansion of the Details section.</span></span>
+5. <span data-ttu-id="d259d-112">A Központ mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="d259d-112">In the Hub field, click the drop-down button to open the lookup.</span></span>
+6. <span data-ttu-id="d259d-113">A listában válassza ki a Központot, amely számára létrehozta a kiegészítő alaptermékeket a „Központi kiegészítő szolgáltatások díjainak és kiegészítő alaptermékek beállítása” útmutató futtatásakor.</span><span class="sxs-lookup"><span data-stu-id="d259d-113">In the list, select the Hub that you created an accessorial master for when you ran the "Set up hub accessorial charges and accessorial masters" guide.</span></span> 
+7. <span data-ttu-id="d259d-114">A Központi kiegészítő szolgáltatás azonosítója mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="d259d-114">In the Hub accessorial ID field, click the drop-down button to open the lookup.</span></span>
+8. <span data-ttu-id="d259d-115">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="d259d-115">In the list, click the link in the selected row.</span></span>
+9. <span data-ttu-id="d259d-116">Bontsa ki a Feltételek részt.</span><span class="sxs-lookup"><span data-stu-id="d259d-116">Toggle the expansion of the Criteria section.</span></span>
+    * <span data-ttu-id="d259d-117">A Kritériumok részben kiválaszthatja a pontos kritériumot a költség alkalmazására az itt felkínált különböző lehetőségek alapján.</span><span class="sxs-lookup"><span data-stu-id="d259d-117">In the Criteria section you can choose the exact criteria for when the charge should apply, based on the different values offered here.</span></span>  
+10. <span data-ttu-id="d259d-118">Állítsa a Mindig alkalmazza lehetőséget Igenre.</span><span class="sxs-lookup"><span data-stu-id="d259d-118">Set the Always apply option to Yes.</span></span>
+11. <span data-ttu-id="d259d-119">Válasszon ki egy lehetőséget a Kiegészítő szolgáltatás társítási szintje mezőben.</span><span class="sxs-lookup"><span data-stu-id="d259d-119">In the Accessorial assignment level field, select an option.</span></span>
+12. <span data-ttu-id="d259d-120">Bontsa ki a Számítás részt.</span><span class="sxs-lookup"><span data-stu-id="d259d-120">Toggle the expansion of the Calculation section.</span></span>
+13. <span data-ttu-id="d259d-121">A Kiegészítő szolgáltatás díja mezőben válassza ki a „Fix” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="d259d-121">In the Accessorial fee type field, select 'Flat'.</span></span>
+    * <span data-ttu-id="d259d-122">A Kiegészítő díj típusa határozza meg, hogy hogyan kell kiszámítani a tényleges költséget.</span><span class="sxs-lookup"><span data-stu-id="d259d-122">The Accessorial fee type determines how to calculate the actual charge.</span></span> <span data-ttu-id="d259d-123">Ebben a példában fix költségről van szó.</span><span class="sxs-lookup"><span data-stu-id="d259d-123">In this example it's a flat charge.</span></span>  
+14. <span data-ttu-id="d259d-124">A Kiegészítő szolgáltatás díja mezőben adjon meg egy számot.</span><span class="sxs-lookup"><span data-stu-id="d259d-124">In the Accessorial fee field, enter a number.</span></span>
+15. <span data-ttu-id="d259d-125">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="d259d-125">Click Save.</span></span>
 
