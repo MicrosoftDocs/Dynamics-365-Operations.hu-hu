@@ -10,16 +10,15 @@ ms.service: Dynamics365Operations
 ms.technology: ''
 audience: Application user
 ms.reviewer: margoc
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 9d99233831ee4f838c0230e92db0750d94b2b55b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3ec0e21ccecd5bf90e9b31b5aade33e585108c62
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4444018"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4990239"
 ---
 # <a name="learning-catalog-for-users-of-dynamics-365-finance"></a>Dynamics 365 Finance-felhasználók képzési katalógusa
 
@@ -54,12 +53,10 @@ A következő katalógus az alapismeretekből a meghatározott tartományokra, a
 | [Költségvetés konfigurálása és használata a következőben: Dynamics 365 Finance](https://docs.microsoft.com/learn/paths/configure-use-budgeting-dyn365-finance/)   | Minden szervezet, függetlenül attól, hogy magán vagy állami, költségvetéslétrehozással állítja be a pénzügyi és a működési célokat. A költségvetés-tervezés kollaboratív és folyamatvezérelt jellegével hatékonyabbá teheti a költségvetési folyamatot. | Ingyenes, saját tempójú online tanulási útvonal | 3.5 óra |
 | [Tárgyi eszközök konfigurálása és kezelése a következőben: Dynamics 365 Finance](https://docs.microsoft.com/learn/paths/configure-manage-fixed-assets-dyn365-finance/) | A tárgyi eszközök beszerzési adatainak beállítása és rögzítése után lehetőség van az értékcsökkenésük elszámolására, valamint a tőkésítési küszöb beállítására. A tárgyi eszközök kezelésével kapcsolatos módszereknek meg kell felelniük a nemzetközi könyvelési szabványoknak, illetve az egyes országokban vagy régiókban érvényes könyvelési jogszabályoknak is. | Ingyenes, saját tempójú online tanulási útvonal | 4.5 óra |
 | [Első lépések az ellátási láncok költségkönyvelésével kapcsolatban a Dynamics 365 Finance alkalmazásban](https://docs.microsoft.com/learn/paths/get-started-cost-accounting-supply-chains-dyn365-finance/) | A költségkönyvelés lehetővé teszi adatok összegyűjtését különböző forrásokból, például: főkönyv, részfőkönyvek, költségvetések és statisztikai adatok. Ezután elemezheti, összesítheti és kiértékelheti a költségadatokat, hogy a vezetőség a lehető legjobb döntéseket hozhassa meg az ármódosításokkal, a költségvetésekkel, a költségkontrollal stb. kapcsolatban.  | Ingyenes, saját tempójú online tanulási útvonal | 1 óra  |
+| [A Költséggazdálkodás modul használata a Dynamics 365 Project Operations rendszerben](https://docs.microsoft.com/learn/paths/work-expense-management/) | Maximalizálja a nyereségességet és minimalizálja a költségeket a Dynamics 365 Project Operations pontos költségkezelési képességeinek segítségével. Sajátítsa el a rendszer konfigurálásának, valamint a költségjelentések létrehozásának és jóváhagyásának folyamatát. | Ingyenes, saját tempójú online tanulási útvonal | 5.5 óra  |
 
 ## <a name="exam"></a>Vizsga<a name="exam"></a>
 
 | Tartalom | Leírás  | Formátum  |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
 | [Dynamics 365 alapok](https://docs.microsoft.com/learn/certifications/d365-fundamentals?wt.mc_id=learningredirect_certs-web-wwl)    | Bizonyítsa be, hogy érti a Microsoft Dynamics 365 rendszert; Power Platform; felhőalapú fogalmak; licencelési beállítások; és telepítési és kiadási beállítások | Vizsga; a költség régiónként változik |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

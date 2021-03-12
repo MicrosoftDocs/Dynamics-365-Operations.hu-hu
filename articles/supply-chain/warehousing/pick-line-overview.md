@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 3a2c8a69a2c64214a38a654042ea2f62575e7f52
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 433ed2152c47dbe698a640b099cb34727fe63452
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429399"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4989693"
 ---
 # <a name="set-up-a-mobile-device-menu-item-to-provide-a-pick-line-overview"></a>Mobileszköz-menüelem beállítása a kitárolási sor áttekintésének biztosításához
 
@@ -69,6 +68,3 @@ Mobileszköz-menüelem beállításához a kitárolási sor áttekintésének bi
     - A többi **Megjelenített mező** mezővel legfeljebb hét további megjeleníthető mezőt adhat hozzá igény szerint. Mindegyik **Megjelenített mező** mezőben válassza ki a munkasor mező nevét. Ekkor minden sor megjelenít egy értéket a mezőben. Az értékek az itt kiválasztott sorrendben jelennek meg. Ha nem szükséges mind a hét érték, akkor üresen hagyhat egyes **Megjelenítendő mező** mezőket.
 
 1. A művelet ablaktáblán válassza a **Mentés** elemet., majd zárja be a **Mezőlista** oldalt.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

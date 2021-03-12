@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: VendPaymMode
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d6d60502cd7f749b71cf39cc38d8a39dcbb7b108
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 92bc314e69628f2a287ba7c9a7c2d3d73a0bfd33
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4443824"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4988102"
 ---
 # <a name="set-up-method-of-payment-for-iso20022-credit-transfer"></a>Fizetési mód beállítása ISO20022-jóváírás átutalásához
 
@@ -48,6 +47,3 @@ Ez a harmadik azon öt eljárás közül, amelyek elektronikus jelentési beáll
 10. A Fizetési számla mezőben adja meg a „DEMF OPER” értékeket.
 11. Kattintson a Mentés gombra.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

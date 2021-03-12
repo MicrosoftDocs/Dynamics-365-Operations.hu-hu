@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: HcmWorkerAdvHolderTableListPage_RU
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 262574
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
 ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: ddc3b9ec0b7e1980cef97a97184d2639bc62901a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d6563e2cca87cdd3eea38e0f30d7c7de91003197
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408027"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4988385"
 ---
 # <a name="advance-holders-overview"></a>Előlegre jogosultak áttekintése
 
@@ -158,6 +157,3 @@ A bizonylatnapló feldolgozása után, amennyiben az **Átutalandó összeg** me
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

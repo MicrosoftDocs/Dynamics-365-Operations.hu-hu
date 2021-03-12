@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: CAMDimension, CAMAXMainAccountDimensionMemberProviderConfiguration, CAMDimensionMember
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 87f93fd7c1c42045274d6b89847b27e93614d9a4
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3f58b6896dd5b9e257bf6066e56142dcd2d8fb45
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4444114"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4990792"
 ---
 # <a name="create-cost-elements"></a>Költségösszetevők létrehozása 
 
@@ -58,6 +57,3 @@ A Költségkönyvelésben számos módon a hozhatók létre költségelemek. Ez 
 1. Kattintson a Dimenziótagok megtekintése elemre.
     * Az importált főkönyvi számlák megtekintése költségösszetevőként, amelyre a költségek könyvelhetők.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

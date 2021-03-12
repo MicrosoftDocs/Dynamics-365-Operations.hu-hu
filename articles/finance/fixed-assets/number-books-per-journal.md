@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-11-19
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: d4ba98cefdc0b555eedfaa56b6a3ca4870b5de93
-ms.sourcegitcommit: 65f9e2584c0530b1a71655aae09101691726b47f
+ms.openlocfilehash: cfb9a9e1456a7d9067e3c4369a7eb7150326655d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "4650664"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4988952"
 ---
 # <a name="number-of-books-per-journal"></a>Könyvek száma naplónként
 
@@ -46,7 +45,7 @@ A kötegelt feldolgozási feladat nem tartalmazza a lezárt könyveket. Egy ért
 
 A program a könyvek számának korlátját alkalmazza, ha nem létezik ismétlődő eszközazonosító ugyanabban a naplóban. Ha azonban az eszközazonosító megegyezik a könyvazonosítóval, akkor a naplónkénti könyvek száma túlléphető, hogy az eszközazonosító ugyanabban a naplóban maradjon.
 
-Például 5.001 tárgyi eszközazonosító van, három könyv van társítva minden tárgyi eszközazonosítóhoz, és minden eszközkönyv ugyanarra a feladási rétegre kerül. Az értékcsökkenést három egymást követő hónapban futtatja összegzés nélkül. Az értékcsökkenési napló kötegelt feladattal jön létre, a rendszer pedig hét naplót hoz létre, amelyek 667 tárgyi eszközazonosítóval és három könyvvel rendelkeznek minden tárgyi eszközazonosítóhoz. Az eredmény 2.001 könyv lesz. Ezért három hónapon belül 6.003 naplósor lesz ugyanazon eszközazonosítók fenntartásához ugyanabban a naplóban. A rendszer létrehoz egy naplót is, amely 332 tárgyi eszközazonosítóval és három könyvvel rendelkezik minden tárgyi eszközazonosítóhoz. Három hónap múlva 2.988 sor lesz.
+Például 5.001 tárgyi eszközazonosító van, három könyv van társítva minden tárgyi eszközazonosítóhoz, és minden eszközkönyv ugyanarra a feladási rétegre kerül. Az értékcsökkenést három egymást követő hónapban futtatja összegzés nélkül.  Az értékcsökkenési napló kötegelt feladattal jön létre, a rendszer pedig hét naplót hoz létre, amelyek 667 tárgyi eszközazonosítóval és három könyvvel rendelkeznek minden tárgyi eszközazonosítóhoz. Az eredmény 2.001 könyv lesz. Ezért három hónapon belül 6.003 naplósor lesz ugyanazon eszközazonosítók fenntartásához ugyanabban a naplóban. A rendszer létrehoz egy naplót is, amely 332 tárgyi eszközazonosítóval és három könyvvel rendelkezik minden tárgyi eszközazonosítóhoz. Három hónap múlva 2.988 sor lesz.
 
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+> [!Note] 
+> Ha az **Értékcsökkenés összegzése** paraméter be van kapcsolva az értékcsökkenési javaslat létrehozásakor, akkor a **Könyvek száma naplónként – Értékcsökkenési javaslat** mezőnek nincs hatása. Ebben az esetben a könyvek száma naplónként 6000, ami a belsőleg meghatározott korlát.
