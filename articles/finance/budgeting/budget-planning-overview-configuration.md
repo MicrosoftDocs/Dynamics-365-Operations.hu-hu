@@ -1,7 +1,7 @@
 ---
 title: Költségvetés-tervezés áttekintése
 description: Ez a témakör bemutatja a költségvetés-tervezést. Olyan információt közöl, mely a költségvetés-tervezés konfigurálásához és a költségvetés-tervezési folyamatok beállításához nyújt segítséget.
-author: ryansandness
+author: panolte
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: BudgetPlanningConfiguration
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 17251
 ms.assetid: a2e06633-a800-4840-a962-88fed8462104
 ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c3744fd823576b597b4550008338e3cc96cb585d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 847ae83102345a8005a8b2a630805d22ccfd736d
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4444103"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5019228"
 ---
 # <a name="budget-planning-overview"></a>Költségvetés-tervezés áttekintése
 
@@ -205,6 +204,3 @@ A **Műveletek** menü segítségével egy létező folyamat másolásával is l
 Egy másik hasznos parancs a **Műveletek** menüben a **Költségvetési folyamat állapotának megtekintése** link. Ez a parancs grafikus formában jeleníti meg a költségvetési terveket egy folyamat során a megfelelő adatokkal együtt, mint például a tervek munkafolyamat-állapota, összeg és egység szerinti összesítések, és egy kattintással elérhető navigáció a költségvetési tervekhez.
 
 [![Költségvetés-tervezési folyamat állapota](./media/budgetplanningprocessstatus-300x171.png)](./media/budgetplanningprocessstatus.png)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

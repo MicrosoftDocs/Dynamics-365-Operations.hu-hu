@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetParameters
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2505f5f334c3f86959023812880e956f0ebaac09
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5e4b76ba90ab03cd35e72eff8acc89f780659fa5
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429625"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5020653"
 ---
 # <a name="asset-management-parameters"></a>Az Eszközkezelés paraméterei
 
@@ -34,21 +33,20 @@ Az Eszközkezelésben be kell állítani az eszközökkel, a munkarendelésekkel
 > [!NOTE]
 > Ha be szeretne állítani egy olyan rendszert, amely az Eszközkezelési funkciók teszteléséhez tartalmaz bemutató adatokat, akkor a következő témakör tartalmaz további tájékoztatást: [Bemutató környezet bevezetése](../../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md).
 
-**Eszközök** hivatkozás
+## <a name="the-assets-tab"></a>Az Eszközök lap
+
+Az **Eszközök lap** a következő beállításokat tartalmazza:
 
 - Az **Alapértelmezett munkavégzési helyszín** a normál munkavégzési helyszín; az új eszközök létrehozásakor automatikusan ez van kiválasztva az eszközökhöz.  
 - A **Szokásos naptár** mezőben válassza ki, hogy melyik naptárat szeretné használni az eszköz fő teljesítménymutatóinak kiszámításához, ha nincs erőforrás megadva az eszközhöz.  
 - A **Nézet** mezőben válassza ki, hogy melyik normál nézet jelenjen meg az **Eszköz megtekintése** űrlap megnyitásakor (**Eszközkezelés** > **Közös** > **Eszközök** > **Eszköz megtekintése**).
 - Az **Alapértelmezett kéréstípus** a karbantartási kérés normál típusa; az új kérések létrehozásakor automatikusan ez van kiválasztva.  
-- Ha eszközökkel összekapcsolt projekteket szeretne létrehozni, a **Fő projekt** és a **Projekthierarchia** kiválasztásával kapcsolatos projektkapcsolatok és a **Projektek automatikus létrehozása** beállítás meg van adva az **Eszközkezelési paraméterek** között.  
-- A **Munkarendelési projekt maszkja** mezőben határozható meg a munkarendelésekhez és a segédeszközökhöz engedélyezett alprojektek száma. A munkarendelési maszkkal határozható meg, hogy hány munkarendelés hozható létre egy eszközhöz, illetve hány munkarendelés használható az összekapcsolt munkarendelési feladat projektjén. A munkarendelés maszkja a **Kapcsolódó munkarendelési maszk** mezőben, az **Eszközkezelési paraméterek** oldalon (**Eszközkezelés** > **Beállítás** > **Eszközkezelési paraméterek** > **Munkarendelések**) állítható be.  
-    >[!NOTE]
-    >Az összekapcsolt munkarendelés maszkjának formátuma kettőskeresztekből (#) áll – attól függően, hogy maximálisan hány munkarendelést szeretne létrehozni egy eszközhöz. Példa: a ## értékkel maximálisan 99 alprojekt hozható létre.  
 - A feladattípusok előrejelzéseit az **Előrejelzési projekt** mezőben kiválasztott projektben tárolja a rendszer. Minden feladattípushoz automatikusan létrejön egy új tevékenység az előrejelzési projekthez. Ezután az előrejelzési projektben menti a rendszer a feladattípusok előrejelzéseit.  
-- A **Modell** mezőben válassza ki a feladattípus és a munkarendelés előrejelzéseihez használt előrejelzési modellt.  
+- A **Modell** mezőben válassza ki a feladattípus és a munkarendelés előrejelzéseihez használt előrejelzési modellt.
 
+## <a name="the-work-orders-tab"></a>A Munkarendelések lap
 
-**Munkarendelések** hivatkozás
+A **Munkarendelések lap** a következő beállításokat tartalmazza:
 
 - Az **Alapértelmezett munkarendelési típus** határozza meg a munkarendelés létrehozásakor használt normál beállításokat.  
 - A **Megelőző munkarendelés típusa** határozza meg a munkarendelések karbantartási tervekből történő létrehozásakor használt munkarendelési típust. Ha üresen hagyja a mezőrt a rendszer az **Alapértelmezett munkarendelési típus** mezőben megadott munkarendelési típust használja.  
@@ -67,8 +65,9 @@ Az Eszközkezelésben be kell állítani az eszközökkel, a munkarendelésekkel
     - Karbantartási körök beállítása  
 - A **Kategória** gyorslapon a munkarendelésekhez tartozó fogyasztásához kapcsolt alapértelmezett kategóriák definiálhatók.  
 
+## <a name="the-work-order-scheduling-tab"></a>A Munkarendelés ütemezése lap
 
-**Munkarendelés ütemezése** hivatkozás
+A **Munkarendelés ütemezése** lap az **Általános** gyorslapon a következő beállításokat tartalmazza:
 
 - Az **Időkorlát ütemezése** a munkarendelés várt kezdő dátuma alapján meghatározza azt az időszakot (napokban), amely alatt sor kerül a munkarendelési feladatok tervezésére.  
 - Az **Alapterv** a **Szervezeti adminisztráció** modul erőforrásaihoz kapcsolódik. Ha kiválaszt egy alaptervet ebben a mezőben, akkor megtekintheti a munkarendelésekhez társított kapacitásfoglalásokat a **Kapacitásfoglalások** (**Szervezeti adminisztráció** > **Erőforrások** > **Erőforrások** > kiválasztott erőforrás > **Erőforrás** lap > **Kapacitásfoglalások** gomb) részen. Ha üresen hagyja ezt a mezőt, akkor megtekintheti a munkarendelésekkel összekapcsolt kapacitásterhelést a **Kapacitásterhelés** (**Szervezeti adminisztráció** \> **Erőforrások** \> **Erőforrások** \> kiválasztott erőforrás \> **Erőforrás** lap \> **Kapacitásterhelés** gomb) részen.  
@@ -100,13 +99,10 @@ Az alábbi listában leírt összes mező a kiszámított értékelési pontszá
   - Ha azt feltételezzük, hogy nincs kiválasztva felelős dolgozó és felelős dolgozói csoport az ütemezendő munkarendeléshez, akkor hozzáadja és kivonja a fenti **Preferált dolgozó**, **Preferált dolgozói csoport**, **Eszköz helye** és **Kezdő dátum** mezőkkel kapcsolatos példák értékelési pontszámait, és 3010,00 lesz a végeredmény. Ez magas pontszám az olyan dolgozóknak, akik már preferált dolgozóként lettek kiválasztva, illetve szerepelnek a preferált dolgozói csoportban a munkarendeléshez, illetve akik ugyanabban a létesítményben vannak, mint az eszköz, amelyhez ütemezni kell a feladatot. Ez azt jelenti, hogy a kérdéses dolgozó jó eséllyel lesz kiválasztva a feladatra a munkarendelés ütemezése során.  
   - Ha a fenti nyolc mező egyikébe „0,00” érték kerül, az értékelési pontszámot nem használja a rendszer a munkarendelés ütemezése során.  
 
-**Dokumentumtípusok** hivatkozás
+## <a name="the-document-types-tab"></a>A Dokumentum típusok lap
 
 Válassza ki azokat a dokumentumtípusokat, amelyeket elérhetővé szeretne tenni a munkarendelési jelentéshez társított mellékletek nyomtatásához. Ehhez válassza a dokumentumtípust a **Rendelkezésre áll** szakaszban, majd az ![előre nyíl](media/15-setup-for-objects.png) gombot. Ha el szeretné távolítani a kijelölt dokumentumtípust, válassza ki a **Kijelölve** szakaszban, és válassza a ![vissza nyíl](media/16-setup-for-objects.png) gombot.
 
-**Számsorozatok** hivatkozás
+## <a name="the-number-sequences-tab"></a>A Számsorozatok lap
 
 Válassza ki a szükséges számsorozatot ebben a szakaszban. Az eszközökhöz két számsorozat használható: egy a manuálisan létrehozott eszközökhöz, egy pedig a függőben lévő eszközökkel létrehozottakhoz.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

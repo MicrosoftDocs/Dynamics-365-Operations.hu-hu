@@ -1,7 +1,7 @@
 ---
 title: A külső szállítókkal történő szállítói együttműködés
 description: Ez a témakör azt magyarázza el, hogy a megbízott beszerzők hogyan tudják a Szállítói portált a külső szállítókkal való együttműködésre használni a beszerzési rendelés visszaigazolási folyamata alatt.
-author: mkirknel
+author: RichardLuan
 manager: tfehr
 ms.date: 11/02/2017
 ms.topic: article
@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: PurchRFQCaseTableListPage, VendVendorPortalInvoicePart, PurchaseOrderResponseActionRemarks, PurchVendorPortalAllResponse, PurchOrderInExternalReview, PurchVendorPortalPendingResponsesPart, PurchVendorPortalResponses, PurchVendorPortalConfirmedOpenOrdersPart
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 221264
 ms.assetid: dde49743-1541-4353-a030-63ca3069cd7d
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 82249f460e5ddce9b9d43906008a3248a80daafb
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 594a5bc8762d4c3fdc0bfd901ab97262b0f67a53
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4429920"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5016753"
 ---
 # <a name="vendor-collaboration-with-external-vendors"></a>A külső szállítókkal történő szállítói együttműködés
 
@@ -259,6 +258,3 @@ A felhasználó, aki az ajánlatkérési folyamat paramétereit beállítja, tö
 - %createddate%
 
 Ha módosítás szükséges, és elküldik az ajánlatkérés elküldését követően, az ajánlatkérés elküldése minden meghívott szállítónál ismét megtörténik. A közzétett dokumentum is frissül a **Közzétett ajánlatkérések megnyitása** lapon.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

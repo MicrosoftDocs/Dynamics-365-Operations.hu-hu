@@ -1,7 +1,7 @@
 ---
 title: Beszerzésikategória-hierarchiák irányelveinek beállítása
 description: A következő lépésekkel egy kategóriába tartozó termékek megrendelésére vonatkozóan állíthat be szabályokat.
-author: mkirknel
+author: RichardLuan
 manager: tfehr
 ms.date: 07/22/2019
 ms.topic: business-process
@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: SysPolicyListPage, SysPolicy, ProcCategoryAccessPolicyRule, ProcCategoryPolicyRule, EcoResCategorySingleLookup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d113181b5c78c0f35292b5f14cedd12bacdc7364
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3fc01793ee83444e5c7097021c19aeda80a132e6
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429457"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017094"
 ---
 # <a name="set-up-policies-for-procurement-category-hierarchies"></a>Beszerzésikategória-hierarchiák irányelveinek beállítása
 
@@ -52,6 +51,3 @@ A következő lépésekkel egy kategóriába tartozó termékek megrendelésére
 6. Válasszon ki egy lehetőséget a **Szállító kiválasztása** mezőben. Válasszon ki egy szabályt a kiválasztható szállítók típusának ellenőrzéséhez az igénylések létrehozásakor.  
 7. Kattintson a **Bezárás** gombra. Az így definiált irányelvszabályok Felhasználás típusú igénylésekre érvényesek. Ha a Feltöltés típusú igénylések irányelveit kívánja meghatározni, „Feltöltési kategória hozzáférési irányelvszabálya” típusú irányelvszabályt kell létrehoznia.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

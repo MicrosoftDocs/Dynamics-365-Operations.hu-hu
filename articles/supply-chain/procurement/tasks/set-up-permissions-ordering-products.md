@@ -1,7 +1,7 @@
 ---
 title: Engedélyek létrehozása, amelyek birtokában mások nevében lehet termékeket rendelni
 description: Ez a témakör bemutatja, hogyan adhat engedélyt dolgozóknak más dolgozók nevében beszerzési igénylésének elkészítésére.
-author: mkirknel
+author: RichardLuan
 manager: tfehr
 ms.date: 08/20/2019
 ms.topic: business-process
@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: PurchReqAuthorization, HcmWorkerLookUp
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 145d8a0e341857bf238fc934cd668ff12b8505b8
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 585f5c6cf83ad93b649e3f36e0d486a037915cd4
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429566"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017292"
 ---
 # <a name="set-up-permissions-for-ordering-products-on-behalf-of-someone-else"></a>Engedélyek létrehozása, amelyek birtokában mások nevében lehet termékeket rendelni
 
@@ -45,6 +44,3 @@ Ez a témakör bemutatja, hogyan adhat engedélyt dolgozóknak más dolgozók ne
 2. Használja a Gyors Szűrést, hogy megtalálja azt a dolgozót, akit most adott hozzá kérelmezőként.
 3. Válassza ki a kérelmezőt. A Készítő lista azokat az embereket mutatja, akik engedéllyel rendelkeznek a bal oldali ablakban kiválasztott kérelmező nevében történő cikk rendeléshez.  További készítőknek itt is hozzáadhat. Ez a nézet lehetővé teszi a kérelmező engedély igénylés kiosztására, hogy igénylést hozhasson létre olyan jogi személyek és üzemi egységek nevében, amelyek nem az illető elsődleges jogi személye vagy üzemi egysége.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

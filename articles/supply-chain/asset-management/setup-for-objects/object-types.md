@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: EntAssetObjectJobType, EntAssetObjectType, EntAssetObjectTypeDefaultSparePart, EntAssetObjectTypeDefaultSparePartApprove, EntAssetObjectTypeDefaultCreateCombinations, EntAssetObjectTypeDefault, EntAssetObjectTypeDefaultCopy
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5a5db915c94cf9a454dc39e9174b3282a3f6bb75
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 295840c12f89bc6c6a4d53023985259ac761d6b2
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429425"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017417"
 ---
 # <a name="asset-types"></a>Eszköztípusok
 
@@ -97,6 +96,3 @@ A **Pótalkatrészek** lapon új pótalkatrészeket is létrehozhat a meglévő 
 
 Ha látni szeretné, hogy a kiválasztott sorban szereplő pótalkatrész használatban van-e bárhol az Eszközkezelésben (például eszközökkel és munkarendelésekkel kapcsolatban), válassza ki a **Cikket hol használják** elemet, amellyel megnyithatja a **Cikket hol használják** oldalt. 
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

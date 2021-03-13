@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetWorkerGroupCopyFromResourceGroup, EntAssetWorkerGroup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 29fb487f02c28dbe940a1e00891f1e7ed20135b2
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b81de02f144712786704a46d2096dfb510d5ce68
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429422"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017392"
 ---
 # <a name="maintenance-workers-and-worker-groups"></a>Karbantartási dolgozók és dolgozói csoportok
 
@@ -64,6 +63,3 @@ Karbantartási munkacsoportokat is létrehozhat, és társíthat hozzájuk karba
 6. Ha egy erőforráscsoportot a kiválasztott karbantartási dolgozói csoporthoz kell kapcsolni, válassza ki a **Másolás erőforráscsoportból** lehetőséget. A **Csoport** mezőben válassza ki azt az erőforráscsoportot, amelyből a naptár beállításait másolni szeretné. Ezután a **Dolgozói csoport** mezőben válassza ki azt a dolgozói csoportot, amelybe az erőforráscsoport naptárbeállításait másolni szeretné. Ez a lépés csak akkor szükséges, ha azt szeretné, hogy a karbantartási dolgozók a munkarendelés ütemezése során a erőforráshoz (műhelyhez) kapcsolódó naptárt használják.
 
     A **Részletek** gyorslapon lévő mező azoknak a karbantartási dolgozóknak a számát jeleníti meg, akik be lettek állítva a kiválasztott karbantartási dolgozói csoportban.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

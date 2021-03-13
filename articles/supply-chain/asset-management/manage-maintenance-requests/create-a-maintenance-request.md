@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: EntAssetRequestTableCreate
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 22d5e371c386abc71946bf64ed8792647f78cf1b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f45378405d9ea06ae847d93b7eacd9badf6d7e00
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429580"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5019178"
 ---
 # <a name="create-maintenance-requests"></a>Karbantartási kérések létrehozása
 
@@ -74,6 +73,3 @@ A részleteket nézetben különböző információkat lehet frissíteni. Íme n
 
 > [!NOTE]
 > Ha a karbantartási kérés létrehozásakor kiválaszt egy eszközt, akkor egy hiba adható hozzá a tárgyi eszközhöz. A karbantartási kérés létrehozása után, igény esetén több hibát is megadhat. Hibák hozzáadásához válassza ki az **Eszköz hibája** lehetőséget az **Összes karbantartási kérés** oldalon.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

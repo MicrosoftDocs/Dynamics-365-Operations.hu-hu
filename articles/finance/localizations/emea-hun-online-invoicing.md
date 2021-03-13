@@ -1,7 +1,7 @@
 ---
 title: Online számlázási rendszer
 description: Ez a témakör azt mutatja be, hogyan lehet beállítani az elektronikus jelentéskészítési (ER) konfigurációkat, valamint azt, hogy hogyan lehet beállítani és használni az elektronikus üzenetküldési funkciókat (EM) a valós idejű számlajelentéshez (RTIR).
-author: v-lurodi
+author: anasyash
 manager: AnnBe
 ms.date: 06/03/2020
 ms.topic: article
@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: AssetParameters
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 264684
 ms.search.region: Hungary
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 67bb84957bd3c400a5121855496a1fa79eb632ac
-ms.sourcegitcommit: 092ef6a45f515b38be2a4481abdbe7518a636f85
+ms.openlocfilehash: 336b2a2a75d87a7657f371a4e0b96d87f09523d6
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4408059"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5018661"
 ---
 # <a name="online-invoicing-system"></a>Online számlázási rendszer
 
@@ -424,6 +423,3 @@ Az **Online számlázás** feldolgozása a következő elektronikus feldolgozás
 | Számlakérelem benyújtása         | Nincs                 |
 | Állapotkérelem elküldése          | Nincs                 |
 | Token-kérelem beküldése           | Nincs                 |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

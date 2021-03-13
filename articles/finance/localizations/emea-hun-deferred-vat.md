@@ -1,7 +1,7 @@
 ---
 title: Halasztott áfa számítása
 description: Ez a témakör azt mutatja be, hogyan lehet beállítani a halasztott áfaszámításokat és a magyarországi áfafeladáshoz.
-author: v-lurodi
+author: anasyash
 manager: AnnBe
 ms.date: 09/04/2020
 ms.topic: article
@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: AssetParameters
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 264684
 ms.search.region: Hungary
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 467536f87fd4318ea82849ef6df62d4141fc22fa
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 72e8e809876d83174e1da32686bb1a7bca9cc006
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408037"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5018639"
 ---
 # <a name="deferred-sales-tax-calculations"></a>Halasztott áfa számítása
 
@@ -52,17 +51,14 @@ Szabad szöveges számlák és beszerzési rendelések esetén, ha a dokumentums
 Megadhatja, hogy az áfa feladása halasztott áfaszámlára történjen.
 
 1. Ugorjon az **Adó** \> **Közvetett adók** \> **Áfa** \> **Áfacsoportok** pontra.
-2. A  **Cikkáfacsoport** lapon jelölje be a **Halasztott ÁFA** jelölőnégyzetet, ha meg szeretné adni, hogy az áfa feladása halasztott áfa számlára történjen.
+2. A **Cikkáfacsoportok** oldalon jelölje be a **Halasztott áfa** jelölőnégyzetet, ha meg szeretné adni, hogy az áfa feladása halasztott áfaszámlára történjen.
 
 ## <a name="set-up-ledger-accounts-for-deferred-vat-posting"></a>Főkönyvi számlák beállítása áfafeladáshoz
 
 A halasztott áfa feladása a főkönyvi számlákra vonatkozóan is megadható.
 
-1. Ugrás az **Adó \> Beállítás \> Áfa > \> Főkönyvi feladási csoportok** elemre.
+1. Lépjen az **Adó \> Beállítás \> Áfa \> Főkönyvi feladási csoportok** elemre.
 2. A **Főkönyvi feladási csoportok** lapon válasszon ki egy főkönyvi feladási csoportot a listáról, és adja hozzá a következő adatokat.
 
 - **Halasztott áfa fizetendő** – Válassza ki a kijelölt főkönyvi feladási csoport halasztott áfaszámláját vagy adószámláját.
 - **Halasztott áfa visszaigényelhető** – Válassza ki a kijelölt főkönyvi feladási csoport halasztott áfaszámláját vagy adószámláját.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

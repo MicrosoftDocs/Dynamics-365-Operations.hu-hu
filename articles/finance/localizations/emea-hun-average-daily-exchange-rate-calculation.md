@@ -1,9 +1,9 @@
 ---
 title: Átlagos és napi árfolyam kiszámítása
 description: Ez a témakör azt mutatja be, hogyan lehet kiszámítani a kimenő banki és a készpénzfizetési tranzakciók átlagos árfolyamát.
-author: v-lurodi
+author: anasyash
 manager: AnnBe
-ms.date: 09/08/2020
+ms.date: 01/04/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -11,24 +11,26 @@ ms.technology: ''
 ms.search.form: AssetParameters
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 264684
 ms.search.region: Hungary
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: fd3e9cecafa755842fef5d990cd695bec97ac761
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 53319bb60b8a6465012c2fe0cfad2a617bfd852d
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408038"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5018659"
 ---
 # <a name="calculate-average-and-daily-exchange-rates"></a>Átlagos és napi árfolyam kiszámítása
 
 [!include [banner](../includes/banner.md)]
 
-A „számvitelről szóló 2000. évi C. törvény” szerinti külföldi pénznemek szerinti számviteli követelménynek megfelelően a külföldi pénznemben lévő értékpapír-készlet költsége vagy a pénznemben kifejezett érték, amelyet a rendszer a külföldi pénznem árfolyamának felhasználásával számít fel, amikor a készleteket beszerezik, vagy az átlagos árfolyam vagy az első által meghatározott árfolyam alapján számított működési pénznem értékét az először bevételezve, először kiadva (FIFO) módszer határozza meg.
+A „számvitelről szóló 2000. évi C. törvény” szerinti külföldi pénznemek szerinti számviteli követelménynek megfelelően a külföldi pénznemben lévő értékpapír-készlet költsége a következőkből áll:
+
+  - a pénznemben kifejezett érték, amelyet a rendszer a külföldi pénznem árfolyamának felhasználásával számít fel, amikor a készleteket beszerezik.
+  - az átlagos árfolyam vagy az első által meghatározott árfolyam alapján számított működési pénznem értékét az először bevételezve, először kiadva a (FIFO) módszer határozza meg.
 
 Az országos kontextusú magyar jogi személyeknél a kimenő pénzforgalmi és banki tranzakciók átlagos árfolyamának kiszámítására szolgáló funkció érhető el. A kimenő pénzforgalmi és banki tranzakciókkal rendelkező naplósorokban az átlagos átváltási árfolyam kiszámításának algoritmusához a könyvelési pénznem és a külföldi pénznem összesített összegei használatosak a tranzakció megadott időpontja előtt.
 
@@ -42,10 +44,10 @@ Ez a példa végigvezeti a napi árfolyamszámítási funkción a DEMF jogi szem
 
 Mielőtt elkezdené, ugorjon az **Adó** \> **Közvetett adók** \> **Áfa** \> **Áfa kiegyenlítési periódusk** lehetőségre. Az **Időszakos időszakok** lapon 2020. március 31-ét követően hozhat létre intervallumokat.
 
-1. Ugorjon a **Főkönyv** \> **Pénznemek** \> **Árfolyamok** lehetőségre, majd válassza az **USD-ről EUR-ra** lehetőséget.
+1. Lépjen a **Főkönyv** \> **Pénznemek** \> **Árfolyamok** lehetőségre, majd válassza az **USD-ről EUR-ra** sort.
 2. Válassza a **Hozzáadás** lehetőséget, majd állítsa be a mezőket a következő értékekre:
 
-- **Kezdő dátum:** 2020/2/29 
+- **Kezdő dátum:** 2020/2/29
 - **Árfolyam:** 92
 
 3. Válassza a **Mentés** lehetőséget.
@@ -61,10 +63,10 @@ Mielőtt elkezdené, ugorjon az **Adó** \> **Közvetett adók** \> **Áfa** \> 
 | 2020. március 1. | Szállító           | DE - 01001    | 250       |            | Bank                    | DEMF USD           | USD          | 92                |
 
 7. Válassza a **Mentés** lehetőséget, és ellenőrizze, hogy a sorokban a devizaárfolyam értéke **92**.
-8. Ugorjon a **Főkönyv \> Pénznemek \> Árfolyamok** lehetőségre, majd válassza az **USD-ről EUR-ra** lehetőséget.
+8. Lépjen a **Főkönyv \> Pénznemek \> Árfolyamok** lehetőségre, majd válassza az **USD-ről EUR-ra** sort.
 9. Válassza a **Hozzáadás** lehetőséget, majd állítsa be a mezőket a következő értékekre:
 
-- **Kezdő dátum:** 2020/3/1 
+- **Kezdő dátum:** 2020/3/1
 - **Árfolyam:** 91
 
 10. Válassza a **Mentés** lehetőséget.
@@ -89,9 +91,9 @@ Figyelje meg, hogy az **Árfolyam** oszlop minden sora a **91-es** értékre van
 
 ## <a name="average-exchange-rate"></a>Átlagárfolyam
 
-Ez a példa végigvezeti az átlagos árfolyamszámítási funkción egy bankszámlához.
+Ez a példa végigvezeti az átlagos árfolyamszámítási funkción egy bankszámlához. A program kiszámítja a kimenő banki és a készpénzfizetési tranzakciók átlagos árfolyamát. 
 
-1. Ugorjon a **Főkönyv** \> **Pénznemek** \> **Árfolyamok** lehetőségre, majd válassza az **USD-ről EUR-ra** lehetőséget.
+1. Lépjen a **Főkönyv** \> **Pénznemek** \> **Árfolyamok** lehetőségre, majd válassza az **USD-ről EUR-ra** sort.
 2. Válassza a **Hozzáadás** lehetőséget, majd hozza létre a következő sorokat.
 
 | **Kezdés dátuma** | **Árfolyam** |
@@ -139,9 +141,6 @@ A második sor **92,0000** értékének kiszámítása (100 * 0,91 + 200 * 0,92 
 
 A harmadik sorhoz tartozó **92,0000** érték számítása (100 * 0,91 + 200 * 0,92 + 100 * 0,93-150 * 0,92)/(100 + 200 + 100-150). Három korábbi bejövő tranzakciót és egy korábbi kimenő tranzakciót vettek figyelembe a képletben.
 
-Az átlagos árfolyam-számítási mód elérhető a kimenő banki tranzakcióhoz. Figyelembe veszi a feladott banki tranzakciókat (az aktuális főkönyvi naplóban feladott és fel nem adott banki tranzakciókat is, amelyek a figyelembe vett banki tranzakció előtt jöttek létre) azon időszakra vonatkozóan, amely a párbeszédpanelen megadott „kezdő dátum” beállításnál kezdődik, és a kimenő banki tranzakció dátumára végződik. Ez a módszer ezeknek a tranzakcióknak az átlagos átváltási árfolyamát úgy számítja ki, hogy az összes korábbi tranzakció teljes összegét a könyvelési pénznemben minden korábbi tranzakció teljes összegével elosztja. A program ezután a létrejövő árfolyamot hozzárendeli a kimenő tranzakcióhoz.
+Az átlagos árfolyam-számítási mód elérhető a kimenő banki tranzakcióhoz. Figyelembe veszi a feladott banki tranzakciókat (az aktuális főkönyvi naplóban feladott és fel nem adott banki tranzakciókat is, amelyek a figyelembe vett banki tranzakció előtt jöttek létre) azon időszakra vonatkozóan, amely a párbeszédpanelen megadott „kezdő dátum” beállításnál kezdődik, és a kimenő banki tranzakció dátumára végződik. Ez a módszer ezeknek a tranzakcióknak az átlagos átváltási árfolyamát úgy számítja ki, hogy az összes korábbi tranzakció teljes összegét a könyvelési pénznemben minden korábbi tranzakció teljes összegével elosztja. A program ezután a létrejövő árfolyamot hozzárendeli a kimenő tranzakcióhoz. Az átlagos átváltási árfolyam kiszámítása olyan dimenzióértékek alapján történik, amelyek aktívak abban a számlastruktúrában, amelyhez a készpénzes vagy banki főkönyvi számla tartozik.
 
 A Napi árfolyamok és az Átlagos árfolyam-módszerek a bizonylatnaplóban (**Készpénz-és banki kezelés** \> **Készpénz-tranzakciók** \> **Bizonylatnaplók**) megadott pénztári tranzakciókra is használhatók. A banki tranzakcióknál használt algoritmus az átlagos arány kiszámítására is szolgál.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

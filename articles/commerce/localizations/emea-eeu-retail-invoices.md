@@ -10,18 +10,17 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
-ms.search.scope: Retail, Operations
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
 ms.search.industry: Retail
-ms.author: v-kikozl
+ms.author: epopov
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: a00a960142b0e3955c80d75f7963f4827209bf75
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f5b46748ad2f780bfd56078631f3ac66814df9cc
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408030"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5018845"
 ---
 # <a name="customer-invoices-and-return-sales-orders-in-eastern-european-countries"></a>Vevői számlák és visszárukra vonatkozó értékesítési rendelések a kelet-európai országokban
 
@@ -42,6 +41,3 @@ Az alábbi információkat állíthatja be a Retail POS rendszerben generált ve
 
     * Ugrás a **Szervezeti adminisztráció \> Számsorozatok \> Számlálókezelés elemre**. Rekordnak kell lennie ahol **Modul** = **Értékesítés** és **Típus** = **Számla**.
     * Ugrás a **Szervezeti adminisztráció \> Számsorozatok \> Számlaszámozás beállítása elemre**. Jelölje be a **Kereskedelem** jelölőmezőt annál a számsorozatnál, amellyel a vevői számlákat számozza.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

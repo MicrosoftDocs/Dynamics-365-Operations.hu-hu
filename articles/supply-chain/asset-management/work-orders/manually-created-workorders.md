@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: EntAssetWorkOrderTableCreateRelated, EntAssetWorkOrderTableCreate, EntAssetWorkOrderTableCopy
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 4a4b148d9ac5d032d2caa5fcea0398a5a3726f0e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8c787dbc9889139df76b9b102deb18fce567e382
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429335"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017868"
 ---
 # <a name="manually-created-work-orders"></a>Manuálisan létrehozott munkarendelések
 
@@ -166,6 +165,3 @@ Az alábbi ábra a **Munkarendelés létrehozása** párbeszédpanel egy példá
 >[!NOTE]
 >Ha a munkarendeléseket automatikusan szeretné létrehozni, ütemezheti a karbantartási terv feladatait, vagy beállíthatja az „Automatikus létrehozású” [karbantartási terveket](../preventive-and-reactive-maintenance/maintenance-plans.md) vagy [karbantartási köröket](../preventive-and-reactive-maintenance/maintenance-rounds.md) az eszközhöz. A karbantartási kérések, amelyek az **Összes karbantartási ütemezés** listaoldalról vannak létrehozva a kiválasztott karbantartási feladattípusokkal hozza létre a program.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
