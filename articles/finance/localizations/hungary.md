@@ -10,18 +10,17 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.search.region: Hungary
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 811e13814c800cc559043e97d90a68a7f354fd8d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 2edf5c1eb2e796943ba254aba903f68a8f087b3e
+ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408039"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5115936"
 ---
 # <a name="hungary-overview"></a>Magyarország – áttekintés
 
@@ -37,7 +36,5 @@ Ez a témakör dokumentációforrásokra mutató hivatkozásokat tartalmaz a Mag
 - [Adó-visszaigénylési dokumentumok](emea-hun-tax-reimbursement-docs.md)
 - [Év végi zárás](emea-cze-hun-year-end.md)
 - [Online számlázási rendszer](emea-hun-online-invoicing.md)
+- [Áfajelentések Magyarországról](emea-hun-sales-tax-reports.md)
 - [Halasztott áfa számításai](emea-hun-deferred-vat.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

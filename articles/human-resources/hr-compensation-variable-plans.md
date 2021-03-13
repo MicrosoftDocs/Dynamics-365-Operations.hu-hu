@@ -2,7 +2,7 @@
 title: Változó kompenzációs tervek létrehozása
 description: A változó kompenzáció teszi ki egy alkalmazott az alapon felüli kifizetéseit, például a bónuszokat vagy a készlet díjakat. A cikk ismerteti az összetevőket, amelyeket be kell állítani, mielőtt használhatna változó kompenzációt és bejegyezhetne egy alkalmazottat a változó kompenzációs tervbe.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -11,19 +11,19 @@ ms.technology: ''
 ms.search.form: HCMCompEligibility, HcmJobFunction, HcmWorker, HRMCompPerfPlan, HcmCompensationWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.custom: 16011
 ms.assetid: fc3a394e-9ac6-4f8c-9162-dc16ec22720f
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 85e64c4186c7782391a3db6dc4deb3fab0ea9f4f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f99bff8846cf95bc25f0396444a3920c48f73b1e
+ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418791"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5115848"
 ---
 # <a name="create-variable-compensation-plans"></a>Változó kompenzációs tervek létrehozása
 
@@ -99,6 +99,3 @@ A **Szervezeti felülbírálások** az alkalmazott jutalmának alapját képezik
 
 
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

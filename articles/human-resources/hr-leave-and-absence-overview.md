@@ -2,7 +2,7 @@
 title: Szabadság és távollét áttekintése
 description: A Dynamics 365 Human Resources rendszerben a szabadság és távollét munkaterülete rugalmas keretet biztosít az új szabadságkonstrukciók létrehozásához. Emellett munkafolyamatokat is biztosít a kérelmek és az alkalmazottak intuitív önkiszolgáló rendszere számára, hogy szabadságot kérhessenek.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 06/01/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ea58c3a08e74eea1ab51aa19a5a28445a9bcbb04
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3de3de5a93c700526645c248b54783b64d77f2e7
+ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418906"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5115972"
 ---
 # <a name="leave-and-absence-overview"></a>Szabadság és távollét áttekintése
 
@@ -54,6 +54,3 @@ Az **Alkalmazotti önkiszolgáló rendszer** munkaterületen az alkalmazottak el
 [Szabadságkérelem](hr-employee-self-service-request-time-off.md)
 [Szabadság- és távollétkérelmek kezelése](hr-employee-self-service-manage-requests.md)
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

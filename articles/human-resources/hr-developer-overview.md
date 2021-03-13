@@ -1,8 +1,8 @@
 ---
-title: Áttekintés
+title: Fejlesztés áttekintése
 description: Ez a fejlesztői útmutató API és egyéni mezők hivatkozását tartalmazza. Tájékoztatást ad a többi alkalmazással való integrálásról is.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 010920cc84897dc5d2cfc008aa04544db6b08a73
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 517febd7967350956a28dfd9d11e4042456c7da0
+ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4528317"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5115390"
 ---
-# <a name="overview"></a>Áttekintés
+# <a name="development-overview"></a>Fejlesztés áttekintése
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
@@ -35,13 +35,13 @@ Ez a fejlesztői útmutató API és egyéni mezők hivatkozását tartalmazza. T
 
 - [Bővítés a Power Apps és a Power Automate szolgáltatással](hr-developer-power-apps.md)
 
-- [Human Resources-entitások a Common Data Service szolgáltatásban](hr-developer-entities.md)
+- [Human Resources-entitások a Dataverse szolgáltatásban](hr-developer-entities.md)
 
 - [Egyéni mezők](hr-developer-custom-fields.md)
 
 - Adatintegráció beállítása
   - [Válasszon ki egy adatintegrációs technológiát](hr-admin-integration-choose-technology.md)
-  - [A Common Data Service-integráció konfigurálása](hr-admin-integration-common-data-service.md)
+  - [A Dataverse-integráció konfigurálása](hr-admin-integration-common-data-service.md)
   - [A Finance szolgáltatással való integráció konfigurálása](hr-admin-integration-finance.md)
   - [A Dayforce szolgáltatással való integráció konfigurálása](hr-admin-integration-dayforce.md)
   - [Ismétlődő adatexportálási alkalmazás létrehozása](hr-admin-integration-recurring-data-export.md)
@@ -62,6 +62,3 @@ Ez a fejlesztői útmutató API és egyéni mezők hivatkozását tartalmazza. T
 - [Új vagy módosult elemek a Human Resources alkalmazásban](hr-admin-whats-new.md)
 - [Rendszergazdai útmutató](hr-admin-overview.md)
 - [Felhasználói útmutató](hr-hrpro-overview.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

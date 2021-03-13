@@ -2,7 +2,7 @@
 title: Áttekintés
 description: A Dynamics 365 Human Resources felhasználói útmutató útmutatást nyújt az Emberi erőforrások beállításáról, az alkalmazottak kompenzációjának és juttatásának beállításáról, valamint a munkaerő kezeléséről.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 32a7ca7c74b3f84519145d26c6e0461f546dbee3
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 78fddd033c777f5be6408d5e2db691ae966edb3a
+ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418917"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5115246"
 ---
 # <a name="overview"></a>Áttekintés
 
@@ -60,7 +60,6 @@ A Dynamics 365 Human Resources felhasználói útmutató útmutatást nyújt az 
 [Beosztás jelentési kapcsolatainak módosítása](hr-personnel-modify-reporting-relationships-position.md)</br>
 [Dolgozói adatok megadása](hr-personnel-enter-worker-information.md)</br>
 [Cikkek kölcsönzése dolgozóknak](hr-personnel-loan-item-worker.md)</br>
-[Projekt időnyilvántartásainak megadása](hr-personnel-enter-project-timesheets.md)</br>
 [Tömeges felvételi projektek](hr-personnel-mass-hire-projects.md)</br>
 [Beosztások beállítása](hr-personnel-set-up-positions.md)</br>
 [Sérülések és megbetegedések adatainak beállítása](hr-personnel-set-up-injury-illness-information.md)</br>
@@ -128,6 +127,3 @@ A Dynamics 365 Human Resources felhasználói útmutató útmutatást nyújt az 
 
 
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

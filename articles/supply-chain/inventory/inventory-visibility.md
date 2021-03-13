@@ -1,7 +1,7 @@
 ---
 title: Készlet láthatósága bővítmény
 description: Ez a témakör a Készlet láthatósága bővítmény telepítését és konfigurálását ismerteti a Dynamics 365 Supply Chain Management rendszerhez.
-author: chuzheng
+author: sherry-zheng
 manager: tfehr
 ms.date: 10/26/2020
 ms.topic: article
@@ -10,28 +10,28 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 2976153a6a7e4b4130e8f7673ed128945aeabf65
-ms.sourcegitcommit: 03c2e1717b31e4c17ee7bb9004d2ba8cf379a036
+ms.openlocfilehash: 4e6f7e0a3978bbf7e520f8cbcfd27c4cfe507777
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "4625065"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5114670"
 ---
 # <a name="inventory-visibility-add-in"></a>Készlet láthatósága bővítmény
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
+[!INCLUDE [cc-data-platform-banner](../../includes/cc-data-platform-banner.md)]
 
 A Készlet láthatósága bővítmény egy független és jól méretezhető mikroszolgáltatás, amely lehetővé teszi a valós idejű aktuális készletkövetést, így globális képet nyújt a készlet láthatóságáról.
 
 Az aktuális készlethez kapcsolódó összes információt a rendszer közel valós időben exportálja a szolgáltatásba alacsony szintű SQL-integráció révén. A külső rendszerek RESTful API-kon keresztül érik el a szolgáltatást, hogy aktuális információkat kérdezzenek le adott dimenziókészletekről, így lekérve a rendelkezésre álló aktuális pozíciók listáját.
 
-A Készlet láthatósága egy mikroszolgáltatás, amely a Common Data Service rendszerre épül, ami azt jelenti, hogy bővítheti Power Apps alkalmazások készítésével és Power BI alkalmazásával, hogy személyre szabott funkciókat biztosítson, amelyek megfelelnek az üzleti követelményeknek. Lehetőség van az index frissítésére is a készletlekérdezésekhez.
+A Készlet láthatósága egy mikroszolgáltatás, amely a Microsoft Dataverse rendszerre épül, ami azt jelenti, hogy bővítheti Power Apps alkalmazások készítésével és Power BI alkalmazásával, hogy személyre szabott funkciókat biztosítson, amelyek megfelelnek az üzleti követelményeknek. Lehetőség van az index frissítésére is a készletlekérdezésekhez.
 
 A Készlet láthatósága olyan konfigurációs beállításokat biztosít, amelyek lehetővé teszik, hogy több külső gyártótól származó rendszerrel integrálódjon. Támogatja a szabványosított készletdimenziót, a testreszabott bővíthetőséget és a szabványosított, konfigurálható számított mennyiségeket.
 
@@ -80,28 +80,55 @@ A Készlet láthatósága bővítmény telepítéséhez a következőket kell te
 
 Biztonsági szolgáltatás jogkivonatának beszerzéséhez tegye a következőket:
 
-1. Szerezze meg az `aadToken` elemet, és hívja a végpontot: https://securityservice.operations365.dynamics.com/token.
-1. Cserélje ki a `client_assertion` elemet az `aadToken` törzsében.
-1. Cserélje le a kontextust a törzsben arra a környezetre, ahol a bővítményt telepíteni szeretné.
-1. Cserélje ki a törzsben lévő hatókört a következőkre:
+1. Jelentkezzen be az Azure Portal webhelyre, és használja a(z) `clientId` és `clientSecret` keresésére a Supply Chain Management alkalmazáshoz.
+1. Azure Active Directory kód beolvasása (`aadToken`) a következő tulajdonságokkal rendelkező HTTP-kérés beküldésével:
+    - **URL-cím** - `https://login.microsoftonline.com/${aadTenantId}/oauth2/token`
+    - **Metódus** - `GET`
+    - **Levél tartalma (űrlapadatok)**:
 
-    - Az MCK hatóköre - "https://inventoryservice.operations365.dynamics.cn/.default"  
-    (Az Azure Active Directory alkalmazásazonosítóját és bérlőazonosítóját az MCK-hoz a `appsettings.mck.json` tartalmazza.)
-    - Az PROD hatóköre - "https://inventoryservice.operations365.dynamics.com/.default"  
-    (Az Azure Active Directory alkalmazásazonosítóját és bérlőazonosítóját az PROD-hoz a `appsettings.prod.json` tartalmazza.)
+        | kulcs | érték |
+        | --- | --- |
+        | ügyfél azonosítója | ${aadAppId} |
+        | titkos ügyfélkód | ${aadAppSecret} |
+        | engedélyezési típus | ügyfél_azonosító adatai |
+        | erőforrás | 0cdb527f-a8d1-4bf8-9436-b352c68682b2 |
+1. Válaszként egy `aadToken` kódot kell kapnia, amelynek a következő példához kell hasonlítania.
 
-    Az eredmény az alábbi példához hasonlóan jelenik meg.
+    ```json
+    {
+    "token_type": "Bearer",
+    "expires_in": "3599",
+    "ext_expires_in": "3599",
+    "expires_on": "1610466645",
+    "not_before": "1610462745",
+    "resource": "0cdb527f-a8d1-4bf8-9436-b352c68682b2",
+    "access_token": "eyJ0eX...8WQ"
+    }
+    ```
+
+1. Fogalmazzon meg egy olyan JSON-kérést, amely hasonlít a következőkre:
 
     ```json
     {
         "grant_type": "client_credentials",
         "client_assertion_type":"aad_app",
-        "client_assertion": "{**Your_AADToken**}",
-        "scope":"**https://inventoryservice.operations365.dynamics.com/.default**",
-        "context": "**5dbf6cc8-255e-4de2-8a25-2101cd5649b4**",
+        "client_assertion": "{Your_AADToken}",
+        "scope":"https://inventoryservice.operations365.dynamics.com/.default",
+        "context": "5dbf6cc8-255e-4de2-8a25-2101cd5649b4",
         "context_type": "finops-env"
     }
     ```
+
+    Ahol:
+    - A `client_assertion` értéknek az előző lépésben kapott `aadToken` értéknek kell lennie.
+    - A `context` érték az a környezetazonosító, ahová telepíteni szeretné a bővítményt.
+    - Állítsa be az összes többi értéket a példában látható módon.
+
+1. HTTP-kérés küldése a következő tulajdonságokkal:
+    - **URL-cím** - `https://securityservice.operations365.dynamics.com/token`
+    - **Metódus** - `POST`
+    - **HTTP-fejléc** – tartalmazza az API-verziót (a kulcs `Api-Version` és az érték: `1.0`)
+    - **Levél tartalma** – foglalja bele az előző lépésben létrehozott JSON-kérelmet.
 
 1. Kap egy `access_token` elemet válaszul. Ez az, amire szüksége van, mint tulajdonosi jogkivonat, hogy meghívja meg a Készlet láthatósága API-t. Íme, egy példa.
 
@@ -500,6 +527,3 @@ Az előző példákban megjelenített lekérdezések a következőhöz hasonló 
 ```
 
 Ne felejtse el, hogy a mennyiségek mezői a mértékek és a hozzájuk kapcsolódó értékek jegyzékeként vannak strukturálva.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

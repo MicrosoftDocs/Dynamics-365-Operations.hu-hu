@@ -1,5 +1,5 @@
 ---
-title: Számlák elküldése a munkafolyamat-rendszerbe és a terméknyugta sorainak egyeztetése (előnézet)
+title: Számlák elküldése a munkafolyamat-rendszerbe és a terméknyugtasorok egyeztetése
 description: Ez a témakör a szállítói számlák munkafolyamat-rendszerbe történő elküldését és a feladott terméknyugta sorainak a szállítói számlák soraival való automatikus egyeztetését ismerteti.
 author: abruer
 manager: AnnBe
@@ -11,23 +11,21 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.assetid: ''
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-09-08
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: cde164ee89b542d769d81d8d483049fb7ca001c4
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 03c9f6752a0bb9641f67d65580aca18276e43e9a
+ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4443820"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5115656"
 ---
-# <a name="submit-invoices-to-the-workflow-system-and-match-product-receipt-lines-preview"></a>Számlák elküldése a munkafolyamat-rendszerbe és a terméknyugta sorainak egyeztetése (előnézet)
+# <a name="submit-invoices-to-the-workflow-system-and-match-product-receipt-lines"></a>Számlák elküldése a munkafolyamat-rendszerbe és a terméknyugtasorok egyeztetése
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Ez a témakör a szállítói számlák munkafolyamat-rendszerbe történő elküldését és a feladott terméknyugta sorainak a szállítói számlák soraival való automatikus egyeztetését ismerteti.
 
@@ -47,13 +45,10 @@ A folyamat addig fog futni, amíg az egyeztetett terméknyugták mennyisége nem
 
 Azon háromirányú egyeztetési irányelvet tartalmazó számlasorok, amelyeknél az egyeztetett nyugta mennyisége kisebb, mint a számlamennyiség, az automatikus terméknyugtákkal való egyeztetési folyamatba kerülnek.
 
-Ha meg szeretné tekinteni az automatikus munkafolyamatba küldési folyamat részét nem képező számlák **Utolsó egyeztetésének** állapotát, akkor nyissa meg a számlát a **Szállítói számlák** oldalról. A számla megtekintésekor a program frissíti a megfelelő érvényesítési adatokat.
+Ha meg szeretné tekinteni az automatikus munkafolyamatba küldési folyamat részét nem képező számlák **Utolsó egyeztetésének** állapotát, akkor nyissa meg a számlát a **Szállítói számlák** oldalról. A számla megtekintésekor a program frissíti a megfelelő érvényesítési adatokat. Az **Utolsó egyeztetés** állapot automatikusan frissíthető a **Számlaegyeztetés ellenőrzése** háttérfeladat segítségével. A folyamatot az **Utolsó egyeztetés** állapot automatikus frissítésével konfigurálhatja, amelyet a **Folyamatautomatizálások** oldal **Háttérfolyamatok** lapján (**Rendszerfelügyelet \> Beállítás \> Folyamatautomatizálás**) pontban állíthat be.
 
 A program kizárja az automatizált feldolgozásból azokat a számlasorokat, amelyeknél a következő feltételek bármelyike teljesül:
 
 - A számlasorhoz tartozó **Automatikus nyugtaegyeztetési állapot** értéke **Sikertelen**.
 - A számla használatban van.
 - A számla a munkafolyamat-rendszerben van.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

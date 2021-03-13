@@ -2,7 +2,7 @@
 title: Szabadság vásárlására és eladására irányuló kérelem munkafolyamatának létrehozása
 description: Hozzon létre egy szabadság vásárlására és eladására irányuló kérelem munkafolyamatot, a szabadságkérelmeket egységes vételéhez és eladásához a Dynamics 365 Human Resources alkalmazásban.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 08/20/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-08-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d490e0c36ea0e854c5d7afc5b3bf75f6b65e542c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 4732b5dafc8074c5c59f10f02bbee7e22f51960a
+ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418905"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5116044"
 ---
 # <a name="create-a-buy-and-sell-leave-request-workflow"></a>Szabadság vásárlására és eladására irányuló kérelem munkafolyamatának létrehozása
 
@@ -81,6 +81,3 @@ Ezek a példák azt mutatják be, hogyan lehet különböző típusú munkafolya
 [Szabadság és távollét áttekintése](hr-leave-and-absence-overview.md)<br>
 [Szabadság vásárlásával és eladásával kapcsolatos irányelv kezelése](hr-leave-and-absence-manage-buy-and-sell-leave-policies.md)
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

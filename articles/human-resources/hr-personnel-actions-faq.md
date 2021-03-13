@@ -2,7 +2,7 @@
 title: Személyzeti műveletekkel kapcsolatos GYIK
 description: Ez a cikk azokra a kérdésekre ad válaszokat, amelyek akkor merülhetnek fel, ha szervezete személyzeti műveleteket használ. A személyzeti műveletek olyan kiegészítő lépések, amelyeket bizonyos személyzeti feladatok végrehajtásakor kell elvégeznie.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 06/16/2017
 ms.topic: article
 ms.prod: ''
@@ -10,19 +10,19 @@ ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 6d52e7e5203a4c311afb56259e9e1800ee0e5161
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 43c727fa8e0508adf66109efd84a66cb31df7ea3
+ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418841"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5115414"
 ---
 # <a name="personnel-actions-faq"></a>Személyzeti műveletekkel kapcsolatos GYIK
 
@@ -92,6 +92,3 @@ Példa:
 - A **Dolgozó felvétele** művelet fejlécének érvénybe lépési dátuma az a dátum lesz, amelyet a **Foglalkoztatás kezdő dátuma** mezőben adott meg.
 - A **Dolgozó áthelyezése** művelet fejlécének érvénybe lépési dátuma az a dátum lesz, amelyet a **Megbízás kezdési dátuma** mezőben adott meg a dolgozó vonatkozásában.
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,7 +2,7 @@
 title: Kérdőívek terjesztése és ütemezése
 description: A cikk leírja, hogyan terjesztheti a megtervezett kérdőíveket, hogy azok csak a kijelölt személy vagy csoportok számára legyenek elérhetők.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: ''
@@ -11,19 +11,19 @@ ms.technology: ''
 ms.search.form: KMConnectionType, KMKnowledgeCollectorPlanningTabel, SysEmailParameters, HcmLearningWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.custom: 17424
 ms.assetid: fd8d867a-2446-400a-b91f-ad4085427470
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0329b80615eed6efcc22bb0b140970988f5c306a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 25a53d921f8c0761ec931831810b484cfbd00718
+ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418911"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5115752"
 ---
 # <a name="distribute-and-schedule-questionnaires"></a>Kérdőívek terjesztése és ütemezése
 
@@ -131,6 +131,3 @@ Miután megtervezte és kiosztotta a kérdőívet, az csak a kijelölt válaszad
 A kérdőívek közzétehetők csak adott felhasználók vagy felhasználócsoportok számára is, illetve a hálózat minden tagja számára.
 
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
