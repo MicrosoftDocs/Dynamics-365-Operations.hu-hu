@@ -2,7 +2,7 @@
 title: Naptárak létrehozása és munkaidők generálása
 description: A naptárak írják le az üzemi erőforrásokhoz munkaidejét és kapacitását. Ez a cikk bemutatja, hogyan definiálhat egy munkanaptárat egy munkaidősablon alapján.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 07/09/2019
 ms.topic: business-process
 ms.prod: ''
@@ -11,35 +11,35 @@ ms.technology: ''
 ms.search.form: OpResLifeCycleManagementWorkspace, WorkCalendarTable, WorkCalendarDate, HcmPersonnelManagementWorkspace, WrkCtrGroupDateCalendar, WrkCtrDateCalendar
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations
+ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f5c630297a8962d1bb383110881b2acdc872b9cd
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 2fd297d9368472138fbe2db5a2133719cb1a9f18
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418775"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5130301"
 ---
-# <a name="create-calendars-and-generate-working-times"></a><span data-ttu-id="df3cb-104">Naptárak létrehozása és munkaidők generálása</span><span class="sxs-lookup"><span data-stu-id="df3cb-104">Create calendars and generate working times</span></span>
+# <a name="create-calendars-and-generate-working-times"></a><span data-ttu-id="96a4b-104">Naptárak létrehozása és munkaidők generálása</span><span class="sxs-lookup"><span data-stu-id="96a4b-104">Create calendars and generate working times</span></span>
 
 
 
-<span data-ttu-id="df3cb-105">A naptárak írják le az üzemi erőforrásokhoz munkaidejét és kapacitását.</span><span class="sxs-lookup"><span data-stu-id="df3cb-105">Calendars describe the capacity and working times of operations resources.</span></span> <span data-ttu-id="df3cb-106">Ez a cikk bemutatja, hogyan definiálhat egy munkanaptárat egy munkaidősablon alapján.</span><span class="sxs-lookup"><span data-stu-id="df3cb-106">This article explains how to define a work calendar based on a working time template.</span></span> <span data-ttu-id="df3cb-107">Ezt a folyamatot az USMF bemutatócégen vagy saját adata használatával is elvégezheti.</span><span class="sxs-lookup"><span data-stu-id="df3cb-107">You can walk through this procedure in demo data company USMF, or using your own data.</span></span>
+<span data-ttu-id="96a4b-105">A naptárak írják le az üzemi erőforrásokhoz munkaidejét és kapacitását.</span><span class="sxs-lookup"><span data-stu-id="96a4b-105">Calendars describe the capacity and working times of operations resources.</span></span> <span data-ttu-id="96a4b-106">Ez a cikk bemutatja, hogyan definiálhat egy munkanaptárat egy munkaidősablon alapján.</span><span class="sxs-lookup"><span data-stu-id="96a4b-106">This article explains how to define a work calendar based on a working time template.</span></span> <span data-ttu-id="96a4b-107">Ezt a folyamatot az USMF bemutatócégen vagy saját adata használatával is elvégezheti.</span><span class="sxs-lookup"><span data-stu-id="96a4b-107">You can walk through this procedure in demo data company USMF, or using your own data.</span></span>
 
-1. <span data-ttu-id="df3cb-108">A kezdőlapon válassza az **Erőforrás életcikluskezelése** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="df3cb-108">On the home page, select **Resource lifecycle management**.</span></span>
-2. <span data-ttu-id="df3cb-109">Válassza a **Naptárak** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="df3cb-109">Select **Calendars**.</span></span>
-3. <span data-ttu-id="df3cb-110">Válassza az **Új** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="df3cb-110">Select **New**.</span></span>
-4. <span data-ttu-id="df3cb-111">A **Naptár** mezőben osztályozza a naptárát.</span><span class="sxs-lookup"><span data-stu-id="df3cb-111">In the **Calendar** field, classify your calendar.</span></span> <span data-ttu-id="df3cb-112">Ez azon naptár azonosítója, amely referenciaként szolgál naptárak hozzárendelésekor például üzemi erőforrásokhoz vagy egy erőforráscsoporthoz.</span><span class="sxs-lookup"><span data-stu-id="df3cb-112">This is the ID of the calendar, which is used as a reference when assigning calendars, such as to an operations resource or a resource group.</span></span>  
-5. <span data-ttu-id="df3cb-113">A **Név** mezőben adjon meg egy nevet a naptárnak.</span><span class="sxs-lookup"><span data-stu-id="df3cb-113">In the **Name** field, name your calendar.</span></span>
-6. <span data-ttu-id="df3cb-114">A **Normál munkanap órákban** mezőbe írjon be egy számot.</span><span class="sxs-lookup"><span data-stu-id="df3cb-114">In the **Standard work day in hours** field, enter a number.</span></span>
-7. <span data-ttu-id="df3cb-115">Ellenőrizze, hogy a sor ki van-e jelölve, majd válassza a **Munkaidők** beállítást a műveletpanelen.</span><span class="sxs-lookup"><span data-stu-id="df3cb-115">Make sure the row is selected, then select **Working times** from the Action Pane.</span></span>
-8. <span data-ttu-id="df3cb-116">Válasza a **Munkaidők felépítése** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="df3cb-116">Select **Compose working times**.</span></span> <span data-ttu-id="df3cb-117">Hozzon létre munkaórákat minden egyes naphoz abban az időszakban, amikorra a munkát akarja ütemezni.</span><span class="sxs-lookup"><span data-stu-id="df3cb-117">Generate working hours for each day in the period where you want to be able to schedule work.</span></span> <span data-ttu-id="df3cb-118">Az idő előrehaladtával további időszakokhoz is létrehozhat munkaidőket.</span><span class="sxs-lookup"><span data-stu-id="df3cb-118">As time goes by, you can generate working times for additional periods.</span></span>  
-9. <span data-ttu-id="df3cb-119">Adjon meg egy dátumot a **Kezdő dátum** mezőben.</span><span class="sxs-lookup"><span data-stu-id="df3cb-119">In the **From date** field, enter a date.</span></span> <span data-ttu-id="df3cb-120">Ez az első nap, amelyen ezt a naptárat ki kell nyitni.</span><span class="sxs-lookup"><span data-stu-id="df3cb-120">This is the first day that this calendar must be open.</span></span>  
-10. <span data-ttu-id="df3cb-121">Adjon meg egy dátumot a **Záró dátum** mezőben.</span><span class="sxs-lookup"><span data-stu-id="df3cb-121">In the **To date field**, enter a date.</span></span> <span data-ttu-id="df3cb-122">Ez az utolsó nap, amelyen ez a naptár nyitva van.</span><span class="sxs-lookup"><span data-stu-id="df3cb-122">This is the last day that this calendar is open.</span></span>  
-11. <span data-ttu-id="df3cb-123">A **Munkaidősablon** mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="df3cb-123">In the **Working time template** field, enter or select a value.</span></span> <span data-ttu-id="df3cb-124">A munkaidősablon határozza meg a munkaórákat a hét egyes napjain.</span><span class="sxs-lookup"><span data-stu-id="df3cb-124">The working time template defines the working hours for each day of the week.</span></span>  
-12. <span data-ttu-id="df3cb-125">Válassza ki az **OK** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="df3cb-125">Select **OK**.</span></span>
-13. <span data-ttu-id="df3cb-126">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="df3cb-126">Close the page.</span></span>
+1. <span data-ttu-id="96a4b-108">A kezdőlapon válassza az **Erőforrás életcikluskezelése** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="96a4b-108">On the home page, select **Resource lifecycle management**.</span></span>
+2. <span data-ttu-id="96a4b-109">Válassza a **Naptárak** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="96a4b-109">Select **Calendars**.</span></span>
+3. <span data-ttu-id="96a4b-110">Válassza az **Új** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="96a4b-110">Select **New**.</span></span>
+4. <span data-ttu-id="96a4b-111">A **Naptár** mezőben osztályozza a naptárát.</span><span class="sxs-lookup"><span data-stu-id="96a4b-111">In the **Calendar** field, classify your calendar.</span></span> <span data-ttu-id="96a4b-112">Ez azon naptár azonosítója, amely referenciaként szolgál naptárak hozzárendelésekor például üzemi erőforrásokhoz vagy egy erőforráscsoporthoz.</span><span class="sxs-lookup"><span data-stu-id="96a4b-112">This is the ID of the calendar, which is used as a reference when assigning calendars, such as to an operations resource or a resource group.</span></span>  
+5. <span data-ttu-id="96a4b-113">A **Név** mezőben adjon meg egy nevet a naptárnak.</span><span class="sxs-lookup"><span data-stu-id="96a4b-113">In the **Name** field, name your calendar.</span></span>
+6. <span data-ttu-id="96a4b-114">A **Normál munkanap órákban** mezőbe írjon be egy számot.</span><span class="sxs-lookup"><span data-stu-id="96a4b-114">In the **Standard work day in hours** field, enter a number.</span></span>
+7. <span data-ttu-id="96a4b-115">Ellenőrizze, hogy a sor ki van-e jelölve, majd válassza a **Munkaidők** beállítást a műveletpanelen.</span><span class="sxs-lookup"><span data-stu-id="96a4b-115">Make sure the row is selected, then select **Working times** from the Action Pane.</span></span>
+8. <span data-ttu-id="96a4b-116">Válasza a **Munkaidők felépítése** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="96a4b-116">Select **Compose working times**.</span></span> <span data-ttu-id="96a4b-117">Hozzon létre munkaórákat minden egyes naphoz abban az időszakban, amikorra a munkát akarja ütemezni.</span><span class="sxs-lookup"><span data-stu-id="96a4b-117">Generate working hours for each day in the period where you want to be able to schedule work.</span></span> <span data-ttu-id="96a4b-118">Az idő előrehaladtával további időszakokhoz is létrehozhat munkaidőket.</span><span class="sxs-lookup"><span data-stu-id="96a4b-118">As time goes by, you can generate working times for additional periods.</span></span>  
+9. <span data-ttu-id="96a4b-119">Adjon meg egy dátumot a **Kezdő dátum** mezőben.</span><span class="sxs-lookup"><span data-stu-id="96a4b-119">In the **From date** field, enter a date.</span></span> <span data-ttu-id="96a4b-120">Ez az első nap, amelyen ezt a naptárat ki kell nyitni.</span><span class="sxs-lookup"><span data-stu-id="96a4b-120">This is the first day that this calendar must be open.</span></span>  
+10. <span data-ttu-id="96a4b-121">Adjon meg egy dátumot a **Záró dátum** mezőben.</span><span class="sxs-lookup"><span data-stu-id="96a4b-121">In the **To date field**, enter a date.</span></span> <span data-ttu-id="96a4b-122">Ez az utolsó nap, amelyen ez a naptár nyitva van.</span><span class="sxs-lookup"><span data-stu-id="96a4b-122">This is the last day that this calendar is open.</span></span>  
+11. <span data-ttu-id="96a4b-123">A **Munkaidősablon** mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="96a4b-123">In the **Working time template** field, enter or select a value.</span></span> <span data-ttu-id="96a4b-124">A munkaidősablon határozza meg a munkaórákat a hét egyes napjain.</span><span class="sxs-lookup"><span data-stu-id="96a4b-124">The working time template defines the working hours for each day of the week.</span></span>  
+12. <span data-ttu-id="96a4b-125">Válassza ki az **OK** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="96a4b-125">Select **OK**.</span></span>
+13. <span data-ttu-id="96a4b-126">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="96a4b-126">Close the page.</span></span>
 

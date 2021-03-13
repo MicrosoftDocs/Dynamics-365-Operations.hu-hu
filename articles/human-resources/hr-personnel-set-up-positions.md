@@ -2,7 +2,7 @@
 title: Beosztások beállítása
 description: A beosztások szervezeti hierarchia alacsonyabb szintjének fontos részei.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -11,59 +11,59 @@ ms.technology: ''
 ms.search.form: DefaultDashboard, HcmWorkforceWorkspace, HcmWorkerActivityChart, HcmAllWorkersListPart, HcmPosition, HcmPositionNewPosition, HcmJobLookup, HcmPositionReportsToDialog, HcmPositionLookup, FinancialDimensionDefaultTemplatesLookup, DimensionLookup, HcmPersonnelManagementWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations
+ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6c078060984169d14a0fb64cf54fc134e8f26ccb
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 335031731a02980cba24d2424c1505df64effbac
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418859"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5130473"
 ---
-# <a name="set-up-positions"></a><span data-ttu-id="7bcc0-103">Beosztások beállítása</span><span class="sxs-lookup"><span data-stu-id="7bcc0-103">Set up positions</span></span>
+# <a name="set-up-positions"></a><span data-ttu-id="e3dc5-103">Beosztások beállítása</span><span class="sxs-lookup"><span data-stu-id="e3dc5-103">Set up positions</span></span>
 
 
 
-<span data-ttu-id="7bcc0-104">A beosztások szervezeti hierarchia alacsonyabb szintjének fontos részei.</span><span class="sxs-lookup"><span data-stu-id="7bcc0-104">Positions are an important element of the lower level of an organization hierarchy.</span></span> <span data-ttu-id="7bcc0-105">Egy beosztás egy feladat egyedi példánya.</span><span class="sxs-lookup"><span data-stu-id="7bcc0-105">A position is an individual instance of a job.</span></span> <span data-ttu-id="7bcc0-106">Például az „Értékesítési igazgató (Kelet)” pozíció egyike azon beosztásoknak, amelyek hozzárendelhetők az „Értékesítési igazgató” munkához.</span><span class="sxs-lookup"><span data-stu-id="7bcc0-106">For example, the position, “Sales manager (East),” is one of the positions that is associated with the job, “Sales manager.”</span></span> <span data-ttu-id="7bcc0-107">Egy pozíció létezik a részlegen belül, és megtörténhet, hogy csak egy dolgozóval van társítva.</span><span class="sxs-lookup"><span data-stu-id="7bcc0-107">A position exists in a department and may have only one worker associated with it.</span></span> <span data-ttu-id="7bcc0-108">Ebben a feladatban a beosztás létrehozásához szükséges lépéseket mutatjuk be.</span><span class="sxs-lookup"><span data-stu-id="7bcc0-108">In this task we will walk through the steps required to create a position.</span></span> <span data-ttu-id="7bcc0-109">Ez az eljárás az emberi erőforrások szakértői számára alkalmas.</span><span class="sxs-lookup"><span data-stu-id="7bcc0-109">This procedure is intended for Human Resources Specialists.</span></span>
+<span data-ttu-id="e3dc5-104">A beosztások szervezeti hierarchia alacsonyabb szintjének fontos részei.</span><span class="sxs-lookup"><span data-stu-id="e3dc5-104">Positions are an important element of the lower level of an organization hierarchy.</span></span> <span data-ttu-id="e3dc5-105">Egy beosztás egy feladat egyedi példánya.</span><span class="sxs-lookup"><span data-stu-id="e3dc5-105">A position is an individual instance of a job.</span></span> <span data-ttu-id="e3dc5-106">Például az „Értékesítési igazgató (Kelet)” pozíció egyike azon beosztásoknak, amelyek hozzárendelhetők az „Értékesítési igazgató” munkához.</span><span class="sxs-lookup"><span data-stu-id="e3dc5-106">For example, the position, “Sales manager (East),” is one of the positions that is associated with the job, “Sales manager.”</span></span> <span data-ttu-id="e3dc5-107">Egy pozíció létezik a részlegen belül, és megtörténhet, hogy csak egy dolgozóval van társítva.</span><span class="sxs-lookup"><span data-stu-id="e3dc5-107">A position exists in a department and may have only one worker associated with it.</span></span> <span data-ttu-id="e3dc5-108">Ebben a feladatban a beosztás létrehozásához szükséges lépéseket mutatjuk be.</span><span class="sxs-lookup"><span data-stu-id="e3dc5-108">In this task we will walk through the steps required to create a position.</span></span> <span data-ttu-id="e3dc5-109">Ez az eljárás az emberi erőforrások szakértői számára alkalmas.</span><span class="sxs-lookup"><span data-stu-id="e3dc5-109">This procedure is intended for Human Resources Specialists.</span></span>
 
-1. <span data-ttu-id="7bcc0-110">Kattintson a Munkaerő-kezelésre.</span><span class="sxs-lookup"><span data-stu-id="7bcc0-110">Click Workforce management.</span></span>
-2. <span data-ttu-id="7bcc0-111">Kattintson a nyitott beosztásokra.</span><span class="sxs-lookup"><span data-stu-id="7bcc0-111">Click Open positions.</span></span>
-3. <span data-ttu-id="7bcc0-112">Az Új gombra kattintva nyissa meg a legördülő párbeszédpanelt.</span><span class="sxs-lookup"><span data-stu-id="7bcc0-112">Click New to open the drop dialog.</span></span>
-4. <span data-ttu-id="7bcc0-113">A Munka mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="7bcc0-113">In the Job field, enter or select a value.</span></span>
-    * <span data-ttu-id="7bcc0-114">A rendszer automatikusan másolja a kiválasztott munkakörből a pozícióba másolja a munkaköri leírást, a titulust és a teljes munkaidős helyettesítő foglalkoztatási tényezőt.</span><span class="sxs-lookup"><span data-stu-id="7bcc0-114">The Job description, title, and full-time equivalent employment factor are automatically copied from the selected job into the position.</span></span>  
-5. <span data-ttu-id="7bcc0-115">ResolveChanges a Feladat.</span><span class="sxs-lookup"><span data-stu-id="7bcc0-115">ResolveChanges the Job.</span></span>
-6. <span data-ttu-id="7bcc0-116">Kattintson a beosztás létrehozása lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="7bcc0-116">Click Create position.</span></span>
-7. <span data-ttu-id="7bcc0-117">A Részleg mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="7bcc0-117">In the Department field, enter or select a value.</span></span>
-8. <span data-ttu-id="7bcc0-118">A Beosztás típusa mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="7bcc0-118">In the Position type field, enter or select a value.</span></span>
-9. <span data-ttu-id="7bcc0-119">Az Kompenzációs régió mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="7bcc0-119">In the Compensation region field, enter or select a value.</span></span>
-    * <span data-ttu-id="7bcc0-120">A kompenzációs régió mező meghatározza a kompenzáció alkalmazhatósági szabályait és a fix növekmény költségvetéseit, ami az adott pozícióban lévő alkalmazottra vonatkozik.</span><span class="sxs-lookup"><span data-stu-id="7bcc0-120">The Compensation region field determines the compensation eligibility rules and fixed increase budgets that apply to an employee in that position.</span></span>  
-10. <span data-ttu-id="7bcc0-121">Az Elérhető hozzárendeléshez mezőben adjon meg egy dátumot és időpontot.</span><span class="sxs-lookup"><span data-stu-id="7bcc0-121">In the Available for assignment field, enter a date and time.</span></span>
-11. <span data-ttu-id="7bcc0-122">Bontsa ki a Beosztás időtartama szakaszt.</span><span class="sxs-lookup"><span data-stu-id="7bcc0-122">Expand the Position duration section.</span></span>
-    * <span data-ttu-id="7bcc0-123">A korábban beírt aktiválási és kivezetési dátumok alapján alapértelmezettként megadott beosztás időtartama</span><span class="sxs-lookup"><span data-stu-id="7bcc0-123">Position duration is entered by default based on activation and retirement dates entered earlier</span></span>  
-12. <span data-ttu-id="7bcc0-124">Bontsa ki a Jelentés a beosztásnak szakaszt.</span><span class="sxs-lookup"><span data-stu-id="7bcc0-124">Expand the Reports to position section.</span></span>
-    * <span data-ttu-id="7bcc0-125">Ha hozzárendel egy dolgozót egy olyan pozícióhoz, amely egy másik pozícióhoz van rendelve, akkor közvetlen jelentési kapcsolatot hoz lére a két beosztáshoz rendelt dolgozó között.</span><span class="sxs-lookup"><span data-stu-id="7bcc0-125">When you assign a worker to a position that reports to another position, you create a direct reporting relationship between the workers who are assigned to the two positions.</span></span>  
-13. <span data-ttu-id="7bcc0-126">Az Új gombra kattintva nyissa meg a legördülő párbeszédpanelt.</span><span class="sxs-lookup"><span data-stu-id="7bcc0-126">Click New to open the drop dialog.</span></span>
-14. <span data-ttu-id="7bcc0-127">A Jelentés a következőnek mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="7bcc0-127">In the Reports to field, enter or select a value.</span></span>
-15. <span data-ttu-id="7bcc0-128">Kattintson az Új > lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="7bcc0-128">Click Create.</span></span>
-16. <span data-ttu-id="7bcc0-129">Bontsa ki a Munkavállaló hozzárendelése szakaszt.</span><span class="sxs-lookup"><span data-stu-id="7bcc0-129">Expand the Worker assignment section.</span></span>
-17. <span data-ttu-id="7bcc0-130">Bontsa ki a Kapcsolatok szakaszt.</span><span class="sxs-lookup"><span data-stu-id="7bcc0-130">Expand the Relationships section.</span></span>
-    * <span data-ttu-id="7bcc0-131">Ha szervezete mátrix hierarchiát vagy egyéb egyéni hierarchiát alkalmaz, beállíthat pozíció hierarchia típusokat, majd hozzáadhat jelentési kapcsolatokat minden egyes beállított hierarchia típushoz.</span><span class="sxs-lookup"><span data-stu-id="7bcc0-131">If your organization uses a matrix hierarchy or another custom hierarchy, you can set up position hierarchy types and then add reporting relationships to positions for each hierarchy type that you set up.</span></span>  
-18. <span data-ttu-id="7bcc0-132">Kattintson a Hozzáadás gombra.</span><span class="sxs-lookup"><span data-stu-id="7bcc0-132">Click Add.</span></span>
-19. <span data-ttu-id="7bcc0-133">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="7bcc0-133">In the list, mark the selected row.</span></span>
-20. <span data-ttu-id="7bcc0-134">A Hierarchia neve mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="7bcc0-134">In the Hierarchy name field, enter or select a value.</span></span>
-21. <span data-ttu-id="7bcc0-135">A Jelentés beosztás szerint mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="7bcc0-135">In the Reports to position field, enter or select a value.</span></span>
-22. <span data-ttu-id="7bcc0-136">Bontsa ki a Bérlista szakaszt.</span><span class="sxs-lookup"><span data-stu-id="7bcc0-136">Expand the Payroll section.</span></span>
-23. <span data-ttu-id="7bcc0-137">A Fizetési ciklus mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="7bcc0-137">In the Pay cycle field, enter or select a value.</span></span>
-24. <span data-ttu-id="7bcc0-138">A Fizette: mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="7bcc0-138">In the Paid by field, enter or select a value.</span></span>
-25. <span data-ttu-id="7bcc0-139">Az Éves rendes munkaidő mezőben adjon meg egy számot.</span><span class="sxs-lookup"><span data-stu-id="7bcc0-139">In the Annual regular hours field, enter a number.</span></span>
-    * <span data-ttu-id="7bcc0-140">Ez a várhatóan évente betöltött beosztásban lévő dolgozó rendszeresen fizetett óráinak száma.</span><span class="sxs-lookup"><span data-stu-id="7bcc0-140">This is the number of regularly paid hours that the worker in this position is expected to work each year.</span></span>  
-26. <span data-ttu-id="7bcc0-141">Bontsa ki a Szakszervezet szakaszt.</span><span class="sxs-lookup"><span data-stu-id="7bcc0-141">Expand the Labor union section.</span></span>
-27. <span data-ttu-id="7bcc0-142">Zárja be a Szakszervezet szakaszt.</span><span class="sxs-lookup"><span data-stu-id="7bcc0-142">Collapse the Labor union section.</span></span>
-28. <span data-ttu-id="7bcc0-143">Bontsa ki a Pénzügyi dimenziók szakaszt.</span><span class="sxs-lookup"><span data-stu-id="7bcc0-143">Expand the Financial dimensions section.</span></span>
-29. <span data-ttu-id="7bcc0-144">A Felosztási sablon mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="7bcc0-144">In the Distribution template field, enter or select a value.</span></span>
-30. <span data-ttu-id="7bcc0-145">A Részleg mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="7bcc0-145">In the Department field, enter or select a value.</span></span>
-31. <span data-ttu-id="7bcc0-146">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="7bcc0-146">Click Save.</span></span>
+1. <span data-ttu-id="e3dc5-110">Kattintson a Munkaerő-kezelésre.</span><span class="sxs-lookup"><span data-stu-id="e3dc5-110">Click Workforce management.</span></span>
+2. <span data-ttu-id="e3dc5-111">Kattintson a nyitott beosztásokra.</span><span class="sxs-lookup"><span data-stu-id="e3dc5-111">Click Open positions.</span></span>
+3. <span data-ttu-id="e3dc5-112">Az Új gombra kattintva nyissa meg a legördülő párbeszédpanelt.</span><span class="sxs-lookup"><span data-stu-id="e3dc5-112">Click New to open the drop dialog.</span></span>
+4. <span data-ttu-id="e3dc5-113">A Munka mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="e3dc5-113">In the Job field, enter or select a value.</span></span>
+    * <span data-ttu-id="e3dc5-114">A rendszer automatikusan másolja a kiválasztott munkakörből a pozícióba másolja a munkaköri leírást, a titulust és a teljes munkaidős helyettesítő foglalkoztatási tényezőt.</span><span class="sxs-lookup"><span data-stu-id="e3dc5-114">The Job description, title, and full-time equivalent employment factor are automatically copied from the selected job into the position.</span></span>  
+5. <span data-ttu-id="e3dc5-115">ResolveChanges a Feladat.</span><span class="sxs-lookup"><span data-stu-id="e3dc5-115">ResolveChanges the Job.</span></span>
+6. <span data-ttu-id="e3dc5-116">Kattintson a beosztás létrehozása lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="e3dc5-116">Click Create position.</span></span>
+7. <span data-ttu-id="e3dc5-117">A Részleg mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="e3dc5-117">In the Department field, enter or select a value.</span></span>
+8. <span data-ttu-id="e3dc5-118">A Beosztás típusa mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="e3dc5-118">In the Position type field, enter or select a value.</span></span>
+9. <span data-ttu-id="e3dc5-119">Az Kompenzációs régió mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="e3dc5-119">In the Compensation region field, enter or select a value.</span></span>
+    * <span data-ttu-id="e3dc5-120">A kompenzációs régió mező meghatározza a kompenzáció alkalmazhatósági szabályait és a fix növekmény költségvetéseit, ami az adott pozícióban lévő alkalmazottra vonatkozik.</span><span class="sxs-lookup"><span data-stu-id="e3dc5-120">The Compensation region field determines the compensation eligibility rules and fixed increase budgets that apply to an employee in that position.</span></span>  
+10. <span data-ttu-id="e3dc5-121">Az Elérhető hozzárendeléshez mezőben adjon meg egy dátumot és időpontot.</span><span class="sxs-lookup"><span data-stu-id="e3dc5-121">In the Available for assignment field, enter a date and time.</span></span>
+11. <span data-ttu-id="e3dc5-122">Bontsa ki a Beosztás időtartama szakaszt.</span><span class="sxs-lookup"><span data-stu-id="e3dc5-122">Expand the Position duration section.</span></span>
+    * <span data-ttu-id="e3dc5-123">A korábban beírt aktiválási és kivezetési dátumok alapján alapértelmezettként megadott beosztás időtartama</span><span class="sxs-lookup"><span data-stu-id="e3dc5-123">Position duration is entered by default based on activation and retirement dates entered earlier</span></span>  
+12. <span data-ttu-id="e3dc5-124">Bontsa ki a Jelentés a beosztásnak szakaszt.</span><span class="sxs-lookup"><span data-stu-id="e3dc5-124">Expand the Reports to position section.</span></span>
+    * <span data-ttu-id="e3dc5-125">Ha hozzárendel egy dolgozót egy olyan pozícióhoz, amely egy másik pozícióhoz van rendelve, akkor közvetlen jelentési kapcsolatot hoz lére a két beosztáshoz rendelt dolgozó között.</span><span class="sxs-lookup"><span data-stu-id="e3dc5-125">When you assign a worker to a position that reports to another position, you create a direct reporting relationship between the workers who are assigned to the two positions.</span></span>  
+13. <span data-ttu-id="e3dc5-126">Az Új gombra kattintva nyissa meg a legördülő párbeszédpanelt.</span><span class="sxs-lookup"><span data-stu-id="e3dc5-126">Click New to open the drop dialog.</span></span>
+14. <span data-ttu-id="e3dc5-127">A Jelentés a következőnek mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="e3dc5-127">In the Reports to field, enter or select a value.</span></span>
+15. <span data-ttu-id="e3dc5-128">Kattintson az Új > lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="e3dc5-128">Click Create.</span></span>
+16. <span data-ttu-id="e3dc5-129">Bontsa ki a Munkavállaló hozzárendelése szakaszt.</span><span class="sxs-lookup"><span data-stu-id="e3dc5-129">Expand the Worker assignment section.</span></span>
+17. <span data-ttu-id="e3dc5-130">Bontsa ki a Kapcsolatok szakaszt.</span><span class="sxs-lookup"><span data-stu-id="e3dc5-130">Expand the Relationships section.</span></span>
+    * <span data-ttu-id="e3dc5-131">Ha szervezete mátrix hierarchiát vagy egyéb egyéni hierarchiát alkalmaz, beállíthat pozíció hierarchia típusokat, majd hozzáadhat jelentési kapcsolatokat minden egyes beállított hierarchia típushoz.</span><span class="sxs-lookup"><span data-stu-id="e3dc5-131">If your organization uses a matrix hierarchy or another custom hierarchy, you can set up position hierarchy types and then add reporting relationships to positions for each hierarchy type that you set up.</span></span>  
+18. <span data-ttu-id="e3dc5-132">Kattintson a Hozzáadás gombra.</span><span class="sxs-lookup"><span data-stu-id="e3dc5-132">Click Add.</span></span>
+19. <span data-ttu-id="e3dc5-133">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="e3dc5-133">In the list, mark the selected row.</span></span>
+20. <span data-ttu-id="e3dc5-134">A Hierarchia neve mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="e3dc5-134">In the Hierarchy name field, enter or select a value.</span></span>
+21. <span data-ttu-id="e3dc5-135">A Jelentés beosztás szerint mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="e3dc5-135">In the Reports to position field, enter or select a value.</span></span>
+22. <span data-ttu-id="e3dc5-136">Bontsa ki a Bérlista szakaszt.</span><span class="sxs-lookup"><span data-stu-id="e3dc5-136">Expand the Payroll section.</span></span>
+23. <span data-ttu-id="e3dc5-137">A Fizetési ciklus mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="e3dc5-137">In the Pay cycle field, enter or select a value.</span></span>
+24. <span data-ttu-id="e3dc5-138">A Fizette: mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="e3dc5-138">In the Paid by field, enter or select a value.</span></span>
+25. <span data-ttu-id="e3dc5-139">Az Éves rendes munkaidő mezőben adjon meg egy számot.</span><span class="sxs-lookup"><span data-stu-id="e3dc5-139">In the Annual regular hours field, enter a number.</span></span>
+    * <span data-ttu-id="e3dc5-140">Ez a várhatóan évente betöltött beosztásban lévő dolgozó rendszeresen fizetett óráinak száma.</span><span class="sxs-lookup"><span data-stu-id="e3dc5-140">This is the number of regularly paid hours that the worker in this position is expected to work each year.</span></span>  
+26. <span data-ttu-id="e3dc5-141">Bontsa ki a Szakszervezet szakaszt.</span><span class="sxs-lookup"><span data-stu-id="e3dc5-141">Expand the Labor union section.</span></span>
+27. <span data-ttu-id="e3dc5-142">Zárja be a Szakszervezet szakaszt.</span><span class="sxs-lookup"><span data-stu-id="e3dc5-142">Collapse the Labor union section.</span></span>
+28. <span data-ttu-id="e3dc5-143">Bontsa ki a Pénzügyi dimenziók szakaszt.</span><span class="sxs-lookup"><span data-stu-id="e3dc5-143">Expand the Financial dimensions section.</span></span>
+29. <span data-ttu-id="e3dc5-144">A Felosztási sablon mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="e3dc5-144">In the Distribution template field, enter or select a value.</span></span>
+30. <span data-ttu-id="e3dc5-145">A Részleg mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="e3dc5-145">In the Department field, enter or select a value.</span></span>
+31. <span data-ttu-id="e3dc5-146">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="e3dc5-146">Click Save.</span></span>
 
