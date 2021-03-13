@@ -1,6 +1,6 @@
 ---
 title: ER Dokumentumkezelési fájlok használata formátumkimenetekben (3. rész –Formátum létrehozása)
-description: A következő lépések leírják, hogy egy rendszergazda vagy elektronikus jelentések fejlesztője szerepkörrel rendelkező felhasználó miként konfigurálhat egy új Elektronikus jelentés formátumot a dokumentumkezelési fájlok használatához az ER-kimenetben.
+description: Ez a témakör azt ismerteti, hogyan kell konfigurálni egy Elektronikus jelentéskészítési formátumot a dokumentumkezelési fájlok használatára az ER-kimenetben. (3. rész)
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
@@ -15,107 +15,107 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: bfcc03fa7470d4f2fa45ef012e30acef0712bf99
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 432cf4c41a7a223ab07b02edf6da7eac9965cff0
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681853"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092616"
 ---
-# <a name="er-use-document-management-files-in-format-outputs-part-3---create-format"></a><span data-ttu-id="0a27a-103">ER Dokumentumkezelési fájlok használata formátumkimenetekben (3. rész –Formátum létrehozása)</span><span class="sxs-lookup"><span data-stu-id="0a27a-103">ER Use Document Management files in format outputs (Part 3 - Create format)</span></span>
+# <a name="er-use-document-management-files-in-format-outputs-part-3---create-format"></a><span data-ttu-id="3a129-104">ER Dokumentumkezelési fájlok használata formátumkimenetekben (3. rész –Formátum létrehozása)</span><span class="sxs-lookup"><span data-stu-id="3a129-104">ER Use Document Management files in format outputs (Part 3 - Create format)</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="0a27a-104">A következő lépések leírják, hogy egy rendszergazda vagy elektronikus jelentések fejlesztője szerepkörrel rendelkező felhasználó miként konfigurálhat egy új Elektronikus jelentés (ER) formátumot a dokumentumkezelési fájlok (mellékletek) használatához az ER-kimenetben.</span><span class="sxs-lookup"><span data-stu-id="0a27a-104">The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) format to use Document Management files (attachments) in ER output.</span></span> <span data-ttu-id="0a27a-105">Ezeket a lépéseket bármely vállalatban végrehajthatja.</span><span class="sxs-lookup"><span data-stu-id="0a27a-105">These steps can be performed in any company.</span></span>
+<span data-ttu-id="3a129-105">A következő lépések leírják, hogy egy rendszergazda vagy elektronikus jelentések fejlesztője szerepkörrel rendelkező felhasználó miként konfigurálhat egy új Elektronikus jelentés (ER) formátumot a dokumentumkezelési fájlok (mellékletek) használatához az ER-kimenetben.</span><span class="sxs-lookup"><span data-stu-id="3a129-105">The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) format to use Document Management files (attachments) in ER output.</span></span> <span data-ttu-id="3a129-106">Ezeket a lépéseket bármely vállalatban végrehajthatja.</span><span class="sxs-lookup"><span data-stu-id="3a129-106">These steps can be performed in any company.</span></span>
 
-<span data-ttu-id="0a27a-106">A lépések végrehajtásához először végre kell hajtania az „ER Dokumentumkezelési fájlok használata formátumkimenetekben (2. rész: Adatmodell előkészítése)” eljárás lépéseit.</span><span class="sxs-lookup"><span data-stu-id="0a27a-106">To complete these steps, you must first complete the steps in the "ER Use Document Management files in format outputs (Part 2: Extend data model" procedure.</span></span>
+<span data-ttu-id="3a129-107">A lépések végrehajtásához először végre kell hajtania az „ER Dokumentumkezelési fájlok használata formátumkimenetekben (2. rész: Adatmodell előkészítése)” eljárás lépéseit.</span><span class="sxs-lookup"><span data-stu-id="3a129-107">To complete these steps, you must first complete the steps in the "ER Use Document Management files in format outputs (Part 2: Extend data model" procedure.</span></span>
 
-<span data-ttu-id="0a27a-107">Az eljárás egy olyan szolgáltatáshoz tartozik, amely a Dynamics 365 for Operations 1611-es verziójában jelent meg.</span><span class="sxs-lookup"><span data-stu-id="0a27a-107">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
+<span data-ttu-id="3a129-108">Az eljárás egy olyan szolgáltatáshoz tartozik, amely a Dynamics 365 for Operations 1611-es verziójában jelent meg.</span><span class="sxs-lookup"><span data-stu-id="3a129-108">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
 
 
-## <a name="create-a-format-to-process-invoices"></a><span data-ttu-id="0a27a-108">Formátum létrehozása számlák feldolgozásához</span><span class="sxs-lookup"><span data-stu-id="0a27a-108">Create a format to process invoices</span></span>
-1. <span data-ttu-id="0a27a-109">Ugorjon a Szervezeti adminisztráció > Munkaterületek > Elektronikus jelentés pontra.</span><span class="sxs-lookup"><span data-stu-id="0a27a-109">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
-2. <span data-ttu-id="0a27a-110">Kattintson a Jelentéskészítés konfigurációi lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="0a27a-110">Click Reporting configurations.</span></span>
-3. <span data-ttu-id="0a27a-111">A fastruktúrában bontsa ki a „Vevői számlamodell” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="0a27a-111">In the tree, expand 'Customer invoice model'.</span></span>
-4. <span data-ttu-id="0a27a-112">A fastruktúrában válassza ki a következőt: Vevői számlamodell\Vevői számlamodell (egyéni).</span><span class="sxs-lookup"><span data-stu-id="0a27a-112">In the tree, select 'Customer invoice model\Customer invoice model (custom)'.</span></span>
-    * <span data-ttu-id="0a27a-113">Létre fog hozni egy formátumot olyan elektronikus üzenetek generálásához, amelyek információkat tartalmaznak az összes olyan fájlról, amelyeket az elektronikusan feldolgozott számlához kapcsolódó értékesítési rendelésekhez mellékeltek.</span><span class="sxs-lookup"><span data-stu-id="0a27a-113">You will create a format to generate electronic messages with information about any files that have been attached to a sales order that is related to an electronically processing invoice.</span></span>  
-5. <span data-ttu-id="0a27a-114">A Konfiguráció létrehozása gombra kattintva megnyithatja a legördülő párbeszédablakot.</span><span class="sxs-lookup"><span data-stu-id="0a27a-114">Click Create configuration to open the drop dialog.</span></span>
-6. <span data-ttu-id="0a27a-115">Az Új mezőbe írja be a „Formátum alapja a következő adatmodell: Vevői számlamodell (egyéni)” kifejezést.</span><span class="sxs-lookup"><span data-stu-id="0a27a-115">In the New field, enter 'Format based on data model Customer invoice model (custom)'.</span></span>
-7. <span data-ttu-id="0a27a-116">A Név mezőbe írja be a következőt: „Elektronikus számla mintaüzenet”.</span><span class="sxs-lookup"><span data-stu-id="0a27a-116">In the Name field, type 'Electronic invoice sample message'.</span></span>
-    * <span data-ttu-id="0a27a-117">Elektronikus számla mintaüzenet</span><span class="sxs-lookup"><span data-stu-id="0a27a-117">Electronic invoice sample message</span></span>  
-8. <span data-ttu-id="0a27a-118">Az Adatmodell mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="0a27a-118">In the Data model definition field, enter or select a value.</span></span>
-    * <span data-ttu-id="0a27a-119">InvoiceCustomer</span><span class="sxs-lookup"><span data-stu-id="0a27a-119">InvoiceCustomer</span></span>  
-9. <span data-ttu-id="0a27a-120">Kattintson a Konfiguráció létrehozása lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="0a27a-120">Click Create configuration.</span></span>
+## <a name="create-a-format-to-process-invoices"></a><span data-ttu-id="3a129-109">Formátum létrehozása számlák feldolgozásához</span><span class="sxs-lookup"><span data-stu-id="3a129-109">Create a format to process invoices</span></span>
+1. <span data-ttu-id="3a129-110">Ugorjon a Szervezeti adminisztráció > Munkaterületek > Elektronikus jelentés pontra.</span><span class="sxs-lookup"><span data-stu-id="3a129-110">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
+2. <span data-ttu-id="3a129-111">Kattintson a Jelentéskészítés konfigurációi lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="3a129-111">Click Reporting configurations.</span></span>
+3. <span data-ttu-id="3a129-112">A fastruktúrában bontsa ki a „Vevői számlamodell” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="3a129-112">In the tree, expand 'Customer invoice model'.</span></span>
+4. <span data-ttu-id="3a129-113">A fastruktúrában válassza ki a következőt: Vevői számlamodell\Vevői számlamodell (egyéni).</span><span class="sxs-lookup"><span data-stu-id="3a129-113">In the tree, select 'Customer invoice model\Customer invoice model (custom)'.</span></span>
+    * <span data-ttu-id="3a129-114">Létre fog hozni egy formátumot olyan elektronikus üzenetek generálásához, amelyek információkat tartalmaznak az összes olyan fájlról, amelyeket az elektronikusan feldolgozott számlához kapcsolódó értékesítési rendelésekhez mellékeltek.</span><span class="sxs-lookup"><span data-stu-id="3a129-114">You will create a format to generate electronic messages with information about any files that have been attached to a sales order that is related to an electronically processing invoice.</span></span>  
+5. <span data-ttu-id="3a129-115">A Konfiguráció létrehozása gombra kattintva megnyithatja a legördülő párbeszédablakot.</span><span class="sxs-lookup"><span data-stu-id="3a129-115">Click Create configuration to open the drop dialog.</span></span>
+6. <span data-ttu-id="3a129-116">Az Új mezőbe írja be a „Formátum alapja a következő adatmodell: Vevői számlamodell (egyéni)” kifejezést.</span><span class="sxs-lookup"><span data-stu-id="3a129-116">In the New field, enter 'Format based on data model Customer invoice model (custom)'.</span></span>
+7. <span data-ttu-id="3a129-117">A Név mezőbe írja be a következőt: „Elektronikus számla mintaüzenet”.</span><span class="sxs-lookup"><span data-stu-id="3a129-117">In the Name field, type 'Electronic invoice sample message'.</span></span>
+    * <span data-ttu-id="3a129-118">Elektronikus számla mintaüzenet</span><span class="sxs-lookup"><span data-stu-id="3a129-118">Electronic invoice sample message</span></span>  
+8. <span data-ttu-id="3a129-119">Az Adatmodell mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="3a129-119">In the Data model definition field, enter or select a value.</span></span>
+    * <span data-ttu-id="3a129-120">InvoiceCustomer</span><span class="sxs-lookup"><span data-stu-id="3a129-120">InvoiceCustomer</span></span>  
+9. <span data-ttu-id="3a129-121">Kattintson a Konfiguráció létrehozása lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="3a129-121">Click Create configuration.</span></span>
 
-## <a name="design-a-format-to-populate-attachments-into-generating-a-message-in-mime-format"></a><span data-ttu-id="0a27a-121">Tervezzen a mellékleteket feltöltő formátumot MIME-formátumú üzenetek generálására</span><span class="sxs-lookup"><span data-stu-id="0a27a-121">Design a format to populate attachments into generating a message in MIME format</span></span>
-1. <span data-ttu-id="0a27a-122">Kattintson a Tervező pontra.</span><span class="sxs-lookup"><span data-stu-id="0a27a-122">Click Designer.</span></span>
-2. <span data-ttu-id="0a27a-123">Kattintson a Gyökér hozzáadása lehetőségre a legördülő párbeszédpanel megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="0a27a-123">Click Add root to open the drop dialog.</span></span>
-3. <span data-ttu-id="0a27a-124">A fában válassza ki az XML\Element csomópontot.</span><span class="sxs-lookup"><span data-stu-id="0a27a-124">In the tree, select 'XML\Element'.</span></span>
-4. <span data-ttu-id="0a27a-125">A Név mezőbe írja be a következőt: „Számla”.</span><span class="sxs-lookup"><span data-stu-id="0a27a-125">In the Name field, type 'Invoice'.</span></span>
-    * <span data-ttu-id="0a27a-126">Számla</span><span class="sxs-lookup"><span data-stu-id="0a27a-126">Invoice</span></span>  
-5. <span data-ttu-id="0a27a-127">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="0a27a-127">Click OK.</span></span>
-6. <span data-ttu-id="0a27a-128">A Hozzáadása gombra kattintva nyissa meg a legördülő párbeszédpanelt.</span><span class="sxs-lookup"><span data-stu-id="0a27a-128">Click Add to open the drop dialog.</span></span>
-7. <span data-ttu-id="0a27a-129">A fastruktúrában válassza ki az XML\Attribute elemet.</span><span class="sxs-lookup"><span data-stu-id="0a27a-129">In the tree, select 'XML\Attribute'.</span></span>
-8. <span data-ttu-id="0a27a-130">A Név mezőbe írja be a következőt: „SalesOrder”.</span><span class="sxs-lookup"><span data-stu-id="0a27a-130">In the Name field, type 'SalesOrder'.</span></span>
-    * <span data-ttu-id="0a27a-131">SalesOrder</span><span class="sxs-lookup"><span data-stu-id="0a27a-131">SalesOrder</span></span>  
-9. <span data-ttu-id="0a27a-132">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="0a27a-132">Click OK.</span></span>
-10. <span data-ttu-id="0a27a-133">Kattintson az Attribútum hozzáadása lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="0a27a-133">Click Add Attribute.</span></span>
-11. <span data-ttu-id="0a27a-134">A Név mezőbe írja be a következőt: „InvoiceNumber”.</span><span class="sxs-lookup"><span data-stu-id="0a27a-134">In the Name field, type 'InvoiceNumber'.</span></span>
-    * <span data-ttu-id="0a27a-135">InvoiceNumber</span><span class="sxs-lookup"><span data-stu-id="0a27a-135">InvoiceNumber</span></span>  
-12. <span data-ttu-id="0a27a-136">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="0a27a-136">Click OK.</span></span>
-13. <span data-ttu-id="0a27a-137">Kattintson az Attribútum hozzáadása lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="0a27a-137">Click Add Attribute.</span></span>
-14. <span data-ttu-id="0a27a-138">A Név mezőbe írja be a következőt: „InvoiceAmount”.</span><span class="sxs-lookup"><span data-stu-id="0a27a-138">In the Name field, type 'InvoiceAmount'.</span></span>
-    * <span data-ttu-id="0a27a-139">InvoiceAmount</span><span class="sxs-lookup"><span data-stu-id="0a27a-139">InvoiceAmount</span></span>  
-15. <span data-ttu-id="0a27a-140">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="0a27a-140">Click OK.</span></span>
-16. <span data-ttu-id="0a27a-141">A Hozzáadása gombra kattintva nyissa meg a legördülő párbeszédpanelt.</span><span class="sxs-lookup"><span data-stu-id="0a27a-141">Click Add to open the drop dialog.</span></span>
-17. <span data-ttu-id="0a27a-142">A fában válassza ki az XML\Element csomópontot.</span><span class="sxs-lookup"><span data-stu-id="0a27a-142">In the tree, select 'XML\Element'.</span></span>
-18. <span data-ttu-id="0a27a-143">A Név mezőbe írja be a következőt: „EnclosedDocs”.</span><span class="sxs-lookup"><span data-stu-id="0a27a-143">In the Name field, type 'EnclosedDocs'.</span></span>
-    * <span data-ttu-id="0a27a-144">EnclosedDocs</span><span class="sxs-lookup"><span data-stu-id="0a27a-144">EnclosedDocs</span></span>  
-19. <span data-ttu-id="0a27a-145">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="0a27a-145">Click OK.</span></span>
-20. <span data-ttu-id="0a27a-146">A fastruktúrában válassza ki a „Számla\EnclosedDocs” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="0a27a-146">In the tree, select 'Invoice\EnclosedDocs'.</span></span>
-21. <span data-ttu-id="0a27a-147">Kattintson az Elem hozzáadása lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="0a27a-147">Click Add Element.</span></span>
-22. <span data-ttu-id="0a27a-148">A Név mezőbe írja be a következőt: „Dokumentum”.</span><span class="sxs-lookup"><span data-stu-id="0a27a-148">In the Name field, type 'Document'.</span></span>
-    * <span data-ttu-id="0a27a-149">Bizonylat</span><span class="sxs-lookup"><span data-stu-id="0a27a-149">Document</span></span>  
-23. <span data-ttu-id="0a27a-150">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="0a27a-150">Click OK.</span></span>
-24. <span data-ttu-id="0a27a-151">A fastruktúrában válassza ki a „Számla\EnclosedDocs\Dokumentum” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="0a27a-151">In the tree, select 'Invoice\EnclosedDocs\Document'.</span></span>
-25. <span data-ttu-id="0a27a-152">A Hozzáadása gombra kattintva nyissa meg a legördülő párbeszédpanelt.</span><span class="sxs-lookup"><span data-stu-id="0a27a-152">Click Add to open the drop dialog.</span></span>
-26. <span data-ttu-id="0a27a-153">A fastruktúrában válassza ki az XML\Attribute elemet.</span><span class="sxs-lookup"><span data-stu-id="0a27a-153">In the tree, select 'XML\Attribute'.</span></span>
-27. <span data-ttu-id="0a27a-154">A Név mezőbe írja be a következőt: „FileName”.</span><span class="sxs-lookup"><span data-stu-id="0a27a-154">In the Name field, type 'FileName'.</span></span>
-    * <span data-ttu-id="0a27a-155">FileName</span><span class="sxs-lookup"><span data-stu-id="0a27a-155">FileName</span></span>  
-28. <span data-ttu-id="0a27a-156">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="0a27a-156">Click OK.</span></span>
-29. <span data-ttu-id="0a27a-157">A Hozzáadása gombra kattintva nyissa meg a legördülő párbeszédpanelt.</span><span class="sxs-lookup"><span data-stu-id="0a27a-157">Click Add to open the drop dialog.</span></span>
-30. <span data-ttu-id="0a27a-158">A fában válassza ki az XML\Element csomópontot.</span><span class="sxs-lookup"><span data-stu-id="0a27a-158">In the tree, select 'XML\Element'.</span></span>
-31. <span data-ttu-id="0a27a-159">A Név mezőbe írja be a következőt: „FileContent”.</span><span class="sxs-lookup"><span data-stu-id="0a27a-159">In the Name field, type 'FileContent'.</span></span>
-    * <span data-ttu-id="0a27a-160">FileContent</span><span class="sxs-lookup"><span data-stu-id="0a27a-160">FileContent</span></span>  
-32. <span data-ttu-id="0a27a-161">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="0a27a-161">Click OK.</span></span>
-33. <span data-ttu-id="0a27a-162">A fastruktúrában válassza ki a „Számla\EnclosedDocs\Dokumentum\FileContent” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="0a27a-162">In the tree, select 'Invoice\EnclosedDocs\Document\FileContent'.</span></span>
-34. <span data-ttu-id="0a27a-163">A Hozzáadása gombra kattintva nyissa meg a legördülő párbeszédpanelt.</span><span class="sxs-lookup"><span data-stu-id="0a27a-163">Click Add to open the drop dialog.</span></span>
-35. <span data-ttu-id="0a27a-164">A fastruktúrában válassza ki ezt: „Szöveg\Base64”.</span><span class="sxs-lookup"><span data-stu-id="0a27a-164">In the tree, select 'Text\Base64'.</span></span>
-36. <span data-ttu-id="0a27a-165">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="0a27a-165">Click OK.</span></span>
+## <a name="design-a-format-to-populate-attachments-into-generating-a-message-in-mime-format"></a><span data-ttu-id="3a129-122">Tervezzen a mellékleteket feltöltő formátumot MIME-formátumú üzenetek generálására</span><span class="sxs-lookup"><span data-stu-id="3a129-122">Design a format to populate attachments into generating a message in MIME format</span></span>
+1. <span data-ttu-id="3a129-123">Kattintson a Tervező pontra.</span><span class="sxs-lookup"><span data-stu-id="3a129-123">Click Designer.</span></span>
+2. <span data-ttu-id="3a129-124">Kattintson a Gyökér hozzáadása lehetőségre a legördülő párbeszédpanel megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="3a129-124">Click Add root to open the drop dialog.</span></span>
+3. <span data-ttu-id="3a129-125">A fában válassza ki az XML\Element csomópontot.</span><span class="sxs-lookup"><span data-stu-id="3a129-125">In the tree, select 'XML\Element'.</span></span>
+4. <span data-ttu-id="3a129-126">A Név mezőbe írja be a következőt: „Számla”.</span><span class="sxs-lookup"><span data-stu-id="3a129-126">In the Name field, type 'Invoice'.</span></span>
+    * <span data-ttu-id="3a129-127">Számla</span><span class="sxs-lookup"><span data-stu-id="3a129-127">Invoice</span></span>  
+5. <span data-ttu-id="3a129-128">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="3a129-128">Click OK.</span></span>
+6. <span data-ttu-id="3a129-129">A Hozzáadása gombra kattintva nyissa meg a legördülő párbeszédpanelt.</span><span class="sxs-lookup"><span data-stu-id="3a129-129">Click Add to open the drop dialog.</span></span>
+7. <span data-ttu-id="3a129-130">A fastruktúrában válassza ki az XML\Attribute elemet.</span><span class="sxs-lookup"><span data-stu-id="3a129-130">In the tree, select 'XML\Attribute'.</span></span>
+8. <span data-ttu-id="3a129-131">A Név mezőbe írja be a következőt: „SalesOrder”.</span><span class="sxs-lookup"><span data-stu-id="3a129-131">In the Name field, type 'SalesOrder'.</span></span>
+    * <span data-ttu-id="3a129-132">SalesOrder</span><span class="sxs-lookup"><span data-stu-id="3a129-132">SalesOrder</span></span>  
+9. <span data-ttu-id="3a129-133">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="3a129-133">Click OK.</span></span>
+10. <span data-ttu-id="3a129-134">Kattintson az Attribútum hozzáadása lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="3a129-134">Click Add Attribute.</span></span>
+11. <span data-ttu-id="3a129-135">A Név mezőbe írja be a következőt: „InvoiceNumber”.</span><span class="sxs-lookup"><span data-stu-id="3a129-135">In the Name field, type 'InvoiceNumber'.</span></span>
+    * <span data-ttu-id="3a129-136">InvoiceNumber</span><span class="sxs-lookup"><span data-stu-id="3a129-136">InvoiceNumber</span></span>  
+12. <span data-ttu-id="3a129-137">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="3a129-137">Click OK.</span></span>
+13. <span data-ttu-id="3a129-138">Kattintson az Attribútum hozzáadása lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="3a129-138">Click Add Attribute.</span></span>
+14. <span data-ttu-id="3a129-139">A Név mezőbe írja be a következőt: „InvoiceAmount”.</span><span class="sxs-lookup"><span data-stu-id="3a129-139">In the Name field, type 'InvoiceAmount'.</span></span>
+    * <span data-ttu-id="3a129-140">InvoiceAmount</span><span class="sxs-lookup"><span data-stu-id="3a129-140">InvoiceAmount</span></span>  
+15. <span data-ttu-id="3a129-141">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="3a129-141">Click OK.</span></span>
+16. <span data-ttu-id="3a129-142">A Hozzáadása gombra kattintva nyissa meg a legördülő párbeszédpanelt.</span><span class="sxs-lookup"><span data-stu-id="3a129-142">Click Add to open the drop dialog.</span></span>
+17. <span data-ttu-id="3a129-143">A fában válassza ki az XML\Element csomópontot.</span><span class="sxs-lookup"><span data-stu-id="3a129-143">In the tree, select 'XML\Element'.</span></span>
+18. <span data-ttu-id="3a129-144">A Név mezőbe írja be a következőt: „EnclosedDocs”.</span><span class="sxs-lookup"><span data-stu-id="3a129-144">In the Name field, type 'EnclosedDocs'.</span></span>
+    * <span data-ttu-id="3a129-145">EnclosedDocs</span><span class="sxs-lookup"><span data-stu-id="3a129-145">EnclosedDocs</span></span>  
+19. <span data-ttu-id="3a129-146">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="3a129-146">Click OK.</span></span>
+20. <span data-ttu-id="3a129-147">A fastruktúrában válassza ki a „Számla\EnclosedDocs” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="3a129-147">In the tree, select 'Invoice\EnclosedDocs'.</span></span>
+21. <span data-ttu-id="3a129-148">Kattintson az Elem hozzáadása lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="3a129-148">Click Add Element.</span></span>
+22. <span data-ttu-id="3a129-149">A Név mezőbe írja be a következőt: „Dokumentum”.</span><span class="sxs-lookup"><span data-stu-id="3a129-149">In the Name field, type 'Document'.</span></span>
+    * <span data-ttu-id="3a129-150">Bizonylat</span><span class="sxs-lookup"><span data-stu-id="3a129-150">Document</span></span>  
+23. <span data-ttu-id="3a129-151">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="3a129-151">Click OK.</span></span>
+24. <span data-ttu-id="3a129-152">A fastruktúrában válassza ki a „Számla\EnclosedDocs\Dokumentum” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="3a129-152">In the tree, select 'Invoice\EnclosedDocs\Document'.</span></span>
+25. <span data-ttu-id="3a129-153">A Hozzáadása gombra kattintva nyissa meg a legördülő párbeszédpanelt.</span><span class="sxs-lookup"><span data-stu-id="3a129-153">Click Add to open the drop dialog.</span></span>
+26. <span data-ttu-id="3a129-154">A fastruktúrában válassza ki az XML\Attribute elemet.</span><span class="sxs-lookup"><span data-stu-id="3a129-154">In the tree, select 'XML\Attribute'.</span></span>
+27. <span data-ttu-id="3a129-155">A Név mezőbe írja be a következőt: „FileName”.</span><span class="sxs-lookup"><span data-stu-id="3a129-155">In the Name field, type 'FileName'.</span></span>
+    * <span data-ttu-id="3a129-156">FileName</span><span class="sxs-lookup"><span data-stu-id="3a129-156">FileName</span></span>  
+28. <span data-ttu-id="3a129-157">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="3a129-157">Click OK.</span></span>
+29. <span data-ttu-id="3a129-158">A Hozzáadása gombra kattintva nyissa meg a legördülő párbeszédpanelt.</span><span class="sxs-lookup"><span data-stu-id="3a129-158">Click Add to open the drop dialog.</span></span>
+30. <span data-ttu-id="3a129-159">A fában válassza ki az XML\Element csomópontot.</span><span class="sxs-lookup"><span data-stu-id="3a129-159">In the tree, select 'XML\Element'.</span></span>
+31. <span data-ttu-id="3a129-160">A Név mezőbe írja be a következőt: „FileContent”.</span><span class="sxs-lookup"><span data-stu-id="3a129-160">In the Name field, type 'FileContent'.</span></span>
+    * <span data-ttu-id="3a129-161">FileContent</span><span class="sxs-lookup"><span data-stu-id="3a129-161">FileContent</span></span>  
+32. <span data-ttu-id="3a129-162">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="3a129-162">Click OK.</span></span>
+33. <span data-ttu-id="3a129-163">A fastruktúrában válassza ki a „Számla\EnclosedDocs\Dokumentum\FileContent” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="3a129-163">In the tree, select 'Invoice\EnclosedDocs\Document\FileContent'.</span></span>
+34. <span data-ttu-id="3a129-164">A Hozzáadása gombra kattintva nyissa meg a legördülő párbeszédpanelt.</span><span class="sxs-lookup"><span data-stu-id="3a129-164">Click Add to open the drop dialog.</span></span>
+35. <span data-ttu-id="3a129-165">A fastruktúrában válassza ki ezt: „Szöveg\Base64”.</span><span class="sxs-lookup"><span data-stu-id="3a129-165">In the tree, select 'Text\Base64'.</span></span>
+36. <span data-ttu-id="3a129-166">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="3a129-166">Click OK.</span></span>
 
-## <a name="map-format-elements-to-data-model-as-data-source"></a><span data-ttu-id="0a27a-166">Formátumelemek leképezése az adatmodellre adatforrásként</span><span class="sxs-lookup"><span data-stu-id="0a27a-166">Map format elements to data model as data source</span></span>
-1. <span data-ttu-id="0a27a-167">A fastruktúrában válassza ki a „Számla\SalesOrder” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="0a27a-167">In the tree, select 'Invoice\SalesOrder'.</span></span>
-2. <span data-ttu-id="0a27a-168">Kattintson a Hozzárendelés fülre.</span><span class="sxs-lookup"><span data-stu-id="0a27a-168">Click the Mapping tab.</span></span>
-3. <span data-ttu-id="0a27a-169">A fában bontsa ki a „model” elemet.</span><span class="sxs-lookup"><span data-stu-id="0a27a-169">In the tree, expand 'model'.</span></span>
-4. <span data-ttu-id="0a27a-170">A fastruktúrában válassza ki a következőt: „modell\Értékesítési rendelés száma(SalesId)”.</span><span class="sxs-lookup"><span data-stu-id="0a27a-170">In the tree, select 'model\Sales order number(SalesId)'.</span></span>
-5. <span data-ttu-id="0a27a-171">Kattintson a Kötés gombra.</span><span class="sxs-lookup"><span data-stu-id="0a27a-171">Click Bind.</span></span>
-6. <span data-ttu-id="0a27a-172">A fastruktúrában válassza ki a „Számla\InvoiceNumber” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="0a27a-172">In the tree, select 'Invoice\InvoiceNumber'.</span></span>
-7. <span data-ttu-id="0a27a-173">A fastruktúrában bontsa ki a „modell\Számlaalap(InvoiceBase)” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="0a27a-173">In the tree, expand 'model\Base invoice(InvoiceBase)'.</span></span>
-8. <span data-ttu-id="0a27a-174">A fastruktúrában válassza ki a következőt: „modell\Számlaalap(InvoiceBase) \Számlaszám(Id)”.</span><span class="sxs-lookup"><span data-stu-id="0a27a-174">In the tree, select 'model\Base invoice(InvoiceBase)\Invoice number(Id)'.</span></span>
-9. <span data-ttu-id="0a27a-175">Kattintson a Kötés gombra.</span><span class="sxs-lookup"><span data-stu-id="0a27a-175">Click Bind.</span></span>
-10. <span data-ttu-id="0a27a-176">A fastruktúrában válassza ki a „Számla\InvoiceAmount” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="0a27a-176">In the tree, select 'Invoice\InvoiceAmount'.</span></span>
-11. <span data-ttu-id="0a27a-177">A fastruktúrában válassza ki a következőt: „modell\Számlaalap(InvoiceBase) \Számlaösszeg(Amount)”.</span><span class="sxs-lookup"><span data-stu-id="0a27a-177">In the tree, select 'model\Base invoice(InvoiceBase)\Invoice amount(Amount)'.</span></span>
-12. <span data-ttu-id="0a27a-178">Kattintson a Kötés gombra.</span><span class="sxs-lookup"><span data-stu-id="0a27a-178">Click Bind.</span></span>
-13. <span data-ttu-id="0a27a-179">A fastruktúrában bontsa ki a „modell\Számlamellékletek” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="0a27a-179">In the tree, expand 'model\Invoice attachments'.</span></span>
-14. <span data-ttu-id="0a27a-180">A fastruktúrában válassza ki a „modell\Számlamellékletek\Fájltartalom” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="0a27a-180">In the tree, select 'model\Invoice attachments\File content'.</span></span>
-15. <span data-ttu-id="0a27a-181">A fastruktúrában válassza ki a „Számla\EnclosedDocs\Dokumentum\FileContent\Base64” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="0a27a-181">In the tree, select 'Invoice\EnclosedDocs\Document\FileContent\Base64'.</span></span>
-16. <span data-ttu-id="0a27a-182">Kattintson a Kötés gombra.</span><span class="sxs-lookup"><span data-stu-id="0a27a-182">Click Bind.</span></span>
-17. <span data-ttu-id="0a27a-183">A fastruktúrában válassza ki a „modell\Számlamellékletek\Fájlnév” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="0a27a-183">In the tree, select 'model\Invoice attachments\File name'.</span></span>
-18. <span data-ttu-id="0a27a-184">A fastruktúrában válassza ki a „Számla\EnclosedDocs\Dokumentum\FileName” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="0a27a-184">In the tree, select 'Invoice\EnclosedDocs\Document\FileName'.</span></span>
-19. <span data-ttu-id="0a27a-185">Kattintson a Kötés gombra.</span><span class="sxs-lookup"><span data-stu-id="0a27a-185">Click Bind.</span></span>
-20. <span data-ttu-id="0a27a-186">A fastruktúrában válassza ki a „modell\Számlamellékletek” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="0a27a-186">In the tree, select 'model\Invoice attachments'.</span></span>
-21. <span data-ttu-id="0a27a-187">A fastruktúrában válassza ki a „Számla\EnclosedDocs\Dokumentum” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="0a27a-187">In the tree, select 'Invoice\EnclosedDocs\Document'.</span></span>
-22. <span data-ttu-id="0a27a-188">Kattintson a Kötés gombra.</span><span class="sxs-lookup"><span data-stu-id="0a27a-188">Click Bind.</span></span>
-23. <span data-ttu-id="0a27a-189">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="0a27a-189">Click Save.</span></span>
-24. <span data-ttu-id="0a27a-190">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="0a27a-190">Close the page.</span></span>
+## <a name="map-format-elements-to-data-model-as-data-source"></a><span data-ttu-id="3a129-167">Formátumelemek leképezése az adatmodellre adatforrásként</span><span class="sxs-lookup"><span data-stu-id="3a129-167">Map format elements to data model as data source</span></span>
+1. <span data-ttu-id="3a129-168">A fastruktúrában válassza ki a „Számla\SalesOrder” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="3a129-168">In the tree, select 'Invoice\SalesOrder'.</span></span>
+2. <span data-ttu-id="3a129-169">Kattintson a Hozzárendelés fülre.</span><span class="sxs-lookup"><span data-stu-id="3a129-169">Click the Mapping tab.</span></span>
+3. <span data-ttu-id="3a129-170">A fában bontsa ki a „model” elemet.</span><span class="sxs-lookup"><span data-stu-id="3a129-170">In the tree, expand 'model'.</span></span>
+4. <span data-ttu-id="3a129-171">A fastruktúrában válassza ki a következőt: „modell\Értékesítési rendelés száma(SalesId)”.</span><span class="sxs-lookup"><span data-stu-id="3a129-171">In the tree, select 'model\Sales order number(SalesId)'.</span></span>
+5. <span data-ttu-id="3a129-172">Kattintson a Kötés gombra.</span><span class="sxs-lookup"><span data-stu-id="3a129-172">Click Bind.</span></span>
+6. <span data-ttu-id="3a129-173">A fastruktúrában válassza ki a „Számla\InvoiceNumber” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="3a129-173">In the tree, select 'Invoice\InvoiceNumber'.</span></span>
+7. <span data-ttu-id="3a129-174">A fastruktúrában bontsa ki a „modell\Számlaalap(InvoiceBase)” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="3a129-174">In the tree, expand 'model\Base invoice(InvoiceBase)'.</span></span>
+8. <span data-ttu-id="3a129-175">A fastruktúrában válassza ki a következőt: „modell\Számlaalap(InvoiceBase) \Számlaszám(Id)”.</span><span class="sxs-lookup"><span data-stu-id="3a129-175">In the tree, select 'model\Base invoice(InvoiceBase)\Invoice number(Id)'.</span></span>
+9. <span data-ttu-id="3a129-176">Kattintson a Kötés gombra.</span><span class="sxs-lookup"><span data-stu-id="3a129-176">Click Bind.</span></span>
+10. <span data-ttu-id="3a129-177">A fastruktúrában válassza ki a „Számla\InvoiceAmount” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="3a129-177">In the tree, select 'Invoice\InvoiceAmount'.</span></span>
+11. <span data-ttu-id="3a129-178">A fastruktúrában válassza ki a következőt: „modell\Számlaalap(InvoiceBase) \Számlaösszeg(Amount)”.</span><span class="sxs-lookup"><span data-stu-id="3a129-178">In the tree, select 'model\Base invoice(InvoiceBase)\Invoice amount(Amount)'.</span></span>
+12. <span data-ttu-id="3a129-179">Kattintson a Kötés gombra.</span><span class="sxs-lookup"><span data-stu-id="3a129-179">Click Bind.</span></span>
+13. <span data-ttu-id="3a129-180">A fastruktúrában bontsa ki a „modell\Számlamellékletek” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="3a129-180">In the tree, expand 'model\Invoice attachments'.</span></span>
+14. <span data-ttu-id="3a129-181">A fastruktúrában válassza ki a „modell\Számlamellékletek\Fájltartalom” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="3a129-181">In the tree, select 'model\Invoice attachments\File content'.</span></span>
+15. <span data-ttu-id="3a129-182">A fastruktúrában válassza ki a „Számla\EnclosedDocs\Dokumentum\FileContent\Base64” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="3a129-182">In the tree, select 'Invoice\EnclosedDocs\Document\FileContent\Base64'.</span></span>
+16. <span data-ttu-id="3a129-183">Kattintson a Kötés gombra.</span><span class="sxs-lookup"><span data-stu-id="3a129-183">Click Bind.</span></span>
+17. <span data-ttu-id="3a129-184">A fastruktúrában válassza ki a „modell\Számlamellékletek\Fájlnév” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="3a129-184">In the tree, select 'model\Invoice attachments\File name'.</span></span>
+18. <span data-ttu-id="3a129-185">A fastruktúrában válassza ki a „Számla\EnclosedDocs\Dokumentum\FileName” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="3a129-185">In the tree, select 'Invoice\EnclosedDocs\Document\FileName'.</span></span>
+19. <span data-ttu-id="3a129-186">Kattintson a Kötés gombra.</span><span class="sxs-lookup"><span data-stu-id="3a129-186">Click Bind.</span></span>
+20. <span data-ttu-id="3a129-187">A fastruktúrában válassza ki a „modell\Számlamellékletek” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="3a129-187">In the tree, select 'model\Invoice attachments'.</span></span>
+21. <span data-ttu-id="3a129-188">A fastruktúrában válassza ki a „Számla\EnclosedDocs\Dokumentum” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="3a129-188">In the tree, select 'Invoice\EnclosedDocs\Document'.</span></span>
+22. <span data-ttu-id="3a129-189">Kattintson a Kötés gombra.</span><span class="sxs-lookup"><span data-stu-id="3a129-189">Click Bind.</span></span>
+23. <span data-ttu-id="3a129-190">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="3a129-190">Click Save.</span></span>
+24. <span data-ttu-id="3a129-191">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="3a129-191">Close the page.</span></span>
 
