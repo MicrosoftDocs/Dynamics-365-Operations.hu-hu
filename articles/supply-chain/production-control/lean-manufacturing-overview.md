@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: KanbanBoardTransferJob, KanbanBoardWorkCell, KanbanJobSchedulingListPage, LeanProductionFlow, Kanban, KanbanQuantityOverview, KanbanAssignCard, KanbanCirculatingCards, KanbanRules, WHSKanbanWaveTableManagePickingListPool
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 19371
 ms.assetid: 026c5605-6be7-4fdb-a6f2-8e37a806796c
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 63a9856035088642254fd43d14cb324a89bc19d6
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 5ba514a6af360074696814278b51ba41327a294d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4429864"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5006991"
 ---
 # <a name="lean-manufacturing-overview"></a>Lean manufacturing (áttekintés)
 
@@ -51,7 +50,7 @@ Hozzon létre egy lean manufacruring alapítványt a gyártási és logisztikai 
 
 ## <a name="using-kanbans-to-signal-demand-requirements"></a> Kanbanok használata szükség követelmények jelzéséhez
 A húzó rendszer csak szükség esetén termel. Ez az eljárás csökkenti a felesleges készleteket és a szállítás átfutási idejét. Használhat kanbanokat tervezéshez, követéshez és folyamat követelményekhez amelyek termelési folyamatokon alapulnak. Kanban keretrendszer létrehozásához hozzon létre kanbanszabályokat, amelyek meghatározzák mikor jönnek létre kanbanok és hogyan teljesülnek a követelmények. Kétféle kanbanszabályt lehet létrehozni. A gyártási szabályok folyamat kanbanfeladatokat hoznak létre, a kanbanszabályok visszavonása pedig transzfer kanbanfeladatokat hoz létre. A következő feltöltési stratégiákat lehet beállítani:
--   **Fix mennyiség** a kanbanszabályok rögzített számú anyagkezelési egységre vonatkoznak, amely azt jelenti, hogy az aktív kanbanok száma állandó. Amikor egy kanbanból származó összes terméket felhasználnak, és a kezelési egységeket kézzel kiürítik, létrejön egy azonos típusú új kanban. Ha rögzített mennyiségű kanbanszabályt hoz létre, kiszámíthatja az optimális kanbanmennyiségeket és a használt termékmennyiségeket. A számítás figyelembe veszi a számla-előrejelzést, tényleges igényt a nyitott rendelésekből, cikkek feltöltésének átfutási idejét és a korábbi igényeket.
+-   **Fix mennyiség** a kanbanszabályok rögzített számú anyagkezelési egységre vonatkoznak, amely azt jelenti, hogy az aktív kanbanok száma állandó. Amikor egy kanbanból származó összes terméket felhasználnak, és a kezelési egységeket kézzel kiürítik, létrejön egy azonos típusú új kanban. Ha rögzített mennyiségű kanbanszabályt hoz létre, kiszámíthatja az optimális kanbanmennyiségeket és a használt termékmennyiségeket. A számítás figyelembe veszi a számla-előrejelzést, tényleges igényt a nyitott rendelésekből, cikkek feltöltésének átfutási idejét és a korábbi igényeket.
 -   **Ütemezett** Kanbanszabályok az alaptervezet által számított igényeket teljesítik. Az alaptervezet tervezett kanbanokat hoz létre, amelyek kanbanként lehet megerősíteni.
 -   **Esemény** Kanbanszabályok azon igények teljesítésére, melyeket az értékesítési rendelés vonalak, a gyártási anyagjegyzék vonalak vagy a minimális készlet beállítások tartalmaznak. Ha eseménykanbanok jönnek létre, akkor forrás szükségletekhez kerülnek rögzítésre.
 
@@ -83,6 +82,3 @@ Továbbá a Lean manufacturing támogatja a beszerzési és számlázási folyam
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

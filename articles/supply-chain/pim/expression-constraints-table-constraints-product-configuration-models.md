@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: PCGlobalTableConstraintEdit, PCProductConfigurationModelDetails, PCTableConstraintAttachAttributeTree, PCTableConstraintDefinition
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 53111
 ms.assetid: 5c12b1f2-eb89-4648-a755-de412f2eadd6
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: be9d9ae48d21db077928ba7bd5615fea47ea5181
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: bc07d5b915e0b878cc7b2ef1d5f3253de8776608
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429716"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5007704"
 ---
 # <a name="expression-constraints-and-table-constraints-in-product-configuration-models"></a>A termékkonfigurációs modellek kifejezésmegszorításai
 
@@ -110,16 +109,16 @@ A következő táblázatokban a listában az operátorok és infix jelölések, 
 <tr class="odd">
 <td>Implikálja</td>
 <td>Ez akkor is igaz, ha az első feltétel nem teljesül, a második feltétel értéke igaz, vagy mindkettőt.</td>
-<td>Implies[a, b], infix: a -: b</td>
+<td>Azt jelenti, [a, b] infix: a-: b</td>
 <td><ul>
-<li><strong>Műveleti jel:</strong> Implies[x != 0, y &gt;= 0]</li>
+<li><strong>Műveleti jel:</strong> a következőt jelenti: [x != 0, y &gt;= 0]</li>
 <li><strong>Infix jelölés:</strong> x != 0 -: y &gt;= 0</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td>És</td>
 <td>Ez akkor is igaz, csak az összes feltételek teljesülése esetén. Ha a feltétel értéke 0 (nulla), <strong>Igaz</strong> hoz létre.</td>
-<td>And[args], infix: a &amp; b &amp; ... &amp; z</td>
+<td>And[argumentumok], infix: a &amp; b &amp; ... &amp; z</td>
 <td><ul>
 <li><strong>Műveleti jel:</strong> And[x == 2, y &lt;= 2]</li>
 <li><strong>Infix jelölés:</strong> x == 2 &amp; y &lt;= 2</li>
@@ -128,7 +127,7 @@ A következő táblázatokban a listában az operátorok és infix jelölések, 
 <tr class="odd">
 <td>Vagy</td>
 <td>Ez akkor is igaz, ha bármelyik feltétel teljesül. Ha a feltétel értéke 0 (nulla), <strong>Hamis</strong> hoz létre.</td>
-<td>Or[args], infix: a | b | ... | z</td>
+<td>Or[argumentumok], infix: a | b | ... | z</td>
 <td><ul>
 <li><strong>Műveleti jel:</strong> Or[x == 2, y &lt;= 2]</li>
 <li><strong>Infix jelölés:</strong> x == 2 | y &lt;= 2</li>
@@ -137,7 +136,7 @@ A következő táblázatokban a listában az operátorok és infix jelölések, 
 <tr class="even">
 <td>Plusz</td>
 <td>Ez az összegek feltételeit. Ha a feltétel értéke 0 (nulla), <strong>0</strong>-t hoz létre.</td>
-<td>Plus[args], infix: a + b + ... + z</td>
+<td>Plusz[argumentumok], infix: a + b + ... + z</td>
 <td><ul>
 <li><strong>Művelet:</strong> Plus[x, y, 2] == z</li>
 <li><strong>Infix jelölés:</strong> x + y + 2 == z</li>
@@ -146,22 +145,22 @@ A következő táblázatokban a listában az operátorok és infix jelölések, 
 <tr class="odd">
 <td>Mínusz</td>
 <td>Ez a argumentum ellentettjét adja. Ez kell pontosan egy feltételt.</td>
-<td>Minus[expr], infix: -expr</td>
+<td>[Kifejezés], csökkentett infix: - kifejezés</td>
 <td><ul>
-<li><strong>Műveleti jel:</strong> Minus[x] == y</li>
+<li><strong>Művelet:</strong> Minus[x] == y</li>
 <li><strong>Infix jelölés:</strong> -x == y</li>
 </ul></td>
 </tr>
 <tr class="even">
-<td>Abs</td>
+<td>(ABS)</td>
 <td>Ez a termelésnek állapotuk adat abszolút értéke. Ez kell pontosan egy feltételt.</td>
-<td>Abs[expr]</td>
+<td>[Kifejezés] ABS</td>
 <td><strong>Művelet:</strong> Abs[x]</td>
 </tr>
 <tr class="odd">
 <td>Idők</td>
 <td>Ez a feltétel a termék vesz igénybe. Ha a feltétel értéke 0 (nulla), <strong>1</strong>-t hoz létre.</td>
-<td>Times[args], infix: a * b * ... * z</td>
+<td>Szorzás[argumentumok], infix: a * b * ... * z</td>
 <td><ul>
 <li><strong>Művelet:</strong> Times[x, y, 2] == z</li>
 <li><strong>Infix jelölés:</strong> x * y * 2 == z</li>
@@ -170,7 +169,7 @@ A következő táblázatokban a listában az operátorok és infix jelölések, 
 <tr class="even">
 <td>Teljesítmény</td>
 <td>Ez a termelésnek a tudományos. Ez akkor érvényes hatványkitevő jobbról balra. (Ez azt jelenti, hogy jobbra társuló.) Ezért <strong>Hatvány[a, b, c]</strong> egyenlő: <strong>Hatvány[a, hatvány[b, c]]</strong>. A <strong>Power</strong> csak használható pozitív állandó, mint a kitevő.</td>
-<td>Power[args], infix: a ^ b ^ ... ^ z</td>
+<td>Hatvány[argumentumok], infix: a ^ b ^ ... ^ z</td>
 <td><ul>
 <li><strong>Művelet:</strong> Power[x, 2] == y</li>
 <li><strong>Infix jelölés:</strong> x ^ 2 == y</li>
@@ -183,7 +182,7 @@ A következő táblázatokban a listában az operátorok és infix jelölések, 
 <td><strong>Művelet:</strong> Max[x, y, 2] == z</td>
 </tr>
 <tr class="even">
-<td>perc</td>
+<td>Min.</td>
 <td>A legkisebb feltételt jeleníti meg. Ha a feltétel értéke 0 (nulla), <strong>Végtelen</strong> hoz létre.</td>
 <td>Min[args]</td>
 <td><strong>Művelet:</strong> Min[x, y, 2] == z</td>
@@ -193,7 +192,7 @@ A következő táblázatokban a listában az operátorok és infix jelölések, 
 <td>A feltétel logikai inverzét jelenít meg. Ez kell pontosan egy feltételt.</td>
 <td>Not[expr], infix: !expr</td>
 <td><ul>
-<li><strong>Műveleti jel</strong>: Not[x] &amp; Not[y == 3]</li>
+<li><strong>Műveleti jel:</strong> Not[x] &amp; Not[y == 3]</li>
 <li><strong>Infix jelölés:</strong> !x!(y == 3)</li>
 </ul></td>
 </tr>
@@ -222,7 +221,7 @@ Az alábbi táblázatban szereplő példák bemutatják, hogyan lehet írni egy 
 |        (x)        |                           Zárójelek alapértelmezett elsőbbségi sorrend felülbírálása.                            |
 
 ## <a name="why-arent-my-expression-constraints-validated-correctly"></a>Miért nem megfelelő a kifejezés megszorítások ellenőrzése?
-Attribútumok, alkatrészek vagy az egy termékkonfigurációs modell alösszetevői attribútumfeloldó neve fenntartott kulcsszó nem használható. Az alábbi lista a foglalt kulcsszavakat mutatja, amelyek nem használhatók:
+Attribútumok, alkatrészek vagy az egy termékkonfigurációs modell alösszetevői attribútumfeloldó neve fenntartott kulcsszó nem használható. Az alábbi lista a foglalt kulcsszavakat mutatja, amelyek nem használhatók:
 
 -   Felső határ
 -   Elem
@@ -254,6 +253,3 @@ Attribútumok, alkatrészek vagy az egy termékkonfigurációs modell alösszete
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 23c9062dcc13951792306c955b54cae6f656fec5
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: 2bcdea4a2a8f4386b274077cd1e95398fb6fac37
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4646079"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5009368"
 ---
 # <a name="improve-the-prediction-model-preview"></a>Az előrejelzési modell javítása (előzetes verzió)
 
@@ -42,19 +41,19 @@ Ha a szervezet csak két eredményt igényel, módosítsa a **Későn** és a **
 
 ## <a name="select-fields"></a>Mezők kijelölése
 
-Amikor a modellbe felvenni kívánt mezőket választja, vegye figyelembe, hogy a lista tartalmazza a Common Data Service-entitás összes elérhető mezőjét, amely az Azure Data Lake-ben lévő adatokhoz van rendelve. A mezők némelyikét **Nem** szabad kijelölni. A ki nem jelölendő mezők a következő három kategória egyikébe tartoznak:
+Amikor a modellbe felvenni kívánt mezőket választja, vegye figyelembe, hogy a lista tartalmazza a Microsoft Dataverse-tábla összes elérhető mezőjét, amely az Azure Data Lake-ben lévő adatokhoz van rendelve. A mezők némelyikét **Nem** szabad kijelölni. A ki nem jelölendő mezők a következő három kategória egyikébe tartoznak:
 
-- A mező kitöltése szükséges a Common Data Service-entitáshoz, de nincsenek háttéradatok a Data Lake-ben.
+- A mező kitöltése szükséges a Dataverse-táblához, de nincsenek háttéradatok a Data Lake-ben.
 - A mező egy azonosító, ezért nincs értelme a gépi tanulási funkciónak.
 - A mező olyan információkat mutat, amelyek nem érhetők el az előrejelzés során.
 
 A következő szakaszok a számla és a vevőentitások számára rendelkezésre álló mezőket mutatják be, és felsorolják azokat a mezőket, amelyeket **nem** szabad betanításra kiválasztani. Az egyes mezőkhöz megadott kategória az előző listában szereplő kategóriákra vonatkozik.
  
-### <a name="invoice-common-data-model-entity"></a>Számla Common Data Model entitás
+### <a name="invoice-dataverse-table"></a>Dataverse-számlatábla
 
-A következő ábra a számlaentitáshoz rendelkezésre álló mezőket mutatja be.
+A következő ábra a számlatáblához rendelkezésre álló mezőket mutatja be.
 
-[![A számlaentitás elérhető mezői](./media/available-fields.png)](./media/available-fields.png)
+[![A számlatábla elérhető mezői](./media/available-fields.png)](./media/available-fields.png)
 
 A következő mezőket nem szabad kiválasztani betanításhoz:
 
@@ -65,11 +64,11 @@ A következő mezőket nem szabad kiválasztani betanításhoz:
 - **Erőforrásrekord** (2. kategória)
 - **Forrástábla** (2. kategória)
 
-### <a name="customer-common-data-model-entity"></a>Vevői Common Data Model entitás
+### <a name="customer-dataverse-table"></a>Dataverse vevői tábla
 
-A következő ábra a vevőentitáshoz rendelkezésre álló mezőket mutatja be.
+A következő ábra a vevőtáblához rendelkezésre álló mezőket mutatja be.
 
-[![A vevőentitás elérhető mezői](./media/related-entities.png)](./media/related-entities.png)
+[![A vevőtábla elérhető mezői](./media/related-entities.png)](./media/related-entities.png)
 
 A következő mezőt nem szabad kiválasztani betanításhoz:
 
@@ -83,6 +82,3 @@ A szűrők jelenleg nem támogatják az Ügyfél fizetési előrejelzési forgat
 
 #### <a name="privacy-notice"></a>Adatvédelmi nyilatkozat
 Az előzetes verziók (1) kevesebb adatvédelmi és biztonsági intézkedést alkalmazhatnak, mint a Dynamics 365 Finance and Operations szolgáltatás (2) és nem vonatkozik a szolgáltatásiszint-szerződés (SLA) ehhez a szolgáltatáshoz, (3) nem használhatók olyan személyes adatok vagy más adatok feldolgozásához, melyekhez törvényi vagy jogszabályi megfelelési követelmények tartoznak, és (4) korlátozott támogatás tartozik hozzá.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 86be6d4cc0af3f2fd92523d4ecd3825f2383fc48
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 91df786ed2298e21e7a3018b915c9bd5458efc32
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4443972"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5009243"
 ---
 # <a name="online-financial-consolidations"></a>Online pénzügyi konszolidációk
 
@@ -32,7 +31,7 @@ Ez a témakör leírja az online pénzügyi konszolidációkat a főkönyvben. A
 A beállítás befejezése után adja meg a konszolidáció részleteit a **Konszolidálás [Online]** oldalon. Amikor végzett, kattintson az **OK** VAGY a **Köteg** lehetőségre a konszolidáció feldolgozásához.
 
 ## <a name="criteria"></a>Feltételek
-A **Feltételek** fülön a **Konszolidálás [Online]** oldalon megadhatja a számlákat, az időszakokat és a konszolidálandó adatok típusát.
+A **Feltételek** lapon a **Konszolidálás [Online]** oldalon megadhatja a számlákat, az időszakokat és a konszolidálandó adatok típusát.
 
 ![Feltételek lap](./media/criteria-consolidate-online.png "Feltételek lap")
 
@@ -96,6 +95,3 @@ A **Devizaátváltás** lapon megadhatja a jogi személyt, a számlát és az á
 További információért a konszolidációról, és a pénznem átváltásokhoz tekintse meg jelen témakör szülő témakörét, [Pénzügyi konszolidáció és devizaátváltás áttekintése](./financial-consolidations-currency-translation.md).
 
 További információért azzal kapcsolatosan, hogy hol generálhat konszolidált pénzügyi kimutatásokat, lásd: [Konszolidált pénzügyi kimutatások létrehozását](./generating-consolidated-financial-statements.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 19311
 ms.assetid: 5ffb1486-2e08-4cdc-bd34-b47ae795ef0f
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.search.validFrom: 2020-11-05
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 94e5668da45c524ed9ab9eef10b40d0fb5336a65
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: 8a55958a4b9573a7c3527d3d97cbcb818457b995
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4645996"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5007979"
 ---
 # <a name="migration-to-planning-optimization-for-master-planning"></a>Áttelepítés az alaptervezéshez használatos Tervezési optimalizálásra
 
@@ -116,6 +115,3 @@ Az alaptervezés futtatásakor a következő hibaüzenet jelenik meg a 10.0.16-o
 > Töltse ki a következő kérdőívet a kezdéshez, illetve a szükséges, kérelmezzen kivételt a Tervezési optimalizálásra való átállítás alól.
 
 **Válasz:** Nem, az alaptervezés nem zárolt. Az alaptervezés futtatása sikeresen befejeződött, és az eredményt a megszokott módon lehet használni. Ha azonban a jövőbeli alaptervezés során nem szeretné látni ezt a hibaüzenetet, akkor vagy azonnal át kell telepítenie a rendszerét a Tervezési optimalizálásra, vagy kivételt kell kérnie a hibaüzenetben szereplő hivatkozás használatával.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

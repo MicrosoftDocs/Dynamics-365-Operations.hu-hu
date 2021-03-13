@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: PurchTable, PurchTablePart
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: smnatara
 ms.search.validFrom: 2020-9-16
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 234458f865e37a2d962aee8ab218b9521847081d
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 7b65c23fc7ac04fc30c0001bee9541a475026018
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4429941"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5007491"
 ---
 # <a name="troubleshoot-purchase-orders"></a>Beszerzési rendelések hibaelhárítása
 
@@ -132,7 +131,7 @@ Csak addig hosszabbíthatja meg azt az időszakot, ameddig a szállítót jóvá
 
 A probléma leírásában ismertetett példa esetében, amikor a rekord érvényességi dátuma *01/11/2018* érvényességi dátuma és a lejárati dátuma *Soha*, importálhat egy olyan új rekordot, amelynek érvényességi dátuma *01/10/2018*, és a lejárati dátuma *Soha*. Az időszakot azonban nem lehet csökkenteni úgy, hogy az érvényességi dátumot *01/12/2018* értékre módosítja az adatkezelési folyamaton keresztül. Ezt a módosítást a felhasználói felületen keresztül kell elvégeznie.
 
-## <a name="after-i-change-the-delivery-address-on-a-purchase-order-header-the-delivery-nameisnt-synced"></a>A beszerzési rendelés fejlécében szereplő szállítási cím módosítása után a szállítási név nincs szinkronizálva.
+## <a name="after-i-change-the-delivery-address-on-a-purchase-order-header-the-delivery-name-isnt-synced"></a>A beszerzési rendelés fejlécében szereplő szállítási cím módosítása után a szállítási név nincs szinkronizálva.
 
 ### <a name="issue-description"></a>Probléma leírása
 
@@ -145,6 +144,3 @@ Ez szándékosan van. A kiválasztott cím besorolása szállítási cím kell l
 ## <a name="can-i-find-the-user-who-canceled-a-purchase-order"></a>Megkereshetem azt a felhasználót, aki törölte a beszerzési rendelést?
 
 Ezt az információt csak akkor követi nyomon a program, ha a beszerzési rendelésen alkalmazva van a változások követése. Ha változáskövetést használ, megtekintheti, hogy ki küldte be a módosítást (a visszavonást), és ki hagyta jóvá.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

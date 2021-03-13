@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: JmgShopSupervisorReleaseOrders
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 221264
 ms.assetid: dde49743-1541-4353-a030-63ca3069cd7d
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 9f7546b70ddef30d88a79b00fe31d4e82d9bfb9b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 84be2a4646cfc18cd1f25a4ec969acdb62cb2856
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429453"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5007241"
 ---
 # <a name="flushing-principles"></a>Ürítési elvek
 
@@ -63,6 +62,3 @@ A Befejezés ürítési alapelv azt jelzi, hogy anyag fog kell felhasználása a
 
 ### <a name="available-at-location"></a>Rendelkezésre áll a helyen
 Rendelkezésre álló hely kiürítési elvét, azt jelzi, hogy az anyag lesz automatikusan felhasználandó regisztrálásakor, valamint a termelés. Az anyag regisztrálva van, valamint a helyről munka a nyersanyag kitárolása befejeződött, vagy ha anyag érhető el a termelési bemeneti hely és az anyagjegyzéksorban ki van adva a raktárba. A kitárolási lista, amely a folyamat során létrejön egy kötegelt feladatban feladása. Ezt az elvet jelentősége, ha például egy termelési rendeléssel szembeni több kitárolási tevékenységek vannak beállítva. Ebben az esetben nem kell manuálisan a kitárolási lista frissítése, és letöltheti a folyamatban lévő munka egyenlegű aktuális nézetét.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

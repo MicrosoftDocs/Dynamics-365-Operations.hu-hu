@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: ''
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail, Core, Operations
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: cf3df2267671b50c20b28dbdb1c6a21696bf2515
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8eaebaf605cd53ce6848624169c3bbbd2a4281a5
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412752"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5009899"
 ---
 # <a name="product-recommendations-faq"></a>Termékajánlatok GYIK-je
 
@@ -100,6 +99,3 @@ A termékajánlások engedélyezése után hozzá kell adnia az ajánlások pane
 [Válogatott ajánlások manuális létrehozása](create-editorial-recommendation-lists.md)
 
 [Ajánlások létrehozása bemutató adatokkal](product-recommendations-demo-data.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

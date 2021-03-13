@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: LedgerJournalSetup, LedgerJournalTable
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 15721
 ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2020-06-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 801327dc54f6d4cfef7a9f062395e29846783e8f
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: ae0eba6d397725cf425d9781a597d904e1958d44
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4644945"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5009392"
 ---
 # <a name="use-external-data-in-cash-flow-forecasts-preview"></a>Külső adatok használata pénzforgalmi előrejelzésekben (előzetes verzió)
 
@@ -63,6 +62,3 @@ Ezenkívül ha a beállítási adatokat át kell vinni egyik környezetből a m�
 
 #### <a name="privacy-notice"></a>Adatvédelmi nyilatkozat
 Az előzetes verziók (1) kevesebb adatvédelmi és biztonsági intézkedést alkalmazhatnak, mint a Dynamics 365 Finance and Operations szolgáltatás (2) és nem vonatkozik a szolgáltatásiszint-szerződés (SLA) ehhez a szolgáltatáshoz, (3) nem használhatók olyan személyes adatok vagy más adatok feldolgozásához, melyekhez törvényi vagy jogszabályi megfelelési követelmények tartoznak, és (4) korlátozott támogatás tartozik hozzá.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

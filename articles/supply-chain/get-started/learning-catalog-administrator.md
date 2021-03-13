@@ -10,16 +10,15 @@ ms.service: Dynamics365Operations
 ms.technology: ''
 audience: Application user
 ms.reviewer: margoc
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: ba93bdcb64237af627c5a6d5adb834583f08f768
-ms.sourcegitcommit: 8eefb4e14ae0ea27769ab2cecca747755560efa3
+ms.openlocfilehash: a4e158be2d20755e2380d573116383101fd6d07f
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "4516619"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5008163"
 ---
 # <a name="learning-catalog-for-dynamics-365-supply-chain-management-administrators"></a>Képzési katalógus a Dynamics 365 Supply Chain Management adminisztrátorok számára
 
@@ -88,6 +87,3 @@ A következő katalógus az alapismeretekből a meghatározott tartományokra, a
 | Tartalom  | Leírás  | Formátum  |
 |-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|----------------------------------------------------------|
 | [Dynamics 365 alapok](https://docs.microsoft.com/learn/certifications/d365-fundamentals?wt.mc_id=learningredirect_certs-web-wwl) | Bizonyítsa be, hogy érti a Microsoft Dynamics 365 Power Platform lényegét; felhőalapú fogalmak, licencelési beállítások, és telepítési és kiadási beállítások. | Vizsga; a költség régiónként változik |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

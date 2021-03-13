@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: AssetDepBookTable, AssetGroupDepBookSetup
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 03f915fa91e0eeff2f26ab9a60bbd5118317e853
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1e1d934bffd0a5daacf27fcd5a2e00043fe3daf8
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4444050"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5009218"
 ---
 # <a name="set-up-depreciation-books"></a>Értékcsökkenési könyvek beállítása 
 
@@ -55,6 +54,3 @@ Ez az eljárás végigvezeti egy új értékcsökkenési könyv létrehozási fo
 6. Adjon meg egy számot az Élettartam mezőben.
     * Figyelje meg, hogy az Értékcsökkenési időszakok mező értéke az Élettartam beállítását követően kerül kiszámításra.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: d3573aa5f8f986fa4fbf1c9ea8b322a1256aee36
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3836273b1c782fe80172443f4d4c29001ccea83a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429715"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5007666"
 ---
 # <a name="hazardous-materials-in-products-orders-shipments-and-loads"></a>Termékekben, megrendelésekben, szállítmányokban és rakományokban lévő veszélyes anyagok
 
@@ -221,6 +220,3 @@ A kompatibilitási ellenőrzés futtatásához kövesse az alábbi lépéseket.
 1. A műveleti ablakban a **Rakományok** lapon a **Műveletek** csoportban válassza a **Kompatibilitás ellenőrzése** lehetőséget.
 
 Egy üzenet jelenik meg, amely tájékoztat az ellenőrzés eredményeiről.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
