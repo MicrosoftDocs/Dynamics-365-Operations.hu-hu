@@ -1,7 +1,7 @@
 ---
 title: Adja meg és hasonlítsa össze az Ajánlatkérés ajánlatait, és rendeljen hozzá szerződéseket
 description: Ez a cikk azt tekinti át, hogyan adhatók válaszok az ajánlatkérésre, hogyan pontozhatók és hasonlíthatók össze az ajánlatok, illetve hogyan ítélhető a szerződés az egyik szállítónak.
-author: mkirknel
+author: RichardLuan
 manager: tfehr
 ms.date: 07/09/2019
 ms.topic: business-process
@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: PurchRFQCaseTableListPage, PurchRFQCaseTable, PurchRFQReplyTable, PurchRFQCompare, PurchRFQEditLines, PurchRFQEditLinesParameters, PurchTable, PurchTablePart, PurchRFQCompareLinePrices, PurchRFQCompareRFQ
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ae7c43516fc90224439f6f7cfd5fd0a6058e8b39
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 3f14b95a71397bf5879c97654620e1d4c22a1149
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4429947"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5016678"
 ---
 # <a name="enter-and-compare-rfq-bids-and-award-contracts"></a>Adja meg és hasonlítsa össze az Ajánlatkérés ajánlatait, és rendeljen hozzá szerződéseket
 
@@ -107,6 +106,3 @@ Az ajánlatot szállítóként vagy beszerzési szakemberként is beviheti. Tov�
 ## <a name="view-the-purchase-order-that-is-generated"></a>A létrejött beszerzési rendelés megtekintése
 
 A Műveleti ablaktábla **Általános** lapján válassza a **Beszerzési rendelés** menüpontot. Itt megjelenő oldalon látható az ajánlat elfogadásakor létrehozott beszerzési rendelés.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
