@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 986d8986375aac9454483d89c46c1b2b6f52e68e
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 4c779b5948370444b0b474568bb63b347c4a0831
+ms.sourcegitcommit: 79621e667cd7f48ba3bdbf2731f6f33d8e9f57f6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694689"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "5154409"
 ---
 # <a name="plan-your-organizational-hierarchy"></a>Szervezeti hierarchia megtervezése
 
@@ -166,7 +166,7 @@ Az üzemi egységek a fölérendelt jogi személy ország kontextusát használj
 
 #### <a name="if-the-organization-is-modeled-as-a-legal-entity"></a>Ha a szervezet jogi személyként van modellezve
 
-Az olyan országok/régiók, amelyeket a program támogat, a legtöbb kötelező jelentés létrehozható. További információért arról, hogy milyen jelentések érhetők el minden egyes országhoz/régióhoz lásd [Microsoft Dynamics honosítási portál](https://mbs.microsoft.com/customersource/global/ax/support/support-news/GFMLocalizationPortalMC). (Egy CustomerSource bejelentkezés szükséges.)
+Az olyan országok/régiók, amelyeket a program támogat, a legtöbb kötelező jelentés létrehozható. További információért arról, hogy milyen jelentések érhetők el minden egyes országhoz/régióhoz lásd [Microsoft Dynamics honosítási portál](https://docs.microsoft.com/dynamics/s-e/). (Egy CustomerSource bejelentkezés szükséges.)
 
 > [!NOTE]
 > A főkönyvi feladási réteg segítségével végezze el a korrekciós bejegyzéseket a fölérendelt vállalatba, amely egy másik könyvelési standardot használ mint az alárendelt vállalat. Ha például egy vállalatra vonatkozóan, amely az Egyesült Királyságban (Egyesült Királyság GAAP) általánosan elfogadott könyvelési gyakorlatokat használ helyesbítő tételeket végezhet a feladási rétegben. Ezek a bejegyzések konszolidálhatók a fölérendelt vállalatba, amely az Egyesült Államokban általánosan elfogadott könyvelési elveket (GAAP) használja. A korrekciós bejegyzések nem befolyásolják a UK GAAP jelentést.
@@ -241,6 +241,3 @@ Vegye figyelembe a következő legjobb gyakorlati tanácsokat a szervezeti hiera
 - A fő átstruktúrálási tervek modellezése előtt használja a hierarchia érvényességi dátumát a hatáselemzés és az érvényességi teszt végrehajtásához.
 - A vázlat mód segítségével módosíthatja a hierarchiát az új verzió közzététele előtt termékkörnyezetben.
 - Korlátozhatja az emberek számát, akiknek engedélye van szervezetek hozzáadásához vagy eltávolításához a hierarchiából a termékkörnyezetben. A kevesebb csökkenti annak lehetőségét, hogy költséges hibák fordulnak elő és helyesbítéseket kell elvégezni.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

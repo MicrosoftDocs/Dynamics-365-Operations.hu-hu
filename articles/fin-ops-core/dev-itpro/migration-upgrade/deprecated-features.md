@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7ce6b3fb5217ad5d5228841a91d0b0406c305969
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 3b862938ec8226cc963fb8c85fcfc2241684eab7
+ms.sourcegitcommit: 79621e667cd7f48ba3bdbf2731f6f33d8e9f57f6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679956"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "5154385"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>Eltávolított vagy elavult funkciók a korábbi kiadásokban
 
@@ -39,7 +39,7 @@ Ez a témakör azt mutatja be, hogy mely szolgáltatások lettek eltávolítva v
 
 Ez a lista segít figyelembe venni az elavult és eltávolított szolgáltatásokat a saját tervezése elősegítésére. 
 
-A Finance and Operations alkalmazások objektumaival kapcsolatban a [Technikai referenciajelentésekben](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep) talál részletes információkat. Ezen jelentések különböző verzióit összehasonlíthatja, hogy megismerje azokat az objektumokat, melyek módosítva lettek vagy el lettek távolítva a Finance and Operations alkalmazások egyes verzióiban.
+A Finance and Operations alkalmazások objektumaival kapcsolatban a [Technikai referenciajelentésekben](https://docs.microsoft.com/dynamics/s-e/) talál részletes információkat. Ezen jelentések különböző verzióit összehasonlíthatja, hogy megismerje azokat az objektumokat, melyek módosítva lettek vagy el lettek távolítva a Finance and Operations alkalmazások egyes verzióiban.
 
 ## <a name="finance-1007-with-platform-update-31"></a>A Finance 10.0.7, 31-es platform frissítéssel
 
@@ -970,7 +970,7 @@ Ezzel az eszközzel integrálták a Microsoft Dynamics CRM rendszerből származ
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | Ezt a szolgáltatást egy másik szolgáltatás váltotta fel. |
-| **Felváltotta másik szolgáltatás?**   | Common Data Service                                      |
+| **Felváltotta másik szolgáltatás?**   | Dataverse                                      |
 | **Érintett területek**         | Connector for Dynamics                         |
 | **Állapot**                         | Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.                           |
 
@@ -1373,6 +1373,3 @@ A Windows 8-ra készült táblagépes alkalmazás lehetővé tette a költségbe
 |     <strong>Érintett területek</strong>     |                                              Főkönyv                                              |
 |             <strong>Állapot</strong>             |                                      Eltávolítva a Dynamics AX 2012-s verziójától kezdve                                      |
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

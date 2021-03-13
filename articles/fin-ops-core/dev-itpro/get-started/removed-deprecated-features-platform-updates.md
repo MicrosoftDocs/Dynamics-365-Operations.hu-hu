@@ -3,7 +3,7 @@ title: Eltávolított vagy elavult Platform-funkciók
 description: Ez a témakör azokat a funkciókat ismerteti, amelyek el lettek távolítva a platformfrissítésekben a Finance and Operations alkalmazásokból vagy az eltávolításuk be van tervezve.
 author: sericks007
 manager: AnnBe
-ms.date: 12/07/2020
+ms.date: 02/03/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: ffd98016079ccab47864c821116c821b5df22e3b
-ms.sourcegitcommit: 069ed5789517b550065e5e2317658fec4027359e
+ms.openlocfilehash: d57182aa34c4897ef3703d0f8ed08d032c261170
+ms.sourcegitcommit: 79621e667cd7f48ba3bdbf2731f6f33d8e9f57f6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "4689566"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "5154087"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Eltávolított vagy elavult Platform-funkciók
 
@@ -32,7 +32,55 @@ Ez a témakör azokat a funkciókat ismerteti, amelyek el lettek távolítva a p
 
 Ez a lista segít figyelembe venni az elavult és eltávolított szolgáltatásokat a saját tervezése elősegítésére. 
 
-A Finance and Operations alkalmazások objektumaival kapcsolatban a [Technikai referenciajelentésekben](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep) talál részletes információkat. Ezen jelentések különböző verzióit összehasonlíthatja, hogy megismerje azokat az objektumokat, melyek módosítva lettek vagy el lettek távolítva a Finance and Operations alkalmazások egyes verzióiban.
+A Finance and Operations alkalmazások objektumaival kapcsolatban a [Technikai referenciajelentésekben](https://docs.microsoft.com/dynamics/s-e/) talál részletes információkat. Ezen jelentések különböző verzióit összehasonlíthatja, hogy megismerje azokat az objektumokat, melyek módosítva lettek vagy el lettek távolítva a Finance and Operations alkalmazások egyes verzióiban.
+
+## <a name="feature-removed-effective-january-28-2021"></a>A funkció eltávolítva 2021. január 28-án
+
+### <a name="batch-job-to-handle-sql-index-defragmentation"></a>Kötegelt feladat az SQL-index töredezettségmentesítésének kezeléséhez
+
+|   |  |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | A szolgáltatás el lett távolítva, hogy csökkentse indexkezelés vevők általi üzemeltetéséből, figyeléséből és fenntartásából származó járulékos költségeket. |
+| **Felváltotta másik szolgáltatás?**   | A továbbiakban az index karbantartását a Microsoft szolgáltatásai végzik. Ez a folyamat folyamatosan, a felhasználói terhelések befolyásolása nélkül történik. |
+| **Érintett területek**         | Finance and Operations-alkalmazásoknak|
+| **Telepítési beállítás**              | Felhőtelepítés – a Microsoft által kezelt működési környezeteket és a 2.-tól az 5. szintig tartó tesztkörnyezeteket érinti. |
+| **Állapot**                         | Ez a funkció el lett távolítva. |
+
+
+## <a name="platform-updates-for-version-10017-of-finance-and-operations-apps"></a>Platform-frissítések az Finance and Operations alkalmazások 10.0.17 verziójához
+
+> [!IMPORTANT]
+> A 10.0.17-es verzió egy előnézeti kiadás részeként érhető el. A tartalom és a funkciók megváltozhatnak. Az előzetes kiadásokkal kapcsolatban további információkat az [Egyverziós szolgáltatásfrissítések GYIK](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/one-version) oldalon találhat.
+
+### <a name="visual-studio-2015"></a>Visual Studio2015
+
+|   |  |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | A Visual Studio legújabb verzióinak támogatásához néhány módosítást be tenni az X++ Visual Studio kiterjesztések esetében. Ezek a változtatások nem kompatibilisek a Visual Studio 2015 megoldással. |
+| **Felváltotta másik szolgáltatás?**   | A Visual Studio 2017 váltja a Visual Studio 2015 verziót a telepített és szükséges verzióként. |
+| **Érintett területek**         | Visual Studio fejlesztőeszközök |
+| **Telepítési beállítás**              | Összes |
+| **Állapot**                         | Elavult. Frissítéskor a korábbi X++ eszközök törlődnek a Visual Studio 2015-ből, és a frissített eszközöket nem telepíti a rendszer a Visual Studio 2015-re. Ez nincs hatással a tárolt buildekre. Buildelt virtuális gépek esetében a buildelési folyamatot (builddefiníciót) manuálisan kell frissíteni, hogy a függőség az MSBuild 14.0 (Visual Studio 2015) verzióról az MSBuild 15.0 (Visual Studio 2017) módosuljon, lásd: [Örökölt folyamat frissítése az Azure Pipelines szolgáltatásban](../dev-tools/pipeline-msbuild-update.md). |
+
+### <a name="user-avatar"></a>Felhasználó 
+
+|   |  |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | A navigációs sáv jobb oldalán látható felhasználó beolvasása a Dynamics 365 fejlécvezérlőben található API használatával történt, amely már elavult. |
+| **Felváltotta másik szolgáltatás?**   | A felhasználók a kezdőbetűiket ehelyett a navigációs sáv egy körében látják. Ugyanez a vizualizáció jelenleg fejlesztési gépeken is használatos. |
+| **Érintett területek**         | Webes ügyfél |
+| **Telepítési beállítás**              | Összes |
+| **Állapot**                         | Eltávolítva a 10.0.17 verziójától kezdve |
+
+### <a name="enterprise-portal-ep-deprecation"></a>Enterprise Portal (EP) elavulása  
+
+|   |  |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | A Dynamics 2012 AX Enterprise Portal (EP) alkalmazással összefüggő metaadat-műtermékei elavultak, mert az EP soha nem volt támogatott a Finance and Operations alkalmazásokban. |
+| **Felváltotta másik szolgáltatás?**   | Nincs |
+| **Érintett területek**         | Webes ügyfél |
+| **Telepítési beállítás**              | Összes |
+| **Állapot**                         | Elavult. Az összes EP-kód eltávolítása a 2021. októberi kiadásban van ütemezve. |
 
 ## <a name="platform-updates-for-version-10015-of-finance-and-operations-apps"></a>Platform-frissítések az Finance and Operations alkalmazások 10.0.15 verziójához
 
@@ -192,6 +240,3 @@ A Finance and Operations alkalmazások objektumaival kapcsolatban a [Technikai r
 ## <a name="previous-announcements-about-removed-or-deprecated-features"></a>Korábbi bejelentések az eltávolított vagy elavult funkciókról
 További tájékoztatás a korábbi verziókban eltávolított vagy elavult szolgáltatásokról: [Eltávolított vagy elavult funkciók a korábbi kiadásokban](../migration-upgrade/deprecated-features.md).
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

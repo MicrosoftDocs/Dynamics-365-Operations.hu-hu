@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4103c0630b72b9b92a116f7fe702a777dd295e25
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: ac72489c3b2dacfde280606a83221e8514793701
+ms.sourcegitcommit: 2190be6c205d7d9e43bdb99b9190cc0112f9f093
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527410"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "5152197"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-september-26-2020"></a>Új vagy módosult elemek a Dynamics 365 Human Resources szolgáltatásban (2020. szeptember 26.)
 
@@ -31,7 +30,7 @@ ms.locfileid: "4527410"
 
 Ez a témakör a Dynamics 365 Human Resources új, módosított vagy nemsokára várható szolgáltatásait írja le. A frissítési folyamattal és ütemezéssel kapcsolatos további tudnivalókért lásd: [Frissítési folyamat](hr-admin-setup-update-process.md).
 
-További tájékoztatás az új szolgáltatásokról és a nyilvános megjelenési dátumokról: [A Dynamics 365 Human Resources 2020. második kiadási hullámának áttekintése](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/dynamics365-human-resources/).
+További tájékoztatás az új szolgáltatásokról és a nyilvános megjelenési dátumokról: [A Dynamics 365 Human Resources 2020. második kiadási hullámának áttekintése](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/).
 
 ## <a name="in-this-release"></a>Ebben a verzióban
 
@@ -58,7 +57,7 @@ Ez a kiadás az alábbi hibajavításokat tartalmazza.
 | 481401 | Az eredményszemléletű feldolgozás lefagy, ha a könyvelési dátum alapja a könyvelési kezdési dátum után és a hónap végén van | Az eredményszemléletű feldolgozást frissítettük, hogy ne legyen késés, ha a könyvelési dátum alapja a könyvelés kezdő dátuma után és a hónap végén van. |
 | 447167 | A lejáró rekordok listája inaktív dolgozókat tartalmaz | A **Személyzet kezelése** rész **Lejáró rekordok** lapja inaktív dolgozókat tartalmaz. Most már csak az aktív dolgozók szerepelnek benne. |
 | 486840 | Hibás szabadságkérelem nyílik meg a **Hozzám rendelt munkatételek** elemből | A **Hozzám rendelt munkatételek** elemből szabadságkérelem megnyitása az aktuális felhasználóhoz rendelt legutóbbi szabadságkérelmet. |
-| 506868 | A Common Data Service **Cím** mezeje nicns beállítva a **Feladat beosztása** entitás esetén | A **Cím** mező a **Beosztás** és a **Feladat beosztása** entitásokban nem meghatározottként jelenik meg. A **Cím** mező most már megjelenik. |
+| 506868 | A Dataverse **Cím** mezeje nicns beállítva a **Feladat beosztása** entitás esetén | A **Cím** mező a **Beosztás** és a **Feladat beosztása** entitásokban nem meghatározottként jelenik meg. A **Cím** mező most már megjelenik. |
 | 430359 | Nem érhetők el a felszámolási ellenőrzőlista-feladatok, ha a vezető és alkalmazotti szerepköröket hozzárendelték | A jövőbeli megszűnési dátumú dolgozók csak akkor férhetnek hozzá a ellenőrzőlista feladataihoz, ha kizárólag alkalmazotti vagy vezetői szerepkörrel rendelkeztek. Most már csak az alkalmazotti vagy vezetői szerepkörrel rendelkező felhasználók férhetnek hozzá a jövőbeli megszűnési dátummal rendelkező felszámolási feladatokhoz. |
 | 458102 | Az új alkalmazott nem jelenik meg a **Dolgozó bérszámfejtési információi** entitásban a létrehozásakor | Az új alkalmazottak bekerültek a dolgozói bérszámfejtési entitásba anélkül, hogy az entitás exportálása előtt meg kellene nyitni az alkalmazott bérszámfejtési adatait. |
 
@@ -85,6 +84,3 @@ A tervezett szolgáltatások és az ütemezett kiadások teljes listája az alá
 [A Dynamics 365 Human Resources 2020 második kiadási hullámának terveti](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/)
 [Frissítési folyamat](hr-admin-setup-update-process.md)
 [Funkciók kezelése](hr-admin-manage-features.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

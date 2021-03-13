@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ReqDemPlanCreateForecastDialog
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.assetid: 59c0d269-9db0-48e7-b8c7-9a388781a9ca
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c66481b1dd8650960cad2947425c1e6c7450afcb
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d6ba2e1a3a884d29bff491f914aa2d5f9ece2b84
+ms.sourcegitcommit: 79621e667cd7f48ba3bdbf2731f6f33d8e9f57f6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429759"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "5154227"
 ---
 # <a name="import-historical-data-for-demand-forecasts"></a>Előzményadatok importálása az igény-előrejelzésekhez
 
@@ -34,31 +33,31 @@ Az igény-előrejelzések pontosságának biztosítása érdekében minél több
 Az **Adatkezelés** munkaterületen megtekintheti az entitás összes mezőjének áttekintését.
 
 1. Nyissa meg az **Adatkezelés** munkaterületet.
-2. Kattintson az **Adatentitások** mozaikra.
+2. Válassza ki az **Adatentitások** mozaikot.
 3. Keresse ki a **Korábbi külső igény** entitáslistáját.
-4. Kattintson a **Célmezők** pontra. A következő entitásmezők kötelezőek: hely (**DeliveringSiteId**), dátum (**DemandDate**), mennyiség (**DemandQuantity**), továbbá vagy a cikkszám (**ItemNumber**), vagy a cikkfelosztási kulcs (**ProductAllocationKeyId**).
+4. Válassza ki a **Célmezők** lehetőséget. A következő entitásmezők kötelezőek: hely (**DeliveringSiteId**), dátum (**DemandDate**), mennyiség (**DemandQuantity**), továbbá vagy a cikkszám (**ItemNumber**), vagy a cikkfelosztási kulcs (**ProductAllocationKeyId**).
 
 Az adatentitás használatához rendelkeznie kell egy olyan Microsoft Excel fájllal vagy CSV-fájllal, amely tartalmazza a korábbi igényadatokat. Az alábbi példa az adatok CSV-fájlból való importálását mutatja be.
 
+Az adatok importálásával és az adatok importálás utáni tisztításával kapcsolatos további tudnivalókat lásd az [Adatimportálási és -exportálási feladatok áttekintése](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md) és a kapcsolódó témakörökben.
+
 ## <a name="example"></a>Példa
 
-A következő fájlt példaként használhatja. Töltse le a [HistoricalDemandData](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/365OperationsDemandForecast) fájlt. Ez a fájl a D0001 cikk korábbi igényadatait tartalmazza. Csak a következő kötelező mezők szerepelnek benne: hely, mennyiség és az igény dátuma.
+A következő fájlt példaként használhatja. Töltse le a [HistoricalDemandData](https://docs.microsoft.com/dynamics/s-e/) fájlt. Ez a fájl a D0001 cikk korábbi igényadatait tartalmazza. Csak a következő kötelező mezők szerepelnek benne: hely, mennyiség és az igény dátuma.
 
 1. Válassza ki azt a vállalatot, amelyikbe a korábbi igényadatokat importálni szeretné.
 2. Nyissa meg az **Adatkezelés** munkaterületet.
-3. Kattintson az **Importálás** mozaikra.
+3. Válassza ki az **Importálás** mozaikot.
 4. Adjon meg egy nevet az importálási projektnek, mint például a következőt: **A D0001 cikk korábbi igényének importálása**.
 5. A **Forrásadatok formátuma** mezőben válassza ki az importált fájl formátumát. Ennél a példánál a HistoricalDemandData fájl importálásához jelölje be a **CSV** lehetőséget.
 6. Az **Entitásnév** mezőben válassza a **Korábbi külső igény** lehetőséget.
 7. Mentse a fájlt a számítógépre, majd töltse fel.
-8. Kattintson az **Importálás** gombra.
+8. Válassza az **Importálás** lehetőséget.
 9. A **Végrehajtás összefoglalása** lap automatikusan megnyílik. Ellenőrizze az importált adatokat a lapon.
 
 A korábbi igényadatok importálása után létrehozhatja az igény-előrejelzést.
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[Statisztikai kiinduló előrejelzés létrehozása](generate-statistical-baseline-forecast.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[Statisztikai kiinduló előrejelzés létrehozása](generate-statistical-baseline-forecast.md)  
+[Adatimportálási és -exportálási feladatok áttekintése](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md)

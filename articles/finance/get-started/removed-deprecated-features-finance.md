@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: roschlom
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: a406db6d78302fa05596a58fffb7464222d4bfea
-ms.sourcegitcommit: 069ed5789517b550065e5e2317658fec4027359e
+ms.openlocfilehash: 7090a7461c7b77d74f081afd8f22db100cdf0792
+ms.sourcegitcommit: 79621e667cd7f48ba3bdbf2731f6f33d8e9f57f6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "4689494"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "5154177"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Eltávolított vagy elavult funkciók a Dynamics 365 Finance szolgáltatásban
 
@@ -34,9 +33,19 @@ Ez a témakör azokat a funkciókat ismerteti, amelyek el lettek távolítva, va
 Ez a lista segít figyelembe venni az elavult és eltávolított szolgáltatásokat a saját tervezése elősegítésére. 
 
 > [!NOTE]
-> A Finance and Operations alkalmazások objektumaival kapcsolatban a [Technikai referenciajelentésekben](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep) talál részletes információkat. Ezen jelentések különböző verzióit összehasonlíthatja, hogy megismerje azokat az objektumokat, melyek módosítva lettek vagy el lettek távolítva a Finance and Operations alkalmazások egyes verzióiban.
+> A Finance and Operations alkalmazások objektumaival kapcsolatban a [Technikai referenciajelentésekben](https://docs.microsoft.com/dynamics/s-e/) talál részletes információkat. Ezen jelentések különböző verzióit összehasonlíthatja, hogy megismerje azokat az objektumokat, melyek módosítva lettek vagy el lettek távolítva a Finance and Operations alkalmazások egyes verzióiban.
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10016-release"></a>Eltávolított vagy elavult szolgáltatások a Finance 10.0.16 kiadásában
+
+### <a name="vat-declaration-cz-and-control-statement-export-cz-electronic-reporting-formats-for-czech-republic"></a>Áfabevallás (CZ) és Ellenőrzési nyilatkozat exportálása (CZ) elektronikus jelentési formátumok a Cseh Köztársaság számára
+
+|   |  |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | Új formátumokra cserélve |
+| **Felváltotta másik szolgáltatás?**   | Igen |
+| **Érintett területek**         | Pályázat |
+| **Telepítési beállítás**              | Összes |
+| **Állapot**                         | Elavult: azt tervezzük, hogy 2022. január 22. után megszüntetjük az Áfabevallás (CZ) és Ellenőrzési nyilatkozat exportálása (CZ) elektronikus jelentési formátumok támogatását. Az új Áfabevallás XML (CZ), Áfabevallás Excel (CZ) és Áfa-ellenőrzési nyilatkozat exportálása XML (CZ) elektronikus jelentési formátumokat vezetjük be az Áfabevallási modell alatt. |
 
 ### <a name="ledger-transaction-export-format-be-electronic-reporting-format-and-respective-ledger-transaction-export-be-model-for-belgium"></a>„Főkönyvi tranzakció exportálási formátuma (BE)” elektronikus jelentési formátum és a megfelelő „Főkönyvi tranzakció exportálása (BE)” modell Belgium számára
 
@@ -107,6 +116,3 @@ Ez a lista segít figyelembe venni az elavult és eltávolított szolgáltatáso
 
 ## <a name="previous-announcements-about-removed-or-deprecated-features"></a>Korábbi bejelentések az eltávolított vagy elavult funkciókról
 További tájékoztatás a korábbi verziókban eltávolított vagy elavult szolgáltatásokról: [Eltávolított vagy elavult funkciók a korábbi kiadásokban](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
