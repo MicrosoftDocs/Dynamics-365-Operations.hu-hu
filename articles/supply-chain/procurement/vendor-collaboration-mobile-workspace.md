@@ -1,7 +1,7 @@
 ---
 title: Szállítói együttműködési mobil munkaterület
 description: Ez a témakör a Szállítói együttműködés mobil munkaterülettel kapcsolatban tartalmaz tájékoztatást. A munkaterület segítséget nyújt a szállítóinak a nekik jóváhagyásra elküldött beszerzési rendelések naprakészen tartásában. Emellett az új és módosított beszerzési rendelések és a kapcsolattartók adatait is megtekinthetik.
-author: mkirknel
+author: RichardLuan
 manager: tfehr
 ms.date: 12/01/2017
 ms.topic: article
@@ -10,19 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 267074
 ms.assetid: 1d293b3a-2fa2-418d-9347-78c2809d67fe
 ms.search.region: global
-ms.author: mkirknel
+ms.author: riluan
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: fc73fe415ec2b9a266dda6b7f1b3469b7a77f256
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5cd8a2b2db7147aca6bdc29ba15d99a619ddb4f8
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429797"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5020836"
 ---
 # <a name="vendor-collaboration-mobile-workspace"></a>Szállítói együttműködési mobil munkaterület
 
@@ -170,6 +169,3 @@ A rendelési soron végrehajtott összes módosítás megjelenik. A feltöltött
 
 ### <a name="open-confirmed-orders"></a>Visszaigazolt rendelések megnyitása
 Amikor a beszerzési rendelést megerősíti a vevő (ami azt jelenti, hogy a beszerzési rendelés **Megerősített** állapotra vált), megjelenik a nyitott és megerősített rendelésben. Mindaddig, amíg nincs regisztrálva fogadottként a vevő által, a listában marad.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

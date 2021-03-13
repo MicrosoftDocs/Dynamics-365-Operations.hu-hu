@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 75de9a51560dcd8fea7998425fee14a27e891972
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8c0359bfe31b3d01f28028bb17d5d30af39a1db9
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429657"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5021604"
 ---
 # <a name="warranties-on-assets-and-asset-types"></a>Eszközök és eszköztípusok garanciái
 
@@ -54,6 +53,3 @@ Ez a témakör azt mutatja be, hogyan lehet eszközökre és eszköztípusokra g
 
 > [!NOTE]
 > Amikor egy szállítói garancia által fedezett eszközhöz hoz létre munkarendelést, ha a munkarendelés elvárt kezdési dátummal rendelkezik a garanciaidőszak folyamán, akkor értesítést kap a garanciaszerződésről. Ezután szükség esetén a munkarendelést érvényteleníteni lehet.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

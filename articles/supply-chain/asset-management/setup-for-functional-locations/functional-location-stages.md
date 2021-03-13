@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetFunctionalLocationLifecycleModel, EntAssetFunctionalLocationLifecycleState
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3eedc21dde32671b4f5539ac4e798a8e1329c191
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8f119e68319b901b052fa4aa659260f386f44bcf
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429817"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5021275"
 ---
 # <a name="functional-location-lifecycle-states"></a>Munkavégzési helyszín életciklus-állapotai
 
@@ -63,6 +62,3 @@ A munkavégzési helyszínekhez szükséges életciklus-állapotok létrehozása
 5. Ha egy modellhez az összes rendelkezésre álló állapotot ki szeretné választani, kattintson a ![minden elérhető állapot kiválasztása](media/03-setup-for-functional-locations.png) gombra. Az összes állapot átkerül az **Életciklus-állapotok kiválasztva** szakaszba.
 6. Ha el szeretne távolítani egy állapotot a kijelölt modellből, válassza ki az **Életciklus-állapotok kiválasztva** szakaszban, és kattintson a ![vissza nyíl](media/04-setup-for-functional-locations.png) gombra.
 7. Az **Életciklus-állapot frissítései** lehetőséggel megadhatja, hogy melyik életciklus-állapotok követhetnek egy kiválasztott állapotot.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

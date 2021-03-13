@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4b7609a85f0315ee5cb5fae62d151b271ef5febe
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: fd4da57c3849095909226db53c23b3c25301acdc
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429654"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5021322"
 ---
 # <a name="multi-level-assets"></a>Többszintű eszközök
 
@@ -62,6 +61,3 @@ Ha egy eszköz kapcsolódó aleszközökkel rendelkezik, akkor azt csak akkor t�
 
 > [!NOTE]
 > Ha ezzel az eljárással nem lehet törölni egy eszközt, egy másik módszer a törlés kezelésére, hogy egy eszközéletciklus-állapotot állítson be erre a célra. Beállíthat például egy **Selejtezett** vagy **Törölt** életciklus-állapotot az **Eszköz életciklus-állapotai** oldalon.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
