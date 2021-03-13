@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: EcoResProductEntityIdentifierCode, EcoResProductListPage, EcoResProductDetailsExtended, EcoResProductVariantsPerCompany
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: c16818f1dc52c9e21130539213e7e8d1053fef1d
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: f28193f9671bcae1345d5c1085ea3f2446e6e088
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4529186"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5011368"
 ---
 # <a name="product-identifiers"></a>Termékazonosítók
 
@@ -44,7 +43,7 @@ Sok esetben a termékszámot eredetileg nem a Dynamics 365 Supply Chain Manageme
 
 A Supply Chain Management implementációjakor különös figyelmet kell fordítani a termékszámokkal kapcsolatos stratégiára. A jó számozási rendszer javítja a logisztikai folyamatokat, és segít elkerülni a hibákat. A jó termékazonosító legfeljebb 15 karaktert tartalmaz. Ideális esetben kevesebb, mint 10 karakter, és legfeljebb öt besoroló karaktert tartalmaz. Keresési nevek segítségével gyors kereséseket engedélyezhet. A keresési név egy további név, amely egy termék osztályozását képviseli.
 
-A Common Data Service használata során a Supply Chain Management cikkszáma egyben a termék száma is a Common Data Service rendszerben. A termékváltozatok a Common Data Service-be külön termékként szinkronizálódnak.
+A Microsoft Dataverse használata során a Supply Chain Management termékszáma egyben a termék száma is a Microsoft Dataverse rendszerben. A termékváltozatok a Dataverse-be egyedi termékként szinkronizálódnak.
 
 ## <a name="item-number-and-product-dimensions"></a>Cikkszám és termékdimenziók
 
@@ -167,7 +166,7 @@ Az alábbi táblázat az importálás és a kézi létrehozás eredményeinek á
 
 ## <a name="product-entity-identifier-export-all-product-identifiers"></a>Termékentitás-azonosító (az összes termék azonosítójának exportálása)
 
-A termékentitás-azonosítómodellt azért hozták létre, hogy a CDS 1.0 kiadását az összes azonosítóval létesíthessék, amelyeket egy termékre való hivatkozásként használnak. A feladat egyszerűsítése érdekében minden azonosító össze van gyűjtve egy globális azonosítótáblába, hogy egy modell szerint legyenek exportálhatók. Ne feledje, hogy a CDS ezen verziója nem használja a termékazonosítók modelljét. Emiatt a **Termékentitás Common Data Service azonosító entitás** entitás és ez a folyamat korlátozott gyakorlati haszonnal rendelkezik, és valószínűleg megváltozik a jövőben.
+A termékentitás-azonosítómodellt azért hozták létre, hogy a Dataverse 1.0 kiadását az összes azonosítóval létesíthessék, amelyeket egy termékre való hivatkozásként használnak. A feladat egyszerűsítése érdekében minden azonosító össze van gyűjtve egy globális azonosítótáblába, hogy egy modell szerint legyenek exportálhatók. Ne feledje, hogy a Dataverse ezen verziója nem használja a termékazonosítók modelljét. Emiatt a **Termékentitás Common Data Service azonosító entitás** entitás és ez a folyamat korlátozott gyakorlati haszonnal rendelkezik, és valószínűleg megváltozik a jövőben.
 
 A termékazonosító tábla globális tábla, amelyet a rendszer a fő jogi személy összes hivatkozási táblájából tölt fel adatokkal, egy ismétlődő kötegelt feladat futtatásával. Választania kell egy jogi személy és egy termékkategória-hierarchiát a globális alaptermék-hatókör meghatározásához. A globális termékazonosító tábla létrehozása olyan termékekre korlátozódik, amelyek kibocsátása a kiválasztott jogi személy számára történik, és a termékhierarchiába tartozó olyan termékekre, amelyek a **Common Data Service** szerepkörben ki vannak választva a termékkategóriák hierarchiájában.
 
@@ -175,7 +174,7 @@ Ez a folyamat azt feltételezi, hogy a termék alapadatainak karbantartása els�
 
 Tegye a következőket a környezet konfigurálásához.
 
-1. Válassza ki a kategóriahierarchiát a CDS-hez. A **Kategóriahierarchiához tartozó szerepkör társításai** oldalon, ha a hierarchia nincs társítva a **Common Data Service** szerepkörrel, létre kell hoznia egy új társítást. Válassza ki a **Common Data Service** szerepet, és ezután társítása azt a kategóriahierarchiát, amelyik azt a termékportfóliót képviseli, amelyet szinkronizálni kell a CDS-sel.
+1. Válassza ki a kategóriahierarchiát a Dataverse-hez. A **Kategóriahierarchiához tartozó szerepkör társításai** oldalon, ha a hierarchia nincs társítva a **Common Data Service** szerepkörrel, létre kell hoznia egy új társítást. Válassza ki a **Common Data Service** szerepet, és ezután társítása azt a kategóriahierarchiát, amelyik azt a termékportfóliót képviseli, amelyet szinkronizálni kell a Dataverse-zel.
 2. Válassza ki a jogi személyt a termék globális alapadataihoz. A **Termékinformáció-kezelési paraméterek** oldalon, a **Termékattribútumok** fülön válassza ki a fő vállalatot, ahol a termék- és cikkazonosítók karbantartása elsősorban történik.
 3. Adja meg az exportálandó azonosító kódtípusokat és kódokat. Lépjen a **Termékinformációk kezelése** &gt; **Beállítás** &gt; **Termékazonosító kódok** elemre. Az azonosítókód-típusok létrehozásához jelölje be a **Kódok generálása**. A kiválasztott jogi személyben található azonosítók mindegyik típusához kódtípus-bejegyzés jön létre.
 
@@ -190,6 +189,3 @@ Most már használhatók a **Termékentitás Common Data Service azonosító ent
 ## <a name="related-topic"></a>Kapcsolódó témakör
 
 [Termékek és termékváltozatok keresése a rendelésbevitel során](search-products-product-variants.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: BarcodeSetup, InventParameters
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 979726a1d094146b546bbc6d31963367de2c59f5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 71bbc090d928cb80d19db33655ec9c9cc8e654bd
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429777"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5011497"
 ---
 # <a name="maintain-barcode-types"></a>Vonalkódtípusok karbantartása
 
@@ -46,6 +45,3 @@ Ez az eljárás bemutatja, hogyan állíthat be egy új vonalkód-definíciót, 
 12. Kattintson a Mentés gombra.
 13. Zárja be a lapot.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -3,26 +3,25 @@ title: Új vagy módosult elemek a Dynamics 365 Supply Chain Management rendszer
 description: Ez a témakör a Dynamics 365 Supply Chain Management egyes kiadásainak új és módosított funkciókat leíró témaköreire mutat.
 author: kamaybac
 manager: tfehr
-ms.date: 07/23/2020
+ms.date: 12/08/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 77649e310be218fdea8578e974885101c5587722
-ms.sourcegitcommit: 0eb33909a419d526eb84b4e4b64d3595d01731ef
+ms.openlocfilehash: 3350afc5f9537a0bd97b9c5257a66039b9dcb55c
+ms.sourcegitcommit: b6686265314499056690538eaa95ca51cff7c720
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4700981"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5014558"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management"></a>Új vagy módosult elemek a Dynamics 365 Supply Chain Management rendszerben
 
@@ -34,6 +33,7 @@ Ha látni szeretné, hogy mi új vagy módosult a Dynamics 365 Supply Chain Mana
 
 | Verzió | Szám felépítése | Automatikus frissítés rendelkezésre állása | További információk |
 |---|---|---|---|
+| 10.0.16 | 10.0.689 | február 2021. | [Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.16 verziójában](whats-new-scm-10-0-16.md) |
 | 10.0.15 | 10.0.644 | Január 2021. | [Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.15 verziójában](whats-new-scm-10-0-15.md) |
 | 10.0.14 | 10.0.605 | 2020. november | [Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.14 verziójában](whats-new-scm-10-0-14.md) |
 | 10.0.13 | 10.0.569 | Október 2020. | [Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.13 verziójában](whats-new-scm-10-0-13.md) |
@@ -67,6 +67,3 @@ Ha látni szeretné, hogy mi új vagy módosult a 2019 november előtti kiadáso
 | Microsoft Dynamics 365 for Operations                                 | 1611        | 7.1.1541.3036    | 2016. november    | [Új vagy módosult elemek a Dynamics 365 for Operations 1611-es verziójában (2016. november)](../../fin-ops-core/fin-ops/get-started/whats-new-dynamics-365-operations-1611.md)                |
 | Microsoft Dynamics AX                                                 | 7.0.1       | 7.0.1265.23014   | május 2016.         | [Mi az új vagy mi változott a Dynamics AX alkalmazásban verziószám 7.0.1 (2016. május)](../../fin-ops-core/fin-ops/get-started/whats-new-changed-application-version-7-0-1-may-2016.md)          |
 | Microsoft Dynamics AX                                                 | 7.0         | 7.0.1265.3015    | február 2016.    | [Újdonságok és változások a Dynamics AX 7.0 (2016. február) architektúrájában](../../fin-ops-core/fin-ops/get-started/whats-new-changed-7-0-february-2016.md)                                            |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

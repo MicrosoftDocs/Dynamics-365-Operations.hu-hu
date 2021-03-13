@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: InventJournalTableWorkflowDropDialog
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-07-21
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 623c628f3359efc1f76e1d06387905f981deca0b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d9f57d35adac0820d0635ab97a4cb4cefc1d504c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429276"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5011672"
 ---
 # <a name="inventory-journal-approval-workflows"></a>Készletnapló-jóváhagyási munkafolyamatok
 
@@ -32,6 +31,13 @@ Ez a témakör bemutatja, hogyan kell beállítani a készletnapló-jóváhagyá
 > [!NOTE]
 > A készletnapló-jóváhagyási munkafolyamatok csak a Készletkezelési modul használatával rögzített tranzakciókra vonatkoznak. Nem működnek a Raktárkezelési modulból indított készletnaplókkal.
 
+## <a name="turn-on-the-inventory-journal-approval-workflows-feature"></a>Készletnaplók jóváhagyási munkafolyamatai funkció aktiválása
+
+A funkció használata előtt be kell azt kapcsolnia saját rendszerében. A rendszergazdák használhatják a [funkciókezelési](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) beállításokat a funkció állapotának ellenőrzéséhez, és bekapcsolásához. A **Funkció kezelése** munkaterületen a funkció a következő módon van listázva:
+
+- **Modul:** *Készlet- és raktárkezelés*
+- **Funkció neve:** *Készletnapló jóváhagyási munkafolyamata*
+
 ## <a name="create-your-inventory-journal-approval-workflows"></a>Hozza létre a saját készletnapló-jóváhagyási munkafolyamatait
 
 Ennek a funkciónak a beállításához létre kell hoznia egy munkafolyamatot minden olyan készletnapló-típushoz, amelyet vezérelni szeretne. Mivel a különböző készletnapló-típusokhoz különböző jóváhagyási hierarchiák és munkafolyamat-lépések tartozhatnak, mindegyik készletnapló-típushoz külön konfigurálhatja az egyes munkafolyamatokat.
@@ -40,7 +46,7 @@ A munkafolyamatok támogatják a verzióvezérlést, illetve mindegyikhez tartoz
 
 A saját készletnapló-jóváhagyási munkafolyamatai létrehozásához:
 
-1. Menjen a **Készletkezelés \> Beállítás \> Készletkezelési munkafolyamatok** lehetőségre.
+1. Menjen a **Készletkezelés \> Beállítás\> Készletkezelési munkafolyamatok** lehetőségre.
 1. A Művelet panelen válassza az **Új** lehetőséget.
 1. Válassza ki azt a készletnapló-típust, amelyhez be szeretné állítani a munkafolyamatot:
     - l **Készlet címkeszámlálási naplója**
@@ -112,6 +118,3 @@ A napló munkafolyamat-előzményeinek áttekintése:
 1. A navigációs ablakban bontsa ki a **Készletkezelés \> Naplóbejegyzések \> Elemek** lehetőségben, majd válassza ki a készletnapló típusát.
 1. Az adott napló megnyitása.
 1. Válassza ki a **Munkafolyamat** gombot a Művelet ablakban a legördülő párbeszédpanel megnyitásához. Válassza a **Munkafolyamat-előzmények** lehetőséget. További információ: [Munkafolyamat-előzmények megtekintése](../../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

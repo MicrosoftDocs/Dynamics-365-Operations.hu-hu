@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: EcoResProductDetailsExtended, InventItemPrice, BOMCalcDialog
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 83a62966e343a9b1c073c2d6ec1c1b69b1daddbb
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 36f908e02c996c0d0a636fd9295b84fcc16b6b63
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429596"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5011772"
 ---
 # <a name="calculate-a-bom-by-using-a-single-level-structure-february-2016"></a>Anyagjegyzék-számítás elvégzése egyetlen szintű struktúra használatával (2016. február)
 
@@ -44,6 +43,3 @@ Ez az eljárás bemutatja, hogyan lehet kiszámítani egy késztermék költség
     * Előfordulhat, hogy a három pont (...) elemre kell kattintania a lehetőség megtekintéséhez a főmenüben.    Itt látható a költség összetétele:  *    10 az ITEM_A elemből származik, 10 az ITEM_B elemből, 10 a BOM_2 elemből. Ebben az esetben nincsenek részletek a BOM_2 esetében, mert a bevitele 10-es elszámolóárként történt, de nem a kalkuláció használatával.  *    7 forrása a beállítási idő, amely egy állandó költség, és további 7 forrása a futásidejű művelet (folyamat).  *    Vannak egyéb összegek is, amelyek megfelelnek a közvetett költségeknek.  
 9. @SysTaskRecorder:_RequestClose
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

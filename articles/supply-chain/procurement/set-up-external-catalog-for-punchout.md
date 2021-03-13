@@ -1,7 +1,7 @@
 ---
 title: Külső katalógus beállítása a PunchOut e-beszerzés számára
 description: Ez a témakör egy külső katalógus PuncOut-katalógus használatát mutatja be, amelynek révén információt gyűjt egy szállítótól, hozzáadja egy igényléshez.
-author: mkirknel
+author: RichardLuan
 manager: tfehr
 ms.date: 11/02/2017
 ms.topic: article
@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: PurchTable, PurchTablePart, PurchVendorPortalRequests, CatExternalCatalogConfiguration, CatCXMLCartLogList
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 30211
 ms.assetid: 3c7e0e1c-703c-4bbf-b90c-84d29a131360
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5dc6a38b1a9eebdee64762671bb501e5e1294399
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 1f6e551f9d3d181674595e945bf1fb4c62a70ed5
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4429895"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5016377"
 ---
 # <a name="set-up-an-external-catalog-for-punchout-e-procurement"></a>Külső katalógus beállítása a PunchOut e-beszerzés számára
 
@@ -54,19 +53,18 @@ A külső katalógusnak lehetővé kell tennie, hogy a beszerzési igénylésbe 
 Ebben a szakaszban további tájékoztatást talál az előző szakasz 4. feladatával kapcsolatban.
 
 1. Adjon egy nevet és leírást a szállító külső katalógusának. A beírt név megjelenik a külső katalógust jelölő bevásárlókocsiban, amely az igénylést létrehozó alkalmazottaknak megjelenik. Az alkalmazottak kattinthatnak a bevásárlókocsira a katalógusnak a szállító külső katalóguswebhelyén történő megnyitásához.
-2. Adjon hozzá képet a **Külső katalógusbeli kép** művelettel. A kép megjelenik a külső katalógust jelölő bevásárlókocsiban, amely az igénylést létrehozó alkalmazottaknak megjelenik. Vegye figyelembe, hogy a kép szélességének és magasságának meg kell egyeznie. Ellenkező esetben a kép nem megfelelően jelenik meg.
+2. Adjon hozzá képet a **Külső katalógusbeli kép** művelettel. A kép megjelenik a külső katalógust jelölő bevásárlókocsiban, amely az igénylést létrehozó alkalmazottaknak megjelenik. Vegye figyelembe, hogy a kép szélességének és magasságának meg kell egyeznie. Ellenkező esetben a kép nem megfelelően jelenik meg.
 3. Válassza ki, hogy a szállító külső katalóguswebhelye ugyanabban a böngészőablak jelenjen-e meg, mint amelyikben az alkalmazott az igénylést létrehozta, vagy pedig új ablakban nyíljon meg.
 4. Válassza ki a katalógushoz tartozó szállítót. A **Jogi személyek** listában minden egyes jogi személyhez tartozik egy sor, ahol a szállító be van állítva. Annak érdekében, hogy a felhasználók csak bizonyos jogi személyek esetében igényelhessék közvetlenül a termékeket a szállítói katalógusból, másokban pedig nem, használhatja a **Hozzáférés megakadályozása** vagy a **Hozzáférés engedélyezése** gombot minden olyan jogi személy esetében, amelynél szeretné beállítani a katalógus elérhetőségét.
 5. Az **Alapértelmezett lejárat (nap)** mezőben adja meg azon napok számát, amíg a külső katalógusból kapott árajánlatok érvényesek és használhatók maradnak a külső szállítótól történő beszerzéshez. Amikor létrehoz és lekér egy árajánlatot a szállító külső katalóguswebhelyéről, az árajánlat az aktuális rendszerdátumtól kezdve az ebben a mezőben megadott számú napig marad érvényes.
-6. Kattintson a **Hozzáadás** gombra a beszerzési kategóriák külső katalógusnak történő megfeleltetésének elkezdéséhez. Ezután a Kategória neve listából válasszon egy kategóriát. A kategóriák listája olyan beszerzési kategóriaszabvány, amelynek a szállítót megfeleltette a rendszer a szállítóhoz tartozó minden jogi személy esetében.
+6. Kattintson a **Hozzáadás** gombra a beszerzési kategóriák külső katalógusnak történő megfeleltetésének elkezdéséhez. Ezután a Kategória neve listából válasszon egy kategóriát. A kategóriák listája olyan beszerzési kategóriaszabvány, amelynek a szállítót megfeleltette a rendszer a szállítóhoz tartozó minden jogi személy esetében.
 
     > [!NOTE]
-    > A beszerzési irányelvek segítségével engedélyezheti vagy korlátozhatja a vevő jogi személyre vagy a fogadó üzemi egységre vonatkozó kategóriák hozzáférhetőségét. A külső katalógushoz történő kilépés megköveteli, hogy legalább egy olyan beszerzési kategóriához létezzen hozzáférési jogosultság, amely a katalógushoz van rendelve.
+    > A beszerzési irányelvek segítségével engedélyezheti vagy korlátozhatja a vevő jogi személyre vagy a fogadó üzemi egységre vonatkozó kategóriák hozzáférhetőségét. A külső katalógushoz történő kilépés megköveteli, hogy legalább egy olyan beszerzési kategóriához létezzen hozzáférési jogosultság, amely a katalógushoz van rendelve.
 
 7. Állítsa be a szállítónak küldendő cXML beállításkérési üzenetet. Az automatikusan generált üzenetformátum a munkamenet elindításához szükséges minimális sablon. Töltse ki a címkék értékeit.
 
-Bármikor újra betöltheti be a rendszer által generált üzenetsablont az **Üzenetformátum visszaállítása lehetőségre** kattintva. 
-Vegye figyelembe, hogy az üzenetformátum visszaállításával az aktuális üzenetet az automatikusan generált üzenetformátum írja felül, amely üres címkéket tartalmaz.
+Bármikor újra betöltheti be a rendszer által generált üzenetsablont az **Üzenetformátum visszaállítása** lehetőségre kattintva. Vegye figyelembe, hogy az üzenetformátum visszaállításával az aktuális üzenetet az automatikusan generált üzenetformátum írja felül, amely üres címkéket tartalmaz.
 
 ### <a name="cxml-setup-message"></a>cXML beállítási üzenet
 Az alábbiakban megtalálja a sablonban szereplő címkék leírását:
@@ -91,7 +89,7 @@ Olyan nevet adjon a külső elemnek, amelyet a szállító felismer, és meg tud
 A cXML-protokollal kapcsolatos további tudnivalókat lásd: [cXML.org website](http://cxml.org/).
 
 ## <a name="post-back-message"></a>Visszajelzési üzenet
-A visszajelzési üzenet a szállítótól kapott üzenet, amikor a felhasználó kilép a külső webhelyről, és visszatér a Supply Chain Management rendszerbe. A visszajelzési üzenetek nem konfigurálhatók. Az üzenetek a cXML-protokoll definícióján alapulnak. Itt látható az a szöveg, amely az igénylési soron beérkező visszajelzési üzenet része lehet.
+A visszajelzési üzenet a szállítótól kapott üzenet, amikor a felhasználó kilép a külső webhelyről, és visszatér a Supply Chain Management rendszerbe. A visszajelzési üzenetek nem konfigurálhatók. Az üzenetek a cXML-protokoll definícióján alapulnak. Itt látható az a szöveg, amely az igénylési soron beérkező visszajelzési üzenet része lehet.
 
 | Szállítótól kapott üzenet | Követelménysorba másolva|
 |------------------------------|----------------------------------------------------------|
@@ -114,5 +112,3 @@ A külső szállítói katalógus nem törölhető, ha egy terméket kért a kü
 
 - [Beszerzési cXML-fejlesztések](purchasing-cxml-enhancements.md)
 - [Külső katalógus használatának engedélyezése a PunchOut e-beszerzés számára](use-external-catalogs-for-punchout.md)
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

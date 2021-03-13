@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: SysOperationTemplateForm
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-04-03
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: 9d01c577fc33564d3517d242e9b01f73cc8e079c
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: f045b9686bbdfcf3e82f5158f0fd28860354b7d7
+ms.sourcegitcommit: b6686265314499056690538eaa95ca51cff7c720
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4429903"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5014483"
 ---
 # <a name="warehouse-management-on-hand-entries-cleanup-job"></a>Raktárkezelés készleten lévő bejegyzéseinek karbantartási feladata
 
@@ -50,7 +49,12 @@ A feladat a futtatása esetén 100-as véglegesítési mérettel rendelkezik. M�
 
 ## <a name="possible-user-impact"></a>Lehetséges felhasználói hatás
 
-Előfordulhat, hogy a felhasználók akkor is érintettek lehenek, ha az aktuális készlet bejegyzések karbantartási feladata egy adott szint összes rekordját törli (például az azonosítótábla szintje). Ebben az esetben előfordulhat, hogy a funkció, amely az azonosítótáblán korábban rendelkezésre álló készlet megtekintésére szolgál, nem az elvártaknak megfelelően működik, mivel a releváns aktuális készlet bejegyzések már nem állnak rendelkezésre. (Ez a funkció ellenőrzi a **Mennyiség \<\> 0** feltételt a **Dimenzió megjelenítése** beállításban, amikor a felhasználók aktuális készletre vonatkozó adatokat tekintenek meg.) A karbantartási feladat által biztosított teljesítményjavulás azonban ellensúlyozza ezt a kis funkcióvesztést.
+Előfordulhat, hogy a felhasználók akkor is érintettek lehenek, ha az aktuális készlet bejegyzések karbantartási feladata egy adott szint összes rekordját törli (például az azonosítótábla szintje). Ebben az esetben előfordulhat, hogy a funkció, amely az azonosítótáblán korábban rendelkezésre álló készlet megtekintésére szolgál, nem az elvártaknak megfelelően működik, mivel a releváns aktuális készlet bejegyzések már nem állnak rendelkezésre. Ez a lehetőség például a következő helyzetekben tapasztalható meg:
+
+- Az **Aktuális készletlistában**, ha a felhasználó megszünteti a **Mennyiség \<\> 0** feltétel kiválasztását vagy a **Lezárt tranzakciók** feltételt választja a **Dimenziók megjelenítése** beállításokban.
+- A **Tényleges készlet készletdimenziónként** jelentésben az elmúlt időszakokra vonatkozóan, amikor a felhasználó beállítja az **Adott dátumtól** paramétert.
+
+A karbantartási feladat által biztosított teljesítményjavulásnak azonban ki kell javítania ezeket az apró funkcionális veszteségeket.
 
 ## <a name="make-the-maximum-execution-time-setting-available"></a><a name="max-execution-time"></a>A Maximális végrehajtási idő beállítás elérhetővé tétele
 
@@ -58,6 +62,3 @@ Alapértelmezésben a **Maximális végrehajtási idő** beállítás nem érhet
 
 - **Modul:** *Raktárkezelés*
 - **Funkció neve:** *Raktárkezelés készleten lévő bejegyzései karbantartási feladatának maximális végrehajtási ideje*
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
