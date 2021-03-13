@@ -1,6 +1,6 @@
 ---
 title: Munkaerő-mutatók Power BI tartalom
-description: Ez a témakör a Munkaerő-mutatók Power BI tartalmat ismerteti. Leírja, hogy hogyan kell hozzáférni a jelentésekhez, és információkat nyújt a tartalomcsomag összeállításához előzőleg használt entitásokkal és adatmodellekkel kapcsolatban.
+description: Ez a témakör a Munkaerő-mutatók Power BI tartalmat ismerteti.
 author: jcart1106
 manager: AnnBe
 ms.date: 12/19/2017
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 5e921b9ca7d46b3365068a5cdcb029396b62a0ce
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: d0622cebcfca15acf50cf62e8a77af360d4f1bda
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687351"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092791"
 ---
 # <a name="workforce-metrics-power-bi-content"></a>Munkaerő-mutatók Power BI tartalom
 
@@ -86,6 +86,3 @@ A következő táblázat mutatja az entitásokat, amelyeken a tartalom alapul.
 | Alkalmazotti trend           | Túlórázó dolgozók, létszám, vállalat és beosztás                                 | Vállalat, Földrajzi elhelyezkedés, Alkalmazott neve, Közvetlen felettes, Naptáreltolás, Dátum, Alkalmazott beosztása, Demográfia, Alkalmazás, Feladat |
 | Tömeges felvételi projekt        | Tömeges felvételi projektek, projekt tulajdonosa, valamint projekt állapota                     | Vállalat, tömeges felvétel sora |
 | Tömeges felvétel sora           | Részleg, foglalkoztatási típus és beosztás                                           | Dátum, munkakör, tömeges felvételi projekt |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

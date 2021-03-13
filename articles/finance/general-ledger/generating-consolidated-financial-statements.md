@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: a32fb8cce4353f57155fc7a723aa90e3c17178e6
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: dda102b993ecc92a5089eb54d2708c2adebc572f
+ms.sourcegitcommit: f59df61799915f6a79aec7e3e8664c02df6597da
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4444029"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "5044021"
 ---
 # <a name="generate-consolidated-financial-statements"></a>Konszolidált pénzügyi kimutatások létrehozása
 
@@ -67,14 +66,14 @@ A következő ábrán egy oszlopdefiníció látható egymás melletti formátum
 ![Oszlop meghatározása egymás melletti formátumban](./media/column-definition-side-by-side-format.png "Oszlop meghatározása egymás melletti formátumban")
 
 ## <a name="consolidations-that-use-organization-structures-that-are-created-from-legal-entities"></a>Szervezeti struktúrákat használó konszolidációk, amelyek jogi személyekből lettek létrehozva
-A szervezeti hierarchiák, amelyek dimenziókat vagy jogi személyeket tartalmaznak, dinamikusan hoznak létre jelentési fa definíciókat a pénzügyi jelentéskészítésben. Konszolidációk leegyszerűsítésének egy egyszerű módja a szervezeti hierarchia hozzáadása a jelentéshez a pénzügyi jelentéskészítésben. A pénzügyi jelentéskészítés a jelentés dátuma alapján kiválasztja a szervezeti hierarchiát az esedékesség napján vagy az előtt, ahogy az a következő ábrán látszik.
+A szervezeti hierarchiák, amelyek dimenziókat vagy jogi személyeket tartalmaznak, dinamikusan hoznak létre jelentési fa definíciókat a pénzügyi jelentéskészítésben. Konszolidációk leegyszerűsítésének egy egyszerű módja a szervezeti hierarchia hozzáadása a jelentéshez a pénzügyi jelentéskészítésben. A Financial Reporting szolgáltatás a jelentés dátuma alapján kiválasztja a szervezeti hierarchiát az esedékesség napján vagy az előtt, ahogy az a következő ábrán látszik.
 
-![ Jelentési fa definíciójának dinamikus létrehozása](./media/dynamically-create-reporting-tree-definitions.png "Jelentési fa definíciójának dinamikus létrehozása")
+![Jelentési fa definíciójának dinamikus létrehozása](./media/dynamically-create-reporting-tree-definitions.png "Jelentési fa definíciójának dinamikus létrehozása")
 
 ## <a name="consolidations-that-involve-eliminations"></a>Eltávolításokkal járó konszolidációk
 Az eltávolítási tranzakciók a konszolidációs folyamat megszokott részei. Ebben a példában öt számlát távolítunk el a konszolidáció során: 142600, 211400, 401420, 401180 és 510820. Előfordulhat, hogy az egyes vállalatok vállalatközi számláinakk beállítása eltérő. Például egyes vállalatoknál az utolsó számjegy 9, ha a számla a vállalatközi tranzakciók során használatos. A módszertől függetlenül, amennyiben ismeri a vállalatközi számlákat, megjelenítheti az eltávolításokat a konszolidált pénzügyi kimutatásain.
 
-A következő ábrán egy konszolidált eredménykimutatás oszlopdefiníciója látható. Az egyes vállalatokra vonatkozóan meghatároztunk három vállalatközi nyereség- és veszteségszámlát a dimenziószűrő használatával. A D oszlop az eltávolítási számlákat tartalmazza, csak az USMF vállalatra vonatkozóan, és az E oszlop az eltávolításokat csak az DEMF vállalatra vonatkozóan. A D oszlop és az E oszlop úgy van beállítva, hogy **nem** kerülnek nyomtatásra a pénzügyi kimutatáson.
+A következő ábrán egy konszolidált eredménykimutatás oszlopdefiníciója látható. Az egyes vállalatokra vonatkozóan meghatároztunk három vállalatközi nyereség- és veszteségszámlát a dimenziószűrő használatával. Az F, G és H oszlopban csak az USMF, USRT és DEMF vállalatok eltávolítási számlái láthatók. Ezek az oszlopok úgy vannak beállítva, hogy **nem** kerülnek nyomtatásra a pénzügyi kimutatáson.
 
 ![Oszlopdefiníció – konszolidált eredménykimutatás](./media/column-definition-consolidated-income-statement.png "Oszlopdefiníció – konszolidált eredménykimutatás")
 
@@ -224,6 +223,3 @@ Annak érdekében, hogy a pénznemek használatakor helyesen átváltott összeg
 További információért a konszolidációról, és a pénznem átváltásokhoz tekintse meg jelen témakör szülő témakörét, [Pénzügyi konszolidáció és devizaátváltás áttekintése](./financial-consolidations-currency-translation.md).
 
 A konszolidáció részleteinek online úton történő megadásával kapcsolatos további információkért tekintse meg a következőt: [Online pénzügyi konszolidációk](./consolidate-online.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

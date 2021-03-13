@@ -1,6 +1,6 @@
 ---
 title: ER - tartományspecifikus adatmodell kialakítása
-description: A következő lépések leírják, hogy egy Rendszergazda vagy Elektronikus jelentések fejlesztője szerepkörrel rendelkező felhasználó miként hozhat létre egy új Elektronikus jelentés (ER) konfigurációt, amely tartalmazza az Elektronikus fizetési dokumentumok adatmodelljét.
+description: Ez a témakör azt ismerteti, hogyan lehet létrehozni egy olyan új Elektronikus jelentéskészítési (ER) konfigurációt, amely egy adatmodellt tartalmaz az elektronikus fizetési bizonylatokhoz.
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 268f661079b80551b36ad2e1877615d878350051
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 1eb2c6e5b5f186fb6db7c32a9982807274e5ea1b
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681949"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092691"
 ---
 # <a name="er-design-domain-specific-data-model"></a>ER - tartományspecifikus adatmodell kialakítása
 
@@ -187,6 +187,3 @@ Ebben a példában a mintavállalatra, Litware-ra, Inc.-ra vonatkozóan létreho
 65. Kattintson a Mentés gombra.
 66. Zárja be a lapot.
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

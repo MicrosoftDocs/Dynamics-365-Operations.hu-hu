@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: Release 10.0.16
-ms.openlocfilehash: 81c5c83128bb81523dee6ede549eece7b0d80e30
-ms.sourcegitcommit: d9d1ddce6a334ade8b32b5ea3ac4c1e1a8f72715
+ms.openlocfilehash: 786ea9a3da98e9f1812b007d4301cb47680e6894
+ms.sourcegitcommit: b7a7a14f8650913f6797ae1c4a82ad8adfe415fd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "4664272"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "5077578"
 ---
 # <a name="design-the-production-floor-execution-interface"></a>A termelési üzem végrehajtási felületének tervezése
 
@@ -57,7 +56,7 @@ A következő elemek jelennek meg az ábrán:
 1. Végezze el a következő beállításokat a lap fejlécében:
 
     - **Lap neve** – adja meg a lap nevét.
-    - **Fő nézet** -válasszon a két előre meghatározott munkalista (*aktív feladatok* vagy *összes feladat*) között.
+    - **Fő nézet** – Válasszon a két előre meghatározott munkalista (*Aktív feladatok*, *Összes feladat* vagy *Saját gép*) között.
     - **Részletes nézet** – válassza ki az üres értéket vagy a **feladat adatait**. Ha az üres értéket választja, akkor a lapon nem jelenik meg részletes nézet. Ha a **Feladat adatait** választja, akkor a részletes nézet a főnézetben a feladatlistában kiválasztott feladat részletes leírását tartalmazza.
 
 1. Az **Elsődleges eszköztár** szakaszban válassza ki, hogy mely gombokat kell elérhetővé tenni az elsődleges eszköztáron. A **Választható műveletek** oszlop felsorolja az összes olyan gombot, amelyet fel lehet venni. A **Kiválasztott műveletek** oszlopai az aktuális konfigurációban szereplő összes gomb listáját jelenítik meg. Az oszlopok között látható gombokkal lehet áthelyezni a kiválasztott elemeket a szükséges oszlopok között. A **Kiválasztott műveletek** oszlop melletti fel és le gombbal lehet szabályozni, hogy milyen sorrendben jelenjenek meg a gombok a felhasználói felületen.
@@ -79,6 +78,3 @@ Miután megtervezte az összes szükséges lapot, hozzárendelheti őket egy kon
 1. Szükség esetén folytassa a további lapok hozzáadását.
 
 1. Az eszköztáron található **Mozgatás felfelé** és **Mozgatás lefelé** gombokkal igény szerint átrendezheti a lapokat. A lapok balról jobbra haladva jelennek meg a fenti képernyőképen látható sorrendben (a felső lap a bal oldalon látható).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

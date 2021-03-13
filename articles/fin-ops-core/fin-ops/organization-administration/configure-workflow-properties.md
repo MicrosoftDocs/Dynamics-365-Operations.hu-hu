@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8bd3c9bea010099f83d16dad70261bc2d46a1dac
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: e3cb5dc59373b7af76fffa1b1c59728c84dfb5fb
+ms.sourcegitcommit: fd62ab3d399b0d6ea0d362f1d403a300e84a576d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693282"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "5067623"
 ---
 # <a name="configure-workflow-properties"></a>Munkafolyamat-tulajdonságok konfigurálása
 
@@ -73,6 +73,9 @@ Utasításokat adhat meg azon felhasználók számára, akik a dokumentumokat fe
     4. Írja be a szöveget a **Lefordított szöveg** mezőbe.
     5. A szöveg testreszabásához, illesszen be helyőrzőket. A helyőrző megadásával kapcsolatos további tudnivalókért lásd a 3. lépést.
     6. Kattintson a **Bezárás** gombra.
+
+> [!NOTE]
+> A helyőrzőket nem lehet másolás és beillesztés segítségével hozzáadni, mert a célinformációk nem megfelelően lesznek beillesztve. Helyőrzők hozzáadására használja a felületet.
 
 ## <a name="specify-when-this-workflow-is-used-through-activation-conditions"></a>Adja meg, hogy mikor használja ezt a munkafolyamatot aktiválási feltételeken keresztül
 
@@ -179,6 +182,3 @@ Ha megjegyzéseket szeretne fűzni a munkafolyamathoz az elvégzett változtatá
 2. Írja be a megjegyzéseit az **Adja meg a munkafolyamatra vonatkozó megjegyzéseket** mezőbe.
 3. Megjegyzések áttekintése. Miután hozzáadta a megjegyzéseket, nem módosíthatja azokat.
 4. Kattintson a **Hozzáadás** gombra a megjegyzések az **Előző megjegyzések** területre történő hozzáadásához.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

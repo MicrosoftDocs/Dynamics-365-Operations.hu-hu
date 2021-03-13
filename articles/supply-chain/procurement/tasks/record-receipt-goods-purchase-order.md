@@ -1,7 +1,7 @@
 ---
 title: Az áruk bevételezésének rögzítése a beszerzési rendelésen
 description: Ez a témakör azt ismerteti, hogyan rögzíthet árubeérkezést közvetlenül egy beszerzési rendelésnél.
-author: mkirknel
+author: RichardLuan
 manager: tfehr
 ms.date: 07/09/2019
 ms.topic: business-process
@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: PurchTable, PurchTablePart, PurchCreateOrder, InventItemIdLookupPurchase, PurchEditLines
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: bd8ca2cbd24f326c4eaf9cd39e32de0eca81149d
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: d016df08850c75858c50b7f9a97b11b566d26cb0
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4429946"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5022658"
 ---
 # <a name="record-the-receipt-of-goods-on-the-purchase-order"></a>Az áruk bevételezésének rögzítése a beszerzési rendelésen
 
@@ -49,6 +48,3 @@ Ez a témakör azt ismerteti, hogyan rögzíthet árubeérkezést közvetlenül 
 6. Állítsa a **Mennyiség** lehetőséget „4-re”. Itt is manuálisan adhatja meg a mennyiséget, ami a rendelés minden sorához tartozó bevételezett mennyiség.  
 7. Válassza ki az **OK** lehetőséget. Az áruk most már beérkezettként szerepelnek a beszerzési rendelésen és egy termékbevételezési napló lett létrehozva ennek a dokumentálására. A Termék-bevételezési művelet segítségével áttekintheti a beszerzési rendeléshez létrehozott naplókat, és láthatja, hogy mi érkezett és mikor.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

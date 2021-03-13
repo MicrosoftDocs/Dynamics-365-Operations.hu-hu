@@ -1,6 +1,6 @@
 ---
 title: ER – A formátum frissítése ezen formátum új alapverziójának elfogadásával
-description: A következő lépések bemutatják, hogy egy Rendszergazda vagy Elektronikus jelentések fejlesztője szerepkörrel rendelkező felhasználó miként tarthatja karban az Elektronikus jelentés (ER) formátumkonfigurációját.
+description: Ez a témakör bemutatja, hogyan lehet karbantartani egy Elektronikus jelentéskészítési (ER) formátumkonfigurációt.
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 17fe6d772040c73959685920743225c128421951
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: b76fb09ff961a3100b6a4bf890c1b12e6a0a2771
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684260"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092566"
 ---
 # <a name="er-upgrade-your-format-by-adopting-a-new-base-version-of-that-format"></a>ER – A formátum frissítése ezen formátum új alapverziójának elfogadásával
 
@@ -243,6 +243,3 @@ Ehhez a Proseware, Inc. rendszernek meg kell változtatnia az egyéni konfigurá
 ## <a name="test-the-customized-format-for-payment-files-generation"></a>A testreszabott formátum tesztelése a Kifizetési fájlok létrehozásához
 Hajtsa végre a „Hozzon létre elektronikus dokumentumokat a kifizetésekre vonatkozóan a létrehozott formátum segítségével” eljárásban szereplő lépéseket a párhuzamos Finance and Operations szakaszban. Válassza ki a létrehozott „BACS (UK fiktív egyéni)” formátumát az elektronikus fizetési módszer paramétereiben. Győződjön meg arról, hogy a létrehozott kifizetési fájl tartalmazza a Proseware, Inc. által a közelmúltban bevezetett XML-csomópontot, amely az IBAN-számlakódot a regionális követelményeknek megfelelően jeleníti meg. A fájlnak tartalmaznia kell a közelmúltban a Litware, Inc. által bevezetett XML-csomópontot is, amely a SWIFT-bankkódot az ország előírásainak megfelelően jeleníti meg.  
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

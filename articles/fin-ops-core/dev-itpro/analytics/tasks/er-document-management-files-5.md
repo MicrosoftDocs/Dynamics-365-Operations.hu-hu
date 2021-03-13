@@ -1,6 +1,6 @@
 ---
 title: ER Dokumentumkezelési fájlok használata formátumkimenetekben (5. rész – Formátum módosítása és futtatása)
-description: A következő lépések leírják, hogy egy rendszergazda vagy elektronikus jelentések fejlesztője szerepkörrel rendelkező felhasználó miként konfigurálhat egy új Elektronikus jelentés (ER) formátumot a dokumentumkezelési fájlok (mellékletek) használatához az ER-kimenetben.
+description: Ez a témakör azt ismerteti, hogyan kell konfigurálni egy Elektronikus jelentéskészítési (ER) formátumot a dokumentumkezelési fájlok (mellékletek) használatára az ER-kimenetben. (5. rész)
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8b949c2629df0e9db8c11322c9d0d090b200edc2
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: f96189163d5ecac47ade9f713b3fd689e41352d0
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681757"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092488"
 ---
 # <a name="er-use-document-management-files-in-format-outputs-part-5---modify-and-run-format"></a>ER Dokumentumkezelési fájlok használata formátumkimenetekben (5. rész – Formátum módosítása és futtatása)
 
@@ -96,6 +96,3 @@ Az eljárás egy olyan szolgáltatáshoz tartozik, amely a Dynamics 365 for Oper
 7. Kattintson az OK gombra.
     * Tekintse át a létrehozott kimenetet. Megjegyzendő, hogy az XML-formátumú számlaüzeneten kívül az összes melléklet számára létrejön egy fájl. A mellékletfájlok feltöltése a tömörített kimenettel bináris formátumban történik.  
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -1,6 +1,6 @@
 ---
 title: Új dokumentum felhasználói felület az üzleti dokumentumkezelés modulban
-description: Ez a témakör azt mutatja be, hogyan lehet használni az új dokumentum felhasználói felületet (UI) az elektronikus jelentési (ER) keretrendszer üzleti dokumentumkezelő funkciójában.
+description: Ez a témakör azt mutatja be, hogyan lehet használni az új dokumentum felhasználói felületet az elektronikus jelentések üzleti dokumentumkezelő funkciójában.
 author: v-anamir
 manager: AnnBe
 ms.date: 05/12/2019
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: v-anamir
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 2cb6e0da4af07b9b8486bf1e5bda29523cbd08e9
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 64ac52385ae6145f7428ebbc3cb77e395557bce2
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681352"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092225"
 ---
-# <a name="new-document-user-interface-in-business-document-management"></a>Új dokumentum felhasználói felület az üzleti dokumentumkezelés modulban
+# <a name="new-document-user-interface-in-business-document-management"></a>Új dokumentum-felhasználói felület az üzleti Dokumentumkezelés modulban
 
 [!include [banner](../includes/banner.md)]
 
@@ -64,6 +64,3 @@ Kövesse az alábbi lépéseket a funkció bekapcsolásához az összes jogi sze
 Az **Új dokumentum** gomb lehetővé teszi, hogy egy másik szolgáltató által biztosított elektronikus jelentési (ER) formátum konfigurációban hozzunk létre és szerkesszünk egy sablont. Ebben a példában a szolgáltató a Microsoft. Az **Új dokumentum** elem kiválasztásakor az aktuális és más szolgáltatók által birtokolt összes sablon látható. Miután kiválasztja a sablont, szerkesztésre megnyílik. Ezt követően a szerkesztett sablon egy új, automatikusan létrejövő ER formátumkonfigurációban lesz tárolva.
 
 További tájékoztatás: [Üzleti dokumentumkezelés – áttekintés](er-business-document-management.md).
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

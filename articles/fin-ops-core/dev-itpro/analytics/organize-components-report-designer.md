@@ -1,6 +1,6 @@
 ---
 title: Jelentés-összetevők rendezése a jelentéstervezőben
-description: Miután elkészítette az építőelemeket és létrehozta a jelentéseket, hasznos ezeknek a rendezése, hogy a felhasználók könnyebben megtalálják őket. Ez a cikk ismerteti a jelentéstervezőben meglévő jelentések, építőelemek és objektumok rendezését.
+description: Ez a témakör ismerteti a jelentéstervezőben meglévő jelentések, építőelemek és objektumok rendezését.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 58525da35eb9e9376cb5793ad6c6fa45b9de42e6
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 0b55dcee00f571228ec1e933306d77d9edc12866
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685811"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092423"
 ---
 # <a name="organize-report-components-in-report-designer"></a>Jelentés-összetevők rendezése a jelentéstervezőben
 
@@ -148,6 +148,3 @@ Csak az alapértelmezett alapidőszak beállításainak mentése történik a je
 ## <a name="additional-resources"></a>További erőforrások
 
 [Pénzügyi jelentéskészítés](financial-reporting-intro.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

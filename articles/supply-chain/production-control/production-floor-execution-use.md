@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 40c6794fdf25da44a75aba4a502a89966c0ec4d0
-ms.sourcegitcommit: f27f5d07c040bdca1bcd616f5d3f2320d3b3337e
+ms.openlocfilehash: 4b89e911f3c6eb8ffa0cfe049ef9bfc2ed306021
+ms.sourcegitcommit: b7a7a14f8650913f6797ae1c4a82ad8adfe415fd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "4429828"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "5077631"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>A termelési üzem végrehajtási felületének dolgozók általi használata
 
@@ -41,11 +40,11 @@ A témakör többi része leírja, hogy a dolgozók hogyan használják a kezel�
 
 ## <a name="all-jobs-tab"></a>Minden feladat lap
 
-A **Minden feladat** lap egy feladatlistát tartalmaz, amelyen látható az összes olyan termelési feladat, amely állapota *Nincs elindítva*, *Leállítva*, vagy *Elindítva*.
+A **Minden feladat** lap egy feladatlistát tartalmaz, amelyen látható az összes olyan termelési feladat, amely állapota *Nincs elindítva*, *Leállítva*, vagy *Elindítva*. (Ez a lapnév testreszabható, és az ön rendszerénél más lehet.)
 
 ![Minden feladat lap](media/pfei-all-jobs-tab.png "Minden feladat lap")
 
-A Feladatlista az alábbi oszlopokkal rendelkezik. (A számok az előzőekben bemutatott számoknak felelnek meg.)
+A Feladatlista az alábbi oszlopokkal rendelkezik. A számok az előzőekben bemutatott számoknak felelnek meg.
 
 1. **Kiválasztás oszlop** – a bal szélső oszlop ellenőrző pipákkal jelzi, hogy a dolgozó mely feladatokat választotta ki. A dolgozók egyszerre több feladatot is kijelölhetnek a listában. A lista minden feladatának kiválasztásához jelölje ki az oszlop fejlécét. Ha egy feladatot kijelölt, akkor a feladattal kapcsolatos részletek a lap alsó részén jelennek meg.
 1. **Feladat állapota oszlop** – Ez az oszlop szimbólumok használatával jelzi az egyes feladatok állapotát. Azoknak a feladatoknak, amelyeknél nincs jel az oszlopban, az állapota *Nincs elindítva*. A zöld háromszög azt jelzi, hogy a feladatok állapota *Elindítva*. A két sárga függőleges sor a *Leállítva* állapotú feladatokat jelöli.
@@ -60,9 +59,11 @@ A Feladatlista az alábbi oszlopokkal rendelkezik. (A számok az előzőekben be
 
 ## <a name="active-jobs-tab"></a>Aktív feladatok lap
 
+Az **Aktív feladatok** lapok felsorolják azokat a feladatokat, amelyeket a bejelentkezett dolgozó már megkezdett. (Ez a lapnév testreszabható, és az ön rendszerénél más lehet.)
+
 ![Aktív feladatok lap](media/pfei-active-jobs-tab.png "Aktív feladatok lap")
 
-Az **Aktív feladatok** lapon a feladatok listája az alábbi oszlopokkal rendelkezik:
+Az aktív feladatokat tartalmazó lista az alábbi oszlopokkal rendelkezik.
 
 - **Kiválasztás oszlop** – a bal szélső oszlop ellenőrző pipákkal jelzi, hogy a dolgozó mely feladatokat választotta ki. A dolgozók egyszerre több feladatot is kijelölhetnek a listában. A lista minden feladatának kiválasztásához jelölje ki az oszlop fejlécét. Ha egy feladatot kijelölt, akkor a feladattal kapcsolatos részletek a lap alsó részén jelennek meg.
 - **Rendelés** – Ez az oszlop a feladathoz tartozó termelési rendelés számát jeleníti meg.
@@ -72,6 +73,28 @@ Az **Aktív feladatok** lapon a feladatok listája az alábbi oszlopokkal rendel
 - **Befejezve** – Ez az oszlop azt a mennyiséget jeleníti meg, amelyet már befejeztek a feladathoz.
 - **Selejtezett** – Ez az oszlop azt a mennyiséget jeleníti meg, amelyet selejteztek a feladathoz.
 - **Hátralévő** – Ez az oszlop azt a mennyiséget jeleníti meg, amely még hátravan a feladatból.
+
+## <a name="my-machine-tab"></a>Saját gép lap
+
+A **Saját gép** lapon a dolgozók kiválasztják azt az eszközt, amely egy géperőforráshoz kapcsolódik a **Minden feladat** lapon beállított szűrőn belül. A dolgozó ezután megtekintheti a kiválasztott eszköz állapotát: legfeljebb négy kijelölt számláló értékét és a közelmúltbeli karbantartási kérések és a regisztrált leállások listáját olvassa be. A dolgozó a kiválasztott eszköz karbantartását is kérheti, valamint regisztrálhatja és szerkesztheti a gép leállását. (Ez a lapnév testreszabható, és az ön rendszerénél más lehet.)
+ 
+![Saját gép lap](media/pfei-my-machine-tab.png "Saját gép lap")
+
+A **Saját gép lap** a következő oszlopokat tartalmazza. A számok az előzőekben bemutatott számoknak felelnek meg.
+
+1. **Gépi eszköz** – Válassza ki a nyomon követni kívánt gépi eszközt. Kezdjen el beírni egy nevet, és válasszon az egyező eszközök listájáról, vagy válassza ki a nagyító ikont a feladatlista szűrőiben található erőforrásokhoz társított összes eszköz listájáról való kiválasztáshoz.
+
+    > [!NOTE]
+    > A Supply Chain Management felhasználói szükség szerint hozzárendelhetnek egy erőforrást az egyes eszközökhöz az **Összes eszköz** lap segítségével (az **Erőforrás** legördülő lista használatával a **Tárgyi eszköz** lapon). További tudnivalókért lásd: [Eszköz létrehozása](../asset-management/objects/create-an-object.md).
+
+1. **Beállítások** – A fogaskerekek ikonjának kiválasztásával egy párbeszédpanel nyílik meg, amelyen kiválaszthatja, hogy a kiválasztott gépeszköz mely számlálóit kell megtekinteni. Ezeknek a számlálóknak az értékei az **Eszközkezelés lap** tetején jelennek meg. A **Beállítások** menü (a következő képernyőképen látható) segítségével akár négy számlálót engedélyezhet. Az engedélyezni kívánt számlálókhoz használja a csempe tetején található keresési mezőt, és válasszon ki egy számlálót. A keresési mező az **Eszközkezelés** lap tetején kijelölt eszközhöz társított összes számlálót listázza. Állítsa be az egyes számlálókat az **Összesített** érték vagy a számláló legutóbbi **Tényleges** értékének figyeléséhez. Ha például olyan számlálót állít be, amely nyomon követi, hogy a gép hány órát fut, akkor azt **Összesített** értékre kell állítania. Ha a legutóbb frissített hőmérséklet vagy hőmérséklet mérésére állít be számlálót, akkor a **Tényleges** értékre kell beállítania. Az **OK** gombra kattintva mentse a beállításokat, és zárja be a párbeszédpanelt.
+
+    ![Saját gép lap](media/pfei-my-machine-tab-settings.png "Saját gép lap")
+
+1. **Karbantartás kérése** – Ezzel a gombbal megnyithat egy párbeszédpanelt, ahol létrehozhatja a karbantartási kéréseket. Meg lehet adni egy leírást és megjegyzést. A kéréssel egy Supply Chain Management felhasználó fog foglalkozni, aki ezt követően karbantartási munkarendelésre konvertálhatja a karbantartási kérést.
+1. **Leállás regisztrálása** – Ezzel a gombbal megnyithat egy párbeszédpanelt, ahol regisztrálhatja a gép leállását. Kiválaszthatja az okkódot, és megadhatja a leállás dátumát/tartományát. A gép leállási idejének regisztrációja a gépi eszköz hatékonyságának kiszámítására használható.
+1. **Megtekintés vagy szerkesztés** – Ezzel a gombbal megnyithat egy párbeszédpanelt, ahol szerkesztheti és megtekintheti a meglévő leállási rekordokat.
+
 
 ## <a name="starting-and-completing-production-jobs"></a>Termelési feladatok elindítása és befejezése
 
@@ -124,7 +147,7 @@ Például Shannon, egy dolgozó a Contoso nevű vállalatnál, egy vállalati ta
 
 Mindkét esetben, miután Shannon megerősíti a kijelölést, vagy a bejelentkezési oldalra lép, vagy egy olyan oldalra, amelyen meg kell erősítenie, hogy visszatért a közvetett tevékenységből. A megjelenő lap a termelési üzem végrehajtási felületének konfigurációjától függ. (További tájékoztatás: [A termelési üzem végrehajtási felületének konfigurálása](production-floor-execution-configure.md).)
 
-## <a name="working-on-breaks"></a>Munka szünet közben
+## <a name="registering-breaks"></a>Regisztrált szünetek
 
 A dolgozók a szüneteket is regisztrálhatják. A szünetek rugalmasan meghatározhatók, a [Regisztrációk alapján történő fizetés](pay-based-on-registrations.md) témakör leírása alapján.
 
@@ -146,6 +169,3 @@ A [Dynamics 365 Guides](https://dynamics.microsoft.com/mixed-reality/guides/) se
 1. A dolgozó az útmutatón keresztül tanulja meg a feladat végrehajtását.
 
 A HoloLens alapú útmutatók létrehozásával, hozzárendelésével és használatával kapcsolatos további információkért lásd: [Vegyes valóságot alkalmazó útmutatók biztosítása a termelésben dolgozók számára](instruction-guides-in-production-overview.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

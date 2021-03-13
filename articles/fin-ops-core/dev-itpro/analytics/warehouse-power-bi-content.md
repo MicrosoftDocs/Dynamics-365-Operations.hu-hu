@@ -1,6 +1,6 @@
 ---
 title: Raktári teljesítmény Power BI tartalom
-description: Ez a témakör azt ismerteti, mit tartalmaz a Raktári teljesítmény Power BI tartalom modul. Leírja, hogy hogyan kell hozzáférni a Power BI-jelentésekhez, és információkat nyújt a tartalomcsomag összeállításához korábban használt entitásokkal és adatmodellekkel kapcsolatban.
+description: Ez a témakör azt ismerteti, mit tartalmaz a Raktári teljesítmény Power BI tartalom modul.
 author: Mirzaab
 manager: AnnBe
 ms.date: 12/18/2017
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 4594c6c09abdac72a03ac1338701d2291b234106
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: be4acbb8eae3fd7d8dd0db4f99c3a2db06808f21
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687401"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092816"
 ---
 # <a name="warehouse-performance-power-bi-content"></a>Raktári teljesítmény Power BI tartalom
 
@@ -111,6 +111,3 @@ A következő fő összesítő mértékek szolgálnak a tartalom alapjaként.
 | Szállítási teljesítmény        | Szállítva termék szerint                       | CustPackingSlipOnTimeStatus           | Korai, időbeni és késedelmes (lásd a táblázat korábbi részében található leírást). |
 | Szállítási teljesítmény        | Vevő által szállítva                      | CustPackingSlipOnTimeStatus           | Korai, időbeni és késedelmes (lásd a táblázat korábbi részében található leírást). |
 | Szállítási teljesítmény        | Szállító hely / raktár              | CustPackingSlipOnTimeStatus           | Korai, időbeni és késedelmes (lásd a táblázat korábbi részében található leírást). |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

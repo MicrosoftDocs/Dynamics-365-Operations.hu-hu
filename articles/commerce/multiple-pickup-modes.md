@@ -10,22 +10,21 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 768b20ecc8d15353258c9b3af69b897957d3de60
-ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
+ms.openlocfilehash: c0879343f100fa1fe6e0a4b4fbf085574225e898
+ms.sourcegitcommit: bea695707d1e7b4e2713b62405ad0e7a7a893420
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "4594968"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "5053413"
 ---
 # <a name="enable-multiple-pickup-delivery-modes-for-customer-orders"></a>Több felvételi szállítási mód engedélyezése a vevői rendelésekhez
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
+
 
 A Microsoft Dynamics 365 Commerce 10.0.16-os és újabb verziójában a szervezetek több szállítási módot is definiálhatnak, amelyek közül a vásárlók vagy az értékesítési munkatársak választhatnak, amikor olyan rendelést hoznak létre, amelyet egy üzletben vesznek fel. Ily módon a szervezetek több felvételi lehetőséget is biztosíthatnak a vásárlóknak. Például sok kiskereskedő kínálja a vásárlóknak a megrendeléseikhez a bolton belüli felvétel vagy az üzlet előtti felvétel választását. A Commerce támogatja a különböző felvételi típusú kézbesítési módok konfigurálását. A felhasználók ezután kihasználhatják őket, amikor vevői rendeléseket hoznak létre bármely támogatott kereskedelmi csatornán (e-kereskedelem, hívásközpont vagy áruház).
 
@@ -86,6 +85,3 @@ Ha egy csatornához több felvételi kézbesítési mód is rendelkezésre áll,
 ## <a name="considerations-for-distributed-order-management"></a>A felosztott rendeléskezelés szempontjai
 
 A Commerce [felosztott rendeléskezelési (DOM)](https://docs.microsoft.com/dynamics365/commerce/dom) funkciói figyelmen kívül hagyják az üzleti felvételre megjelölt értékesítési sorokat. Ezek a funkciók frissültek annak érdekében, hogy a konfigurált átvételi szállítási módokhoz kapcsolódó értékesítési sorok megkerüljék a DOM logikát, és ne kerüljenek át egy új teljesítési raktárba.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

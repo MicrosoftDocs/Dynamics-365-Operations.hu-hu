@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: aba35563266d1149131124f489f89da61432bfb2
-ms.sourcegitcommit: 0354ca7e566fbd2eb0aabdd40000d4ac5c44ea78
+ms.openlocfilehash: 36d82efa182bff12442d51908d634cbddbd13fa9
+ms.sourcegitcommit: fc852ae4939089a294d00fdf9cad8d6372ffb012
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "4669170"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "5080038"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-december-2-2020"></a>Új vagy módosult elemek a Dynamics 365 Human Resources szolgáltatásban (2020. december 2.)
 
@@ -61,7 +60,7 @@ Ez a kiadás az alábbi hibajavításokat tartalmazza.
 | 514087 | A BenefitEligibilityProcessResult eredménynek tartalmaznia kell a feldolgozáshoz használt datetime értéket. | A BenefitEligibity feldolgozási eredménye mostmár tartalmazza az utolsó feldolgozás datetime pecsétjét, amely korábban hiányzott. |
 | 526903 | A juttatási regisztráció sikertelen a függő feleket tartalmazó csomagok esetében ha a **Kijelölt személyek automatikus kiválasztása** be van kapcsolva az **Human Resource megosztott paramétereiben**. | Kijavítottuk azt a problémát, amely miatt a juttatási regisztráció sikertelen volt az függő felek esetében, amikor a **Kijelölt személyek automatikus kiválasztása** beállítás be volt kapcsolva az alapértelmezett kijelölt személyek számára. |
 | 521922 | **Távollét megjelenítése részletek nélkül** paraméter megjeleníti a szabadságkérelmeket a csapat távolléti naptárában. | A szabadság típusa, a szabadság típusának színe és a nap részletei a csapat távolléti naptárában megjelentek, amikor a **Tavollét megjelenítése részletek nélkül** értéke **Igen** volt a **Szabadság és távollét paramétereiben**. Ez ki lett javítva, és nincs megjelenítve a távollét típusa és az alapértelmezett típusszín (sötétkék) van használva minden szabadságtípushoz a csapat távolléti naptárában. |
-| 527316 | A beosztás, a beosztás és a dolgozói értesítések címmódosításai nem szinkronizálódnak. | Korábban egy Cím kapcsolat lett hozzáadva a Feladat, a Beosztás és a Dolgozó entitásokhoz. A kapcsolat szinkronizálása a Human Resources és a Common Data Serviceközött működött, de nem működött a Common Data Service-szolgáltatásból származó értesítéseknél. Ez ki lett javítva. |
+| 527316 | A beosztás, a beosztás és a dolgozói értesítések címmódosításai nem szinkronizálódnak. | Korábban egy Cím kapcsolat lett hozzáadva a Feladat, a Beosztás és a Dolgozó entitásokhoz. A kapcsolat szinkronizálása a Human Resources és a Dataverseközött működött, de nem működött a Dataverse-szolgáltatásból származó értesítéseknél. Ez ki lett javítva. |
 | 512275 | Távolítsa el a színbeállításokat a **Szabadság és távollét paramétereiből**. | Most, hogy a színek a szabadság típusokhoz definiálva vannak, a színbeállításokra már nincs szükség a **Szabadság és távollét paramétereiben**, így ezek el lettek távolítva.. |
 | 437112 | Félrevezető hibaüzenet-szöveg az alkalmazotti beosztás-hozzárendelések során. | Frissített a hibaüzenetet, amikor megpróbálnak egy dolgozót felvenni, és azt hozzárendelni egy olyan beosztáshoz, ami nem aktív. Frissített üzenet: **A megadott beosztás nem aktív a foglalkoztatás kezdő dátumakor. Kérjük, ellenőrizze a beosztás időtartamát.** |
 | 527816 | Teljesítményproblémák a **Szabadságolás** oldalon. | A teljesítmény javult a **Szabadidő** oldalon. |
@@ -92,6 +91,3 @@ A tervezett szolgáltatások és az ütemezett kiadások teljes listája az alá
 [A Dynamics 365 Human Resources 2020. második kiadási hullámának áttekintése](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/)</br>
 [Rendelés frissítése](hr-admin-setup-update-process.md)</br>
 [Szolgáltatások kezelése](hr-admin-manage-features.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

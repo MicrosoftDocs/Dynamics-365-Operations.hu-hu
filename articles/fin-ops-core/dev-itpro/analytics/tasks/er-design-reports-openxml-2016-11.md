@@ -1,6 +1,6 @@
 ---
 title: ER – Az OPENXML formátumban létrejövő jelentésekre vonatkozó konfigurációk tervezése (2016. november)
-description: Ez a témakör leírja, hogy a Rendszergazda vagy Elektronikus jelentések fejlesztője szerepkörrel rendelkező felhasználó miként hozhat létre egy új Elektronikus jelentés (ER) konfigurációt, amely tartalmazza az elektronikus dokumentumok létrehozására vonatkozó sablont az OPENXML formátumban.
+description: Ez a témakör azt ismerteti, hogyan lehet létrehozni egy olyan új Elektronikus jelentéskészítési konfigurációt, amely egy sablont tartalmaz az elektronikus dokumentumok OPENXML-formátumú előállításához.
 author: NickSelin
 manager: AnnBe
 ms.date: 08/12/2019
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: bf909efbac5dce8e22d9713ad2e694ce624ffeb0
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 3b832961061d05e3f1ae046f820bc7a37baaf90c
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681901"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092666"
 ---
 # <a name="er-design-a-configuration-for-generating-reports-in-openxml-format-november-2016"></a>ER – Az OPENXML formátumban létrejövő jelentésekre vonatkozó konfigurációk tervezése (2016. november)
 
@@ -150,6 +150,3 @@ Hajtsa végre az alábbi lépéseket: először hajtsa végre a „Konfiguráci�
 17. A **Bankszámla** mezőben írja be a `GBSI OPER` szöveget.
 18. Válassza az **OK** parancsot, majd válassza ismét az **OK** elemet. Tekintse át a létrehozott munkalapot, többek között a kifizetési sorok részleteit, valamint az ebben a fizetési üzenetben használt pénznemkódra vonatkozó összegeket is.  
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

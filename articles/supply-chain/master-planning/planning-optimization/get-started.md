@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: MpsIntegrationParameters, MpsFitAnalysis
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 54ad180b7f4691ead3563b077eadadc3b9b20588
-ms.sourcegitcommit: 5f21cfde36c43887ec209bba4a12b830a1746fcf
+ms.openlocfilehash: a41f69958d84fb67b7cd8b6b4c7de38da23552f3
+ms.sourcegitcommit: 2b76d4443b2867205db156648125a894f395a495
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "4429964"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "5091085"
 ---
 # <a name="get-started-with-planning-optimization"></a>Tervezési optimalizálás kezdő lépései
 
@@ -41,21 +40,42 @@ A tervezési optimalizálás funkció jelenleg nem támogatja az összes olyan f
 
 A tervezés optimalizálása előtt kifejezetten ajánljuk, hogy értékelje a tervezésoptimalizálás illeszkedési elemzésének eredményeit. További tájékoztatás: [Tervezésoptimalizálás illeszkedési elemzése](planning-optimization-fit-analysis.md).
 
-### <a name="availability"></a>Elérhetőség
-A Tervezési optimalizálása jelenleg a következő Azure földrajzi területeken érhető el: Egyesült Államok, Kanada, Európa, Egyesült Királyság és Ausztrália. Ha egy másik földrajzi régióból kísérli meg telepíteni a bővítményt, akkor az LCS egy üzenetet jelenít meg, hogy ez a földrajzi hely nem támogatott.
+## <a name="availability"></a>Elérhetőség
+
+A Tervezési optimalizálása jelenleg a következő Azure földrajzi területeken érhető el: Egyesült Államok, Kanada, Európa, Egyesült Királyság, Ausztrália és Ázsia és a Csendes-óceáni térség. Ha egy másik földrajzi régióból kísérli meg telepíteni a bővítményt, akkor az LCS egy üzenetet jelenít meg, hogy ez a földrajzi hely nem támogatott.
 
 Ne feledje, hogy a Tervezés optimalizálása nem támogatott a Dynamics 365 Supply Chain Management helyszíni telepítései esetében.
 
-### <a name="licensing"></a>Licenckezelés
+## <a name="licensing"></a>Licenckezelés
 
 Ha az alaptervezést az aktuális licenccel futtatja, akkor nem kell megvásárolnia egy további licencet, hogy a tervezésoptimalizációt használhassa.
 
-### <a name="install-the-add-in"></a>Telepítse a bővítményt
+## <a name="install-and-enable-planning-optimization"></a>A Tervezési optimalizálás telepítése és engedélyezése
 
-A Tervezés optimalizálása modul használatához telepíteni kell a Tervezés optimalizálása bővítményt a következőhöz: Dynamics 365 Supply Chain Management. A bővítményt a LCS-projektből érheti el, és a Supply Chain Management felhasználói felületéről (UI) be lehet kapcsolni a tervezés optimalizálása funkcióját.
+A Tervezési optimalizálás csak akkor használható, ha a rendszerben minden előfeltétel megvan, majd engedélyezni kell a licenckulcsát, és telepíteni kell a Tervezési optimalizálási bővítményt a Dynamics 365 Supply Chain Management rendszerhez.
 
-> [!NOTE]
-> A tervezésoptimalizálás követelménye egy 2. szintű vagy magasabb LCS-kompatibilis magas rendelkezésre állású környezet (nem OneBox környezet), a Dynamics 365 Supply Chain Management 10.0.7-es vagy újabb verziójával. Ha OneBox- környezetbe próbálja meg telepíteni a bővítményt, akkor a telepítés nem fejeződik be, és a telepítést vissza kell vonni.
+### <a name="prerequisites"></a>Előfeltételek
+
+Mielőtt telepítené a Tervezési optimalizálási bővítményt, a következő előfeltételeknek meg kell lenniük:
+
+- A Supply Chain Management rendszert egy 2. szintű vagy magasabb szintű, LCS-kompatibilis magas rendelkezésre állású környezeten kell futtatnia (nem OneBox környezet), a Dynamics 365 Supply Chain Management 10.0.7-es vagy újabb verziójával. Ha OneBox- környezetbe próbálja meg telepíteni a bővítményt, akkor a telepítés nem fejeződik be, és a telepítést vissza kell vonni.
+
+- Be kell állítani a rendszert a Power Platform-integrációhoz. A további tudnivalókat lásd: [Bővítmények előfeltételei és telepítésük](../../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md#prerequisites-for-setting-up-add-ins) és [Bővítmények beállítása](../../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md#set-up-add-ins).
+
+### <a name="enable-the-planning-optimization-license"></a>A Tervezési optimalizálás licencének engedélyezése
+
+A Tervezési optimalizálás használatához engedélyeznie kell a konfigurációs kulcsot. Ehhez tegye a következőket:
+
+1. Állítsa a rendszert karbantartási módba a [Karbantartási mód](../../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md) alatt leírtak szerint.
+1. Lépjen a **Rendszerfelügyelet \> Beállítás \> Licenckonfiguráció** elemre.
+1. A **Konfigurációs kulcsok** lapon jelölje be a **Tervezési optimalizálás** jelölőnégyzetet.
+1. Kapcsolja ki a karbantartási módot a [Karbantartási mód](../../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md) alatt leírtak szerint.
+
+### <a name="install-the-planning-optimization-add-in"></a>A Tervezési optimalizálás bővítményének telepítése
+
+A bővítményt a LCS-projektből kell telepítenie, és a Supply Chain Management felhasználói felületéről (UI) kell bekapcsolni a Tervezési optimalizálás funkciót.
+
+A Tervezési optimalizálás bővítményének telepítése:
 
 1. Jelentkezzen be a LCS-ba, majd nyissa meg a kívánt környezetet.
 1. Lépjen a **Teljes részletek** elemre.
@@ -69,11 +89,11 @@ A Tervezés optimalizálása modul használatához telepíteni kell a Tervezés 
 
 A Tervezésoptimalizálás bővítmény telepítésének fő célja a szolgáltatás és a környezet csatlakoztatása. Ezért a bővítményt külön kell telepíteni minden olyan környezetre, ahol a tervezésoptimalizálást fogja használni, függetlenül a környezetek között áthelyezett kódoktól.
 
-### <a name="planning-optimization-integration"></a>A tervezésoptimalizálás integrációja
+## <a name="integrate-planning-optimization-with-your-system"></a>Tervezési optimalizálás integrálása a rendszerével
 
 Annak konfigurálásához, hogy a Tervezési optimalizálás bővítményt használja-e a rendszer az alaptervezéshez, nyissa meg az **Alaptervezés** \> **Beállítás** \> **Tervezési optimalizálás paraméterei** lehetőséget.
 
-#### <a name="connection-status"></a>Kapcsolat állapota
+### <a name="connection-status"></a>Kapcsolat állapota
 
 A kapcsolat állapota jelzi a kapcsolat aktuális állapotát a Supply Chain Management és a Tervezésoptimalizálás szolgáltatás között. A következő táblázat mutatja a lehetséges értékeket.
 
@@ -85,7 +105,7 @@ A kapcsolat állapota jelzi a kapcsolat aktuális állapotát a Supply Chain Man
 | Kapcsolat letiltása | Jelenleg folyamatban van a Tervezésoptimalizálás szolgáltatással való kapcsolat kikapcsolási kérelme. | Nem |
 | Állapot lekérése | A rendszer a tervezés optimalizálása szolgáltatásból származó állapotadatokra várakozik. | Nem |
 
-#### <a name="the-use-planning-optimization-option"></a>A Tervezésoptimalizálás beállítás használata
+### <a name="the-use-planning-optimization-option"></a>A Tervezésoptimalizálás beállítás használata
 
 A **Tervezés optimalizálása használata** beállítás határozza meg, hogy melyik tervezési motor használható az alaptervezéshez:
 
@@ -112,6 +132,3 @@ Ha a Tervezésoptimalizálás be van kapcsolva, akkor az alaptervezést a rendsz
 [Szűrők alkalmazása egy tervre](plan-filters.md)
 
 [Tervezési feladat érvénytelenítése](cancel-planning-job.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -3,7 +3,7 @@ title: Mentett nézetek
 description: Ez a témakör azt mutatja be, hogyan lehet használni a mentett nézetek funkcióit.
 author: jasongre
 manager: AnnBe
-ms.date: 09/11/2020
+ms.date: 01/22/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,16 +15,17 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 8537ec87c625e8b54cdf7574216d66f285da3a48
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 54f8c4bcac53f7cceb25f73b24311e93884be95d
+ms.sourcegitcommit: b7a7a14f8650913f6797ae1c4a82ad8adfe415fd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693701"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "5077449"
 ---
 # <a name="saved-views"></a>Mentett nézetek
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 ## <a name="introduction"></a>Bevezetés
 
@@ -123,12 +124,14 @@ A nézet közzétételéhez kövesse az alábbi lépéseket:
 1. Hozzon létre és mentsen el a közzétenni kívánt nézet egy személyes példányát. 
 2. A jelenleg betöltött nézetnél válassza ki a nézet nevét a nézetválasztó legördülő menü megnyitásához. 
 3. Válassza a **Továbbiak** gombot, és válassza a **Közzététel** lehetőséget. Megnyílik a Közzététel párbeszédpanel.
-4. Adja meg a nézet nevét és (ha van) a leírását. A név, amelyet megad az, mely a nézetet megkapó felhasználók számára megjelenik a nézetválasztóban. A lap közzétett nézeteinek egyedinek kell lennie. Egy laphoz nem engedélyezettek az ismétlődő nevek a közzétett nézeteknél, még ha az alkalmazott szerepkörök listája vagy jogi személyek különböznek is.
-5. **10.0.9-es vagy újabb verzió:** Határozza meg, hogy a nézet a kiválasztott felhasználók számára alapértelmezett nézetként legyen-e közzétéve. Amikor egy nézetet alapértelmezettnek állítanak be, a felhasználók a céloldal legközelebbi megnyitásakor ezt a nézetet fogják látni. Minden célfelhasználó egyetlen globálisan alapértelmezett nézete fog változni. A felhasználók azonban továbbra is módosíthatják a saját alapértelmezett nézetüket a közzététel után.
-6. Adja hozzá azokat a biztonsági szerepköröket, amelyek kapcsolódnak a nézetettel megcélzott felhasználókhoz. 
-7. **A 10.0.13-as és későbbi verzió:** Határozza meg, hogy a nézetet szeretné-e közzétenni a kiválasztott biztonsági szerepkör alárendelt szerepköreihez. Ha ezt a lehetőséget választja, akkor a megfelelő biztonsági szerepkörök sorában jelölje be az **Alárendelt szerepkörökkel együtt** jelölőnégyzetet. Ne feledje, hogy ez a jelölőnégyzet nem érhető el olyan szerepkörök esetében, amelyek nem rendelkeznek alárendelt szerepkörökkel.
-7. Adja hozzá azokat a jogi személyeket, amelyeknek számára ez a nézet elérhető kell legyen. 
-8. Válassza a **Közzététel** lehetőséget.
+4. Adja meg a nézet nevét. A név, amelyet megad az, mely a nézetet megkapó felhasználók számára megjelenik a nézetválasztóban. A lap közzétett nézeteinek egyedinek kell lennie. Egy laphoz nem engedélyezettek az ismétlődő nevek a közzétett nézeteknél, még ha az alkalmazott szerepkörök listája vagy jogi személyek különböznek is.
+5. **A 10.0.17-es vagy újabb verzió frissítése:** Ha az **(Előzetes verzió) Szervezetnézetek fordításának támogatása** be van kapcsolva, a szervezet által megkövetelt több nyelven is hozzáadhat fordításokat a nézetnévhez, ha a **Név** mező melletti **Fordítások** gombra kattint. A nézet neve megjelenik a felhasználók számára az aktuális nyelven. Beállíthatja az alapértelmezett nyelvet is, hogy megadja azt a fordítást, amely azon felhasználók számára jelenik meg, akik olyan nyelveket futtatnak, amelyekhez nincs megadva fordítás.
+5. Nem kötelező: Adja meg a nézet leírását, hogy a nézetet megkapó felhasználók jobban megértsék a nézet célját. 
+6. Határozza meg, hogy a nézet a kiválasztott felhasználók számára alapértelmezett nézetként legyen-e közzétéve. Amikor egy nézetet alapértelmezettnek állítanak be, a felhasználók a céloldal legközelebbi megnyitásakor ezt a nézetet fogják látni. Minden célfelhasználó egyetlen globálisan alapértelmezett nézete fog változni. A felhasználók azonban továbbra is módosíthatják a saját alapértelmezett nézetüket a közzététel után.
+7. Adja hozzá azokat a biztonsági szerepköröket, amelyek kapcsolódnak a nézetettel megcélzott felhasználókhoz. 
+8. Határozza meg, hogy a nézetet szeretné-e közzétenni a kiválasztott biztonsági szerepkör alárendelt szerepköreihez. Ha ezt a lehetőséget választja, akkor a megfelelő biztonsági szerepkörök sorában jelölje be az **Alárendelt szerepkörökkel együtt** jelölőnégyzetet. Ne feledje, hogy ez a jelölőnégyzet nem érhető el olyan szerepkörök esetében, amelyek nem rendelkeznek alárendelt szerepkörökkel.
+9. Adja hozzá azokat a jogi személyeket, amelyeknek számára ez a nézet elérhető kell legyen. 
+10. Válassza a **Közzététel** lehetőséget.
 
 Ne feledje, hogy bizonyos környezetekben előfordulhat, hogy egy ideig (legfeljebb egy óráig) eltarthat, mielőtt a felhasználók megtekinthetik a közzétett nézetet.
 
@@ -146,27 +149,15 @@ Ha a közzétett nézet módosításai csak a közzétételi paraméterekre vona
 1. Váltson a közzétett nézetre a frissíteni kívánt paraméterekhez. 
 2. A nézetválasztó legördülő menübőlv válassza az **Újbóli közzététel** lehetőséget. Ha 10.0.12-es vagy korábbi verziót használ, akkora meglévő nézet frissítéséhez ki kell választania a **Közzététel**, majd az **Igen** lehetőséget.
 3. Frissítse a nézet nevét, leírását és jogi személyek biztonsági szerepkörét. 
-4. Válassza a **Közzététel** lehetőséget. 
-5. **10.0.8-as és korábbi verzió:** Ha a közzétett nézet nevét frissítette, akkor törölnie kell a régi nevet tartalmazó közzétett nézetet is. (További információt a [Közzétett nézetek kezelése](saved-views.md#managing-published-views) szakaszban találhat.)
+4. Válassza a **Közzététel** lehetőséget. Ha a közzétett nézet eredetileg alapértelmezett nézetként volt kiválasztva, akkor az újbóli közzététel után ismét a felhasználók alapértelmezett nézete lesz. 
 
-**10.0.9-es és újabb verzió:** Ha a közzétett nézet eredetileg alapértelmezett nézetként volt kiválasztva, akkor az újbóli közzététel után a ismét a felhasználók alapértelmezett nézete lesz.
-
-Ha a közzétett nézet módosításai a nézethez társított testreszabásokat vagy szűrőket módosítják, kövesse az alábbi lépéseket: 
-
-**10.0.13-as és újabb verzió:** Végezze el a szükséges módosításokat közvetlenül a nézetben. A nézet neve mellett egy csillag (\*) jelenik meg.
+Ha a közzétett nézet módosításai a nézethez társított testreszabásokat vagy szűrőket módosítják, kövesse az alábbi lépéseket.
 
 1. Töltse be a közzétett nézetet, amelyet változtatni szeretne. 
 2. Végezze el a szükséges módosításokat a helyi piszkozatban.
 3. A nézetválasztó legördülő menübőlv válassza az **Újbóli közzététel** lehetőséget.
 4. Válassza az **Igen** lehetőséget, ha a nézetet a nem mentett módosításaival együtt szertené közzétenni. 
 5. Módosítsa a módosítást igénylő közzétételi paramétereket, majd válassza a **Közzététel** lehetőséget. 
-
-**10.0.12-es és újabb verzió**
-
-1. Töltse be a közzétett nézetet, amelyet módosítani szeretne. 
-2. Mentse el a közzétett nézet másolatát, amellyel létrehoz egy helyi vázlatot a közzétett nézetből. 
-3. Módosítsa a helyi vázlatot a szükséges módosításokkal.
-4. Tegye közzé a nézetet az eredeti névvel. 
 
 ## <a name="managing-published-views"></a>Közzétett nézetek kezelése
 
@@ -179,20 +170,20 @@ Az adott lap összes közzétett nézetének listájához a következő művelet
 - **Újbóli közzététel** – Az **Újbóli közzététel** művelettel újból közzéteheti a nézeteket a későbbi közzétételi paraméterekkel (név, leírás, biztonsági szerepkörök).
 - **Közzététel** – A **Közzététel** művelet segítségével közzétehet egy jelenleg közzé nem tett nézetet. 
 - **Közzététel megszüntetése** – A **Közzététel megszüntetése** művelettel inaktívvá teheti a nézetet. A nézet továbbra is elérhető lesz a rendszerben, de a felhasználók nem fogják látni a nézetválasztóban addig, amíg a nézet újra közzé nem lesz téve.
-- **Mentés személyesként** – A **Mentés személyesként** művelet a közzétett nézet személyes piszkozatának létrehozásához használható. Ez a funkció segít megérteni a nem publikált vagy az önnek még nem közzétett nézet tartalmát. A használatával szerkesztheti, majd újra közzéteheti a nézetet. Ez a funkció a 10.0.12 verzióban kerül bemutatásra.
+- **Mentés személyesként** – A **Mentés személyesként** művelet a közzétett nézet személyes piszkozatának létrehozásához használható. Ez a funkció segít megérteni a nem publikált vagy az önnek még nem közzétett nézet tartalmát. A használatával szerkesztheti, majd újra közzéteheti a nézetet.
 - **Törlés** – A közzétett vagy közzé nem tett nézetek végleges törléséhez használja az **Törlés** műveletet. Ez a művelet többek között eltávolítja a nézetet rendszer minden felhasználójától. A közzétett nézetek eltávolítása a **Mentés** gomb kiválasztása után lép érvénybe. A nézet törlése nem vonható vissza. 
 
 ## <a name="managing-views-globally"></a>Nézetek globális kezelése
 
 Bár egyes felügyeleti képességek megjelennek az összes oldalon, ahogyan a jelen témakörben is szerepel, a **rendszergazdák** és a **mentett nézet adminisztrátorok** a **Személyre szabás** oldalon keresztül a rendszerre nézve holisztikusabban kezelhetik a nézeteket. Ez a lap különösen a következő szakaszokat és funkciókat tartalmazza: 
 
-- **Közzétett nézetek** – Ez a szakasz felsorolja azokat a nézeteket, amelyeket közzétettek a szervezeténél. Innen újra közzéteheti a nézeteket, miután módosítja azokat a biztonsági szerepköröket vagy jogi személyeket, amelyek a nézet céljai. Ezeket a nézeteket exportálhatja, törölheti vagy megszüntetheti a közzétételüket. A 10.0.12 és későbbi verziókban a **Mentés személyesként** művelet használható a nézet személyes példányának létrehozásához, hogy a nézet módosítható legyen, vagy jobban megérthesse a tartalmát. 
-- **Nem közzétett nézetek** – Ez a szakasz felsorolja a rendszerben jelenleg közzé nem tett szervezeti nézeteket. Ezek a nézetek többnyire az importálási képességen keresztül kerülnek be a rendszerbe. Ezeket a nézeteket közzéteheti, exportálhatja vagy törölheti. A 10.0.12 verzióban hozzáadott **Gyors közzététel** művelet lehetővé teszi, hogy az ebből a szakaszból származó több nézetet egy műveletben tegyék közzé, a meglévő biztonsági szerepkör és a jogi személy-konfigurációk segítségével. A 10.0.12 és későbbi verziókban a **Mentés személyesként** művelet használható a nézetek személyes példányainak létrehozásához, hogy jobban megérthesse a tartalmukat.
+- **Közzétett nézetek** – Ez a szakasz felsorolja azokat a nézeteket, amelyeket közzétettek a szervezeténél. Innen újra közzéteheti a nézeteket, miután módosítja azokat a biztonsági szerepköröket vagy jogi személyeket, amelyek a nézet céljai. Ezeket a nézeteket exportálhatja, törölheti vagy megszüntetheti a közzétételüket. Használhatja a **Mentés személyesként** műveletet a nézet személyes példányának létrehozásához, hogy a nézet módosítható legyen, vagy jobban megérthesse a tartalmát. 
+- **Nem közzétett nézetek** – Ez a szakasz felsorolja a rendszerben jelenleg közzé nem tett szervezeti nézeteket. Ezek a nézetek többnyire az importálási képességen keresztül kerülnek be a rendszerbe. Ezeket a nézeteket közzéteheti, exportálhatja vagy törölheti. A 10.0.12 verzióban hozzáadott **Gyors közzététel** művelet lehetővé teszi, hogy az ebből a szakaszból származó több nézetet egy műveletben tegyék közzé, a meglévő biztonsági szerepkör és a jogi személy-konfigurációk segítségével. Használhatja a **Mentés személyesként** műveletet a nézetek személyes példányainak létrehozásához, hogy jobban megérthesse a tartalmukat.
 - **Személyes nézetek** – Ez a szakasz listázza az összes olyan nézetet, amelyeket a rendszerben lévő felhasználók hozták létre. Innen közzétehet személyes nézeteket a szervezeten belül, vagy egy vagy több nézetet másik felhasználók számára is átmásolhat. Ezeket a nézeteket igény szerint exportálhatja vagy törölheti is.
 - **Felhasználói beállítások** – Válassza ki a megtekinteni kívánt felhasználót, vagy módosítsa a felhasználó személyre szabását a teljes rendszerben, vagy a felhasználó által látogatott oldalakon. A rendszerben a felhasználó személyre szabásával kapcsolatos adatokkat megtekintheti és dolgozhat is velük. Az adott felhasználóhoz tartozó összes személyre szabott elemet törölheti, vagy alaphelyzetbe állíthatja a funkcióbuborékokat a felhasználó számára. Ha vissza vannak állítva a funkcióbuborékok, az új funkciókat bemutató előugró ablakok és a felhasználó korábban elutasított funkciók az előugró ablakok legközelebb újra megjelennek a felhasználó számára.
 - **Rendszerbeállítások:** – Itt tudja ideiglenesen kikapcsolni a rendszerben személyre szabásokat az összes felhasználó számára. Ebben az esetben semmilyen személyre szabás nem vonatkozik a felhasználókra, és az összes lap visszaáll az alapértelmezett állapotába. Amennyiben később újra bekapcsolja a személyre szabásokat, a rendszer minden személyre szabást újra alkalmaz. Véglegesen is törölheti a rendszerben szereplő személyes beállításokat az összes felhasználó számára. A törölt személyes beállításokat nem lehet visszaállítani. Ezért a lépés végrehajtása előtt ellenőrizze, hogy exportálta mindazokat a személyes beállításokat, amelyeket később esetleg importálni szeretne.
 
-Azoknak a felhasználóknak, akik hozzáférnek a **Személyre szabás** lapjához, személyes vagy szervezeti nézeteket is importálhatunk a művelet ablak **Nézetek importálása** gombjának használatával. A 10.0.12 verzióban és a későbbiekben egy olyan mechanizmust is hozzáadtak, amely azonnal közzéteszi a nézeteket importálásuk alkalmával.
+Azoknak a felhasználóknak, akik hozzáférnek a **Személyre szabás** lapjához, személyes vagy szervezeti nézeteket is importálhatunk a művelet ablak **Nézetek importálása** gombjának használatával. A szervezetnézetek esetén az **Azonnali közzététel** lehetőséget kiválasztva további explicit közzététel nélkül elérhetővé teheti a nézeteket a felhasználók számára.
 
 ## <a name="known-issues"></a>Ismert problémák
 A mentett nézetekkel kapcsolatos ismert problémák listája a [Mentett nézeteket teljes mértékben használó Build-űrlapok](../../dev-itpro/user-interface/understanding-saved-views.md) témakörben találja.
@@ -204,27 +195,7 @@ A mentett nézetekkel kapcsolatos ismert problémák listája a [Mentett nézete
 > [!NOTE]
 > A **Mentett nézetek** funkció használatához engedélyeznie kell a Finance and Operations rendszerben a testreszabási rendszert. Ha a teljes környezetnél ki van kapcsolva a testreszabás, a nézeteket a rendszer akkor is letiltja, ha a lenti lépéseket elvégzi. 
 
-**10.0.13-as vagy újabb verzió**
-
-A **Mentett nézetek** funkció már nem szerepel az előzetes verzióban. Már közvetlenül a Funkciókezelésen keresztül elérhető bármilyen környezetben.
-
-**10.0.9-estől a 10.0.12-es verziókig**
-
-A **Mentett nézetek** funkció elérhető közvetlenül a Funkciókezelésben bármilyen környezetben. A többi nyilvános előnézeti funkcióhoz hasonlóan a funkció engedélyezése termelési környezetben a [Kiegészítő felhasználási szerződés](https://go.microsoft.com/fwlink/?linkid=2105274) hatálya alá tartozik.
-
-**10.0.8/32-es platformfrissítés vagy korábbi**
-
-A **Mentett nézetek** funkció engedélyezhető az 1. szintű (fejlesztés/tesztelés) és a 2. szintű (tesztkörnyezet) környezetekben, hogy az alábbi lépések követésével további teszteket és tervezési változtatásokat lehessen biztosítani.
-
-1. **Engedélyezze a tesztcsomagot**: hajtsa végre a következő SQL-utasítást: 
-
-    `INSERT INTO SYSFLIGHTING (FLIGHTNAME, enabled, FLIGHTSERVICEID, PARTITION) VALUES('CLISavedViewsEnableFeature', 1, 0, 5637144576);`
-
-2. **IIS alaphelyzetbe állítása** a statikus tesztelési gyorsítótár kiürítéséhez. 
-3. **Keresse meg a funkciót**: ugorjon a **Funkciók kezelése** munkaterületre. Ha a **Mentett nézetek** nem jelennek meg a listában, válassza ki a **Frissítések keresése** lehetőséget.
-4. **Engedélyezze a funkciót**: keresse meg a **Mentett nézetek** funkciót a funkciólistában, majd válassza ki az **Engedélyezés most** lehetőséget a részleteket tartalmazó ablaktáblán.
-
-Minden további felhasználói munkamenet engedélyezett mentett nézetekkel indul.
+A **Mentett nézetek** funkciót bármely környezetben be- és kikapcsolhatja a Funkciókezelés segítségével. Ha be van kapcsolva, a mentett nézetek minden későbbi felhasználói munkamenetben engedélyezve lesznek.
 
 ### <a name="what-happens-to-existing-personalizations-when-views-are-enabled"></a>Mi történik a meglévő testreszabásokkal a nézetek engedélyezésekor? 
 
@@ -253,6 +224,3 @@ A nagyméretű nézetű választókat tartalmazó lapok esetében (testreszabás
 
 - Ha például egy lapra egy csempéről navigál, akkor a rendszer végrehajtja a csempe lekérdezését az alapértelmezett nézethez társított lekérdezéstől függetlenül. Ha azt követően hozta létre a csempét, hogy a nézeteket már engedélyezték, akkor a csempe választásával megnyílik a lap a csempéhez társított nézettel.
 - Ha egy oldalra navigál, és a belépési pont rendelkezik egy lekérdezéssel, akkor az eredeti lekérdezés kerül végrehajtásra, és nem az alapértelmezett nézet lekérdezése. Erre egy tájékoztató üzenet figyelmeztet, amikor a nézet betöltődik. Megerősítheti az adott nézetre váltást az oldal betöltődése után is, mivel ettől függetlenül engedélyezi a nézet lekérdezésének végrehajtását.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

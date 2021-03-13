@@ -1,6 +1,6 @@
 ---
 title: Adatellenőrzési ellenőrzőlista munkaterülete
-description: Az Adatellenőrzési ellenőrzőlista munkaterülete lehetővé teszi az adatok ellenőrzésének folyamatát a vállalatok, a területek és az emberek között. Az ellenőrzőlistát új implementáció, frissítés vagy áttelepítés után lehet használni.
+description: Az Adatellenőrzési ellenőrzőlista munkaterülete lehetővé teszi az adatok ellenőrzésének folyamatát a vállalatok, a területek és az emberek között.
 author: bking
 manager: AnnBe
 ms.date: 01/12/2018
@@ -14,12 +14,12 @@ ms.reviewer: rhaertle
 ms.assetid: ''
 ms.search.region: Global
 ms.author: bking
-ms.openlocfilehash: a3ac338670fdc9fc7cb526cdcdc1e7199904da8f
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 4e50d4c94c0b8468a80ad214a21c8f5e0dedae71
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687575"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092331"
 ---
 # <a name="data-validation-checklist-workspace"></a>Adatellenőrzési ellenőrzőlista munkaterülete
 
@@ -39,8 +39,7 @@ Az **Összefoglaló** csempéken áttekintheti a folyamatokat, az indikátorok p
 
 A **Feladatok és állapot** szakaszban, az összesített adatellenőrzési projekt különböző módokon jelenik meg: jogi személy szerinti állapot, terület szerinti állapot és feladatlista szerinti állapot. A szűrőt beállíthatja egy kiválasztott vállalat állapotának mutatására is. Minden állapot lap lebontásra kerül a teljesített feladatok százalékos arányára és a hátralevő feladatok számára.
 
-Az utolsó lapon a részletes feladatok listája látható. A listán a teljes feladatlista jelenik meg.
-A feladatlistára számos szűrést alkalmazhat. Kattintson a **Feladat szerkesztése** pontra, ha módosítani szeretné egy feladat állapotát, illetve ki szeretne osztani egy feladatot. Kattintson a **Mellékletek** lehetőségre, ha meg szeretné tekinteni egy feladat mellékleteit.
+Az utolsó lapon a részletes feladatok listája látható. A listán a teljes feladatlista jelenik meg. A feladatlistára számos szűrést alkalmazhat. Kattintson a **Feladat szerkesztése** pontra, ha módosítani szeretné egy feladat állapotát, illetve ki szeretne osztani egy feladatot. Kattintson a **Mellékletek** lehetőségre, ha meg szeretné tekinteni egy feladat mellékleteit.
 
 A feladat neve egy hivatkozás, amely az oldalra mutat, amelyet a felhasználónak fel kell keresnie a feladat befejezéséhez. A **Menüpont neve** mezőben beállíthatja ezt a hivatkozást a feladat **Adatellenőrzési projekt konfigurálása** űrlapon történő szerkesztésekor vagy létrehozásakor.
 
@@ -57,6 +56,3 @@ Az **Adat-ellenőrzési ellenőrzőlista** munkaterület használata előtt konf
 Használhat logikai feladatterületeket a szervezeten belül, csoportos ellenőrzési feladatokhoz. Például a Kötelezettségek, Kinnlevőségek vagy a Főkönyv használható feladatterületként.
 
 A **Menüpont neve** menüelem a feladathoz van rendelve és segítségével közvetlenül a társított oldalara lehet ugrani a feladathivatkozásról a munkaterületen. Például ahhoz, hogy egy adatellenőrzési feladat fusson, a kötelezettségekhez tartozó **Kötelezettségek korosítása** jelentés összekapcsolható a **Kötelezettségek korosítási jelentése** oldallal.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

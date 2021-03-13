@@ -1,6 +1,6 @@
 ---
 title: A konfiguráció feltöltése a Lifecycle Services szolgáltatásba
-description: Ez a témakör leírja, hogy a Rendszergazda vagy az Elektronikus jelentések fejlesztője szerepkörrel rendelkező felhasználó miként hozhat létre új Elektronikus jelentés (ER) konfigurációt, és töltheti fel a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásba.
+description: Ez a témakör egy új Elektronikus jelentéskészítési (ER) konfiguráció létrehozására és Microsoft Dynamics Lifecycle Services (LCS) rendszerbe való feltöltésére szolgáló folyamatot mutatja be.
 author: NickSelin
 manager: AnnBe
 ms.date: 09/14/2020
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2ebafb52882fd33f4f0ef140c5d23d3288af97a2
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 92fc6d7a8b2508c9a1f7b56ca8115adbd6ae00ea
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684163"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092541"
 ---
 # <a name="upload-a-configuration-into-lifecycle-services"></a>A konfiguráció feltöltése a Lifecycle Services szolgáltatásba
 
@@ -145,6 +145,3 @@ Ebben a példában a mintavállalatra, a Litware-ra, Inc.-re vonatkozóan létre
     A feltöltött ER-konfigurációnak listázva kell lennie.
 
     Vegye figyelembe, hogy a feltöltött LCS konfigurációt egy másik példányába importálhatja, ha a szolgáltatók rendelkeznek hozzáféréssel ehhez az LCS projekthez.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

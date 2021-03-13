@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: ff68761ce1cf2174be8ebb9732b9348439a53a32
-ms.sourcegitcommit: d24ebce50421f8656d23bb1e47cd636ad2e2ca0a
+ms.openlocfilehash: e822463ac80be3b1e498f02cb1aad2b214fed815
+ms.sourcegitcommit: b7a7a14f8650913f6797ae1c4a82ad8adfe415fd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "4664296"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "5077477"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>A termelési üzem végrehajtási felületének konfigurálása
 
@@ -65,6 +64,12 @@ Ez a funkció egy gombot vesz fel a termelési üzem végrehajtási felületére
 
 - A feladatkártya-eszköz és a feladatkártya-terminál zárolására alkalmas funkció az eszközök fertőtlenítése érdekében
 
+### <a name="asset-management-functionality-for-the-production-floor-execution-interface"></a>A termelési üzem végrehajtási felületére vonatkozó eszközkezelési funkció
+
+Ez a funkció egy eszközkezelési lapot ad hozzá a termelési üzem végrehajtási felületéhez. A dolgozók ezen a lapon kiválaszthatják azt az eszközt, amely a feladatlista kiválasztott szűrője alatt álló gépi erőforráshoz kapcsolódik. A kijelölt gépi eszköznél a dolgozó megtekintheti az eszköz állapotát és a számlálóértékek alapján, legfeljebb négy kijelölt számláló esetén. Ha használni szeretné ezt a funkciót, kapcsolja be a következő funkciót a [funkciókezelésben](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+
+- A termelési üzem végrehajtási felületére vonatkozó eszközkezelési funkció
+
 ## <a name="work-with-production-floor-execution-configurations"></a>A termelési üzem végrehajtási konfiguációinak használata
 
 Az eszközök konfigurációinak létrehozásához és karbantartásához nyissa meg a **Termelési vezérlő \> Beállítások \> Gyártásvégrehajtás \>Termelési üzem végrehajtásának konfigurálása** elemet. A **Termelési üzem végrehajtásának konfigurálása** lapon látható a meglévő konfigurációk listája. Ezen az oldalon az alábbi műveleteket végezheti:
@@ -94,6 +99,3 @@ A kötegelt feladat időszakonként törli a hivatkozásokat tartalmazó tábla 
 1. A műveleti ablaktáblán válassza az **Ügyfélkonfigurációk megtisztítása** elemet.
 1. Az **Ügyfélkonfigurációk megtisztítása** párbeszédpanelen állítsa be a **Napok száma** mezőt az (aktuális nap előtti) szükséges inaktivitási napok megadásához. A program minden olyan eszköz konfigurációját és bejelentkezési rekordját eltávolítja, amely nem volt aktív a megadott időszakban.
 1. A **Napok száma** beállítás alapján megfelelő konfigurációk megtisztításához kattintson az **OK** gombra.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
