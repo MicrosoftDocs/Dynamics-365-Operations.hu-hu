@@ -2,7 +2,7 @@
 title: Szabadság kérése
 description: Szabadság kérése a Dynamics 365 Human Resources rendszerben.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
@@ -18,47 +18,47 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b034f3bac7264ff96100396cbb45e5b869765ce8
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1bbd662d5d1044e77514318eda00b3dd29dd63b6
+ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418920"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5115222"
 ---
-# <a name="request-time-off"></a><span data-ttu-id="f7b74-103">Szabadság kérése</span><span class="sxs-lookup"><span data-stu-id="f7b74-103">Request time off</span></span>
+# <a name="request-time-off"></a><span data-ttu-id="002c3-103">Szabadság kérése</span><span class="sxs-lookup"><span data-stu-id="002c3-103">Request time off</span></span>
 
-<span data-ttu-id="f7b74-104">A Dynamics 365 Human Resources rendszerben elküldheti a szabadságra vonatkozó kéréseit, megtekintheti a szabadságának és a távollétének egyenlegét, valamint ellenőrizheti a szabadságra vonatkozó kérések állapotát.</span><span class="sxs-lookup"><span data-stu-id="f7b74-104">You can submit requests for time off, view your vacation and leave balances, and see the status of your leave requests in Dynamics 365 Human Resources.</span></span>
+<span data-ttu-id="002c3-104">A Dynamics 365 Human Resources rendszerben elküldheti a szabadságra vonatkozó kéréseit, megtekintheti a szabadságának és a távollétének egyenlegét, valamint ellenőrizheti a szabadságra vonatkozó kérések állapotát.</span><span class="sxs-lookup"><span data-stu-id="002c3-104">You can submit requests for time off, view your vacation and leave balances, and see the status of your leave requests in Dynamics 365 Human Resources.</span></span>
 
-## <a name="request-time-off"></a><span data-ttu-id="f7b74-105">Szabadság kérése</span><span class="sxs-lookup"><span data-stu-id="f7b74-105">Request time off</span></span>
+## <a name="request-time-off"></a><span data-ttu-id="002c3-105">Szabadság kérése</span><span class="sxs-lookup"><span data-stu-id="002c3-105">Request time off</span></span>
 
-1. <span data-ttu-id="f7b74-106">Az **Alkalmazotti önkiszolgáló rendszer** munkaterületen válassza a **Szabadság kérése** lehetőséget a **Szabadságegyenlegek** csempén.</span><span class="sxs-lookup"><span data-stu-id="f7b74-106">In the **Employee self service** workspace, select **Request time off** in the **Time Off Balances** tile.</span></span>
+1. <span data-ttu-id="002c3-106">Az **Alkalmazotti önkiszolgáló rendszer** munkaterületen válassza a **Szabadság kérése** lehetőséget a **Szabadságegyenlegek** csempén.</span><span class="sxs-lookup"><span data-stu-id="002c3-106">In the **Employee self service** workspace, select **Request time off** in the **Time Off Balances** tile.</span></span>
 
-2. <span data-ttu-id="f7b74-107">Adja meg a megfelelő adatot a **Szabadság típusa**, az **Okkód**, a **Kezdő dátum** és a **Záró dátum** mezőben.</span><span class="sxs-lookup"><span data-stu-id="f7b74-107">Enter information for **Leave type**, **Reason code**, **Start date**, and **End date**.</span></span>
+2. <span data-ttu-id="002c3-107">Adja meg a megfelelő adatot a **Szabadság típusa**, az **Okkód**, a **Kezdő dátum** és a **Záró dátum** mezőben.</span><span class="sxs-lookup"><span data-stu-id="002c3-107">Enter information for **Leave type**, **Reason code**, **Start date**, and **End date**.</span></span>
 
-3. <span data-ttu-id="f7b74-108">A **Dátumok** beállításnál válassza ki a szabadságkérelem dátumait.</span><span class="sxs-lookup"><span data-stu-id="f7b74-108">Under **Dates**, select the dates for your leave request.</span></span>
+3. <span data-ttu-id="002c3-108">A **Dátumok** beállításnál válassza ki a szabadságkérelem dátumait.</span><span class="sxs-lookup"><span data-stu-id="002c3-108">Under **Dates**, select the dates for your leave request.</span></span>
 
-4. <span data-ttu-id="f7b74-109">Ha be bármilyen kiegészítő dokumentációt kell elküldenie, akkor a **Mellékletek** beállításnál válassza a **Feltöltés** elemet.</span><span class="sxs-lookup"><span data-stu-id="f7b74-109">If you need to submit any supporting documentation, select **Upload** under **Attachments**.</span></span>
+4. <span data-ttu-id="002c3-109">Ha be bármilyen kiegészítő dokumentációt kell elküldenie, akkor a **Mellékletek** beállításnál válassza a **Feltöltés** elemet.</span><span class="sxs-lookup"><span data-stu-id="002c3-109">If you need to submit any supporting documentation, select **Upload** under **Attachments**.</span></span>
 
-5. <span data-ttu-id="f7b74-110">A **Megjegyzés** mezőbe írjon megjegyzést, ha szükséges.</span><span class="sxs-lookup"><span data-stu-id="f7b74-110">Enter information in **Comment**, if needed.</span></span>
+5. <span data-ttu-id="002c3-110">A **Megjegyzés** mezőbe írjon megjegyzést, ha szükséges.</span><span class="sxs-lookup"><span data-stu-id="002c3-110">Enter information in **Comment**, if needed.</span></span>
 
-6. <span data-ttu-id="f7b74-111">Ha elkészült, válassza a **Küldés** elemet a kérés elküldéséhez.</span><span class="sxs-lookup"><span data-stu-id="f7b74-111">Select **Submit** when you're ready to submit your request.</span></span> <span data-ttu-id="f7b74-112">Ellenkező esetben válassza a **Mentés vázlatként** elemet.</span><span class="sxs-lookup"><span data-stu-id="f7b74-112">Otherwise, select **Save draft**.</span></span>
+6. <span data-ttu-id="002c3-111">Ha elkészült, válassza a **Küldés** elemet a kérés elküldéséhez.</span><span class="sxs-lookup"><span data-stu-id="002c3-111">Select **Submit** when you're ready to submit your request.</span></span> <span data-ttu-id="002c3-112">Ellenkező esetben válassza a **Mentés vázlatként** elemet.</span><span class="sxs-lookup"><span data-stu-id="002c3-112">Otherwise, select **Save draft**.</span></span>
 
-## <a name="add-an-attachment-to-an-existing-request"></a><span data-ttu-id="f7b74-113">Melléklet hozzáadása egy meglévő kéréshez</span><span class="sxs-lookup"><span data-stu-id="f7b74-113">Add an attachment to an existing request</span></span>
+## <a name="add-an-attachment-to-an-existing-request"></a><span data-ttu-id="002c3-113">Melléklet hozzáadása egy meglévő kéréshez</span><span class="sxs-lookup"><span data-stu-id="002c3-113">Add an attachment to an existing request</span></span>
 
-<span data-ttu-id="f7b74-114">Ha egy már létező szabadságkérést frissít, hozzáadhat egy mellékletet.</span><span class="sxs-lookup"><span data-stu-id="f7b74-114">When updating an existing time off request, you can add an attachment.</span></span> <span data-ttu-id="f7b74-115">Egy adott dátumhoz tartozó összes vonatkozó kérelmet is megtekintheti.</span><span class="sxs-lookup"><span data-stu-id="f7b74-115">You can also see all of the related requests for a specific date.</span></span> 
+<span data-ttu-id="002c3-114">Ha egy már létező szabadságkérést frissít, hozzáadhat egy mellékletet.</span><span class="sxs-lookup"><span data-stu-id="002c3-114">When updating an existing time off request, you can add an attachment.</span></span> <span data-ttu-id="002c3-115">Egy adott dátumhoz tartozó összes vonatkozó kérelmet is megtekintheti.</span><span class="sxs-lookup"><span data-stu-id="002c3-115">You can also see all of the related requests for a specific date.</span></span> 
 
-## <a name="view-leave-balances"></a><span data-ttu-id="f7b74-116">Szabadságegyenlegek megjelenítése</span><span class="sxs-lookup"><span data-stu-id="f7b74-116">View leave balances</span></span>
+## <a name="view-leave-balances"></a><span data-ttu-id="002c3-116">Szabadságegyenlegek megjelenítése</span><span class="sxs-lookup"><span data-stu-id="002c3-116">View leave balances</span></span>
 
-1. <span data-ttu-id="f7b74-117">Az **Alkalmazotti önkiszolgáló rendszer** munkaterületen válassza a **Részletek** (...) lehetőséget a **Szabadságegyenlegek** csempén.</span><span class="sxs-lookup"><span data-stu-id="f7b74-117">In the **Employee self service** workspace, select **More** (...) in the **Time Off Balances** tile.</span></span>
+1. <span data-ttu-id="002c3-117">Az **Alkalmazotti önkiszolgáló rendszer** munkaterületen válassza a **Részletek** (...) lehetőséget a **Szabadságegyenlegek** csempén.</span><span class="sxs-lookup"><span data-stu-id="002c3-117">In the **Employee self service** workspace, select **More** (...) in the **Time Off Balances** tile.</span></span>
 
-2. <span data-ttu-id="f7b74-118">Válassza az **Egyenlegek** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="f7b74-118">Select **Balances**.</span></span>
+2. <span data-ttu-id="002c3-118">Válassza az **Egyenlegek** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="002c3-118">Select **Balances**.</span></span>
 
-## <a name="view-leave-request-status"></a><span data-ttu-id="f7b74-119">Szabadságkérelem állapotának megtekintése</span><span class="sxs-lookup"><span data-stu-id="f7b74-119">View leave request status</span></span>
+## <a name="view-leave-request-status"></a><span data-ttu-id="002c3-119">Szabadságkérelem állapotának megtekintése</span><span class="sxs-lookup"><span data-stu-id="002c3-119">View leave request status</span></span>
 
-1. <span data-ttu-id="f7b74-120">Az **Alkalmazotti önkiszolgáló rendszer** munkaterületen válassza a **Részletek** (...) lehetőséget a **Szabadságegyenlegek** csempén.</span><span class="sxs-lookup"><span data-stu-id="f7b74-120">In the **Employee self service** workspace, select **More** (...) in the **Time Off Balances** tile.</span></span>
+1. <span data-ttu-id="002c3-120">Az **Alkalmazotti önkiszolgáló rendszer** munkaterületen válassza a **Részletek** (...) lehetőséget a **Szabadságegyenlegek** csempén.</span><span class="sxs-lookup"><span data-stu-id="002c3-120">In the **Employee self service** workspace, select **More** (...) in the **Time Off Balances** tile.</span></span>
 
-2. <span data-ttu-id="f7b74-121">A jóváhagyott szabadságkérelmek megtekintéséhez válassza a **Jóváhagyott szabadság** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="f7b74-121">To view your approved time-off requests, select **Approved time off**.</span></span> <span data-ttu-id="f7b74-122">A függőben lévő szabadságkérelmek megtekintéséhez válassza a **Szabadságkérelmek** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="f7b74-122">To view your pending time-off requests, select **Time off requests**.</span></span>
+2. <span data-ttu-id="002c3-121">A jóváhagyott szabadságkérelmek megtekintéséhez válassza a **Jóváhagyott szabadság** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="002c3-121">To view your approved time-off requests, select **Approved time off**.</span></span> <span data-ttu-id="002c3-122">A függőben lévő szabadságkérelmek megtekintéséhez válassza a **Szabadságkérelmek** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="002c3-122">To view your pending time-off requests, select **Time off requests**.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="f7b74-123">Lásd még</span><span class="sxs-lookup"><span data-stu-id="f7b74-123">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="002c3-123">Lásd még</span><span class="sxs-lookup"><span data-stu-id="002c3-123">See also</span></span>
 
-- [<span data-ttu-id="f7b74-124">Szabadság és távollét áttekintése</span><span class="sxs-lookup"><span data-stu-id="f7b74-124">Leave and absence overview</span></span>](hr-leave-and-absence-overview.md)
+- [<span data-ttu-id="002c3-124">Szabadság és távollét áttekintése</span><span class="sxs-lookup"><span data-stu-id="002c3-124">Leave and absence overview</span></span>](hr-leave-and-absence-overview.md)
