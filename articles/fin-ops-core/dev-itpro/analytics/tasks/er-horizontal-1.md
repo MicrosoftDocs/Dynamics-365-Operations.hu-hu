@@ -1,6 +1,6 @@
 ---
 title: ER Vízszintesen bővíthető tartományok használata oszlopok Excel-kimutatásokba történő dinamikus hozzáadásához (1. rész – Formátum kialakítása)
-description: Az alábbi útmutató azt ismerteti, hogy a rendszergazda vagy elektronikus jelentésfejlesztői szerepkörhöz hozzárendelt felhasználó hogyan konfigurálhat elektronikus jelentési (ER) formátumot jelentések létrehozásához OPENXML munkalap (Excel) fájlok formájában, amelyekben a szükséges oszlopok vízszintesen bővíthető tartományokként, dinamikusan hozhatók létre.
+description: Ez a témakör azt mutatja be, hogyan kell konfigurálni egy Elektronikus jelentéskészítési (ER) formátumot jelentések OPENXML-munkalap (Excel) fájlként történő generálásához. (1. rész)
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e36a2238ab4c67a2384d6da2a1e2c767414c21a1
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: a3281f3059562fd34f9ccb71a6a11f64bf664008
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684499"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093501"
 ---
 # <a name="er-use-horizontally-expandable-ranges-to-dynamically-add-columns-in-excel-reports-part-1---design-format"></a>ER Vízszintesen bővíthető tartományok használata oszlopok Excel-kimutatásokba történő dinamikus hozzáadásához (1. rész – Formátum kialakítása)
 
@@ -148,6 +148,3 @@ Az eljárás egy olyan szolgáltatáshoz tartozik, amely a Dynamics 365 for Oper
 49. Kattintson a Mentés gombra.
 50. Zárja be a lapot.
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

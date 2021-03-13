@@ -1,6 +1,6 @@
 ---
 title: Modell-leképezési konfigurációk használata összesítő számítások létrehozásához az adatbázis szintjén
-description: A folyamat révén új, elektronikus jelentésen (ER) alapuló modell-leképezési konfigurációt tervezhet meg, és a beépített ER-funkciók segítségével hatékony összesített számításokat végezhet.
+description: Ez a témakör leírja, hogyan tervezhet meg egy új, elektronikus jelentésen (ER) alapuló modell-leképezési konfigurációt, illetve végezhet összesített számításokat a beépített ER-funkciók segítségével.
 author: NickSelin
 manager: AnnBe
 ms.date: 12/12/2017
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f1c4ddf0fac5ba962c3dab545bfa7e0df4afa948
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 6a392697f6b91bc6555d0d72d09ecd7da32e1a3f
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684115"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5094265"
 ---
 # <a name="use-model-mapping-configurations-for-aggregate-calculations-at-the-database-level"></a>Modell-leképezési konfigurációk használata összesítő számítások létrehozásához az adatbázis szintjén
 
@@ -116,6 +116,3 @@ Ez az eljárás a Rendszergazda vagy az Elektronikus jelentések fejlesztője sz
 68. Kattintson a Mentés gombra.
     * Vegye figyelembe, hogy a Végrehajtás helye mező azt mutatja, hogy a csoportosításra a memória futásidőben kerül sor annak ellenére, hogy nincsenek definiálva aggregációk, és a Tábla rekordjai típus az Intrastat tábla megfelelő értékeire vonatkozik. Ennek oka az, hogy az adatforrás tartalmaz néhány olyan számított mezőt, amelyeket még nem lehet átszámítani az SQL-adatbázis szintjére.  
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -11,33 +11,22 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 97423
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 5a883011bbff6d82504497d739c07f1ada9e5f69
-ms.sourcegitcommit: f860ac2b18f6bbbfc4a46b497baec2477105b116
+ms.openlocfilehash: d076aa5230437d1ef90f6b46d49ee4dea526db24
+ms.sourcegitcommit: e88c96d1cb817a22db81856cadb563c095ab2671
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "4444155"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "5104229"
 ---
 # <a name="create-an-azure-storage-account-and-a-key-vault"></a>Hozzon létre Azure tárfiókot és egy kulcstartót
 
 [!include [banner](../includes/banner.md)]
-
-
-
-Az Elektronikus számlázásbővítmény szolgáltatás a felelős a vállalat tulajdonában lévő Microsoft Azure-erőforrásokban lévő összes üzleti adatának tárolásáért. Ha biztosítani szeretné, hogy a szolgáltatás megfelelően működjön, és hogy az elektronikus számlázásbővítményhez szükséges, illetve az általa létrehozott összes üzleti adat csak a bővítmény számára legyen érhető el, akkor két fő Azure-erőforrást kell létrehoznia:
-
-- Az elektronikus számlák tárolásához szükséges Azure tárfiókot (Blob-tároló)
-- Egy Azure-kulcstartót a tanúsítványok és a tárolási fiók Uniform Resource Identifier (URI) tárolásához
-
-> [!NOTE]
-> A dedikált kulcstartó-erőforrást és a vevői Blob-tárolót kifejezetten az Elektronikus számlázásbővítménnyel történő használatra kell felosztani.
 
 ## <a name="prerequisites"></a>Előfeltételek
 
@@ -91,6 +80,3 @@ Ebben a témakörben két fő lépést kell végrehajtania:
 9. A **Rendszerbiztonsági tag** párbeszédpanelen válassza ki a rendszerbiztonsági tagot az **Elektronikus számlázásbővítmény** hozzáadásával.
 10. Válassza a **Hozzáadás** lehetőséget, majd a **Key Vault-módosítások mentése** elemet.
 11. Az **Áttekintés** oldalról másolja át a **DNS név** lehetőséghez tartozó kulcstartó értékét. Ezt az értéket fogják használni a szolgáltatás RCS-ben történő beállításakor, illetve *kulcstartó URI* néven fognak rá hivatkozni.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

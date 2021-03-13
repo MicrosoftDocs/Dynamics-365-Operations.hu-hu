@@ -1,9 +1,9 @@
 ---
 title: Elektronikus jelentéskészítés (ER) áttekintése
-description: Ez a témakör az Elektronikus jelentéskészítés eszközről nyújt áttekintést. Tájékoztatást nyújt az alapfogalmakról, az Elektronikus jelentéskészítés által támogatott esetekről, valamint az Elektronikus jelentéskészítés megoldás részeként megtervezett és kibocsátott formátumok listájáról.
+description: Ez a témakör az Elektronikus jelentéskészítési eszközről nyújt áttekintést. Alapvető fogalmakat, támogatott eseteket és a megoldás részét képező formátumokat ír le.
 author: NickSelin
 manager: AnnBe
-ms.date: 07/25/2019
+ms.date: 12/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e40aa168c296af86721862d1751212d16d47bd49
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 33d399c6a9051097d3ea0c7990a37302395d9c77
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682599"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093926"
 ---
 # <a name="electronic-reporting-er-overview"></a>Elektronikus jelentéskészítés (ER) áttekintése
 
@@ -37,6 +37,7 @@ Az ER-motor a fejlesztők helyett az üzleti felhasználóknak készült. Mivel 
 Az ER jelenleg a TEXT, XML, Microsoft Word dokumentumokat és OPENXML munkalap-formátumokat támogatja. Azonban egy kiterjesztési felület további formátumok támogatását biztosítja.
 
 ## <a name="capabilities"></a>Képességek
+
 Az ER motor a következő képességekkel rendelkezik:
 
 - Egyetlen megosztott eszközt képvisel a különböző tartományokban történő elektronikus jelentésekhez, és több mint 20 különböző motort helyettesít, amelyek az elektronikus jelentés valamely típusára képesek a Finance and Operations-ben.
@@ -46,6 +47,7 @@ Az ER motor a következő képességekkel rendelkezik:
 - Támogatja a formátumok elosztását a partnerek és a vevők részére, a Microsoft Dynamics Lifecycle Services (LCS) rendszeren keresztül.
 
 ## <a name="key-concepts"></a>Alapfogalmak
+
 ### <a name="components"></a>Összetevők
 
 Az ER két összetevő-típust támogat: **Adatmodell** és **Formátum**.
@@ -71,7 +73,6 @@ A modell-hozzárendelés, amely támogatja a kimenő elektronikus dokumentumokat
 - Használhat különböző adattípusokat az adatmodell adatforrásaként. Használhat például táblázatokat, adatentitásokat, módszereket vagy felsorolásokat.
 - Olyan felhasználói bemeneti paramétereket támogat, amelyeket meghatározhat az adatmodell adatforrásaiként, amikor bizonyos adatokat a futási időben kell megadni.
 - Támogatja az adatok átalakítását a szükséges csoportokba. Az adatok szűrését, rendezését és összegzését is lehetővé teszi, továbbá logikai számított mezők hozzáfűzését a Microsoft Excel képleteihez hasonló képletekkel. További tudnivalókért lásd: [Képletszerkesztő elektronikus jelentéskészítésben (ER)](general-electronic-reporting-formula-designer.md).
-
 
 A modell-hozzárendelés, amely támogatja a bejövő elektronikus dokumentumokat, a következő lehetőségeket kínálja:
 
@@ -107,6 +108,7 @@ A következő ábra azt mutatja, hogy hogyan áramlanak az adatok ezeknek a form
 Egyetlen ER-formátumkonfiguráció futtatásához és egy kimenő elektronikus dokumentum létrehozásához meg kell adni a formátumkonfiguráció hozzárendelését.
 
 #### <a name="format-components-for-incoming-electronic-documents"></a><a name="FormatComponentInbound"></a>Bejövő elektronikus dokumentumok komponensformázása
+
 A formátum-összetevő a futásidőben importált bejövő dokumentum sémája. A rendszer az alábbi elemekből áll:
 
 - Egy formátumból, amely a bejövő, adatokat tartalmazó elektronikus dokumentum futásidőben importált struktúráját és tartalmát határozza meg Egy formátum-összetevőből, amely különböző formátumú bejövő dokumentumok elemzésére szolgál: ilyen például a szöveg és az XML.
@@ -196,6 +198,7 @@ Az **Operations-erőforrások** tárház hozzáférést biztosít azon konfigur�
 A szükséges **LCS-projekt**, **Fájlrendszer**, és **Jogszabályban előírt konfigurációs szolgáltatás** adattárakat külön-külön is lehet regisztrálni az aktuális példány minden egyes konfigurációs szolgáltatójára. Minden tárház hozzárendelhető egy bizonyos konfigurációs szolgáltatóhoz.
 
 ## <a name="supported-scenarios"></a>Támogatott esetek
+
 ### <a name="building-a-data-model"></a>Adatmodell létrehozása
 
 Az ER modelltervezőt biztosít egy bizonyos üzleti tartomány adatmodelljeinek építésére. Minden tartományspecifikus üzleti entitás és a köztük lévő kapcsolat beállítható adatmodellként egy hierarchikus struktúrában. 
@@ -216,6 +219,7 @@ Az ER biztosít egy modell-leképezés tervezőt, amely lehetővé teszi a felha
 Az ezen forgatókönyv részleteinek megismeréséhez hajtsa végre az **ER modellfeltérképezés definiálása és adatforrások kiválasztása** feladatot, majd az **ER adatmodellezés térkép a kiválasztott adatforrásokhoz** feladatútmutatókat (a **7.5.4.3 IT szolgáltatás/megoldás megszerzése/kifejlesztése elemek (10677)** üzleti folyamat része)
 
 ### <a name="configuring-data-model-mappings-for-incoming-documents"></a>A bejövő dokumentumok adatmodell hozzárendeléseinek beállítása
+
 Az ER biztosít egy modell-leképezés tervezőt, amely lehetővé teszi a felhasználó számára az általuk specifikus célokhoz tervezett adatmodellek leképezését. Az adatmodellek például frissíthető adatösszetevőkhöz (táblák, adatentitások és nézetek) rendelhetők. A leképezés alapján a rendszer futásidőben frissíti az adatokat, az adatmodellből származó adatok felhasználásával. Az ER-formátum absztrakt tárolásaként az adatmodell ki van töltve a bejövő elektronikus dokumentumból importált adatokkal. 
 
 ### <a name="storing-a-designed-model-component-as-a-model-configuration"></a>A létrehozott modell-összetevő tárolása modell-konfigurációként
@@ -237,6 +241,7 @@ Az ER formátumtervezővel elektronikus dokumentumok hozhatók létre OPENXML mu
 Ahhoz, hogy megismerje ennek a folyamatnak a részleteit hajtsa végre az **ER jelentés konfigurálása OPENXML formátumban** című feladat-útmutatót (a **7.5.4.3 Informatikai szolgáltatások/megoldások összetevőinek beszerzése/kifejlesztése (10677)** üzleti folyamat része). A sablon importálása feladatútmutató lépésének részeként használja a következőt: [Kifizetési jelentés mintája (SampleVendPaymWsReport.xlsx)](https://go.microsoft.com/fwlink/?linkid=845202) Excel-fájl sablonként.
 
 ### <a name="building-a-configuration-to-generate-electronic-documents-in-a-word-document-format"></a>A Word-dokumentum formátumban elektronikus dokumentumok létrehozásához egy konfigurációkészlet létrehozása
+
 Az ER formátumtervezővel elektronikus dokumentumok hozhatók létre Word-dokumentum formátumban. A következő ábrán egy példa látható az ilyen típusú formátumra. Fontos, hogy ez a formátum újrahasznosítja a meglévő ER-konfigurációt, amelyet eredetileg a jelentés OPENXML-formátumban történő előállítására terveztek.
 
 Ahhoz, hogy megismerje ennek a folyamatnak a részleteit, hajtsa végre A Microsoft WORD formátumban létrejövő jelentésekre vonatkozó konfigurációk tervezése című feladat-útmutatót (a 7.5.4.3 Informatikai szolgáltatások/megoldások összetevőinek beszerzése/kifejlesztése (10677) üzleti folyamat része). A sablon importálása feladatútmutató lépésének részeként használja a következő Word-fájlokat sablonként az ER-formátumhoz:
@@ -245,6 +250,7 @@ Ahhoz, hogy megismerje ennek a folyamatnak a részleteit, hajtsa végre A Micros
 - [Kifizetési jelentés bekötött sablonja (SampleVendPaymDocReportBounded.docx)](https://go.microsoft.com/fwlink/?linkid=845202)
 
 ### <a name="building-a-configuration-to-import-data-from-incoming-electronic-documents"></a>Konfigurációs létrehozása az adatok importálásához a bejövő elektronikus dokumentumokból
+
 Az ER-formátumtervezővel XML vagy szöveg formátumban írhatók le az adatimportáláshoz használni kívánt elektronikus dokumentumok. A tervezett formátumot használjuk a bejövő dokumentum elemzéséhez. Az ER formátumleképezés-tervező használható a tervezett formátum elemeinek a kötéséhez az adatmodellhez. 
 
 Ahhoz, hogy megismerje ennek a folyamatnak a részleteit, hajtsa végre a Szükséges ER-konfigurációk létrehozása adatok importálásához egy külső fájlból című feladat-útmutatót (a 7.5.4.3 Informatikai szolgáltatások/megoldások összetevőinek beszerzése/kifejlesztése (10677) üzleti folyamat része). Az útmutató végrehajtásához használja a következő fájlokat:
@@ -265,6 +271,7 @@ Az alkalmazás beállítható úgy, hogy az elektronikus jelentések generálás
 Játssza le az **ER formátum használata elektronikus dokumentumok létrehozására a fizetésekhez** című feladatútmutatót (a **7.5.4.3 Informatikai szolgáltatások/megoldások összetevőinek beszerzése/kifejlesztése (10677)** üzleti folyamat része), hogy megismerje ennek az esetnek a részleteit.
 
 ## <a name="handling-er-components"></a>ER-összetevők kezelése
+
 ### <a name="publishing-an-er-component-in-lcs-to-offer-it-externally-localization"></a>ER-összetevő közzététele az LCS-ben külső használatra (lokalizáció)
 
 A létrehozott összetevő (modell vagy formátum) tulajdonosa az ER segítségével közzé tudja tenni az összetevő kész verzióját az LCS-ben. Ehhez a folyamathoz az **LCS projekt** típus tárháza szükséges az aktuális ER konfigurációs szolgáltatónál. Ha az összetevő kész verziója **KÉSZ** státuszról **MEGOSZTOTT** státuszra módosul, a verziót közzéteszi a rendszer az LCS-ben. Ha egy összetevőt közzétettünk az LCS-ben, az összetevő tulajdonosa szolgáltatóvá válik az összetevő támogatása céljából. Például ha ezt a formátum-összetevőt egy jogilag kötelező elektromos dokumentum létrehozására tervezték (például a lokalizációs esettel összhangban), ez a szolgáltatás feltételezi azt, hogy ez a formátum megfelel a jogszabályi változtatásoknak és új verziókat tesz közzé, amikor az új jogszabályi követelményeket kell támogatni. Ahhoz, hogy megismerje ennek a folyamatnak a részleteit hajtsa végre az **ER konfiguráció feltöltése a Lifecycle Services-be** című feladat-útmutatót (a **7.5.4.3 Informatikai szolgáltatások/megoldások összetevőinek beszerzése/kifejlesztése (10677)** üzleti folyamat része).
@@ -281,92 +288,13 @@ Az ER segítségével létrehozhat (származtathat) egy új komponenst az LCS-b�
 
 Az ER automatikusan igazodik az alapösszetevő legújabb verziójához a származtatott összetevő jelenlegi vázlat-verziójában. Ennek a folyamatnak a neve *új alap* megadása. Például az LCS-ből importált formátum-összetevő legújabb verziójában megjelent új szabályozási módosítások automatikusan összevonhatók az elektronikus dokumentum a saját testreszabott verziójával. Az automatikusan nem egyesíthető módosítások ütközésnek minősülnek. Ezek az ütközések a megfelelő összetevőhöz tartozó tervezőeszközben manuális megoldásra megjelennek. Hajtsa végre az **ER formátum frissítése új alapverzió használatával** című feladatútmutatót (a **7.5.5.3 Módosított informatikai szolgáltatások/megoldások összetevőinek beszerzése/kifejlesztése (10683)** üzleti folyamat része), hogy megismerje ennek az esetnek a részleteit.
 
-## <a name="list-of-er-configurations-that-are-delivered-in-the-finance-application"></a>A Finance alkalmazás megoldásra küldött ER-konfigurációk listája
+## <a name="list-of-er-configurations-that-have-been-released-in-finance"></a><a name="list-of-configurations"></a>A Finance alkalmazásban kiadott ER-konfigurációk listája
 
-| Tartományspecifikus adatmodell-konfigurációk: Cím | Tartomány                | Adatmodell-függő formátumkonfigurációk: Cím | Leírás                                                        |
-|--------------------------------------------------|-----------------------|---------------------------------------------------|--------------------------------------------------------------------|
-| Könyvvizsgálati fájlmodell                                 | Pénzügyi ellenőrzés       |                                                   |                                                                    |
-|                                                  |                       | Könyvvizsgálati fájl (NL)                                   | Holland könyvvizsgálati fájlformátum                                  |
-| BAS modell                                        | Adójelentés         |                                                   |                                                                    |
-|                                                  |                       | BAS (AU)                                          | Ausztrál BAS formátum                                           |
-| Építőipari sémamodell               | Adójelentés         |                                                   |                                                                    |
-|                                                  |                       | CIS havi visszáru (UK)                           | Egyesült Királyság-beli havi CIS visszatérítése formátum                   |
-| Fizetési felszólítás modell                          | Elektronikus számlázás  |                                                   |                                                                    |
-|                                                  |                       | OIOUBL Fizetési felszólítás (DK)                     | Dán OIOUBL fizetési felszólítás formátum                        |
-| Elektronikus főkönyvi számlamodell (MX)          | Adójelentés         |                                                   |                                                                    |
-|                                                  |                       | Kiegészítő főkönyv XML (MX)                         | Mexikói számlajelentésekhez tartozó kiegészítő főkönyvi tranzakcióformátum |
-|                                                  |                       | Számlatükör XML (MX)                         | Mexikói számlatükör-jelentés formátum                          |
-|                                                  |                       | Naplók XML (MX)                                 | Mexikói naplótranzakciók jelentésformátuma                      |
-|                                                  |                       | Főkönyvi kivonat XML (MX)                            | Mexikói főkönyvi kivonat jelentésformátuma                             |
-| Elster-modell                                     | Adójelentés         |                                                   |                                                                    |
-|                                                  |                       | Elster (DE)                                       | Német Elster formátum                                          |
-| EU értékesítési lista modell                              | Kereskedelmi jelentés       |                                                   |                                                                    |
-|                                                  |                       | EU értékesítési lista (DE)                                | Német EU-s értékesítési lista TXT-formátumban                               |
-|                                                  |                       | EU értékesítési lista (DK)                                | Dán EU-s értékesítési lista TXT-formátumban                               |
-|                                                  |                       | EU értékesítési lista (FR)                                | Francia EU-s értékesítési lista XML-formátumban                                |
-|                                                  |                       | EU értékesítési lista (NL)                                | Holland EU-s értékesítési lista XML-formátumban                           |
-|                                                  |                       | EU értékesítési lista TXT-formátumban (UK)                            | Egyesült Királyság-beli EU-s értékesítési lista TXT-formátumban                    |
-|                                                  |                       | EU értékesítési lista XML-formátumban (UK)                            | Egyesült Királyság-beli EU-s értékesítési lista XML-formátumban                    |
-|                                                  |                       | EU értékesítési lista oszlopok szerinti jelentés                   | EU értékesítési lista oszlopok szerinti jelentés                                    |
-|                                                  |                       | EU értékesítési lista sorok szerinti jelentés                      | EU értékesítési lista sorok szerinti jelentés                                       |
-| FEC Könyvelési modell (FR)                        | Adójelentés         |                                                   |                                                                    |
-|                                                  |                       | FEC könyvelési adat XML-formátumban (FR)                      | FEC könyvelési adatok exportálása XML-formátumban, Franciaország                   |
-| Német könyvvizsgálati fájl                                | Pénzügyi ellenőrzés       |                                                   |                                                                    |
-|                                                  |                       | Német könyvvizsgálati kimeneti fájl                          | Németország és Ausztria kimeneti fájl                          |
-| Intrastat modell                                  | Kereskedelmi jelentés       |                                                   |                                                                    |
-|                                                  |                       | Intrastat (DE)                                    | Német Intrastat formátum                                       |
-|                                                  |                       | Intrastat (DK)                                    | Dán Intrastat formátum                                       |
-|                                                  |                       | Intrastat INTRACOM (FR)                           | Francia INTRACOM formátum                               |
-|                                                  |                       | Intrastat SAISUNIC (FR)                           | Francia SAISUNIC formátum                               |
-|                                                  |                       | Intrastat (NL)                                    | Holland Intrastat formátum                               |
-|                                                  |                       | Intrastat (UK)                                    | Egyesült Királyság-beli Intrastat formátum                            |
-|                                                  |                       | Intrastat jelentés                                  | Intrastat Excel kontrolljelentés                                     |
-| Vevői számlamodell                           | Elektronikus számlázás  |                                                   |                                                                    |
-|                                                  |                       | OIOUBL Projektjóváírás (DK)                   | Dán OIOUBL projektjóváírási formátum                      |
-|                                                  |                       | OIOUBL Projektszámla (DK)                       | Dán OIOUBL projektszámla formátum                          |
-|                                                  |                       | OIOUBL Értékesítési jóváírás (DK)                     | Dán OIOUBL értékesítési jóváírás formátuma                        |
-|                                                  |                       | OIOUBL Eladási számla (DK)                         | Dán OIOUBL eladási számlaformátum                            |
-| OB nyilatkozatmodell                             | Adójelentés         |                                                   |                                                                    |
-|                                                  |                       | OB nyilatkozat (NL)                               | Holland OB nyilatkozat formátum                          |
-| Fizetési modell                                    | Fizetések              |                                                   |                                                                    |
-|                                                  |                       | Betalingsservice (DK)                             | Dán Betalingsservice fizetési formátum                        |
-|                                                  |                       | Váltó átutalása (FR)                  | Váltó átutalása formátum, Franciaország                      |
-|                                                  |                       | BTL91 (NL)                                        | Holland BTL91 szállítói kifizetés formátum                    |
-|                                                  |                       | CFONB Prelevements (FR)                           | CFONB beszedési megbízás formátum, Franciaország                       |
-|                                                  |                       | CFONB Virements (FR)                              | CFONB hazai szállítói kifizetés, Franciaország                    |
-|                                                  |                       | Nordea-szállító (DK)                                | Dán Nordea vállalati netbankos szállítói kifizetési formátum         |
-|                                                  |                       | ANZ közvetlen jóváírási szolgáltatás (AU)                    | Ausztrál ANZ közvetlen kifizetési szolgáltatás formátum                 |
-|                                                  |                       | CBA közvetlen jóváírási szolgáltatás (AU)                    | Ausztrál CBA közvetlen kifizetési szolgáltatás formátum                 |
-|                                                  |                       | NAB közvetlen jóváírási szolgáltatás (AU)                    | Ausztrál NAB közvetlen kifizetési szolgáltatás formátum                 |
-|                                                  |                       | STG közvetlen jóváírási szolgáltatás (AU)                    | Ausztrál STG közvetlen kifizetési szolgáltatás formátum                 |
-|                                                  |                       | WBC közvetlen bejegyzési rendszer (AU)                      | Ausztrál WBC közvetlen bejegyzési rendszer formátum                   |
-|                                                  |                       | DirectLink (NZ)                                   | Új-zélandi DirectLink formátum                              |
-|                                                  |                       | JBA Fizetési fájl (JP)                             | Japán JBA fizetési formátum                                       |
-|                                                  |                       | ISO20022 Jóváírás átutalása                          | Európai SEPA jóváírásátviteli formátum                             |
-|                                                  |                       | ISO20022 Jóváírásátutalás (FR)                     | Francia SEPA jóváírásátviteli formátum                             |
-|                                                  |                       | ISO20022 Jóváírásátutalás (DE)                     | Német SEPA jóváírásátviteli formátum                            |
-|                                                  |                       | ISO20022 Jóváírásátutalás (NL)                     | Holland SEPA jóváírásátviteli formátum                    |
-|                                                  |                       | ISO20022 Beszedési megbízás                             | Európai SEPA beszedési formátum                                |
-|                                                  |                       | ISO20022 Beszedési megbízás (FR)                        | Francia SEPA beszedési megbízás formátum                                |
-|                                                  |                       | ISO20022 Beszedési megbízás (DE)                        | Német SEPA beszedési megbízás formátum                               |
-|                                                  |                       | ISO20022 Beszedési megbízás (NL)                        | Holland SEPA beszedési megbízás formátum                       |
-|                                                  |                       | BACS (UK)                                         | Egyesült Királyság-beli BACS szállítói visszatérítés formátum                  |
-| Fordított fizetés                                   | Adójelentés         |                                                   |                                                                    |
-|                                                  |                       | Fordított fizetési értékesítési lista                         | Fordított fizetési értékesítési lista formátum                                   |
-| Holland XBRL integrációs modell                     | XBRL-jelentéskészítés        |                                                   |                                                                    |
-|                                                  |                       | Semansys XBRL (NL)                                | Holland Semansys XBRL exportálási formátum                    |
-| GAF modell (MY)                                   | Pénzügyi ellenőrzés       |                                                   |                                                                    |
-|                                                  |                       | GAF fájl (MY)                                     | Maláj GAF formátum                                         |
-| Szállítói korosítási jelentés (CN)                         | Szállítói adatok elemzése |                                                   |                                                                    |
-|                                                  |                       | Szállítói korosítási jelentés formátum (CN)                   | Kínai szállítói korosítási jelentés formátum                               |
-| Szállítói számla bevallása modell                 | Szállítói adatok elemzése |                                                   |                                                                    |
-|                                                  |                       | Szállítói számla bevallása (IS)                   | Izlandi szállítói számla nyilatkozat formátum                      |
-|                                                  |                       | Szállítói számla bevallásjelentés (IS)            | Izlandi szállítói számla nyilatkozatjelentés                      |
+A Finance megoldásban az ER-konfigurációk listája folyamatosan frissül. Nyissa meg a [globális tárházat](er-download-configurations-global-repo.md) a jelenleg támogatott ER-konfigurációk listájának ellenőrzéshez. A **Megszűnés részletei** gyorslapon áttekintheti a már megszüntetett vagy már nem karbantartott konfigurációk adatait. 
+
+![A Globális adattár tartalma a Konfigurációs adattár oldalon](./media/er-overview-03.gif)
 
 ## <a name="additional-resources"></a>További erőforrások
 
-- [Az Elektronikus jelentéskészítés (ER) konfigurációk](electronic-reporting-configuration.md)
+- [Elektronikus jelentéskészítési (ER) konfigurációk létrehozása](electronic-reporting-configuration.md)
 - [Elektronikus jelentéskészítési (ER) konfigurációk életciklusainak kezelése](general-electronic-reporting-manage-configuration-lifecycle.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

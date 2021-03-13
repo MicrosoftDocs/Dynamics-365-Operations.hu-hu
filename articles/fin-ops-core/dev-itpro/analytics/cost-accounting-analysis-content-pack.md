@@ -1,6 +1,6 @@
 ---
 title: Költségkönyvelés elemzése Power BI-tartalom
-description: Ez a témakör a Költségkönyvelési elemzés Power BI-tartalom modul tartalmát ismerteti. Leírja, hogy hogyan kell hozzáférni a Power BI-jelentésekhez, és információkat nyújt a tartalomcsomag összeállításához előzőleg használt entitásokkal és adatmodellekkel kapcsolatban.
+description: Ez a témakör a Költségkönyvelési elemzés Power BI-tartalom modul tartalmát ismerteti.
 author: AndersGirke
 manager: AnnBe
 ms.date: 10/02/2019
@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c15995edb5d65a00207fdb425447779d3a17d993
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 1c9a4741c1b09b8e68a9fe95d6f4effa328615d5
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683871"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093386"
 ---
-# <a name="cost-accounting-analysis-power-bi-content"></a>Költségkönyvelés elemzése Power BI-tartalom
+# <a name="cost-accounting-analysis-power-bi-content"></a>Költségkönyvelés elemzése – Power BI-tartalom
 
 [!include [banner](../includes/banner.md)]
 
@@ -123,6 +123,3 @@ A következő fő dimenziók szolgálnak szűrőként az összesítő mértékek
 | Pénzügyi naptárak                   | Naptár, Naptár leírása                                                                                       |
 | Pénzügyi évek                       | Naptári év                                                                                                        |
 | Pénzügyi időszakok                     | Naptári év időszak                                                                                                 |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

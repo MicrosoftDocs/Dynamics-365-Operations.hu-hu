@@ -1,6 +1,6 @@
 ---
 title: Sordefiníciók a pénzügyi jelentéstervezőben
-description: Egy sordefiníció egy jelentés-összetevő vagy építőelem, amely megadja az egyes sorok tartalmait egy pénzügyi jelentésben. A sordefiníciók kombinálhatóak oszlop,- jelentési fa- és jelentési definíciókkal, építőelem-csoportok létrehozásához, amelyek több vállalat által használhatóak.
+description: Egy sordefiníció egy jelentés-összetevő vagy építőelem, amely megadja az egyes sorok tartalmait egy pénzügyi jelentésben.
 author: aprilolson
 manager: AnnBe
 ms.date: 06/20/2017
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 214a36a1284756e47aa1d28af99234657f1861c0
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 274fa4bd137407c504f74335291e4c8e7999625b
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688283"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093265"
 ---
 # <a name="row-definitions-in-financial-report-designer"></a>Sordefiníciók a pénzügyi jelentéstervezőben
 
@@ -187,6 +187,3 @@ Hogy megkönnyítse azon oszlopok áttekintését, amelyeken a sordefinícióban
 ## <a name="additional-resources"></a>További erőforrások
 
 [Pénzügyi jelentéskészítés](financial-reporting-intro.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,6 +1,6 @@
 ---
 title: Oszlopdefiníciók a pénzügyi jelentésben
-description: Ez a cikk az oszlopdefiníciókról nyújt információkat. Egy oszlopdefiníció egy jelentés-összetevő vagy építőelem, amely meghatározza az oszlopok tartalmait egy jelentésben. Például a sordefiníciók, az alap oszlopdefiníciókat több jelentésben is használhatják.
+description: Ez a cikk az oszlopdefiníciókról nyújt információkat. Egy oszlopdefiníció egy jelentés-összetevő, amely meghatározza az oszlopok tartalmait egy jelentésben.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 10/10/2019
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 611e5cdfd2289bb2c690a72659e9ba47d6309cfe
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 820604fac96f5c86be3f7206ca88b3eb1fc6c32a
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687230"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093109"
 ---
 # <a name="column-definitions-in-financial-reports"></a>Oszlopdefiníciók a pénzügyi jelentésben
 
@@ -226,7 +226,7 @@ A felhasználó egy jelentést készít egy dinamikus hat hónapos előrejelzés
 | Oszlopszélesség        | 30   | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            |
 | Nyomtatásvezérlés       |      | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        |
 
-A felhasználó duplán rákattint egy oszlopfejléc cellá, hogy megnyissa az **Oszlopfejléc** párbeszédablakot, és itt megadja az alábbi adatokat.
+A felhasználó duplán kattint a B oszlop egy fejléccellájára, hogy megnyissa az **Oszlopfejléc** párbeszédablakot, és itt megadja az alábbi adatokat.
 
 | Mező              | Érték                 |
 |--------------------|-----------------------|
@@ -236,7 +236,6 @@ A felhasználó duplán rákattint egy oszlopfejléc cellá, hogy megnyissa az *
 | Indoklás      | Nincs bejelölve. |
 | Elosztva innen        | milliárd                     |
 | Elosztva ide          | ALAP                  |
-| Költségvetési fejléc      | ALAP+1 a záró oszlophoz  |
 
 Az adatok megadása után a felhasználó az **OK** gombra kattint. Ezután a felhasználó duplán kattint a C oszlop fejléccellájára, hogy megnyissa az **Oszlopfejléc** párbeszédablakot, és itt megadja az alábbi adatokat.
 
@@ -246,8 +245,8 @@ Az adatok megadása után a felhasználó az **OK** gombra kattint. Ezután a fe
 | Készszöveg beszúrása    | Nincs bejelölve. |
 | Formátumbeállítások     | Mező                   |
 | Indoklás      | Nincs bejelölve. |
-| Elosztva innen        | C                     |
-| Elosztva ide          | ALAP+2                |
+| Elosztva innen        | BASE+1                |
+| Elosztva ide          | H                     |
 
 Ezután valahányszor jelentés geenrálódik, a „Tényleges” szó jelenik meg minden olyan oszlopban, amely tényadatokat tartalmaz, és a „Költségvetés” szó azoknál, amelyek csak költségkeret-előrejelzést tartalmaznak. Ezen kívül a rendszer az oszlopok számát is korrigálja minden hónapban.
 
@@ -599,6 +598,3 @@ Egy oszlopban szereplő összeget időszakok egy megadott számával oszhat el. 
 [Sordefiníciók a pénzügyi jelentéstervezőben](row-definitions-financial-reporting.md)
 
 [Speciális formázási beállítások a pénzügyi jelentésben](advanced-formatting-options-financial-reporting.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

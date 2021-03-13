@@ -3,7 +3,7 @@ title: Az ügyfélkör áttekintése
 description: Ez a témakör az üzleti alkalmazásban rendelkezésre álló új ügyfélkör-kezelési lehetőségekről ad áttekintést.
 author: bebeale
 manager: AnnBe
-ms.date: 06/15/2020
+ms.date: 01/29/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 260624
 ms.assetid: a4f9d315-9951-451c-8ee6-37f9b3b15ef0
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: Version 10.0.7
-ms.openlocfilehash: d76668fa16a7634e7fbd953afaa6c89eed5457a2
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 206031f5ddbaedb2b581a452fe8979252647f0c4
+ms.sourcegitcommit: 872600103d2a444d78963867e5e0cdc62e68c3ec
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412857"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "5097255"
 ---
 # <a name="clienteling-overview"></a>Ügyfélkör áttekintése
 
@@ -106,24 +105,30 @@ Ha be szeretné kapcsolni a Customer Insights és a Commerce integrációját, a
 
 Az integráció beállításához hajtsa végre az alábbi lépéseket.
 
-1. Az Azure-portálon regisztráljon egy pályázatot. Ezt a pályázatot használja majd a hitelesítéshez a Customer Insights rendszerhez. További tudnivalók: [Rövid útmutató: Pályázatok regisztrálása a Microsoft Identity platformmal](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
-2. Hozzon létre titkos kulcsot a pályázathoz. Jegyezze fel a titkos kulcsot, és őrizze meg, mert később szüksége lesz rá. Adja meg a titkos kulcs lejárati idejét is.
+1. Az Azure-portálon regisztrálhat egy új alkalmazást és feljegyezheti az alkalmazás nevét, az alkalmazásazonosítót és a titkos kódot. Ezeket az adatokat a Commerce és a Customer Insights között történő, szolgáltatások közti hitelesítésre használjuk. Jegyezze meg a titkos kódot, mivel szüksége lesz rá a kulcstárolóba történő mentéséhez. A következő példában használja a CI_Access_name, CI_Access_AppID, CI_Access_Secret megoldást az alkalmazás neve, az alkalmazásazonosító és a titkos kód megjelölésére. További tudnivalók: [Rövid útmutató: Alkalmazások regisztrálása a Microsoft Identity platformmal](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
 
     > [!IMPORTANT]
     > Ügyeljen rá, hogy a lejárat előtt módosítani kell a titkos kulcsot, ellenkező esetben az integráció váratlanul megszűnik.
 
-3. Hozzon létre Azure Key Vault tárolót, és mentse a pályázat titkos kulcsát. Lépések: [Rövid útmutató: Titkos kulcs beállítása és lekérése az Azure Key Vault tárolóból az Azure-portál használatával](https://docs.microsoft.com/azure/key-vault/quick-create-portal).
-4. A Commerce rendszerben kapcsolja be a hozzáférést az Azure Key Vault tárolóhoz. A lépés végrehajtásához rendelkeznie kell pályázatazonosítóval és titkos kulccsal. A pályázat lehet az 1. lépésben létrehozott pályázat, de lehet új is. (Más szóval az 1. lépésben létrehozott pályázat használható a Key Vaulthoz és a Customer Insights szolgáltatáshoz való hozzáféréshez, de az egyes hozzáférésekhez létrehozhat egyedi pályázatot is.) További tudnivaló: [Szolgáltatás elsődleges hitelesítő adatainak tárolása az Azure Stack Key Vault tárolóban](https://docs.microsoft.com/azure-stack/user/azure-stack-key-vault-store-credentials?view=azs-1908#create-a-service-principal).
-5. A Headquarters alkalmazásban lépjen a **Rendszerfelügyelet \> Beállítás \> Kulcstároló paraméterei** részre, és adja meg a szükséges adatokat a kulcstárolóhoz. Ezt követően a **Kulcstárolókliens** mezőbe írja be a 4. lépésben használt pályázati azonosítót, hogy a Commerce hozzáférjen a kulcstárolóban lévő titkos kulcshoz.
-6. Ha hozzá szeretné adni az 1. lépésben létrehozott pályázatot a biztonságos pályázatok listájához, nyissa meg a Customer Insights szolgáltatást, és adjon **Megtekintési** hozzáférést a pályázathoz. További tájékoztatás: [Engedélyek](https://docs.microsoft.com/dynamics365/ai/customer-insights/pm-permissions).
-7. A Commerce szolgáltatás **Kereskedelmi paraméterek** oldalán lévő **Ügyfélkör** lap **Dynamics 365 Customer Insights** gyorslapján hajtsa végre a következő lépéseket:
+2. Lépjen a Customer Insights-példányára, és keresse meg a fent létrehozott alkalmazás nevét (ebben a példában: CI_Access_name).
+3. Hozzon létre egy Azure-kulcstárolót, és jegyezze fel a nevet és az URL-címet (ebben a példában: KeyVaultName, KeyVaultURL). Lépések: [Rövid útmutató: Titkos kulcs beállítása és lekérése az Azure Key Vault tárolóból az Azure-portál használatával](https://docs.microsoft.com/azure/key-vault/quick-create-portal).
+4. Mentse a titkos kódot (ebben a példában: CI_Access_Secret) a kulcstárolóban. Amikor ezt a titkos kódot a kulcstárolóban menti, a titkos kód kap egy nevet. Jegyezze fel a titkos kód nevét (ebben a példában: SecretName).
+5. Ahhoz, hogy hozzáférjen az Azure Key Vault alkalmazásban lévő titkos kódhoz, egy alkalmazásazonosítóval és titkos kóddal egy másik alkalmazást kell létrehoznia (ebben a példában: KeyVault_Access_AppID és KeyVault_Access_Secret). Jegyezze fel biztonságos módon a titkos kódot, mivel az nem jelenik meg újra.
+6. Ezután engedélyeket kell rendelnie az alkalmazáshoz ahhoz, hogy hozzá tudjon férni a Commerce rendszerbeli Key Vault alkalmazáshoz API-k használatával. Az Azure portálon lépjen az alkalmazás oldalára. A **Kezelés** szakaszban válassza ki az **API-engedélyek** lehetőséget. Adja hozzá az engedélyt az **Azure-kulcstárolóhoz** való hozzáféréshez. Ehhez az engedélyhez válassza ki a **Hozzáférési szabályzat** lehetőséget. Válassza ki a sablont **Titkos kód kezelése** formában, majd válassza a **Beolvasás**, a **Lista**, a **Visszafejtés** és a **Titkosítás** lehetőséget. 
+5. A Commerce központi felületén lépjen a **Rendszerfelügyelet \> Beállítás \> Kulcstároló paraméterei** részre, és adja meg a szükséges adatokat a kulcstárolóhoz. Ezt követően a **Kulcstárolókliens** mezőbe írja be a 4. lépésben használt alkalmazásazonosítót, hogy a Commerce hozzáférjen a kulcstárolóban lévő titkos kulcshoz.
+6. Ha hozzá szeretné adni az 1. lépésben létrehozott alkalmazást a biztonságos alkalmazások listájához, nyissa meg a Customer Insights szolgáltatást, és válassza **Megtekintés** típusú hozzáférést az alkalmazáshoz. További tájékoztatás: [Engedélyek](https://docs.microsoft.com/dynamics365/ai/customer-insights/pm-permissions).
+7. A Commerce központi felületének **Rendszerfelügyelet > Beállítás > Key Vault-paraméterek** oldalán frissítse a mezőket az alábbi leírásnak megfelelő módon: 
 
-    1. A **Pályázat azonosítója** mezőbe írja be az 1. lépésben használt pályázati azonosítót.
-    2. A **Titkos kulcs neve** mezőbe írja be az 5. lépésben létrehozott, a kulcstárolóban lévő titkos kulcs nevét.
-    3. A **Customer Insights engedélyezése** beállításnál adja meg az **Igen** értéket. Ha a beállítás valamiért nem sikerül, akkor hibaüzenet jelenik meg, és a beállítás értéke **Nem** lesz.
-    4. A Customer Insights szolgáltatásban több környezet is használható (pl. tesztkörnyezet és termelési környezet). A **Környezeti példányazonosítója** mezőbe írja be a megfelelő környezetet.
-    5. A **Másodlagos vevőazonosító** mezőbe írja be a Customer Insights azon tulajdonságát, amelyet hozzárendelt a vevő számlaszámához. (A Commerce szolgáltatásban a vevő számlaszáma a vevőazonosító.)
-    6. A fennmaradó három tulajdonság az az intézkedés, amely megjelenik az ügyfélkönyvben lévő vevői kártyán. Legfeljebb három intézkedés jeleníthető meg a vevő kártyáján. (Nem kötelező azonban intézkedéseket megadni.) A korábban említettek szerint a rendszer ezeket az értékeket jeleníti meg először, majd az ügyfélkönyv attribútumcsoportjának az értékeit.
+- **Key Vault URL**: "KeyVaultURL" (a fenti 3. lépéstől).
+- **Key Vault-ügyfél**: "KeyVault_Access_AppID" (a fenti 5. lépéstől).
+- **Key Vault titkos kód**: "KeyVault_Access_Secret" (a fenti 5. lépéstől).
+- A **Titkos kódok** szakaszban:
+    - **Név**: bármilyen név, például CISecret.
+    - **Leírás**: bármilyen érték.
+    - **Titkos kód**: **vault**://<Name of key vault>/<name of secret>> Ebben a példában: vault://KeyVaultName/SecretName.
 
+A mezők frissítése után az **Ellenőrzés** lehetőségre kattintva biztosítsa, hogy a Commerce-alkalmazás hozzáférjen a titkos kódhoz.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+8. A Commerce alkalmazásban a **Commerce paraméterek** oldal **Ügyfélkör** lapján a **Dynamics 365 Customer Insights** gyorslapon állítsa az **Alkalmazásazonosító** lehetőséget CI_Access_AppID értékre (a fenti 1. lépéstől). A **Titkos kód neve** mezőben válassza ki a titkos kód fenti 7. lépésben megadott nevét (CISecret). A **Customer Insights engedélyezése** beállításnál adja meg az **Igen** értéket. Ha a beállítás valamiért nem sikerül hibaüzenet jelenik meg, és a beállítás értéke **Nem** lesz. 
+
+A Customer Insights szolgáltatásban több környezet is használható (pl. tesztkörnyezet és termelési környezet). A **Környezeti példányazonosítója** mezőbe írja be a megfelelő környezetet. A **Másodlagos vevőazonosító** mezőbe írja be a Customer Insights azon tulajdonságát, amelyet hozzárendelt a vevő számlaszámához. (A Commerce-rendszer vevőazonosítója a vevőkód.) A további három tulajdonság a vevői kártyán az ügyfélkönyvben megjelenő intézkedéseket jelenti. Legfeljebb három intézkedés jeleníthető meg a vevő kártyáján. Az intézkedések kiválasztására azonban nincs szükség. A korábban említetteknek megfelelően a rendszer először ezeket az értékeket jeleníti meg, majd megjeleníti az ügyfélkönyv attribútumcsoportjának értékeit.

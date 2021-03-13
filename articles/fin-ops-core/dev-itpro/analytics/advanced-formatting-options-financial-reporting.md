@@ -1,7 +1,7 @@
 ---
 title: Speciális formázási beállítások a pénzügyi jelentésben
-description: Pénzügyi jelentésről készült jelentés létrehozásakor további formázási funkciók érhetők el, többek között a dimenziók szűrői, oszlopok és jelentési egységek korlátozásai, a nem nyomtatható sorok és a számításokban szereplő IF/THEN/ELSE kimutatások.
-author: ryansandness
+description: Ez a témakör leírja a speciális formázási funkciókat, többek között a szűrőket, a korlátozásokat, a nem nyomtatási sorokat és a feltételes utasításokat a számításokban.
+author: panolte
 manager: AnnBe
 ms.date: 04/26/2019
 ms.topic: article
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 3508099dfa3c6671da8dddc9061f737a97e825ce
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: f0417ac1007fc94431aeb11d2464ee699e3f3441
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683163"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093162"
 ---
 # <a name="advanced-formatting-options-in-financial-reporting"></a>Speciális formázási beállítások a pénzügyi jelentésben
 
@@ -310,6 +310,3 @@ Az **IF/THEN/ELSE** állítás lehetővé teszi, hogy bármely számítás bárm
 Jelentéseket tervezhet dimenzióértékek használatával, amelyekben „és” jel (&) szerepel.
 
 Bármely **Kapcsolás pénzügyi dimenziókhoz** mezőn belül megadhat olyan értéket, mint például az **Eredmény (P&L)**. A dimenzióérték mindkét oldalán szereplő egyszeres idézőjelek ('') azt jelzik, hogy szövekonstans értéket használ, például az „és” (&) jelet.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

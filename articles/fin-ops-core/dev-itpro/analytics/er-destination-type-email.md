@@ -1,6 +1,6 @@
 ---
 title: E-mail ER céltípusa
-description: Ez a témakör elmagyarázza, hogyan lehet beállítani egy e-mail célhelyet a kimenő dokumentumok létrehozásához konfigurált elektronikus jelentési (ER) formátumú fájlok MAPPA vagy FÁJL összetevőihez.
+description: Ez a témakör bemutatja, hogyan kell konfigurálni egy e-mail-célt az Elektronikus jelentéskészítési (ER) formátumok egyes MAPPA vagy FÁJL összetevőihez.
 author: NickSelin
 manager: AnnBe
 ms.date: 12/03/2020
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: c6242ecb44a206aacc0e1b1b3c4f588eadd18882
-ms.sourcegitcommit: 53174ed4e7cc4e1ba07cdfc39207e7296ef87c1f
+ms.openlocfilehash: e2e0da1c724269e0956be2f402b34ff376ed1990
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "4690126"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5094104"
 ---
 # <a name="email-er-destination-type"></a>E-mail ER céltípusa
 
@@ -65,8 +65,6 @@ Ha e-mail cím típusaként a **Nyomtatás kezelése e-mail** lehetőséget vál
 - Az **E-mail forrása** mezőben válassza a **Nincs** lehetőséget.
 - A **További e-mail-címek „;”-el elválasztva** mezőben adja meg a rögzített e-mail-címeket.
 
-![Fix e-mail-cím konfigurálása](./media/er_destinations-emailfixedaddress.png)
-
 Azt is megteheti, hogy az e-mail címeket annak a félnek a kapcsolattartási adataiból szerzik be, akinek kimenő dokumentumot hoz létre. Nem rögzített email-cím használatához az **E-mail forrása** mezőben válassza ki a fájl címzettjének [szerepkörét](../../fin-ops/organization-administration/overview-global-address-book.md#party-roles). A következő szerepkörök támogatottak:
 
 - Vevő
@@ -92,8 +90,6 @@ A **Képlettervező** lap **Képlet** mezőjébe írja be a támogatott szerepk�
 
 Ha a konfigurált szerepkör számlaszáma egyedi az egész Microsoft Dynamics 365 Finance egész példányra vonatkozóan, akkor a **E-mail címzettje** párbeszédpanel **E-mail forrásának vállalata** mezője nem maradhat üresen.
 
-![Üres E-mail forrásának vállalata mező](./media/er_destinations-emaildefineaddresssourceformula.png)
-
 Olyan helyzet is előfordulhat, amikor a [Globális címjegyzékben](../../fin-ops/organization-administration/overview-global-address-book.md) különböző feleket különböző vállalatokban ([jogi személyek](../../fin-ops/organization-administration/organizations-organizational-hierarchies.md#legal-entities)) regisztráltak, olyan módon hogy minden felhasználó ugyanazt a számlaszámot használja a konfigurált szerepkör kitöltéséhez. Ebben az esetben a konfigurált szerepkör számlaszáma nem egyedi a teljes Finance példány esetében. Ennélfogva egy fél explicit kiválasztása esetén nem adható meg csak számlaszám. Meg kell adnia azt a vállalatot is, amelynél a fél regisztrálva van a konfigurált szerepkör kitöltéséhez. Válassza a **Kapcsolás** gombot (lánc szimbólum) az **E-mail címzettje** párbeszédpanel **E-mail forrás vállalata** mezőjét a [Képlettervező lap](general-electronic-reporting-formula-designer.md) megnyitásához. Ezután ezen a lapon konfigurálhatja azt a képletet, amely a program futási idején a megfelelő forrást tartalmazó vállalat kódját adja vissza.
 
 > [!TIP]
@@ -109,8 +105,6 @@ Ha meg szeretné adni, hogy milyen típusú e-mail címeket kell használni fut�
 
 > [!NOTE]
 > Ha a **Cél** mezőben a célok vannak kiválasztva és az **Elsődleges kapcsolattartó** beállítás is **Igen** értékre van beállítva, akkor a program minden olyan e-mailt használ futásidőben, amely megfelel legalább egy konfigurált feltételnek.
-
-![E-mail-forrás tulajdonságfiók konfigurálása](./media/er_destinations-emaildefineaddresssourceattributes.png)
 
 ### <a name="configuration-email"></a>Konfigurációs e-mail
 
@@ -145,6 +139,3 @@ A következő ábra az egyes összetevők csoportosításának és az új csopor
 - [Elektronikus jelentéskészítés (ER) áttekintése](general-electronic-reporting.md)
 - [Elektronikus jelentéskészítés (ER) céljai](electronic-reporting-destinations.md)
 - [Képletszerkesztő elektronikus jelentésekhez (ER)](general-electronic-reporting-formula-designer.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

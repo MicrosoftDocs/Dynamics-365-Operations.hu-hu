@@ -1,6 +1,6 @@
 ---
 title: Kompenzáció Power BI tartalom
-description: Ez a témakör ismerteti a Kompenzáció Power BI-tartalmat. Leírja, hogy hogyan kell hozzáférni a jelentésekhez, és információkat nyújt a tartalomcsomag összeállításához előzőleg használt entitásokkal és adatmodellekkel kapcsolatban.
+description: Ez a témakör ismerteti a Kompenzáció Power BI-tartalmat. Bemutatja, hogyan lehet hozzáférni a jelentésekhez, és tájékoztatást nyújt a használt adatmodellel kapcsolatban.
 author: jcart1106
 manager: AnnBe
 ms.date: 12/19/2017
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 64b4f27b4a1fa3762169a18746c6b0933bddf3ca
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: b625ea7dcbb6bd8b80cbcdcc544c59b9839fc19d
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687181"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093056"
 ---
 # <a name="compensation-power-bi-content"></a>Kompenzáció Power BI tartalom
 
@@ -71,6 +71,3 @@ A **Kompenzáció** Power BI-tartalom jelentéseinek kitöltésére a következ�
 | Alkalmazott neve            | Keresztnév, vezetéknév és teljes név                                                                       | Jelenlegi kompenzáció, Jelenlegi alkalmazott, Felmondott alkalmazott, Alkalmazotti trend |
 | Alkalmazott beosztása           | Cím és szolgálati idő dátuma                                                                                   | Jelenlegi kompenzáció, Jelenlegi alkalmazott, Felmondott alkalmazott, Alkalmazotti trend |
 | Alkalmazotti trend           | Túlórázó dolgozók, létszám, vállalat és beosztás                                                        | Vállalat, Kompenzáció, Földrajzi hely, Alkalmazott neve, Közvetlen felettes, Naptár ennyi nappal később, Dátum, Alkalmazott beosztása, Demográfia, Alkalmazás, Munkakör, Juttatások |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -3,7 +3,7 @@ title: Elektronikus számlázásbővítmény – áttekintés
 description: Ez a témakör információkat tartalmaz arról, hogyan tudja beállítani az Elektronikus számlázás bővítményét a Microsoft Dynamics 365 Finance és Dynamics 365 Supply Chain Management szolgáltatásokban.
 author: gionoder
 manager: AnnBe
-ms.date: 09/22/2020
+ms.date: 01/22/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 97423
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: ffd48e173b66cc6d2571e666d5452a5eff05176c
-ms.sourcegitcommit: f860ac2b18f6bbbfc4a46b497baec2477105b116
+ms.openlocfilehash: 2c35b810151349384f105d9ac1d93e1885031450
+ms.sourcegitcommit: e88c96d1cb817a22db81856cadb563c095ab2671
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "4444154"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "5104208"
 ---
 # <a name="electronic-invoicing-add-on-overview"></a>Elektronikus számlázásbővítmény – áttekintés
 
@@ -45,9 +44,9 @@ Az Elektronikus számlázásbővítmény a következő célok elérése érdeké
 
 Az Elektronikus számlázásbővítmény használatához telepítenie kell a bővítményt a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásban lévő projektből. Ezután kövesse a beállítási eljárást, hogy a Finance vagy Supply Chain Management szolgáltatással be tudja kapcsolni az integrációt. További tájékoztatást az [Első lépések – Elektronikus számlázásbővítmény](e-invoicing-get-started.md) részben talál.
 
-## <a name="availability"></a>Elérhetőség
+## <a name="service-availability"></a><a name="availability"></a>-szolgáltatás rendelkezésre állása
 
-Kezdetben az Elektronikus számlázásbővítmény kiválasztott ügyfelek számára érhető el az előzetes verzión keresztül. Később az előzetes verzió az ügyfelek szélesebb körekének is elérhető lesz. A szolgáltatás végül pedig általánosan elérhetővé válik. Mivel az ország-/régióspecifikus követelményeknek megfelelő funkciók a kiadás különböző fázisaiban korlátozottak lehetnek, ezért mindig a legfrissebb dokumentációt kell ellenőriznie, amely kiemeli a támogatott ország-/régióspecifikus megoldások lefedettségét és terjedelmét.
+Az Elektronikus számlázási bővítmény jelenleg az előzetes verzión keresztül érhető el a vevők számára, és a következő fázisban a szolgáltatás általánosan elérhetővé válik. Mivel az ország-/régióspecifikus követelményeknek megfelelő funkciók a kiadás különböző fázisaiban korlátozottak lehetnek, ezért mindig a legfrissebb dokumentációt kell ellenőriznie, amely kiemeli a támogatott ország-/régióspecifikus megoldások lefedettségét és terjedelmét.
 
 Az Elektronikus számlázásbővítmény a következő Azure földrajzi régiókban telepíthető:
 
@@ -76,7 +75,7 @@ Az Elektronikus számlázásbővítmény olyan helyzetekben használható, amiko
     - Beépített, könnyen kiterjeszthető és konfigurálható integráció több ország számára további tartalmakkal
 
     > [!NOTE]
-    > Jelenleg korlátozott számú közvetlen beküldés támogatott. További tudnivalókat a témakör korábbi [Elérhetőség](#availability) része tartalmaz. A támogatás a jövőben is ki lesz terjesztve.
+    > Jelenleg korlátozott számú közvetlen beküldés támogatott. További tudnivalókat a témakör korábbi, [A szolgáltatás elérhetősége](#availability) című része tartalmaz. A támogatás a jövőben is ki lesz terjesztve.
 
 - A webszolgáltatások válaszának kezelése, beleértve a konfigurálható kivételre vonatkozó üzenetek kezelését
 - Elektronikus aláírások támogatása (például az XMLDSig aláírási algoritmus használatával)
@@ -104,15 +103,9 @@ A következő ábra bemutatja, hogyan áramlik ki és be az adat az elektronikus
 ![Az Elektronikus számlázásbővítmény adatfolyama](media/e-invoicing-service-data-flow-diagram-overview.png)
 
 ## <a name="privacy-notice"></a>Adatvédelmi nyilatkozat
-Az Elektronikus számlázás engedélyezése és használata korlátozott adatok küldését igényelheti, ideértve a szervezet adóregisztrációs azonosítóját. Ezek továbbítva lesznek az adóhatóságok által kinevezett harmadik fél ügynökségekhez, az elektronikus számlák – kormányzati szervek webszolgáltatásaival való integrációhoz szükséges, előre meghatározott formátumban való – elküldése céljából. A külső rendszerekből ebbe a Dynamics 365 online szolgáltatásba importált adatok az [Adatvédelmi nyilatkozatunk](https://go.microsoft.com/fwlink/?LinkId=512132) hatálya alá tartoznak. További tájékoztatásért olvassa el az országspecifikus funkciók dokumentációja szakaszokban található Adatvédelmi nyilatkozatot.
+Az Elektronikus számlázási bővítmény engedélyezése és használata korlátozott adatok küldését igényelheti, ideértve a szervezet adóregisztrációs azonosítóját. Ezek továbbítva lesznek az adóhatóságok által kinevezett harmadik fél ügynökségekhez, az elektronikus számlák – kormányzati szervek webszolgáltatásaival való integrációhoz szükséges, előre meghatározott formátumban való – elküldése céljából. A külső rendszerekből ebbe a Dynamics 365 online szolgáltatásba importált adatok az [Adatvédelmi nyilatkozatunk](https://go.microsoft.com/fwlink/?LinkId=512132) hatálya alá tartoznak. További tájékoztatásért olvassa el az országspecifikus funkciók dokumentációja szakaszokban található Adatvédelmi nyilatkozatot.
 
 ## <a name="additional-resources"></a>További erőforrások
-
-- [Első lépések az Elektronikus számlázásbővítménnyel](e-invoicing-get-started.md)
-- [Első lépések a brazil Elektronikus számlázásbővítménnyel](e-invoicing-bra-get-started.md)
-- [Első lépések a mexikói Elektronikus számlázásbővítménnyel](e-invoicing-mex-get-started.md)
-- [Első lépések az olasz Elektronikus számlázásbővítménnyel](e-invoicing-ita-get-started.md)
-- [Az Elektronikus számlázásbővítmény beállítása](e-invoicing-setup.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+- [Szolgáltatásfelügyelet](e-invoicing-service-administration.md)
+- [Elektronikus számlák konfigurálása az RCS szolgáltatásban](e-invoicing-configuration-rcs.md)
+- [Elektronikus számlák kibocstása a Finance és Supply Chain Management szolgáltatásokban](e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md)

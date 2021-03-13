@@ -1,7 +1,7 @@
 ---
 title: Tényleges viszonyítva a költségvetéshez Power BI tartalom
-description: Ez a témakör a Tényleges viszonyítva a költségvetéshez Power BI-tartalmat ismerteti. Leírja, hogy hogyan kell hozzáférni a tartalomcsomagban szereplő jelentésekhez, és információkat nyújt a tartalomcsomag összeállításához előzőleg használt entitásokkal és adatmodellekkel kapcsolatban.
-author: ryansandness
+description: Ez a témakör a Tényleges viszonyítva a költségvetéshez Power BI-tartalmat ismerteti. Bemutatja, hogyan lehet hozzáférni a jelentésekhez, és tájékoztatást nyújt az adatmodellel kapcsolatban.
+author: panolte
 manager: AnnBe
 ms.date: 12/18/2017
 ms.topic: article
@@ -12,15 +12,15 @@ ms.search.form: BudgetTrackingWorkspace
 audience: Application user, IT Pro
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: ryansand
+ms.author: panolte
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 6a185da5055741ac30c7e237ef72d07084644651
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 908b96af5b3d67f265953648edd6aa7ec31556a4
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685273"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093848"
 ---
 # <a name="actual-vs-budget-power-bi-content"></a>Tényleges viszonyítva a költségvetéshez Power BI tartalom
 
@@ -57,6 +57,3 @@ A következő táblázat ismerteti a **Tényleges viszonyítva a költségvetés
 | Főkönyvek                   | A jelenlegi főkönyvi jelentés szűréséhez használható főkönyvek              |
 | Költségvetési kódok              | Költségvetési kódok a jelentések szűréséhez                                                |
 | Jogi személyek            | A jelenlegi jogi személyre vonatkozó jelentés szűréséhez használható jogi személyek |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

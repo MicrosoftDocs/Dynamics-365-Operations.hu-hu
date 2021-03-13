@@ -1,6 +1,6 @@
 ---
 title: Juttatások Power BI tartalom
-description: Ez a témakör ismerteti a Juttatások Power BI-tartalmat. Leírja, hogy hogyan kell hozzáférni a jelentésekhez, és információkat nyújt a tartalomcsomag összeállításához előzőleg használt entitásokkal és adatmodellekkel kapcsolatban.
+description: Ez a témakör ismerteti a Juttatások Power BI-tartalmat.
 author: jcart1106
 manager: AnnBe
 ms.date: 12/19/2017
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: d0a5fe54bb4f5541f610f8ea76afa7813e3a599a
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 5a894ebfb79eab4888178c930b9e7d55cf735c91
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687255"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093081"
 ---
 # <a name="benefits-power-bi-content"></a>Juttatások Power BI tartalom
 
@@ -69,6 +69,3 @@ A **Juttatások** Power BI-tartalom jelentéseinek kitöltésére a következő 
 | Alkalmazott neve            | Keresztnév, vezetéknév és teljes név                                                                       | Jelenlegi kompenzáció, Jelenlegi alkalmazott, Felmondott alkalmazott, Alkalmazotti trend |
 | Alkalmazott beosztása           | Cím és szolgálati idő dátuma                                                                                   | Jelenlegi kompenzáció, Jelenlegi alkalmazott, Felmondott alkalmazott, Alkalmazotti trend |
 | Alkalmazotti trend           | Túlórázó dolgozók, létszám, vállalat és beosztás                                                        | Vállalat, Kompenzáció, Földrajzi hely, Alkalmazott neve, Közvetlen felettes, Naptár ennyi nappal később, Dátum, Alkalmazott beosztása, Demográfia, Alkalmazás, Munkakör, Juttatások |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

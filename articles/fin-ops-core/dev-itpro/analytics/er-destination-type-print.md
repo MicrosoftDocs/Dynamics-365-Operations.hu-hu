@@ -1,6 +1,6 @@
 ---
 title: Nyomtató ER céltípusa
-description: Ez a témakör azt mutatja be, hogyan lehet beállítani egy nyomtatót célhelyként a kimenő dokumentumok létrehozásához konfigurált elektronikus jelentési (ER) formátumú fájlok MAPPA vagy FÁJL összetevőihez PDF vagy Microsoft Office-formátumokban (Excel/Word).
+description: Ez a témakör bemutatja, hogyan kell konfigurálni egy nyomtatási célt az Elektronikus jelentéskészítési (ER) formátumok egyes MAPPA vagy FÁJL összetevőihez.
 author: NickSelin
 manager: AnnBe
 ms.date: 03/17/2020
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: b7a279dcb30e7681ae654ab17d898a5364391d57
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: c6e298f62ec69f349eb713d66313e535c7e01881
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679606"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5094079"
 ---
-# <a name="printer-destination"></a><a name="PrinterDestinationType"></a>Nyomtató célhely
+# <a name="printer-destination"></a><a name="PrinterDestinationType"></a>Nyomtatási cél
 
 [!include [banner](../includes/banner.md)]
 
@@ -70,6 +70,3 @@ Ha egy adott [oldaltájolást](electronic-reporting-destinations.md#SelectPdfPag
 
 - [Elektronikus jelentéskészítés (ER) áttekintése](general-electronic-reporting.md)
 - [Elektronikus jelentéskészítés (ER) céljai](electronic-reporting-destinations.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

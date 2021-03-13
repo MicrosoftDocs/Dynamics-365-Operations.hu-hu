@@ -1,6 +1,6 @@
 ---
 title: A létrehozott ER-jelentések eredményeinek nyomon követésében és a kiindulási értékekkel való összehasonlításukban végzett fejlesztések
-description: Ez a témakör az ER alaptervfunkcióban végzett fejlesztésekről tájékoztat a Microsoft Dynamics 365 for Finance and Operations 10.0.3-as (2019. júniusi) verziójában.
+description: Ez a témakör a Microsoft Dynamics 365 for Finance and Operations 10.0.3-as verzió (2019. június) kiindulási ER-funkciójának javításait ismerteti.
 author: NickSelin
 manager: AnnBe
 ms.date: 06/19/2019
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 55e821b27f80383d8a8dc7a2d46f87e17c554078
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 1c00a5d9e2804f6ec0f6cb4c544029a1235ee58d
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682847"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5094004"
 ---
 # <a name="improvements-in-tracing-the-results-of-generated-er-reports-and-comparing-them-with-baseline-values"></a>A létrehozott ER-jelentések eredményeinek nyomon követésében és a kiindulási értékekkel való összehasonlításukban végzett fejlesztések
 
@@ -59,7 +59,7 @@ A példa lépéseinek végrehajtásához először végre kell hajtania [A létr
 
 A alaptervet a a rendszer hozzáadta a kiválasztott **ER-alaptervek tanulási formátuma** formátumhoz, de a alaptervszabályokat még nem adták hozzá az adott alaptervhez.
 
-![Elektronikus jelentéskészítés formátumának alaptervei lap](media/GER-BaselineSample-AddBaseline2.PNG "Képernyőkép – az elektronikus jelentéskészítés formátumának alaptervei lap")
+![Elektronikus jelentéskészítés formátumának alaptervei oldal, még nincsenek szabályok](media/GER-BaselineSample-AddBaseline2.PNG "Képernyőkép – az elektronikus jelentéskészítés formátumának alaptervei lap")
 
 ### <a name="make-a-new-baseline-rule"></a>Új alaptervszabály létrehozása
 
@@ -72,7 +72,7 @@ A alaptervet a a rendszer hozzáadta a kiválasztott **ER-alaptervek tanulási f
 7. Válassza ki az **OK** lehetőséget.
 8. **Alaptervek** kiválasztása.
 
-    ![Elektronikus jelentéskészítés formátumának alaptervei lap](media/GER-BaselineSample-ReviewAddedBaselineLine.PNG "Képernyőkép – az elektronikus jelentéskészítés formátumának alaptervei lap")
+    ![Az elektronikus jelentéskészítés formátumának alaptervei oldal, alapok kiválasztva](media/GER-BaselineSample-ReviewAddedBaselineLine.PNG "Képernyőkép – az elektronikus jelentéskészítés formátumának alaptervei lap")
 
     A létrejövő kimenő fájl automatikusan a végrehajtott ER-formátum alaptervéhez van csatolva. A alaptervszabály automatikusan hozzáadódott ehhez az alaptervhez, és a csatolt fájlra mutató hivatkozást is tartalmaz.
 
@@ -130,7 +130,7 @@ A példa lépéseinek végrehajtásához először végre kell hajtania [A létr
 3. Az alaptervek listájában válassza ki azt az alaptervet, amely az **ER-kiindulások tanulási formátuma** formátumra van beállítva.
 4. Az **Alaptervek** gyorslapon válassza a **Törlés** parancsot a korábban konfigurált alaptervszabály eltávolításához.
 
-![Elektronikus jelentéskészítés formátumának alaptervei lap](media/GER-BaselineSample-AddBaseline3.PNG "Képernyőkép – az elektronikus jelentéskészítés formátumának alaptervei lap")
+![Elektronikus jelentéskészítés formátumának alaptervei oldal, törölve](media/GER-BaselineSample-AddBaseline3.PNG "Képernyőkép – az elektronikus jelentéskészítés formátumának alaptervei lap")
 
 ### <a name="define-replacements-for-bindings-of-designed-er-format"></a>A megtervezett ER-formátum kötéseihez tartozó helyettesítések meghatározása
 
@@ -138,7 +138,7 @@ A példa lépéseinek végrehajtásához először végre kell hajtania [A létr
 2. A formátum-összetevők fastruktúrájában bontsa ki a **Kimenet** elemet, majd a **Kimenet\\Dokumentum** pontot, és jelölje be a **Kimenet\\Dokumentum\\ProcessingDateTime** jelölőnégyzetet.
 3. Válassza ki az **OK** lehetőséget.
 
-![Elektronikus jelentéskészítés formátumának alaptervei lap](media/GER-BaselineSample-AddBaseline4.PNG "Képernyőkép – az elektronikus jelentéskészítés formátumának alaptervei lap")
+![Elektronikus jelentéskészítés formátumának alaptervei oldal, összetevők](media/GER-BaselineSample-AddBaseline4.PNG "Képernyőkép – az elektronikus jelentéskészítés formátumának alaptervei lap")
 
 A kiválasztott ER-formátum-összetevő hozzá van adva az összetevők listájához a **Helyettesítések** gyorslapon. Ha a program hibakeresési módban futtatja az ER alapformátumát, akkor az egyes összetevők formátumának kötését a program a **Kötés** oszlopban szereplő kötéssel helyettesíti. Ha módosítani szeretné a **Helyettesítések** gyorslapon felsorolt összetevő alapértelmezett kötését, válassza a **Szerkesztés** parancsot.
 
@@ -207,6 +207,3 @@ Ha a Microsoft SharePoint Server felületén tárolt XML-fájlból szeretne alap
 
 - [A létrehozott jelentés eredményeinek nyomon követése és összehasonlításuk a kiindulási értékekkel](er-trace-reports-compare-baseline.md)
 - [Feladatrögzítő erőforrásai](../user-interface/task-recorder.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

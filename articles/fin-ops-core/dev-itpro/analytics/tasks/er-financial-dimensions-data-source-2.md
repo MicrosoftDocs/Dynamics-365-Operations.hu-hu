@@ -1,6 +1,6 @@
 ---
 title: ER Pénzügyi dimenziók használata adatforrásként (2. rész – Modell hozzárendelése)
-description: A következő lépések leírják, hogy egy rendszergazda vagy az elektronikus jelentések fejlesztője szerepkörhöz hozzárendelt felhasználó miként konfigurálhat egy elektronikusjelentés-modellt (ER-modell) a pénzügyi dimenzió használatához az ER-jelentések adatforrásaként.
+description: Ez a témakör azt ismerteti, hogyan kell konfigurálni egy Elektronikus jelentési (ER) modellt, amely a pénzügyi dimenziókat használja az ER-jelentések adatforrásaként. (2. rész)
 author: NickSelin
 manager: AnnBe
 ms.date: 05/27/2020
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3214ddb1e077d889fb7b785bee2554b96c3907ed
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 02c730d08c411e736a7f8b9e7bad3d6a18cb8e6a
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681685"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093237"
 ---
 # <a name="er-use-financial-dimensions-as-a-data-source-part-2---model-mapping"></a>ER Pénzügyi dimenziók használata adatforrásként (2. rész – Modell hozzárendelése)
 
@@ -147,6 +147,3 @@ A lépések végrehajtásához először hajtsa végre az „ER Pénzügyi dimen
 4. Kattintson a Befejezés gombra.
 5. Kattintson az OK gombra.
 ![Elektronikus jelentéskészítés – modell-leképezés tervező oldal](../media/er-financial-dimensions-guides-model-mapping5.png)
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

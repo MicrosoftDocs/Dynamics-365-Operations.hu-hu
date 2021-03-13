@@ -10,19 +10,18 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 0cbcba7ce4f40298e0f2665fa811b125f11e9490
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d0f5037c40afdbb8af1d01af8de965ddb3b17a3a
+ms.sourcegitcommit: 872600103d2a444d78963867e5e0cdc62e68c3ec
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412985"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "5097076"
 ---
 # <a name="select-page-layouts"></a>Oldalelrendezések kiválasztása
 
@@ -78,6 +77,5 @@ Ha egy meglévő laphoz szeretne másik elrendezést kiválasztani, hajtsa végr
 
 [Oldaltartalom hozzáférhetőségének ellenőrzése](verify-accessibility.md)
 
+[Dinamikus e-kereskedelmi oldalak létrehozása URL-paraméterek alapján](create-dynamic-pages.md)
 
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

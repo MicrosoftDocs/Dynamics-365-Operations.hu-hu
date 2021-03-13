@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: LedgerJournalSetup, LedgerParameters, AssetProposalDepreciation
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14091
 ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
-ms.openlocfilehash: 68ec3cb028462865e914cbcb25ff28dbaf9a4f01
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: cada62078b71dd304e90951ab0f4c1643beaa48c
+ms.sourcegitcommit: bd4763cc6088e114818e80bb1c27c6521b039743
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4444033"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "5107720"
 ---
 # <a name="one-voucher"></a>Egy bizonylat
 
@@ -55,25 +54,26 @@ Az Egy bizonylat funkció problémákat okoz a kiegyenlítés, az adószámítá
 
 Például feladhatja az alábbi többsoros bizonylatot.
 
-[![Példa](./media/example.png)](./media/example.png)
+[![Példa többsoros bizonylatra](./media/example.png)](./media/example.png)
 
 Ekkor létrehozza a **Szállítónkénti költségek** jelentést a **Pénzügyi információk** munkaterületen. Ezen a jelentésen a rendszer szállítócsoport, majd szállító szerint csoportosítja a költségszámla-egyenlegeket. A jelentés létrehozásakor a rendszer nem tudja megállapítani, melyik szállítói csoportok/szállítók esetében merült fel a 250,00 költség. Mivel a tranzakció részletei hiányoznak, a rendszer azt feltételezi, hogy a 250,00 összérték a bizonylaton található első szállítónál merült fel. Így a 250,00 költség, amely a 600120 fő számla egyenlegében szerepel, ekkor megjelenik a szállítói csoport vagy szállító alatt. Ugyanakkor nagyon valószínű, hogy a bizonylaton szereplő első szállító nem a megfelelő szállító volt. A jelentés ezért valószínűleg nem megfelelő.
 
-[![Kiadás](./media/expenses.png)](./media/expenses.png)
+[![Szállítónkénti költségek jelentésben](./media/expenses.png)](./media/expenses.png)
 
 ## <a name="the-future-of-one-voucher"></a>Az Egy bizonylat jövője
 
-A korábban említett problémák miatt az Egy bizonylat funkciót elavulttá nyilvánítjuk majd. Mivel azonban vannak ezen a funkción alapuló működési rések, a funkció elavulása nem egy időben fog történni. Ehelyett a következő ütemezést használja a rendszer:
+Az Egy bizonylat használata esetén előforduló problémák miatt ez a funkció végül elavulttá válik. Mivel azonban vannak ezen a funkción alapuló működési rések, a funkció elavulása nem egyszerre fog megtörténni. Ehelyett a következő ütemezést használja a rendszer:
 
-- **2018 tavaszi kiadás** – Alapértelmezés szerint a funkció ki lesz kapcsolva a **Több tranzakció engedélyezése egy bizonylat esetén** paraméteren keresztül a **Főkönyvi paraméterek** oldal **Általános** lapján. Azonban bekapcsolhatja a funkciót, ha a szervezetének olyan helyzetet kell kezelnie, amely a témakörben később ismertetett működési rések valamelyikének felel meg.
+- **2018 tavaszi kiadás** – Ez a funkció alapértelmezés szerint ki lesz kapcsolva a **Több tranzakció engedélyezése egy bizonylat esetén** paraméteren keresztül a **Főkönyvi paraméterek** oldal **Általános** lapján. Azonban visszakapcsolhatja a funkciót, ha a szervezetének olyan helyzetet kell kezelnie, amely a témakörben később ismertetett működési rések valamelyikének felel meg.
 
-    - Ha a vevők üzleti helyzete olyan, hogy nincs szükség az Egy bizonylat funkcióra, ne kapcsolják be a funkciót. A Microsoft nem javítja ki a „programhibákat”, amelyeket később ebben a témakörben azonosítunk, ha annak ellenére használják ezt a funkciót, hogy létezik egy másik megoldás.
-    - Az Egy bizonylatot ne használja az integrációkhoz, kivéve, ha a funkció a működési rések egyikéhez szükséges.
+    - Ha az üzleti helyzethez nem szükséges Egy bizonylat, akkor javasoljuk, hogy hagyja kikapcsolva a funkciót. A Microsoft nem javítja ki a „programhibákat”, amelyeket később ebben a témakörben azonosítunk, ha annak ellenére használják ezt a funkciót, hogy létezik másik megoldás.
+    - Javasoljuk, hogy ne használja az Egy bizonylatot integrációkhoz, kivéve, ha a funkció a dokumentált működési rések egyikéhez szükséges.
 
-- **Későbbi kiadások** – Az összes működési rés megszüntetése. **Miután a működési réseket megszüntettük, és új funkciókat hoztunk létre, még legalább egy évbe telik, mielőtt az Egy bizonylat funkciót véglegesen kikapcsoljuk**, mivel a vevőknek és független szoftverszállítóknak (ISV-k) elegendő időt kell adnunk, hogy az új funkciókra reagálni tudjanak. Például előfordulhat, hogy frissíteniük kell az üzleti folyamataikat, entitásaikat és integrációkat.
+- **Későbbi kiadások** – számos üzleti követelmény csak az Egy bizonylat segítségével teljesíthető. A Microsoftnak gondoskodnia kell arról, hogy a funkció értékcsökkenése után is teljesülni tudjanak a rendszerben az azonosított üzleti követelmények. Ennek megfelelően a működési hiányok kitöltéséhez valószínűleg új funkciókat kell hozzáadni. A Microsoft nem tud konkrét megoldást kínálni, mivel minden működési hiány más, és az üzleti követelmények alapján kell felmérni őket. Bizonyos működési hiányokat valószínűleg olyan funkciók írnak felül, amelyek megfelelnek az egyes üzleti követelményeknek. Előfordulhat azonban, hogy más hiányokat úgy lehet kitölteni, hogy lehetővé teszik a naplóban való bevitelt, mint amikor az Egy bizonylat funkciót használják, de javítani kell a rendszeren, hogy szükség szerint nyomon kövesse a részletesebb adatokat.
 
-> [!IMPORTANT]
-> A **Csak egy bizonylatszám** beállítás **nem** lett eltávolítva a naplónév-beállítások közül. A funkció továbbra is támogatott, ha a bizonylat csak főkönyvi számlatípusokat tartalmaz. A vevőknek körültekintően kell eljárniuk a beállítás használatakor, mert a bizonylat feladása nem történik meg, ha a **Csak egy bizonylatszám** beállítást használják, de aztán egynél több vevőt, szállítót, bankot, tárgyi eszközt vagy projektet adnak meg. Ezenkívül a vevők továbbra is megadhatnak többfajta analitikus számlatípust, például egy kifizetést egyetlen bizonylaton, amely **Szállító**/**Bank** típusú számlákat tartalmaz.
+Miután minden működési hiányt kitöltött, a Microsoft közli, hogy a funkció elavulttá válik. Az értékcsökkenés azonban a tájékoztatás után legalább egy évig nem lép hatályba. Bár a Microsoft nem tud becslést adni arról, hogy mikorra válik elavulttá az Egy bizonylat funkció, az értékcsökkenés valószínűleg legalább két év múlva következik be. A Microsoft irányelve az, hogy legalább 12 hónapot hagyjon az elavult funkció bejelentése és a tényleges értékcsökkenés között, hogy a vevőknek és független szoftverszállítóknak és független szoftverszállítóknak elegendő idejük legyen arra, hogy a módosításra reagáljanak. Például előfordulhat, hogy egy szervezetnek frissítenie kell az üzleti folyamatait, entitásait és integrációit.
+
+Az Egy bizonylat értékcsökkenése jelentős változás, amelyről széles körben folyik majd tájékoztatás. A tájékoztatás részeként a Microsoft frissíti ezt a témakört, közzétesz egy blogbejegyzést a Microsoft Dynamics 365 Finance blogon, frissíti az Eltávolított vagy elavult funkciók témakört, közli a változtatást a megfelelő Microsoft-konferenciákon stb.
 
 ## <a name="why-use-one-voucher"></a>Miért használjon egy bizonylatot?
 
@@ -127,7 +127,7 @@ A következő tárgyieszköz-tranzakciók szintén több tranzakciót hoznak lé
 > [!Note]
 > Tranzakciók bevitelekor győződjön meg arról, hogy minden tranzakció ugyanarra a tárgyi eszközre vonatkozik. A bizonylat nem lesz feladva, ha egynél több tárgyi eszközt tartalmaz, még akkor is , ha az **Új bizonylat** mező értéke Csak egy bizonylatszám a Főkönyv rész **Naplónevek** oldalán. Ha a bizonylatban egynél több tárgyi eszköz szerepel, akkor megjelenik a következő üzenet: **Csak egy tárgyieszköz-tranzakció lehet bizonylatonként**, és nem lehet feladni a bizonylatot.  
 
-### <a name="bills-of-exchange-and-promissory-notes"></a> Váltók és kötelezvények
+### <a name="bills-of-exchange-and-promissory-notes"></a>Váltók és kötelezvények
 Váltók és kötelezvények esetén szükséges az Egy bizonylat használata, mivel a tranzakciók a vevő vagy szállító egyenlegét egyik Kinnlevőségek/Kötelezettségek főkönyviszámláról egy másikra mozgatja át, a kifizetés állapotától függően.
 
 ## <a name="scenarios-that-dont-require-one-voucher"></a>Egy bizonylatot nem igénylő esetek
@@ -186,6 +186,3 @@ Ha korrigálni kell a Kinnlevőségek vagy a Kötelezettségek főkönyvi száml
 ### <a name="the-system-allows-it"></a>„A rendszer lehetővé teszi”
 
 A szervezetek gyakran csak azért használják az Egy bizonylat funkciót,mert a rendszer lehetővé teszi számukra, és nem gondolnak bele a következményekbe.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

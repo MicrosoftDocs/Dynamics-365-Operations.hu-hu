@@ -1,6 +1,6 @@
 ---
 title: ER Számláláshoz és összegzéshez használt formátum konfigurálása (2. rész – Számlálások konfigurálása)
-description: Az alábbi útmutató azt ismerteti, hogy a rendszergazda vagy elektronikus jelentésfejlesztői szerepkörhöz hozzárendelt felhasználó hogyan konfigurálhat egy elektronikus jelentési (ER) formátumot számlálás és összegzés céljára a már létrehozott szöveges kimeneti adatok alapján.
+description: Ez a témakör azt ismerteti, hogyan kell konfigurálni az Elektronikus jelentéskészítési formátumokat a már létrehozott szövegkimenet adatai alapján. (2. rész)
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9314a8cd5838333a20dd59dfb52f80a43d89b8c6
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 6215fe1f32bcb4833bd009b7c33e09edbba17817
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684691"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092997"
 ---
 # <a name="er-configure-format-to-do-counting-and-summing-part-2---configure-computations"></a>ER Számláláshoz és összegzéshez használt formátum konfigurálása (2. rész – Számlálások konfigurálása)
 
@@ -139,6 +139,3 @@ Az eljárás egy olyan szolgáltatáshoz tartozik, amely a Dynamics 365 for Oper
 83. Kattintson a Mentés gombra.
 84. Zárja be a lapot.
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

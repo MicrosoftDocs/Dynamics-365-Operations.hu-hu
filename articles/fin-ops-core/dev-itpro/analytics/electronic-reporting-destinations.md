@@ -1,9 +1,9 @@
 ---
 title: Elektronikus jelentéskészítés (ER) céljai
-description: Ez a témakör az Elektronikus jelentéskészítés (ER) rendeltetési helyeinek kezelésével, a támogatott célhelyek típusaival, valamint a biztonsági szempontokkal kapcsolatban tartalmaz tájékoztatást.
+description: Ez a témakör az Elektronikus jelentéskészítés rendeltetési helyeinek kezelésével, a támogatott célhelyek típusaival, valamint a biztonsági szempontokkal kapcsolatban tartalmaz tájékoztatást.
 author: nselin
 manager: AnnBe
-ms.date: 04/27/2020
+ms.date: 01/21/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: e4da9e09fe9e2c76426a117b6c4d83f5bc33851f
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 725ded9d777a65e5a38a7971c1da8cb74cf0dd47
+ms.sourcegitcommit: 872600103d2a444d78963867e5e0cdc62e68c3ec
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687158"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "5097281"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Elektronikus jelentéskészítés (ER) céljai
 
@@ -62,7 +62,7 @@ Ha az **Intrastat-jelentés** párbeszédpanel **Futtatás a háttérben** gyors
 Ha az **Igen** értékre állítja be a **Kötegelt feldolgozás** beállítást, akkor a program [kötegelt](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/batch-processing-overview) módban futtatja az ER-formátumot. A program létrehozta a megfelelő kötegelt feladatot, amely az **ER-paraméterek** **Futtatás hattérben** lapján létrehozott paraméterek alapján jön létre.
 
 > [!NOTE]
-> Egyfeladatleírás le sz kezdeményezve hogy tájékoztassa Önt egy ER-formátumleképezés futtatásáról. A végrehajtott ER-komponens nevét is tartalmazza.
+> Egy feladatleírás tájékoztatja Önt egy ER-formátumleképezés futtatásáról. A futtatott ER-komponens nevét is tartalmazza.
 
 [![ER-formátum futtatása](./media/ER_Destinations-RunInBatchMode.png)](./media/ER_Destinations-RunInBatchMode.png)
 
@@ -95,6 +95,8 @@ A Finance **10.0.9 előtti verzióiban** ugyanazon formátumú egyes eredményko
 Ezzel a lehetőséggel beállíthatja például, hogy az Excel-formátumú kimenő dokumentumok létrehozásához használt fájltípusok számára milyen célhelyek létezzenek. Egy cél ([Archív](er-destination-type-archive.md)) beállítható, hogy az eredeti Excel-fájlt az ER-feladatok arcihumában tároljon, és egy másik cél ([E-mail](er-destination-type-email.md)) konfigurálható, hogy egyidejűleg [konvertálja](#OutputConversionToPDF) az Excel-fájlt PDF formátumra, és elküldje a PDF-fájlt e-mailben.
 
 [![Több cél konfigurálása egyetlen formátumú elemhez](./media/ER_Destinations-SampleDestinations.png)](./media/ER_Destinations-SampleDestinations.png)
+
+ER-formátum futtatásakor a rendszer mindig futtat minden célt, amely a formátum összetevőihez van konfigurálva. Emellett a Finance **10.0.17-es és újabb verziókban** az ER-célokkal kapcsolatos funkciók tovább tökéletesítettek, és így különböző célkészleteket lehet konfigurálni egyetlen ER-formátumhoz. Ez a konfiguráció egy-egy adott felhasználói művelethez beállítottként jelöli meg a készleteket. Az ER API-t [kibővítettük](er-apis-app10-0-17.md), így a felhasználó által az ER-formátum futtatásával rendelkezésre áll egy művelet. A megadott műveletkód át van adni az ER-céloknak. A megadott műveletkódtól függően az ER-formátum különböző célokat futtathat. További tájékoztatás: [Műveletfüggő ER-célok konfigurálása](er-action-dependent-destinations.md).
 
 ## <a name="destination-types"></a>Céltípusok
 
@@ -154,7 +156,7 @@ Ha nem jelöli be a **Feldolgozás leállítása meghibásodáskor** jelölőné
 
 ## <a name="output-conversion-to-pdf"></a><a name="OutputConversionToPDF"></a>Kimenet átalakítása PDF-formátumba
 
-A PDF-átalakítási beállítással a kimenetet Microsoft Office formátumból (Excel/Word) konvertálhatja PDF-formátumba.
+A PDF-átalakítási beállítással a Microsoft Office (Excel vagy Word) formátumú kimenetet konvertálhatja PDF-formátumba.
 
 ### <a name="make-pdf-conversion-available"></a>A PDF-átalakítás elérhetővé tétele
 
@@ -164,21 +166,20 @@ Ha azt szeretné, hogy a PDF-átalakítási beállítás elérhető legyen az ak
 
 ### <a name="applicability"></a>Alkalmazhatóság
 
-A PDF-átalakítási beállítás csak azon fájlösszetevők esetében kapcsolható be, amelyeknél a kimenet Microsoft Office Excel vagy Word formátumú (**Excel-fájl**) létrehozásához használatosak. Ha ez a beállítás be van kapcsolva, a program automatikusan PDF-formátumra alakítja az Office formátumú kimenetet.
+A PDF-átalakítási beállítás csak azon fájlösszetevők esetében kapcsolható be, amelyeknél a kimenet Office (Excel vagy Word) formátumban (**Excel-fájl**) generálódik. Ha ez a beállítás be van kapcsolva, a program automatikusan PDF-formátumra alakítja az Office formátumú kimenetet.
 
 ### <a name="limitations"></a>Korlátozások
 
 > [!NOTE]
 > Ez a funkció egy előnézeti funkció, azok a felhasználási feltételek vonatkoznak rá, amelyek itt olvashatók: [Kiegészítő felhasználási feltételek a Microsoft Dynamics 365 előnézetek esetén](https://go.microsoft.com/fwlink/?linkid=2105274).
 
-> [!NOTE]
-> A PDF-átalakítási beállítás csak felhőtelepítések esetén érhető el.
->
-> A létrehozott PDF-fájl legfeljebb 300 oldalas lehet.
->
-> A Microsoft Dynamics 365 Finance 10.0.9 (2020. április) verziójában csak a fekvő laptájolást támogatja a program az Excel-kimenetből előállított PDF-dokumentumban. A Dynamics 365 Finance 10.0.10 verzió (2020. május) kiadásával [megadhatja a lap tájolását](#SelectPdfPageOrientation) az Excel-kimenetből előállított PDF-dokumentumban, miközben beállít egy ER-célhelyet.
->
-> Csak a Windows operációs rendszer közös rendszerbetűkészletei használhatók olyan kimenet átalakításához, amely nem tartalmaz beágyazott betűtípusokat.
+A PDF-átalakítási beállítás csak felhőtelepítések esetén érhető el.
+
+A létrehozott PDF-fájl legfeljebb 300 oldalas lehet.
+
+A Finance **10.0.9 verziójában** csak a fekvő laptájolást támogatja a program az Excel-kimenetből előállított PDF-dokumentumban. A Finance **10.0.10-es (2020. május) és későbbi** verzióiban [megadhatja a lap tájolását](#SelectPdfPageOrientation) az Excel-kimenetből előállított PDF-dokumentumnak, miközben beállít egy ER-célhelyet.
+
+Csak a Windows operációs rendszer közös rendszerbetűkészletei használhatók olyan kimenet konvertálásához, amely nem tartalmaz beágyazott betűtípusokat.
 
 ### <a name="use-the-pdf-conversion-option"></a>A PDF-konverzió lehetőség használata
 
@@ -188,16 +189,16 @@ Ha be kívánja kapcsolni a PDF-konverziót egy célhelyre, jelölje be a **Konv
 
 ### <a name=""></a><a name="SelectPdfPageOrientation">Lap tájolásának kiválasztása PDF-konverzióhoz</a>
 
-Ha Excel-formátumban generál egy Elektronikus jelenrés konfigurációt, és PDF formátumra szeretné átalakítani, akkor megadhatja a PDF-fájl tájolását. Ha bejelöli a **Konvertálás PDF formátumba** jelölőnégyzetet, hogy egy célhelyre bekapcsolja a PDF-konverziót egy Excel formátumú kimeneti fájl létrehozásához, akkor a **Lap tájolása** mező elérhetővé válik a **PDF-konverzió beállításai** gyorslapon. A **Lap tájolása** mezőben válassza ki a preferált tájolást.
+Ha Excel-formátumban generál egy Elektronikus jelenrés konfigurációt, és PDF-formátumra szeretné átalakítani, akkor megadhatja a PDF-dokumentum tájolását. Ha bejelöli a **Konvertálás PDF formátumba** jelölőnégyzetet, hogy egy célhelyre bekapcsolja a PDF-konverziót egy Excel formátumú kimeneti fájl létrehozásához, akkor a **Lap tájolása** mező elérhetővé válik a **PDF-konverzió beállításai** gyorslapon. A **Lap tájolása** mezőben válassza ki a preferált tájolást.
 
 [![Lap tájolásának kiválasztása PDF-konverzióhoz](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)
 
 > [!NOTE]
-> Ha azt szeretné, hogy a PDF laptájolása kiválasztható legyen telepítenie kell a Microsoft Dynamics 365 Finance 10.0.10 (2020, május) vagy újabb verzióját.
+> Ha azt szeretné, hogy a PDF laptájolása kiválasztható legyen, telepítenie kell a Finance 10.0.10 vagy újabb verzióját.
 >
 > A kiválasztott laptájolás minden olyan ER-konfigurációra vonatkozik, amely Excel-formátumban jön létre, majd PDF formátumra lesz konvertálva.
 >
-> Ha egy konvertált PDF-fájl egy ER-konfigurációból jön létre Word formátumban, akkor a program a Word-dokumentumból veszi át a PDF-fájl laptájolását.
+> Ha egy Word-formátumú ER-konfigurációt konvertálnak PDF-formátumban, akkor a program a Word-dokumentumból veszi át a PDF-dokumentum laptájolását.
 
 ## <a name="security-considerations"></a>Biztonsági megfontolások
 
@@ -225,7 +226,7 @@ Szám A dokumentumkezelőben meghatározott és használt, alapértelmezett Micr
 
 ### <a name="what-is-the-purpose-of-the-file-destination-in-the-destination-settings-what-does-that-setting-do"></a>Mi a célja a Fájl cél lehetőségnek a célbeállításoknál? Mire jó ez a beállítás?
 
-A **Fájl** cél a párbeszédpanel irányítására szolgál. Ha bekapcsolja ezt a célt, vagy ha a konfigurációhoz nincs cél megadva, egy eredményfájl létrehozása után megjelenik a megnyitás vagy mentés párbeszédpanel.
+A célként használt **Fájl** a webböngésző párbeszédpaneljének szabályozására használható, amikor ER-formátumot futtat interaktív módban. Ha bekapcsolja ezt a célt, vagy ha a konfigurációhoz nincs cél megadva, egy eredményfájl létrehozása után megjelenik a megnyitás vagy mentés párbeszédpanel a webböngészőjében.
 
 ### <a name="can-you-give-an-example-of-the-formula-that-refers-to-a-vendor-account-that-i-can-send-email-to"></a>Létezik példa egy olyan receptúrára, ami egy szállítói fiókra utaló receptúrát tartalmaz, ahová emaileket küldhetek?
 
@@ -239,5 +240,4 @@ Az Ön formátumának először elérhetőnek kell lennie az ER-konfigurációkn
 
 [Elektronikus jelentéskészítés (ER) áttekintése](general-electronic-reporting.md)
 
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+[Műveletfüggő ER-célok konfigurálása](er-action-dependent-destinations.md)

@@ -1,6 +1,6 @@
 ---
 title: ER – Szükséges konfigurációk létrehozása adatok importálásához egy külső fájlból
-description: A következő lépések leírják, hogy egy Rendszergazda vagy Elektronikus jelentések fejlesztője szerepkörrel rendelkező felhasználó miként hozhat létre egy elektronikus jelentés (ER) konfigurációt adatok importálására a Microsoft Dynamics 365 Finance alkalmazásba külső fájlból.
+description: Ez a témakör bemutatja, hogyan lehet az elektronikus jelentési konfigurációt úgy megtervezni, hogy külső fájlból importáljon adatokat a Microsoft Dynamics 365 Finance alkalmazásába.
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d9b26f4963f32be34ae1d954a3f363be7ea28d41
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 0492fae6cfad505fc9fee5cd20f483c9c6d2a061
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684282"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093723"
 ---
 # <a name="er-create-required-configurations-to-import-data-from-an-external-file"></a>ER – Szükséges konfigurációk létrehozása adatok importálásához egy külső fájlból
 
@@ -254,6 +254,3 @@ Hajtsa végre ezt a formátumleképezést tesztelési célokra. Használja a kor
 27. Zárja be a lapot.
 28. Zárja be a lapot.
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

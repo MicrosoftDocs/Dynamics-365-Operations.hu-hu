@@ -1,6 +1,6 @@
 ---
 title: A konfiguráció importálása a Lifecycle Services szolgáltatásból
-description: Ez a témakör leírja, hogy a Rendszergazda vagy az Elektronikus jelentések fejlesztője szerepkörrel rendelkező felhasználó miként importálhat új Elektronikus jelentés (ER) konfigurációt a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásból.
+description: Ez a témakör azt ismerteti, hogyan lehet importálni egy Elektronikus jelentéskészítési (ER) konfiguráció új verzióját a Microsoft Dynamics Lifecycle Services (LCS) alkalmazásból.
 author: NickSelin
 manager: AnnBe
 ms.date: 09/14/2020
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5c43cdce8d073f04a3158c8beb13a5376e669a4c
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 602886b0dd729b8ec52940f42bd1c393dac8acda
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684451"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093695"
 ---
 # <a name="import-a-configuration-from-lifecycle-services"></a>A konfiguráció importálása a Lifecycle Services szolgáltatásból
 
@@ -103,6 +103,3 @@ Az alábbi példában kiválasztja az ER konfiguráció kívánt verzióját, ma
     Ebben a példában válassza ki a **Megosztott** állapotú konfiguráció verzióját.
 
     Ne feledje, hogy már a kijelölt adatmodell konfigurációjának 1-es verziója is elérhető.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

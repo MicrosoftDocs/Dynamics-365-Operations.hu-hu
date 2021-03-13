@@ -1,6 +1,6 @@
 ---
 title: Alkalmazás-metaadatokhoz való hozzáférés összekapcsolt alkalmazások használatával
-description: Az ebben a témakörben leírt lépések azt mutatják be, hogy a Regulatory Configuration Service (RCS) felhasználói hogyan tervezhetik meg egy új elektronikus jelentési (ER) modell hozzárendelését a Finance and Operations metaadatainak használatával.
+description: Az ebben a témakörben leírt lépések azt mutatják be, hogy a Regulatory Configuration Service felhasználói hogyan tervezhetik meg egy új elektronikus jelentési modell hozzárendelését a metaadatok használatával.
 author: NickSelin
 manager: AnnBe
 ms.date: 06/29/2019
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-06-28
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 751ac21dc056373e1cd89a5149bf38789134e0cc
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 457d5760fb704b7a93ce16c081b7c5e6d0ff19c1
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682141"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093330"
 ---
 # <a name="access-application-metadata-by-using-connected-applications"></a>Alkalmazás-metaadatokhoz való hozzáférés összekapcsolt alkalmazások használatával
 
@@ -113,6 +113,3 @@ A következő lépések leírják, hogy a Regulatory Configuration Service (RCS)
 11. Zárja be a lapot. 
 
 Ha egy másik verziójú alkalmazás metaadatainak használatával szeretné értékelni ezt a modellt, akkor regisztráljon egy másik összekapcsolt alkalmazást, rendelje hozzá a modell hozzárendeléséhez, és ellenőrizze az új metaadatokkal összevetve.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

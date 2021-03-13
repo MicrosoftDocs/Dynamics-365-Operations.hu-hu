@@ -1,6 +1,6 @@
 ---
 title: Felhasználói beállítások a pénzügyi jelentés tervezőben
-description: A cikk ismerteti, hogyan állítson be felhasználói beállításokat a felhasználói műveletek testreszabásához a pénzügyi jelentés tervezőben, valamint ezek a beállítások meghatározzák a kezdeti bejelentkezés-élményt. Azt is szabályozhatja, hogy hogyan jelenjenek meg az egyes jelentések, a jelentés könyvtár, és az alapértelmezett file elérési helye.
+description: A témakör ismerteti, hogyan állítson be felhasználói beállításokat a felhasználói műveletek testreszabásához a pénzügyi jelentés tervezőben, valamint ezek a beállítások meghatározzák a kezdeti bejelentkezés-élményt.
 author: aprilolson
 manager: AnnBe
 ms.date: 06/20/2017
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: a7d7124da3d0e9596f364c17065c95610384a8ca
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 46a681b3a783b4f76946d2a972d73a11254ec56c
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687377"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093187"
 ---
 # <a name="user-preferences-in-financial-report-designer"></a>Felhasználói beállítások a pénzügyi jelentés tervezőben
 
@@ -72,6 +72,3 @@ A cikk ismerteti, hogyan állítson be felhasználói beállításokat a felhasz
 ## <a name="additional-resources"></a>További erőforrások
 
 [Pénzügyi jelentéskészítés](financial-reporting-intro.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

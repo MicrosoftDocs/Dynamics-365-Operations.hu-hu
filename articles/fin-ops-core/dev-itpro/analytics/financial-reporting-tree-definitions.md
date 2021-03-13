@@ -1,6 +1,6 @@
 ---
 title: Jelentési fa definíciója a pénzügyi jelentésekben
-description: Ez a cikk a jelentési fa definíciójáról tartalmaz információt. A jelentési fa definíciója a jelentés azon összetevője vagy építőeleme, amely segít meghatározni szervezetének szerkezetét és hierarchiáját.
+description: Ez a témakör a jelentési fa definícióit ismerteti. A jelentési fa definíciója egy jelentés-összetevő, amely meghatározza a szervezet szerkezetét.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 10/07/2019
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 8ae024c2d791e1219c7383dc95283219a9300eac
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 17f749863af3c37658935d5065cf053d0a165c1e
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682673"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093900"
 ---
 # <a name="reporting-tree-definitions-in-financial-reports"></a>Jelentési fa definíciója a pénzügyi jelentésekben
 
@@ -220,6 +220,3 @@ Az alábbi példák lehetséges információkat mutatnak, melyeket a jelentési 
 ## <a name="additional-resources"></a>További erőforrások
 
 [Pénzügyi jelentéskészítés](financial-reporting-intro.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

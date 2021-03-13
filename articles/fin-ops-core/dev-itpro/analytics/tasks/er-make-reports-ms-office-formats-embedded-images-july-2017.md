@@ -1,6 +1,6 @@
 ---
 title: Konfigurációk tervezése jelentések készítéséshez Office formátumban, beágyazott képekkel
-description: E témakör lépései azt mutatják be, hogyan tervezhetők elektronikus jelentési (ER) konfigurációk Microsoft Office formátumokban (Excelben és Wordben) beágyazott képeket tartalmazó elektronikus dokumentumok létrehozására.
+description: Ez a témakör azt mutatja be, hogyan tervezhetők konfigurációk beágyazott képeket tartalmazó Excel- és Word-formátumú elektronikus dokumentumok létrehozására.
 author: NickSelin
 manager: AnnBe
 ms.date: 01/23/2018
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0145565ba060308162620f29a42499b0bffe6496
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: b60ed6b07851c44ceb4b8f313bc65f04b802e646
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684402"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093670"
 ---
 # <a name="design-configurations-to-generate-reports-in-office-format-that-have-embedded-images"></a>Konfigurációk tervezése jelentések készítéséshez Office formátumban, beágyazott képekkel
 
@@ -90,6 +90,3 @@ A jelen eljárás lépéseinek lezáráshoz először hajtsa végre az „ER –
  30. AZ Ellenőrző tranzakció létrehozásának engedélyezése az inaktív bankszámláknál: mezőben válassza az Igen lehetőséget.  
  31. Kattintson a Mentés gombra.  
  32. Zárja be a lapot.  
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

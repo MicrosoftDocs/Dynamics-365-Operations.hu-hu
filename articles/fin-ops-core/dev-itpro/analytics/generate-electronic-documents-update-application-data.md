@@ -1,6 +1,6 @@
 ---
 title: Elektronikus dokumentumok létrehozása létrehozása és alkalmazásadatok frissítése ER használatával.
-description: Lehetőség van elektronikus jelentési (ER) formátumok tervezésére, amelyek kimenő elektronikus dokumentumok létrehozására használhatók az alkalmazásban. Olyan ER-formátumokat is készíthet, amelyek a bejövő elektronikus dokumentumokat elemzik, és ezeknek a dokumentumoknak a tartalmát használják az alkalmazásadatok frissítésére.
+description: Lehetőség van elektronikus jelentési (ER) formátumok tervezésére, amelyek kimenő elektronikus dokumentumok létrehozására használhatók az alkalmazásban.
 author: NickSelin
 manager: AnnBe
 ms.date: 11/01/2017
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4b9e17d67c437d384ab941d28b8d5ce2b0e3738f
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 4ae3405a882ac37fd9758d8ff0902896562fa06b
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688388"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093873"
 ---
-# <a name="generate-electronic-documents-and-update-application-data-by-using-er"></a>Elektronikus dokumentumok létrehozása létrehozása és alkalmazásadatok frissítése ER használatával.
+# <a name="generate-electronic-documents-and-update-application-data-by-using-er"></a>Elektronikus dokumentumok generálása és alkalmazásadatok frissítése ER használatával
 
 [!include [banner](../includes/banner.md)]
 
@@ -40,6 +40,3 @@ Ezzel a funkcióval kapcsolatos további információért játssza le a Dokument
 - [ER adatmodellkonfiguráció: Instrastat (modell)](https://go.microsoft.com/fwlink/?linkid=849038)
 - [ER modell leképezésének konfigurációja: Intrastat (leképezés)](https://go.microsoft.com/fwlink/?linkid=849038)
 - [ER formátumkonfiguráció: Intrastat (formátum)](https://go.microsoft.com/fwlink/?linkid=849038)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
