@@ -2,7 +2,7 @@
 title: Elemzési jelentések hibaelhárítása
 description: Ez a cikk bemutatja, hogy mi a teendő, ha a vevő adatainak módosításai nem jelennek meg a vevő munkaterületein.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
@@ -17,29 +17,29 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 99d9eb3a16e6470820a2eb0a19c1d50e89bd3d36
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c5e1a1d7044567a07acedf71e65ed244275acfd9
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418881"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5112820"
 ---
-# <a name="troubleshoot-analytic-reports"></a><span data-ttu-id="dcc02-103">Elemzési jelentések hibaelhárítása</span><span class="sxs-lookup"><span data-stu-id="dcc02-103">Troubleshoot analytic reports</span></span>
+# <a name="troubleshoot-analytic-reports"></a><span data-ttu-id="9e8d2-103">Elemzési jelentések hibaelhárítása</span><span class="sxs-lookup"><span data-stu-id="9e8d2-103">Troubleshoot analytic reports</span></span>
 
-<span data-ttu-id="dcc02-104">**Kibocsátás**</span><span class="sxs-lookup"><span data-stu-id="dcc02-104">**Issue**</span></span>
+<span data-ttu-id="9e8d2-104">**Kibocsátás**</span><span class="sxs-lookup"><span data-stu-id="9e8d2-104">**Issue**</span></span>
 
-<span data-ttu-id="dcc02-105">A vevő adatainak módosításai nem jelennek meg az **Elemzések** lapon a vevő egyik munkaterületén sem.</span><span class="sxs-lookup"><span data-stu-id="dcc02-105">A customer's data changes don't appear on the **Analytics** tabs of any of the customer's workspaces.</span></span>
+<span data-ttu-id="9e8d2-105">A vevő adatainak módosításai nem jelennek meg az **Elemzések** lapon a vevő egyik munkaterületén sem.</span><span class="sxs-lookup"><span data-stu-id="9e8d2-105">A customer's data changes don't appear on the **Analytics** tabs of any of the customer's workspaces.</span></span>
 
-<span data-ttu-id="dcc02-106">**Ok**</span><span class="sxs-lookup"><span data-stu-id="dcc02-106">**Cause**</span></span>
+<span data-ttu-id="9e8d2-106">**Ok**</span><span class="sxs-lookup"><span data-stu-id="9e8d2-106">**Cause**</span></span>
 
-<span data-ttu-id="dcc02-107">Alapértelmezés szerint a Microsoft Power BI jelentések négy óránként frissülnek, a Mérték telepítése kötegelt feladat ütemezése szerint.</span><span class="sxs-lookup"><span data-stu-id="dcc02-107">By default, Microsoft Power BI reports are refreshed every four hours, according to the schedule of the Deploy measurement batch job.</span></span>
+<span data-ttu-id="9e8d2-107">Alapértelmezés szerint a Microsoft Power BI jelentések négy óránként frissülnek, a Mérték telepítése kötegelt feladat ütemezése szerint.</span><span class="sxs-lookup"><span data-stu-id="9e8d2-107">By default, Microsoft Power BI reports are refreshed every four hours, according to the schedule of the Deploy measurement batch job.</span></span>
 
-<span data-ttu-id="dcc02-108">**Felbontás**</span><span class="sxs-lookup"><span data-stu-id="dcc02-108">**Resolution**</span></span>
+<span data-ttu-id="9e8d2-108">**Felbontás**</span><span class="sxs-lookup"><span data-stu-id="9e8d2-108">**Resolution**</span></span>
 
-<span data-ttu-id="dcc02-109">A probléma lehet, hogy csak az időzítésen múlik.</span><span class="sxs-lookup"><span data-stu-id="dcc02-109">This issue might just be a matter of timing.</span></span> <span data-ttu-id="dcc02-110">Kövesse az alábbi lépéseket a kötegelt feladat megkezdéséhez és az Elemzések munkaterületek frissítéséhez.</span><span class="sxs-lookup"><span data-stu-id="dcc02-110">Follow these steps to start the batch job and update the analytics workspaces.</span></span>
+<span data-ttu-id="9e8d2-109">A probléma lehet, hogy csak az időzítésen múlik.</span><span class="sxs-lookup"><span data-stu-id="9e8d2-109">This issue might just be a matter of timing.</span></span> <span data-ttu-id="9e8d2-110">Kövesse az alábbi lépéseket a kötegelt feladat megkezdéséhez és az Elemzések munkaterületek frissítéséhez.</span><span class="sxs-lookup"><span data-stu-id="9e8d2-110">Follow these steps to start the batch job and update the analytics workspaces.</span></span>
 
-1. <span data-ttu-id="dcc02-111">Nyissa meg a **Kötegelt feladatok** oldalt a **Rendszerfelügyelet \> Hivatkozások \> Kötegelt feladatok \> Kötegelt feladatok** menüpontban.</span><span class="sxs-lookup"><span data-stu-id="dcc02-111">Open the **Batch jobs** page at **System administration \> Links \> Batch jobs \> Batch jobs**.</span></span> <span data-ttu-id="dcc02-112">Azt is megteheti, hogy a Keresésben adja meg **Kötegelt feladatok** kifejezést.</span><span class="sxs-lookup"><span data-stu-id="dcc02-112">Alternatively, use Search, and enter **Batch Jobs**.</span></span>
-1. <span data-ttu-id="dcc02-113">Keresse meg a **Mérték telepítése** feladatot a listában.</span><span class="sxs-lookup"><span data-stu-id="dcc02-113">Find the **Deploy measurement** job in the list.</span></span>
-1. <span data-ttu-id="dcc02-114">Válassza a **Szerkesztés** lehetőséget az oldal felső részén, és állítsa az ütemezett kezdő dátumot/idépontot olyan értékre, amely a jelenlegi időhöz közelebb frissíti az elemzéseket.</span><span class="sxs-lookup"><span data-stu-id="dcc02-114">Select **Edit** at the top of the page, and set the scheduled start date/time to a value that will refresh the analytics closer to the current time.</span></span>
+1. <span data-ttu-id="9e8d2-111">Nyissa meg a **Kötegelt feladatok** oldalt a **Rendszerfelügyelet \> Hivatkozások \> Kötegelt feladatok \> Kötegelt feladatok** menüpontban.</span><span class="sxs-lookup"><span data-stu-id="9e8d2-111">Open the **Batch jobs** page at **System administration \> Links \> Batch jobs \> Batch jobs**.</span></span> <span data-ttu-id="9e8d2-112">Azt is megteheti, hogy a Keresésben adja meg **Kötegelt feladatok** kifejezést.</span><span class="sxs-lookup"><span data-stu-id="9e8d2-112">Alternatively, use Search, and enter **Batch Jobs**.</span></span>
+1. <span data-ttu-id="9e8d2-113">Keresse meg a **Mérték telepítése** feladatot a listában.</span><span class="sxs-lookup"><span data-stu-id="9e8d2-113">Find the **Deploy measurement** job in the list.</span></span>
+1. <span data-ttu-id="9e8d2-114">Válassza a **Szerkesztés** lehetőséget az oldal felső részén, és állítsa az ütemezett kezdő dátumot/idépontot olyan értékre, amely a jelenlegi időhöz közelebb frissíti az elemzéseket.</span><span class="sxs-lookup"><span data-stu-id="9e8d2-114">Select **Edit** at the top of the page, and set the scheduled start date/time to a value that will refresh the analytics closer to the current time.</span></span>
 
 ![Kötegelt feladatok](media/batch-jobs.png)
