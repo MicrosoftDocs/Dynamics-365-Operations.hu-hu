@@ -1,7 +1,7 @@
 ---
 title: A könyvvizsgálati irányelvmegsértések és esetek
 description: Ez a cikk bemutatja, hogyan jönnek létre a naplózási ügyek a naplózási irányelvszabályok megsértése által. Információkat tartalmaz továbbá arról, hogyan alkalmazzák a naplózási irányelvek a dokumentumok határidő-intervallum szerinti kiválasztását.
-author: ryansandness
+author: panolte
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: AuditPolicyAdditionalOption, AuditPolicyRule
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 13091
 ms.assetid: e0e66c6d-c396-4a9d-b3b6-3641d130fdc0
 ms.search.region: Global
-ms.author: ryansand
+ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d14894d331037033b27fac3fd7ff98c5521eaf98
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ddd403bfe82b1a7d3c0c5999f89bde19f1bba5e8
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4443936"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5022105"
 ---
 # <a name="audit-policy-violations-and-cases"></a>A könyvvizsgálati irányelvmegsértések és esetek
 
@@ -61,6 +60,3 @@ További információ: [Könyvvizsgálati irányelvszabály](audit-policy-rules.
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

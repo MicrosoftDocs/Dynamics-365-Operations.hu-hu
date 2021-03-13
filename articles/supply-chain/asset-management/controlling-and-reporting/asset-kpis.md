@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: EntAssetObjectKPI
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3ebbb1016bafed8ad9fb998fc76152e215c08c3e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f75db96926e72bab80d0a65ce6f0ab3a92590699
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429418"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5021780"
 ---
 # <a name="asset-kpis"></a>Eszköz KPI-k
 
@@ -90,6 +89,3 @@ Az alábbi ábra négy eszköz KPI-számításának képernyőképét jeleníti 
 - Több eszköz is kiválasztható az **Összes eszköz** lehetőségnél, majd kattintson az **Eszköz KPI** gombra az **Általános** lapon. Ezután kattintson az **OK** gombra az **Eszköz KPI-k kiszámítása** párbeszédpanelen a kiválasztott eszközökhöz tartozó KPI-k számításához.  
 - A KPI-számítás eredményei nem kötelező jelleggel tartalmazhatják a [karbantartás miatti üzemkimaradás regisztrációkat](../work-orders/maintenance-downtime.md), a karbantartás miatti üzemkimaradás okkódok beállításának és használatának beállításától függően. 
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
