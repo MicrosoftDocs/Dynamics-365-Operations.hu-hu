@@ -3,24 +3,23 @@ title: Jogszabály-követési frissítések
 description: Ez a témakör felsorolja azokat a Microsoft Dynamics 365 Finance tervezett és kiadott szabályozói frissítéseit.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 11/13/2020
+ms.date: 02/04/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 46e9b3c3d47207715d0eee689913073d363f3af3
-ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
+ms.openlocfilehash: a09ac2c3c198bf7d7d34a1ae1739af6b62d8dce7
+ms.sourcegitcommit: 2093c9dc31d1b60b3114085d9cef48fdbbb0ca0d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "4517500"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5118655"
 ---
 # <a name="regulatory-updates"></a>Jogszabály-követési frissítések
 
@@ -43,43 +42,34 @@ A legújabb szabályozó frissítésekkel kapcsolatos tervekkel kapcsolatosan te
 |Ország/régió|Kiadás dátuma|Kiadás verziója|Jogszabály-követési frissítés|
 |--------------------|---------------|-------|-------|
 |      Ausztria         |   Szeptember 2020.      | 10.0.15      |   A 2020-es jelentéshez már módosult az U30 adóbevallás formátuma   |
-|      Bahrein         |   június 2020.      | 10.0.13      |   Számlakibocsátás határideje (GCC)   |
-|      Bahrein         |   Szeptember 2020.      | 10.0.13      |   Projektszámla Bahreinhez   |
-|      Bahrein         |   június 2020.      | 10.0.13      |   Áfabevallás Bahreinhez – Tranzakcióleírás engedélyezése   |   
-|      Brazília         |   2020. augusztus      | 10.0.14, 10.0.13      |   ADRCST-nyilatkozat PR   |
-|      Brazília         |   május 2020.      | 10.0.13      |   SPED ECF layout 6   |
-|      Brazília         |   július 2020.      | 10.0.13      |   SPED Fiscal – Record C176 - RS state   |
-|      Brazília         |   Október 2020.      | 10.0.16, 10.0.15HF, 10.0.14HF, 10.0.13HF      |   NF-e NT2019.001 v1.51 - Az ellenőrzési szabályok elfogadása a Distrito Federal juttatáskód alapján   |
-|      Brazília         |   Október 2020.      | 10.0.16      |   SPED pénzügy – 015-es elrendezés   |
-|      Brazília         |   2020. november      | 10.0.15HF      |   SPED Fiscal ICMS / IPI rekord C176 frissítés RS állapothoz   |
+|      Belgium         |   december 2020.      | 10.0.16      |   Belgium: A Főkönyvi tranzakciók exportálása jelentés teljesítményének javítása a Dynamics 365 Finance rendszerben   |   
+|      Brazília         |   2020. november      | 10.0.15HF      |   SPED Fiscal ICMS/IPI – Record C176 - RS state   |
+|      Brazília         |   Október 2020.      | 10.0.16, 10.0.15HF      |   NF-e NT2019.001 v1.51 - Az ellenőrzési szabályok elfogadása a Distrito Federal juttatáskód alapján   |
+|      Brazília         |   2020. október, 2020. november      | 10.0.16, 10.0.15HF      |   SPED pénzügy – 015-es elrendezés   |
 |      Brazília         |   Október 2020.      | 10.0.16      |   DRCST nyilatkozat SC - SEF 262/2020   |
 |      Brazília         |   Október 2020.      | 10.0.16      |   SPED Fiscal ICMS / IPI rekord C176   |
-|      Cseh Köztársaság      |   július 2020.      | 10.0.13      |   Áfaellenőrzési nyilatkozat módosítások az XML-sémában (számla listázása)   |
-|      Cseh Köztársaság         |   július 2020.      | 10.0.13      |   Áfanyilatkozat XML-ben, áfabevallás előnézete az Excel programban, és áfaellenőrzési nyilatkozat XML-formátumok az adóbevallás modelljén alapulva   |
-|      Európa        |   2020. augusztus       | 10.0.14      |   Partner áfaazonosítójának átvitele az Intrastat rendszerbe  |
-|      Finnország         |   július 2020.       | 10.0.13      |   Finnország elektronikus számláinak támogatása  |
-|      India         |   július 2020.      | 10.0.13      |   TCS az áruk értékesítésére vonatkozóan a 206C (1H) szakasz szerint -küszöbérték a tranzakciók PAN alapú felhalmozása alapján.  |
-|      India         |   2020. augusztus – 2020. június      | 10.0.13      |   Jóváírási értesítés vagy terhelési értesítés exportszámlával szemben  |
-|      India         |   2020. augusztus      | 10.0.13      |   Elektronikus számlák GST szerint  |
-|      India         |   július 2020.      | 10.0.13      |   Új GSTR (ANX-1és ANX-2) offline eszköz (béta verzió)  |
-|      India         |   Október 2020.      | 10.0.14HF, 10.0.13HF      |   E-számla a GST szerint az indiai készletátutalási sorrendben|
-|      India         |   Október 2020.      | 10.0.14HF, 10.0.13HF      |   E-számla a GST alapján Indiában, több GSTIN regisztrációval|
-|      India         |   Szeptember 2020.      | 10.0.13HF      |   Adóelőleg-kulcs 3/5 tizedesjegyben|
-|      India         |   Szeptember 2020.      | 10.0.14HF      |   Számszekvenciacsoport: „GSTNSG”, tranzakció típusa: „GST számla” a „0073” adóinformációs GST hivatkozási számszekvenciacsoporthoz kell beállítani|
-|      Olaszország         |   július 2020.      | 10.0.13      |   Olasz elektronikus számlák formátumának változásai – FatturaPA |
-|      Malajzia         |   július 2020.      | 10.0.13      |   SST-jelentés |
-|      Mexikó         |   Szeptember 2020.      | 10.0.13HF      |   CFDI URL-séma helye az Anexo 20 dokumentum alapján |
+|      Brazília         |   december 2020.      | 10.0.17, 10.0.16HF, 10.0.15HF      |   NT-e NT2020.006 – A digitális platform közvetítőjének azonosítója (Elrendezési és ellenőrzési szabályok frissítései)   |
+|      Európa        |   Január 2021.       | 10.0.17, 10.0.16HF, 10.0.15HF      |   Brexit – Észak-Írországi Protokoll hatása az EU-országok közösségen belüli kereskedelmi jelentéseire  |
+|      Németország        |   Január 2021.       | 10.0.16HF      |   Az ELSTER UstVA áfára vonatkozó előzetes értesítési formátumot két új mezővel bővítették (37,50) a behajthatatlan tartozások írásakor  |
+|      Németország        |   Január 2021.       | 10.0.17      |   Változások az ELSTER áfára vonatkozó előzetes értesítési XML-struktúrában (UstVA)  |
+|      Globális        |   Január 2021.       | 10.0.16      |   Fordított költségmechanizmus engedélyezése áfa/GST-sémához  |
+|      India         |   december 2020.      | 10.0.16, HF, 10.0.15HF      |   TCS a 206 9(1H) áruértékesítési szakasz módosítása a CBDT-sajtóközlemény alapján  |
+|      Lettország         |   december 2020.      | 10.0.17      |   Az Intrastat formátum frissítése 2021-től  |
+|      Mexikó         |   december 2020.      | 10.0.17, 10.0.16, 10.0.15      |   „Monto” attribútum frissítése |
 |      Hollandia         |   Október 2020.      | 10.0.16     |   Az Intrastat formátum frissítése 2021-től |
-|      Norvégia         |   2020. augusztus      | 10.0.14     |   SAF-T - a tranzakciók „Bizonylat” szerinti csoportosítási szintjét a „Napló” helyett a „Tranzakció” elem szintjén kell jelenteni |
-|      Lengyelország          |   Szeptember 2020.     | 10.0.14     |   Lengyelország: JPK-V7M (VDEK) Excel-formátum – az SSRS-jelentés helyett  |
-|      Lengyelország          |   július 2020.     | 10.0.15, 10.0.14HF, 10.0.13     |   Önkéntes felosztott fizetés javításai |
-|      Lengyelország          |   Október 2020.     | 10.0.13HF     |   Kötelező felosztott fizetés javításai |
-|      Lengyelország          |   2020. november     | 10.0.16, 10.0.15, 10.0.14, 10.0.13     |   JPK-V7M (VDEK) – Értékesítési bizonylattípus FP és RO kiskereskedelmi tranzakciókhoz |
+|      Hollandia         |   december 2020.      | 10.0.167     |   Holland rendszertan új verziója – NT15 |
+|      Lengyelország          |   Szeptember 2020.     | 10.0.15     |   Önkéntes felosztott fizetés javításai |
+|      Lengyelország          |   2020. november     | 10.0.16, 10.0.15     |   JPK-V7M (VDEK) – Értékesítési bizonylattípus FP és RO kiskereskedelmi tranzakciókhoz |
 |      Lengyelország          |   Szeptember 2020.     | 10.0.15     |   Lengyelország: JPK-V7M (VDEK) - oldja fel a lehetőséget a részenkénti jelentésgeneráció futtatásához |
 |      Lengyelország          |   Október 2020.     | 10.0.16     |   JPK-V7M (VDEK) jelentés – „Önkéntes felosztott fizetés” paraméterfeltöltés |
-|      Oroszország          |   2020. augusztus     | 10.0.14    |   A könyvelési jelentés formátuma 2020 évtől kezdve megváltozik.  |
-|      Oroszország          |   július 2020.     | 10.0.13    |   Értékcsökkenési számítás a beszerzési költség alapján és a jelentősebb javítások az avultatási bónusz alkalmazásában az adókönyvelésen  |
+|      Lengyelország          |   2020. november     | 10.0.16, 10.0.15HF     |   Kiskereskedelem – Számla kiállítása a kiskereskedelmi vevőnek kérésenként |
+|      Lengyelország          |   Január 2021.     | 10.0.17, 10.0.16HF, 10.0.15HF     |   Lengyelország: JPK_KR (SAF könyvelési könyvek) tisztázásai, 2021. januártól hatályos |
 |      Oroszország          |   2020. november     | 10.0.16    |   Az áfabevallás formátuma a 2020 negyedik negyedévi jelentéstől kezdődően 5.07-es verzióra frissül|
+|      Oroszország          |   Október 2020.     | 10.0.16    |   A PBU18 változásai a 2020-as könyvelési jelentésre vonatkozóan|
+|      Oroszország          |   Január 2021.     | 10.0.17    |   A 2020-as jelentéshez az ingatlanadó-bevallás új formátuma (a 5.06-os helyett az 5.07-es verzió)|
+|      Spanyolország          |   2020. november     | 10.0.17    |   SII-frissítés ellenőrzése és hibák (2.1-es és későbbi verziók) 2021. január 1-től|
+|      Egyesült Királyság         |   december 2020.     | 10.0.17, 10.0.16, 10.0.15    |   Vállalati adószám regisztrálása a vevői számlákon (Brexit – Észak-Írországi Protokoll)|
+|      Egyesült Királyság          |   december 2020.     | 10.0.17, 10.0.16HF. 10.0.15HF    |   Brexit – Észak-Írországi Protokoll hatása mind a GB, mind az NI helyszíneken áruval kereskedő kereskedelmi vállalatokra|
 
 
 
@@ -87,6 +77,3 @@ A legújabb szabályozó frissítésekkel kapcsolatos tervekkel kapcsolatosan te
 - Az összes tervezett és a jogszabálykövető frissítés keresése [Lifecycle Service - Problémakereső](https://lcs.dynamics.com/Logon/Index) (bejelentkezés szükséges).
 - A támogatott Honosításainak listáját, lásd a [Nemzetközi elérhetőségek útmutató dokumentumban](https://aka.ms/dynamics_365_international_availability_deck).
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

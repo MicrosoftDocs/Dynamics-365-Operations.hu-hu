@@ -2,7 +2,7 @@
 title: Szabadság- és távollétkérelmek kezelése a Teams alkalmazásban
 description: Ez a témakör azt mutatja be, hogyan lehet szabadságot kérelmezni a Dynamics 365 Human Resources alkalmazásban a Microsoft Teams rendszerben.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 10/28/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d24c257054578282f1a2eafa050094194a358aa0
-ms.sourcegitcommit: 369639cd92e03fe792ed9d61a329d842aafa052f
+ms.openlocfilehash: 342106ad09db3a5d9c2dec8ab18e824d70e0f6bf
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "4418936"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5128161"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Szabadság- és távollétkérelmek kezelése a Teams alkalmazásban
 
@@ -196,7 +196,6 @@ A Teams Human Resources alkalmazásában a következőak adálymentességgel kap
 | --- | --- |
 | Ha az asztalon 400%-ra nagyít, a műveletgombok egy része kikerül a képből. | Ehelyett azt javasoljuk, hogy használja a nagyítót, amíg nem tudjuk támogatni ezt a nagyítási szintet. |
 | A **Szabadságolás** lapon a Narrátor egy gombműveletet jelent be, miközben elolvassa a szabadságolás rács fejlécét. | A rács fejléce és elemei év szerint vannak csoportosítva, és összecsukhatók. A Narrátor ezt végrehajtható elemként értelmezi, de valójában nem az. |
-| Ha pöccint, miközben egy előugró ablak vagy menü meg van nyitva, a Narrátor kihagyja a felugró ablak vagy a menü tartalmának olvasását. | Fedezze fel a tartalmat az ujjszkenneléssel. |
 | A **Szabadságolás** lapon egy további pöccintési kézmozdulat jelenik meg, amikor egy új kérelemben az **Okkódra** navigál. | Nincs olyan rejtett vezérlő, amelyhez a pöccintési navigáció megpróbálna eljutni. |
 | Ha a **Szabadságolás** lapon pöccint, miközben a naptár meg van nyitva, akkor a vezérlőn kívülre kerül, nem pedig egy új kérés tetejére, vagy egy kérés szerkesztése közben. | Amikor eléri az **Ugrás a mai napra** elemet, vegye úgy, hogy elért a vezérlő végére, és pöccintsen az ellenkező irányba, hogy visszakerüljön felülre. |
 | A Narrátor nem olvassa el a dátumok címkéit. | A párokban előforduló dátumok mindig **Kezdő dátum** és **Záró dátum**. |
@@ -229,6 +228,3 @@ Ha korlátozni szeretné a hozzáférést a szervezethez vagy a szervezeten bel�
 [A Microsoft Teams letöltése és telepítése](https://support.office.com/article/download-and-install-microsoft-teams-422bf3aa-9ae8-46f1-83a2-e65720e1a34d)</br>
 [Microsoft Teams súgóközpont](https://support.office.com/teams)</br>
 [Human Resources alkalmazás a Teamsben](hr-admin-teams-leave-app.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

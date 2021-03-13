@@ -1,8 +1,8 @@
 ---
 title: Új vagy módosult elemek a Dynamics 365 Human Resources szolgáltatásban (2020. február 12.)
 description: Ez a cikk a Microsoft Dynamics 365 Human Resources új vagy módosított szolgáltatásait írja le a 2020. február 12-i kiadásban.
-author: Darinkramer
-manager: AnnBe
+author: andreabichsel
+manager: tfehr
 ms.date: 02/07/2020
 ms.topic: article
 ms.prod: ''
@@ -15,15 +15,15 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-02-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b89e022441f69825d9c9c56ecdbca2e09e461b9e
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: d9d5d88d1d2bc1d6f3ff737b79e6a323e6a5c947
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4526888"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5128089"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-february-12-2020"></a>Új vagy módosult elemek a Dynamics 365 Human Resources szolgáltatásban (2020. február 12.)
 
@@ -35,9 +35,9 @@ Ez a cikk a Dynamics 365 Human Resources szolgáltatásban található új vagy 
 
 A heti kiadással a **CompFixedEmpls** és a **HcmPersonImage** az OData szolgáltatáson keresztül nyilványos és elérhető.
 
-## <a name="delete-employment-from-common-data-service-doesnt-work-when-employment-details-arent-active-403193"></a>A foglalkoztatás törlése a Common Data Service szolgáltatásból nem működik, ha a foglalkoztatás adatai nem aktívak (403193)
+## <a name="delete-employment-from-dataverse-doesnt-work-when-employment-details-arent-active-403193"></a>A foglalkoztatás törlése a Dataverse szolgáltatásból nem működik, ha a foglalkoztatás adatai nem aktívak (403193)
 
-Ez a változtatás most lehetővé teszi a foglalkoztatás törlését a Common Data Service szolgáltatással, ha nem léteznek aktív foglalkoztatási adatok.
+Ez a változtatás most lehetővé teszi a foglalkoztatás törlését a Dataverse szolgáltatással, ha nem léteznek aktív foglalkoztatási adatok.
 
 ## <a name="course-registration-workflow-changes-status-to-complete-and-errors-after-second-approval-409749"></a>A tanfolyam-regisztrációs munkafolyamat állapota befejeződöttre módosul, és hibát jelez a második jóváhagyás után (409749)
 
@@ -57,9 +57,9 @@ A következő előzetes funkciók érhetők el 2020. február 3-tól:
 
 A 32-es platformfrissítés hamarosan elérhető lesz. [További tudnivalók a 32-es platformfrissítésről:](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-update-32).
 
-### <a name="updated-common-data-service-solution"></a>Common Data Service megoldás frissítve
+### <a name="updated-dataverse-solution"></a>Dataverse megoldás frissítve
 
-Az új Common Data Service megoldás hamarosan a következő változtatásokkal érhető el:
+Az új Dataverse megoldás hamarosan a következő változtatásokkal érhető el:
 
 | Leírás | Visszajáró |
 | ----------------------------------------- | --- |
@@ -70,7 +70,7 @@ Az új Common Data Service megoldás hamarosan a következő változtatásokkal 
 | Új változó kompenzációs beállítási entitások | **Változó kompenzációs konstrukció típusa**</br>**Változó kompenzációs konstrukció**</br>**Kilépési szabályok**</br>**Változó kompenzációs konstrukció szintje** |
 | Új **Dolgozói naptár – foglalkoztatás** entitás | **Munkanaptár-entitás** hozzáadva |
 | Új **Bérlista szerinti beosztás részletei** entitás | **Bérlista szerinti beosztás** részletei |
-| Új **Beosztás** entitás | **Beosztás** hozzáadása Az új **Cím** entitást a Human Resources és a Common Data Service közötti szinkronizálási folyamatában fog szerepelni. Kezdetben nem lesz hivatkozva a **Beosztás** vagy a **Feladat** entitásból. |
+| Új **Beosztás** entitás | **Beosztás** hozzáadása Az új **Cím** entitást a Human Resources és a Dataverse közötti szinkronizálási folyamatában fog szerepelni. Kezdetben nem lesz hivatkozva a **Beosztás** vagy a **Feladat** entitásból. |
 
 ## <a name="see-also"></a>Lásd még
 
@@ -78,5 +78,3 @@ Az új Common Data Service megoldás hamarosan a következő változtatásokkal 
 [A Dynamics 365 Human Resources 2019 második kiadási hullámának áttekintése](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Rendelés frissítése](hr-admin-setup-update-process.md)</br>
 [Szolgáltatások kezelése](hr-admin-manage-features.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

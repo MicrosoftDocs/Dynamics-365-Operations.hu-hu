@@ -1,6 +1,6 @@
 ---
-title: Kettős írás beállítása a Lifecycle Services modulból
-description: Ez a témakör azt mutatja be, hogyan lehet beállítani egy kettős írási kapcsolatot egy új Finance and Operations környezet és egy új Dataverse környezet között a Microsoft Dynamics Lifecycle Services (LCS) megoldásból.
+title: Kettős írás beállítása a Lifecycle Services szolgáltatásból
+description: Ez a témakör bemutatja, hogyan lehet kettős írású kapcsolatot beállítani a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásból.
 author: RamaKrishnamoorthy
 manager: AnnBe
 ms.date: 01/06/2020
@@ -18,18 +18,16 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 25db9c58c3d09e44dcf11b48cae1a9eda4241c35
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: df67e498b963af3ded7464f46f37bb4b2ca7d852
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683524"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5127593"
 ---
-# <a name="dual-write-setup-from-lifecycle-services"></a>Kettős írás beállítása a Lifecycle Services modulból
+# <a name="dual-write-setup-from-lifecycle-services"></a>Kettős írás beállítása a Lifecycle Services szolgáltatásból
 
 [!include [banner](../../includes/banner.md)]
-
-[!include [preview-banner](../../includes/preview-banner.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
@@ -56,7 +54,7 @@ A kettős írási kapcsolat beállításához kövesse az alábbi lépéseket.
     - Ha már egy Dataverse környezet létesítve van a bérlő számára, akkor kiválaszthatja azt.
 
         1. Állítsa a **Dataverse** konfigurálása beállítást **Igen** értékre.
-        2. Az **Elérhető környezetek** mezőben válassza ki azt a környezetet, amellyel integrálni szeretné a Finance and Operations-adatokat. A lista minden olyan környezetet tartalmaz, amelyen adminisztrátori jogosultságai vannak.
+        2. Az **Elérhető környezetek** oszlopban válassza ki azt a környezetet, amellyel integrálni szeretné a Finance and Operations-adatokat. A lista minden olyan környezetet tartalmaz, amelyen adminisztrátori jogosultságai vannak.
         3. Jelölje be az **Elfogadom** jelölőnégyzetet, annak jelzéséhez, hogy elfogadja-e a feltételeket.
 
         ![A Dataverse lap, ha már egy Dataverse környezet létesítve van a bérlő számára](../dual-write/media/lcs_setup_1.png)
@@ -76,9 +74,9 @@ A kettős írási kapcsolat beállításához kövesse az alábbi lépéseket.
         ![A Dataverse lap, amikor a bérlő még nem rendelkezik Dataverse-környezettel](../dual-write/media/lcs_setup_2.png)
 
 7. Hajtsa végre a **Telepítési beállítások** varázsló fennmaradó lépéseit.
-8. Miután a környezet állapota már **Telepített**, nyissa meg a környezeti részletek lapot. A **Dataverse környezeti információ** szakasz az összekapcsolt Finance and Operations környezet és Dataverse környezet nevét jeleníti meg.
+8. Miután a környezet állapota már **Telepített**, nyissa meg a környezeti részletek lapot. Az **Power Platform Integráció** szakasz az összekapcsolt Finance and Operations környezet és Dataverse környezet nevét jeleníti meg.
 
-    ![Dataverse környezeti információ szakasz](../dual-write/media/lcs_setup_3.png)
+    ![Power Platform Integráció szakasz](../dual-write/media/lcs_setup_3.png)
 
 9. A Finance and Operations környezethez tartozó adminisztrátornak be kell jelentkeznie a LCS-be, és ki kell választania a **CDS csatolása alkalmazásokhoz** hivatkozást az összekapcsolása befejezéséhez. A környezeti részletek lap az adminisztrátor kapcsolattartási adatait jeleníti meg.
 
@@ -86,10 +84,8 @@ A kettős írási kapcsolat beállításához kövesse az alábbi lépéseket.
 
 10. Az **Adatintegrációs** munkaterület megnyitásához a Finance and Operations környezetben és a rendelkezésre álló sablonok ellenőrzéséhez válassza a **CDS csatolása alkalmazásokhoz** lehetőséget.
 
-    ![A CDS csatolása alkalmazásokhoz gomb a Dataverse környezeti információ területen](../dual-write/media/lcs_setup_4.png)
+    ![A CDS csatolása alkalmazásokhoz gomb az Power Platform Integráció területen](../dual-write/media/lcs_setup_4.png)
 
 > [!NOTE]
 > A környezetek nem csatolhatók le az LCS használatával. Egy környezet kapcsolatának megszüntetése érdekében nyissa meg az **Adatintegráció** munkaterületet a Finance and Operations környezetben , majd válassza a **Csatolás megszüntetése** parancsot.
 
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

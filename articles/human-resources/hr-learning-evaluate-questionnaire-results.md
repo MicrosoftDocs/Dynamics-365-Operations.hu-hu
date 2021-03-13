@@ -2,7 +2,7 @@
 title: A kérdőívek eredményeinek megtekintése és kiértékelése
 description: Ez a cikk ismerteti, hogyan tudja megtekinteni és elemezni a kitöltött kérdőívek válaszait.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -11,19 +11,19 @@ ms.technology: ''
 ms.search.form: KMCollection, KMKnowledgeCollectorCollection, KMKnowledgeCollectorUserResults, HcmLearningWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.custom: 17444
 ms.assetid: 6570206a-b2c4-4025-8715-432fe6652b78
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: ceb21af75dca2756d8e07f315ddee0246554c854
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ff2136e1f0a87b7d77968ca1163e64f8838b234b
+ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418909"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5116116"
 ---
 # <a name="view-and-evaluate-the-results-of-questionnaires"></a>A kérdőívek eredményeinek megtekintése és kiértékelése
 
@@ -72,5 +72,3 @@ Használhat kérdőív statisztikákat a kitöltött kérdőívek eredményének
 -   Válassza ki, vagy ellenőrizze az eredmények kiértékelésének feltételeit, válaszadó vagy a kérdői jellemzője alapján. Például az **Irányítószám** kiválasztásával kiértékelheti a válaszadó helye és helyes válaszai közti korrelációt.
 
 A program menti a megadott beállításokat, így ezek az eredmények ismételt újraszámításakor felhasználhatók.
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

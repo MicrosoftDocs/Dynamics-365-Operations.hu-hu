@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: LedgerConsolidate
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 13151
 ms.assetid: 9d8f55cb-b2cf-4e01-89cf-0e21f5c8ae1f
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 566b1ecef3f9e540c651fe214accadcf32f4fbed
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ee029e6cf1f271c5839e8d0dc1b1e4b7f91fb9a2
+ms.sourcegitcommit: f51ef395f0c0cb2203ce26b4091bbf0296e7916e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4444098"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "5120479"
 ---
 # <a name="consolidation-and-elimination-overview"></a>Konszolidáció és megszüntetés áttekintése
 
@@ -60,6 +59,7 @@ A **Pénzügyi jelentéskészítés** lehetőségben korlátlan számú pénznem
 A **Pénzügyi jelentéskészítés** lehetőség a megfelelő választás, mert a tranzakciós szintű részletek annyi vállalathoz tekinthetők meg, amennyi a jelentési fa definíciójában van megadva.
 
 4.  Költségvetés tervezést vagy költségvetés-ellenőrzést használunk, amit konszolidálni kell.
+
 A **Pénzügyi jelentéskészítés** lehetőség a megoldás minden költségvetés-tervezési vagy költségvetés-ellenőrzési adat konszolidálására.
 
 5.  A leányvállalatok az egész világban vannak szétszórva, és több számlatükörrel rendelkeznek. Mi a legjobb módszer az adatok konszolidálására?
@@ -86,10 +86,10 @@ A **Pénzügyi jelentéskészítés** lehetőség a megoldás. A szervezeti hier
 
 A **Vállalati egyenlegek exportálása** lehetőséggel exportálhat egy példányból, majd használja a **Konszolidálás importálással** lehetőséget a másik példányban, hogy konszolidálja az adatokat.
 
+11. Végezhetek-e Konszolidációt, ha a költségvetésem **TERVEZET** állapotú? 
+            
+Nem fogja tudni feldolgozni vagy végrehajtani a költségvetéseket a konszolidált vállalatban. A költségvetés-tervezetek konszolidálásához a Financial Reporting használatát javasoltuk.
 
 További információ: [Devizaátértékelés konszolidációs vállalatban](../general-ledger/currency-revaluation-consolidation-company.md).
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

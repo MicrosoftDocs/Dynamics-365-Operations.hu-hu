@@ -1,8 +1,8 @@
 ---
 title: A Dynamics 365 Human Resources új vagy módosult elemei (2020. július 23.)
 description: Ez a témakör a Microsoft Dynamics 365 Human Resources új vagy módosított szolgáltatásait írja le a 2020. július 23-i kiadásban.
-author: Darinkramer
-manager: AnnBe
+author: andreabichsel
+manager: tfehr
 ms.date: 07/23/2020
 ms.topic: article
 ms.prod: ''
@@ -15,15 +15,15 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d0672e3039f54a4591db49eee00d69bf5e4278fd
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: f5e10d6d1dedfc251a1a00110b50c9096314d75b
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4528449"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5127521"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-july-23-2020"></a>A Dynamics 365 Human Resources új vagy módosult elemei (2020. július 23.)
 
@@ -33,7 +33,7 @@ Ez a témakör a Dynamics 365 Human Resources új vagy módosított szolgáltat�
 
 ## <a name="deleting-financial-dimensions-on-a-position-doesnt-work-as-expected-445476"></a>A beosztáshoz tartozó pénzügyi dimenziók törlése nem az elvártaknak megfelelően működik (445476)
 
-A dimenziók beosztásból való eltávolítása ezennel eltávolítja ezeket a beosztásokat a Common Data Service-ből.
+A dimenziók beosztásból való eltávolítása ezennel eltávolítja ezeket a beosztásokat a Dataverse-ből.
 
 ## <a name="positions-not-in-hierarchy-show-inactive-positions-397257"></a>A hierarchiában nem szereplő pozíciók inaktív pozíciókat mutatnak (397257)
 
@@ -94,9 +94,9 @@ A DMF entitás immár elérhető az elhatárolás-felfüggesztésekhez.
 
 ## <a name="coming-soon"></a>Hamarosan
 
-## <a name="checklist-entities-included-in-common-data-service"></a>Ellenőrzőlista-entitások szerepelnek a következőben: Common Data Service
+## <a name="checklist-entities-included-in-dataverse"></a>Ellenőrzőlista-entitások szerepelnek a következőben: Dataverse
 
-Az Előkészítés, Felszámolás, Áthelyezések és Üzleti folyamatok hamarosan elérhetők lesznek a Common Data Service alkalmazásban.
+Az Előkészítés, Felszámolás, Áthelyezések és Üzleti folyamatok hamarosan elérhetők lesznek a Dataverse alkalmazásban.
 
 ## <a name="platform-changes"></a>Platformok módosításai
 
@@ -108,6 +108,3 @@ Platform frissítése erre: 10.0.12 (36)
 [A Dynamics 365 Human Resources 2019 második kiadási hullámának áttekintése](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Rendelés frissítése](hr-admin-setup-update-process.md)</br>
 [Szolgáltatások kezelése](hr-admin-manage-features.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

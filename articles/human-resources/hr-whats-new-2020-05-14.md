@@ -1,8 +1,8 @@
 ---
 title: Új vagy módosult elemek a Dynamics 365 Human Resources szolgáltatásban (2020. május 14.)
 description: Ez a témakör a Microsoft Dynamics 365 Human Resources új vagy módosított szolgáltatásait írja le a 2020. május 14-i kiadásban.
-author: Darinkramer
-manager: AnnBe
+author: andreabichsel
+manager: tfehr
 ms.date: 05/14/2020
 ms.topic: article
 ms.prod: ''
@@ -15,15 +15,15 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-05-14
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 76ca497cc7fabf737c8a0ee71363f22fd4201ea8
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: b8d65236d316035722451a871afabedc6ab73f7a
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4528497"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5127849"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-may-14-2020"></a>Új vagy módosult elemek a Dynamics 365 Human Resources szolgáltatásban (2020. május 14.)
 
@@ -35,9 +35,9 @@ Ez a témakör a Dynamics 365 Human Resources új vagy módosított szolgáltat�
 
 Ez a heti kiadás tartalmazza a platform változásait. További tájékoztatás: [Platform-frissítések az Finance and Operations alkalmazások 10.0.10 verziójához (2020. május)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-update-34). Ez a kiadás hibajavításokat és a mentett nézetek módosításait tartalmazza.
  
-## <a name="ensure-common-data-service-picklists-are-consistent-with-leave-enums-436343"></a>Biztosítja, hogy a Common Data Service választási listák megfelelnek a Szabadság felsorolásainak (436343)
+## <a name="ensure-dataverse-picklists-are-consistent-with-leave-enums-436343"></a>Biztosítja, hogy a Dataverse választási listák megfelelnek a Szabadság felsorolásainak (436343)
 
-A Common Data Service választási listák most már megfelelnek a Szabadság felsorolásainak.
+A Dataverse választási listák most már megfelelnek a Szabadság felsorolásainak.
 
 ## <a name="allow-users-to-configure-leave-request-workflow-based-on-the-request-amount-300044"></a>A felhasználók számára lehetővé teszi a szabadságkérelmi folyamat kérelem mennyisége alapján történő konfigurálását (300044).
 
@@ -75,7 +75,7 @@ Ez a módosítás kijavít egy hibát, amikor egy szabadságtervhez két szabads
 
 Ezzel a módosítással a Kezdeti lépések banner olyan felhasználók esetében rejtett, akik nem rendszergazdák vagy az adatkezelési rendszergazdák. 
 
-## <a name="the-common-data-service-worker-address-entity-works-differently-in-terms-of-date-time-effective-dates-in-human-resources-425071"></a>A Common Data Service Dolgozó címe entitás dátum és idő tekintetében eltérően működik a Human Resources érvényességi dátumaitól (425071)
+## <a name="the-dataverse-worker-address-entity-works-differently-in-terms-of-date-time-effective-dates-in-human-resources-425071"></a>A Dataverse Dolgozó címe entitás dátum és idő tekintetében eltérően működik a Human Resources érvényességi dátumaitól (425071)
 
 Ez a módosítás a címadatokat a címek dátumai alapján bizonyos helyzetekben egymáshoz igazítja.
 
@@ -119,5 +119,3 @@ Megadhatja, hogy az átviteli szabadságtípust az átviteli egyenlegekhez, ahov
 [A Dynamics 365 Human Resources 2019 második kiadási hullámának áttekintése](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Rendelés frissítése](hr-admin-setup-update-process.md)</br>
 [Szolgáltatások kezelése](hr-admin-manage-features.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
