@@ -2,7 +2,7 @@
 title: Alkalmazási típusok beállítása
 description: A Dynamics 365 Human Resources rendszerben megfelelő foglalkoztatási típusokat állíthat be a dolgozóihoz.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d332f7f355c138cc058185f1b9578a67737fb1d0
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 366c9bd571ac85677105a136f83eeb949c8104f9
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418809"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5112812"
 ---
 # <a name="set-up-employment-types"></a>Alkalmazási típusok beállítása
 
@@ -41,6 +41,3 @@ A Dynamics 365 Human Resources rendszerben megfelelő foglalkoztatási típusoka
    | **Leírás** | Foglalkoztatási típus leírása. |
 
 4. Válassza a **Mentés** lehetőséget. 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

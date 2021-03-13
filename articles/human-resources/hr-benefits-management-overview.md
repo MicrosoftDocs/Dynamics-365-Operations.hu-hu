@@ -2,7 +2,7 @@
 title: Juttatáskezelés áttekintése
 description: A juttatáskezelés funkció áttekintése a Dynamics 365 Human Resources alkalmazásban. Az alkalmazottak számára kiterjesztett juttatási lehetőségeket kínálhat könnyen használható online felületen.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 09/17/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e2e8fcdd0b6124b459c4dc073e2929418d18bcc5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 4ae4270f3185f8795753ecdb209515ecd6e86486
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418814"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5112859"
 ---
 # <a name="benefits-management-overview"></a>Juttatáskezelés – áttekintés
 
@@ -97,6 +97,3 @@ Néhány módosítását fel kell dolgoznia, hogy aktiválja azokat.
 - [Élettartam-eseményekre vonatkozó jogosultságok feldolgozása](hr-benefits-process-life-event-eligibility.md)
 - [Mértékmódosítás feldolgozása](hr-benefits-process-rate-changes.md)
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

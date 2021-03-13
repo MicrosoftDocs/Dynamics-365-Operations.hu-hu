@@ -2,7 +2,7 @@
 title: Alkalmazottak felvétele változó kompenzációs konstrukcióba
 description: A kompenzációkért és juttatásokért felelős vezető felvehet alkalmazottakat változó kompenzációs tervbe, hogy az alkalmazottak készpénzes és nem készpénzes jutalmát kiszámítsa.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -11,17 +11,17 @@ ms.technology: ''
 ms.search.form: HRMCompVarEnrollEmpl, HcmCompensationWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations
+ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 361403d61be64cfc58b3c2296937109b13a2b244
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a7a173403e79212be5e4aac36d99f349da159e08
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418835"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5112826"
 ---
 # <a name="enroll-an-employee-in-a-variable-compensation-plan"></a>Alkalmazottak felvétele változó kompenzációs konstrukcióba
 
@@ -41,6 +41,3 @@ A kompenzációkért és juttatásokért felelős vezető felvehet alkalmazottak
 8. A Szervezeti felülbírálások szakasz bővítésének átváltása.
     * Ha az alkalmazott teljesítményét is figyelembe kell venni, a különböző részlegek teljesítménye vagy az alkalmazott beosztásától eltérő részleg esetén a részleg felülírható. A Százalék oszlopban összesen 100-nak kell szerepelnie.  
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

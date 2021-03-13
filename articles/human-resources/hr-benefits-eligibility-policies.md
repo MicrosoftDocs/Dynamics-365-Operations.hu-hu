@@ -2,7 +2,7 @@
 title: Juttatásra való jogosultsági irányelvek
 description: Ez a cikk információt biztosít a juttatás alkalmassági irányelveit illetően, így segítve önt a különleges juttatásokra jogosult személyek meghatározásában.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
@@ -11,19 +11,19 @@ ms.technology: ''
 ms.search.form: HcmBenefitEligibilityDetail, SysPolicyListPage, SysPolicySourceDocumentRuleType, BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.custom: 16441
 ms.assetid: 4ad0106f-5b07-4fd5-bc1a-5834fa9b198e
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: fd4def17bf60ae2812927221c45547c5ac379f2b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: cc5dfedc0022cbf9bdbc636bbe96971422c29838
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418770"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5112783"
 ---
 # <a name="benefit-eligibility-policies"></a>Juttatásra vonatkozó jogosultsági irányelvek
 
@@ -49,6 +49,3 @@ A szabály hatáskörét az irányelven belül lehet megadni. Például ha **Vez
 
 
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

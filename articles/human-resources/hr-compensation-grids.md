@@ -2,7 +2,7 @@
 title: Kompenzációs rácsok beállítása
 description: A kompenzációs rácsok segítségével meghatározható és fenntartható a fix kompenzációs tervek fizetési szerkezete.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -11,17 +11,17 @@ ms.technology: ''
 ms.search.form: HRCCompGrid, HRCCompGridView, HcmCompensationWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations
+ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5d5ada0817dd73caad38bb2e50302869857c71d8
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 13415f68f41555f3e86cbe699cf921e9a2cf6d5c
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418834"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5112752"
 ---
 # <a name="set-up-compensation-grids"></a>Kompenzációs rácsok beállítása
 
@@ -92,6 +92,3 @@ A kompenzációs rácsok segítségével meghatározható és fenntartható a fi
 29. A listában jelölje meg az összes sort, vagy törölje a jelölésüket.
 30. Kattintson az Alkalmazás a rácsra elemre.
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

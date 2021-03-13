@@ -2,7 +2,7 @@
 title: Az ügyfél kapcsolata megszakad
 description: Ez a cikk bemutatja, hogy mi a teendő, ha a vevő kapcsolata megszakad a saját környezetével, és nem tudja, ennek mi az oka.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2088706baf8735fa371960955a2ffc3240ccac76
-ms.sourcegitcommit: a26e4963d40796da21ce6581cfb2f4d9db4f6776
+ms.openlocfilehash: d02916283bbd4cee6502942020df1b275a0242b3
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "4418935"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5112847"
 ---
 # <a name="client-disconnects"></a>Az ügyfél kapcsolata megszakad
 
@@ -52,6 +52,3 @@ A felhasználók kapcsolata a Microsoft Dynamics 365 Human Resources megoldássa
 Győződjön meg arról, hogy egyszerre az adott típusú böngészőben csak egy környezetet nyisson meg. A felhasználók több munkamenetet is megnyithatnak ugyanabban a környezetben (azaz egy böngészőben több lapot).
 
 A felhasználóknak, akik egyszerre két környezet között szeretnének mozogni, minden egyes környezetet különböző típusú böngészőben kell megnyitniuk. (Például A felhasználó megnyithatja az 1. környezetet Chrome-ban, és a 2. környezetet Microsoft Edge-ben.)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

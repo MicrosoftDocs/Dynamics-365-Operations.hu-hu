@@ -2,7 +2,7 @@
 title: Példány másolása
 description: A Microsoft Dynamics Lifecycle Services (LCS) szolgáltatással átmásolhat egy Microsoft Dynamics 365 Human Resources-adatbázist egy védőfalkörnyezetbe.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 07/22/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 40ca0a4d9733fc2a163daa4ea1c27a3bfae6d3bf
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: a62cee979fc8d986102c3b774cd937a24bdd7439
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527837"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5112807"
 ---
 # <a name="copy-an-instance"></a>Példány másolása
 
@@ -41,7 +41,7 @@ Egy példány másolásához tartsa szem előtt a következő tanácsokat:
 
 - A Human Resources adatbázisának másolása során nem másolja át a Microsoft Power Apps környezetben található elemeket (alkalmazásokat vagy adatokat). A Power Apps-környezet elemeinek másolásával kapcsolatos tudnivalókat lásd: [Környezet másolása](https://docs.microsoft.com/power-platform/admin/copy-environment). A felülírni kívánt Power Apps -könyezetnek védőfalkörnyezetnek kell lennie. A Power Apps éles környezet védőfalkörnyezetbe történő módosításához globális bérlői rendszergazdának kell lennie. A Power Apps-környezet módosításával kapcsolatos további tudnivalókat lásd: [Példány váltása](https://docs.microsoft.com/dynamics365/admin/switch-instance).
 
-- Ha példányát egy tesztkörnyezetbe másolja , és szeretné integrálni a tesztkörnyezetét a Common Data Service szolgáltatással, akkor újra kell alkalmaznia az egyéni mezőket a Common Data Service-entitásokra. Lásd: [Egyéni mezők alkalmazása a Common Data Service-szolgáltatásra](hr-admin-setup-copy-instance.md?apply-custom-fields-to-common-data-service).
+- Ha példányát egy tesztkörnyezetbe másolja , és szeretné integrálni a tesztkörnyezetét a Dataverse szolgáltatással, akkor újra kell alkalmaznia az egyéni mezőket a Dataverse-táblákra. Lásd: [Egyéni mezők alkalmazása a Dataverse-szolgáltatásra](hr-admin-setup-copy-instance.md?apply-custom-fields-to-common-data-service).
 
 ## <a name="effects-of-copying-a-human-resources-database"></a>A Human Resources-adatbázis másolásának hatásai
 
@@ -72,15 +72,15 @@ A feladat végrehajtásához először másolja a példányt, majd jelentkezzen 
 
 4. A **Példány másolása** munkaablakban válassza ki azt a példányt, amelyet felül szeretne írni, majd válassza a **Másolás** parancsot. Várjon, amíg a **Másolás állapota** mező értéke **Kész** értékre módosul.
 
-   ![[Felülírandó példány kiválasztása](./media/copy-instance-select-target-instance.png)](./media/copy-instance-select-target-instance.png)
+   ![[Az felülírandó példány kiválasztása](./media/copy-instance-select-target-instance.png)](./media/copy-instance-select-target-instance.png)
 
 5. Válassza ki a **Power Platform** lehetőséget, majd jelentkezzen be a Microsoft Power Platform Admin Centerbe.
 
-   ![[Válassza a Power Platform lehetőséget](./media/copy-instance-select-power-platform.png)](./media/copy-instance-select-power-platform.png)
+   ![[Power Platform kiválasztása](./media/copy-instance-select-power-platform.png)](./media/copy-instance-select-power-platform.png)
 
 6. Válassza ki a másolni kívánt Power Apps-környezetet, majd válassza a **Másolás** parancsot.
 
-7. A másolási folyamat befejezése után jelentkezzen be a célpéldányba, és engedélyezze a Common Data Service-integrációt. További tudnivalókért és utasításokért lásd: [A Common Data Service-integráció konfigurálása](https://docs.microsoft.com/dynamics365/talent/hr-common-data-service-integration).
+7. A másolási folyamat befejezése után jelentkezzen be a célpéldányba, és engedélyezze a Dataverse-integrációt. További tudnivalókért és utasításokért lásd: [A Dataverse-integráció konfigurálása](https://docs.microsoft.com/dynamics365/talent/hr-common-data-service-integration).
 
 ## <a name="data-elements-and-statuses"></a>Adatelemek és állapotok
 
@@ -122,11 +122,11 @@ A cél védőfalkörnyezetében található összes felhasználót, többek köz
 
 A cél-védőfalkörnyezet minden nem rendszergazdai felhasználója le van tiltva, megakadályozva a nem kívánt bejelentkezéseket a védőfalkörnyezetben. Ha szükséges, a rendszergazdák újra engedélyezhetik a felhasználókat.
 
-## <a name="apply-custom-fields-to-common-data-service"></a>Egyéni mezők alkalmazása a Common Data Service-szolgáltatásra
+## <a name="apply-custom-fields-to-dataverse"></a>Egyéni mezők alkalmazása a Dataverse-szolgáltatásra
 
-Ha példányát egy tesztkörnyezetbe másolja , és szeretné integrálni a tesztkörnyezetét a Common Data Service szolgáltatással, akkor újra kell alkalmaznia az egyéni mezőket a Common Data Service-entitásokra.
+Ha példányát egy tesztkörnyezetbe másolja , és szeretné integrálni a tesztkörnyezetét a Dataverse szolgáltatással, akkor újra kell alkalmaznia az egyéni mezőket a Dataverse-táblákra.
 
-Az Common Data Service-entitásokon közzétett egyéni mezők esetében hajtsa végre a következő lépéseket:
+A Dataverse-táblákon közzétett egyéni mezők esetében hajtsa végre a következő lépéseket:
 
 1. Nyissa meg az egyéni mezőt, és válassza a **Szerkesztés** elemet.
 
@@ -140,7 +140,7 @@ Az Common Data Service-entitásokon közzétett egyéni mezők esetében hajtsa 
 
 6. Válassza ismét a **Módosítások alkalmazása** lehetőséget.
 
-A kijelölés törlése, változtatások alkalmazása, kijelölés újra, és változtatások ismételt alkalmazása arra utasítja a sémát, hogy frissítsen a Common Data Service-szolgáltatásban, hogy tartalmazza az egyéni mezőket.
+A kijelölés törlése, változtatások alkalmazása, kijelölés újra, és változtatások ismételt alkalmazása arra utasítja a sémát, hogy frissítsen a Dataverse-szolgáltatásban, hogy tartalmazza az egyéni mezőket.
 
 További információkért az egyéni mezőkről lásd: [Egyéni mezők létrehozása és felhasználása](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/user-defined-fields).
 
@@ -150,6 +150,3 @@ További információkért az egyéni mezőkről lásd: [Egyéni mezők létreho
 [Példány eltávolítása](hr-admin-setup-remove-instance.md)</br>
 [Rendelés frissítése](hr-admin-setup-update-process.md)
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

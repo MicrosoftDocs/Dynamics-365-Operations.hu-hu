@@ -1,9 +1,9 @@
 ---
-title: Common Data Service-integráció konfigurálása
-description: A Common Data Service és a Dynamics 365 Human Resources között be- és kikacsolhatja az integrációt. Ezenkívül megtekintheti a szinkronizálási adatokat, törölheti a nyomonkövetési adatokat, valamint újraszinkronizálhat egy entitást a két környezet közötti adatproblémák elhárítása érdekében.
+title: Dataverse-integráció konfigurálása
+description: A Microsoft Dataverse és a Dynamics 365 Human Resources között be- és kikacsolhatja az integrációt. Ezenkívül megtekintheti a szinkronizálási adatokat, törölheti a nyomonkövetési adatokat, valamint újraszinkronizálhat egy táblát a két környezet közötti adatproblémák elhárítása érdekében.
 author: andreabichsel
-manager: AnnBe
-ms.date: 07/27/2020
+manager: tfehr
+ms.date: 01/25/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,35 +18,36 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d9ee4715526e18b33ae4b7e90b081ed5868bb19c
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 38c42469e62bf5457d0281540325a6c56a5f930f
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527924"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5112862"
 ---
-# <a name="configure-common-data-service-integration"></a>Common Data Service-integráció konfigurálása
+# <a name="configure-dataverse-integration"></a>Dataverse-integráció konfigurálása
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+A Microsoft Dataverse és a Dynamics 365 Human Resources között be- és kikacsolhatja az integrációt. Ezenkívül megtekintheti a szinkronizálási adatokat, törölheti a nyomonkövetési adatokat, valamint újraszinkronizálhat egy táblát a két környezet közötti adatproblémák elhárítása érdekében.
 
-A Common Data Service és a Dynamics 365 Human Resources között be- és kikacsolhatja az integrációt. Ezenkívül megtekintheti a szinkronizálási adatokat, törölheti a nyomonkövetési adatokat, valamint újraszinkronizálhat egy entitást a két környezet közötti adatproblémák elhárítása érdekében.
+> [!NOTE]
+> A Dataverse (a korábbi Common Data Service) rendszer kapcsolatos további tudnivalókat és a terminológiai frissítéseket lásd: [Mi a Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)
 
-Ha kikapcsolja az integrációt, a felhasználók módosíthatják az emberi erőforrásokat vagy a Common Data Service megoldást, de ezek a módosítások nem szinkronizálhatók a két környezet között.
+Ha kikapcsolja az integrációt, a felhasználók módosíthatják az emberi erőforrásokat vagy a Dataverse megoldást, de ezek a módosítások nem szinkronizálhatók a két környezet között.
 
-Az adatintegráció Human Resources és a Common Data Service között alapértelmezetten ki van kapcsolva.
+Az adatintegráció Human Resources és a Dataverse között alapértelmezetten ki van kapcsolva.
 
 Előfordulhat, hogy a következő helyzetekben ki szeretné kapcsolni az integrációt:
 
 - Az adatokat az adatkezelési keretrendszeren keresztül tölti ki, és az adatokat többször kell importálni, hogy a megfelelő állapotba kerüljenek.
 
-- Probléma adódott az adatokkal a Human Resources vagy a Common Data Service programok valamelyikében. Ha kikapcsolta az integrációt, akkor úgy törölhet egy rekordot az egyik környezetből, hogy az a másikban megmarad. Amikor újra bekapcsolja az integrációt, az a rekord, amelynek környezetében nem történt törlés, szinkronizálva lesz abba a környezetbe, ahonnan törölte azt. A szinkronizálás azután kezdődik, hogy a **Common Data Service-integráció nem fogadott kérelemszinkronizálási** kötegelt feladatot futtatja.
+- Probléma adódott az adatokkal a Human Resources vagy a Dataverse programok valamelyikében. Ha kikapcsolta az integrációt, akkor úgy törölhet egy rekordot az egyik környezetből, hogy az a másikban megmarad. Amikor újra bekapcsolja az integrációt, az a rekord, amelynek környezetében nem történt törlés, szinkronizálva lesz abba a környezetbe, ahonnan törölte azt. A szinkronizálás azután kezdődik, hogy a **Dataverse-integráció nem fogadott kérelemszinkronizálási** kötegelt feladatot futtatja.
 
 > [!WARNING]
 > Az adatintegráció kikapcsolásakor ügyeljen arra, hogy ne szerkessze mindkét környezetben ugyanazt a rekordot. Az integráció visszakapcsolásakor az utoljára szerkesztett rekordot szinkronizálja a rendszer. Ezért ha nem ugyanazokat a változtatásokat hajtotta végre a rekordon mindkét környezetben, adatvesztés léphet fel.
 
-## <a name="access-the-common-data-service-integration-page"></a>A Common Data Service-integráció oldal elérése
+## <a name="access-the-dataverse-integration-page"></a>A Dataverse-integráció oldal elérése
 
-1. Abban a Human Resources példányban, ahol megtekinteni vagy konfigurálni szeretné a Common Data Service rendszerrel való integrációs beállításokat, válassza ki a **Rendszerfelügyelet** csempét.
+1. Abban a Human Resources példányban, ahol megtekinteni vagy konfigurálni szeretné a Dataverse rendszerrel való integrációs beállításokat, válassza ki a **Rendszerfelügyelet** csempét.
 
     [![Rendszerfelügyelet csempe](./media/hr-select-system-administration.png)](./media/hr-select-system-administration.png)
 
@@ -54,70 +55,74 @@ Előfordulhat, hogy a következő helyzetekben ki szeretné kapcsolni az integr�
 
     [![Hivatkozások lap](./media/hr-system-administration-links.png)](./media/hr-system-administration-links.png)
 
-3. Az **Integrációk** menüpontban válassza a **Common Data Service konfigurációja** elemet.
+3. Az **Integrációk** menüpontban válassza a **Dataverse konfigurációja** elemet.
 
-    [![Common Data Service konfigurációs hivatkozása](./media/hr-select-common-data-service-configuration.png)](./media/hr-select-common-data-service-configuration.png)
+    [![Dataverse konfigurációs hivatkozása](./media/hr-admin-integration-dataverse-select.png)](./media/hr-admin-integration-dataverse-select.png)
 
-## <a name="turn-data-integration-between-human-resources-and-common-data-service-on-or-off"></a>Adatintegráció be- vagy kikapcsolása a Human Resources és a Common Data Service között
+## <a name="turn-data-integration-between-human-resources-and-dataverse-on-or-off"></a>Adatintegráció be- vagy kikapcsolása a Human Resources és a Dataverse között
 
-- Ha be szeretné kapcsolni az integrációt, állítsa be, hogy az **Integráció engedélyezése a Common Data Service rendszerben** beállításának értéke **Igen** legyen.
+- Ha be szeretné kapcsolni az integrációt, állítsa be, hogy **Microsoft Dataverse-integráció** oldalon a **Dataverse-integráció engedélyezése** értéke **Igen** legyen.
 
     > [!NOTE]
-    > Amikor bekapcsolja az integrációt, az adatok szinkronizálása az után történik meg, hogy a **Common Data Service-integráció nem fogadott kérelemszinkronizálási** kötegelt feladatot futtatja. Minden adatnak elérhetőnek kell lennie a kötegelt feladat befejezése után.
+    > Amikor bekapcsolja az integrációt, az adatok szinkronizálása az után történik meg, hogy a **Dataverse-integráció nem fogadott kérelemszinkronizálási** kötegelt feladatot futtatja. Minden adatnak elérhetőnek kell lennie a kötegelt feladat befejezése után.
 
 - Ha ki szeretné kapcsolni az integrációt, állítsa át a beállítást **Nem** értékre.
 
-[![Common Data Service-integráció be- és kikapcsolása](./media/hr-enable-or-disable-common-data-service-integration.png)](./media/hr-enable-or-disable-common-data-service-integration.png)
+[![Dataverse-integráció be- és kikapcsolása](./media/hr-admin-integration-dataverse-enable-disable.png)](./media/hr-admin-integration-dataverse-enable-disable.png)
 
 > [!WARNING]
-> Az adatáttelepítési feladatok végrehajtása közben erősen ajánlott kikapcsolni a Common Data Service integrációt. A nagyméretű adatfeltöltések jelentősen befolyásolhatják a teljesítményt. Például 2000 dolgozó feltöltése több óráig is eltarthat, ha engedélyezve van az integráció, viszont kevesebb mint egy óráig tart, ha le van letiltva. A jelen példában megadott számok csak bemutató célt szolgálnak. A rekordok importálásához szükséges idő pontos mértékét számos tényező befolyásolhatja.
+> Az adatáttelepítési feladatok végrehajtása közben erősen ajánlott kikapcsolni a Dataverse integrációt. A nagyméretű adatfeltöltések jelentősen befolyásolhatják a teljesítményt. Például 2000 dolgozó feltöltése több óráig is eltarthat, ha engedélyezve van az integráció, viszont kevesebb mint egy óráig tart, ha le van letiltva. A jelen példában megadott számok csak bemutató célt szolgálnak. A rekordok importálásához szükséges idő pontos mértékét számos tényező befolyásolhatja.
 
 ## <a name="view-data-integration-details"></a>Az adatintegráció részleteinek áttekintése
 
-Az **Adminisztráció** gyorslapon, amely a **Common Data Service-integráció** oldalon található, megtekintheti a rekordok összekapcsolásának módját a Human Resources és a Common Data Service között.
+Az **Adminisztráció** gyorslapon, amely a **Microsoft Dataverse-integráció** oldalon található, megtekintheti a sorok összekapcsolásának módját a Human Resources és a Dataverse között.
 
-- Egy entitás rekordjainak megtekintéséhez válassza ki az entitást a **CDS-entitás neve** mezőben. A rács a kiválasztott entitáshoz kapcsolódó összes rekordot megjeleníti.
-
-[![Entitás rekordjainak megtekintése](./media/hr-common-data-service-configuration-view-entity.png)](./media/hr-common-data-service-configuration-view-entity.png)
+- A tábla sorainak megtekintéséhez válassza ki táblát a **Dataverse-tábla** mezőben. A rács a kiválasztott táblához kapcsolódó összes sort megjeleníti.
 
 > [!NOTE]
-> Jelenleg nem minden Common Data Service-entitás szerepel a listán. Csak olyan entitások jelennek meg, amelyek támogatják az egyéni mezők használatát a rácsban. Az új entitások a Human Resources folyamatos termékkiadásai révén válnak elérhetővé.
+> Jelenleg nem minden Dataverse-tábla szerepel a listán. Csak olyan táblák jelennek meg, amelyek támogatják az egyéni mezők használatát a rácsban. Az új táblák a Human Resources folyamatos termékkiadásai révén válnak elérhetővé.
 
 A rács a következő mezőket tartalmazza:
 
-- **CDS-entitás neve** – a Common Data Service rendszerben található entitás neve.
-- **CDS-entitás referenciája** – a Common Data Service által rekord azonosítására használt azonosító. Ez az érték egyenértékű a Human Resources rendszerben található **RecId**-értékkel. Az azonosítót akkor találja meg, ha megnyitja a Common Data Service-entitást a Microsoft Excel programban.
-- **Human Resources-entitás neve** – az az entitás, amely utoljára szinkronizált adatokat a Common Data Service rendszerbe. Az entitás Common Data Service előtaggal vagy egy másik előtaggal rendelkezik.
+- **Dataverse-tábla** – a Dataverse-tábla neve.
+- **Dataverse-tábla referenciája** – a Dataverse által rekord azonosítására használt azonosító. Ez az érték egyenértékű a Human Resources rendszerben található **RecId**-értékkel. Az azonosítót akkor találja meg, ha megnyitja a Dataverse-táblát a Microsoft Excel programban.
+- **Human Resources-entitás neve** – az a Human Resources-entitás, amely utoljára szinkronizált adatokat a Dataverse rendszerbe. Az entitás Dataverse előtaggal vagy egy másik előtaggal rendelkezik.
 - **Human Resources-referencia** – az a **RecId**-érték, amely a Human Resources alkalmazásban található rekordhoz van társítva.
-- **Törölve a CDS-ből** – az az érték, amely azt jelzi, hogy a rekordot törölték-e a Common Data Service rendszerből.
+- **Törölve a Dataverse-ből** – az az érték, amely azt jelzi, hogy a sort törölték-e a Dataverse rendszerből.
 
-## <a name="remove-the-association-of-a-record-in-human-resources-from-common-data-service"></a>A Common Data Service rendszerből való rekordtársítás eltávolítása a Human Resources rendszerben
+> [!NOTE]
+> A Human Resources rekordjai a Dataverse rendszerben lévő soroknak felelnek meg.
 
-Ha problémák merülnének fel a Human Resources és a Common Data Service közötti adatszinkronizálás során, a nyomon követés törlésével és a nyomonkövetési tábla újraszinkronizálásával feloldhatja őket. Ha eltávolítja a társítást, majd módosítja vagy törli a rekordot a Common Data Service rendszerben, a rendszer a módosításokat nem szinkronizálja a Human Resources alkalmazással. Ha módosításokat hajt végre a Human Resources alkalmazásban, létrejön egy új nyomonkövetési rekord, majd a rekord frissül a Common Data Service rendszerben.
+## <a name="remove-the-association-of-a-human-resources-record-from-a-dataverse-row"></a>Human Resources-rekordtársítás eltávolítása egy Dataverse-sorból
 
-- Ha el szeretne távolítani egy rekordtársítást a Human Resources és a Common Data Service között, válassza ki az entitást a **CDS-entitás neve** mezőben, majd válassza a **Nyomonkövetési adatok törlése** elemet.
+Ha problémák merülnének fel a Human Resources és a Dataverse közötti adatszinkronizálás során, a nyomon követés törlésével és a nyomonkövetési tábla újraszinkronizálásával feloldhatja őket. Ha eltávolítja a társítást, majd módosítja vagy törli a sort a Dataverse rendszerben, a rendszer a módosításokat nem szinkronizálja a Human Resources alkalmazással. Ha módosításokat hajt végre a Human Resources alkalmazásban, létrejön egy új nyomonkövetési rekord, majd a sor frissül a Dataverse rendszerben.
 
-[![Nyomonkövetési adatok törlése](./media/hr-common-data-service-configuration-clear-tracking.png)](./media/hr-common-data-service-configuration-clear-tracking.png)
+- Ha el szeretne távolítani egy rekordtársítást a Human Resources és a Dataverse-sor között, válassza ki az entitást a **Dataverse-tábla** mezőben, majd válassza a **Nyomonkövetési adatok törlése** elemet.
 
-Ha szeretné, hogy a nyomon követés törlése után teljes szinkronizálás fusson az entitáson, tekintse meg a következő eljárást.
+[![Nyomonkövetési adatok törlése](./media/hr-admin-integration-dataverse-clear-tracking.png)](./media/hr-admin-integration-dataverse-clear-tracking.png)
 
-## <a name="sync-an-entity-between-human-resources-and-common-data-service"></a>Entitás szinkronizálása a Human Resources és a Common Data Service között
+Ha szeretné, hogy a nyomon követés törlése után teljes szinkronizálás fusson a táblán, tekintse meg a következő eljárást.
+
+## <a name="sync-a-table-between-human-resources-and-dataverse"></a>Tábla szinkronizálása a Human Resources és a Dataverse között
 
 Ez a művelet akkor használható, ha:
 
-- A Common Data Service változásai túl lassan jelennek meg a Human Resources alkalmazásban.
+- A Dataverse változásai túl lassan jelennek meg a Human Resources alkalmazásban.
 
 - A nyomon követés törlése után frissítenie kell a nyomon követési táblát.
 
-Teljes szinkronizálás futtatása egy entitáshoz a Human Resources és Common Data Service között:
+Teljes szinkronizálás futtatása egy táblához a Human Resources és Dataverse között:
 
-1. A **CDS-entitás neve** mezőben válassza ki az entitást.
+1. A **Dataverse-tábla** mezőben válassza ki a táblát.
 
 2. Válassza a **Szinkronizálás most** lehetőséget.
 
-[![Teljes szinkronizálás futtatása](./media/hr-common-data-service-configuration-sync-now.png)](./media/hr-common-data-service-configuration-sync-now.png)
+[![Teljes szinkronizálás futtatása](./media/hr-admin-integration-dataverse-sync-now.png)](./media/hr-admin-integration-dataverse-sync-now.png)
 
+## <a name="see-also"></a>Lásd még
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[Dataverse-táblák](hr-developer-entities.md)<br>
+[Dataverse virtuális táblák konfigurálása](hr-admin-integration-common-data-service-virtual-entities.md)<br>
+[A Human Resources számára elérhető virtuális táblák – GYIK](hr-admin-virtual-entity-faq.md)<br>
+[Mi az a Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)<br>
+[Terminológia frissítései](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro#terminology-updates)

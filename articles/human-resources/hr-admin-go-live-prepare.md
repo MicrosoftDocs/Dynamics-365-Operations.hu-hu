@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 59d7274c3b40e78209d90960c4514321b736876a
-ms.sourcegitcommit: b40d6ce45aeb07724fc41d1a41923970b007fbcf
+ms.openlocfilehash: b4196532be8ad40bacb8d614c6b0c86215b00bdb
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "4418925"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5112773"
 ---
 # <a name="prepare-for-human-resources-go-live"></a>Felkészülés a Human Resources éles indításra
 
@@ -53,28 +53,36 @@ Az alábbi táblázat a folyamat összes lépését, a várható időtartamot é
 
 ## <a name="completing-the-lcs-methodology"></a>Az LCS-módszertan kitöltése
 
-Az egyes megvalósítási projektek egyik fő mérföldköve az éles környezetre való átállás. 
-
-Annak érdekében, hogy az éles környezet élő műveletekhez való használható legyen, a Microsoft csak akkor biztosítja az éles példányt, ha a megvalósítás közeledik az **Üzemeltetés** fázishoz, miután az LCS-módszertanban szükséges tevékenységek befejeződtek. Az előfizetés környezeteiről a  [Dynamics 365 licencelési útmutatójában](https://go.microsoft.com/fwlink/?LinkId=866544) talál további információt. 
-
-Az ügyfeleknek teljesíteniük kell az LCS módszertan **Elemzés**, **Tervezés és fejlesztés** és **Tesztelés fázisát**, mielőtt elérhetővé válik a  **Konfigurálás**  gomb az éles környezet kéréséhez. Az LCS fázisának befejezéséhez először be kell fejeznie minden szükséges lépést ebben a fázisban. Ha egy fázis összes lépése befejeződött, befejezheti az egész fázist. Ha módosításokat kell végrehajtania, később bármikor újra megnyithatja a fázist. További információért tekintse át a  [Lifecycle Services (LCS) a Finance and Operations alkalmazások ügyfeleihez](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs) szolgáltatáshoz. 
-
-A lépés befejezése folyamat két részből áll: 
+Az egyes megvalósítási projektek egyik fő mérföldköve az éles környezetre való átállás. A lépés befejezése folyamat két részből áll: 
 
 - Végezze el a tényleges munkát, például a illeszkedési/hiányelemzést vagy a felhasználói elfogadási tesztelést (UAT). 
 - Jelölje meg a megfelelő lépést az LCS-módszertanban befejezettként. 
 
-Ez egy jó gyakorlat, hogy a lépéseket a módszertanban úgy töltse ki, ahogy előrehalad a végrehajtással. Ne várjon az utolsó pillanatig. Ne csak kattintsa végig az összes lépést, hogy eljusson az éles környezethez. Az ügyfél érdeke, hogy szilárd megvalósítása legyen. 
+Ez egy jó gyakorlat, hogy a lépéseket a módszertanban úgy töltse ki, ahogy előrehalad a végrehajtással. Ne várjon az utolsó pillanatig. Az ügyfél érdeke, hogy szilárd megvalósítása legyen. 
 
 ## <a name="uat-for-your-solution"></a>UAT az Ön megoldásához
 
 Az UAT-fázisban a megvalósítási projekt tesztkörnyezetében tesztelnie kell az összes megvalósított üzleti folyamatot és az ön által végrehajtott testreszabásokat. A sikeres éles indítás érdekében az UAT-fázis befejezésekor vegye figyelembe a következőket: 
 
+- Javasoljuk, hogy a UAT-folyamat olyan tiszta és új környezettel kezdődjon, ahol az ARANY konfiguráció adatait a UAT-folyamat megkezdése előtt átmásolja a környezetbe. Javasoljuk, hogy ARANY környezetként használja a működési környezetet, amíg az éles környezet el nem indul. Ezen a ponton a környezet termeléssé válik.
 - A vizsgálati esetek a követelmények teljes körét lefedik. 
 - Teszteljen az áttelepített adatok használatával. Ezeknek az adatoknak törzsadatokat kell tartalmazniuk, például dolgozókat, feladatokat és beosztásokat. A nyitó egyenlegeket is tartalmazzák, például a szabadság és a távolléti időbeli elhatárolásokat. Végül tartalmazzák a nyitott tranzakciókat, például az aktuális juttatási beléptetéseket. Teljes tesztelés minden típusú adattal, még akkor is, ha az adatkészlet nincs véglegesítve. 
 - Tesztelje a felhasználókhoz rendelt megfelelő biztonsági szerepkörök használatával (alapértelmezett és egyéni szerepkörökkel). 
 - Győződjön meg arról, hogy a megoldás megfelel minden vállalat- és iparág-specifikus szabályozási követelménynek. 
 - Dokumentálja az összes funkciót, és szerezze be az ügyfél jóváhagyását. 
+
+## <a name="mock-go-live"></a>Szimulált éles indítás
+
+Az éles indítás előtt szimulálnia kell az éles indítást az örökölt rendszerekből az új rendszerbe való átváltáshoz szükséges lépések teszteléséhez. A szimulált éles indítást tesztkörnyezetben tanácsos elvégezni, és minden lépést foglaljon bele az átállási tervbe.
+
+- Javasoljuk, hogy a működési környezetet használja ARANY konfigurációs környezetként, amíg az éles környezet el nem indul.
+- Győződjön meg arról, hogy hatékony cégirányítási folyamat legyen bevezetve, hogy védje a működési környezetet az éles környezet aktiválása előtti a véletlen tranzakcióktól vagy frissítésektől.
+- Ha készen áll az UAT vagy a szimulált éles indítás végrehajtására, frissítse a tesztkörnyezetet a működési környezetből. További tudnivalókért lásd: [Példány másolása](hr-admin-setup-copy-instance.md).
+- Az átállási terv mindegyik lépését tesztelje a tesztkörnyezetben, majd ellenőrizze a tesztkörnyezetet villámellenőrzésekkel vagy a környezetben az UAT-parancsfájlok alapján elvégzett tesztekkel.
+  - A teszteknek minden adatáttelepítést, köztük az éles indítás számára szükséges átalakításokat is tartalmazniuk kell.
+  - A folyamatnak tartalmaznia kell a korábbi rendszerek gyakorlati elzárását is.
+  - Ügyeljen arra, hogy az integrációs átállási lépéseket vagy a külső rendszer lépéseit belefoglalja a szimulált átállásba.
+- Ha a szimulált átállás során bármilyen problémát talál, előfordulhat, hogy szükség lesz egy második szimulált átállásra. Ezért javasoljuk, hogy a projekttervben két szimulált átállást határozzon meg.
 
 ## <a name="fasttrack-go-live-assessment"></a>FastTrack élő indítási értékelés
 
@@ -91,5 +99,3 @@ Az ellenőrzőlista elküldése után a FastTrack-megoldásépítész áttekinti
 ## <a name="see-also"></a>Lásd még
 
 [Éles indítás GYIK](hr-admin-go-live-faq.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

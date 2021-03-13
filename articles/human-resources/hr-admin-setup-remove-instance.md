@@ -2,7 +2,7 @@
 title: Példány eltávolítása
 description: Ez a cikk végigvezeti Önt a teszt- vagy éles környezet eltávolításán a Microsoft Dynamics 365 Human Resources esetében.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 08/07/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0a8eac74f0d840251ab56445dd5af4d19d3c0490
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1490bd95c284b58497325e57979e63a8190cb386
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418885"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5112822"
 ---
 # <a name="remove-an-instance"></a>Példány eltávolítása
 
@@ -85,6 +85,3 @@ A környezet helyreállítása:
 
 > [!Warning]
 > A Power Apps környezeteket a törlést követően csak hét napig mentik. A környezetet a 7 napos időszakon belül kell helyreállítania.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

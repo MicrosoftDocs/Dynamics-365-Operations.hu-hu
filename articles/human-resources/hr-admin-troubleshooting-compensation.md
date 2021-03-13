@@ -2,7 +2,7 @@
 title: Kompenzációs folyamat futtatása
 description: Ez a cikk bemutatja, hogy kell megoldani egy olyan problémát, ahol a vevő futtatni próbálja a kompenzációs folyamatot a Microsoft Dynamics 365 Human Resources szolgáltatásban, de nem sikerül neki.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 989a08ca8ce83fd01742f6b5ec537ee1fc825fca
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5eda572900090a3ead4b277f3c719b220dc10763
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418795"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5112829"
 ---
 # <a name="run-the-compensation-process"></a>Kompenzációs folyamat futtatása
 
@@ -47,6 +47,3 @@ Itt látható a kompenzáció dokumentációja:
 - Feldolgozás:
 
     - [Folyamatkompenzáció](https://docs.microsoft.com/dynamics365/unified-operations/talent/process-compensation)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

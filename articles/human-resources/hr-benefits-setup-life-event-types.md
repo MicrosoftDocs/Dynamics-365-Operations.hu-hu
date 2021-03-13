@@ -2,7 +2,7 @@
 title: Életesemények típusának konfigurálása
 description: A Microsoft Dynamics 365 Human Resources az élettartamesemény-típusok használatával határozza meg az olyan eseményeket, amikor lehetőség van az alkalmazotti juttatások beléptetéseinek frissítésére.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5286bcd940f4068531bae624876c8a35e64db4c3
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c382299014e3f823bc2cd210749aae8c091c5f23
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418836"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5112842"
 ---
 # <a name="configure-life-event-types"></a>Életesemények típusának konfigurálása
 
@@ -88,6 +88,3 @@ Az élettartamesemény-típus létrehozásakor a következő élettartam-esemén
 | **Jogosultsági szabály felülbírálásának lejárata (nem USA)** | Human Resources – Speciális > Juttatások > Konstrukciók > Juttatások > Jogosultsági szabály felülbírálása | Élettartam-eseményt módosító feldolgozás használata. Ha például az aktuális nap 17:00 órájára, az aktuális nap 17:00 órája utánra vagy bármelyik következő napra módosítja egy konstrukció jogosultsági szabályának felülbírálásához tartozó lejárati dátumot, majd futtatja az Életesemény-módosítás feldolgozást, akkor üzenet jelenik meg, amely jelzi, hogy a jogosultsági szabály felülírása lejárt. |
 | **Új juttatási konstrukció (nem USA)** | Human Resources – Speciális > Juttatások > Tervek > Új | <ul><li>Jogosultsági beállítások hozzáadása egy aktuális konstrukcióhoz</li><li>Jogosultsági beállításokat tartalmazó új konstrukció hozzáadása</li></ul></br></br>A HR munkatársainak ebben az esetben futtatniuk kell ezen a példányon az Élettartam-esemény jogosultsága feldolgozást. |
 | **Jogosultsági szabály változása (nem USA)** | Human Resources – Speciális > Juttatások > Szabályok/beállítások > Jogosultsági szabályok | Élettartam-esemény jogosultsága feldolgozás használata. Naplózás akkor történik, ha az **EhrBenefitEligibilityRule** rekordokban változtak a következő értékek: **UseEmplCategory**, **UseEmplStatus** vagy **UseEmplType**. Csak azok az élettartamesemény-tranzakciók frissülnek, amelyek már léteznek a módosított szabálynál vagy jogosultsági feltételnél. |
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

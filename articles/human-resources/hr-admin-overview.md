@@ -1,8 +1,8 @@
 ---
-title: Áttekintés
+title: Adminisztráció áttekintése
 description: Ez a rendszergazdai útmutató segít a Dynamics 365 Human Resources rendszer beállításában, kezelésében és problémaelhárításában.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8008a7e78bb1d1568a79fab436194a04d1ff683c
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 38a8845ec4ae4c61ea969efdee60a12cfb644a3b
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527861"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5112876"
 ---
-# <a name="overview"></a>Áttekintés
+# <a name="administration-overview"></a>Adminisztráció áttekintése
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
@@ -41,7 +41,7 @@ Ez a rendszergazdai útmutató segít a Dynamics 365 Human Resources rendszer be
 
 - Adatintegráció beállítása
   - [Válasszon ki egy adatintegrációs technológiát](hr-admin-integration-choose-technology.md)
-  - [A Common Data Service-integráció konfigurálása](hr-admin-integration-common-data-service.md)
+  - [A Dataverse-integráció konfigurálása](hr-admin-integration-common-data-service.md)
   - [A Finance szolgáltatással való integráció konfigurálása](hr-admin-integration-finance.md)
   - [A Dayforce szolgáltatással való integráció konfigurálása](hr-admin-integration-dayforce.md)
   - [Ismétlődő adatexportálási alkalmazás létrehozása](hr-admin-integration-recurring-data-export.md)
@@ -102,5 +102,3 @@ Ez a rendszergazdai útmutató segít a Dynamics 365 Human Resources rendszer be
 - [Új vagy módosult elemek a Human Resources alkalmazásban](hr-admin-whats-new.md)
 - [Fejlesztői útmutató](hr-developer-overview.md)
 - [Felhasználói útmutató](hr-hrpro-overview.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

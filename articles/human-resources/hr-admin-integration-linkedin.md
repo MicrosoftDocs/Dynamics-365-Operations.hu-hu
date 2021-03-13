@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-10-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 6f70e3a6ccf9770c75334d355db5e9df9ee912dd
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 4fda9d85b459d233e6239f3fcffbb48e596d4085
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527885"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5112883"
 ---
 # <a name="integrate-with-linkedin-talent-hub"></a>Integráció a LinkedIn Talent Hub szolgáltatással
 
@@ -127,14 +127,14 @@ Miután elmentette és bezárta az új alkalmazásfelhasználót az előző szak
     - **Név**: adja meg a korábban létrehozott Power Apps biztonsági szerepkör nevét, például **LinkedIn Talent Hub HRIS Integráció**.
     - **Felhasználói azonosító**: válassza ki azt a felhasználót, akinek van engedélye a Személyzet kezelése szakasz adatainak írására.
 
-### <a name="create-the-entity-in-common-data-service"></a>Entitás létrehozása a Common Data Service szolgáltatásban
+### <a name="create-the-table-in-dataverse"></a>Tábla létrehozása a Dataverse szolgáltatásban
 
 > [!IMPORTANT]
-> A LinkedIn Talent Hub integrációja a Common Data Service Human Resources számára létrehozott virtuális entitásaitól függ. A beállítás előfeltétele, a virtuális entitásokat beállítása. A virtuális entitások konfigurálásával kapcsolatos tudnivalókért lásd: [Common Data Service virtuális entitások](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-integration-common-data-service-virtual-entities).
+> A LinkedIn Talent Hub integrációja a Dataverse Human Resources számára létrehozott virtuális tábláitól függ. A beállítás előfeltétele a virtuális táblák konfigurálása. A virtuális táblák konfigurálásával kapcsolatos tudnivalókért lásd: [Dataverse virtuális táblák konfigurálása](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-integration-common-data-service-virtual-entities).
 
-1. A HR-modulban nyissa meg a **Common Data Service (CDS) integrációja** oldalt.
+1. A HR-modulban nyissa meg a **Dataverse integrációja** oldalt.
 
-2. Válassza ki a **Virtuális entitások** lapot.
+2. Válassza ki a **Virtuális táblák** lapot.
 
 3. Az entitáslistájár zűrje az entitások címkéi szerint, hogy megtalálja a **LinkedIn exportált pályázóit**.
 
@@ -142,7 +142,7 @@ Miután elmentette és bezárta az új alkalmazásfelhasználót az előző szak
 
 ## <a name="exporting-candidate-records"></a>Jelöltrekordok exportálása
 
-A telepítés befejezése után a toborzók és az Emberi erőforrások (HR) szakemberei a LinkedIn Talent hub **Exportálás a HRIS-be** funkcióját használhatják a LinkedIn Talent Hub programból a Human Resources felé átadott jelöltrekordok exportálására.
+A telepítés befejezése után a toborzók és az emberi erőforrások (HR) szakemberei a LinkedIn Talent hub **Exportálás a HRIS-be** funkcióját használhatják a LinkedIn Talent Hub programból a Human Resources felé átadott jelöltrekordok exportálására.
 
 ### <a name="export-records-from-linkedin-talent-hub"></a>Rekordok exportálása a LinkedIn Talent Hub alkalmazásból
 
@@ -188,8 +188,5 @@ A program az alábbi adatokat importálja és viszi fel az új alkalmazotti reko
 
 ## <a name="see-also"></a>Lásd még
 
-[Common Data Service-virtuális entitások konfigurálása](./hr-admin-integration-common-data-service-virtual-entities.md)<br>
-[Mi az a Common Data Service?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[Dataverse virtuális táblák konfigurálása](./hr-admin-integration-common-data-service-virtual-entities.md)<br>
+[Mi az a Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)

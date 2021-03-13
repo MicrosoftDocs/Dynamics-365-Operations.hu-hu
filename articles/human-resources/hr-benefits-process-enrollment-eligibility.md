@@ -2,7 +2,7 @@
 title: Felvételi jogosultság feldolgozása
 description: Ez a cikk bemutatja, hogyan kell futtatni a felvételi jogosultsági folyamatot.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: dfb7f13dce48f33c111af491918702763f7e3b8a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 69ea23e4051a6975a5892cd027777c5a88472509
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418803"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5112845"
 ---
 # <a name="process-enrollment-eligibility"></a>Felvételi jogosultság feldolgozása
 
@@ -72,6 +72,3 @@ Ez a cikk bemutatja, hogyan lehet megtekinteni a jogosultsági folyamat eredmén
    | **Eredményállapot** | Ez jogosult vagy nem jogosult lesz. Ha a dolgozó nem teljesítette a jogosultsági szabály feltételeit, akkor az eredmény állapota nem jogosult lesz, ha a dolgozó nem rendelkezik a szükséges adatokkal, például a fizetési gyakorisággal vagy a fix kompenzációval, vagy ha a juttatási konstrukcióban hiányzik egy olyan adat, amely megakadályozza a dolgozó regisztrációját. |
    | **Eredményüzenet** | Azt jelzi, hogy a dolgozó miért nem jogosult a juttatási konstrukcióra, vagy ha a jogosultsági szabály teljesült. |
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-12-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 9a35abcb8a2f6aa8031c8d84a44c2a8ad93883ac
-ms.sourcegitcommit: 0354ca7e566fbd2eb0aabdd40000d4ac5c44ea78
+ms.openlocfilehash: f615584785ba48a140e4e97991a4594047fea8ee
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "4669171"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5112741"
 ---
 # <a name="recruit-job-candidates"></a>Állásjelöltek toborzása
 
@@ -38,7 +38,7 @@ A Dynamics 365 Human Resources segít a toborzási kérelmek kezelésében. Seg�
 Ha nem használ külön toborzási alkalmazást, manuálisan is kezelheti a jelölteket az Human Resources alkalmazásban.
 
 >[!NOTE]
->Ha Ön rendszergazda vagy fejlesztő, és integrálni szeretné az Human Resources alkalmazást egy külső toborzó alkalmazással, olvassa el a [Common Data Service integráció konfigurálása](hr-admin-integration-common-data-service.md) és a [Common Data Service virtuális entitások konfigurálása](hr-admin-integration-common-data-service-virtual-entities.md) című témakört
+>Ha Ön rendszergazda vagy fejlesztő, és integrálni szeretné az Human Resources alkalmazást egy külső toborzó alkalmazással, olvassa el a [Dataverse integráció konfigurálása](hr-admin-integration-common-data-service.md) és a [Dataverse virtuális táblák konfigurálása](hr-admin-integration-common-data-service-virtual-entities.md) című témakört
 >
 > Integrálható toborzó alkalmazásokat találhat az [AppSource](https://appsource.microsoft.com/marketplace/apps?search=recruiting%20dynamics) felületén is.
 >
@@ -46,15 +46,13 @@ Ha nem használ külön toborzási alkalmazást, manuálisan is kezelheti a jel�
 
 ## <a name="enable-recruiting-requests"></a>Toborzási kérelmek engedélyezése
 
-Ha toborzási kérelmeket szeretne benyújtani a Human Resources alkalmazásban szolgáltatásban, először engedélyeznie kell a funkciót az **Human Resources paramétereiben**.
+Ha toborzási kérelmeket szeretne benyújtani a Human Resources alkalmazásban, először engedélyeznie kell a funkciót a **Human Resources megosztott paraméterei** lehetőségben.
 
 1. A **Személyzetkezelés** munkaterületen válassza a **Hivatkozások** lehetőséget.
 
-2. A **Beállítás** alatt válassza az **Emberierőforrás-paraméterek** lehetőséget.
+2. A **Beállítás** alatt válassza a **Humán erőforrás megosztott paraméterek** lehetőséget.
 
-3. Az **Általános** lap **TOBORZÁS** részében állítsa a **Toborzási kérelmek engedélyezése** beállítás **Igen** értékre.
-
-   ![Toborzási kérelmek engedélyezése](./media/hr-recruit-0-enable-requests.png)
+3. A **Toborzás** lap **TOBORZÁS** részében állítsa a **Toborzási kérelmek engedélyezése** beállítást **Igen** értékre.
 
 ## <a name="add-a-recruiting-request-location"></a>Toborzási kérelem helyének hozzáadása
 
@@ -224,8 +222,6 @@ Szükség esetén a felvétel után elbocsáthat egy jelöltet. Előfordulhat p�
 
 ## <a name="see-also"></a>Lásd még
 
-[Common Data Service-virtuális entitások konfigurálása](hr-admin-integration-common-data-service-virtual-entities.md)<br>
+[Dataverse virtuális táblák konfigurálása](hr-admin-integration-common-data-service-virtual-entities.md)<br>
 [Munkaerő-szervezés](hr-personnel-departments-jobs-positions.md)<br>
 [Feladat összetevőinek beállítása](hr-personnel-jobs.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
