@@ -1,5 +1,5 @@
 ---
-title: Adatok importálása több munkalapot tartalmazó Excel adatentitás-sablonokból
+title: Adatsablonok több munkalappal
 description: Ez a témakör leírja, hogyan lehet Excel adatentitás-sablonok segítségével adatokat importálni a Finance and Operations szolgáltatásba.
 author: Sunil-Garg
 manager: AnnBe
@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Platform update 13
-ms.openlocfilehash: 618b62364353f409f6971ddd9adc7d55297d09cf
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: fb505f33e497cf16cd6cdeddee1f88d01797f3ef
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688079"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5130581"
 ---
-# <a name="import-data-from-excel-data-entity-templates-that-have-multiple-worksheets"></a>Adatok importálása több munkalapot tartalmazó Excel adatentitás-sablonokból
+# <a name="data-templates-with-multiple-worksheets"></a>Adatsablonok több munkalappal
 
 [!include [banner](../includes/banner.md)]
 
@@ -49,6 +49,3 @@ Azokban az esetekben, amikor ugyanannak a fájlnak egy új verzióját, vagy egy
 ## <a name="upload-a-file-using-run-project"></a>Fájl feltöltése a Projekt futtatása lehetőséggel
 
 Egy importálási projekt végrehajtásához feltölthet egy Excel-fájlt a **Projekt futtatása** funkció használatával. Ügyelnie kell arra, hogy csak olyan fájlokat töltsön fel, amelyek ugyanazokat a munkalapokat tartalmazzák, mint a meglévő leképezések az adatentitásokhoz az adatprojektben. Ha egy munkalap nem található az újonnan feltöltött fájlban, a rendszer hibaüzenetet jelenít meg, és az importálás leáll. Ha egy entitás esetében módosítani kell a hozzárendelést a munkalaphoz, akkor az adatprojektben a hozzárendeléseket először frissíteni kell az adatprojektből, mielőtt a fájlt használná **Projekt futtatása** funkcióban.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

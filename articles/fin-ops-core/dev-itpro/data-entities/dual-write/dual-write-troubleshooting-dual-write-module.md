@@ -1,5 +1,5 @@
 ---
-title: A(z) Finance and Operations alkalmazásokban lévő problémák elhárítása a kettős írás modullal
+title: A Finance and Operations alkalmazások kettős írással kapcsolatos problémáinak elhárítása
 description: Ez a témakör olyan hibaelhárítási információkat tartalmaz, amelyek segítségével javíthatók a Finance and Operations-alkalmazások kettős írás modullal kapcsolatos problémái.
 author: RamaKrishnamoorthy
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 2241e7e6219f95115f55bc45a4d94550276e1e21
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 3ffeb2de0acc1761bccf62a1a124852c504e2a3a
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683623"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5131245"
 ---
-# <a name="troubleshoot-issues-with-the-dual-write-module-in-finance-and-operations-apps"></a>A(z) Finance and Operations alkalmazásokban lévő problémák elhárítása a kettős írás modullal
+# <a name="troubleshoot-dual-write-issues-in-finance-and-operations-apps"></a>A Finance and Operations alkalmazások kettős írással kapcsolatos problémáinak elhárítása
 
 [!include [banner](../../includes/banner.md)]
 
@@ -44,7 +44,7 @@ Ha nem tudja megnyitni a **Kettős írás** lapot a **Kettős írás** csempe ki
 
 **A hiba javításához szükséges hitelesítő adatok:** ugyanaz a felhasználó, aki a kettős írást telepítette.
 
-Előfordulhat, hogy a következő hibaüzenet jelenik meg, amikor új entitást próbál konfigurálni a kettős íráshoz. A kettős írási kapcsolatot beállító felhasználó hozhatja csak létre a leképezést.
+Előfordulhat, hogy a következő hibaüzenet jelenik meg, amikor új táblát próbál konfigurálni a kettős íráshoz. A kettős írási kapcsolatot beállító felhasználó hozhatja csak létre a leképezést.
 
 *A válasz állapotkódja sikertelenséget jelez: 401 (Nem engedélyezett)*
 
@@ -77,7 +77,7 @@ Ez a hiba akkor fordul elő, ha a csatolt Dataverse-környezet nem érhető el.
 
 A hiba elhárításához hozzon létre egy jegyet az adatintegrációs csoporthoz. A hálózati nyomkövetést csatolja annak érdekében, hogy az adatintegrációs csoport megjelölje a leképezéseket a háttérben **nem futóként**.
 
-## <a name="error-while-trying-to-start-an-table-mapping"></a>Hiba történt egy táblaleképezés indításának kísérlete közben
+## <a name="error-while-trying-to-start-a-table-mapping"></a>Hiba történt egy táblaleképezés indításának kísérlete közben
 
 A következőhöz hasonlító hibaüzenet jelenhet meg, amikor a leképezés állapotát **Futás** értékre akarja állítani:
 
@@ -86,7 +86,4 @@ A következőhöz hasonlító hibaüzenet jelenhet meg, amikor a leképezés ál
 A hiba javítása a hiba okának függvénye:
 
 + Ha a leképezés függő leképezésekkel rendelkezik, akkor győződjön meg róla, hogy engedélyezi az táblaleképezés függő leképezését.
-+ A leképezésből valószínűleg hiányzik a forrás- vagy célmezők. Ha hiányzik egy mező a Finance and Operations alkalmazásban, akkor kövesse a következő szakasz lépéseit: [Hiányzó entitásmezők problémája leképezésekben](dual-write-troubleshooting-finops-upgrades.md#missing-entity-fields-issue-on-maps). Ha hiányzik egy mező a Dataverse szolgáltatásból, kattintson a **Táblák frissítése** gombra a leképezésen, így a mezőket a rendszer automatikusan visszatölti a leképezésbe.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
++ A leképezésből valószínűleg hiányzik a forrás- vagy céloszlopok. Ha hiányzik egy oszlop a Finance and Operations alkalmazásban, akkor kövesse a következő szakasz lépéseit: [Hiányzó táblaoszlopok problémája leképezésekben](dual-write-troubleshooting-finops-upgrades.md#missing-table-columns-issue-on-maps). Ha hiányzik egy oszlop a Dataverse szolgáltatásból, kattintson a **Táblák frissítése** gombra a leképezésen, így az oszlopokat a rendszer automatikusan visszatölti a leképezésbe.

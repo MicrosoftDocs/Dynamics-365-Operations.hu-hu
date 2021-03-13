@@ -1,5 +1,5 @@
 ---
-title: Bevált eljárások a kuponok Általános napló entitás által történő importálásához
+title: Kuponok Általános napló entitással történő importálása
 description: Ez a témakör tippeket és trükköket mutat be az adatok importálásához az Általános naplóba az Általános napló entitás segítségével.
 author: rcarlson
 manager: AnnBe
@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f5b36e11bd9ef338334f7ac1b6412edb7754010f
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 8ccb479cf7bcf86c01ed274a7a39856d538f220f
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687643"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5129599"
 ---
-# <a name="best-practices-for-importing-vouchers-by-using-the-general-journal-entity"></a>Bevált eljárások a kuponok Általános napló entitás által történő importálásához
+# <a name="importing-vouchers-by-using-the-general-journal-entity"></a>Kuponok Általános napló entitással történő importálása
 
 [!include [banner](../includes/banner.md)]
 
@@ -65,6 +65,3 @@ A következő szakaszok ezeknek a beállításoknak a hatását írják le. Azt 
 - Ha a **Bizonylatszám** mező értéke **Automatikusan generált**, az importálás nem fog sikerülni. Az **Automatikusan generált** beállítás a **Bizonylatszám** mezőhöz nem támogatott.
 
 Alapértelmezés szerint az Általános napló entitás halmazalapú feldolgozást használ. Miután értékelte az üzleti követelményeket a szervezete számára, megváltoztathatja a **Halmazalapú feldolgozás** beállítást az **Adatentitások** lehetőségre kattintva az **Adatok kezelése** munkaterületen. A halmazalapú feldolgozás a importálási folyamat sebességét hivatott növelni. Ha nem használja a halmazalapú feldolgozást, az Általános napló entitás importálása lassabb lesz.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

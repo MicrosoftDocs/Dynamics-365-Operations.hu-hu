@@ -2,7 +2,7 @@
 title: A cím változásainak megtekintése és kezelése
 description: Ez a témakör azt mutatja be, hogyan lehet megtekinteni és kezelni a cím változásait a Dynamics 365 Human Resources rendszerben.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 08/07/2020
 ms.topic: article
 ms.prod: ''
@@ -10,19 +10,19 @@ ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.custom: 269074
 ms.assetid: 426c6127-42ee-4163-8dd0-b2867f95581d
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-08-07
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a69d723b45e834b022491c8eaf2a7fb580e54f1d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8746f449f2b30b2e2119446c1912842c420acbfc
+ms.sourcegitcommit: 2190be6c205d7d9e43bdb99b9190cc0112f9f093
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418794"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "5152053"
 ---
 # <a name="view-and-manage-address-changes"></a>A cím változásainak megtekintése és kezelése
 
@@ -125,9 +125,6 @@ A HR munkatársai a **Személyzetkezelés** munkaterületen megtekinthetik és n
 Amikor kiválasztja a **Címváltozások** csempét, egy új lapon megjelennek az esetleges címváltozások részletei. Lehetősége van arra, hogy a jobb felső sarokban lévő **Jövőbeli címváltozásokkal** kiválasztásával megjelenítse a jövőbeli dátumú címváltozásokat.
 
 > [!NOTE]
-> Ha figyelmeztetést vagy e-mailt szeretne kapni ezekről a címváltozásokról, akkor létrehozhat egy új riasztási szabályt a Művelet panel **Beállítások** lapján. További információ a riasztási szabályokról: [Figyelmeztetési szabályok létrehozása](/fin-ops-core/fin-ops/get-started/create-alert-rules.md).<br><br>
+> Ha figyelmeztetést vagy e-mailt szeretne kapni ezekről a címváltozásokról, akkor létrehozhat egy új riasztási szabályt a Művelet panel **Beállítások** lapján. További információ a riasztási szabályokról: [Figyelmeztetési szabályok létrehozása](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/create-alerts).<br><br>
 
-> Ha munkafolyamatot kíván konfigurálni a címváltozásokhoz, akkor a riasztási szabály **Külső küldés** beállításának kiválasztása után használhatja a Power Automate szolgáltatást az üzleti esemény aktiválásra és a munkafolyamat konfigurálására. További tájékoztatás: [Figyelmeztetések üzleti eseményekként](/fin-ops-core/dev-itpro/business-events/alerts-business-events.md).
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+> Ha munkafolyamatot kíván konfigurálni a címváltozásokhoz, akkor a riasztási szabály **Külső küldés** beállításának kiválasztása után használhatja a Power Automate szolgáltatást az üzleti esemény aktiválásra és a munkafolyamat konfigurálására. További tájékoztatás: [Figyelmeztetések üzleti eseményekként](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/create-alerts#alerts-as-business-events).

@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: TaxTable
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 28518341544327f1983e563b719b0f455b6e1c43
-ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
+ms.openlocfilehash: 948860bb064dde1085fef4a74da2d9a600892294
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "4444176"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5131005"
 ---
 # <a name="set-up-lease-books"></a>Lízingkönyvek beállítása
 
@@ -53,6 +52,4 @@ Lízingkönyv létrehozásához kövesse az alábbi lépéseket.
     | Rövid távú küszöbérték                     | Adja meg a rövid távú lízingek küszöbértékként használandó hónapok számát. Ha a lízing időtartama kisebb vagy egyenlő az itt megadott hónapok számával, a rendszer a lízinget rövid távú lízingként osztályozza, és a halasztott bérleti díjat kell alkalmazni. |
     | Alacsony értékű küszöb                      | Adja meg az alacsony értékű lízingek küszöbértékeként használandó összeget. Ha az eszköz valós értéke kisebb vagy egyenlő az itt megadott értékkel, a rendszer a lízinget alacsony értékű lízingként osztályozza, és a halasztott bérleti díjat kell alkalmazni. |
     | Fizetés szállítónak                            | Állítsa ezt a beállítást **Igen** értékre, ha lehetővé szeretné tenni a lízingkifizetések számlaként történő feladását az egyes lízingeken megadott szállítói számlára. A lízingkifizetés feladásakor a szállítói számla jóváírásra kerül. Ha ez a beállítás **Nem** értékű, akkor a **Lízing fizetési** feladási típushoz a **Lízing feladási paraméterek** lapon megadott számla kerül jóváírásra. |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+    | Lízingmegállapodás                       | Válassza ki a lízingszerződés kezdő dátumát:<ul><li><b>Nincs</b> – a lízing kezdő dátuma legyen a kezdő dátum.</li><li><b>Teljes hónap</b> – a kezdési dátum annak a hónapnak az első napja, amelybe a lízing kezdő dátuma esik.</li></ul><p>Ha a <b>Nincs</b> lehetőséget választja, akkor felmerül a kockázat, hogy a kötelezettségamortizációs és az eszköz értékcsökkenési ütemezései a hónap közepén végzik az elhatárolást és a költségek feladását, nem pedig a hónap végén. A <b>Teljes hónap</b> kiválasztásával biztosíthatja, hogy a rendszer a hónap első napján elszámolja a lízinget, és az egész hónapra vonatkozó költséget a hónap utolsó napján határolja el és adja fel.</p><p><strong>Megjegyzés:</strong> A lízingelési konvenciókkal kapcsolatos funkciót be kell kapcsolni a Funkciókezelés segítségével. A <b>Funkciókezelés</b> munkaterületen keresse meg és válassza ki az <b>Eszközkezelési lízingelési konvenciók</b> funkciót, majd válassza ki az <b>Engedélyezés most</b> lehetőséget.</p> |

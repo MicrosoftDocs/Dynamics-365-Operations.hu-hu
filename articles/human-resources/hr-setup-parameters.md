@@ -2,7 +2,7 @@
 title: A Human Resources paramétereinek konfigurálása
 description: A Human Resources egyes paramétereinek beállításait közösen használják a vállalatok, azonban vannak olyan paraméter-beállítások, amelyek vállalatonként különböznek. Ez a cikk ismerteti a vállalat-specifikus HR paraméterek beállítását.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
@@ -11,19 +11,19 @@ ms.technology: ''
 ms.search.form: HRMParameters, HcmPersonnelManagementWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.custom: 51941
 ms.assetid: 2cfb061a-a616-4bf9-9d98-9cde00039eec
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: bac50c5f302797e28df2bc792893c8a682899a93
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 131606ebaff49a2c63d22bcfdb5e523f4df87ec6
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418793"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5129125"
 ---
 # <a name="configure-human-resources-parameters"></a>A Human Resources paramétereinek konfigurálása
 
@@ -50,6 +50,3 @@ A **Számsorozat** lapon található beállítások határozzák meg a sorozatok
 
 > [!NOTE]
 > A ledolgozott órák száma nem haladhatja meg az 1250-et, és a munkaviszony nem lehet hosszabb 12 hónapnál. Ezek a maximális értékek az Egyesült Államok szövetségi törvényének megfelelőek. Végül az **Alkalmazotti önkiszolgáló rendszer** lapon található beállítások határozzák meg az információkat, amelyeket a vezetők megadhatnak az alkalmazottaik nevében.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

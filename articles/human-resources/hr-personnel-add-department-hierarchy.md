@@ -2,7 +2,7 @@
 title: Részlegek létrehozása és társítása a szervezeti hierarchiához
 description: A részleg egy működési egység, amely a szervezet egy kategóriáját vagy működési területét képviseli. Egy részleg a szervezet egy konkrét területen végzett tevékenységeiért felel (például értékesítés, könyvelés, emberi erőforrások). A részlegek segítségével hozhatók létre jelentések a működési területekről. A részlegeknek lehet eredménykimutatási felelőssége.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -11,19 +11,19 @@ ms.technology: ''
 ms.search.form: HierarchyDesigner, OMOperatingUnit, HcmPersonnelManagementWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.custom: 63213
 ms.assetid: 5dbc62fc-0184-4c0e-9856-e735fc68799e
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 8dbaddf0165f36db07378e817639fd8b17a4a96f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ab9d16c8b8596f0890e0256f33608fda99a5312f
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418783"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5130373"
 ---
 # <a name="create-departments-and-include-them-in-the-department-hierarchy"></a>Részlegek létrehozása és társítása a szervezeti hierarchiához
 
@@ -54,6 +54,3 @@ Egy részleg hozzáadásához a részleghierarchiához, tegye a következőket.
 
 ## <a name="steps-for-creating-a-department"></a>A részleg létrehozásának lépései
 Lásd az [Új részlegek meghatározása](../fin-and-ops/hr/tasks/define-new-departments.md) cikket az új osztály létrehozásának lépésről lépésre útmutatójához. 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

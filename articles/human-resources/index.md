@@ -2,7 +2,7 @@
 title: Üdvözli a(z) Dynamics 365 Human Resources
 description: A Dynamics 365 Human Resources munkaerővel kapcsolatos háttérinformációkat nyújt, amelyekkel adatokon alapuló alkalmazotti élményeket hozhat létre több területen keresztül.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 65100ba5798ac5731d510c8f6f112bb7a33b4e65
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 1136d4c811f819665202f5f93e54b63b98188970
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4529780"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5129544"
 ---
 # <a name="welcome-to-dynamics-365-human-resources"></a>Üdvözli a(z) Dynamics 365 Human Resources
 
@@ -61,7 +61,7 @@ A Human resources összeköti az embereket és az üzemeltetési adatokat, így 
 
 [Áttekintés](hr-developer-overview.md)</br>
 [Bővítés a Power Apps és a Power Automate szolgáltatással](hr-developer-power-apps.md)</br>
-[Human Resources-entitások a Common Data Service szolgáltatásban](hr-developer-entities.md)</br>
+[Human Resources-entitások a Dataverse szolgáltatásban](hr-developer-entities.md)</br>
 [Egyéni mezők](hr-developer-custom-fields.md)</br>
 [Adatintegráció beállítása](hr-admin-integration-choose-technology.md)</br>
 [Entitás API referenciája](hr-developer-api-authentication.md)
@@ -78,6 +78,3 @@ A Human resources összeköti az embereket és az üzemeltetési adatokat, így 
 [Szabadság és távollét kezelése](hr-leave-and-absence-overview.md)</br>
 [Alkalmazottak fejlesztése](hr-develop-performance-management-overview.md)</br>
 [Tanfolyamok létrehozása](hr-learning-courses.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

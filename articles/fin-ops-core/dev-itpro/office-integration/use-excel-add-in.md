@@ -1,9 +1,9 @@
 ---
-title: Entitásadatok megnyitása az Excel programban, és frissítésük az Excel-modul használatával
-description: Ez a témakör bemutatja, hogyan lehet megnyitni az entitásadatokat a Microsoft Excel programban, és hogyan lehet megtekinteni, frissíteni és szerkeszteni az adatokat az Excel Microsoft Dynamics Office beépülő moduljának segítségével.
-author: ChrisGarty
+title: Az entitásadatok megtekintése és frissítése az Excel programmal
+description: Ez a témakör bemutatja, hogyan lehet megnyitni az entitásadatokat a Microsoft Excel programban, és hogyan lehet megtekinteni, frissíteni és szerkeszteni az adatokat az Excel Microsoft Dynamics Excel bővítményének segítségével.
+author: jasongre
 manager: AnnBe
-ms.date: 04/11/2018
+ms.date: 01/22/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -13,38 +13,39 @@ ms.reviewer: sericks
 ms.custom: 267914
 ms.assetid: 4e6c7194-a059-4057-bd62-ec0c802c36fd
 ms.search.region: Global
-ms.author: cgarty
+ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 26d5f165648c1553745e3061cc89bcba42f9636a
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 0a9486b3d700cdbe19fbcdba431f673d0a03014f
+ms.sourcegitcommit: ca05440ee503bf15fe98fe138d317c1cdf21ad16
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688467"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "5141876"
 ---
-# <a name="open-entity-data-in-excel-and-update-it-by-using-the-excel-add-in"></a>Entitásadatok megnyitása az Excel programban, és frissítésük az Excel-modul használatával
+# <a name="view-and-update-entity-data-with-excel"></a>Az entitásadatok megtekintése és frissítése az Excel programmal 
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
-Ez a témakör bemutatja, hogyan lehet megnyitni az entitásadatokat a Microsoft Excel programban, és hogyan lehet megtekinteni, frissíteni és szerkeszteni az adatokat az Excel Microsoft Dynamics Office beépülő moduljának segítségével. Az entitás adatainak megnyitásához kiindulhat az Excel vagy Finance and Operations alkalmazásokból.
+Ez a témakör bemutatja, hogyan lehet megnyitni az entitásadatokat a Microsoft Excel programban, és hogyan lehet megtekinteni, frissíteni és szerkeszteni az adatokat az Excel Microsoft Dynamics Excel bővítményének segítségével. Az entitás adatainak megnyitásához kiindulhat az Excel vagy Finance and Operations alkalmazásokból.
 
-Az entitásadatok megnyitásával az Excel programban gyorsan és egyszerűen tekintheti meg és szerkesztheti az adatokat az Excel beépülő moduljának segítségével. A bővítményhez Microsoft Excel 2016 szükséges.
+Az entitásadatok megnyitásával az Excel programban gyorsan és egyszerűen tekintheti meg és szerkesztheti az adatokat az Excel beépülő moduljának segítségével. A bővítményhez Microsoft Excel 2016 vagy újabb verzió szükséges.
 
 > [!NOTE]
 > Ha a Microsoft Azure Active Directory (Azure AD) bérlője az Active Directory összevonási szolgáltatások (AD FS) használatára van beállítva, meg kell győződnie arról, hogy a 2016. májusi Office-frissítés telepítve van, hogy az Excel-bővítmény helyesen jelentkeztesse be.
 
-További tudnivalókért az Excel-bővítményről, tekintse meg a rövid videót: [Excel-sablon létrehozása a fejléc- és sormintákhoz a Dynamics 365 for Finance and Operations](https://youtu.be/RTicLb-6dbI) alkalmazásban.
+További tudnivalókért az Excel-bővítmény használatáról, tekintse meg a rövid videót: [Excel-sablon létrehozása a fejléc- és sormintákhoz](https://youtu.be/RTicLb-6dbI).
 
-## <a name="open-entity-data-in-excel-when-you-start-from-finance-and-operations"></a>Az entitás adatainak megnyitása az Excel indításakor a Finance and Operations alkalmazásból
-1. A Finance and Operations lapján válassza a **Megnyitás Microsoft Office alkalmazásban** lehetőséget.
+## <a name="open-entity-data-in-excel-when-you-start-from-a-finance-and-operations-app"></a>Az entitás adatainak megnyitása az Excel indításakor a Finance and Operations alkalmazásból
+1. A Finance and Operations alkalmazás lapján válassza a **Megnyitás Microsoft Office alkalmazásban** lehetőséget.
 
     Ha az oldal gyökér adatforrása (tábla) megegyezik bármelyik entitás gyökér adatforrásával, létrejönnek a lap alapértelmezett **Megnyitás az Excel programban** beállításai. A **Megnyitás az Excel programban** lehetőségek megtalálhatók a gyakran használt lapokon, például az **Összes szállító** és **Összes vevő** oldalon.
  
 2. Válassza az egyik **Megnyitás az Excel programban** lehetőséget, és nyissa meg a létrejövő munkafüzetet. Ez a munkafüzet kötési információkat tartalmaz az entitásra, egy mutatót a környezetre és egy mutatót az Excel-bővítményre.
 3. Az Excel programban válassza a **Szerkesztés engedélyezése** lehetőséget az Excel-bővítmény futtatásának engedélyezéséhez. Az Excel-bővítmény egy panelen fut az Excel ablak jobb oldalán.
 4. Ha az Excel beépülő modult első alkalommal futtatja, válassza az **Ez a bővítmény megbízható** lehetőséget.
-5. Ha a rendszer bejelentkezést kér, válassza a **Bejelentkezés** lehetőséget, majd a Finance and Operations bejelentkezéshez használt hitelesítő adatok használatával jelentkezzen be. Az Excel beépülő modul az Internet Explorer korábbi bejelentkezési kontextusát használva automatikusan bejelentkezik a rendszerbe, ha talál ilyet. Ezért ellenőrizze a felhasználónevet az Excel-bővítmény jobb felső sarkában.
+5. Ha a rendszer bejelentkezést kér, válassza a **Bejelentkezés** lehetőséget, majd a Finance and Operations alkalmazás bejelentkezéshez használt hitelesítő adatainak használatával jelentkezzen be. Az Excel beépülő modul a böngésző korábbi bejelentkezési kontextusát használva automatikusan bejelentkezik a rendszerbe, ha talál ilyet. (Az operációs rendszeren alapuló böngészővel kapcsolatos tudnivalókat lásd: [Az Office-bővítmények által használt böngészők](https://docs.microsoft.com/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins.) A bejelentkezés sikerességének biztosítása érdekében ellenőrizze a felhasználónevet az Excel-bővítmény jobb felső sarkában. 
 
 Az Excel-bővítmény automatikusan beolvassa a kijelölt entitás adatait. Ne felejtse, hogy nincsenek adatok a munkafüzetben mindaddig, amíg be nem olvassa őket az Excel-bővítmény.
 
@@ -53,7 +54,7 @@ Az Excel-bővítmény automatikusan beolvassa a kijelölt entitás adatait. Ne f
 2. Az Office Áruházban keressen a **Dynamics** kulcsszóra, majd válassza a **Hozzáadás** lehetőséget a **Microsoft Dynamics Office-bővítmény** (az Excel-bővítmény) mellett.
 3. Ha az Excel beépülő modult első alkalommal futtatja, válassza az **Ez a bővítmény megbízható** lehetőséget az Excel-bővítmény futásának engedélyezéséhez. Az Excel-bővítmény egy panelen fut az Excel ablak jobb oldalán.
 4. Válassza a **Kiszolgáló adatainak hozzáadása** lehetőséget a **Beállítások** ablak megnyitásához.
-5. A böngészőben az URL-címet másolja ki a célként megadott Finance and Operations példányból, illessze be a **Kiszolgáló URL-címe** mezőben, és töröljön mindent az állomás neve után. Az eredményül kapott URL-címnek csak az állomásnévvel kell rendelkeznie.
+5. A böngészőben az URL-címet másolja ki a célként megadott Finance and Operations alkalmazás példányból, illessze be a **Kiszolgáló URL-címe** mezőben, és töröljön mindent az állomás neve után. Az eredményül kapott URL-címnek csak az állomásnévvel kell rendelkeznie.
 
     Ha például az URL-cím `https://xxx.dynamics.com/?cmp=usmf&amp;mi=CustTableListPage`, akkor a `https://xxx.dynamics.com` részen kívül töröljön mindent.
 
@@ -72,7 +73,7 @@ Az Excel-bővítmény automatikusan beolvassa a kijelölt entitás adatait. Ne f
 Miután az Excel-bővítmény beolvasta az entitásadatokat a munkafüzetbe, bármikor frissítheti az adatokat a **Frissítés** lehetőséget választva az Excel-bővítményben.
 
 ## <a name="edit-entity-data-in-excel"></a>Az Excel programban az entitás adatainak szerkesztése
-Az entitásadatokat igény szerint módosíthatja, és aztán újra közzéteheti őket a **Közzététel** elemre kattintva az Excel-bővítményben. Egy rekord módosításához a munkalapon jelöljön ki egy cellát, és változtassa meg a cella értékét. Új rekord hozzáadásához hajtsa végre az alábbi lépések valamelyikét:
+Az entitásadatokat igény szerint módosíthatja, és aztán újra közzéteheti őket a Finance and Operations alkalmazásokban a **Közzététel** elemre kattintva az Excel-bővítményben. Egy rekord módosításához a munkalapon jelöljön ki egy cellát, és változtassa meg a cella értékét. Új rekord hozzáadásához hajtsa végre az alábbi lépések valamelyikét:
 
 - Kattintson bárhová az adatforrások táblázatában, majd az **Új** lehetőségre az Excel-bővítményben.
 - Kattintson az adatforrások táblázatának utolsó sorába, és nyomja le a Tab billentyűt mindaddig, amíg a kurzor ki nem lép a sor utolsó oszlopából, és új sor nem jön létre.
@@ -105,6 +106,21 @@ A tervező segítségével igazíthatja az oszlopokat, amelyek automatikusan ad�
 4. A **Frissítés** lehetőségre kattintva alkalmazhatja a módosításokat az adatforrásra. Válassza a **Kész** elemet, és lépjen ki a tervezőből.
 5. Ha hozzáadott egy mezőt (oszlop), kattintson a **Frissítés** lehetőségre egy frissített adatkészlet behúzásához.
 
+## <a name="change-the-publish-batch-size"></a>A közzétételi köteg méretének módosítása
+Amikor a felhasználók az Excel-bővítmény segítségével közzéteszik az adatrekordok módosításait, a frissítéseket kötegben lehet benyújtani. A közzététel alapértelmezett kötegmérete 100 sor. A 10.0.17-es és újabb verziókban az **Excel bővítményben elérhető közzétételi kötegméret konfigurációjának engedélyezése** funkció rugalmas ellenőrzést biztosít a közzétételi kötegméret felett.
+
+A rendszergazdák az egész rendszerre vonatkozó korlátozást meghatározhatnak a "Megnyitás Excelben" munkafüzetek közzétételi kötegméretére vonatkozóan, ha az **Office alkalmazásparaméterek** oldalának **Alkalmazásparaméterek** szakaszában meghatározzák a **Kötegkorlát közzététele** mezőt.
+
+Az Excel bővítmény használatával az egyes munkafüzetek közzétételi kötegmérete is módosítható.
+
+1. Nyissa meg a munkafüzetet az Excel programban.
+2. Kattintson az Excel-bővítmény jobb felső sarkában látható **Beállítások** fogaskerék ikon gombra.
+3. Állítsa be a **Kötegméret közzététele** mezőt a kívánt módon. A beállított értéknek kisebbnek kell lennie az egész rendszerre vonatkozó közzétételi kötegkorlátnál.
+4. Válassza ki az **OK** lehetőséget.
+5. Mentse a munkafüzetet. Ha a bővítmény beállításainak módosítása után nem menti a munkafüzetet, a munkafüzet ismételt megnyitásakor ezek a módosítások nem fognak megmaradni.
+
+Az Excel-munkafüzetsablonok sablonjai ugyanazt az eljárást használják a sablonok közzétételi kötegméretének beállítására, mielőtt feltöltik őket a rendszerbe.
+
 ## <a name="copy-environment-data"></a>Környezeti adatok másolása
 
 Az egyik környezetből a munkafüzetbe beolvasott adatok átmásolhatók egy másik környezetbe. Nem módosíthatja azonban a kapcsolat URL-jét, mert a munkafüzetben lévő adatgyorsítótár továbbra is meglévő adatokként kezeli az adatokat. Ehelyett a Környezetvédelmi adatok másolási funkcióval kell új adatokat közzétenni az új környezetbe.
@@ -123,6 +139,4 @@ Vannak bizonyos problémák, amelyek néhány egyszerű lépéssel megoldhatók.
 - **Látszik a Kisalkalmazások betöltése gomb.** – Ha az Excel-bővítmény rendelkezik egy **Kisalkalmazások betöltése** gombbal a bejelentkezés után, akkor valószínűleg nem a megfelelő felhasználóként jelentkezett be. A probléma megoldásához ellenőrizze, hogy a helyes felhasználónév jelenik-e meg az Excel-bővítmény a jobb felső sarkában. Ha helytelen felhasználónév jelenik meg, kattintson rá, jelentkezzen ki, majd jelentkezzen be újra.
 - **A „Tiltott” üzenetet kapja.** – Ha a „Tiltott” üzenetet kapja, miközben az Excel-bővítmény a metaadatok betöltését végzi, a fiók, amelyik be van jelentkezve az Excel-bővítménybe, nem rendelkezik engedéllyel a megcélzott szolgáltatás, példány vagy adatbázis használatához. A probléma megoldásához ellenőrizze, hogy a helyes felhasználónév jelenik-e meg az Excel-bővítmény a jobb felső sarkában. Ha helytelen felhasználónév jelenik meg, kattintson rá, jelentkezzen ki, majd jelentkezzen be újra.
 - **Egy üres weblap jelenik meg az Excel felett.** – Ha üres weblap jelenik meg a bejelentkezési folyamat során, a fiók AD FS-t igényel, de az Excel-programnak a bővítményt futtató verziója nem elég friss a bejelentkezési párbeszédpanel betöltéséhez. A probléma megoldásához frissítse a használt Excel-verziót. Ha a vállalata a késleltetett csatornán van, az Excel verziójának frissítéséhez használja az [Office telepítési eszközt](https://technet.microsoft.com/library/jj219422.aspx) [a késleltetett csatornáról az aktuális csatornára váltáshoz](https://technet.microsoft.com/library/mt455210.aspx).
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+- **Időtúllépés üzenet jelenik meg az adatváltozások közzététele közben** – Ha időtúllépés üzenetet kap, miközben egy entitásban próbálja közzétenni az adatok módosításait, érdemes megfontolni az érintett munkafüzet közzétételi kötegméretének csökkentését. Előfordulhat, hogy azok az entitások, amelyek nagyobb mennyiségű logikát váltanak ki a rekord módosításaiban, kisebb kötegekben küldendő frissítéseket igényelnek, hogy megelőzhető legyen az időtúllépés.

@@ -2,7 +2,7 @@
 title: Dolgozói sérülések és megbetegedések adatainak karbantartása
 description: Javasoljuk, hogy először a „Sérülés és betegség beállítása” feladat-útmutatót fejezze be, mivel annak néhány beállítási adatait itt használjuk.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -11,17 +11,17 @@ ms.technology: ''
 ms.search.form: HRMInjuryIncident, HcmWorkerLookUp, HcmPersonnelManagementWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations
+ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 367834e7e02d2061732f46d8e697044e7c49b884
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 2ae5a14879a9e182f6f4604204f1cd6dd12576a3
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418815"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5130109"
 ---
 # <a name="maintain-employee-injury-and-illness-information"></a>Dolgozói sérülések és megbetegedések adatainak karbantartása
 
@@ -93,6 +93,3 @@ Ez a feladatrögzítés tartalmazza a sérülésre vagy betegségre vonatkozó a
 36. Kattintson a Mentés gombra.
     * Az eset állapotát bármikor frissítheti.  Állítsa az eset állapotát a Folyamatban lévő értékre, ha a sérülés vagy a betegség feldolgozása folyamatban van.  Miután lezárta az eseményt, csak a költségek, a kezelés és a balesettel kapcsolatos adatok hozzáadására vagy eltávolítására van lehetősége.  Az egyéb adatok módosításához nyissa meg újra az esethez.  
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

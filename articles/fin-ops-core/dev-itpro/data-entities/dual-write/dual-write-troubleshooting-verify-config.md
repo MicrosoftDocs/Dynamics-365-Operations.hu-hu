@@ -1,5 +1,5 @@
 ---
-title: Ellenőrizze, hogy a kettős írás be van-e állítva a(z) Finance and Operations alkalmazásokban és a(z) Dataverse
+title: Ellenőrizze a kettős írás konfigurálását a Finance and Operations alkalmazások és a Dataverse esetében
 description: Ez a témakör azt mutatja be, hogyan lehet meghatározni, hogy a kettős írás konfigurálva van-e a Finance and Operations alkalmazásokban és a Dataverse szolgáltatásban.
 author: RamaKrishnamoorthy
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: f389bcf133cc7e6a086167d5e26c1b8795d0fa30
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 361d6555b60e02832c337b6f416b2b3627b6d365
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685539"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5129307"
 ---
-# <a name="verify-that-dual-write-is-configured-in-finance-and-operations-apps-and-dataverse"></a>Ellenőrizze, hogy a kettős írás be van-e állítva a(z) Finance and Operations alkalmazásokban és a(z) Dataverse
+# <a name="verify-dual-write-configuration-in-finance-and-operations-apps-and-dataverse"></a>Ellenőrizze a kettős írás konfigurálását a Finance and Operations alkalmazások és a Dataverse esetében
 
 [!include [banner](../../includes/banner.md)]
 
@@ -51,13 +51,10 @@ Az Finance and Operations alkalmazásokban adatok létrehozásakor jelentkező p
 
 ## <a name="verify-that-dual-write-is-configured-in-dataverse"></a>Ellenőrizze, hogy a kettős írás be van-e állítva a Dataverse szolgáltatásban
 
-Amikor adatokat hoz létre, ha a **Vállalat** mezőt látja a Dataverse lapjain, akkor a kettős írás konfigurálva van.
+Amikor adatokat hoz létre, ha a **Vállalat** oszlopot látja a Dataverse lapjain, akkor a kettős írás konfigurálva van.
 
 ![A Dataverse kapcsolatának ellenőrzése](media/verify_cds.png)
 
 Az Dataverse szolgáltatásban adatok létrehozásakor jelentkező problémák megoldásával kapcsolatos tudnivalókat lásd az [Élő szinkronizálási problémák elhárítása](dual-write-troubleshooting-live-sync.md) című témakörben.
 
 Azzal kapcsolatosan, hogy hogyan tekinteti meg a hibák részleteit, amikor a Dataverse szolgáltatásban hoz létre adatokat következő témakörben talál: [A beépülő modul nyomkövetési naplójának engedélyezése és megtekintése a Dataverse szolgáltatásban a hiba részleteinek megtekintéséhez](dual-write-troubleshooting.md#enable-view-trace).
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

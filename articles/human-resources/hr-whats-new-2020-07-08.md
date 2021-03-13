@@ -1,8 +1,8 @@
 ---
 title: A Dynamics 365 Human Resources új vagy módosult elemei (2020. július 08.)
 description: Ez a témakör a Microsoft Dynamics 365 Human Resources új vagy módosított szolgáltatásait írja le a 2020. július 8-i kiadásban.
-author: Darinkramer
-manager: AnnBe
+author: andreabichsel
+manager: tfehr
 ms.date: 07/08/2020
 ms.topic: article
 ms.prod: ''
@@ -15,15 +15,15 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ba0bb54b44f66aa73056667a93a3f8e6f7f618ee
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 14dfd925009cb2a9d40044e27f28521ff4d331b7
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4528473"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5130397"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-july-8-2020"></a>A Dynamics 365 Human Resources új vagy módosult elemei (2020. július 8.)
 
@@ -71,9 +71,9 @@ A létrehozott és a módosított rendszermezők most már engedélyezve vannak 
 
 Ez a kiadás kijavít egy hibát (nullértékű hivatkozás) a korszerű alkalmazotti bejegyzésben, amikor egy alkalmazottat a **Felvétel és adatok hozzáadása** beállítással alkalmaz.
 
-## <a name="changes-made-in-the-common-data-service-worker-entity-dont-reflect-in-human-resources-455652"></a>A Common Data Service dolgozó entitásában végrehajtott változtatások nem tükröződnek a humán erőforrásokban (455652)
+## <a name="changes-made-in-the-dataverse-worker-entity-dont-reflect-in-human-resources-455652"></a>A Dataverse dolgozó entitásában végrehajtott változtatások nem tükröződnek a humán erőforrásokban (455652)
 
-A Common Data Service **dolgozó** entitás következő mezőiben elvégzett módosítások most már megjelennek az Emberi erőforrások modulban:
+A Dataverse **dolgozó** entitás következő mezőiben elvégzett módosítások most már megjelennek az Emberi erőforrások modulban:
 
 - **Otthonról dolgozik**
 - **Szolgálati idő dátuma**
@@ -131,9 +131,9 @@ A DMF entitás immár elérhető az elhatárolás-felfüggesztésekhez.
 
 ## <a name="coming-soon"></a>Hamarosan
 
-## <a name="checklist-entities-included-in-common-data-service"></a>Ellenőrzőlista-entitások szerepelnek a következőben: Common Data Service
+## <a name="checklist-entities-included-in-dataverse"></a>Ellenőrzőlista-entitások szerepelnek a következőben: Dataverse
 
-Az Előkészítés, Felszámolás, Áthelyezések és Üzleti folyamatok hamarosan elérhetők lesznek a Common Data Service alkalmazásban.
+Az Előkészítés, Felszámolás, Áthelyezések és Üzleti folyamatok hamarosan elérhetők lesznek a Dataverse alkalmazásban.
 
 ## <a name="see-also"></a>Lásd még
 
@@ -141,6 +141,3 @@ Az Előkészítés, Felszámolás, Áthelyezések és Üzleti folyamatok hamaros
 [A Dynamics 365 Human Resources 2019 második kiadási hullámának áttekintése](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Rendelés frissítése](hr-admin-setup-update-process.md)</br>
 [Szolgáltatások kezelése](hr-admin-manage-features.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

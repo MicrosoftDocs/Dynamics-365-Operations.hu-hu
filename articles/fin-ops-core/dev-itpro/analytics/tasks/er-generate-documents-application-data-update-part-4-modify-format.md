@@ -1,6 +1,6 @@
 ---
 title: Formátum módosítása alkalmazásadatokkal rendelkező dokumentumok létrehozásához
-description: 'Az eljárás lépéseinek elvégzéséhez először hajtsa végre az „ER – Dokumentumok létrehozása alkalmazásadat-frissítéssel (3. rész: Modell és hozzárendelés módosítása)” eljárást.'
+description: Ez a témakör egy elektronikus dokumentumot létrehozó és alkalmazásadatokat frissítő jelentéskészítési konfigurációk megtervezését mutatja be.
 author: NickSelin
 manager: AnnBe
 ms.date: 06/19/2017
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7dfa8fcb3525876da66659fe3bd8bbe3b81a37a3
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: e820e909bcd80b4747c06ccaaeb05c03f52b6963
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684547"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5129397"
 ---
 # <a name="modify-formats-to-generate-documents-that-have-application-data"></a>Formátum módosítása alkalmazásadatokkal rendelkező dokumentumok létrehozásához
 
@@ -149,6 +149,3 @@ Az eljárás lépései az elektronikus dokumentumot létrehozó elektronikus jel
 46. Zárja be a lapot.
 47. Zárja be a lapot.
 48. Zárja be a lapot.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

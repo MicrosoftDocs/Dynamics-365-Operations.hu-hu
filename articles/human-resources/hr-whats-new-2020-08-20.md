@@ -1,9 +1,9 @@
 ---
 title: Új vagy módosult elemek a Dynamics 365 Human Resources szolgáltatásban (2020. augusztus 20.)
 description: Ez a témakör a Microsoft Dynamics 365 Human Resources új vagy módosított szolgáltatásait írja le a 2020. augusztus 20-i kiadásban.
-author: Darinkramer
-manager: AnnBe
-ms.date: 8/20/2020
+author: andreabichsel
+manager: tfehr
+ms.date: 08/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -15,15 +15,15 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-08-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 46dadb8834195c5dd06cd1c56d79324def7d9f2d
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: b3654617b0e8bc4b586e969913d5dc355b60b882
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527481"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5130059"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-august-20-2020"></a>Új vagy módosult elemek a Dynamics 365 Human Resources szolgáltatásban (2020. augusztus 20.)
 
@@ -83,9 +83,9 @@ Az alkalmazottak megtekinthetik és kérhetik a munkából való távollétet a 
  
 - **Vezetői szabadságnaptár**: A felettesek a naptár nézetben megtekinthetik a beosztottjaik jóváhagyott és függőben lévő távolléteit. Ez a nézet annak áttekintését teszi lehetővé, hogy a csapattagok mikor nem dolgoznak.
 
-### <a name="checklist-entities-included-in-common-data-service"></a>Ellenőrzőlista-entitások szerepelnek a következőben: Common Data Service
+### <a name="checklist-entities-included-in-dataverse"></a>Ellenőrzőlista-entitások szerepelnek a következőben: Dataverse
 
-Az Előkészítés, Felszámolás, Áthelyezések és Üzleti folyamatok hamarosan elérhetők lesznek a Common Data Service alkalmazásban.
+Az Előkészítés, Felszámolás, Áthelyezések és Üzleti folyamatok hamarosan elérhetők lesznek a Dataverse alkalmazásban.
 
 ## <a name="known-issues"></a>Ismert problémák
 
@@ -120,6 +120,3 @@ A közelmúltban két olyan problémát észleltünk, amely a **BenefitsPlanEmpl
 [A Dynamics 365 Human Resources 2019 második kiadási hullámának áttekintése](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Rendelés frissítése](hr-admin-setup-update-process.md)</br>
 [Szolgáltatások kezelése](hr-admin-manage-features.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

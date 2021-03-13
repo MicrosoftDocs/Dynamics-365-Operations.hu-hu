@@ -1,6 +1,6 @@
 ---
 title: Problémák elhárítása a kezdeti beállításkor
-description: Ez a témakör olyan hibaelhárítási információkat tartalmaz, amelyek segítségével kijavíthatja azokat a problémákat, amelyek a Finance and Operations-alkalmazások és a Dataverse közötti kettős írásos integráció kezdeti beállításakor merülhetnek fel.
+description: Ez a témakör olyan információkat tartalmaz, amelyek segítségével kijavíthatja azokat a problémákat, amelyek a kettős írásos integráció kezdeti beállításakor merülhetnek fel.
 author: RamaKrishnamoorthy
 manager: AnnBe
 ms.date: 03/16/2020
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 5ac6ec5003794fb5875fed6a2c4403c1444ab8b2
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: cfbc1ab3ef6d47f6ec2d8ca4ca4b8940784e6e49
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685586"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5129981"
 ---
 # <a name="troubleshoot-issues-during-initial-setup"></a>Problémák elhárítása a kezdeti beállításkor
 
@@ -71,13 +71,13 @@ Az alkalmazás-hozzájárulás biztosításához kövesse az alábbi lépéseket
 
 ## <a name="verify-that-company-data-and-dual-write-teams-are-set-up-correctly-during-linking"></a>Győződjön meg arról, hogy a vállalati adatokat és a kettős írású csapatokat az összekapcsolás során helyesen állították be
 
-A kettős írás helyes működésének biztosítása érdekében a konfiguráció során kiválasztott vállalatok a Dataverse-környezetben jönnek létre. Alapértelmezés szerint ezek a vállalatok csak olvashatók, az **IsDualWriteEnable** tulajdonság pedig **igaz** értékre van állítva. Ezenkívül létrejön az alapértelmezett részleg tulajdonosa és csoportja, amely tartalmazza a vállalat nevét. A leképezések engedélyezése előtt győződjön meg róla, hogy a csoport alapértelmezett tulajdonosa meg van adva. A **Vállalatok (CDM\_vállalat)** entitás megkereséséhez kövesse az alábbi lépéseket.
+A kettős írás helyes működésének biztosítása érdekében a konfiguráció során kiválasztott vállalatok a Dataverse-környezetben jönnek létre. Alapértelmezés szerint ezek a vállalatok csak olvashatók, az **IsDualWriteEnable** tulajdonság pedig **igaz** értékre van állítva. Ezenkívül létrejön az alapértelmezett részleg tulajdonosa és csoportja, amely tartalmazza a vállalat nevét. A leképezések engedélyezése előtt győződjön meg róla, hogy a csoport alapértelmezett tulajdonosa meg van adva. A **Vállalatok (CDM\_vállalat)** tábla megkereséséhez kövesse az alábbi lépéseket.
 
 1. A Dynamics 365 modellvezérelt alkalmazásában válassza ki a szűrőt a jobb felső sarokban.
 2. A legördülő listán válassza a **Vállalat** elemet.
 3. Az eredmények megtekintéséhez válassza a **Futtatás** parancsot.
 4. Válassza ki azt a vállalatot, amely a kettős írás konfigurálása során összekapcsolódott.
-5. Győződjön meg arról, hogy az **Alapértelmezett tulajdonos csoport** mezőben szerepel érték. A következő ábrán az **Alapértelmezett tulajdonos csoport** mező értéke **USMF kettős írás**.
+5. Győződjön meg arról, hogy az **Alapértelmezett tulajdonos csoport** oszlopban szerepel érték. A következő ábrán az **Alapértelmezett tulajdonos csoport** oszlop értéke **USMF kettős írás**.
 
     ![Az alapértelmezett tulajdonos csoport ellenőrzése](media/default_owning_team.png)
 
@@ -88,6 +88,3 @@ A következő hibaüzenetek jelenhetnek meg a leképezések engedélyezésekor:
 *Kettős írási hiba - A beépülő modul regisztrációja sikertelen: \[(Nem sikerült a projekt DWM partícióleképezésének lekérése-1ae35e60-4bc2-4905-88ea-69efd3b29260-7f12cb89-1550-42e2-858e-4761fc1443ea. Hiba: Túllépte a DWM-leképezések maxiálisan megengedett partícióinak számár-1ae35e60-4bc2-4905-88ea-69efd3b29260-7f12cb89-1550-42e2-858e-4761fc1443ea)\], Egy vagy több hiba történt.*
 
 A környezetek összekapcsolásánál érvényes aktuális korlát körülbelül 40 jogi tábla. Ez a hiba akkor fordul elő, ha engedélyezi a leképezéseket, és több mint 40 jogi tábla kapcsolódik a környezethez.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
