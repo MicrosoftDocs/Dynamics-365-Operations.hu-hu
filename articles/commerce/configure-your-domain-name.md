@@ -61,3 +61,6 @@ Ha az e-kereskedelem inicializálását követően az e-kereskedelmi környezeth
 [Tartalomkézbesítési hálózat (CDN) támogatásának hozzáadása](add-cdn-support.md)
 
 [Helyalapú áruházészlelés engedélyezése](enable-store-detection.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

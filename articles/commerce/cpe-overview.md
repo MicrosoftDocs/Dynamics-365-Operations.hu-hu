@@ -63,3 +63,6 @@ A Commerce értékelési környezet létesítéséhez lásd: [Commerce értékel
 [Dynamics 365 Commerce értékelési környezet választható funkcióinak konfigurálása](cpe-optional-features.md)
 
 [Dynamics 365 Commerce értékelési környezet GYIK](cpe-faq.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -61,3 +61,6 @@ A cikkek egy értékesítési sorhoz kerülnek a közvetlen kiszállításhoz a 
 ### <a name="issue-resolution"></a>Probléma megoldása
 
 A Microsoft kiértékelte ezt a hibát, és megállapította, hogy ez egy funkciókorlátozás. Jelenleg a WMS nem támogatja a közvetlen kiszállítást. Ezért a közvetlen kiszállítás használatához ki kell választania egy nem WMS-típusú terméket és raktárat.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

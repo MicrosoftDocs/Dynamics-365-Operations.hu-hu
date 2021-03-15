@@ -152,3 +152,6 @@ A <strong>Megjelent termék részletei</strong> oldal <strong>Általános</stron
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -50,3 +50,6 @@ A következő lépéseket követve tekintse meg vagy rendelje hozzá a lízingel
 3. Válassza a **Mentés** lehetőséget.
 
 Lízing létrehozásakor minden egyes könyv kezdő dátumát a program automatikusan beírja a lízinghez megadott kezdő dátum és a könyvhöz megadott lízingelési konvenció alapján.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

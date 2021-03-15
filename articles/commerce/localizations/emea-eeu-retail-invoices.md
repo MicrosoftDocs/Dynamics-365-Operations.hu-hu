@@ -41,3 +41,6 @@ Az alábbi információkat állíthatja be a Retail POS rendszerben generált ve
 
     * Ugrás a **Szervezeti adminisztráció \> Számsorozatok \> Számlálókezelés elemre**. Rekordnak kell lennie ahol **Modul** = **Értékesítés** és **Típus** = **Számla**.
     * Ugrás a **Szervezeti adminisztráció \> Számsorozatok \> Számlaszámozás beállítása elemre**. Jelölje be a **Kereskedelem** jelölőmezőt annál a számsorozatnál, amellyel a vevői számlákat számozza.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -79,3 +79,6 @@ Az értékcsökkenési összeg minden évben megegyezik: (beszerzési ár - mara
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

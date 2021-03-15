@@ -143,3 +143,6 @@ A következő feladatok és jogosultságok lettek hozzáadva a szállítói kifi
 | Ütemezési előfordulások lekérdezése | Kötelezettségek kifizetési ügyintéző, kötelezettségek központi kifizetési ügyintéző | Ez a kötelezettség jogosultságot biztosít fizetési javaslat automatizálási sorozat és előfordulás megtekintésére a következő jogosultságokon keresztül:<ul><li>Ütemezési előfordulások megtekintése</li><li>Az előfordulások heti nézetének megtekintése</li></ul> |
 | Ütemezési sorozatok lekérdezése      | None                                                                       | Ez a kötelezettség jogosultságot biztosít a sorozat és előfordulás beállításainak megtekintésére a következő jogosultságokon keresztül:<ul><li>Ütemezési előfordulások megtekintése</li><li>Az előfordulások listaoldalának megtekintése</li><li>Az előfordulások heti nézetének megtekintése</li></ul>|
 | Ütemezési előfordulások karbantartása     | None                                                                       | Ez a feladatkör a következő jogosultságok révén ad jogosultságokat egy előfordulás létrehozásához és karbantartásához:<ul><li>Ütemezési előfordulások karbantartása</li><li>Az előfordulások heti nézetének megtekintése</li></ul> |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

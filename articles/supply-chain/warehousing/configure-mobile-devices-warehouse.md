@@ -438,3 +438,6 @@ A következő táblázat leírja a különféle munkatípusokat, amelyekkel hasz
 [Készletállapotok](../inventory/inventory-statuses.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

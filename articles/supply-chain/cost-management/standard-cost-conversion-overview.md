@@ -101,3 +101,6 @@ A **Különbözetelemzési kimutatás** jelentés segítségével elemezheti az 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

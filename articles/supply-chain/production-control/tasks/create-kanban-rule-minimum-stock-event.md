@@ -67,3 +67,6 @@ Ez az eljárás az olyan beállításokra irányul, amelyek a minimális készle
 5. Bontsa ki a Kanbanok szakaszt.
     * Jegyezze meg, hogy a rendszer a kanbant a szükséges anyagok 12-es raktárba történő átvitel lebonyolítására hozta létre.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -95,3 +95,6 @@ A következő táblázat bemutatja, hogy a rendszerben mely értékesítési ren
 
 > [!NOTE]
 > Annak ellenére, hogy mind a Sam, mind a Jane olyan kapcsolattartó, aki az X ügyfélnek dolgozik, csak azokat a rendeléseket láthatja, amelyekhez ők maguk adtak le, és semmi mást. Annak ellenére, hogy Maynek van egy rendelése a rendszerben, az Ügyfélportálon nem láthatja ezt a rendelést mivel ő egy nem felhatalmazott felhasználó. (Ezenkívül a rendelést egy az Ügyfélportáltól eltérő csatornán adta le.)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

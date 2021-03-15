@@ -93,3 +93,6 @@ A következő katalógus az alapismeretekből a meghatározott tartományokra, a
 | Tartalom | Leírás  | Formátum  |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
 |[MB-500 vizsga: Microsoft Dynamics 365: Finance and Operations Apps Developer](https://docs.microsoft.com/learn/certifications/exams/mb-500) | Ez a vizsga a következő technikai feladatok végrehajtásának képességét méri fel: architektúra- és megoldástervezés; fejlesztői eszközök alkalmazása; AOT-elemek tervezése és fejlesztése; kód fejlesztése és tesztelése; jelentés megvalósítása; az adatmegoldások integrálása és kezelése; a biztonság kialakítása és a teljesítmény optimalizálása. | Vizsga; a költség régiónként változik |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

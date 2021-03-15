@@ -67,3 +67,6 @@ A lízing újraértékelési folyamat IFRS 16 lízingre gyakorolt hatásainak me
 Megtekintheti az átértékelési dátummal kezdődő újonnan létrehozott fizetési ütemezést, és megjelenítheti a teljes frissített kifizetési összeget. Új lízingkötelezettség-amortizációs ütemezés és eszközértékcsökkenési ütemezés is létrejött, hogy tükrözze a kiigazított kifizetési ütemezést.
 
 A naplóbejegyzés automatikusan feladta a helyesbítő naplóbejegyzést a számlára az index újraértékeléshez kapcsolódó lízingkifizetések változására.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

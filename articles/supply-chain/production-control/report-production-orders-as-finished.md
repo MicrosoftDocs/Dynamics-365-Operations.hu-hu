@@ -47,3 +47,6 @@ A termelési rendelés a szokásos termelési rendelés frissítése funkcióval
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

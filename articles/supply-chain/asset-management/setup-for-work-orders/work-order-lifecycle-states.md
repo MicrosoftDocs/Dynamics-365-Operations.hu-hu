@@ -138,3 +138,6 @@ Miután létrehozta a munkarendelésekhez szükséges munkarendelési életciklu
 9. Mentse el a munkarendelés életciklusmodelljét.
 
 ![Munkarendelés életciklusmodelljei oldal](media/15-setup-for-work-orders.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

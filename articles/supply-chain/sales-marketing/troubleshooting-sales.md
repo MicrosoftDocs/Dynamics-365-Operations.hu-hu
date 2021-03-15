@@ -112,3 +112,6 @@ A Supply Chain Management jelenleg nem támogatja a jutalékok számítását a 
 A csomagolt cikk nem érhető el a beszerzési rendeléshez, mivel a csomagolt cikkhez tartozó értékesítésirendelés-sorok vizsgálatakor láthatja, hogy a mennyiség *0* (nulla), és az állapot *Visszavonva*. Ez szándékosan van. Az értékesítési rendelés csak a csomagolt cikk elemeit vásárolja. Nem vásárolja meg magát a csomagolt elemet.
 
 Ha csomagban kell vásárolnia, gondolja végig, hogy csomagként kell-e megjelölni , mivel ez a funkció a bevétel-megjelenítési forgatókönyvekhez van tervezve. További információ a csomagolt cikkekkel kapcsolatosan: [Csomagok](../../finance/accounts-receivable/revenue-recognition-setup.md#bundles).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

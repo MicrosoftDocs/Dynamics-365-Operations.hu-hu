@@ -58,3 +58,6 @@ Ezután a számlákat a költségtípusokhoz kell társítani. Ezek a számlák 
 7. A megfelelő mezőkben válassza ki a pénzügyi lízing fő számláját és az operatív lízing fő számláját.
 
 Miután elvégezte ezeket a lépéseket, hozzáadhatja a költségeket a kijelölt **Lízing részletei** lapján található **Működési költségek fizetési ütemezése** sorokon keresztül. Új lízing létrehozásakor költségeket is hozzáadhat.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

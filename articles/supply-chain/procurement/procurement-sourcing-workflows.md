@@ -79,3 +79,6 @@ Jóváhagyási lépéseket rendelhet a következő résztvevőcsoportokhoz.
 - [Üzleti folyamatok munkafolyamatainak meghatározása beszerzési igénylések számára](https://www.microsoft.com/download/details.aspx?id=101821)
 - [Beszerzési igénylési munkafolyamat](purchase-requisitions-workflow.md)
 - [Szállítók felvétele](vendor-onboarding.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -63,3 +63,6 @@ A bemutató adatsor típusa, melyet a vállalat használt az útmutató készít
 5. Kattintson az Exportálás elemre.
 6. Kattintson a PDF elemre.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

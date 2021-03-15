@@ -63,3 +63,6 @@ Kövesse az alábbi lépéseket a feladat-útmutató LCS-ből való visszajátsz
 2. Válassza a **Megnyitás LCS-ből** lehetőséget.
 3. Válassza ki a könyvtárat és a BPM-csomópontot, amelyek a mentett feladat-útmutatót tartalmazzák.
 4. Nyissa meg a feladat-útmutatót.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -134,3 +134,6 @@ Ha korlátozni szeretné a hozzáférést a szervezethez vagy a szervezeten bel�
 [Microsoft Teams súgóközpont](https://support.office.com/teams)</br>
 [Szabadságkérelmek kezelése a Teamsben](hr-teams-leave-app.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

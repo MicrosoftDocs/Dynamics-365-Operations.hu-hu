@@ -112,3 +112,6 @@ Amikor egy javítási feladat elkészül, lezárhatja a javítási sort. A javí
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

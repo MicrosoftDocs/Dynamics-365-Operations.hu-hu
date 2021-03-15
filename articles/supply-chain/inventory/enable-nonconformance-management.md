@@ -53,3 +53,6 @@ A szabálytalanságkezelés aktiválásához kövesse az alábbi lépéseket:
 [Minőségkezelési folyamatok](quality-management-processes.md)
 
 [A szabálytalanságkezelésre vonatkozó előfeltételek beállítása](tasks/set-up-prerequisites-nonconformance-management.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

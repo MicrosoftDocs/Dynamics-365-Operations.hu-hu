@@ -157,3 +157,6 @@ A bizonylatnapló feldolgozása után, amennyiben az **Átutalandó összeg** me
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

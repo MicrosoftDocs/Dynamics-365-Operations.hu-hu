@@ -101,3 +101,6 @@ Az alaptervezés futtatásakor két tervezett rendelés jön létre: egy a besze
 > Miután a beszerzési igényléshez rögzített tervezett rendelést megerősítik, a tervezőmotor megtartja az igénykövetést a beszerzési igényléshez. Ha a megerősített rendelésben később hiányzó mennyiséget találnak a beszerzési igénylés teljesítéséhez, a rendszer új tervezett rendelést hoz létre a különbözethez.
 
 A beszerzési igénylésekkel kapcsolatos tudnivalókért lásd: [Beszerzési igénylés áttekintése](../../procurement/purchase-requisitions-overview.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

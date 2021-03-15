@@ -105,3 +105,6 @@ Dokumentum feladásakor a program a dokumentum feladási dátuma alapján hozzá
 
 > [!NOTE]
 > Egyes országokban már létezik a dokumentumszámozáshoz meghatározott logika. Ebben az esetben az országspecifikus logika felülbírálja az **Időrendi számozás** funkciót.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

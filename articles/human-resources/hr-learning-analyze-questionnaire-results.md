@@ -69,3 +69,6 @@ A kérdőív-statisztikák felhasználhatók a demográfiai adatokon alapuló á
 2. Kattintson az Eredményre.
 3. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -113,3 +113,6 @@ Ha további tájékoztatást szeretne a személyre szabott ajánlásokról, lás
 
 [Termékajánlatok GYIK-je](faq-recommendations.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

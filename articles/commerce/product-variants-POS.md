@@ -114,3 +114,6 @@ A következő táblázatban tájékozódhat a rendelkezésre álló további mű
 | Elérhetőség         | Jelenítse meg az ígérethez rendelkezésre álló információkat a kiválasztott változatkombinációra a kiválasztott helyre. |
 | Minden hely megjelenítése   | Váltson át a szokásos készletkeresési nézetre, és jelölje ki a készletelérhetőségi információkat a cikkváltozatra az összes üzletben az üzlet-lokátorcsoportban, valamint a **Szabványos/Alapértelmezett** típusú elosztóközpontokban. |
 | Termék részleteinek megtekintése | Irányítsa át a felhasználót a társított alaptermék **Termék részletei** oldalára. |
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -166,3 +166,6 @@ A szállítói visszatérítések kezelésére szolgáló eljárásban több man
 - Pontos visszatérítési igények létrehozása
 - A várható kinnlevőségek és az ideiglenes nyereség elhatárolása a főkönyvben
 - A szállítói egyenleg és az eredménykimutatás frissítése az esedékes engedménnyel
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

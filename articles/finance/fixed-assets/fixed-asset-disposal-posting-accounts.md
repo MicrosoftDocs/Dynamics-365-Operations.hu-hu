@@ -42,3 +42,6 @@ Az alacsony értékű csoportban szereplő eszköz értékesítési tranzakciój
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

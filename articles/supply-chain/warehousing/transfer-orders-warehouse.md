@@ -52,3 +52,6 @@ Be kell állítania a raktárak között a szállítás átfutási idejét is a 
 2. Válasszon egy **raktárat** a **Bevételezési pont** mezőben.
 3. Válassza ki a **Szállítási raktár**, **Fogadó raktár**, és **Szállítási napok** értékeket. 
 4. (Nem kötelező) Beállíthatja a szállítási időt, a szállítási módtól függően a **Szállítási napok a szállítás módja szerint** lapon.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

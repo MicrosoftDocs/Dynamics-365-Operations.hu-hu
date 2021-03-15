@@ -100,3 +100,6 @@ Ez az eljárás bemutatja a Konténer sorszáma (SSCC) címke automatikus nyomta
 7. Válassza a **Mentés** lehetőséget.
 8. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

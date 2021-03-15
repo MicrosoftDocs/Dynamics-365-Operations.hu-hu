@@ -136,3 +136,6 @@ A szolgáltatás beállításához kapcsolódó következő oldalak és menüele
  - **Külkereskedelmi paraméterek** (**Adó** > **Beállítás** > **Áfa** > **Külkereskedelem** > **Külkereskedelmi paraméterek**). Lásd: [Ország- és régiótulajdonságok beállítása](#Set-up-Country/region-properties).
 
 A **Fordított költség** jelölőnégyzet az **Áfacsoport** és a **Feladott áfa** oldalakon lesz elérhető. További információt a következő szakaszokban talál: [Áfacsoportok és cikkáfacsoportok beállítása](#sales-tax-item-sales-tax-groups), [Fordított áfa értékesítési számlánál](#reverse-charge-sale)és a [Fordított áfa beszerzési számlánál](#reverse-charge-purchase) című szakaszban.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

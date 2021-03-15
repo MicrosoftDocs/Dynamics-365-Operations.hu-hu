@@ -39,3 +39,6 @@ A mobileszköz alkalmazás emulátorhoz való hozzáféréskor csak a rendszerga
 ### <a name="issue-resolution"></a>Probléma megoldása
 
 A mobileszköz alkalmazás emulátora csak a rendszergazdafiókkal használható. Az összes tesztelési és élő folyamat célra ajánlott a raktári alkalmazást használni.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

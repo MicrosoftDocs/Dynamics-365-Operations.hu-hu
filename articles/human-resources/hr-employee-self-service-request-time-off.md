@@ -62,3 +62,6 @@ Ha egy már létező szabadságkérést frissít, hozzáadhat egy mellékletet. 
 ## <a name="see-also"></a>Lásd még
 
 - [Szabadság és távollét áttekintése](hr-leave-and-absence-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

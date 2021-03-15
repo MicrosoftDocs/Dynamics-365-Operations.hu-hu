@@ -96,3 +96,6 @@ Ha viszont feltételes áfát használ, akkor rendezi az adót az adóhatóságg
 Ha fizetési módként a jövőben esedékes csekket használja, a kifizetés létrehozásakor a bankszámla nem lesz feloldva. Néhány országban az áfa „realizált” kötelezettséget jelent, amikor a kifizetés terheli a bankot, ami azt jelenti, hogy a jövőben esedékes csekket kiegyenlítik. Ezt a **Feltételes adó realizálása,amikor a későbbre dátumozott csekkeket lehívják** kiválasztásával engedélyezheti a **Készpénz és bank kezelése > Beállítás > Készpénz és bakkezelési paraméterek > Jövőben esedékes csekkek** helyen.
 
 További információkért lásd: [Adóelőleg beállítása](tasks/set-up-withholding-tax.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

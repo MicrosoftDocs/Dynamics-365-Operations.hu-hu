@@ -46,3 +46,6 @@ Ez az eljárás bemutatja, hogyan kell beállítani és megtervezni egy terület
 6. Kattintson a Mentés gombra.
 7. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -95,3 +95,6 @@ Ez az eljárás bemutatja, hogyan állíthatja be és engedélyezheti az érték
 17. A listában válassza ki a korábban létrehozott értékesítési csoportot.
 18. Válassza a **Mentés** lehetőséget.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

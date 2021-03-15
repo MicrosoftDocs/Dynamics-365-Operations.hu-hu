@@ -45,3 +45,6 @@ Ez a feladat az USMF bemutatócéget használja.
 12. Zárja be a lapot.
 13. Válassza a **Mentés** lehetőséget.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

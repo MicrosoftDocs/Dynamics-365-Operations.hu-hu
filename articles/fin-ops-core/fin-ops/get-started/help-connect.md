@@ -99,3 +99,6 @@ Ha együtt szeretne működni a Microsofttal a Súgó testreszabásához szüks�
 [Feladatrögzítő erőforrásai](../../dev-itpro/user-interface/task-recorder.md)  
 [Dokumentáció vagy képzés létrehozása Feladatrögzítő segítségével](../../dev-itpro/user-interface/task-recorder-training-docs.md)  
 [Egyéni súgó GitHub-tárház](https://github.com/microsoft/dynamics356f-o-custom-help)  
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

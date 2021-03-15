@@ -133,3 +133,6 @@ Sablonanyagjegyzékek használatához két számsorozatot kell beállítani. Ál
  
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

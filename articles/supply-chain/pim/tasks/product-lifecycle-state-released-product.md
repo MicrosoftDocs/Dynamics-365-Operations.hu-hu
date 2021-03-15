@@ -36,3 +36,6 @@ Ez az eljárás bemutatja a termékéletciklus-állapotnak a kiadott termékhez 
 5. A Termékéletciklus állapota mezőben adjon meg vagy válasszon ki egy értéket.
 6. Kattintson a Mentés gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

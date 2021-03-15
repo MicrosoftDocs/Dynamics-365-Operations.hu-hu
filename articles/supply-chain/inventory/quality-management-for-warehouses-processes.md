@@ -621,3 +621,6 @@ A 51 raktárhoz beállította a munka- és a helyadatokat, hogy biztosítsa a mu
 
 > [!NOTE]
 > Fontolja meg a kimenő minőség bejegyzés hozzáadását egy mobileszköz-menüelemhez, ahol a tevékenység kódja *Nyitott munkalista megjelenítése*. Példaként megtekintheti a **Munkalista** nevű mobileszköz munkaelemet a demóadatok között. A *Minőségi rendelés* munkaosztályt először adja hozzá felhasználó által irányított menüelemhez adja hozzá, mivel ez a munkaosztály szükséges munka megjelenítéséhez a munkalistában. Ezután vegye fel a *Minőségi rendelés* munkaosztályt a **Munkalista** menüelembe. Azok a felhasználóknak, akik hozzáférnek a munkalistához, ezután ki tudják választani és fel tudják dolgozni a minőségi rendelés ellenőrzése által automatikusan létrehozott munkát.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

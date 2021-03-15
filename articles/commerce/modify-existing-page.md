@@ -88,3 +88,6 @@ A következő példa bemutatja, hogyan lehet módosítani a kezdőlap videolejá
 [Oldaltartalom hozzáférhetőségének ellenőrzése](verify-accessibility.md)
 
 [Dinamikus e-kereskedelmi oldalak létrehozása URL-paraméterek alapján](create-dynamic-pages.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

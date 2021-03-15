@@ -146,3 +146,6 @@ Az alábbi táblázat a készletobjektum-számítás eredményét mutatja. Az er
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

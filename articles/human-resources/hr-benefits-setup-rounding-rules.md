@@ -36,3 +36,6 @@ A kerekítési szabályokat a Dynamics 365 Human Resources alkalmazásban állí
 3. Adja meg a **Kerekítés a legközelebbire**, az **Eset** és a **Kerekítési képernyő** beállítás értékét.
 
 4. Válassza a **Mentés** lehetőséget. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

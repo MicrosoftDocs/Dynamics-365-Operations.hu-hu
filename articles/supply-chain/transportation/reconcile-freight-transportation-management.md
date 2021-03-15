@@ -105,3 +105,6 @@ A manuális egyeztetés egy másik módja például a következő:
 1. Egyeztesse az Inv1-et és a Inv 2-t az FB-vel egymás után. Az FB teljesen egyezik.
 
 Mint a példa mutatja, a fuvarszámlák negatív összegekkel való egyeztetését csak manuálisan szabad elvégezni. Így mindig lehet egyeztetni a negatív összegű fuvarszámlákat egy nem teljesen egyező fuvarszámlával, mert így lehetősége van szabályozni az egyeztetési sorrendet.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

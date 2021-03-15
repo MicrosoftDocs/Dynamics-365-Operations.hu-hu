@@ -53,3 +53,6 @@ Pénzegységek teljes és rövid nevének és nyelvek részegységeinek beállí
 
 5. Válassza a **Mentés** lehetőséget.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

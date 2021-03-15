@@ -60,3 +60,6 @@ Ez a témakör bemutatja, hogy hogyan lehet előkészíteni a külső rendszerb�
 8. Állítsa **Igen** értékre a **Kötegelt feldolgozás** lehetőséget, ha a konszolidációt meghatározott időpontban szeretné futtatni kötegelt feladatként. A konszolidáció azonnali futtatásához kattintson az **OK** gombra. 
 
 Ezt követően a rendszer hozzáadja a leányvállalatok konszolidációra kijelölt tranzakcióit és egyenlegeit a konszolidált jogi személy megfelelő számláihoz.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

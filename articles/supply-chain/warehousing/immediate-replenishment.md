@@ -56,3 +56,6 @@ Ha egy helyutasítási sornál azonnali feltöltés van kijelölve, de nem jön 
 
 - Győződjön meg arról, hogy az alkalmazott igényfeltöltési sablon be van állítva a megfelelő, **Feltöltési** típusú helysablonok és erőforrás-sablonokat használatára.
 - Győződjön meg arról, hogy van elegendő aktuális készlet azon helyeken, ahol az igényfeltöltési sablonnak aktuális készletet keres a feltöltéshez.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

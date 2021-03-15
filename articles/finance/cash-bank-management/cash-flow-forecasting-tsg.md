@@ -52,3 +52,6 @@ Ellenőrizze, hogy az Entitástár Pénzforgalmi mérő V2 és LedgerCovLiquidit
 ## <a name="have-the-entity-store-entities-been-refreshed"></a>Frissültek-e az Entitástár entitásai?
 
 Rendszeresen frissítenie kell az entitásokat, hogy az adatok pontosak és aktuálisak legyenek. Egy adott entitás manuális frissítéséhez lépjen a **Rendszerfelügyelet \> Beállítás \> Entitástár** pontra, jelölje ki az entitást, majd válassza a **Frissítés** lehetőséget. Az adatok automatikusan is frissíthetők. Az **Entitástár** lapon állítsa az **Automatikus frissítés engedélyezve** lehetőséget **Igen** értékre.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

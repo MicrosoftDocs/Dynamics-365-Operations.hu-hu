@@ -90,3 +90,6 @@ Ha DBJ-jelentést hoz létre, akkor a **Származási ország szabályai** oldal 
 Létrejön és megjelenik egy jelentés, amely információt jelenít meg a származási országról az egyes alkatrészekhez. Íme, egy példa a jelentésre.
 
 ![Származási ország jelentés](media/country-of-origin-report.png "Származási ország jelentés")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

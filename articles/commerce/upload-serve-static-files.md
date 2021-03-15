@@ -105,3 +105,6 @@ Az URL-cím elérési útjának módosításához kövesse az alábbi lépéseke
 [Képek körülvágása](dam-crop-images.md)
 
 [Képfókuszpontok testreszabása](dam-custom-focal-point.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

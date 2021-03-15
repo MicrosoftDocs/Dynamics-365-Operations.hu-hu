@@ -207,3 +207,6 @@ A gombrácstervező használható a pénztár gombrácsok konfigurálásához a 
 ## <a name="additional-resources"></a>További erőforrások
 
 [A Retail pénztár (POS) képernyőelrendezés-tervező telepítése](install-pos-layout-designer.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

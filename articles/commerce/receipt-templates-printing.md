@@ -85,3 +85,6 @@ A nyugtaprofilok közvetlenül a nyomtatókhoz vannak rendelve a hardver profilo
 
 > [!NOTE]
 > Két nyomtató használata esetén egy nyomtató használható standard 40-oszlopos hő-papiros nyugta nyomtatására. A második nyomtató általában a teljes oldalas, több információt leíró nyugta nyomtatására szolgál. Ezek a nyugta típusok vásárlói rendelés nyugtákat és vevői számlákat tartalmaznak.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

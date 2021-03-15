@@ -98,3 +98,6 @@ Az alkalmazott most már hozzárendelhető egy fix kompenzációs konstrukcióho
 
 A rendszer ellenőrzi, hogy az osztály vagy sáv típusú kompenzációs tervhez megadott kompenzációs összeg a minimális és maximális hivatkozási pont között van az alkalmazott munkájához megadott kompenzációs szint alapján. Amennyiben a kompenzációs összeg a megengedett határokon kívül esik, egy figyelmeztetés vagy egy hibaüzenet jelenik meg a fix kompenzációs konstrukcióhoz megadott tűréshatár függvényében.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

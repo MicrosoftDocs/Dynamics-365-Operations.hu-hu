@@ -60,3 +60,6 @@ Az adatok konfigurálásának megkezdéséhez hozzon létre egy olyan szabályt,
 ## <a name="warehouse-management"></a>Raktárkezelés
 
 Egy szállítmány előkészítését követően számos új jelentést lehet kinyomtatni. Ezek a jelentések a Termékinformáció-kezelés részben megadott adatokat használják.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -139,3 +139,6 @@ A következő ábra az egyes összetevők csoportosításának és az új csopor
 - [Elektronikus jelentéskészítés (ER) áttekintése](general-electronic-reporting.md)
 - [Elektronikus jelentéskészítés (ER) céljai](electronic-reporting-destinations.md)
 - [Képletszerkesztő elektronikus jelentésekhez (ER)](general-electronic-reporting-formula-designer.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

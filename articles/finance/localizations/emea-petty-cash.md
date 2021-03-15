@@ -478,3 +478,6 @@ A kiegyenlített összeg tükröződik a <strong>Kiegyenlített összeg pénznem
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

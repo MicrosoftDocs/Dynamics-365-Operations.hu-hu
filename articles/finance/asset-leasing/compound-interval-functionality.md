@@ -159,3 +159,6 @@ Az alábbi tábla a fizetési ütemezés első 12 hónapját sorolja fel. Vegye 
 
 > [!NOTE]
 > Ha az annuitás típusa **Annuitás esedékes** értékre változik, a kifizetés december helyett januárban lesz.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

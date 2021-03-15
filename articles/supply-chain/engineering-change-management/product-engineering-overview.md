@@ -58,3 +58,6 @@ Ezután kapcsolja be a **Mérnöki módosításkezelés** konfigurációs kulcso
 1. Lépjen a **Rendszerfelügyelet \> Beállítás \> Licenckonfiguráció** elemre.
 1. Bontsa ki a **Kereskedelmi** csomópontot, és jelölje be a **Mérnöki módosításkezelés** jelölőnégyzetet.
 1. Kapcsolja ki a karbantartási módot a [Karbantartási mód](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md) alatt leírtak szerint.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -97,3 +97,6 @@ Ha fel szeretne tölteni egy fájlt a Commerce webhelyszerkesztőben, kövesse a
 [Képfókuszpontok testreszabása](dam-custom-focal-point.md)
 
 [Statikus fájlok feltöltése és kiszolgálása](upload-serve-static-files.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

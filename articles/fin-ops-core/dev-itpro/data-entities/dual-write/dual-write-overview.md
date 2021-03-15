@@ -109,3 +109,6 @@ Ha a Finance and Operations alkalmazásokkal paritást szeretne létrehozni, a k
 
 További tájékoztatás a közelgő módosításokról: [Újdonságok és módosítások a kettős írásban](whats-new-dual-write.md).
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -258,3 +258,6 @@ A felhasználó, aki az ajánlatkérési folyamat paramétereit beállítja, tö
 - %createddate%
 
 Ha módosítás szükséges, és elküldik az ajánlatkérés elküldését követően, az ajánlatkérés elküldése minden meghívott szállítónál ismét megtörténik. A közzétett dokumentum is frissül a **Közzétett ajánlatkérések megnyitása** lapon.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

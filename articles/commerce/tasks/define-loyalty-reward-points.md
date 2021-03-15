@@ -45,3 +45,6 @@ Ez az eljárás hűségpontok definiálását mutatja be. Hűségprogram beáll�
 10. Válasszon ki egy lehetőséget a Lejárati idő egysége mezőben.
 11. Kattintson a Mentés gombra.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

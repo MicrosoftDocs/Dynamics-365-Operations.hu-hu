@@ -150,3 +150,6 @@ A beszerzési rendelés létrehozására és igényösszesítésre vonatkozó sz
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

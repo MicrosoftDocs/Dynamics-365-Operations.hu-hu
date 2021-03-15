@@ -60,3 +60,6 @@ Legalább egy javasolt módosítás után, két további lap jelenik meg a műve
     Az oldalon látható állapot a következőre változik: **Jóváhagyásra váró módosítások**.
 
 A munkafolyamat a normál munkafolyamatot követi. A jóváhagyót a rendszer a **Szállító** oldalra irányítja, ahol áttekintheti a **Javasolt módosítások** oldalon található módosításokat, majd a munkafolyamat jóváhagyásához kiválaszthatja a **Munkafolyamat \> Jóváhagyás** lehetőséget. Miután minden jóváhagyás befejeződött, a mezők a javasolt értékekre frissülnek.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

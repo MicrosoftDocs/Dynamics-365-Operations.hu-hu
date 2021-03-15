@@ -81,3 +81,6 @@ A következő ábra a tárgyi eszköz egyenlegét jeleníti meg.
 A következő ábrán egy feladott bizonylat látható.
 
 [![Nettó könyv szerinti érték](./media/Fixed_asset_Disposal_scrap_scenario_6.png)](./media/Fixed_asset_Disposal_scrap_scenario_6.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

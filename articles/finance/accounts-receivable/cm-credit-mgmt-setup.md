@@ -78,3 +78,6 @@ A **vevői hitelkezelési statisztika** adatterületen számos hitelezési stati
 ### <a name="number-sequences-and-shared-number-sequence-parameters"></a>Számsorozatok és megosztott számsorozat paraméterei
 
 A hitelkorlát-korrekciók feldolgozásához egy napló-azonosító szükséges. Meg kell adnia a hitelkorlát-korrekció számát, amely a naplóazonosító generálására szolgál.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

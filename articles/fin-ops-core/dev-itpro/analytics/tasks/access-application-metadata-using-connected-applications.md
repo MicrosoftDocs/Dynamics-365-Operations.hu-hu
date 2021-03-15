@@ -113,3 +113,6 @@ A következő lépések leírják, hogy a Regulatory Configuration Service (RCS)
 11. Zárja be a lapot. 
 
 Ha egy másik verziójú alkalmazás metaadatainak használatával szeretné értékelni ezt a modellt, akkor regisztráljon egy másik összekapcsolt alkalmazást, rendelje hozzá a modell hozzárendeléséhez, és ellenőrizze az új metaadatokkal összevetve.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -67,3 +67,6 @@ Január 31-i értékcsökkenési javaslat a következőképpen történik: Becs�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

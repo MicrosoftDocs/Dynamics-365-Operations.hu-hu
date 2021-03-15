@@ -85,3 +85,6 @@ A portálok hatékony kezeléséhez ismernie kell a Power Apps-portálokat és a
 - [Portál frissítése](https://docs.microsoft.com/powerapps/maker/portals/admin/upgrade-portal)
 - [Portál konfigurációjának áttelepítése](https://docs.microsoft.com/powerapps/maker/portals/admin/migrate-portal-configuration)
 - [Megoldás életciklus-kezelése: Dynamics 365 for Customer Engagement alkalmazásokhoz](https://www.microsoft.com/download/details.aspx?id=57777)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -52,3 +52,6 @@ Ez az eljárás bemutatja a dimenzión alapuló termékek konfigurációjának m
     * Adja meg a konfiguráció leírását annak megmagyarázása érdekében, hogy mit tartalmaz.  
 11. Kattintson az OK gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

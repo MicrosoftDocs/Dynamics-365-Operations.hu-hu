@@ -53,3 +53,6 @@ Emellett megadhat egy megerősítő üzenetet is, amely akkor jelenik meg, amiko
 4.  Nyissa meg az **Országok/régiók** lapot, és válassza ki azt az országot/régiót, amelynél a konfigurációt használni kell.
 5.  Hajtsa végre a következő konfigurációt, és kövesse following the guidelines for the default configuration.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -95,3 +95,6 @@ Kövesse ezeket a lépéseket a csoportosítás beállításához az automatikus
 1. Ha a karbantartási tervek közül csak néhány futtatásakor szeretné alkalmazni a beállításokat, akkor a **Szerepeltetni kívánt rekordok** gyorslapon igény szerint adja meg a szükséges szűrőket, akár csak a Microsoft Dynamics 365 Supply Chain Management más kötegelt munkáinál.
 1. A **Futtatás a háttérben** gyorslapon adja meg a kívánt köteg- és ütemezési beállításokat, akár csak az Supply Chain Management többi kötegelt feladatához.
 1. A kiválasztott karbantartási tervek futtatásához és/vagy ütemezéséhez kattintson az **OK** gombra.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

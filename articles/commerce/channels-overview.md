@@ -88,3 +88,6 @@ After you create a channel, you may need to complete some of the below tasks:
 [Hívásközpont csatorna beállítása](channel-setup-callcenter.md)
 
 [Szervezeti hierarchiák beállítása](channels-org-hierarchies.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

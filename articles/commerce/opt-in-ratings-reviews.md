@@ -63,3 +63,6 @@ A következő lépések végrehajtásával választhatja ki azt, hogy használni
 [A termék minősítések szinkronizálása a következőben: Dynamics 365 Commerce](sync-product-ratings.md)
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

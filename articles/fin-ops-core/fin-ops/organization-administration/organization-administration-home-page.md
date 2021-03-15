@@ -101,3 +101,6 @@ A rekordsablonok segítenek a rekordok gyorsabb létrehozásában. Rekordsablon 
 - [A dokumentumkezelés konfigurálása](configure-document-management.md)
 - [E-mail konfigurálása és küldése](configure-email.md)
 - [Dátum-/időadatok és időzónák](date-time-zones.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

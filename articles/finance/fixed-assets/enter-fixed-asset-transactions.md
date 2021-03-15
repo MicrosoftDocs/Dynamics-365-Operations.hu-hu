@@ -67,3 +67,6 @@ A tárgyieszköz-tranzakciók bármely típusát fel lehet adni az Általános n
 A tárgyi eszközök értékcsökkenési időszakok fennmaradó értéke nem frissül, ha az értékcsökkenési tranzakció típusú naplósort manuálisan hozták létre vagy importálták egy adatentitáson keresztül. Ez az érték frissül, ha az értékcsökkenés javaslati folyamata segítségével hozták létre a naplósort.
 
 További tudnivalókért lásd: [Tárgyieszköz-integráció](fixed-asset-integration.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

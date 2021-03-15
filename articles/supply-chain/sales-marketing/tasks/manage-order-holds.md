@@ -69,3 +69,6 @@ Ezt a folyamatot az USMF bemutatócéggel vagy saját adataival is futtathatja.
     - A **Törlés és küldés** művelet csak a Hívásközpont funkció használata esetén alkalmazható.  
 8. Kattintson a **Várakoztatások megszüntetése** elemre. Ezzel törölte a várakoztatást a rendelésből, és eltávolította az aktív várakoztatások listájáról. Minden várakoztatás megtekintéséhez, vagy egy részhalmazuk megtekintéséhez egy bizonyos állapot szerint, módosítsa a Megjelenítés mező értékét.     
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

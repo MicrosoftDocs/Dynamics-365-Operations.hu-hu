@@ -47,3 +47,6 @@ Minden egyes eset gondos odafigyelést igényel, amikor az önköltségi árak f
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

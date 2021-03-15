@@ -108,3 +108,6 @@ Az előző szakaszban leírt módon munkarendeléseket adhat hozzá a munkarende
 
 A munkarendelési gyűjtőből egy kiválasztott munkarendelés eltávolításához, válassza a 3. lépésben az **Eltávolítás** lehetőséget.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -56,3 +56,6 @@ Az **Adat-ellenőrzési ellenőrzőlista** munkaterület használata előtt konf
 Használhat logikai feladatterületeket a szervezeten belül, csoportos ellenőrzési feladatokhoz. Például a Kötelezettségek, Kinnlevőségek vagy a Főkönyv használható feladatterületként.
 
 A **Menüpont neve** menüelem a feladathoz van rendelve és segítségével közvetlenül a társított oldalara lehet ugrani a feladathivatkozásról a munkaterületen. Például ahhoz, hogy egy adatellenőrzési feladat fusson, a kötelezettségekhez tartozó **Kötelezettségek korosítása** jelentés összekapcsolható a **Kötelezettségek korosítási jelentése** oldallal.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -135,3 +135,6 @@ A sorozatszámok ellenőrzése akkor is megtörténik, amikor a felhasználó v�
 [Bejövő készletműveletek a pénztárban](https://docs.microsoft.com/dynamics365/commerce/pos-inbound-inventory-operation)
 
 [Kimenő készletműveletek a pénztárban](https://docs.microsoft.com/dynamics365/commerce/pos-outbound-inventory-operation)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

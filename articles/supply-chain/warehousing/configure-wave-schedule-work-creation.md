@@ -110,3 +110,6 @@ A **Tervezett munka részletei** lap (**Raktárkezelés \> Munka \> Tervezett mu
 A hullámok feldolgozásához szükséges kötegelt feladatok megtekintéséhez jelölje ki a **Kötegelt feladatok** lehetőséget a **Minden hullám** oldal műveletablakában.
 
 Innen megtekintheti a kötegelt feladatok minden egyes adatát a kötegeltfeladat-azonosítókhoz.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

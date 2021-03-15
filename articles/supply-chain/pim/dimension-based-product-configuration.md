@@ -87,3 +87,6 @@ A következő nyolc feladatútmutató abban a sorrendben van felsorolva, amelybe
 7.  [Konfigurációs szabályok létrehozása](tasks/create-configuration-rules.md)
 8.  [Dimenzión alapuló konfigurációk létrehozása](tasks/create-dimension-based-configurations.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

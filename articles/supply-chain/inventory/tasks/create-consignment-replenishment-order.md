@@ -61,3 +61,6 @@ Ez a témakör bemutatja a bizományosi feltöltési rendelés létrehozását, 
 3. Válassza az **Áttekintés** elemet. A cikkek, amelyek a szállító tulajdonában álló bizományosi készletként érkeztek, aktuális készletként állnak rendelkezésre. A bizományosi feltöltési rendelés fennmaradó mennyisége a **Megrendelve összesen** mezőben jelenik meg.  
 4. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

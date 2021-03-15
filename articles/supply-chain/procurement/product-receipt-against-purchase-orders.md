@@ -68,3 +68,6 @@ Ezt az oldalt a **Bevételezés** műveletcsoportból, a **Beszerzési** rendel�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

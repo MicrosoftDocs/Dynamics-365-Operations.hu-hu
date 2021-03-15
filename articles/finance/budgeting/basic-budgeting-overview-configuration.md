@@ -87,3 +87,6 @@ A vállalat által használt költségvetés-tervezési funkció is létrehozás
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

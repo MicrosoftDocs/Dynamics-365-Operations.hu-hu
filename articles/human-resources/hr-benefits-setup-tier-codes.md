@@ -41,3 +41,6 @@ Dynamics 365 Human Resources szintkódokat használ az alkalmazottak és a munk�
    | **Leírás** | A juttatás szintkódjának leírása. |
 
 4. Válassza a **Mentés** lehetőséget. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

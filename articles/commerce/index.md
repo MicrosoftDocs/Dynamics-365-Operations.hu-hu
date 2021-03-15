@@ -55,3 +55,6 @@ További információkért válasszon ki egy szolgáltatásterületet.
 - [Saját e-Commerce webhely kezelése](online-store-overview.md)
 - [Fraud Protection](dev-itpro/DFP.md)
 - [Kereskedelmi fejlesztés és bővíthetőség](dev-itpro/dev-retail-home-page.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

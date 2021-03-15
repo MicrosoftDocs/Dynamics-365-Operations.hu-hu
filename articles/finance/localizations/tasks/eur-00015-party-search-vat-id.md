@@ -41,3 +41,6 @@ Ez az eljárás minden európai országra/régióra vonatkozik. Ezt az eljárás
 7. Kattintson a Keresés gombra.
     * Minden, az adott regisztrációs azonosítóval rendelkező fél megjelenik.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

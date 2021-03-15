@@ -30,3 +30,6 @@ Mint minden vegyes költségnél, a szállítás által generált költséghez i
 Menjen a **Szállításkezelés > Beállítás > Minősítés > Vegyes költségek** lehetőségre, és határozza meg a minősítési feltételeket, amelyek meghatározzák, hogy mikor alkalmaznak egy adott **Költségkódot** a költségnél.
 
 Legalább egy beállítást ki kell választania minden olyan releváns **Költségmodul** beállításhoz (*Ügyfél* és *Szállító*), amelyben a **Vegyes költség típusa** *Egyik sem* értékre van állítva. Ha nincs megadva, a vegyes költséget *nem* adja hozzá a program a rendeléshez.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

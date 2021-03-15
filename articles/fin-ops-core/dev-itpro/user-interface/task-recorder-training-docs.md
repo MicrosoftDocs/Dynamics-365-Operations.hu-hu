@@ -123,3 +123,6 @@ Letöltheti és szerkesztheti a Microsoft feladatrögzítéseit a saját képzé
 [Feladatrögzítő](task-recorder.md)
 
 [Multimédiás súgótémakörök létrehozása a Feladatrögzítővel (külső hivatkozás)](https://mbspartner.microsoft.com/AX/Videos/970)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

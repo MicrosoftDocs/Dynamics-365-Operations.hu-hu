@@ -53,3 +53,6 @@ Ez a témakör leírja a rakománysablonok beállításának és új rakományho
 1. A műveleti ablaktáblán a **Kínálat és kereslet** lapon, a **Hozzáadás** csoportban válassza az **Új rakományba** elemet.
 1. A **Rakománysablon** párbeszédpanelen, a **Rakománysablon azonosítója** mezőben válassza ki az alkalmazni kívánt sablont.
 1. A sablon alkalmazásához kattintson az **OK** gombra.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

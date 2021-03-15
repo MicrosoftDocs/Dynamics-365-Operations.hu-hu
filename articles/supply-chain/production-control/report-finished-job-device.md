@@ -238,3 +238,6 @@ A következő lépésekkel szabályozhatja, hogy a dolgozók egy meglévő azono
 
 > [!NOTE]
 > A címke konfigurálásához ugrás ide: **Raktárkezelés \> Beállítás \> Dokumentumirányítás \> Dokumentumirányítás**. A további tudnivalókat lásd az [Azonosítótábla címke nyomtatásának engedélyezése](../warehousing/tasks/license-plate-label-printing.md) című témakörben.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

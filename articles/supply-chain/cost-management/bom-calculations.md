@@ -94,3 +94,6 @@ A rendelésspecifikus anyagjegyzék-számítás a legyártott cikkre vonatkozó 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

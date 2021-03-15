@@ -61,3 +61,6 @@ Ez az eljárás egy adott munkacellához tartozó kanbanfeladatok ütemezési fo
     * Mindkét feladat a kívánt időszakhoz lett hozzáadva.  
     * A Kapacitási időszak szakaszban láthatja az egyes időszakok terhelését. A Felhasználás mező az időszak tervezett felhasználását mutatja. Ha az ütemezett felhasználás magasabb, mint az időszakban rendelkezésre álló kapacitás, a rendszer a túlterhelt felhasználást választja ki.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

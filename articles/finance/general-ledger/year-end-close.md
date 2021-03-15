@@ -87,3 +87,6 @@ További tudnivalókért lásd: [A főkönyv lezárása időszak végén](close-
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

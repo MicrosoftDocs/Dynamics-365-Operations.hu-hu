@@ -47,3 +47,6 @@ Ez az eljárás bemutatja, hogy hogyan lehet létrehozni egy projekt beszerzési
     * Győződjön meg arról, hogy az értékesítési és az önköltségi árak rendelkezésre állnak. Ha nem állnak rendelkezésre, de szükségesek, adja meg az adatokat.  
 14. Kattintson a Mentés gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

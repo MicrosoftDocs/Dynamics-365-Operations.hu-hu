@@ -217,3 +217,6 @@ Munkakivételek vezérlik a rövid kitárolás viselkedését. Munkakivétel be�
 1. Válassza ki a **Rövid kitárolás** lehetőséget.
 1. Válassza ki az ehhez a forgatókönyvhöz létrehozott munkakivételi kódot.
 1. Ha bejelölte a megfelelő kivételt, elérhetővé válik az **Érvénytelenítés és az újranyomtatás** jelölőnégyzet. Jelölje be ezt a jelölőnégyzetet, és hagyja jóvá. A megerősítést követően a program újraszámítja a **Címke-összeállítás azonosító** mező által meghatározott címketekercs-sorozatot a módosult munkasormennyiség alapján. Majd újranyomtatja a megadott nyomtatón.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

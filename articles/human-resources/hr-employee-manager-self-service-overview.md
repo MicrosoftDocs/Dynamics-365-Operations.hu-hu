@@ -214,3 +214,5 @@ A vezetők a csapatuk összes célját láthatják a **Csapat teljesítménycél
 Az **Értékelések** lap összegzi azokat az értékeléseket, amelyekkel az alkalmazott rendelkezik az egyes fázisokban: **Folyamatban**, **Értékelésre kész** és **Végső értékelés**. Az alkalmazotti értékelésének eléréséhez válassza a **Részletek** gombot, majd válassza ki az értékeléseket, amelyeken együtt szeretne működni. Attól függően, hogy egy értékelés hol tart a munkafolyamat folyamtában van, megtekintheti, hogy az ellenőrzés elérhető-e frissítésre. 
 
 A csapata értékeléseit a **Csapat teljesítményértékelései** csempén a **Saját csapat** rész **Összegzés** szakaszában tekintheti meg.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

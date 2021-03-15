@@ -63,3 +63,6 @@ Az adóelőleg-csoportok és cikk adóelőleg-csoportok az **Értékesítési re
 Az adóelőleg számítása és feladása a **Vevői kifizetési napló** alapján történik. Az alkalmazandó adóelőlegkódot és a tényleges adóelőleg-összeget manuálisan módosíthatja a **Tranzakciók kiegyenlítése** oldal **Adóelőleg** lapján.
 
 A kiszámított adóelőleg összege le lesz vonva a vevői kifizetésből, és a rendszer feladja az **Adóelőleg ellenszámla** számlához egy kapcsolódó bizonylaton.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

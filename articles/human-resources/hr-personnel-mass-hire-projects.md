@@ -82,3 +82,6 @@ A **Tömeges felvételi projekt** lapon kattintson a **Projekt megnyitása** vag
 </tr>
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

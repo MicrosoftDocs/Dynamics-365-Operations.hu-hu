@@ -95,3 +95,6 @@ A munkaterület összegző lapokból és két listából áll. A **Nyitott esete
 ### <a name="manually-creating-a-new-released-product"></a>Újonnan kiadott termék manuális létrehozása
 
 Manuálisan hozhat létre egy kiadott terméket egyetlen futtatásban a szervezet üzleti folyamataitól attól függően, valamint attól függően, hogy milyen szabályokat alkalmaz a funkció használatával kapcsolatban. Ez a funkció létrehoz egy új terméket, és automatikusan kiadja azt az aktuális jogi személynek. Új termék létrehozásához kattintson a **Kiadott termékek** lehetőségre a **Kiadott termék karbantartása** munkaterületen vagy a **Kiadott termék** listaoldalon.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

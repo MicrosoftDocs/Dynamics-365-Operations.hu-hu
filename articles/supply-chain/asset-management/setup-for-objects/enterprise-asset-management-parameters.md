@@ -106,3 +106,6 @@ Válassza ki azokat a dokumentumtípusokat, amelyeket elérhetővé szeretne ten
 ## <a name="the-number-sequences-tab"></a>A Számsorozatok lap
 
 Válassza ki a szükséges számsorozatot ebben a szakaszban. Az eszközökhöz két számsorozat használható: egy a manuálisan létrehozott eszközökhöz, egy pedig a függőben lévő eszközökkel létrehozottakhoz.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

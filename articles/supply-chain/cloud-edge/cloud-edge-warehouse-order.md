@@ -72,3 +72,6 @@ A **Raktári rendelés sorai** nézetben nyomon követheti a bejövő bevételez
 
 - Menjen a **Raktárkezelés \> Lekérdezések és jelentések \> Raktári rendelési sorok** elemhez, és a szűrő segítségével keresse meg a keresett sorokat.
 - Ugorjon a **Beszerzés és forrás \> Beszerzési rendelések \> Összes beszerzési rendelés** elemre, és nyissa meg a megfelelő beszerzési rendelést. A **Beszerzési rendelés sorai** szakaszban válasszon ki egy vagy több sort, majd az eszköztáron válassza ki a **Raktár \> Raktári bevételezések bejegyzései** elemet.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

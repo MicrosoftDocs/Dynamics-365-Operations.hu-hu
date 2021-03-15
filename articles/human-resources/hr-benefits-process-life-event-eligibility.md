@@ -48,3 +48,6 @@ Ez a cikk bemutatja, hogyan futtathatja az életeseményre vonatkozó jogosults�
    4. Válassza ki az **OK** lehetőséget. A folyamat a megadott paraméterekkel fog futni.
 
 4. Válassza ki az **OK** lehetőséget.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

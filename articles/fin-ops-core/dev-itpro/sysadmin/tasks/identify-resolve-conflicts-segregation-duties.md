@@ -59,3 +59,6 @@ Felhasználók szerepkörökhöz rendelésekor a feladatkörök szétválasztás
 
 > [!NOTE]
 > Ha ugyanannak a felhasználónak több ütközése van, jelölje ki a felhasználói rekordot, és értékelje ki a hozzárendelt szerepköröket a **Felhasználók** oldalon. Az ütközés elkerülése érdekében a szabályok hozzáadása vagy módosítása után ellenőrizze őket.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

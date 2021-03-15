@@ -56,3 +56,6 @@ Ezzel az eljárás a kanbanfeldolgozási feladatok végrehajtására szolgál. A
 6. Adjon meg egy számot a Hibátlan mennyiség mezőben.
 7. Kattintson az OK gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

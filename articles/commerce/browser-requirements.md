@@ -47,3 +47,6 @@ A Dynamics 365 Commerce-webhelyek legjobb támogatását a következő webböng�
 [robots.txt fájlok kezelése](manage-robots-txt-files.md)
 
 [Helyalapú áruházészlelés engedélyezése](enable-store-detection.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

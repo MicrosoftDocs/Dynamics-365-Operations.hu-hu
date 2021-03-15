@@ -130,3 +130,6 @@ További információ a következő témakörökben olvasható:
 - [kerekítés függvény](https://msdn.microsoft.com/library/aa850656.aspx)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

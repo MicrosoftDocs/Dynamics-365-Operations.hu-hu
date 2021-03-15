@@ -49,3 +49,6 @@ A Microsoft Dynamics 365 Human Resources dolgozói juttatási tervek létrehozá
    | Konstrukciók | A Tervek gyorslap tartalmazza a megadott szűrési feltételeknek megfelelő terveket. A HR-személyzet által beállított releváns konfigurációs beállítások, valamint az alkalmazottak által választott beléptetési kiválasztások mindegyik sorban szerepelnek. A Minősített mező azt határozza meg, hogy van-e érvényesítési ütközés a terv kiválasztásával kapcsolatban. |
 
 4. Válassza a **Mentés** lehetőséget.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

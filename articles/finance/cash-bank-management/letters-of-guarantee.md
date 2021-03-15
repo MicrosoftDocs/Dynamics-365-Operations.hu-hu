@@ -64,3 +64,6 @@ További információ a következő témakörökben olvasható:
 [Bankhitelek beállítása és a garancialevélhez tartozó profilok feladása](tasks/set-up-bank-facilities-posting-profiles.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

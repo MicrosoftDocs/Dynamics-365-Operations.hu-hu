@@ -120,3 +120,6 @@ Kattintson a **Beállítás** menüpontra az Anyagjegyzék-tervező fanézetébe
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

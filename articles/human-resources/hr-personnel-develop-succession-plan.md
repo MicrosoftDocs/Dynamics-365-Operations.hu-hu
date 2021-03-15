@@ -56,3 +56,6 @@ A szervezet növekedésével el kell kezdenie az utánpótlás-tervezést. Az ut
 27. Válassza az **Eredmény** lehetőséget.
 28. Válassza a **Jelentés** lehetőséget. A jelentés a legjobb találatokat legfelül mutatja. Megtekintheti, hogy van-e hiányelem felsorolva. A hiány a szakértelem-feltérképezési szint és a személy szakértelmének szintje közötti különbség.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

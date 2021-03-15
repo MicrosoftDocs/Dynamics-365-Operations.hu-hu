@@ -66,3 +66,5 @@ A toborzási projektek segítenek a toborzási folyamat kezelésében. A toborz�
 32. Válassza a **Toborzási projekt állapota** lehetőséget.
 33. Válassza az **Indítás** lehetőséget. Az **Elindítva** állapot azt jelenti, hogy a projekt készen áll pályázatok fogadására.  
 34. Válassza ki az **OK** lehetőséget.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

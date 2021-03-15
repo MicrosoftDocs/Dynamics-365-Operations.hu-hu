@@ -111,3 +111,6 @@ Amikor egy visszárurendelési sor **Visszáruadag-azonosító** mezőjét haszn
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

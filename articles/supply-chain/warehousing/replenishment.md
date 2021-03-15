@@ -78,3 +78,6 @@ Ahelyett, hogy a felosztási folyamat végén összegezné az igényeket és vé
 |   Helyutasítások   |                                                       Helyutasítások szükségesek a munka olyan helyekre való irányításához, ahol feltöltés szükséges és ahol a készlet forrása van.                                                        |
 |     Munkasablonok      |                                                   Munkasablonok szükségesek a <strong>Feltöltés</strong> típusához, feltöltési munka létrehozásához, így a készlet a kívánt helyre mozgatható.                                                    |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

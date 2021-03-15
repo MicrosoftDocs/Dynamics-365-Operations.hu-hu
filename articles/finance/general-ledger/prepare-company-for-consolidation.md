@@ -67,3 +67,6 @@ Ezzel beállította a konszolidált jogi személyt a **Konszolidálás** ismétl
 
 > [!NOTE]
 > A konszolidáció feldolgozása előtt elő kell készítenie a leányvállalati jogi személyeket a konszolidációra. További információ: [Alárendelt jogi személy beállítása a konszolidációra](set-up-subsidiary-company-for-consolidation.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

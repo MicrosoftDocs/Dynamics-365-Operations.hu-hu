@@ -72,3 +72,6 @@ A navigációs menü modulnak a fejléc-modulba való felvételével kapcsolatos
 [Cookie-k megfelelősége](cookie-compliance.md)
 
 [Fejlécmodul](author-header-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

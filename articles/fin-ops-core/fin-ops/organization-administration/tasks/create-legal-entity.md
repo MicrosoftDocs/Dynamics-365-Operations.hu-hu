@@ -45,3 +45,6 @@ A jogi személy jogi hatóságnál történő regisztráción keresztül azonos�
 15. Bontsa ki az **Adóregisztráció** szakaszt. Az **Adóregisztráció** szakaszban adja meg az adóhatóságnál tett jelentéshez használt nyilvántartási számokat.
 16. Bontsa ki az **Adó - 1099** szakaszt. Az **Adó - 1099** szakaszban adja meg a 1099-es adatokat a jogi személyre vonatkozóan.  
 17. Kattintson a **Mentés** gombra.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

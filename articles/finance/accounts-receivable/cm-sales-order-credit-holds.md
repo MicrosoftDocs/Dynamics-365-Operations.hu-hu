@@ -264,3 +264,6 @@ A kényszerrel várakoztatás okkal rendelkező értékesítési rendeléseket n
 A Hitelkezelés jelenleg csak értékesítési rendelésekhez használható. A szabadszöveges számlák, pénztári értékesítési rendelések és a hívásközponti rendelések ideiglenes hitelkereteket és biztosításokat/garanciákat használnak, amiket hozzáadhat a hitelkorlát módosításához. Nem fogják használni a zárolási szabályokat, és a hitelkerettel kapcsolatos probléma esetén nem kerülnek be a visszatartási listára.
 
 Nincs támogatás a projekt-számlákhoz a hitelkezelésben.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

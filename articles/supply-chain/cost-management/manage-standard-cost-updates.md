@@ -51,3 +51,6 @@ Ez a példa egy további költségszámítási verziót használt a 2020-os év 
 - **Nincs** – Az újraértékelési tranzakciókra nem lesznek pénzügyi dimenziók feladva. Ha a számlastruktúrája szükséges pénzügyi dimenzió, az átértékelési folyamat továbbra is fut, de pénzügyi dimenziók nélküli könyvelési tételeket hoz létre. Ebben az esetben a felhasználók először figyelmeztető üzenetet kapnak, hogy szükség esetén visszavonják az átértékelést.
 - **Tábla** – A cikk pénzügyi dimenziói általában fel vannak adva az átértékelési tranzakciókba. Ez az alapértelmezett beállítás, és összhangban van az eredeti rendszer működésmóddal anélkül, hogy bekapcsolná *Az alapértelmezett pénzügyi dimenziók lehetőségei a készlet elszámolóárának átértékeléséhez* funkciót.
 - **Feladás** – A Feladás opció azt jelenti, hogy az átértékelt tranzakció pénzügyi dimenziói lesznek feladva átértékelési tranzakcióra. Alapértelmezés szerint az eredeti tranzakció készletszámlájának pénzügyi dimenzióit fogja használni mind a készletszámla, mind az átértékelési számla számára.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

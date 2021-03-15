@@ -48,3 +48,6 @@ Ha egy szállítási állapotot szállítmányozói állapothoz kíván hozzáre
 1. Válassza ki azt a szállítási állapotkódot, amelyet a kiválasztott szállítmányozó kódjához hozzá akar rendelni.
 1. Adja meg a szállítmányozó által használt külső kódot.
 1. Zárja be a lapot.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

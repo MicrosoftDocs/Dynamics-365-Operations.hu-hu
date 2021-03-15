@@ -134,3 +134,6 @@ A következő táblázat összegzi a szállítmánykonszolidálás működését
 ## <a name="additional-resources"></a>További erőforrások
 
 - [Szállítmánykonszolidációs irányelvek konfigurálása](configure-shipment-consolidation-policies.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

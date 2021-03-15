@@ -120,3 +120,6 @@ Ha minden áru regisztrálása megtörtént, a raktárvezető vagy a beszerzési
 
 ## <a name="summary"></a>Összegzés
 A **Beérkezés áttekintése** lap áttekintést ad a raktárvezetőnek és a raktári dolgozóknak a bejövő feldolgozás részeként elvárt munkáról. A lapot a cikk érkeztetési folyamatának elindítására is használhatja, ezzel biztosítva a cikkek raktárba érkezésük első bejegyzésétől számított nyomon követését.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

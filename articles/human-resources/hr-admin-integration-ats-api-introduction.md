@@ -137,3 +137,5 @@ Beállításkészletek:
 [Mi az a Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)<br>
 [A Microsoft Dataverse webes API használata](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview)<br>
 [Beállításkészletek létrehozása és frissítése a webes API segítségével](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/create-update-optionsets)<br>
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

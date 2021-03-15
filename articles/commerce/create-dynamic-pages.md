@@ -96,3 +96,6 @@ Az egyéni oldal közzététele után a rendszer az egyéni oldalt jeleníti meg
 [Oldaltartalom hozzáférhetőségének ellenőrzése](verify-accessibility.md)
 
 [Online csatorna bővíthetősége](e-commerce-extensibility/overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

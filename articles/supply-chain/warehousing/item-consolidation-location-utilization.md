@@ -207,3 +207,6 @@ A következő eset egy mobileszköz raktári alkalmazásával végez készlet *k
 
     > [!NOTE]
    > A rendszer minden lépéshez létrehoz egy munkaazonosítót, amelyet végre kell hajtani. Ha olyan helyet ad meg, amely már tartalmaz készletet, csak egy munkaazonosító jön létre. Ha új helyet ad meg, akkor két munkaazonosító jön létre.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -52,3 +52,6 @@ Ez az eljárás bemutatja egy kereskedelmi ármódosítás létrehozását. Egy 
 14. Zárja be a lapot.
 15. Frissítse a lapot..
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

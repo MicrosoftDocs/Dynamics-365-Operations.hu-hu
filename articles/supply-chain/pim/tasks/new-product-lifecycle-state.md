@@ -34,3 +34,6 @@ Ez az eljárás bemutatja, hogy hogyan tud új termékéletciklus-állapotot lé
 3. Az Állapot mezőben adjon meg egy értéket.
 4. A Leírás mezőben adjon meg egy értéket.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

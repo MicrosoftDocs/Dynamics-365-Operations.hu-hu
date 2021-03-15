@@ -60,3 +60,6 @@ Ez a témakör a bevételezett cikkek betárolásakor alkalmazandó egyszerű mu
 6. Írjon be egy értéket a **Munkaosztály** azonosítója mezőbe. A kitárolási és a betárolási utasítások egy készletet alkotnak. Minden kitárolás/betárolás-készletnek ugyanabba a munkaosztályba kell tartoznia. Ugyanazt a munkaosztályt használja, amelyet megadott a kitárolási utasításhoz.  
 7. Válassza a **Mentés** lehetőséget. Az **Érvényes** jelölőnégyzet most már be van jelölve.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

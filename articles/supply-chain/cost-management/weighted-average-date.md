@@ -195,3 +195,6 @@ Az új, mozgóátlagon alapuló önköltségi ár a pénzügyileg és fizikailag
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

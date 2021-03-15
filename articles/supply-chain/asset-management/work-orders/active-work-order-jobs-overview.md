@@ -42,3 +42,6 @@ Az alábbi ábra az **Aktív munkarendelés beszerzés munkák** listaoldal egy 
 
 Az **Aktív munkarendelés-karbantartási feladatok** listaoldal gombjainak rövid leírását lásd: [Bevezető a munkarendelésekhez](../work-orders/introduction-to-work-orders.md), ahol ugyanazokat a gombokat írják le.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

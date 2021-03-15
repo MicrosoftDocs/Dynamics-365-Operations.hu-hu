@@ -76,3 +76,6 @@ A vevői számlafizetési mód engedélyezésének megerősítéséhez kövesse 
 [Termékmennyiség-korlátok beállítása B2B e-kereskedelmi webhelyekhez](quantity-limits.md)
 
 [SDK- és modulkönyvtár-frissítések](../e-commerce-extensibility/sdk-updates.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

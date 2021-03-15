@@ -42,3 +42,6 @@ Referencia-kamatláb-típusok és referencia-kamatlábak hozzáadásához köves
 
 - Válassza ki a **Referencia-kamatláb értékkülönbség** módszerét az új lízingkifizetés kiszámításához a kezdő dátum referencia-kamatlába és a legutóbbi referencia-kamatláb közötti különbség alapján. A referencia-kamatláb az **Referencia-kamatláb (%)** mezőben van meghatározva.
 - Válassza ki a **Referencia-kamatláb érték** módszerét a lízingkifizetés kiszámításához a **Referencia-kamatláb (%)** mezőben megadott százalék használatával.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

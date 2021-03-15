@@ -87,3 +87,6 @@ A pénztár lehetővé teszi a felhasználók számára a képernyő-elrendezés
 ## <a name="calculating-commissions"></a>Jutalék kiszámítása
 
 A jutalék kiszámítása a meghatározott értékesítési csoporthoz tartozó munkavállalók számára a kimutatásfeladás vagy az értékesítési rendelés feladása során történik. A jutalékösszeg meghatározásának alapja a dolgozó jutalékmegosztása, amelyet az értékesítési csoport határoz meg, valamint a kapcsolódó jutalékszámítási beállítások, amelyek a tranzakcióban szereplőre vevőre és/vagy termékekre vonatkoznak.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

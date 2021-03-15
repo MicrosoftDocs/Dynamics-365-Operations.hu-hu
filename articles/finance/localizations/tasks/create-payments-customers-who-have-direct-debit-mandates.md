@@ -67,3 +67,6 @@ Ez az ötödik a hat olyan feladat közül, amelyek vevői fizetési folyamat el
 11. Kattintson az OK gombra.
 12. Kattintson az OK gombra.
 13. Kattintson a Fizetések létrehozása lehetőségre.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

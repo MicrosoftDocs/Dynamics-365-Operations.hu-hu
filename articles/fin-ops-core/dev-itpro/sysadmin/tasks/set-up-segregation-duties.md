@@ -42,3 +42,6 @@ Beállíthat szabályokat a más felhasználók által elvégzendő feladatok el
 
 > [!IMPORTANT] 
 > A szabályok létrehozása során a rendszer nem ellenőrzi a feladatkörök szétválasztására vonatkozó szabályoknak való megfelelést. Létrehozhat olyan szabályt, amely ütközik a meglévő szerepkörökkel. A felhasználói szerepkör meglévő hozzárendelései az új szabállyal is ütközhetnek. A szabályok létrehozása vagy módosítása után ellenőriznie kell a megfelelést. További információk: [Feladatkörök szétválasztásával kapcsolatos ütközések azonosítása és feloldása](identify-resolve-conflicts-segregation-duties.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -106,3 +106,6 @@ A következő képen egy csomópontminta láható, hozzáadott termékattribútu
 [Szortimentek beállítása](set-up-assortments.md)
 
 [Attribútumok és attribútumcsoportok kezelése](attribute-attributegroups-lifecycle.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

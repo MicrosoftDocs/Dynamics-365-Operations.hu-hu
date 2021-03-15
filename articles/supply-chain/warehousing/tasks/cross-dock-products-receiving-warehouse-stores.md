@@ -48,3 +48,6 @@ Ez az eljárás bemutatja, hogy mely lépésekkel hozhat létre és dolgozhat fe
 15. A listában keressen meg és jelöljön ki egy raktárat, amely termékeket fogadott.
 16. A kiválasztott raktár létrejött rendeléseinek megtekintéséhez kattintson a Rendelés gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

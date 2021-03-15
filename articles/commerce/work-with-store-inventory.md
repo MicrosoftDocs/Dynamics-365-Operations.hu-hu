@@ -71,3 +71,6 @@ A leltárok lehetnek ütemezettek és nem tervezettek is. Az ütemezett leltáro
 ## <a name="inventory-lookup"></a>Keresés a készletben
 
 A több üzlet és raktár számára elérhető aktuális készleten levő termékmennyiséget a **Keresés a készletben** lapon tekintheti meg. Az aktuális készleten levő mennyiségen túl az ígérethez rendelkezésre álló (ATP) mennyiségek az egyes üzletek esetében tekinthetők meg. Válassza ki az üzletet, amelynek ígérethez rendelkezésre álló mennyiségeit meg szeretné tekinteni, és válassza ki az **Üzlet elérhetőségének megjelenítése** lehetőséget. A rendelkezésre álló konfigurációs beállításokkal kapcsolatos további tudnivalókat lásd: [Kiskereskedelmi csatornák készletelérhetőségének kiszámítása](https://docs.microsoft.com/dynamics365/commerce/calculated-inventory-retail-channels).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -42,3 +42,6 @@ A következő táblázat felsorolja azokat az importálási formátumokat, amely
 | 6            | Üzleti egység, 1 részleg, 2 | A szegmenssorrendben meghatározott pénzügyi dimenzióattribútumok.<p>Az **Exportálás** lapon ellenőrizheti, hogyan vannak meghatározva az attribútumok.</p> |
 | 7            | 002,1,658 | <ul><li>A pénzügyi dimenzióérték</li><li>A pénzügyi dimenzió mint a RecordDimensions által biztosított index</li><li>Egyértelmű, egyedi rekordazonosító, amely a RecordTrans vagy a RecordTrans2 egyedi rekordazonosítóhoz van társítva</li></ul> |
 | 8            | 002,1,1 | <ul><li>A RecordBudget tranzakcióhoz társított dimenzióértékek</li><li>A pénzügyi dimenzió mint a RecordDimensions által biztosított index</li><li>Nem egyértelmű sorrekord-azonosító, amely igazodik a fájlban található tranzakciósorok sorrendjéhez</li></ul> |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

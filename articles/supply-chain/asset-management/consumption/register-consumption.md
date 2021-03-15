@@ -94,3 +94,6 @@ Felhasználási regisztrációk végrehajtásakor a rendszer egy megadott sorren
 >[!NOTE]
 >A program mindhárom regisztrációtípusnál ellenőrzi a pénzügyi dimenzió kombinációját, és az érvénytelen kombinációkat üresen hagyja. Ez a szokásos beállítás más Finance and Operations alkalmazások esetében.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -69,3 +69,6 @@ A következő ábra egy e-kereskedelmi fizetési oldalt mutat be, amely időköz
 [Rendelésmegerősítési modul](order-confirmation-module.md)
 
 [Rendelési részletek modul](account-management.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

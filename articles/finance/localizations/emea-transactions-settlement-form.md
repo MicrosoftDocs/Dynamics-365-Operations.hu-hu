@@ -47,3 +47,6 @@ A rendszer rögzíti az elszámolással kapcsolatos információkat, amelyek meg
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

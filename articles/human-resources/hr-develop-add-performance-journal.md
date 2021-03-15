@@ -54,3 +54,6 @@ A teljesítménynapló a célok teljesítésének módjával, valamint adott id�
 20. A Leírás mezőbe írja be a „Köszönöm a konferencián nyújtott sok segítséget!” szöveget.
 21. Kattintson a Küldés gombra.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

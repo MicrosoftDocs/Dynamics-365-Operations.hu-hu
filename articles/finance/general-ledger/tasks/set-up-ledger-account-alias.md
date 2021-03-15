@@ -40,3 +40,6 @@ Ez az eljárás bemutatja, hogyan lehet aliast létrehozni egy számlához, amel
 9. A Kezdeti fókusz mezőben válassza ki azt a dimenziót, amelyre a fókusz kerül az alias használata esetén.
     * A gyorsparancs beírása után a számla és a dimenziók adatai megjelennek, a Kezdeti fókusz mező az lesz, ahol a kurzor vagy a fókusz helyezkedik el.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -579,3 +579,6 @@ Az alábbi táblázat bemutatja azon ER-konfigurációkat, amelyek konfigurálha
 |                             | Értékesítési rendelés szállítólevél (LT) (Excel)           |
 |                             | Értékesítési rendelés szállítólevél (PL) (Excel)           |
 |                             | Értékesítési rendelés szállítólevél (Word)                 |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

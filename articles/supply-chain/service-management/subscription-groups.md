@@ -54,3 +54,6 @@ A következő műveletek elvégezhetők minden, az előfizetési csoporthoz csat
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

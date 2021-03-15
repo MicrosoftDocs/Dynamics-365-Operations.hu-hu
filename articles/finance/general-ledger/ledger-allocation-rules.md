@@ -50,3 +50,6 @@ Minden felosztási szabály négy elsődleges összetevőből áll: általános,
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

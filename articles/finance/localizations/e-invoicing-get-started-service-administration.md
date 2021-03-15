@@ -150,3 +150,6 @@ Mielőtt teljesítené az ebben a témakörben ismertetett eljárásokat, a köv
 
 3. A **Környezet** mezőben adja meg az Elektronikus számlázási bővítmény környezetének nevét.
 4. Válassza a **Mentés** gombot, majd zárja be az oldalt.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -42,3 +42,6 @@ Ha egynél több szállítmány tartozik a rakományhoz, akkor létrehozhat egy 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

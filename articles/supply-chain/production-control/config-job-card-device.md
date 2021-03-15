@@ -94,3 +94,6 @@ Azonban, ahogy korábban már említettük, amikor egy eszköz konfigurációjá
 ## <a name="additional-resources"></a>További erőforrások
 
 [Jelentés befejezettként a feladatkártya eszközből](report-finished-job-device.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

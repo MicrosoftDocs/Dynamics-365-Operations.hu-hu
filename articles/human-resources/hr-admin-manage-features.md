@@ -94,3 +94,5 @@ Ne adjon meg személyes adatokat (azaz az Önt bármilyen módon azonosítani k�
 
 - [A Human Resources újdonságai](hr-admin-whats-new.md)
 - [A Dynamics 365 és a Power Platform programverzióra vonatkozó kiadási tervek](https://docs.microsoft.com/dynamics365/release-plans/#pivot=products&panel=products1)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

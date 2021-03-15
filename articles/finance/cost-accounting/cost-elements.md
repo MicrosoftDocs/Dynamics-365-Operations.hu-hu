@@ -75,3 +75,6 @@ Mivel a költségösszetevők a legalacsonyabb szintű költségadatokat jelenti
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

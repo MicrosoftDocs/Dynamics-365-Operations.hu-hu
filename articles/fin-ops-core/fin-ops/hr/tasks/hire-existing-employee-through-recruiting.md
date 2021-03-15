@@ -40,3 +40,6 @@ Időnként a nyitott pozíciók feltölthetők olyan pályázókkal, akik már a
 9. Kattintson a Pozíció módosítása gombra.
     * Ezen a ponton a kompenzáció is módosítható. Ha most nem rendel hozzá kompenzációt, módosíthatja a munkaképernyőn, a Kompenzáció lap és Rögzített terv kiválasztásával. Miután kiválasztotta a Pozíció módosítása lehetőséget, az alkalmazás állapota „Alkalmazott”-ra frissül.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

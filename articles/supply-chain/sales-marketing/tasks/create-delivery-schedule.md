@@ -64,3 +64,6 @@ Ez az eljárás bemutatja, hogyan hozhatja létre az értékesítési rendelése
 22. Kattintson az OK gombra.
 23. Kattintson az Igen gombra.
 24. Zárja be a lapot.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

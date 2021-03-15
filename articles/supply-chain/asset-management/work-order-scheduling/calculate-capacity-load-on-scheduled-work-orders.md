@@ -57,3 +57,6 @@ Ha a számításhoz a **Kapacitás** vagy a **Fennmaradó** terheléstípust vá
 
 Lásd a [Kapacitásterhelés kiszámítása](../capacity-planning/calculate-capacity-load.md) részt tájékoztatásért a kapacitás terhelésének számításához a karbantartási ütemezés soraiban, és nem az ütemezett munkarendeléseken.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -107,3 +107,6 @@ A beszerzés-módosítás élettartama azonos a tárgyi eszköz élettartamával
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

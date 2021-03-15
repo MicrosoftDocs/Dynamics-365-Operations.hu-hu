@@ -37,3 +37,6 @@ A következő ábra a Finance and Operations moduljaival való kapcsolatot mutat
 ![Az Eszközkezelés integrálási módjának áttekintése](media/overview-integrate2.jpg)
 
 Az Eszközkezeléssel hatékonyan kezelhető és hajtható végre a cég különféle típusú felszerelésének (pl. gépek, gyártási felszerelések, járművek) kezelésére és szervizelésére szolgáló összes feladat. Az Eszközkezelés több iparág megoldását támogatja.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

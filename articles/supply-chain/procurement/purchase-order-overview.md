@@ -91,3 +91,6 @@ A **Jóváhagyási állapot** mező akkor használatos, ha egy beszerzési rende
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

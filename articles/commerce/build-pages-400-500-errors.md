@@ -82,3 +82,6 @@ Ha egy kérés nem sikerült, a kiszolgáló HTTP-állapotkódos hibajelzéseket
 [Új webhelyoldal hozzáadása](add-new-page.md)
 
 [Weblap URL-jének létrehozása](create-page-url.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

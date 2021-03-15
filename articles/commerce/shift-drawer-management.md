@@ -157,3 +157,6 @@ Ugrás ide: **Retail és Commerce \> Csatornák \> Üzletek \> Minden üzlet \> 
 Ez a beállítás segítségével garantálható, hogy a háttérirodai kimutatások ugyanazokat a tranzakciókat tartalmazzák, mint a műszakok a pénztárban, és hogy az adatokat összegzése műszak szerint történik.
 
 Kimutatás és a záró módszerekkel kapcsolatos további tudnivalókat lásd: [Konfigurációk tárolása kiskereskedelmi kimutatásokhoz](https://docs.microsoft.com/dynamics365/unified-operations/retail/tasks/store-configurations-retail-statements).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -149,3 +149,6 @@ A következő pénzügyi integrációs funkció szintén elérhető a Retail SDK
 A Retail SDK csomagban elérhető alábbi örökölt pénzügyi integrációs funkciók nem használják a pénzügyi integrációs keretrendszert, és a későbbi frissítésekkel elavulttá válnak:
 
 - [Ellenőrzőegység integrációs mintája Svédország esetén (örökölt)](./retail-sdk-control-unit-sample.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

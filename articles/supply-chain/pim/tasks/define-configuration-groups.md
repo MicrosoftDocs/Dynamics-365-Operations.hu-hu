@@ -39,3 +39,6 @@ Ez az eljárás bemutatja, hogyan határozhatja meg a termékkonfigurációs cso
 7. Írjon be egy értéket a Név mezőbe.
 8. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

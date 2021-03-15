@@ -49,3 +49,6 @@ Fordított kapcsolat az első jogiszemély-pár létrehozása után könnyen be�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -82,3 +82,6 @@ Ez a folyamat bemutatja az év végi zárás folyamatát, amely az egyenlegeket 
 23. Az év végi zárás alapértelmezés szerint kötegelten fut. Az ajánlott gyakorlat a hosszú ideig futó folyamatok futtatását kötegelt módban végezni. Ez általában egyike ezeknek a folyamatoknak, ezért a kötegelt módban történő futtatás az alapértelmezett.  
 24. Kattintson az **OK** gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

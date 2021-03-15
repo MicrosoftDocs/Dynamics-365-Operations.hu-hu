@@ -44,3 +44,6 @@ A globális adóelőleg funkció továbbfejlesztett szállítói és vevői tran
 
 > [!NOTE]
 > A globális adóelőleg funkció nem kapcsolható be olyan országokban/régiókban, ahol már léteznek honosított adóelőleg-megoldások. Ezek a területek többek között Indiára, Brazíliára, Thaiföldre, Szaúd-Arábiára, Írországra, Nagy-Britanniára és az Egyesült Államokra korlátozódnak.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -82,3 +82,6 @@ Bármelyik módszert is alkalmazzák, az adatfrissítési parancsfájl a korább
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

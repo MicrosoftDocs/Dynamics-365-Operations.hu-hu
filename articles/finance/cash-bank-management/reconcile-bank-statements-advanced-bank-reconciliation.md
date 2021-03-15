@@ -95,3 +95,6 @@ Az egyeztetés munkalapon **Új** értékkel jelölt Banki kivonat tranzakciók 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

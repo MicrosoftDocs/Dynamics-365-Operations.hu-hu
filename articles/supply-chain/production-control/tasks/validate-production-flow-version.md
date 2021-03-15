@@ -63,3 +63,6 @@ Ez az eljárás bemutatja, hogyan hozhat létre új termelési folyamatot és el
     * A tényleges ciklusidő időszaka a feladatok által összesített napok száma a tényleges perctől visszafelé, a tényleges ciklusidő kiszámításához. Az érték bármikor módosítható, és azt csak a tényleges ciklusidők kiszámításához használjuk.  
 13. Kattintson a Mentés gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

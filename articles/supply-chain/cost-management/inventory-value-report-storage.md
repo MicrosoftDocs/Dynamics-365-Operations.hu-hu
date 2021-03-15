@@ -105,3 +105,6 @@ A következő példa bemutatja, hogyan lehet exportálni egy **készletérték j
 1. Megjelenik a **Végrehajtási összesítés** lap, amelyen megtekintheti az exportálási feladat állapotát, valamint az exportált entitások listáját. Válassza az **Entitásfeldolgozái állapot** szakaszban a **Készletérték** entitást a listájából, majd válassza a **Fájl letöltése** elemet az adott entitásból exportált adatok letöltéséhez.
 
 Ha további tájékoztatást szeretne arról, hogyan lehet az adatkezelést az adatok exportálására használni, akkor lásd: [Adatimportálási és-exportálási feladatok – áttekintés](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

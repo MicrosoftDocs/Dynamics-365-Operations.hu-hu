@@ -168,3 +168,6 @@ A példaforgatókönyvhöz két helyprofilt kell előkészíteni.
 
 > [!NOTE]
 > A hely mezőit csak a raktári tranzakciók frissítik. Ha a készletet napló vagy más nem WHS-folyamatok segítségével helyezi át, a mezők nem frissülnek.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

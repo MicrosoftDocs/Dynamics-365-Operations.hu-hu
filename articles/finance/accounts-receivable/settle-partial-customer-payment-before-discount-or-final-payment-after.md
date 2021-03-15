@@ -110,3 +110,6 @@ Anna a **Készpénzfizetési engedmény használata** mezőt visszaállítja **N
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

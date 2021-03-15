@@ -101,3 +101,6 @@ Az alábbi táblázatok a példában használt lízing **Általános** és **Fiz
 7. Az értékvesztés nettó hatásának megtekintéséhez lépjen a kötelezettség- és eszköztranzakciók táblához. Figyelje meg, hogy az értékvesztési költség csökkentette a ROU-eszközt, de a lízingkötelezettség könyv szerinti értéke nem változott.
 
 Az értékvesztésnek van még egy hatása, amit figyelembe kell vennie. Mivel a ROU-eszköz összege most már sokkal kisebb, mint a lízingkötelezettség, az összeget másképp kell amortizáltatni, mint korábban. Pontosabban, az eszköz már lineárisan értékcsökkent a lízing teljes, fennmaradó 84 hónapjára, kezdve a tranzakció időpontjától.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

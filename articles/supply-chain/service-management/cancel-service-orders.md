@@ -77,3 +77,6 @@ A kiválasztott szervizrendelések vagy érvénytelenítésre kerülnek, vagy a 
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

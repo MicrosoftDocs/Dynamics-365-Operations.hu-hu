@@ -112,3 +112,6 @@ A következő táblázat felsorolja azokat a lista-típusokat, amelyek a **Term�
 [Termékajánlatok áttekintése](product-recommendations.md)
 
 [Gyorsnézeti modul](quick-view-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

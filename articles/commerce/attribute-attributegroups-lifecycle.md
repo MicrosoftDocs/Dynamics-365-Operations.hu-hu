@@ -256,3 +256,6 @@ Az attribútumok alapértelmezett értéke felülírható az egyedi termékek es
 
     > [!NOTE]
     > Ha a megosztott termékhez tartozó média és a megosztott termékattribútumok létrehozása történik, azok minden termékre vonatkoznak.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

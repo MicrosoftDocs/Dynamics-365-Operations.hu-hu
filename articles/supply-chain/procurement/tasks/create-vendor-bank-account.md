@@ -57,3 +57,6 @@ Ez az eljárás bemutatja a szállítóhoz tartozó bankszámla létrehozásána
 25. Válassza ki az újonnan létrehozott számlát a **Bankszámla** mezőben.
 26. Kattintson a **Mentés** gombra. A cím örökölhető a banki csoporttól, ha meg van határozva egy cím, illetve itt, hozzá is adhatja azt.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

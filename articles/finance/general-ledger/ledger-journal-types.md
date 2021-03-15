@@ -67,3 +67,6 @@ Ez a témakör bemutatja, milyen naplótípusokat állíthat be a pénzügyi nap
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

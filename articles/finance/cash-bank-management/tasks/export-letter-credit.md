@@ -139,3 +139,6 @@ Ez előtt az eljárás előtt futtassa le a „Bank hitelek beállítása és pr
 3. A listában kattintson a kijelölt sorban lévő hivatkozásra.
     * Győződjön meg arról, hogy a Szállítmány állapota = Kifizetés megérkezett és az Egyenleg összege = 0,00.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

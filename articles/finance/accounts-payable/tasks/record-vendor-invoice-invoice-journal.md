@@ -48,3 +48,6 @@ Ez a feladat-útmutató bemutatja, hogyan rögzíthet szállítói számlákat a
 12. Kattintson a **Bejegyzés** lehetőségre.
 13. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

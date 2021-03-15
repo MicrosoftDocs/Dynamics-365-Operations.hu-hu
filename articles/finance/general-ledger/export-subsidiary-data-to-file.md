@@ -70,3 +70,6 @@ Az **Exportálás** oldal (**Rendszerfelügyelet \> Munkaterületek \> Importál
 5. Az exportálás futtatásához válassza az **OK** lehetőséget.
 
 Az exportálás befejeződése után a program egy üzenetben jeleníti meg, hogy hány rekordot mentett az egyes fájlokba. Ezt követően importálhatja a fájlokat a konszolidált jogi személybe.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -64,3 +64,6 @@ A rendkívüli értékcsökkenést százalékként vagy százalékként vagy rö
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

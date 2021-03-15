@@ -41,3 +41,6 @@ Például egy értékesítési rendelésnek két eleme van: egy szállításra �
 ### <a name="issue-resolution"></a>Probléma megoldása
 
 A kiadás állapota csak azokra a rendelési sorokra vonatkozik, amelyeknél a cikkek engedélyezve vannak a raktárkezelésben. Emiatt a kiadási állapot továbbra is *Részlegesen kiadott* marad ebben a forgatókönyvben. A Microsoft kiértékelte ezt a hibát, és megállapította, hogy ez egy funkciókorlátozás. A kiadási állapot frissítéséhez egy kiterjesztés adható a szállítólevél és a számlázási folyamat részeként.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

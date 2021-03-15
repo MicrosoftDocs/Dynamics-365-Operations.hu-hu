@@ -99,3 +99,6 @@ A termékvélemények listája modul tartalmaz egy olyan helyet, ahol hozzáadha
 [Fejlécmodul](author-header-module.md)
 
 [Láblécmodul](author-footer-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

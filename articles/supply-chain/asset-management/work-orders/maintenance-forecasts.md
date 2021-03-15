@@ -123,3 +123,6 @@ Ha az óraköltség, a cikköltségek és más kiadások frissítve lettek a Mic
 Az alábbi ábra a **Munkarendelés előrejelzés frissítése** párbeszédpanel egy példáját mutatja be.
 
 ![2. ábra](media/07-work-orders.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

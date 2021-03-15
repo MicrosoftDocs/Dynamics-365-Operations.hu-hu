@@ -52,3 +52,6 @@ Bármikor frissítheti a költségösszetevő-dimenziókhoz tartozó hozzárende
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

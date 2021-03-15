@@ -81,3 +81,6 @@ Az anyagjegyzék (AJ) mennyisége 1, a termelési mennyiség pedig 110. A felhas
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

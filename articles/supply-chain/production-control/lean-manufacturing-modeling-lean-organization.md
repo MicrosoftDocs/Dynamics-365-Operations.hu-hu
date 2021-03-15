@@ -66,3 +66,6 @@ A Lean manufacturing feldolgozásához a termelési folyamat és tevékenység m
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

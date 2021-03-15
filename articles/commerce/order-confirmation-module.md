@@ -86,3 +86,6 @@ A rendelés visszaigazolás modul új oldalra való felvételéhez és a kötele
 [Átvételi információ modul](pickup-info-module.md)
 
 [Ajándékutalvány modul](add-giftcard.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -154,3 +154,6 @@ Jelen mozgó átlagos példában kinyomtatásra kerül a készletérték-jelent�
 
 > [!NOTE]
 > A **Tranzakció ideje szerinti rendezés** lehetőséget alkalmazva nem tudja egyeztetni a főkönyvet a készlettel. A jelentést a **Feladási dátum** lehetőség használatával kell kinyomtatni.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

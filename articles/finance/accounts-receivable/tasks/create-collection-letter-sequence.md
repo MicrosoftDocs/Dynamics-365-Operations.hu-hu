@@ -58,3 +58,6 @@ Használja ezt az útmutatót a fizetésifelszólítás-sorozat létrehozásáho
 26. Bontsa ki a **Jegyzet** gyorslapot.
 27. Írja be a fizetési felszólításon megjelentetni kívánt szöveget az adott fizetési felszólítási kód esetén. Ezt a szöveget több nyelvre lefordíthatja a Fordítás menüben a megjegyzés doboz felett.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

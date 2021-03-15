@@ -44,3 +44,6 @@ Minden adatfeldolgozást feladatok végeznek. Minden feladat és adatszolgáltat
     * Ebben a példában válassza a 2017 9-es pénzügyi időszakot.  
 14. Kattintson az OK gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

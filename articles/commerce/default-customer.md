@@ -112,3 +112,6 @@ A következő kép egy példát mutat az ügyfélkonfigurációra.
 [Csatornák áttekintése](channels-overview.md)
 
 [Csatornák beállításának előfeltételei](channels-prerequisites.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

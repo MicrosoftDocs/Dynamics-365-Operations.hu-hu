@@ -87,3 +87,6 @@ Fizetések és jóváírások figyelmen kívül hagyásához a fizetési felszó
 
 1. Ugorjon a **navigációs ablaktábla > Modulok > Követelések és beszedések > Beállítás > Kinnlevőségek paraméterei** helyre, és kattintson a **Beszedések** lapfülre. 
 2. A **Fizetések és jóváírások figyelmen kívül hagyása a fizetési felszólítás kódjának kiszámítása során** paramétert állítsa **Igen** értékre.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

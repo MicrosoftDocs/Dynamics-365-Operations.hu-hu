@@ -228,3 +228,6 @@ Ha korlátozni szeretné a hozzáférést a szervezethez vagy a szervezeten bel�
 [A Microsoft Teams letöltése és telepítése](https://support.office.com/article/download-and-install-microsoft-teams-422bf3aa-9ae8-46f1-83a2-e65720e1a34d)</br>
 [Microsoft Teams súgóközpont](https://support.office.com/teams)</br>
 [Human Resources alkalmazás a Teamsben](hr-admin-teams-leave-app.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

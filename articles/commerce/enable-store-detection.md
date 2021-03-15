@@ -68,3 +68,6 @@ Ha be szeretné kapcsolni a helyalapú áruházészlelést a Commerce szolgálta
 [Több B2C-bérlő konfigurálása egy Commerce környezetben](configure-multi-B2C-tenants.md)
 
 [Tartalomkézbesítési hálózat (CDN) támogatásának hozzáadása](add-cdn-support.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

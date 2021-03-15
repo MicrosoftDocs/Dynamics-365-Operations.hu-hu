@@ -52,3 +52,6 @@ A rendszer eldönti, hogy mely ágat használja: a benyújtott dokumentum kiért
     2. Válasszon ki egy bejegyzést a képernyő **Feltétel érvényesítése** területén.
     3. Kattintson a **Teszt** gombra. A rendszer értékeli a bejegyzést, annak érdekében, hogy meghatározza, hogy a meghatározott feltételeknek megfeleljen-e.
     4. Kattintson az **OK** vagy a **Mégse** lehetőségre a **Tulajdonságok** űrlapra történő visszalépéshez.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

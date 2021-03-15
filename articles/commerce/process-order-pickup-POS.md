@@ -57,3 +57,6 @@ Ha az átvételre kiválasztott cikkek kiválasztása után módosítania kell a
 Ha a **Továbbfejlesztett felhasználói felület a rendelésfeldolgozás átvételéhez a pénztárban** funkció be van kapcsolva, a szervezetek hozzáadhatnak egy gombot az **Átvételi sorok módosítása** művelethez a tranzakcióoldal képernyő-elrendezéséhez. Miután létrehozott egy átvételi tranzakciós kosarat a pénztárban és kiválasztotta a cikkeket, akkor választhatja az **Átvételi sorok módosítása** lehetőséget, ha módosítania kell az átvételi cikkeket, de nem szeretné érvényteleníteni a teljes tranzakciót. A megjelenő **Átvételi sorok módosítása** párbeszédpanelen módosíthatja az átvételi cikkeket és mennyiségeket. Ezt követően a rendszer frissíti a tranzakciós kosarat, hogy tükrözze a módosításokat.
 
 ![Átvételi cikkek módosítása párbeszédpanel](media/pickupchange.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

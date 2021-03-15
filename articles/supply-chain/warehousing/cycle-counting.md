@@ -139,3 +139,6 @@ A számolt érték eltéréseit módosíthatja, majd elfogadhatja a számolt ér
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -64,3 +64,5 @@ A [Dynamics AX Manufacturing kutatás-fejlesztési csapatának blogjában](https
 #### <a name="task-guides"></a>Feladat-útmutatók
 
 További súgó áll rendelkezésére feladat útmutatókon belül. A feladat-útmutatók eléréséhez kattintson bármelyik lapon a Súgó gombjára.
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

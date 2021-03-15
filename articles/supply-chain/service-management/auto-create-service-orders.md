@@ -58,3 +58,6 @@ A szolgáltatási szerződés 2012. január 1-től 2012. december 31-ig tart. A 
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

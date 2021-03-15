@@ -48,3 +48,6 @@ A juttatási mérték változásainak feldolgozása a Microsoft Dynamics 365 Hum
    4. Válassza ki az **OK** lehetőséget. A folyamat a megadott paraméterekkel fog futni.
 
 4. Válassza ki az **OK** lehetőséget.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

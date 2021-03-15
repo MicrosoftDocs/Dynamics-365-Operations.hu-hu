@@ -113,3 +113,6 @@ Az új fix kompenzációs konstrukció nem rendelhető alkalmazotthoz, amíg az 
 
 8. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

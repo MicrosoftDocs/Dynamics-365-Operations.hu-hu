@@ -100,3 +100,6 @@ Ez az eljárás könyvelőknek szól.
 7. Kattintson az OK gombra.
 8. A Kiválasztása mezőben válassza a „Lezárt” lehetőséget.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

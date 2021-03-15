@@ -61,3 +61,6 @@ Ez a témakör ismerteti a Szolgáltatáskezelés és a Projektvezetés és kön
 [Szolgáltatási szerződések kialakítása és megkötése – áttekintés](service-agreements.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

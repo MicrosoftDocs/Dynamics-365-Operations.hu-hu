@@ -85,3 +85,6 @@ A **Vevők** lapon minden vevőnél, amely megállapodás alapján váltóval fi
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -41,3 +41,6 @@ A költségküldési szolgáltatás a következő POS-műveleteket használj: az
 A „szállítás célhelye” kiválasztásának képessége változatlan marad.
 
 A rendelési sor teljesítéséhez használható szállítási módok a termékek és a címek érvényes szállítási módjainak konfigurációján alapulnak. Mivel az érvényes szállítási módok szabályainak karbantartása csak a Központban (HQ) történik, a POS-ügyfél a valós idejű hívással olvassa be a szállítási sor érvényes szállítási módjait.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

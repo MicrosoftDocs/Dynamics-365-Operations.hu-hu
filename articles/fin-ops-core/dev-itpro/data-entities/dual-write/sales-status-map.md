@@ -150,3 +150,6 @@ Az **isIntegrationUser** attribútum engedélyezéséhez kövesse az alábbi lé
     ![Az integrációs felhasználói mód oszlop értékének módosítása Igen értékre](media/sales-map-user-mode-yes.png)
 
 Az értékesítési rendeléseket már le vannak képezve.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

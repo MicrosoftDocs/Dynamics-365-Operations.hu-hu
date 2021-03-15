@@ -53,3 +53,6 @@ További tájékoztatás a Diszpécserközpont speciális feladatainak végrehaj
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

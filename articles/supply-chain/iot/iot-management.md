@@ -61,3 +61,6 @@ Szimulálhatja a gyári gépek jeleit. További részletekért lásd ezeket a t�
 + [IoT DevKit AZ3166 csatlakoztatása az Azure IoT-központhoz](https://docs.microsoft.com/azure/iot-hub/iot-hub-arduino-iot-devkit-az3166-get-started)
 + [Raspberry Pi online szimulátor csatlakoztatása az Azure IoT-központhoz (Node.js)](https://docs.microsoft.com/azure/iot-hub/iot-hub-raspberry-pi-web-simulator-get-started)
 + [Eszközszimulációs megoldás gyorsító – áttekintés](https://docs.microsoft.com/azure/iot-accelerators/iot-accelerators-device-simulation-overview)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

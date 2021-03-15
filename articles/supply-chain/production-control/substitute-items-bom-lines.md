@@ -48,3 +48,6 @@ Fontolja meg a következő példát: Egy fémlemez-darabra van szükség egy heg
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

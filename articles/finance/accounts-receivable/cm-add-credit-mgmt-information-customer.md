@@ -101,3 +101,6 @@ A biztosítási kötvényeket és a garanciákat az **Összes ügyfél** oldalon
     Ebben az esetben a tényleges hitelkeret 125 000 (= A + \[B × C\]).
     
     Ha azonban bejelöli a **Kitettségben szerepel** jelölőnégyzetet, akkor a **Hitelkeret frissítése** 50 000-es értéke (=100 000 50%-a) törlődik, a kitettség értéke pedig 75 000 (= A + \[B × C\] – B).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

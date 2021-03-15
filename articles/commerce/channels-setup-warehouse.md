@@ -146,3 +146,6 @@ A következő kép a konfigurált raktár adatait jeleníti meg.
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

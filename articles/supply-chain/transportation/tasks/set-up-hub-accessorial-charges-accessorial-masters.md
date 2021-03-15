@@ -53,3 +53,6 @@ Ez az eljárás bemutatja, hogyan lehet kiegészítő szolgáltatások alapadato
 9. Kattintson a Mentés gombra.
 10. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -79,3 +79,6 @@ Az alábbi ábra felső részén látható a kezelőfelület alapértelmezett me
 Alapértelmezetten a termelési üzem végrehajtási felület automatikusan kijelentkezik, ha azt nem használják 12 órán keresztül. Ezután a Supply Chain Management egy felhasználójának ismét be kell jelentkeznie. Az időtúllépési korlát azonban akár 90 nap hosszúságra is kiterjeszthető.
 
 Az időtúllépési korlát meghosszabbításához jelentkezzen be a Supply Chain Management alkalamzásba, majd nyissa meg a **Rendszerfelügyelet \> Felhasználók \> Munkamenet meghosszabbítása** lehetőséget. Adja meg azt az Supply Chain Management felhasználói fiókot, amely az eszközbe történő bejelentkezéshez használatos, valamint azt, hogy hány órán át maradjon a munkamenet aktív.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

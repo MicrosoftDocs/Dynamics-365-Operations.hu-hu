@@ -97,3 +97,6 @@ A Finance and Operations mobilalkalmazás letöltése és telepítése:
 1.  Válassza ki a **Dicséret küldése** lehetőséget. 
 1. Adja meg az elküldeni kívánt pozitív visszajelzés szövegét. 
 1. Válassza a **Kész** lehetőséget.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -64,3 +64,5 @@ A Microsoft Dynamics 365 Human Resources MyLeaveRequests entitása biztosítja a
 
 - [Szabadságkérelem elküldése munkafolyamathoz](hr-developer-api-myleaverequests-submit.md)
 - [Hitelesítés](hr-developer-api-authentication.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

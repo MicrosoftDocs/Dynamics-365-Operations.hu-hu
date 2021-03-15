@@ -43,3 +43,6 @@ A probléma lehet, hogy csak az időzítésen múlik. Kövesse az alábbi lépé
 1. Válassza a **Szerkesztés** lehetőséget az oldal felső részén, és állítsa az ütemezett kezdő dátumot/idépontot olyan értékre, amely a jelenlegi időhöz közelebb frissíti az elemzéseket.
 
 ![Kötegelt feladatok](media/batch-jobs.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

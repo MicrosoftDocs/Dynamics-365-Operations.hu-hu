@@ -154,3 +154,6 @@ A tartalomban a következő fő dimenziók szolgálnak szűrőként az összesí
 | Dátumok                  | Dátumok, Év eltolása                                    |
 
 Alapértelmezés szerint a tartalom a folyó naptári év adatait jeleníti meg. Azonban módosíthatja a dátumszűrőt a jelentésszűrők szakaszban. A vállalatszűrőt is módosíthatja.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

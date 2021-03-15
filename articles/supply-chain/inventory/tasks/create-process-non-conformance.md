@@ -66,3 +66,6 @@ Ez a témekör ismerteti, hogy hogyan hajtsa végre a szabálytalanság kezelés
 2. Válassza a **Szabálytalanság lezárása** elemet.
 3. Válassza ki az **Igen** lehetőséget.
 4. Zárja be a lapokat.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

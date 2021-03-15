@@ -82,3 +82,6 @@ Ez az eljárás bemutatja, hogyan lehet egy termékkonfigurációs modellt létr
 17. A Sorozatonként mezőben adjon meg egy számot.
 18. Kattintson az OK gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -97,3 +97,6 @@ Nyersanyagok kiadhatók késztermékek részleges mennyiségéhez vagy meghatár
     A rendelkezésre álló egységek a késztermék egység-szekvenciacsoportazonosítójában vannak meghatározva.
 
     Egy készterméknek például a következő egységátváltással rendelkezik a font (lbs.) és a raklap (PL) között: 1 PL = 100 lbs. Termelési rendelés létrehozásához 10 000 lbs. késztermékhez kiadhatja a nyersanyagokat annyi raklaphoz, amennyit gyártani tervez. Válassza a **PL** lehetőséget egységként, majd adjon meg egy megfelelő számot a **Mennyiség** mezőben.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

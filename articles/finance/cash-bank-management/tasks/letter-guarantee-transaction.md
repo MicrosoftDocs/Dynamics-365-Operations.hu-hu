@@ -147,3 +147,6 @@ Ez az eljárás az USMF bemutatócéget használja.
     * Érvényesítse a feladott naplóbejegyzéseket.  
 16. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

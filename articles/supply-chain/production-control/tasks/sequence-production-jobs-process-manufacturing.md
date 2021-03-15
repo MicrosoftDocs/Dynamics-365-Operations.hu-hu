@@ -70,3 +70,6 @@ Ez az eljárásban példaként festék termékeket használ, hogy bemutassa, hog
 8. A Gyorsszűrő használatával szűrjön rá a P300 értékű Cikkszám mezőkre.
     * Vegye figyelembe, hogy a rendelések rendezése már a szín vagy a méret prioritása szerint megtörtént és a tervezett rendelések a lehető legkorábbi rendelési- és szállítási dátum napján elkezdődtek. Ellenőrizze a Rendelési dátum oszlopát vagy a Kezdő dátumot az Ütemezés részletei FactBoxban.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

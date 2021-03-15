@@ -45,3 +45,6 @@ Az útmutató az USMF bemutatócéget használja.
 6. Kattintson az OK gombra.
 7. Kattintson az Igen gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

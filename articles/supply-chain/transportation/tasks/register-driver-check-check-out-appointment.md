@@ -45,3 +45,6 @@ Ez az eljárás bemutatja, hogyan kell regisztrálni egy járművezetői bejelen
 1. Kattintson a Járművezető kijelentkezése elemre.
 2. Kattintson az OK gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

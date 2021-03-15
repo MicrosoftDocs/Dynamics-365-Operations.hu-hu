@@ -53,3 +53,6 @@ Mielőtt futtatná az elszámolóárra való átalakítást, tegye a következő
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

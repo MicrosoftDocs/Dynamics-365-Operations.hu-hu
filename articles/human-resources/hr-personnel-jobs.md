@@ -87,3 +87,6 @@ Alkalmazzon hatásköröket azon a szerepkörök, folyamatok, termékek és műv
 
 ## <a name="steps-for-creating-a-job"></a>A feladat létrehozásának lépései
 Lásd az [Új feladatok meghatározása](../fin-and-ops/hr/tasks/define-new-jobs.md) cikket az új feladat létrehozásának lépésről lépésre útmutatójához. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

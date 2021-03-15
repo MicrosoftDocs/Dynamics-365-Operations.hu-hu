@@ -79,3 +79,6 @@ A hitelkártya-engedélyezés érvénytelenítéséhez módosíthatja a fizetés
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

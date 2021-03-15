@@ -73,3 +73,6 @@ Ez a témakör bemutatja, hogy hogyan lehet manuálisan létrehozni beszerzési 
 
 2. Válassza ki az **OK** lehetőséget.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

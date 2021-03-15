@@ -150,3 +150,6 @@ A következő diagram a LIFO-elvű készletmodell hatását ábrázolja olyan tr
 - A készletzárásokat egy piros színű, szaggatott függőleges vonal és a *Készletzárás* felirat jelöli.
 - A készletzárás által végrehajtott elszámolásokat szaggatott piros nyilak jelölik, amelyek átlósan haladnak egy bevételezéstől egy kiadás felé.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

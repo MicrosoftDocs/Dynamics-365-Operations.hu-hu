@@ -76,3 +76,6 @@ A feladatütemezés figyelembe veszi az erőforrásokra vonatkozóan megadott ha
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

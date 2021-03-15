@@ -66,3 +66,6 @@ A szabványos Dataverse-táblák mindegyike ki van bővítve az **IntercompanyOr
 8. Miután kibővítette az **Ajánlatok** entitást, alkalmazzon szűrőt `CUSTGROUP != "<company>"` lekérdezési karakterlánccal.
 
     :::image type="content" source="media/filter-cust-group-edit.png" alt-text="A CDS értékesítési ajánlatfejléc lekérdezési párbeszédpanelének szerkesztése":::
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

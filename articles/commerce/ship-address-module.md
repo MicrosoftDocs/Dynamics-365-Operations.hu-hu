@@ -71,3 +71,6 @@ A szállítási cím modul csak a pénztár modulhoz adható hozzá. A szállít
 [Rendelési részletek modul](order-confirmation-module.md)
 
 [Ajándékutalvány modul](add-giftcard.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

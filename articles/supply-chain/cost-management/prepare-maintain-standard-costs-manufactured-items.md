@@ -72,3 +72,6 @@ Ha útvonaladatokat kíván használni a költségképzési célokra, az tovább
 
 [Gyártható vagy beszerezhető termékek beállítása](manufactured-items-treated-as-purchased-items.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

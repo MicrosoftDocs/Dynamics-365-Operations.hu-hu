@@ -36,3 +36,6 @@ Minden szervizrendelési-tranzakciót a szolgáltatási szerződéshez csatolt p
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

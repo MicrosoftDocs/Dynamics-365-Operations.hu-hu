@@ -75,3 +75,6 @@ Jegyezze fel a beszerzési rendelés létrehozásakor a számot, valamint a cikk
     * Ha az OK gombra kattintott, ellenőrizze az üzenetsávot. Egy üzenet látható, amely arról tájékoztat, hogy a művelet befejeződött.  
 5. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

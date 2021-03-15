@@ -125,3 +125,6 @@ Futtasson visszavezetéses költségelszámolást a befejezetlen termelés rends
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

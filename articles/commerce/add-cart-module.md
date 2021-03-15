@@ -117,3 +117,6 @@ A kosármodul új oldalra való felvételéhez és a kötelező tulajdonságok b
 [Kiskereskedelmi csatornák készletelérhetőségének kiszámítása](calculated-inventory-retail-channels.md)
 
 [Online funkcióprofil létrehozása](online-functionality-profile.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

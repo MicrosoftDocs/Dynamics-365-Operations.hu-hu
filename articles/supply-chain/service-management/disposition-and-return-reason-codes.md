@@ -53,3 +53,6 @@ Az intézkedési kódot cikk bevételezésekor vagy visszáru fizikai ellenőrz�
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

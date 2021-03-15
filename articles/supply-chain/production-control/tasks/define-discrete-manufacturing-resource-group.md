@@ -57,3 +57,6 @@ Egy erőforráscsoport üzemi erőforrások csoportja, amelyek általában megfe
 6. Keresse meg és jelölje ki a kívánt rekordot a listán.
 7. A listában kattintson a kijelölt sorban lévő hivatkozásra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

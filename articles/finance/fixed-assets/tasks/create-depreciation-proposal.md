@@ -47,3 +47,6 @@ Ez a témakör leírja, hogyan működnek az értékcsökkenési kötegjavaslato
 3. **Sorok** kiválasztása.
 4. Válassza a **Feladás** parancsot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

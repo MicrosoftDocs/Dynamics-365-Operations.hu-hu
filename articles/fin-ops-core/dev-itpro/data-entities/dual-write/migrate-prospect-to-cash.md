@@ -98,3 +98,6 @@ Mivel a **Termékek** táblában szereplő adatok egy irányba való áramlásra
 ## <a name="quote-and-quote-product-tables"></a>Árajánlat és az Ajánlat terméke táblák
 
 Az **Árajánlat** táblában kövesse a témakör korábbi, [Rendeléstábla](#order-table) szakaszának utasításait. Az **Ajánlat terméke** táblában kövesse a témakör korábbi, [Termékek rendelése tábla](#order-products-table) szakaszának utasításait.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

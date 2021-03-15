@@ -203,3 +203,6 @@ Az ellenőrzési lehetőség beállításához:
 1. Az **Általános** lapon állítsa az **Alapértelmezett rendelési mennyiségek ellenőrzése** lehetőséget a következő értékek valamelyikére:
     - **Szigorú** – Akkor válassza ezt a lehetőséget, ha azt szeretné, hogy az összes **Szokásos rendelési mennyiség** értékei a **Több** többszörösei legyenek minden egyes Gyorslapon (**Beszerzési rendelés**, **Készlet** és **Értékesítési rendelés**).
     - **Szokásos** – Akkor válassza ezt a lehetőséget, ha a szokásos ellenőrzést szeretné használni (amely ugyanúgy működik, mint amikor ez a funkció nincs engedélyezve).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

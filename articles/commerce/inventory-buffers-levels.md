@@ -148,3 +148,6 @@ A termékelérhetőségi API-k válaszának konfigurálásához kövesse az alá
 [Készlet beállításainak alkalmazása](inventory-settings.md)
 
 [Kiskereskedelmi csatornák készletelérhetőségének kiszámítása](calculated-inventory-retail-channels.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

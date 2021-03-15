@@ -52,3 +52,6 @@ A Microsoft Dynamics 365 Human Resources rendszerben levonásokat használhat an
 4. A juttatásimérték-beállítások változásainak követéséhez és karbantartásához válassza a **Műveletek**, majd a **Verziók karbantartása** lehetőséget.
 
 5. Válassza a **Mentés** lehetőséget. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -43,3 +43,6 @@ Ez a cikk azt mutatja be, hogyan dolgozhatók fel a felosztási kérelmek. A Fel
 9. Válassza a **Feladás** parancsot.
 10. Válassza a **Feladás** parancsot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

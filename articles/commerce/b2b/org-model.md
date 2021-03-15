@@ -62,3 +62,6 @@ A Commerce központi felületének felhasználói egymás mellé helyezve megtek
 [A B2B e-commerce webhelyekhez használt vevői számlafizetési mód konfigurálása](payment-method.md)
 
 [Termékmennyiség-korlátok beállítása B2B e-kereskedelmi webhelyekhez](quantity-limits.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -52,3 +52,6 @@ Ha bármilyen oknál fogva módosítania kell a változatokat, az alábbi lépé
 
 ## <a name="next-step"></a>Következő lépés
 [Változat előléptetése és egy kísérlet végrehajtása](experimentation-review-complete.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

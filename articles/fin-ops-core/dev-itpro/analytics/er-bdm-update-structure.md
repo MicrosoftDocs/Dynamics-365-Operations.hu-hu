@@ -106,3 +106,6 @@ Hajtsa végre a következő lépéseket az [Üzleti dokumentumkezelés áttekint
 [Elektronikus jelentéskészítés (ER) áttekintése](general-electronic-reporting.md)
 
 [Üzletidokumentum-kezelés – áttekintés](er-business-document-management.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

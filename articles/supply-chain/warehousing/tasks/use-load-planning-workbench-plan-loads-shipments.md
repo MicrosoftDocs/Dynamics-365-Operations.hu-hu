@@ -60,3 +60,6 @@ Ez a témakör bemutatja, hogyan használható a rakománytervezési munkaterül
 5. Válassza ki a **Hozzárendelés** lehetőséget.
 6. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

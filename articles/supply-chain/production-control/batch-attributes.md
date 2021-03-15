@@ -52,3 +52,6 @@ Rákereshet kötegattribútumokra amikor egy vásárlói rendelés kielégítés
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

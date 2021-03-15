@@ -60,3 +60,6 @@ A **Díjazási profilok** lapon tekintheti meg az összes elérhető díjazási 
 
 > [!NOTE]
 > A **Szállítmányozók** lapon létrehozott profilok a **Díjazási profilok** oldalon is megjelennek.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

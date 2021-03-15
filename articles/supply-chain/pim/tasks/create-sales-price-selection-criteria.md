@@ -53,3 +53,6 @@ Ez az eljárás bemutatja, hogyan hozhat létre eladási ár kiválasztási felt
 4. A Feltétel mezőben válassza ki a 10. vevőcsoportot. 
 5. Kattintson az OK gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

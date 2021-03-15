@@ -198,3 +198,6 @@ Ha az importálás sikeres, egy üzenetet fog kapni, amely arról tájékoztatja
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

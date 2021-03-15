@@ -43,3 +43,6 @@ A **Költségkategóriák** lapon található további gombokkal elérheti a kij
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

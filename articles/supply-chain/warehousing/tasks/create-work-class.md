@@ -39,3 +39,6 @@ Ez az eljárás bemutatja, hogyan állíthat be egy munkaosztályt. A munkaoszt�
     * Ha kiválaszt egy helytípust, azzal korlátozza a cikkek elhelyezését a kitárolás után. Akkor használja ezt a beállítást, ha egy helyutasítás a hely feloldására tesz kísérletet, vagy ha egy raktári dolgozó manuálisan biztosítja a mobileszköz-menüpont helyét.  
 8. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

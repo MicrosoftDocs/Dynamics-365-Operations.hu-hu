@@ -74,3 +74,6 @@ Egy másodlagos cím hozzáadásához a szervizrendeléshez, tegye a következő
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

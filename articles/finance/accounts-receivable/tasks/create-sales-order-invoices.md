@@ -67,3 +67,6 @@ Ez a feladat-útmutató az értékesítési rendelés számlázását írja le, 
 10. Kattintson a **Mégse** gombra.
 11. Kattintson az **Igen** gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

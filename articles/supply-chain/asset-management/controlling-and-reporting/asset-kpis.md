@@ -89,3 +89,6 @@ Az alábbi ábra négy eszköz KPI-számításának képernyőképét jeleníti 
 - Több eszköz is kiválasztható az **Összes eszköz** lehetőségnél, majd kattintson az **Eszköz KPI** gombra az **Általános** lapon. Ezután kattintson az **OK** gombra az **Eszköz KPI-k kiszámítása** párbeszédpanelen a kiválasztott eszközökhöz tartozó KPI-k számításához.  
 - A KPI-számítás eredményei nem kötelező jelleggel tartalmazhatják a [karbantartás miatti üzemkimaradás regisztrációkat](../work-orders/maintenance-downtime.md), a karbantartás miatti üzemkimaradás okkódok beállításának és használatának beállításától függően. 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

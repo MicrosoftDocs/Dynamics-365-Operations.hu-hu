@@ -79,3 +79,6 @@ Ha ez az információ nincs megfelelően megadva, a rendszer üzenetet küld a *
 3. A **Rendelés típusa** mezőben válassza ki a **Tervezett és visszaigazolt**, **Tervezett** vagy **Visszaigazolt** annak a meghatározásához, hogy milyen típusú rendelések legyenek feltüntetve a jelentésben.
 4. Válassza ki a **Terhelés típusa** mezőben a terhelés típusát annak meghatározása érdekében, hogy a terhelési kapacitást mennyiség vagy súly esetében kell-e előre jelezni.
 5. Válassza ki a **Terhelési kapacitás** mezőben a terhelésikapacitás-beállítást.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

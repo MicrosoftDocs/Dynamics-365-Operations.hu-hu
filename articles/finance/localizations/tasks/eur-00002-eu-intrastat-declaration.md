@@ -113,3 +113,6 @@ Ez az eljárás a DEMF bemutatócég segítségével lett létrehozva.
     * Válassza ki például a „Feladások” lehetőséget.  
 27. Kattintson az OK gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

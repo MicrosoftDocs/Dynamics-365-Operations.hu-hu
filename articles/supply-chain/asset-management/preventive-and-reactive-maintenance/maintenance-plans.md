@@ -238,3 +238,6 @@ Beállíthatja, hogy a rendszer automatikusan alaphelyzetbe állítsa a számlá
 1. Válassza ki az **Eszközkezelés \> Beállítás \> Munkarendelések \> Életciklus-állapotok** elemet.
 1. A lista ablaktáblán válassza ki azt a munkarendelés-életciklusállapotot, amelynél alaphelyzetbe kell állítani a megfelelő számlálót.
 1. Az **Általános** gyorslapon állítsa a **Számláló alaphelyzetbe állítása** beállítást *Igen* értékre.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

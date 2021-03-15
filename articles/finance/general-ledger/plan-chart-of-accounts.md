@@ -59,3 +59,6 @@ További információ a következő témakörökben olvasható:
 
 - [Pénzügyi dimenziók](financial-dimensions.md)
 - [Speciális szabálystruktúrák létrehozása és hozzárendelése](tasks/create-assign-advanced-rule-structures.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

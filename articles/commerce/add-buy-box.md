@@ -135,3 +135,6 @@ A vásárlásmező modul új oldalra való felvételéhez és a kötelező tulaj
 [Kiskereskedelmi csatornák készletelérhetőségének kiszámítása](calculated-inventory-retail-channels.md)
 
 [SDK- és modulkönyvtár-frissítések](e-commerce-extensibility/sdk-updates.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

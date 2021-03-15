@@ -70,3 +70,6 @@ A karbantartási vagy javítási feladat befejezése után regisztrálhatja az e
 2. Válassza ki az eszközt vagy a karbantartási kérést.
 3. Válassza ki az **Eszközök kézbesítése** lehetőséget.
 4. A **Kézbesítve** mezőben adja meg a dátumot és az időpontot. Majd kattintson az **OK** lehetőségre. A rekord eltűnik a **Kimenő eszközök** listaoldalról.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

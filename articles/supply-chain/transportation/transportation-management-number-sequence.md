@@ -48,3 +48,6 @@ Ha egy számsorozatot a szállítmányozóhoz kíván kapcsolni, hajtsa végre a
 1. Válassza ki a **Szerkesztés** opciót.
 1. Válasszon egy beállítást az **Áttekintés** gyorslap **Pro számsorozarok** mezőjében.
 1. Zárja be a lapot.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

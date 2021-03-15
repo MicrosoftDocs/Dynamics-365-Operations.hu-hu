@@ -124,3 +124,6 @@ A pro forma számla olyan számla, amely a tényleges számla mennyiségének be
 #### <a name="blogs"></a>Blogok
 
 Az értékesítési folyamat áttekintése megtalálható ebben a posztban: [Az értékesítés működése a Dynamics 365 for Finance and Operations](https://financefunction.tech/2018/05/15/how-sales-work-in-dynamics-365-for-finance-and-operations) rendszerben.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -41,3 +41,6 @@ Ez az eljárás bemutatja, hogyan hozzon létre egy új alapterméket dimenzión
     * Válassza ki a Dimenzión alapuló konfigurációs technológiát.  
 9. Kattintson az OK gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

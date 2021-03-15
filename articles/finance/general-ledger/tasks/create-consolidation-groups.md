@@ -46,3 +46,6 @@ Ez az eljárás bemutatja, hogyan lehet konszolidációsszámla-csoportot létre
 8. Írjon be egy értéket a Konszolidációsszámla-csoport mezőbe.
 9. Írjon be egy értéket a Konszolidációsszámla-csoport neve mezőbe.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

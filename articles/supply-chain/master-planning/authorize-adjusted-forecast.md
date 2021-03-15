@@ -50,3 +50,6 @@ Rendkívül fontos, hogy megértse hogyan működik a **Manuális beállítások
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

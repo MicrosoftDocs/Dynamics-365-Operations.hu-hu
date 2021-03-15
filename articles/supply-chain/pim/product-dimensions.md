@@ -145,3 +145,6 @@ A verzió dimenzió a többi termékdimenzióhoz hasonlóan működik. A sajáto
 
 > [!IMPORTANT]
 > Ha bekapcsolja és használja a verzió dimenziót, akkor a készletdimenziókra hivatkozó bizonyos megoldások nem a várt módon működhetnek. A problémák megerősítéséhez és javításához forduljon az érintett megoldás független szoftverszállítójához (ISV). További információ: [A verzió dimenzió engedélyezése](#enable-version-dim).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

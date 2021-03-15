@@ -108,3 +108,6 @@ További tudnivalókért lásd: [Tárgyieszköz-integráció](fixed-asset-integr
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

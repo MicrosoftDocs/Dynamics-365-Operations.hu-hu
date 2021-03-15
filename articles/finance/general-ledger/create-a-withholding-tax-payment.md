@@ -40,3 +40,6 @@ Az adóelőleg-kiegyenlítési és -feladási munkaeljárás kiegyenlíti a Köt
 7. Kattintson az **OK** gombra.
 
 ![Adóelőleg-fizetés paraméterei](media/withholding-tax-payment.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

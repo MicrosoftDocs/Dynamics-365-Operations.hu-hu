@@ -93,3 +93,6 @@ Lehetősége van kérdőívek tervezésére és kezelésére a különböző cé
 - [Kérdőívek tervezése](../../../talent/design-questionnaires.md)
 - [Kérdőívek terjesztése és ütemezése](../../../talent/distribute-questionnaires.md)
 - [A kérdőívek eredményeinek megtekintése és kiértékelése](../../../talent/evaluate-questionnaire-results.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

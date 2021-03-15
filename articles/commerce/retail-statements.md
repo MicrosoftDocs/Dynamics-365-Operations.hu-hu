@@ -87,3 +87,6 @@ A kimutatás feladásakor értékesítési rendelések és számlák jönnek lé
 - Értékesítések, amelyeknél egy vevőt adtak a pénztári tranzakcióhoz, külön értékesítési rendeléseket és számlákat hoznak létre az egyes egyedi vevőkhöz.
 
 Kifizetési naplók automatikusan létrejönnek a fizetési kimutatásban, és a készlet úgy frissül, ahogy a POS üzlet.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

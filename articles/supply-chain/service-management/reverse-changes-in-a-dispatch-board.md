@@ -50,3 +50,6 @@ A következő lépések segítségével vonhatja vissza a diszpécserközpontban
  
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

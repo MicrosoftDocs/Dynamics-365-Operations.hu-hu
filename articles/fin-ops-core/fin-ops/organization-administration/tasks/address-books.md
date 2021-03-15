@@ -41,3 +41,6 @@ A feladat létrehozásához az USMF bemutató vállalatot használtuk példakén
 7. A nyílra kattintva a kijelölt rendelkezésre álló csapatokat felveheti a címjegyzékbe.
 8. Kattintson a **Mentés** gombra.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

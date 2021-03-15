@@ -131,3 +131,6 @@ A kapcsolódó alhelyekkel rendelkező munkavégzési helyszín törölhető, ha
 
 >[!NOTE]
 >Ha nem tud törölni egy munkavégzési helyszínt, akkor a törlés elvégezheti úgy, hogy létrehoz egy munkavégzési helyszín életciklus-állapotot erre a célra. Beállíthat például egy „Selejtezett” vagy „Törölt” állapotot amely nem lehet aktív állapot **Munkavégzési helyszín életciklus-állapotai** képernyőn.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

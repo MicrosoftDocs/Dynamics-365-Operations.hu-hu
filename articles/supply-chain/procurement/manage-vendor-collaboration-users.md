@@ -93,3 +93,6 @@ A felhasználóhoz tartozó biztonsági szerepkörök módosításának kérése
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

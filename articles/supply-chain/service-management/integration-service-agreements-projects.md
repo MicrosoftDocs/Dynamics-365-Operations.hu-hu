@@ -82,3 +82,6 @@ Emellett a **Szervizrendelések** képernyő **Projekt** lapján engedélyezheti
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

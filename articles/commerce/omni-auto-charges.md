@@ -221,3 +221,6 @@ Ha felhasználó manuálisan felülírja a számított költségeket vagy manuá
 
 [Fejlécköltségek arányosítása az egyező értékesítési sorokhoz](pro-rate-charges-matching-lines.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

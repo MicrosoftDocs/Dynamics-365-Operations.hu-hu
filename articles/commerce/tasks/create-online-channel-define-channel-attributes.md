@@ -66,3 +66,6 @@ Ezzel az eljárással bemutatja, hogyan hozhat létre új online csatornát, és
 3. Futtassa a 1070 elosztási ütemezést a módosítások szinkronizálására a csatornaadatbázisba. 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

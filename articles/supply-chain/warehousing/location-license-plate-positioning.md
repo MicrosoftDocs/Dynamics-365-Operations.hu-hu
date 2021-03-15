@@ -280,3 +280,6 @@ Most, hogy a *Helyazonosító tábla elhelyezése* funkció be van állítva, é
     ![1. pozíció helye](media/LocationLicensePlatePositioning.png "1. pozíció helye")
 
 1. Adja meg a helyhez létrehozott azonosítótábla-azonosítót, majd kövesse a figyelmeztetéseket az értékesítési rendelés kitárolásához.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

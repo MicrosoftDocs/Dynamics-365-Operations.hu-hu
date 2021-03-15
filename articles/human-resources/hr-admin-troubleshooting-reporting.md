@@ -49,3 +49,6 @@ A felhasználó nem tudja testreszabni a beágyazott Microsoft Power BI jelenté
 **Hosszú távú megoldás**
 
 További Power BI beállítások lesznek elérhetők, és több adat és entitás lesz a Dataverse része.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

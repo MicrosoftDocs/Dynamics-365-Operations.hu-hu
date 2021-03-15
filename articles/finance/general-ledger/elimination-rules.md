@@ -154,3 +154,6 @@ Válassza ki a konszolidált adatok forrásaként szolgáló vállalatot, és v�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

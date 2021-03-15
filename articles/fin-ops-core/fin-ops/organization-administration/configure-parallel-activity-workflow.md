@@ -53,3 +53,6 @@ Végezze el a következő lépéseket a párhuzamos tevékenység ágainak hozz�
     > Az ágának sorrendje nem számít, mivel a párhuzamos tevékenység ágai egyszerre futnak.
 
 3. Az egyes ágak konfigurálása: [Párhuzamos ágak konfigurálása munkafolyamatban](configure-parallel-branch-workflow.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

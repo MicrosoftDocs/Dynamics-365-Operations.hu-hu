@@ -119,3 +119,6 @@ Az eljárás egy olyan szolgáltatáshoz tartozik, amely a Dynamics 365 for Oper
 23. Kattintson a Mentés gombra.
 24. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -81,3 +81,6 @@ Amíg a Microsoft nem ad ki megoldást a probléma kiküszöbölésére, a hibá
 - Kerülje a decimális értékeket az elszámolóárban. Próbálja meg meghatározni az elszámolóárat úgy, hogy az **Ár mennyisége** mező *1-re* van állítva. Ha *1*-nél több **Ármennyiség** értéket kell megadnia, próbálja meg minimálisra csökkenteni a tizedesjegyek számát az elszámolóáron. (Ideális esetben kevesebb mint két tizedesjegynek kell lennie.) Például ne definiálja az olyan elszámolóár-beállításokat, mint például **Ár** = *10* és **Ármennyiség** = *3*, mivel a készletegység elszámolóárát 3.333333 értékben fogják létrehozni (ahol a tizedesérték ismétlődik).
 - A dokumentumok többsége esetében lehetőleg ne legyen több olyan sor, amely a termék- és pénzügyi készletdimenziók ugyanazon kombinációját tartalmazza.
 - Csökkentse a párhuzamos futások mértékét. (Ebben az esetben a rendszer gyorsabb lehet, mert kevesebb frissítési ütközés és újraküldés fordulhat elő.)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

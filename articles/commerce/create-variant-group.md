@@ -72,3 +72,6 @@ A következő kép egy példát mutat be az „utcai pólóméretek” méretcso
 [Retail termékek beállítása](set-up-retail-products.md)
 
 [Termékdimenziók](../supply-chain/pim/product-dimensions.md?toc=/dynamics365/commerce/toc.json)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

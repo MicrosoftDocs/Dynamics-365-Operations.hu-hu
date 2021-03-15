@@ -48,3 +48,6 @@ Az érték-előállítási folyamatok üzemi egységek, amelyek egy vagy több t
 2. Zárja be a lapot.
 3. Frissítse a lapot..
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

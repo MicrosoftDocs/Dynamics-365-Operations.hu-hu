@@ -407,3 +407,6 @@ Most már kitárolhatja a 2. értékesítési rendelést. A zárolás feloldása
 - Szükség szerint manuálisan is felülbírálhatja az egyes munkafejlécekhez tartozó feltöltési munka elérhetőségét a **Munkarészletek** lapon.
 - Amikor a rendszer beállítja a feltöltési munka elérhetőségét, minden olyan készletet figyelembe veszi, amely már a helyen van a munka befejezése előtt
 - Minden értékesítési rendelés munka egy adott feltöltési munkához kapcsolódik. Nincs kapcsolódó értékesítési munka elérhetőségi funkció.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

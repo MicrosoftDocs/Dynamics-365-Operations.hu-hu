@@ -94,3 +94,6 @@ A Minősítések és értékelések modulok a termék részletei oldalain tört�
 [A Minősítések és értékelések modulok konfigurálása a termék részletes oldalain](ratings-reviews-modules.md)
 
 [A termék minősítések szinkronizálása a következőben: Dynamics 365 Retail](sync-product-ratings.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

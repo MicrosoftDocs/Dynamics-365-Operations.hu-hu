@@ -59,3 +59,6 @@ A szolgáltatássablon sorait a program ekkor a kapcsolt szolgáltatási objektu
 [Szolgáltatási sablonok](service-template.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

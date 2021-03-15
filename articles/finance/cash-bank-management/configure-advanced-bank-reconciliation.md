@@ -60,3 +60,6 @@ Az **Egyeztetés az importálás után** lehetőségre történő beállítás a
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

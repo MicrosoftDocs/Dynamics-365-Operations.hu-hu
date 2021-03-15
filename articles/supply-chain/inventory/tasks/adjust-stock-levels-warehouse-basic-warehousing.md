@@ -59,3 +59,6 @@ Ez az eljárás végigvezeti a folyamaton, amellyel létrehozható és feladhat�
 5. Zárja be az űrlapot.
 6. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

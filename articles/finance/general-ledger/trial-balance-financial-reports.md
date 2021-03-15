@@ -109,3 +109,6 @@ Minden egyes főkönyvi kivonati jelentés külön oszlopdefiníciót használ. 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

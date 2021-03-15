@@ -1373,3 +1373,6 @@ A Windows 8-ra készült táblagépes alkalmazás lehetővé tette a költségbe
 |     <strong>Érintett területek</strong>     |                                              Főkönyv                                              |
 |             <strong>Állapot</strong>             |                                      Eltávolítva a Dynamics AX 2012-s verziójától kezdve                                      |
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

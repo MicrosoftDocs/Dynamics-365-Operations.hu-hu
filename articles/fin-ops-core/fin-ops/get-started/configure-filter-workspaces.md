@@ -63,3 +63,6 @@ Ha a munkaterület szakaszai rendelkeznek saját szűrővel, az egyes szakaszok 
 [![Munkaterületszakasz-szűrők](./media/workspace-section-filters.png)](./media/workspace-section-filters.png)
 
 Ahogyan a munkaterület szintű szűrőnél, itt is válassza ki vagy adja meg azt az értékét, amely alapján a szakasz tartalmát szűkíteni kívánja.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

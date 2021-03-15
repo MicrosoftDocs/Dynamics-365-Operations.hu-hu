@@ -72,3 +72,6 @@ Ha előírta az okkód használatát, akkor a következő esetekben kötelező a
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

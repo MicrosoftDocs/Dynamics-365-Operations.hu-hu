@@ -97,3 +97,6 @@ Ha további információt szeretne arról, hogy miként használhatja a raktárs
 ## <a name="related-topic"></a>Kapcsolódó témakör
 
 [Konfigurációs adatsablonok](../../dev-itpro/data-entities/configuration-data-templates.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

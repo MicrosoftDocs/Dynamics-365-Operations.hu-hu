@@ -184,3 +184,6 @@ Ez a módosítás az átvitel után történik, mert a rugalmas órák számít�
 | 06:00 DU | 08:00 DU | 2    | 1.5       | 3            |
 | 08:00 DU | 09:00 DU | 1    | 2         | 2            |
 |          |          |      | **Összesen** | **8**        |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

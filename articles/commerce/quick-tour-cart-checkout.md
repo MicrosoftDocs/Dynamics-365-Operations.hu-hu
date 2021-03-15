@@ -106,3 +106,6 @@ A pénztár lap létrehozásával kapcsolatos további tudnivalókat lásd [Pén
 [Termékadatok oldalainak áttekintése](quick-tour-pdp.md)
 
 [Fiókkezelési oldalak áttekintése](quick-tour-account-management.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

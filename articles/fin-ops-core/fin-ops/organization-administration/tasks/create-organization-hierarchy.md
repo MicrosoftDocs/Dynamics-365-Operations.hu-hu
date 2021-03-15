@@ -48,3 +48,6 @@ Ez az eljárás az USMF bemutatócéget használja.
     - Szükség szerint adjon hozzá szervezeteket.  
     - A szervezetek hozzáadásához kattintson a **Szerkesztés** majd a **Beszúrás** lehetőségre. Amikor befejezte a módosításokat **elmentheti** a vázlatot és/vagy **közzéteheti** a módosításokat.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

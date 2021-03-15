@@ -96,3 +96,6 @@ A lenti ábra a **Karbantartás miatti üzemkimaradási tevékenységek** részl
 - A karbantartás miatti üzemkimaradási tevékenységek között átmásolhatja az eszközöket. A **Minden karbantartás miatti üzemkimaradási tevékenység** részen kattintson a **Karbantartás miatti üzemkimaradási tevékenységek másolása** gombra, majd válassza ki a megfelelő értékeket a **Karbantartás miatti üzemkimaradási tevékenységből** és a **Karbantartás miatti üzemkimaradási tevékenységbe** mezőben, és kattintson az **OK** gombra.
 - A **Minden karbantartás miatti üzemkimaradási tevékenység** részen kattintson a **Karbantartási ütemezés sorai** vagy az **Aktív munkarendelések** gombra a kapcsolódó listák megnyitásához, illetve a kiválasztott karbantartás miatti üzemkimaradási tevékenységhez kapcsolódó sorok megtekintéséhez.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

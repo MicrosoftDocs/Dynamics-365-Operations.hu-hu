@@ -54,3 +54,6 @@ A szolgáltatásitárgy-kapcsolatokhoz sablonanyagjegyzék kapcsolható. Ezt kö
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

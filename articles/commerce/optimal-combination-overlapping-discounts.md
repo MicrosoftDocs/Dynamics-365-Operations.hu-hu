@@ -83,3 +83,6 @@ Az exponenciálisan növekvő számú, kiértékelendő kombináció problémáj
 ![A marginális érték számításának képlete](./media/overlapping-discount-combo-06.jpg)
 
 Miután a megosztott termékcsoport minden egyes kedvezményének marginális értékét kiszámítottuk, az összes kedvezményt sorrendben alkalmazzuk a megosztott termékekre a legmagasabb marginális értéktől a legalacsonyabbig. Ennél a módszernél nem hasonlítjuk össze az összes fennmaradó engedménylehetőséget, valahányszor alkalmaztuk egy kedvezmény egy példányát. Ehelyett az egymást átfedő kedvezményeket egyszer összehasonlítjuk, majd pedig sorrendben alkalmazzuk. További összehasonlításokra nem kerül sor. A küszöbérték, amelynél a rendszer a marginálisérték-módszerre vált, a **Kereskedelmi paraméterek** oldal **Engedmény** lapján állítható be. Az összengedmény kiszámítására felhasznált elfogadható idő hossza kiskereskedelmi iparáganként változik. Az idő általában viszont a tized ezredmásodpercek és az egy másodperc közti tartományba esik.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

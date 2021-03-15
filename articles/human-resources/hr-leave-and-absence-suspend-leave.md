@@ -49,3 +49,6 @@ Ha az elhatárolások feldolgozása az alkalmazott szabadságának felfüggeszt�
 - [Szabadság- és távolléttípusok konfigurálása](hr-leave-and-absence-types.md)
 - [Szabadság- és távolléti tervek elhatárolása](hr-leave-and-absence-accrue.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

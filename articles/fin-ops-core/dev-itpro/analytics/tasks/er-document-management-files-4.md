@@ -69,3 +69,6 @@ Az eljárás egy olyan szolgáltatáshoz tartozik, amely a Dynamics 365 for Oper
 11. Kattintson az OK gombra.
     * Tekintse át a létrehozott kimenetet. Fontos megjegyezni, hogy az összes melléklethez létrejött egy XML-csomópont. A melléklet tartalma a MIME (base64) szövegformátumú XML-kimenethez van feltöltve.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

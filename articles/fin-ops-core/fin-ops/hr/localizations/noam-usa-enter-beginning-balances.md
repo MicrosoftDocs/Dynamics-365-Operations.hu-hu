@@ -166,3 +166,6 @@ Lehetőség van a tranzakciók sztornírozására és ismételt bevitelére. A t
 2. Kattintson az **Igen** lehetőségre, amikor a következő üzenet: „Ha sztornírozza ezt a fizetési kimutatást, sztornírozó fizetési kimutatás kerül létrehozásra ezen fizetési kimutatás ellentételezésére. Egyik fizetési kimutatás sem szerkeszthető. Kívánja sztornírozni ezt a fizetési kimutatást?" jelenik meg. 
 
 A fizetési kimutatás sztornírozása után új fizetési kimutatást hozhat létre a munkavállaló számára a korábban létrehozott bevételi kimutatásból. Győződjön meg róla, hogy az új fizetési kimutatás létrehozása előtt kijavította a bevételi kimutatáson szereplő hibás sorokat, majd hozzon létre új fizetési kimutatásokat a helyes összegekkel. 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

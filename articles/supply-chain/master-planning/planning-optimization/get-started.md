@@ -132,3 +132,6 @@ Ha a Tervezésoptimalizálás be van kapcsolva, akkor az alaptervezést a rendsz
 [Szűrők alkalmazása egy tervre](plan-filters.md)
 
 [Tervezési feladat érvénytelenítése](cancel-planning-job.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -132,3 +132,6 @@ A mezők frissítése után az **Ellenőrzés** lehetőségre kattintva biztosí
 8. A Commerce alkalmazásban a **Commerce paraméterek** oldal **Ügyfélkör** lapján a **Dynamics 365 Customer Insights** gyorslapon állítsa az **Alkalmazásazonosító** lehetőséget CI_Access_AppID értékre (a fenti 1. lépéstől). A **Titkos kód neve** mezőben válassza ki a titkos kód fenti 7. lépésben megadott nevét (CISecret). A **Customer Insights engedélyezése** beállításnál adja meg az **Igen** értéket. Ha a beállítás valamiért nem sikerül hibaüzenet jelenik meg, és a beállítás értéke **Nem** lesz. 
 
 A Customer Insights szolgáltatásban több környezet is használható (pl. tesztkörnyezet és termelési környezet). A **Környezeti példányazonosítója** mezőbe írja be a megfelelő környezetet. A **Másodlagos vevőazonosító** mezőbe írja be a Customer Insights azon tulajdonságát, amelyet hozzárendelt a vevő számlaszámához. (A Commerce-rendszer vevőazonosítója a vevőkód.) A további három tulajdonság a vevői kártyán az ügyfélkönyvben megjelenő intézkedéseket jelenti. Legfeljebb három intézkedés jeleníthető meg a vevő kártyáján. Az intézkedések kiválasztására azonban nincs szükség. A korábban említetteknek megfelelően a rendszer először ezeket az értékeket jeleníti meg, majd megjeleníti az ügyfélkönyv attribútumcsoportjának értékeit.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

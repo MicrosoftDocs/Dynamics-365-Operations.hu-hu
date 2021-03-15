@@ -47,3 +47,6 @@ További információ: [Feladás származtatott könyvekkel](post-derived-value-
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

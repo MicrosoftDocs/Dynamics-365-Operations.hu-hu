@@ -58,3 +58,6 @@ Ezzel az eljárással konfigurálhatja a Költségellenőrzési munkaterületet 
 27. A Költségobjektum dimenzióhierarchia-csomópont mezőben adjon meg vagy válasszon ki egy értéket.
     * A Költségobjektum dimenzióhierarchia kijelölése után bontsa ki a Költségösszetevő dimenzióhierarchiát a kívánt költségértékek megtekintése érdekében. Kibonthatja például a hierarchiát a Gyártási többletköltségre az érték megtekintése érdekében.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

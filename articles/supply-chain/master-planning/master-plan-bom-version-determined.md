@@ -43,3 +43,6 @@ Minden érvényes anyagjegyzék-verziónak, legyen az telephelyre jellemző vagy
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

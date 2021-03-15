@@ -96,3 +96,6 @@ A rendszer viselkedése megegyezik, függetlenül attól, hogy a **Helyesbítés
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

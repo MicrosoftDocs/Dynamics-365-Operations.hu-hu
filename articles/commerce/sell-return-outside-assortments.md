@@ -45,3 +45,6 @@ A Commerce használatával ezek az általános forgatókönyvek elérhetők a ki
 + Termékek átvétele az aktuális üzletben vagy egy másik üzletben.
 + Rendelés érvénytelenítése az aktuális üzletben vagy egy másik üzletben.
 + Visszárurendelés nyugtával vagy anélkül a jelenlegi vagy egy másik üzletben.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

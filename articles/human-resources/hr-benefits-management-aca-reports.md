@@ -207,3 +207,6 @@ Megjelennek az alkalmazott eltartottakkal kapcsolatos fedezeti adatai.
 
 > [!NOTE]
 > Az oldalon csak az **ACA szerint bejelentendő** típusú megjelölt juttatási tervek jelennek meg.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

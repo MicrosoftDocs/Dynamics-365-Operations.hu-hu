@@ -44,3 +44,6 @@ Ez az eljárás bemutatja, hogyan módosíthatja a jelentési kapcsolatot egy al
 12. A Jelentés beosztás szerint mezőben adjon meg vagy válasszon ki egy értéket.  Példa: 000437
 13. Kattintson a Mentés gombra.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

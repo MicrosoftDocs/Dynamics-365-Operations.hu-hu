@@ -56,3 +56,6 @@ Ha kötegelten végzi a számlafrissítést, akkor a **Visszárurendelés** típ
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

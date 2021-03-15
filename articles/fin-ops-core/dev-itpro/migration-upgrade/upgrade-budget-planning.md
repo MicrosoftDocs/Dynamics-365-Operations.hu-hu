@@ -162,3 +162,6 @@ Számos adatentitás adódott hozzá a költségvetés-tervezés gyors implement
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

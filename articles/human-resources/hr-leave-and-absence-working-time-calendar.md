@@ -75,3 +75,6 @@ Ha engedélyezte a szabadsággal és a távolléttel kapcsolatos munkaszünet-ko
 
 - [Szabadság és távollét áttekintése](hr-leave-and-absence-overview.md)
 - [Szabadság- és távolléttípusok konfigurálása](hr-leave-and-absence-types.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

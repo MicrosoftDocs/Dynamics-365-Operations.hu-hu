@@ -51,3 +51,6 @@ Ez a negyedik azon öt eljárás közül, amelyek elektronikus jelentési beáll
 4. A listában kattintson a SEPA CT sorban lévő hivatkozásra.
 5. Kattintson a Mentés gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

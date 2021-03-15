@@ -122,3 +122,6 @@ Beállíthat egy szabványos terhelési fizetési számlát az országfüggő fi
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -62,3 +62,6 @@ Ez a folyamat egy kanbanmennyiség-számítási irányelv létrehozására irán
 8. A listában kattintson a kijelölt sorban lévő hivatkozásra.
     * Válassza ki a előző alfeladatban létrehozott Speaker2016 irányelvet.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

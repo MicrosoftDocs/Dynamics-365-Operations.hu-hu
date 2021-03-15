@@ -120,3 +120,6 @@ A valamely munkafolyamatban beállított kiadásellenőrök használatához be k
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -146,3 +146,6 @@ Az elérhető adatok tartalmazzák a szállító nevét, címeit, kapcsolattart�
 ## <a name="additional-resources"></a>További erőforrások
 
 [Szállítói együttműködés felhasználóinak kezelése](manage-vendor-collaboration-users.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

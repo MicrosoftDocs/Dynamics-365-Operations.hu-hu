@@ -86,3 +86,6 @@ Ha az integrált [Microsoft hozzáférhetőségi információk](https://accessib
 [Kategória céloldalának bővítése](enrich-category-page.md)
 
 [Dinamikus e-kereskedelmi oldalak létrehozása URL-paraméterek alapján](create-dynamic-pages.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

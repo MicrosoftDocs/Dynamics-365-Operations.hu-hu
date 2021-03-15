@@ -87,3 +87,6 @@ Ha egy adott termék esetében a marketingtartalom egyedi, akkor a PDP-hez bárm
 [Fiókkezelési oldalak áttekintése](quick-tour-account-management.md)
 
 [A termékoldal bővítése lap](enrich-product-page.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

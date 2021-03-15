@@ -298,3 +298,6 @@ Az MX-00010 és az MX-00016 (CFDI-számla és CFDI-érvénytelenítés) funkció
 - [Elektronikus számlázásbővítmény – áttekintés](e-invoicing-service-overview.md)
 - [Első lépések az Elektronikus számlázásbővítménnyel](e-invoicing-get-started.md)
 - [Az Elektronikus számlázásbővítmény beállítása](e-invoicing-setup.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

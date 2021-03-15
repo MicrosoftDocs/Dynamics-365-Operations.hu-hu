@@ -51,3 +51,6 @@ Ez a témakör azt ismerteti, hogyan állítható be az attribútumalapú árké
 8. Adjon meg egy értéket a **Kifejezés** mezőben. Például írja be a `50` értéket. 
 9. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -57,3 +57,6 @@ Ez az eljárás megmutatja, hogyan regisztrálhat cikkeket a cikkérkeztetési n
 2. Kattintson a Termékbevételezés elemre.
 3. Kattintson az OK gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

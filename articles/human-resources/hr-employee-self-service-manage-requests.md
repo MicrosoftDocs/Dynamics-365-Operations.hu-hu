@@ -39,3 +39,5 @@ Kezelje az **Alkalmazotti önkiszolgáló rendszer** munkaterületről érkező 
 
 - [Szabadság és távollét áttekintése](hr-leave-and-absence-overview.md)
 - [Szabadság- és távolléti terv létrehozása](hr-leave-and-absence-plans.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -92,3 +92,6 @@ Példa:
 - A **Dolgozó felvétele** művelet fejlécének érvénybe lépési dátuma az a dátum lesz, amelyet a **Foglalkoztatás kezdő dátuma** mezőben adott meg.
 - A **Dolgozó áthelyezése** művelet fejlécének érvénybe lépési dátuma az a dátum lesz, amelyet a **Megbízás kezdési dátuma** mezőben adott meg a dolgozó vonatkozásában.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

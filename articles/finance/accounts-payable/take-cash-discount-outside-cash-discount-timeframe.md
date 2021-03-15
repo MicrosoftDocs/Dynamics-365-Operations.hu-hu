@@ -90,3 +90,6 @@ Az engedményadatok a **Nyitott tranzakciók kiegyenlítése** lap alján jelenn
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

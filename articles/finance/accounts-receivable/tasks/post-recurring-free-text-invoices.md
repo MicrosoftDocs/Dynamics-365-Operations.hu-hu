@@ -45,3 +45,6 @@ Az ismétlődő számlákkal rendszeresen számlákat állíthat ki a vevőknek 
 6. Kattintson a Feladás lehetőségre.
     * Adja fel a kiválasztott számlákat.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

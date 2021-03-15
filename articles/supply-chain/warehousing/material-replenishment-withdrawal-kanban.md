@@ -86,3 +86,6 @@ A következő forgatókönyv esetében a visszavonási kanban átviteli tevéken
 
 Miután a termelés bemeneti helyén megtörtént a kanban felhasználása, a rendszer üresként jelenti a kanbant, és a rendszer új kanbant ad hozzá a folyamathoz. A kanban létrehozásakor a rendszer hullámsort ad a kanban hullámához. A kanbanhullám feldolgozása után létrejön a kanbankitárolási raktár munka. A raktári dolgozó feldolgozza a kanbankitárolási munkát, és a munka vezérli ahhoz, hogy kitárolja a kanbant a raktári helyen. Amikor az érintett raktári dolgozó megerősíti a kitárolást, a kanban automatikusan befejezett állapotra áll, és a raktári dolgozó utasítást kap az anyag elhelyezésére a termelés bemeneti helyén.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

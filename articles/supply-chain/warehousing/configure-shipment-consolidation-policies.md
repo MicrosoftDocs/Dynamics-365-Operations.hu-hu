@@ -353,3 +353,6 @@ A következő forgatókönyvek azt mutatják be, hogyan lehet használni a téma
 ## <a name="additional-resources"></a>További erőforrások
 
 - [Szállítmánykonszolidációs irányelvek](about-shipment-consolidation-policies.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -53,3 +53,6 @@ A sikermutatók beállításához kövesse az alábbi lépéseket.
 
 ## <a name="next-step"></a>Következő lépés
 [Kísérlet csatlakoztatása és szerkesztése](experimentation-connect-edit.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -101,3 +101,6 @@ A **Felosztási kulcsok** lapon beállíthatja az **Előrejelzési algoritmus pa
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

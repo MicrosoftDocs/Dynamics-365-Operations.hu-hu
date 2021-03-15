@@ -69,3 +69,6 @@ Amikor az Értékesítés oszlopai ki vannak töltve, a következő korlátozás
 + A Supply Chain Management alkalmazásben végzett költség-és költség-felosztási beállítások nem lesznek másolva a Sales alkalmazásba.
 + Az árképzés nem veszi figyelembe a különleges kiskereskedelmi árazást, ami a Supply Chain Management értékesítési rendelés sora oldalán van meghatározva a **Kiskereskedelmi csatorna** oszlopban.
 + A rendszer nem veszi figyelembe a Supply Chain Management **Promóciós engedmény kezelése** részében meghatározott engedményeket.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

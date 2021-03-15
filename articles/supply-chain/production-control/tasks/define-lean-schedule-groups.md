@@ -55,3 +55,6 @@ A lean ütemezési csoportok definiálásával csoportosíthatók és különbö
 3. A Cikkfoglalási kulcs mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
 4. A listában kattintson a kijelölt sorban lévő hivatkozásra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

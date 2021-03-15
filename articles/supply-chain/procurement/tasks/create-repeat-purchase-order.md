@@ -69,3 +69,6 @@ A teljes rendelés másolása helyett inkább azt ajánljuk, hogy hozzon létre 
 4. Válassza ki a sort a kívánt beszerzési rendeléshez. Jegyezze meg, hogy a beszerzési rendelésen egy rendelési sor van kiválasztva.  
 5. Válassza ki az **OK** lehetőséget. A további rendelési sor már hozzá lett adva a beszerzési rendeléshez.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

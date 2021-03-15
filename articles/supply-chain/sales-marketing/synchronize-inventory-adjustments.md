@@ -80,3 +80,6 @@ Az alábbi ábrákon látható a sablonleképezés az Adatintegrálásban.
 ### <a name="inventory-transfer-field-service-to-supply-chain-management-inventory-transfer"></a>Készletűtvitel (Field Service alkalmazásból a Supply Chain Management alkalmazásba): Készletátvitel
 
 [![Sablonleképezés az adatintegrátorban](./media/FSTrans1.png)](./media/FSTrans1.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

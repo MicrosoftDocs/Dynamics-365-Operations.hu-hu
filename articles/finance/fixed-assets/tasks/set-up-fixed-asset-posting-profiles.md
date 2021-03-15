@@ -122,3 +122,6 @@ Ez a feladat-útmutató beállítja a Tárgyieszköz-feladási profilokat.  Ez a
 88. A **Fő számla** mezőben adja meg a kívánt értékeket.
 89. Az **Ellenszámla** mezőben adja meg a kívánt értékeket.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

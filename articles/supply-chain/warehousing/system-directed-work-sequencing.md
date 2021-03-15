@@ -304,3 +304,6 @@ A rendszer által irányított munka sorrendbe állítás lekérdezések *inkluz
 Emiatt a forgatókönyv példájában a lekérdezés a *4.* munkaazonosítót is rögzítette. A létrehozásakor két sor lett hozzáadva: egy 25 ea-val, egy másik pedig 10 ea-val. A munka továbbra is megjelenik a felhasználó számára, mert legalább egy munkasornak 20 ea-nál kisebb a mennyisége.
 
 A forgatókönyvtől függően megakadályozhatja ezt a viselkedést munkaszünetek segítségével.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

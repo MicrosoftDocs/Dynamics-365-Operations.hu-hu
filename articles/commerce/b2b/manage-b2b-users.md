@@ -139,3 +139,6 @@ Az üzleti partnereknak és felhasználóknak a Commerce központi felületén t
 [Termékmennyiség-korlátok beállítása B2B e-kereskedelmi webhelyekhez](quantity-limits.md)
 
 [Számsorozatok áttekintése](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

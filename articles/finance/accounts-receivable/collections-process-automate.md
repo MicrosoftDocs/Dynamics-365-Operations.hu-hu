@@ -117,3 +117,6 @@ A következő táblázatokban azoknak a lapoknak és mezőknek a listája látha
 |     Kinnlevőségek paraméterei > Beszedési folyamatok automatizálása     |     Fizetési felszólítások automatikus közzététele           |     A fizetési felszólítás műveletitípusai feladják a levelet az automatizálás során.                                      |
 |     Kinnlevőségek paraméterei > Beszedési folyamatok automatizálása     |     Tevékenységek létrehozása automatizáláshoz                |     Tevékenységek létrehozása és bezárása a nem tevékenység típusú művelettípusokhoz a számlán végrehajtott összes automatizált lépés megtekintéséhez.        |
 |     Kinnlevőségek paraméterei > Beszedési folyamatok automatizálása     |     A beszedési folyamatok automatizálása megtartása ennyi napig     |     Azt határozza meg, hogy hány napig tárolják a beszedések előzményeit.                                                       |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

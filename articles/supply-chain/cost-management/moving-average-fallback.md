@@ -45,3 +45,6 @@ Az mozgóátlag-számítások költségsorozatának kiválasztásához hajtsa v�
     - **Aktív költség – Cikkár** – A vállalatok teljesítménnyel kapcsolatos problémákat tapasztalhatnak, ha olyan üzleti folyamatokat alkalmaznak, amelyeknél a készlet rendszeres időközönként negatívba megy át, és ezzel egyidejűleg a tranzakciók mennyisége is magas. Ez a beállítás segít enyhíteni a teljesítménnyel kapcsolatos problémákat.
 
 ![Készletkönyvelési paraméterek](media/inventory-accounting-parameters.png "Készletkönyvelési paraméterek")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

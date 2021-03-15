@@ -84,3 +84,6 @@ Ahhoz, hogy elérhetővé tegye az eszközkezelési funkciókat a Finance and Op
 Az **Eszközkezelés** mobil munkaterület használatával kapcsolatos további tudnivalókat lásd az [Eszközkezelés mobil munkaterület használata](asset-management-mobile-workspace.md) oldalt.
 
 A Finance and Operations (Dynamics 365) mobilalkalmazással kapcsolatos további tudnivalókat lásd: [Mobilalkalmazás kezdőlapja](../../fin-ops-core/dev-itpro/mobile-apps/Mobile-app-home-page.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

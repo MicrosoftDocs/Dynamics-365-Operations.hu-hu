@@ -97,3 +97,6 @@ Az alábbi táblázat segítségével eldöntheti, hogy hová rendelje hozzá az
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -205,3 +205,6 @@ A következő ábra bemutatja, hogy néz ki a Logic Apps Designer, amikor a logi
 Ebben az oktatóanyagban megtanulta, hogyan kell használni a logikai alkalmazást a Human Resources adatainak exportálására, és hogyan kell menteni az exportált adatokat a OneDrive for Business mappába. Az oktatóanyag lépései az üzleti igényeknek megfelelően módosíthatók.
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -36,3 +36,6 @@ A Dynamics 365 Human Resources rendszerben megfelelő foglalkoztatási kategóri
 3. Adja meg a megfelelő értéket a **Dolgozó típusa**, a **Foglalkoztatási kategória** és a **Leírás** mezőben.
 
 4. Válassza a **Mentés** lehetőséget. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

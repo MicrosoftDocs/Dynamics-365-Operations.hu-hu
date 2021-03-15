@@ -84,3 +84,6 @@ A tervezett szolgáltatások és az ütemezett kiadások teljes listája az alá
 [A Dynamics 365 Human Resources 2020 második kiadási hullámának terveti](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/)
 [Frissítési folyamat](hr-admin-setup-update-process.md)
 [Funkciók kezelése](hr-admin-manage-features.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

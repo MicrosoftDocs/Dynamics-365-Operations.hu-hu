@@ -187,3 +187,6 @@ Hogy megkönnyítse azon oszlopok áttekintését, amelyeken a sordefinícióban
 ## <a name="additional-resources"></a>További erőforrások
 
 [Pénzügyi jelentéskészítés](financial-reporting-intro.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

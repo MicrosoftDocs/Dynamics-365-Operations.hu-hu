@@ -49,3 +49,6 @@ Azokban az esetekben, amikor ugyanannak a fájlnak egy új verzióját, vagy egy
 ## <a name="upload-a-file-using-run-project"></a>Fájl feltöltése a Projekt futtatása lehetőséggel
 
 Egy importálási projekt végrehajtásához feltölthet egy Excel-fájlt a **Projekt futtatása** funkció használatával. Ügyelnie kell arra, hogy csak olyan fájlokat töltsön fel, amelyek ugyanazokat a munkalapokat tartalmazzák, mint a meglévő leképezések az adatentitásokhoz az adatprojektben. Ha egy munkalap nem található az újonnan feltöltött fájlban, a rendszer hibaüzenetet jelenít meg, és az importálás leáll. Ha egy entitás esetében módosítani kell a hozzárendelést a munkalaphoz, akkor az adatprojektben a hozzárendeléseket először frissíteni kell az adatprojektből, mielőtt a fájlt használná **Projekt futtatása** funkcióban.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

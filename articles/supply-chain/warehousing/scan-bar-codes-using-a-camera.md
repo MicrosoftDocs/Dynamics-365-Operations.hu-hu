@@ -54,3 +54,6 @@ Ha a kamera lapján a Kamera gombra kattint, akkor az kiszürkítve jelenik meg,
 
 Amikor a kamerával egy vonalkódra céloz, tartsa a vonalkódot egy vonalban a keretekkel a legjobb eredmény elérése érdekében. Amikor megtörténik egy vonalkód sikeres beolvasása, megtörténik a folyamat feldolgozása, és Ön a következő lépéshez jut. Ha a következő lépés egy másik beviteli mezőt tartalmaz, és a preferált beviteli mód a Beolvasás, akkor újraindul a kamera lapja. Ha a következő lépésként nem egy beolvasási mező jelenik meg, akkor nem indul el a kamera lap.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

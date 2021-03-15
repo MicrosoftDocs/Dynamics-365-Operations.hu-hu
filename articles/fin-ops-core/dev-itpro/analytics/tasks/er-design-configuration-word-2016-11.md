@@ -164,3 +164,6 @@ Ahhoz, hogy a szerkeszthető formátum vázlatverzióját futtatni tudja, [futta
 
 - [Új ER-konfiguráció tervezése Word-formátumú jelentések generálásához](../er-design-configuration-word.md)
 - [Beágyazott képek és alakzatok az ER-rel generált dokumentumokban](../electronic-reporting-embed-images-shapes.md#embed-an-image-in-a-word-document)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

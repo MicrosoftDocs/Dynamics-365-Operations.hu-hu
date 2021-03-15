@@ -118,3 +118,6 @@ Az olyan munkaköri feladatot, például valamilyen termelési feladatot végző
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

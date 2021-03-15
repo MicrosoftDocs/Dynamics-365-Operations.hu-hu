@@ -76,3 +76,6 @@ Az alábbi ábrákon látható a sablonleképezés az Adatintegrálásban.
 ### <a name="work-orders-with-project-field-service-to-supply-chain-management-workorderservice"></a>Munkarendelések projekttel (a Field Service alkalmazásból a Supply Chain Management alkalmazásba): WorkOrderService
 
 [![Sablonleképezés az adatintegrátorban](./media/FSWOP4.png)](./media/FSWOP4.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

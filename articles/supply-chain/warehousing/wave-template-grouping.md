@@ -200,3 +200,6 @@ A kezdés előtt készítse elő a hullámsablont a témakör korábbi [Hulláms
 1. Válassza ki a harmadik értékesítési rendelésből létrehozott hullám azonosítóját.
 1. A hullám részletei lap megnyitásához válassza a hullámazonosító hivatkozást.
 1. Figyelje meg, hogy a szállítmány hozzá van-e rendelve a **Hullámsorok** gyorslaphoz az első értékesítési rendeléshez tartozó szállítmánnyal együtt.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

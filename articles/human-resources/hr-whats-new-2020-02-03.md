@@ -65,3 +65,6 @@ Az új Dataverse megoldás hamarosan a következő változtatásokkal érhető e
 [Rendelés frissítése](hr-admin-setup-update-process.md)</br>
 [Szolgáltatások kezelése](hr-admin-manage-features.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

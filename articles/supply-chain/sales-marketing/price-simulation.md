@@ -144,3 +144,6 @@ Az árszimuláció csak azt a sort érinti, amelyre alkalmazták, csökkentve a 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

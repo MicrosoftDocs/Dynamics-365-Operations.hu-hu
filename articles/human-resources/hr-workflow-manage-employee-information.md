@@ -73,3 +73,6 @@ Ha konfigurálni szeretne egy alapvető munkafolyamatot, amelyik akkor indul el,
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

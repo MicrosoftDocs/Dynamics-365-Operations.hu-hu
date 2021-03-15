@@ -144,3 +144,6 @@ A harmadik sorhoz tartozó **92,0000** érték számítása (100 * 0,91 + 200 * 
 Az átlagos árfolyam-számítási mód elérhető a kimenő banki tranzakcióhoz. Figyelembe veszi a feladott banki tranzakciókat (az aktuális főkönyvi naplóban feladott és fel nem adott banki tranzakciókat is, amelyek a figyelembe vett banki tranzakció előtt jöttek létre) azon időszakra vonatkozóan, amely a párbeszédpanelen megadott „kezdő dátum” beállításnál kezdődik, és a kimenő banki tranzakció dátumára végződik. Ez a módszer ezeknek a tranzakcióknak az átlagos átváltási árfolyamát úgy számítja ki, hogy az összes korábbi tranzakció teljes összegét a könyvelési pénznemben minden korábbi tranzakció teljes összegével elosztja. A program ezután a létrejövő árfolyamot hozzárendeli a kimenő tranzakcióhoz. Az átlagos átváltási árfolyam kiszámítása olyan dimenzióértékek alapján történik, amelyek aktívak abban a számlastruktúrában, amelyhez a készpénzes vagy banki főkönyvi számla tartozik.
 
 A Napi árfolyamok és az Átlagos árfolyam-módszerek a bizonylatnaplóban (**Készpénz-és banki kezelés** \> **Készpénz-tranzakciók** \> **Bizonylatnaplók**) megadott pénztári tranzakciókra is használhatók. A banki tranzakcióknál használt algoritmus az átlagos arány kiszámítására is szolgál.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

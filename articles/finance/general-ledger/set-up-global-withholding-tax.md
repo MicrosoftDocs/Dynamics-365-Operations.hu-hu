@@ -47,3 +47,6 @@ Ez a témakör az értékesítések és beszerzések globális adóelőleg-beál
 7. Állítsa be az adóelőlegekkel kapcsolatos csoportokat a **Cikk-adóelőlegek csoportjai** oldalon egy cikk vagy szolgáltatás esetében.
 
 8. Állítsa be a **Minimális számlaösszeg** értékét a **Főkönyvi paraméterek > Adóelőleg** oldalon.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

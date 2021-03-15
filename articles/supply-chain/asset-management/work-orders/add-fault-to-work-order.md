@@ -79,3 +79,6 @@ Az **Összes eszköz** listája lapon kinyomtathat egy eszközhiba-jelentést, a
 >[!NOTE]
 >Számos eszközre vagy eszköztípusra vonatkozó hibajelentést is kinyomtathat úgy, hogy ezt választja: **Eszközkezelés** > **Jelentések** > **Eszközök** > **Eszközhiba**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

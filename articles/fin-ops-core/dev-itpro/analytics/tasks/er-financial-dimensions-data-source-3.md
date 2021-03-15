@@ -145,3 +145,6 @@ A lépések végrehajtásához először hajtsa végre az „ER Pénzügyi dimen
 46. Zárja be a lapot.
 ![ER-művelettervező oldal](../media/er-financial-dimensions-guides-format2.png)
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

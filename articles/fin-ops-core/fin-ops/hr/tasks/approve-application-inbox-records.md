@@ -48,3 +48,6 @@ Ez az eljárás bemutatja, hogyan kell ellenőrizni az Alkalmazotti önkiszolgá
 2. A listában kattintson a kijelölt sorban lévő hivatkozásra.
 3. Bontsa ki a Csatolmányok szakaszt.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

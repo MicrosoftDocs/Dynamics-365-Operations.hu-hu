@@ -82,3 +82,6 @@ Továbbá a Lean manufacturing támogatja a beszerzési és számlázási folyam
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

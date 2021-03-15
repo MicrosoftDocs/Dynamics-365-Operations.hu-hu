@@ -39,3 +39,6 @@ Mielőtt kiskereskedelmi értékesítésre kínálna termékeket kereskedelmi cs
 4. **Termékek hozzáadása szortimentekhez.** Egy szortiment felel egy csatornákban kínált termékkollekciónak. Megadhat egy vagy több szortimentet, és minden termék egy vagy több szortimenthez rendelhető hozzá. Termékek csatornákhoz való hozzárendeléséhez a szortimenteket hozzá kell rendelni a csatornákhoz. Ha létrehoz egy szortimentet, hozzáadhat termékeket, ha azokat még nem adták ki jogi személynek. Mielőtt azonban a termékeket a csatornák számára elérhetővé teheti, ki kell adnia őket egy jogi személy számára.
 5. **Termékek hozzáadása a navigációs hierarchiákhoz.** Termékeket a Commerce navigációs hierarchiájában kategorizálni kell, hogy azok tallózhatók legyenek online vagy egy pénztárnál (POS).
 6. **Termékek hozzáadása a katalógusokhoz.** Annak ellenére, hogy ez a lépés nem kötelező a POS-hez, az online áruház esetében szükséges, hogy a termékek szerepeljenek legalább egy katalógusban.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

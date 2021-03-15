@@ -53,3 +53,6 @@ A szerviz intervalluma azt a gyakoriságot jelzi, amellyel a szervizrendeléssor
 ## <a name="related-topics"></a>Kapcsolódó témakörök
 
 [Szolgáltatás intervallumai](service-intervals.md)  
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

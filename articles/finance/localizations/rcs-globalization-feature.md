@@ -251,3 +251,6 @@ A globalizációs szolgáltatásokat használó felhasználók kezelhetik a kör
 10. A környezet közzétételéhez válassza a **Közzététel** lehetőséget.
 
     ![Közzétett környezet](./media/RCS_GlobalF_19%20Feature%20envn%20publishing.JPG)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -61,3 +61,6 @@ További tájékoztatás a fejléc-töredékekről és modulokról: [Fejléc mod
 [Fejlécmodul](author-header-module.md) 
 
 [Cookie-k megfelelősége](cookie-compliance.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

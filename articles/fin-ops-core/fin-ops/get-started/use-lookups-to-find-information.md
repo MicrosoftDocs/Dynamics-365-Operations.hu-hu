@@ -83,3 +83,6 @@ Ehelyett a felhasználónak törölnie kell a keresési vezérlő értékét, ny
 A szűrő alkalmazása után (lásd az alábbi képet) a felhasználó a szokásos módon találhatja meg és választhatja ki a sort.
 
 ![filtereditemlookup](./media/filtereditemlookup.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -95,3 +95,6 @@ A ciklikus leltározás egy olyan raktározási folyamat, amelyet az aktuális k
 21. Kattintson az **OK** gombra.
 22. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -86,3 +86,6 @@ A Finance and Operations mobilalkalmazás letöltése és telepítése:
 7.  Válassza ki a **Mellékletek** lehetőséget a számlához csatolt bármely megjegyzés vagy fájl megtekintéséhez.
 8.  A **Számla részletei** lapon válassza ki a megfelelő munkafolyamat-műveletet az ellenőrzési folyamat befejezéséhez.
 9.  Válassza a **Kész** lehetőséget.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

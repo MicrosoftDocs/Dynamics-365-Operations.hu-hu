@@ -93,3 +93,6 @@ Ez a feladatrögzítés tartalmazza a sérülésre vagy betegségre vonatkozó a
 36. Kattintson a Mentés gombra.
     * Az eset állapotát bármikor frissítheti.  Állítsa az eset állapotát a Folyamatban lévő értékre, ha a sérülés vagy a betegség feldolgozása folyamatban van.  Miután lezárta az eseményt, csak a költségek, a kezelés és a balesettel kapcsolatos adatok hozzáadására vagy eltávolítására van lehetősége.  Az egyéb adatok módosításához nyissa meg újra az esethez.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

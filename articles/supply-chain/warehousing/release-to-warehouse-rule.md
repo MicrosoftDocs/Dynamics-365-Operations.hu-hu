@@ -130,3 +130,6 @@ Ez a példa azt mutatja be, hogyan működik a funkció olyan raktárak esetébe
 
 > [!NOTE]
 > Ugyanez az eredmény várható, ha a második sor részben le van foglalva. Ebben az esetben a rendszer létrehozza a munkát a lefoglalt sormennyiséghez, de a nem lefoglalt mennyiséghez nem.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

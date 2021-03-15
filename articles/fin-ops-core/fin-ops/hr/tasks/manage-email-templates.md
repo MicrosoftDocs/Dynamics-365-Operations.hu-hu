@@ -47,3 +47,6 @@ ms.locfileid: "4797463"
 8. Folytassa az e-mail üzenet gépelését, és ahol szükséges, szúrja be a könyvjelző mezőket.
 9. Válassza a **Mentés** lehetőséget.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

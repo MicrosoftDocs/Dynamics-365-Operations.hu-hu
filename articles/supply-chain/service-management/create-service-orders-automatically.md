@@ -70,3 +70,6 @@ Ha manuálisan vagy automatikusan szervizrendeléseket hoz létre a szolgáltat�
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

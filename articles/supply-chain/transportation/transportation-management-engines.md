@@ -98,3 +98,6 @@ A szállításkezelő kalkulátorok metaadatai a különböző kalkulátortípus
 | 3        | Kezdőállomás irányítószáma | Hozzárendelés | Karakterlánc    | Irányítószám    | Kijelölve  |
 | 4        | Célállomás irányítószáma   | Hozzárendelés | Karakterlánc    | Irányítószám    | Kijelölve  |
 | 5        | Célország           | Hozzárendelés | Karakterlánc    | Ország/régió |           |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

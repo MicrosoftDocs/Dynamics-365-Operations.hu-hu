@@ -175,3 +175,6 @@ A hozzáadott nyelv elérhetővé válik, így a webhely beállítható úgy, ho
 [Szerzői jogi értesítés hozzáadása](add-copyright-notice.md)
 
 [Parancsfájl hozzáadása a webhely oldalaihoz a telemetria támogatásához](add-telemetry.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

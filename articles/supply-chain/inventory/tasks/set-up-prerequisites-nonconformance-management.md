@@ -79,3 +79,6 @@ Ebben a témakörben megtudhatja, hogyan engedélyezheti a szabálytalanságkeze
 4. Írjon egy értéket a **Leírás** mezőbe.
 5. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

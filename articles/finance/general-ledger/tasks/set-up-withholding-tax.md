@@ -48,3 +48,6 @@ Ez a témakör bemutatja, hogyan állíthatja be az adóelőlegeket. Az *Adóel�
 18. Válassza a **Mentés** lehetőséget.
 19. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

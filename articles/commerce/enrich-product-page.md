@@ -74,3 +74,6 @@ A termék oldalának bővítéséhez kövesse az alábbi lépéseket.
 [Oldaltartalom hozzáférhetőségének ellenőrzése](verify-accessibility.md)
 
 [Dinamikus e-kereskedelmi oldalak létrehozása URL-paraméterek alapján](create-dynamic-pages.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

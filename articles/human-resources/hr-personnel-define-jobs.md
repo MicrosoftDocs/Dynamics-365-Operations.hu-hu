@@ -71,3 +71,6 @@ Ez a feladat új feladat létrehozását célozza. Manuális bevitellel és sabl
 33. Váltsa át a Végzettségek szakasz kibontását
 34. Kattintson a Mentés gombra.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

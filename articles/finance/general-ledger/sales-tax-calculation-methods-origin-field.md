@@ -130,3 +130,6 @@ Amennyiben a dokumentum / napló beállítása: Az összegek tartalmazzák az á
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

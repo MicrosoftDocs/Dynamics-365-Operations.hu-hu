@@ -220,3 +220,6 @@ A kompatibilitási ellenőrzés futtatásához kövesse az alábbi lépéseket.
 1. A műveleti ablakban a **Rakományok** lapon a **Műveletek** csoportban válassza a **Kompatibilitás ellenőrzése** lehetőséget.
 
 Egy üzenet jelenik meg, amely tájékoztat az ellenőrzés eredményeiről.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

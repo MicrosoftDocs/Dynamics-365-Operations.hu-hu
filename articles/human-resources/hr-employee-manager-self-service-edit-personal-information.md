@@ -72,3 +72,6 @@ A globális címjegyzékben megadott paraméterek határozzák meg, hogy milyen 
     - Kép feltöltéséhez válassza az **Új kép feltöltése** lehetőséget.
     - Kép eltávolításához jelölje ki a képet, majd válassza az **Eltávolítás** elemet.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

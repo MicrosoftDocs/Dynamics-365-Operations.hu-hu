@@ -174,3 +174,6 @@ A **Törlés** művelet használatával a potenciális szállító regisztrálá
 |         Engedélyezve         |                                                                               A szállítókérés jóváhagyásra kerül.                                                                               |                                                                                                   A potenciális szállító regisztrálási kérelme, a szállítói regisztrációs varázslóban megadott adatok, valamint a szállítókérés törlésre kerülnek.                                                                                                    |
 |         Elutasítva         |                                                                               A szállítókérést elutasították.                                                                               |                                                                                                   A potenciális szállító regisztrálási kérelme, a szállítói regisztrációs varázslóban megadott adatok, valamint a szállítókérés törlésre kerülnek.                                                                                                    |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -73,3 +73,6 @@ A részleteket nézetben különböző információkat lehet frissíteni. Íme n
 
 > [!NOTE]
 > Ha a karbantartási kérés létrehozásakor kiválaszt egy eszközt, akkor egy hiba adható hozzá a tárgyi eszközhöz. A karbantartási kérés létrehozása után, igény esetén több hibát is megadhat. Hibák hozzáadásához válassza ki az **Eszköz hibája** lehetőséget az **Összes karbantartási kérés** oldalon.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

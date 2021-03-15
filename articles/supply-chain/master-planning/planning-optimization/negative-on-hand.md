@@ -86,3 +86,6 @@ Az eredmény 25 darabból álló tervezett rendelés. (= 25 db. &minus; 0 db.) a
 [Tervelőzmények és tervezési naplók megtekintése](plan-history-logs.md)
 
 [Tervezési feladat érvénytelenítése](cancel-planning-job.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

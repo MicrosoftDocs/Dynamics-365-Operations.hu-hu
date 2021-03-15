@@ -120,3 +120,6 @@ A 2011. márciusi tranzakciók számlázása esetén a 200 eurós eladási ár 1
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

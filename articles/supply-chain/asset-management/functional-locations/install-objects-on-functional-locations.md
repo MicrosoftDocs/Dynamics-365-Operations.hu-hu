@@ -82,3 +82,6 @@ Ha a beállítási adatok elérhetők, létrehozhatja az eszközöket.
 1. Az **Összes munkavégzési helyszín** oldalon ellenőrizze, hogy az a munkavégzési helyszín, amelyen automatikusan létre szeretné hozni az eszközt, az erre a célra létrehozott típusba tartozik-e.
 2. Válassza ki a munkavégzési helyszínt a listában.
 3. Válassza ki a **Munkavégzési helyszín állapotának frissítése** lehetőséget, majd az erre a célra létrehozott életciklus-állapotot. Egy eszköz automatikusan települ a munkavégzési helyszínen. Az eszköz neve megegyezik majd a munkavégzési helyszínével.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

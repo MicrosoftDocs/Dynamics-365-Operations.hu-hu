@@ -67,3 +67,6 @@ A jövőbeli visszaállítási dátumok törléséhez használja a **Visszaáll�
 
 > [!NOTE]
 > A kiválasztott Alapbeállítási dátumtól és a nyugta formátumtól függően lehet, hogy ismétlődő nyugta-szám van. Annak ellenére, hogy a pénztárrendszer képes kezelni ezeket a helyzeteket, növeli a visszáru feldolgozásához szükséges időt, mivel az értékesítési munkatársaknak választaniuk kell a duplikált nyugták között. Az adattisztítással kapcsolatos egyéb komplikációk akkor is előfordulhatnak, ha az ismétlődő nyugták nem tervezett következmények voltak. Ezért azt ajánljuk, hogy dinamikus dátumú karaktereket (például **ddd**, **MM**, **DD** és **YY**) használjon, hogy megakadályozza az ismétlődő nyugtaszámok visszaállítását.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

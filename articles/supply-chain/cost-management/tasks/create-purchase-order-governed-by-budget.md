@@ -61,3 +61,6 @@ Ezzel az eljárással beszerzési rendelést lehet létrehozni, amelyet a rendsz
 4. Kattintson a Költségvetés ellenőrzésekor fellépő hibák vagy figyelmeztetések lehetőségre.
 5. Kattintson a Bezárás gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

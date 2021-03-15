@@ -226,3 +226,6 @@ A dinamikus negatív napok figyelembe veszik a cikk átfutási idejét és az Ö
 A rendszer csak az ezen időkorláton belül tervezett beszerzési rendeléseket használja, és az időkorláton kívül hoz létre új tervezett rendelést. A dinamikus negatív napok előnye, hogy magában foglalja az adott termék átfutási idejét, lehetővé teszi a meglévő rendelések újrafelhasználását, és kiküszöböli az átfutási idő okozta késések miatt új tervezett rendelések létrehozását. 
 
 További tájékoztatásért lásd: [Negatív napok és dinamikus negatív napok](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/master-planning/more-about-dynamic-negative-days).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

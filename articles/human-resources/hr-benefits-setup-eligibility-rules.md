@@ -176,3 +176,6 @@ A programok olyan juttatási konstrukciók csoportjai, amelyek közös jogosults
    | **Jogosultsági szabályok** | Válassza ki a juttatási programra alkalmazandó jogosultsági szabályokat. A jogosultsági szabályokat a **Jogosultsági szabályok** lapon határozhatja meg. |
    
 4. Válassza a **Mentés** lehetőséget.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

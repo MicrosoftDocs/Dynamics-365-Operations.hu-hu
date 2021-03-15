@@ -85,3 +85,6 @@ Ha egy csatornához több felvételi kézbesítési mód is rendelkezésre áll,
 ## <a name="considerations-for-distributed-order-management"></a>A felosztott rendeléskezelés szempontjai
 
 A Commerce [felosztott rendeléskezelési (DOM)](https://docs.microsoft.com/dynamics365/commerce/dom) funkciói figyelmen kívül hagyják az üzleti felvételre megjelölt értékesítési sorokat. Ezek a funkciók frissültek annak érdekében, hogy a konfigurált átvételi szállítási módokhoz kapcsolódó értékesítési sorok megkerüljék a DOM logikát, és ne kerüljenek át egy új teljesítési raktárba.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -35,3 +35,6 @@ A Termelési visszajelzés a termelési feladatokkal kapcsolatos visszajelzést 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

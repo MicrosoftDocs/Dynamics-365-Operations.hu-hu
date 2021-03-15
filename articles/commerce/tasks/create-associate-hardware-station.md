@@ -57,3 +57,6 @@ Ez az eljárás végigveszi, hogyan hozhat létre egy új hardverállomást. Egy
 23. Írjon be egy értéket az Elektronikus átutalási terminál azonosítója mezőbe.
 24. Kattintson a Mentés gombra.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

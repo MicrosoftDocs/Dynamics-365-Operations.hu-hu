@@ -68,3 +68,6 @@ A cikk bemutatja, hogyan hozhat létre juttatási elemeket, amelyeket az új jut
 16. Egy lehetőség kiválasztása az Alap mezőben.
 17. Az Összeg vagy arány mezőben adjon meg egy számot.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

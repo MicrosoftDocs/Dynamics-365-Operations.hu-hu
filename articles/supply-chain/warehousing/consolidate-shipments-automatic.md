@@ -317,3 +317,6 @@ Ha befejezte a munkát, akkor azt kell látnia, hogy négy szállítmány jött 
 
 - [Szállítmánykonszolidációs irányelvek](about-shipment-consolidation-policies.md)
 - [Szállítmánykonszolidációs irányelvek konfigurálása](configure-shipment-consolidation-policies.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

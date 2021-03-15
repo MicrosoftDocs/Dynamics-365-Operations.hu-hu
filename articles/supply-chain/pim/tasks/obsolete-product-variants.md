@@ -72,3 +72,6 @@ Ez az eljárás bemutatja, hogyan lehet megkeresni az elavult kiadott termékeke
 
 8. Keresse meg és jelölje ki a kívánt rekordot a listán.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

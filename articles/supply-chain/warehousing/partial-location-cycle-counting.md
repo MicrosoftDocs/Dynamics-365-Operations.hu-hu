@@ -61,3 +61,6 @@ Ebben a példában csak az A0001 cikkszámot kell leltározni a 61-es raktárban
 ## <a name="additional-resources"></a>További erőforrások
 
 [Ciklikus leltározás](cycle-counting.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

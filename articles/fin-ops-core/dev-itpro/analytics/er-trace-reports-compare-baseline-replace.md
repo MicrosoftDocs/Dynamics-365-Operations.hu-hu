@@ -207,3 +207,6 @@ Ha a Microsoft SharePoint Server felületén tárolt XML-fájlból szeretne alap
 
 - [A létrehozott jelentés eredményeinek nyomon követése és összehasonlításuk a kiindulási értékekkel](er-trace-reports-compare-baseline.md)
 - [Feladatrögzítő erőforrásai](../user-interface/task-recorder.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

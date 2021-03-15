@@ -125,3 +125,6 @@ Ha nincs hozzáférése a feladat végrehajtásához használt lapokhoz, akkor f
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

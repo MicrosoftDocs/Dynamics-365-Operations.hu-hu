@@ -86,3 +86,6 @@ Harmonikamodul felvételéhez egy GYIK oldalra és a tulajdonságainak beállít
 [Lapmodul](add-tab.md)
 
 [Szövegterület-modul](add-content-rich-block.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

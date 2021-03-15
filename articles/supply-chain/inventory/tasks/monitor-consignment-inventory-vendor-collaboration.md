@@ -42,3 +42,6 @@ Ez az eljárás bemutatja, hogyan használható a szállítói együttműködés
 1. Ugrás a Szállítói együttműködés > Bizományosi készlet > Aktuális bizományosi készlet elemre.
     * Az aktuális készlet lap a vevő raktárában levő, az ön tulajdonában álló készletet mutatja. További dimenziók, például a hely és a raktár, a Dimenziók megjelenítése fülre kattintva jeleníthetők meg.   
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -63,3 +63,6 @@ Az USMF bemutatócég adatai kerültek felhasználásra a jelen eljárás létre
 6. A listában válasszon ki egy **Felhasználóazonosító** elemet. Például, 24 elem.
 7. Bontsa ki a **Munka** gyorslapot.
 8. Válassza ki az **Igen** lehetőséget a **Cikk újbóli manuális felosztásának engedélyezése** mezőben.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

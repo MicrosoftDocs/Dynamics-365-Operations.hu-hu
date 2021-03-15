@@ -61,3 +61,6 @@ Az EU értékesítési lista létrehozása és küldése
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

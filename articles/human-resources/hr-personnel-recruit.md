@@ -225,3 +225,6 @@ Szükség esetén a felvétel után elbocsáthat egy jelöltet. Előfordulhat p�
 [Dataverse virtuális táblák konfigurálása](hr-admin-integration-common-data-service-virtual-entities.md)<br>
 [Munkaerő-szervezés](hr-personnel-departments-jobs-positions.md)<br>
 [Feladat összetevőinek beállítása](hr-personnel-jobs.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

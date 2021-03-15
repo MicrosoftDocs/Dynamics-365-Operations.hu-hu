@@ -89,3 +89,6 @@ A kettős írási kapcsolat beállításához kövesse az alábbi lépéseket.
 > [!NOTE]
 > A környezetek nem csatolhatók le az LCS használatával. Egy környezet kapcsolatának megszüntetése érdekében nyissa meg az **Adatintegráció** munkaterületet a Finance and Operations környezetben , majd válassza a **Csatolás megszüntetése** parancsot.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

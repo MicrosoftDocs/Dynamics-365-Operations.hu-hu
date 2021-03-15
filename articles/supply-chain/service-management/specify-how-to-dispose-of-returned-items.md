@@ -182,3 +182,6 @@ Minden egyes intézkedési kódhoz választania kell egy intézkedési művelete
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

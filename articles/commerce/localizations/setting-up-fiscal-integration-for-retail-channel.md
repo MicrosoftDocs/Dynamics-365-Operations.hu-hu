@@ -225,3 +225,6 @@ Az halasztott pénzügyi regisztráció kézi végrehajtásának engedélyezés�
     1. A frissítendő elrendezés kiválasztása.
     2. Adja hozzá az új gombot, és és állítsa a **Pénzügyi regisztrációs folyamat befejezése** gombtulajdonságot.
     3. Az **Elosztási ütemezés** lapon, futtassa a **1090** feladatot a módosításai átviteléhez a csatorna-adatbázisba.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -43,3 +43,6 @@ Ehhez az értékeléshez alkalmazhatja a nem beépített **Legjobb termékek** j
 - **Üzletkezelő** munkaterület &gt; **Kiskereskedelem és kereskedelem** &gt; **Csatornák** &gt; **Üzletkezelő** &gt; **Jelentések** &gt; **Legjobb termékek jelentés**
 - **Kategória- és termékkezelés** munkaterület &gt; **Retail és Commerce** &gt; **Csatornák** &gt; **Üzletkezelő** &gt; **Jelentések** &gt; **Vezető termékek jelentései**
 - **Lekérdezések és jelentések** szakasz &gt; **Kiskereskedelem és kereskedelem** &gt; **Lekérdezések és jelentések** &gt; **Értékesítési jelentések** &gt; **Legjobb termékek jelentés**
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

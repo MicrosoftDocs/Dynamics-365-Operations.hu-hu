@@ -97,3 +97,6 @@ A konfigurációverziót törölve lesz, és egy megerősítő üzenet jelenik m
 > [!NOTE]
 > A konfigurációkat csak az azokat létrehozó Konfigurációs szolgáltató tudja törölni. Ha egy másik szervezettel meg lett osztva a konfiguráció, akkor a konfiguráció törlése előtt a megosztást meg kell szüntetni.
  
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

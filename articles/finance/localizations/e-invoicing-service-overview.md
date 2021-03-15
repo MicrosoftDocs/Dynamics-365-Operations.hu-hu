@@ -109,3 +109,6 @@ Az Elektronikus számlázási bővítmény engedélyezése és használata korl�
 - [Szolgáltatásfelügyelet](e-invoicing-service-administration.md)
 - [Elektronikus számlák konfigurálása az RCS szolgáltatásban](e-invoicing-configuration-rcs.md)
 - [Elektronikus számlák kibocstása a Finance és Supply Chain Management szolgáltatásokban](e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

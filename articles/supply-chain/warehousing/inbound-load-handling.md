@@ -477,3 +477,6 @@ Ennél a forgatókönyvél a bevételezési ügyintéző bejövő mennyiséget r
     - **Mennyiség** – Adja meg a _7_ mennyiséget, vagyis azt a fennmaradó mennyiséget, amelyet a szállító jogosult szállítania teljes 12 db-os beszerzési mennyiség részeként (ahol 10 az eredeti rendelési mennyiség és 2 az engedélyezett túlszállítási mennyiség, ami 20%). Ne feledje, hogy 5 db már regisztrálva van az első rakományhoz.
 
 A második rakomány 7 darabbal frisítve lett mennyiséggel frissítette, és a termék bevételezhető-frissíthető ezen mennyiség alapján.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

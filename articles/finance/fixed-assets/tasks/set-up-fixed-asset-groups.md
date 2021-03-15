@@ -38,3 +38,6 @@ Ez a témakör bemutatja, hogyan tud új tárgyieszköz-csoportot létrehozni. E
 8. Válassza ki valamelyik lehetőséget az **Értékcsökkenési szabály** mezőben.
 9. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

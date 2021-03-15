@@ -164,3 +164,6 @@ A súlyozott átlagos kedvezményes árjelentés megfelel az ASC 842-20-50-4 (g)
 |     Pénznem                          |     A használt tranzakciós pénznem rövidítése. Minden jelentés átváltja a tranzakciópénznemet a jelentés pénznemére.  |
 |     Fennmaradó lízingdíjfizetések          |     A kifizetési ütemezésből származó kifizetetlen lízingfizetések teljes összege, amelyek a **Kezdő** dátumtól maradtak.            |
 |     Fennmaradó súlyozott kifizetések       |     A fennmaradó lízingdíjfizetések és a felhasznált kedvezményes ár szorzata.   |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

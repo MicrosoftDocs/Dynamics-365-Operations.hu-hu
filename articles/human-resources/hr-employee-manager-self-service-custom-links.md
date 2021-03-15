@@ -48,3 +48,6 @@ A funkció használatához engedélyeznie kell az **Egyéni hivatkozások a Veze
 ## <a name="see-also"></a>Lásd még
 
 [Alkalmazotti és vezetői önkiszolgálás áttekintése](hr-employee-manager-self-service-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

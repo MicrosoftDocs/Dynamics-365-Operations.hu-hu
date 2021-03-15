@@ -88,3 +88,6 @@ Az év második felében az egyik vevő úgy dönt, hogy a szervizlátogatások 
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

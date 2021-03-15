@@ -121,3 +121,6 @@ Ha a tanúsítvány új verziója kerül bevezetésre, de azt nem lehet minden �
 
 > [!NOTE]
 > A Commerce Runtime-ban először a tanúsítvány új verzióját hívja meg a rendszer. Ha a tanúsítvány még nincs frissítve egy adott üzletben vagy egy konkrét terminálon, akkor a rendszer a korábbi verziót fogja behívni.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

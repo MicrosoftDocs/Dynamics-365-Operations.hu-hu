@@ -84,3 +84,6 @@ A készlet, amely még nem foglalt, fenntartásra kerül a kitárolási lista l�
 Amint a kiadási sorok kitárolása a **Kitárolási lista rögzítése** oldalon megtörtént, a társított szállítmány lezárul. Az értékesítési rendelés szállítóleveleinek folyamata ezután inicializálható a kitárolt készlet alapján.
 
 [![Kimenő szállítmányok frissítése](./media/outbound-shipments.png)](./media/outbound-shipments.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

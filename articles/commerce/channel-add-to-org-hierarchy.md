@@ -81,3 +81,6 @@ A következő kép egy olyan hierarchiát mutat, amelyben különböző csatorn�
 [Kiskereskedelmi csatorna beállítása](channel-setup-retail.md)
     
 [Online csatorna beállítása](channel-setup-online.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

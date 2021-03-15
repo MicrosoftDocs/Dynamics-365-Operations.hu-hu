@@ -186,3 +186,6 @@ Két kivétel van az alól a szabály alól, hogy a tételalapú kiigazítás ak
 1. Ha a receptúra mértékegysége eltér a hatóanyagkészlet mértékegységtől, akkor a kötegrendelés nem alkalmazható kötegelt kiigazításra.
 
 Azok a kötegelt rendelések, amelyek nem alkalmazhatók a tételalapú kiigazításhoz, a kötegrendelések rendes folyamatciklusán mennek keresztül.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

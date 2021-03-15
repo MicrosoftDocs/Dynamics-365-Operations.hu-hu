@@ -540,3 +540,6 @@ Ha a rendezési pozíciókat manuálisan kell lezárni, akkor a **Rendezési poz
 
 > [!IMPORTANT]
 > Miután a mozgatási munka létrejött a rendezési helyről, nem szabad érvényteleníteni a munkát. Ellenkező esetben a pozíciót és a konténereket törli a rendszerből, és nem lesznek elérhetők további feldolgozásra. A készletet is eltávolítja a program.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

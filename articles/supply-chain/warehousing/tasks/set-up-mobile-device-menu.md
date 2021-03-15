@@ -68,3 +68,6 @@ Ez a témakör azt mutatja be, hogyan kerül sor a mobileszköz menüelemeinek b
 5. Kattintson a jobbra mutató nyílra.
 6. Válassza a **Mentés** lehetőséget.
 7. Zárja be a lapot.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

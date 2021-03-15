@@ -49,3 +49,6 @@ Ha egy adott személynek több szállítói fiókkal kell hozzáférnie a száll
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -114,3 +114,6 @@ További információ a következő témakörökben olvasható:
 
  - [A kinnlevőségek kezelésével kapcsolatos adatok felülvizsgálata](tasks/review-collections-information.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

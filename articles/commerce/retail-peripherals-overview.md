@@ -835,3 +835,6 @@ A következő perifériákat megosztott IIS-hardverállomás használatával tes
 [Perifériaszimulátor a Commerce-hez](dev-itpro/retail-peripheral-simulator.md)
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

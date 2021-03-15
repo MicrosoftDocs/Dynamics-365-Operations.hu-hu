@@ -57,3 +57,6 @@ Ha a sablonokat a használatuknak megfelelő név szerinti csoportokba rendezte,
 ## <a name="related-topics"></a>Kapcsolódó témakörök
 
 [Szolgáltatási sablonok sorainak másolása](copy-service-template-lines.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -51,3 +51,6 @@ A következő témakörök bemutatják, hogy hogyan határozza meg a tervezőmot
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

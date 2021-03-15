@@ -186,3 +186,6 @@ Ha korrigálni kell a Kinnlevőségek vagy a Kötelezettségek főkönyvi száml
 ### <a name="the-system-allows-it"></a>„A rendszer lehetővé teszi”
 
 A szervezetek gyakran csak azért használják az Egy bizonylat funkciót,mert a rendszer lehetővé teszi számukra, és nem gondolnak bele a következményekbe.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

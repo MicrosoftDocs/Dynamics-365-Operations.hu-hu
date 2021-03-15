@@ -55,3 +55,6 @@ Munkarendelések létrehozásakor megadhatja, hogy az adott munkarendelés milye
 2. Válassza az **Új** lehetőséget.
 3. Adjon meg egy leírást a **Leírás** mezőben.
 4. Válassza a **Mentés** lehetőséget.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

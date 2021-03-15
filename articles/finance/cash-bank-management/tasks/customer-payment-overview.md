@@ -51,3 +51,6 @@ Ez a feladat-útmutató végigvezeti a vevői kifizetések megadásánál haszn�
 21. A **Fizetési hivatkozás mezőben** adja meg a fizetési hivatkozást. A kifizetési hivatkozás csak akkor szükséges, ha bejelöli azt, hogy a kifizetés egy letéti jegyen is szerepeljen.  
 22. A vállalatközi vevői számlák feladásához a **Művelet panelen** kattintson a **Feladás** gombra. 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

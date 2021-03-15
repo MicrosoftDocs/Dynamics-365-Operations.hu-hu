@@ -48,3 +48,6 @@ Ez az eljárás bemutatja a tranzakciók kiegyenlítését a főkönyvi számlá
 7. Kattintson a Főkönyvi kiegyenlítések lehetőségre.
 8. A listában jelölje meg a kiválasztott sort.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

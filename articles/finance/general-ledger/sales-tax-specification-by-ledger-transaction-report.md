@@ -57,3 +57,6 @@ Ennek a jelentésnek a létrehozásakor a következő alapértelmezett mezők á
 Ha csak a nem adóügyi számlákat szeretné megjeleníteni a jelentésben, állítsa be a szűrési feltételt, például csillag (\*), ahogy az a következő ábrán látható.
 
 ![Nem adóügyi számlákat mutató jelentés](media/taxspecperledgertrans.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

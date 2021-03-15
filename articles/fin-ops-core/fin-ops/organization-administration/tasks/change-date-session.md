@@ -32,3 +32,6 @@ Ez a témakör azt mutatja be, hogyan lehet módosítani a munkamenet dátumát.
 2. Adja meg a dátumot a **Dátum** mezőben.
 3. Válassza ki az **OK** lehetőséget.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -39,3 +39,6 @@ Ez az eljárás az USMF bemutatócéget használja. Ezt az eljárást a költsé
 8. Törölje a jelet a Hely jelölőnégyzetből.
 9. Kattintson az OK gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

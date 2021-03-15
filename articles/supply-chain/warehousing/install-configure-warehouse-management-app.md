@@ -289,3 +289,6 @@ Ha egy eszköz elveszett vagy a biztonsága sérült, el kell távolítania az e
 1. Győződjön meg róla, hogy az alkalmazás ügyfél-azonosítója megegyezik azzal az ügyfél-azonosítóval, amelyet a 2. lépésben feljegyzett.
 1. Válassza az eszköztár **Törlés** elemét.
 1. A megerősítő üzenetben válassza az **Igen** gombot.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

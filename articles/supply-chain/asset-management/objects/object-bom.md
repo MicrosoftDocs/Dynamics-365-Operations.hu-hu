@@ -83,3 +83,6 @@ Az eszközök cikksorait manuálisan is létrehozhatja.
 5. Ha a cikknek van lejárata, a **Lejárat** mezőben adjon meg egy befejezési dátumot.
 6. Válasszon egy cikket a **Cikkszám** mezőben. A nevet a program automatikusan beírja a **Terméknév** mezőbe.
 7. A **Mennyiség** mezőbe írja be a használt mennyiséget. A **Kiszerelés** mező frissítése automatikusan történik.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

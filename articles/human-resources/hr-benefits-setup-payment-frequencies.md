@@ -56,3 +56,6 @@ Az átváltási tényezők mezői határozzák meg a fizetési gyakoriságtól a
    | **Óránkénti átváltási tényező** | A fizetési gyakoriság éves átváltási tényezője. Például a havonkénti fizetési gyakoriság éves átváltási tényezője a következő: </br></br>(12 havonkénti fizetés / 2080 óra) = 0,005769
 
 4. Válassza a **Mentés** lehetőséget. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

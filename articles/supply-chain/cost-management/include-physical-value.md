@@ -59,3 +59,6 @@ Egy értékesítési rendelés feladásakor, a feladott költségösszeg 10,00 U
 
 > [!NOTE]
 > Összehasonlításképpen: Ha bejelöli a **Tényleges értékkel együtt** jelölőnégyzetet egy értékesítési rendelés feladásakor, akkor a feladott költség összege 12,00 USD lesz.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

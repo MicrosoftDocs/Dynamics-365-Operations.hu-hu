@@ -45,3 +45,6 @@ Számos konfigurációs beállítás befolyásolja az Eszközlízing működés�
 
     > [!NOTE]
     > Javasoljuk, hogy tartsa ezt a beállítást **Nem** értéken. Ennek a lehetőségnek a beállítása ellenőrzésként és vezérlésként szolgál, hogy megakadályozza a zárt könyvverzió véletlen értékcsökkenését. Ha a beállításr **Nem** értéken tartja, akkor a nettó könyv szerinti érték és a jövőbeli értékcsökkenési számítások pontosak maradnak.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

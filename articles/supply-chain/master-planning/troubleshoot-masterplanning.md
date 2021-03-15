@@ -88,3 +88,6 @@ A beépített fő tervezőmotorral a teljesítmény javításának egyik módja 
 
 > [!NOTE]
 > Ez egyetlen napra korlátozza az alaptervben végrehajtott alábontások időszakát.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

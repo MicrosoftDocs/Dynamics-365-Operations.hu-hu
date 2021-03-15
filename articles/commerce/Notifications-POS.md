@@ -76,3 +76,6 @@ Ha meg szeretné jeleníteni az értesítések számát egy gombnyomással, gond
 A következő ábra bemutatja a **Jobb felső** és a **Középen** kiválasztásának hatását a **Tartalom igazítása** mezőben, különböző méretű gombok esetében.
 
 ![Élő tartalom a pénztár gombjain](./media/ButtonsWithLiveContent.png "Élő tartalom a pénztár gombjain")
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

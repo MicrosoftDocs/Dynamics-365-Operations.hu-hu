@@ -94,3 +94,6 @@ Egy útkövetési modul a PDP-re való felvételéhez és a kötelező tulajdons
 [Vásárlásmező-modul](add-buy-box.md)
 
 [SDK- és modulkönyvtár-frissítések](e-commerce-extensibility/sdk-updates.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -52,3 +52,6 @@ A témakör bemutatja, hogyan állíthat be egy jóváhagyási munkafolyamatot, 
 14. A **Munkafolyamat létrehozása** oldalon válassza a **Bezárás** lehetőséget.
 14. Jelölje ki az új munkafolyamatot, majd válassza a **Verziók** lehetőséget. Ezután válassza az **Aktívvá tétel** lehetőséget, hogy a munkafolyamat aktív legyen.
 15. Válassza **Bezárás** lehetőséget. Megjelenik az új aktív verzió.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

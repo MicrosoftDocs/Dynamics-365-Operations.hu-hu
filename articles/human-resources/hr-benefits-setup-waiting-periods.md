@@ -45,3 +45,6 @@ A Microsoft Dynamics 365 Human Resources rendszerben a várakozási napokkal hoz
    | **Várakozási nap** | Válassza ki a várakozási dátum kiszámításához használandó várakozási napot. |
 
 4. Válassza a **Mentés** lehetőséget.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

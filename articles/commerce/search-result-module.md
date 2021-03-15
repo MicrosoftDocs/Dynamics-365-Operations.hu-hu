@@ -90,3 +90,6 @@ A következő lépésekkel lehet hozzáadni egy keresési eredmények modult egy
 [Modultár áttekintése](starter-kit-overview.md)
 
 [Gyorsnézeti modul](quick-view-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

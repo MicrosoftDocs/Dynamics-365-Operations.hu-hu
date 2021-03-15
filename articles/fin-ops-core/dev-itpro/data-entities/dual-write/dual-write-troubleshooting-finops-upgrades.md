@@ -91,3 +91,6 @@ Ha a hiba továbbra sincs kijavítva, hajtsa végre az alábbi lépéseket.
 4. Nyissa meg az **Táblaleképezés** oldalt a Finance and Operations alkalmazás **Kettős írás** oldalán.
 5. Ha az attribútum nincs automatikusan kitöltve a leképezésen, vegye fel kézzel az **Attribútum hozzáadása** gombra kattintva, majd kattintson a **Mentés** gombra. 
 6. Válassza ki a leképezést, és kattintson a **Futtatás** lehetőségre.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

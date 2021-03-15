@@ -37,3 +37,6 @@ Ez az eljárás bemutatja, hogyan lehet egy termelési rendelés befejezetlen mu
 6. A Kezdő dátum mezőben állítsa „2012-12-01” értékűre a dátumot.
 7. A Befejező dátum mezőben állítsa „2012-12-31” értékűre a dátumot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

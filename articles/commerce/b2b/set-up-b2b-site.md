@@ -302,3 +302,6 @@ Ha számlarészletező oldalt szeretne létrehozni a webhelykészítőben, hajts
 [Tartalomblokk-modul](../add-hero-module.md)
 
 [Termékgyűjtemény](../product-collection-module-overview.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

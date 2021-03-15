@@ -246,3 +246,6 @@ Az alábbi példában látható a legmagasabb és legalacsonyabb állapot az aj�
 | Az ajánlatok fogadása (vagy legalább egy sor) |                          Fogadott                           |                           Elfogadva                           |                    Fogadott                    |                    Elfogadva                     |                   Fogadott                   |                   Elfogadva                    |
 |           Az összes többi ajánlat elutasítása.           |                          Elutasítva                           |                           Elfogadva                           |                    Elutasítva                    |                    Elfogadva                     |                   Elutasítva                   |                   Elfogadva                    |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

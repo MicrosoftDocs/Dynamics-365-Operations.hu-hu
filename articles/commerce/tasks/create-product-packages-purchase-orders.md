@@ -72,3 +72,6 @@ Ez az eljárás bemutatja, hogy hogyan hozhat létre termékcsomagot, illetve ho
 17. Kattintson a Létrehozás lehetőségre.
 18. Kattintson a Mentés gombra.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

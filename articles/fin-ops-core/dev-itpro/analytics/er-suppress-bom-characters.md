@@ -66,3 +66,6 @@ A funkció futásidőben való áttekintéséhez a megfelelő eljárást kell v�
 ## <a name="see-also"></a>Lásd még
 
 - [Az XML-elemek végrehajtásának elhalasztása az ER-formátumokban](er-defer-xml-element.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

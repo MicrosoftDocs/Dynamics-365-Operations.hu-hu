@@ -55,3 +55,6 @@ A termelési munkák bizonyos típusai vonatkozhatnak a projektek időbecslésé
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

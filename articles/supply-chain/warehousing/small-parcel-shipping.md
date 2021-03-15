@@ -279,3 +279,6 @@ A szállítmány csomagolásához kövesse az alábbi lépéseket.
     ![Példa levélcímkére](media/sps-label-example.png "Példa levélcímkére")
 
 1. Figyelje meg, hogy a **Tároló jegyzékfájl-azonosítója** és a **Teljes fuvar** érték hozzá lett adva a címkéhez.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

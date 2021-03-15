@@ -51,3 +51,6 @@ Az következő képernyőfotón az **Ütemezett munkarendelés-karbantartási fe
 
 ![1. ábra](media/07-work-order-scheduling.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

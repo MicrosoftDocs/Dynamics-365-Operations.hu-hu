@@ -93,3 +93,6 @@ A tartalom jelentési oldalak készletét tartalmazza. Minden oldal több metrik
 | Alkalmazotti statisztikák | Költségjelentések költségtípus szerint            |
 |                     | Személyes kiadások                       |
 |                     | Költségjelentések statisztikai csoport szerint     |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

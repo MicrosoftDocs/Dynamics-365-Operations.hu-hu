@@ -93,3 +93,6 @@ Nem fogja tudni feldolgozni vagy végrehajtani a költségvetéseket a konszolid
 További információ: [Devizaátértékelés konszolidációs vállalatban](../general-ledger/currency-revaluation-consolidation-company.md).
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

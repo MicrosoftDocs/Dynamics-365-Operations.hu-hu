@@ -41,3 +41,6 @@ Lehetősége van beállítani különböző típusú, a vállalatnál használha
 A következő ábra az **Összes karbantartási kérés** listaoldalt szemlélteti.
 
 ![Összes karbantartási kérés listaoldal](media/01-setup-for-requests.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

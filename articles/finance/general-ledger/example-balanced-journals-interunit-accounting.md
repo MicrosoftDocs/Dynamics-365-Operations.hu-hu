@@ -54,3 +54,6 @@ Ezért a következő könyvelési bejegyzések automatikusan létrejönnek a nap
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -63,3 +63,6 @@ Az előre jelzett beosztás költségösszetevő sorának dátuma a következő 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -48,3 +48,6 @@ Ebben a szakaszban található témakörök az ügyfélszolgálati üzleti folya
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

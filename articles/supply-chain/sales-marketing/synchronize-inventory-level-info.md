@@ -92,3 +92,6 @@ Használhatja a speciális lekérdezés és szűrés szűrőit annak a vezérlé
 ### <a name="product-inventory-supply-chain-management-to-field-service-product-inventory"></a>Termékkészlet (Supply Chain Management alkalmazásból a Field Service alkalmazásba): Termékkészlet
 
 [![Sablonleképezés az adatintegrátorban](./media/FSinventoryLevel1.png)](./media/FSinventoryLevel1.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -59,3 +59,6 @@ Ez a második azon öt eljárás közül, amelyek elektronikus jelentési beáll
     * Például válassza ki a „DEMF OPER” bankszámlát.  
 6. Kattintson a Mentés gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

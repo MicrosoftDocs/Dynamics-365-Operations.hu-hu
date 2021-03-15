@@ -56,3 +56,6 @@ A következő kép bemutatja egy alkalmazotti címjegyzék létrehozását egy k
 [Képernyő-elrendezés áttekintése](pos-screen-layouts.md)       
 
 [A Retail Hardware Station konfigurálása és telepítése](retail-hardware-station-configuration-installation.md)  
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

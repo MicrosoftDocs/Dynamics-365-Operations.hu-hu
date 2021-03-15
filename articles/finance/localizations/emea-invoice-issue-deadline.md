@@ -121,3 +121,6 @@ Amennyiben nincs hozzáférése a jelen cikkben szereplő feladatok végrehajtá
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

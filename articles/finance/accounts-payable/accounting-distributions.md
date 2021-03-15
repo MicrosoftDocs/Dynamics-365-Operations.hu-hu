@@ -56,3 +56,6 @@ Az általános könyvelési felosztás funkciók az alábbi lehetőségeket bizt
 A 10.0.13-as verzióban egy olyan funkció található, amely ellenőrzi a könyvelési felosztási táblát annak érdekében, hogy az új mezők biztosan helyesen legyenek beállítva. Ennek a funkciónak a neve: **Dokumentumok adatainak további ellenőrzésének engedélyezése a forrásbizonylat könyvelési keretrendszer használatával**. A funkció használatához engedélyeznie kell a **Funkciókezelési** munkaterület használatával. A funkció engedélyezéséhez keressen rá a funkció nevére a **Funkció kezelése** lap **Keresés** mezőjében, majd válassza az **Engedélyezés most** lehetőséget.
 
 További tájékoztatás: [Könyvelési felosztások és az analitikus napló bejegyzései szállítói számlákhoz](accounting-distributions-subledger-journal-entries-vendor-invoices.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -253,3 +253,6 @@ Attribútumok, alkatrészek vagy az egy termékkonfigurációs modell alösszete
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -123,3 +123,6 @@ A következő fő dimenziók szolgálnak szűrőként az összesítő mértékek
 | Pénzügyi naptárak                   | Naptár, Naptár leírása                                                                                       |
 | Pénzügyi évek                       | Naptári év                                                                                                        |
 | Pénzügyi időszakok                     | Naptári év időszak                                                                                                 |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

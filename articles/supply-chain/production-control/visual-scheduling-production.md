@@ -159,3 +159,6 @@ A Gantt-diagram a következő lapokról is megnyitható.
 
 [Vizuális ütemezés a termeléshez (demó parancsfájl)](https://docs.microsoft.com/dynamics/s-e/)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

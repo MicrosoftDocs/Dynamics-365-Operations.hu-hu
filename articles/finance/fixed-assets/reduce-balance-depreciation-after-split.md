@@ -44,3 +44,6 @@ Például a következő feltételek vannak érvényben:
 Az eredeti eszköz értékcsökkenésének összege 1.822,25 dollár. Ez az összeg megegyezik az NBV-vel a felosztásos tranzakció feladása előtt (9111,25 dollár), valamint a felosztásos tranzakció feladása során keletkező beszerzési helyesbítés (-8000 dollár), valamint a felosztásos tranzakció során keletkező értékcsökkenési helyesbítés (711 dollár). Ezért a második év értékcsökkenése (1.822,25 × 18 százalék) ÷ 12 = 27,33 dollár.
 
 Az új tárgyi eszköz értékcsökkenésének összege az első évben (8 000 × 18 százalék) ÷ 12 = 120 dollár.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

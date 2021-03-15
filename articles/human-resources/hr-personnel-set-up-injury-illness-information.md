@@ -65,3 +65,6 @@ A munkaadóknak tudniuk kell, ha alkalmazottjaik a munkahelyi veszélyek miatt m
     * Bejelentő szervezetek azok a szervezetek, ahol az eseményt be kell jelenteni. Jelölje be azon szervezet jelölőnégyzetét, amely számára alapértelmezés szerint jelenteni kell a sérüléseket és betegségeket.  
 23. Kattintson a Mentés gombra.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

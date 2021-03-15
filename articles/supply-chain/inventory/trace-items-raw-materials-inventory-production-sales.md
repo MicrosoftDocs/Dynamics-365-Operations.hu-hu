@@ -139,3 +139,6 @@ Létrehozhatja a **Vevőknek szállítva** jelentést, hogy azonosítsa a kiszá
 
 ## <a name="can-i-trace-coproducts-and-byproducts"></a>A társtermékeket és melléktermékeket is nyomon követhetem?
 Nyomon követhet társtermékeket, de nem követheti le a melléktermékeket, mivel a nyomon követési dimenziók javarészt, nem a melléktermékekhez vannak hozzárendelve. Egy cikk nyomon követésekor, a nyomon követési részletek minden kapcsolódó társterméket tartalmaznak. Olyan Társtermék tartalmazó csomópont "Társtermék" szó részletes adatait tartalmazza. Megtekintheti továbbá egy társtermék részleteit a csomópont kijelölésével a nyomon-követési részletekben, majd a **Termelés** gyorslap alábontásával.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -126,3 +126,6 @@ Az alábbi segédanyagok egy része szoftverünk egy korábbi verziójára vonat
 [Dimenzió alapértelmezés a könyvelési felosztásokban](https://blogs.msdn.microsoft.com/ax_gfm_framework_team_blog/2013/12/16/dimension-defaulting-in-accounting-distributions-part-1-introduction/)
 
 [Dimenzió alapértelmezés a Dimenzió-keretrendszerben](https://docs.microsoft.com/archive/blogs/ax_gfm_framework_team_blog/dimension-defaulting-part-1-financial-dimensions-discovery)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

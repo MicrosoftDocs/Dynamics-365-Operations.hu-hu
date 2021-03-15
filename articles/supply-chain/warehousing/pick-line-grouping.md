@@ -170,3 +170,6 @@ A kitárolási sor csoportosításának beállítása előtt létre kell hoznia 
 >   - Befejezetlen feltöltési munkával rendelkező munkasorok
 >   - Előírtnál nagyobb mennyiség kitárolása
 >   - Rövid kitárolás cikkek újbóli felosztásával
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

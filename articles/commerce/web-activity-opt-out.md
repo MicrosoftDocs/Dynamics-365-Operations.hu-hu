@@ -55,3 +55,6 @@ A rendszergazdák megengedik a hitelesített felhasználók számára, hogy saj�
 ### <a name="custom-extensions"></a>Egyéni bővítmények
 
 A rendszergazdák saját bővítményeiket hozhatnak létre a felhasználók leiratkozási élményének kezeléséhez. További információk: [Retail Server API-k hívása](e-commerce-extensibility/call-retail-server-apis.md) és [Online csatorna bővíthetősége](e-commerce-extensibility/overview.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

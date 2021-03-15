@@ -135,3 +135,6 @@ Egy árcsoport beállításához hajtsa végre a következő műveleteket.
 [Csalással kapcsolatos figyelmeztetések beállítása és használata](set-up-fraud-alerts.md)
 
 [Folytonossági programok beállítása hívásközpontok számára](set-up-continuity-program.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

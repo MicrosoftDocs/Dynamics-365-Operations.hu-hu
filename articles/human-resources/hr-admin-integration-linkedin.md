@@ -190,3 +190,6 @@ A program az alábbi adatokat importálja és viszi fel az új alkalmazotti reko
 
 [Dataverse virtuális táblák konfigurálása](./hr-admin-integration-common-data-service-virtual-entities.md)<br>
 [Mi az a Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

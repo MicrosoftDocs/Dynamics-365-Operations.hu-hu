@@ -85,3 +85,6 @@ A forgótármodul új oldalra való felvételéhez és a kötelező tulajdonság
 [Tartalomblokk-modul](add-hero-module.md)
 
 [Videólejátszó modul](add-video-player.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -75,3 +75,6 @@ Az előző példában a műveletkeresési funkció az oldal tetején található
 ## <a name="action-search-vs-navigation-search"></a>Műveletkeresés és navigációs keresés
 
 A műveletkereséssel műveletek kereshetők meg és futtathatók egy oldalon. Emellett van egy másik keresési funkció is, amellyel oldalak kereshetők és nyithatók meg. Ezen funkcióval kapcsolatos további információk a [Navigációs keresés](navigation-search.md) cikkben találhatók.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

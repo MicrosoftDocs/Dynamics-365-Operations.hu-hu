@@ -107,3 +107,6 @@ Az alábbi képernyőfotón a **Munkarendelés dátumkontrollja** számítási e
 ![Példa számítási eredmények a Munkarendelés dátumának ellenőrzéséhez](media/03-controlling-and-reporting.png)
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

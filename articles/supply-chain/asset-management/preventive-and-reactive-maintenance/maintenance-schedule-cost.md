@@ -53,3 +53,6 @@ A lenti ábra a karbantartás ütemezés költség-számításának eredményeit
 
 ![1. ábra](media/17-preventive-maintenance.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

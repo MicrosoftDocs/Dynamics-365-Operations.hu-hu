@@ -60,3 +60,6 @@ A pénzügyi jelentéseken kívül a következő főkönyvi jelentések állnak 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

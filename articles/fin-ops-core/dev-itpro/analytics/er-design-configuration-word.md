@@ -72,3 +72,6 @@ A konfigurált ER-formátum futtatásakor a csatolt Word-sablon használatával 
 
 - [ER-konfigurációk újrafelhasználása Excel-sablonokkal Word-formátumú jelentések generálásához](./tasks/er-design-configuration-word-2016-11.md)
 - [Beágyazott képek és alakzatok az ER-rel generált dokumentumokban](electronic-reporting-embed-images-shapes.md#embed-an-image-in-a-word-document)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -39,3 +39,6 @@ Az alábbi eljárás felsorolja a lépéseket, amelyeket a rendszergazdák haszn
 6. Ugrás ide: **Navigációs lap > Modulok > Közös > Közös > Alapértelmezett irányítópult**. Az új szalagcím vagy embléma megjelenik az irányítópulton.  
     
     Szükség lehet arra, hogy vállalatát a vállalatválasztó használatával módosítsa arra, amelyiknek feltöltötte a szalagcímét.  
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

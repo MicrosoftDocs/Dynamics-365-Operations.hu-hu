@@ -145,3 +145,6 @@ Ez az eredményül kapott kimenet.
 | IA0001 | 1 | 2 | 2 |
 
 Ne felejtse el, hogy a **Szűrők** ablaktábla beállításai a jelen szakasz elején látható részletes (nem összesített) készlettáblára vonatkoznak. Ezért az **Elérhető tényleges** \| **érték kevesebb, mint vagy egyenlő ezzel:** \| _1_ az ablaktábla két sorát találja meg (az első és a harmadik sorokat, amelyek mindegyike az _1_ értékű **Elérhető tényleges** lehetőséget mutatja). Ebben a forgatókönyvben azonban a **Tényleges lista** lap nem arra van beállítva, hogy a **Raktár** dimenziót megjelenítse. Ennek megfelelően összesíti a két eredeti sort egyetlen eredményként kapott sorba, mivel mindkét sorban ugyanaz a érték szerepel a megjelenített dimenzióknál. Ez a sor úgy tűnik, hogy sérti a szűrési feltételeket, mivel az **Elérhető tényleges** érték _2_. Az eredmény azonban helyes, mivel a **Szűrők** ablaktábla beállításai a forrástáblára vonatkoznak, nem pedig az **Aktuális lista** lapon megjelenített összesített táblára.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

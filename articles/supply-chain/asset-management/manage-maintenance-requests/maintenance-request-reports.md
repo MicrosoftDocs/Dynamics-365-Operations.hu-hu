@@ -57,3 +57,6 @@ A **Karbantartási kérések listája** jelentés megjeleníti az azonos kérés
 A következő ábra egy példát mutat be a **Karbantartási kérések listája** jelentésre az összes aktív karbantartási kérés esetében.
 
 ![Karbantartási kérés lista jelentései](media/10-manage-maintenance-requests.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -46,3 +46,6 @@ Ez az eljárás bemutatja, hogyan lehet pontozási módszert létrehozni. A pont
 14. Írjon be egy számot a Kezdő érték mezőbe.
 15. Írjon be egy számot a Záró érték mezőbe.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

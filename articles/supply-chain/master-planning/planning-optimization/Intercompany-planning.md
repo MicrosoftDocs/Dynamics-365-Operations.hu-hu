@@ -87,3 +87,6 @@ Ehhez a példához egy tervezett beszerzési rendelés jön létre a USMF válla
 A következő ábra azt mutatja be, hogyan jelenhet meg ez a példa a tervezett termelési rendelés **Többszintű igénykövetés** oldalán.
 
 ![Vállalatközi példa, amely három vállalatot érint](media/IntercompanyPlanning2.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

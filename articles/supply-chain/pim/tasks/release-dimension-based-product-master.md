@@ -40,3 +40,6 @@ Ez az eljárás bemutatja, hogyan lehet kiadni egy, a dimenzión alapuló konfig
 7. Kattintson a Tovább gombra.
 8. Kattintson a Finish gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

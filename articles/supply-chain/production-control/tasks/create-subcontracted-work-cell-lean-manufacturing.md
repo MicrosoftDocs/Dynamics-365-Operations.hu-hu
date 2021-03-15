@@ -70,3 +70,6 @@ A lean manufacturing feladatokhoz alvállalkozásba adott munka modellezése ér
 24. Az Egység mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
 25. ResolveChanges az Egység.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

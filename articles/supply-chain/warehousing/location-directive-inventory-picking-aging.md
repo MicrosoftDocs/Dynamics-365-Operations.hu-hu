@@ -139,3 +139,6 @@ A LIFO-stratégia megtalálja azt a helyet, amely a legújabb korosítási dátu
 1. Figyelje meg, hogy a sorban, ahol a **Munkatípus** értéke *Kitárolás* egy **Hely** érték látható, ami *FL-001*. Ez a hely tartalmazza azt az azonosítótábla-típust, amelynek a legújabb a korosítási dátuma (LIFO).
 
 Ezekben az esetekben megismerhette, hogy hogyan irányítja a helykorosítási stratégia a munkát arra készlethelyre a hol a legrégebbi készlet vagy a legújabb készlet van a kiválasztott stratégiától függően.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

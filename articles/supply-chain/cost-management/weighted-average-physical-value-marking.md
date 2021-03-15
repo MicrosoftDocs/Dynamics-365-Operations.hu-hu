@@ -229,3 +229,6 @@ A következő diagram a tranzakciók sorozatát, és a súlyozott átlagon alapu
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

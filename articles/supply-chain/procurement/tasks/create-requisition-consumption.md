@@ -91,3 +91,6 @@ Ez a témakor az igénylés létrehozásának folyamatát írja le. Megmutatja, 
 6. Zárja be a lapot.
 7. Frissítse a lapot..
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

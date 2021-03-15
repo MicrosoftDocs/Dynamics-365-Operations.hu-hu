@@ -60,3 +60,6 @@ A következő táblázat bemutatja a Commerce oldalelemeinek lehetséges dokumen
 [Sablonok és elrendezések áttekintése](templates-layouts-overview.md)
 
 [Webhely-navigáció testreszabása](customize-site-navigation.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

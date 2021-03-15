@@ -118,3 +118,6 @@ A Műveleti panel **Projekt** csoport **Munkarendelés** lapján a **Projektmene
 >[!NOTE]
 >Az alapütemezés futtatásakor a munkarendelésen létrehozott előrejelzéseket az **Eszközkezelés paraméterei** képernyőn kiválasztott előrejelzési modell segítségével lehet befoglalni.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

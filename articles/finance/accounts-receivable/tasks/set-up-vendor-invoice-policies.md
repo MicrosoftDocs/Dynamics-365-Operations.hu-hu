@@ -72,3 +72,6 @@ Ez a témakör ismerteti a szállítói számlákkal kapcsolatos irányelvek be�
 16. Válassza ki az **OK** lehetőséget.
 17. A kezdőlaphoz való visszatéréshez zárja be az oldalakat.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

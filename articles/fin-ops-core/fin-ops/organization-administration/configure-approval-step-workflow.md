@@ -276,3 +276,6 @@ Ha egy felhasználó nem hajtja végre a dokumentum műveletét a megadott idő 
 
 5. Ismételje meg a 3 – 4. lépést minden egyes olyan felhasználóra vonatkozóan, akiket hozzá kell adni az eszkalációs útvonalhoz. A felhasználók sorrendje módosítható.
 6. Ha az eszkalációs útvonalban szereplő felhasználók nem válaszolnak a megadott időn belül, a rendszer automatikusan végrehajtja a dokumentumot. A rendszer által végzett művelet meghatározásához, válassza ki a **Művelet** sort, majd a **Művelet lezárása** fülön válasszon ki egy műveletet.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -64,3 +64,6 @@ Egy új bejövő rakománykezelési funkció, a *Rakománymennyiségek túlbevé
 1. Rakománymennyiségek túlbevételezése
 
 További információ: [A regisztrált termékmennyiségek feladása a beszerzési rendelésekkel szemben](inbound-load-handling.md#post-registered-quantities).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

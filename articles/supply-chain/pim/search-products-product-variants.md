@@ -86,3 +86,6 @@ Az értékesítési rendelési sor bejegyzéseinek esetében az alapértelmezett
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

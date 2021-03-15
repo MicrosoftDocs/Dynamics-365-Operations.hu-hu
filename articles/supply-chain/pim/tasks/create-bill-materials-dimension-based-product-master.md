@@ -78,3 +78,6 @@ Ehhez az eljáráshoz el kellett végeznie az előző 4 útmutatót a nyolc rög
 5. Kattintson az OK gombra.
 6. Kattintson az Aktiválás gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

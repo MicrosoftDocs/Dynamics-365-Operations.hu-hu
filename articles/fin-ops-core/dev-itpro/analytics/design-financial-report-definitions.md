@@ -84,3 +84,6 @@ A következő táblázat bemutatja a jelentésdefinícióban lévő lapokat és 
 ## <a name="additional-resources"></a>További erőforrások
 
 [Pénzügyi jelentéskészítés](financial-reporting-intro.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

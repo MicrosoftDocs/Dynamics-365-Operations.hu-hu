@@ -189,3 +189,6 @@ Most már használhatók a **Termékentitás Common Data Service azonosító ent
 ## <a name="related-topic"></a>Kapcsolódó témakör
 
 [Termékek és termékváltozatok keresése a rendelésbevitel során](search-products-product-variants.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

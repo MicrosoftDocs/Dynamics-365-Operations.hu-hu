@@ -118,3 +118,6 @@ Finance and Operations mező | Térkép típusa | Customer Engagement mező | Al
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -52,3 +52,6 @@ A részlegek olyan működési egységek, amelyek egy vállalat funkcionális te
 16. Írjon be egy értéket a Változások leírása mezőbe.
 17. Kattintson a Közzététel parancsra.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

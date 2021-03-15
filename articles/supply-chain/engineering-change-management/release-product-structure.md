@@ -159,3 +159,6 @@ Ez a viselkedés csak akkor érvényes, ha a termék közvetlenül van kiválasz
 Az X termék például a *Design kabinetek* terméktulajdonosi csoportjához vannak hozzárendelve. Az X termék az Y termék AJ része is, amely a *Design hangszórók* terméktulajdonosi csoportjához van hozzárendelve. Ha egy felhasználó a *Design hangszórók* terméktulajdonosi csoporttól kiadja az Y terméket és annak anyagjegyzékét, akkor az X termék az Y termékkel együtt fog megjelenni.
 
 További információ: [Terméktulajdonosok](product-owner.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

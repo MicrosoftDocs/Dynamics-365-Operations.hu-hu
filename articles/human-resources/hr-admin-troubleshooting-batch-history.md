@@ -64,3 +64,6 @@ A gyakran futó kötegelt feladatok nem fenntartható növekedést eredményezhe
 
 8. Szükség szerint módosítsa a **Futtatás a háttérben** rész többi paraméterét, majd válassza az **OK** lehetőséget.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

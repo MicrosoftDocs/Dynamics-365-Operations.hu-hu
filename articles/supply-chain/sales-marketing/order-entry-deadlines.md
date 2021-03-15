@@ -108,3 +108,6 @@ A következő táblázatban az A és a B hely rendelésbeviteli határidői lát
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

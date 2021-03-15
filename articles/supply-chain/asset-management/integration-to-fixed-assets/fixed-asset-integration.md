@@ -114,3 +114,6 @@ Karbantartás alatt álló eszköz és tárgyi eszköz közti meglévő társít
 1. Keresse meg és nyissa meg a tárgyi eszközt.
 1. A **tárgyi eszköz** gyorslapon törölje a jelet az érték a **munkavégzési helyszín** mezőből.
 1. A műveleti ablaktáblán válassza a **Mentés** lehetőséget.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

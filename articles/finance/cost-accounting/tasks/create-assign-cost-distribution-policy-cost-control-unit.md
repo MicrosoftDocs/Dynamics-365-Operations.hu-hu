@@ -72,3 +72,6 @@ A Költségfelosztási szabályok segítségével feloszthatja egy kollektív k�
 5. A Költség-ellenőrzőegység mezőben adjon meg vagy válasszon ki egy értéket.
 6. Kattintson a Mentés gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

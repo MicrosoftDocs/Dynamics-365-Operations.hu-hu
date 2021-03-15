@@ -42,3 +42,6 @@ A szolgáltatási tárgyak a vevő azon eszközei és termékei, amelyhez szolg�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

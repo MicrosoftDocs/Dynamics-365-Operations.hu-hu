@@ -120,3 +120,6 @@ A következő lépések végrehajtásával manuálisan adhat hozzá vagy távol�
 [Ajánlások létrehozása bemutató adatokkal](product-recommendations-demo-data.md)
 
 [Termékajánlatok GYIK-je](faq-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

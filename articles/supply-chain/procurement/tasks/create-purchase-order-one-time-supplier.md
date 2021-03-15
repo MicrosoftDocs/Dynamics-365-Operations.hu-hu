@@ -38,3 +38,6 @@ Ez az eljárás bemutatja, hogy hogyan lehet létrehozni egy beszerzési rendel�
 5. Kattintson az OK gombra.
     * Lehetséges, hogy már kész van a beszerzési rendelés, és ugyanúgy fel van dolgozva, mint a többi rendelés. Nincsenek olyan különleges jellemzők, amelyek kapcsolatban állnak azzal, hogy hogyan jött létre. A számla számot ad az esedékes tranzakcióról azon a szállítói számlán, amelyet a rendeléssel hoztak létre, illetve a kifizetés ezt követően történik meg.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

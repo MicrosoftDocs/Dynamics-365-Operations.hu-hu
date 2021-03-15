@@ -141,3 +141,6 @@ Amikor a jóváhagyó a dokumentum változtatását kéri, a dokumentumot vissza
 Például, Balázs elküldött egy 12,000 USD dollárról szóló költségjelentést, és a dokumentum Zsuzsannához lett rendelve. Ha Zsuzsanna változtatást kér, akkor költségjelentés visszakerül Balázshoz.
 
 Balázs ezután újraküldheti a költségjelentést. Elvégezheti a javasolt változtatásokat, vagy újraküldheti a költségjelentés eredeti verzióját. Ha Balázs visszaküldi a költségjelentést, akkor az Ferenchez kerül vissza jóváhagyásra, ugyanis Ferenc a jóváhagyás folyamatának első jóváhagyója.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

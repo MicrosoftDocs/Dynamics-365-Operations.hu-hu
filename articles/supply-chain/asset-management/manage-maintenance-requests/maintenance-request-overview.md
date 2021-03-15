@@ -72,3 +72,6 @@ A műveleti ablak gombjai lapokon vannak rendezve. A következő táblázat röv
 | Kölcsönzött eszköz küldése                  | Válasszon ki egy kölcsönzött eszközt, amelyet ideiglenes helyettesítőként használhatnak egy eszköz helyett, amelyet a kijelölt karbantartási kérésen kiválasztottak. |
 | Kölcsönzött eszköz visszaküldése                | A kölcsönzött eszközt visszaküldöttként rögzítheti. |
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

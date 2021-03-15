@@ -410,3 +410,6 @@ A termék most újra kiadható a *USMF* vállalatnak, majd elküldhető a vevőn
 1. Válassza ki azt a vállalatot, amelynek a termékeket ki kívánja adni.
 1. Válassza az **OK** gombot a **Kiadások** párbeszédpanel bezárásához és a visszatéréshez a módosítási rendeléshez.
 1. Válassza ki a művelet ablaktábla **Módosítási rendelés** lapján a **Termékkiadások** csoportban a **Feldolgozás** lehetőséget, hogy az érintett termékeket kiadja a kiválasztott vállalatoknak. Azt is megteheti, hogy a kiadási folyamat elindításához kijelöli **Termékszerkezet kiadása** lehetőséget.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

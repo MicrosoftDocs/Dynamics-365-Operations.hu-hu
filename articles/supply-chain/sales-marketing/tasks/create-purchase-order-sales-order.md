@@ -68,3 +68,6 @@ Ez az eljárás bemutatja, hogyan hozhat létre egy beszerzési rendelést egy �
     - A **Referenciatétel** biztosítja, hogy az aktuális beszerzés költségei terhelésként jelennek meg a csatolt értékesítési rendelésen.  
     - A **Hivatkozási szám** mezőben található hivatkozást megnyitva navigálhat az eredeti értékesítési rendeléshez.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

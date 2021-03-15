@@ -44,3 +44,6 @@ Megtekintheti és módosíthatja a fokozati okok listáját egy szervizrendelés
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -96,3 +96,6 @@ A **Pótalkatrészek** lapon új pótalkatrészeket is létrehozhat a meglévő 
 
 Ha látni szeretné, hogy a kiválasztott sorban szereplő pótalkatrész használatban van-e bárhol az Eszközkezelésben (például eszközökkel és munkarendelésekkel kapcsolatban), válassza ki a **Cikket hol használják** elemet, amellyel megnyithatja a **Cikket hol használják** oldalt. 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

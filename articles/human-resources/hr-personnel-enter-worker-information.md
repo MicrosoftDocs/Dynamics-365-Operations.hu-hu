@@ -45,3 +45,6 @@ Ha egy toborzó létrehozott egy tömeges felvételi projektet, és pozíciókat
 8. A listában szüntesse meg a kiválasztott sor megjelölését.
     * Válassza ki a következő beosztásállapotot, és folytassa a dolgozói információk megadását a felvehető embereknél.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -65,3 +65,6 @@ A következő típusú modulok érhetők el a modellkönyvtárban:
 [Fejlécmodul](author-header-module.md)
 
 [Láblécmodul](author-footer-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

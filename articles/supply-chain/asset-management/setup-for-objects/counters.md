@@ -66,3 +66,6 @@ Ha eszköztípusokat ad egy számlálóhoz a **Számlálók** alatt, akkor a sz�
 
 ![1. ábra](media/071-setup-for-objects.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

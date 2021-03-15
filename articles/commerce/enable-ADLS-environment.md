@@ -114,3 +114,6 @@ Ha nem fejeződött be, akkor kövesse a [termékajánlások és a környezet sz
 [Ajánlások létrehozása bemutató adatokkal](product-recommendations-demo-data.md)
 
 [Termékajánlatok GYIK-je](faq-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

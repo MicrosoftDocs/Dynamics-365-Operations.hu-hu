@@ -153,3 +153,6 @@ Az egyes költségtípusokhoz kiválasztott számla terhelve van, amikor az adot
 
 > [!NOTE]
 > Az ellenszámla a végrehajtási költségfizetési ütemezés soraiban a lízing szintjén van kiválasztva. Ez az ellenszámla társítható a szállítóhoz vagy egy főkönyvi számlához.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

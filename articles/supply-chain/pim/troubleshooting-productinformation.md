@@ -151,3 +151,6 @@ Ha egy termékváltozat már megjelent egy „A” vállalatnál, és a „B” 
 A **Kiadott termékváltozatok** lap **Új** gombja létrehozza a változatot, és vállalati környezetben adja ki azt. Ha a változat már létrejött, nem használhatja az **Új** gombot, hogy kiadja egy másik vállalatnál.
 
 A probléma megoldásához nyissa meg az **Alaptermék** oldalt, és válassza a **Termék kiadása** lehetőséget a meglévő változat kiadásához a kívánt vállalatnál.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

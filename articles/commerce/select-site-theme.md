@@ -67,3 +67,6 @@ Ha ki szeretné választani a webhelyre alkalmazott témát, hajtsa végre az al
 
 [Új téma létrehozása](e-commerce-extensibility/create-theme.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

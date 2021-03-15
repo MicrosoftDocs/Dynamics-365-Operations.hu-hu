@@ -108,3 +108,6 @@ Például egy dolgozó 10:00 órakor blokkol be, és kiválaszt egy távolléti 
 ### <a name="calculate-and-approve-absence"></a>Távollét kiszámítására és a jóváhagyása
 
 - Válassza ki a **Munkaidő és jelenlét** &gt; **Ellenőrzés és jóváhagyás** &gt; **Jóváhagyás vagy Számítás** lehetőséget.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -89,3 +89,6 @@ További tájékoztatás: [Az áfaérték a Számítás alapja és a Számítás
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

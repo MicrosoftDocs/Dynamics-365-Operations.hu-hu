@@ -128,3 +128,6 @@ Az alábbi táblázat megjeleníti azokat a fő dimenziókat, amelyek szűrőké
 | Entitások                  | Azonosító és név                                                   |
 | Erőforrások                 | Erőforrás-azonosító, erőforrás neve, erőforrástípus és erőforráscsoport |
 | Termékek                  | Termékszám, termék neve, cikkazonosító és cikkcsoport         |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -96,3 +96,6 @@ Az eljárás egy olyan szolgáltatáshoz tartozik, amely a Dynamics 365 for Oper
 7. Kattintson az OK gombra.
     * Tekintse át a létrehozott kimenetet. Megjegyzendő, hogy az XML-formátumú számlaüzeneten kívül az összes melléklet számára létrejön egy fájl. A mellékletfájlok feltöltése a tömörített kimenettel bináris formátumban történik.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

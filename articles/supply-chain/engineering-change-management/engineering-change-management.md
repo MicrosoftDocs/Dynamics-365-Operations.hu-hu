@@ -184,3 +184,6 @@ A mérnöki módosítási rendelések legtöbb mezője ugyanaz, mint a kiadott t
 | Környezet-, egészség- és munkavédelem | Adja meg, hogy a módosításra vonatkozó környezet-, egészség- és munkavédelmi szabályok érvényesek-e. Ilyen esetben a megfelelő szabályokat is kiválaszthatja. |
 
 A módosítási információk az érintett termékek között másolhatók a **Módosítás adatainak karbantartása és másolása** gomb segítségével.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

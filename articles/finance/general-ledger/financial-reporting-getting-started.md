@@ -174,3 +174,6 @@ A jelentéskészítő megnyitásakor problémák merülhetnek fel néhány gyako
 ## <a name="additional-resources"></a>További erőforrások
 - [Pénzügyi jelentések megtekintése](view-financial-reports.md)
 - [Jelentési fa definíciója a pénzügyi jelentésekben](../../fin-ops-core/dev-itpro/analytics/financial-reporting-tree-definitions.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

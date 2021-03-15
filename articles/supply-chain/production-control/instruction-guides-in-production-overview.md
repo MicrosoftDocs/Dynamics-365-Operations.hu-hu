@@ -409,3 +409,6 @@ Amikor a Supply Chain Management létrehozza a termelés számára a feladatokat
 - Ha több útvonalműveleti kapcsolatot határoz meg, amelyek tartalmazzák az *összes* kapcsolatot, és útmutatókat rendelnek hozzájuk, akkor csak munkához tartozó legspecifikusabb kapcsolat útmutatói jelennek meg a feladaton.  
 
 ![Diagram a vonatkozó útmutatók feloldásához](media/instruction-guides-Resolve.png "Diagram a vonatkozó útmutatók feloldásához")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

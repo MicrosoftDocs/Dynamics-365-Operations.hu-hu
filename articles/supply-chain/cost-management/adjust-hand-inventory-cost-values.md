@@ -43,3 +43,6 @@ Ez a cikk az elsőként be, elsőként ki FIFO készletmodellhez van beállítva
 -   Febuár 5: mennyiség: 1, a költség 13,00 USD.
 
 Ahhoz, hogy ennek a két cikknek az árát 15,00 USD értékre lehessen beállítani, az aktuális készlet módosítására használható funkcióval korrigálni kell a nyitott aktuális készletmennyiségeket a legutolsó készletzárási időszaknak megfelelően. **Megjegyzés:** Az aktuális készletet korrigáló tranzakció feladási dátuma a legutóbbi készletzárás dátuma lesz. Ez a dátum nem módosítható.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

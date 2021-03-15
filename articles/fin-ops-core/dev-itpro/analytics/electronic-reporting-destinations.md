@@ -241,3 +241,6 @@ Az Ön formátumának először elérhetőnek kell lennie az ER-konfigurációkn
 [Elektronikus jelentéskészítés (ER) áttekintése](general-electronic-reporting.md)
 
 [Műveletfüggő ER-célok konfigurálása](er-action-dependent-destinations.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

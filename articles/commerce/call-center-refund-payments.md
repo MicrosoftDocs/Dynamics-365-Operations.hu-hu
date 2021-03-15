@@ -108,3 +108,6 @@ Másik lehetőségként a szervezet a **Fizetés felülbírálatának engedélye
 ## <a name="additional-resources"></a>További erőforrások
 
 [Fizetési módok hívásközpontoknál](work-with-payments.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

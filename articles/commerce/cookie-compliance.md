@@ -72,3 +72,6 @@ Ha egy e-kereskedelmi oldal funkciója vagy modulja nem alapvető cookie-t haszn
 [Cookie-hozzájárulás modul](cookie-consent-module.md) 
  
 [Fejlécmodul](author-header-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

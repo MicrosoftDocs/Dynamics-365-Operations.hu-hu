@@ -238,3 +238,5 @@ Olyan beszerzési rendelést hoz létre, amelynek három sora van: két sor ugya
 
 > [!TIP]
 > Ezt az esetet megismételheti, de ez alkalommal állítsa be a **Méret** - *Nem* értéket a **Termékdimenzió-kombinálás engedélyezése** gyorslapon, az *ÖMLESZTETT* **Helyprofilok** részen, hogy a cikkdimenziók egyikét se lehessen kombinálni. Ebben az esetben a beszerzési rendelés beérkezésekor a program az egyes termékváltozatokat új helyre helyezi.
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

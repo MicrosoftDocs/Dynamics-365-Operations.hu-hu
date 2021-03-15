@@ -54,3 +54,6 @@ Bizonyos körülmények között nem ajánljuk az adatpiac alaphelyzetbe állít
 > A következő pontok két olyan dolgot határoznak meg, amelyek *nem* érhetők el az adatpiac alaphelyzetbe állításával. <br>
 > - A alaphelyzetbe állítások nem törlik a jelentésterveket. <br>
 > - Az alaphelyzetbe állítás csak akkor törli a vállalati vagy a felhasználói adatokat, ha be vannak jelölve.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

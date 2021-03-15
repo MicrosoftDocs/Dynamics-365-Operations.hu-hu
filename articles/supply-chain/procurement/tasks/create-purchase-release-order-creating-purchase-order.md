@@ -63,3 +63,6 @@ Ez az eljárás bemutatja, hogyan lehet használni egy beszerzési szerződést,
 3. Zárja be a lapot.
 4. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

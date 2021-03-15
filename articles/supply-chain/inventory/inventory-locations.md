@@ -65,3 +65,6 @@ Lehetséges a helyek másolása egyik raktárból a másikba, és egy varázsló
 --------
 
 [Új raktárelrendezés létrehozása](tasks/create-new-warehouse-layout.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

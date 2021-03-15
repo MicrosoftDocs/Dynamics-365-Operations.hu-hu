@@ -38,3 +38,6 @@ Ez a témakör dokumentációforrásokra mutató hivatkozásokat tartalmaz a Mag
 - [Online számlázási rendszer](emea-hun-online-invoicing.md)
 - [Áfajelentések Magyarországról](emea-hun-sales-tax-reports.md)
 - [Halasztott áfa számításai](emea-hun-deferred-vat.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

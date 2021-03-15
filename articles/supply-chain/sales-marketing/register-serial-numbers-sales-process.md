@@ -79,3 +79,6 @@ Ez a funkció minden olyan szerep számára elérhető, amely jogosult a száll�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

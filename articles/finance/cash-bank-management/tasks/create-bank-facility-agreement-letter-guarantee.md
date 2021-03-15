@@ -56,3 +56,6 @@ A feladat a garancialevél feldolgozásához banki hitelmegállapodást hoz lét
 5. Kattintson a Mentés gombra.
 6. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

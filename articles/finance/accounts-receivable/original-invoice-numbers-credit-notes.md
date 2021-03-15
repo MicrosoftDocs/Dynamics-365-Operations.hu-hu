@@ -97,3 +97,6 @@ Szabadszöveges, vevői és projektjóváírások nyomtatása esetén a jóváí
 
 > [!NOTE]
 > Győződjön meg arról, hogy a dokumentumok nyomtatható formátumai helyesen legyenek konfigurálva, feltételezve, hogy az eredeti számlákra mutató hivatkozásokat ki fogják nyomtatni.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

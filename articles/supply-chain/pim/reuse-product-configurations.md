@@ -44,3 +44,6 @@ Amikor a konfigurációk újbóli használatát alaphelyzetbe állítja, a korá
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

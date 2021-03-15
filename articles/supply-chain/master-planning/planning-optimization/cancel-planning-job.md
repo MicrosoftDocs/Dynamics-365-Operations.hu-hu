@@ -59,3 +59,6 @@ A feladat állapota mindaddig **Megszakítás** lesz, amíg a Tervezés optimali
 [Tervelőzmények és tervezési naplók megtekintése](plan-history-logs.md)
 
 [Szűrők alkalmazása egy tervre](plan-filters.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

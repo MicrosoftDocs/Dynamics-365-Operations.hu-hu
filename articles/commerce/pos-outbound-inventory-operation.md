@@ -192,3 +192,6 @@ A teljesen leszállított átmozgatási rendeléseket a **Kimenő művelet** dok
 ## <a name="related-topics"></a>Kapcsolódó témakörök
 
 [Bejövő készletműveletek a pénztárban](pos-inbound-inventory-operation.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

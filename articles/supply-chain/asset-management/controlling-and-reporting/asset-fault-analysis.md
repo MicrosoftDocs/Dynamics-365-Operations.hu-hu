@@ -108,3 +108,6 @@ A lenti képernyőfotón a **Típus** lett hozzáadva, és megjelenik a példak�
 >[!NOTE]
 >A munkarendeléseken és a karbantartási kérelmeken létrehozott összes hibaregisztráció áttekintéséhez kattintson ide: **Eszközkezelés** > **Lekérdezések** > **Eszközhiba** > **Eszközhibák**. Az **Eszközhibák** oldalon válasszon ki egy eszközhiba-regisztrációt, és a **Kapcsolódó információ** ablaktábla kibontásával megtekintheti a kapcsolódó munkarendeléssel vagy karbantartási kérelemmel kapcsolatos információkat.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

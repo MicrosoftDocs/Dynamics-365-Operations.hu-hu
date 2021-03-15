@@ -108,3 +108,6 @@ Ha engedélyezni szeretné, hogy a dolgozók elvégezzék ezt a módosítást, a
 - **Készletállapot megjelenítése:** *Igen*
 
 A lapon szükség szerint megadhat más mezőket is.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -72,3 +72,6 @@ Ez a feladat-útmutató segít Önnek szállítói számla létrehozásában egy
 19. Kattintson a **Bejegyzés** lehetőségre.
 20. Zárja be az űrlapot. Ne felejtse, hogy a beszerzési rendelés már nem bevételezettként, hanem nem számlázottként van listázva.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

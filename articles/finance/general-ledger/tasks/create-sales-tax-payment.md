@@ -36,3 +36,6 @@ Az áfakiegyenlítési és -feladási munkaeljárás kiegyenlíti az áfaegyenle
 5. A **Tranzakció dátuma** mezőben adjon meg egy dátumot.
 6. Kattintson az **OK** gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -208,3 +208,6 @@ Katalógus, kategória, alkalmazott, és vevő képeket, amelyeket Kapcsolat né
 5. A többi entitás esetében is hasonló folyamatot kövessen, például a Kategória, Alkalmazott és Vevő esetében.
 
     [![Offline kép](./media/offline2.png)](./media/offline2.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

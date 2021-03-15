@@ -54,3 +54,6 @@ Ez az eljárás végigvezeti egy új értékcsökkenési könyv létrehozási fo
 6. Adjon meg egy számot az Élettartam mezőben.
     * Figyelje meg, hogy az Értékcsökkenési időszakok mező értéke az Élettartam beállítását követően kerül kiszámításra.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

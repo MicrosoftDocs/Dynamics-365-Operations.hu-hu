@@ -39,3 +39,6 @@ Időablakok segítségével optimalizálhatja a szervizrendeléssorok ütemezés
 ## <a name="related-topics"></a>Kapcsolódó témakörök
 
 [Időablakok](time-windows.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

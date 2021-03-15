@@ -85,3 +85,6 @@ A fedezeti időkorlátok beállításakor vegye figyelembe a következő pontoka
 - A vállalatközi igény figyelmen kívül lesz hagyva, ha a kért szállítási dátum számítása nem a fedezeti időkorláton belül van. Ne feledje, hogy a beépített alaptervezés esetén a vállalatközi igényt nem korlátozza a fedezeti időkorlát.
 - Az igény-előrejelzések figyelmen kívül lesznek hagyva, ha a költségvetési dátum nincs a fedezeti időkorláton belül. Ne feledje, hogy a beépített alaptervezés esetén az igény-előrejelzéseket nem korlátozza a fedezeti időkorlát.
 - A tervezés optimalizálása figyelembe veszi az időzónákat. Figyelembe veszi az ellátási és igényhelyek időzónát, valamint a tervezés futtatásának idejét. Az alaptervezés például október 15-én, 11 órakor lesz elindítva egy dán telephelyről (GMT +1 időzóna), és tíz napos fedezeti időkorlátot használ a program. Ebben az esetben az ellátás és igénylés egy seattle-i telephelyről (GMT-8 időzóna) október 25-én hajnali 2 óráig lesz belefoglalva (= az alaptervezés aktiválása után tíz 24 órás nap, mínusz a 9 órás időzóna-különbség). Ne feledje, hogy a beépített alaptervezési motor csak az időkorlát dátumát veszi figyelembe. Ennek megfelelően az eredmény eltérő lehet.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

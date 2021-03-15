@@ -91,3 +91,6 @@ A regisztrálás befejezése után válassza a **Kész** lehetőséget a napló
 -   Az anyag túlfogyasztása engedélyezett. Például ha a becsült mennyiségű felhasználandó anyagmennyiség 100 kg, akkor a túlfogyasztás mennyisége például 105 kg lehet.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

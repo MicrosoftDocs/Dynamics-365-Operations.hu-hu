@@ -50,3 +50,6 @@ Ha látni szeretné, hogy mi új vagy módosult a Lifecycle Services szolgáltat
 - [Új vagy módosult elemek a Lifecycle Services (LCS) szolgáltatásban](../../dev-itpro/lifecycle-services/whats-new-lcs.md)
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

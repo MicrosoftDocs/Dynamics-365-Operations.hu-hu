@@ -44,3 +44,6 @@ Ez az eljárás bemutatja, hogyan adhat kölcsön egy cikket egy dolgozónak, é
 2. Kattintson a Szerkesztés lehetőségre.
 3. A Tényleges visszakerülés mezőben adja meg a dátumot.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

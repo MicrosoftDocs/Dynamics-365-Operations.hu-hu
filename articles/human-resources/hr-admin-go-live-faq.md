@@ -99,3 +99,6 @@ A termeléskimaradás jelentéséhez kövesse a  [Termeléskimaradás jelenté
  ## <a name="see-also"></a>Lásd még
 
  [Felkészülés az éles indításra](hr-admin-go-live-prepare.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

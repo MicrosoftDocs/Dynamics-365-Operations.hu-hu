@@ -62,3 +62,6 @@ A halasztott áfa feladása a főkönyvi számlákra vonatkozóan is megadható.
 
 - **Halasztott áfa fizetendő** – Válassza ki a kijelölt főkönyvi feladási csoport halasztott áfaszámláját vagy adószámláját.
 - **Halasztott áfa visszaigényelhető** – Válassza ki a kijelölt főkönyvi feladási csoport halasztott áfaszámláját vagy adószámláját.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

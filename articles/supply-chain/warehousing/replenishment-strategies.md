@@ -114,3 +114,6 @@ Az eredmények a munka létrehozásakor rendelkezésre álló információktól 
 [![2. példa](media/ReplenTemp_example_2.png "2. példa")](media/ReplenTemp_example_2_large.png)
 
 Ahhoz, hogy a maximális mennyiséget eljuttathassa a feltöltési helyekre, a **Felosztás engedélyezése** lehetőséget *Igen* értékre a helyutasításoknál a feltöltési kitároláshoz.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

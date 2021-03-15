@@ -71,3 +71,6 @@ Bővítse a csatornát csatorna- és termékattribútumok hozzáadásával. Az a
 33. Kattintson az OK gombra.
 34. Kattintson a Mentés gombra.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

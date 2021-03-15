@@ -60,3 +60,6 @@ Ez a témakör ismerteti, hogyan tudja megtekinteni a szervizrendelésen szerepl
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

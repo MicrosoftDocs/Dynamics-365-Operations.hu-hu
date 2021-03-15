@@ -161,3 +161,6 @@ Mivel az ER-konfigurációk meg vannak osztva a vállalatok között, a feladat-
 7. Kattintson az OK gombra.
     * Ez a formátumkonfiguráció az alapértelmezett modell-hozzárendelési konfigurációt használja az elektronikus dokumentum létrehozásához (a létrehozott kimenet tartalmazza a vállalatkódot).  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

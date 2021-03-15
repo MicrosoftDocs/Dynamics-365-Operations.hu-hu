@@ -51,3 +51,6 @@ Mint minden új funkció esetében, a vevőknek figyelniük kell a Kiadási terv
 ## <a name="when-the-deprecation-date-is-identified-where-will-it-be-communicated"></a>Amikor meghatározzák az értékcsökkenés dátumát, hol jelzik ezt a felhasználóknak?
 
 Az Egy bizonylat értékcsökkenése jelentős változás, amelyről széles körben folyik majd tájékoztatás. Ez a termékdokumentáción, blogbejegyzésben és az érintett Microsoft-konferenciákon elhangzó közlemények révén történik, jóval az értékcsökkenés hatálybalépésének dátuma előtt.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

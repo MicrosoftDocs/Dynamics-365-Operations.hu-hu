@@ -63,3 +63,6 @@ A **Mennyiség** paraméter határozza meg, hogy a teljes mennyiséget vagy a t�
 -   Az átmozgatási rendelések **Mennyiség** és **Részben kiadott rendelések kiadásának engedélyezése** paramétereinek beállításához kattintson a **Raktárkezelés** \> **Raktárba való kiadás** \> **Átmozgatási rendelések automatikus kiadása** elemre.
 
 -   Az értékesítési rendelések **Mennyiség** és **Részben kiadott rendelések kiadásának engedélyezése** paramétereinek beállításához kattintson a **Raktárkezelés** \> **Raktárba való kiadás** \> **Értékesítési rendelések automatikus kiadása** elemre.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

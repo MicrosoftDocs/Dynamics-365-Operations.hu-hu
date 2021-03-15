@@ -343,3 +343,6 @@ Itt van néhány megjegyzés és tipp a funkció használatához:
 
 - Ha dinamikus helyeket használ, akkor a feltöltési munka jön létre vagy az első elérhető helyen vagy egy olyan helyen, amely már tartalmaz készletet, ha a helyutasítás művelet be van állítva a **Konszolidáció** stratégia használatára.
 - Ha a zónák helyett fix helyeket használ, akkor a [szabvány min/max feltöltést](tasks/set-up-min-max-replenishment-process.md) kell használni.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

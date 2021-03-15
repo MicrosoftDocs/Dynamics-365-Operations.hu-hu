@@ -137,3 +137,6 @@ Azok az alkalmazottak regisztrációja, akik a tanfolyamra az **Alkalmazotti ön
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -164,3 +164,6 @@ A következő táblázat felsorolja a weboldalainkat. A név mellett közvetlen�
 | [Dynamics közösség](https://community.dynamics.com/) | A webhelyen blogok, fórumok és videók találhatók. |
 | [Microsoft.com/dynamics365](https://www.microsoft.com/dynamics365/home) | A webhelyen értékelések és eladási információk érhetők el. |
 | [CustomerSource](https://docs.microsoft.com/dynamics/s-e/)\* | A webhely néhány oktatóanyagot tárol, letölthető jelentéseket és tanulmányokat, és ez az elsődleges támogatási webhely a szolgáltatási terv jogosultak számára. Szükség lehet egy szolgáltatási előfizetésre az egyes erőforrások eléréséhez a webhelyen. |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

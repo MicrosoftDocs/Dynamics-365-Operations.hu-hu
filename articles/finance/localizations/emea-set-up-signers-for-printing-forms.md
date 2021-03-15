@@ -164,3 +164,6 @@ A Hivatalnokok funkció az előre definiált alapértelmezett aláírókat a Hiv
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

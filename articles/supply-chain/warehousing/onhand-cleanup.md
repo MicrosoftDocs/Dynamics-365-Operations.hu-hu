@@ -62,3 +62,6 @@ Alapértelmezésben a **Maximális végrehajtási idő** beállítás nem érhet
 
 - **Modul:** *Raktárkezelés*
 - **Funkció neve:** *Raktárkezelés készleten lévő bejegyzései karbantartási feladatának maximális végrehajtási ideje*
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

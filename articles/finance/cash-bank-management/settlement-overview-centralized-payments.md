@@ -107,3 +107,6 @@ Szállítói kifizetések esetében a kifizető jogi személy a jogi személytő
 
 ## <a name="withholding-tax"></a>Adóelőleg
 A számlához társított szállítókód alapján lehet meghatározni, hogy kell-e adóelőleget számítani. Ha az adóelőleg érvényes, a számlához társított jogi személlyel együtt számítja ki a rendszer. A jogi személyek különféle pénznemeket használnak, a rendszer a használt számlához társított jogi személy árfolyamát használja.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -182,3 +182,6 @@ Ha megjegyzéseket szeretne fűzni a munkafolyamathoz az elvégzett változtatá
 2. Írja be a megjegyzéseit az **Adja meg a munkafolyamatra vonatkozó megjegyzéseket** mezőbe.
 3. Megjegyzések áttekintése. Miután hozzáadta a megjegyzéseket, nem módosíthatja azokat.
 4. Kattintson a **Hozzáadás** gombra a megjegyzések az **Előző megjegyzések** területre történő hozzáadásához.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

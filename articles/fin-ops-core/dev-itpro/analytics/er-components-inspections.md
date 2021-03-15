@@ -812,3 +812,6 @@ Ha meg szeretné tudni, hogyan szinkronizálható a formátumstruktúra egy ER-s
 [Az ER-formátumok végrehajtásának nyomon követése a teljesítménnyel kapcsolatos problémák elhárítása érdekében](trace-execution-er-troubleshoot-perf.md)
 
 [Üzletidokumentum-kezelés – áttekintés](er-business-document-management.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

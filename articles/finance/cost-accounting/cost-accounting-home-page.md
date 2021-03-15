@@ -52,3 +52,6 @@ A következő tanulási térkép fontos fogalmakat és feladatokat mutat be, ame
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

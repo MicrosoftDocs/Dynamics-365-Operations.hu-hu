@@ -84,3 +84,6 @@ Ez a folyamat a kanbanméret és -mennyiség egy adott kanbanszabályhoz törté
     * Ne feledje, hogy ez a rögzített 4-es kanbanmennyiség a kanbanmennyiség-számításból.  
 5. Kattintson a ListPanel fülre.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

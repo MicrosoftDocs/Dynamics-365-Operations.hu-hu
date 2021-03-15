@@ -53,3 +53,6 @@ Ez az eljárás bemutatja a termékéletciklus-állapotnak a kiadott alaptermék
 2. A listában jelölje meg a kiválasztott sort.
 3. A Termékéletciklus állapota mezőben adjon meg vagy válasszon ki egy értéket.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

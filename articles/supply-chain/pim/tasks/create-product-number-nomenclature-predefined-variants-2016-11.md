@@ -57,3 +57,6 @@ Ez a témakör bemutatja, hogyan állítható be termékszámozási rendszer el�
 5. A **Termékváltozat-számozási rendszer** mezőben adjon meg, vagy válasszon ki egy értéket.
 6. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -88,3 +88,6 @@ Kattintson a **Vállalati eszközkezelés** > **Lekérdezések** > **Karbantart�
 >[!NOTE]
 >Az **Eszközkezelés** modulban használt összes naptár a szervezeti felügyelet **Szervezeti adminisztráció** > **Beállítás** > **Naptárak** > **Naptárak** helyen van beállítva.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

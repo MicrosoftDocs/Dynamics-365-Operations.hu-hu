@@ -161,3 +161,6 @@ A fedezeti lépés megkezdése előtt van egy előzetes fedezeti lépés, amelyn
 - **Egy megterhelő rutin egyszerre** – ne futtassa az alaptervezést a többi további megterhelő rutinnal együtt.
 - **Vizsgálja felül a munkamenetnaplót.**
 - **Cikkek szűrése** – Az életciklus-állapot használatával kizárhat az alaptervezésből bizonyos cikkeket. (Ne használja a cikkszámokat.)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

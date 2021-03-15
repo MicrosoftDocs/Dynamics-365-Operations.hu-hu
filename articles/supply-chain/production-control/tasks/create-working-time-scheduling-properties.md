@@ -43,3 +43,6 @@ A munkaidő-ütemezési tulajdonságok segítségével munkaidő-intervallumok k
 3. Érték beírása az Érték mezőbe.
 4. Kattintson a Mentés gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

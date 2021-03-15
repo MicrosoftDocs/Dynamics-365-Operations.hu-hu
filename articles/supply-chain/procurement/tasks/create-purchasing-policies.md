@@ -56,3 +56,6 @@ Ez az témakör bemutatja, hogy hogyan lehet olyan beszerzési irányelveket lé
 4. Válassza **Bezárás** lehetőséget.
 - Most beállíthatja az egyéb irányelveket a beszerzési irányelvekhez. Jegyezze meg, hogy egy irányelvszabály-típus nem rendelkezhet olyan átfedő szabályokkal, amelyek egyaránt aktív állapotban vannak az egyetlen beszerzési webhelyen.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

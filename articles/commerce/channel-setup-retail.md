@@ -181,3 +181,6 @@ A széfek beállításához kövesse az alábbi lépéseket.
 
 [Hívásközpont csatorna beállítása](channel-setup-callcenter.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

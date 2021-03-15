@@ -40,3 +40,6 @@ Amikor a program kérdi, hogy adjon meg okkódot annak indoklására, miért vá
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

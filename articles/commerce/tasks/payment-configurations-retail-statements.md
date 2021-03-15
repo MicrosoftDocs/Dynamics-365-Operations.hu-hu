@@ -52,3 +52,6 @@ Ez a felvétel az USRT bemutatócéget használja.
     * Válassza ki a széfes befizetéses összegek feladásához használni kívánt számlát.  
 8. Kattintson a Mentés gombra.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

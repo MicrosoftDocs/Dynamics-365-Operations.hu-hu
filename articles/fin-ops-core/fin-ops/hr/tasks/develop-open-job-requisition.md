@@ -65,3 +65,6 @@ A toborzási projektek segítenek a toborzási folyamat kezelésében. Minden to
     * Az Elindítva állapot azt jelenti, hogy a projekt készen áll pályázatok fogadására.  
 33. Kattintson az OK gombra.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

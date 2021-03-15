@@ -87,3 +87,6 @@ Az adatbázis-tisztítás beállításához kövesse az alábbi lépéseket:
    - Létrehozás dátuma és időpontja
 
 3. Az **Adatbázis-napló tisztítása** lapon megadhatja, hogy mikor fusson a naplókarbantartási feladat. Alapértelmezés szerint az adatbázisnaplók 30 napig érhetők el.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

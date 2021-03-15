@@ -81,3 +81,6 @@ Ez a témakör bemutatja, hogyan hozhatja létre az értékesítési rendelések
     - A Közvetlen kiszállítás lap munkaterületként funkcionál, és lehetővé teszi a beszerzési ügynökök számára az összes, közvetlen kiszállításra állított értékesítési rendelés áttekintését, így lehetővé teszi számukra, hogy létrehozzák a megfelelő beszerzési rendeléseket. Továbbá a Visszaigazolás és Kiszállítás lapokon megtekinthetik a nyitott közvetlen kiszállítású rendeléseket és a visszaigazolt rendeléseket.  
     - Miután létrehozott egy közvetlen kiszállítású rendelést, automatikusan a Visszaigazolás lapra került. Közvetlenül erről a lapról is megerősítheti a rendelést. Amint megtörténik a beszerzés megerősítése, automatikusan átkerül a Szállítás lapra, ahonnan nyilvántartásba vehető a bevételezése.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

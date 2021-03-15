@@ -79,3 +79,6 @@ Miután *Jóváhagyott* állapotú beszerzési rendeléseket vont vissza a **Bes
 
 Ez a probléma csak a változáskezelés hatálya alá tartozó beszerzési rendelésekhez fordulhat elő. Ennek oka az, hogy a törlést olyan módosításnak kell tekinteni, amelyet jóvá kell hagyni. A jóváhagyást a rendszer automatikusan elvégezheti. Ennek megfelelően az eljárás a megszüntetett beszerzési rendelés elküldése a jóváhagyási munkafolyamatba, hogy az *Jóváhagyott* állapotba lépjen. Ezen a ponton a **Beszerzési rendelés előkészítése** munkaterületén nem fog megjelenni a beszerzési rendelések vázlatainak listájában.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

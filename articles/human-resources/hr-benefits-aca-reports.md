@@ -87,3 +87,6 @@ Ha jelentenie kell az eltartott személyeket, mert munkáltatóként a munkavál
 
 > [!NOTE]
 > A lekérdezési ablakban csak az **ACA szerint bejelentendő** megjelölésű juttatáscsomagok jelennek meg.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

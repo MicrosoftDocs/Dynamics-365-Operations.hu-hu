@@ -54,3 +54,6 @@ Miután befejezte a előfeltételeket, hozzon létre egy szortimentet, és rende
 2. Válassza ki a csatornákat vagy azon legfelső szintű csatornacsoportokat, amelyekre a szortiment vonatkozik.
 3. A szortiment termékkategóriák, az egyes termékek vagy termékváltozatok hozzáadása. Egy adott kategóriára az összes termék is felvehet, vagy egy kiválasztott termék kizárhatja a kategóriából, amely a szortiment szerepel.
 4. Közzéteszi a szortimentet. Szortiment közzétételekor automatikusan elindul a szortimentek ütemezése. Ez a folyamat hoz létre a termékek listája. A folyamat befejezése után a termékek elérhetővé válnak azon csatornák számára, amelyhez a termékszortiment hozzá van rendelve. Ha a módosítások egy közzétett szortimentet érintenek, vagy olyan csatornákat, amelyekhez a szortiment hozzá van rendelve, akkor a szortimentet frissíteni kell. A szortiment módosításkor történő frissítése érdekében futtathatja a szortimentütemezőt kötegelt feladatként.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

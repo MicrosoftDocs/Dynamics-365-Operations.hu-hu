@@ -99,3 +99,6 @@ Ez az eljárás végigvezeti egy új kereskedelmi csatorna létrehozásának, é
 65. Kattintson a Mentés gombra.
 66. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

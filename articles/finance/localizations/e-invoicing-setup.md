@@ -360,3 +360,6 @@ A következő lépések végrehajtásával kezelheti az új Elektronikus száml�
 
     > [!NOTE]
     > Ha az **Igen** lehetőséget választja, akkor a konfigurációverziók állapota automatikusan átvált **Befejezett** értékről **Megosztott** értékre.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

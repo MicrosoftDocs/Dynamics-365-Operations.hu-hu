@@ -56,3 +56,6 @@ Ez az eljárás bemutatja, hogyan konfigurálhatja a dolgozót pénztári eladá
 6. Adjon meg vagy válasszon ki egy értéket az Alapértelmezett csoport mezőben.
 7. Kattintson a Mentés gombra.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

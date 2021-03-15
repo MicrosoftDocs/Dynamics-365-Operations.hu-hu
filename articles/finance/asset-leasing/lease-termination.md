@@ -158,3 +158,6 @@ Az alábbi táblázatok a példában használt lízing **Általános** és **Fiz
 11. A megszüntetés nettó hatásának megtekintéséhez, ahol a ROU-eszköz és a lízingkötelezettség 0 (nulla) lesz, nyissa meg a Kötelezettség- és Eszköztranzakciók táblákat.
 
 A lízing állapotának most **Megszüntetve** értéken kell lennie. A rendszer erre a lízingre nem ad fel további naplóbejegyzéseket, kivéve, ha a megszüntetést sztornírozták.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

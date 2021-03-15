@@ -46,3 +46,6 @@ Ha egy szolgáltatási szakaszt állít be, a következő szakaszhoz több lehet
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

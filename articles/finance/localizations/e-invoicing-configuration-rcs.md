@@ -290,3 +290,6 @@ Ha az egyik elektronikus számlázási funkció egy másikból származik, akkor
 ## <a name="additional-resources"></a>További erőforrások
 
 - [Elektronikus számlák kibocstása a Finance és Supply Chain Management szolgáltatásokban](e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

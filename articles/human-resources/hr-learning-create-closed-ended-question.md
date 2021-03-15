@@ -68,3 +68,6 @@ A zárt kérdések lehetővé teszik, hogy válaszlehetőségeket kínáljon fel
 5. A Válaszcsoportok mezőben adjon meg, vagy válasszon ki egy értéket.
 6. Írjon be egy értéket a Szöveg mezőbe.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

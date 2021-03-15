@@ -59,3 +59,6 @@ A dokumentumok áfájának számítása az Áfacsoport és Cikkáfacsoport megad
 29. Kattintson az Áfa elemre.
 30. Kattintson az OK gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

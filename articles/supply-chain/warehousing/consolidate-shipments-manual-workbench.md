@@ -266,3 +266,6 @@ Négy szállítmányt kellett létrehozni:
 
 - [Szállítmánykonszolidációs irányelvek](about-shipment-consolidation-policies.md)
 - [Szállítmánykonszolidációs irányelvek konfigurálása](configure-shipment-consolidation-policies.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

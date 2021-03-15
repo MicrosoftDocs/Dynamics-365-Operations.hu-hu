@@ -129,3 +129,6 @@ Az üzleti dokumentumok következő listáját a következő funkció vezérli: 
 [Elektronikus jelentéskészítés (ER) céljai](electronic-reporting-destinations.md)
 
 [Elektronikus jelentési keretrendszer API módosításai az Application update 10.0.17 számára](er-apis-app10-0-17.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

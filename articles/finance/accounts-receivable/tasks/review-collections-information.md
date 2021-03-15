@@ -142,3 +142,6 @@ Ez a témakör végigvezet a beszedési adatok áttekintésén, valamint a kül�
 5. Válassza ki a **Lista megjelenítése** lehetőséget.
 - Válasszon egy vevőszámlát, vagy fogadja el az alapértelmezett adatot. Alapértelmezés szerint ez az a kiválasztott vevőszámla a listaoldalon vagy a képernyőn, amelyről megnyitotta a képernyőt. Ha a képernyőt egy listaoldalról nyitotta meg, a vevők a listában azok a vevők, amelyeket szerepeltet a gyűjteményékben, amelyek ezen az oldalon szerepelnek.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

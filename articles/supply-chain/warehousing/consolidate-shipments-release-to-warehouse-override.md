@@ -83,3 +83,6 @@ A létrehozott szállítmányok áttekintéséhez kövesse az alábbi lépéseke
 
 - [Szállítmánykonszolidációs irányelvek](about-shipment-consolidation-policies.md)
 - [Szállítmánykonszolidációs irányelvek konfigurálása](configure-shipment-consolidation-policies.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

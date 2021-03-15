@@ -59,3 +59,6 @@ Ha a kísérletekhez közzétételi csoportokat használ, akkor figyelembe kell 
 
 ## <a name="next-step"></a>Következő lépés
 [Kísérlet futtatása és nyomon követése](experimentation-run-monitor.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

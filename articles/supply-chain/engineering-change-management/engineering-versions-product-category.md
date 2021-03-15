@@ -161,3 +161,6 @@ A mérnöki anyagjegyzékek és az útvonalak abból a mérnöki verzióból jö
 Olyan termékek esetében, ahol a *verzió* termékdimenzióját használja (a tranzakciókra gyakorolt logisztikai hatással együtt), a verzió hozzáadódik az anyagjegyzékekhez és az útvonalakhoz is. Ez a viselkedés segít megkülönböztetni az egymást követő verziók anyagjegyzékeit és útvonalait, függetlenül az **Érvényesség kikényszerítése** beállítástól.
 
 Olyan termékek esetében, ahol nem a *verzió* termékdimenzióját használja (a tranzakciókra gyakorolt logisztikai hatás nélkül), a verzió nem adódik hozzá az anyagjegyzékekhez vagy az útvonalakhoz. Ezért nem lesz különbség az egymást követő verziók anyagjegyzékei és útvonalai között. Ebben az esetben erősen ajánlott az **Érvényesség kikényszerítése** beállítás *Igen* értékre való beállítása. Ily módon megakadályozhatja, hogy a mérnöki verziók átfedésben legyenek, és aktiválhatja az újabb verzió anyagjegyzékét és útvonalát anélkül, hogy először inaktiválná az előző verzió anyagjegyzékét és útvonalát. Ha ebben az esetben az **Érvényesség kikényszerítése** beállítást *Igen* értékre állítja, a legújabb verzió aktiválása előtt manuálisan inaktiválnia kell a régebbi verziók anyagjegyzékeit és útvonalait.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

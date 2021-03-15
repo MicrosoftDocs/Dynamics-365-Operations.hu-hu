@@ -131,3 +131,6 @@ Miután megtervezte és kiosztotta a kérdőívet, az csak a kijelölt válaszad
 A kérdőívek közzétehetők csak adott felhasználók vagy felhasználócsoportok számára is, illetve a hálózat minden tagja számára.
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

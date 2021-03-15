@@ -139,3 +139,6 @@ Július 20 April végső kifizetést hoz létre a 200,00 összeghez. Kedvezmény
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

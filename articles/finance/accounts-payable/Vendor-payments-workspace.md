@@ -77,3 +77,6 @@ Az alábbi táblázat mutatja be az egyes jelentésoldalakon rendelkezésre áll
 |    Vevő és szállító egyenlege     |                                                                                                                   <ul><li>Vevő és szállító egyenlege</li><li>Vevő és szállító egyenlege vállalatok szerint</li><li>Vevő és szállító egyenlege (részletek)</li></ul>                                                                                                                    |
 |    Számlák fizetési várakoztatással     |                                                                                         <ul><li>Számlák fizetési várakoztatással</li><li>Nyitott számlák fizetési várakoztatással (részletek)</li><li>Nyitott számlák fizetési várakoztatással vállalatok szerint</li><li>Nyitott számlák fizetési várakoztatással szállítói csoport szerint</li></ul>                                                                                          |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

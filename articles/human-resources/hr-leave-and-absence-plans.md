@@ -383,3 +383,6 @@ Előrejelzett egyenleg (30) = Könyvelési érték (10 × 1) + Aktuális egyenle
 - [Szabadság és távollét áttekintése](hr-leave-and-absence-overview.md)
 - [Szabadság- és távolléttípusok konfigurálása](hr-leave-and-absence-types.md)
 - [Szabadság- és távolléti tervek elhatárolása](hr-leave-and-absence-accrue.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

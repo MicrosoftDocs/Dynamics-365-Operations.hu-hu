@@ -51,3 +51,6 @@ A feladat-útmutató bemutatja a fő számla hozzáadását a meglévő számlat
 21. A **Pénznem átszámítási típusa** mezőben válassza ki a számlához tartozó átváltási árfolyamok számításához használt módszert.
 22. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

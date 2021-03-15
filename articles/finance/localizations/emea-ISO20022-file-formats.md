@@ -128,3 +128,6 @@ Az elektronikus jelentéssel kapcsolatos további tudnivalókat lásd: [Elektron
 - [Fizetési mód beállítása ISO20022-jóváírás átutalásához](./tasks/set-up-method-payment-iso20022-credit-transfer.md)
 - [Fizetési mód beállítása ISO20022 beszedési megbízáshoz](./tasks/setup-method-payment-iso20022-direct-debit.md)
 - [Szállítók és szállítói bankszámlák beállítása ISO20022 típusú átutalásokhoz](./tasks/set-up-vendor-iso20022-credit-transfers.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

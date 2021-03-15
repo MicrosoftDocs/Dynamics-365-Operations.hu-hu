@@ -78,3 +78,6 @@ Ez az eljárás bemutatja, hogyan hozhat létre egy két hűségszinttel rendelk
 39. Zárja be a lapot.
 40. Kattintson a Mentés gombra.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

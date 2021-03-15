@@ -235,3 +235,6 @@ Az országtól vagy régiótól függően az Elektronikus számlázási funkció
 - [Első lépések a mexikói Elektronikus számlázásbővítménnyel](e-invoicing-mex-get-started.md)
 - [Első lépések az olasz Elektronikus számlázásbővítménnyel](e-invoicing-ita-get-started.md)
 - [Elektronikus vevői számlák Egyiptomban](emea-egy-e-invoices.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

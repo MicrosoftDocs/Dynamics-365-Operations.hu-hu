@@ -70,3 +70,6 @@ A határidő meghosszabbítása inkább kivétel a szabályra, és eseti alapon 
 [BOPIS konfigurálása Dynamics 365 Commerce értékelési környezetben](cpe-bopis.md)
 
 [Dynamics 365 Commerce értékelési környezet választható funkcióinak konfigurálása](cpe-optional-features.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

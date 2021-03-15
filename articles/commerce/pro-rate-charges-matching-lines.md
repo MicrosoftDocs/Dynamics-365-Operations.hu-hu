@@ -174,3 +174,6 @@ Ezen számítási mód használatakor részleges visszáru esetén, ha a költs�
 [Többcsatornás speciális automatikus költségek](omni-auto-charges.md)
 
 [Automatikus költségek csatorna szerinti engedélyezése és konfigurálása](auto-charges-by-channel.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

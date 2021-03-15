@@ -945,3 +945,6 @@ A Retail Modern POS jelenleg csak Windows 8.1 alkalmazásként elérhető el asz
 ## <a name="additional-resources"></a>További erőforrások
 
 [Új vagy módosult elemek Finance and Operations kezdőlapján](whats-new-changed.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

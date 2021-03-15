@@ -80,3 +80,6 @@ Miután megadta az ajánlatkérés alapvető információit, adja meg, hogy mily
 4. Zárja be a lapot.
 5. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

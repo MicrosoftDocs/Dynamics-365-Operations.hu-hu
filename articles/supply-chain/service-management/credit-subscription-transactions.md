@@ -55,3 +55,6 @@ Ha a **Szolgáltatáskezelés paraméterei** képernyő **Könyvelések sztorní
 
 
  
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

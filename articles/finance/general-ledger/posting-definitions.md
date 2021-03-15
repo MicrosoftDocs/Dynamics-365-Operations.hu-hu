@@ -61,3 +61,6 @@ Az alábbi korlátozásokkal kell számolnia a feladásdefiníció-összekapcsol
 További információkért lásd: [A feladásdefiníció példái](example-posting-definitions.md). 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

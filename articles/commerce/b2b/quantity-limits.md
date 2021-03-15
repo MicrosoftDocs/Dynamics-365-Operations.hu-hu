@@ -84,3 +84,6 @@ A B2B rendelési mennyiségi korlátok funkció Commerce webhelykészítőben va
 [Üzleti partner típusú felhasználók kezelése a B2B e-kereskedelmi webhelyeken](manage-b2b-users.md)
 
 [A B2B e-commerce webhelyekhez használt vevői számlafizetési mód konfigurálása](payment-method.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

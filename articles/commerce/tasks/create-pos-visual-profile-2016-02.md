@@ -47,3 +47,6 @@ Ez az eljárás végigveszi egy új pénztár (POS) vizuális profilja létrehoz
 17. A listában kattintson a kijelölt sorban lévő hivatkozásra.
 18. Kattintson a Mentés gombra.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

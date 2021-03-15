@@ -57,3 +57,6 @@ A Költségkönyvelésben számos módon a hozhatók létre költségelemek. Ez 
 1. Kattintson a Dimenziótagok megtekintése elemre.
     * Az importált főkönyvi számlák megtekintése költségösszetevőként, amelyre a költségek könyvelhetők.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

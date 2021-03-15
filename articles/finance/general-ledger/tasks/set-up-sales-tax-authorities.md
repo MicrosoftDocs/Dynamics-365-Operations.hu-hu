@@ -40,3 +40,6 @@ Az adóhatóságok olyan entitások amelyek felé jelenteni és fizetni kell a b
 10. Adjon meg egy számot a Lekerekítés mezőben.
 11. Kattintson a Mentés gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

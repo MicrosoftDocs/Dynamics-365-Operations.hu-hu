@@ -295,3 +295,6 @@ A Gyár 75,00 összegű kifizetést kap a 4000-es vevőre (Hegyvidéki Keresked�
 | Kinnlevőségek (Nyugati Gyár)    |              | 75,00         |
 | Esedékes a Keleti Gyártól (Nyugati Gyár) | 25,00        |               |
 | Kinnlevőségek (Nyugati Gyár)    |              | 25,00         |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

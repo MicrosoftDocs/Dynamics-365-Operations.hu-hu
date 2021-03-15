@@ -156,3 +156,6 @@ A következő ábra bemutatja, milyen hatása van a LIFO dátum készletmodellne
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

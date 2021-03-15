@@ -107,3 +107,6 @@ A következő táblázat felsorolja a továbbfejlesztett banki egyeztetés impor
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

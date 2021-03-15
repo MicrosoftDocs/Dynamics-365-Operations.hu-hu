@@ -72,3 +72,6 @@ A **Kanbanfeladat ütemezése** listaoldal tartalmaz egy olyan adatterületet, a
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

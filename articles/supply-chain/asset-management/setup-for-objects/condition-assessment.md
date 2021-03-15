@@ -65,3 +65,6 @@ Ha egy eszközhöz állapotfelmérés-regisztrációt végzett, kinyomtathat egy
 
 >[!NOTE]
 >Az állapotfelmérést regisztrálhatja egy munkarendelésen is (**Eszközkezelés** > **Közös** > **Munkarendelések** > **Összes munkarendelés** > **Állapotfelmérések** gomb.)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

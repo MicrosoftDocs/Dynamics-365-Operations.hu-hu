@@ -58,3 +58,6 @@ Annak a dolgozónak az esetében, akinek a számára engedélyezni kell a foglal
 Ezt a funkciót visszaportoltuk a Microsoft Dynamics AX 2012 R3 verzióba, és elérhető lesz az CU12 részeként.
 Önállóan is letölthető a 3192548 KB-számon. 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

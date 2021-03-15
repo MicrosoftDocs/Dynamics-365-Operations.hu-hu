@@ -50,3 +50,6 @@ A cikk ettől kezdve hozzá van kapcsolva a szolgáltatási objektumhoz, és a c
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

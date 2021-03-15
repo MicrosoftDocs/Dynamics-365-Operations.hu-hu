@@ -52,3 +52,6 @@ További információért tekintse át az alábbi témaköröket:
 [Banki hiteleszköz-megállapodás létrehozása akkreditívhez](tasks/create-bank-facility-agreement-letter-credit.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

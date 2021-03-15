@@ -90,3 +90,6 @@ Az **Eszköz telepítése** funkcióval egy eszközstruktúrát telepíthet egy 
 4. A **Munkavégzési helyszín** mezőben válassza ki az új helyet.
 5. Alapértelmezett módon a **Hatályos** mező értéke az aktuális dátum és időpont lesz. Választhat azonban másik dátumot és időpontot is, amikortól az eszközstruktúra telepítése hatályos.
 6. Válassza ki az **OK** lehetőséget.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

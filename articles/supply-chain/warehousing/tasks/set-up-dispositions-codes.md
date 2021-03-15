@@ -40,3 +40,6 @@ Ezzel az eljárással intézkedési kódot hozhat létre, amely mobileszközön 
 6. Írjon be egy értéket a Visszáru-iIntézkedési kód mezőbe.
     * A visszaküldési intézkedéskód meghatározza a regisztrált cikkek visszáru-rendelési folyamatának többi részét. Ebben a példában a vevőnek jóváírást kell kapnia. Adjon hozzá egy visszáru intézkedési kódot, amely egy Jóváírás műveletet tartalmaz.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

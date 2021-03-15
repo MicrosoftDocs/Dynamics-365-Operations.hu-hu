@@ -77,3 +77,6 @@ Miután a kompenzációs összegeket egy alkalmazottra nézve ellenőrizték és
 Amint egy vagy több alkalmazotti eseményállapota Jóváhagyva értékre módosul, ezek betölthetők az alkalmazottak Fix kompenzációs rekordjaiba. Ezt úgy teheti meg, hogy vagy egyenként kijelöl minden alkalmazotti eseményt, és az **Alkalmazotti eredmények** lapon az **Alkalmazotti kompenzáció betöltése** gombra kattint, vagy kattint a **Kompenzáció betöltése** lehetőségre a **Folyamateredmények** lapon az összes jóváhagyott alkalmazotti események egyszerre történő betöltéséhez.
 
 Kattintson az **OK** gombra a **Kompenzáció betöltése** párbeszédpanelen, amellyel hozzáadja a nullától különböző kompenzációs műveletsorokat az **Alkalmazott fix kompenzációja** lapon.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

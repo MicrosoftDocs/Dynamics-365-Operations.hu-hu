@@ -63,3 +63,6 @@ Ez az eljárás bemutatja a visszavonási kanbanszabály létrehozásához szük
     * Ez 2 kanbant hoz létre.  
     * Vegye figyelembe, hogy a rendszer a visszavonási kanbanszabályokra vonatkozóan 2 kanbant hozott létre, egyenként 5-öt.  Ez az eljárás utolsó lépése.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

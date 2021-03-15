@@ -54,3 +54,6 @@ A **Részletek megtekintése** beállítás több módon is elérhető:
 
 - Ha valamelyik vezérlő rendelkezik **Részletek megtekintése** lehetőséggel, és a vezérlő értékkel is rendelkezik, ez az érték fog megjelenni hivatkozásként. Rákattinthat a hivatkozásra a további részleteket tartalmazó lap megnyitásához.
 - A **Részletek megtekintése** lehetőség megtalálható továbbá a helyi menüben is. További tájékoztatást talál a jobb kattintáskor megjelenített helyi menükről az előző fejezetben.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

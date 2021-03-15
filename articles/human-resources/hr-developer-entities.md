@@ -183,3 +183,6 @@ A következő, Human Resources-entitásokon alapuló Dataverse-táblák érhető
 [A Human Resources számára elérhető virtuális táblák – GYIK](hr-admin-virtual-entity-faq.md)<br>
 [Mi az a Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)<br>
 [Terminológia frissítései](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro#terminology-updates)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

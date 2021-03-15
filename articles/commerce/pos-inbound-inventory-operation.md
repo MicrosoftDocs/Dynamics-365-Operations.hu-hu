@@ -220,3 +220,6 @@ Miután a dokumentum **Kérelmezett** állapotban van, az **Aktív** lapon láth
 ## <a name="related-topics"></a>Kapcsolódó témakörök
 
 [Kimenő készletműveletek a pénztárban](pos-outbound-inventory-operation.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

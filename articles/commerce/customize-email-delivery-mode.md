@@ -71,3 +71,6 @@ Ha a Commerce központban bizonyos kézbesítési módokhoz szeretne e-mail sabl
 [Hívásközponti rendelések létrehozása](tasks/create-call-center-orders.md)
 
 [Szállítási mód módosítása a pénztárban](pos-change-delivery-mode.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

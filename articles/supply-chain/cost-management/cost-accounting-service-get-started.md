@@ -110,3 +110,6 @@ A Költségkönyvelés szolgáltatás és Dynamics 365 Supply Chain Management k
 ## <a name="related-resources"></a>Kapcsolódó erőforrások
 
 [Költségkönyvelési szolgáltatás kezdőlap](cost-accounting-service-home.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -43,3 +43,6 @@ Ez az eljárás bemutatja, hogyan hozzon létre új termékéletciklus-állapoto
 5. A listában jelölje meg a kiválasztott sort.
 6. A Termékéletciklus állapota mezőben adjon meg vagy válasszon ki egy értéket.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

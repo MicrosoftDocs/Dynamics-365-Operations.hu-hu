@@ -154,3 +154,6 @@ Jelenleg, a közzétételi csoportok funkció csak webhelytartalmat támogat. A 
 [Sablonok és elrendezések áttekintése](templates-layouts-overview.md)
 
 [Webhely-navigáció testreszabása](customize-site-navigation.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

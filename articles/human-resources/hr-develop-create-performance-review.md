@@ -78,3 +78,6 @@ Ez a témakör ismerteti, hogyan hozható létre teljesítmény-áttekintés, é
 34. Válasza a **Felülvizsgálat** lapot. Ahogy az ellenőrzés végighalad az állapotokon, mind az alkalmazott, mind a vezető adhat hozzá megjegyzéseket az egyes célokhoz és kompetenciákhoz.  
 35. Válassza ki a **Láttamozások** lapot. A dolgozó és a vezető láttamozhatja a felülvizsgálatot. Ha minden szükséges láttamozás kész, az állapot átáll **Befejezett** értékre, és többé nem végezhető módosítás.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

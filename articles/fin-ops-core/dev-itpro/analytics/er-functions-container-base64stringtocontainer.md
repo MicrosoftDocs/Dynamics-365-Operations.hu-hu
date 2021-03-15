@@ -80,3 +80,6 @@ Ebben a példában a **\#MediaAsBase64String** adatforrás az aktuális médiame
 ## <a name="additional-resources"></a>További erőforrások
 
 [Tárolófunkciók](er-functions-category-container.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -51,3 +51,6 @@ Ez a második azon öt eljárás közül, amelyek elektronikus jelentési beáll
 4. A Bankszámlák mezőben adjon meg vagy válasszon ki egy értéket.
 5. Kattintson a Mentés gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

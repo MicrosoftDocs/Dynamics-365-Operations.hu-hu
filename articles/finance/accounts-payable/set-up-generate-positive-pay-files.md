@@ -164,3 +164,6 @@ Ha módosítania kell valamit a fizetési ellenőrző fájlban, akkor vissza tud
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

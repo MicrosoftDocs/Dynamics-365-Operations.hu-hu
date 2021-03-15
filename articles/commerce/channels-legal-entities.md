@@ -85,3 +85,6 @@ A következő kép egy példa jogi személy részleteit mutatja.
 [Csatornák áttekintése](channels-overview.md)
 
 [Csatornák beállításának előfeltételei](channels-prerequisites.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

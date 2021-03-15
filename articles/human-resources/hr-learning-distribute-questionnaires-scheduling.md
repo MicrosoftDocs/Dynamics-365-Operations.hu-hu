@@ -129,3 +129,6 @@ A Kérdőív-ütemezés lehetővé teszi a kérdőívek tervezését és több v
 2. Kattintson a Vége gombra.
 3. Kattintson az OK gombra.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

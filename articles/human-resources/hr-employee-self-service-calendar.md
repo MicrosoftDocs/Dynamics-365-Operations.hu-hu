@@ -72,3 +72,6 @@ A naptárak a felettes vagy a részleg alapján is szűrhetők. Az elsődleges b
 
 A naptár beállításaival kapcsolatos további tudnivalókat lásd: [Naptárparaméterek konfigurálása](hr-leave-and-absence-parameters.md?configure-calendar-parameters).
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

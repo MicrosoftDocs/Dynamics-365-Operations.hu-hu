@@ -150,3 +150,6 @@ Ez a gyorslap kiemeli a kiválasztott szállítási alternatíva hatását. Ha a
 ## <a name="additional-resources"></a>További erőforrások
 
 [Rendelési ígéretek](delivery-dates-available-promise-calculations.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

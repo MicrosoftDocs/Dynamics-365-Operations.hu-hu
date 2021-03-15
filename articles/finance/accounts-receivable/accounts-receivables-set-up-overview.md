@@ -109,3 +109,6 @@ További tudnivalókért lásd: [Követelések és beszedések a Kinnlevőségek
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

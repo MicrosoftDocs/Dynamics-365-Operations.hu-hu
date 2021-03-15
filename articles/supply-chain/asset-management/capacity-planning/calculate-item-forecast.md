@@ -59,3 +59,6 @@ Ez akkor lehet hasznos, ha egy adott időszakra vonatkozóan áttekintést szere
 8. Kattintson a **Dimenziók megjelenítése** gombra, ha meg szeretné tekinteni a cikkekhez kapcsolódó terméket, tárolóhelyet vagy nyomon követési dimenziókat. Jelölje be a megfelelő jelölőmezőket, és kattintson az **OK** gombra.
 
 ![1. ábra](media/02-capacity-planning.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

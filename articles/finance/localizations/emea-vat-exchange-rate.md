@@ -58,3 +58,6 @@ Miután beállította a rendszert az áfaárfolyamok használatára, ha be kell 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

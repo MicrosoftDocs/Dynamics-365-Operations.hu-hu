@@ -242,3 +242,6 @@ A tábla a következő szakaszban további részletekért lásd <strong>SysQuery
 </tr>
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

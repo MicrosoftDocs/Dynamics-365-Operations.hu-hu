@@ -40,3 +40,6 @@ Ez az eljárás a termelési rendelések kiadását mutatja be. Ez az eljárás 
 6. Kattintson az OK gombra.
 7. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

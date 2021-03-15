@@ -45,3 +45,6 @@ Ez a témakör ismerteti a vevők a fizetési mód létrehozását ügyfélkifiz
 15. A **Fizetési attribútumok** lapon határozza meg, mely fizetési attribútumokat akarja használni ehhez a fizetési módhoz.
 16. Válassza a **Mentés** lehetőséget.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

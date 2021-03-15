@@ -82,3 +82,6 @@ Ha kötegelt feldolgozáshoz időkeretet állít be, figyelmeztetés küldésér
 
 1. Lépjen a **Rendszerfelügyelet** &gt; **Időszakos feladatok** &gt; **Figyelmeztetések** &gt; **Határidőn alapuló figyelmeztetések** elemre.
 2. A **Határidőn alapuló figyelmeztetések** párbeszédpanelen írja be a megfelelő adatokat.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

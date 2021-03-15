@@ -137,3 +137,6 @@ Néha előfordulhat, hogy manuálisan kell ellenőrizni a vevő hitelkeretét. P
 1.  Kattintson ide: **Értékesítés és marketing** \> **Közös** \> **Értékesítési rendelések** \> **Minden értékesítési rendelés**. Kattintson duplán egy értékesítési rendelésre.
 
 2.  Az **Értékesítési rendelés** képernyőn, a Művelet ablakban, a **Kezelés** lapon, kattintson a **Hitelkeretének ellenőrzése** elemre.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

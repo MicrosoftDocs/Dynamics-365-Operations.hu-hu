@@ -103,3 +103,6 @@ Az eljárás egy olyan szolgáltatáshoz tartozik, amely a Dynamics 365 for Oper
 21. Kattintson a Megnyitás gombra.
     * Tekintse át a létrehozott XML-fájlt, amely tartalmazza a kijelölt konfiguráció végrehajtása során gyűjtött számlálási és összegzési adatokat.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

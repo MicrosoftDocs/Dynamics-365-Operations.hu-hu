@@ -44,3 +44,6 @@ A vállalat irányelveitől függően, a visszáru-szállítmányban lévő cikk
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

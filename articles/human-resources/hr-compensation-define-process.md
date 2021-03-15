@@ -100,3 +100,6 @@ A kompenzációs folyamatokkal határozhatók meg a fix is változó kompenzáci
 10. Kattintson a Jóváhagyás lehetőségre.
     * A rekordot a jóváhagyása után be lehet tölteni az alkalmazott hivatalos kompenzációs rekordjába. Az új kompenzáció a kompenzációs folyamathoz beállított tranzakciós dátummal lép érvénybe.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

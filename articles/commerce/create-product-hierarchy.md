@@ -79,3 +79,6 @@ A kategória-attribútumok csoportjait igény szerint is hozzá lehet rendelni a
 [Termékkategóriák és termékek kezelése ](category-management-product-creation.md)
 
 [Árusítási entitások rendezési sorrendjének módosítása](custom-order-categories-nav-retail-prod-hierarchy.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -37,3 +37,6 @@ Ha ugyanahhoz az útvonalszegmenshez több szállítmányozó és szállítási 
 1. A **Név** mezőbe írja be a csoport ismertető nevét.
 1. A **Részletek** gyorslapon adjon hozzá egy sort, és válasszon ki egy szállítmányozót és egy szállítmányozói szolgáltatást. Ismételje ezt a lépést addig, amíg nem adott hozzá annyi szállítmányozót, amennyi szükséges a csoporthoz.
 1. Zárja be a lapot.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

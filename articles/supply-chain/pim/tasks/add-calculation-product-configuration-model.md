@@ -38,3 +38,6 @@ Ez az eljárás bemutatja, hogyan lehet hozzáadni egy új számítást egy term
 4. Kattintson a Bezárás gombra.
 5. Kattintson az OK gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

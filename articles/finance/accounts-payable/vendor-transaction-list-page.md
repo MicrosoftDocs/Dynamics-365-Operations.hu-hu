@@ -96,3 +96,6 @@ Minden mező más hatással rendelkezik a tranzakcióra a szerkesztésekor:
 - **Készpénzfizetési engedmény feltételeinek módosítása:** – A készpénzfizetési engedmények módosulnak az alapdátum és a készpénzfizetési engedmény feltételei alapján.
 
 Amikor befejezte a fizetési beállítások módosítását, válassza a **Bezárás** elemet a módosítások mentéséhez.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

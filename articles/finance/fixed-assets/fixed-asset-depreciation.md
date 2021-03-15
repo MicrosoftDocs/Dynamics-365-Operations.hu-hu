@@ -56,3 +56,6 @@ További tudnivalókért lásd: [Értékcsökkenési módszerek és szabályok](
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

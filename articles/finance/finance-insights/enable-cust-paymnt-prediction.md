@@ -90,3 +90,6 @@ A nyilvános előzetes verziójú funkciók csak 2. szintű tesztkörnyezetekben
 ## <a name="privacy-notice"></a>Adatvédelmi nyilatkozat
 
 Az előzetes verziók (1) kevesebb adatvédelmi és biztonsági intézkedést alkalmazhatnak, mint a Dynamics 365 Finance and Operations szolgáltatás (2) és nem vonatkozik a szolgáltatásiszint-szerződés (SLA) ehhez a szolgáltatáshoz, (3) nem használhatók olyan személyes adatok vagy más adatok feldolgozásához, melyekhez törvényi vagy jogszabályi megfelelési követelmények tartoznak, és (4) korlátozott támogatás tartozik hozzá.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

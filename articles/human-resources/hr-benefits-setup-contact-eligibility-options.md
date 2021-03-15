@@ -45,3 +45,6 @@ Ez a cikk bemutatja, hogyan lehet konfigurálni a Microsoft Dynamics 365 Human R
    | **Kor** | A juttatási konstrukció jogosult személyes kapcsolattartójának maximális életkora. Ez a mező csak akkor aktív, ha választ egy kapcsolatot. A rendszer összehasonlítja ezt az életkort a személyes kapcsolattartó számított életkorával. Számított életkor: (fedezeti dátum – személyes kapcsolattartó születési dátuma / 365). Ez a szám mindig egész szám. |
 
 4. Válassza a **Mentés** lehetőséget. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

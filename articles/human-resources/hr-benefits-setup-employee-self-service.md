@@ -72,3 +72,6 @@ A Microsoft Dynamics 365 Human Resources alkalmazásban lehetősége van csempé
    | **End** | A csempe elérhetőségének befejező dátuma és időpontja. |
 
 4. Válassza a **Mentés** lehetőséget.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

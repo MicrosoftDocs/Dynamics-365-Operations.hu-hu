@@ -93,3 +93,6 @@ Meg kell adnia azt a mérnöki kategóriát, amelyhez a termék tartozik. A kate
 A mérnöki attribútumkeresés használatával termékeket kereshet a mérnöki attribútumok értékének megkeresésével. Ezért a jellemzőik alapján könnyedén megtalálhatja a mérnöki termékeket. A termékeket egy mérnöki termékkategóriába tartozó termékek között, illetve az összes mérnöki termék között lehet keresni.
 
 A keresés elérhető a termék alapadatainak oldalain és a tranzakciós cikkek között a rendszerben, például az értékesítési rendeléseken. A tranzakciós cikkeknél a **Mérnöki attribútumkeresés** oldalon lehet keresni egy terméket. Ezt követően a **Hozzáadás új sorként** gombbal felveheti a terméket az értékesítésirendelés-sorokba. A keresési eredményekben szereplő termékek közvetlenül is hozzáadhatók a rendeléshez.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

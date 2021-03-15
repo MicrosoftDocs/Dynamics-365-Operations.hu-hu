@@ -88,3 +88,6 @@ A következő entitásokat használták **Pénzügyi teljesítmény** PowerBI.co
 - ChartofAccounts
 
 Ezeket az entitásokat számított mértékek létrehozására használták az adatmodellben. A kiszámított mértékek a fő teljesítménymutatók (KPI-k) és a tartalomban használt jelentések kiszámításához használatosak. Alapértelmezés szerint a tartalom tartalmazza az utolsó három év és a jövő évi adatokat. A jelentésekkel és az irányítópulttal kapcsolatos további számítások felvételéhez, módosíthatja a [Microsoft Excel-munkafüzetet](https://docs.microsoft.com/dynamics/s-e/). Ez a munkafüzet azon alapértelmezett adatmodell, amelyet a tartalom létrehozásához használtak.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

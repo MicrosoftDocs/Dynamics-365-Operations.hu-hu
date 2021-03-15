@@ -56,3 +56,6 @@ A feltételes kérdések segítségével meghatározhatja, hogy ilyen további k
 10. A fanézetben válassza ki a „Kérdések\Rendesen megfizetik a munkámat” lehetőséget.
     * Vegye figyelembe, hogy a kérdésfa frissül a függőségek jelzése érdekében.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

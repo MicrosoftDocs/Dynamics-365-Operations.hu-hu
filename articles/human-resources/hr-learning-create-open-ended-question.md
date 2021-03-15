@@ -38,3 +38,6 @@ A kifejtős kérdések esetében a válaszadók maguk adhatják meg válaszukat.
     * A kifejtős kérdések esetében Szöveg vagy Jegyzet beviteli típust használ a rendszer.  
 6. A Szöveg mezőbe írja be a kérdését.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

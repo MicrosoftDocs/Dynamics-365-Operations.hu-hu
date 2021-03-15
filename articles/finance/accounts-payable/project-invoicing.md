@@ -131,3 +131,6 @@ Létrehozhat negatív összegű számlát, ami így jóváírásnak minősülő 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

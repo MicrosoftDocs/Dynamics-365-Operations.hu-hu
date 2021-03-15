@@ -41,3 +41,6 @@ Ez a cikk bemutatja, hogyan várakoztatható, illetve hogyan zárható le végle
 11. Válassza az **Időszak állapotának frissítése** lehetőséget, és az állapotot állítsa **Várakoztatott**, **Nyitott** vagy **Véglegesen lezárt** értékre. A **Nyitott** lehetőség jelzi, hogy az időszakhoz lehetséges a feladás (ha a felhasználó rendelkezik hozzáféréssel). A **Várakoztatott** érték azt jelenti, hogy az időszak nem adható fel, de újra megnyitható. A **Véglegesen lezárt** azt jelenti, hogy az időszak le van zárva, és többé nem lehet megnyitni. Kiigazítások nem adhatók fel. Nem ajánlott **véglegesen lezártra** állítani egy időszakot, amíg az összes kiigazítás és vizsgálat le nem zárult.  
 12. Válassza ki a **Frissítés** lehetőséget.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

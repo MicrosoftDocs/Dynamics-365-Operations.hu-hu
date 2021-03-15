@@ -54,3 +54,6 @@ Ez a feladat-útmutató bemutatja az entitás által támogatott pénzügyi dime
 9. A **Dimenzió értéke** mezőbe írjon be egy nevet a pénzügyi dimenzióérték leírásához.
 10. A **Leírás** mezőben írja be egy leírást, amely leírja a pénzügyi dimenzió értékét.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -37,3 +37,6 @@ Ha egy importált számla a munkafolyamatba küldési folyamatban van, akkor a *
 - **Szüneteltetve** – A **Kötelezettségek paraméterei** oldalon definiált automatizált folyamatok, amelyek végigfutottak, de a folyamat legalább egy lépése sikertelen volt. A **Szüneteltetett** állapotot akkor is alkalmazza a program, ha a **Bevonás az automatizált feldolgozásba** mezőt **Nem** értékre állítja. A hibákat a **Legutóbbi eredmények megtekintése** gombbal lehet megtekinteni.
 - **Munkafolyamatban** – Az importált számlát a program elküldte a munkafolyamat-rendszerbe akár automatizált munkafolyamatba küldési folyamattal, akár manuálisan.
 - **Munkafolyamat befejezve** – Az importált számlához tartozó munkafolyamat befejeződött.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

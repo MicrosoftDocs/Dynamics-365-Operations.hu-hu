@@ -53,3 +53,6 @@ Ez a témakör a kiszálló csapatok létrehozását mutatja be. Miután létreh
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

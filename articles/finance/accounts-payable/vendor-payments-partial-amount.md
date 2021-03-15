@@ -53,3 +53,6 @@ Egyes esetekben olyan részleges fizetést hajthat végre, amelyet követően cs
 
 
 További információkért lásd: [Szállítói fizetési áttekintés](../cash-bank-management/tasks/vendor-payment-overview.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

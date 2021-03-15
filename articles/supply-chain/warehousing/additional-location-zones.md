@@ -57,3 +57,6 @@ A *További helyzóna* funkciót használata előtt be kell kapcsolni a rendszer
 7. Válassza a **Létrehozása** lehetőséget.
 8. Olyan üzeneteket kap, amelyek tájékoztatnak az új helyek hozzáadásáról. Válassza ki az **Üzenetek megjelenítése** gombot az üzenetek megtekintéséhez.
 9. Ugorjon a **Raktárkezelés \> Beállítás \> Raktár \> Helyek pontra**. Az új helyek megjelennek a listán, és az összes zónamező elérhető (azaz a meglévő zónamezőn kívül az új zónamezők is).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

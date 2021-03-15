@@ -133,3 +133,6 @@ Ebben a folyamatban szállítmányt hoz létre a cikk *csomagolási* dimenziói 
 1. Nyissa meg a mobileszközt, jelentkezzen be a 63-as raktárba, és lépjen a **Készlet \> Korrigálás be** lehetőségre.
 1. Írja be a következőt: **Loc** = *SHORT-01*. Hozzon létre új azonosítótáblát a **Cikk** = *A0001* és a **Mennyiség** = *1 db* értékekkel.
 1. Válassza ki az **OK** lehetőséget. Megjelenik a következő hibaüzenet: A SHORT-01 hely sikertelen, mert az A0001 cikk nem fér bele a hely megadott dimenzióiba. Ennek az az oka, hogy a termék *Tárolási* típusának dimenziói nagyobbak, mint a helyprofilban megadott dimenziók.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

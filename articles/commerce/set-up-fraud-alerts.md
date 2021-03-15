@@ -68,3 +68,6 @@ A rendelést menti a rendszer, de megjelöli a következőként: **Feldolgozni t
 A csalásellenőrzés miatt várakoztatott rendelések megtekintéséhez és kezeléséhez lépjen ide: **Retail és Commerce**\>**Vevők**\>**Várakoztatott rendelések**. A **Várakoztatott rendelések** oldalon jelöljön ki egy bejegyzést a listában, és kattintson a **Várakoztatott rendelés** lehetőségre, hogy olyan részletesebb nézetet lásson, amely tartalmazza a várakoztatás okát. A **Csalás részletei** gyorslapon meg lehet tekinteni azokat a szisztematikus csalási feltételeket, amelyek előfordultak a rendelés esetében, valamint itt találhatók az alkalmazott pontszámok is. Ha a rendelést manuálisan várakoztatják, megtekintheti annak a felhasználónak a megjegyzéseit, aki várakoztatott állapotba tette a rendelést; ehhez nézze meg a **Csalási megjegyzések** szakaszt a **Megjegyzések** gyorslapon.
 
 További tájékoztatás a rendelések várakoztatásával kapcsolatban itt találhatók: [ Rendelések várakoztatása: ](https://docs.microsoft.com/dynamics365/unified-operations/retail/work-with-order-holds).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

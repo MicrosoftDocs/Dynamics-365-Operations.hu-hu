@@ -60,3 +60,6 @@ Ez akkor lehet hasznos, ha egy adott időszakra vonatkozóan szeretne áttekint�
 >[!NOTE]
 >Ha csak az ütemezett munkarendelésekre vonatkozó kapacitástervezésre szeretne koncentrálni, lásd: [Kapacitásterhelés számítása ütemezett munkarendeléseken](../work-order-scheduling/calculate-capacity-load-on-scheduled-work-orders.md).
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -37,3 +37,6 @@ A megszorításon alapuló termékkonfigurációs modellek építőelemként has
 7. A Leírás mezőben adjon meg egy értéket.
 8. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

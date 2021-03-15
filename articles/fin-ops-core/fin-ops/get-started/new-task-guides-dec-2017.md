@@ -368,3 +368,6 @@ A BPM-sor törlésekor minden feladat útmutató, amely a BPM-sorhoz kapcsolódo
 **Törölt anyagjegyzéksor**
 
 - Beütemezett kanbanfeladatok mozgatása
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

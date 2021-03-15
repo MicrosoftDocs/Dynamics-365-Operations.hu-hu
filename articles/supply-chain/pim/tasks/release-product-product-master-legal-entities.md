@@ -36,3 +36,6 @@ Ez az eljárás bemutatja miként adhat ki egy terméket vagy alapterméket egy 
 6. Kattintson a Tovább gombra.
 7. Kattintson a Finish gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

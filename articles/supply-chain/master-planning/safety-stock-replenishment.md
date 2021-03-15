@@ -115,3 +115,6 @@ A biztonsági készlet követelmény-tranzakciójának teljesítése elveszti pr
 Az Alaptervezés fedezeti időszaka során a biztonsági készlet feltöltése visszanyeri prioritását. Az aktuális készlet minden egyéb igénytípus előtt használható. A késleltetés számítása során egy új logika adódik hozzá a késleltetett értékesítési sorokhoz, anyajegyzéksor-követelményekhez, és minden egyéb igénytípushoz, hogy meghatározza, hogy ezek időben történő kiszállítása lehetséges-e a biztonsági készlet használatával. Ha a rendszer arra az eredményre jut, hogy a biztonsági készlet használatával minimalizálhatja a késéseket, akkor az értékesítési-, illetve anyajegyzéksorok a kezdeti fedezetüket a biztonsági készletre cserélik, és a rendszer a biztonsági készlet feltöltését indítja el.
 
 Ha a terv vagy a cikk nem késleltetett számításra van beállítva, akkor a biztonsági készlet megszorítás ugyanolyan prioritást élvez, mint bármelyik más keresettípus. Ez azt jelenti, hogy van egy aktuális-, és egyéb elérhető készletből álló tartalék más keresettípusok előtt.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

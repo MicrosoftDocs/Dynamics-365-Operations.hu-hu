@@ -273,3 +273,6 @@ Előre jelzett csökkentési kulcsot a cikk fedezeti csoportjához kell hozzáre
 ### <a name="reduce-a-forecast-by-transactions"></a>Előrejelzés csökkentése tranzakciókkal
 
 Ha bejelöli a **Tranzakciók - csökkentési kulcs** vagy **Tranzakciók - dinamikus időszak** az előrejelzési követelmények csökkentésének módszereként, megadhatja a tranzakciók az előrejelzés csökkentéséhez. A **Fedezeti csoportok** oldalon, az **Egyéb** gyorslapon, akkor az **Előrejelzés csökkentése ennyivel:** mezőben válassza ki az **Összes tranzakció**, ha az összes tranzakció csökkentse az előrejelzést, vagy a **Rendelések** lehetőséget, ha csak az értékesítési rendelések csökkentsék az előrejelzést.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

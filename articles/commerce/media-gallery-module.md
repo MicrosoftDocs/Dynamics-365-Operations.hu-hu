@@ -103,3 +103,6 @@ A következő lépésekkel lehet hozzáadni egy médiatár-modult egy marketing 
 [Tárolómodul](add-container-module.md)
 
 [Képek feltöltése](dam-upload-images.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

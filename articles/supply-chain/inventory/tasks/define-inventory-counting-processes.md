@@ -84,3 +84,6 @@ Ez az témakör bemutatja az alapvető leltározási folyamatokon a leltárcsopo
 5. A **Raktárcsoport** mezőjének legördülő menüjében válassza ki a leltározási csoportot. Kiválaszthat egy adott leltárcsoportot, amely vonatkozik a kiválasztott raktár adott cikkére. Ha abban a raktárban leltár történik, ez a leltározási irányelv felülírja az általános leltározási irányelvet a cikkre.  
 6. Válassza a **Mentés** lehetőséget.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

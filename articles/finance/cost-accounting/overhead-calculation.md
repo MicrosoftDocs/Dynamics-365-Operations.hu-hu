@@ -1414,3 +1414,6 @@ A pénzügyi könyvelésnél egy 10 000,00 értékű költséget adnak fel az el
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

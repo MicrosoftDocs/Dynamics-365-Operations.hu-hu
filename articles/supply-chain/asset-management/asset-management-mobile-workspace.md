@@ -239,3 +239,6 @@ Töltse le és telepítse a Dynamics 365 for Unified Operations mobilalkalmazás
 1. Válassza a **Kész** lehetőséget.
 
     ![Melléklet hozzáadása a karbantartási kéréshez](media/am-mobile-10.png "Melléklet hozzáadása a karbantartási kéréshez")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

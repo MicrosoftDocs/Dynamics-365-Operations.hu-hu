@@ -226,3 +226,6 @@ Ha bejelöli a **Tranzakciók - csökkentési kulcs** vagy **Tranzakciók - dina
 ## <a name="additional-resources"></a>További erőforrások
 
 [Alaptervek áttekintése](master-plans.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

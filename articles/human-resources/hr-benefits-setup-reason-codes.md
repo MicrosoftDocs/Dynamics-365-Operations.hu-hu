@@ -79,3 +79,5 @@ A **Juttatáskezelés** munkaterület **Hivatkozások** lapján megjelenik egy d
 Miután megtörtént az okkódok áttelepítése a Személyzetkezelés eszközbe, a Juttatáskezelés funkcióban való használatuk beállítása automatikusan **Igen** lesz.
 
 [![Okkód használata a Juttatáskezelés eszközben](./media/hr-benefits-setup-reason-codes-use.png)](./media/hr-benefits-setup-reason-codes-use.png)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

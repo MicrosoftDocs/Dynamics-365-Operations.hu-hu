@@ -292,3 +292,6 @@ A skálázási egységek számítási feladatában a következő kötegelt felad
 - Hullám táblarekordjainak feldolgozása
 - A skálázási egység üzenetfeldolgozójának raktárközpontja
 - Raktári rendelési sorok mennyiségfrissítési kéréseinek feldolgozása
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

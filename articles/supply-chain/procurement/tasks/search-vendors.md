@@ -38,3 +38,6 @@ ms.locfileid: "5020704"
 6. Írjon be egy értéket az Ország/régió mezőbe.
 7. Kattintson az OK gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

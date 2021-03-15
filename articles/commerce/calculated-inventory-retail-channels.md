@@ -113,3 +113,6 @@ Javasolt, hogy ne futtassa túl gyakran ezeket a kötegelt feladatokat (néhány
 > Teljesítménnyel kapcsolatos okokból, amikor a csatornaoldali készletelérhetőségi számításokkal hoznak létre egy készletelérhetőségi kérést az e-kereskedelmi API-k vagy az új pénztári cstornaoldali készletlogika használatával, a számítás gyorsítótárat használt annak meghatározására, hogy elég idő telt-e el, hogy igazolható legyen a számítási logika újbóli futtatása. Az alapértelmezett gyorsítótár értéke 60 másodperc. Például bekapcsolta az üzlet csatorna-oldali számítását, és megtekintette egy termék tényleges készletét a **készletkeresés** oldalán. Ha a termék egy egységét értékesítik, akkor a **készletkeresés** lapja nem jeleníti meg a csökkentett készletet mindaddig, amíg a gyorsítótár ki nem ürül. Miután a felhasználó feladta a tranzakciókat a pénztárban, várnia kell 60 másodpercig, mielőtt ellenőrizheti, hogy a tényleges készlet csökkent.
 
 Ha az üzleti helyzethez kisebb gyorsítótárazási idő szükséges, forduljon a terméktámogatási szolgálat képviselőjéhez.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

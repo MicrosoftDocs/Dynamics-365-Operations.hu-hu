@@ -62,3 +62,6 @@ A teljes mértékben értékcsökkentett eszköz felosztása előtt a tárgyi es
     - Egy Beszerzési tranzakció jön létre az új eszközhöz ugyanazzal az összeggel.
 
 4. Válassza a **Feladás** parancsot.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

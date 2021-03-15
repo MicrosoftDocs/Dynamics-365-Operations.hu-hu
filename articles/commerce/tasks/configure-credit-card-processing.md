@@ -61,3 +61,6 @@ Ez az eljárás végigveszi a fizetési szolgáltatók listája megtekintéséne
 24. Jelölje be az Új hitelkártyák alapértelmezett feldolgozója jelölőnégyezetet.
 25. Kattintson a Mentés gombra.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

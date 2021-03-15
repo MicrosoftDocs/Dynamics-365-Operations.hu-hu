@@ -41,3 +41,6 @@ Több fizetési ütemezés jóváhagyásához kövesse az alábbi lépéseket.
     - Az összes könyv jóváhagyásához kapcsolja be az **Összes könyvhöz** paramétert.
 
 Az újonnan visszaigazolt könyvekre vonatkozó információk a **Megerősített könyvek** oldalon láthatók. A kifizetési ütemezések jóváhagyása után a rendszer a lízingek alapján feladja a kezdeti megjelenítési naplóbejegyzéseket.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

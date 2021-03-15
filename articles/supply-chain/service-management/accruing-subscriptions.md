@@ -151,3 +151,6 @@ Megadhatja az elhatárolt bevétel feladása során létrehozott főkönyvi tran
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -68,3 +68,6 @@ Ez a lap a következőkhöz kapcsolódó dokumentációkhoz biztosít hivatkozá
 ## <a name="configure-continuity-programs"></a>Folytonossági programok konfigurálása
 
 [Folytonossági programok beállítása hívásközpontok számára](set-up-continuity-program.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

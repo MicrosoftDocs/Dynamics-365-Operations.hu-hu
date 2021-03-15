@@ -82,3 +82,6 @@ A szállítói számla függő állapotban marad, amíg a tényleges szállító
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

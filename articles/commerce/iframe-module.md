@@ -76,3 +76,6 @@ Ha fel szeretne venni egy iFrame modult egy oldalra egy külső videó bemutatá
 [Modulkönyvtár – áttekintés](starter-kit-overview.md)
 
 [Tartalomra vonatkozó biztonsági irányelv (CSP) kezelése](manage-csp.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

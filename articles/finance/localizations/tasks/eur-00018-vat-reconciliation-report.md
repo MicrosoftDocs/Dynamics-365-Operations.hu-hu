@@ -40,3 +40,6 @@ Ez az eljárás bemutatja, hogyan készíthető el az izlandi és norvég jogala
 6. Válassza az Igen lehetőséget a Részletek megjelenítése mezőben.
 7. Kattintson az OK gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

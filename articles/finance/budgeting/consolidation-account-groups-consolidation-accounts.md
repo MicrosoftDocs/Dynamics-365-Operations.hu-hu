@@ -53,3 +53,6 @@ További információkért lásd: [Konszolidációs csoportok és további konsz
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

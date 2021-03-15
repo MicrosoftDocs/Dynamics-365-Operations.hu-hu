@@ -63,3 +63,6 @@ A nyersanyag-kitárolási munka a kiadás során jön létre. A munka csak ahhoz
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

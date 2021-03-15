@@ -39,3 +39,6 @@ Az eljárás bemutatja, hogyan naplózhatók a feladott naplóbejegyzések. Ez a
 9. Kattintson az **OK** gombra a szűrőoldal bezárásához.
 10. Kattintson az **OK** gombra a naplózási folyamat elindításához. A folyamat befejezése után jelentés készül.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

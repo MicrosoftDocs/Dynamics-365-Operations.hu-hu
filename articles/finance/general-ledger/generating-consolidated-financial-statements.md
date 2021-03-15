@@ -223,3 +223,6 @@ Annak érdekében, hogy a pénznemek használatakor helyesen átváltott összeg
 További információért a konszolidációról, és a pénznem átváltásokhoz tekintse meg jelen témakör szülő témakörét, [Pénzügyi konszolidáció és devizaátváltás áttekintése](./financial-consolidations-currency-translation.md).
 
 A konszolidáció részleteinek online úton történő megadásával kapcsolatos további információkért tekintse meg a következőt: [Online pénzügyi konszolidációk](./consolidate-online.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

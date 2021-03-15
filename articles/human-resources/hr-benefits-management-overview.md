@@ -97,3 +97,6 @@ Néhány módosítását fel kell dolgoznia, hogy aktiválja azokat.
 - [Élettartam-eseményekre vonatkozó jogosultságok feldolgozása](hr-benefits-process-life-event-eligibility.md)
 - [Mértékmódosítás feldolgozása](hr-benefits-process-rate-changes.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -142,3 +142,6 @@ Kövesse az alábbi lépéseket a forgatókönyv letiltásához.
 2. A eset mozaikján válassza a **Konfigurálás** elemet.
 3. Válassza a **Következő** lehetőséget a varázsló utolsó oldalára lépéshez.
 4. Állítsa be a lehetőséget a forgatókönyv letiltásához.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

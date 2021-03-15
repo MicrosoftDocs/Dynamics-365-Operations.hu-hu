@@ -57,3 +57,6 @@ A következő lépések segítségével tudja átadni a tevékenységet egy más
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

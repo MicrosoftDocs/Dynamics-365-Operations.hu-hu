@@ -396,3 +396,6 @@ Ennél a forgatókönyvnél a 3. raklapot el fogja fogadni a program.
 1. Válassza ki a lap tetején látható Menü gombot (**≡**), majd válassza a **Mégsem** lehetőséget a menühöz való visszatéréshez.
 
 Most már bezárhatja a mobilalkalmazást.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

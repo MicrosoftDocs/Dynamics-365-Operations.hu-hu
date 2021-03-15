@@ -52,3 +52,6 @@ Ez az eljárás az USMF bemutatócéget használja. Ezt az eljárást a termelé
 3. Válassza ki az **OK** lehetőséget.
 4. **Tervezett rendelések** kiválasztása.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

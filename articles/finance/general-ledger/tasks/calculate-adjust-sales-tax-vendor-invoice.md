@@ -43,3 +43,6 @@ Ez a témakör bemutatja, hogyan lehet helyesbíteni az áfát egy szállítói 
 13. Válassza ki az **OK** lehetőséget.
 14. Válassza a **Mentés** lehetőséget.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -61,3 +61,6 @@ Ez a példa egy eszköz hibás költségellenőrzési számítását jeleníti m
     ![1. ábra](media/05-controlling-and-reporting.png)
 
 A hibák beállításával kapcsolatos tudnivalókat lásd a [Hibakezelés](../setup-for-work-orders/fault-management.md) témakörben.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

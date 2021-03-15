@@ -61,3 +61,6 @@ A dolgozók számára a regisztrációk számos különféle típusa áll rendel
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

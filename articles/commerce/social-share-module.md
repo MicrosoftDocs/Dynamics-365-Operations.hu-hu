@@ -81,3 +81,6 @@ Közösségimédia-modul hozzáadásához egy vásárlásmező-modulhoz kövesse
 [Vásárlásmező-modul](add-buy-box.md)
 
 [Cookie-k megfelelősége](cookie-compliance.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

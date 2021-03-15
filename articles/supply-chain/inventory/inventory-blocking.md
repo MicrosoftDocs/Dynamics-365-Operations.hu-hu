@@ -69,3 +69,6 @@ Megadhatja, hogy mely készletállapotok zároló állapotok, a **Készletzárol
 [Minőségkezelési folyamatok](quality-management-processes.md)
 
 [Áru minőségének ellenőrzése](tasks/inspect-quality-goods.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

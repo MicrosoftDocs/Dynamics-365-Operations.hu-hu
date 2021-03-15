@@ -83,3 +83,6 @@ Ha véges anyagokkal dolgozik, az ütemezés a termeléshez szükséges anyagok 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

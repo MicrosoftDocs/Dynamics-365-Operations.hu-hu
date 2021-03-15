@@ -48,3 +48,6 @@ Ezen eljárás futtatásához szükség van legalább egy elérhető termékkonf
     * Aktiválja a termékmodell-verziót. Egyszerre csak egy termék lehet aktív egy termékmodell esetében.  
 13. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

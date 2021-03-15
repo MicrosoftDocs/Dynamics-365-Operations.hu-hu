@@ -66,3 +66,6 @@ A további könyvelési bejegyzések (tartozik és követel tételek ugyanahhoz 
 
 -   A szervezetek gyakran használnak rögzített dimenziókat az olyan pénzügyi dimenziók kitöltésére, melyekre nincs szükség. Ez a helyzet általában a mérlegszámlák, például a kinnlevőségekből/kötelezettségek esetén. A számlastruktúrákat lehet úgy használni, hogy ne kövessék azokat a pénzügyi dimenziókat, amelyek általában kitöltésre kerülnek.  Eltávolíthatja a mérlegszámlák esetében a pénzügyi dimenziókat, feleslegessé téve a rögzített dimenziókat használatát.
 -   Ha a szervezet előírja a rögzített dimenziók használatát a kinnlevőségek/kötelezettségek fő számla esetén, állítsa be alapértelmezettként a rögzített dimenziót a fizetéshez, így a rögzített dimenzió értékét tárolja a fizetéshez tartozó szállítói tranzakció. Ez lehetővé teszi a rendszer számára, hogy helyreállítása a kinnlevőségek/kötelezettségek fő számlát, a rögzített dimenziók értékeit is tartalmazva. A rögzített dimenzió értékét meg lehet adni alapértelmezettként a szállítókra vagy a napló nevére vonatkozóan a fizetési naplónál.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

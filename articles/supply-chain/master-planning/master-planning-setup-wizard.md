@@ -208,3 +208,6 @@ A varázslóban a Contoso Retailer vállalathoz a következő értékeket adták
     - **Válasz:** „Igen, az alaptervben meghatározottak szerint.” **1 napot** kell beírni.
 
     A Contoso az üzletei jóváhagyott igénylései segítségével hoz létre tervezett beszerzési rendeléseket az üzletek feltöltése érdekében. Mivel az Alaptervezés minden nap fut, az előző nap igénylései szerepelni fognak a tervezésben.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -87,3 +87,6 @@ A 150% degresszív értékcsökkenési módszer elosztja a 150 százalékot az �
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

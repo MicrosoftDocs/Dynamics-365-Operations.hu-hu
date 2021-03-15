@@ -80,3 +80,6 @@ Attól függetlenül, hogy leképezte-e a számlákat, az ilyen típusú konszol
 
 > [!NOTE]
 > Ezzel a módszerrel a konszolidált jogi személynél az egyik alárendelt jogi személy számlatükréből hozhat létre számlatükröt. (További tudnivalókért lásd: [Konszolidációs csoportok és további konszolidációs számlák](../budgeting/consolidation-account-groups-consolidation-accounts.md).) Ezután rendeljen hozzá egy megfelelő konszolidációs átváltási elvet minden egyes konszolidált fő számlához, és futtassa a konszolidációt az összes leányvállalati jogi személyre vonatkozóan.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

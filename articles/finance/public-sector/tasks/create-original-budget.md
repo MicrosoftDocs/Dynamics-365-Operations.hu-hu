@@ -50,3 +50,6 @@ Amikor eredeti költségvetési bejegyzést hoz létre és az előzetes költsé
     * Opcionális választásokhoz kattintson a Feloldás ikonra az oldal tetején.  
 18. Kattintson a Módosítás gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

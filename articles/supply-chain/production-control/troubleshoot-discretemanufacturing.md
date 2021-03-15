@@ -141,3 +141,6 @@ A hibamennyiséget csak akkor jelentheti egy termelési rendelésen, ha a megfel
 ## <a name="can-i-trace-the-serial-numbers-of-finished-goods-against-the-serial-numbers-of-consumed-goods"></a>Nyomon követhetem a késztermékek sorozatszámát a felhasznált áruk sorozatszámával?
 
 A késztermékek sorozatszáma nem követhető nyomon a termelési rendelés által a késztermékek előállításához felhasznált anyagok sorozatszámával. Ez a forgatókönyv jelenleg nem támogatott. A megoldás az, hogy 1-es mennyiségre hoz létre termelési rendeléseket.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

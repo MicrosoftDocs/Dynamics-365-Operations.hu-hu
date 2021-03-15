@@ -163,3 +163,5 @@ A teljesítménynapló forrástípusai leírják, hogy honnan származnak a telj
 ### <a name="review-types"></a>Ellenőrzési típusok
 
 A teljesítmény-ellenőrzés típusai révén szabályozhatja egy ellenőrzés működését. Engedélyezi vagy letiltja a munkafolyamatot egy ellenőrzésnél. Ha az ellenőrzés nem használ munkafolyamatot, akkor definiálhatja azt az alapértelmezett állapotot, amelyet a rendszer a felülvizsgálat létrehozásakor használ. Meghatározhatja azt is, hogy az alkalmazott, a vezető vagy mindkettő szükséges-e az ellenőrzés láttamozáshoz.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

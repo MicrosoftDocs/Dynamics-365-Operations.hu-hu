@@ -111,3 +111,6 @@ A Commerce webhelykészítő eléréséhez nyissa meg az **E-kereskedelem** lapo
 [Tartalomkézbesítési hálózat (CDN) támogatásának hozzáadása](add-cdn-support.md)
 
 [Helyalapú áruházészlelés engedélyezése](enable-store-detection.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

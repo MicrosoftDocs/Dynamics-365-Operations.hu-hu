@@ -72,3 +72,6 @@ Ez a témakör bemutatja, hogyan lehet beállítani a szállítmányozót, és m
 9. A **Szállításiidő-kalkulátor** mezőben válasszon ki egy lehetőséget a legördülő menüben.
 10. Válassza a **Mentés** lehetőséget.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

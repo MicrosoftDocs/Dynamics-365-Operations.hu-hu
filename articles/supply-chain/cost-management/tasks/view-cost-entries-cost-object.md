@@ -38,3 +38,6 @@ Ez az eljárás bemutatja, hogyan lehet egy költségobjektum költségbejegyzé
 7. A gyorsszűrő használatával keresse meg azokat a rekordokat, ahol a Szám mezőben a „p000031” érték szerepel.
     * Ha a költség tételek üresek, 2012. január 31-re állítsa be a kezdés napját é 2012. december 31-re a befejezés napját.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

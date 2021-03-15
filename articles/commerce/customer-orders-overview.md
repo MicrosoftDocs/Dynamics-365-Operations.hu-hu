@@ -170,3 +170,6 @@ Ha a **Vevői rendelés létrehozása aszinkron módban** beállítása **Igen**
 ## <a name="additional-resources"></a>További erőforrások
 
 [Hibrid vevői rendelések](hybrid-customer-orders.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

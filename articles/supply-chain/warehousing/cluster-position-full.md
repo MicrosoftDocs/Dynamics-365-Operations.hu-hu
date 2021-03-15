@@ -275,3 +275,6 @@ Ebben a helyzetben a fürt kitárolása kész, és a felhasználó azt az utasí
     Megjelenik a „Fürt befejezve” üzenet.
 
 Ezután az **Értékesítési kitárolás** menüelemmel kitárolhatja a fennmaradó mennyiséget. Ezután az **Értékesítési rakodása** menüelemmel mozgathatja a cikkeket az előkészítési helyről a rakodási helyre.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

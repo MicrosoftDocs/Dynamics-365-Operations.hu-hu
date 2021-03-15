@@ -266,3 +266,6 @@ Az Eszközkezelésben automatikusan frissítheti a karbantartási feladattípuso
 2. A **Karbantartási feladattípus előrejelzés frissítése** párbeszédpanelen a **Belefoglalandó rekordok** gyorslapon igény szerint megadhat kijelöléseket specifikus karbantartási feladattípusokhoz Válassza ki a **Szűrőt** majd válassza a **Kiválasztás** a lehetőséget, ha ki szeretne valamit jelölni.
 3. A **Futtatás a háttérben** gyorslapon szükség szerint kötegelt feladatként is beállíthatja az automatikus frissítést.
 4. Az előrejelzés frissítése az **OK** gombot választva indítható el.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

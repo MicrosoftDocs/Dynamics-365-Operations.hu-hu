@@ -139,3 +139,6 @@ A hullám feldolgozásra kerül, és létrehoz egy munkát a rakománysorokban f
 Ha egy szállítmány **Hullámba sorolt** vagy magasabb állapotú, akkor az értékesítésirendelés-sorban szereplő mennyiség frissítése nem tükröződik a szállítmányhoz kapcsolódó rakománysorral szemben. A rakománysorban szereplő mennyiség változását közvetlenül a rakománysorban kell végrehajtani.
 
 Az ellenőrzés a rakománysorhoz létrehozott munka és a foglalás után történik. Az értékesítésirendelés-sorban történő mennyiségcsökkenés ezt követően ellenőrizve lesz a munkasor foglalásához képest.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

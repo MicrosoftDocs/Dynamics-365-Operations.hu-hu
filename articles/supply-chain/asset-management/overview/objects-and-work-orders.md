@@ -54,3 +54,6 @@ Több lépést is el kell végezni egy karbantartási feladat munkarendelésen v
 
 > [!NOTE]
 > Általánosságban a Dynamics 365 Supply Chain Management szolgáltatással és az **Eszközkezelés** modullal történő munkavégzés során válassza az **Új** lehetőséget új rekord létrehozásához, a **Szerkesztés** lehetőséget a meglévő rekord frissítéséhez, és a **Mentés** lehetőséget az új vagy szerkesztett adatok elmentéséhez.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

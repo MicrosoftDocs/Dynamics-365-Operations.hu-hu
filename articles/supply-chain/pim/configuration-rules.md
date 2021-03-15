@@ -45,3 +45,6 @@ A létező konfigurációkra nem vonatkoznak a konfigurációs szabályok késő
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

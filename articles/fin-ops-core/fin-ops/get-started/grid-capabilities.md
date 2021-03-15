@@ -293,3 +293,6 @@ Ez a szakasz az új rácsvezérlő ismert problémáinak listáját tartalmazza.
 ### <a name="quality-update-for-1009platform-update-33"></a>Minőségi frissítés a 10.0.9./Platform update 33-hoz
 
 - [KB 4550367] Az időértékek formátuma nem megfelelő.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

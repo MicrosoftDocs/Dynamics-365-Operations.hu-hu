@@ -48,3 +48,6 @@ Ez az eljárás bemutatja, hogyan hozzon létre különleges értékcsökkenési
     * A Százalék vagy Összeg alapértelmezett értéke a különleges értékcsökkenési keret beállításainak megfelelően alakul.  
 8. Adjon meg egy számot a Prioritás mezőben.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

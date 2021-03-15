@@ -72,3 +72,6 @@ Miután létrehozta a konfigurációt a konfigurációszolgáltatója alatt, a *
 A konfiguráció megosztásra kerül a külső szervezettel, és a szervezet számára elérhető a globális tárban. Innen importálható a szervezet RCS-példányába vagy Finance and Operations alkalmazásainak példányaiba.
 
 6. Ha egy külső szervezettel korábban megosztott konfigurációt megosztását vissza szeretné vonni, válassza ki a konfigurációt, majd kattintson a **Megosztás visszavonása** elemre , majd válassza az **OK** gombot.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

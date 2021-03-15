@@ -81,3 +81,6 @@ Felhasználói azonosító módosítása csak akkor változtathat meg, ha átnev
 A B2B-felhasználók implementálásához a további beállításokat itt találja: [B2B-felhasználók exportálása az Azure AD megoldásba](../implement-b2b.md).
 
 Az előre konfigurált rendszerfiókokkal kapcsolatos tudnivalókat lásd: [Előre konfigurált rendszerfiókok](../pre-configured-system-accounts.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -77,3 +77,6 @@ A legújabb szabályozó frissítésekkel kapcsolatos tervekkel kapcsolatosan te
 - Az összes tervezett és a jogszabálykövető frissítés keresése [Lifecycle Service - Problémakereső](https://lcs.dynamics.com/Logon/Index) (bejelentkezés szükséges).
 - A támogatott Honosításainak listáját, lásd a [Nemzetközi elérhetőségek útmutató dokumentumban](https://aka.ms/dynamics_365_international_availability_deck).
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

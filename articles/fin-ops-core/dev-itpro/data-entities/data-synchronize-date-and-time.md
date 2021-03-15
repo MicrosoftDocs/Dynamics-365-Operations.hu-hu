@@ -40,3 +40,6 @@ A két konverzió hatására megváltoznak a dátumok az alkalmazások között.
 4. Az **Időzónaidőzóna** beállítását módosítsa az **Egyezményes világidő** lehetőségre, és a **Nyelv** legyen **En-US**.
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

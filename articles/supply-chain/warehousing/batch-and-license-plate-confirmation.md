@@ -47,3 +47,6 @@ Ez a témakör a kötegalkalmazás és az azonosítótábla-megerősítés mobil
 
 1. Lépjen be a munka-visszaigazolás beállításához a mobileszköz menüelemeitől.  
 1. Válassza ki, hogy kötegelést vagy azonosítótábla-megerősítést szeretne végezni. Mindkét lehetőség rendelkezésre áll azoknál a munkatípus-kitárolásoknál, amelyeknél nincs engedélyezve az automatikus visszaigazolás.  
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

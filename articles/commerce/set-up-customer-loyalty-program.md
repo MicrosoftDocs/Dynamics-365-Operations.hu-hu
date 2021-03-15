@@ -150,3 +150,6 @@ Ezenkívül kiskereskedők meghatározhatnak maximális hűségesprogram jutalom
 
     > [!NOTE]
     > Egyéb időszakos kedvezményekkel, például a mennyiségi, egyszerű, kombinációs küszöbérzék kedvezményekkel szemben a szállítási engedmény nem hoz létre engedménysorokat, a szállítási díjat hozzáfűzi a a költség leírásához.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

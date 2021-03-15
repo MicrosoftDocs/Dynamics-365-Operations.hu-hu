@@ -34,3 +34,6 @@ site:technet.microsoft.com dynamics ax 2012 "keresőkifejezés"
 – vagy –
 
 site:msdn.microsoft.com dynamics ax 2012 “keresőkifejezés”
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

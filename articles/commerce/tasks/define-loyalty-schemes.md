@@ -69,3 +69,6 @@ Ez az eljárás bemutatja a hűségprogram meghatározását. Ezek a programok a
 27. Kattintson a Mentés gombra.
     * Ha megváltoztatja a hűségprogram csatornáját, le kell futtatnia a Hűségprogramok feldolgozását. Így a csatornákra megérkezik a frissített hűségprogram.  
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

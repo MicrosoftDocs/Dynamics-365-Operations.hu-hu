@@ -62,3 +62,6 @@ Ez a cikk a termelési eltérések különböző formáinak forrásait ismerteti
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

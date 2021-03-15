@@ -45,3 +45,6 @@ Ez az eljárás lehetővé teszi a toborzók számára az olyan pályázók felv
 15. Bontsa ki vagy csukja össze a Kapcsolattartási adatok szakaszt.
 16. Bontsa ki vagy csukja össze a Személyes adatok szakaszt.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

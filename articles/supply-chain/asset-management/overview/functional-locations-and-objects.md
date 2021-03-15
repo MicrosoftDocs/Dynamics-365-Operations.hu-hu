@@ -57,3 +57,6 @@ A munkavégzési helyszínek hierarchiájának kialakítása attól függ, hogy 
 A következő képen egy ügyfeleken alapuló munkavégzési helyszínre látható példa.
 
 ![Az ügyfelek alapján munkavégzési helyszíneket mutató ábra](media/04-overview-image.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

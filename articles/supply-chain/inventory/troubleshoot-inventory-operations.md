@@ -157,3 +157,6 @@ Ez a probléma akkor fordul elő, ha a készlettranzakció mennyisége olyan tiz
 
 > [!IMPORTANT]
 > Kifejezetten ajánljuk, hogy a környezetnek megfelelően körültekintően szerkessze a parancsfájlt, tesztelje tesztkörnyezetben, majd ellenőrizze az így kapott adatokat, mielőtt éles környezetben futtatja a parancsfájlt.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

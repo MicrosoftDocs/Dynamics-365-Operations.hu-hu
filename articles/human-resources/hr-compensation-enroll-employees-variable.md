@@ -41,3 +41,6 @@ A kompenzációkért és juttatásokért felelős vezető felvehet alkalmazottak
 8. A Szervezeti felülbírálások szakasz bővítésének átváltása.
     * Ha az alkalmazott teljesítményét is figyelembe kell venni, a különböző részlegek teljesítménye vagy az alkalmazott beosztásától eltérő részleg esetén a részleg felülírható. A Százalék oszlopban összesen 100-nak kell szerepelnie.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

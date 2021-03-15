@@ -95,3 +95,6 @@ Ha a DMF-hez hasonló külső forrásokat használ az adatok szerkesztéséhez v
 
 [Dátum- és időadatok](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/organization-administration/date-time-zones)<br></br>
 [A felhasználó preferált időzónái](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-users-preferred-time-zone) 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

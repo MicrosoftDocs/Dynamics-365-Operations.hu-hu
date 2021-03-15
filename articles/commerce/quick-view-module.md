@@ -77,3 +77,6 @@ A gyorsnézeti modulnak a termékgyűjtési modulhoz való hozzáadásához a a 
 [Termékgyűjtési modul](product-collection-module-overview.md)
 
 [Keresési eredmények modul](search-result-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

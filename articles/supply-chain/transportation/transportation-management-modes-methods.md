@@ -46,3 +46,6 @@ A szállítmányozási módszer létrehozásához kövesse az alábbi lépéseke
 1. Ha új szállímányozási módszert szeretne létrehozni, kattintson az **Új** gombra.
 1. Adjon meg egy egyedi Azonosítót és a szállítási mód jól felismerhető nevét.
 1. Zárja be a lapot.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

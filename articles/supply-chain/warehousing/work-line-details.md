@@ -127,3 +127,6 @@ Kitárolási munka létrehozásához kövesse az alábbi lépéseket.
 
 > [!IMPORTANT]
 > Ha a munkasor mennyiségének csak egy részét törli, akkor az elavult mennyiséget is el kell távolítania a terhelés sorból. Ellenkező esetben, hacsak a szállítási hiány nincs helyesen beállítva, a terhelési sor nem kaphat szállítási megerősítést.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

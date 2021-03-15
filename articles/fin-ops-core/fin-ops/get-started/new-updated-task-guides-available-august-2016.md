@@ -99,3 +99,6 @@ A (2016. augusztus – minden nyelv) APQC egyesített könyvtár tartalmazza a M
 [Új vagy frissített feladat-útmutatók (2016. május)](new-updated-task-guides-available-may-2016.md)
 
 [Új vagy frissített feladat-útmutatók (2016. november)](new-task-guides-november-2016.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

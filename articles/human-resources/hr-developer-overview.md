@@ -62,3 +62,6 @@ Ez a fejlesztői útmutató API és egyéni mezők hivatkozását tartalmazza. T
 - [Új vagy módosult elemek a Human Resources alkalmazásban](hr-admin-whats-new.md)
 - [Rendszergazdai útmutató](hr-admin-overview.md)
 - [Felhasználói útmutató](hr-hrpro-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

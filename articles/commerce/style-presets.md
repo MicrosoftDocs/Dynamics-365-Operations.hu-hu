@@ -127,3 +127,6 @@ Az előbeállítás stílusértékei a nyilvános webhely egészére vonatkozóa
 [Nyelvek hozzáadása a webhelyhez](add-languages-to-site.md)
 
 [Parancsfájl hozzáadása a webhely oldalaihoz a telemetria támogatásához](add-telemetry.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

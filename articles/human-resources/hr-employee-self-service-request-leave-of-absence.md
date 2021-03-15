@@ -53,3 +53,6 @@ Távollétre vonatkozó kérelmet küldhet, és megtekintheti a szabadságkérel
 ## <a name="see-also"></a>Lásd még
 
 [Szabadság felfüggesztése](hr-leave-and-absence-suspend-leave.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

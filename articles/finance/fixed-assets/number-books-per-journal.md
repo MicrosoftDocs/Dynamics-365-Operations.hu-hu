@@ -49,3 +49,6 @@ Például 5.001 tárgyi eszközazonosító van, három könyv van társítva min
 
 > [!Note] 
 > Ha az **Értékcsökkenés összegzése** paraméter be van kapcsolva az értékcsökkenési javaslat létrehozásakor, akkor a **Könyvek száma naplónként – Értékcsökkenési javaslat** mezőnek nincs hatása. Ebben az esetben a könyvek száma naplónként 6000, ami a belsőleg meghatározott korlát.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

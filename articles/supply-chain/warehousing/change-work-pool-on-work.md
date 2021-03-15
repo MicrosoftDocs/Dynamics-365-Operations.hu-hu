@@ -148,3 +148,6 @@ A **munkarészletek** lapon megtekintheti a létrehozott munkát, és kezelheti 
 > Ha megjelenik a **Munkagyűjtő módosítása** párbeszédpanel, előfordulhat, hogy a **Munkagyűjtő-azonosító** mező alapértelmezés szerint üres. Ha a mező üres, ha az **OK** gombra kattint a módosítások alkalmazásához, akkor a munkagyűjtőt teljes egészében eltávolítja a program a munkából.
 >
 > A munkagyűjtők váltásán kívül ezzel az eljárással munkagyűjtőt adhat hozzá a munkaelemekhez, amelyek nem rendelkeznek eggyel, vagy egy munkagyűjtőt távolíthat el az összes olyan munkaelemből, amely rendelkezik egy értékkel.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

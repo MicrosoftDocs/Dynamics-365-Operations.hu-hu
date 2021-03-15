@@ -68,3 +68,6 @@ Mobileszköz-menüelem beállításához a kitárolási sor áttekintésének bi
     - A többi **Megjelenített mező** mezővel legfeljebb hét további megjeleníthető mezőt adhat hozzá igény szerint. Mindegyik **Megjelenített mező** mezőben válassza ki a munkasor mező nevét. Ekkor minden sor megjelenít egy értéket a mezőben. Az értékek az itt kiválasztott sorrendben jelennek meg. Ha nem szükséges mind a hét érték, akkor üresen hagyhat egyes **Megjelenítendő mező** mezőket.
 
 1. A művelet ablaktáblán válassza a **Mentés** elemet., majd zárja be a **Mezőlista** oldalt.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -220,3 +220,6 @@ Az alábbi példák lehetséges információkat mutatnak, melyeket a jelentési 
 ## <a name="additional-resources"></a>További erőforrások
 
 [Pénzügyi jelentéskészítés](financial-reporting-intro.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

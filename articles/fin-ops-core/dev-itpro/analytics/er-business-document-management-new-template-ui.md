@@ -64,3 +64,6 @@ Kövesse az alábbi lépéseket a funkció bekapcsolásához az összes jogi sze
 Az **Új dokumentum** gomb lehetővé teszi, hogy egy másik szolgáltató által biztosított elektronikus jelentési (ER) formátum konfigurációban hozzunk létre és szerkesszünk egy sablont. Ebben a példában a szolgáltató a Microsoft. Az **Új dokumentum** elem kiválasztásakor az aktuális és más szolgáltatók által birtokolt összes sablon látható. Miután kiválasztja a sablont, szerkesztésre megnyílik. Ezt követően a szerkesztett sablon egy új, automatikusan létrejövő ER formátumkonfigurációban lesz tárolva.
 
 További tájékoztatás: [Üzleti dokumentumkezelés – áttekintés](er-business-document-management.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -54,3 +54,6 @@ A Bevándorlási reform és ellenőrzési törvény megköveteli, hogy az Egyes�
 22. A Bizonylat száma mezőben adjon meg, vagy válasszon ki egy értéket.
 23. Kattintson a Mentés gombra.
 
+
+
+[!INCLUDE[footer-include](../../../../../includes/footer-banner.md)]

@@ -44,3 +44,6 @@ Ez az eljárás bemutatja az új csomópontok létrehozását a beszerzési kate
 4. Válassza ki azokat a termékeket, amelyet hozzá szeretné adni a beszerzési kategóriához.
 5. Kattintson a nyílra a termékek **Kiválasztott** táblához való hozzáadásához.
 6. Válassza ki az **OK** lehetőséget.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

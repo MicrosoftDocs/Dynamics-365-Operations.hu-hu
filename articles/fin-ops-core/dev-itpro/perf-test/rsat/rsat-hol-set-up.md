@@ -803,3 +803,6 @@ Ebben a szakaszban egy mentett változót fog létrehozni az első tesztesethez,
 2. Ellenőrizze, hogy mindkét teszteset sikeres volt-e.
 
     ![Eredmény mező Sikeres értékre állítva mindkét tesztesetnél](./media/setup_rsa_tool_105.png)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

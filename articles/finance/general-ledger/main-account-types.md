@@ -40,3 +40,6 @@ További tudnivalókért lásd: [Fő számla kategóriáinak beállítása](task
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

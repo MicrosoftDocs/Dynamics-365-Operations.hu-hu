@@ -103,3 +103,6 @@ Ha egy pályázatot több alkalmazottnak is át kell néznie, akkor a folyamat k
 ## <a name="hiring-applicants"></a>Pályázók felvétele
 
 Használja a **alkalmazások** pályázó lapra. Pályázó felvételekor az alkalmazás rekord állapotú lesz, **alkalmazott** és az új dolgozói rekordot a kérelmező személy globáliscímjegyzék rekordja kapcsolódik. A globális címjegyzék adatait az új dolgozó rekord módosításai is megjelennek a pályázó rekordját. Így kevesebb adatot kell bevinni, ha az új dolgozó valaha a vállalaton belüli más munkakörre adna be pályázatot. Meglévő dolgozó felvételéhez új beosztásba kattintson a **Pozíció módosítása** elemre a **Pályázat állapota** legördülő listában, és az átviteli folyamat megkezdődik.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

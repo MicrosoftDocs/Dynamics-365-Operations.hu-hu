@@ -123,3 +123,6 @@ A **Hitelkeret-korrekciós** munkafolyamatok a munkafolyamat-jóváhagyási foly
 
 > [!NOTE]
 > A **Hitelkeret-korrekció** munkafolyamat létrehozásakor beállíthatja, hogy a program automatikusan feladja a korrekciókat a sorok jóváhagyása után. Egyszerűen szerepeltesse a **Napló automatikus feladása** feladatot a munkafolyamatban.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

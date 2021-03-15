@@ -159,3 +159,6 @@ A konstrukcióhoz megadhat leírást, amely segít az alkalmazottaknak a juttat�
 1. A **Juttatások kezelése** munkaterület **Konstrukciók** részén válassza a **Juttatási konstrukciók** elemet.
 
 2. Válassza a **Rugalmas jóváírási programok** lehetőséget.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

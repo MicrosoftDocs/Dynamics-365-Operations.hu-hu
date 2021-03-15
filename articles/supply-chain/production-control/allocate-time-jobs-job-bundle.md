@@ -110,3 +110,6 @@ A javított óránkénti költséget és a feladatidőt a termelési naplóba ad
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

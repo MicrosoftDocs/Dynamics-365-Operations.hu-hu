@@ -77,3 +77,6 @@ A következő napon felettese közli, hogy a számítógépek értékei 10 száz
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -139,3 +139,6 @@ További információ a következő témakörökben olvasható:
 
 - [Pénzügyi dimenziók meghatározása](tasks/define-financial-dimensions.md)
 - [Pénzügyi dimenzió alapértelmezett sablonjainak karbantartása](tasks/maintain-financial-dimension-default-templates.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

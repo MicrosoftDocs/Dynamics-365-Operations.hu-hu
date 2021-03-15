@@ -361,3 +361,6 @@ Egy opcionális, másodlagos adminisztrátori fiók is hozzáadható a B2C bérl
 [Tartalomkézbesítési hálózat (CDN) támogatásának hozzáadása](add-cdn-support.md)
 
 [Helyalapú áruházészlelés engedélyezése](enable-store-detection.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

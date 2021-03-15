@@ -98,3 +98,6 @@ A következő ábra bemutatja a **Hasonló megvásárlása hivatkozás engedély
 [Válogatott ajánlások manuális létrehozása](create-editorial-recommendation-lists.md)
 
 [Termékajánlatok GYIK-je](faq-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

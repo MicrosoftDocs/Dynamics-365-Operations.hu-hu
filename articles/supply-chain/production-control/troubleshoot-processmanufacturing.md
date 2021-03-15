@@ -40,3 +40,6 @@ A 10.0.13-as verzió előtti kiadásokban, ha nem használja a lean termelési k
 > Készletzárást készül végrehajtani %1. Az %1 egyeztetési időszak végén nem sikerült visszavezetéses költségelszámolás kiszámítását végrehajtani. Ne felejtse el végrehajtani az %1 egyeztetési időszak végén végrehajtani a visszavezetéses költségelszámolás kiszámítását. A készletekre, az eladott áruk beszerzési értékére és az eltérésekre vonatkozó becslések nem lehetnek helyesek az alfőkönyv vagy a főkönyv modulban mindaddig, amíg nem történt meg a végrehajtás.
 
 A problémát a 10.0.13-as és újabb verzióiban javítottuk. További tájékoztatást a [KB 4582468](https://fix.lcs.dynamics.com/Issue/Details?kb=4582468&bugId=468844&dbType=3&qc=fcd64080446a27382cfde3e4c3bdcfb714279185932259cd11ceb0d500617296) témakörben talál.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

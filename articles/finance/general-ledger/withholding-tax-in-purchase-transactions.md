@@ -75,3 +75,6 @@ Az adóelőleg számítása a **Szállítói kifizetési napló** alapján tört
 A származtatott adóelőleg összege le lesz vonva a szállítói kifizetésből, és a rendszer feladja az **Adóelőleg számlája** ponthoz egy kapcsolódó bizonylaton.
 
 ![Kapcsolódó bizonylatot megjelenítő adóelőlegszámla](media/withholding-tax-adjusted.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

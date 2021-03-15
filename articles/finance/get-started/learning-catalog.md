@@ -178,3 +178,6 @@ Keresse meg a megfelelő online képzést, személyes workshopokat és rendezvé
 
     :::column-end:::
 :::row-end:::
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

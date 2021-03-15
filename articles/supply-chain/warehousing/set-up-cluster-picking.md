@@ -79,3 +79,6 @@ Ha a fürtkiválasztást alkalmazzák, a cikkek megerősítése döntő fontoss�
 1. A mobileszköz menüpontjában nyissa meg a munkamegerősítés beállítási képernyőjét: **Raktárkezelés** \> **Raktárkezelés** \> **Beállítás** \> **Mobileszköz** \> **Mobileszköz menüpontjai**.
 
 1. A mobileszköz menüpontjából nyissa meg a **Munkamegerősítés beállítását**. A **Termékmegerősítés** beállítás lehetővé teszi, hogy a mobileszközről ellenőrizze a készlet minden elemét a beolvasáskor.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

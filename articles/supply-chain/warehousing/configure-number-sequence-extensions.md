@@ -91,3 +91,6 @@ A számsorozatok létrehozásához és szerkesztéséhez hajtsa végre az alább
     | Ellenőrző számjegy | Ez a szegmenstípus egy ellenőrző számjegyet ad hozzá, amely a 10. számú maradékszámítás. (Ez a viselkedés megfelel az azonosítótábla-azonosítók meglévő logikájának.) Ehhez a szegmenstípushoz az **Érték** mező értéke mindig hiányjel (*^*), a **Hossz** mező értéke pedig mindig *1*. |
 
 1. Ha meg szeretne tekinteni egy példát a végső számformátumra, tekintse át a **Szegmensek** gyorslap alján található **Formátum** mezőt.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -163,3 +163,6 @@ Minden általános probléma esetén első lépésként mindig tekintse át a Mo
 [Online fizetési eszközök mentése az Adyen összekötővel](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector-listpi)
 
 [Többcsatornás fizetések áttekintése](https://docs.microsoft.com/dynamics365/commerce/omni-channel-payments)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

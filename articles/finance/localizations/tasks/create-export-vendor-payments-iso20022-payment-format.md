@@ -49,3 +49,6 @@ Ez az ötödik azon öt eljárás közül, amelyek elektronikus jelentési beál
     3.    Írjon be egy értéket a **Fájlnév** mezőbe. Ebben a példában az euróban történő fizetés miatt a létrehozott fájl SEPA kompatibilis lesz. A ISO20022 jóváírás-átutalás és a többi szállítói fizetési dormátum is használható a fizetések létrehozására más pénznemekben.
     4.    A **Bankszámlák** mezőben adjon meg vagy válasszon ki egy értéket.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

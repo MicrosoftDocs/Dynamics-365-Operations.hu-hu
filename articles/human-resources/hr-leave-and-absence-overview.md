@@ -54,3 +54,6 @@ Az **Alkalmazotti önkiszolgáló rendszer** munkaterületen az alkalmazottak el
 [Szabadságkérelem](hr-employee-self-service-request-time-off.md)
 [Szabadság- és távollétkérelmek kezelése](hr-employee-self-service-manage-requests.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

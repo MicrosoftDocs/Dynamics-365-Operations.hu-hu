@@ -58,3 +58,6 @@ Az A, B és C cikkeket tartalmazó tervszűrő van beállítva. Az alaptervezés
 [Tervelőzmények és tervezési naplók megtekintése](plan-history-logs.md)
 
 [Tervezési feladat érvénytelenítése](cancel-planning-job.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

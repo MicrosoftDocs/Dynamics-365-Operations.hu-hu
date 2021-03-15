@@ -54,3 +54,6 @@ Most létrehozhat előfizetési tranzakciókat az előfizetéshez.
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

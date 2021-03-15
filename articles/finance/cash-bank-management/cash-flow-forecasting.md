@@ -149,3 +149,6 @@ Ezenkívül a következő oldalakon megtekintheti a pénzforgalmi előrejelzési
 - **Ellátási előrejelzés**: A **Pénzforgalmi előrejelzések** lehetőségre kattintva megtekintheti a kiválasztott cikk ellátási előrejelzéséhez társított jövőbeni pénzforgalmait.
 - **Igény-előrejelzés**: A **Pénzforgalmi előrejelzések** lehetőségre kattintva megtekintheti a kiválasztott cikk igény-előrejelzéséhez társított jövőbeni pénzforgalmait.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

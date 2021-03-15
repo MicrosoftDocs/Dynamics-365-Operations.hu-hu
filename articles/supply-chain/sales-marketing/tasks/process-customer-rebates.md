@@ -81,3 +81,6 @@ Ez az eljárás bemutatja, hogyan lehet feldolgozni az ügyfél-visszatérítés
     - A Visszatérítés elhatárolási számlán jóváírás történt, hogy a vevő jövőbeli kötelezettségét jelezze.
     - A Visszatérítés költségszámlán terhelés történt, hogy az értékesítéssel kapcsolatban felmerült költségeket jelezze.   
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -82,3 +82,6 @@ A **Készlet- és raktárkezelési paraméterek** lapon levő foglalásokhoz ké
 ### <a name="inventory-reservation-policies-on-the-production-parameters-page"></a>Készletfoglalási szabályok a Termelési paraméterek lapon
 
 A **Termelési paraméterek** **Általános** lapján levő **Foglalás** mező értéke határozza meg azt az alapértelmezett pontot a termelési folyamatban, amelyen a készletet le kell lefoglalni. Például a készletet a munka ütemezése során vagy a munka megkezdése után lehet lefoglalni.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

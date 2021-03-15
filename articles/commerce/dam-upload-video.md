@@ -72,3 +72,6 @@ Ha egyszerre több típusú eszközt (például képeket és videókat) tölt fe
 [Képfókuszpontok testreszabása](dam-custom-focal-point.md)
 
 [Statikus fájlok feltöltése és kiszolgálása](upload-serve-static-files.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

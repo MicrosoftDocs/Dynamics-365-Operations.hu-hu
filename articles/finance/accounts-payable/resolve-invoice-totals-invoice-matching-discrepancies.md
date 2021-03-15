@@ -43,3 +43,6 @@ Az eltérés azonosítása után előfordulhat, hogy fel kell vennie a kapcsolat
 További tudnivalókért lásd: [Kivételek kivizsgálása/feloldása](tasks/research-resolve-exceptions.md).
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -73,3 +73,6 @@ A termékbevételezés végrehajtása előtt meg kell erősíteni a beszerzési 
 6. Csukja össze a **Sorok** szakaszt.
 7. Kattintson az **OK** gombra a bevételezés feladásához.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

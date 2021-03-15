@@ -71,3 +71,6 @@ A kereskedők gyakran úgy döntenek, hogy a kedvezményekből kizárnak néhán
 
 > [!NOTE]
 > Ha az **Összes engedmény megakadályozása** konfiguráció **Igen** értékre van állítva, akkor a termékre nem alkalmazhatnak engedményeket. A program még a fizetőeszköz-alapú engedményeket sem alkalmazza.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

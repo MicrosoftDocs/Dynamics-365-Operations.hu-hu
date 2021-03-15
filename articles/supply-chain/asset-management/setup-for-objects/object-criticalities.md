@@ -61,3 +61,6 @@ A kritikusság beállításához először létre kell hozni a kritikusságtípu
 - A program minden alkalommal újraszámolja a munkarendelésen szereplő kritikusságot, amikor a munkarendeléshez hozzáadnak vagy róla eltávolítanak egy munkarendelési sort.
 - Ha a munkarendelés számos munkarendelési feladatot tartalmaz, akkor a rendszer mindig a **Kritikusságtípus** oldal **Szorzó** mezője szerinti legmagasabb kritikusságút használja a munkarendelésen.
 - Általában az eszközök kritikussága idővel változhat. A kritikusságot új berendezések vásárlása, felújítások stb. befolyásolhatják. Javasoljuk az eszközkritikusságok rendszeres időközönkénti felülvizsgálatát (például évente egyszer vagy kétévente), hogy biztosítsa, hogy a kritikussági meghatározások megfelelnek az aktuális termelési beállításoknak.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

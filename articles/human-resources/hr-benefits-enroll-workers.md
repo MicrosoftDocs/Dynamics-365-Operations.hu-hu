@@ -58,3 +58,6 @@ Ez az eljárás bemutatja, hogyan lehet egyetlen dolgozót besorolni egy vagy t�
 14. A listában kattintson a kijelölt sorban lévő hivatkozásra.
 15. Ezen az oldalon megtekinthető, hogy mely alkalmazottakat lettek besorolva a juttatáshoz, illetve azokat is, akik nem lettek besorolva.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

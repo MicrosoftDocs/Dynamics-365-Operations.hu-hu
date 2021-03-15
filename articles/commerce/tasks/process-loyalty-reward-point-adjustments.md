@@ -49,3 +49,6 @@ Ez az eljárás bemutatja, hogyan tekintheti meg a hűségkártyával kapcsolato
 15. Kattintson a Kártyatranzakciók lehetőségre.
 16. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

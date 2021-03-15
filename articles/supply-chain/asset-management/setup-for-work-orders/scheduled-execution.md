@@ -42,3 +42,6 @@ A munkarendelésekhez kapcsolódó ütemezett végrehajtás beállítása lehet 
 6. Válassza a **Mentés** lehetőséget.
 
 ![Ütemezett végrehajtás](media/20-setup-for-work-orders.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

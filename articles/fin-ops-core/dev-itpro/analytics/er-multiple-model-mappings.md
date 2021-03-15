@@ -182,3 +182,6 @@ A **Projektszámlamodell-leképezés (Litware)** konfiguráció **InvoiceProject
 - [ER modell-leképezés kezelése külön ER-konfigurációkban](./tasks/er-manage-model-mapping-configurations-july-2017.md)
 - [Országkörnyezet-függő ER-modell-leképezések konfigurálása](er-country-dependent-model-mapping.md)
 - [Elektronikus jelentéstételi keretrendszer API-módosításai](er-apis-app10-0-11.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

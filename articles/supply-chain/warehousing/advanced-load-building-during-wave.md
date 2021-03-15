@@ -249,3 +249,6 @@ Ez a példa azt mutatja be, hogy az ebben a témakörben korábban ismertetett b
 1. A most létrehozott értékesítési rendelésben az **Értékesítési rendelés sorai** gyorslapon válassza ki a **Sor hozzáadása** lehetőséget, ha másik sort szeretne hozzáadni.
 1. Ebben az új sorban állítsa be a **Cikkszám** mezőt *M9200* és a **Mennyiség** mezőt *1* értékre.
 1. A sorfoglaláshoz és a raktárba történő kiadáshoz ismételje meg a 6–9. sort. Mint korábban, a rendszer **új** szállítmányt hoz létre a hozzáadott sorhoz. Mivel azonban a tétel **CarAudio** elemcsoportból származik, **nem továbbítja a rakománykombinációs csoporthoz beállított megszorításokat**. Emiatt a rendszer **egy új rakományhoz adja hozzá**. Ha nem adott meg rakománykombinációs csoportot a rakomány-összeállítási sablonban, akkor ez a szállítmány hozzá lett adva az első rakományhoz.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

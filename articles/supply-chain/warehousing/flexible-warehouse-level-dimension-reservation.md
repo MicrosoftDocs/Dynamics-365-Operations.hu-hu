@@ -853,3 +853,6 @@ Az alábbi táblázatokban egy áttekintés látható, amely bemutatja, hogy a r
     - Átmozgatási rendelések és nyersanyag kitárolása
 
 - A tároló utasítási egység szerinti csomagolásra vonatkozó összevonási szabályának emgvannak a korlátai. A rendelésben véglegesített foglalások esetében azt javasoljuk, hogy ne használjon olyan tárolóépítési sablonokat, amelyek **Csomagolás utasításegység szerint** mezőjét engedélyezték. A jelenlegi rendszer a raktári munka létrehozásakor nem használ helyutasításokat. Ennek megfelelően a rendszer csak az egységszekvencia-csoport (a készletegységben) legkisebb egységét alkalmazza a tárolóra bontási hullámlépés során.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

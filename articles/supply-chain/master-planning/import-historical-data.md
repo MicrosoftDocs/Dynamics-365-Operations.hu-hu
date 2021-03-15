@@ -61,3 +61,6 @@ A korábbi igényadatok importálása után létrehozhatja az igény-előrejelz�
 
 [Statisztikai kiinduló előrejelzés létrehozása](generate-statistical-baseline-forecast.md)  
 [Adatimportálási és -exportálási feladatok áttekintése](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

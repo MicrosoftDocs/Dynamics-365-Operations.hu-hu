@@ -157,3 +157,6 @@ Tesztelési célokra hajtsa végre a letöltött SampleIncomingMessage.txt fájl
 2. Kattintson az OK gombra.
     * Tekintse át az XML-formátumú kimenetet, amely azokat az adatokat jelöli, amelyeket a kiválasztott fájlból importált, és az adatmodellbe portolt a rendszer. Vegye figyelembe, hogy az importált TXT-fájlnak csak 3 sora került feldolgozásra. A rendszer kihagyta a 4. sorban található érvénytelen IBAN-kódot, és hibaüzenetet hagyott az információs naplóban.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

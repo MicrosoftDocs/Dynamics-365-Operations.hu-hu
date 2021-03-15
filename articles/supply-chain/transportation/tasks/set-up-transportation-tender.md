@@ -47,3 +47,6 @@ Ez az eljárás bemutatja, hogyan állíthat be egy szállítási ajánlatot. Ez
 7. Kattintson a Küldés hivatkozásra.
 8. Válasszon ki egy útvonalat.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

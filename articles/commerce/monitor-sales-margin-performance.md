@@ -48,3 +48,6 @@ A legfelső kategória csomópontból induló, egészen az alapértelmezett term
 - **Kategória- és termékkezelés** munkaterület &gt; **Retail és Commerce** &gt; **Termék és kategóriák** &gt; **Üzletkezelő** &gt; **Jelentések**
 - **Árképzés és engedmények kezelése** munkaterület &gt; **Retail és Commerce** &gt; **Árképzés és engedmények** &gt; **Üzletkezelő** &gt; **Jelentések**
 - **Lekérdezések és jelentések** szekció &gt; **Retail és Commerce** &gt; **Lekérdezések és jelentések** &gt; **Értékesítési jelentések**
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

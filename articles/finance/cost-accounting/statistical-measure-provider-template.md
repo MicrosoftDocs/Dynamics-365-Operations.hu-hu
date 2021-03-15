@@ -345,3 +345,6 @@ Ha a Villamos energia előre definiált dimenziótagjának felosztási alapja fe
 ## <a name="additional-resources"></a>További erőforrások
 
 [Felosztás alapjai](allocation-bases.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

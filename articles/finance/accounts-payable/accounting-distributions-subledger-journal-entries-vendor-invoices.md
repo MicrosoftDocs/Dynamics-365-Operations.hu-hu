@@ -249,3 +249,6 @@ Ha az analitikus napló bejegyzése helytelen, amikor megtekinti azt a szállít
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

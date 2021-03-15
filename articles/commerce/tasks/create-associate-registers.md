@@ -43,3 +43,6 @@ Ez az eljárás azt mutatja be, hogy hogyan lehet pénztár (POS) jegyzéket lé
     * Az EFT POS pénztárgép száma arra szolgál, hogy tájékoztassa a fizetés feldolgozóját arról, hogy melyik fizetési terminál küld engedélyezésre vonatkozó kéréseket. Ezt az értéket gyakran a „Terminál azonosítója” vagy „TID” néven nevezik. A TID általában a fizetésre szolgáló eszközön lévő címkén található.  
 9. Kattintson a Mentés gombra.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

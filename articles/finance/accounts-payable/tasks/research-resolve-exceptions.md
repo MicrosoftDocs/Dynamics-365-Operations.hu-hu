@@ -85,3 +85,6 @@ Ez a felvétel az USMF bemutatócéget használja. A kötelezettségeket kezelő
 24. Zárja be a lapot.
 25. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

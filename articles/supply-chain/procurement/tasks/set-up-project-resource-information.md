@@ -51,3 +51,6 @@ Ez az eljárás bemutatja, hogyan állíthat be egy projekterőforrást. Ez a fe
 20. Kattintson a Mentés gombra.
 21. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -113,3 +113,6 @@ Egy útmutató társításához a Eszközkezelés modulban egy karbantartás ell
 
 - [Kettős írás – áttekintés](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-overview.md)
 - [Eszközkezelés – áttekintés](index.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

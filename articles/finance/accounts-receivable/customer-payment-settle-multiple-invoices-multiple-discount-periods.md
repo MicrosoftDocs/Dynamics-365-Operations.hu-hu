@@ -100,3 +100,6 @@ Arnie megtekintheti ezt az információt a **Vevői tranzakciók** oldalon.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

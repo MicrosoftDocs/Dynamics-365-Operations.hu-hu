@@ -107,3 +107,6 @@ A **kettős felhasználású tanúsítványok** lapon állíthatja be és kezelh
     | Nyomtatás számlára | Jelölje be ezt a jelölőnégyzetet, ha a megadott dátumtartomány során a megadott országnak címzett számlákra rá szeretné nyomtatni a tanúsítvány számát. |
     | Nyomtatás szállítólevélre | Jelölje be ezt a jelölőnégyzetet, ha a megadott dátumtartomány során a megadott országnak címzett szállítólevelekre rá szeretné nyomtatni a tanúsítvány számát. |
     | Nyomtatás az értékesítési rendelésre | Jelölje be ezt a jelölőnégyzetet, ha a megadott dátumtartomány során a megadott országnak címzett értékesítési rendelésekre rá szeretné nyomtatni a tanúsítvány számát. |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

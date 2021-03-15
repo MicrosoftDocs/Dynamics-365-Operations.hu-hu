@@ -113,3 +113,6 @@ A következő táblázat leírja a gyorsbillentyűket, amelyek akkor használhat
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

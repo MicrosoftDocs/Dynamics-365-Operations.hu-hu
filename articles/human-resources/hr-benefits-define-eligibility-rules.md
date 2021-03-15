@@ -67,3 +67,6 @@ Ez a témakör bemutatja, hogyan hozhat létre juttatásra való jogosultsági s
 10. Válassza a **Mentés** lehetőséget.
 11. Zárja be az űrlapot.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

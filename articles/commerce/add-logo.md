@@ -73,3 +73,6 @@ A frissített fejléctöredék közzététele után a webhely összes olyan olda
 
 [Parancsfájl hozzáadása a webhely oldalaihoz a telemetria támogatásához](add-telemetry.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

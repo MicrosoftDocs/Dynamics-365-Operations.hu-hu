@@ -51,3 +51,6 @@ Ez az eljárás azt mutatja, hogyan előzheti meg a fizikai, aktuális készlete
 2. Kattintson az **Igen** gombra.
 3. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

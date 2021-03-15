@@ -379,3 +379,6 @@ A 00020\_135-ös előfizetéshez tartozó első tranzakcióban az 550 eurós ela
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

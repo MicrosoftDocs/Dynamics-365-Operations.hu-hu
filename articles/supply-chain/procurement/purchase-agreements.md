@@ -113,3 +113,6 @@ Pénzügyi dimenziókat átmásolhat beszerzési szerződések fejlécébe vagy 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

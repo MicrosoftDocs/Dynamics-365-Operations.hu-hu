@@ -35,3 +35,6 @@ A V5-tanúsítványból származó **Kiszolgálóihitelesítési cél** tulajdon
 Ez a frissítés alternatív megoldást kínál a tanúsítványok hitelesítésére, ami azt jelenti, hogy biztonságos kommunikációt létesíthető.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

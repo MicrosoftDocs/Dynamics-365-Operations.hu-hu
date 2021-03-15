@@ -111,3 +111,6 @@ A számlákra rá lehet nyomtatni a csomagolóanyag súlyadatait, és jelezni le
 
 1. Lépjen a **Kinnlevőségek \> Beállítások \> Kinnlevőségek paraméterei** pontra.
 1. A **Frissítések** lap **Számla** gyorslapján állítsa be a **Csomagolóanyag-súly nyomtatása** beállítást **Igen** értékre.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -85,3 +85,6 @@ A környezet helyreállítása:
 
 > [!Warning]
 > A Power Apps környezeteket a törlést követően csak hét napig mentik. A környezetet a 7 napos időszakon belül kell helyreállítania.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

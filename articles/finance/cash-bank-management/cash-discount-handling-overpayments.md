@@ -138,3 +138,6 @@ A készpénzfizetési engedmény 10,50 értékről 10,00 értékre csökken. A k
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

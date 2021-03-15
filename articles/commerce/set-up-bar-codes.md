@@ -46,3 +46,6 @@ A vonalkódokat manuálisan és automatikusan is létre lehet hozni. A vonalkód
 ## <a name="additional-resources"></a>További erőforrások
 
 [Vonalkódmaszkok beállítása](set-up-bar-code-masks.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -100,3 +100,6 @@ A Commerce webhelykészítőben a digitális ajándékutalványok egyéni össze
 [Online funkcióprofil létrehozása](online-functionality-profile.md)
 
 [Támogatás külső ajándékutalványokhoz](./dev-itpro/gift-card.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

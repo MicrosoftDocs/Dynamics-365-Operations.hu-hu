@@ -63,3 +63,6 @@ Az **Eszközszámlálók** oldalon (**Eszközkezelés** > **Lekérdezése** > **
 >[!NOTE]
 >Egy tartományt úgy állíthat be, hogy meghatározza az eltéréseket a manuális számlálóregisztrációk között. Azt is megadhatja, hogy milyen típusú üzenetet jelenítsen meg a program, ha a regisztrációk a meghatározott tartományon kívül esnek. Az számlálók beállításával kapcsolatos további információkat lásd: [Számlálók](../setup-for-objects/counters.md).
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

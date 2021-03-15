@@ -50,3 +50,6 @@ További tájékoztatás [Pénzügyi jelentések megtekintése](view-financial-r
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

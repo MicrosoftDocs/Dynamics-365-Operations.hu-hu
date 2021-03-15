@@ -250,3 +250,6 @@ Azért, hogy biztosan a helyes értékeket adja meg a vállalata számára, mind
 ## <a name="see-also"></a>Lásd még
 
 További információkért lásd a [További tudnivalók a (dinamikus) negatív napokról](https://blogs.msdn.microsoft.com/axmfg/2015/02/19/more-about-dynamic-negative-days/) eredeti blogbejegyzést.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

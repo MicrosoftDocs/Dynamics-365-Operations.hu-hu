@@ -86,3 +86,6 @@ Jelentés exportálásához kattintson a műveleti ablakon az **Exportálás** g
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

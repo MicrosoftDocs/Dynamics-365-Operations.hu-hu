@@ -82,3 +82,6 @@ A Dynamics 365 Human Resources szabadságtípusai határozzák meg az alkalmazot
 - [Munkaidőnaptár létrehozása](hr-leave-and-absence-working-time-calendar.md)
 - [Szabadság felfüggesztése](hr-leave-and-absence-suspend-leave.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

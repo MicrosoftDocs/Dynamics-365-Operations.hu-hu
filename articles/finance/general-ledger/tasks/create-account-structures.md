@@ -60,3 +60,6 @@ Ez az útmutató bemutatja a számlastruktúra létrehozásának folyamatát. A 
 29. A **Művelet panelen** kattintson az **Aktiválás** elemre.
 30. Kattintson az **Aktiválás** gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

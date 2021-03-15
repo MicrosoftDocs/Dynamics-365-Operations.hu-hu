@@ -61,3 +61,6 @@ A következő példa bemutatja egy csatorna engedmény beállításába bevont f
 ## <a name="additional-resources"></a>További erőforrások
 
 [Ármódosítások és engedmények](price-adjustments-discounts.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

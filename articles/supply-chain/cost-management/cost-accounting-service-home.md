@@ -36,3 +36,6 @@ A Microsoft Dynamics 365 Supply Chain Management költségkönyvelési szolgált
 ## <a name="related-resources"></a>Kapcsolódó erőforrások
 
 [Első lépések a költségkönyvelési szolgáltatásban](cost-accounting-service-get-started.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

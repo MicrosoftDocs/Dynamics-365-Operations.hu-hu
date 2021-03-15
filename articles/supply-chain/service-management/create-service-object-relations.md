@@ -71,3 +71,6 @@ Kövesse az alábbi lépéseket egy szervizrendeléshez tartozó szolgáltatási
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

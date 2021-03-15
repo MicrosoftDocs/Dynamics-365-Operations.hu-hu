@@ -36,3 +36,6 @@ Ez a témakör bemutatja, hogyan hozhat létre számsorozatokat a lízingazonos�
 4. Válassza ki a **Lízingazonosító** referencia számsorozatát. Ez a számsorozat fogja használni az egyes lízingek egyedi azonosítójának létrehozásához.
 5. Válassza ki a **Folyamatazonosító** referencia számsorozatát. Ez a számsorozat fogja használni az egyes indexek átértékelsi folyamat egyedi azonosítójának létrehozásához.
 6. Válassza ki a **Megszüntetési javaslat azonosítója** referencia számsorozatát. Ez a számsorozat fogja használni az egyes megszüntetési javaslatok egyedi azonosítójának létrehozásához.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

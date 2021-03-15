@@ -80,3 +80,6 @@ Miután létrehozta a karbantartási kérésekhez szükséges életciklus-állap
 A következő ábra a **Karbantartási kérések életciklusmodellek** oldalt szemlélteti.
 
 ![Karbantartási kérés életciklusmodelljei oldal](media/06-setup-for-requests.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

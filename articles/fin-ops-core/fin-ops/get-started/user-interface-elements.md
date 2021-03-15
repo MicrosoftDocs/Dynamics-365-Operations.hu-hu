@@ -86,3 +86,6 @@ Az *eszköztár* olyan eszközöket tartalmaz, mint például a mezők hozzáad�
 A *lista* rekordok gyűjteményének a neve, amelyeket át lehet görgetni. Ezeket a rekordokat átviheti az oldalra, ha kijelöli őket. Ez a művelet gyakran egy rácsot nyit meg.
 
 ![A következő kép példákat mutat be az eszköztárakra, rácsokra és listákra.](media/user-interface-08.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

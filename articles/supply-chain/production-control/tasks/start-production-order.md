@@ -70,3 +70,6 @@ Ezzel az eljárással lehet megkezdeni egy termelési rendelést az üzemirány�
 7. Kattintson a Feladás lehetőségre.
 8. Kattintson az OK gombra.
     * Az Útvonalkártya-naplóban rögzítheti az egyes műveletekkel töltött időt. A jó és a hibás mennyiséget is jelenteni kell.  
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

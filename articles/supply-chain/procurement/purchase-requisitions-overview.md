@@ -201,3 +201,6 @@ A jóváhagyott beszerzési igénylési sorok konszolidálásához tegye a köve
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

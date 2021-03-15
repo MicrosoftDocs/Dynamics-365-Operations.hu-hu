@@ -87,3 +87,6 @@ A devizaátértékelési tranzakció ugyanazon dimenziók szerint kerül feloszt
 Ha az átértékelési tranzakciót sztorníroznia kell, válassza ki a **Sztornírozási tranzakció** gombot a **Devizaátértékelés** lap Műveleti ablaktábláján. Új devizaátértékelési előzményrekord jön létre az átértékelés megtörténte vagy sztornírozási időpontja könyvvizsgálati ellenőrzési előzményeinek megőrzése érdekében.
 
 Több átértékelés sztornírozásához a legutoljára létrehozott átértékelést kell először sztornírozni. Ezután dátum szerint folytassa a korábbi átértékelések sztornírozását. Ezután a sztornírozott időszakokra feldolgozhat új átértékeléseket.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

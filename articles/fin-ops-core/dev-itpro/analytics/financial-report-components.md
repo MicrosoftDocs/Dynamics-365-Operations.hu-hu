@@ -126,3 +126,6 @@ Amikor megnyit egy építőelemet, a többi felhasználó csak olvasásra kap ho
 ## <a name="additional-resources"></a>További erőforrások
 
 [Pénzügyi jelentéskészítés](financial-reporting-intro.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

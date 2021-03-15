@@ -107,3 +107,6 @@ Miután befejezte a záró ütemtervet, válassza a **Lezárt** lehetőséget. A
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

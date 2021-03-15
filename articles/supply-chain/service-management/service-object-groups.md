@@ -65,3 +65,6 @@ A **Szolgáltatásobjektumok** képernyő használatával rendelhet szolgáltat�
 [Szolgáltatási objektumok létrehozása](create-service-objects.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

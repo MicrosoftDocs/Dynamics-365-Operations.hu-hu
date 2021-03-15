@@ -63,3 +63,6 @@ A következő kép egy példát mutat a funkcióprofilra.
 [Képernyő-elrendezés áttekintése](pos-screen-layouts.md)       
 
 [A Retail Hardware Station konfigurálása és telepítése](retail-hardware-station-configuration-installation.md) 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

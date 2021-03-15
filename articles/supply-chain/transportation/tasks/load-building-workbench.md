@@ -66,3 +66,6 @@ Ezután hozzárendelheti a rakomány-összeállítási stratégiát egy rakomán
 1. Tekintse át a javasolt rakományokat és a javasolt rakománysorokat.
 1. A művelet ablaktáblán válassza a **Rakományok létrehozása** lehetőséget, ha a **Javasolt rakománysorok** gyorslapjon szereplő forrásdokumentum-sorokon alapuló rakományokat kíván létrehozni.
 1. Zárja be a **Rakomány-összeállítási munkaterület** oldalt.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

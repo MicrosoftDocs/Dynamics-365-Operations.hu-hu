@@ -66,3 +66,6 @@ Mivel a mérnöki vállalat tulajdonában vannak a mérnöki szempontból relev�
 
     - Amikor ezeket a dokumentumokat más jogi személyeknek adják ki, a dokumentumokat az operatív vállalat védi az eltávolítástól.
     - Más jogi személyek teljesen új, helyi dokumentumokat adhatnak hozzá. Az operatív vállalat birtokolja és karbantartja ezeket a helyi dokumentumokat.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

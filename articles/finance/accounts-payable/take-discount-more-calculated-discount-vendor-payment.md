@@ -50,3 +50,6 @@ April ezután feladja ezt a naplót. A számla teljesen ki van egyenlítve a 940
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -69,3 +69,6 @@ Ez az eljárás bemutatja csatornaspecifikus eladási árra vonatkozó kereskede
 38. A **Művelet** panelen kattintson az Értékesítés elemre.
 39. Kattintson az **Eladási ár** lehetőségre.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

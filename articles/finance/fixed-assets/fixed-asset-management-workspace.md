@@ -73,3 +73,6 @@ Az alábbi táblázat mutatja be az egyes jelentésoldalakon rendelkezésre áll
 | Értékelési leképezések        | Tárgyi eszköz részletei |
 
 Ha analitikákat is meg szeretne jeleníteni az adatokkal, akkor először frissítenie kell az AssetTransactionMeasure összesítő mértéket az **Entitástár** lapon.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

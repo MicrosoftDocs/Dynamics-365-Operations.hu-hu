@@ -62,3 +62,6 @@ A készségleképező profilokkal olyan jelenlegi alkalmazottakra vagy jelöltek
 Szakértelemprofil-elemzés létrehozásával egy dolgozó, pályázó vagy kapcsolattartó adott dátumon érvényes kompetenciáinak listáját tekintheti meg. Szakértelemhiány-elemzéssel egy személy szakértelmeit összehasonlíthatja egy adott feladathoz szükséges szakértelmi szintekkel  
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

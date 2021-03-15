@@ -64,3 +64,6 @@ A Költségbecslés a következő adatokat is tartalmazza:
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

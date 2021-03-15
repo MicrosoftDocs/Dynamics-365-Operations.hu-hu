@@ -104,3 +104,6 @@ Az ellenőrzésben nem szerepelnek a számítások. Tesztelnie kell a termék ko
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

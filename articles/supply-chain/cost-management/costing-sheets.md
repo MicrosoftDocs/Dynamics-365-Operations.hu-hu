@@ -49,3 +49,6 @@ A költségszámítási táblázat részeként jelenik meg a **Tételköltség k
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -37,3 +37,6 @@ Az időszakkód jelzi az előfizetési díj időszakának terjedelmét, máskép
 Az időszak kódjának meghatározása a szolgáltatás-előfizetési csoportban történik. Meghatározása az előfizetésekre vonatkozik a szolgáltatáselőfizetési csoporton keresztül. Minden új előfizetési díj létrehozásához javasolt kezdési dátum tartozik. Ez az időszak kezdő dátuma; ha ez az első létrehozott időszak, illetve az előző időszak vége, ha ez a második vagy egy későbbi időszak.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

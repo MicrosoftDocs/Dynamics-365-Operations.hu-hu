@@ -51,3 +51,6 @@ Beszerzési előzmények feladása előtt meg kell adnia a következő beállít
   > [!NOTE]
   > A beszerzési/beszerzés-helyesbítési javaslat paramétereiben a beszerzés előtti tranzakciók kiválasztásának dátumáig beállíthatja a **Céldátum** mezőben a dátumot.
   > Ez a funkció a 10.0.17-es és későbbi verziókban áll rendelkezésre.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

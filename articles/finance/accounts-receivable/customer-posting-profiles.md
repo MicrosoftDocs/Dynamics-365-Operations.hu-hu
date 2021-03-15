@@ -139,3 +139,6 @@ Határozza meg a következő értékeket a feladási profil beállításához:
 
 További információkért lásd: [Vevői kifizetések áttekintése](../cash-bank-management/tasks/customer-payment-overview.md).
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

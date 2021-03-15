@@ -86,3 +86,6 @@ A lépések elvégzése után a korábbi [Alapértelmezett leírások beállít�
 2. A **Hivatkozási tábla** mezőben válassza ki azt a táblát, amelyből paraméteradatokat szeretne hozzáadni a leíráshoz.
 3. A **Hivatkozási mező** mezőben válassza ki azt mezőt, amelyből paraméteradatokat szeretne hozzáadni a leíráshoz.
 4. További mezők hozzáadásához ismételje meg a 1–3. lépéseket.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

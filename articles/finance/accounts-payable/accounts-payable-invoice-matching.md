@@ -193,3 +193,6 @@ További tudnivalók: [Háromirányú egyeztetési irányelvek](three-way-matchi
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

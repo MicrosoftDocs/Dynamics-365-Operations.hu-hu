@@ -86,3 +86,6 @@ Bizonyos esetekben szükség lehet egy befejezett készletzárás sztornírozás
 > [!NOTE] 
 > Csak a legutóbb lezárt készletidőszakot lehet újra megnyitni. A korábbi készlet zárásának sztornírozása érdekében, először sztorníroznia kell minden egyes készletzárást a legutolsó zárással kezdődően.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -42,3 +42,6 @@ Ez a témakör azt mutatja be, hogyan lehet osztályozni egy terméket a kategó
 11. A **Kategória** mezőben adjon meg vagy válasszon ki egy értéket.
 12. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

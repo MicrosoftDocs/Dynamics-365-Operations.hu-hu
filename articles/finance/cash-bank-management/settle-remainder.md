@@ -69,3 +69,6 @@ A hátralék kiegyenlítéséhez tegye a következőket:
 7)  Azt is teheti, hogy kifizetési naplót hoz létre a kiegyenlített hátralékkal, vagy napló nélkül is beküldheti. Válassza ki **Igen** lehetőséget a **Szerkesztés naplóban** menüben kifizetési napló létrehozásához. A létrehozott kifizetési naplót szerkeszteni is lehet.
 8)  Kattintson a **Hátralék kiegyenlítése** elemre. Ha azt választotta, hogy hozzon létre egy naplót, a gomb módosul a **Napló létrehozása** értékre. Ehelyett kattintson a **Napló létrehozása** gombra.
 9)  Ha egy kifizetési naplót hozott létre, a napló oldal nyílik meg, miután a **Hátralék kiegyenlítése** lehetőségre kattint. Egy naplósor hozzáadódik a naplóhoz, a kiegyenlített hátralék összegével összegként, illetve a hátralék kiegyenlítésének számlájával ellenszámlaként. Ha hozzáadott egy vevőt vagy szállítót, hogy a kiegyenlítésiösszeget egy másik vevőhöz vagy szállítóhoz helyezze át, egy további sor lesz hozzáadva a naplóhoz, hogy a kiegyenlítési összeg a vevőhöz vagy beszállítóhoz legyen áthelyezve.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

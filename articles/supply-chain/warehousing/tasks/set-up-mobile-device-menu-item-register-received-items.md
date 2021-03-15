@@ -59,3 +59,6 @@ Ezt az útmutatót használhatja az USMF bemutatócégen. Ezt az eljárást a ra
 6. Válassza a **Mentés** lehetőséget.
 7. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

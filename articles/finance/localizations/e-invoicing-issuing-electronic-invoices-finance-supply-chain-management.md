@@ -93,3 +93,6 @@ A benyújtási naplók a következő további funkciókat foglalják magukban:
 - **Beküldések érvénytelenítése** – ez a funkció speciális benyújtási folyamatot tesz lehetővé olyan helyzetekben, amikor az elektronikus számlát egy külső webszolgáltatásnak kell jóváhagynia. Arra utasítja az Elektronikus számlázási bővítményt, hogy a webszolgáltatásnak olyan üzenetet küldjön, amely egy jóváhagyott elektronikus számla állapotának érvénytelenítésére szolgál a webszolgáltatás adatbázisában.
 - **Dokumentum újbóli benyújtása** – az Elektronikus számlázási bővítménybe már elküldött elektronikus dokumentum újbóli benyújtása. Teljesen új napló jön létre a **Benyújtás részletei** oldalon.
 - **Kapcsolódó beküldés küldése**
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

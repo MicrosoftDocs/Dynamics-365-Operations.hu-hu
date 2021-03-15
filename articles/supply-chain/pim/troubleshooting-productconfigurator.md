@@ -74,3 +74,6 @@ A következő kalkulációkat adhatja hozzá ezután:
 
 - *EredményTizedesérték* = *Bemeneti* × *Százalék* ÷ 100
 - *EredményEgészszám* = *EredményTizedesérték*
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

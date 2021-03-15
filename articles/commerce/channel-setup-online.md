@@ -133,3 +133,6 @@ A következő kép egy példát mutat be a teljesítési csoport hozzárendelés
 [Hívásközpont csatorna beállítása](channel-setup-callcenter.md)
 
 [Dynamics 365 fizetési összekötő az Adyen szolgáltatáshoz](../retail/dev-itpro/adyen-connector.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

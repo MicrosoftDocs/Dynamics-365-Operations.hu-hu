@@ -95,3 +95,6 @@ Ha azt szeretné, hogy az adott pénznemre vonatkozó pontossági érték eltér
 ### <a name="tables-currency-column"></a>táblák: Pénznem oszlop
 
 A megadott pénznem oszlopokhoz konfigurálható tizedesjegyek száma legfeljebb négy lehet.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

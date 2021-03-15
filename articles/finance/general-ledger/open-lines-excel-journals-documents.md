@@ -54,3 +54,6 @@ Pénzügyi dimenziók sablonhoz történő hozzáadásához további módosítá
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

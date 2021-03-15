@@ -52,3 +52,6 @@ Ez az eljárás bemutatja, hogy mely lépésekkel hozhat létre és dolgozhat fe
 19. Kattintson a Rendelés létrehozása gombra.
 20. Kattintson az Igen gombra.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

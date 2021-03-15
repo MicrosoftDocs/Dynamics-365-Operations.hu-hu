@@ -59,3 +59,6 @@ Kattintson a következőkre: **Szolgáltatáskezelés** \> **Rendszeres** \> **D
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -52,3 +52,6 @@ Ez a harmadik eljárás a nyolcból, amely a dimenzión alapuló konfiguráció-
 20. Zárja be a lapot.
 21. Zárja be a **Kiadott termék részletei** képernyőt.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

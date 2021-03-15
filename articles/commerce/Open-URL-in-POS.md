@@ -82,3 +82,6 @@ Egy URL cím pénztárban való megnyitásának beállításához kövesse az al
 5. Műveletként válassza az **URL megnyitása** elemet.
 6. Adja meg az URL-t, amelyet használni szeretne.
 7. Állítsa be, hogy az URL-cím megnyitása új ablakban szeretné-e.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

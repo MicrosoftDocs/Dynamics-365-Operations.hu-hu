@@ -71,3 +71,6 @@ Ez az eljárás bemutatja, hogyan lehet beállítani az adatokat az automatikus 
 11. Az Alulfizetés okkódja mezőben adjon meg vagy válasszon ki egy értéket.
 12. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

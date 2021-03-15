@@ -101,3 +101,6 @@ Ez az eljárás bemutatja, hogyan állítható be termékszámozás-elnevezési 
 43. Zárja be a lapot.
 44. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

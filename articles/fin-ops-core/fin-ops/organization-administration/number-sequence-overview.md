@@ -115,3 +115,6 @@ Hacsak nem törvényi előírás a folyamatos számsorozatok használata, akkor 
 Áramszünet, szoftverhiba vagy egyéb váratlan probléma esetén a rendszer nem tudja automatikusan újrahasznosítani a folyamatos számsorozatok korábbi számait. Ezért ezen elveszett sorszámok rendbetételéhez manuállis vagy automatikus tisztítási folyamatot futtathat.
 
 A tisztítási folyamat betervezésekor vegye figyelembe, hogy milyen használati terhelés alatt van éppen a szerver. Javasolt a tisztítás kötegelt feladatként történő futtatása a csúcsidőn kívüli órákban.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

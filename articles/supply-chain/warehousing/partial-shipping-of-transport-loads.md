@@ -65,3 +65,6 @@ A beállítás segítségével megerősítheti a teljes rakományt vagy részleg
 
 1. Válassza a **Raktárkezelés** \> **Rakományok** \> **Szállítási rakományok** elemet.
 2. A műveleti ablaktábla **Indítás és fogadás** lapján lévő **Megerősítés** csoportban válassza a **Szállítás** elemet.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

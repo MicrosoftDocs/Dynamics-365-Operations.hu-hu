@@ -66,3 +66,6 @@ Ezzel létrejött a munkavégzési helyszín kizárólag alapértelmezett munkav
 
 >[!NOTE] 
 >Az **Általános** gyorslapon áttekintheti a munkavégzési helyszín típusához beállított eszköztípusok számát, karbantartási terveket, az eszközattribútumok követelményeit, az engedélyezett típusokat és a munkavégzési helyszíneket. A **Munkavégzési helyszínek** mezőben látható a munkavégzési helyszín típusát használó munkavégzési helyszínek száma. A **Másolás** gombbal átmásolhatja a munkavégzési helyszín típusának beállításait a munkavégzési helyszín kiválasztott típusába.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

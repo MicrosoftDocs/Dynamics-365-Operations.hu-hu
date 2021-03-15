@@ -49,3 +49,6 @@ Az okkódok használata nem kötelező. Szabadon el lehet dönteni, hogy egy sze
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

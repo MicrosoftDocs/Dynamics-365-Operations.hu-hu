@@ -40,3 +40,6 @@ Ha a bevásárlókocsi egy soránál kiválasztja a **Kijelölt kitárolása**, 
 ## <a name="additional-resources"></a>További erőforrások
 
 [Vevői rendelések a Modern POS (MPOS) esetében](customer-orders-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

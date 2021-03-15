@@ -67,3 +67,6 @@ A cikkek beszerzésiár-rekordjait hivatkozási adatokként is használja a rend
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -104,3 +104,6 @@ A mobileszköz-menüelemek beállításával kapcsolatos további tudnivalókat 
 A *Készként jelentéssel* termelési forgatókönyvvel kapcsolatos további tudnivalókat lásd a [Raktári munkairányelvek áttekintése](warehouse-work-policies.md).
 
 További információ a bejövő rakományok kezeléséről: [Beszerzési rendelések bejövő rakományának kezelése a raktárban](inbound-load-handling.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

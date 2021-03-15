@@ -112,3 +112,6 @@ Az alábbi táblázat leírja a Raktárkezelési modulban elérhető mentett né
 | Minden hullám | Egyszerűsített | Ez az egyszerűsített nézet csak a leggyakrabban használt mezőket tartalmazza. Ily módon gyorsabb áttekintést és egyszerűbb munkafolyamatot nyújt. | Hullámfeldolgozás mentett nézete |
 | Rakománytervező munkaterület | Egyszerűsített | Ez az egyszerűsített nézet csak a leggyakrabban használt mezőket tartalmazza. Ily módon gyorsabb áttekintést és egyszerűbb munkafolyamatot nyújt. | A munkatervezési munkaterülethez mentett nézet |
 | Munka részletes adatai | Egyszerűsített | Ez az egyszerűsített nézet csak a leggyakrabban használt mezőket tartalmazza. Ily módon gyorsabb áttekintést és egyszerűbb munkafolyamatot nyújt. | A munka részleteit tartalmazó oldal mentett nézete |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

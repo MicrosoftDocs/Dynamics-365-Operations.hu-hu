@@ -88,3 +88,6 @@ A hűségprogramhoz való csatlakozáshoz létre lehet hozni egy marketinges lap
 [Fejlécmodul](author-header-module.md)
 
 [Láblécmodul](author-footer-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

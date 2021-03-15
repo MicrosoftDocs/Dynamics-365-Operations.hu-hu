@@ -57,3 +57,6 @@ A következő táblázat ismerteti a **Tényleges viszonyítva a költségvetés
 | Főkönyvek                   | A jelenlegi főkönyvi jelentés szűréséhez használható főkönyvek              |
 | Költségvetési kódok              | Költségvetési kódok a jelentések szűréséhez                                                |
 | Jogi személyek            | A jelenlegi jogi személyre vonatkozó jelentés szűréséhez használható jogi személyek |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

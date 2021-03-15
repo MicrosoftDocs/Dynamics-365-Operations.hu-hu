@@ -62,3 +62,6 @@ Ez az eljárás végigvezeti azon a folyamaton, hogyan kell a szervezeti egység
 29. Kattintson a Közzététel parancsra.
 30. Kattintson a Bezárás gombra.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

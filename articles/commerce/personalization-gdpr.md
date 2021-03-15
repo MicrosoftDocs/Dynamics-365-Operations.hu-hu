@@ -103,3 +103,6 @@ A következő példa azt mutatja be, hogyan hajthatja végre egy kiskereskedő e
 [Ajánlások létrehozása bemutató adatokkal](product-recommendations-demo-data.md)
 
 [Termékajánlatok GYIK-je](faq-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

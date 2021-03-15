@@ -65,3 +65,6 @@ Használja a **Devizaátértékelés** oldalt az **Időszakos feladatok** részb
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

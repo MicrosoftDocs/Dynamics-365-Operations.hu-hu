@@ -162,3 +162,6 @@ Ha egy egységhez beállított időszak gyakorisága kisebb, mint az **Éves** (
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

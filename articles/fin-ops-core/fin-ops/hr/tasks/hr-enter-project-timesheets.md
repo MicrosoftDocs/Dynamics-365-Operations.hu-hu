@@ -51,3 +51,6 @@ Ezen folyamat segítségével létrehozhat egy munkaidő-nyilvántartást egy ü
 21. Kattintson a **Küldés** elemre.
 22. Kattintson a **Küldés** elemre.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -79,3 +79,6 @@ Ha egy meglévő laphoz szeretne másik elrendezést kiválasztani, hajtsa végr
 
 [Dinamikus e-kereskedelmi oldalak létrehozása URL-paraméterek alapján](create-dynamic-pages.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

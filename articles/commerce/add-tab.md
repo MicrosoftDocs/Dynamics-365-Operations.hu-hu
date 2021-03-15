@@ -83,3 +83,6 @@ A lapmodul felvételéhez egy oldalra, és a kötelező tulajdonságok beállít
 [Harmonikamodul](add-accordion.md)
 
 [Szövegterület-modul](add-content-rich-block.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

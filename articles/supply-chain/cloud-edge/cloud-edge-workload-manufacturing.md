@@ -109,3 +109,6 @@ A skálázási egységen feldolgozott gyártási feladatok előzményeinek átte
 ### <a name="manufacturing-hub-to-scale-unit-message-processor-job"></a>Gyártási központból a skálázási egységbe irányuló üzenetfeldolgozó
 
 A _Gyártási központból a skálázási egységbe irányuló üzenetfeldolgozó_ feladat feldolgozza a központból a skálázási egységbe érkező adatokat. Ez a feladat automatikusan elindul, amikor a gyártási végrehajtási számítási feladat telepítve van. Azonban manuálisan is futtathatja, ha a **Termelésvezérlés \> Időszakos feladatok \> Háttérirodai munkaterhelés-kezelés \> Gyártási központból a skálázási egységbe irányuló üzenetfeldolgozó** pontba lép.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -31,3 +31,6 @@ A Microsoft Dynamics AX 4.0 tartalom a TechNet és MSDN rendszeren megszüntetve
 
 - [Microsoft életciklus-irányelv](https://support.microsoft.com/lifecycle/search?alpha=Microsoft%20Dynamics%20AX%204.0)
 - [Támogatott frissítési útvonalak a Dynamics AX 2012-höz](https://technet.microsoft.com/library/dd362093.aspx)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

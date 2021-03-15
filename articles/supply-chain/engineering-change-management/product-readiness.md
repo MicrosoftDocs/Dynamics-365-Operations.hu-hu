@@ -147,3 +147,6 @@ Minden egyes hozzáadott sorhoz állítsa be a következő mezőket.
 | Kérdőív | Válassza ki azt a kérdőívet, amelyet alkalmazni kell az ellenőrzőlista esetében. Az ellenőrzőlista egy helyi ellenőrzőlista azon a vállalaton belül, ahol a készenléti ellenőrzést végrehajtják. A rendszernek képesnek kell lennie annak értékelésére, hogy helyesen válaszol-e az ellenőrzőlista. Ezért a ellenőrzőlistát úgy kell beállítani, hogy a helyes válaszok alapján végezze el az értékelést. A kérdőívek létrehozásával kapcsolatos további tudnivalókat lásd a [Kérdőívek használata](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/using-questionnaires) és a kapcsolódó témakörök között. |
 | Automatikus jóváhagyás | A készenléti ellenőrzés rekordjai egy **Jóváhagyott** jelölőnégyzetet tartalmaznak, amely jelzi a jóváhagyási állapotot. Jelölje be az **Automatikus jóváhagyás** jelölőnégyzetet azon ellenőrzések esetén, amelyeket a hozzárendelt felhasználó általi végrehajtás után azonnali jóváhagyásra kell beállítani. Ennek a jelölőnégyzetnek a törlésével további lépésként explicit jóváhagyást követelhet meg. |
 | Kötelező | Ezt a jelölőnégyzetet a hozzárendelt felhasználó által végrehajtandó ellenőrzések esetében jelölje be. A kötelező ellenőrzéseket nem lehet kihagyni. |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

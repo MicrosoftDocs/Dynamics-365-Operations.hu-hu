@@ -53,3 +53,6 @@ A felelős karbantartási dolgozók beállítása előtt be kell állítania a k
 A következő ábra a **Felelős karbantartási dolgozók** oldalt szemlélteti.
 
 ![Felelős karbantartási dolgozók oldal](media/08-setup-for-requests.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -252,3 +252,6 @@ Ez a használatijog-eszköz átvitt egyenlegének csökkentését jelenti. Az é
 
    A **lízingkötelezettség-tranzakciók** oldal a kezdeti megjelenítést, a lízingkamatot, a lízingdíjfizetést és a lízingkötelezettség egyenlegét jeleníti meg. 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

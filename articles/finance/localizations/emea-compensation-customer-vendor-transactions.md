@@ -93,3 +93,6 @@ Miután létrehozott egy kompenzációs ajánlatot egy naplónál, és az együt
 **K: Minden országban vagy régióban rendelkezésre áll a kompenzáció funkciója?**
 
 **V:** A kompenzáció funkció csak azoknál a jogi személyeknél áll rendelkezésre, amelyeknek elsődleges címe Magyarországon vagy Lengyelországban van.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

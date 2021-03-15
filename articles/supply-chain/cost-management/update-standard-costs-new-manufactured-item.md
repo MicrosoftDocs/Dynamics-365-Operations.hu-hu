@@ -52,3 +52,6 @@ Ha a befagyasztott időszak során új gyártott cikkeket kíván hozzáadni, te
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

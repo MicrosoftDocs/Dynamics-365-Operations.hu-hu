@@ -48,3 +48,6 @@ Amikor frissíti egy értékesítési szerződéshez tartozó visszáru csomagje
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

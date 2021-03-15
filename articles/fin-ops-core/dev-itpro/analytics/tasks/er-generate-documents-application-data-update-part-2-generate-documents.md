@@ -58,3 +58,6 @@ Mielőtt hozzálátna, módosítsa a DEMF vállalat országfüggő környezetét
 10. Zárja be a lapot.
 11. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

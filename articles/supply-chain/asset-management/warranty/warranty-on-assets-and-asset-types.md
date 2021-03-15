@@ -53,3 +53,6 @@ Ez a témakör azt mutatja be, hogyan lehet eszközökre és eszköztípusokra g
 
 > [!NOTE]
 > Amikor egy szállítói garancia által fedezett eszközhöz hoz létre munkarendelést, ha a munkarendelés elvárt kezdési dátummal rendelkezik a garanciaidőszak folyamán, akkor értesítést kap a garanciaszerződésről. Ezután szükség esetén a munkarendelést érvényteleníteni lehet.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

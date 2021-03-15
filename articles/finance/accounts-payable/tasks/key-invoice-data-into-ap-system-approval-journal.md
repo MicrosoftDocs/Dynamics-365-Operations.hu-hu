@@ -53,3 +53,6 @@ Ez a témakör bemutatja hogy kell használni a számlajegyzéket számlák lét
 10. Válassza a **Feladás** parancsot.
 11. Kattintson a **Bizonylat** lehetőségre, hogy megtekintse hova kerültek feladásra a bejegyzések. A Függőben lévő számla visszavonásra kerül és egy tényleges költségszámla jön létre helyette.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

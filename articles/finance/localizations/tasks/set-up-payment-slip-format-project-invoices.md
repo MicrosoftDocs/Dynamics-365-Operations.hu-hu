@@ -65,3 +65,6 @@ Ez a funkció csak dániai elsődleges címmel rendelkező jogi személyek szám
 16. Kattintson a Mentés gombra.
 17. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

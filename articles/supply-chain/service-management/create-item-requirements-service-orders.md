@@ -71,3 +71,6 @@ Szervizrendelések cikkszükségleteinek feldolgozása projekten keresztül tör
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -162,3 +162,6 @@ Teljesítmény- és a műszaki okok miatt jelenleg csak a következő feltétele
 ### <a name="can-i-reference-custom-fields-from-the-developer-tools"></a>Hivatkozhatok a fejlesztői eszközökből egyéni mezőkre?  
 
 Az egyéni mezők csak a felhasználói felületen kezelhetők, és kód nem hivatkozhat rájuk. 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

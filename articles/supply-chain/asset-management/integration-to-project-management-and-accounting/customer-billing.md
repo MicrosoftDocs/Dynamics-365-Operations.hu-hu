@@ -177,3 +177,6 @@ Ebben a szakaszban az előző szakaszban létrehozott munkarendelésen fogja fol
 1. A Művelet panel **Számlázás** lapján válassza az **Új számlajavaslat** menüpontot.
 1. A **Számlajavaslat létrehozása** párbeszédpanel **Projekttranzakciók** szakaszában minden számlázni kívánt sor esetében jelölje be a **Kijelölés** jelölőnégyzetet.
 1. Válassza az **OK** gombot a párbeszédpanel bezárásához és az új számlajavaslat megtekintéséhez.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

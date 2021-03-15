@@ -61,3 +61,6 @@ A veszélyes anyagokra vonatkozó előírások és értékek beállításával, 
 ## <a name="warehouse-management"></a>Raktárkezelés
 
 Amikor szállítmányt készít a Raktárkezelés modulban, számos új jelentést nyomtathat, amelyek a Termékinformációk kezelése modulban beállított adatokat használják. A rendelkezésre álló jelentésekről és azok használatáról a [Veszélyes anyagokkal kapcsolatos lekérdezések és jelentések](hazmat-reports.md) című témakörben olvashat bővebben.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

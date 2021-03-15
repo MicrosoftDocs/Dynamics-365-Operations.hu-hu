@@ -152,3 +152,6 @@ Hozzon létre egy beszerzési rendelést, vagy válasszon ki egy meglévő besze
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

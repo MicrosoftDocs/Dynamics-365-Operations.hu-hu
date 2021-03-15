@@ -46,3 +46,6 @@ A jövőbeli életesemények ütemezése a következőben végezhető el: Dynami
    | Vonal | A jövőbeli életesemény sorának száma. |
 
 4. Válassza a **Mentés** lehetőséget. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

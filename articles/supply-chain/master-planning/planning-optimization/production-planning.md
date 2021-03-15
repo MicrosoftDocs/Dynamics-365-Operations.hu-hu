@@ -83,3 +83,6 @@ A termelést is magukban foglaló tervezési eseteknél javasoljuk, hogy kerülj
 Bár a rendszer automatikusan észleli a függő gyermekeket, és bekerül az alaptervezésbe a beépített alaptervezési motor használata esetén, a tervezési optimalizálás nem végzi el ezt a műveletet.
 
 Ha például az A termék anyagjegyzék-szerkezetében egy csavar a B termék előállítására is használatos, akkor a szűrőben szerepelnie kell az A és a B termék anyagjegyzék-szerkezetében található összes terméknek. Mivel nagyon bonyolult lehet annak biztosítása, hogy minden termék a szűrő része legyen, javasoljuk, hogy ne használjon szűrőt alaptervezési futtatásoknál termelési rendelések esetén.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

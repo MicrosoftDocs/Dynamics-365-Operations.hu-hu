@@ -86,3 +86,6 @@ Ez az eljárás bemutatja az EU beérkezési igazolás engedélyezésén és a v
 4. A Művelet panelen kattintson a Számla lehetőségre.
 5. Kattintson a Kiállított beérkezési igazolások megtekintése elemre.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
