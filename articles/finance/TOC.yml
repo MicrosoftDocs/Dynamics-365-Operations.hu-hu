@@ -72,7 +72,9 @@
                   items:
                     - name: Újdonságok és változások a Finance kezdőlapján
                       href: get-started/whats-new-home-page.md
-                    - name: Finance 10.0.17 (2021. március)
+                    - name: Finance 10.0.18 (2021. május)
+                      href: get-started/whats-new-changed-10-0-18.md
+                    - name: Finance 10.0.17 (2021. április)
                       href: get-started/whats-new-changed-10-0-17.md
                     - name: Finance 10.0.16 (2021. február)
                       href: get-started/whats-new-changed-10-0-16.md
@@ -80,6 +82,8 @@
                       href: get-started/whats-new-changed-10-0-15.md
             - name: Eltávolított vagy elavult funkciók
               items:
+                - name: Eltávolított vagy elavult funkciók a kezdőlapon
+                  href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/finance/toc.json
                 - name: Eltávolított vagy elavult funkciók a Dynamics 365 Finance szolgáltatásban
                   href: get-started/removed-deprecated-features-finance.md
                 - name: Eltávolított vagy elavult funkciók a korábbi kiadásokban
@@ -474,6 +478,8 @@
               href: accounts-receivable/tasks/create-collection-letter-sequence.md
             - name: Fizetési felszólítások feldolgozása
               href: accounts-receivable/tasks/process-collection-letters.md
+            - name: Fizetési felszólítások feldolgozása – példa
+              href: accounts-receivable/process-collection-letters-example.md
             - name: Kinnlevőségek korosítási adatainak beállítása és létrehozása
               href: accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
             - name: Vevők korosítási jelentése
@@ -486,6 +492,8 @@
               href: accounts-receivable/original-invoice-numbers-credit-notes.md
             - name: Dokumentumok és bizonylatok időrendben történő számozása
               href: accounts-receivable/chrono-numbers.md
+            - name: Nyomtatott vevői számlák archiválása kivonatszámokkal
+              href: accounts-receivable/archive-printed-invoices.md
         - name: Költségvetés-készítés
           items:
             - name: Költségvetés-készítés – kezdőlap
@@ -1318,6 +1326,8 @@
                   href: public-sector/tasks/create-vendor-certification-type-public-sector.md
                 - name: Több egyszeri szállító és számla importálása és létrehozása az állami szektorban
                   href: public-sector/tasks/import-multiple-one-time-vendors.md
+                - name: A számlákon végzett könyvelési felosztás szerkesztésének korlátozása
+                  href: public-sector/restrict-edit-accounting-distributions.md
                 - name: Egyszeri szállítók tervezése az állami szektorban
                   href: public-sector/plan-one-time-vendors-public-sector.md
                 - name: Beszerzési szerződésekhez való hozzáférés vezérlése az állami szektorban
@@ -1428,8 +1438,8 @@
                       href: localizations/e-invoicing-get-started.md
                     - name: Első lépések az Brazíliára vonatkozó elektronikus számlázási bővítmény használata során
                       href: localizations/e-invoicing-bra-get-started.md
-                    - name: Elektronikus vevői számlák Egyiptomban
-                      href: localizations/emea-egy-e-invoices.md
+                    - name: Első lépések az Egyiptomra vonatkozó elektronikus számlázási bővítmény használata során
+                      href: localizations/e-invoicing-eg-get-started.md
                     - name: Első lépések az Olaszországra vonatkozó elektronikus számlázási bővítmény használata során
                       href: localizations/e-invoicing-ita-get-started.md
                     - name: Első lépések a Mexikóra vonatkozó elektronikus számlázási bővítmény használata során
@@ -1580,6 +1590,8 @@
                       href: localizations/tasks/br-00053-1-set-up-nf-e-federal-parameters.md
                     - name: NF-e paraméterek beállítása a pénzügyi létesítményhez
                       href: localizations/tasks/br-00053-2-set-up-nf-e-parameters-fiscal-establishment.md
+                    - name: NT2020.006 – Közvetítő értékesítési digitális platform az NF-e esetében
+                      href: localizations/latam-bra-nf-e-nt2020-006-v1-00.md
                     - name: NT2019.001 – Adókedvezmények és mentességi szabályok az NF-e/NFC-e esetében
                       href: localizations/bra-use-tax-exemption-nf-e.md
                 - name: SPED ECD
@@ -1784,6 +1796,8 @@
                   href: localizations/emea-egy-reg-numbers.md
                 - name: Számlaelrendezés beállítása – Egyiptom
                   href: localizations/emea-egy-invoice-layout.md
+                - name: Elektronikus vevői számlák Egyiptomban
+                  href: localizations/emea-egy-e-invoices.md
             - name: Észtország
               items:
                 - name: Észtország – áttekintés
@@ -2008,12 +2022,14 @@
                   items:
                     - name: A német könyvvizsgálati fájl áttekintése
                       href: localizations/emea-deu-gdpdu-audit-data-export.md
-                    - name: Könyvvizsgálati fájl konfigurációjának testreszabása
-                      href: localizations/tasks/customize-german-audit-file-configuration.md
-                    - name: Könyvvizsgálati fájl generálása
-                      href: localizations/tasks/german-audit-file.md
                     - name: Könyvvizsgálati fájl konfigurációjának importálása
                       href: localizations/tasks/import-german-audit-file-configuration.md
+                    - name: Könyvvizsgálati fájl generálása
+                      href: localizations/tasks/german-audit-file.md
+                    - name: Könyvvizsgálati fájl konfigurációjának testreszabása
+                      href: localizations/tasks/customize-german-audit-file-configuration.md
+                    - name: Szűrők hozzáadása könyvvizsgálatifájl-konfigurációhoz
+                      href: localizations/emea-deu-gdpdu-data-filtering.md
                 - name: Értékcsökkentési helyesbítések további beszerzésekhez a második év során
                   href: localizations/tasks/de-00002-depreciation.md
                 - name: Elektronikus áfabevallás (ELSTER) továbbítása
@@ -2306,7 +2322,7 @@
                   href: localizations/emea-ita-quarterly-vat-communication.md
                 - name: Tiltólista-jelentés
                   href: localizations/emea-ita-black-list-report.md
-                - name: Kompetencia dátuma
+                - name: Kompetencia dátuma és pénzügyi napló
                   href: localizations/emea-ita-competence-date.md
                 - name: Tárgyi eszközök értékcsökkenése
                   href: localizations/emea-ita-depreciation-of-fixed-assets.md
@@ -3253,7 +3269,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/expense-management-content-pack.md?toc=/dynamics365/finance/toc.json
                 - name: Pénzügyi teljesítmény
                   href: ../fin-ops-core/dev-itpro/analytics/financial-performance-power-bi-content-pack.md?toc=/dynamics365/finance/toc.json
-                - name: Pénzügyi információk
+                - name: Pénzügyi elemzés
                   href: ../fin-ops-core/dev-itpro/analytics/financial-insights.md?toc=/dynamics365/finance/toc.json
                 - name: Tárgyi eszközök kezelése
                   href: fixed-assets/Fixed-asset-management-workspace.md
@@ -3493,12 +3509,18 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-and.md?toc=/dynamics365/finance/toc.json
                         - name: Case
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-case.md?toc=/dynamics365/finance/toc.json
+                        - name: Contains
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-contains.md?toc=/dynamics365/finance/toc.json
+                        - name: EndsWith
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-endswith.md?toc=/dynamics365/finance/toc.json
                         - name: If
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-if.md?toc=/dynamics365/finance/toc.json
                         - name: Not
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-not.md?toc=/dynamics365/finance/toc.json
                         - name: Or
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-or.md?toc=/dynamics365/finance/toc.json
+                        - name: StartsWith
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-startswith.md?toc=/dynamics365/finance/toc.json
                         - name: ValueIn
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-valuein.md?toc=/dynamics365/finance/toc.json
                         - name: ValueInLarge
@@ -3675,7 +3697,9 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-design-configuration-word.md?toc=/dynamics365/finance/toc.json
                     - name: ER-konfigurációk újrafelhasználása Excel-sablonok segítségével Word formátumú jelentések generálásához
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?toc=/dynamics365/finance/toc.json
-                - name: A PDF-sablonokat kitöltő ER-konfigurációk megtervezése
+                    - name: A Word tartalomvezérlőinek elrejtése a létrehozott jelentésekben
+                      href: ../fin-ops-core/dev-itpro/analytics/er-design-configuration-word-suppress-controls.md?toc=/dynamics365/finance/toc.json
+                - name: A PDF-sablonokat kitöltő konfigurációk megtervezése
                   href: ../fin-ops-core/dev-itpro/analytics/er-fillable-pdf.md?toc=/dynamics365/finance/toc.json
                 - name: Képek és alakzatok beágyazása
                   items:
@@ -3759,6 +3783,8 @@
                           href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/finance/toc.json
                         - name: Konfigurációk megosztása a GR-ben
                           href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/finance/toc.json
+                        - name: Konfigurációk megszüntetése az RCS Globális adattárban
+                          href: localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/finance/toc.json
             - name: Rövid útmutatók
               items:
                 - name: ER-formátum beállítása egyéni elektronikus dokumentum generálásához

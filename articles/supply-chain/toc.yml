@@ -72,14 +72,16 @@
                   items:
                     - name: Újdonságok és változások a Supply Chain Management kezdőlapján
                       href: get-started/whats-new-home-page.md
+                    - name: Supply Chain Management 10.0.18 (2021. május)
+                      href: get-started/whats-new-scm-10-0-18.md
                     - name: Supply Chain Management 10.0.17 (2021. április)
                       href: get-started/whats-new-scm-10-0-17.md
                     - name: Supply Chain Management 10.0.16 (2021. február)
                       href: get-started/whats-new-scm-10-0-16.md
-                    - name: Supply Chain Management 10.0.15 (2021. január)
-                      href: get-started/whats-new-scm-10-0-15.md
                 - name: Eltávolított vagy elavult funkciók
                   items:
+                    - name: Eltávolított vagy elavult funkciók a kezdőlapon
+                      href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Eltávolított vagy elavult funkciók a Dynamics 365 Supply Chain Management szolgáltatásban
                       href: get-started/removed-deprecated-features-scm-updates.md
                     - name: Eltávolított vagy elavult funkciók a korábbi kiadásokban
@@ -1057,7 +1059,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/dynamics365/supply-chain/toc.json
                 - name: (ER) Konfigurációk tervezése Word-formátumú jelentések generálásához
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?toc=/dynamics365/supply-chain/toc.json
-                - name: A PDF-sablonokat kitöltő ER-konfigurációk megtervezése
+                - name: A PDF-sablonokat kitöltő konfigurációk megtervezése
                   href: ../fin-ops-core/dev-itpro/analytics/er-fillable-pdf.md?toc=/dynamics365/supply-chain/toc.json
             - name: Képek és alakzatok beágyazása
               items:
@@ -1349,6 +1351,8 @@
                   href: cost-management/adjust-hand-inventory-cost-values.md
                 - name: Mozgóátlagon alapuló önköltségi ár követése készletdimenziónként
                   href: cost-management/track-running-average-cost-per-inventory-dimension.md
+            - name: Készlettranzakciók archiválása
+              href: inventory/archive-inventory-transactions.md
             - name: Készletláthatósági bővítmény
               href: inventory/inventory-visibility.md
         - name: IoT-intelligencia
@@ -2021,6 +2025,8 @@
               href: engineering-change-management/engineering-attributes-and-search.md
             - name: Tervezési verziók és tervezési termékkategóriák
               href: engineering-change-management/engineering-versions-product-category.md
+            - name: Változáskezelés engedélyezése meglévő termékek esetében
+              href: engineering-change-management/change-management-existing-products.md
             - name: Termékéletciklus-állapot és tranzakciók
               href: engineering-change-management/product-lifecycle-state-transactions.md
             - name: Tervezési termékek változásainak kezelése
@@ -2129,6 +2135,8 @@
                           href: production-control/production-floor-execution-setup.md
                         - name: A termelési üzem végrehajtási felületének használata dolgozók számára
                           href: production-control/production-floor-execution-use.md
+                        - name: Felhasználói felület vezérlőinek stílusai a termelési üzem végrehajtásához
+                          href: production-control/production-floor-execution-styles.md
                     - name: Feladatkártya konfigurálása az eszközökhöz
                       href: production-control/config-job-card-device.md
                     - name: Jelentés befejezettként a feladatkártya-eszközből
@@ -2729,6 +2737,54 @@
               href: transportation/tasks/set-up-shipping-carriers.md
             - name: Egy cikkre vonatkozó szállítási megszorítások beállítása
               href: transportation/tasks/set-up-transportation-constraints-item.md
+        - name: Partraszállási költség
+          items:
+            - name: Partraszállási költség modulja – áttekintés
+              href: landed-cost/landed-cost-overview.md
+            - name: A partraszállási költség és a szállításkezelés összehasonlítása
+              href: landed-cost/landed-cost-vs-tms.md
+            - name: A partraszállási költség moduljának beállítása és konfigurálása
+              items:
+                - name: Partraszállási költség paraméterei
+                  href: landed-cost/landed-cost-parameters.md
+                - name: A partraszállási költség beszerzési és erőforrásszerzési paraméterei
+                  href: landed-cost/landed-cost-procurement-parameters.md
+                - name: Utazási állapot beállítása
+                  href: landed-cost/voyage-status-setup.md
+                - name: Konténer beállítása
+                  href: landed-cost/shipping-container-setup.md
+                - name: Szállítási adatok beállítása
+                  href: landed-cost/delivery-information-setup.md
+                - name: Több részből álló utazás beállítása
+                  href: landed-cost/multi-leg-journey-setup.md
+                - name: Szállítási adatok beállítása
+                  href: landed-cost/shipping-information-setup.md
+                - name: Költségszámítási paraméterértékek beállítása
+                  href: landed-cost/costing-parameters-setup.md
+                - name: A főkönyv alapértelmezett leírásai
+                  href: landed-cost/defult-descriptions.md
+            - name: A partraszállási költséghez hozzáadott szállítói beállítások
+              href: landed-cost/vendors-landed-cost-settings.md
+            - name: 'Utazások, tárolók és ívek használata'
+              items:
+                - name: Utazások kezelése
+                  href: landed-cost/manage-voyages.md
+                - name: Konténerek kezelése
+                  href: landed-cost/manage-shipping-containers.md
+                - name: Ívek kezelése
+                  href: landed-cost/manage-folios.md
+            - name: Bejövő utazások és konténeres utazások nyomon követése
+              href: landed-cost/inbound-tracking.md
+            - name: A partraszállási költségek becslése és kezelése
+              href: landed-cost/estimate-manage-landed-costs.md
+            - name: Szállítás közbeni feldolgozás
+              href: landed-cost/in-transit-processing.md
+            - name: Várton túli/aluli tranzakciók feldolgozása
+              href: landed-cost/over-under-transactions.md
+            - name: Partraszállási költséggel kapcsolatos lekérdezések
+              href: landed-cost/landed-cost-inquiries.md
+            - name: Partraszállási költséggel kapcsolatos jelentések
+              href: landed-cost/landed-cost-reports.md
         - name: Raktárkezelés
           items:
             - name: Raktárkezelés áttekintése
@@ -2925,10 +2981,12 @@
                       href: warehousing/change-work-pool-on-work.md
                     - name: Cikk-konszolidáció – hely kihasználtsága
                       href: warehousing/item-consolidation-location-utilization.md
-                    - name: Raktári munka – hibaelhárítás
-                      href: warehousing/troubleshoot-warehouse-work.md
                     - name: Felosztott munka
                       href: warehousing/work-split.md
+                    - name: Anyagkezelési berendezések kezelői felülete (MHAX)
+                      href: warehousing/mhax.md
+                    - name: Raktári munka – hibaelhárítás
+                      href: warehousing/troubleshoot-warehouse-work.md
             - name: Raktár beállítása
               items:
                 - name: Raktár konfigurálása
@@ -2987,6 +3045,8 @@
                   items:
                     - name: A Raktárkezelés mobilalkalmazás telepítése és csatlakoztatása
                       href: warehousing/install-configure-warehouse-management-app.md
+                    - name: Mobileszköz felhasználói beállításai
+                      href: warehousing/mobile-device-user-settings.md
                     - name: A raktározási alkalmazás telepítése és csatlakoztatása
                       href: warehousing/install-configure-warehousing-app.md
                     - name: Vonalkódok beolvasása a raktári alkalmazás kamerája segítségével
