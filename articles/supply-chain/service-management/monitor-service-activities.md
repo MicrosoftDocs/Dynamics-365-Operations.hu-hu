@@ -17,45 +17,48 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 13659fd1505b4957e71384d08a8118df6fe68e6d
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: d2cd65140dd550d0bf4ae2fef4d5a50e1e2ab31c
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5006766"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5204278"
 ---
-# <a name="monitor-service-activities"></a><span data-ttu-id="de02f-103">Szolgáltatási tevékenységek figyelése</span><span class="sxs-lookup"><span data-stu-id="de02f-103">Monitor service activities</span></span> 
+# <a name="monitor-service-activities"></a><span data-ttu-id="eac88-103">Szolgáltatási tevékenységek figyelése</span><span class="sxs-lookup"><span data-stu-id="eac88-103">Monitor service activities</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="de02f-104">A **Diszpécserközpont** képernyő könnyen értelmezhető és naprakész állapotinformációkat szolgáltat a vállalatnál ütemezett különféle szolgáltatási tevékenységekről, és eszközöket biztosít az általános szervizrendelési folyamat nyomon követésére.</span><span class="sxs-lookup"><span data-stu-id="de02f-104">The **Dispatch board** form provides an at-a-glance status update for the various scheduled service activities, and tools for tracking the general flow of service orders in your company.</span></span>
+<span data-ttu-id="eac88-104">A **Diszpécserközpont** képernyő könnyen értelmezhető és naprakész állapotinformációkat szolgáltat a vállalatnál ütemezett különféle szolgáltatási tevékenységekről, és eszközöket biztosít az általános szervizrendelési folyamat nyomon követésére.</span><span class="sxs-lookup"><span data-stu-id="eac88-104">The **Dispatch board** form provides an at-a-glance status update for the various scheduled service activities, and tools for tracking the general flow of service orders in your company.</span></span>
 
 
 > [!TIP]
-> <P><span data-ttu-id="de02f-105">A szolgáltató tevékenységek részletes megjelenítéséhez válasszon ki egy tevékenységet a <STRONG>Diszpécserközpont</STRONG> képernyő tetején lévő Gantt-diagramon, majd kattintson a jobb gombbal az <STRONG>Információk</STRONG> elemre.</span><span class="sxs-lookup"><span data-stu-id="de02f-105">To view details about a service activity, select it in the Gantt chart at the top of the <STRONG>Dispatch board</STRONG> form, right-click, and then click <STRONG>Information</STRONG>.</span></span></P>
+> <P><span data-ttu-id="eac88-105">A szolgáltató tevékenységek részletes megjelenítéséhez válasszon ki egy tevékenységet a <STRONG>Diszpécserközpont</STRONG> képernyő tetején lévő Gantt-diagramon, majd kattintson a jobb gombbal az <STRONG>Információk</STRONG> elemre.</span><span class="sxs-lookup"><span data-stu-id="eac88-105">To view details about a service activity, select it in the Gantt chart at the top of the <STRONG>Dispatch board</STRONG> form, right-click, and then click <STRONG>Information</STRONG>.</span></span></P>
 
 
-<span data-ttu-id="de02f-106">A képernyő eszközei segítségével a dátum, a prioritás és a szolgáltatási tevékenység típusa szerint rendezheti a szervizrendeléseket, megjelenítheti az azokhoz rendelt prioritási szinteket, és áttekintheti az egyes rendelésekhez hozzárendelt tevékenységeket.</span><span class="sxs-lookup"><span data-stu-id="de02f-106">By using the tools in this form, you can sort service orders by date, priority, or type of service activity, view the priority levels that are assigned to service orders, and review which activities are assigned to individual service orders.</span></span>
+<span data-ttu-id="eac88-106">A képernyő eszközei segítségével a dátum, a prioritás és a szolgáltatási tevékenység típusa szerint rendezheti a szervizrendeléseket, megjelenítheti az azokhoz rendelt prioritási szinteket, és áttekintheti az egyes rendelésekhez hozzárendelt tevékenységeket.</span><span class="sxs-lookup"><span data-stu-id="eac88-106">By using the tools in this form, you can sort service orders by date, priority, or type of service activity, view the priority levels that are assigned to service orders, and review which activities are assigned to individual service orders.</span></span>
 
-<span data-ttu-id="de02f-107">Ha újra ki kell osztania a szolgáltatási tevékenységeket, elegendő áthúznia a szolgáltatási tevékenységeket jelképező ábrákat egy másik alkalmazottra vagy időpontra.</span><span class="sxs-lookup"><span data-stu-id="de02f-107">If you must redistribute service activity assignments, you can move the graphical representation of a service activity to assign it to a different employee or a different date and time.</span></span>
+<span data-ttu-id="eac88-107">Ha újra ki kell osztania a szolgáltatási tevékenységeket, elegendő áthúznia a szolgáltatási tevékenységeket jelképező ábrákat egy másik alkalmazottra vagy időpontra.</span><span class="sxs-lookup"><span data-stu-id="eac88-107">If you must redistribute service activity assignments, you can move the graphical representation of a service activity to assign it to a different employee or a different date and time.</span></span>
 
-## <a name="example"></a><span data-ttu-id="de02f-108">Példa</span><span class="sxs-lookup"><span data-stu-id="de02f-108">Example</span></span>
+## <a name="example"></a><span data-ttu-id="eac88-108">Példa</span><span class="sxs-lookup"><span data-stu-id="eac88-108">Example</span></span>
 
-<span data-ttu-id="de02f-109">A napi szolgáltatási tevékenységeket figyelve észreveszi, hogy az egyik szerviztechnikus késésben van a kiosztott szervizhívások teljesítésében.</span><span class="sxs-lookup"><span data-stu-id="de02f-109">While monitoring the day's service activity, you notice that John, a service technician, is running behind schedule on assigned service calls.</span></span> <span data-ttu-id="de02f-110">Azt is megfigyeli, hogy a listáján szereplő utolsó hívást még ma le kell bonyolítani ahhoz, hogy teljesüljenek a szolgáltatásiszint-szerződésben rögzített követelmények.</span><span class="sxs-lookup"><span data-stu-id="de02f-110">You also notice that the last call in his list must be completed by the end of the day to meet service level agreement requirements.</span></span> <span data-ttu-id="de02f-111">A Gantt-diagramon a szervizhívást áthúzva átadhatja azt egy olyan szerviztechnikusnak, aki az ütemezésnél korábban lebonyolította saját szervizhívásait.</span><span class="sxs-lookup"><span data-stu-id="de02f-111">By using the drag-and-drop functionality of the Gantt chart, you can reassign that service call to Meg, who has completed her own service calls ahead of schedule.</span></span>
+<span data-ttu-id="eac88-109">A napi szolgáltatási tevékenységeket figyelve észreveszi, hogy az egyik szerviztechnikus késésben van a kiosztott szervizhívások teljesítésében.</span><span class="sxs-lookup"><span data-stu-id="eac88-109">While monitoring the day's service activity, you notice that John, a service technician, is running behind schedule on assigned service calls.</span></span> <span data-ttu-id="eac88-110">Azt is megfigyeli, hogy a listáján szereplő utolsó hívást még ma le kell bonyolítani ahhoz, hogy teljesüljenek a szolgáltatásiszint-szerződésben rögzített követelmények.</span><span class="sxs-lookup"><span data-stu-id="eac88-110">You also notice that the last call in his list must be completed by the end of the day to meet service level agreement requirements.</span></span> <span data-ttu-id="eac88-111">A Gantt-diagramon a szervizhívást áthúzva átadhatja azt egy olyan szerviztechnikusnak, aki az ütemezésnél korábban lebonyolította saját szervizhívásait.</span><span class="sxs-lookup"><span data-stu-id="eac88-111">By using the drag-and-drop functionality of the Gantt chart, you can reassign that service call to Meg, who has completed her own service calls ahead of schedule.</span></span>
 
-## <a name="open-the-dispatch-board-form"></a><span data-ttu-id="de02f-112">A Diszpécserközpont képernyő megnyitása</span><span class="sxs-lookup"><span data-stu-id="de02f-112">Open the Dispatch board form</span></span>
+## <a name="open-the-dispatch-board-form"></a><span data-ttu-id="eac88-112">A Diszpécserközpont képernyő megnyitása</span><span class="sxs-lookup"><span data-stu-id="eac88-112">Open the Dispatch board form</span></span>
 
-<span data-ttu-id="de02f-113">Kattintson a következőkre: **Szolgáltatáskezelés** \> **Rendszeres** \> **Diszpécserközpont**.</span><span class="sxs-lookup"><span data-stu-id="de02f-113">Click **Service management** \> **Periodic** \> **Dispatch board**.</span></span>
+<span data-ttu-id="eac88-113">Kattintson a következőkre: **Szolgáltatáskezelés** \> **Rendszeres** \> **Diszpécserközpont**.</span><span class="sxs-lookup"><span data-stu-id="eac88-113">Click **Service management** \> **Periodic** \> **Dispatch board**.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="de02f-114">Lásd még</span><span class="sxs-lookup"><span data-stu-id="de02f-114">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="eac88-114">Lásd még</span><span class="sxs-lookup"><span data-stu-id="eac88-114">See also</span></span>
 
-[<span data-ttu-id="de02f-115">Szervizrendelések prioritásának megállapítása</span><span class="sxs-lookup"><span data-stu-id="de02f-115">Prioritize service orders</span></span>](prioritize-service-orders.md)
+[<span data-ttu-id="eac88-115">Szervizrendelések prioritásának megállapítása</span><span class="sxs-lookup"><span data-stu-id="eac88-115">Prioritize service orders</span></span>](prioritize-service-orders.md)
 
-[<span data-ttu-id="de02f-116">A szervizrendeléssor állapotának megtekintése</span><span class="sxs-lookup"><span data-stu-id="de02f-116">View the status of service orders</span></span>](view-the-status-of-service-orders.md)
+[<span data-ttu-id="eac88-116">A szervizrendeléssor állapotának megtekintése</span><span class="sxs-lookup"><span data-stu-id="eac88-116">View the status of service orders</span></span>](view-the-status-of-service-orders.md)
 
-<span data-ttu-id="de02f-117">[Diszpécserközpont (képernyő)](https://technet.microsoft.com/library/hh242789\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="de02f-117">[Dispatch board (form)](https://technet.microsoft.com/library/hh242789\(v=ax.60\))</span></span>
+<span data-ttu-id="eac88-117">[Diszpécserközpont (képernyő)](https://technet.microsoft.com/library/hh242789\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="eac88-117">[Dispatch board (form)](https://technet.microsoft.com/library/hh242789\(v=ax.60\))</span></span>
 
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

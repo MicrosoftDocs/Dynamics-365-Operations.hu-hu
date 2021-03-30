@@ -16,21 +16,24 @@ ms.search.region: Global
 ms.author: Mirzaab
 ms.search.validFrom: 2017-09-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cc12275f924cab02aef11c28b96e73ba3ff8d84e
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 4c15982a87147d7ab47e8bd5f150b15f86cc7736
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4973710"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5211742"
 ---
-# <a name="mobile-barcode-support"></a><span data-ttu-id="0b592-103">Mobil vonalkód-támogatás</span><span class="sxs-lookup"><span data-stu-id="0b592-103">Mobile barcode support</span></span>
+# <a name="mobile-barcode-support"></a><span data-ttu-id="17177-103">Mobil vonalkód-támogatás</span><span class="sxs-lookup"><span data-stu-id="17177-103">Mobile barcode support</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="0b592-104">Mivel az Android nyílt forrású projekt, minden raktári vonalkódbeolvasó-hardvert gyártó cég készíthet olyan eszközöket, amelyek az Android operációs rendszert futtatják.</span><span class="sxs-lookup"><span data-stu-id="0b592-104">Because Android is an open source project, any manufacturer of hardware for warehouse bar code scanners can build a device to run the Android operating system.</span></span> <span data-ttu-id="0b592-105">Egy eszköz csak akkor Android-kompatibilis, ha képes az Android végrehajtási környezethez írt alkalmazások futtatására.</span><span class="sxs-lookup"><span data-stu-id="0b592-105">A device is only Android-compatible if it can run apps that are written for the Android execution environment.</span></span>
-<span data-ttu-id="0b592-106">Azonban a hardverszállító létrehozhat és módosíthat felületeket a hardverén futó Android verzióhoz.</span><span class="sxs-lookup"><span data-stu-id="0b592-106">However, a hardware vendor can modify and create overlays for the Android version that runs on their hardware.</span></span> <span data-ttu-id="0b592-107">A Microsoft nem vállal semmilyen felelősséget sem azért, hogy az Android rendszerre tervezett mobil vonalkódolvasó alkalmazás kompatibilis a gyártó vonalkód-beolvasási hardvereszközével, valamint a rajta futó Android verzióval.</span><span class="sxs-lookup"><span data-stu-id="0b592-107">Microsoft cannot take any responsibility to ensure that a mobile bar code scanning app for Android is compatible with a manufacturer’s bar code scanning hardware and the Android version that runs on it.</span></span> 
+<span data-ttu-id="17177-104">Mivel az Android nyílt forrású projekt, minden raktári vonalkódbeolvasó-hardvert gyártó cég készíthet olyan eszközöket, amelyek az Android operációs rendszert futtatják.</span><span class="sxs-lookup"><span data-stu-id="17177-104">Because Android is an open source project, any manufacturer of hardware for warehouse bar code scanners can build a device to run the Android operating system.</span></span> <span data-ttu-id="17177-105">Egy eszköz csak akkor Android-kompatibilis, ha képes az Android végrehajtási környezethez írt alkalmazások futtatására.</span><span class="sxs-lookup"><span data-stu-id="17177-105">A device is only Android-compatible if it can run apps that are written for the Android execution environment.</span></span>
+<span data-ttu-id="17177-106">Azonban a hardverszállító létrehozhat és módosíthat felületeket a hardverén futó Android verzióhoz.</span><span class="sxs-lookup"><span data-stu-id="17177-106">However, a hardware vendor can modify and create overlays for the Android version that runs on their hardware.</span></span> <span data-ttu-id="17177-107">A Microsoft nem vállal semmilyen felelősséget sem azért, hogy az Android rendszerre tervezett mobil vonalkódolvasó alkalmazás kompatibilis a gyártó vonalkód-beolvasási hardvereszközével, valamint a rajta futó Android verzióval.</span><span class="sxs-lookup"><span data-stu-id="17177-107">Microsoft cannot take any responsibility to ensure that a mobile bar code scanning app for Android is compatible with a manufacturer’s bar code scanning hardware and the Android version that runs on it.</span></span> 
 
-<span data-ttu-id="0b592-108">A Dynamics 365 Supply Chain Management raktári alkalmazását több Android alapú eszközzel teszteltek a vonalkódok beolvasására.</span><span class="sxs-lookup"><span data-stu-id="0b592-108">The Dynamics 365 Supply Chain Management - warehouse app has been tested with a selection of Android powered devices for bar code scanning.</span></span> <span data-ttu-id="0b592-109">A tesztek csak a piacon elérhető eszközök egy részét fedték le.</span><span class="sxs-lookup"><span data-stu-id="0b592-109">These tests only cover a sample of the devices that are available on the market.</span></span>
+<span data-ttu-id="17177-108">A Dynamics 365 Supply Chain Management raktári alkalmazását több Android alapú eszközzel teszteltek a vonalkódok beolvasására.</span><span class="sxs-lookup"><span data-stu-id="17177-108">The Dynamics 365 Supply Chain Management - warehouse app has been tested with a selection of Android powered devices for bar code scanning.</span></span> <span data-ttu-id="17177-109">A tesztek csak a piacon elérhető eszközök egy részét fedték le.</span><span class="sxs-lookup"><span data-stu-id="17177-109">These tests only cover a sample of the devices that are available on the market.</span></span>
 
-<span data-ttu-id="0b592-110">Vevőként ajánlott a raktári mobil beolvasási alkalmazás tesztelése a kijelölt hardveren, mielőtt döntene a megvásárolni kívánt hardverről.</span><span class="sxs-lookup"><span data-stu-id="0b592-110">As a customer, we recommend that you test the Warehouse mobile scanning app on selected hardware before you decide on the hardware that you want to buy.</span></span>
+<span data-ttu-id="17177-110">Vevőként ajánlott a raktári mobil beolvasási alkalmazás tesztelése a kijelölt hardveren, mielőtt döntene a megvásárolni kívánt hardverről.</span><span class="sxs-lookup"><span data-stu-id="17177-110">As a customer, we recommend that you test the Warehouse mobile scanning app on selected hardware before you decide on the hardware that you want to buy.</span></span>
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
