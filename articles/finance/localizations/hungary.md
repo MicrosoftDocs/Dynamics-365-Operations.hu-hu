@@ -15,12 +15,12 @@ ms.search.region: Hungary
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2edf5c1eb2e796943ba254aba903f68a8f087b3e
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: 2ede6fe3c9f4dfd5cc585254fd689776817f5f3e
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5115936"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5217348"
 ---
 # <a name="hungary-overview"></a>Magyarország – áttekintés
 
