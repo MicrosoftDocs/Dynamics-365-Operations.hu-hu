@@ -15,54 +15,57 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 90ea3f65284cc97906002015c715d9f071202bdb
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 13bbdc706280317c5a1ab7fb21c9585f1c7d48ad
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4966830"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5247790"
 ---
-# <a name="maintain-route-for-a-product-model"></a><span data-ttu-id="82ae5-103">Termékmodell útvonalának karbantartása</span><span class="sxs-lookup"><span data-stu-id="82ae5-103">Maintain route for a product model</span></span>
+# <a name="maintain-route-for-a-product-model"></a><span data-ttu-id="97363-103">Termékmodell útvonalának karbantartása</span><span class="sxs-lookup"><span data-stu-id="97363-103">Maintain route for a product model</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="82ae5-104">Ezen eljárás futtatásához szükség van egy már létező termékkonfigurációs modellre.</span><span class="sxs-lookup"><span data-stu-id="82ae5-104">Running this procedure requires that a product configuration model exists.</span></span> <span data-ttu-id="82ae5-105">Ez az eljárás az USMF bemutatócég felső kategóriás hangszóró modelljét használva vezeti Önt végig a folyamaton.</span><span class="sxs-lookup"><span data-stu-id="82ae5-105">This procedure uses the High end speaker model in the demo company USMF to walk you through the process.</span></span>
+<span data-ttu-id="97363-104">Ezen eljárás futtatásához szükség van egy már létező termékkonfigurációs modellre.</span><span class="sxs-lookup"><span data-stu-id="97363-104">Running this procedure requires that a product configuration model exists.</span></span> <span data-ttu-id="97363-105">Ez az eljárás az USMF bemutatócég felső kategóriás hangszóró modelljét használva vezeti Önt végig a folyamaton.</span><span class="sxs-lookup"><span data-stu-id="97363-105">This procedure uses the High end speaker model in the demo company USMF to walk you through the process.</span></span>
 
 
-## <a name="add-a-route-operation"></a><span data-ttu-id="82ae5-106">Útvonalművelet hozzáadása</span><span class="sxs-lookup"><span data-stu-id="82ae5-106">Add a route operation</span></span>
-1. <span data-ttu-id="82ae5-107">Kattintson a Termékváltozat modelldefinícióra.</span><span class="sxs-lookup"><span data-stu-id="82ae5-107">Click Product variant model definition.</span></span>
-2. <span data-ttu-id="82ae5-108">Kattintson a Termékkonfigurációs modellek lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="82ae5-108">Click Product configuration models.</span></span>
-3. <span data-ttu-id="82ae5-109">Keresse meg és jelölje ki a kívánt rekordot a listán.</span><span class="sxs-lookup"><span data-stu-id="82ae5-109">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="82ae5-110">Válassza ki a Felső kategóriás modellt ehhez a gyakorlathoz.</span><span class="sxs-lookup"><span data-stu-id="82ae5-110">Select the High end speaker model for this exercise.</span></span>  
-4. <span data-ttu-id="82ae5-111">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="82ae5-111">In the list, click the link in the selected row.</span></span>
-5. <span data-ttu-id="82ae5-112">Bontsa ki az Útvonalműveletek szakaszt.</span><span class="sxs-lookup"><span data-stu-id="82ae5-112">Expand the Route operations section.</span></span>
-6. <span data-ttu-id="82ae5-113">Kattintson a Hozzáadás gombra.</span><span class="sxs-lookup"><span data-stu-id="82ae5-113">Click Add.</span></span>
-7. <span data-ttu-id="82ae5-114">Írjon be egy értéket a Név mezőbe.</span><span class="sxs-lookup"><span data-stu-id="82ae5-114">In the Name field, type a value.</span></span>
-8. <span data-ttu-id="82ae5-115">A Leírás mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="82ae5-115">In the Description field, type a value.</span></span>
-9. <span data-ttu-id="82ae5-116">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="82ae5-116">Click Save.</span></span>
+## <a name="add-a-route-operation"></a><span data-ttu-id="97363-106">Útvonalművelet hozzáadása</span><span class="sxs-lookup"><span data-stu-id="97363-106">Add a route operation</span></span>
+1. <span data-ttu-id="97363-107">Kattintson a Termékváltozat modelldefinícióra.</span><span class="sxs-lookup"><span data-stu-id="97363-107">Click Product variant model definition.</span></span>
+2. <span data-ttu-id="97363-108">Kattintson a Termékkonfigurációs modellek lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="97363-108">Click Product configuration models.</span></span>
+3. <span data-ttu-id="97363-109">Keresse meg és jelölje ki a kívánt rekordot a listán.</span><span class="sxs-lookup"><span data-stu-id="97363-109">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="97363-110">Válassza ki a Felső kategóriás modellt ehhez a gyakorlathoz.</span><span class="sxs-lookup"><span data-stu-id="97363-110">Select the High end speaker model for this exercise.</span></span>  
+4. <span data-ttu-id="97363-111">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="97363-111">In the list, click the link in the selected row.</span></span>
+5. <span data-ttu-id="97363-112">Bontsa ki az Útvonalműveletek szakaszt.</span><span class="sxs-lookup"><span data-stu-id="97363-112">Expand the Route operations section.</span></span>
+6. <span data-ttu-id="97363-113">Kattintson a Hozzáadás gombra.</span><span class="sxs-lookup"><span data-stu-id="97363-113">Click Add.</span></span>
+7. <span data-ttu-id="97363-114">Írjon be egy értéket a Név mezőbe.</span><span class="sxs-lookup"><span data-stu-id="97363-114">In the Name field, type a value.</span></span>
+8. <span data-ttu-id="97363-115">A Leírás mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="97363-115">In the Description field, type a value.</span></span>
+9. <span data-ttu-id="97363-116">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="97363-116">Click Save.</span></span>
 
-## <a name="enter-route-operation-details"></a><span data-ttu-id="82ae5-117">Útvonalművelet részleteinek megadása</span><span class="sxs-lookup"><span data-stu-id="82ae5-117">Enter route operation details</span></span>
-1. <span data-ttu-id="82ae5-118">Kattintson az Útvonalműveleti részletek lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="82ae5-118">Click Route operation details.</span></span>
-2. <span data-ttu-id="82ae5-119">A Műveletek mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="82ae5-119">In the Operation field, enter or select a value.</span></span>
-3. <span data-ttu-id="82ae5-120">A Műv.</span><span class="sxs-lookup"><span data-stu-id="82ae5-120">In the Oper.</span></span> <span data-ttu-id="82ae5-121">Szám</span><span class="sxs-lookup"><span data-stu-id="82ae5-121">No.</span></span> <span data-ttu-id="82ae5-122">mezőben adjon meg egy számot.</span><span class="sxs-lookup"><span data-stu-id="82ae5-122">field, enter a number.</span></span>
-    * <span data-ttu-id="82ae5-123">A műveleti számok határozzák meg az útvonalsorrendet.</span><span class="sxs-lookup"><span data-stu-id="82ae5-123">Operation numbers determine the route sequence.</span></span>  
-    * <span data-ttu-id="82ae5-124">Egy útvonalművelet egyes tulajdonságainak lehet statikus értékük, vagy hozzá lehet rendelni őket egy attribútumhoz.</span><span class="sxs-lookup"><span data-stu-id="82ae5-124">Each property on a route operation can get a static value or be mapped to an attribute.</span></span> <span data-ttu-id="82ae5-125">Az attribútumhoz rendelés következtében az érték a konfiguráció része lesz.</span><span class="sxs-lookup"><span data-stu-id="82ae5-125">Mapping to an attribute will result in the value being set as part of the configuration.</span></span>  
-4. <span data-ttu-id="82ae5-126">Az Útvonalcsoport mezőben adjon meg, vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="82ae5-126">In the Route group field, enter or select a value.</span></span>
-    * <span data-ttu-id="82ae5-127">Az útvonalcsoport határozza meg az alapvető viselkedést a költségszámítási, a felhasználás és beállítás esetében.</span><span class="sxs-lookup"><span data-stu-id="82ae5-127">The route group determines essential behavior for costing, consumption, and setup.</span></span>  
-5. <span data-ttu-id="82ae5-128">Kattintson a Beállítás fülre.</span><span class="sxs-lookup"><span data-stu-id="82ae5-128">Click the Setup tab.</span></span>
-6. <span data-ttu-id="82ae5-129">Kattintson az Idők fülre.</span><span class="sxs-lookup"><span data-stu-id="82ae5-129">Click the Times tab.</span></span>
-7. <span data-ttu-id="82ae5-130">A Folyamat menny. mezőben adjon meg egy számot.</span><span class="sxs-lookup"><span data-stu-id="82ae5-130">In the Process qty. field, enter a number.</span></span>
-    * <span data-ttu-id="82ae5-131">Határozza meg, hogy mennyi lesz feldolgozva egy művelet során.</span><span class="sxs-lookup"><span data-stu-id="82ae5-131">Determine how many will be processed during one operation.</span></span>  
-8. <span data-ttu-id="82ae5-132">Az Órák/idő mezőben adjon meg egy számot.</span><span class="sxs-lookup"><span data-stu-id="82ae5-132">In the Hours/time field, enter a number.</span></span>
-    * <span data-ttu-id="82ae5-133">Adja meg az időarányt.</span><span class="sxs-lookup"><span data-stu-id="82ae5-133">Enter the time ratio.</span></span>  
-9. <span data-ttu-id="82ae5-134">Jelölje be a Beállít jelölőnégyzetet.</span><span class="sxs-lookup"><span data-stu-id="82ae5-134">Select the Set check box.</span></span>
-10. <span data-ttu-id="82ae5-135">Adjon meg egy számot a Futási idő mezőben.</span><span class="sxs-lookup"><span data-stu-id="82ae5-135">In the Run time field, enter a number.</span></span>
-    * <span data-ttu-id="82ae5-136">Határozza meg a feldolgozási időt a megadott mennyiséghez.</span><span class="sxs-lookup"><span data-stu-id="82ae5-136">Determine the processing time for the quantity that you have specified.</span></span>  
-11. <span data-ttu-id="82ae5-137">Kattintson az Erőforrás-követelmények fülre.</span><span class="sxs-lookup"><span data-stu-id="82ae5-137">Click the Resource requirements tab.</span></span>
-12. <span data-ttu-id="82ae5-138">Kattintson a Hozzáadás gombra.</span><span class="sxs-lookup"><span data-stu-id="82ae5-138">Click Add.</span></span>
-13. <span data-ttu-id="82ae5-139">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="82ae5-139">In the list, mark the selected row.</span></span>
-14. <span data-ttu-id="82ae5-140">A Követelmény típusa mezőben válasszon ki egy lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="82ae5-140">In the Requirement type field, select an option.</span></span>
-    * <span data-ttu-id="82ae5-141">Döntse el, hogy akar-e megadni konkrét erőforrásokat vagy adottságokat, amelyeket fel kell dolgozniuk.</span><span class="sxs-lookup"><span data-stu-id="82ae5-141">Decide if you want to specify specific resources or capabilities that they must possess.</span></span>  
-15. <span data-ttu-id="82ae5-142">A Követelmény mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="82ae5-142">In the Requirement field, enter or select a value.</span></span>
-16. <span data-ttu-id="82ae5-143">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="82ae5-143">Click OK.</span></span>
+## <a name="enter-route-operation-details"></a><span data-ttu-id="97363-117">Útvonalművelet részleteinek megadása</span><span class="sxs-lookup"><span data-stu-id="97363-117">Enter route operation details</span></span>
+1. <span data-ttu-id="97363-118">Kattintson az Útvonalműveleti részletek lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="97363-118">Click Route operation details.</span></span>
+2. <span data-ttu-id="97363-119">A Műveletek mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="97363-119">In the Operation field, enter or select a value.</span></span>
+3. <span data-ttu-id="97363-120">A Műv.</span><span class="sxs-lookup"><span data-stu-id="97363-120">In the Oper.</span></span> <span data-ttu-id="97363-121">Szám</span><span class="sxs-lookup"><span data-stu-id="97363-121">No.</span></span> <span data-ttu-id="97363-122">mezőben adjon meg egy számot.</span><span class="sxs-lookup"><span data-stu-id="97363-122">field, enter a number.</span></span>
+    * <span data-ttu-id="97363-123">A műveleti számok határozzák meg az útvonalsorrendet.</span><span class="sxs-lookup"><span data-stu-id="97363-123">Operation numbers determine the route sequence.</span></span>  
+    * <span data-ttu-id="97363-124">Egy útvonalművelet egyes tulajdonságainak lehet statikus értékük, vagy hozzá lehet rendelni őket egy attribútumhoz.</span><span class="sxs-lookup"><span data-stu-id="97363-124">Each property on a route operation can get a static value or be mapped to an attribute.</span></span> <span data-ttu-id="97363-125">Az attribútumhoz rendelés következtében az érték a konfiguráció része lesz.</span><span class="sxs-lookup"><span data-stu-id="97363-125">Mapping to an attribute will result in the value being set as part of the configuration.</span></span>  
+4. <span data-ttu-id="97363-126">Az Útvonalcsoport mezőben adjon meg, vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="97363-126">In the Route group field, enter or select a value.</span></span>
+    * <span data-ttu-id="97363-127">Az útvonalcsoport határozza meg az alapvető viselkedést a költségszámítási, a felhasználás és beállítás esetében.</span><span class="sxs-lookup"><span data-stu-id="97363-127">The route group determines essential behavior for costing, consumption, and setup.</span></span>  
+5. <span data-ttu-id="97363-128">Kattintson a Beállítás fülre.</span><span class="sxs-lookup"><span data-stu-id="97363-128">Click the Setup tab.</span></span>
+6. <span data-ttu-id="97363-129">Kattintson az Idők fülre.</span><span class="sxs-lookup"><span data-stu-id="97363-129">Click the Times tab.</span></span>
+7. <span data-ttu-id="97363-130">A Folyamat menny. mezőben adjon meg egy számot.</span><span class="sxs-lookup"><span data-stu-id="97363-130">In the Process qty. field, enter a number.</span></span>
+    * <span data-ttu-id="97363-131">Határozza meg, hogy mennyi lesz feldolgozva egy művelet során.</span><span class="sxs-lookup"><span data-stu-id="97363-131">Determine how many will be processed during one operation.</span></span>  
+8. <span data-ttu-id="97363-132">Az Órák/idő mezőben adjon meg egy számot.</span><span class="sxs-lookup"><span data-stu-id="97363-132">In the Hours/time field, enter a number.</span></span>
+    * <span data-ttu-id="97363-133">Adja meg az időarányt.</span><span class="sxs-lookup"><span data-stu-id="97363-133">Enter the time ratio.</span></span>  
+9. <span data-ttu-id="97363-134">Jelölje be a Beállít jelölőnégyzetet.</span><span class="sxs-lookup"><span data-stu-id="97363-134">Select the Set check box.</span></span>
+10. <span data-ttu-id="97363-135">Adjon meg egy számot a Futási idő mezőben.</span><span class="sxs-lookup"><span data-stu-id="97363-135">In the Run time field, enter a number.</span></span>
+    * <span data-ttu-id="97363-136">Határozza meg a feldolgozási időt a megadott mennyiséghez.</span><span class="sxs-lookup"><span data-stu-id="97363-136">Determine the processing time for the quantity that you have specified.</span></span>  
+11. <span data-ttu-id="97363-137">Kattintson az Erőforrás-követelmények fülre.</span><span class="sxs-lookup"><span data-stu-id="97363-137">Click the Resource requirements tab.</span></span>
+12. <span data-ttu-id="97363-138">Kattintson a Hozzáadás gombra.</span><span class="sxs-lookup"><span data-stu-id="97363-138">Click Add.</span></span>
+13. <span data-ttu-id="97363-139">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="97363-139">In the list, mark the selected row.</span></span>
+14. <span data-ttu-id="97363-140">A Követelmény típusa mezőben válasszon ki egy lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="97363-140">In the Requirement type field, select an option.</span></span>
+    * <span data-ttu-id="97363-141">Döntse el, hogy akar-e megadni konkrét erőforrásokat vagy adottságokat, amelyeket fel kell dolgozniuk.</span><span class="sxs-lookup"><span data-stu-id="97363-141">Decide if you want to specify specific resources or capabilities that they must possess.</span></span>  
+15. <span data-ttu-id="97363-142">A Követelmény mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="97363-142">In the Requirement field, enter or select a value.</span></span>
+16. <span data-ttu-id="97363-143">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="97363-143">Click OK.</span></span>
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
