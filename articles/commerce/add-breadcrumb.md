@@ -1,6 +1,6 @@
 ---
 title: Útkövetési modul
-description: Ez a témakör az útkövetési modulokkal foglalkozik, és bemutatja, hogy hogyan lehet őket hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
+description: Ez a témakör az útkövető modulokkal foglalkozik, és bemutatja, hogy hogyan lehet őket hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: anupamar-ms
 manager: annbe
 ms.date: 10/20/2020
@@ -17,20 +17,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 1883281c62575ae0b48b6e584876185bb179b4f4
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 06f8ffdecd1f77468ed88043929f29b6957c2e6f
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4986079"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5206559"
 ---
 # <a name="breadcrumb-module"></a>Útkövetési modul
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör az útkövetési modulokkal foglalkozik, és bemutatja, hogy hogyan lehet őket hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
-
-## <a name="overview"></a>Áttekintés
+Ez a témakör az útkövető modulokkal foglalkozik, és bemutatja, hogy hogyan lehet őket hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
 
 Az útkövetési modulok másodlagos navigálás biztosítására szolgálnak a webhelyoldalakon. Általában a lap tetején láthatók, a fejléc alatt. Bár az útkövetési modulok bármilyen lapra hozzáadhatók, leggyakrabban a termékrészletek oldalakon (PDP-k) vannak használatban, a termékkategóriák hierarchiáját megjelenítéséhez, és gyors mozgást biztosítanak az oldalon. Az útkövetési modul egy „Visszatérés az eredményekhez" hivatkozás megjelenítésére is használható, amikor a felhasználók megnyitnak egy PDP-t a keresési vagy listaoldalon. Ily módon a felhasználók gyorsan visszatérhetnek a szűrt listaoldalukra a vásárlás folytatásához.
 

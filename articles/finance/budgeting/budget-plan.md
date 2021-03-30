@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ec62af4ec62de0d63b590c79db6a8164d59e72c4
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 05de2748b0cf7a2b09618aee5c41c8c797f2b3d3
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4971278"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5210409"
 ---
 # <a name="budget-planning"></a>Költségvetés-tervezés
 
@@ -105,7 +105,7 @@ A költségvetési tervadatokhoz történő hozzáférés kapcsán a költségve
 
 2.5. Válassza a „Hozzáférés engedélyezése adott szervezetekhez” lehetőséget. Válassza ki az első lépésben létrehozott Szervezeti hierarchiát. Válassza ki a Pénzügyi csomópontot, majd kattintson a Hozzáférés biztosítása gyermekelemekkel együtt gombra. 
 
-**_Fontos!_* _ _Győződjön meg arról, hogy a lépést a DEMF jogi személyre vonatkozó szövegkörnyezetben hajtsa végre, mivel a Szervezeti biztonsági beállítás az adott jogi személyre vonatkozik* 
+***Fontos!** _ _Győződjön meg arról, hogy a lépést a DEMF jogi személyre vonatkozó szövegkörnyezetben hajtsa végre, mivel a Szervezeti biztonsági beállítás az adott jogi személyre vonatkozik* 
 
 ### <a name="task-3-create-scenarios"></a>3. lépés: Változatok létrehozása
 3.1. Lépjen a következőhöz: Költségvetés-készítés&gt;Beállítás &gt; Költségvetés-tervezés &gt; Költségvetés-tervezési konfiguráció. Jegyezze meg a Változatok lapon a jelen oktatóanyagban a továbbiakban használt változatok nevét: Előző évi tényadatok, illetve Költségvetési. 

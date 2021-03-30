@@ -16,18 +16,18 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 450efd595a1cc1b72b2e62afbdd4518bcca59cb0
-ms.sourcegitcommit: f9df202aefef761be52c0360b0e22da88773914c
+ms.openlocfilehash: 91cb01637faa69bd3c7fefefae69c60cb948510e
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "5035915"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5211225"
 ---
 # <a name="create-org-modeling-hierarchies-for-b2b-organizations"></a>Szervezeti modellezési hierarchiák létrehozása B2B szervezetek számára
 
 [!include [banner](../../includes/banner.md)]
 
-Ez a témakör azt ismerteti, hogyan lehet szervezeti modellezési hierarchiákat létrehozni B2B szervezetek számára a Microsoft Dynamics 365 Commerce rendszerben.
+Ez a témakör azt ismerteti, hogyan lehet szervezeti modellezési hierarchiákat létrehozni B2B szervezetek számára a Microsoft Dynamics 365 Commerce alkalmazásban.
 
 A Commerce központi felületén az üzleti partnereket a vevői és vevői hierarchiaentitások képviselik. Az üzleti partner szervezetét és felhasználóit vevőkként ábrázolja a rendszer, és a vevőhierarchiák segítségével társítja ezeket a vevőket egymáshoz.
 

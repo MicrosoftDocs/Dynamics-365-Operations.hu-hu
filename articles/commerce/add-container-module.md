@@ -16,20 +16,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 23d81eaee6684ff2b041f93edd05076af66d322d
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 43017cbb76c38eed6951a9e87c763cf919c3bd93
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4980531"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5206415"
 ---
 # <a name="container-module"></a>Tárolómodul
 
 [!include [banner](includes/banner.md)]
 
 Ez a témakör a tárolómodulokkal foglalkozik, és bemutatja, hogy hogyan lehet őket hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
-
-## <a name="overview"></a>Áttekintés
 
 A tárolómodul egy modul, amely a többi modult tárolja. A tárolómodul elsődleges célja, hogy a számára beállított tulajdonságokon keresztül meghatározza a benne tárolt modulok elrendezését. Ezek a modulok például egymás mellett kétoszlopos, háromoszlopos, négyoszlopos vagy hatoszlopos elrendezésében jelenhetnek meg. A tárolók szélességére korlátozódhatnak, vagy kitölthetik a képernyőt. Minden tárolómodulhoz hozzáadhat egy fejlécet is.
 
