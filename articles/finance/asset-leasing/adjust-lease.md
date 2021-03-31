@@ -17,16 +17,17 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 32d99d9e90b65f7cac74176d21fa4b053ae8f62c
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: f11dbd6dc67ffccb087f67f5ce6267fe94e0ee65
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5130755"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5219987"
 ---
 # <a name="adjust-leases"></a>Lízingek kiigazítása
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 A témakör azt mutatja be, hogyan lehet beállítani egy lízinget. Előfordulhat, hogy kiigazításra van szükség a lízingfeltételek módosításakor, a lízing meghosszabbításakor vagy más körülmény változásakor. Az eszközök lízingelése megfelel a 842 (ASC 842) és a nemzetközi pénzügyi beszámolási szabvány 16. (IFRS 16) szerinti számviteli szabványoknak, amelyek a lízing módosítását írják elő. Az ASC 842-20-15-1 meghatározza a lízing módosítását olyan szerződések feltételeinek bármilyen változása esetén, amelyek a lízing hatókörét vagy ellenértékét eredményezik. Az IFRS 16 39. pontja szerint a lízingbevevőnek át kell értékelnie a lízingkötelezettséget, hogy az tükrözze a lízingdíjfizetések változását.
 
