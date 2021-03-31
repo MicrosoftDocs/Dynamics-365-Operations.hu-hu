@@ -17,36 +17,39 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6f7f11cfb66951dea15bd1650adb7b75f35a106e
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 7ef7312243cf7e9b890456fbeeeefb85728b4b5b
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5006566"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5219245"
 ---
-# <a name="reverse-changes-in-a-dispatch-board"></a><span data-ttu-id="517b6-103">Változtatások visszavonása egy diszpécserközpontban</span><span class="sxs-lookup"><span data-stu-id="517b6-103">Reverse changes in a dispatch board</span></span> 
+# <a name="reverse-changes-in-a-dispatch-board"></a><span data-ttu-id="b589d-103">Változtatások visszavonása egy diszpécserközpontban</span><span class="sxs-lookup"><span data-stu-id="b589d-103">Reverse changes in a dispatch board</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="517b6-104">Ez az útmutató leírja, hogyan lehet visszavonni a diszpécserközpontban elvégzett nem mentett módosításokat.</span><span class="sxs-lookup"><span data-stu-id="517b6-104">This topic describes how to reverse unsaved modifications that you make in a dispatch board.</span></span> <span data-ttu-id="517b6-105">Például hozzárendel egy dolgozót egy szolgáltatási tevékenységhez, elmenti az információt, és később úgy dönt, hogy egy másik dolgozót rendel hozzá a szolgáltatási tevékenységhez.</span><span class="sxs-lookup"><span data-stu-id="517b6-105">For example, you assign a worker to a service activity, save the information, and then later decide to assign a different worker to the service activity.</span></span> <span data-ttu-id="517b6-106">Módosítja a dolgozó a diszpécserközpontban, majd a változások mentése előtt észreveszi, hogy az imént hozzárendelt dolgozó nem elérhető.</span><span class="sxs-lookup"><span data-stu-id="517b6-106">You modify the worker in the dispatch board, and then, before saving the change, learn that the worker just assigned is not available.</span></span> <span data-ttu-id="517b6-107">A nem mentett módosítást visszavonhatja, így az eredeti dolgozó újra hozzárendelésre kerül a szolgáltatáshoz.</span><span class="sxs-lookup"><span data-stu-id="517b6-107">You can reverse the unsaved modification so that the original worker is reassigned to the service order.</span></span>
+<span data-ttu-id="b589d-104">Ez az útmutató leírja, hogyan lehet visszavonni a diszpécserközpontban elvégzett nem mentett módosításokat.</span><span class="sxs-lookup"><span data-stu-id="b589d-104">This topic describes how to reverse unsaved modifications that you make in a dispatch board.</span></span> <span data-ttu-id="b589d-105">Például hozzárendel egy dolgozót egy szolgáltatási tevékenységhez, elmenti az információt, és később úgy dönt, hogy egy másik dolgozót rendel hozzá a szolgáltatási tevékenységhez.</span><span class="sxs-lookup"><span data-stu-id="b589d-105">For example, you assign a worker to a service activity, save the information, and then later decide to assign a different worker to the service activity.</span></span> <span data-ttu-id="b589d-106">Módosítja a dolgozó a diszpécserközpontban, majd a változások mentése előtt észreveszi, hogy az imént hozzárendelt dolgozó nem elérhető.</span><span class="sxs-lookup"><span data-stu-id="b589d-106">You modify the worker in the dispatch board, and then, before saving the change, learn that the worker just assigned is not available.</span></span> <span data-ttu-id="b589d-107">A nem mentett módosítást visszavonhatja, így az eredeti dolgozó újra hozzárendelésre kerül a szolgáltatáshoz.</span><span class="sxs-lookup"><span data-stu-id="b589d-107">You can reverse the unsaved modification so that the original worker is reassigned to the service order.</span></span>
 
-<span data-ttu-id="517b6-108">A következő lépések segítségével vonhatja vissza a diszpécserközpontban nem mentett változtatásokat:</span><span class="sxs-lookup"><span data-stu-id="517b6-108">Use the following steps to reverse unsaved changes in a dispatch board:</span></span>
+<span data-ttu-id="b589d-108">A következő lépések segítségével vonhatja vissza a diszpécserközpontban nem mentett változtatásokat:</span><span class="sxs-lookup"><span data-stu-id="b589d-108">Use the following steps to reverse unsaved changes in a dispatch board:</span></span>
 
-1.  <span data-ttu-id="517b6-109">Kattintson a következőkre: **Szolgáltatáskezelés** \> **Rendszeres** \> **Diszpécserközpont**.</span><span class="sxs-lookup"><span data-stu-id="517b6-109">Click **Service management** \> **Periodic** \> **Dispatch board**.</span></span>
+1.  <span data-ttu-id="b589d-109">Kattintson a következőkre: **Szolgáltatáskezelés** \> **Rendszeres** \> **Diszpécserközpont**.</span><span class="sxs-lookup"><span data-stu-id="b589d-109">Click **Service management** \> **Periodic** \> **Dispatch board**.</span></span>
 
-2.  <span data-ttu-id="517b6-110">A **Diszpécserközpont** űrlapon töltse ki a mezőket a megfelelő információkkal, majd kattintson az **OK** gombra.</span><span class="sxs-lookup"><span data-stu-id="517b6-110">In the **Dispatch board** form, enter relevant information in the fields, and then click **OK**.</span></span> 
+2.  <span data-ttu-id="b589d-110">A **Diszpécserközpont** űrlapon töltse ki a mezőket a megfelelő információkkal, majd kattintson az **OK** gombra.</span><span class="sxs-lookup"><span data-stu-id="b589d-110">In the **Dispatch board** form, enter relevant information in the fields, and then click **OK**.</span></span> 
 
-3.  <span data-ttu-id="517b6-111">Az utolsó nem mentett módosítás visszavonásához kattintson a **Visszavonás** elemre.</span><span class="sxs-lookup"><span data-stu-id="517b6-111">To reverse the most recent change that is not saved, click **Undo**.</span></span>
+3.  <span data-ttu-id="b589d-111">Az utolsó nem mentett módosítás visszavonásához kattintson a **Visszavonás** elemre.</span><span class="sxs-lookup"><span data-stu-id="b589d-111">To reverse the most recent change that is not saved, click **Undo**.</span></span>
 
-4.  <span data-ttu-id="517b6-112">Ha több egymás után végrehajtott, de még nem mentett módosítást szeretne visszavonni, kattintson az **Visszavonás** elemre mindaddig, amíg minden kívánt módosítást vissza nem vont.</span><span class="sxs-lookup"><span data-stu-id="517b6-112">To reverse a series of changes that are not saved, continue clicking **Undo** until each change that you want to discard is reversed.</span></span>
+4.  <span data-ttu-id="b589d-112">Ha több egymás után végrehajtott, de még nem mentett módosítást szeretne visszavonni, kattintson az **Visszavonás** elemre mindaddig, amíg minden kívánt módosítást vissza nem vont.</span><span class="sxs-lookup"><span data-stu-id="b589d-112">To reverse a series of changes that are not saved, continue clicking **Undo** until each change that you want to discard is reversed.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="517b6-113">Lásd még</span><span class="sxs-lookup"><span data-stu-id="517b6-113">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="b589d-113">Lásd még</span><span class="sxs-lookup"><span data-stu-id="b589d-113">See also</span></span>
 
-[<span data-ttu-id="517b6-114">Diszpécserközpont</span><span class="sxs-lookup"><span data-stu-id="517b6-114">Dispatch board</span></span>](dispatch-board.md)
+[<span data-ttu-id="b589d-114">Diszpécserközpont</span><span class="sxs-lookup"><span data-stu-id="b589d-114">Dispatch board</span></span>](dispatch-board.md)
 
-[<span data-ttu-id="517b6-115">Szolgáltatási tevékenységek</span><span class="sxs-lookup"><span data-stu-id="517b6-115">Service activities</span></span>](service-activities.md)
+[<span data-ttu-id="b589d-115">Szolgáltatási tevékenységek</span><span class="sxs-lookup"><span data-stu-id="b589d-115">Service activities</span></span>](service-activities.md)
 
  
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
