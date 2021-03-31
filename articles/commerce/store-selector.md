@@ -17,20 +17,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 74dbad4cb348f19b51ba8b84a1cd41fc5049708e
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 785ff004adcd94e7c4c6c5918d632ce662aa7989
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5006335"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5205122"
 ---
-# <a name="store-selector-module"></a>Üzletkiválasztó modul
+# <a name="store-selector-module"></a>Üzletválasztó modul
 
 [!include [banner](includes/banner.md)]
 
 Ez a témakör az üzletválasztó modullal foglalkozik, és bemutatja, hogy hogyan lehet azt hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
-
-## <a name="overview"></a>Áttekintés
 
 A vevők az üzletválasztó modulban kiválaszthatják, hogy melyik üzletben szeretnék felvenni a kiválasztott terméket az online vásárlás után. A Commerce 10.0.13 verziójában az üzletválasztó modul olyan további képességeket is tartalmaz, amelyek bemutatják az **Üzlet keresése** oldalt, ahol megjelennek a közelben található üzletek.
 

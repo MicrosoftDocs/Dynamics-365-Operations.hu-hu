@@ -16,12 +16,12 @@ ms.search.region: Hungary
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 336b2a2a75d87a7657f371a4e0b96d87f09523d6
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 9a0644a0da81824b3f34b876cbdfac1c499bb17e
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5018661"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5204714"
 ---
 # <a name="online-invoicing-system"></a>Online számlázási rendszer
 

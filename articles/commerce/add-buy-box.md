@@ -1,6 +1,6 @@
 ---
 title: Vásárlásmező modul
-description: Ez a témakör ismerteti a Vásárlásmező modulok működését és bemutatja, hogyan tudjuk hozzáadni azokat az egyes webhelyekhez, a Dynamics 365 Commerce segítségével.
+description: Ez a témakör ismerteti a Vásárlásmező modulok működését és bemutatja, hogyan tudjuk hozzáadni azokat az egyes webhelyekhez a Microsoft Dynamics 365 Commerce segítségével.
 author: anupamar-ms
 manager: annbe
 ms.date: 09/15/2020
@@ -16,20 +16,18 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: ae3da8ee77636a2d2257e01f5876f5542469f7da
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 4ddaf34ed2dec882310e5363db643bb522be1238
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4986054"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5206535"
 ---
-# <a name="buy-box-module"></a>Vásárlásmező modul
+# <a name="buy-box-module"></a>Vásárlásmező-modul
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör ismerteti a Vásárlási mező-modulok működését és bemutatja, hogyan tudjuk hozzáadni azokat az egyes webhelyekhez, a Dynamics 365 Commerce segítségével.
-
-## <a name="overview"></a>Összegzés
+Ez a témakör ismerteti a Vásárlásmező modulok működését és bemutatja, hogyan tudjuk hozzáadni azokat az egyes webhelyekhez a Microsoft Dynamics 365 Commerce segítségével.
 
 A *Vásárlási mező* kifejezés általában a termék adatlapjának azon mezőjére utal, mely a „honlap felső részén" található, és a termék megvásárlásához szükséges legfontosabb információkat szolgáltatja. (A „honlap felső részén" alatt az a terület értendő, amely a honlap betöltésekor elsőként látható, azaz a felhasználóknak nem szükséges lejjebb görgetniük, hogy láthassák.)
 

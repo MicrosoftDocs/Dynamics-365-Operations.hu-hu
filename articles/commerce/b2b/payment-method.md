@@ -16,12 +16,12 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 754e2f83d6c8ff5d3698d98062e54bba7ccd9836
-ms.sourcegitcommit: f9df202aefef761be52c0360b0e22da88773914c
+ms.openlocfilehash: 82dfd6ac7e97d838ef442fd6ded4a4f165fc795b
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "5035916"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5211201"
 ---
 # <a name="configure-the-customer-account-payment-method-for-b2b-e-commerce-sites"></a>A B2B e-commerce webhelyekhez használt vevői számlafizetési mód konfigurálása
 
@@ -29,7 +29,7 @@ ms.locfileid: "5035916"
 
 Ez a témakör azt ismerteti, hogyan kell konfigurálni a B2B e-commerce webhelyekhez használt vevői számlafizetési módot.
 
-A kiskereskedők különböző típusú kifizetéseket fogadhatnak el e-kereskedelmi csatornán értékesített termékeikért és szolgáltatásaikért. Minden egyes fizetéstípust, amelyet a kiskereskedő elfogad, konfigurálni kell a Microsoft Dynamics 365 Commerce rendszer beállításakor. A vevői számla (vagy részszámlázás) fizetési módnak támogatottnak kell lennie a B2B e-kereskedelmi webhelyeken. 
+A kiskereskedők különböző típusú kifizetéseket fogadhatnak el e-kereskedelmi csatornán értékesített termékeikért és szolgáltatásaikért. Minden egyes fizetéstípust, amelyet egy kiskereskedő elfogad, konfigurálni kell a Microsoft Dynamics 365 Commerce rendszer beállításakor. A vevői számla (vagy részszámlázás) fizetési módnak támogatottnak kell lennie a B2B e-kereskedelmi webhelyeken. 
 
 ## <a name="prerequisites"></a>Előfeltételek
 

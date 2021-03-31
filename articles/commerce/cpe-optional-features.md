@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 6639de250557ce9a25fc2cde3807abf64b0ddc18
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: def99a34404357e28501de5ccf11c6130d53f34f
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4993450"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5213818"
 ---
 # <a name="configure-optional-features-for-a-dynamics-365-commerce-evaluation-environment"></a>Dynamics 365 Commerce értékelési környezet választható funkcióinak konfigurálása
 
@@ -133,17 +133,17 @@ Ezeket a tokeneket az e-mail renderelése során a program lecseréli a vevőkre
 
 A következő tokenek érvényesek a teljes értékesítési rendelésre.
 
-| A token neve | Jogkivonat |
+| A token neve | Token |
 |-------------------|-------|
-| Rendelés száma      | %salesid% |
+| Rendelésszám      | %salesid% |
 | Vevő neve   | %customername% |
 | Szállítási cím  | %deliveryaddress% |
 | Számlázási cím   | %customeraddress% |
 | Megrendelési dátum        | %shipdate% |
-| Kézbesítés módja     | %modeofdelivery% |
-| Engedmény          | %discount% |
+| Szállítási mód     | %modeofdelivery% |
+| Kedvezmény          | %discount% |
 | Áfa         | %tax% |
-| Rendelés végösszege       | %total% |
+| Rendelés összesen       | %total% |
 
 #### <a name="sales-line"></a>Értékesítési sor
 
@@ -156,10 +156,10 @@ A következő tokeneket cseréli ki a rendszer értékekre az egyes termékek es
 |------------------------|-------|
 | Terméklista – kezdés   | \<!--%tablebegin.salesline% --\> |
 | Terméklista – befejezés     | \<!--%tableend.salesline%--\> |
-| Termék neve           | %lineproductname% |
+| Terméknév           | %lineproductname% |
 | Leírás            | %lineproductdescription% |
 | Mennyiség               | %linequantity% |
-| Sor egységára        | %lineprice% (verify) |
+| Sor egységára        | %lineprice% (ellenőrzés) |
 | sortétel összege        | %linenetamount% |
 | sorkedvezmény          | %linediscount% |
 | Szállítási dátum              | %lineshipdate% |

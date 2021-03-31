@@ -16,12 +16,12 @@ ms.search.region: Hungary
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 53319bb60b8a6465012c2fe0cfad2a617bfd852d
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 5e9217ef267b6f2f5971cc0d8a9ee01269618f12
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5018659"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5204723"
 ---
 # <a name="calculate-average-and-daily-exchange-rates"></a>Átlagos és napi árfolyam kiszámítása
 

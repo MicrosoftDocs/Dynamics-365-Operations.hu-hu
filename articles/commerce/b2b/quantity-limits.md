@@ -16,12 +16,12 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: e70648da2cc1c526625b6e34fd0867d40abb5a85
-ms.sourcegitcommit: f9df202aefef761be52c0360b0e22da88773914c
+ms.openlocfilehash: 1208b968e476ccbc7a726facf1db896c7bf3c36f
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "5035917"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5211177"
 ---
 # <a name="set-product-quantity-limits-for-b2b-e-commerce-sites"></a>Termékmennyiség-korlátok beállítása B2B e-kereskedelmi webhelyekhez
 
@@ -81,7 +81,7 @@ A B2B rendelési mennyiségi korlátok funkció Commerce webhelykészítőben va
 
 [Szervezeti modellezési hierarchiák létrehozása B2B szervezetek számára](org-model.md)
 
-[Üzleti partner típusú felhasználók kezelése a B2B e-kereskedelmi webhelyeken](manage-b2b-users.md)
+[Üzleti partner felhasználóinak kezelése a B2B e-kereskedelmi webhelyeken](manage-b2b-users.md)
 
 [A B2B e-commerce webhelyekhez használt vevői számlafizetési mód konfigurálása](payment-method.md)
 
