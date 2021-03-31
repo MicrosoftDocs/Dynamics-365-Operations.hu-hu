@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 3163975a8cc99c4b07fdbe03fa57ea6cfef53cd9
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 22f441f7dc3d53fee263ebb059679510c2e3d054
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4995215"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5226437"
 ---
 # <a name="cost-control-workspace"></a>Költségellenőrzési munkaterület 
 
@@ -56,7 +56,7 @@ Az **Adatszűrés** gyorslapon meghatározhatja a jelentés adatbeli alapjait. A
 | Költségkönyvelési főkönyv                                            | A **Költségkönyvelési főkönyv**, amely a jelentés alapjául szolgál. Az érték a **Költség-ellenőrzőegység** mezőből származik. |
 | Költség-ellenőrzőegység                                                 | A kiválasztott érték határozza meg a költségszámítási könyvelést és a költségelemeket, amelyekre ez a jelentés alapul. |
 | Statisztikai dimenzióhierarchia, költségösszetevődimenzió-hierarchia | A **Költségellenőrzés** munkaterületen konfigurációs rekord nem pénzbeli vagy monetáris értékeit is is lehet jelenteni, de nem ugyanaz az elrendezés. Válasszon ki egy értéket a **elem dimenzióhierarchia költség** mezőben monetáris értékek jelentéséhez. Válasszon ki egy értéket a **Statisztikai dimenzióhierarchia költség** mezőben nem monetáris értékek jelentéséhez. A kiválasztott dimenzióhierarchia-rekord határozza meg a jelentési és összesítési szintek szerkezetét.<blockquote>[!NOTE]<br>A nem monetáris és pénzbeli értékek egymás melletti megtekintéséhez exportálhat adatokat Microsoft Excel programba és a Microsoft Power BI tartalomcsomagba.</blockquote> |
-| Költségobjektum dimenzióhierarchia                                   | Válassza ki a költségobjektum-dimenziók hierarchiáját, amely megfelel a jelentésben megadott célnak. |
+| Költségobjektum-dimenzióhierarchia                                   | Válassza ki a költségobjektum-dimenziók hierarchiáját, amely megfelel a jelentésben megadott célnak. |
 | Költségvetés eredeti verziója                                           | Válassza ki a költségkeret-azonosítót, amely az eredeti költségkeretként jelenik meg a jelentés összefüggésében. |
 | Költségvetés felülvizsgált verziója                                            | Válassza ki a költségkeret-azonosítót, amely a jelentés összefüggésében módosított költségvetésként működik. |
 
