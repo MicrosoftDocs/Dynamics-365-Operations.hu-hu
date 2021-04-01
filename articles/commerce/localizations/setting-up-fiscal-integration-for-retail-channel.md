@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2018-11-1
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 889340c13d150ce8e3ad49a08b3d7f0c25a4b77a
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 475459e20bb53a726524311fb66ddd82dee454ef
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5017893"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5231718"
 ---
 # <a name="set-up-the-fiscal-integration-for-commerce-channels"></a>A Commerce csatornák pénzügyi integrálásának beállítása
 
@@ -62,7 +62,7 @@ Mielőtt a pénzügyi integráció funkciót használná, konfigurálja a követ
 
     A pénzügyi csatlakozó felelős a kommunikációért a pénzügyi eszközzel vagy szolgáltatással. Például egy pénzügyi csatlakozó elküldhet egy XML-formátumban létrehozott pénzügyi nyugtát, amelyet egy pénzügyi dokumentumszolgáltató hozott létre egy pénzügyi nyomtatónak. Pénzügyi integráció összetevőinek kapcsolatos további tudnivalókat lásd: [Pénzügyi regisztráció folyamata és pénzügyi integrációs minták pénzügyi eszközökhöz](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
 
-    1. A **Pénzügyi összekötők** oldalon (**Retail and Commerce\> Csatorna beállítása \> Pénzügyi integráció \> Pénzügyi összekötők**) töltsön fel egy XML-konfigurációt minden eszközhöz vagy szolgáltatáshoz, amelyet pénzügyi integrációs célokra tervez használni.
+    1. A **Pénzügyi összekötők** oldalon (**Retail és Commerce\> Csatorna beállítása \> Pénzügyi integráció \> Pénzügyi összekötők**) töltsön fel egy XML-konfigurációt minden eszközhöz vagy szolgáltatáshoz, amelyet pénzügyi integrációs célokra tervez használni.
 
         > [!TIP]
         > A **Nézet** kiválasztásával, meg lehet tekinteni minden funkcionális és technikai profilt, amelyek az aktuális pénzügyi csatlakozóhoz kapcsolódnak.
