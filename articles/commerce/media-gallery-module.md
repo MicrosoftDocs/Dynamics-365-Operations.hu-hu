@@ -16,20 +16,18 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 045568797722a621ea4e6c82d10dbb266b9e8162
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: e9b5a8123c64dce2ba65758f0312a899646cf948
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4982466"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5252558"
 ---
-# <a name="media-gallery-module"></a>Médiatár modul
+# <a name="media-gallery-module"></a>Médiagaléria modul
 
 [!include [banner](includes/banner.md)]
 
 Ez a témakör a médiatár modulokkal foglalkozik, és bemutatja, hogy hogyan lehet őket hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
-
-## <a name="overview"></a>Áttekintés
 
 A médiatár modulok egy vagy több képet jelenítenek meg a galéria nézetben. A médiatár modulok támogatják a miniatűr képek vízszintes (a kép alatti sorként) vagy függőleges (a kép melletti oszlopként) elrendezését is. A médiatár modulok olyan képességeket is biztosítanak, amelyek lehetővé teszik a képek nagyítását vagy teljes képernyős módban való megtekintését. A médiatár modulban történő megjelenítéshez egy képnek a Commerce webhelykészítő médiatárában kell lennie. Jelenleg a médiatár modulok csak képeket támogatnak.
 
