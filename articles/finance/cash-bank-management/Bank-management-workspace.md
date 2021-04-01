@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 7fcb56440adf86194e9ae05957349dd5ebe89ce7
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 3c5d248c5431b7a54835c699618a0a27ab760754
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4985486"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5260207"
 ---
 # <a name="bank-management-workspace"></a>Bankkezelési munkaterület
 
 [!include [banner](../includes/banner.md)]
 
-A **Bankszámla kezelése** munkaterület olyan információkat jelenít meg, amelyek a vállalati bankszámlákhoz kapcsolódnak. Ez a munkaterület egy **Összefoglaló** nézetet és egy **Elemzés** oldalt tartalmaz. Az **Összefoglaló** nézet összegző csempéket, bankszámlaadatokat, egyenleget és kapcsolódó adatokat tartalmaz. Az **Elemzések** oldal a Microsoft Power BI funkciói révén vizuálisan megjeleni a bankszámlaegyenlegekkel kapcsolatos információkat.
+A **Bankszámla kezelése** munkaterület olyan információkat jelenít meg, amelyek a vállalati bankszámlákhoz kapcsolódnak. Ez a munkaterület egy **Összefoglaló** nézetet és egy **Elemzés** oldalt tartalmaz. Az **Összefoglaló** nézet összegző csempéket, bankszámlaadatokat, egyenleget és kapcsolódó adatokat tartalmaz. Az **Elemzés** oldal a Microsoft Power BI funkciói révén vizuálisan megjeleníti a bankszámlaegyenlegekkel kapcsolatos információkat.
 
 ## <a name="summary-view"></a>Osszegzésé megtekintése
 
