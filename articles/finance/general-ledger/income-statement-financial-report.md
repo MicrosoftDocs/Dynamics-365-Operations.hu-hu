@@ -17,56 +17,59 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 146d4b9946c1b29105cff637fa9d8803db3d0c0f
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: fab0e9d5e550b1848c3483b3172836e258353ebb
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4988777"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5249071"
 ---
-# <a name="income-statement-financial-report"></a><span data-ttu-id="31409-104">Bevételkimutatás pénzügyi jelentés</span><span class="sxs-lookup"><span data-stu-id="31409-104">Income statement financial report</span></span>
+# <a name="income-statement-financial-report"></a><span data-ttu-id="dfbf7-104">Bevételkimutatás pénzügyi jelentés</span><span class="sxs-lookup"><span data-stu-id="dfbf7-104">Income statement financial report</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="31409-105">Ez a cikk a bevételkimutatások alapvető jelentését írja le.</span><span class="sxs-lookup"><span data-stu-id="31409-105">This article describes the default report for income statements.</span></span> <span data-ttu-id="31409-106">Emellett a jelentéshez tartozó építőelemeket is leírja.</span><span class="sxs-lookup"><span data-stu-id="31409-106">It also describes the building blocks that are associated with this report.</span></span> 
+<span data-ttu-id="dfbf7-105">Ez a cikk a bevételkimutatások alapvető jelentését írja le.</span><span class="sxs-lookup"><span data-stu-id="dfbf7-105">This article describes the default report for income statements.</span></span> <span data-ttu-id="dfbf7-106">Emellett a jelentéshez tartozó építőelemeket is leírja.</span><span class="sxs-lookup"><span data-stu-id="dfbf7-106">It also describes the building blocks that are associated with this report.</span></span> 
 
-<a name="default-income-statement-report"></a><span data-ttu-id="31409-107">Alapértelmezett bevételkimutatás jelentés</span><span class="sxs-lookup"><span data-stu-id="31409-107">Default income statement report</span></span>
+<a name="default-income-statement-report"></a><span data-ttu-id="dfbf7-107">Alapértelmezett bevételkimutatás jelentés</span><span class="sxs-lookup"><span data-stu-id="dfbf7-107">Default income statement report</span></span>
 -------------------------------
 
-| <span data-ttu-id="31409-108">Alapértelmezett jelentés</span><span class="sxs-lookup"><span data-stu-id="31409-108">Default report</span></span>             | <span data-ttu-id="31409-109">Mire szolgál?</span><span class="sxs-lookup"><span data-stu-id="31409-109">What it does</span></span>                                                                                              |
+| <span data-ttu-id="dfbf7-108">Alapértelmezett jelentés</span><span class="sxs-lookup"><span data-stu-id="dfbf7-108">Default report</span></span>             | <span data-ttu-id="dfbf7-109">Mire szolgál?</span><span class="sxs-lookup"><span data-stu-id="dfbf7-109">What it does</span></span>                                                                                              |
 |----------------------------|-----------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="31409-110">Bevétel-kimutatás – Alapértelmezett</span><span class="sxs-lookup"><span data-stu-id="31409-110">Income Statement – Default</span></span> | <span data-ttu-id="31409-111">Megmutatja a szervezet nyereségességét az aktuális időszakra és a folyó év mai napjáig.</span><span class="sxs-lookup"><span data-stu-id="31409-111">Provides a view of the organization’s profitability for the current period and also for the year to date.</span></span> |
+| <span data-ttu-id="dfbf7-110">Bevétel-kimutatás – Alapértelmezett</span><span class="sxs-lookup"><span data-stu-id="dfbf7-110">Income Statement – Default</span></span> | <span data-ttu-id="dfbf7-111">Megmutatja a szervezet nyereségességét az aktuális időszakra és a folyó év mai napjáig.</span><span class="sxs-lookup"><span data-stu-id="dfbf7-111">Provides a view of the organization’s profitability for the current period and also for the year to date.</span></span> |
 
-## <a name="building-blocks"></a><span data-ttu-id="31409-112">Építőelemek</span><span class="sxs-lookup"><span data-stu-id="31409-112">Building blocks</span></span>
-<span data-ttu-id="31409-113">Az eredménykimutatás pénzügyi jelentések a következő építőelemekből állnak.</span><span class="sxs-lookup"><span data-stu-id="31409-113">The income statement financial report uses the following building blocks.</span></span>
+## <a name="building-blocks"></a><span data-ttu-id="dfbf7-112">Építőelemek</span><span class="sxs-lookup"><span data-stu-id="dfbf7-112">Building blocks</span></span>
+<span data-ttu-id="dfbf7-113">Az eredménykimutatás pénzügyi jelentések a következő építőelemekből állnak.</span><span class="sxs-lookup"><span data-stu-id="dfbf7-113">The income statement financial report uses the following building blocks.</span></span>
 
-| <span data-ttu-id="31409-114">Alapértelmezett jelentés</span><span class="sxs-lookup"><span data-stu-id="31409-114">Default report</span></span>             | <span data-ttu-id="31409-115">Sor definíciója</span><span class="sxs-lookup"><span data-stu-id="31409-115">Row definition</span></span>                     | <span data-ttu-id="31409-116">Oszlopdefiníció</span><span class="sxs-lookup"><span data-stu-id="31409-116">Column definition</span></span>          |
+| <span data-ttu-id="dfbf7-114">Alapértelmezett jelentés</span><span class="sxs-lookup"><span data-stu-id="dfbf7-114">Default report</span></span>             | <span data-ttu-id="dfbf7-115">Sor definíciója</span><span class="sxs-lookup"><span data-stu-id="dfbf7-115">Row definition</span></span>                     | <span data-ttu-id="dfbf7-116">Oszlopdefiníció</span><span class="sxs-lookup"><span data-stu-id="dfbf7-116">Column definition</span></span>          |
 |----------------------------|------------------------------------|----------------------------|
-| <span data-ttu-id="31409-117">Bevételkimutatás – Alapértelmezett</span><span class="sxs-lookup"><span data-stu-id="31409-117">Income Statement - Default</span></span> | <span data-ttu-id="31409-118">Összesített bevételkimutatás – Alapértelmezett</span><span class="sxs-lookup"><span data-stu-id="31409-118">Summary Income Statement - Default</span></span> | <span data-ttu-id="31409-119">Időszakos és Idei – Alapértelmezett</span><span class="sxs-lookup"><span data-stu-id="31409-119">Periodic and YTD - Default</span></span> |
+| <span data-ttu-id="dfbf7-117">Bevételkimutatás – Alapértelmezett</span><span class="sxs-lookup"><span data-stu-id="dfbf7-117">Income Statement - Default</span></span> | <span data-ttu-id="dfbf7-118">Összesített bevételkimutatás – Alapértelmezett</span><span class="sxs-lookup"><span data-stu-id="dfbf7-118">Summary Income Statement - Default</span></span> | <span data-ttu-id="dfbf7-119">Időszakos és Idei – Alapértelmezett</span><span class="sxs-lookup"><span data-stu-id="dfbf7-119">Periodic and YTD - Default</span></span> |
 
-### <a name="row-definition"></a><span data-ttu-id="31409-120">Sor definíciója</span><span class="sxs-lookup"><span data-stu-id="31409-120">Row definition</span></span>
+### <a name="row-definition"></a><span data-ttu-id="dfbf7-120">Sor definíciója</span><span class="sxs-lookup"><span data-stu-id="dfbf7-120">Row definition</span></span>
 
-<span data-ttu-id="31409-121">A sordefiníció, Összesítő Eredménykimutatás – Alapértelmezett, a hagyományos eredménykimutatás minden részére tartalmaz egy szakaszt.</span><span class="sxs-lookup"><span data-stu-id="31409-121">The row definition, Summary Income Statement – Default, contains a section for each part of a traditional income statement.</span></span> <span data-ttu-id="31409-122">A Főszámla-kategória dimenzió a sordefiníció létrehozásához használatos.</span><span class="sxs-lookup"><span data-stu-id="31409-122">The Main Account Category dimension is used to build this row definition.</span></span> <span data-ttu-id="31409-123">Ezért bárki létrehozhat jelentést anélkül, hogy módosításokat végezne.</span><span class="sxs-lookup"><span data-stu-id="31409-123">Therefore, anyone can generate the report without having to make any modifications.</span></span>
+<span data-ttu-id="dfbf7-121">A sordefiníció, Összesítő Eredménykimutatás – Alapértelmezett, a hagyományos eredménykimutatás minden részére tartalmaz egy szakaszt.</span><span class="sxs-lookup"><span data-stu-id="dfbf7-121">The row definition, Summary Income Statement – Default, contains a section for each part of a traditional income statement.</span></span> <span data-ttu-id="dfbf7-122">A Főszámla-kategória dimenzió a sordefiníció létrehozásához használatos.</span><span class="sxs-lookup"><span data-stu-id="dfbf7-122">The Main Account Category dimension is used to build this row definition.</span></span> <span data-ttu-id="dfbf7-123">Ezért bárki létrehozhat jelentést anélkül, hogy módosításokat végezne.</span><span class="sxs-lookup"><span data-stu-id="dfbf7-123">Therefore, anyone can generate the report without having to make any modifications.</span></span>
 
-### <a name="column-definition"></a><span data-ttu-id="31409-124">Oszlopdefiníció</span><span class="sxs-lookup"><span data-stu-id="31409-124">Column Definition</span></span>
+### <a name="column-definition"></a><span data-ttu-id="dfbf7-124">Oszlopdefiníció</span><span class="sxs-lookup"><span data-stu-id="dfbf7-124">Column Definition</span></span>
 
-<span data-ttu-id="31409-125">Az oszlopdefiníciók tartalmaznak különböző típusú oszlopokot, a különböző szintű részletességre és pénzügyi adatokra.</span><span class="sxs-lookup"><span data-stu-id="31409-125">The column definitions contain different types of columns to provide different levels of detail and financial data.</span></span>
+<span data-ttu-id="dfbf7-125">Az oszlopdefiníciók tartalmaznak különböző típusú oszlopokot, a különböző szintű részletességre és pénzügyi adatokra.</span><span class="sxs-lookup"><span data-stu-id="dfbf7-125">The column definitions contain different types of columns to provide different levels of detail and financial data.</span></span>
 
--   <span data-ttu-id="31409-126">**Szakaszos és Idei – Alapértelmezett oszloptípusok:**</span><span class="sxs-lookup"><span data-stu-id="31409-126">**Periodic and YTD – Default column types:**</span></span>
-    -   <span data-ttu-id="31409-127">**DESC** – A leírás a sordefinícióból</span><span class="sxs-lookup"><span data-stu-id="31409-127">**DESC** – The description from the row definition</span></span>
-    -   <span data-ttu-id="31409-128">**FD** – Az aktuális időszak pénzügyi adatai</span><span class="sxs-lookup"><span data-stu-id="31409-128">**FD** – Financial data for the current period</span></span>
-    -   <span data-ttu-id="31409-129">**FD** – Pénzügyi év adatai, a mai napig.</span><span class="sxs-lookup"><span data-stu-id="31409-129">**FD** – Financial data for the year to date</span></span>
+-   <span data-ttu-id="dfbf7-126">**Szakaszos és Idei – Alapértelmezett oszloptípusok:**</span><span class="sxs-lookup"><span data-stu-id="dfbf7-126">**Periodic and YTD – Default column types:**</span></span>
+    -   <span data-ttu-id="dfbf7-127">**DESC** – A leírás a sordefinícióból</span><span class="sxs-lookup"><span data-stu-id="dfbf7-127">**DESC** – The description from the row definition</span></span>
+    -   <span data-ttu-id="dfbf7-128">**FD** – Az aktuális időszak pénzügyi adatai</span><span class="sxs-lookup"><span data-stu-id="dfbf7-128">**FD** – Financial data for the current period</span></span>
+    -   <span data-ttu-id="dfbf7-129">**FD** – Pénzügyi év adatai, a mai napig.</span><span class="sxs-lookup"><span data-stu-id="dfbf7-129">**FD** – Financial data for the year to date</span></span>
 
 
 
-<a name="additional-resources"></a><span data-ttu-id="31409-130">További erőforrások</span><span class="sxs-lookup"><span data-stu-id="31409-130">Additional resources</span></span>
+<a name="additional-resources"></a><span data-ttu-id="dfbf7-130">További erőforrások</span><span class="sxs-lookup"><span data-stu-id="dfbf7-130">Additional resources</span></span>
 --------
 
-[<span data-ttu-id="31409-131">Pénzügyi jelentéskészítés – áttekintés</span><span class="sxs-lookup"><span data-stu-id="31409-131">Financial reporting overview</span></span>](financial-reporting-getting-started.md)
+[<span data-ttu-id="dfbf7-131">Pénzügyi jelentéskészítés – áttekintés</span><span class="sxs-lookup"><span data-stu-id="dfbf7-131">Financial reporting overview</span></span>](financial-reporting-getting-started.md)
 
-[<span data-ttu-id="31409-132">Pénzügyi jelentések megtekintése</span><span class="sxs-lookup"><span data-stu-id="31409-132">View financial reports</span></span>](view-financial-reports.md)
+[<span data-ttu-id="dfbf7-132">Pénzügyi jelentések megtekintése</span><span class="sxs-lookup"><span data-stu-id="dfbf7-132">View financial reports</span></span>](view-financial-reports.md)
 
-[<span data-ttu-id="31409-133">Dynamics Pénzügyi jelentések blog</span><span class="sxs-lookup"><span data-stu-id="31409-133">Dynamics Financial Reporting Blog</span></span>](https://community.dynamics.com/365/financeandoperations/b/dynamics-365-finance-blog)
+[<span data-ttu-id="dfbf7-133">Dynamics Pénzügyi jelentések blog</span><span class="sxs-lookup"><span data-stu-id="dfbf7-133">Dynamics Financial Reporting Blog</span></span>](https://community.dynamics.com/365/financeandoperations/b/dynamics-365-finance-blog)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
