@@ -17,44 +17,47 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2019-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 3ab31b16c6ae07466d7655832701e71092064fe1
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 1538826f140393eec59be9ff4df5242d5ced9d8f
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4969503"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5249749"
 ---
-# <a name="set-up-expense-types"></a><span data-ttu-id="45e4b-103">Költségtípusok beállítása</span><span class="sxs-lookup"><span data-stu-id="45e4b-103">Set up expense types</span></span>
+# <a name="set-up-expense-types"></a><span data-ttu-id="292c0-103">Költségtípusok beállítása</span><span class="sxs-lookup"><span data-stu-id="292c0-103">Set up expense types</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="45e4b-104">Ez a témakör bemutatja, hogyan lehet eszköztípusokat beállítani az Eszközlízing modulban.</span><span class="sxs-lookup"><span data-stu-id="45e4b-104">This topic explains how to set up expense types in Asset leasing.</span></span> <span data-ttu-id="45e4b-105">A fizetési ütemezés által nem képviselt költségeket *Költségnek* nevezzük.</span><span class="sxs-lookup"><span data-stu-id="45e4b-105">Costs that aren't represented by the payment schedule are known as *expense costs*.</span></span> <span data-ttu-id="45e4b-106">Ilyen költségek például a ingatlanadók, a közterület karbantartási költségei és a biztosítási költségek.</span><span class="sxs-lookup"><span data-stu-id="45e4b-106">Examples of these costs include property taxes, common area maintenance costs, and insurance expenses.</span></span>
+<span data-ttu-id="292c0-104">Ez a témakör bemutatja, hogyan lehet eszköztípusokat beállítani az Eszközlízing modulban.</span><span class="sxs-lookup"><span data-stu-id="292c0-104">This topic explains how to set up expense types in Asset leasing.</span></span> <span data-ttu-id="292c0-105">A fizetési ütemezés által nem képviselt költségeket *Költségnek* nevezzük.</span><span class="sxs-lookup"><span data-stu-id="292c0-105">Costs that aren't represented by the payment schedule are known as *expense costs*.</span></span> <span data-ttu-id="292c0-106">Ilyen költségek például a ingatlanadók, a közterület karbantartási költségei és a biztosítási költségek.</span><span class="sxs-lookup"><span data-stu-id="292c0-106">Examples of these costs include property taxes, common area maintenance costs, and insurance expenses.</span></span>
 
-## <a name="add-an-administrative-expense-type"></a><span data-ttu-id="45e4b-107">Adminisztratív költségtípus hozzáadása</span><span class="sxs-lookup"><span data-stu-id="45e4b-107">Add an administrative expense type</span></span>
+## <a name="add-an-administrative-expense-type"></a><span data-ttu-id="292c0-107">Adminisztratív költségtípus hozzáadása</span><span class="sxs-lookup"><span data-stu-id="292c0-107">Add an administrative expense type</span></span>
 
-1. <span data-ttu-id="45e4b-108">Nyissa meg az **Eszközlízing \> Beállítás \> Költségtípusok** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="45e4b-108">Go to **Asset leasing \> Setup \> Expense types**.</span></span>
-2. <span data-ttu-id="45e4b-109">Válassza az **Új** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="45e4b-109">Select **New**.</span></span>
-3. <span data-ttu-id="45e4b-110">A megfelelő mezőkben adja meg az új költségtípust és a megnevezést.</span><span class="sxs-lookup"><span data-stu-id="45e4b-110">In the appropriate fields, enter the new expense type and a description.</span></span>
+1. <span data-ttu-id="292c0-108">Nyissa meg az **Eszközlízing \> Beállítás \> Költségtípusok** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="292c0-108">Go to **Asset leasing \> Setup \> Expense types**.</span></span>
+2. <span data-ttu-id="292c0-109">Válassza az **Új** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="292c0-109">Select **New**.</span></span>
+3. <span data-ttu-id="292c0-110">A megfelelő mezőkben adja meg az új költségtípust és a megnevezést.</span><span class="sxs-lookup"><span data-stu-id="292c0-110">In the appropriate fields, enter the new expense type and a description.</span></span>
 
-## <a name="assign-accounts-to-administrative-costs"></a><span data-ttu-id="45e4b-111">Számlák hozzárendelése az adminisztrációs költségekhez</span><span class="sxs-lookup"><span data-stu-id="45e4b-111">Assign accounts to administrative costs</span></span>
+## <a name="assign-accounts-to-administrative-costs"></a><span data-ttu-id="292c0-111">Számlák hozzárendelése az adminisztrációs költségekhez</span><span class="sxs-lookup"><span data-stu-id="292c0-111">Assign accounts to administrative costs</span></span>
 
-<span data-ttu-id="45e4b-112">Ezután a számlákat a költségtípusokhoz kell társítani.</span><span class="sxs-lookup"><span data-stu-id="45e4b-112">Next, you should associate accounts with the expense types.</span></span> <span data-ttu-id="45e4b-113">Ezek a számlák a költségütemezési bejegyzésekkor lesznek terhelve és feladva.</span><span class="sxs-lookup"><span data-stu-id="45e4b-113">These accounts will be debited when expense schedule entries are posted.</span></span> <span data-ttu-id="45e4b-114">Az ellenszámla minden lízing **Működési költségfizetési ütemezés** sorában meg van adva.</span><span class="sxs-lookup"><span data-stu-id="45e4b-114">The offset account is specified on the **Executory costs payment schedule** lines on each lease.</span></span>
+<span data-ttu-id="292c0-112">Ezután a számlákat a költségtípusokhoz kell társítani.</span><span class="sxs-lookup"><span data-stu-id="292c0-112">Next, you should associate accounts with the expense types.</span></span> <span data-ttu-id="292c0-113">Ezek a számlák a költségütemezési bejegyzésekkor lesznek terhelve és feladva.</span><span class="sxs-lookup"><span data-stu-id="292c0-113">These accounts will be debited when expense schedule entries are posted.</span></span> <span data-ttu-id="292c0-114">Az ellenszámla minden lízing **Működési költségfizetési ütemezés** sorában meg van adva.</span><span class="sxs-lookup"><span data-stu-id="292c0-114">The offset account is specified on the **Executory costs payment schedule** lines on each lease.</span></span>
 
-1. <span data-ttu-id="45e4b-115">Nyissa meg az **Eszközlízing \> Beállítás \> Eszközlízing paraméterei** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="45e4b-115">Go to **Asset leasing \> Setup \> Asset leasing parameters**.</span></span>
-2. <span data-ttu-id="45e4b-116">A **Számlák** fül **Működési költségek** gyorslapján, a **Költségtípus** mezőjében válassza ki a költség típusát.</span><span class="sxs-lookup"><span data-stu-id="45e4b-116">On the **Accounts** tab, on the **Executory costs** FastTab, in the **Expense type** field, select the expense type.</span></span>
-3. <span data-ttu-id="45e4b-117">Válassza a **Hozzáadás** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="45e4b-117">Select **Add**.</span></span>
-4. <span data-ttu-id="45e4b-118">A **Könyv típusa** mezőben válassza ki azt a könyvtípust, amelyet az adminisztratív költségekhez szeretne kapcsolni.</span><span class="sxs-lookup"><span data-stu-id="45e4b-118">In the **Book type** field, select the book type to link to the administrative costs.</span></span>
+1. <span data-ttu-id="292c0-115">Nyissa meg az **Eszközlízing \> Beállítás \> Eszközlízing paraméterei** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="292c0-115">Go to **Asset leasing \> Setup \> Asset leasing parameters**.</span></span>
+2. <span data-ttu-id="292c0-116">A **Számlák** fül **Működési költségek** gyorslapján, a **Költségtípus** mezőjében válassza ki a költség típusát.</span><span class="sxs-lookup"><span data-stu-id="292c0-116">On the **Accounts** tab, on the **Executory costs** FastTab, in the **Expense type** field, select the expense type.</span></span>
+3. <span data-ttu-id="292c0-117">Válassza a **Hozzáadás** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="292c0-117">Select **Add**.</span></span>
+4. <span data-ttu-id="292c0-118">A **Könyv típusa** mezőben válassza ki azt a könyvtípust, amelyet az adminisztratív költségekhez szeretne kapcsolni.</span><span class="sxs-lookup"><span data-stu-id="292c0-118">In the **Book type** field, select the book type to link to the administrative costs.</span></span>
 
     > [!NOTE]
-    > <span data-ttu-id="45e4b-119">Ugyanahhoz a költségszámlához több könyvtípus is csatolható.</span><span class="sxs-lookup"><span data-stu-id="45e4b-119">Multiple book types can be linked to the same expense account.</span></span>
+    > <span data-ttu-id="292c0-119">Ugyanahhoz a költségszámlához több könyvtípus is csatolható.</span><span class="sxs-lookup"><span data-stu-id="292c0-119">Multiple book types can be linked to the same expense account.</span></span>
 
-5. <span data-ttu-id="45e4b-120">A **Számlakód** mezőben adja meg, hogy a könyv mely lízingekre legyen alkalmazva:</span><span class="sxs-lookup"><span data-stu-id="45e4b-120">In the **Account code** field, specify which leases the book should be applied to:</span></span>
+5. <span data-ttu-id="292c0-120">A **Számlakód** mezőben adja meg, hogy a könyv mely lízingekre legyen alkalmazva:</span><span class="sxs-lookup"><span data-stu-id="292c0-120">In the **Account code** field, specify which leases the book should be applied to:</span></span>
 
-    - <span data-ttu-id="45e4b-121">**Mind** – Könyv alkalmazása az összes lízinghez.</span><span class="sxs-lookup"><span data-stu-id="45e4b-121">**All** – Apply the book to all leases.</span></span>
-    - <span data-ttu-id="45e4b-122">**Csoport** – A könyv alkalmazása a lízingek egy adott csoportjára.</span><span class="sxs-lookup"><span data-stu-id="45e4b-122">**Group** – Apply the book to a specific group of leases.</span></span>
-    - <span data-ttu-id="45e4b-123">**Tábla** – Könyv alkalmazása egy adott lízinghez.</span><span class="sxs-lookup"><span data-stu-id="45e4b-123">**Table** – Apply the book to specific leases.</span></span>
+    - <span data-ttu-id="292c0-121">**Mind** – Könyv alkalmazása az összes lízinghez.</span><span class="sxs-lookup"><span data-stu-id="292c0-121">**All** – Apply the book to all leases.</span></span>
+    - <span data-ttu-id="292c0-122">**Csoport** – A könyv alkalmazása a lízingek egy adott csoportjára.</span><span class="sxs-lookup"><span data-stu-id="292c0-122">**Group** – Apply the book to a specific group of leases.</span></span>
+    - <span data-ttu-id="292c0-123">**Tábla** – Könyv alkalmazása egy adott lízinghez.</span><span class="sxs-lookup"><span data-stu-id="292c0-123">**Table** – Apply the book to specific leases.</span></span>
 
-6. <span data-ttu-id="45e4b-124">Ha kiválasztotta a **Csoport** vagy **Tábla** lehetőséget a **Számlakód** mezőben, válassza ki a számlaszámot vagy csoportszámot a **Számla-/Csoportszám** mezőben.</span><span class="sxs-lookup"><span data-stu-id="45e4b-124">If you selected **Group** or **Table** in the **Account code** field, select an account number or group number in the **Account/Group number** field.</span></span>
-7. <span data-ttu-id="45e4b-125">A megfelelő mezőkben válassza ki a pénzügyi lízing fő számláját és az operatív lízing fő számláját.</span><span class="sxs-lookup"><span data-stu-id="45e4b-125">In the appropriate fields, select the finance lease main account and the operating lease main account.</span></span>
+6. <span data-ttu-id="292c0-124">Ha kiválasztotta a **Csoport** vagy **Tábla** lehetőséget a **Számlakód** mezőben, válassza ki a számlaszámot vagy csoportszámot a **Számla-/Csoportszám** mezőben.</span><span class="sxs-lookup"><span data-stu-id="292c0-124">If you selected **Group** or **Table** in the **Account code** field, select an account number or group number in the **Account/Group number** field.</span></span>
+7. <span data-ttu-id="292c0-125">A megfelelő mezőkben válassza ki a pénzügyi lízing fő számláját és az operatív lízing fő számláját.</span><span class="sxs-lookup"><span data-stu-id="292c0-125">In the appropriate fields, select the finance lease main account and the operating lease main account.</span></span>
 
-<span data-ttu-id="45e4b-126">Miután elvégezte ezeket a lépéseket, hozzáadhatja a költségeket a kijelölt **Lízing részletei** lapján található **Működési költségek fizetési ütemezése** sorokon keresztül.</span><span class="sxs-lookup"><span data-stu-id="45e4b-126">When you've completed these steps, you can add expenses through the **Executory costs payment schedule** lines on the **Lease details** page of a selected lease.</span></span> <span data-ttu-id="45e4b-127">Új lízing létrehozásakor költségeket is hozzáadhat.</span><span class="sxs-lookup"><span data-stu-id="45e4b-127">Alternatively, you can add expenses when you create a new lease.</span></span>
+<span data-ttu-id="292c0-126">Miután elvégezte ezeket a lépéseket, hozzáadhatja a költségeket a kijelölt **Lízing részletei** lapján található **Működési költségek fizetési ütemezése** sorokon keresztül.</span><span class="sxs-lookup"><span data-stu-id="292c0-126">When you've completed these steps, you can add expenses through the **Executory costs payment schedule** lines on the **Lease details** page of a selected lease.</span></span> <span data-ttu-id="292c0-127">Új lízing létrehozásakor költségeket is hozzáadhat.</span><span class="sxs-lookup"><span data-stu-id="292c0-127">Alternatively, you can add expenses when you create a new lease.</span></span>
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
