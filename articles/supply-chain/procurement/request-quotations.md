@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5b3338e1837496605ce94a54eb57a32b1b83145b
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: d0338447cba847f3677f5e3de7144fc75da01ddf
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5016931"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5237376"
 ---
 # <a name="requests-for-quotation-rfqs-overview"></a>Ajánlatkérések (RFQ-k) áttekintése
 
@@ -80,19 +80,19 @@ A szállítóknak elküldött e-mailes értesítés sablonját a **Beszerzési �
 - %Ajánlat visszaküldésének oka%
 - %Módosítás oka%
 - %A módosítást készítette%
-- %Vállalat%
+- %Company%
 - %RFQ case name%
 - %Expiry Date Time%
 - %Date%
 
-Az %Ajánlat visszaküldésének oka% és %Módosítás oka% tokeneket a rendszer olyan szöveggel helyettesíti, amelyet a beszerző adhat meg a **Módosítás** varázslóban elvégzett módosítások befejezésével. Az %A módosítást készítette% és %Vállalat% tokeneket a rendszer automatikusan az árajánlatkérés alapján tölti ki. A %Date% token helyére az aktuális dátum kerül.
+Az %Ajánlat visszaküldésének oka% és %Módosítás oka% tokeneket a rendszer olyan szöveggel helyettesíti, amelyet a beszerző adhat meg a **Módosítás** varázslóban elvégzett módosítások befejezésével. Az %A módosítást készítette% és %Company% tokeneket a rendszer automatikusan az árajánlatkérés alapján tölti ki. A %Date% token helyére az aktuális dátum kerül.
 
 Ha vissza szeretne vonni egy ajánlatkérést az elküldés után, ezt az ajánlatkérési esetben teheti meg. A visszavonáshoz egy e-mail sablon szükséges, amellyel elküldheti az érvénytelenítési értesítést a szállítói kapcsolattartóknak. A sablont ki kell jelölni a **Beszerzési és forrásparaméterek** lapon. A létrehozott sablon az alábbi helyettesítő tokeneket tartalmazhatja:
 
 - %Reason for cancellation%
 - %RFQ case%
 - %RFQ cancelled by%
-- %Vállalat%
+- %Company%
 - %RFQ case name%
 - %Date%
 
