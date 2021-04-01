@@ -17,16 +17,17 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2021-1-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: ea89d54f1ce3a1e971d41623bf44f909f7dfdf09
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: 7072c34ccbffc6bf135f55fd594cac4d9ea5a463
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5131287"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5237516"
 ---
 # <a name="asset-leasing-conventions"></a>Eszközlízingelési konvenciók
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Ez a témakör a lízingbe adott eszközökre vonatkozó konvenciókat írja le. A lízingelési konvenciók segítségével lehet meghatározni egy lízingkönyv kezdő dátumát. Ha a lízingmegállapodás értéke **Nincs**, a kezdő dátum megegyezik a lízing kezdő dátumának dátumával (amely a **Lízing kezdő dátuma** mező értéke). Ha a lízingmegállapodás beállítása **Teljes hónap**, a kezdési dátum annak a hónapnak az első napja, amelybe a lízing kezdő dátuma esik.
 
