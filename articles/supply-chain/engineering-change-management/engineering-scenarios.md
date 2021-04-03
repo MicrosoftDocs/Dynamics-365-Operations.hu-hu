@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 19fab4f6b81eaf6e3605b6668212eece10606360
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 56e868f3050432db8d3b1721da435665f554d90d
+ms.sourcegitcommit: 105f65468b45799761c26e5d0ad9df4ff162c38d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4987579"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5487921"
 ---
 # <a name="engineering-change-management-feature-walkthrough"></a>Mérnöki változtatások kezelése funkció áttekintése
 
@@ -397,7 +397,6 @@ A mérnök most áttekinti a vevőtől érkező kérést, és a termékhez módo
 
 1. A Művelet ablaktábla **Módosítási rendelés** lapjának **Állapot módosítása** csoportjában válassza a **Jóváhagyás** elemet.
 1. Válassza ki a **Feldolgozás** lehetőséget a termék adatainak frissítéséhez.
-1. Válassza a **Befejezés** gombot a módosítási rendelés befejezettként történő megjelöléséhez.
 
 ## <a name="release-the-changed-product"></a>A módosított termék kiadása
 
@@ -411,5 +410,8 @@ A termék most újra kiadható a *USMF* vállalatnak, majd elküldhető a vevőn
 1. Válassza az **OK** gombot a **Kiadások** párbeszédpanel bezárásához és a visszatéréshez a módosítási rendeléshez.
 1. Válassza ki a művelet ablaktábla **Módosítási rendelés** lapján a **Termékkiadások** csoportban a **Feldolgozás** lehetőséget, hogy az érintett termékeket kiadja a kiválasztott vállalatoknak. Azt is megteheti, hogy a kiadási folyamat elindításához kijelöli **Termékszerkezet kiadása** lehetőséget.
 
+## <a name="complete-the-change-order"></a>A módosítási utasítás befejezése
+
+A módosítási utasítás befejezettként való megjelöléséhez, amely azt jelzi, hogy nincs további művelet, a műveleti ablaktáblán válassza a **Kész** lehetőséget.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

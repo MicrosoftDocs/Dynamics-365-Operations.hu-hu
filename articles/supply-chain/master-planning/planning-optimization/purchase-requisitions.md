@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ReqCreatePlanWorkspace
+ms.search.form: ReqPlanSched, ReqGroup
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: ''
@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2021-01-04
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 8075f8d7c3868c6d6012edbce17dbbb4749209ab
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 20b4012e054a25d7d21c6f017d8ebcf18f6ee28d
+ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4992344"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5501078"
 ---
 # <a name="purchase-requisitions"></a>Beszerzési igénylések
 
@@ -44,7 +44,7 @@ A *jóváhagyott igénylések időkorlátja* meghatározza, hogy az alapterv men
 
 ### <a name="set-the-approved-requisitions-time-fence-for-a-coverage-group"></a>A jóváhagyott igénylési időkorlát beállítása fedezeti csoporthoz
 
-1. Ugorjon az **Alaptervezés** \> **Beállítás** \> **Fedezet** \> **Fedezeti csoportok** menübe.
+1. Lépjen az **Alaptervezés** \> **Beállítás** \> **Fedezet** \> **Fedezeti csoportok** menübe.
 1. Hozzon létre vagy válasszon ki egy fedezeti csoportot.
 1. Állítsa a **Jóváhagyott igénylések időkorlátja (napok)** mezőt az **Egyéb** gyorslapon az időkorlátba belefoglalandó napok számára.
 1. Ismételje meg a 2. és 3. lépést minden olyan további fedezetcsoportra, ahol be szeretné állítani a jóváhagyott igénylések időkorlátját.

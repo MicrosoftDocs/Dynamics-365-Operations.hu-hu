@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 09b5770190fea9591f422b61ce6deedb2b9fa790
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 1fe285f05e5f1ddcb7bd206290b9954cbdaffc75
+ms.sourcegitcommit: 105f65468b45799761c26e5d0ad9df4ff162c38d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4994003"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5487097"
 ---
 # <a name="troubleshoot-warehouse-configuration"></a>Raktár konfigurálása – Hibaelhárítás
 
@@ -109,5 +109,32 @@ Ha engedélyezni szeretné, hogy a dolgozók elvégezzék ezt a módosítást, a
 
 A lapon szükség szerint megadhat más mezőket is.
 
+## <a name="the-dock-management-profile-of-a-location-profile-is-not-preventing-inventory-types-from-being-mixed"></a>A helyprofilok kikötőkezelési profilja nem akadályozza meg a készlettípusok vegyes kezelését.
+
+### <a name="issue-description"></a>Probléma leírása
+
+*Szállítmánykonszolidációs irányelveket* használ. *Kikötőkezelési profilt* állított be egy *helyprofilhoz*, de a munka létrehozásakor a készlettípusok vegyesek a végleges helyen.
+
+### <a name="issue-resolution"></a>Probléma megoldása
+
+A kikötőkezelési profilokhoz szükség van a munka előzetes felosztására. Más szóval a kikötőkezelési profil azt várja, hogy egy munkafejlécben ne legyen több betárolási hely.
+
+Ahhoz, hogy a kikötőkezelési profil hatékonyan kezelje a készletkötegek vegyítését, munkafejléc-törést kell beállítani.
+
+Ebben a példában a kikötőkezelési profil úgy van beállítva, hogy a **Nem vegyíthető készlettípusok** értéke *Szállítmány azonosítója*, és ehhez munkafejléc-törést állítunk be:
+
+1. Lépjen a **Raktárkezelés \> Beállítás \> Munka \> Munkasablonok** elemre.
+1. Válassza ki a szerkeszteni kívánt **Munkarendelés típusa** lehetőséget (például *Beszerzési rendelések*).
+1. Válassza ki a szerkeszteni kívánt munkasablont.
+1. A műveleti ablaktáblán válassza a **Lekérdezés szerkesztése** lehetőséget.
+1. Nyissa meg a **Rendezés** lapot, és adjon hozzá egy sort a következő beállításokkal:
+    - **Tábla** - *Ideiglenes munkatranzakciók*
+    - **Származtatott tábla** - *Ideiglenes munkatranzakciók*
+    - **Mező** - *Szállítmány azonosítója*
+1. Válassza ki az **OK** lehetőséget.
+1. Visszatér a **Munkasablonok** oldalra. A Műveleti ablaktáblán kattintson a **Munkafejléc-törések** elemre.
+1. A műveleti ablaktáblán válassza a **Szerkesztés** lehetőséget.
+1. Jelölje be a **Mezőnév** *Szállítmány azonosítója* mezőhöz tartozó jelölőnégyzetet.
+1. A műveleti ablaktáblán válassza a **Mentés** lehetőséget.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSPhysDimUOM
+ms.search.form: EcoResPhysicalProductDimensions, WHSPhysDimUOM
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,16 +16,17 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-28
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 004d9b4522335b481b640ef0fe35f4db66e3c9f5
-ms.sourcegitcommit: b7a7a14f8650913f6797ae1c4a82ad8adfe415fd
+ms.openlocfilehash: aa5cbf807e809238489c539d3ad8c0bc34421774
+ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "5078270"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5501294"
 ---
 # <a name="set-different-dimensions-for-packing-and-storage"></a>Különböző dimenziók beállítása csomagoláshoz és tároláshoz
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Egyes cikkek csomagolása és tárolása olyan módon történik, hogy különböző folyamatoknál különböző módon kell nyomon követni a fizikai méreteket. A *Csomagolótermék-dimenziók* funkcióval termékenként egy vagy több dimenziótípust állíthat be. Minden dimenziótípus fizikai mértékek (súly, szélesség, mélység és magasság) sorozatát biztosítja, és meghatározza azt a folyamatot, amelyben ezek a fizikai mértékegységek érvényesek. Ha ez a funkció engedélyezve van, a rendszer a következő dimenziótípusokat támogatja:
 
