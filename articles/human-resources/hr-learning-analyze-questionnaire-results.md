@@ -16,56 +16,61 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2b49868b76dcc0a5df420e56fd1fc2477c475596
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: 91012c681666e543b59fcee326ad1254196c080b
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5115174"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5467939"
 ---
-# <a name="analyzing-questionnaire-results"></a><span data-ttu-id="838df-103">Kérdőív eredményeinek elemzése</span><span class="sxs-lookup"><span data-stu-id="838df-103">Analyzing questionnaire results</span></span>
+# <a name="analyzing-questionnaire-results"></a><span data-ttu-id="308bb-103">Kérdőív eredményeinek elemzése</span><span class="sxs-lookup"><span data-stu-id="308bb-103">Analyzing questionnaire results</span></span>
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 
-<span data-ttu-id="838df-104">A kérdőív-statisztikák felhasználhatók a demográfiai adatokon alapuló átlagok, összesítések és százalékok kiszámítására.</span><span class="sxs-lookup"><span data-stu-id="838df-104">Questionnaire statistics can be used to calculate averages, totals, and percentages based on a set of demographic data.</span></span> <span data-ttu-id="838df-105">Az eljárás megkezdéséhez ugorjon a Kérdőív > Eredmények megtekintése és elemzése > Kérdőív-statisztikák lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="838df-105">To begin this procedure, go to Questionnaire > View and analyze results > Questionnaire statistics.</span></span> <span data-ttu-id="838df-106">Ez az eljárás az USMF bemutatócéget használja.</span><span class="sxs-lookup"><span data-stu-id="838df-106">The demo data company used to create this procedure is USMF.</span></span>
+<span data-ttu-id="308bb-104">A kérdőív-statisztikák felhasználhatók a demográfiai adatokon alapuló átlagok, összesítések és százalékok kiszámítására.</span><span class="sxs-lookup"><span data-stu-id="308bb-104">Questionnaire statistics can be used to calculate averages, totals, and percentages based on a set of demographic data.</span></span> <span data-ttu-id="308bb-105">Az eljárás megkezdéséhez ugorjon a Kérdőív > Eredmények megtekintése és elemzése > Kérdőív-statisztikák lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="308bb-105">To begin this procedure, go to Questionnaire > View and analyze results > Questionnaire statistics.</span></span> <span data-ttu-id="308bb-106">Ez az eljárás az USMF bemutatócéget használja.</span><span class="sxs-lookup"><span data-stu-id="308bb-106">The demo data company used to create this procedure is USMF.</span></span>
 
 
-## <a name="create-a-questionnaire-statistics-record"></a><span data-ttu-id="838df-107">Kérdőív-statisztika rekord létrehozása</span><span class="sxs-lookup"><span data-stu-id="838df-107">Create a Questionnaire statistics record</span></span>
-1. <span data-ttu-id="838df-108">Ugorjon a Kérdőív-statisztikák lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="838df-108">Go to Questionnaire statistics.</span></span>
-2. <span data-ttu-id="838df-109">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="838df-109">Click New.</span></span>
-3. <span data-ttu-id="838df-110">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="838df-110">In the list, mark the selected row.</span></span>
-4. <span data-ttu-id="838df-111">Adjon meg egy értéket a Statisztikák mezőben.</span><span class="sxs-lookup"><span data-stu-id="838df-111">In the Statistics field, type a value.</span></span>
-5. <span data-ttu-id="838df-112">Írjon egy értéket a „Leírás” mezőbe.</span><span class="sxs-lookup"><span data-stu-id="838df-112">In the Description field, type a value.</span></span>
-6. <span data-ttu-id="838df-113">A Kérdőív mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="838df-113">In the Questionnaire field, click the drop-down button to open the lookup.</span></span>
-7. <span data-ttu-id="838df-114">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="838df-114">In the list, click the link in the selected row.</span></span>
-8. <span data-ttu-id="838df-115">Kattintson az Általános fülre.</span><span class="sxs-lookup"><span data-stu-id="838df-115">Click the General tab.</span></span>
-    * <span data-ttu-id="838df-116">Válassza ki, ha szeretné látni az anonim eredményeket vagy a dolgozók, kapcsolattartók és pályázók eredményeit.</span><span class="sxs-lookup"><span data-stu-id="838df-116">Select if you want to include anonymous results or results from workers, contacts, and applicants.</span></span>  
-9. <span data-ttu-id="838df-117">Jelölje be a Dolgozó jelölőnégyzetet, vagy törölje a jelet.</span><span class="sxs-lookup"><span data-stu-id="838df-117">Select or clear the Worker check box.</span></span>
-    * <span data-ttu-id="838df-118">Ha az eredményeket szolgálati idő vagy kor alapján tekinti meg, adja meg az eredmények csoportosításához használni kívánt intervallumot.</span><span class="sxs-lookup"><span data-stu-id="838df-118">If you will be viewing the results by seniority or age, specify the intervals that you would like to use for grouping the results.</span></span>  
-    * <span data-ttu-id="838df-119">Ha 5-ös értéket ad meg a korintervallumnak az eredményeket öt éves intervallumonként rendezi a rendszer.</span><span class="sxs-lookup"><span data-stu-id="838df-119">Entering a 5 for the age interval will group the results based on five-year age intervals.</span></span>  
-10. <span data-ttu-id="838df-120">A Kor mezőben adjon meg egy számot.</span><span class="sxs-lookup"><span data-stu-id="838df-120">In the Age field, enter a number.</span></span>
-    * <span data-ttu-id="838df-121">Válassza ki, ha szeretné lefuttatni a számításokat az egész kérdőíven minden egyes eredménycsoport, minden egyes kérdés vagy minden egyes kérdéssor esetében.</span><span class="sxs-lookup"><span data-stu-id="838df-121">Select if you want to run the calculation against the entire questionnaire, for each result group, for each question, or for each question row.</span></span>  
-    * <span data-ttu-id="838df-122">Válassza ki, hogy miként kívánja csoportosítani az eredményeket.</span><span class="sxs-lookup"><span data-stu-id="838df-122">Select how you would like to group the results.</span></span>  
-    * <span data-ttu-id="838df-123">Például ha kiszámítja a kérdésenkénti átlagpontszámot, lehetséges, hogy szeretné megnézni a kérdéseket Eredménycsoportok szerint csoportosítva.</span><span class="sxs-lookup"><span data-stu-id="838df-123">For example, if you calculate the average points per question, you may want to see the questions grouped by Result group.</span></span>  
-    * <span data-ttu-id="838df-124">Válassza ki az adatokat, amelyekre számítását alapozni kívánja.</span><span class="sxs-lookup"><span data-stu-id="838df-124">Select the data to base the calculation on.</span></span>  
-    * <span data-ttu-id="838df-125">Ha például szeretné összehasonlítani a dolgozók kérdőívre kapott átlagszázalékát a dolgozók által elért átlagpontszámmal.</span><span class="sxs-lookup"><span data-stu-id="838df-125">For example, if you want to see the average percent received on the questionnaire across your workers versus the average number of points achieved across your workers.</span></span>  
-11. <span data-ttu-id="838df-126">Kattintson a Tartomány fülre.</span><span class="sxs-lookup"><span data-stu-id="838df-126">Click the Range tab.</span></span>
-    * <span data-ttu-id="838df-127">Használjon tartományokat, így csak azok az eredmények jelennek meg, amelyek megfelelnek a Tartomány feltételnek.</span><span class="sxs-lookup"><span data-stu-id="838df-127">Use ranges to limit your result set to only those meeting the Range criteria.</span></span>  
-12. <span data-ttu-id="838df-128">Kattintson a Csoportosítás lapra.</span><span class="sxs-lookup"><span data-stu-id="838df-128">Click the Grouping by tab.</span></span>
-    * <span data-ttu-id="838df-129">Használjon Csoportosításokat az eredmények megjelenítésének meghatározására.</span><span class="sxs-lookup"><span data-stu-id="838df-129">Use Groupings to determine how the results should be displayed.</span></span>  
-    * <span data-ttu-id="838df-130">Például először rendezze az eredményeket nem, majd életkor szerint.</span><span class="sxs-lookup"><span data-stu-id="838df-130">For example, group the results first by gender, then by age.</span></span>  
-13. <span data-ttu-id="838df-131">Keresse meg és jelölje ki a kívánt rekordot a listán.</span><span class="sxs-lookup"><span data-stu-id="838df-131">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="838df-132">Helyezze át a csoportosításokat a kiválasztott oldalra, és rendezze őket a kívánt sorrendbe.</span><span class="sxs-lookup"><span data-stu-id="838df-132">Move the groupings into the Selected side and place them in the desired order.</span></span>  
+## <a name="create-a-questionnaire-statistics-record"></a><span data-ttu-id="308bb-107">Kérdőív-statisztika rekord létrehozása</span><span class="sxs-lookup"><span data-stu-id="308bb-107">Create a Questionnaire statistics record</span></span>
+1. <span data-ttu-id="308bb-108">Ugorjon a Kérdőív-statisztikák lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="308bb-108">Go to Questionnaire statistics.</span></span>
+2. <span data-ttu-id="308bb-109">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="308bb-109">Click New.</span></span>
+3. <span data-ttu-id="308bb-110">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="308bb-110">In the list, mark the selected row.</span></span>
+4. <span data-ttu-id="308bb-111">Adjon meg egy értéket a Statisztikák mezőben.</span><span class="sxs-lookup"><span data-stu-id="308bb-111">In the Statistics field, type a value.</span></span>
+5. <span data-ttu-id="308bb-112">Írjon egy értéket a „Leírás” mezőbe.</span><span class="sxs-lookup"><span data-stu-id="308bb-112">In the Description field, type a value.</span></span>
+6. <span data-ttu-id="308bb-113">A Kérdőív mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="308bb-113">In the Questionnaire field, click the drop-down button to open the lookup.</span></span>
+7. <span data-ttu-id="308bb-114">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="308bb-114">In the list, click the link in the selected row.</span></span>
+8. <span data-ttu-id="308bb-115">Kattintson az Általános fülre.</span><span class="sxs-lookup"><span data-stu-id="308bb-115">Click the General tab.</span></span>
+    * <span data-ttu-id="308bb-116">Válassza ki, ha szeretné látni az anonim eredményeket vagy a dolgozók, kapcsolattartók és pályázók eredményeit.</span><span class="sxs-lookup"><span data-stu-id="308bb-116">Select if you want to include anonymous results or results from workers, contacts, and applicants.</span></span>  
+9. <span data-ttu-id="308bb-117">Jelölje be a Dolgozó jelölőnégyzetet, vagy törölje a jelet.</span><span class="sxs-lookup"><span data-stu-id="308bb-117">Select or clear the Worker check box.</span></span>
+    * <span data-ttu-id="308bb-118">Ha az eredményeket szolgálati idő vagy kor alapján tekinti meg, adja meg az eredmények csoportosításához használni kívánt intervallumot.</span><span class="sxs-lookup"><span data-stu-id="308bb-118">If you will be viewing the results by seniority or age, specify the intervals that you would like to use for grouping the results.</span></span>  
+    * <span data-ttu-id="308bb-119">Ha 5-ös értéket ad meg a korintervallumnak az eredményeket öt éves intervallumonként rendezi a rendszer.</span><span class="sxs-lookup"><span data-stu-id="308bb-119">Entering a 5 for the age interval will group the results based on five-year age intervals.</span></span>  
+10. <span data-ttu-id="308bb-120">A Kor mezőben adjon meg egy számot.</span><span class="sxs-lookup"><span data-stu-id="308bb-120">In the Age field, enter a number.</span></span>
+    * <span data-ttu-id="308bb-121">Válassza ki, ha szeretné lefuttatni a számításokat az egész kérdőíven minden egyes eredménycsoport, minden egyes kérdés vagy minden egyes kérdéssor esetében.</span><span class="sxs-lookup"><span data-stu-id="308bb-121">Select if you want to run the calculation against the entire questionnaire, for each result group, for each question, or for each question row.</span></span>  
+    * <span data-ttu-id="308bb-122">Válassza ki, hogy miként kívánja csoportosítani az eredményeket.</span><span class="sxs-lookup"><span data-stu-id="308bb-122">Select how you would like to group the results.</span></span>  
+    * <span data-ttu-id="308bb-123">Például ha kiszámítja a kérdésenkénti átlagpontszámot, lehetséges, hogy szeretné megnézni a kérdéseket Eredménycsoportok szerint csoportosítva.</span><span class="sxs-lookup"><span data-stu-id="308bb-123">For example, if you calculate the average points per question, you may want to see the questions grouped by Result group.</span></span>  
+    * <span data-ttu-id="308bb-124">Válassza ki az adatokat, amelyekre számítását alapozni kívánja.</span><span class="sxs-lookup"><span data-stu-id="308bb-124">Select the data to base the calculation on.</span></span>  
+    * <span data-ttu-id="308bb-125">Ha például szeretné összehasonlítani a dolgozók kérdőívre kapott átlagszázalékát a dolgozók által elért átlagpontszámmal.</span><span class="sxs-lookup"><span data-stu-id="308bb-125">For example, if you want to see the average percent received on the questionnaire across your workers versus the average number of points achieved across your workers.</span></span>  
+11. <span data-ttu-id="308bb-126">Kattintson a Tartomány fülre.</span><span class="sxs-lookup"><span data-stu-id="308bb-126">Click the Range tab.</span></span>
+    * <span data-ttu-id="308bb-127">Használjon tartományokat, így csak azok az eredmények jelennek meg, amelyek megfelelnek a Tartomány feltételnek.</span><span class="sxs-lookup"><span data-stu-id="308bb-127">Use ranges to limit your result set to only those meeting the Range criteria.</span></span>  
+12. <span data-ttu-id="308bb-128">Kattintson a Csoportosítás lapra.</span><span class="sxs-lookup"><span data-stu-id="308bb-128">Click the Grouping by tab.</span></span>
+    * <span data-ttu-id="308bb-129">Használjon Csoportosításokat az eredmények megjelenítésének meghatározására.</span><span class="sxs-lookup"><span data-stu-id="308bb-129">Use Groupings to determine how the results should be displayed.</span></span>  
+    * <span data-ttu-id="308bb-130">Például először rendezze az eredményeket nem, majd életkor szerint.</span><span class="sxs-lookup"><span data-stu-id="308bb-130">For example, group the results first by gender, then by age.</span></span>  
+13. <span data-ttu-id="308bb-131">Keresse meg és jelölje ki a kívánt rekordot a listán.</span><span class="sxs-lookup"><span data-stu-id="308bb-131">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="308bb-132">Helyezze át a csoportosításokat a kiválasztott oldalra, és rendezze őket a kívánt sorrendbe.</span><span class="sxs-lookup"><span data-stu-id="308bb-132">Move the groupings into the Selected side and place them in the desired order.</span></span>  
 
-## <a name="execute-the-statistics-calculation"></a><span data-ttu-id="838df-133">Statisztikai számítások elvégzése</span><span class="sxs-lookup"><span data-stu-id="838df-133">Execute the statistics calculation</span></span>
-1. <span data-ttu-id="838df-134">Kattintson a végrehajtásra.</span><span class="sxs-lookup"><span data-stu-id="838df-134">Click Execute.</span></span>
-    * <span data-ttu-id="838df-135">Válassza ki, hogy melyik számítási funkciót kívánja végrehajtani az eredményeken.</span><span class="sxs-lookup"><span data-stu-id="838df-135">Select which calculation function you would like to perform on the results.</span></span>  
-    * <span data-ttu-id="838df-136">Például számolja ki a kérdőív átlagszázalékait a kiválasztott csoportosítások esetében vagy a teljes pontszámot a kiválasztott csoportosítás eredménycsoportjában.</span><span class="sxs-lookup"><span data-stu-id="838df-136">For example, calculate the average percentages across the questionnaire for the selected groupings or total the points across the result groups for the selected groupings.</span></span>  
-2. <span data-ttu-id="838df-137">Válassza ki a Korábbi keresések törlése jelölőnégyzetet vagy törölje a kijelölést.</span><span class="sxs-lookup"><span data-stu-id="838df-137">Select or clear the Delete previous searches check box.</span></span>
-3. <span data-ttu-id="838df-138">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="838df-138">Click OK.</span></span>
+## <a name="execute-the-statistics-calculation"></a><span data-ttu-id="308bb-133">Statisztikai számítások elvégzése</span><span class="sxs-lookup"><span data-stu-id="308bb-133">Execute the statistics calculation</span></span>
+1. <span data-ttu-id="308bb-134">Kattintson a végrehajtásra.</span><span class="sxs-lookup"><span data-stu-id="308bb-134">Click Execute.</span></span>
+    * <span data-ttu-id="308bb-135">Válassza ki, hogy melyik számítási funkciót kívánja végrehajtani az eredményeken.</span><span class="sxs-lookup"><span data-stu-id="308bb-135">Select which calculation function you would like to perform on the results.</span></span>  
+    * <span data-ttu-id="308bb-136">Például számolja ki a kérdőív átlagszázalékait a kiválasztott csoportosítások esetében vagy a teljes pontszámot a kiválasztott csoportosítás eredménycsoportjában.</span><span class="sxs-lookup"><span data-stu-id="308bb-136">For example, calculate the average percentages across the questionnaire for the selected groupings or total the points across the result groups for the selected groupings.</span></span>  
+2. <span data-ttu-id="308bb-137">Válassza ki a Korábbi keresések törlése jelölőnégyzetet vagy törölje a kijelölést.</span><span class="sxs-lookup"><span data-stu-id="308bb-137">Select or clear the Delete previous searches check box.</span></span>
+3. <span data-ttu-id="308bb-138">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="308bb-138">Click OK.</span></span>
 
-## <a name="view-the-results-of-the-questionnaire-statistics-run"></a><span data-ttu-id="838df-139">Tekintse meg a kérdőív-statisztikák lefuttatásának eredményeit.</span><span class="sxs-lookup"><span data-stu-id="838df-139">View the results of the questionnaire statistics run.</span></span>
-1. <span data-ttu-id="838df-140">Kattintson az Eredményre.</span><span class="sxs-lookup"><span data-stu-id="838df-140">Click Result.</span></span>
-2. <span data-ttu-id="838df-141">Kattintson az Eredményre.</span><span class="sxs-lookup"><span data-stu-id="838df-141">Click Result.</span></span>
-3. <span data-ttu-id="838df-142">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="838df-142">Close the page.</span></span>
+## <a name="view-the-results-of-the-questionnaire-statistics-run"></a><span data-ttu-id="308bb-139">Tekintse meg a kérdőív-statisztikák lefuttatásának eredményeit.</span><span class="sxs-lookup"><span data-stu-id="308bb-139">View the results of the questionnaire statistics run.</span></span>
+1. <span data-ttu-id="308bb-140">Kattintson az Eredményre.</span><span class="sxs-lookup"><span data-stu-id="308bb-140">Click Result.</span></span>
+2. <span data-ttu-id="308bb-141">Kattintson az Eredményre.</span><span class="sxs-lookup"><span data-stu-id="308bb-141">Click Result.</span></span>
+3. <span data-ttu-id="308bb-142">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="308bb-142">Close the page.</span></span>
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

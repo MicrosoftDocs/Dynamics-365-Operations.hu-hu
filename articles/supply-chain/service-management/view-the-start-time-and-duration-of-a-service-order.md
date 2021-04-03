@@ -17,44 +17,47 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f7e3277a61bd776c665d598583165e0dbd856e8c
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 15247587f04813121473f24d4c3c849ec1ba7bb8
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5010372"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5259530"
 ---
-# <a name="view-the-start-time-and-duration-of-a-service-order"></a><span data-ttu-id="9c710-103">Szervizrendelés kezdési időpontjának és tartamának megtekintése</span><span class="sxs-lookup"><span data-stu-id="9c710-103">View the start time and duration of a service order</span></span> 
+# <a name="view-the-start-time-and-duration-of-a-service-order"></a><span data-ttu-id="2c76f-103">Szervizrendelés kezdési időpontjának és tartamának megtekintése</span><span class="sxs-lookup"><span data-stu-id="2c76f-103">View the start time and duration of a service order</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="9c710-104">Megtekintheti, hogy mikor indították el a szervizrendelést, és várhatóan mikor fog befejeződni.</span><span class="sxs-lookup"><span data-stu-id="9c710-104">You can view when the work on the service order was started and when the service order is going to be completed.</span></span>
+<span data-ttu-id="2c76f-104">Megtekintheti, hogy mikor indították el a szervizrendelést, és várhatóan mikor fog befejeződni.</span><span class="sxs-lookup"><span data-stu-id="2c76f-104">You can view when the work on the service order was started and when the service order is going to be completed.</span></span>
 
-<span data-ttu-id="9c710-105">Azt is megjelenítheti, hogy mikor indították el és állították le a szervizrendelés időnyilvántartását.</span><span class="sxs-lookup"><span data-stu-id="9c710-105">You can also view when the time recording for a service order was started and stopped.</span></span> <span data-ttu-id="9c710-106">Ha a szervizrendelés le van állítva, akkor a várható befejezés ideje eltolódik.</span><span class="sxs-lookup"><span data-stu-id="9c710-106">When a service order is stopped, the time at which the service order must be completed is postponed.</span></span>
+<span data-ttu-id="2c76f-105">Azt is megjelenítheti, hogy mikor indították el és állították le a szervizrendelés időnyilvántartását.</span><span class="sxs-lookup"><span data-stu-id="2c76f-105">You can also view when the time recording for a service order was started and stopped.</span></span> <span data-ttu-id="2c76f-106">Ha a szervizrendelés le van állítva, akkor a várható befejezés ideje eltolódik.</span><span class="sxs-lookup"><span data-stu-id="2c76f-106">When a service order is stopped, the time at which the service order must be completed is postponed.</span></span>
 
-## <a name="view-the-start-time-for-a-service-order"></a><span data-ttu-id="9c710-107">A szervizrendelés kezdési idejének megjelenítése</span><span class="sxs-lookup"><span data-stu-id="9c710-107">View the start time for a service order</span></span>
+## <a name="view-the-start-time-for-a-service-order"></a><span data-ttu-id="2c76f-107">A szervizrendelés kezdési idejének megjelenítése</span><span class="sxs-lookup"><span data-stu-id="2c76f-107">View the start time for a service order</span></span>
 
-1.  <span data-ttu-id="9c710-108">Kattintson a következőkre: **Szolgáltatáskezelés** \> **Közös** \> **Szervizrendelések** \> **Szervizrendelések**.</span><span class="sxs-lookup"><span data-stu-id="9c710-108">Click **Service management** \> **Common** \> **Service orders** \> **Service orders**.</span></span> <span data-ttu-id="9c710-109">Jelöljön ki egy rendelést, majd kattintson rá duplán a részleteket tartalmazó képernyő megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="9c710-109">Select and double-click an order to open the details form.</span></span>
+1.  <span data-ttu-id="2c76f-108">Kattintson a következőkre: **Szolgáltatáskezelés** \> **Közös** \> **Szervizrendelések** \> **Szervizrendelések**.</span><span class="sxs-lookup"><span data-stu-id="2c76f-108">Click **Service management** \> **Common** \> **Service orders** \> **Service orders**.</span></span> <span data-ttu-id="2c76f-109">Jelöljön ki egy rendelést, majd kattintson rá duplán a részleteket tartalmazó képernyő megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="2c76f-109">Select and double-click an order to open the details form.</span></span>
 
-2.  <span data-ttu-id="9c710-110">Az **Általános** lap **Kezdési idő** mezőjében megtekintheti, mikor kezdődött el a munka egy szervizrendelés teljesítéséhez.</span><span class="sxs-lookup"><span data-stu-id="9c710-110">On the **General** tab, view the time that the work was started for a service order in the **Start time** field.</span></span>
+2.  <span data-ttu-id="2c76f-110">Az **Általános** lap **Kezdési idő** mezőjében megtekintheti, mikor kezdődött el a munka egy szervizrendelés teljesítéséhez.</span><span class="sxs-lookup"><span data-stu-id="2c76f-110">On the **General** tab, view the time that the work was started for a service order in the **Start time** field.</span></span>
 
-## <a name="view-the-time-remaining-to-complete-a-service-order"></a><span data-ttu-id="9c710-111">A szervizrendelés befejezéséig hátralévő idő megjelenítése</span><span class="sxs-lookup"><span data-stu-id="9c710-111">View the time remaining to complete a service order</span></span>
+## <a name="view-the-time-remaining-to-complete-a-service-order"></a><span data-ttu-id="2c76f-111">A szervizrendelés befejezéséig hátralévő idő megjelenítése</span><span class="sxs-lookup"><span data-stu-id="2c76f-111">View the time remaining to complete a service order</span></span>
 
-1.  <span data-ttu-id="9c710-112">Kattintson a következőkre: **Szolgáltatáskezelés** \> **Közös** \> **Szervizrendelések** \> **Szervizrendelések**.</span><span class="sxs-lookup"><span data-stu-id="9c710-112">Click **Service management** \> **Common** \> **Service orders** \> **Service orders**.</span></span> <span data-ttu-id="9c710-113">Jelöljön ki egy rendelést, majd kattintson rá duplán a részleteket tartalmazó képernyő megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="9c710-113">Select and double-click an order to open the details form.</span></span>
+1.  <span data-ttu-id="2c76f-112">Kattintson a következőkre: **Szolgáltatáskezelés** \> **Közös** \> **Szervizrendelések** \> **Szervizrendelések**.</span><span class="sxs-lookup"><span data-stu-id="2c76f-112">Click **Service management** \> **Common** \> **Service orders** \> **Service orders**.</span></span> <span data-ttu-id="2c76f-113">Jelöljön ki egy rendelést, majd kattintson rá duplán a részleteket tartalmazó képernyő megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="2c76f-113">Select and double-click an order to open the details form.</span></span>
 
-2.  <span data-ttu-id="9c710-114">Az **Általános** lap **Utolsó teljesítési idő** mezőjében megtekintheti egy szervizrendelés befejezéséig hátralevő időt.</span><span class="sxs-lookup"><span data-stu-id="9c710-114">On the **General** tab, view the time remaining to complete a service order in the **Latest completion time** field.</span></span>
+2.  <span data-ttu-id="2c76f-114">Az **Általános** lap **Utolsó teljesítési idő** mezőjében megtekintheti egy szervizrendelés befejezéséig hátralevő időt.</span><span class="sxs-lookup"><span data-stu-id="2c76f-114">On the **General** tab, view the time remaining to complete a service order in the **Latest completion time** field.</span></span>
 
-## <a name="view-the-start-time-and-stop-time-recording-entries-for-a-service-order"></a><span data-ttu-id="9c710-115">A szervizrendelés idő-nyilvántartási bejegyzéseinek megjelenítése</span><span class="sxs-lookup"><span data-stu-id="9c710-115">View the start time and stop time recording entries for a service order</span></span>
+## <a name="view-the-start-time-and-stop-time-recording-entries-for-a-service-order"></a><span data-ttu-id="2c76f-115">A szervizrendelés idő-nyilvántartási bejegyzéseinek megjelenítése</span><span class="sxs-lookup"><span data-stu-id="2c76f-115">View the start time and stop time recording entries for a service order</span></span>
 
-1.  <span data-ttu-id="9c710-116">Kattintson a következőkre: **Szolgáltatáskezelés** \> **Közös** \> **Szervizrendelések** \> **Szervizrendelések**.</span><span class="sxs-lookup"><span data-stu-id="9c710-116">Click **Service management** \> **Common** \> **Service orders** \> **Service orders**.</span></span> <span data-ttu-id="9c710-117">Jelöljön ki egy rendelést, majd kattintson rá duplán a részleteket tartalmazó képernyő megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="9c710-117">Select and double-click an order to open the details form.</span></span>
+1.  <span data-ttu-id="2c76f-116">Kattintson a következőkre: **Szolgáltatáskezelés** \> **Közös** \> **Szervizrendelések** \> **Szervizrendelések**.</span><span class="sxs-lookup"><span data-stu-id="2c76f-116">Click **Service management** \> **Common** \> **Service orders** \> **Service orders**.</span></span> <span data-ttu-id="2c76f-117">Jelöljön ki egy rendelést, majd kattintson rá duplán a részleteket tartalmazó képernyő megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="2c76f-117">Select and double-click an order to open the details form.</span></span>
 
-2.  <span data-ttu-id="9c710-118">Kattintson a **Műveleti ablaktábla** **Elküldés** lapján levő \> **Idő rögzítése** lehetőségre az **Szolgáltatásiszint-szerződés idő-nyilvántartása** képernyő megnyitásához, és tekintse meg a szervizrendeléshez tartozó idő-nyilvántartási bejegyzéseket.</span><span class="sxs-lookup"><span data-stu-id="9c710-118">On the **Action Pane**, click the **Dispatch** tab \> **Time recording** to open the **SLA time recording** form and view the time recording entries for the service order.</span></span>
+2.  <span data-ttu-id="2c76f-118">Kattintson a **Műveleti ablaktábla** **Elküldés** lapján levő \> **Idő rögzítése** lehetőségre az **Szolgáltatásiszint-szerződés idő-nyilvántartása** képernyő megnyitásához, és tekintse meg a szervizrendeléshez tartozó idő-nyilvántartási bejegyzéseket.</span><span class="sxs-lookup"><span data-stu-id="2c76f-118">On the **Action Pane**, click the **Dispatch** tab \> **Time recording** to open the **SLA time recording** form and view the time recording entries for the service order.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="9c710-119">Lásd még</span><span class="sxs-lookup"><span data-stu-id="9c710-119">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="2c76f-119">Lásd még</span><span class="sxs-lookup"><span data-stu-id="2c76f-119">See also</span></span>
 
-<span data-ttu-id="9c710-120">[Szervizrendelések (képernyő)](https://technet.microsoft.com/library/aa554361\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="9c710-120">[Service orders (form)](https://technet.microsoft.com/library/aa554361\(v=ax.60\))</span></span>
+<span data-ttu-id="2c76f-120">[Szervizrendelések (képernyő)](https://technet.microsoft.com/library/aa554361\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="2c76f-120">[Service orders (form)](https://technet.microsoft.com/library/aa554361\(v=ax.60\))</span></span>
 
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
