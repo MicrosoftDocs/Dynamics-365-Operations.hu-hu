@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: b081cd8d56217b8cf76db824c29482d453fc9ea3
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 3fde9194ece4774c4d39785e337caf2413052159
+ms.sourcegitcommit: ee7a890e3e4ed6436898e5ab6eff309082a073f8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5001948"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "5476675"
 ---
 # <a name="engineering-change-management-overview"></a>Tervezési változáskezelés áttekintése
 
@@ -44,20 +44,24 @@ A tervezési változáskezelés segítséget nyújt a termék verziószámozás�
 
 Az előző videó ([Módosításkezelési képességek a Dynamics 365 Supply Chain Management rendszerben](https://youtu.be/N313FqvRuBc)) szerepel a [Finance and Operations lejátszási listában](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) a YouTube-on.
 
-## <a name="turn-on-engineering-change-management-for-your-system"></a>A rendszer műszaki módosításkezelésének bekapcsolása
+## <a name="turn-on-the-engineering-change-management-and-version-dimension-features-for-your-system"></a>Kapcsolja be a tervezési változáskezelést és a verziódimenziókat a rendszerén
 
-Először kapcsolja be a mérnöki módosításkezelést az alábbi lépések végrehajtásával.
+A tervezési változáskezelés használata előtt engedélyeznie kell a *Tervezési változáskezelés* szolgáltatást és annak konfigurációs kulcsát. Ha a tranzakciókban nyomon szeretné követni a termékek verziódimenzióját is (opcionális), akkor engedélyeznie kell a *Termékverzió dimenzió* szolgáltatást és annak konfigurációs kulcsát is.
+
+Először kapcsolja be a funkciókat a következő lépések végrehajtásával.
 
 1. Lépjen a [Funkciókezelés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) lehetőségre.
 1. Keressen frissítéseket.
 1. Kapcsolja be a **Mérnöki módosításkezelés** szolgáltatást.
+1. Ha használni szeretné, kapcsolja be a **Termékdimenzió verziója** nevű szolgáltatást is.
 
-Ezután kapcsolja be a **Mérnöki módosításkezelés** konfigurációs kulcsot az alábbi lépések végrehajtásával.
+Ezután kapcsolja be a konfigurációs kulcsokat a következő lépések végrehajtásával.
 
 1. Állítsa a rendszert karbantartási módba a [Karbantartási mód](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md) alatt leírtak szerint.
 1. Lépjen a **Rendszerfelügyelet \> Beállítás \> Licenckonfiguráció** elemre.
-1. Bontsa ki a **Kereskedelmi** csomópontot, és jelölje be a **Mérnöki módosításkezelés** jelölőnégyzetet.
+1. Bontsa ki a **Kereskedelem** csomópontot
+1. Jelölje be a **Tervezési változáskezelés** jelölőnégyzetet.
+1. Ha használni szeretné, jelölje be a **Termékdimenzió – Verzió** jelölőnégyzetet is.
 1. Kapcsolja ki a karbantartási módot a [Karbantartási mód](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md) alatt leírtak szerint.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

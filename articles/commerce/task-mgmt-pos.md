@@ -15,20 +15,18 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 889cc90b534de33ccd0e2bea367b2da42b5d72e0
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 18ba781795058de6228c712c6a22e59038e96368
+ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5006185"
+ms.lasthandoff: 02/19/2021
+ms.locfileid: "5478362"
 ---
 # <a name="task-management-in-pos"></a>Feladatkezelés a pénztárban
 
 [!include [banner](includes/banner.md)]
 
 Ez a témakör a Microsoft Dynamics 365 Commerce pénztár (POS) alkalmazásban a feladatok kezelését írja le.
-
-## <a name="overview"></a>Áttekintés
 
 A Dynamics 365 Commerce pénztár alkalmazásnak vannak olyan kezelési funkcióik, amelyek lehetővé teszik a vezetők és dolgozók számára a feladatok kezelését és a feladat állapotának módosítását. Az üzlet dolgozói a feladatokhoz a pénztárkezdő lapján a **Feladatok** csempéjét kiválasztva vagy a feladatra vonatkozó értesítések kiválasztásával érhetik el a feladatokat. Alapértelmezés szerint a dolgozók a **Saját feladatok** lapra kerülnek, ahol megtekinthetők azok a feladatok, amelyek hozzájuk vannak rendelve. Azonban egyszerűen átválthatnak a **Késedelmes feladatok**, **Nyitott feladatok** vagy a **Feladatlista** lapokra.
 

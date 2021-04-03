@@ -3,7 +3,7 @@ title: Human Resources alkalmazás a Teams rendszerben
 description: Ez a témakör bemutatja a Microsoft Dynamics 365 Human Resources alkalmazást a Microsoft Teams rendszerben.
 author: andreabichsel
 manager: tfehr
-ms.date: 09/30/2020
+ms.date: 02/23/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,20 +18,20 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ba520f873de5b20111f9134e87281bcdf4025785
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: 86abe32f76f2cc21c773727be07a44be49cdbac7
+ms.sourcegitcommit: 105f65468b45799761c26e5d0ad9df4ff162c38d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5112821"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5487873"
 ---
 # <a name="human-resources-app-in-teams"></a>Human Resources alkalmazás a Teams rendszerben
 
-[!include [banner](includes/preview-feature.md)]
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 A Microsoft Dynamics 365 Human Resources alkalmazás a Microsoft Teams rendszerben lehetővé teszi, hogy az alkalmazottak gyorsan kérelmezzenek szabadságot, és megtekintsék a szabadságegyenlegükett közvetlenül a Microsoft Teams rendszerben. Az alkalmazottak egy robottal léphetnek kapcsolatba információ kéréséhez. A **Szabadság** lapon részletesebb információk olvashatók. Ezenkívül a közelgő szabadságaikról információkat küldhetnek az embereknek a Teamsben és a Human Resources alkalmazáson kívüli csevegőfelületeken.
 
-![Human Resources Teams szabadságkezelő alkalmazás robot](./media/hr-admin-teams-leave-app-bot.png)
+![Human Resources Teams szabadságkezelő alkalmazás robot](./media/hr-teams-leave-app-bot.png)
 
 ![Human Resources Teams szabadságkezelő alkalmazás Szabadság lap](./media/hr-teams-leave-app-timeoff-tab.png)
 
@@ -39,16 +39,18 @@ A Microsoft Dynamics 365 Human Resources alkalmazás a Microsoft Teams rendszerb
 
 ## <a name="install-and-setup"></a>Telepítés és beállítás
 
-A Human Resources app a Teams áruházban található. A Teams alkalmazás telepítésével kapcsolatos tudnivalókat lásd: [Szabadságkérelmek kezelése a Teams rendszerben](hr-teams-leave-app.md).
+A Dynamics 365 Human Resources alkalmazás a Teams áruházban található. A Teams alkalmazás telepítésével kapcsolatos tudnivalókat lásd: [Szabadságkérelmek kezelése a Teams rendszerben](hr-teams-leave-app.md).
 
 A Teams alkalmazásengedélyeinek kezelésével kapcsolatos információkért lásd: [Alkalmazásengedély-irányelvek kezelése a Microsoft Teams rendszerben](https://docs.microsoft.com/MicrosoftTeams/teams-app-permission-policies).
 
+Ha azt szeretné, hogy a felhasználók a Távollét és szabadság naptárát az alkalmazásban tekintsék meg, engedélyeznie kell a **Szabadság és távollét naptárja a Teamsben** funkciót a Funkciókezelésben. A funkciók aktiválásával kapcsolatos további részletekért tekintse meg a [Szolgáltatások kezelése](hr-admin-manage-features.md) oldalt.
+
 ## <a name="enable-notifications-for-the-human-resources-app-in-teams"></a>Értesítések engedélyezése a Human Resources alkalmazáshoz a Teamsben
 
-Ha azt szeretné, hogy a felhasználók távolléti értesítéseket a Teams alkalmazásban, engedélyeznie kell az értesítéseket a Human Resources alkalmazásban.
+Ha azt szeretné, hogy a felhasználók távolléti értesítéseket a Teams alkalmazásban, engedélyeznie kell az értesítéseket a Dynamics 365 Human Resources alkalmazásban.
 
 >[!NOTE]
->Csak azok a felhasználók kapják meg az értesítéseket, akik bejelentkeztek a Teams szolgáltatásba és a Human Resources Teams alkalmazást használják.
+>Csak azok a felhasználók kapják meg az értesítéseket, akik bejelentkeztek a Teams szolgáltatásba és a Dynamics 365 Human Resources Teams alkalmazást használják.
 
 1. A Human Resources alkalmazásban válassza a **Rendszerfelügyelet** elemet.
 
@@ -66,7 +68,7 @@ Ha azt szeretné, hogy a felhasználók távolléti értesítéseket a Teams alk
 
 ### <a name="turn-teams-notifications-on-or-off-for-individual-users"></a>A Teams értesítéseinek be-és kikapcsolása egyéni felhasználókhoz
 
-Miután engedélyezte az értesítéseket a Human Resources Teams alkalmazáshoz, ki-és bekapcsolhatja az egyes felhasználók értesítéseit.
+Miután engedélyezte az értesítéseket a Dynamics 365 Human Resources Teams alkalmazáshoz, ki-és bekapcsolhatja az egyes felhasználók értesítéseit.
 
 1. A Human Resources alkalmazásban válassza a **Rendszerfelügyelet** elemet.
 
@@ -82,9 +84,28 @@ Miután engedélyezte az értesítéseket a Human Resources Teams alkalmazáshoz
 
 6. Válassza a **Mentés** lehetőséget.
 
-## <a name="known-issues"></a>Ismert problémák
+## <a name="supported-languages"></a>Támogatott nyelvek
 
-| Kiadás | Állapot |
+A Dynamics 365 Human Resources alkalmazásban a Teamsben az alábbi nyelvek támogatottak:
+
+| Területibeállítás-azonosító | Nyelv |
+| --- | --- |
+| de-DE | Német (Németország) |
+| es-Es | Spanyol (Spanyolország) |
+| es-MX | Spanyol (Mexikó) |
+| fr-CA | Francia (Kanada) |
+| fr-FR | Francia (Franciaország) |
+| it-IT | Olasz (Olaszország) |
+| nl-NL | Holland (Hollandia) |
+| pt-BR | Portugál (Brazília) |
+| tr-TR | Török (Törökország) |
+| zh-CN | Kínai (egyszerűsített) |
+
+## <a name="notes"></a>Jegyzetek
+
+A következő munkaelemek a későbbi verziókban jelennek meg:
+
+| Munkatétel | Állapot |
 | --- | --- |
 | Az egyenleg nem helyes, amikor jövőbeli dátumra vonatkozó szabadságot küld be. | Az előrejelzés még nem érhető el. A megjelenített egyenleg az aktuális dátumra vonatkozik. |
 | Nem lehet visszavonni egy **Ellenőrzés alatt** állapotú kérelmet. | Ez a funkció jelenleg nem támogatott, és egy későbbi verzióban kerül hozzáadásra. |
@@ -100,7 +121,7 @@ Ha egy felhasználó azzal keresi meg Önt, hogy nem tud bejelentkezni az alkalm
 
 ### <a name="error-when-approving-leave-requests-in-the-human-resources-app-in-teams"></a>Hiba történt a Teamsen belüli Human Resource alkalmazásban a szabadságkérelmek jóváhagyásakor.
 
-Ha egy felhasználó hibaüzenetet kap akkor, amikor megpróbálja jóváhagyni a szabadságkérelmeket a Teams alkalmazásban, hajtsa végre a következő hibaelhárítási lépéseket:
+Ha egy felhasználó hibaüzenetet kap akkor, amikor megpróbálja jóváhagyni a szabadságkérelmeket a Teams alkalmazásban, próbálja meg a következő hibaelhárítási lépéseket:
 
 1. Ellenőrizze, hogy a Teams-fiókjuk megegyezik-e azzal a fiókkal, amelyet a HR eléréséhez használnak.
 

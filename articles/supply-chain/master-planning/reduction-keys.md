@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8732d0a032b7dd44918955354c56321d065d4a77
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 4d16de8c339fadff074ef8ec30b0b4d6e3412569
+ms.sourcegitcommit: 34b8f6f5c6134b7b97a9fb41d0b2e63215c67062
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5001849"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5470769"
 ---
 # <a name="forecast-reduction-keys"></a>Előrejelzés csökkentési kulcsok
 
@@ -198,7 +198,7 @@ Tehát a következő tervezett rendelések jönnek létre.
 Az előrejelzési csökkentési kulcs a **Tranzakciók - csökkentési kulcs** és **Százalék-csökkentési kulcs** metodológiákban van használva az előrejelzési követelmények csökkentéséhez. Kövesse az alábbi lépéseket csökkentési kulcs létrehozásához és beállításához.
 
 1. Manjen az **Alaptervezés \> Beállítás \> Fedezet \> Csökkentési kulcsok** menübe.
-2. Válassza az **Új** lehetőséget, vagy nyomja le a **Ctrl + N** billentyűkombinációt csökkentési kulcs létrehozásához.
+2. Válassza ki az **Új** lehetőséget egy csökkentési kulcs létrehozásához.
 3. A **csökkentési kulcs** mezőben írjon be az előre jelzett csökkentési kulcs egyedi azonosítóját. Majd a **Név** mezőben adjon meg egy nevet. 
 4. Adja meg az időszakokat és a csökkentési kulcs százalékát az egyes időszakokhoz:
 
