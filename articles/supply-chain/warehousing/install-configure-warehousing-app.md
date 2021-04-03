@@ -18,19 +18,19 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 411a97427bbb16388e0f60b8ecb5dd3e5a79e87e
-ms.sourcegitcommit: bd53794cb94f8c1ce29a7d6102119a0975f155e3
+ms.openlocfilehash: 3d2920d015aab5e4f0a1966d2a2574fb659a7c80
+ms.sourcegitcommit: 105f65468b45799761c26e5d0ad9df4ff162c38d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "5142275"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5486977"
 ---
 # <a name="install-and-connect-the-warehouse-app"></a>A raktározási alkalmazás telepítése és csatlakoztatása
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> Ez a témakör leírja, hogyan konfigurálhatja a régi raktári alkalmazást. Ha tájékoztatást szeretne arról, hogy hogyan kell konfigurálni az új Raktárkezelés mobilalkalmazást (amely jelenleg nyilvános előzetes verziójú), tekintse meg a következőt: [A Raktárkezelés mobilalkalmazás telepítése és csatlakoztatása](install-configure-warehouse-management-app.md).
+> Ez a témakör leírja, hogyan konfigurálhatja a régi raktári alkalmazást. Ha tájékoztatást szeretne arról, hogy hogyan kell konfigurálni az új Raktárkezelés mobilalkalmazást, tekintse meg a következőt: [A Raktárkezelés mobilalkalmazás telepítése és csatlakoztatása](install-configure-warehouse-management-app.md).
 
 > [!NOTE]
 > Ez a témakör ismerteti, hogyan kell konfigurálni a felhőbeli telepítések raktári alkalmazását. Ha azt szeretné megtudni, hogyan kell konfigurálni a helyszíni telepítések raktári alkalmazását, tekintse meg a következőt: [Helyszíni telepítések raktárkezelése](../../dev-itpro/deployment/warehousing-for-on-premise-deployments.md).

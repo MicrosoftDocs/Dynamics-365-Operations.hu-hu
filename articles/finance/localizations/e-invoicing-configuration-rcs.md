@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: bb4a426bb54ee21197f9954d946d60ea55f5eb76
-ms.sourcegitcommit: e88c96d1cb817a22db81856cadb563c095ab2671
+ms.openlocfilehash: 99fac9a42dc2b180c220612c66fe753d43e5bd7f
+ms.sourcegitcommit: 543772ee97efe215cf6f2ec6e092cc1568919f20
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "5104391"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "5592622"
 ---
 # <a name="configure-the-electronic-invoicing-add-on-in-regulatory-configuration-services-rcs"></a>Az Elektronikus számlázási bővítmény konfigurálása a Regulatory Configuration Services (RCS) szolgáltatásban
 
@@ -64,7 +64,6 @@ Az alábbi táblázat bemutatja az előnézetben jelenleg elérhető elektroniku
 | Belgium        | Belga elektronikus számla (BE)      | Értékesítési és projektszámlák |
 | Brazília         | Brazil NF-e (BR)                  | 55-ös modellű pénzügyi bizonylat, helyesbítő levelek, érvénytelenítések és elvetések |
 | Brazília         | Brazil NFS-e ABRASF Curitiba (BR) | Szolgáltatási pénzügyi bizonylatok |
-| Brazília         | Brazil NFS-e São Paulo (BR)       | Szolgáltatási pénzügyi bizonylatok |
 | Dánia        | Dán elektronikus számla (DK)       | Értékesítési és projektszámlák |
 | Egyiptom          | Egyiptomi elektronikus számla (EG) | Értékesítési és projektszámlák |
 | Észtország        | Észt elektronikus számla (EE)     | Értékesítési és projektszámlák |
@@ -119,10 +118,6 @@ A következő listák megjeleníti az elektronikus számlázási funkciókhoz el
 
 - NFS-e ABRASF Curitiba (BR)
 - NFS-e ABRASF Lekérdezés Curitiba (BR)
-
-#### <a name="brazilian-br-nfs-e-nfs-e-so-paulo-city"></a>Brazil (BR) NFS-e: NFS-e São Paulo város
-
-- NFS-e Sao Paulo (BR)
 
 #### <a name="danish-dk-electronic-invoice-sales-and-project-invoices-for-denmark"></a>Dán (DK) elektronikus számla: értékesítési és projektszámlák Dánia számára
 
@@ -210,7 +205,7 @@ A következő táblázat felsorolja a rendelkezésre álló műveleteket, valami
 | Brazil SEFAZ-szolgáltatás hívása                  | Integráció a Brazil SEFAZ-szolgáltatással a pénzügyi bizonylatok benyújtásához.       | Előnézetben           |
 | Mexikói PAC-szolgáltatás hívása                      | Integráció a mexikói PAC-szolgáltatással CFDI beküldéséhez.                      | Előnézetben           |
 | Folyamatválasz                              | A webszolgáltatás hívása alapján kapott válasz elemzése.                     | Általánosan elérhető  |
-| MS Power Automate használata                         | Integráció a beépített Microsoft Power Automate folyamattal.                       | Előnézetben           |
+| MS Power Automate használata                         | Integrálható a beépített Microsoft Power Automate-folyamatokkal.                       | Előnézetben           |
 
 ## <a name="configuration-providers"></a>Konfigurációszolgáltatók
 
