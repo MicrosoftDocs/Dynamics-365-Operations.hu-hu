@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 4e6f7e0a3978bbf7e520f8cbcfd27c4cfe507777
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: 4e588be2ac5aae395ca66e3c9a743a67d71db7c0
+ms.sourcegitcommit: a3052f76ad71894dbef66566c07c6e2c31505870
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5114670"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "5574222"
 ---
 # <a name="inventory-visibility-add-in"></a>Készlet láthatósága bővítmény
 
@@ -48,11 +48,64 @@ További tudnivalókért lásd: [Lifecycle Services-erőforrások](https://docs.
 A Készlet láthatósága bővítmény telepítése előtt a következőket kell tennie:
 
 - Szerezzen be egy LCS-megvalósítási projektet legalább egy üzembe helyezett környezettel.
-- Hozza létre az ajánlat bétakulcsait az LCS-ben.
-- Engedélyezze a felhasználójának szóló ajánlat bétakulcsait az LCS-ben.
-- Lépjen kapcsolatba a Microsoft Készlet láthatósága termékcsapatával, és adja meg a környezeti azonosítót, ahol telepíteni szeretné a Készlet láthatósága bővítményt.
+- Győződjön meg arról, hogy be vannak fejezve a [Bővítmények áttekintése](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md) részben megadott bővítmények beállításának előfeltételei. A Készlet láthatósága nem igényel kettős írású csatolást.
+- Lépjen kapcsolatba a Készlet láthatósági csapatával [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) a következő három szükséges fájl beszerzéséhez:
+
+    - `Inventory Visibility Dataverse Solution.zip`
+    - `Inventory Visibility Configuration Trigger.zip`
+    - `Inventory Visibility Integration.zip` (ha a Supply Chain Management által futtatott verzió korábbi, mint a 10.0.18)
+
+> [!NOTE]
+> A jelenleg támogatott országok és régiók: Kanada, az Egyesült Államok és az Európai Unió (EU).
 
 Ha bármilyen kérdése van ezekkel az előfeltételekkel kapcsolatban, kérjük, forduljon a Készlet láthatósága termékcsapatához.
+
+### <a name="set-up-dataverse"></a><a name="setup-microsoft-dataverse"></a>Dataverse beállítása
+
+A Dataverse beállításához kövesse az alábbi lépéseket.
+
+1. Adjon hozzá egy szolgáltatási elvet a bérlőhöz:
+
+    1. Telepítse az Azure AD PowerShell modul v2 verzióját az [Azure Active Directory PowerShell for Graph telepítése](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2) részben leírtak szerint.
+    1. Futtassa a következő PowerShell-parancsot.
+
+        ```powershell
+        Connect-AzureAD # (open a sign in window and sign in as a tenant user)
+
+        New-AzureADServicePrincipal -AppId "3022308a-b9bd-4a18-b8ac-2ddedb2075e1" -DisplayName "d365-scm-inventoryservice"
+        ```
+
+1. Hozzon létre egy alkalmazásfelhasználót a Készlet láthatósága számára a Dataverse rendszerben:
+
+    1. Nyissa meg a Dataverse környezete URL-címét.
+    1. Lépjen a **Speciális beállítások \> Rendszer \> Biztonság \> Felhasználók** lehetőségre, és hozzon létre egy alkalmazásfelhasználót. A nézet menü használatával módosítsa az oldal nézetét az **Alkalmazásfelhasználók** lehetőségre.
+    1. Válassza az **Új** lehetőséget. Állítsa az alkalmazásazonosítót a *3022308a-b9bd-4a18-b8ac-2ddedb2075e1* értékre. (Az objektumazonosító azonnal betöltődik, amint menti a módosításokat.) A nevet testreszabhatja. Például a *Készlet láthatósága* értékre módosíthatja. Amikor elkészült, válassza a **Mentés** elemet.
+    1. Válassza a **Szerepkör hozzárendelése**, majd a **Rendszergazda** lehetőséget. Ha van **Common Data Service-felhasználó** nevű szerepkör, válassza ki azt is.
+
+    További tudnivalókért lásd: [Alkalmazásfelhasználó létrehozása](https://docs.microsoft.com/power-platform/admin/create-users-assign-online-security-roles#create-an-application-user).
+
+1. Importálja az `Inventory Visibility Dataverse Solution.zip` fájlt, amely a Dataverse-konfigurációhoz kapcsolódó entitásokat és Power Apps-alkalmazásokat tartalmazza:
+
+    1. Lépjen a **Megoldások** oldalra.
+    1. Válassza az **Importálás** lehetőséget.
+
+1. A konfigurációfrissítés indító folyamatának importálása:
+
+    1. Lépjen a Microsoft Flow oldalra.
+    1. Győződjön meg róla, hogy az elnevezett *Dataverse (örökölt)* kapcsolat létezik. (Ha nem létezik, hozza létre.)
+    1. Importálja az `Inventory Visibility Configuration Trigger.zip` fájlt. Importálás után az eseményindító a **Saját folyamatok** alatt jelenik meg.
+    1. Inicializálja a következő négy változót a környezeti adatok alapján:
+
+        - Azure-bérlő azonosítója
+        - Azure-alkalmazásügyfél azonosítója
+        - Azure-alkalmazásügyfél titkos kódja
+        - Készletláthatósági végpont
+
+            Erről a változóról a témakör későbbi, [A készlet láthatóságának beállítása](#setup-inventory-visibility-integration) című szakasza nyújt további tájékoztatást.
+
+        ![Konfiguráció eseményindítója](media/configuration-trigger.png "Konfiguráció eseményindítója")
+
+    1. Válassza a **Bekapcsolás** lehetőséget.
 
 ### <a name="install-the-add-in"></a><a name="install-add-in"></a>Telepítse a bővítményt
 
@@ -61,14 +114,16 @@ A Készlet láthatósága bővítmény telepítéséhez a következőket kell te
 1. Jelentkezzen be a [Lifecycle Services (LCS)](https://lcs.dynamics.com/Logon/Index) portálra.
 1. A kezdőlapon válassza ki azt a projektet, amelyben a környezet telepítve van.
 1. A projekt oldalon jelölje ki azt a környezetet, amelyben telepíteni szeretné a bővítményt.
-1. A környezet oldalon görgessen lefelé, amíg meg nem jelenik a **Környezeti bővítmények** szakasz. Ha a szakasz nem látható, ellenőrizze, hogy az előfeltétel-bétakulcsok teljes mértékben fel lettek-e dolgozva.
+1. A környezeti oldalon görgessen lefelé, amíg meg nem látja a **Környezeti bővítmények** szakaszt a **Power Platform-integráció** szakaszban, ahol a Dataverse-környezet neve található.
 1. A **Környezeti bővítmények** szakaszban válassza az **Új bővítmény telepítése** lehetőséget.
+
     ![A környezeti oldal az LCS-ben](media/inventory-visibility-environment.png "A környezeti oldal az LCS-ben")
+
 1. Válassza az **Új bővítmény telepítése** hivatkozást. Megnyílik az elérhető bővítmények listája.
-1. Válassza a **Készletszolgáltatás** elemet a listából. (Megjegyzés: ez most már lehet, hogy **Készlet láthatósága bővítmény a Dynamics 365 Supply Chain Management rendszerhez** néven szerepel.)
+1. A listában válassza a **Készletláthatóság** elemet.
 1. Adja meg a környezet alábbi mezőinek értékeit:
 
-    - **AAD alkalmazás azonosítója**
+    - **AAD-alkalmazás (ügyfél) azonosítója**
     - **AAD bérlő azonosítója**
 
     ![Hozzáadás a beállítási lapon](media/inventory-visibility-setup.png "Hozzáadás a beállítási lapon")
@@ -76,11 +131,74 @@ A Készlet láthatósága bővítmény telepítéséhez a következőket kell te
 1. Fogadja el a feltételeket az **Általános Szerződési feltételek** jelölőnégyzet bejelölésével.
 1. Válassza a **Telepítés** parancsot. A bővítmény állapota **Telepítés** értékkel jelenik meg. Ha befejeződött, frissítse a lapot, hogy lássa, ahogy a **Telepített** állapotra változik.
 
-### <a name="get-a-security-service-token"></a>Biztonsági szolgáltatás jogkivonatának beszerzése
+### <a name="uninstall-the-add-in"></a><a name="uninstall-add-in"></a>A bővítmény eltávolítása
+
+A bővítmény eltávolításához válassza az **Eltávolítás** lehetőséget. Az LCS frissítésekor a Készlet láthatósága bővítmény törlődik. Az eltávolítási folyamat eltávolítja a bővítmény regisztrációját, és elindít egy feladatot a szolgáltatásban tárolt összes üzleti adat törléséhez.
+
+## <a name="consume-on-hand-inventory-data-from-supply-chain-management"></a>Az aktuális készlet adatainak felhasználása a Supply Chain Management alkalmazásból
+
+### <a name="deploy-the-inventory-visibility-integration-package"></a><a name="deploy-inventory-visibility-package"></a>A Készlet láthatósága integrációs csomag központi telepítése
+
+Ha a Supply Chain Management 10.0.17-es vagy korábbi verziója fut, a csomagfájl beszerzéséért forduljon a Készlet láthatósága támogatási csapathoz az [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) címen. Ezután telepítse a csomagot az LCS-be.
+
+> [!NOTE]
+> Ha a telepítés során nem egyező verziók fordulnak elő, manuálisan kell importálnia az X++ projektet a fejlesztői környezetbe. Ezt követően hozza létre a telepíthető csomagot a fejlesztői környezetben, és telepítse az éles környezetben.
+> 
+> A kód része a Supply Chain Management 10.0.18-as verziójának. Ha azt a verziót vagy egy későbbi verziót futtat, nem szükséges a telepítés.
+
+Győződjön meg arról, hogy az alábbi funkciók be vannak kapcsolva a Supply Chain Management-környezetben. (Alapértelmezés szerint be vannak kapcsolva.)
+
+| Funkció leírása | Kódverzió | Osztály váltása |
+|---|---|---|
+| Készletdimenziók használatának engedélyezése vagy letiltása az InventSum táblán | 10.0.11 | InventUseDimOfInventSumToggle |
+| Készletdimenziók használatának engedélyezése vagy letiltása az InventSumDelta táblán | 10.0.12 | InventUseDimOfInventSumDeltaToggle |
+
+### <a name="set-up-inventory-visibility-integration"></a><a name="setup-inventory-visibility-integration"></a>Készletláthatósági integráció beállítása
+
+1. A Supply Chain Management alkalmazásban nyissa meg a **[Szolgáltatáskezelés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** munkaterületet, és kapcsolja be a **Készlet láthatósági integrációja** funkciót.
+1. Lépjen a **Készletkezelés \> Beállítás \> Készlet láthatósági integrációjának paraméterei** lehetőségre, és adja meg annak a környezetnek az URL-címét, ahol a Készlet láthatóságát futtatja.
+
+    Keresse meg az LCS-környezet Azure-régióját, majd adja meg az URL-címet. Az URL-cím a következő képernyőt tartalmazza:
+
+    `https://inventoryservice.<RegionShortName>-il301.gateway.prod.island.powerapps.com/`
+
+    Ha például Európában van, a környezete a következő URL-címek valamelyikét fogja tartalmazni:
+
+    - `https://inventoryservice.neu-il301.gateway.prod.island.powerapps.com/`
+    - `https://inventoryservice.weu-il301.gateway.prod.island.powerapps.com/`
+
+    Jelenleg a következő régiók állnak rendelkezésre.
+
+    | Azure-régió | Régió rövid neve |
+    |---|---|
+    | Kelet-Ausztrália | eau |
+    | Délkelet-Ausztrália | seau |
+    | Közép-Kanada | cca |
+    | Kelet-Kanada | eca |
+    | Észak-Európa | neu |
+    | Nyugat-Európa | weu |
+    | USA keleti régiója | eus |
+    | USA nyugati régiója | wus |
+
+1. Lépjen a **Készletkezelés \> Időszakos \> Készlet láthatósági integrációja** elemre, és engedélyezze a feladatot. A rendszer a Supply Chain Management minden készletváltozási eseményét feladja a Készlet láthatósága számára.
+
+## <a name="the-inventory-visibility-add-in-public-api"></a><a name="inventory-visibility-public-api"></a>A Készlet láthatósága bővítmény nyilvános API-je
+
+A Készlet láthatósága bővítmény nyilvános REST API-ja az integráció több konkrét végpontját mutatja be. Három fő interakciós típust támogat:
+
+- A bővítmény aktuális készletmódosításainak külső rendszerből történő feladása
+- Aktuális rendelkezésre álló mennyiségek lekérdezése külső rendszerből
+- Automatikus szinkronizálás a Supply Chain Management aktuális készletével
+
+Az automatikus szinkronizálás nem része a nyilvános API-nak. Ehelyett a rendszer a háttérben kezeli olyan környezetekben, ahol engedélyezve van a Készlet láthatósága bővítmény.
+
+### <a name="authentication"></a><a name="inventory-visibility-authentication"></a>Hitelesítés
+
+A platform biztonsági tokenje a Készlet láthatósága bővítmény hívására használatos. Emiatt az Azure AD-alkalmazás használatával létre kell hozni egy *Azure Active Directory (Azure AD) tokent*. Ezt követően az Azure AD-tokent kell ahhoz használnia, hogy a *hozzáférési tokent* be tudja szerezni a biztonsági szolgáltatásból.
 
 Biztonsági szolgáltatás jogkivonatának beszerzéséhez tegye a következőket:
 
-1. Jelentkezzen be az Azure Portal webhelyre, és használja a(z) `clientId` és `clientSecret` keresésére a Supply Chain Management alkalmazáshoz.
+1. Jelentkezzen be az Azure Portal webhelyre, és használja a `clientId` és `clientSecret` keresésére a Supply Chain Management alkalmazáshoz.
 1. Azure Active Directory kód beolvasása (`aadToken`) a következő tulajdonságokkal rendelkező HTTP-kérés beküldésével:
     - **URL-cím** - `https://login.microsoftonline.com/${aadTenantId}/oauth2/token`
     - **Metódus** - `GET`
@@ -140,27 +258,7 @@ Biztonsági szolgáltatás jogkivonatának beszerzéséhez tegye a következőke
     }
     ```
 
-### <a name="uninstall-the-add-in"></a>A bővítmény eltávolítása
-
-A bővítmény eltávolításához válassza az **Eltávolítás** lehetőséget. Frissítse az LCS-t, és a Készlet láthatósága bővítmény törlődik. Az eltávolítási folyamat eltávolítja a bővítmény regisztrációját, és elindít egy feladatot a szolgáltatásban tárolt összes üzleti adat törléséhez.
-
-## <a name="inventory-visibility-add-in-public-api"></a>Készlet láthatósága bővítmény nyilvános API
-
-A Készlet láthatósága bővítmény nyilvános REST API-ja az integráció több konkrét végpontját mutatja be. Három fő interakciós típust támogat:
-
-- A bővítmény aktuális módosításainak külső rendszerből történő feladása.
-- Aktuális rendelkezésre álló mennyiségek lekérdezése külső rendszerből.
-- Automatikus szinkronizálás a Supply Chain Management aktuális adataival.
-
-Az automatikus szinkronizálás nem része a nyilvános API-nak, hanem a rendszer a háttérben kezeli azon környezetek esetében, amelyek engedélyezték a Készlet láthatósága bővítményt.
-
-### <a name="authentication"></a>Hitelesítés
-
-A platform biztonsági jogkivonata a Készlet láthatósága bővítmény hívására szolgál, ezért létre kell hoznia egy Azure Active Directory-jogkivonatot az Azure Active Directory alkalmazás használatával.
-
-A biztonsági jogkivonat beszerzéséről a [Készlet láthatósága bővítmény telepítése](#install-add-in) című témakörben talál további információt.
-
-### <a name="configure-the-inventory-visibility-api"></a>A Készlet láthatósága API konfigurálása
+### <a name="configure-the-inventory-visibility-api"></a><a name="inventory-visibility-configuration"></a>A Készlet láthatósága API konfigurálása
 
 A szolgáltatás használata előtt ki kell töltenie az alábbi alszakaszokban ismertetett konfigurációkat. A konfiguráció a környezet részleteitől függően változhat. Ez elsősorban négy részből áll:
 
@@ -257,7 +355,7 @@ Itt egy példa a termék szín- és méretkombinációját tartalmazó lekérdez
 
 #### <a name="custom-measurement"></a>Egyéni mérés
 
-Az alapértelmezett mértékegység-mennyiségek a Supply Chain Managementhez kötődnek, de előfordulhat, hogy egy olyan mennyiséget kell létrehozni, amely az alapértelmezett mértékegységek kombinációjából áll. Ehhez egyéni mennyiségek konfigurációját kell megadni, amely az aktuáliskészlet-lekérdezések kimenetéhez lesz hozzáadva.
+Az alapértelmezett mértékmennyiségek a Supply Chain Management alkalmazsáshoz kapcsolódnak. Előfordulhat azonban, hogy olyan mennyiséget szeretne, amely az alapértelmezett mértékek kombinációjából áll. Ehhez egyéni mennyiségek konfigurációját kell megadni, amely az aktuáliskészlet-lekérdezések kimenetéhez lesz hozzáadva.
 
 A funkció segítségével egyszerűen meghatározhat egy sor olyan mért értéket, amelyet hozzá kell adni, és/vagy egy sor olyan mért értéket, amelyet ki kell vonni az egyéni mérések kialakításához.
 

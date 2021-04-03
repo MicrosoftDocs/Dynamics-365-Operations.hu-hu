@@ -3,7 +3,7 @@ title: Hozzon létre Azure tárfiókot és egy kulcstartót
 description: Ez a témakör azt mutatja be, hogyan lehet egy Azure tárfiókot és egy kulcstartót létrehozni.
 author: gionoder
 manager: AnnBe
-ms.date: 09/22/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: d076aa5230437d1ef90f6b46d49ee4dea526db24
-ms.sourcegitcommit: e88c96d1cb817a22db81856cadb563c095ab2671
+ms.openlocfilehash: 14463abe7782d786d286fcc619dee00ce85bb620
+ms.sourcegitcommit: 4adc57b0e43d9627dca70762ac941762ec4934e2
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "5104229"
+ms.lasthandoff: 02/22/2021
+ms.locfileid: "5479345"
 ---
 # <a name="create-an-azure-storage-account-and-a-key-vault"></a>Hozzon létre Azure tárfiókot és egy kulcstartót
 
@@ -77,9 +77,12 @@ Ebben a témakörben két fő lépést kell végrehajtania:
 
     ![Tanúsítványengedély megadása](media/e-Invoicing-services-create-azure-resources-grant-certificate-permission.png)
 
-9. A **Rendszerbiztonsági tag** párbeszédpanelen válassza ki a rendszerbiztonsági tagot az **Elektronikus számlázásbővítmény** hozzáadásával.
-10. Válassza a **Hozzáadás** lehetőséget, majd a **Key Vault-módosítások mentése** elemet.
-11. Az **Áttekintés** oldalról másolja át a **DNS név** lehetőséghez tartozó kulcstartó értékét. Ezt az értéket fogják használni a szolgáltatás RCS-ben történő beállításakor, illetve *kulcstartó URI* néven fognak rá hivatkozni.
+9. A **Rendszerbiztonsági tag kiválasztása** mezőben válassza a **Nincs kiválasztva** lehetőséget.
+10. A **Rendszerbiztonsági tag** párbeszédpanelen válassza ki a rendszerbiztonsági tagot az **e-számlázási szolgáltatás** hozzáadásával.
+11. Válassza a **Hozzáadás** lehetőséget, majd a **Key Vault-módosítások mentése** elemet.
+12. Az **Áttekintés** oldalról másolja át a **DNS név** lehetőséghez tartozó kulcstartó értékét. Ezt az értéket fogják használni a szolgáltatás RCS-ben történő beállításakor, illetve *kulcstartó URI* néven fognak rá hivatkozni.
+
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

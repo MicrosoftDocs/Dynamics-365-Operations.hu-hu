@@ -18,19 +18,18 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-12-15
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: eda22aa6f1e8d665d8ef390f24b247a76d4c2956
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: f9b5e4122fbd83ff76e0605b2f0816e10d2d9aab
+ms.sourcegitcommit: 34b8f6f5c6134b7b97a9fb41d0b2e63215c67062
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4992395"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5470833"
 ---
 # <a name="production-planning"></a>Termeléstervezés
 
 A tervezési optimalizálások több termelési helyzetet is támogatnak. Ha egy meglévő, beépített alaptervezési motorról tér át, fontos, hogy tisztában legyen a némiképp megváltozott viselkedéssel.
 
-<!-- The following video gives a short introduction to some of the current capabilities. 
-KFM: Link to video for production functionality, coming soon... -->
+Az alábbi videofelvétel rövid bevezetőt nyújt a témakörben tárgyalt fogalmak közül: [Dynamics 365 Supply Chain Management: tervezésoptimalizálási fejlesztések.](https://youtu.be/u1pcmZuZBTw)
 
 ## <a name="planned-production-orders"></a>Terv. term. rendelések
 

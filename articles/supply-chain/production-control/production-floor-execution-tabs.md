@@ -8,18 +8,19 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: JmgProductionFloorExecutionConfiguration, JmgProductionFloorExecutionConfigurationTab
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: Release 10.0.16
-ms.openlocfilehash: 786ea9a3da98e9f1812b007d4301cb47680e6894
-ms.sourcegitcommit: b7a7a14f8650913f6797ae1c4a82ad8adfe415fd
+ms.openlocfilehash: 282785799b6d61a00a356fcc2ae86ff0e3b7b39f
+ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "5077578"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5501030"
 ---
 # <a name="design-the-production-floor-execution-interface"></a>A termelési üzem végrehajtási felületének tervezése
 
@@ -45,7 +46,7 @@ A következő elemek jelennek meg az ábrán:
 
 Új lap létrehozásához és konfigurálásához kövesse ezeket a lépéseket:
 
-1. Ugrás a **Gyártásvezérlés &gt; Beállítás &gt; Gyártási végrehajtás** részre.
+1. Lépjen a **Gyártásvezérlés \> Beállítás \> Gyártásvégrehajtás \> termelési üzem végrehajtásának konfigurálása** részre.
 
 1. Válassza a **Lapok tervezése** elemet a műveleti panelen a **Lapok tervezése** oldal megnyitásához.
 
@@ -67,7 +68,7 @@ A következő elemek jelennek meg az ábrán:
 
 Miután megtervezte az összes szükséges lapot, hozzárendelheti őket egy konfigurációhoz.
 
-1. Lépjen a **Gyártásvezérlés &gt; Beállítás &gt; Termelési üzem végrehajtásának konfigurálása** részre.
+1. Lépjen a **Gyártásvezérlés \> Beállítás \> Gyártásvégrehajtás \> termelési üzem végrehajtásának konfigurálása** részre.
 
     ![Termelési üzem végrehajtásának konfigurálása](media/pfe-config-prod-floor-execution.png "Termelési üzem végrehajtásának konfigurálása")
 

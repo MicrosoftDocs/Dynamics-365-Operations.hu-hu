@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: d91f377af2514af932ea585adb75a56bdee13871
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: ec7417d44a7c2aa413a9cda75996c153727632dd
+ms.sourcegitcommit: 543772ee97efe215cf6f2ec6e092cc1568919f20
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4988479"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "5592646"
 ---
 # <a name="get-started-with-the-electronic-invoicing-add-on-for-mexico"></a>Első lépések a mexikói elektronikus számlázásbővítménnyel
 
@@ -291,7 +291,7 @@ A **Konfigurálható elektronikus számlázásbővítmény integrációja** funk
     ![Az érvénytelenítési beküldési napló részleteinek megtekintése](media/e-Invoicing-services-get-started-MEX-View-cancellation-submission-log-details.png)
 
 ## <a name="privacy-notice"></a>Adatvédelmi nyilatkozat
-Az MX-00010 és az MX-00016 (CFDI-számla és CFDI-érvénytelenítés) funkciók engedélyezése korlátozott adatok küldését igényelheti, ideértve a szervezet adóregisztrációs azonosítóját. Ezek továbbítva lesznek az adóhatóság által kinevezett harmadik fél ügynökségekhez, az elektronikus számlák – kormányzati szervek webszolgáltatással való integrációhoz szükséges, előre meghatározott formátumban való – adott adóhatósághoz történő elküldése céljából. A rendszergazda engedélyezheti és letilthatja az MX-00010 és az MX-00016 (CFDI-számla és CFDI-érvénytelenítés) funkciókat a **Szervezeti adminisztráció \> Beállítások \> Elektronikus dokumentumparaméterek** lehetőségre való navigálással. Válassza ki a **Funkciók** lapot, majd az MX-00010 és az MX-00016 funkciókat tartalmazó sorokat, és végezze el a megfelelő kijelölést. A külső rendszerekből ebbe a Dynamics 365 online szolgáltatásba importált adatok az [Adatvédelmi nyilatkozatunk](https://go.microsoft.com/fwlink/?LinkId=512132) hatálya alá tartoznak. További tájékoztatásért olvassa el az országspecifikus funkciók dokumentációja szakaszokban található Adatvédelmi nyilatkozatot.
+A **CFDI mexikói elektronikus számla (MX)** funkcióhoz korlátozott számú adat küldése válhat szükségessé, ideértve a szervezet adóregisztrációs azonosítóját. Ezek továbbítva lesznek az adóhatóság által kinevezett harmadik fél ügynökségekhez, az elektronikus számlák – kormányzati szervek webszolgáltatással való integrációhoz szükséges, előre meghatározott formátumban való – adott adóhatósághoz történő elküldése céljából. A rendszergazda engedélyezheti és letilthatja a **CFDI mexikói elektronikus számla (MX)** funkciót a **Szervezeti adminisztráció \> Beállítások \> Elektronikus dokumentumparaméterek** lehetőségre való navigálással. Válassza ki a **Funkciók** lapot, majd a **CFDI mexikói elektronikus száma (MX)** funkciókat tartalmazó sorokat, és végezze el a megfelelő kijelölést. A külső rendszerekből ebbe a Dynamics 365 online szolgáltatásba importált adatok az [Adatvédelmi nyilatkozatunk](https://go.microsoft.com/fwlink/?LinkId=512132) hatálya alá tartoznak. További tájékoztatásért olvassa el az országspecifikus funkciók dokumentációja szakaszokban található Adatvédelmi nyilatkozatot.
 
 ## <a name="additional-resources"></a>További erőforrások
 

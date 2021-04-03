@@ -6,7 +6,6 @@ manager: tfehr
 ms.date: 11/11/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: rhaertle
@@ -14,12 +13,12 @@ ms.search.region: Global
 ms.author: riluan
 ms.search.validFrom: 2020-11-11
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: c2b0d5be38425b5ceebb38b7964f5ec600b1c838
-ms.sourcegitcommit: ca05440ee503bf15fe98fe138d317c1cdf21ad16
+ms.openlocfilehash: 79a971e3de43cb0161d4ac5012f657a947bc567c
+ms.sourcegitcommit: afbdc268bcdb1755d7f1bc79ad1b7fc801b2e2f5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "5141904"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "5579972"
 ---
 # <a name="integrate-procurement-between-supply-chain-management-and-field-service"></a>A beszerzés integrálása a Supply Chain Management és a Field Service között
 
@@ -47,8 +46,8 @@ A Supply Chain Management szolgáltatás Field Service szolgáltatással törté
 
 ### <a name="prerequisites"></a>Előfeltételek
 
-+ **Kettős írás** – a további tudnivalókat lásd: [kettős írás kezdőlapja](dual-write-home-page.md#dual-write-setup).
-+ **Dynamics 365 Field Service** – További információ: [A Dynamics 365 Field Service telepítése](https://docs.microsoft.com/dynamics365/field-service/install-field-service#step-1-install-dynamics-365-field-service).
+- **Kettős írás** – a további tudnivalókat lásd: [kettős írás kezdőlapja](dual-write-home-page.md#dual-write-setup).
+- **Dynamics 365 Field Service** – További információ: [A Dynamics 365 Field Service telepítése](https://docs.microsoft.com/dynamics365/field-service/install-field-service#step-1-install-dynamics-365-field-service).
 
 Ha engedélyezve van a Microsoft Dataverse szolgáltatásban, a kettős írás és a Field Service több megoldásréteget is bevezet, amelyek új metaadatokkal, képernyőkkel, nézetekkel és logikával bővítik a környezetet. Ezek a megoldások bármilyen sorrendben engedélyezhetők, bár általában az itt megadott sorrendben kell telepíteni őket:
 
@@ -57,8 +56,8 @@ Ha engedélyezve van a Microsoft Dataverse szolgáltatásban, a kettős írás �
 3. **Supply Chain Management Extended** – a Supply Chain Management Extended szolgáltatás automatikusan telepítve van, ha környezetben engedélyezve van a kettős írás. 
 4. **OneFSSCM-megoldás** – a OneFSSCM megoldást automatikusan telepíti az a megoldás (Field Service vagy Supply Chain Management), amelyiket legutóbb telepítették.
 
-    + Ha a Field Service már telepítve van a környezetben, és ön engedélyezi a kettős írást, amely a Supply Chain Management Extended szolgáltatást telepíti, akkor a OneFSSCM telepítve van.
-    + Ha a Supply Chain Management Extended már telepítve van a környezetben, és ön telepíti a Field Service szolgáltatást, akkor a OneFSSCM telepítve van.
+    - Ha a Field Service már telepítve van a környezetben, és ön engedélyezi a kettős írást, amely a Supply Chain Management Extended szolgáltatást telepíti, akkor a OneFSSCM telepítve van.
+    - Ha a Supply Chain Management Extended már telepítve van a környezetben, és ön telepíti a Field Service szolgáltatást, akkor a OneFSSCM telepítve van.
 
 ## <a name="initial-synchronization"></a>Kezdeti szinkronizálás
 
@@ -124,22 +123,22 @@ Ezenkívül a Dataverse olyan logikát is tartalmaz, amely a szállítókat a ka
 
 ## <a name="supported-scenarios"></a>Támogatott esetek
 
-+ A Dataverse felhasználók beszerzési rendeléseket hozhatnak létre és frissíthetnek. A folyamatot és az adatokat azonban a Supply Chain Management vezérli. A Supply Chain Management eszközben a beszerzési rendelés oszlopainak frissítésére vonatkozó megszorítások akkor alkalmazandók, amikor a Field Service szolgáltatásból frissítések érkeznek. Ha például már véglegesített egy beszerzési rendelést, azt nem frissítheti. 
-+ Ha a beszerzési rendelést a Supply Chain Management változáskezelése vezérli, a Field Service felhasználója csak akkor tudja frissíteni a beszerzési rendelést, ha a Supply Chain Management jóváhagyási állapota *Piszkozat*.
-+ Több oszlopot csak a Supply Chain Management tud kezelni, és ezek nem frissíthetők a Field Service szolgáltatásban. A nem frissíthető oszlopokról a termék leképezési tábláiban olvashat bővebben. Az egyszerűség kedvéért a legtöbb ilyen oszlop csak olvashatóra van állítva a Dataverse lapokon. 
+- A Dataverse felhasználók beszerzési rendeléseket hozhatnak létre és frissíthetnek. A folyamatot és az adatokat azonban a Supply Chain Management vezérli. A Supply Chain Management eszközben a beszerzési rendelés oszlopainak frissítésére vonatkozó megszorítások akkor alkalmazandók, amikor a Field Service szolgáltatásból frissítések érkeznek. Ha például már véglegesített egy beszerzési rendelést, azt nem frissítheti. 
+- Ha a beszerzési rendelést a Supply Chain Management változáskezelése vezérli, a Field Service felhasználója csak akkor tudja frissíteni a beszerzési rendelést, ha a Supply Chain Management jóváhagyási állapota *Piszkozat*.
+- Több oszlopot csak a Supply Chain Management tud kezelni, és ezek nem frissíthetők a Field Service szolgáltatásban. A nem frissíthető oszlopokról a termék leképezési tábláiban olvashat bővebben. Az egyszerűség kedvéért a legtöbb ilyen oszlop csak olvashatóra van állítva a Dataverse lapokon. 
 
     Az árinformációk oszlopait például a Supply Chain Management kezeli. A Supply Chain Management olyan kereskedelmi megállapodásokkal rendelkezik, amelyek a Field Service számára előnyös lehet. oszlopok, úgymint az **Egységár**, **Engedmény** és **Nettó összeg** csak a Supply Chain Management szolgáltatásból származhatnak. Annak érdekében, hogy az ár szinkronizálva legyen a Field Service szolgáltatással, a **Szinkronizálás** szolgáltatást kell használnia a **Beszerzési rendelés** és **Beszerzési rendelés terméke** oldalakon a Dataverse szolgáltatásban, amikor beszerzési rendelési adatokat ad meg. További tájékoztatás: [Szinkronizálás a Dynamics 365 Supply Chain Management beszerzési adatokkal igény szerint](#sync-procurement).
 
-+ Az **Összegek** oszlop csak a Field Service mezőben érhető el, mert a Supply Chain Management szolgáltatásban nem érhetők el a beszerzési rendelés naprakész összesítései. A Supply Chain Management összegének számítása több olyan paraméter alapján történik, amelyek nem érhetők el a Field Service szolgáltatásban.
-+ Azok a beszerzésirendelés-sorok, amelyekben csak beszerzési kategória van megadva, vagy amelyekben a megadott termék *Szolgáltatás* terméktípus vagy Field Service terméktípus, csak a Supply Chain Management szolgáltatásban kezdeményezhetők. A program ekkor szinkronizálja a sorokat a Dataverse szolgáltatással, és megjelennek a Field Service szolgáltatásban.
-+ Ha csak a Field Service szolgáltatás van telepítve, a Supply Chain Management nem, akkor a **Raktár** oszlop kötelező a beszerzési rendelésen. Ha azonban a Supply Chain Management telepítve van, akkor erre a követelményre csak akkor van szükség, ha az Supply Chain Management bizonyos helyzetekben nem ad meg raktárat a beszerzési rendelés soraihoz.
-+ A termékbevételezéseket (a Dataverse szolgáltatásban: beszerzési rendelésbevételezések) a Supply Chain Management kezeli, és nem lehet létrehozni a Dataverse szolgáltatásban, ha a Supply Chain Management telepítve van. A Supply Chain Management szolgáltatásból származó termékbevételezések szinkronizálása a Supply Chain Managementből a Dataverse szolgáltatásba történik.
-+ A szállítási hiány engedélyezve van a Supply Chain Management szolgáltatásban. A OneFSSCM megoldás hozzáadja a logikát, így amikor a termékbevételezési sor (vagy a Dataverse szolgáltatásban beszerzési rendelés bevételezési terméke) létrejön vagy frissül, egy készletnaplósor jön létre a Dataverse szolgáltatásban, amely korrigálja a szállítási hiány helyzeteinek fennmaradó rendelési mennyiségét.
+- Az **Összegek** oszlop csak a Field Service mezőben érhető el, mert a Supply Chain Management szolgáltatásban nem érhetők el a beszerzési rendelés naprakész összesítései. A Supply Chain Management összegének számítása több olyan paraméter alapján történik, amelyek nem érhetők el a Field Service szolgáltatásban.
+- Azok a beszerzésirendelés-sorok, amelyekben csak beszerzési kategória van megadva, vagy amelyekben a megadott termék *Szolgáltatás* terméktípus vagy Field Service terméktípus, csak a Supply Chain Management szolgáltatásban kezdeményezhetők. A program ekkor szinkronizálja a sorokat a Dataverse szolgáltatással, és megjelennek a Field Service szolgáltatásban.
+- Ha csak a Field Service szolgáltatás van telepítve, a Supply Chain Management nem, akkor a **Raktár** oszlop kötelező a beszerzési rendelésen. Ha azonban a Supply Chain Management telepítve van, akkor erre a követelményre csak akkor van szükség, ha az Supply Chain Management bizonyos helyzetekben nem ad meg raktárat a beszerzési rendelés soraihoz.
+- A termékbevételezéseket (a Dataverse szolgáltatásban: beszerzési rendelésbevételezések) a Supply Chain Management kezeli, és nem lehet létrehozni a Dataverse szolgáltatásban, ha a Supply Chain Management telepítve van. A Supply Chain Management szolgáltatásból származó termékbevételezések szinkronizálása a Supply Chain Managementből a Dataverse szolgáltatásba történik.
+- A szállítási hiány engedélyezve van a Supply Chain Management szolgáltatásban. A OneFSSCM megoldás hozzáadja a logikát, így amikor a termékbevételezési sor (vagy a Dataverse szolgáltatásban beszerzési rendelés bevételezési terméke) létrejön vagy frissül, egy készletnaplósor jön létre a Dataverse szolgáltatásban, amely korrigálja a szállítási hiány helyzeteinek fennmaradó rendelési mennyiségét.
 
 ## <a name="unsupported-scenarios"></a>Nem támogatott esetek
 
-+ A Field Service megakadályozza, hogy sorokat adjon hozzá egy visszavont beszerzési rendeléshez a Supply Chain Management szolgáltatásban. Megoldásként módosíthatja a beszerzési rendelés rendszerállapotát a Field Service szolgáltatásban, majd az új sort hozzáadhatja a Field Service vagy a Supply Chain Management szolgáltatáshoz.
-+ Bár a beszerzési sorok hatással vannak mindkét rendszer készletszintjére, ez az integráció nem gondoskodik a készletnek a Supply Chain Management és a Field Service szolgáltatás közötti korrigálásáról. Mind a Field Service, mind a Supply Chain Management szolgáltatásban vannak más folyamatok is, amelyek frissítik a készletszinteket. Ezek a folyamatok kívül esnek a beszerzés hatókörén.
+- A Field Service megakadályozza, hogy sorokat adjon hozzá egy visszavont beszerzési rendeléshez a Supply Chain Management szolgáltatásban. Megoldásként módosíthatja a beszerzési rendelés rendszerállapotát a Field Service szolgáltatásban, majd az új sort hozzáadhatja a Field Service vagy a Supply Chain Management szolgáltatáshoz.
+- Bár a beszerzési sorok hatással vannak mindkét rendszer készletszintjére, ez az integráció nem gondoskodik a készletnek a Supply Chain Management és a Field Service szolgáltatás közötti korrigálásáról. Mind a Field Service, mind a Supply Chain Management szolgáltatásban vannak más folyamatok is, amelyek frissítik a készletszinteket. Ezek a folyamatok kívül esnek a beszerzés hatókörén.
 
 ## <a name="status-management"></a>Állapotkezelés
 
@@ -161,13 +160,13 @@ A sor jóváhagyási állapotai csak akkor aktívak, ha van sormunkafolyamat.
 
 Az állapotoszlopok a következő szabályokat alkalmazzák:
 
-+ A Supply Chain Management állapota nem frissíthető a Field Service szolgáltatásból. Bizonyos esetekben azonban a Field Service szolgáltatásban a beszerzési rendelés állapota frissül, ha a Supply Chain Management szolgáltatásban módosul.
-+ Ha a Supply Chain Management szolgáltatásban egy beszerzési rendelés változáskezelés alatt áll, és a változás feldolgozása folyamatban van, a jóváhagyási állapot *Piszkozat* vagy *Ellenőrzés alatt*. Ebben az esetben a Field Service szolgáltatás jóváhagyási állapota *Null* lesz.
-+ Ha a Supply Chain Management szolgáltatásban a beszerzési rendelés jóváhagyási állapota *Jóváhagyva*, *Külső ellenőrzés alatt*, *Megerősítve* vagy *Véglegesített*, akkor a Field Service szolgáltatásban a beszerzési rendelés jóváhagyási állapota *Jóváhagyott* lesz.
-+ Ha a Supply Chain Management szolgáltatásban a beszerzési rendelés jóváhagyási állapota *Elutasítva*, akkor a Field Service szolgáltatásban a beszerzési rendelés jóváhagyási állapota *Elutasítva* lesz.
-+ Ha a Supply Chain Management dokumentumfejlécének állapota *Nyitott rendelés (Utánrendelés)* állapotra módosul, és a Field Service beszerzési rendelésének állapota *Piszkozat* vagy *Visszavonva*, akkor a Field Service szolgáltatás beszerzési rendelésének állapota *Elküldve* állapotúra változik.
-+ Ha a Supply Chain Management szolgáltatásban a dokumentumfejléc állapota *Visszavonva* állapotra módosul, és a Field Service mezőben található beszerzési rendelés bevételezési termékei nincsenek a beszerzési rendeléshez társítva (beszerzési rendelési termékeken keresztül), a Field Service szolgáltatás rendszerállapota *Visszavonva* állapotú lesz.
-+ Ha a Supply Chain Management szolgáltatásban a beszerzésirendelés-sor állapota *Visszavonva*, a Field Service szolgáltatásban a beszerzési rendelés termékállapota *Visszavonva* állapotúra lesz beállítva. Továbbá ha a Supply Chain Management szolgáltatásban a beszerzési rendelés sorának állapota *Visszavonva* állapotról *Utánrendelésre* módosul, akkor a Field Service szolgáltatásban a beszerzési rendelés termékének állapota *Függőben*.
+- A Supply Chain Management állapota nem frissíthető a Field Service szolgáltatásból. Bizonyos esetekben azonban a Field Service szolgáltatásban a beszerzési rendelés állapota frissül, ha a Supply Chain Management szolgáltatásban módosul.
+- Ha a Supply Chain Management szolgáltatásban egy beszerzési rendelés változáskezelés alatt áll, és a változás feldolgozása folyamatban van, a jóváhagyási állapot *Piszkozat* vagy *Ellenőrzés alatt*. Ebben az esetben a Field Service szolgáltatás jóváhagyási állapota *Null* lesz.
+- Ha a Supply Chain Management szolgáltatásban a beszerzési rendelés jóváhagyási állapota *Jóváhagyva*, *Külső ellenőrzés alatt*, *Megerősítve* vagy *Véglegesített*, akkor a Field Service szolgáltatásban a beszerzési rendelés jóváhagyási állapota *Jóváhagyott* lesz.
+- Ha a Supply Chain Management szolgáltatásban a beszerzési rendelés jóváhagyási állapota *Elutasítva*, akkor a Field Service szolgáltatásban a beszerzési rendelés jóváhagyási állapota *Elutasítva* lesz.
+- Ha a Supply Chain Management dokumentumfejlécének állapota *Nyitott rendelés (Utánrendelés)* állapotra módosul, és a Field Service beszerzési rendelésének állapota *Piszkozat* vagy *Visszavonva*, akkor a Field Service szolgáltatás beszerzési rendelésének állapota *Elküldve* állapotúra változik.
+- Ha a Supply Chain Management szolgáltatásban a dokumentumfejléc állapota *Visszavonva* állapotra módosul, és a Field Service mezőben található beszerzési rendelés bevételezési termékei nincsenek a beszerzési rendeléshez társítva (beszerzési rendelési termékeken keresztül), a Field Service szolgáltatás rendszerállapota *Visszavonva* állapotú lesz.
+- Ha a Supply Chain Management szolgáltatásban a beszerzésirendelés-sor állapota *Visszavonva*, a Field Service szolgáltatásban a beszerzési rendelés termékállapota *Visszavonva* állapotúra lesz beállítva. Továbbá ha a Supply Chain Management szolgáltatásban a beszerzési rendelés sorának állapota *Visszavonva* állapotról *Utánrendelésre* módosul, akkor a Field Service szolgáltatásban a beszerzési rendelés termékének állapota *Függőben*.
 
 ## <a name="sync-with-the-supply-chain-management-procurement-data-on-demand"></a><a id="sync-procurement"></a>Szinkronizálás a Supply Chain Management beszerzési adatokkal igény szerint
 

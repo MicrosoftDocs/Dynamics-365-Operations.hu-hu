@@ -3,10 +3,9 @@ title: Szervezeti hierarchia megtervezése
 description: Szervezetek és szervezeti hierarchiák beállítása előtt, győződjön meg arról, hogy tisztában van vele, mi a vállalata modellezésének legjobb módja.
 author: sericks007
 manager: AnnBe
-ms.date: 08/28/2017
+ms.date: 02/19/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: OMHierarchyManager, OMLegalEntity, OMOperatingUnit
 audience: Application User
@@ -17,12 +16,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4c779b5948370444b0b474568bb63b347c4a0831
-ms.sourcegitcommit: 79621e667cd7f48ba3bdbf2731f6f33d8e9f57f6
+ms.openlocfilehash: 7bf683487a20203d49fbab680373fbf48a5c58b6
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "5154409"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5569361"
 ---
 # <a name="plan-your-organizational-hierarchy"></a>Szervezeti hierarchia megtervezése
 
@@ -166,7 +165,7 @@ Az üzemi egységek a fölérendelt jogi személy ország kontextusát használj
 
 #### <a name="if-the-organization-is-modeled-as-a-legal-entity"></a>Ha a szervezet jogi személyként van modellezve
 
-Az olyan országok/régiók, amelyeket a program támogat, a legtöbb kötelező jelentés létrehozható. További információért arról, hogy milyen jelentések érhetők el minden egyes országhoz/régióhoz lásd [Microsoft Dynamics honosítási portál](https://docs.microsoft.com/dynamics/s-e/). (Egy CustomerSource bejelentkezés szükséges.)
+Az olyan országok/régiók, amelyeket a program támogat, a legtöbb kötelező jelentés létrehozható. 
 
 > [!NOTE]
 > A főkönyvi feladási réteg segítségével végezze el a korrekciós bejegyzéseket a fölérendelt vállalatba, amely egy másik könyvelési standardot használ mint az alárendelt vállalat. Ha például egy vállalatra vonatkozóan, amely az Egyesült Királyságban (Egyesült Királyság GAAP) általánosan elfogadott könyvelési gyakorlatokat használ helyesbítő tételeket végezhet a feladási rétegben. Ezek a bejegyzések konszolidálhatók a fölérendelt vállalatba, amely az Egyesült Államokban általánosan elfogadott könyvelési elveket (GAAP) használja. A korrekciós bejegyzések nem befolyásolják a UK GAAP jelentést.

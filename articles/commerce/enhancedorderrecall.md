@@ -3,7 +3,7 @@ title: Rendelési művelet visszahívása a pénztárban
 description: Ez a témakör a pénztárban található, továbbfejlesztett rendelés-visszahívási oldalak kiemelt funkcióit ismerteti.
 author: hhainesms
 manager: annbe
-ms.date: 10/09/2020
+ms.date: 03/12/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -14,12 +14,12 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 21e8045d754006345f5ad68e1e67579386c6df4a
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 174821fce4baf81e4298da4b066f855bfec98ca5
+ms.sourcegitcommit: 6c108be3378b365e6ec596a1a8666d59b758db25
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5010074"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "5585130"
 ---
 # <a name="recall-order-operation-in-pos"></a>Rendelési művelet visszahívása a pénztárban
 
@@ -35,7 +35,7 @@ A **Rendelés-visszahívás** művelet gombjának konfigurálásával a szerveze
 
 A megjelenítés beállítási lehetőségei a következők:
 - **Nincs** – Ezzel a beállítással a művelet speciális megjelenítés nélkül telepíthető. Amikor egy felhasználó ezzel a konfigurációval nyitja meg a műveletet, a program felkéri, hogy keressen megrendeléseket vagy válasszon egy előre definiált rendelésszűrőből.
-- **Teljesítendő megrendelések** – Amikor a felhasználó elindítja a műveletet, a lekérdezést automatikusan futtatja a rendszer, valamint megjeleníti az áruház által teljesítendő megrendelések listáját. Ezeket a rendeléseket áruházon belüli felvételre vagy az áruház általi szállításra konfigurálták, és az ilyen rendelések sorai még kerültek összeszedésre vagy becsomagolásra.
+- **Teljesítendő megrendelések** – Amikor a felhasználó elindítja a műveletet, a lekérdezést automatikusan futtatja a rendszer, valamint megjeleníti a felhasználó aktuális áruháza által teljesítendő megrendelések listáját. Ezeket a rendeléseket áruházon belüli felvételre vagy az áruház általi szállításra konfigurálták, és az ilyen rendelések sorai még kerültek összeszedésre vagy becsomagolásra.
 - **Összeszedendő megrendelések** – Amikor a felhasználó elindítja a műveletet, a lekérdezést automatikusan futtatja a rendszer, valamint megjeleníti a felhasználó aktuális áruházában való összeszedésre konfigurált megrendelések listáját.
 - **Szállítandó megrendelések** – Amikor a felhasználó elindítja a műveletet, a lekérdezést automatikusan futtatja a rendszer, valamint megjeleníti a felhasználó aktuális áruházából való szállításra konfigurált megrendelések listáját.
 
@@ -46,7 +46,7 @@ A **Rendelés-visszahívás** művelet pénztárból való elindításakor, ha a
 
 ![RecallOrderMainMenu](media/recallordermain.png)
 
-A keresési feltételekkel végzett keresés után az alkalmazás megjeleníti az egyezést mutató értékesítési rendeléseket.
+A keresési feltételekkel végzett keresés után az alkalmazás megjeleníti az egyezést mutató értékesítési rendeléseket. Fontos megjegyezni, hogy a keresési/szűrési beállítások használata esetén a beolvasni kívánt rendeléseknek nem kell a felhasználó aktuális üzletéhez kapcsolt rendeléseknek lenniük. Ez a keresési folyamat beolvassa és megjeleníti a keresési feltételeknek megfelelő vevői rendeléseket, még akkor is, ha a rendelést egy másik üzlet/csatorna vagy raktár hely által teljesítendőként hozták létre vagy állították be.
 
 ![RecallOrderDetail](media/orderrecalldetail.png)
 
@@ -54,15 +54,18 @@ A felhasználó kiválaszthat a listán egy rendelést, és megtekintheti a tov�
 
 Az AppBar felületen a felhasználó kiválaszthat egy műveletet. A rendelés állapotától függően előfordulhat, hogy bizonyos műveletek nem engedélyezettek.
 
-- **Visszáru** – Visszáruzást hajt végre a kiválasztott vevői rendeléshez kapcsolódó egy vagy több számlához.
+- **Visszáru** – kezdeményezi a visszáru létrehozását a kiválasztott vevői rendelés számlázott termékeinek bármelyikéhez.
 
-- **Visszavonás** – A kiválasztott értékesítési rendelés teljes visszavonásának elrendelése.
+- **Visszavonás** – A kiválasztott értékesítési rendelés teljes visszavonásának elrendelése. Ez a beállítás nem érhető el hívásközponti csatornán keresztül kezdeményezett rendelésekhez, és nem használható a rendelések részben való törlésére.
 
 - **Teljesítés** – A felhasználót a rendelés teljesítése oldalra vezeti át, amely a kiválasztott rendelésnek megfelelő előzetesen szűrten jelenik meg. Csak azok a rendeléssorok jelennek meg, amelyek a kijelölt rendelésnek a felhasználó áruháza általi teljesítése céljából nyitottak.
 
-- **Szerkesztés** – Lehetővé teszi a felhasználók számára a kiválasztott vevői rendelés módosítását.
+- **Szerkesztés** – Lehetővé teszi a felhasználók számára a kiválasztott vevői rendelés módosítását. A rendelések csak [bizonyos helyzetekben](customer-orders-overview.md#edit-an-existing-customer-order) szerkeszthetők.
 
-- **Összeszedés** – Elindítja az összeszedési folyamatot, amellyel a felhasználó kiválaszthatja az összeszedendő termékeket, és létrehozza az összeszedési értékesítési tranzakciót.
+- **Felvétel** – ez a lehetőség akkor érhető el, ha a rendelés egy vagy több sorát kijelölték felvételre a felhasználó aktuális üzletében. Ez a művelet elindítja a felvételi folyamatot, amellyel a felhasználó kiválaszthatja a felvenni kívánt termékeket, és létrehozza a felvételi értékesítési tranzakciót.
 
+## <a name="add-notifications-to-the-recall-order-operation"></a>Értesítések hozzáadása a rendelés-visszahívási művelethez
+
+A 10.0.18-as és újabb verziókban szükség esetén konfigurálhatja a pénztárértesítéseket és az élő csempe típusú riasztásokat a **Művelet visszahívása** művelethez. További információk: [Rendelési értesítések megjelenítése a pénztárnál](notifications-pos.md) (POS).  
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

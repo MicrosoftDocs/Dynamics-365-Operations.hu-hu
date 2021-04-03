@@ -16,21 +16,18 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 1d9482a45cb8f2ea52e7f58d55e30cfe56694d04
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: d653b072eca134c765a5db5659b228648fc13c4a
+ms.sourcegitcommit: 3fe4d9a33447aa8a62d704fbbf18aeb9cb667baa
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4985954"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "5582719"
 ---
 # <a name="add-support-for-a-content-delivery-network-cdn"></a>Tartalomkézbesítési hálózat (CDN) támogatásának hozzáadása
-
 
 [!include [banner](includes/banner.md)]
 
 Ez a témakör azt mutatja be, hogyan lehet hozzáadni tartalomkézbesítési hálózatot (CDN) a Microsoft Dynamics 365 Commerce-környezetéhez.
-
-## <a name="overview"></a>Áttekintés
 
 Ha egy e-kereskedelmi környezetet hoz létre a Dynamics 365 Commerce alkalmazásban, akkor konfigurálhatja úgy, hogy együttműködjön az Ön CDN-szolgáltatásával. 
 
@@ -96,8 +93,8 @@ Ha be szeretne állítani egy útvonaltervezési szabályt az Azure Front Door S
 1. A **Név** mezőbe írja be az **alapértelmezett** szót.
 1. Az **Elfogadott protokoll** mezőben válassza a **HTTP és HTTPS** lehetőséget.
 1. Az **Előtéri állomások** mezőbe írja be a **dynamics-ecom-bérlő-neve.azurefd.net** kifejezést.
-1. Az **Egyeztetendő minták** alatt a felső mezőbe írja be a következőt: **/\** _.
-1. Az **Útvonal részletei** részben adja meg az **Útvonal típusa** beállítás számára a **Továbbítás** értéket.
+1. Az **Egyeztetendő minták** alatt a felső mezőbe írja be a következőt: **/\***.
+1. Az **Útvonal részletei** adja meg az **Útvonal típusa** beállítás számára a **Továbbítás** értéket.
 1. Válassza ki a **Háttérkészlet** mezőben az **ecom-backend** elemet.
 1. A **Továbbítási protokollok** mezőcsoportban válassza ki az **Egyeztetési kérelem** beállítást. 
 1. Állítsa az **URL újraírása** beállítást **Letiltva** értékre.
@@ -109,8 +106,8 @@ Ha be szeretne állítani egy gyorsítótárazási szabályt az Azure Front Door
 1. A **Név** mezőbe írja be a **statikák** szót.
 1. Az **Elfogadott protokoll** mezőben válassza a **HTTP és HTTPS** lehetőséget.
 1. Az **Előtéri állomások** mezőbe írja be a **dynamics-ecom-bérlő-neve.azurefd.net** kifejezést.
-1. Az **Egyeztetendő minták** alatt a felső mezőbe írja be a következőt: **/\_msdyn365/\_scnr/\** _.
-1. Az **Útvonal részletei** részben adja meg az **Útvonal típusa** beállítás számára a **Továbbítás** értéket.
+1. Az **Egyeztetendő minták** alatt a felső mezőbe írja be a következőt: **/\_msdyn365/\_scnr/\***.
+1. Az **Útvonal részletei** adja meg az **Útvonal típusa** beállítás számára a **Továbbítás** értéket.
 1. Válassza ki a **Háttérkészlet** mezőben az **ecom-backend** elemet.
 1. A **Továbbítási protokollok** mezőcsoportban válassza ki az **Egyeztetési kérelem** beállítást.
 1. Állítsa az **URL újraírása** beállítást **Letiltva** értékre.
@@ -143,25 +140,7 @@ A CDN-nek most már helyesen konfiguráltnak kell lennie, hogy használható leg
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[Tartománynév konfigurálása](configure-your-domain-name.md)
-
-[Új e-kereskedelmi bérlő telepítése](deploy-ecommerce-site.md)
-
-[E-kereskedelmi webhely létrehozása](create-ecommerce-site.md)
-
-[Dynamics 365 Commerce webhely társítása online csatornával](associate-site-online-store.md)
-
-[robots.txt fájlok kezelése](manage-robots-txt-files.md)
-
-[URL-átirányítások tömeges feltöltése](upload-bulk-redirects.md)
-
-[B2C-bérlő beállítása a Commerce-ben](set-up-B2C-tenant.md)
-
-[Felhasználói bejelentkezéshez használt egyéni lapok beállítása](custom-pages-user-logins.md)
-
-[Több B2C-bérlő konfigurálása egy Commerce környezetben](configure-multi-B2C-tenants.md)
-
-[Helyalapú áruházészlelés engedélyezése](enable-store-detection.md)
+[Tartalomkézbesítési hálózat végrehajtási beállításai](cdn-options.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
