@@ -6,7 +6,6 @@ manager: kfend
 ms.date: 12/12/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
@@ -17,49 +16,52 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 903429994ae5618b597aa0ab0991e9f6783a96ed
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 6e4800ce44d9da07818acec55c50224a9a000fe6
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687938"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5569605"
 ---
-# <a name="concatenate-er-function"></a><span data-ttu-id="fa271-103">CONCATENATE ER-függvény</span><span class="sxs-lookup"><span data-stu-id="fa271-103">CONCATENATE ER function</span></span>
+# <a name="concatenate-er-function"></a><span data-ttu-id="fe738-103">CONCATENATE ER-függvény</span><span class="sxs-lookup"><span data-stu-id="fe738-103">CONCATENATE ER function</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="fa271-104">A `CONCATENATE` függvény az összes megadott karakterláncot *Karakterlánc* értékként adja vissza, miután egy karakterláncba lettek egyesítve.</span><span class="sxs-lookup"><span data-stu-id="fa271-104">The `CONCATENATE` function returns all the specified text strings as a *String* value after they have been joined into one string.</span></span>
+<span data-ttu-id="fe738-104">A `CONCATENATE` függvény az összes megadott karakterláncot *Karakterlánc* értékként adja vissza, miután egy karakterláncba lettek egyesítve.</span><span class="sxs-lookup"><span data-stu-id="fe738-104">The `CONCATENATE` function returns all the specified text strings as a *String* value after they have been joined into one string.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="fa271-105">Szintaxis</span><span class="sxs-lookup"><span data-stu-id="fa271-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="fe738-105">Szintaxis</span><span class="sxs-lookup"><span data-stu-id="fe738-105">Syntax</span></span>
 
 ```vb
 CONCATENATE (text 1[, text 2, …, text N])
 ```
 
-## <a name="arguments"></a><span data-ttu-id="fa271-106">Argumentumok</span><span class="sxs-lookup"><span data-stu-id="fa271-106">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="fe738-106">Argumentumok</span><span class="sxs-lookup"><span data-stu-id="fe738-106">Arguments</span></span>
 
-<span data-ttu-id="fa271-107">`text 1`: *Karakterlánc*</span><span class="sxs-lookup"><span data-stu-id="fa271-107">`text 1`: *String*</span></span>
+<span data-ttu-id="fe738-107">`text 1`: *Karakterlánc*</span><span class="sxs-lookup"><span data-stu-id="fe738-107">`text 1`: *String*</span></span>
 
-<span data-ttu-id="fa271-108">Hivatkozás a *Karakterlánc* adattípusú adatforrásra.</span><span class="sxs-lookup"><span data-stu-id="fa271-108">A reference to a data source of the *String* data type.</span></span> <span data-ttu-id="fa271-109">Az argumentum megadása kötelező.</span><span class="sxs-lookup"><span data-stu-id="fa271-109">This argument is required.</span></span>
+<span data-ttu-id="fe738-108">Hivatkozás a *Karakterlánc* adattípusú adatforrásra.</span><span class="sxs-lookup"><span data-stu-id="fe738-108">A reference to a data source of the *String* data type.</span></span> <span data-ttu-id="fe738-109">Az argumentum megadása kötelező.</span><span class="sxs-lookup"><span data-stu-id="fe738-109">This argument is required.</span></span>
 
-<span data-ttu-id="fa271-110">`text N`: *Karakterlánc*</span><span class="sxs-lookup"><span data-stu-id="fa271-110">`text N`: *String*</span></span>
+<span data-ttu-id="fe738-110">`text N`: *Karakterlánc*</span><span class="sxs-lookup"><span data-stu-id="fe738-110">`text N`: *String*</span></span>
 
-<span data-ttu-id="fa271-111">Hivatkozás a *Karakterlánc* adattípusú adatforrásra.</span><span class="sxs-lookup"><span data-stu-id="fa271-111">A reference to a data source of the *String* data type.</span></span> <span data-ttu-id="fa271-112">Ezek a további argumentumok nem kötelezők.</span><span class="sxs-lookup"><span data-stu-id="fa271-112">These additional arguments are optional.</span></span>
+<span data-ttu-id="fe738-111">Hivatkozás a *Karakterlánc* adattípusú adatforrásra.</span><span class="sxs-lookup"><span data-stu-id="fe738-111">A reference to a data source of the *String* data type.</span></span> <span data-ttu-id="fe738-112">Ezek a további argumentumok nem kötelezők.</span><span class="sxs-lookup"><span data-stu-id="fe738-112">These additional arguments are optional.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="fa271-113">Visszaadott értékek</span><span class="sxs-lookup"><span data-stu-id="fa271-113">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="fe738-113">Visszaadott értékek</span><span class="sxs-lookup"><span data-stu-id="fe738-113">Return values</span></span>
 
-<span data-ttu-id="fa271-114">*Karakterlánc*</span><span class="sxs-lookup"><span data-stu-id="fa271-114">*String*</span></span>
+<span data-ttu-id="fe738-114">*Karakterlánc*</span><span class="sxs-lookup"><span data-stu-id="fe738-114">*String*</span></span>
 
-<span data-ttu-id="fa271-115">Az eredményül kapott szövegérték.</span><span class="sxs-lookup"><span data-stu-id="fa271-115">The resulting text value.</span></span>
+<span data-ttu-id="fe738-115">Az eredményül kapott szövegérték.</span><span class="sxs-lookup"><span data-stu-id="fe738-115">The resulting text value.</span></span>
 
-## <a name="example"></a><span data-ttu-id="fa271-116">Példa</span><span class="sxs-lookup"><span data-stu-id="fa271-116">Example</span></span>
+## <a name="example"></a><span data-ttu-id="fe738-116">Példa</span><span class="sxs-lookup"><span data-stu-id="fe738-116">Example</span></span>
 
-<span data-ttu-id="fa271-117">A `CONCATENATE ("abc", "def")` az **"abcdef"** értéket adja vissza.</span><span class="sxs-lookup"><span data-stu-id="fa271-117">`CONCATENATE ("abc", "def")` returns **"abcdef"**.</span></span>
+<span data-ttu-id="fe738-117">A `CONCATENATE ("abc", "def")` az **"abcdef"** értéket adja vissza.</span><span class="sxs-lookup"><span data-stu-id="fe738-117">`CONCATENATE ("abc", "def")` returns **"abcdef"**.</span></span>
 
-## <a name="usage-notes"></a><span data-ttu-id="fa271-118">Használati megjegyzések</span><span class="sxs-lookup"><span data-stu-id="fa271-118">Usage notes</span></span>
+## <a name="usage-notes"></a><span data-ttu-id="fe738-118">Használati megjegyzések</span><span class="sxs-lookup"><span data-stu-id="fe738-118">Usage notes</span></span>
 
-<span data-ttu-id="fa271-119">Az `"abc" & "def"` kifejezés szintén az **"abcdef"** értéket adja vissza.</span><span class="sxs-lookup"><span data-stu-id="fa271-119">The expression `"abc" & "def"` also returns **"abcdef"**.</span></span>
+<span data-ttu-id="fe738-119">Az `"abc" & "def"` kifejezés szintén az **"abcdef"** értéket adja vissza.</span><span class="sxs-lookup"><span data-stu-id="fe738-119">The expression `"abc" & "def"` also returns **"abcdef"**.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="fa271-120">További erőforrások</span><span class="sxs-lookup"><span data-stu-id="fa271-120">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="fe738-120">További erőforrások</span><span class="sxs-lookup"><span data-stu-id="fe738-120">Additional resources</span></span>
 
-[<span data-ttu-id="fa271-121">Szöveg függvények</span><span class="sxs-lookup"><span data-stu-id="fa271-121">Text functions</span></span>](er-functions-category-text.md)
+[<span data-ttu-id="fe738-121">Szöveg függvények</span><span class="sxs-lookup"><span data-stu-id="fe738-121">Text functions</span></span>](er-functions-category-text.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

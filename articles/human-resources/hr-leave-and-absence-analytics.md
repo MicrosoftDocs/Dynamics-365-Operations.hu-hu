@@ -18,30 +18,34 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 488745388312f0a2ef936dac2f8252431123fe33
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: c20d0da62724202e5b6c750e646bc205542191aa
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5116068"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5468155"
 ---
-# <a name="view-analytics-for-leave-and-absence"></a><span data-ttu-id="9a4e4-103">A szabadság és távollét elemzésének megtekintése</span><span class="sxs-lookup"><span data-stu-id="9a4e4-103">View analytics for leave and absence</span></span>
+# <a name="view-analytics-for-leave-and-absence"></a><span data-ttu-id="6bf80-103">A szabadság és távollét elemzésének megtekintése</span><span class="sxs-lookup"><span data-stu-id="6bf80-103">View analytics for leave and absence</span></span>
 
-<span data-ttu-id="9a4e4-104">A Dynamics 365 Human Resources rendszer az elemzésekkel betekintést nyújt a szervezetbeli szabadságok és távollétek trendjeibe.</span><span class="sxs-lookup"><span data-stu-id="9a4e4-104">Dynamics 365 Human Resources provides analytics to help give you insight into your organization's leave and absence trends.</span></span>
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-## <a name="view-leave-and-absence-analytics"></a><span data-ttu-id="9a4e4-105">A szabadság és távollét elemzésének megtekintése</span><span class="sxs-lookup"><span data-stu-id="9a4e4-105">View Leave and absence analytics</span></span>
+<span data-ttu-id="6bf80-104">A Dynamics 365 Human Resources rendszer az elemzésekkel betekintést nyújt a szervezetbeli szabadságok és távollétek trendjeibe.</span><span class="sxs-lookup"><span data-stu-id="6bf80-104">Dynamics 365 Human Resources provides analytics to help give you insight into your organization's leave and absence trends.</span></span>
 
-1. <span data-ttu-id="9a4e4-106">A **Szabadság és távollét** munkaterületen válassza az **Elemzés** lapot.</span><span class="sxs-lookup"><span data-stu-id="9a4e4-106">In the **Leave and absence** workspace, select the **Analytics** tab.</span></span>
+## <a name="view-leave-and-absence-analytics"></a><span data-ttu-id="6bf80-105">A szabadság és távollét elemzésének megtekintése</span><span class="sxs-lookup"><span data-stu-id="6bf80-105">View Leave and absence analytics</span></span>
 
-2. <span data-ttu-id="9a4e4-107">Válassza ki a következő nézetek egyikét az alsó részén található lapok közül:</span><span class="sxs-lookup"><span data-stu-id="9a4e4-107">Choose one of the following views from the tabs along the bottom:</span></span>
+1. <span data-ttu-id="6bf80-106">A **Szabadság és távollét** munkaterületen válassza az **Elemzés** lapot.</span><span class="sxs-lookup"><span data-stu-id="6bf80-106">In the **Leave and absence** workspace, select the **Analytics** tab.</span></span>
 
-   - <span data-ttu-id="9a4e4-108">**Szabadság és távollét áttekintése** – Megtekintheti a távolléti konstrukciók beléptetési százalékait és kihasználtsági rátáit, a havi könyveléseket és egyenlegeket, valamint a távollétegyenlegeit vezetőnként.</span><span class="sxs-lookup"><span data-stu-id="9a4e4-108">**Leave and Absence Overview** - View enrollment percentages and utilization rates for your leave plans, monthly accruals and balances, and time-off balances by manager.</span></span>
+2. <span data-ttu-id="6bf80-107">Válassza ki a következő nézetek egyikét az alsó részén található lapok közül:</span><span class="sxs-lookup"><span data-stu-id="6bf80-107">Choose one of the following views from the tabs along the bottom:</span></span>
 
-   - <span data-ttu-id="9a4e4-109">**Aktuális egyenleg elemzése** – Megtekintheti a szabadságegyenlegekkel és a könyveléssel kapcsolatos részletes adatokat.</span><span class="sxs-lookup"><span data-stu-id="9a4e4-109">**Current Balance Analysis** - View detailed information about leave balances and accruals.</span></span>
+   - <span data-ttu-id="6bf80-108">**Szabadság és távollét áttekintése** – Megtekintheti a távolléti konstrukciók beléptetési százalékait és kihasználtsági rátáit, a havi könyveléseket és egyenlegeket, valamint a távollétegyenlegeit vezetőnként.</span><span class="sxs-lookup"><span data-stu-id="6bf80-108">**Leave and Absence Overview** - View enrollment percentages and utilization rates for your leave plans, monthly accruals and balances, and time-off balances by manager.</span></span>
 
-   - <span data-ttu-id="9a4e4-110">**Egyenleg trendelemzése** – Megtekintheti a szabadságegyenlegek trendjeit hónap és év szerint, valamint az elmúlt 12 hónap trendjeit.</span><span class="sxs-lookup"><span data-stu-id="9a4e4-110">**Balance Trend Analysis** - View trends in leave balances by month and by year, and view trends over the past 12 months.</span></span>
+   - <span data-ttu-id="6bf80-109">**Aktuális egyenleg elemzése** – Megtekintheti a szabadságegyenlegekkel és a könyveléssel kapcsolatos részletes adatokat.</span><span class="sxs-lookup"><span data-stu-id="6bf80-109">**Current Balance Analysis** - View detailed information about leave balances and accruals.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="9a4e4-111">Lásd még</span><span class="sxs-lookup"><span data-stu-id="9a4e4-111">See also</span></span>
+   - <span data-ttu-id="6bf80-110">**Egyenleg trendelemzése** – Megtekintheti a szabadságegyenlegek trendjeit hónap és év szerint, valamint az elmúlt 12 hónap trendjeit.</span><span class="sxs-lookup"><span data-stu-id="6bf80-110">**Balance Trend Analysis** - View trends in leave balances by month and by year, and view trends over the past 12 months.</span></span>
 
-- [<span data-ttu-id="9a4e4-112">Szabadság és távollét áttekintése</span><span class="sxs-lookup"><span data-stu-id="9a4e4-112">Leave and absence overview</span></span>](hr-leave-and-absence-overview.md)
-- [<span data-ttu-id="9a4e4-113">Szabadság- és távolléti terv létrehozása</span><span class="sxs-lookup"><span data-stu-id="9a4e4-113">Create a leave and absence plan</span></span>](hr-leave-and-absence-plans.md)
+## <a name="see-also"></a><span data-ttu-id="6bf80-111">Lásd még</span><span class="sxs-lookup"><span data-stu-id="6bf80-111">See also</span></span>
+
+- [<span data-ttu-id="6bf80-112">Szabadság és távollét áttekintése</span><span class="sxs-lookup"><span data-stu-id="6bf80-112">Leave and absence overview</span></span>](hr-leave-and-absence-overview.md)
+- [<span data-ttu-id="6bf80-113">Szabadság- és távolléti terv létrehozása</span><span class="sxs-lookup"><span data-stu-id="6bf80-113">Create a leave and absence plan</span></span>](hr-leave-and-absence-plans.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
