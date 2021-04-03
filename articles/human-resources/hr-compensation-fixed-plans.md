@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: aa370ad5b873d707aba865b7f90e22acfc4825ee
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: cc6a639bd593b9a41217a054023a9de82f373c1f
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5112753"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5465774"
 ---
 # <a name="create-a-fixed-compensation-plans"></a>Fix kompenzációs konstrukciók létrehozása
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 A fix kompenzáció egy alkalmazott rendszeres bruttó bérét jelenti. A cikk ismerteti az összetevőket, amelyeket be kell állítani, mielőtt létrehozna egy fix kompenzációs tervet és bejegyezné az alkalmazottakat.
 

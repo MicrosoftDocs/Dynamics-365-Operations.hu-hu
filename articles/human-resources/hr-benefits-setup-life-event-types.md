@@ -18,16 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c382299014e3f823bc2cd210749aae8c091c5f23
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: 7b1f2fd953c1678a5099f4f3b5cf08fa6674f4db
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5112842"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5466038"
 ---
 # <a name="configure-life-event-types"></a>Életesemények típusának konfigurálása
 
-A Microsoft Dynamics 365 Human Resources az élettartamesemény-típusok használatával határozza meg az olyan eseményeket, amikor lehetőség van az alkalmazotti juttatások beléptetéseinek frissítésére. Ilyen például a házasságkötés vagy a gyermek születése. Az élettartamesemény-típus azonosítója minden esetben csak egy élettartamesemény-típushoz kapcsolható. Ha például létrehoz egy élettartamesemény-azonosítót Címmódosítás néven, amelyet a az Alkalmazotti címének módosítás élettartamesemény-típushoz rendel hozzá, akkor nem hozhat létre másik azonosítót az Alkalmazott címének módosítása címkével, és nem rendelheti hozzá az Alkalmazott címének módosítás élettartamesemény-típushoz. 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+A Dynamics 365 Human Resources az élettartamesemény-típusok használatával határozza meg az olyan eseményeket, amikor lehetőség van az alkalmazotti juttatások beléptetéseinek frissítésére. Ilyen például a házasságkötés vagy a gyermek születése. Az élettartamesemény-típus azonosítója minden esetben csak egy élettartamesemény-típushoz kapcsolható. Ha például létrehoz egy élettartamesemény-azonosítót Címmódosítás néven, amelyet a az Alkalmazotti címének módosítás élettartamesemény-típushoz rendel hozzá, akkor nem hozhat létre másik azonosítót az Alkalmazott címének módosítása címkével, és nem rendelheti hozzá az Alkalmazott címének módosítás élettartamesemény-típushoz. 
 
 Miután létrehozta az élettartamesemény-típusokat, hozzá kell rendelnie azokat a konstrukciótípusokhoz. További információ: [Konstrukciótípusok létrehozása](hr-benefits-setup-plan-types.md).
 
