@@ -18,33 +18,38 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c7e9fda1b5e3dc2c0afdfd4c23bed277b4748bfd
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: fdb2f00675fa5191e05dcb99525c1ec9a8b16bd2
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5112843"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5466278"
 ---
-# <a name="process-life-event-eligibility"></a><span data-ttu-id="cf3b3-103">Életeseményekre vonatkozó jogosultságok feldolgozása</span><span class="sxs-lookup"><span data-stu-id="cf3b3-103">Process life event eligibility</span></span>
+# <a name="process-life-event-eligibility"></a><span data-ttu-id="8b766-103">Életeseményekre vonatkozó jogosultságok feldolgozása</span><span class="sxs-lookup"><span data-stu-id="8b766-103">Process life event eligibility</span></span>
 
-<span data-ttu-id="cf3b3-104">Ez a cikk bemutatja, hogyan futtathatja az életeseményre vonatkozó jogosultsági folyamatot.</span><span class="sxs-lookup"><span data-stu-id="cf3b3-104">This article shows you how to run the process for life event eligibility.</span></span>
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-1. <span data-ttu-id="cf3b3-105">A **Juttatások kezelése** munkaterületen, amely a **Feldolgozás** menüpontban található, válassza az **Életeseményre vonatkozó jogosultságok feldolgozása** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="cf3b3-105">In the **Benefits management** workspace, under **Processing**, select **Life event eligibility processing**.</span></span>
+<span data-ttu-id="8b766-104">Ez a cikk bemutatja, hogyan futtathatja az életeseményre vonatkozó jogosultsági folyamatot.</span><span class="sxs-lookup"><span data-stu-id="8b766-104">This article shows you how to run the process for life event eligibility.</span></span>
 
-2. <span data-ttu-id="cf3b3-106">Az **Lleteseményre való jogosultságra vonatkozó folyamat futtatása** párbeszédpanelben adja meg a következő mezők értékeit:</span><span class="sxs-lookup"><span data-stu-id="cf3b3-106">In the **Run life event eligibility process** dialog box, specify values for the following fields:</span></span>
+1. <span data-ttu-id="8b766-105">A **Juttatások kezelése** munkaterületen, amely a **Feldolgozás** menüpontban található, válassza az **Életeseményre vonatkozó jogosultságok feldolgozása** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="8b766-105">In the **Benefits management** workspace, under **Processing**, select **Life event eligibility processing**.</span></span>
 
-   | <span data-ttu-id="cf3b3-107">Mező</span><span class="sxs-lookup"><span data-stu-id="cf3b3-107">Field</span></span> | <span data-ttu-id="cf3b3-108">Leírás</span><span class="sxs-lookup"><span data-stu-id="cf3b3-108">Description</span></span> |
+2. <span data-ttu-id="8b766-106">Az **Lleteseményre való jogosultságra vonatkozó folyamat futtatása** párbeszédpanelben adja meg a következő mezők értékeit:</span><span class="sxs-lookup"><span data-stu-id="8b766-106">In the **Run life event eligibility process** dialog box, specify values for the following fields:</span></span>
+
+   | <span data-ttu-id="8b766-107">Mező</span><span class="sxs-lookup"><span data-stu-id="8b766-107">Field</span></span> | <span data-ttu-id="8b766-108">Leírás</span><span class="sxs-lookup"><span data-stu-id="8b766-108">Description</span></span> |
    | --- | --- |
-   | <span data-ttu-id="cf3b3-109">**Regisztrációs időszak**</span><span class="sxs-lookup"><span data-stu-id="cf3b3-109">**Enrollment period**</span></span> | <span data-ttu-id="cf3b3-110">Az életeseményre vonatkozó jogosultságok feldolgozására szolgáló beléptetési időszak.</span><span class="sxs-lookup"><span data-stu-id="cf3b3-110">The enrollment period to process life event eligibility for.</span></span> |
+   | <span data-ttu-id="8b766-109">**Regisztrációs időszak**</span><span class="sxs-lookup"><span data-stu-id="8b766-109">**Enrollment period**</span></span> | <span data-ttu-id="8b766-110">Az életeseményre vonatkozó jogosultságok feldolgozására szolgáló beléptetési időszak.</span><span class="sxs-lookup"><span data-stu-id="8b766-110">The enrollment period to process life event eligibility for.</span></span> |
 
-3. <span data-ttu-id="cf3b3-111">Ha a háttérben szeretné futtatni a folyamatot, válassza a **Futtatás a háttérben** parancsot, majd hajtsa végre a következő műveleteket:</span><span class="sxs-lookup"><span data-stu-id="cf3b3-111">If you want to run the process in the background, select **Run in the background** and do the following tasks:</span></span>
+3. <span data-ttu-id="8b766-111">Ha a háttérben szeretné futtatni a folyamatot, válassza a **Futtatás a háttérben** parancsot, majd hajtsa végre a következő műveleteket:</span><span class="sxs-lookup"><span data-stu-id="8b766-111">If you want to run the process in the background, select **Run in the background** and do the following tasks:</span></span>
 
-   1. <span data-ttu-id="cf3b3-112">Információk megadása a folyamathoz.</span><span class="sxs-lookup"><span data-stu-id="cf3b3-112">Enter information for the process.</span></span>
+   1. <span data-ttu-id="8b766-112">Információk megadása a folyamathoz.</span><span class="sxs-lookup"><span data-stu-id="8b766-112">Enter information for the process.</span></span>
 
-   2. <span data-ttu-id="cf3b3-113">Ismétlődő feladat beállításához jelölje be az **Ismétlődés** jelölőnégyzetet, adja meg az ismétlődési adatokat, majd kattintson az **OK** gombra.</span><span class="sxs-lookup"><span data-stu-id="cf3b3-113">To set up a recurring job, select **Recurrence**, enter the recurrence information, and the select **OK**.</span></span>
+   2. <span data-ttu-id="8b766-113">Ismétlődő feladat beállításához jelölje be az **Ismétlődés** jelölőnégyzetet, adja meg az ismétlődési adatokat, majd kattintson az **OK** gombra.</span><span class="sxs-lookup"><span data-stu-id="8b766-113">To set up a recurring job, select **Recurrence**, enter the recurrence information, and the select **OK**.</span></span>
 
-   3. <span data-ttu-id="cf3b3-114">A munkafigyelmeztetések beállításához jelölje ki a **Figyelmeztetések** lehetőséget, válassza ki, hogy milyen figyelmeztetéseket akar kapni ezzel kapcsolatban, majd kattintson az **OK** gombra.</span><span class="sxs-lookup"><span data-stu-id="cf3b3-114">To set up a job alert, select **Alerts**, select the alerts to receive, and then select **OK**.</span></span>
+   3. <span data-ttu-id="8b766-114">A munkafigyelmeztetések beállításához jelölje ki a **Figyelmeztetések** lehetőséget, válassza ki, hogy milyen figyelmeztetéseket akar kapni ezzel kapcsolatban, majd kattintson az **OK** gombra.</span><span class="sxs-lookup"><span data-stu-id="8b766-114">To set up a job alert, select **Alerts**, select the alerts to receive, and then select **OK**.</span></span>
 
-   4. <span data-ttu-id="cf3b3-115">Válassza ki az **OK** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="cf3b3-115">Select **OK**.</span></span> <span data-ttu-id="cf3b3-116">A folyamat a megadott paraméterekkel fog futni.</span><span class="sxs-lookup"><span data-stu-id="cf3b3-116">The process will run with the parameters you set.</span></span>
+   4. <span data-ttu-id="8b766-115">Válassza ki az **OK** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="8b766-115">Select **OK**.</span></span> <span data-ttu-id="8b766-116">A folyamat a megadott paraméterekkel fog futni.</span><span class="sxs-lookup"><span data-stu-id="8b766-116">The process will run with the parameters you set.</span></span>
 
-4. <span data-ttu-id="cf3b3-117">Válassza ki az **OK** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="cf3b3-117">Select **OK**.</span></span>
+4. <span data-ttu-id="8b766-117">Válassza ki az **OK** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="8b766-117">Select **OK**.</span></span>
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
