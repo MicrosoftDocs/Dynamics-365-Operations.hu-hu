@@ -3,7 +3,7 @@ title: E-mail-sablonok létrehozása a tranzakciók eseményeihez
 description: Ez a témakör azt mutatja be, hogyan lehet létrehozni, feltölteni és konfigurálni a Microsoft Dynamics 365 Commerce tranzakciós eseményeihez tartozó e-mail-sablonokat.
 author: bicyclingfool
 manager: annbe
-ms.date: 06/01/2020
+ms.date: 03/01/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 245ca998ef3e6d172df3525f06d7901f3f41b650
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 756e2a64ef4c33c347106968eb6bc79a413c3ff7
+ms.sourcegitcommit: 88babb2fffe97e93bbde543633fc492120f2a4fc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5000785"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "5555245"
 ---
-# <a name="create-email-templates-for-transactional-events"></a>E-mail-sablonok létrehozása a tranzakciók eseményeihez
+# <a name="create-email-templates-for-transactional-events"></a>E-mail-sablonok létrehozása tranzakciós eseményekhez
 
 [!include [banner](includes/banner.md)]
 
@@ -39,7 +39,7 @@ Mielőtt egy konkrét tranzakciós eseményt hozzárendel egy e-mail-sablonhoz, 
 
 E-mail-sablon létrehozásához kövesse az alábbi lépéseket.
 
-1. A Commerce-központban válassza a **Szervezet e-mail sablonjai** elemet , amely a **Kiskereskedelem és kereskedelem \> Központ beállítása \> Szervezeti e-mail sablonok** vagy **Szervezeti adminisztráció \> Beállítások \> Szervezeti e-mail-sablonok** helyen található.
+1. A Commerce-központban válassza a Szervezet e-mail sablonjai elemet , amely a **Kiskereskedelem és kereskedelem \> Központ beállítása \> Szervezeti e-mail-sablonok** vagy **Szervezeti adminisztráció \> Beállítások \> Szervezeti e-mail-sablonok** helyen található.
 1. Válassza az **Új** lehetőséget.
 1. Az **Általános** lehetőség alatt állítsa be a következő mezőket:
 
@@ -78,28 +78,29 @@ Az e-mailek tartalmazhatnak olyan helyőrzőket, amelyeket a rendszer az e-mail 
 
 A következő helyőrzők az értékesítési rendelés szintjén megadott adatokat kérdezik le és jelenítik meg (szemben az értékesítési sor szintjével).
 
-| Helyőrző neve    | Helyőrző értéke                                                |
-|---------------------|------------------------------------------------------------------|
-| customername        | A rendelést küldő vevő neve.                   |
-| salesId             | A rendelés értékesítési azonosítója.                                       |
-| deliveryaddress     | A kiszállított rendelések szállítási címe.                         |
-| customeraddress     | A vevő címe.                                     |
-| deliverydate        | A kiszállítás dátuma.                                               |
-| shipdate            | A szállítás dátuma.                                                   |
-| modeofdelivery      | A rendelés szállítási módja.                                  |
-| KÖLTSÉGEK             | A rendelés teljes költsége.                                 |
-| adó                 | A rendelést terhelő teljes adó.                                     |
-| összesen               | A rendelés teljes összege.                                  |
-| ordernetamount      | A rendelés teljes összege, mínusz a teljes adó.             |
-| engedmény            | A rendelés teljes engedménye.                                |
-| StoreName           | Az üzlet neve, ahonnan a rendelést a vevő küldte.                |
-| storeaddress        | A rendelést küldő üzlet címe.                  |
-| storeopenfrom       | A rendelést küldő üzlet nyitvatartási ideje.             |
-| storeopento         | A rendelést küldő üzlet zárási ideje.             |
-| pickupstorename     | Az üzlet neve, ahol a rendelést felveszik.         |
-| pickupstoreaddress  | Az üzlet címe, ahol a rendelést felveszik.      |
-| pickupopenstorefrom | Az üzlet nyitvatartási ideje, ahol a rendelést felveszik. |
-| pickupopenstoreto   | Az üzlet zárási ideje, ahol a rendelést felveszik. |
+| Helyőrző neve     | Helyőrző értéke                                            |
+| -------------------- | ------------------------------------------------------------ |
+| customername         | A rendelést küldő vevő neve.               |
+| salesId              | A rendelés értékesítési azonosítója.                                   |
+| deliveryaddress      | A kiszállított rendelések szállítási címe.                     |
+| customeraddress      | A vevő címe.                                 |
+| customeremailaddress | A vevő által a pénztárnál megadott e-mail-cím.     |
+| deliverydate         | A kiszállítás dátuma.                                           |
+| shipdate             | A szállítás dátuma.                                               |
+| modeofdelivery       | A rendelés szállítási módja.                              |
+| KÖLTSÉGEK              | A rendelés teljes költsége.                             |
+| adó                  | A rendelést terhelő teljes adó.                                 |
+| összesen                | A rendelés teljes összege.                              |
+| ordernetamount       | A rendelés teljes összege, mínusz a teljes adó.         |
+| engedmény             | A rendelés teljes engedménye.                            |
+| StoreName            | Az üzlet neve, ahonnan a rendelést a vevő küldte.            |
+| storeaddress         | A rendelést küldő üzlet címe.              |
+| storeopenfrom        | A rendelést küldő üzlet nyitvatartási ideje.         |
+| storeopento          | A rendelést küldő üzlet zárási ideje.         |
+| pickupstorename      | Az üzlet neve, ahol a rendelést felveszik.     |
+| pickupstoreaddress   | Az üzlet címe, ahol a rendelést felveszik.  |
+| pickupopenstorefrom  | Az üzlet nyitvatartási ideje, ahol a rendelést felveszik. |
+| pickupopenstoreto    | Az üzlet zárási ideje, ahol a rendelést felveszik. |
 
 ### <a name="order-line-placeholders-sales-line-level"></a>Rendelési sor helyőrzői (értékesítési sor szintje)
 
@@ -169,11 +170,8 @@ Amikor az e-mail-üzenet törzsében létrehozza az egyes rendeléssorok HTML-j�
 
 A kiskereskedelmi pénztárnál (POS) vásárló vevőknek e-mailben elküldhető a nyugtájuk. Az e-mailben küldendő nyugta sablonjának létrehozási lépései általában megegyeznek a más tranzakciós események sablonjainak létrehozási lépéseivel. A következő változtatások azonban kötelezőek:
 
-- Az e-mail-sablon e-mail-azonosítójának **emailRecpt** értéknek kell lennie.
 - A nyugta szövegét a **%message%** helyőrzővel kell beilleszteni az e-mailbe. Ha biztosítani szeretné, hogy a nyugta törzse helyesen legyen megjelenítve, akkor a **%message%** helyőrzőt vegye körbe HTML **&lt;pre&gt;** és **&lt;/pre&gt;** címkékkel.
-- Az e-mail fejlécének és élőlábának HTML-jében lévő sortörések HTML **&lt;br /&gt;** címkékre alakulnak, így a nyugta törzse helyesen jelenik meg. Ha meg szeretné szüntetni a nyugták e-mailjeiben a nem kívánt függőleges helyet, távolítsa el a sortöréseket a HTML-fájl bármely olyan helyéről, ahol nem szükséges a függőleges hely.
-
-Az e-mail-nyugták konfigurálásával kapcsolatos további tudnivalókat lásd: [E-mail-nyugták beállítása](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-email-receipts).
+- A **%receiptid%** helyőrző a nyugtaazonosítónak megfelelő QR-kód vagy vonalkód megjelenítésekor használható. (A QR-kódokat és a vonalkódokat egy külső szolgáltatás generálja dinamikusan és biztosítja.) Ha további tájékoztatást szeretne kapni arról, hogyan jeleníthet meg QR-kódot vagy vonalkódot egy e-mailben küldött nyugtán, lásd: [QR-kód vagy vonalkód hozzáadása a tranzakciós és bevételezési e-mailekhez](add-qr-code-barcode-email.md).
 
 ## <a name="upload-the-email-html"></a>Az e-mail-HTML feltöltése
 

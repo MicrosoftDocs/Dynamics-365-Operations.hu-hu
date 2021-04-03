@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 10/21/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner, ERVendorTable
 audience: Application User, Developer, IT Pro
@@ -17,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 47bb8a2a9adab4ec963a1d0b95e783299aab3819
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 2a0cc308e2e3c7f42295a6170c4f709a835c5c84
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683016"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5566126"
 ---
 # <a name="customize-electronic-reporting-configurations-to-generate-an-electronic-document"></a>Elektronikus jelentéskészítési konfigurációk testreszabása elektronikus bizonylat előállításához
 
@@ -592,7 +591,7 @@ Az 206.2-es verzió állapota a **Piszkozat** értékről a **Befejezett** ért�
 
     Észreveheti, hogy a rendszer bizonyos új alap ütközéseket észlelt. Most manuálisan kell megoldania ezeket az ütközéseket.
 
-    ![Ütközési üzenet új alapja a konfigurációk lapon](./media/er-quick-start3-rebase-conflicts-model-mapping1.png)
+    ![Ütközési üzenet új alapja a konfigurációk oldalon](./media/er-quick-start3-rebase-conflicts-model-mapping1.png)
 
 5. A műveleti ablaktáblán válassza a **tervező** elemet, majd a hozzárendelések listáján válassza ki a **Vevői számlát**.
 6. Minden egyes új alap ütközésnél válassza a **saját érték megtartása** beállítást, mert minden említett összetevőnél meg kell őriznie az egyéni adatmodell verziószámát.

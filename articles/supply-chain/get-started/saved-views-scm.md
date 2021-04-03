@@ -16,14 +16,17 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 78cb1c5a90061af224fcd5933af81b6c5cd7e57d
-ms.sourcegitcommit: 5d62c53d84f2ec27136427acfd4314d055298a7b
+ms.openlocfilehash: 08002a1ff40c8baca475bc19a1220fe4c4b23bcd
+ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "5123468"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5500694"
 ---
 # <a name="standard-saved-views-for-supply-chain-management"></a>A Supply Chain Management szabványos mentett nézetei
+
+[!include [banner](../../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 A Microsoft Dynamics 365 Supply Chain Management számos mentett nézetet tartalmaz, amelyek a szükséges módon engedélyezhetők és használhatók. A szabványos mentett nézetek közül néhány egy konkrét szerepkörre vagy feladatra van optimalizálva vagy azok után van elnevezve (például „Minőség-ellenőrzés” vagy „Bevétel”). Mások optimalizálása úgy történik, hogy csak azokat a mezőket és beállításokat tartalmazzák, amelyekre a Microsoft használati statisztikája úgy utal mint a vevők által leggyakrabban használtakra. Ezeket a mentett nézeteket általában *egyszerűsített* nézeteknek is nevezik. Ez a témakör a rendelkezésre álló szabványos mentett nézeteket írja le, és bemutatja az ilyen nézetek engedélyezésének és testreszabásának menetét.
 

@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 12/12/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
@@ -18,12 +17,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 20203a342b2bead4eb211597f4b73bbf35477a03
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: b46e49ec3510c93383216fdffeca2793a9076872
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5115680"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5560459"
 ---
 # <a name="unified-product-experience"></a>Egységes terméktapasztalat
 
@@ -92,9 +91,13 @@ Mivel a termék SKU-ként képviselteti magát, az egyedi termékek, alaptermék
 
 Ha a kettős írás funkció engedélyezve van, a Finance and Operations modul alkalmazásai szinkronizálva lesznek a többi Dynamics 365 termékben a **Vázlat** állapotban. Az első azonos pénznemű árlistához lesznek hozzáadva. Más szóval a Dynamics 365 alkalmazás első árlistájához lesznek hozzáadva amely megfelel annak a jogi táblának a pénznemének, ahol a termék ki van adva a Finance and Operations-alkalmazásban. Ha a megadott pénznemhez nincs árlista, a program automatikusan létrehoz egy árlistát, és hozzárendeli a terméket. 
 
+A kettős írású beépülő modulok jelenlegi megvalósítása, amelyek az alapértelmezett árlistát társítják a Finance and Operations alkalmazáshoz társított pénznem kereséséhez, és az árlista betűrendes rendezésével megkeresik az első árlistát a vevői megállapodási alkalmazásban. Ha egy adott pénznemhez alapértelmezett árlistát szeretne beállítani, ha több árlistája van az adott pénznemnek, akkor frissítenie kell az árlista nevét olyan névre, amely a betűrendben korábbi, mint bármely más árlista ugyanarra a pénznemre.
+
 Alapértelmezés szerint a Finance and Operations-alkalmazások termékeit szinkronizálja a rendszer a többi Dynamics 365-alkalmazással **Vázlat** állapotban. Ha azt szeretné, hogy az **Aktív** állapotú termék szinkronizálva legyen, hogy például közvetlenül tudja használni az értékesítési rendelések árajánlataiban, akkor az alábbi beállítást kell választani: a **Rendszer > Adminisztráció > Rendszeradminisztráció > Rendszerbeállítások > Sales** lapon válassza a **Termékek létrehozása az aktív állapotban = igen** értéket. 
 
 A termékek szinkronizálásakor meg kell adnia az **Értékesítési egység** mező értékét a Finance and Operations alkalmazásban, mert az kötelező mező az Értékesítésben.
+
+A termékek Dynamics 365 Sales alkalmazásból való létrehozása nem támogatott a termékek kettős írású szinkronizálása során.
 
 A termékek szinkronizálása a Finance and Operations-alkalmazásokból a Dataverse felé történik. Ez azt jelenti, hogy a terméktábla oszlopaiban szereplő értékek módosíthatók a Dataverse szolgáltatásban, de ha a szinkronizálást aktiválják (ha egy termékoszlop módosul a Finance and Operations-alkalmazásban), akkor ez felülírja a Dataverse értékeit. 
 
