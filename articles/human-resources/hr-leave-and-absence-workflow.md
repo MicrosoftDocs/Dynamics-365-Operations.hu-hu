@@ -18,66 +18,71 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e1907ca9cc578737341e52f89453e3d6ae3d0bec
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: c2c2020c68c4aca3594a2532d32f968ab76f6b7b
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5115052"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5463310"
 ---
-# <a name="create-a-leave-request-workflow"></a><span data-ttu-id="fbbd7-103">Szabadságkérelem munkafolyamat létrehozása</span><span class="sxs-lookup"><span data-stu-id="fbbd7-103">Create a leave request workflow</span></span>
+# <a name="create-a-leave-request-workflow"></a><span data-ttu-id="057d0-103">Szabadságkérelem munkafolyamat létrehozása</span><span class="sxs-lookup"><span data-stu-id="057d0-103">Create a leave request workflow</span></span>
 
-<span data-ttu-id="fbbd7-104">Létrehozhat egy munkafolyamatot a Dynamics 365 Human Resources alkalmazásban a szabadságkérelmek egységes kezeléséhez.</span><span class="sxs-lookup"><span data-stu-id="fbbd7-104">You can create a workflow in Dynamics 365 Human Resources to consistently manage your leave and absence requests.</span></span> <span data-ttu-id="fbbd7-105">A **Szabadság és távollét** munkafolyamata lehetővé teszi:</span><span class="sxs-lookup"><span data-stu-id="fbbd7-105">A **Leave and absence** workflow lets you:</span></span>
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-- <span data-ttu-id="fbbd7-106">Feladatok definiálását</span><span class="sxs-lookup"><span data-stu-id="fbbd7-106">Define tasks</span></span>
-- <span data-ttu-id="fbbd7-107">Annak meghatározását, hogy kinek kell végrehajtania a feladatokat</span><span class="sxs-lookup"><span data-stu-id="fbbd7-107">Determine who must complete the tasks</span></span>
-- <span data-ttu-id="fbbd7-108">Annak megadását, hogy ki hagyhatja jóvá vagy utasíthatja el a kérelmeket</span><span class="sxs-lookup"><span data-stu-id="fbbd7-108">Specify who can approve or reject requests</span></span>
+<span data-ttu-id="057d0-104">Létrehozhat egy munkafolyamatot a Dynamics 365 Human Resources alkalmazásban a szabadságkérelmek egységes kezeléséhez.</span><span class="sxs-lookup"><span data-stu-id="057d0-104">You can create a workflow in Dynamics 365 Human Resources to consistently manage your leave and absence requests.</span></span> <span data-ttu-id="057d0-105">A **Szabadság és távollét** munkafolyamata lehetővé teszi:</span><span class="sxs-lookup"><span data-stu-id="057d0-105">A **Leave and absence** workflow lets you:</span></span>
 
-## <a name="create-a-leave-and-absence-request-workflow"></a><span data-ttu-id="fbbd7-109">Szabadság- és távolléti kérelem munkafolyamat létrehozása</span><span class="sxs-lookup"><span data-stu-id="fbbd7-109">Create a Leave and absence request workflow</span></span>
+- <span data-ttu-id="057d0-106">Feladatok definiálását</span><span class="sxs-lookup"><span data-stu-id="057d0-106">Define tasks</span></span>
+- <span data-ttu-id="057d0-107">Annak meghatározását, hogy kinek kell végrehajtania a feladatokat</span><span class="sxs-lookup"><span data-stu-id="057d0-107">Determine who must complete the tasks</span></span>
+- <span data-ttu-id="057d0-108">Annak megadását, hogy ki hagyhatja jóvá vagy utasíthatja el a kérelmeket</span><span class="sxs-lookup"><span data-stu-id="057d0-108">Specify who can approve or reject requests</span></span>
 
-1. <span data-ttu-id="fbbd7-110">A **Szabadság és távollét** oldalon válassza a **Hivatkozások** lapot.</span><span class="sxs-lookup"><span data-stu-id="fbbd7-110">On the **Leave and absence** page, select the **Links** tab.</span></span>
+## <a name="create-a-leave-and-absence-request-workflow"></a><span data-ttu-id="057d0-109">Szabadság- és távolléti kérelem munkafolyamat létrehozása</span><span class="sxs-lookup"><span data-stu-id="057d0-109">Create a Leave and absence request workflow</span></span>
 
-2. <span data-ttu-id="fbbd7-111">A **Beállítás** alatt válassza az **Emberi erőforrás munkafolyamatok** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="fbbd7-111">Under **Setup**, select **Human resource workflows**.</span></span>
+1. <span data-ttu-id="057d0-110">A **Szabadság és távollét** oldalon válassza a **Hivatkozások** lapot.</span><span class="sxs-lookup"><span data-stu-id="057d0-110">On the **Leave and absence** page, select the **Links** tab.</span></span>
 
-3. <span data-ttu-id="fbbd7-112">Válassza az **Új** lehetőséget, majd válassza a **Szabadság- és távollétkérelem** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="fbbd7-112">Select **New**, and then select **Leave and absence request**.</span></span> 
+2. <span data-ttu-id="057d0-111">A **Beállítás** alatt válassza az **Emberi erőforrás munkafolyamatok** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="057d0-111">Under **Setup**, select **Human resource workflows**.</span></span>
 
-4. <span data-ttu-id="fbbd7-113">Amikor megjelenik a **Megnyitja ezt a fájlt?** üzenetmező, vákasza a **Megnyitás** lehetőséget, és jelentkezzen be a vállalati hitelesítő adataival.</span><span class="sxs-lookup"><span data-stu-id="fbbd7-113">When the **Open this file?** message box appears, select **Open** and sign in with your company credentials.</span></span>
+3. <span data-ttu-id="057d0-112">Válassza az **Új** lehetőséget, majd válassza a **Szabadság- és távollétkérelem** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="057d0-112">Select **New**, and then select **Leave and absence request**.</span></span> 
 
-5. <span data-ttu-id="fbbd7-114">A munkafolyamat-szerkesztővel hozzon létre egy munkafolyamatot a szabadságkérelmekhez.</span><span class="sxs-lookup"><span data-stu-id="fbbd7-114">Use the workflow editor to create a workflow for your leave requests.</span></span> <span data-ttu-id="fbbd7-115">További tájékoztatás a munkafolyamatok használatáról: [Munkafolyamatok létrehozása – áttekintés](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/create-workflow?toc=/dynamics365/commerce/toc.json.)</span><span class="sxs-lookup"><span data-stu-id="fbbd7-115">For more information about working with workflows, see [Create workflows overview](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/create-workflow?toc=/dynamics365/commerce/toc.json.)</span></span>
+4. <span data-ttu-id="057d0-113">Amikor megjelenik a **Megnyitja ezt a fájlt?** üzenetmező, vákasza a **Megnyitás** lehetőséget, és jelentkezzen be a vállalati hitelesítő adataival.</span><span class="sxs-lookup"><span data-stu-id="057d0-113">When the **Open this file?** message box appears, select **Open** and sign in with your company credentials.</span></span>
 
-## <a name="leave-and-absence-request-workflow-data-elements"></a><span data-ttu-id="fbbd7-116">Szabadság- és távolléti kérelem munkafolyamatának adatelemei</span><span class="sxs-lookup"><span data-stu-id="fbbd7-116">Leave and absence request workflow data elements</span></span>
+5. <span data-ttu-id="057d0-114">A munkafolyamat-szerkesztővel hozzon létre egy munkafolyamatot a szabadságkérelmekhez.</span><span class="sxs-lookup"><span data-stu-id="057d0-114">Use the workflow editor to create a workflow for your leave requests.</span></span> <span data-ttu-id="057d0-115">További tájékoztatás a munkafolyamatok használatáról: [Munkafolyamatok létrehozása – áttekintés](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/create-workflow?toc=/dynamics365/commerce/toc.json.)</span><span class="sxs-lookup"><span data-stu-id="057d0-115">For more information about working with workflows, see [Create workflows overview](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/create-workflow?toc=/dynamics365/commerce/toc.json.)</span></span>
 
-<span data-ttu-id="fbbd7-117">A következő adatelemek segítségével feltételes vagy automatikus jóváhagyásokat hozhat létre a munkafolyamatokban a szabadság- és a távolléti kérelmekhez:</span><span class="sxs-lookup"><span data-stu-id="fbbd7-117">You can use the following data elements to create conditional or automatic approvals in workflows for leave and absence requests:</span></span>
+## <a name="leave-and-absence-request-workflow-data-elements"></a><span data-ttu-id="057d0-116">Szabadság- és távolléti kérelem munkafolyamatának adatelemei</span><span class="sxs-lookup"><span data-stu-id="057d0-116">Leave and absence request workflow data elements</span></span>
 
-- <span data-ttu-id="fbbd7-118">**Összeg**</span><span class="sxs-lookup"><span data-stu-id="fbbd7-118">**Amount**</span></span>
-- <span data-ttu-id="fbbd7-119">**Megjegyzés**</span><span class="sxs-lookup"><span data-stu-id="fbbd7-119">**Comment**</span></span>
-- <span data-ttu-id="fbbd7-120">**Cég**</span><span class="sxs-lookup"><span data-stu-id="fbbd7-120">**Company**</span></span>
-- <span data-ttu-id="fbbd7-121">**Létrehozta:**</span><span class="sxs-lookup"><span data-stu-id="fbbd7-121">**Created by**</span></span>
-- <span data-ttu-id="fbbd7-122">**Létrehozás dátuma és időpontja**</span><span class="sxs-lookup"><span data-stu-id="fbbd7-122">**Created date and time**</span></span>
-- <span data-ttu-id="fbbd7-123">**Befejezés**</span><span class="sxs-lookup"><span data-stu-id="fbbd7-123">**End date**</span></span>
-- <span data-ttu-id="fbbd7-124">**Szabadság típusa**</span><span class="sxs-lookup"><span data-stu-id="fbbd7-124">**Leave type**</span></span>
-- <span data-ttu-id="fbbd7-125">**Módosította:**</span><span class="sxs-lookup"><span data-stu-id="fbbd7-125">**Modified by**</span></span>
-- <span data-ttu-id="fbbd7-126">**Módosítás dátuma és időpontja**</span><span class="sxs-lookup"><span data-stu-id="fbbd7-126">**Modified date and time**</span></span>
-- <span data-ttu-id="fbbd7-127">**Okkód**</span><span class="sxs-lookup"><span data-stu-id="fbbd7-127">**Reason code**</span></span>
-- <span data-ttu-id="fbbd7-128">**Kérelemazonosító**</span><span class="sxs-lookup"><span data-stu-id="fbbd7-128">**Request ID**</span></span>
-- <span data-ttu-id="fbbd7-129">**Kezdés dátuma**</span><span class="sxs-lookup"><span data-stu-id="fbbd7-129">**Start date**</span></span>
-- <span data-ttu-id="fbbd7-130">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="fbbd7-130">**Status**</span></span> 
-- <span data-ttu-id="fbbd7-131">**Küldés dátuma**</span><span class="sxs-lookup"><span data-stu-id="fbbd7-131">**Submission date**</span></span>
-- <span data-ttu-id="fbbd7-132">**Beküldte:**</span><span class="sxs-lookup"><span data-stu-id="fbbd7-132">**Submitted by**</span></span>
-- <span data-ttu-id="fbbd7-133">**Elküldve az Emberi erőforrások által**</span><span class="sxs-lookup"><span data-stu-id="fbbd7-133">**Submitted by Human resources**</span></span>
-- <span data-ttu-id="fbbd7-134">**Beküldve a vezető által**</span><span class="sxs-lookup"><span data-stu-id="fbbd7-134">**Submitted by Manager**</span></span>
-- <span data-ttu-id="fbbd7-135">**Beküldve a következő nevében**</span><span class="sxs-lookup"><span data-stu-id="fbbd7-135">**Submitted on behalf**</span></span>
-- <span data-ttu-id="fbbd7-136">**Dolgozó**</span><span class="sxs-lookup"><span data-stu-id="fbbd7-136">**Worker**</span></span>
-- <span data-ttu-id="fbbd7-137">**Dolgozó típusa**</span><span class="sxs-lookup"><span data-stu-id="fbbd7-137">**Worker type**</span></span>
+<span data-ttu-id="057d0-117">A következő adatelemek segítségével feltételes vagy automatikus jóváhagyásokat hozhat létre a munkafolyamatokban a szabadság- és a távolléti kérelmekhez:</span><span class="sxs-lookup"><span data-stu-id="057d0-117">You can use the following data elements to create conditional or automatic approvals in workflows for leave and absence requests:</span></span>
 
-<span data-ttu-id="fbbd7-138">Ezek a példák azt mutatják be, hogyan lehet különböző típusú munkafolyamat-feltételeket létrehozni a következő adatelemek segítségével:</span><span class="sxs-lookup"><span data-stu-id="fbbd7-138">These examples show how you can create different types of workflow conditions by using these data elements:</span></span>
+- <span data-ttu-id="057d0-118">**Összeg**</span><span class="sxs-lookup"><span data-stu-id="057d0-118">**Amount**</span></span>
+- <span data-ttu-id="057d0-119">**Megjegyzés**</span><span class="sxs-lookup"><span data-stu-id="057d0-119">**Comment**</span></span>
+- <span data-ttu-id="057d0-120">**Cég**</span><span class="sxs-lookup"><span data-stu-id="057d0-120">**Company**</span></span>
+- <span data-ttu-id="057d0-121">**Létrehozta:**</span><span class="sxs-lookup"><span data-stu-id="057d0-121">**Created by**</span></span>
+- <span data-ttu-id="057d0-122">**Létrehozás dátuma és időpontja**</span><span class="sxs-lookup"><span data-stu-id="057d0-122">**Created date and time**</span></span>
+- <span data-ttu-id="057d0-123">**Befejezés**</span><span class="sxs-lookup"><span data-stu-id="057d0-123">**End date**</span></span>
+- <span data-ttu-id="057d0-124">**Szabadság típusa**</span><span class="sxs-lookup"><span data-stu-id="057d0-124">**Leave type**</span></span>
+- <span data-ttu-id="057d0-125">**Módosította:**</span><span class="sxs-lookup"><span data-stu-id="057d0-125">**Modified by**</span></span>
+- <span data-ttu-id="057d0-126">**Módosítás dátuma és időpontja**</span><span class="sxs-lookup"><span data-stu-id="057d0-126">**Modified date and time**</span></span>
+- <span data-ttu-id="057d0-127">**Okkód**</span><span class="sxs-lookup"><span data-stu-id="057d0-127">**Reason code**</span></span>
+- <span data-ttu-id="057d0-128">**Kérelemazonosító**</span><span class="sxs-lookup"><span data-stu-id="057d0-128">**Request ID**</span></span>
+- <span data-ttu-id="057d0-129">**Kezdés dátuma**</span><span class="sxs-lookup"><span data-stu-id="057d0-129">**Start date**</span></span>
+- <span data-ttu-id="057d0-130">**Állapot**</span><span class="sxs-lookup"><span data-stu-id="057d0-130">**Status**</span></span> 
+- <span data-ttu-id="057d0-131">**Küldés dátuma**</span><span class="sxs-lookup"><span data-stu-id="057d0-131">**Submission date**</span></span>
+- <span data-ttu-id="057d0-132">**Beküldte:**</span><span class="sxs-lookup"><span data-stu-id="057d0-132">**Submitted by**</span></span>
+- <span data-ttu-id="057d0-133">**Elküldve az Emberi erőforrások által**</span><span class="sxs-lookup"><span data-stu-id="057d0-133">**Submitted by Human resources**</span></span>
+- <span data-ttu-id="057d0-134">**Beküldve a vezető által**</span><span class="sxs-lookup"><span data-stu-id="057d0-134">**Submitted by Manager**</span></span>
+- <span data-ttu-id="057d0-135">**Beküldve a következő nevében**</span><span class="sxs-lookup"><span data-stu-id="057d0-135">**Submitted on behalf**</span></span>
+- <span data-ttu-id="057d0-136">**Dolgozó**</span><span class="sxs-lookup"><span data-stu-id="057d0-136">**Worker**</span></span>
+- <span data-ttu-id="057d0-137">**Dolgozó típusa**</span><span class="sxs-lookup"><span data-stu-id="057d0-137">**Worker type**</span></span>
 
-- <span data-ttu-id="fbbd7-139">Az **Okkód** feltételes állításban történő használata a betegszabadság-kérelmek átirányításához a **Műtét** okkóddal a HR számára, míg az összes többi okkód átirányítása a vezetőhöz.</span><span class="sxs-lookup"><span data-stu-id="fbbd7-139">Use **Reason code** in a conditional statement to route sick leave requests with the reason code **Surgery** to HR for approval, while routing all other reason codes to the manager.</span></span> <span data-ttu-id="fbbd7-140">A feltételes állításokkal kapcsolatos további tudnivalókat lásd: [Feltételes döntések konfigurálása egy munkafolyamatban](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-conditional-decision-workflow).</span><span class="sxs-lookup"><span data-stu-id="fbbd7-140">For more information about conditional statements, see [Configure conditional decisions in a workflow](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-conditional-decision-workflow).</span></span> 
+<span data-ttu-id="057d0-138">Ezek a példák azt mutatják be, hogyan lehet különböző típusú munkafolyamat-feltételeket létrehozni a következő adatelemek segítségével:</span><span class="sxs-lookup"><span data-stu-id="057d0-138">These examples show how you can create different types of workflow conditions by using these data elements:</span></span>
 
-- <span data-ttu-id="fbbd7-141">Az **Emberi erőforrások által elküldött** és a **Vezető által beküldött** elemek használata egy automatikus műveletben a szabadságkérelmek automatikus jóváhagyásához, amelyeket ezek a szerepkörök küldtek be a munkavállalók nevében.</span><span class="sxs-lookup"><span data-stu-id="fbbd7-141">Use **Submitted by Human resources** and **Submitted by manager** in an automatic action to automatically approve leave requests that these roles submit on behalf of employees.</span></span> <span data-ttu-id="fbbd7-142">Az automatikus műveletekkel kapcsolatos további tudnivalókat lásd: [Jóváhagyási folyamatok konfigurálása munkafolyamatokban](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow).</span><span class="sxs-lookup"><span data-stu-id="fbbd7-142">For more information about automatic actions, see [Configure approval processes in a workflow](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow).</span></span>
+- <span data-ttu-id="057d0-139">Az **Okkód** feltételes állításban történő használata a betegszabadság-kérelmek átirányításához a **Műtét** okkóddal a HR számára, míg az összes többi okkód átirányítása a vezetőhöz.</span><span class="sxs-lookup"><span data-stu-id="057d0-139">Use **Reason code** in a conditional statement to route sick leave requests with the reason code **Surgery** to HR for approval, while routing all other reason codes to the manager.</span></span> <span data-ttu-id="057d0-140">A feltételes állításokkal kapcsolatos további tudnivalókat lásd: [Feltételes döntések konfigurálása egy munkafolyamatban](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-conditional-decision-workflow).</span><span class="sxs-lookup"><span data-stu-id="057d0-140">For more information about conditional statements, see [Configure conditional decisions in a workflow](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-conditional-decision-workflow).</span></span> 
 
-- <span data-ttu-id="fbbd7-143">A **Szabadságtípus** használata feltételes állításban vagy automatikus műveletben, annak meghatározásához, hogy a munkafolyamat hogyan irányítsa át az egyes szabadságtípusokat tartalmazó szabadságkérelmeket.</span><span class="sxs-lookup"><span data-stu-id="fbbd7-143">Use **Leave type** in a conditional statement or automatic action to control how the workflow routes requests with certain leave types.</span></span>
+- <span data-ttu-id="057d0-141">Az **Emberi erőforrások által elküldött** és a **Vezető által beküldött** elemek használata egy automatikus műveletben a szabadságkérelmek automatikus jóváhagyásához, amelyeket ezek a szerepkörök küldtek be a munkavállalók nevében.</span><span class="sxs-lookup"><span data-stu-id="057d0-141">Use **Submitted by Human resources** and **Submitted by manager** in an automatic action to automatically approve leave requests that these roles submit on behalf of employees.</span></span> <span data-ttu-id="057d0-142">Az automatikus műveletekkel kapcsolatos további tudnivalókat lásd: [Jóváhagyási folyamatok konfigurálása munkafolyamatokban](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow).</span><span class="sxs-lookup"><span data-stu-id="057d0-142">For more information about automatic actions, see [Configure approval processes in a workflow](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow).</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="fbbd7-144">Lásd még</span><span class="sxs-lookup"><span data-stu-id="fbbd7-144">See also</span></span>
+- <span data-ttu-id="057d0-143">A **Szabadságtípus** használata feltételes állításban vagy automatikus műveletben, annak meghatározásához, hogy a munkafolyamat hogyan irányítsa át az egyes szabadságtípusokat tartalmazó szabadságkérelmeket.</span><span class="sxs-lookup"><span data-stu-id="057d0-143">Use **Leave type** in a conditional statement or automatic action to control how the workflow routes requests with certain leave types.</span></span>
 
-- [<span data-ttu-id="fbbd7-145">Szabadság és távollét áttekintése</span><span class="sxs-lookup"><span data-stu-id="fbbd7-145">Leave and absence overview</span></span>](hr-leave-and-absence-overview.md)
+## <a name="see-also"></a><span data-ttu-id="057d0-144">Lásd még</span><span class="sxs-lookup"><span data-stu-id="057d0-144">See also</span></span>
+
+- [<span data-ttu-id="057d0-145">Szabadság és távollét áttekintése</span><span class="sxs-lookup"><span data-stu-id="057d0-145">Leave and absence overview</span></span>](hr-leave-and-absence-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

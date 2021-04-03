@@ -18,40 +18,45 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: d34551e4a3cc08ce3fe47e8f8fd2c3cc68c0daf7
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: 5517ee621f1c41b6348dc965e8846d677aa1bb56
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5130133"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5464814"
 ---
-# <a name="manage-items-that-are-lent-to-workers"></a><span data-ttu-id="621c6-103">Dolgozóknak kölcsönzött cikkek kezelése</span><span class="sxs-lookup"><span data-stu-id="621c6-103">Manage items that are lent to workers</span></span>
+# <a name="manage-items-that-are-lent-to-workers"></a><span data-ttu-id="ede5d-103">Dolgozóknak kölcsönzött cikkek kezelése</span><span class="sxs-lookup"><span data-stu-id="ede5d-103">Manage items that are lent to workers</span></span>
 
-<span data-ttu-id="621c6-104">A kölcsöncikkek olyan rekordok, amelyek segítik a menedzsert a cég által a munkavállalók számára kölcsönadott tényleges cikkkek követésében.</span><span class="sxs-lookup"><span data-stu-id="621c6-104">Loan items are records that help managers track the physical items that your company lends to its workers.</span></span> 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-<span data-ttu-id="621c6-105">A következő szempontok olyan elemek példáit sorolja fel, amelyeket a vállalat kölcsönözhet a munkavállalóknak:</span><span class="sxs-lookup"><span data-stu-id="621c6-105">The following points list examples of items that a company might lend to workers:</span></span>
--   <span data-ttu-id="621c6-106">Mobiltelefonok</span><span class="sxs-lookup"><span data-stu-id="621c6-106">Mobile telephones</span></span>
--   <span data-ttu-id="621c6-107">Gépjárművek</span><span class="sxs-lookup"><span data-stu-id="621c6-107">Automobiles</span></span>
--   <span data-ttu-id="621c6-108">Számítógépes eszközök</span><span class="sxs-lookup"><span data-stu-id="621c6-108">Computer equipment</span></span>
+<span data-ttu-id="ede5d-104">A kölcsöncikkek olyan rekordok, amelyek segítik a menedzsert a cég által a munkavállalók számára kölcsönadott tényleges cikkkek követésében.</span><span class="sxs-lookup"><span data-stu-id="ede5d-104">Loan items are records that help managers track the physical items that your company lends to its workers.</span></span> 
 
-<span data-ttu-id="621c6-109">Minden fizikai cikknek rendelkeznie kell egy megfelelő kölcsöncikkel.</span><span class="sxs-lookup"><span data-stu-id="621c6-109">Each physical item must have a corresponding loan item.</span></span> <span data-ttu-id="621c6-110">Minden kölcsöntétel rekordnak le kell írni a kölcsönzött tételt, meg kell adni a kölcsönzésért felelős személyt, és a tétel kölcsönzési idejét.</span><span class="sxs-lookup"><span data-stu-id="621c6-110">Each loan item record should describe what is being loaned, who is responsible for the loan, and the number of days the item can loaned to a worker.</span></span> <span data-ttu-id="621c6-111">Ezzel egy időben több kölcsöncikkek hozhatók létre cikkekhez, mint például kulcsokhoz, belépőkártyákhoz vagy egyenruhákhoz.</span><span class="sxs-lookup"><span data-stu-id="621c6-111">You can create multiple loan items, for items such as keys, access cards or uniforms, at the same time.</span></span> 
+<span data-ttu-id="ede5d-105">A következő szempontok olyan elemek példáit sorolja fel, amelyeket a vállalat kölcsönözhet a munkavállalóknak:</span><span class="sxs-lookup"><span data-stu-id="ede5d-105">The following points list examples of items that a company might lend to workers:</span></span>
+-   <span data-ttu-id="ede5d-106">Mobiltelefonok</span><span class="sxs-lookup"><span data-stu-id="ede5d-106">Mobile telephones</span></span>
+-   <span data-ttu-id="ede5d-107">Gépjárművek</span><span class="sxs-lookup"><span data-stu-id="ede5d-107">Automobiles</span></span>
+-   <span data-ttu-id="ede5d-108">Számítógépes eszközök</span><span class="sxs-lookup"><span data-stu-id="ede5d-108">Computer equipment</span></span>
 
-<span data-ttu-id="621c6-112">Tétel kölcsönzése esetén jegyezze fel a tétel kölcsönzésének az időpontját és a visszaadás tervezett időpontját.</span><span class="sxs-lookup"><span data-stu-id="621c6-112">When loaning an item, enter the date that the item was loaned, and the planned return date.</span></span> <span data-ttu-id="621c6-113">Ha a cikk visszaérkezett, adja meg a tényleges visszaadási időpontot is.</span><span class="sxs-lookup"><span data-stu-id="621c6-113">When the item is returned, enter the actual return date.</span></span>
+<span data-ttu-id="ede5d-109">Minden fizikai cikknek rendelkeznie kell egy megfelelő kölcsöncikkel.</span><span class="sxs-lookup"><span data-stu-id="ede5d-109">Each physical item must have a corresponding loan item.</span></span> <span data-ttu-id="ede5d-110">Minden kölcsöntétel rekordnak le kell írni a kölcsönzött tételt, meg kell adni a kölcsönzésért felelős személyt, és a tétel kölcsönzési idejét.</span><span class="sxs-lookup"><span data-stu-id="ede5d-110">Each loan item record should describe what is being loaned, who is responsible for the loan, and the number of days the item can loaned to a worker.</span></span> <span data-ttu-id="ede5d-111">Ezzel egy időben több kölcsöncikkek hozhatók létre cikkekhez, mint például kulcsokhoz, belépőkártyákhoz vagy egyenruhákhoz.</span><span class="sxs-lookup"><span data-stu-id="ede5d-111">You can create multiple loan items, for items such as keys, access cards or uniforms, at the same time.</span></span> 
 
-<span data-ttu-id="621c6-114">Az alkalmazottak az Alkalmazott önkiszolgáló munkaterület segítségével tekinthetik meg a kölcsönadott cikkek rekordjait.</span><span class="sxs-lookup"><span data-stu-id="621c6-114">Employees can view the records of the items that have been loaned to them using the Employee self-service workspace.</span></span> <span data-ttu-id="621c6-115">Szerkeszthetik is a meglévő rekordokat vagy megadhatnak új kölcsöncikkeket, ha már kaptak további tényleges cikkeket.</span><span class="sxs-lookup"><span data-stu-id="621c6-115">They can also edit the existing records or enter new loan items, if they've received additional physical items.</span></span>  <span data-ttu-id="621c6-116">A munkafolyamatot be lehet állítani úgy, hogy a változtatásokat irányítsa új vagy már meglévő kölcsöncikkekhez egy jóváhagyási folyamaton keresztül.</span><span class="sxs-lookup"><span data-stu-id="621c6-116">Workflow can be set up to route changes to new or existing loan items through an approval process.</span></span> 
+<span data-ttu-id="ede5d-112">Tétel kölcsönzése esetén jegyezze fel a tétel kölcsönzésének az időpontját és a visszaadás tervezett időpontját.</span><span class="sxs-lookup"><span data-stu-id="ede5d-112">When loaning an item, enter the date that the item was loaned, and the planned return date.</span></span> <span data-ttu-id="ede5d-113">Ha a cikk visszaérkezett, adja meg a tényleges visszaadási időpontot is.</span><span class="sxs-lookup"><span data-stu-id="ede5d-113">When the item is returned, enter the actual return date.</span></span>
 
-<span data-ttu-id="621c6-117">A vezetők megtekinthetik a közvetlen jelentések közvetlen cikkeit.</span><span class="sxs-lookup"><span data-stu-id="621c6-117">Managers can view loaned items for their direct reports.</span></span> <span data-ttu-id="621c6-118">Megkaphatják az engedélyt új kölcsön cikkek hozzáadására az alkalmazottaik nevében.</span><span class="sxs-lookup"><span data-stu-id="621c6-118">They can also be granted permission to add new loan items on behalf of their employees.</span></span>
+<span data-ttu-id="ede5d-114">Az alkalmazottak az Alkalmazott önkiszolgáló munkaterület segítségével tekinthetik meg a kölcsönadott cikkek rekordjait.</span><span class="sxs-lookup"><span data-stu-id="ede5d-114">Employees can view the records of the items that have been loaned to them using the Employee self-service workspace.</span></span> <span data-ttu-id="ede5d-115">Szerkeszthetik is a meglévő rekordokat vagy megadhatnak új kölcsöncikkeket, ha már kaptak további tényleges cikkeket.</span><span class="sxs-lookup"><span data-stu-id="ede5d-115">They can also edit the existing records or enter new loan items, if they've received additional physical items.</span></span>  <span data-ttu-id="ede5d-116">A munkafolyamatot be lehet állítani úgy, hogy a változtatásokat irányítsa új vagy már meglévő kölcsöncikkekhez egy jóváhagyási folyamaton keresztül.</span><span class="sxs-lookup"><span data-stu-id="ede5d-116">Workflow can be set up to route changes to new or existing loan items through an approval process.</span></span> 
 
- <a name="account-for-lost-or-misplaced-loan-items"></a><span data-ttu-id="621c6-119"> Elveszett vagy rossz helyre tett kölcsöncikkek számlája</span><span class="sxs-lookup"><span data-stu-id="621c6-119">Account for lost or misplaced loan items</span></span>
+<span data-ttu-id="ede5d-117">A vezetők megtekinthetik a közvetlen jelentések közvetlen cikkeit.</span><span class="sxs-lookup"><span data-stu-id="ede5d-117">Managers can view loaned items for their direct reports.</span></span> <span data-ttu-id="ede5d-118">Megkaphatják az engedélyt új kölcsön cikkek hozzáadására az alkalmazottaik nevében.</span><span class="sxs-lookup"><span data-stu-id="ede5d-118">They can also be granted permission to add new loan items on behalf of their employees.</span></span>
+
+ <a name="account-for-lost-or-misplaced-loan-items"></a><span data-ttu-id="ede5d-119"> Elveszett vagy rossz helyre tett kölcsöncikkek számlája</span><span class="sxs-lookup"><span data-stu-id="ede5d-119">Account for lost or misplaced loan items</span></span>
 -----------------------------------------
 
-<span data-ttu-id="621c6-120">Ha egy tétel megsérül vagy rossz helyre kerül, adjon meg egy fiktív visszaadási rekordot.</span><span class="sxs-lookup"><span data-stu-id="621c6-120">If an item becomes damaged or misplaced, enter a fictitious return record.</span></span> <span data-ttu-id="621c6-121">Ezután vagy törölje a cikket, vagy tartsa meg az áttekintésben, de a leírásában jelezze, hogy nem áll rendelkezésre.</span><span class="sxs-lookup"><span data-stu-id="621c6-121">Then either delete the item or keep it in the overview and change the description to indicate that the item is not available.</span></span>
+<span data-ttu-id="ede5d-120">Ha egy tétel megsérül vagy rossz helyre kerül, adjon meg egy fiktív visszaadási rekordot.</span><span class="sxs-lookup"><span data-stu-id="ede5d-120">If an item becomes damaged or misplaced, enter a fictitious return record.</span></span> <span data-ttu-id="ede5d-121">Ezután vagy törölje a cikket, vagy tartsa meg az áttekintésben, de a leírásában jelezze, hogy nem áll rendelkezésre.</span><span class="sxs-lookup"><span data-stu-id="ede5d-121">Then either delete the item or keep it in the overview and change the description to indicate that the item is not available.</span></span>
 
 
-<a name="additional-resources"></a><span data-ttu-id="621c6-122">További erőforrások</span><span class="sxs-lookup"><span data-stu-id="621c6-122">Additional resources</span></span>
+<a name="additional-resources"></a><span data-ttu-id="ede5d-122">További erőforrások</span><span class="sxs-lookup"><span data-stu-id="ede5d-122">Additional resources</span></span>
 --------
 
-[<span data-ttu-id="621c6-123">Emberi erőforrások</span><span class="sxs-lookup"><span data-stu-id="621c6-123">Human resources</span></span>](index.md)
+[<span data-ttu-id="ede5d-123">Emberi erőforrások</span><span class="sxs-lookup"><span data-stu-id="ede5d-123">Human resources</span></span>](index.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
