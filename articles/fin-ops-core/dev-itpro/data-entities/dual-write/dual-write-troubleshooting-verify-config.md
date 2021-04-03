@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 03/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
@@ -18,14 +17,14 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 361d6555b60e02832c337b6f416b2b3627b6d365
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: 0a1da32713f3d4d19b4d343c5b67b416a6c4ffbb
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5129307"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5566765"
 ---
-# <a name="verify-dual-write-configuration-in-finance-and-operations-apps-and-dataverse"></a><span data-ttu-id="92f67-103">Ellenőrizze a kettős írás konfigurálását a Finance and Operations alkalmazások és a Dataverse esetében</span><span class="sxs-lookup"><span data-stu-id="92f67-103">Verify dual-write configuration in Finance and Operations apps and Dataverse</span></span>
+# <a name="verify-dual-write-configuration-in-finance-and-operations-apps-and-dataverse"></a><span data-ttu-id="7877c-103">Ellenőrizze a kettős írás konfigurálását a Finance and Operations alkalmazások és a Dataverse esetében</span><span class="sxs-lookup"><span data-stu-id="7877c-103">Verify dual-write configuration in Finance and Operations apps and Dataverse</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
@@ -33,28 +32,31 @@ ms.locfileid: "5129307"
 
 
 
-<span data-ttu-id="92f67-104">Ez a cikk a Finance and Operations és a Dataverse alkalmazások közötti kettős írású adatintegrációk során felmerülő hibák elhárításával kapcsolatos információkat tartalmaz.</span><span class="sxs-lookup"><span data-stu-id="92f67-104">This topic provides troubleshooting information for dual-write integration between Finance and Operations apps and Dataverse.</span></span> <span data-ttu-id="92f67-105">Pontosan elmagyarázza, hogyan lehet meghatározni, hogy a kettős írás konfigurálva van-e a Finance and Operations alkalmazásokban és a Dataverse szolgáltatásban.</span><span class="sxs-lookup"><span data-stu-id="92f67-105">Specifically, it explains how you can determine whether dual-write is configured in Finance and Operations apps and in Dataverse.</span></span>
+<span data-ttu-id="7877c-104">Ez a cikk a Finance and Operations és a Dataverse alkalmazások közötti kettős írású adatintegrációk során felmerülő hibák elhárításával kapcsolatos információkat tartalmaz.</span><span class="sxs-lookup"><span data-stu-id="7877c-104">This topic provides troubleshooting information for dual-write integration between Finance and Operations apps and Dataverse.</span></span> <span data-ttu-id="7877c-105">Pontosan elmagyarázza, hogyan lehet meghatározni, hogy a kettős írás konfigurálva van-e a Finance and Operations alkalmazásokban és a Dataverse szolgáltatásban.</span><span class="sxs-lookup"><span data-stu-id="7877c-105">Specifically, it explains how you can determine whether dual-write is configured in Finance and Operations apps and in Dataverse.</span></span>
 
-## <a name="verify-that-dual-write-is-configured-in-a-finance-and-operations-app"></a><span data-ttu-id="92f67-106">Annak ellenőrzése hogy a kettős írás be van-e állítva a Finance and Operations alkalmazásban</span><span class="sxs-lookup"><span data-stu-id="92f67-106">Verify that dual-write is configured in a Finance and Operations app</span></span>
+## <a name="verify-that-dual-write-is-configured-in-a-finance-and-operations-app"></a><span data-ttu-id="7877c-106">Annak ellenőrzése hogy a kettős írás be van-e állítva a Finance and Operations alkalmazásban</span><span class="sxs-lookup"><span data-stu-id="7877c-106">Verify that dual-write is configured in a Finance and Operations app</span></span>
 
-<span data-ttu-id="92f67-107">Annak eldöntéséhez, hogy a sorok frissítésre való mentéskor megjelenő hibák a kettős írásból származnak-e, először ellenőrizze, hogy a kettős írás konfigurálva van-e.</span><span class="sxs-lookup"><span data-stu-id="92f67-107">To determine whether the errors that you see when you try to save rows for update come from dual-write, first verify that dual-write is configured.</span></span>
+<span data-ttu-id="7877c-107">Annak eldöntéséhez, hogy a sorok frissítésre való mentéskor megjelenő hibák a kettős írásból származnak-e, először ellenőrizze, hogy a kettős írás konfigurálva van-e.</span><span class="sxs-lookup"><span data-stu-id="7877c-107">To determine whether the errors that you see when you try to save rows for update come from dual-write, first verify that dual-write is configured.</span></span>
 
-+ <span data-ttu-id="92f67-108">Ha Finance and Operations alkalmazásban rendszergazdai jogosultságokkal rendelkezik nyissa meg a **Munkaterületek \> Adatkezelés** modulját, és válassza ki a **Kettős írás** csempét.</span><span class="sxs-lookup"><span data-stu-id="92f67-108">If you have admin privileges in the Finance and Operations app, go to **Workspaces \> Data management**, and select the **Dual-write** tile.</span></span> <span data-ttu-id="92f67-109">Ha megjelenik a csatolt környezetek részletei és a futó táblaleképezések listája, akkor a kettős írás konfigurálva van.</span><span class="sxs-lookup"><span data-stu-id="92f67-109">If the details of the linked environments and the list of table maps that are running are shown, dual-write is configured.</span></span>
++ <span data-ttu-id="7877c-108">Ha Finance and Operations alkalmazásban rendszergazdai jogosultságokkal rendelkezik nyissa meg a **Munkaterületek \> Adatkezelés** modulját, és válassza ki a **Kettős írás** csempét.</span><span class="sxs-lookup"><span data-stu-id="7877c-108">If you have admin privileges in the Finance and Operations app, go to **Workspaces \> Data management**, and select the **Dual-write** tile.</span></span> <span data-ttu-id="7877c-109">Ha megjelenik a csatolt környezetek részletei és a futó táblaleképezések listája, akkor a kettős írás konfigurálva van.</span><span class="sxs-lookup"><span data-stu-id="7877c-109">If the details of the linked environments and the list of table maps that are running are shown, dual-write is configured.</span></span>
 
     ![A Finance and Operations alkalmazás kapcsolatának ellenőrzése adminisztrátori jogosultságok birtokában](media/verify_fin_ops_1.png)
 
-+ <span data-ttu-id="92f67-111">Ha nincs rendszergazdai jogosultsága, a következő hibaüzenet jelenik meg: *Nem lehet adatokat írni az \<entity name\>* entitásba.</span><span class="sxs-lookup"><span data-stu-id="92f67-111">If you don't have admin privileges, you will receive an error message, *Unable to write data to entity \<entity name\>*.</span></span> <span data-ttu-id="92f67-112">A következő ábrán szereplő példában nem lehet vevői sort létrehozni az Finance and Operations alkalmazásban, mert a kettős írás konfigurálva van de a vevőcsoport és a fizetési feltételek hivatkozási adatai nem szerepelnek a Dataverse szolgáltatásban.</span><span class="sxs-lookup"><span data-stu-id="92f67-112">In the example in the following illustration, you can't create a customer row in the Finance and Operations app, because dual-write is configured, but the customer group and payment terms reference data don't exist in Dataverse.</span></span>
++ <span data-ttu-id="7877c-111">Ha nincs rendszergazdai jogosultsága, a következő hibaüzenet jelenik meg: *Nem lehet adatokat írni az \<entity name\>* entitásba.</span><span class="sxs-lookup"><span data-stu-id="7877c-111">If you don't have admin privileges, you will receive an error message, *Unable to write data to entity \<entity name\>*.</span></span> <span data-ttu-id="7877c-112">A következő ábrán szereplő példában nem lehet vevői sort létrehozni az Finance and Operations alkalmazásban, mert a kettős írás konfigurálva van de a vevőcsoport és a fizetési feltételek hivatkozási adatai nem szerepelnek a Dataverse szolgáltatásban.</span><span class="sxs-lookup"><span data-stu-id="7877c-112">In the example in the following illustration, you can't create a customer row in the Finance and Operations app, because dual-write is configured, but the customer group and payment terms reference data don't exist in Dataverse.</span></span>
 
     ![A Finance and Operations alkalmazás kapcsolatának ellenőrzése adminisztrátori jogosultságok nélkül](media/verify_fin_ops_2.png)
 
-<span data-ttu-id="92f67-114">Az Finance and Operations alkalmazásokban adatok létrehozásakor jelentkező problémák megoldásával kapcsolatos tudnivalókat lásd az [Élő szinkronizálási problémák elhárítása](dual-write-troubleshooting-live-sync.md) című témakörben.</span><span class="sxs-lookup"><span data-stu-id="92f67-114">For information about how to fix issues when you create data in Finance and Operations apps, see [Troubleshoot live synchronization issues](dual-write-troubleshooting-live-sync.md).</span></span>
+<span data-ttu-id="7877c-114">Az Finance and Operations alkalmazásokban adatok létrehozásakor jelentkező problémák megoldásával kapcsolatos tudnivalókat lásd az [Élő szinkronizálási problémák elhárítása](dual-write-troubleshooting-live-sync.md) című témakörben.</span><span class="sxs-lookup"><span data-stu-id="7877c-114">For information about how to fix issues when you create data in Finance and Operations apps, see [Troubleshoot live synchronization issues](dual-write-troubleshooting-live-sync.md).</span></span>
 
-## <a name="verify-that-dual-write-is-configured-in-dataverse"></a><span data-ttu-id="92f67-115">Ellenőrizze, hogy a kettős írás be van-e állítva a Dataverse szolgáltatásban</span><span class="sxs-lookup"><span data-stu-id="92f67-115">Verify that dual-write is configured in Dataverse</span></span>
+## <a name="verify-that-dual-write-is-configured-in-dataverse"></a><span data-ttu-id="7877c-115">Ellenőrizze, hogy a kettős írás be van-e állítva a Dataverse szolgáltatásban</span><span class="sxs-lookup"><span data-stu-id="7877c-115">Verify that dual-write is configured in Dataverse</span></span>
 
-<span data-ttu-id="92f67-116">Amikor adatokat hoz létre, ha a **Vállalat** oszlopot látja a Dataverse lapjain, akkor a kettős írás konfigurálva van.</span><span class="sxs-lookup"><span data-stu-id="92f67-116">When you create data, if you see the **Company** column on pages in Dataverse, dual-write is configured.</span></span>
+<span data-ttu-id="7877c-116">Amikor adatokat hoz létre, ha a **Vállalat** oszlopot látja a Dataverse lapjain, akkor a kettős írás konfigurálva van.</span><span class="sxs-lookup"><span data-stu-id="7877c-116">When you create data, if you see the **Company** column on pages in Dataverse, dual-write is configured.</span></span>
 
 ![A Dataverse kapcsolatának ellenőrzése](media/verify_cds.png)
 
-<span data-ttu-id="92f67-118">Az Dataverse szolgáltatásban adatok létrehozásakor jelentkező problémák megoldásával kapcsolatos tudnivalókat lásd az [Élő szinkronizálási problémák elhárítása](dual-write-troubleshooting-live-sync.md) című témakörben.</span><span class="sxs-lookup"><span data-stu-id="92f67-118">For information about how to fix issues when you create data in Dataverse, see [Troubleshoot live synchronization issues](dual-write-troubleshooting-live-sync.md).</span></span>
+<span data-ttu-id="7877c-118">Az Dataverse szolgáltatásban adatok létrehozásakor jelentkező problémák megoldásával kapcsolatos tudnivalókat lásd az [Élő szinkronizálási problémák elhárítása](dual-write-troubleshooting-live-sync.md) című témakörben.</span><span class="sxs-lookup"><span data-stu-id="7877c-118">For information about how to fix issues when you create data in Dataverse, see [Troubleshoot live synchronization issues](dual-write-troubleshooting-live-sync.md).</span></span>
 
-<span data-ttu-id="92f67-119">Azzal kapcsolatosan, hogy hogyan tekinteti meg a hibák részleteit, amikor a Dataverse szolgáltatásban hoz létre adatokat következő témakörben talál: [A beépülő modul nyomkövetési naplójának engedélyezése és megtekintése a Dataverse szolgáltatásban a hiba részleteinek megtekintéséhez](dual-write-troubleshooting.md#enable-view-trace).</span><span class="sxs-lookup"><span data-stu-id="92f67-119">For information about how to view error details if you encounter any errors while you create data in Dataverse, see [Enable and view the plug-in trace log in Dataverse to view error details](dual-write-troubleshooting.md#enable-view-trace).</span></span>
+<span data-ttu-id="7877c-119">Azzal kapcsolatosan, hogy hogyan tekinteti meg a hibák részleteit, amikor a Dataverse szolgáltatásban hoz létre adatokat következő témakörben talál: [A beépülő modul nyomkövetési naplójának engedélyezése és megtekintése a Dataverse szolgáltatásban a hiba részleteinek megtekintéséhez](dual-write-troubleshooting.md#enable-view-trace).</span><span class="sxs-lookup"><span data-stu-id="7877c-119">For information about how to view error details if you encounter any errors while you create data in Dataverse, see [Enable and view the plug-in trace log in Dataverse to view error details](dual-write-troubleshooting.md#enable-view-trace).</span></span>
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
