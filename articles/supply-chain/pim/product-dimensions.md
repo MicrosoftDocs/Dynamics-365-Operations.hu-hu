@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 285e9d2d184a899f1ffa502d59a853ba83cda491
-ms.sourcegitcommit: 2093c9dc31d1b60b3114085d9cef48fdbbb0ca0d
+ms.openlocfilehash: ca0a7233004522de2af7281416169f0393feeb11
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5118681"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5260647"
 ---
 # <a name="product-dimensions"></a>Termékdimenziók
 
@@ -106,7 +106,7 @@ A verzió dimenzióval való kompatibilitáshoz szükséges megoldások tesztel�
     - PCVariantConfiguration::findByProductMasterAndDimensions
 
 1. **Leképezések:** ha bármelyik leképezés használ készletdimenziót, akkor az ezeknek a leképezéseknek a kapcsolódó objektumkapcsolat-leképezését úgy kell frissíteni, hogy tartalmazza a verzió dimenziót. A kiterjesztett modellben vagy a táblabővítményekben keresse meg azokat a táblákat, amelyeknél a mezők készletdimenziókat tartalmaznak.
-1. **Microsoft Dynamics 365 Commerce-funkciók:** miután be van kapcsolta, a verzió dimenzió megjelenik a Dynamics 365 Supply Chain Management Commerce-specifikus kódjában. A Commerce csatorna-adatbázisa és a pénztári vagy e-kereskedelmi alkalmazások azonban még nem támogatják a verzió dimenziót. Ezek a Commerce-specifikus alkalmazások nem támogatják azokat a felhasználókat, akik értékesítenek/szállítanak vagy visszaküldenek/fogadnak készletet verziódimenzió szerint. A készlet elérhetőségének keresési funkciói nem határozzák meg a készletet verziódimenzió szerint a Commerce alkalmazásokban. Ez a viselkedés hasonlít a konfiguráció dimenzió Commerce-en belüli aktuális viselkedésére.
+1. **Microsoft Dynamics 365 Commerce-funkciók:** Bekapcsolás után a verziódimenzió megjelenik a Dynamics 365 Supply Chain Management Commerce-specifikus kódjában. A Commerce csatorna-adatbázisa és a pénztári vagy e-kereskedelmi alkalmazások azonban még nem támogatják a verzió dimenziót. Ezek a Commerce-specifikus alkalmazások nem támogatják azokat a felhasználókat, akik értékesítenek/szállítanak vagy visszaküldenek/fogadnak készletet verziódimenzió szerint. A készlet elérhetőségének keresési funkciói nem határozzák meg a készletet verziódimenzió szerint a Commerce alkalmazásokban. Ez a viselkedés hasonlít a konfiguráció dimenzió Commerce-en belüli aktuális viselkedésére.
 
 #### <a name="turn-on-the-version-dimension"></a>A verzió dimenzió bekapcsolása
 
