@@ -17,38 +17,41 @@ ms.search.region: Global
 ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: eb22c5b604f9bc7aacad014385b036e78d9110e6
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 00e9acea04252207a3715744ec5c9d7da141d4b5
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5017212"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5253682"
 ---
-# <a name="target-entities"></a><span data-ttu-id="c2694-103">Célentitások</span><span class="sxs-lookup"><span data-stu-id="c2694-103">Target entities</span></span>
+# <a name="target-entities"></a><span data-ttu-id="68ff0-103">Célentitások</span><span class="sxs-lookup"><span data-stu-id="68ff0-103">Target entities</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
  
 
-<span data-ttu-id="c2694-104">Az **Adatkezelés** munkaterületen áttekintést kaphat a célentitásokról, kapcsolódó entitástípusokról és előkészítési táblákról, amelyek az **Eszközkezelés** modulhoz kapcsolódnak.</span><span class="sxs-lookup"><span data-stu-id="c2694-104">In the **Data management** workspace, you can get an overview of target entities, related entity types and staging tables related to the **Asset management** module.</span></span> 
+<span data-ttu-id="68ff0-104">Az **Adatkezelés** munkaterületen áttekintést kaphat a célentitásokról, kapcsolódó entitástípusokról és előkészítési táblákról, amelyek az **Eszközkezelés** modulhoz kapcsolódnak.</span><span class="sxs-lookup"><span data-stu-id="68ff0-104">In the **Data management** workspace, you can get an overview of target entities, related entity types and staging tables related to the **Asset management** module.</span></span> 
 
-1. <span data-ttu-id="c2694-105">Kattintson a képernyő bal felső sarkában látható **Finance and Operations** gombra, majd az **Adatkezelés** pontra.</span><span class="sxs-lookup"><span data-stu-id="c2694-105">Click the **Finance and Operations** button in the upper-left corner of the screen, and click **Data management**.</span></span>
+1. <span data-ttu-id="68ff0-105">Kattintson a képernyő bal felső sarkában látható **Finance and Operations** gombra, majd az **Adatkezelés** pontra.</span><span class="sxs-lookup"><span data-stu-id="68ff0-105">Click the **Finance and Operations** button in the upper-left corner of the screen, and click **Data management**.</span></span>
 
-2. <span data-ttu-id="c2694-106">Az **Importálás és exportálás** szakaszban kattintson az **Adatentitások** pontra.</span><span class="sxs-lookup"><span data-stu-id="c2694-106">In the **Import / Export** section, click **Data entities**.</span></span> 
+2. <span data-ttu-id="68ff0-106">Az **Importálás és exportálás** szakaszban kattintson az **Adatentitások** pontra.</span><span class="sxs-lookup"><span data-stu-id="68ff0-106">In the **Import / Export** section, click **Data entities**.</span></span> 
 
     ![1. ábra](media/01-data-management.png)
 
-3. <span data-ttu-id="c2694-108">A **Célentitások** oldalon keressen rá az „eszközkezelés” elemre a szűrőben, majd nyomja le az Enter billentyűt, amellyel megtekinthet az Eszközkezeléshez kapcsolódó entitások listáját.</span><span class="sxs-lookup"><span data-stu-id="c2694-108">On the **Target entities** page, search for "asset management" in the filter, and press Enter to see a list of the entities related to Asset management.</span></span>
+3. <span data-ttu-id="68ff0-108">A **Célentitások** oldalon keressen rá az „eszközkezelés” elemre a szűrőben, majd nyomja le az Enter billentyűt, amellyel megtekinthet az Eszközkezeléshez kapcsolódó entitások listáját.</span><span class="sxs-lookup"><span data-stu-id="68ff0-108">On the **Target entities** page, search for "asset management" in the filter, and press Enter to see a list of the entities related to Asset management.</span></span>
 
-    <span data-ttu-id="c2694-109">Az alábbi ábrán néhány Eszközkezeléshez kapcsolódó entitás látható.</span><span class="sxs-lookup"><span data-stu-id="c2694-109">The figure below shows some of the Asset management entities.</span></span>
+    <span data-ttu-id="68ff0-109">Az alábbi ábrán néhány Eszközkezeléshez kapcsolódó entitás látható.</span><span class="sxs-lookup"><span data-stu-id="68ff0-109">The figure below shows some of the Asset management entities.</span></span>
 
    ![2. ábra](media/02-data-management.png)
 
-4. <span data-ttu-id="c2694-111">Jelöljön ki egy entitást , majd kattintson a **Célhozzárendelés módosítása** hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="c2694-111">Select an entity and click **Modify target mapping**.</span></span>
+4. <span data-ttu-id="68ff0-111">Jelöljön ki egy entitást , majd kattintson a **Célhozzárendelés módosítása** hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="68ff0-111">Select an entity and click **Modify target mapping**.</span></span>
 
-5. <span data-ttu-id="c2694-112">Az **Előkészítés hozzárendelése a célhoz** oldalon látható a kiválasztott entitáshoz kapcsolódó előkészítési mezők listája.</span><span class="sxs-lookup"><span data-stu-id="c2694-112">On the **Map staging to target** page, you see a list of the staging fields related to the selected entity.</span></span> <span data-ttu-id="c2694-113">A **Megfeleltetés megjelenítése** parancsra kattintva grafikusan áttekintheti, hogy milyen kapcsolatban vannak az előkészítési adatok és a céladatok.</span><span class="sxs-lookup"><span data-stu-id="c2694-113">Click **Mapping visualization** to see a graphic overview of how staging data and target data are related.</span></span> 
+5. <span data-ttu-id="68ff0-112">Az **Előkészítés hozzárendelése a célhoz** oldalon látható a kiválasztott entitáshoz kapcsolódó előkészítési mezők listája.</span><span class="sxs-lookup"><span data-stu-id="68ff0-112">On the **Map staging to target** page, you see a list of the staging fields related to the selected entity.</span></span> <span data-ttu-id="68ff0-113">A **Megfeleltetés megjelenítése** parancsra kattintva grafikusan áttekintheti, hogy milyen kapcsolatban vannak az előkészítési adatok és a céladatok.</span><span class="sxs-lookup"><span data-stu-id="68ff0-113">Click **Mapping visualization** to see a graphic overview of how staging data and target data are related.</span></span> 
 
-    <span data-ttu-id="c2694-114">Az alábbi ábrán az eszköztípusok entitáshoz kapcsolódó mezők képi megjelenítése látható.</span><span class="sxs-lookup"><span data-stu-id="c2694-114">In the figure below, a visualization of the fields related to the asset types entity is shown.</span></span>
+    <span data-ttu-id="68ff0-114">Az alábbi ábrán az eszköztípusok entitáshoz kapcsolódó mezők képi megjelenítése látható.</span><span class="sxs-lookup"><span data-stu-id="68ff0-114">In the figure below, a visualization of the fields related to the asset types entity is shown.</span></span>
 
     ![3. ábra](media/03-data-management.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
