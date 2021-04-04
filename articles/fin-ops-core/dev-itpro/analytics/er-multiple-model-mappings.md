@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 01/04/2021
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERSolutionTable, ERModelMappingTable
 audience: Application User
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3116fe98f499637b3bc7f243ed1b5094853caa7e
-ms.sourcegitcommit: 7cfe8931dd454e811a691f5118a4ecae7ba4b478
+ms.openlocfilehash: bb4fcda42361b0f14e37027d21739dfc42b44cb1
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "4826109"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5565491"
 ---
 # <a name="manage-several-derived-mappings-for-a-single-model-root"></a>Egyetlen modellgyökérhez tartozó több származtatott leképezés kezelése
 
@@ -128,7 +127,7 @@ Most már rendelkezik **Számlamodell-leképezés** és **Számlamodell-leképez
  
 > Egynél több modell-leképezés létezik a konfigurációkban (\<configuration names separated by commas\>) található „\<model name\> (\<root descriptor\>)” adatmodellhez. Állítsa be az egyik konfigurációt alapértelmezettként.
 
-![A formátum megnyitása szerkesztésre a Konfigurációk lapon](./media/er-multiple-model-mappings-image6.gif)
+![A formátum megnyitása szerkesztésre a Konfigurációk oldalon](./media/er-multiple-model-mappings-image6.gif)
 
 ### <a name="customize-the-project-invoice-model-mapping-rdp-configuration"></a>A Projektszámlamodell-leképezés (RDP) konfiguráció testreszabása
 
@@ -151,7 +150,7 @@ Most már rendelkezik **Számlamodell-leképezés**, **Projektszámlamodell-lek�
 1. A **Konfigurációk** oldalon, a bal oldali panelen található konfigurációk fájában válassza a **Számlamodell-leképezés (Litware)** elemet.
 2. Állítsa az **Alapértelmezett a modell-hozzárendeléshez** beállítást **Igen** értékre.
 
-    ![A modell-leképezés beállítása alapértelmezett modell-leképezésként a Konfigurációk lapon](./media/er-multiple-model-mappings-image8.png)
+    ![A modell-leképezés beállítása alapértelmezett modell-leképezésként a Konfigurációk oldalon](./media/er-multiple-model-mappings-image8.png)
 
     Emiatt a beállítás miatt a **Vevői számla másolata** modell-leképezés kerül használatram amikor a **Szabadszöveges számla (Excel)** modellt futtatja, illetve annak szerkesztése vagy ellenőrzése esetén. A **Számlamodell-leképezés** konfiguráció **Vevői számla** modell-leképezését a rendszer figyelmen kívül hagyja.
 
