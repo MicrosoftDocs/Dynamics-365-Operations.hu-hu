@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: f8d5e4d82c66d178ceafcdbfb3eb9a941172aa01
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 9107a14a79883dc0e33de311baeec5fd6d692a35
+ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5004627"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5500502"
 ---
 # <a name="location-directive-inventory-picking-aging"></a>Helyutasítás – készletkitárolás korosítása
 
@@ -119,7 +119,7 @@ A FIFO-stratégia megtalálja azt a helyet, amely a legrégebbi korosítási dá
 1. Az **Értékesítési rendelés** oldalán a műveleti ablaktáblán a **Raktár** lapon a **Műveletek** csoportban válassza a **Kiadás raktárhoz** lehetőséget. Tájékoztató üzeneteket kap. A rendszer létrehoz egy szállítmányt, hozzáadja azt egy új terheléshez, és létrehozza a szükséges munkát.
 1. Az **Értékesítésirendelés-sorok** gyorslap **Raktár** menüjében válassza ki a **Munka adatai** lehetőséget, és nyissa meg az ehhez az értékesítési rendeléshez létrehozott munkát. Figyelje meg, hogy a sorban, ahol a **Munkatípus** értéke *Kitárolás* egy **Hely** érték látható, ami *FL-002*. Ez a hely tartalmazza azt az azonosítótábla-típust, amelynek a legrégebbi a korosítási dátuma (FIFO).
 1. Válassza a **Raktár \> Szállítmány adatai** lehetőséget.
-1. Az *_Általános_* gyorslapon jegyezze fel a hullámazonosítót, hogy a 2. forgatókönyvben is használható legyen.
+1. Az **Általános** gyorslapon jegyezze fel a hullámazonosítót, hogy a 2. forgatókönyvben is használható legyen.
 
 ### <a name="scenario-2-set-up-and-use-lifo-location-aging"></a>2. forgatókönyv: LIFO-hely korosításának beállítása és használata
 

@@ -16,14 +16,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a7a173403e79212be5e4aac36d99f349da159e08
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: f10164b4002d3cb83a2332e913adcb25506ffdd2
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5112826"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5468227"
 ---
 # <a name="enroll-an-employee-in-a-variable-compensation-plan"></a>Alkalmazottak felvétele változó kompenzációs konstrukcióba
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 A kompenzációkért és juttatásokért felelős vezető felvehet alkalmazottakat változó kompenzációs tervbe, hogy az alkalmazottak készpénzes és nem készpénzes jutalmát kiszámítsa. Ez az eljárás feltételezi, hogy a változó kompenzációs tervet úgy hozta létre, hogy a Belépés engedélyezése mező Igen értékre van állítva, és hogy létrehozott alkalmazhatósági szabályokat az adott változó kompenzációs tervhez. Ez az eljárás az USMF bemutatócéget használja. Az eljárás megkezdéséhez kattintson az Emberi Erőforrások > Dolgozók > Alkalmazottak > Kompenzáció > Változó konstrukciós felvétel lehetőségre
 

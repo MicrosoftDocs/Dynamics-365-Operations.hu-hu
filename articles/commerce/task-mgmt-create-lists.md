@@ -16,20 +16,18 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: cca5e0efd6516d02c372e8a616b6bb0c39f3088c
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 28bea16c3266115cf09aa80a364344789d60af7a
+ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5006210"
+ms.lasthandoff: 02/19/2021
+ms.locfileid: "5477829"
 ---
 # <a name="create-task-lists-and-add-tasks"></a>Feladatlisták létrehozása és feladatok hozzáadása
 
 [!include [banner](includes/banner.md)]
 
 Ez a témakör bemutatja, hogy hogyan lehet feladatlistákat létrehozni, és feladatokat adni azokhoz a Microsoft Dynamics 365 Commerce alkalmazásban.
-
-## <a name="overview"></a>Áttekintés
 
 A *feladat* egy meghatározott munkát vagy egy műveletet határoz meg, amelyet valakinek el kell végeznie a megadott esedékességi dátumig vagy azt megelőzően. A Dynamics 365 Commerce alkalmazásban egy feladathoz a kapcsolattartóval kapcsolatos részletes utasítások és információk is tartozhatnak. Tartalmazhat a háttérben történő irodai műveletekre, pénztári (POS) műveletekre vagy a webhelyoldalakra mutató hivatkozásokat is, amelyek segítségével javíthatja a termelékenységet, és egy kontextust adhat meg, hogy a feladat tulajdonosa hatékonyan végezhesse el a feladatot.
 

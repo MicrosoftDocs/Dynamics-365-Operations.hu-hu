@@ -16,14 +16,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Version 7.0.0, Human Resources
-ms.openlocfilehash: 2c64bd4eddab0de9db457c6d8d4464303917c438
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: 857fb7d6860d050fb0be50f2559e3998dacad458
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5112786"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5468011"
 ---
 # <a name="create-a-new-benefit"></a>Új juttatás létrehozása
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 A feladat bemutatja, hogyan hozhat létre juttatási elemeket, amelyeket az új juttatás létrehozása során használni fog. A feladat létrehozásához az USMF bemutató vállalatot használtuk példaként. A feladat a Kompenzációkért és juttatásokért felelős vezetőnek szól.
 

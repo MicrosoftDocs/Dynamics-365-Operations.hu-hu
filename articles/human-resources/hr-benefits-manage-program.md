@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 60264d246e1173c25e4383cc79836126126fcba5
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: 646fc03dcacced6a9a6ae8bb373c5a2d915c243a
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5112880"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5465078"
 ---
 # <a name="define-and-manage-a-benefits-program"></a>Juttatási program meghatározása és kezelése
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 A Human Resources számos olyan eszközt biztosít, amelyek segítségével beállíthatja és karbantarthatja a szervezet által a dolgozóknak biztosított juttatásokat, levonásokat és dolgozói kompenzációs terveket. Ez a cikk a juttatások beállításával és kezelésével kapcsolatos tájékoztatást tartalmaz.
 
