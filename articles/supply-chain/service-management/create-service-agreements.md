@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ef5ca8cc9c80581b9f7ef69bd8c4403d3d0296e8
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: f883d5b312c042a995e30998fc24da5b1c02f22a
+ms.sourcegitcommit: 34b8f6f5c6134b7b97a9fb41d0b2e63215c67062
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4965965"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5470857"
 ---
 # <a name="create-service-agreements"></a>Szolgáltatási szerződések létrehozása
 
@@ -33,8 +33,8 @@ Ez a témakör ismerteti a Szolgáltatáskezelés és a Projektvezetés és kön
 ## <a name="create-a-service-agreement-from-service-management"></a>Szolgáltatási szerződés létrehozása a Szolgáltatáskezelésből
 
 1. Lépjen a **Szolgáltatáskezelés** ponthoz.
-2. Kattintson a **Szolgáltatási szerződések** lehetőségre egy új szolgáltatásiszerződés-sor létrehozásához a lap fejlécében. 
-3. Kattintson az **Új** elemre. Adjon meg egy leírást, válasszon egy hivatkozást a projekthez a **Projektazonosító** mezőben, és töltse ki a szolgáltatási szerződés többi mezőjét és sorát. Kattintson a **Mentés** gombra.
+2. Válassza a **Szolgáltatási szerződések** lehetőséget egy új szolgáltatásiszerződés-sor létrehozásához a lap fejlécében. 
+3. Válassza az **Új** lehetőséget. Adjon meg egy leírást, válasszon egy hivatkozást a projekthez a **Projektazonosító** mezőben, és töltse ki a szolgáltatási szerződés többi mezőjét és sorát. Válassza a **Mentés** lehetőséget.
 4. A **Kapcsolatok** lapon válassza **A szolgáltatás tárgyai** vagy a **Szervizfeladatok** elemet a szolgáltatásiobjektum-kapcsolatok vagy a szervizfeladat-kapcsolatok létrehozásához. A szolgáltatások kapcsol tárgyai és a kapcsolt szervizfeladatok hozzárendelhetők a szolgáltatási szerződés soraihoz.
 5. Alap alsó részén a sablonból, másik szolgáltatási szerződésből történő másolással vagy a sorok kézi megadásával hozzon létre szolgáltatásiszerződés-sorokat.
 
@@ -45,14 +45,14 @@ Ez a témakör ismerteti a Szolgáltatáskezelés és a Projektvezetés és kön
 
 1. A **Szolgáltatási szerződések** lapon adjon meg egy szolgáltatásiszerződés-sort a sorrácsban. 
 2. Írja be a megfelelő adatokat a szolgáltatásiszerződés-sorba. 
-3. Mentse a sort a **CTRL+S** billentyűkombináció lenyomásával, és zárja be a lapot.
+3. Válassza a **Mentés** lehetőséget a sor mentéséhez, és zárja be a lapot.
 
 ## <a name="create-a-service-agreement-from-project"></a>Szolgáltatási szerződések létrehozása a Projekt modulból
 
-1. Kattintson a **Projektvezetés és könyvelés** elemre.
-2. Kattintson a **Minden projekt** lehetőségre.
+1. Válassza a **Projektvezetés és könyvelés** elemet.
+2. Az **Összes projekt** elemet válassza.
 3. Válassza ki a projektet a listából.
-4. A **Művelet panelen** kattintson a **Kezelés** elemre. Az **Új** műveletcsoportban kattintson a **Szolgáltatás** lehetőségre, és válassza ki a **Szolgáltatási szerződés** pontot.
+4. A **Műveleti ablaktáblán** válassza a **Kezelés** lehetőséget. Az **Új** műveletcsoportban válassza a **Szolgáltatás** lehetőséget, és válassza ki a **Szolgáltatási szerződés** pontot.
 5. Kövesse a jelen témakör korábbi, **Szolgáltatási szerződések létrehozása** című szakaszában található utasításokat a projektreferencia megadásához.
 
 

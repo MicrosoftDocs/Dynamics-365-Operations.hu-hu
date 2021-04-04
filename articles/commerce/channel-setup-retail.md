@@ -16,21 +16,18 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 100822ecea03d03267f98654c66e74f2f5924bd9
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: a5d0a081cff9fab8dc0a513496e6a5eccd03c871
+ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4997725"
+ms.lasthandoff: 02/19/2021
+ms.locfileid: "5478260"
 ---
-# <a name="set-up-a-retail-channel"></a>Kiskereskedelmi csatorna beállítása
-
+# <a name="set-up-a-retail-channel"></a>Retail-csatorna beállítása
 
 [!include [banner](includes/banner.md)]
 
 Ez a témakör azt mutatja be, hogyan lehet egy új kiskereskedelmi csatornát létrehozni a Microsoft Dynamics 365 Commerce alkalmazásban.
-
-## <a name="overview"></a>Áttekintés
 
 A Dynamics 365 Commerce rendszer támogatja a többszörös kiskereskedelmi csatornák használatát. Ezek a kiskereskedelmi csatornák lehetnek online áruházak, hívásközpontok és kiskereskedelmi áruházak (más néven rendes, nem online üzletek). A kiskereskedelmi üzletek csatornái saját fizetési módokkal, árcsoportokkal, (POS) pénztárgépekkel, bevételi és kiadási számlákkal, valamint munkatársakkal rendelkezhetnek. Az összes ilyen elemet be kell állítania, kiskereskedelmi üzlet csatornájának létrehozása előtt. 
 
