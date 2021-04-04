@@ -1,9 +1,9 @@
 ---
 title: Beszedési folyamat automatizálása
-description: Ez a témakör azt mutatja be, hogyan lehet beállítani azokat a beszedési folyamat-stratégiákat, amelyekkel automatikusan azonosíthatja a vevői számlákat, amelyekhez egy e-mail emlékeztető, a beszedési tevékenység (például a telefonhívás) vagy a vevőnek küldendő fizetési felszólítás szükséges.
+description: Ez a témakör azt mutatja be, hogyan lehet beállítani azokat a beszedési folyamat-stratégiákat, amelyekkel automatikusan azonosíthatja a vevői számlákat, amelyekhez egy e-mail emlékeztető, a beszedési tevékenység vagy a vevőnek küldendő fizetési felszólítás szükséges.
 author: panolte
 manager: AnnBe
-ms.date: 08/26/2020
+ms.date: 03/12/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-26
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: a63058904df72a7fda5a67ed1e6a846eed393ce0
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: a5f5d65f3f757163b22d35c3c99b4d6b7fbdfafb
+ms.sourcegitcommit: 3fe4d9a33447aa8a62d704fbbf18aeb9cb667baa
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4969701"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "5582751"
 ---
 # <a name="collections-process-automation"></a>Beszedési folyamat automatizálása
 
@@ -28,10 +28,12 @@ ms.locfileid: "4969701"
 
 Ez a témakör azt mutatja be, hogyan lehet beállítani azokat a beszedési folyamat-stratégiákat, amelyekkel automatikusan azonosíthatja a vevői számlákat, amelyekhez egy e-mail emlékeztető, a beszedési tevékenység (például a telefonhívás) vagy a vevőnek küldendő fizetési felszólítás szükséges. 
 
-A vállalatok jelentős időt töltenek az éves egyenleg-jelentések, a vevői számlák és a nyitott számlák kutatására, hogy meghatározzák, hogy mely vevőkkel kell felvenni a kapcsolatot nyitott számlákkal vagy számlával kapcsolatos egyenleggel kapcsolatban. Ez a kutatás időt vesz igénybe a beszedési ügynököktől, hogy kommunikáljanak a vevőkkel, beszedjék a lejárt tartozásokat, vagy megoldják a számlákkal kapcsolatos vitákat. A beszedési folyamatok automatizálásával stratégián alapuló megközelítést állíthat be a beszedési folyamathoz. Ily módon a beszedési tevékenységeket következetesen alkalmazhatja a személyre szabott e-mailes emlékeztetőkkel, illetve a fizetési felszólítások küldésének programozott folyamatával. 
+A vállalatok jelentős időt töltenek az éves egyenlegjelentések, a vevői számlák és a nyitott számlák kutatására, hogy megtudják, hogy mely vevőkkel kell felvenni a kapcsolatot nyitott számlákkal vagy számlával kapcsolatos egyenleggel kapcsolatban. Ez a kutatás időt vesz igénybe a beszedési ügynököktől, hogy kommunikáljanak a vevőkkel, beszedjék a lejárt tartozásokat, vagy megoldják a számlákkal kapcsolatos vitákat. A beszedési folyamatok automatizálásával stratégián alapuló megközelítést állíthat be a beszedési folyamathoz. Ily módon a beszedési tevékenységeket következetesen alkalmazhatja a személyre szabott e-mailes emlékeztetőkkel, illetve a fizetési felszólítások küldésének programozott folyamatával. 
 
 ## <a name="collections-process-setup"></a>Beszedési folyamat beállítása
 A **Beszedési folyamat beállítása** lap (**Követelések és beszedések > Beállítás > Beszedési folyamat beállítása**) segítségével létrehozható egy automatizált beszedési folyamat, amely a tevékenységeket, e-mailek küldését, valamint a vevői fizetési felszólítások létrehozását és feladását végzi. A folyamat lépései a kezdő vagy legrégebbi nyitott számlán alapulnak. Minden lépés ezt a számlát használja annak meghatározására, hogy milyen kommunikációt vagy tevékenységet kell végezni egy adott vevővel.  
+
+A beszedési csoportok általában korai értesítést küldenek minden egyes függőben lévő számláról, így a vevő értesítést kap, amikor a számla esedékessé válik. Az **Előzetes fizetési felszólítás** lehetőséggel be lehet állítani, hogy minden folyamathierarchiában egy lépés legyen érvényes minden számlára, amikor a számla időzítése eléri az adott lépést.
 
 ### <a name="process-hierarchy"></a>Folyamathierarchia
 A vevőgyűjtőket csak egy munkafolyamat-hierarchiához lehet hozzárendelni. Ennek a lépésnek a hierarchiaszintje határozza meg, hogy melyik folyamat fog elsőbbséget élvezni, ha a vevő egynél több olyan gyűjtőben szerepel, amelyhez van hozzárendelve munkafolyamat-hierarchia. A gyűjtő azonosítója határozza meg, hogy a folyamathoz melyik vevők lesznek hozzárendelve. 
@@ -82,6 +84,7 @@ A következő táblázatokban azoknak a lapoknak és mezőknek a listája látha
 |                                                           |     Üzleti dokumentum                           |     A folyamat lépéseiben használt tevékenység vagy e-mail sablon meghatározása.                                                                        |
 |                                                           |     Mikor                                          |     Azt határozza meg, hogy a folyamatlépés a kezdő számla esedékességi dátuma előtt vagy után történik fel a **Napok a számla esedékességi dátumához képest** mezővel.        |
 |                                                           |     A számla esedékességi dátumával kapcsolatos napok        |     A **Ha** mezővel együttesen azonosítja a folyamatlépés időzítését.                                                                          |
+|                                                           |     Előzetes felszólítás                                   |     Ez a kiválasztás lehetővé teszi, hogy a folyamathierarchiánként egy lépést állítson be és futtasson minden számlával, amikor az eléri az időzítési feltételeket.                                                |
 |                                                           |     Átvevő                                     |     Azt határozza meg, hogy e-mailt küldenek-e a vevőnek, értékesítési csoportnak vagy a beszedési ügynök kapcsolattartójának.                                                   |
 |                                                           |     Üzleti célú kapcsolattartó                    |     Azt határozza meg, hogy a címzett melyik e-mail címe használatos az e-mail kommunikációhoz.                                                                                 |
 
@@ -100,7 +103,7 @@ A következő táblázatokban azoknak a lapoknak és mezőknek a listája látha
 ### <a name="collections-history"></a>Beszedési előzmények 
 |     Oldal                              |     Mező     |      Leírás                                                          |
 |------------------------------------   |-------------- |---------------------------------------------------------------------  |
-|     Beszedési folyamat beállítása       |               |     A kiválasztott feldolgozási hierarchia legutóbbi előzményeinek megtekintése.     |
+|     Beszedési folyamat beállítása       |               |     A kiválasztott feldolgozási hierarchia legutóbbi előzményeinek megtekintése.       |
 
 ### <a name="collection-process-assignment"></a>Beszedési folyamat hozzárendelése
 |     Oldal                              |     Mező     |      Leírás                                                  |
@@ -110,6 +113,11 @@ A következő táblázatokban azoknak a lapoknak és mezőknek a listája látha
 |     Folyamat-hozzárendelés előzetes verziója      |               |     Azoknak a vevőknek az előnézete, akik a futtatásakor stratégiához hozzá lesznek rendelve.   |
 |     Vevőhozzárendelés előzetes verziója     |               |     Az adott vevőhöz hozzárendelt stratégia megtekintése.    |
  
+ ### <a name="process-simulation"></a>Szimuláció feldolgozása
+|     Oldal                              |     Mező     |      Leírás                                                  |
+|------------------------------------   |-------------- |-----------------------------------------------------------    |
+|    Szimuláció feldolgozása                 |               |     Azon műveletek előzetes verziója, amelyek akkor jönnek létre, ha a kiválasztott folyamatautomatizálás fut. |
+
 ### <a name="parameters"></a>Paraméterek
 |     Oldal                                                                  |     Mező                                             |      Leírás                              |
 |-------------------------------------------------------------------------- |------------------------------------------------------ |-------------------------------------  |
@@ -117,6 +125,7 @@ A következő táblázatokban azoknak a lapoknak és mezőknek a listája látha
 |     Kinnlevőségek paraméterei > Beszedési folyamatok automatizálása     |     Fizetési felszólítások automatikus közzététele           |     A fizetési felszólítás műveletitípusai feladják a levelet az automatizálás során.                                      |
 |     Kinnlevőségek paraméterei > Beszedési folyamatok automatizálása     |     Tevékenységek létrehozása automatizáláshoz                |     Tevékenységek létrehozása és bezárása a nem tevékenység típusú művelettípusokhoz a számlán végrehajtott összes automatizált lépés megtekintéséhez.        |
 |     Kinnlevőségek paraméterei > Beszedési folyamatok automatizálása     |     A beszedési folyamatok automatizálása megtartása ennyi napig     |     Azt határozza meg, hogy hány napig tárolják a beszedések előzményeit.                                                       |
+|     Kinnlevőségek paraméterei > Beszedési folyamatok automatizálása     |     Számla kizárása az utolsó folyamatlépés aktiválása után    |     A jövőbeli folyamatautomatizálási művelettípusok létrehozására nem használható olyan számla, amely eléri a beszedési folyamat utolsó lépését. A következő legrégebbi számla fogja meghatározni a következő folyamatautomatizálási lépést, hogy a beszedési folyamat automatizálási művelete folytatódjon.                                                        |
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

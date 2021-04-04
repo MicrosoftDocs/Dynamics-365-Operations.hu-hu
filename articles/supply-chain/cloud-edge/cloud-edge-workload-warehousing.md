@@ -18,12 +18,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 91e614889c719ae700b13e54150e5025d64e2b97
-ms.sourcegitcommit: 289e9183d908825f4c8dcf85d9affd4119238d0c
+ms.openlocfilehash: 9b5d8c9e77fb98dfb7031a3868303970fe3bf865
+ms.sourcegitcommit: 4835acc3edacf8277937723d3f85a7875bd8de83
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "5104940"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "5580965"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Raktérkezelés munkaterhelései felhőalapú és peremhálózat-lépték szerinti egységekhez
 
@@ -85,7 +85,14 @@ A központ a következő adatokat birtokolja:
 > [!NOTE]
 > A bejövő beszerzési rendelési folyamat koncepciójában különbözik a kimenő folyamattól. Ugyanazt a raktárat a mérlegegységen vagy a központon lehet működtetni attól függően, hogy a beszerzési rendelés ki van-e adva raktárba. Ha már kiadott egy rendelést a raktárba, akkor csak akkor dolgozhat azzal a rendeléssel, ha bejelentkezett a skálázási egységbe.
 
-Ha a *kiadás raktárba* folyamatot használja, akkor létrejönnek a [*raktári rendelések*](cloud-edge-warehouse-order.md), és a kapcsolódó bevételezési folyamat tulajdonjoga a skálázási egységhez van rendelve. A központ nem fogja tudni regisztrálni a bejövő bevételezéseket.
+Ha a *Kiadás raktárba* folyamatot használja, akkor létrejönnek a [*raktári rendelések*](cloud-edge-warehouse-order.md), és a kapcsolódó bevételezési folyamat tulajdonjoga a skálázási egységhez van rendelve. A központ nem fogja tudni regisztrálni a bejövő bevételezéseket.
+
+Be kell jelentkeznie a központba a *Kiadás raktárba* folyamat használatához. Lépjen a következő oldalak egyikére a futtatáshoz vagy ütemezéshez:
+
+- **Beszerzés és forrás > Beszerzési rendelések > Összes beszerzési rendelés > Raktár > Műveletek > Kiadás raktárba**
+- **Raktárkezelés > Kiadás a raktárba > Értékesítési rendelések automatikus kiadása**
+
+A **Beszerzési rendelések automatikus kiadása** funkció használatakor lekérdezés alapján meghatározott beszerzésirendelés-sorokat választhat ki. Jellemző helyzet lehet egy ismétlődő kötegelt feladat, amely kiadja a következő napon várható összes visszaigazolt beszerzésirendelés-sort.
 
 A dolgozó a skálázási egységhez kapcsolódó raktári alkalmazás segítségével futtathatja a bevételezési folyamatot. A skálázási egység ezt követően rögzíti az adatokat, és a bejövő raktári rendeléssel szemben jelenti őket. A következő betárolás létrehozását és feldolgozását a skálázási egység is kezeli.
 
@@ -222,7 +229,7 @@ A következő táblázat bemutatja, hogy mely bejövő funkciók, és hol támog
 | Átmozgatásirendelés-sor bevételezése és betárolása                        | Igen | Nincs |
 | Munka érvénytelenítése (bejövő)                                              | <p>Igen, ha nincs raktári rendelés</p><p>Nem, ha van raktári rendelés</p> | <p>Igen, de csak ha a <b>Bevételezés regisztrációjának törlése a munka visszavonásakor</b> beállítás (a <b>Raktárkezelés paraméterei</b> lapon) törölve lett</p> |
 | Beszerzési rendelés termékbevételezés feldolgozása                          | Igen | Nincs |
-| Beszerzési rendelés bevétele alulszállítással                        | <p>Igen, ha nincs raktári rendelés</p><p>Nem, ha van raktári rendelés</p> | Nem, mert csak a raktári rendeléssorok teljes mennyiségét érvénytelenheti |
+| Beszerzési rendelés bevétele alulszállítással                        | <p>Igen, ha nincs raktári rendelés</p><p>Nem, ha van raktári rendelés</p> | Igen, de csak érvénytelenítési kérelem elküldésével a központból |
 | Beszerzési rendelés bevétele túlszállítással                        | <p>Igen, ha nincs raktári rendelés</p><p>Nem, ha van raktári rendelés</p> | Igen  |
 | Fogadás *Áttárolás* munka létrehozásával                   | <p>Igen, ha nincs raktári rendelés</p><p>Nem, ha van raktári rendelés</p> | Nincs |
 | Fogadás *Minőségi rendelés* munka létrehozásával                  | <p>Igen, ha nincs raktári rendelés</p><p>Nem, ha van raktári rendelés</p> | Nincs |

@@ -3,7 +3,7 @@ title: Első lépések az Elektronikus számlázási bővítmény szolgáltatás
 description: Ez a témakör bemutatja az Elektronikus számlázási bővítmény szolgáltatásfelügyeletének használatának első lépéseit.
 author: gionoder
 manager: AnnBe
-ms.date: 01/28/2021
+ms.date: 03/12/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 111ec65aa826795125d4a9ce835f72e1a0f41b7b
-ms.sourcegitcommit: e88c96d1cb817a22db81856cadb563c095ab2671
+ms.openlocfilehash: 05b00380cec7511adad2467d3f252799a4aaee5c
+ms.sourcegitcommit: 543772ee97efe215cf6f2ec6e092cc1568919f20
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "5104388"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "5592526"
 ---
 # <a name="get-started-with-electronic-invoicing-add-on-service-administration"></a>Első lépések az Elektronikus számlázási bővítmény szolgáltatásfelügyeletének használata során
 
@@ -35,7 +35,7 @@ ms.locfileid: "5104388"
 Mielőtt teljesítené az ebben a témakörben ismertetett eljárásokat, a következő előfeltételeknek kell megfelelnie:
 
 - Hozzá kell férnie a Microsoft Dynamics Lifecycle Services (LCS) fiókjához.
-- Olyan LCS-projekttel kell rendelkeznie, amely a Microsoft Dynamics 365 Finance és a Dynamics 365 Supply Chain Management 10.0.13-as vagy újabb verzióját tartalmazza. Ezenkívül ezeket az alkalmazásokat a következő Azure földrajzi régiók egyikében kell telepíteni:
+- Olyan LCS-projekttel kell rendelkeznie, amely a Microsoft Dynamics 365 Finance és a Dynamics 365 Supply Chain Management 10.0.17-as vagy újabb verzióját tartalmazza. Ezenkívül ezeket az alkalmazásokat a következő Azure földrajzi régiók egyikében kell telepíteni:
 
     - USA keleti régiója
     - USA nyugati régiója
@@ -52,6 +52,13 @@ Mielőtt teljesítené az ebben a témakörben ismertetett eljárásokat, a köv
 2. Válassza az **Előzetes funkció kezelése** csempe lehetőséget.
 3. A **Nyilvános előzetes verzió** szakaszban válassza az **e-számlázási szolgáltatás** lehetőséget.
 4. Ellenőrizze, hogy az **Előzetes funkció engedélyezve** értéke **Igen** értékre van-e állítva.
+5. Válassza ki az LCS-telepítési projektet az LCS-irányítópulton. Az LCS-projektnek futnia kell.
+7. A **Környezetbővítmények** lapon válassza az **Új bővítmény telepítése** lehetőséget.
+8. Válassza ki az **e-számlázási szolgáltatások** lehetőséget, az **AAD alkalmazás azonosítója** mezőbe pedig írja be a következőt: **091c98b0-a1c9-4b02-b62c-7753395ccabe**. Ez egy rögzített érték.
+10. Az **AAD-bérlőazonosító** mezőbe írja be az Azure előfizetési fiókja bérlőazonosítóját.
+11. Olvassa el az Általános Szerződési Feltételeket, majd jelölje be a jelölőnégyzetet.
+12. Válassza a **Telepítés** parancsot.
+
 
 ## <a name="set-up-the-parameters-for-rcs-integration-with-the-electronic-invoicing-add-on"></a>RCS-integráció paramétereinek beállítása az Elektronikus számlázási bővítménnyel
 
@@ -73,7 +80,7 @@ Mielőtt teljesítené az ebben a témakörben ismertetett eljárásokat, a köv
 ## <a name="create-key-vault-secret"></a>Key Vault titkos kód létrehozása
 
 1. Jelentkezzen be a RCS-fiókba.
-2. Nyissa meg a **Globalizációs funkció** munkaterületet, a **Környezet** szakaszban válassza az **e-számlázás** csempét.
+2. A **Globalizációs funkció** munkaterületen a **Környezet** szakaszban válassza ki az **Elektronikus számlázás bővítmény** csempét.
 3. A **Környezet beállítása** lapon a Művelet ablaktáblán válassza ki a **Szolgáltatási környezet**, majd a **Key Vault-paraméterek** lehetőséget.
 4. Kulcstartó titkos kód létrehozásához válassza az **Új** lehetőséget.
 5. A **Név** mezőben adja meg a kulcstartó titkos kód nevét. Adjon meg egy leírást a **Leírás** mezőben.
@@ -82,22 +89,31 @@ Mielőtt teljesítené az ebben a témakörben ismertetett eljárásokat, a köv
 
 ## <a name="create-storage-account-secret"></a>Titkos kód létrehozása tárfiókhoz
 
-1. A **Kulcstartó paraméterei** oldalon a **Tanúsítványok** szakaszban válassza a **Hozzáadás** lehetőséget.
-2. A **Név** mezőbe írja be ugyanazon tárfiók titkos kódját. Adjon meg egy leírást a **Leírás** mezőben.
-3. A **Típus** mezőben válassza ki a **Tanúsítvány** lehetőséget.
-4. Válassza a **Mentés** gombot, majd zárja be az oldalt.
+1. Menjen a **Rendszerfelügyelet** > **Beállítás** > **Key Vault-paraméterek** pontra , és válassza ki a kulcstartó titkos kódját.
+2. A **Tanúsítványok** szakaszban válassza a **Hozzáadás** lehetőséget.
+3. A **Név** mezőbe írja be a tárfiók titkos kódjának nevét, és adjon meg egy leírást a **Leírás** mezőben.
+4. A **Típus** mezőben válassza ki a **Tanúsítvány** lehetőséget.
+5. Válassza a **Mentés** gombot, majd zárja be az oldalt.
+
+## <a name="create-a-digital-certificate-secret"></a>Digitális tanúsítvány titkos kódjának létrehozása
+
+1. Menjen a **Rendszerfelügyelet** > **Beállítás** > **Key Vault-paraméterek** pontra , és válassza ki a kulcstartó titkos kódját.
+2. A **Tanúsítványok** szakaszban válassza a **Hozzáadás** lehetőséget.
+3. A **Név** mezőbe írja be a digitális tanúsítvány titkos kódjának nevét, és adjon meg egy leírást a **Leírás** mezőben.
+4. A **Típus** mezőben válassza ki a **Tanúsítvány** lehetőséget.
+5. Válassza a **Mentés** gombot, majd zárja be az oldalt.
 
 ## <a name="create-an-electronic-invoicing-add-on-environment"></a>Az Elektronikus számlázási bővítmény környezetének létrehozása
 
 1. Jelentkezzen be a RCS-fiókba.
-2. Nyissa meg a **Globalizációs funkció** munkaterületet, a **Környezet** szakaszban válassza az **e-számlázás** csempét.
+2. A **Globalizációs funkció** munkaterületen a **Környezet** szakaszban válassza ki az **Elektronikus számlázás bővítmény** csempét.
 
 ## <a name="create-a-service-environment"></a>Szolgáltatási környezet létrehozása
 
 1. A **Környezet beállítása** oldalon a Művelet ablaktáblán válassza a **Szolgáltatási környezet** lehetőséget.
 2. Válassza ki az **Új** lehetőséget egy új szolgáltatási környezet létrehozásához.
 3. A **Név** mezőben adja meg az e-számlázási környezet nevét. Adjon meg egy leírást a **Leírás** mezőben.
-4. A **Tárterület SAS-token titkos kód** mezőben válassza ki annak a tanúsítványnak a nevét, amely a tárfiókhoz való hozzáférés hitelesítéséhez szükséges.
+4. A **Tárterület SAS-token titkos kód** mezőben válassza ki azon tárfiók titkos kódjának a nevét, amely a tárfiókhoz való hozzáférés hitelesítéséhez szükséges.
 5. A **Felhasználók** szakaszban válassza a **Hozzáadás** lehetőséget annak a felhasználónak a hozzáadásához, aki számára engedélyezett az elektronikus számlák elküldése a környezetben, valamint a tárfiókhoz való csatlakozás.
 6. A **Felhasználói azonosító** mezőbe írja be a felhasználó aliasát. Az **E-mail** mezőbe írja be a feladó e-mail-címét.
 7. Válassza a **Mentés** lehetőséget.

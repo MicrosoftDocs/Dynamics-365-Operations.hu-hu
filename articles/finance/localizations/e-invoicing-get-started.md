@@ -3,7 +3,7 @@ title: Első lépések az Elektronikus számlázásbővítménnyel
 description: Ez a témakör olyan információkat tartalmaz, amelyek bemutatják az Elektronikus számlázásbővítménnyel kapcsolatos első lépéseket a Microsoft Dynamics 365 Finance és Dynamics 365 Supply Chain Management szolgáltatásokban.
 author: gionoder
 manager: AnnBe
-ms.date: 02/03/2021
+ms.date: 02/22/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 07954c5c96f390bc651794f8b6c61f2a1a17ab8b
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: 56227e031f8205836bcae9ce26006fc8091c2863
+ms.sourcegitcommit: 543772ee97efe215cf6f2ec6e092cc1568919f20
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5111220"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "5592550"
 ---
 # <a name="get-started-with-the-electronic-invoicing-add-on"></a>Első lépések az Elektronikus számlázásbővítménnyel
 
@@ -38,7 +38,6 @@ Az alábbi táblázat felsorolja az Elektronikus számlázás funkcióit, valami
 | Belga elektronikus számla (BE)      | <p>Értékesítési számla</p><p>Projektszámla</p> |
 | Brazil NF-e (BR)                  | <p>55. modell típusú pénzügyi bizonylat</p><p>Helyesbítő levél</p> |
 | Brazil NFS-e ABRASF Curitiba (BR) | Szolgáltatási pénzügyi bizonylat |
-| Brazil NFS-e São Paulo (BR)       | Szolgáltatási pénzügyi bizonylat |
 | Dán elektronikus számla (DK)       | <p>Értékesítési számla</p><p>Projektszámla</p> |
 | Egyiptomi elektronikus számla (EG)     | <p>Értékesítési számla</p><p>Projektszámla</p> |
 | Észt elektronikus számla (EE)     | <p>Értékesítési számla</p><p>Projektszámla</p> |
@@ -64,14 +63,14 @@ Mielőtt teljesítené az ebben a témakörben ismertetett eljárásokat, a köv
 ## <a name="import-an-electronic-invoicing-feature-from-the-microsoft-configuration-provider"></a>Elektronikus számlázási funkció importálása a Microsoft konfigurációszolgáltatóból 
 
 1. Jelentkezzen be a saját RCS-fiókjába.
-2. Nyissa meg a **Globalizációs funkció** munkaterületet, a **Funkciók** szakaszban válassza az **e-számlázás** csempét.
+2. A **Globalizációs funkció** munkaterületen a **Funkciók** szakaszban válassza ki az **Elektronikus számlázás bővítmény** csempét.
 3. Válassza ki az **Import**, majd a **Szinkronizálás** lehetőséget.
 4. Szűrje a **Konfigurációszolgáltató** oszlopot a **Microsoft** kifejezés szerint.
 5. Válassza ki az Elektronikus számlázási funkció nevét a témakör elején található táblából, majd válassza az **Importálás** lehetőséget.
 
 ## <a name="create-an-electronic-invoicing-feature-under-your-organization-provider"></a>Elektronikus számlázás funkció létrehozása a szervezetszolgáltató keretében
 
-1. Az RCS-ben nyissa meg a **Globalizációs funkció** munkaterületet, és a **Funkciók** szakaszban válassza az **e-számlázás** csempét.
+1. RCS-ben a **Globalizációs funkció** munkaterületen a **Funkciók** szakaszban válassza ki az **Elektronikus számlázás bővítmény** csempét.
 2. Válassza a **Hozzáadás** > **Meglévő szolgáltatás alapján** lehetőséget, és a **Név** mezőben adja meg az Elektronikus számlázási funkció nevét.
 3. A **Leírás** mezőbe írja be a funkció leírását.
 4. Az **Alapfunkció** mezőben válassza ki az importált Elektronikus számlázási funkciót a Microsoft konfigurációszolgáltatóból.
@@ -79,7 +78,9 @@ Mielőtt teljesítené az ebben a témakörben ismertetett eljárásokat, a köv
 
 ## <a name="configure-the-electronic-invoicing-feature"></a>Az Elektronikus számlázási funkció konfigurálása
 
-Az országtól vagy régiótól függően az Elektronikus számlázási funkció további konfigurálást igényelhet. Az adott lépésekről az adott ország vagy régió számára elérhető Első lépések dokumentációjában található részletes információ.
+Az országtól vagy régiótól függően az Elektronikus számlázási funkció további konfigurálást igényelhet. 
+
+Az adott lépésekről az adott ország vagy régió számára elérhető Első lépések dokumentációjában található részletes információ.
 
 ## <a name="configure-the-application-setup"></a>Az alkalmazás beállításának konfigurálása
 
@@ -100,7 +101,6 @@ Az országtól vagy régiótól függően az Elektronikus számlázási funkció
     | Belga elektronikus számla (BE)      | <p>Értékesítési számla</p><p>Projektszámla</p> | <p>Vevői számlanapló</p><p>Projektszámla</p> |
     | Brazil NF-e (BR)                  | <p>Pénzügyi bizonylat</p><p>Helyesbítő levél</p> | Pénzügyi bizonylat |
     | Brazil NFS-e ABRASF Curitiba (BR) | Szolgáltatási pénzügyi bizonylat | Pénzügyi bizonylat |
-    | Brazil NFS-e São Paulo (BR)       | Szolgáltatási pénzügyi bizonylat | Pénzügyi bizonylat |
     | Dán elektronikus számla (DK)       | <p>Értékesítési számla</p><p>Projektszámla</p> | <p>Vevői számlanapló</p><p>Projektszámla</p> |
     | Egyiptomi elektronikus számla (EG)     | <p>Értékesítési számla</p><p>Projektszámla</p> | <p>Vevői számlanapló</p><p>Projektszámla</p> |
     | Észt elektronikus számla (EE)     | <p>Értékesítési számla</p><p>Projektszámla</p> | <p>Vevői számlanapló</p><p>Projektszámla</p> |
@@ -122,7 +122,6 @@ Az országtól vagy régiótól függően az Elektronikus számlázási funkció
     | Belga elektronikus számla (BE)      | <p>Értékesítési számla</p><p>Projektszámla</p> | <p>Vevői számla kontextusmodell – vevői számla kontextusa</p><p>Vevői számla kontextusmodell – projektszámla kontextusa</p> |
     | Brazil NF-e (BR)                  | <p>Pénzügyi bizonylat</p><p>Helyesbítő levél</p> | <p>Vevői számla kontextusmodell – pénzügyi bizonylat kontextusa</p><p>Vevői számla környezetmodell – FD helyesbítő levél kontextusa</p> |
     | Brazil NFS-e ABRASF Curitiba (BR) | Szolgáltatási pénzügyi bizonylat| Vevői számla kontextusmodell – pénzügyi bizonylat kontextusa |
-    | Brazil NFS-e São Paulo (BR)       | Szolgáltatási pénzügyi bizonylat| Vevői számla kontextusmodell – pénzügyi bizonylat kontextusa |
     | Dán elektronikus számla (DK)       | <p>Értékesítési számla</p><p>Projektszámla</p> | <p>Vevői számla kontextusmodell – vevői számla kontextusa</p><p>Vevői számla kontextusmodell – projektszámla kontextusa</p> |
     | Egyiptomi elektronikus számla (EG)     | <p>Értékesítési számla</p><p>Projektszámla</p> | <p>Vevői számla kontextusmodell – vevői számla kontextusa</p><p>Vevői számla kontextusmodell – projektszámla kontextusa</p> |
     | Észt elektronikus számla (EE)     | <p>Értékesítési számla</p><p>Projektszámla</p> | <p>Vevői számla kontextusmodell – vevői számla kontextusa</p><p>Vevői számla kontextusmodell – projektszámla kontextusa</p> |
@@ -144,7 +143,6 @@ Az országtól vagy régiótól függően az Elektronikus számlázási funkció
     | Belga elektronikus számla (BE)      | <p>Értékesítési számla</p><p>Projektszámla</p> | <p>Számlamodell leképezése – vevői számla</p><p>Számlamodell leképezése – projektszámla</p> |
     | Brazil NF-e (BR)                  | <p>Pénzügyi bizonylat</p><p>Helyesbítő levél</p> | <p>Pénzügyi bizonylat leképezése – pénzügyi bizonylatok leképezése</p><p>Pénzügyi bizonylat leképezése – helyesbítő levél leképezése</p> |
     | Brazil NFS-e ABRASF Curitiba (BR) | Szolgáltatási pénzügyi bizonylat | Pénzügyi bizonylat leképezése – pénzügyi bizonylatok leképezése |
-    | Brazil NFS-e São Paulo (BR)       | Szolgáltatási pénzügyi bizonylat | Pénzügyi bizonylat leképezése – pénzügyi bizonylatok leképezése |
     | Dán elektronikus számla (DK)       | <p>Értékesítési számla</p><p>Projektszámla</p> | <p>Számlamodell leképezése – vevői számla</p><p>Számlamodell leképezése – projektszámla</p> |
     | Egyiptomi elektronikus számla (EG)     | <p>Értékesítési számla</p><p>Projektszámla</p> | <p>Számlamodell leképezése – vevői számla</p><p>Számlamodell leképezése – projektszámla</p> |
     | Észt elektronikus számla (EE)     | <p>Értékesítési számla</p><p>Projektszámla</p> | <p>Számlamodell leképezése – vevői számla</p><p>Számlamodell leképezése – projektszámla</p> |
@@ -158,7 +156,9 @@ Az országtól vagy régiótól függően az Elektronikus számlázási funkció
     | Spanyol elektronikus számla (ES)      | <p>Értékesítési számla</p><p>Projektszámla</p> | <p>Számlamodell leképezése – vevői számla</p><p>Számlamodell leképezése – projektszámla</p> |
     | PEPPOL elektronikus számla            | <p>Értékesítési számla</p><p>Projektszámla</p> | <p>Számlamodell leképezése – vevői számla</p><p>Számlamodell leképezése – projektszámla</p> |
 
-Az országtól vagy régiótól függően az Elektronikus számlázási funkció további konfigurálást igényelhet. Az adott lépésekről az adott ország vagy régió számára elérhető Első lépések dokumentációjában található részletes információ.
+Az országtól vagy régiótól függően az Elektronikus számlázási funkció további konfigurálást igényelhet.
+
+Az adott lépésekről az adott ország vagy régió számára elérhető Első lépések dokumentációjában található részletes információ.
 
 ## <a name="deploy-the-electronic-invoicing-feature"></a>Az Elektronikus számlázási funkció telepítése
 
@@ -177,27 +177,26 @@ Az országtól vagy régiótól függően az Elektronikus számlázási funkció
 
 1. Jelentkezzen be a Finance vagy a Supply Chain Management szolgáltatásba, és ellenőrizze, hogy a megfelelő jogi személynél van-e.
 2. Menjen a **Szervezeti adminisztráció** \> **Beállítás** \> **Elektronikus dokumentumparaméterek** lehetőségre.
-3. A **Funkciók** lapon válassza ki az alábbi táblázatban felsorolt funkcióhivatkozás(oka)t, és ezzel bekapcsolhatja a Finance vagy a Supply Chain Management Elektronikus számlázási funkcióját.
+3. A **Funkciók** lapon válassza ki azt az ország-/régióspecifikus funkciót, amely bekapcsolja a Finance vagy a Supply Chain Management szolgáltatás számlázási funkcióját. Az alábbi táblázat felsorolja azokat az elektronikus számlázási funkciókat, amelyek az egyes országok és régiók számára elérhetők. 
 
-    | Funkció neve                         | Ország/régió  | Funkcióra mutató hivatkozás |
-    |--------------------------------------|-----------------|-------------------|
-    | Osztrák elektronikus számlák (AT)    | Ausztria         | EUR-00023 |
-    | Belga elektronikus számla (BE)      | Belgium         | EUR-00023 |
-    | Brazil NF-e (BR)                  | Brazília          | BR-00053 |
-    | Brazil NFS-e ABRASF Curitiba (BR) | Brazília          | BR-00095 |
-    | Brazil NFS-e São Paulo (BR)       | Brazília          | BR-00095 |
-    | Dán elektronikus számla (DK)       | Dánia         | <p>EUR-00023</p><p>DK-00001</p> |
-    | Holland elektronikus számla (NL)        | Hollandia | EUR-00023 |
-    | Egyiptomi elektronikus számla (EG)     | Egyiptom           | EG-00008 |
-    | Észt elektronikus számla (EE)     | Észtország         | EUR-00023 |
-    | Finn elektronikus számla (FI)      | Finnország         | EUR-00023 |
-     Francia elektronikus számla (FR)       | Franciaország           | EUR-00023 |
-    | Német elektronikus számla (DE)       | Németország         | EUR-00023 |
-    | Mexikói CFDI Interfactura (MX)       | Mexikó          | <p>MX-00010</p><p>MX-00016</p> |
-    | Norvég elektronikus számla (NO)    | Norvégia          | <p>EUR-00023</p><p>NO-00010</p> |
-    | Spanyol elektronikus számla (ES)      | Spanyolország           | <p>EUR-00023</p><p>ES-00025</p> |
-    | Olasz elektronikus számla (IT)      | Olaszország           | <p>EUR-00023</p><p>IT-00036</p> |
-    | PEPPOL elektronikus számla            | Európa          | EUR-00023 |
+    | Funkció neve                                          | Ország/régió  |
+    |-------------------------------------------------------|-----------------|
+    | Osztrák elektronikus számlák (AT)                     | Ausztria         |
+    | Belga elektronikus számla (BE)                       | Belgium         |
+    | CFDI mexikói elektronikus számla (MX)                  | Mexikó          |
+    | Dán elektronikus számla (DK)                        | Dánia         |
+    | Holland elektronikus számla (NL)                         | Hollandia |
+    | Egyiptomi elektronikus számla (EG)                      | Egyiptom           |
+    | Észt elektronikus számla (EE)                      | Észtország         |
+    | Finn elektronikus számla (FI)                       | Finnország         |
+    | Francia elektronikus számla (FR)                        | Franciaország          |
+    | Német elektronikus számla (DE)                        | Németország         |
+    | Olasz elektronikus számla (IT)                       | Olaszország           |
+    | NF-e szövetségi – brazil elektronikus számla (BR)      | Brazília          |
+    | NFS-e – Brazil szolgáltatás (városi) elektronikus számla   | Brazília          |
+    | Norvég elektronikus számla (NO)                     | Norvégia          |
+    | PEPPOL elektronikus számla                             | Globális          |
+    | Spanyol elektronikus számla (ES)                       | Spanyolország           |
 
 4. Válassza a **Mentés** lehetőséget.
 
@@ -226,11 +225,11 @@ Az országtól vagy régiótól függően az Elektronikus számlázási funkció
 
 3. Válasszon ki egy számlát a rácsban, majd válassza a **Lekérdezés** \> **Beküldési részletek** lehetőséget.
 
-Az országtól vagy régiótól függően az Elektronikus számlázási funkció további konfigurálást igényelhet. Az adott lépésekről az adott ország vagy régió számára elérhető Első lépések dokumentációjában található részletes információ.
 
 ## <a name="related-topics"></a>Kapcsolódó témakörök
 
 - [Elektronikus számlázási bővítmény áttekintése](e-invoicing-service-overview.md)
+- [Első lépések az elektronikus számlázási bővítményszolgáltatás adminisztrálása során](e-invoicing-get-started-service-administration.md)
 - [Első lépések a brazil Elektronikus számlázásbővítménnyel](e-invoicing-bra-get-started.md)
 - [Első lépések a mexikói Elektronikus számlázásbővítménnyel](e-invoicing-mex-get-started.md)
 - [Első lépések az olasz Elektronikus számlázásbővítménnyel](e-invoicing-ita-get-started.md)

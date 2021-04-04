@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 78fddd033c777f5be6408d5e2db691ae966edb3a
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: 38848fe326deb4dd1e63c9f090765e8a0af2f649
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5115246"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5467963"
 ---
 # <a name="overview"></a>Áttekintés
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 A Dynamics 365 Human Resources felhasználói útmutató útmutatást nyújt az Emberi erőforrások beállításáról, az alkalmazottak kompenzációjának és juttatásának beállításáról, valamint a munkaerő kezeléséről.
 

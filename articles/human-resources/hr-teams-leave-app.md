@@ -3,7 +3,7 @@ title: Szabadság- és távollétkérelmek kezelése a Teams alkalmazásban
 description: Ez a témakör azt mutatja be, hogyan lehet szabadságot kérelmezni a Dynamics 365 Human Resources alkalmazásban a Microsoft Teams rendszerben.
 author: andreabichsel
 manager: tfehr
-ms.date: 10/28/2020
+ms.date: 02/23/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,22 +18,22 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 342106ad09db3a5d9c2dec8ab18e824d70e0f6bf
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: 79bded5a241a8d5de1847adff3e663359ce1b26f
+ms.sourcegitcommit: d7c18228256daeefbf6518c3ef82fed4f7dbc161
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5128161"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5571728"
 ---
-# <a name="manage-leave-requests-in-teams"></a>Szabadság- és távollétkérelmek kezelése a Teams alkalmazásban
+# <a name="manage-leave-requests-in-teams"></a>Szabadságkérelmek kezelése a Teamsben
 
-[!include [banner](includes/preview-feature.md)]
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-A Microsoft Dynamics 365 Human Resources alkalmazás a Microsoft Teams rendszerben lehetővé teszi, hogy gyorsan kérelmezzen szabadságot, és megtekintse a szabadságegyenlegét közvetlenül a Microsoft Teams rendszerben. A robottal együttműködhet a szükséges adatok lekéréséhez és a szabadságkérelem elindításához. A **Szabadság** lapon részletesebb információk olvashatók. A közelgő szabadságairól is információkat küldhet az embereknek a Teamsben és a Human Resources alkalmazáson kívüli csevegőfelületeken.
+A Dynamics 365 Human Resources alkalmazás a Microsoft Teams rendszerben lehetővé teszi, hogy gyorsan kérelmezzen szabadságot, és megtekintse a szabadságegyenlegét közvetlenül a Microsoft Teams rendszerben. A robottal együttműködhet a szükséges adatok lekéréséhez és a szabadságkérelem elindításához. A **Szabadság** lapon részletesebb információk olvashatók. A közelgő szabadságairól is információkat küldhet az embereknek a Teamsben és a Human Resources alkalmazáson kívüli csevegőfelületeken.
 
 ## <a name="install-the-app"></a>Az alkalmazás telepítése
 
-A Human Resources app a Teams áruházban található.
+A Dynamics 365 Human Resources alkalmazás a Teams áruházban található.
 
 1. A Microsoft Teams rendszerben válassza ki a három pontot.
 
@@ -70,29 +70,21 @@ Az alkalmazás telepítése után egy üdvözlő üzenet jelenik meg, amely isme
 
 A robot a következőre kérhető:
 
-- Az egyes regisztrált szabadságtípusokhoz tartozó szabadságegyenleg-információk megjelenítése.
-
-   ![Human Resources Teams szabadságkezelő alkalmazás egyenlegek megjelenítése](./media/hr-teams-leave-app-bot-balances.png)
- 
-- Egy adott szabadságtípussal kapcsolatos további részletek megjelenítése.
-
-   ![Human Resources Teams szabadságkezelő alkalmazás részletes adatok megjelenítése](./media/hr-teams-leave-app-bot-details.png)
-
 - Szabadságkérelem indítása az Ön számára.
 
-   ![Human Resources Teams szabadságkezelő alkalmazás szabadság kérelmezése](./media/hr-teams-leave-app-bot-request.png)
- 
-A szabadságkérelem elindítását követően a napokat közvetlenül a kártyán állíthatja be.
+  ![Szabadságkérés indítása a Teams-csevegésben](./media/hr-teams-leave-app-initiate.png)
 
-![Human Resources Teams szabadságkezelő alkalmazás kérelem szerkesztése](./media/hr-teams-leave-app-bot-edit.png)
- 
-Ha befejezte az adatok megadását, válassza az **Elküldés** lehetőséget, hogy elküldje jóváhagyásra. Választhatja a **Mentés piszkozatként** lehetőséget is, hogy később visszatérhessen hozzá.
+- A csevegőrobot automatikusan kitölti a szabadságra vonatkozó kérést. Válassza ki a **Távollét kérelmezése** lehetőséget, és szerkessze a kérés részleteit.
 
-![Human Resources Teams szabadságkezelő alkalmazás kérelem elküldése](./media/hr-teams-leave-app-bot-submit.png)
+  ![Szabadságkérelem részletes adatainak szerkesztése](./media/hr-teams-leave-app-details.png)
+
+- Ha végzett a szabadságkérés részleteinek szerkesztésével, a **Küldés** gombot kiválasztva küldje el jóváhagyásra.
+
+  ![Szabadságra vonatkozó kérelem elküldése](./media/hr-teams-leave-app-submit.png)
 
 ## <a name="manage-your-leave-in-teams"></a>Távollét kezelése a Teams alkalmazásban
 
-A **Szabadság** lapon a következők jeleníthetők meg:
+A **Szabadság** lapon a következők jeleníthetők meg: 
 
 - Az egyes regisztrált szabadságtípusokhoz tartozó egyenleg-információk
 
@@ -164,21 +156,51 @@ Ha Ön közvetlen beosztottakkal rendelkező vezető, akkor megtekintheti a csop
 
 1. A Teamsben a Human Resources alkalmazásban válassza a **Távollét** lehetőséget.
 
-2. Válassza ki a **Csoport naptárát**.
+2. Válassza ki a **Csoport naptárát**. A naptárban a közvetlen beosztottjai jóváhagyott és a függőben lévő távollétei láthatók.
 
    ![Naptár megtekintése a Human Resources Teams alkalmazásban](./media/hr-teams-leave-app-view-calendar.png)
 
-A naptárban a közvetlen beosztottjai jóváhagyott és a függőben lévő távollétei láthatók.
+   > [!NOTE]
+   > Ha nem látja a csapatnaptárat, kérje meg a rendszergazdát, hogy engedélyezze. További információ: [Telepítés és beállítás](hr-admin-teams-leave-app.md#install-and-setup).
 
-![Távolléti naptár a Human Resources Teams alkalmazásban](./media/hr-teams-leave-app-calendar.png)
+## <a name="supported-languages"></a>Támogatott nyelvek
+
+A Dynamics 365 Human Resources alkalmazásban a Teamsben az alábbi nyelvek támogatottak:
+
+| Területibeállítás-azonosító | Nyelv |
+| --- | --- |
+| de-DE | Német (Németország) |
+| es-ES | Spanyol (Spanyolország) |
+| es-MX | Spanyol (Mexikó) |
+| fr-CA | Francia (Kanada) |
+| fr-FR | Francia (Franciaország) |
+| it-IT | Olasz (Olaszország) |
+| nl-NL | Holland (Hollandia) |
+| pt-BR | Portugál (Brazília) |
+| tr-TR | Török (Törökország) |
+| zh-CN | Kínai (egyszerűsített) |
 
 ## <a name="troubleshooting"></a>Hibaelhárítás
 
-Ha nem sikerül bejelentkeznie a Human Resources Teams alkalmazásba vagy nem tudja használni, próbálja ki ezeket a hibaelhárítási utasításokat. Ha a hibaelhárítás után sem oldódott meg a probléma, akkor forduljon a támogatáshoz. További információért lásd a [Támogatás kérése](hr-admin-troubleshooting-support.md) lehetőséget.
+Ha nem sikerül bejelentkeznie a Dynamics 365 Human Resources Teams alkalmazásba vagy nem tudja használni, próbálja ki ezeket a hibaelhárítási utasításokat. Ha a hibaelhárítás után sem oldódott meg a probléma, akkor forduljon a támogatáshoz. További információért lásd a [Támogatás kérése](hr-admin-troubleshooting-support.md) lehetőséget.
 
 ### <a name="cant-sign-into-the-human-resources-app-in-teams"></a>Nem lehet bejelentkezni a Human Resources alkalmazásba a Teamsben.
 
 Ha nem tud bejelentkezni az alkalmazásba, akkor előfordulhat, hogy a Microsoft Teamsbe való bejelentkezéshez használt fiók nincs alkalmazotti rekordhoz társítva a Dynamics 365 Human Resources alkalmazásban. Forduljon a rendszergazdához, és ellenőrizze, hogy az alkalmazotti rekord helyesen van-e társítva.
+
+### <a name="translations-dont-display-correctly"></a>A fordítások nem megfelelően jelennek meg
+
+Ha a fordítások nem a vártnak megfelelően jelennek meg, győződjön meg róla, hogy a Teamsben kiválasztott nyelv megegyezik a Human Resources **Felhasználói beállítások** részén megadott nyelvvel.
+
+A Teamsben nézze meg az **Alkalmazás nyelve** elemet a **Beállítások** között.
+
+![Teams beállításai](./media/hr-teams-leave-app-settings.png)
+
+A Humar Resources alkalmazásban válassza a **Beállítások** lehetőséget, majd a **Felhasználói beállítások** lehetőséget. Ellenőrizze, hogy a **Nyelv** mező megegyezik-e a Teams **Alkalmazás nyelve** mezőjével.
+
+![Human Resources Felhasználói beállítások](./media/hr-teams-leave-app-user-options.png)
+
+Ha továbbra is fordítási problémákat tapasztal, tudassa velünk. További információért tekintse át a [Támogatás igénylése a Finance and Operations alkalmazásokhoz vagy a Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs-support?toc=/dynamics365/human-resources/toc.json) szolgáltatáshoz.
 
 ### <a name="error-when-approving-leave-requests-in-the-human-resources-app-in-teams"></a>Hiba történt a Teamsen belüli Human Resource alkalmazásban a szabadságkérelmek jóváhagyásakor.
 
@@ -198,7 +220,6 @@ A Teams Human Resources alkalmazásában a következőak adálymentességgel kap
 | A **Szabadságolás** lapon a Narrátor egy gombműveletet jelent be, miközben elolvassa a szabadságolás rács fejlécét. | A rács fejléce és elemei év szerint vannak csoportosítva, és összecsukhatók. A Narrátor ezt végrehajtható elemként értelmezi, de valójában nem az. |
 | A **Szabadságolás** lapon egy további pöccintési kézmozdulat jelenik meg, amikor egy új kérelemben az **Okkódra** navigál. | Nincs olyan rejtett vezérlő, amelyhez a pöccintési navigáció megpróbálna eljutni. |
 | Ha a **Szabadságolás** lapon pöccint, miközben a naptár meg van nyitva, akkor a vezérlőn kívülre kerül, nem pedig egy új kérés tetejére, vagy egy kérés szerkesztése közben. | Amikor eléri az **Ugrás a mai napra** elemet, vegye úgy, hogy elért a vezérlő végére, és pöccintsen az ellenkező irányba, hogy visszakerüljön felülre. |
-| A Narrátor nem olvassa el a dátumok címkéit. | A párokban előforduló dátumok mindig **Kezdő dátum** és **Záró dátum**. |
 | A **Csevegés** lapon a fókusz visszaugrik a képernyő tetejére, amikor dátumot ad meg a kisegítő eszközt vagy a billentyűzetes navigációt használja. | Használja a Tab billentyűt addig, amíg újra el nem éri a beviteli területet. |
 
 ## <a name="privacy-notice"></a>Adatvédelmi nyilatkozat

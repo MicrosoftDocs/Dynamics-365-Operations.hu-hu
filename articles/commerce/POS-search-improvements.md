@@ -3,7 +3,7 @@ title: Termék- és vevőkeresés a pénztárban (POS)
 description: Ez a témakör áttekintést nyújt a Dynamics 365 Commerce termék- és vevőkeresési funkcióján végrehajtott fejlesztésekről.
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 07/28/2020
+ms.date: 03/10/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: 1de8373471ff8187bd476305c9ed0b26beaa52d5
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 23b556e72e1ec76be48336bed21d02abd9d31087
+ms.sourcegitcommit: db9b35ce6968cad8874b3c13d4c02d84e2617c8b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4965278"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "5574719"
 ---
 # <a name="product-search-and-customer-search-in-the-point-of-sale-pos"></a>Termék- és vevőkeresés a pénztárban (POS)
 
@@ -43,17 +43,14 @@ A **Katalógus módosítása** oldalon az alkalmazottak egyszerűen kiválasztha
 A helyi termékkeresés a következő terméktulajdonságokon belül történik:
 
 - Termékszám
-- Termék neve
+- Terméknév
 - Leírás
 - Dimenziók
 - Vonalkód
 - Keresési név
 
-### <a name="enhancements-to-local-product-searches"></a>Helyi termékkeresések továbbfejlesztése
+### <a name="additional-local-product-search-capabilities"></a>További helyi termékkeresési funkciók
 
-A helyi termékkeresés használata felhasználóbarátabbá vált. A következő fejlesztések történtek:
-
-- A termék és vevő legördülő menük bekerültek a Keresés mezőbe, hogy az alkalmazottak választhassanak a **Termék** vagy a **Vevő** közül a keresés előtt. Alapértelmezés szerint a **Termék** van ki jelölve a következő ábrán látható módon.
 - A több kulcsszavas keresésnél (például a keresési kifejezések használatával végzett keresésnél), a kiskereskedők beállíthatják, hogy a keresési találatok közé a *bármelyik* keresési feltételnek megfelelő találatok vagy csak az *összes* keresési feltételeknek megfelelő találatok kerüljenek-e be. A funkció beállítása a pénztári funkcióprofilban, a **Termékkeresés** nevű új csoportban érhető el. Az alapértelmezett beállítás **Bármelyik keresési kifejezés egyeztetése**. Ez a beállítás egyúttal az ajánlott beállítás is. A **Bármely keresési kifejezésnek megfelel** beállítás használatakor minden olyan termék megjelenik a találatok között, amely egy vagy több teljes vagy részleges keresési kifejezést tartalmaz. Ezeket az eredményeket a rendszer automatikusan sorrendbe rendezi azon olyan termékek növekvő sorrendjében, amelyeknél a legtöbb a kulcsszóegyezés (teljes vagy részleges).
 
     Az **Az összes keresési kifejezés egyeztetése** beállítás csak a minden a keresési feltételnek (egészben vagy részlegesen) megfelelő termékeket adja vissza. Ez a beállítás akkor hasznos, ha a a terméknevek hosszúak, és az alkalmazottak csak korlátozott számú terméket akarnak látni a keresési eredmények között. Azonban az ilyen típusú keresésre két korlátozás vonatkozik:
@@ -61,7 +58,7 @@ A helyi termékkeresés használata felhasználóbarátabbá vált. A következ�
     - A keresés az egyes terméktulajdonságok alapján történik. Például csak azokat a termékeket adja vissza, amelyeknél az összes keresett kulcsszó szerepel legalább egy terméktulajdonságnál.
     - A dimenziók között nincs keresés.
 
-- A kiskereskedők a termékkeresést úgy is beállíthatják, hogy keresési javaslatok jelenjenek meg a terméknevek beírása közben. A funkció egy új beállítása a pénztári funkcióprofilban, a **Termékkeresés** nevű csoportban érhető el. A beállítás neve **Keresési javaslatok mutatása gépelés közben**. A funkció segítségével az alkalmazottak gyorsan megtalálhatják a terméket, amelyet keresnek, mivel nem kell manuálisan beírniuk a teljes nevét.
+- A kiskereskedők a termékkeresést most úgy is beállíthatják, hogy keresési javaslatok jelenjenek meg a terméknevek beírása közben. A funkció egy új beállítása a pénztári funkcióprofilban, a **Termékkeresés** nevű csoportban érhető el. A beállítás neve **Keresési javaslatok mutatása gépelés közben**. A funkció segítségével az alkalmazottak gyorsan megtalálhatják a terméket, amelyet keresnek, mivel nem kell manuálisan beírniuk a teljes nevét.
 - A termékkeresési algoritmus mostantól a **Keresési név** terméktulajdonságban is keresi a keresési kifejezéseket.
 
 ![Termékjavaslatok](./media/Productsuggestions.png "Termékjavaslatok")
@@ -86,13 +83,13 @@ Globális kereséshez, az alkalmazottak választhatják az **Eredmények szűré
 > [!NOTE]
 > A távoli vevőkereséshez legalább négy karaktert meg kell adni, hogy legyen találat.
 
-A távoli vevőkeresésnél a vevőkód nem jelenik meg a más jogi személyektől származó vevők esetében, mert a jelenlegi vállalatnál nem jött létre vevőkód ezekhez a felekhez. Ha azonban az alkalmazott megnyitja a vevő adatlapot, a rendszer automatikusan létrehozza a vevőkódot az adott félnek, és az üzlet vevői címjegyzékét is társítja a vevővel. Így a vevő a későbbiekben végzett helyi keresésekben is látható lesz.
+A vevőkód nem jelenik meg a más jogi személyektől lekérdezett vevők esetében, mert a jelenlegi vállalatnál nem jött létre vevőkód ezekhez a felekhez. Ha azonban az alkalmazott megnyitja a vevő adatlapot, a rendszer automatikusan létrehozza a vevőkódot az adott félnek, és az üzlet vevői címjegyzékét is társítja a vevővel. Így a vevő a későbbiekben végzett helyi keresésekben is látható lesz.
 
 ![Globális vevők keresése](./media/Globalcustomersearch.png "Globális vevők keresése")
 
-### <a name="enhancements-to-local-customer-search"></a>Helyi vevőkeresés továbbfejlesztése
+### <a name="additional-local-customer-search-capabilities"></a>További helyi vevőkeresési funkciók
 
-A telefonszámon alapuló keresések egyszerűbbé váltak. Ezek a keresések most figyelmen kívül hagyják a különleges karaktereket, például a szóközöket, kötőjeleket és zárójeleket, amelyeket a vevő létrehozásakor esetleg hozzáadtak. Ezért a pénztárosoknak nem kell többé a telefonszámformátum miatt aggódniuk, amikor keresnek. Ha például egy vevő telefonszámát 123-456-7890 formában rögzítették, a pénztáros kereshet a vevőre az **123-456-7890** vagy az **1234567890** beírásával, ill. részlegesen a telefonszám első néhány számának részbeni megadásával.
+Amikor a felhasználó egy telefonszámot keres, a rendszer figyelmen kívül hagyja a különleges karaktereket (például a szóközöket, kötőjeleket és zárójeleket), amelyeket a vevő létrehozásakor esetleg hozzáadtak. Ezért a pénztárosoknak nem kell többé a telefonszámformátum miatt aggódniuk, amikor keresnek. Ha például egy vevő telefonszámát 123-456-7890 formában rögzítették, a pénztáros kereshet a vevőre az **123-456-7890** vagy az **1234567890** beírásával, ill. részlegesen a telefonszám első néhány számának részbeni megadásával.
 
 > [!NOTE]
 > A vevő több telefonszámmal és több e-mail-címmel is rendelkezhet. A vevőkeresési algoritmus ezekben a másodlagos e-mail-címekben és telefonszámokban is keres, de a vevőkeresési eredmények oldalon csak az elsődleges e-mail-cím és a telefonszám jelenik meg. Ez némi zavart okozhat, mivel a visszaküldött vevőeredmények nem mutatják a keresett e-mail-címet vagy telefonszámot. A jövőbeli kiadásban a vevőkeresési eredmények képernyőjén igyekszünk megmutatni ezeket az adatokat.
@@ -113,10 +110,46 @@ A **Megjelenítési sorrend** mező határozza meg, hogy melyik rövidítések j
 > [!NOTE]
 > Az egyéni tulajdonság, amelyet hozzáadnak a felsoroláshoz, nem befolyásolja a normál vevői keresési algoritmust. Más szóval a vevőkereső algoritmus nem keres az egyéni tulajdonságban. A felhasználók csak akkor használhatják az egyéni tulajdonságokat keresésre, ha az adott tulajdonság hozzá van adva rövidítésként, vagy ha az alapértelmezett keresési algoritmust felülbírálják.
 
-A Commerce valamelyik jövőbeli kiadásában a kiskereskedők a pénztárban be tudják majd állítani a **Keresés az összes üzletben** értéket a vevők alapértelmezett keresési módjaként. Ez akkor lehet hasznos, ha azonnal kell keresni a pénztáron kívül létrehozott vevők között (például az elosztási feladat futtatása előtt). Új, **Alapértelmezett vevőkeresési mód** nevű beállítás érhető el a pénztár működési profiljában. A **Be** érték megadásával az alapértelmezett keresési módként a **Keresés az összes üzletben** lehetőséget állítja be. Minden vevőkeresési kísérlet valós idejű hívást indít a központba.
+A kiskereskedők a pénztárban is beállíthatják az alapértelmezett vevőkeresési módot a **Keresés az összes üzletben** lehetőségre. Ez akkor lehet hasznos, ha azonnal kell keresni a pénztáron kívül létrehozott vevők között (például az elosztási feladat futtatása előtt). Ehhez a kiskereskedőnek be kell kapcsolnia az **Alapértelmezett vevőkeresési mód** lehetőséget a pénztár funkcióprofilban. Miután a beállítás értéke **Igen**, minden vevőkeresési kísérlet valós idejű hívást indít a központba.
 
 A teljesítménnyel kapcsolatos váratlan problémák megelőzése érdekében ezt a beállítást a **CUSTOMERSEARCH_ENABLE_DEFAULTSEARCH_FLIGHTING** tesztelési jelző mögé rejtettük. Így a felhasználói felület **Alapértelmezett vevőkeresési mód** beállításának megjelenítéséhez a kiskereskedőnek támogatási jegyben kell kérnie a felhasználói tesztelést (UAT) és a termelési környezet használatát. Miután megkapjuk a jegyet, a mérnöki csapat segít a kiskereskedőnek, hogy nem termelési környezetben történő teszteléssel tudja felmérni a teljesítményt, és végre tudja hajtani a szükséges optimalizációt.
 
+## <a name="cloud-powered-customer-search"></a>Felhőalapú vevőkeresés
 
+Az Azure Cognitive Search szolgáltatást használó ügyfélkeresési funkció nyilvános előzetes verziója megjelent a Commerce 10.0.18 kiadás részeként. A teljesítmény javítása mellett a szolgáltatás felhasználói a részletgazdagság és jobb relevanciafunkciók nyújtotta előnyöket is élvezhetik. A teljesítményjavasítások különösen hasznosak, amikor a pénztár globális keresési funkcióját (Keresés az összes üzletben) használja. Ennek az az oka, hogy a keresési eredményeket nem a Commerce központi felület adataiból, hanem az Azure Search indexből kell lekérni. 
+
+### <a name="enable-the-cloud-powered-search-feature"></a>A felhőalapú keresési funkció engedélyezése
+
+> [!NOTE]
+> A Commerce központi felületére és a Commerce Scale Unit 10.0.18-as verziójára egyaránt szükség van. A pénztár frissítése nem kötelező.
+
+Ha engedélyezni szeretné a Commerce központi felületén a felhőalapú keresés funkciót, kövesse az alábbi lépéseket.
+
+1. Lépjen a **Rendszerfelügyelet \> Munkaterületek \> Funkciókezelés** részre.
+1. Keresse meg és válassza ki az **(Előzetes verzió) felhőalapú vevőkeresés** funkciót, majd válassza az **Engedélyezés most** lehetőséget.
+1. Kattintson a **Retail és Commerce > Központ beállítása > Kereskedelmi ütemező > Kereskedelmi ütemező inicializálása** lehetőségre, és válassza az **OK** gombot az új **1010_CustomerSearch** feladatnak az **Elosztási ütemezés** képernyőn való megjelenítéséhez.
+1. Ugorjon a **Retail és Commerce > Retail és Commerce IT > Elosztási ütemezés** pontra.
+1. Futtassa a **1010_CustomerSearch** feladatot. Ez a feladat közzéteszi a dátumot az Azure Search indexben. Amikor az index közzététele befejeződik, a feladat állapota **Alkalmazva** lesz.
+1. Miután a **1010_CustomerSearch** feladat állapota **Alkalmazva**, futtassa az **1110 – globális konfiguráció** feladatot, hogy frissítse a **Funkciókezelés** újonnan engedélyezett funkciójának pénztárcsatornáit.
+1. Ezt követően futtassa az **1010_CustomerSearch** feladatot, hogy a vevőfrissítéseket rendszeres időközönként a keresési indexbe küldje.
+
+> [!NOTE]
+> A kezdeti index közzétételéhez az **1010_CustomerSearch** több órát is igénybe vehet, mivel az összes vevőrekordot elküldi az Azure Search indexbe. A későbbi frissítések csak néhány percig tartanak. Abban az időszakban, amikor a felhőalapú keresési funkció engedélyezve van, de az index közzététele még nem fejeződött be, a pénztárból történő vevőkeresés alapértelmezés szerint a meglévő SQL-alapú keresést használja. Így garantálható, hogy az áruházi műveletek nem szakadnak meg.
+
+### <a name="functional-differences-from-the-existing-search"></a>A meglévő kereséshez képesti funkcionális eltérések
+
+Az alábbi lista bemutatja, hogy miben különbözik a felhőalapú vevőkeresési funkció a meglévő keresési funkciótól. 
+
+- A Commerce központi felületén létrehozott és szerkesztett vevőket a rendszer az Azure Search indexbe küldi az **1010_CustomerSearch** feladat futtatásakor. Az index frissítéséhez legalább 15–20 perc szükséges. A pénztárfelhasználók a Commerce központi felületén bekövetkező frissítések után 15–20 perccel kereshetnek új vevőket (vagy a frissített információk alapján kereshetnek). Ha az üzleti folyamat megköveteli, hogy a Commerce központi felületén létrehozott vevők azonnal kereshetők legyenek a pénztárban, akkor előfordulhat, hogy ez nem a megfelelő szolgáltatás az Ön számára.
+- A pénztárban létrehozott új vevőket a rendszer elküldi az Azure Search indexbe a Commerce Scale Unit alkalmazásból, és azonnal bármelyik üzletben kereshetőkké válnak. Ha viszont be van kapcsolva a Vevők aszinkron létrehozása funkció, a rendszer az új vevőrekordokat nem teszi közzé a Commerce Scale Unit alapján az Azure Search indexben, és nem kereshetők a pénztárból addig, amíg a vevőadatokat nem szinkronizálja a Commerce központi felületével és nem generál vevői adatokat az aszinkron vevőkre vonatkozóan. Az **1010_CustomerSearch** feladat ezután tudja elküldeni az Aszinkrfon vevőrekordokat az Azure Search indexbe. Átlagosan 30 percnek kell eltelnie ahhoz, hogy keresni lehessen az újonnan létrehozott Aszinkron vevők között a pénztárban. Ez a becslés feltételezi, hogy az **1010_CustomerSearch**, a **P-feladat** és a **Vevők és üzleti partnerek szinkronizálása aszinkron módból** feladatok futtatása 15 percenként történik.
+- A felhőalapú keresés a másodlagos e-mail-címeket és a vevők telefonszámát is keresi, de jelenleg a vevőtalálatokban csak az elsődleges telefonszám és az elsődleges e-mail-cím látható. Első látásra úgy tűnik, hogy nem releváns keresési eredmények születtek, de ha a keresési eredmények között megkeresi a másodlagos e-mail-címet és a vevő telefonszámát, ellenőrizheti, hogy a keresett kulcsszó vevői egyezést eredményezett-e. A félreértések elkerülése érdekében azt tervezik, hogy javítják a keresési eredmények oldalt, hogy a felhasználók könnyen meg tudják érteni egy keresési eredmény létrejöttének okát.
+- A szolgáltatásra nem vonatkozik az a követelmény, hogy a globális keresésben (Keresés az összes üzletben) legalább négy karaktert kell használni.
+
+> [!NOTE]
+> Az Azure Cognitive Search szolgáltatással használt vevőkeresési funkció előzetes verziója korlátozott régiókban érhető el. A vevőkeresési funkció a következő régiókban *nem* érhető el:
+> - Brazília
+> - India
+> - Kanada
+> - Egyesült Királyság
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

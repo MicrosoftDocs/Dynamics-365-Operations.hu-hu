@@ -3,10 +3,9 @@ title: Címjegyzékek GYIK
 description: Ez a témakör a címjegyzékek kapcsolatos gyakori kérdésekre ad válaszokat.
 author: msftbrking
 manager: AnnBe
-ms.date: 10/26/2017
+ms.date: 02/03/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DirPartyCheckDuplicate, DirPartyTable
 audience: Application User
@@ -17,16 +16,17 @@ ms.search.region: Global
 ms.author: brking
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 922900b20b878dd8b479158d47a9f7792caa684d
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: ad2be27d406928222ca00fe696f49b8578fc8cb3
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4796898"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5559941"
 ---
 # <a name="address-books-faq"></a>Címjegyzékek GYIK
 
 [!include [banner](../includes/banner.md)]
+[!include [preview-banner](../includes/preview-banner.md)]
 
 ## <a name="how-do-i-check-for-duplicate-records"></a>Hogyan tudom ellenőrizni, hogy vannak-e ismétlődő rekordok?
 
@@ -68,5 +68,10 @@ A felek rekordjait a globális címjegyzékben vagy a megfelelő entitáslapon a
 
 A címadatok fordítását be tudja úgy állítani, hogy az adatok az Ön felhasználói nyelvén (a rendszernyelven) jelenjenek meg a rendszerben, de más nyelven olyan dokumentumokban, mint például egy értékesítési rendelés. Az országok/régiók nevei, illetve címzési célok és névsorozatok kapcsán tud megadni fordításokat. Ha például az Ön rendszernyelve a dán, tud értékesítési rendelést hozni létre egy franciaországi vevő részére. Ebben az esetben a programban tudja dán nyelven megjeleníteni a vevőrekordot, a nyomtatott értékesítési rendelésen azonban franciául tüntetni fel a címadatokat. A fordítások beállításakor a listában szereplő minden cikkhez kell megadnia fordítást. Azok a cikkek, melyekhez nem ad meg fordítás, a rendszernyelven jelennek meg. Ha például az Ön rendszernyelve a dán, tud dokumentumot küldeni egy spanyolországi vevő részére. Ha nem adott meg spanyol (ESP) fordításokat a címadatok kapcsán, úgy ezek az adatok dán nyelven jelennek meg, mind a programban, mind a bizonylaton.
 
+## <a name="after-importing-addresses-when-i-access-the-records-why-am-i-unable-to-edit-imported-addresses"></a>A címek importálása után amikor hozzáférek a rekordokhoz, miért nem tudom szerkeszteni az importált címeket?
+
+Címek importálása esetén van egy **IsLocationOwner** címkével ellátott mező, amely jelzi, hogy a helyhez (címhez) társított fél a cím tulajdonosa-e. Ha a fél a cím tulajdonosa, akkor a cím szerkeszthető a globális címjegyzékben vagy a törzsnyilvántartási képernyőből (például vevő, szállító vagy dolgozó), ha az adott féllel jelentkezik be. Ha a fél nem a cím tulajdonosa, a rekord nem szerkeszthető a korábban felsorolt képernyőkről. Címek importálása esetén az **IsLocationOwner** beállítása legyen **Igen**, ha azt szeretné, hogy a cím szerkeszthető legyen a társított fél használatával. Vannak azonban alkalmak, amikor a mezőt helytelenül importálják. A probléma megoldásához a helytulajdonos frissíthető a globális címjegyzékben a fél rekordjából vagy a **Helytulajdonos megerősítése** oldalon. Egyetlen fél rekordját a **Globális címjegyzék > Cím** oldalon frissítheti. Válassza a **Szerkesztés** lehetőséget a **Cím szerkesztése** oldal elindításához, ha módosítani szeretné a hely tulajdonosát. Válassza a **Hely tulajdonosának módosítása** lehetőséget, meg akarja jeleníteni a korábbi helytulajdonost úgy, hogy az aktuálisan kiválasztott fél az új helytulajdonos. Ha az előző hely tulajdonosa üres, az azt jelenti, hogy nem határoztak meg tulajdonost. A **Speciális** lehetőség kiválasztásával megnyílik a **Címek kezelése** oldal, ahol a hely tulajdonosa is beállítható. Válassza ki a frissíteni kívánt helyet, majd válassza a menü **Helytulajdonos beállítása** parancsát. Több rekord helytulajdonosának frissítéséhez kattintson a **Globális címjegyzék > Helyek > Helytulajdonos megerősítése** parancsra. A lista egyetlen félhez kapcsolt helyeket tartalmaz, de nem az adott fél a tulajdonos. A **Tulajdonos megerősítése** beállítás esetén a **Javasolt tulajdonos fél azonosítója** lesz a társított cím tulajdonosa. Miután a fél be van állítva tulajdonosként, a társított cím szerkeszthető lesz a fél rekordja alapján. A hely tulajdonosát csak akkor módosíthatja, ha Önhöz van rendelve a **Helytulajdonos beállítása** jogosultság a **Biztonsági konfiguráció** oldalon.  A rendszergazda alapértelmezés szerint ezt a jogosultságot kapja.
+
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

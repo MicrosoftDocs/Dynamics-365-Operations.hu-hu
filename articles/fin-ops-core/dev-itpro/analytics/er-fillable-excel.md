@@ -3,10 +3,9 @@ title: Tervezzen konfigurációkat a kimenő dokumentumok Excel-formátumban tö
 description: Ez a témakör azt mutatja be, hogyan lehet az Elektronikus jelentéskészítés (ER) formátumát egy Excel-sablon kitöltéséhez tervezni, majd a kimenő Excel-formátumú dokumentumokat generálni.
 author: NickSelin
 manager: AnnBe
-ms.date: 11/02/2020
+ms.date: 03/10/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: EROperationDesigner, ERParameters
 audience: Application User, Developer, IT Pro
@@ -17,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c8d6a18741d57829d1929fb8362dc4ba8e03a1bd
-ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
+ms.openlocfilehash: a82afcdeb45bad79a008c3135ef332cf01c0b580
+ms.sourcegitcommit: a3052f76ad71894dbef66566c07c6e2c31505870
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "5094029"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "5574173"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>(ER) Az Excel formátumban létrejövő dokumentumokra vonatkozó konfigurációk tervezése
 
@@ -54,7 +53,7 @@ Ahhoz, hogy a kimenő dokumentumokat Excel-formátumban hozza létre, egy **Exce
 A kimenő dokumentumok elrendezésének megadásához csatolnia kell egy olyan Excel-munkafüzetet, amelynek .xlsx kiterjesztéssel rendelkezik az **Excel\\fájlt** tartalmazó komponense, mint a kimenő dokumentumok sablonja.
 
 > [!NOTE]
-> A sablon manuális csatolása esetén olyan [dokumentumtípust](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management#configure-document-types) dokumentumtípust kell használnia, amely az adott célra be van állítva az [ER paramétereiben](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents).
+> A sablon manuális csatolása esetén olyan [dokumentumtípust](../../../fin-ops-core/fin-ops/organization-administration/configure-document-management.md#configure-document-types) dokumentumtípust kell használnia, amely az adott célra be van állítva az [ER paramétereiben](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents).
 
 ![Melléklet hozzáadása a Excel\fál-komponenshez](./media/er-excel-format-add-file-component2.png)
 
@@ -140,6 +139,36 @@ Ha további tájékoztatást szeretne arról, hogyan lehet beágyazni a képeket
 
 A **PageBreak** összetevő az Excelt új lap létrehozására kényszeríti. Ezt az összetevőt nem szükséges használni az Excel alapértelmezett lapozásához, de akkor kell használni, ha azt szeretné, hogy az Excel kövesse a saját formátumát a lapozás felépítéséhez.
 
+## <a name="footer-component"></a>Lábléc összetevő
+
+A **Lábléc** összetevő segítségével kitölthető a lábléc egy Excel-munkafüzetben létrehozott munkalap alján.
+
+> [!NOTE]
+> Ezt az összetevőt minden **Lap** összetevő számára hozzáadhatja, hogy különböző lábléceket adjon meg a létrehozott Excel-munkafüzetek különböző munkalapjaihoz.
+
+Ha egy egyedi **Lábléc** összetevőt konfigurál, akkor a **Fejléc/lábléc megjelenése** tulajdonsággal meghatározhatja, hogy az összetevő mely lapokhoz használható. A következő értékek állnak rendelkezésre:
+
+- **Bármelyik** – a konfigurált **Lábléc** összetevő futtatása a szülő Excel-munkalap bármelyik lapjára vonatkozóan.
+- **Első** – a konfigurált **Lábléc** összetevő futtatása a szülő Excel-munkalap kizárólag első lapjára vonatkozóan.
+- **Páros** – a konfigurált **Lábléc** összetevő futtatása a szülő Excel-munkalap kizárólag páros lapjaira vonatkozóan.
+- **Páratlan** – a konfigurált **Lábléc** összetevő futtatása a szülő Excel-munkalap kizárólag páratlan lapjaira vonatkozóan.
+
+Egyetlen **Lap** összetevőhöz több **Lábléc** összetevőt is hozzáadhat, amelyek mindegyikének más az értéke a **Fejléc/lábléc megjelenése** tulajdonságban. Ily módon különböző lábléceket lehet létrehozni az Excel-munkalap különböző típusú lapjaihoz.
+
+> [!NOTE]
+> Győződjön meg arról, hogy az egyes **Lap** összetevőkhöz hozzáadott **Lábléc** összetevőnek más értéke legyen a **Fejléc/lábléc megjelenése** tulajdonságban. Ellenkező esetben [ellenőrzési hiba](er-components-inspections.md#i16) lép fel. A kapott hibaüzenet az inkonzisztenciáról tájékoztatja.
+
+A hozzáadott **Lábléc** összetevőnél adja hozzá a **Szöveg\\Sztring**, **Szöveg\\DátumIdő** vagy egyéb típusú beágyazott összetevőit. Konfigurálja ezen összetevők kötését a lábléc kitöltési módjának beállítására.
+
+Speciális [formázási kódokat](https://docs.microsoft.com/office/vba/excel/concepts/workbooks-and-worksheets/formatting-and-vba-codes-for-headers-and-footers) is használhat a létrehozott lábléc tartalmának megfelelő formázása érdekében. A megközelítés használatának elsajátításához kövesse a témakör [1. példájában](#example-1) leírt lépéseket.
+
+> [!NOTE]
+> Az ER-formátumok konfigurálásakor figyelembe kell venni az Excel-[korlátot](https://support.microsoft.com/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3) és az egyes fejlécek és láblécek maximális karakterszámát.
+
+## <a name="header-component"></a>Fejléc összetevő
+
+A **Fejléc** összetevő segítségével kitölthető a fejléc egy Excel-munkafüzetben létrehozott munkalap tetején. Használata megegyezik a **Lábléc** összetevőével.
+
 ## <a name="edit-an-added-er-format"></a>Hozzáadott ER-formátum szerkesztése
 
 ### <a name="update-a-template"></a>Sablon frissítése
@@ -175,6 +204,48 @@ Az Microsoft Excel munkafüzet formátumú kimenő dokumentumok létrehozásakor
     >[!NOTE]
     > A képlet-újraszámítást kézzel kell végrehajtani, amikor a generált dokumentumot előnézetre megnyitják az Excel alkalmazással.
     > Ne használja ezt a lehetőséget, ha olyan ER-célt állított be, amely az Excel előnézete nélkül (PDF-átalakítás, e-mailek stb.) a létrejövő dokumentumok használatát feltételezi, mivel előfordulhat, hogy a létrejövő dokumentum nem tartalmaz értékeket a képleteket tartalmazó cellákban.
+
+## <a name="example-1-format-footer-content"></a><a name="example-1"></a>1. példa: Lábléc tartalmának formázása
+
+1. A megadott ER-konfigurációk segítségével nyomtatható szabadszöveges számlát (FTI) [generálhat](er-generate-printable-fti-forms.md).
+2. Ellenőrizze a létrehozott dokumentum láblécét. A dokumentum az aktuális oldalszámmal és a dokumentumok összesített oldalszámával kapcsolatos információkat tartalmaz.
+
+    ![Excel-formátumban létrehozott dokumentum láblécének felülvizsgálata](./media/er-fillable-excel-footer-1.gif)
+
+3. Az ER-formátumtervezőben [nyissa meg](er-generate-printable-fti-forms.md#features-that-are-implemented-in-the-sample-er-format) felülvizsgálatra az ER mintaformátumot.
+
+    A **Számla** munkalap láblécét a program a **Lábléc** összetevő alatt található két **Sztring** típusú összetevő beállításai alapján generálja.
+
+    - Az első **Sztring** összetevő beírja a következő speciális formázási kódokat, hogy az Excel alkalmazást az adott formátum alkalmazására kényszerítse:
+
+        - **&C** – a lábléc szövegének középre igazítása.
+        - **&"Segoe UI,Regular"&8** – a lábléc szövegének the "Segoe UI Regular" betűtípusban, 8 pontos méretben való megjelenítése.
+
+    - A második **Sztring** összetevő kitölti az aktuális oldalszámot és az aktuális dokumentum összesített oldalszámát tartalmazó szöveget.
+
+    ![A Lábléc ER formátumösszetevő felülvizsgálata a Formátumtervező lapon](./media/er-fillable-excel-footer-2.png)
+
+4. Az ER-mintaformátum testreszabása az aktuális lábléc módosításához:
+
+    1. [Hozzon létre](er-quick-start2-customize-report.md#DeriveProvidedFormat) egy származtatott **Szabadszöveges számla (Excel) egyedi** ER-formátumot, amely az ER mintaformátumon alapul.
+    2. Adja hozzá az első új **String** összetevőpárost a **Lábléc** összetevőhöz a **Számla** munkalapon:
+
+        1. Adjon hozzá egy **Sztring** összetevőt, amely a vállalat nevét balra igazítja, és 8 pontos "Segoe UI Regular" betűtípussal (**"&L&"Segoe UI,Regular"&8"**) jeleníti meg.
+        2. Adja hozzá a vállalat nevét beíró **Sztring** összetevőt (**model.InvoiceBase.CompanyInfo.Name**).
+
+    3. Adja hozzá a második új **String** összetevőpárost a **Lábléc** összetevőhöz a **Számla** munkalapon:
+
+        1. Adjon hozzá egy **Sztring** összetevőt, amely a jobbra igazítja a feldolgozási dátumot, és 8 pontos "Segoe UI Regular" betűtípussal (**"&R&"Segoe UI,Regular"&8"**) jeleníti meg.
+        2. Adjon hozzá egy **Sztring** összetevőt, amely egyéni formátumban tölti ki a feldolgozási dátumot (**"&nbsp;"&DATEFORMAT(SESSIONTODAY(), "yyyy-MM-dd")**).
+
+        ![A Lábléc ER formátumösszetevő felülvizsgálata a Formátumtervező lapon](./media/er-fillable-excel-footer-3.png)
+
+    4. [Töltse ki](er-quick-start2-customize-report.md#CompleteDerivedFormat) a származtatott **Szabadszöveges számla (Excel) egyéni** ER-formátum vázlatverzióját.
+
+5. [Konfigurálja](er-generate-printable-fti-forms.md#configure-print-management) a Nyomtatáskezelés lehetőséget a származtatott **Szabadszöveges számla (Excel) egyéni** ER-formátum használatával az ER-mintaformátum helyett.
+6. Hozzon létre egy nyomtatható FTI-dokumentumot, és vizsgálja felül a létrehozott dokumentum láblécét.
+
+    ![Excel-formátumban létrehozott dokumentum láblécének felülvizsgálata](./media/er-fillable-excel-footer-4.gif)
 
 ## <a name="additional-resources"></a>További erőforrások
 

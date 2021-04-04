@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 971ff16b862a48581365523edc6b64052b29c380
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: c1304d3277e12bc602fa5bc25a61e1f95edba59c
+ms.sourcegitcommit: 4835acc3edacf8277937723d3f85a7875bd8de83
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4967231"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "5580915"
 ---
 # <a name="release-product-structures"></a>Termékszerkezetek kiadása
 
@@ -76,8 +76,6 @@ A termék elfogadásával kapcsolatos példát a következő témakörben talál
 ## <a name="release-policies"></a>Kiadási irányelvek
 
 Nem minden operatív vállalatnak van szüksége ugyanarra a termékadatokra. Általában a mérnöki termékeket előállító operatív vállalatok ANYAGJEGYZÉKET igényelnek, míg a mérnöki termékeket csak forgalmazó vállalatok nem igényelnek ANYAGJEGYZÉKET. A kiadási irányelvek segítségével lehet létrehozni a termékek kiadásához használt paramétereket.
-
-A mérnöki termékek esetében a kiadási irányelvet a mérnöki termékkategóriában rendelik hozzá, és a mező kötelező. A szabványos termékek esetében a program a hozzárendelt termékhez rendeli hozzá az irányelvet, és a mező nem kötelező.
 
 A mérnöki termékkategóriákkal kapcsolatos további tudnivalókat lásd: [Mérnöki verziók és a mérnöki termékkategóriák](engineering-versions-product-category.md).
 
