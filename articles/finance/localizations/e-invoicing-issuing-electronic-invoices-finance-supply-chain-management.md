@@ -3,7 +3,7 @@ title: Elektronikus számlák kibocstása a Finance és Supply Chain Management 
 description: Ez a témakör bemutatja, hogyan állíthat ki elektronikus számlákat a Microsoft Dynamics 365 Finance és Dynamics 365 Supply Chain Management szolgáltatásokban az Elektronikus számlázási bővítmény segítségével.
 author: gionoder
 manager: AnnBe
-ms.date: 01/28/2021
+ms.date: 02/26/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 187f5a20d088b4fcd7af2a6576357a69c2efc2c6
-ms.sourcegitcommit: e88c96d1cb817a22db81856cadb563c095ab2671
+ms.openlocfilehash: 099ebb56710e920f7b1453f32f23f59a80486ebf
+ms.sourcegitcommit: 105f65468b45799761c26e5d0ad9df4ff162c38d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "5104389"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5486953"
 ---
 # <a name="issue-electronic-invoices-in-finance-and-supply-chain-management"></a>Elektronikus számlák kibocstása a Finance és Supply Chain Management szolgáltatásokban
 
@@ -35,25 +35,35 @@ Ez a témakör bemutatja, hogyan állíthat ki elektronikus számlákat a Micros
 
 ## <a name="feature-activation"></a>Funkció aktiválása
 
-Ahhoz, hogy az elektronikus számlák Elektronikus számlázási bővítménnyel történő kiadása elkezdődjon, aktiválni kell a Finance and Supply Chain Management megoldásban a Funkcióhivatkozást.
+Az elektronikus számlák Elektronikus számlázási bővítménnyel történő kiadásához aktiválnia kell a Finance and Supply Chain Management megoldásban a Funkcióhivatkozást.
 
-Minden Funkcióhivatkozás egy adott elektronikus számlázási funkciónak felel meg, amely megfelel az adott ország/régió elektronikus számlázási követelményeinek.
+Minden funkció egy adott elektronikus számlázási funkciónak felel meg, amely megfelel az adott ország/régió elektronikus számlázási követelményeinek.
 
-Az alábbi tábla bemutatja az Elektronikus számlázási bővítmény által támogatott Funkcióhivatkozások listáját.
+Az alábbi tábla bemutatja az Elektronikus számlázási bővítmény által potenciálisan támogatott funkciók listáját.
 
-| Funkcióra mutató hivatkozás | Név                                              | Ország/régió |
-|-------------------|---------------------------------------------------|----------------|
-| BR-00053          | NF-e szövetségi – brazil elektronikus számla       | Brazília         |
-| BR-00095          | NFS-e brazil elektronikus számlák               | Brazília         |
-| DK-00001          | E-számlázás az állami szektorba (OIOUBL) – DK    | Dánia        |
-| EG-00008          | E-számlázás Egyiptom esetén                             | Egyiptom          |
-| ES-00025          | Elektronikus számla az állami szektornak           | Spanyolország          |
-| EUR-00023         | Európai Unió e-számlázás az állami szektorba       | Európa         |
-| ITA-00036         | IT – Elektronikus számlázás az állami szektor számára (FatturaPA) | Olaszország          |
-| MX-00010          | E-számlázási CFDI                                  | Mexikó         |
-| MX-00016          | E-számlázás CFDI – érvénytelenítési folyamat           | Mexikó         |
+| Név                                              | Ország/régió |
+|---------------------------------------------------|----------------|
+|Osztrák elektronikus számla                        |Ausztria         |
+|Belga elektronikus számla                         |Belgium         |
+|NF-e szövetségi – brazil elektronikus számla       |Brazília          |
+|NFS-e – Brazil szolgáltatás (városi) elektronikus számla|Brazília          |
+|Dán elektronikus számla                          |Dánia         |
+|Egyiptomi elektronikus számla                        |Egyiptom           |
+|Észt elektronikus számla                        |Észtország         |
+|Finn elektronikus számla                         |Finnország         |
+|Francia elektronikus számla                          |Franciaország          |
+|Német elektronikus számla                          |Németország         |
+|PEPPOL – Globális elektronikus számla                 |Globális          |
+|Olasz elektronikus számla                         |Olaszország           |
+|CFDI – Mexikói elektronikus számla                  |Mexikó          |
+|Holland elektronikus számla                           |Hollandia     |
+|Norvég elektronikus számla                       |Norvégia          |
+|Spanyol elektronikus számla                         |Spanyolország           |
 
-Abban az esetben, ha van egy örökölt elektronikus számlázási funkció, az ország honosítási köre támogatott, akkor a Funkcióhivatkozás aktiválása lehetővé teszi elektronikus számlák kiállítását az elektronikus számlázási bővítményen keresztül és kikapcsolja a korábbi funkciót.
+Abban az esetben, ha van egy örökölt elektronikus számlázási funkció, amelyet az ország/régió honosítási köre támogat, ezen funkciók aktiválásának egyike kikapcsolja az örökölt funkciót és lehetővé teszi elektronikus számlák kiállítását az elektronikus számlázási bővítményen keresztül.
+
+> [!IMPORTANT]
+> Az Elektronikus számlázás bővítmény integrációs funkciójának engedélyezése után az új elektronikus számlázási tapasztalat alapértelmezés szerint ki van kapcsolva. A funkciókoncepció segítségével szelektíven engedélyezheti a jogi személyek számára az ország-/régióspecifikus funkciókat használó új élmények használatát. A **Globális** beállítás meghatározza a fennmaradó azon megyék/területek új élményét, amelyek nem szerepelnek kifejezetten a táblában.
 
 ## <a name="submit-electronic-documents"></a>Elektronikus dokumentumok elküldése
 

@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3de3de5a93c700526645c248b54783b64d77f2e7
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: 1192a45d0d2fffbe2ecba65551641c090c08db8e
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5115972"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5463430"
 ---
 # <a name="leave-and-absence-overview"></a>Szabadság és távollét áttekintése
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 A Dynamics 365 Human Resources segítségével kiváló szabadságjuttatásokat biztosíthat a dolgozók számára. A **Szabadság és távollét** munkaterület rugalmas keretet biztosít az új szabadságkonstrukciók létrehozásához. Emellett munkafolyamatokat is biztosít a kérelmek és az alkalmazottak intuitív önkiszolgáló rendszere számára, hogy szabadságot kérhessenek. Az elemzés segítséget nyújt a szervezet számára a szabadságegyenlegek és a szabadságtervek használatának méréséhez és figyeléséhez.
 
