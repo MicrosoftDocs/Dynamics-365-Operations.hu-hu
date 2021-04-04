@@ -15,16 +15,17 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2012-04-01
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 66ba73ab5c790aa4a67419842f63f6f741bf0d3a
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 7c20d3d0540f8f1a05928df9aff5253745982da9
+ms.sourcegitcommit: 4ecc1bf82fbb04882d7ef5e1994ef3c07ef953dc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4973760"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "5558262"
 ---
 # <a name="document-routing-layout-for-license-plate-labels"></a>Dokumentumirányítás elrendezés azonosítótábla-címkékhez
 
 [!include [banner](../includes/banner.md)]
+
 
 A dokumentumirányítási elrendezés határozza meg az azonosítótábla-címkék elrendezését, valamint a rájuk nyomtatandó adatokat. A nyomtatási műveletek aktiválási pontjait a mobileszköz menüelemeiben és a munkasablonok modulban állíthatja be.
 
@@ -51,6 +52,10 @@ A címke nyomtatási folyamatának részeként a példa szövegét `$LicensePlat
 A kinyomtatni kívánt értékek megtekintéséhez nyissa meg a **Raktárkezelési \> Lekérdezéseket és a jelentések \> Azonosítótábla-címkék** lehetőséget.
 
 Számos széles körben elérhető címke-létrehozási eszköz segít a szöveg formázásában a címkék elrendezéséhez. Számos ilyen eszköz támogatja a `$FieldName$` formátumot. Mindemellett a Microsoft Dynamics 365 Supply Chain Management speciális formázási logikát használ a dokumentumirányítási elrendezés mező-hozzárendelésének részeként.
+
+## <a name="turn-on-this-feature-for-your-system"></a>A funkció bekapcsolása a rendszerhez
+
+Ha a rendszer még nem tartalmazza az ebben a témakörben leírt funkciókat, lépjen a [Funkciókezelés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) lehetőségre, és a kapcsolja be az *Engedélyezett azonosítótáblacímke-elrendezések* funkciót.
 
 ## <a name="custom-number-formats"></a>Egyéni számformátumok
 

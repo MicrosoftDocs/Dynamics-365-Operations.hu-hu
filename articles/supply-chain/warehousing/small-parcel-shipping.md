@@ -16,16 +16,17 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-08
 ms.dyn365.ops.version: Release 10.0.16
-ms.openlocfilehash: 350193a0054ef879ece3dd2dfcc4105476981837
-ms.sourcegitcommit: b7a7a14f8650913f6797ae1c4a82ad8adfe415fd
+ms.openlocfilehash: 37f07139853c30da25c067a3d736b4b9bf4eb361
+ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "5078269"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5501174"
 ---
 # <a name="small-parcel-shipping"></a>Kis csomagok szállítása
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 A kis csomagszállítás (SPS) szolgáltatás lehetővé teszi a Microsoft Dynamics 365 Supply Chain Management számára, hogy közvetlenül kommunikáljon a szállítmányozókkal azáltal, hogy keretrendszert biztosít a szolgáltatói API-kon keresztüli kommunikációhoz. Ez a funkció akkor hasznos, ha az egyes értékesítési rendeléseket kereskedelmi szállítmányozókon keresztül szállítja ki, nem pedig konténeres vagy kisebb, mint a truckload szállítással.
 

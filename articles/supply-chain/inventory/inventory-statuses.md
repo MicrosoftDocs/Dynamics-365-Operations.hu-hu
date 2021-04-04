@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0c4cad56389c7a8fd6d37591c1ff335fff715707
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 0b5e693bc1c9f4b822543d812f722bc8ea9f7025
+ms.sourcegitcommit: ee7a890e3e4ed6436898e5ab6eff309082a073f8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5001824"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "5476699"
 ---
 # <a name="inventory-statuses"></a>Készletállapotok
 
@@ -45,6 +45,9 @@ A készletállapot a tárolásidimenzió-csoport dimenziói közé tartozik. Ké
 
 Bejövő munkához elérhető vagy nem elérhető készletállapotú cikkeket is használhat. Például létrehozhat egy elérhető állapotot, amely neve *Kész*, nem elérhető állapotot, amely neve *Sérült*, és zárolt állapotot, amely neve *Zárolva*. Bevételezett, vagy visszaküldött cikkek beszerzési rendelésének létrehozásakor, ha a cikkek megsérültek vagy eltörtek, a készlet állapotát módosíthatja *Sérült* értékre a beszerzési rendelésen. A cikkek bevételezése után, az állapot értéke automatikusan *Zárolva*. Ha mobileszköz használatával olvas be a sérült cikkeket, a Supply Chain Management használhat helyutasításokat és munkasablonokat, hogy mutassa a megfelelő helyet és helytartományokat, ahova be lehet tárolni azokat a cikkeket. Visszaküldött cikkekhez *Foglalás* kiadástpus jön létre a **Készlettranzakciók** oldalon.
 
+> [!NOTE]
+> Nem módosíthatja a készlet állapotát olyan helyeken, ahol nyitott munka található. Ha például beszerzési bevételezést végzett egy cikknél, de nem végezte el a betárolási lépést, akkor nyitott munka létezne a betárolási helyhez, és hiba jelenne meg, ha a készlet állapotát megpróbálná módosítani az adott helyen. A kapcsolódó munka befejezése vagy megszakítása lehetővé teszi az állapot változtatását.
+ 
 Kimenő munka esetén mindig elérhető készletállapotú cikkeket használjon. Ha *Törött* állapotú cikkekkel futtat alaptervezést, a rendszer hiányzónak fogja tekinteni őket, és automatikusan feltölti a készletet.
 
 Készletállapotok létrehozása után beállíthatja, hogy ez legyen az alapértelmezett készletállapot egy adott telephelyre, cikkre vagy raktárra vonatkozóan. Értékesítéshez, átadáshoz és beszerzési rendeléshez is létrehozhat alapértelmezett állapotot. Az értékesítési rendelések és a kimenő átmozgatási rendelések esetén a **Készletzárolás** alapértelmezett állapota nem lehet *Igen*. A raktár, cikk, beszerzési rendelés, átmozgatási rendelés vagy értékesítési rendelés alapértelmezett beállításaiból örökölt készletállapotot a mobileszköz, beszerzési rendelés, értékesítési rendelés, vagy átmozgatási rendelés sor segítségével lehet módosítani.

@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: MpsIntegrationParameters, MpsFitAnalysis
+ms.search.form: ReqPlanSched, ReqGroup, ReqReduceKey, ForecastModel
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: ''
@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: cb696c365e02ab3e3b28da19b8b33f1975c142f8
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 7bd1268893d0869d2414b944493c8b8859f27abc
+ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4983544"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5501126"
 ---
 # <a name="master-planning-with-demand-forecasts"></a>Alaptervezés az igény-előrejelzésekkel
 
@@ -249,7 +249,7 @@ Tehát a következő tervezett rendelések jönnek létre.
 Az előrejelzési csökkentési kulcs a **Tranzakciók - csökkentési kulcs** és **Százalék-csökkentési kulcs** metodológiákban van használva az előrejelzési követelmények csökkentéséhez. Kövesse az alábbi lépéseket csökkentési kulcs létrehozásához és beállításához.
 
 1. Manjen az **Alaptervezés \> Beállítás \> Fedezet \> Csökkentési kulcsok** menübe.
-2. Válassza az **Új** lehetőséget, vagy nyomja le a **Ctrl + N** billentyűkombinációt csökkentési kulcs létrehozásához.
+2. Válassza ki az **Új** lehetőséget egy csökkentési kulcs létrehozásához.
 3. A **csökkentési kulcs** mezőben írjon be az előre jelzett csökkentési kulcs egyedi azonosítóját. Majd a **Név** mezőben adjon meg egy nevet. 
 4. Adja meg az időszakokat és a csökkentési kulcs százalékát az egyes időszakokhoz:
 
@@ -265,8 +265,8 @@ Előre jelzett csökkentési kulcsot a cikk fedezeti csoportjához kell hozzáre
 2. Az **Egyéb** gyorslapon, a **Csökkentési kulcs** mezőben, válassza ki a csökkentési kulcsot, amelyet a fedezeti csoporthoz rendel. A csökkentési kulcs ezután a cikkfedezeti csoporthoz tartozó összes cikkre vonatkozik.
 3. A csökkentési kulcs használatához előrejelzés-csökkentés számításához az alapütemezésben meg kell adnia ezt a beállítást az előrejelzési terv és az alapütemezés beállításánál. Lépjen az alábbiak közül valamelyik helyre:
 
-    - Alaptervezés \> Beállítás \> Tervek \> Előrejelzési tervek
-    - Alaptervezés \> Beállítás \> Tervek \> Alapütemezések
+    - **Alaptervezés \> Beállítás \> Tervek \> Előrejelzési tervek**
+    - **Alaptervezés \> Beállítás \> Tervek \> Alapütemezések**
 
 4. Az **Előrejelzési tervek** vagy **Alaptervek** oldalon az **Általános** gyorslapon, az **Előrejelzési követelmények csökkentésére szolgáló metodológia** mezőben válassza a **Százalék - csökkentési kulcs** vagy **Tranzakciók - csökkentési kulcs** lehetőséget.
 
@@ -274,5 +274,69 @@ Előre jelzett csökkentési kulcsot a cikk fedezeti csoportjához kell hozzáre
 
 Ha bejelöli a **Tranzakciók - csökkentési kulcs** vagy **Tranzakciók - dinamikus időszak** az előrejelzési követelmények csökkentésének módszereként, megadhatja a tranzakciók az előrejelzés csökkentéséhez. A **Fedezeti csoportok** oldalon, az **Egyéb** gyorslapon, akkor az **Előrejelzés csökkentése ennyivel:** mezőben válassza ki az **Összes tranzakció**, ha az összes tranzakció csökkentse az előrejelzést, vagy a **Rendelések** lehetőséget, ha csak az értékesítési rendelések csökkentsék az előrejelzést.
 
+## <a name="forecast-models-and-submodels"></a>Előrejelzési modellek és almodellek
+
+Ez a szakasz bemutatja, hogyan lehet előrejelzési modelleket létrehozni, és hogyan lehet több előrejelzési modellt kombinálni almodellek beállításával.
+
+Az *előrejelzési modellek* egy-egy adott előrejelzést megneveznek és azonosítanak. Az előrejelzési modell létrehozása után előrejelzési sorokat adhat hozzá. Ha több cikkhez szeretne előrejelzési sorokat hozzáadni, használja az **Igény-előrejelzési sorok** oldalt. Ha egy adott cikkhez szeretne előrejelzési sorokat hozzáadni, használja a **Kiadott termékek** oldalt.
+
+Az előrejelzési modellek más előrejelzési modellekből származó előrejelzéseket is tartalmazhatnak. Ez az eredmény úgy érhető el, hogy egy szülő előrejelzési modell *részmodelljeiként* további előrejelzési modelleket ad hozzá. A szülő előrejelzési modell almodelljeként való hozzáadása előtt létre kell hoznia mindegyik vonatkozó modellt.
+
+Az eredményül kapott struktúra hatékony lehetőséget nyújt az előrejelzések szabályozására, mivel lehetővé teszi, hogy egyesítse (összesítse) a bevitt adatokat több egyedi előrejelzésből. Ezért tervezési szempontból könnyen kombinálhatja a szimulációk előrejelzéseit. Be lehet állítani például egy olyan szimulációt, amely egy normál előrejelzés és egy tavaszi promóció előrejelzésének kombinációján alapul.
+
+### <a name="submodel-levels"></a>Almodellszintek
+
+Nincs korlátozva a szülő előrejelzési modellhez hozzáadható almodellek száma. A szerkezet azonban csak egy szint mélységű lehet. Más szóval olyan előrejelzési modellnek, amely egy másik előrejelzési modell almodellje, nem lehet saját almodellje. Amikor almodelleket ad hozzá egy előrejelzési modellhez, a rendszer ellenőrzi, hogy az előrejelzési modell már egy másik előrejelzési modell almodellje-e.
+
+Ha az alaptervezés olyan almodellel rendelkezik, amely saját almodellekkel rendelkezik, hibaüzenet jelenik meg.
+
+#### <a name="submodel-levels-example"></a>Almodellszintek példája
+
+A B előrejelzési modell az A előrejelzési modell almodellje. Ebből következően a B előrejelzési modellnek nem lehet saját almodellja. Ha almodellt próbál hozzáadni a B előrejelzési modellhez, a következő hibaüzenet jelenik meg: „A B előrejelzési modell az A modell almodellje.”
+
+### <a name="aggregating-forecasts-across-forecast-models"></a>Előrejelzések összesítése az előrejelzési modellek között
+
+Az ugyanazon a napon előforduló előrejelzési sorokat a rendszer összesíti az előrejelzési modell és az almodelljei között.
+
+#### <a name="aggregation-example"></a>Példa összesítésre
+
+A B és C előrejelzési modellek az A előrejelzési modell almodelljei.
+
+- Az A előrejelzési modellben június 15-én 2 darabos igény-előrejelzés szerepel.
+- A B előrejelzési modellben június 15-én 3 darabos igény-előrejelzés szerepel.
+- A C előrejelzési modellben június 15-én 4 darabos igény-előrejelzés szerepel.
+
+A kapott igény-előrejelzés egyetlen 9 darabos (2 + 3 + 4) igény lesz a június 15-i időszakra.
+
+> [!NOTE]
+> Az előrejelzési részmodellek mindegyike saját paramétereket alkalmaz, nem a szülő előrejelzési modell paramétereit.
+
+### <a name="create-a-forecast-model"></a>Előrejelzési modell létrehozása
+
+Előrejelzési modell létrehozásához kövesse az alábbi lépéseket.
+
+1. Lépjen az **Alaptervezés \> Beállítása \> Igény-előrejelzés \> Előrejelzési modellek** részre.
+1. A Műveleti ablaktáblán kattintson az **Új** elemre.
+1. Állítsa be a következő mezőket az új előrejelzési modellhez:
+
+    - **Modell** – A modell egyedi azonosítójának megadása.
+    - **Név** – Írja be a modell leíró nevét.
+    - **Leállítva** – Általában *Nem* beállításra kell beállítani ezt a beállítást. Csak akkor állítsa *Igen* beállításra, ha meg szeretné akadályozni a modellhez rendelt összes előrejelzési sor szerkesztését.
+
+    > [!NOTE]
+    > A **Pénzforgalom előrejelzéseinek tartalmazása** mező és a **Projekt** gyorslap mezői nem kapcsolódnak az alaptervezéshez. Ezeket figyelmen kívül hagyhatja ebben a környezetben. Ezeket csak akkor kell figyelembe venni, ha a **Projektvezetés és könyvelés** modul előrejelzéseivel dolgozik.
+
+### <a name="assign-submodels-to-a-forecast-model"></a>Almodellek hozzárendelése egy előrejelzési modellhez
+
+Almodellek hozzárendeléséhez egy előrejelzési modellhez, kövesse az alábbi lépéseket.
+
+1. Lépjen a **Készletgazdálkodás \> Beállítás \> Előrejelzés \> Előrejelzési modellek** elemre.
+1. A listapanelen jelölje ki azt az előrejelzési modellt, amelyhez almodellt szeretne beállítani.
+1. Az **Almodell** gyorslapon válassza a **Hozzáadás** lehetőséget sor hozzáadásához a rácshoz.
+1. Az új sorban állítsa be a következő mezőket:
+
+    - **Almodell** – Az almodellként hozzáadni kívánt előrejelzési modell kiválasztása. Ennek az előrejelzési modellnek már léteznie kell, és nem lehet saját almodellja.
+    - **Név** – Írja be a részmodell leíró nevét. Ez a név jelezheti például az almodell és a szülő előrejelzési modell viszonyát.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

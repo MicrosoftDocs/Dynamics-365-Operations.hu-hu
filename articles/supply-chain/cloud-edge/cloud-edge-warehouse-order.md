@@ -19,12 +19,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2021-01-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: c04127b9fe621d962be2d7fe06358b3bd1b78916
-ms.sourcegitcommit: 289e9183d908825f4c8dcf85d9affd4119238d0c
+ms.openlocfilehash: 9102f53ab1b63d08b8bba7b0ae505416ec5a83fd
+ms.sourcegitcommit: 70b1567d316f19c15a4b032b4897f15c8dcdca09
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "5105710"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "5556362"
 ---
 # <a name="warehouse-orders-for-cloud-and-edge-scale-units"></a>Raktérkezelés rendelései felhőalapú és peremhálózat-lépték szerinti egységekhez
 
@@ -51,6 +51,8 @@ Raktári rendelés létrehozásához kövesse az alábbi lépéseket.
 1. Menjen a **Beszerzés és forrás \> Beszerzési rendelés \> Összes beszerzési rendelés** pontra.
 1. Válassza ki a művelet ablaktáblán a **Raktár** lapon a **Műveletek** csoportjának **Kiadás raktárba** parancsát.
 1. A kapcsolódó raktári rendelési sorok megtekintéséhez nyissa meg a megfelelő beszerzési rendelést, válasszon ki egy sort a **Beszerzési rendelés** sorai szakaszban, majd az eszköztáron válassza a következőt: **Raktár \> Raktári rendelés sorai**. Az összes sor megtekintéséhez menjen a **Raktárkezelés \> Lekérdezések és jelentések \> Raktári rendelési sorokhoz**.
+
+A *Kiadás raktárba* folyamatot kötegelt feladatból is elindíthatja, ha a **Raktárkezelés > Kiadás raktárba > Beszerzési rendelések automatikus kiadása** helyre lép. A kötegelt feladat beállításakor lekérdezés alapján meghatározott beszerzésirendelés-sorokat választhat ki. Jellemző helyzet lehet egy ismétlődő kötegelt feladat, amely kiadja a következő napon várható összes visszaigazolt beszerzésirendelés-sort.
 
 ## <a name="cancel-a-warehouse-order"></a>Raktári rendelés visszavonása
 

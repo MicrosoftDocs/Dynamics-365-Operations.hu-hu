@@ -3,7 +3,7 @@ title: Kamatlábak beállítása kamatkódhoz
 description: A kamatkódok olyan beállításokat tartalmaznak, amelyek meghatározzák, hogy mikor kerül sor kamat felszámítására, és hogyan történik annak kiszámítása a hátralékos számlákon.
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 01/12/2018
+ms.date: 02/17/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1169a397dfdd32f728a09e2ad279842edc289c19
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 5d9ff856e34eb894c5d0ab5fe17c8e95f62fff57
+ms.sourcegitcommit: 88babb2fffe97e93bbde543633fc492120f2a4fc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4971628"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "5555365"
 ---
 # <a name="set-up-interest-rates-for-an-interest-code"></a>Kamatlábak beállítása kamatkódhoz
 
@@ -46,10 +46,19 @@ Beállíthat kamatlábakat, amelyek egy megadott százalékot számítanak.
 
 - A kamat összege az összes pénznemre vonatkozik.
 - A nem kötelező kamat összeg határaival lehet megadni.
-- <strong>Százalék</strong> van kiválasztva** <strong>a **Kamat számítása alapján</strong> mezőben a <strong>Kamatkódok beállítása</strong> oldalon.
+- **Százalék** van kiválasztva a **Kamat számítása a következő alapján:** mezőben a **Kamatkódok beállítása** oldalon.
 
 Például, ha olyan kamatkódot szeretne beállítani, amely kéthavonta 5 % kamatot számít fel, miután a számla kifizetése túllépte a tranzakció esedékességi dátumát, akkor írjon be 2 értéket az **Összes kamat kiszámítása** mezőbe, és jelölje be **Hónap** lehetőséget.
 
+> [!NOTE] 
+> A kamatlevél-számítás új algoritmusát a Funkciókezelés segítségével adhatja hozzá. Az algoritmus használatához engedélyezze a következő funkciót: **(GBL) Napi kamat számításának engedélyezése az éves százalék 365-tel történő elosztásával**. A funkció engedélyezésével kapcsolatos további tudnivalókat lásd: [Funkciókezelés áttekintése](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+> 
+> A kamatlevél összegének kiszámításához használt képlet: 
+>  
+> Kamatlevél összege = Tartozás összege * Éves kamat % / 365 * Késés napokban
+>  
+> Ez a funkció elérhető a 10.0.18 vagy újabb verzióban.    
+ 
 ## <a name="interest-rates-based-on-amounts"></a>Összegeken alapuló kamatlábak
 Beállíthat olyan kamatlábakat, amelyek egy megadott összeget számítanak ki pénznemenként.
 - Minden egyes pénznemhez egy kamatösszeg van megadva a kamat kódban.

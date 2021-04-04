@@ -17,21 +17,21 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bd9f6dfdf17ffd506fff21763388ee0ca7526681
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: fbc991c22271ccc3d9c50ade635a80c635b35f73
+ms.sourcegitcommit: 34b8f6f5c6134b7b97a9fb41d0b2e63215c67062
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4991590"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5470882"
 ---
 # <a name="set-up-subscription-groups"></a>Előfizetési csoportok beállítása 
 
 [!include [banner](../includes/banner.md)]
 
 
-1.  Kattintson a következőkre: **Szolgáltatáskezelés**\>**Beállítás**\>**Szolgáltatási előfizetések**\>**Előfizetési csoportok**.
+1.  Lépjen ide: **Szolgáltatáskezelés** \> **Beállítás** \> **Szolgáltatási előfizetések** \> **Előfizetési csoportok**.
 
-2.  Nyomja le a CTRL+N billentyűkombinációt, vagy kattintson az **Új** gombra, ha új előfizetési csoportot szeretne létrehozni.
+2.  Válassza ki az **Új** lehetőséget egy új előfizetési csoport létrehozásához.
 
 3.  Az **Előfizetési csoport** mezőbe írja be az új előfizetés-csoport kívánt, jól felismerhető nevét.
 

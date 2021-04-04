@@ -16,14 +16,16 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 572ee0755e331d19b41442e3614effb92db95a92
-ms.sourcegitcommit: 33b5c8bc4f9461e290513aa22de1ec1fba3b0742
+ms.openlocfilehash: b89d257e3874ad7395c0a2c02f259c2f063aa8d0
+ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "5125425"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5500622"
 ---
 # <a name="recruiting-request"></a>Toborzási kérelem
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Ez a témakör a Toborzási kérelem entitást írja le a Dynamics 365 Human Resources rendszerhez.
 
@@ -98,7 +100,8 @@ Egy állásra való toborzásra vonatkozó kérelmet mutat be.
 | **Állástípus azonosítójának értéke**<br>_mshr_fk_jobtype_id_value<br>*GUID* | Írásvédett<br>Választható<br>Idegen kulcs: mshr_hcmjobtypeentityid / mshr_hcmjobtypenentity entitás | A toborzási kérelemhez társított állástípus rendszer által generált egyedi azonosítója. |
 | **Mentességi állapot**<br>mshr_exemptstatus<br>*JobExemptStatus* beállításkészlet | Írásvédett<br>Választható | Az FLSA-mentesség állapota az állás típusa alapján. |
 | **Becsült kezdő dátum**<br>mshr_estimatedstartdate<br>*Dátum* | Olvasás/írás<br>Szükséges | Az a becsült dátum, amikor a jelölt dolgozni kezd. |
-| **Külső leírás**<br>mshr_externaldescription<br>*Sztring* | Olvasás/írás<br>Választható | Az állás/beosztás jelölt által látható leírása. | Kompenzáció – alsó küszöb<br>mshr_compensationlowthreshold<br>*Dupla* | Olvasás/írás<br>Választható | A kompenzációs szint alsó határa. |
+| **Külső leírás**<br>mshr_externaldescription<br>*Sztring* | Olvasás/írás<br>Választható | Az állás/beosztás jelölt által látható leírása. | 
+| **Kompenzáció – alsó küszöb**<br>mshr_compensationlowthreshold<br>*Dupla* | Olvasás/írás<br>Választható | A kompenzációs szint alsó határa. |
 | **Kompenzáció ellenőrzőpont**<br>mshr_compensationcontrolpoint<br>*Dupla* | Olvasás/írás<br>Választható | A kompenzációs szint ellenőrzőpontja. |
 | **Kompenzáció – felső küszöb**<br>mshr_compensationhighthreshold<br>*Dupla* | Olvasás/írás<br>Választható | A kompenzációs szint felső határa. |
 | **Kompenzációs szint**<br>mshr_compensationlevelid<br>*Sztring* | Olvasás/írás<br>Választható | Az állás kompenzációs szintje. Egy állás több kompenzációs szinttel is beállítható. Ez az attribútum a kérelemhez kiválasztott állás kompenzációs szintjét jelzi. |

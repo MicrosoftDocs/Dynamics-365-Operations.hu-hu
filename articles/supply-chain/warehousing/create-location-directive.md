@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-11-13
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: b1b3bafb24ff6eb0c42d901fac3b6668cedf39ef
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 84821fe4e7c5054b2121dbd7f9e536c80080b978
+ms.sourcegitcommit: 1f23adbc6c7e6f9ffe8c48c10659b9fae2155aeb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4963310"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5470519"
 ---
 # <a name="work-with-location-directives"></a>Helyutasítások kezelése
 
@@ -239,7 +239,7 @@ Több helyutasítási műveletet is megadhat minden sornak. Még egyszer, a soro
     - **Felkerekítés a teljes azonosítótáblára és FEFO-kötegre** – Ez a stratégia egyesíti a *FEFO-köteg lefoglalása* és a *Felkerekítés a teljes azonosítótáblára* stratégiák elemeit. Csak olyan köteg-engedélyezett cikkekre és helyutasításokra érvényes, amelyek munkatípusa *Kitárolás*. A sornak köteg-engedélyezettnek kell lennie a *FEFO-köteg foglalása* stratégia használatához, és a *Felkerekítés a teljes azonosítótáblára* stratégia csak a feltöltéshez használható. Ha ez a stratégia egy helyraktározási korláttal van konfigurálva, akkor a kijelölt betárolási munka helyének túlterhelését és a készletezési korlátok figyelmen kívül hagyását okozhatja.
     - **Felkerekítés a teljes azonosítótáblára** – Ez a stratégia felfelé kerekíti a készletmennyiséget, így az megegyezik az azonosítótábla mennyiségével, és ezt a mennyiséget a kitárolandó cikkekhez is hozzárendeli. Ezt a stratégiát csak a *Kitárolás* típus feltöltési helyutasításához használhatja. Ha ez a stratégia egy helyraktározási korláttal van konfigurálva, akkor a kijelölt betárolási munka helyének túlterhelését és a készletezési korlátok figyelmen kívül hagyását okozhatja.
     - **Azonosítótábla-vezérelt** – Használja ezt a stratégiát, amikor a raktár számára kiadja a rendelést a kitárolási és betárolási munka létrehozásához. Ezt a megközelítést több azonosítótáblára is alkalmazhatja. Ez a stratégia megpróbálja lefoglalni az átmozgatási rendelés soraihoz társított azonosítótáblát tartalmazó helyeket, és megpróbál kitárolási munkát létrehozni. Ha azonban ezeket a műveleteket nem lehet végrehajtani, de továbbra is létre szeretne hozni kitárolási munkát, akkor vissza kell lépnie egy másik helyutasítási műveletstratégiára. Az üzleti folyamat követelményeitől függően érdemes lehet a raktár egy másik területén is keresni.
-    - **Üres hely, amely nem rendelkezik bejövő munkával** – Ez a stratégia az üres helyek meghatározására használható. Egy hely üresnek tekinthető, ha nincsen fizikai készlete és nincs bejövő munkája. Ezt a stratégiát csak a *Kitárolás* munkatípusú helyutasításokhoz használhatja.
+    - **Üres hely, amely nem rendelkezik bejövő munkával** – Ez a stratégia az üres helyek meghatározására használható. Egy hely üresnek tekinthető, ha nincsen fizikai készlete és nincs bejövő munkája. Ezt a stratégiát csak a *Betárolás* munkatípusú helyutasításokhoz használhatja.
     - **FIFO-helykorosítás** – Az először be, először ki (FIFO) stratégiával mind a kötegelt nyomon követett cikkek, mind a nem kötegelt követett cikkek szállíthatók a készlet raktárba érkezésének dátuma alapján. Ez a funkció különösen a nem kötegelt nyomon követett készletekben hasznos, ahol nem található lejárati dátum a rendezéshez. A FIFO-stratégia megtalálja azt a helyet, amely a legrégebbi korosítási dátumot tartalmazza, és a kitárolást a korosítási dátum alapján osztja el.
     - **LIFO-helykorosítás** – Az utoljára be, utoljára ki (LIFO) stratégiával mind a kötegelt nyomon követett cikkek, mind a nem kötegelt követett cikkek szállíthatók a készlet raktárba érkezésének dátuma alapján. Ez a funkció különösen a nem kötegelt nyomon követett készletekben hasznos, ahol nem található lejárati dátum a rendezéshez. A LIFO-stratégia megtalálja azt a helyet, amely a legújabb korosítási dátumot tartalmazza, és a kitárolást a korosítási dátum alapján osztja el.
 

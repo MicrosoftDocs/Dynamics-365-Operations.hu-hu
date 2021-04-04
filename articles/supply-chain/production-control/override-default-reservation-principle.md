@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: InventModelGroup
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-10
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 8756dc22ffd64f836740124ce08dadca84207147
-ms.sourcegitcommit: b7a7a14f8650913f6797ae1c4a82ad8adfe415fd
+ms.openlocfilehash: 2391ec11bd497c69ddb19e29533f5441d7374877
+ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "5078267"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5501102"
 ---
 # <a name="override-the-default-reservation-principle-for-materials-in-production"></a>A termelésben felhasznált anyagok alapértelmezett foglalási elvének felülbírálása
 
@@ -38,11 +39,11 @@ Ha például nyersanyagokat vagy összetevőket használ, amelyekhez kitárolás
 A funkció használata előtt be kell azt kapcsolnia saját rendszerében. A rendszergazdák használhatják a [funkciókezelési](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) beállításokat a funkció állapotának ellenőrzéséhez, és bekapcsolásához. A **Funkció kezelése** munkaterületen a funkció a következő módon van listázva:
 
 - **Modul:** *Gyártásvezérlés*
-- **Funkció neve:** *Alapértelmezett termelési foglalás felülbírálása*
+- **Funkció neve:** *(Előzetes verzió) Alapértelmezett termelési foglalás felülbírálása*
 
 ## <a name="assign-a-production-reservation-policy-to-an-item-model-group"></a>Termelésfoglalási irányelv hozzárendelése cikkmodellcsoporthoz
 
-1. Lépjen ide: **Költséggazdálkodás &gt; Készletkönyvelési irányelvek beállítása &gt; Cikkmodellcsoportok**.
+1. Lépjen ide: **Költséggazdálkodás \> Készletkönyvelési irányelvek beállítása \> Cikkmodellcsoportok**.
 1. Válasszon ki vagy hozzon létre egy cikkmodellcsoportot.
 1. A **Készletszabályok** gyorslapon jelölje be a **Cikk termelési foglalásának felülbírálása** jelölőnégyzetet.
 1. A **Foglalás** mezőben válassza ki a kiválasztott modellcsoportba tartozó cikkek foglalási elvét. (Ezek a cikkek anyagjegyzéken vagy receptúrasoron lévő cikkeket tartalmaznak.)
