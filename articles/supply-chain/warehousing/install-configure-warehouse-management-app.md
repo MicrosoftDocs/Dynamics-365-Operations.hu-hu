@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: e2ffd12011b133bb13b69b49d6e894c6a887a8a0
-ms.sourcegitcommit: bd53794cb94f8c1ce29a7d6102119a0975f155e3
+ms.openlocfilehash: e1e8c8b1464a38a0145cbdcdcb4882db00d3c4c1
+ms.sourcegitcommit: 105f65468b45799761c26e5d0ad9df4ff162c38d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "5142323"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5487025"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>A Raktárkezelés mobilalkalmazás telepítése és csatlakoztatása
 
@@ -31,11 +31,9 @@ ms.locfileid: "5142323"
 [!include [preview banner](../includes/preview-banner.md)]
 
 > [!NOTE]
-> Ez a témakör azt ismerteti, hogyan kell konfigurálni az új Raktárkezelés mobilalkalmazást, amely jelenleg nyilvános előzetes verzió szakaszban van. Ha a régi raktári alkalmazás konfigurálásával kapcsolatos információkat keres, tekintse meg a következőt: [A raktározási alkalmazás telepítése és csatlakoztatása](../../supply-chain/warehousing/install-configure-warehousing-app.md).
+> Ez a témakör ismerteti, hogyan kell konfigurálni az új Raktárkezelés mobilalkalmazást. Ha a régi raktári alkalmazás konfigurálásával kapcsolatos információkat keres, tekintse meg a következőt: [A raktározási alkalmazás telepítése és csatlakoztatása](../../supply-chain/warehousing/install-configure-warehousing-app.md).
 
-A Raktárkezelés mobilalkalmazás nyilvános előzetes verziója letölthető a Microsoft App Center alkalmazásból. Önálló összetevőként áll rendelkezésre. Ezért minden eszközre le kell töltenie, majd be kell állítania, hogy csatlakozzon a Microsoft Dynamics 365 Supply Chain Management-környezetéhez.
-
-Ez a témakör azt mutatja be, hogyan lehet telepíteni a Raktárkezelés mobilalkalmazást mindegyik mobileszközre, és konfigurálni a Supply Chain Management-környezethez való csatlakozásra. Az egyes eszközöket manuálisan is konfigurálhatja, illetve a csatlakozási beállításokat egy fájlként vagy egy QR-kód beolvasásával is importálhatja.
+Ez a témakör azt mutatja be, hogyan lehet letölteni és telepíteni a Raktárkezelés mobilalkalmazást mindegyik mobileszközre, és konfigurálni az alkalmazást a Supply Chain Management-környezethez való csatlakozásra. Az egyes eszközöket manuálisan is konfigurálhatja, illetve a csatlakozási beállításokat egy fájlként vagy egy QR-kód beolvasásával is importálhatja.
 
 ## <a name="system-requirements"></a>Rendszerkövetelmények
 
@@ -53,17 +51,27 @@ Az alkalmazás használata előtt egy kapcsolódó funkciót be kell kapcsolnia 
 
 ## <a name="get-the-warehouse-management-mobile-app"></a>A Raktárkezelés mobilalkalmazás beszerzése
 
-Az alkalmazás letöltéséhez használja a következő hivatkozások egyikét:
+Kisebb telepítések esetén előfordulhat, hogy az alkalmazást jellemzően minden eszköz megfelelő áruházából telepíti, majd manuálisan konfigurálja a kapcsolatot az éppen használt környezettel.
 
-- **Windows (UWP):** [App Center előzetes verziós program – Windows](https://go.microsoft.com/fwlink/?linkid=2154406)
+Nagyobb telepítések esetén automatizálhatja az alkalmazástelepítést és/vagy -konfigurációt, ami több eszköz kezelése esetén kényelmesebb lehet. Használhat például egy olyan mobileszköz-kezelési és mobilalkalmazás-kezelési megoldást, mint például a [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune). Az alkalmazások Intune használatával történő hozzáadásával kapcsolatos tudnivalókat lásd: [Alkalmazások hozzáadása a Microsoft Intune szolgáltatáshoz](https://docs.microsoft.com/mem/intune/apps/apps-add).
 
-    Mivel ez az alkalmazás egy előzetes verziós alkalmazás, néhány további lépés szükséges a telepítéshez. A részleteket lásd: [Build telepítése az App Center alkalmazásból](https://docs.microsoft.com/appcenter/distribution/installation).
+### <a name="install-the-app-from-an-app-store"></a>Az alkalmazás telepítése egy alkalmazás-áruházból
 
-- **Android:** [App Center előzetes verziós program – Android](https://go.microsoft.com/fwlink/?linkid=2154613)
+Az alkalmazás egyetlen eszközre való telepítésének legegyszerűbb módja az, ha egy alkalmazás-áruházból telepíti az alkalmazást, amely mindig a legfrissebb, általánosan elérhető verziót szolgáltatja. A Microsoft Intune alkalmazásokat is be tud szerezni az alkalmazás-áruházakból. A következő hivatkozások valamelyikével telepítheti az alkalmazást egy alkalmazás-áruházból:
 
-    Mivel ez az alkalmazás egy előzetes verziós alkalmazás, néhány további lépés szükséges a telepítéshez. A részleteket lásd: [Android-alkalmazások tesztelése](https://docs.microsoft.com/appcenter/distribution/testers/testing-android).
+- **Windows (UWP):** [Raktárkezelés a Microsoft Store áruházban](https://www.microsoft.com/store/apps/9pd35cdqcmg3)
 
-Kisebb telepítések esetén előfordulhat, hogy az alkalmazást minden eszköz megfelelő áruházából telepíti, majd manuálisan konfigurálja a kapcsolatot az éppen használt környezettel. Automatizálhatja azonban az alkalmazástelepítést és/vagy -konfigurációt is. Ez a megközelítés akkor lehet hasznos, ha sok eszközt kezel, és mobileszköz-kezelő, valamint mobilalkalmazás-kezelő megoldást használ, mint az [Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune). Az alkalmazások Intune használatával történő hozzáadásával kapcsolatos tudnivalókat lásd: [Alkalmazások hozzáadása a Microsoft Intune szolgáltatáshoz](https://docs.microsoft.com/mem/intune/apps/apps-add).
+- **Android:** [Raktárkezelés a Google Play Áruházban](https://play.google.com/store/apps/details?id=com.Microsoft.WarehouseManagement)
+
+### <a name="download-the-app-from-microsoft-app-center"></a>Az alkalmazás letöltése a Microsoft App Center alkalmazásból
+
+Ahelyett, hogy egy alkalmazás-áruházból telepít, letöltheti az alkalmazást a Microsoft App Center alkalmazásból. Az App Center olyan telepíthető csomagokat biztosít, amelyek áttöltésre használhatók. Az App Center a jelenlegi verzión kívül lehetővé teszi a korábbi verziók letöltését is, és emellett olyan előzetes verziókat is tartalmaz, amelyekben közelgő funkciók is elérhetőek. A Raktárkezelés mobilalkalmazás jelenlegi, korábbi vagy előzetes verzióinak a Microsoft App Center alkalmazásból való letöltéséhez használja a következő hivatkozásokat:
+
+- **Windows (UWP):** [Raktárkezelés (Windows)](https://go.microsoft.com/fwlink/?linkid=2154406)  
+    A letöltött csomagok Windows-eszközre történő telepítéséről, majd a szükséges tanúsítványok beállításáról lásd: [Build telepítése az App Center alkalmazásból](https://docs.microsoft.com/appcenter/distribution/installation).
+
+- **Android:** [Raktárkezelés (Android)](https://go.microsoft.com/fwlink/?linkid=2154613)  
+    Ha egy előzetes verziót tölt le, néhány további lépés szükséges a telepítéshez. A részleteket lásd: [Android-alkalmazások tesztelése](https://docs.microsoft.com/appcenter/distribution/testers/testing-android).
 
 ## <a name="create-a-web-service-application-in-azure-active-directory"></a><a name="create-service"></a>Webes szolgáltatás alkalmazás létrehozása az Azure Active Directory szolgáltatásban
 

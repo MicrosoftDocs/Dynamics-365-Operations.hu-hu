@@ -2,11 +2,10 @@
 title: Elektronikus jelentéskészítés (ER) céljai
 description: Ez a témakör az Elektronikus jelentéskészítés rendeltetési helyeinek kezelésével, a támogatott célhelyek típusaival, valamint a biztonsági szempontokkal kapcsolatban tartalmaz tájékoztatást.
 author: nselin
-manager: AnnBe
-ms.date: 01/21/2021
+manager: tfehr
+ms.date: 02/24/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: DocuType, ERSolutionTable
 audience: Application User
@@ -17,12 +16,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 725ded9d777a65e5a38a7971c1da8cb74cf0dd47
-ms.sourcegitcommit: 872600103d2a444d78963867e5e0cdc62e68c3ec
+ms.openlocfilehash: 0fe0992412edf6f78be4ed293052e3501a7224ad
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "5097281"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5569719"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Elektronikus jelentéskészítés (ER) céljai
 
@@ -166,12 +165,14 @@ Ha azt szeretné, hogy a PDF-átalakítási beállítás elérhető legyen az ak
 
 ### <a name="applicability"></a>Alkalmazhatóság
 
-A PDF-átalakítási beállítás csak azon fájlösszetevők esetében kapcsolható be, amelyeknél a kimenet Office (Excel vagy Word) formátumban (**Excel-fájl**) generálódik. Ha ez a beállítás be van kapcsolva, a program automatikusan PDF-formátumra alakítja az Office formátumú kimenetet.
-
-### <a name="limitations"></a>Korlátozások
+A PDF-átalakítási beállítás csak azon fájlösszetevők esetében kapcsolható be, amelyeknél a kimenet Office (Excel vagy Word) formátumban (**Excel-fájl**) generálódik. Ha ez a beállítás be van kapcsolva, a program automatikusan PDF-formátumra alakítja az Office formátumú kimenetet. A Finance-szolgáltatás **10.0.18 előtti verzióiban** csak az **Excel\\fájltípus** olyan összetevőire vonatkozóan kapcsolhatja be ezt a funkciót, amelyeket [Excel](er-fillable-excel.md) vagy [Word](er-design-configuration-word.md) formátumú kimenet generálására használnak. A **10.0.18-as és újabb verziókban** azonban a **közös\\fájltípus** összetevőihez is be lehet kapcsolni ezt a beállítást.
 
 > [!NOTE]
-> Ez a funkció egy előnézeti funkció, azok a felhasználási feltételek vonatkoznak rá, amelyek itt olvashatók: [Kiegészítő felhasználási feltételek a Microsoft Dynamics 365 előnézetek esetén](https://go.microsoft.com/fwlink/?linkid=2105274).
+> Ügyeljen arra a figyelmeztető üzenetre, amely akkor jelenik meg, ha a PDF-konverziós lehetőséget a **közös\\fájltípus** egyik ER-összetevőjére vonatkozóan kapcsolja be. Ez az üzenet arról tájékoztat, hogy a tervezés során nem garantálható, hogy a kiválasztott fájlösszetevő futásidőben elérhetővé teszi a PDF-formátumot vagy PDF konvertálható tartalmat. Ezért csak akkor kapcsolja be ezt a beállítást, ha biztos benne, hogy a kiválasztott fájlösszetevő úgy van beállítva, hogy futásidőben elérhetővé tegye a PDF-formátumot vagy a PDF konvertálható tartalmat.
+> 
+> Ha az **Excel\\fájltípus** egyik összetevőjéhez bekapcsolja a PDF-konverziós beállítást, akkor az összetevő PDF-formátumtól különböző formátumban teszi elérhetővé a tartalmat, és ha a megjelenített tartalom nem konvertálható PDF-formátumra, kivétel lép fel futásidőben. A kapott üzenet arról tájékoztat, hogy a létrehozott tartalom nem konvertálható PDF-formátumra.
+
+### <a name="limitations"></a>Korlátozások
 
 A PDF-átalakítási beállítás csak felhőtelepítések esetén érhető el.
 

@@ -3,7 +3,7 @@ title: Az ügyfélkör áttekintése
 description: Ez a témakör az üzleti alkalmazásban rendelkezésre álló új ügyfélkör-kezelési lehetőségekről ad áttekintést.
 author: bebeale
 manager: AnnBe
-ms.date: 01/29/2021
+ms.date: 02/01/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: Version 10.0.7
-ms.openlocfilehash: 206031f5ddbaedb2b581a452fe8979252647f0c4
-ms.sourcegitcommit: 872600103d2a444d78963867e5e0cdc62e68c3ec
+ms.openlocfilehash: 8f3135d0a34086b67c6e5ce11a5af47a51479c92
+ms.sourcegitcommit: 8a14eac1c27f10c2b1b02ac9ad82339f5e127602
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "5097255"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "5554994"
 ---
 # <a name="clienteling-overview"></a>Ügyfélkör áttekintése
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8b34cc2e9921df6e3ef619e2b2adaf8d2069fbac
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 5afcb8171b674281faf8100d5c01fdff8d6ff764
+ms.sourcegitcommit: 34b8f6f5c6134b7b97a9fb41d0b2e63215c67062
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4974560"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5470785"
 ---
 # <a name="create-a-template-bom"></a>Sablonanyagjegyzék létrehozása   
 
@@ -33,9 +33,9 @@ Az alábbi módszerek bármelyikével létrehozhat sablonanyagjegyzéket. A **Ke
 
 ## <a name="create-a-template-bom-manually"></a>Sablonanyagjegyzék létrehozása manuálisan
 
-1.  Kattintson a **Szolgáltatáskezelés** \> **Beállítás** \> **A szolgáltatás tárgyai** \> **Sablonanyagjegyzékek** lehetőségre.
+1.  Lépjen a **Szolgáltatáskezelés** \> **Beállítás** \> **A szolgáltatás tárgyai** \> **Sablonanyagjegyzékek** lehetőségre.
 
-2.  Nyomja le a CTRL+N billentyűkombinációt, hogy megnyissa a **Sablonanyagjegyzék létrehozása** képernyőt.
+2.  Válassza az **Új** elemet, hogy megnyissa a **Sablonanyagjegyzék létrehozása** képernyőt.
 
 3.  Az **Anyagjegyzéksorok másolása hivatkozásból** elemnél jelölje be a **Kézi** lehetőséget.
 
@@ -45,15 +45,15 @@ Az alábbi módszerek bármelyikével létrehozhat sablonanyagjegyzéket. A **Ke
 
 6.  Adja meg a **Kezdő dátum** és a **Záró dátum** mezőben azt a dátumintervallumot, amelyben aktív a sablonanyagjegyzék.
 
-7.  Kattintson az **OK** gombra.
+7.  Válassza ki az **OK** lehetőséget.
 
 Létrejön egy új, üres sablonanyagjegyzék.
 
 ## <a name="create-a-template-bom-based-on-another-template-bom"></a>Sablonanyagjegyzék létrehozása másik sablonanyagjegyzék alapján
 
-1.  Kattintson a **Szolgáltatáskezelés** \> **Beállítás** \> **A szolgáltatás tárgyai** \> **Sablonanyagjegyzékek** lehetőségre.
+1.  Válassza a **Szolgáltatáskezelés** \> **Beállítás** \> **A szolgáltatás tárgyai** \> **Sablonanyagjegyzékek** lehetőséget.
 
-2.  Nyomja le a CTRL+N billentyűkombinációt, hogy megnyissa a **Sablonanyagjegyzék létrehozása** képernyőt.
+2.  Válassza az **Új** elemet, hogy megnyissa a **Sablonanyagjegyzék létrehozása** képernyőt.
 
 3.  Az **Anyagjegyzéksorok másolása hivatkozásból** elemnél jelölje be az **Anyagjegyzék-sablon** lehetőséget.
 
@@ -63,15 +63,15 @@ Létrejön egy új, üres sablonanyagjegyzék.
 
 6.  Adja meg a **Kezdő dátum** és a **Záró dátum** mezőben azt a dátumintervallumot, amelyben aktív a sablonanyagjegyzék.
 
-7.  Kattintson az **OK** gombra.
+7.  Válassza ki az **OK** lehetőséget.
 
 Egy új sablonanyagjegyzék jön létre az eredeti sablonanyagjegyzék soraival megegyező sorokkal.
 
 ## <a name="create-a-template-bom-based-on-an-item-bom"></a>Sablonanyagjegyzék létrehozása cikkanyagjegyzék alapján
 
-1.  Kattintson a **Szolgáltatáskezelés** \> **Beállítás** \> **A szolgáltatás tárgyai** \> **Sablonanyagjegyzékek** lehetőségre.
+1.  Válassza a **Szolgáltatáskezelés** \> **Beállítás** \> **A szolgáltatás tárgyai** \> **Sablonanyagjegyzékek** lehetőséget.
 
-2.  Nyomja le a CTRL+N billentyűkombinációt, hogy megnyissa a **Sablonanyagjegyzék létrehozása** képernyőt.
+2.  Válassza az **Új** elemet, hogy megnyissa a **Sablonanyagjegyzék létrehozása** képernyőt.
 
 3.  Az **Anyagjegyzéksorok másolása hivatkozásból** elemnél jelölje be az **Anyagjegyzék** lehetőséget.
 
@@ -81,15 +81,15 @@ Egy új sablonanyagjegyzék jön létre az eredeti sablonanyagjegyzék soraival 
 
 6.  Adja meg a **Kezdő dátum** és a **Záró dátum** mezőben azt a dátumintervallumot, amelyben aktív a sablonanyagjegyzék.
 
-7.  Kattintson az **OK** gombra.
+7.  Válassza ki az **OK** lehetőséget.
 
 Létrejön egy új sablonanyagjegyzék azoknak a soroknak a felhasználásával, amelyek megfelelnek az **Anyagjegyzékek** mezőben szereplő anyagjegyzéknek.
 
 ## <a name="create-a-template-bom-based-on-a-production-bom"></a>Sablonanyagjegyzék létrehozása termelési anyagjegyzék alapján
 
-1.  Kattintson a **Szolgáltatáskezelés** \> **Beállítás** \> **A szolgáltatás tárgyai** \> **Sablonanyagjegyzékek** lehetőségre.
+1.  Válassza a **Szolgáltatáskezelés** \> **Beállítás** \> **A szolgáltatás tárgyai** \> **Sablonanyagjegyzékek** lehetőséget.
 
-2.  Nyomja le a CTRL+N billentyűkombinációt, hogy megnyissa a **Sablonanyagjegyzék létrehozása** képernyőt.
+2.  Válassza az **Új** elemet, hogy megnyissa a **Sablonanyagjegyzék létrehozása** képernyőt.
 
 3.  Az **Anyagjegyzéksorok másolása hivatkozásból** elemnél jelölje be a **Termelés** lehetőséget.
 
@@ -99,7 +99,7 @@ Létrejön egy új sablonanyagjegyzék azoknak a soroknak a felhasználásával,
 
 6.  Adja meg a **Kezdő dátum** és a **Záró dátum** mezőben azt a dátumintervallumot, amelyben aktív a sablonanyagjegyzék.
 
-7.  Kattintson az **OK** gombra.
+7.  Válassza ki az **OK** lehetőséget.
 
 Létrejön egy új sablonanyagjegyzék azoknak a soroknak a felhasználásával, amelyek megfelelnek az **AJ** mezőben szereplő anyagjegyzéknek.
 

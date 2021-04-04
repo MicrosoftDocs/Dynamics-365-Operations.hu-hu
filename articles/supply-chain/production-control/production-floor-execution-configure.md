@@ -8,18 +8,19 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: JmgProductionFloorExecutionConfiguration
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: e822463ac80be3b1e498f02cb1aad2b214fed815
-ms.sourcegitcommit: b7a7a14f8650913f6797ae1c4a82ad8adfe415fd
+ms.openlocfilehash: d34f9c235df480658a0935d731f7267a87894067
+ms.sourcegitcommit: 70b1567d316f19c15a4b032b4897f15c8dcdca09
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "5077477"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "5556314"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>A termelési üzem végrehajtási felületének konfigurálása
 
@@ -41,7 +42,8 @@ A termelési üzem végrehajtási felületét, valamint a jelen témakörben le�
 
 ### <a name="the-production-floor-execution-interface"></a>A termelési üzem végrehajtási felülete
 
-Ez a témakörben leírt elsődleges funkció. Hozzáadja a termelési üzem végrehajtási felületét a rendszeréhez. Az engedélyezéséhez kapcsolja be a következő funkciót a [funkciókezelésben](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):  
+Ez a témakörben leírt elsődleges funkció. Hozzáadja a termelési üzem végrehajtási felületét a rendszeréhez. Az engedélyezéséhez kapcsolja be a következő funkciót a [funkciókezelésben](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+
 - Termelési üzem végrehajtása
 
 ### <a name="generate-license-plates"></a>Azonosítótáblák előállítása
@@ -72,13 +74,14 @@ Ez a funkció egy eszközkezelési lapot ad hozzá a termelési üzem végrehajt
 
 ## <a name="work-with-production-floor-execution-configurations"></a>A termelési üzem végrehajtási konfiguációinak használata
 
-Az eszközök konfigurációinak létrehozásához és karbantartásához nyissa meg a **Termelési vezérlő \> Beállítások \> Gyártásvégrehajtás \>Termelési üzem végrehajtásának konfigurálása** elemet. A **Termelési üzem végrehajtásának konfigurálása** lapon látható a meglévő konfigurációk listája. Ezen az oldalon az alábbi műveleteket végezheti:
+Az eszközök konfigurációinak létrehozásához és karbantartásához nyissa meg a **Termelési vezérlő \> Beállítások \> Gyártásvégrehajtás \> Termelési üzem végrehajtásának konfigurálása** elemet. A **Termelési üzem végrehajtásának konfigurálása** lapon látható a meglévő konfigurációk listája. Ezen az oldalon az alábbi műveleteket végezheti:
 
 - Kiválaszthatja bal oldali oszlopban felsorolt termelésiüzem-konfigurációk bármelyikét, hogy megtekintse és szerkessze azt.
 - Új eszközkonfiguráció hozzáadásához listához a műveleti ablaktáblán válassza az **Új** lehetőséget. Adjon meg egy nevet a **Konfiguráció** mezőben, amely lehetővé teszi az új konfiguráció azonosítását. Az itt megadott névnek egyedinek kell lennie az összes eszköz-konfiguráció között, és később már nem szerkeszthető.
 
 Ezután konfigurálja a különböző beállításokat a kiválasztott eszköz konfigurációjában. Az alábbi mezők állnak rendelkezésre:
 
+- **Csak érkezéskori és távozáskori blokkolás** – állítsa ezt a lehetőséget az *Igen* értékre, hogy olyan egyszerűsített inferfészt hozzon létre, amely csak érkezéskori és távozáskori blokkolási funkciót biztosít. Ez letiltja az oldal beállításainak többségét is. A beállítás engedélyezése előtt el kell távolítania minden sort a **Lapkijelölés** gyorslapról.
 - **Mennyisége jelentése távozáskori blokkoláskor** – Ezt állítsa *Igen* értékre, és megkérheti a dolgozókat, hogy adjanak visszajelzést a folyamatban lévő munkákról a távozáskori blokkoláskor. Ha *Nem* értékre van állítva, akkor a dolgozókat nem figyelmezteti a rendszer.
 - **Alkalmazott zárolása** – Ha a beállítás értéke *Nem*, akkor a program közvetlenül a regisztráció után (például új feladat) kilépteti a dolgozókat. Az eszköz visszatér a bejelentkezési oldalra. Ha a beállítás értéke *Igen*, akkor a dolgozók bejelentkezve maradnak a feladatkártya-eszközbe. Előfordulhat azonban, hogy egy dolgozó manuálisan kijelentkezik annak érdekében, hogy egy másik dolgozó jelentkezzen be, miközben a feladatkártya-eszköz továbbra is ugyanazon a rendszerszintű felhasználói fiókon fut. A fiókok típusairól a [Hozzárendelt felhasználók](config-job-card-device.md#assigned-users) című témakörben olvashat bővebben.
 - **A regisztráció tényleges időpontjának használata** – Ezt a beállítást *Igen* értékre állíthatja, ha azt szeretné, hogy az egyes új regisztrációk időpontja megegyezzen a dolgozó által benyújtott regisztráció pontos időpontjával. Ha a beállítás értéke *Nem*, akkor a bejelentkezési időt használja a rendszer. Ezt a beállítást általában *Igen* értékre kell állítani, ha *Igen* értékre állította az **Alkalmazott zárolása** és/vagy az **Egy dolgozó** beállítást, aminek következtében a dolgozók általában hosszabb ideig bejelentkezve maradnak.
