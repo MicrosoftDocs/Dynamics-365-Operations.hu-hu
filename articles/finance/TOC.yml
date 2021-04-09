@@ -78,8 +78,6 @@
                       href: get-started/whats-new-changed-10-0-17.md
                     - name: Finance 10.0.16 (2021. február)
                       href: get-started/whats-new-changed-10-0-16.md
-                    - name: Finance 10.0.15 (2021. január)
-                      href: get-started/whats-new-changed-10-0-15.md
             - name: Eltávolított vagy elavult funkciók
               items:
                 - name: Eltávolított vagy elavult funkciók a kezdőlapon
@@ -1418,13 +1416,13 @@
               href: ../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=/dynamics365/finance/toc.json
             - name: Jogszabálykövetési frissítések
               href: localizations/regulatory-updates.md
-            - name: Elektronikus számlázási bővítmény
+            - name: Elektronikus számlázás
               items:
-                - name: Elektronikus számlázási bővítmény áttekintése
+                - name: Elektronikus számlázás áttekintése
                   href: localizations/e-invoicing-service-overview.md
-                - name: Elektronikus számlázás kiegészítő adminisztrációs összetevői
+                - name: Elektronikus számlázás adminisztrációs összetevői
                   href: localizations/e-invoicing-service-administration.md
-                - name: Elektronikus számlázási bővítmény konfigurálása a Regulatory Configuration Services (RCS) megoldásban
+                - name: Elektronikus számlázás konfigurálása a Regulatory Configuration Services (RCS) megoldásban
                   href: localizations/e-invoicing-configuration-rcs.md
                 - name: Elektronikus számlák kiállítása a Finance és a Supply Chain Management szolgáltatásban
                   href: localizations/e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md
@@ -1432,20 +1430,22 @@
                   href: localizations/e-invoicing-create-azure-storage-account-key-vault.md
                 - name: Első lépések
                   items:
-                    - name: Első lépések az elektronikus számlázási bővítményszolgáltatás adminisztrálása során
+                    - name: Első lépések az elektronikus számlázási szolgáltatás adminisztrálása során
                       href: localizations/e-invoicing-get-started-service-administration.md
-                    - name: Első lépések az elektronikus számlázási bővítmény használata során
+                    - name: Első lépések az elektronikus számlázási használata során
                       href: localizations/e-invoicing-get-started.md
-                    - name: Első lépések az Brazíliára vonatkozó elektronikus számlázási bővítmény használata során
+                    - name: Első lépések az Brazíliára vonatkozó elektronikus számlázás használata során
                       href: localizations/e-invoicing-bra-get-started.md
-                    - name: Első lépések az Egyiptomra vonatkozó elektronikus számlázási bővítmény használata során
+                    - name: Első lépések az Egyiptomra vonatkozó elektronikus számlázási használata során
                       href: localizations/e-invoicing-eg-get-started.md
-                    - name: Első lépések az Olaszországra vonatkozó elektronikus számlázási bővítmény használata során
+                    - name: Első lépések az Olaszországra vonatkozó elektronikus számlázási használata során
                       href: localizations/e-invoicing-ita-get-started.md
-                    - name: Első lépések a Mexikóra vonatkozó elektronikus számlázási bővítmény használata során
+                    - name: Első lépések a Mexikóra vonatkozó elektronikus számlázási használata során
                       href: localizations/e-invoicing-mex-get-started.md
-                    - name: Az elektronikus számlázási bővítmény beállítása
+                    - name: Az elektronikus számlázás beállítása
                       href: localizations/e-invoicing-setup.md
+                - name: Elektronikus számlázás GYIK
+                  href: localizations/e-invoicing-faq.md
             - name: Ausztrália
               items:
                 - name: Ausztrália – áttekintés
@@ -1798,6 +1798,10 @@
                   href: localizations/emea-egy-invoice-layout.md
                 - name: Elektronikus vevői számlák Egyiptomban
                   href: localizations/emea-egy-e-invoices.md
+                - name: Áfabevallás – Egyiptom
+                  href: localizations/emea-egy-vat-declaration.md
+                - name: Adóelőleg-bevallás Egyiptom számára
+                  href: localizations/emea-egy-wht-declaration.md
             - name: Észtország
               items:
                 - name: Észtország – áttekintés
@@ -2082,6 +2086,38 @@
                   href: localizations/india.md
                 - name: Az indiai honosítások köre
                   href: localizations/apac-ind-scope.md
+                - name: Újdonságok és változások az indiai honosításában
+                  items:
+                    - name: Újdonságok vagy változások a 10.0.0-s verzióban
+                      href: localizations/apac-ind-news-letter-10-0-00.md
+                    - name: Újdonságok vagy változások a 10.0.01-es verzióban
+                      href: localizations/apac-ind-news-letter-10-0-01.md
+                    - name: Új vagy módosult elemek a 10.0.02-es verziójában
+                      href: localizations/apac-ind-news-letter-10-0-02.md
+                    - name: Új vagy módosult elemek a 10.0.03-as verziójában
+                      href: localizations/apac-ind-news-letter-10-0-03.md
+                    - name: Új vagy módosult elemek a 10.0.04-es verziójában
+                      href: localizations/apac-ind-news-letter-10-0-04.md
+                    - name: Új vagy módosult elemek a 10.0.05-ös verziójában
+                      href: localizations/apac-ind-news-letter-10-0-05.md
+                    - name: Új vagy módosult elemek a 10.0.06-os verziójában
+                      href: localizations/apac-ind-news-letter-10-0-06.md
+                    - name: Új vagy módosult elemek a 10.0.07-es verziójában
+                      href: localizations/apac-ind-news-letter-10-0-07.md
+                    - name: Új vagy módosult elemek a 10.0.08-as verziójában
+                      href: localizations/apac-ind-news-letter-10-0-08.md
+                    - name: Új vagy módosult elemek a 10.0.09-es verziójában
+                      href: localizations/apac-ind-news-letter-10-0-09.md
+                    - name: Új vagy módosult elemek a 10.0.10-es verziójában
+                      href: localizations/apac-ind-news-letter-10-0-10.md
+                    - name: Újdonságok vagy változások a 10.0.11-es verzióban
+                      href: localizations/apac-ind-news-letter-10-0-11.md
+                    - name: Újdonságok vagy változások a 10.0.12-es verzióban
+                      href: localizations/apac-ind-news-letter-10-0-12.md
+                    - name: Újdonságok vagy változások a 10.0.13-as verzióban
+                      href: localizations/ind-news-letter-10-0-13.md
+                    - name: Újdonságok vagy változások a 10.0.14-es verzióban
+                      href: localizations/apac-ind-news-letter-10-0-14.md
                 - name: Tárgyi eszközök
                   items:
                     - name: India – tárgyi eszközök áttekintése
@@ -2108,210 +2144,198 @@
                       href: localizations/tasks/apac-ind-set-up-asset-group-dep.md
                     - name: Tőkeelemek átvitele a tárgyi eszközre
                       href: localizations/tasks/apac-ind-transfer-capital-items.md
-                - name: India GST
+                - name: Közvetett adók
                   items:
-                    - name: India GST – áttekintés
-                      href: localizations/apac-ind-gst.md
-                    - name: Újdonságok és változások az India GST honosításában
+                    - name: India GST
                       items:
-                        - name: Újdonságok vagy változások a 10.0.0-s verzióban
-                          href: localizations/apac-ind-news-letter-10-0-00.md
-                        - name: Újdonságok vagy változások a 10.0.01-es verzióban
-                          href: localizations/apac-ind-news-letter-10-0-01.md
-                        - name: Új vagy módosult elemek a 10.0.02-es verziójában
-                          href: localizations/apac-ind-news-letter-10-0-02.md
-                        - name: Új vagy módosult elemek a 10.0.03-as verziójában
-                          href: localizations/apac-ind-news-letter-10-0-03.md
-                        - name: Új vagy módosult elemek a 10.0.04-es verziójában
-                          href: localizations/apac-ind-news-letter-10-0-04.md
-                        - name: Új vagy módosult elemek a 10.0.05-ös verziójában
-                          href: localizations/apac-ind-news-letter-10-0-05.md
-                        - name: Új vagy módosult elemek a 10.0.06-os verziójában
-                          href: localizations/apac-ind-news-letter-10-0-06.md
-                        - name: Új vagy módosult elemek a 10.0.07-es verziójában
-                          href: localizations/apac-ind-news-letter-10-0-07.md
-                        - name: Új vagy módosult elemek a 10.0.08-as verziójában
-                          href: localizations/apac-ind-news-letter-10-0-08.md
-                        - name: Új vagy módosult elemek a 10.0.09-es verziójában
-                          href: localizations/apac-ind-news-letter-10-0-09.md
-                        - name: Új vagy módosult elemek a 10.0.10-es verziójában
-                          href: localizations/apac-ind-news-letter-10-0-10.md
-                        - name: Újdonságok vagy változások a 10.0.11-es verzióban
-                          href: localizations/apac-ind-news-letter-10-0-11.md
-                        - name: Újdonságok vagy változások a 10.0.12-es verzióban
-                          href: localizations/apac-ind-news-letter-10-0-12.md
-                        - name: Újdonságok vagy változások a 10.0.13-as verzióban
-                          href: localizations/ind-news-letter-10-0-13.md
-                        - name: Újdonságok vagy változások a 10.0.14-es verzióban
-                          href: localizations/apac-ind-news-letter-10-0-14.md
-                    - name: India GST hivatkozáscsoportjai
-                      href: localizations/apac-ind-gst-reference-groups.md
-                    - name: GST integrációja pénztárgépekhez
-                      href: ../retail/localizations/apac-ind-cash-registers.md?toc=/dynamics365/finance/toc.json
-                    - name: Alapadat-beállítás
-                      items:
-                        - name: Üzleti iparág létrehozása
-                          href: localizations/apac-ind-GST-create-business-vertical.md
-                        - name: Államkód és szakszervezeti terület frissítése
-                          href: localizations/apac-ind-GST-update-state-code-union-territory.md
-                        - name: GST-mesteradószám létrehozása
-                          href: localizations/apac-ind-GST-create-gstin-master.md
-                        - name: GST-adószámok és referenciaszám-sorozatok meghatározása
-                          href: localizations/apac-ind-GST-define-gstin-numbers-number-sequences.md
-                        - name: HSN-kódok és szolgáltatáskönyvelési kódok meghatározása
-                          href: localizations/apac-ind-GST-hsn-service-accounting-codes.md
-                        - name: Adókulcstípus létrehozása
-                          href: localizations/apac-ind-GST-create-tax-rate-type.md
-                        - name: Fő számlák létrehozása a GST feladási típushoz
-                          href: localizations/apac-ind-GST-create-main-accounts-GST-posting-type.md
-                        - name: Adókiegyenlítési időszak létrehozása
-                          href: localizations/apac-ind-GST-create-tax-settlement-period.md
-                        - name: A GST-adószám csatolása adónyilvántartási csoporthoz
-                          href: localizations/apac-ind-GST-attach-GSTIN-tax-registration-group.md
-                    - name: Adóbeállítás
-                      items:
-                        - name: Adókonfiguráció meghatározása és alkalmazása jogi személyekre
-                          href: localizations/apac-ind-GST-define-tax-configuration-deploy-legal-entities.md
-                        - name: Megfeleltetési konfiguráció adótípusokhoz – Vám
-                          href: localizations/apac-ind-GST-map-configuration-tax-types.md
-                        - name: Mérték- és százaléktáblák beállítása
-                          href: localizations/apac-ind-GST-set-up-rate-percentage-tables.md
-                        - name: Áfahierarchia és a visszatérítési szabályok beállítása
-                          href: localizations/apac-ind-GST-set-up-activate-tax-hierarchy-tree.md
-                    - name: Beszerzési tranzakció
-                      items:
-                        - name: Beszerzések nem regisztrált szállítóktól
-                          href: localizations/apac-ind-GST-purchases-unregistered-vendor.md
-                        - name: Adóköteles cikk nem regisztrált szállítótól történő vásárlása
-                          href: localizations/apac-ind-gst-unregistered-vendor-purchase.md
-                        - name: Beszerzések regisztrált szállítóktól
-                          href: localizations/apac-ind-GST-purchases-registered-vendor.md
-                        - name: Leárazott áruk beszerzései
-                          href: localizations/apac-ind-GST-purchase-discounted-goods.md
-                        - name: Adómentes áruk beszerzése
-                          href: localizations/apac-ind-GST-purchase-exempted-goods.md
-                        - name: Nulla kulcsos áruk beszerzése
-                          href: localizations/apac-ind-GST-purchase-zero-rated-goods.md
-                        - name: Nem-GST áruk beszerzései
-                          href: localizations/apac-ind-GST-purchase-non-gst-goods.md
-                        - name: Beszerzések összetett kereskedőktől
-                          href: localizations/apac-ind-GST-purchase-from-composite-dealer.md
-                        - name: Szállítási költséggel rendelkező adóköteles áruk beszerzése
-                          href: localizations/apac-ind-GST-purchase-taxable-goods-shipping-charges.md
-                        - name: Adóköteles árukat tartalmazó beszerzési számla felülvizsgálata
-                          href: localizations/apac-ind-GST-revised-purchase-invoice-taxable-goods.md
-                        - name: Tárgyi eszközök beszerzései
-                          href: localizations/apac-ind-GST-purchase-fixed-asset.md
-                        - name: Jóváírás létrehozása beszerzési számlához
-                          href: localizations/apac-ind-GST-credit-note-against-purchase-invoice.md
-                        - name: Tartozás létrehozása beszerzési számlához
-                          href: localizations/apac-ind-GST-debit-note-against-purchase-invoice.md
-                        - name: 'Minőségi rendelések, amelyeknél a mintadarab rombolását foglalja magában'
-                          href: localizations/apac-ind-GST-quality-order-involves-destruction-sampling-item.md
-                        - name: Beszerzési visszárurendelések
-                          href: localizations/apac-ind-GST-purchase-return-order.md
-                        - name: 'Szállítói előlegfizetések, ahol sztornózott költségek merültek fel'
-                          href: localizations/apac-ind-GST-vendor-advance-payment-reverse-charges.md
-                    - name: Értékesítési tranzakció
-                      items:
-                        - name: Adóköteles áruk értékesítése vevőknek
-                          href: localizations/apac-ind-GST-sell-taxable-goods-consumer.md
-                        - name: Értékesítés regisztrált vevőknek
-                          href: localizations/apac-ind-GST-sell-registered-customer.md
-                        - name: Szabadszöveges számlák
-                          href: localizations/apac-ind-GST-free-text-invoices.md
-                        - name: 'Adóköteles áruk értékesítése, ahol sztornózott költségek merültek fel'
-                          href: localizations/apac-ind-GST-sell-taxable-goods-reverse-charge.md
-                        - name: Adómentes cikkek értékesítése
-                          href: localizations/apac-ind-GST-sales-exempted-item.md
-                        - name: Nulla kulcsos áruk értékesítése
-                          href: localizations/apac-ind-GST-sell-zero-rated-goods.md
-                        - name: Nem-GST áruk értékesítése
-                          href: localizations/apac-ind-GST-sell-non-gst-goods.md
-                        - name: 'Adóköteles áruk értékesítése, amelyekhez engedmény és feltételes értékelés tartozik'
-                          href: localizations/apac-ind-GST-sell-taxable-goods-discount-provisional-assessment.md
-                        - name: 'Adóköteles áruk értékesítése, amelynek szállítási költségei adót tartalmaznak'
-                          href: localizations/apac-ind-GST-sell-taxable-goods-tax-shipping-charges.md
-                        - name: 'Értékesítések, ahol az ár adót tartalmaz és adót nem tartalmaz'
-                          href: localizations/apac-ind-GST-sales-prices-include-exclude-tax.md
-                        - name: Tartozás létrehozása értékesítési számlához
-                          href: localizations/apac-ind-GST-debit-note-against-sales-invoice.md
-                        - name: Jóváírás létrehozása értékesítési számlához
-                          href: localizations/apac-ind-GST-credit-note-against-sales-invoice.md
-                        - name: Értékesítési számlák szállítási cím alapján felosztva
-                          href: localizations/apac-ind-GST-sales-invoice-split-based-on-delivery-addresses.md
-                        - name: Visszárurendelések
-                          href: localizations/apac-ind-GST-return-order-form.md
-                    - name: Külföldi tranzakciók
-                      items:
-                        - name: GST-t tartalmazó áruk importálása
-                          href: localizations/apac-ind-GST-import-goods-gst.md
-                        - name: GST-t tartalmazó szolgáltatások importálása
-                          href: localizations/apac-ind-import-services-gst.md
-                        - name: Nulla kulcsos adót tartalmazó áruk exportálása
-                          href: localizations/apac-ind-GST-export-goods-zero-rated-tax.md
-                        - name: Nulla kulcsos adót tartalmazó szolgáltatások exportálása
-                          href: localizations/apac-ind-GST-export-services-zero-rated-tax.md
-                    - name: Készlettranzakció
-                      items:
-                        - name: Készletátmozgatási rendelések
-                          href: localizations/apac-ind-stock-transfer.md
-                        - name: 'Készletátmozgatási rendelések, ahol az átmozgatási ár adót tartalmaz'
-                          href: localizations/apac-ind-GST-stock-transfer-transactions.md
-                    - name: Vevői kifizetési tranzakció
-                      items:
-                        - name: Adót tartalmazó előlegfizetés
-                          href: localizations/apac-ind-GST-advance-payment-includes-tax.md
-                        - name: Számla feladásakor kiegyenlített előlegfizetések
-                          href: localizations/apac-ind-GST-advance-payment-settled-during-invoice-posting.md
-                        - name: Adót tartalmazó előlegfizetés és számla manuális kiegyenlítése
-                          href: localizations/apac-ind-GST-manually-settle-payment-invoice-tax.md
-                        - name: Adót tartalmazó számlák kifizetése
-                          href: localizations/apac-ind-GST-pay-invoice-includes-tax.md
-                        - name: Adót tartalmazó előlegfizetés felülvizsgálata
-                          href: localizations/apac-ind-GST-revise-advanced-payment-tax.md
-                        - name: Vevői kifizetés visszatérítése
-                          href: localizations/apac-ind-GST-customer-payment-refund.md
-                    - name: Közvetlenadó-tranzakció
+                        - name: India GST – áttekintés
+                          href: localizations/apac-ind-gst.md
+                        - name: Adómotor
+                          items:
+                            - name: Adómotor áttekintése
+                              href: general-ledger/tax-engine.md
+                            - name: Importálás konfigurálása
+                              href: general-ledger/tax-engine-import-configuration.md
+                            - name: Továbbfejlesztett képletszerkesztő
+                              href: ../fin-ops-core/dev-itpro/analytics/er-advanced-formula-editor.md?toc=/dynamics365/finance/toc.json
+                            - name: Adómotor alkalmazhatósága
+                              href: general-ledger/tax-engine-applicability.md
+                            - name: Adózási összetevők létrehozása
+                              href: localizations/tax-engine-create-tax-component.md
+                            - name: Adómotor integrációja
+                              href: general-ledger/tax-engine-integration.md
+                            - name: Adómotor kiterjesztése
+                              href: general-ledger/extend-tax-engine-configurations.md
+                            - name: A TaxDocumentJSON tábla tisztítása
+                              href: localizations/gte-clean-up-tax-document-json-table.md
+                            - name: GTE hibaelhárítása
+                              href: localizations/tax-engine-trouble-shooting.md
+                        - name: Alapadat-beállítás
+                          items:
+                            - name: Üzleti iparág létrehozása
+                              href: localizations/apac-ind-GST-create-business-vertical.md
+                            - name: Államkód és szakszervezeti terület frissítése
+                              href: localizations/apac-ind-GST-update-state-code-union-territory.md
+                            - name: GST-mesteradószám létrehozása
+                              href: localizations/apac-ind-GST-create-gstin-master.md
+                            - name: GST-adószámok és referenciaszám-sorozatok meghatározása
+                              href: localizations/apac-ind-GST-define-gstin-numbers-number-sequences.md
+                            - name: HSN-kódok és szolgáltatáskönyvelési kódok meghatározása
+                              href: localizations/apac-ind-GST-hsn-service-accounting-codes.md
+                            - name: Adókulcstípus létrehozása
+                              href: localizations/apac-ind-GST-create-tax-rate-type.md
+                            - name: Fő számlák létrehozása a GST feladási típushoz
+                              href: localizations/apac-ind-GST-create-main-accounts-GST-posting-type.md
+                            - name: Adókiegyenlítési időszak létrehozása
+                              href: localizations/apac-ind-GST-create-tax-settlement-period.md
+                            - name: A GST-adószám csatolása adónyilvántartási csoporthoz
+                              href: localizations/apac-ind-GST-attach-GSTIN-tax-registration-group.md
+                        - name: Adóbeállítás
+                          items:
+                            - name: Adókonfiguráció meghatározása és alkalmazása jogi személyekre
+                              href: localizations/apac-ind-GST-define-tax-configuration-deploy-legal-entities.md
+                            - name: Megfeleltetési konfiguráció adótípusokhoz – Vám
+                              href: localizations/apac-ind-GST-map-configuration-tax-types.md
+                            - name: Mérték- és százaléktáblák beállítása
+                              href: localizations/apac-ind-GST-set-up-rate-percentage-tables.md
+                            - name: Áfahierarchia és a visszatérítési szabályok beállítása
+                              href: localizations/apac-ind-GST-set-up-activate-tax-hierarchy-tree.md
+                            - name: India GST hivatkozáscsoportjai
+                              href: localizations/apac-ind-gst-reference-groups.md
+                        - name: Adótranzakciók
+                          items:
+                            - name: Beszerzési tranzakciók
+                              items:
+                                - name: Beszerzések nem regisztrált szállítóktól
+                                  href: localizations/apac-ind-GST-purchases-unregistered-vendor.md
+                                - name: Adóköteles cikk nem regisztrált szállítótól történő vásárlása
+                                  href: localizations/apac-ind-gst-unregistered-vendor-purchase.md
+                                - name: Beszerzések regisztrált szállítóktól
+                                  href: localizations/apac-ind-GST-purchases-registered-vendor.md
+                                - name: Leárazott áruk beszerzései
+                                  href: localizations/apac-ind-GST-purchase-discounted-goods.md
+                                - name: Adómentes áruk beszerzése
+                                  href: localizations/apac-ind-GST-purchase-exempted-goods.md
+                                - name: Nulla kulcsos áruk beszerzése
+                                  href: localizations/apac-ind-GST-purchase-zero-rated-goods.md
+                                - name: Nem-GST áruk beszerzései
+                                  href: localizations/apac-ind-GST-purchase-non-gst-goods.md
+                                - name: Beszerzések összetett kereskedőktől
+                                  href: localizations/apac-ind-GST-purchase-from-composite-dealer.md
+                                - name: Szállítási költséggel rendelkező adóköteles áruk beszerzése
+                                  href: localizations/apac-ind-GST-purchase-taxable-goods-shipping-charges.md
+                                - name: Adóköteles árukat tartalmazó beszerzési számla felülvizsgálata
+                                  href: localizations/apac-ind-GST-revised-purchase-invoice-taxable-goods.md
+                                - name: Tárgyi eszközök beszerzései
+                                  href: localizations/apac-ind-GST-purchase-fixed-asset.md
+                                - name: Jóváírás létrehozása beszerzési számlához
+                                  href: localizations/apac-ind-GST-credit-note-against-purchase-invoice.md
+                                - name: Tartozás létrehozása beszerzési számlához
+                                  href: localizations/apac-ind-GST-debit-note-against-purchase-invoice.md
+                                - name: 'Minőségi rendelések, amelyeknél a mintadarab rombolását foglalja magában'
+                                  href: localizations/apac-ind-GST-quality-order-involves-destruction-sampling-item.md
+                                - name: Beszerzési visszárurendelések
+                                  href: localizations/apac-ind-GST-purchase-return-order.md
+                                - name: 'Szállítói előlegfizetések, ahol sztornózott költségek merültek fel'
+                                  href: localizations/apac-ind-GST-vendor-advance-payment-reverse-charges.md
+                            - name: Értékesítési tranzakciók
+                              items:
+                                - name: Adóköteles áruk értékesítése vevőknek
+                                  href: localizations/apac-ind-GST-sell-taxable-goods-consumer.md
+                                - name: Értékesítés regisztrált vevőknek
+                                  href: localizations/apac-ind-GST-sell-registered-customer.md
+                                - name: Szabadszöveges számlák
+                                  href: localizations/apac-ind-GST-free-text-invoices.md
+                                - name: 'Adóköteles áruk értékesítése, ahol sztornózott költségek merültek fel'
+                                  href: localizations/apac-ind-GST-sell-taxable-goods-reverse-charge.md
+                                - name: Adómentes cikkek értékesítése
+                                  href: localizations/apac-ind-GST-sales-exempted-item.md
+                                - name: Nulla kulcsos áruk értékesítése
+                                  href: localizations/apac-ind-GST-sell-zero-rated-goods.md
+                                - name: Nem-GST áruk értékesítése
+                                  href: localizations/apac-ind-GST-sell-non-gst-goods.md
+                                - name: 'Adóköteles áruk értékesítése, amelyekhez engedmény és feltételes értékelés tartozik'
+                                  href: localizations/apac-ind-GST-sell-taxable-goods-discount-provisional-assessment.md
+                                - name: 'Adóköteles áruk értékesítése, amelynek szállítási költségei adót tartalmaznak'
+                                  href: localizations/apac-ind-GST-sell-taxable-goods-tax-shipping-charges.md
+                                - name: 'Értékesítések, ahol az ár adót tartalmaz és adót nem tartalmaz'
+                                  href: localizations/apac-ind-GST-sales-prices-include-exclude-tax.md
+                                - name: Tartozás létrehozása értékesítési számlához
+                                  href: localizations/apac-ind-GST-debit-note-against-sales-invoice.md
+                                - name: Jóváírás létrehozása értékesítési számlához
+                                  href: localizations/apac-ind-GST-credit-note-against-sales-invoice.md
+                                - name: Értékesítési számlák szállítási cím alapján felosztva
+                                  href: localizations/apac-ind-GST-sales-invoice-split-based-on-delivery-addresses.md
+                                - name: Visszárurendelések
+                                  href: localizations/apac-ind-GST-return-order-form.md
+                            - name: Külföldi tranzakciók
+                              items:
+                                - name: GST-t tartalmazó áruk importálása
+                                  href: localizations/apac-ind-GST-import-goods-gst.md
+                                - name: GST-t tartalmazó szolgáltatások importálása
+                                  href: localizations/apac-ind-import-services-gst.md
+                                - name: Nulla kulcsos adót tartalmazó áruk exportálása
+                                  href: localizations/apac-ind-GST-export-goods-zero-rated-tax.md
+                                - name: Nulla kulcsos adót tartalmazó szolgáltatások exportálása
+                                  href: localizations/apac-ind-GST-export-services-zero-rated-tax.md
+                                - name: Jóváírás vagy terhelés exportrendeléssel szemben
+                                  href: localizations/apac-ind-GST-credit-debit-note-against-export-order.md
+                            - name: Készletátmozgatási tranzakciók
+                              items:
+                                - name: Készletátmozgatási rendelések
+                                  href: localizations/apac-ind-stock-transfer.md
+                                - name: 'Készletátmozgatási rendelések, ahol az átmozgatási ár adót tartalmaz'
+                                  href: localizations/apac-ind-GST-stock-transfer-transactions.md
+                            - name: Vevők kifizetési tranzakciói
+                              items:
+                                - name: Adót tartalmazó előlegfizetés
+                                  href: localizations/apac-ind-GST-advance-payment-includes-tax.md
+                                - name: Számla feladásakor kiegyenlített előlegfizetések
+                                  href: localizations/apac-ind-GST-advance-payment-settled-during-invoice-posting.md
+                                - name: Adót tartalmazó előlegfizetés és számla manuális kiegyenlítése
+                                  href: localizations/apac-ind-GST-manually-settle-payment-invoice-tax.md
+                                - name: Adót tartalmazó számlák kifizetése
+                                  href: localizations/apac-ind-GST-pay-invoice-includes-tax.md
+                                - name: Adót tartalmazó előlegfizetés felülvizsgálata
+                                  href: localizations/apac-ind-GST-revise-advanced-payment-tax.md
+                                - name: Vevői kifizetés visszatérítése
+                                  href: localizations/apac-ind-GST-customer-payment-refund.md
+                            - name: Adóhelyesbítés
+                              items:
+                                - name: Adóösszeg-helyesbítés
+                                  href: localizations/apac-ind-GST-tax-adjustments.md
+                                - name: Adónapló létrehozása
+                                  href: localizations/apac-ind-GST-tax-journal.md
+                            - name: Adóbizonylat lekérdezései
+                              items:
+                                - name: Adóügyi lekérdezés
+                                  href: localizations/apac-ind-GST-tax-inquiry.md
+                        - name: Adóelszámolás
+                          items:
+                            - name: Szabályon alapuló adókiegyenlítés
+                              href: localizations/apac-ind-GST-tax-settlement.md
+                        - name: GSTR-jelentések
+                          items:
+                            - name: Új GSTR-1 és GSTR-2 visszatérítési formátumok
+                              href: localizations/apac-ind-GST-new-GSTR1-GSTR2-return-formats.md
+                            - name: Új GSTR offline eszköz az ANX-1-hez és a beszerzési jegyzékhez
+                              href: localizations/apac-ind-GST-new-GSTR-offline-tool-ANX1-purchase-register.md
+                            - name: GSTR-jelentés adatainak létrehozása adóbevallásokhoz
+                              href: localizations/apac-ind-GST-tax-returns.md
+                            - name: GSTR-jelentésekre vonatkozó több köteges feldolgozás engedélyezése
+                              href: localizations/apac-ind-gst-multi-batch-processing-gstr-return.md
+                - name: Közvetlen adók
+                  items:
+                    - name: India – Adóelőleg
                       items:
                         - name: A GST belefoglalása az adólevonások kiszámításakor
                           href: localizations/apac-ind-GST-include-gst-calculating-tax-deductions.md
                         - name: A GST belefoglalása az adóbeszedés kiszámításakor
                           href: localizations/apac-ind-GST-include-gst-calculating-tax-collections.md
-                    - name: Adóösszeg kiigazítása
-                      href: localizations/apac-ind-GST-tax-adjustments.md
-                    - name: Szabályon alapuló adókiegyenlítés
-                      href: localizations/apac-ind-GST-tax-settlement.md
-                    - name: Adónapló létrehozása
-                      href: localizations/apac-ind-GST-tax-journal.md
-                    - name: GSTR-jelentés adatainak létrehozása adóbevallásokhoz
-                      href: localizations/apac-ind-GST-tax-returns.md
-                    - name: GSTR-jelentésekre vonatkozó több köteges feldolgozás engedélyezése
-                      href: localizations/apac-ind-gst-multi-batch-processing-gstr-return.md
-                    - name: Adóügyi lekérdezés
-                      href: localizations/apac-ind-GST-tax-inquiry.md
-                    - name: A TaxDocumentJSON tábla tisztítása
-                      href: localizations/gte-clean-up-tax-document-json-table.md
-                - name: Adómotor
-                  items:
-                    - name: Adómotor áttekintése
-                      href: general-ledger/tax-engine.md
-                    - name: Konfiguráció importálása
-                      href: general-ledger/tax-engine-import-configuration.md
-                    - name: Továbbfejlesztett képletszerkesztő
-                      href: ../fin-ops-core/dev-itpro/analytics/er-advanced-formula-editor.md?toc=/dynamics365/finance/toc.json
-                    - name: Adómotor alkalmazhatósága
-                      href: general-ledger/tax-engine-applicability.md
-                    - name: Adózási összetevők létrehozása
-                      href: localizations/tax-engine-create-tax-component.md
-                    - name: Adómotor integrációja
-                      href: general-ledger/tax-engine-integration.md
-                    - name: Adómotor kiterjesztése
-                      href: general-ledger/extend-tax-engine-configurations.md
-                    - name: GTE hibaelhárítása
-                      href: localizations/tax-engine-trouble-shooting.md
-                - name: Adóküszöbértékekre vonatkozó GYIK
-                  href: localizations/apac-ind-tax-thresholds.md
+                        - name: Adóküszöbértékekre vonatkozó GYIK
+                          href: localizations/apac-ind-tax-thresholds.md
+                        - name: TCS áruértékesítés esetén
+                          href: localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md
             - name: Olaszország
               items:
                 - name: Olaszország – áttekintés
@@ -2568,6 +2592,8 @@
                   href: localizations/emea-ltu-vat-statement-details.md
                 - name: i.SAF-jelentés Litvánia esetében
                   href: localizations/emea-ltu-isaf.md
+                - name: Standard könyvvizsgálati fájl adóhoz (SAF-T) Litvánia esetén
+                  href: localizations/emea-ltu-saf-t.md
             - name: Malajzia
               items:
                 - name: Malajzia – áttekintés
@@ -2930,6 +2956,8 @@
                       href: localizations/rus-deferred-expenses-register.md
                     - name: Pénzforgalmi adójegyzékek
                       href: localizations/rus-cash-flow-tax-registers.md
+                    - name: Kulccsal rendelkező költségjegyzékek
+                      href: localizations/rus-rated-expenses-registers.md
             - name: Szaúd-Arábia
               items:
                 - name: Szaúd-Arábia – áttekintés
@@ -3381,11 +3409,11 @@
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-domain-specific-data-model-2016-11.md?toc=/dynamics365/finance/toc.json
                     - name: Alkalmazásspecifikus metaadatok előkészítése
                       items:
-                        - name: (ER) RCS-ben felhasználandó alkalmazás-metaadatok előkészítése
+                        - name: RCS-ben felhasználandó ER-alkalmazás-metaadatok előkészítése
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/prepare-application-metadata-rcs.md?toc=/dynamics365/finance/toc.json
-                        - name: (RCS) Alkalmazás-metaadatokhoz való hozzáférés ER-konfiguráció használatával
+                        - name: Alkalmazás-metaadatokhoz való hozzáférésaz RCS-ben ER-konfiguráció használatával
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-er-configuration.md?toc=/dynamics365/finance/toc.json
-                        - name: (RCS) Alkalmazás-metaadatokhoz való hozzáférés összekapcsolt alkalmazások használatával
+                        - name: Alkalmazás-metaadatokhoz való hozzáférés az RCS-ben összekapcsolt alkalmazások használatával
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-using-connected-applications.md?toc=/dynamics365/finance/toc.json
                         - name: Modell-leképezések meghatározása és adatforrások kiválasztása
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-model-mapping-select-data-sources-2016-11.md?toc=/dynamics365/finance/toc.json
@@ -3403,7 +3431,7 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-electronic-payments.md?toc=/dynamics365/finance/toc.json
                     - name: A formátum frissítése a formátum új alapverziójának elfogadásával
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upgrade-format.md?toc=/dynamics365/finance/toc.json
-            - name: Képletszerkesztők az Elektronikus jelentéskészítésben
+            - name: Képletszerkesztők az ER-ben
               items:
                 - name: Képletszerkesztő
                   href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formula-designer.md?toc=/dynamics365/finance/toc.json
@@ -3675,7 +3703,7 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-qrcode.md?toc=/dynamics365/finance/toc.json
                         - name: 'Szöveg: Text'
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-text.md?toc=/dynamics365/finance/toc.json
-            - name: ER-formátumok tervezése kimenő elektronikus dokumentumok különböző formátumokban történő létrehozásához
+            - name: ER-formátumok tervezése kimenő dokumentumok különböző formátumokban történő létrehozásához
               items:
                 - name: Konfigurációk tervezése a kimenő dokumentumok Excel-formátumban történő létrehozásához
                   items:
@@ -3703,7 +3731,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/er-fillable-pdf.md?toc=/dynamics365/finance/toc.json
                 - name: Képek és alakzatok beágyazása
                   items:
-                    - name: (ER) Beágyazott képek és alakzatok az Ön által generált dokumentumokban
+                    - name: Beágyazott képek és formák az Ön által generált dokumentumokban
                       href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-embed-images-shapes.md?toc=/dynamics365/finance/toc.json
                     - name: Példa képek és alakzatok beágyazására
                       items:
@@ -3717,7 +3745,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/finance/toc.json
                 - name: Anyagjegyzék-karakterek elrejtése a létrehozott fájlokban
                   href: ../fin-ops-core/dev-itpro/analytics/er-suppress-bom-characters.md?toc=/dynamics365/finance/toc.json
-            - name: Alkalmazásadatok frissítése Elektronikus jelentéskészítés segítségével
+            - name: Alkalmazásadatok frissítése ER használatával
               items:
                 - name: Elektronikus dokumentumok generálása és alkalmazásadatok frissítése
                   href: ../fin-ops-core/dev-itpro/analytics/generate-electronic-documents-update-application-data.md?toc=/dynamics365/finance/toc.json
@@ -3763,8 +3791,8 @@
                       href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/finance/toc.json
                 - name: Regulatory services (RCS)
                   items:
-                    - name: Kapcsolódás Regulatory Configuration Services (RCS) szolgáltatáshoz – Globalizációs jellemzők
-                      href: localizations/rcs-globalization-feature.md
+                    - name: Globalizációs funkciók az RCS-ben
+                      href: localizations/rcs-globalization-feature.md?toc=dynamics365/finance/toc.json
                     - name: ER konfigurációk letöltése a Finance programba
                       items:
                         - name: Konfigurációk letöltése az RCS-ből
@@ -3896,17 +3924,17 @@
                     - name: Céltípusok
                       items:
                         - name: Archív cél
-                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-archive.md
+                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-archive.md?toc=/dynamics365/finance/toc.json
                         - name: E-mail célja
-                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-email.md
+                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-email.md?toc=/dynamics365/finance/toc.json
                         - name: Fájl célja
-                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-file.md
+                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-file.md?toc=/dynamics365/finance/toc.json
                         - name: Power BI cél
-                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-powerbi.md
+                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-powerbi.md?toc=/dynamics365/finance/toc.json
                         - name: Nyomtatási cél
-                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-print.md
+                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-print.md?toc=/dynamics365/finance/toc.json
                         - name: Képernyő célja
-                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-screen.md
+                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-screen.md?toc=/dynamics365/finance/toc.json
                     - name: Célok konfigurálása
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/dynamics365/finance/toc.json
                     - name: Műveletfüggő célok konfigurálása
@@ -3919,11 +3947,11 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/dynamics365/finance/toc.json
                     - name: A létrehozott ER-jelentések eredmények nyomon követésében és a kiindulási értékekkel való összehasonlításukban végzett fejlesztések
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/dynamics365/finance/toc.json
-                    - name: Elektronikus jelentéskészítéssel folytatott tesztelés automatizálása
+                    - name: Tesztelés automatizálása ER segítségével
                       href: ../fin-ops-core/dev-itpro/analytics/er-automate-testing.md?toc=/dynamics365/finance/toc.json
                 - name: Üzleti folyamatok automatizálása Elektronikus jelentéskészítési konfigurációk segítségével
                   items:
-                    - name: Elektronikus jelentéskészítés konfigurálása az adatok Power BI szolgáltatásba való lehívásához
+                    - name: ER konfigurálása az adatok Power BI szolgáltatásba való lehívásához
                       href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/dynamics365/finance/toc.json
                     - name: Nyomtatható szabadszöveges számla (FTI) űrlapok létrehozása
                       href: ../fin-ops-core/dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/dynamics365/finance/toc.json

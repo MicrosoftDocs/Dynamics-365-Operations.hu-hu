@@ -763,17 +763,19 @@
               items:
                 - name: Konfigurációk létrehozása
                   href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Az ER-konfigurációk függőségének meghatározása más összetevőknél
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Az Elektronikus jelentéskészítés megoldás összetevőinek előkészítése
                   items:
                     - name: Tartományspecifikus adatmodell kialakítása
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-domain-specific-data-model-2016-11.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Alkalmazásspecifikus metaadatok előkészítése
                       items:
-                        - name: (ER) RCS-ben felhasználandó alkalmazás-metaadatok előkészítése
+                        - name: RCS-ben felhasználandó ER-alkalmazás-metaadatok előkészítése
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/prepare-application-metadata-rcs.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: (RCS) Alkalmazás-metaadatokhoz való hozzáférés ER-konfiguráció használatával
+                        - name: Alkalmazás-metaadatokhoz való hozzáférésaz RCS-ben ER-konfiguráció használatával
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-er-configuration.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: (RCS) Alkalmazás-metaadatokhoz való hozzáférés összekapcsolt alkalmazások használatával
+                        - name: Alkalmazás-metaadatokhoz való hozzáférés az RCS-ben összekapcsolt alkalmazások használatával
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-using-connected-applications.md?toc=/dynamics365/supply-chain/toc.json
                         - name: Modell-leképezések meghatározása és adatforrások kiválasztása
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-model-mapping-select-data-sources-2016-11.md?toc=/dynamics365/supply-chain/toc.json
@@ -785,13 +787,13 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-map-components-data-model-elements--2016-11.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Az előkészített ER-megoldás tesztelése a célalkalmazásban
                       items:
-                        - name: (ER) Konfigurációk importálása RCS-ből
+                        - name: Konfigurációk importálása RCS-ből
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/supply-chain/toc.json
                         - name: Elektronikus dokumentumok létrehozása kifizetésekhez formátumkonfiguráció használatával
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-electronic-payments.md?toc=/dynamics365/supply-chain/toc.json
                     - name: A formátum frissítése a formátum új alapverziójának elfogadásával
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upgrade-format.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Képletszerkesztők az Elektronikus jelentéskészítésben
+            - name: Képletszerkesztők az ER-ben
               items:
                 - name: Képletszerkesztő
                   href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formula-designer.md?toc=/dynamics365/supply-chain/toc.json
@@ -803,6 +805,12 @@
                   href: ../fin-ops-core/dev-itpro/analytics/er-formula-language.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Függvények
                   items:
+                    - name: Tároló
+                      items:
+                        - name: Tárolófüggvények
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-container.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Base64StringToContainer
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-container-base64stringtocontainer.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Dátum és idő
                       items:
                         - name: Dátum- és időfüggvények
@@ -833,7 +841,9 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessionnow.md?toc=/dynamics365/supply-chain/toc.json
                         - name: SessionToday
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessiontoday.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: List
+                        - name: Today
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-today.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Lista
                       items:
                         - name: Listafüggvények
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-list.md?toc=/dynamics365/supply-chain/toc.json
@@ -859,6 +869,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-isempty.md?toc=/dynamics365/supply-chain/toc.json
                         - name: List
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-list.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: ListDistinct
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listdistinct.md?toc=/dynamics365/supply-chain/toc.json
                         - name: ListJoin
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listjoin.md?toc=/dynamics365/supply-chain/toc.json
                         - name: ListOfFields
@@ -867,7 +879,7 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffirstitem.md?toc=/dynamics365/supply-chain/toc.json
                         - name: OrderBy
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-orderby.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Sztornírozás
+                        - name: Reverse
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-reverse.md?toc=/dynamics365/supply-chain/toc.json
                         - name: Felosztás
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-split.md?toc=/dynamics365/supply-chain/toc.json
@@ -887,14 +899,22 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-and.md?toc=/dynamics365/supply-chain/toc.json
                         - name: Case
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-case.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Contains
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-contains.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: EndsWith
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-endswith.md?toc=/dynamics365/supply-chain/toc.json
                         - name: If
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-if.md?toc=/dynamics365/supply-chain/toc.json
                         - name: Not
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-not.md?toc=/dynamics365/supply-chain/toc.json
                         - name: Or
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-or.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: StartsWith
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-startswith.md?toc=/dynamics365/supply-chain/toc.json
                         - name: ValueIn
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-valuein.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: ValueInLarge
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-valueinlarge.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Matematikai
                       items:
                         - name: Matematikai függvények
@@ -990,7 +1010,7 @@
                         - name: CurCredRef
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-curcredref.md?toc=/dynamics365/supply-chain/toc.json
                         - name: FA_Balance
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-fabalance.md?toc=/dynamics365/supply-chain/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-fabalance.md?toc=/dynamics365supply-chain/toc.json
                         - name: FA_Sum
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-fasum.md?toc=/dynamics365/supply-chain/toc.json
                         - name: GetCurrentCompany
@@ -1019,6 +1039,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-conversion-numbervalue.md?toc=/dynamics365/supply-chain/toc.json
                         - name: 'Típus: Value'
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-conversion-value.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: 'Tároló: Base64StringToContainer'
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-container-base64stringtocontainer.md?toc=/dynamics365/supply-chain/toc.json
                         - name: 'Dátum és idő: DateTimeValue'
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datetimevalue.md?toc=/dynamics365/supply-chain/toc.json
                         - name: 'Dátum- és idő: DateToDateTime'
@@ -1043,79 +1065,49 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-qrcode.md?toc=/dynamics365/supply-chain/toc.json
                         - name: 'Szöveg: Text'
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-text.md?toc=/dynamics365/supply-chain/toc.json
-            - name: ER modell-leképezés kezelése külön ER-konfigurációkban
-              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Adatmodell-definíciók kiválasztása formátumok létrehozásakor
-              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Továbbfejlesztési szűrési lehetőségek a konfigurációk globális tárházban való keresése esetén
-              href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Jelentések generálása tartalom nyers XML-kódként való hozzáadásával
-              href: ../fin-ops-core/dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/dynamics365/supply-chain/toc.json
-            - name: (ER) Több vállalatot érintő adatforrások az elektronikus jelentéskészítésben
-              href: ../fin-ops-core/dev-itpro/analytics/er-cross-company-data-sources.md?toc=/dynamics365/supply-chain/toc.json
-            - name: ER-formátumok tervezése kimenő elektronikus dokumentumok különböző formátumokban történő létrehozásához
+            - name: ER-formátumok tervezése kimenő dokumentumok különböző formátumokban történő létrehozásához
               items:
-                - name: (ER) Az OPENXML formátumban létrejövő jelentésekre vonatkozó konfigurációk tervezése
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/dynamics365/supply-chain/toc.json
-                - name: (ER) Konfigurációk tervezése Word-formátumú jelentések generálásához
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Konfigurációk tervezése a kimenő dokumentumok Excel-formátumban történő létrehozásához
+                  items:
+                    - name: Tervezzen konfigurációkat a kimenő dokumentumok Excel-formátumban történő létrehozásához
+                      href: ../fin-ops-core/dev-itpro/analytics/er-fillable-excel.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Példa a jelentések OPENXML-formátumban történő létrehozásához
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: ER (elektronikus jelentés) formátum módosítása Excel-sablonok újbóli alkalmazásával
+                      href: ../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Oszlopok dinamikus hozzáadása Excel-jelentésekhez vízszintesen bővíthető tartományokként
+                      items:
+                        - name: 'Tervezzen formátumokat, hogy dinamikusan tudjon hozzáadni oszlopokat az Excel-jelentésekhez'
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: 'Futtasson formátumokat, hogy dinamikusan tudjon hozzáadni oszlopokat az Excel-jelentésekhez'
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Konfigurációk tervezése Word-formátumú jelentések generálásához
+                  items:
+                    - name: Új ER-konfiguráció tervezése Word formátumú jelentések generálásához
+                      href: ../fin-ops-core/dev-itpro/analytics/er-design-configuration-word.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: ER-konfigurációk újrafelhasználása Excel-sablonok segítségével Word formátumú jelentések generálásához
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: A Word tartalomvezérlőinek elrejtése a létrehozott jelentésekben
+                      href: ../fin-ops-core/dev-itpro/analytics/er-design-configuration-word-suppress-controls.md?toc=/dynamics365/supply-chain/toc.json
                 - name: A PDF-sablonokat kitöltő konfigurációk megtervezése
                   href: ../fin-ops-core/dev-itpro/analytics/er-fillable-pdf.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Képek és alakzatok beágyazása
-              items:
-                - name: (ER) Beágyazott képek és alakzatok az Ön által generált dokumentumokban
-                  href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-embed-images-shapes.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Példa képek és alakzatok beágyazására
+                - name: Képek és alakzatok beágyazása
                   items:
-                    - name: 'Konfigurációk tervezése jelentések készítéséhez Office-formátumokban, amelyben beágyazott képek szerepelnek'
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-july-2017.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: 'Konfigurációk felülvizsgálata jelentések készítéséhez Office-formátumokban, amelyben beágyazott képek szerepelnek'
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: 'Jelentések készítése Office-formátumokban, amelyekben beágyazott képek szerepelnek'
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Elektronikus jelentések formátumának módosítása Excel-sablonok újbóli alkalmazásával
-              href: ../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Az ER-konfigurációk függőségének meghatározása más összetevőknél
-              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/dynamics365/supply-chain/toc.json
-            - name: ER-megoldás tervezése pénzügyi dimenziók használatára
-              items:
-                - name: Adatmodellek tervezése pénzügyi dimenziók adatforrásként történő használatára
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-1.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Modellek feltérképezése pénzügyi dimenziók adatforrásként történő használatára
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-2.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Jelentések tervezése pénzügyi dimenziók adatforrásként történő használatára
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3.md?toc=/dynamics365/supply-chain/toc.json
-                - name: A pénzügyi dimenziókat adatforrásként használó jelentések futtatása
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Leltározás és összegzés a létrehozott kimenetből származó adatok használatával történő végrehajtására alkalmas ER-formátumok tervezése
-              items:
-                - name: Formátumok létrehozása leltározás és összegzés végrehajtásához
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-1.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Formátum konfigurálása leltározás és összegzés végrehajtásához
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-2.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Számítások használata a számlálás és összegzés kimenetének generálásához
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-3.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Formátumok futtatása leltározás és összegzés végrehajtásához
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-4.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Oszlopok dinamikus hozzáadása Excel-jelentésekhez vízszintesen bővíthető tartományokként
-              items:
-                - name: Formátumok tervezése oszlopok Excel-jelentésekhez történő dinamikus hozzáadásához vízszintesen bővíthető tartományokként
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Formátumok futtatása oszlopok Excel-jelentésekhez történő dinamikus hozzáadásához vízszintesen bővíthető tartományokként
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Dokumentumkezelési fájlok használata formátumkimenetekben
-              items:
-                - name: Adatmodellek előkészítése dokumentumkezelési fájlok használatához ER-kimenetekben
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-1.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Adatmodellek kiterjesztése dokumentumkezelési fájlok használatához ER-kimenetekben
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-2.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Formátumok létrehozása dokumentumkezelési fájlok használatára ER-kimenetekben
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-3.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Formátumok futtatása dokumentumkezelési fájlok használatára ER-kimenetekben
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Formátumok módosítása és futtatása dokumentumkezelési fájlok használatára ER-kimenetekben
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Alkalmazásadatok frissítése Elektronikus jelentéskészítés segítségével
+                    - name: Beágyazott képek és formák az Ön által generált dokumentumokban
+                      href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-embed-images-shapes.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Példa képek és alakzatok beágyazására
+                      items:
+                        - name: 'Konfigurációk tervezése jelentések készítéséhez Office-formátumokban, amelyben beágyazott képek szerepelnek'
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-july-2017.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: 'Konfigurációk felülvizsgálata jelentések készítéséhez Office-formátumokban, amelyben beágyazott képek szerepelnek'
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: 'Jelentések készítése Office-formátumokban, amelyekben beágyazott képek szerepelnek'
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Generált XML-fájlok felosztása méret és tartalommennyiség alapján
+                  href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Anyagjegyzék-karakterek elrejtése a létrehozott fájlokban
+                  href: ../fin-ops-core/dev-itpro/analytics/er-suppress-bom-characters.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Alkalmazásadatok frissítése ER használatával
               items:
                 - name: Elektronikus dokumentumok generálása és alkalmazásadatok frissítése
                   href: ../fin-ops-core/dev-itpro/analytics/generate-electronic-documents-update-application-data.md?toc=/dynamics365/supply-chain/toc.json
@@ -1145,52 +1137,146 @@
                       href: ../fin-ops-core/dev-itpro/analytics/rcs-optional-attributes.md?toc=/dynamics365/supply-chain/toc.json
                     - name: ER-formátumok konfigurálása XML-formátumú fájlok opcionális attribútumokkal való importálásához
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/import-files-xml-format-optional-attributes.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Generált XML-fájlok felosztása méret és tartalommennyiség alapján
-              href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/supply-chain/toc.json
-            - name: A Számított mező típusának ER-adatforrásaihoz tartozó paraméteres hívások támogatása
-              href: ../fin-ops-core/dev-itpro/analytics/er-calculated-field-type.md?toc=/dynamics365/supply-chain/toc.json
             - name: Konfigurációs életciklus
               items:
                 - name: Konfigurációk életciklusának kezelése
                   href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-manage-configuration-lifecycle.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Konfigurációk feltöltése a Lifecycle Services szolgáltatásba
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Konfigurációk importálása a Lifecycle Services szolgáltatásból
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Konfigurációk letöltése a Lifecycle Services szolgáltatásból
-                  href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Konfigurációk importálása
-                  href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/supply-chain/toc.json
-                - name: ER-konfigurációk letöltése az RCS-tárházból
+                - name: Lifecycle Services (LCS)
                   items:
-                    - name: Konfigurációk letöltése az ER-tárházból az RCS-típusból
-                      href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Konfigurációk importálása RCS-ből
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Konfigurációk feltöltése az LCS-be
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Konfigurációk importálása LCS-ből
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Konfigurációk letöltése az LCS-ből
+                      href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Konfigurációk importálása (LBD)
+                      href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Regulatory services (RCS)
+                  items:
+                    - name: Globalizációs funkciók az RCS-ben
+                      href: ../finance/localizations/rcs-globalization-feature.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: ER-konfigurációk letöltése a Supply Chain Managementbe
+                      items:
+                        - name: Konfigurációk letöltése az RCS-ből
+                          href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Konfigurációk importálása RCS-ből
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Globális adattár (GR)
+                      items:
+                        - name: Konfigurációk importálása GR-ből
+                          href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Az ER-konfigurációk frissített verzióinak importálása
+                          href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Továbbfejlesztett szűrés a konfigurációk GR-ben való kereséséhez
+                          href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Konfigurációk feltöltése a GR-be
+                          href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/fsupply-chain/toc.json
+                        - name: Konfigurációk megosztása a GR-ben
+                          href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Konfigurációk megszüntetése az RCS Globális adattárban
+                          href: ../finance/localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Rövid útmutatók
+              items:
+                - name: ER-formátum beállítása egyéni elektronikus dokumentum generálásához
+                  href: ../fin-ops-core/dev-itpro/analytics/er-quick-start2-customize-report.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Új ER-megoldás tervezése egyéni jelentés nyomtatásához
+                  href: ../fin-ops-core/dev-itpro/analytics/er-quick-start1-new-solution.md?toc=/dynamics365/supply-chain/toc.json
+                - name: ER-megoldás beállítása egyéni elektronikus dokumentum generálásához
+                  href: ../fin-ops-core/dev-itpro/analytics/er-quick-start3-customize-report.md?toc=/dynamics365/supply-chain/toc.json
             - name: Oktatóanyagok
               items:
-                - name: Az ÖSSZEKAPCSOLÁS használata az adatforrások esetében a több alkalmazástáblából származó adatok megszerzéséhez
-                  href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Ország környezetfüggő ER-modell-leképezések konfigurálása
-                  href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=/dynamics365/supply-chain/toc.json
-                - name: ER formátumok konfigurálása a jogi személyenként meghatározott paraméterek használatára
-                  href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Az ER-formátum paramétereinek beállítása jogi személyenként
-                  href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Az ER-formátumelemek végrehajtásának elhalasztása
+                - name: Az adatforrások használatának megismerése
                   items:
-                    - name: Szekvenciaelem végrehajtásának elhalasztása
-                      href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Egy XML-elem végrehajtásának elhalasztása
-                      href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Elektronikus jelentéskészítési megoldások használata a Finance and Operations modulban
+                    - name: Több tábla adatainak lekérése az ÖSSZEKAPCSOLÁS paranccsal
+                      href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Tartalom hozzáadása feldolgozatlan XML használatával
+                      href: ../fin-ops-core/dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: A KISZÁMÍTOTT MEZŐ típusú adatforrásokhoz tartozó paraméteres hívások támogatása
+                      items:
+                        - name: A felhasználói élmény javítása és a használhatóság karbantartása
+                          href: ../fin-ops-core/dev-itpro/analytics/er-calculated-field-type.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Adathozzáférési teljesítmény javítása
+                          href: ../fin-ops-core/dev-itpro/analytics/er-calculated-field-ds-performance.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Vállalatközi ER-adatforrások
+                      href: ../fin-ops-core/dev-itpro/analytics/er-cross-company-data-sources.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: PÉNZÜGYI DIMENZIÓADATOK típusú adatforrások használata
+                      items:
+                        - name: Tervezési adatmodellek
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-1.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Modellek leképezése pénzügyi dimenziók használatához
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-2.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Jelentések tervezése
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Jelentések futtatása
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: A létrehozott kimenet adatforrásként való használata leltározás és összegzés végrehajtásához
+                      items:
+                        - name: Formátumok létrehozása
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-1.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Formátum konfigurálása leltározás és összegzés végrehajtásához
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-2.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Leltározás és összegzés kimenetének generálása
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-3.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Formátumok futtatása leltározás és összegzés végrehajtásához
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-4.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: DOKUMENTUMOK kapcsolatainak használata a Dokumentumkezelés fájljaihoz való hozzáféréshez
+                      items:
+                        - name: Adatmodellek előkészítése
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-1.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Adatmodellek kiterjesztése Dokumentumkezelési fájlok használatához
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-2.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Formátumok létrehozása
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-3.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Formátumok futtatása Dokumentumkezelési fájlok használatára
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Formátumok módosítása és futtatása Dokumentumkezelési fájlok használatára
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Adatforrásokban történő hibakeresés
+                      href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Használja a VONALKÓDOT a vonalkódképek létrehozásához
+                      href: ../fin-ops-core/dev-itpro/analytics/er-barcode-data-sources.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Modell-hozzárendelések konfigurálása
+                  items:
+                    - name: Országkörnyezet-függő ER-modell-leképezések konfigurálása
+                      href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: ER-modell-leképezés kezelése külön ER-konfigurációkban
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Több származtatott leképezés kezelése egy modellgyökérnél
+                      href: ../fin-ops-core/dev-itpro/analytics/er-multiple-model-mappings.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Formátumok konfigurálása
+                  items:
+                    - name: Modelldefiníciók kiválasztása formátumok létrehozásakor
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: ER-formátumok konfigurálása a jogi személyenként meghatározott paraméterek használatára
+                      href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Az ER-formátum paramétereinek beállítása jogi személyenként
+                      href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Az ER-formátumelemek végrehajtásának elhalasztása
+                      items:
+                        - name: Szekvenciaelem végrehajtásának elhalasztása
+                          href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: XML-elem végrehajtásának elhalasztása
+                          href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Többnyelvű jelentések tervezése
+                      href: ../fin-ops-core/dev-itpro/analytics/er-design-multilingual-reports.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Nagyméretű kimenő dokumentumok tömörítése
+                      href: ../fin-ops-core/dev-itpro/analytics/er-compress-outbound-files.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Konfigurált ER-összetevők vizsgálata
+                  href: ../fin-ops-core/dev-itpro/analytics/er-components-inspections.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Adatkötések relatív elérési útja
+                  href: ../fin-ops-core/dev-itpro/analytics/relative-path-data-bindings-er-models-format.md?toc=/dynamics365/supply-chain/toc.json
+            - name: ER-megoldások használata a Supply Chain Management szolgáltatásban
               items:
                 - name: Keretrendszer konfigurálása
                   items:
-                    - name: Az elektronikus jelentéskészítési keretrendszer konfigurálása
+                    - name: Az Elektronikus jelentéskészítési keretrendszer konfigurálása
                       href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Elektronikus jelentéskészítési sablonok biztonsági mentése és helyreállítása
-                      href: ../fin-ops-core/dev-itpro/analytics/er-backup-storage-templates.md?toc=/dynamics365/supply-chain/toc.json
+                      items:
+                        - name: ER-sablonok biztonságimentés-tárhelye
+                          href: ../fin-ops-core/dev-itpro/analytics/er-backup-storage-templates.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: ER-áttelepítéshez tartozó adattisztítás
+                          href: ../fin-ops-core/dev-itpro/analytics/er-migration-cleanup.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Konfigurációszolgáltatók létrehozása és megjelölése aktívként
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Célok
@@ -1213,6 +1299,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-screen.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Célok konfigurálása
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Műveletfüggő célok konfigurálása
+                      href: ../fin-ops-core/dev-itpro/analytics/er-action-dependent-destinations.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Egy ER-formátumra mutató hivatkozás beállítása
                   href: ../fin-ops-core/dev-itpro/analytics/er-extended-format-lookup.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Létrehozott jelentések automatikus ellenőrzése
@@ -1221,32 +1309,48 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/dynamics365/supply-chain/toc.json
                     - name: A létrehozott ER-jelentések eredmények nyomon követésében és a kiindulási értékekkel való összehasonlításukban végzett fejlesztések
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Elektronikus jelentéskészítéssel folytatott tesztelés automatizálása
+                    - name: Tesztelés automatizálása ER segítségével
                       href: ../fin-ops-core/dev-itpro/analytics/er-automate-testing.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Üzleti folyamatok automatizálása Elektronikus jelentéskészítési konfigurációk segítségével
                   items:
-                    - name: Elektronikus jelentéskészítés konfigurálása az adatok Power BI szolgáltatásba való lehívásához
+                    - name: ER konfigurálása az adatok Power BI szolgáltatásba való lehívásához
                       href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Nyomtatható szabadszöveges számla (FTI) űrlapok létrehozása
                       href: ../fin-ops-core/dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Az ER-formátumok végrehajtásának nyomon követése a teljesítménnyel kapcsolatos problémák elhárítása érdekében
                   href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Üzleti dokumentumok kezelése
+                - name: Üzleti dokumentumok kezelése (BDM)
                   items:
-                    - name: Üzletidokumentum-kezelés – áttekintés
+                    - name: BDM áttekintése
                       href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Új dokumentum-felhasználói felület az üzleti Dokumentumkezelés modulban
+                    - name: Új dokumentum felhasználói felülete a BDM-ben
                       href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management-new-template-ui.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Új mezők hozzáadása üzletidokumentum-sablonhoz a Microsoft Excel programban
-                      href: ../fin-ops-core/dev-itpro/analytics/er-bdm-add-field-to-excel-template.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Üzleti dokumentumsablonok szerkesztése a BDM-ben
+                      items:
+                        - name: Új mezők hozzáadása üzletidokumentum-sablonhoz a Microsoft Excel programban
+                          href: ../fin-ops-core/dev-itpro/analytics/er-bdm-add-field-to-excel-template.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Üzleti dokumentumsablon szerkezetének frissítése
+                          href: ../fin-ops-core/dev-itpro/analytics/er-bdm-update-structure.md?toc=/dynamics365/supply-chain/toc.json
             - name: Elektronikus jelentéskészítési keretrendszer API
               items:
-                - name: Elektronikus jelentéskészítési funkciók listájának kibővítése
+                - name: Beépített funkciók listájának kibővítése
                   href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Elektronikus jelentési keretrendszer API módosításai az Application update 7.3 számára
-                  href: ../fin-ops-core/dev-itpro/analytics/er-apis-app73.md?toc=/dynamics365/supply-chain/toc.json
+                - name: API-változások
+                  items:
+                    - name: 7.3-as alkalmazásfrissítés
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app73.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: 10.0.11-es alkalmazásfrissítés
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-11.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: 10.0.17-es alkalmazásfrissítés
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-17.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Egyéni tárhely meghatározása a létrehozott dokumentumoknak
-                  href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/dynamics365/supply-chain/toc.json
+                  items:
+                    - name: 'Feliratkozás egy eseményre, hogy választ kérjen a feliratkozáskezelőtől'
+                      href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: ER-cél létrehozásának delegálása egyéni célgyárba
+                      href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-files.md?toc=/dynamics365/supply-chain/toc.json
+                - name: A USER INPUT PARAMETER típusú adatforrásértékek kezdeményezése forráskódból
+                  href: ../fin-ops-core/dev-itpro/analytics/er-initiate-uip-data-source-value-from-source-code.md?toc=/dynamics365/supply-chain/toc.json
         - name: Készletgazdálkodás
           items:
             - name: Készletgazdálkodás áttekintése
@@ -1975,6 +2079,8 @@
                   items:
                     - name: Termékkonfigurációs modell beállítása
                       href: pim/set-up-maintain-product-configuration-model.md
+                    - name: Termékkonfigurációs modell számításai
+                      href: pim/config-model-calculations.md
                     - name: Számítás a termékkonfigurációs modellhez GYIK
                       href: pim/calculate-product-configuration-models.md
                     - name: Konfigurációs szabály
@@ -2043,6 +2149,8 @@
               href: production-control/mixed-mode-plan.md
             - name: Alvállalkozói munka kezelése a termelésben
               href: production-control/manage-subcontract-work-production.md
+            - name: Egyesített számsorozat a feladatazonosítók esetén
+              href: production-control/unified-job-ids.md
             - name: Árucikkgyártás
               items:
                 - name: Termelési alapadatok karbantartása
@@ -2347,6 +2455,28 @@
                       href: cost-management/production-posting.md
                 - name: Folyamatszerű gyártás – hibaelhárítás
                   href: production-control/troubleshoot-processmanufacturing.md
+        - name: Visszatérítés-kezelés
+          items:
+            - name: Visszatérítés-kezelő modul áttekintése
+              href: rebate-management/rebate-management-overview.md
+            - name: A visszatérítés-kezelő moduljának beállítása és konfigurálása
+              items:
+                - name: Visszatérítés-kezelés paraméterei
+                  href: rebate-management/rebate-management-parameters.md
+                - name: Visszatérítés-kezelési ajánlatok munkafolyamatai
+                  href: rebate-management/rebate-management-workflows.md
+                - name: Visszatérítés-csökkentési elvek
+                  href: rebate-management/rebate-reduction-principle.md
+                - name: Visszatérítési állapotok
+                  href: rebate-management/rebate-statuses.md
+                - name: Visszatérítés-kezelési csoportok
+                  href: rebate-management/rebate-management-groups.md
+                - name: Visszatérítés-kezelés feladási beállítása
+                  href: rebate-management/rebate-management-posting.md
+            - name: Visszatérítés-kezelési ajánlatok
+              href: rebate-management/rebate-management-deals.md
+            - name: 'Visszatérítések feldolgozása, felülvizsgálata és feladása'
+              href: rebate-management/process-review-post.md
         - name: Értékesítés és marketing
           items:
             - name: Értékesítés és marketing – áttekintés
@@ -2819,6 +2949,8 @@
                       href: warehousing/flexible-warehouse-level-dimension-reservation.md
                     - name: Foglalások a raktárkezelési modulban – hibaelhárítás
                       href: warehousing/troubleshoot-warehouse-reservations.md
+                    - name: Raktári kötegelt és sorozatfoglalási hierarchiák hibaelhárítása
+                      href: warehousing/troubleshoot-warehouse-batch-and-serial-reservation-hierarchies.md
                 - name: Részleges kiadás és részleges szállítmány
                   items:
                     - name: Szállítási rakomány részleges szállítása
@@ -2837,8 +2969,6 @@
                       href: warehousing/system-directed-cluster-pick.md
                     - name: Különböző dimenziók beállítása csomagoláshoz és a tároláshoz
                       href: warehousing/packing-vs-storage-dimensions.md
-                    - name: Tárolóra bontás beállítása
-                      href: warehousing/tasks/set-up-containerization.md
                     - name: Köteg és azonosítótábla megerősítése
                       href: warehousing/batch-and-license-plate-confirmation.md
                     - name: Azonosítótábla-címke nyomtatásának engedélyezése
@@ -2899,10 +3029,6 @@
                       href: warehousing/advanced-load-building-during-wave.md
                     - name: Raktárba kiadás szabálya
                       href: warehousing/release-to-warehouse-rule.md
-                    - name: Hullámsablon csoportosítása
-                      href: warehousing/wave-template-grouping.md
-                    - name: Hullámcímkék újranyomtatása és érvénytelenítése
-                      href: warehousing/reprint-and-void-wave-labels.md
                     - name: Kis csomagok szállítása
                       href: warehousing/small-parcel-shipping.md
                     - name: Rakományok összeállítása és szállítása – hibaelhárítás
@@ -2921,8 +3047,12 @@
                       href: warehousing/consolidate-shipments-load-planning-workbench.md
                     - name: 4. eset – Szállítmányok konszolidálása a szállítmány konszolidációs munkaterület használatával
                       href: warehousing/consolidate-shipments-manual-workbench.md
-                    - name: 5. eset – Szállítmányok kézi konszolidálása a szállítmányok konszolidációs oldalának használatával
+                    - name: 5. eset – Szállítmányok manuális konszolidálása a szállítmányok konszolidációs oldalának használatával
                       href: warehousing/consolidate-shipments-manual-form.md
+                - name: Hullám létrehozása és feldolgozása
+                  href: warehousing/wave-processing.md
+                - name: Hullámcímkék újranyomtatása és érvénytelenítése
+                  href: warehousing/reprint-and-void-wave-labels.md
                 - name: Kimenő raktári műveletek – hibaelhárítás
                   href: warehousing/troubleshoot-warehouse-outbound.md
             - name: Teljes raktárra vonatkozó műveletek
@@ -3003,14 +3133,28 @@
                       href: warehousing/filters-and-filter-codes.md
                     - name: Hely rakodási korlátai
                       href: warehousing/location-stocking-limits.md
-                    - name: Hullámlépéskódok
-                      href: warehousing/wave-step-codes.md
-                    - name: A hullámfeldolgozás konfigurálása
-                      href: warehousing/tasks/configure-wave-processing.md
-                    - name: Munka létrehozásának ütemezése a hullám során
-                      href: warehousing/configure-wave-schedule-work-creation.md
-                    - name: Hullámcímke-nyomtatás beállítása és használata
-                      href: warehousing/configure-wave-label-printing.md
+                    - name: Hullám létrehozása és feldolgozása
+                      items:
+                        - name: A hullámfeldolgozási példa konfigurálása
+                          href: warehousing/tasks/configure-wave-processing.md
+                        - name: Raktári paraméterek hullámfeldolgozáshoz
+                          href: warehousing/wave-warehouse-parameters.md
+                        - name: Hullámsablonok
+                          href: warehousing/wave-templates.md
+                        - name: Hullámlépéskódok
+                          href: warehousing/wave-step-codes.md
+                        - name: Hullámsablon csoportosítása
+                          href: warehousing/wave-template-grouping.md
+                        - name: Hullámfelosztás
+                          href: warehousing/wave-allocation-method.md
+                        - name: Munka létrehozásának ütemezése a hullám során
+                          href: warehousing/configure-wave-schedule-work-creation.md
+                        - name: Hullámvégrehajtási értesítések
+                          href: warehousing/wave-execution-notifications.md
+                        - name: Hullámcímke nyomtatása
+                          href: warehousing/configure-wave-label-printing.md
+                        - name: Tárolóra bontás
+                          href: warehousing/wave-containerization.md
                     - name: Szállítmányok automatikus frissítése
                       href: warehousing/auto-update-shipment.md
                     - name: Helyprofil létrehozása
@@ -3041,7 +3185,7 @@
                       href: warehousing/transfer-orders-warehouse.md
                     - name: Raktár konfigurálása – hibaelhárítás
                       href: warehousing/troubleshoot-warehouse-configuration.md
-                - name: A raktározási alkalmazás telepítése és konfigurálása
+                - name: A Raktárkezelés mobilalkalmazás telepítése és konfigurálása
                   items:
                     - name: A Raktárkezelés mobilalkalmazás telepítése és csatlakoztatása
                       href: warehousing/install-configure-warehouse-management-app.md
@@ -3049,15 +3193,15 @@
                       href: warehousing/mobile-device-user-settings.md
                     - name: A raktározási alkalmazás telepítése és csatlakoztatása
                       href: warehousing/install-configure-warehousing-app.md
-                    - name: Vonalkódok beolvasása a raktári alkalmazás kamerája segítségével
+                    - name: Vonalkódok beolvasása a Raktárkezelés mobilalkalmazás kamerája segítségével
                       href: warehousing/scan-bar-codes-using-a-camera.md
-                    - name: Mezőnevek konfigurálása raktározási alkalmazásban
+                    - name: A Raktárkezelés mobilalkalmazás mezőinek konfigurálása
                       href: warehousing/configure-app-field-names-priorities-warehouse.md
                     - name: Mobileszközök beállítása raktári munkához
                       href: warehousing/configure-mobile-devices-warehouse.md
                     - name: Raktározási alkalmazás eseményeinek feldolgozása
                       href: warehousing/warehouse-app-events.md
-                    - name: Azonosítótábla-bevételezés a raktározási alkalmazás használatával
+                    - name: Azonosítótábla-bevételezés a Raktárkezelés mobilalkalmazás használatával
                       href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
                     - name: Mobileszköz-menüelem beállítása a beszerzési rendelés munkájának befejezéséhez
                       href: warehousing/tasks/set-up-mobile-device-menu.md
@@ -3075,7 +3219,7 @@
                       href: warehousing/pick-oldest-batch.md
                     - name: Folyamatútmutató-keretrendszer
                       href: warehousing/process-guide-framework.md
-                    - name: Raktári alkalmazás kapcsolódási hibáinak hibaelhárítása
+                    - name: Raktárkezelés mobilalkalmazás kapcsolódási problémáinak hibaelhárítása
                       href: warehousing/troubleshoot-warehouse-app-connection.md
                 - name: Frissítés és áttelepítés
                   items:

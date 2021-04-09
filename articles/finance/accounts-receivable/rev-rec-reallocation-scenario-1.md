@@ -2,11 +2,9 @@
 title: Bevételelszámolás újbóli felosztása – 1. eset
 description: Ebben a témakörben az újbóli felosztásnak azt az esetét mutatjuk be, amelyben két értékesítési rendelést adnak meg, de ezeket csak visszaigazolják. Ugyanez a forgatókönyv hasonló eredményekkel jár, ha kettőnél több értékesítési rendelés van visszaigazolt állapotban.
 author: kweekley
-manager: aolson
 ms.date: 12/21/2020
 ms.topic: index-page
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: Customer
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-12-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 25fb32ce72555e573cd37a0ab092b51b99bb4372
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: f94b054d213dc2b347f4e5a7b2f4c2a51d519f57
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5260877"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5824004"
 ---
 # <a name="revenue-recognition-reallocation--scenario-1"></a>Bevételelszámolás újbóli felosztása – 1. eset
 
