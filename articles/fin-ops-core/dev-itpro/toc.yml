@@ -20,8 +20,6 @@
                   href: get-started/whats-new-platform-updates-10-0-17.md
                 - name: Platformfrissítések a 10.0.16-ös verzióhoz (2021. február)
                   href: get-started/whats-new-platform-updates-10-0-16.md
-                - name: Platformfrissítések a 10.0.15-ös verzióhoz (2021. január)
-                  href: get-started/whats-new-platform-updates-10-0-15.md
             - name: Eltávolított vagy elavult funkciók
               items:
                 - name: Eltávolított vagy elavult funkciók a kezdőlapon
@@ -226,6 +224,10 @@
                               href: data-entities/dual-write/inventory-availability.md
                             - name: 'Integrált dolgozó, feladat és beosztás'
                               href: data-entities/dual-write/integrated-hr.md
+                            - name: Fél és globális címjegyzék
+                              href: data-entities/dual-write/party-gab.md
+                            - name: A Power Portal használata a Fél adatmodelljével
+                              href: data-entities/dual-write/party-gab-portal.md
                             - name: Jegyzetintegráció
                               href: data-entities/dual-write/notes-integration.md
                             - name: Leképezési hivatkozás
@@ -526,13 +528,15 @@
                   items:
                     - name: Helyszíni projektek beállítása az LCS rendszerben
                       href: lifecycle-services/lbd-create-lcs-on-prem-project.md
-                    - name: Helyszíni környezetek beállítása és telepítése
+                    - name: Helyszíni környezetek beállítása és telepítése (Platformfrissítés 41-es és újabb verziókon)
+                      href: deployment/setup-deploy-on-premises-pu41.md
+                    - name: Helyszíni környezetek beállítása és telepítése (Platformfrissítés 12–40-es verziókon)
                       href: deployment/setup-deploy-on-premises-pu12.md
                     - name: A Retail csatorna összetevőinek helyszíni környezetben való telepítési lépései
                       href: deployment/deploy-retail-onprem.md
                     - name: Egyéni modellek fejlesztése és telepítése helyszíni környezetekhez
                       href: deployment/develop-deploy-custom-models-on-premises.md
-                - name: Környezet karbantartása
+                - name: Környezeti műveletek
                   items:
                     - name: Frissítések alkalmazása helyszíni telepítéshez
                       href: deployment/apply-updates-on-premises.md
@@ -542,6 +546,8 @@
                       href: user-interface/client-disconnected.md
                     - name: Csak kötegelt és csak interaktív AOS-csomópontok konfigurálása a helyszíni telepítéseknél
                       href: deployment/onprem-batchonly.md
+                    - name: Az SQL Server Reporting Services (SSRS) csomópontok magas rendelkezésre állásának konfigurálása
+                      href: deployment/onprem-SSRSHA.md
                     - name: Proxyk konfigurálása helyszíni környezetekhez
                       href: deployment/onprem-reverseproxy.md
                     - name: Helyszíni diagnosztika
@@ -1136,23 +1142,27 @@
                   href: lifecycle-services/use-translation-service-tm.md
         - name: Microsoft Power Platform-integráció
           items:
-            - name: Microsoft Power Platform integráció a Finance and Operations alkalmazással
-              href: power-platform/overview.md
-            - name: Bővítmények áttekintése
-              href: power-platform/add-ins-overview.md
-            - name: Entitásmodellezés
-              href: power-platform/entity-modeling.md
-            - name: Alkalmazáséletciklus-kezelés
-              href: power-platform/application-lifecycle-management.md
-            - name: Finance and Operations és Dataverse rendszergazdai hivatkozás
-              href: power-platform/admin-reference.md
-            - name: Power Apps portálok a Finance and Operations alkalmazáshoz
-              href: power-platform/power-portal-reference.md
-            - name: Finance and Operations virtuális entitások GYIK
-              href: power-platform/faq.md
-        - name: Mobil platform
+            - name: Virtuális entitások
+              items:
+                - name: Microsoft Power Platform integráció a Finance and Operations alkalmazással
+                  href: power-platform/overview.md
+                - name: Entitásmodellezés
+                  href: power-platform/entity-modeling.md
+                - name: Alkalmazáséletciklus-kezelés
+                  href: power-platform/application-lifecycle-management.md
+                - name: Finance and Operations és Dataverse rendszergazdai hivatkozás
+                  href: power-platform/admin-reference.md
+                - name: Power Apps portálok a Finance and Operations alkalmazáshoz
+                  href: power-platform/power-portal-reference.md
+                - name: Finance and Operations virtuális entitások GYIK
+                  href: power-platform/faq.md
+            - name: Bővítmények
+              items:
+                - name: Bővítmények áttekintése
+                  href: power-platform/add-ins-overview.md
+        - name: Mobilplatform
           items:
-            - name: Mobil platform erőforrásai
+            - name: Mobilplatform erőforrásai
               href: mobile-apps/platform/mobile-platform-home-page.md
             - name: Első lépések
               items:
@@ -1390,6 +1400,8 @@
               href: perf-test/rsat/rsat-derived-test-cases.md
             - name: Regression Suite Automation Tool-oktatóanyag
               href: perf-test/rsat/rsat-tutorial.md
+            - name: Nem rendszergazda felhasználók konfigurálása
+              href: perf-test/rsat/rsat-configure-nonadmin.md
             - name: Gyakorlati tanácsok
               href: perf-test/rsat/rsat-best-practices.md
             - name: Adatagnosztikus tesztelés a Regression Suite Automation Tool használatával
