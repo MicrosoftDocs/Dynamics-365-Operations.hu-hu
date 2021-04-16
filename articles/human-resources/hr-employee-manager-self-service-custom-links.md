@@ -2,11 +2,9 @@
 title: Egyéni hivatkozások létrehozása a vezetői önkiszolgálás szolgáltatásban
 description: Ez a témakör azt mutatja be, hogyan lehet egyéni hivatkozásokat létrehozni a Dynamics 365 Human Resources Vezetői önkiszolgálás szolgáltatásában.
 author: andreabichsel
-manager: tfehr
 ms.date: 11/30/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 ms.search.form: HRMParameters, EssWorkspace
 audience: Application User
@@ -18,38 +16,38 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-10-21
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ab6b212efca7fa69d74d06ce2dbbab09d50f044c
-ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
+ms.openlocfilehash: 7088bf459373c1c97baf9e8c1bc915fa0243a500
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5467193"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5790860"
 ---
-# <a name="create-custom-links-in-manager-self-service"></a><span data-ttu-id="5e536-103">Egyéni hivatkozások létrehozása a vezetői önkiszolgálás szolgáltatásban</span><span class="sxs-lookup"><span data-stu-id="5e536-103">Create custom links in Manager self-service</span></span>
+# <a name="create-custom-links-in-manager-self-service"></a><span data-ttu-id="4cc57-103">Egyéni hivatkozások létrehozása a vezetői önkiszolgálás szolgáltatásban</span><span class="sxs-lookup"><span data-stu-id="4cc57-103">Create custom links in Manager self-service</span></span>
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-<span data-ttu-id="5e536-104">Egyéni hivatkozásokat a vezetői önkiszolgáló modul **Saját csapat** lapján adhat meg.</span><span class="sxs-lookup"><span data-stu-id="5e536-104">You can add custom links on the **My team** tab in Manager self-service.</span></span> <span data-ttu-id="5e536-105">Ez a funkció gyors hozzáférést biztosít a fontos információkhoz.</span><span class="sxs-lookup"><span data-stu-id="5e536-105">This feature lets you provide quick access to important information.</span></span> <span data-ttu-id="5e536-106">Ez hasonló az egyéni hivatkozások hozzáadásához az Alkalmazotti önkiszolgálás **Saját adatok** lapján.</span><span class="sxs-lookup"><span data-stu-id="5e536-106">It's similar to adding custom links in the **My information** tab in Employee self service.</span></span>
+<span data-ttu-id="4cc57-104">Egyéni hivatkozásokat a vezetői önkiszolgáló modul **Saját csapat** lapján adhat meg.</span><span class="sxs-lookup"><span data-stu-id="4cc57-104">You can add custom links on the **My team** tab in Manager self-service.</span></span> <span data-ttu-id="4cc57-105">Ez a funkció gyors hozzáférést biztosít a fontos információkhoz.</span><span class="sxs-lookup"><span data-stu-id="4cc57-105">This feature lets you provide quick access to important information.</span></span> <span data-ttu-id="4cc57-106">Ez hasonló az egyéni hivatkozások hozzáadásához az Alkalmazotti önkiszolgálás **Saját adatok** lapján.</span><span class="sxs-lookup"><span data-stu-id="4cc57-106">It's similar to adding custom links in the **My information** tab in Employee self service.</span></span>
 
-## <a name="enable-the--feature"></a><span data-ttu-id="5e536-107">A funkció engedélyezése</span><span class="sxs-lookup"><span data-stu-id="5e536-107">Enable the  feature</span></span>
+## <a name="enable-the--feature"></a><span data-ttu-id="4cc57-107">A funkció engedélyezése</span><span class="sxs-lookup"><span data-stu-id="4cc57-107">Enable the  feature</span></span>
 
-<span data-ttu-id="5e536-108">A funkció használatához engedélyeznie kell az **Egyéni hivatkozások a Vezetői önkiszolgálás szolgáltatásban** lehetőséget a **Funkciókezelés** munkaterületen.</span><span class="sxs-lookup"><span data-stu-id="5e536-108">To use this feature, enable **Custom links in Manager self-service** in the **Feature management** workspace.</span></span> <span data-ttu-id="5e536-109">Az előzetes funkciók engedélyezésével kapcsolatos további részletekért tekintse meg a [Kezelési funkciók](hr-admin-manage-features.md) cikket.</span><span class="sxs-lookup"><span data-stu-id="5e536-109">For more information about enabling preview features, see [Manage features](hr-admin-manage-features.md).</span></span>
+<span data-ttu-id="4cc57-108">A funkció használatához engedélyeznie kell az **Egyéni hivatkozások a Vezetői önkiszolgálás szolgáltatásban** lehetőséget a **Funkciókezelés** munkaterületen.</span><span class="sxs-lookup"><span data-stu-id="4cc57-108">To use this feature, enable **Custom links in Manager self-service** in the **Feature management** workspace.</span></span> <span data-ttu-id="4cc57-109">Az előzetes funkciók engedélyezésével kapcsolatos további részletekért tekintse meg a [Kezelési funkciók](hr-admin-manage-features.md) cikket.</span><span class="sxs-lookup"><span data-stu-id="4cc57-109">For more information about enabling preview features, see [Manage features](hr-admin-manage-features.md).</span></span>
 
-## <a name="set-up-custom-links"></a><span data-ttu-id="5e536-110">Egyéni hivatkozások beállítása</span><span class="sxs-lookup"><span data-stu-id="5e536-110">Set up custom links</span></span>
+## <a name="set-up-custom-links"></a><span data-ttu-id="4cc57-110">Egyéni hivatkozások beállítása</span><span class="sxs-lookup"><span data-stu-id="4cc57-110">Set up custom links</span></span>
 
-1. <span data-ttu-id="5e536-111">Válassza ki a **Vezetői önkiszolgáló szolgáltatást** lehetőséget a **Human Resources paraméterek** között.</span><span class="sxs-lookup"><span data-stu-id="5e536-111">In **Human Resources parameters**, select **Manager self service**.</span></span>
+1. <span data-ttu-id="4cc57-111">Válassza ki a **Vezetői önkiszolgáló szolgáltatást** lehetőséget a **Human Resources paraméterek** között.</span><span class="sxs-lookup"><span data-stu-id="4cc57-111">In **Human Resources parameters**, select **Manager self service**.</span></span>
 
-2. <span data-ttu-id="5e536-112">A **Hivatkozások beállítása vezetőknek** szakaszban hivatkozásokat adhat hozzá, módosíthat vagy törölhet.</span><span class="sxs-lookup"><span data-stu-id="5e536-112">Under **Set up links for Managers**, you can add, edit, or remove a link.</span></span> <span data-ttu-id="5e536-113">A hivatkozásokat ezenfelöl csoportosíthatja, hogy egy csoportban jelenjenek meg a vezetői önkiszolgáló szolgáltatásban.</span><span class="sxs-lookup"><span data-stu-id="5e536-113">You can also group the links together so they display in a group in Manager self-service.</span></span>
+2. <span data-ttu-id="4cc57-112">A **Hivatkozások beállítása vezetőknek** szakaszban hivatkozásokat adhat hozzá, módosíthat vagy törölhet.</span><span class="sxs-lookup"><span data-stu-id="4cc57-112">Under **Set up links for Managers**, you can add, edit, or remove a link.</span></span> <span data-ttu-id="4cc57-113">A hivatkozásokat ezenfelöl csoportosíthatja, hogy egy csoportban jelenjenek meg a vezetői önkiszolgáló szolgáltatásban.</span><span class="sxs-lookup"><span data-stu-id="4cc57-113">You can also group the links together so they display in a group in Manager self-service.</span></span>
 
    ![Egyéni hivatkozások beállítása a vezetői önkiszolgálás szolgáltatásban](./media/hr-employee-manager-self-service-custom-links-setup.png)
 
-3. <span data-ttu-id="5e536-115">A hivatkozások megjelenítéséhez nyissa meg az Alkalmazotti önkiszolgáló **Saját csoport** lapját.</span><span class="sxs-lookup"><span data-stu-id="5e536-115">To see the links, go to the **My team** tab in Employee self-service.</span></span>
+3. <span data-ttu-id="4cc57-115">A hivatkozások megjelenítéséhez nyissa meg az Alkalmazotti önkiszolgáló **Saját csoport** lapját.</span><span class="sxs-lookup"><span data-stu-id="4cc57-115">To see the links, go to the **My team** tab in Employee self-service.</span></span>
 
    ![Egyéni hivatkozások megtekintése a vezetői önkiszolgálás szolgáltatásban](./media/hr-employee-manager-self-service-custom-links-view.png)
 
-## <a name="see-also"></a><span data-ttu-id="5e536-117">Lásd még</span><span class="sxs-lookup"><span data-stu-id="5e536-117">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="4cc57-117">Lásd még</span><span class="sxs-lookup"><span data-stu-id="4cc57-117">See also</span></span>
 
-[<span data-ttu-id="5e536-118">Alkalmazotti és vezetői önkiszolgálás áttekintése</span><span class="sxs-lookup"><span data-stu-id="5e536-118">Employee and Manager self-service overview</span></span>](hr-employee-manager-self-service-overview.md)
+[<span data-ttu-id="4cc57-118">Alkalmazotti és vezetői önkiszolgálás áttekintése</span><span class="sxs-lookup"><span data-stu-id="4cc57-118">Employee and Manager self-service overview</span></span>](hr-employee-manager-self-service-overview.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

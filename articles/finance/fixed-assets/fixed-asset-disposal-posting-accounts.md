@@ -2,11 +2,9 @@
 title: Tárgyieszköz-kivezetés feladási profilja
 description: Ez a témakör bemutatja, hogy hogyan állíthat be főkönyvi feladási számlákat eszközök elhelyezésére.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetPosting
 audience: Application User
@@ -17,26 +15,26 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 92b653d50744884d56c19601cff74c420eb1b397
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 5d1d6a3dc6348e64bcf247544bc7b56c5314db4c
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5240970"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5826858"
 ---
-# <a name="fixed-asset-disposal-posting-accounts"></a><span data-ttu-id="2407f-103">Tárgyieszköz-kivezetés feladási profilja</span><span class="sxs-lookup"><span data-stu-id="2407f-103">Fixed asset disposal posting accounts</span></span>
+# <a name="fixed-asset-disposal-posting-accounts"></a><span data-ttu-id="f01fb-103">Tárgyieszköz-kivezetés feladási profilja</span><span class="sxs-lookup"><span data-stu-id="f01fb-103">Fixed asset disposal posting accounts</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="2407f-104">Ez a témakör bemutatja, hogy hogyan állíthat be főkönyvi feladási számlákat eszközök elhelyezésére.</span><span class="sxs-lookup"><span data-stu-id="2407f-104">This topic explains how to set up general ledger posting accounts for disposing of assets.</span></span>
+<span data-ttu-id="f01fb-104">Ez a témakör bemutatja, hogy hogyan állíthat be főkönyvi feladási számlákat eszközök elhelyezésére.</span><span class="sxs-lookup"><span data-stu-id="f01fb-104">This topic explains how to set up general ledger posting accounts for disposing of assets.</span></span>
 
-<span data-ttu-id="2407f-105">A Tárgyi eszköz feladási profilok lapon, a Főkönyvi számlák gyorslapon válassza ki a Kivezetés - eladás és Kivezetés - selejtezés lehetőségeket a főkönyvben történő feladások beállításához.</span><span class="sxs-lookup"><span data-stu-id="2407f-105">In the Fixed asset posting profiles page, on the Ledger accounts FastTab, select Disposal - sale and Disposal - scrap to set up postings to the ledger.</span></span>
+<span data-ttu-id="f01fb-105">A Tárgyi eszköz feladási profilok lapon, a Főkönyvi számlák gyorslapon válassza ki a Kivezetés - eladás és Kivezetés - selejtezés lehetőségeket a főkönyvben történő feladások beállításához.</span><span class="sxs-lookup"><span data-stu-id="f01fb-105">In the Fixed asset posting profiles page, on the Ledger accounts FastTab, select Disposal - sale and Disposal - scrap to set up postings to the ledger.</span></span>
 
-<span data-ttu-id="2407f-106">A tárgyi eszköz kivezetési értéke mindkét tranzakciótípus esetén a főkönyvi számla követeleként jelenik meg.</span><span class="sxs-lookup"><span data-stu-id="2407f-106">For both transaction types, the ledger account is credited for the disposal value of the fixed asset.</span></span> <span data-ttu-id="2407f-107">A tartozás ellenszámlára van feladva, amely például lehet egy bankszámla.</span><span class="sxs-lookup"><span data-stu-id="2407f-107">The debit is posted to an offset account, which might be, for example, a bank account.</span></span> <span data-ttu-id="2407f-108">Ha a tárgyi eszközt egy vevőnek adja el, akkor az ellenszámla helyett a vevői számlát alkalmazza a program.</span><span class="sxs-lookup"><span data-stu-id="2407f-108">If a fixed asset is sold to a customer, the customer account is used instead of the offset account.</span></span>
+<span data-ttu-id="f01fb-106">A tárgyi eszköz kivezetési értéke mindkét tranzakciótípus esetén a főkönyvi számla követeleként jelenik meg.</span><span class="sxs-lookup"><span data-stu-id="f01fb-106">For both transaction types, the ledger account is credited for the disposal value of the fixed asset.</span></span> <span data-ttu-id="f01fb-107">A tartozás ellenszámlára van feladva, amely például lehet egy bankszámla.</span><span class="sxs-lookup"><span data-stu-id="f01fb-107">The debit is posted to an offset account, which might be, for example, a bank account.</span></span> <span data-ttu-id="f01fb-108">Ha a tárgyi eszközt egy vevőnek adja el, akkor az ellenszámla helyett a vevői számlát alkalmazza a program.</span><span class="sxs-lookup"><span data-stu-id="f01fb-108">If a fixed asset is sold to a customer, the customer account is used instead of the offset account.</span></span>
 
-<span data-ttu-id="2407f-109">Kattintson a Kivezetés parancsra, majd kattintson az Értékesítés vagy Selejt lehetőségre, majd állítsa be tárgyi érték nettó könyv szerinti értékének sztornózásához használt számla részletes adatait.</span><span class="sxs-lookup"><span data-stu-id="2407f-109">Click Disposal and then click Sale or Scrap, and then set up detailed accounts to reverse the net book value of the fixed asset.</span></span> <span data-ttu-id="2407f-110">A Feladási érték és Értékesítési értéktípus mezőkben is lehet információkat megadni.</span><span class="sxs-lookup"><span data-stu-id="2407f-110">You can also enter information in the Post value and Sales value type fields in the Disposal parameters page.</span></span> 
+<span data-ttu-id="f01fb-109">Kattintson a Kivezetés parancsra, majd kattintson az Értékesítés vagy Selejt lehetőségre, majd állítsa be tárgyi érték nettó könyv szerinti értékének sztornózásához használt számla részletes adatait.</span><span class="sxs-lookup"><span data-stu-id="f01fb-109">Click Disposal and then click Sale or Scrap, and then set up detailed accounts to reverse the net book value of the fixed asset.</span></span> <span data-ttu-id="f01fb-110">A Feladási érték és Értékesítési értéktípus mezőkben is lehet információkat megadni.</span><span class="sxs-lookup"><span data-stu-id="f01fb-110">You can also enter information in the Post value and Sales value type fields in the Disposal parameters page.</span></span> 
 
-<span data-ttu-id="2407f-111">Az alacsony értékű csoportban szereplő eszköz értékesítési tranzakciója csak az értékesítés összegével csökkenti az alacsony értékű csoport nettó könyv szerinti értékét.</span><span class="sxs-lookup"><span data-stu-id="2407f-111">The disposal transaction for an asset in a low-value pool reduces the net book value of the low-value pool by the disposed amount only.</span></span> <span data-ttu-id="2407f-112">Amennyiben azonban az eszköz eladása meghaladja az alacsony értékű csoport nettó könyv szerinti értékét, a nettó könyv szerinti érték nullára csökken.</span><span class="sxs-lookup"><span data-stu-id="2407f-112">However, when the sale of an asset exceeds the net book value of the low-value pool, the net book value is reduced to zero.</span></span>
+<span data-ttu-id="f01fb-111">Az alacsony értékű csoportban szereplő eszköz értékesítési tranzakciója csak az értékesítés összegével csökkenti az alacsony értékű csoport nettó könyv szerinti értékét.</span><span class="sxs-lookup"><span data-stu-id="f01fb-111">The disposal transaction for an asset in a low-value pool reduces the net book value of the low-value pool by the disposed amount only.</span></span> <span data-ttu-id="f01fb-112">Amennyiben azonban az eszköz eladása meghaladja az alacsony értékű csoport nettó könyv szerinti értékét, a nettó könyv szerinti érték nullára csökken.</span><span class="sxs-lookup"><span data-stu-id="f01fb-112">However, when the sale of an asset exceeds the net book value of the low-value pool, the net book value is reduced to zero.</span></span>
 
 
 

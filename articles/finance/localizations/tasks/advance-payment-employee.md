@@ -2,11 +2,9 @@
 title: EEU-00047 Előlegfizetés alkalmazottnak
 description: Ez az eljárás bemutatja, hogyan lehet tranzakciókat beállítani és regisztrálni egy előlegre jogosult számára.
 author: v-oloski
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: RCashTable, LedgerJournalSetup, HcmWorkerGroup_RU, EmplPosting_RU, VendParameters, RCashPosting, BankParameters, PaymTerm, HcmWorker, HcmWorkerNewWorker, HcmWorkerAdvHolderTableListPage_RU, HcmWorkerAdvHolderTable_RU, PurchTable, PurchCreateOrder, HcmAdvHolderLookup_RU, InventItemIdLookupPurchase, VendEditInvoice, VendEditInvoiceDefaultQuantityForLinesDropDialog, EmplTrans_RU, EmplBalance_RU
 audience: Application User
@@ -15,160 +13,160 @@ ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, R
 ms.author: v-oloski
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1caa81667c28289cee4b3392ae734b94d4926d4c
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: cfdbdf30c9900b792c57a26e4a4d4f4a8830cebc
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5253881"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5832539"
 ---
-# <a name="eeu-00047-advance-payment-to-employee"></a><span data-ttu-id="9cad9-103">EEU-00047 Előlegfizetés alkalmazottnak</span><span class="sxs-lookup"><span data-stu-id="9cad9-103">EEU-00047 Advance payment to employee</span></span>
+# <a name="eeu-00047-advance-payment-to-employee"></a><span data-ttu-id="628f2-103">EEU-00047 Előlegfizetés alkalmazottnak</span><span class="sxs-lookup"><span data-stu-id="628f2-103">EEU-00047 Advance payment to employee</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="9cad9-104">Ez az eljárás bemutatja, hogyan lehet tranzakciókat beállítani és regisztrálni egy előlegre jogosult számára.</span><span class="sxs-lookup"><span data-stu-id="9cad9-104">This procedure demonstrates how to set up and register transactions for an advance holder.</span></span> <span data-ttu-id="9cad9-105">Ezt a eljárást a DEMF bemutatócéget használva hozták létre, az elsődleges címéhez tartozó ország pedig Litvánia.</span><span class="sxs-lookup"><span data-stu-id="9cad9-105">This procedure was created using the demo data company DEMF with a primary address in Lithuania.</span></span> <span data-ttu-id="9cad9-106">Ez a feladat csak az olyan jogi személyek esetében működik, amelyekben Lengyelországban, Litvániában, Lettországban, Észtországban, Csehországban vagy Magyarországon van az elsődleges címe.</span><span class="sxs-lookup"><span data-stu-id="9cad9-106">This task only works for legal entities with a primary address in Poland, Lithuania, Latvia, Estonia, Czech Republic, or Hungary.</span></span> <span data-ttu-id="9cad9-107">Az eljárás egy olyan szolgáltatáshoz tartozik, amely a Dynamics 365 for Operations 1611-es verziójában jelent meg.</span><span class="sxs-lookup"><span data-stu-id="9cad9-107">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
+<span data-ttu-id="628f2-104">Ez az eljárás bemutatja, hogyan lehet tranzakciókat beállítani és regisztrálni egy előlegre jogosult számára.</span><span class="sxs-lookup"><span data-stu-id="628f2-104">This procedure demonstrates how to set up and register transactions for an advance holder.</span></span> <span data-ttu-id="628f2-105">Ezt a eljárást a DEMF bemutatócéget használva hozták létre, az elsődleges címéhez tartozó ország pedig Litvánia.</span><span class="sxs-lookup"><span data-stu-id="628f2-105">This procedure was created using the demo data company DEMF with a primary address in Lithuania.</span></span> <span data-ttu-id="628f2-106">Ez a feladat csak az olyan jogi személyek esetében működik, amelyekben Lengyelországban, Litvániában, Lettországban, Észtországban, Csehországban vagy Magyarországon van az elsődleges címe.</span><span class="sxs-lookup"><span data-stu-id="628f2-106">This task only works for legal entities with a primary address in Poland, Lithuania, Latvia, Estonia, Czech Republic, or Hungary.</span></span> <span data-ttu-id="628f2-107">Az eljárás egy olyan szolgáltatáshoz tartozik, amely a Dynamics 365 for Operations 1611-es verziójában jelent meg.</span><span class="sxs-lookup"><span data-stu-id="628f2-107">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
 
 
-## <a name="create-a-new-cash-account"></a><span data-ttu-id="9cad9-108">Új készpénzszámla létrehozása</span><span class="sxs-lookup"><span data-stu-id="9cad9-108">Create a new cash account</span></span>
-1. <span data-ttu-id="9cad9-109">Nyissa meg a következőt: Készpénz- és bankkezelés > Bankszámlák > Készpénzszámlák.</span><span class="sxs-lookup"><span data-stu-id="9cad9-109">Go to Cash and bank management > Bank accounts > Cash accounts.</span></span>
-2. <span data-ttu-id="9cad9-110">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="9cad9-110">Click New.</span></span>
-3. <span data-ttu-id="9cad9-111">A Készpénz mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="9cad9-111">In the Cash field, type a value.</span></span>
-4. <span data-ttu-id="9cad9-112">Írjon be egy értéket a Név mezőbe.</span><span class="sxs-lookup"><span data-stu-id="9cad9-112">In the Name field, type a value.</span></span>
-5. <span data-ttu-id="9cad9-113">A Számsorozatcsoport mezőben adjon meg, vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="9cad9-113">In the Number sequence group field, enter or select a value.</span></span>
-6. <span data-ttu-id="9cad9-114">Bontsa ki az Ellenőrzés szakaszt.</span><span class="sxs-lookup"><span data-stu-id="9cad9-114">Expand the Validation section.</span></span>
-7. <span data-ttu-id="9cad9-115">A Pénznem mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="9cad9-115">In the Currency field, enter or select a value.</span></span>
-8. <span data-ttu-id="9cad9-116">Válassza az Igen lehetőséget a Negatív készpénz mezőben.</span><span class="sxs-lookup"><span data-stu-id="9cad9-116">Select Yes in the Negative cash field.</span></span>
-9. <span data-ttu-id="9cad9-117">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="9cad9-117">Click Save.</span></span>
+## <a name="create-a-new-cash-account"></a><span data-ttu-id="628f2-108">Új készpénzszámla létrehozása</span><span class="sxs-lookup"><span data-stu-id="628f2-108">Create a new cash account</span></span>
+1. <span data-ttu-id="628f2-109">Nyissa meg a következőt: Készpénz- és bankkezelés > Bankszámlák > Készpénzszámlák.</span><span class="sxs-lookup"><span data-stu-id="628f2-109">Go to Cash and bank management > Bank accounts > Cash accounts.</span></span>
+2. <span data-ttu-id="628f2-110">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="628f2-110">Click New.</span></span>
+3. <span data-ttu-id="628f2-111">A Készpénz mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="628f2-111">In the Cash field, type a value.</span></span>
+4. <span data-ttu-id="628f2-112">Írjon be egy értéket a Név mezőbe.</span><span class="sxs-lookup"><span data-stu-id="628f2-112">In the Name field, type a value.</span></span>
+5. <span data-ttu-id="628f2-113">A Számsorozatcsoport mezőben adjon meg, vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="628f2-113">In the Number sequence group field, enter or select a value.</span></span>
+6. <span data-ttu-id="628f2-114">Bontsa ki az Ellenőrzés szakaszt.</span><span class="sxs-lookup"><span data-stu-id="628f2-114">Expand the Validation section.</span></span>
+7. <span data-ttu-id="628f2-115">A Pénznem mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="628f2-115">In the Currency field, enter or select a value.</span></span>
+8. <span data-ttu-id="628f2-116">Válassza az Igen lehetőséget a Negatív készpénz mezőben.</span><span class="sxs-lookup"><span data-stu-id="628f2-116">Select Yes in the Negative cash field.</span></span>
+9. <span data-ttu-id="628f2-117">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="628f2-117">Click Save.</span></span>
 
-## <a name="create-a-new-journal"></a><span data-ttu-id="9cad9-118">Új napló létrehozása</span><span class="sxs-lookup"><span data-stu-id="9cad9-118">Create a new journal</span></span>
-1. <span data-ttu-id="9cad9-119">Ugorjon a Főkönyv > Naplóbeállítások > Naplónevek pontra.</span><span class="sxs-lookup"><span data-stu-id="9cad9-119">Go to General ledger > Journal setup > Journal names.</span></span>
-2. <span data-ttu-id="9cad9-120">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="9cad9-120">Click New.</span></span>
-3. <span data-ttu-id="9cad9-121">Írjon be egy értéket a Név mezőbe.</span><span class="sxs-lookup"><span data-stu-id="9cad9-121">In the Name field, type a value.</span></span>
-4. <span data-ttu-id="9cad9-122">A Bizonylatsorozat mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="9cad9-122">In the Voucher series field, enter or select a value.</span></span>
-5. <span data-ttu-id="9cad9-123">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="9cad9-123">Click Save.</span></span>
-6. <span data-ttu-id="9cad9-124">Kattintson az Új elemre.</span><span class="sxs-lookup"><span data-stu-id="9cad9-124">Click New.</span></span>
-7. <span data-ttu-id="9cad9-125">Írjon be egy értéket a Név mezőbe.</span><span class="sxs-lookup"><span data-stu-id="9cad9-125">In the Name field, type a value.</span></span>
-8. <span data-ttu-id="9cad9-126">A Napló típusa mezőben válasszon ki egy lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="9cad9-126">In the Journal type field, select an option.</span></span>
-9. <span data-ttu-id="9cad9-127">A Bizonylatsorozat mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="9cad9-127">In the Voucher series field, enter or select a value.</span></span>
-10. <span data-ttu-id="9cad9-128">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="9cad9-128">Click Save.</span></span>
+## <a name="create-a-new-journal"></a><span data-ttu-id="628f2-118">Új napló létrehozása</span><span class="sxs-lookup"><span data-stu-id="628f2-118">Create a new journal</span></span>
+1. <span data-ttu-id="628f2-119">Ugorjon a Főkönyv > Naplóbeállítások > Naplónevek pontra.</span><span class="sxs-lookup"><span data-stu-id="628f2-119">Go to General ledger > Journal setup > Journal names.</span></span>
+2. <span data-ttu-id="628f2-120">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="628f2-120">Click New.</span></span>
+3. <span data-ttu-id="628f2-121">Írjon be egy értéket a Név mezőbe.</span><span class="sxs-lookup"><span data-stu-id="628f2-121">In the Name field, type a value.</span></span>
+4. <span data-ttu-id="628f2-122">A Bizonylatsorozat mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="628f2-122">In the Voucher series field, enter or select a value.</span></span>
+5. <span data-ttu-id="628f2-123">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="628f2-123">Click Save.</span></span>
+6. <span data-ttu-id="628f2-124">Kattintson az Új elemre.</span><span class="sxs-lookup"><span data-stu-id="628f2-124">Click New.</span></span>
+7. <span data-ttu-id="628f2-125">Írjon be egy értéket a Név mezőbe.</span><span class="sxs-lookup"><span data-stu-id="628f2-125">In the Name field, type a value.</span></span>
+8. <span data-ttu-id="628f2-126">A Napló típusa mezőben válasszon ki egy lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="628f2-126">In the Journal type field, select an option.</span></span>
+9. <span data-ttu-id="628f2-127">A Bizonylatsorozat mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="628f2-127">In the Voucher series field, enter or select a value.</span></span>
+10. <span data-ttu-id="628f2-128">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="628f2-128">Click Save.</span></span>
 
-## <a name="create-an-advance-holder-group"></a><span data-ttu-id="9cad9-129">Előlegre jogosult csoport létrehozása</span><span class="sxs-lookup"><span data-stu-id="9cad9-129">Create an advance holder group</span></span>
-1. <span data-ttu-id="9cad9-130">Ugrás a Kötelezettségek > Beállítás > Előlegre jogosultak > Előlegre jogosult csoportok elemre.</span><span class="sxs-lookup"><span data-stu-id="9cad9-130">Go to Accounts payable > Setup > Advance holders > Advance holder groups.</span></span>
-2. <span data-ttu-id="9cad9-131">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="9cad9-131">Click New.</span></span>
-3. <span data-ttu-id="9cad9-132">Érték beírása a Csoport mezőbe.</span><span class="sxs-lookup"><span data-stu-id="9cad9-132">In the Group field, type a value.</span></span>
-4. <span data-ttu-id="9cad9-133">A Leírás mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="9cad9-133">In the Description field, type a value.</span></span>
-5. <span data-ttu-id="9cad9-134">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="9cad9-134">Click Save.</span></span>
+## <a name="create-an-advance-holder-group"></a><span data-ttu-id="628f2-129">Előlegre jogosult csoport létrehozása</span><span class="sxs-lookup"><span data-stu-id="628f2-129">Create an advance holder group</span></span>
+1. <span data-ttu-id="628f2-130">Ugrás a Kötelezettségek > Beállítás > Előlegre jogosultak > Előlegre jogosult csoportok elemre.</span><span class="sxs-lookup"><span data-stu-id="628f2-130">Go to Accounts payable > Setup > Advance holders > Advance holder groups.</span></span>
+2. <span data-ttu-id="628f2-131">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="628f2-131">Click New.</span></span>
+3. <span data-ttu-id="628f2-132">Érték beírása a Csoport mezőbe.</span><span class="sxs-lookup"><span data-stu-id="628f2-132">In the Group field, type a value.</span></span>
+4. <span data-ttu-id="628f2-133">A Leírás mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="628f2-133">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="628f2-134">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="628f2-134">Click Save.</span></span>
 
-## <a name="create-an-employee-posting-profile"></a><span data-ttu-id="9cad9-135">Alkalmazott feladási sablonjának létrehozása</span><span class="sxs-lookup"><span data-stu-id="9cad9-135">Create an employee posting profile</span></span>
-1. <span data-ttu-id="9cad9-136">Ugrás a Kötelezettségek > Beállítás > Előlegre jogosultak > Alkalmazott feladási sablonjai elemre.</span><span class="sxs-lookup"><span data-stu-id="9cad9-136">Go to Accounts payable > Setup > Advance holders > Employee posting profiles.</span></span>
-2. <span data-ttu-id="9cad9-137">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="9cad9-137">Click New.</span></span>
-3. <span data-ttu-id="9cad9-138">Írjon egy értéket a Feladási profil mezőbe.</span><span class="sxs-lookup"><span data-stu-id="9cad9-138">In the Posting profile field, type a value.</span></span>
-4. <span data-ttu-id="9cad9-139">A Leírás mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="9cad9-139">In the Description field, type a value.</span></span>
-5. <span data-ttu-id="9cad9-140">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="9cad9-140">In the list, mark the selected row.</span></span>
-6. <span data-ttu-id="9cad9-141">Az Érvényes mezőben válasszon ki egy lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="9cad9-141">In the Valid for field, select an option.</span></span>
-7. <span data-ttu-id="9cad9-142">Az Összegzett számla mezőben adja meg a kívánt értékeket.</span><span class="sxs-lookup"><span data-stu-id="9cad9-142">In the Summary account field, specify the desired values.</span></span>
-8. <span data-ttu-id="9cad9-143">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="9cad9-143">Click Save.</span></span>
+## <a name="create-an-employee-posting-profile"></a><span data-ttu-id="628f2-135">Alkalmazott feladási sablonjának létrehozása</span><span class="sxs-lookup"><span data-stu-id="628f2-135">Create an employee posting profile</span></span>
+1. <span data-ttu-id="628f2-136">Ugrás a Kötelezettségek > Beállítás > Előlegre jogosultak > Alkalmazott feladási sablonjai elemre.</span><span class="sxs-lookup"><span data-stu-id="628f2-136">Go to Accounts payable > Setup > Advance holders > Employee posting profiles.</span></span>
+2. <span data-ttu-id="628f2-137">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="628f2-137">Click New.</span></span>
+3. <span data-ttu-id="628f2-138">Írjon egy értéket a Feladási profil mezőbe.</span><span class="sxs-lookup"><span data-stu-id="628f2-138">In the Posting profile field, type a value.</span></span>
+4. <span data-ttu-id="628f2-139">A Leírás mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="628f2-139">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="628f2-140">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="628f2-140">In the list, mark the selected row.</span></span>
+6. <span data-ttu-id="628f2-141">Az Érvényes mezőben válasszon ki egy lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="628f2-141">In the Valid for field, select an option.</span></span>
+7. <span data-ttu-id="628f2-142">Az Összegzett számla mezőben adja meg a kívánt értékeket.</span><span class="sxs-lookup"><span data-stu-id="628f2-142">In the Summary account field, specify the desired values.</span></span>
+8. <span data-ttu-id="628f2-143">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="628f2-143">Click Save.</span></span>
 
-## <a name="set-up-advance-holder-parameters"></a><span data-ttu-id="9cad9-144">Előlegre jogosultak paramétereinek beállítása</span><span class="sxs-lookup"><span data-stu-id="9cad9-144">Set up advance holder parameters</span></span>
-1. <span data-ttu-id="9cad9-145">Ugorjon a Kötelezettségek > Beállítás > Kötelezettségek paraméterei pontra.</span><span class="sxs-lookup"><span data-stu-id="9cad9-145">Go to Accounts payable > Setup > Accounts payable parameters.</span></span>
-2. <span data-ttu-id="9cad9-146">Kattintson az Előlegre jogosultak fülre.</span><span class="sxs-lookup"><span data-stu-id="9cad9-146">Click the Advance holders tab.</span></span>
-3. <span data-ttu-id="9cad9-147">A Feladási profil mezőben adjon meg, vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="9cad9-147">In the Posting profile field, enter or select a value.</span></span>
-4. <span data-ttu-id="9cad9-148">A Név mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="9cad9-148">In the Name field, enter or select a value.</span></span>
-5. <span data-ttu-id="9cad9-149">A Készpénz mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="9cad9-149">In the Cash field, enter or select a value.</span></span>
-6. <span data-ttu-id="9cad9-150">A Név mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="9cad9-150">In the Name field, enter or select a value.</span></span>
-7. <span data-ttu-id="9cad9-151">Válasszon egy lehetőséget a Számla típusa mezőben.</span><span class="sxs-lookup"><span data-stu-id="9cad9-151">In the Account type field, select an option.</span></span>
-8. <span data-ttu-id="9cad9-152">A Fő számla mezőben adja meg a kívánt értékeket.</span><span class="sxs-lookup"><span data-stu-id="9cad9-152">In the Main account field, specify the desired values.</span></span>
-9. <span data-ttu-id="9cad9-153">Kattintson a Számsorozatok lapra.</span><span class="sxs-lookup"><span data-stu-id="9cad9-153">Click the Number sequences tab.</span></span>
-10. <span data-ttu-id="9cad9-154">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="9cad9-154">Click Save.</span></span>
+## <a name="set-up-advance-holder-parameters"></a><span data-ttu-id="628f2-144">Előlegre jogosultak paramétereinek beállítása</span><span class="sxs-lookup"><span data-stu-id="628f2-144">Set up advance holder parameters</span></span>
+1. <span data-ttu-id="628f2-145">Ugorjon a Kötelezettségek > Beállítás > Kötelezettségek paraméterei pontra.</span><span class="sxs-lookup"><span data-stu-id="628f2-145">Go to Accounts payable > Setup > Accounts payable parameters.</span></span>
+2. <span data-ttu-id="628f2-146">Kattintson az Előlegre jogosultak fülre.</span><span class="sxs-lookup"><span data-stu-id="628f2-146">Click the Advance holders tab.</span></span>
+3. <span data-ttu-id="628f2-147">A Feladási profil mezőben adjon meg, vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="628f2-147">In the Posting profile field, enter or select a value.</span></span>
+4. <span data-ttu-id="628f2-148">A Név mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="628f2-148">In the Name field, enter or select a value.</span></span>
+5. <span data-ttu-id="628f2-149">A Készpénz mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="628f2-149">In the Cash field, enter or select a value.</span></span>
+6. <span data-ttu-id="628f2-150">A Név mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="628f2-150">In the Name field, enter or select a value.</span></span>
+7. <span data-ttu-id="628f2-151">Válasszon egy lehetőséget a Számla típusa mezőben.</span><span class="sxs-lookup"><span data-stu-id="628f2-151">In the Account type field, select an option.</span></span>
+8. <span data-ttu-id="628f2-152">A Fő számla mezőben adja meg a kívánt értékeket.</span><span class="sxs-lookup"><span data-stu-id="628f2-152">In the Main account field, specify the desired values.</span></span>
+9. <span data-ttu-id="628f2-153">Kattintson a Számsorozatok lapra.</span><span class="sxs-lookup"><span data-stu-id="628f2-153">Click the Number sequences tab.</span></span>
+10. <span data-ttu-id="628f2-154">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="628f2-154">Click Save.</span></span>
 
-## <a name="set-up-a-cash-posting-profile"></a><span data-ttu-id="9cad9-155">Állítson be egy készpénzfeladási profilt</span><span class="sxs-lookup"><span data-stu-id="9cad9-155">Set up a cash posting profile</span></span>
-1. <span data-ttu-id="9cad9-156">Nyissa meg a következőt: Készpénz- és bankkezelés > Beállítás > Készpénzfeladási sablonok.</span><span class="sxs-lookup"><span data-stu-id="9cad9-156">Go to Cash and bank management > Setup > Cash posting profiles.</span></span>
-2. <span data-ttu-id="9cad9-157">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="9cad9-157">Click New.</span></span>
-3. <span data-ttu-id="9cad9-158">A Készpénzfeladás mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="9cad9-158">In the Cash posting field, type a value.</span></span>
-4. <span data-ttu-id="9cad9-159">A Leírás mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="9cad9-159">In the Description field, type a value.</span></span>
-5. <span data-ttu-id="9cad9-160">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="9cad9-160">In the list, mark the selected row.</span></span>
-6. <span data-ttu-id="9cad9-161">Az Érvényes mezőben válasszon ki egy lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="9cad9-161">In the Valid for field, select an option.</span></span>
-7. <span data-ttu-id="9cad9-162">A Fő számla mezőben adja meg a kívánt értékeket.</span><span class="sxs-lookup"><span data-stu-id="9cad9-162">In the Main account field, specify the desired values.</span></span>
-8. <span data-ttu-id="9cad9-163">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="9cad9-163">Click Save.</span></span>
+## <a name="set-up-a-cash-posting-profile"></a><span data-ttu-id="628f2-155">Állítson be egy készpénzfeladási profilt</span><span class="sxs-lookup"><span data-stu-id="628f2-155">Set up a cash posting profile</span></span>
+1. <span data-ttu-id="628f2-156">Nyissa meg a következőt: Készpénz- és bankkezelés > Beállítás > Készpénzfeladási sablonok.</span><span class="sxs-lookup"><span data-stu-id="628f2-156">Go to Cash and bank management > Setup > Cash posting profiles.</span></span>
+2. <span data-ttu-id="628f2-157">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="628f2-157">Click New.</span></span>
+3. <span data-ttu-id="628f2-158">A Készpénzfeladás mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="628f2-158">In the Cash posting field, type a value.</span></span>
+4. <span data-ttu-id="628f2-159">A Leírás mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="628f2-159">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="628f2-160">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="628f2-160">In the list, mark the selected row.</span></span>
+6. <span data-ttu-id="628f2-161">Az Érvényes mezőben válasszon ki egy lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="628f2-161">In the Valid for field, select an option.</span></span>
+7. <span data-ttu-id="628f2-162">A Fő számla mezőben adja meg a kívánt értékeket.</span><span class="sxs-lookup"><span data-stu-id="628f2-162">In the Main account field, specify the desired values.</span></span>
+8. <span data-ttu-id="628f2-163">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="628f2-163">Click Save.</span></span>
 
-## <a name="set-up-cash-and-bank-parameters"></a><span data-ttu-id="9cad9-164">Készpénz- és bankparaméterek beállítása</span><span class="sxs-lookup"><span data-stu-id="9cad9-164">Set up cash and bank parameters</span></span>
-1. <span data-ttu-id="9cad9-165">Ugorjon a Készpénz- és bankkezelés > Beállítás > Készpénz- és bankkezelési paraméterek pontra.</span><span class="sxs-lookup"><span data-stu-id="9cad9-165">Go to Cash and bank management > Setup > Cash and bank management parameters.</span></span>
-2. <span data-ttu-id="9cad9-166">Kattintson a Készpénz lapra.</span><span class="sxs-lookup"><span data-stu-id="9cad9-166">Click the Cash tab.</span></span>
-3. <span data-ttu-id="9cad9-167">A Készpénz mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="9cad9-167">In the Cash field, enter or select a value.</span></span>
-4. <span data-ttu-id="9cad9-168">A Készpénzfeladás mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="9cad9-168">In the Cash posting field, enter or select a value.</span></span>
-5. <span data-ttu-id="9cad9-169">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="9cad9-169">Click Save.</span></span>
-6. <span data-ttu-id="9cad9-170">Kattintson a Számsorozatok lapra.</span><span class="sxs-lookup"><span data-stu-id="9cad9-170">Click the Number sequences tab.</span></span>
-7. <span data-ttu-id="9cad9-171">Keresse meg és jelölje ki a kívánt rekordot a listán.</span><span class="sxs-lookup"><span data-stu-id="9cad9-171">In the list, find and select the desired record.</span></span>
-8. <span data-ttu-id="9cad9-172">A Számsorrend kódja mezőben adjon meg, vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="9cad9-172">In the Number sequence code field, enter or select a value.</span></span>
-9. <span data-ttu-id="9cad9-173">A kívánt rekord megkeresése és kijelölése a listán</span><span class="sxs-lookup"><span data-stu-id="9cad9-173">In the list, find and select the desired record.</span></span>
-10. <span data-ttu-id="9cad9-174">A Számsorrend kódja mezőben adjon meg, vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="9cad9-174">In the Number sequence code field, enter or select a value.</span></span>
-11. <span data-ttu-id="9cad9-175">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="9cad9-175">Click Save.</span></span>
+## <a name="set-up-cash-and-bank-parameters"></a><span data-ttu-id="628f2-164">Készpénz- és bankparaméterek beállítása</span><span class="sxs-lookup"><span data-stu-id="628f2-164">Set up cash and bank parameters</span></span>
+1. <span data-ttu-id="628f2-165">Ugorjon a Készpénz- és bankkezelés > Beállítás > Készpénz- és bankkezelési paraméterek pontra.</span><span class="sxs-lookup"><span data-stu-id="628f2-165">Go to Cash and bank management > Setup > Cash and bank management parameters.</span></span>
+2. <span data-ttu-id="628f2-166">Kattintson a Készpénz lapra.</span><span class="sxs-lookup"><span data-stu-id="628f2-166">Click the Cash tab.</span></span>
+3. <span data-ttu-id="628f2-167">A Készpénz mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="628f2-167">In the Cash field, enter or select a value.</span></span>
+4. <span data-ttu-id="628f2-168">A Készpénzfeladás mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="628f2-168">In the Cash posting field, enter or select a value.</span></span>
+5. <span data-ttu-id="628f2-169">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="628f2-169">Click Save.</span></span>
+6. <span data-ttu-id="628f2-170">Kattintson a Számsorozatok lapra.</span><span class="sxs-lookup"><span data-stu-id="628f2-170">Click the Number sequences tab.</span></span>
+7. <span data-ttu-id="628f2-171">Keresse meg és jelölje ki a kívánt rekordot a listán.</span><span class="sxs-lookup"><span data-stu-id="628f2-171">In the list, find and select the desired record.</span></span>
+8. <span data-ttu-id="628f2-172">A Számsorrend kódja mezőben adjon meg, vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="628f2-172">In the Number sequence code field, enter or select a value.</span></span>
+9. <span data-ttu-id="628f2-173">A kívánt rekord megkeresése és kijelölése a listán</span><span class="sxs-lookup"><span data-stu-id="628f2-173">In the list, find and select the desired record.</span></span>
+10. <span data-ttu-id="628f2-174">A Számsorrend kódja mezőben adjon meg, vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="628f2-174">In the Number sequence code field, enter or select a value.</span></span>
+11. <span data-ttu-id="628f2-175">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="628f2-175">Click Save.</span></span>
 
-## <a name="set-up-terms-of-payment"></a><span data-ttu-id="9cad9-176">Fizetési feltételek beállítása</span><span class="sxs-lookup"><span data-stu-id="9cad9-176">Set up terms of payment</span></span>
-1. <span data-ttu-id="9cad9-177">Ugrás a Kötelezettségek > Kifizetés beállítása > Fizetési feltételek elemre.</span><span class="sxs-lookup"><span data-stu-id="9cad9-177">Go to Accounts payable > Payment setup > Terms of payment.</span></span>
-2. <span data-ttu-id="9cad9-178">Kattintson a Szerkesztés lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="9cad9-178">Click Edit.</span></span>
-3. <span data-ttu-id="9cad9-179">A Kezdő előlegre jogosult mezőben válassza az Igen lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="9cad9-179">Select Yes in the From advance holder field.</span></span>
-4. <span data-ttu-id="9cad9-180">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="9cad9-180">Click Save.</span></span>
+## <a name="set-up-terms-of-payment"></a><span data-ttu-id="628f2-176">Fizetési feltételek beállítása</span><span class="sxs-lookup"><span data-stu-id="628f2-176">Set up terms of payment</span></span>
+1. <span data-ttu-id="628f2-177">Ugrás a Kötelezettségek > Kifizetés beállítása > Fizetési feltételek elemre.</span><span class="sxs-lookup"><span data-stu-id="628f2-177">Go to Accounts payable > Payment setup > Terms of payment.</span></span>
+2. <span data-ttu-id="628f2-178">Kattintson a Szerkesztés lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="628f2-178">Click Edit.</span></span>
+3. <span data-ttu-id="628f2-179">A Kezdő előlegre jogosult mezőben válassza az Igen lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="628f2-179">Select Yes in the From advance holder field.</span></span>
+4. <span data-ttu-id="628f2-180">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="628f2-180">Click Save.</span></span>
 
-## <a name="create-a-new-worker"></a><span data-ttu-id="9cad9-181">Új dolgozó létrehozása</span><span class="sxs-lookup"><span data-stu-id="9cad9-181">Create a new worker</span></span>
-1. <span data-ttu-id="9cad9-182">Ugrás az Emberi erőforrások > Dolgozók > Dolgozók elemre.</span><span class="sxs-lookup"><span data-stu-id="9cad9-182">Go to Human resources > Workers > Workers.</span></span>
-2. <span data-ttu-id="9cad9-183">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="9cad9-183">Click New.</span></span>
-3. <span data-ttu-id="9cad9-184">Az Utónév mezőbe írjon be egy értéket.</span><span class="sxs-lookup"><span data-stu-id="9cad9-184">In the First name field, type a value.</span></span>
-4. <span data-ttu-id="9cad9-185">A Vezetéknéve mezőbe írjon be egy értéket.</span><span class="sxs-lookup"><span data-stu-id="9cad9-185">In the Last name field, type a value.</span></span>
-5. <span data-ttu-id="9cad9-186">Adjon meg egy értéket a Dolgozó azonosítója mezőben.</span><span class="sxs-lookup"><span data-stu-id="9cad9-186">In the Worker ID field, type a value.</span></span>
-6. <span data-ttu-id="9cad9-187">Kattintson az Új dolgozó felvételére.</span><span class="sxs-lookup"><span data-stu-id="9cad9-187">Click Hire new worker.</span></span>
-7. <span data-ttu-id="9cad9-188">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="9cad9-188">Click Save.</span></span>
+## <a name="create-a-new-worker"></a><span data-ttu-id="628f2-181">Új dolgozó létrehozása</span><span class="sxs-lookup"><span data-stu-id="628f2-181">Create a new worker</span></span>
+1. <span data-ttu-id="628f2-182">Ugrás az Emberi erőforrások > Dolgozók > Dolgozók elemre.</span><span class="sxs-lookup"><span data-stu-id="628f2-182">Go to Human resources > Workers > Workers.</span></span>
+2. <span data-ttu-id="628f2-183">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="628f2-183">Click New.</span></span>
+3. <span data-ttu-id="628f2-184">Az Utónév mezőbe írjon be egy értéket.</span><span class="sxs-lookup"><span data-stu-id="628f2-184">In the First name field, type a value.</span></span>
+4. <span data-ttu-id="628f2-185">A Vezetéknéve mezőbe írjon be egy értéket.</span><span class="sxs-lookup"><span data-stu-id="628f2-185">In the Last name field, type a value.</span></span>
+5. <span data-ttu-id="628f2-186">Adjon meg egy értéket a Dolgozó azonosítója mezőben.</span><span class="sxs-lookup"><span data-stu-id="628f2-186">In the Worker ID field, type a value.</span></span>
+6. <span data-ttu-id="628f2-187">Kattintson az Új dolgozó felvételére.</span><span class="sxs-lookup"><span data-stu-id="628f2-187">Click Hire new worker.</span></span>
+7. <span data-ttu-id="628f2-188">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="628f2-188">Click Save.</span></span>
 
-## <a name="set-up-a-worker-as-an-advance-holder"></a><span data-ttu-id="9cad9-189">Dolgozó beállítása előlegre jogosultként</span><span class="sxs-lookup"><span data-stu-id="9cad9-189">Set up a worker as an advance holder</span></span>
-1. <span data-ttu-id="9cad9-190">Ugrás a Kötelezettségek > Előlegre jogosultak > Előlegre jogosultak elemre.</span><span class="sxs-lookup"><span data-stu-id="9cad9-190">Go to Accounts payable > Advance holders > Advance holders.</span></span>
-2. <span data-ttu-id="9cad9-191">Kattintson a Szerkesztés lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="9cad9-191">Click Edit.</span></span>
-3. <span data-ttu-id="9cad9-192">A Csoport mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="9cad9-192">In the Group field, enter or select a value.</span></span>
-4. <span data-ttu-id="9cad9-193">Az Előlegre jogosult mezőben válassza az Igen lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="9cad9-193">Select Yes in the Advance holder field.</span></span>
-5. <span data-ttu-id="9cad9-194">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="9cad9-194">Click Save.</span></span>
+## <a name="set-up-a-worker-as-an-advance-holder"></a><span data-ttu-id="628f2-189">Dolgozó beállítása előlegre jogosultként</span><span class="sxs-lookup"><span data-stu-id="628f2-189">Set up a worker as an advance holder</span></span>
+1. <span data-ttu-id="628f2-190">Ugrás a Kötelezettségek > Előlegre jogosultak > Előlegre jogosultak elemre.</span><span class="sxs-lookup"><span data-stu-id="628f2-190">Go to Accounts payable > Advance holders > Advance holders.</span></span>
+2. <span data-ttu-id="628f2-191">Kattintson a Szerkesztés lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="628f2-191">Click Edit.</span></span>
+3. <span data-ttu-id="628f2-192">A Csoport mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="628f2-192">In the Group field, enter or select a value.</span></span>
+4. <span data-ttu-id="628f2-193">Az Előlegre jogosult mezőben válassza az Igen lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="628f2-193">Select Yes in the Advance holder field.</span></span>
+5. <span data-ttu-id="628f2-194">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="628f2-194">Click Save.</span></span>
 
-## <a name="create-and-post-a-purchase-order-invoice"></a><span data-ttu-id="9cad9-195">Beszerzési rendelés számlájának létrehozása és feladása</span><span class="sxs-lookup"><span data-stu-id="9cad9-195">Create and post a purchase order invoice</span></span>
-1. <span data-ttu-id="9cad9-196">Nyissa meg a következőt: Kötelezettségek > Beszerzési rendelések > Minden beszerzési rendelés.</span><span class="sxs-lookup"><span data-stu-id="9cad9-196">Go to Accounts payable > Purchase orders > All purchase orders.</span></span>
-2. <span data-ttu-id="9cad9-197">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="9cad9-197">Click New.</span></span>
-3. <span data-ttu-id="9cad9-198">A Szállítószámla mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="9cad9-198">In the Vendor account field, enter or select a value.</span></span>
-4. <span data-ttu-id="9cad9-199">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="9cad9-199">Click OK.</span></span>
-5. <span data-ttu-id="9cad9-200">A Sorok vagy fejléc mezőben válasszon egy lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="9cad9-200">In the Lines or header field, select an option.</span></span>
-6. <span data-ttu-id="9cad9-201">Bontsa ki az Ár és engedmény szakaszt.</span><span class="sxs-lookup"><span data-stu-id="9cad9-201">Expand the Price and discount section.</span></span>
-7. <span data-ttu-id="9cad9-202">Adjon meg vagy válasszon ki egy értéket a Fizetési feltételek mezőben.</span><span class="sxs-lookup"><span data-stu-id="9cad9-202">In the Terms of payment field, enter or select a value.</span></span>
-8. <span data-ttu-id="9cad9-203">Az Előlegre jogosult mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="9cad9-203">In the Advance holder field, enter or select a value.</span></span>
-9. <span data-ttu-id="9cad9-204">A Sorok vagy fejléc mezőben válasszon egy lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="9cad9-204">In the Lines or header field, select an option.</span></span>
-10. <span data-ttu-id="9cad9-205">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="9cad9-205">In the list, mark the selected row.</span></span>
-11. <span data-ttu-id="9cad9-206">Az Elemszám mezőben adjon meg, vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="9cad9-206">In the Item number field, enter or select a value.</span></span>
-12. <span data-ttu-id="9cad9-207">Adjon meg egy számot a Mennyiség mezőben.</span><span class="sxs-lookup"><span data-stu-id="9cad9-207">In the Quantity field, enter a number.</span></span>
-13. <span data-ttu-id="9cad9-208">Adjon meg egy számot az Egységár mezőben.</span><span class="sxs-lookup"><span data-stu-id="9cad9-208">In the Unit price field, enter a number.</span></span>
-14. <span data-ttu-id="9cad9-209">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="9cad9-209">Click Save.</span></span>
-15. <span data-ttu-id="9cad9-210">A Művelet panelen kattintson a Beszerzés elemre.</span><span class="sxs-lookup"><span data-stu-id="9cad9-210">On the Action Pane, click Purchase.</span></span>
-16. <span data-ttu-id="9cad9-211">Kattintson a Megerősítés gombra.</span><span class="sxs-lookup"><span data-stu-id="9cad9-211">Click Confirm.</span></span>
-17. <span data-ttu-id="9cad9-212">A Művelet panelen kattintson a Számla lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="9cad9-212">On the Action Pane, click Invoice.</span></span>
-18. <span data-ttu-id="9cad9-213">Kattintson a Számla lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="9cad9-213">Click Invoice.</span></span>
-19. <span data-ttu-id="9cad9-214">Kattintson az Alapértelmezett forrás: Termék érkező mennyisége lehetőségre a legördülő párbeszédablak megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="9cad9-214">Click Default from: Product receipt quantity to open the drop dialog.</span></span>
-20. <span data-ttu-id="9cad9-215">Egy lehetőség kiválasztása a Sorok alapértelmezett mennyisége mezőben.</span><span class="sxs-lookup"><span data-stu-id="9cad9-215">In the Default quantity for lines field, select an option.</span></span>
-21. <span data-ttu-id="9cad9-216">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="9cad9-216">Click OK.</span></span>
-22. <span data-ttu-id="9cad9-217">Érték beírása a Szám mezőbe.</span><span class="sxs-lookup"><span data-stu-id="9cad9-217">In the Number field, type a value.</span></span>
-23. <span data-ttu-id="9cad9-218">A Számla leírása mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="9cad9-218">In the Invoice description field, type a value.</span></span>
-24. <span data-ttu-id="9cad9-219">Adjon meg egy dátumot a Számla dátuma mezőben.</span><span class="sxs-lookup"><span data-stu-id="9cad9-219">In the Invoice date field, enter a date.</span></span>
-25. <span data-ttu-id="9cad9-220">Az Áfatételjegyzék dátuma mezőbe írjon be egy dátumot.</span><span class="sxs-lookup"><span data-stu-id="9cad9-220">In the Date of VAT register field, enter a date.</span></span>
-26. <span data-ttu-id="9cad9-221">Adjon meg egy dátumot a Beérkezési dokumentum dátuma mezőben.</span><span class="sxs-lookup"><span data-stu-id="9cad9-221">In the Receive document date field, enter a date.</span></span>
-27. <span data-ttu-id="9cad9-222">Kattintson a Feladás lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="9cad9-222">Click Post.</span></span>
+## <a name="create-and-post-a-purchase-order-invoice"></a><span data-ttu-id="628f2-195">Beszerzési rendelés számlájának létrehozása és feladása</span><span class="sxs-lookup"><span data-stu-id="628f2-195">Create and post a purchase order invoice</span></span>
+1. <span data-ttu-id="628f2-196">Nyissa meg a következőt: Kötelezettségek > Beszerzési rendelések > Minden beszerzési rendelés.</span><span class="sxs-lookup"><span data-stu-id="628f2-196">Go to Accounts payable > Purchase orders > All purchase orders.</span></span>
+2. <span data-ttu-id="628f2-197">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="628f2-197">Click New.</span></span>
+3. <span data-ttu-id="628f2-198">A Szállítószámla mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="628f2-198">In the Vendor account field, enter or select a value.</span></span>
+4. <span data-ttu-id="628f2-199">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="628f2-199">Click OK.</span></span>
+5. <span data-ttu-id="628f2-200">A Sorok vagy fejléc mezőben válasszon egy lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="628f2-200">In the Lines or header field, select an option.</span></span>
+6. <span data-ttu-id="628f2-201">Bontsa ki az Ár és engedmény szakaszt.</span><span class="sxs-lookup"><span data-stu-id="628f2-201">Expand the Price and discount section.</span></span>
+7. <span data-ttu-id="628f2-202">Adjon meg vagy válasszon ki egy értéket a Fizetési feltételek mezőben.</span><span class="sxs-lookup"><span data-stu-id="628f2-202">In the Terms of payment field, enter or select a value.</span></span>
+8. <span data-ttu-id="628f2-203">Az Előlegre jogosult mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="628f2-203">In the Advance holder field, enter or select a value.</span></span>
+9. <span data-ttu-id="628f2-204">A Sorok vagy fejléc mezőben válasszon egy lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="628f2-204">In the Lines or header field, select an option.</span></span>
+10. <span data-ttu-id="628f2-205">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="628f2-205">In the list, mark the selected row.</span></span>
+11. <span data-ttu-id="628f2-206">Az Elemszám mezőben adjon meg, vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="628f2-206">In the Item number field, enter or select a value.</span></span>
+12. <span data-ttu-id="628f2-207">Adjon meg egy számot a Mennyiség mezőben.</span><span class="sxs-lookup"><span data-stu-id="628f2-207">In the Quantity field, enter a number.</span></span>
+13. <span data-ttu-id="628f2-208">Adjon meg egy számot az Egységár mezőben.</span><span class="sxs-lookup"><span data-stu-id="628f2-208">In the Unit price field, enter a number.</span></span>
+14. <span data-ttu-id="628f2-209">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="628f2-209">Click Save.</span></span>
+15. <span data-ttu-id="628f2-210">A Művelet panelen kattintson a Beszerzés elemre.</span><span class="sxs-lookup"><span data-stu-id="628f2-210">On the Action Pane, click Purchase.</span></span>
+16. <span data-ttu-id="628f2-211">Kattintson a Megerősítés gombra.</span><span class="sxs-lookup"><span data-stu-id="628f2-211">Click Confirm.</span></span>
+17. <span data-ttu-id="628f2-212">A Művelet panelen kattintson a Számla lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="628f2-212">On the Action Pane, click Invoice.</span></span>
+18. <span data-ttu-id="628f2-213">Kattintson a Számla lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="628f2-213">Click Invoice.</span></span>
+19. <span data-ttu-id="628f2-214">Kattintson az Alapértelmezett forrás: Termék érkező mennyisége lehetőségre a legördülő párbeszédablak megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="628f2-214">Click Default from: Product receipt quantity to open the drop dialog.</span></span>
+20. <span data-ttu-id="628f2-215">Egy lehetőség kiválasztása a Sorok alapértelmezett mennyisége mezőben.</span><span class="sxs-lookup"><span data-stu-id="628f2-215">In the Default quantity for lines field, select an option.</span></span>
+21. <span data-ttu-id="628f2-216">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="628f2-216">Click OK.</span></span>
+22. <span data-ttu-id="628f2-217">Érték beírása a Szám mezőbe.</span><span class="sxs-lookup"><span data-stu-id="628f2-217">In the Number field, type a value.</span></span>
+23. <span data-ttu-id="628f2-218">A Számla leírása mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="628f2-218">In the Invoice description field, type a value.</span></span>
+24. <span data-ttu-id="628f2-219">Adjon meg egy dátumot a Számla dátuma mezőben.</span><span class="sxs-lookup"><span data-stu-id="628f2-219">In the Invoice date field, enter a date.</span></span>
+25. <span data-ttu-id="628f2-220">Az Áfatételjegyzék dátuma mezőbe írjon be egy dátumot.</span><span class="sxs-lookup"><span data-stu-id="628f2-220">In the Date of VAT register field, enter a date.</span></span>
+26. <span data-ttu-id="628f2-221">Adjon meg egy dátumot a Beérkezési dokumentum dátuma mezőben.</span><span class="sxs-lookup"><span data-stu-id="628f2-221">In the Receive document date field, enter a date.</span></span>
+27. <span data-ttu-id="628f2-222">Kattintson a Feladás lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="628f2-222">Click Post.</span></span>
 
-## <a name="balance-and-close-advance-holders-transactions"></a><span data-ttu-id="9cad9-223">Előlegre jogosultak tranzakcióinak egyenlegének elkészítése és zárása</span><span class="sxs-lookup"><span data-stu-id="9cad9-223">Balance and close advance holders transactions</span></span>
-1. <span data-ttu-id="9cad9-224">Ugrás a Kötelezettségek > Előlegre jogosultak > Előlegre jogosultak elemre.</span><span class="sxs-lookup"><span data-stu-id="9cad9-224">Go to Accounts payable > Advance holders > Advance holders.</span></span>
-2. <span data-ttu-id="9cad9-225">Kattintson a Tranzakciók elemre.</span><span class="sxs-lookup"><span data-stu-id="9cad9-225">Click Transactions.</span></span>
-3. <span data-ttu-id="9cad9-226">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="9cad9-226">Close the page.</span></span>
-4. <span data-ttu-id="9cad9-227">Kattintson az Egyenleg lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="9cad9-227">Click Balance.</span></span>
-5. <span data-ttu-id="9cad9-228">Kattintson a Zárás bankon keresztül lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="9cad9-228">Click Close via bank.</span></span>
-6. <span data-ttu-id="9cad9-229">Válassza ki az Igen lehetőséget az Automatikus mezőben.</span><span class="sxs-lookup"><span data-stu-id="9cad9-229">Select Yes in the Automatic field.</span></span>
-7. <span data-ttu-id="9cad9-230">Az Átutalandó összeg mezőben.</span><span class="sxs-lookup"><span data-stu-id="9cad9-230">In the Amount to be transferred.</span></span> <span data-ttu-id="9cad9-231">mezőben adjon meg egy számot.</span><span class="sxs-lookup"><span data-stu-id="9cad9-231">field, enter a number.</span></span>
-8. <span data-ttu-id="9cad9-232">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="9cad9-232">Click OK.</span></span>
-9. <span data-ttu-id="9cad9-233">Kattintson a Zárás készpénzen keresztül lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="9cad9-233">Click Close via cash.</span></span>
-10. <span data-ttu-id="9cad9-234">Válassza ki az Igen lehetőséget az Automatikus mezőben.</span><span class="sxs-lookup"><span data-stu-id="9cad9-234">Select Yes in the Automatic field.</span></span>
-11. <span data-ttu-id="9cad9-235">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="9cad9-235">Click OK.</span></span>
-12. <span data-ttu-id="9cad9-236">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="9cad9-236">Close the page.</span></span>
-13. <span data-ttu-id="9cad9-237">Kattintson a Tranzakciók elemre.</span><span class="sxs-lookup"><span data-stu-id="9cad9-237">Click Transactions.</span></span>
+## <a name="balance-and-close-advance-holders-transactions"></a><span data-ttu-id="628f2-223">Előlegre jogosultak tranzakcióinak egyenlegének elkészítése és zárása</span><span class="sxs-lookup"><span data-stu-id="628f2-223">Balance and close advance holders transactions</span></span>
+1. <span data-ttu-id="628f2-224">Ugrás a Kötelezettségek > Előlegre jogosultak > Előlegre jogosultak elemre.</span><span class="sxs-lookup"><span data-stu-id="628f2-224">Go to Accounts payable > Advance holders > Advance holders.</span></span>
+2. <span data-ttu-id="628f2-225">Kattintson a Tranzakciók elemre.</span><span class="sxs-lookup"><span data-stu-id="628f2-225">Click Transactions.</span></span>
+3. <span data-ttu-id="628f2-226">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="628f2-226">Close the page.</span></span>
+4. <span data-ttu-id="628f2-227">Kattintson az Egyenleg lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="628f2-227">Click Balance.</span></span>
+5. <span data-ttu-id="628f2-228">Kattintson a Zárás bankon keresztül lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="628f2-228">Click Close via bank.</span></span>
+6. <span data-ttu-id="628f2-229">Válassza ki az Igen lehetőséget az Automatikus mezőben.</span><span class="sxs-lookup"><span data-stu-id="628f2-229">Select Yes in the Automatic field.</span></span>
+7. <span data-ttu-id="628f2-230">Az Átutalandó összeg mezőben.</span><span class="sxs-lookup"><span data-stu-id="628f2-230">In the Amount to be transferred.</span></span> <span data-ttu-id="628f2-231">mezőben adjon meg egy számot.</span><span class="sxs-lookup"><span data-stu-id="628f2-231">field, enter a number.</span></span>
+8. <span data-ttu-id="628f2-232">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="628f2-232">Click OK.</span></span>
+9. <span data-ttu-id="628f2-233">Kattintson a Zárás készpénzen keresztül lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="628f2-233">Click Close via cash.</span></span>
+10. <span data-ttu-id="628f2-234">Válassza ki az Igen lehetőséget az Automatikus mezőben.</span><span class="sxs-lookup"><span data-stu-id="628f2-234">Select Yes in the Automatic field.</span></span>
+11. <span data-ttu-id="628f2-235">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="628f2-235">Click OK.</span></span>
+12. <span data-ttu-id="628f2-236">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="628f2-236">Close the page.</span></span>
+13. <span data-ttu-id="628f2-237">Kattintson a Tranzakciók elemre.</span><span class="sxs-lookup"><span data-stu-id="628f2-237">Click Transactions.</span></span>
 
 
 

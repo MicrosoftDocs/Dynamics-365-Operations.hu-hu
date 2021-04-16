@@ -2,11 +2,9 @@
 title: Hitelek és beszedések áttekintése
 description: Ez a témakör a hitel és beszedések funkcióhoz nyújt áttekintést.
 author: mikefalkner
-manager: AnnBe
 ms.date: 09/04/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschloma
@@ -14,68 +12,68 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 6bba210bc282e031606acca4ad73e18d8b42167d
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 7929150cd9f6c28620f4c4d4cb7b57b02d27a104
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5257633"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5835412"
 ---
-# <a name="credit-and-collections-overview"></a><span data-ttu-id="8d0de-103">Hitelek és beszedések áttekintése</span><span class="sxs-lookup"><span data-stu-id="8d0de-103">Credit and collections overview</span></span>
+# <a name="credit-and-collections-overview"></a><span data-ttu-id="b266a-103">Hitelek és beszedések áttekintése</span><span class="sxs-lookup"><span data-stu-id="b266a-103">Credit and collections overview</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="8d0de-104">A vevői hitelkeretek kezelhetők, és szükség esetén a beszedési tevékenységek hajthatók végre.</span><span class="sxs-lookup"><span data-stu-id="8d0de-104">You can manage credit limits for your customers and perform collection activities when they become necessary.</span></span>
+<span data-ttu-id="b266a-104">A vevői hitelkeretek kezelhetők, és szükség esetén a beszedési tevékenységek hajthatók végre.</span><span class="sxs-lookup"><span data-stu-id="b266a-104">You can manage credit limits for your customers and perform collection activities when they become necessary.</span></span>
 
-## <a name="credit-management"></a><span data-ttu-id="8d0de-105">Hitelkezelés</span><span class="sxs-lookup"><span data-stu-id="8d0de-105">Credit management</span></span>
+## <a name="credit-management"></a><span data-ttu-id="b266a-105">Hitelkezelés</span><span class="sxs-lookup"><span data-stu-id="b266a-105">Credit management</span></span>
 
-<span data-ttu-id="8d0de-106">A vevői hitelkezelés lehetővé teszi a hitelkeretek kezelését, valamint az értékesítési rendelések áramlásának szabályozását a feladási folyamaton keresztül, az Ön által létrehozott hitelszabályok alapján.</span><span class="sxs-lookup"><span data-stu-id="8d0de-106">Customer credit management lets you manage credit limits and control the flow of sales orders through the posting process, based on credit rules that you create.</span></span>
+<span data-ttu-id="b266a-106">A vevői hitelkezelés lehetővé teszi a hitelkeretek kezelését, valamint az értékesítési rendelések áramlásának szabályozását a feladási folyamaton keresztül, az Ön által létrehozott hitelszabályok alapján.</span><span class="sxs-lookup"><span data-stu-id="b266a-106">Customer credit management lets you manage credit limits and control the flow of sales orders through the posting process, based on credit rules that you create.</span></span>
 
-<span data-ttu-id="8d0de-107">A hitelkezelési folyamat a következő lépések bármelyikét tartalmazhatja:</span><span class="sxs-lookup"><span data-stu-id="8d0de-107">The credit management process can include any of the following steps:</span></span>
+<span data-ttu-id="b266a-107">A hitelkezelési folyamat a következő lépések bármelyikét tartalmazhatja:</span><span class="sxs-lookup"><span data-stu-id="b266a-107">The credit management process can include any of the following steps:</span></span>
 
-- <span data-ttu-id="8d0de-108">Hitelattribútumok frissítése a vevők számára további információk megadásához hitelképességükről.</span><span class="sxs-lookup"><span data-stu-id="8d0de-108">Update credit attributes for customers to provide additional information about their credit worthiness.</span></span>
-- <span data-ttu-id="8d0de-109">Hitelkeretek létrehozása ügyefelekhez hitelkeret-kiigazítások használatával.</span><span class="sxs-lookup"><span data-stu-id="8d0de-109">Create credit limits for customers by using credit limit adjustments.</span></span>
-- <span data-ttu-id="8d0de-110">Ideiglenes hitelkeretek létrehozása ügyefelekhez hitelkeret-kiigazítások használatával.</span><span class="sxs-lookup"><span data-stu-id="8d0de-110">Create temporary credit limits for customers by using credit limit adjustments.</span></span> <span data-ttu-id="8d0de-111">Így ideiglenesen növelheti vagy csökkentheti a vevői hitelkereteket az üzleti szükségletek alapján.</span><span class="sxs-lookup"><span data-stu-id="8d0de-111">In this way, you can temporarily increase or decrease customer credit limits, based on business requirements.</span></span>
-- <span data-ttu-id="8d0de-112">A hitelkeretet befolyásoló adatok, például a biztosítással és a garanciával kapcsolatos információk hozzáadása.</span><span class="sxs-lookup"><span data-stu-id="8d0de-112">Add information that can affect the credit limit, such as information about insurance and guarantees.</span></span>
-- <span data-ttu-id="8d0de-113">Vevői hitelcsoportok létrehozása, amelyekkel a vevők összekapcsolhatók úgy, hogy egyetlen hitelkeretet osszanak meg egymással.</span><span class="sxs-lookup"><span data-stu-id="8d0de-113">Create customer credit groups that link customers together so that they share a single credit limit.</span></span>
-- <span data-ttu-id="8d0de-114">Kockázati pontszámok hozzárendelése a vevőkhöz, majd a pontszámok használatával hitelkereteket hozhat létre a vevőkhöz a hitelkeret-módosítások használatával.</span><span class="sxs-lookup"><span data-stu-id="8d0de-114">Assign risk scores to customers, and then use the scores to automatically generate credit limits for those customers through credit limit adjustments.</span></span>
-- <span data-ttu-id="8d0de-115">Létrehozhat zárolási szabályokat, amelyek egy vagy több feladási folyamat során várakoztatnak egy rendelést, olyan tényezők alapján, mint a kockázat, a fizetési feltételek, a hitelkeretek, a lejárt tartozások és felhasznált hitelkeret százaléka.</span><span class="sxs-lookup"><span data-stu-id="8d0de-115">Create blocking rules that put an order on hold during one or more posting processes, based on factors such as risk, payment terms, credit limits, overdue amounts, and the percentage of the credit limit that has been used.</span></span>
-- <span data-ttu-id="8d0de-116">A várakoztatott értékesítési rendelések listájának kezelése, a várakoztatási okok áttekintése, valamint a problémák megoldása.</span><span class="sxs-lookup"><span data-stu-id="8d0de-116">Manage a list of sales orders that are on hold, review the reasons for the hold, and mitigate issues.</span></span>
-- <span data-ttu-id="8d0de-117">Értékesítési rendelések felszabadítása, hogy a feladási folyamatban továbbhaladhassanak.</span><span class="sxs-lookup"><span data-stu-id="8d0de-117">Release sales orders so that they continue through the posting process.</span></span>
-- <span data-ttu-id="8d0de-118">Munkafolyamatot állíthat be a hitelkeret-módosítások és az értékesítési rendelés felszabadítások jóváhagyásának kezelésére.</span><span class="sxs-lookup"><span data-stu-id="8d0de-118">Set up a workflow to manage the approval of credit limit changes and sales order releases.</span></span>
+- <span data-ttu-id="b266a-108">Hitelattribútumok frissítése a vevők számára további információk megadásához hitelképességükről.</span><span class="sxs-lookup"><span data-stu-id="b266a-108">Update credit attributes for customers to provide additional information about their credit worthiness.</span></span>
+- <span data-ttu-id="b266a-109">Hitelkeretek létrehozása ügyefelekhez hitelkeret-kiigazítások használatával.</span><span class="sxs-lookup"><span data-stu-id="b266a-109">Create credit limits for customers by using credit limit adjustments.</span></span>
+- <span data-ttu-id="b266a-110">Ideiglenes hitelkeretek létrehozása ügyefelekhez hitelkeret-kiigazítások használatával.</span><span class="sxs-lookup"><span data-stu-id="b266a-110">Create temporary credit limits for customers by using credit limit adjustments.</span></span> <span data-ttu-id="b266a-111">Így ideiglenesen növelheti vagy csökkentheti a vevői hitelkereteket az üzleti szükségletek alapján.</span><span class="sxs-lookup"><span data-stu-id="b266a-111">In this way, you can temporarily increase or decrease customer credit limits, based on business requirements.</span></span>
+- <span data-ttu-id="b266a-112">A hitelkeretet befolyásoló adatok, például a biztosítással és a garanciával kapcsolatos információk hozzáadása.</span><span class="sxs-lookup"><span data-stu-id="b266a-112">Add information that can affect the credit limit, such as information about insurance and guarantees.</span></span>
+- <span data-ttu-id="b266a-113">Vevői hitelcsoportok létrehozása, amelyekkel a vevők összekapcsolhatók úgy, hogy egyetlen hitelkeretet osszanak meg egymással.</span><span class="sxs-lookup"><span data-stu-id="b266a-113">Create customer credit groups that link customers together so that they share a single credit limit.</span></span>
+- <span data-ttu-id="b266a-114">Kockázati pontszámok hozzárendelése a vevőkhöz, majd a pontszámok használatával hitelkereteket hozhat létre a vevőkhöz a hitelkeret-módosítások használatával.</span><span class="sxs-lookup"><span data-stu-id="b266a-114">Assign risk scores to customers, and then use the scores to automatically generate credit limits for those customers through credit limit adjustments.</span></span>
+- <span data-ttu-id="b266a-115">Létrehozhat zárolási szabályokat, amelyek egy vagy több feladási folyamat során várakoztatnak egy rendelést, olyan tényezők alapján, mint a kockázat, a fizetési feltételek, a hitelkeretek, a lejárt tartozások és felhasznált hitelkeret százaléka.</span><span class="sxs-lookup"><span data-stu-id="b266a-115">Create blocking rules that put an order on hold during one or more posting processes, based on factors such as risk, payment terms, credit limits, overdue amounts, and the percentage of the credit limit that has been used.</span></span>
+- <span data-ttu-id="b266a-116">A várakoztatott értékesítési rendelések listájának kezelése, a várakoztatási okok áttekintése, valamint a problémák megoldása.</span><span class="sxs-lookup"><span data-stu-id="b266a-116">Manage a list of sales orders that are on hold, review the reasons for the hold, and mitigate issues.</span></span>
+- <span data-ttu-id="b266a-117">Értékesítési rendelések felszabadítása, hogy a feladási folyamatban továbbhaladhassanak.</span><span class="sxs-lookup"><span data-stu-id="b266a-117">Release sales orders so that they continue through the posting process.</span></span>
+- <span data-ttu-id="b266a-118">Munkafolyamatot állíthat be a hitelkeret-módosítások és az értékesítési rendelés felszabadítások jóváhagyásának kezelésére.</span><span class="sxs-lookup"><span data-stu-id="b266a-118">Set up a workflow to manage the approval of credit limit changes and sales order releases.</span></span>
 
-## <a name="collections-management"></a><span data-ttu-id="8d0de-119">Beszedések kezelése</span><span class="sxs-lookup"><span data-stu-id="8d0de-119">Collections management</span></span>
+## <a name="collections-management"></a><span data-ttu-id="b266a-119">Beszedések kezelése</span><span class="sxs-lookup"><span data-stu-id="b266a-119">Collections management</span></span>
 
-<span data-ttu-id="8d0de-120">A kinnlevőségek kezelésével kapcsolatos adatokat egyetlen központi nézetből, a **Beszedések** oldalon kezelheti.</span><span class="sxs-lookup"><span data-stu-id="8d0de-120">The **Collections** page provides a centralized view where accounts receivable collections information is managed.</span></span> <span data-ttu-id="8d0de-121">A Beszedési vezetők ezt a központi nézetet használhatják a beszedések kezelésére.</span><span class="sxs-lookup"><span data-stu-id="8d0de-121">Collections managers can use this centralized view to manage collections.</span></span> <span data-ttu-id="8d0de-122">A pénzbehajtó elkezdheti a beszedési folyamatot az előre meghatározott beszedési feltételek használata által létrehozott vevői listából vagy a **Vevők** oldalon.</span><span class="sxs-lookup"><span data-stu-id="8d0de-122">Collections agents can begin the collections process either from customer lists that are generated by using predefined collection criteria or from the **Customers** page.</span></span>
+<span data-ttu-id="b266a-120">A kinnlevőségek kezelésével kapcsolatos adatokat egyetlen központi nézetből, a **Beszedések** oldalon kezelheti.</span><span class="sxs-lookup"><span data-stu-id="b266a-120">The **Collections** page provides a centralized view where accounts receivable collections information is managed.</span></span> <span data-ttu-id="b266a-121">A Beszedési vezetők ezt a központi nézetet használhatják a beszedések kezelésére.</span><span class="sxs-lookup"><span data-stu-id="b266a-121">Collections managers can use this centralized view to manage collections.</span></span> <span data-ttu-id="b266a-122">A pénzbehajtó elkezdheti a beszedési folyamatot az előre meghatározott beszedési feltételek használata által létrehozott vevői listából vagy a **Vevők** oldalon.</span><span class="sxs-lookup"><span data-stu-id="b266a-122">Collections agents can begin the collections process either from customer lists that are generated by using predefined collection criteria or from the **Customers** page.</span></span>
 
-<span data-ttu-id="8d0de-123">Mielőtt elkezdené beállítani a beszedéseket vagy elkezdene dolgozni velük, ismerje meg a következő fogalmakat:</span><span class="sxs-lookup"><span data-stu-id="8d0de-123">Before you start to set up or work with collections, you should understand the following concepts:</span></span>
+<span data-ttu-id="b266a-123">Mielőtt elkezdené beállítani a beszedéseket vagy elkezdene dolgozni velük, ismerje meg a következő fogalmakat:</span><span class="sxs-lookup"><span data-stu-id="b266a-123">Before you start to set up or work with collections, you should understand the following concepts:</span></span>
 
-- <span data-ttu-id="8d0de-124">Vevő korosítási pillanatképei egy adott időpontban tartalmazzák Korosított egyenleget.</span><span class="sxs-lookup"><span data-stu-id="8d0de-124">Customer aging snapshots contain aged balance information at a specific point in time.</span></span>
-- <span data-ttu-id="8d0de-125">Beszedések vevőgyűjtő segíthet a munkáját megszervezni.</span><span class="sxs-lookup"><span data-stu-id="8d0de-125">Collections customer pools help you organize your work.</span></span>
-- <span data-ttu-id="8d0de-126">A pénzbehajtók saját vevőgyűjtővel rendelkezhetnek.</span><span class="sxs-lookup"><span data-stu-id="8d0de-126">Collections agents can have their own customer pools.</span></span>
-- <span data-ttu-id="8d0de-127">A listalapok megszervezik a vevők összegyűjtését, a tevékenységeket és az eseteket.</span><span class="sxs-lookup"><span data-stu-id="8d0de-127">List pages organize collections customers, activities, and cases.</span></span>
-- <span data-ttu-id="8d0de-128">A vevővel kapcsolatos minden összegyűjtött információ rajta van a lapon, és itt végezhet műveleteket is.</span><span class="sxs-lookup"><span data-stu-id="8d0de-128">All collections information for a customer is on one page, and you can take action from that page.</span></span>
-- <span data-ttu-id="8d0de-129">Kamatok vagy díjak elengedése, visszaállítása vagy sztornírozása elvégezhető egy lépésben.</span><span class="sxs-lookup"><span data-stu-id="8d0de-129">Interest and fees can be waived, reinstated, or reversed in one step.</span></span>
-- <span data-ttu-id="8d0de-130">A leírási tranzakciók létrehozása elvégezhető egy lépésben.</span><span class="sxs-lookup"><span data-stu-id="8d0de-130">Write-off transactions can be created in one step.</span></span>
-- <span data-ttu-id="8d0de-131">Az Elégtelen fedezetű (NSF) fizetések feldolgozása egy lépésben elvégezhető.</span><span class="sxs-lookup"><span data-stu-id="8d0de-131">Not sufficient funds (NSF) payments can be processed in one step.</span></span>
+- <span data-ttu-id="b266a-124">Vevő korosítási pillanatképei egy adott időpontban tartalmazzák Korosított egyenleget.</span><span class="sxs-lookup"><span data-stu-id="b266a-124">Customer aging snapshots contain aged balance information at a specific point in time.</span></span>
+- <span data-ttu-id="b266a-125">Beszedések vevőgyűjtő segíthet a munkáját megszervezni.</span><span class="sxs-lookup"><span data-stu-id="b266a-125">Collections customer pools help you organize your work.</span></span>
+- <span data-ttu-id="b266a-126">A pénzbehajtók saját vevőgyűjtővel rendelkezhetnek.</span><span class="sxs-lookup"><span data-stu-id="b266a-126">Collections agents can have their own customer pools.</span></span>
+- <span data-ttu-id="b266a-127">A listalapok megszervezik a vevők összegyűjtését, a tevékenységeket és az eseteket.</span><span class="sxs-lookup"><span data-stu-id="b266a-127">List pages organize collections customers, activities, and cases.</span></span>
+- <span data-ttu-id="b266a-128">A vevővel kapcsolatos minden összegyűjtött információ rajta van a lapon, és itt végezhet műveleteket is.</span><span class="sxs-lookup"><span data-stu-id="b266a-128">All collections information for a customer is on one page, and you can take action from that page.</span></span>
+- <span data-ttu-id="b266a-129">Kamatok vagy díjak elengedése, visszaállítása vagy sztornírozása elvégezhető egy lépésben.</span><span class="sxs-lookup"><span data-stu-id="b266a-129">Interest and fees can be waived, reinstated, or reversed in one step.</span></span>
+- <span data-ttu-id="b266a-130">A leírási tranzakciók létrehozása elvégezhető egy lépésben.</span><span class="sxs-lookup"><span data-stu-id="b266a-130">Write-off transactions can be created in one step.</span></span>
+- <span data-ttu-id="b266a-131">Az Elégtelen fedezetű (NSF) fizetések feldolgozása egy lépésben elvégezhető.</span><span class="sxs-lookup"><span data-stu-id="b266a-131">Not sufficient funds (NSF) payments can be processed in one step.</span></span>
 
-<span data-ttu-id="8d0de-132">A fogalmak leírása a következő témakörben olvasható: [A beszedéskezelés kulcsfogalmai](./cm-collections-concepts.md).</span><span class="sxs-lookup"><span data-stu-id="8d0de-132">For descriptions of these concepts, see [Collections management key concepts](./cm-collections-concepts.md).</span></span>
+<span data-ttu-id="b266a-132">A fogalmak leírása a következő témakörben olvasható: [A beszedéskezelés kulcsfogalmai](./cm-collections-concepts.md).</span><span class="sxs-lookup"><span data-stu-id="b266a-132">For descriptions of these concepts, see [Collections management key concepts](./cm-collections-concepts.md).</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="8d0de-133">További erőforrások</span><span class="sxs-lookup"><span data-stu-id="8d0de-133">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="b266a-133">További erőforrások</span><span class="sxs-lookup"><span data-stu-id="b266a-133">Additional resources</span></span>
 
-[<span data-ttu-id="8d0de-134">Vásárlói hitelkezelési pereméterek beállítása</span><span class="sxs-lookup"><span data-stu-id="8d0de-134">Customer credit management parameters setup</span></span>](./cm-credit-mgmt-setup.md)
+[<span data-ttu-id="b266a-134">Vásárlói hitelkezelési pereméterek beállítása</span><span class="sxs-lookup"><span data-stu-id="b266a-134">Customer credit management parameters setup</span></span>](./cm-credit-mgmt-setup.md)
 
-[<span data-ttu-id="8d0de-135">Vásárlói hitelkezelési pereméterek beállításával kapcsolatos információk</span><span class="sxs-lookup"><span data-stu-id="8d0de-135">Customer credit management setup information</span></span>](./cm-setup-information.md)
+[<span data-ttu-id="b266a-135">Vásárlói hitelkezelési pereméterek beállításával kapcsolatos információk</span><span class="sxs-lookup"><span data-stu-id="b266a-135">Customer credit management setup information</span></span>](./cm-setup-information.md)
 
-[<span data-ttu-id="8d0de-136">Hitelkezelési információk hozzáadása egy ügyfélhez</span><span class="sxs-lookup"><span data-stu-id="8d0de-136">Add credit management information for a customer</span></span>](./cm-add-credit-mgmt-information-customer.md)
+[<span data-ttu-id="b266a-136">Hitelkezelési információk hozzáadása egy ügyfélhez</span><span class="sxs-lookup"><span data-stu-id="b266a-136">Add credit management information for a customer</span></span>](./cm-add-credit-mgmt-information-customer.md)
 
-[<span data-ttu-id="8d0de-137">Vevői hitelcsoportok</span><span class="sxs-lookup"><span data-stu-id="8d0de-137">Customer credit groups</span></span>](./cm-customer-credit-groups.md)
+[<span data-ttu-id="b266a-137">Vevői hitelcsoportok</span><span class="sxs-lookup"><span data-stu-id="b266a-137">Customer credit groups</span></span>](./cm-customer-credit-groups.md)
 
-[<span data-ttu-id="8d0de-138">Vevői hitelkeret helyesbítései</span><span class="sxs-lookup"><span data-stu-id="8d0de-138">Customer credit limit adjustments</span></span>](./cm-credit-limit-adjustments.md)
+[<span data-ttu-id="b266a-138">Vevői hitelkeret helyesbítései</span><span class="sxs-lookup"><span data-stu-id="b266a-138">Customer credit limit adjustments</span></span>](./cm-credit-limit-adjustments.md)
 
-[<span data-ttu-id="8d0de-139">Hitelkeret felfüggesztése értékesítési rendelésekhez</span><span class="sxs-lookup"><span data-stu-id="8d0de-139">Credit holds for sales orders</span></span>](./cm-sales-order-credit-holds.md)
+[<span data-ttu-id="b266a-139">Hitelkeret felfüggesztése értékesítési rendelésekhez</span><span class="sxs-lookup"><span data-stu-id="b266a-139">Credit holds for sales orders</span></span>](./cm-sales-order-credit-holds.md)
 
-[<span data-ttu-id="8d0de-140">Vevői hitelkockázatkezelés – időszakos feladatok</span><span class="sxs-lookup"><span data-stu-id="8d0de-140">Customer credit management periodic tasks</span></span>](./cm-periodic-tasks.md)
+[<span data-ttu-id="b266a-140">Vevői hitelkockázatkezelés – időszakos feladatok</span><span class="sxs-lookup"><span data-stu-id="b266a-140">Customer credit management periodic tasks</span></span>](./cm-periodic-tasks.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
