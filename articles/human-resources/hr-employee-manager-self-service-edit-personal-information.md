@@ -2,11 +2,9 @@
 title: Személyes információk szerkesztése
 description: Ez a cikk azt mutatja be, hogyan lehet módosítani a személyes adatokat az Alkalmazottak és a Vezetők önkiszolgáló szolgáltatásában.
 author: andreabichsel
-manager: tfehr
 ms.date: 03/19/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 ms.search.form: HRMParameters, EssWorkspace
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-03-19
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ed215c4577484269ddf5de20ad93417f8eef38d6
-ms.sourcegitcommit: 45d10d0c25b3ec585323709bb97ba1895b500429
+ms.openlocfilehash: 0a1cde80223ec3052adf58f34c344e004936b584
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "5502988"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5790836"
 ---
 # <a name="edit-personal-information"></a>Személyes információk szerkesztése
 

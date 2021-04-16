@@ -2,7 +2,6 @@
 title: Új vagy módosult elemek a Dynamics 365 Human Resources szolgáltatásban (2021. március 8.)
 description: Ez a témakör a Microsoft Dynamics 365 Human Resources új vagy módosított szolgáltatásait írja le a 2021. március 8-i kiadásban.
 author: marcelbf
-manager: tfehr
 ms.date: 03/08/2021
 ms.topic: article
 ms.prod: ''
@@ -18,12 +17,12 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c3cd69c86e8590951dd96da75d99bfee2855ac93
-ms.sourcegitcommit: 75b432ce9019c81253eb6bd865db905701e28a26
+ms.openlocfilehash: 7029f1dab1f10c2b237fafb7b5d8eeff9fa7a543
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "5579403"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5790284"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-march-08-2021"></a>Új vagy módosult elemek a Dynamics 365 Human Resources szolgáltatásban (2021. március 08.)
 

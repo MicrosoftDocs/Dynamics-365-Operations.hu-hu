@@ -2,11 +2,9 @@
 title: Személyzeti műveletekkel kapcsolatos GYIK
 description: Ez a cikk azokra a kérdésekre ad válaszokat, amelyek akkor merülhetnek fel, ha szervezete személyzeti műveleteket használ. A személyzeti műveletek olyan kiegészítő lépések, amelyeket bizonyos személyzeti feladatok végrehajtásakor kell elvégeznie.
 author: andreabichsel
-manager: tfehr
 ms.date: 06/16/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
 ms.reviewer: anbichse
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 5eee8855a5a6eda4f6c0ad926f9366121de3ee7d
-ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
+ms.openlocfilehash: 0fb24ff25ba59c5440684c457267d826d35b7ac4
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5467113"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5794493"
 ---
 # <a name="personnel-actions-faq"></a>Személyzeti műveletekkel kapcsolatos GYIK
 

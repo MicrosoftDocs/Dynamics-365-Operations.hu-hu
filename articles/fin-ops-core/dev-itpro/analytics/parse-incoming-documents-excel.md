@@ -2,7 +2,6 @@
 title: Bejövő dokumentumok elemzése Excel-formátumban
 description: Ez a témakör a bejövő Microsoft Excel-fájlok tartalmának elemzéséhez használt elektronikus jelentési (ER) formátumok tervezésével kapcsolatos információkat tartalmaz.
 author: NickSelin
-manager: AnnBe
 ms.date: 05/25/2018
 ms.topic: article
 ms.prod: ''
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 847b3309a3e0daf7b341c4ba4a58a8ea0902e61c
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 0c41a062d817307adb2889d3678764f1ea4066e2
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5564519"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5755180"
 ---
 # <a name="parse-incoming-documents-in-excel-format"></a>Bejövő dokumentumok elemzése Excel-formátumban
 

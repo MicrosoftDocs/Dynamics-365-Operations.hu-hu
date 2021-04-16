@@ -2,11 +2,9 @@
 title: Rendelés frissítése
 description: A Microsoft Dynamics 365 Human Resources teljes mértékben „szoftver szolgáltatásként” (SaaS) elven működik, amely folyamatos, érintés nélküli szolgáltatásfrissítéseket és platformmódosításokat tartalmaz.
 author: andreabichsel
-manager: tfehr
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: SystemAdministrationWorkspaceForm
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-27
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 27561bfd9cb4f115cc507954c837ea93f9c93b72
-ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
+ms.openlocfilehash: 4069e369b1a9f15372d1e29e3809198b90b12c7e
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5466832"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5791533"
 ---
 # <a name="update-process"></a>Rendelés frissítése
 
@@ -58,14 +56,14 @@ Szükség esetén a Human Resources szolgáltatás a következő típusú javít
 
 A kiadások felülvizsgálata, tesztelése és ellenőrzése belső környezetben történik. A buildek jóváhagyása után következik a termelési környezetben történő felhasználásuk.
 
-## <a name="release-cadence-exceptions-in-2020"></a>Kiadási ütemezést érintő kivételek 2020-ban
+## <a name="release-cadence-exceptions-in-2021"></a>Kiadási ütemezést érintő kivételek 2021-ban
 
-A munkaszüneti napok figyelembe vételéhez a 2020. novemberi és decemberi kiadások ütemezése a következő:
+A munkaszüneti napok figyelembe vételéhez a 2021. novemberi és decemberi kiadások ütemezése a következő:
 
-- Novemberi kiadás: november 2. – november 13.
-- Decemberi kiadás: November 30. – December 11.
+- Novemberi kiadás: november 1. – november 14.
+- Decemberi kiadás: November 29. – December 12.
  
-A kéthetes kiadási ütemezés a szokásos módon fog folytatódni 2021. január 11-én.
+A kéthetes kiadási ütemezés a szokásos módon fog folytatódni 2022. január 10-én.
 
 ## <a name="communications"></a>Tájékoztatás
 
