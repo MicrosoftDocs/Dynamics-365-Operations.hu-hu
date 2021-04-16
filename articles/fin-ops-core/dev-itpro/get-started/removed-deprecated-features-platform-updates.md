@@ -2,7 +2,6 @@
 title: Eltávolított vagy elavult Platform-funkciók
 description: Ez a témakör azokat a funkciókat ismerteti, amelyek el lettek távolítva a platformfrissítésekben a Finance and Operations alkalmazásokból vagy az eltávolításuk be van tervezve.
 author: sericks007
-manager: AnnBe
 ms.date: 02/16/2021
 ms.topic: article
 ms.prod: ''
@@ -13,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: f363b122e30990f5b36e69fd8fe271bdc15e2e79
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: ac3b5274aaea2e267685e80d051c81489ece50eb
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5563994"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5814320"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Eltávolított vagy elavult Platform-funkciók
 
@@ -37,7 +36,7 @@ A Finance and Operations alkalmazások objektumaival kapcsolatban a [Technikai r
 
 ### <a name="batch-job-to-handle-sql-index-defragmentation"></a>Kötegelt feladat az SQL-index töredezettségmentesítésének kezeléséhez
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | A szolgáltatás el lett távolítva, hogy csökkentse indexkezelés vevők általi üzemeltetéséből, figyeléséből és fenntartásából származó járulékos költségeket. |
 | **Felváltotta másik szolgáltatás?**   | A továbbiakban az index karbantartását a Microsoft szolgáltatásai végzik. Ez a folyamat folyamatosan, a felhasználói terhelések befolyásolása nélkül történik. |
@@ -48,12 +47,10 @@ A Finance and Operations alkalmazások objektumaival kapcsolatban a [Technikai r
 
 ## <a name="platform-updates-for-version-10017-of-finance-and-operations-apps"></a>Platform-frissítések az Finance and Operations alkalmazások 10.0.17 verziójához
 
-> [!IMPORTANT]
-> A 10.0.17-es verzió egy előnézeti kiadás részeként érhető el. A tartalom és a funkciók megváltozhatnak. Az előzetes kiadásokkal kapcsolatban további információkat az [Egyverziós szolgáltatásfrissítések GYIK](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/one-version) oldalon találhat.
 
 ### <a name="visual-studio-2015"></a>Visual Studio2015
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | A Visual Studio legújabb verzióinak támogatásához néhány módosítást be tenni az X++ Visual Studio kiterjesztések esetében. Ezek a változtatások nem kompatibilisek a Visual Studio 2015 megoldással. |
 | **Felváltotta másik szolgáltatás?**   | A Visual Studio 2017 váltja a Visual Studio 2015 verziót a telepített és szükséges verzióként. |
@@ -63,7 +60,7 @@ A Finance and Operations alkalmazások objektumaival kapcsolatban a [Technikai r
 
 ### <a name="user-avatar"></a>Felhasználó 
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | A navigációs sáv jobb oldalán látható felhasználó beolvasása a Dynamics 365 fejlécvezérlőben található API használatával történt, amely már elavult. |
 | **Felváltotta másik szolgáltatás?**   | A felhasználók a kezdőbetűiket ehelyett a navigációs sáv egy körében látják. Ugyanez a vizualizáció jelenleg fejlesztési gépeken is használatos. |
@@ -73,7 +70,7 @@ A Finance and Operations alkalmazások objektumaival kapcsolatban a [Technikai r
 
 ### <a name="enterprise-portal-ep-deprecation"></a>Enterprise Portal (EP) elavulása  
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | A Dynamics 2012 AX Enterprise Portal (EP) alkalmazással összefüggő metaadat-műtermékei elavultak, mert az EP soha nem volt támogatott a Finance and Operations alkalmazásokban. |
 | **Felváltotta másik szolgáltatás?**   | Nincs |
@@ -85,7 +82,7 @@ A Finance and Operations alkalmazások objektumaival kapcsolatban a [Technikai r
 
 ### <a name="internet-explorer-11-support-for-dynamics-365-is-deprecated"></a>Internet Explorer 11 támogatás a Dynamics 365-höz elavult
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | A 2020 decemberétől hatályos Microsoft Internet Explorer 11 támogatás az összes Dynamics 365 termékre elavulttá válik, ezért az Internet Explorer 11 nem lesz támogatott 2021. augusztus után.<br><br>Ez hatással lesz azokra, akik Dynamics 365 termékeket használnak, amelyeket a Internet Explorer 11 interfészen való használatra terveztek. 2021. augusztus után az Internet Explorer 11 nem lesz támogatott az ilyen Dynamics 365 termékek esetében. |
 | **Felváltotta másik szolgáltatás?**   | Azt ajánljuk, hogy a vevők térjenek át a Microsoft Edgere.|
@@ -96,7 +93,7 @@ A Finance and Operations alkalmazások objektumaival kapcsolatban a [Technikai r
 
 ### <a name="visual-studio-add-in-to-apply-metadata-hotfixes"></a>Visual Studio-bővítmény a metaadatok gyorsjavításának alkalmazásához
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | A metaadatok gyorsjavításai már nem támogatottak a [One Version](../../fin-ops/get-started/one-version.md) 8.1-es, 2018 júliusában bevezetett verziófrissítései esetében. |
 | **Felváltotta másik szolgáltatás?**   | Nem érhetők el az egyes metaadatokhoz tartozó gyorsjavítások a támogatott verziókhoz. Ezek helyett halmozott minőségi frissítésekre kerül sor. |
@@ -109,7 +106,7 @@ A Finance and Operations alkalmazások objektumaival kapcsolatban a [Technikai r
 
 ### <a name="online-users-page"></a>Online felhasználók oldala 
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | Ez egy régebbi lap, amely a korábbi ügyfél-/kiszolgálóarchitektúrához készült. A lapon található adatok nem mindig pontosak, ami zavaró és félrevezető lehet. |
 | **Felváltotta másik szolgáltatás?**   | Új oldalt fogunk biztosítani egy jövőbeli frissítésben.|
@@ -123,7 +120,7 @@ A Finance and Operations alkalmazások objektumaival kapcsolatban a [Technikai r
 
 ### <a name="custom-code-defined-in-ssrs-report-properties"></a>Az SSRS-jelentés tulajdonságai között definiált egyéni kód 
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | Az egyéni kód általában korlátozott kedvezményeket biztosít, a támogatásához viszont jelentős erőforrások és számítás szükséges. Az egyéni kódokat elsősorban a jelentések készítői használják, hogy nyilvános metódusokat hívjanak egyéni kódszerelvényekből. A felhőben tárolt szolgáltatás azonban nem támogatja az SSRS-jelentésekhez az egyéni szerelvényekre mutató hivatkozásokat. |
 | **Felváltotta másik szolgáltatás?**   | A jelentés szerzője dönthetnek úgy továbbra nyilvános .NET-API-kra hivatkoznak a szövegdobozban lévő kifejezésekből származó matematikai, konverziós és formátumműveletekhez. További információ: [Kód hozzáadása jelentéshez (SSRS)](https://docs.microsoft.comsql/reporting-services/report-design/add-code-to-a-report-ssrs?view=sql-server-ver15).  |
@@ -133,7 +130,7 @@ A Finance and Operations alkalmazások objektumaival kapcsolatban a [Technikai r
 
 ### <a name="upgrade-of-three-jquery-component-libraries"></a>Három jQuery-összetevő programkönyvtárának frissítése 
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | A program három jQuery- összetevőfüggvénytárat frissít biztonsági javítások és a pénznem karbantartása céljából.   
 | **Felváltotta másik szolgáltatás?**   | Az a következő könyvtárakat érinti: jQuery (3.5.0 és 2.1.4 verzió között ), jQuery UI (1.12.1 és 1.11.4 verzió között), jQuery qTip (3.0.3 és 2.2.1 verzió között). Áttelepítési útmutatót a jQuery online formában biztosítja.  |
@@ -143,7 +140,7 @@ A Finance and Operations alkalmazások objektumaival kapcsolatban a [Technikai r
 
 ### <a name="existing-grid-controlforcelegacygrid-api"></a>Meglévő rácsvezérlő/forceLegacyGrid() API
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | A meglévő rácsvezérlőt az új rácsvezérlő helyettesíti. |
 | **Felváltotta másik szolgáltatás?**   | Az [új rácsvezérlő](../..//fin-ops/get-started/grid-capabilities.md) |
@@ -153,7 +150,7 @@ A Finance and Operations alkalmazások objektumaival kapcsolatban a [Technikai r
 
 ### <a name="personalization-without-saved-views"></a>Mentett nézetek nélküli személyre szabás 
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | A személyre szabási alrendszer ki lett egészítve a mentett nézetek funkcióval, így nagyobb a teljesítménye, és további képességeket kínál. |
 | **Felváltotta másik szolgáltatás?**   | Mentett nézetek |
@@ -166,7 +163,7 @@ A Finance and Operations alkalmazások objektumaival kapcsolatban a [Technikai r
 
 ### <a name="grid-or-group-control-form-extensions-containing-invalid-field-references"></a>Érvénytelen mezők hivatkozásait tartalmazó rács vagy csoport vezérlő képernyő-kiterjesztések
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | A rács vagy csoport vezérlőelem adatcsoport-tulajdonsága automatikusan megjeleníti a mezőcsoport összes mezőjét. A kiterjesztéssel hozzáadott rács vagy csoport tartalmazhat olyan mezőket, amelyek már nincsenek definiálva a mezőcsoportban, vagy hiányoznak azok a mezők, amelyek meg vannak határozva a mezőcsoportban. Ez inkonzisztens működést okozhat futásidőben. A Finance and Operations alkalmazások 10.0.12 verzióihoz tartozó platformfrissítések most már fordítási *figyelmeztetésként* kategorizálják ezt a problémát. A hiba elhárításához nyissa meg a képernyő-kiterjesztést, és mentse.
 | **Felváltotta másik szolgáltatás?**   | Ezt a fordítói figyelmeztetést egy jövőbeli frissítés fordítói hibára fog lecserélni. |
@@ -178,7 +175,7 @@ A Finance and Operations alkalmazások objektumaival kapcsolatban a [Technikai r
 
 ### <a name="explicit-safe-lists-for-self-service-environments"></a>Explicit biztonságos lista az önkiszolgáló környezetek számára
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | Módosult az a folyamat, amely az IP-cím biztonságos listákba történő helyezésére vonatkozik. Az önkiszolgáló megoldás már nem támogatja az IP biztonságos listák használatát. |
 | **Felváltotta másik szolgáltatás?**   | További információ: [Azure Active Directory feltételez hozzáférés konfigurálása](https://docs.microsoft.com/appcenter/general/configuring-aad-conditional-access).|
@@ -188,7 +185,7 @@ A Finance and Operations alkalmazások objektumaival kapcsolatban a [Technikai r
 
 ### <a name="visual-studio-2015"></a>Visual Studio2015
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | A Visual Studio legújabb verzióinak támogatásához néhány módosítást be tenni az X++ Visual Studio kiterjesztések esetében. Ezek a változtatások nem kompatibilisek a Visual Studio 2015 megoldással. |
 | **Felváltotta másik szolgáltatás?**   | A Visual Studio 2017 váltja a Visual Studio 2015 verziót a telepített és szükséges verzióként. |
@@ -198,7 +195,7 @@ A Finance and Operations alkalmazások objektumaival kapcsolatban a [Technikai r
 
 ### <a name="field-groups-containing-invalid-field-references"></a>Érvénytelen mező hivatkozásokat tartalmazó mezőcsoportok
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | A tábla metaadatok definíciójában található mezőcsoportok olyan mezőhivatkozásokat tartalmazhatnak, amelyek nem érvényesek. Ezen mezőcsoportok telepítése esetén hibákat okozhatnak futásidőben a Financial Reporting és a Microsoft SQL Server Reporting Services (SSRS) szolgálatásokban. A 23-as platformfrissítés bevezetett egy fordítási *figyelmeztetést*, amely a metaadat-problémák kezelését teszi lehetővé. A Finance and Operations alkalmazások 10.0.11 verzióihoz tartozó platformfrissítések fordítási *hibaként* kategorizálják ezt a problémát.<p>Ezen hiba javításához kövesse az alábbi lépéseket.</p><ol><li>Távolítsa el az érvénytelen mezőhivatkozást a tábla a mezőcsoport-definíciójából.</li><li>Végezzen újrafordítást.</li><li>Győződjön meg arról, hogy minden hiba orvosolva lett.</li></ol> |
 | **Felváltotta másik szolgáltatás?**   | Ez a fordítóhiba véglegesen lecseréli a fordítói figyelmeztetését.  |
@@ -208,7 +205,7 @@ A Finance and Operations alkalmazások objektumaival kapcsolatban a [Technikai r
 
 ### <a name="isv-licenses-created-by-using-the-sha1-hashing-algorithm"></a>Az SHA1 kivonatolási algoritmussal létrehozott ISV-licencek
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | A független szoftvergyártói (ISV) licencek létrehozási folyamata módosult. További tájékoztatás: [Független szoftvergyártói (ISV) licencek](../dev-tools/isv-licensing.md#appendix-create-self-signed-certificates-for-test-purposes). |
 | **Felváltotta másik szolgáltatás?**   | Igen. Licencek létrehozása a Windows PowerShell használatával. |
@@ -219,7 +216,8 @@ A Finance and Operations alkalmazások objektumaival kapcsolatban a [Technikai r
 ## <a name="platform-update-32"></a>Platform update 32
 
 ### <a name="workflow-request-change-dialog-box-no-longer-includes-user-selection-drop-down-list"></a>A munkafolyamat-kérelem módosítási párbeszédpanele már nem tartalmaz felhasználói kiválasztást lehetővé tévő legördülő listát
-|   |  |
+
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | Ez biztonsági hiba volt, mert a módosítási kérelmet nem szándékolt felhasználó számára is lehetett elküldeni. Ez egy használhatósági probléma is volt, mivel a felhasználó rá volt kényszerítve, hogy meghatározza, hogy ki volt a kezdeményező, és manuálisan ki kellet jelölnie.  |
 | **Felváltotta másik szolgáltatás?**   | Nem |
@@ -228,7 +226,8 @@ A Finance and Operations alkalmazások objektumaival kapcsolatban a [Technikai r
 | **Állapot**                         | A felhasználó kiválasztása legördülő lista el lett távolítva a 32-es platformfrissítésben. A módosítási kérelmeket a program automatikusan elküldi a létrehozónak, a szándéknak megfelelően. A funkciókkal kapcsolatos további tudnivalókat lásd: [Munkafolyamat-jóváhagyási folyamatok műveletei](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/workflow-actions?toc=%2Fdynamics365%2Fcommerce%2Ftoc.json#request-change). |
 
 ### <a name="embedded-drill-through-links-are-no-longer-supported-in-paginated-documents-rendered-by-the-cloud-hosted-service"></a>A beágyazott részletező hivatkozások már nem támogatottak a felhőalapú szolgáltatások által megjelenített oldalszámmal ellátott dokumentumok esetében 
-|   |  |
+
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | A szolgáltatás által megjelenített, dokumentumokba ágyazott navigációs URL-címek bizalmas üzleti adatokat is tartalmazhatnak. Biztonsági óvintézkedésként megszüntetjük a dokumentumok beágyazott részletező hivatkozásainak támogatását a vevők adatainak további védelme érdekében. A felhasználók számára is előnyös a jobb teljesítményt, miközben interaktívan állítanak elő dokumentumokat a módosítás eredményeképpen.  |
 | **Felváltotta másik szolgáltatás?**   | Nincs |

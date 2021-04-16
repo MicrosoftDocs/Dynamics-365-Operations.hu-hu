@@ -2,11 +2,9 @@
 title: Eltávolított vagy elavult funkciók a Dynamics 365 Finance szolgáltatásban
 description: Ez a témakör azokat a funkciókat ismerteti, amelyek el lettek távolítva, vagy eltávolításuk be van tervezve a Dynamics 365 Finance alkalmazásban.
 author: roschlom
-manager: AnnBe
 ms.date: 02/08/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: roschlom
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 14428491383883c1fc2a8cdcd1975e1f1cb71b40
-ms.sourcegitcommit: e9d19f25e64cf4d1c1d07c8031a7081454a6f79e
+ms.openlocfilehash: 5a8f5dbc52eab78697de0d3a48d8cceb42c36540
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "5474063"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5836913"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Eltávolított vagy elavult funkciók a Dynamics 365 Finance szolgáltatásban
 
@@ -39,7 +37,7 @@ Ez a lista segít figyelembe venni az elavult és eltávolított szolgáltatáso
 
 ### <a name="lcs-repository-as-a-storage-option-for-electronic-reporting-configurations"></a>LCS-adattár tárolási beállításként Elektronikus jelentéskészítési konfigurációkhoz
 
-|   |  |
+| &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | Lecserélve az új Regulatory Configuration Service (RCS) globális adattárra |
 | **Felváltotta másik szolgáltatás?**   | Igen |
@@ -51,7 +49,7 @@ Ez a lista segít figyelembe venni az elavult és eltávolított szolgáltatáso
 
 ### <a name="vat-declaration-cz-and-control-statement-export-cz-electronic-reporting-formats-for-czech-republic"></a>Áfabevallás (CZ) és Ellenőrzési nyilatkozat exportálása (CZ) elektronikus jelentési formátumok a Cseh Köztársaság számára
 
-|   |  |
+| &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | Új formátumokra cserélve |
 | **Felváltotta másik szolgáltatás?**   | Igen |
@@ -61,7 +59,7 @@ Ez a lista segít figyelembe venni az elavult és eltávolított szolgáltatáso
 
 ### <a name="ledger-transaction-export-format-be-electronic-reporting-format-and-respective-ledger-transaction-export-be-model-for-belgium"></a>„Főkönyvi tranzakció exportálási formátuma (BE)” elektronikus jelentési formátum és a megfelelő „Főkönyvi tranzakció exportálása (BE)” modell Belgium számára
 
-|   |  |
+| &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | A „Standard vizsgálati fájl (SAF-T)” modellt tartalmazó új formátum váltotta fel.  |
 | **Felváltotta másik szolgáltatás?**   | Igen |
@@ -71,7 +69,7 @@ Ez a lista segít figyelembe venni az elavult és eltávolított szolgáltatáso
 
 ### <a name="vat-100-report-for-the-united-kingdom-in-ssrs-format"></a>„VAT 100” jelentés Egyesült Királyság-beli SSRS formátum
 
-|   |  |
+| &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | Új ER formátummal helyettesítve – „Áfabevallás Excel (UK)” formátum az „Áfabevallási modell” alatt.  |
 | **Felváltotta másik szolgáltatás?**   | Igen |
@@ -83,7 +81,7 @@ Ez a lista segít figyelembe venni az elavult és eltávolított szolgáltatáso
 
 ### <a name="internet-explorer-11-support-for-dynamics-365-is-deprecated"></a>Internet Explorer 11 támogatás a Dynamics 365-höz elavult
 
-|   |  |
+| &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | A 2020 decemberétől hatályos Microsoft Internet Explorer 11 támogatás az összes Dynamics 365 termékre elavulttá válik, ezért az Internet Explorer 11 nem lesz támogatott 2021. augusztus után.<br><br>Ez hatással lesz azokra, akik Dynamics 365 termékeket használnak, amelyeket a Internet Explorer 11 interfészen való használatra terveztek. 2021. augusztus után az Internet Explorer 11 nem lesz támogatott az ilyen Dynamics 365 termékek esetében. |
 | **Felváltotta másik szolgáltatás?**   | Azt ajánljuk, hogy a vevők térjenek át a Microsoft Edgere.|
@@ -95,7 +93,7 @@ Ez a lista segít figyelembe venni az elavult és eltávolított szolgáltatáso
 
 ### <a name="polish-ssrs-reports-sales-vat-register-purchase-vat-register-eu-summary-vat-register--feature-reference-pl-00014"></a>Lengyel SSRS-jelentések: Kimeneti áfajegyzék, Beszerzési áfajegyzék, EU összesítő áfajegyzék – Funkcióhivatkozás PL-00014
 
-|   |  |
+| &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | Jogi okból nem szükséges.  |
 | **Felváltotta másik szolgáltatás?**   | Igen (Az alapértelmezett ellenőrzési fájlok Excel-formátumban, áfabevallással-JPK_VDEK) |
@@ -107,7 +105,7 @@ Ez a lista segít figyelembe venni az elavult és eltávolított szolgáltatáso
 
 ### <a name="norwegian-standard-main-accounts"></a>Norvég standard főszámlák
 
-|   |  |
+| &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | Újratervezés  |
 | **Felváltotta másik szolgáltatás?**   | Igen (ER-formátumú alkalmazás-specifikus paraméterekkel felülírva) |
@@ -118,7 +116,8 @@ Ez a lista segít figyelembe venni az elavult és eltávolított szolgáltatáso
 ## <a name="features-removed-or-deprecated-in-the-finance-1007-release"></a>Eltávolított vagy elavult szolgáltatások a Finance 10.0.7 kiadásában
 
 ### <a name="workflow-request-change-dialog-box-no-longer-includes-user-selection-drop-down-list"></a>A munkafolyamat-kérelem módosítási párbeszédpanele már nem tartalmaz felhasználói kiválasztást lehetővé tévő legördülő listát
-|   |  |
+
+| &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | A csoportfiók kiválasztásához tartozó funkció módosult.  |
 | **Felváltotta másik szolgáltatás?**   | Igen |

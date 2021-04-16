@@ -2,11 +2,9 @@
 title: Fordított költségmechanizmus az adó/GST sémához
 description: A cikk azt tekinti át, hogyan állítható be fordított áfa az európai országokhoz, Szaúd-Arábiához és Szingapúrhoz.
 author: epodkolz
-manager: AnnBe
 ms.date: 10/05/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -14,12 +12,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epodkolz
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 007fab0594c443a3060d6b6640b032ec270f5298
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: b59be8b395826914e8196009c339c2ced5a4debf
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5236247"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5818306"
 ---
 # <a name="reverse-charge-mechanism-for-vatgst-scheme"></a>Fordított költségmechanizmus az adó/GST sémához
 

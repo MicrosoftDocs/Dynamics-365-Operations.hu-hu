@@ -2,11 +2,9 @@
 title: Átmeneti helyesbítési naplóbejegyzések feladása az Eszközlízingben
 description: Ez a témakör azokat a funkciókat ismerteti, amelyek lehetővé teszik a lízingportfólió átváltását az új lízingkönyvelési standardokra, a Könyvelési standardok kodifikációs témakör 842-re (ASC 842) és a Nemzetközi pénzügyi jelentési standard 16-ra (IFRS 16).
 author: moaamer
-manager: Ann Beebe
 ms.date: 10/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 7ed62f52753a6697a7547ada0317041669cf3506
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: ea61a0d6e30695a2ef6b93529fcf3d21882c9cd2
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5207205"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5819770"
 ---
 # <a name="post-transition-adjustment-journal-entries-in-asset-leasing"></a>Átmeneti helyesbítési naplóbejegyzések feladása az Eszközlízingben
 

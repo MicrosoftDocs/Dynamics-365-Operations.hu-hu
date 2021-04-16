@@ -1,12 +1,10 @@
 ---
-title: Első lépések a mexikói elektronikus számlázásbővítménnyel
-description: Ez a témakör olyan információkat tartalmaz, amelyek bemutatják az Első lépéseket a mexikói elektronikus számlázásbővítmény Microsoft Dynamics 365 Finance és Dynamics 365 Supply Chain Management szolgáltatásban való használatát.
+title: Első lépések a Mexikóra vonatkozó elektronikus számlázás használata során
+description: Ez a témakör olyan információkat tartalmaz, amelyek bemutatják a mexikói Elektronikus számlázással kapcsolatos első lépéseket.
 author: gionoder
-manager: AnnBe
 ms.date: 09/22/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,25 +15,25 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: ec7417d44a7c2aa413a9cda75996c153727632dd
-ms.sourcegitcommit: 543772ee97efe215cf6f2ec6e092cc1568919f20
+ms.openlocfilehash: 2f5dd1d6bc520c9f5349c77dfcabdf2d538881ce
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "5592646"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5840052"
 ---
-# <a name="get-started-with-the-electronic-invoicing-add-on-for-mexico"></a>Első lépések a mexikói elektronikus számlázásbővítménnyel
+# <a name="get-started-with-electronic-invoicing-for-mexico"></a>Első lépések a Mexikóra vonatkozó elektronikus számlázás használata során
 
 [!include [banner](../includes/banner.md)]
 
 > [!IMPORTANT]
-> Előfordulhat, hogy a Mexikói elektronikus számlázásbővítmény jelenleg nem támogatja a CFDI dokumentumban elérhető összes funkciót, valamint a Microsoft Dynamics 365 Finance vagy Dynamics 365 Supply Chain Management szolgáltatással kapcsolatos beépített integrációt.
+> Előfordulhat, hogy a Mexikói elektronikus számlázás jelenleg nem támogatja a CFDI dokumentumban elérhető összes funkciót, valamint a Microsoft Dynamics 365 Finance vagy Dynamics 365 Supply Chain Management szolgáltatással kapcsolatos beépített integrációt.
 
-Ez a témakör olyan információkat tartalmaz, amelyek bemutatják a mexikói elektronikus számlázásbővítménnyel kapcsolatos első lépéseket. Végigvezeti a Regulatory Configuration Services (RCS) és a Finance szolgáltatásban található ország-függő konfigurációs lépéseken. Ezenkívül végigvezeti azokon a lépéseken, amelyeket a CFDI a szolgáltatáson keresztül történő elküldése érdekében, a Finance szolgáltatásban követnie kell, valamint bemutatja, hogyan kell áttekinteni a feldolgozási eredményeket és a CFDI-számlák állapotát.
+Ez a témakör olyan információkat tartalmaz, amelyek bemutatják a mexikói Elektronikus számlázással kapcsolatos első lépéseket. Végigvezeti a Regulatory Configuration Services (RCS) és a Finance szolgáltatásban található ország-függő konfigurációs lépéseken. Ezenkívül végigvezeti azokon a lépéseken, amelyeket a CFDI a szolgáltatáson keresztül történő elküldése érdekében, a Finance szolgáltatásban követnie kell, valamint bemutatja, hogyan kell áttekinteni a feldolgozási eredményeket és a CFDI-számlák állapotát.
 
 ## <a name="prerequisites"></a>Előfeltételek
 
-A témakör lépéseinek végrehajtása előtt végre kell hajtania az [Első lépések az Elektronikus számlázásbővítménnyel](e-invoicing-get-started.md) részben található lépéseket.
+A témakör lépéseinek végrehajtása előtt végre kell hajtania az [Első lépések az Elektronikus számlázással](e-invoicing-get-started.md) részben található lépéseket.
 
 ## <a name="rcs-setup"></a>RCS beállítása
 
@@ -47,7 +45,7 @@ Az RCS beállítása során a következő feladatokat kell elvégeznie:
 4. Tegye közzé az e-számlázási funkciót a CFDI-számlákhoz.
 
 > [!NOTE]
-> „Az e-számlázás funkció” annak az erőforrásnak az általános neve, amely az Elektronikus számlázási bővítmény kiszolgáló felhasználásához van konfigurálva és közzétéve. Ebben az esetben a CFDI-számlák (MX) számítanak annak az e-számlázási funkciónak, amelyet be fog állítani.
+> „Az e-számlázás funkció” annak az erőforrásnak az általános neve, amely az Elektronikus számlázási kiszolgáló felhasználásához van konfigurálva és közzétéve. Ebben az esetben a CFDI-számlák (MX) számítanak annak az e-számlázási funkciónak, amelyet be fog állítani.
 
 ## <a name="import-the-e-invoicing-feature"></a>Az e-számlázási funkció importálása
 
@@ -153,9 +151,9 @@ A CFDI-számla érvénytelenítésre való beküldéséhez az **Érvénytelenít
 
 ![Az e-számlázási funkció állapotának módosítása](media/e-Invoicing-services-get-started-MEX-Change-status-of-e-Invoicing-feature.png)
 
-## <a name="set-up-electronic-invoicing-add-on-integration-in-finance"></a>Az Elektronikus számlázásbővítmény integrációjának beállítása a Finance szolgáltatásban
+## <a name="set-up-electronic-invoicing--integration-in-finance"></a>Az Elektronikus számlázás integrációjának beállítása a Finance szolgáltatásban
 
-Az Elektronikus számlázásbővítmény Finance szolgáltatásban történő beállításához a következő feladatokat kell elvégeznie:
+Az Elektronikus számlázás Finance szolgáltatásban történő beállításához a következő feladatokat kell elvégeznie:
 
 1. Importálja az ER-adatmodellt, az ER-adatmodell-leképezést, valamint a CFDI-számlákhoz szükséges formátumokat.
 2. A CFDI-számlák frissítéséhez szükséges választípusok konfigurálása. Ezek a választípusok a jogosult minősítésszolgáltató (PAC) kiszolgáló válaszához használatosak.
@@ -206,7 +204,7 @@ Az Elektronikus számlázásbővítmény Finance szolgáltatásban történő be
 
 ## <a name="process-electronic-invoices-in-finance"></a>Elektronikus számlák feldolgozása a Finance szolgáltatásban 
 
-A CFDI-számlák Finance szolgáltatásban lévő Elektronikus számlázásbővítményen keresztül történő feldolgozásakor a következő feladatokat lehet végrehajtani:
+A CFDI-számlák Finance szolgáltatásban lévő Elektronikus számlázáson keresztül történő feldolgozásakor a következő feladatokat lehet végrehajtani:
 
 - CFDI-számlák beküldése.
 - A beküldési végrehajtási naplók megtekintése.
@@ -214,7 +212,7 @@ A CFDI-számlák Finance szolgáltatásban lévő Elektronikus számlázásbőv�
 
 ### <a name="submit-cfdi-invoices"></a>CFDI-számlák beküldése
 
-A **Konfigurálható elektronikus számlázásbővítmény integrációja** funkció bekapcsolását követően a CFDI-számlák küldéséhez szükséges **Elektronikus számlák exportálása/importálása** folyamat (**Kinnlevőségek \> Számlák \> E-számlák**) már nem használható. Ezt felváltotta egy új, **Elektronikus dokumentumok beküldése** nevű folyamat.
+A **Konfigurálható elektronikus számlázás integrációja** funkció bekapcsolását követően a CFDI-számlák küldéséhez szükséges **Elektronikus számlák exportálása/importálása** folyamat (**Kinnlevőségek \> Számlák \> E-számlák**) már nem használható. Ezt felváltotta egy új, **Elektronikus dokumentumok beküldése** nevű folyamat.
 
 > [!NOTE]
 > Az új **Elektronikus dokumentumok beküldése folyamat** használata előtt győződjön meg arról, hogy a mexikói e-számlákhoz szükséges beállítások el lettek végezve. További tájékoztatást a [CFDI-elrendezés 3.3-as verziója](https://docs.microsoft.com/dynamics365/finance/localizations/latam-mex-cfdi-3-3) részben talál.
@@ -226,7 +224,7 @@ A **Konfigurálható elektronikus számlázásbővítmény integrációja** funk
 ![CFDI-dokumentum beküldése](media/e-Invoicing-services-get-started-MEX-Submit-CFDI-document.png)
 
 > [!NOTE]
-> A dokumentum szolgáltatáson keresztüli beküldésének első kísérlete során a program rákérdez, hogy megerősíti-e a kapcsolatot az Elektronikus számlázásbővítménnyel. Válassza a **Kattintson az Elektronikus dokumentumbeküldési szolgáltatáshoz való csatlakozáshoz**.
+> A dokumentum szolgáltatáson keresztüli beküldésének első kísérlete során a program rákérdez, hogy megerősíti-e a kapcsolatot az Elektronikus számlázással. Válassza a **Kattintson az Elektronikus dokumentumbeküldési szolgáltatáshoz való csatlakozáshoz**.
 
 ### <a name="view-submission-logs"></a>Beküldési naplók megtekintése
 
@@ -234,7 +232,7 @@ Megtekintheti az beküldött dokumentumok beküldési naplóit, vagy csak egy ad
 
 #### <a name="view-all-submission-logs"></a>Az összes beküldési napló megtekintése
 
-A **Konfigurálható elektronikus számlázásbővítmény integráció** funkció bekapcsolása után egy új lap érhető el, amellyel nyomon követheti a dokumentum beküldési folyamatát. Ezen a lapon megtekintheti az összes beküldött dokumentum beküldési naplóját.
+A **Konfigurálható elektronikus számlázás integráció** funkció bekapcsolása után egy új lap érhető el, amellyel nyomon követheti a dokumentum beküldési folyamatát. Ezen a lapon megtekintheti az összes beküldött dokumentum beküldési naplóját.
 
 1. Menjen a **Szervezeti adminisztráció \> Időszakos \> Elektronikus dokumentumok \> Elektronikus dokumentumbeküldési napló** lehetőségre.
 2. A **Dokumentumtípus** mezőben válassza ki a **Vevői számlanapló** lehetőséget a szükséges elektronikus dokumentumok szűréséhez.
@@ -249,26 +247,26 @@ A beküldési naplókban lévő adatok három gyorslap között vannak felosztva
 
 - **Műveletek feldolgozása** – Ez a gyorslap azon végrehajtási naplót mutatja meg, amely az RCS-ben beállított funkcióverzióban konfigurált műveletekhez tartozik. Az **Állapot** oszlop azt jelzi, hogy a művelet futtatása sikeres volt-e.
 - **Műveletfájlok** – Ez a gyorslap a műveletek végrehajtása során létrehozott közbenső fájlokat jeleníti meg. A fájl letöltéséhez és megtekintéséhez válassza a **Megtekintés** lehetőséget.
-- **Műveletnapló feldolgozása** – Ez a gyorslap az Elektronikus számlázásbővítmény és a cél webszolgáltatás közötti kommunikáció eredményeit jeleníti meg. Azt is bemutatja, hogy mit küldött vissza a webszolgáltatásból a feldolgozás. A **Hibakód** oszlop az engedélyezés webszolgáltatása által visszaküldött visszajuttatási kódot jeleníti meg.
+- **Műveletnapló feldolgozása** – Ez a gyorslap az Elektronikus számlázás és a cél webszolgáltatás közötti kommunikáció eredményeit jeleníti meg. Azt is bemutatja, hogy mit küldött vissza a webszolgáltatásból a feldolgozás. A **Hibakód** oszlop az engedélyezés webszolgáltatása által visszaküldött visszajuttatási kódot jeleníti meg.
 
 Amikor a beküldött CFDI-számla engedélyezve van, az állapota **Engedélyezve** értékre módosul.
 
 #### <a name="view-submission-logs-from-cfdi-invoices"></a>Tekintse meg a CFDI-számlákból származó beküldési naplókat
 
-A **Konfigurálható elektronikus számlázásbővítmény integrációja** funkció bekapcsolása után megtekintheti a CFDI-számlákból származó beküldési naplókat is.
+A **Konfigurálható elektronikus számlázás integrációja** funkció bekapcsolása után megtekintheti a CFDI-számlákból származó beküldési naplókat is.
 
 1. Menjen a **Kinnlevőségek \> Lekérdezések és jelentések \> CFDI (elektronikus számlák)** pontra.
-2. Válasszon egy olyan CFDI-számlát, amelyet a **Konfigurálható elektronikus számlázásbővítmény integrációja** funkció bekapcsolása után küldtek be.
+2. Válasszon egy olyan CFDI-számlát, amelyet a **Konfigurálható elektronikus számlázás integrációja** funkció bekapcsolása után küldtek be.
 3. A Művelet panel **Előzmények** lapján válassza az **Elektronikus dokumentumnapló** menüpontot.
 
 ![CFDI-számlákból származó beküldési naplók megtekintése](media/e-Invoicing-services-get-started-MEX-View-submission-log-from-CFDI-invoice.png)
 
 > [!NOTE]
-> Azon CFDI-számláknál, amelyeket a **Konfigurálható elektronikus számlázásbővítmény integrációja** funkció bekapcsolása előtt küldtek be, elérhető az **Előzmények** gomb. Azon CFDI-számláknál, amelyeket a **Konfigurálható elektronikus számlázásbővítmény integrációja** funkció bekapcsolása után küldtek be, nem elérhető az **Előzmények** gomb.
+> Azon CFDI-számláknál, amelyeket a **Konfigurálható elektronikus számlázás integrációja** funkció bekapcsolása előtt küldtek be, elérhető az **Előzmények** gomb. Azon CFDI-számláknál, amelyeket a **Konfigurálható elektronikus számlázás integrációja** funkció bekapcsolása után küldtek be, nem elérhető az **Előzmények** gomb.
 
 ### <a name="submit-cancellation-of-cfdi-invoices"></a>CFDI-számlák érvénytelenítésének beküldése
 
-A **Konfigurálható elektronikus számlázásbővítmény integrációja** funkció bekapcsolása után már nem használható a régi folyamat a CFDI-számlák érvénytelenítésére. Egy új érvénytelenítési folyamat váltja fel, amely az **Elektronikus dokumentum beküldési naplója** lapon lesz beágyazva.
+A **Konfigurálható elektronikus számlázás integrációja** funkció bekapcsolása után már nem használható a régi folyamat a CFDI-számlák érvénytelenítésére. Egy új érvénytelenítési folyamat váltja fel, amely az **Elektronikus dokumentum beküldési naplója** lapon lesz beágyazva.
 
 1. Menjen a **Kinnlevőségek \> Lekérdezések és jelentések \> CFDI (elektronikus számlák)** pontra.
 2. Ha a CFDI-számla **Jóváhagyva** állapotú, akkor válassza a **Funkciók \> CFDI érvénytelenítése** lehetőséget.
@@ -295,9 +293,9 @@ A **CFDI mexikói elektronikus számla (MX)** funkcióhoz korlátozott számú a
 
 ## <a name="additional-resources"></a>További erőforrások
 
-- [Elektronikus számlázásbővítmény – áttekintés](e-invoicing-service-overview.md)
-- [Első lépések az Elektronikus számlázásbővítménnyel](e-invoicing-get-started.md)
-- [Az Elektronikus számlázásbővítmény beállítása](e-invoicing-setup.md)
+- [Elektronikus számlázás áttekintése](e-invoicing-service-overview.md)
+- [Első lépések az elektronikus számlázási használata során](e-invoicing-get-started.md)
+- [Az elektronikus számlázás beállítása](e-invoicing-setup.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

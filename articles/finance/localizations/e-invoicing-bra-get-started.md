@@ -1,12 +1,10 @@
 ---
-title: Első lépések a brazil elektronikus számlázásbővítménnyel
-description: Ez a témakör olyan információkat tartalmaz, amelyek bemutatják az Első lépéseket a brazíliai elektronikus számlázásbővítmény Finance és Supply Chain Management szolgáltatásban való használatát.
+title: Első lépések az Brazíliára vonatkozó elektronikus számlázás használata során
+description: Ez a témakör olyan információkat tartalmaz, amelyek bemutatják az Első lépéseket a brazíliai elektronikus számlázás Finance és Supply Chain Management szolgáltatásban való használatát.
 author: gionoder
-manager: AnnBe
-ms.date: 03/12/2021
+ms.date: 03/29/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,29 +15,27 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: eaf9433ad2d9ccf3d3c5632d0f2d4fe772ff8bde
-ms.sourcegitcommit: 543772ee97efe215cf6f2ec6e092cc1568919f20
+ms.openlocfilehash: f8caaa6417365a131da0565cbc4a9f79425d0c7e
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "5592670"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5840268"
 ---
-# <a name="get-started-with-the-electronic-invoicing-add-on-for-brazil"></a>Első lépések a brazil elektronikus számlázásbővítménnyel 
+# <a name="get-started-with-electronic-invoicing-for-brazil"></a>Első lépések az Brazíliára vonatkozó elektronikus számlázás használata során 
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör bemutatja a Brazíliára vonatkozó Elektronikus számlázási bővítmény szolgáltatásfelügyeletének használatának első lépéseit. A témakör eljárásai végigvezetik a Regulatory Configuration Services (RCS) országfüggő konfigurációs lépésein, amelyek kiegészítik az [Első lépések az elektronikus számlázási bővítmény használata során](e-invoicing-get-started.md) részben leírt lépéseket.
+Ez a témakör olyan információkat tartalmaz, amelyek bemutatják a brazil Elektronikus számlázással kapcsolatos első lépéseket. Ez a témakör végigvezeti a Regulatory Configuration Services (RCS) országfüggő konfigurációs lépésein, amelyek kiegészítik az [Első lépések az elektronikus számlázás használata során](e-invoicing-get-started.md) témakörben leírt lépéseket.
 
 ## <a name="country-specific-configuration-for-brazilian-nf-e-br-electronic-invoicing-feature"></a>Országspecifikus konfiguráció a brazil NF-e (BR) elektronikus számlázási funkcióhoz
 
-A brazil NF-e (BR) brazil elektronikus számlázási funkció konfigurálásakor meghatározott lépéseket kell végrehajtani. A rendszer a konfigurációk néhány paraméterét az alapértelmezett értékekkel teszi közzé, így azok áttekintésére és frissítésére van szükség, hogy az üzleti műveletei számára megfelelőbb legyen.
+A brazil **NF-e (BR) elektronikus számlázási funkció** egyes paraméterei alapértelmezett értékekkel vannak közzétéve. Tekintse át és szükség esetén frissítse az értékeket, hogy jobban megfeleljen az üzleti műveleti igényeknek, mielőtt telepítene az elektronikus számlázási funkciót a szolgáltatási környezetbe.
 
-### <a name="prerequisites"></a>Előfeltételek
+Ez a témakör az **Országspecifikus konfiguráció elektronikus számlázáshoz funkció** szakaszt egészíti ki az [Első lépések az elektronikus számlázási bővítmény használata során](e-invoicing-get-started.md) részben.
 
-Mielőtt ennek a szakasznak a lépését befejezi, hozzon létre és kezdeményezzen egy brazil NF-e (BR) elektronikus számlázási funkciót a szervezete számára az **Elektronikus számlázási funkció létrehozása a szervezetszolgáltató keretében** témakörben leírtaknak megfelelően, amely az [Első lépések az elektronikus számlázási bővítmény használata során](e-invoicing-get-started.md) pontban található.
-
-1. RCS-ben a **Globalizációs funkció** munkaterületen a **Funkciók** szakaszban válassza ki az **Elektronikus számlázás bővítmény** csempét.
-2. Az **Elektronikus számlázás-bővítmény funkciók** oldalon ellenőrizze, hogy be van-e jelölve a létrehozott **Brazil NF-e (BR)** Elektronikus számlázási funkciója.
+1. Az RCS-ben a **Globalizációs funkció** munkaterületen a **Funkciók** szakaszban válassza ki az **Elektronikus számlázás** csempét.
+2. Az **Elektronikus számlázási funkciók** oldalon ellenőrizze, hogy be van-e jelölve a létrehozott **Brazil NF-e (BR)** Elektronikus számlázási funkciója.
 3. A **Verziók** lapon ellenőrizze, hogy a **Piszkozat** verzió ki van-e választva.
 4. A **Beállítások** lapon a rácson válassza a **Küldés**, majd a **Szerkesztés** lehetőséget.
 5. Válassza a **Műveletek** lap **Műveletek** mezőcsoportjában az **(Előzetes verzió) XML-dokumentum aláírása** műveletet.
@@ -49,18 +45,16 @@ Mielőtt ennek a szakasznak a lépését befejezi, hozzon létre és kezdeménye
 9. Szükség esetén az **Érték** mezőben ellenőrizze és frissítse az adott állam SEFAZ-dokumentációja által közzétett webszolgáltatások URL-címét, majd válassza a **Mentés** lehetőséget.
 10. Az **Alkalmazhatósági szabályok** lap **Alkalmazhatósági szabály beállítása** mezőcsoportban szükség szerint ellenőrizze és frissítse az **Állapot** mező feltételeit ahhoz az államra vonatkozóan, amelyre a webszolgáltatások URL-címe hivatkozik.
 11. Válassza a **Mentés** gombot, és zárja be az oldalt.
-12. Az alkalmazás beállításának konfigurálása az [Első lépések az elektronikus számlázási bővítmény használata során](e-invoicing-get-started.md) oldalon látható.
+12. Az Elektronikus számlázási funkció telepítését a Szolgáltatási környezetbe lásd: [Első lépések az elektronikus számlázási bővítmény használata során](e-invoicing-get-started.md).
 
 ## <a name="country-specific-configuration-of-application-setup-for-brazilian-nf-e-br-electronic-invoicing-feature"></a>Országspecifikus alkalmazásbeállítás konfigurációja a brazil NF-e (BR) elektronikus számlázási funkcióhoz
 
-A brazil NF-e (BR) brazil elektronikus számlázási funkció alkalmazásbeállításának konfigurációjakor meghatározott lépéseket kell végrehajtani. Végezze el ezeket a lépéseket az Elektronikus számlázási funkciónak az Elektronikus számlázási szolgáltatási környezetbe való telepítése előtt.
+Mielőtt telepítene egy alkalmazást, végezze el ezeket a lépéseket a Finance vagy a Supply Chain Management kapcsolt alkalmazás beállításához.
 
-### <a name="prerequisites"></a>Előfeltételek
+Ez a témakör az **Alkalmazás országspecifikus konfigurációjának beállítása** szakaszt egészíti ki az [Első lépések az elektronikus számlázási bővítmény használata során](e-invoicing-get-started.md) részben.
 
-Mielőtt ennek a szakasznak a lépését befejezi, hozzon létre és kezdeményezze egy brazil NF-e (BR) elektronikus számlázási funkció alkalmazásbeállításának konfigurációját **Az alkalmazás beállításának konfigurálása** témakörben leírtaknak megfelelően, amely az [Első lépések az elektronikus számlázási bővítmény használata során](e-invoicing-get-started.md) pontban található.
-
-1. RCS-ben a **Globalizációs funkció** munkaterületen a **Funkciók** szakaszban válassza ki az **Elektronikus számlázás bővítmény** csempét.
-2. Az **Elektronikus számlázás-bővítmény funkciók** oldalon ellenőrizze, hogy be van-e jelölve a **Brazil NF-e (BR)** Elektronikus számlázási funkciója.
+1. Az RCS-ben a **Globalizációs funkció** munkaterületen a **Funkciók** szakaszban válassza ki az **Elektronikus számlázás** csempét.
+2. Az **Elektronikus számlázás funkciók** oldalon ellenőrizze, hogy be van-e jelölve a **Brazil NF-e (BR)** Elektronikus számlázási funkciója.
 3. A **Verziók** lapon ellenőrizze, hogy a **Piszkozat** verzió ki van-e választva.
 4. A **Beállítások** lapon válassza ki az **Alkalmazásbeállítás** lehetőséget és a **Kapcsolódó alkalmazás** mezőben válassza ki azt az alkalmazást, ahová telepíteni szeretné.
 5. A **Tábla neve** mezőben ellenőrizze, hogy ki van-e választva a **Pénzügyi bizonylat fejléce** lehetőség.
@@ -71,18 +65,16 @@ Mielőtt ennek a szakasznak a lépését befejezi, hozzon létre és kezdeménye
 10. Válassza az **Új** lehetőséget és a **Válasz típusa** mezőbe írja be a "ResponseData" szót rögzített értékként, a **Leírás** mezőbe pedig a "Description" szót.
 11. A **Beküldés állapota** mezőben válassza a **Függőben** lehetőséget.
 12. A **Modell-leképezés** mezőben válassza a **Válaszadatok importálása** **(Előzetes verzió) NF-e válaszadatok importálási formátuma (BR)** lehetőséget, majd válassza a **Mentés** lehetőséget.
-13. Az Elektronikus számlázási funkció telepítését lásd: [Első lépések az elektronikus számlázási bővítmény használata során](e-invoicing-get-started.md).
+13. Az alkalmazásbeállítás Finance vagy Suppy Chain kapcsolódó alkalmazásba való telepítéséhez lásd: [Első lépések az elektronikus számlázásban](e-invoicing-get-started.md).
 
 ## <a name="country-specific-configuration-for-brazilian-nfs-e-abrasf-curitiba-br-electronic-invoicing-feature"></a>Országspecifikus konfiguráció a brazil NFS-e ABRASF Curitiba (BR) elektronikus számlázási funkcióhoz
 
-A brazil NF-e ABRASF Curitiba (BR) brazil elektronikus számlázási funkció konfigurálásakor meghatározott lépéseket kell végrehajtani. A rendszer a konfigurációk néhány paraméterét az alapértelmezett értékekkel teszi közzé, így azok áttekintésére és frissítésére van szükség, hogy az üzleti műveletei számára megfelelőbb legyen.
+A **brazil NFS-e ABRASF Curitiba (BR) elektronikus számlázási funkció** egyes paraméterei alapértelmezett értékekkel vannak közzétéve. Tekintse át és szükség esetén frissítse az értékeket, hogy jobban illeszkedjen az üzleti műveleti igényekhez, mielőtt telepítene az elektronikus számlázási funkciót a szolgáltatási környezetbe.
 
-### <a name="prerequisites"></a>Előfeltételek
+Ez a témakör az **Országspecifikus konfiguráció elektronikus számlázáshoz funkció** szakaszt egészíti ki az [Első lépések az elektronikus számlázási bővítmény használata során](e-invoicing-get-started.md) részben.
 
-Mielőtt ennek a szakasznak az eljárását befejezi, hozzon létre egy brazil NFS-e ABRASF Curitiba (BR) elektronikus számlázási funkciót a szervezetében. Ez az **Elektronikus számlázás konfigurálása** témakör [Első lépések az elektronikus számlázási bővítmény használata során](e-invoicing-get-started.md) részében található.
-
-1. RCS-ben a **Globalizációs funkció** munkaterületen a **Funkciók** szakaszban válassza ki az **Elektronikus számlázás bővítmény** csempét.
-2. Az **Elektronikus számlázás-bővítmény funkciók** oldalon ellenőrizze, hogy be van-e jelölve a létrehozott **Brazil NFS-e ABRASF Curitiba (BR)** Elektronikus számlázási funkciója.
+1. Az RCS-ben a **Globalizációs funkció** munkaterületen a **Funkciók** szakaszban válassza ki az **Elektronikus számlázás** csempét.
+2. Az **Elektronikus számlázás funkciók** oldalon ellenőrizze, hogy be van-e jelölve a létrehozott **Brazil NFS-e ABRASF Curitiba (BR)** Elektronikus számlázási funkciója.
 3. Ellenőrizze a **Verziók** lapon, hogy ki van-e választva a **Vázlat** verzió, és a **Beállítások** lap rácsán válassza a **Küldés** lehetőséget.
 4. Jelölje be a **Szerkesztés** lehetőséget, és a **Műveletek** mezőcsoport **Műveletek** lapján válassza az **(Előzetes verzió) XML-dokumentum aláírása** első előfordulását.
 5. A **Paraméterek** mezőcsoportban válassza ki a **Tanúsítvány neve** lehetőséget.
@@ -98,18 +90,16 @@ Mielőtt ennek a szakasznak az eljárását befejezi, hozzon létre egy brazil N
 15. A **Paraméterek** mezőcsoportban válassza ki az **URL-cím** paramétert.
 16. Szükség esetén az **Érték** mezőben ellenőrizze és frissítse Curitiba város adóhatósága által közzétett webszolgáltatások URL-címét.
 17. Válassza a **Mentés** gombot, majd zárja be az oldalt.
-18. Az alkalmazás beállításának konfigurálása az [Első lépések az elektronikus számlázási bővítmény használata során](e-invoicing-get-started.md) oldalon látható.
+18. Az Elektronikus számlázási funkció telepítését a Szolgáltatási környezetbe lásd: [Első lépések az elektronikus számlázási bővítmény használata során](e-invoicing-get-started.md).
 
 ## <a name="country-specific-configuration-of-application-setup-for-brazilian-nfs-e-abrasf-curitiba-br-electronic-invoicing-feature"></a>Alkalmazásbeállítás országspecifikus konfigurációja a brazil NFS-e ABRASF Curitiba (BR) elektronikus számlázási funkcióhoz
 
-A brazil NFS-e ABRASF Curitiba (BR) Elektronikus számlázási funkció alkalmazásbeállításának konfigurálásakor bizonyos lépéseket kell végrehajtania az Elektronikus számlázási funkciónak az Elektronikus számlázási szolgáltatási környezetbe való telepítése előtt.
+Mielőtt telepítene egy alkalmazást, végezze el ezeket a lépéseket a Finance vagy a Supply Chain Management kapcsolt alkalmazás beállításához.
 
-### <a name="prerequisites"></a>Előfeltételek
+Ez a témakör az **Alkalmazás országspecifikus konfigurációjának beállítása** szakaszt egészíti ki az [Első lépések az elektronikus számlázási bővítmény használata során](e-invoicing-get-started.md) részben.
 
-Mielőtt ennek a szakasznak a lépését befejezi, hozzon létre és kezdeményezze egy brazil NFS-e ABRASF Curitiba (BR) elektronikus számlázási funkció alkalmazásbeállításának konfigurációját **Az alkalmazás beállításának konfigurálása** részben leírtaknak megfelelően, amely az [Első lépések az elektronikus számlázási bővítmény használata során](e-invoicing-get-started.md) pontban található.
-
-1. RCS-ben a **Globalizációs funkció** munkaterületen a **Funkciók** szakaszban válassza ki az **Elektronikus számlázás bővítmény** csempét.
-2. Az **Elektronikus számlázás-bővítmény funkciók** oldalon ellenőrizze, hogy be van-e jelölve a **Brazil NFS-e ABRASF Curitiba (BR)** Elektronikus számlázási funkciója.
+1. Az RCS-ben a **Globalizációs funkció** munkaterületen a **Funkciók** szakaszban válassza ki az **Elektronikus számlázás** csempét.
+2. Az **Elektronikus számlázás funkciók** oldalon ellenőrizze, hogy be van-e jelölve a **Brazil NFS-e ABRASF Curitiba (BR)** Elektronikus számlázási funkciója.
 3. Ellenőrizze a **Verziók** lapon, hogy ki van-e választva a **Vázlat** verzió, és a **Beállítások** lapon válassza az **Alkalmazás beállítása** lehetőséget.
 4. Válassza ki a **Csatlakoztatott alkalmazás** mezőben azt az alkalmazást, ahová telepíteni szeretné.
 5. A **Tábla neve** mezőben ellenőrizze, hogy ki van-e választva a pénzügyi bizonylat fejléce.
@@ -123,7 +113,8 @@ Mielőtt ennek a szakasznak a lépését befejezi, hozzon létre és kezdeménye
 13. Válassza az **Új** lehetőséget és a **Válasz típusa** mezőbe írja be az "ABRASFCuritibaInquireResponse" szót rögzített értékként, a **Leírás** mezőbe pedig a "Description" szót.
 14. A **Beküldés állapota** mezőben válassza a **Függőben** lehetőséget.
 15. A **Modell-leképezés** mezőben válassza a **Válaszüzenet importálása** **(Előzetes verzió) NFS-e ABRASF Curitiba válaszüzenet importálása (BR)** lehetőséget.
-16. Válassza a **Mentés** lehetőséget, majd térjen vissza a következő témakörre: [Első lépések az elektronikus számlázási bővítmény használata során](e-invoicing-get-started.md) az elektronikus számlázási funkció telepítéséhez.
+16. Válassza a **Mentés** gombot, és zárja be az oldalt.
+17. Az alkalmazásbeállítás Finance vagy Suppy Chain kapcsolódó alkalmazásba való telepítéséhez lásd: [Első lépések az elektronikus számlázásban](e-invoicing-get-started.md).
 
 ## <a name="privacy-notice"></a>Adatvédelmi nyilatkozat
 Az **NF-e szövetségi – brazil elektronikus számla** és az **NFS-e – brazil szolgáltatás (város) elektronikus számla** funkcióinak engedélyezése korlátozott adatok küldését, többek között a szervezet adóregisztrációs azonosítóját is előírhatja. Ezek továbbítva lesznek az adóhatóság által kinevezett harmadik fél ügynökségekhez, az elektronikus számlák – kormányzati szervek webszolgáltatással való integrációhoz szükséges, előre meghatározott formátumban való – adott adóhatósághoz történő elküldése céljából. Rendszergazdaként engedélyezheti vagy kikapcsolhatja az **NF-e szövetségi – brazil elektronikus számla (BR)** és az **NFS-e – brazil szolgáltatás (város) elektronikus számla** funkciót. A következő lépések megmutatják ennek menetét: 
@@ -133,9 +124,9 @@ Az **NF-e szövetségi – brazil elektronikus számla** és az **NFS-e – braz
 
 ## <a name="additional-resources"></a>További erőforrások
 
-- [Elektronikus számlázási bővítmény áttekintése](e-invoicing-service-overview.md)
-- [Első lépések az elektronikus számlázási bővítményszolgáltatás adminisztrálása során](e-invoicing-get-started-service-administration.md)
-- [Első lépések az elektronikus számlázási bővítmény használata során](e-invoicing-get-started.md)
+- [Elektronikus számlázás áttekintése](e-invoicing-service-overview.md)
+- [Első lépések az elektronikus számlázási szolgáltatás adminisztrálása során](e-invoicing-get-started-service-administration.md)
+- [Első lépések az elektronikus számlázási használata során](e-invoicing-get-started.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

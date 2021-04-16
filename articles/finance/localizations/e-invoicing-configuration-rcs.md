@@ -1,12 +1,10 @@
 ---
-title: Az Elektronikus számlázási bővítmény konfigurálása a Regulatory Configuration Services (RCS) szolgáltatásban
-description: Ez a témakör bemutatja, hogy hogyan konfigurálhatja az Elektronikus számlázási bővítményt a Dynamics 365 Regulatory Configuration Services (RCS) szolgáltatásban.
+title: Elektronikus számlázás konfigurálása a Regulatory Configuration Services (RCS) megoldásban
+description: Ez a témakör bemutatja, hogy hogyan konfigurálhatja az Elektronikus számlázást a Dynamics 365 Regulatory Configuration Services (RCS) szolgáltatásban.
 author: gionoder
-manager: AnnBe
-ms.date: 01/28/2021
+ms.date: 03/29/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,34 +15,32 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 99fac9a42dc2b180c220612c66fe753d43e5bd7f
-ms.sourcegitcommit: 543772ee97efe215cf6f2ec6e092cc1568919f20
+ms.openlocfilehash: 9958091db4a3d7ce0b625e5adc8e2a6b37878618
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "5592622"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5840244"
 ---
-# <a name="configure-the-electronic-invoicing-add-on-in-regulatory-configuration-services-rcs"></a>Az Elektronikus számlázási bővítmény konfigurálása a Regulatory Configuration Services (RCS) szolgáltatásban
+# <a name="configure-electronic-invoicing-in-regulatory-configuration-services-rcs"></a>Elektronikus számlázás konfigurálása a Regulatory Configuration Services (RCS) megoldásban
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/banner.md)]
+Ez a témakör a Dynamics 365 Regulatory Configuration Services (RCS) Elektronikus számlázásnak konfigurációs lehetőségeiről nyújt tájékoztatást.
 
-Ez a témakör a Dynamics 365 Regulatory Configuration Services (RCS) Elektronikus számlázási bővítményének konfigurációs lehetőségeiről nyújt tájékoztatást.
-
-Az Elektronikus számlázási bővítmény konfigurációs lehetőségei révén segíti az elektronikus számlákra vonatkozó üzleti és jogi követelményeknek programozás nélkül való megfelelését. Az olyan helyzetekben pedig, amikor az elektronikus számlákat elektronikusan egy webes szolgáltatásnak jóvá kell hagynia, a konfigurációs képességek segítséget nyújtanak a webes szolgáltatásokkal történő üzenetváltásban, mindezt programozás nélkül.
+Az Elektronikus számlázás konfigurációs lehetőségei révén segíti az elektronikus számlákra vonatkozó üzleti és jogi követelményeknek programozás nélkül való megfelelését. Az olyan helyzetekben pedig, amikor az elektronikus számlákat elektronikusan egy webes szolgáltatásnak jóvá kell hagynia, a konfigurációs képességek segítséget nyújtanak a webes szolgáltatásokkal történő üzenetváltásban, mindezt programozás nélkül.
 
 ## <a name="electronic-reporting"></a>Elektronikus jelentés
 
-Az Elektronikus jelentéskészítés (ER) támogatja az Elektronikus számlázási bővítményt.
+Az Elektronikus jelentéskészítés (ER) támogatja az Elektronikus számlázást.
 
-Az adatmodell-hozzárendelések és -formátumok olyan, konfigurálható összetevők, amelyeket az ER modulon keresztül hoztak létre és tartanak karban, és az Elektronikus számlázási bővítményben használatosak. Az ER formátumtervező a fájlformátumok létrehozásához és karbantartásához használható eszköz. Az elektronikus számlázási funkciók konfigurálására használatos.
+Az adatmodell-hozzárendelések és -formátumok olyan, konfigurálható összetevők, amelyeket az ER modulon keresztül hoztak létre és tartanak karban, és az Elektronikus számlázásban használatosak. Az ER formátumtervező a fájlformátumok létrehozásához és karbantartásához használható eszköz. Az elektronikus számlázási funkciók konfigurálására használatos.
 
 További információkért lásd: [Elektronikus jelentés (ER) – áttekintés](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md).
 
 ## <a name="electronic-invoicing-features"></a>Elektronikus számlázási funkciók
 
-Az elektronikus számlázási funkciók felelősek az elektronikus számlák Elektronikus számlázási bővítményen keresztüli létrehozásáért. Beágyazzák a konfigurációs szabályokat, és felhasználják azokat a Microsoft Dynamics 365 Finance és a Dynamics 365 Supply Chain Management által az Elektronikus számlázási bővítménynek és az elektronikus számláknak küldött adatok feldolgozására.
+Az elektronikus számlázási funkciók felelősek az elektronikus számlák az Elektronikus számlázáson keresztüli létrehozásáért. Beágyazzák a konfigurációs szabályokat, és felhasználják azokat a Microsoft Dynamics 365 Finance és a Dynamics 365 Supply Chain Management által az Elektronikus számlázásnak és az elektronikus számláknak küldött adatok feldolgozására.
 
 Ez a funkció olyan eseteket is támogat, ahol meg kell adni a fájlformátum-specifikációknak való megfelelést, és a kimenet egy önálló elektronikus fájl. A legtöbb esetben az adóhatóság közzéteszi a fájlformátum-specifikációkat.
 
@@ -81,13 +77,13 @@ Az alábbi táblázat bemutatja az előnézetben jelenleg elérhető elektroniku
 
 Az elektronikus számlázás funkciói a konfigurálható összetevők következő csoportjaiból állnak:
 
-- **Formátumok** – A formátumok segítségével konfigurálhatja, hogy mit kell az Elektronikus számlázási bővítménynek generálnia, amikor egy elektronikus dokumentum elektronikus számlává válik. A formátumok közé tartozik az elektronikus számla formátumkonfigurációja, valamint a kérések és a válaszok küldésére használt fájlok és üzenetek formátuma, amikor egy külső webszolgáltatással való kommunikációra van szükség.
-- **Műveletek** – a Műveletek segítségével beállíthatja, hogy hogyan generálja az Elektronikus számlázási bővítmény a Finance and Supply Chain Management szolgáltatás által küldött elektronikus dokumentum átalakítását elektronikus számlává.
-- **Alkalmazhatósági szabályok** – az alkalmazhatósági szabályok segítségével konfigurálhatja azt a kontextust, amelyet az Elektronikus számlázási bővítménynek figyelembe kell vennie az elektronikus számlázási funkciók feldolgozásához.
-- **Változók** – a változók segítségével konfigurálhatja a konfigurációs logika felépítését. A változók egy adott művelet végrehajtásához értékbemenetkén is működhetnek. Arra is lehetőség van, hogy értékcsereként működjenek a Finance and Supply Chain Management és az Elektronikus számlázási bővítmény között.
-- **Elektronikusdokumentum-modell leképezése** – az elektronikus dokumentummodellek leképezése lehetővé teszi az ER modell-leképezés konfigurálását. A modell-leképezés meghatározza annak az absztrakt számlának az adatleképezését, amely elektronikus dokumentumok beküldése esetén integrálva van az Elektronikus számlázási bővítménybe.
+- **Formátumok** – A formátumok segítségével konfigurálhatja, hogy mit kell az Elektronikus számlázásnak generálnia, amikor egy elektronikus dokumentum elektronikus számlává válik. A formátumok közé tartozik az elektronikus számla formátumkonfigurációja, valamint a kérések és a válaszok küldésére használt fájlok és üzenetek formátuma, amikor egy külső webszolgáltatással való kommunikációra van szükség.
+- **Műveletek** – a Műveletek segítségével beállíthatja, hogy hogyan generálja az Elektronikus számlázás a Finance and Supply Chain Management szolgáltatás által küldött elektronikus dokumentum átalakítását elektronikus számlává.
+- **Alkalmazhatósági szabályok** – az alkalmazhatósági szabályok segítségével konfigurálhatja azt a kontextust, amelyet az Elektronikus számlázásnak figyelembe kell vennie az elektronikus számlázási funkciók feldolgozásához.
+- **Változók** – a változók segítségével konfigurálhatja a konfigurációs logika felépítését. A változók egy adott művelet végrehajtásához értékbemenetkén is működhetnek. Arra is lehetőség van, hogy értékcsereként működjenek a Finance and Supply Chain Management és az Elektronikus számlázás között.
+- **Elektronikusdokumentum-modell leképezése** – az elektronikus dokumentummodellek leképezése lehetővé teszi az ER modell-leképezés konfigurálását. A modell-leképezés meghatározza annak az absztrakt számlának az adatleképezését, amely elektronikus dokumentumok beküldése esetén integrálva van az Elektronikus számlázásba.
 - **Számla kontextusmodellje** – a számla kontextusmodellje segítségével konfigurálhatja az ER számla kontextusmodelljét, és megadhatja az elektronikus számlázási funkciók kontextusát.
-- **Választípusok** – a választípusok segítségével beállíthatja, hogy az Elektronikus számlázási bővítménynek mit kell frissítenie a Finance and Supply Chain Management modulban az elektronikus számlafeldolgozás eredményeként.
+- **Választípusok** – a választípusok segítségével beállíthatja, hogy az Elektronikus számlázásnak mit kell frissítenie a Finance and Supply Chain Management modulban az elektronikus számlafeldolgozás eredményeként.
 
 ### <a name="formats"></a>Formátumok
 
@@ -237,7 +233,7 @@ Az elektronikus számlázás funkcióverziói egy legfeljebb három állapotú �
 
 - **Piszkozat** – ha egy funkcióverzió ebben az állapotban van, szerkesztheti annak konfigurációs attribútumait és bármelyik műtermékét (például fájlformátum-konfigurációkat).
 - **Befejezés** – ha egy funkcióverzió ilyen állapotban van, azt már közzétették a szervezetéhez társított Globális adattárban. Ezután már nem szerkesztheti a funkcióverziót és egyik ER-összetevőt sem.
-- **Közzétéve** – ha egy funkcióverzió ilyen állapotban van, akkor azt közzétették az Elektronikus számlázási bővítményben. Ezután már nem szerkesztheti a funkcióverziót és egyik ER-összetevőt sem.
+- **Közzétéve** – ha egy funkcióverzió ilyen állapotban van, akkor azt közzétették az Elektronikus számlázásban. Ezután már nem szerkesztheti a funkcióverziót és egyik ER-összetevőt sem.
 
 ### <a name="feature-configurations"></a>Funkciókonfigurációk
 
@@ -266,14 +262,14 @@ Az alkalmazás beállítása révén beállíthatja az elektronikus számlázás
 
 Az RCS esetében a **Telepítés** parancs használatával tehet közzé elektronikus számlázási funkcióverziót. Válassza a **Telepítés** lehetőséget, majd válasszon a következő beállítások közül a telepítés célhelyének meghatározásához: 
 
-- **Szolgáltatási környezet** – ha a telepítés célja a szolgáltatási környezet, a rendszer közzéteszi az elektronikus számlázási funkcióverziót a szolgáltatási környezetben. Az Elektronikus számlázási bővítmény ezután készen áll a Finance and Supply Chain Management eszköz által küldött elektronikus dokumentumok fogadására és feldolgozására.
+- **Szolgáltatási környezet** – ha a telepítés célja a szolgáltatási környezet, a rendszer közzéteszi az elektronikus számlázási funkcióverziót a szolgáltatási környezetben. Az Elektronikus számlázás ezután készen áll a Finance and Supply Chain Management eszköz által küldött elektronikus dokumentumok fogadására és feldolgozására.
 - **Csatlakoztatott alkalmazás** – ha a telepítés célja a csatlakoztatott alkalmazás, akkor az alkalmazás beállítása által megadott konfiguráció a korábban társított Finance and Supply Chain Management-példányba lesz írva.
 
 Csak a **Befejezve** állapotú elektronikus számlázási funkcióverziókat lehet szolgáltatási környezetbe vagy csatlakoztatott alkalmazásba telepíteni.
 
 ### <a name="removing-feature-versions"></a>Funkcióverziók eltávolítása
 
-Az RCS-ben az **Eltávolítás** paranccsal távolíthat el egy adott elektronikus számlázási funkcióverziót a szolgáltatási környezetből az Elektronikus számlázási bővítményben.
+Az RCS-ben az **Eltávolítás** paranccsal távolíthat el egy adott elektronikus számlázási funkcióverziót a szolgáltatási környezetből az Elektronikus számlázásban.
 
 > [!IMPORTANT]
 > Az **Eltávolítás** parancs csak szolgáltatási környezetekben működik. Nem távolítja el az elektronikus számlázás funkcióverzióit a kapcsolódó alkalmazásokból.

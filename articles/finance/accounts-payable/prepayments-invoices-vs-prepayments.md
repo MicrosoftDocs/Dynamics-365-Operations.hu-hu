@@ -1,12 +1,10 @@
 ---
 title: Előlegszámlák és előlegek
-description: Ez a témakör leírásokat és összehasonlításokat tartalmaz a két módszerről, amelyeket a szervezetek használhatnak az előzetes kifizetésekhez (előlegek). Az egyik módszerben Ön létrehoz egy előlegszámlát, amely társítva van a beszerzési rendeléssel. A másik módszerben Ön előlegnapló-bizonylatokat hoz létre, naplóbejegyzések létrehozásával és azok előlegnapló-bizonylatnak jelölésével.
+description: Ez a témakör leírásokat és összehasonlításokat tartalmaz a két módszerről, amelyeket a szervezetek használhatnak az előzetes kifizetésekhez (előlegek).
 author: abruer
-manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, PurchTable
 audience: Application User
@@ -17,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c8e882cb2063133324005a8e4585daa1c6a0752b
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 64301ac540ce2e6e914b6b23668fddeb295ef84c
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5227474"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5827986"
 ---
 # <a name="prepayment-invoices-vs-prepayments"></a>Előlegszámlák és előlegek
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör leírásokat és összehasonlításokat tartalmaz a két módszerről, amelyeket a szervezetek használhatnak az előzetes kifizetésekhez (előlegek). Az egyik módszerben Ön létrehoz egy előlegszámlát, amely társítva van a beszerzési rendeléssel. A másik módszerben Ön előlegnapló-bizonylatokat hoz létre, naplóbejegyzések létrehozásával és azok előlegnapló-bizonylatnak jelölésével.
+Ez a témakör leírásokat és összehasonlításokat tartalmaz a két módszerről, amelyeket a szervezetek használhatnak az előzetes kifizetésekhez (előlegek). Az egyik módszer létrehoz egy előlegszámlát, amely társítva van egy beszerzési rendeléssel. A másik módszer előlegnapló-bizonylatokat hoz létre, naplóbejegyzések létrehozásával és azok előlegnapló-bizonylatnak jelölésével.
 
 Előfordulhat, hogy egyes szervezetek előlegeket (előzetes kifizetéseket) adnak ki szállítóknak árukért vagy szolgáltatásokért azok átvétele, illetve teljesítése előtt. Szállítói előlegek kiadására kétféle módszer használható. A kockázat minimálisra csökkentése érdekében az előleg beszerzési rendelésben való definiálásával nyomon követheti az előlegeket. Ehhez a módszerhez létre kell hoznia egy beszerzési rendeléshez társított előlegszámlát. A módszert előlegszámlázásnak nevezzük. Azok a szervezetek, amelyek nem kívánják az előlegeket ilyen szorosan nyomon követni vagy nem kapnak a szállítójuktól előlegszámlát, az előlegszámlázás módszere helyett használhatnak előlegnapló-bizonylatokat. Előlegnapló-bizonylatokat naplóbejegyzések létrehozásával és azok előlegnapló-bizonylatként való megjelölésével hozhat létre. Ezzel a módszerrel nem követhető, hogy mely szállítói előleg mely beszerzési rendelés alapján kerül kifizetésre. Azonban egy beszerzési rendelés alapján kiegyenlítésre jelölhet egy feladott előleget.
 
@@ -37,7 +35,7 @@ Előfordulhat, hogy egyes szervezetek előlegeket (előzetes kifizetéseket) adn
 | Előlegszámlázás                                                                | Előlegek                                                              |
 |-------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
 | Az előleg értéke meg van határozva a beszerzési rendelésen.                                    | Nincs meghatározva az előleg értéke a beszerzési rendelésen.                    |
-| Kulcs: Fel kell adni egy előlegszámlát és egy végleges számlát.                       | Nem kell feladni előlegszámlát.                                    |
+| Fel kell adni egy előlegszámlát és egy végleges számlát.                       | Nem kell feladni előlegszámlát.                                    |
 | Az előlegfizetési kötelezettség az előlegszámlát, nem pedig a kötelezettségek számláját terheli. | Az előlegfizetési kötelezettség a kötelezettségek számláját terheli.                  |
 | A folyamat során a szállítói egyenleg nem tükrözi az előleg értékét.     | A folyamat során a szállítói egyenleg tükrözi az előleg értékét. |
 | Az előlegszámlázás csak a Kötelezettségekben érhető el.                         | Az előlegek a Kötelezettségekben és a Kinnlevőségekben is elérhetők.    |
@@ -59,11 +57,41 @@ Az előlegszámlák gyakoriak az üzleti gyakorlatban. A szállítók azért ál
 1.  A beszerzési ügynök létrehozza, megerősíti, majd elküldi a beszerzési rendelést, amelyre vonatkozóan a szállító előleget igényelt. Az előleg értékét a megállapodás szerint a beszerzési rendelés definiálja.
 2.  A szállító elküld egy előlegszámlát.
 3.  A szállítókoordinátorhoz rögzíti az előlegszámlát a beszerzési rendelés alapján, majd az előlegszámla kifizetésre kerül.
-4.  Miután a szállító kézbesítette az árut vagy szolgáltatást és megtörtént a kapcsolódó szállítói számlák átvétele, a szállítókoordinátor alkalmazza a számla alapján már kifizetett előlegösszeget.
-5.  A szállítókoordinátor kifizeti és kiegyenlíti a számla fennmaradó összegét.
+4.  A szállító kifizetési kérelmet küld, amelyre szabványos szállítói számlaként hivatkozunk. Miután a szállító kézbesítette az árut vagy szolgáltatást és megtörtént a szabványos szállítói számlák átvétele, a szállítókoordinátor alkalmazza a szabványos számla alapján már kifizetett előlegösszeget.
+5.  A szállítókoordinátor kifizeti és kiegyenlíti a szabványos számla fennmaradó összegét.
 
+## <a name="set-up-parameters-to-enable-the-prepayment-invoicing-process"></a>Paraméterek beállítása az előlegszámlázási folyamat engedélyezéséhez
+Az előlegszámlát a **Készletkönyvelés** lap **Beszerzési rendelés** lapján kell definiálni (**Készletkezelés \> Beállítás \> Feladás \> Feladás**). Az előlegszámla az előlegszámla feladásakor frissül, általában terheléssel. Az előlegszámlán az egyenleg sztornírozva lesz, amikor az előlegszámlára alkalmazott szabványos számlát könyvelik. Ha az előlegszámlát nem egyenlíti ki egy kifizetésre, mielőtt az előlegszámlát a normál számlára alkalmazná, a könyvelt előlegszámláról származó könyvelési tételek sztornírozottak lesznek a normál számla könyvelésekor.
 
+Az ellentételező összegző kötelezettségek számlája a **Szállító könyvelési** profiljában van definiálva. Az alapértelmezett könyvelési profil meghatározásához kattintson a **Kötelezettségek \> Beállítás \> Kötelezettségek paraméterei \> Főkönyv és áfa lap \> Profil feladása előrefizetett szállítói számlával**.
 
+Az **Előlegfizetés alkalmazás házirendje** azt jelzi, hogy a rendszer automatikusan alkalmazza-e a kiegyenlített előlegszámlákat a manuálisan létrehozott végső számlára. Az adatbevitellel létrehozott számlák nem hivatkoznak az **Előleg alkalmazás házirendjére**. A kiegyenlített előlegszámlákat manuálisan kell alkalmazni az adatbevitel használatával létrehozott számlákra. A házirend meghatározásához válassza a **Kötelezettségek \> Beállítás \> Kötelezettségek paraméterei \> Főkönyv és áfa lap \> Előlegfizetés alkalmazási házirendje**. Ha az **Előlegfizetés alkalmazási házirend** mezője **Automatikus**, az előlegszámla automatikusan meg lesz jelölve kiegyenlítésre a végső számlával. Ha a mező **Értesítés** értékre van állítva, a végső számla létrehozásakor megjelenik egy vizuális jelzés, amely azt jelzi, hogy az előlegfizetési számla áll rendelkezésre alkalmazáshoz.
+
+## <a name="create-a-purchase-order-that-contains-prepayment-invoice-information"></a>Előlegfizetési számla adatait tartalmazó beszerzési rendelés létrehozása
+Amikor a szállító azt mondja, hogy a beszerzési rendelésen szereplő árukhoz és szolgáltatásokhoz előlegre van szükség, meg kell határoznia a kapcsolódó beszerzési rendeléshez tartozó előlegértéket. Ugrás a **Kötelezettségek \> Általános \> Beszerzési rendelések \> Összes beszerzési rendelés** elemre, és keresse meg a szállító beszerzési rendelését. A műveleti ablaktáblán válassza a **Beszerzés** lapot, és válassza ki az **Előlegfizetés** lehetőséget. Adja meg az előlegre vonatkozó információt, beleértve a leírást, az előleg értékét, hogy az előleg fix összeg vagy százalékos és az előleg kategória azonosítóját. 
+
+Ne feledje, hogy a beszerzési rendelésen több előlegfizetés-definíció nem engedélyezett. Ha több előleget kell engedélyeznie egy beszerzési rendelésen, az előlegszámla helyett a kifizetési naplóval adja fel a kifizetéseket.
+
+Az előleg eltávolítható a beszerzési rendelésből, kivéve, ha már kiegyenlített egy kifizetést a könyvelt előlegszámlával vagy a normál számlával szemben. Ha el szeretne távolítani egy előleginformációt a beszerzési rendelésből, válassza a **Kötelezettségek \> Általános \> Beszerzési rendelések \> Minden beszerzési rendelés** lehetőséget, és keresse meg a szállító beszerzési rendelését. A műveleti ablaktáblán válassza a **Beszerzés** lapot, és válassza ki az **Előleg eltávolítása** lehetőséget.
+
+## <a name="create-and-post-a-prepayment-invoice"></a>Előlegszámla létrehozása és feladása
+A szállító előlegszámlájának rögzítéséhez ugorjon a **Szállítói számla** lapra az **Előlegszámla** lehetőség kiválasztáséval a **Beszerzési rendelések** lapon (**Kötelezettségek \> Általános \> Beszerzési rendelések \> Minden beszerzési rendelés \> Számla lap \> Előlegszámla**). Az előlegszámlához tartozó információ megadása, többek között a számla számának megadása. Előlegszámla mennyisége nem módosítható. Ha a szállító a beszerzési rendelésen meghatározott előlegérték részleges összegét számlázta ki, frissítheti az egységárat a részleges értéknek megfelelően.
+
+Az előlegszámla feladásakor a szállítói egyenleg és az előlegszámla frissítve lesz. A beszerzési rendelésen szereplő előlegdefinícióhoz tartozó **Előleg alkalmazása** is frissítve lesz. Az alapértelmezett pénzügyidimenzió-bejegyzések a feladott előlegbizonylathoz a beszerzési rendelés fejlécinformációiból származnak.
+
+## <a name="post-and-settle-payments-for-the-prepayment-invoice"></a>Előlegszámla kifizetéseinek feladása és kiegyenlítése
+Ezután az előlegszámla kifizetése a történik a **Fizetési napló** lapon. A fizetési naplók eléréséhez kattintson a **Kötelezettségek \> Naplók \> Kifizetések \> Kifizetési napló** elemre . A kifizetés kiegyenlítésének az előlegszámlára történő feladása után a beszerzési rendelés **Fennmaradó alkalmazott előleg** értéke frissül.
+
+Az előlegszámlához tartozó standard számla feladása előtt sztornírhatja a kifizetés kiegyenlítését az előlegszámláról. Ugyanakkor, miután a standard számla alkalmazva lett az előlegszámlára, a kifizetés kiegyenlítése nem sztornírozható az előlegszámláról.
+
+## <a name="post-the-standard-vendor-invoice-for-the-purchase-order-and-apply-the-prepayment-invoice-to-the-standard-invoice"></a>A beszerzési rendelés szabványos szállítói számlájának feladása és az előlegszámla alkalmazása a normál számlára
+Rögzítse a szállítótól kapott standard számlát. Ennek a folyamatnak a részeként alkalmazhatja a kiegyenlített előlegszámlát a szállítói számlára, hogy a számla értéke csökkenjen a már kifizetett összeggel. Az előlegszámla alkalmazása a szállítói számlára biztosítja, hogy az előlegszámláról származó könyvelési tételek sztornírozva legyenek.
+
+## <a name="application-of-the-prepayment-invoice-after-posting-the-standard-invoice"></a>Az előlegszámla alkalmazása a standard számla feladása után
+Ha a szállítói számla feladásakor elfelejti alkalmazni az előleget a standard szállítói számlára, a kiegyenlített előleg a elérhető lesz alkalmazásra a szállító egyéb számláira a **Szállítók** oldalon (**Kintlévőségek \> Általános \> Szállítók \> Összes szállító \> Számla lap \> Alkalmazás**).
+
+## <a name="reversal-of-the-prepayment-application-process"></a>Az előleg alkalmazási folyamatának sztornírozása
+Ha egy előlegszámla alkalmazását egy normál számláról kell visszavonnia vagy sztorníroznia, válassza a **Szállítók** lap **Sztornírozás** műveletét (**Kötelezettségek \> Általános \> Szállítók \> Minden szállító \> Számla lap \> Sztornírozás**). Az előlegalkalmazás sztornírzása után alkalmazhatja az előleget egy másik normál számlára. 
 
 
 

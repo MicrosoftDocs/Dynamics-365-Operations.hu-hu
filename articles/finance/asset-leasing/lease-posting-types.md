@@ -2,11 +2,9 @@
 title: Lízingfeladási típusok
 description: Ez a témakör az eszközlízing-tranzakciókhoz használt feladási típusokat ismerteti.
 author: moaamer
-manager: Ann Beebe
 ms.date: 10/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 9b7d8c545c1addaa570d54855bbad6c576783007
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: ddc229f3ab8e048390f27503e2c6c26bd1a6f24f
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5229502"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5841141"
 ---
 # <a name="lease-posting-types"></a>Lízingfeladási típusok
 
@@ -90,15 +88,6 @@ A számla a ROU-eszköz elleneszköz-számlájához van társítva. Ezen a szám
 **Példa naplóbejegyzések:** Értékcsökkenés-elhatárolás<br>
 **Terhelés:** XXX értékcsökkenési költség<br>
 **Jóváírás:** XXX halmozott értékcsökkenés
-
-## <a name="retained-earnings"></a>Mérleg szerinti eredmény
-
-A számlához társított visszatartott keresetek. Ezt a számlát megterhelik vagy jóváírják egy átmeneti helyesbítési naplóbejegyzésben a teljes visszamenőleges módszerrel vagy az A kumulatív felzárkózási lehetőség módszerrel. Az eredeti ROU-eszköz és a lízingkötelezettség közötti különbözetet a halmozott értékcsökkenésre könyvelték el. Ritka esetekben a fenntartott bevételeket a lízing módosítása is érintheti, ha a lízing besorolása finanszírozásról működésire változik, hogy a ROU-eszközt felfelé vagy lefelé írja, hogy az egyenlő legyen a lízingkötelezettséggel.
-
-**Példa naplóbejegyzések:** Átmeneti kiigazítás (teljes visszamenőleges vagy kumulatív felzárkózási lehetőség A módszer)<br>
-**Terhelés:** XXX lízingkötelezettség<br>
-**Jóváírás:** XXX lízingeszköz<br>
-**Jóváírás:** XXX fenntartott bevételek
 
 ## <a name="variable-payment"></a>Változó fizetés
 

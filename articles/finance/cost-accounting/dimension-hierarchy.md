@@ -2,11 +2,9 @@
 title: Dimenzióhierarchia
 description: Ez a témakör tájékoztatást tartalmaz a dimenzióhierarchiákkal kapcsolatban. Dimenziókészlet-hierarchia segítségével határozza meg a jelentés szerkezetét, a költségirányelveket és a biztonsági beállításokat a költségkönyvelésben.
 author: AndersGirke
-manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CAMDimensionHierarchy,
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 2a2e48b15bedd25b685686fa18a91f30b600331c
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: fdf280031e2ad2356a1a2ef3bba75d1f74c8e4de
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5217386"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5810174"
 ---
 # <a name="dimension-hierarchy"></a>Dimenzióhierarchia
 
@@ -124,12 +122,13 @@ A szervezeti jelentési követelményeket teljesítő dimenziók hierarchiája a
 
 A jelentések dimenzióhierarchiája az alábbiak szerint állítható be.
 
-|                   | Dimenziótag tartományok   |                         |
+**Dimenziótag tartományok**
+
+|   Csomópontok           |   Forrásdimenzió-tag   |   Céldimenziótag   |
 |-------------------|---------------------------|-------------------------|
-| **Csomópontok**         | **Forrásdimenzió-tag** | **Céldimenziótag** |
 | Szervezet      |                           |                         |
 | &nbsp;&nbsp;Rendszergazda         |                           |                         |
-|&nbsp;&nbsp;&nbsp;&nbsp;Pénzügy   | CC002                     | CC003                   |
+| &nbsp;&nbsp;&nbsp;&nbsp;Pénzügy   | CC002                     | CC003                   |
 |                   | CC007                     | CC007                   |
 | &nbsp;&nbsp;&nbsp;&nbsp;HR        | CC001                     | CC001                   |
 | &nbsp;&nbsp;Termelés    |                           |                         |
@@ -146,12 +145,13 @@ A szervezeti jelentési követelményeket teljesítő dimenziók hierarchiája a
 
 Az irányelv dimenzióhierarchiája az alábbiak szerint állítható be.
 
-|                   | Dimenziótag tartományok   |                         |
+**Dimenziótag tartományok**
+
+|   Csomópontok           |   Forrásdimenzió-tag   |   Céldimenziótag   |
 |-------------------|---------------------------|-------------------------|
-| **Csomópontok**         | **Forrásdimenzió-tag** | **Céldimenziótag** |
 | Költség működése     |                           |                         |
 | &nbsp;&nbsp;Fix költség    | 10001                     | 10011                   |
-|&nbsp;&nbsp;Változó költség | 40001                     | 40010                   |
+| &nbsp;&nbsp;Változó költség | 40001                     | 40010                   |
 
 > [!NOTE]
 > A **Dimenziótag-tartományok** alatt egy csomópont 1:_n_ dimenziótagtartományt tartalmazhat. Dimenziótag-azonosítókat illeszthet be, amelyek még nem léteznek dimenziótagokként. Ezzel a módszerrel a hierarchia rugalmas lesz a jövőben.  
@@ -297,9 +297,10 @@ Lehetséges, hogy minden vezető képes lesz elérni a rendkívül érzékeny ü
 
 Egy új **Felhasználók** gyorslap áll rendelkezésre a hierarchiatervezőben. Itt beilleszthet egy vagy több felhasználói azonosítót a hierarchiában lévő minden egyes csomóponthoz.
 
-|                 | Felhasználók            | Dimenziótag tartományok   |                         |
+**Felhazsnálók és dimenziótag-tartományok**
+
+|   Csomópontok         |   Felhasználóazonosító        |   Forrásdimenzió-tag   |   Céldimenziótag   |
 |-----------------|------------------|---------------------------|-------------------------|
-| **Csomópontok**       | **Felhasználói azonosító**      | **Forrásdimenzió-tag** | **Céldimenziótag** |
 | Szervezet    | Benjamin, Claire |                           |                         |
 | &nbsp;&nbsp;Rendszergazda         | Április            |                           |                         |
 | &nbsp;&nbsp;&nbsp;&nbsp;Pénzügy   | Alicia           | CC002                     | CC003                   |

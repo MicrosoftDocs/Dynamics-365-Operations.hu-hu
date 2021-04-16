@@ -2,11 +2,9 @@
 title: Új vagy módosult elemek a Human Resources szolgáltatásban
 description: A Microsoft Dynamics 365 Human Resources szolgáltatáshoz új kiadást biztosítunk hetente. Az itt található témakörök ismertetik a hetente végrehajtott módosításokat.
 author: andreabichsel
-manager: tfehr
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: SystemAdministrationWorkspaceForm, FeatureManagementWorkspace
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e3412f446fe9fb8e3c2ca5407b22680dec3c3b82
-ms.sourcegitcommit: 75b432ce9019c81253eb6bd865db905701e28a26
+ms.openlocfilehash: 6a7d86e85ef9cff493dcdfab498d107163f381d1
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "5579331"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5806018"
 ---
 # <a name="whats-new-or-changed-in-human-resources"></a>Új vagy módosult elemek a Human Resources szolgáltatásban
 
@@ -51,6 +49,7 @@ Ha további tájékoztatást szeretne kapni a hamarosan megjelenő szolgáltatá
 
 Ha tudni szeretné, hogy mi új vagy módosult a Human Resources egyes kétheti verzióiban, tekintse át az alábbi cikkeket:
 
+[2021. március 22.](hr-whats-new-2021-03-22.md)</br>
 [2021. március 8.](hr-whats-new-2021-03-08.md)</br>
 [2021. február 22.](hr-whats-new-2021-02-22.md)</br>
 [2021. január 28.](hr-whats-new-2021-01-28.md)</br>

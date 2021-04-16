@@ -2,11 +2,9 @@
 title: Juttatási konstrukció létrehozása
 description: Juttatási konstrukciókat állíthat be a Dynamics 365 Human Resources rendszerben.
 author: andreabichsel
-manager: tfehr
-ms.date: 04/06/2020
+ms.date: 03/24/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitPlanListPage, BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
@@ -18,14 +16,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7d398da8fa53f39cfbdc3911d5acd0967f0c5d5b
-ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
+ms.openlocfilehash: da11799d3340798067fc03061159896f44750c77
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5464278"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5805730"
 ---
-# <a name="create-a-benefits-plan"></a>Juttatási konstrukció létrehozása
+# <a name="create-a-benefit-plan"></a>Juttatási konstrukció létrehozása
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -46,9 +44,8 @@ Ez a cikk bemutatja. hogyan lehet juttatási konstrukciókat beállítani a Dyna
    | **Program** | Azt a programot határozza meg, amelyet választhatóan hozzá lehet rendelni a konstrukcióhoz. |
    | **Csomag** | Azt a csomagot határozza meg, amelyet választhatóan hozzá lehet rendelni a konstrukcióhoz. |
    | **Fő** | Megadja, hogy a konstrukció az alapkonstrukció-e azon a csomagon belül, amelyhez hozzárendelték. |
-   | **Állapot** | A juttatási konstrukció aktuális állapotát jelzi. Az alapértelmezett érték az Aktív. Ha az állapotot Inaktív értékűre állítja, a konstrukció nem lesz választható a belépés során. |
    | **Érvényesség kezdő dátuma és időpontja** | Az a dátum és időpont, amikor a konstrukció érvényessége kezdődik. Az alapértelmezett érték az aktuális rendszerdátum. |
-   | **Érvényesség záró dátuma és időpontja** | Az a dátum és időpont, amikor a konstrukció érvényessége befejeződik (az állapot értéke Inaktív). Az alapértelmezett érték a 2154. 12. 31., ami a „soha” megfelelője. |
+   | **Érvényesség záró dátuma és időpontja** | Az a dátum és időpont, amikor a konstrukció érvényessége befejeződik. Az alapértelmezett érték a 2154. 12. 31., ami a „soha” megfelelője. |
 
 4. A **Konfiguráció** lapon adja meg a megfelelő értékeket a következő mezőkben a létrehozandó konstrukció típusától függően:
 
@@ -56,18 +53,18 @@ Ez a cikk bemutatja. hogyan lehet juttatási konstrukciókat beállítani a Dyna
    | --- | --- | --- |
    | Orvosi (orvosi, fogászati, látás, HMO) | COBRA | Megadja, hogy a konstrukció megfelel-e COBRA (Consolidated Omnibus Budget Reconciliation Act) törvénynek. |
    | Orvosi (orvosi, fogászati, látás, HMO) | HIPAA | Megadja, hogy a konstrukció megfelel-e HIPAA (Health Insurance Portability and Accountability Act) törvénynek. |
-   | <ul><li>Orvosi (orvosi, fogászati, látás, HMO)</li><li>Egyéb (PTO, fitnesz)</li><li>Egyéb</li><li>Hosszú távú fogyatékosság</li><li>ADD (alapszintű, önkéntesség)</li><li>Megtakarítások (például 401(k))</li><li>FSA</li></ul> | Adózás előtt jogosult | Megadja, hogy a konstrukcióhoz be lehet-e állítani hozzájárulásokat az adók alkalmazása előtt. |
-   | <ul><li>Orvosi (orvosi, fogászati, látás, HMO)</li><li>Egyéb (PTO, fitnesz)</li><li>Hosszú távú fogyatékosság</li><li>ADD (alapszintű, önkéntesség)</li><li>Megtakarítások (például 401(k))</li><li>FSA</li></ul> | Adózás után jogosult | Megadja, hogy a konstrukcióhoz be lehet-e állítani hozzájárulásokat az adók alkalmazása után. |
-   | <ul><li>Orvosi (orvosi, fogászati, látás, HMO)</li><li>Egyéb (PTO, fitnesz)</li><li>Hosszú távú fogyatékosság</li><li>ADD (alapszintű, önkéntesség)</li><li>Megtakarítások (például 401(k))</li><li>FSA</li></ul> | Hozzájáruló | Megadja, hogy ki járul hozzá a konstrukcióhoz: az alkalmazott, a munkáltató vagy mindkettő. |
-   | <ul><li>Hosszú távú fogyatékosság</li><li>ADD (alapszintű, önkéntesség)</li></ul> | Minimális fedezet | A konstrukcióhoz szükséges biztosítási fedezet minimális összege. |
-   | <ul><li>Hosszú távú fogyatékosság</li><li>ADD (alapszintű, önkéntesség)</li></ul> | Maximális fedezet | A konstrukcióhoz szükséges biztosítási fedezet maximális összege. |
-   | <ul><li>Hosszú távú fogyatékosság</li><li>ADD (alapszintű, önkéntesség)</li></ul> | Fedezeti növekmények használata | Megadja, hogy kell-e ellenőrizni, hogy a fedezeti összeg megfelel-e egy érvényes növekményes összegnek. |
-   | <ul><li>Hosszú távú fogyatékosság</li><li>ADD (alapszintű, önkéntesség)</li></ul> | Növekmény összege | A konstrukció biztosítási fedezetének növekményes összege. Ha például a növekményes összeg 1000, akkor az alkalmazottnak nem lehet $200 500 összegű biztosítása, hanem a $201 000 összegre kell felkerekíteni vagy a $200 000 összegre kell lekerekíteni azt. |
-   | <ul><li>Hosszú távú fogyatékosság</li><li>ADD (alapszintű, önkéntesség)</li></ul> | Növekmény iránya | Megadja a kerekítés irányát – vagy felfelé, vagy lefelé –, amikor a fedezeti összeg nem elégíti ki a növekményösszeg értékét. |
+   | Orvosi (orvosi, fogászati, látás, HMO)<br><br>Egyéb (PTO, fitnesz)<br><br>Egyéb<br><br>Hosszú távú fogyatékosság<br><br>ADD (alapszintű, önkéntesség)<br><br>Megtakarítások (például 401(k))<br><br>FSA | Adózás előtt jogosult | Megadja, hogy a konstrukcióhoz be lehet-e állítani hozzájárulásokat az adók alkalmazása előtt. |
+   | Orvosi (orvosi, fogászati, látás, HMO)<br><br>Egyéb (PTO, fitnesz)<br><br>Hosszú távú fogyatékosság<br><br>ADD (alapszintű, önkéntesség)<br><br>Megtakarítások (például 401(k))<br><br>FSA | Adózás után jogosult | Megadja, hogy a konstrukcióhoz be lehet-e állítani hozzájárulásokat az adók alkalmazása után. |
+   | Orvosi (orvosi, fogászati, látás, HMO)<br><br>Egyéb (PTO, fitnesz)<br><br>Hosszú távú fogyatékosság<br><br>ADD (alapszintű, önkéntesség)<br><br>Megtakarítások (például 401(k))<br><br>FSA | Hozzájáruló | Megadja, hogy ki járul hozzá a konstrukcióhoz: az alkalmazott, a munkáltató vagy mindkettő. |
+   | Hosszú távú fogyatékosság<br><br>ADD (alapszintű, önkéntesség) | Minimális fedezet | A konstrukcióhoz szükséges biztosítási fedezet minimális összege. |
+   | Hosszú távú fogyatékosság<br><br>ADD (alapszintű, önkéntesség) | Maximális fedezet | A konstrukcióhoz szükséges biztosítási fedezet maximális összege. |
+   | Hosszú távú fogyatékosság<br><br>ADD (alapszintű, önkéntesség) | Fedezeti növekmények használata | Megadja, hogy kell-e ellenőrizni, hogy a fedezeti összeg megfelel-e egy érvényes növekményes összegnek. |
+   | Hosszú távú fogyatékosság<br><br>ADD (alapszintű, önkéntesség) | Növekmény összege | A konstrukció biztosítási fedezetének növekményes összege. Ha például a növekményes összeg 1000, akkor az alkalmazottnak nem lehet $200 500 összegű biztosítása, hanem a $201 000 összegre kell felkerekíteni vagy a $200 000 összegre kell lekerekíteni azt. |
+   | Hosszú távú fogyatékosság<br><br>ADD (alapszintű, önkéntesség) | Növekmény iránya | Megadja a kerekítés irányát – vagy felfelé, vagy lefelé –, amikor a fedezeti összeg nem elégíti ki a növekményösszeg értékét. |
    | ADD (alapszintű, önkéntesség) | Biztosíthatóság igazolása | Megadja, hogy az alkalmazottnak kell-e igazolnia a biztosíthatóságát. |
    | ADD (alapszintű, önkéntesség) | Összeg | A könyvelési pénznem összege. Ez a mező csak akkor aktív, ha a be van jelölve a Biztosíthatóság igazolása jelölőnégyzet. |
-   | <ul><li>Megtakarítások (például 401(k))</li><li>FSA</li></ul> | Minimális éves hozzájárulás | A konstrukcióhoz szükséges hozzájárulás minimális összege. |
-   | <ul><li>Megtakarítások (például 401(k))</li><li>FSA</li></ul> | Maximális éves hozzájárulás | A konstrukcióhoz szükséges hozzájárulás maximális összege. |
+   | Megtakarítások (például 401(k))<br><br>FSA | Minimális éves hozzájárulás | A konstrukcióhoz szükséges hozzájárulás minimális összege. |
+   | Megtakarítások (például 401(k))<br><br>FSA | Maximális éves hozzájárulás | A konstrukcióhoz szükséges hozzájárulás maximális összege. |
    | Megtakarítások (például 401(k)) | Munkáltatói maximális éves összeg | Az a maximális összeg, amellyel a munkáltató hozzájárulhat az alkalmazotti megtakarítási konstrukciójához egy juttatási időszakban. A mező használatához be kell jelölnie a Munkáltató megfelelés jelölőnégyzetet. |
    | Megtakarítások (például 401(k)) | Munkáltatói megfelelés | Megadja, hogy a munkáltató hozzájárul-e az alkalmazott megtakarítási konstrukciójához. |
    | Megtakarítások (például 401(k)) | Munkáltatói megfelelés százaléka | Az alkalmazotti hozzájárulásnak az a százaléka, amelyet a munkáltató fog fedezni. |
@@ -122,7 +119,7 @@ Megtekintheti a választott juttatási konstrukcióba belépett dolgozókat.
 
 1. A **Juttatások kezelése** munkaterület **Konstrukciók** részén válassza a **Juttatási konstrukciók** elemet.
 
-2. Válassza a **Kedvezményezett dolgozók** lehetőséget.
+2. A navigációs sáv **Juttatások** lapján válassza a **Regisztrált dolgozók** lehetőséget.
 
 ## <a name="attach-coverage-options"></a>Fedezeti beállítások csatolása
 
@@ -130,7 +127,7 @@ Fedezeti beállításokat adhat hozzá a kiválasztott juttatási konstrukcióho
 
 1. A **Juttatások kezelése** munkaterület **Konstrukciók** részén válassza a **Juttatási konstrukciók** elemet.
 
-2. Válassza a **Fedezeti beállítások csatolása** lehetőséget.
+2. A navigációs sáv **Juttatások** lapján válassza a **Fedezeti beállítások csatolása** lehetőséget.
 
 ## <a name="override-eligibility-rules"></a>Jogosultsági szabályok felülbírálása
 
@@ -138,7 +135,7 @@ A konstrukciókba felvehet olyan dolgozókat, akik kivételnek számítanak a jo
 
 1. A **Juttatások kezelése** munkaterület **Konstrukciók** részén válassza a **Juttatási konstrukciók** elemet.
 
-2. Válassza a **Jogosultsági szabály felülbírálása** lehetőséget.
+2. A navigációs sáv **Juttatások** lapján válassza a **Jogosultsági szabály felülbírálása** lehetőséget.
 
 ## <a name="view-attached-periods"></a>Hozzárendelt időszakok megjelenítése
 
@@ -146,21 +143,21 @@ Megtekintheti az elérhető juttatási időszakok listáját.
 
 1. A **Juttatások kezelése** munkaterület **Konstrukciók** részén válassza a **Juttatási konstrukciók** elemet.
 
-2. Válassza az **Időszakok** lehetőséget.
+2. Válassza ki az **Időszakok** lapot az oldalsó navigációs sávon.
 
-## <a name="view-plan-information"></a>Konstrukció adatainak megtekintése
+## <a name="view-plan-description"></a>A konstrukció leírásának megtekintése
 
-A konstrukcióhoz megadhat leírást, amely segít az alkalmazottaknak a juttatások kiválasztásában. Az itt megadott konstrukcióadatok megjelennek az Alkalmazotti önkiszolgáló rendszerben, amikor a konstrukcióra viszik a mutatót a fedezeti lehetőségek listáján.
+A konstrukcióhoz megadhat leírást, amely segít az alkalmazottaknak a juttatások kiválasztásában. Az itt megadott konstrukcióleírások megjelennek az Alkalmazotti önkiszolgáló rendszerben, amikor a konstrukcióra viszik a mutatót a fedezeti lehetőségek listáján.
 
 1. A **Juttatások kezelése** munkaterület **Konstrukciók** részén válassza a **Juttatási konstrukciók** elemet.
 
-2. Válassza a **Konstrukció adatai** lehetőséget.
+2. A navigációs sáv **Juttatások** lapján válassza a **Konstrukció leírása** lehetőséget.
 
 ## <a name="view-flex-credit-programs"></a>Rugalmas jóváírási programok megtekintése
 
 1. A **Juttatások kezelése** munkaterület **Konstrukciók** részén válassza a **Juttatási konstrukciók** elemet.
 
-2. Válassza a **Rugalmas jóváírási programok** lehetőséget.
+2. A navigációs sáv **Juttatások** lapján válassza a **Rugalmas jóváírási programok** lehetőséget.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

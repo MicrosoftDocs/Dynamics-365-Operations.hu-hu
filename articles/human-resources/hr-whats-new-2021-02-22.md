@@ -2,7 +2,6 @@
 title: Új vagy módosult elemek a Dynamics 365 Human Resources szolgáltatásban (2021. február 22.)
 description: Ez a témakör a Microsoft Dynamics 365 Human Resources új vagy módosított szolgáltatásait írja le a 2021. február 22-i kiadásban.
 author: marcelbf
-manager: tfehr
 ms.date: 02/22/2021
 ms.topic: article
 ms.prod: ''
@@ -18,12 +17,12 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-02-22
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 363ea7d47a46234b2854a073029859c31277d88f
-ms.sourcegitcommit: 75b432ce9019c81253eb6bd865db905701e28a26
+ms.openlocfilehash: 53e9c42f718665165be97e5022a9e767b0436e59
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "5579355"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5802215"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-february-22-2021"></a>Új vagy módosult elemek a Dynamics 365 Human Resources szolgáltatásban (2021. február 22.)
 
