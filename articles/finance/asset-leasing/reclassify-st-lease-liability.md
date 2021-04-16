@@ -2,11 +2,9 @@
 title: A lízingkötelezettség rövid távú részének átsorolása
 description: Ez a témakör bemutatja, hogyan hozhat létre havi naplóbejegyzést a lízingkötelezettség egy részének rövid távúként történő átsorolásához.
 author: moaamer
-manager: Ann Beebe
 ms.date: 10/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 9189033987a3072c7122e1a198768d9de6aa2a52
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 7d98d66b5fe9d32a86eb75d937fedfdca6773ac4
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5254083"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5823095"
 ---
 # <a name="reclassify-the-short-term-portion-of-lease-liability"></a>A lízingkötelezettség rövid távú részének átsorolása
 
@@ -38,8 +36,7 @@ A rövid távú kötelezettség újraosztályzási naplóbejegyzés létrehozás
 2. Válassza ki a **Kötegelt napló létrehozása** párbeszédpanel **Ütemezés kiválasztása** mezőjében a **Rövid távú lízingkötelezettség újraosztályozása** lehetőséget.
 3. Válassza ki a **Lízingcsoport** mezőben a lízingcsoportot. Másik lehetőségként a **Könyv azonosítója** mezőben válassza ki a könyv azonosítóját.
 4. Kapcsolja be a **Feladás** paramétert. Azt is megteheti, hogy ha a bejegyzést létre kell hozni, de nem szabad feladni, akkor kikapcsolva hagyja ezt a paramétert.
-5. A feladás előtt kapcsolja be az **Előzetes verzió feladás előtt** paramétert, hogy a bejegyzést megtekinthesse feladás előtt.
-6. Válassza ki az **OK** lehetőséget.
+5. Válassza ki az **OK** lehetőséget.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

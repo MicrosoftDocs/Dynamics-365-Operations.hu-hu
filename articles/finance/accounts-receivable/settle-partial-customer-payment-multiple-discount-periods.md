@@ -2,11 +2,9 @@
 title: Vevői kifizetés egy részének rendezése, amely több kedvezményes időszakkal rendelkezik
 description: Ez a cikk ismerteti, hogy a részleges vevői kifizetések hogyan kerülnek kiegyenlítésre több engedményes időszak esetén.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8c5047debd0f3d035ec5fc8bc24745183b28e9f0
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 1a15f952671152ac9e8b88e7394ec41220f964c0
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5241714"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5835100"
 ---
 # <a name="settle-a-partial-customer-payment-that-has-multiple-discount-periods"></a>Vevői kifizetés egy részének rendezése, amely több kedvezményes időszakkal rendelkezik
 
@@ -56,7 +54,7 @@ Június 28.-án a 4031. számú vevő 294,00 értékű részfizetést teljesít.
 
 Az engedményadatok a **Nyitott tranzakciók kiegyenlítése** lap alján jelennek meg. Ha nem módosítja a **Kiegyenlítendő összeg** értékét **294.00**-re, a **Készpénzfizetési engedmény összege** eltérő lesz. A 6,00 érték azonban készpénzfizetési engedményként jelenik meg a fizetés feladása alkalmával, mert a kiegyenlítés automatikusan módosítja a **Kiegyenlítendő összeg** értékét.
 
-|                              |           |
+| &nbsp;                       | &nbsp;    |
 |------------------------------|-----------|
 | Készpénzfizetési engedmény dátuma           | 2015/30/6 |
 | Készpénzfizetési engedmény összege         | 20,00     |
@@ -75,7 +73,7 @@ Július 8.-án a vevő kifizeti a fennmaradó számlaösszeget. Mivel ezt kifize
 
 Az engedményadatok a **Nyitott tranzakciók kiegyenlítése** lap alján jelennek meg.
 
-|                              |           |
+| &nbsp;                       | &nbsp;    |
 |------------------------------|-----------|
 | Készpénzfizetési engedmény dátuma           | 2015-07-09 |
 | Készpénzfizetési engedmény összege         | 30.00     |

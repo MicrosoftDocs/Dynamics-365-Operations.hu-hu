@@ -2,11 +2,9 @@
 title: Human Resources alkalmazás a Teams rendszerben
 description: Ez a témakör bemutatja a Microsoft Dynamics 365 Human Resources alkalmazást a Microsoft Teams rendszerben.
 author: andreabichsel
-manager: tfehr
 ms.date: 02/23/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: FeatureManagementWorkspace
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 86abe32f76f2cc21c773727be07a44be49cdbac7
-ms.sourcegitcommit: 105f65468b45799761c26e5d0ad9df4ff162c38d
+ms.openlocfilehash: 7b44cee0574794ae4b3cfd1987934aa4933b46b2
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5487873"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5803993"
 ---
 # <a name="human-resources-app-in-teams"></a>Human Resources alkalmazás a Teams rendszerben
 
@@ -91,7 +89,7 @@ A Dynamics 365 Human Resources alkalmazásban a Teamsben az alábbi nyelvek tám
 | Területibeállítás-azonosító | Nyelv |
 | --- | --- |
 | de-DE | Német (Németország) |
-| es-Es | Spanyol (Spanyolország) |
+| es-ES | Spanyol (Spanyolország) |
 | es-MX | Spanyol (Mexikó) |
 | fr-CA | Francia (Kanada) |
 | fr-FR | Francia (Franciaország) |

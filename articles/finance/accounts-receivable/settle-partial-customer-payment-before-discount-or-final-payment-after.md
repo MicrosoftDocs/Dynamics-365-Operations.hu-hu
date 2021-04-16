@@ -2,11 +2,9 @@
 title: Részleges vevői kifizetés rendezése az engedmény dátuma előtt, végső fizetés az engedmény bevezetésének dátuma után
 description: Ez a cikk fizetéskiegyenlítések számlákra és vevőkre gyakorolt hatását taglalja. Az eset nem a főkönyvre, hanem az analitikus naplóra gyakorolt hatásokra összpontosít.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 87408e864ab8e6101fc908e744231f10d0d2e664
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: dd10e0c6e426d95aa5e96c4b9b59a8a81017b540
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5250554"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5835147"
 ---
 # <a name="settle-partial-payment-before-discount-date-with-final-payment-after-discount-date"></a>Részleges vevői kifizetés rendezése az engedmény dátuma előtt, végső fizetés az engedmény bevezetésének dátuma után
 
@@ -48,10 +46,10 @@ Július 2-án a 4027.-es számú vevő elvégzi a 297.00 értékű részfizetés
 
 Az engedményadatok a **Nyitott tranzakciók kiegyenlítése** lap alján jelennek meg. Ha nem módosítja a **Kiegyenlítendő összeg** értékét 297.00-re, a **Készpénzfizetési engedmény összege** eltérő lesz. A 3.00 érték készpénzfizetési engedményként jelenik meg a fizetés feladása alkalmával, mert a kiegyenlítés automatikusan módosítja a **Kiegyenlítendő összeg** értékét.
 
-|                              |           |
+| Mező                        | Érték     |
 |------------------------------|-----------|
 | Készpénzfizetési engedmény dátuma           | 2015-07-09 |
-| Készpénzfizetési engedmény összege         | 1000     |
+| Készpénzfizetési engedmény összege         | 10,00     |
 | Készpénzfizetési engedmény használata            | Normál    |
 | Alkalmazott készpénzfizetési engedmény          | 0,00      |
 | Alkalmazandó készpénzfizetési engedmény összege | 3,00      |
@@ -73,7 +71,7 @@ Július 11-én, a kedvezményes időszak után, a 4027.-es számú vevő kifizet
 
 Az engedményadatok a **Nyitott tranzakciók kiegyenlítése** lap alján jelennek meg.
 
-|                              |           |
+| Mező                        | Érték     |
 |------------------------------|-----------|
 | Készpénzfizetési engedmény dátuma           | 2015-07-09 |
 | Készpénzfizetési engedmény összege         | 0,00      |
@@ -89,10 +87,10 @@ Ha Anna módosítja a **Készpénzfizetési engedmény használata** mezőt **Mi
 
 Az engedményadatok a **Nyitott tranzakciók kiegyenlítése** lap alján jelennek meg.
 
-|                              |           |
+| Mező                        | Érték     |
 |------------------------------|-----------|
 | Készpénzfizetési engedmény dátuma           | 2015-07-09 |
-| Készpénzfizetési engedmény összege         | 7:00      |
+| Készpénzfizetési engedmény összege         | 7.00      |
 | Készpénzfizetési engedmény használata            | Mindig    |
 | Alkalmazott készpénzfizetési engedmény          | 3,00      |
 | Alkalmazandó készpénzfizetési engedmény összege | 7:00      |

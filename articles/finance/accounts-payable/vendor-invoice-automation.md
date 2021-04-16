@@ -2,11 +2,9 @@
 title: Számlaautomatizálás beolvasott dokumentumokhoz
 description: Ez a témakör azokat a funkciókat mutatja be, amelyek a szállítói számlák végponttól végpontig történő automatizálására érhetők el, még a mellékleteket tartalmazó számlák esetében is.
 author: abruer
-manager: AnnBe
-ms.date: 05/22/2020
+ms.date: 03/24/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendEditInvoiceHeaderStagingListPage
 audience: Application User
@@ -15,18 +13,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 05a796e7ea520e7f25be9e0a1f766b08f75254bb
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: d776ad4eda623f55a69d81eefd0e88842d9da401
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5239651"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5841237"
 ---
 # <a name="invoice-automation-for-scanned-documents"></a>Számlaautomatizálás beolvasott dokumentumokhoz
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör azokat a funkciókat mutatja be, amelyek a szállítói számlák végponttól végpontig történő automatizálására érhetők el, még a mellékleteket tartalmazó számlák esetében is.
+Ez a témakör azokat az adatentitásokat mutatja be, amelyek a szállítói számlák végponttól végpontig történő automatizálására érhetők el, még a mellékleteket tartalmazó számlák esetében is.
 
 Azok a szervezetek amelyek egyszerűsítik a Kötelezettségek folyamatot, gyakran a számlafeldolgozás folyamatát tartják az egyik olyan kiemelt területnek, amelynek hatékonyabbnak kellene lennie. Sok esetben ezek a szervezetek a papíralapú számlák feldolgozását külső optikai karakterfelismerési (OCR) szolgáltatónak adják át. Ezután géppel olvasható számlázi metaadatokat kapnak az egyes számlák beolvasott képével. Az automatizálás elősegítése érdekében egy ún. „utolsó mérföld”megoldást építenek ki, amely lehetővé teszi az ilyen műtermékek felhasználását a számlázási rendszerben. Most az „utolsó mérföld” azonnali automatizálása engedélyezve van egy számlaautomatizálási megoldás révén.
 
@@ -90,9 +88,9 @@ Az adatcsomagok segítségével importált számlák kétféle módon társítha
 
 Olyan esetekben, amikor szállítói számlák integráción keresztül kerülnek a Finance and Operations rendszerbe, kell lennie egy egyszerű módnak arra, hogy a Kötelezettségek csapat egyik tagja feldolgozhassa a kivételeket és a hibás számlákat, valamint hogy függőben lévő számlákat hozzon létre a hibás számlákból. A szállítói számlák kivétellel történő feldolgozása kivétel most már a Finance and Operations része.
 
-### <a name="exceptions-list-page"></a>Kivételek listájának oldala
+### <a name="vendor-invoices-that-failed-to-import-list-page"></a>A listaoldalt nem importáló szállítói számlák
 
-A számlázási kivételeket tartalmazó új listaoldal itt érhető el: **Kötelezettségek** > **Számlák** > **Importálási hibák** > **Szállítói számlák, amelyeknek sikertelen volt az importálása**. Ez a lap a Szállítói számla fejlécének adatentitásában szereplő előkészítési tábla szállítói számla fejlécrekordjait jeleníti meg. Vegye figyelembe, hogy ugyanezeket a rekordokat tekintheti meg az **Adatkezelés** munkaterületen is, ahol elvégezheti ugyanazokat a műveleteket, amelyek a kivételkezelési funkcióban szerepelnek. Azonban a kivételkezelési funkció által nyújtott felhasználói felület a funkcionális felhasználókra van optimalizálva.
+A számlázási kivételeket tartalmazó új listaoldal itt érhető el: **Kötelezettségek** > **Számlák** > **Importálási hibák** > **Szállítói számlák, amelyeknek sikertelen volt az importálása**. Ez a lap a Szállítói számla fejlécének adatentitásában szereplő előkészítési tábla szállítói számla fejlécrekordjait jeleníti meg. Ne feledje, hogy ugyanazokat a rekordokat az **Adatkezelés** munkaterületről is megtekintheti. A kivételek kezelése funkció által nyújtott funkciókat az **Adatkezelés** munkaterületről is elvégezheti. A kivételkezelési szolgáltatás egy funkcionális felhasználóra lett optimalizálva, ami megkönnyíti a használatát.
 
 ![Kivételek listájának oldala](media/vendor_invoice_automation_02.png)
 
@@ -118,24 +116,17 @@ Ez a listaoldal a következő mezőket tartalmazza, amelyek a csatornán kereszt
 Ezen listaoldalon van még egy betekintő ablaktábla is, amely az alábbi módon használható:
 
 + Teljes hibaüzenet megtekintése, hogy ne kelljen kibontania a **Hibaüzenet** oszlopot a rácson.
-+ A számla mellékletlistájának megtekintése, amennyiben a számla mellékletekkel érkezett.
 
 A listaolda a következő műveleteket támogatja:
 
 + **Szerkesztés** – A kivételrekord megnyitása szerkesztési módban a problémák elhárítása érdekében.
 + **Lehetőségek** – A listaoldalakon elérhető szokásos lehetőségek. Használhatja a **Hozzáadás a munkaterülethez** lehetőséget a kivételek listaoldal munkaterülethez listaként vagy csempeként történő rögzítéséhez.
 
-### <a name="exception-details-page"></a>Kivételadatok lap
+### <a name="vendor-invoices-that-failed-to-import-details-page"></a>A részletek oldalt nem importáló szállítói számlák
 
-Amikor elindítja a szerkesztési módot, megjelenik a problémás számla kivételadatokat tartalmazó lapja. Amennyiben mellékletek vannak, a számla és az alapértelmezett melléklet párhuzamosan jelennek meg a kivételadatokat tartalmazó lapon.
+A szerkesztési mód indításakor megnyílik a **Szállítói számlák, amelyek nem importáltak részleteket** oldal a problémás számlához. Ha melléklettel rendelkező számlával kapcsolatos problémák merülnek fel, a melléklet nem jelenik meg. A mellékletet újra csatolni kell a számlához.
 
-![Kivételadatok lap](media/vendor_invoice_automation_03.png)
-
-Az előző példában nem voltak sorok a beérkezett szállítói számla fejlécében. Ebből következően a sorokra vonatkozó szakasz üres.
-
-A kivételadatokat tartalmazó lap a következő műveletet támogatja:
-
-+ **Függőben lévő számla létrehozása** – Miután a kivételfeldolgozás során kijavította a számlán a problémákat, erre a gombra kattintva függőben lévő számlát hozhat létre. A függőben lévő számlák létrehozása a háttérben (aszinkron műveletként) megy végbe.
+A **Részletek oldalt nem importáló szállítói számlák** lehetővé teszik függőben lévő számla létrehozását. Miután a kivételfeldolgozás során kijavította a számlán a problémákat, erre a **Függőben lévő számla létrehozása** gombra kattintva függőben lévő számlát hozhat létre. A függőben lévő számla a háttérben jön létre. 
 
 ### <a name="shared-service-vs-organization-based-exception-processing"></a>Megosztott szolgáltatások és szervezetalapú kivételfeldolgozás
 
@@ -187,7 +178,7 @@ Csak egy dokumentum állítható be alapértelmezett mellékletként. Ha egy dok
 
 A **Kivétel feldolgozása**, **Függőben lévő számla** és **Számlanapló** lekérdezési lapok lehetővé teszik a mellékletmegjelenítő megjelenítését vagy elrejtését.
 
-### <a name="security"></a>Biztonság
+## <a name="security"></a>Biztonság
 
 A mellékletmegjelenítő következő műveletei szerepkör-alapú biztonságon keresztül vannak szabályozva:
 
@@ -212,7 +203,7 @@ A következő szerepkörök írásvédett hozzáférést vagy olvasási/írási 
 + **Kötelezettségkezelő adminisztrátor** és **Kötelezettségkezelő vezető** – A Szállítói számlák karbantartása feladat hozzá van rendelve ezen szerepkörökhöz.
 + **Kötelezettségkezelő adminisztrátor**, **Kötelezettségkezelő vezető**, **Kötelezettségek központosított fizetési adminisztrátora** és **Kötelezettségkifizetési adminisztrátor** – A szállítói számlák állapotának lekérdezése feladat hozzá van rendelve ezen szerepkörökhöz.
 
-### <a name="invoice-exception-details-page"></a>Kivételszámla-adatok lap
+### <a name="vendor-invoice-attachment"></a>Szállítói számlamelléklet
 
 A következő jogosultságok írásvédett vagy olvasási/írási hozzáférést biztosítanak a mellékletmegjelenítőnek a kiemelési, zárolási és jegyzet műveletekhez.
 

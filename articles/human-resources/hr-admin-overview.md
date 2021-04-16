@@ -2,11 +2,9 @@
 title: Adminisztráció áttekintése
 description: Ez a rendszergazdai útmutató segít a Dynamics 365 Human Resources rendszer beállításában, kezelésében és problémaelhárításában.
 author: andreabichsel
-manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: SystemAdministrationWorkspaceForm
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f55977fc45424ea7e514a741f9dd7f8f9306b015
-ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
+ms.openlocfilehash: 3eb5d686ff6edf11cdbde6c4799a99815719da71
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5466928"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5801143"
 ---
 # <a name="administration-overview"></a>Adminisztráció áttekintése
 

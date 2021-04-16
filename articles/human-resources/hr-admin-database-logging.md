@@ -2,11 +2,9 @@
 title: Adatbázis-naplózás konfigurálása és kezelése
 description: Nyomon követheti a táblák és a mezők módosításait az Dynamics 365 Human Resources adatbázisnaplózás funkciójával.
 author: andreabichsel
-manager: tfehr
 ms.date: 06/10/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8057ebd0bc061c6bf78d8674c45e0885ffce681c
-ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
+ms.openlocfilehash: d22ff9f3ce68c81f37840342c795d7d162eb027b
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5467649"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5801335"
 ---
 # <a name="configure-and-manage-database-logging"></a>Adatbázis-naplózás konfigurálása és kezelése
 
@@ -68,7 +66,22 @@ A teljesítmény javítása érdekében a teljes táblák naplózása helyett cs
 Az **Adatbázis-változások naplózása** varázsló használatával állíthatja be az adatbázis naplózását. A varázslóval rugalmasan beállíthatja a táblák és a mezők naplózását.
 
 1. Nyissa meg a **Rendszeradminisztráció > Hivatkozások > Adatbázis-> Adatbázis-napló beállítása** elemet. Válassza az **Új** parancsot a **Adatbázis-változások naplózása** varázsló elindításához.
-2. Hajtsa végre a varázsló lépéseit.
+2. Válassza ki **Következő** lehetőséget. 
+3. A varázsló **Táblák és mezők** lapján jelölje ki azokat a táblákat és mezőket, amelyeken engedélyezni szeretné az adatbázis naplózását, és válassza a **Tovább** gombot.
+
+   > [!Note]
+   > Az adatbázis naplózása nem érhető el a Human Resources adatbázisának minden táblája esetén. A lista alatti **Összes tábla megjelenítése** lehetőség választásával kibontja a táblák és mezők listáját, hogy minden olyan adatbázistábla látható legyen, amelyekhez az adatbázisnaplózás elérhető, de ez az adatbázistáblák teljes listájának részhalmaza lesz.
+
+4. A varázsló **Módosítás típusai** lapján jelölje ki azokat az adatműveleteket, amelyekben nyomon szeretné követni az egyes táblák és mezők módosításait, majd válassza a **Tovább** gombot. Az alábbi táblázatban található a naplózáshoz elérhető adatműveletek leírása.
+5. Tekintse át a módosításokat a **Befejezés** lapon, és válassza a **Befejezés** lehetőséget.
+
+| Művelet | Leírás |
+| -- | -- |
+| Új tranzakciók nyomon követése | Napló létrehozása a táblában létrehozott új rekordokhoz. |
+| Módosítás | Napló létrehozása a táblarekordok frissítéséhez, illetve a tábla egyes kiválasztott mezőinek frissítéséhez. Ha a táblához választ naplófrissítést, akkor minden alkalommal létrejön egy naplórekord, amikor a tábla bármely mezőjében frissítés történik. Ha azt választja, hogy bizonyos mezők frissítéseit naplózza, akkor egy naplórekord csak akkor jön létre, amikor a táblarekordok ezen mezőiben frissítés történik. |
+| Eltávolítás | Napló létrehozása a táblából törölt rekordokhoz. |
+| Kulcs átnevezése | Naplórekord létrehozása táblakulcs átnevezése után. |
+
 
 ## <a name="clean-up-database-logs"></a>Adatbázisnaplók karbantartása
 

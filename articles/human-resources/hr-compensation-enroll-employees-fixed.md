@@ -2,11 +2,9 @@
 title: Alkalmazottak felvétele fix kompenzációs konstrukcióba
 description: A kompenzációkért és juttatásokért felelős vezető kijelölhet alkalmazottakat fix kompenzációs tervre az alapfizetésük kezelése érdekében.
 author: andreabichsel
-manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HRMCompFixedEmpl, HRMCompFixedEmplActionDialog, HcmPositionLookup, HRMCompRefPointLookup, HcmCompensationWorkspace
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a129bf9a6cb6a3ef92597e2ff9d126e3e5ce973b
-ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
+ms.openlocfilehash: 0eeb52bf39160bd89e2164c0dd0413f2781e7a5b
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5468251"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5805610"
 ---
 # <a name="enroll-an-employee-in-a-fixed-compensation-plan"></a>Alkalmazottak felvétele fix kompenzációs konstrukcióba
 

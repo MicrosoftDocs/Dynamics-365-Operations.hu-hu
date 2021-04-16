@@ -2,11 +2,9 @@
 title: Automatikus kiegyenlítés és rangsorolás
 description: Ez a témakör bemutatja, hogyan kerülnek rendezésre a tranzakciók akkor, hogyha az Esedékes számlák paraméterei oldal Automatikus rendezés opcióját választja. Bemutatja továbbá hogyan használható az automatikus kiegyenlítés a fizetési prioritással együtt.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 01/30/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustOpenTrans, CustParameters, LedgerJournalTransCustPaym
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5de57ba626e177677eab5b8d2a815f191e5f6a87
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: b23c6750859bd5fe519511fa765e07e8c91f8236
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5247991"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5822419"
 ---
 # <a name="automatic-settlement-and-prioritization"></a>Automatikus kiegyenlítés és rangsorolás
 

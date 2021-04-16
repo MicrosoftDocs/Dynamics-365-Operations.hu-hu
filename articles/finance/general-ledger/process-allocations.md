@@ -2,11 +2,9 @@
 title: Felosztások feldolgozása
 description: A cikk tájékoztatást nyújt a felosztásokról, azok Microsoft Dynamics 365 Finance rendszerben történő feldolgozásukról és arról, hogy hogyan alkalmazzuk őket a költségvetési tervben. A felosztások segítségével összegeket oszthat fel több főkönyvi számla kombináció között. Ezek garantáljak azt, hogy a költségek vagy a bevételek a megfelelő objektumot terhelik a könyvelés során.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AccountingDistribution, LedgerAllocationRule, MainAccount
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b13496e764f907201a23f0dd6772ee22efffb250
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 30f445698eddba8bdbb2ac9a257142458fb5990f
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5204978"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5815428"
 ---
 # <a name="process-allocations"></a>Felosztások feldolgozása
 

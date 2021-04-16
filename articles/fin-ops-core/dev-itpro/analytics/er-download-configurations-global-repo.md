@@ -2,7 +2,6 @@
 title: ER-konfigurációk letöltése a konfigurációs szolgáltatás globális tárából
 description: Ez a témakör azt mutatja be, hogyan lehet letölteni az elektronikus jelentéskészítési (ER) konfigurációkat a konfigurációs szolgáltatás globális tárából.
 author: NickSelin
-manager: AnnBe
 ms.date: 06/02/2020
 ms.topic: article
 ms.prod: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: c4f083163db72569d91825819a904319a0fe3123
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 3a232cd319970e572580bc11f2dbaccbe208f127
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5561902"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5753384"
 ---
 # <a name="download-er-configurations-from-the-global-repository-of-configuration-service"></a>ER-konfigurációk letöltése a konfigurációs szolgáltatás globális tárából
 

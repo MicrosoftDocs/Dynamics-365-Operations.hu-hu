@@ -2,11 +2,9 @@
 title: Részleges vevői kifizetés rendezése az engedmény dátuma előtt és végső fizetés az engedmény bevezetésének dátuma után
 description: 'Ez a cikk egy olyan esetet mutat be, ahol több részfizetés is történt: néhány a készpénzfizetési engedmény időszakán belül, a többi pedig a készpénzfizetési engedmény időszakán kívül.'
 author: abruer
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e125ca5fbebcf062eb17f56a2ef6669d1b6d6ae3
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: d34a9dd53b6a287ef512a5479c0ad1a51211577b
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5227328"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5810342"
 ---
 # <a name="settle-partial-payment-before-discount-date-and-final-payment-after-discount-date"></a>Részleges vevői kifizetés rendezése az engedmény dátuma előtt és végső fizetés az engedmény bevezetésének dátuma után
 
@@ -48,7 +46,7 @@ Július 2-án April szeretne kiegyenlíteni a számlájából 300,00 összegű r
 
 Az engedményadatok a **Nyitott tranzakciók kiegyenlítése** lap alján jelennek meg.
 
-|                              |           |
+| Mező                        | Érték     |
 |------------------------------|-----------|
 | Készpénzfizetési engedmény dátuma           | 2015-07-09 |
 | Készpénzfizetési engedmény összege         | -10,00    |
@@ -73,7 +71,7 @@ April kifizeti a számla fennmaradó részét július 15-én, ami a kedvezménye
 
 Az engedményadatok a **Nyitott tranzakciók kiegyenlítése** lap alján jelennek meg. April megtekintheti, hogy már kapott 3,00 engedményt.
 
-|                              |           |
+| Mező                        | Érték     |
 |------------------------------|-----------|
 | Készpénzfizetési engedmény dátuma           | 2015-07-09 |
 | Készpénzfizetési engedmény összege         | 0,00      |
@@ -99,10 +97,10 @@ Ha a szállító lehetővé teszi, hogy April a megkapja az engedményt, annak e
 
 Az engedményadatok a **Nyitott tranzakciók kiegyenlítése** lap alján jelennek meg.
 
-|                              |           |
+| Mező                        | Érték     |
 |------------------------------|-----------|
 | Készpénzfizetési engedmény dátuma           | 2015-07-09 |
-| Készpénzfizetési engedmény összege         | 7:00      |
+| Készpénzfizetési engedmény összege         | 7.00      |
 | Készpénzfizetési engedmény használata            | Mindig    |
 | Alkalmazott készpénzfizetési engedmény          | -3,00     |
 | Alkalmazandó készpénzfizetési engedmény összege | -7,00     |
