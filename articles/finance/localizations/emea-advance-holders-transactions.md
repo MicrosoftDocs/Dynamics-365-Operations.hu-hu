@@ -2,11 +2,9 @@
 title: Előlegre jogosult tranzakciói
 description: Információk az előlegre jogosult tranzakcióival kapcsolatban a Microsoft Dynamics 365 Finance rendszerben.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HcmWorkerAdvHolderTableListPage_RU
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, R
 ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 89522a0cca16e3d2cab660d39ab51ca63364aa4c
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 96f4ab558fd82f47f6d337cdbcb8dba41d34b5a7
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5209905"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5839947"
 ---
 # <a name="advance-holder-transactions"></a>Előlegre jogosult tranzakciói
 

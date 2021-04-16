@@ -2,11 +2,9 @@
 title: A pénzforgalmi előrejelzés beállításaival kapcsolatos hibák elhárítása
 description: Ez a témakör olyan kérdésekre ad választ, amelyek a pénzforgalmi előrejelzés konfigurálásakor merülhetnek fel. Tartalmazza a pénzforgalmi beállításokra, a pénzforgalom frissítésére és a Power BI pénzforgalomra vonatkozó gyakran feltett kérdéseket (GYIK) is.
 author: panolte
-manager: AnnBe
-ms.date: 12/03/2020
+ms.date: 03/23/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerCovParameters
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2020-12-30
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: d1cde9321259753bd0cacab3706c7f8455598ff3
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 7b4760d7a0d0c14e2df8df20c2f81ec41e077cc0
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5232489"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5827314"
 ---
 # <a name="troubleshoot-cash-flow-forecasting-setup"></a>A pénzforgalmi előrejelzés beállításaival kapcsolatos hibák elhárítása
 
@@ -47,11 +45,19 @@ Több lépést kell végrehajtani ahhoz, hogy a pénzforgalmi előrejelzések me
 
 ## <a name="why-did-cash-flow-power-bi-work-in-previous-versions-but-is-now-blank"></a>Miért működött a Power BI pénzforgalom a korábbi verziókban, de most üres?
 
-Ellenőrizze, hogy az Entitástár Pénzforgalmi mérő V2 és LedgerCovLiquidityMeasurement mértékei konfigurálva vannak-e. Az Entitástárban található adatokkal való munkáról lásd: [Power BI-integrációja az Entitástárral](../../fin-ops-core/dev-itpro/analytics/power-bi-integration-entity-store.md) Ellenőrizze, hogy a Power BI-tartalom megtekintéséhez szükséges összes lépést elvégezte-e. További információkért lásd: [Készpénz áttekintés - Power BI tartalom](Cash-Overview-Power-BI-content.md).
+Ellenőrizze, hogy az Entitástár Pénzforgalmi mérő V2 és LedgerCovLiquidityMeasurement mértékei konfigurálva vannak-e. Ha további információt szeretne az entitástár adataival való munkáról, lásd: [Power BI-integráció az entitástárral](../../fin-ops-core/dev-itpro/analytics/power-bi-integration-entity-store.md). Ellenőrizze, hogy a Power BI-tartalom megtekintéséhez szükséges összes lépés el lett-e végezve. További információkért lásd: [Készpénz áttekintés - Power BI tartalom](Cash-Overview-Power-BI-content.md).
 
 ## <a name="have-the-entity-store-entities-been-refreshed"></a>Frissültek-e az Entitástár entitásai?
 
 Rendszeresen frissítenie kell az entitásokat, hogy az adatok pontosak és aktuálisak legyenek. Egy adott entitás manuális frissítéséhez lépjen a **Rendszerfelügyelet \> Beállítás \> Entitástár** pontra, jelölje ki az entitást, majd válassza a **Frissítés** lehetőséget. Az adatok automatikusan is frissíthetők. Az **Entitástár** lapon állítsa az **Automatikus frissítés engedélyezve** lehetőséget **Igen** értékre.
 
+## <a name="which-calculation-method-should-be-used-when-calculating-cash-flow-forecasts"></a>Milyen számítási módszert kell alkalmazni a pénzforgalmi előrejelzések kiszámításakor?
+
+A Pénzforgalmi előrejelzés számítási módszer két fontos választási lehetőséggel rendelkezik. Az **Új** beállítás kiszámítja az új dokumentumok és az utolsó kötegelt feldolgozás futtatása óta megváltozott dokumentumok pénzforgalmi előrejelzéseit. Ez a beállítás általában gyorsabban fut, mert a dokumentumok kisebb részhalmazát dolgozza fel. A **Teljes** beállítás újraszámítja a rendszer minden dokumentumára vonatkozó pénzforgalmi előrejelzéseket. Ez a beállítás több időt vesz igénybe, mert több munkát kell befejeznie.
+
+### <a name="how-do-i-improve-the-performance-of-the-cash-flow-forecasting-recurring-batch-job"></a>Hogyan javíthatom a pénzforgalmi előrejelzés ismétlődő kötegelt feldolgozás teljesítményét?
+
+Javasoljuk, hogy az **Új** számítási módszerrel naponta egyszer futtasa a pénzforgalmi előrejelzést a csúcsidőn kívül. Javasoljuk, hogy ezt a megközelítést heti hat nap használja. Ezután futtasson egy pénzforgalmi előrejelzést hetente egyszer a **Teljes** számítási módszerrel azon a napon, ahol a legkevesebb tevékenység van.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

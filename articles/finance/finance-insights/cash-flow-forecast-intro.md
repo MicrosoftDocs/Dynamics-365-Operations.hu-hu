@@ -2,11 +2,9 @@
 title: Pénzforgalmi előrejelzés (előzetes verzió)
 description: Ez a témakör a Pénzforgalmi előrejelzési képességet mutatja be.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 05/19/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-19
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 3e9237980144ea65e1ff5135e277151970dbfdbb
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 6e4713aa4662714d1b2a3eeb62adce8608907054
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5208605"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5811411"
 ---
 # <a name="cash-flow-forecast-preview"></a>Pénzforgalmi előrejelzés (előzetes verzió)
 

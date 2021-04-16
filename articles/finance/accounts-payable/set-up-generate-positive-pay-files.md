@@ -2,11 +2,9 @@
 title: Fizetési ellenőrző fájlok beállítása és létrehozása
 description: Ez a témakör ismerteti az ellenőrzött fizetések beállítását és az ellenőrzött fizetési fájlok létrehozását.
 author: panolte
-manager: AnnBe
 ms.date: 03/06/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankPositivePayFormat
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 7d1520828bc626784f1555d8878a1fdad1bd5b9e
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 9f96e34b8d94f9e83afb39d6ad97aca85386b458
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5227376"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5830712"
 ---
 # <a name="set-up-and-generate-positive-pay-files"></a>Fizetési ellenőrző fájlok beállítása és létrehozása
 
@@ -140,6 +138,9 @@ Az ellenőrzött fizetési fájlok adatentitások használatával jönnek létre
   </xsl:template>
 </xsl:stylesheet>
 ```
+
+> [!NOTE]
+> Az XSLT XML-neveinek meg kell egyezniük az XML-ben lévő csomópontok burkolatával. Mind az XSLT, mind az XML fájlok megkülönböztetik a kis- és nagybetűket. 
 
 ## <a name="assign-the-positive-pay-format-to-a-bank-account"></a>Az ellenőrzött fizetési formátum hozzárendelése egy bankszámlához
 Minden egyes bankszámlához, amelyhez szeretne létrehozni ellenőrzött fizetési információt, hozzá kell rendelnie az előző szakaszban megadott ellenőrzött fizetési formátumot. A **Bankszámlák** oldalon válassza ki azt az ellenőrzött fizetési formátumot, amely megfelel a bankszámlájának. Az **Ellenőrzött fizetés kezdő dátuma** mezőbe írja be az ellenőrzött fizetési fájlok létrehozásának kezdő dátumát. Fontos, hogy megadjon egy dátumot ebben a mezőben. Ellenkező esetben az első fizetési ellenőrző fájl, amit létrehoz tartalmazni fogja az összes csekket, amit valaha létrehoztak ehhez a bankszámlához.
