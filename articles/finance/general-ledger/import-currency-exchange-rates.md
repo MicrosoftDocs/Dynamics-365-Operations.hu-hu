@@ -2,11 +2,9 @@
 title: Devizaárfolyamok importálása
 description: Ez a témakör a devizaárfolyam-szolgáltatók által közzétett árfolyam-referenciaértékekkel kapcsolatos követelményekkel kapcsolatban tartalmaz tájékoztatást.
 author: EvgenyPopovMBS
-manager: AnnBe
 ms.date: 03/17/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ExchangeRateProviderConfiguration
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 37f3897f9f2a0db0bb7ccb6851fba36814ab0c7b
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 20b8496bc3074eae6535eea4cfe0b254f2773e6a
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5249119"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5823740"
 ---
 # <a name="import-currency-exchange-rates"></a>Devizaárfolyamok importálása
 
@@ -35,9 +33,8 @@ Az alábbi szakaszok a devizaárfolyamok importálásának beállításához és
 ## <a name="configure-an-exchange-rate-provider"></a>Árfolyam-szolgáltató konfigurálása
 Árfolyamok importálása előtt be kell állítani az árfolyamokat biztosító szolgáltatók által igényelt információkat. Használja az **Árfolyam-szolgáltatók konfigurálása** oldalt az árfolyam-szolgáltatók kiválasztásához. Egyes árfolyam-szolgáltatók a Dynamics 365 Finance-ben található bemutató adatokban is megtalálhatók. A következő táblázatban megtalálható az oldal vezérlőelemeinek leírása.
 
-|           |                                                                                                                                                                                                                             |
-|-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Mező** | **Leírás**                                                                                                                                                                                                             |
+| Mező | Leírás                   |
+|-----------|-----------------------------------|
 | **Név**  | Az árfolyam-szolgáltató neve.                                                                                                                                                                                     |
 | **Kulcs**   | A szolgáltató által igényelt specifikus egyes konfigurációs adatok egyedi azonosítója. Ez az információ automatikusan hozzáadódik minden egyes olyan árfolyam-szolgáltatóhoz, amelyet hozzáad. |
 | **Value** | Az egyes kulcsok adatai. Ez az információ hozzáadódik minden egyes olyan árfolyam-szolgáltatóhoz, amelyet hozzáad.                                                                                         |
@@ -45,9 +42,8 @@ Az alábbi szakaszok a devizaárfolyamok importálásának beállításához és
 ## <a name="import-currency-exchange-rates"></a>Devizaárfolyamok importálása
 Az árfolyamokat az árfolyam-szolgáltatók forrásból lehet importálni, majd hozzáadni a **Pénznemárfolyamok** oldalon. Használja a **Devizaárfolyamok importálása** oldalt az árfolyamok importálásához. A következő táblázat bemutatja az importálási folyamat sikeres teljesítéséhez szükséges mezőket.
 
-|                                        |                                                                                                                                                                                                                                                                                                                                                                             |
-|----------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Mező**                              | **Leírás**                                                                                                                                                                                                                                                                                                                                                             |
+| Mező | Leírás                   |
+|-----------|-----------------------------------|
 | **Árfolyamtípus**                 | Árfolyam típusa.                                                                                                                                                                                                                                                                                                                                                      |
 | **Árfolyam-szolgáltató**             | Árfolyam-szolgáltató.                                                                                                                                                                                                                                                                                                                                                  |
 | **Importálás a következő dátum szerint:**                       | Ez a paraméter vezérli, hogy az imortálás az aktuális dátum szerint vagy egy megadott dátumtartományban történjen-e. Ha dátumtartományt kíván használni, adja meg vagy válassza ki a kezdő és a záró dátumot.                                                                                                                                                                                                                |

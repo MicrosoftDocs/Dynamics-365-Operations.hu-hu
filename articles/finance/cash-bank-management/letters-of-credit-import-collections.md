@@ -2,11 +2,9 @@
 title: Akkreditívek és importbeszedvények
 description: Ez a cikk általános információt biztosít a hitellevéllel és az import-beszedésekkel kapcsolatban. A banki dokumentumok ezen két formáját gyakran alkalmazzák termékek nemzetközi beszerzésekor és értékesítésekor.
 author: panolte
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankLCImport
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 45eed711ace1534df462a21d0f37bdfaa09e6392
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: c59a4f098ac19223c5b2fb6808d18d8fea4f4290
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5253939"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5815932"
 ---
 # <a name="letters-of-credit-and-import-collections"></a>Akkreditívek és importbeszedvények
 

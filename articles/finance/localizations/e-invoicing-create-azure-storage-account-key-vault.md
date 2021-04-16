@@ -2,11 +2,9 @@
 title: Hozzon létre Azure tárfiókot és egy kulcstartót
 description: Ez a témakör azt mutatja be, hogyan lehet egy Azure tárfiókot és egy kulcstartót létrehozni.
 author: gionoder
-manager: AnnBe
 ms.date: 02/12/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 14463abe7782d786d286fcc619dee00ce85bb620
-ms.sourcegitcommit: 4adc57b0e43d9627dca70762ac941762ec4934e2
+ms.openlocfilehash: b7df4933c1373893e00f48ea3a21bd5af40719a9
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/22/2021
-ms.locfileid: "5479345"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5840220"
 ---
 # <a name="create-an-azure-storage-account-and-a-key-vault"></a>Hozzon létre Azure tárfiókot és egy kulcstartót
 
@@ -44,7 +42,7 @@ Ebben a témakörben két fő lépést kell végrehajtania:
 
 ## <a name="set-up-the-azure-storage-account-to-get-the-storage-account-uri"></a>Az Azure tárfiók beállítása a tárfiók URI-azonosítójának megszerzéséhez
 
-1. Nyissa meg az elektronikus számlázásbővítménnyel használni kívánt tárfiókot.
+1. Nyissa meg az elektronikus számlázással használni kívánt tárfiókot.
 2. Nyissa meg a **Blob-szolgáltatás** \> **Tárolók** lehetőséget, és hozzon létre egy új tárolót.
 3. Adjon egy nevet a tárolónak, majd állítsa a **Nyilvános hozzáférési szint** mezőt **Privát (névtelen hozzáférés nem lehetséges)** értékre.
 4. Nyissa ki a tárolót, és menjen a **Beállítások \> Hozzáférési szabályzat** lehetőségre.
@@ -63,12 +61,12 @@ Ebben a témakörben két fő lépést kell végrehajtania:
 
 ## <a name="set-up-the-key-vault-to-store-the-storage-account-uri"></a>A kulcstartó beállítása a tárfiók URI-azonosítójának tárolásához
 
-1. Nyissa meg az elektronikus számlázásbővítménnyel használni kívánt kulcstartót.
+1. Nyissa meg az elektronikus számlázással használni kívánt kulcstartót.
 2. Menjen a **Beállítások** \> **Titkok** lehetőségre, majd válassza a **Létrehozás/importálás** elemet az új titok létrehozásához.
 3. A **Titok létrehozása** oldal **Feltöltési beállítások** mezőjében válassza a **Manuális** lehetőséget.
 4. Adja meg a titok nevét. Ezt a nevet fogják használni a szolgáltatás Regulatory Configuration Service (RCS) szolgáltatásban történő beállításakor, illetve *kulcstartó titok* néven fognak rá hivatkozni.
 5. Az **Érték** mezőben válassza a **Közös hozzáférésű jogosultságkód URI** lehetőséget, majd a **Létrehozás** elemet.
-6. Állítsa be a hozzáférési szabályzatot, hogy az Elektronikus számlázásbővítmény megfelelő biztonsági hozzáférési szintet tudjon engedélyezni a létrehozott titoknak. Menjen a **Beállítások \> Hozzáférési szabályzat** lehetőségre, és válassza a **Hozzáférési szabályzat hozzáadása** elemet.
+6. Állítsa be a hozzáférési szabályzatot, hogy az Elektronikus számlázás megfelelő biztonsági hozzáférési szintet tudjon engedélyezni a létrehozott titoknak. Menjen a **Beállítások \> Hozzáférési szabályzat** lehetőségre, és válassza a **Hozzáférési szabályzat hozzáadása** elemet.
 7. Állítsa be a **Megszerzés** és a **Lista** műveleteihez tartozó titkos engedélyeket.
 
     ![Szolgáltatáshozzáférés megadása](media/e-Invoicing-services-create-azure-resources-grant-service-access.png)
