@@ -1,12 +1,10 @@
 ---
-title: Első lépések az olasz elektronikus számlázásbővítménnyel
-description: Ez a témakör olyan információkat tartalmaz, amelyek bemutatják az Első lépéseket az olasz elektronikus számlázásbővítmény Microsoft Dynamics 365 Finance és Dynamics 365 Supply Chain Management szolgáltatásban való használatát.
+title: Első lépések az Olaszországra vonatkozó elektronikus számlázási használata során
+description: Ez a témakör olyan információkat tartalmaz, amelyek bemutatják az olaszországi Elektronikus számlázással kapcsolatos első lépéseket.
 author: gionoder
-manager: AnnBe
 ms.date: 09/22/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,26 +15,26 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 9c50000c98bdde2c9da43b3110686aa5d01e8081
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 23cb0523b6d6d065ad19f6c3bddf881b0dc82a7d
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5259220"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5840100"
 ---
-# <a name="get-started-with-the-electronic-invoicing-add-on-for-italy"></a>Első lépések az olasz elektronikus számlázásbővítménnyel
+# <a name="get-started-with-electronic-invoicing-for-italy"></a>Első lépések az Olaszországra vonatkozó elektronikus számlázási használata során
 
 [!include [banner](../includes/banner.md)]
 
 
 > [!IMPORTANT]
-> Előfordulhat, hogy az Olasz elektronikus számlázásbővítmény jelenleg nem támogatja az elektronikus számlákhoz rendelkezésre álló összes funkciót a Microsoft Dynamics 365 Finance és Dynamics 365 Supply Chain Management számára. 
+> Előfordulhat, hogy az Olasz elektronikus számlázás jelenleg nem támogatja az elektronikus számlákhoz rendelkezésre álló összes funkciót a Microsoft Dynamics 365 Finance és Dynamics 365 Supply Chain Management számára. 
 
-Ez a témakör olyan információkat tartalmaz, amelyek bemutatják az olasz elektronikus számlázásbővítménnyel kapcsolatos első lépéseket. Végigvezeti a Regulatory Configuration Services (RCS) és a Finance szolgáltatásban található ország-függő konfigurációs lépéseken. Továbbá a szolgáltatáson keresztül végigvezeti az Olaszország-specifikus **FatturaPA**-formátumban létrejövő elektronikus számlák küldésének folyamatán, és elmagyarázza, hogyan kell áttekinteni a feldolgozás eredményeit.
+Ez a témakör olyan információkat tartalmaz, amelyek bemutatják az olaszországi Elektronikus számlázással kapcsolatos első lépéseket. Végigvezeti a Regulatory Configuration Services (RCS) és a Finance szolgáltatásban található ország-függő konfigurációs lépéseken. Továbbá a szolgáltatáson keresztül végigvezeti az Olaszország-specifikus **FatturaPA**-formátumban létrejövő elektronikus számlák küldésének folyamatán, és elmagyarázza, hogyan kell áttekinteni a feldolgozás eredményeit.
 
 ## <a name="prerequisites"></a>Előfeltételek
 
-A témakör lépéseinek végrehajtása előtt végre kell hajtania az [Első lépések az Elektronikus számlázásbővítménnyel](e-invoicing-get-started.md) részben található lépéseket.
+A témakör lépéseinek végrehajtása előtt végre kell hajtania az [Első lépések az Elektronikus számlázással](e-invoicing-get-started.md) részben található lépéseket.
 
 ## <a name="rcs-setup"></a>RCS beállítása
 
@@ -48,7 +46,7 @@ Az RCS beállítása során a következő feladatokat kell elvégeznie:
 4. Tegye közzé az e-számlázási funkciót.
 
 > [!NOTE]
-> „Az e-számlázás funkció” annak az erőforrásnak az általános neve, amely az Elektronikus számlázási bővítmény kiszolgáló felhasználásához van konfigurálva és közzétéve. Ebben az esetben a vevő elektronikus számlák exportálásához használt e-számlázási funkciót fogja beállítani.
+> „Az e-számlázás funkció” annak az erőforrásnak az általános neve, amely az Elektronikus számlázási kiszolgáló felhasználásához van konfigurálva és közzétéve. Ebben az esetben a vevő elektronikus számlák exportálásához használt e-számlázási funkciót fogja beállítani.
 
 ## <a name="import-the-e-invoicing-feature"></a>Az e-számlázási funkció importálása
 
@@ -153,7 +151,7 @@ Az e-számlázási funkció közzétehető a verzió állapotának **Befejezett*
 
 ![Az e-számlázási funkció állapotának módosítása](media/e-Invoicing-services-get-started-ITA-Change-status-of-e-Invoicing-feature.png)
 
-## <a name="set-up-the-electronic-invoicing-add-on-integration-in-finance"></a>Az Elektronikus számlázásbővítmény integrációjának beállítása a Finance szolgáltatásban
+## <a name="set-up-electronic-invoicing-integration-in-finance"></a>Az Elektronikus számlázás integrációjának beállítása a Finance szolgáltatásban
 
 A Finance szolgáltatás beállítása során a következő feladatokat kell elvégeznie:
 
@@ -193,17 +191,17 @@ A Finance szolgáltatás beállítása során a következő feladatokat kell elv
 
 A Finance szolgáltatásban történő feldolgozás során a következő feladatokat kell elvégeznie:
 
-1. Olasz e-számlák létrehozása az Elektronikus számlázásbővítménnyel
+1. Olasz e-számlák létrehozása az Elektronikus számlázással
 2. A végrehajtási naplók megtekintése, és a feldolgozás eredményeinek áttekintése
 
 ### <a name="generate-electronic-invoices"></a>Elektronikus számlák létrehozása
 
-Miután bekapcsolta a **Konfigurálható elektronikus számlázásbővítmény integrációja** funkciót, és aktiválta az **IT00036** funkciót, az olasz e-számlák létrehozásához használt régi Finance-folyamatot már nem lehet használni. Ezt felváltotta egy új, **Elektronikus dokumentumok beküldése** nevű folyamat.
+Miután bekapcsolta a **Konfigurálható elektronikus számlázás integrációja** funkciót, és aktiválta az **IT00036** funkciót, az olasz e-számlák létrehozásához használt régi Finance-folyamatot már nem lehet használni. Ezt felváltotta egy új, **Elektronikus dokumentumok beküldése** nevű folyamat.
 
 A dokumentumokat a saját e-számla dokumentumok igényeinek megfelelően manuálisan is elküldheti.
 
 > [!NOTE]
-> Mielőtt folytatná, győződjön meg arról, hogy az olasz e-számlákhoz szükséges beállítások el lettek végezve. A további információkat lásd: [Vevői elektronikus számlák](https://docs.microsoft.com/dynamics365/finance/localizations/emea-ita-e-invoices). Ne feledje, hogy a témakörben leírt néhány beállítási lépés nem érhető el az elektronikus számlázásbővítmény aktiválása miatt.
+> Mielőtt folytatná, győződjön meg arról, hogy az olasz e-számlákhoz szükséges beállítások el lettek végezve. A további információkat lásd: [Vevői elektronikus számlák](https://docs.microsoft.com/dynamics365/finance/localizations/emea-ita-e-invoices). Ne feledje, hogy a témakörben leírt néhány beállítási lépés nem érhető el az elektronikus számlázás aktiválása miatt.
 
 1. Menjen a **Szervezeti adminisztráció \> Időszakos \> Elektronikus dokumentumok \> Elektronikus dokumentumok beküldése** lehetőségre.
 2. A dokumentumok első beküldésekor **Nem** értékre kell állítania a **Dokumentumok újraküldése** lehetőséget. Ha a szolgáltatáson keresztül újra kell küldenie a dokumentumot, akkor ezt a beállítást állítsa **Igen** értékre.
@@ -220,7 +218,7 @@ A dokumentumokat a saját e-számla dokumentumok igényeinek megfelelően manuá
 2. Kattintson az **OK** gombra a **Lekérdezés** párbeszédpanel bezárásához.
 3. Kattintson az **OK** gombra a kiválasztott dokumentumok elküldéséhez.
 
-> ![MEGJEGYZÉS]A dokumentum szolgáltatáson keresztüli beküldésének első kísérlete során a program rákérdez, hogy megerősíti-e a kapcsolatot az Elektronikus számlázásbővítménnyel. Válassza a **Kattintson az Elektronikus dokumentumbeküldési szolgáltatáshoz való csatlakozáshoz**.
+> ![MEGJEGYZÉS] A dokumentum szolgáltatáson keresztüli beküldésének első kísérlete során a program rákérdez, hogy megerősíti-e a kapcsolatot az Elektronikus számlázással. Válassza a **Kattintson az Elektronikus dokumentumbeküldési szolgáltatáshoz való csatlakozáshoz**.
 
 #### <a name="view-submission-logs"></a>Beküldési naplók megtekintése
 
@@ -242,9 +240,9 @@ Megtekintheti az összes beküldött dokumentum beküldési naplóját.
 
 ## <a name="related-topics"></a>Kapcsolódó témakörök
 
-- [Elektronikus számlázásbővítmény – áttekintés](e-invoicing-service-overview.md)
-- [Első lépések az Elektronikus számlázásbővítménnyel](e-invoicing-get-started.md)
-- [Az Elektronikus számlázásbővítmény beállítása](e-invoicing-setup.md)
+- [Elektronikus számlázás áttekintése](e-invoicing-service-overview.md)
+- [Első lépések az elektronikus számlázási használata során](e-invoicing-get-started.md)
+- [Az elektronikus számlázás beállítása](e-invoicing-setup.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

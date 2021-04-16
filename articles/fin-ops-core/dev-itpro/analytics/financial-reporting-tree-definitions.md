@@ -1,27 +1,26 @@
 ---
 title: Jelentési fa definíciója a pénzügyi jelentésekben
 description: Ez a témakör a jelentési fa definícióit ismerteti. A jelentési fa definíciója egy jelentés-összetevő, amely meghatározza a szervezet szerkezetét.
-author: ShylaThompson
-manager: AnnBe
-ms.date: 10/07/2019
+author: jinniew
+ms.date: 04/01/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: roschlom
 ms.custom: 57592
 ms.assetid: 747faa47-9a23-4277-bc11-8d0a1267c3a4
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 367df467d20fb7c60821c9de1f86758196f4faf3
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 42612a14b81f78199aa5678d6f8525e4bd87ca8c
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5568775"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5819938"
 ---
 # <a name="reporting-tree-definitions-in-financial-reports"></a>Jelentési fa definíciója a pénzügyi jelentésekben
 
@@ -74,7 +73,7 @@ Jelentési fa definíciójának létrehozásához kövesse az alábbi lépéseke
     | Belefoglalás/Karakterpozíció       | Ez a rész felsorolja a dimenziókat, amelyek meg vannak határozva a pénzügyi adatokban és megmutatja minden dimenzióhoz a karakterek számát a leghosszabb definiált értékben. Jelölje be a dimenzió jelölőnégyzetét, ha bele akarja foglalni a jelentési fahierarchiába. |
     | Szegmenshierarchia és tartományok     | Ez a rész bemutatja a dimenzió hierarchiákat. A dimenziókat áthelyezheti a listában a jelentési sorrend módosításához. Adjon meg egy értéktartományt minden dimenzióhoz a **Forrásként használt dimenzió** és a **Célként használt dimenzió** mezőkben. Ha nem ad meg egy tartományt, minden dimenzió érték be lesz illesztve a jelentési fába.<blockquote>[!NOTE] Több dimenzió használata esetén csak azok a dimenziókombinációk jelennek meg az eredmények között, amelyekbe feladás történt.</blockquote> |
 
-    Képernyőképért, ami egy példát mutat a **Jelentési egységek beszúrása a dimenziókból** párbeszédpanelre, lásd a „Példa a Jelentési egységek beszúrása dimenziókból párbeszédpanelre" szakaszt.
+    Egy illusztrációért, ami egy példát mutat a **Jelentési egységek beszúrása a dimenziókból** párbeszédpanelre, lásd a „Példa a Jelentési egységek beszúrása dimenziókból párbeszédpanelre" szakaszt.
 
 5. További szegmensek létrehozásához (például egy szegmens két rövidebb szegmensre osztásához), kattintson a megfelelő helyre egy **Karakterpozíció** mezőben, majd kattintson a **Szegmensek felosztása** lehetőségre.
 6. Két szegmens egy szegmenssé egyesítéséhez kattintson bele valamelyik szegmens jelölőnégyzetébe, majd kattintson a **Szegmensek kombinálása** elemre.
@@ -186,23 +185,23 @@ A következő jelentési fában a jelentési egység struktúrája a következő
 - A legalacsonyabb szintű részletjelentési egységek (Kiskereskedelmi Értékesítés, Nagykereskedelmi Értékesítés, Ügyfélszolgáltatások és Műveletek) a pénzügyi adatok a részlegeit képviselik. Ezek a jelentési egységek a diagram árnyékolt területén találhatók.
 - A magasabb szintű összesítő egységek összesítik a részletegységek adatait.
 
-[![ContosoEntertainmentSummaryReportStructure](./media/contosoentertainmentsummaryreportstructure.png)](./media/contosoentertainmentsummaryreportstructure.png)
+[![Contoso összegző jelentés szerkezete – 1. példa](./media/contosoentertainmentsummaryreportstructure.png)](./media/contosoentertainmentsummaryreportstructure.png)
 
 ### <a name="reporting-unit-structure--example-2"></a>Jelentési egységek struktúrája – 2. példa
 
 A következő ábra bemutat egy jelentési fát, amely megjelenít egy szervezeti struktúrát, vállalati funkciók szerint van felosztva.
 
-[![summaryofallunitscontoso](./media/summaryofallunitscontoso.png)](./media/summaryofallunitscontoso.png)
+[![Contoso összegző jelentés szerkezete – 2. példa](./media/summaryofallunitscontoso.png)](./media/summaryofallunitscontoso.png)
 
 ### <a name="example-of-the-insert-reporting-units-from-dimensions-dialog-box"></a>Példa a Jelentési egységek beszúrása dimenziókból párbeszédpanelre
 
 A következő ábra példa a **Jelentési egységek beszúrása dimenziókból** párbeszédpanelre. Ebben a példában az eredmény az üzleti egység, a költséghelyek és a részlegek kombinációja lesz.
 
-[![InsertReportingUnits](./media/insertreportingunits.png)](./media/insertreportingunits.png)
+[![Jelentési egységek beszúrása](./media/insertreportingunits.png)](./media/insertreportingunits.png)
 
 A létrejövő jelentési fa definíció először üzleti egység szerint, majd költséghely, illetve részleg szerint lesz listázva. Az ötödik jelentési egység dimenziója az **Üzleti Egység = \[001\], Költséghely =\[\], Részleg = \[022\]**, valamint ez azonosítja a jelentési egységet a számlákhoz, amelyek a 001-es üzleti egységre és a 022-es részlegre vonatkoznak.
 
-[![ReportingTree](./media/reportingtree-1024x646.png)](./media/reportingtree.png)
+[![A jelentési fa ábrája](./media/reportingtree-1024x646.png)](./media/reportingtree.png)
 
 ### <a name="examples-of-data-roll-up"></a>Példák összesítési adatokra
 
@@ -210,11 +209,11 @@ Az alábbi példák lehetséges információkat mutatnak, melyeket a jelentési 
 
 #### <a name="example-1"></a>1. példa
 
-[![MutliCompanyRollUp](./media/mutlicompanyrollup.png)](./media/mutlicompanyrollup.png)
+[![Többvállalatos összesítés](./media/mutlicompanyrollup.png)](./media/mutlicompanyrollup.png)
 
 #### <a name="example-2"></a>2. példa
 
-[![CrossCompanyDepartmentRollUp](./media/crosscompanydepartmentrollup.png)](./media/crosscompanydepartmentrollup.png)
+[![Vállalatközi részlegek összesítése](./media/crosscompanydepartmentrollup.png)](./media/crosscompanydepartmentrollup.png)
 
 ## <a name="additional-resources"></a>További erőforrások
 
