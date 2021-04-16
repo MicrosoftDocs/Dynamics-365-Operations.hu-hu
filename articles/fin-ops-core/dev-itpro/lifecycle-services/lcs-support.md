@@ -2,7 +2,6 @@
 title: Támogatás szerzése a Finance and Operations-alkalmazások és a Lifecycle Services (LCS) szolgáltatáshoz
 description: Ez a témakör ismerteti, hogyan kérhet segítséget a Finance and Operations-alkalmazásokkal vagy Microsoft Dynamics Lifecycle Services (LCS) alkalmazásokkal kapcsolatban.
 author: EricMoos
-manager: AnnBe
 ms.date: 09/16/2020
 ms.topic: article
 ms.prod: ''
@@ -15,55 +14,55 @@ ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b4091c44430b5da781c856f17bd5a5c485cde8e2
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 20b32ae88f9c4439b83ae60e6a0b5f0e16280fcf
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5567228"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5753878"
 ---
-# <a name="get-support-for-finance-and-operations-apps-or-lifecycle-services-lcs"></a><span data-ttu-id="c2e00-103">Támogatás szerzése a Finance and Operations-alkalmazások és a Lifecycle Services (LCS) szolgáltatáshoz</span><span class="sxs-lookup"><span data-stu-id="c2e00-103">Get support for Finance and Operations apps or Lifecycle Services (LCS)</span></span>
+# <a name="get-support-for-finance-and-operations-apps-or-lifecycle-services-lcs"></a><span data-ttu-id="83c68-103">Támogatás szerzése a Finance and Operations-alkalmazások és a Lifecycle Services (LCS) szolgáltatáshoz</span><span class="sxs-lookup"><span data-stu-id="83c68-103">Get support for Finance and Operations apps or Lifecycle Services (LCS)</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="c2e00-104">Ez a témakör ismerteti, hogyan kérhet segítséget a Finance and Operations-alkalmazásokkal vagy Microsoft Dynamics Lifecycle Services (LCS) alkalmazásokkal kapcsolatban.</span><span class="sxs-lookup"><span data-stu-id="c2e00-104">This topic explains how to get help with Finance and Operations apps or Microsoft Dynamics Lifecycle Services (LCS).</span></span> 
+<span data-ttu-id="83c68-104">Ez a témakör ismerteti, hogyan kérhet segítséget a Finance and Operations-alkalmazásokkal vagy Microsoft Dynamics Lifecycle Services (LCS) alkalmazásokkal kapcsolatban.</span><span class="sxs-lookup"><span data-stu-id="83c68-104">This topic explains how to get help with Finance and Operations apps or Microsoft Dynamics Lifecycle Services (LCS).</span></span> 
 
 <table>
 <thead>
 <tr>
-<th><span data-ttu-id="c2e00-105">Feladat</span><span class="sxs-lookup"><span data-stu-id="c2e00-105">Task</span></span></th>
-<th><span data-ttu-id="c2e00-106">További információ</span><span class="sxs-lookup"><span data-stu-id="c2e00-106">More information</span></span></th>
+<th><span data-ttu-id="83c68-105">Feladat</span><span class="sxs-lookup"><span data-stu-id="83c68-105">Task</span></span></th>
+<th><span data-ttu-id="83c68-106">További információ</span><span class="sxs-lookup"><span data-stu-id="83c68-106">More information</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><span data-ttu-id="c2e00-107">Kérdezzen a közösségtől.</span><span class="sxs-lookup"><span data-stu-id="c2e00-107">Ask the community.</span></span></td>
-<td><span data-ttu-id="c2e00-108">Ugrás a <a href="https://community.dynamics.com/">Dynamics 365-közösség</a> lapra a Microsoft Dynamics közösségtől való segítségkéréshez.</span><span class="sxs-lookup"><span data-stu-id="c2e00-108">Go to the <a href="https://community.dynamics.com/">Dynamics 365 Community</a> page to get help with your questions from the Microsoft Dynamics community.</span></span></td>
+<td><span data-ttu-id="83c68-107">Kérdezzen a közösségtől.</span><span class="sxs-lookup"><span data-stu-id="83c68-107">Ask the community.</span></span></td>
+<td><span data-ttu-id="83c68-108">Ugrás a <a href="https://community.dynamics.com/">Dynamics 365-közösség</a> lapra a Microsoft Dynamics közösségtől való segítségkéréshez.</span><span class="sxs-lookup"><span data-stu-id="83c68-108">Go to the <a href="https://community.dynamics.com/">Dynamics 365 Community</a> page to get help with your questions from the Microsoft Dynamics community.</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="c2e00-109">Segítség a licencekkel kapcsolatos kérdésekkel kapcsolatban.</span><span class="sxs-lookup"><span data-stu-id="c2e00-109">Get help with questions about licensing.</span></span></td>
-<td><span data-ttu-id="c2e00-110">Lépjen kapcsolatba a partnerével vagy a Microsoft értékesítési munkatárssal.</span><span class="sxs-lookup"><span data-stu-id="c2e00-110">Contact your partner or a Microsoft sales representative.</span></span></td>
+<td><span data-ttu-id="83c68-109">Segítség a licencekkel kapcsolatos kérdésekkel kapcsolatban.</span><span class="sxs-lookup"><span data-stu-id="83c68-109">Get help with questions about licensing.</span></span></td>
+<td><span data-ttu-id="83c68-110">Lépjen kapcsolatba a partnerével vagy a Microsoft értékesítési munkatárssal.</span><span class="sxs-lookup"><span data-stu-id="83c68-110">Contact your partner or a Microsoft sales representative.</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="c2e00-111">Használja a <strong>Megoldáskereső</strong> eszközt.</span><span class="sxs-lookup"><span data-stu-id="c2e00-111">Use the <strong>Issue search</strong> tool.</span></span></td>
-<td><span data-ttu-id="c2e00-112">Az <a href="https://lcs.dynamics.com/">LCS</a> rendszerben használja a <strong>Megoldáskereső</strong> eszközt a Microsoft Tudásbázis (KB) cikkeinek, gyorsjavításainak és megkerülő megoldásainak megtalálásához a bejelentett problémák megoldására.</span><span class="sxs-lookup"><span data-stu-id="c2e00-112">In <a href="https://lcs.dynamics.com/">LCS</a>, use the <strong>Issue search</strong> tool to quickly search for Microsoft Knowledge Base (KB) articles, hotfixes, and workarounds for reported issues.</span></span> <span data-ttu-id="c2e00-113">Megtudhatja, hogy melyik jelentett probléma van folyamatban, vagy már megoldották egy adott funkcionális területre vonatkozóan.</span><span class="sxs-lookup"><span data-stu-id="c2e00-113">You can see which reported issues are in the process of being fixed for a specific functional area, and which issues have already been fixed.</span></span> <span data-ttu-id="c2e00-114">További tudnivalókért lásd: <a href="issue-search-lcs.md">Megoldáskereső (Lifecycle Services, LCS)</a>.</span><span class="sxs-lookup"><span data-stu-id="c2e00-114">For more information, see <a href="issue-search-lcs.md">Issue search (Lifecycle Services, LCS)</a>.</span></span></td>
+<td><span data-ttu-id="83c68-111">Használja a <strong>Megoldáskereső</strong> eszközt.</span><span class="sxs-lookup"><span data-stu-id="83c68-111">Use the <strong>Issue search</strong> tool.</span></span></td>
+<td><span data-ttu-id="83c68-112">Az <a href="https://lcs.dynamics.com/">LCS</a> rendszerben használja a <strong>Megoldáskereső</strong> eszközt a Microsoft Tudásbázis (KB) cikkeinek, gyorsjavításainak és megkerülő megoldásainak megtalálásához a bejelentett problémák megoldására.</span><span class="sxs-lookup"><span data-stu-id="83c68-112">In <a href="https://lcs.dynamics.com/">LCS</a>, use the <strong>Issue search</strong> tool to quickly search for Microsoft Knowledge Base (KB) articles, hotfixes, and workarounds for reported issues.</span></span> <span data-ttu-id="83c68-113">Megtudhatja, hogy melyik jelentett probléma van folyamatban, vagy már megoldották egy adott funkcionális területre vonatkozóan.</span><span class="sxs-lookup"><span data-stu-id="83c68-113">You can see which reported issues are in the process of being fixed for a specific functional area, and which issues have already been fixed.</span></span> <span data-ttu-id="83c68-114">További tudnivalókért lásd: <a href="issue-search-lcs.md">Megoldáskereső (Lifecycle Services, LCS)</a>.</span><span class="sxs-lookup"><span data-stu-id="83c68-114">For more information, see <a href="issue-search-lcs.md">Issue search (Lifecycle Services, LCS)</a>.</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="c2e00-115">Támogatás kérése az alkalmazáson belül.</span><span class="sxs-lookup"><span data-stu-id="c2e00-115">Get in-app support.</span></span></td>
-<td><span data-ttu-id="c2e00-116">Válassza ki az alkalmazás jobb felső sarkában látható <strong>Súgó</strong> gombot (<strong>?</strong>), majd válassza a <strong>Támogatás</strong> lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="c2e00-116">Select the <strong>Help</strong> button (<strong>?</strong>) in the upper-right corner of the app, and then select <strong>Support</strong>.</span></span> <span data-ttu-id="c2e00-117">A problémák az <strong>Aktív problémák</strong> LCS-lapon lesznek bejelentve.</span><span class="sxs-lookup"><span data-stu-id="c2e00-117">Issues are reported on the <strong>Active issues</strong> tab in LCS.</span></span> <span data-ttu-id="c2e00-118">Itt az adminisztrátorok meghatározhatják, hogy saját támogatást biztosítanak, vagy elküldik a Microsoft számára a kérdéseket.</span><span class="sxs-lookup"><span data-stu-id="c2e00-118">There, admins can determine whether they should provide in-house support or submit the issues to Microsoft.</span></span></td>
+<td><span data-ttu-id="83c68-115">Támogatás kérése az alkalmazáson belül.</span><span class="sxs-lookup"><span data-stu-id="83c68-115">Get in-app support.</span></span></td>
+<td><span data-ttu-id="83c68-116">Válassza ki az alkalmazás jobb felső sarkában látható <strong>Súgó</strong> gombot (<strong>?</strong>), majd válassza a <strong>Támogatás</strong> lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="83c68-116">Select the <strong>Help</strong> button (<strong>?</strong>) in the upper-right corner of the app, and then select <strong>Support</strong>.</span></span> <span data-ttu-id="83c68-117">A problémák az <strong>Aktív problémák</strong> LCS-lapon lesznek bejelentve.</span><span class="sxs-lookup"><span data-stu-id="83c68-117">Issues are reported on the <strong>Active issues</strong> tab in LCS.</span></span> <span data-ttu-id="83c68-118">Itt az adminisztrátorok meghatározhatják, hogy saját támogatást biztosítanak, vagy elküldik a Microsoft számára a kérdéseket.</span><span class="sxs-lookup"><span data-stu-id="83c68-118">There, admins can determine whether they should provide in-house support or submit the issues to Microsoft.</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="c2e00-119">Nyisson meg egy támogatási jegyet az Microsoft ügyfélszolgálata csapatánál.</span><span class="sxs-lookup"><span data-stu-id="c2e00-119">Open a support ticket with the Microsoft Support team.</span></span></td>
-<td><span data-ttu-id="c2e00-120">Az <a href="https://lcs.dynamics.com/">LCS</a> programban a <strong>Támogatás</strong> csempe megnyílik, ami segítséget nyújt a támogatási események kezelésében.</span><span class="sxs-lookup"><span data-stu-id="c2e00-120">In <a href="https://lcs.dynamics.com/">LCS</a>, the <strong>Support</strong> tile opens a tool that helps you manage support incidents.</span></span> <span data-ttu-id="c2e00-121">A problémák a Microsoftnak történő közvetlen elküldéséhez válassza a <strong>Támogatás</strong> csempét az LCS projektben.</span><span class="sxs-lookup"><span data-stu-id="c2e00-121">To submit issues directly to Microsoft, select the <strong>Support</strong> tile in your LCS project.</span></span> <span data-ttu-id="c2e00-122">Ezt követően kétféleképpen küldheti el a problémákat:</span><span class="sxs-lookup"><span data-stu-id="c2e00-122">You can then submit issues in two ways:</span></span>
+<td><span data-ttu-id="83c68-119">Nyisson meg egy támogatási jegyet az Microsoft ügyfélszolgálata csapatánál.</span><span class="sxs-lookup"><span data-stu-id="83c68-119">Open a support ticket with the Microsoft Support team.</span></span></td>
+<td><span data-ttu-id="83c68-120">Az <a href="https://lcs.dynamics.com/">LCS</a> programban a <strong>Támogatás</strong> csempe megnyílik, ami segítséget nyújt a támogatási események kezelésében.</span><span class="sxs-lookup"><span data-stu-id="83c68-120">In <a href="https://lcs.dynamics.com/">LCS</a>, the <strong>Support</strong> tile opens a tool that helps you manage support incidents.</span></span> <span data-ttu-id="83c68-121">A problémák a Microsoftnak történő közvetlen elküldéséhez válassza a <strong>Támogatás</strong> csempét az LCS projektben.</span><span class="sxs-lookup"><span data-stu-id="83c68-121">To submit issues directly to Microsoft, select the <strong>Support</strong> tile in your LCS project.</span></span> <span data-ttu-id="83c68-122">Ezt követően kétféleképpen küldheti el a problémákat:</span><span class="sxs-lookup"><span data-stu-id="83c68-122">You can then submit issues in two ways:</span></span>
 <ul>
-<li><span data-ttu-id="c2e00-123">Az <strong>Aktív probléma</strong> lapon válassza ki a problémát, és válassza a <strong>Küldés a Microsoftnak</strong> lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="c2e00-123">On the <strong>Active issue</strong> tab, select your issue, and then select <strong>Submit to Microsoft</strong>.</span></span></li>
-<li><span data-ttu-id="c2e00-124">Az <strong>Elküldve a Microsoftnak</strong> lapon jelölje be az <strong>Esemény elküldése</strong> lehetőséget, majd a képernyőn megjelenő utasításokat követve küldje el az esetet.</span><span class="sxs-lookup"><span data-stu-id="c2e00-124">On the <strong>Submitted to Microsoft</strong> tab, select <strong>Submit an incident</strong>, and then follow the on-screen instructions to submit the incident.</span></span> <span data-ttu-id="c2e00-125">Miután elküldte az esetet, egy e-mailt fog kapni az Ön esetéhez rendelt Microsoft ügyfélszolgálati szakembertől.</span><span class="sxs-lookup"><span data-stu-id="c2e00-125">After you submit an incident, you will receive an email message from the Microsoft Support engineer who is assigned to your case.</span></span></li>
+<li><span data-ttu-id="83c68-123">Az <strong>Aktív probléma</strong> lapon válassza ki a problémát, és válassza a <strong>Küldés a Microsoftnak</strong> lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="83c68-123">On the <strong>Active issue</strong> tab, select your issue, and then select <strong>Submit to Microsoft</strong>.</span></span></li>
+<li><span data-ttu-id="83c68-124">Az <strong>Elküldve a Microsoftnak</strong> lapon jelölje be az <strong>Esemény elküldése</strong> lehetőséget, majd a képernyőn megjelenő utasításokat követve küldje el az esetet.</span><span class="sxs-lookup"><span data-stu-id="83c68-124">On the <strong>Submitted to Microsoft</strong> tab, select <strong>Submit an incident</strong>, and then follow the on-screen instructions to submit the incident.</span></span> <span data-ttu-id="83c68-125">Miután elküldte az esetet, egy e-mailt fog kapni az Ön esetéhez rendelt Microsoft ügyfélszolgálati szakembertől.</span><span class="sxs-lookup"><span data-stu-id="83c68-125">After you submit an incident, you will receive an email message from the Microsoft Support engineer who is assigned to your case.</span></span></li>
 </ul>
 </td>
 </tr>
 <tr>
-<td><span data-ttu-id="c2e00-126">Új szolgáltatások és funkciók kérése.</span><span class="sxs-lookup"><span data-stu-id="c2e00-126">Request new features and functionality.</span></span></td>
-<td><span data-ttu-id="c2e00-127">Ellátogathat <a href="https://experience.dynamics.com/ideas/">Dynamics 365 alkalmazással kapcsolatos ötletek</a> helyre is a meglévő ötletek megtekintéséhez, kereséséhez vagy szavazásához, illetve új ötletek hozzáadásához.</span><span class="sxs-lookup"><span data-stu-id="c2e00-127">Visit <a href="https://experience.dynamics.com/ideas/">Dynamics 365 Application Ideas</a> to view, search, or vote for existing ideas, or to add new ideas.</span></span></td>
+<td><span data-ttu-id="83c68-126">Új szolgáltatások és funkciók kérése.</span><span class="sxs-lookup"><span data-stu-id="83c68-126">Request new features and functionality.</span></span></td>
+<td><span data-ttu-id="83c68-127">Ellátogathat <a href="https://experience.dynamics.com/ideas/">Dynamics 365 alkalmazással kapcsolatos ötletek</a> helyre is a meglévő ötletek megtekintéséhez, kereséséhez vagy szavazásához, illetve új ötletek hozzáadásához.</span><span class="sxs-lookup"><span data-stu-id="83c68-127">Visit <a href="https://experience.dynamics.com/ideas/">Dynamics 365 Application Ideas</a> to view, search, or vote for existing ideas, or to add new ideas.</span></span></td>
 </tr>
 </tbody>
 </table>
