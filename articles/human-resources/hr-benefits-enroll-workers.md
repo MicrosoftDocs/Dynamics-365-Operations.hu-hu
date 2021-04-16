@@ -2,11 +2,9 @@
 title: Dolgozók juttatásainak felvétele és eltávolítása
 description: Ez az eljárás bemutatja, hogyan lehet egyetlen dolgozót besorolni egy vagy több juttatáshoz, valamint több dolgozó egyetlen juttatáshoz.
 author: andreabichsel
-manager: tfehr
 ms.date: 02/03/2020
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HcmWorker, HcmWorkerEnrollment, HcmBenefitByEligibilityLookup, HcmMassBenefitEnrollment, HcmBenefitLookup, HcmMassBenefitEnrollmentResults, BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
@@ -16,49 +14,49 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Version 7.0.0, Human Resources
-ms.openlocfilehash: cb56d11cb3acd1e8e39765284269234fc632f17f
-ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
+ms.openlocfilehash: 47e8bf46d3d38cd1b776debb835d53a22e724149
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5465102"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5805850"
 ---
-# <a name="enroll-and-remove-benefits-from-workers"></a><span data-ttu-id="738f2-103">Dolgozók juttatásainak felvétele és eltávolítása</span><span class="sxs-lookup"><span data-stu-id="738f2-103">Enroll and remove benefits from workers</span></span>
+# <a name="enroll-and-remove-benefits-from-workers"></a><span data-ttu-id="c2164-103">Dolgozók juttatásainak felvétele és eltávolítása</span><span class="sxs-lookup"><span data-stu-id="c2164-103">Enroll and remove benefits from workers</span></span>
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 
-<span data-ttu-id="738f2-104">Ez az eljárás bemutatja, hogyan lehet egyetlen dolgozót besorolni egy vagy több juttatáshoz, valamint több dolgozó egyetlen juttatáshoz.</span><span class="sxs-lookup"><span data-stu-id="738f2-104">This procedure demonstrates how a single worker can be enrolled in one or more benefits, as well as multiple workers can be enrolled in a benefit.</span></span> <span data-ttu-id="738f2-105">Ez az eljárás az USMF bemutatócéget használja.</span><span class="sxs-lookup"><span data-stu-id="738f2-105">The demo data company used to create this procedure is USMF.</span></span>
+<span data-ttu-id="c2164-104">Ez az eljárás bemutatja, hogyan lehet egyetlen dolgozót besorolni egy vagy több juttatáshoz, valamint több dolgozó egyetlen juttatáshoz.</span><span class="sxs-lookup"><span data-stu-id="c2164-104">This procedure demonstrates how a single worker can be enrolled in one or more benefits, as well as multiple workers can be enrolled in a benefit.</span></span> <span data-ttu-id="c2164-105">Ez az eljárás az USMF bemutatócéget használja.</span><span class="sxs-lookup"><span data-stu-id="c2164-105">The demo data company used to create this procedure is USMF.</span></span>
 
 
-## <a name="enroll-a-single-worker-in-benefits"></a><span data-ttu-id="738f2-106">Egyetlen munkavállaló felvétele juttatási programba</span><span class="sxs-lookup"><span data-stu-id="738f2-106">Enroll a single worker in benefits</span></span>
-1. <span data-ttu-id="738f2-107">Ugorjon az Emberi erőforrások > Dolgozók > Alkalmazottak pontra.</span><span class="sxs-lookup"><span data-stu-id="738f2-107">Go to Human resources > Workers > Employees</span></span>
-2. <span data-ttu-id="738f2-108">Keresse meg és jelölje ki a kívánt rekordot a listán.</span><span class="sxs-lookup"><span data-stu-id="738f2-108">In the list, find and select the desired record.</span></span>
-3. <span data-ttu-id="738f2-109">Kattintson a Juttatások lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="738f2-109">Click Benefits.</span></span>
-4. <span data-ttu-id="738f2-110">Kattintson az Új elemre.</span><span class="sxs-lookup"><span data-stu-id="738f2-110">Click New.</span></span>
-5. <span data-ttu-id="738f2-111">A Juttatás mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="738f2-111">In the Benefit field, enter or select a value.</span></span>
-6. <span data-ttu-id="738f2-112">A Fedezet kezdő dátuma mezőben adjon meg egy dátumot és időpontot.</span><span class="sxs-lookup"><span data-stu-id="738f2-112">In the Coverage start date field, enter a date and time.</span></span>
-7. <span data-ttu-id="738f2-113">A Fedezet záró dátuma mezőben adjon meg egy dátumot és időpontot.</span><span class="sxs-lookup"><span data-stu-id="738f2-113">In the Coverage end date field, enter a date and time.</span></span>
-8. <span data-ttu-id="738f2-114">Bontsa ki a Kedvezményezettek szakaszt, ha a juttatáshoz kedvezményezetteket kell hozzáadni.</span><span class="sxs-lookup"><span data-stu-id="738f2-114">Expand the Beneficiaries section if beneficiaries need to be added to the benefit.</span></span> <span data-ttu-id="738f2-115">Függő feleket is felvehet ezen az oldalon, ha ez alkalmazható a juttatás esetében.</span><span class="sxs-lookup"><span data-stu-id="738f2-115">You can also add dependents from this page if applicable to the benefit.</span></span>
-9. <span data-ttu-id="738f2-116">Ezen a lapon szerkesztheti a juttatásban való részesítés adatait vagy törölheti őket.</span><span class="sxs-lookup"><span data-stu-id="738f2-116">You can also edit the details of a benefit enrollment or delete an enrollment on this page.</span></span> <span data-ttu-id="738f2-117">Amikor befejezte a juttatásban való részesítés módosítását, zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="738f2-117">When you have finished making changes to the benefit enrollment, close the page.</span></span>
+## <a name="enroll-a-single-worker-in-benefits"></a><span data-ttu-id="c2164-106">Egyetlen munkavállaló felvétele juttatási programba</span><span class="sxs-lookup"><span data-stu-id="c2164-106">Enroll a single worker in benefits</span></span>
+1. <span data-ttu-id="c2164-107">Ugorjon az Emberi erőforrások > Dolgozók > Alkalmazottak pontra.</span><span class="sxs-lookup"><span data-stu-id="c2164-107">Go to Human resources > Workers > Employees</span></span>
+2. <span data-ttu-id="c2164-108">Keresse meg és jelölje ki a kívánt rekordot a listán.</span><span class="sxs-lookup"><span data-stu-id="c2164-108">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="c2164-109">Kattintson a Juttatások lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="c2164-109">Click Benefits.</span></span>
+4. <span data-ttu-id="c2164-110">Kattintson az Új elemre.</span><span class="sxs-lookup"><span data-stu-id="c2164-110">Click New.</span></span>
+5. <span data-ttu-id="c2164-111">A Juttatás mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="c2164-111">In the Benefit field, enter or select a value.</span></span>
+6. <span data-ttu-id="c2164-112">A Fedezet kezdő dátuma mezőben adjon meg egy dátumot és időpontot.</span><span class="sxs-lookup"><span data-stu-id="c2164-112">In the Coverage start date field, enter a date and time.</span></span>
+7. <span data-ttu-id="c2164-113">A Fedezet záró dátuma mezőben adjon meg egy dátumot és időpontot.</span><span class="sxs-lookup"><span data-stu-id="c2164-113">In the Coverage end date field, enter a date and time.</span></span>
+8. <span data-ttu-id="c2164-114">Bontsa ki a Kedvezményezettek szakaszt, ha a juttatáshoz kedvezményezetteket kell hozzáadni.</span><span class="sxs-lookup"><span data-stu-id="c2164-114">Expand the Beneficiaries section if beneficiaries need to be added to the benefit.</span></span> <span data-ttu-id="c2164-115">Függő feleket is felvehet ezen az oldalon, ha ez alkalmazható a juttatás esetében.</span><span class="sxs-lookup"><span data-stu-id="c2164-115">You can also add dependents from this page if applicable to the benefit.</span></span>
+9. <span data-ttu-id="c2164-116">Ezen a lapon szerkesztheti a juttatásban való részesítés adatait vagy törölheti őket.</span><span class="sxs-lookup"><span data-stu-id="c2164-116">You can also edit the details of a benefit enrollment or delete an enrollment on this page.</span></span> <span data-ttu-id="c2164-117">Amikor befejezte a juttatásban való részesítés módosítását, zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="c2164-117">When you have finished making changes to the benefit enrollment, close the page.</span></span>
 
-## <a name="enroll-multiple-workers-in-a-benefit"></a><span data-ttu-id="738f2-118">Több dolgozók felvétele juttatási programba</span><span class="sxs-lookup"><span data-stu-id="738f2-118">Enroll multiple workers in a benefit</span></span>
-1. <span data-ttu-id="738f2-119">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="738f2-119">Close the page.</span></span>
-2. <span data-ttu-id="738f2-120">Ugorjon az Emberi erőforrások > Dolgozók > Alkalmazottak pontra.</span><span class="sxs-lookup"><span data-stu-id="738f2-120">Go to Human resources > Workers > Employees</span></span>
-3. <span data-ttu-id="738f2-121">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="738f2-121">In the list, mark the selected row.</span></span>
-4. <span data-ttu-id="738f2-122">Keresse meg és jelölje ki a kívánt rekordot a listán.</span><span class="sxs-lookup"><span data-stu-id="738f2-122">In the list, find and select the desired record.</span></span>
-5. <span data-ttu-id="738f2-123">A kívánt rekord megkeresése és kijelölése a listán</span><span class="sxs-lookup"><span data-stu-id="738f2-123">In the list, find and select the desired record.</span></span>
-6. <span data-ttu-id="738f2-124">Kattintson a Juttatás felvétele elemre.</span><span class="sxs-lookup"><span data-stu-id="738f2-124">Click Enroll in benefits.</span></span>
-7. <span data-ttu-id="738f2-125">A Juttatás mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="738f2-125">In the Benefit field, enter or select a value.</span></span>
-8. <span data-ttu-id="738f2-126">A Fedezet kezdő dátuma mezőben adjon meg egy dátumot és időpontot.</span><span class="sxs-lookup"><span data-stu-id="738f2-126">In the Coverage start date field, enter a date and time.</span></span>
-9. <span data-ttu-id="738f2-127">A Fedezet záró dátuma mezőben adjon meg egy dátumot és időpontot.</span><span class="sxs-lookup"><span data-stu-id="738f2-127">In the Coverage end date field, enter a date and time.</span></span>
-10. <span data-ttu-id="738f2-128">Kattintson a felvétel elemre.</span><span class="sxs-lookup"><span data-stu-id="738f2-128">Click Enroll.</span></span>
-11. <span data-ttu-id="738f2-129">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="738f2-129">Close the page.</span></span>
-12. <span data-ttu-id="738f2-130">Ugorjon az Emberi erőforrások > Juttatások > Besorolás > Juttatásbesorolás eredménye pontra.</span><span class="sxs-lookup"><span data-stu-id="738f2-130">Go to Human Resources > Benefits > Enrollment > Benefit enrollment results</span></span>
-13. <span data-ttu-id="738f2-131">Keresse meg a kívánt juttatáseredmények rekordot.</span><span class="sxs-lookup"><span data-stu-id="738f2-131">Find the benefit results record that you are looking for.</span></span>
-14. <span data-ttu-id="738f2-132">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="738f2-132">In the list, click the link in the selected row.</span></span>
-15. <span data-ttu-id="738f2-133">Ezen az oldalon megtekinthető, hogy mely alkalmazottakat lettek besorolva a juttatáshoz, illetve azokat is, akik nem lettek besorolva.</span><span class="sxs-lookup"><span data-stu-id="738f2-133">This page allows you to view which employees have been enrolled in the benefit, as well as any employees who were not enrolled.</span></span>
+## <a name="enroll-multiple-workers-in-a-benefit"></a><span data-ttu-id="c2164-118">Több dolgozók felvétele juttatási programba</span><span class="sxs-lookup"><span data-stu-id="c2164-118">Enroll multiple workers in a benefit</span></span>
+1. <span data-ttu-id="c2164-119">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="c2164-119">Close the page.</span></span>
+2. <span data-ttu-id="c2164-120">Ugorjon az Emberi erőforrások > Dolgozók > Alkalmazottak pontra.</span><span class="sxs-lookup"><span data-stu-id="c2164-120">Go to Human resources > Workers > Employees</span></span>
+3. <span data-ttu-id="c2164-121">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="c2164-121">In the list, mark the selected row.</span></span>
+4. <span data-ttu-id="c2164-122">Keresse meg és jelölje ki a kívánt rekordot a listán.</span><span class="sxs-lookup"><span data-stu-id="c2164-122">In the list, find and select the desired record.</span></span>
+5. <span data-ttu-id="c2164-123">A kívánt rekord megkeresése és kijelölése a listán</span><span class="sxs-lookup"><span data-stu-id="c2164-123">In the list, find and select the desired record.</span></span>
+6. <span data-ttu-id="c2164-124">Kattintson a Juttatás felvétele elemre.</span><span class="sxs-lookup"><span data-stu-id="c2164-124">Click Enroll in benefits.</span></span>
+7. <span data-ttu-id="c2164-125">A Juttatás mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="c2164-125">In the Benefit field, enter or select a value.</span></span>
+8. <span data-ttu-id="c2164-126">A Fedezet kezdő dátuma mezőben adjon meg egy dátumot és időpontot.</span><span class="sxs-lookup"><span data-stu-id="c2164-126">In the Coverage start date field, enter a date and time.</span></span>
+9. <span data-ttu-id="c2164-127">A Fedezet záró dátuma mezőben adjon meg egy dátumot és időpontot.</span><span class="sxs-lookup"><span data-stu-id="c2164-127">In the Coverage end date field, enter a date and time.</span></span>
+10. <span data-ttu-id="c2164-128">Kattintson a felvétel elemre.</span><span class="sxs-lookup"><span data-stu-id="c2164-128">Click Enroll.</span></span>
+11. <span data-ttu-id="c2164-129">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="c2164-129">Close the page.</span></span>
+12. <span data-ttu-id="c2164-130">Ugorjon az Emberi erőforrások > Juttatások > Besorolás > Juttatásbesorolás eredménye pontra.</span><span class="sxs-lookup"><span data-stu-id="c2164-130">Go to Human Resources > Benefits > Enrollment > Benefit enrollment results</span></span>
+13. <span data-ttu-id="c2164-131">Keresse meg a kívánt juttatáseredmények rekordot.</span><span class="sxs-lookup"><span data-stu-id="c2164-131">Find the benefit results record that you are looking for.</span></span>
+14. <span data-ttu-id="c2164-132">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="c2164-132">In the list, click the link in the selected row.</span></span>
+15. <span data-ttu-id="c2164-133">Ezen az oldalon megtekinthető, hogy mely alkalmazottakat lettek besorolva a juttatáshoz, illetve azokat is, akik nem lettek besorolva.</span><span class="sxs-lookup"><span data-stu-id="c2164-133">This page allows you to view which employees have been enrolled in the benefit, as well as any employees who were not enrolled.</span></span>
 
 
 

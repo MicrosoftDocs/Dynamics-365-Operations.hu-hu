@@ -2,11 +2,9 @@
 title: Szervezeti jelentési hierarchia létrehozása
 description: Ezzel az eljárással a szervezet jelentéseihez szükséges jelentéshierarchiát hozhatja létre.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 10/30/2017
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
@@ -14,85 +12,85 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3db8465c462caffeaf6bd12d17c4b61355ed8eed
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 727a77b5a3a64bd4b679103e24d8c4c384a113e2
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5208751"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5815740"
 ---
-# <a name="create-an-organization-report-hierarchy"></a><span data-ttu-id="8bd68-103">Szervezeti jelentési hierarchia létrehozása</span><span class="sxs-lookup"><span data-stu-id="8bd68-103">Create an organization report hierarchy</span></span>
+# <a name="create-an-organization-report-hierarchy"></a><span data-ttu-id="63af4-103">Szervezeti jelentési hierarchia létrehozása</span><span class="sxs-lookup"><span data-stu-id="63af4-103">Create an organization report hierarchy</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="8bd68-104">Ezzel az eljárással a szervezet jelentéseihez szükséges jelentéshierarchiát hozhatja létre.</span><span class="sxs-lookup"><span data-stu-id="8bd68-104">Use this procedure to create a report hierarchy for organization reporting.</span></span> <span data-ttu-id="8bd68-105">Ezen felvétel célja a dimenzióhierarchia bemutatása, hogy folytatni tudja a munkát, amíg létrehozza a teljes szervezete jelentési struktúráját.</span><span class="sxs-lookup"><span data-stu-id="8bd68-105">The purpose of this recording is to guide you through the dimension hierarchy so that you can continue until the whole organization reporting structure is created.</span></span> <span data-ttu-id="8bd68-106">Ez a felvétel az USP2 bemutató vállalati adatait használja.</span><span class="sxs-lookup"><span data-stu-id="8bd68-106">This recording uses the USP2 demo data company.</span></span>
+<span data-ttu-id="63af4-104">Ezzel az eljárással a szervezet jelentéseihez szükséges jelentéshierarchiát hozhatja létre.</span><span class="sxs-lookup"><span data-stu-id="63af4-104">Use this procedure to create a report hierarchy for organization reporting.</span></span> <span data-ttu-id="63af4-105">Ezen felvétel célja a dimenzióhierarchia bemutatása, hogy folytatni tudja a munkát, amíg létrehozza a teljes szervezete jelentési struktúráját.</span><span class="sxs-lookup"><span data-stu-id="63af4-105">The purpose of this recording is to guide you through the dimension hierarchy so that you can continue until the whole organization reporting structure is created.</span></span> <span data-ttu-id="63af4-106">Ez a felvétel az USP2 bemutató vállalati adatait használja.</span><span class="sxs-lookup"><span data-stu-id="63af4-106">This recording uses the USP2 demo data company.</span></span>
 
-1. <span data-ttu-id="8bd68-107">Lépjen a Költségkönyvelés > Dimenziók > Dimenzióhierarchiák pontra.</span><span class="sxs-lookup"><span data-stu-id="8bd68-107">Go to Cost accounting > Dimensions > Dimension hierarchies.</span></span>
-2. <span data-ttu-id="8bd68-108">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="8bd68-108">Click New.</span></span>
-3. <span data-ttu-id="8bd68-109">A HierarchyTypeComboBox mezőben válassza a Dimenzió-osztályozáshierarchia lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="8bd68-109">In the HierarchyTypeComboBox field, select 'Dimension classification hierarchy'.</span></span>
-    * <span data-ttu-id="8bd68-110">Válassza a Dimenzió-osztályozáshierarchia lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="8bd68-110">Select Dimension classification hierarchy.</span></span> <span data-ttu-id="8bd68-111">A Dimenzióosztályozás-hierarchia típus a szabályokhoz és a jelentésekhez szükséges.</span><span class="sxs-lookup"><span data-stu-id="8bd68-111">The Dimension classification hierarchy type is used to define rules and for reporting purposes.</span></span> <span data-ttu-id="8bd68-112">Támogatja az összes dimenziót, például költségobjektumokat, költségelemeket és statisztikai dimenziókat.</span><span class="sxs-lookup"><span data-stu-id="8bd68-112">It supports all dimensions, such as cost objects, cost elements, and statistical dimensions.</span></span>  
-4. <span data-ttu-id="8bd68-113">Kattintson a Létrehozás lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="8bd68-113">Click Create.</span></span>
-5. <span data-ttu-id="8bd68-114">A Dimenzióhierarchia mezőbe írja be a Szervezet USP2 értéket.</span><span class="sxs-lookup"><span data-stu-id="8bd68-114">In the Dimension hierarchy name field, type 'Oganization USP2'.</span></span>
-6. <span data-ttu-id="8bd68-115">A Dimenzió mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="8bd68-115">In the Dimension field, enter or select a value.</span></span>
-    * <span data-ttu-id="8bd68-116">Válassza a Költséghelyek lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="8bd68-116">Select Cost centers.</span></span>  
-7. <span data-ttu-id="8bd68-117">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="8bd68-117">Click Save.</span></span>
-8. <span data-ttu-id="8bd68-118">Kattintson a Hierarchia megtekintése lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="8bd68-118">Click View hierarchy.</span></span>
-9. <span data-ttu-id="8bd68-119">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="8bd68-119">Click New.</span></span>
-10. <span data-ttu-id="8bd68-120">A Csomópont neve mezőbe írja be a Vezérigazgató értéket.</span><span class="sxs-lookup"><span data-stu-id="8bd68-120">In the Node name field, type 'CEO'.</span></span>
-11. <span data-ttu-id="8bd68-121">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="8bd68-121">Click Save.</span></span>
-12. <span data-ttu-id="8bd68-122">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="8bd68-122">Click New.</span></span>
-13. <span data-ttu-id="8bd68-123">A Csomópont neve mezőbe írja be a Vezérigazgatói költséghelyek értéket.</span><span class="sxs-lookup"><span data-stu-id="8bd68-123">In the Node name field, type 'CEO cost centers'.</span></span>
-14. <span data-ttu-id="8bd68-124">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="8bd68-124">Click Save.</span></span>
-15. <span data-ttu-id="8bd68-125">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="8bd68-125">Click New.</span></span>
-16. <span data-ttu-id="8bd68-126">A Csomópont neve mezőbe írja be a Keleti régió értéket.</span><span class="sxs-lookup"><span data-stu-id="8bd68-126">In the Node name field, type 'Region East'.</span></span>
-17. <span data-ttu-id="8bd68-127">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="8bd68-127">Click Save.</span></span>
-18. <span data-ttu-id="8bd68-128">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="8bd68-128">Click New.</span></span>
-19. <span data-ttu-id="8bd68-129">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="8bd68-129">In the list, mark the selected row.</span></span>
-20. <span data-ttu-id="8bd68-130">A Forrásdimenzió-tag mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="8bd68-130">In the From dimension member field, enter or select a value.</span></span>
-    * <span data-ttu-id="8bd68-131">Válassza ki a csomópontnak megfelelő dimenziótagot.</span><span class="sxs-lookup"><span data-stu-id="8bd68-131">Select the dimension member that corresponds to the node.</span></span>  
-21. <span data-ttu-id="8bd68-132">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="8bd68-132">Click Save.</span></span>
-22. <span data-ttu-id="8bd68-133">A fán válassza a Szervezet USP2\Vezérigazgató\Vezérigazgatói költséghelyek lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="8bd68-133">In the tree, select 'Oganization USP2\CEO\CEO cost centers'.</span></span>
-23. <span data-ttu-id="8bd68-134">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="8bd68-134">Click New.</span></span>
-24. <span data-ttu-id="8bd68-135">A Csomópont neve mezőbe írja be a Nyugati régió értéket.</span><span class="sxs-lookup"><span data-stu-id="8bd68-135">In the Node name field, type 'Region West'.</span></span>
-25. <span data-ttu-id="8bd68-136">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="8bd68-136">Click Save.</span></span>
-26. <span data-ttu-id="8bd68-137">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="8bd68-137">Click New.</span></span>
-27. <span data-ttu-id="8bd68-138">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="8bd68-138">In the list, mark the selected row.</span></span>
-28. <span data-ttu-id="8bd68-139">A Forrásdimenzió-tag mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="8bd68-139">In the From dimension member field, enter or select a value.</span></span>
-    * <span data-ttu-id="8bd68-140">Válassza ki a csomópontnak megfelelő dimenziótagot.</span><span class="sxs-lookup"><span data-stu-id="8bd68-140">Select the dimension member that corresponds to the node.</span></span>  
-29. <span data-ttu-id="8bd68-141">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="8bd68-141">Click Save.</span></span>
-30. <span data-ttu-id="8bd68-142">A fán válassza a Szervezet USP2\Vezérigazgató lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="8bd68-142">In the tree, select 'Oganization USP2\CEO'.</span></span>
-31. <span data-ttu-id="8bd68-143">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="8bd68-143">Click New.</span></span>
-32. <span data-ttu-id="8bd68-144">A Csomópont neve mezőbe írja be a Pénzügyi vezetői költséghelyek értéket.</span><span class="sxs-lookup"><span data-stu-id="8bd68-144">In the Node name field, type 'CFO cost centers'.</span></span>
-33. <span data-ttu-id="8bd68-145">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="8bd68-145">Click Save.</span></span>
-34. <span data-ttu-id="8bd68-146">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="8bd68-146">Click New.</span></span>
-35. <span data-ttu-id="8bd68-147">A Csomópont neve mezőbe írja be a Marketingkamp értéket.</span><span class="sxs-lookup"><span data-stu-id="8bd68-147">In the Node name field, type 'Marketing campa'.</span></span>
-36. <span data-ttu-id="8bd68-148">A Csomópont neve mezőbe írja be a Marketingkampány értéket.</span><span class="sxs-lookup"><span data-stu-id="8bd68-148">In the Node name field, type 'Marketing campaign'.</span></span>
-37. <span data-ttu-id="8bd68-149">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="8bd68-149">Click Save.</span></span>
-38. <span data-ttu-id="8bd68-150">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="8bd68-150">Click New.</span></span>
-39. <span data-ttu-id="8bd68-151">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="8bd68-151">In the list, mark the selected row.</span></span>
-40. <span data-ttu-id="8bd68-152">A Forrásdimenzió-tag mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="8bd68-152">In the From dimension member field, enter or select a value.</span></span>
-    * <span data-ttu-id="8bd68-153">Válassza ki a csomópontnak megfelelő dimenziótagot.</span><span class="sxs-lookup"><span data-stu-id="8bd68-153">Select the dimension member that corresponds to the node.</span></span>  
-41. <span data-ttu-id="8bd68-154">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="8bd68-154">Click Save.</span></span>
-42. <span data-ttu-id="8bd68-155">A fán válassza a 'Organization USP2\CEO\CFO cost centers' lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="8bd68-155">In the tree, select 'Organization USP2\CEO\CFO cost centers'.</span></span>
-43. <span data-ttu-id="8bd68-156">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="8bd68-156">Click New.</span></span>
-44. <span data-ttu-id="8bd68-157">A Csomópont neve mezőbe írja be a Kereskedelmi börzék értéket.</span><span class="sxs-lookup"><span data-stu-id="8bd68-157">In the Node name field, type 'Trade shows'.</span></span>
-45. <span data-ttu-id="8bd68-158">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="8bd68-158">Click Save.</span></span>
-46. <span data-ttu-id="8bd68-159">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="8bd68-159">Click New.</span></span>
-47. <span data-ttu-id="8bd68-160">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="8bd68-160">In the list, mark the selected row.</span></span>
-48. <span data-ttu-id="8bd68-161">A Forrásdimenzió-tag mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="8bd68-161">In the From dimension member field, enter or select a value.</span></span>
-    * <span data-ttu-id="8bd68-162">Válassza ki a csomópontnak megfelelő dimenziótagot.</span><span class="sxs-lookup"><span data-stu-id="8bd68-162">Select the dimension member that corresponds to the node.</span></span>  
-49. <span data-ttu-id="8bd68-163">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="8bd68-163">Click Save.</span></span>
-50. <span data-ttu-id="8bd68-164">A fán válassza a Szervezet USP2\Vezérigazgató lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="8bd68-164">In the tree, select 'Oganization USP2\CEO'.</span></span>
-51. <span data-ttu-id="8bd68-165">A Csomópont neve mezőbe írja be a Informatikai igazgatói költséghelyek értéket.</span><span class="sxs-lookup"><span data-stu-id="8bd68-165">In the Node name field, type 'CIO cost centers'.</span></span>
-52. <span data-ttu-id="8bd68-166">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="8bd68-166">Click Save.</span></span>
-53. <span data-ttu-id="8bd68-167">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="8bd68-167">Click New.</span></span>
-54. <span data-ttu-id="8bd68-168">A Csomópont neve mezőbe írja be a Hívásközpontok értéket.</span><span class="sxs-lookup"><span data-stu-id="8bd68-168">In the Node name field, type 'Call centers'.</span></span>
-55. <span data-ttu-id="8bd68-169">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="8bd68-169">Click Save.</span></span>
-56. <span data-ttu-id="8bd68-170">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="8bd68-170">Click New.</span></span>
-57. <span data-ttu-id="8bd68-171">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="8bd68-171">In the list, mark the selected row.</span></span>
-58. <span data-ttu-id="8bd68-172">A Forrásdimenzió-tag mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="8bd68-172">In the From dimension member field, enter or select a value.</span></span>
-    * <span data-ttu-id="8bd68-173">Válassza ki a csomópontnak megfelelő dimenziótagot.</span><span class="sxs-lookup"><span data-stu-id="8bd68-173">Select the dimension member that corresponds to the node.</span></span>  
-59. <span data-ttu-id="8bd68-174">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="8bd68-174">Click Save.</span></span>
+1. <span data-ttu-id="63af4-107">Lépjen a Költségkönyvelés > Dimenziók > Dimenzióhierarchiák pontra.</span><span class="sxs-lookup"><span data-stu-id="63af4-107">Go to Cost accounting > Dimensions > Dimension hierarchies.</span></span>
+2. <span data-ttu-id="63af4-108">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="63af4-108">Click New.</span></span>
+3. <span data-ttu-id="63af4-109">A HierarchyTypeComboBox mezőben válassza a Dimenzió-osztályozáshierarchia lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="63af4-109">In the HierarchyTypeComboBox field, select 'Dimension classification hierarchy'.</span></span>
+    * <span data-ttu-id="63af4-110">Válassza a Dimenzió-osztályozáshierarchia lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="63af4-110">Select Dimension classification hierarchy.</span></span> <span data-ttu-id="63af4-111">A Dimenzióosztályozás-hierarchia típus a szabályokhoz és a jelentésekhez szükséges.</span><span class="sxs-lookup"><span data-stu-id="63af4-111">The Dimension classification hierarchy type is used to define rules and for reporting purposes.</span></span> <span data-ttu-id="63af4-112">Támogatja az összes dimenziót, például költségobjektumokat, költségelemeket és statisztikai dimenziókat.</span><span class="sxs-lookup"><span data-stu-id="63af4-112">It supports all dimensions, such as cost objects, cost elements, and statistical dimensions.</span></span>  
+4. <span data-ttu-id="63af4-113">Kattintson a Létrehozás lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="63af4-113">Click Create.</span></span>
+5. <span data-ttu-id="63af4-114">A Dimenzióhierarchia mezőbe írja be a Szervezet USP2 értéket.</span><span class="sxs-lookup"><span data-stu-id="63af4-114">In the Dimension hierarchy name field, type 'Oganization USP2'.</span></span>
+6. <span data-ttu-id="63af4-115">A Dimenzió mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="63af4-115">In the Dimension field, enter or select a value.</span></span>
+    * <span data-ttu-id="63af4-116">Válassza a Költséghelyek lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="63af4-116">Select Cost centers.</span></span>  
+7. <span data-ttu-id="63af4-117">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="63af4-117">Click Save.</span></span>
+8. <span data-ttu-id="63af4-118">Kattintson a Hierarchia megtekintése lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="63af4-118">Click View hierarchy.</span></span>
+9. <span data-ttu-id="63af4-119">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="63af4-119">Click New.</span></span>
+10. <span data-ttu-id="63af4-120">A Csomópont neve mezőbe írja be a Vezérigazgató értéket.</span><span class="sxs-lookup"><span data-stu-id="63af4-120">In the Node name field, type 'CEO'.</span></span>
+11. <span data-ttu-id="63af4-121">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="63af4-121">Click Save.</span></span>
+12. <span data-ttu-id="63af4-122">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="63af4-122">Click New.</span></span>
+13. <span data-ttu-id="63af4-123">A Csomópont neve mezőbe írja be a Vezérigazgatói költséghelyek értéket.</span><span class="sxs-lookup"><span data-stu-id="63af4-123">In the Node name field, type 'CEO cost centers'.</span></span>
+14. <span data-ttu-id="63af4-124">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="63af4-124">Click Save.</span></span>
+15. <span data-ttu-id="63af4-125">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="63af4-125">Click New.</span></span>
+16. <span data-ttu-id="63af4-126">A Csomópont neve mezőbe írja be a Keleti régió értéket.</span><span class="sxs-lookup"><span data-stu-id="63af4-126">In the Node name field, type 'Region East'.</span></span>
+17. <span data-ttu-id="63af4-127">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="63af4-127">Click Save.</span></span>
+18. <span data-ttu-id="63af4-128">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="63af4-128">Click New.</span></span>
+19. <span data-ttu-id="63af4-129">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="63af4-129">In the list, mark the selected row.</span></span>
+20. <span data-ttu-id="63af4-130">A Forrásdimenzió-tag mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="63af4-130">In the From dimension member field, enter or select a value.</span></span>
+    * <span data-ttu-id="63af4-131">Válassza ki a csomópontnak megfelelő dimenziótagot.</span><span class="sxs-lookup"><span data-stu-id="63af4-131">Select the dimension member that corresponds to the node.</span></span>  
+21. <span data-ttu-id="63af4-132">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="63af4-132">Click Save.</span></span>
+22. <span data-ttu-id="63af4-133">A fán válassza a Szervezet USP2\Vezérigazgató\Vezérigazgatói költséghelyek lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="63af4-133">In the tree, select 'Oganization USP2\CEO\CEO cost centers'.</span></span>
+23. <span data-ttu-id="63af4-134">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="63af4-134">Click New.</span></span>
+24. <span data-ttu-id="63af4-135">A Csomópont neve mezőbe írja be a Nyugati régió értéket.</span><span class="sxs-lookup"><span data-stu-id="63af4-135">In the Node name field, type 'Region West'.</span></span>
+25. <span data-ttu-id="63af4-136">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="63af4-136">Click Save.</span></span>
+26. <span data-ttu-id="63af4-137">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="63af4-137">Click New.</span></span>
+27. <span data-ttu-id="63af4-138">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="63af4-138">In the list, mark the selected row.</span></span>
+28. <span data-ttu-id="63af4-139">A Forrásdimenzió-tag mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="63af4-139">In the From dimension member field, enter or select a value.</span></span>
+    * <span data-ttu-id="63af4-140">Válassza ki a csomópontnak megfelelő dimenziótagot.</span><span class="sxs-lookup"><span data-stu-id="63af4-140">Select the dimension member that corresponds to the node.</span></span>  
+29. <span data-ttu-id="63af4-141">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="63af4-141">Click Save.</span></span>
+30. <span data-ttu-id="63af4-142">A fán válassza a Szervezet USP2\Vezérigazgató lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="63af4-142">In the tree, select 'Oganization USP2\CEO'.</span></span>
+31. <span data-ttu-id="63af4-143">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="63af4-143">Click New.</span></span>
+32. <span data-ttu-id="63af4-144">A Csomópont neve mezőbe írja be a Pénzügyi vezetői költséghelyek értéket.</span><span class="sxs-lookup"><span data-stu-id="63af4-144">In the Node name field, type 'CFO cost centers'.</span></span>
+33. <span data-ttu-id="63af4-145">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="63af4-145">Click Save.</span></span>
+34. <span data-ttu-id="63af4-146">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="63af4-146">Click New.</span></span>
+35. <span data-ttu-id="63af4-147">A Csomópont neve mezőbe írja be a Marketingkamp értéket.</span><span class="sxs-lookup"><span data-stu-id="63af4-147">In the Node name field, type 'Marketing campa'.</span></span>
+36. <span data-ttu-id="63af4-148">A Csomópont neve mezőbe írja be a Marketingkampány értéket.</span><span class="sxs-lookup"><span data-stu-id="63af4-148">In the Node name field, type 'Marketing campaign'.</span></span>
+37. <span data-ttu-id="63af4-149">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="63af4-149">Click Save.</span></span>
+38. <span data-ttu-id="63af4-150">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="63af4-150">Click New.</span></span>
+39. <span data-ttu-id="63af4-151">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="63af4-151">In the list, mark the selected row.</span></span>
+40. <span data-ttu-id="63af4-152">A Forrásdimenzió-tag mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="63af4-152">In the From dimension member field, enter or select a value.</span></span>
+    * <span data-ttu-id="63af4-153">Válassza ki a csomópontnak megfelelő dimenziótagot.</span><span class="sxs-lookup"><span data-stu-id="63af4-153">Select the dimension member that corresponds to the node.</span></span>  
+41. <span data-ttu-id="63af4-154">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="63af4-154">Click Save.</span></span>
+42. <span data-ttu-id="63af4-155">A fán válassza a 'Organization USP2\CEO\CFO cost centers' lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="63af4-155">In the tree, select 'Organization USP2\CEO\CFO cost centers'.</span></span>
+43. <span data-ttu-id="63af4-156">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="63af4-156">Click New.</span></span>
+44. <span data-ttu-id="63af4-157">A Csomópont neve mezőbe írja be a Kereskedelmi börzék értéket.</span><span class="sxs-lookup"><span data-stu-id="63af4-157">In the Node name field, type 'Trade shows'.</span></span>
+45. <span data-ttu-id="63af4-158">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="63af4-158">Click Save.</span></span>
+46. <span data-ttu-id="63af4-159">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="63af4-159">Click New.</span></span>
+47. <span data-ttu-id="63af4-160">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="63af4-160">In the list, mark the selected row.</span></span>
+48. <span data-ttu-id="63af4-161">A Forrásdimenzió-tag mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="63af4-161">In the From dimension member field, enter or select a value.</span></span>
+    * <span data-ttu-id="63af4-162">Válassza ki a csomópontnak megfelelő dimenziótagot.</span><span class="sxs-lookup"><span data-stu-id="63af4-162">Select the dimension member that corresponds to the node.</span></span>  
+49. <span data-ttu-id="63af4-163">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="63af4-163">Click Save.</span></span>
+50. <span data-ttu-id="63af4-164">A fán válassza a Szervezet USP2\Vezérigazgató lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="63af4-164">In the tree, select 'Oganization USP2\CEO'.</span></span>
+51. <span data-ttu-id="63af4-165">A Csomópont neve mezőbe írja be a Informatikai igazgatói költséghelyek értéket.</span><span class="sxs-lookup"><span data-stu-id="63af4-165">In the Node name field, type 'CIO cost centers'.</span></span>
+52. <span data-ttu-id="63af4-166">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="63af4-166">Click Save.</span></span>
+53. <span data-ttu-id="63af4-167">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="63af4-167">Click New.</span></span>
+54. <span data-ttu-id="63af4-168">A Csomópont neve mezőbe írja be a Hívásközpontok értéket.</span><span class="sxs-lookup"><span data-stu-id="63af4-168">In the Node name field, type 'Call centers'.</span></span>
+55. <span data-ttu-id="63af4-169">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="63af4-169">Click Save.</span></span>
+56. <span data-ttu-id="63af4-170">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="63af4-170">Click New.</span></span>
+57. <span data-ttu-id="63af4-171">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="63af4-171">In the list, mark the selected row.</span></span>
+58. <span data-ttu-id="63af4-172">A Forrásdimenzió-tag mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="63af4-172">In the From dimension member field, enter or select a value.</span></span>
+    * <span data-ttu-id="63af4-173">Válassza ki a csomópontnak megfelelő dimenziótagot.</span><span class="sxs-lookup"><span data-stu-id="63af4-173">Select the dimension member that corresponds to the node.</span></span>  
+59. <span data-ttu-id="63af4-174">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="63af4-174">Click Save.</span></span>
 
 
 
