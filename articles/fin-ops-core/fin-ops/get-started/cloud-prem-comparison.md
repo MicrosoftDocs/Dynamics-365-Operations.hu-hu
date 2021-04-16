@@ -2,7 +2,6 @@
 title: Felhő és helyszíni szolgáltatások összehasonlítása
 description: A témakör bemutatja, hogy mely szolgáltatásokat támogatja a felhőalapú és a helyszíni megoldás.
 author: sericks007
-manager: AnnBe
 ms.date: 01/14/2021
 ms.topic: article
 ms.prod: ''
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 52dfff77fa7d14e560ce20596a4d79edeadb5390
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: e2126983fef2b59af5c8082a6495f808afeb5f9c
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5566636"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5744051"
 ---
 # <a name="comparison-of-cloud-and-on-premises-features"></a>Felhőalapú és helyszíni szolgáltatások összehasonlítása
 
@@ -43,9 +42,9 @@ A következő táblázatokban az alkalmazási területek listája található. A
 |---------------------|-----------------------------|-----------|-----------------|
 | Megfelelés és tanúsítványok        |                                                                                           | Igen       | Igen             |
 |                                      | SOC 1 1. típusú tanúsítvány                                                                | Igen       | Nem              |
-| Adatok integrálása és kezelése      |                                                                                           | Igen       | Igen             
+| Adatok integrálása és kezelése      |                                                                                           | Igen       | Igen             |
 |                                      | Adatok exportálása a saját adatraktárba                                                    | Igen       | Igen             |
-|                                      | Növekményes frissítések exportálásának engedélyezése egy adatentitásba                                 | Igen       | Igen              |
+|                                      | Növekményes frissítések exportálásának engedélyezése egy adatentitásba                                 | Igen       | Igen             |
 |                                      | Adatintegrálások                                                                         | Igen       | Igen             |
 | Dokumentumkezelés                  |                                                                                           | Igen       | Igen             |
 | Pénzgazdálkodás                 |                                                                                           | Igen       | Igen             |
@@ -62,8 +61,8 @@ A következő táblázatokban az alkalmazási területek listája található. A
 |                                      | Elemzési munkaterületek                                                                     | Igen       | Nincs              |
 |                                      | Intelligens üzleti folyamat: ajánlások                                             | Igen       | Szám              |
 |                                      | Power BI jelentések készítése az OData segítségével a Power BI asztal vagy az Excel PowerQuery eszközök használatával    | Igen       | Szám              |
-|                                      | Az SQL Server Reporting Services (SSRS) támogatja a méretezést                                 | Igen       | Nem              |
-|                                      | A telemetria-adatokat átviszik a felhőbe                                                   | Igen       | Nem              |
+|                                      | Az SQL Server Reporting Services (SSRS) támogatja a méretezést                                 | Igen       | Igen             |
+|                                      | A telemetria-adatokat átviszik a felhőbe                                                   | Igen       | Nincs              |
 | Lifecycle Services                   |                                                                                           | Igen       | Igen             |
 |                                      | Konfigurálható üzleti folyamatok                                                           | Igen       | Nem              |
 | Honosítások                        |                                                                                           | Igen       | Igen             |
@@ -85,7 +84,7 @@ A következő táblázatokban az alkalmazási területek listája található. A
 
 | **Terület**                | **Funkció**             | **Felhőbeli** | **Helyszíni** |
 |-------------------------|-------------------|-----------|-----------------|
-| Eszközkezelés                     |                                                                                           | Igen       | Nincs |
+| Eszközkezelés                     |                                                                                           | Igen       | Nincs              |
 | Megfelelés és tanúsítványok        |                                                                                           | Igen       | Igen             |
 |                                      | SOC 1 1. típusú tanúsítvány                                                                | Igen       | Szám              |
 | Költségkönyvelés                      |                                                                                           | Igen       | Igen             |
@@ -96,7 +95,7 @@ A következő táblázatokban az alkalmazási területek listája található. A
 | Adatok integrálása és kezelése      |                                                                                           | Igen       | Igen             |
 |                                      | Konfigurációs alapú kiterjesztés                                                            | Igen       | Nincs              |
 |                                      | Adatok exportálása a saját adatraktárba                                                    | Igen       | Igen             |
-|                                      | Növekményes frissítések exportálásának engedélyezése egy adatentitásba                                 | Igen       | Igen              |
+|                                      | Növekményes frissítések exportálásának engedélyezése egy adatentitásba                                 | Igen       | Igen             |
 |                                      | Adatintegrálások                                                                         | Igen       | Igen             |
 | Dokumentumkezelés                  |                                                                                           | Igen       | Igen             |
 | Súgó                                 |                                                                                           | Igen       | Nem              |
@@ -111,7 +110,7 @@ A következő táblázatokban az alkalmazási területek listája található. A
 |                                      | Elemzési munkaterületek                                                                     | Igen       | Nincs              |
 |                                      | Intelligens üzleti folyamat: ajánlások                                             | Igen       | Szám              |
 |                                      | Power BI jelentések készítése az OData segítségével a Power BI asztal vagy az Excel PowerQuery eszközök használatával    | Igen       | Szám              |
-|                                      | Az SQL Server Reporting Services (SSRS) támogatja a méretezést                                 | Igen       | Nincs              |
+|                                      | Az SQL Server Reporting Services (SSRS) támogatja a méretezést                                 | Igen       | Igen             |
 |                                      | A telemetria-adatokat átviszik a felhőbe                                                   | Igen       | Nincs              |
 | Készletgazdálkodás                 |                                                                                           | Igen       | Igen             |
 | Lifecycle Services                   |                                                                                           | Igen       | Igen             |

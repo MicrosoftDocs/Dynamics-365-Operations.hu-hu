@@ -1,8 +1,7 @@
 ---
 title: Adja meg a bérlista nyitó egyenlegeit
-description: A témakör a nyitó egyenlegek bevitelének lépéseit ismerteti a kereseti kódok, levonások, juttatások és adók esetében. Ez az információ értékes a partnerek számára az adatok áttelepítéséhez vagy átviteléhez egy új Bérlista rendszerbe egy másik rendszerből.
+description: A témakör a nyitó egyenlegek bevitelének lépéseit ismerteti a kereseti kódok, levonások, juttatások és adók esetében.
 author: andreabichsel
-manager: AnnBe
 ms.date: 11/20/2020
 ms.topic: article
 ms.prod: ''
@@ -15,14 +14,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 209636d6416a784d298bcfb134f5486c1f5cf202
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 9272828fe5d6e0bf131ea66353a0d5c3c7b1c4bd
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5568545"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5752150"
 ---
-# <a name="enter-payroll-beginning-balances"></a>Adja meg a bérlista nyitó egyenlegeit
+# <a name="enter-payroll-beginning-balances"></a>Bérlista nyitó egyenlegeinek megadása
 
 [!include [banner](../../includes/banner.md)]
 

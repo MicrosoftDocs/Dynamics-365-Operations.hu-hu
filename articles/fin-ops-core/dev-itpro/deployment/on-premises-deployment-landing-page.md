@@ -2,8 +2,7 @@
 title: Helyszíni telepítés kezdőlapja
 description: Ez a témakör az on-premises telepítésekhez nyújt információkat és hivatkozásokat.
 author: sericks007
-manager: AnnBe
-ms.date: 11/23/2020
+ms.date: 03/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: dc9642ee224290891c738c9d0d2b96ff119a1622
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: caa3fccd9dcdfb3950958e793057131e77676d91
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5564060"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749305"
 ---
 # <a name="on-premises-deployment-home-page"></a>Helyszíni telepítés kezdőlapja
 
@@ -38,12 +37,14 @@ Telepíthet Dynamics 365 Finance  + Operations (helyi) alkalmazást. Amikor egy 
 
 ## <a name="onboard"></a>Felvétel
 - [Helyszíni projektek beállítása a Lifecycle Services (LCS) szolgáltatásban](../lifecycle-services/lbd-create-lcs-on-prem-project.md)
-- [Helyszíni környezetek telepítése és üzemeltetése (Platform update 12-es és újabb verziókon)](setup-deploy-on-premises-pu12.md)
+- [Helyszíni környezetek telepítése és üzemeltetése (Platform update 41-es és újabb verziókon)](setup-deploy-on-premises-pu41.md)
+- [Helyszíni környezetek beállítása és telepítése (Platformfrissítés 12–40-es verziókon)](setup-deploy-on-premises-pu12.md)
 - [Hálózati nyomtatók helyszíni környezetben történő telepítése](../analytics/install-network-printer-onprem.md)
 - [Az SQL Server Reporting Services konfigurálása on-premises telepítésekhez](../analytics/configure-ssrs-on-premises.md)
 - [Egyéni modellek fejlesztése és telepítése helyszíni környezetekhez](develop-deploy-custom-models-on-premises.md)
 
 ## <a name="work-in-your-on-premises-deployment"></a>Munka az on-premises telepítésen
+- [Az SQL Server Reporting Services (SSRS) csomópontok magas rendelkezésre állásának konfigurálása](onprem-SSRSHA.md)
 - [A dokumentumkezelés konfigurálása](../../fin-ops/organization-administration/configure-document-management.md)
 - [Elektronikus jelentéskészítési (ER) konfigurációk importálása](../analytics/electronic-reporting-import-ger-configurations.md)
 - [Dokumentumok létrehozása, közzététele és nyomtatása helyszíni telepítéseknél](../analytics/printing-capabilities-on-premises.md)

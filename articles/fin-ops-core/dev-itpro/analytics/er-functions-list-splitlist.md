@@ -2,8 +2,7 @@
 title: SPLITLIST ER-függvény
 description: A témakör tájékoztatást nyújt a SPLITLIST Elektronikus jelentéskészítés (ER) függvény használatának módjáról.
 author: NickSelin
-manager: kfend
-ms.date: 12/12/2019
+ms.date: 03/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: af8c413726ca8d9f92eff18807e7fa9002fc9d37
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 99e199e238b3132622a8b305895637b430e8f6d2
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5559138"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745569"
 ---
 # <a name="splitlist-er-function"></a>SPLITLIST ER-függvény
 
@@ -29,10 +28,16 @@ ms.locfileid: "5559138"
 
 A `SPLITLIST` függvény a megadott listát allistákká (vagy kötegekké) osztja fel, amelynek mindegyike megadott számú rekordot tartalmaz. Ezt követően az eredményt új *Rekordlista* értékként adja vissza, amely a kötegekből áll.
 
-## <a name="syntax"></a>Szintaxis
+## <a name="syntax-1"></a>Szintaxis 1
 
 ```vb
 SPLITLIST (list, number)
+```
+
+## <a name="syntax-2"></a>Szintaxis 2
+
+```vb
+SPLITLIST (list, number, on-demand reading flag)
 ```
 
 ## <a name="arguments"></a>Argumentumok
@@ -45,7 +50,11 @@ A *Rekordlista* adattípus adatforrásának érvényes elérési útja.
 
 A rekordok maximális száma kötegenként.
 
-## <a name="return-values"></a>Visszaadott értékek
+`on-demand reading flag`: *Logikai*
+
+Egy *Logikai* érték, amely meghatározza, hogy az allisták elemeit igény szerint létre kell-e hozni.
+
+## <a name="return-values"></a>Visszatérési értékek
 
 *Rekordlista*
 
@@ -62,6 +71,8 @@ A visszaadott kötegek listája a következő elemeket tartalmazza:
 - **BatchNumber:** *Egész*
 
     Az aktuális köteg száma a visszaadott listában.
+
+Ha az igény szerinti olvasási jelző **Igaz** értékre van állítva, kérésre allisták jönnek létre, amelyek lehetővé teszik a memóriafelhasználás csökkentését, de teljesítménycsökkenést okozhatnak, ha az elemeket nem egymás után használják.
 
 ## <a name="example"></a>Példa
 

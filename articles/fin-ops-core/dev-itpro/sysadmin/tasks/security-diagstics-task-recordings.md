@@ -2,7 +2,6 @@
 title: Biztonsági diagnosztika feladatrögzítésekhez
 description: Ez a témakör azt mutatja be, hogyan lehet elemezni és kezelni a biztonsági engedélykövetelményeket a feladatrögzítés alapján.
 author: Peakerbl
-manager: AnnBe
 ms.date: 05/05/2020
 ms.topic: business-process
 ms.prod: ''
@@ -14,12 +13,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Version 10.0.9
-ms.openlocfilehash: 99f9da527e818892eb3f46aceca3cc4588b99e81
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: cb4d544d8d74ad10432901381253f84ec9331ae7
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5570981"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745765"
 ---
 # <a name="security-diagnostics-for-task-recordings"></a>Biztonsági diagnosztika feladatrögzítésekhez
 

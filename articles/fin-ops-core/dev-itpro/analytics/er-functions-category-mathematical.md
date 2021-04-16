@@ -2,7 +2,6 @@
 title: A matematikai kategóriába tartozó ER-függvények listája
 description: A témakör tájékoztatást nyújt az Elektronikus jelentéskészítésben (ER) támogatott matematikai függvényekről.
 author: NickSelin
-manager: kfend
 ms.date: 12/17/2019
 ms.topic: article
 ms.prod: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2b144913f4752861ee52fe3eb542f847b9f9d139
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 208adfde42b44d434af0c71868f73ac7cde8781c
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5561638"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5748039"
 ---
 # <a name="list-of-er-functions-in-the-mathematical-category"></a>A matematikai kategóriába tartozó ER-függvények listája
 

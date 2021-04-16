@@ -2,7 +2,6 @@
 title: A konfigurált ER-összetevő ellenőrzése a futásidejű problémák megelőzése érdekében
 description: Ez a témakör azt mutatja be, hogyan lehet ellenőrizni a konfigurált Elektronikus jelentéskészítési (ER) összetevőket az esteleges futásidejű problémák megelőzésére.
 author: NickSelin
-manager: AnnBe
 ms.date: 03/04/2021
 ms.topic: article
 ms.prod: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 86db6dc27a8a76e90494e3dc7a7cc9c828f9ec37
-ms.sourcegitcommit: a3052f76ad71894dbef66566c07c6e2c31505870
+ms.openlocfilehash: d164dfe10c9736d8b4529a32ffba765f94ad37d9
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "5574125"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5753840"
 ---
 # <a name="inspect-the-configured-er-component-to-prevent-runtime-issues"></a>A konfigurált ER-összetevő ellenőrzése a futásidejű problémák megelőzése érdekében
 
@@ -666,19 +665,19 @@ A következő ábra bemutatja azt a futásidejű hibát, amely akkor jelentkezik
 
 ![Futásidejű hiba, amely formátumleképezésnek Formátumtervező lapon történő futtatásakor fordul elő](./media/er-components-inspections-10b.png)
 
-### <a name="automatic-resolution"></a>Automatikus megoldás
+### <a name="automatic-resolution&quot;></a>Automatikus megoldás
 
 A hiba automatikus javítása nem lehetséges.
 
-### <a name="manual-resolution"></a>Manuális megoldás
+### <a name=&quot;manual-resolution&quot;></a>Manuális megoldás
 
-#### <a name="option-1"></a>1. beállítás
+#### <a name=&quot;option-1&quot;></a>1. beállítás
 
 Távolítsa el a **Gyorsítótár** jelölőt a **Szállító** adatforrásból. A **FilteredVendor** adatforrás ezután végrehajthatóvá válik, de a VendTable táblában említett **Szállító** adatforrás minden alkalommal elérhető lesz, amikor a **FilteredVendor** adatforrást meghívják.
 
-#### <a name="option-2"></a>2. beállítás
+#### <a name=&quot;option-2&quot;></a>2. beállítás
 
-Módosítsa a **FilteredVendor** adatforrás kifejezését `FILTER(Vendor, Vendor.AccountNum="US-101")` helyett `WHERE(Vendor, Vendor.AccountNum="US-101")` értékre. Ebben az esetben a VendTable táblában említett **Szállító** adatforrás csak a **Szállító** adatforrás első hívása során érhető el. A rekordok kiválasztása azonban a memóriában történik. Ezért ez a megközelítés gyenge teljesítményt okozhat.
+Módosítsa a **FilteredVendor** adatforrás kifejezését `FILTER(Vendor, Vendor.AccountNum=&quot;US-101")` helyett `WHERE(Vendor, Vendor.AccountNum="US-101")` értékre. Ebben az esetben a VendTable táblában említett **Szállító** adatforrás csak a **Szállító** adatforrás első hívása során érhető el. A rekordok kiválasztása azonban a memóriában történik. Ezért ez a megközelítés gyenge teljesítményt okozhat.
 
 ## <a name="missing-binding"></a><a id="i11"></a>Hiányzó kötés
 

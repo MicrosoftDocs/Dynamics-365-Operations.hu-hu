@@ -2,8 +2,7 @@
 title: ER – Szükséges konfigurációk létrehozása adatok importálásához egy külső fájlból
 description: Ez a témakör bemutatja, hogyan lehet az elektronikus jelentési konfigurációt úgy megtervezni, hogy külső fájlból importáljon adatokat a Microsoft Dynamics 365 Finance alkalmazásába.
 author: NickSelin
-manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 03/24/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -14,18 +13,25 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1b8a94173c7c5367b79bfcb354f0397515d94445
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 2194bdc918035bf3aebe9b90ddc8a30f9937bb0c
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5564290"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5751462"
 ---
 # <a name="er-create-required-configurations-to-import-data-from-an-external-file"></a>ER – Szükséges konfigurációk létrehozása adatok importálásához egy külső fájlból
 
 [!include [banner](../../includes/banner.md)]
 
-A következő lépések leírják, hogy egy Rendszergazda vagy Elektronikus jelentések fejlesztője szerepkörrel rendelkező felhasználó miként hozhat létre egy elektronikus jelentés (ER) konfigurációt adatok importálására az alkalmazásba külső fájlból. Ebben a példában létrehozzuk a szükséges ER-konfigurációkat a Litware, Inc. mintavállalatra vonatkozóan. A lépések végrehajtásához először a következő feladat-útmutató lépéseit kell végrehajtani: „ER – Konfigurációszolgáltató létrehozása, és megjelölés aktívként.” A lépések a USMF-adathalmazzal hajthatók végre. Emellett le kell tölteni és helyben menteni kell a következő fájlokat az Elektronikus jelentések áttekintése témakör hivatkozásainak (https://go.microsoft.com/fwlink/?linkid=852550): használatával: 1099model.xml, 1099format.xml, 1099entries.xml, 1099entries.xlsx.
+A következő lépések leírják, hogy egy Rendszergazda vagy Elektronikus jelentések fejlesztője szerepkörrel rendelkező felhasználó miként hozhat létre egy elektronikus jelentés (ER) konfigurációt adatok importálására az alkalmazásba külső fájlból. Ebben a példában létrehozzuk a szükséges ER-konfigurációkat a Litware, Inc. mintavállalatra vonatkozóan. A lépések végrehajtásához először a következő feladat-útmutató lépéseit kell végrehajtani: „ER – Konfigurációszolgáltató létrehozása, és megjelölés aktívként.” A lépések a USMF-adathalmazzal hajthatók végre. A következő fájlokat is le kell töltenie és helyben mentenie: 
+
+| Tartalom leírása                       | Fájlnév                                     |
+|-------------------------------------------|-----------------------------------------------|
+| ER-adatmodell konfigurációja - 1099 | [1099model.xml](https://download.microsoft.com/download/b/d/9/bd9e8373-d558-4ab8-aa9b-31981adc97ea/1099model.xml)                  |
+| ER-formátum konfigurációja - 1099    | [1099format.xml](https://download.microsoft.com/download/e/8/7/e87154b0-b53f-431f-8e1e-0b7f7c9805a9/1099format.xml)                  |
+| Minta a XML-formátumú bejövő dokumentumra                          | [1099entries.xml](https://download.microsoft.com/download/4/0/3/403a4958-df24-476a-b8b0-6843a9fa7f89/1099entries.xml)        |
+| Minta a beérkező dokumentum adatinak kezelésére szolgáló munkafüzetre                          | [1099entries.xlsx](https://download.microsoft.com/download/6/0/0/6001abab-a331-48db-a939-41851fb0f5d0/1099entries.xlsx) |
 
 Az ER lehetővé teszi az üzleti felhasználók számára, hogy a  táblázataiba történő külső adatfájl-importálás folyamatához az XML- vagy a TXT-formátumot konfigurálják. Először ki kell alakítani egy absztrakt adatmodell és egy ER adatmodell konfigurációt, amely leképezi az importálandó adatokat. Ezután definiálni kell az importálandó fájl struktúráját, valamint azt az eljárást, amelyet az adatok portolására fog használni a fájlból az absztrakt adatmodellbe. Az absztrakt adatmodellhez létre kell hozni az ER-formátum konfigurációját, amely leképezi a megtervezett adatmodellt. Ezt követően az adatmodell konfigurációját ki kell bővíteni a leképezéssel, amely leírja, hogyan marad meg az importált adatok absztrakt adatmodellje, és hogyan történik a felhasználása a táblák frissítéséhez.  Az ER-adatmodell konfigurációját ki kell egészíteni egy új modell-leképezéssel, amely leírja az adatmodell kötését az alkalmazás céljához.  
 
