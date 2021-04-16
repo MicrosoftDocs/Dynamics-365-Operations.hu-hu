@@ -2,11 +2,9 @@
 title: Jövőben esedékes csekkek
 description: Ez a cikk a Microsoft Dynamics 365 Finance támogatását írja le a jövőben esedékes csekkeket illetően. A jövőben esedékes csekkek olyan csekkek, amelyeket jövőbeli dátumon való fizetés céljából állítják ki. Emiatt a csekk nem váltható be a megadott dátumig.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendPostDatedChecks, CustPostDatedChecks
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: leguo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7562999a09e0036a7ea765c0cb0954412bbbda69
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 9e937361802aa1443f3e2ef9f3bb95d3f4966da7
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5228863"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5815788"
 ---
 # <a name="postdated-checks"></a>Jövőben esedékes csekkek
 

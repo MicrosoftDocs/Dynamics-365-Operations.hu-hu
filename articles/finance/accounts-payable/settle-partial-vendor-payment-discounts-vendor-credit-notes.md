@@ -2,11 +2,9 @@
 title: Részleges szállítói kifizetés rendezése, amely jóváírásokra vonatkozó engedménnyel rendelkezik
 description: Ez a cikk végigvezeti Önt egy eseten, amelyben egy jóváírás egy számlával van kiegyenlítve.
 author: abruer
-manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a9a23ef6bff5f135e7f4189add776aeed18fbe79
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 6e634796c7143c14a872c721f298f3ab28cbddd6
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5227304"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5827842"
 ---
 # <a name="settle-a-partial-vendor-payment-that-has-discounts-on-credit-notes"></a>Részleges szállítói kifizetés rendezése, amely jóváírásokra vonatkozó engedménnyel rendelkezik
 
@@ -42,10 +40,10 @@ Június 29-én April egy 1.000,00 értékű számlát hoz létre 3050-es száll�
 
 A jóváírás engedményadatai a **Nyitott tranzakciók kiegyenlítése** lap alján jelennek meg.
 
-|                              |           |
+| Mező                        | Érték     |
 |------------------------------|-----------|
 | Készpénzfizetési engedmény dátuma           | 2015/13/7 |
-| Készpénzfizetési engedmény összege         | 2,00      |
+| Készpénzfizetési engedmény összege         | 2.00      |
 | Készpénzfizetési engedmény használata            | Normál    |
 | Alkalmazott készpénzfizetési engedmény          | 0,00      |
 | Alkalmazandó készpénzfizetési engedmény összege | 2,00      |
