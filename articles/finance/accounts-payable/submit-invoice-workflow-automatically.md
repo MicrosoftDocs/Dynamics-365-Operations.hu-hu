@@ -2,11 +2,9 @@
 title: Számlák elküldése a munkafolyamat-rendszerbe és a terméknyugtasorok egyeztetése
 description: Ez a témakör a szállítói számlák munkafolyamat-rendszerbe történő elküldését és a feladott terméknyugta sorainak a szállítói számlák soraival való automatikus egyeztetését ismerteti.
 author: abruer
-manager: AnnBe
 ms.date: 09/08/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-09-08
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 534b5dbc54a516fea0b3f7090042d247c1076737
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 84699746349024854a4eeb9cee62960ec38bc338
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5231542"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5827818"
 ---
 # <a name="submit-invoices-to-the-workflow-system-and-match-product-receipt-lines"></a>Számlák elküldése a munkafolyamat-rendszerbe és a terméknyugtasorok egyeztetése
 
@@ -41,7 +39,9 @@ A munkafolyamatban a **Beküldte** elemhez megadott érték az a felhasználói 
 
 Az érintés nélküli, kötelezettségeken belüli számlázási folyamat részeként a rendszer automatikusan egyezteti a feladott terméknyugtákat a számlasorokkal. Ehhez a feladathoz egy háromirányú egyeztetési irányelvet kell definiálni. Ez a funkció akkor érhető el, ha a **Szállítói számla automatizálása** funkció engedélyezett a **Funkciókezelés** oldalon.
 
-A folyamat addig fog futni, amíg az egyeztetett terméknyugták mennyisége nem egyezik meg a számla szerinti mennyiséggel. E folyamat részeként kiválaszthatja, hogy hány alkalommal próbálja meg a rendszer egyeztetni a terméknyugtákat egy adott számlasorral, mielőtt a folyamatot sikertelenként lezárná. A folyamat a háttérben fog futni, óránként vagy naponta. Az automatizált egyeztetési folyamat futtatható a számlák munkafolyamat-rendszerbe történő elküldéséhez kapcsolódó eljárás részeként. Azt is megteheti, hogy önálló folyamatként futtatja. A terméknyugták egyeztetések a számlasorokkal folyamat beállításait a **Kötelezettségek paraméterei** oldal **Szállítói számla automatizálása** fülén konfigurálhatja (**Kötelezettségek \> Beállítás \> Kötelezettségek paraméterei**).
+Az egyeztetési folyamat addig fog futni, amíg az egyeztetett terméknyugták mennyisége nem egyezik meg a számla szerinti mennyiséggel. Ha azonban egy számlasorhoz több termékbevételezés is van, a teljes mennyiségi egyeztetés eléréséhez többször is futtatnia kell a folyamatot. Kiválaszthatja, hogy hány alkalommal próbálja meg a rendszer egyeztetni a terméknyugtákat egy adott számlasorral, mielőtt a folyamatot sikertelenként lezárná. A folyamat a háttérben fog futni, óránként vagy naponta. 
+
+Az automatizált egyeztetési folyamat futtatható a számlák munkafolyamat-rendszerbe történő elküldéséhez kapcsolódó eljárás részeként. Azt is megteheti, hogy önálló folyamatként futtatja. A terméknyugták egyeztetések a számlasorokkal folyamat beállításait a **Kötelezettségek paraméterei** oldal **Szállítói számla automatizálása** fülén konfigurálhatja (**Kötelezettségek \> Beállítás \> Kötelezettségek paraméterei**).
 
 Azon háromirányú egyeztetési irányelvet tartalmazó számlasorok, amelyeknél az egyeztetett nyugta mennyisége kisebb, mint a számlamennyiség, az automatikus terméknyugtákkal való egyeztetési folyamatba kerülnek.
 

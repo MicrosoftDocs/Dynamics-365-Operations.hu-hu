@@ -1,12 +1,10 @@
 ---
-title: Első lépések az Elektronikus számlázásbővítménnyel
-description: Ez a témakör olyan információkat tartalmaz, amelyek bemutatják az Elektronikus számlázásbővítménnyel kapcsolatos első lépéseket a Microsoft Dynamics 365 Finance és Dynamics 365 Supply Chain Management szolgáltatásokban.
+title: Első lépések az elektronikus számlázási használata során
+description: Ez a témakör olyan információkat tartalmaz, amelyek bemutatják az Elektronikus számlázással kapcsolatos első lépéseket a Microsoft Dynamics 365 Finance és Dynamics 365 Supply Chain Management szolgáltatásokban.
 author: gionoder
-manager: AnnBe
-ms.date: 02/22/2021
+ms.date: 03/29/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,83 +15,82 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 56227e031f8205836bcae9ce26006fc8091c2863
-ms.sourcegitcommit: 543772ee97efe215cf6f2ec6e092cc1568919f20
+ms.openlocfilehash: cf553f2ffecf18859b88932e68360231ca46410f
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "5592550"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5840124"
 ---
-# <a name="get-started-with-the-electronic-invoicing-add-on"></a>Első lépések az Elektronikus számlázásbővítménnyel
+# <a name="get-started-with-electronic-invoicing"></a>Első lépések az elektronikus számlázási használata során
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör olyan információkat tartalmaz, amelyek bemutatják az Elektronikus számlázásbővítménnyel kapcsolatos első lépéseket.
-
-Az alábbi táblázat felsorolja az Elektronikus számlázás funkcióit, valamint azokat az üzleti dokumentumokat, amelyekre alkalmazni lehet őket.
-
-| Funkció neve                         | Üzleti dokumentum |
-|--------------------------------------|-------------------|
-| Osztrák elektronikus számlák (AT)    | <p>Értékesítési számla</p><p>Projektszámla</p> |
-| Belga elektronikus számla (BE)      | <p>Értékesítési számla</p><p>Projektszámla</p> |
-| Brazil NF-e (BR)                  | <p>55. modell típusú pénzügyi bizonylat</p><p>Helyesbítő levél</p> |
-| Brazil NFS-e ABRASF Curitiba (BR) | Szolgáltatási pénzügyi bizonylat |
-| Dán elektronikus számla (DK)       | <p>Értékesítési számla</p><p>Projektszámla</p> |
-| Egyiptomi elektronikus számla (EG)     | <p>Értékesítési számla</p><p>Projektszámla</p> |
-| Észt elektronikus számla (EE)     | <p>Értékesítési számla</p><p>Projektszámla</p> |
-| Finn elektronikus számla (FI)       | <p>Értékesítési számla</p><p>Projektszámla</p> |
-| Francia elektronikus számla (FR)       | <p>Értékesítési számla</p><p>Projektszámla</p> |
-| Német elektronikus számla (DE)       | <p>Értékesítési számla</p><p>Projektszámla</p> |
-| FatturaPA (IT)                       | <p>Értékesítési számla</p><p>Projektszámla</p> |
-| Mexikói CFDI Interfactura (MX)       | <p>Értékesítési számla</p><p>Szállítólevél</p><p>Készletátvitel</p><p>Fizetéskiegészítés</p> |
-| Holland elektronikus számla (NL)        | <p>Értékesítési számla</p><p>Projektszámla</p> |
-| Norvég elektronikus számla (NO)    | <p>Értékesítési számla</p><p>Projektszámla</p> |
-| Spanyol elektronikus számla (ES)      | <p>Értékesítési számla</p><p>Projektszámla</p> |
-| PEPPOL elektronikus számla            | <p>Értékesítési számla</p><p>Projektszámla</p> |
+Ez a témakör olyan információkat tartalmaz, amelyek bemutatják az Elektronikus számlázással kapcsolatos első lépéseket. Ez a témakör a Regulatory Configuration Services (RCS) és a Dynamics 365 Finance általános konfigurációs lépésein vezeti végig, és az üzleti dokumentumok benyújtásához és a feldolgozás eredményeinek ellenőrzéshez szükséges lépéseket mutatja meg.
 
 ## <a name="prerequisites"></a>Előfeltételek
 
 Mielőtt teljesítené az ebben a témakörben ismertetett eljárásokat, a következő előfeltételeknek kell megfelelnie:
 
-- Konfigurálja az RCS-szolgáltatást és a Microsoft Dynamics 365 Finance- vagy Dynamics 365 Supply Chain Management-környezetet úgy, hogy elküldhesse az Elektronikus számlázási bővítménybe.
-- Hozzon létre szolgáltatási környezetet, és tegye közzé az Elektronikus számlázási bővítményben. A további tudnivalókat lásd az [Első lépések az elektronikus számlázási bővítmény szolgáltatásfelügyeletének használata során](e-invoicing-get-started-service-administration.md) tartalmaz.
-- Hozzon létre csatlakoztatott alkalmazást. A további tudnivalókat lásd az [Első lépések az elektronikus számlázási bővítmény szolgáltatásfelügyeletének használata során](e-invoicing-get-started-service-administration.md) tartalmaz.
-- Hozzon létre egy konfigurációszolgáltatót a szervezethez. További információért tekintse át a [Konfigurációszolgáltató létrehozása és megjelölése aktívként](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md) eljárást.
+- Konfigurálja a Microsoft Dynamics Lifecycle Services (LCS) és a Regulatory Configuration Service (RCS) szolgáltatást, valamint a Microsoft Dynamics 365 Finance vagy a Dynamics 365 Supply Chain Management környezetet. A további tudnivalókat lásd az [Első lépések az elektronikus számlázás szolgáltatásfelügyeletének használata során](e-invoicing-get-started-service-administration.md) tartalmaz.
+- Hozzon létre egy konfigurációszolgáltatót a szervezethez. További információért tekintse át az [Egy konfigurációszolgáltató létrehozása és megjelölése aktívként](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md) eljárást.
 
 ## <a name="import-an-electronic-invoicing-feature-from-the-microsoft-configuration-provider"></a>Elektronikus számlázási funkció importálása a Microsoft konfigurációszolgáltatóból 
 
 1. Jelentkezzen be a saját RCS-fiókjába.
-2. A **Globalizációs funkció** munkaterületen a **Funkciók** szakaszban válassza ki az **Elektronikus számlázás bővítmény** csempét.
+2. A **Globalizációs funkció** munkaterületen a **Funkciók** szakaszban válassza ki az **Elektronikus számlázás** csempét.
 3. Válassza ki az **Import**, majd a **Szinkronizálás** lehetőséget.
 4. Szűrje a **Konfigurációszolgáltató** oszlopot a **Microsoft** kifejezés szerint.
 5. Válassza ki az Elektronikus számlázási funkció nevét a témakör elején található táblából, majd válassza az **Importálás** lehetőséget.
 
 ## <a name="create-an-electronic-invoicing-feature-under-your-organization-provider"></a>Elektronikus számlázás funkció létrehozása a szervezetszolgáltató keretében
 
-1. RCS-ben a **Globalizációs funkció** munkaterületen a **Funkciók** szakaszban válassza ki az **Elektronikus számlázás bővítmény** csempét.
+1. Az RCS-ben a **Globalizációs funkció** munkaterületen a **Funkciók** szakaszban válassza ki az **Elektronikus számlázás** csempét.
 2. Válassza a **Hozzáadás** > **Meglévő szolgáltatás alapján** lehetőséget, és a **Név** mezőben adja meg az Elektronikus számlázási funkció nevét.
 3. A **Leírás** mezőbe írja be a funkció leírását.
 4. Az **Alapfunkció** mezőben válassza ki az importált Elektronikus számlázási funkciót a Microsoft konfigurációszolgáltatóból.
 5. Válassza a **Létrehozás lehetőséget**.
 
-## <a name="configure-the-electronic-invoicing-feature"></a>Az Elektronikus számlázási funkció konfigurálása
+## <a name="country-specific-configuration-for-electronic-invoicing-feature"></a>Országspecifikus konfiguráció az elektronikus számlázási funkcióhoz
 
-Az országtól vagy régiótól függően az Elektronikus számlázási funkció további konfigurálást igényelhet. 
+Az országtól vagy régiótól függően az Elektronikus számlázási funkció specifikus konfigurálást igényelhet. 
 
 Az adott lépésekről az adott ország vagy régió számára elérhető Első lépések dokumentációjában található részletes információ.
+
+## <a name="import-the-model-mapping-configurations-from-electronic-reporting"></a>Importálja a modell-leképezési konfigurációk az elektronikus jelentéskészítésből
+
+1. Az RCS-ben válassza ki az **Elektronikus jelentéskészítés** munkaterületet.
+2. Jelölje ki a **Microsoft** konfigurációs szolgáltatók listájából az **Adattárak** lehetőséget.
+3. Válassza a **Globális** lehetőséget, majd a műveletei panelen válassza a **Megnyitás** lehetőséget.
+4. A modell-hozzárendelési konfigurációk importálása a következő tábla alapján funkciónév szerint.
+
+| Funkció neve                         | Modell-leképzési konfiguráció |
+|--------------------------------------|-----------------------------|
+| Osztrák elektronikus számlák (AT)    | <p>Vevői számlakontextus-modell</p><p>Számlamodell</p> |
+| Belga elektronikus számla (BE)      | <p>Vevői számlakontextus-modell</p><p>Számlamodell</p> |
+| Brazil NF-e (BR)                  | <p>Vevői számlakontextus-modell</p><p>Pénzügyi bizonylatok</p><p>Válaszüzenet-modell</p> |
+| Brazil NFS-e ABRASF Curitiba (BR) | <p>Vevői számlakontextus-modell</p><p>Pénzügyi bizonylatok</p><p>Válaszüzenet-modell</p> |
+| Dán elektronikus számla (DK)       | <p>Vevői számlakontextus-modell</p><p>Számlamodell</p> |
+| Egyiptomi elektronikus számla (EG)     | <p>Vevői számlakontextus-modell</p><p>Számlamodell</p><p>Válaszüzenet-modell</p> |
+| Észt elektronikus számla (EE)     | <p>Vevői számlakontextus-modell</p><p>Számlamodell</p> |
+| Finn elektronikus számla (FI)       | <p>Vevői számlakontextus-modell</p><p>Számlamodell</p> |
+| Francia elektronikus számla (FR)       | <p>Vevői számlakontextus-modell</p><p>Számlamodell</p> |
+| Német elektronikus számla (DE)       | <p>Vevői számlakontextus-modell</p><p>Számlamodell</p> |
+| FatturaPA (IT)                       | <p>Vevői számlakontextus-modell</p><p>Számlamodell</p> |
+| Mexikói CFDI Interfactura (MX)       | <p>Vevői számlakontextus-modell</p><p>Számlamodell</p><p>Válaszüzenet-modell</p> |
+| Holland elektronikus számla (NL)        | <p>Vevői számlakontextus-modell</p><p>Számlamodell</p> |
+| Norvég elektronikus számla (NO)    | <p>Vevői számlakontextus-modell</p><p>Számlamodell</p> |
+| Spanyol elektronikus számla (ES)      | <p>Vevői számlakontextus-modell</p><p>Számlamodell</p> |
+| PEPPOL elektronikus számla            | <p>Vevői számlakontextus-modell</p><p>Számlamodell</p> |
+
 
 ## <a name="configure-the-application-setup"></a>Az alkalmazás beállításának konfigurálása
 
 1. Válassza ki a létrehozott Elektronikus számlázás funkciót.
-2. A **Verzió** lapon ellenőrizze, hogy a **Piszkozat** verzió ki van-e választva.
-3. A **Beállítások** lapon válassza az **Alkalmazás beállítása** elemet.
-
-    > [!NOTE]
-    > Ellenőrizze, hogy a szervezet be van-e állítva **Aktív** konfigurációszolgáltatóként. További információért tekintse át a [Konfigurációszolgáltató létrehozása és megjelölése aktívként](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md) eljárást.
-
-4. Válassza a **Funkció beállítása** lehetőséget, majd a **Csatlakoztatott alkalmazás** elemet.
-5. Az **Elektronikus dokumentumtípusok** szakaszban válassza a **Hozzáadás** lehetőséget.
-6. A funkció által támogatott minden egyes üzleti dokumentumhoz válasszon ki és adjon meg egy **Táblanév** értéket a következő táblázatnak megfelelően.
+2. A **Beállítások** lapon válassza az **Alkalmazás beállítása** elemet.
+3. Az **Alkalmazás csatlakoztatása** mezőben válassza ki a Finance- vagy Supply Chain Management-példányhoz társított kapcsolatot.
+4. Az **Elektronikus dokumentumtípusok** szakaszban válassza a **Hozzáadás** lehetőséget.
+5. Válasszon ki és adjon meg egy **Táblanév** értéket a következő táblázatnak megfelelően.
 
     | Funkció neve                         | Üzleti dokumentum | Tábla neve |
     |--------------------------------------|-------------------|------------|
@@ -114,7 +111,7 @@ Az adott lépésekről az adott ország vagy régió számára elérhető Első 
     | Spanyol elektronikus számla (ES)      | <p>Értékesítési számla</p><p>Projektszámla</p> | <p>Vevői számlanapló</p><p>Projektszámla</p> |
     | PEPPOL elektronikus számla            | <p>Értékesítési számla</p><p>Projektszámla</p> | <p>Vevői számlanapló</p><p>Projektszámla</p> |
 
-7. A funkció által támogatott minden egyes üzleti dokumentumhoz válasszon ki és adjon meg egy **Kontextus** értéket a következő táblázatnak megfelelően.
+7. Minden egyes létrehozott táblanévhez válassza ki és adja meg a kontextusértéket a következő táblázatnak megfelelően.
 
     | Funkció neve                         | Üzleti dokumentum | Környezet |
     |--------------------------------------|-------------------|---------|
@@ -135,7 +132,7 @@ Az adott lépésekről az adott ország vagy régió számára elérhető Első 
     | Spanyol elektronikus számla (ES)      | <p>Értékesítési számla</p><p>Projektszámla</p> | <p>Vevői számla kontextusmodell – vevői számla kontextusa</p><p>Vevői számla kontextusmodell – projektszámla kontextusa</p> |
     | PEPPOL elektronikus számla            | <p>Értékesítési számla</p><p>Projektszámla</p> | <p>Vevői számla kontextusmodell – vevői számla kontextusa</p><p>Vevői számla kontextusmodell – projektszámla kontextusa</p> |
 
-8. A funkció által támogatott minden egyes üzleti dokumentumhoz válasszon ki és adjon meg egy **Üzleti dokumentum leképezése** értéket a következő táblázatnak megfelelően.
+8. Minden egyes táblanévhez és kontextushoz válasszon ki és adjon meg egy üzletidokumentum-leképezés értéket a következő táblának megfelelően.
 
     | Funkció neve                         | Üzleti dokumentum | Üzleti dokumentum leképezése |
     |--------------------------------------|-------------------|---------------------------|
@@ -156,21 +153,32 @@ Az adott lépésekről az adott ország vagy régió számára elérhető Első 
     | Spanyol elektronikus számla (ES)      | <p>Értékesítési számla</p><p>Projektszámla</p> | <p>Számlamodell leképezése – vevői számla</p><p>Számlamodell leképezése – projektszámla</p> |
     | PEPPOL elektronikus számla            | <p>Értékesítési számla</p><p>Projektszámla</p> | <p>Számlamodell leképezése – vevői számla</p><p>Számlamodell leképezése – projektszámla</p> |
 
-Az országtól vagy régiótól függően az Elektronikus számlázási funkció további konfigurálást igényelhet.
+
+## <a name="country-specific-configuration-of-application-setup"></a>Az alkalmazás beállításainak országspecifikus konfigurációja
+
+Az országtól vagy régiótól függően az Alkalmazásbeállítás funkció specifikus konfigurálást igényelhet. 
 
 Az adott lépésekről az adott ország vagy régió számára elérhető Első lépések dokumentációjában található részletes információ.
 
-## <a name="deploy-the-electronic-invoicing-feature"></a>Az Elektronikus számlázási funkció telepítése
+## <a name="deploy-the-electronic-invoicing-feature-to-service-environment"></a>Az Elektronikus számlázás szolgáltatás telepítése szolgáltatási környezetbe
 
 1. A **Verziók** lapon válassza ki az Elektronikus számlázási funkció telepíteni kívánt verzióját.
 2. Válassza az **Állapot módosítása** \> **Teljes** lehetőséget.
 3. Válassza az **Állapot módosítása** \> **Közzététel** lehetőséget.
 4. Válassza a **Telepítés** lehetőséget.
+5. A **Telepítés a csatlakoztatott alkalmazásra** lehetőségnél válassza az **Nem** lehetőséget.
+6. A **Telepítés szolgáltatási környezetbe** lehetőségnél válassza az **Igen** lehetőséget.
+7. A **Szolgáltatási környezet** mezőben válassza ki azt az Elektronikus számlázási szolgáltatási környezetet, amelybe telepíteni szeretné az Elektronikus számlázási szolgáltatást.
+8. A **Kezdő dátum** mezőben azt a dátumot, amikor az Elektronikus számlázási funkciónak hatályba kell lépnie az Elektronikus számlázásban.
+9. Válassza ki az **OK** lehetőséget.
+
+## <a name="deploy-the-electronic-invoicing-feature-to-connected-application"></a>Az Elektronikus számlázás szolgáltatás telepítése Csatlakoztatott alkalmazásba
+
+1. A **Verziók** lapon válassza ki az Elektronikus számlázási funkció egy telepíteni kívánt verzióját.
+4. Válassza a **Telepítés** lehetőséget.
 5. A **Telepítés a csatlakoztatott alkalmazásra** lehetőségnél válassza az **Igen** lehetőséget.
-6. Az **Alkalmazás csatlakoztatása** oldalon válassza ki a Finance- vagy Supply Chain Management-példányhoz társított kapcsolatot.
-7. A **Telepítés szolgáltatási környezetbe** lehetőségnél válassza az **Igen** lehetőséget.
-8. A **Szolgáltatási környezet** mezőben válassza ki azt az Elektronikus számlázási szolgáltatási környezetet, amelybe telepíteni szeretné az Elektronikus számlázási szolgáltatást.
-9. A **Kezdő dátum** mezőben azt a dátumot, amikor az Elektronikus számlázási funkciónak hatályba kell lépnie az Elektronikus számlázási bővítményben.
+6. Az **Alkalmazás csatlakoztatása** mezőben válassza ki a Finance- vagy Supply Chain Management-példányhoz társított kapcsolatot.
+7. A **Telepítés szolgáltatási környezetbe** lehetőségnél válassza az **Nem** lehetőséget.
 10. Válassza ki az **OK** lehetőséget.
 
 ## <a name="turn-on-the-electronic-invoicing-feature-in-finance-or-supply-chain-management"></a>Az Elektronikus számlázási funkció bekapcsolása a Finance vagy Supply Chain Management szolgáltatásban
@@ -228,11 +236,11 @@ Az adott lépésekről az adott ország vagy régió számára elérhető Első 
 
 ## <a name="related-topics"></a>Kapcsolódó témakörök
 
-- [Elektronikus számlázási bővítmény áttekintése](e-invoicing-service-overview.md)
-- [Első lépések az elektronikus számlázási bővítményszolgáltatás adminisztrálása során](e-invoicing-get-started-service-administration.md)
-- [Első lépések a brazil Elektronikus számlázásbővítménnyel](e-invoicing-bra-get-started.md)
-- [Első lépések a mexikói Elektronikus számlázásbővítménnyel](e-invoicing-mex-get-started.md)
-- [Első lépések az olasz Elektronikus számlázásbővítménnyel](e-invoicing-ita-get-started.md)
+- [Elektronikus számlázás áttekintése](e-invoicing-service-overview.md)
+- [Első lépések az elektronikus számlázási szolgáltatás adminisztrálása során](e-invoicing-get-started-service-administration.md)
+- [Első lépések az Brazíliára vonatkozó elektronikus számlázás használata során](e-invoicing-bra-get-started.md)
+- [Első lépések a Mexikóra vonatkozó elektronikus számlázás használata során](e-invoicing-mex-get-started.md)
+- [Első lépések az Olaszországra vonatkozó elektronikus számlázási használata során](e-invoicing-ita-get-started.md)
 - [Elektronikus vevői számlák Egyiptomban](emea-egy-e-invoices.md)
 
 

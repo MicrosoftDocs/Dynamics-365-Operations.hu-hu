@@ -2,11 +2,9 @@
 title: Pénzügyi naptárak, pénzügyi évek és időszakok
 description: Ez a cikk a pénzügyi naptárakat, a pénzügyi éveket és időszakokat, valamint azok alkalmazását tárgyalja jogi személyek, tárgyi eszközök és a költségvetés esetében.
 author: aprilolson
-manager: AnnBe
 ms.date: 03/05/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: FiscalCalendars
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 795c884cf429b2a212d6c874b3b7634d6cd10c71
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 4b7179b2d14025ca2ec32d3dabc8eea42edda473
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5210167"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5822057"
 ---
 # <a name="fiscal-calendars-fiscal-years-and-periods"></a>Pénzügyi naptárak, pénzügyi évek és időszakok
 

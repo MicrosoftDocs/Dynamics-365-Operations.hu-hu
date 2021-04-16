@@ -2,11 +2,9 @@
 title: Teljes összeg és Intervallumszámítás opciók áfakódokhoz
 description: Ez a cikk bemutatja a Számítási mód áfakódokra vonatkozó beállításait, valamint a forgalmi adó számítását intervallumokra és teljes összegekre.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxData, TaxTable
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0414f835b7797d2ed554f8d9dbd95b2ad47bba43
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 48569da2d504e4c380ca89bfec4450ad1b9888e5
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5234117"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5842368"
 ---
 # <a name="whole-amount-and-interval-calculation-options-for-sales-tax-codes"></a>Teljes összeg és Intervallumszámítás opciók áfakódokhoz
 
@@ -46,9 +44,8 @@ Ha egy összeg megegyezik egy intervallum Maximális határával, ezáltal a kö
 ## <a name="example-whole-amount-method-of-calculation"></a>Példa: Teljes összegű számítási mód
 Az Áfakód értékek kódlapon a következő intervallumokban vannak beállítva az áfakulcsok:
 
-|                   |                   |              |
+| Minimumhatár     | Maximum határ     | Áfakulcs     |
 |-------------------|-------------------|--------------|
-| **Minimumhatár** | **Maximum határ** | **Áfakulcs** |
 | 0,00              | 50,00             | 30%          |
 | 50,00             | 100,00            | 20%          |
 | 100,00            | 0,00              | 10%          |
@@ -65,9 +62,8 @@ Az áfa összegét az egész adóalapra kiszámoljuk.
 ## <a name="example-interval-method-of-calculation"></a> Példa: Intervallum számítási mód
 Az Értékek oldalon az áfakulcsok a következő intervallumokra vannak beállítva:
 
-|                   |                   |              |
+| Minimumhatár     | Maximum határ     | Áfakulcs     |
 |-------------------|-------------------|--------------|
-| **Minimumhatár** | **Maximum határ** | **Áfakulcs** |
 | 0,00              | 50,00             | 30%          |
 | 50,00             | 100,00            | 20%          |
 | 100,00            | 0,00              | 10%          |

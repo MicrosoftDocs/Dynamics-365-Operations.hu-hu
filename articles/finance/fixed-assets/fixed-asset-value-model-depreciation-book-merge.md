@@ -2,11 +2,9 @@
 title: Tárgyi eszközök értékmodellje és az értékcsökkenési könyv egyesítése
 description: 'A korábbi kiadásokban két értékelési fogalom vonatkozott a tárgyi eszközökre - értékmodellek és értékcsökkenési könyvek. A Microsoft Dynamics 365 for Operations 1611-es kiadásában az értékmodell funkcióit és az értékcsökkenési könyv funkcióit egyetlen koncepció alapján egyesítették, ennek neve: könyv.'
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 26409b6416a5b4e93ccd051b1625633ea12e22ac
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: f027a856dbd596ede84c39e30ee2227aab9329f2
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5212469"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5826738"
 ---
 # <a name="fixed-asset-value-model-and-depreciation-book-merge"></a>Tárgyi eszközök értékmodellje és az értékcsökkenési könyv egyesítése
 
@@ -34,9 +32,8 @@ Az új könyvfunkciók korábbi értékmodellfunkción alapul, de magában fogla
 ## <a name="setup"></a>Beállítás
 Alapértelmezés szerint a könyvek adatokat szolgáltatnak a főkönyvnek (főkönyv) és a tárgyi eszközök analitikus naplójának. A könyveknek van egy új **továbbítás a főkönyvnek** opciójuk, amely lehetővé teszi a főkönyvi feladás tiltását, ahol a feladás csak a tárgyi eszközök analitikus naplójába történik. Ez a funkció az értékcsökkenési könyv korábbi feladási viselkedésére hasonlít. A naplónevek beállításához a "nincs" nevű új feladási réteg tartozik. A feladási réteg kifejezetten a tárgyieszköz-tranzakciókhoz került hozzáadásra. Ahhoz, hogy olyan könyvekhez végezzen feladást, amelyek nem végeznek feladást a főkönyvhöz, egy olyan naplónevet kell használnia, amelynél a feladási réteg beállítása **nincs**.
 
-|                                                  |                                 |                                 |                                                         |
+| &nbsp;                                           | Értékcsökkenés könyv               | Értékmodell                     | Könyv (új)                                              |
 |--------------------------------------------------|---------------------------------|---------------------------------|---------------------------------------------------------|
-|                                                  | Értékcsökkenés könyv               | Értékmodell                     | Könyv (új)                                              |
 | Feladás a főkönyvnek                                   | Soha                           | Mindig                          | Opcionális feladás a főkönyvnek                                |
 | Feladási rétegek                                   | Nem alkalmazható                  | 3. Aktuális, műveletek és adó | 11: Aktuális, műveletek, adó, 7 egyéni réteg és "nincs" |
 | Naplónevek                                    | Értékcsökkenés könyv - naplónevek | Főkönyv - Naplónevek              | Főkönyv - Naplónevek                                      |
@@ -46,9 +43,8 @@ Alapértelmezés szerint a könyvek adatokat szolgáltatnak a főkönyvnek (fők
 ## <a name="processes"></a>Folyamatok
 A folyamatok most már egy közös lapot használnak. Egyes folyamatok csak akkor engedélyezettek, ha a **Feladás a főkönyvbe** beállítás **nem** a könyvbeállításokban.
 
-|                                |                           |                     |                                          |
+| &nbsp;                                           | Értékcsökkenés könyv               | Értékmodell                     | Könyv (új)                                              |
 |--------------------------------|---------------------------|---------------------|------------------------------------------|
-|                                | Értékcsökkenés könyv         | Értékmodell         | Könyv (új)                               |
 | Tranzakció bevitele              | Értékcsökkenési könyv – napló | Tárgyieszköz-napló | Tárgyieszköz-napló                      |
 | Rendkívüli értékcsökkenés             | Engedélyezett                   | Nem engedélyezett         | Engedélyezett                                  |
 | Tranzakciók előzményeinek törlése | Engedélyezett                   | Nem engedélyezett         | Engedélyezve van, kivéve, ha a főkönyvnek végez feladást |
@@ -57,9 +53,8 @@ A folyamatok most már egy közös lapot használnak. Egyes folyamatok csak akko
 ## <a name="inquiries-and-reports"></a>Lekérdezések és jelentések
 Minden könyvnél rendelkezésre állnak a lekérdezések és jelentések. Azok a jelentések, amelyek nem szerepelnek az alábbi táblázatban, korábban támogatták az értékcsökkenési könyveket és az értékmodelleket, és jelenleg továbbra is támogatnak minden könyvtípust. A **feladási réteg** mező is hozzá lett adva a jelentésekhez, így könnyebben azonosíthatók a tranzakciófeladások.
 
-|                                       |                                |                          |                          |
+| &nbsp;                                           | Értékcsökkenés könyv               | Értékmodell                     | Könyv (új)                                              |
 |---------------------------------------|--------------------------------|--------------------------|--------------------------|
-|                                       | Értékcsökkenés könyv              | Értékmodell              | Könyv (új)               |
 | Lekérdezések                             | Értékcsökkenés könyv - tranzakciók | Tárgyieszköz-tranzakciók | Tárgyieszköz-tranzakciók |
 | Tárgyi eszközök kimutatása                 | Nem engedélyezett                    | Engedélyezett                  | Engedélyezett                  |
 | Tárgyi eszköz alapja                     | Engedélyezett                        | Nem engedélyezett              | Engedélyezett                  |

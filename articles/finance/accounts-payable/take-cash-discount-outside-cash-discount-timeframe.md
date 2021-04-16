@@ -2,11 +2,9 @@
 title: Készpénzfizetési engedmény érvényesítése a készpénzfizetési engedményi időszakon kívül
 description: A cikk két esetet tartalmaz, amelyek megmutatják, hogyan írható jóvá a készpénzfizetési engedmény, akkor is, ha a kifizetés a készpénzfizetési engedmény időszakán kívül történt.
 author: abruer
-manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0df635e78fff1994b9a9e1abc99c67470852ad81
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 47acacf9b1e9667e86fcdd5ce1ed62e79d8afec3
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5235861"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5810222"
 ---
 # <a name="take-a-cash-discount-outside-the-cash-discount-period"></a>Készpénzfizetési engedmény érvényesítése a készpénzfizetési engedményi időszakon kívül
 
@@ -43,7 +41,7 @@ Megjelöli a számlát kifizetéshez. Készpénzfizetési engedményre nem kerü
 
 Az engedményadatok a **Nyitott tranzakciók kiegyenlítése** lap alján jelennek meg.
 
-|                              |           |
+| Mező                        | Érték     |
 |------------------------------|-----------|
 | Készpénzfizetési engedmény dátuma           | 2015/7/12 |
 | Készpénzfizetési engedmény összege         | -20,00    |
@@ -61,7 +59,7 @@ Ha a számla és a fizetés is fel lett adva, a készpénzfizetési engedmény t
 
 Az engedményadatok a **Nyitott tranzakciók kiegyenlítése** lap alján jelennek meg. Az igénybe vett engedmény összege 20,00, mert a számla kiegyenlítendő összege az alapértelmezett összeg, vagyis 1980,00.
 
-|                              |           |
+| Mező                        | Érték     |
 |------------------------------|-----------|
 | Készpénzfizetési engedmény dátuma           | 2015/7/12 |
 | Készpénzfizetési engedmény összege         | -20,00    |
@@ -78,7 +76,7 @@ April frissíti a **Kiegyenlítendő összeg** mezőt **500,00** értékre. Az �
 
 Az engedményadatok a **Nyitott tranzakciók kiegyenlítése** lap alján jelennek meg. Az **Alkalmazandó készpénzfizetési engedmény összege** mező értéke **5,05**, mert a számla kiegyenlítendő összegét a kifizetés összegére, 500,00 értékre módosították.
 
-|                              |           |
+| Mező                        | Érték     |
 |------------------------------|-----------|
 | Készpénzfizetési engedmény dátuma           | 2015/7/12 |
 | Készpénzfizetési engedmény összege         | -20,00    |

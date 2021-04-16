@@ -2,11 +2,9 @@
 title: Fedezeti lehetőségek létrehozása
 description: A Microsoft Dynamics 365 Human Resources fedezeti lehetőségei fedezeti szintek a résztvevőknek egy juttatási csomagban vagy programban.
 author: andreabichsel
-manager: tfehr
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2e1d5fc80d93e41626da8eb5bdf8f389fb0bd531
-ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
+ms.openlocfilehash: 6d304b0cf65c7833ebc7f21323efc59540289de8
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5466182"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5803681"
 ---
 # <a name="create-coverage-options"></a>Fedezeti lehetőségek létrehozása
 
