@@ -2,11 +2,9 @@
 title: Minősítések és értékelések kezelése
 description: Ez a témakör azt mutatja be, hogyan kezelheti az értékeléseket és véleményeket a Microsoft Dynamics 365 Commerce webhelykészítőjében.
 author: gvrmohanreddy
-manager: annbe
 ms.date: 10/09/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -17,12 +15,12 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-01
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: f8ab85605bce11934f71237ad1ef7cd24804319b
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 60ad0dd821dc91576a59cf73ec46da4aefd34a2f
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5250804"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5794259"
 ---
 # <a name="manage-ratings-and-reviews"></a>Minősítések és értékelések kezelése
 

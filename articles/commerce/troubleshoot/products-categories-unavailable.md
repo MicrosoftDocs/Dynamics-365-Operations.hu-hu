@@ -2,7 +2,6 @@
 title: A termékek és a kategóriák nem jelennek meg a Commerce webhelyszerkesztőben az új webhely hozzárendelése után
 description: Ez a témakör olyan hibaelhárítási útmutatást tartalmaz, amely segítséget nyújt abban az esetben, ha a termékek és kategóriák nem jelennek meg a Commerce webhelykészítőben az új webhely hozzárendelése után.
 author: Reza-Assadi
-manager: AnnBe
 ms.date: 03/11/2021
 ms.topic: Troubleshooting
 ms.prod: ''
@@ -17,12 +16,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 46ad73256e5acf6d42772fc4af154a8d74206bbb
-ms.sourcegitcommit: 6c108be3378b365e6ec596a1a8666d59b758db25
+ms.openlocfilehash: 3d7cd2274cb447a622f9ffe6f00b1b27ecc7db52
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "5585362"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5801579"
 ---
 # <a name="products-and-categories-dont-appear-in-commerce-site-builder-after-a-new-site-is-mapped"></a>A termékek és a kategóriák nem jelennek meg a Commerce webhelyszerkesztőben az új webhely hozzárendelése után
 

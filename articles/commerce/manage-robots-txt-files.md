@@ -2,11 +2,9 @@
 title: robots.txt fájlok kezelése
 description: Ez a témakör a robots. txt fájl kezelésének módját ismerteti a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: BrianShook
-manager: annbe
 ms.date: 07/02/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2019-12-18
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: afd7982179dc9845c9adc24e8c7c9951a04460a3
-ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
+ms.openlocfilehash: b9b832d6714447f8957095c8c87d48527087f12d
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/19/2021
-ms.locfileid: "5477708"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5794235"
 ---
 # <a name="manage-robotstxt-files"></a>robots.txt fájlok kezelése
 

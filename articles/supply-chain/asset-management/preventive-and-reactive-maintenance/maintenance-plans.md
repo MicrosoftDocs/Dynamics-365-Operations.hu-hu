@@ -1,12 +1,10 @@
 ---
 title: Karbantartási tervek
 description: Ez a témakör az Eszközkezelés karbantartási terveit ismerteti.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 01/20/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetMaintenancePlan, EntAssetObjectType, EntAssetCounterType, EntAssetWorkOrderLifecycleModel
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 09ae8b0ce56b08db0ba400b19676bd698c90a561
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: 143b9337dc9ca530383575e0f9bb16e4313ce96b
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5500814"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5839607"
 ---
 # <a name="maintenance-plans"></a>Karbantartási tervek
 
@@ -195,8 +193,6 @@ A következő illusztráción karbantartási tervek láthatók egy eszközön be
 
 ## <a name="counter-based-maintenance-enhancements"></a>Számlálón alapuló karbantartási fejlesztések
 
-[!INCLUDE [preview-banner-section](../../../includes/preview-banner-section.md)]
-
 A *Számlálón alapuló karbantartási fejlesztések* szolgáltatás a következő funkciókat tartalmazza:
 
 - Lehetőség van arra, hogy eszköz létrehozásakor automatikusan beszúrjon egy *0* (nulla) értékű számlálót. Ez a lehetőség akkor lehet hasznos, ha számlálókon alapuló prediktív karbantartást használ. Ha nem használja a *Számlálón alapuló karbantartási fejlesztések* funkciót, manuálisan kell beszúrni a *0* (nulla) értékű számlálókat.
@@ -209,7 +205,7 @@ A *Számlálón alapuló karbantartási fejlesztések* szolgáltatás a követke
 A funkció használata előtt be kell azt kapcsolnia saját rendszerében. A rendszergazdák használhatják a [funkciókezelési](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) beállításokat a funkció állapotának ellenőrzéséhez, és bekapcsolásához. A **Funkció kezelése** munkaterületen a funkció a következő módon van listázva:
 
 - **Modul:** *Tárgyieszköz-kezelés*
-- **Funkció neve:** *(Előzetes verzió) Számlálón alapuló karbantartási fejlesztések*
+- **Funkció neve:** *Számlálón alapuló karbantartási fejlesztések*
 
 ### <a name="create-and-initialize-counters-when-an-asset-is-created"></a>Számlálók létrehozása és inicializálása eszköz létrehozásakor
 

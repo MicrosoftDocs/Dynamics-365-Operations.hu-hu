@@ -2,11 +2,9 @@
 title: BOPIS konfigurálása Dynamics 365 Commerce értékelési környezetben
 description: Ez a témakör azt mutatja be, hogyan lehet konfigurálni „online vásárlás, átvétel az áruházban” "(BOPIS) folyamatot a Microsoft Dynamics 365 Commerce-környezetben a kiépítés után.
 author: rubendel
-manager: annbe
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: rubendel
 ms.search.validFrom: 2020-04-20
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 71f2fb3882b51cdaed9b231cd605949195deca17
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 219504da62fd4637ed01f9acbab32f873cef81b0
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5213866"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5795955"
 ---
 # <a name="configure-bopis-in-a-dynamics-365-commerce-evaluation-environment"></a>BOPIS konfigurálása Dynamics 365 Commerce értékelési környezetben
 

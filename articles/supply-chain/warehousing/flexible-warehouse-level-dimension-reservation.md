@@ -2,11 +2,9 @@
 title: Rugalmas raktárszintű dimenziófoglalási irányelv
 description: Ez a témakör azt mutatja be, hogy a készletfoglalási irányelv, amely lehetővé teszi, hogy a kötegelt nyomon követésű termékeket értékesítő és a logisztikát a WMS-kompatibilis műveletekekként futtató vállalatok lefoglaljanak bizonyos kötegeket ügyfelek értékesítési rendeléseihez, még akkor is, ha a foglalási hierarchia a termékekhez kapcsolódóan nem engedélyezi a meghatározott kötegek foglalását.
 author: perlynne
-manager: tfehr
 ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSReservationHierarchy, WHSWorkTrans, WHSWorkInventTrans, WHSInventTableReservationHierarchy, WHSReservationHierarchyCreate, WHSInventTableReservationHierarchy
 audience: Application User
@@ -15,33 +13,33 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-01-15
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: b7d855914e59d90dd082c9e9a027604579a2f411
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 17ae3cc788c60917807acece2fc21f6c52d8ffe0
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5235412"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5835678"
 ---
-# <a name="flexible-warehouse-level-dimension-reservation-policy"></a>Rugalmas raktárszintű dimenziófoglalási irányelv
+# <a name="flexible-warehouse-level-dimension-reservation-policy"></a>Rugalmas raktárszintű dimenzió foglalási irányelv
 
 [!include [banner](../includes/banner.md)]
 
-Amikor egy „kötegalatti\[hely\]” típusú készlet foglalási hierarchiája termékekhez van társítva, a kötegelt nyomon követéssel ellátott termékeket értékesítő és a logisztikai műveleteiket a Microsoft Dynamics 365 raktározási rendszerrel (WMS) kompatibilisként futtató vállalatok nem foglalhatják le az illető termékek konkrét kötegeit ügyfelek értékesítési rendeléseihez.
+Amikor egy *Köteg alatti\[hely\]* típusú készlet foglalási hierarchiája termékekhez van társítva, a kötegelt nyomon követéssel ellátott termékeket értékesítő és a logisztikai műveleteiket a Microsoft Dynamics 365 raktározási rendszerrel (WMS) kompatibilisként futtató vállalatok nem foglalhatják le az illető termékek konkrét kötegeit ügyfelek értékesítési rendeléseihez.
 
 Ugyanígy nem foglalható le specifikus azonosítótábla az értékesítési rendelésen szereplő termékekhez, amikor ezek a termékek az alapértelmezett foglalási hierarchiához vannak társítva.
 
-Ez a témakör bemutatja azt a készletfoglalási irányelvet, amely alapján a vállalatok meghatározott kötegeket vagy azonosítótáblákat foglalhatnak le, még akkor is, ha a termékek a „kötegalatti\[hely\]” foglalási hierarchiával vannak társítva.
+Ez a témakör bemutatja azt a készletfoglalási irányelvet, amely alapján a vállalatok meghatározott kötegeket vagy azonosítótáblákat foglalhatnak le, még akkor is, ha a termékek a *Köteg alatti\[hely\]* foglalási hierarchiával vannak társítva.
 
 ## <a name="inventory-reservation-hierarchy"></a>Készletfoglalási hierarchia
 
 Ez a szakasz összegzi a meglévő készletfoglalási hierarchiát.
 
-A készletfoglalási hierarchia azt írja elő, hogy a tárolási dimenziókat illetően az igény szerinti rendelés a hely, a raktár és a készlet állapotának kötelező dimenzióit hordozza. A raktári logika felelős azért, hogy a kívánt mennyiségekhez helyet rendeljen, és lefoglalja azt. Más szóval az igény szerinti rendelés és a raktári műveletek közötti interakciókban várhatóan az igény szerinti rendelése jelzi, hogy honnan kell szállítani a rendelést (azaz a helyet és a raktárat). A raktár ezután saját logikájára alapozva megkeresi a szükséges mennyiséget a raktár területén.
+A készletfoglalási hierarchia előírja, hogy a tárolási dimenziók tekintetében az igény szerinti rendelés a telephely, raktár és készletállapot kötelező dimenzióit tartalmazza. Más szóval a kötelező dimenziók a foglalási hierarchiában a hely dimenzió fölötti összes dimenziók, míg a raktári logika felelős a helynek a kért mennyiségekhez való hozzárendeléséért és a hely lefoglalásáért. Az igény szerinti rendelés és a raktári műveletek közötti interakciókban várhatóan az igény szerinti rendelés jelzi, hogy honnan kell szállítani a rendelést (azaz a helyet és a raktárat). A raktár ezután saját logikájára alapozva megkeresi a szükséges mennyiséget a raktár területén.
 
 Ha azonban az üzlet műveleti modelljét szeretné tükrözni, a nyomonkövetési dimenziók esetén (köteg-és sorozatszámok) nagyobb rugalmasságra van szükség. A készletfoglalási hierarchia olyan esetekhez használható, amelyekben teljesülnek az alábbi feltételek:
 
-- A vállalat a raktári műveletei alapján kezeli a köteg-vagy sorozatszámmal ellátott mennyiségek kiválasztását, miután a mennyiségeket a rendszer megtalálta a raktározási tárolóhelyen. Ezt a modellt gyakran nevezzük *kötegalatti\[helynek\]*. Ezt általában akkor használják, ha a termék köteg- vagy sorozatszám-azonosítója nem fontos azoknak a vevőknek, akik a rendelést tették az értékesítő vállalatnál.
-- Ha a köteg-vagy sorozatszámok a vevői rendelési specifikáció részei, és a program rögzíti azokat az igény szerinti rendelésen, akkor a raktári műveleteket, amelyek megkeresik a raktárban lévő mennyiségeket, az egyes igényelt számokkal korlátozni lehet, és azok nem módosíthatók. Ezt a modellt nevezzük *kötegfeletti\[helynek\]*.
+- A vállalat a raktári műveletei alapján kezeli a köteg-vagy sorozatszámmal ellátott mennyiségek kiválasztását, *miután* a mennyiségeket a rendszer megtalálta a raktározási tárolóhelyen. Ezt a modellt gyakran nevezzük *Köteg alatti\[helynek\]* vagy *Sorozat alatti\[helynek\]*. Ezt általában akkor használják, ha a termék köteg- vagy sorozatszám-azonosítója nem fontos azoknak a vevőknek, akik a rendelést tették az értékesítő vállalatnál.
+- A vállalat a raktári műveletei alapján kezeli a köteg-vagy sorozatszámmal ellátott mennyiségek kiválasztását, *mielőtt* a mennyiségeket a rendszer megtalálta a raktározási tárolóhelyen. Ha a köteg-vagy sorozatszámok szükségesek a vevői rendelési specifikáció részeiként, a program rögzíti azokat az igény szerinti rendelésen, és a raktári műveletek, amelyek megkeresik a raktárban lévő mennyiségeket, nem módosíthatják őket. Ezt a modellt gyakran nevezzük *Köteg feletti\[helynek\]* vagy *Sorozat feletti\[helynek\]*. Mivel a hely fölötti dimenziók a teljesítendő igények egyedi követelményei, a raktári logika nem osztja fel őket. Ezeket a dimenziókat mindig meg **kell** adni az igény szerinti rendelésben vagy a kapcsolódó foglalásokban.
 
 Ezekben az esetekben a kihívás az, hogy csak egyetlen készletfoglalási hierarchiát lehet hozzárendelni az egyes kiadott termékekhez. Ezért ahhoz, hogy WMS kezelje a nyomon követett cikkeket, miután a hierarchia-hozzárendelés meghatározza, hogy mikor kell lefoglalni a köteg-vagy sorozatszámot (vagy az igény szerinti rendelés fogadásakor, vagy a raktári kitárolási munka során), ez az időzítés nem módosítható ad hoc módon.
 
@@ -49,16 +47,16 @@ Ezekben az esetekben a kihívás az, hogy csak egyetlen készletfoglalási hiera
 
 ### <a name="business-scenario"></a>Üzleti eset
 
-Ebben a helyzetben a vállalat egy készletstratégiát alkalmaz, amelyben a késztermékeket a kötegszámokkal követi nyomon. Ez a vállalat is a WMS terhelést használja. Mivel ez a terhelés jól felszerelt logikával rendelkezik a raktári kitárolási és fuvarozási műveletek tervezéséhz és lefuttatásához kötegelésre engedélyezett elemek esetén, a kész cikkek többsége a „kötegalatti\[hely\]” készletfoglalási hierarchiához van társítva. Ennek a működési beállításnak az az előnye, hogy a döntéseket (amelyek valójában foglalási döntések) arról, hogy mely kötegeket kell kiválasztania, és hová kell tenni őket a raktárban, elhalasztják, amíg el nem kezdődnek a raktári kitárolási műveletek. Nem akkor jönnek létre, amikor az ügyfél rendel.
+Ebben a helyzetben a vállalat egy készletstratégiát alkalmaz, amelyben a késztermékeket a kötegszámokkal követi nyomon. Ez a vállalat is a WMS terhelést használja. Mivel ez a terhelés jól felszerelt logikával rendelkezik a raktári kitárolási és fuvarozási műveletek tervezéséhez és lefuttatásához kötegelésre engedélyezett elemek esetén, a kész cikkek többsége a *Köteg alatti\[hely\]* készletfoglalási hierarchiához van társítva. Ennek a működési beállításnak az az előnye, hogy a döntéseket (amelyek valójában foglalási döntések) arról, hogy mely kötegeket kell kiválasztania, és hová kell tenni őket a raktárban, elhalasztják, amíg el nem kezdődnek a raktári kitárolási műveletek. Nem akkor jönnek létre, amikor az ügyfél rendel.
 
-Bár a „kötegalatti\[hely\]” foglalási hierarchia jól szolgálja a vállalat üzleti céljait, a vállalatok ügyfeleinek többsége termékek újrarendelésekor ugyanazt a köteget kéri, amelyet már egyszer megvásárolt. A vállalatnak ezért rugalmasságra van szüksége a kötegelt foglalási szabályok kezelésében, hogy az ugyanazon tétel vevői igényének függvényében a következők történjenek:
+Bár a *Köteg alatti\[hely\]* foglalási hierarchia jól szolgálja a vállalat üzleti céljait, a vállalatok ügyfeleinek többsége termékek újrarendelésekor ugyanazt a köteget kéri, amelyet már egyszer megvásárolt. A vállalatnak ezért rugalmasságra van szüksége a kötegelt foglalási szabályok kezelésében, hogy az ugyanazon tétel vevői igényének függvényében a következők történjenek:
 
 - A kötegszám rögzíthető és lefoglalható, amikor a rendelést az értékesítési feldolgozó átveszi, és a raktári műveletek és/vagy más igények során nem módosítható. Ez a viselkedés segít annak biztosításában, hogy a megrendelt kötegszámot szállítsák az ügyfélnek.
 - Ha a kötegszám nem fontos a vevő számára, akkor a raktári műveletek a kitárolási munka során meghatározhatják a kötegszámot az után, hogy az értékesítési rendelés regisztrálása és a foglalás megtörtént.
 
 ### <a name="allowing-reservation-of-a-specific-batch-on-the-sales-order"></a>Konkrét köteg foglalásának engedélyezése az értékesítési rendelésen
 
-A „kötegalatti\[hely\]” foglalási hierarchiához társított cikkek kötegelt foglalási viselkedésében szükséges rugalmasság elérése érdekében a **Készletfoglalási hierarchiák lapon** a készletkezelőnek be kell jelölnie az **Foglalás engedélyezése igény szerinti foglalásra** jelölőnyégyzetet a **Köteg száma** szinten.
+A *Köteg alatti\[hely\]* foglalási hierarchiához társított cikkek kötegelt foglalási viselkedésében szükséges rugalmasság elérése érdekében a **Készletfoglalási hierarchiák** lapon a készletkezelőnek be kell jelölnie az **Foglalás engedélyezése igény szerinti foglalásra** jelölőnyégyzetet a **Köteg száma** szinten.
 
 ![A készletfoglalási hierarchia rugalmassá tétele](media/Flexible-inventory-reservation-hierarchy.png)
 
@@ -69,25 +67,25 @@ Ha a hierarchiában kiválasztja a **Kötegszám** szintjét, akkor a program au
 >
 > A **Kötegszám** és az **Azonosítótábla** a hierarchia egyetlen olyan szintjei, amelyek nyitottat a rugalmas foglalási irányelv számára. Más szóval nem jelölheti be a **Foglalás engedélyezése igény szerinti rendelésnél** jelölőnégyzetet a **Hely** vagy **Sorozatszám** szinteken.
 >
-> Ha a foglalási hierarchiában szerepel a sorozatszám dimenzió (amelynek mindig a **Kötegszám** szint alatt kell lennie), és ha bekapcsolta a kötegszám-specifikus foglalást,, a rendszer továbbra is a sorozatszám szerinti foglalási és kitárolási műveleteket fogja kezelni a „sorszámalatti\[hely\]” foglalási irányelvre vonatkozó szabályok alapján.
+> Ha a foglalási hierarchiában szerepel a sorozatszám dimenzió (amelynek mindig a **Kötegszám** szint alatt kell lennie), és ha bekapcsolta a kötegszám-specifikus foglalást,, a rendszer továbbra is a sorozatszám szerinti foglalási és kitárolási műveleteket fogja kezelni a *Sorszám alatti\[hely\]* foglalási irányelvre vonatkozó szabályok alapján.
 
-A telepítés során bármikor engedélyezheti a kötegspecifikus foglalást egy létező „kötegalatti\[hely\]” foglalási hierarchiában a telepítésben. A módosítás nem fogja érinteni a módosítás előtt létrehozott foglalásokat és nyitott raktári munkákat. Azonban a **Foglalás engedélyezése az igény szerinti rendelésnél** jelölőnégyzetet nem lehet törölni, ha az adott foglalási hierarchiához társított egy vagy több cikk esetén a **Foglalt rendelt**, **Foglalt tényleges** vagy **Megrendelve** típusú problémák készlettranzakciói léteznek.
+A telepítés során bármikor engedélyezheti a kötegspecifikus foglalást egy létező *Köteg alatti\[hely\]* foglalási hierarchiában a telepítésben. A módosítás nem fogja érinteni a módosítás előtt létrehozott foglalásokat és nyitott raktári munkákat. Azonban a **Foglalás engedélyezése az igény szerinti rendelésnél** jelölőnégyzetet nem lehet törölni, ha az adott foglalási hierarchiához társított egy vagy több cikk esetén a **Foglalt rendelt**, **Foglalt tényleges** vagy **Megrendelve** típusú problémák készlettranzakciói léteznek.
 
 > [!NOTE]
 > Ha egy elem meglévő foglalási hierarchiája nem teszi lehetővé a köteg megadását a rendelésen, akkor újra hozzárendelheti azt egy olyan foglalási hierarchiához, amely lehetővé teszi a köteg megadását, feltéve, hogy a hierarchia szintjének szerkezete mindkét hierarchiában ugyanaz. Az ismételt hozzárendeléshez használja a **Cikkek foglalási hierarchiájának módosítása** funkciót. Ez a módosítás akkor lehet fontos, ha el akarja kerülni a rugalmas kötegelt rendelést a kötegelt nyomonkövetésű cikkek egy csoportja esetén, azonban engedélyezni akarja azt a termékportfólió többi eleme számára.
 
-Függetlenül attól, hogy bejelölte-e a **Foglalás engedélyezése igény szerinti rendelésnél** jelölőnégyzetet, ha a rendelési sorban nem szeretne lefoglalni egy konkrét kötegszámot, az alapértelmezett, „kötegalatti\[hely\]” foglalási hierarchia esetében érvényes raktárműveleti logika lép érvénybe.
+Függetlenül attól, hogy bejelölte-e a **Foglalás engedélyezése igény szerinti rendelésnél** jelölőnégyzetet, ha a rendelési sorban nem szeretne lefoglalni egy konkrét kötegszámot, az alapértelmezett, *Köteg alatti\[hely\]* foglalási hierarchia esetében érvényes raktárműveleti logika lép érvénybe.
 
 ### <a name="reserve-a-specific-batch-number-for-a-customer-order"></a>Konkrét kötegszám foglalása egy vevői rendeléshez
 
-Ha egy kötegelt nyomonkövetésű elem „kötegalatti\[hely\]” típusú készle foglalási hierarchiája úgy van beállítva, hogy engedélyezze az értékesítési rendeléseken a konkrét kötegszám foglalását, akkor az értékesítési rendelések feldolgozói a vevői igényektől függően a következő módokon vehetik fel a vevői rendeléseket ugyanarra a tételre:
+Ha egy kötegelt nyomonkövetésű elem *Köteg alatti\[hely\]* típusú készletfoglalási hierarchiája úgy van beállítva, hogy engedélyezze az értékesítési rendeléseken a konkrét kötegszám foglalását, akkor az értékesítési rendelések feldolgozói a vevői igényektől függően a következő módokon vehetik fel a vevői rendeléseket ugyanarra a tételre:
 
 - **Rendelés részleteinek megadása a kötegszám megadása nélkül** – ezt a megközelítést akkor kell használni, ha a termékköteg megadása nem fontos a vevő számára. Az ilyen típusú rendelések kezelésével kapcsolatos összes meglévő folyamat változatlan marad. A felhasználók részéről nem szükséges további megfontolás.
 - **Rendelés részleteinek megadása és egy konkrét kötegszám lefoglalása** – ezt a megközelítést akkor kell használni, ha a vevő egy konkrét köteget kér. A vevők általában akkor kérnek egy konkrét köteget, ha egy korábban vásárolt terméket rendelnek újra. Ezt a típusú kötegspecifikus foglalást nevezik *Rendelésben véglegesített foglalásnak*.
 
 A következő szabályok érvényesek a mennyiségek feldolgozásakor, ha a köteg számát egy konkrét rendeléshez kötötték:
 
-- Ha engedélyezni szeretné egy konkrét kötegszám foglalását a „kötegalatti\[hely\]” foglalási hierarchiában, a rendszernek a hely dimenzióig minden dimenziót le kell foglalnia. Ez a tartomány általában a rendszámtábla dimenziót tartalmazza.
+- Ha engedélyezni szeretné egy konkrét kötegszám foglalását a *Köteg alatti\[hely\]* foglalási hierarchiában, a rendszernek a hely dimenzióig minden dimenziót le kell foglalnia. Ez a tartomány általában a rendszámtábla dimenziót tartalmazza.
 - A hely irányelvei nem használatosak, amikor olyan értékesítési sorhoz hozza létre a kitárolási munkát, amely rendelésben véglegesített kötegfoglalást használ.
 - A rendelésben véglegesített kötegfoglaláshoz tartozó munka raktári feldolgozása során sem a felhasználó, sem a rendszer nem módosíthatja a kötegszámot. (Ez a feldolgozás tartalmazza a kivételek kezelését.)
 
@@ -131,19 +129,19 @@ Ebben a példában a bemutatóadatokat kell telepíteni, és az **USMF** demó-a
 2. Válassza az **Új** lehetőséget.
 3. Az értékesítési rendelés fejlécében a **Vevői számla** mezőbe írja be az **US-003** értéket.
 4. Adjon hozzá egy sort az új elemhez, és adja meg a **10** mennyiséget. Győződjön meg arról, hogy a **Raktár** mező értéke **24** legyen.
-5. Válassza ki az **Értékesítési rendelés sorai** gyorslapot, válassza a **Készlet** elemet majd a **Karbantartás** csoportban válassza a **Köteg lefoglalása** elemet. A **Köteg lefoglalása** lapon látható a rendelési sor foglalásra használható kötegeinek listája. Ebben a példában a mennyiség **20** a **B11** kötegszámra, és **10** a **B22** kötegszámra. Figyelem, el, hogy a **Köteg lefoglalása** lap nem érhető el a sorból, ha a sorban szereplő tételt „kötegalatti\[hely\]” foglalási hierarchiához társították, hacsak nem úgy állították be, hogy engedélyezze a kötegspecifikus foglalást.
+5. Válassza ki az **Értékesítési rendelés sorai** gyorslapot, válassza a **Készlet** elemet majd a **Karbantartás** csoportban válassza a **Köteg lefoglalása** elemet. A **Köteg lefoglalása** lapon látható a rendelési sor foglalásra használható kötegeinek listája. Ebben a példában a mennyiség **20** a **B11** kötegszámra, és **10** a **B22** kötegszámra. Figyelem, el, hogy a **Köteg lefoglalása** lap nem érhető el a sorból, ha a sorban szereplő tételt *Köteg alatti\[hely\]* foglalási hierarchiához társították, hacsak nem úgy állították be, hogy engedélyezze a kötegspecifikus foglalást.
 
     > [!NOTE]
     > Ha egy értékesítési rendeléshez szeretne egy konkrét köteget foglalni, akkor a **Köteg lefoglalása** lapot kell használnia.
     >
-    > Ha közvetlenül az értékesítési rendelés sorában adja meg a köteg számát, akkor a rendszer úgy viselkedik, mintha egy konkrét kötegértéket adott volna meg olyan cikkeknél, amelyek a „kötegalatti\[hely\]” foglalási irányelv szerint működnek. A sor mentésekor figyelmeztető üzenetet fog kapni. Ha megerősíti, hogy a kötegszám megadásának közvetlenül a rendelési sorban kell történnie, akkor a sort nem a szokásos raktárkezelési logika kezeli.
+    > Ha közvetlenül az értékesítési rendelés sorában adja meg a köteg számát, akkor a rendszer úgy viselkedik, mintha egy konkrét kötegértéket adott volna meg olyan cikkeknél, amelyek a *Köteg alatti\[hely\]* foglalási irányelv szerint működnek. A sor mentésekor figyelmeztető üzenetet fog kapni. Ha megerősíti, hogy a kötegszám megadásának közvetlenül a rendelési sorban kell történnie, akkor a sort nem a szokásos raktárkezelési logika kezeli.
     >
-    > Ha lefoglalja a mennyiséget a **Foglalás** oldalon, a program nem foglal le konkrét köteget, és a sor raktári műveleteinek végrehajtása a „kötegalatti\[hely\]” foglalási irányelv esetén alkalmazandó szabályokat fogja követni.
+    > Ha lefoglalja a mennyiséget a **Foglalás** oldalon, a program nem foglal le konkrét köteget, és a sor raktári műveleteinek végrehajtása a *Köteg alatti\[hely\]* foglalási irányelv esetén alkalmazandó szabályokat fogja követni.
 
-    Ez a lap általában ugyanúgy működik és ugyanúgy kell kezelni, mint az olyan cikkeknél, amelyek társított foglalási hierarchiája „kötegfölötti\[hely\]” típusú. Léteznek azonban a következő kivételek:
+    Ez a lap általában ugyanúgy működik és ugyanúgy kell kezelni, mint az olyan cikkeknél, amelyek társított foglalási hierarchiája *Köteg fölötti\[hely\]* típusú. Léteznek azonban a következő kivételek:
 
     - A **Forrássorhoz vállalt kötegszámok** gyorslapon láthatók az illető foglalási sorhoz lefoglalt kötegszámok. A rácsban lévő kötegértékek a rendelési sor teljes teljesítési ciklusa során láthatók, ideértve a raktár feldolgozási állapotát. Ezzel szemben az **Áttekintés** gyorslapon a szabályos rendelési sor foglalása (azaz a **Hely** szintje fölötti dimenziókra elvégzett foglalás) jelenik meg a rácsban addig a pontig, amikor a raktári munka létrejön. A munkaegység ezt követően átveszi a sor foglalását, és az már nem jelenik meg a lapon. A **Forrássorhoz vállalt kötegszámok** gyorslap biztosítja, hogy az értékesítési rendelés feldolgozója a köteg életciklusa során a számlázásig bármikor megtekintheti a vevői rendeléshez társított kötegszámokat.
-    - Egy konkrét köteg lefoglalásán felül a felhasználó manuálisan is kiválaszthatja a köteg meghatározott helyét és a rendszámtáblát, nem kell hagynia, hogy a rendszer automatikusan kiválassza azokat. Ez a funkció a rendelésben véglegesített kötegfoglalás mechanizmus működésével kapcsolatos. Amint azt említettük, ha egy konkrét kötegszámot foglal egy cikk esetén a „kötegalatti\[hely\]” foglalási hierarchiában, a rendszernek a hely dimenzióig minden dimenziót le kell foglalnia. Ennélfogva a raktári munka ugyanazokat a tárolási dimenziókat fogja tartalmazni, amelyeket a rendelésekkel dolgozó felhasználók lefoglaltak, és nem biztos, hogy mindig a raktári kitárolási munkához kényelmes vagy éppen lehetséges tárolási helyet mutatja. Ha a rendelést feldolgozók ismerik a raktári megkötéseket, akkor megtörténhet, hogy manuálisan szeretnének bizonyos helyeket és rendszámtáblákat kiválasztani, amikor egy köteget foglalnak le. Ebben az esetben a felhasználónak a lap fejlécén található **Dimenziók megjelenítése** lehetőséget kell használnia, és a helyet és a rendszámtáblát fel kell vennie az **Áttekintés** gyorslap rácsára.
+    - Egy konkrét köteg lefoglalásán felül a felhasználó manuálisan is kiválaszthatja a köteg meghatározott helyét és a rendszámtáblát, nem kell hagynia, hogy a rendszer automatikusan kiválassza azokat. Ez a funkció a rendelésben véglegesített kötegfoglalás mechanizmus működésével kapcsolatos. Amint azt említettük, ha egy konkrét kötegszámot foglal egy cikk esetén a *Köteg alatti\[hely\]* foglalási hierarchiában, a rendszernek a hely dimenzióig minden dimenziót le kell foglalnia. Ennélfogva a raktári munka ugyanazokat a tárolási dimenziókat fogja tartalmazni, amelyeket a rendelésekkel dolgozó felhasználók lefoglaltak, és nem biztos, hogy mindig a raktári kitárolási munkához kényelmes vagy éppen lehetséges tárolási helyet mutatja. Ha a rendelést feldolgozók ismerik a raktári megkötéseket, akkor megtörténhet, hogy manuálisan szeretnének bizonyos helyeket és rendszámtáblákat kiválasztani, amikor egy köteget foglalnak le. Ebben az esetben a felhasználónak a lap fejlécén található **Dimenziók megjelenítése** lehetőséget kell használnia, és a helyet és a rendszámtáblát fel kell vennie az **Áttekintés** gyorslap rácsára.
 
 6. A **Köteg foglalása** lapon válassza ki a **B11** köteg sorát, majd válassza a **Sor foglalása** lehetőséget. Nincs kijelölt logika a helyek és a rendszámtáblák hozzárendelésére az automatikus foglalás során. A mennyiséget a **Foglalás** mezőbe manuálisan is beviheti. Figyelje meg, hogy a **Forrássorhoz vállalt kötegszámok** gyorslapon a **B11** köteg mellett a **Vállalt** szó látható.
 
@@ -172,7 +170,7 @@ Ebben a példában a bemutatóadatokat kell telepíteni, és az **USMF** demó-a
     Az értékesítési rendelés soraihoz lefoglalt kötegelt mennyiségek kitárolási műveletét kezelő munka jellemzői:
 
     - A munka létrehozásához a rendszer munkasablonokat használ, de nem rendelkezik hellyel kapcsolatos irányelvekkel. A program a munkasablonokhoz meghatározott összes szabványos beállítást, például a kitárolási sorok maximális számát vagy egy konkrét mértékegységet alkalmazni fogja, hogy meghatározza, hogy mikor kell új munkát létrehozni. A kitárolási helyek azonosítására szolgáló hely irányelvvel kapcsolatos szabályokat azonban nem veszi figyelembe, mivel a rendelésben véglegesített foglalás már megadja az összes készlet dimenziót. Ezek a készletdimenziók tartalmazzák a raktárak tárolási szintjén levő dimenziókat. Ezért a munka a hellyel kapcsolatos irányelvek egyeztetése nélkül örökli ezeket a dimenziókat.
-    - A kötegszám nem jelenik meg a kitárolási sorban (szemben a társított „kötegfölötti\[hely\]” foglalási hierarchiát tartalmazó cikkek esetében létrejövő munkasorokkal). Ehelyett a Kezdő kötegszám és az összes többi tárolási dimenzió látható a munkasorban a társított készlettranzakciók alapján hivatkozott munkakészlet-tranzakcióban.
+    - A kötegszám nem jelenik meg a kitárolási sorban (szemben a társított *Köteg fölötti\[hely\]* foglalási hierarchiát tartalmazó cikkek esetében létrejövő munkasorokkal). Ehelyett a Kezdő kötegszám és az összes többi tárolási dimenzió látható a munkasorban a társított készlettranzakciók alapján hivatkozott munkakészlet-tranzakcióban.
 
         ![Raktári készlet tranzakciója olyan munkához, amely rendelésben véglegesített foglalásból származik](media/Work-inventory-transactions-for-order-committed-reservation.png)
 
@@ -215,7 +213,7 @@ A rendeléshez tartozó azonosítótábla-foglalást a telepítés bármely pont
 
 Még ha az **Azonosítótábla** szintjén be is van jelölve a **Foglalás engedélyezése igény szerinti rendelésnél** jelölőnégyzet, akkor is lehetséges, hogy a rendeléshez *nem* foglalja le az adott azonosítótáblát. Ebben az esetben a foglalási hierarchiára az alapértelmezett raktári műveletek logika vonatkozik.
 
-Ha egy specifikus azonosítótábla-foglalásra van szüksége, egy [Open Data Protocol (OData)](../../fin-ops-core/dev-itpro/data-entities/odata.md) folyamatot kell használnia. Az alkalmazásban ezt a foglalást közvetlenül egy értékesítési rendelésből is megteheti az **Excel programban történő megnyitás** parancs **Azonosítótáblánkénti rendelésben véglegesített foglalások** lehetőségével. Az Excel-bővítményben megnyitott entitásadatokban meg kell adnia a következő foglaláshoz kapcsolódó adatokat, majd ki kell választania a **Közzététel** lehetőséget az adatokat Supply Chain Managementbe történő visszaküldéséhez:
+Egy adott azonosítótábla lefoglalásához egy [Open Data Protocol (OData)](../../fin-ops-core/dev-itpro/data-entities/odata.md) folyamatot kell használnia. Az alkalmazásban ezt a foglalást közvetlenül egy értékesítési rendelésből lehet megtenni a **Megnyitás Excelben parancs** **Azonosítótáblánkénti rendelésben véglegesített foglalások** lehetőségének beállításával. Az Excel-bővítményben megnyitott entitásadatokban meg kell adnia a következő foglaláshoz kapcsolódó adatokat, majd ki kell választania a **Közzététel** lehetőséget az adatokat Supply Chain Managementbe történő visszaküldéséhez:
 
 - Hivatkozás (Csak az *Értékesítési rendelés* értéke támogatott.)
 - Rendelésszám (Az érték az adagból származtatható.)
@@ -409,7 +407,7 @@ Az alábbi táblázatokban egy áttekintés látható, amely bemutatja, hogy a r
 <td>Igen</td>
 <td>
 <ol>
-<li>Válassza ki a <strong>Hely felülbírálása</strong> menüpontot a raktárkezelő alkalmazásban a kitárolási munka megkezdésekor.</li>
+<li>Válassza ki a <strong>Hely felülbírálása</strong> menüpontot a Raktárkezelés mobilalkalmazásban a kitárolási munka megkezdésekor.</li>
 <li>Válassza a <strong>Javaslás</strong> lehetőséget.</li>
 <li>Erősítse meg, hogy a kötegelt mennyiség elérhetősége alapján új helyet javasolt.</li>
 </ol>
@@ -426,7 +424,7 @@ Az alábbi táblázatokban egy áttekintés látható, amely bemutatja, hogy a r
 <td>Nincs</td>
 <td>
 <ol>
-<li>Válassza ki a <strong>Hely felülbírálása</strong> menüpontot a raktárkezelő alkalmazásban a kitárolási munka megkezdésekor.</li>
+<li>Válassza ki a <strong>Hely felülbírálása</strong> menüpontot a Raktárkezelés mobilalkalmazásban a kitárolási munka megkezdésekor.</li>
 <li>Adja meg a helyet manuálisan.</li>
 </ol>
 </td>
@@ -454,7 +452,7 @@ Az alábbi táblázatokban egy áttekintés látható, amely bemutatja, hogy a r
 <td>Nem alkalmazható</td>
 <td>
 <ol>
-<li>Válassza ki a <strong>Teljes</strong> menüpontot a raktárkezelő alkalmazásban a kitárolási munka feldolgozásakor.</li>
+<li>Válassza ki a <strong>Teljes</strong> menüpontot a Raktárkezelés mobilalkalmazásban a kitárolási munka feldolgozásakor.</li>
 <li>A <strong>Mennyiség kitárolása</strong> mezőbe írja be a szükséges kitárolás egy részleges mennyiségét, hogy jelezze a teljes mennyiséget.</li>
 </ol>
 </td>
@@ -529,7 +527,7 @@ Az alábbi táblázatokban egy áttekintés látható, amely bemutatja, hogy a r
 <td>Igen</td>
 <td>
 <ol>
-<li>Kezdje meg a mozgatást a raktárkezelő alkalmazáson.</li>
+<li>Kezdje meg a mozgatást a Raktárkezelés mobilalkalmazásban.</li>
 <li>Adja meg Innen és Ide helyeket.</li>
 </ol></td>
 <td>
@@ -645,7 +643,7 @@ Az alábbi táblázatokban egy áttekintés látható, amely bemutatja, hogy a r
 <td>Igen</td>
 <td>
 <ol>
-<li>Válassza ki a <strong>Rövid kitárolás</strong> menüpontot a raktárkezelő alkalmazásban a kitárolási munka futtatásakor.</li>
+<li>Válassza ki a <strong>Rövid kitárolás</strong> menüpontot a Raktárkezelés mobilalkalmazásban a kitárolási munka futtatásakor.</li>
 <li>Írja be a <strong>0</strong> (nulla) értéket a <strong>Kitárolási mennyiség</strong> mezőbe.</li>
 <li>Az <strong>Ok</strong> mezőbe írja be a következőt: <strong>Nincs újrafelosztás</strong>.</li>
 </ol>
@@ -674,7 +672,7 @@ Az alábbi táblázatokban egy áttekintés látható, amely bemutatja, hogy a r
 <td>Igen</td>
 <td>
 <ol>
-<li>Válassza ki a <strong>Rövid kitárolás</strong> menüpontot a raktárkezelő alkalmazásban a kitárolási munka futtatásakor.</li>
+<li>Válassza ki a <strong>Rövid kitárolás</strong> menüpontot a Raktárkezelés mobilalkalmazásban a kitárolási munka futtatásakor.</li>
 <li>Írja be a <strong>0</strong> (nulla) értéket a <strong>Kitárolási mennyiség</strong> mezőbe.</li>
 <li>Az <strong>Ok</strong> mezőbe írja be a következőt: <strong>Nincs újrafelosztás</strong>.</li>
 </ol>
@@ -698,7 +696,7 @@ Az alábbi táblázatokban egy áttekintés látható, amely bemutatja, hogy a r
 <td>Igen</td>
 <td>
 <ol>
-<li>Válassza ki a <strong>Rövid kitárolás</strong> menüpontot a raktárkezelő alkalmazásban a kitárolási munka futtatásakor.</li>
+<li>Válassza ki a <strong>Rövid kitárolás</strong> menüpontot a Raktárkezelés mobilalkalmazásban a kitárolási munka futtatásakor.</li>
 <li>Írja be a <strong>0</strong> (nulla) értéket a <strong>Rövid kitárolási mennyiség</strong> mezőbe.</li>
 <li>Az <strong>Ok</strong> mezőben válassza ki a <strong>Rövid kitárolást manuális újrafelosztással</strong> lehetőséget.</li>
 <li>Válassza ki a helyet vagy a rendszámtábla a listából.</li>
@@ -724,7 +722,7 @@ Az alábbi táblázatokban egy áttekintés látható, amely bemutatja, hogy a r
 <td>Nincs</td>
 <td>
 <ol>
-<li>Válassza ki a <strong>Rövid kitárolás</strong> menüpontot a raktárkezelő alkalmazásban a kitárolási munka futtatásakor.</li>
+<li>Válassza ki a <strong>Rövid kitárolás</strong> menüpontot a Raktárkezelés mobilalkalmazásban a kitárolási munka futtatásakor.</li>
 <li>Írja be a <strong>0</strong> (nulla) értéket a <strong>Rövid kitárolási mennyiség</strong> mezőbe.</li>
 <li>Az <strong>Ok</strong> mezőben válassza ki a <strong>Rövid kitárolást manuális újrafelosztással</strong> lehetőséget.</li>
 </ol>
@@ -737,7 +735,7 @@ Az alábbi táblázatokban egy áttekintés látható, amely bemutatja, hogy a r
 <td>Nincs</td>
 <td>
 <ol>
-<li>Válassza ki a <strong>Rövid kitárolás</strong> menüpontot a raktárkezelő alkalmazásban a kitárolási munka futtatásakor.</li>
+<li>Válassza ki a <strong>Rövid kitárolás</strong> menüpontot a Raktárkezelés mobilalkalmazásban a kitárolási munka futtatásakor.</li>
 <li>Írja be a <strong>0</strong> (nulla) értéket a <strong>Rövid kitárolási mennyiség</strong> mezőbe.</li>
 <li>Az <strong>Ok</strong> mezőben válassza ki a <strong>Rövid kitárolást manuális újrafelosztással</strong> lehetőséget.</li>
 <li>Válassza ki a helyet vagy a rendszámtábla a listából.</li>
@@ -761,7 +759,7 @@ Az alábbi táblázatokban egy áttekintés látható, amely bemutatja, hogy a r
 <td>Nem alkalmazható</td>
 <td>
 <ol>
-<li>Válassza ki a <strong>Rövid kitárolás</strong> menüpontot a raktárkezelő alkalmazásban a kitárolási munka futtatásakor.</li>
+<li>Válassza ki a <strong>Rövid kitárolás</strong> menüpontot a Raktárkezelés mobilalkalmazásban a kitárolási munka futtatásakor.</li>
 <li>Írja be a <strong>0</strong> (nulla) értéket a <strong>Rövid kitárolási mennyiség</strong> mezőbe.</li>
 <li>Az <strong>Ok</strong> mezőben válassza ki a <strong>Rövid kitárolást automatikus újrafelosztással</strong> lehetőséget.</li>
 </ol>
@@ -853,6 +851,14 @@ Az alábbi táblázatokban egy áttekintés látható, amely bemutatja, hogy a r
     - Átmozgatási rendelések és nyersanyag kitárolása
 
 - A tároló utasítási egység szerinti csomagolásra vonatkozó összevonási szabályának emgvannak a korlátai. A rendelésben véglegesített foglalások esetében azt javasoljuk, hogy ne használjon olyan tárolóépítési sablonokat, amelyek **Csomagolás utasításegység szerint** mezőjét engedélyezték. A jelenlegi rendszer a raktári munka létrehozásakor nem használ helyutasításokat. Ennek megfelelően a rendszer csak az egységszekvencia-csoport (a készletegységben) legkisebb egységét alkalmazza a tárolóra bontási hullámlépés során.
+
+## <a name="see-also"></a>Lásd még
+
+- [Kötegszámok a raktárkezelőben](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/batch-numbers-in-warehouse-management)
+- [Egy értékesítési rendelés foglalása ugyanazon kötegből](../sales-marketing/reserve-same-batch-sales-order.md)
+- [Legrégebbi köteg kitárolása mobileszközön](pick-oldest-batch.md)
+- [Köteg és azonosítótábla megerősítése](batch-and-license-plate-confirmation.md)
+- [Foglalások a raktárkezelési modulban – hibaelhárítás](troubleshoot-warehouse-reservations.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

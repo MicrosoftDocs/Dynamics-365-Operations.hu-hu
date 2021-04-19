@@ -2,7 +2,6 @@
 title: Partraszállítási költségek becslése és kezelése
 description: A rendszer az automatikus költségbeállítás alapján határozza meg a partraszállítási költséget. Ez a témakör bemutatja, hogy hogyan lehet pontosabb becslést adni különböző helyzetek megadásával.
 author: sherry-zheng
-manager: tfehr
 ms.date: 01/26/2021
 ms.topic: article
 ms.prod: ''
@@ -16,17 +15,16 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-01-26
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: cbd652f2b29f7a78ad9e4e1d3dda4a3ef8a9f3f3
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: 510f5fc4910dde2f91fe2d666abb23a9bd7381f1
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5501270"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5823433"
 ---
 # <a name="estimate-and-manage-landed-costs"></a>Partraszállítási költségek becslése és kezelése
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 A rendszer az [automatikus költségbeállítás](auto-cost-setup.md) alapján határozza meg a partraszállítási költséget. Emellett pontosabb becslést adhat különböző helyzetek megadásával. Ezeket az eseteket tárolja a alkalmazás. Ezeket később áttekintheti, és összevetheti a jelentés tényadataival. A cikk árát is frissítheti.
 

@@ -2,11 +2,9 @@
 title: Visszáru önköltségi ára és visszáru adagazonosítója
 description: Hasznos, ha a visszáruk költsége megegyezik a termékeknek az akkori költségével, amikor a termékeket az ügyfélnek eladta. Ehhez használhatja a **Visszáru adagazonosítóját**.
 author: ShylaThompson
-manager: tfehr
 ms.date: 04/30/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReturnTableListPage, ReturnInventTransIdLookup, ReturnItemNumLookup
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b420c0716823f587ea3f349a5d654ace23d84f41
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 86e048139da28c04c9f5ca03d71f92e5a7e60652
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5219269"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5835990"
 ---
 # <a name="return-cost-price-and-return-lot-id"></a>Visszáru önköltségi ára és visszáru adagazonosítója        
 

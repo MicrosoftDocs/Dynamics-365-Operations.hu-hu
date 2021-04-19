@@ -2,11 +2,9 @@
 title: Jutalékok követése a pénztárban (POS) értékesítési csoportok révén
 description: Általános kereskedelmi gyakorlat az értékesítés nyomon követése az ügyféllel foglalkozó dolgozóra lebontva – segítségnyújtást, értéknövelt értékesítést, keresztértékesítést és a tranzakció feldolgozását nyújtva.
 author: jblucher
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
@@ -17,12 +15,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 7e4820fa02ce66198e1f363ae46f944e3f24146c
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 5fa6c143d3bf61139327ed62f6522df96a1fcc04
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5243865"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5804257"
 ---
 # <a name="track-commissions-in-the-point-of-sale-pos-by-using-sales-groups"></a>Jutalékok követése a pénztárban (POS) értékesítési csoportok révén
 

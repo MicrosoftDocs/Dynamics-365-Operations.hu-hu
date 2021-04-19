@@ -2,11 +2,9 @@
 title: A tartalom hozzáadásának módjai
 description: Ez a témakör áttekintést nyújt arról, hogy hol és hogyan kell elkezdeni a tartalom kezelését a Microsoft Dynamics 365 Commerce webhelykészítő webfejlesztési eszköztárával.
 author: phinneyridge
-manager: annbe
 ms.date: 10/09/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,20 +14,18 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: eb0b1c3f77bb71ba04c9110ed25fb80c2f2e61f4
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: e6794e528d9fa6066d7246e99a3307bb1bdc9c78
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5208063"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5797575"
 ---
 # <a name="ways-to-add-content"></a>A tartalom hozzáadásának módjai
 
 [!include [banner](includes/banner.md)]
 
 Ebben a témakörben áttekintést és dokumentációra mutató hivatkozásokat talál arról, hogyan kezelje a tartalmakat a Microsoft Dynamics 365 Commerce webhelykészítő webfejlesztői eszköztárával.
-
-## <a name="overview"></a>Áttekintés
 
 A webhely megjelenését, hangulatát és tartalmát sokféleképpen lehet megváltoztatni. A testreszabás előírt szintjétől függően számos ilyen módosítást a nem fejlesztők is végrehajthatnak a webhelykészítővel, a Dynamics 365 Commerce szolgáltatásban található webfejlesztői eszközkészlettel. A webhelykészítő segítségével kód írása nélkül készíthet sablonokat, témákat választhat, kiválaszthat és konfirugálhat modulokat. Ezzel szemben a fejlesztési szakértelem szükséges egy új téma vagy modul létrehozásához, mivel az e-kereskedelem szoftverfejlesztő készlet (SDK) és az Microsoft Dynamics Lifecycle Services (LCS) telepítési munkafolyamatát kell használni.
 

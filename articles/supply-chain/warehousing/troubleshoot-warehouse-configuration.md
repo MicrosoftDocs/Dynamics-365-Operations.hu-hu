@@ -2,11 +2,9 @@
 title: Raktár konfigurálása – Hibaelhárítás
 description: Ez a témakör azt mutatja be, hogyan lehet megoldani gyakori problémákat, miközben konfigurálja a Microsoft Dynamics 365 Supply Chain Management szolgáltatást.
 author: perlynne
-manager: tfehr
 ms.date: 10/19/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application user
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 1fe285f05e5f1ddcb7bd206290b9954cbdaffc75
-ms.sourcegitcommit: 105f65468b45799761c26e5d0ad9df4ff162c38d
+ms.openlocfilehash: 1dbd947f0740d22e0f79e6d5c272beb64715c8a5
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5487097"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5814392"
 ---
 # <a name="troubleshoot-warehouse-configuration"></a>Raktár konfigurálása – Hibaelhárítás
 
@@ -38,7 +36,7 @@ Ez a hibaüzenet jelenik meg, amikor beolvas egy azonosítótábla-azonosítót 
 
 ### <a name="issue-resolution"></a>Probléma megoldása
 
-Győződjön meg róla, hogy az azonosítótábla azonosítója nincs máshoz lefoglalva. Ez a probléma akkor szokott előfordulni, ha a raktári alkalmazásban a felhasználó által beolvasott érték egy érvényes hely és egy érvényes azonosítótábla-azonosító. Ez a probléma azonban a 10.0.11 verzióban ki lett javítva.
+Győződjön meg róla, hogy az azonosítótábla azonosítója nincs máshoz lefoglalva. Ez a probléma akkor szokott előfordulni, ha a Raktárkezelés mobilalkalmazásban a felhasználó által beolvasott érték egy érvényes hely és egy érvényes azonosítótábla-azonosító. Ez a probléma azonban a 10.0.11 verzióban ki lett javítva.
 
 ## <a name="i-receive-the-following-error-message-license-plate-must-be-specified-for-this-location"></a>A következő hibaüzenet jelenik meg: „Azonosítótáblát meg kell határozni ehhez a helyhez”.
 
@@ -82,7 +80,7 @@ Az *Értékesítési rendelések* munkarendelési típusának és a *Kitárolás
 
 Egy új funkció, a *Több termékváltozatos helyirányelvek összes műveletének kiértékelése* hozzá lett adva a 10.0.15 verzióhoz (lásd: [KB 4579866](https://fix.lcs.dynamics.com/Issue/Details?kb=4579866&bugId=475946&dbType=3&qc=1bc41a56de7a3ee419fa76397a6bf282fce5be9b93e427c08a6d916d1dfa3091)). Ez a funkció kiértékeli a több termékváltozatos helyirányelvek összes műveletét. Ha szüksége van erre a funkcióra, használja a [Funkciókezelés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) lehetőséget a funkció bekapcsolásához.
 
-## <a name="i-cant-use-the-warehouse-app-to-do-partial-picking"></a>A raktári alkalmazás nem használható részleges kitárolásra.
+## <a name="i-cant-use-the-warehouse-management-mobile-app-to-do-partial-picking"></a>A Raktárkezelés mobilalkalmazás nem használható részleges kitárolásra.
 
 ### <a name="issue-description"></a>Probléma leírása
 
@@ -100,7 +98,7 @@ Egy köteg részleges mennyiségéről szeretne létrehozni egy készletállapot
 
 ### <a name="issue-resolution"></a>Probléma megoldása
 
-Ha engedélyezni szeretné, hogy a dolgozók elvégezzék ezt a módosítást, akkor létrehozhat egy menüelemet a raktári alkalmazás számára. A **Mobileszköz menüpontok** oldalon hozzon létre (vagy szerkesszen) egy menüpontot a következő beállításokkal:
+Ha engedélyezni szeretné, hogy a dolgozók elvégezzék ezt a módosítást, akkor létrehozhat egy menüelemet a Raktárkezelés mobilalkalmazás számára. A **Mobileszköz menüpontok** oldalon hozzon létre (vagy szerkesszen) egy menüpontot a következő beállításokkal:
 
 - **Mód:** *Munka*
 - **Meglévő munka használata:** *Nem*

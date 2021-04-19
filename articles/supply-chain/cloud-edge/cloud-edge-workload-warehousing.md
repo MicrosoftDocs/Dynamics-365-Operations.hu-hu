@@ -2,11 +2,9 @@
 title: Raktárkezelési számítási feladatok felhőalapú és peremhálózati skálázási egységekhez
 description: Ez a témakör arról a szolgáltatásról nyújt tájékoztatást, amely lehetővé teszi a skálázási egységek számára a kiválasztott folyamatok futtatását a raktárkezelési számítási feladatából.
 author: perlynne
-manager: tfeyr
 ms.date: 10/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchTable, SysSecRolesEditUsers
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 9b5d8c9e77fb98dfb7031a3868303970fe3bf865
-ms.sourcegitcommit: 4835acc3edacf8277937723d3f85a7875bd8de83
+ms.openlocfilehash: 6372e08b7ec737f3abd2f2bd5d4f387eaf869f03
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "5580965"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5832394"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Raktérkezelés munkaterhelései felhőalapú és peremhálózat-lépték szerinti egységekhez
 
@@ -70,7 +68,7 @@ A központ a következő adatokat birtokolja:
 - Rendelés felosztása és kimenő terhelés feldolgozása
 - A raktárba történő kiadás, a szállítmány létrehozása, a hullámlétrehozás és a hullámvéglegesítés folyamatok
 
-A skálázási egységek birtokolják a hullám kibocsátása után a tényleges hullámfeldolgozási egységeket (például a munka felosztását, a feltöltési munkát és a munkaszükségletek létrehozását). Ennélfogva a raktári dolgozók a kimenő munkát a skálázási egységhez kapcsolódó raktári alkalmazás segítségével dolgozzák fel.
+A skálázási egységek birtokolják a hullám kibocsátása után a tényleges hullámfeldolgozási egységeket (például a munka felosztását, a feltöltési munkát és a munkaszükségletek létrehozását). Ennélfogva a raktári dolgozók a kimenő munkát a skálázási egységhez kapcsolódó Raktárkezelés mobilalkalmazás segítségével dolgozzák fel.
 
 ![Hullámfeldolgozási folyamat](./media/wes-wave-processing-ga.png "Hullámfeldolgozási folyamat")
 
@@ -94,7 +92,7 @@ Be kell jelentkeznie a központba a *Kiadás raktárba* folyamat használatához
 
 A **Beszerzési rendelések automatikus kiadása** funkció használatakor lekérdezés alapján meghatározott beszerzésirendelés-sorokat választhat ki. Jellemző helyzet lehet egy ismétlődő kötegelt feladat, amely kiadja a következő napon várható összes visszaigazolt beszerzésirendelés-sort.
 
-A dolgozó a skálázási egységhez kapcsolódó raktári alkalmazás segítségével futtathatja a bevételezési folyamatot. A skálázási egység ezt követően rögzíti az adatokat, és a bejövő raktári rendeléssel szemben jelenti őket. A következő betárolás létrehozását és feldolgozását a skálázási egység is kezeli.
+A dolgozó a skálázási egységhez kapcsolódó Raktárkezelés mobilalkalmazás segítségével futtathatja a bevételezési folyamatot. A skálázási egység ezt követően rögzíti az adatokat, és a bejövő raktári rendeléssel szemben jelenti őket. A következő betárolás létrehozását és feldolgozását a skálázási egység is kezeli.
 
 Ha nem használja a *kiadás raktárba* folyamatot, és így nem használja a *raktári rendeléseket*, akkor a központ a raktári bevételezést és a munka feldolgozását a skálázási egységtől függetlenül feldolgozhatja.
 
@@ -117,10 +115,10 @@ Azokhoz a felhasználókhoz, akik mind a központban, mind a skálázási egysé
 A következő raktári végrehajtási folyamatok engedélyezettek egy WES-számítási feladat esetében egy skálázási egységen:
 
 - Kiválasztott hullám metódusok értékesítési és átátviteli rendelésekhez (felosztás, igényfeltöltés, tárolóra készítés, munka létrehozása és hullámcímke-nyomtatás)
-- Az értékesítési és átviteli rendelések raktári munkához történő feldolgozása a raktári alkalmazással (a feltöltési munkát is beleértve)
-- Aktuális készlet lekérdezése a raktári alkalmazás használatával
-- A készlet mozgásának létrehozása és futtatása a raktári alkalmazás használatával
-- Beszerzési rendelések regisztrálása és betárolási munka a raktári alkalmazás használatával
+- Az értékesítési és átviteli rendelések raktári munkához történő feldolgozása a Raktárkezelés mobilalkalmazás (a feltöltési munkát is beleértve)
+- Aktuális készlet lekérdezése a Raktárkezelés mobilalkalmazás használatával
+- A készlet mozgásának létrehozása és futtatása a Raktárkezelés mobilalkalmazás használatával
+- Beszerzési rendelések regisztrálása és betárolási munka a Raktárkezelés mobilalkalmazás használatával
 
 A következő munkarendelés-típusok jelenleg támogatottak a WES számítási feladatok esetében a skálázási egység telepítésein:
 
@@ -133,7 +131,7 @@ A következő munkarendelés-típusok jelenleg támogatottak a WES számítási 
 A program jelenleg nem támogatja a forrásoldali dokumentumok egyéb típusainak feldolgozását vagy a raktári munkát a skálázási egységekben. Például egy skálázási egységre vonatkozó WES-munkaterhelés esetén nem lehet áthozott rendelés bevételezését (átviteli bevételezést) vagy ciklikus leltározási munkát végezni.
 
 > [!NOTE]
-> A nem támogatott funkciókhoz használható mobileszköz-menüpontok és gombok nem jelennek meg a _raktári alkalmazásban_, ha skálázásiegység-telepítéshez kapcsolódik.
+> A nem támogatott funkciókhoz használható mobileszköz-menüpontok és gombok nem jelennek meg a _Raktárkezelés mobilalkalmazásban_, ha skálázásiegység-telepítéshez kapcsolódik.
 
 > [!WARNING]
 > Amikor egy skálázási egységen számítási feladatot alkalmaz, akkor nem futtathat nem támogatott folyamatokat az adott raktár esetében a központban. A témakörben később található táblázatok a támogatott funkciókat dokumentálják.
@@ -164,7 +162,7 @@ A következő raktárkezelési funkciók jelenleg nem támogatottak a skálázá
 - Raktári munka feldolgozása szállítmánylevelekkel
 - Raktári munka feldolgozása ciklikus leltározási küszöbérték aktiválásával
 - Raktári munka feldolgozása anyagkezelési/raktárautomatizálással
-- Az alaptermék adatképének használata (például a raktári alkalmazásban)
+- Az alaptermék adatképének használata (például a Raktárkezelés mobilalkalmazásban)
 
 > [!WARNING]
 > Bizonyos raktári funkciók nem érhetők el az olyan raktáraknál, ahol a raktárkezelési terhelések egy skálázási egységen futnak, és a központ és a skálázási egység munkaterhelés esetén sem támogatott.
@@ -253,7 +251,7 @@ A következő táblázat bemutatja, hogy mely raktári műveletek és kivételke
 | Mozgás                                           | Igen | Igen                          |
 | Mozgás sablon szerint                               | Igen | Igen                          |
 | Raktári átmozgatás                                 | Igen | Nincs                           |
-| Átmozgatási rendelés létrehozása a raktári alkalmazásból           | Igen | Nincs                           |
+| Átmozgatási rendelés létrehozása a Raktárkezelés mobilalkalmazásból           | Igen | Nincs                           |
 | Igazítás ki (be/ki)                                | Igen | Nincs                           |
 | Készletállapot-változás                            | Igen | Nincs                           |
 | Ciklikus leltározás és számbavételi eltérés feldolgozása | Igen | Nincs                           |

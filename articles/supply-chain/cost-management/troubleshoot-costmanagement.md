@@ -1,12 +1,10 @@
 ---
 title: Költségkezelés – hibaelhárítás
 description: Ez a témakör azt mutatja be, hogyan lehet javítani a költségkezelés használata során felmerülő problémákat.
-author: riluan
-manager: tfehr
+author: AndersGirke
 ms.date: 10/13/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventAgingStorage, InventAgingStorageChart, InventAgingStorageDetails, InventValueProcess, InventValueReportSetup, InventClosing
 audience: Application User
@@ -15,15 +13,15 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: riluan
+ms.author: aevengir
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: dceaca64132857d796a16c2450a372ba05712cf5
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: fc6a48a44a529c82c2a9ee818af95569d9bcb249
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5262453"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5834289"
 ---
 # <a name="troubleshoot-cost-management"></a>Költségkezelés – hibaelhárítás
 
@@ -37,7 +35,7 @@ A [kKészletkorosítási jelentés tárolása](inventory-aging-report-storage.md
 
 A részösszegek problémákat okozhatnak az eredmény exportálásakor, különösen akkor, ha a felhasználók módosítják a rekordsorozatot.
 
-A részösszegek ellenőrzéséhez exportálni lehet az eredményt Microsoft Excel. Ha azt szeretné, hogy a Supply Chain Managementen belül ellenőrizze a részösszegeket, használja [Funkciókezelést](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) és engedélyezze az *Új rácsvezérlő* és az *(előzetes verzió) csoportosítás a rácsokban* funkciókat, amelyek sokkal rugalmasabban használhatók a csoportosítási oszlop részösszegeinak megjelenítéséhez. További információkért lásd az [Rácsfunkciók](../../fin-ops-core/fin-ops/get-started/grid-capabilities.md) részt.
+A részösszegek ellenőrzéséhez exportálni lehet az eredményt Microsoft Excel. Ha azt szeretné, hogy a Supply Chain Managementen belül ellenőrizze a részösszegeket, használja [Funkciókezelést](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) és engedélyezze az *Új rácsvezérlő* és a *Csoportosítás a rácsokban* funkciókat, amelyek sokkal rugalmasabban használhatók a csoportosítási oszlop részösszegeinak megjelenítéséhez. További információkért lásd az [Rácsfunkciók](../../fin-ops-core/fin-ops/get-started/grid-capabilities.md) részt.
 
 ### <a name="inventory-value-storage-report-doesnt-support-ledger-account-information"></a>A készletérték-tárolási jelentés nem támogatja a főkönyvi fiók adatait
 

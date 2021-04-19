@@ -2,11 +2,9 @@
 title: Felhőalapú és peremhálózat skálázási egységek a gyártási és a raktárkezelési számítási feladatokhoz
 description: Ez a témakör további információt biztosít a Felhőalapú és peremhálózati skálázási egységgel kapcsolatban a gyártási és raktárkezelési munkaterhelésekhez.
 author: cabeln
-manager: ''
 ms.date: 10/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: SCM
 ms.author: cabeln
 ms.search.validFrom: 2020-09-23
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: fb0d8e0226b11e93503979c202da917de1df6319
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 3eacc9d0cf53fa8af3ff166006cb8fab32445331
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5240437"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5836710"
 ---
 # <a name="cloud-and-edge-scale-units-for-manufacturing-and-warehouse-management-workloads"></a>Felhőalapú és peremhálózat skálázási egységek a gyártási és a raktárkezelési számítási feladatokhoz
 
@@ -124,10 +122,10 @@ További információt a [gyártási skálázási egység számítási feladatá
 A raktárkezeléshez a felhő- és peremhálózati skálázási egységek a következő képességeket biztosítják, még akkor is, ha a peremhálózati egységek nem kapcsolódnak a felhőhöz:
 
 - Az értékesítési rendelésekhez és a szükségletek feltöltéséhez kiválasztott hullámos módszerek feldolgozása engedélyezve van.
-- A raktári dolgozók a raktári alkalmazás használatával futtathatják az értékesítési és igény szerinti feltöltési raktári munkát.
-- A raktári dolgozók a raktári alkalmazás segítségével érdeklődhetnek az aktuális készletről.
-- A raktári dolgozók a raktári alkalmazás segítségével létrehozhatnak és futtathatnak készletmozgatásokat.
-- A raktári dolgozók regisztrálhatnak beszerzési rendeléseket és betárolási munkát végezhetnek a raktári alkalmazás használatával.
+- A raktári dolgozók a Raktárkezelés mobilalkalmazás használatával futtathatják az értékesítési és igény szerinti feltöltési raktári munkát.
+- A raktári dolgozók a Raktárkezelés mobilalkalmazás segítségével érdeklődhetnek az aktuális készletről.
+- A raktári dolgozók a Raktárkezelés mobilalkalmazás segítségével létrehozhatnak és futtathatnak készletmozgatásokat.
+- A raktári dolgozók regisztrálhatnak beszerzési rendeléseket és betárolási munkát végezhetnek a Raktárkezelés mobilalkalmazás használatával.
 
 További információt a [raktári skálázási egység számítási feladatának részletei](cloud-edge-workload-warehousing.md) című témakörben talál.
 

@@ -2,11 +2,9 @@
 title: A CSS felülíró fájljainak használata
 description: Ez a témakör ismerteti, hogy miért, mikor és hogyan kell használni az egymásba ágyazott stíluslapok (CSS) felülíró fájljait a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: phinneyridge
-manager: annbe
 ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,21 +14,18 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-12-12
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 41fb0be51f7af25faba1b860319aea84ae7a8b56
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: ef96070fe77b46622667301c7c7c402909ee7dfc
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5207799"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5799493"
 ---
 # <a name="work-with-css-override-files"></a>A CSS felülíró fájljainak használata
-
 
 [!include [banner](includes/banner.md)]
 
 Ez a témakör ismerteti, hogy miért, mikor és hogyan kell használni az egymásba ágyazott stíluslapok (CSS) felülíró fájljait a Microsoft Dynamics 365 Commerce alkalmazásban.
-
-## <a name="overview"></a>Áttekintés
 
 Az állandó webhelystílusokat általában a webhely témáján keresztül kell kezelni. A témák biztosítják az alapvető CSS- és stílusbeállításokat a webhely minden oldala esetén. A témák az Dynamics 365 Commerce online szoftverfejlesztői készlet (SDK) segítségével hozhatók létre, és a webhelyekre a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatáson keresztül vannak telepítve. Az SDK téma-hibakeresés képességei és modulinterfész-konfigurációi segítenek a webhely fejlesztőinek testreszabható és összetartó webhelytervcsomagok létrehozásában. Ha ezeket a tervezési csomagokat egy webhelyre telepítik, a webhelykészítők a tartalom webhelyfejlesztés helyett a tartalom létrehozására, szerkesztésére és közzétételére összpontosíthatnak.
 

@@ -2,7 +2,6 @@
 title: Partraszállítási költség és Szállításkezelés
 description: A Microsoft Dynamics 365 Supply Chain Management két különböző modult biztosít a szállítás kezelésére, a Szállításkezelés (TMS) és a Partraszállítási költség modult. Ez a témakör összefoglalja a két modul közös funkcióit, és kiemeli a két modul közötti különbségeket.
 author: sherry-zheng
-manager: tfehr
 ms.date: 12/04/2020
 ms.topic: article
 ms.prod: ''
@@ -15,17 +14,16 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-12-04
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 9349537754d7e6fd0e278c55d5d762267953800c
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: bb5ecaa237eed2a1902c965fd42b31cc1708a4e2
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5500718"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5833857"
 ---
 # <a name="landed-cost-vs-transportation-management"></a>Partraszállítási költség és Szállításkezelés
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 A Microsoft Dynamics 365 Supply Chain Management két különböző modult biztosít a szállítás kezelésére, a **Szállításkezelés** (TMS) és a **Partraszállítási költség** modult. Ez a témakör összefoglalja a két modul közös funkcióit, és kiemeli a két modul közötti különbségeket. Az információk alapján eldöntheti, hogy melyik modul a legmegfelelőbb az üzleti gyakorlatához. Előfordulhat, hogy egyes üzleti gyakorlatok jobban működnek a TMS-sel, míg mások a Partraszállítási költséggel működnek a legjobban. Ezután az üzleti követelményektől függően dönthet úgy, hogy csak egy modult használ, vagy kombinálhatja a két modult.
 
@@ -158,15 +156,15 @@ Mind a TMS, mind a Partraszállítási költség biztosítja az áruk konténere
 
 ### <a name="tms-receiving-by-container-features"></a>TMS bevételezés konténer szerint funkciói
 
-A TMS támogatja a bejövő ASN-eket, a raktári alkalmazáson keresztüli bevételezés összes változatát, valamint a Supply Chain Management ügyfélen keresztüli bevételezési módokat.
+A TMS támogatja a bejövő ASN-eket, a Raktárkezelés mobilalkalmazáson keresztüli bevételezés összes változatát, valamint a Supply Chain Management ügyfélen keresztüli bevételezési módokat.
 
 ### <a name="landed-cost-receiving-by-container-features"></a>Partraszállítási költség bevételezés konténer szerint funkciói
 
 A Partraszállítási költség a konténer szerinti bevételezés támogatása érdekében a szállítókonténer-rekordokat hoz létre, és a konténerazonosító alapján beszerzési rendeléseket társít egy adott szállítókonténerhez. Ezután a járulékos költségek alkalmazhatók a szállítókonténerre, és le lehet őket bontani, hogy a megfelelő beszerzési rendelésekhez legynek társítva.
 
-A Partraszállítási költségben található konténerek bevételezése új típusú bevételezéssel, más *úton lévő áruk bevételezése* módszerrel, érkezési naplókkal vagy mobileszközös bevételezésen keresztül is történhet. Az érkezetési naplók használata esetén a mennyiségek inicializálhatók az úton lévő áruk rendeléséből vagy a konténer eredeti beszerzésirendelés-soraiból. A Partraszállítási költség két munkatípust biztosít a raktári alkalmazáson keresztüli bevételezéshez.
+A Partraszállítási költségben található konténerek bevételezése új típusú bevételezéssel, más *úton lévő áruk bevételezése* módszerrel, érkezési naplókkal vagy mobileszközös bevételezésen keresztül is történhet. Az érkezetési naplók használata esetén a mennyiségek inicializálhatók az úton lévő áruk rendeléséből vagy a konténer eredeti beszerzésirendelés-soraiból. A Partraszállítási költség két munkatípust biztosít a Raktárkezelés mobilalkalmazáson keresztüli bevételezéshez.
 
-A Partraszállítási költség nem biztosít ASN-t az elektronikus árubevételezéshez. Ezenkívül nem támogatja a raktári alkalmazás folyamatait, amelyek a rakomány bevételezését, az azonosítótábla bevételezését vagy a vegyes azonosítótábla bevételezését dolgozzák fel.
+A Partraszállítási költség nem biztosít ASN-t az elektronikus árubevételezéshez. Ezenkívül nem támogatja a Raktárkezelés mobilalkalmazás folyamatait, amelyek a rakomány bevételezését, az azonosítótábla bevételezését vagy a vegyes azonosítótábla bevételezését dolgozzák fel.
 
 ## <a name="rate-shopping-by-vendor"></a>Díjkiválasztás szállító szerint
 

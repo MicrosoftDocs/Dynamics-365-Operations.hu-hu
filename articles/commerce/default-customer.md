@@ -2,11 +2,9 @@
 title: Alapértelmezett vevő létrehozása
 description: Ez a témakör azt mutatja be, hogyan lehet a Microsoft Dynamics 365 Commerce megoldásban egy csatorna létrehozásakor használandó alapértelmezett vevőt létrehozni.
 author: samjarawan
-manager: annbe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: f988732549ce82919f02c87b320623d8d4218735
-ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
+ms.openlocfilehash: ecdf4e5618d3397527bf83977857fbe3f8dbb265
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/19/2021
-ms.locfileid: "5477900"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5799179"
 ---
 # <a name="create-a-default-customer"></a>Alapértelmezett vevő létrehozása
 
@@ -67,14 +65,14 @@ A következő kép egy példát mutat a címjegyzékre.
 
 ![Címjegyzék](media/address-book.png)
 
-## <a name="create-a-default-customer"></a>Alapértelmezett vevő létrehozása
+## <a name="create-a-default-customer&quot;></a>Alapértelmezett vevő létrehozása
 
 Alapértelmezett ügyfél létrehozásához tegye a következőket.
 
 1. A navigációs ablaktáblán lépjen a **Modulok \> Kiskereskedelem és kereskedelem \> Minden ügyfél \> Ügyfélcsoportok** részhez.
 1. A műveleti ablaktáblán kattintson az **Új** elemre.
 1. A **Típus** legördülő listán válassza a Személy elemet.
-1. A **Vevőfiók** legördülő listából válassza ki vagy adja meg a számlaszámot (például "100001").
+1. A **Vevőfiók** legördülő listából válassza ki vagy adja meg a számlaszámot (például &quot;100001").
 1. Az **Utónév** legördülő listából válassza ki vagy írja be a nevet (például "Alapértelmezett").
 1. A **Középső név** legördülő listából válassza ki vagy írja be a nevet (például "Kiskereskedelmi").
 1. A **Vezetéknév** legördülő listából válassza ki vagy írja be a nevet (például "Ügyfél").

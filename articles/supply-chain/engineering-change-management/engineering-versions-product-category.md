@@ -2,11 +2,9 @@
 title: Mérnöki változatok és mérnöki termékkategóriák
 description: Ez a témakör a mérnöki verziók fogalmával kapcsolatban tartalmaz tájékoztatást. A mérnöki verziók gondoskodnak arról, hogy a termék különböző állapotai, valamint az adatok folyamatos és egyértelműek legyenek, és hogy megjeleníthetők legyenek a rendszerben.
 author: t-benebo
-manager: tfehr
 ms.date: 09/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EngChgLookupDynastring, EngChgProductVersionNumberRule, EngChgEcmProductRoute, EngChgEcmRequestProducts, EngChgEcmProductRoute, EngChgEcmProductPreview,EngChgEcmProductBOMItemIdLookup, EngChgEcmProductBOMConsistOf, EngChgEcmProductCreate, EngChgEcmProductLookup, EngChgProductVersionPrCompany, ngChgProductTypeLookup, EngChgProductType, EngChgProductItemPart, EngChgProductItem, EngChgEcmCategory, EngChgEcmBomDesignerEditBom, EngChgEcmBomDesigner, EngChgEcmBOMCopyDialog
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: e1f8c8d74a5da1dceb54bcc7c16aebdfe2bf4fd1
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 1ebcb43b6c62ce895d3b1b36d7793f90208ca23e
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5214938"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5836638"
 ---
 # <a name="engineering-versions-and-engineering-product-categories"></a>Mérnöki változatok és mérnöki termékkategóriák
 

@@ -2,11 +2,9 @@
 title: Költségszámítási verziók áttekintése
 description: Ez a cikk a költségszámítási verziókról, azok karbantartásának módjáról, illetve az azokba bevihető adattípusokról nyújt tájékoztatást. A költségszámítási verziók elsődleges célja az, hogy tartalmazzák a cikkek, költségkategóriák és a közvetett költségek számítási képleteinek rekordjait.
 author: AndersGirke
-manager: tfehr
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BOMCalcDialog, BOMCalcTable, CostingVersion
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4375c088e0872f6f75ee83b288c41e80ea4dcb34
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 421ef0ffc3d9105e605a010f912f26ec03f590b0
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5232350"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5832370"
 ---
 # <a name="costing-versions-overview"></a>Költségszámítási verziók áttekintése
 

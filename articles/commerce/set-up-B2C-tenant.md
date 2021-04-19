@@ -2,11 +2,9 @@
 title: B2C-bérlő beállítása a Commerce-ben
 description: Ez a témakör azt mutatja be, hogyan lehet beállítani az Azure Active Directory (Azure AD) cég-ügyfél (B2C) bérlőket felhasználói webhely-hitelesítéshez Dynamics 365 Commerce alkalmazásban.
 author: BrianShook
-manager: annbe
-ms.date: 06/22/2020
+ms.date: 03/17/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 4ee667bb49e70e0c881a2db1248b3f0c7fc017ce
-ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
+ms.openlocfilehash: f062f40c9eb883d02c4a0ee06c797ed1b0b22665
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/19/2021
-ms.locfileid: "5478140"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5793995"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>B2C-bérlő beállítása a Commerce-ben
 
@@ -30,6 +28,12 @@ ms.locfileid: "5478140"
 Ez a témakör azt mutatja be, hogyan lehet beállítani az Azure Active Directory (Azure AD) cég-ügyfél (B2C) bérlőket felhasználói webhely-hitelesítéshez Dynamics 365 Commerce alkalmazásban.
 
 A Dynamics 365 Commerce az Azure AD B2C protokollt használja a felhasználók hitelesítő adatainak és hitelesítési folyamatainak támogatásához. A felhasználó ezeket a folyamatokat feliratkozhat, bejelentkezhet és alaphelyzetbe állíthatja jelszavát. Az Azure AD B2C érzékeny természetű felhasználói hitelesítési adatokat, például a felhasználónevet és a jelszót tárolja. A B2C-bérlőben a felhasználói rekordja a B2C helyi fiók rekordját vagy a B2C társadalmi identitásszolgáltatói rekordját fogja tárolni. Ezek a B2C rekordoknak a vevői rekordra mutatnak vissza a Commerce környezetben.
+
+> [!WARNING] 
+> Az Azure AD B2C megszünteti a régi (örökölt) felhasználói folyamatokat 2021. augusztus 1-jéig. Ezért érdemes megterveznie a felhasználói folyamatai áttelepítését az új, ajánlott verzióba. Az új verzió funkcióparitást és új funkciókat biztosít. A Commerce 10.0.15-ös vagy újabb verziójának modulkönyvtárát az ajánlott B2C felhasználói folyamatokkal kell használni. További információért lásd: [Felhasználói folyamatok az Azure Active Directory B2C-ben](https://docs.microsoft.com/azure/active-directory-b2c/user-flow-overview).
+ 
+ > [!NOTE]
+ > A kereskedelmi értékelési környezetek egy előre betöltött Azure AD B2C bérlővel érkeznek demonstrációs célokra. Az értékelési környezetek esetén nincs szükség saját Azure AD B2C-bérlő betöltésére az alábbi lépésekkel.
 
 ## <a name="create-or-link-to-an-existing-aad-b2c-tenant-in-the-azure-portal"></a>AAD B2C-bérlő létrehozása vagy hivatkozás egy meglévő bérlőre az Azure Portal webhelyen
 
@@ -70,17 +74,21 @@ A következő kép egy Azure AD B2C **Hibaelhárítási** bannert mutat be.
 
 ## <a name="create-the-b2c-application"></a>A B2C-alkalmazás létrehozása
 
-Miután a B2C bérlő létrejött, egy B2C alkalmazást fog létrehozni a bérlőn belül, hogy a Commerce műveletekkel együttműködjön.
+Miután a B2C bérlő létrejött, egy B2C alkalmazást fog létrehozni az új Azure AD B2C bérlőn belül, hogy a Commerce műveletekkel együttműködjön.
 
 A B2C alkalmazás létrehozásához kövesse az alábbi lépéseket.
 
-1. Az Azure portálon válassz az **Alkalmazások(örökölt)** lehetőséget, majd válassza a **Hozzáadás** elemet.
-1. A **Név** mezőbe írja be a kívánt AAD B2C alkalmazás nevét.
-1. A **Webalkalmazás/webes API** esetén a **Webalkalmazás / webes API belefoglalása** elemnél válassza az **Igen** lehetőséget.
-1. Az **Implicit folyamatengedélyezése** alatt válassza az **Igen** lehetőséget (az alapértelmezett érték).
-1. A **Válasz URL** területen adja meg a dedikált válasz-URL-címeket. A [válasz URL](#reply-urls) -címeivel kapcsolatos tudnivalókat lásd a válasz URL-címei között.
-1. A **Natív ügyfél belefoglalása** helyen válassza a **Nem** (az alapértelmezett érték) beállítást.
-1. Válassza a **Létrehozása** lehetőséget.
+1. Az Azure portálon válassza az **Alkalmazásregisztrációk** elemet, majd az **Új regisztráció** lehetőséget.
+1. A **Név** mezőbe írja be a Azure AD B2C-alkalmazásnak adni kívánt nevet.
+1. A **Támogatott fióktípusok** csoportban válassza a **Fiókok bármely identitásszolgáltatóban vagy szervezeti címtárban (felhasználók hitelesítéséhet a felhasználói folyamatokkal)**.
+1. Az **Átirányítási URI** szolgáltatáshoz írja be a dedikált válasz URL-eket **Web** típusúként. A válasz URL-címekkel és a formázásukkal kapcsolatos információkért lásd: [Válasz URL-címek](#reply-urls) részt alább.
+1. Az **Engedélyek** esetében válassza a **Rendszergazdai hozzájárulás biztosítása az OpenID-hoz és az offline hozzáférési engedélyezkhez** lehetőséget.
+1. Válassza a **Regisztrálás** lehetőséget.
+1. Jelölje ki az újonnan létrehozott alkalmazást, és keresse meg a **Hitelesítés** menüt. Itt szükség esetén további **Átirányítási URI**-kat adhat hozzá (most vagy később). Folytassa a következő lépéssel, ha jelenleg nincs rá szükség.
+1. Az **Implicit engedély** alatt válassza ki a **Hozzáférési jogkivonat** és az **Azonosítói jogkivonat** elemeket, így engedélyezheti őket az alkalmazás számára. Válassza a **Mentés** lehetőséget.
+1. Lépjen az Azure Portal **Áttekintés** menüjébe, és másolja be az **Alkalmazás (ügyfél) azonosítóját**. Jegyezze fel ezt az azonosítót a későbbi beállítási lépésekhez (később **Ügyfél GUID azonosítóként** hivatkoznak rá).
+
+Az Azure AD B2C alkalmazásregisztrációiról további információt az [Azure Active Directory B2C új alkalmazásregisztrációs élménye](https://docs.microsoft.com/azure/active-directory-b2c/app-registrations-training-guide) részben talál
 
 ### <a name="reply-urls"></a>Válasz URL-címek
 
@@ -102,7 +110,7 @@ Az Azure AD B2C három alapvető felhasználói folyamatot kínál:
 
 Választhatja az Azure AD alapértelmezett felhasználói folyamatainak használatát , amelyek az AAD B2C által kezelt lapot jelenítik meg. Másik megoldásként HTML-lapot is létrehozhat, amellyel szabályozhatja a felhasználói folyamatok megjelenését és érzetét. 
 
-A felhasználói irányelvekhez tartozó lapok testreszabásához a Dynamics 365 Commerce alkalmazásban, lásd: [Felhasználói bejelentkezéshez használt egyéni lapok beállítása](custom-pages-user-logins.md). További tájékoztatás: [A felhasználói élmények kezelőfelületének testreszabása az Azure Active Directory B2C-ben](https://docs.microsoft.com/azure/active-directory-b2c/tutorial-customize-ui).
+A felhasználói irányelvek oldalainak Dynamics 365 Commerce alkalmazásban létrehozott oldalakkal való testreszabásáról lásd: [Felhasználói bejelentkezéshez használt egyéni lapok beállítása](custom-pages-user-logins.md). További tájékoztatás: [A felhasználói élmények kezelőfelületének testreszabása az Azure Active Directory B2C-ben](https://docs.microsoft.com/azure/active-directory-b2c/tutorial-customize-ui).
 
 ### <a name="create-a-sign-up-and-sign-in-user-flow-policy"></a>Feliratkozás és bejelentkezés felhasználóifolyamat-házirend létrehozása
 
@@ -110,7 +118,7 @@ Feliratkozási és bejelentkezési felhasználóifolyamat-házirend konfigurál�
 
 1. Az Azure Portal modul bal oldali navigációs ablakában válassza ki a **Felhasználói folyamatok (házirendek)** elemet.
 1. Az **Azure AD B2C – Felhasználói folyamatok (házirendek)** lapon válassza az **Új felhasználói folyamat** elemet.
-1. A **Javasolt** lapon válassza a **Feliratkozás és bejelentkezés** lehetőséget.
+1. Válassza ki a **Regisztráció és bejelentkezés** irányelvet, majd válassza az **Ajánlott** verziót.
 1. A **Név** mezőbe írja be a házirend nevét. Ez a név azután jelenik meg, hogy a portál hozzárendel egy előtagot (például „B2C_1_”).
 1. Jelölje be a megfelelő jelölőnégyzetet az **Identitás-szolgáltatók** helyen.
 1. A **Többlépcsős hitelesítés** területen válassza ki a vállalat számára a megfelelő lehetőséget. 
@@ -140,9 +148,9 @@ Profilszerkesztési felhasználóifolyamat-házirend konfigurálásához kövess
 
 1. Az Azure Portal modul bal oldali navigációs ablakában válassza ki a **Felhasználói folyamatok (házirendek)** elemet.
 1. Az **Azure AD B2C – Felhasználói folyamatok (házirendek)** lapon válassza az **Új felhasználói folyamat** elemet.
-1. A **Javasolt** lapon válassza ki a **Profiszerkesztés** lehetőséget.
+1. Válassza a **Profilszerkesztés** lehetőséget, majd az **Ajánlott** verziót.
 1. A **Név** mezőbe adja meg a profilszerkesztési felhasználói folyamatot. Ez a név azután jelenik meg, hogy a portál hozzárendel egy előtagot (például „B2C_1_”).
-1. Az **Identitásszolgáltatók** területen válassza a **Helyi fiókbejelentkezés** lehetőséget.
+1. Az **Identitásszolgáltatók** területen válassza a **E-mailes bejelentkezés** lehetőséget.
 1. A **Felhasználói attribútumok** alatt jelölje be az alábbi jelölőnégyzeteket:
     - **E-mail-címek** (Csak **Igény visszaküldése**)
     - **Utónév** (**Attribútum összegyűjtése** és **Igény visszaküldése**)
@@ -161,7 +169,7 @@ Jelszóvisszaállítás felhasználóifolyamat-házirend konfigurálásához kö
 
 1. Az Azure Portal modul bal oldali navigációs ablakában válassza ki a **Felhasználói folyamatok (házirendek)** elemet.
 1. Az **Azure AD B2C – Felhasználói folyamatok (házirendek)** lapon válassza az **Új felhasználói folyamat** elemet.
-1. A **Javasolt** lapon válassza ki a **Jelszóvisszaállítás** lehetőséget.
+1. Válassza az **Új jelszó kérése** lehetőséget, majd az **Ajánlott** verziót.
 1. A **Név** mezőben adjon meg egy nevet a jelszóvisszaállítási felhasználói folyamat számára.
 1. Az **Identitásszolgáltatók** alatt válassza az **Új jelszó beállítása e-mail-cím használatával** lehetőséget.
 1. Válassza a **Létrehozása** lehetőséget.
@@ -225,6 +233,9 @@ A következő képen egy példa látható arra, hogyan lehet kiválasztani az id
 
 A következő kép egy példát mutat be egy alapértelmezett bejelentkezési képernyőre, amely a közösségi identitásszolgáltató bejelentkezési gombját jeleníti meg.
 
+> [!NOTE]
+> Ha a Commerce alkalmazásban létrehozott egyéni oldalakat szeretné használni a felhasználói folyamatokhoz, a közösségi identitásszolgáltatók gombjait a Commerce modultár bővíthetőségi funkcióival kell hozzáadni. Továbbá, amikor az alkalmazásokat egy adott közösségi identitásszolgáltatónál állítja be, bizonyos esetekben az URL- vagy konfigurációs sztringekben megkülönböztethetik a kis- és nagybetűket. További információt a közösségi identitásszolgáltató csatlakozási utasításaiban talál.
+ 
 ![Példa az alapértelmezett bejelentkezési képernyőre, melyen látható a közösségi identitásszolgáltató bejelentkezési gombja](./media/B2CImage_17.png)
 
 ## <a name="update-commerce-headquarters-with-the-new-azure-ad-b2c-information"></a>A Commerce központ frissítése az új Azure AD B2C adatokkal
@@ -250,12 +261,19 @@ Az új Azure AD B2C információval rendelkező központ frissítéséhez hajtsa
 ### <a name="obtain-issuer-url"></a>Kiállító URL-címének lekérése
 
 Az identitásszolgáltató kiállítója URL-címének lekéréséhez kövesse az alábbi lépéseket.
+1. Az Azure Portal Azure AD B2C lapján keresse meg a **Regisztráció és bejelentkezés** felhasználói folyamatot.
+1. Válassza a bal oldali navigációs menü **Oldalelrendezések** elemét, az **Elrendezés neve** alatt válassza az **Egyesített regisztrációs vagy bejelentkezési oldal** lehetőséget, majd a **Felhasználói folyamat futtatása** elemet.
+1. Győződjön meg arról, hogy az alkalmazás a kívánt fent létrehozott Azure AD B2C alkalmazásra van beállítva, majd válassza a hivatkozást a **Felhasználói folyamat futtatása** fejléc alatt, amely tartalmazza a következőt: ``.../.well-known/openid-configuration?p=<B2CSIGN-INPOLICY>``.
+1. A böngészőlapon metaadatoldal jelenik meg. Másolja az identitásszolgáltató kibocsátójának URL-címét (a **„kibocsátó”**).
+   - Példa: ``https://login.fabrikam.com/011115c3-0113-4f43-b5e2-df01266e24ae/v2.0/``
+ 
+**VAGY**: Ha ugyanazt a metaadat-URL-címet manuálisan szeretné megépíteni, tegye meg a következő lépéseket.
 
 1. Hozzon létre egy metaadat cím-URL-t a következő formátumban a B2C bérlő és irányelv használatával: ``https://<B2CTENANTNAME>.b2clogin.com/<B2CTENANTNAME>.onmicrosoft.com/v2.0/.well-known/openid-configuration?p=<B2CSIGN-INPOLICY>``
     - Példa: ``https://d365plc.b2clogin.com/d365plc.onmicrosoft.com/v2.0/.well-known/openid-configuration?p=B2C_1_signinup``
 1. Adja meg a metaadatcím URL-jét a böngésző címsorába.
 1. A metaadatokban másolja az identitásszolgáltató kiállítójának URL-címét (az **„issuer”** értékét).
-    - Példa: ``https://login.fabrikam.com/073405c3-0113-4f43-b5e2-df01266e24ae/v2.0/``
+    - Példa: ``https://login.fabrikam.com/011115c3-0113-4f43-b5e2-df01266e24ae/v2.0/``
 
 ## <a name="configure-your-b2c-tenant-in-commerce-site-builder"></a>A B2C-bérlő konfigurálása a Commerce webhelyszerkesztőben
 
@@ -348,13 +366,13 @@ Egy opcionális, másodlagos adminisztrátori fiók is hozzáadható a B2C bérl
 
 [Dynamics 365 Commerce webhely társítása online csatornával](associate-site-online-store.md)
 
-[Robots.txt fájlok kezelése](manage-robots-txt-files.md)
+[robots.txt fájlok kezelése](manage-robots-txt-files.md)
 
-[URL-átirányítások feltöltése tömegesen](upload-bulk-redirects.md)Dynamics 365 Commerce webhely társítása online csatornával
+[URL-átirányítások tömeges feltöltése](upload-bulk-redirects.md)
 
 [Felhasználói bejelentkezéshez használt egyéni lapok beállítása](custom-pages-user-logins.md)
 
-[Több B2C-bérlő konfigurálása Commerce-környezetben](configure-multi-B2C-tenants.md)
+[Több B2C-bérlő konfigurálása egy Commerce környezetben](configure-multi-B2C-tenants.md)
 
 [Tartalomkézbesítési hálózat (CDN) támogatásának hozzáadása](add-cdn-support.md)
 

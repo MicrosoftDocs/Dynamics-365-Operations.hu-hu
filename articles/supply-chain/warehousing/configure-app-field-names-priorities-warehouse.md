@@ -1,12 +1,10 @@
 ---
-title: Alkalmazáson belüli mezőnevek konfigurálása a raktáralkalmazásban
-description: Ez a témakör ismerteti, hogyan történik a raktári alkalmazás mezőneveinek és prioritásainak meghatározása és konfigurálása a Dynamics 365 Supply Chain Management alkalmazásban.
+title: A Raktárkezelés mobilalkalmazás mezőinek konfigurálása
+description: Ez a témakör ismerteti, hogyan történik a Raktárkezelés mobilalkalmazásban szereplő mezők neveinek és prioritásainak meghatározása és konfigurálása.
 author: MarkusFogelberg
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSMobileAppField, WHSMobileAppFieldPriority
 audience: Application User
@@ -18,21 +16,21 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 4c22a4314c36ba7112456ef264df500af98996f3
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: c6ed726536085b836f4014c59ea8df4755577ab5
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5232959"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5808822"
 ---
-# <a name="configure-app-field-names-in-the-warehouse-app"></a>Alkalmazáson belüli mezőnevek konfigurálása a raktáralkalmazásban
+# <a name="configure-fields-for-the-warehouse-management-mobile-app"></a>A Raktárkezelés mobilalkalmazás mezőinek konfigurálása
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör ismerteti, hogyan történik a raktári alkalmazás mezőneveinek és prioritásainak meghatározása és konfigurálása a Dynamics 365 Supply Chain Management alkalmazásban. 
+Ez a témakör ismerteti, hogyan történik a Raktárkezelés mobilalkalmazásban szereplő mezők neveinek és prioritásainak meghatározása és konfigurálása.
 
 > [!NOTE]
-> Ez a témakör a Raktárkezelési szolgáltatásokra vonatkozik. A Készletkezelés funkciókra nem vonatkozik. Warehousing egy raktározási feladatok végrehajtásához használt alkalmazás. Meghatározhatja és beállíthatja az alkalmazásban használt mezőneveket, és konfigurálhatja a prioritást, amelyhez a mezőneveket hozzá kell rendelni. Ez a témakör ismerteti, hogyan történik a raktári alkalmazás ezen mezőneveinek és prioritásainak meghatározása és konfigurálása, továbbá használata a Warehousing alkalmazásban. Az FWarehousing alkalmazáshoz való kapcsolódás konfigurálásának részletei a [Raktáralkalmazás telepítésének és konfigurálásának áttekintése](install-configure-warehousing-app.md) című oktatóanyagban találhatók.
+> Ez a témakör a Raktárkezelési szolgáltatásokra vonatkozik. A Készletkezelés funkciókra nem vonatkozik. A Raktárkezelés mobilalkalmazás egy raktározási feladatok végrehajtásához használt alkalmazás. Meghatározhatja és beállíthatja az alkalmazásban használt mezőneveket, és konfigurálhatja a prioritást, amelyhez a mezőneveket hozzá kell rendelni. Ez a témakör ismerteti, hogyan történik a Raktárkezelés mobilalkalmazás ezen mezőneveinek és prioritásainak meghatározása és konfigurálása, továbbá használata.
 
 ## <a name="configure-warehouse-app-field-names"></a>A raktári alkalmazáson belüli mezőnevek konfigurálása
 
@@ -142,7 +140,7 @@ A fennmaradó metaadatok, például a Hely nem fog megjelenni a feladatlapon, de
 <a name="additional-resources"></a>További erőforrások
 --------
 
-[A raktáralkalmazás telepítésének és konfigurálásának áttekintése](install-configure-warehousing-app.md)
+[A Raktárkezelés mobilalkalmazás telepítése és csatlakoztatása](../warehousing/install-configure-warehouse-management-app.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

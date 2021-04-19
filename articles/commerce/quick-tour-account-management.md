@@ -2,11 +2,9 @@
 title: Fiókkezelési oldalak áttekintése
 description: Ez a témakör áttekintést nyújt a Microsoft Dynamics 365 Commerce fiókkezelés oldalairól.
 author: anupamar-ms
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,20 +14,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 4cd4ee3ef2b1c3538ec267fe12eef38d525f6a83
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: dc4ae56be1740f0160b4e4777f8db93a6bc4e704
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5244814"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5792267"
 ---
 # <a name="account-management-pages-overview"></a>A fiókkezelési oldalak áttekintése
 
 [!include [banner](includes/banner.md)]
 
 Ez a témakör áttekintést nyújt a Microsoft Dynamics 365 Commerce fiókkezelés oldalairól.
-
-## <a name="overview"></a>Áttekintés
 
 A fiókkezelési lapokkal a vevők a fiókjukkal és a rendeléseikkel kapcsolatos információkat jelenítenek meg. A fiókkezelési lapok közé tartozik a fiókkezelés nyitólapja, a felhasználói profil lapja, a felhasználói cím, a rendeléselőzmények, a rendelés részletei, a hűségprogram és a kívánságlista lapja.
 

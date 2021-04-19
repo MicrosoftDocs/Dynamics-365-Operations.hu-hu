@@ -2,11 +2,9 @@
 title: A raktári alkalmazás telepítése és csatlakoztatása
 description: Ez a témakör azt mutatja be, hogyan lehet telepíteni a raktári alkalmazást mindegyik mobileszközre, és konfigurálni a Microsoft Dynamics 365 Supply Chain Management környezethez való csatlakozásra. Az egyes eszközöket manuálisan is konfigurálhatja, illetve a csatlakozási beállításokat egy fájlként vagy egy QR-kód beolvasásával is importálhatja.
 author: MarkusFogelberg
-manager: tfehr
 ms.date: 05/25/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysAADClientTable, WHSMobileAppField, WHSMobileAppFieldPriority, WHSRFMenu, WHSRFMenuItem, WHSWorker
 audience: Application User, IT Pro
@@ -18,19 +16,19 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 3d2920d015aab5e4f0a1966d2a2574fb659a7c80
-ms.sourcegitcommit: 105f65468b45799761c26e5d0ad9df4ff162c38d
+ms.openlocfilehash: c92fe991c8651d7665de2e850d8649b72f525f4c
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5486977"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5835566"
 ---
 # <a name="install-and-connect-the-warehouse-app"></a>A raktározási alkalmazás telepítése és csatlakoztatása
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> Ez a témakör leírja, hogyan konfigurálhatja a régi raktári alkalmazást. Ha tájékoztatást szeretne arról, hogy hogyan kell konfigurálni az új Raktárkezelés mobilalkalmazást, tekintse meg a következőt: [A Raktárkezelés mobilalkalmazás telepítése és csatlakoztatása](install-configure-warehouse-management-app.md).
+> Ez a témakör azt ismerteti, hogyan kell konfigurálni a régi raktári alkalmazást (amely már elavult). Ha tájékoztatást szeretne arról, hogy hogyan kell konfigurálni az új Raktárkezelés mobilalkalmazást, tekintse meg a következőt: [A Raktárkezelés mobilalkalmazás telepítése és csatlakoztatása](install-configure-warehouse-management-app.md).
 
 > [!NOTE]
 > Ez a témakör ismerteti, hogyan kell konfigurálni a felhőbeli telepítések raktári alkalmazását. Ha azt szeretné megtudni, hogyan kell konfigurálni a helyszíni telepítések raktári alkalmazását, tekintse meg a következőt: [Helyszíni telepítések raktárkezelése](../../dev-itpro/deployment/warehousing-for-on-premise-deployments.md).

@@ -2,11 +2,9 @@
 title: Termeléstervezés
 description: Ez a témakör a termelés tervezését írja le, és bemutatja, hogyan lehet módosítani a tervezett termelési rendeléseket a Tervezési optimalizálás segítségével.
 author: ChristianRytt
-manager: tfehr
 ms.date: 12/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
@@ -18,18 +16,22 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-12-15
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: f9b5e4122fbd83ff76e0605b2f0816e10d2d9aab
-ms.sourcegitcommit: 34b8f6f5c6134b7b97a9fb41d0b2e63215c67062
+ms.openlocfilehash: 22b78f44940f71097ca8b1cdb74edb06274bba75
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5470833"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5839223"
 ---
 # <a name="production-planning"></a>Termeléstervezés
 
 A tervezési optimalizálások több termelési helyzetet is támogatnak. Ha egy meglévő, beépített alaptervezési motorról tér át, fontos, hogy tisztában legyen a némiképp megváltozott viselkedéssel.
 
 Az alábbi videofelvétel rövid bevezetőt nyújt a témakörben tárgyalt fogalmak közül: [Dynamics 365 Supply Chain Management: tervezésoptimalizálási fejlesztések.](https://youtu.be/u1pcmZuZBTw)
+
+## <a name="turn-on-this-feature-for-your-system"></a>A funkció bekapcsolása a rendszerhez
+
+Ha a rendszer még nem tartalmazza az ebben a témakörben leírt funkciókat, lépjen a [Funkciókezelés](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) lehetőségre, és a kapcsolja be a *Tervezett termelési rendelések a Tervezési optimalizáláshoz* funkciót.
 
 ## <a name="planned-production-orders"></a>Terv. term. rendelések
 

@@ -2,11 +2,9 @@
 title: Beszerzési rendelések bejövő rakományának kezelése a raktárban
 description: Ez a témakör a beszerzési rendelések bejövő rakományának raktárkezelési folyamatát írja le.
 author: omulvad
-manager: tfehr
 ms.date: 03/21/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLoadTable, WHSLoadPlanningListPage, WHSLoadPlanningWorkbench, WHSRFMenu, WHSRFMenuItem
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: fec2e7f39569c52ec17c5d0b2474eca720e0180a
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 095ef3bb9fff26915bf4fbeb7e240ae9175e315c
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5235340"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5835630"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>Beszerzési rendelések bejövő rakományának kezelése a raktárban
 
@@ -66,7 +64,7 @@ Amikor egy bejövő rakomány először megérkezik a raktárba, a raktári dolg
 
 - **A mobileszköz betöltést támogató menüje**
 
-    A [raktári alkalmazás](install-configure-warehousing-app.md) mobileszközökhöz a következő munkalétrehozási folyamatokat támogatja:
+    A [Raktárkezelés mobilalkalmazás](../warehousing/install-configure-warehouse-management-app.md) mobileszközökhöz a következő munkalétrehozási folyamatokat támogatja:
 
     - Rakomány – cikk bevételezése
     - Rakomány – cikk bevételezése és eltárolása
@@ -285,7 +283,7 @@ Ha ezeket a forgatókönyveket a megadott mintaadatok és értékek alapján kí
 
 Mielőtt a raktári fogadó adminisztrátorok egy mobileszköz segítségével regisztrálhatnak egy rakományhoz kapcsolódó bejövő készletet, egy mobileszköz-menüelemet kell létrehozni erre a célra.
 
-Ebben a szakaszban egy mobileszköz menüelemet hoz létre, és hozzáadja azt egy meglévő menühöz. A raktári dolgozó ezt követően kiválaszthatja a menüelemet a raktári alkalmazásban.
+Ebben a szakaszban egy mobileszköz menüelemet hoz létre, és hozzáadja azt egy meglévő menühöz. A raktári dolgozó ezt követően kiválaszthatja a menüelemet a Raktárkezelés mobilalkalmazásban.
 
 1. Nyissa meg a **Raktárkezelés \> Beállítások \> Mobileszköz \> Mobileszköz menüelemei** lehetőséget és győződjön meg arról, hogy a mobileszköz menüje tartalmaz egy olyan menüelemet, amelynek beállításai a következők:
 

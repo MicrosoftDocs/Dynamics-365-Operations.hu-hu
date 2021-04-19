@@ -2,11 +2,9 @@
 title: Gyártásvégrehajtási munkaterhelések felhőalapú és peremhálózati skálázási egységekhez
 description: Ez a témakör ismerteti, hogyan működnek a gyártási végrehajtási számítási feladatok felhő- és peremhálózati skálázási egységekkel.
 author: cabeln
-manager: ''
 ms.date: 10/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: SCM
 ms.author: cabeln
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 6bef28d16236a7862550f3ab87f73baf8dab97b0
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: a8c263104e209a81e33ea0db9e5fecddff3bc95b
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5251074"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5809782"
 ---
 # <a name="manufacturing-execution-workloads-for-cloud-and-edge-scale-units"></a>Gyártásvégrehajtási munkaterhelések felhőalapú és peremhálózati skálázási egységekhez
 

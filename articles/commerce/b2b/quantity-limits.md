@@ -2,11 +2,9 @@
 title: Termékmennyiség-korlátok beállítása B2B e-kereskedelmi webhelyekhez
 description: Ez a témakör azt ismerteti, hogyan állíthat be termékmennyiség-korlátokat a vállalkozások közötti (B2B) e-kereskedelmi webhelyekhez.
 author: josaw1
-manager: AnnBe
 ms.date: 01/20/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailOperations
 audience: Application User, IT Pro
@@ -16,12 +14,12 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 1208b968e476ccbc7a726facf1db896c7bf3c36f
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: e9f14bc9aa6586e87f3e8ccb82e63d0ec2e46534
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5211177"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5799781"
 ---
 # <a name="set-product-quantity-limits-for-b2b-e-commerce-sites"></a>Termékmennyiség-korlátok beállítása B2B e-kereskedelmi webhelyekhez
 

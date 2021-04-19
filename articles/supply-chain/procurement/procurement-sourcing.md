@@ -1,27 +1,25 @@
 ---
 title: Beszerzési és forrásparaméterek kezdőlapja
 description: Ez a témakör a Beszerzés és forrás modulhoz elérhető súgótémaköröket és egyéb erőforrásokat sorolja fel.
-author: RichardLuan
-manager: tfehr
+author: kamaybac
 ms.date: 09/27/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: 50651
 ms.assetid: 17f06036-cac2-4c28-8dc6-1dff6b81a7cc
 ms.search.region: Global
-ms.author: riluan
+ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a8d47aa7ebe61a0ac90f4f4794a8eeff7e84974f
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 96e112432ba79d2657a8d440e8e040fca45392a2
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5218441"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5825518"
 ---
 # <a name="procurement-and-sourcing-home-page"></a>Beszerzési és forrásparaméterek kezdőlapja
 

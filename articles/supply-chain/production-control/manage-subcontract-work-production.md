@@ -2,11 +2,9 @@
 title: Gyártás területén végzett alvállalkozói munka kezelése
 description: Ez a témakör bemutatja, hogy az alvállalkozói műveletek hogyan kezelhetők a Dynamics 365 Supply Chain Management szolgáltatásban. Más szóval bemutatja, hogyan kezeli azon gyártási műveleteket, amelyek szállító által kezelt erőforráshoz vannak kiosztva.
 author: cvocph
-manager: tfehr
 ms.date: 11/03/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LeanDocumentServiceCreation, PlanActivity, ProdBOMVendorListPage, ProdRoute, ProdTable, ProdTableListPage, PurchAgreementSubcontractorLookup, RouteTable, WrkCtrResourceGroup, ProdBOMVendorListPagePreviewPane, ProdBOMVendor
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 66aed16cc3e2c3b33dfd40982d2211816c4e5047
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 11728694565b10bf0336671f6c1b5f43cbcadf78
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5245997"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5825819"
 ---
 # <a name="manage-subcontracting-work-in-production"></a>Gyártás területén végzett alvállalkozói munka kezelése
 

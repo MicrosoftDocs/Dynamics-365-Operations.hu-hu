@@ -1,12 +1,10 @@
 ---
-title: Azonosítótábla-bevételezés a raktári alkalmazás használatával
-description: Ez a témakör azt mutatja be, hogyan lehet beállítani a raktári mobilalkalmazást a tényleges készlet fogadására használt azonosítótábla-feldolgozási folyamathoz.
+title: Azonosítótábla fogadása a Raktárkezelés mobilalkalmazáson keresztül
+description: Ez a témakör azt mutatja be, hogyan lehet beállítani a Raktárkezelés mobilalkalmazást a tényleges készlet fogadására használt azonosítótábla-feldolgozási folyamathoz.
 author: perlynne
-manager: tfehr
 ms.date: 04/29/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSParameters, WHSRFMenuItem, WHSLicensePlate, WHSPackingStructure
 audience: Application User
@@ -15,18 +13,18 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: f921d08572038d2ac53948825a8ca2459103b7f7
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 8c662da296bea7def443cb166bd3f7e501c9abcc
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5245154"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5823191"
 ---
-# <a name="license-plate-receiving-via-the-warehouse-app"></a>Azonosítótábla-bevételezés a raktári alkalmazás használatával
+# <a name="license-plate-receiving-via-the-warehouse-management-mobile-app"></a>Azonosítótábla fogadása a Raktárkezelés mobilalkalmazáson keresztül
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör azt mutatja be, hogyan lehet beállítani a raktári mobilalkalmazást a tényleges készlet fogadására használt azonosítótábla-feldolgozási folyamat támogatásához.
+Ez a témakör azt mutatja be, hogyan lehet beállítani a Raktárkezelés mobilalkalmazást a tényleges készlet fogadására használt azonosítótábla-feldolgozási folyamat támogatásához.
 
 Ezen funkció segítségével gyorsan rögzítheti az előzetes kiszállítási értesítéshez (ASN) kapcsolódó bejövő készlet bevételezését. A rendszer automatikusan létrehoz egy ASN-t, amikor a raktárkezelési folyamatokat egy átmozgatási rendelés szállítására használják. A beszerzési rendelés folyamatahoz egy ASN manuálisan is rögzíthető, vagy automatikusan importálható a bejövő ASN adatentitás folyamata segítségével.
 
@@ -72,7 +70,7 @@ Ha azt szeretné, hogy ez a funkció elérhető legyen a rendszerben, akkor be k
 
 ## <a name="show-or-skip-the-receiving-summary-page"></a>A bevételezési összesítő lap megjelenítése vagy kihagyása
 
-Az *Annak szabályzása, hogy meg legyen-e jelenítve egy fogadás összegzése lap a mobileszközökön* funkció használatával kihasználhatja egy további részletes Raktári alkalmazásfolyamat előnyeit az azonosítótábla-fogadási folyamat részeként.
+Az *Annak szabályzása, hogy meg legyen-e jelenítve egy fogadás összegzése lap a mobileszközökön* funkció használatával kihasználhatja egy további részletes Raktárkezelés mobilalkalmazás-folyamat előnyeit az azonosítótábla-fogadási folyamat részeként.
 
 Ha ez a funkció be van kapcsolva, akkor az azonosítótábla fogadására és betárolására szolgáló menüelemek tartalmazzák a **Fogadó összesítő lap megjelenítése** beállítást. Ez a beállítás a következő lehetőségeket biztosítja:
 

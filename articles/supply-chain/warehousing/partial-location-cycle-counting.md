@@ -2,11 +2,9 @@
 title: Helyek részleges ciklikus leltározása
 description: A ciklikus leltározási tervek vezérlik a tényleges leltározási tevékenységeket. Kérhető az, hogy csak bizonyos termékek és termékváltozatok leltározása történjen meg a hely összes aktuális készlete helyett.
 author: perlynne
-manager: tfehr
 ms.date: 09/02/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSCycleCountPlan, WHSWorkLineCycleCount, WHSWorkTemplateLineGroup, WHSWorkTemplateTable, WHSRFMenuItemCycleCount, WHSCycleCountPlanListPage
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: abafe64a17b7b284e5e045da33bb15cf3c42800b
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: e4fa017c9702524d4637ef73a4c2e506a9c53b28
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5234681"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5818896"
 ---
 # <a name="partial-location-cycle-counting"></a>Helyek részleges ciklikus leltározása
 
@@ -48,7 +46,7 @@ A részleges ciklikus leltározási munka feldolgozása előtt minimális követ
 Részleges ciklikus leltározási folyamat esetében az **Utolsó ciklikus leltár** dátuma/időpontja nem lesz frissítve a helyhez, még akkor sem, ha az adott helyen található összes cikket leltározni kell. A részleges ciklikus leltározás nem veszi figyelembe a **Ciklikus leltárok közötti idő** paramétert a **Ciklikus leltározási tervek** oldalon. A részleges ciklikus leltározás nem támogatja a több cikk egyidejű leltározását ugyanazon a helyen. A részleges ciklikus leltározási funkció a **Ciklikus leltározási terv végrehajtása** futtatásakor ugyanaz a hely többször is számolva lehet egy cikkhez. A helyzet elkerüléséhez adjon meg a szűrőket a **Helyek kiválasztása** mezőben.
 
 > [!NOTE]
-> A raktári alkalmazás nem biztosítja az **Azonosítótábla vagy cikk hozzáadása** gombot a részleges ciklikus leltározási folyamat használatakor.
+> A Raktárkezelés mobilalkalmazás nem biztosítja az **Azonosítótábla vagy cikk hozzáadása** gombot a részleges ciklikus leltározási folyamat használatakor.
 
 ## <a name="example"></a>Példa
 

@@ -2,7 +2,6 @@
 title: Úton lévő áruk feldolgozása
 description: Ez a témakör az úton lévő árukra vonatkozó rendelések használatát ismerteti. Ha egy rendelés vagy hajóút úton lévő áruk feldolgozásának használatára van beállítva, az áruk még azelőtt számlázhatók, hogy a raktárban felhasználásra bevételezték volna őket.
 author: sherry-zheng
-manager: tfehr
 ms.date: 01/13/2021
 ms.topic: article
 ms.prod: ''
@@ -16,17 +15,16 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 77e30f8679c9422e895432c023997b5ff4768ebd
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: 9a1316de8d79f3ce34bb28812993d096cbd0c2ce
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5500404"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5823409"
 ---
 # <a name="goods-in-transit-processing"></a>Úton lévő áruk feldolgozása
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Ez a témakör az úton lévő árukra vonatkozó rendelések használatát ismerteti. Ezt a rendeléstípust csak a **Partraszállítási költség** modul használja. Ha egy rendelés vagy hajóút úton lévő áruk feldolgozásának használatára van beállítva, az áruk számlázásával nem kell várnia addig, amíg a raktárban felhasználásra bevételezik őket. Ehelyett az áruk számlázása akkor történik meg, amikor elhagyják a szállító raktárát vagy származási kikötőjét, és a pénzügyi költségeket a hajóút megkezdésekor könyvelik. Ez a funkció lehetővé teszi, hogy helyesen tulajdonosa legyen a készletnek, mivel az áruk gyakran a szervezet tulajdonába kerülnek, amikor elhagyják a szállítási kikötőt.
 
@@ -135,7 +133,7 @@ A partraszállítási költség hozzáadja a következő munkalétrehozási foly
 
 Ezen folyamatok konfigurációs beállításai hasonlítanak a [beszerzési rendelés bevételezési és betárolási munkáinak létrehozási folyamata](https://technet.microsoft.com/library/dn553216.aspx) beállításaihoz. Az *Úton lévő áruk cikkbevételezése és betárolása* folyamat azonban a következő mezőt is hozzáadja.
 
-- **Szállítókonténer kész engedélyezése** – Ha ez a beállítás *Igen* értékű, a betárolási munka befejezésekor a raktári alkalmazás egy további, **Szállítókonténer kész** nevű lehetőséget is biztosít. Ha ez a beállítás be van jelölve, a dolgozót felkéri a rendszer annak megerősítésére, hogy a konténer kész. Ezen a ponton minden rövid bevételezés hiány tranzakcióként lesz feldolgozva.
+- **Szállítókonténer kész engedélyezése** – Ha ez a beállítás *Igen* értékű, a betárolási munka befejezésekor a Raktárkezelés mobilalkalmazás egy további, **Szállítókonténer kész** nevű lehetőséget is biztosít. Ha ez a beállítás be van jelölve, a dolgozót felkéri a rendszer annak megerősítésére, hogy a konténer kész. Ezen a ponton minden rövid bevételezés hiány tranzakcióként lesz feldolgozva.
 
 ### <a name="location-directives"></a>Helyutasítások
 

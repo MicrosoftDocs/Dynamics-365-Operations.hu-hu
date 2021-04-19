@@ -2,11 +2,9 @@
 title: Erőforrás-képességek
 description: Ez a cikk az erőforrás képességeivel kapcsolatos információkról nyújt tájékoztatást. A képesség egy üzemi erőforrás képességét jelenti egy adott tevékenység végrehajtására. A cikk bemutatja, hogy hogyan használják a képességeket és a kapcsolódó fogalmakat (például a szakértelemszint és a prioritás) a megfelelő erőforrások kiválasztására egy tevékenységre vonatkozóan.
 author: sorenva
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WrkCtrCapability, WrkCtrTable, WrkCtrCapRes, WrkCtrApplicableResources
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1abb5b26f9fa061906d49ca10f03bb01fd7dfc71
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 410d1f2014ccf002a7e7981f5ad26d754c1597ed
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5262069"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5819328"
 ---
 # <a name="resource-capabilities"></a>Erőforrás-képességek
 

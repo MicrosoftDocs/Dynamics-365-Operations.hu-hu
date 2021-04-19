@@ -2,11 +2,9 @@
 title: Raktári munka – hibaelhárítás
 description: Ez a témakör azt mutatja be, hogyan lehet megoldani gyakori problémákat, miközben a raktári munkát végzi a Microsoft Dynamics 365 Supply Chain Management szolgáltatásban.
 author: perlynne
-manager: tfehr
 ms.date: 10/19/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application user
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: b1814f7b23efda2cabdb7bfc7bea4de6e3d6ec2f
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 08cc074fe851b952ebfc942ae3d1cb05240d3b91
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5237059"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5837441"
 ---
 # <a name="troubleshoot-warehouse-work"></a>Raktári munka – hibaelhárítás
 
@@ -40,11 +38,11 @@ Nem helyezhető át az azonosítótábla egy **Áthelyezés** menü használatá
 
 Ezt a hibát a [KB 4571546](https://fix.lcs.dynamics.com/Issue/Details?kb=4571546&bugId=467880&dbType=3&qc=5b46d7faa9cc326cebfe9854cb30be8ea30b21ef33d3572c325fbb21202de687) részben lévő telepített változtatások javítják ki. Ezek a módosítások nem teszik kötelezővé a **Sorozatszám** mező kitöltését, ha az üres nyugta és az üres kiadás engedélyezve van.
 
-## <a name="i-receive-the-following-error-message-in-the-warehouse-app-when-i-process-movements-the-inventory-owner-1-is-not-allowed-in-this-process"></a>A következő hibaüzenet jelenik meg a raktári alkalmazásban a készletmozgások feldolgozásakor: „A készlet tulajdonosa %1 nem engedélyezett ebben a folyamatban.”
+## <a name="i-receive-the-following-error-message-in-the-warehouse-management-mobile-app-when-i-process-movements-the-inventory-owner-1-is-not-allowed-in-this-process"></a>A következő hibaüzenet jelenik meg a Raktárkezelés mobilalkalmazásban a készletmozgások feldolgozásakor: „A készlet tulajdonosa %1 nem engedélyezett ebben a folyamatban.”
 
 ### <a name="issue-description"></a>Probléma leírása
 
-A **Tulajdonos** követési dimenziója hiányzik, amikor a raktári alkalmazásban készletmozgatásokat végeznek. Úgy látszik, hogy a Supply Chain Management kliens rendszeres készletmozgatási naplót használ, és csak akkor lehet feladni, ha a **Tulajdonos** dimenzió ki van töltve.
+A **Tulajdonos** követési dimenziója hiányzik, amikor a Raktárkezelés mobilalkalmazásban készletmozgatásokat végeznek. Úgy látszik, hogy a Supply Chain Management kliens rendszeres készletmozgatási naplót használ, és csak akkor lehet feladni, ha a **Tulajdonos** dimenzió ki van töltve.
 
 ### <a name="issue-resolution"></a>Probléma megoldása
 

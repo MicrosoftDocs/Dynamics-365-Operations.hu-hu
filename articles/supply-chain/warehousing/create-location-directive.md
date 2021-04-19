@@ -2,11 +2,9 @@
 title: Helyutasítások kezelése
 description: Ez a témakör a helyutasítások működését ismerteti. A helyutasítások olyan a felhasználó által megadott szabályok, melyek segítik a kitárolási és betárolási helyek meghatározását a készletmozgatáshoz.
 author: Mirzaab
-manager: tfehr
 ms.date: 11/13/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLocDirTable, WHSLocDirHint, WHSLocDirTableUOM, WHSLocDirFailure
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-11-13
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 84821fe4e7c5054b2121dbd7f9e536c80080b978
-ms.sourcegitcommit: 1f23adbc6c7e6f9ffe8c48c10659b9fae2155aeb
+ms.openlocfilehash: 91482bb24356a14a8d44e887620548cdf6f4c5d3
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5470519"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5838394"
 ---
 # <a name="work-with-location-directives"></a>Helyutasítások kezelése
 
@@ -152,7 +150,7 @@ A **Helyutasítások** gyorslap mezői a listaablak **Munkarendelés típusa** m
     > [!IMPORTANT]
     > Ahhoz, hogy többcikkes és egy termékváltozatú betárolások is végrehajthatók legyenek, két azonos szerkezetű és beállítású sort kell megadnia, de a **Több termékváltozat** beállítást *Igen* értékre kell állítania az egyik sorban, és *Nem* értékre a másiknál. Ezért a betárolási műveletekhez két azonos helyutasítás szükséges, még akkor is, ha nem kell különbséget tennie az egy vagy több termékváltozat között egy munkaazonosítón. Gyakran előfordul, hogy ha nem állítja be mindkét helyutasítást, a váratlan üzleti folyamatok helyszínei az alkalmazott helyutasításból származnak. Hasonló beállítást kell használnia a **Munkatípus** *kitárolással* rendelkező utasítások esetében, ha több termékváltozatot tartalmazó rendeléseket kell feldolgoznia.
 
-    Használja a **Több termékváltozat** beállítást olyan munkasorokhoz, amelyek több cikkszámot kezelnek. (A cikkszám üres lesz a munka részleteiben, és **Több** értékkel jelenik meg a raktári alkalmazás feldolgozási lapjain.)
+    Használja a **Több termékváltozat** beállítást olyan munkasorokhoz, amelyek több cikkszámot kezelnek. (A cikkszám üres lesz a munka részleteiben, és **Több** értékkel jelenik meg a Raktárkezelés mobilalkalmazás feldolgozási lapjain.)
 
     Egy tipikus példaforgatókönyvben egy munkasablon úgy van beállítva, hogy egynél több kitárolási/betárolási párja legyen. Ebben az esetben érdemes lehet megkeresni egy adott átmeneti helyet, amelyet a **Munka típusú** *Kitárolás* sorokhoz kíván használni.
 
@@ -171,7 +169,7 @@ A **Helyutasítások** gyorslap mezői a listaablak **Munkarendelés típusa** m
     > [!NOTE]
     > Ez a mező csak olyan kiválasztott munkarendelés-típusoknál érhető el, ahol a feltöltés megengedett. A teljes listát a [Munkarendelés-típusokra jellemző mezők](#fields-specific-types) című szakaszban találhatja.
 
-- **Intézkedési kód** – Ez a mező olyan helyutasításokhoz használatos, amelyek munkarendelés-típusa *Beszerzési rendelések*, *Késztermékek betárolása* vagy *Visszárurendelések*, és munkatípusa *Betárolás*. Segítségével irányítsa a folyamatot egy adott helyutasítás használatára, a dolgozó által a raktáralkalmazásban kiválasztott intézkedési kódtól függőben. A visszaküldött árukat például a készletbe való visszaküldés előtt átirányíthatja egy ellenőrzési helyre. Az intézkedési kód készletállapothoz kapcsolható. Ily módon a készlet állapotának módosítására használható a bevételezési folyamat részeként. Például van egy *QA* intézkedési kódja, amely a készlet állapotát *QA* értékre állítja. Ezután egy külön helyutasítással áthelyezheti a készletet egy karanténhelyre.
+- **Intézkedési kód** – Ez a mező olyan helyutasításokhoz használatos, amelyek munkarendelés-típusa *Beszerzési rendelések*, *Késztermékek betárolása* vagy *Visszárurendelések*, és munkatípusa *Betárolás*. Segítségével irányítsa a folyamatot egy adott helyutasítás használatára, a dolgozó által a Raktárkezelés mobilalkalmazásban kiválasztott intézkedési kódtól függőben. A visszaküldött árukat például a készletbe való visszaküldés előtt átirányíthatja egy ellenőrzési helyre. Az intézkedési kód készletállapothoz kapcsolható. Ily módon a készlet állapotának módosítására használható a bevételezési folyamat részeként. Például van egy *QA* intézkedési kódja, amely a készlet állapotát *QA* értékre állítja. Ezután egy külön helyutasítással áthelyezheti a készletet egy karanténhelyre.
 
     > [!NOTE]
     > Ez a mező csak olyan kiválasztott munkarendelés-típusoknál érhető el, ahol a feltöltés megengedett. A teljes listát a [Munkarendelés-típusokra jellemző mezők](#fields-specific-types) című szakaszban találhatja.

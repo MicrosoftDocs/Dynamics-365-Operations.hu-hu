@@ -2,11 +2,9 @@
 title: Feltöltés a hely kapacitása alapján
 description: Ez a témakör a hely kapacitásainak feltöltésével kapcsolatban tartalmaz tájékoztatást. Ez a funkció lehetővé tesz minden olyan feltöltési munkát, amely a nap létrehozásához szükséges, illetve a feltöltési munka elérhetőségét kezeli annak érdekében, hogy a kitárolási hely ne fogyjon ki a készletből, és ne haladja meg a kapacitást sem.
 author: mirzaab
-manager: tfehr
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSReplenishmentTemplates, WHSLocationLimit
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 1e4acfea3484acaafd982d0f22c2303f921f909f
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 309df56671bf258e1669ae6d5393de01e2b500f0
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5228393"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5823239"
 ---
 # <a name="replenishment-over-location-capacity"></a>Feltöltés a hely kapacitása alapján
 
@@ -241,7 +239,7 @@ A készleten lévő mennyiségtől függően a létrehozott munkamennyiségek ki
 
 #### <a name="on-hand-inventory-license-plate-id"></a>Aktuális készlet-azonosítótábla azonosítója
 
-Később ebben a forgatókönyvben a raktári alkalmazást (vagy egy emulátort) fog használni, ahol be kell azonosítania az azonosítótáblát, hogy befejezhesse a kitárolási és feltöltési forgatókönyveket.
+Később ebben a forgatókönyvben a Raktárkezelés mobilalkalmazást (vagy egy emulátort) fog használni, ahol be kell azonosítania az azonosítótáblát, hogy befejezhesse a kitárolási és feltöltési forgatókönyveket.
 
 A későbbiekben szükséges azonosítótábla-azonosítók megtalálásához, kövesse az alábbi lépéseket.
 
@@ -266,7 +264,7 @@ A raktárhely feltöltését az első két munkaazonosítónál fogja végrehajt
 
 #### <a name="replenishment"></a>Feltöltés
 
-1. Jelentkezzen be az *61*-es raktárban lévő felhasználóként a raktár alkalmazásba. (Írja be a felhasználói azonosítóhoz a *61*-et, a jelszóhoz pedig az *1*-et.)
+1. Jelentkezzen be az *61*-es raktárban lévő felhasználóként a Raktárkezelés mobilalkalmazásba. (Írja be a felhasználói azonosítóhoz a *61*-et, a jelszóhoz pedig az *1*-et.)
 1. Lépjen a **Készlet \> Feltöltés** lehetőségre.
 
     A program megkérdezi, hogy befejezi-e az első feltöltési munkát. Megjelenik a kiválasztható cikkszám, mennyiség, és hely.
@@ -296,7 +294,7 @@ Addig, amíg a raktárból elég készletet ki nem tárolnak ahhoz, hogy a mobil
 
 Mielőtt befejezhetné a hátralévő feltöltési munkafeladatot, a kitárolási helyen a készletek olyan szintre kell csökkennie, hogy a hátralévő feltöltési munka feloldhatóvá váljon. Más szóval a raktárban lévő aktuális készlet mennyiségének és a feltöltési mennyiségnek az összege nem haladhatja meg a **Túlcsordulási mennyiség** értékét. Ha ez az összeg kevesebb, mint a túlcsorduló mennyiség, akkor feloldódik a hátralévő feltöltési munka.
 
-1. Jelentkezzen be az *61*-es raktárban lévő felhasználóként a raktár alkalmazásba. (Írja be a felhasználói azonosítóhoz a *61*-et, a jelszóhoz pedig az *1*-et.)
+1. Jelentkezzen be az *61*-es raktárban lévő felhasználóként a Raktárkezelés mobilalkalmazásba. (Írja be a felhasználói azonosítóhoz a *61*-et, a jelszóhoz pedig az *1*-et.)
 1. Lépjen a **Kimenő \> Értékesítési kitárolás** lehetőségre.
 1. Adja meg az 1. értékesítési rendelés első munkaazonosítóját.
 

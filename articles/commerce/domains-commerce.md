@@ -2,11 +2,9 @@
 title: Tartományok a Dynamics 365 Commerce szolgáltatásban
 description: Ez a témakör azt mutatja be, hogyan kezelhetők a tartományok a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: BrShoo
-manager: AnnBe
-ms.date: 09/03/2020
+ms.date: 03/17/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.industry: retail
 ms.author: BrShoo
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: bafa49cc570ddf7e0ff9c3dcb1b6902fb341b790
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 8d4381c64b69f8b62dcb509407c4f04dcee696ae
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5225789"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5792799"
 ---
 # <a name="domains-in-dynamics-365-commerce"></a>Tartományok a Dynamics 365 Commerce szolgáltatásban
 
@@ -40,7 +38,7 @@ Egy e-kereskedelmi rendszernek a [Microsoft Dynamics Lifecycle Services (LCS)](h
 
 A következő ábra a LCS e-kereskedelmi létesítési képernyőt mutatja, ahol a **Támogatott állomásnevek** mező ki van emelve. 
 
-![LCS e-kereskedelmi létesítési képernyőn a **Támogatott állomásnevek** mező kijelölve](./media/Domains_ProvisioningeCommerceScreen.png)
+![LCS e-kereskedelmi létesítési képernyőn a **Támogatott állomásnevek** mező kijelölve](./media/Domains_ProvisioningeCommerceScreen_publish.png)
 
 Szolgáltatási kérelmeket úgy is létrehozhat, hogy további tartományokat adjon hozzá egy környezethez, ha az üzembe helyezés már megtörtént. Szolgáltatási kérelem létrehozásához az LCS-ben a környezeten belül válassza a **Támogatás \> Támogatási problémák** lehetőséget, majd válassza a **Probléma beküldése** elemet.
 

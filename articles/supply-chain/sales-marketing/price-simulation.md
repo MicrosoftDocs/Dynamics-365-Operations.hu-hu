@@ -2,11 +2,9 @@
 title: Árszimuláció
 description: Ez a cikk az árajánlatokra vonatkozó árszimulációval kapcsolatban tartalmaz információt. Az árszimuláció segít felbecsülni a jövőbeni árajánlati folyamat alatti eladási árok csökkenését, még mielőtt meghatározni egy konkrét árat.
 author: omulvad
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SalesQuotationPriceSimulation, SalesQuotationsTableLookup
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a8633d6eec788035997c52322c3268b946fb0bfe
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 1d2c6bf3d13f11482ab31d71e804144d0c5f54db
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5218393"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5807800"
 ---
 # <a name="price-simulation"></a>Árszimuláció
 

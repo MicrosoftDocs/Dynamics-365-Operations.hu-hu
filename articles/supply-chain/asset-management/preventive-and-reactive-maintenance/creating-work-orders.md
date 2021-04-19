@@ -2,11 +2,9 @@
 title: Munkarendelések létrehozása
 description: Ez a cikk azt mutatja be, hogyan lehet munkarendeléseket létrehozni az Eszközkezelés modulban.
 author: johanhoffmann
-manager: tfehr
 ms.date: 02/01/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetMaintenancePlan, EntAssetObjectCalendarListPage, EntAssetObjectCalendarListPagePoolsOpen
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 76306fb31e7e5297e6a5d64b97b5bd09b64349ee
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: 3982232e5008d6f8c283d6cecfaf2fa6e66150a1
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5500574"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5836734"
 ---
 # <a name="creating-work-orders"></a>Munkarendelések létrehozása
 
@@ -62,8 +60,6 @@ A karbantartási ütemezésen alapuló munkarendelések létrehozásához köves
 
 ## <a name="group-work-order-lines-that-are-automatically-created-while-a-maintenance-plan-runs"></a>A karbantartási terv futtatásakor automatikusan létrehozott munkarendeléssorok csoportosítása
 
-[!INCLUDE [preview-banner-section](../../../includes/preview-banner-section.md)]
-
 Ezzel a funkcióval szabályokat határozhat meg a munkarendeléssorok egyetlen munkarendelés alá csoportosítására, ha a rendszer úgy van beállítva, hogy a karbantartási terv alapján automatikusan generálja a munkarendeléseket. Korábban az automatikusan generált munkarendelések csak egy sort tartalmazhattak. A munkarendeléseket azonban csoportosíthatja például eszköz, eszköztípus vagy működési hely szerint. (A manuálisan generált munkarendelések már csoportosíthatóak a témakör előző részében leírtak szerint.)
 
 ### <a name="enable-grouping-for-automatically-generated-work-orders"></a>Csoportosítás engedélyezése az automatikusan létrehozott munkarendelések számára
@@ -71,7 +67,7 @@ Ezzel a funkcióval szabályokat határozhat meg a munkarendeléssorok egyetlen 
 A funkció használata előtt be kell azt kapcsolnia saját rendszerében. A rendszergazdák használhatják a [funkciókezelési](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) beállításokat a funkció állapotának ellenőrzéséhez, és bekapcsolásához. A **Funkció kezelése** munkaterületen a funkció a következő módon van listázva:
 
 - **Modul:** *Tárgyieszköz-kezelés*
-- **Funkciónév:** *(Előnézet) A munkarendelések karbantartási terv futtatása közbeni csoportosítására vonatkozó szabályok alkalmazása*
+- **Funkciónév:** *A munkarendelések karbantartási terv futtatása közbeni csoportosítására vonatkozó szabályok alkalmazása*
 
 ### <a name="set-up-grouping-for-automatically-generated-work-orders"></a>Csoportosítás beállítása az automatikusan létrehozott munkarendelések számára
 

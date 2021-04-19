@@ -2,11 +2,9 @@
 title: Több B2C bérlő konfigurálása egy Commerce-környezetben
 description: Ez a témakör azt mutatja be, hogy mikor és hogyan lehet több csatornánkénti Microsoft Azure Active Directory (Azure AD) vállalat és ügyfél közötti (B2C) bérlőt beállítani felhasználói hitelesítésre egy kijelölt Dynamics 365 Commerce-környezetben.
 author: BrianShook
-manager: annbe
-ms.date: 03/02/2020
+ms.date: 03/17/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-12
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 2ddc8cea42ab0b5a319d4725ce8c75e57529cc63
-ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
+ms.openlocfilehash: 4e50855368a3fa86c38c756492fc7e6cd518f497
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/19/2021
-ms.locfileid: "5477756"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5796099"
 ---
 # <a name="configure-multiple-b2c-tenants-in-a-commerce-environment"></a>Több B2C bérlő konfigurálása egy Commerce-környezetben
 
@@ -55,10 +53,6 @@ A következő ábra több B2C bérlőt mutat be a Commerce-környezetben.
 
 Ha úgy dönt, hogy a vállalat külön B2C bérlőket igényel csatornánként ugyanazon a Commerce-környezetben, hajtsa végre a következő szakaszokban ismertetett lépéseket a funkció kéréséhez.
 
-## <a name="request-that-b2c-per-channel-be-enabled-in-your-environment"></a>Csatornánkénti B2C engedélyezésének kérdése a környezetben
-
-Jelenleg, ha külön B2C-bérlőket szeretne csatornánként elérhetővé tenni ugyanabban a Commerce-környezetben, kérést kell küldenie a Dynamics 365 Commerce szolgáltatásnak. További információ: [Támogatás szerzése a Lifecycle Services (LCS) rendszerhez](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md), vagy beszéljen erről a problémáról Commerce-megoldásokra kijelölt kapcsolattartójával.
-
 ## <a name="configure-b2c-tenants-in-your-environment"></a>B2C bérlők konfigurálása a környezetben
 
 A B2C-bérlők konfigurálásához hajtsa végre a megfelelő eljárásokat ebben a szakaszban.
@@ -79,11 +73,11 @@ Ha Azure AD B2C-bérlőt szeretne hozzáadni a környezethez, hajtsa végre az a
     - **Ügyfél GUID-azonosítója**: adja meg az Azure portálon megjelenő Azure AD B2C bérlő azonosítóját (nem a B2C bérlő alkalmazásazonosítóját).
     - **Profil szerkesztésére vonatkozó irányelv azonosítója**: adja meg az irányelv azonosítóját (a házirend nevét az Azure portálon).
 
-1. Ha befejezte megadni ezeket az adatokat, akkor a módosítások mentéséhez kattintson az **OK** gombra.
+1. Ha befejezte megadni ezeket az adatokat, akkor a módosítások mentéséhez kattintson az **OK** gombra. Az új Azure AD B2C bérlő most a **B2C alkalmazások kezelése** területen jelenik meg a listán.
 
 > [!NOTE]
 > A **Hatókör**, **Nem interaktív irányelv azonosítója**, **Nem interaktív ügyfélazonosító**, **Bejelentkezés egyéni tartománya** és **Regisztrációs irányelv azonosítója** mezőket üresen, hacsak a Dynamics 365 Commerce-csapat nem kéri ezek beállítását.
-Az új Azure AD B2C bérlő most a **B2C alkalmazások kezelése** területen jelenik meg a listán.
+
 
 ### <a name="manage-or-delete-an-azure-ad-b2c-tenant"></a>Azure AD B2C-bérlő kezelése vagy törlése
 
@@ -97,6 +91,7 @@ Az új Azure AD B2C bérlő most a **B2C alkalmazások kezelése** területen je
 > Amikor egy B2C bérlőt egy élő/közzétett webhelyhez konfigurálnak, előfordulhat, hogy a felhasználók a bérlőn jelen lévő fiókok használatával regisztráltak. Ha egy konfigurált bérlőt kitöröl a **Bérlőbeállítások \> B2C bérlő** menüben, eltávolítja az adott B2C bérlő társítását azokon a webhelyeken, amelyek a bérlő bármely csatornájával kapcsolatban vannak. Ebben az esetben előfordulhat, hogy a felhasználók nem tudnak bejelentkezni a saját fiókjukba. Ezért rendkívüli óvatosságot kell alkalmazni a konfigurált bérlő törlésekor.
 >
 > Egy konfigurált bérlő törlése esetén a B2C bérlő és a rekordok karbantartása továbbra is fennáll, de a bérlő Commerce rendszerkonfigurációját módosítani vagy törölni kell. Azoknak a felhasználóknak, akik megpróbálnak regisztrálni vagy bejelentkezni a webhelyre, új fiókrekordot hoznak létre az alapértelmezett vagy az újonnan társított B2C-bérlőben, amely a webhely csatornája számára be van állítva.
+
 ## <a name="configure-your-channel-with-a-b2c-tenant"></a>A csatorna konfigurálása a B2C-bérlővel
 
 1. Rendszeradminisztrátorként jelentkezzen be a Commerce webhelykészítőbe a saját környezetében. Az Azure AD B2C-bérlők konfigurálásához rendszeradminisztrátornak kell lennie a Commerce környezethez.

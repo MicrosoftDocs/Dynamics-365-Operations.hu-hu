@@ -2,11 +2,9 @@
 title: A termelési üzem végrehajtási felületének dolgozók általi használata
 description: Ez a témakör azt mutatja be, hogyan kell használni a termelési üzem végrehajtási felületét egy dolgozó szemszögéből.
 author: johanhoffmann
-manager: tfehr
 ms.date: 10/05/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: JmgProductionFloorExecution
 audience: Application User
@@ -15,17 +13,16 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 38bc07d37b5c51f143846110c87cff9952d52b0e
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: 02046da5e2487e203c9658c255f95a7c403d0b10
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5500790"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5814656"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>A termelési üzem végrehajtási felületének dolgozók általi használata
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 A termelési üzem végrehajtási felületét az érintéses kezelésre optimalizálták. A kinézete vizuális kontrasztot nyújt, amely megfelel az üzemi környezetek hozzáférhetőségi követelményeinek. A feladatkártya-eszköz összes funkcióját felkínálja. Azt is lehetővé teszi azonban, hogy a feladatlistából párhuzamosan több feladat induljon el. (Ezt a lehetőséget nevezik *feladatkötegelésnek*.) Ezenkívül a feladatok listájából a dolgozók megnyithatnak egy, a Microsoft Dynamics 365 Guide alkalmazásban létrehozott útmutatót. Ily módon vizuális utasításokat kaphatnak a HoloLens felületen keresztül.
 
@@ -90,7 +87,7 @@ A **Saját gép lap** a következő oszlopokat tartalmazza. A számok az előző
 
 1. **Beállítások** – A fogaskerekek ikonjának kiválasztásával egy párbeszédpanel nyílik meg, amelyen kiválaszthatja, hogy a kiválasztott gépeszköz mely számlálóit kell megtekinteni. Ezeknek a számlálóknak az értékei az **Eszközkezelés lap** tetején jelennek meg. A **Beállítások** menü (a következő képernyőképen látható) segítségével akár négy számlálót engedélyezhet. Az engedélyezni kívánt számlálókhoz használja a csempe tetején található keresési mezőt, és válasszon ki egy számlálót. A keresési mező az **Eszközkezelés** lap tetején kijelölt eszközhöz társított összes számlálót listázza. Állítsa be az egyes számlálókat az **Összesített** érték vagy a számláló legutóbbi **Tényleges** értékének figyeléséhez. Ha például olyan számlálót állít be, amely nyomon követi, hogy a gép hány órát fut, akkor azt **Összesített** értékre kell állítania. Ha a legutóbb frissített hőmérséklet vagy hőmérséklet mérésére állít be számlálót, akkor a **Tényleges** értékre kell beállítania. Az **OK** gombra kattintva mentse a beállításokat, és zárja be a párbeszédpanelt.
 
-    ![Saját gép lap](media/pfei-my-machine-tab-settings.png "Saját gép lap")
+    ![Saját gép lap beállításai](media/pfei-my-machine-tab-settings.png "Saját gép lap beállításai")
 
 1. **Karbantartás kérése** – Ezzel a gombbal megnyithat egy párbeszédpanelt, ahol létrehozhatja a karbantartási kéréseket. Meg lehet adni egy leírást és megjegyzést. A kéréssel egy Supply Chain Management felhasználó fog foglalkozni, aki ezt követően karbantartási munkarendelésre konvertálhatja a karbantartási kérést.
 1. **Leállás regisztrálása** – Ezzel a gombbal megnyithat egy párbeszédpanelt, ahol regisztrálhatja a gép leállását. Kiválaszthatja az okkódot, és megadhatja a leállás dátumát/tartományát. A gép leállási idejének regisztrációja a gépi eszköz hatékonyságának kiszámítására használható.

@@ -2,11 +2,9 @@
 title: Falhoz helyez – üzletbe helyez
 description: Ez a témakör Falhoz helyez – üzletbe helyez funkciót ismerteti. Ez a funkció lehetővé teszi olyan esetek kezelését, amikor konfigurálható feltételek alapján kell konszolidálni egy termékeket egy előrecsomagolt előkészítő területre. Segít csökkenteni a kitárolási időt, mivel ez lehetővé teszi a kitárolást egyetlen cél azonosítótáblára, és a fürtök kitárolásánál több betárolási pozíciót is alkalmazhat.
 author: Mirzaab
-manager: tfehr
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLocationType, WHSLocationProfile, WHSLocation, WHSPackProfile, WHSWaveStepCode, WHSOutboundSortTemplate, WHSPostMethod, WHSWaveTemplateTable, WHSLocDirTable, WHSWorkClass, WHSWorkTemplateTable
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: e2dcfa18af457ea21618704bafa2ed81c615d952
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: cf34a61d0b3f784b5a424473588d05bf8703635c
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5228513"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5823287"
 ---
 # <a name="put-to-wall---put-to-store"></a>Falhoz helyez – üzletbe helyez
 
@@ -524,7 +522,7 @@ Most, hogy az összes készletet áthelyezték a rendezési helyre, azt a helyes
 
 Ha a rendezési pozíciókat manuálisan kell lezárni, akkor a **Rendezési pozíció automatikus lezárása** beállítást *Nem* értékre kell beállítani , és a zárást végre kell hajtani, mielőtt az árukészletet át lehetne helyezni a raktárajtó területére. A pozíciók a különböző módokon zárhatók le:
 
-- A raktári alkalmazáson keresztül:
+- A Raktárkezelés mobilalkalmazáson keresztül:
 
     - A felhasználó beolvashatja a pozícióban lévő cikkek valamelyikét, majd a beosztást lezárhatja a **Lezárás** lehetőséggel.
     - Ha a felhasználó egy már rendezett tárolót olvas be, akkor egy hibaüzenet jelenik meg. Ugyanakkor a felhasználó továbbra is folytathatja a beosztás lezárását.

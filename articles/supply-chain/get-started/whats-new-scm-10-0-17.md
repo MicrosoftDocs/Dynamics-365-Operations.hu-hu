@@ -1,12 +1,10 @@
 ---
-title: A Dynamics 365 Supply Chain Management 10.0.17 előzetes verziója (2021. április)
+title: Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.17. (2021. április ) szolgáltatásban
 description: Ez a témakör a Dynamics 365 Supply Chain Management 10.0.17 új vagy módosított szolgáltatásait írja le.
 author: kamaybac
-manager: annbe
 ms.date: 02/01/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
@@ -16,19 +14,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 985879ef765bf3074387a909d508f0f93a4771ed
-ms.sourcegitcommit: d7c18228256daeefbf6518c3ef82fed4f7dbc161
+ms.openlocfilehash: 4b4e551f5c687f0021ddba0c9f5b73af528b7140
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5571812"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5813171"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10017-april-2021"></a>A Dynamics 365 Supply Chain Management 10.0.17 előzetes verziója (2021. április)
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10017-april-2021"></a>Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.17. (2021. április ) szolgáltatásban
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-Ez a témakör a Microsoft Dynamics 365 Supply Chain Management 10.0.17 előzetes kiadásának új vagy módosított szolgáltatásait írja le. Ennek a verziónak 10.0.761 a buildszáma, és a következő módon érhető el:
+Ez a témakör a Microsoft Dynamics 365 Supply Chain Management 10.0.17 változatának új vagy módosított szolgáltatásait írja le. Ennek a verziónak 10.0.761 a buildszáma, és a következő módon érhető el:
 
 - **Előzetes kiadás:** 2021. február
 - **A kiadás általános elérhetővé tétele (saját frissítés):** 2021. március
@@ -36,9 +33,9 @@ Ez a témakör a Microsoft Dynamics 365 Supply Chain Management 10.0.17 előzete
 
 ## <a name="features-included-in-this-release"></a>A verzióban található funkciók
 
-Ez a kiadás a következő funkciókat tartalmazza: A felsorolt szolgáltatások egy része továbbra is előnézeti módban van, mások azonban már általánosan elérhetők. Kövesse a [kiadási tervet](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features) az egyes funkciók hivatalos kiadási dátumainak megtekintéséhez.
+Ez a kiadás a következő funkciókat tartalmazza:  Kövesse a [kiadási tervet](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features) az egyes funkciók hivatalos kiadási dátumainak megtekintéséhez.
 
-Ezen szolgáltatások többségét a használat előtt engedélyezni kell a [Funkciók kezelése](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) alatt.
+Ezen szolgáltatások többségét a használat előtt engedélyezni kell a [Funkciók kezelése](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) alatt. A felsorolt szolgáltatások egy része továbbra is előnézeti módban lehet, a legtöbb azonban már általánosan elérhetők.
 
 ### <a name="asset-management"></a>Eszközkezelés
 
@@ -68,9 +65,13 @@ Ezen szolgáltatások többségét a használat előtt engedélyezni kell a [Fun
 
 - [Raktárkezelési mobilalkalmazás](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-application)<br> - További információk: [A Raktárkezelés mobilalkalmazás telepítése és csatlakoztatása](../warehousing/install-configure-warehouse-management-app.md) és [Mobileszköz felhasználói beállításai](../warehousing/mobile-device-user-settings.md).
 
+- Hullámvégrehajtási értesítések<br> - További információ [Hullámvégrehajtási értesítések](../warehousing/wave-execution-notifications.md)
+
 ### <a name="manufacturing"></a>Gyártás
 
-- [Eszközkezelési képességek a termelési üzem végrehajtási felületén](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/asset-management-capabilities-production-floor-execution-interface)<br> - További tájékoztatás: [A termelési üzem végrehajtási felületének dolgozók általi használata](../production-control/production-floor-execution-use.md).
+- [Eszközkezelési képességek a termelési üzem végrehajtási felületén](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/asset-management-capabilities-production-floor-execution-interface)<br> - További információk: [A termelési üzem végrehajtási felületének konfigurálása](../production-control/production-floor-execution-configure.md).
+
+- Egyesített számsorozat a feladatazonosítók esetén<br> - További információért lásd: 
 
 - [A gyártásban használt anyagok alapértelmezett foglalási elvének felülbírálása](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/override-default-reservation-principle-materials-production)<br> - További információk: [A termelésben felhasznált anyagok alapértelmezett foglalási elvének felülbírálása](../production-control/override-default-reservation-principle.md).
 

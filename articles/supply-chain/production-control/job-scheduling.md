@@ -2,11 +2,9 @@
 title: Feladat ütemezése
 description: Ez a cikk információt biztosít a feladat ütemezésről, ami a művelet ütemezés egy részletesebb ütemezésű formája. A feladatütemezést használhatja az egyéni feladatok vagy bolti sorrendek ütemezésére és a gyártási környezet irányítására.
 author: ChristianRytt
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ProdSchedule
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c71f85cac11c4f11d63ba8f55932ec8f0520d924
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 4ac3602d765a87cccff8bfb26db5b7b63cbccb8e
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5246117"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5811726"
 ---
 # <a name="job-scheduling"></a>Feladat ütemezése
 

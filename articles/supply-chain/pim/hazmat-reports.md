@@ -2,11 +2,9 @@
 title: Veszélyes anyagokkal kapcsolatos lekérdezések és jelentések
 description: Ez a témakör azt mutatja be, hogyan lehet a veszélyes anyagokhoz kapcsolódó különböző jelentésekkel dolgozni. Számos ilyen jelentés szükséges annak érdekében, hogy a szállítás és a tárolás során a különböző veszélyes anyagokra vonatkozó rendeletek követelményei teljesüljenek.
 author: dasani-madipalli
-manager: tfehr
 ms.date: 06/10/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
@@ -14,17 +12,16 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: cee824e9e8f7577d1d4a6c0a21c7341608e1f588
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 07f103680cacc1273b2b28f6e4e905d6dabb006a
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5243129"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5820322"
 ---
 # <a name="hazardous-materials-inquiries-and-reports"></a>Veszélyes anyagokkal kapcsolatos lekérdezések és jelentések
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 A Microsoft Dynamics 365 Supply Chain Management különböző jelentéseket tartalmaz, amelyek a veszélyes anyagokhoz kapcsolódnak. Számos ilyen jelentés szükséges annak érdekében, hogy a szállítás és a tárolás során a különböző veszélyes anyagokra vonatkozó rendeletek követelményei teljesüljenek.
 

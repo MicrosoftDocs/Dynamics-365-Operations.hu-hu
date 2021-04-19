@@ -2,11 +2,9 @@
 title: A Raktárkezelés mobilalkalmazás telepítése és csatlakoztatása
 description: Ez a témakör azt mutatja be, hogyan lehet telepíteni a Raktárkezelés alkalmazást mindegyik mobileszközre, és konfigurálni a Microsoft Dynamics 365 Supply Chain Management környezethez való csatlakozásra.
 author: MarkusFogelberg
-manager: tfehr
 ms.date: 02/03/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysAADClientTable, WHSMobileAppField, WHSMobileAppFieldPriority, WHSRFMenu, WHSRFMenuItem, WHSWorker
 audience: Application User, IT Pro
@@ -18,20 +16,19 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: e1e8c8b1464a38a0145cbdcdcb4882db00d3c4c1
-ms.sourcegitcommit: 105f65468b45799761c26e5d0ad9df4ff162c38d
+ms.openlocfilehash: 378fff6274902025b1fca487874f37ed30df25ed
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5487025"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5835606"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>A Raktárkezelés mobilalkalmazás telepítése és csatlakoztatása
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 > [!NOTE]
-> Ez a témakör ismerteti, hogyan kell konfigurálni az új Raktárkezelés mobilalkalmazást. Ha a régi raktári alkalmazás konfigurálásával kapcsolatos információkat keres, tekintse meg a következőt: [A raktározási alkalmazás telepítése és csatlakoztatása](../../supply-chain/warehousing/install-configure-warehousing-app.md).
+> Ez a témakör ismerteti, hogyan kell konfigurálni az új Raktárkezelés mobilalkalmazást. Ha a régi raktári alkalmazás (már elavult) konfigurálásával kapcsolatos információkat keres, tekintse meg a következőt: [A raktározási alkalmazás telepítése és csatlakoztatása](../../supply-chain/warehousing/install-configure-warehousing-app.md).
 
 Ez a témakör azt mutatja be, hogyan lehet letölteni és telepíteni a Raktárkezelés mobilalkalmazást mindegyik mobileszközre, és konfigurálni az alkalmazást a Supply Chain Management-környezethez való csatlakozásra. Az egyes eszközöket manuálisan is konfigurálhatja, illetve a csatlakozási beállításokat egy fájlként vagy egy QR-kód beolvasásával is importálhatja.
 

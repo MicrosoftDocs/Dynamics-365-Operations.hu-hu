@@ -2,11 +2,9 @@
 title: Foglalások a raktárkezelési modulban – hibaelhárítás
 description: Ez a témakör azt mutatja be, hogyan lehet megoldani gyakori problémákat, miközben a raktári foglalási munkákat végzi a Microsoft Dynamics 365 Supply Chain Management szolgáltatásban.
 author: perlynne
-manager: tfehr
 ms.date: 10/19/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application user
@@ -17,18 +15,20 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: a9a5d20732a802fc58c392853af8334bbc07de73
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: d0d73396772ed9e8397797d6685fb550d911303b
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5248715"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5828106"
 ---
 # <a name="troubleshoot-reservations-in-warehouse-management"></a>Foglalások a raktárkezelési modulban – hibaelhárítás
 
 [!include [banner](../includes/banner.md)]
 
 Ez a témakör azt mutatja be, hogyan lehet megoldani gyakori problémákat, miközben a raktári foglalási munkákat végzi a Microsoft Dynamics 365 Supply Chain Management szolgáltatásban.
+
+A köteg- és sorozatszám-regisztrációkhoz kapcsolódó témakörökért lásd: [Raktár kötegelési és sorozatszám-foglalási hierarchiáinak hibaelhárítása](troubleshoot-warehouse-batch-and-serial-reservation-hierarchies.md).
 
 ## <a name="i-receive-the-following-error-message-reservations-cannot-be-removed-because-there-is-work-created-which-relies-on-the-reservations"></a>A következő hibaüzenet jelenik meg: „Foglalások nem távolíthatók el, mert van olyan munkafolyamat, amely a foglalásokon alapul”.
 
@@ -63,20 +63,6 @@ Ez a probléma akkor fordulhat elő, ha a rendszer nem tudja frissíteni a kész
 ### <a name="issue-resolution"></a>Probléma megoldása
 
 Ezt a problémát valószínűleg a nyitott munka okozza. Vagy hajtsa végre a munkát vagy fogadja a munka létrehozása nélkül. Győződjön meg arról, hogy a készlettranzakciók ténylegesen nem foglalnak mennyiséget. Előfordulhat például, hogy ezek a tranzakciók nyitott minőségi rendelések, készletzároló rekordok vagy kimenő rendelések.
-
-## <a name="i-receive-the-following-error-message-to-be-assigned-to-wave-load-lines-must-specify-the-dimensions-above-the-location-to-assign-these-dimensions-reserve-and-recreate-the-load-line"></a>A következő hibaüzenet jelenik meg: „A hullámhoz hozzárendelni kívánt soroknak meg kell adni a hely fölötti dimenzióit. Ezeknek a dimenzióknak a hozzárendeléséhez foglalja le és hozza létre újból a rakománysort.”
-
-### <a name="issue-description"></a>Probléma leírása
-
-Ha olyan cikket használ, amelyben a „köteg felett” foglalási hierarchia szerepel (a **Hely** dimenzió *fölött* megadott **Kötegszám** dimenzióval), akkor a részleges mennyiséghez tartozó **Rakománytervezési** munkaterület lap **Kiadás a raktárba** parancsa nem használható. Ez a hibaüzenet jelenik meg, és a rendszer nem hoz létre munkát a részleges mennyiséghez.
-
-Azonban ha olyan cikket használ, amelyben a „köteg alatt” foglalási hierarchia szerepel (a **Hely** dimenzió *alatt* megadott **Kötegszám** dimenzióval), akkor a részleges mennyiséghez tartozó **Rakománytervezési munkaterület** lapról kiadhatja a rakományt.
-
-### <a name="issue-resolution"></a>Probléma megoldása
-
-Ez szándékosan van. Ha a foglalási hierarchiában a **Hely** dimenzió felett helyez fel egy dimenziót, akkor azt a raktárba történő kiadás előtt meg kell határozni. A Microsoft kiértékelte ezt a hibát, és azt állapította meg, hogy a rakománytervezési munkaterületről a raktárba történő kiadások jellemzően korlátozást jelentenek. A részleges mennyiségek nem adhatók ki, ha a **Hely** fölötti egy vagy több dimenzió nincs meghatározva.
-
-További információ: [Rugalmas raktárszintű dimenzió foglalási irányelv](flexible-warehouse-level-dimension-reservation.md).
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,11 +2,9 @@
 title: Vevői rendelések a pénztárban (POS)
 description: Ez a témakör a pénztár (POS) vevői rendeléseivel kapcsolatban tartalmaz információkat. A vevői rendelések speciális rendelések néven is ismertek. A témakör a kapcsolódó paramétereket és tranzakciófolyamatokat is tárgyalja.
 author: josaw1
-manager: AnnBe
 ms.date: 01/06/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: RetailFunctionalityProfile
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: f60e07c1faae9bc3cb6d3c843e72e6000cff7591
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: a310c7067b399fb35ccc8a1b17d8bd6822a27a62
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5220510"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5821008"
 ---
 # <a name="customer-orders-in-point-of-sale-pos"></a>Vevői rendelések a pénztárban (POS)
 
@@ -61,7 +59,8 @@ A Commerce 10.0.12 és újabb verzióiban a vállalatok meghatározhatják, hogy
 
 Amikor a vevői rendelésekkel dolgozik a pénztárban, figyelembe kell vennie az üzlet csatornájának néhány beállítását. Ezek a beállítások a Commerce Headquarters **Áruházak** lapján találhatók.
 
-- **Raktár** – Ez a mező azt a raktárt jelzi, amely az üzletből történő szállításhoz konfigurált rendelések teljesítéséhez használatos.
+- **Raktár** – Ez a mező azt a raktárat jelzi, amelyet a rendszer az áruházhoz kötött készpénzzel fizetett, azonnal átvett és vevői átvételes rendelések készletének csökkentésekor fog használni. Legjobb gyakorlatként javasoljuk egyedi raktárak használatát az egyes áruházi csatornákhoz, hogy megelőzzük az áruházakban az egymásnak ellentmondó üzleti logikával kapcsolatos problémákat.
+- **Szállítási raktár** – Ez a mező azt a raktárat jelzi, amelyet a rendszer az áruházhoz kötött, a kiválasztott áruházból szállítandó vevői átvételes rendelések készletének csökkentésekor fog használni. Ha a környezetében engedélyezve van a **Helyek „Szállítási” és „Felvételi” minősítéssel való megadása engedélyezett a teljesítési csoporton belül**, akkor a pénztárfelhasználók kiválaszthatnak egy adott raktárat a pénztárban a szállítás forrásaként ahelyett, hogy egy áruházat választanának a szállítás forrásaként. Ezért ha ez a szolgáltatás engedélyezve van, a szállítási raktár már nem lesz használva, mivel a felhasználó az adott raktárt választja ki a rendelés szállításának forrásaként a rendelés létrehozásakor.
 - **Teljesítési csoport hozzárendelése** – Arra válassza ezt a gombot (a művelet ablaktábla **Beállítás** lapján), hogy kapcsolja a teljesítési csoportokat, amelyekre hivatkozik, hogy megjelenítse az átvételi lehetőségeket vagy a szállítások eredetét, amikor ügyfélrendeléseket hoznak létre a pénztárban.
 - **Célhelyen alapuló adó használata** – Ez a beállítás azt jelzi, hogy a szállítási cím használatos-e a vevő címére leszállított rendeléssorok esetében alkalmazott áfacsoportok meghatározására.
 - **Vevőn alapuló adó használata** – Ez a beállítás azt jelzi, hogy a vevő szállítási címéhez megadott adócsoport van-e alkalmazva a vevő otthonába történő szállításhoz a POS rendszerben létrehozott vevői rendelésekre.

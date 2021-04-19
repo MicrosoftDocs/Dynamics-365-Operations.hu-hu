@@ -2,11 +2,9 @@
 title: Meglévő webhelyoldal módosítása
 description: Ez a témakör azt mutatja be, hogyan lehet módosítani egy létező webhelyoldalt a Microsoft Dynamics 365 Commerce megoldásban.
 author: psimolin
-manager: annbe
 ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -16,21 +14,18 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 6afd19a01520813e54871f4849aeb18f4424173c
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: b633965e45c16cb4e5991fab67783b867223f6ec
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5223047"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5803729"
 ---
 # <a name="modify-an-existing-site-page"></a>Meglévő webhelyoldal módosítása
-
 
 [!include [banner](includes/banner.md)]
 
 Ez a témakör azt mutatja be, hogyan lehet módosítani egy létező webhelyoldalt a Microsoft Dynamics 365 Commerce megoldásban.
-
-## <a name="overview"></a>Áttekintés
 
 Amikor módosítania kell egy lapot, az első lépés az, hogy megnyitja az oldalszerkesztőben. Nyissa meg azt a webhelyet, amely az oldalt tartalmazza majd az oldalak listáján keresse meg a kívánt oldalt. Ha nem találja az oldalt, akkor használhatja a szerkesztőeszköz bővített keresés funkcióját. Írja be az oldal pontos nevét, vagy írja be az első néhány betűjét, majd egy csillagot (\*). Megjelenik a lapok szűrt listája. Ez a lista a kívánt lap megtalálására használhatja. Miután megtalálta a megfelelő lapot, válassza ki a lap nevét, hogy megnyissa azt a lapszerkesztőben.
 

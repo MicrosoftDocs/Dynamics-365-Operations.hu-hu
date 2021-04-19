@@ -2,7 +2,6 @@
 title: Hajóutak kezelése
 description: Ez a témakör a hajóutak kezelését ismerteti. Az hajóút általában egy hajót képvisel. A gyakorlatoktól és az eljárásoktól függően azonban jelenthet szállítót, beszerzési rendelést vagy más olyan elemet, amely a szervezet számára értelmes.
 author: sherry-zheng
-manager: tfehr
 ms.date: 12/14/2020
 ms.topic: article
 ms.prod: ''
@@ -16,17 +15,16 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 850fbb2077a592ec4ba8578cab4795d573464f54
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: 0b1414efbdde77af5d7fa15ff066e4ddcfd6bad2
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5501006"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5833785"
 ---
 # <a name="manage-voyages"></a>Hajóutak kezelése
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Az hajóút általában egy hajót képvisel. A gyakorlatoktól és az eljárásoktól függően azonban jelenthet szállítót, beszerzési rendelést vagy más olyan elemet, amely a szervezet számára értelmes.
 
@@ -74,9 +72,9 @@ A következő táblázat a Művelet panel **Kezelés** lapján elérhető művel
 | Számlafeladás | Számla feladása a hajóúton található összes beszerzésirendelés-sorhoz. Ha az áruk a hajóúton áthaladnak az úton lévő áruk feldolgozásán, a beszerzésirendelés-sorok számlázása a bevételezési folyamat végrehajtása előtt történik meg. Az eredeti beszerzési rendelés számlázásakor a program az eredeti beszerzésirendelés-sorokhoz társított úton lévő áruk rendeléseket fogja létrehozni. Ezeket a rendeléseket ezután bevételezheti a raktár. Többvállalatos szállítmányok használata esetén minden vállalat számára új számlafeladási párbeszédpanel nyílik meg. |
 | Átmozgatási rendelések szállítása | Átszállítási rendelés hajóútjának feladása a hajóúton található összes átszállításirendelés-sorhoz. Ha ez a gomb be van jelölve, akkor csak az átszállítási rendelések érhetők el frissítésre. |
 | Átmozgatási rendelés bevételezése | Átszállítási rendelés bevételezésének feladása a hajóúton található összes átszállításirendelés-sorhoz. |
-| Úton lévő áruk bevételezése | Minden olyan rendelési sor bevételezése, amely úton van a hajóúton. Ez a gomb egyike annak a három lehetőségnek, amelyek a hajóúton úton lévő áruk bevételezésére használhatók. (A másik két lehetőség az **Érkeztetési napló létrehozása** gomb, amely később ebben a táblában és a raktári alkalmazásban van leírva). Ez a beállítás a legegyszerűbb választási lehetőség, és feldolgozza az úton lévő áruk raktárából a végső célraktárba úton lévő árukat. Ha jobban szabályozni szeretné a folyamatot, használja az érkeztetési naplót vagy egy mobileszközt az árubevételezés feldolgozására. |
+| Úton lévő áruk bevételezése | Minden olyan rendelési sor bevételezése, amely úton van a hajóúton. Ez a gomb egyike annak a három lehetőségnek, amelyek a hajóúton úton lévő áruk bevételezésére használhatók. (A másik két lehetőség az **Érkeztetési napló létrehozása** gomb, amely később ebben a táblában és a Raktárkezelés mobilalkalmazásban van leírva). Ez a beállítás a legegyszerűbb választási lehetőség, és feldolgozza az úton lévő áruk raktárából a végső célraktárba úton lévő árukat. Ha jobban szabályozni szeretné a folyamatot, használja az érkeztetési naplót vagy egy mobileszközt az árubevételezés feldolgozására. |
 | Automatikus költségek keresése | Keresse meg a vonatkozó hajóútköltségeket. Ha ezek a költségek már megtalálhatóak vagy frissítve vannak, a következő üzenet jelenik meg: „Nem számlázott költségsorok léteznek. Felül kívánja írni őket?” Minden olyan költség megtalálható, amely a hajóúthoz nem volt társítva a létrehozásakor. A hajóúthoz kapcsolódó és számlázott hajóútköltségek nem írhatók felül. |
-| Érkezési napló létrehozása | <p>Az **Érkeztetési napló létrehozása** párbeszédpanel megnyitása, ahol létrehozhat egy érkeztetési naplót, amely megadja a helyet. A párbeszédpanel a következő lehetőségeket teszi elérhetővé:</p><ul><li>**Létrehozás az úton lévő árukból** vagy **Létrehozás átszállítási rendelésből** – A beállítás címkéje attól függően változik, hogy az úton lévő áruk feldolgozását használja-e. Állítsa *Igen* beállításra egy érkeztetési naplóoldal megnyitásához, amely lehetővé teszi a hajóúthoz kapcsolódó úton lévő áruk szokásos érkeztetési naplójának feldolgozását. Ha a cikk már megérkezett a végső célraktárba, akkor nem lesz hozzáadva az érkeztetési napló soraihoz.</li><li>**Mennyiség inicializálása** – Állítsa a beállítást *Igen* értékre a bevételezett mennyiség inicializálásához a hajóút sorában megadott árumennyiség alapján. Ha az hajóútsort részben bevételezték már, ez a mennyiség lesz a fennmaradó mennyiség. Javasoljuk, hogy állítsa ezt a beállítást *Igen* értékre.</li><li>**Létrehozás rendeléssorokból** – A beállítás *Igen* értékre állításával a rendelési sorokban megadott értéket veszi át.</li></ul><p>Ez a gomb egyike annak a három lehetőségnek, amelyek a hajóúton lévő áruk bevételezésére használhatók. (A többi lehetőség az ebben a táblában korábban ismertetett **Úton lévő áruk bevételezése** gomb, és a raktári alkalmazás.)</p> |
+| Érkezési napló létrehozása | <p>Az **Érkeztetési napló létrehozása** párbeszédpanel megnyitása, ahol létrehozhat egy érkeztetési naplót, amely megadja a helyet. A párbeszédpanel a következő lehetőségeket teszi elérhetővé:</p><ul><li>**Létrehozás az úton lévő árukból** vagy **Létrehozás átszállítási rendelésből** – A beállítás címkéje attól függően változik, hogy az úton lévő áruk feldolgozását használja-e. Állítsa *Igen* beállításra egy érkeztetési naplóoldal megnyitásához, amely lehetővé teszi a hajóúthoz kapcsolódó úton lévő áruk szokásos érkeztetési naplójának feldolgozását. Ha a cikk már megérkezett a végső célraktárba, akkor nem lesz hozzáadva az érkeztetési napló soraihoz.</li><li>**Mennyiség inicializálása** – Állítsa a beállítást *Igen* értékre a bevételezett mennyiség inicializálásához a hajóút sorában megadott árumennyiség alapján. Ha az hajóútsort részben bevételezték már, ez a mennyiség lesz a fennmaradó mennyiség. Javasoljuk, hogy állítsa ezt a beállítást *Igen* értékre.</li><li>**Létrehozás rendeléssorokból** – A beállítás *Igen* értékre állításával a rendelési sorokban megadott értéket veszi át.</li></ul><p>Ez a gomb egyike annak a három lehetőségnek, amelyek a hajóúton lévő áruk bevételezésére használhatók. (A többi lehetőség az ebben a táblában korábban ismertetett **Úton lévő áruk bevételezése** gomb, és a Raktárkezelés mobilalkalmazás.)</p> |
 | Elhatárolt költségek | Olyan költségeket lehet elhatárolni, amelyekben a költségtípushoz meg van adva főkönyvi számla a tartozik tételhez. Ez a gomb általában akkor használatos, amikor a készlet szállítás közben van, vagy amikor az árukat bevételezték és számlázták. |
 | Összesített költségek | Költségek áthelyezése a szállítókonténer szintjéről a hajóút szintjére. Ezt a gombot megosztott szolgáltatások/szállítás esetén használhatja, ahol több entitás osztozik egy szállítókonténeren vagy egy kartonterületen. Például az hajóúton egy 40 méteres szállítókonténer és egy 20 méteres szállítókonténer található, és az arányosítás térfogat szerint történik. Ebben az esetben előfordulhat, hogy a 20 méteres szállítókonténerben található helyet megosztó vagy használó áruk/entitások büntetést kapnak. A költségek egyenlő elosztása érdekében egyes szervezetek például át kívánják utalni a költségeket az hajóútra, és az útszintű arányosítási módszer szerint elosztani őket. |
 | Utazási sablon módosítása | Párbeszédpanel megnyitása, ahol módosíthatja az út sablonját. A sablon módosítása után a hajóút költségei törlődnek. Emiatt lehet, hogy be ki kell választani az **Automatikus költségek megkeresése** (lásd a táblázat korábbi leírását) lehetőséget, vagy manuálisan újra hozzá kell adni a költségeket. |

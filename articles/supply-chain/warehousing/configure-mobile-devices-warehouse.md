@@ -2,11 +2,9 @@
 title: Mobileszközök beállítása raktári munkához
 description: Ez a témakör bemutatja, hogyan kell konfigurálni azokat a menüpontokat, amelyeket a raktári dolgozók használnak a mobileszközökön végzendő munkához.
 author: MarkusFogelberg
-manager: tfehr
 ms.date: 03/23/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSRFMenuItem, WHSRFSysDirSort, WHSWorkUserDisplaySettings
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: db4c3a8c4bae226b5e154f4761e30b7341bc527b
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 1d3acbc15b6dc5f698f26aae96c75cc942189c6c
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5232983"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5808798"
 ---
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>Mobileszközök beállítása raktári munkához
 
@@ -64,7 +62,7 @@ Ha a **Mód** mezőjének értéke egy menüelemnél **Közvetett** opcióra van
 | Készpénz-számsorozat gyorsítótárának kiürítése | Törölje a sorozatszámokat a gyorsítótárból. Ezt a tevékenységet általában rendszergazda végzi gyorsítótárazási problémák megoldásához, mobileszközök használata esetén. |
 | Köteg intézkedésének módosítása | Engedélyezze, hogy a dolgozó megadhassa a köteg intézkedéskódját egy cikkhez és köteghez. Ez a választás frissíti az intézkedési kódot, amely a köteghez meg van adva. |
 | Nyitott munkalista megjelenítése | Egy adott felhasználó számára elérhető munka listájának megjelenítése. A felhasználó kiválaszthatja az elvégzendő munkát, és a rendszer átirányítja a munkához. Ennek a listának a megtekintése táblagép eszközön ajánlott, 7 hüvelyk vagy annál nagyobb méretű kijelzőn. Ha bejelöli ezt a lehetőséget, a **Lekérdezés szerkesztése** és a **Mezőlista** menüelemek elérhetővé válnak. A **Lekérdezés szerkesztése** oldalon feltételeket állíthat be a listában megjelenő munkához.. A **Mezőlista** lapon megadhatja, hogy milyen mezők jelenjenek meg a munkalistán. Például csökkentheti a látható mezők számát, hogy a felhasználó számára gyorsabbá tegye a legmegfelelőbb munkatétel kiválasztását. Az **Általános** gyorslapon, a **Rekord oldalanként** mezőben bejelölheti, hogy oldalanként hány munka rekordot szeretne megjeleníteni. Ha a **Felhasználók engedélyezése a munka tranzakciótípusonkénti szűrésére** opció ki van választva, a felhasználó látni fog egy **Munka szűrése** vezérlőelemet a munkalistában, amely lehetővé teszi a tranzakciótípus szerinti szűrést. A felhasználók csak azokat a munkákat fogják látni a munkalistában, amelyekhez rendelkeznek hozzáféréssel. Ellenőrizze, hogy a felhasználóknak van-e engedélyük egy vagy több felhasználó által irányított menüelemekhez, amelyek támogatják a meghatározott munkaosztály-típusokat, amelyekhez hozzá kell, hogy férjenek. Az engedélyek akkor kerülnek ellenőrzésre, amikor egy felhasználó megkísérli a munka végrehajtását a listából.|
-| Átmozgatási rendelés létrehozása azonosítótáblákból | Ez a funkció lehetővé teszi a raktári dolgozók számára, hogy közvetlenül a raktári alkalmazásból hozzanak létre és dolgozzanak fel átmozgatási rendeléseket. A raktári dolgozók azzal kezdik, hogy kiválasztják a célraktárat, majd az alkalmazás segítségével egy vagy több azonosítótáblát beolvasnak. Ha a raktári dolgozó kiválasztja a **Rendelés teljesítése** elemet, akkor egy kötegelt feladat létrehozza a szükséges átmozgatási rendelést és a rendelési sorokat az adott azonosítótáblákhoz regisztrált aktuális készlet alapján. További információért lásd: [Átmozgatási rendelések létrehozása raktári alkalmazásból](create-transfer-order-from-warehouse-app.md).
+| Átmozgatási rendelés létrehozása azonosítótáblákból | Lehetővé teszi a raktári dolgozók számára, hogy közvetlenül a Raktárkezelés mobilalkalmazásból hozzanak létre és dolgozzanak fel átmozgatási rendeléseket. A raktári dolgozók azzal kezdik, hogy kiválasztják a célraktárat, majd az alkalmazás segítségével egy vagy több azonosítótáblát beolvasnak. Ha a raktári dolgozó kiválasztja a **Rendelés teljesítése** elemet, akkor egy kötegelt feladat létrehozza a szükséges átmozgatási rendelést és a rendelési sorokat az adott azonosítótáblákhoz regisztrált aktuális készlet alapján. További információért lásd: [Átmozgatási rendelések létrehozása raktári alkalmazásból](create-transfer-order-from-warehouse-app.md).
 
 
 ## <a name="configure-menu-items-to-create-work-for-another-worker-or-process"></a>Menüelemek konfigurációja munka létrehozásához egy másik dolgozónak vagy folyamatnak

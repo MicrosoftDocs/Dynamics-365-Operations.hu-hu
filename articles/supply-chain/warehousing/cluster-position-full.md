@@ -2,11 +2,9 @@
 title: Fürtpozíció tele
 description: Ez a témakör a Fürtpozíció tele funkcióról nyújt tájékoztatást. Ez a funkció a munkamegszakítási szabályok szigorúbb végrehajtását teszi lehetővé a fürtkitárolás használata esetén, mivel nagyobb hibahatárt tesz lehetővé a tárolók és rakományok térfogatkorlátai tekintetében.
 author: Mirzaab
-manager: tfehr
 ms.date: 08/25/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSClusterProfile
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: b6a7cad070377de58d21a8eb91ee3e1ffaf1c660
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: ad0f8e2fa6b3767c6b5d5549a36d52990f871531
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5233007"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5808846"
 ---
 # <a name="cluster-position-full"></a>Fürtpozíció tele
 
@@ -213,7 +211,7 @@ Két munkaazonosítót kellett létrehozni, amelyek mindegyikében két kitárol
 
 ### <a name="mobile-device-flow-execution--work-confirmation-setup-for-the-product"></a>Mobileszköz-folyamat végrehajtása – A termékre vonatkozó munka-visszaigazolás beállítása
 
-1. Jelentkezzen be az *61*-es raktárban lévő felhasználóként a raktár alkalmazásba.
+1. Jelentkezzen be az *61*-es raktárban lévő felhasználóként a Raktárkezelés mobilalkalmazásba.
 1. Menjen a **Kimenő \> Fürtkitárolás létrehozása** helyre.
 
     Megjelenik a **Feladat: Munka hozzárendelése a fürthöz** lap.

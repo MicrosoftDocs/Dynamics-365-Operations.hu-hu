@@ -2,11 +2,9 @@
 title: Hely és termékdimenzió kombinálása
 description: Ez a témakör a helyi termékdimenziók kombinálásával kapcsolatban tartalmaz tájékoztatást. Ez a helyprofil funkció segít a helykezelés javításában, ha a termékváltozat vagy dimenziókkal rendelkező termékek kerülnek felhasználásra, például a divatiparban. Ez lehetővé teszi annak eldöntését, hogy a konfigurációk, színek, stílusok és méretek egy adott helyprofil esetében kombinálva vannak-e, illetve hogy csak az ilyen dimenziók egyikét vagy ezek kombinációját lehet ugyanazon a helyen elhelyezni.
 author: Mirzaab
-manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLocationProfile, WHSReservationHierarchy, WHSInventTableReservationHierarchy
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: b0309c7a7240d7cac9e5b5724a028f2dc70199e4
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 28f59052a74b6d8b263c7a8a8b6061f2c4b34c89
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5217029"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5831290"
 ---
 # <a name="location-product-dimension-mixing"></a>Hely és termékdimenzió kombinálása
 
@@ -206,9 +204,9 @@ Olyan beszerzési rendelést hoz létre, amelynek három sora van: két sor ugya
 
 1. Válassza a **Mentés** lehetőséget.
 
-### <a name="receive-purchase-order-lines-in-the-warehouse-app"></a>Beszerzési rendelési sorok fogadása a raktározási alkalmazásban
+### <a name="receive-purchase-order-lines-in-the-warehouse-management-mobile-app"></a>Beszerzési rendelési sorok fogadása a Raktárkezelés mobilalkalmazásban
 
-1. Jelentkezzen be a raktározási alkalmazásba olyan felhasználóként, aki a *24*. raktárban engedélyezve van.
+1. Jelentkezzen be a Raktárkezelés mobilalkalmazásba olyan felhasználóként, aki a *24*. raktárban engedélyezve van.
 1. Válassza ki a **Bejövő** menüt.
 1. Válassza ki a **Beszerzési rendelési sor bevételezése** lehetőséget.
 1. Válassza ki a **PONUM** mezőt, majd adja meg a beszerzési rendelés számát.

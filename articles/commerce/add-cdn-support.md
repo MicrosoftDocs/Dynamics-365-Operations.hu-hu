@@ -2,11 +2,9 @@
 title: Tartalomkézbesítési hálózat (CDN) támogatásának hozzáadása
 description: Ez a témakör azt mutatja be, hogyan lehet hozzáadni tartalomkézbesítési hálózatot (CDN) a Microsoft Dynamics 365 Commerce-környezetéhez.
 author: brianshook
-manager: annbe
-ms.date: 07/31/2020
+ms.date: 03/17/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: d653b072eca134c765a5db5659b228648fc13c4a
-ms.sourcegitcommit: 3fe4d9a33447aa8a62d704fbbf18aeb9cb667baa
+ms.openlocfilehash: a56f675b1fb43160625101a067c74e9fcf4f714a
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "5582719"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5797839"
 ---
 # <a name="add-support-for-a-content-delivery-network-cdn"></a>Tartalomkézbesítési hálózat (CDN) támogatásának hozzáadása
 
@@ -41,11 +39,7 @@ Ezenkívül a Commerce programból származó *statikák* (JavaScript vagy egym�
 
 ## <a name="set-up-ssl"></a>SSL beállítása
 
-Az SSL beállításának és a statikák gyorsítótárazásának biztosításához konfigurálnia kell a CDN-t, hogy az a Commerce által az Ön környezetéhez generált állomásnévhez legyen társítva. Csak a statikák esetében a következő mintákat is gyorsítótárazni kell: 
-
-/\_msdyn365/\_scnr/\*
-
-Miután létrehozta a Commerce-környezetet a megadott egyéni tartománnyal, vagy miután egy szolgáltatáskéréssel megadta az egyéni tartományt a környezete számára, irányítsa az egyéni tartományt a Commerce által generált állomásnévre vagy végpontra.
+Miután létrehozta a Commerce-környezetet a megadott egyéni tartománnyal, vagy miután egy szolgáltatáskéréssel megadta az egyéni tartományt a környezete számára, a Commerce előkészítési csapatával együttműködve meg kell terveznie a DNS változásait.
 
 A korábban említettek szerint a létrehozott állomásnév vagy végpont csak a \*.commerce.dynamics.com esetében támogat SSL-tanúsítványt. Nem támogatja az SSL-t egyéni tartományok esetében.
 
@@ -62,7 +56,7 @@ A CDN beállítási folyamata az alábbi általános lépésekből áll:
 
 1. Adjon hozzá egy előtéri állomást.
 1. Konfiguráljon egy háttérkészletet.
-1. Állítson be szabályokat az útvonaltervezéshez és gyorsítótárazáshoz.
+1. Állítsa be az útvonaltervezés szabályait.
 
 ### <a name="add-a-front-end-host"></a>Adjon hozzá egy előtéri állomást
 
@@ -74,8 +68,9 @@ Az Azure Front Door Service beállításával kapcsolatos információkat itt ta
 
 Kövesse az alábbi lépéseket háttérkészlet konfigurálásához az Azure Front Door Service szolgáltatásban.
 
-1. Adja hozzá az **&lt;ecom-bérlő-neve&gt;.commerce.dynamics.com** elemet egy háttérkészlethez egy egyéni állomásként, amelynek üres a háttérállomás fejléce.
+1. Adja hozzá az **&lt;ecom-tenant-name&gt;.commerce.dynamics.com** elemet egy háttérkészlethez egyéni állomásként, amelynek a háttérállomás fejléce ugyanaz, az **&lt;ecom-tenant-name&gt;.commerce.dynamics.com** esetében.
 1. A **Terheléselosztás** alatt hagyja meg az alapértelmezett értékeket.
+1. Tiltsa le a háttérkészlet állapotellenőrzését.
 
 A következő ábra a **Háttéralkalmazás hozzáadása** párbeszédpanelt mutatja az Azure Front Door Service szolgáltatásban a megadott háttéralkalmazás állomásnevét.
 
@@ -84,6 +79,10 @@ A következő ábra a **Háttéralkalmazás hozzáadása** párbeszédpanelt mut
 A következő ábra a **Háttérkészlet hozzáadása** párbeszédpanelt mutatja az Azure Front Door Service szolgáltatásban az alapértelmezett terheléselosztási értékeket.
 
 ![Háttérkészlet párbeszédpanel hozzáadása folytatva](./media/CDN_BackendPool_2.png)
+
+> [!NOTE]
+> Győződjön meg róla, hogy letiltja az **Állapotellenőrzések** funkciót a saját Azure Front Door Service beállításakor a Commerce számára.
+
 
 ### <a name="set-up-rules-in-azure-front-door-service"></a>Szabályok beállítása az Azure Front Door Service szolgáltatásban
 
@@ -100,24 +99,6 @@ Ha be szeretne állítani egy útvonaltervezési szabályt az Azure Front Door S
 1. Állítsa az **URL újraírása** beállítást **Letiltva** értékre.
 1. Állítsa a **Gyorsítótárazás** beállítást **Letiltva** értékre.
 
-Ha be szeretne állítani egy gyorsítótárazási szabályt az Azure Front Door Service szolgáltatásban, hajtsa végre az alábbi lépéseket.
-
-1. Gyorsítótárazási szabály hozzáadása.
-1. A **Név** mezőbe írja be a **statikák** szót.
-1. Az **Elfogadott protokoll** mezőben válassza a **HTTP és HTTPS** lehetőséget.
-1. Az **Előtéri állomások** mezőbe írja be a **dynamics-ecom-bérlő-neve.azurefd.net** kifejezést.
-1. Az **Egyeztetendő minták** alatt a felső mezőbe írja be a következőt: **/\_msdyn365/\_scnr/\***.
-1. Az **Útvonal részletei** adja meg az **Útvonal típusa** beállítás számára a **Továbbítás** értéket.
-1. Válassza ki a **Háttérkészlet** mezőben az **ecom-backend** elemet.
-1. A **Továbbítási protokollok** mezőcsoportban válassza ki az **Egyeztetési kérelem** beállítást.
-1. Állítsa az **URL újraírása** beállítást **Letiltva** értékre.
-1. Állítsa a **Gyorsítótárazás** beállítást **Letiltva** értékre.
-1. A **Lekérdezési karakterlánc gyorsítótárazási viselkedése** mezőben válassza a **Minden egyedi URL gyorsítótárazása** lehetőséget.
-1. A **Dinamikus tömörítés** mezőcsoportban válassza az **Engedélyezve** beállítást.
-
-A következő ábra a **Szabály hozzáadása** párbeszédpanelt mutatja az Azure Front Door Service szolgáltatásban.
-
-![Szabály hozzáadása párbeszédpanel](./media/CDN_CachingRule.png)
 
 > [!WARNING]
 > Ha a használni kívánt tartomány már aktív és élő, hozzon létre egy támogatási jegyet az [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com/) **Támogatás** mozaikján, és kérjen segítséget a következő lépésekhez. További információért tekintse át a [Támogatás igénylése a Finance and Operations alkalmazásokhoz vagy a Lifecycle Services (LCS)](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md) szolgáltatáshoz.

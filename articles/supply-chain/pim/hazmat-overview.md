@@ -2,11 +2,9 @@
 title: Veszélyes anyagok áttekintése
 description: Ez a témakör áttekintést nyújt azokról a szolgáltatásokról, amelyek a termékadatok kezelése és a raktárkezelés során a veszélyes anyagok kezelésével és feldolgozásával kapcsolatosak.
 author: dasani-madipalli
-manager: tfehr
 ms.date: 06/10/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
@@ -14,17 +12,16 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 4ff997214f80d97f6e558d32fbf66663cbc84143
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 15edf61cba03a57b9b4d2c939228fd064b797942
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5231888"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5829378"
 ---
 # <a name="hazardous-materials-overview"></a>Veszélyes anyagok áttekintése
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 A szállítási és szállítmányozási előírásoknak való megfelelés érdekében azokat a szervezeteket, amelyeknek a veszélyes áruknak minősülő anyagokat szállítanak, további dokumentációt kell készíteniük a szállítmányokhoz. A veszélyes anyagok funkcióval a vevők a kiadott cikkekre vonatkozó adatokat tárolhatnak. Ezt az információt ezután felhasználhatja a szállítási dokumentáció előkészítésére. A veszélyes árukat szállító szervezetnek rendelkezniük kell saját folyamatokkal és eljárásokkal a szállítási folyamat kezeléséhez. A Microsoft Dynamics 365 Supply Chain Management csak egy eszköz, amely segítséget nyújt a szükséges dokumentumok előállításában.
 
