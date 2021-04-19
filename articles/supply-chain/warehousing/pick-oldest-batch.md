@@ -2,11 +2,9 @@
 title: A mobileszköz legrégebbi kötegének kitárolása
 description: Ez a témakör leírja, hogyan állíthatja be és alkalmazhatja a mobileszköz legrégebbi kötegének kitárolási beállításait.
 author: Mirzaab
-manager: tfehr
 ms.date: 05/26/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSRFMenuItem
 audience: Application User
@@ -16,30 +14,30 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a8e0deadaeb403e1f645309a141c5678fbe3f716
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: eb0012689cc814daaf8f685c81d4630164b6e0c5
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5232887"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5810438"
 ---
-# <a name="pick-oldest-batch-on-a-mobile-device"></a><span data-ttu-id="3a4a7-103">A mobileszköz legrégebbi kötegének kitárolása</span><span class="sxs-lookup"><span data-stu-id="3a4a7-103">Pick oldest batch on a mobile device</span></span>
+# <a name="pick-oldest-batch-on-a-mobile-device"></a><span data-ttu-id="cc59c-103">A mobileszköz legrégebbi kötegének kitárolása</span><span class="sxs-lookup"><span data-stu-id="cc59c-103">Pick oldest batch on a mobile device</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="3a4a7-104">A **Legrégebbi köteg kitárolása** konfigurációjához a mobileszköz menüjén keresztül férhet hozzá, amely lehetővé teszi, hogy kötelezze vagy figyelmeztesse a raktári dolgozókat arra, hogy tárolják ki az aktuális helyük legrégebbi kötegét.</span><span class="sxs-lookup"><span data-stu-id="3a4a7-104">You can access the configuration **Pick oldest batch** via a mobile device menu and it allows you to force or warn warehouse workers to pick the oldest batch in their current location.</span></span>  
+<span data-ttu-id="cc59c-104">A **Legrégebbi köteg kitárolása** konfigurációjához a mobileszköz menüjén keresztül férhet hozzá, amely lehetővé teszi, hogy kötelezze vagy figyelmeztesse a raktári dolgozókat arra, hogy tárolják ki az aktuális helyük legrégebbi kötegét.</span><span class="sxs-lookup"><span data-stu-id="cc59c-104">You can access the configuration **Pick oldest batch** via a mobile device menu and it allows you to force or warn warehouse workers to pick the oldest batch in their current location.</span></span>  
 
-## <a name="where-it-applies"></a><span data-ttu-id="3a4a7-105">Alkalmazási kör</span><span class="sxs-lookup"><span data-stu-id="3a4a7-105">Where it applies</span></span>
-<span data-ttu-id="3a4a7-106">A Legrégebbi köteg kitárolásának konfigurációja a mobileszköz menüelemeiben történik, és a kitárolási köteg alatti elemere van hatással.</span><span class="sxs-lookup"><span data-stu-id="3a4a7-106">Pick oldest batch is configured on mobile device menu items and effects the pick for batch below items.</span></span>
+## <a name="where-it-applies"></a><span data-ttu-id="cc59c-105">Alkalmazási kör</span><span class="sxs-lookup"><span data-stu-id="cc59c-105">Where it applies</span></span>
+<span data-ttu-id="cc59c-106">A Legrégebbi köteg kitárolásának konfigurációja a mobileszköz menüelemeiben történik, és a kitárolási köteg alatti elemere van hatással.</span><span class="sxs-lookup"><span data-stu-id="cc59c-106">Pick oldest batch is configured on mobile device menu items and effects the pick for batch below items.</span></span>
 
-## <a name="how-to-set-up-the-configuration-for-pick-oldest-batch"></a><span data-ttu-id="3a4a7-107">A Legrégebbi köteg kitárolása konfigurációjának beállítása</span><span class="sxs-lookup"><span data-stu-id="3a4a7-107">How to set up the configuration for Pick oldest batch</span></span> 
-<span data-ttu-id="3a4a7-108">Folyamatban lévő munkát használó beállítású cikkeknél a **Legrégebbi köteg kitárolása** lehetséges beállításai a **Nincs**, a **Figyelmeztetés** vagy a **Kényszerítés** a mobileszköz menüjében.</span><span class="sxs-lookup"><span data-stu-id="3a4a7-108">For items that are set to use existing work, **Pick oldest batch** can be set to **None**, **Warn**, or **Force** from a mobile device menu.</span></span>
+## <a name="how-to-set-up-the-configuration-for-pick-oldest-batch"></a><span data-ttu-id="cc59c-107">A Legrégebbi köteg kitárolása konfigurációjának beállítása</span><span class="sxs-lookup"><span data-stu-id="cc59c-107">How to set up the configuration for Pick oldest batch</span></span> 
+<span data-ttu-id="cc59c-108">Folyamatban lévő munkát használó beállítású cikkeknél a **Legrégebbi köteg kitárolása** lehetséges beállításai a **Nincs**, a **Figyelmeztetés** vagy a **Kényszerítés** a mobileszköz menüjében.</span><span class="sxs-lookup"><span data-stu-id="cc59c-108">For items that are set to use existing work, **Pick oldest batch** can be set to **None**, **Warn**, or **Force** from a mobile device menu.</span></span>
 
-<span data-ttu-id="3a4a7-109">**Nincs**: A dolgozók nem kapnak üzeneteket, és bármelyik köteget kitárolhatják az aktuális helyükön.</span><span class="sxs-lookup"><span data-stu-id="3a4a7-109">**None**: Workers will not receive any messages and they will be allowed to pick any batch in their location.</span></span>
+<span data-ttu-id="cc59c-109">**Nincs**: A dolgozók nem kapnak üzeneteket, és bármelyik köteget kitárolhatják az aktuális helyükön.</span><span class="sxs-lookup"><span data-stu-id="cc59c-109">**None**: Workers will not receive any messages and they will be allowed to pick any batch in their location.</span></span>
 
-<span data-ttu-id="3a4a7-110">**Figyelmeztetés** és **Kényszerítés**: Amikor a dolgozó kijelöl egy köteget, a kötegvezérlő fölött egy köteglista jelenik meg, amely a legrégebbi lejárati dátummal tartalmazó kötegeket tartalmazza.</span><span class="sxs-lookup"><span data-stu-id="3a4a7-110">**Warn** and **Force**:  A list of the batch(es) with the oldest expiration date will be displayed above the batch control when the worker selects a batch.</span></span> <span data-ttu-id="3a4a7-111">Az azonosítótáblával szabályozott a hely esetén az azonosítótábla-vezérlő fölött a legrégebbi köteget tartalmazó azonosítótáblák listája jelenik meg.</span><span class="sxs-lookup"><span data-stu-id="3a4a7-111">If the location is license plate controlled, a list of license plates that have the oldest batch will be displayed above the license plate control.</span></span> 
--   <span data-ttu-id="3a4a7-112">**Figyelmeztetés**: Ha egy dolgozó olyan azonosítótáblát vagy köteget választ ki, amelyik nem szerepel a listán, a rendszer letiltja a vezérlőt, és egy figyelmeztetés fog megjelenni, hogy létezik egy korábbi kiválasztható köteg.</span><span class="sxs-lookup"><span data-stu-id="3a4a7-112">**Warn**: If a worker chooses a license plate or batch that is not on the shown list, the control will be blanked and a warning will be shown that there is an older batch to select.</span></span> <span data-ttu-id="3a4a7-113">Ha folytatni szeretné a munkát, a dolgozó újból kiválaszthatja ugyanazt az azonosítótáblát vagy köteget.</span><span class="sxs-lookup"><span data-stu-id="3a4a7-113">To be allowed to continue the work, the worker can select the same license plate or batch again.</span></span>  
--   <span data-ttu-id="3a4a7-114">**Kényszerítés**: A dolgozók továbbra is megkapják azt az üzenetet, hogy van egy korábbi kitárolandó köteg.</span><span class="sxs-lookup"><span data-stu-id="3a4a7-114">**Force**: Workers will continue to receive the message that there is an older batch to pick.</span></span>
+<span data-ttu-id="cc59c-110">**Figyelmeztetés** és **Kényszerítés**: Amikor a dolgozó kijelöl egy köteget, a kötegvezérlő fölött egy köteglista jelenik meg, amely a legrégebbi lejárati dátummal tartalmazó kötegeket tartalmazza.</span><span class="sxs-lookup"><span data-stu-id="cc59c-110">**Warn** and **Force**:  A list of the batch(es) with the oldest expiration date will be displayed above the batch control when the worker selects a batch.</span></span> <span data-ttu-id="cc59c-111">Az azonosítótáblával szabályozott a hely esetén az azonosítótábla-vezérlő fölött a legrégebbi köteget tartalmazó azonosítótáblák listája jelenik meg.</span><span class="sxs-lookup"><span data-stu-id="cc59c-111">If the location is license plate controlled, a list of license plates that have the oldest batch will be displayed above the license plate control.</span></span> 
+-   <span data-ttu-id="cc59c-112">**Figyelmeztetés**: Ha egy dolgozó olyan azonosítótáblát vagy köteget választ ki, amelyik nem szerepel a listán, a rendszer letiltja a vezérlőt, és egy figyelmeztetés fog megjelenni, hogy létezik egy korábbi kiválasztható köteg.</span><span class="sxs-lookup"><span data-stu-id="cc59c-112">**Warn**: If a worker chooses a license plate or batch that is not on the shown list, the control will be blanked and a warning will be shown that there is an older batch to select.</span></span> <span data-ttu-id="cc59c-113">Ha folytatni szeretné a munkát, a dolgozó újból kiválaszthatja ugyanazt az azonosítótáblát vagy köteget.</span><span class="sxs-lookup"><span data-stu-id="cc59c-113">To be allowed to continue the work, the worker can select the same license plate or batch again.</span></span>  
+-   <span data-ttu-id="cc59c-114">**Kényszerítés**: A dolgozók továbbra is megkapják azt az üzenetet, hogy van egy korábbi kitárolandó köteg.</span><span class="sxs-lookup"><span data-stu-id="cc59c-114">**Force**: Workers will continue to receive the message that there is an older batch to pick.</span></span>
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

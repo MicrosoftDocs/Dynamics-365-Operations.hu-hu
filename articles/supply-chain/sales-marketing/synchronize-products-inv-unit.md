@@ -2,11 +2,9 @@
 title: Készletegységgel rendelkező termékek szinkronizálása a Supply Chain Management alkalmazásból a Field Service alkalmazásba
 description: Ez a témakör bemutatja a sablonokat és a mögöttes feladatot, amelyek a Dynamics 365 Supply Chain Management raktáregységeinek a Dynamics 365 Field Service szolgáltatásba történő szinkronizálására használatosak.
 author: ChristianRytt
-manager: tfehr
 ms.date: 03/13/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
@@ -18,50 +16,50 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 87daaa3d2b516581e9925fe6b769683942893ff6
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 0ecb03d7d826fc6d79f1df800da22dc913177ee4
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5206919"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5824870"
 ---
-# <a name="synchronize-products-with-inventory-unit-from-supply-chain-management-to-field-service"></a><span data-ttu-id="f8cf3-103">Készletegységgel rendelkező termékek szinkronizálása a Supply Chain Management alkalmazásból a Field Service alkalmazásba</span><span class="sxs-lookup"><span data-stu-id="f8cf3-103">Synchronize products with inventory unit from Supply Chain Management to Field Service</span></span>
+# <a name="synchronize-products-with-inventory-unit-from-supply-chain-management-to-field-service"></a><span data-ttu-id="cd409-103">Készletegységgel rendelkező termékek szinkronizálása a Supply Chain Management alkalmazásból a Field Service alkalmazásba</span><span class="sxs-lookup"><span data-stu-id="cd409-103">Synchronize products with inventory unit from Supply Chain Management to Field Service</span></span>
 
 [!include[banner](../includes/banner.md)]
 
-<span data-ttu-id="f8cf3-104">Ez a témakör bemutatja a sablonokat és a mögöttes feladatot, amelyek a Dynamics 365 Supply Chain Management raktáregységeinek a Dynamics 365 Field Service szolgáltatásba történő szinkronizálására használatosak.</span><span class="sxs-lookup"><span data-stu-id="f8cf3-104">This topic discusses the templates and underlying task that are used to synchronize products with inventory unit from Dynamics 365 Supply Chain Management to Dynamics 365 Field Service.</span></span>
+<span data-ttu-id="cd409-104">Ez a témakör bemutatja a sablonokat és a mögöttes feladatot, amelyek a Dynamics 365 Supply Chain Management raktáregységeinek a Dynamics 365 Field Service szolgáltatásba történő szinkronizálására használatosak.</span><span class="sxs-lookup"><span data-stu-id="cd409-104">This topic discusses the templates and underlying task that are used to synchronize products with inventory unit from Dynamics 365 Supply Chain Management to Dynamics 365 Field Service.</span></span>
 
-<span data-ttu-id="f8cf3-105">[![Üzleti folyamatok szinkronizálása a Supply Chain Management és a Field Service között](./media/FSProductsOW.png)](./media/FSProductsOW.png)</span><span class="sxs-lookup"><span data-stu-id="f8cf3-105">[![Synchronization of business processes between Supply Chain Management and Field Service](./media/FSProductsOW.png)](./media/FSProductsOW.png)</span></span>
+<span data-ttu-id="cd409-105">[![Üzleti folyamatok szinkronizálása a Supply Chain Management és a Field Service között](./media/FSProductsOW.png)](./media/FSProductsOW.png)</span><span class="sxs-lookup"><span data-stu-id="cd409-105">[![Synchronization of business processes between Supply Chain Management and Field Service](./media/FSProductsOW.png)](./media/FSProductsOW.png)</span></span>
 
-<span data-ttu-id="f8cf3-106">A használt **Field Service termékek készletegységgel (Supply Chain Management – Field Service)** sablon a **Field Service termékek (Supply Chain Management – Field Serivce)** sablonon alapul.</span><span class="sxs-lookup"><span data-stu-id="f8cf3-106">The used **Field Service Products with Inventory unit (Supply Chain Management to Field Service)** template is based on the **Field Service Products (Supply Chain Management to Field Service)** template.</span></span> <span data-ttu-id="f8cf3-107">További információért, lásd: [Termékek szinkronizálása a Supply Chain Management szolgáltatásban a Field Service szolgáltatás termékeivel](field-service-product.md).</span><span class="sxs-lookup"><span data-stu-id="f8cf3-107">For more information, see [Synchronize products in Supply Chain Management to products in Field Service](field-service-product.md).</span></span>
+<span data-ttu-id="cd409-106">A használt **Field Service termékek készletegységgel (Supply Chain Management – Field Service)** sablon a **Field Service termékek (Supply Chain Management – Field Serivce)** sablonon alapul.</span><span class="sxs-lookup"><span data-stu-id="cd409-106">The used **Field Service Products with Inventory unit (Supply Chain Management to Field Service)** template is based on the **Field Service Products (Supply Chain Management to Field Service)** template.</span></span> <span data-ttu-id="cd409-107">További információért, lásd: [Termékek szinkronizálása a Supply Chain Management szolgáltatásban a Field Service szolgáltatás termékeivel](field-service-product.md).</span><span class="sxs-lookup"><span data-stu-id="cd409-107">For more information, see [Synchronize products in Supply Chain Management to products in Field Service](field-service-product.md).</span></span>
 
-<span data-ttu-id="f8cf3-108">Ez a témakör csak a két sablonok eltéréseit írja le:</span><span class="sxs-lookup"><span data-stu-id="f8cf3-108">This topic only describes the differences between the two templates:</span></span> 
-- <span data-ttu-id="f8cf3-109">**Készletegységgel rendelkező Field Service-termékek (Supply Chain Management alkalmazásból a Sales alkalmazásba)**</span><span class="sxs-lookup"><span data-stu-id="f8cf3-109">**Field Service Products with Inventory unit (Supply Chain Management to Sales)**</span></span>
-- <span data-ttu-id="f8cf3-110">**Field Service-termékek (Supply Chain Management és Field Service között)**</span><span class="sxs-lookup"><span data-stu-id="f8cf3-110">**Field Service Products (Supply Chain Management to Field Service)**</span></span> 
+<span data-ttu-id="cd409-108">Ez a témakör csak a két sablonok eltéréseit írja le:</span><span class="sxs-lookup"><span data-stu-id="cd409-108">This topic only describes the differences between the two templates:</span></span> 
+- <span data-ttu-id="cd409-109">**Készletegységgel rendelkező Field Service-termékek (Supply Chain Management alkalmazásból a Sales alkalmazásba)**</span><span class="sxs-lookup"><span data-stu-id="cd409-109">**Field Service Products with Inventory unit (Supply Chain Management to Sales)**</span></span>
+- <span data-ttu-id="cd409-110">**Field Service-termékek (Supply Chain Management és Field Service között)**</span><span class="sxs-lookup"><span data-stu-id="cd409-110">**Field Service Products (Supply Chain Management to Field Service)**</span></span> 
 
-## <a name="templates-and-tasks"></a><span data-ttu-id="f8cf3-111">Sablonok és feladatok</span><span class="sxs-lookup"><span data-stu-id="f8cf3-111">Templates and tasks</span></span>
+## <a name="templates-and-tasks"></a><span data-ttu-id="cd409-111">Sablonok és feladatok</span><span class="sxs-lookup"><span data-stu-id="cd409-111">Templates and tasks</span></span>
 
-<span data-ttu-id="f8cf3-112">**A sablon neve az adatintegrációban:**</span><span class="sxs-lookup"><span data-stu-id="f8cf3-112">**Name of the template in Data integration:**</span></span>
+<span data-ttu-id="cd409-112">**A sablon neve az adatintegrációban:**</span><span class="sxs-lookup"><span data-stu-id="cd409-112">**Name of the template in Data integration:**</span></span>
 
-- <span data-ttu-id="f8cf3-113">Készletegységgel rendelkező Field Service-termékek (Supply Chain Management alkalmazásból a Sales alkalmazásba)</span><span class="sxs-lookup"><span data-stu-id="f8cf3-113">Field Service Products with Inventory unit (Supply Chain Management to Sales)</span></span>
+- <span data-ttu-id="cd409-113">Készletegységgel rendelkező Field Service-termékek (Supply Chain Management alkalmazásból a Sales alkalmazásba)</span><span class="sxs-lookup"><span data-stu-id="cd409-113">Field Service Products with Inventory unit (Supply Chain Management to Sales)</span></span>
 
-<span data-ttu-id="f8cf3-114">**A feladat neve az adatintegrációs projektben:**</span><span class="sxs-lookup"><span data-stu-id="f8cf3-114">**Name of the task in the Data integration project:**</span></span>
+<span data-ttu-id="cd409-114">**A feladat neve az adatintegrációs projektben:**</span><span class="sxs-lookup"><span data-stu-id="cd409-114">**Name of the task in the Data integration project:**</span></span>
 
-- <span data-ttu-id="f8cf3-115">Termékek</span><span class="sxs-lookup"><span data-stu-id="f8cf3-115">Products</span></span>
+- <span data-ttu-id="cd409-115">Termékek</span><span class="sxs-lookup"><span data-stu-id="cd409-115">Products</span></span>
 
-<span data-ttu-id="f8cf3-116">A **Készletegységgel rendelkező Field Service termékek (Supply Chain Management to Field Service)** sablon egy leképezést tartalmaz, amely nem szerepel a **Field Service termékek (Supply Chain Management – Field Serivce)** sablonban.</span><span class="sxs-lookup"><span data-stu-id="f8cf3-116">The **Field Service Products with Inventory unit (Supply Chain Management to Field Service)** template includes one mapping that isn't included in the **Field Service Products (Supply Chain Management to Field Service)** template.</span></span> <span data-ttu-id="f8cf3-117">Ez a hozzárendelés gondoskodik arról, hogy szerepeljen a készletszint-szinkronizáláshoz szükséges készletegység.</span><span class="sxs-lookup"><span data-stu-id="f8cf3-117">This mapping ensures that the Inventory unit needed for inventory level synchronization is included.</span></span>
+<span data-ttu-id="cd409-116">A **Készletegységgel rendelkező Field Service termékek (Supply Chain Management to Field Service)** sablon egy leképezést tartalmaz, amely nem szerepel a **Field Service termékek (Supply Chain Management – Field Serivce)** sablonban.</span><span class="sxs-lookup"><span data-stu-id="cd409-116">The **Field Service Products with Inventory unit (Supply Chain Management to Field Service)** template includes one mapping that isn't included in the **Field Service Products (Supply Chain Management to Field Service)** template.</span></span> <span data-ttu-id="cd409-117">Ez a hozzárendelés gondoskodik arról, hogy szerepeljen a készletszint-szinkronizáláshoz szükséges készletegység.</span><span class="sxs-lookup"><span data-stu-id="cd409-117">This mapping ensures that the Inventory unit needed for inventory level synchronization is included.</span></span>
 
 ```plaintext
 INVENTORYUNITSYMBOL [INVENTORYUNITSYMBOL]         Fn        msdynce_inventoryunit.name [Inventory Unit(Name)] 
 ```
 
-## <a name="template-mapping-in-data-integration"></a><span data-ttu-id="f8cf3-118">Sablonleképezés az adatintegrátorban</span><span class="sxs-lookup"><span data-stu-id="f8cf3-118">Template mapping in Data integration</span></span>
+## <a name="template-mapping-in-data-integration"></a><span data-ttu-id="cd409-118">Sablonleképezés az adatintegrátorban</span><span class="sxs-lookup"><span data-stu-id="cd409-118">Template mapping in Data integration</span></span>
 
-<span data-ttu-id="f8cf3-119">Az alábbi ábrákon látható a sablonleképezés az Adatintegrálásban.</span><span class="sxs-lookup"><span data-stu-id="f8cf3-119">The following illustrations show the template mapping in Data integration.</span></span>
+<span data-ttu-id="cd409-119">Az alábbi ábrákon látható a sablonleképezés az Adatintegrálásban.</span><span class="sxs-lookup"><span data-stu-id="cd409-119">The following illustrations show the template mapping in Data integration.</span></span>
 
-### <a name="field-service-products-with-inventory-unit-supply-chain-management-to-field-service-products"></a><span data-ttu-id="f8cf3-120">Készletegységgel rendelkező Field Service termékek (Supply Chain Management – Field Service): termékek</span><span class="sxs-lookup"><span data-stu-id="f8cf3-120">Field Service Products with Inventory unit (Supply Chain Management to Field Service): Products</span></span>
+### <a name="field-service-products-with-inventory-unit-supply-chain-management-to-field-service-products"></a><span data-ttu-id="cd409-120">Készletegységgel rendelkező Field Service termékek (Supply Chain Management – Field Service): termékek</span><span class="sxs-lookup"><span data-stu-id="cd409-120">Field Service Products with Inventory unit (Supply Chain Management to Field Service): Products</span></span>
 
-<span data-ttu-id="f8cf3-121">[![Sablonleképezés az adatintegrátorban](./media/FSProduct1.png)](./media/FSProduct1.png)</span><span class="sxs-lookup"><span data-stu-id="f8cf3-121">[![Template mapping in Data integration](./media/FSProduct1.png)](./media/FSProduct1.png)</span></span>
+<span data-ttu-id="cd409-121">[![Sablonleképezés az adatintegrátorban](./media/FSProduct1.png)](./media/FSProduct1.png)</span><span class="sxs-lookup"><span data-stu-id="cd409-121">[![Template mapping in Data integration](./media/FSProduct1.png)](./media/FSProduct1.png)</span></span>
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

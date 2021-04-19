@@ -2,11 +2,9 @@
 title: Indexelt eladási árak
 description: Amikor előfizetési díjat hoz létre, az árindexet állítja be egy előfizetés eladási árához.
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMASubscriptionCreateDialog
 audience: Application User
@@ -17,27 +15,27 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 540946a50e86e2e8933a9e045d911eac87b3270c
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 8eebb6aa044a24efc549f4be0b668e60e78c7954
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5247337"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5841335"
 ---
-# <a name="indexed-sales-prices"></a><span data-ttu-id="aa51b-103">Indexelt eladási árak</span><span class="sxs-lookup"><span data-stu-id="aa51b-103">Indexed sales prices</span></span>  
+# <a name="indexed-sales-prices"></a><span data-ttu-id="177b9-103">Indexelt eladási árak</span><span class="sxs-lookup"><span data-stu-id="177b9-103">Indexed sales prices</span></span>  
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="aa51b-104">Amikor előfizetési díjat hoz létre, az árindexet állítja be egy előfizetés eladási árához.</span><span class="sxs-lookup"><span data-stu-id="aa51b-104">You set up the index for a subscription sales price when you create a subscription fee.</span></span>
+<span data-ttu-id="177b9-104">Amikor előfizetési díjat hoz létre, az árindexet állítja be egy előfizetés eladási árához.</span><span class="sxs-lookup"><span data-stu-id="177b9-104">You set up the index for a subscription sales price when you create a subscription fee.</span></span>
 
-<span data-ttu-id="aa51b-105">Az **Előfizetési díj létrehozása** képernyőn az **Árképzés beolvasása innen** mezőt állítsa **Indexelt alapár** értékre, majd szorozza meg az alapárat a **Százalékos árváltozás** mezőben szereplő százalékos értékkel ahhoz, hogy megkapja az előfizetési tranzakció eladási árát.</span><span class="sxs-lookup"><span data-stu-id="aa51b-105">In the **Create subscription fee** form, set the **Get pricing from** field to **Indexed base price**, and then multiply the base price by the percentage in the **Percent price change** field to get the sales price of the subscription transaction.</span></span>
+<span data-ttu-id="177b9-105">Az **Előfizetési díj létrehozása** képernyőn az **Árképzés beolvasása innen** mezőt állítsa **Indexelt alapár** értékre, majd szorozza meg az alapárat a **Százalékos árváltozás** mezőben szereplő százalékos értékkel ahhoz, hogy megkapja az előfizetési tranzakció eladási árát.</span><span class="sxs-lookup"><span data-stu-id="177b9-105">In the **Create subscription fee** form, set the **Get pricing from** field to **Indexed base price**, and then multiply the base price by the percentage in the **Percent price change** field to get the sales price of the subscription transaction.</span></span>
 
-<span data-ttu-id="aa51b-106">Ha például az alapár 1000 euró, az index pedig 110, az eladási ár 1100 euró lesz.</span><span class="sxs-lookup"><span data-stu-id="aa51b-106">For example, if the base price is EUR 1,000, and the index is 110, the sales price is EUR 1,100.</span></span>
+<span data-ttu-id="177b9-106">Ha például az alapár 1000 euró, az index pedig 110, az eladási ár 1100 euró lesz.</span><span class="sxs-lookup"><span data-stu-id="177b9-106">For example, if the base price is EUR 1,000, and the index is 110, the sales price is EUR 1,100.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="aa51b-107">Lásd még</span><span class="sxs-lookup"><span data-stu-id="aa51b-107">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="177b9-107">Lásd még</span><span class="sxs-lookup"><span data-stu-id="177b9-107">See also</span></span>
 
-[<span data-ttu-id="aa51b-108">Előfizetési díj tranzakcióinak létrehozása</span><span class="sxs-lookup"><span data-stu-id="aa51b-108">Create subscription fee transactions</span></span>](create-subscription-fee-transactions.md)
+[<span data-ttu-id="177b9-108">Előfizetési díj tranzakcióinak létrehozása</span><span class="sxs-lookup"><span data-stu-id="177b9-108">Create subscription fee transactions</span></span>](create-subscription-fee-transactions.md)
 
   
 

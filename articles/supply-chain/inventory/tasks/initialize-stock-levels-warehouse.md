@@ -2,11 +2,9 @@
 title: Készletszintek inicializálása a raktárban
 description: Ez az eljárás bemutatja, hogyan frissítheti kézileg az aktuális készletet a Készletmozgási napló segítségével.
 author: perlynne
-manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventJournalMovement, InventJournalCreate, InventItemIdLookupSimple, InventLocationIdLookup, WMSLocationIdLookup
 audience: Application User
@@ -16,48 +14,48 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2c1e5ca96919acde7e850292a73ebd00185f1f7a
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 0746b799c701c569f0ae5c657ac3302ab6626287
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5244474"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5823481"
 ---
-# <a name="initialize-stock-levels-in-the-warehouse"></a><span data-ttu-id="fb9c0-103">Készletszintek inicializálása a raktárban</span><span class="sxs-lookup"><span data-stu-id="fb9c0-103">Initialize stock levels in the warehouse</span></span>
+# <a name="initialize-stock-levels-in-the-warehouse"></a><span data-ttu-id="db5c3-103">Készletszintek inicializálása a raktárban</span><span class="sxs-lookup"><span data-stu-id="db5c3-103">Initialize stock levels in the warehouse</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="fb9c0-104">Ez az eljárás bemutatja, hogyan frissítheti kézileg az aktuális készletet a Készletmozgási napló segítségével.</span><span class="sxs-lookup"><span data-stu-id="fb9c0-104">This procedure shows you how to get the on-hand inventory updated manually using an Inventory movement journal.</span></span> <span data-ttu-id="fb9c0-105">(Az aktuális készlet frissítése az adatentitásokban található tranzakciók importálásával is történhet.) Ezt az útmutatót az USMF bemutatócégen is lefuttathatja, ahol minden előfeltétel elérhető, például a naplónevek, cikkbeállítások, feladási profilok és számlák.</span><span class="sxs-lookup"><span data-stu-id="fb9c0-105">(It's also possible to update on-hand inventory by importing transactions in data entities.) You can run this guide in demo data company USMF where all the prerequisites like journal name, item setup, posting profiles, and accounts are available.</span></span> <span data-ttu-id="fb9c0-106">Az útmutató a használt cikkre és dimenziókra vonatkozóan adott értékeket javasol.</span><span class="sxs-lookup"><span data-stu-id="fb9c0-106">The guide suggests specific values for the item and dimensions that are used.</span></span> <span data-ttu-id="fb9c0-107">Ha egy másik elemet választ, lehetséges, hogy más dimenziók értékeit kell megadnia.</span><span class="sxs-lookup"><span data-stu-id="fb9c0-107">If you choose a different item, you may need to enter values for different dimensions.</span></span>
+<span data-ttu-id="db5c3-104">Ez az eljárás bemutatja, hogyan frissítheti kézileg az aktuális készletet a Készletmozgási napló segítségével.</span><span class="sxs-lookup"><span data-stu-id="db5c3-104">This procedure shows you how to get the on-hand inventory updated manually using an Inventory movement journal.</span></span> <span data-ttu-id="db5c3-105">(Az aktuális készlet frissítése az adatentitásokban található tranzakciók importálásával is történhet.) Ezt az útmutatót az USMF bemutatócégen is lefuttathatja, ahol minden előfeltétel elérhető, például a naplónevek, cikkbeállítások, feladási profilok és számlák.</span><span class="sxs-lookup"><span data-stu-id="db5c3-105">(It's also possible to update on-hand inventory by importing transactions in data entities.) You can run this guide in demo data company USMF where all the prerequisites like journal name, item setup, posting profiles, and accounts are available.</span></span> <span data-ttu-id="db5c3-106">Az útmutató a használt cikkre és dimenziókra vonatkozóan adott értékeket javasol.</span><span class="sxs-lookup"><span data-stu-id="db5c3-106">The guide suggests specific values for the item and dimensions that are used.</span></span> <span data-ttu-id="db5c3-107">Ha egy másik elemet választ, lehetséges, hogy más dimenziók értékeit kell megadnia.</span><span class="sxs-lookup"><span data-stu-id="db5c3-107">If you choose a different item, you may need to enter values for different dimensions.</span></span>
 
-1. <span data-ttu-id="fb9c0-108">Ugrás a Készletgazdálkodás > Naplóbejegyzések > Cikkek > Mozgás menüpontba.</span><span class="sxs-lookup"><span data-stu-id="fb9c0-108">Go to Inventory management > Journal entries > Items > Movement.</span></span>
-2. <span data-ttu-id="fb9c0-109">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="fb9c0-109">Click New.</span></span>
-3. <span data-ttu-id="fb9c0-110">A Név mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="fb9c0-110">In the Name field, click the drop-down button to open the lookup.</span></span>
-4. <span data-ttu-id="fb9c0-111">Válassza ki az IMov. lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="fb9c0-111">Select IMov.</span></span>
-    * <span data-ttu-id="fb9c0-112">Tanácsos különböző naplósablonok nevét használni különböző üzleti célokra.</span><span class="sxs-lookup"><span data-stu-id="fb9c0-112">It's a good practice to use different journal name templates for the different business purposes.</span></span>  
-5. <span data-ttu-id="fb9c0-113">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="fb9c0-113">In the list, click the link in the selected row.</span></span>
-6. <span data-ttu-id="fb9c0-114">Az Ellenszámla mezőben adja meg a „140200” értékeket.</span><span class="sxs-lookup"><span data-stu-id="fb9c0-114">In the Offset account field, specify the values '140200'.</span></span>
-    * <span data-ttu-id="fb9c0-115">Ez az ellenszámla lesz a naplósorok alapértelmezett számlája.</span><span class="sxs-lookup"><span data-stu-id="fb9c0-115">This is the offset account that will be the default account on the journal lines.</span></span> <span data-ttu-id="fb9c0-116">Lehetséges felülírni az alapértelmezettet, ha más ellenszámlát szeretne hozzárendelni egy sorhoz.</span><span class="sxs-lookup"><span data-stu-id="fb9c0-116">It's possible to override the default to assign different offset accounts per line.</span></span>  
-7. <span data-ttu-id="fb9c0-117">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="fb9c0-117">Click OK.</span></span>
-8. <span data-ttu-id="fb9c0-118">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="fb9c0-118">Click New.</span></span>
-9. <span data-ttu-id="fb9c0-119">A Cikkszám mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="fb9c0-119">In the Item number field, click the drop-down button to open the lookup.</span></span>
-10. <span data-ttu-id="fb9c0-120">Válassza az A0001 elemet.</span><span class="sxs-lookup"><span data-stu-id="fb9c0-120">Select item A0001.</span></span>
-11. <span data-ttu-id="fb9c0-121">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="fb9c0-121">In the list, click the link in the selected row.</span></span>
-12. <span data-ttu-id="fb9c0-122">Kattintson a Készlet dimenziók lapra.</span><span class="sxs-lookup"><span data-stu-id="fb9c0-122">Click the Inventory dimensions tab.</span></span>
-13. <span data-ttu-id="fb9c0-123">A Hely mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="fb9c0-123">In the Site field, click the drop-down button to open the lookup.</span></span>
-14. <span data-ttu-id="fb9c0-124">Válassza ki az 1. helyet.</span><span class="sxs-lookup"><span data-stu-id="fb9c0-124">Select site 1.</span></span>
-15. <span data-ttu-id="fb9c0-125">A Raktár mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="fb9c0-125">In the Warehouse field, click the drop-down button to open the lookup.</span></span>
-16. <span data-ttu-id="fb9c0-126">Válasszak ki a 13. raktárt.</span><span class="sxs-lookup"><span data-stu-id="fb9c0-126">Select warehouse 13.</span></span>
-17. <span data-ttu-id="fb9c0-127">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="fb9c0-127">In the list, click the link in the selected row.</span></span>
-18. <span data-ttu-id="fb9c0-128">A Hely mezőben kattintson a legördülő gombra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="fb9c0-128">In the Location field, click the drop-down button to open the lookup.</span></span>
-19. <span data-ttu-id="fb9c0-129">Válassza ki a 13. helyet.</span><span class="sxs-lookup"><span data-stu-id="fb9c0-129">Select location 13.</span></span>
-20. <span data-ttu-id="fb9c0-130">Adjon meg egy számot a Mennyiség mezőben.</span><span class="sxs-lookup"><span data-stu-id="fb9c0-130">In the Quantity field, enter a number.</span></span>
-21. <span data-ttu-id="fb9c0-131">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="fb9c0-131">Click Save.</span></span>
-22. <span data-ttu-id="fb9c0-132">Kattintson a Feladás lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="fb9c0-132">Click Post.</span></span>
-23. <span data-ttu-id="fb9c0-133">Jelölje be a Minden feladási hiba átvitele egy új naplóba jelölőnégyzetet, vagy törölje a jelölést.</span><span class="sxs-lookup"><span data-stu-id="fb9c0-133">Check or uncheck the Transfer all posting errors to a new journal check box.</span></span>
-    * <span data-ttu-id="fb9c0-134">Ha engedélyezi ezt a beállítást, a rendszer bemásolja egy új naplóba az olyan sorokat, amelyek nem kerülnek feladásra.</span><span class="sxs-lookup"><span data-stu-id="fb9c0-134">If you enable this option, any lines that fail to post will be copied to a new journal.</span></span> <span data-ttu-id="fb9c0-135">A naplóban található információk segítségével korrigálhatja a problémákat, majd újra feladathatja a sorokat.</span><span class="sxs-lookup"><span data-stu-id="fb9c0-135">You can use the information in the log to correct the issues and then re-post the lines.</span></span>  
-24. <span data-ttu-id="fb9c0-136">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="fb9c0-136">Click OK.</span></span>
-25. <span data-ttu-id="fb9c0-137">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="fb9c0-137">Close the page.</span></span>
-26. <span data-ttu-id="fb9c0-138">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="fb9c0-138">Close the page.</span></span>
+1. <span data-ttu-id="db5c3-108">Ugrás a Készletgazdálkodás > Naplóbejegyzések > Cikkek > Mozgás menüpontba.</span><span class="sxs-lookup"><span data-stu-id="db5c3-108">Go to Inventory management > Journal entries > Items > Movement.</span></span>
+2. <span data-ttu-id="db5c3-109">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="db5c3-109">Click New.</span></span>
+3. <span data-ttu-id="db5c3-110">A Név mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="db5c3-110">In the Name field, click the drop-down button to open the lookup.</span></span>
+4. <span data-ttu-id="db5c3-111">Válassza ki az IMov. lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="db5c3-111">Select IMov.</span></span>
+    * <span data-ttu-id="db5c3-112">Tanácsos különböző naplósablonok nevét használni különböző üzleti célokra.</span><span class="sxs-lookup"><span data-stu-id="db5c3-112">It's a good practice to use different journal name templates for the different business purposes.</span></span>  
+5. <span data-ttu-id="db5c3-113">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="db5c3-113">In the list, click the link in the selected row.</span></span>
+6. <span data-ttu-id="db5c3-114">Az Ellenszámla mezőben adja meg a „140200” értékeket.</span><span class="sxs-lookup"><span data-stu-id="db5c3-114">In the Offset account field, specify the values '140200'.</span></span>
+    * <span data-ttu-id="db5c3-115">Ez az ellenszámla lesz a naplósorok alapértelmezett számlája.</span><span class="sxs-lookup"><span data-stu-id="db5c3-115">This is the offset account that will be the default account on the journal lines.</span></span> <span data-ttu-id="db5c3-116">Lehetséges felülírni az alapértelmezettet, ha más ellenszámlát szeretne hozzárendelni egy sorhoz.</span><span class="sxs-lookup"><span data-stu-id="db5c3-116">It's possible to override the default to assign different offset accounts per line.</span></span>  
+7. <span data-ttu-id="db5c3-117">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="db5c3-117">Click OK.</span></span>
+8. <span data-ttu-id="db5c3-118">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="db5c3-118">Click New.</span></span>
+9. <span data-ttu-id="db5c3-119">A Cikkszám mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="db5c3-119">In the Item number field, click the drop-down button to open the lookup.</span></span>
+10. <span data-ttu-id="db5c3-120">Válassza az A0001 elemet.</span><span class="sxs-lookup"><span data-stu-id="db5c3-120">Select item A0001.</span></span>
+11. <span data-ttu-id="db5c3-121">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="db5c3-121">In the list, click the link in the selected row.</span></span>
+12. <span data-ttu-id="db5c3-122">Kattintson a Készlet dimenziók lapra.</span><span class="sxs-lookup"><span data-stu-id="db5c3-122">Click the Inventory dimensions tab.</span></span>
+13. <span data-ttu-id="db5c3-123">A Hely mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="db5c3-123">In the Site field, click the drop-down button to open the lookup.</span></span>
+14. <span data-ttu-id="db5c3-124">Válassza ki az 1. helyet.</span><span class="sxs-lookup"><span data-stu-id="db5c3-124">Select site 1.</span></span>
+15. <span data-ttu-id="db5c3-125">A Raktár mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="db5c3-125">In the Warehouse field, click the drop-down button to open the lookup.</span></span>
+16. <span data-ttu-id="db5c3-126">Válasszak ki a 13. raktárt.</span><span class="sxs-lookup"><span data-stu-id="db5c3-126">Select warehouse 13.</span></span>
+17. <span data-ttu-id="db5c3-127">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="db5c3-127">In the list, click the link in the selected row.</span></span>
+18. <span data-ttu-id="db5c3-128">A Hely mezőben kattintson a legördülő gombra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="db5c3-128">In the Location field, click the drop-down button to open the lookup.</span></span>
+19. <span data-ttu-id="db5c3-129">Válassza ki a 13. helyet.</span><span class="sxs-lookup"><span data-stu-id="db5c3-129">Select location 13.</span></span>
+20. <span data-ttu-id="db5c3-130">Adjon meg egy számot a Mennyiség mezőben.</span><span class="sxs-lookup"><span data-stu-id="db5c3-130">In the Quantity field, enter a number.</span></span>
+21. <span data-ttu-id="db5c3-131">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="db5c3-131">Click Save.</span></span>
+22. <span data-ttu-id="db5c3-132">Kattintson a Feladás lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="db5c3-132">Click Post.</span></span>
+23. <span data-ttu-id="db5c3-133">Jelölje be a Minden feladási hiba átvitele egy új naplóba jelölőnégyzetet, vagy törölje a jelölést.</span><span class="sxs-lookup"><span data-stu-id="db5c3-133">Check or uncheck the Transfer all posting errors to a new journal check box.</span></span>
+    * <span data-ttu-id="db5c3-134">Ha engedélyezi ezt a beállítást, a rendszer bemásolja egy új naplóba az olyan sorokat, amelyek nem kerülnek feladásra.</span><span class="sxs-lookup"><span data-stu-id="db5c3-134">If you enable this option, any lines that fail to post will be copied to a new journal.</span></span> <span data-ttu-id="db5c3-135">A naplóban található információk segítségével korrigálhatja a problémákat, majd újra feladathatja a sorokat.</span><span class="sxs-lookup"><span data-stu-id="db5c3-135">You can use the information in the log to correct the issues and then re-post the lines.</span></span>  
+24. <span data-ttu-id="db5c3-136">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="db5c3-136">Click OK.</span></span>
+25. <span data-ttu-id="db5c3-137">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="db5c3-137">Close the page.</span></span>
+26. <span data-ttu-id="db5c3-138">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="db5c3-138">Close the page.</span></span>
 
 
 

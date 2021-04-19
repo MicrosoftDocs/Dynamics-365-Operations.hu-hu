@@ -2,11 +2,9 @@
 title: Új raktárelrendezés létrehozása
 description: Ez a témakör leírja, hogyan állíthat be információkat a raktárban lévő hellyekkel kapcsolatban.
 author: perlynne
-manager: tfehr
 ms.date: 07/29/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventParameters, DefaultDashboard, InventLocation, WMSLocationWizard
 audience: Application User
@@ -16,51 +14,51 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2f6f97bc13bc27ec88570992872a256926522c52
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 3a329df85c339c90e4bdc620c8a63837ebc19a7c
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5218705"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5833977"
 ---
-# <a name="create-a-new-warehouse-layout"></a><span data-ttu-id="af2bf-103">Új raktárelrendezés létrehozása</span><span class="sxs-lookup"><span data-stu-id="af2bf-103">Create a new warehouse layout</span></span>
+# <a name="create-a-new-warehouse-layout"></a><span data-ttu-id="9b7f6-103">Új raktárelrendezés létrehozása</span><span class="sxs-lookup"><span data-stu-id="9b7f6-103">Create a new warehouse layout</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="af2bf-104">Ez a témakör leírja, hogyan állíthat be információkat a raktárban lévő hellyekkel kapcsolatban.</span><span class="sxs-lookup"><span data-stu-id="af2bf-104">This topic describes how to set up information about the locations in a warehouse.</span></span> <span data-ttu-id="af2bf-105">Ez csak a Készletkezelő modulban az „alapvető raktározás” használatával létrehozott raktárakra érvényes, a Raktárkezelési rendszerben létrehozottakra nem.</span><span class="sxs-lookup"><span data-stu-id="af2bf-105">This applies only to warehouses created using "basic warehousing" in the Inventory management module, not to warehouses created in the Warehouse management module.</span></span> <span data-ttu-id="af2bf-106">Ezt a folyamatot az USMF bemutatócéggel vagy saját adataival is használhatja.</span><span class="sxs-lookup"><span data-stu-id="af2bf-106">You can use this procedure in demo data company USMF, or on your own data.</span></span>
+<span data-ttu-id="9b7f6-104">Ez a témakör leírja, hogyan állíthat be információkat a raktárban lévő hellyekkel kapcsolatban.</span><span class="sxs-lookup"><span data-stu-id="9b7f6-104">This topic describes how to set up information about the locations in a warehouse.</span></span> <span data-ttu-id="9b7f6-105">Ez csak a Készletkezelő modulban az „alapvető raktározás” használatával létrehozott raktárakra érvényes, a Raktárkezelési rendszerben létrehozottakra nem.</span><span class="sxs-lookup"><span data-stu-id="9b7f6-105">This applies only to warehouses created using "basic warehousing" in the Inventory management module, not to warehouses created in the Warehouse management module.</span></span> <span data-ttu-id="9b7f6-106">Ezt a folyamatot az USMF bemutatócéggel vagy saját adataival is használhatja.</span><span class="sxs-lookup"><span data-stu-id="9b7f6-106">You can use this procedure in demo data company USMF, or on your own data.</span></span>
 
 
-## <a name="set-the-default-location-capacity"></a><span data-ttu-id="af2bf-107">Az alapértelmezett hely kapacitás-beállítása</span><span class="sxs-lookup"><span data-stu-id="af2bf-107">Set the default location capacity</span></span>
-1. <span data-ttu-id="af2bf-108">A Navigációs ablaktáblában válassza a **Modulok > Készletkezelés > Beállítás > Készlet- és raktárkezelési paraméterek** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="af2bf-108">In the navigation pane, go to **Modules > Inventory management > Setup > Inventory and warehouse management parameters**.</span></span>
-2. <span data-ttu-id="af2bf-109">Válassza ki a **Helyek** lapot.</span><span class="sxs-lookup"><span data-stu-id="af2bf-109">Select the **Locations** tab.</span></span>
-3. <span data-ttu-id="af2bf-110">Adjon meg egy számot a **Szokásos szélesség** mezőben.</span><span class="sxs-lookup"><span data-stu-id="af2bf-110">In the **Standard width** field, enter a number.</span></span>
-4. <span data-ttu-id="af2bf-111">Adjon meg egy számot a **Szokásos mélység** mezőben.</span><span class="sxs-lookup"><span data-stu-id="af2bf-111">In the **Standard depth** field, enter a number.</span></span>
-5. <span data-ttu-id="af2bf-112">Adjon meg egy számot a **Szokásos magasság** mezőben.</span><span class="sxs-lookup"><span data-stu-id="af2bf-112">In the **Standard height** field, enter a number.</span></span>
-6. <span data-ttu-id="af2bf-113">Válassza a **Mentés** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="af2bf-113">Select **Save**.</span></span>
-7. <span data-ttu-id="af2bf-114">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="af2bf-114">Close the page.</span></span>
+## <a name="set-the-default-location-capacity"></a><span data-ttu-id="9b7f6-107">Az alapértelmezett hely kapacitás-beállítása</span><span class="sxs-lookup"><span data-stu-id="9b7f6-107">Set the default location capacity</span></span>
+1. <span data-ttu-id="9b7f6-108">A Navigációs ablaktáblában válassza a **Modulok > Készletkezelés > Beállítás > Készlet- és raktárkezelési paraméterek** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="9b7f6-108">In the navigation pane, go to **Modules > Inventory management > Setup > Inventory and warehouse management parameters**.</span></span>
+2. <span data-ttu-id="9b7f6-109">Válassza ki a **Helyek** lapot.</span><span class="sxs-lookup"><span data-stu-id="9b7f6-109">Select the **Locations** tab.</span></span>
+3. <span data-ttu-id="9b7f6-110">Adjon meg egy számot a **Szokásos szélesség** mezőben.</span><span class="sxs-lookup"><span data-stu-id="9b7f6-110">In the **Standard width** field, enter a number.</span></span>
+4. <span data-ttu-id="9b7f6-111">Adjon meg egy számot a **Szokásos mélység** mezőben.</span><span class="sxs-lookup"><span data-stu-id="9b7f6-111">In the **Standard depth** field, enter a number.</span></span>
+5. <span data-ttu-id="9b7f6-112">Adjon meg egy számot a **Szokásos magasság** mezőben.</span><span class="sxs-lookup"><span data-stu-id="9b7f6-112">In the **Standard height** field, enter a number.</span></span>
+6. <span data-ttu-id="9b7f6-113">Válassza a **Mentés** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="9b7f6-113">Select **Save**.</span></span>
+7. <span data-ttu-id="9b7f6-114">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="9b7f6-114">Close the page.</span></span>
 
-## <a name="define-the-location-name-format"></a><span data-ttu-id="af2bf-115">Adja meg a hely nevének formátumát.</span><span class="sxs-lookup"><span data-stu-id="af2bf-115">Define the location name format</span></span>
-1. <span data-ttu-id="af2bf-116">A navigációs ablaktáblán lépjen a **Modulok > Készletgazdálkodás > Beállítás > Készlet részletezése > Raktárak** részre.</span><span class="sxs-lookup"><span data-stu-id="af2bf-116">In the navigation pane, go to **Modules > Inventory management > Setup > Inventory breakdown > Warehouses**.</span></span>
-2. <span data-ttu-id="af2bf-117">Válassza az **Új** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="af2bf-117">Select **New**.</span></span>
-3. <span data-ttu-id="af2bf-118">Érték beírása a **Raktár** mezőbe.</span><span class="sxs-lookup"><span data-stu-id="af2bf-118">In the **Warehouse** field, type a value.</span></span>
-4. <span data-ttu-id="af2bf-119">Írjon be egy értéket a **Név** mezőbe.</span><span class="sxs-lookup"><span data-stu-id="af2bf-119">In the **Name** field, type a value.</span></span>
-5. <span data-ttu-id="af2bf-120">A **Hely** mező keresőjében válassza ki a kívánt rekordot.</span><span class="sxs-lookup"><span data-stu-id="af2bf-120">In the **Site** field, select the desired record in the lookup.</span></span>
-6. <span data-ttu-id="af2bf-121">A **Helynevek** szakasz bővítésének átváltása.</span><span class="sxs-lookup"><span data-stu-id="af2bf-121">Toggle the expansion of the **Location names** section.</span></span> <span data-ttu-id="af2bf-122">A fejezetben leírt lehetőségek helynevek alapértelmezett formátumát adják meg.</span><span class="sxs-lookup"><span data-stu-id="af2bf-122">The options in this section define the default format for location names.</span></span> <span data-ttu-id="af2bf-123">Ebben a példában megadjuk a folyosószámot, az állvány számát, illetve a polcszámot.</span><span class="sxs-lookup"><span data-stu-id="af2bf-123">In our example, we'll include the aisle number, rack number and shelf number.</span></span>  
-7. <span data-ttu-id="af2bf-124">A **Folyosó figyelembevétele** beállítása legyen **Igen**.</span><span class="sxs-lookup"><span data-stu-id="af2bf-124">Set the **Include aisle** option to **Yes**.</span></span>
-8. <span data-ttu-id="af2bf-125">Az **Állvány figyelembevétele** beállítása legyen **Igen**.</span><span class="sxs-lookup"><span data-stu-id="af2bf-125">Set the **Include rack** option to **Yes**.</span></span> 
-9. <span data-ttu-id="af2bf-126">A **Formátum** mezőbe írjon be egy értéket az állványhoz.</span><span class="sxs-lookup"><span data-stu-id="af2bf-126">In the **Format** field, for the rack, type a value.</span></span>
-10. <span data-ttu-id="af2bf-127">A **Polc figyelembevétele** beállítása legyen **Igen**.</span><span class="sxs-lookup"><span data-stu-id="af2bf-127">Set the **Include shelf** option to **Yes**.</span></span>
-11. <span data-ttu-id="af2bf-128">A **Formátum** mezőbe írjon be egy értéket a polchoz.</span><span class="sxs-lookup"><span data-stu-id="af2bf-128">In the **Format** field, for the shelf, type a value.</span></span>
+## <a name="define-the-location-name-format"></a><span data-ttu-id="9b7f6-115">Adja meg a hely nevének formátumát.</span><span class="sxs-lookup"><span data-stu-id="9b7f6-115">Define the location name format</span></span>
+1. <span data-ttu-id="9b7f6-116">A navigációs ablaktáblán lépjen a **Modulok > Készletgazdálkodás > Beállítás > Készlet részletezése > Raktárak** részre.</span><span class="sxs-lookup"><span data-stu-id="9b7f6-116">In the navigation pane, go to **Modules > Inventory management > Setup > Inventory breakdown > Warehouses**.</span></span>
+2. <span data-ttu-id="9b7f6-117">Válassza az **Új** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="9b7f6-117">Select **New**.</span></span>
+3. <span data-ttu-id="9b7f6-118">Érték beírása a **Raktár** mezőbe.</span><span class="sxs-lookup"><span data-stu-id="9b7f6-118">In the **Warehouse** field, type a value.</span></span>
+4. <span data-ttu-id="9b7f6-119">Írjon be egy értéket a **Név** mezőbe.</span><span class="sxs-lookup"><span data-stu-id="9b7f6-119">In the **Name** field, type a value.</span></span>
+5. <span data-ttu-id="9b7f6-120">A **Hely** mező keresőjében válassza ki a kívánt rekordot.</span><span class="sxs-lookup"><span data-stu-id="9b7f6-120">In the **Site** field, select the desired record in the lookup.</span></span>
+6. <span data-ttu-id="9b7f6-121">A **Helynevek** szakasz bővítésének átváltása.</span><span class="sxs-lookup"><span data-stu-id="9b7f6-121">Toggle the expansion of the **Location names** section.</span></span> <span data-ttu-id="9b7f6-122">A fejezetben leírt lehetőségek helynevek alapértelmezett formátumát adják meg.</span><span class="sxs-lookup"><span data-stu-id="9b7f6-122">The options in this section define the default format for location names.</span></span> <span data-ttu-id="9b7f6-123">Ebben a példában megadjuk a folyosószámot, az állvány számát, illetve a polcszámot.</span><span class="sxs-lookup"><span data-stu-id="9b7f6-123">In our example, we'll include the aisle number, rack number and shelf number.</span></span>  
+7. <span data-ttu-id="9b7f6-124">A **Folyosó figyelembevétele** beállítása legyen **Igen**.</span><span class="sxs-lookup"><span data-stu-id="9b7f6-124">Set the **Include aisle** option to **Yes**.</span></span>
+8. <span data-ttu-id="9b7f6-125">Az **Állvány figyelembevétele** beállítása legyen **Igen**.</span><span class="sxs-lookup"><span data-stu-id="9b7f6-125">Set the **Include rack** option to **Yes**.</span></span> 
+9. <span data-ttu-id="9b7f6-126">A **Formátum** mezőbe írjon be egy értéket az állványhoz.</span><span class="sxs-lookup"><span data-stu-id="9b7f6-126">In the **Format** field, for the rack, type a value.</span></span>
+10. <span data-ttu-id="9b7f6-127">A **Polc figyelembevétele** beállítása legyen **Igen**.</span><span class="sxs-lookup"><span data-stu-id="9b7f6-127">Set the **Include shelf** option to **Yes**.</span></span>
+11. <span data-ttu-id="9b7f6-128">A **Formátum** mezőbe írjon be egy értéket a polchoz.</span><span class="sxs-lookup"><span data-stu-id="9b7f6-128">In the **Format** field, for the shelf, type a value.</span></span>
 
-## <a name="define-warehouse-locations"></a><span data-ttu-id="af2bf-129">Raktár-helyek meghatározása</span><span class="sxs-lookup"><span data-stu-id="af2bf-129">Define warehouse locations</span></span>
-1. <span data-ttu-id="af2bf-130">A Műveleti ablaktáblán válassza a **Raktár** elemet.</span><span class="sxs-lookup"><span data-stu-id="af2bf-130">On the Action Pane, select **Warehouse**.</span></span>
-2. <span data-ttu-id="af2bf-131">Válassza a **Hely varázsló** elemet.</span><span class="sxs-lookup"><span data-stu-id="af2bf-131">Select **Location Wizard**.</span></span>
-3. <span data-ttu-id="af2bf-132">Válassza a **Következő** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="af2bf-132">Select **Next**.</span></span>
-4. <span data-ttu-id="af2bf-133">A **Kiszállítási területek** beállítás kijelölésének törlése</span><span class="sxs-lookup"><span data-stu-id="af2bf-133">De-select the **Outbound docks** option</span></span>
-5. <span data-ttu-id="af2bf-134">Az **Ömlesztett tárolóhelyek** beállítás kijelölésének törlése</span><span class="sxs-lookup"><span data-stu-id="af2bf-134">De-select the **Bulk locations** option</span></span>
-6. <span data-ttu-id="af2bf-135">Válassza a **Tovább** lehetőséget, amíg ki nem választhatja a **Befejezés** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="af2bf-135">Select **Next** until you come to the option to select **Finish**.</span></span>
-7. <span data-ttu-id="af2bf-136">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="af2bf-136">Close the page.</span></span>
-8. <span data-ttu-id="af2bf-137">Frissítse a lapot..</span><span class="sxs-lookup"><span data-stu-id="af2bf-137">Refresh the page.</span></span>
+## <a name="define-warehouse-locations"></a><span data-ttu-id="9b7f6-129">Raktár-helyek meghatározása</span><span class="sxs-lookup"><span data-stu-id="9b7f6-129">Define warehouse locations</span></span>
+1. <span data-ttu-id="9b7f6-130">A Műveleti ablaktáblán válassza a **Raktár** elemet.</span><span class="sxs-lookup"><span data-stu-id="9b7f6-130">On the Action Pane, select **Warehouse**.</span></span>
+2. <span data-ttu-id="9b7f6-131">Válassza a **Hely varázsló** elemet.</span><span class="sxs-lookup"><span data-stu-id="9b7f6-131">Select **Location Wizard**.</span></span>
+3. <span data-ttu-id="9b7f6-132">Válassza a **Következő** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="9b7f6-132">Select **Next**.</span></span>
+4. <span data-ttu-id="9b7f6-133">A **Kiszállítási területek** beállítás kijelölésének törlése</span><span class="sxs-lookup"><span data-stu-id="9b7f6-133">De-select the **Outbound docks** option</span></span>
+5. <span data-ttu-id="9b7f6-134">Az **Ömlesztett tárolóhelyek** beállítás kijelölésének törlése</span><span class="sxs-lookup"><span data-stu-id="9b7f6-134">De-select the **Bulk locations** option</span></span>
+6. <span data-ttu-id="9b7f6-135">Válassza a **Tovább** lehetőséget, amíg ki nem választhatja a **Befejezés** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="9b7f6-135">Select **Next** until you come to the option to select **Finish**.</span></span>
+7. <span data-ttu-id="9b7f6-136">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="9b7f6-136">Close the page.</span></span>
+8. <span data-ttu-id="9b7f6-137">Frissítse a lapot..</span><span class="sxs-lookup"><span data-stu-id="9b7f6-137">Refresh the page.</span></span>
 
 
 

@@ -2,11 +2,9 @@
 title: Konfigurációs útvonal meghatározása
 description: Ez az eljárás bemutatja a konfigurációs csoportok megjelenését meghatározó konfigurációs útvonal megadását.
 author: ShylaThompson
-manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BOMTable
 audience: Application User
@@ -15,35 +13,35 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3a6ea4abcb0a9b51680e3cdbb4533eb127b3a04a
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 564aee1804a2768a05a14823ae8378cb9c1ac3db
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5216057"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5818085"
 ---
-# <a name="define-configuration-route"></a><span data-ttu-id="9929e-103">Konfigurációs útvonal meghatározása</span><span class="sxs-lookup"><span data-stu-id="9929e-103">Define configuration route</span></span>
+# <a name="define-configuration-route"></a><span data-ttu-id="86498-103">Konfigurációs útvonal meghatározása</span><span class="sxs-lookup"><span data-stu-id="86498-103">Define configuration route</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="9929e-104">Ez az eljárás bemutatja a konfigurációs csoportok megjelenését meghatározó konfigurációs útvonal megadását.</span><span class="sxs-lookup"><span data-stu-id="9929e-104">This procedure focuses on defining a configuration route that determines the sequence in which the configuration groups will be presented.</span></span> <span data-ttu-id="9929e-105">Ez az eljárás az USMF bemutatócéget használja.</span><span class="sxs-lookup"><span data-stu-id="9929e-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="9929e-106">Ez az hatodik eljárás a nyolcból, amely a dimenzión alapuló konfiguráció-kombinációk létrehozását ismerteti.</span><span class="sxs-lookup"><span data-stu-id="9929e-106">This is the sixth procedure out of eight that explains how to build combinations for dimension-based configuration.</span></span>
+<span data-ttu-id="86498-104">Ez az eljárás bemutatja a konfigurációs csoportok megjelenését meghatározó konfigurációs útvonal megadását.</span><span class="sxs-lookup"><span data-stu-id="86498-104">This procedure focuses on defining a configuration route that determines the sequence in which the configuration groups will be presented.</span></span> <span data-ttu-id="86498-105">Ez az eljárás az USMF bemutatócéget használja.</span><span class="sxs-lookup"><span data-stu-id="86498-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="86498-106">Ez az hatodik eljárás a nyolcból, amely a dimenzión alapuló konfiguráció-kombinációk létrehozását ismerteti.</span><span class="sxs-lookup"><span data-stu-id="86498-106">This is the sixth procedure out of eight that explains how to build combinations for dimension-based configuration.</span></span>
 
-1. <span data-ttu-id="9929e-107">Ugorjon a Termékinformációk kezelése > Anyagjegyzékek és képletek > Anyagjegyzékek pontra.</span><span class="sxs-lookup"><span data-stu-id="9929e-107">Go to Product information management > Bills of materials and formulas > Bills of materials.</span></span>
-2. <span data-ttu-id="9929e-108">Keresse meg és jelölje ki a kívánt rekordot a listán.</span><span class="sxs-lookup"><span data-stu-id="9929e-108">In the list, find and select the desired record.</span></span>
-3. <span data-ttu-id="9929e-109">A Művelet ablaktáblában kattintson a Beállítások elemre.</span><span class="sxs-lookup"><span data-stu-id="9929e-109">On the Action Pane, click Options.</span></span>
-4. <span data-ttu-id="9929e-110">Kattintson a Nézetváltás elemre.</span><span class="sxs-lookup"><span data-stu-id="9929e-110">Click Change view.</span></span>
-5. <span data-ttu-id="9929e-111">Kattintson a Fejlécnézet gombra.</span><span class="sxs-lookup"><span data-stu-id="9929e-111">Click Header view.</span></span>
-6. <span data-ttu-id="9929e-112">Bontsa ki vagy csukja össze a Konfigurációs útvonal szakaszát.</span><span class="sxs-lookup"><span data-stu-id="9929e-112">Expand or collapse the Configuration route section.</span></span>
-7. <span data-ttu-id="9929e-113">Kattintson a Hozzáadás gombra.</span><span class="sxs-lookup"><span data-stu-id="9929e-113">Click Add.</span></span>
-8. <span data-ttu-id="9929e-114">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="9929e-114">In the list, mark the selected row.</span></span>
-9. <span data-ttu-id="9929e-115">A Konfigurációs csoport mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="9929e-115">In the Configuration group field, click the drop-down button to open the lookup.</span></span>
-10. <span data-ttu-id="9929e-116">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="9929e-116">In the list, click the link in the selected row.</span></span>
-11. <span data-ttu-id="9929e-117">Kattintson a Hozzáadás gombra.</span><span class="sxs-lookup"><span data-stu-id="9929e-117">Click Add.</span></span>
-12. <span data-ttu-id="9929e-118">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="9929e-118">In the list, mark the selected row.</span></span>
-13. <span data-ttu-id="9929e-119">A Konfigurációs csoport mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="9929e-119">In the Configuration group field, click the drop-down button to open the lookup.</span></span>
-14. <span data-ttu-id="9929e-120">Keresse meg és jelölje ki a kívánt rekordot a listán.</span><span class="sxs-lookup"><span data-stu-id="9929e-120">In the list, find and select the desired record.</span></span>
-15. <span data-ttu-id="9929e-121">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="9929e-121">In the list, click the link in the selected row.</span></span>
-16. <span data-ttu-id="9929e-122">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="9929e-122">Click Save.</span></span>
+1. <span data-ttu-id="86498-107">Ugorjon a Termékinformációk kezelése > Anyagjegyzékek és képletek > Anyagjegyzékek pontra.</span><span class="sxs-lookup"><span data-stu-id="86498-107">Go to Product information management > Bills of materials and formulas > Bills of materials.</span></span>
+2. <span data-ttu-id="86498-108">Keresse meg és jelölje ki a kívánt rekordot a listán.</span><span class="sxs-lookup"><span data-stu-id="86498-108">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="86498-109">A Művelet ablaktáblában kattintson a Beállítások elemre.</span><span class="sxs-lookup"><span data-stu-id="86498-109">On the Action Pane, click Options.</span></span>
+4. <span data-ttu-id="86498-110">Kattintson a Nézetváltás elemre.</span><span class="sxs-lookup"><span data-stu-id="86498-110">Click Change view.</span></span>
+5. <span data-ttu-id="86498-111">Kattintson a Fejlécnézet gombra.</span><span class="sxs-lookup"><span data-stu-id="86498-111">Click Header view.</span></span>
+6. <span data-ttu-id="86498-112">Bontsa ki vagy csukja össze a Konfigurációs útvonal szakaszát.</span><span class="sxs-lookup"><span data-stu-id="86498-112">Expand or collapse the Configuration route section.</span></span>
+7. <span data-ttu-id="86498-113">Kattintson a Hozzáadás gombra.</span><span class="sxs-lookup"><span data-stu-id="86498-113">Click Add.</span></span>
+8. <span data-ttu-id="86498-114">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="86498-114">In the list, mark the selected row.</span></span>
+9. <span data-ttu-id="86498-115">A Konfigurációs csoport mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="86498-115">In the Configuration group field, click the drop-down button to open the lookup.</span></span>
+10. <span data-ttu-id="86498-116">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="86498-116">In the list, click the link in the selected row.</span></span>
+11. <span data-ttu-id="86498-117">Kattintson a Hozzáadás gombra.</span><span class="sxs-lookup"><span data-stu-id="86498-117">Click Add.</span></span>
+12. <span data-ttu-id="86498-118">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="86498-118">In the list, mark the selected row.</span></span>
+13. <span data-ttu-id="86498-119">A Konfigurációs csoport mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="86498-119">In the Configuration group field, click the drop-down button to open the lookup.</span></span>
+14. <span data-ttu-id="86498-120">Keresse meg és jelölje ki a kívánt rekordot a listán.</span><span class="sxs-lookup"><span data-stu-id="86498-120">In the list, find and select the desired record.</span></span>
+15. <span data-ttu-id="86498-121">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="86498-121">In the list, click the link in the selected row.</span></span>
+16. <span data-ttu-id="86498-122">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="86498-122">Click Save.</span></span>
 
 
 

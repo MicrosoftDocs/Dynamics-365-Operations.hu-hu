@@ -1,0 +1,75 @@
+---
+title: Raktári kötegelt és sorozatfoglalási hierarchiák hibaelhárítása
+description: Ez a témakör azt mutatja be, hogyan lehet megoldani gyakori problémákat, miközben az olyan foglalási hierarchiákat használja, amelyek kötegelt vagy sorozatdimenziókat használnak.
+author: perlynne
+ms.date: 3/12/2021
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: ''
+audience: Application user
+ms.reviewer: kamaybac
+ms.custom: ''
+ms.assetid: ''
+ms.search.region: Global
+ms.author: perlynne
+ms.search.validFrom: 3/12/2021
+ms.openlocfilehash: a1abb6f8657484d43d434076e5ee38d1c63fe2ff
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.translationtype: HT
+ms.contentlocale: hu-HU
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5838178"
+---
+# <a name="troubleshoot-warehouse-batch-and-serial-reservation-hierarchies"></a><span data-ttu-id="cf7b1-103">Raktári kötegelt és sorozatfoglalási hierarchiák hibaelhárítása</span><span class="sxs-lookup"><span data-stu-id="cf7b1-103">Troubleshoot warehouse batch and serial reservation hierarchies</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="cf7b1-104">Ez a témakör azt mutatja be, hogyan lehet megoldani gyakori problémákat, miközben az olyan foglalási hierarchiákat használja, amelyek kötegelt vagy sorozatdimenziókat használnak.</span><span class="sxs-lookup"><span data-stu-id="cf7b1-104">This topic describes how to fix common issues that you might encounter while you work with reservation hierarchies that use batch or serial dimensions.</span></span>
+
+<span data-ttu-id="cf7b1-105">További információ: [Rugalmas raktárszintű dimenzió foglalási irányelv](flexible-warehouse-level-dimension-reservation.md).</span><span class="sxs-lookup"><span data-stu-id="cf7b1-105">For more information, see [Flexible warehouse-level dimension reservation policy](flexible-warehouse-level-dimension-reservation.md).</span></span>
+
+<span data-ttu-id="cf7b1-106">Egy cikk foglalási hierarchiája határozza meg a tárolási dimenziók követelményét, amelyet teljesíteni kell ahhoz, hogy helyet rendeljen egy igény szerinti rendeléshez.</span><span class="sxs-lookup"><span data-stu-id="cf7b1-106">The reservation hierarchy of an item dictates the requirement of storage dimensions that must be fulfilled to assign a location to a demand order.</span></span> <span data-ttu-id="cf7b1-107">Ezek a dimenziók a *hely feletti dimenziókként* írhatóak le, a hely hozzárendelése előtt kitöltendő összes dimenzióhoz és a *hely alatti dimenziókhoz*, olyan dimenziókhoz, amelyek feloszthatók az igény szerinti rendeléshez rendelt hely után.</span><span class="sxs-lookup"><span data-stu-id="cf7b1-107">These dimensions can be described as *dimensions above location*, for all the dimensions that must be fulfilled before a location is assigned, and *dimensions below location*, for dimensions that can be allocated after a location has been assigned to the demand order.</span></span> <span data-ttu-id="cf7b1-108">Ezeket a foglalási hierarchiákat más néven *köteg-felett* és *köteg-alatt* foglalási hierarchiáknak is nevezik, vagy *sorozat-felett* és *sorozat-alatt* foglalási hierarchiáknak.</span><span class="sxs-lookup"><span data-stu-id="cf7b1-108">These reservation hierarchies are also known as *batch-above* and *batch-below* reservation hierarchies, or *serial-above* and *serial-below* reservation hierarchies.</span></span>
+
+<span data-ttu-id="cf7b1-109">A készlet csak akkor osztható fel sikeresen, ha a hely feletti dimenziókban nincsenek rések.</span><span class="sxs-lookup"><span data-stu-id="cf7b1-109">Inventory can be successfully allocated only if there are no gaps in the dimensions above location.</span></span> <span data-ttu-id="cf7b1-110">Például a *köteg-felett* foglalási hierarchiában az várható, hogy a **Telephely**, a **Raktár** és a **Kötegszám** dimenziók meg vannak adva az igény szerinti rendelésen.</span><span class="sxs-lookup"><span data-stu-id="cf7b1-110">For example, in a *batch-above* reservation hierarchy, you expect **Site,** **Warehouse,** and **Batch number** dimensions to be specified on the demand order.</span></span> <span data-ttu-id="cf7b1-111">Ha ezek közül a dimenziók közül bármelyik hiányzik, a felosztási folyamat sikertelen lesz.</span><span class="sxs-lookup"><span data-stu-id="cf7b1-111">If any of these dimensions are missing, the allocation process will fail.</span></span> <span data-ttu-id="cf7b1-112">Ezzel szemben a *köteg-alatt* vagy *sorozat-alatt* foglalási hierarchiában előfordulhat, hogy az igény szerinti rendelésen meg van adva egy köteg- vagy sorozatszám, de a felosztási folyamathoz nincs rá szükség.</span><span class="sxs-lookup"><span data-stu-id="cf7b1-112">By contrast, in a *batch-below* or *serial-below* reservation hierarchy, a batch or serial number might be specified on the demand order, but the allocation process doesn't require it.</span></span>
+
+## <a name="i-receive-the-following-error-message-to-be-assigned-to-wave-load-lines-must-specify-the-dimensions-above-the-location-to-assign-these-dimensions-reserve-and-recreate-the-load-line"></a><span data-ttu-id="cf7b1-113">A következő hibaüzenet jelenik meg: „A hullámhoz hozzárendelni kívánt soroknak meg kell adni a hely fölötti dimenzióit.</span><span class="sxs-lookup"><span data-stu-id="cf7b1-113">I receive the following error message: "To be assigned to wave, load lines must specify the dimensions above the location.</span></span> <span data-ttu-id="cf7b1-114">Ezeknek a dimenzióknak a hozzárendeléséhez foglalja le és hozza létre újból a rakománysort.”</span><span class="sxs-lookup"><span data-stu-id="cf7b1-114">To assign these dimensions, reserve and recreate the load line."</span></span>
+
+### <a name="issue-description"></a><span data-ttu-id="cf7b1-115">Probléma leírása</span><span class="sxs-lookup"><span data-stu-id="cf7b1-115">Issue description</span></span>
+
+<span data-ttu-id="cf7b1-116">Ha olyan cikket használ, amelyben a *köteg-felett* foglalási hierarchia szerepel, akkor a **Rakománytervezési munkaterület** oldal **Kiadás a raktárba** parancsa nem működik, amikor részleges mennyiségre próbál kiadni egy rakományt.</span><span class="sxs-lookup"><span data-stu-id="cf7b1-116">When you use an item that has a *batch-above* reservation hierarchy, the **Release to warehouse** command on the **Load planning workbench** page doesn't work if you try to release a load for a partial quantity.</span></span> <span data-ttu-id="cf7b1-117">Ez a hibaüzenet jelenik meg, és a rendszer nem hoz létre munkát a részleges mennyiséghez.</span><span class="sxs-lookup"><span data-stu-id="cf7b1-117">You receive this error message, and no work is created for the partial quantity.</span></span>
+
+<span data-ttu-id="cf7b1-118">Azonban ha olyan cikket használ, amelyben a *köteg-alatt* foglalási hierarchia szerepel, akkor kiadhat egy rakományt részleges mennyiségre a **Rakománytervezési munkaterület** oldaláról.</span><span class="sxs-lookup"><span data-stu-id="cf7b1-118">However, when you use an item that has a *batch-below* reservation hierarchy, you can release a load for a partial quantity from the **Load planning workbench** page.</span></span>
+
+### <a name="issue-cause"></a><span data-ttu-id="cf7b1-119">Probléma oka</span><span class="sxs-lookup"><span data-stu-id="cf7b1-119">Issue cause</span></span>
+
+<span data-ttu-id="cf7b1-120">Ha a foglalási hierarchiában a **Hely** dimenzió felett található egy dimenzió, akkor azt a raktárba történő kiadás előtt meg kell határozni.</span><span class="sxs-lookup"><span data-stu-id="cf7b1-120">When a dimension is above the **Location** dimension in the reservation hierarchy, it must be specified before the release to the warehouse.</span></span> <span data-ttu-id="cf7b1-121">A részleges mennyiségek nem adhatók ki, ha a **Hely** fölötti egy vagy több dimenzió nincs meghatározva.</span><span class="sxs-lookup"><span data-stu-id="cf7b1-121">Partial quantities can't be released if one or more dimensions above **Location** aren't specified.</span></span>
+
+## <a name="the-auto-reservation-prompt-for-a-batch-number-is-triggered-even-though-there-is-available-inventory"></a><span data-ttu-id="cf7b1-122">A kötegszámra vonatkozó automatikus foglalási kérése akkor is aktiválódik, ha rendelkezésre áll készlet.</span><span class="sxs-lookup"><span data-stu-id="cf7b1-122">The auto-reservation prompt for a batch number is triggered even though there is available inventory.</span></span>
+
+### <a name="issue-description"></a><span data-ttu-id="cf7b1-123">Probléma leírása</span><span class="sxs-lookup"><span data-stu-id="cf7b1-123">Issue description</span></span>
+
+<span data-ttu-id="cf7b1-124">Ha olyan cikket használ, amely *köteg-felett* foglalási hierarchiával rendelkezik egy olyan raktárban, amely nem engedélyezte a raktári folyamatokat, és az automatikus foglalás engedélyezve van, a kötegszám automatikus foglalási kérése akkor is megjelenik, ha csak egy köteg áll rendelkezésre kitárolásra.</span><span class="sxs-lookup"><span data-stu-id="cf7b1-124">When you use an item that has a *batch-above* reservation hierarchy in a warehouse that hasn't enabled warehouse processes, and automatic reservation is enabled, the auto-reservation prompt for a batch number is shown even if only one batch is available for picking.</span></span>
+
+<span data-ttu-id="cf7b1-125">Ha azonban ugyanazt a cikket használja egy raktárban, ahol a raktári folyamatok engedélyezve vannak, az automatikus foglalási kérdés nem jelenik meg.</span><span class="sxs-lookup"><span data-stu-id="cf7b1-125">However, when you use the same item in a warehouse where warehouse processes are enabled, the auto-reservation prompt isn't shown.</span></span>
+
+### <a name="issue-cause"></a><span data-ttu-id="cf7b1-126">Probléma oka</span><span class="sxs-lookup"><span data-stu-id="cf7b1-126">Issue cause</span></span>
+
+<span data-ttu-id="cf7b1-127">Ha a foglalási hierarchia meghatározása *köteg-felett* vagy *sorozat-felett*, a hivatkozott dimenziót (**Kötegszám** vagy **Sorozatszám**) mindig meg kell adni igény szerinti rendeléseknél.</span><span class="sxs-lookup"><span data-stu-id="cf7b1-127">If a reservation hierarchy is defined as *batch-above* or *serial-above*, the referenced dimension (**Batch number** or **Serial number**) must always be specified on demand orders.</span></span> <span data-ttu-id="cf7b1-128">A raktári folyamatok akkor tölthetik ki az adatokat, ha egyetlen köteg- vagy sorozatszám áll rendelkezésre.</span><span class="sxs-lookup"><span data-stu-id="cf7b1-128">Warehouse processes might be able to complete the information if a single batch or serial number is available.</span></span> <span data-ttu-id="cf7b1-129">Mivel azonban a raktár nincs engedélyezve a raktári folyamatokhoz, a felhasználónak mindig meg kell adnia az összes **Hely** feletti dimenziót.</span><span class="sxs-lookup"><span data-stu-id="cf7b1-129">However, because the warehouse isn't enabled for warehouse processes, the user must always specify all the dimensions above **Location**.</span></span>
+
+## <a name="slotting-templates-that-have-the-consider-on-hand-slot-criterion-dont-consider-current-on-hand-inventory-for-batch-enabled-items"></a><span data-ttu-id="cf7b1-130">Azok az időközökre bontási sablonok, amelyeknél az Aktuálisan készleten lévők figyelembe vétele időközfeltétel fennáll, nem veszik figyelembe az aktuális tényleges készletet a kötegeléshez engedélyezett cikkeknél.</span><span class="sxs-lookup"><span data-stu-id="cf7b1-130">Slotting templates that have the Consider on-hand slot criterion don't consider current on-hand inventory for batch-enabled items.</span></span>
+
+<span data-ttu-id="cf7b1-131">További információ: [Raktári időközökre bontás](warehouse-slotting.md).</span><span class="sxs-lookup"><span data-stu-id="cf7b1-131">For more information, see [Warehouse slotting](warehouse-slotting.md).</span></span>
+
+### <a name="issue-description"></a><span data-ttu-id="cf7b1-132">Probléma leírása</span><span class="sxs-lookup"><span data-stu-id="cf7b1-132">Issue description</span></span>
+
+<span data-ttu-id="cf7b1-133">Azok az időközökre bontási sablonok, amelyeknél az *Aktuálisan készleten lévők figyelembe vétele* időközfeltétel fennáll, nem veszik figyelembe az aktuális tényleges készletet a *köteg-felett* cikkeknél.</span><span class="sxs-lookup"><span data-stu-id="cf7b1-133">Slotting templates that have the *Consider on-hand* slot criterion don't consider current on-hand inventory for *batch-above* items.</span></span> <span data-ttu-id="cf7b1-134">Csak akkor veszik figyelembe, ha a kötegszám meg van adva az értékesítésirendelés-sorban.</span><span class="sxs-lookup"><span data-stu-id="cf7b1-134">They consider it only if the batch number is specified on the sales order line.</span></span>
+
+<span data-ttu-id="cf7b1-135">*Köteg-alatt* cikkek használatakor azonban az aktuális tényleges készlet az elvárt.</span><span class="sxs-lookup"><span data-stu-id="cf7b1-135">However, when you use *batch-below* items, the current on-hand inventory is considered as expected.</span></span>
+
+### <a name="issue-cause"></a><span data-ttu-id="cf7b1-136">Probléma oka</span><span class="sxs-lookup"><span data-stu-id="cf7b1-136">Issue cause</span></span>
+
+<span data-ttu-id="cf7b1-137">Az időközökre bontási sablon fejlécében meg lehet határozni a *Megrendelve*, *Lefoglalva* vagy a *Kiadva* igény szerinti stratégiához.</span><span class="sxs-lookup"><span data-stu-id="cf7b1-137">The slotting template header can be defined for the *Ordered,* *Reserved*, or *Released* demand strategy.</span></span> <span data-ttu-id="cf7b1-138">A *Megrendelve* igény szerinti stratégia esetén ugyanazok a foglalásihierarchia-követelmények érvényesek, amelyek a foglalási vagy raktárba kiadási folyamatok esetén érvényesek.</span><span class="sxs-lookup"><span data-stu-id="cf7b1-138">For the *Ordered* demand strategy, the same reservation hierarchy requirements apply that apply to reservation or release to warehouse processes.</span></span> <span data-ttu-id="cf7b1-139">Ezért a *köteg-feletti* és *sorozat-alatti* foglalási hierarchiákkal rendelkező cikkeknél meg kell adni a köteg- vagy sorozatszámot az igény szerinti rendelésen (értékesítés vagy átmozgatás).</span><span class="sxs-lookup"><span data-stu-id="cf7b1-139">Therefore, for items that have *batch-above* and *serial-below* reservation hierarchies, the batch or serial number must be specified on the demand order (sales or transfer).</span></span> <span data-ttu-id="cf7b1-140">Másik lehetőségként a *Lefoglalva* igény szerinti stratégia arra használható, hogy kiválassza a köteg- vagy sorozatszámot, mielőtt létrejön a raktár időközökre bontási igénye.</span><span class="sxs-lookup"><span data-stu-id="cf7b1-140">Alternatively, the *Reserved* demand strategy can be used to select the batch or serial number before the warehouse slotting demand is generated.</span></span>
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
