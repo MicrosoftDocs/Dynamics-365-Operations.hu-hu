@@ -2,11 +2,9 @@
 title: Számlakezelési oldalak és modulok
 description: Ez a témakör a fiókkezelési lapokkal és modulokkal foglalkozik a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: v-chgri
-manager: annbe
-ms.date: 09/15/2020
+ms.date: 03/17/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -17,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 29523d03fb687684dae7d0ce08208905cce702df
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: df4959a61f1b2948c62a558523a848ff8b2fe0a8
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5206631"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5796294"
 ---
 # <a name="account-management-pages-and-modules"></a>Számlakezelési oldalak és modulok
 
@@ -51,9 +49,9 @@ A rendeléselőzmények lap a rendeléselőzmények modulban jeleníti meg a fel
 
 A rendelés részletei lap részletes adatokat tartalmaz minden rendelésről, és elérhető a rendeléselőzmények lapról. A rendelés részletei modult használja, amely az értékesítési azonosító vagy a tranzakció azonosítója segítségével kéri le a rendelés részleteit.
 
-### <a name="user-profile-page"></a>Felhasználói profil lap
+### <a name="my-profile-page"></a>Saját profillap
 
-A felhasználói profil lap a felhasználói fiók adatait jeleníti meg, például a felhasználó nevét és e-mail-címét. A felhasználói profil adatait és a felhasználói profilok szerkesztési modulját használja. Annak ellenére, hogy az e-mail-cím nem távolítható el, lehetőség van a szerkesztésére. A felhasználói profiloldal megjeleníti a felhasználói beállításokat is, amelyek lehetővé teszik, hogy a felhasználó fel- vagy leiratkozzon bizonyos szolgáltatásokról, mint a testreszabás vagy a javaslatok listája. 
+A Saját profil oldal a fiókprofil modul segítségével mutatja a felhasználó fiókprofil-adatait. Az oldalon megjelenik a felhasználó fiókjához társított e-mail-cím, valamint a fiókhoz megadott beállítások. Egyéni ügyfélattribútumok beállítása esetén a „További információk” szakasz is megjeleníti ezeket az attribútumokat. A felhasználók szerkeszthetik nevüket, preferenciáikat vagy további adataikat (ha vannak ilyenek).
 
 ### <a name="user-address-page"></a>Felhasználó címe lap
 

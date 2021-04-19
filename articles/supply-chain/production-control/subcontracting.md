@@ -2,11 +2,9 @@
 title: Alvállalkozásba adás
 description: Ez a témakör segítségével létrehozhat egy bemutatót az alvállalkozói a gyártáshoz a Dynamics 365 Supply Chain Management alkalmazásban.
 author: christophernread
-manager: tfehr
 ms.date: 09/28/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f771c15d98abe3689054d43cc8b33632121522a3
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 053dff19da6e51d23383d667c340c49f3eff1b27
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5255541"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5825182"
 ---
 # <a name="subcontracting"></a>Alvállalkozásba adás
 
@@ -210,7 +208,7 @@ Egy 10 darabos termelési rendelés jön létre a D8100, "Bevont kabinet" termé
 
     ![A Munka lap kétféle munkát jelenít meg a nyersanyag kitárolásához.](./media/subcontract22_work-page.png)
 
-26. Indítsa el a raktár alkalmazást a 10-es művelet raktári munkájának feldolgozásához.
+26. Indítsa el a Raktárkezelés mobilalkalmazást a 10-es művelet raktári munkájának feldolgozásához.
 
     <!-- TBD – screen shots for processing pick work for the materials. -->
 
@@ -222,13 +220,13 @@ Egy 10 darabos termelési rendelés jön létre a D8100, "Bevont kabinet" termé
     - A **Kezdő műveletszám** mezőben válassza a **10** értéket.
     - A **Záró műveletszám** mezőben válassza a **10** értéket.
 
-    ![Az Általános lapon beállított értékek](./media/subcontract23_start-dialog.png)
+    ![Az Általános lapon beállított értékek 1](./media/subcontract23_start-dialog.png)
 
 31. Válassza ki az **OK** opciót az **Indítás** párbeszédpanel bezárásához és a **Minden termelési rendelés** oldalra való visszatéréshez.
 
     Vegye figyelembe, hogy a termelési rendelés állapota ekkor **Elindítva**. A 10-es művelet anyagait a kitárolási lista naplójának automatikus feladása használja el. A 10-es művelet időfelhasználásának elszámolása egy útvonalkártya-napló automatikus feladásával történik.
 
-32. Indítsa el a raktár alkalmazást a 20-as művelet raktári munkájának feldolgozásához.
+32. Indítsa el a Raktárkezelés mobilalkalmazást a 20-es művelet raktári munkájának feldolgozásához.
 
     <!-- TBD – screen shots for processing pick work for the materials. -->
 
@@ -240,7 +238,7 @@ Egy 10 darabos termelési rendelés jön létre a D8100, "Bevont kabinet" termé
     - Írja be a **10** értéket a **Mennyiség** mezőbe.
     - Válassza a **Nem** lehetőséget a **Kitárolási lista feladása most** mezőben.
 
-    ![Az Általános lapon beállított értékek](./media/subcontract24_general-tab.png)
+    ![Az Általános lapon beállított értékek 2](./media/subcontract24_general-tab.png)
 
 35. Válassza ki az **OK** opciót az **Indítás** párbeszédpanel bezárásához és a **Minden termelési rendelés** oldalra való visszatéréshez.
 

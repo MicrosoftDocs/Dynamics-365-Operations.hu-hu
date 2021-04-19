@@ -2,7 +2,6 @@
 title: Túl-/alulteljesítési tranzakciók
 description: Ez a témakör olyan információkat tartalmaz, amelyek segítenek beállítani a többlet- és hiánytranzakciókra vonatkozó irányelvek részleteit, így a rendszer meghatározhatja, hogy hogyan kezelje a cikkek túl- és alulfeldolgozását a bevételezéskor.
 author: sherry-zheng
-manager: tfehr
 ms.date: 01/13/2021
 ms.topic: article
 ms.prod: ''
@@ -16,17 +15,16 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 9027d5dc73ebd78a65429f7bc63a1ebf8ef60dac
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: c7e75e39877b36e482dd4aaa5cc7c8f84d57d81b
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5500982"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5833737"
 ---
 # <a name="overunder-transactions"></a>Túl-/alulteljesítési tranzakciók
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Hajóút rendeléseinek feldolgozásakor a rendszer elvárja, hogy a végső célraktárba felhasználási célra bevételezett mennyiség megegyezzen a hajóúthoz kapcsolódó beszerzésirendelés-sorokban megadott mennyiséggel. Mivel azonban a beszerzésirendelés-sorokban szereplő pontos mennyiség nem mindig érkezik be a raktárba, a **Partraszállítási költség** modul meghatároz egy szabálykészletet, amely az áruk túl- és alulbevételezésének kezeléséhez szükséges. Ezek a szabályok különösen azért fontosak, mert az eredeti beszerzési rendelés már ki van számlázva, és már nem módosítható. A többlet- és hiánytranzakciókra vonatkozó irányelvek részleteinek beállításával lehetővé teszi a rendszer számára, hogy meghatározza, hogyan kezelje a cikkek túl- és alulfeldolgozását a bevételezéskor. A túl- és alulraktározást manuálisan is kezelheti a **Többlet-/hiánytranzakciók** oldalon.
 

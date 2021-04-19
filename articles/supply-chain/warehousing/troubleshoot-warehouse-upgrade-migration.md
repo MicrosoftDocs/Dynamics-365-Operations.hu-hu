@@ -2,11 +2,9 @@
 title: Speciális raktárkezelésre való frissítés és áttelepítés – hibaelhárítás
 description: Ez a témakör azt mutatja be, hogyan lehet megoldani gyakori problémákat, miközben frissíti és áttelepíti a speciális raktárkezelést.
 author: perlynne
-manager: tfehr
 ms.date: 10/19/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application user
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: f5bfee31ce27e919086f978fb3ff88ca61a65eba
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 953b828667a01157767c3ca79349fe972b0fbe9b
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5208087"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5826395"
 ---
 # <a name="troubleshoot-upgrade-and-migration-to-advanced-warehouse-management"></a>Speciális raktárkezelésre való frissítés és áttelepítés – hibaelhárítás
 
@@ -34,11 +32,11 @@ Ez a témakör azt mutatja be, hogyan lehet megoldani gyakori problémákat, mik
 
 ### <a name="issue-description"></a>Probléma leírása
 
-Ez a hibaüzenet a raktári alkalmazásban jelenik meg, mert az önaláírt tanúsítványok nem Android megbízhatóak a helyszíni környezetekben 8+ felett.
+Ez a hibaüzenet a Raktárkezelés mobilalkalmazásban jelenik meg, mert az önaláírt tanúsítványok nem Android megbízhatóak a helyszíni környezetekben 8+ felett.
 
 ### <a name="issue-resolution"></a>Probléma megoldása
 
-Külső (nyilvános) tanúsító hatóság (CA) használata. A probléma javítása a raktári alkalmazás 1.9.0.0 verziójában érhető el. A problémáról és a probléma megoldásáról a [Raktári alkalmazás kapcsolódási hibáinak hibaelhárítása](troubleshoot-warehouse-app-connection.md) című témakörben talál további információt.
+Külső (nyilvános) tanúsító hatóság (CA) használata. A probléma javítása a raktári alkalmazás 1.9.0.0 verziójában érhető el. A problémáról és a probléma megoldásáról a [Raktárkezelés mobilalkalmazás kapcsolódási hibáinak hibaelhárítása](troubleshoot-warehouse-app-connection.md) című témakörben talál további információt.
 
 ## <a name="what-is-the-approved-process-for-moving-from-basic-warehousing-to-advanced-warehousing"></a>Mi a jóváhagyott folyamat az alapraktározásról a speciális raktározásra való áttérésre?
 

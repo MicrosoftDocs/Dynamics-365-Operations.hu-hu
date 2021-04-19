@@ -2,13 +2,11 @@
 title: Betekintés az anyagkivételekbe
 description: Ez a témakör leírja, hogyan nyerhet jobb betekintést a nyersanyagkivételekbe a termelési rendelések és a kötegrendelések esetében.
 author: johanhoffmann
-manager: tfehr
 ms.date: 10/30/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: JmgShopSupervisorWorkspace, WHSProdWaveTableListPage
+ms.search.form: JmgShopSupervisorWorkspace, WHSProdWaveTableListPage, WHSProdWaveTableManageBOMPool
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: 1705903
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 87f82733388501f2f902e7ebba8b547d9ae5ed16
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: d06bd5baeb6b8b6995fe1ae47f14bab458b8ecc2
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5246165"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5831986"
 ---
 # <a name="visibility-into-material-exceptions"></a>Betekintés az anyagkivételekbe
 
@@ -59,7 +57,11 @@ Amikor kiválasztja a csempét, megnyílik a **Kiadás raktárba** lap. Ezen a l
 
 Az anyagjegyzék- vagy receptúrasor a kiadásakor hozzáadódik egy új termelési hullámhoz vagy egy meglévő nyitott hullámhoz, a termelési hullám sablonjában konfiguráltaktól függően. A hullám sablonjának beállítása révén úgy is beállíthat egy hullámot, hogy automatikus legyen a feldolgozása, amikor egy anyagjegyzék- vagy receptúrasort kiadnak. A hullám feldolgozásakor létrejön a nyersanyag-kitárolási raktári munka. Ha a hullám sablonja úgy van beállítva, hogy a hullámokat a kiadás alkalmával nem kell feldolgozni, akkor a hullám feldolgozatlan állapotban marad. A **Figyelmet igénylő feldolgozatlan hullámok** csempe azoknak az anyagjegyzék- és receptúrasoroknak a számát jeleníti meg, amelyek feldolgozatlan hullámokkal lettek kiadva a raktárba, és olyan nyersanyagdátumuk van, amely korábbi vagy ugyanaz, mint a munkaterület dátuma. A sorokatat egy művelet-erőforrásnak is fel kell dolgoznia, amely a munkaterület szűrőjére vonatkozik.
 
-A csempe kijelölésekor megnyílik a **Minden termelési hullám** lap. Ezt a lapot azoknak a nyitott hullámsoroknak a száma szűri, amelyek a csempe a feltételeinek megfelelő kiadott anyagjegyzék- és receptúrasorokból származó hullámsorokat tartalmaznak. A **Minden termelési hullám** lapon manuálisan fel lehet dolgozni a hullámot.
+A csempe kijelölésekor megnyílik a **Minden termelési hullám** oldal. Ezt a lapot azoknak a nyitott hullámsoroknak a száma szűri, amelyek a csempe a feltételeinek megfelelő kiadott anyagjegyzék- és receptúrasorokból származó hullámsorokat tartalmaznak.
+
+### <a name="manually-maintain-production-waves"></a>Termelési hullámok manuális karbantartása
+
+A **Minden termelési hullám** oldalon a Művelet panel **Hullám** lapján található gombokkal lehet manuálisan **feldolgozni** és **kiadni** egy hullámot. A **Termelések karbantartása** beállítással megtekintheti és karbantarthatja a **Term DBJ-gyűjtő**-adatokat, amelyek a hullámfolyamat kezeléséhez használatosak.
 
 ## <a name="open-warehouse-work-needing-attention"></a>Figyelmet igénylő nyitott raktári munka
 

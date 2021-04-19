@@ -2,11 +2,9 @@
 title: Betárolási fürtök
 description: A betárolási fürtökkel egyszerre több azonosítótábla felvételére is lehetőség van, majd a különböző helyeken történő betárolására. Rendkívül hasznosak lehetnek a kiskereskedelmi vállalatok számára, ahol az azonosítótábla általában nem teljes raklapnyi készletet jelentenek.
 author: Mirzaab
-manager: tfehr
 ms.date: 10/19/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 5552959068d109bffe32b8074666bcd63b57183a
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: b3a7d1b7109b83b26c8187a7f0d271f1c82f6d63
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5228441"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5840365"
 ---
 # <a name="putaway-clusters"></a>Betárolási fürtök
 
@@ -230,7 +228,7 @@ Ez a forgatókönyv szimulálja a betárolási fürtök feldolgozását.
 
 #### <a name="receive-and-sort-the-inventory-into-a-cluster"></a>A készlet bevételezése és rendezése egy fürtbe
 
-1. Jelentkezzen be a raktározási alkalmazásba olyan felhasználóként, aki a *61*. raktárban be van állítva.
+1. Jelentkezzen be a Raktárkezelés mobilalkalmazásba olyan felhasználóként, aki a *61*. raktárban be van állítva.
 1. Válassza a főmenü **Kimenő** elemét.
 1. Válassza a **Bejövő** menü **Fürt bevételezése és rendezése** lehetőségét.
 1. A **Ponum** mezőben adja meg a beszerzési rendelés számát.
@@ -272,7 +270,7 @@ A fürtben lévő cikkek betárolása előtt le kell zárni a fürtöt.
 
 #### <a name="put-the-cluster-away"></a>Fürt betárolása
 
-1. Jelentkezzen be a raktározási alkalmazásba olyan felhasználóként, aki a *61*. raktárban be van állítva.
+1. Jelentkezzen be a Raktárkezelés mobilalkalmazásba olyan felhasználóként, aki a *61*. raktárban be van állítva.
 1. Válassza a főmenü **Kimenő** elemét.
 1. Válassza a **Bejövő** menü **Fürtbetárolás** elemét.
 1. Válassza ki a **Fürtazonosító** lehetőséget, majd adja meg a lezárt fürtnél korábban megadott fürtazonosítót.

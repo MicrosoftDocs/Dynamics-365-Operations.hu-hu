@@ -2,11 +2,9 @@
 title: Bejövő raktári műveletek – hibaelhárítás
 description: Ez a témakör azt mutatja be, hogyan lehet megoldani gyakori problémákat, miközben a bejövő raktári műveleteket végzi a Microsoft Dynamics 365 Supply Chain Management szolgáltatásban.
 author: perlynne
-manager: tfehr
 ms.date: 10/19/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application user
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 6875c3c644b9993a384ba4d8623640536d7307e1
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: f0ea2ee208cdbb8f9fa6668bbcb6e15252a7c1b1
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5250882"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5828226"
 ---
 # <a name="troubleshoot-inbound-warehouse-operations"></a>Bejövő raktári műveletek – hibaelhárítás
 
@@ -65,5 +63,22 @@ Egy új bejövő rakománykezelési funkció, a *Rakománymennyiségek túlbevé
 
 További információ: [A regisztrált termékmennyiségek feladása a beszerzési rendelésekkel szemben](inbound-load-handling.md#post-registered-quantities).
 
+## <a name="when-i-register-inbound-orders-i-receive-the-following-error-message-the-quantity-is-not-valid"></a>Bejövő rendelések regisztrálásakor a következő hibaüzenet jelenik meg: "A mennyiség érvénytelen."
+
+### <a name="issue-description"></a>Probléma leírása
+
+Ha az **Azonosítótábla-csoportosítási házirend** mező beállítása *Felhasználó által meghatározott* egy olyan mobileszköz-menüelem esetén, amellyel bejövő rendeléseket regisztrálnak, hibaüzenet jelenik meg („A mennyiség érvénytelen”), és a regisztráció nem fejezhető be.
+
+### <a name="issue-cause"></a>Probléma oka
+
+Ha azonosítótábla-csoportosítási házirendként *Felhasználó által meghatározott* van beállítva, a rendszer e bejövő készletet külön azonosítótáblákra bontja az egységszekvencia-csoport alapján. Ha köteg- vagy sorozatszámokat használ a fogadott cikk nyomon követéséhez, az egyes kötegek vagy sorozatok mennyiségét a regisztrált azonosítótáblánként kell megadni. Ha az azonosítótáblához megadott mennyiség meghaladja az aktuális dimenziókhoz még beérkeztetni kívánt mennyiséget, hibaüzenet jelenik meg.
+
+### <a name="issue-resolution"></a>Probléma megoldása
+
+Ha egy elemet olyan mobileszköz-menüelem használatával regisztrál, amelyben az **Azonosítótábla-csoportosítási házirend** mező értéke *felhasználó által meghatározott*, előfordulhat, hogy a rendszer kéri az azonosítótábla-számok, kötegszámok vagy sorozatszámok megerősítését vagy megadását.
+
+Az azonosítótábla-visszaigazoló oldalon a rendszer az aktuális azonosítótáblához lefoglalt mennyiséget mutatja. A köteg vagy sorozat megerősítési oldalain a rendszer megmutatja azt a mennyiséget, amelyet még meg kell kapnia az aktuális azonosítótáblán. Ez magában foglal egy mezőt is, ahol megadhatja az azonosítótábla- és a köteg- vagy sorozatszám kombinációjához regisztrálandó mennyiséget. Ebben az esetben győződjön meg arról, hogy az azonosítótáblához regisztrált mennyiség nem haladja meg a még beérkeztetni kívánt mennyiséget.
+
+Másik lehetőségként, ha túl sok rendszámtábla jön létre a bejövő rendelés regisztrációja során, az **Azonosítótábla-csoportosítási házirend** mező értéke módosítható *Azonosítótábla csoportosítása* értékre, új egységszekvencia-csoport rendelhető a cikkhez, vagy inaktiválni lehet az **Azonosítótábla csoportosítása** beállítást az egységszekvencia-csoportnál.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

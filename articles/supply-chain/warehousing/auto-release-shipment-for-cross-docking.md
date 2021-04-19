@@ -2,11 +2,9 @@
 title: Szállítmány automatikus kiadása áttároláshoz
 description: Ez a témakör egy olyan áttárolási stratégiát mutat be, amely lehetővé teszi az igény szerinti rendelés automatikus kiadását a raktárban, ha az igény szerinti mennyiséget átadó termelési rendelés készre van jelentve, hogy a mennyiség közvetlenül a termelési kimenetből legyen kiszállítva a kimenő helyre.
 author: omulvad
-manager: tfehr
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSCrossDockingTemplate
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2019-10-1
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 619133cb1ef5f85222a42a08fd5fb77250c3d911
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 1c831030659b38b52932e504f744d24d999958a5
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5233175"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5831434"
 ---
 # <a name="auto-release-shipment-for-cross-docking"></a>Szállítmány automatikus kiadása áttároláshoz
 
@@ -163,7 +161,7 @@ Ha a késztermékek mennyiségét át szeretné tárolni a társított értékes
 8. A **Termelési rendelés** lap műveleti ablakának **Termelési rendelés** lapján a **Feldolgozás** csoportban válassza a **Becslés** elemet, majd válassza az **OK** lehetőséget. A rendelés becslése megtörténik, és a nyersanyag mennyisége a termeléshez le lesz foglalva.
 9. A **Termelési rendelés lap** műveleti ablakában a **Feldolgozás** csoportban válassza ki a **Felszabadítás** elemet, majd válassza az **OK** lehetőséget. A raktári kitárolási munka létrejön a nyersanyagokhoz.
 10. A munka megnyitása és áttekintése. A Művelet ablaktábla **Raktár** lapjának **Általános** csoportjában válassza a **Munka részletei** elemet. Jegyezze fel a munkaazonosítót
-11. Jelentkezzen be raktáralkalmazásba, hogy munkát futtasson az 51-es raktárban.
+11. Jelentkezzen be a Raktárkezelés mobilalkalmazásba, hogy munkát futtasson az 51-es raktárban.
 12. Válassza a **Termelés** \> **Termelési kitárolás** lehetőséget.
 13. Adja meg, hogy melyik munkaazonosító induljon el, és végezze el a nyersanyag kitárolását. 
 

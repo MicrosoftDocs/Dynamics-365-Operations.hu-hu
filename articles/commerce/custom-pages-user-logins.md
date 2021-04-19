@@ -2,11 +2,9 @@
 title: Felhasználói bejelentkezéshez használt egyéni oldalak beállítása
 description: Ez a témakör azt mutatja be, hogyan lehet egyéni lapokat létrehozni a Microsoft Dynamics 365 Commerce alkalmazásban, amelyek az Azure Active Directory (Azure AD) cég és ügyfél (B2C) közötti bérlők felhasználóinak személyre szabott bejelentkezésit kezelik.
 author: brianshook
-manager: annbe
-ms.date: 09/15/2020
+ms.date: 03/17/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3328fad5328ae1954a6749f9a5eebcb71c723698
-ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
+ms.openlocfilehash: 0318814f421ab862559965bb4b003308d6279812
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/19/2021
-ms.locfileid: "5477948"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5799445"
 ---
 # <a name="set-up-custom-pages-for-user-sign-ins"></a>Felhasználói bejelentkezéshez használt egyéni oldalak beállítása
 
@@ -31,7 +29,12 @@ Ez a témakör azt mutatja be, hogyan lehet egyéni lapokat létrehozni a Micros
 
 A Dynamics 365 Commerce alkalmazásban létrehozott egyéni lapok felhasználói bejelentkezési folyamatok kezelésére való beállításához be kell állítania azokat a Azure AD-szabályokat, amelyekre a Commerce-környezetben hivatkozni fognak. A „Regisztráció és bejelentkezés”, „Profilszerkesztés” és „Új jelszó létrehozása” Azure AD B2C irányelveket az Azure AD B2C alkalmazás használatával állíthatja be. Az Azure AD B2C bérlő és az irányelvnevek később hivatkozhatók a létesítési folyamat során, amelyet a Commerce-környezetben, Microsoft Dynamics Lifecycle Services (LCS) használatával végeznek.
 
-Az egyéni Commerce-lapok a bejelentkezés, a regisztráció, a számlaprofil szerkesztése vagy az új jelszó beállítására szolgáló modul használatával hozhatók létre. Az ilyen egyéni lapokhoz közzétett lap URL-címeit az Azure AD B2C házirend-konfigurációi között kell megadni az Azure-portálon.
+Az egyéni Commerce-lapok a bejelentkezés, a regisztráció, a számlaprofil szerkesztése, az új jelszó beállítása vagy általános AAD-modulok használatával hozhatók létre. Az ilyen egyéni lapokhoz közzétett lap URL-címeit az Azure AD B2C házirend-konfigurációi között kell megadni az Azure-portálon.
+
+> [!WARNING] 
+> Az Azure AD B2C megszünteti a régi (örökölt) felhasználói folyamatokat 2021. augusztus 1-jéig. Ezért érdemes megterveznie a felhasználói folyamatai áttelepítését az új, ajánlott verzióba. Az új verzió funkcióparitást és új funkciókat biztosít. További információért lásd: [Felhasználói folyamatok az Azure Active Directory B2C-ben](https://docs.microsoft.com/azure/active-directory-b2c/user-flow-overview).
+
+>A Commerce 10.0.15-ös vagy újabb verziójának modulkönyvtárát az ajánlott B2C felhasználói folyamatokkal kell használni. Az Azure AD B2C-ben kínált alapértelmezett felhasználói irányelvoldalak is használhatók, és lehetővé teszik a vállalati márkajelzéssel kapcsolatos háttérkép-, embléma- és háttérszínváltozásokat. Bár a tervezési lehetőségek korlátozottabbak, az alapértelmezett felhasználói irányelvoldalak Azure AD B2C-irányelvfunkciókat biztosítanak dedikált egyéni oldalak létrehozása és konfigurálása nélkül. 
 
 ## <a name="set-up-b2c-policies"></a>B2C irányelvek beállítása
 
@@ -45,7 +48,7 @@ Most konfigurálhatja a „Regisztráció és bejelentkezés”, „Profilszerke
 
 A „Regisztráció és bejelentkezés” irányelv konfigurálásához kövesse az alábbi lépéseket.
 
-1. Válassza ki az **Új felhasználói folyamat** lehetőséget, majd az **Ajánlott** lapon válassza ki a **Regisztráció és bejelentkezés** irányelvet.
+1. Válassza ki az **Új felhasználói folyamat** lehetőséget, majd az **Ajánlott** lapon válassza ki a **Regisztráció és bejelentkezés** irányelvet, és válassza a **Létrehozás** lehetőséget.
 1. Adja meg az irányelv nevét (például **B2C\_1\_SignInSignUp**).
 1. Az **Identitásszolgáltatók** szakaszban válassza ki az irányelvhez használandó identitásszolgáltatókat. Legalább az **E-mailes feliratkozás** lehetőséget be kell jelölni.
 1. Az **Attribútum összegyűjtése** oszlopban jelölje be az **E-mail-cím**, az **Utónév** és a **Vezetéknév** jelölőnégyzetét.
@@ -68,10 +71,10 @@ Az egyéni lapok összeállítását követően visszatérhet az irányelvhez, �
 
 A „Profilszerkesztés” irányelv konfigurálásához kövesse az alábbi lépéseket.
 
-1. Válassza ki az **Új felhasználói folyamat** lehetőséget, majd az **Ajánlott** lapon válassza ki a **Profilszerkesztés** irányelvet.
+1. Válassza ki az **Új felhasználói folyamat** lehetőséget, majd az **Ajánlott** lapon válassza ki a **Profilszerkesztés** irányelvet, és válassza a **Létrehozás** lehetőséget.
 1. Adja meg az irányelv nevét (például **B2C\_1\_EditProfile**).
 1. Az **Identitásszolgáltatók** szakaszban válassza ki az irányelvhez használandó identitásszolgáltatókat. Legalább a **Bejelentkezés helyi fiókkal** lehetőséget ki kell választani.
-1. Az **Attribútum összegyűjtése** oszlopban jelölje be az **E-mail-címek** és a **Vezetéknév** jelölőnégyzetét.
+1. Az **Attribútum összegyűjtése** oszlopban jelölje be a **Keresztnév** és a **Vezetéknév** jelölőnégyzetét.
 1. A **Visszatérítési igény** oszlopban válassza ki az **E-mail-címek**, **Utónév**, **Identitásszolgáltató**, **Vezetéknév** és **Felhasználó objektumazonosítója** jelölőnégyzeteket.
 1. Az irányelv létrehozásához kattintson az **OK** lehetőségre.
 1. Kattintson duplán az új irányelv nevére, majd a navigációs ablakban válassza ki a **Tulajdonságok** lehetőséget.
@@ -83,16 +86,10 @@ Az egyéni lapok összeállítását követően visszatérhet az irányelvhez, �
 
 Az „Új jelszó létrehozása” irányelv konfigurálásához kövesse az alábbi lépéseket.
 
-1. Válassza ki az **Új felhasználói folyamat** lehetőséget, majd az **Előnézet** lapon válassza ki az **Új jelszó létrehozása v1.1** irányelvet.
-
-    ![Az Előnézet lapon kiválasztott Új jelszó létrehozása v1.1 irányelv](./media/B2C_ForgetPassword_Menu.png)
-
+1. Válassza az **Új felhasználói folyamat** lehetőséget, majd válassza a **Jelszó-visszaállítás** lehetőséget, és válassza az **Ajánlott** lapot, majd kattintson a **Létrehozás** gombra.
 1. Adja meg az irányelv nevét (például **B2C\_1\_ForgetPassword**).
 1. Az **Identitásszolgáltatók** szakaszban válassza az **Új jelszó beállítása e-mail-cím használatával** lehetőséget.
 1. A **Visszatérítési igény** oszlopban válassza ki az **E-mail-címek**, **Utónév**, **Vezetéknév** és **Felhasználó objektumazonosítója** jelölőnégyzeteket.
-
-    ![Kijelölt igények](./media/B2C_ForgetPassword_Attributes.png)
-
 1. Az irányelv létrehozásához kattintson az **OK** lehetőségre.
 1. Kattintson duplán az új irányelv nevére, majd a navigációs ablakban válassza ki a **Tulajdonságok** lehetőséget.
 1. Adja meg a **Oldalelrendezés JavaScript általi érvényesítésének engedélyezése (előnézet)** lehetőség esetében a **Be** értéket.
@@ -101,16 +98,24 @@ Az egyéni lapok összeállítását követően visszatérhet az irányelvhez, �
 
 ## <a name="build-the-custom-pages"></a>Egyéni lapok létrehozása
 
-Az egyéni lapoknak a felhasználói bejelentkezések kezelésére történő létrehozásához hajtsa végre az alábbi lépéseket.
+A Commerce dedikált Azure AD-modulokat tartalmaz a Azure AD B2C felhasználói irányelvek egyéni oldalainak létrehozásához. Az oldalak kifejezetten az egyes felhasználói irányelvek elrendezéséhez állíthatók össze az alábbiakban részletezett fő Azure AD B2C-modulok segítségével. Másik lehetőségként az **AAD Általános** modul az Azure AD B2C összes oldalelrendezéséhez és irányelvéhez használható (még az alább fel nem sorolt irányelveken belüli lapelrendezési beállításokhoz is). 
 
-1. Nyissa meg a webhelyét a Commerce létrehozási eszközökben.
-1. Állítsa össze a következő öt sablont és öt lapot:
+- Az oldalspecifikus Azure AD-modulok az Azure AD B2C által megjelenített adatbeviteli elemekhez vannak kötve. Ezek a modulok nagyobb ellenőrzést adnak az oldalak elemeinek elhelyezése felett. Előfordulhat azonban, hogy több oldalt és modulbővítményt kell építeni, hogy az alább ismertetett alapértelmezett beállításokon túli változatok figyelembe vételéhez.
+- Az **AAD Általános** modul létrehozza a „div” elemet az Azure AD B2C számára, hogy a felhasználói irányelvoldal elrendezésének minden elemét megjelenítse, amely nagyobb rugalmasságot biztosít az oldal B2C-funkcióinak, de kevésbé képes szabályozni a pozicionálást és a stílust (bár a CSS használható a webhely megjelenésének megfelelően).
 
+Létrehozhat egyetlen oldalt az **AAD Általános** modullal, és használhatja az összes felhasználói irányelvoldalhoz, vagy létrehozhat bizonyos oldalakat az egyes Azure AD-modulok használatával a bejelentkezéshez, a regisztrációhoz, a profilszerkesztéshez, a jelszó-visszaállításhoz és a jelszó-visszaállítás ellenőrzéséhez. A kettő kombinációját is használhatja az alábbi oldalelrendezések adott Azure AD-oldalainak használatával, valamint az általános AAD-moduloldal használatával az ezeken vagy más felhasználói irányelvoldalakon belüli fennmaradó oldalelrendezések számára.
+
+Ha többet szeretne megtudni a modultárral szállított Azure AD-modulokról, olvassa el a következőt: [Identitáskezelési oldalak és modulok](identity-mgmt-modules.md).
+
+Az egyéni oldalaknak a felhasználói bejelentkezések kezelésére szolgáló speciális azonosságmodulokkal történő létrehozásához hajtsa végre az alábbi lépéseket.
+
+1. Nyissa meg a webhelyét a Commerce webhelykészítőben.
+1. Állítsa össze a következő öt sablont és oldalt (ha még nem található meg a webhelyen):
     - A **Bejelentkezés** sablont és a bejelentkezési modult használó lapot.
     - A **Regisztráció** sablont és a regisztrációs modult használó lapot.
     - Az **Új jelszó beállítása** sablont és az új jelszó beállítás modult használó lapot.
     - Az **Új jelszó megerősítése** sablont és az új jelszó megerősítése modult használó lapot.
-    - A **Profilszerkesztés** sablont és a fiókprofil-szerkesztő modult használó lapot
+    - A **Profilszerkesztés** sablont és a fiókprofil-szerkesztő modult használó lapot.
 
 A lapok összeállítása során kövesse az alábbi irányelveket:
 
@@ -119,7 +124,7 @@ A lapok összeállítása során kövesse az alábbi irányelveket:
 - Miután közzétette a lapokat és az URL-címeket, gyűjtse össze az URL-eket, amelyeket az Azure AD B2C irányelv-konfigurációkhoz használni kell. A **?preloadscripts=true** utótagot a program minden URL-címhez hozzáadja, amikor használatban van.
 
 > [!IMPORTANT]
-> Ne használja újra az olyan univerzális fejléceket és lábléceket, amelyek relatív hivatkozásokkal rendelkeznek. Ezeket a lapokat a rendszer az Azure AD B2C tartományban tárolja, amikor használatban vannak, ezért csak abszolút URL-címeket szabad használni minden hivatkozáshoz.
+> Az Azure AD B2C-ben hivatkozott oldalak közvetlenül az Azure AD B2C-bérlő tartományából kerülnek kiszolgálásra. Ne használja újra az olyan univerzális fejléceket és lábléceket, amelyek relatív hivatkozásokkal rendelkeznek. Ezeket a lapokat a rendszer az Azure AD B2C tartományban tárolja, amikor használatban vannak, ezért csak abszolút URL-címeket szabad használni minden hivatkozáshoz. Javasoljuk, hogy hozzon létre egy adott élőfejet és élőlábat abszolút URL-címekkel az Azure AD-hez kapcsolódó egyéni oldalakhoz, és távolítsa el a Retail Serverrel való kapcsolatot igénylő, Commerce-specifikus modulokat. Például a kedvencek, a keresősáv, a bejelentkezési hivatkozás és a kosár modulok nem szerepelnek az Azure AD B2C felhasználói folyamatokban használt oldalakon.
 
 ## <a name="configure-azure-ad-b2c-policies-with-custom-page-information"></a>Az Azure AD B2C irányelvek beállítása egyénilap-információkkal 
 
@@ -133,51 +138,53 @@ A „Regisztráció és bejelentkezés” irányelvnek az egyéni lap informáci
 1. Válassza ki az **Egyesített bejelentkezési vagy regisztrációs lap** elrendezést.
 1. Az **Egyéni laptartalom használata** lehetőséget állítsa be **Igen** értékre.
 1. Írja be a teljes bejelentkezési URL-t az **Egyéni lap URI** mezőbe. Foglalja bele a **?preloadscripts=true** utótagot. Például írja be, hogy ``www.<my domain>.com/sign-in?preloadscripts=true``.
-1. A **Lapelrendezés verziója (előnézet)** mezőben válassza ki a **1.2.0** értéket.
+1. A **Lapelrendezés verziója** mezőben válassza a **2.1.0** vagy újabb verziót (a Commerce 10.0.15-ös vagy újabb verziójához modulkönyvtárat igényel).
+1. Válassza a **Mentés** lehetőséget.
 1. Válassza ki a **Helyi fiók regisztrációs lapja** elrendezést.
 1. Az **Egyéni laptartalom használata** lehetőséget állítsa be **Igen** értékre.
 1. Írja be a teljes bejelentkezési URL-t az **Egyéni lap URI** mezőbe. Foglalja bele a **?preloadscripts=true** utótagot. Például írja be, hogy ``www.<my domain>.com/sign-up?preloadscripts=true``.
-1. A **Lapelrendezés verziója (előnézet)** mezőben válassza ki a **1.2.0** értéket.
+1. A **Lapelrendezés verziója** mezőben válassza a **2.1.0** vagy újabb verziót (a Commerce 10.0.15-ös vagy újabb verziójához modulkönyvtárat igényel).
 1. A **Felhasználói attribútumok** szakaszban hajtsa végre a következő lépéseket:
+    1. Az **Utónév** és **Vezetéknév** attribútumok esetében válassza a **Nem** értéket az **Ellenőrzés szükséges** oszlopban.
+    1. **E-mail-cím** attribútum esetén ajánlott az **Ellenőrzés szükséges** oszlopban az **Igen** alapértelmezett értéket hagyni. Ez a beállítás biztosítja, hogy a megadott e-mail-címmel regisztráló felhasználók ellenőrizzék, hogy övék-e az e-mail-cím.
+    1. Az **E-mail-cím**, **Utónév** és **Vezetéknév** attribútumok esetében válassza a **Nem** értéket az **Opcionális** oszlopban.
+1. Válassza a **Mentés** lehetőséget.
 
-    1. Az **E-mail-cím**, **Utónév** és **Vezetéknév** attribútumok esetében válassza a **Nem** értéket az **Ellenőrzés szükséges** mezőben.
-    1. Az **Utónév** és **Vezetéknév** attribútumok esetében válassza a **Nem** értéket az **Opcionális** mezőben.
-
-    ![A Helyi fiók regisztrációs lap irányelvének konfigurálása](./media/B2C_SignUp_PageURLConfig.png)
+    ![A helyi fiók regisztrációs lap irányelvének konfigurálása](./media/B2C_SignInSignUp_Recommended_PageLayoutExample.png)
 
 ### <a name="update-the-profile-editing-policy-with-custom-page-information"></a>A „Profilszerkesztés” irányelv frissítése az egyéni lap információival
 
 A „Profilszerkesztés” irányelvnek az egyéni lap információival való frissítéséhez tegye a következőket.
 
 1. A korábban konfigurált **Profilszerkesztés** irányelv navigációs ablakában válassza ki a **Lapelrendezések** elemet.
-1. Válassza ki **Profilszerkesztés lap** elrendezést.
+1. Válassza ki a **Profilszerkesztés lap** elrendezést (előfordulhat, hogy a képernyőtől függően más elrendezési beállításokat is át kell görgetni).
 1. Az **Egyéni laptartalom használata** lehetőséget állítsa be **Igen** értékre.
 1. Írja be a teljes profilszerkesztési URL-t az **Egyéni lap URI** mezőbe. Foglalja bele a **?preloadscripts=true** utótagot. Például írja be, hogy ``www.<my domain>.com/profile-edit?preloadscripts=true``.
-1. A **Lapelrendezés verziója (előnézet)** mezőben válassza ki a **1.2.0** értéket.
+1. A **Lapelrendezés verziója** esetében válassza a **2.1.0** vagy magasabb verziót (a Commerce 10.0.15-ös vagy újabb verziójához modulkönyvtárat igényel).
 1. A **Felhasználói attribútumok** szakaszban hajtsa végre a következő lépéseket:
-
-    1. Az **E-mail-cím** és **Utónév** attribútumok esetében válassza a **Nem** értéket az **Ellenőrzés szükséges** mezőben.
-    1. Az **Utónév** és **Vezetéknév** attribútumok esetében válassza a **Nem** értéket az **Opcionális** mezőben.
+    1. Az **Utónév** és **Vezetéknév** attribútumok esetében válassza a **Nem** értéket az **Opcionális** oszlopban.
+    1. Az **Utónév** és **Vezetéknév** attribútumok esetében válassza a **Nem** értéket az **Ellenőrzés szükséges** oszlopban.
+1. Válassza a **Mentés** lehetőséget.
 
 ### <a name="update-the-password-reset-policy-with-custom-page-information"></a>Az „Új jelszó létrehozása” irányelv frissítése az egyéni lap információival
 
 Az „Új jelszó létrehozása” irányelvnek az egyéni lap információival való frissítéséhez tegye a következőket.
 
 1. A korábban konfigurált **Új jelszó létrehozása** irányelv navigációs ablakában válassza ki a **Lapelrendezések** elemet.
-1. Válassza ki az **Új jelszó létrehozása lap** elrendezést.
+1. Válassza ki az **Elfelejtett jelszó lap** elrendezést.
 1. Az **Egyéni laptartalom használata** lehetőséget állítsa be **Igen** értékre.
-1. Írja be a teljes jelszóvisszaállítási URL-t az **Egyéni lap URI** mezőbe. Foglalja bele a **?preloadscripts=true** utótagot. Például írja be, hogy ``www.<my domain>.com/passwordreset?preloadscripts=true``.
-1. A **Lapelrendezés verziója (előnézet)** mezőben válassza ki a **1.2.0** értéket.
-1. Válassza ki a **Fiókellenőrzés lap** elrendezést.
-1. Az **Egyéni laptartalom használata** lehetőséget állítsa be **Igen** értékre.
-1. Írja be a teljes jelszóvisszaállítás-érvényesítési URL-t az **Egyéni lap URI** mezőbe. Foglalja bele a **?preloadscripts=true** utótagot. Például írja be, hogy ``www.<my domain>.com/passwordreset-verification?preloadscripts=true``.
-1. A **Lapelrendezés verziója (előnézet)** mezőben válassza ki a **1.2.0** értéket.
-
-
+1. Írja be a teljes jelszóvisszaállítás-érvényesítési URL-t az **Egyéni lap URI** mezőbe. Foglalja bele a **?preloadscripts=true** utótagot. Például írja be, hogy ``www.<my domain>.com/password-reset-verification?preloadscripts=true``.
+1. A **Lapelrendezés verziója** mezőben válassza a **2.1.0** vagy magasabb verziót (a Commerce 10.0.15-ös vagy újabb verziójához modulkönyvtárat igényel).
+2. Válassza a **Mentés** lehetőséget.
+3. Válassza ki az **Jelszó módosítása lap** elrendezést.
+4. Az **Egyéni laptartalom használata** lehetőséget állítsa be **Igen** értékre.
+5. Írja be a teljes jelszóvisszaállítási URL-t az **Egyéni lap URI** mezőbe. Foglalja bele a **?preloadscripts=true** utótagot. Például írja be, hogy ``www.<my domain>.com/password-reset?preloadscripts=true``.
+6. A **Lapelrendezés verziója** mezőben válassza a **2.1.0** vagy magasabb verziót (a Commerce 10.0.15-ös vagy újabb verziójához modulkönyvtárat igényel).
+7. Válassza a **Mentés** lehetőséget.
 
 ## <a name="customize-default-text-strings-for-labels-and-descriptions"></a>Címkék és leírások alapértelmezett szöveges karakterláncainak testreszabása
 
-A modulkönyvtárban a bejelentkezési modulok a címkék és leírások alapértelmezett szövegével kerülnek előre kitöltésre. Ezeket a karakterláncokat testreszabhatja a szoftverfejlesztői készletben (SDK) a bejelentkezési modul global.json fájljában található értékek frissítésével.
+A modulkönyvtárban a bejelentkezési modulok a címkék és leírások alapértelmezett szövegével kerülnek előre kitöltésre. Testreszabhatja a karakterláncokat annak a modulnak a tulajdonságpaneljében, amelyen dolgozik. Az oldalon található további karakterláncokhoz (például az **Elfelejtett jelszó?** linkszöveghez vagy a **Fiók létrehozása** műveletszöveghez) a Commerce szoftverfejlesztő készlet (SDK) használata és a bejelentkezési modul global.json fájljában lévő értékek frissítése szükséges.
 
 Az elfelejtett jelszó hivatkozásának alapértelmezett szövege például **Elfelejtette a jelszót?**. A következőkben látható ez az alapértelmezett szöveg a bejelentkezési oldalon.
 

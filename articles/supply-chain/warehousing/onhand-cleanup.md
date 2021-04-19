@@ -2,11 +2,9 @@
 title: Raktárkezelés készleten lévő bejegyzéseinek karbantartási feladata
 description: Ez a témakör bemutatja az aktuális készlet bejegyzések karbantartási feladatát, amely a kapcsolódó, de szükségtelen rekordok azonosításával és törlésével segít a rendszer teljesítményének növelésében.
 author: perlynne
-manager: tfehr
 ms.date: 04/23/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysOperationTemplateForm
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-04-03
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: 93c77434a912554dab486b42c0c9fffd68cf9435
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 4dd3bb9dc580e715b6945da1f94cf27e601c549e
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5226003"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5808726"
 ---
 # <a name="warehouse-management-on-hand-entries-cleanup-job"></a>Raktárkezelés készleten lévő bejegyzéseinek karbantartási feladata
 

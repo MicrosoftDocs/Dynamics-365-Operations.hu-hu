@@ -2,10 +2,8 @@
 title: Hullámcímkék újranyomtatása és érvénytelenítése
 description: Ez a témakör azt mutatja be, hogyan lehet érvényteleníteni és újranyomtatni a meglévő hullám-címkéket.
 author: GarmMSFT
-manager: PJacobse
 ms.date: 07/09/2020
 ms.topic: article
-ms.service: dynamics-ax-applications
 ms.search.form: WHSWaveLabel, WHSWaveLabelTemplate, WHSWaveLabelLayoutRow, WHSWaveTableListPage, WHSWorkException, WHSMobileDisplayWaveLabelListLookup, WHSWaveLabelLayout, WHSWaveLabelType, WHSWaveLabelTemplateGroup
 audience: Application User
 ms.reviewer: PJacobse
@@ -13,12 +11,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-07-09
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 3d67052d47cf23acbb51354773fbd306545bbfa7
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 0b309a0e40541463db4d71fa9e7cac5db2d799be
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5228369"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5817365"
 ---
 # <a name="reprint-and-void-wave-labels"></a>Hullámcímkék újranyomtatása és érvénytelenítése
 
@@ -218,5 +216,8 @@ Munkakivételek vezérlik a rövid kitárolás viselkedését. Munkakivétel be�
 1. Válassza ki az ehhez a forgatókönyvhöz létrehozott munkakivételi kódot.
 1. Ha bejelölte a megfelelő kivételt, elérhetővé válik az **Érvénytelenítés és az újranyomtatás** jelölőnégyzet. Jelölje be ezt a jelölőnégyzetet, és hagyja jóvá. A megerősítést követően a program újraszámítja a **Címke-összeállítás azonosító** mező által meghatározott címketekercs-sorozatot a módosult munkasormennyiség alapján. Majd újranyomtatja a megadott nyomtatón.
 
+## <a name="additional-resources"></a>További erőforrások
+
+- [Hullámcímke nyomtatása](configure-wave-label-printing.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

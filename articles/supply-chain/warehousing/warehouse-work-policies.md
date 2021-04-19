@@ -2,11 +2,9 @@
 title: Munkairányelvek
 description: Ez a témakör ismerteti a munkával kapcsolatos irányelvek beállítását.
 author: perlynne
-manager: tfehr
 ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSWorkPolicy
 audience: Application User
@@ -15,20 +13,20 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 3e7814790bce0aee648421e3a69d702fd0012404
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 39a9ba00763fac220eff16bdd42aa07cc8e35ba4
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5248547"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5838130"
 ---
 # <a name="work-policies"></a>Munkairányelvek
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör azt mutatja be, hogyan lehet beállítani a rendszert és a raktári alkalmazást úgy, hogy támogassák a munkairányelveket. Ez a funkció a beszerzési vagy átmozgatási rendelések fogadása, illetve a termelési folyamatok befejezése esetén a készlet gyors regisztrálására használható, eltárolási munka létrehozása nélkül. Ez a témakör általános tájékoztatást tartalmaz. Az azonosítótábla-beszerzéssel kapcsolatos részletes információk: [Azonosítótábla-bevételezés a raktári alkalmazás használatával](warehousing-mobile-device-app-license-plate-receiving.md).
+Ez a témakör azt mutatja be, hogyan lehet beállítani a rendszert és a Raktárkezelés mobilalkalmazást úgy, hogy támogassák a munkairányelveket. Ez a funkció a beszerzési vagy átmozgatási rendelések fogadása, illetve a termelési folyamatok befejezése esetén a készlet gyors regisztrálására használható, eltárolási munka létrehozása nélkül. Ez a témakör általános tájékoztatást tartalmaz. Az azonosítótábla-beszerzéssel kapcsolatos részletes információk: [Azonosítótábla-bevételezés a Raktárkezelés mobilalkalmazás használatával](warehousing-mobile-device-app-license-plate-receiving.md).
 
-A munkairányelvek azt vezérlik, hogy a gyártott cikk készként jelentésekor vagy a raktári alkalmazásba történő bevételezéskor történik-e a raktári munka létrehozása. Minden munkairányelvet úgy állíthat be, hogy meghatározza a feltételeket: a munkarendelés-típusokat és folyamatokat, a készlet helyét és a termékeket (ha van). Például egy beszerzési rendelést az *A0001* terméknél el kell fogadni a *RECV* helyen a *24*-es raktárban. Később a termék egy másik folyamatban lesz felhasználva a *RECV* helyen. Ebben az esetben munkairányelvet állíthat be, amellyel megakadályozhatja, hogy az eltárolási munka létrejöjjön, amikor egy dolgozó jelenti a beérkezett *A0001* terméket a *RECV* helyen.
+A munkairányelvek azt vezérlik, hogy a gyártott cikk készként jelentésekor vagy a Raktárkezelés mobilalkalmazásba történő bevételezéskor történik-e a raktári munka létrehozása. Minden munkairányelvet úgy állíthat be, hogy meghatározza a feltételeket: a munkarendelés-típusokat és folyamatokat, a készlet helyét és a termékeket (ha van). Például egy beszerzési rendelést az *A0001* terméknél el kell fogadni a *RECV* helyen a *24*-es raktárban. Később a termék egy másik folyamatban lesz felhasználva a *RECV* helyen. Ebben az esetben munkairányelvet állíthat be, amellyel megakadályozhatja, hogy az eltárolási munka létrejöjjön, amikor egy dolgozó jelenti a beérkezett *A0001* terméket a *RECV* helyen.
 
 > [!NOTE]
 > - Ahhoz, hogy egy munkairányelv aktív legyen, legalább egy helyet meg kell határozni a **Munkairányelvek** lap **Készlethelyek** gyorslapján. 
@@ -297,7 +295,7 @@ Amikor a termelési rendelést készként jelentik, a rendszer nem hoz létre mu
 
 A mobileszköz-menüelemek beállításával kapcsolatos további tudnivalókat lásd: [Mobileszközök beállítása raktári munkához](configure-mobile-devices-warehouse.md).
 
-Az azonosítótábla-beszerzéssel és a munkairányelvekkel kapcsolatos részletes információk: [Azonosítótábla-bevételezés a raktári alkalmazás használatával](warehousing-mobile-device-app-license-plate-receiving.md).
+Az azonosítótábla-beszerzéssel és a munkairányelvekkel kapcsolatos részletes információk: [Azonosítótábla-bevételezés a Raktárkezelés mobilalkalmazás használatával](warehousing-mobile-device-app-license-plate-receiving.md).
 
 További információ a bejövő rakományok kezeléséről: [Beszerzési rendelések bejövő rakományának kezelése a raktárban](inbound-load-handling.md).
 
