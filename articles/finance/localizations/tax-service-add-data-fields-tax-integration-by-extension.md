@@ -37,9 +37,9 @@ Az adatmodellben lévő adatokat objektumok hordozzák és az osztályok hajtjá
 
 Alább felsoroltuk a főbb objektumokat:
 
-* AxClass/TaxIntegration **Dokumentum** objektum
-* AxClass/TaxIntegration **Sor** objektum
-* AxClass/TaxIntegration **TaxLine** objektum
+* AxClass/TaxIntegration **Document** Object
+* AxClass/TaxIntegration **Line** Object
+* AxClass/TaxIntegration **TaxLine** Object
 
 A következő ábra megmutatja, hogyan kapcsolódnak ezek az objektumok.
 
@@ -59,7 +59,7 @@ A folyamat során az adatokat a tevékenységek manipulálják.
 
 ### <a name="key-activities"></a>Kulcsfontosságú tevékenységek
 
-* AxClass/TaxIntegration **Számítás** ActivityOnDocument
+* AxClass/TaxIntegration **Calculation** ActivityOnDocument
 * AxClass/TaxIntegration **CurrencyExchange** ActivityOnDocument
 * AxClass/TaxIntegration **DataPersistence** ActivityOnDocument
 * AxClass/TaxIntegration **DataRetrieval** ActivityOnDocument
