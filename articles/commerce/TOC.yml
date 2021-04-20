@@ -280,7 +280,7 @@
                   href: dev-itpro/secure-retail-cloud-pos.md
                 - name: A Retail Hardware Station konfigurálása és telepítése
                   href: retail-hardware-station-configuration-installation.md
-                - name: Önkiszolgáló összetevők központi telepítése
+                - name: Örökölt önkiszolgáló-összetevők központi telepítése
                   href: dev-itpro/retail-mass-deployment.md
                 - name: Commerce-összetevővel kapcsolatos események a diagnosztikához és a hibaelhárításhoz
                   href: dev-itpro/retail-component-events-diagnostics-troubleshooting.md
@@ -1056,6 +1056,16 @@
                       href: author-header-module.md
                     - name: Láblécmodul
                       href: author-footer-module.md
+                - name: 'Oldal-, metaadat- és parancsfájlmodulok'
+                  items:
+                    - name: Alapértelmezett oldalmodul
+                      href: default-page-module.md
+                    - name: Oldalösszegző modulok
+                      href: page-summary-module.md
+                    - name: Metacímkék modulja
+                      href: metatags-module.md
+                    - name: Külső és belső parancsfájlmodulok
+                      href: script-module.md
                 - name: Termékadatok oldal moduljai
                   items:
                     - name: Vásárlásmező-modul
@@ -2002,7 +2012,7 @@
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/commerce/toc.json
             - name: Entitásadatok megnyitása Excelben és frissítésük az Excel-bővítmény segítségével
               href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/commerce/toc.json
-            - name: Az Excel programban történő megnyitási élmények létrehozása
+            - name: Az Excel programban történő megnyitási gyakorlat létrehozása
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/commerce/toc.json
             - name: Sablonok hozzáadása a Sorok megnyitása az Excelben menühöz
               href: ../fin-ops-core/dev-itpro/user-interface/add-templates-open-lines-excel-menu.md?toc=/dynamics365/commerce/toc.json

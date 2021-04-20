@@ -228,6 +228,8 @@
                               href: data-entities/dual-write/party-gab.md
                             - name: A Power Portal használata a Fél adatmodelljével
                               href: data-entities/dual-write/party-gab-portal.md
+                            - name: Frissítés a fél és globális címjegyzék modelljére
+                              href: data-entities/dual-write/upgrade-party-gab.md
                             - name: Jegyzetintegráció
                               href: data-entities/dual-write/notes-integration.md
                             - name: Leképezési hivatkozás
@@ -714,6 +716,8 @@
               items:
                 - name: X++ és hibakeresési funkciók
                   href: dev-tools/new-x-debugger-features.md
+                - name: A Visual Studio 2017 követelményei az X++ nyelvhez
+                  href: dev-tools/developer-tools-vs2017.md
                 - name: Hibakeresés az X++-kódban
                   href: dev-tools/debug-xpp.md
                 - name: EventHandlerResult-osztályok a kérelmi vagy válaszesetekben
@@ -1026,10 +1030,14 @@
                       href: perf-test/atl-faq.md
             - name: Dátum érvényessége
               href: dev-tools/date-effectivity.md
-            - name: Független szoftverszállítók licencelése
-              href: dev-tools/isv-licensing.md
-            - name: Független szoftverszállítók helyszíni licencelése
-              href: dev-tools/isv-licensing-on-prem.md
+            - name: Fejlesztés független szoftverszállítók számára
+              items:
+                - name: X++-modulok csatolása a csomagokhoz az ISV Studio használatával
+                  href: dev-tools/isv-studio-solutions.md
+                - name: Független szoftverszállítók licencelése
+                  href: dev-tools/isv-licensing.md
+                - name: Független szoftverszállítók helyszíni licencelése
+                  href: dev-tools/isv-licensing-on-prem.md
         - name: Általános adatvédelmi rendelet (GDPR)
           items:
             - name: Általános adatvédelmi rendelet áttekintése
@@ -1142,10 +1150,10 @@
                   href: lifecycle-services/use-translation-service-tm.md
         - name: Microsoft Power Platform-integráció
           items:
+            - name: Microsoft Power Platform-integráció a Finance and Operations alkalmazással
+              href: power-platform/overview.md
             - name: Virtuális entitások
               items:
-                - name: Microsoft Power Platform integráció a Finance and Operations alkalmazással
-                  href: power-platform/overview.md
                 - name: Entitásmodellezés
                   href: power-platform/entity-modeling.md
                 - name: Alkalmazáséletciklus-kezelés
@@ -1444,7 +1452,7 @@
                   href: lcs-solutions/submit-localization-alerts.md
         - name: Támogatás
           items:
-            - name: Finance and Operations és Lifecycle Services szolgáltatások támogatása
+            - name: Támogatás Finance and Operations és Lifecycle Services szolgáltatások támogatása
               href: lifecycle-services/lcs-support.md
             - name: A Dynamics 365 támogatásának áttekintése
               href: /power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json
@@ -1452,8 +1460,10 @@
               href: lifecycle-services/21vianet-support.md
             - name: Technikai támogatás beállítása a Finance and Operations alkalmazásokhoz
               href: lifecycle-services/support-experience.md
-            - name: A Finance and Operations alkalmazások támogatásával kapcsolatos tapasztalatok kezelése
+            - name: A Finance and Operations alkalmazások támogatásával kapcsolatos gyakorlatok kezelése
               href: lifecycle-services/cloud-powered-support-lcs.md
+            - name: Termeléstámogatás és -felügyelet
+              href: ../fin-ops/imp-lifecycle/production-support-monitoring.md
         - name: Rendszerfelügyelet
           items:
             - name: Rendszerfelügyelet kezdőlap

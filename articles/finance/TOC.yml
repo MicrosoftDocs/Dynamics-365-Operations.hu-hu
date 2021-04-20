@@ -66,7 +66,7 @@
                   href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/finance/toc.json
             - name: Új vagy módosult elemek
               items:
-                - name: Új vagy módosult elemek a Finance and Operations alkalmazásokban
+                - name: Új vagy módosult elemek az Finance and Operations alkalmazásokban
                   href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
                 - name: Újdonságok és változások a Finance szolgáltatásban
                   items:
@@ -934,6 +934,8 @@
                   href: general-ledger/tasks/define-financial-dimensions.md
                 - name: Pénzügyi dimenzió alapértelmezett sablonjainak karbantartása
                   href: general-ledger/tasks/maintain-financial-dimension-default-templates.md
+                - name: Pénzügyi dimenziókészletek
+                  href: general-ledger/financial-dimension-sets.md
                 - name: Számlastruktúrák létrehozása
                   href: general-ledger/tasks/create-account-structures.md
                 - name: A pénzügyi dimenziók és a feladás
@@ -1414,38 +1416,66 @@
           items:
             - name: Globalizációs erőforrások
               href: ../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=/dynamics365/finance/toc.json
+            - name: Globalizációs szolgáltatások
+              items:
+                - name: Globalizációs szolgáltatások áttekintése
+                  href: localizations/globalization-services-overview.md
+                - name: Regulatory Configuration Service
+                  items:
+                    - name: Regulatory Configuration Service áttekintése
+                      href: localizations/rcs-overview.md
+                    - name: Regulatory Configuration Service – Globalizációs jellemzők
+                      href: localizations/rcs-globalization-feature.md
+                    - name: 'Hozzon létre ER-konfigurációkat a Regulatory Configuration Service szolgáltatásban, és töltse fel őket a globális adattárba'
+                      href: localizations/rcs-global-repo-upload.md
+                - name: Elektronikus számlázás
+                  items:
+                    - name: Elektronikus számlázás áttekintése
+                      href: localizations/e-invoicing-service-overview.md
+                    - name: Elektronikus számlázás adminisztrációs összetevői
+                      href: localizations/e-invoicing-service-administration.md
+                    - name: Elektronikus számlázás konfigurálása a Regulatory Configuration Services (RCS) megoldásban
+                      href: localizations/e-invoicing-configuration-rcs.md
+                    - name: Elektronikus számlák kiállítása a Finance és a Supply Chain Management szolgáltatásban
+                      href: localizations/e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md
+                    - name: Azure-tárfiók és Key Vault létrehozása
+                      href: localizations/e-invoicing-create-azure-storage-account-key-vault.md
+                    - name: Első lépések
+                      items:
+                        - name: Első lépések az elektronikus számlázási szolgáltatás adminisztrálása során
+                          href: localizations/e-invoicing-get-started-service-administration.md
+                        - name: Első lépések az elektronikus számlázás használata során
+                          href: localizations/e-invoicing-get-started.md
+                        - name: Első lépések a Brazíliára vonatkozó elektronikus számlázás használata során
+                          href: localizations/e-invoicing-bra-get-started.md
+                        - name: Első lépések az Egyiptomra vonatkozó elektronikus számlázás használata során
+                          href: localizations/e-invoicing-eg-get-started.md
+                        - name: Első lépések az Olaszországra vonatkozó elektronikus számlázás használata során
+                          href: localizations/e-invoicing-ita-get-started.md
+                        - name: Első lépések a Mexikóra vonatkozó elektronikus számlázás használata során
+                          href: localizations/e-invoicing-mex-get-started.md
+                        - name: Az elektronikus számlázás beállítása
+                          href: localizations/e-invoicing-setup.md
+                    - name: Elektronikus számlázás – GYIK
+                      href: localizations/e-invoicing-faq.md
+                - name: Áfaszámítás
+                  items:
+                    - name: Adószámítás áttekintése
+                      href: localizations/global-tax-calcuation-service-overview.md
+                    - name: Az adószámítás első lépései
+                      href: localizations/global-get-started-with-tax-calculation-service.md
+                    - name: Adófunkció támogatása átmozgatási rendelésekhez
+                      href: localizations/tasks/Tax-feature-support-for-transfer-order.md
+                    - name: Adatmezők hozzáadása adókonfigurációkhoz
+                      href: localizations/tax-service-add-data-fields-tax-configurations.md
+                    - name: Adatmezők hozzáadása az adóintegrációhoz bővítmények használatával
+                      href: localizations/tax-service-add-data-fields-tax-integration-by-extension.md
+                    - name: Több adószám
+                      href: localizations/emea-multiple-vat-registration-numbers.md
+                    - name: Alapadat-keresés környezetének beállítása
+                      href: localizations/tax-service-set-up-environment-master-data-lookup.md
             - name: Jogszabálykövetési frissítések
               href: localizations/regulatory-updates.md
-            - name: Elektronikus számlázás
-              items:
-                - name: Elektronikus számlázás áttekintése
-                  href: localizations/e-invoicing-service-overview.md
-                - name: Elektronikus számlázás adminisztrációs összetevői
-                  href: localizations/e-invoicing-service-administration.md
-                - name: Elektronikus számlázás konfigurálása a Regulatory Configuration Services (RCS) megoldásban
-                  href: localizations/e-invoicing-configuration-rcs.md
-                - name: Elektronikus számlák kiállítása a Finance és a Supply Chain Management szolgáltatásban
-                  href: localizations/e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md
-                - name: Azure-tárterület és Key Vault létrehozása
-                  href: localizations/e-invoicing-create-azure-storage-account-key-vault.md
-                - name: Első lépések
-                  items:
-                    - name: Első lépések az elektronikus számlázási szolgáltatás adminisztrálása során
-                      href: localizations/e-invoicing-get-started-service-administration.md
-                    - name: Első lépések az elektronikus számlázási használata során
-                      href: localizations/e-invoicing-get-started.md
-                    - name: Első lépések az Brazíliára vonatkozó elektronikus számlázás használata során
-                      href: localizations/e-invoicing-bra-get-started.md
-                    - name: Első lépések az Egyiptomra vonatkozó elektronikus számlázási használata során
-                      href: localizations/e-invoicing-eg-get-started.md
-                    - name: Első lépések az Olaszországra vonatkozó elektronikus számlázási használata során
-                      href: localizations/e-invoicing-ita-get-started.md
-                    - name: Első lépések a Mexikóra vonatkozó elektronikus számlázási használata során
-                      href: localizations/e-invoicing-mex-get-started.md
-                    - name: Az elektronikus számlázás beállítása
-                      href: localizations/e-invoicing-setup.md
-                - name: Elektronikus számlázás GYIK
-                  href: localizations/e-invoicing-faq.md
             - name: Ausztrália
               items:
                 - name: Ausztrália – áttekintés
@@ -1468,6 +1498,8 @@
                   href: localizations/emea-aut-packing-material-fee-calculation.md
                 - name: Áfabevallás
                   href: localizations/emea-aut-vat-statement-details.md
+                - name: Nemzetközi szolgáltatásokra vonatkozó jelentés
+                  href: localizations/emea-aut-cross-border-services-report.md
             - name: Bahrein
               items:
                 - name: Bahrein – áttekintés
@@ -1492,6 +1524,8 @@
                   href: localizations/emea-bel-intervat-tax-declaration.md
                 - name: Egyeztetési jelentések
                   href: localizations/emea-bel-reconciliation-reports.md
+                - name: Naplójelentések
+                  href: localizations/emea-bel-journal-reports.md
                 - name: Fizetésiegyenleg-jelentések beállítása
                   href: localizations/tasks/be-00011-set-up-payment-balance-reporting.md
                 - name: PRODCOM beállítása és karbantartása
@@ -2118,32 +2152,6 @@
                       href: localizations/ind-news-letter-10-0-13.md
                     - name: Újdonságok vagy változások a 10.0.14-es verzióban
                       href: localizations/apac-ind-news-letter-10-0-14.md
-                - name: Tárgyi eszközök
-                  items:
-                    - name: India – tárgyi eszközök áttekintése
-                      href: localizations/apac-ind-fixed-assets.md
-                    - name: Nap alapú naptár csatolása tárgyieszköz-könyvhöz
-                      href: localizations/tasks/apac-ind-attach-day-based-calendar.md
-                    - name: Eltolódás értékcsökkenésének számítása
-                      href: localizations/tasks/apac-ind-shift-depreciation-rates.md
-                    - name: Hozzon létre egy készletmodellcsoportot a tőkeelemeknek
-                      href: localizations/tasks/apac-ind-create-inventory-model-group.md
-                    - name: Értékcsökkenés létrehozása és feladása
-                      href: localizations/apac-ind-calculate-post-depreciation.md
-                    - name: Határozza meg a műszak típusát és a könyvekhez rendelt ipart a tárgyi eszközhöz történő csatolás érdekében
-                      href: localizations/tasks/apac-ind-books-shift-industry-types.md
-                    - name: Tárgyieszköz-tranzakciók sztornírozása
-                      href: localizations/apac-ind-reverse-fixed-assets-transactions.md
-                    - name: Eltolódás-értékcsökkenés számítása
-                      href: localizations/apac-ind-calculation-shift-depreciation.md
-                    - name: Nap alapú pénzügyi naptár beállítása
-                      href: localizations/tasks/apac-ind-day-based-calendar.md
-                    - name: Paraméterek beállítása értékcsökkenés számításához
-                      href: localizations/tasks/apac-ind-set-up-depreciation.md
-                    - name: Eszközcsoport értékcsökkenés beállítása értékcsökkenés könyvekhez
-                      href: localizations/tasks/apac-ind-set-up-asset-group-dep.md
-                    - name: Tőkeelemek átvitele a tárgyi eszközre
-                      href: localizations/tasks/apac-ind-transfer-capital-items.md
                 - name: Közvetett adók
                   items:
                     - name: India GST
@@ -2300,6 +2308,10 @@
                                   href: localizations/apac-ind-GST-revise-advanced-payment-tax.md
                                 - name: Vevői kifizetés visszatérítése
                                   href: localizations/apac-ind-GST-customer-payment-refund.md
+                            - name: Projektmenedzsment tranzakciói
+                              items:
+                                - name: Áruk és szolgáltatások adójának (GST) projekttranzakciói
+                                  href: localizations/apac-ind-gst-project-transactions.md
                             - name: Adóhelyesbítés
                               items:
                                 - name: Adóösszeg-helyesbítés
@@ -2336,6 +2348,32 @@
                           href: localizations/apac-ind-tax-thresholds.md
                         - name: TCS áruértékesítés esetén
                           href: localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md
+                - name: Tárgyi eszközök
+                  items:
+                    - name: India – tárgyi eszközök áttekintése
+                      href: localizations/apac-ind-fixed-assets.md
+                    - name: Nap alapú naptár csatolása tárgyieszköz-könyvhöz
+                      href: localizations/tasks/apac-ind-attach-day-based-calendar.md
+                    - name: Eltolódás értékcsökkenésének számítása
+                      href: localizations/tasks/apac-ind-shift-depreciation-rates.md
+                    - name: Hozzon létre egy készletmodellcsoportot a tőkeelemeknek
+                      href: localizations/tasks/apac-ind-create-inventory-model-group.md
+                    - name: Értékcsökkenés létrehozása és feladása
+                      href: localizations/apac-ind-calculate-post-depreciation.md
+                    - name: Határozza meg a műszak típusát és a könyvekhez rendelt ipart a tárgyi eszközhöz történő csatolás érdekében
+                      href: localizations/tasks/apac-ind-books-shift-industry-types.md
+                    - name: Tárgyieszköz-tranzakciók sztornírozása
+                      href: localizations/apac-ind-reverse-fixed-assets-transactions.md
+                    - name: Eltolódás-értékcsökkenés számítása
+                      href: localizations/apac-ind-calculation-shift-depreciation.md
+                    - name: Nap alapú pénzügyi naptár beállítása
+                      href: localizations/tasks/apac-ind-day-based-calendar.md
+                    - name: Paraméterek beállítása értékcsökkenés számításához
+                      href: localizations/tasks/apac-ind-set-up-depreciation.md
+                    - name: Eszközcsoport értékcsökkenésének beállítása értékcsökkenés-könyvekhez
+                      href: localizations/tasks/apac-ind-set-up-asset-group-dep.md
+                    - name: Tőkeelemek átvitele a tárgyi eszközre
+                      href: localizations/tasks/apac-ind-transfer-capital-items.md
             - name: Olaszország
               items:
                 - name: Olaszország – áttekintés
@@ -2958,6 +2996,8 @@
                       href: localizations/rus-cash-flow-tax-registers.md
                     - name: Kulccsal rendelkező költségjegyzékek
                       href: localizations/rus-rated-expenses-registers.md
+                    - name: Kötelezettségek adónyilvántartásai és a tartozások leírásai
+                      href: localizations/rus-accounts-payable-debt-tax-registers-and-debt-write-offs.md
             - name: Szaúd-Arábia
               items:
                 - name: Szaúd-Arábia – áttekintés
@@ -3034,14 +3074,20 @@
                   href: localizations/thailand.md
                 - name: Készletkarton-jelentések
                   href: localizations/apac-tha-stock-card-reports.md
+                - name: Adószámlák
+                  href: localizations/apac-tha-tax-invoices.md
                 - name: Helyettesítési/kiigazítási adószámla
                   href: localizations/apac-tha-substitution-and-adjustment-invoices.md
                 - name: Nem realizált áfa
                   href: localizations/apac-tha-unrealized-vat.md
+                - name: Átlagos áfa a beszerzési tranzakciókhoz
+                  href: localizations/apac-tha-average-vat-for-purchase-transactions.md
                 - name: Adózási fiókiroda dimenziói
                   href: localizations/apac-tha-tax-branch-dimensions.md
-                - name: Értékesítési áfajelentés
+                - name: Kimeneti áfával kapcsolatos jelentés
                   href: localizations/apac-tha-sales-vat-report.md
+                - name: Átlagos áfa a beszerzési tranzakciókhoz
+                  href: localizations/apac-tha-average-vat-for-purchase-transactions.md
                 - name: Adóelőleg
                   href: localizations/apac-tha-withholding-tax.md
             - name: Egyesült Arab Emírségek (UAE)
@@ -3869,10 +3915,12 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/dynamics365/finance/toc.json
                         - name: Formátumok módosítása és futtatása Dokumentumkezelési fájlok használatára
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/dynamics365/finance/toc.json
-                    - name: Adatforrásokban történő hibakeresés
-                      href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/finance/toc.json
                     - name: Használja a VONALKÓDOT a vonalkódképek létrehozásához
                       href: ../fin-ops-core/dev-itpro/analytics/er-barcode-data-sources.md?toc=/dynamics365/finance/toc.json
+                    - name: Konfigurálja a KERESÉSI adatforrásokat az ER-alkalmazásspecifikus paraméterek használatára
+                      href: ../fin-ops-core/dev-itpro/analytics/er-lookup-data-sources.md?toc=/dynamics365/finance/toc.json
+                    - name: Adatforrásokban történő hibakeresés
+                      href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/finance/toc.json
                 - name: Modell-hozzárendelések konfigurálása
                   items:
                     - name: Országkörnyezet-függő ER-modell-leképezések konfigurálása
@@ -4033,7 +4081,7 @@
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/finance/toc.json
             - name: Entitásadatok megnyitása Excelben és frissítésük az Excel-bővítmény segítségével
               href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/finance/toc.json
-            - name: Az Excel programban történő megnyitási élmények létrehozása
+            - name: Az Excel programban történő megnyitási gyakorlat létrehozása
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/finance/toc.json
             - name: Sablonok hozzáadása a Sorok megnyitása az Excelben menühöz
               href: ../fin-ops-core/dev-itpro/user-interface/add-templates-open-lines-excel-menu.md?toc=/dynamics365/finance/toc.json
