@@ -16,66 +16,66 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c0a8c39977dacd78afc3bec977501abaf8081dc7
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: c6829f24b8efa29b39f5ed742d8ca99e09bcef01
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839343"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5910353"
 ---
-# <a name="cost-objects"></a><span data-ttu-id="e51ce-105">Költségobjektumok</span><span class="sxs-lookup"><span data-stu-id="e51ce-105">Cost objects</span></span>
+# <a name="cost-objects"></a><span data-ttu-id="5cfdf-105">Költségobjektumok</span><span class="sxs-lookup"><span data-stu-id="5cfdf-105">Cost objects</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="e51ce-106">Ez a cikk tájékoztatást ad a költségobjektumokról és elmagyarázza hogyan halmozódnak föl a költségek és a mennyiségek.</span><span class="sxs-lookup"><span data-stu-id="e51ce-106">This article provides information about costs objects, and explains how costs and quantities are accumulated.</span></span> <span data-ttu-id="e51ce-107">Egy költségobjektum egy olyan entitás, amelyhez költségek és mennyiségek halmozódnak föl.</span><span class="sxs-lookup"><span data-stu-id="e51ce-107">A cost object is an entity that costs and quantities are accumulated for.</span></span> <span data-ttu-id="e51ce-108">A költségobjektum-entitás lehet egy termék vagy egy termékváltozat, úgy mint változatok a stílusra és színre.</span><span class="sxs-lookup"><span data-stu-id="e51ce-108">A cost object entity can be either a product or product variants, such as variants for style and color.</span></span>  
+<span data-ttu-id="5cfdf-106">Ez a cikk tájékoztatást ad a költségobjektumokról és elmagyarázza hogyan halmozódnak föl a költségek és a mennyiségek.</span><span class="sxs-lookup"><span data-stu-id="5cfdf-106">This article provides information about costs objects, and explains how costs and quantities are accumulated.</span></span> <span data-ttu-id="5cfdf-107">Egy költségobjektum egy olyan entitás, amelyhez költségek és mennyiségek halmozódnak föl.</span><span class="sxs-lookup"><span data-stu-id="5cfdf-107">A cost object is an entity that costs and quantities are accumulated for.</span></span> <span data-ttu-id="5cfdf-108">A költségobjektum-entitás lehet egy termék vagy egy termékváltozat, úgy mint változatok a stílusra és színre.</span><span class="sxs-lookup"><span data-stu-id="5cfdf-108">A cost object entity can be either a product or product variants, such as variants for style and color.</span></span>  
 
-## <a name="cost-objects"></a><span data-ttu-id="e51ce-109">Költségobjektumok</span><span class="sxs-lookup"><span data-stu-id="e51ce-109">Cost objects</span></span>
+## <a name="cost-objects"></a><span data-ttu-id="5cfdf-109">Költségobjektumok</span><span class="sxs-lookup"><span data-stu-id="5cfdf-109">Cost objects</span></span>
 
-<span data-ttu-id="e51ce-110">A **Költségobjektumok** lap felsorolja az összes költségobjektumot, ami regisztrálva van egy termékhez.</span><span class="sxs-lookup"><span data-stu-id="e51ce-110">The **Cost objects** page lists all cost objects that are registered on a product.</span></span> <span data-ttu-id="e51ce-111">A költségobjektumokat az alábbi forrásokból származó adatok határozzák meg:</span><span class="sxs-lookup"><span data-stu-id="e51ce-111">The cost objects are defined by data from the following sources:</span></span>
+<span data-ttu-id="5cfdf-110">A **Költségobjektumok** lap felsorolja az összes költségobjektumot, ami regisztrálva van egy termékhez.</span><span class="sxs-lookup"><span data-stu-id="5cfdf-110">The **Cost objects** page lists all cost objects that are registered on a product.</span></span> <span data-ttu-id="5cfdf-111">A költségobjektumokat az alábbi forrásokból származó adatok határozzák meg:</span><span class="sxs-lookup"><span data-stu-id="5cfdf-111">The cost objects are defined by data from the following sources:</span></span>
 
--   <span data-ttu-id="e51ce-112">Termék</span><span class="sxs-lookup"><span data-stu-id="e51ce-112">Product</span></span>
--   <span data-ttu-id="e51ce-113">Termékdimenzió-csoport</span><span class="sxs-lookup"><span data-stu-id="e51ce-113">Product dimension group</span></span>
--   <span data-ttu-id="e51ce-114">Tárolásidimenzió-csoport</span><span class="sxs-lookup"><span data-stu-id="e51ce-114">Storage dimension group</span></span>
--   <span data-ttu-id="e51ce-115">Nyomonkövetésidimenzió-csoport</span><span class="sxs-lookup"><span data-stu-id="e51ce-115">Tracking dimension group</span></span>
+-   <span data-ttu-id="5cfdf-112">Termék</span><span class="sxs-lookup"><span data-stu-id="5cfdf-112">Product</span></span>
+-   <span data-ttu-id="5cfdf-113">Termékdimenzió-csoport</span><span class="sxs-lookup"><span data-stu-id="5cfdf-113">Product dimension group</span></span>
+-   <span data-ttu-id="5cfdf-114">Tárolásidimenzió-csoport</span><span class="sxs-lookup"><span data-stu-id="5cfdf-114">Storage dimension group</span></span>
+-   <span data-ttu-id="5cfdf-115">Nyomonkövetésidimenzió-csoport</span><span class="sxs-lookup"><span data-stu-id="5cfdf-115">Tracking dimension group</span></span>
 
-<span data-ttu-id="e51ce-116">**Megjegyzés:** A költségobjektum csak a **Közvetlen anyag** költségösszetevőjének felel meg.</span><span class="sxs-lookup"><span data-stu-id="e51ce-116">**Note:** A cost object represents a cost element of the **Direct material** type only.</span></span> <span data-ttu-id="e51ce-117">A költségobjektum és a készletobjektum abban különböznek, hogy a költségobjektumot a pénzügyi készlet számára kiválasztott készletdimenzió határozza meg.</span><span class="sxs-lookup"><span data-stu-id="e51ce-117">A cost object and an inventory object differ in the way that a cost object is defined by the inventory dimensions that are selected for financial inventory.</span></span> <span data-ttu-id="e51ce-118">Például egy cikk az alábbi konfigurációval rendelkezik:</span><span class="sxs-lookup"><span data-stu-id="e51ce-118">For example, an item has the following configuration:</span></span>
+<span data-ttu-id="5cfdf-116">**Megjegyzés:** A költségobjektum csak a **Közvetlen anyag** költségösszetevőjének felel meg.</span><span class="sxs-lookup"><span data-stu-id="5cfdf-116">**Note:** A cost object represents a cost element of the **Direct material** type only.</span></span> <span data-ttu-id="5cfdf-117">A költségobjektum és a készletobjektum abban különböznek, hogy a költségobjektumot a pénzügyi készlet számára kiválasztott készletdimenzió határozza meg.</span><span class="sxs-lookup"><span data-stu-id="5cfdf-117">A cost object and an inventory object differ in the way that a cost object is defined by the inventory dimensions that are selected for financial inventory.</span></span> <span data-ttu-id="5cfdf-118">Például egy cikk az alábbi konfigurációval rendelkezik:</span><span class="sxs-lookup"><span data-stu-id="5cfdf-118">For example, an item has the following configuration:</span></span>
 
--   <span data-ttu-id="e51ce-119">**Webhely:** Tényleges készlet = Igen, Pénzügyi készlet = Igen</span><span class="sxs-lookup"><span data-stu-id="e51ce-119">**Site:** Physical inventory = Yes, Financial inventory = Yes</span></span>
--   <span data-ttu-id="e51ce-120">**Raktár:** Tényleges készlet = Igen, Pénzügyi készlet = Nem</span><span class="sxs-lookup"><span data-stu-id="e51ce-120">**Warehouse:** Physical inventory = Yes, Financial inventory = No</span></span>
--   <span data-ttu-id="e51ce-121">**Köteg szám:** Tényleges készlet = Igen, Pénzügyi készlet = Nem</span><span class="sxs-lookup"><span data-stu-id="e51ce-121">**Batch No.:** Physical inventory = Yes, Financial inventory = No</span></span>
+-   <span data-ttu-id="5cfdf-119">**Webhely:** Tényleges készlet = Igen, Pénzügyi készlet = Igen</span><span class="sxs-lookup"><span data-stu-id="5cfdf-119">**Site:** Physical inventory = Yes, Financial inventory = Yes</span></span>
+-   <span data-ttu-id="5cfdf-120">**Raktár:** Tényleges készlet = Igen, Pénzügyi készlet = Nem</span><span class="sxs-lookup"><span data-stu-id="5cfdf-120">**Warehouse:** Physical inventory = Yes, Financial inventory = No</span></span>
+-   <span data-ttu-id="5cfdf-121">**Köteg szám:** Tényleges készlet = Igen, Pénzügyi készlet = Nem</span><span class="sxs-lookup"><span data-stu-id="5cfdf-121">**Batch No.:** Physical inventory = Yes, Financial inventory = No</span></span>
 
-<span data-ttu-id="e51ce-122">Az alábbi táblázat bemutatja, hogy mi a költségobjektum és mi a készletobjektum.</span><span class="sxs-lookup"><span data-stu-id="e51ce-122">The following table shows what is a cost object and what is an inventory object.</span></span>
+<span data-ttu-id="5cfdf-122">Az alábbi táblázat bemutatja, hogy mi a költségobjektum és mi a készletobjektum.</span><span class="sxs-lookup"><span data-stu-id="5cfdf-122">The following table shows what is a cost object and what is an inventory object.</span></span>
 
-| <span data-ttu-id="e51ce-123">Objektumtípus</span><span class="sxs-lookup"><span data-stu-id="e51ce-123">Object type</span></span>      | <span data-ttu-id="e51ce-124">Cikkszám</span><span class="sxs-lookup"><span data-stu-id="e51ce-124">Item number</span></span> | <span data-ttu-id="e51ce-125">Hely</span><span class="sxs-lookup"><span data-stu-id="e51ce-125">Site</span></span> | <span data-ttu-id="e51ce-126">Raktár</span><span class="sxs-lookup"><span data-stu-id="e51ce-126">Warehouse</span></span> | <span data-ttu-id="e51ce-127">Kötegsz.</span><span class="sxs-lookup"><span data-stu-id="e51ce-127">Batch No.</span></span> |
+| <span data-ttu-id="5cfdf-123">Objektumtípus</span><span class="sxs-lookup"><span data-stu-id="5cfdf-123">Object type</span></span>      | <span data-ttu-id="5cfdf-124">Cikkszám</span><span class="sxs-lookup"><span data-stu-id="5cfdf-124">Item number</span></span> | <span data-ttu-id="5cfdf-125">Hely</span><span class="sxs-lookup"><span data-stu-id="5cfdf-125">Site</span></span> | <span data-ttu-id="5cfdf-126">Raktár</span><span class="sxs-lookup"><span data-stu-id="5cfdf-126">Warehouse</span></span> | <span data-ttu-id="5cfdf-127">Kötegsz.</span><span class="sxs-lookup"><span data-stu-id="5cfdf-127">Batch No.</span></span> |
 |------------------|-------------|------|-----------|-----------|
-| <span data-ttu-id="e51ce-128">Költségobjektum</span><span class="sxs-lookup"><span data-stu-id="e51ce-128">Cost object</span></span>      | <span data-ttu-id="e51ce-129">x</span><span class="sxs-lookup"><span data-stu-id="e51ce-129">x</span></span>           | <span data-ttu-id="e51ce-130">x</span><span class="sxs-lookup"><span data-stu-id="e51ce-130">x</span></span>    |           |           |
-| <span data-ttu-id="e51ce-131">Készletobjektum</span><span class="sxs-lookup"><span data-stu-id="e51ce-131">Inventory object</span></span> | <span data-ttu-id="e51ce-132">x</span><span class="sxs-lookup"><span data-stu-id="e51ce-132">x</span></span>           | <span data-ttu-id="e51ce-133">x</span><span class="sxs-lookup"><span data-stu-id="e51ce-133">x</span></span>    |  <span data-ttu-id="e51ce-134">x</span><span class="sxs-lookup"><span data-stu-id="e51ce-134">x</span></span>        | <span data-ttu-id="e51ce-135">x</span><span class="sxs-lookup"><span data-stu-id="e51ce-135">x</span></span>         |
+| <span data-ttu-id="5cfdf-128">Költségobjektum</span><span class="sxs-lookup"><span data-stu-id="5cfdf-128">Cost object</span></span>      | <span data-ttu-id="5cfdf-129">x</span><span class="sxs-lookup"><span data-stu-id="5cfdf-129">x</span></span>           | <span data-ttu-id="5cfdf-130">x</span><span class="sxs-lookup"><span data-stu-id="5cfdf-130">x</span></span>    |           |           |
+| <span data-ttu-id="5cfdf-131">Készletobjektum</span><span class="sxs-lookup"><span data-stu-id="5cfdf-131">Inventory object</span></span> | <span data-ttu-id="5cfdf-132">x</span><span class="sxs-lookup"><span data-stu-id="5cfdf-132">x</span></span>           | <span data-ttu-id="5cfdf-133">x</span><span class="sxs-lookup"><span data-stu-id="5cfdf-133">x</span></span>    |  <span data-ttu-id="5cfdf-134">x</span><span class="sxs-lookup"><span data-stu-id="5cfdf-134">x</span></span>        | <span data-ttu-id="5cfdf-135">x</span><span class="sxs-lookup"><span data-stu-id="5cfdf-135">x</span></span>         |
 
-## <a name="accumulation-of-costs-and-quantities"></a><span data-ttu-id="e51ce-136">A költség és mennyiség összevonása</span><span class="sxs-lookup"><span data-stu-id="e51ce-136">Accumulation of costs and quantities</span></span>
--   <span data-ttu-id="e51ce-137">Az érték az **Érték** mezőben az alábbi értékek összessége:</span><span class="sxs-lookup"><span data-stu-id="e51ce-137">The value in the **Value** fieldis a sum of the following values:</span></span>
-    -   <span data-ttu-id="e51ce-138">Tényleges önköltségi érték</span><span class="sxs-lookup"><span data-stu-id="e51ce-138">Physical cost amount</span></span>
-    -   <span data-ttu-id="e51ce-139">Pénzügyi költség összege</span><span class="sxs-lookup"><span data-stu-id="e51ce-139">Financial cost amount</span></span>
-    -   <span data-ttu-id="e51ce-140">Kiigazítások</span><span class="sxs-lookup"><span data-stu-id="e51ce-140">Adjustments</span></span>
--   <span data-ttu-id="e51ce-141">Az érték a **Mennyiség** mezőben az alábbi értékek összessége:</span><span class="sxs-lookup"><span data-stu-id="e51ce-141">The value in the **Quantity** field is a sum of the following values:</span></span>
-    -   <span data-ttu-id="e51ce-142">Bevételezve</span><span class="sxs-lookup"><span data-stu-id="e51ce-142">Received</span></span>
-    -   <span data-ttu-id="e51ce-143">Kiszállított</span><span class="sxs-lookup"><span data-stu-id="e51ce-143">Deducted</span></span>
-    -   <span data-ttu-id="e51ce-144">Feladott mennyiség</span><span class="sxs-lookup"><span data-stu-id="e51ce-144">Posted quantity</span></span>
--   <span data-ttu-id="e51ce-145">Az **Átlagos egységenkénti költség** mező egy kiszámított mező.</span><span class="sxs-lookup"><span data-stu-id="e51ce-145">The **Average unit cost** field is a calculated field.</span></span> <span data-ttu-id="e51ce-146">Az értékét az **Érték** mező **Mennyiség** mezővel való elosztásával kapjuk meg.</span><span class="sxs-lookup"><span data-stu-id="e51ce-146">The value is calculated by dividing the **Value** value by the **Quantity** value.</span></span>
+## <a name="accumulation-of-costs-and-quantities"></a><span data-ttu-id="5cfdf-136">A költség és mennyiség összevonása</span><span class="sxs-lookup"><span data-stu-id="5cfdf-136">Accumulation of costs and quantities</span></span>
+-   <span data-ttu-id="5cfdf-137">Az érték az **Érték** mezőben az alábbi értékek összessége:</span><span class="sxs-lookup"><span data-stu-id="5cfdf-137">The value in the **Value** fieldis a sum of the following values:</span></span>
+    -   <span data-ttu-id="5cfdf-138">Tényleges önköltségi érték</span><span class="sxs-lookup"><span data-stu-id="5cfdf-138">Physical cost amount</span></span>
+    -   <span data-ttu-id="5cfdf-139">Pénzügyi költség összege</span><span class="sxs-lookup"><span data-stu-id="5cfdf-139">Financial cost amount</span></span>
+    -   <span data-ttu-id="5cfdf-140">Kiigazítások</span><span class="sxs-lookup"><span data-stu-id="5cfdf-140">Adjustments</span></span>
+-   <span data-ttu-id="5cfdf-141">Az érték a **Mennyiség** mezőben az alábbi értékek összessége:</span><span class="sxs-lookup"><span data-stu-id="5cfdf-141">The value in the **Quantity** field is a sum of the following values:</span></span>
+    -   <span data-ttu-id="5cfdf-142">Bevételezve</span><span class="sxs-lookup"><span data-stu-id="5cfdf-142">Received</span></span>
+    -   <span data-ttu-id="5cfdf-143">Kiszállított</span><span class="sxs-lookup"><span data-stu-id="5cfdf-143">Deducted</span></span>
+    -   <span data-ttu-id="5cfdf-144">Feladott mennyiség</span><span class="sxs-lookup"><span data-stu-id="5cfdf-144">Posted quantity</span></span>
+-   <span data-ttu-id="5cfdf-145">Az **Átlagos egységenkénti költség** mező egy kiszámított mező.</span><span class="sxs-lookup"><span data-stu-id="5cfdf-145">The **Average unit cost** field is a calculated field.</span></span> <span data-ttu-id="5cfdf-146">Az értékét az **Érték** mező **Mennyiség** mezővel való elosztásával kapjuk meg.</span><span class="sxs-lookup"><span data-stu-id="5cfdf-146">The value is calculated by dividing the **Value** value by the **Quantity** value.</span></span>
 
-<span data-ttu-id="e51ce-147">**Megjegyzés**: A **Tényleges érték beszámítása** paraméter nem befolyásolja az előző számításokat.</span><span class="sxs-lookup"><span data-stu-id="e51ce-147">**Note:** The \*\*Include physical value \*\*parameter has no effect on the preceding calculations.</span></span>
+<span data-ttu-id="5cfdf-147">**Megjegyzés**: A **Tényleges érték beszámítása** paraméter nem befolyásolja az előző számításokat.</span><span class="sxs-lookup"><span data-stu-id="5cfdf-147">**Note:** The \*\*Include physical value \*\*parameter has no effect on the preceding calculations.</span></span>
 
-<a name="additional-resources"></a><span data-ttu-id="e51ce-148">További erőforrások</span><span class="sxs-lookup"><span data-stu-id="e51ce-148">Additional resources</span></span>
+<a name="additional-resources"></a><span data-ttu-id="5cfdf-148">További erőforrások</span><span class="sxs-lookup"><span data-stu-id="5cfdf-148">Additional resources</span></span>
 --------
 
-[<span data-ttu-id="e51ce-149">Termékdimenzió-csoport</span><span class="sxs-lookup"><span data-stu-id="e51ce-149">Product dimension group</span></span>](https://technet.microsoft.com/library/aa499382.aspx)
+[<span data-ttu-id="5cfdf-149">Termékdimenzió-csoport</span><span class="sxs-lookup"><span data-stu-id="5cfdf-149">Product dimension group</span></span>](/dynamicsax-2012/appuser-itpro/about-product-dimensions)
 
-[<span data-ttu-id="e51ce-150">Tárolásidimenzió-csoport</span><span class="sxs-lookup"><span data-stu-id="e51ce-150">Storage dimension group</span></span>](https://technet.microsoft.com/library/hh209317.aspx)
+[<span data-ttu-id="5cfdf-150">Tárolásidimenzió-csoport</span><span class="sxs-lookup"><span data-stu-id="5cfdf-150">Storage dimension group</span></span>](/dynamicsax-2012//storage-dimension-groups-form)
 
-[<span data-ttu-id="e51ce-151">Nyomonkövetésidimenzió-csoport</span><span class="sxs-lookup"><span data-stu-id="e51ce-151">Tracking dimension group</span></span>](https://technet.microsoft.com/library/hh209465.aspx)
+[<span data-ttu-id="5cfdf-151">Nyomonkövetésidimenzió-csoport</span><span class="sxs-lookup"><span data-stu-id="5cfdf-151">Tracking dimension group</span></span>](/dynamicsax-2012//tracking-dimension-groups-form)
 
-[<span data-ttu-id="e51ce-152">Új vagy módosult elemek</span><span class="sxs-lookup"><span data-stu-id="e51ce-152">What's new or changed</span></span>](../../fin-and-ops/get-started/whats-new-changed.md)
+[<span data-ttu-id="5cfdf-152">Új vagy módosult elemek</span><span class="sxs-lookup"><span data-stu-id="5cfdf-152">What's new or changed</span></span>](../../fin-ops-core/fin-ops/get-started/whats-new-changed.md)
 
-[<span data-ttu-id="e51ce-153">Költségbejegyzések</span><span class="sxs-lookup"><span data-stu-id="e51ce-153">Cost entries</span></span>](cost-entries.md)
+[<span data-ttu-id="5cfdf-153">Költségbejegyzések</span><span class="sxs-lookup"><span data-stu-id="5cfdf-153">Cost entries</span></span>](cost-entries.md)
 
 
 
