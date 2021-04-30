@@ -2,7 +2,7 @@
 title: Súgórendszer
 description: Ez a témakör a Finance and Operations alkalmazások súgórendszeréről nyújt áttekintést.
 author: edupont04
-ms.date: 05/11/2020
+ms.date: 04/14/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 46168dd9001921471114c219c57856b7bedf6465
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: e33a2d4c50d17125a91b3b55b46626c6199575c8
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749828"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897816"
 ---
 # <a name="help-system"></a>Súgórendszer
 
@@ -161,7 +161,7 @@ A következő táblázat felsorolja a weboldalainkat. A név mellett közvetlen�
 | [Docs.microsoft.com/korábbi verziók](/previous-versions/dynamics/) | Ezen a webhelyen található a korábbi kiadások tartama. |
 | [Dynamics közösség](https://community.dynamics.com/) | A webhelyen blogok, fórumok és videók találhatók. |
 | [Microsoft.com/dynamics365](https://www.microsoft.com/dynamics365/home) | A webhelyen értékelések és eladási információk érhetők el. |
-| [CustomerSource](https://docs.microsoft.com/dynamics/s-e/)\* | A webhely néhány oktatóanyagot tárol, letölthető jelentéseket és tanulmányokat, és ez az elsődleges támogatási webhely a szolgáltatási terv jogosultak számára. Szükség lehet egy szolgáltatási előfizetésre az egyes erőforrások eléréséhez a webhelyen. |
+
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -13,12 +13,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: v-lenest
 ms.search.validFrom: 2017-06-01
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: a95dd6caf01e2c1079d6d9690b52e9ef65d87ea8
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0df3f840162cf93c9e9f5f34a22e8b49171ea71f
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839960"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5891161"
 ---
 # <a name="import-iso20022-files"></a>ISO20022 fájlok importálása
 
@@ -114,7 +114,7 @@ Ha formátumkonfigurációt importál az LCS-rendszerből, a teljes konfiguráci
  - **Pain.002** – ezt a formátumot kell a Fizetési modell hozzárendelése az ISO20022 célhoz fizetési modellel együtt használni a pain.002 fájlnak a szállítói kifizetések átvitele naplóba történő importálása érdekében
  - **Camt.054** – ezt a formátumot kell a Fizetési modell hozzárendelése az ISO20022 célhoz fizetési modellel együtt használni a camt.054 fájlnak a szállítói kifizetések átvitele naplóba történő importálása érdekében. Ugyanaz a formátumkonfiguráció fog szerepelni a vevői kifizetések importálása funkcióban, de a rendszer különböző hozzárendelést fog használni a Fizetési modell hozzárendelése az ISO20022 célhoz konfigurációban.
 
-Az elektronikus jelentéssel kapcsolatos további tudnivalókat lásd: [Elektronikus jelentések áttekintése](../../dev-itpro/analytics/general-electronic-reporting.md).
+Az elektronikus jelentéssel kapcsolatos további tudnivalókat lásd: [Elektronikus jelentések áttekintése](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md).
 
 ## <a name="additional-resources"></a>További erőforrások
 - [Szállítói kifizetések létrehozása és exportálása ISO20022 fizetési formátumban](./tasks/create-export-vendor-payments-iso20022-payment-format.md)

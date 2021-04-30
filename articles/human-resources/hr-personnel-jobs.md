@@ -16,12 +16,12 @@ ms.assetid: 889a8fab-0eef-45c2-91fc-ff2f4d44d54f
 ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 1c481a468b2d624f029082fe27e7f14ecf7c068d
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: ad7feb837594186f4282103881745c4cfc944d52
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5803489"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5891054"
 ---
 # <a name="set-up-the-components-of-a-job"></a>Feladat összetevőinek beállítása
 
@@ -86,7 +86,7 @@ A munkaköri feladatok karbantartásához használja a **Munkaköri feladatok** 
 Alkalmazzon hatásköröket azon a szerepkörök, folyamatok, termékek és műveletek megjelöléséhez, amelyekért a dolgozó egy adott beosztásban felelős. Például a „Könyvelő” nevű beosztáshoz tartozó hatáskörre példa lehet a „Pénzügyi jelentés az A termékkel kapcsolatban”. A hatáskörök karbantartására használja a **Hatáskörök** oldalt, amelyet a keresés funkció használatával találhat meg. A **Hatáskörök** oldalon adja meg a hatáskör nevét és leírását. A **Megjegyzés** mezőben igény szerint további információkat is megadhat. A megjegyzések anélkül frissülnek az adott feladathoz, hogy az itt Ön által megadott megjegyzések módosulnának.
 
 ## <a name="steps-for-creating-a-job"></a>A feladat létrehozásának lépései
-Lásd az [Új feladatok meghatározása](../fin-and-ops/hr/tasks/define-new-jobs.md) cikket az új feladat létrehozásának lépésről lépésre útmutatójához. 
+Lásd az [Új feladatok meghatározása](./hr-personnel-define-jobs.md) cikket az új feladat létrehozásának lépésről lépésre útmutatójához. 
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

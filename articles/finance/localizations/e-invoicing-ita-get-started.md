@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 23cb0523b6d6d065ad19f6c3bddf881b0dc82a7d
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 140977a6eac145f35870d3516a4b0d0c794afe4b
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840100"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5894777"
 ---
 # <a name="get-started-with-electronic-invoicing-for-italy"></a>Első lépések az Olaszországra vonatkozó elektronikus számlázási használata során
 
@@ -201,7 +201,7 @@ Miután bekapcsolta a **Konfigurálható elektronikus számlázás integrációj
 A dokumentumokat a saját e-számla dokumentumok igényeinek megfelelően manuálisan is elküldheti.
 
 > [!NOTE]
-> Mielőtt folytatná, győződjön meg arról, hogy az olasz e-számlákhoz szükséges beállítások el lettek végezve. A további információkat lásd: [Vevői elektronikus számlák](https://docs.microsoft.com/dynamics365/finance/localizations/emea-ita-e-invoices). Ne feledje, hogy a témakörben leírt néhány beállítási lépés nem érhető el az elektronikus számlázás aktiválása miatt.
+> Mielőtt folytatná, győződjön meg arról, hogy az olasz e-számlákhoz szükséges beállítások el lettek végezve. A további információkat lásd: [Vevői elektronikus számlák](./emea-ita-e-invoices.md). Ne feledje, hogy a témakörben leírt néhány beállítási lépés nem érhető el az elektronikus számlázás aktiválása miatt.
 
 1. Menjen a **Szervezeti adminisztráció \> Időszakos \> Elektronikus dokumentumok \> Elektronikus dokumentumok beküldése** lehetőségre.
 2. A dokumentumok első beküldésekor **Nem** értékre kell állítania a **Dokumentumok újraküldése** lehetőséget. Ha a szolgáltatáson keresztül újra kell küldenie a dokumentumot, akkor ezt a beállítást állítsa **Igen** értékre.

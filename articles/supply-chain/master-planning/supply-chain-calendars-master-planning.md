@@ -14,12 +14,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: dcc66549bf6bdd67438bea9ac3c29c3f01e2674e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 7a53efb753a75916c85dc4a45a3c64872a7f5d32
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5841767"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908371"
 ---
 # <a name="calendars-and-master-planning"></a>Naptárak és alaptervezés
 
@@ -90,7 +90,7 @@ Ha szeretné megadni a dátumokat, amikor a vevő fogad szállításokat, rendel
 
 Ne feledje, ügyfelenként csak egy naptár hozzárendelése lehetséges. Ha az ügyfél egyes különböző címeihez szeretne hozzárendelni naptárat, létrehozhat címenként egy ügyfelet, majd hozzárendelhet saját naptárát. 
 
-A kért átvételi dátumot az értékesítésirendelési-sorokban befolyásolja az ügyfél naptára és a szállítási dátum kezelési módja. A legkorábbi szállítási dátum kiszámításával kapcsolatosan itt talál további információkat: [Rendelési ígéretek.](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/delivery-dates-available-promise-calculations).
+A kért átvételi dátumot az értékesítésirendelési-sorokban befolyásolja az ügyfél naptára és a szállítási dátum kezelési módja. A legkorábbi szállítási dátum kiszámításával kapcsolatosan itt talál további információkat: [Rendelési ígéretek.](/dynamics365/unified-operations/supply-chain/sales-marketing/delivery-dates-available-promise-calculations).
 
 ### <a name="shipping-calendar-for-a-legal-entity"></a>Szállítási naptár jogi személyhez
 Ha jelezni szeretné a dátumokat, amelyeken a jogi személy árut tud szállítani, beállíthat egy szállítási naptárat a **Szervezet felügyelete > Szervezetek > Jogi személyek** helyen. Válassza ki a jogi személyt és adja hozzá a naptárat a **Külkereskedelem és logisztika** lapon a **Szállítási naptár** mezőben. A szállítási naptárat a jogi személyhez tartozó összes raktári naptár alapértelmezéseinek forrása lesz. 

@@ -1,45 +1,54 @@
 ---
 title: Igény-előrejelzés manuális módosítása
-description: Ez az eljárás bemutatja egy cikk előrejelzésének módosítását.
-author: ShylaThompson
+description: Ez az cikk bemutatja egy cikk előrejelzésének módosítását
+author: ChristianRytt
 ms.date: 08/12/2019
 ms.topic: business-process
-ms.prod: ''
-ms.technology: ''
 ms.search.form: EcoResProductDetailsExtended, ForecastSales
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 518a49441a9d73d9da5ab90400e0b7482692d374
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5da1d5b1fbd91964e695a704681b1c9ee513a2f1
+ms.sourcegitcommit: 4016c223a985c46e33f9941bf91ba5e1583e1cfd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5829666"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5889024"
 ---
 # <a name="modify-a-demand-forecast-manually"></a>Igény-előrejelzés manuális módosítása
 
 [!include [banner](../../includes/banner.md)]
 
-Ez az eljárás bemutatja egy cikk előrejelzésének módosítását. Ez az eljárás az USMF bemutatócéget használja. Ezt a felvételt a termeléstervező használja. 
+Ez az eljárás bemutatja egy cikk előrejelzésének módosítását. Ez az eljárás az USMF bemutatócéget használja. Ezt az eljárást a termeléstervező használja.
 
+## <a name="modify-the-forecast-for-a-selected-item"></a>Egy kiválasztott cikk előrejelzésének módosítása
 
-## <a name="modify-the-forecast-for-an-item"></a>Cikk előrejelzésének módosítása
-1. A **Navigációs ablaktáblán** lépjen a **Modulok > Termékinformációk kezelése > Termékek > Kiadott termékek** részre.
-2. Keresse meg és jelölje ki a kívánt rekordot a listán. Válassza ki azt a cikket, amelynek módosítani szeretné az előrejelzését. Kiválaszthatja például a D0001 cikket.  
-3. A **Művelet panelen** kattintson a **Tervezés** elemre.
-4. Kattintson az **Igény-előrejelzés** lehetőségre.
-5. A listában jelölje meg a kiválasztott sort. Ha nincsenek előrejelzési sorok, hozzon létre egy újat: kattintson az Új elemre az alkalmazássávon.  
-6. Adjon meg egy számot az **Értékesítési mennyiség** mezőben. Ez a szám a cikk előre jelzett mennyiségét jelöli.  
-7. Kattintson a Mentés gombra.
+Egy kiválasztott cikk előrejelzésének módosítása:
 
-## <a name="modify-the-forecast-in-excel"></a>Előrejelzés módosítása az Excel programban
-1. Kattintson a **Megnyitás** elemre a Microsoft Office-ban.
-2. Kattintson az **Igény-előrejelzés szerkesztése** elemre az Excel programban. Az Excel programban hozzáadhatja, törölheti és szerkesztheti az igény-előrejelzés sorait. Ha nem lehet megtekinteni az adatokat Excelben, be kell jelentkeznie bekapcsolt „Szeretnék bejelentkezve maradni” lehetőséggel, és engedélyeznie kell az adatkommunikációs alkalmazást.  
+1. Kattintson a **Modulok \>Termékinformációk kezelése \> Termékek \> Kiadott termékek** lehetőségre.
+1. Keresse meg és jelölje ki a kívánt rekordot a listán. Válassza ki azt a cikket, amelynek módosítani szeretné az előrejelzését.
+1. A műveletpanelen nyissa meg a **Terv** lapot, és válassza az **Igény-előrejelzés** lehetőséget.
+1. Jelöljön ki egy sort a listában. Ha nincsenek előrejelzési sorok, hozzon létre egy újat: válassza az **Új** elemet a Művelet panelen.  
+1. Adjon meg egy pozitív számot az **Értékesítési mennyiség** mezőben. Ez a szám a cikk előre jelzett mennyiségét jelöli. Ha negatív számot ad meg, a rendszer hibát jelez.
+1. Töltse ki a egyéb mezőket, ha szükséges.
+1. A Művelet ablaktáblán válassza a **Mentés** lehetőséget.
 
+## <a name="modify-the-forecast-for-one-or-more-items-microsoft-excel"></a>Egy vagy több cikk előrejelzésének módosítása Microsoft Excel
+
+Egy vagy több cikk előrejelzésének módosításához Microsoft Excel:
+
+1. Válasszon az alábbi lehetőségek közül:
+    - Nyissa meg bármelyik cikk **igény-előrejelzés** lapját (nem számít, melyiket) az előző szakaszban leírtak szerint.
+    - Ugorjon az **Alaptervezés \> Előrejelzés \> Manuális előrejelzési bejegyzés \> Igény-előrejelzési sorok** lehetőségre.
+1. A műveletpanelen nyissa meg a **Megnyitás Microsoft Office-ban \> Igény-előrejelzési bejegyzések** lehetőséget.
+1. Válassza ki a letöltés helyét, mentse, majd nyissa meg a letöltött fájlt az Excel programban.
+1. Ha lát egy figyelmeztetést, válassza a **Szerkesztés engedélyezése** lehetőséget.
+1. Az Excel programban a Microsoft Dynamics munkaablak használatával jelentkezzen be a Supply Chain Management alkalmazásba. Úgy kell bejelentkeznie, hogy engedélyezve van a **Bejelentkezve marad** beállítás, és meg kell bíznia az adatkapcsolati alkalmazásban.
+1. Az Excel-táblázat most a vállalat aktuális igény-előrejelzési sorait jeleníti meg.  Szükség szerint hozzáadhatja, törölheti és szerkesztheti az igény-előrejelzés sorait.
+1. Válassza a **Közzététel** lehetőséget a Microsoft Dynamics munkaablakban, ha vissza kell töltenie módosításait a Supply Chain Management eszközbe.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

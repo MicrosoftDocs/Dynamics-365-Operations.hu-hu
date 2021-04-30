@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d5051bbf9e550add6a0cfc5e23f3aeb7b379ef03
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 9a285e3c60df713ceaee1fae72b2a1d54fa5c431
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5789636"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5890747"
 ---
 # <a name="performance-management"></a>Teljesítménykezelés
 
@@ -93,7 +93,7 @@ Emellett a **Kompetenciák** szakasz segítségével megvitathatja, áttekinthet
 
 Új értékeléseket hozhat létre, amelyek az Ön által elkészített sablonokon alapulnak. Lehet például sablonja a „one-on-one” megbeszélésekhez, a fejlesztési tervekhez vagy az időszakos értékelésekhez is. Kiválaszthatja a sablont, amikor új értékelést hoz létre.
 
-Az ellenőrzések nyomtatásához nyomja meg az **Ellenőrzés nyomtatása** gombot. Ha nem látja a gombot az **Ellenőrzés** lapon, győződjön meg arról, hogy engedélyezte a szolgáltatást a **Funkciókezelés** munkaterületen. A funkciókezeléssel kapcsolatos további tudnivalókat lásd [Funkciókezelés áttekintése](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
+Az ellenőrzések nyomtatásához nyomja meg az **Ellenőrzés nyomtatása** gombot. Ha nem látja a gombot az **Ellenőrzés** lapon, győződjön meg arról, hogy engedélyezte a szolgáltatást a **Funkciókezelés** munkaterületen. A funkciókezeléssel kapcsolatos további tudnivalókat lásd [Funkciókezelés áttekintése](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 > [!NOTE]
 > A teljesítménykimutatásokat csak az Emberi erőforrásokban lehet kinyomtatni. A Dynamics 365 Finance alkalmazásban nem érhető el.

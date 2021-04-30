@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-07-01
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 59a421b5e81366845901c44486acb3dfa3781850
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: cdcbc828fadce641cbee2cc6135be819a03275c9
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753648"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5894100"
 ---
 # <a name="defer-the-execution-of-sequence-elements-in-er-formats"></a>A szekvenciaelemek végrehajtásának elhalasztása az ER-formátumokban
 
@@ -42,7 +42,7 @@ A **Halasztott végrehajtás** beállítás nem alkalmazható olyan sorszámok e
 
 ## <a name="example-defer-the-execution-of-a-sequence-element-in-an-er-format"></a><a name="Example"></a>Példa: Szekvenciaelem végrehajtásának elhalasztása egy ER-formátumban
 
-A következő lépésekkel megtudhatja, hogy a rendszergazda vagy elektronikus jelentéskészítési tanácsadó [szerepkörrel](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/tasks/assign-users-security-roles) rendelkező felhasználó hogyan konfigurálhat egy olyan, szekvenciaelemet tartalmazó ER-formátumot, amelynél a végrehajtási sorrend eltér a formátumhierarchiában megadott sorrendtől.
+A következő lépésekkel megtudhatja, hogy a rendszergazda vagy elektronikus jelentéskészítési tanácsadó [szerepkörrel](../sysadmin/tasks/assign-users-security-roles.md) rendelkező felhasználó hogyan konfigurálhat egy olyan, szekvenciaelemet tartalmazó ER-formátumot, amelynél a végrehajtási sorrend eltér a formátumhierarchiában megadott sorrendtől.
 
 Ezeket a lépéseket a **USMF** vállalatban hajthatja végre a Microsoft Dynamics 365 Finance megoldásban.
 

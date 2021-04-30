@@ -2,11 +2,11 @@
 title: Eszközlízing – kezdőlap
 description: Ez a témakör áttekintést nyújt az eszközlízing-dokumentációról, valamint az adott témakörökre mutató hivatkozásokról.
 author: moaamer
-ms.date: 10/27/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: AssetLeaseLeasingWorkspace
 audience: Application User
 ms.reviewer: roschlom
 ms.custom: 4464
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-27
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 532601d08d52e9edaf97253df4efd2fc10985dc0
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 202a353929fbcd8d81593db155d7bfeebb8f3021
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5816148"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5898110"
 ---
 # <a name="asset-leasing-home-page"></a>Eszközlízing – kezdőlap
 
@@ -28,7 +28,9 @@ ms.locfileid: "5816148"
 
 Ez a témakör az eszközlízinghez rendelkezésre álló súgótémaköröket sorolja fel, és konkrét témakörökre mutató hivatkozásokat tartalmaz. 
 
-Az eszközlízing egy speciális modul, amely lehetővé teszi a lízingelt eszközökre vonatkozó pénzügyi tranzakciók kezelését, nyomon követését és automatizálását a Microsoft Dynamics 365 Finance alkalmazásban. Az eszközlízing megfelel a nemzetközi könyvelési szabványoknak (IFRS 16) és az Egyesült Államokban GAAP szabványainak (ASC 842). Az eszközlízing modul rögzíti és dolgozza fel a lízinggel kapcsolatos adatokat, és segítséget nyújt a naplóbejegyzések létrehozásában a lízing életciklusa alatt – a kezdő elszámolástól és a havi naplóbejegyzésektől egészen a lízing értékvesztéséig és lezárásáig.  
+Az eszközlízing egy speciális modul, amely lehetővé teszi a lízingelt eszközökre vonatkozó pénzügyi tranzakciók kezelését, nyomon követését és automatizálását a Microsoft Dynamics 365 Finance alkalmazásban. Az eszközlízing megfelel a nemzetközi könyvelési szabványoknak (IFRS 16) és az Egyesült Államokban GAAP szabványainak (ASC 842). Az eszközlízing modul rögzíti és dolgozza fel a lízinggel kapcsolatos adatokat, és segítséget nyújt a naplóbejegyzések létrehozásában a lízing életciklusa alatt – a kezdő elszámolástól és a havi naplóbejegyzésektől egészen a lízing értékvesztéséig és lezárásáig.
+
+A funkció használata előtt be kell azt kapcsolnia saját rendszerében. A rendszergazdák használhatják a **Funkciókezelés** munkaterületet a funkció állapotának ellenőrzéséhez, és szükség esetén bekapcsolásához. A **Funkciókezelés** munkaterületen keresse meg és válassza ki az **Eszközlízing** funkciót, majd kattintson az **Engedélyezés most** gombra.
 
 ## <a name="asset-leasing-topics"></a>Eszközlízing témakörök
 Az alábbi témakör az eszközlízing konfigurálásához és használatához érhető el. 
@@ -82,7 +84,7 @@ Ez a témakör az eszközlízingek számára elérhető jelentéseket ismerteti.
 
 ### <a name="whats-new-and-in-development"></a>Újdonságok és fejlesztés alatt levő megoldások
 
-Lépjen a [Microsoft Dynamics 365 programverzióra vonatkozó kiadási tervek](https://go.microsoft.com/fwlink/?linkid=2010158) oldalára a tervezett új funkciók megtekintéséhez. 
+Lépjen a [Microsoft Dynamics 365 programverzióra vonatkozó kiadási tervek](/dynamics365/release-plans/) oldalára a tervezett új funkciók megtekintéséhez. 
 
 ### <a name="blogs"></a>Blogok
 

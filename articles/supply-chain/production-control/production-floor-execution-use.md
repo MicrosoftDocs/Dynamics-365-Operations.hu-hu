@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 02046da5e2487e203c9658c255f95a7c403d0b10
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0ece83a20a33a8f23e8700d1b5d680a11d64fea0
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814656"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5907717"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>A termelési üzem végrehajtási felületének dolgozók általi használata
 
@@ -136,9 +136,9 @@ A dolgozó kiválasztja a harmadik feladatot a **Minden feladat** lapon, majd ki
 
 ## <a name="working-on-indirect-activities"></a>Közvetett tevékenységeken történő munka
 
-A közvetett tevékenységek olyan tevékenységek, amelyek nem kapcsolódnak közvetlenül a termelési rendeléshez. A közvetett tevékenységek rugalmasan meghatározhatók, a [Munkaidő és jelenlét közvetett tevékenységeinek beállítása](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-indirect-activities-for-time-and-attendance) című témakörben leírtak szerint.
+A közvetett tevékenységek olyan tevékenységek, amelyek nem kapcsolódnak közvetlenül a termelési rendeléshez. A közvetett tevékenységek rugalmasan meghatározhatók, a [Munkaidő és jelenlét közvetett tevékenységeinek beállítása](/dynamicsax-2012/appuser-itpro/set-up-indirect-activities-for-time-and-attendance) című témakörben leírtak szerint.
 
-Például Shannon, egy dolgozó a Contoso nevű vállalatnál, egy vállalati találkozón szeretne részt venni, és a találkozókat közvetett tevékenységnek tekinti. A következő két eset valamelyike érvényes:
+Például Shannon, egy dolgozó a(z) Contoso nevű vállalatnál, egy vállalati találkozón szeretne részt venni, és a találkozókat közvetett tevékenységnek tekinti. A következő két eset valamelyike érvényes:
 
 - **Shannon egy vagy több aktív feladaton dolgozik.** Shannon kiválasztja a **Tevékenység** lehetőséget, azonosítja a tevékenységet (találkozó), és megerősíti a kijelölést. A megjelenő üzenet arról tájékoztatja, hogy már vannak folyamatban lévő feladatai. Az üzenetből Shannon eldöntheti, hogy befejezi vagy leállítja azokat a feladatokat, amelyeken dolgozik, mielőtt elmenne a találkozóra.
 - **Shannonnak nincsenek aktív feladatai.** Shannon kiválasztja a **Tevékenység** lehetőséget, azonosítja a tevékenységet (találkozó), és megerősíti a kijelölést. A rendszer regisztrálta, hogy a találkozón van.

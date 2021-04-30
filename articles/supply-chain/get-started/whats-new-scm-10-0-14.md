@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: f67bb8e218c98c6f227f5e1f05f9ba7b35da37c7
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 356cdf0fc6bc2dbc086ff186805a97755d98e49e
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5832154"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909525"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10014-november-2020"></a>Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.14 alkalmazásban (2020. november)
 
@@ -33,7 +33,7 @@ Ez a témakör a Microsoft Dynamics 365 Supply Chain Management 10.0.14 változa
 
 ## <a name="features-included-in-this-release"></a>A verzióban található funkciók
 
-Ez a verzió tartalmaz egy frissített platformot és általános fejlesztéseket, de nem tartalmaz a Supply Chain Management alkalmazással kapcsolatos új funkciókat. Az érkező funkciókkal kapcsolatos további tudnivalókat lásd a [Kiadási tervek](https://docs.microsoft.com/dynamics365/release-plans/) webhely.
+Ez a verzió tartalmaz egy frissített platformot és általános fejlesztéseket, de nem tartalmaz a Supply Chain Management alkalmazással kapcsolatos új funkciókat. Az érkező funkciókkal kapcsolatos további tudnivalókat lásd a [Kiadási tervek](/dynamics365/release-plans/) webhely.
 
 ## <a name="additional-resources"></a>További erőforrások
 
@@ -49,7 +49,7 @@ Ha további tájékoztatást szeretne kapni a 10.0.14 részét képező frissít
 
 Kíváncsi a bármelyik üzleti alkalmazásával vagy platformjával kapcsolatos, közelgő és a közelmúltban bevezetett lehetőségekre?
 
-Lásd: [Dynamics 365: 2020-as 2. frissítési hullám tervét](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/index). A részleteket minden apró információmorzsáig bezárólag egyetlen dokumentumban rögzítettük, amelyet felhasználhat a tervezés során.
+Lásd: [Dynamics 365: 2020-as 2. frissítési hullám tervét](/dynamics365-release-plan/2020wave2/index). A részleteket minden apró információmorzsáig bezárólag egyetlen dokumentumban rögzítettük, amelyet felhasználhat a tervezés során.
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Eltávolított és elavult Supply Chain Management szolgáltatások
 

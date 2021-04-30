@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2f6dbcbd92a99699ce8d7e91c1a7e89a6063035f
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: df2c55a8a69efa20c6d8c41e97c9e1f80ee1640d
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795141"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5892753"
 ---
 # <a name="prepare-for-human-resources-go-live"></a>Felkészülés a Human Resources éles indításra
 
@@ -43,7 +43,7 @@ Az alábbi táblázat a folyamat összes lépését, a várható időtartamot é
 | 2 | Ellenőrzőlista teljesítése és elküldése | A felhasználói elfogadási tesztelés (UAT) befejezése után | Partner/vevő | Kövesse a [FastTrack élő indítási értékelés](hr-admin-go-live-prepare.md#fasttrack-go-live-assessment) részben megadott útmutatást. |
 | 3 | Projektértékelés (FastTrack) | FastTrack építész* | Az építész az ellenőrzőlista beérkezése után értékelést készít, és folytatja a felülvizsgálatot, amíg a kérdések tisztázásra és adott esetben a mérséklésre nem kerül sor. |
 | 4 | Projektműhely (FastTrack) | FastTrack építész* | |
-| 5 | Adatcsomag importálásai | A projekttől függ | Partner/vevő | Kövesse az [adatkezelés áttekintése](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities-data-packages) című témakör utasításait.|
+| 5 | Adatcsomag importálásai | A projekttől függ | Partner/vevő | Kövesse az [adatkezelés áttekintése](../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md) című témakör utasításait.|
 | 6 | Termelés kész | Az összes korábbi lépés befejezése után | Partner/vevő | A partner/ügyfél átveheti az éles környezet irányítását.|
 | 7 | Átállási tevékenységek | A projekttől függ | Partner/vevő | |
 | 8 | Éles indítás | A projekttől függ | Vevő | |
@@ -66,7 +66,7 @@ Az UAT-fázisban a megvalósítási projekt tesztkörnyezetében tesztelnie kell
 
 - Javasoljuk, hogy a UAT-folyamat olyan tiszta és új környezettel kezdődjon, ahol az ARANY konfiguráció adatait a UAT-folyamat megkezdése előtt átmásolja a környezetbe. Javasoljuk, hogy ARANY környezetként használja a működési környezetet, amíg az éles környezet el nem indul. Ezen a ponton a környezet termeléssé válik.
 - A vizsgálati esetek a követelmények teljes körét lefedik. 
-- Teszteljen az áttelepített adatok használatával. Ezeknek az adatoknak törzsadatokat kell tartalmazniuk, például dolgozókat, feladatokat és beosztásokat. A nyitó egyenlegeket is tartalmazzák, például a szabadság és a távolléti időbeli elhatárolásokat. Végül tartalmazzák a nyitott tranzakciókat, például az aktuális juttatási beléptetéseket. Teljes tesztelés minden típusú adattal, még akkor is, ha az adatkészlet nincs véglegesítve. 
+- Teszteljen az áttelepített adatok használatával. Ezeknek adatokat kell tartalmazniuk, például dolgozókat, feladatokat és beosztásokat. A nyitó egyenlegeket is tartalmazzák, például a szabadság és a távolléti időbeli elhatárolásokat. Végül tartalmazzák a nyitott tranzakciókat, például az aktuális juttatási beléptetéseket. Teljes tesztelés minden típusú adattal, még akkor is, ha az adatkészlet nincs véglegesítve. 
 - Tesztelje a felhasználókhoz rendelt megfelelő biztonsági szerepkörök használatával (alapértelmezett és egyéni szerepkörökkel). 
 - Győződjön meg arról, hogy a megoldás megfelel minden vállalat- és iparág-specifikus szabályozási követelménynek. 
 - Dokumentálja az összes funkciót, és szerezze be az ügyfél jóváhagyását. 
@@ -86,7 +86,7 @@ Az éles indítás előtt szimulálnia kell az éles indítást az örökölt re
 
 ## <a name="fasttrack-go-live-assessment"></a>FastTrack élő indítási értékelés
 
-Azok az ügyfelek, akik jogosultak a FastTrack-re, és akik FastTrack-megoldásépítésszel foglalkoznak, a Microsoft FastTrack-kel élő indítási értékelést teljesítenek azokat. További információért lásd: [Microsoft FastTrack](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/fasttrack-dynamics-365-overview). 
+Azok az ügyfelek, akik jogosultak a FastTrack-re, és akik FastTrack-megoldásépítésszel foglalkoznak, a Microsoft FastTrack-kel élő indítási értékelést teljesítenek azokat. További információért lásd: [Microsoft FastTrack](/dynamics365/fasttrack/). 
 
 Körülbelül nyolc héttel az éles indítás előtt a FastTrack csapata megfogja kérni, hogy töltsön ki egy [Éles indítási ellenőrzőlistát](https://go.microsoft.com/fwlink/?linkid=2146013).
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-24
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 2335721cfe8fd7ff3f76e3c7ca2560a56d45d583
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9ecf6ef7b7f052ebbb1201dcd04a7431f5b72ce5
+ms.sourcegitcommit: b64c52d85aa6f110f3b1959a5521637dd8631b5b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818680"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5867447"
 ---
 # <a name="create-a-data-integrator-project-preview"></a>Adatintegrációs projekt létrehozása (előzetes verzió)
 
@@ -59,6 +59,7 @@ Ez a témakör bemutatja, hogyan hozhat létre adatintegrációs projektet.
     1. Az imént létrehozott kapcsolatkészlet használatával adatintegrációs projekteket hozhat létre a következő sablonokhoz:
 
         - Az ügyfelek fizetési információinak eredményei (CDS to Fin and Ops)
+            - Ha a 10.0.17-es vagy újabb verziót használja, akkor az ügyfélkifizetések eredményének megfelelő sablont (CDS to Fin and Ops 10.0.17+) kell használnia.
         - Készpénzáramlási idősorozatok eredményei (CDS to Fin and Ops)
         - Költség idősorozatok eredményei (CDS to Fin and Ops)
 

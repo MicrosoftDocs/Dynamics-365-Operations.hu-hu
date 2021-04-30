@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d2cbab3177756fbf5df4f07350a6449f0b22e028
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 6f60d2e654d37b86d92478b6cd961b917711ef8c
+ms.sourcegitcommit: 011468a6cffea8641bebc2922e0676d9f44b36fc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791947"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "5857273"
 ---
 # <a name="peripherals"></a>Perifériák
 
@@ -142,6 +142,9 @@ A perifériák esetében az UWP a Windows Plug and Play eszközök támogatásá
 ### <a name="keyboard-wedge"></a>Billentyűzet ék
 
 A billentyűzet ék eszközök adatokat küldenek a számítógépnek úgy, mintha az adatok a billentyűzeten lettek volna beírva. Ezért alapértelmezés szerint a pénztár aktív mezője megkapja a beolvasott vagy lehúzott adatokat. Bizonyos esetekben ez a viselkedés azt okozhatja, hogy hibás típusú adatok olvasódnak be a nem megfelelő mezőbe. Egy vonalkód például a hitelkártyaadatoknak szánt mezőbe olvasódhat be. Sok esetben a pénztár tartalmaz olyan logikát, amely meghatározza, hogy a beolvasott vagy lehúzott adat vonalkód vagy kártyalehúzás. Ezért az adatok megfelelően kezeli a rendszer. Ha azonban az eszközök billentyűzeték eszköz helyett OPOS-ként vannak beállítva, pontosabban vezérelhető az ilyen eszközök adatainak felhasználása, mert több dolog „ismert” az eszközről, amelyről az adatok származnak. A vonalkód-leolvasók adatait például automatikusan vonalkódként ismeri fel a rendszer, és a kapcsolódó bejegyzés megkeresése az adatbázisban könnyebb és gyorsabb, mint ha általános karakterlánc-keresés futna le, úgy, mint a billentyűzet ék eszközök esetében.
+
+> [!NOTE]
+> Ha billentyűzetolvasókat használ a POS-ban, akkor úgy kell őket programozni, hogy küldjenek vissza egy soremelést, vagy egy **Enter** eseményt az utolsó beolvasott karakter után. Ha ez a konfigurálás nem történik meg, akkor a billentyűzetolvasók nem fognak megfelelően működni. Az eszközgyártó által benyújtott dokumentációból tájékozódhat a soremelés esemény hozzáfűzéséről.  
 
 ### <a name="native-printer"></a>Natív nyomtató
 

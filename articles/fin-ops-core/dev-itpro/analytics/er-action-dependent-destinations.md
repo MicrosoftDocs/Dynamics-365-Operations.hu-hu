@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: ac0efbbe645969cdf0419bf533d34e38b76fb67a
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 7decdb1d759284c616ecf928c10f99098627472d
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751232"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893578"
 ---
 # <a name="configure-action-dependent-er-destinations"></a>Műveletfüggő ER-célok konfigurálása
 
@@ -60,7 +60,7 @@ Ha a **Bármely** dokumentumtípust választja, a **Nyomtatáskezelési művelet
     - Ha futásidőben meg van adva a **Küldés** műveletet, a rendszer az **E-mail** ER-célt alkalmazza.
     - Ha futásidőben meg van adva a **Nyomtatás** műveletet, a rendszer a **Nyomtató** ER-célt alkalmazza.
 
-A **Szabadszöveges számla (Excel)** ER-formátum használatával például a feladott [szabadszöveges számlát](https://docs.microsoft.com/dynamics365/finance/accounts-receivable/create-free-text-invoice-new) nyomtathatja ki. A generált dokumentumok útvonalának eléréséhez konfigurálnia kell az ER-célokat ehhez az ER-formátumhoz. Például előfordulhat, hogy konfigurálnia kell ezeket az ER-célokat, hogy a következő műveleteket hajtsa végre egy generált dokumentumon:
+A **Szabadszöveges számla (Excel)** ER-formátum használatával például a feladott [szabadszöveges számlát](../../../finance/accounts-receivable/create-free-text-invoice-new.md) nyomtathatja ki. A generált dokumentumok útvonalának eléréséhez konfigurálnia kell az ER-célokat ehhez az ER-formátumhoz. Például előfordulhat, hogy konfigurálnia kell ezeket az ER-célokat, hogy a következő műveleteket hajtsa végre egy generált dokumentumon:
 
 - A dokumentum archiválása, ha az ER-formátum fut, de nincs megadott műveletkódot (például a dokumentum elektronikus továbbítása esetén).
 - A dokumentum előnézete a böngészőben, amikor a felhasználó végrehajtja a **Megtekintés** műveletet.
@@ -82,7 +82,7 @@ A következő ábra bemutatja, hogy hogyan lehet elérni ugyanazon alternatív m
 
 Ha ER-formátumot futtat, és olyan felhasználók létesítenek felhasználói műveleteket, akik rendelkeznek a megfelelő [engedélyekkel](electronic-reporting-destinations.md#security-considerations) a konfigurált célbeállítások futásidőben való módosításához, megjelenik egy párbeszédpanel, amely lehetőséget ad a konfigurált célbeállítások módosítására. Ez a párbeszédpanel nem kötelező, és megjelenésének módja attól függ, hogy az ER-keretrendszer hogyan valósítja meg az ER-formátumot. Ha megjelenik ez a párbeszédpanel, a mezőben található ER-célok a megadott felhasználói műveletnek megfelelően lesznek engedélyezve.
 
-A következő ábra az **Elektronikus jelentési formátum célokat** bemutató párbeszédpanel egy példáját mutatja be, amely a szabadszöveges számla [feladása](https://docs.microsoft.com/dynamics365/finance/accounts-receivable/create-free-text-invoice-new) esetén jelenik meg, és a **Szabadszöveges számla (Excel)** ER-formátumának futtatásával generálja ezt a dokumentumot, ha a **Nyomtató** művelet létesítve van, és az ER-célok erre a formátumra vannak konfigurálva, amint az ebben a témakörben korábban látható.
+A következő ábra az **Elektronikus jelentési formátum célokat** bemutató párbeszédpanel egy példáját mutatja be, amely a szabadszöveges számla [feladása](../../../finance/accounts-receivable/create-free-text-invoice-new.md) esetén jelenik meg, és a **Szabadszöveges számla (Excel)** ER-formátumának futtatásával generálja ezt a dokumentumot, ha a **Nyomtató** művelet létesítve van, és az ER-célok erre a formátumra vannak konfigurálva, amint az ebben a témakörben korábban látható.
 
 ![Párbeszédpanel, amely lehetőséget ad a kezdetben konfigurált ER-célok megváltoztatására a futó ER-formátumhoz](./media/er-destination-action-dependent-02.gif)
 

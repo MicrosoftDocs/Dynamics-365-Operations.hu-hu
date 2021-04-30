@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: ilyako
 ms.search.validFrom: 2021-03-19
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: ce06a0ce4f2a308e1917ac2c7cbc66f0494a2ec5
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 8d7f32c5d3d29be8d1d2742c4017c1719cbd47a8
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811510"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897332"
 ---
 # <a name="references-to-original-invoices-in-credit-notes"></a>Hivatkozások eredeti számlákra a jóváírásokban
 
@@ -30,7 +30,7 @@ Egyes országokban és régiókban jogi előírás, hogy a nyomtatott jóváír�
 
 ## <a name="prerequisites"></a>Előfeltételek
 
-- A **Funkciókezelés** munkaterületen kapcsolja be az **Értékesítési és projektszámla-jelentések jóváírás-számlázási elrendezése** funkciót. További tájékoztatás: [Funkciókezelés – áttekintés](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
+- A **Funkciókezelés** munkaterületen kapcsolja be az **Értékesítési és projektszámla-jelentések jóváírás-számlázási elrendezése** funkciót. További tájékoztatás: [Funkciókezelés – áttekintés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 - A szükséges dokumentumok nyomtatható formátumait a Nyomtatáskezelésben kell konfigurálni.
 
 Az ebben a témakörben leírt funkciók a következő dokumentumokra vonatkoznak:

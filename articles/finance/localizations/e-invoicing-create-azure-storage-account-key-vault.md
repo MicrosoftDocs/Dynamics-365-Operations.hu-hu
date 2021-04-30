@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: b7df4933c1373893e00f48ea3a21bd5af40719a9
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 2786d350fde2399aadb35dc653bc15123e0e6d91
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840220"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893802"
 ---
 # <a name="create-an-azure-storage-account-and-a-key-vault"></a>Hozzon létre Azure tárfiókot és egy kulcstartót
 
@@ -30,8 +30,8 @@ ms.locfileid: "5840220"
 
 Mielőtt teljesítené az ebben a témakörben ismertetett lépéseket, bizonyosodjon meg arról, hogy a következő feladatok el lettek végezve:
 
-- Kulcstartó-erőforrás létrehozása az Azure szolgáltatásban. További információkért lásd [Az Azure Key Vaulról](https://docs.microsoft.com/azure/key-vault/general/overview) lehetőséget.
-- Hozzon létre egy Azure tárfiókot (Blob-tároló). További információkért lásd a [Azure tárfiók karbantartása](https://docs.microsoft.com/azure/storage/blobs/) lehetőséget.
+- Kulcstartó-erőforrás létrehozása az Azure szolgáltatásban. További információkért lásd [Az Azure Key Vaulról](/azure/key-vault/general/overview) lehetőséget.
+- Hozzon létre egy Azure tárfiókot (Blob-tároló). További információkért lásd a [Azure tárfiók karbantartása](/azure/storage/blobs/) lehetőséget.
 
 ## <a name="overview"></a>Áttekintés
 
@@ -83,4 +83,3 @@ Ebben a témakörben két fő lépést kell végrehajtania:
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
-

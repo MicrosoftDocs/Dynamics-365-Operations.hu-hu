@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 031feb3c2fa55b182deb0863cb1fc3d63652a03f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5004cb2ce2b601c51c641c2e9d6d2c4788729af9
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814876"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909305"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-1007-january-2020"></a>Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.7 szolgáltatásban (2020. január)
 
@@ -50,7 +50,7 @@ A Microsoft Dynamics 365 Supply Chain Management 10.0.7 a 31-as platform frissí
 ### <a name="dynamics-365-2019-release-wave-2-plan"></a>Dynamics 365: 2019-es 2. hullám tervei
 Kíváncsi a bármelyik üzleti alkalmazásával vagy platformjával kapcsolatos, közelgő és a közelmúltban bevezetett lehetőségekre?
 
-Nézze meg a [Dynamics 365:2019 2es frissítési hullám tervét](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/). A részleteket minden apró információmorzsáig bezárólag egyetlen dokumentumban rögzítettük, amelyet felhasználhat a tervezés során.
+Lásd: [Dynamics 365: 2019-as 2. frissítési hullám tervét](/dynamics365-release-plan/2019wave2/). A részleteket minden apró információmorzsáig bezárólag egyetlen dokumentumban rögzítettük, amelyet felhasználhat a tervezés során.
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Eltávolított és elavult Supply Chain Management szolgáltatások
 

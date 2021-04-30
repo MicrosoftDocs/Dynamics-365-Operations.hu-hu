@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.search.validFrom: 2020-11-05
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 9590213ef73f7623aff10d4c8ee3efbea0e7984b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: e227cabdd205b7a0c1fe784fc719b538e6ea4443
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5823457"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5907691"
 ---
 # <a name="migration-to-planning-optimization-for-master-planning"></a>Áttelepítés az alaptervezéshez használatos Tervezési optimalizálásra
 
@@ -63,8 +63,12 @@ Jelenleg a Tervezési optimalizálás áttelepítési kivételei csak akkor rele
 
 A szükséges szolgáltatások elérhetővé válása után a Microsoft türelmi időszakot ad meg, amíg a kivétel lejár. A környezet adminisztrátorát tájékoztatni kell a szükséges szolgáltatások elérhetővé válásakor és a türelmi időszak indulásakor.
 
+Az alábbi folyamatábra összefoglalja a témakörben található információkat, így gyorsan ki tudja találni, hogy kivételt kér-e. Ha kivételt kell kérnie, töltse ki és küldje el a [Tervezési optimalizálás áttelepítése és kivétel kérdőívet](https://go.microsoft.com/fwlink/?linkid=2144962).
+
+![Kivétel folyamatábra](media/exception-diagram.png "Kivétel folyamatábra")
+
 > [!NOTE]
-> Csak termelési környezetek esetében kérhet kivételt, tesztkörnyezetek esetében nem. Ha egy szolgáltatott infrastruktúra (IaaS) elvű tesztkörnyezetében le kell tiltania a Tervezési optimalizálás kivételi hibáját, futtassa a [tesztkörnyezetekben](#faq-sandbox) nyújtott SQL-lekérdezést.
+> Kivételt csak olyan bérlők esetében lehet kérelmezni, akik jelenleg tartalmaznak vagy tartalmazni fognak éles környezetet, olyan bérlők esetén nem, akik csak tesztkörnyezetben vannak. Ha egy szolgáltatott infrastruktúra (IaaS) elvű tesztkörnyezetében le kell tiltania a Tervezési optimalizálás kivételi hibáját, futtassa a [tesztkörnyezetekben](#faq-sandbox) nyújtott SQL-lekérdezést.
 
 ## <a name="frequently-asked-questions"></a>Gyakori kérdések
 

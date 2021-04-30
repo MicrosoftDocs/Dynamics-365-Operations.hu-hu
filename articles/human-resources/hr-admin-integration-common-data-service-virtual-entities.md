@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4d80680f66d8669425482a54066f48af8ebcfbc8
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: ae36f1436ddd7f41bf0c3510b47cbc440224f484
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5805106"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5890052"
 ---
 # <a name="configure-dataverse-virtual-tables"></a>Dataverse-virtuális táblák konfigurálása
 
@@ -34,7 +34,7 @@ A Dynamics 365 Human Resources egy virtuális adatforrás a következőben: Micr
 A HR-entitásokon, Dataverse segítségével végrehajtandó CRUD-műveletek engedélyezéséhez virtuális táblákként elérhetővé kell tennie az entitásokat a következőben: Dataverse. Ezáltal CRUD-műveleteket hajthat végre Dataverse és Microsoft Power Platform segítségével a HR-ben található adatokon. A műveletek támogatják továbbá a HR teljes üzleti logikájának érvényesülését, hogy az adatok épsége biztosított legyen az adatoknak az entitásokba írásakor.
 
 > [!NOTE]
-> A Human Resources entitások Dataverse-tábláknak felelnek meg. A Dataverse (a korábbi Common Data Service) rendszer kapcsolatos további tudnivalókat és a terminológiai frissítéseket lásd: [Mi a Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)
+> A Human Resources entitások Dataverse-tábláknak felelnek meg. A Dataverse (a korábbi Common Data Service) rendszer kapcsolatos további tudnivalókat és a terminológiai frissítéseket lásd: [Mi a Microsoft Dataverse?](/powerapps/maker/data-platform/data-platform-intro)
 
 ## <a name="available-virtual-tables-for-human-resources"></a>A Human Resources számára elérhető virtuális táblák
 
@@ -51,7 +51,7 @@ A HR-hez tartozó virtuális táblák nem azonosak a HR számára létrehozott n
 A HR-hez tartozó natív táblákat külön hozzák létre és kezelik a Dataverse szolgáltatáson belüli közös humántőke-menedzsment megoldásban. A natív táblák esetén az adatok tárolása a Dataverse szolgáltatásban történik, és szinkronizálni kell őket a HR alkalmazás-adatbázisával.
 
 > [!NOTE]
-> A HR-hez tartozó natív Dataverse-táblák listájához lásd: [Dataverse-táblák](https://docs.microsoft.com/dynamics365/human-resources/hr-developer-entities).
+> A HR-hez tartozó natív Dataverse-táblák listájához lásd: [Dataverse-táblák](./hr-developer-entities.md).
 
 ## <a name="setup"></a>Beállítás
 
@@ -71,7 +71,7 @@ A funkciók aktiválásával és letiltásával kapcsolatos további részletek�
 
 ### <a name="register-the-app-in-microsoft-azure"></a>Regisztrálja az alkalmazást a Microsoft Azure-ban
 
-Először az Azure Portal webhelyen kell regisztrálnia a Human Resources példányt, hogy a Microsoft identitásplatform hitelesítési és engedélyezési szolgáltatásokat nyújthasson az alkalmazás és a felhasználók számára. Az alkalmazások Azure-ban való regisztrálásával kapcsolatos további tudnivalókat lásd: [Rövid útmutató: Alkalmazások regisztrálása a Microsoft Identity platformmal](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
+Először az Azure Portal webhelyen kell regisztrálnia a Human Resources példányt, hogy a Microsoft identitásplatform hitelesítési és engedélyezési szolgáltatásokat nyújthasson az alkalmazás és a felhasználók számára. Az alkalmazások Azure-ban való regisztrálásával kapcsolatos további tudnivalókat lásd: [Rövid útmutató: Alkalmazások regisztrálása a Microsoft Identity platformmal](/azure/active-directory/develop/quickstart-register-app).
 
 1. Nyissa meg a [Microsoft Azure portált](https://portal.azure.com).
 
@@ -93,7 +93,7 @@ Először az Azure Portal webhelyen kell regisztrálnia a Human Resources péld�
 
 10. Adjon meg egy leírást, válassza ki az időtartamot, majd válassza a **Hozzáadás** elemet.
 
-11. Rögzítse a titok értékét. Ezt az információt akkor kell megadnia, amikor a [virtuális tábla adatforrását konfigurálja](hr-admin-integration-common-data-service-virtual-entities.md#configure-the-virtual-table-data-source).
+11. A titkos érték rekordja a tábla **Érték** tulajdonságából. Ezt az információt akkor kell megadnia, amikor a [virtuális tábla adatforrását konfigurálja](hr-admin-integration-common-data-service-virtual-entities.md#configure-the-virtual-table-data-source).
 
     > [!IMPORTANT]
     > A titok értéket ekkor feltétlenül rögzítse. A titok az oldal elhagyása után már többé nem fog megjelenni.
@@ -215,12 +215,11 @@ A kicsúszó ablaktábla megjeleníti a folyamat legutóbbi végrehajtásának e
 
 ## <a name="see-also"></a>Lásd még
 
-[Mi az a Dataverse?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)<br>
-[Táblák a Dataverse-rendszerben](https://docs.microsoft.com/powerapps/maker/common-data-service/entity-overview)<br>
-[Táblakapcsolatok áttekintése](https://docs.microsoft.com/powerapps/maker/common-data-service/relationships-overview)<br>
-[Külső adatforrásból származó adatokat tartalmazó virtuális táblák létrehozása és szerkesztése](https://docs.microsoft.com/powerapps/maker/common-data-service/create-edit-virtual-entities)<br>
-[Mik azok a Power Apps portálok?](https://docs.microsoft.com/powerapps/maker/portals/overview)<br>
-[Alkalmazások Power Apps-ben való létrehozásának áttekintése](https://docs.microsoft.com/powerapps/maker/)
-
+[Mi az a Dataverse?](/powerapps/maker/common-data-service/data-platform-intro)<br>
+[Táblák a Dataverse-rendszerben](/powerapps/maker/common-data-service/entity-overview)<br>
+[Táblakapcsolatok áttekintése](/powerapps/maker/common-data-service/relationships-overview)<br>
+[Külső adatforrásból származó adatokat tartalmazó virtuális táblák létrehozása és szerkesztése](/powerapps/maker/common-data-service/create-edit-virtual-entities)<br>
+[Mik azok a Power Apps portálok?](/powerapps/maker/portals/overview)<br>
+[Alkalmazások Power Apps-ben való létrehozásának áttekintése](/powerapps/maker/)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

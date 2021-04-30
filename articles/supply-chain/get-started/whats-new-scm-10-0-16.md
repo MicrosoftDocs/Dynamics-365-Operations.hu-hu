@@ -12,14 +12,14 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
-ms.search.validFrom: 2020-11-31
+ms.search.validFrom: 2020-11-30
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 070e1a763977a9b5aad1a4f1336f6202f9f332cc
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 82afad71340e97ef1f86159d013e842d456b2a46
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5829980"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909919"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10016-february-2021"></a>Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.16 verziójában (2021. február)
 
@@ -33,17 +33,17 @@ Ez a témakör a Microsoft Dynamics 365 Supply Chain Management 10.0.16 változa
 
 ## <a name="features-included-in-this-release"></a>A verzióban található funkciók
 
-Ez a kiadás a következő funkciókat tartalmazza: Kövesse a [kiadási tervet](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/planned-features) az egyes funkciók hivatalos kiadási dátumainak megtekintéséhez.
+Ez a kiadás a következő funkciókat tartalmazza: Kövesse a [kiadási tervet](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/planned-features) az egyes funkciók hivatalos kiadási dátumainak megtekintéséhez.
 
-- [Testreszabható üzemirányítás interfész](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/customizable-shop-floor-execution-interface)<br> - További tudnivalókért lásd [A termelési üzem végrehajtási felületének futtatására szolgáló eszköz beállítása](../production-control/production-floor-execution-setup.md) című témakört.
+- [Testreszabható üzemirányítás interfész](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/customizable-shop-floor-execution-interface)<br> - További tudnivalókért lásd [A termelési üzem végrehajtási felületének futtatására szolgáló eszköz beállítása](../production-control/production-floor-execution-setup.md) című témakört.
 
-- [Készlet láthatósága bővítmény Dynamics 365 Supply Chain Management](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/inventory-visibility-add-in-dynamics-365-supply-chain-management-preview)<br> - További tudnivalókért lásd a [Készlet láthatósága bővítmény](../inventory/inventory-visibility.md) című témakört
+- [Készlet láthatósága bővítmény Dynamics 365 Supply Chain Management](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/inventory-visibility-add-in-dynamics-365-supply-chain-management-preview)<br> - További tudnivalókért lásd a [Készlet láthatósága bővítmény](../inventory/inventory-visibility.md) című témakört
 
 - Egyesített számsorozat a feladatazonosítók esetén<br> - A további tudnivalókat lásd: [Egyesített számsorozat a feladatazonosítókhoz](../production-control/unified-job-ids.md).
 
-- [Rendszámok ellenőrzése a forrásbizonylat sorain](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/validate-license-plates-source-document-lines)<br> - A további tudnivalókat lásd: [Raktár konfigurálása – áttekintés](../warehousing/warehouse-configuration.md).
+- [Rendszámok ellenőrzése a forrásbizonylat sorain](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/validate-license-plates-source-document-lines)<br> - A további tudnivalókat lásd: [Raktár konfigurálása – áttekintés](../warehousing/warehouse-configuration.md).
 
-- [Raktárkezelés kimenő számítási feladat képi megjelenítése](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/warehouse-management--workload-visualization)<br> - További tájékoztatás: [Kimenő számítási feladat képi megjelenítése](../warehousing/outbound-workload-visualization.md)
+- [Raktárkezelés kimenő számítási feladat képi megjelenítése](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/warehouse-management--workload-visualization)<br> - További tájékoztatás: [Kimenő számítási feladat képi megjelenítése](../warehousing/outbound-workload-visualization.md)
 
 Ezen szolgáltatások többségét a használat előtt engedélyezni kell a [Funkciók kezelése](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) alatt.
 
@@ -99,7 +99,7 @@ Ha további tájékoztatást szeretne kapni a 10.0.16 részét képező frissít
 
 Kíváncsi a bármelyik üzleti alkalmazásával vagy platformjával kapcsolatos, közelgő és a közelmúltban bevezetett lehetőségekre?
 
-Lásd: [Dynamics 365: 2020-as 2. frissítési hullám tervét](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/index). A részleteket minden apró információmorzsáig bezárólag egyetlen dokumentumban rögzítettük, amelyet felhasználhat a tervezés során.
+Lásd: [Dynamics 365: 2020-as 2. frissítési hullám tervét](/dynamics365-release-plan/2020wave2/index). A részleteket minden apró információmorzsáig bezárólag egyetlen dokumentumban rögzítettük, amelyet felhasználhat a tervezés során.
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Eltávolított és elavult Supply Chain Management szolgáltatások
 

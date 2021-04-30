@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: e294ada8dd3e764987aa363adb2614416986575b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d09c7be5de75511b10d7a69d4b8ac12917b0dbe8
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821129"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5910425"
 ---
 # <a name="inventory-visibility-add-in"></a>Készlet láthatósága bővítmény
 
@@ -39,7 +39,7 @@ Ez a témakör azt ismerteti, hogyan telepítheti és konfigurálhatja az Készl
 
 Telepítenie kell a Készlet láthatósága bővítményt a Microsoft Dynamics Lifecycle Services (LCS) használatával. Az LCS egy együttműködési portál, amely egy környezetet és rendszeresen frissített szolgáltatások készletét biztosítja, amelyek segítenek a Dynamics 365 Finance and Operations-alkalmazások alkalmazás-életciklusának kezelésében.
 
-További tudnivalókért lásd: [Lifecycle Services-erőforrások](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs).
+További tudnivalókért lásd: [Lifecycle Services-erőforrások](../../fin-ops-core/dev-itpro/lifecycle-services/lcs.md).
 
 ### <a name="prerequisites"></a>Előfeltételek
 
@@ -48,10 +48,13 @@ A Készlet láthatósága bővítmény telepítése előtt a következőket kell
 - Szerezzen be egy LCS-megvalósítási projektet legalább egy üzembe helyezett környezettel.
 - Győződjön meg arról, hogy be vannak fejezve a [Bővítmények áttekintése](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md) részben megadott bővítmények beállításának előfeltételei. A Készlet láthatósága nem igényel kettős írású csatolást.
 - Lépjen kapcsolatba a Készlet láthatósági csapatával [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) a következő három szükséges fájl beszerzéséhez:
-
     - `Inventory Visibility Dataverse Solution.zip`
     - `Inventory Visibility Configuration Trigger.zip`
     - `Inventory Visibility Integration.zip` (ha a Supply Chain Management által futtatott verzió korábbi, mint a 10.0.18)
+- Kövesse az itt megadott utasításokat: [Rövid útmutató: Alkalmazások regisztrálása a Microsoft Identity platformmal](/azure/active-directory/develop/quickstart-register-app), hogy regisztráljon egy alkalmazást, és adjon hozzá egy ügyféltitkot az AAD-hez az Azure-előfizetés alatt.
+    - [Alkalmazás regisztrálása](/azure/active-directory/develop/quickstart-register-app)
+    - [Titkos ügyfélkód hozzáadása](/azure/active-directory/develop/quickstart-register-app#add-a-certificate)
+    - Az **alkalmazás(ügyfél) azonosítója**, az **ügyfél titkos azonosítója** és a **bérlőazonosító** a következő lépésekben lesz használva.
 
 > [!NOTE]
 > A jelenleg támogatott országok és régiók: Kanada, az Egyesült Államok és az Európai Unió (EU).
@@ -64,7 +67,7 @@ A Dataverse beállításához kövesse az alábbi lépéseket.
 
 1. Adjon hozzá egy szolgáltatási elvet a bérlőhöz:
 
-    1. Telepítse az Azure AD PowerShell modul v2 verzióját az [Azure Active Directory PowerShell for Graph telepítése](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2) részben leírtak szerint.
+    1. Telepítse az Azure AD PowerShell modul v2 verzióját az [Azure Active Directory PowerShell for Graph telepítése](/powershell/azure/active-directory/install-adv2) részben leírtak szerint.
     1. Futtassa a következő PowerShell-parancsot.
 
         ```powershell
@@ -80,7 +83,12 @@ A Dataverse beállításához kövesse az alábbi lépéseket.
     1. Válassza az **Új** lehetőséget. Állítsa az alkalmazásazonosítót a *3022308a-b9bd-4a18-b8ac-2ddedb2075e1* értékre. (Az objektumazonosító azonnal betöltődik, amint menti a módosításokat.) A nevet testreszabhatja. Például a *Készlet láthatósága* értékre módosíthatja. Amikor elkészült, válassza a **Mentés** elemet.
     1. Válassza a **Szerepkör hozzárendelése**, majd a **Rendszergazda** lehetőséget. Ha van **Common Data Service-felhasználó** nevű szerepkör, válassza ki azt is.
 
-    További tudnivalókért lásd: [Alkalmazásfelhasználó létrehozása](https://docs.microsoft.com/power-platform/admin/create-users-assign-online-security-roles#create-an-application-user).
+    További tudnivalókért lásd: [Alkalmazásfelhasználó létrehozása](/power-platform/admin/create-users-assign-online-security-roles#create-an-application-user).
+
+1. Ha a Dataverse alapértelmezett nyelve nem az **angol**:
+
+    1. Ugrás ide: **Speciális beállítások \> Adminisztráció \> Nyelvek**.
+    1. Válassza az **Angol (LanguageCode=1033)**, és az **Alkalmaz** lehetőséget.
 
 1. Importálja az `Inventory Visibility Dataverse Solution.zip` fájlt, amely a Dataverse-konfigurációhoz kapcsolódó entitásokat és Power Apps-alkalmazásokat tartalmazza:
 
@@ -158,12 +166,12 @@ Győződjön meg arról, hogy az alábbi funkciók be vannak kapcsolva a Supply 
 
     Keresse meg az LCS-környezet Azure-régióját, majd adja meg az URL-címet. Az URL-cím a következő képernyőt tartalmazza:
 
-    `https://inventoryservice.<RegionShortName>-il301.gateway.prod.island.powerapps.com/`
+    `https://inventoryservice.<RegionShortName>-il301.gateway.prod.island.powerapps.com`
 
     Ha például Európában van, a környezete a következő URL-címek valamelyikét fogja tartalmazni:
 
-    - `https://inventoryservice.neu-il301.gateway.prod.island.powerapps.com/`
-    - `https://inventoryservice.weu-il301.gateway.prod.island.powerapps.com/`
+    - `https://inventoryservice.neu-il301.gateway.prod.island.powerapps.com`
+    - `https://inventoryservice.weu-il301.gateway.prod.island.powerapps.com`
 
     Jelenleg a következő régiók állnak rendelkezésre.
 
@@ -212,13 +220,13 @@ Biztonsági szolgáltatás jogkivonatának beszerzéséhez tegye a következőke
 
     ```json
     {
-    "token_type": "Bearer",
-    "expires_in": "3599",
-    "ext_expires_in": "3599",
-    "expires_on": "1610466645",
-    "not_before": "1610462745",
-    "resource": "0cdb527f-a8d1-4bf8-9436-b352c68682b2",
-    "access_token": "eyJ0eX...8WQ"
+        "token_type": "Bearer",
+        "expires_in": "3599",
+        "ext_expires_in": "3599",
+        "expires_on": "1610466645",
+        "not_before": "1610462745",
+        "resource": "0cdb527f-a8d1-4bf8-9436-b352c68682b2",
+        "access_token": "eyJ0eX...8WQ"
     }
     ```
 
@@ -255,6 +263,43 @@ Biztonsági szolgáltatás jogkivonatának beszerzéséhez tegye a következőke
         "expires_in": 1200
     }
     ```
+
+### <a name="sample-request"></a><a name="inventory-visibility-sample-request"></a>Mintakérés
+
+Referenciaként itt van egy minta HTTP-kérés, használhat a kérés elküldésére bármilyen eszközt vagy kódolási nyelvet, például ``Postman``.
+
+```json
+# Url
+# replace {RegionShortName} and {EnvironmentId} with your value
+https://inventoryservice.{RegionShortName}-il301.gateway.prod.island.powerapps.com/api/environment/{EnvironmentId}/onhand
+
+# Method
+Post
+
+# Header
+# replace {access_token} with the one get from security service
+Api-version: "1.0"
+Content-Type: "application/json"
+Authorization: "Bearer {access_token}"
+
+# Body
+{
+    "id": "id-bike-0001",
+    "organizationId": "usmf",
+    "productId": "Bike",
+    "quantities": {
+        "pos": {
+            "inbound": 5
+        }  
+    },
+    "dimensions": {
+        "SizeId": "Small",
+        "ColorId": "Red",
+        "SiteId": "1",
+        "LocationId": "11"
+    }
+}
+```
 
 ### <a name="configure-the-inventory-visibility-api"></a><a name="inventory-visibility-configuration"></a>A Készlet láthatósága API konfigurálása
 
@@ -338,7 +383,7 @@ Itt egy példa a termék szín- és méretkombinációját tartalmazó lekérdez
 {
     "filters": {
         "OrganizationId": ["usmf"],
-        "ProductId": ["MyProduct"],
+        "ProductId": ["MyProduct1", "MyProduct2"],
         "LocationId": ["21"],
         "SiteId": ["2"],
         "ColorId": ["Red"]
@@ -350,6 +395,8 @@ Itt egy példa a termék szín- és méretkombinációját tartalmazó lekérdez
     "returnNegative": true
 }
 ```
+
+A `filters` mezőhöz jelenleg csak `ProductId` támogat több értéket. Ha `ProductId` üres a tömb, a rendszer az összes terméket lekérdezi.
 
 #### <a name="custom-measurement"></a>Egyéni mérés
 

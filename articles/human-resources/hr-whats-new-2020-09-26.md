@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0bb0d01536106306dd456f4f3474611fa29530e2
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: cc730bca25293e7dbc78d72834dc8abf9b2a1ec4
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5800069"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5892681"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-september-26-2020"></a>Új vagy módosult elemek a Dynamics 365 Human Resources szolgáltatásban (2020. szeptember 26.)
 
@@ -30,7 +30,7 @@ ms.locfileid: "5800069"
 
 Ez a témakör a Dynamics 365 Human Resources új, módosított vagy nemsokára várható szolgáltatásait írja le. A frissítési folyamattal és ütemezéssel kapcsolatos további tudnivalókért lásd: [Frissítési folyamat](hr-admin-setup-update-process.md).
 
-További tájékoztatás az új szolgáltatásokról és a nyilvános megjelenési dátumokról: [A Dynamics 365 Human Resources 2020. második kiadási hullámának áttekintése](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/).
+További tájékoztatás az új szolgáltatásokról és a nyilvános megjelenési dátumokról: [A Dynamics 365 Human Resources 2020. második kiadási hullámának áttekintése](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/).
 
 ## <a name="in-this-release"></a>Ebben a verzióban
 
@@ -40,7 +40,7 @@ Ez a kiadás az alábbi új funkciókat és hibajavításokat tartalmazza. A vá
 
 Az alábbi funkció általában a következő verzióval lesz elérhető:
 
-- **A 10.0.13 platformfrissítés már elérhető**: a frissítéssel kapcsolatos további tudnivalókért lásd: [Platformfrissítések a Finance and Operations alkalmazások 10.0.13 verziójához (2020. október)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-13).
+- **A 10.0.13 platformfrissítés már elérhető**: a frissítéssel kapcsolatos további tudnivalókért lásd: [Platformfrissítések a Finance and Operations alkalmazások 10.0.13 verziójához (2020. október)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-13.md).
 
 ### <a name="bug-fixes"></a>Hibajavítások
 
@@ -67,21 +67,21 @@ Az alábbi új funkciók előzetes verzióban érhetők el. A funkciók be- vagy
 
 | Funkció | Kiadási terv | Dokumentáció |
 | --- | --- | --- |
-| Human Resources alkalmazás a Microsoft Teams alkalmazásban | [Alkalmazott szabadsági és távolléti élménye a Microsoft Teams rendszerben](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) | [Human Resources alkalmazás a Teamsben](https://go.microsoft.com/fwlink/?linkid=2127841)<br>[Szabadságkérelmek kezelése a Teamsben](hr-teams-leave-app.md) |
-| Továbbfejlesztett munkafolyamat-kérelmek és -jóváhagyások | [Szervezeti és személyzeti felügyeleti munkafolyamat-tapasztalatok továbbfejlesztései](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/organization-personnel-management-workflow-experience-enhancements) | [Konfigurációs beállítás a hozzám rendelt munkaelemek lista pozicionálásához](https://docs.microsoft.com/dynamics365/human-resources/hr-whats-new-2020-09-03#configuration-option-to-position-work-items-assigned-to-me-list-477004) |
+| Human Resources alkalmazás a Microsoft Teams alkalmazásban | [Alkalmazott szabadsági és távolléti élménye a Microsoft Teams rendszerben](/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) | [Human Resources alkalmazás a Teamsben](./hr-admin-teams-leave-app.md)<br>[Szabadságkérelmek kezelése a Teamsben](hr-teams-leave-app.md) |
+| Továbbfejlesztett munkafolyamat-kérelmek és -jóváhagyások | [Szervezeti és személyzeti felügyeleti munkafolyamat-tapasztalatok továbbfejlesztései](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/organization-personnel-management-workflow-experience-enhancements) | [Konfigurációs beállítás a hozzám rendelt munkaelemek lista pozicionálásához](./hr-whats-new-2020-09-03.md#configuration-option-to-position-work-items-assigned-to-me-list-477004) |
 
 ## <a name="coming-soon"></a>Hamarosan
 
 A következő új funkciót egy jövőbeli kiadásra ütemeztük:
 
-- [Egyéni hivatkozások a vezetői önkiszolgáló rendszerben](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/custom-links-manager-self-service)
+- [Egyéni hivatkozások a vezetői önkiszolgáló rendszerben](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/custom-links-manager-self-service)
 
-A tervezett szolgáltatások és az ütemezett kiadások teljes listája az alábbi témakörben olvasható: [A Dynamics 365 Human Resources 2019. második kiadási hullámának áttekintése](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/).
+A tervezett szolgáltatások és az ütemezett kiadások teljes listája az alábbi témakörben olvasható: [A Dynamics 365 Human Resources 2019. második kiadási hullámának áttekintése](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/).
 
 ## <a name="additional-resources"></a>További erőforrások
 
 [Mik az újdonságok vagy változások a Human Resources rendszerben](hr-admin-whats-new.md)
-[A Dynamics 365 Human Resources 2020 második kiadási hullámának terveti](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/)
+[A Dynamics 365 Human Resources 2020 második kiadási hullámának terveti](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/)
 [Frissítési folyamat](hr-admin-setup-update-process.md)
 [Funkciók kezelése](hr-admin-manage-features.md)
 

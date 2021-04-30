@@ -15,12 +15,12 @@ ms.search.industry: retail
 ms.author: scotttuc
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 9d8b9977d733c87566249bcb9658b80c4350c17d
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a4de42c23bf96591d1ac99ed32438fe34a485998
+ms.sourcegitcommit: 05868764acd3d77970724a30c49c5ae5ffb6ca5b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792025"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5906649"
 ---
 # <a name="set-up-coupons-for-retail-sales"></a>Retail értékesítési utalványok beállítása
 
@@ -38,6 +38,8 @@ Utalvány létrehozásához külön hozza létre az engedményt és az utalvány
 
 > [!NOTE]
 > Miután az utalványhoz egy engedményt kapcsolt, az engedményhez kapcsolódó több mező írásvédetté válik a Commerce rendszerben, mivel ezek az utalvány beállításaitól függnek. Idetartoznak az állapotjelző és a szokásos dátumtartományok mezői.
+> 
+> Az utalvány hívásközponti csatornában való használata esetén ki kell választania az **Újraszámítás** gombot **(Értékesítés lap > Számítás > Újraszámítás)** az utalványhoz társított engedmény alkalmazásához. Ez a további lépés egy későbbi verzióban törlődni fog.
 
 ### <a name="limited-use-coupons"></a>Korlátozottan használható utalványok
 

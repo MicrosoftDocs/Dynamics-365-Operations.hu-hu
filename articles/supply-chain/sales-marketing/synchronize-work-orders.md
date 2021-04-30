@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: d733bf3256fa1f6c572bd0aa35c228490d409bbc
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0956e7aa51973014ee474d97829d3d15dfdea3b3
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5836494"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909943"
 ---
 # <a name="synchronize-work-orders-with-project-from-field-service-to-supply-chain-management"></a>Munkarendelések szinkronizálása projekttel a Field Service alkalmazásból a Supply Chain Management alkalmazásba
 
@@ -31,7 +31,7 @@ Ez a témakör bemutatja a sablonokat és a mögöttes feladatot, amelye a Dynam
 
 [![Üzleti folyamatok szinkronizálása a Supply Chain Management és a Field Service között](./media/FSSOprojectOW.png)](./media/FSSOprojectOW.png)
 
-A használt **Munkarendelések projektekkel (Field Service-ből a Supply Chain Management szolgáltatásba)** sablon a **Munkarendelések (Field Service-ből a Supply Chain Management szolgáltatásba)** sablonon alapul. További információért, lásd: [A Field Service szolgáltatásokban lévő munkarendelések szinkronizálása a Supply Chain Management értékesítési rendeléseivel](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/field-service-work-order)
+A használt **Munkarendelések projektekkel (Field Service-ből a Supply Chain Management szolgáltatásba)** sablon a **Munkarendelések (Field Service-ből a Supply Chain Management szolgáltatásba)** sablonon alapul. További információért, lásd: [A Field Service szolgáltatásokban lévő munkarendelések szinkronizálása a Supply Chain Management értékesítési rendeléseivel](/dynamics365/unified-operations/supply-chain/sales-marketing/field-service-work-order)
 
 Ez a témakör csak a két sablonok eltéréseit írja le:
 - **Munkarendelések projekttel (a Field Service alkalmazásból a Supply Chain Management alkalmazásba)**

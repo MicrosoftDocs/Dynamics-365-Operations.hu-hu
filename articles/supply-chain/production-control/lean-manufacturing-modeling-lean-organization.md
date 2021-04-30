@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dfc0497286ae0286cde05412c82fcaac76f4042a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 476dfd6be55ce484cb9bc101ac27dc6181f3c010
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837633"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5910377"
 ---
 # <a name="modeling-a-lean-organization"></a>Lean szervezeti modellezése
 
@@ -51,7 +51,7 @@ A jövőbeli állapotú érték a termelési folyamat verziójaként lehet model
 
 Az érték-előállítási folyamatot egy üzemi egységként lehet modellezni. Emiatt az érték-előállítási folyamatot a pénzügyi dimenziókban is lehet használni.
 
-További információ üzemi egységekről: [Üzemi egység létrehozása](../../fin-and-ops/organization-administration/tasks/create-operating-unit.md).
+További információ üzemi egységekről: [Üzemi egység létrehozása](../../fin-ops-core/fin-ops/organization-administration/tasks/create-operating-unit.md).
 
 ## <a name="costing-for-lean-manufacturing-based-on-the-production-flow"></a>A lean manufacturing költségszámítása a termelési folyamaton alapszik.
 A termelési folyamatra vonatkozó költségek időszakos konszolidációja korrigálja az érintett befejezetlen termelés számlát és lehetővé teszi a termelési folyamat által megadott termékek számára meghatározandó variánsokat.

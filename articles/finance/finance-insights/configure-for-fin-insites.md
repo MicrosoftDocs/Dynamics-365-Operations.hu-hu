@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 2443bb057a8b7fe280ed26ecae4e50f671b5e082
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 54117c009cfeb7307938cc6bd43e774ccfedcfb1
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818800"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908830"
 ---
 # <a name="configuration-for-finance-insights-preview"></a>Pénzügyi információk konfigurációja (előzetes verzió)
 
@@ -38,7 +38,7 @@ A környezetek üzembe helyezéséhez kövesse az alábbi lépéseket.
 
 1. A Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásban hozzon létre vagy frissítse a Dynamics 365 Finance környezetet. A környezethez 10.0.11/Platform 35-ös vagy újabb alkalmazásverzióra van szükség.
 2. A környezetnek magas rendelkezésre állású (HA) környezetnek kell lennie a tesztkörnyezetben. (Az ilyen típusú környezetet 2. szintű környezetnek is nevezik.) További információ: [Környezettervezés](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
-3. Ha Contoso bemutató adatokat használ, további mintaadatokra lesz szüksége az Ügyfélfizetési előrejelzések, a Pénzforgalmi előrejelzések és a Költségvetés-előrejelzések funkciók használatához. 
+3. Ha Contoso Contoso bemutató adatokat használ, további mintaadatokra lesz szüksége az Ügyfélfizetési előrejelzések, a Pénzforgalmi előrejelzések és a Költségvetés-előrejelzések funkciók használatához. 
 
 ## <a name="configure-dataverse"></a>Dataverse konfigurálása
 
@@ -69,7 +69,7 @@ Végrehajthatja a manuális konfigurációs lépéseket, vagy felgyorsíthatja a
     13. Válassza az **Erőforrások \> Minden örökölt beállítás** lehetőséget.
     14. A felső navigációs sávon válassza a **Beállítások**, majd a **Testreszabás** lehetőséget.
     15. Válassza a **Fejlesztői erőforrások** lehetőséget.
-    16. Állítsa be a **Példányhivatkozási adatok azonosítója** mezőt arra a Dataverse szervezeti azonosítóértékre, amelyről korábban feljegyzést készített.
+    16. Másolja a **Dataverse szervezetazonosító** értékét.
     17. A böngésző címsorában jegyezze fel a Dataverse szervezet URL-címét. Az URL-cím lehet például `https://org42b2b3d3.crm.dynamics.com`.
 
 2. Ha a Pénzforgalmi előrejelzések vagy a Költségvetési előrejelzések funkciót kívánja használni, kövesse az alábbi lépéseket a szervezet címjegyzetkorlátjának legalább 50 megabájtra (MB) történő frissítéséhez:
@@ -286,12 +286,12 @@ catch {
 
 # <a name="use-a-windows-powershell-script"></a>[Windows PowerShell parancsfájl használata](#tab/use-a-powershell-script)
 
-Egy Windows PowerShell-parancsfájlt adott meg, így egyszerűen beállíthatja az Azure-erőforrásokat, amelyek az [Azure Data Lake exportálásának konfigurálása](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/configure-export-data-lake) részben találhatók. Ha a manuális beállítást szeretné elvégezni, hagyja ki ezt az eljárást, és folytassa az eljárást a [Manuális beállítás](#manual-setup) szakaszban.
+Egy Windows PowerShell-parancsfájlt adott meg, így egyszerűen beállíthatja az Azure-erőforrásokat, amelyek az [Azure Data Lake exportálásának konfigurálása](../../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md) részben találhatók. Ha a manuális beállítást szeretné elvégezni, hagyja ki ezt az eljárást, és folytassa az eljárást a [Manuális beállítás](#manual-setup) szakaszban.
 
 > [!NOTE]
 > Kövesse az alábbi lépéseket a PowerShell-parancsfájl futtatásához. Lehet, hogy az Azure CLI „Próbálja ki” lehetőség vagy a parancsfájl futtatása a számítógépen nem működik.
 
-Kövesse az alábbi lépéseket az Azure konfigurálásához a Windows PowerShell-parancsfájl használatával. Az Azure-erőforráscsoport, az Azure-erőforrások és az Azure AD alkalmazások létrehozásához jogokkal kell rendelkeznie. A szükséges engedélyekről az [Engedélyek Azure AD ellenőrzése](https://docs.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal#permissions-required-for-registering-an-app) témakörben talál további információt.
+Kövesse az alábbi lépéseket az Azure konfigurálásához a Windows PowerShell-parancsfájl használatával. Az Azure-erőforráscsoport, az Azure-erőforrások és az Azure AD alkalmazások létrehozásához jogokkal kell rendelkeznie. A szükséges engedélyekről az [Engedélyek Azure AD ellenőrzése](/azure/active-directory/develop/howto-create-service-principal-portal#permissions-required-for-registering-an-app) témakörben talál további információt.
 
 1. Az [Azure-portálon](https://portal.azure.com) nyissa meg a cél Azure-előfizetés. Válassza a **Keresés** mezőtől jobbra lévő **Cloud Shell** gombot.
 2. Válassza a **PowerShell** lehetőséget.
@@ -943,18 +943,7 @@ finally {
 ```
 ---
 
-## <a name="configure-the-entity-store"></a>Az entitásáruház konfigurálása
 
-Hajtsa végre az alábbi lépéseket, ha be szeretné állítani az entitásáruházat a Pénzügy környezetben.
-
-1. Lépjen a **Rendszerfelügyelet \> Beállítás \> Rendszerparaméterek \> Adatkapcsolatok** elemre.
-2. Állíts a **Data Lake-integráció engedélyezése** elemet **Igen** értékre.
-3. A következő Key Vault-mezők beállítása:
-
-    - **Alkalmazás (kliens) azonosítója** – Adja meg a korábban létrehozott alkalmazáskliens azonosítóját.
-    - **Alkalmazás titkos kódja** – adja meg azt a titkos kódot, amelyet a korábban létrehozott alkalmazáshoz mentett.
-    - **DNS neve** – A korábban létrehozott alkalmazásnál megkeresheti a tartománynév-rendszer (DNS) nevét.
-    - **Titkos kód neve** – Adja meg a **storage-account-connection-string** értéket.
 
 ## <a name="configure-the-data-lake"></a>A Data Lake konfigurálása
 
@@ -991,6 +980,19 @@ A bővítményt néhány percen belül telepíti a program.
     | CDS-bérlő azonosítója (címtárazonosító az AAD-ből)               | A Dataverse-példány bérlőazonosítója. Ha meg szeretné találni ezt az értéket, nyissa meg az [Azure-portál](https://portal.azure.com) lehetőséget, menjen ide: **Azure Active Directory**, és másolja át a **Bérlőazonosító** értéket. |
     | Adja meg a rendszergazdai szerepkörrel rendelkező felhasználó objektumazonosítóját | Az Azure AD-felhasználó felhasználói objektumazonosítója a Dataverse-ben. Ennek a felhasználónak a Dataverse-példány rendszergazdájának kell lennie. Ha meg szeretné találni ezt az értéket, nyissa meg az [Azure-portál](https://portal.azure.com) lehetőséget, menjen a **Azure Active Directory \> Felhasználók** lehetőségre, válassza ki a felhasználót, majd az **Identitás** szakaszba másolja be az **Objektumazonosító** értékét. |
     | Ez az alapértelmezett CDS-környezet a bérlő számára?      | Ha a Dataverse-példány a létrehozott első termelési példány, jelölje be ezt a jelölőnégyzetet. Ha a Dataverse-példányt manuálisan hozták létre, törölje a jelet a jelölőnégyzetből. |
+
+## <a name="configure-the-entity-store"></a>Az entitásáruház konfigurálása
+
+Hajtsa végre az alábbi lépéseket, ha be szeretné állítani az entitásáruházat a Pénzügy környezetben.
+
+1. Lépjen a **Rendszerfelügyelet \> Beállítás \> Rendszerparaméterek \> Adatkapcsolatok** elemre.
+2. Állíts a **Data Lake-integráció engedélyezése** elemet **Igen** értékre.
+3. A következő Key Vault-mezők beállítása:
+
+    - **Alkalmazás (kliens) azonosítója** – Adja meg a korábban létrehozott alkalmazáskliens azonosítóját.
+    - **Alkalmazás titkos kódja** – adja meg azt a titkos kódot, amelyet a korábban létrehozott alkalmazáshoz mentett.
+    - **DNS neve** – A korábban létrehozott alkalmazásnál megkeresheti a tartománynév-rendszer (DNS) nevét.
+    - **Titkos kód neve** – Adja meg a **storage-account-connection-string** értéket.
 
 ## <a name="feedback-and-support"></a>Visszajelzés és támogatás
 

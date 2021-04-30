@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 502205f76f1519153caf6e976ffbb5eb9412c4ea
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: b1f034017c2cd8736c1e3ce286924bf305961390
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818560"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5898060"
 ---
 # <a name="finance-insights-home-page-preview"></a>Pénzügyi információk kezdőlapja (előzetes verzió)
 
@@ -31,7 +31,7 @@ A Pénzügyi információk konfigurálható és bővíthető modelleket biztosí
 
 A Finance Insights előzetes verzió az Amerikai Egyesült Államokban, Európában és az Egyesült Királyságban is elérhető a próbaverzió telepítéshez. A Microsoft fokozatosan adja hozzá a további régiók támogatását.
 
-Az előzetes verziójú funkciók csak 2. szintű tesztkörnyezetekben szabad bekapcsolni. A tesztkörnyezetben létrehozott telepítési és mesterséges intelligencia-modellek (AI)nem telepíthetők át éles környezetbe. További információ: [A Microsoft Dynamics 365 előzetes verziók kiegészítő használati feltételei](https://docs.microsoft.com/dynamics365/legal/supp-dynamics365-preview#:~:text=Supplemental%20Terms%20of%20Use%20for%20Microsoft%20Dynamics%20365,%28governing%20your%20use%20of%20Microsoft%20Dynamics%20365%20Online%29.).
+Az előzetes verziójú funkciók csak 2. szintű tesztkörnyezetekben szabad bekapcsolni. A tesztkörnyezetben létrehozott telepítési és mesterséges intelligencia-modellek (AI)nem telepíthetők át éles környezetbe. További információ: [A Microsoft Dynamics 365 előzetes verziók kiegészítő használati feltételei](/dynamics365/legal/supp-dynamics365-preview#:~:text=Supplemental%20Terms%20of%20Use%20for%20Microsoft%20Dynamics%20365,%28governing%20your%20use%20of%20Microsoft%20Dynamics%20365%20Online%29.).
 
 ## <a name="prerequisites"></a>Előfeltételek
 
@@ -43,7 +43,7 @@ Az előzetes verzióra való jelentkezéshez töltse ki a [Pénzügyi elemzési 
 
 ### <a name="system-requirements"></a>Rendszerkövetelmények
 
-A 2. szintű tesztkörnyezet (többdobozos) szükséges a pénzügyi elemzések előzetes verziójának megtekintéséhez. A környezetekkel kapcsolatos háttérbeli tudnivalókat lásd: [Környezet tervezése](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/imp-lifecycle/environment-planning).
+A 2. szintű tesztkörnyezet (többdobozos) szükséges a pénzügyi elemzések előzetes verziójának megtekintéséhez. A környezetekkel kapcsolatos háttérbeli tudnivalókat lásd: [Környezet tervezése](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
 
 ### <a name="version-requirements"></a>Verziókövetelmények
 
@@ -53,7 +53,7 @@ Ez a dokumentum a Finance and Operations-alkalmazások 10.0.11-es verziójára (
 
 Legalább egy év értékű vevői számlákra van szükség a gépi tanulási modell megfelelő betanításához, amelyet a Vevői fizetési előrejelzések funkcióhoz használnak.
 
-Mintaadatok érhetők el a Contoso bemutató adatkészlettel rendelkező bemutatórendszerekhez.
+Mintaadatok érhetők el a(z) Contoso bemutató adatkészlettel rendelkező bemutatórendszerekhez.
 
 ### <a name="role-and-permission-requirements"></a>Szerepkör- és engedélykövetelmények
 
@@ -79,7 +79,7 @@ Létre kell hoznia egy adatintegrációs projektet, hogy a gépi tanulási model
 Miután elvégezte a konfigurációs lépéseket, és beállította a bemutató adatokat, be kell kapcsolnia és be kell állítania minden használni kívánt funkciót: vevői fizetési előrejelzéseket, pénzforgalmi előrejelzéseket és költségvetési javaslatokat.
 
 ### <a name="enable-customer-payment-predictions"></a>Vevői fizetési előrejelzések engedélyezése
-Ha bemutatóadatokat használ az ügyfelek fizetési előrejelzéseinek teszteléséhez, előfordulhat, hogy további bemutatóadatokat kell importálnia az AI-modell sikeres létrehozásához. A bemutatóadatok importálásának konkrét lépéseit a [Fizetési előrejelzések bemutatóadatainak beállítása](set-up-demo-data.md) című témakörben tekintheti meg.
+Ha bemutatóadatokat használ az ügyfelek fizetési előrejelzéseinek teszteléséhez, előfordulhat, hogy további bemutatóadatokat kell importálnia az AI-modell sikeres létrehozásához. 
 
 Az ügyfelek fizetési előrejelzéseinek engedélyezéséhez végre kell hajtani egy sor lépést egy olyan gépi tanulási modell létrehozásához, amely a szervezet adataival a szervezet adatai alapján előrejelzéseket készít arról, hogy az ügyfelek valószínűleg mikor fizetnek ki kinnlévő számlákat, és mikor kell fizetnek ki bizonyos számlákat. További információkért és a végrehajtandó konkrét lépésekért olvassa el a [Vevői fizetési előrejelzések engedélyezése](enable-cust-paymnt-prediction.md) című témakört. 
 

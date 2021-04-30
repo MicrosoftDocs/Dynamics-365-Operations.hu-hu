@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-11-13
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 91482bb24356a14a8d44e887620548cdf6f4c5d3
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: f46d55bf7a670e983fb65a9ca303bc02568247ed
+ms.sourcegitcommit: bef7bd2aac00d7eb837fd275d383b7a5c3f1c1ee
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838394"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "5911296"
 ---
 # <a name="work-with-location-directives"></a>Helyutasítások kezelése
 
@@ -44,8 +44,8 @@ Mielőtt helyutasítási műveletet hozhatna létre, követnie kell az alábbi l
 1. Ugorjon a **Raktárkezelés \> Beállítás \> Raktár \> Raktárak** pontra.
 1. Raktár létrehozása.
 1. A **Raktár** gyorslapon állítsa a **Raktárkezelési folyamatok alkalmazása** opciót *Igen*-re.
-1. Helyek, helytípusok, helyprofilok és helyformátumok létrehozása. A további tudnivalókért lásd: [Helyek konfigurálása WMS szolgáltatással rendelkező raktárban](https://docs.microsoft.com/dynamics365/supply-chain/warehousing/tasks/configure-locations-wms-enabled-warehouse).
-1. Helyek, zónák és zónacsoportok létrehozása. A további tudnivalókért lásd: [Raktár beállításai](https://docs.microsoft.com/dynamics365/commerce/channels-setup-warehouse) és [Helyek konfigurálása WMS szolgáltatással rendelkező raktárban](https://docs.microsoft.com/dynamics365/supply-chain/warehousing/tasks/configure-locations-wms-enabled-warehouse).
+1. Helyek, helytípusok, helyprofilok és helyformátumok létrehozása. A további tudnivalókért lásd: [Helyek konfigurálása WMS szolgáltatással rendelkező raktárban](./tasks/configure-locations-wms-enabled-warehouse.md).
+1. Helyek, zónák és zónacsoportok létrehozása. A további tudnivalókért lásd: [Raktár beállításai](../../commerce/channels-setup-warehouse.md) és [Helyek konfigurálása WMS szolgáltatással rendelkező raktárban](./tasks/configure-locations-wms-enabled-warehouse.md).
 
 ## <a name="work-order-types-for-location-directives"></a>A helyutasítások munkarendelés-típusai
 
@@ -143,7 +143,7 @@ A **Helyutasítások** gyorslap mezői a listaablak **Munkarendelés típusa** m
 - **Utasításkód** – A munkasablon, illetve a feltöltési sablon társítása irányelv kódjának kiválasztása. Az **Utasításkód** lapján új kódokat hozhat létre, amelyeket a munkasablonok vagy feltöltési sablonok helyutasításokkal való összekötésére használhat. Az utasításkódokat arra is használhatja, hogy létrehozzon hivatkozásokat a munkasablonok és helyutasítások között (mint például a raktárajtó vagy a köztes hely).
 
     > [!TIP]
-    > Ha egy utasításkód meg van adva, amikor szükség van egy munka létrehozására, a rendszer nem fog helyutasításokat fog keresni a sorszám alapján. Ehelyett utasításkód szerint fog keresni. Ilyen módon pontosabban kezelheti a helysablonokat, melyek a munkasablonok adott lépéseként használatosak, mint például az anyagok előkészítése az egyes lépésekhez.
+    > Ha egy utasításkód meg van adva, amikor szükség van egy munka létrehozására, a rendszer nem fog helyutasításokat fog keresni a sorszám alapján. Ehelyett utasításkód szerint fog keresni. Ilyen módon pontosabban kezelheti a helyutasításokat, melyek a munkasablonok adott lépéseként használatosak, mint például az anyagok előkészítése az egyes lépésekhez.
 
 - **Több SKU** – Állítsa ezt a lehetőséget *Igen* értékre, a több termékváltozat (SKU) funkció használatához egy adott helyen. Például több termékváltozatot kell engedélyezni a raktárajtó helyhez. Ha több termékváltozatot engedélyez, a betárolási hely a várt módon meg lesz adva a munkában. A betárolási hely azonban csak egy többcikkes betárolást képes kezelni (ha a munka különböző termékváltozatokat tartalmaz, amelyeket ki és be kell tárolni). Nem lesz képes kezelni egy termékváltozatos betárolást. Ha ezt a beállítást *Nem* értékre állítja, a betárolási hely csak akkor lesz megadva, ha a betárolás csak termékváltozattal rendelkezik.
 
@@ -249,7 +249,7 @@ Ebben az esetben két helyutasítási műveletet kell megadni. A sorozat első m
 
 ## <a name="next-step"></a>Következő lépés
 
-Miután helyutasításokat hozott létre, összekapcsolhat minden utasításkódot egy munkasablon-kóddal a munkalétrehozáshoz. Bővebb információkért lásd: [Raktári munka ellenőrzése munkasablonok és helyutasítások használatával](https://docs.microsoft.com/dynamics365/supply-chain/warehousing/control-warehouse-location-directives).
+Miután helyutasításokat hozott létre, összekapcsolhat minden utasításkódot egy munkasablon-kóddal a munkalétrehozáshoz. Bővebb információkért lásd: [Raktári munka ellenőrzése munkasablonok és helyutasítások használatával](./control-warehouse-location-directives.md).
 
 ## <a name="additional-resources"></a>További erőforrások
 

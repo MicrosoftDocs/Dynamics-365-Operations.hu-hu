@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 45c8b1d0ea12c8e42f3a4383f16105b0b0cfb5c6
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0b173f856c79973eec6ce884e7b8e44420c93fc7
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825326"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909131"
 ---
 # <a name="purchase-order-overview"></a>Beszerzési rendelések áttekintése
 
@@ -41,7 +41,7 @@ A következő cikkek áttekintést adnak a beszerzési rendelés különböző s
 -   [Beszerzési rendelések létrehozása](purchase-order-creation.md)
 -   [Beszerzési rendelések jóváhagyása és megerősítése](purchase-order-approval-confirmation.md)
 -   [Termékbevételezés összevetése a beszerzési rendelésekkel](product-receipt-against-purchase-orders.md)
--   [Szállítói számlák áttekintése](../../financials/accounts-payable/vendor-invoices-overview.md)
+-   [Szállítói számlák áttekintése](../../finance/accounts-payable/vendor-invoices-overview.md)
 
 ## <a name="types-of-purchase-orders"></a>Beszerzési rendelések típusai
 Háromféle BR van. A beszerzési rendelés létrehozásakor meg kell adnia a típusát. Beállíthatja az új rendelések alapértelmezett rendelési típusát a **Beszerzési és forrásparaméterek** oldalon.
@@ -85,7 +85,7 @@ A **Jóváhagyási állapot** mező akkor használatos, ha egy beszerzési rende
 
 [Termékbevételezés összevetése a beszerzési rendelésekkel](product-receipt-against-purchase-orders.md)
 
-[Szállítói számlák áttekintése](../../financials/accounts-payable/vendor-invoices-overview.md)
+[Szállítói számlák áttekintése](../../finance/accounts-payable/vendor-invoices-overview.md)
 
 
 

@@ -2,11 +2,11 @@
 title: Referencia-kamatlábhoz kapcsolt lízingdíjfizetések újraértékelése
 description: Ez a témakör azt a kiigazítást ismerteti, amely a kötelezettség használatijog-eszköz (ROU) lízingeléséhez történik, amikor a változó lízingfizetések a referencia-kamatláb változása miatt változnak.
 author: moaamer
-ms.date: 10/28/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: AssetLeaseIndexRevaluation
 audience: Application User
 ms.reviewer: roschlom
 ms.custom: 4464
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 8d743bb51cfc1487e76ee46adfd59276f1c1b48b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: f2adddbfdc43fa52bf9a585636ada1b0a63a6be0
+ms.sourcegitcommit: d18d9cdb175c9d42eafbed66352c24b2aa94258b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5819722"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5880838"
 ---
 # <a name="revalue-lease-payments-that-are-linked-to-an-index-rate"></a>Referencia-kamatlábhoz kapcsolt lízingdíjfizetések újraértékelése
 

@@ -2,7 +2,7 @@
 title: Üzletidokumentum-kezelés – áttekintés
 description: Ez a témakör azt mutatja be, hogyan lehet használni az ER-keretrendszer üzletidokumentum-kezelő funkcióját.
 author: NickSelin
-ms.date: 12/15/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f5589925b7bfba3d9315c3828fd1ec5993a09a59
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 01067a253651bbeddcc5f02c8c15c916b25b6684
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749537"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5891305"
 ---
 # <a name="business-document-management-overview"></a>Üzletidokumentum-kezelés – áttekintés
 
@@ -45,9 +45,9 @@ Az Excel vagy Word formátumú sablonoknak a Microsoft 365 alkalmazások segíts
 
 ## <a name="business-document-availability"></a>Üzleti dokumentum elérhetősége
 
-Az októberi 2019 kiadásra tervezett összes jelentés teljes listája megtalálható a [Konfigurálható üzleti jelentések Word és Excel szoftverekben](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/configurable-business-documents-reporting-word-excel-pdf#feature-details) szakaszban.
+Az októberi 2019 kiadásra tervezett összes jelentés teljes listája megtalálható a [Konfigurálható üzleti jelentések Word és Excel szoftverekben](/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/configurable-business-documents-reporting-word-excel-pdf#feature-details) szakaszban.
 
-Az októberi 2020 kiadásra tervezett összes jelentés teljes listája megtalálható a [Konfigurálható üzleti jelentések – Word-sablonok](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/configurable-business-documents-word-templates) szakaszban.
+Az októberi 2020 kiadásra tervezett összes jelentés teljes listája megtalálható a [Konfigurálható üzleti jelentések – Word-sablonok](/dynamics365-release-plan/2020wave1/dynamics365-finance/configurable-business-documents-word-templates) szakaszban.
 
 A későbbi verziókban további jelentések válnak elérhetővé. A további jelentésekkel kapcsolatos különleges értesítések küldése külön történik. Az aktuálisan elérhető jelentések listájának áttekintéséről lásd: [ER-konfigurációk listája, amelyeket a Finance tartalmaz a konfigurálható üzleti dokumentumok támogatására](#list-of-configurations-cbd).
 
@@ -272,7 +272,23 @@ A **Sablon szerkesztése** beállítás elérhető a kiválasztott sablonhoz. Ez
 
 ![Erősítse meg a szerkesztési folyamat kezdetét új sablon létrehozásához](./media/BDM-Overview-EditingTemplate4.png)
 
+Ha nincs másik szolgáltató, akkor felajánlja, hogy létrehozzon egyet. Ha nincs aktív szolgáltató, akkor a rendszer felkínál egyet, hogy aktiválja.
+
+Szolgáltató létrehozásához módosítsa a szolgáltató nevét a **Név** mezőben, frissítse az új szolgáltató internetcímét az **Internetcím** mezőben, majd a megerősítéshez kattintson az **OK** gombra.
+
+   ![Új szolgáltató létrehozása a BDM-ben](./media/bdm_create_provider.png)
+
+A meglévő szolgáltató aktiválásához válassza ki a szolgáltató nevét a **Konfigurációszolgáltató** mezőben, és válassza az **OK** gombot, a szolgáltató aktiválásához.
+
+   ![Szolgáltató aktiválása a BDM-ben](./media/bdm_choose_provider.png)
+
+> [!NOTE]
+> Minden egyes BDM-sablon a konfiguráció szerzőjeként hivatkozik a szolgáltatóra. Ezért van szükség egy aktív szolgáltatóra a sablonhoz.
+
+
 Az **Új dokumentum** beállítás mindig elérhető olyan ER-formátumkonfiguráció sablonja esetében, amely egy jelenlegi és másik szolgáltatótól származik (a Microsoft ebben a példában), amelynek nincsenek revíziói. Ezt követően a szerkesztett sablon egy új, automatikusan létrejövő ER formátumkonfigurációban lesz tárolva.
+
+
 
 ### <a name="start-editing-a-template"></a>Sablonnal szerkesztésének elkezdése
 
@@ -419,7 +435,7 @@ Valószínűleg olyan Azure AD tartományból jelentkezett be az alkalmazás jel
 
 ## <a name="list-of-er-configurations-that-have-been-released-in-finance-to-support-configurable-business-documents"></a><a name="list-of-configurations-cbd"></a>A Finance megoldásban kiadott ER-konfigurációk listája a konfigurálható üzleti dokumentumok támogatásához
 
-A Finance megoldásban az ER-konfigurációk [listája](general-electronic-reporting.md#list-of-configurations) folyamatosan frissül. Nyissa meg a [globális tárházat](er-download-configurations-global-repo.md) a jelenleg támogatott ER-konfigurációk listájának ellenőrzéshez. A globális tárház [szűrhető](https://docs.microsoft.com/dynamics365/finance/localizations/enhanced-filtering-global-repo) a konfigurálható üzleti dokumentumok támogatásához használt ER-konfigurációk listájának áttekintéséhez.
+A Finance megoldásban az ER-konfigurációk [listája](general-electronic-reporting.md#list-of-configurations) folyamatosan frissül. Nyissa meg a [globális tárházat](er-download-configurations-global-repo.md) a jelenleg támogatott ER-konfigurációk listájának ellenőrzéshez. A globális tárház [szűrhető](../../../finance/localizations/enhanced-filtering-global-repo.md) a konfigurálható üzleti dokumentumok támogatásához használt ER-konfigurációk listájának áttekintéséhez.
 
 ![A globális tárház tartalmának szűrése a konfigurációs tárház oldalon](./media/bdm-overview-filterglobalrepo.gif)
 

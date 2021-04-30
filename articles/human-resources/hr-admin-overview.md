@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3eb5d686ff6edf11cdbde6c4799a99815719da71
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 7a5f6ff75667f79894fce09b4fafeeaf31eea31e
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5801143"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5889764"
 ---
 # <a name="administration-overview"></a>Adminisztráció áttekintése
 
@@ -46,10 +46,10 @@ Ez a rendszergazdai útmutató segít a Dynamics 365 Human Resources rendszer be
   - [A Dayforce szolgáltatással való integráció konfigurálása](hr-admin-integration-dayforce.md)
   - [Ismétlődő adatexportálási alkalmazás létrehozása](hr-admin-integration-recurring-data-export.md)
   - Integráció az Office-szal
-    - [Office-integrációs oktatóanyag](../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/talent/toc.json)
-    - [Entitás adatainak frissítése az Excel alkalmazásban](../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/unified-operations/talent/toc.json)
-    - [Az Excel programban történő megnyitási élmények létrehozása](../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/unified-operations/talent/toc.json)
-    - [Office-integráció – hibaelhárítás](../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/unified-operations/talent/toc.json)
+    - [Office-integrációs oktatóanyag](../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
+    - [Entitás adatainak frissítése az Excel alkalmazásban](../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
+    - [Az Excel programban történő megnyitási élmények létrehozása](../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
+    - [Office-integráció – hibaelhárítás](../fin-ops-core/dev-itpro/office-integration/office-integration-troubleshooting.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
 
 - [Szolgáltatások kezelése](hr-admin-manage-features.md)
 
@@ -84,7 +84,7 @@ Ez a rendszergazdai útmutató segít a Dynamics 365 Human Resources rendszer be
   - [Dokumentáció vagy képzés létrehozása Feladatrögzítő segítségével](../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/human-resources/toc.json)
 
 - Emberi erőforrások – hibaelhárítás
-  - [Támogatás kérése](hr-admin-troubleshooting-support.md)
+  - [Támogatás kérése](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md)
   - [Teljesítmény optimalizálása automatikus tisztítási feladatokkal](hr-admin-troubleshooting-batch-history.md)
   - [Az elemzési jelentések nincsenek frissítve](hr-admin-troubleshooting-analytic-reports.md)
   - [Nem lehet környezetet létrehozni a Power Apps felügyeleti központjában](hr-admin-troubleshooting-power-apps.md)

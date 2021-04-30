@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: dfabda7ab4caafc43926595655352fbfe49d8ff7
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 177586068ddb86943f8013722e1be9e63c53fa0f
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5805009"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5889788"
 ---
 # <a name="provision-human-resources"></a>Emberi erőforrások létesítése
 
@@ -80,7 +80,7 @@ Miután létrehozott egy LCS-projektet, elvégezheti a Human Resources létesít
     
 3. Válassza ki a **Demó adatokat tartalmaz** beállítást, ha azt szeretné, hogy a környezet ugyanazokat a demóadatokat tartalmazza, mint amelyeket a Human Resources tesztverzióiban használt. A bemutatóadat hosszú távú bemutató vagy képzési környezetben előnyös, de éles környezetben soha nem szabad használni. Az első telepítés esetén kell ezt a lehetőséget kiválasztania. Meglévő telepítés később nem frissíthető.
 
-4. A Human Resources szolgáltatást mindig Microsoft Power Apps környezetbe kell létesíteni annak érdekében, hogy biztosítsa a Power Apps integrációját és bővíthetőségét. Olvassa el a témakör „Power Apps környezet kiválasztása” című cikkét a folytatás előtt. Ha még nem rendelkezik Power Apps környezettel, válassza a Környezetek kezelése LCS-ben lehetőséget, vagy látogasson el a Power Apps adminisztrációs központjába. Kövesse a [Power Apps környezet](https://docs.microsoft.com/powerapps/administrator/create-environment) létrehozása részben leírt lépéseket.
+4. A Human Resources szolgáltatást mindig Microsoft Power Apps környezetbe kell létesíteni annak érdekében, hogy biztosítsa a Power Apps integrációját és bővíthetőségét. Olvassa el a témakör „Power Apps környezet kiválasztása” című cikkét a folytatás előtt. Ha még nem rendelkezik Power Apps környezettel, válassza a Környezetek kezelése LCS-ben lehetőséget, vagy látogasson el a Power Apps adminisztrációs központjába. Kövesse a [Power Apps környezet](/powerapps/administrator/create-environment) létrehozása részben leírt lépéseket.
 
 5. Válassza ki azt a környezetet, amelybe létesíteni szeretné a Human Resources szolgáltatást.
 
@@ -124,7 +124,7 @@ Kövesse az alábbi útmutatást, amikor azt állapítja meg, hogy melyik Power 
  
 ## <a name="grant-access-to-the-environment"></a>Hozzáférés biztosítása a környezethez
 
-Alapértelmezés szerint a környezetet csak az a globális rendszergazda érheti el, aki létrehozta. Az alkalmazás további felhasználóinak kifejezett módon engedélyezni kell a hozzáférést. Fel kell vennie a felhasználókat, és hozzájuk kell rendelnie a megfelelő szerepköröket a Human Resources környezetben. A Human Resources szolgáltatást telepítő globális rendszergazdának el kell indítania az Attract és az Onboard alkalmazást is ahhoz, hogy befejezze az inicializálást, és engedélyezze a hozzáférést más bérlő felhasználók számára is. Amíg erre nem kerül sor, más felhasználók nem tudják elérni az Attract és Onboard alkalmazást, és hozzáférési hibákra vonatkozó üzeneteket fognak kapni. További tudnivalókért lásd: [Új felhasználók létrehozása](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) és [Felhasználók hozzárendelése biztonsági szerepkörökhöz](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles). 
+Alapértelmezés szerint a környezetet csak az a globális rendszergazda érheti el, aki létrehozta. Az alkalmazás további felhasználóinak kifejezett módon engedélyezni kell a hozzáférést. Fel kell vennie a felhasználókat, és hozzájuk kell rendelnie a megfelelő szerepköröket a Human Resources környezetben. A Human Resources szolgáltatást telepítő globális rendszergazdának el kell indítania az Attract és az Onboard alkalmazást is ahhoz, hogy befejezze az inicializálást, és engedélyezze a hozzáférést más bérlő felhasználók számára is. Amíg erre nem kerül sor, más felhasználók nem tudják elérni az Attract és Onboard alkalmazást, és hozzáférési hibákra vonatkozó üzeneteket fognak kapni. További tudnivalókért lásd: [Új felhasználók létrehozása](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) és [Felhasználók hozzárendelése biztonsági szerepkörökhöz](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles). 
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

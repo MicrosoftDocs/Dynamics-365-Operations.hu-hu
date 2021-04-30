@@ -2,7 +2,7 @@
 title: Eltávolított vagy elavult funkciók a Dynamics 365 Finance szolgáltatásban
 description: Ez a témakör azokat a funkciókat ismerteti, amelyek el lettek távolítva, vagy eltávolításuk be van tervezve a Dynamics 365 Finance alkalmazásban.
 author: roschlom
-ms.date: 02/08/2021
+ms.date: 04/14/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 5a8f5dbc52eab78697de0d3a48d8cceb42c36540
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: e0db5c35e58ab7a7cbf31642072d25ee5d8ba868
+ms.sourcegitcommit: 04817103dc8e87a679d371575927284b8ce080b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5836913"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "5898287"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Eltávolított vagy elavult funkciók a Dynamics 365 Finance szolgáltatásban
 
@@ -31,7 +31,20 @@ Ez a témakör azokat a funkciókat ismerteti, amelyek el lettek távolítva, va
 Ez a lista segít figyelembe venni az elavult és eltávolított szolgáltatásokat a saját tervezése elősegítésére. 
 
 > [!NOTE]
-> A Finance and Operations alkalmazások objektumaival kapcsolatban a [Technikai referenciajelentésekben](https://docs.microsoft.com/dynamics/s-e/global/axtechrefrep_61) talál részletes információkat. Ezen jelentések különböző verzióit összehasonlíthatja, hogy megismerje azokat az objektumokat, melyek módosítva lettek vagy el lettek távolítva a Finance and Operations alkalmazások egyes verzióiban.
+> A Finance and Operations alkalmazások objektumaival kapcsolatban a [Technikai referenciajelentésekben](/dynamics/s-e/global/axtechrefrep_61) talál részletes információkat. Ezen jelentések különböző verzióit összehasonlíthatja, hogy megismerje azokat az objektumokat, melyek módosítva lettek vagy el lettek távolítva a Finance and Operations alkalmazások egyes verzióiban.
+
+## <a name="features-removed-or-deprecated-in-the-finance-10020-release"></a>Eltávolított vagy elavult szolgáltatások a Finance 10.0.20 kiadásában
+
+### <a name="rtir-query-invoice-data-request-hu-format-configuration"></a>RTIR lekérdezési számlaadat-kérelem (HU) formátumkonfiguráció
+
+| &nbsp; | &nbsp; |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | Kizárva az elektronikus üzenetkezelés feldolgozásból a magyarországi online számlázási rendszerrel történő együttműködésből |
+| **Felváltotta másik szolgáltatás?**   | Nincs |
+| **Érintett területek**         | Pályázat |
+| **Telepítési beállítás**              | Összes |
+| **Állapot**                         | Elavult: 2022. április 15-re már nem lesz támogatva az „RTIR lekérdezési számlaadat-kérelem (HU)” formátumkonfiguráció. |
+
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10017-release"></a>Eltávolított vagy elavult szolgáltatások a Finance 10.0.17 kiadásában
 

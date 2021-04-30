@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 84c8c782b917850267c34696f3b2afa607118d84
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 361e16b0dba3aa46c71477efaa89a2661a3bcd75
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753623"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5894052"
 ---
 # <a name="defer-the-execution-of-xml-elements-in-er-formats"></a>A XML-elemek végrehajtásának elhalasztása az ER-formátumokban
 
@@ -44,7 +44,7 @@ A **Halasztott végrehajtás** beállítás nem támogatott olyan XML-elemekhez,
 
 ## <a name="example-defer-the-execution-of-an-xml-element-in-an-er-format"></a><a name="Example"></a>Példa: XML-elem végrehajtásának elhalasztása egy ER-formátumban
 
-A következő lépésekkel megtudhatja, hogy a rendszergazda vagy elektronikus jelentéskészítési tanácsadó [szerepkörrel](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/tasks/assign-users-security-roles) rendelkező felhasználó hogyan konfigurálhat egy olyan, XML-elemet tartalmazó ER-formátumot, amelynél a végrehajtási sorrend eltér a formátumhierarchiában megadott sorrendtől.
+A következő lépésekkel megtudhatja, hogy a rendszergazda vagy elektronikus jelentéskészítési tanácsadó [szerepkörrel](../sysadmin/tasks/assign-users-security-roles.md) rendelkező felhasználó hogyan konfigurálhat egy olyan, XML-elemet tartalmazó ER-formátumot, amelynél a végrehajtási sorrend eltér a formátumhierarchiában megadott sorrendtől.
 
 Ezeket a lépéseket a **USMF** vállalatban hajthatja végre a Microsoft Dynamics 365 Finance megoldásban.
 

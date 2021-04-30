@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 2f5dd1d6bc520c9f5349c77dfcabdf2d538881ce
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: c1112ba8394afb3aa9c9b4f68249524498bd8b32
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840052"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5894883"
 ---
 # <a name="get-started-with-electronic-invoicing-for-mexico"></a>Első lépések a Mexikóra vonatkozó elektronikus számlázás használata során
 
@@ -86,7 +86,7 @@ A **CFDI-számlák (MX)** funkció Globális adattárból történő importálá
 
     ![A Formátumtervező lap megnyitása](media/e-Invoicing-services-get-started-MEX-Configuration-ER-format-designer.png)
 
-3. Az ER-formátum fájlkonfiguráció szerkesztéséhez és megtekintéséhez használja a **Formátumtervező** lapot. További információ: [Elektronikus dokumentum-konfigurációk létrehozása](../../dev-itpro/analytics/electronic-reporting-configuration.md).
+3. Az ER-formátum fájlkonfiguráció szerkesztéséhez és megtekintéséhez használja a **Formátumtervező** lapot. További információ: [Elektronikus dokumentum-konfigurációk létrehozása](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md).
 
     ![Formátumtervező oldal](media/e-Invoicing-services-get-started-MEX-ER-format-designer.png)
 
@@ -161,7 +161,7 @@ Az Elektronikus számlázás Finance szolgáltatásban történő beállításá
 ### <a name="import-the-er-data-model-er-data-model-mapping-and-context-configurations-for-cfdi-invoices"></a>Importálja az ER-adatmodellt, az ER-adatmodell-leképezést, valamint a kontextus-konfigurációkat a CFDI-számlákhoz
 
 1. Bejelentkezés a Finance szolgáltatásba.
-2. Az **Elektronikus jelentéskészítés** munkaterületen, a **Konfigurációszolgáltatók** szakaszban, válassza a **Microsoft** címet. Győződjön meg róla, hogy ez a konfigurációszolgáltató **Aktív** értékre van állítva. A szolgáltatók **Aktív** értékre állításával kapcsolatban tekintse át a [Konfigurációszolgáltatók létrehozása és megjelölése aktívként](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11) elemet.
+2. Az **Elektronikus jelentéskészítés** munkaterületen, a **Konfigurációszolgáltatók** szakaszban, válassza a **Microsoft** címet. Győződjön meg róla, hogy ez a konfigurációszolgáltató **Aktív** értékre van állítva. A szolgáltatók **Aktív** értékre állításával kapcsolatban tekintse át a [Konfigurációszolgáltatók létrehozása és megjelölése aktívként](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md) elemet.
 3. Válassza ki a **Tárházak** lehetőséget.
 4. Válassza ki a **Globális erőforrás \> Megnyitás** lehetőséget.
 5. **Számlamodell**, **Számlamodell-lekérdezés**, **CFDI-számlaformátum (MX)**, **CFDI-számlavisszavonási kérelemformátum (MX)**, és a **CFDI-számla érvénytelenítés formátum (MX)** importálása.
@@ -215,7 +215,7 @@ A CFDI-számlák Finance szolgáltatásban lévő Elektronikus számlázáson ke
 A **Konfigurálható elektronikus számlázás integrációja** funkció bekapcsolását követően a CFDI-számlák küldéséhez szükséges **Elektronikus számlák exportálása/importálása** folyamat (**Kinnlevőségek \> Számlák \> E-számlák**) már nem használható. Ezt felváltotta egy új, **Elektronikus dokumentumok beküldése** nevű folyamat.
 
 > [!NOTE]
-> Az új **Elektronikus dokumentumok beküldése folyamat** használata előtt győződjön meg arról, hogy a mexikói e-számlákhoz szükséges beállítások el lettek végezve. További tájékoztatást a [CFDI-elrendezés 3.3-as verziója](https://docs.microsoft.com/dynamics365/finance/localizations/latam-mex-cfdi-3-3) részben talál.
+> Az új **Elektronikus dokumentumok beküldése folyamat** használata előtt győződjön meg arról, hogy a mexikói e-számlákhoz szükséges beállítások el lettek végezve. További tájékoztatást a [CFDI-elrendezés 3.3-as verziója](./latam-mex-cfdi-3-3.md) részben talál.
 
 1. Menjen a **Szervezeti adminisztráció \> Időszakos \> Elektronikus dokumentumok \> Elektronikus dokumentumok beküldése** lehetőségre.
 2. A dokumentumok első beküldésekor mindig **Nem** értékre kell állítania a **Dokumentumok újraküldése** lehetőséget. Ha a szolgáltatáson keresztül újra kell küldenie a dokumentumot, akkor ezt a beállítást állítsa **Igen** értékre.

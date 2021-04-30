@@ -2,7 +2,7 @@
 title: Videók
 description: Ez a lap felsorolja azokat a Microsoft által létrehozott „útmutató” és technikai beszélgetés videókat, amelyek a Finance and Operations alkalmazásokra vonatkoznak, és amelyek a YouTube és más webhelyeken állnak rendelkezésre.
 author: sericks007
-ms.date: 02/11/2021
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: global
 ms.author: sericks
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
-ms.openlocfilehash: eae8e95d39a5b9ade24e7fe9c9407d29e67a8727
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: fc34f1691447b9c34e1572229f9c545913039626
+ms.sourcegitcommit: d18d9cdb175c9d42eafbed66352c24b2aa94258b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754704"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5881736"
 ---
 # <a name="videos"></a>Videók 
 
@@ -84,6 +84,9 @@ A [Microsoft Dynamics YouTube csatorna](https://www.youtube.com/channel/UCJGCg4r
 
 ## <a name="videos-for-dynamics-365-finance"></a>Videók a Dynamics 365 Finance szolgáltatáshoz
 
+### <a name="business-document-management"></a>Üzleti dokumentumok kezelése
+- [Új üzleti dokumentum létrehozása az üzleti dokumentumkezelés modulban](https://www.youtube.com/watch?v=gAIYl-mM_pw)
+
 ### <a name="customize-the-app"></a>Az alkalmazás testreszabása
 - [Egyéni mezők hozzáadása](https://www.youtube.com/watch?v=gWSGZI9Vtnc)
 - [A Power Apps beágyazása](https://www.youtube.com/watch?v=x3qyA1bH-NY)
@@ -112,6 +115,9 @@ A [Microsoft Dynamics YouTube csatorna](https://www.youtube.com/channel/UCJGCg4r
 
 
 ## <a name="videos-for-dynamics-365-supply-chain-management"></a>Videók a Dynamics 365 Supply Chain Management szolgáltatáshoz
+
+### <a name="business-document-management"></a>Üzleti dokumentumok kezelése
+- [Új üzleti dokumentum létrehozása az üzleti dokumentumkezelés modulban](https://www.youtube.com/watch?v=gAIYl-mM_pw)
 
 ### <a name="costs"></a>Költségek
 - [Költségellenőrzési mobil munkaterület](https://youtu.be/imsuTg8rUVk)

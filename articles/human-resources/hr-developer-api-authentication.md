@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3dffe1db98ba39fde2229e69bc70bdbf113ff6ad
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 94d76a9f6d4a3d7afcb9b85d961899880ca9fc75
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5793681"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893448"
 ---
 # <a name="authentication"></a>Hitelesítés
 
@@ -82,7 +82,7 @@ GET https://{cluster}.hr.talent.dynamics.com/namespaces/{namespace_guid}/data/Jo
         - Webalkalmazások esetében az alkalmazás alap URL-címét adja meg. Például a `http://localhost:31544` lehet a helyi számítógépen futó webalkalmazás URL-címe. A felhasználók ezután ezt az URL-címet használhatják a webes ügyfél alkalmazásába való bejelentkezéshez.
         - A nyilvános ügyfelek esetében adja meg azt az URI-t, amelyet az Azure AD a tokenválaszok visszaküldésére használ. Adjon meg az alkalmazásra jellemző értéket, például: `myapp://auth`.
 
-        A webalkalmazásokhoz és a natív alkalmazásokhoz kapcsolódó példákat a [Microsoft Identity platform (korábban Azure Active Directory fejlesztőknek) webhelyén található útmutatók tartalmazzák](https://docs.microsoft.com/azure/active-directory/develop/#quickstarts).
+        A webalkalmazásokhoz és a natív alkalmazásokhoz kapcsolódó példákat a [Microsoft Identity platform (korábban Azure Active Directory fejlesztőknek) webhelyén található útmutatók tartalmazzák](/azure/active-directory/develop/#quickstarts).
 
 5. Az **API-engedélyek** területen válassza az **Engedély hozzáadása** lehetőséget. Ezután a **Szervezet által használt API-k** lapon keresse meg a **Dynamics 365 Human Resources** alkalmazást, majd adja hozzá a **user\_impersonation** engedélyt az alkalmazáshoz. A Human Resources esetében az alkalmazás azonosítója: f9be0c49-aa22-4ec6-911a-c5da515226ff. Ezzel az azonosítóval biztosítható a megfelelő alkalmazás kiválasztása.
 

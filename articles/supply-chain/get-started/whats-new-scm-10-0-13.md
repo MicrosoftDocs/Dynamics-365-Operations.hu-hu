@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: f405fba2b28ccae6b3aadbcf683d050040587cde
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: f491cebacad1e289e6b004d573916eaf8ec0e110
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5832178"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909549"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10013-october-2020"></a>Új vagy módosult elemek a Dynamics 365 Supply Chain Management szolgáltatásban – 10.0.13. (2020. október)
 
@@ -33,23 +33,23 @@ Ez a témakör a Microsoft Dynamics 365 Supply Chain Management 10.0.13 új vagy
 
 ## <a name="features-included-in-this-release"></a>A verzióban található funkciók
 
-Ez a kiadás a következő funkciókat tartalmazza: A funkciók címei további információkra mutatnaka a [Kiadási tervek](https://docs.microsoft.com/dynamics365/release-plans/) webhelyen. A további hivatkozások az adott funkcióhoz jelenleg elérhető további dokumentációkat mutatnak be. Ezen szolgáltatások többségét a használat előtt engedélyezni kell a [Funkciók kezelése](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) alatt.
+Ez a kiadás a következő funkciókat tartalmazza: A funkciók címei további információkra mutatnaka a [Kiadási tervek](/dynamics365/release-plans/) webhelyen. A további hivatkozások az adott funkcióhoz jelenleg elérhető további dokumentációkat mutatnak be. Ezen szolgáltatások többségét a használat előtt engedélyezni kell a [Funkciók kezelése](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) alatt.
 
-- [Módosítsa a „készletzárás megszakítása” terminológiát „készletzárás sztornírozása” lehetőségre](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/change-terminology-inventory-closing-cancellation-inventory-closing-reverse)<br> - További információ [Készletzárás](../cost-management/inventory-close.md).
+- [Módosítsa a „készletzárás megszakítása” terminológiát „készletzárás sztornírozása” lehetőségre](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/change-terminology-inventory-closing-cancellation-inventory-closing-reverse)<br> - További információ [Készletzárás](../cost-management/inventory-close.md).
 
-- [Kimenő szállítmányok jóváhagyása kötegelt feladatokból](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/confirm-outbound-shipments-batch-jobs)<br> - További információ: [Kimenő szállítmányok jóváhagyása a kötegelt feladatokból](../warehousing/confirm-outbound-shipments-from-batch-jobs.md).
+- [Kimenő szállítmányok jóváhagyása kötegelt feladatokból](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/confirm-outbound-shipments-batch-jobs)<br> - További információ: [Kimenő szállítmányok jóváhagyása a kötegelt feladatokból](../warehousing/confirm-outbound-shipments-from-batch-jobs.md).
 
-- [Több beszerzési munkatétel delegálása](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/delegation-multiple-purchasing-work-items)<br> - További információ : [Egy munkafolyamat munkatételeinek delegálása](../../fin-ops-core/fin-ops/organization-administration/tasks/delegate-work-items-workflow.md).
+- [Több beszerzési munkatétel delegálása](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/delegation-multiple-purchasing-work-items)<br> - További információ : [Egy munkafolyamat munkatételeinek delegálása](../../fin-ops-core/fin-ops/organization-administration/tasks/delegate-work-items-workflow.md).
 
-- [Adja meg a sorozatszámokat befejezettként a feladatkártya eszközéből](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/enter-serial-numbers-while-reporting-as-finished-job-card-device)<br> - További információ: [Jelentés befejezettként a feladatkártya eszközből](../production-control/report-finished-job-device.md).
+- [Adja meg a sorozatszámokat befejezettként a feladatkártya eszközéből](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/enter-serial-numbers-while-reporting-as-finished-job-card-device)<br> - További információ: [Jelentés befejezettként a feladatkártya eszközből](../production-control/report-finished-job-device.md).
 
-- [Új készletdimenziók a termékverzió nyomon követéséhez és továbbfejlesztett bővíthetőségéhez](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/new-inventory-dimensions-product-version-tracking-enhanced-extensibility)<br> - További információ: [Termékdimenziók](../pim/product-dimensions.md).
+- [Új készletdimenziók a termékverzió nyomon követéséhez és továbbfejlesztett bővíthetőségéhez](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/new-inventory-dimensions-product-version-tracking-enhanced-extensibility)<br> - További információ: [Termékdimenziók](../pim/product-dimensions.md).
 
-- [Rendelésben véglegesített foglalás azonosítótáblák alapján](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/order-committed-reservation-based-license-plates-lp-picking-processing)<br> - További információ: [Rugalmas azonosítótábla-foglalás](../warehousing/flexible-warehouse-level-dimension-reservation.md#flexible-license-plate-reservation).
+- [Rendelésben véglegesített foglalás azonosítótáblák alapján](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/order-committed-reservation-based-license-plates-lp-picking-processing)<br> - További információ: [Rugalmas azonosítótábla-foglalás](../warehousing/flexible-warehouse-level-dimension-reservation.md#flexible-license-plate-reservation).
 
-- [Munka kitárolási sora – áttekintés](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/work-pick-line-overview)
+- [Munka kitárolási sora – áttekintés](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/work-pick-line-overview)
 
-- [Munkairányelv fejlesztései bejövő munkára vonatkozóan](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/work-policy-enhancements-inbound-work)<br> - További információ: [Raktári irányelvek](../warehousing/warehouse-work-policies.md).
+- [Munkairányelv fejlesztései bejövő munkára vonatkozóan](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/work-policy-enhancements-inbound-work)<br> - További információ: [Raktári irányelvek](../warehousing/warehouse-work-policies.md).
 
 ## <a name="additional-resources"></a>További erőforrások
 
@@ -65,7 +65,7 @@ Ha további tájékoztatást szeretne kapni a 10.0.13 részét képező frissít
 
 Kíváncsi a bármelyik üzleti alkalmazásával vagy platformjával kapcsolatos, közelgő és a közelmúltban bevezetett lehetőségekre?
 
-Lásd: [Dynamics 365: 2020-as 2. frissítési hullám tervét](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/index). A részleteket minden apró információmorzsáig bezárólag egyetlen dokumentumban rögzítettük, amelyet felhasználhat a tervezés során.
+Lásd: [Dynamics 365: 2020-as 2. frissítési hullám tervét](/dynamics365-release-plan/2020wave2/index). A részleteket minden apró információmorzsáig bezárólag egyetlen dokumentumban rögzítettük, amelyet felhasználhat a tervezés során.
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Eltávolított és elavult Supply Chain Management szolgáltatások
 

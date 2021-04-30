@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 23ee82922a2103d02a4c1fe0c364fa381c4984c3
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 3acdde483cb997b4a16a497f145c7c087c6906b5
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5842010"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909719"
 ---
 # <a name="product-readiness"></a>Termékkészenlét
 
@@ -142,7 +142,7 @@ Minden egyes hozzáadott sorhoz állítsa be a következő mezőket.
 | Cég | Ha a **Végrehajtás helye** mezőt a *Egyetlen vállalat* értékre állítja be, válassza ki a vállalatot. |
 | Tulajdonos típusa | Adja meg, hogy a sor által generált készenléti ellenőrzések egy személyhez vagy egy csoporthoz legyenek-e hozzárendelve. |
 | Tulajdonos | Válassza ki a személyt vagy csoportot, amelyhez a készenléti ellenőrzéseket hozzá kívánja rendelni. |
-| Kérdőív | Válassza ki azt a kérdőívet, amelyet alkalmazni kell az ellenőrzőlista esetében. Az ellenőrzőlista egy helyi ellenőrzőlista azon a vállalaton belül, ahol a készenléti ellenőrzést végrehajtják. A rendszernek képesnek kell lennie annak értékelésére, hogy helyesen válaszol-e az ellenőrzőlista. Ezért a ellenőrzőlistát úgy kell beállítani, hogy a helyes válaszok alapján végezze el az értékelést. A kérdőívek létrehozásával kapcsolatos további tudnivalókat lásd a [Kérdőívek használata](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/using-questionnaires) és a kapcsolódó témakörök között. |
+| Kérdőív | Válassza ki azt a kérdőívet, amelyet alkalmazni kell az ellenőrzőlista esetében. Az ellenőrzőlista egy helyi ellenőrzőlista azon a vállalaton belül, ahol a készenléti ellenőrzést végrehajtják. A rendszernek képesnek kell lennie annak értékelésére, hogy helyesen válaszol-e az ellenőrzőlista. Ezért a ellenőrzőlistát úgy kell beállítani, hogy a helyes válaszok alapján végezze el az értékelést. A kérdőívek létrehozásával kapcsolatos további tudnivalókat lásd a [Kérdőívek használata](/dynamicsax-2012/appuser-itpro/using-questionnaires) és a kapcsolódó témakörök között. |
 | Automatikus jóváhagyás | A készenléti ellenőrzés rekordjai egy **Jóváhagyott** jelölőnégyzetet tartalmaznak, amely jelzi a jóváhagyási állapotot. Jelölje be az **Automatikus jóváhagyás** jelölőnégyzetet azon ellenőrzések esetén, amelyeket a hozzárendelt felhasználó általi végrehajtás után azonnali jóváhagyásra kell beállítani. Ennek a jelölőnégyzetnek a törlésével további lépésként explicit jóváhagyást követelhet meg. |
 | Kötelező | Ezt a jelölőnégyzetet a hozzárendelt felhasználó által végrehajtandó ellenőrzések esetében jelölje be. A kötelező ellenőrzéseket nem lehet kihagyni. |
 

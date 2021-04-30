@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3d7fc01906a017d4214d4794097a11b4a3416b95
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: b117f408b8ac8baabf7e8af3b383526f404441a4
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5801119"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5889860"
 ---
 # <a name="create-a-recurring-data-export-app"></a>Ismétlődő adatexportálási alkalmazás létrehozása
 
@@ -43,12 +43,12 @@ Ez az oktatóanyag a következő technológiákat használja:
 - **[Dynamics 365 Human Resources](https://dynamics.microsoft.com/talent/overview/)** – Az exportálandó dolgozók alapadatforrása.
 - **[Azure Logic Apps](https://azure.microsoft.com/services/logic-apps/)** – az ismétlődő export vezénylését és ütemezését biztosító technológia.
 
-    - **[Csatlakozók](https://docs.microsoft.com/azure/connectors/apis-list)** – a logikai alkalmazás a szükséges végpontokhoz való csatlakoztatásához használt technológia.
+    - **[Csatlakozók](/azure/connectors/apis-list)** – a logikai alkalmazás a szükséges végpontokhoz való csatlakoztatásához használt technológia.
 
-        - [HTTP Azure AD](https://docs.microsoft.com/connectors/webcontents/) csatlakozóval
-        - [OneDrive for Business](https://docs.microsoft.com/azure/connectors/connectors-create-api-onedriveforbusiness) csatlakozó
+        - [HTTP Azure AD](/connectors/webcontents/) csatlakozóval
+        - [OneDrive for Business](/azure/connectors/connectors-create-api-onedriveforbusiness) csatlakozó
 
-- **[DMF-csomag REST API](../dev-itpro/data-entities/data-management-api.md)** – az exportálás elindításához és a folyamat nyomon követéséhez használt technológia.
+- **[DMF-csomag REST API](../fin-ops-core/dev-itpro/data-entities/data-management-api.md)** – az exportálás elindításához és a folyamat nyomon követéséhez használt technológia.
 - **[OneDrive for Business](https://onedrive.live.com/about/business/)** – az exportált dolgozók célhelye.
 
 ## <a name="prerequisites"></a>Előfeltételek
@@ -84,11 +84,11 @@ A feladat nagy része a logikai alkalmazás létrehozása lesz.
     ![Logikai alkalmazás létrehozása lap](media/integration-logic-app-creation-1.png)
 
 2. A Logic Apps Designer programban kezdje a munkát egy üres logikai alkalmazással.
-3. Adjon hozzá egy [Ismétlődésütemezési indítót](https://docs.microsoft.com/azure/connectors/connectors-native-recurrence) a logikai alkalmazás 24 óránként történő futtatásához (vagy az Ön által kiválasztott ütemezéshez).
+3. Adjon hozzá egy [Ismétlődésütemezési indítót](/azure/connectors/connectors-native-recurrence) a logikai alkalmazás 24 óránként történő futtatásához (vagy az Ön által kiválasztott ütemezéshez).
 
     ![Ismétlődés párbeszédpanel](media/integration-logic-app-recurrence-step.png)
 
-4. Hívja az [ExportToPackage](../dev-itpro/data-entities/data-management-api.md#exporttopackage) DMF REST API-t az adatcsomag exportálásának ütemezése érdekében.
+4. Hívja az [ExportToPackage](../fin-ops-core/dev-itpro/data-entities/data-management-api.md#exporttopackage) DMF REST API-t az adatcsomag exportálásának ütemezése érdekében.
 
     1. A HTTP-ből válassza a **HTTP-kérelem hívása** műveletet az Azure AD-csatlakozó használatával.
 
@@ -122,13 +122,13 @@ A feladat nagy része a logikai alkalmazás létrehozása lesz.
     > [!TIP]
     > Előfordulhat, hogy az egyes lépéseket úgy szeretné átnevezni, hogy az az alapértelmezett nevénél érthetőbb legyen, **HTTP-kérelem meghívása**. Ezt a lépést például átnevezheti a következőre: **ExportToPackage**.
 
-5. [Változó inicializálása](https://docs.microsoft.com/azure/logic-apps/logic-apps-create-variables-store-values#initialize-variable) az **ExportToPackage** kérelem végrehajtási állapotának tárolásához.
+5. [Változó inicializálása](/azure/logic-apps/logic-apps-create-variables-store-values#initialize-variable) az **ExportToPackage** kérelem végrehajtási állapotának tárolásához.
 
     ![Változó művelet inicializálása](media/integration-logic-app-initialize-variable-step.png)
 
 6. Várjon, amíg az adatexport végrehajtási állapota **Sikeres** nem lesz.
 
-    1. Adjon hozzá egy [Érvényesség vége-ciklus](https://docs.microsoft.com/azure/logic-apps/logic-apps-control-flow-loops#until-loop) műveletet, amely addig ismétlődik, amíg az **ExecutionStatus**-változó értéke **Sikeres** nem lesz.
+    1. Adjon hozzá egy [Érvényesség vége-ciklus](/azure/logic-apps/logic-apps-control-flow-loops#until-loop) műveletet, amely addig ismétlődik, amíg az **ExecutionStatus**-változó értéke **Sikeres** nem lesz.
     2. Adjon hozzá egy **Késleltetési** műveletet, amely az exportálás aktuális végrehajtási állapotához kapcsolódó lekérdezések előtt öt másodpercig várakozik.
 
         ![Érvényesség vége-ciklus tárolója](media/integration-logic-app-until-loop-step.png)
@@ -136,9 +136,9 @@ A feladat nagy része a logikai alkalmazás létrehozása lesz.
         > [!NOTE]
         > Állítsa be limitszámot **15** -ös értékre, és az exportálás befejezéséhez várjon legfeljebb 75 másodpercig (15 ismétlés x 5 másodperc). Ha az exportálás több időt vesz igénybe, szükség szerint módosítsa a limiteket.        
 
-    3. Adjon hozzá egy **HTTP-kérelem meghívása** műveletet a [GetExecutionSummaryStatus](../dev-itpro/data-entities/data-management-api.md#getexecutionsummarystatus) DMF REST API hívásához, majd állítsa át az **ExecutionStatus**-változót a **GetExecutionSummaryStatus** válaszának eredményére.
+    3. Adjon hozzá egy **HTTP-kérelem meghívása** műveletet a [GetExecutionSummaryStatus](../fin-ops-core/dev-itpro/data-entities/data-management-api.md#getexecutionsummarystatus) DMF REST API hívásához, majd állítsa át az **ExecutionStatus**-változót a **GetExecutionSummaryStatus** válaszának eredményére.
 
-        > Ez a minta nem végez hibaellenőrzést. A **GetExecutionSummaryStatus** API visszaküldheti a sikertelen terminálállapotokat (azaz a **Sikeres** állapoton kívüli más állapotokat). További részletek az [API-val kapcsolatos dokumentáció](../dev-itpro/data-entities/data-management-api.md#getexecutionsummarystatus) részben találhatók.
+        > Ez a minta nem végez hibaellenőrzést. A **GetExecutionSummaryStatus** API visszaküldheti a sikertelen terminálállapotokat (azaz a **Sikeres** állapoton kívüli más állapotokat). További részletek az [API-val kapcsolatos dokumentáció](../fin-ops-core/dev-itpro/data-entities/data-management-api.md#getexecutionsummarystatus) részben találhatók.
 
         - **Metódus**: POST
         - **A kérelem URL-címe:** https://\<hostname\>/namespaces/\<namespace\_guid\>/data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExecutionSummaryStatus
@@ -156,7 +156,7 @@ A feladat nagy része a logikai alkalmazás létrehozása lesz.
 
 7. Az exportált csomag letöltési URL-jének beolvasása.
 
-    - **HTTP-kérelem meghívása** művelet hozzáadása a [GetExportedPackageUrl](../dev-itpro/data-entities/data-management-api.md#getexportedpackageurl) DMF REST API hívásához.
+    - **HTTP-kérelem meghívása** művelet hozzáadása a [GetExportedPackageUrl](../fin-ops-core/dev-itpro/data-entities/data-management-api.md#getexportedpackageurl) DMF REST API hívásához.
 
         - **Metódus**: POST
         - **A kérelem URL-címe:** https://\<hostname\>/namespaces/\<namespace\_guid\>/data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExportedPackageUrl
@@ -166,7 +166,7 @@ A feladat nagy része a logikai alkalmazás létrehozása lesz.
 
 8. Az exportált csomag letöltése.
 
-    - Adjon hozzá egy HTTP **GET**-kérelmet ( beépített [HTTP-csatlakozó művelet](https://docs.microsoft.com/azure/connectors/connectors-native-http)) az előző lépésben visszaküldött URL-címen szereplő csomag letöltéséhez.
+    - Adjon hozzá egy HTTP **GET**-kérelmet ( beépített [HTTP-csatlakozó művelet](/azure/connectors/connectors-native-http)) az előző lépésben visszaküldött URL-címen szereplő csomag letöltéséhez.
 
         - **Metódus**: GET
         - **URI:** body('Invoke\_an\_HTTP\_request\_3').value
@@ -179,9 +179,9 @@ A feladat nagy része a logikai alkalmazás létrehozása lesz.
         > [!NOTE]
         > A kérelemhez nem szükséges további hitelesítés, mert a **GetExportedPackageUrl** API-t visszaküldő URL-cím tartalmaz egy megosztott hozzáférési aláírási tokent, amely hozzáférést biztosít a fájl letöltéséhez.
 
-9. Mentse a letöltött csomagot a [OneDrive for Business](https://docs.microsoft.com/azure/connectors/connectors-create-api-onedriveforbusiness) csatlakozó segítségével.
+9. Mentse a letöltött csomagot a [OneDrive for Business](/azure/connectors/connectors-create-api-onedriveforbusiness) csatlakozó segítségével.
 
-    - Adjon hozzá egy OneDrive for Business [Fájl létrehozása](https://docs.microsoft.com/connectors/onedriveforbusinessconnector/#create-file) műveletet.
+    - Adjon hozzá egy OneDrive for Business [Fájl létrehozása](/connectors/onedriveforbusinessconnector/#create-file) műveletet.
     - Szükség szerint kapcsolódjon a OneDrive for Business fiókhoz.
 
         - **Mappa elérési útja:** egy Ön által kiválasztott mappa

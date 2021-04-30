@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: cd056798773bce492e429f8cca2ef39cb59bf739
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 899af54fbe34841c9b9b6e96b78db96773cf0203
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753816"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5894172"
 ---
 # <a name="compress-large-documents-that-are-generated-in-electronic-reporting"></a>Elektronikus jelentésekben létrehozott nagyméretű dokumentumok tömörítése 
 
 [!include [banner](../includes/banner.md)]
 
-Az [Elektronikus jelentéskészítési (ER) keretrendszer](general-electronic-reporting.md) segítségével konfigurálhatja azt a megoldást, amely a tranzakciós adatokat a kimenő dokumentumok előállításához kérdezi le. Ez a létrehozott dokumentum elég nagy lehet. Ha ilyen típusú dokumentumot hoz létre, akkor azt az [Application Object Server (AOS)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/dev-tools/access-instances#location-of-packages-source-code-and-other-aos-configurations) kiszolgáló memóriájával tárolhatja. Valamikor le kell töltenie a dokumentumot a Microsoft Dynamics 365 Finance alkalmazásból. Jelenleg az ER-ben létrehozott dokumentum mérete legfeljebb 2 gigabájt (GB) lehet. Ezenkívül a Finance jelenleg 1 GB-ra [korlátozza](https://fix.lcs.dynamics.com/Issue/Details?kb=4569432&bugId=453907&dbType=3) a letöltött fájlok méretét. Éppen ezért konfigurálnia kell egy olyan ER-megoldást, amely csökkenti annak a valószínűségét, hogy túllépi ezeket a korlátozásokat, és hogy a **Adatfolyam túl hosszú volt** vagy **Az aritmetikai művelet kivétele során túlcsordulás vagy alulcsordulás következett be** kivételt kapjon.
+Az [Elektronikus jelentéskészítési (ER) keretrendszer](general-electronic-reporting.md) segítségével konfigurálhatja azt a megoldást, amely a tranzakciós adatokat a kimenő dokumentumok előállításához kérdezi le. Ez a létrehozott dokumentum elég nagy lehet. Ha ilyen típusú dokumentumot hoz létre, akkor azt az [Application Object Server (AOS)](../dev-tools/access-instances.md#location-of-packages-source-code-and-other-aos-configurations) kiszolgáló memóriájával tárolhatja. Valamikor le kell töltenie a dokumentumot a Microsoft Dynamics 365 Finance alkalmazásból. Jelenleg az ER-ben létrehozott dokumentum mérete legfeljebb 2 gigabájt (GB) lehet. Ezenkívül a Finance jelenleg 1 GB-ra [korlátozza](https://fix.lcs.dynamics.com/Issue/Details?kb=4569432&bugId=453907&dbType=3) a letöltött fájlok méretét. Éppen ezért konfigurálnia kell egy olyan ER-megoldást, amely csökkenti annak a valószínűségét, hogy túllépi ezeket a korlátozásokat, és hogy a **Adatfolyam túl hosszú volt** vagy **Az aritmetikai művelet kivétele során túlcsordulás vagy alulcsordulás következett be** kivételt kapjon.
 
 Ha konfigurál egy megoldást, akkor úgy állíthatja be a saját ER-formátumát a Műveletek tervezőben, hogy hozzáadja a **Mappa** egy gyökérelemét, és tömöríti a saját beágyazott elemei által előállított valamelyik tartalmat. A tömörítés „pont időben” működik, így a csúcs memóriahasználat, és a letöltendő fájl mérete csökkenthető.
 

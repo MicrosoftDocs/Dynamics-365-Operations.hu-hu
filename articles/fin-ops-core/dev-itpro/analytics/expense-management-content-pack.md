@@ -14,12 +14,12 @@ ms.search.industry: Manufacturing
 ms.author: kfend
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: aadf43d478eb4bf5af20df02dcc6399a7a2e71a5
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 8e95fa06745840a6ba1782f135af0e7625c934aa
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5743507"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893252"
 ---
 # <a name="expense-management-power-bi-content"></a>Költséggazdálkodási Power BI-tartalom
 
@@ -41,7 +41,7 @@ Két Power BI tartalomcsomagok, és a 8.1-es és későbbi verzióban a Költsé
 Minden összeg a vállalat pénznemében van megadva. Az összes vállalatra vonatkozó adatok láthatók, de ha szükséges vállalati szűrő is hozzáadható. 
 
 ## <a name="accessing-the-power-bi-content"></a>A Power BI tartalom elérése
-Az Expense Admin Dashboard.pbix és Expense Personal Dashboard.pbix Power BI tartalmakat a Shared assets könyvtárban találja Microsoft Dynamics Lifecycle Services (LCS) megoldásban. A tartalom letöltésére és szervezeténél való megvalósítására vonatkozó további információért lásd: [Power BI-tartalom az LCS megoldásban a Microsofttól és a partnerektől](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/12/12/power-bi-content-from-microsoft-and-your-partners/).
+Az Expense Admin Dashboard.pbix és Expense Personal Dashboard.pbix Power BI tartalmakat a Shared assets könyvtárban találja Microsoft Dynamics Lifecycle Services (LCS) megoldásban. A tartalom letöltésére és szervezeténél való megvalósítására vonatkozó további információért lásd: [Power BI-tartalom az LCS megoldásban a Microsofttól és a partnerektől](/archive/blogs/dynamicsaxbi/power-bi-content-from-microsoft-and-your-partners).
 A tartalom elérhető a Költségkezelés munkaterületen beágyazott Power Bi tartalomként. Minden költség tulajdonosa a személyes kötségeket saját maga is elérheti, miközben csak a Kötelezettségek ügyintézők és a vezetők férhetnek hozzá az Adminisztrátori tartalmakhoz az összes felhasználó költségadatainak megtekintéséhez.
 
 ## <a name="refreshing-the-power-bi-content"></a>A Power BI tartalom frissítése

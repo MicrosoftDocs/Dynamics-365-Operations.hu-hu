@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 11604389ff598c70e15709c9e3e04b6ec436f6a6
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 64ce34cf38e4d6f37d9d417b70843a8308a408a8
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5747201"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5890357"
 ---
 # <a name="workflow-faq"></a>Munkafolyamat GYIK
 
@@ -45,9 +45,9 @@ Az alábbiakban az értesítésre szolgáló figyelmeztetések munkafolyamatokho
     - Egy jövőbeli frissítésben bevezetjük a Műveleti központ üzenetét, így a felhasználóhoz egy munkafolyamat munkatételét lehet hozzárendelni. 
 - Értesítések hozzáadása a munkafolyamatokhoz
     - A Műveleti központ üzeneteivel adott felhasználók is megcélozhatók, például az X++ munkafolyamatból létrehozott üzenetekkel.
-    - [A munkafolyamatok üzleti eseményekkel rendelkeznek](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/business-events-workflow), amelyekkel a vevő a kívánt értesítést használható folyamatokat aktiválhatja.   
+    - [A munkafolyamatok üzleti eseményekkel rendelkeznek](../../dev-itpro/business-events/business-events-workflow.md), amelyekkel a vevő a kívánt értesítést használható folyamatokat aktiválhatja.   
 
-Ha a felhasználó nem a megfelelő értesítést kapja a Műveleti központból, amikor hozzárendelik a munkafolyamat egyik munkatételét, a [Munkafolyamat üzleti eseményeinek](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/business-events-workflow) Microsoft Power Automate szolgáltatással való használatával további vagy más értesítések válhatnak elérhetővé.
+Ha a felhasználó nem a megfelelő értesítést kapja a Műveleti központból, amikor hozzárendelik a munkafolyamat egyik munkatételét, a [Munkafolyamat üzleti eseményeinek](../../dev-itpro/business-events/business-events-workflow.md) Microsoft Power Automate szolgáltatással való használatával további vagy más értesítések válhatnak elérhetővé.
 
 ## <a name="why-is-workflow-editor-not-able-to-start-under-ad-fs"></a>Miért nem lehet elindítani a munkafolyamat-szerkesztőt az AD FS alatt?
 Ha az Active Directory összevonási szolgáltatások (AD FS) alatt egy frissített környezetben fut, előfordulhat, hogy a munkafolyamat-szerkesztő nem működik megfelelően. Ha igen, győződjön meg arról, hogy a „https://dynamicsaxworkfloweditor/” URL hozzá van adva a **Microsoft Dynamics 365 for Operations Helyszíni - Munkafolyamat - Natív alkalmazás** tulajdonsághoz az ADFS beállításaiban.

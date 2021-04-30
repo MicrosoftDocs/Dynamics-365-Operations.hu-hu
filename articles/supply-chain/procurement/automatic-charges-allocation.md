@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-10-01
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: a167e6ba4a3b4161e964e5018944af0901000b01
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 4e8d65cc1f946f921523607eff850b29f9ff9bf1
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5841479"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5910161"
 ---
 # <a name="automatic-allocation-of-charges"></a>A kiadások automatikus felosztása
 
@@ -144,7 +144,7 @@ Miután beállította a költségkódokat, hajtsa végre az alábbi lépéseket 
     - **Telephely** és **raktár** – adja meg a helyet és a raktárat, ha a költséget csak meghatározott telephelyre és raktárra kell alkalmazni.
     - **Megtartás** - Válassza ki ezt a jelölőnégyzetet, a költségtranzakciók számlázás befejezése utáni megtartására úgy, hogy a költség minden alkalommal alkalmazásra kerüljön, ha új számlát hoz létre a kijelölt vevői számlára.
 
-1. **Csak értékesítési rendelések esetében:** Ha a többszintű költséget szeretné kiszámítani, akkor lásd: [az értékesítési rendelések többszintű költsége](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/about-tiered-charges-on-sales-orders).
+1. **Csak értékesítési rendelések esetében:** Ha a többszintű költséget szeretné kiszámítani, akkor lásd: [az értékesítési rendelések többszintű költsége](/dynamicsax-2012/appuser-itpro/about-tiered-charges-on-sales-orders).
 
 ## <a name="allocate-charges-from-the-header-to-a-line"></a>Költség felosztása a fejlécből egy sorba
 

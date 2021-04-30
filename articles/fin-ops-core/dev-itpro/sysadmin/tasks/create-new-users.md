@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b994473b4535c255f87551a6d97e197516fc2a9c
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 88d3f1fba05d944e78e4595018d190c3dc41e076
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745837"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5907911"
 ---
 # <a name="create-new-users"></a>Új felhasználók létrehozása
 
@@ -29,10 +29,10 @@ A Finance and Operations alkalmazások eléréséhez először hozzá kell adni 
 A Finance and Operations alkalmazások vásárlásával és licencelésével kapcsolatos tudnivalókért lásd: [Microsoft Dynamics 365 licencelési útmutató](https://go.microsoft.com/fwlink/?LinkId=866544&amp;clcid=0x409).
 
 ## <a name="assign-a-license-to-a-user"></a>Licenc hozzárendelése egy felhasználóhoz
-A rendszeradminisztrátorok [rendelhetnek hozzá licenceket a felhasználókhoz](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users?view=o365-worldwide) a [Microsoft 365 felügyeleti központban](https://docs.microsoft.com/office365/admin/admin-overview/about-the-admin-center?view=o365-worldwide).
+A rendszeradminisztrátorok [rendelhetnek hozzá licenceket a felhasználókhoz](/office365/admin/subscriptions-and-billing/assign-licenses-to-users?view=o365-worldwide) a [Microsoft 365 felügyeleti központban](/office365/admin/admin-overview/about-the-admin-center?view=o365-worldwide).
 
 ## <a name="add-an-external-user-in-azure-ad-and-assign-a-license"></a>Külső felhasználó hozzáadása az Azure AD megoldásban, és egy licenc hozzárendelése 
-A külső felhasználóknak meg kell jelenniük a bérlőkönyvtárban (Azure Active Directory (Azure AD)), hogy licenceket kaphassanak. Ezeket a külső felhasználókat hozzá kell adni a bérlőhöz az Azure AD felületen vendég felhasználóként, majd hozzájuk rendelni a megfelelő licenceket. A Finance and Operations alkalmazásoktól az a követelmény, hogy a vendégfelhasználó vállalatának használnia kell az Azure AD megoldást. További tájékoztatás: [Azure Active Directory B2B együttműködő felhasználók hozzáadása az Azure Portal webhelyen](https://docs.microsoft.com/azure/active-directory/b2b/add-users-administrator).
+A külső felhasználóknak meg kell jelenniük a bérlőkönyvtárban (Azure Active Directory (Azure AD)), hogy licenceket kaphassanak. Ezeket a külső felhasználókat hozzá kell adni a bérlőhöz az Azure AD felületen vendég felhasználóként, majd hozzájuk rendelni a megfelelő licenceket. A Finance and Operations alkalmazásoktól az a követelmény, hogy a vendégfelhasználó vállalatának használnia kell az Azure AD megoldást. További tájékoztatás: [Azure Active Directory B2B együttműködő felhasználók hozzáadása az Azure Portal webhelyen](/azure/active-directory/b2b/add-users-administrator).
 
 ## <a name="import-new-users-from-azure-ad"></a>Új felhasználók importálása az Azure AD-szolgáltatásból 
 1. Ugrás a **Rendszerfelügyelet** \> **Felhasználók** \> **Felhasználók** elemre.
@@ -57,7 +57,7 @@ A külső felhasználóknak meg kell jelenniük a bérlőkönyvtárban (Azure Ac
 7. A **Vállalat** mezőben válassza ki a felhasználó alapértelmezett indítási vállalatát. 
 8. Válassza a **Mentés** lehetőséget.
 
-A rendszer a felhasználói rekord mentésekor [Microsoft Graph](https://docs.microsoft.com/graph/overview) hívás alapján frissíti az identitásszolgáltatót és a telemetriai azonosítót. A telemetriai azonosító a felhasználó alapja a felhasználó objektumazonosítója/biztonsági azonosítója az Azure AD megoldásban.
+A rendszer a felhasználói rekord mentésekor [Microsoft Graph](/graph/overview) hívás alapján frissíti az identitásszolgáltatót és a telemetriai azonosítót. A telemetriai azonosító a felhasználó alapja a felhasználó objektumazonosítója/biztonsági azonosítója az Azure AD megoldásban.
 
 > [!NOTE]
 > Miután hozzáadta a felhasználót, a szerepköröket és szervezeteket hozzá kell rendelnie a megfelelő módon. További információ [Felhasználók hozzárendelése biztonsági szerepkörökhöz](assign-users-security-roles.md). Feltételesen előfordulhat, hogy a felhasználót egy **Személyhez** kell társítani, és frissíteni kell a **Felhasználói beállításokat**, például a nyelvet.

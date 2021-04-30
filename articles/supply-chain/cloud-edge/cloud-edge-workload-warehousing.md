@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 6372e08b7ec737f3abd2f2bd5d4f387eaf869f03
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d6dffb1ea03b8d11519087163d2837d6cfe3df4e
+ms.sourcegitcommit: 639175a39da38edd13e21eeb5a1a5ca62fa44d99
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5832394"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "5899167"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Raktérkezelés munkaterhelései felhőalapú és peremhálózat-lépték szerinti egységekhez
 
@@ -33,13 +33,13 @@ ms.locfileid: "5832394"
 
 ## <a name="warehouse-execution-on-scale-units"></a>Raktári végrehajtás skálázási egységeken
 
-Ez a szolgáltatás lehetővé teszi a skálázási egységek számára a kiválasztott folyamatok futtatását a raktárkezelési képességekből. A felhőalapú skálázási egységek a felhőben futtatják a számítási feladatokat a kiválasztott Microsoft Azure-régió dedikált feldolgozási kapacitásának használatával. A peremhálózati skálázási egységek esetében, egyes számítási feladatok futtathatók egymástól függetlenül a helyszínen, még akkor is, ha a skálázási egységek ideiglenesen le vannak választva a felhőből.
+Ez a szolgáltatás lehetővé teszi a skálázási egységek számára a kiválasztott folyamatok futtatását a raktárkezelési képességekből.
 
 Ebben a témakörben a skálázási egységként definiált raktárban történő raktárkezelési végrehajtásokat *Raktárvégrehajtási rendszernek* (*WES*) nevezzük.
 
 ## <a name="prerequisites"></a>Előfeltételek
 
-Rendelkeznie kell egy Dynamics 365 Supply Chain Management-központtal és skálázási egységgel, amely telepítve van a raktárfelügyeleti számítási feladatokkal. Az architektúráról és a telepítési folyamatról további információt a [Felhőalapú és peremhálózat-lépték szerinti egységkezelés a gyártás és raktári végrehajtás munkaterheléseivel](cloud-edge-landing-page.md) talál.
+Rendelkeznie kell egy Dynamics 365 Supply Chain Management-központtal és skálázási egységgel, amely telepítve van a raktárfelügyeleti számítási feladatokkal. Az architektúráról és a telepítési folyamatról további információt a [Skálázási egységek használata a Resilience for Supply Chain Management munkaterheléseivel](cloud-edge-landing-page.md) talál.
 
 ## <a name="how-the-wes-workload-works-on-scale-units"></a>A WES-számítási feladat működése a skálázási egységeken
 
@@ -297,6 +297,8 @@ A skálázási egységek számítási feladatában a következő kötegelt felad
 - Hullám táblarekordjainak feldolgozása
 - A skálázási egység üzenetfeldolgozójának raktárközpontja
 - Raktári rendelési sorok mennyiségfrissítési kéréseinek feldolgozása
+
+[!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

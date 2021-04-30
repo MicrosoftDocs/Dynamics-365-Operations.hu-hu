@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c92fe991c8651d7665de2e850d8649b72f525f4c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: aeb9675477e728c28c38b1ef43fa6055acd23360
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835566"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909379"
 ---
 # <a name="install-and-connect-the-warehouse-app"></a>A raktározási alkalmazás telepítése és csatlakoztatása
 
@@ -31,7 +31,7 @@ ms.locfileid: "5835566"
 > Ez a témakör azt ismerteti, hogyan kell konfigurálni a régi raktári alkalmazást (amely már elavult). Ha tájékoztatást szeretne arról, hogy hogyan kell konfigurálni az új Raktárkezelés mobilalkalmazást, tekintse meg a következőt: [A Raktárkezelés mobilalkalmazás telepítése és csatlakoztatása](install-configure-warehouse-management-app.md).
 
 > [!NOTE]
-> Ez a témakör ismerteti, hogyan kell konfigurálni a felhőbeli telepítések raktári alkalmazását. Ha azt szeretné megtudni, hogyan kell konfigurálni a helyszíni telepítések raktári alkalmazását, tekintse meg a következőt: [Helyszíni telepítések raktárkezelése](../../dev-itpro/deployment/warehousing-for-on-premise-deployments.md).
+> Ez a témakör ismerteti, hogyan kell konfigurálni a felhőbeli telepítések raktári alkalmazását. Ha azt szeretné megtudni, hogyan kell konfigurálni a helyszíni telepítések raktári alkalmazását, tekintse meg a következőt: [Helyszíni telepítések raktárkezelése](../../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md).
 
 A raktári alkalmazás a Google Play Store-ban és a Microsoft Store-ban érhető el. Önálló összetevőként áll rendelkezésre. Ezért minden eszközre le kell töltenie, majd be kell állítania, hogy csatlakozzon a Microsoft Dynamics 365 Supply Chain Management-környezetéhez.
 
@@ -54,7 +54,7 @@ Az alkalmazás letöltéséhez használja a következő hivatkozások egyikét:
 - **Windows (UWP):** [Dynamics 365 for Finance and Operations - Warehousing a Microsoft Store-ban](https://www.microsoft.com/store/apps/9p1bffd5tstm)
 - **Android:** [Warehousing - Dynamics 365 a Google Play Store-ban](https://play.google.com/store/apps/details?id=com.Microsoft.Dynamics365forOperationsWarehousing)
 
-Kisebb telepítések esetén előfordulhat, hogy az alkalmazást minden eszköz megfelelő áruházából telepíti, majd manuálisan konfigurálja a kapcsolatot az éppen használt környezettel. A raktári alkalmazás 1.7.0.0-ás és újabb verzióiban azonban automatizálhatja az alkalmazások telepítését és/vagy konfigurációját. Ez a megközelítés akkor lehet hasznos, ha sok eszközt kezel, és mobileszköz-kezelő, valamint mobilalkalmazás-kezelő megoldást használ, mint a [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune). Az alkalmazások Intune használatával történő hozzáadásával kapcsolatos tudnivalókat lásd: [Alkalmazások hozzáadása a Microsoft Intune szolgáltatáshoz](https://docs.microsoft.com/mem/intune/apps/apps-add).
+Kisebb telepítések esetén előfordulhat, hogy az alkalmazást minden eszköz megfelelő áruházából telepíti, majd manuálisan konfigurálja a kapcsolatot az éppen használt környezettel. A raktári alkalmazás 1.7.0.0-ás és újabb verzióiban azonban automatizálhatja az alkalmazások telepítését és/vagy konfigurációját. Ez a megközelítés akkor lehet hasznos, ha sok eszközt kezel, és mobileszköz-kezelő, valamint mobilalkalmazás-kezelő megoldást használ, mint a [Microsoft Intune](/mem/intune/fundamentals/what-is-intune). Az alkalmazások Intune használatával történő hozzáadásával kapcsolatos tudnivalókat lásd: [Alkalmazások hozzáadása a Microsoft Intune szolgáltatáshoz](/mem/intune/apps/apps-add).
 
 ## <a name="create-a-web-service-application-in-azure-active-directory"></a><a name="create-service"></a>Webes szolgáltatás alkalmazás létrehozása az Azure Active Directory szolgáltatásban
 
@@ -89,11 +89,11 @@ Ahhoz, hogy a raktári alkalmazás együttműködhessen a kívánt Supply Chain 
 
 Az Azure AD webszolgáltatási alkalmazásainak beállításával kapcsolatos további tudnivalókat lásd a következő forrásokban:
 
-- A webszolgáltatási alkalmazások Windows PowerShell eszközzel, az Azure AD rendszerben történő beállításával kapcsolatban a következő témakör tartalmaz további tájékoztatást: [Útmutató: Az Azure PowerShell használata egy tanúsítvánnyal rendelkező szolgáltatási főkiszolgáló létrehozásához](https://docs.microsoft.com/azure/active-directory/develop/howto-authenticate-service-principal-powershell).
+- A webszolgáltatási alkalmazások Windows PowerShell eszközzel, az Azure AD rendszerben történő beállításával kapcsolatban a következő témakör tartalmaz további tájékoztatást: [Útmutató: Az Azure PowerShell használata egy tanúsítvánnyal rendelkező szolgáltatási főkiszolgáló létrehozásához](/azure/active-directory/develop/howto-authenticate-service-principal-powershell).
 - A webszolgáltatási alkalmazások Azure AD rendszerben való manuális létrehozásával kapcsolatos további tudnivalókat lásd a következő témakörökben:
 
-    - [Rövid útmutató: Alkalmazások regisztrálása a Microsoft Identity platformmal](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app)
-    - [Útmutató: Erőforrások elérésére képes Azure AD alkalmazás és szolgáltatási főkiszolgáló létrehozása portál használatával](https://docs.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal)
+    - [Rövid útmutató: Alkalmazások regisztrálása a Microsoft Identity platformmal](/azure/active-directory/develop/quickstart-register-app)
+    - [Útmutató: Erőforrások elérésére képes Azure AD alkalmazás és szolgáltatási főkiszolgáló létrehozása portál használatával](/azure/active-directory/develop/howto-create-service-principal-portal)
 
 ## <a name="create-and-configure-a-user-account-in-supply-chain-management"></a>Felhasználói fiók létrehozása és konfigurálása a Supply Chain Management megoldásban
 
@@ -121,7 +121,7 @@ Az Azure AD használatával történő hitelesítéssel biztonságos módon csat
 
 A tanúsítványok felhasználhatók titkos kódokként az alkalmazás azonosságának igazolására, ha a rendszer tokent kér. A tanúsítvány nyilvános része fel van töltve az alkalmazásregisztrációba az Azure portálon, míg a teljes tanúsítványt telepíteni kell minden olyan eszközre, amelyre a raktári alkalmazás telepítésre kerül. A szervezet felelős a tanúsítvány rotációjának és egyéb szempontjainak kezelésével kapcsolatban. Önaláírt tanúsítványok is használhatók, de mindig nem exportálható tanúsítványokat kell használnia.
 
-A tanúsítványt helyileg elérhetővé kell tenni minden olyan eszközön, amelyen a raktári alkalmazást futtatja. A Intune által vezérelt eszközök tanúsítványainak kezelésével kapcsolatban a következő témakör tartalmaz további tájékoztatást: [Tanúsítványok használata hitelesítéshez a Microsoft Intune szolgáltatásban](https://docs.microsoft.com/mem/intune/protect/certificates-configure).
+A tanúsítványt helyileg elérhetővé kell tenni minden olyan eszközön, amelyen a raktári alkalmazást futtatja. A Intune által vezérelt eszközök tanúsítványainak kezelésével kapcsolatban a következő témakör tartalmaz további tájékoztatást: [Tanúsítványok használata hitelesítéshez a Microsoft Intune szolgáltatásban](/mem/intune/protect/certificates-configure).
 
 ## <a name="configure-the-application-by-importing-connection-settings"></a>Az alkalmazás konfigurálása a kapcsolati beállítások importálásával
 

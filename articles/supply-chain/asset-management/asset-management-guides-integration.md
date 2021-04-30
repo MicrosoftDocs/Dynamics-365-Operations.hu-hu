@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2020-04-28
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: 4af14a66c839ccee02008057ad1de8ef5b9d291b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 50cfea6656e1f13532b018784fa64b2aac10fc7f
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5813917"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908567"
 ---
 # <a name="integrate-dynamics-365-supply-chain-management-asset-management-with-dynamics-365-guides"></a>A Dynamics 365 Supply Chain Management (Eszközkezelés) integrálása a Dynamics 365 Guides alkalmazással
 
@@ -30,12 +30,12 @@ Mielőtt útmutatókat csatolhat a Eszközkezelési munkarendelésekhez, ezeket 
 - [A Dynamics 365 Supply Chain Management](../../fin-ops-core/fin-ops/index.md) 10.0.9 vagy újabb verziójának beállítása.
 - [A kettős írás funkció bekapcsolása a Supply Chain Management alkalmazásokhoz](../../fin-ops-core/dev-itpro/data-entities/dual-write/enable-dual-write.md).
 - [Tesztcsomag bekapcsolása](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md#features-flighted-in-data-management-and-enabling-flighted-features) az **MRGuidesFeature** funkcióhoz. (Termelési környezetek esetében először egy támogatási jegyet kell elküldenie, hogy a bérlője bekerüljön a tesztelési csoportba.)
-- [Kapcsolja be a következő konfigurációs kulcsokat](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/license-code-and-configuration-key-reference) a **Licenckonfiguráció** oldalon:
+- [Kapcsolja be a következő konfigurációs kulcsokat](/dynamicsax-2012/appuser-itpro/license-code-and-configuration-key-reference) a **Licenckonfiguráció** oldalon:
 
     - Eszközkezelés \> Eszközkezelés vegyes valóságban
     - Vegyes valóság \> Vegyes valóság útmutató
 
-- [A Dynamics 365 Guides](https://docs.microsoft.com/dynamics365/mixed-reality/guides/setup#step-2-create-a-common-data-service-environment-and-install-the-dynamics-365-guides-solution) 200.0.0.96 vagy újabb verziójának beállítása.
+- [A Dynamics 365 Guides](/dynamics365/mixed-reality/guides/setup#step-2-create-a-common-data-service-environment-and-install-the-dynamics-365-guides-solution) 200.0.0.96 vagy újabb verziójának beállítása.
 
 ## <a name="use-dynamics-365-guides-with-asset-management"></a>A Dynamics 365 Guides használata az Eszközkezeléssel
 
@@ -47,8 +47,8 @@ Egy útmutató társításához a Eszközkezelés modulban egy karbantartás ell
 
 1. Hozzon létre egy útmutatót a Dynamics 365 Guides PC és HoloLens alkalmazásokkal. Ha szeretne többet megtudni útmutatók készítéséről, tekintse át az alábbi témaköröket:
 
-    - [A számítógépes alkalmazás használata útmutató létrehozásához](https://docs.microsoft.com/dynamics365/mixed-reality/guides/pc-app-overview)
-    - [A hologramok elhelyezése a HoloLens alkalmazás segítségével](https://docs.microsoft.com/dynamics365/mixed-reality/guides/hololens-app-overview)
+    - [A számítógépes alkalmazás használata útmutató létrehozásához](/dynamics365/mixed-reality/guides/pc-app-overview)
+    - [A hologramok elhelyezése a HoloLens alkalmazás segítségével](/dynamics365/mixed-reality/guides/hololens-app-overview)
 
 1. Az Supply Chain Management alkalmazásban [hozzon létre egy karbantartásiellenőrzőlista-sablont](setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md#create-a-maintenance-checklist-template).
 1. A létrehozott útmutatót társítsa egy karbantartásiellenőrzőlista-sorhoz az új karbantartásiellenőrzőlista-sablonban:

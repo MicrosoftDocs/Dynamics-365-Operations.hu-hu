@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 586c0f807cf45908bacd88ff4e4d5793db054e4d
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5ab53f4b8888f77cd41ccbd7956ed307ba1b54ff
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5815404"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897136"
 ---
 # <a name="reverse-journal-posting"></a>Naplófeladás sztornírozása
 
@@ -65,7 +65,7 @@ Ha a bizonylat sorainak száma meghaladja a 100-at, akkor a sztornírozási foly
 
 Ha a bizonylatsorok száma 100 vagy kevesebb, akkor a sztornírozási folyamat azonnal elindul. Az eredmények egy párbeszédablakban jelennek meg, amely minden olyan bizonylatot megjelenít, amely nem sztornírozható, és megadja a annak okát. Az **OK** gombbal zárja be a párbeszédpanelt.
 
-A tranzakciókat csak akkor lehet sztornírozni, ha megfelelnek a sztornírozáshoz szükséges üzleti szabályoknak. A szállítói kifizetéseket nem lehet sztornírozni az ebben az témakörben leírt képességgel. A szállítói kifizetéseket a [Szállítói kifizetés sztornózása](https://docs.microsoft.com/dynamics365/finance/accounts-payable/reverse-vendor-payment) leírt lépésekkel lehet sztornírozni.
+A tranzakciókat csak akkor lehet sztornírozni, ha megfelelnek a sztornírozáshoz szükséges üzleti szabályoknak. A szállítói kifizetéseket nem lehet sztornírozni az ebben az témakörben leírt képességgel. A szállítói kifizetéseket a [Szállítói kifizetés sztornózása](../accounts-payable/reverse-vendor-payment.md) leírt lépésekkel lehet sztornírozni.
 
 
 

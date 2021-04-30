@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 5f4c91c16363b978932d74c7e8b4420b3a8366d3
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 0f92ace4e7e765c326c62095fb57e3343d8d303b
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752708"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909767"
 ---
 # <a name="available-mobile-workspaces"></a>Elérhető mobil munkaterületek
 
@@ -31,9 +31,9 @@ Ez a témakör felsorolja azokat a mobil munkaterületeket, amelyek a Dynamics 3
 |[Vállalat címtára](company-directory-mobile-workspace.md)| Lehetővé teszi, hogy a felhasználók megtekintsék a szervezeten belüli más alkalmazottakat, és kapcsolatba lépjenek velük.| június 2017. |    
 |[Saját csapat](manager-self-service-mobile-workspace.md)| Megtekintheti a közvetlen beosztottait, valamint pozitív visszajelzést küldhet a beosztottjaiként dolgozó egyéneknek.|június 2017. |     
 |[Számlajóváhagyás](invoice-approval-mobile-workspace.md)| A szállítói számla fejléce munkafolyamattal Önhöz rendelt számlák listáját tartalmazza.| június 2017.   |
-| [Költséggazdálkodás](../../../finance/expense-management/expense-management-mobile-workspace.md) | Nyugtákat rögzíthet, majd feltöltheti őket annak érdekében, hogy később egy költségjelentéshez csatolhassa őket. A mobil munkaterület azt is lehetővé teszi, hogy gyorsan létrehozzon egy kiadási sort egy mellékelt nyugta segítségével. | április 2017. |
+| [Költséggazdálkodás](/dynamics365/project-operations/prod-exp/expense-management-mobile-workspace) | Nyugtákat rögzíthet, majd feltöltheti őket annak érdekében, hogy később egy költségjelentéshez csatolhassa őket. A mobil munkaterület azt is lehetővé teszi, hogy gyorsan létrehozzon egy kiadási sort egy mellékelt nyugta segítségével. | április 2017. |
 | [Beszerzési rendelés jóváhagyása](../../../supply-chain/procurement/purchase-order-mobile-workspace.md) | Megtekintheti a beszerzési rendeléseket, és olyan műveletekkel reagálhat rájuk, mint a jóváhagyás vagy az elutasítás. | április 2017. |
-| [Projekt időbejegyzése](../../../finance/project-management/project-time-entry-mobile-workspace.md) | Beírhatja az időt, és időt takaríthat meg egy projektnél mobileszköze használatával. | március 2017. |
+| [Projekt időbejegyzése](/dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace) | Beírhatja az időt, és időt takaríthat meg egy projektnél mobileszköze használatával. | március 2017. |
 | [Költségkontroll](../../../finance/cost-accounting/cost-controlling-mobile-workspace.md)     | A költséghelyek vezetői megtekinthetik a költséghely teljesítményét.                                                                                               |  Január 2017.        |
 | [Aktuális készlet](../../../supply-chain/inventory/inventory-on-hand-mobile-workspace.md)    | Tájékozódhat a fenntartott és a rendelkezésre álló készletről.                                                                                                    |   Január 2017.       |
 | [Értékesítési rendelések](../../../supply-chain/sales-marketing/sales-orders-mobile-workspace.md)         | Naprakész maradhat az értékesítési rendeléseivel kapcsolatban.                                                                                                                          |  Január 2017.                  |

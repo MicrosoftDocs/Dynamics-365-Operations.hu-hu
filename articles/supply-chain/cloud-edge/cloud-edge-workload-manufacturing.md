@@ -16,22 +16,23 @@ ms.search.industry: SCM
 ms.author: cabeln
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: a8c263104e209a81e33ea0db9e5fecddff3bc95b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: a6d6979093c67d2d89b88678712f4c0205c63194
+ms.sourcegitcommit: 639175a39da38edd13e21eeb5a1a5ca62fa44d99
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5809782"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "5899095"
 ---
-# <a name="manufacturing-execution-workloads-for-cloud-and-edge-scale-units"></a>Gyártásvégrehajtási munkaterhelések felhőalapú és peremhálózati skálázási egységekhez
+# <a name="manufacturing-execution-workloads-for-cloud-and-edge-scale-units"></a>Gyártási végrehajtás munkaterhelései felhőalapú és peremhálózat-lépték szerinti egységekhez
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
 > [!WARNING]
+> A gyártásvégrehajtási munkaterhelés elérhető az előzetes verzióban az adott időpont szerint.
 > Néhány üzleti funkció nem teljes mértékben támogatott a nyilvános előzetes verzióban, ha számítási feladatokat skálázási egységeken használja.
 
-A gyártás végrehajtásánál a felhő- és peremhálózati skálázási egységek a következő képességeket biztosítják, még akkor is, ha a peremhálózati egységek nem kapcsolódnak a központhoz:
+A gyártásvégrehajtásban a skálázási egységek a következő lehetőségeket biztosítják:
 
 - A gépkezelők és az üzemirányítók hozzáférhetnek az üzemeltetési termelési tervhez.
 - A gépkezelők diszkrét és folyamatgyártási feladatok futtatásával naprakészen tarthatják a tervet.
@@ -108,5 +109,6 @@ A skálázási egységen feldolgozott gyártási feladatok előzményeinek átte
 
 A _Gyártási központból a skálázási egységbe irányuló üzenetfeldolgozó_ feladat feldolgozza a központból a skálázási egységbe érkező adatokat. Ez a feladat automatikusan elindul, amikor a gyártási végrehajtási számítási feladat telepítve van. Azonban manuálisan is futtathatja, ha a **Termelésvezérlés \> Időszakos feladatok \> Háttérirodai munkaterhelés-kezelés \> Gyártási központból a skálázási egységbe irányuló üzenetfeldolgozó** pontba lép.
 
+[!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

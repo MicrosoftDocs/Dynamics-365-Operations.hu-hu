@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-6-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3dad97e13624449d287ded74e7e25f94eb0dbde3
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: f571f80330d2cc7858ef11271b0466d71aa9709c
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838322"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908011"
 ---
 # <a name="deferred-processing-of-warehouse-work"></a>Raktári munka halasztott feldolgozása
 
@@ -28,7 +28,7 @@ Ez a témakör azt a funkcionalitást ismerteti, amely lehetővé teszi a késle
 
 A halasztott feldolgozási funkciók esetében a raktári dolgozók továbbra is más munkát folytatnak, mialatt a betárolási művelet a háttérben lesz feldolgozva. A halasztott feldolgozás akkor hasznos, ha több munkasort kell feldolgozni, és a dolgozó lehetővé tudja tenni a munka aszinkron feldolgozását. Akkor is hasznos, ha a kiszolgálón előfordulhat a feldolgozási idő megnövekedése alkalomszerűen vagy nem tervezetten, és a megnövekedett feldolgozási idő hatással lehet a felhasználó termelékenységére.
 
-A háttérben történő feldolgozás a SysOperation keretrendszer használatával érhető el. A további tudnivalókat lásd: [A SysOperation keretrendszer áttekintése](https://docs.microsoft.com/dynamicsax-2012/developer/sysoperation-framework-overview).
+A háttérben történő feldolgozás a SysOperation keretrendszer használatával érhető el. A további tudnivalókat lásd: [A SysOperation keretrendszer áttekintése](/dynamicsax-2012/developer/sysoperation-framework-overview).
 
 ## <a name="configuring-the-work-processing-policies"></a>A munkafeldolgozási irányelvek konfigurálása
 

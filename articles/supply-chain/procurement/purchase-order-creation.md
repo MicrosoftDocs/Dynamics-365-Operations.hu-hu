@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f4679ce27b248770b9998914407cd2eb21d7dd16
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 4b19c01afa162cce309443c9270ee1b39aeb0328
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825398"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909156"
 ---
 # <a name="create-purchase-orders"></a>Beszerzési rendelések létrehozása
 
@@ -65,7 +65,7 @@ Egyes esetekben érdemes felosztani a rendelt mennyiséget úgy, hogy a különb
 A költségeket automatikusan hozzá lehet adni a beszerzésirendelés-sorokhoz, amennyiben a szállítóhoz vagy a szállító költségcsoportjához, és a cikkhez vagy a cikk költségcsoportjához be van állítva az automatikus költségek opció. Azonban gyakoribb, hogy a költségeket manuálisan, a rendeléssor szintjén adják meg. Költség hozzáadásához nyissa meg a **Költségek kezelése** lapot a **Költségek kezelése** művelettel a **Pénzügyek** menüpontban, **Sorok** nézetben. A költségek hozzáadása közvetlenül a rendelési sor szintjén azért előnyös, mert így a költségeket készletköltségként lehet elszámolni. Költségkódok beállításához a számlatermék-költségekhez használja a **Cikk** tartozás opciót. Az ilyen típusú költségeket a rendelés megerősítése előtt a beszerzési rendelés fejlécéből a sorokhoz kell rendelni. Érdemes lehet például a költségeket az egyes sorokban szereplő mennyiség alapján hozzárendelni. A költségkategória is befolyásolja, hogyan kerülnek elszámolásra a költségek. A rögzített költségek például egy fix összeget adnak meg, a százalékköltségek pedig a rendeléssor nettó összege alapján százalékként kerülnek kiszámolásra. A beszerzési rendelések terhelésekhez rendelhetők, és a terhelésekben szerepelhet a szállítási költségekre vonatkozó becslés. Ez a költség a terhelésekből a beszerzésirendelés-sorokhoz rendelhető.
 
 ## <a name="purchase-order-actions"></a>Beszerzési rendelés műveletei
-A fejléc és a sorok beszerzési rendeléshez történő hozzáadása után gyakori, hogy további lépéseket kell végrehajtani a beszerzési rendelés megerősítése előtt. Mivel sok lehetőség áll rendelkezésre, érdemes lehet a [Műveletkeresés](../../fin-and-ops/get-started/action-search.md) opciót használni a megfelelő elem megtalálására a menüben.  
+A fejléc és a sorok beszerzési rendeléshez történő hozzáadása után gyakori, hogy további lépéseket kell végrehajtani a beszerzési rendelés megerősítése előtt. Mivel sok lehetőség áll rendelkezésre, érdemes lehet a [Műveletkeresés](../../fin-ops-core/fin-ops/get-started/action-search.md) opciót használni a megfelelő elem megtalálására a menüben.  
 
 A rendelésen a termékek konfigurálhatók úgy, hogy kiegészítő cikkeket tartalmazzanak. A kiegészítő cikkek olyan termékek, vagy más termékekkel együtt lehet vagy kell megvásárolni. A kiegészítő termékek költségmentesen hozzáadhatók, mint kísérő termékek, vagy eldöntheti, hogy hozzáadja-e őket a rendeléshez vagy sem. A kiegészítő elemeket minden hozzáadott rendelési sor után ellenőrizheti. Azonban a kiegészítő termékek ellenőrzése és hozzáadása kényelmesebb lehet a Kiegészítő termékek oldal használatával a **Műveletek oldalon**, ahol az összes rendeléssort egyszerre kezelheti.  
 

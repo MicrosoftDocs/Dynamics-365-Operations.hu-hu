@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: dc53d2c40414993e43ac90ce4f878c7d1c425eb2
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: ae65afbcaca1f2f390520e1108d8363c3e248c60
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5832130"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909353"
 ---
 # <a name="preview-of-dynamics-365-supply-chain-management-10018-may-2021"></a>A Dynamics 365 Supply Chain Management 10.0.18. előzetes verziója (2021. május)
 
@@ -35,15 +35,15 @@ Ez a témakör a Microsoft Dynamics 365 Supply Chain Management 10.0.18 előzete
 
 ## <a name="features-included-in-this-release"></a>A verzióban található funkciók
 
-Ez a kiadás a következő funkciókat tartalmazza: Kövesse a [kiadási tervet](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features) az egyes funkciók hivatalos kiadási dátumainak megtekintéséhez.
+Ez a kiadás a következő funkciókat tartalmazza: Kövesse a [kiadási tervet](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features) az egyes funkciók hivatalos kiadási dátumainak megtekintéséhez.
 
-- Beszerzési rendelések automatikus kiadása (a [Raktárvégrehajtás skálázási egységekkel a felhőben](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-execution-scale-units-cloud) javítása)<br> - További információk: [Raktárkezelés munkaterhelései felhőalapú és peremhálózat-lépték szerinti egységekhez](../cloud-edge/cloud-edge-workload-warehousing.md).
+- Beszerzési rendelések automatikus kiadása (a [Raktárvégrehajtás skálázási egységekkel a felhőben](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-execution-scale-units-cloud) javítása)<br> - További információk: [Raktárkezelés munkaterhelései felhőalapú és peremhálózat-lépték szerinti egységekhez](../cloud-edge/cloud-edge-workload-warehousing.md).
 
-- [Vállalati szintű készletteljesítmény javításai és archiválása](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enterprise-scale-inventory-performance-improvements-archiving)<br> - További információkért lásd: [Készlettranzakciók archiválása](../inventory/archive-inventory-transactions.md)
+- [Vállalati szintű készletteljesítmény javításai és archiválása](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enterprise-scale-inventory-performance-improvements-archiving)<br> - További információkért lásd: [Készlettranzakciók archiválása](../inventory/archive-inventory-transactions.md)
 
-- [Visszatérítések kezelése](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/rebate-management)<br> - További információkért lásd: [Visszatérítés-kezelési modul áttekintése](../rebate-management/rebate-management-overview.md)
+- [Visszatérítések kezelése](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/rebate-management)<br> - További információkért lásd: [Visszatérítés-kezelési modul áttekintése](../rebate-management/rebate-management-overview.md)
 
-- Egyszerűsített felület a csak érkezéskori és távozáskori blokkoláshoz (a [Továbbfejlesztett termelési üzem végrehajtási felület gyártáshoz](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enhanced-production-floor-execution-interface-manufacturing) továbbfejlesztett változata)<br> - További információk: [A termelési üzem végrehajtási felületének konfigurálása](../production-control/production-floor-execution-configure.md).
+- Egyszerűsített felület a csak érkezéskori és távozáskori blokkoláshoz (a [Továbbfejlesztett termelési üzem végrehajtási felület gyártáshoz](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enhanced-production-floor-execution-interface-manufacturing) továbbfejlesztett változata)<br> - További információk: [A termelési üzem végrehajtási felületének konfigurálása](../production-control/production-floor-execution-configure.md).
 
 Ezen szolgáltatások többségét a használat előtt engedélyezni kell a [Funkciók kezelése](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) alatt. A felsorolt szolgáltatások egy része továbbra is előnézeti módban van, mások azonban már általánosan elérhetők. 
 
@@ -70,7 +70,7 @@ Ha további tájékoztatást szeretne kapni a 10.0.18 részét képező frissít
 
 Kíváncsi a bármelyik üzleti alkalmazásával vagy platformjával kapcsolatos, közelgő és a közelmúltban bevezetett lehetőségekre?
 
-Lásd: [Dynamics 365: 2021-as 1. frissítési hullám tervét](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/). A részleteket minden apró információmorzsáig bezárólag egyetlen dokumentumban rögzítettük, amelyet felhasználhat a tervezés során.
+Lásd: [Dynamics 365: 2021-as 1. frissítési hullám tervét](/dynamics365-release-plan/2021wave1/). A részleteket minden apró információmorzsáig bezárólag egyetlen dokumentumban rögzítettük, amelyet felhasználhat a tervezés során.
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Eltávolított és elavult Supply Chain Management szolgáltatások
 

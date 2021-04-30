@@ -2,7 +2,8 @@
 title: ER formátumok konfigurálása a jogi személyenként meghatározott paraméterek használatára
 description: Ez a témakör azt mutatja be, hogyan lehet konfigurálni az Elektronikus jelentéskészítési (ER) formátumokat a jogi személyeknél megadott paraméterek használatára.
 author: NickSelin
-ms.date: 03/24/2021
+manager: AnnBe
+ms.date: 04/02/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: 16eab3ffa7d4a780ec9709f5c8a5c263b1e75365
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 3802675b2fe0615f4c2ad682462a233c67f18f1a
+ms.sourcegitcommit: 74f5b04b482b2ae023c728e0df0eb78305493c6a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751178"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "5853493"
 ---
 # <a name="configure-er-formats-to-use-parameters-that-are-specified-per-legal-entity"></a>ER formátumok konfigurálása a jogi személyenként meghatározott paraméterek használatára
 
@@ -28,7 +29,7 @@ ms.locfileid: "5751178"
 
 ## <a name="overview"></a>Áttekintés
 
-Számos olyan Elektronikus jelentéskészítési (ER) formátumban, amelyet a későbbiekben meg fog tervezni, az adatok szűréséhez olyan értékcsoportok szükségesek, amelyek a példány egyes jogi személyeire specifikusak (például adózási kódok az adótranzakciók szűréséhez). Jelenleg ha az ilyen típusú szűrést ER-formátumban konfigurálja, akkor a jogi személytől függő értékeket (például adózási kódok) a rendszer az ER formátum kifejezéseiben használja az adatszűrési szabályok meghatározásához. Ennek megfelelően az ER formátum jogi személy–specifikus, és a szükséges jelentések előállítása érdekében minden olyan jogi személynél létre kell hoznia az eredeti ER formátum származtatott másolatokat, ahol futtatnia kell az ER formátumot. Minden származtatott ER formátumot úgy kell módosítani, hogy jogiszemély-specifikus értékeket kell behúzni, új alapra helyezni, ha az eredeti (alap) verzió frissült, a tesztkörnyezetből exportálni, és termelési környezetbe importálni, amikor a termelési használatra telepíteni kell, és így tovább. Ennek megfelelően az ilyen típusú konfigurált ER megoldás karbantartása elég összetett és időigényes több okból is:
+Számos olyan Elektronikus jelentéskészítési (ER) formátumban, amelyet a későbbiekben meg fog tervezni, az adatok szűréséhez olyan értékcsoportok szükségesek, amelyek a példány egyes jogi személyeire specifikusak (például adózási kódok az adótranzakciók szűréséhez). Jelenleg ha az ilyen típusú szűrést ER-formátumban konfigurálja, akkor a jogi személytől függő értékeket (például adózási kódok) a rendszer az ER formátum kifejezéseiben használja az adatszűrési szabályok meghatározásához. Ennek megfelelően az ER formátum jogi személy–specifikus, és a szükséges jelentések előállítása érdekében minden olyan jogi személynél létre kell hoznia az eredeti ER formátum származtatott másolatokat, ahol futtatnia kell az ER formátumot. Minden származtatott ER formátumot úgy kell módosítani, hogy jogiszemély-specifikus értékeket kell behúzni, új alapra helyezni, ha az eredeti (alap) verzió frissült, a tesztkörnyezetből exportálni, és termelési környezetbe importálni, amikor a termelési használatra telepíteni kell, és így tovább. Ennek megfelelően az ilyen típusú konfigurált ER megoldás karbantartása összetett és időigényes több okból is:
 
 -   Minél több jogi személy van, annál több ER formátumkonfigurációt kell karbantartani.
 -   Az ER konfigurációk karbantartása megköveteli, hogy az üzleti felhasználók rendelkeznek ER-ismeretekkel.
@@ -86,7 +87,7 @@ Ebben a példában egy konfigurációt hoz létre a Litware, Inc. mintavállalat
 
     ![A Model.Data.Summary adatforrás az összes adótranzakciót visszadja](./media/RCS-AppSpecParms-ReviewFormat-Data2Fld.PNG)
 
-    A **Model.Data.Summary.Level** számított mezője úgy van beállítva, hogy a tartalmaz egy ER-kifejezést. Ne feledje, hogy az adókódokat (**VAT19**, **InVAT19**, **VAT7**, **InVAT7**, **THIRD**, és **InVAT0**) beégették ebbe a konfigurációba. Ennek megfelelően ez az ER formátum függ attól a jogi személytől, ahol ezeket az adókódokat konfigurálták.
+    A **Model.Data.Summary.Level** számított mezője úgy van beállítva, hogy a tartalmaz egy ER-kifejezést. Az adókódokat (**VAT19**, **InVAT19**, **VAT7**, **InVAT7**, **THIRD**, és **InVAT0**) beégették ebbe a konfigurációba. Ennek megfelelően ez az ER formátum függ attól a jogi személytől, ahol ezeket az adókódokat konfigurálták.
 
     ![A Model.Data.Summary.Level számított mező előre megadott adókódokkal](./media/RCS-AppSpecParms-ReviewFormat-LevelFld.PNG)
 
@@ -153,12 +154,12 @@ Ezután új adatforrást ad hozzá, amellyel megadhatja, hogy az üzleti felhasz
 1.  Válassza a **Leképezés** lap **Hozzáadás** elemét.
 2.  Válassza a **Formátumfelsorolás\Keresés** elemet.
 
-    Most megállapította, hogy minden egyes szabály, amelyet az üzleti felhasználók megadnak az adózási szint felismeréséhez, egy ER formátumfelsorolási értéket ad majd vissza. Figyelje meg, hogy a **Keresés** adatforrástípus az **Adatmodell**, valamint **Dynamics 365 for Operations** blokkokban érhető el, a **Formátumfelsorolás** blokk mellett. Ennélfogva az ER adatmodellek felsorolásai és az alkalmazásfelsorolások segítségével megadhatja, hogy milyen típusú értékeket ad vissza a program az adott típusú adatforrásokhoz.
+    Most megállapította, hogy minden egyes szabály, amelyet az üzleti felhasználók megadnak az adózási szint felismeréséhez, egy ER formátumfelsorolási értéket ad majd vissza. Figyelje meg, hogy a **Keresés** adatforrástípus az **Adatmodell**, valamint **Dynamics 365 for Operations** blokkokban érhető el, a **Formátumfelsorolás** blokk mellett. Ennélfogva az ER adatmodellek felsorolásai és az alkalmazásfelsorolások segítségével megadhatja, hogy milyen típusú értékeket ad vissza a program az adott típusú adatforrásokhoz. A **Keresés** adatforrásokkal kapcsolatos további tudnivalókat lásd: [Keresés adatforrások konfigurálása az ER alkalmazásspecifikus paraméterek funkció használatához](er-lookup-data-sources.md).
     
 3.  A **Név** mezőbe írja be a **Választó** szót.
 4.  A **Formátumfelsorolás** mezőben válassza a következőt: **Adózási szintek listája**.
 
-    Most megadta, hogy minden egyes, az adott adatforrásban megadott szabály esetén az üzleti felhasználónak ki kell választania az **Adózási szintek listája** formátumfelsorolás egyik értékét visszaadott értékként.
+    Megadta, hogy minden egyes, az adott adatforrásban megadott szabály esetén az üzleti felhasználónak ki kell választania az **Adózási szintek listája** formátumfelsorolás egyik értékét visszaadott értékként.
     
 5.  Válassza a **Keresés szerkesztése** lehetőséget.
 6.  Válassza az **Oszlopok** elemet.
@@ -190,7 +191,7 @@ Ezután új adatforrást ad hozzá, amellyel megadhatja, hogy az üzleti felhasz
     
     ![Tervező lap formázása új adatforrással](./media/RCS-AppSpecParms-ConfigureFormat-SelectorFld.PNG)
 
-    Ne felejtse el, hogy a konfigurált szabályok értékelése a szabályok feltételeinek meghatározására kiválasztott mezők adattípusától függ. Ha a **numerikus** vagy a **dátum** típusú adattípusú mezőként beállított mezőt választja, akkor a feltételek eltérnek a **Karakterlánc** adattípusnál korábban leírt feltételektől. A **numerikus** és a **dátum** típusú mezők esetében a szabályt értéktartományként kell megadni. A szabály feltétele akkor tekinthető teljesítettnek, ha egy adatforrásnak átadott érték a konfigurált tartományban van.
+    A konfigurált szabályok értékelése a szabályok feltételeinek meghatározására kiválasztott mezők adattípusától függ. Ha a **numerikus** vagy a **dátum** típusú adattípusú mezőként beállított mezőt választja, akkor a feltételek eltérnek a **Karakterlánc** adattípusnál korábban leírt feltételektől. A **numerikus** és a **dátum** típusú mezők esetében a szabályt értéktartományként kell megadni. A szabály feltétele akkor tekinthető teljesítettnek, ha egy adatforrásnak átadott érték a konfigurált tartományban van.
     
     A következő ábrán egy példa látható az ilyen típusú beállításra. A **Karakterlánc adattípus** **Model.Data.Tax.Code** mezőjén kívül a **Valódi** adattípus **Modell.Tax.Summary.Base** mezőjét is használhatja a keresési adatforrás feltételeinek megadására.
     
@@ -307,6 +308,8 @@ Ha meg szeretné tudni, hogyan kell a konfigurált **LE adatok keresésének tan
 [Képletszerkesztő az Elektronikus jelentéskészítésben](general-electronic-reporting-formula-designer.md)
 
 [Az ER-formátum paramétereinek beállítása jogi személyenként](er-app-specific-parameters-set-up.md)
+
+[Konfigurálja a keresési adatforrásokat az ER-alkalmazásspecifikus paraméterek funkció használatára](er-lookup-data-sources.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

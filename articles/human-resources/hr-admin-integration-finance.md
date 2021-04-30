@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a81e5c56e219ec9d7fb95ac6cc053fb13601f0f2
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: ac4c15b4dbf60f378ba325adedb377e12585481a
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5801167"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5889956"
 ---
 # <a name="configure-integration-with-finance"></a>A Finance szolgáltatással való integráció konfigurálása
 
@@ -29,7 +29,7 @@ ms.locfileid: "5801167"
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-A Dynamics 365 Human Resources integrációjához Dynamics 365 Finance megoldással használhatja A Human Resources to Finance integrációs folyamat sablont az [Adatintegrátorban](https://docs.microsoft.com/powerapps/administrator/data-integrator). A Human Resources to Finance sablon lehetővé teszi a feladatok, beosztások és dolgozók adatáramlását. A sablon lehetővé teszi, hogy az adatok a Human Resources alkalmazásból a Finance alkalmazásba áramoljanak de nem teszik lehetővé a Finance alkalmazásból a Human Resources alkalmazásba az áramlást.
+A Dynamics 365 Human Resources integrációjához Dynamics 365 Finance megoldással használhatja A Human Resources to Finance integrációs folyamat sablont az [Adatintegrátorban](/powerapps/administrator/data-integrator). A Human Resources to Finance sablon lehetővé teszi a feladatok, beosztások és dolgozók adatáramlását. A sablon lehetővé teszi, hogy az adatok a Human Resources alkalmazásból a Finance alkalmazásba áramoljanak de nem teszik lehetővé a Finance alkalmazásból a Human Resources alkalmazásba az áramlást.
 
 ![A Human Resources to Finance integrációs folyamata](./media/hr-admin-integration-finance-flow.png)
 
@@ -248,7 +248,7 @@ A Human Resources és a Finance közötti integráció megkísérli a rekordok e
 
 Probléma merülhet fel olyan **Dolgozó** esetén, amely a **Személyzeti szám** használatával hozza létre az egyezést, illetve a **Beosztásokat**. A feladatok nem használnak számsorozatokat. Ennek eredményeképpen, ha ugyanaz a feladatazonosító a Human Resources alkalmazásban és a Finance modulban is szerepel, a Human Resources-adatok felülírják a Dynamics 365 Finance rendszer adatait. 
 
-Ha meg szeretné akadályozni az ismétlődő azonosítókkal kapcsolatos problémákat, adjon hozzá egy előtagot a [számsorozathoz](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview?toc=/dynamics365/unified-operations/talent/toc.json), vagy állítson be egy kezdő számot a számsorozathoz, amely túllépi a másik rendszer tartományát. 
+Ha meg szeretné akadályozni az ismétlődő azonosítókkal kapcsolatos problémákat, adjon hozzá egy előtagot a [számsorozathoz](/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json), vagy állítson be egy kezdő számot a számsorozathoz, amely túllépi a másik rendszer tartományát. 
 
 A dolgozó címében használt helyazonosító nem része számsorozatnak. A dolgozói cím Human Resources alkalmazásból a Finance alkalmazásba való integrálása során ha a dolgozói cím már létezik a Finance modulban, akkor ismétlődő címrekord jön létre. 
 

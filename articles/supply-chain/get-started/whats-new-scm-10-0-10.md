@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 882e9ba310930cd6a9c638c60d5be7edc6809335
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5e63c5f3f327870b616eb93f80544c4f1e89980e
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821201"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909621"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10010-may-2020"></a>Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.10 szolgáltatásban (2020. május)
 
@@ -33,19 +33,19 @@ Ez a témakör a Microsoft Dynamics 365 Supply Chain Management 10.0.10 új vagy
 
 ## <a name="features-included-in-this-release"></a>A verzióban található funkciók
 
-Ez a kiadás a következő funkciókat tartalmazza: A funkciók címei további információkra mutatnaka a [Kiadási tervek](https://docs.microsoft.com/dynamics365/release-plans/) webhelyen. A további hivatkozások az adott funkcióhoz jelenleg elérhető további dokumentációkat és videókat mutatnak be. Ezen szolgáltatások többségét a használat előtt engedélyezni kell a [Funkciók kezelése](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) alatt.
+Ez a kiadás a következő funkciókat tartalmazza: A funkciók címei további információkra mutatnaka a [Kiadási tervek](/dynamics365/release-plans/) webhelyen. A további hivatkozások az adott funkcióhoz jelenleg elérhető további dokumentációkat és videókat mutatnak be. Ezen szolgáltatások többségét a használat előtt engedélyezni kell a [Funkciók kezelése](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) alatt.
 
-- [A meglévő ténylegessúly-címkék használatának javítása a raktárkezelési modulban](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/enhancement-use-existing-catch-weight-tags-warehouse-management)
+- [A meglévő ténylegessúly-címkék használatának javítása a raktárkezelési modulban](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/enhancement-use-existing-catch-weight-tags-warehouse-management)
 
-- [A Raktárkezelés modul bejövő terheléskezelésének továbbfejlesztései](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/warehouse-management-inbound-load-management-enhancement)<br> - További információ: [Beszerzési rendelések bejövő rakományának kezelése a raktárban](../warehousing/inbound-load-handling.md).
+- [A Raktárkezelés modul bejövő terheléskezelésének továbbfejlesztései](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/warehouse-management-inbound-load-management-enhancement)<br> - További információ: [Beszerzési rendelések bejövő rakományának kezelése a raktárban](../warehousing/inbound-load-handling.md).
 
-- [Címkenyomtatással kapcsolatos fejlesztések a raktárkezeléshez](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/label-printing-enhancements-warehouse-management)<br> - További információ: [Dokumentumirányítási elrendezés azonosítótábla-címkékhez](../warehousing/document-routing-layout-for-license-plates.md).
+- [Címkenyomtatással kapcsolatos fejlesztések a raktárkezeléshez](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/label-printing-enhancements-warehouse-management)<br> - További információ: [Dokumentumirányítási elrendezés azonosítótábla-címkékhez](../warehousing/document-routing-layout-for-license-plates.md).
 
-- [Az Alaptervezés olyan cikkeket tartalmaz, amelyek aktuális készlettel rendelkeznek, amikor előfeldolgozási szűrők engedélyezve vannak](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/master-planning-include-items-on-hand-when-pre-processing-filters-are-enabled)
+- [Az Alaptervezés olyan cikkeket tartalmaz, amelyek aktuális készlettel rendelkeznek, amikor előfeldolgozási szűrők engedélyezve vannak](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/master-planning-include-items-on-hand-when-pre-processing-filters-are-enabled)
 
-- [Új adatentitások a termelési területhez](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/new-data-entities-manufacturing-area)
+- [Új adatentitások a termelési területhez](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/new-data-entities-manufacturing-area)
 
-- [Raktári folyamatok minőségkezelése](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/quality-management-warehouse-processes)<br> - További információ: [Raktári folyamatok minőségkezelése](../inventory/quality-management-for-warehouses-processes.md).
+- [Raktári folyamatok minőségkezelése](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/quality-management-warehouse-processes)<br> - További információ: [Raktári folyamatok minőségkezelése](../inventory/quality-management-for-warehouses-processes.md).
 
 ## <a name="additional-resources"></a>További erőforrások
 
@@ -61,7 +61,7 @@ Ha további tájékoztatást szeretne kapni a frissítésben található hibajav
 
 Kíváncsi a bármelyik üzleti alkalmazásával vagy platformjával kapcsolatos, közelgő és a közelmúltban bevezetett lehetőségekre?
 
-Lásd: [Dynamics 365: 2020-as 1. frissítési hullám tervét](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/index). A részleteket minden apró információmorzsáig bezárólag egyetlen dokumentumban rögzítettük, amelyet felhasználhat a tervezés során.
+Lásd: [Dynamics 365: 2020-as 1. frissítési hullám tervét](/dynamics365-release-plan/2020wave1/index). A részleteket minden apró információmorzsáig bezárólag egyetlen dokumentumban rögzítettük, amelyet felhasználhat a tervezés során.
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Eltávolított és elavult Supply Chain Management szolgáltatások
 

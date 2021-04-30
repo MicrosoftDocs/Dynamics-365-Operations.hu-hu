@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: bacc27c1a9066892c51110d28ba9a2ad26bebe77
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: b740da1a8a349f4a1a80b41bf717c388fd3db0c0
+ms.sourcegitcommit: d18d9cdb175c9d42eafbed66352c24b2aa94258b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839295"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5881832"
 ---
 # <a name="archive-inventory-transactions"></a>Készlettranzakciók archiválása
 
@@ -38,7 +38,7 @@ Ha egy `itemId` és `inventDimId` kombináció csak egy bevételezési vagy kibo
 
 ## <a name="turn-on-the-feature-in-your-system"></a>A funkció bekapcsolása a rendszerben
 
-Ha a rendszer még nem tartalmazza az ebben a témakörben leírt funkciókat, lépjen a [Funkciókezelés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) lehetőségre, és a kapcsolja be az *Készlettranzakciók archívuma* funkciót.
+Ha a rendszer még nem tartalmazza az ebben a témakörben leírt funkciókat, lépjen a [Funkciókezelés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) lehetőségre, és a kapcsolja be az *Készlettranzakciók archívuma* funkciót. Ne feledje, hogy ezt a funkciót engedélyezés után nem lehet letiltani.
 
 ## <a name="things-to-consider-before-you-archive-inventory-transactions"></a>Megfontolandó szempontok a készlettranzakciók archiválását megelőzően
 

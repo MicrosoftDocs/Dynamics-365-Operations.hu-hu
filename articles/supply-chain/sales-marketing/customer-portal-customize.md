@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 16d5c13c0fbff8c5033b0d1e9dd0d07851521126
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 6d4cc52a90b25406080032c7a98caa59f53ce188
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840773"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909000"
 ---
 # <a name="customize-and-use-the-customer-portal"></a>Ügyfélportál testre szabása és használata
 
@@ -33,14 +33,14 @@ A Ügyfélportál néhány weblapot és műveletet kínál már gyári állapotb
 
 A következő témakörökben megismerkedhet a Power Apps portálok alapjaival és a portálok testreszabásával:
 
-- [Sablonok használata](https://docs.microsoft.com/powerapps/maker/portals/work-with-templates) – Ez a témakör általános áttekintést nyújt a Power Apps-portálok működéséről, valamint a portálok egyszerű testreszabásainak végrehajtásáról.
-- [Portáltartalom kezelése](https://docs.microsoft.com/dynamics365/portals/manage-portal-content) – Ez a témakör azt mutatja be, hogyan lehet kezelni és testreszabni a portál felületén található tartalmakat.
-- [CSS-szerkesztés](https://docs.microsoft.com/powerapps/maker/portals/edit-css) – Ez a témakör a portál felhasználói felületének (UI) bonyolultabb testreszabásához nyújt segítséget.
-- [Téma létrehozás a portálhoz](https://docs.microsoft.com/dynamics365/portals/create-theme) – Ez a témakör segít létrehozni egy UI-témát a portálhoz.
-- [A portál tartalmának egyszerű létrehozása és közzététele](https://docs.microsoft.com/dynamics365/portals/create-expose-portal-content) – Ez a témakör a portálon használt mögöttes adatok és táblák kezelését segíti.
-- [A portálon használható kapcsolattartó konfigurálása](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-contacts) – Ez a témakör azt mutatja be, hogyan lehet létrehozni és testreszabni a felhasználói szerepköröket, valamint a biztonsági és a hitelesítés működését a Power Apps-portálokon.
-- [A táblák űrlapjaihoz és a portálokon található webképernyőkhez tartozó megjegyzések konfigurálása](https://docs.microsoft.com/powerapps/maker/portals/configure-notes) – Ez a témakör azt mutatja be, hogyan lehet dokumentumokat és további tárolóhelyeket hozzáadni a portálhoz.
-- [Hibakezelés a portál webhelyéhez](https://docs.microsoft.com/powerapps/maker/portals/admin/view-portal-error-log) – Ez a témakör azt mutatja be, hogyan lehet megtekinteni a portál hibanaplóit, és tárolni azokat a Microsoft Azure Blob tárolási fiókban.
+- [Sablonok használata](/powerapps/maker/portals/work-with-templates) – Ez a témakör általános áttekintést nyújt a Power Apps-portálok működéséről, valamint a portálok egyszerű testreszabásainak végrehajtásáról.
+- [Portáltartalom kezelése](/dynamics365/portals/manage-portal-content) – Ez a témakör azt mutatja be, hogyan lehet kezelni és testreszabni a portál felületén található tartalmakat.
+- [CSS-szerkesztés](/powerapps/maker/portals/edit-css) – Ez a témakör a portál felhasználói felületének (UI) bonyolultabb testreszabásához nyújt segítséget.
+- [Téma létrehozás a portálhoz](/dynamics365/portals/create-theme) – Ez a témakör segít létrehozni egy UI-témát a portálhoz.
+- [A portál tartalmának egyszerű létrehozása és közzététele](/dynamics365/portals/create-expose-portal-content) – Ez a témakör a portálon használt mögöttes adatok és táblák kezelését segíti.
+- [A portálon használható kapcsolattartó konfigurálása](/powerapps/maker/portals/configure/configure-contacts) – Ez a témakör azt mutatja be, hogyan lehet létrehozni és testreszabni a felhasználói szerepköröket, valamint a biztonsági és a hitelesítés működését a Power Apps-portálokon.
+- [A táblák űrlapjaihoz és a portálokon található webképernyőkhez tartozó megjegyzések konfigurálása](/powerapps/maker/portals/configure-notes) – Ez a témakör azt mutatja be, hogyan lehet dokumentumokat és további tárolóhelyeket hozzáadni a portálhoz.
+- [Hibakezelés a portál webhelyéhez](/powerapps/maker/portals/admin/view-portal-error-log) – Ez a témakör azt mutatja be, hogyan lehet megtekinteni a portál hibanaplóit, és tárolni azokat a Microsoft Azure Blob tárolási fiókban.
 
 ## <a name="customize-the-order-creation-process"></a>A rendelés létrehozási folyamatának testreszabása
 
@@ -88,7 +88,7 @@ Itt megtekintheti a rendelésnek az Ügyfélportálról történő elküldésér
 
 A zökkenőmentes felhasználói élmény biztosításához a Ügyfélportál automatikusan kitölti az értékeket több kötelező mező esetében. Ezek az értékek a rendelést beküldő vevő kapcsolattartói rekordjának adatain alapulnak.
 
-Minden olyan [kapcsolattartói sorhoz](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-contacts), amely egy olyan vevőhöz tartozik, és az Ügyfélportált a rendelések elküldésére fogja használni, meg kell adni értékeket a következő kötelező mezőkben. Ellenkező esetben hibák lépnek fel.
+Minden olyan [kapcsolattartói sorhoz](/powerapps/maker/portals/configure/configure-contacts), amely egy olyan vevőhöz tartozik, és az Ügyfélportált a rendelések elküldésére fogja használni, meg kell adni értékeket a következő kötelező mezőkben. Ellenkező esetben hibák lépnek fel.
 
 - **Vállalat** A jogi személyt, amelyhez a rendelés tartozik
 - **Potenciális vevő** – A rendeléshez kapcsolódó ügyfélfiók
@@ -134,16 +134,16 @@ A cikkek esetében a következő oszlopok kötelezők:
 
 Győződjön meg róla, hogy a Ügyfélportálja valamilyen módon az összes oszlophoz elküld értékeket.
 
-Ha oszlopokat kíván felvenni a lapra, vagy el szeretné távolítani az oszlopokat, tekintse meg a következő témakört: [Gyors létrehozási űrlapok létrehozása vagy szerkesztése egyszerű adatbeviteli élményhez](https://docs.microsoft.com/dynamics365/customerengagement/on-premises/customize/create-edit-quick-create-forms).
+Ha oszlopokat kíván felvenni a lapra, vagy el szeretné távolítani az oszlopokat, tekintse meg a következő témakört: [Gyors létrehozási űrlapok létrehozása vagy szerkesztése egyszerű adatbeviteli élményhez](/dynamics365/customerengagement/on-premises/customize/create-edit-quick-create-forms).
 
 Ha módosítani szeretné az oszlopok előbeállítását, és azt, hogy hogyan legyenek beállítva az értékek a lap mentésekor, tekintse át a következő információkat a Power Apps portálok dokumentációjában:
 
-- [Mező előzetes kitöltése](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-web-form-metadata#prepopulate-field)
-- [Érték beállítása mentéskor](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-web-form-metadata#set-value-on-save)
+- [Mező előzetes kitöltése](/powerapps/maker/portals/configure/configure-web-form-metadata#prepopulate-field)
+- [Érték beállítása mentéskor](/powerapps/maker/portals/configure/configure-web-form-metadata#set-value-on-save)
 
 ## <a name="customize-the-home-page"></a>A kezdőlap testreszabása
 
-A Ügyfélportál összes vezérlője beépített Power Apps portálvezérlő. Ezeket úgy szabhatja testre, ha követi a [Lap létrehozása](https://docs.microsoft.com/powerapps/maker/portals/compose-page) szakasz lépéseit a Power Apps portálok dokumentációjában.
+A Ügyfélportál összes vezérlője beépített Power Apps portálvezérlő. Ezeket úgy szabhatja testre, ha követi a [Lap létrehozása](/powerapps/maker/portals/compose-page) szakasz lépéseit a Power Apps portálok dokumentációjában.
 
 Az Ügyfélportál sablonban szereplő egyetlen egyéni vezérlő a kezdőlapon lévő csempék létrehozásához használatos.
 
@@ -151,7 +151,7 @@ Az Ügyfélportál sablonban szereplő egyetlen egyéni vezérlő a kezdőlapon 
 
 A csempék módosításához kövesse az alábbi lépéseket.
 
-1. Nyissa meg a [Portálkezelő alkalmazást](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-portal).
+1. Nyissa meg a [Portálkezelő alkalmazást](/powerapps/maker/portals/configure/configure-portal).
 1. A bal oldali navigációs ablakban válassza ki az **Oldalsablonok** lehetőséget.
 
     ![A portálkezelő navigációs panel](media/customer-portal-nav.png "A portálkezelő navigációs panel")
@@ -167,11 +167,11 @@ A csempék módosításához kövesse az alábbi lépéseket.
 
 A Ügyfélportál beállításával és testreszabásával kapcsolatos további tudnivalókat lásd a következő forrásokban:
 
-- [Power Apps portálok dokumentációja](https://docs.microsoft.com/powerapps/maker/portals/overview)
+- [Power Apps portálok dokumentációja](/powerapps/maker/portals/overview)
 - [Kettős írás dokumentációja](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page.md)
-- [A portál életciklusáról](https://docs.microsoft.com/powerapps/maker/portals/admin/portal-lifecycle)
-- [Portál frissítése](https://docs.microsoft.com/powerapps/maker/portals/admin/upgrade-portal)
-- [Portál konfigurációjának áttelepítése](https://docs.microsoft.com/powerapps/maker/portals/admin/migrate-portal-configuration)
+- [A portál életciklusáról](/powerapps/maker/portals/admin/portal-lifecycle)
+- [Portál frissítése](/powerapps/maker/portals/admin/upgrade-portal)
+- [Portál konfigurációjának áttelepítése](/powerapps/maker/portals/admin/migrate-portal-configuration)
 - [Megoldás életciklus-kezelése: Dynamics 365 for Customer Engagement alkalmazásokhoz](https://www.microsoft.com/download/details.aspx?id=57777)
 
 
