@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: smiller
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 648a793b15df5597c0c4c6f2f972e28bb0ce79a5
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: ef556c44ac0241f19e9e1891fb3ce32294667827
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750914"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909863"
 ---
 # <a name="before-you-buy"></a>Vásárlás előtti teendők
 
@@ -86,7 +86,7 @@ További erőforrásokhoz lásd:
 
 ## <a name="step-four-learn-about-fasttrack-and-plan-your-deployment"></a>4\. lépés: A FastTrack megismerése és a telepítés megtervezése
 
-A Microsoft FastTrack for Dynamics 365 az ügyfelek sikerességére koncentráló szolgáltatás, amelynek célja, hogy zökkenőmentessé tegye az átmenetet a Dynamics 365 szolgáltatásba annak érdekében, hogy Ön gyorsabban realizálhassa az üzleti értéket. Ha részt vesz a FastTrack programban, akkor útmutatást nyújtunk a bevált eljárásokról, továbbá arról, hogy miként tervezheti meg a sikeres bevezetéseket. Megismerhet továbbá módszereket is arról, hogy miként engedélyezhet új felhasználókat, illetve bővíthet funkciókat – mindezt az Ön saját tempójában. Továbbá hozzáférése lesz a Microsoft mérnökeinek segítségéhez, akik elkötelezettek az iránt, hogy a Dynamics 365 használata sikertörténet legyen Önnek. További információért lásd: [Microsoft FastTrack](fasttrack-dynamics-365-overview.md).
+A Microsoft FastTrack for Dynamics 365 az ügyfelek sikerességére koncentráló szolgáltatás, amelynek célja, hogy zökkenőmentessé tegye az átmenetet a Dynamics 365 szolgáltatásba annak érdekében, hogy Ön gyorsabban realizálhassa az üzleti értéket. Ha részt vesz a FastTrack programban, akkor útmutatást nyújtunk a bevált eljárásokról, továbbá arról, hogy miként tervezheti meg a sikeres bevezetéseket. Megismerhet továbbá módszereket is arról, hogy miként engedélyezhet új felhasználókat, illetve bővíthet funkciókat – mindezt az Ön saját tempójában. Továbbá hozzáférése lesz a Microsoft mérnökeinek segítségéhez, akik elkötelezettek az iránt, hogy a Dynamics 365 használata sikertörténet legyen Önnek. További információért lásd: [Microsoft FastTrack](/dynamics365/fasttrack/).
 
 ## <a name="if-you-are-upgrading-from-dynamics-ax-2012-or-migrating-from-ax-2009"></a>Ha a Dynamics AX 2012-ről frissít, illetve az AX 2009-ről tér át
 

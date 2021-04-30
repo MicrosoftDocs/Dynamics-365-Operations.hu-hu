@@ -2,7 +2,8 @@
 title: Az online rendelések áfájának konfigurálása
 description: Ez a témakör áttekintést nyújt a különböző online rendeléstípusok áfacsoportjának kiválasztásáról a Dynamics 365 Commerce alkalmazásban.
 author: gvrmohanreddy
-ms.date: 11/16/2020
+manager: AnnBe
+ms.date: 04/02/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,59 +16,62 @@ ms.search.industry: Retail
 ms.author: gmohanv
 ms.search.validFrom: 2020-11-01
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 68b7e59a1e1ea18bdcd4e7a9117e4892407f40ff
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 8df939c1a566fb63bc53e455cc6c2aa85956ac79
+ms.sourcegitcommit: 583801af75c50915ea5ffc60e831fb617d045533
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791847"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "5853811"
 ---
 # <a name="configure-sales-tax-for-online-orders"></a>Az online rendelések áfájának konfigurálása
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör áttekintést nyújt a különböző online rendeléstípusok áfacsoportjának kiválasztásáról. 
+Ez a témakör áttekintést nyújt a különböző online rendeléstípusok áfacsoport-kiválasztásáról, cél alapú vagy vevői számla alapú adóbeállításokkal. 
 
-Előfordulhat, hogy az e-kereskedelmi csatornája támogatni szeretné az olyan lehetőségeket, mint a kézbesítés vagy az online rendelések felvétele. Az áfa alkalmazhatósága az online felhasználók által kiválasztott beállításon alapul. Amikor a webhely egyik ügyfele úgy dönt, hogy online vásárol egy cikket, és egy címre szállíttatja, az áfa meghatározása a vevő szállítási címéhez tartozó adócsoport beállításától függ. Amikor egy vevő úgy dönt, hogy egy megvásárolt cikket vesz fel egy üzletben, az áfa meghatározása a felvételi üzlet adócsoportjának beállítása alapján történik. 
+Előfordulhat, hogy azt szeretné, hogy az e-kereskedelmi csatornája támogassa az olyan lehetőségeket, mint a kézbesítés vagy az online rendelések felvétele. Az áfa alkalmazhatósága az online ügyfelek által kiválasztott beállításon alapul. 
 
-## <a name="orders-shipped-to-a-customer-address"></a>Vevői címre szállított rendelések 
+## <a name="destination-based-taxes-for-online-orders"></a>Online rendelések célon alapuló adói
 
-A vevői címekre szállítandó online rendelésekre kivetett adókat általában a cél határozza meg. Minden áfacsoport rendelkezik egy kiskereskedelmi célalapú adókonfigurációval, amelyben a vállalkozás hierarchikus formában definiálhatja a céladatokat, például a megye/régió, az állam, a megye és a város értékét. Online rendelés leadásakor a Commerce adómotor a rendelés minden sorcikk szállítási címét használja, és megkeresi az áfacsoportokat a megfelelő célalapú adózási feltételekkel. Például egy olyan online rendelés esetén, amelynek sorcikkének szállítási címe San Franciscóban (Kalifornia) van, az adómotor megkeresi Kalifornia áfacsoportját és áfakódját, majd ennek megfelelően kiszámítja az adót minden sorra vonatkozóan.  
+A vevői címekre szállítandó online rendelésekre kivetett adókat általában a cél határozza meg. Minden áfacsoport rendelkezik egy kiskereskedelmi célalapú adókonfigurációval, amelyben a vállalkozás hierarchikus formában definiálhatja a céladatokat, például a megye vagy régió, az állam, a megye és a város értékét.
 
-## <a name="customer-based-tax-groups"></a>Vevőalapú adócsoportok
+### <a name="orders-delivered-to-customer-address"></a>Vevői címre szállított rendelések
 
-A Commerce központban két helyen van konfigurálva vevőadó-csoportok:
+Online rendelés leadásakor a Commerce adómotor a rendelés minden sorcikk szállítási címét használja, és megkeresi az áfacsoportokat a megfelelő célalapú adózási feltételekkel. Például egy olyan online rendelés esetén, amelynek sorcikkének szállítási címe San Franciscóban (Kalifornia) van, az adómotor megkeresi Kalifornia áfacsoportját és áfakódját, majd ennek megfelelően kiszámítja az adót minden sorra vonatkozóan.
 
-- **Vevő profilja**
-- **A vevő szállítási címe**
+### <a name="order-pick-up-in-store"></a>Rendelésfelvétel az üzletben
 
-### <a name="if-a-customers-profile-has-a-tax-group-configured"></a>Ha egy vevő profiljához be van állítva egy adócsoport
+Az üzletbeli vagy a járdaszéli felvétellel megadott csomagfelvételeket megadó rendeléssorok esetén a kiválasztott átvételi áruház adócsoportja lesz alkalmazva. Az áfa beállításáról az [Üzletek egyéb adóbeállításainak megadása](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-other-tax-options-for-stores) című témakörben talál további tudnivalókat.
 
-Előfordulhat, hogy a központban lévő vevői profilrekordhoz konfigurálva van egy áfacsoport, azonban az online rendelések esetében a vevő profiljában beállított áfacsoportot az adómotor nem fogja használni. 
+## <a name="customer-account-based-taxes-for-online-orders"></a>Online rendelések vevői számlán alapuló adói
 
-### <a name="if-a-customers-shipping-address-has-a-tax-group-configured"></a>Ha egy vevő szállítási címéhez be van állítva egy adócsoport
+Előfordulhat olyan üzleti helyzet, amikor áfacsoportot szeretne beállítani a Commerce központjában meghatározott vevői számla alapján. A központnak két helye van, ahol a vevői számlához be lehet állítani az áfa beállítását. Ezek eléréséhez először menjen ide: **Kiskereskedelem és kereskedelem \> Vevők \> Minden vevők**, majd ki kell választania egy vevőt.
 
-Ha a vevő szállítási cím rekordjánál adócsoport van konfigurálva, és egy online rendelést (vagy sorelemet) szállítanak a vevő szállítási címére, akkor a vevő címrekordjában beállított adócsoportot az adómotor fogja használni az adószámítási célokra.
+A központnak két helye van, ahol a vevői számlához be lehet állítani az áfa beállítását:
 
-#### <a name="configure-a-tax-group-for-a-customers-shipping-address-record"></a>Adócsoport konfigurálása egy vevő szállítási cím rekordjához
+- **Áfacsoport** a vevő adatai lap **Számla és szállítás** gyorslapján. 
+- **Áfa** az **Általános** gyorslapján a **Cím kezelése** lapnak. Ha a vevő adatai lapról szeretne eljutni ide, válasszon ki egy címet a **Címek** gyorslapon, majd válassza a **Speciális** lehetőséget.
 
-Ha egy vevő szállítási cím rekordjának adócsoportját szeretné konfigurálni a Commerce-központban, kövesse az alábbi lépéseket.
+> [!TIP]
+> Online vevői rendelések esetén, ha csak a célon alapuló adókat szeretné alkalmazni, és a vevői számlán alapuló adókat szeretné elkerülni, győződjön meg arról, hogy az **Áfacsoport** mező üres a vevői adatok lap **Számla és szállítás** gyorslapján. Annak érdekében, hogy az online csatornával regisztráló új vevők ne örököljék az áfacsoport beállításait az alapértelmezett vevő- vagy vevőcsoport-beállításoktól, győződjön meg arról, hogy az online csatorna alapértelmezett vevőbeállításai és vevőcsoport-beállításai (**Kiskereskedelem és kereskedelem \> Vevők \> Vevőcsoportok**) is üresen maradnak az **Áfacsoport** mezőben.
 
-1. Nyissa meg az **Összes ügyfél** lehetőséget, és válassza ki a kívánt ügyfelet. 
-1. A **Címek** gyorslapon válassza ki a kívánt címet, majd válassza a **További beállítások \> Speciális** lehetőséget. 
-1. A **Címek kezelése** oldal **Általános** lapján szükség szerint állítsa be az áfaértékét.
+## <a name="determine-destination-based-tax-or-customer-account-based-tax-applicability"></a>Célon alapuló adó vagy vevői számla alapú adó alkalmazhatóságának meghatározása 
 
-> [!NOTE]
-> Az adócsoport a rendelési sor szállítási címe alapján van definiálva, és a célalapú adók az adócsoportnál vannak konfigurálva. További információ: [Online áruházak adóinak beállítása cél alapján](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-taxes-for-online-stores-based-on-destination) című témakörben olvashat.
+A következő táblázat bemutatja, hogy a célon alapuló adók és a vevői számla alapú adók online rendeléseknél vannak-e alkalmazva. 
 
-## <a name="order-pickup-in-store"></a>Rendelésfelvétel az üzletben
-
-Az üzletbeli vagy a járdaszéli felvétellel megadott csomagfelvételeket megadó rendeléssorok esetén a kiválasztott átvételi áruház adócsoportja lesz alkalmazva. Az adócsoport adott üzlethez való konfigurálásáról az [Üzletek egyéb adóbeállításainak megadása](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-other-tax-options-for-stores) című témakörben talál további tudnivalókat.
-
-> [!NOTE]
-> Amikor egy rendelési sort üzletben való átvételekor, a vevői cím adóbeállításait (ha be van állítva) az adómotor figyelmen kívül hagyja, és az átvételi üzlet adókonfigurációját alkalmazza. 
+| Vevőtípus | Szállítási cím                   | Vevő > Számla és szállítás > Áfacsoport? | A központ vevői számláján található cím? | Vevői cím > Speciális >Általános > Áfacsoport?                                              | Áfacsoport alkalmazva      |
+|---------------|------------------------------------|-----------------------------------------------------|-----------------------------------|--------------------------------------------------------------------------------------------------------|------------------------------|
+| Vendég         | Manhattan, New York                      | Nem (üres)                                                | Nem (üres)                              | Nem (üres)                                                                                                   | New York (célon alapuló adók) |
+| Bejelentkezve.     | Austin, Texas állam                          | Nem (üres)                                             | Igen                               | None<br/><br/>Online csatornán keresztül hozzáadott új cím.                                                            | Texas (célon alapuló adók) |
+| Bejelentkezve.     | San Fransisco, California (átvétel az üzletben) | Igen (New York)                                            | Nem alkalmazható                              | Nem alkalmazható                                                                                                    | California (célon alapuló adók) |
+| Bejelentkezve.     | Houston, Texas                         | Igen (New York)                                            | Igen                               | Igen (New York)<br/><br/>Online csatornán keresztül hozzáadott új cím és a vevőkódtól örökölt áfacsoport. | New York (vevői számla alapú adók)  |
+| Bejelentkezve.     | Austin, Texas állam                          | Igen (New York)                                            | Igen                               | Igen (New York)<br/><br/>Online csatornán keresztül hozzáadott új cím és a vevőkódtól örökölt áfacsoport. | New York (vevői számla alapú adók)  |
+| Bejelentkezve.     | Sarasota, Florida                       | Igen (New York)                                            | Igen                               | Igen (Washington)<br/><br/>Manuálisan állítsa át a WA beállításra.                                                                          | Washington (vevői számla alapú adók)  |
+| Bejelentkezve.     | Sarasota, Florida                       | Nem (üres)                                                | Igen                               | Igen (Washington)<br/><br/>Manuálisan állítsa át a WA beállításra.                                                                          | Washington (vevői számla alapú adók)  |
 
 ## <a name="additional-resources"></a>További erőforrások
+
+[Online áruházak adóinak beállítása cél alapján](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-taxes-for-online-stores-based-on-destination)
 
 [Áfa áttekintése](https://docs.microsoft.com/dynamics365/finance/general-ledger/indirect-taxes-overview?toc=/dynamics365/commerce/toc.json) 
 

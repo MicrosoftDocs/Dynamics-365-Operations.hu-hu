@@ -14,12 +14,12 @@ ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, R
 ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: dabde875e719ca2ffb5033cdbb8229e005203eae
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d0f3ce6684cb98e3e459f33ce7c34cd9955abd59
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839939"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5894867"
 ---
 # <a name="advance-holders-overview"></a>Előlegre jogosultak áttekintése
 
@@ -78,7 +78,7 @@ Beszerzési rendelés előlegre jogosulton keresztül történő megfelelő rög
 
 ### <a name="create-an-advance-holder"></a>Előlegre jogosult létrehozása
 
-Előlegre jogosult létrehozása előtt beállított dolgozókkal kell rendelkeznie. További tudnivalók: [Dolgozó adatainak megadása (Feladat-útmutató)](../../fin-and-ops/hr/tasks/enter-worker-information.md). 
+Előlegre jogosult létrehozása előtt beállított dolgozókkal kell rendelkeznie. További tudnivalók: [Dolgozó adatainak megadása (Feladat-útmutató)](../../human-resources/hr-personnel-enter-worker-information.md). 
 
 1. Válassza a **Kötelezettségek** \> **Előlegre jogosultak** \> **Előlegre jogosultak** elemet.
 

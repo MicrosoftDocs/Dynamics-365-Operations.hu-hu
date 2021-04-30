@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 6cb8050980b9b54480d09a59379430cd229ff141
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 44df05083cd3c91e5dcbdb3062665c2145d92a7e
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5801095"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5889812"
 ---
 # <a name="copy-an-instance"></a>Példány másolása
 
@@ -39,7 +39,7 @@ Egy példány másolásához tartsa szem előtt a következő tanácsokat:
 
 - A célkörnyezetben rendszergazdának kell lennie ahhoz, hogy a példány másolása után bejelentkezhessen.
 
-- A Human Resources adatbázisának másolása során nem másolja át a Microsoft Power Apps környezetben található elemeket (alkalmazásokat vagy adatokat). A Power Apps-környezet elemeinek másolásával kapcsolatos tudnivalókat lásd: [Környezet másolása](https://docs.microsoft.com/power-platform/admin/copy-environment). A felülírni kívánt Power Apps -könyezetnek védőfalkörnyezetnek kell lennie. A Power Apps éles környezet védőfalkörnyezetbe történő módosításához globális bérlői rendszergazdának kell lennie. A Power Apps-környezet módosításával kapcsolatos további tudnivalókat lásd: [Példány váltása](https://docs.microsoft.com/dynamics365/admin/switch-instance).
+- A Human Resources adatbázisának másolása során nem másolja át a Microsoft Power Apps környezetben található elemeket (alkalmazásokat vagy adatokat). A Power Apps-környezet elemeinek másolásával kapcsolatos tudnivalókat lásd: [Környezet másolása](/power-platform/admin/copy-environment). A felülírni kívánt Power Apps -könyezetnek védőfalkörnyezetnek kell lennie. A Power Apps éles környezet védőfalkörnyezetbe történő módosításához globális bérlői rendszergazdának kell lennie. A Power Apps-környezet módosításával kapcsolatos további tudnivalókat lásd: [Példány váltása](/dynamics365/admin/switch-instance).
 
 - Ha példányát egy tesztkörnyezetbe másolja , és szeretné integrálni a tesztkörnyezetét a Dataverse szolgáltatással, akkor újra kell alkalmaznia az egyéni mezőket a Dataverse-táblákra. Lásd: [Egyéni mezők alkalmazása a Dataverse-szolgáltatásra](hr-admin-setup-copy-instance.md?apply-custom-fields-to-common-data-service).
 
@@ -80,7 +80,7 @@ A feladat végrehajtásához először másolja a példányt, majd jelentkezzen 
 
 6. Válassza ki a másolni kívánt Power Apps-környezetet, majd válassza a **Másolás** parancsot.
 
-7. A másolási folyamat befejezése után jelentkezzen be a célpéldányba, és engedélyezze a Dataverse-integrációt. További tudnivalókért és utasításokért lásd: [A Dataverse-integráció konfigurálása](https://docs.microsoft.com/dynamics365/talent/hr-common-data-service-integration).
+7. A másolási folyamat befejezése után jelentkezzen be a célpéldányba, és engedélyezze a Dataverse-integrációt. További tudnivalókért és utasításokért lásd: [A Dataverse-integráció konfigurálása](./hr-admin-integration-common-data-service.md).
 
 ## <a name="data-elements-and-statuses"></a>Adatelemek és állapotok
 
@@ -142,7 +142,7 @@ A Dataverse-táblákon közzétett egyéni mezők esetében hajtsa végre a köv
 
 A kijelölés törlése, változtatások alkalmazása, kijelölés újra, és változtatások ismételt alkalmazása arra utasítja a sémát, hogy frissítsen a Dataverse-szolgáltatásban, hogy tartalmazza az egyéni mezőket.
 
-További információkért az egyéni mezőkről lásd: [Egyéni mezők létrehozása és felhasználása](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/user-defined-fields).
+További információkért az egyéni mezőkről lásd: [Egyéni mezők létrehozása és felhasználása](../fin-ops-core/fin-ops/get-started/user-defined-fields.md).
 
 ## <a name="see-also"></a>Lásd még
 

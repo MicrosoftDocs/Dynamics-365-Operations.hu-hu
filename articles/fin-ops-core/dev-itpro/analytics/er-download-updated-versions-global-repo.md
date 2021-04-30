@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 1e021105c19273db5ded7cb0902eca1d502ced8e
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 724048991fc8864ef72a5155af66b9c709f4b875
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753360"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893956"
 ---
 # <a name="import-updated-versions-of-er-configurations"></a>Az ER-konfigurációk frissített verzióinak importálása
 
@@ -28,7 +28,7 @@ ms.locfileid: "5753360"
 
 Az elektronikus jelentéskészítési (ER) [adattárak](general-electronic-reporting.md#Repository) az [ER-konfigurációk](general-electronic-reporting.md#Configuration) megosztására szolgálnak. Az ER-konfigurációkat különböző adattárakból [importálhatja](download-electronic-reporting-configuration-lcs.md) a Microsoft Dynamics 365 Finance-példányába. Az ER-konfigurációk importálásakor a [konfigurációszolgáltatók](general-electronic-reporting.md#Provider) közzétehetik új [verziók](general-electronic-reporting.md#component-versioning) adattárait, így azok megoszthatók.
 
-Ez a témakör azt mutatja be, hogyan lehet importálni az ER-konfigurációk frissített verzióit a konfigurációs szolgáltatás globális tárából. A további tudnivalókat lásd: [Microsoft Dynamics 365 for Finance and Operations - Regulatory services, konfigurációs szolgáltatás](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration).
+Ez a témakör azt mutatja be, hogyan lehet importálni az ER-konfigurációk frissített verzióit a konfigurációs szolgáltatás globális tárából. A további tudnivalókat lásd: [Microsoft Dynamics 365 for Finance and Operations - Regulatory services, konfigurációs szolgáltatás](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration).
 
 ## <a name="review-the-available-updated-versions"></a>A rendelkezésre álló frissített verziók áttekintése
 

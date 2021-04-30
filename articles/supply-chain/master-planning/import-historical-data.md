@@ -15,12 +15,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9bb3c178a698bdcd46e7c596247360ba9233b398
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: de380113fe951f75c15f9e5526ad2f1f5cc84334
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5816484"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908880"
 ---
 # <a name="import-historical-data-for-demand-forecasts"></a>Előzményadatok importálása az igény-előrejelzésekhez
 
@@ -41,7 +41,7 @@ Az adatok importálásával és az adatok importálás utáni tisztításával k
 
 ## <a name="example"></a>Példa
 
-A következő fájlt példaként használhatja. Töltse le a [HistoricalDemandData](https://docs.microsoft.com/dynamics/s-e/) fájlt. Ez a fájl a D0001 cikk korábbi igényadatait tartalmazza. Csak a következő kötelező mezők szerepelnek benne: hely, mennyiség és az igény dátuma.
+A következő fájlt példaként használhatja. Töltse le a [HistoricalDemandData](/dynamics/s-e/) fájlt. Ez a fájl a D0001 cikk korábbi igényadatait tartalmazza. Csak a következő kötelező mezők szerepelnek benne: hely, mennyiség és az igény dátuma.
 
 1. Válassza ki azt a vállalatot, amelyikbe a korábbi igényadatokat importálni szeretné.
 2. Nyissa meg az **Adatkezelés** munkaterületet.

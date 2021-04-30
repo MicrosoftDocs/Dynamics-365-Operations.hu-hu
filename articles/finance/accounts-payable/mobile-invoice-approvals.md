@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 5d3b85e076292b9d41de6a4cf3198ed9b38d27c8
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9e6138ccd92019f52afab0d8ed4b8cf64d66ff24
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5828034"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897696"
 ---
 # <a name="mobile-invoice-approvals"></a>Mobil számlajóváhagyások
 
@@ -32,7 +32,7 @@ Mobil lehetőségek lehetővé teszik az üzleti felhasználónak a mobilélmén
 
 | Előfeltételek                                                                                            | Leírás                                                                                                                                                          |
 |---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Mobil kézikönyv előzetes olvasás                                                                                |[Mobil platform](../../dev-itpro/mobile-apps/platform/mobile-platform-home-page.md)                                                                                                  |
+| Mobil kézikönyv előzetes olvasás                                                                                |[Mobil platform](../../fin-ops-core/dev-itpro/mobile-apps/platform/mobile-platform-home-page.md)                                                                                                  |
 | Dynamics 365 Finance                                                                              | Egy környezet, amely 1611-os verzióval és Platform update 3 (2016. november) rendelkezik                   |
 | Telepítse a 3204341 számú tudásbáziscikkhez tartozó gyorsjavítást.                                                                              | A Feladatrögzítő tévesen két Bezárás parancsot rögzíthet legördülő párbeszédpaneleknél - ez a 3. platformfrissítésében található (2016. novemberi frissítés). |
 | Telepítse a 3207800 számú tudásbáziscikkhez tartozó gyorsjavítást.                                                                              | Ez a gyorsjavítás lehetővé teszi a mellékletek megtekintését mobil kliensen - - ez a 3. platformfrissítésében található (2016. novemberi frissítés).           |
@@ -213,7 +213,7 @@ A számla részletei lap mobilra való megtervezéséhez használja a **VendMobi
 
 11. Miután az előző két lépésből az összes mezőt hozzáadta, kattintson a **Kész** elemre. Az oldalnak az alábbi ábrához kell hasonlítania.
     
-    [![Az oldal mezők hozzáadása után](./media/mobile-invoice-approvals05.png)](./media/mobile-invoice-approvals05.png)
+    [![További hozzáadott mezőket megjelenítő ábra](./media/mobile-invoice-approvals05.png)](./media/mobile-invoice-approvals05.png)
 
 12. Kattintson a **Kész** elemre a szerkesztés módból való kilépéshez.
 
@@ -319,7 +319,7 @@ Munkafolyamat-műveletek hozzáadásához használja a **VendMobileInvoiceHeader
 
 2. Kattintson a **Szerkesztés** gombra a munkaterület szerkesztési üzemmódjának elindításához.
 
-3. Válassza a korábban elkészített <strong>Számla részletei **oldalt, majd kattintson a Szerkesztés **</strong> elemre.
+3. Válassza a korábban elkészített <strong>Számla részletei **oldalt, majd kattintson a Szerkesztés**</strong> elemre.
 
 4. Állítsa a **Dokumentumkezelés** lehetőséget **Igen** értékre, ahogy az lent látható. **Megjegyzés:** ha a mellékleteket nem muszáj megjeleníteni a mobileszközön, a beállítást az alapértelmezett **Nem** értéken hagyhatja.
    

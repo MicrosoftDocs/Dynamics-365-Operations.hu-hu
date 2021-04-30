@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4a06da220fd90de91fb9091c41f35a1fb95442c3
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: e1b4b336953ef6bd74da009b3bb44fbcf2eab5a8
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804017"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5892323"
 ---
 # <a name="go-live-faq"></a>Éles indítás GYIK 
 
@@ -48,7 +48,7 @@ Az előfeltételek listáját a  [Felkészülés az élő indításra](hr-admi
 
 ## <a name="what-is-a-go-live-assessment"></a>Mi az az élő indítási értékelés?  
 
-Az élő indítási értékelés a  [Microsoft FastTrack program](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/fasttrack-dynamics-365-overview) része. A felülvizsgálat során a megoldástervező felméri, hogy egy megvalósítási projekt készen áll-e a sikeres átállásra és az éles indításra. Ez a felülvizsgálat minden megvalósítási projekthez kötelező, mielőtt éles környezetben való éles indítást kérelmez. 
+Az élő indítási értékelés a  [Microsoft FastTrack program](/dynamics365/fasttrack/) része. A felülvizsgálat során a megoldástervező felméri, hogy egy megvalósítási projekt készen áll-e a sikeres átállásra és az éles indításra. Ez a felülvizsgálat minden megvalósítási projekthez kötelező, mielőtt éles környezetben való éles indítást kérelmez. 
 
 ## <a name="our-sandbox-environments-are-deployed-in-the-central-us-datacenter-we-want-our-production-environments-to-be-deployed-in-the-west-us-datacenter-can-i-select-west-us-as-the-datacenter-in-my-production-configuration"></a>A tesztkörnyezetek az USA középső régiójában található adatközpontjában vannak telepítve. Azt szeretnénk, hogy éles környezeteink az USA nyugati régiójának adatközpontjában legyenek telepítve. Kiválaszthatom az USA nyugati régióját adatközpontként az éles konfigurációban? 
 
@@ -56,7 +56,7 @@ Az LCS nem korlátozza, hogy egy másik adatközpontot válasszon a Human Resour
 
 Ha azt szeretné, hogy az éles környezet az USA nyugati régiójának adatközpontjában legyen, először telepítse újra a tesztkörnyezeteket a USA nyugati régiójának adatközpontjában, tesztelje őket, és hagyja jóvá. 
 
-A megfelelő adatközpont kiválasztásáról a [Hálózati követelmények](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/system-requirements#network-requirements) című témakörben talál további információt. 
+A megfelelő adatközpont kiválasztásáról a [Hálózati követelmények](../fin-ops-core/fin-ops/get-started/system-requirements.md#network-requirements) című témakörben talál további információt. 
 
 ## <a name="what-level-of-access-do-i-have-to-the-azure-resources-for-my-human-resources-environments"></a>Milyen szintű hozzáféréssel kell rendelkeznem az Azure-erőforrásokhoz a Human Resources környezeteimhez?  
 
@@ -64,7 +64,7 @@ A Human Resources környezethez való hozzáférés korlátozott. A virtuális g
 
 Bár közvetlenül nem tud hozzáférni az Azure-erőforrásokhoz vagy a Dynamics 365 Human Resources-környezethez, további funkciókat is használhat az adatok eléréséhez:
 
-- Az Azure SQL-adatbázist telepítheti a saját Azure-bérlőben, és a Bring Your Own Database (BYOD) szolgáltatás használatával szinkronizálhatja az adatokat. A további tudnivalókat lásd: [Használja saját adatbázisát (BYOD)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database).
+- Az Azure SQL-adatbázist telepítheti a saját Azure-bérlőben, és a Bring Your Own Database (BYOD) szolgáltatás használatával szinkronizálhatja az adatokat. A további tudnivalókat lásd: [Használja saját adatbázisát (BYOD)](../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md).
 
 - A Dataverse integráció segítségével szinkronizálhatja a kijelölt entitásokat a Dataverse-adatbázisba. A további tudnivalókat lásd: [Dataverse-táblák](hr-developer-entities.md). 
 
@@ -80,11 +80,11 @@ Az adatbázisokat automatikus biztonsági mentés védi a következő frekvenci�
 
 A Microsoft elegendő biztonsági mentést tart meg ahhoz, hogy az elmúlt 14 napban lehetővé tegye az Időponthoz kötött visszaállítás (PITR) használatát. 
 
-A további tudnivalókat lásd: [Tudnivalók az automatikus SQL-adatbázis biztonsági másolatokról](https://docs.microsoft.com/azure/azure-sql/database/automated-backups-overview?tabs=single-database). 
+A további tudnivalókat lásd: [Tudnivalók az automatikus SQL-adatbázis biztonsági másolatokról](/azure/azure-sql/database/automated-backups-overview?tabs=single-database). 
 
 ## <a name="can-i-request-a-copy-of-the-backup-of-my-production-database"></a>Kérhetek másolatot az éles adatbázis biztonsági másolatáról? 
 
-Nem. Azonban az adatbázis-frissítési szolgáltatáskérést elküldheti, hogy az éles környezetet a tesztkörnyzetbe másolja. Az Azure SQL-adatbázist telepítheti a saját Azure-bérlőben, és a BYOD funkció használatával szinkronizálhatja az adatokat az éles környezetből. A további tudnivalókat lásd: [Használja saját adatbázisát (BYOD)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database). 
+Nem. Azonban az adatbázis-frissítési szolgáltatáskérést elküldheti, hogy az éles környezetet a tesztkörnyzetbe másolja. Az Azure SQL-adatbázist telepítheti a saját Azure-bérlőben, és a BYOD funkció használatával szinkronizálhatja az adatokat az éles környezetből. A további tudnivalókat lásd: [Használja saját adatbázisát (BYOD)](../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md). 
 
 ## <a name="how-do-i-move-my-sandbox-environment-to-production-for-go-live"></a>Hogyan helyezhetem át a tesztkörnyezetemet az élesbe éles indításra? 
 
@@ -94,7 +94,7 @@ Azt javasoljuk, hogy a projekt során a tesztkörnyezetben konfigurált entitás
 
 ## <a name="what-should-i-do-if-my-production-environment-is-down"></a>Mit tegyek, ha az éles környezetem nem üzemel? 
 
-A termeléskimaradás jelentéséhez kövesse a  [Termeléskimaradás jelentése](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/report-production-outage) című részben leírt eljárást. 
+A termeléskimaradás jelentéséhez kövesse a  [Termeléskimaradás jelentése](../fin-ops-core/dev-itpro/lifecycle-services/report-production-outage.md) című részben leírt eljárást. 
 
  ## <a name="see-also"></a>Lásd még
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2012-04-01
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: faf54fec2885f868c66987a7b481559d0c5615d0
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 6b5bf6815f225dcca8f9e89e2c85942ce8a2ccd7
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838274"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5907987"
 ---
 # <a name="document-routing-layout-for-license-plate-labels"></a>Dokumentumirányítás elrendezés azonosítótábla-címkékhez
 
@@ -73,7 +73,7 @@ A következő példák azt mutatják be, hogyan lehet testreszabni a munkamennyi
 - Ha azt szeretné, hogy a program mindig négy számjegyet jelenítse meg (nullák használatával helyőrzőként), használja `$Qty:0000$` értéket. Ha például a mennyiség 10, akkor a címkén „0010” jelenik meg.
 - Ha mindig két tizedesjegyet kíván megjeleníteni, használja a `$Qty:0.00$` értéket. Ha például a mennyiség 10, akkor a címkén „10.00” jelenik meg.
 
-A rendelkezésre álló számformátum-karakterláncok teljes listája az [Egyéni numerikus formátumú karakterláncok](https://docs.microsoft.com/dotnet/standard/base-types/custom-numeric-format-strings) című témakörben olvasható.
+A rendelkezésre álló számformátum-karakterláncok teljes listája az [Egyéni numerikus formátumú karakterláncok](/dotnet/standard/base-types/custom-numeric-format-strings) című témakörben olvasható.
 
 ## <a name="custom-string-formats"></a>Egyéni karakterlánc-formátumok
 
@@ -95,7 +95,7 @@ $PrintedDate:dd-MM-yyyy$
 
 Ebben a példában a 2020. április 30-i dátum „30-04-2020” értékkel lesz nyomtatva.
 
-A rendelkezésre álló dátum-/időformátumok teljes listája az [Egyéni dátum- és időformátum karakterláncok](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings) című témakörben olvasható.
+A rendelkezésre álló dátum-/időformátumok teljes listája az [Egyéni dátum- és időformátum karakterláncok](/dotnet/standard/base-types/custom-date-and-time-format-strings) című témakörben olvasható.
 
 ## <a name="print-individual-lines-from-multiline-data"></a>Különálló sorok nyomtatása a többsoros adatokból
 

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 965f3ca859c601d26470038a889b0f21d2bdff5f
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 10978d8843e7bce2800d62b63e58152569be9631
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5800117"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5891769"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-september-3-2020"></a>Új vagy módosult elemek a Dynamics 365 Human Resources szolgáltatásban (2020. szeptember 3.)
 
@@ -31,7 +31,7 @@ ms.locfileid: "5800117"
 
 Ez a témakör a Dynamics 365 Human Resources új vagy módosított szolgáltatásait írja le. A változtatások a 8.1.3504-es buildszámra vonatkoznak. A néhány fejlécben látható, zárójelben lévő számok tájékoztatásként a Lifecycle Services (LCS) támogatási számaira vonatkoznak.
 
-A Human Resources közelgő szolgáltatásaival kapcsolatos további tudnivalókat lásd: [Áttekintés: Dynamics 365 Human Resources 2019-es 2. kiadási hullám](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/). A Human Resources frissítési folyamatával kapcsolatos további tudnivalókat lásd: [Frissítési folyamat](hr-admin-setup-update-process.md).
+A Human Resources közelgő szolgáltatásaival kapcsolatos további tudnivalókat lásd: [Áttekintés: Dynamics 365 Human Resources 2019-es 2. kiadási hullám](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/). A Human Resources frissítési folyamatával kapcsolatos további tudnivalókat lásd: [Frissítési folyamat](hr-admin-setup-update-process.md).
 
 ## <a name="in-this-release"></a>Ebben a verzióban
 
@@ -76,21 +76,21 @@ Az elemzési jelentés most a **Fizetési díjalap** helyes adatait jeleníti me
 
 Az alkalmazottak megtekinthetik és kérhetik a munkából való távollétet a Microsoft Teams alkalmazásban. Ezek egy robottal lépnek interakcióba a szabadságkérelmek létrehozásához. További tájékoztatás:
 
-- [Alkalmazott szabadsága és távolléte a Microsoft Teams rendszerben](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) a Dynamics 365 2020-as kiadási hullámának 1. csomagjában
-- [Human Resources alkalmazás a Teamsben](https://go.microsoft.com/fwlink/?linkid=2127841) a Human Resources dokumentációjában
+- [Alkalmazott szabadsága és távolléte a Microsoft Teams rendszerben](/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) a Dynamics 365 2020-as kiadási hullámának 1. csomagjában
+- [Human Resources alkalmazás a Teamsben](./hr-admin-teams-leave-app.md) a Human Resources dokumentációjában
 
 ### <a name="human-resources-app-in-teams-preview-features"></a>Human Resources alkalmazás a Teamsben előzetes funkciók
  
 -  **Értesítések**: A szabadságkérelmek beküldői és jóváhagyói értesítést kapnak az Emberi erőforrások alkalmazásban a Teamsben. A jóváhagyók jóvá tudják hagyni vagy el tudják utasítani a távolléti kérelmeket. A kérelem jóváhagyása vagy elutasítása esetén a beküldő értesítést kap. További tájékoztatás:
-   - [Alkalmazott szabadsága és távolléte a Microsoft Teams rendszerben](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/employee-leave-absence-experience-teams) a Dynamics 365 2020-as kiadási hullámának 2. csomagjában
-   - [Human Resources alkalmazás értesítéseinek engedélyezése a Teamsben](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-teams-leave-app#enable-notifications-for-the-human-resources-app-in-teams) a Human Resources dokumentációjában
-   - [A Teams értesítéseinek be-és kikapcsolása az egyes felhasználók számára](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-teams-leave-app#turn-teams-notifications-on-or-off-for-individual-users) a Human Resources dokumentációjában
-   - [Teams értesítések](https://docs.microsoft.com/dynamics365/human-resources/hr-teams-leave-app#teams-notifications) a Human Resources dokumentációjában
-   - [A csapat távolléti naptárának megtekintése a](https://docs.microsoft.com/dynamics365/human-resources/hr-teams-leave-app#view-your-teams-leave-calendar) a Human Resources dokumentációjában
+   - [Alkalmazott szabadsága és távolléte a Microsoft Teams rendszerben](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/employee-leave-absence-experience-teams) a Dynamics 365 2020-as kiadási hullámának 2. csomagjában
+   - [Human Resources alkalmazás értesítéseinek engedélyezése a Teamsben](./hr-admin-teams-leave-app.md#enable-notifications-for-the-human-resources-app-in-teams) a Human Resources dokumentációjában
+   - [A Teams értesítéseinek be-és kikapcsolása az egyes felhasználók számára](./hr-admin-teams-leave-app.md#turn-teams-notifications-on-or-off-for-individual-users) a Human Resources dokumentációjában
+   - [Teams értesítések](./hr-teams-leave-app.md#respond-to-teams-notifications) a Human Resources dokumentációjában
+   - [A csapat távolléti naptárának megtekintése a](./hr-teams-leave-app.md#view-your-teams-leave-calendar) a Human Resources dokumentációjában
  
 - **Vezetői szabadságnaptár**: A felettesek a naptár nézetben megtekinthetik a beosztottjaik jóváhagyott és függőben lévő távolléteit. Ez a nézet annak áttekintését teszi lehetővé, hogy a csapattagok mikor nem dolgoznak. További tájékoztatás:
-   - [Alkalmazott szabadsága és távolléte a Microsoft Teams rendszerben](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/employee-leave-absence-experience-teams) a Dynamics 365 2020-as kiadási hullámának 2. csomagjában
-   - [A csapat távolléti naptárának megtekintése a](https://docs.microsoft.com/dynamics365/human-resources/hr-teams-leave-app#view-your-teams-leave-calendar) a Human Resources dokumentációjában
+   - [Alkalmazott szabadsága és távolléte a Microsoft Teams rendszerben](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/employee-leave-absence-experience-teams) a Dynamics 365 2020-as kiadási hullámának 2. csomagjában
+   - [A csapat távolléti naptárának megtekintése a](./hr-teams-leave-app.md#view-your-teams-leave-calendar) a Human Resources dokumentációjában
 
 ### <a name="configuration-option-to-position-work-items-assigned-to-me-list-477004"></a>Konfigurációs beállítás a hozzám rendelt munkaelemek lista pozicionálásához (477004)
 
@@ -98,7 +98,7 @@ Most egy új beállítás érhető el, amivel a **Hozzám rendelt munkaelemek** 
 
 Ez a funkció segíti a személyzeti műveletek képernyőjén megjelenő munkafolyamat-beállításokat is. A munkafolyamat-beállítások a gyors hozzáféréshez a művelet gyors lapja fölött is megjelenhetnek. További tájékoztatás: 
 
-- [A szervezeti és személyzetkezelési munkafolyamatok fejlesztései](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/organization-personnel-management-workflow-experience-enhancements) a Dynamics 365 2020-as 2. kiadási hullám csomagjában
+- [A szervezeti és személyzetkezelési munkafolyamatok fejlesztései](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/organization-personnel-management-workflow-experience-enhancements) a Dynamics 365 2020-as 2. kiadási hullám csomagjában
 
 ![Hozzám rendelt munkatételek](./media/hr-workflow-work-items-assigned-to-me.png)
 
@@ -117,7 +117,7 @@ A juttatáskezelés okkódjai hamarosan kombinálva lesznek a Human Resources me
 ## <a name="see-also"></a>Lásd még
 
 [Új vagy módosult elemek a Human Resources szolgáltatásban](hr-admin-whats-new.md)</br>
-[A Dynamics 365 Human Resources 2019 második kiadási hullámának áttekintése](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[A Dynamics 365 Human Resources 2019 második kiadási hullámának áttekintése](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Rendelés frissítése](hr-admin-setup-update-process.md)</br>
 [Szolgáltatások kezelése](hr-admin-manage-features.md)
 

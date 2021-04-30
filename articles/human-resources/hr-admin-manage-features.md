@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 80799b770f0ede9ca1175a44dd738ae635d012c2
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 038e741978bce033621bad428321a4b14ac90650
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5793825"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5889836"
 ---
 # <a name="manage-features-in-human-resources"></a>Funkciók kezelése Human Resources rendszerben
 
@@ -29,9 +29,9 @@ ms.locfileid: "5793825"
 
 A Microsoft Dynamics 365 Human Resources lehetőségeit folyamatosan bővítjük, és szeretnénk, hogy az ügyfelek a lehető leghamarabb használhassák az új funkciókat. Előnézeti funkciókat biztosítunk, amelyek már majdnem készen állnak arra, hogy általánosan elérhetőek legyenek, illetve kiterjedt tesztelésen mentek át. Az általánosan elérhető kibocsátás előtt egy utolsó visszajelzési és ellenőrzési kört végzünk az ügyfelekkel.
 
-A Human Resources alkalmazásban található új funkciókkal kapcsolatos információkért lásd: [A Human Resources újdonságai](hr-admin-whats-new.md), illetve a [Dynamics 365 és a Power Platform kiadási tervei](https://docs.microsoft.com/dynamics365/release-plans/#pivot=products&panel=products1).
+A Human Resources alkalmazásban található új funkciókkal kapcsolatos információkért lásd: [A Human Resources újdonságai](hr-admin-whats-new.md), illetve a [Dynamics 365 és a Power Platform kiadási tervei](/dynamics365/release-plans/?panel=products1#pivot=products).
 
-A **Funkció-kezelés** munkaterülete az egyes kiadásokban kiadott funkciók listáját tartalmazza. Alapértelmezés szerint az új szolgáltatások ki vannak kapcsolva. A munkaterületen bekapcsolhatja a szolgáltatásokat, és megtekintheti a rájuk vonatkozó dokumentációt. A funkciókezeléssel kapcsolatos további tudnivalókat lásd [Funkciókezelés áttekintése](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
+A **Funkció-kezelés** munkaterülete az egyes kiadásokban kiadott funkciók listáját tartalmazza. Alapértelmezés szerint az új szolgáltatások ki vannak kapcsolva. A munkaterületen bekapcsolhatja a szolgáltatásokat, és megtekintheti a rájuk vonatkozó dokumentációt. A funkciókezeléssel kapcsolatos további tudnivalókat lásd [Funkciókezelés áttekintése](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 Minden új funkció megmarad előzetes verzióban legalább 30 napig, és általában 30-60 napig. A főbb funkciók általában az előzetes időszakot követően minden év októberében és áprilisában érhetők el. Amint az új funkciókat a **Funkciókezelés** munkaterületen látja, be lehet kapcsolni őket. Előfordulhat, hogy egyes funkciók alapértelmezés szerint be vannak kapcsolva.
 
@@ -93,6 +93,6 @@ Ne adjon meg személyes adatokat (azaz az Önt bármilyen módon azonosítani k�
 ## <a name="see-also"></a>Lásd még
 
 - [A Human Resources újdonságai](hr-admin-whats-new.md)
-- [A Dynamics 365 és a Power Platform programverzióra vonatkozó kiadási tervek](https://docs.microsoft.com/dynamics365/release-plans/#pivot=products&panel=products1)
+- [A Dynamics 365 és a Power Platform programverzióra vonatkozó kiadási tervek](/dynamics365/release-plans/?panel=products1#pivot=products)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

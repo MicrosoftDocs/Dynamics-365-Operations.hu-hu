@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 080f66e4e13df44a77f0499c6d69686f0e3d7021
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: bf406a954f5bb8b49627b58a901d0721cdad407b
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5801191"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5890028"
 ---
 # <a name="configure-dataverse-integration"></a>Dataverse-integráció konfigurálása
 
@@ -30,7 +30,7 @@ ms.locfileid: "5801191"
 A Microsoft Dataverse és a Dynamics 365 Human Resources között be- és kikacsolhatja az integrációt. Ezenkívül megtekintheti a szinkronizálási adatokat, törölheti a nyomonkövetési adatokat, valamint újraszinkronizálhat egy táblát a két környezet közötti adatproblémák elhárítása érdekében.
 
 > [!NOTE]
-> A Dataverse (a korábbi Common Data Service) rendszer kapcsolatos további tudnivalókat és a terminológiai frissítéseket lásd: [Mi a Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)
+> A Dataverse (a korábbi Common Data Service) rendszer kapcsolatos további tudnivalókat és a terminológiai frissítéseket lásd: [Mi a Microsoft Dataverse?](/powerapps/maker/data-platform/data-platform-intro)
 
 Ha kikapcsolja az integrációt, a felhasználók módosíthatják az emberi erőforrásokat vagy a Dataverse megoldást, de ezek a módosítások nem szinkronizálhatók a két környezet között.
 
@@ -124,8 +124,8 @@ Teljes szinkronizálás futtatása egy táblához a Human Resources és Datavers
 [Dataverse-táblák](hr-developer-entities.md)<br>
 [Dataverse virtuális táblák konfigurálása](hr-admin-integration-common-data-service-virtual-entities.md)<br>
 [A Human Resources számára elérhető virtuális táblák – GYIK](hr-admin-virtual-entity-faq.md)<br>
-[Mi az a Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)<br>
-[Terminológia frissítései](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro#terminology-updates)
+[Mi az a Microsoft Dataverse?](/powerapps/maker/data-platform/data-platform-intro)<br>
+[Terminológia frissítései](/powerapps/maker/data-platform/data-platform-intro#terminology-updates)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

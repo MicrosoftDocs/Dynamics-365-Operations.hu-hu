@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2019-05-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 725bce4b3aa7feb61bd7d7ded1be07f803424e57
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 7c6e4dcbd854cfadbc34f0040dcffd277d32a8d9
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745197"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909034"
 ---
 # <a name="set-up-and-install-regression-suite-automation-tool-tutorial"></a>A Regression Suite Automation Tool beállítása és telepítése oktatóanyag
 
@@ -54,7 +54,7 @@ Ez a témakör egy olyan oktatóanyag, amely segítséget nyújt a beállításo
 
 ### <a name="user-eligibility"></a>Felhasználhatói jogosultság
 
-Győződjön meg arról, hogy létrehozták a felhasználót az Azure DevOps szolgáltatásban, és van egy előfizetési szintje, amely hozzáférést biztosít az Azure Test Plans szolgáltatáshoz. Az Azure DevOps Test Plans-licenc csak akkor szükséges, ha a felhasználó teszteseteket fog létrehozni és kezelni (azaz nem minden RSAT-felhasználónak szükséges ez a licenc). A licenc követelményeivel kapcsolatos tudnivalókat lásd: [Licenckövetelmények](https://docs.microsoft.com/azure/devops/test/manual-test-permissions#license-requirements).
+Győződjön meg arról, hogy létrehozták a felhasználót az Azure DevOps szolgáltatásban, és van egy előfizetési szintje, amely hozzáférést biztosít az Azure Test Plans szolgáltatáshoz. Az Azure DevOps Test Plans-licenc csak akkor szükséges, ha a felhasználó teszteseteket fog létrehozni és kezelni (azaz nem minden RSAT-felhasználónak szükséges ez a licenc). A licenc követelményeivel kapcsolatos tudnivalókat lásd: [Licenckövetelmények](/azure/devops/test/manual-test-permissions#license-requirements).
 
 ### <a name="create-a-new-azure-devops-project"></a>Új Azure DevOps-projekt létrehozása
 

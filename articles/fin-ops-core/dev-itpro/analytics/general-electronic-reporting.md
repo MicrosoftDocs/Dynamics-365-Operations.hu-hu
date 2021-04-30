@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f172e4d3e9c175a93d6fd64f0aa1933a48860bca
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: d22a6fc336708028ce4953df50360c233398303d
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750058"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893177"
 ---
 # <a name="electronic-reporting-er-overview"></a>Elektronikus jelentéskészítés (ER) áttekintése
 
@@ -183,11 +183,11 @@ Vegye figyelembe, hogy ez a tárhelytípus elérhető a következő környezetek
 
 További információ: [Elektronikus jelentéskészítési (ER) konfigurációk importálása](./electronic-reporting-import-ger-configurations.md).
 
-Az **RCS** adattár hozzáférést biztosít a [Konfigurációs szolgáltatás (RCS)](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration) adott példányának konfigurációs listájához, amelyet az adattár regisztrációs fázisában választottak ki. Az ER segítségével befejezett vagy megosztott konfigurációkat importálhat a kiválasztott RCS-példányból a jelenlegi példányba, amelyet aztán elektronikus jelentéskészítésre használhatnak fel.
+Az **RCS** adattár hozzáférést biztosít a [Konfigurációs szolgáltatás (RCS)](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration) adott példányának konfigurációs listájához, amelyet az adattár regisztrációs fázisában választottak ki. Az ER segítségével befejezett vagy megosztott konfigurációkat importálhat a kiválasztott RCS-példányból a jelenlegi példányba, amelyet aztán elektronikus jelentéskészítésre használhatnak fel.
 
 További információ: [Elektronikus jelentéskészítési (ER) konfigurációk importálása RCS-ből](./rcs-download-configurations.md).
 
-A **Globális tár** adattár hozzáférést biztosít a [Konfigurációs szolgáltatás](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration) globális tárához tartozó konfigurációk listájához. Az ilyen típusú ER tárházat csak a Microsoft-szolgáltatóhoz lehet regisztrálni. Az globális tárból importálhatja a legújabb verzióit az ER konfigurációknak az aktuális példányba.
+A **Globális tár** adattár hozzáférést biztosít a [Konfigurációs szolgáltatás](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration) globális tárához tartozó konfigurációk listájához. Az ilyen típusú ER tárházat csak a Microsoft-szolgáltatóhoz lehet regisztrálni. Az globális tárból importálhatja a legújabb verzióit az ER konfigurációknak az aktuális példányba.
 
 További információért lásd: [Elektronikus jelentéskészítési (ER) konfigurációk importálása a konfigurációs szolgáltatás Globális tárából](./er-download-configurations-global-repo.md)
 

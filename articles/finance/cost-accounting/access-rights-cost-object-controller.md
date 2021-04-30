@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a3639c05b24de31cfa09d2d9d0cf427122f51eae
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: fa8faf0f0f45f901151b3b20a1792b3d8f264fa6
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5810198"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897624"
 ---
 # <a name="access-rights-for-cost-object-controllers"></a>Hozzáférési jogok költségobjektum-ellenőrök számára
 
@@ -62,9 +62,8 @@ A következő példában bemutatjuk, hogyan nézhet ki egy dimenzióhierarchia.
 
 A hierarchiatervező **Felhasználók** gyorslapja segítségével egy vagy több felhasználói azonosítót illeszthet minden egyes csomóponthoz.
 
-|                                   | Felhasználók            | Dimenziótag tartományok   |                         |
+|             Csomópontok                 | Felhasználók            | Forrásdimenzió-tag     |   Céldimenziótag   |
 |-----------------------------------|------------------|---------------------------|-------------------------|
-| **Csomópontok**                         | **Felhasználói azonosító**      | **Forrásdimenzió-tag** | **Céldimenziótag** |
 | Szervezet                      | Benjamin, Claire |                           |                         |
 | &nbsp;&nbsp;Rendszergazda                 | Április            |                           |                         |
 | &nbsp;&nbsp;&nbsp;&nbsp;Pénzügy   | Alicia           | CC002                     | CC003                   |
@@ -95,14 +94,14 @@ A Hozzáférési lista hierarchiájának beállításait használja a rendszer a
     - Az adatok Power BI-megjelenítései, amelyek a Dynamics 365 Finance kliensbe vannak ágyazva
 
 > [!IMPORTANT]
-> - Ahhoz, hogy a Hozzáférési lista hierarchia befolyásolhassa a Power BI adatait, párosítani kell a Hozzáférési lista hierarchiát és a sorszintű biztonságot a Power BI-ben. További információ: [Biztonság beállítása a Költségkönyvelés tartalmi csomagban](../../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md)
+> - Ahhoz, hogy a Hozzáférési lista hierarchia befolyásolhassa a Power BI adatait, párosítani kell a Hozzáférési lista hierarchiát és a sorszintű biztonságot a Power BI-ben. További információ: [Biztonság beállítása a Költségkönyvelés tartalmi csomagban](../../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md)
 > - Ez a témakör azokat az előfeltételeket mutatja be, amelyeknek teljesülniük kell a **Költségkontroll** munkaterület használatához.
 
 További erőforrások
 
 - [Költségellenőrzési munkaterület](cost-control-workspace.md)
 - [Dimenzióhierarchia](dimension-hierarchy.md)
-- [Biztonság beállítása a Költségkönyvelés tartalmi csomagban](../../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md)
+- [Biztonság beállítása a Költségkönyvelés tartalmi csomagban](../../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,7 +2,7 @@
 title: Cookie-k megfelelősége
 description: Ez a témakör a cookie-megfelelőséggel és a Microsoft Dynamics 365 Commerce által tartalmazott alapértelmezett irányelvekkel kapcsolatos szempontokat ismerteti.
 author: BrianShook
-ms.date: 08/31/2020
+ms.date: 04/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 2cc2089bc3052c0c59cb0414f8301123a9a30df2
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: efc84bcea2fb6c28c0b13d4469e858e82cc1c073
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796027"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908184"
 ---
 # <a name="cookie-compliance"></a>Cookie-k megfelelősége
 
@@ -50,6 +50,57 @@ A következő táblázat felsorolja a Dynamics 365 Commerce helyek által felado
 | x-ms-cpim-slice                             | A kérelmeknek a megfelelő termelési hitelesítési kiszolgálópéldány számára történő továbbítására szolgál. |
 | x-ms-cpim-sso:rushmoreb2c.onmicrosoft.com_0 | Az SSO-munkamenet fenntartására szolgál.                        |
 | x-ms-cpim-trans                             | A tranzakciók nyomon követésére szolgál (azoknak a nyitott lapoknak a száma, amelyeknek hitelesítése vállalatok közötti (B2C) helyhez történik), az aktuális tranzakciót is beleértve. |
+| \_msdyn365___muid_                            | Akkor használatos, ha a Kísérletezés aktiválva van a környezetben: a kísérletezési célok felhasználóazonosítójához használatos. |
+| \_msdyn365___exp_                             | Akkor használatos, ha a Kísérletezés aktiválva van a környezetben: a teljesítmény terheléselosztásának mérésére használatos.         |
+
+
+
+Ha egy webhely felhasználója a webhely bármelyik közösségi média hivatkozását kiválasztja, az alábbi táblában található cookie-k is nyomon lesznek követve a böngészőikben.
+
+
+| Tartomány                      | Cookie               | Leírás                                                  | Forrás                                          |
+| --------------------------- | ------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| .linkedin.com                | UserMatchHistory         | LinkedIn-hirdetések azonosítójának szinkronizálása                                      | LinkedIn-csatorna és betekintés címke                                |
+| .linkedin.com               | li_sugr                  | Böngésző azonosítója                                           | LinkedIn betekintés címke, ha az IP-cím nem egy kijelölt országban van |
+| .linkedin.com               | BizographicsOptOut       | Meghatározza a harmadik fél követéselutasítási állapotát.              | A LinkedIn vendégvezérlők és az iparág elutasító oldalai           |
+| .linkedin.com               | \_guid                    | Böngészőazonosító a Google hirdetésekhez.                            | LinkedIn-csatorna                                                |
+| .linkedin.com               | li_oatml                 | Az átalakítások nyomon követésének, újracélzásának és analitikájának a tag közvetett azonosítója. | LinkedIn hirdetések és betekintés címkék                                |
+| Különböző belső tartományok | li_fat_id                | Az átalakítások nyomon követésének, újracélzásának és analitikájának a tag közvetett azonosítója. | LinkedIn hirdetések és betekintés címkék                                |
+| .adsymptotic.com            | U                        | Böngészőazonosító                                           | LinkedIn betekintés címke, ha az IP-cím nem egy Kijelölt országban van |
+| .linkedin.com                | b                  | Böngészőazonosító cookie                                            | Kérések a LinkedInhez                                         |
+| .linkedin.com                | bs                 | Biztonságos böngészőcookie                                        | Kérések a LinkedInhez                                         |
+| .linkedin.com               | nyelv                     | Beállítja az alapértelmezett területi beállításokat és a nyelvet.                                 | Kérések a LinkedInhez                                         |
+| .linkedin.com                | lidc                     | Útvonaltervezlshez használatos.                                             | Kérések a LinkedInhez                                         |
+| .linkedin.com               | aam_uuid                 | Adobe-célközönség kezelői cookie                                                     | Beállítás azonosítószinkronizáláshoz                                              |
+| .linkedin.com               | \_ga                      | Google Analytics cookie                                            | Google Analytics                                             |
+| .linkedin.com               | \_gat                     | Google Analytics cookie                                             | Google Analytics                                             |
+| .linkedin.com               | liap                     | Google Analytics cookie                                             | Google Analytics                                             |
+| .linkedin.com               | lissc                    |                                                              |                                                              |
+| .facebook.com               | c_user                   | A cookie tartalmazza a jelenleg bejelentkezett felhasználó felhasználói azonosítóját.  |   Facebook                                                           |
+| .facebook.com               | datr                     | Annak a webböngészőnek az azonosítására használatos, amely a bejelentkezett felhasználótól Facebook független csatlakozáshoz szükséges. | Facebook                                                             |
+| .facebook.com               | wd                       | A böngésző ablakdimenzióit tárolja, és a lap megjelenítésének optimalizálására használja a Facebook. | Facebook                                                             |
+| .facebook.com               | xs                       | A munkamenetszámot képviselő kétjegyű szám. Az érték második része egy munkamenet titkos kód. |  Facebook                                                            |
+| .facebook.com               | fr                       | Egyedi böngészőt és felhasználói azonosítót tartalmaz a célzott hirdetésekhez. |  Facebook                                                            |
+| .facebook.com               | sb                       | A Facebook barátjavaslatokok javítására használható.                                |  Facebook                                                            |
+| .facebook.com               | spin                     |                                                              |  Facebook                                                            |
+| .twitter.com                | vendégazonosító                 |                                                              |  Twitter                                                            |
+| .twitter.com                | kdt                      |                                                              |  Twitter                                                             |
+| .twitter.com                | personalization_id       | A cookie tartalmazza a jelenleg bejelentkezett felhasználó felhasználói azonosítóját.  |  Twitter                                                             |
+| .twitter.com                | remember_checked_on      |                                                              | Twitter                                                              |
+| .twitter.com                | twid                     |                                                              |  Twitter                                                             |
+| .pinterest.com              | \_auth                    | A cookie tartalmazza a jelenleg bejelentkezett felhasználó felhasználói azonosítóját.  |   Pinterest                                                           |
+| .pinterest.com              | \_b                       |                                                              |   Pinterest                                                           |
+| .pinterest.com              | \_pinterest_pfob          |                                                              |  Pinterest                                                            |
+| .pinterest.com              | \_pinterest_referrer      | A cookie oldalakat tartalmaz, amikor a felhasználó a Pinterest gombot választja.      |  Pinterest                                                            |
+| .pinterest.com              | \_pinterest_sess          | A cookie oldalakat tartalmaz, amikor a felhasználó a Pinterest gombot választja.      |  Pinterest                                                            |
+| .pinterest.com              | \_routing_id              |                                                              |  Pinterest                                                            |
+| .pinterest.com              | bei                      |                                                              |  Pinterest                                                            |
+| .pinterest.com              | cm_sub                   | A felhasználóazonosítót és a cookie létrehozási időbélyegzőjét tartalmazza. |  Pinterest                                                            |
+| .pinterest.com              | csrftoken                | A cookie oldalakat tartalmaz, amikor a felhasználó a Pinterest gombot választja.      | Pinterest                                                             |
+| .pinterest.com              | sessionFunnelEventLogged | A cookie oldalakat tartalmaz, amikor a felhasználó a Pinterest gombot választja.      | Pinterest                                                             |
+| .pinterest.com              | Helyi tároló            |                                                              |  Pinterest                                                            |
+| .pinterest.com              | Szolgáltató dolgozók          |                                                              |  Pinterest                                                            |
+
 
 ## <a name="site-user-cookie-consent-on-an-e-commerce-site"></a>Webhely felhasználó cookie-hozzájárulása egy e-kereskedelmi weboldalon 
 

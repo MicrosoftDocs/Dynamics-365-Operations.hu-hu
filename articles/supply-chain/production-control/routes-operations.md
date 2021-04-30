@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6be472336ce8ea58973e897c42f6ee9ae92c0761
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 484a80d9eeb0b652a8363a9ea49f58f9780b6968
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5819280"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908928"
 ---
 # <a name="routes-and-operations"></a>Útvonalak és műveletek
 
@@ -79,7 +79,7 @@ Ahhoz, hogy egy útvonal használható legyen a tervezési vagy termelési folya
 
 Minden útvonal külön jóváhagyott vagy jóvá nem hagyott lehet. Vegye figyelembe azonban, hogy jóvá nem hagyott útvonalak esetén az összes kapcsolódó útvonalverzió szintén jóvá nem hagyott. A Gyártásvezérlési paramétereknél megadhatja, hogy megszüntethető-e az útvonalak jóváhagyása, illetve, hogy a jóváhagyott útvonalak módosíthatók-e.  
 
-Ha naplót kell vezetnie, amely rögzíti, hogy melyik útvonalat ki hagyta jóvá, akkor elektronikus aláírásokat kell használni az útvonalak jóváhagyásakor. A felhasználóknak ezt követően meg kell erősíteniük személyazonosságukat egy [elektronikus aláírás](../../fin-and-ops/organization-administration/electronic-signature-overview.md) segítségével.
+Ha naplót kell vezetnie, amely rögzíti, hogy melyik útvonalat ki hagyta jóvá, akkor elektronikus aláírásokat kell használni az útvonalak jóváhagyásakor. A felhasználóknak ezt követően meg kell erősíteniük személyazonosságukat egy [elektronikus aláírás](../../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md) segítségével.
 
 ## <a name="operations"></a>Operations
 A művelet a termelési folyamat egy lépése. Minden egyes művelethez tartozik egy azonosító és egy egyszerű leírás. A következő táblázatok egy műhely jellemző műveleteit mutatják be.
@@ -185,7 +185,7 @@ Amikor aktivál egy útvonalverziót, akkor kijelöli azt alapértelmezett útvo
 
 ### <a name="electronic-signatures"></a>Elektronikus aláírások
 
-Ha naplót kell vezetnie, amely rögzíti, hogy melyik útvonalverziót ki hagyta jóvá, akkor elektronikus aláírásokat kell használni ezeknél a feladatoknál. Az útvonalverziókat jóváhagyó és aktiváló felhasználóknak ezt követően igazolniuk kell személyazonosságukat egy [elektronikus aláírás](../../fin-and-ops/organization-administration/electronic-signature-overview.md) segítségével.
+Ha naplót kell vezetnie, amely rögzíti, hogy melyik útvonalverziót ki hagyta jóvá, akkor elektronikus aláírásokat kell használni ezeknél a feladatoknál. Az útvonalverziókat jóváhagyó és aktiváló felhasználóknak ezt követően igazolniuk kell személyazonosságukat egy [elektronikus aláírás](../../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md) segítségével.
 
 ### <a name="product-change-that-uses-case-management"></a>Termékmódosítás, amely esetkezelést használ.
 
@@ -253,7 +253,7 @@ Ezért, ha az Aktiválás van kiválasztva az Átfedéshez a többi beállítás
 
 - [Erőforrás-képességek](resource-capabilities.md)
 
-- [Az elektronikus aláírás áttekintése](../../fin-and-ops/organization-administration/electronic-signature-overview.md)
+- [Az elektronikus aláírás áttekintése](../../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md)
 
 
 

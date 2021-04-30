@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 7783c22659c5a2b070648c82a8b72e49e17b8e34
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 46e8fba0c1269aa8b81e0df8d415fe11b2307924
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5823860"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897308"
 ---
 # <a name="financial-dimensions-and-posting"></a>A pénzügyi dimenziók és a feladás 
 
@@ -83,17 +83,17 @@ A naplófejlécen levő alapértelmezett dimenzió következtében a 023 részle
 
 Azonban a sor feladásakor a rendszer a rögzített dimenziót alkalmazza, és a sort a 022 részlegnek adja fel. Az alábbi ábra a feladott bizonylatot jeleníti meg, amelyre a rendszer a rögzített dimenziót alkalmazta az értékesítési számlára.
 
-[![Bizonylattranzakciók](./media/voucher-transactions.png)](./media/voucher-transactions.png)
+[![Rögzített dimenzióval alkalmazott bizonylattranzakciók](./media/voucher-transactions.png)](./media/voucher-transactions.png)
 
 ### <a name="example-2"></a>2. példa
 
 Ez a példa ugyanazt a beállítást használja, mint az első példa. Mi azonban egy második összetevőt adunk hozzá, a Részlegdimenziót pedig kiegyenlítő dimenzióként használjuk. Az alábbi példában a **Részleg** az USMF főkönyvhöz beállított kiegyenlítő pénzügyi dimenzió.
 
-[![Főkönyv](./media/ledger.png)](./media/ledger.png)
+[![A részleget kiegyenlítő pénzügyi dimenzióként megjelenítő ábra](./media/ledger.png)](./media/ledger.png)
 
 Ha a napló fejléce ugyanazt a beállítást használja, és ugyanazt a tranzakciót adja fel, először a rögzített dimenzió érvényesül. Ezután a kiegyenlítő logika következik, amely garantálja, hogy minden részleg kiegyensúlyozott tétellel rendelkezzen. Az alábbi ábra olyan bizonylattranzakciókat jelenít meg, amelyek tartalmazzák a rögzített dimenziók alkalmazása utáni kiegyenlítő bejegyzést.
 
-[![Bizonylattranzakciók](./media/voucher-transactions2.png)](./media/voucher-transactions2.png)
+[![Bizonylattranzakciók a kiegyenlítő bejegyzés alkalmazása után](./media/voucher-transactions2.png)](./media/voucher-transactions2.png)
 
 ### <a name="example-3"></a>3. példa
 
@@ -119,11 +119,11 @@ Az alábbi segédanyagok egy része szoftverünk egy korábbi verziójára vonat
 
 [Számlatükör tervezése](plan-chart-of-accounts.md) 
 
-[Számlatükör tervezése az AX 2012 rendszerben blog](https://blogs.msdn.microsoft.com/axsa/2014/06/12/planning-your-chart-of-accounts-in-ax-2012-part-1-of-7/) – A hivatkozás egy hétrészes cikksorozat első részére mutat.
+[Számlatükör tervezése az AX 2012 rendszerben blog](/archive/blogs/axsa/planning-your-chart-of-accounts-in-ax-2012-part-1-of-7) – A hivatkozás egy hétrészes cikksorozat első részére mutat.
 
-[Dimenzió alapértelmezés a könyvelési felosztásokban](https://blogs.msdn.microsoft.com/ax_gfm_framework_team_blog/2013/12/16/dimension-defaulting-in-accounting-distributions-part-1-introduction/)
+[Dimenzió alapértelmezés a könyvelési felosztásokban](/archive/blogs/ax_gfm_framework_team_blog/dimension-defaulting-in-accounting-distributions-part-1-introduction)
 
-[Dimenzió alapértelmezés a Dimenzió-keretrendszerben](https://docs.microsoft.com/archive/blogs/ax_gfm_framework_team_blog/dimension-defaulting-part-1-financial-dimensions-discovery)
+[Dimenzió alapértelmezés a Dimenzió-keretrendszerben](/archive/blogs/ax_gfm_framework_team_blog/dimension-defaulting-part-1-financial-dimensions-discovery)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

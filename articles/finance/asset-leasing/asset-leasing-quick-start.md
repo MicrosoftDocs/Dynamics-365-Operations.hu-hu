@@ -2,11 +2,11 @@
 title: Eszközlízing – első lépések
 description: Ez a témakör az eszközlízing-képességet ismerteti, valamint bemutatja az eszközlízing létrehozásának, valamint a lízingekkel kapcsolatos információk megtekintésének lépéseit.
 author: moaamer
-ms.date: 10/16/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: AssetLeaseLeasingWorkspace
 audience: Application User
 ms.reviewer: roschlom
 ms.custom: 4464
@@ -15,18 +15,20 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-09-24
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 6d5b51e89ec0e64182671872573ec0140939a836
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 8141badab2561707e2055d7084323ed4310d2421
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814128"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5892433"
 ---
 # <a name="asset-leasing-get-started"></a>Eszközlízing – első lépések
 
 [!include [banner](../includes/banner.md)]
 
 Ez a témakör az eszközlízing-képességet ismerteti, valamint bemutatja az eszközlízing létrehozásának, valamint a lízingekkel kapcsolatos információk megtekintésének lépéseit. A témakör a felhasználói felületen és a dokumentációban használt terminológiát is meghatározza. Az eszközlízing egy speciális modul, amely lehetővé teszi a lízingelt eszközökre vonatkozó pénzügyi tranzakciók kezelését, nyomon követését és automatizálását a Microsoft Dynamics 365 Finance alkalmazásban. Az eszközlízing megfelel a nemzetközi könyvelési szabványoknak (IFRS 16) és az Egyesült Államokban GAAP szabványainak (ASC 842). Az eszközlízing modul rögzíti és dolgozza fel a lízinggel kapcsolatos adatokat, és segítséget nyújt a naplóbejegyzések létrehozásában a lízing életciklusa alatt – a kezdő elszámolástól és a havi naplóbejegyzésektől egészen a lízing értékvesztéséig és lezárásáig. Az eszközlízing modul zökkenőmentesen épül be a Dynamics 365 Finance egyéb összetevőibe, így például a tárgyi eszközökbe, a kötelezettségekbe és a főkönyvbe is.
+
+A funkció használata előtt be kell azt kapcsolnia saját rendszerében. A rendszergazdák használhatják a **Funkciókezelés** munkaterületet a funkció állapotának ellenőrzéséhez, és szükség esetén bekapcsolásához. A **Funkciókezelés** munkaterületen keresse meg és válassza ki az **Eszközlízing** funkciót, majd kattintson az **Engedélyezés most** gombra.
 
 A könyvelési szabványokkal kapcsolatos további tudnivalókat lásd az IFRS 16 és az USA GAAP ASC 842 szabványok dokumentációjában.
 

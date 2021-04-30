@@ -2,7 +2,7 @@
 title: SPLIT ER-függvény
 description: A témakör tájékoztatást nyújt a SPLIT Elektronikus jelentéskészítés (ER) függvény használatának módjáról.
 author: NickSelin
-ms.date: 12/12/2019
+ms.date: 04/01/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5c99ee5e8129ed45253893dc83acdef99b4ce2c9
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 26b6ddeb2880fc220283b6389327a497549a4511
+ms.sourcegitcommit: 74f5b04b482b2ae023c728e0df0eb78305493c6a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745593"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "5853443"
 ---
 # <a name="split-er-function"></a>SPLIT ER-függvény
 
@@ -80,9 +80,17 @@ A `SPLIT ("abcd", 3)` két rekordot tartalmazó új listát jelenít meg, amelye
 
 A `SPLIT ("XAb aBy", "aB")` három rekordot tartalmazó új listát jelenít meg, amelyek a *Karakterlánc* típusú **Érték** mezővel rendelkeznek. Az első rekordban szereplő **Érték** mező az **„X”** szöveget, a második rekordban szereplő **Érték** mező a **„&nbsp;”** szöveget, a harmadik rekordban szereplő **Érték** mező pedig az **„y”** szöveget tartalmazza. 
 
+## <a name="example-3"></a>3. példa
+
+Az [INDEX](er-functions-list-index.md) függvény segítségével lehet elérni a megadott bemeneti karakterlánc egyes elemeit. Ha megadja a **Számított mező** típusú **MyList** adatforrást, és konfigurálja hozzá a `SPLIT("abc", 1)` kifejezést, akkor a `INDEX(MyList,2).Value` kifejezés a **„b”** szöveges értéket adja vissza.
+
+## <a name="example-4"></a>4. példa
+
+Az [ENUMERATE](er-functions-list-enumerate.md) függvény segítségével szintén el lehet érni a megadott bemeneti karakterlánc egyes elemeit. Ha először a **Számított mező** típus **MyList** adatforrását adja meg, és annak konfigurálja a `SPLIT("abc", 1)` kifejezést, majd beírja a **Számított mező** típus **EnumeratedList** adatforrását, és konfigurálja a `ENUMERATE(MyList)` kifejezéshez, a `FIRSTORNULL(WHERE(EnumeratedList, EnumeratedList.Number=2)).Value` kifejezés a **„b”** szöveget adja vissza.
+
 ## <a name="additional-resources"></a>További erőforrások
 
-[Lista függvények](er-functions-category-list.md)
+[Listafüggvények](er-functions-category-list.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

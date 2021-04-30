@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 14a5e1cea5a249b6087ef87560dd06bc026dd129
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9ed56920ca1b4f2ac1313f7025b7a3c7245e9913
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5822131"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5898210"
 ---
 # <a name="budget-planning-overview"></a>Költségvetés-tervezés áttekintése
 
@@ -75,7 +75,7 @@ A következő ábrán látható példán a vállalati központ megbecsüli a kez
 
 A **Szervezeti hierarchia** lapon költségvetés-tervezési hierarchiaként megadhat egy szervezeti hierarchiát minden egyes költségvetés-tervezési folyamatra. A költségvetés-tervezési hierarchiának nem kell megegyeznie a más célokra használt szokásos szervezeti hierarchiával. Mivel ezt a hierarchiát az adatok összesítésére és felosztására használjuk, érdemes egy másik szerkezetet létrehozni hozzá. A mintasablonban az értékesítési részleg a központ szintje alatt van a költségvetési és a pénzügyi részleggel együtt. Ennek a szerkezetnek valószínűleg eltér a struktúrája attól, amely az értékesítési részlegek műveleteinek kezelésére használunk. Egy költségvetés-tervezési folyamathoz csak egy szervezeti hierarchia rendelhető.
 
-További tudnivalókért lásd: [Szervezetek és szervezeti hierarchiák](../../fin-and-ops/organization-administration/organizations-organizational-hierarchies.md).
+További tudnivalókért lásd: [Szervezetek és szervezeti hierarchiák](../../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md).
 
 ### <a name="user-security"></a>Felhasználói biztonság
 
@@ -163,7 +163,7 @@ A költségvetés összege oszlopon kívül a projekt, a javasolt projekt, a tá
 
 A példasémához ajánlott az „előző évi értékesítés”, „Szerződések” és „Előrejelzés” tervváltozatokhoz oszlopokat létrehozni. (A következő ábra a séma releváns részét mutatja.) Ezután különböző oszlopokra bonthatja az egyik vagy az összes tervváltozatot a pénzügyi év minden negyedévére, ezáltal az értékesítési részleg vezetője pontosan megadhatja az előrejelzett összegeket az egyes időszakokra vonatkozóan.
 
-[![Oszlopok](./media/columns.png)](./media/columns.png)
+[![Az oszlopok hozzáadási séma szakaszainak ábrája](./media/columns.png)](./media/columns.png)
 
 Megadhatja azt is, hogy szerkeszthető-e minden elrendezési elem (oszlop), és hogy elérhető-e minden munkalapsablonon, amelyet ehhez az elrendezéshez hoztak létre. A mintasablonnál a „Becslés” szakaszhoz használt elrendezésben az „előrejelzés” oszlopai szerkeszthetők, míg az „előző évi értékesítések” és a „szerződések” oszlopok írásvédettek.
 

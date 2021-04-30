@@ -1,8 +1,8 @@
 ---
 title: Elektronikus jelentéskészítési (ER) konfigurációk életciklusainak kezelése
-description: Ez a témakör ismerteti az Elektronikus jelentés (ER) konfigurációk életciklusának kezelését a Microsoft Dynamics 365 Finance megoldás esetén.
+description: Ez a témakör ismerteti az Elektronikus jelentés (ER) konfigurációk életciklusának kezelését a Dynamics 365 Finance megoldás esetén.
 author: NickSelin
-ms.date: 06/20/2017
+ms.date: 04/13/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 165f2c981b550f8a6fd4d2ce08763e6fa3c8b6e7
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 52aba53b5323a9c6c4331cd8de7e932bb9c3547e
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750106"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893201"
 ---
 # <a name="manage-the-electronic-reporting-er-configuration-lifecycle"></a>Elektronikus jelentéskészítési (ER) konfigurációk életciklusainak kezelése
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör ismerteti az Elektronikus jelentés (ER) konfigurációk életciklusának kezelését a Microsoft Dynamics 365 Finance megoldás esetén.
+Ez a témakör ismerteti az Elektronikus jelentés (ER) konfigurációk életciklusának kezelését a Dynamics 365 Finance megoldás esetén.
 
 ## <a name="overview"></a>Áttekintés
 
@@ -45,7 +45,7 @@ Az Elektronikus jelentés (ER) felel a jogszabályokban követelményként elő�
 
 - Tegyen elérhetővé egy sablont, ezáltal használhatóvá válnak más példányokban:
 
-    - Alakítson át egy, a Dynamics AX-ben készült dokumentumot ER konfigurációvá. Ezt követően exportálja a jelenlegi alkalmazáspéldányból helyileg, illetve LCS-ben tárolható XML csomagként.
+    - Alakítson át egy, a Dynamics AX-ben készült dokumentumot ER konfigurációvá. Ezt követően exportálja a jelenlegi alkalmazáspéldányból helyileg, illetve Lifecycle Servicesben (LCS) tárolható XML csomagként.
     - Alakítson át ER konfigurációt alkalmazás-dokumentumsablonná.
     - Importáljon egy helyben, vagy LCS-ben tárolt XML csomagot a példányába.
 
@@ -78,9 +78,20 @@ A következő, ER-rel kapcsolatos okok miatt javasolt a ER-konfigurációkat a f
 - Az **Elektronikus jelentések fejlesztője** vagy az **Elektronikus jelentések funkcióival foglalkozó konzulens** szerepkörrel rendelkező felhasználók szerkeszthetik a konfigurációkat is futtathatják azokat tesztelés céljából. Olyan osztályok és táblázatok módszereit hívhatja meg, amelyek esetleg károsak lehetnek az üzleti adatokra és a példány használati hatékonyságára nézve.
 - A belépési pontok és naplózott vállalati tartalmak nem korlátozzák az osztály- és táblázatmódszerek ER-konfigurációkhoz tartozó ER-adatforrásokként történő hívását. Tehát a bizalmas üzleti adatokhoz hozzáférnek az **Elektronikus jelentések fejlesztője** vagy az **Elektronikus jelentések funkcióival foglalkozó konzulens** szerepkörrel rendelkező felhasználók.
 
-A fejlesztői környezetben megtervezett ER-konfigurációk feltölthetők a tesztkörnyezetbe a konfiguráció kiértékelése (megfelelő folyamatintegrálás, eredményhelyesség, teljesítmény), illetve a minőségbiztosítás (például szerepkörtől függő hozzáférési jogok helyessége, feladatkörök szétválasztása) céljából. Azok a funkciók használhatóak erre a célra, amelyek engedélyezik az ER konfiguráció adatcseréjét. Végül az igazoltan helyes ER-konfigurációk feltölthetők az LCS-be megosztva a szolgáltatás előfizetőivel, vagy az éles környezetbe belső használatra, a következő ábrán látható módon.
+A fejlesztői környezetben megtervezett ER-konfigurációk [feltölthetők](#data-persistence-consideration) a tesztkörnyezetbe a konfiguráció kiértékelése (megfelelő folyamatintegrálás, eredményhelyesség, teljesítmény), illetve a minőségbiztosítás (például szerepkörtől függő hozzáférési jogok helyessége, feladatkörök szétválasztása) céljából. Azok a funkciók használhatóak erre a célra, amelyek engedélyezik az ER konfiguráció adatcseréjét. Az igazoltan helyes ER-konfigurációk feltölthetők az LCS-be megosztásra a szolgáltatás előfizetőivel, vagy [importálhatók](#data-persistence-consideration) az éles környezetbe belső használatra.
 
 ![ER-konfigurációs életciklus](./media/ger-configuration-lifecycle.png)
+
+## <a name="data-persistence-consideration"></a><a name="data-persistence-consideration" />Adatperzisztencia figyelembe vétele
+
+Az ER [konfiguráció](general-electronic-reporting.md#Configuration) különböző [verzióit](general-electronic-reporting.md#component-versioning) külön-külön is [importálhatja](tasks/er-import-configuration-lifecycle-services.md) a Finance példányba. Az ER-konfiguráció új verziójának importálása esetén a rendszer szabályozza ennek a konfigurációnak a vázlatverzióját:
+
+   - Ha az importált verzió alacsonyabb, mint a jelenlegi Finance példány konfigurációjának legmagasabb verziója, akkor a konfiguráció vázlatverziójának tartalma változatlan marad.
+   - Ha az importált verzió magasabb, mint a jelenlegi Finance példány konfigurációjának bármely más verziója, akkor a program átmásolja az importált verzió tartalmát ennek a konfigurációnak a vázlatverzióba, hogy folytatható legyen a legutóbbi befejeződött verzió szerkesztése.
+
+Ha a konfiguráció tulajdonosa az aktuálisan aktivált konfigurációs [szolgáltató](general-electronic-reporting.md#Provider), akkor ennek a konfigurációnak a vázlatverziója látható a **Konfigurációk** lap **Verziók** gyorslapján (**Szervezet felügyelete** > **Elektronikus jelentés** > **Konfigurációk**). A megfelelő ER tervezővel kiválaszthatja a konfiguráció vázlatverzióját, és [módosíthatja](er-quick-start2-customize-report.md#ConfigureDerivedFormat) a tartalmát. Ha szerkesztette az ER-konfiguráció vázlatverzióját, akkor a tartalma már nem egyezik meg a jelenlegi Finance példány konfigurációjának legmagasabb verziójával. A módosítások elvesztésének megakadályozása érdekében a rendszer hibát jelenít meg azzal, hogy az importálás nem folytatható, mert a konfiguráció verziója magasabb, mint a konfigurációnak a jelenlegi Finance példányban érvényes legmagasabb verziója. Ilyen esetben például az **X** formátumkonfigurációnál, ez a hiba jelenik meg: **Az „X” formátum verziója nem fejeződött be**.
+
+A vázlatverzióban bevezetett módosítások visszavonásához válassza ki a Finance eszközben az ER-konfiguráció legmagasabb befejeződött vagy megosztott verzióját a **Verziók** gyorslapon, majd válassza a **Verzió beszerzése** lehetőséget. A kiválasztott verzió tartalmát a program a vázlatverzióba másolja.
 
 ## <a name="additional-resources"></a>További erőforrások
 

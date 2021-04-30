@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: dab70b213efc7e7a3537aa2b47b9edf38d492d34
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: ca50f030e67e517a227766f6a30d4bd4b345300b
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753720"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5894124"
 ---
 # <a name="specify-a-custom-storage-location-for-generated-documents"></a>Egyéni tárolóhely meghatározása a létrehozott dokumentumoknak
 
@@ -27,7 +27,7 @@ A alkalmazásprogramozási felület (API) az Elektronikus jelentéskészítéshe
 
 ## <a name="prerequisites"></a>Előfeltételek
 
-Telepítenie kell egy topológiát, amely támogatja a folyamatos buildet. (További tájékoztatás: [A folyamatos build- és tesztautomatizálást támogató topológiák telepítése](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/perf-test/continuous-build-test-automation).) Hozzáféréssel kell rendelkezzen ezen topológiához a következő szerepkörök egyikében:
+Telepítenie kell egy topológiát, amely támogatja a folyamatos buildet. (További tájékoztatás: [A folyamatos build- és tesztautomatizálást támogató topológiák telepítése](/dynamics365/unified-operations/dev-itpro/perf-test/continuous-build-test-automation).) Hozzáféréssel kell rendelkezzen ezen topológiához a következő szerepkörök egyikében:
 
 - Elektronikus jelentések fejlesztője
 - Elektronikus jelentések funkcióival foglalkozó konzulens
@@ -53,7 +53,7 @@ A jelenlegi topológiában [hozzon létre egy új ER formátumot](tasks/er-forma
 
 Annak megadásához, hogy az ER formátum által létrehozott dokumentumok hogyan továbbítódnak, konfigurálnia kell [Elektronikus jelentéskészítési (ER) célokat](electronic-reporting-destinations.md). A létrehozott dokumentumok fájlként tárolására konfigurált minden ER cél esetében meg kell adnia egy dokumentumtípust, a dokumentumkezelő keretrendszerben. A különféle dokumentumtípusok használhatók az ER formátumok által generált dokumentumok átirányításához.
 
-1. Adjon hozzá új [dokumentumtípust](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management) a korábban importált vagy létrehozott ER formátumhoz. A következő illusztrációban a dokumentumtípus **FileX**.
+1. Adjon hozzá új [dokumentumtípust](../../fin-ops/organization-administration/configure-document-management.md) a korábban importált vagy létrehozott ER formátumhoz. A következő illusztrációban a dokumentumtípus **FileX**.
 2. A dokumentumtípus megkülönböztetéséhez egyéb dokumentumtípusoktól adja meg az adott kulcsszót nevében. Például a következő ábrán a név **(LOCAL) mappa**.
 3. Az **Osztály** mezőben adja meg a **Fájl csatolása** elemet.
 4. A **Csoport** mezőben adja meg a **Fájl** elemet.
@@ -117,14 +117,14 @@ Az **AttachingFile()** esemény akkor következik be, amikor a következő ER c�
 
 ## <a name="configure-an-er-destination"></a>Egy ER-célhely konfigurálása
 
-1. Konfigurálja az archivált célt valamelyik korábban említett elemhez (fájl, mappa, egyesítés vagy melléklet) a létrehozott vagy importált ER formátumhoz. Útmutatásért lásd: [ER célok konfigurálása](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-destinations-2016-11).
+1. Konfigurálja az archivált célt valamelyik korábban említett elemhez (fájl, mappa, egyesítés vagy melléklet) a létrehozott vagy importált ER formátumhoz. Útmutatásért lásd: [ER célok konfigurálása](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-destinations-2016-11).
 2. Használja a dokumentumtípust, amelyet korábban hozzáadott a konfigurált célhoz. (Például ebben a témakörben a dokumentumtípus **FileX**.)
 
 ![Célhely beállításai párbeszédablak](media/er-extend-file-storages-destination.png)
 
 ## <a name="modify-source-code"></a>Forráskód módosítása
 
-1. Adjon hozzá új osztályt a Microsoft Visual Studio projekthez, és írjon kódot a korábban említett **AttachingFile()** eseményre való feliratkozáshoz. (A használt bővítési mintával kapcsolatos további tudnivalókat lásd: [Válasz EventHandlerResult használatával](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/extensibility/respond-event-handler-result).) Az új osztályban például írjon kódot a következő műveletek végrehajtásához:
+1. Adjon hozzá új osztályt a Microsoft Visual Studio projekthez, és írjon kódot a korábban említett **AttachingFile()** eseményre való feliratkozáshoz. (A használt bővítési mintával kapcsolatos további tudnivalókat lásd: [Válasz EventHandlerResult használatával](/dynamics365/unified-operations/dev-itpro/extensibility/respond-event-handler-result).) Az új osztályban például írjon kódot a következő műveletek végrehajtásához:
 
     1. Előállított fájlok tárolása az Application Object Server (AOS) szolgáltatást futtató kiszolgáló a helyi fájlrendszerének, egy mappájában.
     2. A létrehozott fájlok tárolása, csak akkor, amikor az új dokumentumtípus (például a **FileX** típus, amelynek nevében szerepel a"(LOCAL)" kulcsszó) van használva, amikor egy fájlt a rekordhoz van csatolva az ER végrehajtási munkanaplóban.

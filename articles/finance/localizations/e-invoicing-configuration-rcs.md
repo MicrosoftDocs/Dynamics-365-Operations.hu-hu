@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 9958091db4a3d7ce0b625e5adc8e2a6b37878618
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d7945cc899cf161f294dfcc3f6d1a9a79c9453ab
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840244"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897720"
 ---
 # <a name="configure-electronic-invoicing-in-regulatory-configuration-services-rcs"></a>Elektronikus számlázás konfigurálása a Regulatory Configuration Services (RCS) megoldásban
 
@@ -50,6 +50,14 @@ Végül a funkciók támogatják az olyan külső webes szolgáltatásokkal tör
 
 Az elektronikus számlázási funkciók elérhetősége az országtól vagy területtől függ. Bár egyes szolgáltatások általában elérhetők, mások előnézetben érhetők el.
 
+#### <a name="generally-available-features"></a>Általánosan elérhető funkciók
+
+Az alábbi táblázat bemutatja az általánosan elérhető elektronikus számlázási funkciókat.
+
+| Ország/régió | Funkció neve                         | Üzleti dokumentum |
+|----------------|--------------------------------------|-------------------|
+| Egyiptom          | Egyiptomi elektronikus számla (EG) | Értékesítési és projektszámlák |
+
 #### <a name="preview-features"></a>Előnézeti funkciók
 
 Az alábbi táblázat bemutatja az előnézetben jelenleg elérhető elektronikus számlázási funkciókat.
@@ -61,7 +69,6 @@ Az alábbi táblázat bemutatja az előnézetben jelenleg elérhető elektroniku
 | Brazília         | Brazil NF-e (BR)                  | 55-ös modellű pénzügyi bizonylat, helyesbítő levelek, érvénytelenítések és elvetések |
 | Brazília         | Brazil NFS-e ABRASF Curitiba (BR) | Szolgáltatási pénzügyi bizonylatok |
 | Dánia        | Dán elektronikus számla (DK)       | Értékesítési és projektszámlák |
-| Egyiptom          | Egyiptomi elektronikus számla (EG) | Értékesítési és projektszámlák |
 | Észtország        | Észt elektronikus számla (EE)     | Értékesítési és projektszámlák |
 | Finnország        | Finn elektronikus számla (FI)      | Értékesítési és projektszámlák |
 | Franciaország         | Francia elektronikus számla (FR)       | Értékesítési és projektszámlák |
@@ -202,6 +209,91 @@ A következő táblázat felsorolja a rendelkezésre álló műveleteket, valami
 | Mexikói PAC-szolgáltatás hívása                      | Integráció a mexikói PAC-szolgáltatással CFDI beküldéséhez.                      | Előnézetben           |
 | Folyamatválasz                              | A webszolgáltatás hívása alapján kapott válasz elemzése.                     | Általánosan elérhető  |
 | MS Power Automate használata                         | Integrálható a beépített Microsoft Power Automate-folyamatokkal.                       | Előnézetben           |
+
+### <a name="applicability-rules"></a>Alkalmazhatósági szabályok
+
+Az alkalmazhatósági szabályok az Elektronikus számlázás funkció szintjén meghatározott konfigurálható záradékok. A szabályok úgy konfigurálják, hogy kontextust adjanak az elektronikus számlázás készségnek az Elektronikus számlázásra beállított funkción keresztül.
+
+Ha egy üzleti dokumentumot a Finance vagy a Supply Chain Management elektronikus számlázásra küldenek be, akkor az üzleti dokumentumhoz nem tartozik egyértelmű hivatkozás, amely lehetővé teszi, hogy az Elektronikus számlázási funkciók egy bizonyos elektronikus számlázási funkciót hívjanak meg a beküldés feldolgozásához.
+
+Azonban a megfelelő konfigurálás esetén az üzleti dokumentum tartalmazza azokat a szükséges elemeket, amelyek lehetővé teszik az elektronikus számlázást annak megoldásához, hogy melyik elektronikus számlázási funkciót kell kiválasztani, majd létre kell hozni az elektronikus számlát.
+
+Az alkalmazhatósági szabályok lehetővé teszik, hogy az Elektronikus számlázás lehetővé tegye a pontos elektronikus számlázási funkciók megkeresését, amelyek a benyújtás feldolgozásához használatosak. Ehhez a beküldött üzleti dokumentum tartalmát egyeztetni kell az alkalmazhatósági szabályokban szereplő záradékokkal.
+
+Például az elektronikus számlázáshoz kapcsolódó Alkalmazhatósági szabályokkal rendelkező két elektronikus számlázási funkció az Elektronikus számlázás készségkészletbe kerül.
+
+| Elektronikus számlázási funkció | Alkalmazhatósági szabályok        |
+|------------------------------|--------------------------- |
+| A                            | <p>Ország = BR</p><p>és</p><p>Jogi személy = BRMF</p>  |
+| milliárd                            | <p>Ország = MX</p><p>és</p><p>Jogi személy = MXMF</p>  |
+
+Ha a Finance vagy a Supply Chain Management valamelyik üzleti dokumentumát az Elektronikus számlázás képességkészlethez beküldik, akkor az üzleti dokumentum a következő attribútumokat tartalmazza:
+
+- Ország = BR
+- Jogi személy = BRMF
+
+Az Elektronikus számlázás képességkészlet az **A** elektronikus számlázási funkciót választja az elküldés feldolgozásához és az elektronikus számla létrehozásához.
+
+Ugyanez érvényes akkor is, ha az üzleti dokumentum a következő elemeket tartalmazza:
+
+- Ország = MX
+- Jogi személy = MXMF
+
+Az elektronikus számla létrehozásához a **B** elektronikus számlázási funkció van kiválasztva.
+
+Az Alkalmazhatósági szabályok konfigurációja nem lehet kétértelmű. Ez azt jelenti, hogy két vagy több elektronikus számlázási funkció nem tartalmazhatja ugyanazt az záradékot, ellenkező esetben nem lesz végrehajtva a kiválasztás. Ha az elektronikus számlázási funkciók ismétlődnek, a kétértelműség elkerülése érdekében használjon további záradékokat, amelyek lehetővé teszik, hogy az elektronikus számlázással meg lehessen különböztetni a két elektronikus számlázási funkciót.
+
+Vegyük például az elektronikus számlázás **C** funkcióját. Ez a funkció az **A** elektronikus számlázási funkció másolata.
+
+| Elektronikus számlázási funkció | Alkalmazhatósági szabályok        |
+|------------------------------|--------------------------- |
+| A                            | <p>Ország = BR</p><p>és</p><p>Jogi személy = BRMF</p>  |
+| K                            | <p>Ország = BR</p><p>és</p><p>Jogi személy = BRMF</p>  |
+
+Ebben a példában a **C** funkció a következőket tartalmazó üzleti dokumentumok benyújtása előtt áll:
+
+- Ország = BR
+- Jogi személy = BRMF
+
+Az Elektronikus számlázás képesség nem tudja megkülönböztetni, hogy melyik elektronikus számlázási funkciót kell használni a beküldés feldolgozásához, mivel a beküldött adatok pontosan ugyanazt az záradékot tartalmazzák.
+
+Ahhoz, hogy az Alkalmazhatósági szabályok segítségével meg lehessen különböztetni a két funkciót, egy új záradékot kell hozzáadni az egyik funkcióhoz, hogy az Elektronikus számlázási képességkészlet a megfelelő elektronikus számlázási funkciót válassza ki.
+
+| Elektronikus számlázási funkció | Alkalmazhatósági szabályok        |
+|------------------------------|--------------------------- |
+| A                            | <p>Ország = BR</p><p>és</p><p>Jogi személy = BRMF</p>  |
+| K                            | <p>Ország = BR</p><p>és</p><p>Jogi személy = BRMF</p><p>és</p><p>Modell=55</p>  |
+
+Az összetettebb záradékok létrehozásának támogatása érdekében a következő erőforrások állnak rendelkezésre:
+
+Logikai operátorok:
+- És
+- Vagy
+
+Operátorok típusai:
+- Equal
+- Not equal
+- Greater than
+- Less than
+- Nagyobb vagy egyenlő
+- Kisebb vagy egyenlő
+- Contains
+- Kezdete
+
+Adattípusok:
+- Sztring
+- Szám
+- Logikai
+- Dátum
+- UUID
+
+A záradékok csoportosításra és a csoportok szétválasztására való képesség.
+A példa a következőképpen néz ki.
+
+| Elektronikus számlázási funkció | Alkalmazhatósági szabályok        |
+|------------------------------|--------------------------- |
+| K                            | <p>Ország = BR</p><p>és</p><p>( Jogi személy = BRMF</p><p>vagy</p><p>Modell=55)</p>  |
+
 
 ## <a name="configuration-providers"></a>Konfigurációszolgáltatók
 

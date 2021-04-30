@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 760763078d10c56c8bc485601a2f14979d28ac11
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 158d96e748b982c87be3f8b08f68d1fdb919aeeb
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5830736"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897162"
 ---
 # <a name="sepa-credit-transfer-overview"></a>SEPA átutalás áttekintése
 
@@ -54,7 +54,7 @@ A jóváírási átmozgatás formátuma az európai országokban az elektronikus
 Mindig meg kell keresnie a Microsoft Dynamics Lifecycle services (LCS) megosztott eszközkönyvtárát, és meg kell tekintenie a legfrissebb listát a rendelkezésre álló fájlokról, amelyek **GER-konfiguráció** eszköztípusúak. A következő szakasz, a "Mit kell beállítanom?" hivatkozást biztosít a témához, amely leírja, hogyan hozhat létre LCS-adattárat az elérhető konfigurációk áttekintéséhez és a kiválasztott konfigurációk importálásához.
 
 ## <a name="what-do-i-have-to-set-up"></a>Mit kell beállítanom?
--   Mielőtt átutalási fájlokat hoz létre, legalább egy aktív SEPA átutalási konfigurációt importálni kell az ER-konfigurációkba. További utasításokért lásd: [Az elektronikus jelentési beállítások letöltése a Lifecycle Services rendszerből](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
+-   Mielőtt átutalási fájlokat hoz létre, legalább egy aktív SEPA átutalási konfigurációt importálni kell az ER-konfigurációkba. További utasításokért lásd: [Az elektronikus jelentési beállítások letöltése a Lifecycle Services rendszerből](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 -   Válassza ki az **Általános elektronikus jelentéskészítés** jelölőnégyzetet, majd válassza ki a megfelelő átutalási formátumot (pl. **ISO 20022 átutalás (AT)**) exportformátum-konfigurációként, amikor konfigurálja a Kötelezettségek fizetési módjait.
 -   Be kell állítani a jogi személyt és a bankszámla adatait.
 -   Bankszámlaszámok, IBAN-ok és néha SWIFT-kódok (BIC-k) vagy más azonosító adatok szükségesek az érvényes átutalások létrehozásához. Ezért be kell állítania őket az eladói bankszámlához és az átutalást kérelmező szervezet bankszámlájához.

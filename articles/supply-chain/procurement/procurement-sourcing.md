@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 96e112432ba79d2657a8d440e8e040fca45392a2
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d94426580d65dc1639de4b2dd1b3f283724a1a9e
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825518"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909204"
 ---
 # <a name="procurement-and-sourcing-home-page"></a>Beszerzési és forrásparaméterek kezdőlapja
 
@@ -83,12 +83,12 @@ A Beszerzés és forrás modul lefedi az összes lépést a termék- és szolgá
 ## <a name="prices-and-discounts"></a>Árak és engedmények
 -   [Beszerzési szerződések](purchase-agreements.md)
 -   [Beszerzési szerződés létrehozása](tasks/create-purchase-agreement.md)
--   [Szállítói visszatérítések](https://docs.microsoft.com/dynamics/s-e/) (útmutató)
+-   [Szállítói visszatérítések](/dynamics/s-e/) (útmutató)
 
 ## <a name="product-receipt-and-invoicing"></a>A termék bevételezése és számlázása
 -   [Beszerzési rendelés - termékbevételezés](product-receipt-against-purchase-orders.md)
--   [Szállítói számlák áttekintése](../../financials/accounts-payable/vendor-invoices-overview.md)
--   [Szállítói feladási profilok](../../financials/accounts-payable/vendor-posting-profiles.md)
+-   [Szállítói számlák áttekintése](../../finance/accounts-payable/vendor-invoices-overview.md)
+-   [Szállítói feladási profilok](../../finance/accounts-payable/vendor-posting-profiles.md)
 
 ## <a name="procurement-and-sourcing-workflows"></a>Beszerzésekkel és forrásokkal kapcsolatos munkafolyamatok
 -   [A Beszerzés és forrás modul áttekintése](procurement-sourcing-overview.md)

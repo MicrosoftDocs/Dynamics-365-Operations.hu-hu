@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: ff00b577428c96804af5af29a91c7048bf736400
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 62bc6587ad80fd318038f5dfc5ff68821b2a65cd
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753336"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893932"
 ---
 # <a name="allow-users-to-set-up-an-er-format-reference-inquiring-a-format-from-the-global-repository"></a>A felhasználók számára a Globális tárházban tárolt formátumot lekérő formátumreferencia beállításának engedélyezése
 
@@ -30,7 +30,7 @@ Az [Elektronikus jelentéstételi](general-electronic-reporting.md) (ER) keretre
 
 Általában meg kell adnia, hogy egy bizonyos üzleti folyamatban milyen ER formátumot kell használni. Ehhez válasszon ki egy adott ER-formátumot a keresési mezőben, amely az üzleti folyamatspecifikus paraméterek részeként be van állítva. Ezeket a keresési mezőket általában az ER-keretrendszer megfelelő API-ja segítségével valósítják meg. További tudnivalókért láss: [ER-keretrendszer API – a formátumleképezési keresés megjelenítéséhez szükséges kód](er-apis-app73.md#code-to-display-a-format-mapping-lookup).
 
-Például a [Külkereskedelmi paraméterek](https://docs.microsoft.com/dynamics365/finance/localizations/emea-intrastat#set-up-foreign-trade-parameters) konfigurálásakor be kell állítani az Intrastat-bevallás és az Intrastat-bevallás ellenőrzési jelentésének előállításához használt egyéni ER-formátumokra mutató hivatkozásokat is. Az alábbi képernyőképek azt mutatják be, hogy hogyan néz ki az ER-formátumkeresési mező a **Külkereskedelmi paraméterek** oldalon.
+Például a [Külkereskedelmi paraméterek](../../../finance/localizations/emea-intrastat.md#set-up-foreign-trade-parameters) konfigurálásakor be kell állítani az Intrastat-bevallás és az Intrastat-bevallás ellenőrzési jelentésének előállításához használt egyéni ER-formátumokra mutató hivatkozásokat is. Az alábbi képernyőképek azt mutatják be, hogy hogyan néz ki az ER-formátumkeresési mező a **Külkereskedelmi paraméterek** oldalon.
 
 Ha az aktuális Finance példány nem tartalmaz Intrastat üzleti folyamatokkal kapcsolatos ER-formátumokat, akkor ez a keresési mező üresen marad.
 

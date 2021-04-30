@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 399c710b99c5721ff9867ce332b815bd362d6103
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a6f23adedc287b85018fe0b0af445677f6dc597c
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795021"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5889908"
 ---
 # <a name="remove-an-instance"></a>Példány eltávolítása
 
@@ -81,7 +81,7 @@ A környezet helyreállítása:
 
 1. Kövesse a [Power Apps környzete visszaállítása](/power-platform/admin/recover-environment.md) részben található utasításokat.
 
-2. Az Emberi erőforrások környezet helyreállításához forduljon a támogatáshoz. További információért lásd a [Támogatás kérése](hr-admin-troubleshooting-support.md) lehetőséget.
+2. Az Emberi erőforrások környezet helyreállításához forduljon a támogatáshoz. További információért lásd a [Támogatás kérése](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md) lehetőséget.
 
 > [!Warning]
 > A Power Apps környezeteket a törlést követően csak hét napig mentik. A környezetet a 7 napos időszakon belül kell helyreállítania.

@@ -16,18 +16,18 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: c4b5b6db9126f9b520945f63b24db26fdbdccf8c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 2bc35794a83365205ebc0907419d3f0801713580
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5816628"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908443"
 ---
 # <a name="set-up-a-warehouse-by-using-a-warehouse-configuration-template"></a>Raktár beállítása a raktári konfigurációs sablon segítségével
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör bemutatja, hogyan lehetséges egy raktár beállítása a raktári konfigurációs sablon segítségével. Számos előre definiált konfigurációs sablont használhat. Ha tájékoztatást szeretne ezen sablonok használatáról, lásd a [Konfigurációs adatsablonok](../../dev-itpro/data-entities/configuration-data-templates.md) című részt.
+Ez a témakör bemutatja, hogyan lehetséges egy raktár beállítása a raktári konfigurációs sablon segítségével. Számos előre definiált konfigurációs sablont használhat. Ha tájékoztatást szeretne ezen sablonok használatáról, lásd a [Konfigurációs adatsablonok](../../fin-ops-core/dev-itpro/data-entities/configuration-data-templates.md) című részt.
 
 ## <a name="scenarios-where-configuration-templates-can-be-helpful"></a>Esetek, amikor a konfigurációs sablonok hasznosak lehetnek
 
@@ -88,13 +88,13 @@ Az adatcsomag zip-fájlját letöltheti. Ez a fájl minden adatot a kijelölt fo
 4. Válassza a **+ Fájl hozzáadása** lehetőséget, majd töltse fel az adatcsomag zip-fájlját.
 5. Válassza az **Importálás** lehetőséget. Aa **Bővített** nézetben a **Szűrő** beállítással gyorsan áttekintheti az importálás során esetlegesen előforduló hibákat.
 
-A **Végrehajtás megtekintése** napló részletes információt nyújt minden egyes importált adatentitásról. Az előkészítési adatok nézetének segítségével gyorsan megtekintheti a céladatokat. Ezzel a módszerrel megnézheti, hogy néznek ki az importált adatok a kapcsolódó lapokon az alkalmazásban. Az alapértelmezett adatsablonok használata esetén az egyes adatentitások importálási sorrendje az előre meghatározott módon történik annak biztosítása érdekében, hogy először az összes függő adat importálása történjen meg. Ha egyéni adatentitások is a projekt részét képezik, gondoskodnia kell arról, hogy meg van adva a megfelelő sorrend. További tájékoztatás: [Konfigurációs adatsablonok](../../dev-itpro/data-entities/configuration-data-templates.md).
+A **Végrehajtás megtekintése** napló részletes információt nyújt minden egyes importált adatentitásról. Az előkészítési adatok nézetének segítségével gyorsan megtekintheti a céladatokat. Ezzel a módszerrel megnézheti, hogy néznek ki az importált adatok a kapcsolódó lapokon az alkalmazásban. Az alapértelmezett adatsablonok használata esetén az egyes adatentitások importálási sorrendje az előre meghatározott módon történik annak biztosítása érdekében, hogy először az összes függő adat importálása történjen meg. Ha egyéni adatentitások is a projekt részét képezik, gondoskodnia kell arról, hogy meg van adva a megfelelő sorrend. További tájékoztatás: [Konfigurációs adatsablonok](../../fin-ops-core/dev-itpro/data-entities/configuration-data-templates.md).
 
 Ha további információt szeretne arról, hogy miként használhatja a raktársablont egy raktárkonfiguráció adott vállalattól egy új vállalathoz való átmásolásához azonos példányban, nézze meg a következő a 3 perces videót a YouTube-on: [raktársablon használata konfiguráció másolásához a Finance and Operations](https://www.youtube.com/watch?v=K2WIfFlqJYs) rendszerben.
 
 ## <a name="related-topic"></a>Kapcsolódó témakör
 
-[Konfigurációs adatsablonok](../../dev-itpro/data-entities/configuration-data-templates.md)
+[Konfigurációs adatsablonok](../../fin-ops-core/dev-itpro/data-entities/configuration-data-templates.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

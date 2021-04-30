@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 03dd6f81185e8944019eaadbb77690e4cd9ba9a1
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: fe0c3bc94359c7e6a3eb2476b8096a8a2339ee9d
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751316"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893604"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Elektronikus jelentéskészítés (ER) céljai
 
@@ -57,7 +57,7 @@ Az ER formátumkonfiguráció alapértelmezett viselkedése attól függ, hogy m
 
 Ha az **Intrastat-jelentés** párbeszédpanel **Futtatás a háttérben** gyorslapján a **Kötegelt feldolgozás** beállítást **Nem** értékre állítja egy ER-formátum azonnal lefut interaktív módban. Amikor a végrehajtás sikeresen befejeződött egy generált kimenő dokumentum elérhetővé válik letöltésre.
 
-Ha az **Igen** értékre állítja be a **Kötegelt feldolgozás** beállítást, akkor a program [kötegelt](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/batch-processing-overview) módban futtatja az ER-formátumot. A program létrehozta a megfelelő kötegelt feladatot, amely az **ER-paraméterek** **Futtatás hattérben** lapján létrehozott paraméterek alapján jön létre.
+Ha az **Igen** értékre állítja be a **Kötegelt feldolgozás** beállítást, akkor a program [kötegelt](../sysadmin/batch-processing-overview.md) módban futtatja az ER-formátumot. A program létrehozta a megfelelő kötegelt feladatot, amely az **ER-paraméterek** **Futtatás hattérben** lapján létrehozott paraméterek alapján jön létre.
 
 > [!NOTE]
 > Egy feladatleírás tájékoztatja Önt egy ER-formátumleképezés futtatásáról. A futtatott ER-komponens nevét is tartalmazza.
@@ -70,7 +70,7 @@ A feladattal kapcsolatos információk több helyen is megtalálhatók:
 - Nyissa meg a **Szervezeti felügyelet** \> **Elektronikus jelentéskészítés** \> **Elektronikus jelentéskészítési feladatok**, hogy ellenőrizze az ütemezett feladat állapotát és a teljesített feladat végrehajtási eredményeit. Amikor a feladat végrehajtása sikeresen befejeződött, válassza a **Fájlok megjelenítése** lehetőséget az **Elektronikus jelentéskészítési feladatok** lapon a létrejövő kimenő dokumentum lekéréséhez.
 
     > [!NOTE]
-    > Ez a dokumentum az aktuális feladatrekordhoz tartozó mellékletként tárolódik, és a [Dokumentumkezelési](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management) keretrendszer vezérli. Az ilyen típusú műtárgyak tárolásához használt [dokumentumtípus](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management#configure-document-types) beállítása az [ER paraméterek](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents) között történik.
+    > Ez a dokumentum az aktuális feladatrekordhoz tartozó mellékletként tárolódik, és a [Dokumentumkezelési](../../fin-ops/organization-administration/configure-document-management.md) keretrendszer vezérli. Az ilyen típusú műtárgyak tárolásához használt [dokumentumtípus](../../fin-ops/organization-administration/configure-document-management.md#configure-document-types) beállítása az [ER paraméterek](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents) között történik.
 
 - Az **Elektronikus jelentéskészítési feladatok** lapon jelölje be a **Fájlok megjelenítése** a feladatok végrehajtása során létrejövő hibák és figyelmeztetések listájának megtekintéséhez.
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-12-04
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: bb5ecaa237eed2a1902c965fd42b31cc1708a4e2
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 244d378316caf639c3520a1179dd82955d94220a
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5833857"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909475"
 ---
 # <a name="landed-cost-vs-transportation-management"></a>Partraszállítási költség és Szállításkezelés
 
@@ -51,8 +51,8 @@ A TMS és a Partraszállítási költség nem osztja meg a hivatkozási adatokat
 
 A következő jelentések nem működnek a Partraszállítási költség által biztosított átszállítási funkcióval:
 
-- [Úton lévő vállalatközi áruk összesen jelentés](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/intercompany-goods-in-transit-totals-report-intercompanygoodsintransittotals)
-- [Úton lévő vállalatközi áruk összesen jelentés](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/intercompany-goods-in-transit-totals-report-intercompanygoodsintransittotals)
+- [Úton lévő vállalatközi áruk összesen jelentés](/dynamicsax-2012/appuser-itpro/intercompany-goods-in-transit-totals-report-intercompanygoodsintransittotals)
+- [Úton lévő vállalatközi áruk összesen jelentés](/dynamicsax-2012/appuser-itpro/intercompany-goods-in-transit-totals-report-intercompanygoodsintransittotals)
 
 Ezek a jelentések feltételezik, hogy az áru a szállítólevél kiállítása után azonnal szállításra kerülnek, illetve az átszállításból való bevételezéskor a készletbe kerülnek. Az úton lévő áruk feldolgozása azonban nem így történik. Ezért ha az úton lévő árukat és a vállalatközi funkciókat együtt használja, mindkét jelentés eredményei helytelenek lesznek.
 

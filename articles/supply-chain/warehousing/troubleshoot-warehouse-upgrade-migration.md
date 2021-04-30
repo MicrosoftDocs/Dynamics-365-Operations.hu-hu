@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 953b828667a01157767c3ca79349fe972b0fbe9b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 12dcadae2a65d71614a2eee9468ec93cac284a7b
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826395"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5907887"
 ---
 # <a name="troubleshoot-upgrade-and-migration-to-advanced-warehouse-management"></a>Speciális raktárkezelésre való frissítés és áttelepítés – hibaelhárítás
 
@@ -51,7 +51,7 @@ Az alapraktározásról a speciális raktározásra való áttérés folyamatár
 - [Tegye elérhetővé a meglévő cikknek és raktárnak a raktárkezelő folyamatot](https://cleverax.wordpress.com/2017/12/06/d365fo-enable-warehouse-management-process-for-existing-items-and-warehouses/)
 - [A WMS áttelepítése Microsoft Dynamics AX új R3 raktárra és szállítási funkcióra](https://cloudblogs.microsoft.com/dynamics365/no-audience/2015/08/17/migration-of-microsoft-dynamics-ax-wms-to-new-r3-warehouse-and-transportation-functionality/)
 - [WMSI/WMS2 cikk áttelepítése](https://cloudblogs.microsoft.com/dynamics365/no-audience/2018/05/03/wmsiwms2-item-migration/)
-- [Raktárkezelés frissítése a Microsoft Dynamics AX 2012-ről a Supply Chain Management szolgáltatásra](https://docs.microsoft.com/dynamics365/supply-chain/warehousing/upgrade-migration-warehouse-management-processes)
+- [Raktárkezelés frissítése a Microsoft Dynamics AX 2012-ről a Supply Chain Management szolgáltatásra](./upgrade-migration-warehouse-management-processes.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

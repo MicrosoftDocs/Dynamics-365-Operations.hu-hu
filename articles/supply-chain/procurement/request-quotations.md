@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: df430dada52ac1aa910a3d2007aacf65d8032383
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 48830c975f1bdfd953f57e7c0b6601a78e3a521b
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5812547"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5910039"
 ---
 # <a name="requests-for-quotation-rfqs-overview"></a>Ajánlatkérések (RFQ-k) áttekintése
 
@@ -43,7 +43,7 @@ Ajánlatkérési esetet tervezett rendelésekből, beszerzési igénylésből é
 
 Miután előkészítette az ajánlatkérési esetet és hozzáadta a szállítókat, válassza a **Küldés** (**Küldés és közzététel** az állami szektor esetében) lehetőséget az ajánlatkérési esetnél. Ajánlatkérési napló jön létre minden egyes olyan szállítóra vonatkozóan, amelyek számára elküldte az ajánlatkérést. A Küldés művelet nyomtatási beállításait módosítva megadhatja, hogy a rendszer külön jelentést nyomtasson minden szállítóhoz az archívumba, vagy a jelentést e-mailben küldje a szállítók e-mail-címére. Ezenkívül az egyes szállítók ajánlatkérési naplóját olyan napló létrehozására is felhasználhatja, amelyet később elküldhet vagy újraküldhet a szállítónak. A Küldés műveletet úgy is beállíthatja, hogy a rendszer a szállító által kitölthető válaszlapot is generáljon.
 
-Ez a témakör az ajénlatkérések kezelését foglalja össze arra az esetre, amikor a szállítói együttműködés nincs használatban. Ha a rendszer be van állítva szállítói együttműködéshez a szállítók közvetlenül vihetnek be ajánlatokat a Supply Chain Management rendszerbe. További tudnivalók: [Szállítói együttműködés a vevőkkel](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) és [A külső szállítókkal történő szállítói együttműködés](vendor-collaboration-work-external-vendors.md).
+Ez a témakör az ajénlatkérések kezelését foglalja össze arra az esetre, amikor a szállítói együttműködés nincs használatban. Ha a rendszer be van állítva szállítói együttműködéshez a szállítók közvetlenül vihetnek be ajánlatokat a Supply Chain Management rendszerbe. További tudnivalók: [Szállítói együttműködés a vevőkkel](/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) és [A külső szállítókkal történő szállítói együttműködés](vendor-collaboration-work-external-vendors.md).
 
 Ha módosítania kell az ajánlatkérést, miután elküldte azt, újra elküldheti az ajánlatkérést a szállítóknak, ha elkészült a két módosítási művelettel: ezek a Létrehozás és a Véglegesítés.
 
@@ -165,7 +165,7 @@ Ha a módosítási folyamatot úgy állítja be, hogy szigorúbb legyen, akkor a
 
 A kevésbé korlátozó módosítási folyamat konfigurálása esetén a már elküldött ajánlatkérési eset mezőinek módosítása előtt nem szükséges a **Létrehozás** lehetőséget kiválasztani a módosításhoz. Azonban manuálisan hozzá kell adnia egy módosítási megjegyzést az ajánlatkéréshez, és újra be kell küldenie az esetet. Ne feledje, hogy ez a módszer csak akkor használható, ha egyik válasz (ajánlat) sem módosult. Ha megadott egy választ, és az **Beérkezett** állapotú, akkor a **Küldés** gomb nem érhető el. Ebben az esetben ki kell választania a **Létrehozás**, majd a **Véglegesítés** elemet, ahogyan az a korlátozóbb folyamatban elvárt. A válasz ekkor visszaáll, és megjeleníti az ajánlatkérési eset módosításait.
 
-Ha a szállítók a szállítói együttműködési felületet használják az ajánlatok beadására, mindig a módosítási folyamatot kell használnia ahhoz, hogy értesítse a szállítókat az ajánlatkérési esetben bekövetkezett változásokról. Ez a folyamat segít megelőzni azt a helyzetet, amikor a szállítók lejárt ajánlatkérési ügyben tesznek ajánlatot, miközben az ajánlatuk folyamatban van. Az új szállítói együttműködéssel kapcsolatos további tudnivalókat lásd: [A szállítói együttműködés a külső szállítókkal való együttműködésre történő használata](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-external-vendors).
+Ha a szállítók a szállítói együttműködési felületet használják az ajánlatok beadására, mindig a módosítási folyamatot kell használnia ahhoz, hogy értesítse a szállítókat az ajánlatkérési esetben bekövetkezett változásokról. Ez a folyamat segít megelőzni azt a helyzetet, amikor a szállítók lejárt ajánlatkérési ügyben tesznek ajánlatot, miközben az ajánlatuk folyamatban van. Az új szállítói együttműködéssel kapcsolatos további tudnivalókat lásd: [A szállítói együttműködés a külső szállítókkal való együttműködésre történő használata](/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-external-vendors).
 
 Ha szeretne meghívni további szállítókat is az ajánlatkérésre, és nem hajtott végre módosítást az ajánlatkérési eseten, akkor használhatja a **Küldés** gombot. Az Ön által felvett szállítók megjelennek a **Küldés** lapon, és megkapják az e-mailes meghívót.
 

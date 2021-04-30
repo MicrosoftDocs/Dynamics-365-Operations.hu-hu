@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 05b5126b29351ca3093e75e878682f7a07186898
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: a39dbdcae29df5e838673dc1fe77ae7e76ebfc86
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752966"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908341"
 ---
 # <a name="view-and-update-entity-data-with-excel"></a>Az entitásadatok megtekintése és frissítése az Excel programmal 
 
@@ -45,7 +45,7 @@ További tudnivalókért az Excel-bővítmény használatáról, tekintse meg a 
 2. Válassza az egyik **Megnyitás az Excel programban** lehetőséget, és nyissa meg a létrejövő munkafüzetet. Ez a munkafüzet kötési információkat tartalmaz az entitásra, egy mutatót a környezetre és egy mutatót az Excel-bővítményre.
 3. Az Excel programban válassza a **Szerkesztés engedélyezése** lehetőséget az Excel-bővítmény futtatásának engedélyezéséhez. Az Excel-bővítmény egy panelen fut az Excel ablak jobb oldalán.
 4. Ha az Excel beépülő modult első alkalommal futtatja, válassza az **Ez a bővítmény megbízható** lehetőséget.
-5. Ha a rendszer bejelentkezést kér, válassza a **Bejelentkezés** lehetőséget, majd a Finance and Operations alkalmazás bejelentkezéshez használt hitelesítő adatainak használatával jelentkezzen be. Az Excel beépülő modul a böngésző korábbi bejelentkezési kontextusát használva automatikusan bejelentkezik a rendszerbe, ha talál ilyet. (Az operációs rendszeren alapuló böngészővel kapcsolatos tudnivalókat lásd: [Az Office-bővítmények által használt böngészők](https://docs.microsoft.com/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins.) A bejelentkezés sikerességének biztosítása érdekében ellenőrizze a felhasználónevet az Excel-bővítmény jobb felső sarkában. 
+5. Ha a rendszer bejelentkezést kér, válassza a **Bejelentkezés** lehetőséget, majd a Finance and Operations alkalmazás bejelentkezéshez használt hitelesítő adatainak használatával jelentkezzen be. Az Excel beépülő modul a böngésző korábbi bejelentkezési kontextusát használva automatikusan bejelentkezik a rendszerbe, ha talál ilyet. (Az operációs rendszeren alapuló böngészővel kapcsolatos tudnivalókat lásd: [Az Office-bővítmények által használt böngészők](/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins.) A bejelentkezés sikerességének biztosítása érdekében ellenőrizze a felhasználónevet az Excel-bővítmény jobb felső sarkában. 
 
 Az Excel-bővítmény automatikusan beolvassa a kijelölt entitás adatait. Ne felejtse, hogy nincsenek adatok a munkafüzetben mindaddig, amíg be nem olvassa őket az Excel-bővítmény.
 
@@ -60,7 +60,7 @@ Az Excel-bővítmény automatikusan beolvassa a kijelölt entitás adatait. Ne f
 
 6. A módosítások megerősítéséhez válassza az **OK**, majd az **Igen** elemet. Az Excel-bővítmény újraindul és betölti a metaadatokat.
 
-    Most már elérhető a **Terv** menügomb. Ha az Excel-bővítmény rendelkezik egy **Kisalkalmazások betöltése** gombbal, akkor valószínűleg nem a megfelelő felhasználóként jelentkezett be. További információért lásd a „Látszik a Kisalkalmazások betöltése gomb” részt a témakör [Hibaelhárítás](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/office-integration/use-excel-add-in#troubleshooting) című szakaszában.
+    Most már elérhető a **Terv** menügomb. Ha az Excel-bővítmény rendelkezik egy **Kisalkalmazások betöltése** gombbal, akkor valószínűleg nem a megfelelő felhasználóként jelentkezett be. További információért lásd a „Látszik a Kisalkalmazások betöltése gomb” részt a témakör [Hibaelhárítás](../office-integration/use-excel-add-in.md#troubleshooting) című szakaszában.
 
 7. Válassza a **Tervezés** lehetőséget. Az Excel-bővítmény lekéri az entitás metaadatait.
 8. Válassza a **Táblázat beszúrása** lehetőséget. Megjelenik az entitások listája. Az entitások „Név – címke” formátumban jelennek meg.
@@ -138,7 +138,7 @@ Vannak bizonyos problémák, amelyek néhány egyszerű lépéssel megoldhatók.
 
 - **Látszik a Kisalkalmazások betöltése gomb.** – Ha az Excel-bővítmény rendelkezik egy **Kisalkalmazások betöltése** gombbal a bejelentkezés után, akkor valószínűleg nem a megfelelő felhasználóként jelentkezett be. A probléma megoldásához ellenőrizze, hogy a helyes felhasználónév jelenik-e meg az Excel-bővítmény a jobb felső sarkában. Ha helytelen felhasználónév jelenik meg, kattintson rá, jelentkezzen ki, majd jelentkezzen be újra.
 - **A „Tiltott” üzenetet kapja.** – Ha a „Tiltott” üzenetet kapja, miközben az Excel-bővítmény a metaadatok betöltését végzi, a fiók, amelyik be van jelentkezve az Excel-bővítménybe, nem rendelkezik engedéllyel a megcélzott szolgáltatás, példány vagy adatbázis használatához. A probléma megoldásához ellenőrizze, hogy a helyes felhasználónév jelenik-e meg az Excel-bővítmény a jobb felső sarkában. Ha helytelen felhasználónév jelenik meg, kattintson rá, jelentkezzen ki, majd jelentkezzen be újra.
-- **Egy üres weblap jelenik meg az Excel felett.** – Ha üres weblap jelenik meg a bejelentkezési folyamat során, a fiók AD FS-t igényel, de az Excel-programnak a bővítményt futtató verziója nem elég friss a bejelentkezési párbeszédpanel betöltéséhez. A probléma megoldásához frissítse a használt Excel-verziót. Ha a vállalata a késleltetett csatornán van, az Excel verziójának frissítéséhez használja az [Office telepítési eszközt](https://technet.microsoft.com/library/jj219422.aspx) [a késleltetett csatornáról az aktuális csatornára váltáshoz](https://technet.microsoft.com/library/mt455210.aspx).
+- **Egy üres weblap jelenik meg az Excel felett.** – Ha üres weblap jelenik meg a bejelentkezési folyamat során, a fiók AD FS-t igényel, de az Excel-programnak a bővítményt futtató verziója nem elég friss a bejelentkezési párbeszédpanel betöltéséhez. A probléma megoldásához frissítse a használt Excel-verziót. Ha a vállalata a késleltetett csatornán van, az Excel verziójának frissítéséhez használja az [Office telepítési eszközt](/deployoffice/overview-office-deployment-tool) [a késleltetett csatornáról az aktuális csatornára váltáshoz](/deployoffice/overview-update-channels).
 - **Időtúllépés üzenet jelenik meg az adatváltozások közzététele közben** – Ha időtúllépés üzenetet kap, miközben egy entitásban próbálja közzétenni az adatok módosításait, érdemes megfontolni az érintett munkafüzet közzétételi kötegméretének csökkentését. Előfordulhat, hogy azok az entitások, amelyek nagyobb mennyiségű logikát váltanak ki a rekord módosításaiban, kisebb kötegekben küldendő frissítéseket igényelnek, hogy megelőzhető legyen az időtúllépés.
 
 

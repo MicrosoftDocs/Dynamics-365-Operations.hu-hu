@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f2f40bec79c0b5ce26882e1146c1751b9b6eee01
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 1c8d939fef4fd0f9e189ca37318c2c0306511785
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753312"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893908"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>(ER) Az Excel formátumban létrejövő dokumentumokra vonatkozó konfigurációk tervezése
 
@@ -159,7 +159,7 @@ Egyetlen **Lap** összetevőhöz több **Lábléc** összetevőt is hozzáadhat,
 
 A hozzáadott **Lábléc** összetevőnél adja hozzá a **Szöveg\\Sztring**, **Szöveg\\DátumIdő** vagy egyéb típusú beágyazott összetevőit. Konfigurálja ezen összetevők kötését a lábléc kitöltési módjának beállítására.
 
-Speciális [formázási kódokat](https://docs.microsoft.com/office/vba/excel/concepts/workbooks-and-worksheets/formatting-and-vba-codes-for-headers-and-footers) is használhat a létrehozott lábléc tartalmának megfelelő formázása érdekében. A megközelítés használatának elsajátításához kövesse a témakör [1. példájában](#example-1) leírt lépéseket.
+Speciális [formázási kódokat](/office/vba/excel/concepts/workbooks-and-worksheets/formatting-and-vba-codes-for-headers-and-footers) is használhat a létrehozott lábléc tartalmának megfelelő formázása érdekében. A megközelítés használatának elsajátításához kövesse a témakör [1. példájában](#example-1) leírt lépéseket.
 
 > [!NOTE]
 > Az ER-formátumok konfigurálásakor figyelembe kell venni az Excel-[korlátot](https://support.microsoft.com/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3) és az egyes fejlécek és láblécek maximális karakterszámát.

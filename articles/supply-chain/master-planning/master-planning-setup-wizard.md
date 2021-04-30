@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 770800e63de73c60e0e811734d4273ff2392620f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: c55c36358b8acf93ab25a358d4d7cd6a4212c2b2
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5829690"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909427"
 ---
 # <a name="master-planning-setup-wizard"></a>Alaptervezés-beállítási varázsló
 
@@ -45,13 +45,13 @@ A varázsló első oldala a vállalat egyedi igényeire kérdez rá. Az ezekre a
 
 Ha a szálak kiszámított száma meghaladja a rendelkezésre álló szálak számát, akkor a rendszer az egyes vevőkhöz rendelkezésre álló szálak számát 75%-ra korlátozza. (A rendelkezésre álló szálak száma az egyes vevőknél lesz meghatározva.)
 
-További információért tekintse meg a [Szálak száma](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/master-planning/master-planning-performance#number-of-threads) részt.
+További információért tekintse meg a [Szálak száma](/dynamics365/unified-operations/supply-chain/master-planning/master-planning-performance#number-of-threads) részt.
 
 ### <a name="bundle-size"></a>Csomag mérete
 
 A csomagméret értékét **1**-re állítja a rendszer. Ez az érték gyakran a legjobb érték, mivel segít az Alaptervezés teljesítményének javításában.
 
-További információ: [A segítő feladatcsomagban található feladatok száma](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/master-planning/master-planning-performance#number-of-tasks-in-helper-task-bundle).
+További információ: [A segítő feladatcsomagban található feladatok száma](/dynamics365/unified-operations/supply-chain/master-planning/master-planning-performance#number-of-tasks-in-helper-task-bundle).
 
 ### <a name="firming-bundle-size"></a>Megerősítő csomagméret
 
@@ -64,7 +64,7 @@ Csomagszámítás = (Tervezett rendelések száma × (Megerősítési időkorlá
 
 A gyorsítótár értékét **Maximum**-ra állítja a rendszer. Ez az érték gyakran a legjobb érték, mivel segít az Alaptervezés teljesítményének javításában.
 
-További információ: [Idők hozzárendelése egy feladatköteg feladataihoz](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/allocate-time-jobs-job-bundle).
+További információ: [Idők hozzárendelése egy feladatköteg feladataihoz](/dynamics365/unified-operations/supply-chain/production-control/allocate-time-jobs-job-bundle).
 
 ### <a name="manufacturing-setup"></a>Gyártási beállítás
 
@@ -88,7 +88,7 @@ Az oldal további kérdései és válaszai ugyanezt a sémát követik:
 - **Igen, az adott alaptervben való meghatározás szerint** – Az **Előrejelzési terv (időkorlát)** beállítás **Igen** értékre lesz állítva. A beírt napok számát fogja használni a rendszer, és felülírja a fedezeti csoportokban beállított értékeket.
 - **Igen, a fedezeti csoportban való meghatározás szerint** – Az **Előrejelzési terv (időkorlát)** beállítás **Nem** értékre lesz állítva.
 
-További információ: [Feladatütemezés](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/job-scheduling).
+További információ: [Feladatütemezés](/dynamics365/unified-operations/supply-chain/production-control/job-scheduling).
 
 ## <a name="scheduling-options"></a>Ütemezési beállítások
 
@@ -99,7 +99,7 @@ Az adott oldalon az első kérdésre adott válasza („Szeretné a műveleteket
 - **Igen** – A program a feladatütemezést használja.
 - **Nem** – A program a műveletütemezést használja.
 
-További információk: [Műveletütemezés](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/operations-scheduling) és [Feladatütemezés](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/job-scheduling).
+További információk: [Műveletütemezés](/dynamics365/unified-operations/supply-chain/production-control/operations-scheduling) és [Feladatütemezés](/dynamics365/unified-operations/supply-chain/production-control/job-scheduling).
 
 ## <a name="updates-of-demand-and-supply"></a>Az igény és ellátás frissítései
 
@@ -127,7 +127,7 @@ Ez a rész két kitalált vállalat beállításait írja le, hogy megmutassa, h
 
 ### <a name="example-1-contoso-manufacturer"></a>1. példa: Contoso Manufacturer
 
-A Contoso Manufacturer olyan gyártó cég, amely hangszórókat gyárt. Megvásárolja azokat a különböző nyersanyagokat és alkatrészeket különböző szállítóktól, amelyeket a végtermék hangszórókhoz használnak. Íme az ellátás és a gyártás néhány jellemzője:
+Contoso Manufacturer olyan gyártó cég, amely hangszórókat gyárt. Megvásárolja azokat a különböző nyersanyagokat és alkatrészeket különböző szállítóktól, amelyeket a végtermék hangszórókhoz használnak. Íme az ellátás és a gyártás néhány jellemzője:
 
 - A vállalat által gyártott végső cikkek anyagjegyzék-struktúrával (BOM) rendelkeznek.
 - A végső cikkeket és alkatrészeket az Alaptervezés tervezi. A manuális tervezés nem történik meg.

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: bcb57082a49fc07a4139aa37f9507890ca7ed620
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 1647b7fbf84a78051e745e918954df32a2e7e1dd
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5805082"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5890004"
 ---
 # <a name="configure-integration-with-dayforce"></a>A Dayforce szolgáltatással való integráció konfigurálása
 
@@ -53,8 +53,8 @@ Ha az integráció engedélyezve van, adatexport adatcsomagok és fájlok jönne
 
 Az Azure tárolási fiókokkal és az Azure tárolási kapcsolati karakterláncokkal kapcsolatos további információkat az alábbi Azure-cikkben találja:
 
-- [Az Azure Storage-fiókokról](https://docs.microsoft.com/azure/storage/common/storage-create-storage-account?toc=%2fazure%2fstorage%2ffiles%2ftoc.json)
-- [Azure Storage kapcsolati karakterláncok konfigurálása](https://docs.microsoft.com/azure/storage/common/storage-configure-connection-string)
+- [Az Azure Storage-fiókokról](/azure/storage/common/storage-create-storage-account?toc=%2fazure%2fstorage%2ffiles%2ftoc.json)
+- [Azure Storage kapcsolati karakterláncok konfigurálása](/azure/storage/common/storage-configure-connection-string)
 
 ### <a name="technical-details-when-payroll-integration-is-enabled"></a>Technikai részletek a bérlista integrációjának engedélyezésekor
 
@@ -65,6 +65,7 @@ A bérlista-integráció bekapcsolása két elsődleges hatással jár:
 
 > [!NOTE]
 > Az SFTP végpontra átvitt adatcsomag titkosítva van a csomag egyedi kulcsával. A kulcs egy Azure kulcstárolóban van, amely csak Ceridian számára érhető el. Az adatcsomag tartalmát nem lehet dekódolni és megvizsgálni. Ha meg kell vizsgálnia az adatcsomag tartalmát, akkor manuálisan kell exportálnia a „Bérlista-integráció exportálása” adatprojektet, le kell töltenie, majd meg kell nyitnia. A manuális exportálás nem alkalmazza a titkosítást, és nem viszi át a csomagot.
+> Olyan esetekben, amikor az integrációs fájlokat egy Dynamics 365 Human Resources UAT- vagy teszkörnyezetből egy Ceridian Dayforce Test környezetbe küldik, a következő kulcstartó URL-cím használható: https://payrollintegrationprod.vault.azure.net.
 
 ## <a name="configure-your-data"></a>Adatai konfigurálása 
 
@@ -124,10 +125,10 @@ A Dayforce létrehozza a következő levonásokat, a juttatási tervben definiá
 
 A juttatási programok meghatározásával és kezelésével kapcsolatos további tájékoztatást a következő cikkekben találja:
 
-- [Alkalmazotti juttatási program végrehajtása](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/deliver-employee-benefits-program)
-- [Új juttatás létrehozása](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/create-new-benefit)
-- [Juttatásra való jogosultsági szabályok és irányelvek meghatározása](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-benefit-eligibility-rules-policies)
-- [Dolgozók juttatásainak felvétele és eltávolítása](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-remove-benefits-workers)
+- [Alkalmazotti juttatási program végrehajtása](/dynamics365/unified-operations/fin-and-ops/hr/tasks/deliver-employee-benefits-program)
+- [Új juttatás létrehozása](/dynamics365/unified-operations/fin-and-ops/hr/tasks/create-new-benefit)
+- [Juttatásra való jogosultsági szabályok és irányelvek meghatározása](/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-benefit-eligibility-rules-policies)
+- [Dolgozók juttatásainak felvétele és eltávolítása](/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-remove-benefits-workers)
 
 #### <a name="compensation"></a>Kompenzáció 
 
@@ -137,20 +138,20 @@ A Dayforce a kompenzációs adatok segítségével kiszámítja az alkalmazott �
 
 A következő cikkekben bővebben olvashat a kompenzációs tervekről:
 
-- [Fix kompenzációs konstrukciók létrehozása](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-fixed-compensation-plans)
-- [Változó kompenzációs konstrukciók létrehozása](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-variable-compensation-plans)
-- [Munkabér-/kompenzációs struktúra és tervek kialakítása](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/develop-salary-compensation-structure-plan)
-- [Folyamatkompenzáció](https://docs.microsoft.com/dynamics365/unified-operations/talent/process-compensation)
-- [Kompenzációs folyamat meghatározása és eredmények kiszámítása](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-compensation-process-calculate-results)
-- [Alkalmazottak felvétele fix kompenzációs konstrukcióba](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-fixed-compensation-plan)
-- [Alkalmazottak felvétele változó kompenzációs konstrukcióba](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-variable-compensation-plan)
+- [Fix kompenzációs konstrukciók létrehozása](/dynamics365/unified-operations/talent/create-fixed-compensation-plans)
+- [Változó kompenzációs konstrukciók létrehozása](/dynamics365/unified-operations/talent/create-variable-compensation-plans)
+- [Munkabér-/kompenzációs struktúra és tervek kialakítása](/dynamics365/unified-operations/fin-and-ops/hr/tasks/develop-salary-compensation-structure-plan)
+- [Folyamatkompenzáció](/dynamics365/unified-operations/talent/process-compensation)
+- [Kompenzációs folyamat meghatározása és eredmények kiszámítása](/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-compensation-process-calculate-results)
+- [Alkalmazottak felvétele fix kompenzációs konstrukcióba](/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-fixed-compensation-plan)
+- [Alkalmazottak felvétele változó kompenzációs konstrukcióba](/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-variable-compensation-plan)
 
 #### <a name="jobs"></a>Beosztások 
 
 A munkakör azon feladatok és felelősségek gyűjteménye, amelyek egy adott munkát végrehajtó személytől elvártak. További információért tekintse át az alábbi cikkeket:
 
-- [Feladat összetevőinek beállítása](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-job)
-- [Új feladatok meghatározása](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-jobs)
+- [Feladat összetevőinek beállítása](/dynamics365/unified-operations/talent/create-job)
+- [Új feladatok meghatározása](/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-jobs)
 
 ##### <a name="positions"></a>Beosztások
 
@@ -174,8 +175,8 @@ A azonos osztály több beosztása társítva van az ugyanazon a feladathoz, azo
 
 További információért tekintse át az alábbi cikkeket:
 
-- [Munkaerő szervezése részlegek, feladatok és beosztások szerint](https://docs.microsoft.com/dynamics365/unified-operations/talent/departments-jobs-positions#positions)
-- [Beosztások beállítása](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/set-up-positions)
+- [Munkaerő szervezése részlegek, feladatok és beosztások szerint](/dynamics365/unified-operations/talent/departments-jobs-positions#positions)
+- [Beosztások beállítása](/dynamics365/unified-operations/fin-and-ops/hr/tasks/set-up-positions)
 
 #### <a name="departments"></a>Osztályok
 
@@ -183,8 +184,8 @@ A részleg egy működési egység, amely a szervezet egy kategóriáját vagy m
 
 További információért tekintse át az alábbi cikkeket:
 
-- [Részleg létrehozása és társítása a szervezeti hierarchiához](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-department-add-department-hierarchy)
-- [Új részlegek meghatározása](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-departments)
+- [Részleg létrehozása és társítása a szervezeti hierarchiához](/dynamics365/unified-operations/talent/create-department-add-department-hierarchy)
+- [Új részlegek meghatározása](/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-departments)
 
 #### <a name="pay-cycles-and-pay-periods"></a>Fizetési ciklusok és fizetési időszakok
 

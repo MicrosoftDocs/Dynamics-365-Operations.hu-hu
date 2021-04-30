@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 74422a9f2b737053288d21ba7a578c854cab1335
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 83ebcf96aa6a5b5c757285be1c5602ac4e8f50fc
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5747321"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5890858"
 ---
 # <a name="set-up-number-sequences-on-an-individual-basis"></a>Egyedi számsorozatok beállítása
 
@@ -30,7 +30,7 @@ Ez a témakör az egyedi számsorozatok beállítását ismerteti. A számsoroza
 2. Válassza ki a **Számsorozat** elemet.
 3. Adjon meg egy értéket a **Számsorozat kódja** mezőben.
 4. Írjon be egy értéket a **Név** mezőbe.
-5. A **Hatókör paraméterei** gyorslapon válassza ki a számsorozathoz tartozó hatókört és a hatókör értékét a legördülő listából. A hatókör határozza meg, mely szervezetek használják a számsorozatot. Ezenkívül azok a számsorozatok, amelyek nem **Megosztott** állapotú hatókörrel rendelkeznek olyan szegmensekkel rendelkezhetnek, amelyek megfelelnek a hatókörüknek. Például egy **Jogi személy** hatókörrel ellátott számsorozat rendelkezhet jogi személy hatókörrel. A hatókörökkel kapcsolatos további információkat lásd: [Számsorozatok áttekintése](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview). 
+5. A **Hatókör paraméterei** gyorslapon válassza ki a számsorozathoz tartozó hatókört és a hatókör értékét a legördülő listából. A hatókör határozza meg, mely szervezetek használják a számsorozatot. Ezenkívül azok a számsorozatok, amelyek nem **Megosztott** állapotú hatókörrel rendelkeznek olyan szegmensekkel rendelkezhetnek, amelyek megfelelnek a hatókörüknek. Például egy **Jogi személy** hatókörrel ellátott számsorozat rendelkezhet jogi személy hatókörrel. A hatókörökkel kapcsolatos további információkat lásd: [Számsorozatok áttekintése](../number-sequence-overview.md). 
 6. Bontsa ki a **Szegmensek** szakaszt.
     - A szegmensek hozzáadásával, eltávolításával és átrendezésével adja meg a számsorozat formátumát.  
     - Az összes hatókör számsorozata tartalmazhatja az *Állandó szegmenseket* és az *Alfanumerikus szegmenseket*. Az állandó szegmensek tartalmazzák azoknak az alfanumerikus karakterek a készletét, amelyek nem módosulnak. Ezen szegmenstípus használatával írjon be egy kötőjelet vagy más elválasztót a Számsorozat szegmensei közé. Az Alfanumerikus szegmensek a kettős kereszt (#) és az és-jel (&) kombinációját tartalmazzák. Ezek a karakterek betűk és számok, melyek a sorozat számainak minden használatánál növekednek. A kettős kereszt (#) használatával jelezheti a növekvő számokat, az (&) jel pedig a növekvő betűket. Például a `#####_2014` formátum az `00001_2014`, `00002_2014` és így tovább sorozatot hozza létre. Legalább egy alfanumerikus szegmensnek lennie kell. A hatókörszegmensek, mint például a társaság vagy a jogi személy, nem kötelező jellegűek. Azonban, ha a formátumban nem helyezi el a hatókörszegmenseket, a rendszer a kijelölt hivatkozáshoz tartozó számokat továbbra is hatókörönként fogja létrehozni.  

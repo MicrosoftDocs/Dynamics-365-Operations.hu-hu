@@ -15,22 +15,22 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-08-10
 ms.dyn365.ops.version: Platform update 36
-ms.openlocfilehash: f21e9b94b5aa30b2cdb18692e8cc9c8d00f758d6
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a63ff89a6fcbffc57eff14f310a080a35521ef34
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5805034"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5890076"
 ---
 # <a name="optimize-byod-scheduled-batch-jobs"></a>BYOD ütemezett kötegelt feladatok optimalizálása
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Ez a témakör azt mutatja be, hogyan lehet optimalizálni a teljesítményt a saját adatbázis használata (BYOD) szolgáltatás használata során. A BYOD-funkcióval kapcsolatos további tudnivalókat lásd: [Használja saját adatbázisát (BYOD)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database?toc=/dynamics365/human-resources/toc.json).
+Ez a témakör azt mutatja be, hogyan lehet optimalizálni a teljesítményt a saját adatbázis használata (BYOD) szolgáltatás használata során. A BYOD-funkcióval kapcsolatos további tudnivalókat lásd: [Használja saját adatbázisát (BYOD)](../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json).
 
 ## <a name="performance-considerations-for-data-export"></a>Az adatexportálással kapcsolatos teljesítményszempontok
 
-Az entitások a céladatbázisba történő közzététele után az **Adatkezelés** munkaterületen az Exportálási funkció segítségével mozgathatja az adatokat. Az Exportálás funkció segítségével definiálhat egy vagy több entitást tartalmazó adatáthelyezési feladatot. Az adatexportálással kapcsolatos további tudnivalókat lásd: [Adatimportálási és -exportálási feladatok áttekintése](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-import-export-job?toc=/dynamics365/human-resources/toc.json).
+Az entitások a céladatbázisba történő közzététele után az **Adatkezelés** munkaterületen az Exportálási funkció segítségével mozgathatja az adatokat. Az Exportálás funkció segítségével definiálhat egy vagy több entitást tartalmazó adatáthelyezési feladatot. Az adatexportálással kapcsolatos további tudnivalókat lásd: [Adatimportálási és -exportálási feladatok áttekintése](../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json).
 
 Az **Exportálás** lapon különböző adatformátumokba, például vesszővel tagolt (CSV-fájl) exportálhat adatokat. Ez a lap más célhelyként is támogatja az SQL-adatbázisokat is.
 
@@ -61,7 +61,7 @@ A legjobb teljesítmény érdekében a BYOD kötegelt feladatait mindig az **Exp
 
 Ha hozzáad egy entitást az adatexportáláshoz, akkor lehetősége van egy növekményes küldés (export) vagy egy teljes küldés elemre. A teljes küldés törli a BYOD-adatbázis egy entitásának összes meglévő rekordját. Ezután beszúrja a rekordok aktuális készletét az Emberi erőforrások entitásból.
 
-A növekményes küldés végrehajtásához az egyes entitásokhoz be kell kapcsolni a változtatások nyomon követését az **Entitások** lapon. A további tudnivalókat lásd [A változások nyomon követésének engedélyezése az entitásokhoz](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/entity-change-track?toc=/dynamics365/human-resources/toc.json).
+A növekményes küldés végrehajtásához az egyes entitásokhoz be kell kapcsolni a változtatások nyomon követését az **Entitások** lapon. A további tudnivalókat lásd [A változások nyomon követésének engedélyezése az entitásokhoz](../fin-ops-core/dev-itpro/data-entities/entity-change-track.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json).
 
 Ha kiválaszt egy növekményes küldést akkor az első küldés mindig egy teljes küldés. Az SQL ehhez az első küldéséhez képest követi nyomon a változásokat. Új rekord beillesztésekor, illetve rekord frissítésekor vagy törlésekor a változás a cél entitásban is megjelenik.
 
@@ -88,14 +88,14 @@ A BYOD-funkciónak a következő korlátai vannak:
 
 **Probléma:** Ha egy entitáshoz teljes küldést hajt végre, akkor a rekordok nagy készlete jelenik meg a BYOD,-ban amikor egy **kiválasztás** működési utasítást alkalmaz. Ha viszont egy növekményes küldést hajt végre, akkor csak néhány rekord jelenik meg a BYOD-ben. Úgy tűnik, mintha a növekményes küldés törölte az összes rekordot, és csak a módosított rekordokat adta volna hozzá a BYOD-hez.
 
-**Megoldás:** Előfordulhat, hogy az SQL változáskövetési táblák nem a várt állapotban vannak. Ilyen típusú esetekben ajánlott kikapcsolni az entitás módosításának nyomon követését, majd újra bekapcsolni azt. A további tudnivalókat lásd [A változások nyomon követésének engedélyezése az entitásokhoz](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/entity-change-track?toc=/dynamics365/human-resources/toc.json).
+**Megoldás:** Előfordulhat, hogy az SQL változáskövetési táblák nem a várt állapotban vannak. Ilyen típusú esetekben ajánlott kikapcsolni az entitás módosításának nyomon követését, majd újra bekapcsolni azt. A további tudnivalókat lásd [A változások nyomon követésének engedélyezése az entitásokhoz](../fin-ops-core/dev-itpro/data-entities/entity-change-track.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json).
 
 ## <a name="see-also"></a>Lásd még
 
-[Adatkezelés – áttekintés](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities-data-packages?toc=/dynamics365/human-resources/toc.json)<br>
-[Használja saját adatbázisát (BYOD)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database?toc=/dynamics365/human-resources/toc.json)<br>
-[Adatimportálási és -exportálási feladatok áttekintése](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-import-export-job?toc=/dynamics365/human-resources/toc.json)<br>
-[Változáskövetés engedélyezése az entitások esetében](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/entity-change-track?toc=/dynamics365/human-resources/toc.json)
+[Adatkezelés – áttekintés](../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json)<br>
+[Használja saját adatbázisát (BYOD)](../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json)<br>
+[Adatimportálási és -exportálási feladatok áttekintése](../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json)<br>
+[Változáskövetés engedélyezése az entitások esetében](../fin-ops-core/dev-itpro/data-entities/entity-change-track.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
