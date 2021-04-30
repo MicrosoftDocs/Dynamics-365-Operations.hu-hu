@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 46b232da404fe2106ce4b5455ea4d682a08aaa53
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 5ec5b8d0ad1e85a9c4fc7c3eb762c2c7b0b52e8d
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5743629"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893300"
 ---
 # <a name="customize-electronic-reporting-configurations-to-generate-an-electronic-document"></a>Elektronikus jelentéskészítési konfigurációk testreszabása elektronikus bizonylat előállításához
 
@@ -667,8 +667,8 @@ Az 32.6.7.2-es verzió állapota a **Piszkozat** értékről a **Befejezett** é
 - [Elektronikus jelentések áttekintése](general-electronic-reporting.md)
 - [ER-konfigurációk letöltése a Lifecycle Services szolgáltatásból](download-electronic-reporting-configuration-lcs.md)
 - [ER-konfigurációk letöltése a konfigurációs szolgáltatás globális tárából](er-download-configurations-global-repo.md)
-- [Szabadszöveges számla létrehozása](https://docs.microsoft.com/dynamics365/finance/accounts-receivable/create-free-text-invoice-new)
-- [Egyéni mezők létrehozása és használata](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/user-defined-fields)
+- [Szabadszöveges számla létrehozása](../../../finance/accounts-receivable/create-free-text-invoice-new.md)
+- [Egyéni mezők létrehozása és használata](../../fin-ops/get-started/user-defined-fields.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

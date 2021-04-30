@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 2db444d4a5e40c1bbfdab9e044aff43031b6e9f4
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0c0eab7b0b1325d18f77ab5b8c9704781beba856
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826690"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897864"
 ---
 # <a name="generate-consolidated-financial-statements"></a>Konszolidált pénzügyi kimutatások létrehozása
 
@@ -34,7 +34,7 @@ Pénzügyi jelentések segítségével való konszolidálás legegyszerűbb mód
 3. Hozzon létre jelentési fát, amely a konszolidált jelentésben használt minden vállalathoz egy jelentési csomópontot tartalmaz.
 
 > [!TIP]
-> A jelentési fák, sordefiníciók és oszlopdefiníciók létrehozásával és kezelésével kapcsolatos további tudnivalókért tekintse meg a [pénzügyi jelentés-összetevőket](../../dev-itpro/analytics/financial-report-components.md).
+> A jelentési fák, sordefiníciók és oszlopdefiníciók létrehozásával és kezelésével kapcsolatos további tudnivalókért tekintse meg a [pénzügyi jelentés-összetevőket](../../fin-ops-core/dev-itpro/analytics/financial-report-components.md).
 
 A következő ábrán látható, hogyan kell használni egy jelentési fa definícióját a pénzügyi jelentéskészítésben arra, hogy azonosítsa az összes konszolidálandó vállalatot.
 
@@ -90,14 +90,14 @@ Akár számlákat, dimenziókat vagy mindkettőt használ, a Pénzügyi jelenté
 Előfordulhat, hogy egy vállalat egy másik vállalatnak mindössze bizonyos százalékát tulajdonolja. Ebben a helyzetben egy konszolidált jelentés létrehozásakor fontos, hogy csak a vállalat által tulajdonolt százalékkal számoljon el. A Pénzügyi jelentéskészítés több lehetőséget biztosít a kisebbségi részesedés kimutatására, a felhasználói preferenciától függően. Az egyik módszer az görgetett összesítési százalék használata a jelentési fa definícióban. Egy másik módszer a kisebbségi tulajdon külön sorként való megjelenítése a jelentésben.
 
 ### <a name="using-the-reporting-tree-definition"></a>Jelentési fa definíció használata
-A jelentési fa definícióban adja meg a tulajdon százalékát a **Görgetett összesítés %** oszlopban (H oszlop), ahogy a következő ábrán látható. Amikor a jelentést létrehozza, ezt a százalékot használja majd a rendszer a konszolidált összeg kiszámolásához. Ebben a példában a Contoso vállalat a Contoso Germany vállalatnak mindössze 80%-át birtokolja. Megadhat vagy **80**-at vagy **0,8**-at a **Görgetett összesítés %** oszlopban, és a konszolidált szintre csak 80% kerül továbbgörgetésre.
+A jelentési fa definícióban adja meg a tulajdon százalékát a **Görgetett összesítés %** oszlopban (H oszlop), ahogy a következő ábrán látható. Amikor a jelentést létrehozza, ezt a százalékot használja majd a rendszer a konszolidált összeg kiszámolásához. Ebben a példában a(z) Contoso vállalat a(z) Contoso Germany vállalatnak mindössze 80%-át birtokolja. Megadhat vagy **80**-at vagy **0,8**-at a **Görgetett összesítés %** oszlopban, és a konszolidált szintre csak 80% kerül továbbgörgetésre.
 
 > [!NOTE]
 > Ezt a tulajdonszázalékot bármely jelentési egység esetén alkalmazhatja, nem csak a vállalati szinten. 
 
 ![Jelentési fa definíciós százalék használata](./media/Using-reporting-tree-definition-percentage.png "Jelentési fa definíciós százalék használata")
 
-A jelentés létrehozásakor a Contoso Németország jelentésében az értékesítés összegének 100%-a jelenik majd meg, és az összeg 80%-át allokálják és görgetik tovább az értékesítés konszolidált szintjére.
+A jelentés létrehozásakor a(z) Contoso Németország jelentésében az értékesítés összegének 100%-a jelenik majd meg, és az összeg 80%-át allokálják és görgetik tovább az értékesítés konszolidált szintjére.
 
 Ha Ön a vállalat kevesebb mint 1%-t birtokolja, kijelölheti az **1%-nál kisebb görgetett összesítés engedélyezése** jelölőnégyzetet a **Jelentés beállításai** oldal **További beállítások** lapján, ahogy az a következő ábrán látható. Ebben az esetben a jelentési fa **Görgetett összesítés %** oszlopában levő értékeket úgy kezeli a rendszer, mintha kevesebb, mint 1%-ot jelentenének. Ha például **0.8**-at ad meg, a rendszer 0,8 százalékot görget a konszolidált szintre, nem 80%-ot. Alternatív lehetőségként elérheto ugyanezt az eredményt, ha nem jelöli be az **1%-nál kisebb görgetés engedélyezése** jelölőnégyzetet, és ehelyett **0,008**-at ad meg a **Görgetett összesítés %** oszlopba.
 

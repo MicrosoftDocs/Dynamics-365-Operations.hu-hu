@@ -13,25 +13,25 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9fabc308b1b0682c6fdce3e81e7335417846bebd
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: d5ada93c0192aadac70c38c8c8c4f3af86ff6fc3
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5743533"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893276"
 ---
 # <a name="design-er-configurations-to-suppress-bom-characters-in-generated-files"></a>ER-konfigurációk tervezése az előállított fájlokban található bájtsorrendjelző karakterek elrejtéséhez
 
 [!include [banner](../includes/banner.md)]
 
-[Elektronikus jelentési (ER)](general-electronic-reporting.md) [megoldást](er-quick-start1-new-solution.md) tervezhet kimenő dokumentumok készítéséhez. A dokumentumok szöveges vagy XML-fájlként való létrehozásához a megoldásnak tartalmaznia kell egy ER [konfigurációt](general-electronic-reporting.md#Configuration), amely tartalmaz egy [formátum](general-electronic-reporting.md#FormatComponentOutbound) összetevőt. A generált fájlokban szereplő karakterkészlet [karakterkódolásának](https://docs.microsoft.com/windows/win32/intl/character-sets) megadásához az ER-formátumnak tartalmaznia kell a **Közös\\Fájl** formátumelemet. Az ER-formátum összetevő konfigurálásakor meg kell nyitnia a létrehozott ER-konfiguráció [vázlat](general-electronic-reporting.md#component-versioning) verzióját az ER-formátumtervezőben, és hozzá kell adnia a **Közös\\Fájl** elemet. A **Kódolás** mezőben adja meg a futásidőben generált kimenő fájlok kódolását ezzel az összetevővel.
+[Elektronikus jelentési (ER)](general-electronic-reporting.md) [megoldást](er-quick-start1-new-solution.md) tervezhet kimenő dokumentumok készítéséhez. A dokumentumok szöveges vagy XML-fájlként való létrehozásához a megoldásnak tartalmaznia kell egy ER [konfigurációt](general-electronic-reporting.md#Configuration), amely tartalmaz egy [formátum](general-electronic-reporting.md#FormatComponentOutbound) összetevőt. A generált fájlokban szereplő karakterkészlet [karakterkódolásának](/windows/win32/intl/character-sets) megadásához az ER-formátumnak tartalmaznia kell a **Közös\\Fájl** formátumelemet. Az ER-formátum összetevő konfigurálásakor meg kell nyitnia a létrehozott ER-konfiguráció [vázlat](general-electronic-reporting.md#component-versioning) verzióját az ER-formátumtervezőben, és hozzá kell adnia a **Közös\\Fájl** elemet. A **Kódolás** mezőben adja meg a futásidőben generált kimenő fájlok kódolását ezzel az összetevővel.
 
 > [!NOTE]
 > Ha a formátum hibás kódolási nevet tartalmaz, akkor a rendszer hibát jelez, amikor menti a formátum beállításainak módosításait.
 
 ![Gyökérelem hozzáadása a Formátumtervező oldalon](./media/er-suppress-bom-characters-image1.gif)
 
-Ha az **UTF-8**, **UTF-16** vagy **UTF-32** kódolást adja meg, elérhetővé válik az **Bájtsorrendjelző karakterek elrejtése** beállítás. A beállítást **Igen** értékre állítva elrejti a [bájtsorrendjelző (BOM) karaktereket](https://docs.microsoft.com/globalization/encoding/byte-order-mark) a kimenő fájlokban, amelyek futásidőben jönnek létre a szerkeszthető ER-formátum futtatásakor.
+Ha az **UTF-8**, **UTF-16** vagy **UTF-32** kódolást adja meg, elérhetővé válik az **Bájtsorrendjelző karakterek elrejtése** beállítás. A beállítást **Igen** értékre állítva elrejti a [bájtsorrendjelző (BOM) karaktereket](/globalization/encoding/byte-order-mark) a kimenő fájlokban, amelyek futásidőben jönnek létre a szerkeszthető ER-formátum futtatásakor.
 
 > [!NOTE]
 > Ha üresen hagyja a **Kódolás** mezőt, az alapértelmezett **UTF-8** kódolás kerül használatra.

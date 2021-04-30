@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b7d9ecea08f5095e7fa8501d690bbabbd54e6501
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: d95c92fe15f4dfe77d2bc8a153f86165c17edb4e
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5802239"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5892633"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-december-2-2020"></a>Új vagy módosult elemek a Dynamics 365 Human Resources szolgáltatásban (2020. december 2.)
 
@@ -30,7 +30,7 @@ Ez a témakör a Dynamics 365 Human Resources új, módosított vagy nemsokára 
 
 A frissítési folyamattal és ütemezéssel kapcsolatos további tudnivalókért lásd: [Frissítési folyamat](hr-admin-setup-update-process.md).
 
-További tájékoztatás az új szolgáltatásokról és a nyilvános megjelenési dátumokról: [A Dynamics 365 Human Resources 2020. második kiadási hullámának áttekintése](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/).
+További tájékoztatás az új szolgáltatásokról és a nyilvános megjelenési dátumokról: [A Dynamics 365 Human Resources 2020. második kiadási hullámának áttekintése](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/).
 
 ## <a name="in-this-release"></a>Ebben a verzióban
 
@@ -42,10 +42,10 @@ Az alábbi funkciók általában a következő verzióval lesznek elérhetők.
 
 | Funkció | Kiadási terv | Dokumentáció |
 | --- | --- | --- |
-| A vezetők benyújthatnak toborzási kérelmeket pozíciókra | [A vezetők benyújthatnak toborzási kérelmeket a nyitott pozíciókra](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/manager-submit-request-recruit-open-positions) | [Toborzási kérelem hozzáadása](https://docs.microsoft.com/dynamics365/human-resources/hr-personnel-recruit#add-a-recruiting-request) |
-| Továbbfejlesztett jelöltprofil a Személyzetkezelésben | [Továbbfejlesztett jelöltprofil a személyzetkezelésben](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/enhanced-candidate-profile-personnel-management) | [Jelöltprofil hozzáadása vagy szerkesztése](https://docs.microsoft.com/dynamics365/human-resources/hr-personnel-recruit#add-or-edit-a-candidate-profile) |
-| Egyszerűsített integráció engedélyezése a toborzási szolgáltatókkal | [Egyszerűsített integráció engedélyezése a toborzási szolgáltatókkal](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/enable-simplified-integration-recruiting-providers) | [Jelöltek toborzása](https://docs.microsoft.com/dynamics365/human-resources/hr-personnel-recruit) |
-| Egyéni hivatkozások a vezetői önkiszolgáló rendszerben | [Egyéni hivatkozások a vezetői önkiszolgáló rendszerben](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/custom-links-manager-self-service) | [Egyéni hivatkozások a vezetői önkiszolgáló rendszerben](https://aka.ms/MSSCustomLinks) |
+| A vezetők benyújthatnak toborzási kérelmeket pozíciókra | [A vezetők benyújthatnak toborzási kérelmeket a nyitott pozíciókra](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/manager-submit-request-recruit-open-positions) | [Toborzási kérelem hozzáadása](./hr-personnel-recruit.md#add-a-recruiting-request) |
+| Továbbfejlesztett jelöltprofil a Személyzetkezelésben | [Továbbfejlesztett jelöltprofil a személyzetkezelésben](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/enhanced-candidate-profile-personnel-management) | [Jelöltprofil hozzáadása vagy szerkesztése](./hr-personnel-recruit.md#add-or-edit-a-candidate-profile) |
+| Egyszerűsített integráció engedélyezése a toborzási szolgáltatókkal | [Egyszerűsített integráció engedélyezése a toborzási szolgáltatókkal](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/enable-simplified-integration-recruiting-providers) | [Jelöltek toborzása](./hr-personnel-recruit.md) |
+| Egyéni hivatkozások a vezetői önkiszolgáló rendszerben | [Egyéni hivatkozások a vezetői önkiszolgáló rendszerben](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/custom-links-manager-self-service) | [Egyéni hivatkozások a vezetői önkiszolgáló rendszerben](./hr-employee-manager-self-service-custom-links.md) |
 
 
 ### <a name="bug-fixes"></a>Hibajavítások
@@ -72,23 +72,23 @@ Az alábbi új funkciók előzetes verzióban érhetők el. A funkciók be- vagy
 
 | Funkció | Kiadási terv | Dokumentáció |
 | --- | --- | --- |
-| Human Resources alkalmazás a Microsoft Teams alkalmazásban | [Alkalmazott szabadsági és távolléti élménye a Microsoft Teams rendszerben](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) | [Human Resources alkalmazás a Teamsben](https://go.microsoft.com/fwlink/?linkid=2127841)<br>[Szabadságkérelmek kezelése a Teamsben](hr-teams-leave-app.md) |
-| Továbbfejlesztett munkafolyamat-kérelmek és -jóváhagyások | [Szervezeti és személyzeti felügyeleti munkafolyamat-tapasztalatok továbbfejlesztései](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/organization-personnel-management-workflow-experience-enhancements) | [Konfigurációs beállítás a hozzám rendelt munkaelemek lista pozicionálásához](https://docs.microsoft.com/dynamics365/human-resources/hr-whats-new-2020-09-03#configuration-option-to-position-work-items-assigned-to-me-list-477004) |
-| Integráció a LinkedIn Talent Hub szolgáltatással | [Integráció a LinkedIn Talent Hub szolgáltatással](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/integration-linkedin-talent-hub) | [Integráció a LinkedIn Talent Hub szolgáltatással](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-integration-linkedin) |
-|Szabadságok vállalatközi nézete vezetőknek | [Munkavállalói szabadságok vállalatközi nézete vezetőknek](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/cross-company-view-employee-leave-managers) | [Szabadság és távollét paramétereinek konfigurálása](https://docs.microsoft.com/dynamics365/human-resources/hr-leave-and-absence-parameters) |
-|További betekintés biztosítása a szabadságegyenlegekbe| [További betekintés biztosítása a szabadságegyenlegekbe](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/provide-additional-insight-into-leave-balances) | [Alkalmazotti szabadság kezelése](https://docs.microsoft.com/dynamics365/human-resources/hr-leave-and-absence-manage-employee-leave) |
-| A vezetők benyújthatnak toborzási kérelmeket pozíciókra | [A vezetők benyújthatnak toborzási kérelmeket a nyitott pozíciókra](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/manager-submit-request-recruit-open-positions) | [Toborzási kérelem hozzáadása](https://docs.microsoft.com/dynamics365/human-resources/hr-personnel-recruit#add-a-recruiting-request) |
-| Továbbfejlesztett jelöltprofil a Személyzetkezelésben | [Továbbfejlesztett jelöltprofil a személyzetkezelésben](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/enhanced-candidate-profile-personnel-management) | [Jelöltprofil hozzáadása vagy szerkesztése](https://docs.microsoft.com/dynamics365/human-resources/hr-personnel-recruit#add-or-edit-a-candidate-profile) |
-| Egyszerűsített integráció engedélyezése a toborzási szolgáltatókkal | [Egyszerűsített integráció engedélyezése a toborzási szolgáltatókkal](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/enable-simplified-integration-recruiting-providers) | [Jelöltek toborzása](https://docs.microsoft.com/dynamics365/human-resources/hr-personnel-recruit) |
+| Human Resources alkalmazás a Microsoft Teams alkalmazásban | [Alkalmazott szabadsági és távolléti élménye a Microsoft Teams rendszerben](/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) | [Human Resources alkalmazás a Teamsben](./hr-admin-teams-leave-app.md)<br>[Szabadságkérelmek kezelése a Teamsben](hr-teams-leave-app.md) |
+| Továbbfejlesztett munkafolyamat-kérelmek és -jóváhagyások | [Szervezeti és személyzeti felügyeleti munkafolyamat-tapasztalatok továbbfejlesztései](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/organization-personnel-management-workflow-experience-enhancements) | [Konfigurációs beállítás a hozzám rendelt munkaelemek lista pozicionálásához](./hr-whats-new-2020-09-03.md#configuration-option-to-position-work-items-assigned-to-me-list-477004) |
+| Integráció a LinkedIn Talent Hub szolgáltatással | [Integráció a LinkedIn Talent Hub szolgáltatással](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/integration-linkedin-talent-hub) | [Integráció a LinkedIn Talent Hub szolgáltatással](./hr-admin-integration-linkedin.md) |
+|Szabadságok vállalatközi nézete vezetőknek | [Munkavállalói szabadságok vállalatközi nézete vezetőknek](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/cross-company-view-employee-leave-managers) | [Szabadság és távollét paramétereinek konfigurálása](./hr-leave-and-absence-parameters.md) |
+|További betekintés biztosítása a szabadságegyenlegekbe| [További betekintés biztosítása a szabadságegyenlegekbe](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/provide-additional-insight-into-leave-balances) | [Alkalmazotti szabadság kezelése](./hr-leave-and-absence-manage-employee-leave.md) |
+| A vezetők benyújthatnak toborzási kérelmeket pozíciókra | [A vezetők benyújthatnak toborzási kérelmeket a nyitott pozíciókra](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/manager-submit-request-recruit-open-positions) | [Toborzási kérelem hozzáadása](./hr-personnel-recruit.md#add-a-recruiting-request) |
+| Továbbfejlesztett jelöltprofil a Személyzetkezelésben | [Továbbfejlesztett jelöltprofil a személyzetkezelésben](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/enhanced-candidate-profile-personnel-management) | [Jelöltprofil hozzáadása vagy szerkesztése](./hr-personnel-recruit.md#add-or-edit-a-candidate-profile) |
+| Egyszerűsített integráció engedélyezése a toborzási szolgáltatókkal | [Egyszerűsített integráció engedélyezése a toborzási szolgáltatókkal](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/enable-simplified-integration-recruiting-providers) | [Jelöltek toborzása](./hr-personnel-recruit.md) |
 
 ## <a name="coming-soon"></a>Hamarosan
 
-A tervezett szolgáltatások és az ütemezett kiadások teljes listája az alábbi témakörben olvasható: [A Dynamics 365 Human Resources 2020. második kiadási hullámának áttekintése](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/).
+A tervezett szolgáltatások és az ütemezett kiadások teljes listája az alábbi témakörben olvasható: [A Dynamics 365 Human Resources 2020. második kiadási hullámának áttekintése](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/).
 
 ## <a name="see-also"></a>Lásd még
 
 [Újdonságok vagy változások a Human Resources szolgáltatásban](hr-admin-whats-new.md)</br>
-[A Dynamics 365 Human Resources 2020. második kiadási hullámának áttekintése](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/)</br>
+[A Dynamics 365 Human Resources 2020. második kiadási hullámának áttekintése](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/)</br>
 [Rendelés frissítése](hr-admin-setup-update-process.md)</br>
 [Szolgáltatások kezelése](hr-admin-manage-features.md)
 

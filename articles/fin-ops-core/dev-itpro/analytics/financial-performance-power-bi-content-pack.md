@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ce180c28be2cea1115937b1b1fbdf2323903e4ad
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 953f477e7e00cde7f814ff28d3dfd8ed7075dafc
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5743377"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893226"
 ---
 # <a name="financial-performance-powerbicom-solution"></a>Pénzügyi teljesítmény PowerBI.com megoldás
 
@@ -85,7 +85,7 @@ A következő entitásokat használták **Pénzügyi teljesítmény** PowerBI.co
 - Főkönyvek
 - ChartofAccounts
 
-Ezeket az entitásokat számított mértékek létrehozására használták az adatmodellben. A kiszámított mértékek a fő teljesítménymutatók (KPI-k) és a tartalomban használt jelentések kiszámításához használatosak. Alapértelmezés szerint a tartalom tartalmazza az utolsó három év és a jövő évi adatokat. A jelentésekkel és az irányítópulttal kapcsolatos további számítások felvételéhez, módosíthatja a [Microsoft Excel-munkafüzetet](https://docs.microsoft.com/dynamics/s-e/). Ez a munkafüzet azon alapértelmezett adatmodell, amelyet a tartalom létrehozásához használtak.
+Ezeket az entitásokat számított mértékek létrehozására használták az adatmodellben. A kiszámított mértékek a fő teljesítménymutatók (KPI-k) és a tartalomban használt jelentések kiszámításához használatosak. Alapértelmezés szerint a tartalom tartalmazza az utolsó három év és a jövő évi adatokat. A jelentésekkel és az irányítópulttal kapcsolatos további számítások felvételéhez, módosíthatja a [Microsoft Excel-munkafüzetet](/dynamics/s-e/). Ez a munkafüzet azon alapértelmezett adatmodell, amelyet a tartalom létrehozásához használtak.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

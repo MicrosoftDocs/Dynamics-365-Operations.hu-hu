@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 56ec9795f0eb8b15dd00578bf35739eaa9e3d086
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 266f94b6a32c88307258aa99f2ac0c6bf9c50a84
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818622"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897912"
 ---
 # <a name="evaluate-the-initial-customer-payment-prediction-model-preview"></a>A kezdeti vevői fizetési előrejelzési modell kiértékelése (előzetes verzió)
 
@@ -41,7 +41,7 @@ Ez a link elviszi az AI Builderhez, ahol többet megtudhat az aktuális modellr�
 
 A megnyitott oldal az alábbi információt mutatja:
 
-- A **Teljesítmény** szakaszban a modell teljesítményi osztálya biztosítja a modell minőségét. Ha további tájékoztatást szeretne erről az osztályról, tekintse meg az [Előrejelzési modell teljesítménye](https://docs.microsoft.com/ai-builder/prediction-performance) részt az AI Builder dokumentációjában.
+- A **Teljesítmény** szakaszban a modell teljesítményi osztálya biztosítja a modell minőségét. Ha további tájékoztatást szeretne erről az osztályról, tekintse meg az [Előrejelzési modell teljesítménye](/ai-builder/prediction-performance) részt az AI Builder dokumentációjában.
 - A **Legbefolyásosabb adat** szakasz bemutatja, hogy milyen fontos a különböző típusú adatok bevitele a modellhez. A lista és a megfelelő százalékok értékelésével meghatározhatja, hogy az adatok összhangban vannak-e a vállalattal és a piaccal kapcsolatos ismeretekkel.
 
     [![Teljesítmény és legbefolyásosabb adatszakaszok az előrejelzési modellhez](./media/models.png)](./media/models.png)

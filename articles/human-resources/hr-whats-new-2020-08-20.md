@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-08-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 69304cbffafa4c20dbbbb31d5c19920f669761b9
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 95ffe90795b9781408607257f3f63bf68c489b56
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5800165"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5891817"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-august-20-2020"></a>Új vagy módosult elemek a Dynamics 365 Human Resources szolgáltatásban (2020. augusztus 20.)
 
@@ -65,15 +65,15 @@ A DMF entitás immár elérhető az elhatárolás-felfüggesztésekhez.
 
 Kötelezővé teheti a mezőket a Human Resources személyre szabási funkcióival. Ehhez a funkcióhoz **Mentett nézetek** szükségesek. További információ a mentett nézetekről:
 
-- [Mentett nézetek – nyilvános megjelenés](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/saved-views--general-availability) a Dynamics 365 2020-as kiadási hullámának 2. csomagjában
-- [A mentett nézeteket teljes mértékben kihasználó képernyők létrehozása](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/user-interface/understanding-saved-views)
+- [Mentett nézetek – nyilvános megjelenés](/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/saved-views--general-availability) a Dynamics 365 2020-as kiadási hullámának 2. csomagjában
+- [A mentett nézeteket teljes mértékben kihasználó képernyők létrehozása](../fin-ops-core/dev-itpro/user-interface/understanding-saved-views.md)
 
 ### <a name="human-resources-application-in-teams"></a>Human Resources alkalmazás a Teamsben
 
 Az alkalmazottak megtekinthetik és kérhetik a munkából való távollétet a Microsoft Teams alkalmazásban. Ezek egy robottal lépnek interakcióba a szabadságkérelmek létrehozásához. További tájékoztatás:
 
-- [Alkalmazott szabadsága és távolléte a Microsoft Teams rendszerben](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) a Dynamics 365 2020-as kiadási hullámának 1. csomagjában
-- [Human Resources alkalmazás a Teamsben](https://go.microsoft.com/fwlink/?linkid=2127841)
+- [Alkalmazott szabadsága és távolléte a Microsoft Teams rendszerben](/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) a Dynamics 365 2020-as kiadási hullámának 1. csomagjában
+- [Human Resources alkalmazás a Teamsben](./hr-admin-teams-leave-app.md)
 
 ## <a name="coming-soon"></a>Hamarosan
 
@@ -117,7 +117,7 @@ A közelmúltban két olyan problémát észleltünk, amely a **BenefitsPlanEmpl
 ## <a name="see-also"></a>Lásd még
 
 [Új vagy módosult elemek a Human Resources szolgáltatásban](hr-admin-whats-new.md)</br>
-[A Dynamics 365 Human Resources 2019 második kiadási hullámának áttekintése](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[A Dynamics 365 Human Resources 2019 második kiadási hullámának áttekintése](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Rendelés frissítése](hr-admin-setup-update-process.md)</br>
 [Szolgáltatások kezelése](hr-admin-manage-features.md)
 

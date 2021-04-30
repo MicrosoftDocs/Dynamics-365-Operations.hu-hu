@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 794a8b19224858a690f2b857c0d7278ed177d531
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d070ddd350bc1ca9edb311cfd9f015aca1e7cc78
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5830592"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897452"
 ---
 # <a name="cash-overview-power-bi-content"></a>Készpénzáttekintés Power BI-tartalom
 
@@ -38,7 +38,7 @@ A következő beállításokat el kell végezni ahhoz, hogy az adatok megjelenje
 2. Lépjen a **Főkönyv > Naptárak > Pénzügyi naptárak** részre, hogy ellenőrizze az aktív időszakhoz hozzárendelt pénzügyi naptár dátumait.
 3. Ugrás a **Főkönyv > Beállítás > Főkönyv** részre a **Könyvelési pénznem** és az **Árfolyamtípus** beállításához.
 4. Adja meg az árfolyamokat a tranzakció pénznemei és a könyvelési pénznem, a könyvelési pénznem és a rendszer pénzneme, a könyvelési pénznem és a banki pénznemek között. Lépjen ide: **Főkönyv > Pénznemek > Pénznemek árfolyamtípusai**.
-5. Pénzforgalmi előrejelzés konfigurálása és futtatása. A Pénzforgalmi előrejelzés beállításával kapcsolatos további tudnivalókat lásd: [Pénzforgalmi előrejelzés](https://docs.microsoft.com/dynamics365/finance/cash-bank-management/cash-flow-forecasting). 
+5. Pénzforgalmi előrejelzés konfigurálása és futtatása. A Pénzforgalmi előrejelzés beállításával kapcsolatos további tudnivalókat lásd: [Pénzforgalmi előrejelzés](./cash-flow-forecasting.md). 
 6. Lépjen a **Rendszerfelügyelet > Beállítás > Entitástár** részre a **LedgerCovLiquidityMeasurement** összesítő mérték frissítéséhez.
 
 ## <a name="accessing-the-power-bi-content"></a>A Power BI tartalom elérése

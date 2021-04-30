@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d37af06a33667f7cfe5df182d5197dee5edc912b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 4de7f7f5f501024b7698736ded80405b9291cb58
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811287"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897036"
 ---
 # <a name="get-started-with-financial-reporting"></a>Financial Reporting – első lépések 
 
@@ -148,7 +148,7 @@ A jelentéskészítő megnyitásakor problémák merülhetnek fel néhány gyako
 * Az Internet Explorer szolgáltatásban válassza ki a **Beállítások** elemet, majd válassza az **Internetbeállítások** lehetőséget. Válassza a **Biztonság** fület. Válassza ki a megbízható helyeket. A zóna Biztonsági szint feliratú területen módosítsa a beállítást **Közepesen alacsony** értékre.
 * Tiltsa le az előugró ablakok blokkolását a böngészőjében.
 * A Microsoft .NET-keretrendszer 4.6.2 vagy újabb telepítéséhez munkaállomások szükségesek. A Microsoft .NET Framework ezen verziója a [Microsoft letöltőközpontból](https://www.microsoft.com/download/details.aspx?id=53345) tölthető le és telepíthető.
-* Chrome böngésző használata esetén, telepítenie kell a ClickOnce kiterjesztést a jelentéstervező kliens letöltéséhez. Ha a Chrome böngészőt incognito módban futtatja, győződjön meg arról, a ClickOnce kiterjesztés engedélyezve van-e az incognito módban. A Chrome ClickOnce kiterjesztéssel kapcsolatos további tudnivalókat lásd: [Felhőtelepítések rendszerkövetelményei](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/system-requirements).
+* Chrome böngésző használata esetén, telepítenie kell a ClickOnce kiterjesztést a jelentéstervező kliens letöltéséhez. Ha a Chrome böngészőt incognito módban futtatja, győződjön meg arról, a ClickOnce kiterjesztés engedélyezve van-e az incognito módban. A Chrome ClickOnce kiterjesztéssel kapcsolatos további tudnivalókat lásd: [Felhőtelepítések rendszerkövetelményei](../../fin-ops-core/fin-ops/get-started/system-requirements.md).
 * Ha a Microsoft Edge-t Chrome böngészővel használja, akkor nem kell ClickOnce-kiterjesztést telepítenie az Edge Chromium számára. Azonban engedélyeznie kell a ClickOnce lehetőséget a jelentéstervező kliens letöltéséhez. Ha a böngészőt inkognitó módban futtatja, győződjön meg arról, a ClickOnce kiterjesztés engedélyezve van-e az inkognitó módban.
      1. Új böngésző megnyitása a Microsoft Edge-ben.
      2. Adja az **edge://flags** parancsot, és válassza az **Enter** billentyűt.

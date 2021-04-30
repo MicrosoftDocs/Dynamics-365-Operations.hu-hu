@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 9d2d590c95aa4069a1bed306910486c47200cdfd
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a5befac6c72153332319eefc1aaeab30c33f4c69
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5794853"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5892251"
 ---
 # <a name="integration-with-finance-faq"></a>Integráció a Finance GYIK szolgáltatással
 
@@ -50,7 +50,7 @@ Alapértelmezés szerint az Dataverse integráció ki van kapcsolva olyan új k�
 
 ## <a name="can-i-create-a-new-mapping-without-using-the-templates"></a>Létrehozhatok egy új hozzárendelést a sablonok használata nélkül?
 
-Sablonok a kiindulási pontok. Saját sablon is létrehozhat, de a sablonra mindig szükség van , egy alkalmazásintegrációs projekt létrehozása során. Az Adatintegrátor (DI), a sablonokkal és a projektekkel kapcsolatos további tudnivalókat lásd: [Adatok integrálása a Microsoft Dataverse](https://docs.microsoft.com/powerapps/administrator/data-integrator) for Apps szolgáltatásba.
+Sablonok a kiindulási pontok. Saját sablon is létrehozhat, de a sablonra mindig szükség van , egy alkalmazásintegrációs projekt létrehozása során. Az Adatintegrátor (DI), a sablonokkal és a projektekkel kapcsolatos további tudnivalókat lásd: [Adatok integrálása a Microsoft Dataverse](/powerapps/administrator/data-integrator) for Apps szolgáltatásba.
 
 ## <a name="can-i-map-financial-dimensions-to-transfer-between-human-resources-and-finance"></a>Hozzárendelhetek-e pénzügyi dimenziókat átvitelre a Human Resources és a Finance alkalmazás között?
 
@@ -145,7 +145,7 @@ A Finance integrációja két lépésből áll. Először ellenőrizze, hogy a H
 
 Ha az adatok nem a várt módon jelennek meg a Dataverse megoldásban, győződjön meg róla, az entitást az integráció támogatja. További adatok felvételéhez a Dataverse megoldásba módosításara van szükség a Microsoft oldalán.
 
-Ha az entitás támogatott, és az adatok elérhetők a Dataverse megoldásban, ellenőrizze, hogy a hozzárendelés megfelelő-e az Adatintegrátorban. Ha az integrátor leképezése megfelelőnek tűnik, ellenőrizze, hogy az adatkezelési feladatok sikeresen lefutottak-e. Hibák fordulhatnak elő a kötegelt feladatok végrehajtása során. Az Adatkezeléssel kapcsolatos további tudnivalókért lásd: [Adatkezelés](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json).
+Ha az entitás támogatott, és az adatok elérhetők a Dataverse megoldásban, ellenőrizze, hogy a hozzárendelés megfelelő-e az Adatintegrátorban. Ha az integrátor leképezése megfelelőnek tűnik, ellenőrizze, hogy az adatkezelési feladatok sikeresen lefutottak-e. Hibák fordulhatnak elő a kötegelt feladatok végrehajtása során. Az Adatkezeléssel kapcsolatos további tudnivalókért lásd: [Adatkezelés](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=%2ffin-and-ops%2ftoc.json).
 
 ## <a name="the-addresses-for-my-employees-are-incorrect-after-i-import-them-into-finance-what-should-i-do"></a>A saját alkalmazottak címei helytelenek a Finance alkalmazásban importálás után. Mit tegyek?
 
@@ -172,15 +172,15 @@ Frissítse a Finance adatentitásait az **Adatkezelés \> Keretrendszer paramét
 
 - Adatintegrátor(DI): 
 
-  - [Adatok integrálása: Microsoft Dataverse](https://docs.microsoft.com/powerapps/administrator/data-integrator)
+  - [Adatok integrálása: Microsoft Dataverse](/powerapps/administrator/data-integrator)
 
-  - [Hibakezelés és hibaelhárítás az Adatintegrátorban](https://docs.microsoft.com/powerapps/administrator/data-integrator-error-management)
+  - [Hibakezelés és hibaelhárítás az Adatintegrátorban](/powerapps/administrator/data-integrator-error-management)
 
-  - [Válasz DSR kérésekre a rendszer által generált naplókhoz a Power Apps, Microsoft Power Automate és Dataverse szolgáltatásban](https://docs.microsoft.com/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs)
+  - [Válasz DSR kérésekre a rendszer által generált naplókhoz a Power Apps, Microsoft Power Automate és Dataverse szolgáltatásban](/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs)
 
 - Adatkezelés:
 
-  - [Adatkezelés](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json)
+  - [Adatkezelés](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=%2ffin-and-ops%2ftoc.json)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

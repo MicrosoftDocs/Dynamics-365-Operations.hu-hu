@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 4b4e551f5c687f0021ddba0c9f5b73af528b7140
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 3faffad2bff18278a54a26f77c1423f2246d086e
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5813171"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5907963"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10017-april-2021"></a>Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.17. (2021. április ) szolgáltatásban
 
@@ -33,65 +33,65 @@ Ez a témakör a Microsoft Dynamics 365 Supply Chain Management 10.0.17 változa
 
 ## <a name="features-included-in-this-release"></a>A verzióban található funkciók
 
-Ez a kiadás a következő funkciókat tartalmazza:  Kövesse a [kiadási tervet](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features) az egyes funkciók hivatalos kiadási dátumainak megtekintéséhez.
+Ez a kiadás a következő funkciókat tartalmazza:  Kövesse a [kiadási tervet](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features) az egyes funkciók hivatalos kiadási dátumainak megtekintéséhez.
 
 Ezen szolgáltatások többségét a használat előtt engedélyezni kell a [Funkciók kezelése](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) alatt. A felsorolt szolgáltatások egy része továbbra is előnézeti módban lehet, a legtöbb azonban már általánosan elérhetők.
 
 ### <a name="asset-management"></a>Eszközkezelés
 
-- [A munkarendelések karbantartási terv futtatása közbeni csoportosítására vonatkozó szabályok alkalmazása](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/apply-rules-grouping-work-orders-while-running-maintenance-plan)<br> - További információ a [Munkarendelések létrehozása](../asset-management/preventive-and-reactive-maintenance/creating-work-orders.md) című témakörben olvasható.
+- [A munkarendelések karbantartási terv futtatása közbeni csoportosítására vonatkozó szabályok alkalmazása](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/apply-rules-grouping-work-orders-while-running-maintenance-plan)<br> - További információ a [Munkarendelések létrehozása](../asset-management/preventive-and-reactive-maintenance/creating-work-orders.md) című témakörben olvasható.
 
-- [Vevők számlázása karbantartási munkára](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/bill-customers-maintenance-work)<br> - További információ: [Vevő által birtokolt eszközök karbantartásának számlázása](../asset-management/integration-to-project-management-and-accounting/customer-billing.md).
+- [Vevők számlázása karbantartási munkára](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/bill-customers-maintenance-work)<br> - További információ: [Vevő által birtokolt eszközök karbantartásának számlázása](../asset-management/integration-to-project-management-and-accounting/customer-billing.md).
 
-- [Karbantartás megtervezése összesített eszközszámláló-értékek alapján](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/plan-maintenance-based-accumulated-asset-counter-values)<br> - További információk: [Karbantartási tervek](../asset-management/preventive-and-reactive-maintenance/maintenance-plans.md).
+- [Karbantartás megtervezése összesített eszközszámláló-értékek alapján](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/plan-maintenance-based-accumulated-asset-counter-values)<br> - További információk: [Karbantartási tervek](../asset-management/preventive-and-reactive-maintenance/maintenance-plans.md).
 
 ### <a name="inventory-and-logistics"></a>Készlet és logisztika
 
-- [Integrációs keretrendszer az automatizált raktári folyamatok anyagkezelési berendezései számára (korábban MHAX)](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/integration-framework-material-handling-equipment-automated-warehouse-processes-previously-mhax)<br> - További információk: [Anyagkezelési berendezések interfésze (MHAX)](../warehousing/mhax.md).
+- [Integrációs keretrendszer az automatizált raktári folyamatok anyagkezelési berendezései számára (korábban MHAX)](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/integration-framework-material-handling-equipment-automated-warehouse-processes-previously-mhax)<br> - További információk: [Anyagkezelési berendezések interfésze (MHAX)](../warehousing/mhax.md).
 
-- [Partraszállási költség](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/landed-cost)<br> - További információk: [Partraszállítási költség modul](../landed-cost/landed-cost-overview.md).
+- [Partraszállási költség](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/landed-cost)<br> - További információk: [Partraszállítási költség modul](../landed-cost/landed-cost-overview.md).
 
-- [Csomagolás és tárolási dimenziók](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/packing-vs.-storage-dimensions)<br> - További információk: [Eltérő dimenziók beállítása csomagoláshoz és tároláshoz](../warehousing/packing-vs-storage-dimensions.md).
+- [Csomagolás és tárolási dimenziók](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/packing-vs.-storage-dimensions)<br> - További információk: [Eltérő dimenziók beállítása csomagoláshoz és tároláshoz](../warehousing/packing-vs-storage-dimensions.md).
 
-- [Készlet és logisztika mentett nézetei](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/saved-views-inventory-logistics)<br> - További információk: [A Supply Chain Management szabványos mentett nézetei](saved-views-scm.md).
+- [Készlet és logisztika mentett nézetei](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/saved-views-inventory-logistics)<br> - További információk: [A Supply Chain Management szabványos mentett nézetei](saved-views-scm.md).
 
-- [Raktári munka létrehozásának ütemezése](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/schedule-warehouse-work-creation)<br> - További információk [Munka létrehozásának ütemezése hullám közben](../warehousing/configure-wave-schedule-work-creation.md).
+- [Raktári munka létrehozásának ütemezése](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/schedule-warehouse-work-creation)<br> - További információk [Munka létrehozásának ütemezése hullám közben](../warehousing/configure-wave-schedule-work-creation.md).
 
-- [Készlet elszámolóáras átértékelési bizonylataihoz tartozó alapértelmezett pénzügyi dimenziók beállítása](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/set-default-financial-dimensions-inventory-standard-cost-revaluation-vouchers)<br> - További információk: [Elszámolóár frissítéseinek kezelése](../cost-management/manage-standard-cost-updates.md).
+- [Készlet elszámolóáras átértékelési bizonylataihoz tartozó alapértelmezett pénzügyi dimenziók beállítása](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/set-default-financial-dimensions-inventory-standard-cost-revaluation-vouchers)<br> - További információk: [Elszámolóár frissítéseinek kezelése](../cost-management/manage-standard-cost-updates.md).
 
-- [Kis csomagok szállítása (SPS)](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/small-parcel-shipping-sps)<br> - További információk: [Kiscsomagos szállítás](../warehousing/small-parcel-shipping.md).
+- [Kis csomagok szállítása (SPS)](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/small-parcel-shipping-sps)<br> - További információk: [Kiscsomagos szállítás](../warehousing/small-parcel-shipping.md).
 
-- [Raktárvégrehajtás skálázási egységekkel a felhőben](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-execution-scale-units-cloud)<br> - További információk: [Raktérkezelés munkaterhelései felhőalapú és peremhálózat-lépték szerinti egységekhez](../cloud-edge/cloud-edge-workload-warehousing.md) és [Raktérkezelés rendelései felhőalapú és peremhálózat-lépték szerinti egységekhez](../cloud-edge/cloud-edge-warehouse-order.md).
+- [Raktárvégrehajtás skálázási egységekkel a felhőben](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-execution-scale-units-cloud)<br> - További információk: [Raktérkezelés munkaterhelései felhőalapú és peremhálózat-lépték szerinti egységekhez](../cloud-edge/cloud-edge-workload-warehousing.md) és [Raktérkezelés rendelései felhőalapú és peremhálózat-lépték szerinti egységekhez](../cloud-edge/cloud-edge-warehouse-order.md).
 
-- [Raktárkezelési mobilalkalmazás](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-application)<br> - További információk: [A Raktárkezelés mobilalkalmazás telepítése és csatlakoztatása](../warehousing/install-configure-warehouse-management-app.md) és [Mobileszköz felhasználói beállításai](../warehousing/mobile-device-user-settings.md).
+- [Raktárkezelési mobilalkalmazás](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-application)<br> - További információk: [A Raktárkezelés mobilalkalmazás telepítése és csatlakoztatása](../warehousing/install-configure-warehouse-management-app.md) és [Mobileszköz felhasználói beállításai](../warehousing/mobile-device-user-settings.md).
 
 - Hullámvégrehajtási értesítések<br> - További információ [Hullámvégrehajtási értesítések](../warehousing/wave-execution-notifications.md)
 
 ### <a name="manufacturing"></a>Gyártás
 
-- [Eszközkezelési képességek a termelési üzem végrehajtási felületén](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/asset-management-capabilities-production-floor-execution-interface)<br> - További információk: [A termelési üzem végrehajtási felületének konfigurálása](../production-control/production-floor-execution-configure.md).
+- [Eszközkezelési képességek a termelési üzem végrehajtási felületén](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/asset-management-capabilities-production-floor-execution-interface)<br> - További információk: [A termelési üzem végrehajtási felületének konfigurálása](../production-control/production-floor-execution-configure.md).
 
 - Egyesített számsorozat a feladatazonosítók esetén<br> - További információért lásd: 
 
-- [A gyártásban használt anyagok alapértelmezett foglalási elvének felülbírálása](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/override-default-reservation-principle-materials-production)<br> - További információk: [A termelésben felhasznált anyagok alapértelmezett foglalási elvének felülbírálása](../production-control/override-default-reservation-principle.md).
+- [A gyártásban használt anyagok alapértelmezett foglalási elvének felülbírálása](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/override-default-reservation-principle-materials-production)<br> - További információk: [A termelésben felhasznált anyagok alapértelmezett foglalási elvének felülbírálása](../production-control/override-default-reservation-principle.md).
 
-- [A gyártásvezérlés mentett nézetei](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/saved-views-production-control)<br> - További információk: [A Supply Chain Management szabványos mentett nézetei](saved-views-scm.md).
+- [A gyártásvezérlés mentett nézetei](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/saved-views-production-control)<br> - További információk: [A Supply Chain Management szabványos mentett nézetei](saved-views-scm.md).
 
-- [Gyártásvégrehajtás skálázási egységekkel a felhőben](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/manufacturing-execution-scale-units-cloud)<br> - További információk: [Gyártási végrehajtás munkaterhelései felhőalapú és peremhálózat-lépték szerinti egységekhez](../cloud-edge/cloud-edge-workload-manufacturing.md).
+- [Gyártásvégrehajtás skálázási egységekkel a felhőben](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/manufacturing-execution-scale-units-cloud)<br> - További információk: [Gyártási végrehajtás munkaterhelései felhőalapú és peremhálózat-lépték szerinti egységekhez](../cloud-edge/cloud-edge-workload-manufacturing.md).
 
 ### <a name="planning"></a>Tervezés
 
-- [Fedezeti időkorlátok támogatása a tervezési optimalizálásához](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/coverage-time-fence-support-planning-optimization)<br> - További tájékoztatás: [Fedezeti időkorlátok](../master-planning/planning-optimization/coverage-time-fence.md).
+- [Fedezeti időkorlátok támogatása a tervezési optimalizálásához](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/coverage-time-fence-support-planning-optimization)<br> - További tájékoztatás: [Fedezeti időkorlátok](../master-planning/planning-optimization/coverage-time-fence.md).
 
-- [Az előrejelzési részmodell támogatása a tervezés optimalizáláshoz](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/forecast-submodel-support-planning-optimization)<br> - További információ: [Alaptervezés igény-előrejelzésekkel](../master-planning/planning-optimization/demand-forecast.md).
+- [Az előrejelzési részmodell támogatása a tervezés optimalizáláshoz](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/forecast-submodel-support-planning-optimization)<br> - További információ: [Alaptervezés igény-előrejelzésekkel](../master-planning/planning-optimization/demand-forecast.md).
 
-- [Beszerzési igénylés támogatása a tervezési optimalizáláshoz](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/purchase-requisition-support-planning-optimization)<br> - További információk: [Beszerzési igénylések](../master-planning/planning-optimization/purchase-requisitions.md).
+- [Beszerzési igénylés támogatása a tervezési optimalizáláshoz](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/purchase-requisition-support-planning-optimization)<br> - További információk: [Beszerzési igénylések](../master-planning/planning-optimization/purchase-requisitions.md).
 
-- [Mentett nézetek tervezett rendelésekhez](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/saved-views-planned-orders)<br> - További információk: [A Supply Chain Management szabványos mentett nézetei](saved-views-scm.md).
+- [Mentett nézetek tervezett rendelésekhez](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/saved-views-planned-orders)<br> - További információk: [A Supply Chain Management szabványos mentett nézetei](saved-views-scm.md).
 
 ### <a name="product-information-management"></a>Termékinformációk kezelése
 
-- [Változáskezelés engedélyezése meglévő termékek esetében](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enable-change-management-existing-products)<br> - További információk: [Változáskezelés engedélyezése meglévő termékek esetében](../engineering-change-management/change-management-existing-products.md).
+- [Változáskezelés engedélyezése meglévő termékek esetében](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enable-change-management-existing-products)<br> - További információk: [Változáskezelés engedélyezése meglévő termékek esetében](../engineering-change-management/change-management-existing-products.md).
 
 ## <a name="new-and-updated-documentation-resources"></a>Új és frissített dokumentáció-erőforrások
 
@@ -145,7 +145,7 @@ Ha további tájékoztatást szeretne kapni a 10.0.17 részét képező frissít
 
 Kíváncsi a bármelyik üzleti alkalmazásával vagy platformjával kapcsolatos, közelgő és a közelmúltban bevezetett lehetőségekre?
 
-Lásd: [Dynamics 365: 2021-as 1. frissítési hullám tervét](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/). A részleteket minden apró információmorzsáig bezárólag egyetlen dokumentumban rögzítettük, amelyet felhasználhat a tervezés során.
+Lásd: [Dynamics 365: 2021-as 1. frissítési hullám tervét](/dynamics365-release-plan/2021wave1/). A részleteket minden apró információmorzsáig bezárólag egyetlen dokumentumban rögzítettük, amelyet felhasználhat a tervezés során.
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Eltávolított és elavult Supply Chain Management szolgáltatások
 

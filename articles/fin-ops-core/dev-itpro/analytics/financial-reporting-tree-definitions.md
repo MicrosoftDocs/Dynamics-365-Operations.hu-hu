@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 42612a14b81f78199aa5678d6f8525e4bd87ca8c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 1a884031905e59e7bfedab9af7b97a7c54e40895
+ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5819938"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5866302"
 ---
 # <a name="reporting-tree-definitions-in-financial-reports"></a>Jelentési fa definíciója a pénzügyi jelentésekben
 
@@ -52,9 +52,7 @@ A jelentési fa meghatározása az alábbi táblázatban leírt oszlopokat tarta
 | Egység leírása      | A jelentési egység címe megjelenik jelentés fejlécében vagy a láblécben, az **UnitDesc** kódként való megadásakor a jelentésdefiníció **Fejlécek és láblécek** lapján. A cím megjelenik a jelentés sorleírásában, ha beírja az **UnitDesc** kódot a sordefiníció **Leírás** cellájába. |
 | Dimenziók            | Egy jelentési egység, amely az adatokat közvetlenül pénzügyi adatokból vonja ki. A fiók és a kapcsolódó szegmensek logikai pozícióját és hosszát határozza meg. Ebben az oszlopban minden jelentési egység sornak rendelkeznie kell egy dimenzióval. Helyezhet dimenziót az összesítő egység sorába (például azokhoz a költségekhez, amelyek közvetlenül kapcsolódnak az egységhez) Ha beír egy dimenziót egy összesítő egység sorába, azokat a fiókokat, amelyeket fölérendelt egységek használnak, nem szabad használni alárendelt egységekben. Ellenkező esetben az összegek megduplázódhatnak. |
 | Sordefiníciók       | A jelentési egység sordefiníciójának neve. Ez a sordefiníció használatos a jelentésfa minden egyes egységéhez. Jelentés létrehozásakor ez a sordefiníció használatos minden egyes jelentési egységhez. A sordefiníció több pénzügyi dimenzióra mutató hivatkozást is tartalmazhat. Ha a jelentésfában meg van adva sordefiníció, jelölje be a **Sordefiníció használata a jelentésfából** négyzetet a jelentésdefiníció **Jelentés** lapján. |
-| Sorösszekapcsolás              | A jelentési egységhez használandó sorösszekapcsolás. A sorösszekapcsolások abból a célból vannak megadva a sordefinícióhoz, hogy azonosítsák az összekapcsolási cél pénzügyi dimenziókat. |
-| Külső összekapcsolás         | A jelentési egységhez használandó külső összekapcsolás. A sorhivatkozások a sordefinícióhoz vannak megadva, a hivatkozott jelentés azonosítása céljából. |
-| Külső file         | A pénzügyi jelentés munkalapjának elérési címe az adatok lekéréséhez. |
+| Pénzügyi dimenziók összekapcsolások| A jelentési egységhez használt pénzügyi dimenziók összekapcsolás. A pénzügyi dimenzió összekapcsolások abból a célból vannak megadva a sordefinícióhoz, hogy azonosítsák az összekapcsolási cél pénzügyi dimenziókat. |
 | Oldalbeállítások          | Ez az oszlop szabályozza, hogy a jelentési egység részletei le legyenek-e tiltva a jelentés megtekintésénél vagy nyomtatásánál. |
 | Összesítő %              | A jelentési egység százalékszáma, melyet hozzá kell rendelni a fölérendelt egységéhez. A százalék, amelyet ebben az oszlopban ad meg, a sordefiníció összes sorára érvényes, mielőtt a sor értéke hozzá lesz adva a fölérendelt jelentéshez. Például ha egy alárendelt egységet két részleg között egyenlően kell elosztani, az összegeket minden sorban meg kellene szorozni 50 %-kal, mielőtt hozzáadjuk részlegjelentéshez. Egy jelentési egység nem rendelkezhet két fölérendelt egységgel. Egy jelentési egységnek nem lehet két fölérendelt egysége. Ahhoz, hogy az összegeket a jelentési egységektől a fölérendelt egységekhez rendelje, hozzon létre egy másik jelentési egységet ugyanazzal a dimenzióval, hogy a további 50 százalékot továbbvihesse. Teljes százalékokat adjon meg, tizedesvessző nélkül. Például a **25** 25 %-os foglalást jelent a fölérendeltnek. Ha tizedesvesszőt használ (**,25**), akkor 0,25 százalék lesz foglalva a fölérendeltnek. Az 1 százaléknál kisebb százalékértékek használatához használja az **Összesítő &lt;1 % engedélyezése** opciót a jelentésdefinícióban. Ez a beállítás a **További lehetőségek** lapon, a **Jelentésbeállítások** párbeszédpanelen található. Ez a párbeszédpanel az **Egyebek** gombra kattintva a jelentésdefiníció **Beállítások** lapján érhető el. |
 | Egységbiztonság         | Korlátozások, melyekkel a felhasználók és csoportok elérhetik a jelentési egység adatait. |
@@ -113,10 +111,10 @@ Minden jelentési fa definíció egyedien van megjelenítve. A grafikus nézet a
 
 A következő típusú jelentési egységek használhatók a pénzügyi jelentéskészítőben:
 
-- A részletegység az adatokat közvetlenül a pénzügyi adatokból nyeri, egy Excel-munkalapból, vagy egy másik pénzügyi jelentéskészítő munkalapról.
+- Egy részletegység az adatokat közvetlenül pénzügyi adatokból vonja ki.
 - Az összesítő egység összegzi az alacsonyabb szintű egységek adatait.
 
-A fölérendelt jelentési egység egy összesítő egység, amely egy részletegység adatait összesíti. Az összefoglaló egység lehet részletegység és összesítő egység. Ezért az összesítő egység kinyerhet információt egy alacsonyabb egységből, a pénzügyi adatokból vagy egy Excel-munkalapból. A fölérendelt egység lehet egy magasabb szintű fölérendelt egység alárendelt egysége. Az alárendelt jelentési egység lehet részletegység, amely az információt közvetlenül a pénzügyi adatokból vagy egy Excel-munkalapból nyeri. Az alárendelt egység lehet köztes összesítő egység. Más szóval lehet egy alacsonyabb szintű egység fölérendelt egysége, valamint lehet egy magasabb szintű egység alárendelt egység. A leggyakoribb eset a jelentési egységek esetében, hogy a **Dimenziók** oszlopban üres cellával rendelkező fölérendelt egységük van, és vannak alárendelt egységeik, melyek bizonyos vagy helyettesítő dimenziókombinációkra mutató hivatkozásokkal rendelkeznek.
+A fölérendelt jelentési egység egy összesítő egység, amely egy részletegység adatait összesíti. Az összefoglaló egység lehet részletegység és összesítő egység. Ezért az összesítő egység kinyerhet információt egy alacsonyabb egységből vagy a pénzügyi adatokból. A fölérendelt egység lehet egy magasabb szintű fölérendelt egység alárendelt egysége. Az alárendelt jelentési egység lehet részletegység, amely az információt közvetlenül a pénzügyi adatokból nyeri. Az alárendelt egység lehet köztes összesítő egység. Más szóval lehet egy alacsonyabb szintű egység fölérendelt egysége, valamint lehet egy magasabb szintű egység alárendelt egység. A leggyakoribb eset a jelentési egységek esetében, hogy a **Dimenziók** oszlopban üres cellával rendelkező fölérendelt egységük van, és vannak alárendelt egységeik, melyek bizonyos vagy helyettesítő dimenziókombinációkra mutató hivatkozásokkal rendelkeznek.
 
 ### <a name="organize-reporting-units"></a> Jelentési egységek rendezése
 
@@ -161,19 +159,6 @@ Egyes felhasználók és csoportok számára megakadályozhatja a hozzáférést
 2. Kattintson duplán az **Egységbiztonság** cellára a jelentési egység sorában a hozzáférés eltávolításához.
 3. Az **Egységbiztonság** párbeszédpanelen válasszon ki egy nevet, majd kattintson az **Eltávolítás** gombra.
 4. Kattintson az **OK** gombra.
-
-### <a name="link-to-reports"></a>Hivatkozás a jelentésekhez
-
-Miután létrehozott egy **jelentés** oszlopot a sordefinícióban, és megadta a jelentést, melynek szerepelnie kell a jelentésben, frissítenie kell a jelentési fát a csatolt oszloppal és a jelentés adataival. Egy jelentés bármely egységbe lehet importálni a jelentési fában.
-
-### <a name="identify-the-report-in-a-reporting-tree"></a>A jelentés azonosítása a jelentési fában.
-
-1. A módosításhoz a Jelentéstervezőben nyissa meg a jelentési fa definícióját.
-2. A **Sordefiníciók** oszlopban a kijelölt sor információi alapján jelenítenek meg információkat, mivel ugyanazt a sordefiníciót kell használni a jelentési fa összes egységében. Kattintson duplán a **Sordefiníciók** cellára, és válassza ki azt a sordefiníciót, amely a jelentéssel kapcsolatban tartalmaz tájékoztatást.
-3. A jelentési egység **Munkalap hivatkozás** cellájában válassza ki a hivatkozás nevét, amely megfelel a jelentésnek.
-4. A jelentési egység **Munkafüzet vagy jelentés elérési útja** cellájában írja be a jelentés nevét vagy tallózással keresse meg a jelentést.
-5. Egy munkalap meghatározásához a jelentésben írja be a munkalap nevét a **Munkalapnév** cellába.
-6. Ismételje meg a 3–5. lépéseket minden jelentési egységnél, melyeknek adatokat kell kapniuk a jelentésből. A jelentésben szereplő hibás adatok megakadályozásához győződjön meg arról, hogy a megfelelő jelentésnevek szerepelnek a jelentési fa a megfelelő egységében.
 
 ## <a name="examples"></a>Példák
 ### <a name="reporting-unit-structure--example-1"></a>Jelentési egységek struktúrája – 1. példa

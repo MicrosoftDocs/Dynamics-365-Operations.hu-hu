@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-05-14
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e70d8fc62150d68503552754e94c7130d8960c76
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: f8244d512c9e1236fc52cd4a91cdc78cc2b9b984
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5802359"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893101"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-may-14-2020"></a>Új vagy módosult elemek a Dynamics 365 Human Resources szolgáltatásban (2020. május 14.)
 
@@ -33,7 +33,7 @@ Ez a témakör a Dynamics 365 Human Resources új vagy módosított szolgáltat�
 
 ## <a name="platform-changes"></a>Platformok módosításai
 
-Ez a heti kiadás tartalmazza a platform változásait. További tájékoztatás: [Platform-frissítések az Finance and Operations alkalmazások 10.0.10 verziójához (2020. május)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-update-34). Ez a kiadás hibajavításokat és a mentett nézetek módosításait tartalmazza.
+Ez a heti kiadás tartalmazza a platform változásait. További tájékoztatás: [Platform-frissítések az Finance and Operations alkalmazások 10.0.10 verziójához (2020. május)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-34.md). Ez a kiadás hibajavításokat és a mentett nézetek módosításait tartalmazza.
  
 ## <a name="ensure-dataverse-picklists-are-consistent-with-leave-enums-436343"></a>Biztosítja, hogy a Dataverse választási listák megfelelnek a Szabadság felsorolásainak (436343)
 
@@ -116,7 +116,7 @@ Megadhatja, hogy az átviteli szabadságtípust az átviteli egyenlegekhez, ahov
 ## <a name="see-also"></a>Lásd még
 
 [Új vagy módosult elemek a Human Resources szolgáltatásban](hr-admin-whats-new.md)</br>
-[A Dynamics 365 Human Resources 2019 második kiadási hullámának áttekintése](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[A Dynamics 365 Human Resources 2019 második kiadási hullámának áttekintése](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Rendelés frissítése](hr-admin-setup-update-process.md)</br>
 [Szolgáltatások kezelése](hr-admin-manage-features.md)
 

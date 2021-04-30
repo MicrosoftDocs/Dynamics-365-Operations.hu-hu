@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 49807c90c145eee55fae2d515fd19925eb2d944c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 11e044e04e05c68af676bf97e6085e9975da5c1d
+ms.sourcegitcommit: bef7bd2aac00d7eb837fd275d383b7a5c3f1c1ee
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5810414"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "5911248"
 ---
 # <a name="planned-cross-docking"></a>Tervezett áttárolás
 
@@ -28,19 +28,21 @@ Ez a témakör a speciális tervezett áttárolást mutatja be. Az áttárolás 
 
 Az áttárolás segítségével a dolgozók kihagyhatják a bejövő elraktározást és a készlet kimenő kitárolását, amely már ki van jelölve egy kimenő rendeléshez. Ezért a készlettel való tényleges munkavégzés száma ahol lehet minimalizálásra kerül. Ezenkívül, mivel kevesebb az interakció a rendszerrel, nagyobb idő- és területmegtakarítás érhető el a raktárban.
 
-Az áttárolás futtatása előtt a felhasználónak konfigurálnia kell egy új áttárolási sablont, ahol az ellátási forrás és az áttárolás egyéb követelményhalmazai meg vannak határozva. A kimenő rendelés létrehozásakor a sort egy olyan bejövő rendeléssel szemben kell megjelölni, amely ugyanazt a tételt tartalmazza.
+Az áttárolás futtatása előtt konfigurálnia kell egy új áttárolási sablont, ahol az ellátási forrás és az áttárolás egyéb követelményhalmazai meg vannak határozva. A kimenő rendelés létrehozásakor a sort egy olyan bejövő rendeléssel szemben kell megjelölni, amely ugyanazt a tételt tartalmazza. Az áttárolási sablonban kiválaszthatja az utasításkód mezőt, hasonlóan ahhoz, ahogyan a feltöltést és a beszerzési rendeléseket beállítja.
 
 A bejövő rendelés bevételezése idején az áttárolási beállítás automatikusan azonosítja az áttárolási igényt, és létrehozza a szükséges mennyiséghez tartozó áthelyezési munkát a helyutasítás beállításai alapján.
 
 > [!NOTE]
-> A készlettranzakciók **nem** frissülnek, ha az áttárolási munka érvénytelenítve van, még akkor sem, ha a raktárkezelési paraméterekben be van kapcsolva a beállítás ehhez a tulajdonsághoz.
+> A készlettranzakciók *nem* frissülnek, ha az áttárolási munka érvénytelenítve van, még akkor sem, ha a raktárkezelési paraméterekben be van kapcsolva a beállítás ehhez a tulajdonsághoz.
 
 ## <a name="turn-on-the-planned-cross-docking-features"></a>A tervezett áttárolási funkciók bekapcsolása
 
 Ha a rendszer még nem tartalmazza az ebben a témakörben leírt funkciókat, lépjen a [Funkciókezelés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) lehetőségre, és a következő sorrendben kapcsolja be a következő funkciókat:
 
 1. *Tervezett áttárolás*
-2. *Áttárolási sablonok helyutasításokkal*
+1. *Áttárolási sablonok helyutasításokkal*
+    > [!NOTE]
+    > Ez a funkció lehetővé teszi, hogy az áttárolási sablonban is meg legyen adva az **Irányelvkód** mező, hasonlóan ahhoz, ahogyan a feltöltési sablonokat beállítja. A funkció engedélyezése megakadályozza, hogy a rendszer irányelvkódot ad hozzá az áttárolási munkasablonsorokhoz a végső *betárolási* sorhoz. Így garantálható, hogy a munkasablonok figyelembe vétele előtt meg lehet határozni a végső berakodandó helyet a munka létrehozása során.
 
 ## <a name="setup"></a>Beállítás
 
@@ -88,9 +90,9 @@ A tervezett áttárolás a rakományok feladási módjaként történik. A funkc
 
         Ez a beállítás határozza meg, hogy a készletet a bevételezés során újra kell-e érvényesíteni. Ha ez a beállítás *Igen* értékre van állítva, akkor mind a maximális idő ablak, mind a lejárati napok tartománya be van jelölve.
 
-    - **Utasításkód** Hagyja üresen ezt a mezőt
+    - **Utasításkód:** Hagyja üresen ezt a mezőt
 
-        Ez a beállítás lehetővé teszi, hogy a rendszer helyadatokat használjon, hogy meghatározza az áttárolási készlet ideális helyét, amelybe áttárolási készletet lehet áthelyezni. Ezt úgy állíthatja be, hogy az egyes áttárolási sablonokhoz egy-egy műveletkódot rendel hozzá. Minden egyes műveletkód egyedi helyutasítási műveletet azonosít.
+        Ezt a lehetőséget az *Áttárolási sablonok helyutasításokkal* funkció engedélyezi. A rendszer helyadatokat használ, hogy meghatározza az áttárolási készlet ideális helyét, amelybe áttárolási készletet lehet áthelyezni. Ezt úgy állíthatja be, hogy az egyes áttárolási sablonokhoz egy-egy műveletkódot rendel hozzá. Ha egy utasításkód meg van adva, a munka létrehozásakor a rendszer helyutasításokat fog keresni az utasításkód alapján. Ily módon korlátozhatja az adott áttárolási sablonhoz használt helyutasításokat.
 
     - **Ellenőrzési időablak:** *Igen*
 

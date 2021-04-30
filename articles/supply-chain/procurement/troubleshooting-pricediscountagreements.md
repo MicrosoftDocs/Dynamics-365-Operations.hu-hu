@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: smnatara
 ms.search.validFrom: 2020-9-16
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 12bc3cbccb1577c278489f640299510b3ced17e7
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 2ccc1d52b83f9319af1c6336c1876c795c70028a
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811086"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908519"
 ---
 # <a name="troubleshoot-prices-discounts-agreements-and-rebates"></a>Árak, engedmények, szerződések és visszatérítések hibaelhárítása
 
@@ -37,7 +37,7 @@ A szállítási dátum módosításakor a következő üzenet jelenik meg: „Ma
 
 Az üzenet akkor jelenik meg, ha bármely dátum vagy más paraméter módosul. Az üzenet célja, hogy biztosan tisztában legyen azzal, a változtatások miatt előfordulhat az árak módosulása.
 
-Az üzenet a kereskedelmi megállapodás értékelése (TAE) figyelmeztetés. A teljes leírást lásd: [Kereskedelmi szerződés értékelési irányelvei](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/trade-agreement-evaluation-policies-white-paper).
+Az üzenet a kereskedelmi megállapodás értékelése (TAE) figyelmeztetés. A teljes leírást lásd: [Kereskedelmi szerződés értékelési irányelvei](/dynamicsax-2012/appuser-itpro/trade-agreement-evaluation-policies-white-paper).
 
 ## <a name="a-purchase-order-receipt-doesnt-include-all-charges"></a>A beszerzési rendelés nyugtája nem tartalmaz minden költséget.
 

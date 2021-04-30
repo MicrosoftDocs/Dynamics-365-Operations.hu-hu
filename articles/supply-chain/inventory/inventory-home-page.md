@@ -16,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2bdf4a1ae691e50f7e41374db6c2dde10b9329cb
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 40d443e52a2b781a40e2db1dbccd2351405ffff1
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5809566"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909743"
 ---
 # <a name="inventory-management-overview"></a>Készletgazdálkodás áttekintése
 
@@ -51,7 +51,7 @@ Keresse fel a [Microsoft Dynamics365 ütemterv](https://roadmap.dynamics.com/) o
 További információ: [Készletzárás](../cost-management/inventory-close.md).
 
 ### <a name="manufacturing-and-supply-chain-management-blogs"></a>Ellátási lánchoz és gyártáshoz kapcsolódó blogok
-A [Dynamics AX Manufacturing kutatás-fejlesztési csapatának blogjában](https://blogs.msdn.microsoft.com/axmfg) és a [Supply Chain Management in Dynamics AX kutatás-fejlesztési csapatának blogjában](https://blogs.msdn.microsoft.com/dynamicsaxscm) számos vélemény, hír és egyéb információ található a készletkezelésről és az egyéb megoldásokról.
+A [Dynamics AX Manufacturing kutatás-fejlesztési csapatának blogjában](/archive/blogs/axmfg/) és a [Supply Chain Management in Dynamics AX kutatás-fejlesztési csapatának blogjában](https://blogs.msdn.microsoft.com/dynamicsaxscm) számos vélemény, hír és egyéb információ található a készletkezelésről és az egyéb megoldásokról.
 
 ### <a name="task-guides"></a>Feladat-útmutatók
 További súgó áll rendelkezésére feladat útmutatókon belül. A feladat-útmutatók eléréséhez kattintson bármelyik lapon a **Súgó** gombra

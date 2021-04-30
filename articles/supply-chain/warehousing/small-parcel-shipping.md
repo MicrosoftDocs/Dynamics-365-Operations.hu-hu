@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-08
 ms.dyn365.ops.version: Release 10.0.16
-ms.openlocfilehash: 3969ee6b46f38fe2650881fb0183c60aadce6c8a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 3e72959d79e9b3b03e061a0f26750e3bd025219e
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5831170"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5910209"
 ---
 # <a name="small-parcel-shipping"></a>Kis csomagok szállítása
 
@@ -58,7 +58,7 @@ Kövesse az alábbi lépéseket a bemutató díjazási motor letöltéséhez.
 A funkcionális díjazási motorok termelési vagy tesztkörnyezetben való felhasználhatósága érdekében történő létrehozásával és telepítésével kapcsolatban a következő témakörök tartalmaznak tájékoztatást:
 
 - [Új szállításkezelő motor létrehozása](../transportation/create-new-transportation-management-engine.md)
-- [Szállításkezelő kalkulátorok beállítása](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-transportation-management-engines)
+- [Szállításkezelő kalkulátorok beállítása](/dynamicsax-2012/appuser-itpro/set-up-transportation-management-engines)
 
 Az SPS díjazási motor létrehozásáról további információ: [Kiscsomagos szállítás: A kiscsomagos szállítás funkcióinak alkalmazása a Microsoft Dynamics 365 szolgáltatásban](https://hub.bhsolutions.com/creating-a-mock-parcel-engine-in-d365?submissionGuid=46a1fccf-80b0-4b70-a6a0-4bf45a8756b5).
 

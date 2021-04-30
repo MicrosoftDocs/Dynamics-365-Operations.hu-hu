@@ -14,12 +14,12 @@ ms.search.region: Hungary
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 2b2302bb14f438dfb6990bd387f28f1ddb528768
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 343375641897894589ee0932cc33402ce22dde9e
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5815013"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5894762"
 ---
 # <a name="online-invoicing-system"></a>Online számlázási rendszer
 
@@ -199,13 +199,13 @@ Az EM funkciónak a RTIR-hez történő beállításának folyamata számos lép
 1. Az [LCS-ben](https://lcs.dynamics.com/v2) nyissa meg a Közös eszköz könyvtárat, és válassza ki az **Adatcsomag** eszköztípust.
 2. Az adatcsomagok listájában keresse meg a **HU RTIR setup.zip**, és töltse le a számítógépére. A csomagnak számos verziója lehet. Ügyeljen arra, hogy a legújabb verziót töltse le.
 3. A hu RTIR Setup. zip fájl letöltése után nyissa meg a Finance alkalmazást, válassza ki azt a vállalatot, amelynek együtt fog működni a Magyar online számlázási rendszerrel, majd nyissa meg a **Munkaterületek** \> **Adatkezelés** lehetőséget.
-4. Az **Adatkezelés** munkaterületen nyissa meg a **Keretrendszer paraméterei** \> **Entitás beállításai** elemet, majd válassza az **Entitáslista frissítése** lehetőséget. Várja meg a megerősítést a frissítés elvégzéséről. Az entitások listájának frissítésével kapcsolatos további tudnivalókat lásd: [Entitáslista frissítése](https://docs.microsoft.com/dynamics365/dev-itpro/data-entities/data-entities#entity-list-refresh).
-5. Annak az ellenőrzése, hogy a forrásadatok és a céladatok megfelelően vannak leképezve. A további tudnivalókat lásd az [Adatimportálási és -exportálási feladatok](https://docs.microsoft.com/dynamics365/dev-itpro/data-entities/data-import-export-job#validate-that-the-source-data-and-target-data-are-mapped-correctly) szakaszban.
+4. Az **Adatkezelés** munkaterületen nyissa meg a **Keretrendszer paraméterei** \> **Entitás beállításai** elemet, majd válassza az **Entitáslista frissítése** lehetőséget. Várja meg a megerősítést a frissítés elvégzéséről. Az entitások listájának frissítésével kapcsolatos további tudnivalókat lásd: [Entitáslista frissítése](../../fin-ops-core/dev-itpro/data-entities/data-entities.md#entity-list-refresh).
+5. Annak az ellenőrzése, hogy a forrásadatok és a céladatok megfelelően vannak leképezve. A további tudnivalókat lásd az [Adatimportálási és -exportálási feladatok](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md#validate-that-the-source-data-and-target-data-are-mapped-correctly) szakaszban.
 6. Mielőtt az adatentitásokat első alkalommal használná, hogy adatokat importáljon a csomagból, szinkronitálja a forrásanyagok és a céladatok leképezéseit. A csomag listájában válasszon ki egy adatentitást, majd a művelet ablaktáblán válassza a **Cél-hozzárendelés módosítása** lehetőséget.
 7. A csomaghoz tartozó rácsa fölött jelölje be a **Leképezés generálása** lehetőséget hozzárendelés nulláról történő létrehozásához, majd mentse a megfeleltetést.
 8. Az importálás megkezdése előtt ismételje meg a 6–7. lépést a csomagban szereplő minden egyes adatentitás esetében.
 
-    Az adatkezeléssel kapcsolatos további tudnivalókért lásd: [Adatkezelés](https://docs.microsoft.com/dynamics365/dev-itpro/data-entities/data-entities-data-packages).
+    Az adatkezeléssel kapcsolatos további tudnivalókért lásd: [Adatkezelés](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md).
 
 9. Most importálnia kell az adatokat a HU RTIR setup.zip fájlból a kiválasztott vállalatba. Az **Adatkezelés** munkaterületen válassza az **Importálás** lehetőséget.
 10. Válassza a **Feltöltés és hozzáadás** lehetőséget , válassza ki a **HU RTIR setup.zip** fájlt a számítógépen, és töltse fel azt.
@@ -585,4 +585,3 @@ Ha végzett, a megadott vevőkhöz feladott és nyomtatott számláihoz egy mell
 Az online számlázási rendszerben a rendszeradatok megfelelő jelentésének biztosítása érdekében hozzon létre egy jóváírást minden egyes számlához. Kerülje az olyan helyzeteket, amikor több számlához egy jóváírást hoznak létre.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
-

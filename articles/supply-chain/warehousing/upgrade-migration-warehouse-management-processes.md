@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fe8969345b8499bacfeecb0a1535174ce988eabc
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 31bfc203e9db28acee4b5b52b36f64d90dc4f714
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837417"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909255"
 ---
 # <a name="upgrade-warehouse-management-from-microsoft-dynamics-ax-2012-to-supply-chain-management"></a>Raktárkezelés frissítése a Microsoft Dynamics AX 2012-ről a Supply Chain Management szolgáltatásra 
 
@@ -66,7 +66,7 @@ Mielőtt használhatná a kiadott termékeket a **Raktárkezelés** modulban, a 
 1.  Hozzon létre legalább egy új helyprofilt.
 2.  Kattintson a **Raktárkezelés** &gt; **Beállítás** &gt; **Raktárkezelési folyamatok engedélyezése** &gt; **Raktár beállításának engedélyezése** lehetőségre.
 3.  A **Raktárbeállítások engedélyezése** oldalon adja hozzá az engedélyezni kívánt raktárakat. Ezt a lépést közvetlenül az oldalon vagy a Microsoft Office-integráció használatával teheti meg.
-4.  Társítson helyprofilt az összes helyhez. Ezt a lépést könnyen megteheti a Microsoft Office-integráció használatával közvetlenül az oldalon. Exportálhatja és importálhatja az adatokat, vagy használhatja az adatentitások feldolgozását az [Adatkezelés](../../dev-itpro/data-entities/data-entities.md) lehetőségben.
+4.  Társítson helyprofilt az összes helyhez. Ezt a lépést könnyen megteheti a Microsoft Office-integráció használatával közvetlenül az oldalon. Exportálhatja és importálhatja az adatokat, vagy használhatja az adatentitások feldolgozását az [Adatkezelés](../../fin-ops-core/dev-itpro/data-entities/data-entities.md) lehetőségben.
 5.  Ellenőrizze a módosításokat. Az ellenőrzési folyamat részeként az adatok integritását különböző ellenőrzések révén vizsgálja a rendszer. A nagyobb frissítési folyamat részeként hibák fordulhatnak elő, amelyeket esetleg a forrásvégrehajtásban kell módosítani. Ebben az esetben egy további adatfrissítésre lesz szükség.
 6.  Dolgozza fel a módosításokat.
 
@@ -77,7 +77,7 @@ Mielőtt használhatná a kiadott termékeket a **Raktárkezelés** modulban, a 
 3.  A **Foglalási hierarchia** lapon határozzon meg egy új foglalási hierarchiát a cikk tárolási és nyomon követési dimenziócsoportjai alapján.
 4.  Hozzon létre egy vagy több egységszekvencia-csoportot, amelyek ugyanazokat a mértékegységeket tartalmazzák, amelyeket a cikk készletegységében használnak.
 5.  Kattintson a **Raktárkezelés** &gt; **Beállítás** &gt; **Raktárkezelési folyamatok engedélyezése** &gt; **Tárolási dimenziócsoportok módosítása cikkekhez** lehetőségre.
-6.  A **Tárolási dimenziócsoport módosítása cikkekhez** lapon adja hozzá a cikkszámokat, a tárolási dimenziócsoportokat és az egységszekvencia-csoportokat. Ezt a lépést közvetlenül az oldalon végezheti el a Microsoft Office-integráció használatával vagy az adatentitás folyamat segítségével az [Adatkezelés lehetőségben](../../dev-itpro/data-entities/data-entities.md).
+6.  A **Tárolási dimenziócsoport módosítása cikkekhez** lapon adja hozzá a cikkszámokat, a tárolási dimenziócsoportokat és az egységszekvencia-csoportokat. Ezt a lépést közvetlenül az oldalon végezheti el a Microsoft Office-integráció használatával vagy az adatentitás folyamat segítségével az [Adatkezelés lehetőségben](../../fin-ops-core/dev-itpro/data-entities/data-entities.md).
 7.  Ellenőrizze a módosításokat. Az ellenőrzési folyamat részeként az adatok integritását különböző ellenőrzések révén vizsgálja a rendszer. A nagyobb frissítési folyamat részeként hibák fordulhatnak elő, amelyeket esetleg a forrásvégrehajtásban kell módosítani. Ebben az esetben egy további adatfrissítésre lesz szükség.
 8.  Dolgozza fel a módosításokat. A készletdimenziók frissítése eltarthat egy ideig. A kötegelt feladatok segítségével figyelemmel követheti a folyamat állapotát.
 

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f0e50cc1e18400258a4ad5da008e1719d39bd1da
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 0d2978d680efa59b1ba9cfcd7f58655da0ff4107
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5801215"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5890100"
 ---
 # <a name="choose-a-data-integration-technology"></a>Válasszon ki egy adatintegrációs technológiát
 
@@ -36,7 +36,7 @@ Ez a cikk a Dynamics 365 Human Resources által kezelt adatokkal való integrác
 Az üzleti adatok olyan kulcsfontosságú eszközök, amely egyedivé teszik a vállalatát. Vállalatának adatai rendkívül értékesek. Az üzleti folyamatok és az üzleti intelligencia szervezeten belüli fejlesztése érdekében a vállalaton belül összegyűjtött adatok közötti kapcsolatokat is használhatja. Igyekszünk egyszerű, biztonságos és stabil hozzáférést biztosítani üzleti adataihoz, függetlenül attól, hogy melyik rendszerből származnak.
 
 Korábban nehézkes volt az adatok integrálása több rendszer között.
-A Microsoft lépéseket tesz annak érdekében, hogy könnyebb legyen az adatok integrálása, és komoly haladást ért el a [Dataverse](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro) segítségével.
+A Microsoft lépéseket tesz annak érdekében, hogy könnyebb legyen az adatok integrálása, és komoly haladást ért el a [Dataverse](/powerapps/maker/common-data-service/data-platform-intro) segítségével.
 
 A Human Resources segítségével a Dataverse válik a Human Resources szolgáltatás preferált nyilvános felületévé. Arra számítunk, hogy idővel a Human Resources által kezelt összes fontos adat megjelenik a Dataverse szolgáltatásban. A Dataverse szolgáltatást olyan technológiaként tudjuk ajánlani, amely megfelelő választás a legtöbb integrációs alkalmazáshoz.
 
@@ -48,21 +48,21 @@ A következő szakaszok leírják a Human Resources szolgáltatással használha
 
 ### <a name="dataverse-tables"></a>Dataverse-táblák
 
-A Dataverse a Human Resources elsődleges nyilvános adatillesztő-felülete. A program a Dynamics 365 XRM-platformból nőtt ki, amelyet a [Dynamics 365 Customer Engagement](https://docs.microsoft.com/dynamics365/#pivot=business-apps&panel=customer-engagement) megoldások használnak.
+A Dataverse a Human Resources elsődleges nyilvános adatillesztő-felülete. A program a Dynamics 365 XRM-platformból nőtt ki, amelyet a [Dynamics 365 Customer Engagement](/dynamics365/?panel=customer-engagement#pivot=business-apps) megoldások használnak.
 
 A Dataverse egy platformot és API-t biztosít az adattáblákhoz. A Human Resources telepítésekor az egy Dataverse példányhoz kapcsolódik. A Human Resources entitásai abba a Dataverse példányba települnek. A táblák és adataik minden olyan alkalmazás számára elérhetők, amely csatlakozni képes a Dataverse-példányhoz. A Human Resources szinkronizálja az adatokat a Dataverse-táblák között.
 
 > [!NOTE]
-> A Human Resources entitások Dataverse-tábláknak felelnek meg. A Dataverse (a korábbi Common Data Service) rendszer kapcsolatos további tudnivalókat és a terminológiai frissítéseket lásd: [Mi a Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)
+> A Human Resources entitások Dataverse-tábláknak felelnek meg. A Dataverse (a korábbi Common Data Service) rendszer kapcsolatos további tudnivalókat és a terminológiai frissítéseket lásd: [Mi a Microsoft Dataverse?](/powerapps/maker/data-platform/data-platform-intro)
 
-Amikor az integrációs alkalmazások által igényelt adattáblák a Dataverse szolgáltatásban vannak, teljes mértékben használhatja [Dataverse szolgáltatást és a támogatott API-kat](https://docs.microsoft.com/powerapps/#pivot=home&panel=developer). A támogatott API-k között szerepel a [Dynamics 365 webes API-ja](https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api), amely egy OData-megvalósítást biztosít a Dataverse-adatok eléréséhez.
+Amikor az integrációs alkalmazások által igényelt adattáblák a Dataverse szolgáltatásban vannak, teljes mértékben használhatja [Dataverse szolgáltatást és a támogatott API-kat](/powerapps/?panel=developer#pivot=home). A támogatott API-k között szerepel a [Dynamics 365 webes API-ja](/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api), amely egy OData-megvalósítást biztosít a Dataverse-adatok eléréséhez.
 
 A Dataverse-táblák és a társított API-jaik jelentik a legjobb megoldást a Human Resources-adatok eléréséhez a webalkalmazásokból, a webszolgáltatásokból és API-kból, valamint az OData-adatfolyamokhoz csatlakozó egyéb alkalmazásokból.
 
 > [!NOTE]
 > Ha úgy dönt, hogy a Dataverse szolgáltatást választja a viszonylag újnak számító Human Resources adatillesztó-felületének, előfordulhat, hogy az integrációhoz szükséges Human Resources-adatentitások még nem érhetők el a Dataverse szolgáltatásban.
 > </br>
-> A Dataverse szolgáltatásban elérhető Human Resource-entitások listáját lásd: [A Human Resources és a Dataverse](https://docs.microsoft.com/dynamics365/unified-operations/talent/corehrentities).
+> A Dataverse szolgáltatásban elérhető Human Resource-entitások listáját lásd: [A Human Resources és a Dataverse](/dynamics365/unified-operations/talent/corehrentities).
 > </br>
 > Ha az integrációhoz szükséges Human Resources-entitások még nem állnak rendelkezésre, akkor várnia kell, amíg az adatentitások elérhetővé válnak, vagy az alábbiakban ismertetett egyéb integrációs technológiák valamelyikét kell használnia.
 > </br>
@@ -70,14 +70,14 @@ A Dataverse-táblák és a társított API-jaik jelentik a legjobb megoldást a 
 
 ### <a name="dmfdixf-entities"></a>DMF-/DIXF-entitások
 
-A Human Resources nagyrészt a Finance and Operations alkalmazásokkal azonos platformra épül, és egy [Adatkezelési keretrendszert (DMF)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json) biztosít. A DMF Adatimportálási és-exportálási keretrendszerként (DIXF) is ismert. A Human Resources a humánerőforrás-adatok importálására és exportálására használható adatentitások készletét biztosítja. Noha a Dataverse-táblák alkotják a Human Resources elsődleges adatintegrációs felületét, a DMF-entitások továbbra is hasznosak lehetnek bizonyos körülmények között, például a következő helyzetekben:
+A Human Resources nagyrészt a Finance and Operations alkalmazásokkal azonos platformra épül, és egy [Adatkezelési keretrendszert (DMF)](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=%2ffin-and-ops%2ftoc.json) biztosít. A DMF Adatimportálási és-exportálási keretrendszerként (DIXF) is ismert. A Human Resources a humánerőforrás-adatok importálására és exportálására használható adatentitások készletét biztosítja. Noha a Dataverse-táblák alkotják a Human Resources elsődleges adatintegrációs felületét, a DMF-entitások továbbra is hasznosak lehetnek bizonyos körülmények között, például a következő helyzetekben:
 
 - A Dataverse-táblák még nem érhetők el.
 
 - Az integrációhoz nagy teljesítményű tömegesadat-importálási és-exportálási lehetőségek szükségesek.
 
 > [!NOTE]
-> A Human Resources entitások Dataverse-tábláknak felelnek meg. A Dataverse (a korábbi Common Data Service) rendszer kapcsolatos további tudnivalókat és a terminológiai frissítéseket lásd: [Mi a Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)
+> A Human Resources entitások Dataverse-tábláknak felelnek meg. A Dataverse (a korábbi Common Data Service) rendszer kapcsolatos további tudnivalókat és a terminológiai frissítéseket lásd: [Mi a Microsoft Dataverse?](/powerapps/maker/data-platform/data-platform-intro)
 
 A DMF-entitások nyújtják jelenleg a legteljesebb adatlefedettséget a Human Resources adatai számára.
 
@@ -90,7 +90,7 @@ A DMF akkor lehet a legjobb megoldás, ha nagy áteresztőképességre van szük
 
 ### <a name="dmf-package-rest-api"></a>DMF-csomag REST API-ja
 
-A DMF a [REST API-t](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-management-api) biztosítja az adatcsomagok kezeléséhez. Ez az API használható a DMF-fel folytatott programozott kommunikációhoz, például a következő műveletek esetében:
+A DMF a [REST API-t](/dynamics365/unified-operations/dev-itpro/data-entities/data-management-api) biztosítja az adatcsomagok kezeléséhez. Ez az API használható a DMF-fel folytatott programozott kommunikációhoz, például a következő műveletek esetében:
 
 - Adatcsomag importálása.
 
@@ -102,36 +102,36 @@ A DMF csomag REST API-ja teljes mértékben támogatott a Human Resources szolg�
 
 ### <a name="azure-sql-db-byod"></a>Azure SQL DB (BYOD)
 
-A DMF emellett egy hatékony funkciót is biztosít (a [saját adatbázis használatát](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/export-entities-to-your-own-database) – BYOD), amely lehetővé teszi, hogy a Human Resources szolgáltatás az Ön Microsoft Azure SQL-adatbázisába exportálja az adatait. Ez a funkció óriási rugalmasságot biztosít. Amikor az adatok jelen vannak a saját SQL-adatbázisában, igénybe vehet olyan alkalmazásokat vagy középrétegű megoldásokat, amelyek csatlakozni tudnak az SQL-adattárakhoz.
+A DMF emellett egy hatékony funkciót is biztosít (a [saját adatbázis használatát](/dynamics365/unified-operations/dev-itpro/analytics/export-entities-to-your-own-database) – BYOD), amely lehetővé teszi, hogy a Human Resources szolgáltatás az Ön Microsoft Azure SQL-adatbázisába exportálja az adatait. Ez a funkció óriási rugalmasságot biztosít. Amikor az adatok jelen vannak a saját SQL-adatbázisában, igénybe vehet olyan alkalmazásokat vagy középrétegű megoldásokat, amelyek csatlakozni tudnak az SQL-adattárakhoz.
 
 A BYOD elsősorban csak olvasható megoldás. Az Azure SQL-adatbázisban tárolt minden adatot kezelhet és tárolhat (például az adategyesítésekhez), azonban az Azure SQL-adatbázisban tárolt adatok nem lesznek visszaszinkronizálva a Human Resources adataival.
 
-A BYOD a jelentésekhez, az adatintegrációkhoz, az adategyesítésekhez, valamint az [Azure Data Factory](https://docs.microsoft.com/azure/data-factory/) folyamatainak adatforrásaihoz alkalmas.
+A BYOD a jelentésekhez, az adatintegrációkhoz, az adategyesítésekhez, valamint az [Azure Data Factory](/azure/data-factory/) folyamatainak adatforrásaihoz alkalmas.
 
 > [!NOTE]
 > A BYOD nem érhető el az Attract és az Onboard alkalmazáshoz.
 
 ### <a name="odata-enabled-entities"></a>OData-kompatibilis entitások
 
-A DMF-entitások többsége a Human Resources adatszolgáltatásán (OData) keresztül is elérhető. A [Finance and Operations OData szolgáltatáshoz](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/odata) biztosított dokumentáció érvényes a Human Resources alkalmazásra, kivéve a saját OData által használt entitások létrehozásához.
+A DMF-entitások többsége a Human Resources adatszolgáltatásán (OData) keresztül is elérhető. A [Finance and Operations OData szolgáltatáshoz](/dynamics365/unified-operations/dev-itpro/data-entities/odata) biztosított dokumentáció érvényes a Human Resources alkalmazásra, kivéve a saját OData által használt entitások létrehozásához.
 
-Bár a Dataverse és a Dataverse által (a [Dynamics 365 Web API](https://docs.microsoft.com/previous-versions/dynamicscrm-2016/developers-guide/mt593051(v=crm.8)) használatával) biztosított OData-megvalósítás a preferált a Human Resources adatszolgáltatással szemben, a Human Resources adatszolgáltatás jelenleg teljesebb entitáslefedettséget kínál a Human Resources-adatok számára.
+Bár a Dataverse és a Dataverse által (a [Dynamics 365 Web API](/previous-versions/dynamicscrm-2016/developers-guide/mt593051(v=crm.8)) használatával) biztosított OData-megvalósítás a preferált a Human Resources adatszolgáltatással szemben, a Human Resources adatszolgáltatás jelenleg teljesebb entitáslefedettséget kínál a Human Resources-adatok számára.
 
 ### <a name="excel-add-in"></a>Excel-bővítmény
 
-Az [Excel-bővítmény](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/office-integration/use-excel-add-in?toc=/dynamics365/unified-operations/talent/toc.json) lehetővé teszi az OData-kompatibilis entitások felszín alatti használatát. Kényelmes módszert biztosít a végfelhasználók számára a Human Resources-adatok beolvasására és módosítására az Excel megszokott felületén.
+Az [Excel-bővítmény](/dynamics365/unified-operations/dev-itpro/office-integration/use-excel-add-in?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json) lehetővé teszi az OData-kompatibilis entitások felszín alatti használatát. Kényelmes módszert biztosít a végfelhasználók számára a Human Resources-adatok beolvasására és módosítására az Excel megszokott felületén.
 
 Az Excel-bővítmény megfelelő az üzleti tartomány szakértői számára is az eseti adatimportáláshoz és -exportáláshoz. A programozott automatizálást igénylő ismétlődő adatintegráció esetében alkalmasabb lehet egy másik integrációs technológia.
 
 ### <a name="data-integrator"></a>Data Integrator
 
-Az [Adatintegrátor szolgáltatás](https://docs.microsoft.com/powerapps/administrator/data-integrator) segítségével integrálhatja az adatokat a Dataverse szolgáltatásba. A Data Integrator használatával integrációs projektek definiálhatók (ez gyakran olyan előre definiált sablonok alapján történik, amelyeket az alkalmazás fejlesztői alakítottak ki a különböző integrációknak megfelelőn). Integrációs projekteket ütemezhet ismétlődő automatikus futtatásra, vagy manuálisan is futtathatók.
+Az [Adatintegrátor szolgáltatás](/powerapps/administrator/data-integrator) segítségével integrálhatja az adatokat a Dataverse szolgáltatásba. A Data Integrator használatával integrációs projektek definiálhatók (ez gyakran olyan előre definiált sablonok alapján történik, amelyeket az alkalmazás fejlesztői alakítottak ki a különböző integrációknak megfelelőn). Integrációs projekteket ütemezhet ismétlődő automatikus futtatásra, vagy manuálisan is futtathatók.
 
 A Data Integrator projektek megfelelőek a Dataverse kötegelt integrációkhoz. Remek választást jelentenek a Dynamics 365 termékcsaládba tartozó alkalmazások közötti integrációhoz. A Microsoft például biztosít egy használatra kész Data Integrator-sablont, amelynek segítségével a Human Resources-adatok integrálhatók a Dynamics 365 Finance szolgáltatásba. További tájékoztatás az integrációs sablonról: [Integráció a Dynamics 365 Human Resources és a Dynamics 365 Finance között](hr-admin-integration-finance.md).
 
 ### <a name="power-query"></a>Power Query
 
-A Data Integrator támogatást biztosít a [Power Query](https://docs.microsoft.com/power-query/power-query-what-is-power-query) számára is (a [speciális lekérdezési funkcióján](https://docs.microsoft.com/powerapps/administrator/data-integrator#advanced-data-transformation-and-filtering) keresztül). A Power Query erőteljes, rugalmas adatszűrést és-átalakítást tesz lehetővé, többek között a kibővített M Formula nyelvet. A Power Query valószínűleg ismerős, ha már fejlesztett Power BI-jelentéseket.
+A Data Integrator támogatást biztosít a [Power Query](/power-query/power-query-what-is-power-query) számára is (a [speciális lekérdezési funkcióján](/powerapps/administrator/data-integrator#advanced-data-transformation-and-filtering) keresztül). A Power Query erőteljes, rugalmas adatszűrést és-átalakítást tesz lehetővé, többek között a kibővített M Formula nyelvet. A Power Query valószínűleg ismerős, ha már fejlesztett Power BI-jelentéseket.
 
 ## <a name="deciding-on-an-integration-technology"></a>Az integrációs technológiára vonatkozó döntés
 

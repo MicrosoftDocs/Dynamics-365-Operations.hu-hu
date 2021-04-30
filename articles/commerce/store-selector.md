@@ -2,7 +2,8 @@
 title: Üzletkiválasztó modul
 description: Ez a témakör az üzletválasztó modullal foglalkozik, és bemutatja, hogy hogyan lehet azt hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: anupamar-ms
-ms.date: 09/15/2020
+manager: annbe
+ms.date: 04/02/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +16,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: e73338666c0bd8c0dc8df840b308ec758ee812dd
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 22ec78c8e0545698f05f8f8ec261b5e927d698c7
+ms.sourcegitcommit: 74f5b04b482b2ae023c728e0df0eb78305493c6a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5798633"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "5853417"
 ---
 # <a name="store-selector-module"></a>Üzletválasztó modul
 
@@ -32,11 +33,32 @@ A vevők az üzletválasztó modulban kiválaszthatják, hogy melyik üzletben s
 
 Az üzletválasztó modul lehetővé teszi a felhasználók számára, hogy beírjanak egy helyet (város, megye, cím stb.) a keresési sugárban lévő üzletek megtalálásához. A modul első megnyitásakor a program a vevő böngészőjének helyét használja a boltok megtalálásához (ha hozzájárulnak).
 
-## <a name="store-selector-module-usage-in-e-commerce"></a>Az Üzletválasztó modul használata az e-kereskedelemben
+## <a name="store-selector-module-usage"></a>Üzletválasztó modul felhasználása
 
 - Egy üzletválasztó modul használható a termék részletei oldalon (PDP), ahol kiválaszthatja az áruátvételi üzletet.
 - Egy üzletválasztó modul használható a kosár oldalon, ahol kiválaszthatja az áruátvételi üzletet.
 - Az üzletválasztó modul használható olyan különálló lapon, amely az összes rendelkezésre álló üzletet megjeleníti.
+
+## <a name="fulfillment-group-setup-in-commerce-headquarters"></a>Teljesítési csoportok beállítása a Commerce központi felületén
+
+Ahhoz, hogy az üzletválasztó megjelenítse az elérhető üzleteket, a teljesítési csoportot be kell állítani a Commerce központjában. További információ: [Teljesítési csoportok beállítása](customer-orders-overview.md#set-up-fulfillment-groups).
+
+Ezenkívül a teljesítési csoportba sorolt minden egyes üzlethez meg kell határozni az üzlet helyének földrajzi szélességét és földrajzi szélességét is a központban.
+
+Az üzlet helyének földrajzi hosszúságának és szélességének beállításához a Commerce központi felületén kövesse az alábbi lépéseket.
+
+1. Ugrás a következő lehetőségre: **Készletgazdálkodás \> Beállítás \> Készlet részletezése**.
+1. Válassza ki a raktár helyét a bal ablaktáblában.
+1. Válassza a **Címek** gyorslapon a **Speciális** lehetőséget.
+
+    ![Példa az üzlet a részleteire a központban](./media/Store-address.png)
+
+1. A műveleti ablaktáblán válassza a **Szerkesztés** lehetőséget.
+1. Adja meg az **Általános** gyorslapon a **Földrajzi szélesség** és a **Földrajzi hosszúság** értékét.
+
+    ![Példa az áruház földrajzi szélességi és földrajzi hosszúsági beállítására a központban](./media/Store-latitude-longitude.png)
+
+1. A műveleti ablaktáblán válassza a **Mentés** lehetőséget. 
 
 ## <a name="bing-maps-integration"></a>Bing Maps – integráció
 
@@ -48,6 +70,7 @@ Az Autosuggest REST API esetében gondoskodni kell arról, hogy a webhely tartal
 - Az **img-src** utasításhoz adja hozzá a **&#42;virtualearth.net** kiterjesztést.
 - A **script-src** utasításhoz **adja hozzá a &#42;.bing.com, &#42;.virtualearth.net** kiterjesztést.
 - A **script style-src** utasításhoz adja hozzá a **&#42;.bing.com** kiterjesztést.
+
  
 ## <a name="pickup-in-store-mode"></a>Felvétel az üzletben mód
 

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 25719de3d86785442e00f7375de525b95bdb094d
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: bd979bf5369b6878caaee82fc9c6a40d363cc165
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753696"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5894148"
 ---
 # <a name="specify-custom-storage-locations-for-generated-documents"></a>Egyéni tárhelyek meghatározása a létrehozott dokumentumoknak
 
@@ -27,7 +27,7 @@ A alkalmazásprogramozási felület (API) az Elektronikus jelentéskészítéshe
 
 ## <a name="prerequisites"></a>Előfeltételek
 
-Telepít egy topológiát, amely támogatja a folyamatos buildet. A további tudnivalókért lásd: [A folyamatos build- és tesztautomatizálást támogató topológiák telepítése](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/perf-test/continuous-build-test-automation). A topológiához a következő szerepkörök egyikével kell rendelkezzen hozzáféréssel:
+Telepít egy topológiát, amely támogatja a folyamatos buildet. A további tudnivalókért lásd: [A folyamatos build- és tesztautomatizálást támogató topológiák telepítése](/dynamics365/unified-operations/dev-itpro/perf-test/continuous-build-test-automation). A topológiához a következő szerepkörök egyikével kell rendelkezzen hozzáféréssel:
 
 - Elektronikus jelentések fejlesztője
 - Elektronikus jelentések funkcióival foglalkozó konzulens
@@ -255,7 +255,7 @@ class AssetRollForwardService extends SysOperationServiceBase
 3. Módosítsa a meglévő `AssetRollForwardService` osztályt, és írja meg kódot az egyéni cél-gyár beállításához a jelentésfuttatóhoz. Figyelje meg, hogy egy egyéni cél-gyár létrehozásakor az alkalmazás által vezérelt paraméter, amely meghatároz egy célmappát át lesz adva. Ily módon a célmappa a létrejövő fájlok tárolásához használatos.
 
     > [!NOTE] 
-    > Győződjön meg róla, hogy a megadott mappa (**c:\\0**, ebben a példában) szerepel az AOS szolgáltatást futtató kiszolgáló helyi fájlrendszerében. Ellenkező esetben egy [DirectoryNotFoundException](https://docs.microsoft.com/dotnet/api/system.io.directorynotfoundexception?view=netcore-3.1) kivétel fog megjelenni futásidőben.
+    > Győződjön meg róla, hogy a megadott mappa (**c:\\0**, ebben a példában) szerepel az AOS szolgáltatást futtató kiszolgáló helyi fájlrendszerében. Ellenkező esetben egy [DirectoryNotFoundException](/dotnet/api/system.io.directorynotfoundexception?view=netcore-3.1) kivétel fog megjelenni futásidőben.
 
     ```xpp
     using Microsoft.Dynamics365.LocalizationFramework;

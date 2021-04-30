@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 378fff6274902025b1fca487874f37ed30df25ed
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: f46c5d4ec78a1e5ed708687e8da6eb379697d5f4
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835606"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908952"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>A Raktárkezelés mobilalkalmazás telepítése és csatlakoztatása
 
@@ -50,7 +50,7 @@ Az alkalmazás használata előtt egy kapcsolódó funkciót be kell kapcsolnia 
 
 Kisebb telepítések esetén előfordulhat, hogy az alkalmazást jellemzően minden eszköz megfelelő áruházából telepíti, majd manuálisan konfigurálja a kapcsolatot az éppen használt környezettel.
 
-Nagyobb telepítések esetén automatizálhatja az alkalmazástelepítést és/vagy -konfigurációt, ami több eszköz kezelése esetén kényelmesebb lehet. Használhat például egy olyan mobileszköz-kezelési és mobilalkalmazás-kezelési megoldást, mint például a [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune). Az alkalmazások Intune használatával történő hozzáadásával kapcsolatos tudnivalókat lásd: [Alkalmazások hozzáadása a Microsoft Intune szolgáltatáshoz](https://docs.microsoft.com/mem/intune/apps/apps-add).
+Nagyobb telepítések esetén automatizálhatja az alkalmazástelepítést és/vagy -konfigurációt, ami több eszköz kezelése esetén kényelmesebb lehet. Használhat például egy olyan mobileszköz-kezelési és mobilalkalmazás-kezelési megoldást, mint például a [Microsoft Intune](/mem/intune/fundamentals/what-is-intune). Az alkalmazások Intune használatával történő hozzáadásával kapcsolatos tudnivalókat lásd: [Alkalmazások hozzáadása a Microsoft Intune szolgáltatáshoz](/mem/intune/apps/apps-add).
 
 ### <a name="install-the-app-from-an-app-store"></a>Az alkalmazás telepítése egy alkalmazás-áruházból
 
@@ -65,10 +65,10 @@ Az alkalmazás egyetlen eszközre való telepítésének legegyszerűbb módja a
 Ahelyett, hogy egy alkalmazás-áruházból telepít, letöltheti az alkalmazást a Microsoft App Center alkalmazásból. Az App Center olyan telepíthető csomagokat biztosít, amelyek áttöltésre használhatók. Az App Center a jelenlegi verzión kívül lehetővé teszi a korábbi verziók letöltését is, és emellett olyan előzetes verziókat is tartalmaz, amelyekben közelgő funkciók is elérhetőek. A Raktárkezelés mobilalkalmazás jelenlegi, korábbi vagy előzetes verzióinak a Microsoft App Center alkalmazásból való letöltéséhez használja a következő hivatkozásokat:
 
 - **Windows (UWP):** [Raktárkezelés (Windows)](https://go.microsoft.com/fwlink/?linkid=2154406)  
-    A letöltött csomagok Windows-eszközre történő telepítéséről, majd a szükséges tanúsítványok beállításáról lásd: [Build telepítése az App Center alkalmazásból](https://docs.microsoft.com/appcenter/distribution/installation).
+    A letöltött csomagok Windows-eszközre történő telepítéséről, majd a szükséges tanúsítványok beállításáról lásd: [Build telepítése az App Center alkalmazásból](/appcenter/distribution/installation).
 
 - **Android:** [Raktárkezelés (Android)](https://go.microsoft.com/fwlink/?linkid=2154613)  
-    Ha egy előzetes verziót tölt le, néhány további lépés szükséges a telepítéshez. A részleteket lásd: [Android-alkalmazások tesztelése](https://docs.microsoft.com/appcenter/distribution/testers/testing-android).
+    Ha egy előzetes verziót tölt le, néhány további lépés szükséges a telepítéshez. A részleteket lásd: [Android-alkalmazások tesztelése](/appcenter/distribution/testers/testing-android).
 
 ## <a name="create-a-web-service-application-in-azure-active-directory"></a><a name="create-service"></a>Webes szolgáltatás alkalmazás létrehozása az Azure Active Directory szolgáltatásban
 
@@ -103,11 +103,11 @@ Ahhoz, hogy a Raktárkezelés mobilalkalmazás együttműködhessen a kívánt S
 
 Az Azure AD webszolgáltatási alkalmazásainak beállításával kapcsolatos további tudnivalókat lásd a következő forrásokban:
 
-- A webszolgáltatási alkalmazások Windows PowerShell eszközzel, az Azure AD rendszerben történő beállításával kapcsolatban a következő témakör tartalmaz további tájékoztatást: [Útmutató: Az Azure PowerShell használata egy tanúsítvánnyal rendelkező szolgáltatási főkiszolgáló létrehozásához](https://docs.microsoft.com/azure/active-directory/develop/howto-authenticate-service-principal-powershell).
+- A webszolgáltatási alkalmazások Windows PowerShell eszközzel, az Azure AD rendszerben történő beállításával kapcsolatban a következő témakör tartalmaz további tájékoztatást: [Útmutató: Az Azure PowerShell használata egy tanúsítvánnyal rendelkező szolgáltatási főkiszolgáló létrehozásához](/azure/active-directory/develop/howto-authenticate-service-principal-powershell).
 - A webszolgáltatási alkalmazások Azure AD rendszerben való manuális létrehozásával kapcsolatos további tudnivalókat lásd a következő témakörökben:
 
-    - [Rövid útmutató: Alkalmazások regisztrálása a Microsoft Identity platformmal](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app)
-    - [Útmutató: Erőforrások elérésére képes Azure AD alkalmazás és szolgáltatási főkiszolgáló létrehozása portál használatával](https://docs.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal)
+    - [Rövid útmutató: Alkalmazások regisztrálása a Microsoft Identity platformmal](/azure/active-directory/develop/quickstart-register-app)
+    - [Útmutató: Erőforrások elérésére képes Azure AD alkalmazás és szolgáltatási főkiszolgáló létrehozása portál használatával](/azure/active-directory/develop/howto-create-service-principal-portal)
 
 ## <a name="create-and-configure-a-user-account-in-supply-chain-management"></a>Felhasználói fiók létrehozása és konfigurálása a Supply Chain Management megoldásban
 
@@ -135,7 +135,7 @@ Az Azure AD használatával történő hitelesítéssel biztonságos módon csat
 
 A tanúsítványok felhasználhatók titkos kódokként az alkalmazás azonosságának igazolására, ha a rendszer tokent kér. A tanúsítvány nyilvános része fel van töltve az alkalmazásregisztrációba az Azure portálon, míg a teljes tanúsítványt telepíteni kell minden olyan eszközre, amelyre a Raktárkezelés mobilalkalmazás telepítésre kerül. A szervezet felelős a tanúsítvány rotációjának és egyéb szempontjainak kezelésével kapcsolatban. Önaláírt tanúsítványok is használhatók, de mindig nem exportálható tanúsítványokat kell használnia.
 
-A tanúsítványt helyileg elérhetővé kell tenni minden olyan eszközön, amelyen a Raktárkezelés mobilalkalmazást futtatja. A Intune által vezérelt eszközök tanúsítványainak kezelésével kapcsolatban a következő témakör tartalmaz további tájékoztatást: [Tanúsítványok használata hitelesítéshez a Microsoft Intune szolgáltatásban](https://docs.microsoft.com/mem/intune/protect/certificates-configure).
+A tanúsítványt helyileg elérhetővé kell tenni minden olyan eszközön, amelyen a Raktárkezelés mobilalkalmazást futtatja. A Intune által vezérelt eszközök tanúsítványainak kezelésével kapcsolatban a következő témakör tartalmaz további tájékoztatást: [Tanúsítványok használata hitelesítéshez a Microsoft Intune szolgáltatásban](/mem/intune/protect/certificates-configure).
 
 ## <a name="configure-the-application-by-importing-connection-settings"></a>Az alkalmazás konfigurálása a kapcsolati beállítások importálásával
 

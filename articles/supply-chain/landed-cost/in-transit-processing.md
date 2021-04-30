@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 9a1316de8d79f3ce34bb28812993d096cbd0c2ce
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: fff3c3cfe5d0628fd4df6e719b72bc134c9d9c0a
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5823409"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909451"
 ---
 # <a name="goods-in-transit-processing"></a>Úton lévő áruk feldolgozása
 
@@ -40,7 +40,7 @@ Ha engedélyezi a **Partraszállítási költség** modult, a rendszer kibővít
 
 Ha az **Úton lévő áruk kezelése** beállítás *Igen* beállítású a vonatkozó szállítási feltételek rekordjában, akkor az áruk az úton lévő áruk raktárába kerülnek. Ez a művelet csak akkor aktiválódik, ha a készletbevételezés feldolgozása nem a számla feldolgozása előtt történik meg. Ha egy rendelés szállítási feltételei az úton lévő áruk használatára vannak beállítva, a felhasználók többé nem tudnak termékbevételezést feladni a beszerzési rendeléshez. Ha megpróbálják, hiba történik. A hibaüzenetben az áll, hogy a folytatáshoz az úton lévő termékek funkciót kell használniuk.
 
-Az úton lévő árukra vonatkozó szállítási feltételekkel kapcsolatos információk kezeléséhez lépjen a **Beszerzés és forrás \> Beállítások \> Elosztás \> Szállítási feltételek** pontra. Az alábbi táblázat leírja azokat a mezőket, amelyeket a **Partraszállítás költség** modul hozzáad a **Szállítási feltételek** oldalhoz, hogy támogassa az úton lévő áruk funkciókat. Mindkét mező az **Általános** gyorslapon oldalon található. Az oldal további mezőivel kapcsolatos további tudnivalókat lásd: [Szállítási feltételek (képernyő)](https://technet.microsoft.com/library/aa575567.aspx).
+Az úton lévő árukra vonatkozó szállítási feltételekkel kapcsolatos információk kezeléséhez lépjen a **Beszerzés és forrás \> Beállítások \> Elosztás \> Szállítási feltételek** pontra. Az alábbi táblázat leírja azokat a mezőket, amelyeket a **Partraszállítás költség** modul hozzáad a **Szállítási feltételek** oldalhoz, hogy támogassa az úton lévő áruk funkciókat. Mindkét mező az **Általános** gyorslapon oldalon található. Az oldal további mezőivel kapcsolatos további tudnivalókat lásd: [Szállítási feltételek (képernyő)](/dynamicsax-2012//terms-of-delivery-form).
 
 | Mező | Leírás |
 |---|---|
@@ -55,7 +55,7 @@ A Partraszállítási költség két új raktártípust ad hozzá: az *úton lé
 
 Az *úton lévő áruk* raktártípusa az Ön úton lévő áruk raktárához lesz társítva, és ezt a raktárt fogja használni az áruk feldolgozására az úton lévő áruk rendelésein, mielőtt bevételeznék azokat a végső célraktárban. Általában minden helyhez elegendő egy úton lévő áruk raktára, ha csak a Hely és Raktár az egyetlen készletkezelésre használt készletdimenzió. Ha a Hely készletdimenziót is használja, akkor minden hely és raktár kombinációhoz be kell állítani egy úton lévő áruk raktárat, hogy az alapértelmezett helyet is meg tudja adni.
 
-A raktárak úton lévő áruk beállításaival kapcsolatos munkához lépjen a **Készletkezelés \> Beállítás \> Készlet részletezése \> Raktárak** elemre. Az alábbi táblázat leírja azokat a mezőket, amelyeket a **Partraszállítás költség** modul hozzáad a **Raktárak** oldalhoz, hogy támogassa az úton lévő áruk funkciókat. Mindkét mező az **Általános** gyorslapon oldalon található. Az oldal többi mezőjével kapcsolatos tudnivalók a [Raktárak (képernyő)](https://technet.microsoft.com/library/aa620570.aspx) című témakörben találhatóak.
+A raktárak úton lévő áruk beállításaival kapcsolatos munkához lépjen a **Készletkezelés \> Beállítás \> Készlet részletezése \> Raktárak** elemre. Az alábbi táblázat leírja azokat a mezőket, amelyeket a **Partraszállítás költség** modul hozzáad a **Raktárak** oldalhoz, hogy támogassa az úton lévő áruk funkciókat. Mindkét mező az **Általános** gyorslapon oldalon található. Az oldal többi mezőjével kapcsolatos tudnivalók a [Raktárak (képernyő)](/dynamicsax-2012//warehouses-form) című témakörben találhatóak.
 
 | Mező | Leírás |
 |---|---|
@@ -109,7 +109,7 @@ Az áruk érkeztetési napló létrehozásával is bevételezhetők. Az érkezte
     - **Létrehozás az úton lévő árukból** – A mennyiségeknek a kijelölt hajóút, konténer vagy levél kijelölt úton lévő áruk sorából történő megadásához állítsa *Igen* értékre a beállítás.
     - **Létrehozás rendeléssorokból** – A beállítás *Igen* értékre állításával beállítható az érkeztetési napló alapértelmezett mennyisége a beszerzésirendelés-sorokból. Az érkeztetési naplóban szereplő alapértelmezett mennyiséget csak akkor lehet ilyen módon beállítani, ha a beszerzési rendelés sorában szereplő mennyiség megegyezik az úton lévő áruk rendelésén szereplő mennyiséggel.
 
-1. Az érkeztetési napló feldolgozása a következőben leírtak szerint: [Cikkbevételezések regisztrálása cikkérkeztetési naplóval](https://technet.microsoft.com/library/aa571129.aspx).
+1. Az érkeztetési napló feldolgozása a következőben leírtak szerint: [Cikkbevételezések regisztrálása cikkérkeztetési naplóval](/dynamicsax-2012/appuser-itpro/register-item-receipts-with-an-item-arrival-journal).
 
 > [!NOTE]
 > Az érkeztetési napló általában olyan helyzetekben használatos, amikor helyeket és köteg-/sorozatkövetést használnak, de a raktárkezelés nincs használva.
@@ -131,15 +131,14 @@ A partraszállítási költség hozzáadja a következő munkalétrehozási foly
 - Úton lévő áruk cikkének bevételezése
 - Úton lévő áruk cikkbevételezése és betárolása
 
-Ezen folyamatok konfigurációs beállításai hasonlítanak a [beszerzési rendelés bevételezési és betárolási munkáinak létrehozási folyamata](https://technet.microsoft.com/library/dn553216.aspx) beállításaihoz. Az *Úton lévő áruk cikkbevételezése és betárolása* folyamat azonban a következő mezőt is hozzáadja.
+Ezen folyamatok konfigurációs beállításai hasonlítanak a [beszerzési rendelés bevételezési és betárolási munkáinak létrehozási folyamata](/dynamicsax-2012/appuser-itpro/configure-mobile-devices-for-warehouse-work) beállításaihoz. Az *Úton lévő áruk cikkbevételezése és betárolása* folyamat azonban a következő mezőt is hozzáadja.
 
 - **Szállítókonténer kész engedélyezése** – Ha ez a beállítás *Igen* értékű, a betárolási munka befejezésekor a Raktárkezelés mobilalkalmazás egy további, **Szállítókonténer kész** nevű lehetőséget is biztosít. Ha ez a beállítás be van jelölve, a dolgozót felkéri a rendszer annak megerősítésére, hogy a konténer kész. Ezen a ponton minden rövid bevételezés hiány tranzakcióként lesz feldolgozva.
 
 ### <a name="location-directives"></a>Helyutasítások
 
-A Partraszállítási költség hozzáad egy új, *Úton lévő áruk* nevű munkarendelés-típust a **Helyutasítások** oldalhoz. Ezt a munkarendelés-típust ugyanúgy kell konfigurálni, mint a [beszerzési rendelés munkarendelés-típusait](https://technet.microsoft.com/library/dn553184.aspx).
+A Partraszállítási költség hozzáad egy új, *Úton lévő áruk* nevű munkarendelés-típust a **Helyutasítások** oldalhoz. Ezt a munkarendelés-típust ugyanúgy kell konfigurálni, mint a [beszerzési rendelés munkarendelés-típusait](/dynamicsax-2012/appuser-itpro/create-a-work-template).
 
 ### <a name="work-templates"></a>Munkasablonok
 
-A Partraszállítási költség hozzáad egy új, *Úton lévő áruk* nevű munkarendelés-típust a **Munkasablonok** oldalhoz. Ezt a munkarendelés-típust ugyanúgy kell konfigurálni, mint a [beszerzési rendelés munkasablonjait](https://technet.microsoft.com/library/dn553184.aspx).
-
+A Partraszállítási költség hozzáad egy új, *Úton lévő áruk* nevű munkarendelés-típust a **Munkasablonok** oldalhoz. Ezt a munkarendelés-típust ugyanúgy kell konfigurálni, mint a [beszerzési rendelés munkasablonjait](/dynamicsax-2012/appuser-itpro/create-a-work-template).

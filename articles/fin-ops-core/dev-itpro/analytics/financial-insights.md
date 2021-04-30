@@ -2,8 +2,7 @@
 title: Pénzügyi elemzés
 description: A Pénzügyi elemzés a Microsoft Power BI szolgáltatást használja kulcsfontosságú pénzügyi mutatók (KPI), diagramok és pénzügyi kimutatások összefogására.
 author: kweekley
-manager: AnnBe
-ms.date: 05/22/2019
+ms.date: 04/09/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 22de5f3e2e475aa681be2d8868fb1d939f3f8638
-ms.sourcegitcommit: 4c57c16fe7ecd2a9840158aa69646ee47152e5f1
+ms.openlocfilehash: 71fd1ad15320fda162a289e9c5741aec2ce76778
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "5572366"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5894908"
 ---
 # <a name="financial-analysis"></a>Pénzügyi elemzés
 
@@ -65,10 +64,9 @@ A **Pénzügyi elemzés** adatainak lekérése az Entitástárból történik (*
 
 Frissítenie kell a következő entitásokat az adatok a **Pénzügyi elemzés** munkaterületen való megtekintéséhez:
 
-- BudgetActivityMeasure
 - Financial Reporting tranzakcióadatai 3. verzió 
+- Követelések és beszedések V2
 - CustCollectionsBIMeasurements
-- LedgerActivityMeasure
 - LedgerCovLiquidityMeasurement
 - Beszerzés kocka
 - Értékesítés kocka
@@ -241,9 +239,9 @@ Power BI nem támogatja az üres sorok elrejtését és megjelenítését. Ha eg
 
 Az alábbi erőforrásokban található információk nem szükségesek a **Pénzügyi elemzés** munkaterületre vonatkozó beágyazott jelentések éles környezetben történő engedélyezéséhez. Ehelyett hasznosak fejlesztői célokra, és ha saját Power BI jelentéseit szeretné beágyazni.
 
-- [Az analitikus munkaterületek és jelentések elérése egykeretes környezetben](https://blogs.msdn.microsoft.com/dynamicsaxbi/2017/07/29/accessing-analytical-workspaces-on-1box-environment/)
+- [Az analitikus munkaterületek és jelentések elérése egykeretes környezetben](/archive/blogs/dynamicsaxbi/accessing-analytical-workspaces-on-1box-environment)
 
-- [Analitika hozzáadása munkaterületekhez a Power BI Embedded használatával](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/add-analytics-tab-workspaces)
+- [Analitika hozzáadása munkaterületekhez a Power BI Embedded használatával](/dynamics365/unified-operations/dev-itpro/analytics/add-analytics-tab-workspaces)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

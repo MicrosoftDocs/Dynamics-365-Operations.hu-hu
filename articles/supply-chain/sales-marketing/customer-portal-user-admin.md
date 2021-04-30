@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 4d6d88f69f9b958c9e8f49695d07d0b593da2258
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 453c6f18c689bb8bf2f6208d9181b23a2792f41a
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840701"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5907765"
 ---
 # <a name="create-and-manage-customer-portal-users"></a>Ügyfélportál felhasználóinak létrehozása és kezelése
 
@@ -44,26 +44,26 @@ A Power Apps portálokon található kapcsolattartók rekordokként vannak táro
 
 ## <a name="the-invitation-process"></a>A meghívás folyamata
 
-Ha meg szeretne hívni egy meglévő kapcsolattartót a Ügyfélportálra webhelyére, kövesse a [Kapcsolattartók meghívása a portáljára](https://docs.microsoft.com/powerapps/maker/portals/configure/invite-contacts) rész lépéseit a Power Apps portálok dokumentációjában.
+Ha meg szeretne hívni egy meglévő kapcsolattartót a Ügyfélportálra webhelyére, kövesse a [Kapcsolattartók meghívása a portáljára](/powerapps/maker/portals/configure/invite-contacts) rész lépéseit a Power Apps portálok dokumentációjában.
 
-Mielőtt meghívja a vevőt, hogy csatlakozzon a Ügyfélportálra győződjön meg arról, hogy a vevő [kapcsolattartói rekordja](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-contacts) elérhető, és be van állítva a következő módon:
+Mielőtt meghívja a vevőt, hogy csatlakozzon a Ügyfélportálra győződjön meg arról, hogy a vevő [kapcsolattartói rekordja](/powerapps/maker/portals/configure/configure-contacts) elérhető, és be van állítva a következő módon:
 
 1. Állítsa be a **Vállalat** mezőt arra a jogi személyre, amelyhez az ügyfelet hozzá szeretné rendelni a Supply Chain Management alkalmazásban.
 2. Állítsa be a **Számlaszám** mezőt arra a számlaszámra amelyhez az ügyfelet hozzá szeretné rendelni a Supply Chain Management alkalmazásban.
 
 Miután létrehozta a kapcsolattartót az látható lesz a Supply Chain Management modulban.
 
-A további tudnivalókat lásd: [A portálon használható kapcsolattartó konfigurálása](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-contacts) részt a Power Apps portálok dokumentációjában.
+A további tudnivalókat lásd: [A portálon használható kapcsolattartó konfigurálása](/powerapps/maker/portals/configure/configure-contacts) részt a Power Apps portálok dokumentációjában.
 
 ## <a name="out-of-box-web-roles-and-table-permissions"></a>Gyári webes szerepkörök és táblaengedélyek
 
-A Power Apps portálok felhasználói szerepköreit a [webes szerepkörök](https://docs.microsoft.com/powerapps/maker/portals/configure/create-web-roles) és az [táblaengedélyek](https://docs.microsoft.com/powerapps/maker/portals/configure/assign-entity-permissions) határozzák meg. A Ügyfélportál néhány szerepkört kínál már gyári állapotban is. Új szerepköröket hozhat létre, és módosíthatja vagy törölheti a meglévő szerepköröket.
+A Power Apps portálok felhasználói szerepköreit a [webes szerepkörök](/powerapps/maker/portals/configure/create-web-roles) és az [táblaengedélyek](/powerapps/maker/portals/configure/assign-entity-permissions) határozzák meg. A Ügyfélportál néhány szerepkört kínál már gyári állapotban is. Új szerepköröket hozhat létre, és módosíthatja vagy törölheti a meglévő szerepköröket.
 
 ### <a name="out-of-box-web-roles"></a>Gyári webes szerepkörök
 
 Ez a szakasz a Ügyfélportál szolgáltatással szállított webes szerepköröket írja le.
 
-A gyári felhasználói szerepkörök módosításával kapcsolatos további tudnivalókat lásd: [Webes szerepkörök létrehozása a portálokhoz](https://docs.microsoft.com/powerapps/maker/portals/configure/create-web-roles) és [Rekordalapú biztonság hozzáadása táblaengedélyek használatával a portálokhoz](https://docs.microsoft.com/powerapps/maker/portals/configure/assign-entity-permissions) a Power Apps dokumentációjában.
+A gyári felhasználói szerepkörök módosításával kapcsolatos további tudnivalókat lásd: [Webes szerepkörök létrehozása a portálokhoz](/powerapps/maker/portals/configure/create-web-roles) és [Rekordalapú biztonság hozzáadása táblaengedélyek használatával a portálokhoz](/powerapps/maker/portals/configure/assign-entity-permissions) a Power Apps dokumentációjában.
 
 #### <a name="administrator"></a>Rendszergazda
 

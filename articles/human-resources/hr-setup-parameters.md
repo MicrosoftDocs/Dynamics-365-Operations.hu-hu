@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 74bdf891ffa7a9d875e23cf46aeee1dbaf86db48
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: cd66cb4f5ac02407250e15ae134b36f5ccd4d290
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5802407"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5889932"
 ---
 # <a name="configure-human-resources-parameters"></a>A Human Resources paramétereinek konfigurálása
 
@@ -92,7 +92,7 @@ A **Számsorozat** lap beállításai határozzák meg, hogy milyen sorrendben r
 
 A számsorozat-hivatkozások és -kódok karbantartásához használja a **Számsorozatok** listaoldalt (válassza a **Szervezet felügyelete > Számsorozatok > Számsorozatok** lehetőséget).
 
-További információkért lásd: [Számsorozatok áttekintése](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview?toc=/dynamics365/human-resources/toc.json).
+További információkért lásd: [Számsorozatok áttekintése](../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json).
 
 > [!NOTE]
 > A ledolgozott órák száma nem haladhatja meg az 1250-et, és a munkaviszony nem lehet hosszabb 12 hónapnál. Ezek a maximális értékek az Egyesült Államok szövetségi törvényének megfelelőek.

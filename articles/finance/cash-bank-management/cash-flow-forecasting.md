@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 2a0bcb5266472b3d0e936d27c9f599d2c6b16d7a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 7642b26be08427ccbef3929f2a2e083ce43d4e75
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5819650"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897404"
 ---
 # <a name="cash-flow-forecasting"></a>Pénzforgalmi előrejelzés
 
@@ -144,7 +144,7 @@ Megtekintheti a pénzforgalmi előrejelzések elemzéseit a rendszer pénzneméb
 
 Megtekintheti a pénzforgalmi előrejelzések elemzéseit a vállalat által meghatározott pénznemben a **Készpénzáttekintés – jelenlegi vállalat** munkaterületen. Az elemzésekhez használt könyvelési pénznem meghatározása a **Főkönyv** oldalon történik. Ez a munkaterület áttekintést nyújt a pénzforgalmi előrejelzésről és a bankszámla-egyenlegekről a jelenlegi vállalat vonatkozásában. A készpénzbeáramlás és -kiáramlás áttekintése áttekintést nyújt a jövőbeli pénzmozgásokról és egyenlegekről a könyvelés pénznemében, valamint részletes információkat tartalmaz az előrejelzett tranzakciókra vonatkozóan. Az előrejelzett pénznem egyenlegeit is megjelenítheti.
 
-Ha további információt szeretne a pénzforgalmi előrejelzések elemzéséről, tekintse meg a [Készpénzáttekintés Power BI tartalom](https://docs.microsoft.com/dynamics365/finance/cash-bank-management/cash-overview-power-bi-content) témakört.
+Ha további információt szeretne a pénzforgalmi előrejelzések elemzéséről, tekintse meg a [Készpénzáttekintés Power BI tartalom](./cash-overview-power-bi-content.md) témakört.
 
 Ezenkívül a következő oldalakon megtekintheti a pénzforgalmi előrejelzési adatokat az adott fiókokhoz, rendelésekhez és cikkekhez:
 

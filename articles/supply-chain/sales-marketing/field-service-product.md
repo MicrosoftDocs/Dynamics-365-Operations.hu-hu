@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 9cc8e93259119236093e02924d29df64dcc876bb
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 45a989604d829db715756b6cd206a5675a18acf2
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5810894"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909991"
 ---
 # <a name="synchronize-products-in-supply-chain-management-to-products-in-field-service"></a>A Supply Chain Management-termékek közvetlen szinkronizálása a Field Service-termékekre
 
@@ -29,7 +29,7 @@ ms.locfileid: "5810894"
 
 Ez a témakör bemutatja a sablonokat és a mögöttes feladatot, amelyek a Dynamics 365 Supply Chain Management termékeinek közvetlenül a Dynamics 365 Field Service szolgáltatásba történő szinkronizálására használatosak.
 
-A használt **Field Service termékek (Supply Chain Management – Field Service)** sablon A potenciális ügyfelek készpénzre váltása alkalmazásból eredő **Termékek (Supply Chain Management – Sales) – Közvetlen** sablonon alapul. További tudnivalókért lásd: [Termékek (Supply Chain Management – Sales) – Közvetlen](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/products-template-mapping-direct).
+A használt **Field Service termékek (Supply Chain Management – Field Service)** sablon A potenciális ügyfelek készpénzre váltása alkalmazásból eredő **Termékek (Supply Chain Management – Sales) – Közvetlen** sablonon alapul. További tudnivalókért lásd: [Termékek (Supply Chain Management – Sales) – Közvetlen](/dynamics365/unified-operations/supply-chain/sales-marketing/products-template-mapping-direct).
 
 Ez a témakör csak a **Field Service termékek (Supply Chain Management – Field Service)** és a **Termékek (Supply Chain Management – Sales) – Közvetlen** sablono közötti különbségeket mutatja be.
 

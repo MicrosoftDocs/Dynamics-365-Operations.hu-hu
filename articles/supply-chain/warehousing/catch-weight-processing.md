@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 3882e40b4083f9246a03db3078cae8e18bec3c1e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: c263fdcf7fdf2888e1c66e7e2b67d8b26729128c
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5808918"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5907619"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>A tényleges súllyal rendelkező termék feldolgozása a raktárkezelésben
 
@@ -40,7 +40,7 @@ Mielőtt a terméket a Raktárkezelésben használhatja, bizonyos alapvető term
 - Állítson be egy egység szekvenciacsoportot, ahol a tényleges súly egysége a legkisebb raktározási egységként (SKU) van meghatározva.
 - Állítson be egy tényleges súllyal rendelkező cikkek kezelésére vonatkozó irányelvet.
 
-További tudnivalókért lásd: [Tényleges súly alapú cikkek beállítása és karbantartása](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/setting-up-and-maintaining-catch-weight-items).
+További tudnivalókért lásd: [Tényleges súly alapú cikkek beállítása és karbantartása](/dynamicsax-2012/appuser-itpro/setting-up-and-maintaining-catch-weight-items).
 
 ## <a name="transaction-adjustments"></a>Tranzakció kiigazításai
 

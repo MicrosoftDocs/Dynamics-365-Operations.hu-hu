@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 599f9728019cd6bc59c59a4f08df06c6c9c9ac31
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: f70e377d6844b5c4f9201f0a561ad9cfcab2eda1
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5798417"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5890125"
 ---
 # <a name="applicant-tracking-system-integration-api-introduction"></a>Pályázó követésrendszer integrációs API bevezetése
 
@@ -45,21 +45,21 @@ Ez az API Microsoft Dataverse rendszerben (korábbi nevén Common Data Service) 
 
 További általános információ a Microsoft Dataverse webes API-ról, lásd:
 
-- [Mi az a Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)
-- [A Microsoft Dataverse webes API használata](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview)
-- [Microsoft Dataverse fejlesztői iránymutatás](https://docs.microsoft.com/powerapps/developer/data-platform)
+- [Mi az a Microsoft Dataverse?](/powerapps/maker/data-platform/data-platform-intro)
+- [A Microsoft Dataverse webes API használata](/powerapps/developer/data-platform/webapi/overview)
+- [Microsoft Dataverse fejlesztői iránymutatás](/powerapps/developer/data-platform)
 
-A fenti dokumentáció részletes és fejlesztői útmutatásokat tartalmaz a Dataverse webes API használatával kapcsolatban, ilyen például a [hitelesítés kezelése](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/authenticate-web-api), a [műveletek végrehajtása](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/perform-operations-web-api), a [Postman és az API használata](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/use-postman-web-api), valamint [változáskövetési vagy eltérési tokenek használata](https://docs.microsoft.com/powerapps/developer/data-platform/use-change-tracking-synchronize-data-external-systems) az API-val.
+A fenti dokumentáció részletes és fejlesztői útmutatásokat tartalmaz a Dataverse webes API használatával kapcsolatban, ilyen például a [hitelesítés kezelése](/powerapps/developer/data-platform/webapi/authenticate-web-api), a [műveletek végrehajtása](/powerapps/developer/data-platform/webapi/perform-operations-web-api), a [Postman és az API használata](/powerapps/developer/data-platform/webapi/use-postman-web-api), valamint [változáskövetési vagy eltérési tokenek használata](/powerapps/developer/data-platform/use-change-tracking-synchronize-data-external-systems) az API-val.
 
 ### <a name="option-sets"></a>Beállításkészletek
 
-Az ATS integrációs API-jának ebben a dokumentumban ismertetett adatmodellje olyan beállításkészleteket tartalmaz, amelyek entitástulajdonságokhoz rendelt, felsorolt értékeket tartalmaznak. A Dataverse webes API-t használó beállításkészletekkel való munka részletes részleteit lásd: [Beállításkészletek létrehozása és frissítése a webes API segítségével](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/create-update-optionsets). A beállításkészleteket az egyes Dataverse-környezetekhez határozzák meg.
+Az ATS integrációs API-jának ebben a dokumentumban ismertetett adatmodellje olyan beállításkészleteket tartalmaz, amelyek entitástulajdonságokhoz rendelt, felsorolt értékeket tartalmaznak. A Dataverse webes API-t használó beállításkészletekkel való munka részletes részleteit lásd: [Beállításkészletek létrehozása és frissítése a webes API segítségével](/powerapps/developer/data-platform/webapi/create-update-optionsets). A beállításkészleteket az egyes Dataverse-környezetekhez határozzák meg.
 
 ### <a name="virtual-tables-for-human-resources-in-dataverse"></a>A Dataverse for Human Resources számára elérhető virtuális táblák
 
 Az ATS integrációs API végpontjai a Microsoft Dataverse virtuális tábla platformképességeit használják. Alapértelmezés szerint a virtuális táblák és a hozzájuk kapcsolódó API-végpontok nincsenek telepítve a Human Resources-környezetekben, lehetővé téve a szervezetek számára, hogy ők határozzák meg, hogy mely OData-végpontok lesznek kitéve a környezetnek. Az API használatához létre kell hozni a Human Resources-entitások virtuális tábláit a környezet számára. 
 
-Az API virtuális tábláinak létrehozásáról lásd: [Dataverse virtuális táblák konfigurálása](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-integration-common-data-service-virtual-entities).
+Az API virtuális tábláinak létrehozásáról lásd: [Dataverse virtuális táblák konfigurálása](./hr-admin-integration-common-data-service-virtual-entities.md).
 
 ## <a name="data-model"></a>Adatmodell
 
@@ -134,8 +134,8 @@ Beállításkészletek:
 ## <a name="see-also"></a>Lásd még
 
 [Jelöltek toborzása](hr-personnel-recruit.md)<br>
-[Mi az a Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)<br>
-[A Microsoft Dataverse webes API használata](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview)<br>
-[Beállításkészletek létrehozása és frissítése a webes API segítségével](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/create-update-optionsets)<br>
+[Mi az a Microsoft Dataverse?](/powerapps/maker/data-platform/data-platform-intro)<br>
+[A Microsoft Dataverse webes API használata](/powerapps/developer/data-platform/webapi/overview)<br>
+[Beállításkészletek létrehozása és frissítése a webes API segítségével](/powerapps/developer/data-platform/webapi/create-update-optionsets)<br>
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
