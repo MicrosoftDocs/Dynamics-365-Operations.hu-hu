@@ -2,7 +2,7 @@
 title: Többnyelvű jelentések tervezése elektronikus jelentésekben
 description: Ez a témakör azt mutatja be, hogyan lehet használni az elektronikus jelentések (ER) címkéit a többnyelvű jelentések tervezéséhez és létrehozásához.
 author: NickSelin
-ms.date: 09/14/2020
+ms.date: 04/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f5a2e8cca441189020e6274248a48c5e9dd80e00
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 50156b8c6b3553b02d092fad9c72e90c1f70ff78
+ms.sourcegitcommit: 6c2f5c3b038f696532c335e20b0fbafa155d6858
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753552"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "5951985"
 ---
 # <a name="design-multilingual-reports-in-electronic-reporting"></a>Többnyelvű jelentések tervezése elektronikus jelentésekben
 
@@ -158,6 +158,31 @@ Az ER különböző módszereket támogat a létrejövő jelentések nyelvének 
 - **Futásidőben definiálva** – Jelentés készítése a futásidőben megadott nyelven. Ha ezt az értéket választja, a **Nyelv** mezőben konfiguráljon egy olyan ER-kifejezést, amely a nyelvhez tartozó nyelvi kódot adja vissza, például a megfelelő vevő nyelvét.
 
     ![Adja meg az ER műveleti tervezőben a futásidőben megadott nyelvet, amely a létrejövő jelentés nyelve lesz](./media/er-multilingual-labels-language-context-runtime.png)
+
+## <a name="culture-specific-formatting"></a>Kultúra-specifikus formázás
+
+Az ER különböző módszereket támogat a létrejövő jelentések kultúrájának meghatározására. Ebből következően a helyes kultúraspecifikus formátum használható dátum-, idő- és numerikus értékekhez. ER-formátum tervezésekor a **Kulturális preferenciák** mező **Formátum** fülén a következő értékek közül választhat a **Közös\\Fájl**, **Excel\\Fájl**, **PDF\\fájl**, vagy **PDF\\Összevonás** típushoz:
+
+- **Felhasználói preferencia** – Az értékek formázása a felhasználó által előnyben részesített kulturális környezetnek megfelelően. Ezt a kultúrát a **Felhasználói beállítások** lap **Preferenciák** fülének **Dátum-, idő- és számformátum** mezőjében lehet meghatározni.
+
+    ![A felhasználó előnyben részesített kultúrájának meghatározása az ER művelettervezőben generált jelentés kultúrájaként](./media/er-multilingual-labels-culture-context-user-preferred.png)
+
+- **Expliciten meghatározva** – Az értékek formázása a tervezéskor megadott kultúrának megfelelően.
+
+    ![A tervezési idő alatt meghatározott kultúra meghatározása az ER művelettervezőben generált jelentés kultúrájaként](./media/er-multilingual-labels-culture-context-fixed.png)
+
+- **Futási idő alatt meghatározva** – Az értékek formázása a futási idő alatt megadott kultúrának megfelelően. Ha ezt az értéket választja, a **Dátum-, idő- és számformátum** mezőjében a **Leképezés** fülön konfigurálnia kell egy olyan ER-kifejezést, amely visszaadja a kultúrához tartozó kultúrakódot, például az adott vevő kultúráját.
+
+    ![A futási idő alatt meghatározott kultúra meghatározása az ER művelettervezőben generált jelentés kultúrájaként](./media/er-multilingual-labels-culture-context-runtime.png)
+
+> [!NOTE]
+> Előfordulhat, hogy egy olyan ER-összetevő, amely egy adott kultúrában van meghatározva, szöveges érték kitöltésére beállított gyermek ER-összetevőket tartalmazhat. Alapértelmezés szerint a szülőösszetevő kultúrája ezen összetevők értékeit formázza. A következő beépített ER-funkciókat az összetevők kötéseinek konfigurálásához használhatja, és alkalmazhat egy alternatív kultúrát az érték formázásához:
+>
+> - [DATEFORMAT](er-functions-datetime-dateformat.md#syntax-2)
+> - [DATETIMEFORMAT](er-functions-datetime-datetimeformat.md#syntax-2)
+> - [NUMBERFORMAT](er-functions-text-numberformat.md#syntax-2)
+>
+> A 10.0.20-as és újabb verziókban a **Közös\\Fájl** és **Excel\\Fájl** típusok formátum-összetevőinek területi beállítását az előállított dokumentumok [PDF-formátumba](electronic-reporting-destinations.md#OutputConversionToPDF) konvertálása során használja a program.
 
 ## <a name="translation"></a>Átszámítás
 
