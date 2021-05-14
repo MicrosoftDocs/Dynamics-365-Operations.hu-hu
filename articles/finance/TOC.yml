@@ -72,6 +72,8 @@
                   items:
                     - name: Újdonságok és változások a Finance kezdőlapján
                       href: get-started/whats-new-home-page.md
+                    - name: Finance 10.0.19 (2021. július)
+                      href: get-started/whats-new-changed-10-0-19.md
                     - name: Finance 10.0.18 (2021. május)
                       href: get-started/whats-new-changed-10-0-18.md
                     - name: Finance 10.0.17 (2021. április)
@@ -162,6 +164,8 @@
                   href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/finance/toc.json
                 - name: Vászonalapú alkalmazások beágyazása a Power Apps szolgáltatásból
                   href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/finance/toc.json
+                - name: Harmadik fél alkalmazásainak beágyazása
+                  href: ../fin-ops-core/fin-ops/get-started/embed-website.md?toc=/dynamics365/finance/toc.json
                 - name: Információk megtalálása keresésekkel
                   href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/finance/toc.json
                 - name: Munkamenet dátumának módosítása
@@ -683,45 +687,45 @@
         - name: Költséggazdálkodás
           items:
             - name: Költséggazdálkodás – áttekintés
-              href: expense-management/expense-management.md
+              href: /dynamics365/project-operations/prod-exp/expense-management
             - name: Költségjelentések újragondolva
-              href: expense-management/ExpenseWorkspaceNew.md
+              href: /dynamics365/project-operations/prod-exp/ExpenseWorkspaceNew
             - name: Költséggazdálkodás tervezése
-              href: expense-management/plan-expense-management.md
+              href: /dynamics365/project-operations/prod-exp/plan-expense-management
             - name: Költséggazdálkodási paraméterek
-              href: expense-management/Expense-Management-Parameters.md
+              href: /dynamics365/project-operations/prod-exp/Expense-Management-Parameters
             - name: Költségkezelési mobil munkaterület
-              href: expense-management/expense-management-mobile-workspace.md
+              href: /dynamics365/project-operations/prod-exp/expense-management-mobile-workspace
             - name: Munkafolyamatok beállítása a költséggazdálkodáshoz
-              href: expense-management/expense-workflows.md
+              href: /dynamics365/project-operations/prod-exp/expense-workflows
             - name: A költséggazdálkodás munkafolyamata
-              href: expense-management/expense-workflow.md
+              href: /dynamics365/project-operations/prod-exp/expense-workflow
             - name: Költség delegálásának kezelése
-              href: expense-management/manage-expense-delegation.md
+              href: /dynamics365/project-operations/prod-exp/manage-expense-delegation
             - name: Költség a bevételezés feldolgozásakor
-              href: expense-management/expense-receipt-processing.md
+              href: /dynamics365/project-operations/prod-exp/expense-receipt-processing
             - name: Hitelkártya-tranzakciók importálása és karbantartása
-              href: expense-management/import-credit-card.md
+              href: /dynamics365/project-operations/prod-exp/import-credit-card
             - name: Felosztások egy költségjelentésben
-              href: expense-management/expense-report-distributions.md
+              href: /dynamics365/project-operations/prod-exp/expense-report-distributions
             - name: Vállalatközi költségek
-              href: expense-management/intercompany-expense.md
+              href: /dynamics365/project-operations/prod-exp/intercompany-expense
             - name: Költségszabályok meghatározása
-              href: expense-management/travel-expense-policies.md
+              href: /dynamics365/project-operations/prod-exp/travel-expense-policies
             - name: Költségjelentés megtekintése
-              href: expense-management/view-expense-report.md
+              href: /dynamics365/project-operations/prod-exp/view-expense-report
             - name: Költségjelentés feladása
-              href: expense-management/post-expense.md
+              href: /dynamics365/project-operations/prod-exp/post-expense
             - name: Költségjelentések és több jóváhagyó
-              href: expense-management/expense-report-multiple-approvers.md
+              href: /dynamics365/project-operations/prod-exp/expense-report-multiple-approvers
             - name: Áfa-visszaigénylés a Költséggazdálkodás modulban
-              href: expense-management/VAT-expense-report.md
+              href: /dynamics365/project-operations/prod-exp/VAT-expense-report
             - name: Napidíj-szabályok
-              href: expense-management/per-diem.md
+              href: /dynamics365/project-operations/prod-exp/per-diem
             - name: Utazási igénylések
-              href: expense-management/travel-req.md
+              href: /dynamics365/project-operations/prod-exp/travel-req
             - name: Személyes kiadások a költségjelentéseken
-              href: expense-management/personal-expenses.md
+              href: /dynamics365/project-operations/prod-exp/personal-expenses
         - name: Tárgyi eszközök
           items:
             - name: Tárgyi eszközök kezdőlap
@@ -1104,6 +1108,20 @@
                   href: general-ledger/tasks/view-posted-sales-tax-transactions.md
                 - name: Áfafizetés kód szerint jelentés nyomtatása
                   href: general-ledger/print-sales-tax-payment-by-code-report.md
+                - name: Áfa hibajavítása
+                  items:
+                    - name: Adószámítás nem történt meg vagy az adó összege nulla
+                      href: general-ledger/sales-tax-troubleshooting-tax-not-calculated-amount-zero.md
+                    - name: Az adószámítási teljesítmény hatással van a tranzakciókra
+                      href: general-ledger/sales-tax-troubleshooting-tax-calculation-bad-performance.md
+                    - name: Helytelen mezőérték a TaxTransban
+                      href: general-ledger/sales-tax-troubleshooting-field-value-taxtrans-incorrect.md
+                    - name: TaxTrans rekord létrehozása nem történt meg
+                      href: general-ledger/sales-tax-troubleshooting-taxtrans-record-not-generated.md
+                    - name: Az adó rossz főkönyvi számlába lett feladva a bizonylatban
+                      href: general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md
+                    - name: Bizonylat létrehozása nem történt meg
+                      href: general-ledger/sales-tax-troubleshooting-voucher-not-generated.md
             - name: Adóelőleg
               items:
                 - name: Adóelőleg beállítása
@@ -1215,85 +1233,85 @@
         - name: Projektvezetés és könyvelés
           items:
             - name: Projektvezetés és könyvelés áttekintése
-              href: project-management/overview-project-management-accounting.md
+              href: /dynamics365/project-operations/prod-pma/overview-project-management-accounting
             - name: Vállalatközi számlázás
-              href: project-management/intercompany-invoicing.md
+              href: /dynamics365/project-operations/prod-pma/intercompany-invoicing
             - name: Vállalatközi projektszámlázás konfigurálása
-              href: project-management/tasks/configure-intercompany-project-invoicing.md
+              href: /dynamics365/project-operations/prod-pma/configure-intercompany-project-invoicing
             - name: Munka és kiadások elszámolóárainak konfigurálása
-              href: project-management/tasks/configure-standard-costs-labor-expenses.md
+              href: /dynamics365/project-operations/prod-pma/configure-standard-costs-labor-expenses
             - name: Szállítói kifizetések visszatartási feltételeinek létrehozása és alkalmazása
-              href: project-management/create-and-apply-vendor-payment-retention-terms.md
+              href: /dynamics365/project-operations/prod-pma/create-and-apply-vendor-payment-retention-terms
             - name: Saját fizetés beérkezésekor fizetendő szállítói fizetések beállítása és használata
-              href: project-management/setup-manage-vendor-payments.md
+              href: /dynamics365/project-operations/prod-pma/setup-manage-vendor-payments
             - name: Projektköltség-könyvelési beszerzési bizonylatok
               href: accounts-payable/project-cost-accrual-purchase-receipts.md
             - name: Projektszámlázás
               href: accounts-payable/project-invoicing.md
             - name: Projektszerződések
-              href: project-management/project-contracts.md
+              href: /dynamics365/project-operations/prod-pma/project-contracts
             - name: Speciális szerződések létrehozása a folyamat alapján történő számlázáshoz
-              href: project-management/project-create-advanced-contracts-for-billing-based-progress.md
+              href: /dynamics365/project-operations/prod-pma/project-create-advanced-contracts-for-billing-based-progress
             - name: Projekt-előrejelzések és -költségvetések
-              href: project-management/project-forecasts-budgets.md
+              href: /dynamics365/project-operations/prod-pma/project-forecasts-budgets
             - name: Előrejelzési modellek létrehozása projektköltségvetésekhez
-              href: project-management/create-forecast-models-project-budgets.md
+              href: /dynamics365/project-operations/prod-pma/create-forecast-models-project-budgets
             - name: Projekt költségvetéseinek átvitele a pénzügyi év végén
-              href: project-management/process-project-budgets-for-fiscal-year-end.md
+              href: /dynamics365/project-operations/prod-pma/process-project-budgets-for-fiscal-year-end
             - name: Projekt értékesítési rendelései
-              href: project-management/project-sales-orders.md
+              href: /dynamics365/project-operations/prod-pma/project-sales-orders
             - name: Projekt beszerzési rendelései
-              href: project-management/project-purchase-orders.md
+              href: /dynamics365/project-operations/prod-pma/project-purchase-orders
             - name: Projektajánlatok
-              href: project-management/project-quotations.md
+              href: /dynamics365/project-operations/prod-pma/project-quotations
             - name: 'Projektárajánlat megerősítése, frissítése és elküldése'
-              href: project-management/confirm-update-send-project-quotation.md
+              href: /dynamics365/project-operations/prod-pma/confirm-update-send-project-quotation
             - name: Árajánlat átvitele egy projektbe
-              href: project-management/transfer-quote-new-existing-project.md
+              href: /dynamics365/project-operations/prod-pma/transfer-quote-new-existing-project
             - name: Projekterőforrások
               items:
                 - name: Projekterőforrások áttekintése
-                  href: project-management/project-resourcing.md
+                  href: /dynamics365/project-operations/prod-pma/project-resourcing
                 - name: Projekterőforrások beállítása
-                  href: project-management/set-up-project-resources.md
+                  href: /dynamics365/project-operations/prod-pma/set-up-project-resources
                 - name: Erőforrás-kompetenciák kezelése
-                  href: project-management/manage-resource-competencies.md
+                  href: /dynamics365/project-operations/prod-pma/manage-resource-competencies
                 - name: Új projekt létrehozása
-                  href: project-management/create-new-project.md
+                  href: /dynamics365/project-operations/prod-pma/create-new-project
                 - name: Szerepköralapú árképzés beállítása
-                  href: project-management/set-up-role-based-pricing.md
+                  href: /dynamics365/project-operations/prod-pma/set-up-role-based-pricing
                 - name: Projektcsapat létrehozása
-                  href: project-management/create-project-team.md
+                  href: /dynamics365/project-operations/prod-pma/create-project-team
                 - name: Erőforrás-kapacitás szinkronizálása
-                  href: project-management/synchronize-resource-capacity.md
+                  href: /dynamics365/project-operations/prod-pma/synchronize-resource-capacity
                 - name: Projekterőforrás-ütemezés teljesítménye
-                  href: project-management/project-scheduling-performance.md
+                  href: /dynamics365/project-operations/prod-pma/project-scheduling-performance
                 - name: Szerepkörök beállítása a munkalebontási struktúra sablonjain
-                  href: project-management/set-up-roles-wbs-template.md
+                  href: /dynamics365/project-operations/prod-pma/set-up-roles-wbs-template
                 - name: A tervezett erőforrások erőforrás-teljesítése
-                  href: project-management/resource-fulfillment-planned-resources.md
+                  href: /dynamics365/project-operations/prod-pma/resource-fulfillment-planned-resources
             - name: Cikkek átvétele cikkszükségletből származó beszerzési rendelés alapján
-              href: project-management/tasks/receive-items-purchase-order-item-requirement.md
+              href: /dynamics365/project-operations/prod-pma/receive-items-purchase-order-item-requirement
             - name: Munkalebontási struktúrák
               items:
                 - name: Munkalebontási struktúrák áttekintése
-                  href: project-management/work-breakdown-structures.md
+                  href: /dynamics365/project-operations/prod-pma/work-breakdown-structures
                 - name: Microsoft Project Client-integráció
-                  href: project-management/project-integration.md
+                  href: /dynamics365/project-operations/prod-pma/project-integration
                 - name: Project-mobilalkalmazások áttekintése
-                  href: project-management/project-mobile-application-overview.md
+                  href: /dynamics365/project-operations/prod-pma/project-mobile-application-overview
                 - name: Projektidő megadására szolgáló mobil munkaterület
-                  href: project-management/project-time-entry-mobile-workspace.md
+                  href: /dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace
                 - name: Project Timesheet mobilalkalmazás
-                  href: project-management/project-timesheet.md
+                  href: /dynamics365/project-operations/prod-pma/project-timesheet
                 - name: Projekthez tartozó időnyilvántartások mobileszközön
-                  href: project-management/mobile-timesheets.md
+                  href: /dynamics365/project-operations/prod-pma/Mobile-timesheets
                 - name: Egyéni mezők alkalmazása a Project Timesheet mobilalkalmazás esetében
-                  href: project-management/custom-fields-mobile.md
+                  href: /dynamics365/project-operations/prod-pma/custom-fields-mobile
             - name: Projekttámogatások
-              href: project-management/project-grants.md
+              href: /dynamics365/project-operations/prod-pma/project-grants
             - name: Projektbecslés figyelmen kívül hagyása
-              href: project-management/eliminate-project-estimate.md
+              href: /dynamics365/project-operations/prod-pma/eliminate-project-estimate
         - name: Állami szektor
           items:
             - name: Állami szektor – kezdőlap
@@ -1419,61 +1437,61 @@
             - name: Globalizációs szolgáltatások
               items:
                 - name: Globalizációs szolgáltatások áttekintése
-                  href: localizations/globalization-services-overview.md
+                  href: localizations/globalization-services-overview.md?toc=/dynamics365/finance/toc.json
                 - name: Regulatory Configuration Service
                   items:
                     - name: Regulatory Configuration Service áttekintése
-                      href: localizations/rcs-overview.md
+                      href: localizations/rcs-overview.md?toc=/dynamics365/finance/toc.json
                     - name: Regulatory Configuration Service – Globalizációs jellemzők
-                      href: localizations/rcs-globalization-feature.md
+                      href: localizations/rcs-globalization-feature.md?toc=/dynamics365/finance/toc.json
                     - name: 'Hozzon létre ER-konfigurációkat a Regulatory Configuration Service szolgáltatásban, és töltse fel őket a globális adattárba'
-                      href: localizations/rcs-global-repo-upload.md
+                      href: localizations/rcs-global-repo-upload.md?toc=/dynamics365/finance/toc.json
                 - name: Elektronikus számlázás
                   items:
                     - name: Elektronikus számlázás áttekintése
-                      href: localizations/e-invoicing-service-overview.md
+                      href: localizations/e-invoicing-service-overview.md?toc=/dynamics365/finance/toc.json
                     - name: Elektronikus számlázás adminisztrációs összetevői
-                      href: localizations/e-invoicing-service-administration.md
+                      href: localizations/e-invoicing-service-administration.md?toc=/dynamics365/finance/toc.json
                     - name: Elektronikus számlázás konfigurálása a Regulatory Configuration Services (RCS) megoldásban
-                      href: localizations/e-invoicing-configuration-rcs.md
+                      href: localizations/e-invoicing-configuration-rcs.md?toc=/dynamics365/finance/toc.json
                     - name: Elektronikus számlák kiállítása a Finance és a Supply Chain Management szolgáltatásban
-                      href: localizations/e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md
+                      href: localizations/e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md?toc=/dynamics365/finance/toc.json
                     - name: Azure-tárfiók és Key Vault létrehozása
-                      href: localizations/e-invoicing-create-azure-storage-account-key-vault.md
+                      href: localizations/e-invoicing-create-azure-storage-account-key-vault.md?toc=/dynamics365/finance/toc.json
                     - name: Első lépések
                       items:
                         - name: Első lépések az elektronikus számlázási szolgáltatás adminisztrálása során
-                          href: localizations/e-invoicing-get-started-service-administration.md
+                          href: localizations/e-invoicing-get-started-service-administration.md?toc=/dynamics365/finance/toc.json
                         - name: Első lépések az elektronikus számlázás használata során
-                          href: localizations/e-invoicing-get-started.md
+                          href: localizations/e-invoicing-get-started.md?toc=/dynamics365/finance/toc.json
                         - name: Első lépések a Brazíliára vonatkozó elektronikus számlázás használata során
-                          href: localizations/e-invoicing-bra-get-started.md
+                          href: localizations/e-invoicing-bra-get-started.md?toc=/dynamics365/finance/toc.json
                         - name: Első lépések az Egyiptomra vonatkozó elektronikus számlázás használata során
-                          href: localizations/e-invoicing-eg-get-started.md
+                          href: localizations/e-invoicing-eg-get-started.md?toc=/dynamics365/finance/toc.json
                         - name: Első lépések az Olaszországra vonatkozó elektronikus számlázás használata során
-                          href: localizations/e-invoicing-ita-get-started.md
+                          href: localizations/e-invoicing-ita-get-started.md?toc=/dynamics365/finance/toc.json
                         - name: Első lépések a Mexikóra vonatkozó elektronikus számlázás használata során
-                          href: localizations/e-invoicing-mex-get-started.md
+                          href: localizations/e-invoicing-mex-get-started.md?toc=/dynamics365/finance/toc.json
                         - name: Az elektronikus számlázás beállítása
-                          href: localizations/e-invoicing-setup.md
+                          href: localizations/e-invoicing-setup.md?toc=/dynamics365/finance/toc.json
                     - name: Elektronikus számlázás – GYIK
-                      href: localizations/e-invoicing-faq.md
+                      href: localizations/e-invoicing-faq.md?toc=/dynamics365/finance/toc.json
                 - name: Áfaszámítás
                   items:
                     - name: Adószámítás áttekintése
-                      href: localizations/global-tax-calcuation-service-overview.md
+                      href: localizations/global-tax-calcuation-service-overview.md?toc=/dynamics365/finance/toc.json
                     - name: Az adószámítás első lépései
-                      href: localizations/global-get-started-with-tax-calculation-service.md
+                      href: localizations/global-get-started-with-tax-calculation-service.md?toc=/dynamics365/finance/toc.json
                     - name: Adófunkció támogatása átmozgatási rendelésekhez
-                      href: localizations/tasks/Tax-feature-support-for-transfer-order.md
+                      href: localizations/tasks/Tax-feature-support-for-transfer-order.md?toc=/dynamics365/finance/toc.json
                     - name: Adatmezők hozzáadása adókonfigurációkhoz
-                      href: localizations/tax-service-add-data-fields-tax-configurations.md
+                      href: localizations/tax-service-add-data-fields-tax-configurations.md?toc=/dynamics365/finance/toc.json
                     - name: Adatmezők hozzáadása az adóintegrációhoz bővítmények használatával
-                      href: localizations/tax-service-add-data-fields-tax-integration-by-extension.md
+                      href: localizations/tax-service-add-data-fields-tax-integration-by-extension.md?toc=/dynamics365/finance/toc.json
                     - name: Több adószám
-                      href: localizations/emea-multiple-vat-registration-numbers.md
+                      href: localizations/emea-multiple-vat-registration-numbers.md?toc=/dynamics365/finance/toc.json
                     - name: Alapadat-keresés környezetének beállítása
-                      href: localizations/tax-service-set-up-environment-master-data-lookup.md
+                      href: localizations/tax-service-set-up-environment-master-data-lookup.md?toc=/dynamics365/finance/toc.json
             - name: Jogszabálykövetési frissítések
               href: localizations/regulatory-updates.md
             - name: Ausztrália
@@ -3139,7 +3157,7 @@
                 - name: A Human Resource megosztott paramétereinek konfigurálása
                   href: ../human-resources/hr-setup-shared-parameters.md?toc=/dynamics365/finance/toc.json
                 - name: Emberi erőforrásokkal kapcsolatos munkafolyamatok beállítása
-                  href: ../human-resources/hr-setup-workflows.md?toc=/dynamics365/finance/toc.json
+                  href: /dynamics365/finance/hr-workflow-manage-employee-information?toc=%2fdynamics365%2ffinance%2ftoc.json
                 - name: Dátum és Idő mezők ismertetése
                   href: ../human-resources/hr-setup-date-time-fields.md?toc=/dynamics365/finance/toc.json
             - name: Személyzet kezelése
@@ -3189,15 +3207,15 @@
                 - name: Toborzási folyamatok kezelése
                   href: ../fin-ops-core/fin-ops/hr/manage-recruiting-process.md
                 - name: Tömeges felvételi projektek
-                  href: ../fin-ops-core/fin-ops/hr/mass-hire-projects.md
+                  href: ../human-resources/hr-personnel-mass-hire-projects.md
                 - name: Tömeges felvételi projektek létrehozása
-                  href: ../fin-ops-core/fin-ops/hr/tasks/create-mass-hire-project.md
+                  href: ../human-resources/hr-personnel-create-mass-hire-project.md
                 - name: Pályázók és a pályázatok adatainak manuális megadása
                   href: ../fin-ops-core/fin-ops/hr/tasks/enter-applicant-application-data-manually.md
                 - name: Feladatigénylések kialakítása és megnyitása
                   href: ../fin-ops-core/fin-ops/hr/tasks/develop-open-job-requisition.md
                 - name: Beosztások beállítása
-                  href: ../fin-ops-core/fin-ops/hr/tasks/set-up-positions.md
+                  href: ../human-resources/hr-personnel-set-up-positions.md
                 - name: Jelöltek felvétele toborzás útján
                   href: ../fin-ops-core/fin-ops/hr/tasks/hire-candidate-through-recruiting.md
                 - name: Meglévő alkalmazottak felvétele toborzás útján
@@ -4052,7 +4070,7 @@
                 - name: Költségkontroll
                   href: cost-accounting/cost-controlling-mobile-workspace.md?toc=/dynamics365/finance/toc.json
                 - name: Költséggazdálkodás
-                  href: expense-management/expense-management-mobile-workspace.md?toc=/dynamics365/finance/toc.json
+                  href: /dynamics365/project-operations/prod-exp/expense-management-mobile-workspace?toc=%2fdynamics365%2ffinance%2ftoc.json
                 - name: Aktuális készlet
                   href: ../supply-chain/inventory/inventory-on-hand-mobile-workspace.md?toc=/dynamics365/finance/toc.json
                 - name: Számlajóváhagyások
@@ -4060,11 +4078,11 @@
                 - name: Saját csapat
                   href: ../fin-ops-core/dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?toc=/dynamics365/finance/toc.json
                 - name: Project-mobilalkalmazások áttekintése
-                  href: project-management/project-mobile-application-overview.md?toc=/dynamics365/finance/toc.json
+                  href: /dynamics365/project-operations/prod-pma/project-mobile-application-overview?toc=%2fdynamics365%2ffinance%2ftoc.json
                 - name: Projekt időbejegyzése
-                  href: project-management/project-time-entry-mobile-workspace.md?toc=/dynamics365/finance/toc.json
+                  href: /dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace?toc=%2fdynamics365%2ffinance%2ftoc.json
                 - name: Project Timesheet
-                  href: project-management/project-timesheet.md?toc=/dynamics365/finance/toc.json
+                  href: /dynamics365/project-operations/prod-pma/project-timesheet?toc=%2fdynamics365%2ffinance%2ftoc.json
                 - name: Beszerzési rendelés jóváhagyása
                   href: ../supply-chain/procurement/purchase-order-mobile-workspace.md?toc=/dynamics365/finance/toc.json
                 - name: Értékesítési rendelések

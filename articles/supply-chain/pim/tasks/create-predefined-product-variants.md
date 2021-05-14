@@ -1,74 +1,109 @@
 ---
 title: Az előre meghatározott termékváltozatok létrehozása
 description: Ez az eljárás bemutatja az alaptermék termékváltozatainak a termékdimenziók kombinációjának használatával történő létrehozását.
-author: ShylaThompson
-ms.date: 08/29/2018
+author: t-benebo
+manager: tfehr
+ms.date: 04/22/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: EcoResProductListPage, EcoResProductCreate, EcoResProductDetails, EcoResProductMasterDimension, EcoResProductVariants, EcoResProductVariantSuggestions, EcoResProductVariantsPendingReleaseFormPart
+ms.search.form: EcoResProductListPage, EcoResProductCreate, EcoResProductDetails, EcoResProductMasterDimension, EcoResProductVariants, EcoResProductVariantSuggestions, EcoResProductVariantsPendingReleaseFormPart, EcoResProductVariantSuggestionsEnhanced
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: benebotg
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8340d295ffd072c95d9b174507ef4203131c8165
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.dyn365.ops.version: 10.0.19
+ms.openlocfilehash: acd2e3f1464dfed09ee24764270b06970b747d7c
+ms.sourcegitcommit: cd9016e9787169cb800889d335b9c5919ddbe4af
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5809350"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "5938202"
 ---
-# <a name="create-predefined-product-variants"></a><span data-ttu-id="2bab4-103">Az előre meghatározott termékváltozatok létrehozása</span><span class="sxs-lookup"><span data-stu-id="2bab4-103">Create predefined product variants</span></span>
+# <a name="predefined-product-variants"></a><span data-ttu-id="ceb38-103">Előre meghatározott termékváltozatok</span><span class="sxs-lookup"><span data-stu-id="ceb38-103">Predefined product variants</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="2bab4-104">Ez az eljárás bemutatja az alaptermék termékváltozatainak a termékdimenziók kombinációjának használatával történő létrehozását.</span><span class="sxs-lookup"><span data-stu-id="2bab4-104">This procedure walks through creating product variants for a product master using the combinations of product dimensions.</span></span> <span data-ttu-id="2bab4-105">Ez az eljárás az USMF bemutatócéget használja.</span><span class="sxs-lookup"><span data-stu-id="2bab4-105">The demo company used to create this procedure is USMF.</span></span>
+## <a name="example-scenario-create-predefined-product-variants"></a><span data-ttu-id="ceb38-104">Példaforgatókönyv: Az előre meghatározott termékváltozatok létrehozása</span><span class="sxs-lookup"><span data-stu-id="ceb38-104">Example scenario: Create predefined product variants</span></span>
 
+<span data-ttu-id="ceb38-105">Ez az példaforgatókönyv bemutatja az alaptermék termékváltozatainak a termékdimenziók kombinációjának használatával történő létrehozását.</span><span class="sxs-lookup"><span data-stu-id="ceb38-105">This example scenario shows how to create product variants for a product master using a combinations of product dimensions.</span></span>
 
-## <a name="create-a-product-master"></a><span data-ttu-id="2bab4-106">Alaptermék létrehozása</span><span class="sxs-lookup"><span data-stu-id="2bab4-106">Create a product master</span></span>
-1. <span data-ttu-id="2bab4-107">Ugorjon a Termékinformációk kezelése > Termékek > Alaptermékek lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="2bab4-107">Go to Product information management > Products > Product masters.</span></span>
-2. <span data-ttu-id="2bab4-108">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="2bab4-108">Click New.</span></span>
-3. <span data-ttu-id="2bab4-109">Írjon be egy értéket a Termékszám mezőbe.</span><span class="sxs-lookup"><span data-stu-id="2bab4-109">In the Product number field, type a value.</span></span>
-    * <span data-ttu-id="2bab4-110">A termékszám manuálisan történő megadása csak akkor kötelező, ha nincs beállítva számsorozat a termék száma mezőre vonatkozóan.</span><span class="sxs-lookup"><span data-stu-id="2bab4-110">Entering a product number manually is only required if no number sequence has been set for the product number field.</span></span> <span data-ttu-id="2bab4-111">Másképpen fogalmazva, hagyja ki a lépést, ha a számsorozatot létrehozta a rendszer a mezőre vonatkozóan.</span><span class="sxs-lookup"><span data-stu-id="2bab4-111">In other words, skip the step if number sequence has been set for the field.</span></span>  
-4. <span data-ttu-id="2bab4-112">Írjon be egy értéket a Terméknév mezőbe.</span><span class="sxs-lookup"><span data-stu-id="2bab4-112">In the Product name field, type a value.</span></span>
-5. <span data-ttu-id="2bab4-113">A Termékdimenzió csoport mezőben adjon meg, vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="2bab4-113">In the Product dimension group field, enter or select a value.</span></span>
-    * <span data-ttu-id="2bab4-114">Válassza ki a SizeCol termékdimenzió-csoportot (Méret és Szín).</span><span class="sxs-lookup"><span data-stu-id="2bab4-114">Select the product dimension group SizeCol (Size and Color).</span></span>  
-6. <span data-ttu-id="2bab4-115">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="2bab4-115">Click OK.</span></span>
+### <a name="make-demo-data-available"></a><span data-ttu-id="ceb38-106">A bemutató adatok elérhetővé tétele</span><span class="sxs-lookup"><span data-stu-id="ceb38-106">Make demo data available</span></span>
 
-## <a name="add-product-dimensions"></a><span data-ttu-id="2bab4-116">Termékdimenziók hozzáadása</span><span class="sxs-lookup"><span data-stu-id="2bab4-116">Add product dimensions</span></span>
-1. <span data-ttu-id="2bab4-117">Kattintson a Termékdimenziók lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="2bab4-117">Click Product dimensions.</span></span>
-    * <span data-ttu-id="2bab4-118">Ez a példa bemutatja, hogy hogyan lehet manuálisan megadni a termékdimenziókat.</span><span class="sxs-lookup"><span data-stu-id="2bab4-118">This example shows how to manually enter product dimensions.</span></span> <span data-ttu-id="2bab4-119">Arra is lehetősége van, hogy kiválassza a méretet, a színt és a stíluscsoportot, amely a használni kívánt termékdimenzió értékeket tartalmazza.</span><span class="sxs-lookup"><span data-stu-id="2bab4-119">You can also choose to select a size, color or style group that includes the product dimension values you want to use.</span></span>  
-2. <span data-ttu-id="2bab4-120">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="2bab4-120">Click New.</span></span>
-3. <span data-ttu-id="2bab4-121">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="2bab4-121">In the list, mark the selected row.</span></span>
-4. <span data-ttu-id="2bab4-122">A Méret mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="2bab4-122">In the Size field, enter or select a value.</span></span>
-5. <span data-ttu-id="2bab4-123">Írjon be egy értéket a Név mezőbe.</span><span class="sxs-lookup"><span data-stu-id="2bab4-123">In the Name field, type a value.</span></span>
-6. <span data-ttu-id="2bab4-124">Kattintson az Új elemre.</span><span class="sxs-lookup"><span data-stu-id="2bab4-124">Click New.</span></span>
-7. <span data-ttu-id="2bab4-125">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="2bab4-125">In the list, mark the selected row.</span></span>
-8. <span data-ttu-id="2bab4-126">A Méret mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="2bab4-126">In the Size field, enter or select a value.</span></span>
-9. <span data-ttu-id="2bab4-127">Írjon be egy értéket a Név mezőbe.</span><span class="sxs-lookup"><span data-stu-id="2bab4-127">In the Name field, type a value.</span></span>
-10. <span data-ttu-id="2bab4-128">Kattintson a Színek fülre.</span><span class="sxs-lookup"><span data-stu-id="2bab4-128">Click the Colors tab.</span></span>
-11. <span data-ttu-id="2bab4-129">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="2bab4-129">Click New.</span></span>
-12. <span data-ttu-id="2bab4-130">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="2bab4-130">In the list, mark the selected row.</span></span>
-13. <span data-ttu-id="2bab4-131">A Szín mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="2bab4-131">In the Color field, enter or select a value.</span></span>
-14. <span data-ttu-id="2bab4-132">Írjon be egy értéket a Név mezőbe.</span><span class="sxs-lookup"><span data-stu-id="2bab4-132">In the Name field, type a value.</span></span>
-15. <span data-ttu-id="2bab4-133">Kattintson az Új elemre.</span><span class="sxs-lookup"><span data-stu-id="2bab4-133">Click New.</span></span>
-16. <span data-ttu-id="2bab4-134">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="2bab4-134">In the list, mark the selected row.</span></span>
-17. <span data-ttu-id="2bab4-135">A Szín mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="2bab4-135">In the Color field, enter or select a value.</span></span>
-18. <span data-ttu-id="2bab4-136">Írjon be egy értéket a Név mezőbe.</span><span class="sxs-lookup"><span data-stu-id="2bab4-136">In the Name field, type a value.</span></span>
-19. <span data-ttu-id="2bab4-137">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="2bab4-137">Click Save.</span></span>
-20. <span data-ttu-id="2bab4-138">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="2bab4-138">Close the page.</span></span>
+<span data-ttu-id="ceb38-107">A jelen forgatókönyv itt javasolt értékekkel való követéséhez a demóadatokat kell telepíteni, és az *USMF* demó jogi személyt kell használnia.</span><span class="sxs-lookup"><span data-stu-id="ceb38-107">To follow this scenario using the values suggested here, you must have demo data installed, and you must select the *USMF* legal entity.</span></span>
 
-## <a name="generate-product-variants"></a><span data-ttu-id="2bab4-139">Termékváltozatok létrehozása</span><span class="sxs-lookup"><span data-stu-id="2bab4-139">Generate product variants</span></span>
-1. <span data-ttu-id="2bab4-140">Kattintson a Termékváltozatok lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="2bab4-140">Click Product variants.</span></span>
-2. <span data-ttu-id="2bab4-141">Kattintson a Változatjavaslatok lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="2bab4-141">Click Variant suggestions.</span></span>
-3. <span data-ttu-id="2bab4-142">Kattintson a Minden kijelölése elemre.</span><span class="sxs-lookup"><span data-stu-id="2bab4-142">Click Select all.</span></span>
-    * <span data-ttu-id="2bab4-143">Az alábbi példában az összes lehetséges változat ki van választva.</span><span class="sxs-lookup"><span data-stu-id="2bab4-143">In this example, all possible variants are selected.</span></span> <span data-ttu-id="2bab4-144">Ha csak a lehetséges termék cikkdimenzió-kombinációk egy részét használja fel a rendszer a változatok létrehozásához, kiválaszthatja az egyes bejegyzéseket.</span><span class="sxs-lookup"><span data-stu-id="2bab4-144">If only a subset of the possible product dimension combinations will be used to create variants, you can select the individual entries.</span></span>  
-4. <span data-ttu-id="2bab4-145">Kattintson a Létrehozás lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="2bab4-145">Click Create.</span></span>
-    * <span data-ttu-id="2bab4-146">A termékdimenzió-értékek kombinációin alapuló összes változatra vonatkozóan létrehozhat leírásokat.</span><span class="sxs-lookup"><span data-stu-id="2bab4-146">You can generate descriptions for all your variants based on the combination of product dimension values.</span></span> <span data-ttu-id="2bab4-147">A Leírások nem kötelező jellegűek.</span><span class="sxs-lookup"><span data-stu-id="2bab4-147">The descriptions are optional.</span></span>  
-5. <span data-ttu-id="2bab4-148">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="2bab4-148">Click Save.</span></span>
+### <a name="step-1-create-a-product-master"></a><span data-ttu-id="ceb38-108">1. lépés: Alaptermék létrehozása</span><span class="sxs-lookup"><span data-stu-id="ceb38-108">Step 1: Create a product master</span></span>
 
+<span data-ttu-id="ceb38-109">Alaptermék létrehozásához:</span><span class="sxs-lookup"><span data-stu-id="ceb38-109">To create a product master:</span></span>
 
+1. <span data-ttu-id="ceb38-110">Ugorjon a **Termékinformációk kezelése > Termékek > Alaptermékek** lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="ceb38-110">Go to **Product information management > Products > Product masters**.</span></span>
+1. <span data-ttu-id="ceb38-111">Válassza az **Új** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="ceb38-111">Select **New**.</span></span>
+1. <span data-ttu-id="ceb38-112">Ha a **Termékszám** mezőben még nem létezik szám, adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="ceb38-112">If the **Product number** field doesn't already show a number, then enter a value.</span></span> <span data-ttu-id="ceb38-113">Ez csak akkor szükséges, ha nem lett számsorozat beállítva ehhez a mezőhöz.</span><span class="sxs-lookup"><span data-stu-id="ceb38-113">This is only required if no number sequence has been set for this field.</span></span>
+1. <span data-ttu-id="ceb38-114">A **Termék neve** mezőbe írjon be egy nevet.</span><span class="sxs-lookup"><span data-stu-id="ceb38-114">Enter a name in the **Product name** field.</span></span>
+1. <span data-ttu-id="ceb38-115">A **Termékdimenzió-csoport** mezőben válassza ki a *SizeCol* (Méret és Szín) termékdimenzió-csoportot.</span><span class="sxs-lookup"><span data-stu-id="ceb38-115">In the **Product dimension group** field, select the product dimension group *SizeCol* (Size and Color).</span></span>
+1. <span data-ttu-id="ceb38-116">Az új alaptermék létrehozásához és megnyitásához kattintson az **OK** gombra.</span><span class="sxs-lookup"><span data-stu-id="ceb38-116">Select **OK** to create and open the new product master.</span></span>
+
+### <a name="step-2-add-product-dimensions"></a><span data-ttu-id="ceb38-117">2. lépés: Termékdimenziók hozzáadása</span><span class="sxs-lookup"><span data-stu-id="ceb38-117">Step 2: Add product dimensions</span></span>
+
+<span data-ttu-id="ceb38-118">Ez a példa bemutatja, hogy hogyan lehet manuálisan megadni a termékdimenziókat.</span><span class="sxs-lookup"><span data-stu-id="ceb38-118">This example shows how to manually enter product dimensions.</span></span> <span data-ttu-id="ceb38-119">Arra is lehetősége van, hogy kiválassza a méretet, a színt és a stíluscsoportot, amely a használni kívánt termékdimenzió értékeket tartalmazza.</span><span class="sxs-lookup"><span data-stu-id="ceb38-119">You can also choose to select a size, color, or style group that includes the product dimension values you want to use.</span></span>
+
+<span data-ttu-id="ceb38-120">Termékdimenziók hozzáadásához:</span><span class="sxs-lookup"><span data-stu-id="ceb38-120">To add product dimensions:</span></span>
+
+1. <span data-ttu-id="ceb38-121">Ha az új alaptermék még nyitva marad, válassza ki a **Termékdimenziókat** a műveleti ablaktáblán.</span><span class="sxs-lookup"><span data-stu-id="ceb38-121">With your new product master still open, select **Product dimensions** on the Action Pane.</span></span>
+1. <span data-ttu-id="ceb38-122">Ha új sort szeretne felvenni a rácsba, nyissa meg a **Méret** lapot, és válassza az eszköztár **Új** gombját.</span><span class="sxs-lookup"><span data-stu-id="ceb38-122">Open the **Size** tab and select **New** on the toolbar to add a row to the grid.</span></span> <span data-ttu-id="ceb38-123">Az új sorhoz állítsa be a következőket:</span><span class="sxs-lookup"><span data-stu-id="ceb38-123">Make the following settings for the new row:</span></span>
+    - <span data-ttu-id="ceb38-124">**Méret:** Válasszon egy méretértéket.</span><span class="sxs-lookup"><span data-stu-id="ceb38-124">**Size:** Select a size value.</span></span>
+    - <span data-ttu-id="ceb38-125">**Név:** Adjon meg egy nevet a méretnek.</span><span class="sxs-lookup"><span data-stu-id="ceb38-125">**Name:** Enter a name for the size.</span></span>
+1. <span data-ttu-id="ceb38-126">Válassza az eszköztár **Új** gombját, és adjon hozzá egy második méretet a rácshoz egy új **Méret** és **Név** használatával.</span><span class="sxs-lookup"><span data-stu-id="ceb38-126">Select **New** on the toolbar and add a second size to the grid with a new **Size** and **Name**.</span></span>
+1. <span data-ttu-id="ceb38-127">Ha új sort szeretne felvenni a rácsba, nyissa meg a **Színek** lapot, és válassza az eszköztár **Új** gombját.</span><span class="sxs-lookup"><span data-stu-id="ceb38-127">Open the **Colors** tab and select **New** on the toolbar to add a row to the grid.</span></span> <span data-ttu-id="ceb38-128">Az új sorhoz állítsa be a következőket:</span><span class="sxs-lookup"><span data-stu-id="ceb38-128">Make the following settings for the new row:</span></span>
+    - <span data-ttu-id="ceb38-129">**Szín:** Válasszon egy színértéket.</span><span class="sxs-lookup"><span data-stu-id="ceb38-129">**Color:** Select a color value.</span></span>
+    - <span data-ttu-id="ceb38-130">**Név:** Adjon meg egy nevet a színnek.</span><span class="sxs-lookup"><span data-stu-id="ceb38-130">**Name:** Enter a name for the color.</span></span>
+1. <span data-ttu-id="ceb38-131">Válassza az eszköztár **Új** gombját, és adjon hozzá egy második színt a rácshoz egy új **Szín** és **Név** használatával.</span><span class="sxs-lookup"><span data-stu-id="ceb38-131">Select **New** on the toolbar and add a second color to the grid with a new **Color** and **Name**.</span></span>
+1. <span data-ttu-id="ceb38-132">Válassza a **Mentés** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="ceb38-132">Select **Save**.</span></span>
+1. <span data-ttu-id="ceb38-133">Az új alaptermékhez való visszatéréshez zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="ceb38-133">Close the page to return to your new product master.</span></span>
+
+### <a name="step-3-generate-product-variants"></a><span data-ttu-id="ceb38-134">3. lépés: Termékváltozatok létrehozása</span><span class="sxs-lookup"><span data-stu-id="ceb38-134">Step 3: Generate product variants</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="ceb38-135">Ez a szakasz azt írja le, hogyan lehet termékváltozatokat generálni, ha nincs engedélyezve a *Változatjavaslatok oldal javításai* funkció.</span><span class="sxs-lookup"><span data-stu-id="ceb38-135">This section describes how to generate product variants when the *Variant suggestions page improvements* feature isn't enabled.</span></span> <span data-ttu-id="ceb38-136">A következő szakaszban arról olvashat részletesen, hogy hogyan lehet termékváltozatokat generálni, ha ez a funkció elérhető.</span><span class="sxs-lookup"><span data-stu-id="ceb38-136">See the next section for details about how to generate product variants when that feature is available.</span></span>
+
+<span data-ttu-id="ceb38-137">Termékváltozatok létrehozásához:</span><span class="sxs-lookup"><span data-stu-id="ceb38-137">To generate product variants:</span></span>
+
+1. <span data-ttu-id="ceb38-138">Ha az új alaptermék még nyitva marad, válassza ki a **Termékváltozatokat** a műveleti ablaktáblán.</span><span class="sxs-lookup"><span data-stu-id="ceb38-138">With your new product master still open, select **Product variants** on the Action Pane.</span></span>
+1. <span data-ttu-id="ceb38-139">A Műveleti ablaktáblán válassza ki a **Változatjavaslatok** elemet.</span><span class="sxs-lookup"><span data-stu-id="ceb38-139">Select **Variant suggestions** on the Action Pane.</span></span>
+1. <span data-ttu-id="ceb38-140">A rendszer listát generál a termékhez megadott méretek és színek összes lehetséges kombinációjáról.</span><span class="sxs-lookup"><span data-stu-id="ceb38-140">The system generates a list with all possible combinations of the sizes and colors you defined for the product.</span></span> <span data-ttu-id="ceb38-141">Válassza at **Összes kijelölése** elemet az eszköztáron.</span><span class="sxs-lookup"><span data-stu-id="ceb38-141">Select **Select all** on the toolbar.</span></span>
+    - <span data-ttu-id="ceb38-142">Az alábbi példában válassza ki az összes lehetséges változatot.</span><span class="sxs-lookup"><span data-stu-id="ceb38-142">In this example, select all of the possible variants.</span></span> <span data-ttu-id="ceb38-143">Ha csak a lehetséges termékdimenzió-kombinációk egy részhalmazát szeretné használni, csak a szükséges jelölőnégyzeteket jelölje be.</span><span class="sxs-lookup"><span data-stu-id="ceb38-143">If you only want to use a subset of the possible product dimension combinations, select only the required check boxes as needed.</span></span>  
+1. <span data-ttu-id="ceb38-144">Válassza a **Létrehozása** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="ceb38-144">Select **Create**.</span></span>
+1. <span data-ttu-id="ceb38-145">Válassza a **Mentés** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="ceb38-145">Select **Save**.</span></span>
+
+## <a name="improved-variant-suggestions"></a><span data-ttu-id="ceb38-146">Továbbfejlesztett változatjavaslatok</span><span class="sxs-lookup"><span data-stu-id="ceb38-146">Improved variant suggestions</span></span>
+
+[!INCLUDE [preview-banner-section](../../../includes/preview-banner-section.md)]
+
+<span data-ttu-id="ceb38-147">A *Változatjavaslatok oldal javításai* funkció javítja a **Változatjavaslatok** oldalt, így reagálva az olyan vállalatok teljesítmény- és használhatósági problémáira, amelyek nagy számú termékdimenzió-kombinációt használnak.</span><span class="sxs-lookup"><span data-stu-id="ceb38-147">The *Variant suggestions page improvements* feature improves the **Variant suggestions** page to address performance and usability issues for companies that have a high number of product dimension combinations.</span></span> <span data-ttu-id="ceb38-148">Az olyan termékdimenzió-értékek kiválasztásának továbbfejlesztett folyamata, amelyekhez változatjavaslatokat kell létrehozni, felgyorsítja és megkönnyíti a termékváltozatok releváns halmazának beazonosítását és kiadását.</span><span class="sxs-lookup"><span data-stu-id="ceb38-148">The enhanced process for selecting the product dimension values for which to generate variant suggestions makes it faster and easier to identify and release the relevant set of product variants.</span></span>
+
+<span data-ttu-id="ceb38-149">Ez a funkció a következő fejlesztéseket biztosítja:</span><span class="sxs-lookup"><span data-stu-id="ceb38-149">The following improvements are added by this feature:</span></span>
+
+- <span data-ttu-id="ceb38-150">**Változatjavaslatok késleltetett létrehozása:** A **Változatjavaslatok** oldal már nem jelenít meg javaslatokat az első megnyitáskor.</span><span class="sxs-lookup"><span data-stu-id="ceb38-150">**Deferred generation of variant suggestions:** The **Variant suggestions** page no longer shows suggestions when you first open it.</span></span> <span data-ttu-id="ceb38-151">Ehelyett explicit módon ki kell választania, hogy milyen értékekre lesz szüksége, majd a kombinációk létrehozásához kattintson a **Javaslat** gombra.</span><span class="sxs-lookup"><span data-stu-id="ceb38-151">Instead, you must explicitly choose which values you will need and then select the **Suggest** button to generate the combinations.</span></span> <span data-ttu-id="ceb38-152">Így a folyamat láthatóvá és interaktívvá válik.</span><span class="sxs-lookup"><span data-stu-id="ceb38-152">This makes the process more visible and interactive.</span></span>
+- <span data-ttu-id="ceb38-153">**Dimenzióértékek kiválasztása**: Ha sok dimenzióértékkel rendelkezik, akkor általában csak néhányat tartalmazó változatjavaslatok létrehozása szükséges az Ön számára (például amikor új színeket vagy stílusokat vezet be).</span><span class="sxs-lookup"><span data-stu-id="ceb38-153">**Selection of dimensions values:** When you have many dimension values, you are typically interested in generating variant suggestions that include just a few of them (such as when introducing a new set of colors or styles).</span></span> <span data-ttu-id="ceb38-154">A továbbfejlesztett kialakítással kiválaszthatja azokat a dimenzióértékeket, amelyekhez termékváltozat-javaslatokat szeretne létrehozni.</span><span class="sxs-lookup"><span data-stu-id="ceb38-154">With the improved design, you can select the dimension values for which you want to generate product variant suggestions.</span></span> <span data-ttu-id="ceb38-155">Ez nagy mértékben növeli a javasolt változatok relevanciáját, és javítja a rendszer teljesítményét és a felhasználói hatékonyságot.</span><span class="sxs-lookup"><span data-stu-id="ceb38-155">This greatly increases the relevance of the suggested variants and improves both system performance and user productivity.</span></span>
+
+### <a name="turn-on-the-variant-suggestions-page-improvements-feature"></a><span data-ttu-id="ceb38-156">A Változatjavaslatok oldal javításai funkció bekapcsolása</span><span class="sxs-lookup"><span data-stu-id="ceb38-156">Turn on the Variant suggestions page improvements feature</span></span>
+
+<span data-ttu-id="ceb38-157">A *Változatjavaslatok oldal javításai* funkció használata előtt be kell kapcsolni azt a rendszerben.</span><span class="sxs-lookup"><span data-stu-id="ceb38-157">Before you can use *Variant suggestions page improvements* feature, it must be turned on in your system.</span></span> <span data-ttu-id="ceb38-158">A rendszergazdák használhatják a [funkciókezelési](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) beállításokat a funkció állapotának ellenőrzéséhez, és bekapcsolásához.</span><span class="sxs-lookup"><span data-stu-id="ceb38-158">Admins can use the [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on.</span></span> <span data-ttu-id="ceb38-159">A **Funkció kezelése** munkaterületen a funkció a következő módon van listázva:</span><span class="sxs-lookup"><span data-stu-id="ceb38-159">In the **Feature management** workspace, the feature is listed in the following way:</span></span>
+
+- <span data-ttu-id="ceb38-160">**Modul:** *Termékinformáció-kezelés*</span><span class="sxs-lookup"><span data-stu-id="ceb38-160">**Module:** *Product information management*</span></span>
+- <span data-ttu-id="ceb38-161">**Funkciónév:** *Változatjavaslatok oldal javításai*</span><span class="sxs-lookup"><span data-stu-id="ceb38-161">**Feature name:** *Variant suggestions page improvements*</span></span>
+
+### <a name="work-with-the-improved-variant-suggestions"></a><span data-ttu-id="ceb38-162">A továbbfejlesztett változatjavaslatok használata</span><span class="sxs-lookup"><span data-stu-id="ceb38-162">Work with the improved variant suggestions</span></span>
+
+<span data-ttu-id="ceb38-163">A termékváltozat-javaslatok létrehozásához, ha engedélyezve van a *Változatjavaslatok oldal javításai* funkció:</span><span class="sxs-lookup"><span data-stu-id="ceb38-163">To generate product variant suggestions when the *Variant suggestions page improvements* feature is enabled:</span></span>
+
+1. <span data-ttu-id="ceb38-164">Nyisson meg vagy hozzon létre egy alapterméket, és adja hozzá a szükséges termékdimenziókat az előző szakaszban leírtak szerint.</span><span class="sxs-lookup"><span data-stu-id="ceb38-164">Open or create a product master and add the required product dimensions to it, as described in the previous section.</span></span>
+1. <span data-ttu-id="ceb38-165">Ha az alaptermék még nyitva marad, válassza ki a **Termékváltozatokat** a műveleti ablaktáblán.</span><span class="sxs-lookup"><span data-stu-id="ceb38-165">With the product master open, select **Product variants** on the Action Pane.</span></span>
+1. <span data-ttu-id="ceb38-166">A Műveleti ablaktáblán válassza ki a **Változatjavaslatok** elemet.</span><span class="sxs-lookup"><span data-stu-id="ceb38-166">Select **Variant suggestions** on the Action Pane.</span></span>
+1. <span data-ttu-id="ceb38-167">Válassza ki a használni kívánt értékeket az egyes dimenziókhoz.</span><span class="sxs-lookup"><span data-stu-id="ceb38-167">Select the values that you want to use for each of the dimensions.</span></span>
+1. <span data-ttu-id="ceb38-168">A felső eszköztáron válassza a **Javaslat** elemet.</span><span class="sxs-lookup"><span data-stu-id="ceb38-168">On the top toolbar, select **Suggest**.</span></span>
+1. <span data-ttu-id="ceb38-169">A rendszer listát generál a kiválasztott méretek és színek összes lehetséges kombinációjáról.</span><span class="sxs-lookup"><span data-stu-id="ceb38-169">The system generates a list with all possible combinations of the sizes and colors you selected.</span></span> <span data-ttu-id="ceb38-170">Jelölje be a **Javasolt változatok** gyorstáblán a használni kívánt termékdimenzió-kombinációk jelölőnégyzetét, vagy válassza az **Összes kijelölése** elemet az eszköztáron az összes kiválasztásához.</span><span class="sxs-lookup"><span data-stu-id="ceb38-170">On the **Suggested variants** FastTab, select the check box for each product dimension combination that you want to use, or select **Select all** on the toolbar to select all of them.</span></span>  
+1. <span data-ttu-id="ceb38-171">Válassza a **Létrehozás** lehetőséget, ha a változatokat hozzá szeretne adni az aktuális alaptermékhez.</span><span class="sxs-lookup"><span data-stu-id="ceb38-171">Select **Create** to add the variants to the current product master.</span></span>
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,5 +1,5 @@
 - name: Dynamics 365 for Talent
-  href: talent-welcome.md
+  href: ./index.md
   items:
     - name: Első lépések
       items:
@@ -151,7 +151,7 @@
         - name: Adatok exportálása az Attract és Onboard modulból
           href: attract-onboard-export-data.md
         - name: Vászonalapú alkalmazások beágyazása a Power Apps szolgáltatásból
-          href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
+          href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json
         - name: Támogatás kérése a Talent alkalmazáshoz
           href: talent-support.md
     - name: Személyzet felvétele a szervezetéhez az Attract alkalmazással

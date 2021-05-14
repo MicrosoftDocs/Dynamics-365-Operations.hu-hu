@@ -66,18 +66,18 @@
                   href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/supply-chain/toc.json
             - name: Új vagy módosult elemek
               items:
-                - name: Új vagy módosult elemek a Finance and Operations alkalmazásokban
+                - name: Új vagy módosult elemek az Finance and Operations alkalmazásokban
                   href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/supply-chain/toc.json
                 - name: A Supply Chain Management kezelésének új vagy módosított adatai
                   items:
                     - name: Újdonságok és változások a Supply Chain Management kezdőlapján
                       href: get-started/whats-new-home-page.md
+                    - name: Supply Chain Management 10.0.19 (2021. július)
+                      href: get-started/whats-new-scm-10-0-19.md
                     - name: Supply Chain Management 10.0.18 (2021. május)
                       href: get-started/whats-new-scm-10-0-18.md
                     - name: Supply Chain Management 10.0.17 (2021. április)
                       href: get-started/whats-new-scm-10-0-17.md
-                    - name: Supply Chain Management 10.0.16 (2021. február)
-                      href: get-started/whats-new-scm-10-0-16.md
                 - name: Eltávolított vagy elavult funkciók
                   items:
                     - name: Eltávolított vagy elavult funkciók a kezdőlapon
@@ -164,6 +164,8 @@
                   href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Vászonalapú alkalmazások beágyazása a Power Apps szolgáltatásból
                   href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Harmadik fél alkalmazásainak beágyazása
+                  href: ../fin-ops-core/fin-ops/get-started/embed-website.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Információk megtalálása keresésekkel
                   href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Munkamenet dátumának módosítása
@@ -179,7 +181,7 @@
                 - name: Finance and OperationsAlkalmazások architektúrája
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Microsoft FastTrack
-                  href: 'https://docs.microsoft.com/dynamics365/fasttrack/'
+                  href: /dynamics365/fasttrack/
                 - name: Megvalósítási projekt előkészítése
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/onboard.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Környezet tervezése
@@ -206,6 +208,64 @@
           items:
             - name: Globalizációs erőforrások
               href: ../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Globalizációs szolgáltatások
+              items:
+                - name: Globalizációs szolgáltatások áttekintése
+                  href: ../finance/localizations/globalization-services-overview.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Regulatory Configuration Service
+                  items:
+                    - name: Regulatory Configuration Service áttekintése
+                      href: ../finance/localizations/rcs-overview.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Regulatory Configuration Service – Globalizációs jellemzők
+                      href: ../finance/localizations/rcs-globalization-feature.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: 'Hozzon létre ER-konfigurációkat a Regulatory Configuration Service szolgáltatásban, és töltse fel őket a globális adattárba'
+                      href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Elektronikus számlázás
+                  items:
+                    - name: Elektronikus számlázás áttekintése
+                      href: ../finance/localizations/e-invoicing-service-overview.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Elektronikus számlázás adminisztrációs összetevői
+                      href: ../finance/localizations/e-invoicing-service-administration.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Elektronikus számlázás konfigurálása a Regulatory Configuration Services (RCS) megoldásban
+                      href: ../finance/localizations/e-invoicing-configuration-rcs.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Elektronikus számlák kiállítása a Finance és a Supply Chain Management szolgáltatásban
+                      href: ../finance/localizations/e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Azure-tárfiók és Key Vault létrehozása
+                      href: ../finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Első lépések
+                      items:
+                        - name: Első lépések az elektronikus számlázási szolgáltatás adminisztrálása során
+                          href: ../finance/localizations/e-invoicing-get-started-service-administration.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Első lépések az elektronikus számlázás használata során
+                          href: ../finance/localizations/e-invoicing-get-started.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Első lépések a Brazíliára vonatkozó elektronikus számlázás használata során
+                          href: ../finance/localizations/e-invoicing-bra-get-started.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Első lépések az Egyiptomra vonatkozó elektronikus számlázás használata során
+                          href: ../finance/localizations/e-invoicing-eg-get-started.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Első lépések az Olaszországra vonatkozó elektronikus számlázás használata során
+                          href: ../finance/localizations/e-invoicing-ita-get-started.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Első lépések a Mexikóra vonatkozó elektronikus számlázás használata során
+                          href: ../finance/localizations/e-invoicing-mex-get-started.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Az elektronikus számlázás beállítása
+                          href: ../finance/localizations/e-invoicing-setup.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Elektronikus számlázás – GYIK
+                      href: ../finance/localizations/e-invoicing-faq.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Áfaszámítás
+                  items:
+                    - name: Adószámítás áttekintése
+                      href: ../finance/localizations/global-tax-calcuation-service-overview.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Az adószámítás első lépései
+                      href: ../finance/localizations/global-get-started-with-tax-calculation-service.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Adófunkció támogatása átmozgatási rendelésekhez
+                      href: ../finance/localizations/tasks/Tax-feature-support-for-transfer-order.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Adatmezők hozzáadása adókonfigurációkhoz
+                      href: ../finance/localizations/tax-service-add-data-fields-tax-configurations.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Adatmezők hozzáadása az adóintegrációhoz bővítmények használatával
+                      href: ../finance/localizations/tax-service-add-data-fields-tax-integration-by-extension.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Több adószám
+                      href: ../finance/localizations/emea-multiple-vat-registration-numbers.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Alapadat-keresés környezetének beállítása
+                      href: ../finance/localizations/tax-service-set-up-environment-master-data-lookup.md?toc=/dynamics365/supply-chain/toc.json
             - name: Jogszabálykövetési frissítések
               href: ../finance/localizations/regulatory-updates.md?toc=/dynamics365/supply-chain/toc.json
             - name: India
@@ -224,12 +284,18 @@
           items:
             - name: Felhőalapú és peremhálózat-léptékű egységek gyártási és raktárkezelési munkaterhelésekhez
               href: cloud-edge/cloud-edge-landing-page.md
+            - name: Peremhálózati skálázási egységek telepítése egyedi hardverre LBD segítségével
+              href: cloud-edge/cloud-edge-edge-scale-units-lbd.md
             - name: Gyártási végrehajtás munkaterhelései felhőalapú és peremhálózat-lépték szerinti egységekhez
               href: cloud-edge/cloud-edge-workload-manufacturing.md
             - name: Raktérkezelés munkaterhelései felhőalapú és peremhálózat-lépték szerinti egységekhez
               href: cloud-edge/cloud-edge-workload-warehousing.md
             - name: Raktári rendelések felhőalapú és peremhálózati skálázási egységekből
               href: cloud-edge/cloud-edge-warehouse-order.md
+            - name: Raktárkészlet helyesbítése
+              href: cloud-edge/cloud-edge-warehouse-inventory-adjustment.md
+            - name: Üzenetfeldolgozó üzenetei
+              href: cloud-edge/cloud-edge-message-processor-messages.md
         - name: Eszközkezelés
           items:
             - name: Eszközkezelés – áttekintés
@@ -1363,24 +1429,46 @@
                   href: inventory/tasks/set-up-item-arrival-overview-profile.md
             - name: Minőségkezelés
               items:
-                - name: Minőségkezelés áttekintése
-                  href: inventory/enable-quality-management.md
-                - name: Minőségkezelési folyamatok
+                - name: Minőség- és szabálytalanságkezelés áttekintése
                   href: inventory/quality-management-processes.md
-                - name: Raktári folyamatok minőségkezelése
-                  href: inventory/quality-management-for-warehouses-processes.md
-                - name: Szabálytalanság kezelése
-                  href: inventory/enable-nonconformance-management.md
-                - name: Kezelés feltételeinek beállítása
-                  href: inventory/tasks/set-up-prerequisites-nonconformance-management.md
-                - name: Szabálytalanság létrehozása és feldolgozása
-                  href: inventory/tasks/create-process-non-conformance.md
-                - name: Karanténutasítások
-                  href: inventory/quarantine-orders.md
-                - name: Minőségi rendelések beállítása
-                  href: inventory/tasks/set-up-quality-orders.md
+                - name: Minőség- és szabálytalanságkezelés engedélyezése és konfigurálása
+                  items:
+                    - name: Minőség- és szabálytalanságkezelés engedélyezése
+                      href: inventory/enable-quality-management.md
+                    - name: Minőségkezelési tesztműszerek
+                      href: inventory/quality-test-instruments.md
+                    - name: Minőségkezelési tesztek
+                      href: inventory/quality-tests.md
+                    - name: Minőségkezelési tesztváltozók
+                      href: inventory/quality-test-variables.md
+                    - name: Minőségkezelési tesztcsoportok
+                      href: inventory/quality-test-groups.md
+                    - name: Minőségkezelési cikkcsoportok
+                      href: inventory/quality-groups.md
+                    - name: Minőségkezelési cikkmintavétel
+                      href: inventory/quality-item-sampling.md
+                    - name: Minőségi társítások
+                      href: inventory/quality-associations.md
+                    - name: Szabálytalanságok jóváhagyásáért felelős dolgozók
+                      href: inventory/quality-responsible-workers.md
+                    - name: Szabálytalansági problématípusok
+                      href: inventory/quality-problem-types.md
+                    - name: Szabálytalansági karanténzónák
+                      href: inventory/quality-quarantine-zones.md
+                    - name: Szabálytalansági diagnosztikatípusok
+                      href: inventory/quality-diagnostic-types.md
+                    - name: Szabálytalansági műveletek
+                      href: inventory/quality-operations.md
+                    - name: Szabálytalansági művelet költségei
+                      href: inventory/quality-charges.md
+                - name: Minőségi rendelések használata
+                  href: inventory/quality-orders.md
                 - name: Áru minőségének ellenőrzése
                   href: inventory/tasks/inspect-quality-goods.md
+                - name: Szabálytalanság létrehozása és feldolgozása
+                  href: inventory/tasks/create-process-non-conformance.md
+                - name: Karanténutasítások használata
+                  href: inventory/quarantine-orders.md
                 - name: Készletzárolás
                   href: inventory/inventory-blocking.md
                 - name: Készletzárolás létrehozása és karbantartása
@@ -1511,8 +1599,8 @@
                   href: master-planning/planning-optimization/coverage-time-fence.md
                 - name: Tervezett rendelések jóváhagyása
                   href: master-planning/planning-optimization/approved-planned-order.md
-                - name: Automatikus megerősítés a tervezési optimalizálással
-                  href: master-planning/planning-optimization/planning-optimization-auto-firming.md
+                - name: Biztosra tervezett rendelések
+                  href: master-planning/planning-optimization/planned-order-firming.md
                 - name: Tervezés negatív tényleges készleten lévő mennyiségekkel
                   href: master-planning/planning-optimization/negative-on-hand.md
                 - name: Tervelőzmények és tervezési naplók megtekintése
@@ -1628,7 +1716,7 @@
                 - name: Költségkontroll
                   href: ../finance/cost-accounting/cost-controlling-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Költséggazdálkodás
-                  href: ../finance/expense-management/expense-management-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+                  href: /dynamics365/project-operations/prod-exp/expense-management-mobile-workspace?toc=%2fdynamics365%2fsupply-chain%2ftoc.json
                 - name: Aktuális készlet
                   href: inventory/inventory-on-hand-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Számlajóváhagyások
@@ -1636,11 +1724,11 @@
                 - name: Saját csapat
                   href: ../fin-ops-core/dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Project-mobilalkalmazások áttekintése
-                  href: ../finance/project-management/project-mobile-application-overview.md?toc=/dynamics365/supply-chain/toc.json
+                  href: /dynamics365/project-operations/prod-pma/project-mobile-application-overview?toc=%2fdynamics365%2fsupply-chain%2ftoc.json
                 - name: Projekt időbejegyzése
-                  href: ../finance/project-management/project-time-entry-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+                  href: /dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace?toc=%2fdynamics365%2fsupply-chain%2ftoc.json
                 - name: Project Timesheet
-                  href: ../finance/project-management/project-timesheet.md?toc=/dynamics365/supply-chain/toc.json
+                  href: /dynamics365/project-operations/prod-pma/project-timesheet?toc=%2fdynamics365%2fsupply-chain%2ftoc.json
                 - name: Beszerzési rendelés jóváhagyása
                   href: procurement/purchase-order-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Értékesítési rendelések
@@ -1657,7 +1745,7 @@
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/supply-chain/toc.json
             - name: Entitásadatok megnyitása Excelben és frissítésük az Excel-bővítmény segítségével
               href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Az Excel programban történő megnyitási élmények létrehozása
+            - name: Az Excel programban történő megnyitási gyakorlat létrehozása
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/supply-chain/toc.json
             - name: Sablonok hozzáadása a Sorok megnyitása az Excelben menühöz
               href: ../fin-ops-core/dev-itpro/user-interface/add-templates-open-lines-excel-menu.md?toc=/dynamics365/supply-chain/toc.json
@@ -1927,8 +2015,14 @@
                   href: procurement/vendor-onboarding.md
                 - name: A külső szállítókkal történő szállítói együttműködés
                   href: procurement/vendor-collaboration-work-external-vendors.md
+                - name: Szállítói minősítés karbantartása
+                  href: ../finance/public-sector/manage-vendor-certification.md
+                - name: Kategóriakérelmek szállítóktól
+                  href: procurement/category-requests-from-vendors.md
                 - name: Szállítói együttműködés a vevőkkel
                   href: procurement/vendor-collaboration-work-customers-dynamics-365-operations.md
+                - name: Szállító bankszámlaadatainak karbantartása
+                  href: ../finance/accounts-payable/maintain-vendor-bank-info.md
                 - name: Szállítói katalógusok importálása
                   href: procurement/vendor-catalogs-import.md
                 - name: Külső katalógus beállítása a PunchOut e-beszerzés számára
@@ -1979,6 +2073,8 @@
                   href: pim/tasks/create-product-master.md
                 - name: Az előre meghatározott termékváltozatok létrehozása
                   href: pim/tasks/create-predefined-product-variants.md
+                - name: Mértékegységek kezelése
+                  href: pim/tasks/manage-unit-measure.md
                 - name: Mértékegység-átváltás termékváltozatonként
                   href: pim/uom-conversion-per-product-variant.md
                 - name: Kiadott termék létrehozása egyetlen vállalat részére
@@ -2141,6 +2237,8 @@
               href: engineering-change-management/product-readiness.md
             - name: Kiadási termékszerkezet
               href: engineering-change-management/release-product-structure.md
+            - name: Tervezési változáskezeléssel kapcsolatos gyakran ismételt kérdések
+              href: engineering-change-management/change-management-faq.md
         - name: Gyártásvezérlés
           items:
             - name: Termelési folyamat áttekintése
@@ -2167,8 +2265,6 @@
                       href: production-control/phantom-items.md
                     - name: Darabjegyzék-számítások
                       href: cost-management/bom-calculations.md
-                    - name: Mértékegység kezelése
-                      href: pim/tasks/manage-unit-measure.md
                     - name: Termelési paraméterek a Gyártásvégrehajtásban
                       href: production-control/production-parameters-manufacturing-execution.md
                     - name: Üzemi erőforrások
@@ -2849,6 +2945,10 @@
               href: transportation/tasks/load-template.md
             - name: Díjazási profilok
               href: transportation/tasks/setup-a-rating-profile.md
+            - name: LTL osztályok
+              href: transportation/ltl-class.md
+            - name: NMFC-kódok
+              href: transportation/nmfc-codes.md
             - name: Szállítmányozói üzemanyag-mutató beállítása
               href: transportation/tasks/set-up-carrier-fuel-index.md
             - name: Szállítási ajánlat beállítása
@@ -2937,6 +3037,8 @@
                   href: warehousing/location-product-dimension-mixing.md
                 - name: Betárolási fürtök
                   href: warehousing/putaway-clusters.md
+                - name: Raktári folyamatok minőségkezelése
+                  href: inventory/quality-management-for-warehouses-processes.md
                 - name: Minőség-ellenőrzés
                   href: warehousing/quality-check.md
                 - name: Bejövő raktári műveletek – hibaelhárítás
@@ -3069,6 +3171,8 @@
                       href: warehousing/manage-warehouse-workers.md
                     - name: Raktári munka halasztott feldolgozása
                       href: warehousing/deferred-put.md
+                    - name: Manuális készletmozgási művelet halasztott feldolgozása
+                      href: warehousing/deferred-processing-manual-inventory-movement.md
                 - name: Áttárolás
                   items:
                     - name: Termelési rendelések áttárolása kiszállítási területekbe
@@ -3237,7 +3341,41 @@
               href: transportation/create-new-transportation-management-engine.md?toc=/dynamics365/supply-chain/toc.json
             - name: Készleten lévő tényleges adatentitások kiterjesztése
               href: inventory/extend-on-hand-entities.md
-    - name: Finance and Operations-alkalmazások fejlesztése és adminisztrációja
+        - name: Hibaelhárítás
+          items:
+            - name: Raktárkezelés
+              items:
+                - name: 'Nem erősítheti meg a szállítmányt, mert probléma adódott a naptárral'
+                  href: troubleshooting/warehousing/load-has-active-appo.md
+                - name: Nem erősítheti meg a szállítmányt hiányos vagy nem teljes munka miatt
+                  href: troubleshooting/warehousing/open-or-no-work-exis.md
+                - name: 'Nem erősítheti meg a szállítmányt, mert egyes cikkeket nem tároltak ki'
+                  href: troubleshooting/warehousing/picked-quantity-is-not-on-final.md
+                - name: 'Nem erősítheti meg a szállítmányt, mert a mennyiség nulla'
+                  href: troubleshooting/warehousing/picked-quantity-is-zero.md
+                - name: 'Nem erősíthető meg a szállítmány, mert a mennyiség meghaladja a túlszállítási százalékot'
+                  href: troubleshooting/warehousing/quantity-exceeds-ove.md
+                - name: 'Nem erősíthető meg a szállítmány, mert a mennyiség meghaladja az alulszállítási százalékot'
+                  href: troubleshooting/warehousing/quantity-exceeds-und.md
+                - name: Az utolsó lezárt munkasornak betárolásnak kell lennie
+                  href: troubleshooting/warehousing/the-last-closed-work.md
+                - name: A rakománysorok mennyiségi mezői nem felelnek meg a rakomány mennyiségi mezőinek
+                  href: troubleshooting/warehousing/the-weight-fields-on.md
+                - name: A hullám nem törölhető
+                  href: troubleshooting/warehousing/wave-is-not-eligible.md
+                - name: A súly csak pozitív érték lehet
+                  href: troubleshooting/warehousing/weight-must-be-posit.md
+                - name: 'A munka nem törölhető, mert zárolva van'
+                  href: troubleshooting/warehousing/work-cannot-be-canceled-blocked.md
+                - name: A munka nem törölhető az állapot miatt
+                  href: troubleshooting/warehousing/work-cannot-be-canceled-status.md
+                - name: A munka nincs zárolva
+                  href: troubleshooting/warehousing/work-is-not-blocked.md
+                - name: A munka zárolva marad
+                  href: troubleshooting/warehousing/work-remains-blocked.md
+                - name: Felhasználóhoz rendelt munkát nem lehet érvényteleníteni
+                  href: troubleshooting/warehousing/you-cannot-cancel-wo.md
+    - name: Finance and Operations alkalmazások fejlesztése és adminisztrációja
       href: ../fin-ops-core/dev-itpro/index.md
     - name: Dynamics 365 Finance
       href: ../finance/index.md

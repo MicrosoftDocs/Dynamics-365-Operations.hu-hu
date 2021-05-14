@@ -14,12 +14,12 @@
               items:
                 - name: Újdonságok és változások a Platformfrissítések kezdőlapján
                   href: get-started/whats-new-home-page.md
+                - name: Platformfrissítés a 10.0.19-es verzióhoz (2021. július)
+                  href: get-started/whats-new-platform-updates-10-0-19.md
                 - name: Platformfrissítések a 10.0.18-es verzióhoz (2021. május)
                   href: get-started/whats-new-platform-updates-10-0-18.md
                 - name: Platformfrissítések a 10.0.17-es verzióhoz (2021. április)
                   href: get-started/whats-new-platform-updates-10-0-17.md
-                - name: Platformfrissítések a 10.0.16-ös verzióhoz (2021. február)
-                  href: get-started/whats-new-platform-updates-10-0-16.md
             - name: Eltávolított vagy elavult funkciók
               items:
                 - name: Eltávolított vagy elavult funkciók a kezdőlapon
@@ -303,19 +303,19 @@
                         - name: Project Service Automation integráció konfigurálása
                           items:
                             - name: A Project Service Automation áttekintése
-                              href: ../../finance/project-management/PSA-integration.md
+                              href: /dynamics365/project-operations/prod-pma/PSA-integration
                             - name: Project Service Automation integráció paraméterei
-                              href: ../../finance/project-management/PSA-parameters.md
+                              href: /dynamics365/project-operations/prod-pma/PSA-parameters
                             - name: Projektszerződések és projektek szinkronizálása
-                              href: ../../finance/project-management/project-contracts-templates.md
+                              href: /dynamics365/project-operations/prod-pma/project-contracts-templates
                             - name: Projektfeladatok szinkronizálása
-                              href: ../../finance/project-management/project-tasks-template.md
+                              href: /dynamics365/project-operations/prod-pma/project-tasks-template
                             - name: Projektköltség-kategóriák szinkronizálása
-                              href: ../../finance/project-management/project-categories-templates.md
+                              href: /dynamics365/project-operations/prod-pma/project-categories-templates
                             - name: Projektbecslések szinkronizálása a projektelőrejelzésekkel
-                              href: ../../finance/project-management/project-estimates-templates.md
+                              href: /dynamics365/project-operations/prod-pma/project-estimates-templates
                             - name: A projekt tényleges adatainak szinkronizálása a projektintegrációs naplóval
-                              href: ../../finance/project-management/project-actuals-templates.md
+                              href: /dynamics365/project-operations/prod-pma/project-actuals-templates
             - name: Külső webszolgáltatások használata
               href: data-entities/consume-external-web-service.md
             - name: Elektronikus üzenetküldés
@@ -691,7 +691,7 @@
                     - name: Modellek és adatmodellelemek létrehozásának áttekintése
                       href: dev-tools/create-data-model-elements.md
                     - name: Bővítmények elnevezési irányelvei
-                      href: extensibility/NamingGuidelines.md
+                      href: /dynamics365/fin-ops-core/dev-itpro/naming-guidelines-extensions
                     - name: A modelltestreszabási és elavulási funkciók kikapcsolása
                       href: dev-tools/lock-models.md
                 - name: Testreszabás-elemzési jelentés
@@ -1072,8 +1072,6 @@
                   href: lifecycle-services/getting-started-lcs.md
                 - name: Új vagy módosult elemek a Lifecycle Services szolgáltatásban
                   href: lifecycle-services/whats-new-lcs.md
-                - name: Ismert problémák
-                  href: lifecycle-services/known-issues.md
                 - name: A Lifecycle Services (LCS) szolgáltatás eltávolított vagy elavult funkciói
                   href: lifecycle-services/removed-deprecated-features.md
             - name: Lifecycle Services használati útmutató
@@ -1400,12 +1398,16 @@
               href: perf-test/rsat/rsat-install-configure.md
             - name: A Regression Suite Automation Tool használata
               href: perf-test/rsat/rsat-run.md
+            - name: Tesztesetek karbantartása a Regression Suite Automation Tool eszközben
+              href: perf-test/rsat/rsat-maintain-test-cases.md
             - name: Várható értékek ellenőrzése
               href: perf-test/rsat/rsat-validate-expected.md
             - name: Láncszerű tesztesetek
               href: perf-test/rsat/rsat-chain-test-cases.md
             - name: Származtatott tesztesetek
               href: perf-test/rsat/rsat-derived-test-cases.md
+            - name: Paraméterfájlok frissítése
+              href: perf-test/rsat/rsat-upgrade-parameter-files.md
             - name: Regression Suite Automation Tool-oktatóanyag
               href: perf-test/rsat/rsat-tutorial.md
             - name: Nem rendszergazda felhasználók konfigurálása
@@ -1582,6 +1584,8 @@
                   href: migration-upgrade/prepare-data-upgrade.md
                 - name: AX 2012 frissítés – Adatfrissítés tesztkörnyezetekben a DACPAC-folyamat használatával
                   href: migration-upgrade/upgrade-data-sandbox-dacpac.md
+                - name: Frissítés AX 2012 megoldásról – SQL tranzakciós replikáció
+                  href: database/replication-setup.md
                 - name: AX 2012 frissítés – Adatfrissítés tesztkörnyezetekben
                   href: migration-upgrade/upgrade-data-sandbox.md
                 - name: AX 2012 frissítés – Helyszíni környezetek
