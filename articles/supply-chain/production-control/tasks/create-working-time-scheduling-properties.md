@@ -14,12 +14,12 @@ ms.search.industry: Manufacturing
 ms.author: sorenand
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1f7e412b7365901e18f476758aa3c5d43de590b2
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: f8489cc8eac8013041d4c138930feab57e43b81d
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811606"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5920905"
 ---
 # <a name="create-working-time-scheduling-properties"></a>Munkaidő-ütemezési tulajdonságok létrehozása
 
@@ -27,19 +27,21 @@ ms.locfileid: "5811606"
 
 A munkaidő-ütemezési tulajdonságok segítségével munkaidő-intervallumok kategorizálhatók, és meghatározhatók a beállítások, melyeket a kezelőknek figyelembe kell venniük. Ez az eljárás bemutatja, hogyan lehet meghatározni egy munkaidő-ütemezési tulajdonságot és további kapcsolódó értékeket. Ezt a folyamatot az USMF bemutatócégen vagy saját adata használatával is elvégezheti.
 
-1. Ugrás az összes munkaterületek > Erőforrás életciklusa kezelése elemre.
-2. Kattintson a Tulajdonságok menüpontra.
+1. Ugorjon a **Munkaterületek \> Erőforrás életciklusa kezelése** elemre.
+2. **Tulajdonságok** kiválasztása.
 
 ## <a name="create-property"></a>Tulajdonság létrehozása
-1. Kattintson az Új lehetőségre.
-2. Érték beírása a Tulajdonság mezőbe
-3. Írjon be egy értéket a Név mezőbe.
+
+1. Válassza az **Új** lehetőséget.
+2. Érték beírása a **Tulajdonság** mezőbe.
+3. Írjon be egy értéket a **Név** mezőbe.
 
 ## <a name="create-property-values"></a>Tulajdonságértékek létrehozása
+
 1. A listában jelölje meg a kiválasztott sort.
-2. Írjon be egy értéket a Név mezőbe.
-3. Érték beírása az Érték mezőbe.
-4. Kattintson a Mentés gombra.
+2. Írjon be egy értéket a **Név** mezőbe.
+3. Érték beírása az **Érték** mezőbe.
+4. Válassza a **Mentés** lehetőséget.
 
 
 

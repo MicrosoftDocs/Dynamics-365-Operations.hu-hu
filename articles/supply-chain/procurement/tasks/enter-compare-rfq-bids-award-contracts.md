@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9e7abe133c4d2c7a515c75709bd5616c83ebbcc6
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d0acff4165ef4d61fb0d14a8f365273ea43fac7d
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811990"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5920581"
 ---
 # <a name="enter-and-compare-rfq-bids-and-award-contracts"></a>Adja meg és hasonlítsa össze az Ajánlatkérés ajánlatait, és rendeljen hozzá szerződéseket
 
@@ -32,7 +32,7 @@ Az ajánlatot szállítóként vagy beszerzési szakemberként is beviheti. Tov�
 
 ## <a name="enter-a-reply-as-a-vendor"></a>Válasz megadása szállítóként
 
-1. Az irányítópulton válassza a **Szállítói ajánlattétel** lehetőséget.
+1. Menjen a **Szállítói együttműködés \> Munkaterületek \> Szállítói ajánlattétel** lehetőségre.
 2. Az **Új ajánlati felhívások** listán keressen egy olyan ajánlatkérés, amely éppen el lett küldve. Válassza ki azt a ajánlatkérést, amelyben át szeretné tekinteni a kért elemeket.
 3. Válassza ki az **Ajánlatkérés mellékletei** elemet a hozzáadott mellékletek áttekintéséhez.
 4. Válassza ki az **Ajánlat** elemet, hogy szerkeszthetővé tegye a mezőket. Figyelje meg, hogy az **Ajánlati folyamat** mező értéke **A szállító frissítést végez**.

@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: Version 10.0.7
-ms.openlocfilehash: 8a809b81504fdc31d8f9e0529048269dd7e0c5cc
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: b680ec227ecd70893999950a8be2ad152c476575
+ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5800447"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5937012"
 ---
 # <a name="clienteling-overview"></a>Ügyfélkör áttekintése
 
@@ -60,7 +60,7 @@ Az értékesítési munkatársak a megjegyzések segítségével olyan általán
 
 ## <a name="integration-with-dynamics-365-customer-insights"></a>Integráció a Dynamics 365 Customer Insights rendszerrel
 
-A Dynamics 365 Customer Insights alkalmazás használatával a kiskereskedők összesíthetik a különböző olyan rendszerek adatait, amellyel a vevők kapcsolatot tartanak a kiskereskedő márkájával. Ezt követően ezeket az adatokat használva egyetlen nézetet hozhatnak létre a vevőhöz, és statisztikákat hozhatnak létre. A Customer Insights és a Commerce integrációjával a kiskereskedők kiválaszthatnak olyan intézkedéseket, amelyeket meg kell jeleníteni az ügyfélkönyvben lévő vevői kártyán. A kiskereskedők például a Customer Insights adatai alapján kiszámítják a vevő „lemorzsolódásának valószínűségét”, és meghatározhatják a „következő legjobb műveletet”. Ha ezeket az értékeket intézkedésként definiálják, akkor a vevői kártyán is megjelenhetnek, és fontos információként szolgálhatnak az értékesítési munkatársak számára. A Customer Insights rendszerről a [Dynamics 365 Customer Insights](https://docs.microsoft.com/dynamics365/ai/customer-insights/overview) dokumentációjában található további információ. További információ az intézkedésekről: [Intézkedések](https://docs.microsoft.com/dynamics365/ai/customer-insights/pm-measures).
+A Dynamics 365 Customer Insights alkalmazás használatával a kiskereskedők összesíthetik a különböző olyan rendszerek adatait, amellyel a vevők kapcsolatot tartanak a kiskereskedő márkájával. Ezt követően ezeket az adatokat használva egyetlen nézetet hozhatnak létre a vevőhöz, és statisztikákat hozhatnak létre. A Customer Insights és a Commerce integrációjával a kiskereskedők kiválaszthatnak olyan intézkedéseket, amelyeket meg kell jeleníteni az ügyfélkönyvben lévő vevői kártyán. A kiskereskedők például a Customer Insights adatai alapján kiszámítják a vevő „lemorzsolódásának valószínűségét”, és meghatározhatják a „következő legjobb műveletet”. Ha ezeket az értékeket intézkedésként definiálják, akkor a vevői kártyán is megjelenhetnek, és fontos információként szolgálhatnak az értékesítési munkatársak számára. A Customer Insights rendszerről a [Dynamics 365 Customer Insights](/dynamics365/ai/customer-insights/overview) dokumentációjában található további információ. További információ az intézkedésekről: [Intézkedések](/dynamics365/ai/customer-insights/pm-measures).
 
 ## <a name="set-up-clienteling"></a>Az ügyfélkör beállítása
 
@@ -73,7 +73,7 @@ Ha be szeretné kapcsolni az Ügyfélkör funkciót, hajtsa végre az alábbi l�
 2. Kapcsolja be az **Ügyfélkör** funkciót az **Engedélyezés most** lehetőséggel.
 3. A **Kereskedelmi paraméterek** oldal **Számsorozat** lapján válassza ki az **Ügyfélkönyv azonosítója** sort. A **Számsorozat kódja** mezőben válasszon ki egy számsorozatot. A rendszer ezt a számsorozatot fogja használni az ügyfélkönyvekhez tartozó azonosítók hozzárendeléséhez.
 4. Válassza a **Mentés** lehetőséget.
-5. Hozzon létre egy olyan új attribútumcsoportot, amely tartalmazza azokat az attribútumokat, amelyeket rögzíteni szeretne az ügyfélkönyvekben kezelt vevőkhöz. Utasítások: [Attribútumok és attribútumcsoportok](https://docs.microsoft.com/dynamics365/retail/attribute-attributegroups-lifecycle).
+5. Hozzon létre egy olyan új attribútumcsoportot, amely tartalmazza azokat az attribútumokat, amelyeket rögzíteni szeretne az ügyfélkönyvekben kezelt vevőkhöz. Utasítások: [Attribútumok és attribútumcsoportok](./attribute-attributegroups-lifecycle.md).
 
     - A szükséges attribútumokat **Szűkíthetőként** definiálja. Az értékesítési munkatársak ezután ezekkel az attribútumokkal szűrhetik az ügyfélkönyvüket.
     - Állítsa be a megjelenítési sorrendet ezekhez az attribútumokhoz. Ez a megjelenítési sorrend határozza meg, hogy melyik attribútumok jelenjenek meg az ügyfélkönyv vevői kártyáján. Az 1. helyen lévő elem magasabb, mint a 2. helyen lévő. Ennek megfelelően az 1. megjelenítési helyen lévő attribútum előbb megjelenik, mint a 2. helyen lévő.
@@ -103,18 +103,18 @@ Ha be szeretné kapcsolni a Customer Insights és a Commerce integrációját, a
 
 Az integráció beállításához hajtsa végre az alábbi lépéseket.
 
-1. Az Azure-portálon regisztrálhat egy új alkalmazást és feljegyezheti az alkalmazás nevét, az alkalmazásazonosítót és a titkos kódot. Ezeket az adatokat a Commerce és a Customer Insights között történő, szolgáltatások közti hitelesítésre használjuk. Jegyezze meg a titkos kódot, mivel szüksége lesz rá a kulcstárolóba történő mentéséhez. A következő példában használja a CI_Access_name, CI_Access_AppID, CI_Access_Secret megoldást az alkalmazás neve, az alkalmazásazonosító és a titkos kód megjelölésére. További tudnivalók: [Rövid útmutató: Alkalmazások regisztrálása a Microsoft Identity platformmal](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
+1. Az Azure-portálon regisztrálhat egy új alkalmazást és feljegyezheti az alkalmazás nevét, az alkalmazásazonosítót és a titkos kódot. Ezeket az adatokat a Commerce és a Customer Insights között történő, szolgáltatások közti hitelesítésre használjuk. Jegyezze meg a titkos kódot, mivel szüksége lesz rá a kulcstárolóba történő mentéséhez. A következő példában használja a CI_Access_name, CI_Access_AppID, CI_Access_Secret megoldást az alkalmazás neve, az alkalmazásazonosító és a titkos kód megjelölésére. További tudnivalók: [Rövid útmutató: Alkalmazások regisztrálása a Microsoft Identity platformmal](/azure/active-directory/develop/quickstart-register-app).
 
     > [!IMPORTANT]
     > Ügyeljen rá, hogy a lejárat előtt módosítani kell a titkos kulcsot, ellenkező esetben az integráció váratlanul megszűnik.
 
 2. Lépjen a Customer Insights-példányára, és keresse meg a fent létrehozott alkalmazás nevét (ebben a példában: CI_Access_name).
-3. Hozzon létre egy Azure-kulcstárolót, és jegyezze fel a nevet és az URL-címet (ebben a példában: KeyVaultName, KeyVaultURL). Lépések: [Rövid útmutató: Titkos kulcs beállítása és lekérése az Azure Key Vault tárolóból az Azure-portál használatával](https://docs.microsoft.com/azure/key-vault/quick-create-portal).
+3. Hozzon létre egy Azure-kulcstárolót, és jegyezze fel a nevet és az URL-címet (ebben a példában: KeyVaultName, KeyVaultURL). Lépések: [Rövid útmutató: Titkos kulcs beállítása és lekérése az Azure Key Vault tárolóból az Azure-portál használatával](/azure/key-vault/quick-create-portal).
 4. Mentse a titkos kódot (ebben a példában: CI_Access_Secret) a kulcstárolóban. Amikor ezt a titkos kódot a kulcstárolóban menti, a titkos kód kap egy nevet. Jegyezze fel a titkos kód nevét (ebben a példában: SecretName).
 5. Ahhoz, hogy hozzáférjen az Azure Key Vault alkalmazásban lévő titkos kódhoz, egy alkalmazásazonosítóval és titkos kóddal egy másik alkalmazást kell létrehoznia (ebben a példában: KeyVault_Access_AppID és KeyVault_Access_Secret). Jegyezze fel biztonságos módon a titkos kódot, mivel az nem jelenik meg újra.
 6. Ezután engedélyeket kell rendelnie az alkalmazáshoz ahhoz, hogy hozzá tudjon férni a Commerce rendszerbeli Key Vault alkalmazáshoz API-k használatával. Az Azure portálon lépjen az alkalmazás oldalára. A **Kezelés** szakaszban válassza ki az **API-engedélyek** lehetőséget. Adja hozzá az engedélyt az **Azure-kulcstárolóhoz** való hozzáféréshez. Ehhez az engedélyhez válassza ki a **Hozzáférési szabályzat** lehetőséget. Válassza ki a sablont **Titkos kód kezelése** formában, majd válassza a **Beolvasás**, a **Lista**, a **Visszafejtés** és a **Titkosítás** lehetőséget. 
 5. A Commerce központi felületén lépjen a **Rendszerfelügyelet \> Beállítás \> Kulcstároló paraméterei** részre, és adja meg a szükséges adatokat a kulcstárolóhoz. Ezt követően a **Kulcstárolókliens** mezőbe írja be a 4. lépésben használt alkalmazásazonosítót, hogy a Commerce hozzáférjen a kulcstárolóban lévő titkos kulcshoz.
-6. Ha hozzá szeretné adni az 1. lépésben létrehozott alkalmazást a biztonságos alkalmazások listájához, nyissa meg a Customer Insights szolgáltatást, és válassza **Megtekintés** típusú hozzáférést az alkalmazáshoz. További tájékoztatás: [Engedélyek](https://docs.microsoft.com/dynamics365/ai/customer-insights/pm-permissions).
+6. Ha hozzá szeretné adni az 1. lépésben létrehozott alkalmazást a biztonságos alkalmazások listájához, nyissa meg a Customer Insights szolgáltatást, és válassza **Megtekintés** típusú hozzáférést az alkalmazáshoz. További tájékoztatás: [Engedélyek](/dynamics365/ai/customer-insights/pm-permissions).
 7. A Commerce központi felületének **Rendszerfelügyelet > Beállítás > Key Vault-paraméterek** oldalán frissítse a mezőket az alábbi leírásnak megfelelő módon: 
 
 - **Key Vault URL**: "KeyVaultURL" (a fenti 3. lépéstől).

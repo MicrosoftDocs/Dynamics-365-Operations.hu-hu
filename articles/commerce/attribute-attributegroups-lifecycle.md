@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application pdate 5, AX 8.0
-ms.openlocfilehash: 9d1d511fa83655dfcb383bdf2c1da84eb4e0ed3e
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a49a0d05a55e72b5dae17933d38d03287a01d5ee
+ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797257"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5936804"
 ---
 # <a name="manage-attributes-and-attribute-groups"></a>Attribútumok és attribútumcsoportok kezelése
 
@@ -101,7 +101,7 @@ Az alábbiak a további attribútummetaadat-beállítások az **Attribútumok** 
 
 Ezek a beállítások eredetileg az online kirakat keresési funkciójának javítására szolgáltak. Bár a Commerce nem tartalmazza az online kirakatot alapértelmezetten, része az eCommerce Publishing szoftverfejlesztői készlet (SDK). Felhasználók használhatják az SDK-t termékek elhelyezésére tetszés szerinti keresési indexben. Annak ellenére, hogy a termékadatokat importálják, a vevőknek továbbra is meg kell tudniuk különböztetni a kereshető adatokat, a lekérdezhető adatokat és így tovább. Így össze lehet állítani egy optimális indexet annak a biztosítására, hogy csak azok az attribútumok lesznek indexelve, amelyeket *véleményük szerint* indexelni kell.
 
-A fennmaradó lehetőségek céljával kapcsolatos további tudnivalókat lásd: [A SharePoint Server 2013 keresési sémájának áttekintése](https://technet.microsoft.com/library/jj219669.aspx).
+A fennmaradó lehetőségek céljával kapcsolatos további tudnivalókat lásd: [A SharePoint Server 2013 keresési sémájának áttekintése](/SharePoint/search/search-schema-overview).
 
 ## <a name="filter-settings-for-attributes"></a>Attribútumok szűrési beállításai
 

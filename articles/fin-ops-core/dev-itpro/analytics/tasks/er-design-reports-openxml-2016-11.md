@@ -2,7 +2,7 @@
 title: ER – Az OPENXML formátumban létrejövő jelentésekre vonatkozó konfigurációk tervezése (2016. november)
 description: Ez a témakör azt ismerteti, hogyan lehet létrehozni egy olyan új Elektronikus jelentéskészítési konfigurációt, amely egy sablont tartalmaz az elektronikus dokumentumok OPENXML-formátumú előállításához.
 author: NickSelin
-ms.date: 08/12/2019
+ms.date: 04/23/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e2f84621028c36cf79d6fb9ab07707bdb970d97e
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 0f23748f6f1d2c3045b1dc69d8e46821f67da593
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754986"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944268"
 ---
 # <a name="er-design-a-configuration-for-generating-reports-in-openxml-format-november-2016"></a>ER – Az OPENXML formátumban létrejövő jelentésekre vonatkozó konfigurációk tervezése (2016. november)
 
@@ -28,7 +28,7 @@ Ez a témakör leírja, hogy a Rendszergazda vagy Elektronikus jelentések fejle
 
 Ebben a példában a mintavállalatra, Litware-ra, Inc.-ra vonatkozóan létrehoz egy konfigurációs szolgáltatót. Ezeket a lépéseket a GBSI vállalatban hajthatja végre.
 
-Hajtsa végre az alábbi lépéseket: először hajtsa végre a „Konfigurációszolgáltató létrehozása és aktívként történő megjelölése” eljárás lépéseit. Egy Excel-fájllal is rendelkeznie kell, amelyet importálni kell a sablon létrehozásakor. Ez a fájl a [Kifizetési jelentés sablonja](https://go.microsoft.com/fwlink/?linkid=862266) dokumentumból érhető el.
+Hajtsa végre az alábbi lépéseket: először hajtsa végre a „Konfigurációszolgáltató létrehozása és aktívként történő megjelölése” eljárás lépéseit. Egy Excel-fájllal is rendelkeznie kell, amelyet importálni kell a sablon létrehozásakor. Ez a fájl a [Kifizetési jelentés sablonja](https://download.microsoft.com/download/3/f/0/3f0658b2-042c-43cf-a776-0f4c7f7cfe4e/SampleVendPaymWsReport.xlsx) dokumentumból érhető el.
 
 
 ## <a name="upload-the-payments-data-model-configuration"></a>A Fizetési adatmodell-konfiguráció feltöltése

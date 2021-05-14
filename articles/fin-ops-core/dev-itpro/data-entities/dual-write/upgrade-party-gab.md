@@ -10,12 +10,12 @@ ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-31
-ms.openlocfilehash: 76e64d483e833782733277a64d8dc37cbeba6130
-ms.sourcegitcommit: 011468a6cffea8641bebc2922e0676d9f44b36fc
+ms.openlocfilehash: 32128d48bfac195530d70b60e67cfd4921fc001e
+ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "5857370"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "5941083"
 ---
 # <a name="upgrade-to-the-party-and-global-address-book-model"></a>Frissítés a fél és globális címjegyzék modelljére
 
@@ -52,11 +52,11 @@ Ezek az előfeltételek kötelezők:
 
 2. Jelentkezzen be ide: [Microsoft Azure](https://portal.azure.com/).
 
-3. Hozzon létre egy [erőforráscsoportot](https://docs.microsoft.com/azure/azure-resource-manager/management/manage-resource-groups-portal).
+3. Hozzon létre egy [erőforráscsoportot](/azure/azure-resource-manager/management/manage-resource-groups-portal).
 
-4. Hozzon létre egy [tárolási fiókot](https://docs.microsoft.com/azure/storage/common/storage-account-create?tabs=azure-portal) a létrehozott erőforráscsoportban.
+4. Hozzon létre egy [tárolási fiókot](/azure/storage/common/storage-account-create?tabs=azure-portal) a létrehozott erőforráscsoportban.
 
-5. Hozzon létre egy [adat-előállítót](https://docs.microsoft.com/azure/data-factory/quickstart-create-data-factory-portal) a fent létrehozott erőforráscsoportban.
+5. Hozzon létre egy [adat-előállítót](/azure/data-factory/quickstart-create-data-factory-portal) a fent létrehozott erőforráscsoportban.
 
 6. Nyissa meg az adat-előállítót, és válassza a **Szerző & Monitor** csempét.
 
@@ -81,7 +81,7 @@ Ezek az előfeltételek kötelezők:
     FO összekapcsolt Service_properties_type Properties_service Principal Id | Az alkalmazás ügyfélazonosítójának megadása.
     Dynamics Crm csatolt Service_properties_type Properties_username | A Dynamics-csatlakozáshoz használt felhasználónév.
 
-    A további tudnivalókat lásd: [Erőforrás-kezelő sablon manuális promóciója az egyes környezetek számára](https://docs.microsoft.com/azure/data-factory/continuous-integration-deployment#manually-promote-a-resource-manager-template-for-each-environment), a [Kapcsolt szolgáltatás tulajdonságai](https://docs.microsoft.com/azure/data-factory/connector-dynamics-ax#linked-service-properties), valamint [Adatok másolása az Azure Data Factory segítségével](https://docs.microsoft.com/azure/data-factory/connector-dynamics-crm-office-365#dynamics-365-and-dynamics-crm-online)
+    A további tudnivalókat lásd: [Erőforrás-kezelő sablon manuális promóciója az egyes környezetek számára](/azure/data-factory/continuous-integration-deployment#manually-promote-a-resource-manager-template-for-each-environment), a [Kapcsolt szolgáltatás tulajdonságai](/azure/data-factory/connector-dynamics-ax#linked-service-properties), valamint [Adatok másolása az Azure Data Factory segítségével](/azure/data-factory/connector-dynamics-crm-office-365#dynamics-365-and-dynamics-crm-online)
 
 10. A telepítést követően ellenőrizze az adattárat, az adatáramlást és az adat-előállító kapcsolt szolgáltatását.
 
@@ -158,7 +158,7 @@ Ezek az előfeltételek kötelezők:
 8. Importálja az új **Partner** rekordjait az Finance and Operations alkalmazásból.
 
     + Töltse le a `FONewParty.csv` fájlt az Azure blobtárolóból. Elérési út a következő: `partybootstrapping/output/FONewParty.csv`.
-    + Konvertálja a `FONewParty.csv` fájlt Excel-fájlba és az Excel-fájlt importálja az Finance and Operations alkalmazásba.  Ha a csv import megfelelő, akkor közvetlenül importálhatja a csv fájlt. Az importálás az adatmennyiségtől függően néhány óráig is igénybe vehet. A további tudnivalókat lásd: [Adatimportálási és -exportálási feladatok áttekintése](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-import-export-job).
+    + Konvertálja a `FONewParty.csv` fájlt Excel-fájlba és az Excel-fájlt importálja az Finance and Operations alkalmazásba.  Ha a csv import megfelelő, akkor közvetlenül importálhatja a csv fájlt. Az importálás az adatmennyiségtől függően néhány óráig is igénybe vehet. A további tudnivalókat lásd: [Adatimportálási és -exportálási feladatok áttekintése](../data-import-export-job.md).
 
     ![A Datavers fél rekordjainak importálása](media/data-factory-import-party.png)
 

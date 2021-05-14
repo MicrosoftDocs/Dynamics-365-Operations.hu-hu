@@ -2,7 +2,7 @@
 title: Adatimportálási és -exportálási feladatok áttekintése
 description: Az Adatezelése munkaterület segítségével hozhatja létre és kezelheti az adatimportálási és -exportálási feladatokat.
 author: Sunil-Garg
-ms.date: 11/02/2020
+ms.date: 04/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1cb38c812aed60bddadce25f66ec77f4e428be71
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: c660cf5aba786fb6f84776f6443f658ebbfa25d5
+ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751000"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "5937330"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Adatimportálási és -exportálási feladatok áttekintése
 
@@ -161,19 +161,7 @@ Az adatok importálásának gyorsítása érdekében engedélyezheti egy fájl i
     - Az **Importálási küszöbérték rekordszáma** mezőben adja meg az importálás rekordjainak küszöbszámát. Ez határozza meg a szál által feldolgozandó rekordok számát. Ha egy fájl 10 000 rekorddal rendelkezik, akkor ha a rekordok száma 2500 és a feladat száma 4, akkor minden szál 2500 rekordot dolgoz fel.
     - Az **importálási feladat száma** mezőbe írja be az importálási feladatok darabszámát. Ez nem haladhatja meg a kötegelt feldolgozásra engedélyezett maximális kötegszálak számát a **Rendszerfelügyelet \> Kiszolgáló konfigurációja** pontban.
 
-## <a name="clean-up-the-staging-tables"></a>Az előkészítési táblák megtisztítása
-A 29-es platformfrissítéstől kezdődően ez a funkció elavult. Ezt lecseréli az alább ismertetett, munkaelőzmények tisztítási funkció új verziója.
-
-Az előkészítési táblák adattisztítását elvégezheti **Az előkészítési táblák megtisztítása** funkcióval az **Adatkezelés** munkaterületen. A következő beállítások segítségével választható ki, hogy mely rekordok törlődjenek melyik előkészítési táblából:
-
-- **Entitás** – Ha csak egy entitás van megadva, az entitás előkészítési táblájának minden rekordja törlődik. Ezt a lehetőséget akkor használja, ha minden adatot törölni akar az entitásra nézve, az összes adatprojektben és az összes feladatban.
-- **Feladatazonosító** – Ha csak a Feladatazonosító van megadva, a kiválasztott feladat összes entitásának összes rekordja törlődik a megfelelő előkészítési táblákból.
-- **Adatprojektek** – Ha csak egy adatprojekt van kiválasztva, a rendszer az összes entitás összes rekordját törli az összes feladatra nézve a kiválasztott adatprojektben.
-
-A lehetőségek kombinálásával tovább korlátozhatja a törölt rekordkészletet.
-
-## <a name="job-history-clean-up-available-in-platform-update-29-and-later"></a>A feladatelőzmények törlése (a 29-es patformfrissítéstől érhető el)
-
+## <a name="job-history-clean-up"></a>Feladatelőzmények tisztítása 
 Az adatkezelés során a feladatelőzmények törlési funkcióit kell használni a végrehajtási előzmények periodikus törlésének ütemezéséhez. Ez a funkció felváltja a korábbi előkészítési tábla törlése funkciót, amely most már elavult. A következő táblák lesznek törölve a törlési folyamat során.
 
 -   Minden előkészítési tábla

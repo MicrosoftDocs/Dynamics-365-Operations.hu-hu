@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: f0ea2ee208cdbb8f9fa6668bbcb6e15252a7c1b1
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 6f6d689c596b4ec924cb50ec3bea8ce907e6dc6b
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5828226"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5920987"
 ---
 # <a name="troubleshoot-inbound-warehouse-operations"></a>Bejövő raktári műveletek – hibaelhárítás
 
@@ -56,7 +56,7 @@ A *Termékbevételezések frissítése* időszakos feladat futtatása után a re
 
 ### <a name="issue-resolution"></a>Probléma megoldása
 
-Egy új bejövő rakománykezelési funkció, a *Rakománymennyiségek túlbevételezése* megoldja ezt a problémát. Kapcsolja be ezt a funkciót, menjen a [Funkciókezelés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) lehetőségre, és kapcsolja be a következő funkciókat (ebben a sorrendben):
+Egy új bejövő rakománykezelési funkció, a *Rakománymennyiségek túlbevételezése* megoldja ezt a problémát. A funkció bekapcsolásához, menjen a [Funkciókezelés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) munkaterületre, és kapcsolja be a következő funkciókat (ebben a sorrendben):
 
 1. Beszerzési rendelés készlettranzakcióinak társítása rakománnyal
 1. Rakománymennyiségek túlbevételezése

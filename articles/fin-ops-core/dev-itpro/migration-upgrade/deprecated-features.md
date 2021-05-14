@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0389548b7867cc9505c9b8fe70c880959f6783b0
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: ce49835f167881417000b066fd4a351d26ca0909
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745263"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5921423"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>Eltávolított vagy elavult funkciók a korábbi kiadásokban
 
@@ -37,7 +37,7 @@ Ez a témakör azt mutatja be, hogy mely szolgáltatások lettek eltávolítva v
 
 Ez a lista segít figyelembe venni az elavult és eltávolított szolgáltatásokat a saját tervezése elősegítésére. 
 
-A Finance and Operations alkalmazások objektumaival kapcsolatban a [Technikai referenciajelentésekben](https://docs.microsoft.com/dynamics/s-e/global/axtechrefrep_61) talál részletes információkat. Ezen jelentések különböző verzióit összehasonlíthatja, hogy megismerje azokat az objektumokat, melyek módosítva lettek vagy el lettek távolítva a Finance and Operations alkalmazások egyes verzióiban.
+A Finance and Operations alkalmazások objektumaival kapcsolatban a [Technikai referenciajelentésekben](/dynamics/s-e/global/axtechrefrep_61) talál részletes információkat. Ezen jelentések különböző verzióit összehasonlíthatja, hogy megismerje azokat az objektumokat, melyek módosítva lettek vagy el lettek távolítva a Finance and Operations alkalmazások egyes verzióiban.
 
 ## <a name="finance-1007-with-platform-update-31"></a>A Finance 10.0.7, 31-es platform frissítéssel
 
@@ -147,7 +147,7 @@ A Finance and Operations alkalmazások objektumaival kapcsolatban a [Technikai r
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Elavulás/eltávolítás oka** | Fejléc igazítása más Dynamics és Office termékekkel. A további tudnivalókat lásd: [A frissített navigációs sáv mostantól igazodik az Office fejléchez](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-finance-operations/updatednavbar)
+| **Elavulás/eltávolítás oka** | Fejléc igazítása más Dynamics és Office termékekkel. A további tudnivalókat lásd: [A frissített navigációs sáv mostantól igazodik az Office fejléchez](/business-applications-release-notes/April19/dynamics365-finance-operations/updatednavbar)
 | **Felváltotta másik szolgáltatás?**   | A Platform update 24-től kezdve bevezetésre került egy újratervezett navigációs sáv, amelyen keresés is található. |
 | **Érintett területek**         | Webes ügyfél |
 | **Telepítési beállítás**              | Összes |
@@ -161,7 +161,7 @@ A Finance and Operations alkalmazások objektumaival kapcsolatban a [Technikai r
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Elavulás/eltávolítás oka** | Az rácsokban végzett alapértelmezett műveletek örökölt viselkedése azt eredményezheti, hogy az egyik, alapértelmezett művelet hivatkozását tartalmazó, rácsoszlopok után szereplő váratlan oszlop átrendezése történik személyre szabáson keresztül. Az új beragadó alapértelmezett művelet funkció ennek javítására használatos. További részletekért lásd: [Alapértelmezett beragadó műveletek rácsokban](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/sticky-default-action). |
+| **Elavulás/eltávolítás oka** | Az rácsokban végzett alapértelmezett műveletek örökölt viselkedése azt eredményezheti, hogy az egyik, alapértelmezett művelet hivatkozását tartalmazó, rácsoszlopok után szereplő váratlan oszlop átrendezése történik személyre szabáson keresztül. Az új beragadó alapértelmezett művelet funkció ennek javítására használatos. További részletekért lásd: [Alapértelmezett beragadó műveletek rácsokban](/business-applications-release-notes/October18/dynamics365-finance-operations/sticky-default-action). |
 | **Felváltotta másik szolgáltatás?**   | A 21-es platformfrissítéstől kezdődően bevezettük az „alapértelmezett beragadó műveletek” funkciót. A funkciót az **Ügyfélteljesítmény beállításai** oldalon lehet engedélyezni. |
 | **Érintett területek**         | Rácsok a webes ügyfélnél |
 | **Telepítési beállítás**              | Összes |
@@ -172,7 +172,7 @@ A Finance and Operations alkalmazások objektumaival kapcsolatban a [Technikai r
 |&nbsp;   | &nbsp; |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | Az „egyike a következőknek” szűrési gyakorlatot a 22-es platformfrissítésben átterveztük, mivel a jövőben ez lesz az egyetlen „egyike a következőknek” szűrési gyakorlat. |
-| **Felváltotta másik szolgáltatás?**   | A 22-es platformfrissítéstől kezdődően a továbbfejlesztett „egyike a következőknek” szűrési gyakorlat elérhetővé vált az **Ügyfélteljesítmény beállításai** oldalon. További információért lásd: [Optimalizált „egyike a következőknek” szűrési élmény](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering). |
+| **Felváltotta másik szolgáltatás?**   | A 22-es platformfrissítéstől kezdődően a továbbfejlesztett „egyike a következőknek” szűrési gyakorlat elérhetővé vált az **Ügyfélteljesítmény beállításai** oldalon. További információért lásd: [Optimalizált „egyike a következőknek” szűrési élmény](/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering). |
 | **Érintett területek**         | Webes ügyfél |
 | **Telepítési beállítás**              | Összes |
 | **Állapot**                         | Elavult: 2020. áprilistól kezdődően a továbbfejlesztett „egyike a következőknek” gyakorlat lesz az alapértelmezett viselkedés, és nem áll majd rendelkezésre olyan mechanizmus, amellyel vissza lehet térni az örökölt viselkedésre. |
@@ -1333,7 +1333,7 @@ Az Oldal Szolgáltatások lehetővé teszik olyan weboldalak megalkotását, mel
 
 ### <a name="virtual-company-accounts"></a>Virtuális vállalati számlák
 
-A virtuális vállalatok funkció már nem támogatott a Dynamics AX rendszerben. A virtuális vállalatok funkció lehetővé tette a felhasználók számára, hogy vállalatok egy csoportja által közösen használható táblákat állítsanak be. A szolgáltatás leírása itt található: [Vállalati számlák és Virtuális vállalati számlák](https://msdn.microsoft.com/library/aa834382(v=ax.10).aspx). A szolgáltatás úgy működik, hogy a táblákat gyűjteményekbe csoportosítja, ezeket pedig virtuális vállalatokhoz társítja. Utóbbiak létező, „valódi” vállalatok csoportjait jelentik. Lekérdezések jönnek létre, amelyek révén a virtuális vállalatban szereplő összes vállalat hozzáférhet a társított táblagyűjtemény tábláiban lévő adatokhoz.
+A virtuális vállalatok funkció már nem támogatott a Dynamics AX rendszerben. A virtuális vállalatok funkció lehetővé tette a felhasználók számára, hogy vállalatok egy csoportja által közösen használható táblákat állítsanak be. A szolgáltatás leírása itt található: [Vállalati számlák és Virtuális vállalati számlák](../../fin-ops/get-started/ax4-content-retired.md). A szolgáltatás úgy működik, hogy a táblákat gyűjteményekbe csoportosítja, ezeket pedig virtuális vállalatokhoz társítja. Utóbbiak létező, „valódi” vállalatok csoportjait jelentik. Lekérdezések jönnek létre, amelyek révén a virtuális vállalatban szereplő összes vállalat hozzáférhet a társított táblagyűjtemény tábláiban lévő adatokhoz.
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|

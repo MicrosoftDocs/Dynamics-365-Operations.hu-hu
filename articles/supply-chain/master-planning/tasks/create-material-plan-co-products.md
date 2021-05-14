@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d910b89330865b0bcf3f6cd05b761506f339a45f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: b51e4b4d00da2babb5128d8c4c22139b0c1853d4
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5841671"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5920729"
 ---
 # <a name="create-a-material-plan-for-co-products"></a>Társtermékek anyagfelhasználási tervének létrehozása
 
@@ -26,88 +26,88 @@ ms.locfileid: "5841671"
 
 A termelési tervező megtervezi az anyagszükségleteket olyan cikkekhez, amelyek receptúra-társtermékek. Ez az eljárás az USP2 bemutatócéget használja.
 
-
 ## <a name="create-requirement-for-a-co-product"></a>Társtermék szükségletének létrehozása
-1. Ugrás az Alapértelmezett irányítópultra.
-2. Kattintson az Értékesítési rendelés feldolgozása és lekérdezése menüpontra.
-3. Kattintson az Új elemre.
-4. Kattintson az Értékesítési rendelés gombra.
-5. Írjon be egy értéket a Vevői számla mezőbe.
+
+1. Ugrás az **Értékesítés és marketing \> Munkaterületek \> Értékesítési rendelés feldolgozása és lekérdezése** elemre.
+1. Válassza az **Új** lehetőséget.
+1. Válassza ki az **Értékesítési rendelés** lehetőséget.
+1. Írjon be egy értéket a **Vevői számla** mezőbe.
     * Példa: US-001  
-6. Kattintson az OK gombra.
-7. A cikkmezőbe írjon egy értéket.
+1. Válassza ki az **OK** lehetőséget.
+1. A **Cikkszám** mezőbe írjon egy értéket.
     * Példa: P6003  
-8. Adjon meg egy számot a Mennyiség mezőben.
+1. Adjon meg egy számot a **Mennyiség** mezőben.
     * Példa: 50000  
-9. Kattintson a Mentés gombra.
+1. Válassza a **Mentés** lehetőséget.
 
 ## <a name="create-a-material-plan-for-co-products"></a>Társtermékek anyagfelhasználási tervének létrehozása
+
 1. Zárja be a lapot.
-2. Zárja be a lapot.
-3. Kattintson az Alaptervezés parancsra.
-4. A Konstrukció mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
-5. A listában kattintson a kijelölt sorban lévő hivatkozásra.
+1. Zárja be a lapot.
+1. Válassza a **Alaptervezés** lehetőséget.
+1. A **Konstrukció** mezőben válassza a legördítő nyilat a keresőlista megnyitásához.
+1. A listában válassza ki a kiválasztott sorból a hivatkozást.
     * Példa: MasterPlan  
-6. Kattintson a Futtatás elemre.
-7. Bontsa ki vagy csukja össze a Belefoglalandó rekordok részt.
-8. Kattintson a Szűrő parancsra.
-9. A listából válassza ki a Mező = Cikkszám sort.
-10. Érték beírása a Feltétel mezőbe.
+1. Válassza a **Futtatás** parancsot.
+1. Bontsa ki vagy csukja össze a **Belefoglalandó rekordok** részt.
+1. Válassza ki a **Szűrő** elemet.
+1. A listából válassza ki a **Mező** = *Cikkszám* sort.
+1. Adjon meg egy értéket a **Feltétel** mezőben.
     * Példa: P6003  
-11. Kattintson az OK gombra.
-12. Kattintson az OK gombra.
-13. Kattintson a Tervezett rendelések elemre.
-14. Rekordok kereséséhez használja a gyorsszűrőt. Például szűkítsen a Cikkszám mezővel a „P6000” értéket beírva.
+1. Válassza ki az **OK** lehetőséget.
+1. Válassza ki az **OK** lehetőséget.
+1. **Tervezett rendelések** kiválasztása.
+1. Rekordok kereséséhez használja a gyorsszűrőt. Például szűkítsen a **Cikkszám** mezővel a „P6000” értéket beírva.
     * Szűrés a receptúraelemmel, amely tartalmazza a cikk egy társtermékét, amelyre létrehozott egy értékesítési rendelést.  
-15. A listában jelölje meg a kiválasztott sort.
+1. A listában jelölje meg a kiválasztott sort.
     * Válassza ki a szűrő által visszaadott sorok egyikét.  
-16. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-17. Bontsa ki vagy csukja össze az Igénykövetés szakaszt.
-18. A listában kattintson a kijelölt sorban lévő hivatkozásra.
+1. A listában válassza ki a kiválasztott sorból a hivatkozást.
+1. Bontsa ki a **Igénykövetés** szakaszt.
+1. A listában válassza ki a kiválasztott sorból a hivatkozást.
     * A tervezett rendelés a társtermék értékesítési rendeléséhez van rögzítve.  
-19. Zárja be a lapot.
+1. Zárja be a lapot.
 
-## <a name="create-requirement-for-a-co-product"></a>Társtermék szükségletének létrehozása
-1. Ugrás az Alapértelmezett irányítópultra.
-2. Kattintson az Értékesítési rendelés feldolgozása és lekérdezése menüpontra.
-3. Kattintson az Új elemre.
-4. Kattintson az Értékesítési rendelés gombra.
-5. Írjon be egy értéket a Vevői számla mezőbe.
+## <a name="create-a-second-requirement-for-a-co-product"></a>Társtermék második követelményének létrehozása
+
+1. Ugrás az **Értékesítés és marketing \> Munkaterületek \> Értékesítési rendelés feldolgozása és lekérdezése** elemre.
+1. Válassza az **Új** lehetőséget.
+1. Válassza ki az **Értékesítési rendelés** lehetőséget.
+1. Írjon be egy értéket a **Vevői számla** mezőbe.
     * Példa: US-001  
-6. Kattintson az OK gombra.
-7. A cikkmezőbe írjon egy értéket.
+1. Válassza ki az **OK** lehetőséget.
+1. A **Cikkszám** mezőbe írjon egy értéket.
     * Példa: P6003  
-8. Adjon meg egy számot a Mennyiség mezőben.
+1. Adjon meg egy számot a **Mennyiség** mezőben.
     * Példa: 50000  
-9. Kattintson a Mentés gombra.
+1. Válassza a **Mentés** lehetőséget.
 
-## <a name="create-a-material-plan-for-co-products"></a>Társtermékek anyagfelhasználási tervének létrehozása
-1. A Konstrukció mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
-2. A listában kattintson a kijelölt sorban lévő hivatkozásra.
+## <a name="create-a-second-material-plan-for-co-products"></a>Társtermékek második anyagfelhasználási tervének létrehozása
+
+1. A **Konstrukció** mezőben válassza a legördítő nyilat a keresőlista megnyitásához.
+2. A listában válassza ki a kiválasztott sorból a hivatkozást.
     * Példa: MasterPlan  
-3. Kattintson a Futtatás elemre.
-4. Bontsa ki vagy csukja össze a Belefoglalandó rekordok részt.
-5. Kattintson a Szűrő parancsra.
-6. A listából válassza ki a Mező = Cikkszám sort.
-7. Érték beírása a Feltétel mezőbe.
+3. Válassza a **Futtatás** parancsot.
+4. Bontsa ki vagy csukja össze a **Belefoglalandó rekordok** részt.
+5. Válassza ki a **Szűrő** elemet.
+6. A listából válassza ki a **Mező** = *Cikkszám* sort.
+7. Adjon meg egy értéket a *Feltétel* mezőben.
     * Példa: P6003  
-8. Kattintson az OK gombra.
-9. Kattintson az OK gombra.
-10. Kattintson a Tervezett rendelések elemre.
-11. Rekordok kereséséhez használja a gyorsszűrőt. Például szűkítsen a Cikkszám mezővel a „P6000” értéket beírva.
+8. Válassza ki az **OK** lehetőséget.
+9. Válassza ki az **OK** lehetőséget.
+10. **Tervezett rendelések** kiválasztása.
+11. Rekordok kereséséhez használja a gyorsszűrőt. Például szűkítsen a **Cikkszám** mezővel a „P6000” értéket beírva.
     * Szűrés a receptúraelemmel, amely tartalmazza a cikk egy társtermékét, amelyre létrehozott egy értékesítési rendelést.  
 12. A listában jelölje meg a kiválasztott sort.
     * Válassza ki a szűrő által visszaadott sorok egyikét.  
-13. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-14. Bontsa ki vagy csukja össze az Igénykövetés szakaszt.
-15. A listában kattintson a kijelölt sorban lévő hivatkozásra.
+13. A listában válassza ki a kiválasztott sorból a hivatkozást.
+14. Bontsa ki vagy csukja össze az **Igénykövetés** szakaszt.
+15. A listában válassza ki a kiválasztott sorból a hivatkozást.
     * A tervezett rendelés a társtermék értékesítési rendeléséhez van rögzítve.  
 16. Zárja be a lapot.
-17. Kattintson az Alaptervezés parancsra.
-18. Ugorjon az Alaptervezés > Beállítás > Alaptervezés paraméterei pontra.
-19. Válassza a Nem lehetőséget Az összes tervezési folyamat letiltása mezőben.
+17. Válassza a **Alaptervezés** lehetőséget.
+18. Ugorjon az **Alaptervezés \> Beállítás \> Alaptervezés paraméterei** pontra.
+19. Válassza a *Nem* lehetőséget **Az összes tervezési folyamat letiltása** mezőben.
 20. Zárja be a lapot.
-
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

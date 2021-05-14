@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f62398934d029a3269bd2b6aa33531e6807be490
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 6452a126f4962104fca7c62f3518b89fff657f08
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5809326"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5921035"
 ---
 # <a name="create-product-model-components"></a>Termékmodell-összetevők létrehozása
 
@@ -26,14 +26,13 @@ ms.locfileid: "5809326"
 
 A megszorításon alapuló termékkonfigurációs modellek építőelemként használják az összetevőket a termékmodell szerkezetének kialakításához. Létre kell hozni az összetevőket, mielőtt a termékmodellt fel lehetne építeni. Ez az eljárás az USMF bemutatócéget használja.
 
-1. Kattintson a Termékváltozat modelldefinícióra.
-2. Kattintson a Termékkonfigurációs modellek lehetőségre.
-3. A Művelet panelen kattintson a Modell elemre.
-4. Kattintson az Összetevők elemre.
-5. Kattintson az Új lehetőségre.
-6. Írjon be egy értéket a Név mezőbe.
-7. A Leírás mezőben adjon meg egy értéket.
-8. Zárja be a lapot.
+1. Lépjen a **Termékinformáció-kezelés \> Termékek \> Termékkonfigurációs modellek** elemre.
+1. A Műveleti ablaktáblán kattintson a **Modell** elemre.
+1. **Összetevők** kiválasztása.
+1. Válassza az **Új** lehetőséget.
+1. Írjon be egy értéket a **Név** mezőbe.
+1. Írjon egy értéket a **Leírás** mezőbe.
+1. Zárja be a lapot.
 
 
 

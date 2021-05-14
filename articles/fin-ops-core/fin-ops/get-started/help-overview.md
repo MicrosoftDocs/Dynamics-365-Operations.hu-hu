@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e33a2d4c50d17125a91b3b55b46626c6199575c8
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: d88801baafb9a6decfb6c04f708b3f7e1257b487
+ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897816"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923446"
 ---
 # <a name="help-system"></a>Súgórendszer
 
@@ -39,7 +39,7 @@ Minden ilyen alkalmazásban hozzáférhet a termékspecifikus súgóhoz a **Súg
 
 ## <a name="help-on-docsmicrosoftcom"></a>Súgó a docs.microsoft.com-on
 
-A docs.microsoft.com webhely ([docs.microsoft.com/dynamics365/](https://docs.microsoft.com/dynamics365/)) a termékdokumentáció alapértelmezett forrása az imént felsorolt alkalmazásokhoz. Ez a webhely a következő funkciókat ajánlja:
+A docs.microsoft.com webhely ([docs.microsoft.com/dynamics365/](/dynamics365/)) a termékdokumentáció alapértelmezett forrása az imént felsorolt alkalmazásokhoz. Ez a webhely a következő funkciókat ajánlja:
 
 - **Hozzáférés a legfrissebb tartalmakhoz** – A webhely lehetőséget ad a Microsoftnak a termékdokumentációk gyorsabb, rugalmasabb létrehozására, szállítására és frissítésére. Így egyszerűen hozzáférhet a legfrissebb technikai információkhoz jut hozzá.
 - **Szakértők által írt tartalmak** – A webhely tartalma nyitott a Microsofton belül és kívül egyaránt a közösség tagjainak hozzájárulására.
@@ -50,7 +50,7 @@ A docs.microsoft.com tartalmait bármilyen keresőmotor segítségével meg lehe
 
 Ha fel szeretne iratkozni egy RSS (Really Simple Syndication) hírcsatornára a docs.microsoft.com tartalmára vonatkozó összes frissítésről, használja a következő hivatkozást:
 
-[RSS-hírcsatorna](https://docs.microsoft.com/api/search/rss?locale=en-us&$filter=scopes%2Fany(t%3A%20t%20eq%20%27Unified%20Operations%27))
+[RSS-hírcsatorna](/api/search/rss?$filter=scopes%2fany(t%3a+t+eq+%27Unified+Operations%27)&locale=en-us)
 
 ### <a name="leave-us-feedback"></a>Visszajelzés küldése
 
@@ -73,7 +73,7 @@ A dokumentációban közreműködhet, és módosításokat hajthat végre. Első
 
 A [Hozzájárulás a Microsoft Dynamics 365 dokumentációhoz](https://youtu.be/m5djioozRbg) videó (lásd fentebb) része a Microsoft Dynamics 365 csatornának a YouTube oldalán.
 
-A további tudnivalókat lásd a [Docs közreműködői útmutatóban](https://docs.microsoft.com/contribute), amelyet a docs.microsoft.com webhelyét összeállító csoport publikál.
+A további tudnivalókat lásd a [Docs közreműködői útmutatóban](/contribute), amelyet a docs.microsoft.com webhelyét összeállító csoport publikál.
 
 > [!NOTE]
 > Jelenleg csak az angol nyelvű tartalomhoz fogadunk el közreműködést.
@@ -155,12 +155,13 @@ A következő táblázat felsorolja a weboldalainkat. A név mellett közvetlen�
 | Hely | Leírás |
 |------|-------------|
 | [Docs.microsoft.com](/dynamics365/) | Ezen a webhelyen található vagy kerül hivatkozásra az összes termékdokumentációhoz a Dynamics 365 rendszerben. |
-| [Microsoft Learn](https://docs.microsoft.com/learn/) | Ez a webhely a Microsoft ingyenes e-learning webhelye. |
+| [Microsoft Learn](/learn/) | Ez a webhely a Microsoft ingyenes e-learning webhelye. |
 | [Microsoft DynamicsLifecycle Services (LCS)](https://lcs.dynamics.com/)\* | Ez a webhely felhőalapú együttműködési munkaterület biztosít, amelyet a vevők és a partnerek a projektek kezelésére használhatnak az értékesítés előtti műveletektől a megvalósításig és az üzemeltetésig. Az implementáció minden fázisában hasznos. |
 | [Támogatási blog](https://aka.ms/AXSupportBlog) | Ez a webhely tippeket és trükköket tartalmaz, amelyeket a Támogatás csapata adott fel. |
 | [Docs.microsoft.com/korábbi verziók](/previous-versions/dynamics/) | Ezen a webhelyen található a korábbi kiadások tartama. |
 | [Dynamics közösség](https://community.dynamics.com/) | A webhelyen blogok, fórumok és videók találhatók. |
 | [Microsoft.com/dynamics365](https://www.microsoft.com/dynamics365/home) | A webhelyen értékelések és eladási információk érhetők el. |
+
 
 
 

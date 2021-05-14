@@ -2,7 +2,7 @@
 title: Elektronikus jelentéskészítés (ER) konfigurálása az adatok Power BI-be való lehívásához
 description: Ez a témakör bemutatja, hogyan használható az elektronikus jelentési (ER) konfiguráció arra, hogy adatokat vigyen át a példányából a Power BI szolgáltatásokba.
 author: NickSelin
-ms.date: 06/20/2017
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 8a53c1c3e1850dabc05a47df6d8cc785a13f6f86
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: b37bc608b3b987016622d9cd0abc66e420025d26
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750082"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944437"
 ---
 # <a name="configure-electronic-reporting-er-to-pull-data-into-power-bi"></a>Elektronikus jelentéskészítés (ER) konfigurálása az adatok Power BI-be való lehívásához
 
@@ -68,10 +68,10 @@ A jelen témakörben szereplő példa elvégzéséhez a következő hozzáféré
 ## <a name="use-an-er-data-model-as-the-source-of-data"></a>ER-adatmodell használata adatforrásként
 A Power BI-jelentésekben használt üzleti adatok forrásának ER-adatmodellnek kell lennie. Ennek az adatmodellnek a feltöltése a ER-konfigurációk tárházából történik. További tudnivalókért lásd: [Elektronikus jelentési beállítások letöltése a Lifecycle Services rendszerből](download-electronic-reporting-configuration-lcs.md), vagy játssza le az **ER-konfiguráció importálása a Lifecycle Services rendszerből** feladat-útmutatót. Válassza ki az **Intrastatot** azon adatmodellként, amelyet a program a kiválasztott ER-konfigurációk tárházából feltölt. (Ebben a példában a modell 1. verzióját használjuk.) Ezután érheti el az **Intrastat** ER-modell konfigurációját a **Konfigurációk** oldalon.
 
-[![Konfigurációs oldal](./media/ger-power-bi-data-model-1024x371.png)](./media/ger-power-bi-data-model.png)
+[![Intrastat ER-modellkonfiguráció a Konfigurációk lapon](./media/ger-power-bi-data-model-1024x371.png)](./media/ger-power-bi-data-model.png)
 
 ## <a name="design-an-er-format-configuration"></a>Egy ER-formátumú konfiguráció kialakítása
-Létre kell hoznia egy olyan új ER-formátum konfigurációt, amely az **Intrastat** adatmodellt használja az üzleti adatok forrásaként. Ennek a formátumkonfigurációnak OpenXML (Excel-fájl) formátumú, elektronikus dokumentumokként kell létrehoznia a kimeneti eredményeket. További információkhoz játssza le az **ER-konfiguráció létrehozása OPENXML formátumú jelentésekhez** feladat-útmutatót. Nevezze el az új konfiguráció **importálási / exportálási tevékenységeknek**, a következő ábrán látható módon. Használja a [ER-érték – importálás és exportálás részletei](https://go.microsoft.com/fwlink/?linkid=845208) Excel-fájlt sablonként, amikor megtervezi az ER formátumát. (A formátumsablonok importálására vonatkozó további tudnivalókkal kapcsolatban játssza le a feladat-útmutatót.)
+Létre kell hoznia egy olyan új ER-formátum konfigurációt, amely az **Intrastat** adatmodellt használja az üzleti adatok forrásaként. Ennek a formátumkonfigurációnak OpenXML (Excel-fájl) formátumú, elektronikus dokumentumokként kell létrehoznia a kimeneti eredményeket. További információkhoz játssza le az **ER-konfiguráció létrehozása OPENXML formátumú jelentésekhez** feladat-útmutatót. Nevezze el az új konfiguráció **importálási / exportálási tevékenységeknek**, a következő ábrán látható módon. Használja a [ER-érték – importálás és exportálás részletei](https://download.microsoft.com/download/f/7/5/f755c0fd-025c-4aa9-920b-909abb8302ad/ER-data-import-and-export-details.xlsx) Excel-fájlt sablonként, amikor megtervezi az ER formátumát. (A formátumsablonok importálására vonatkozó további tudnivalókkal kapcsolatban játssza le a feladat-útmutatót.)
 
 [![Importálási / exportálási tevékenységek konfigurálása](media/ger-power-bi-format-configuration.png)](media/ger-power-bi-format-configuration.png)
 
@@ -126,7 +126,7 @@ Kattintson az új célhely rekordjának **Beállítások** gombjára. Ezután a 
 1. A **Konfigurációk** oldalon (**Szervezet felügyelete** &gt; **Elektronikus jelentések** &gt; **Konfigurációk**), a konfigurációs fában, válassza ki azt az **importálási / exportálási tevékenységekre** vonatkozó konfigurációt, amelyet korábban létrehozott.
 2. Az 1.1 verzió állapotát módosítsa **Vázlatról** **Készre** , hogy ez a formátum használható legyen.
 
-    [![Konfigurációs oldal](./media/ger-power-bi-format-configuration-complete-1024x401.png)](./media/ger-power-bi-format-configuration-complete.png)
+    [![Tevékenységek konfigurációjának importálása/exportálása a Konfigurációk lapon](./media/ger-power-bi-format-configuration-complete-1024x401.png)](./media/ger-power-bi-format-configuration-complete.png)
 
 3. Válassza ki az **importálási / exportálási tevékenységekre** vonatkozó konfiguráció kész verzióját, majd kattintson a **Futtatásra**. Vegye figyelembe, hogy a konfigurált célhely az Excel formátumban létrehozott kimeneti eredményhez van hozzárendelve.
 4. Állítsa a **Kötegelt feldolgozás** lehetőséget **Igenre** ahhoz, hogy ezt a jelentést felügyelet nélküli üzemmódban futtassa.
@@ -187,7 +187,7 @@ A Power BI integrációjának beállítása. További tudnivalókért lásd: [A 
 2. Válassza ki az Ön által létrehozott, az **Importálás és exportálás részletei** Power BI-jelentést ahhoz, hogy a jelentést a kijelölt lapon teendőként jelenítse meg.
 3. Kattintson a teendőre azon lap megnyitásához, amely megjeleníti az Ön által a Power BI szolgáltatásban megtervezett jelentést.
 
-    [![Importálás és exportálás részletezését tartalmazó jelentés](./media/ger-power-bi-review-bi-report-in-ax-form-1024x586.png)](./media/ger-power-bi-review-bi-report-in-ax-form.png)
+    [![Importálás és exportálás részletezését tartalmazó jelentés, amelyet itt készítettek: Power BI](./media/ger-power-bi-review-bi-report-in-ax-form-1024x586.png)](./media/ger-power-bi-review-bi-report-in-ax-form.png)
 
 ## <a name="additional-resources"></a>További erőforrások
 

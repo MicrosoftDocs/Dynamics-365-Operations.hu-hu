@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 81e573593fbbb0bf87e53c5cbd985b38a8db89ac
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 8607de5705354aa58c985fb536f3e1d52acd1f37
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5841599"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5921289"
 ---
 # <a name="create-a-sales-order-for-a-configurable-product"></a>Értékesítési rendelés létrehozása konfigurálható termékhez
 
@@ -26,30 +26,27 @@ ms.locfileid: "5841599"
 
 Ez az eljárás azt szemlélteti, hogy hogyan lehet egy konfigurációs sablont alkalmazni egy értékesítési rendelésben szereplő termékre. Ebben a példában a D0006 hangszórómodellt használjuk a USMF bemutatócég esetében. Ezt az eljárást jellemzően az értékesítésirendelés-feldolgozó használja.
 
-
 ## <a name="create-a-sales-order"></a>Értékesítési rendelés létrehozása
-1. Kattintson az Értékesítési rendelés feldolgozása és lekérdezése menüpontra.
-2. Kattintson az Új lehetőségre.
-3. Kattintson az Értékesítési rendelés gombra.
-4. A Vevői számla mezőben válassza a következőt: US-001. 
-5. Kattintson az OK gombra.
-6. A Cikkszám mezőben válassza ki a D0006 értéket.
+
+1. Ugrás az **Értékesítés és marketing \> Munkaterületek \> Értékesítési rendelés feldolgozása és lekérdezése** elemre.
+1. Válassza az **Új** lehetőséget.
+1. Válassza ki az **Értékesítési rendelés** lehetőséget.
+1. A **Vevői számla** mezőben válassza a következőt: *US-001*. 
+1. Válassza ki az **OK** lehetőséget.
+1. A **Cikkszám** mezőben válassza ki a *D0006* cikkszámot.
     * Ehhez a feladathoz ki kell választania egy konfigurálható terméket.  
-7. Kattintson a Termék és készlet menüpontra.
-8. Kattintson a Sor konfigurálására.
-    * Vegye figyelembe, hogy az ár megváltozott a kiválasztott beállítás alapján, és a Kábel is a része mező értéke most már Igaz.  
+1. Kattintson a **Termék és készlet** menüpontra.
+1. Válassza a **Sor konfigurálása** elemet.
+    * Vegye figyelembe, hogy az ár megváltozott a kiválasztott beállítás alapján, és a **Kábel is a része** mező értéke most már *Igaz*.  
     * Tekintse meg az alapértelmezett árat és kábelhez kiválasztott beállításokat.  
-9. Kattintson a Rakománysablonra.
-    * Ez a példa azt mutatja be, hogyan alkalmazhat egy sablont egy előre definiált konfiguráció kiválasztásához. Ha feladat-útmutatóként használja ezt az eljárást, és szeretné megtekinteni a többi rendelkezésre álló attribútumértéket, kattintson a Feloldás gombra.  
-10. Kattintson az OK gombra.
-11. Kattintson az OK gombra.
-12. Bontsa ki a Soradatok szakaszt.
-13. Kattintson a Termék fülre.
+1. Válassza a **Rakománysablon** lehetőséget.
+    * Ez a példa azt mutatja be, hogyan alkalmazhat egy sablont egy előre definiált konfiguráció kiválasztásához. Ha feladat-útmutatóként használja ezt az eljárást, és szeretné megtekinteni a többi rendelkezésre álló attribútumértéket, kattintson a **Feloldás** gombra.  
+1. Válassza ki az **OK** lehetőséget.
+1. Válassza ki az **OK** lehetőséget.
+1. Bontsa ki a **Sorrészletek** szakaszt.
+1. Válassza ki a **Termék** fület.
     * A cikk konfigurációja most már látható a termék méretei alatt.  
-14. Zárja be a lapot.
-
-## <a name="select-the-product-configuration"></a>Válassza ki a termékkonfigurációt.
-
+1. Zárja be a lapot.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

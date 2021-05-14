@@ -15,12 +15,12 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: d5d5303b6d81ad182e0e28a51790166b833bee7b
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 438e8ba38726a25a2464490f4098f96095b4d5c6
+ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754800"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923307"
 ---
 # <a name="feature-management-overview"></a>Funkciókezelés áttekintése
 
@@ -140,7 +140,7 @@ A funkciókezelés funkcióval szabályozhatja az egyes kiadásokban szállítot
 
 ## <a name="new-features-are-optional-for-12-months"></a>Az új szolgáltatások nem kötelezőek 12 hónapig.
 
-Ha egy új, nem kritikus funkció van telepítve, akkor egy 12 hónapos időszakra nem kötelező. Ez lehetővé teszi az Ön és a szervezet számára, hogy előre tervezze meg a funkció felvételének idejét, és tesztelje a napi műveletein. További információkat az [Egyverziós szolgáltatásfrissítések GYIK](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/one-version#what-about-new-features) oldalon találhat.
+Ha egy új, nem kritikus funkció van telepítve, akkor egy 12 hónapos időszakra nem kötelező. Ez lehetővé teszi az Ön és a szervezet számára, hogy előre tervezze meg a funkció felvételének idejét, és tesztelje a napi műveletein. További információkat az [Egyverziós szolgáltatásfrissítések GYIK](../one-version.md#what-about-new-features) oldalon találhat.
 
 ## <a name="using-feature-management-to-turn-on-isv-features-or-custom-features"></a>A Funkciókezelés használata az ISV-funkciók és az egyéni funkciók bekapcsolásához
 
@@ -161,7 +161,7 @@ Az alapelv az, hogy minden új funkció egy 12 hónapos időszakban választhat�
 A frissítések kiadásának ütemezése változó, a környezet frissítésének ütemezése is változó, és az ügyfelek dönthetnek úgy, hogy kihagynak egyes frissítéseket. Ennek eredményeképpen nehéz meghatározni adott dátumokat. 
 
 ### <a name="wheres-the-documentation-for-features-that-are-being-made-mandatory"></a>Hol található a kötelezővé tett szolgáltatások dokumentációját? 
-Ez a dokumentáció az alkalmazáscsoportoktól származik. Ezek gyakran meg vannak említve az [Eltávolított és az elavult szolgáltatások](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/deprecated-features) dokumentumokban. 
+Ez a dokumentáció az alkalmazáscsoportoktól származik. Ezek gyakran meg vannak említve az [Eltávolított és az elavult szolgáltatások](../../../dev-itpro/migration-upgrade/deprecated-features.md) dokumentumokban. 
 
 ### <a name="is-there-an-in-product-notification-or-signal-that-a-feature-is-going-to-be-mandatory-enabled"></a>Megjelenik a termékben értesítés vagy jelzés, hogy a funkció engedélyezése kötelező lesz? 
 A szolgáltatás kötelezővé tételéhez kapcsolódó értesítési mechanizmus jelenleg nem létezik.

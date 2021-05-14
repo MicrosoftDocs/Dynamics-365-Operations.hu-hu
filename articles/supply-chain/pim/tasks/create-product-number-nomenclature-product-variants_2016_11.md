@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f342831d95f9988f9bb7807bac986e43cb317e0f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 7ea30dc107213b1a2c6b2a109188066a6ea82159
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5820009"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5921011"
 ---
 # <a name="create-a-product-number-nomenclature-for-configured-product-variants"></a>Termékszám elnevezési rendszerének létrehozása konfigurált termékváltozatokhoz
 
@@ -26,79 +26,78 @@ ms.locfileid: "5820009"
 
 Ez az eljárás bemutatja, hogyan állítható be termékszámozás-elnevezési rendszer konfigurált termékváltozatok számára, és hogyan rendelhető hozzá konfigurálható alaptermékhez. Az eljárás emellett bemutatja, hogyan készíthető konfigurációelnevezési rendszer termékkonfigurációs modell összetevőjéhez. Ez az eljárás az USMF bemutatócéget használja. Az új termékszám-elnevezési rendszer a D0004 alaptermékhez van rendelve. Ezt a feladatot általában egy terméktervező végzi.
 
-
 ## <a name="create-a-product-number-nomenclature"></a>Termékszámozási rendszer létrehozása
-1. Kattintson a Termékváltozat modelldefinícióra.
-2. Kattintson a Termékek elnevezési rendszere elemre
-3. Kattintson az Új elemre.
-4. Írjon be egy értéket a Név mezőbe.
-5. A Leírás mezőben adjon meg egy értéket.
-6. Kattintson a Hozzáadás gombra.
-7. Kattintson az Alaptermék száma elemre.
-8. Kattintson a Hozzáadás gombra.
-9. Kattintson a Szöveges állandó elemre.
-10. A listában jelölje meg a kiválasztott sort.
-11. Írjon be egy értéket a Szöveg mezőbe.
-12. Kattintson a Hozzáadás gombra.
-13. Kattintson a Konfiguráció lehetőségre.
-14. Zárja be a lapot.
+
+1. Ugorjon a **Termékinformációk kezelése \> Beállítás \> Termék elnevezési rendszere** lehetőségre.
+1. Válassza az **Új** lehetőséget.
+1. Írjon be egy értéket a **Név** mezőbe.
+1. Írjon egy értéket a **Leírás** mezőbe.
+1. Válassza a **Hozzáadás** lehetőséget.
+1. Válassza az **Alaptermék száma** lehetőséget.
+1. Válassza a **Hozzáadás** lehetőséget.
+1. Válassza a **Szöveges állandó** elemet.
+1. A listában jelölje meg a kiválasztott sort.
+1. Írjon be egy értéket a **Szöveg** mezőbe.
+1. Válassza a **Hozzáadás** lehetőséget.
+1. **Konfiguráció** kiválasztása.
+1. Zárja be a lapot.
 
 ## <a name="assign-the-product-number-nomenclature-to-a-product-master"></a>Termékszámozási rendszer hozzárendelése az alaptermékhez
-1. Kattintson az Összes alaptermék elemre.
-2. Rekordok kereséséhez használja a gyorsszűrőt. Például szűkítsen a Termékszám mezőre a „D” értéket beírva.
-3. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-4. Kattintson a Szerkesztés lehetőségre.
-5. Válassza az Igen lehetőséget az Elnevezési rendszer használata mezőben.
-6. A Termékváltozat-számozási rendszer mezőben adjon meg, vagy válasszon ki egy értéket.
-7. Zárja be a lapot.
-8. Zárja be a lapot.
+
+1. Ugorjon a **Termékinformációk kezelése \> Termékek \> Alaptermékek** lehetőségre.
+1. Rekordok kereséséhez használja a gyorsszűrőt. Például szűkítsen a **Termékszám** mezőre a „D” értéket beírva.
+1. A listában válassza ki a kiválasztott sorból a hivatkozást.
+1. Válassza ki a **Szerkesztés** opciót.
+1. Válassza az *Igen* lehetőséget az **Elnevezési rendszer használata** mezőben.
+1. A **Termékváltozat-számozási rendszer** mezőben adjon meg, vagy válasszon ki egy értéket.
+1. Zárja be a lapot.
+1. Zárja be a lapot.
 
 ## <a name="create-nomenclature-for-a-product-configuration-model-component"></a>Elnevezési rendszer létrehozása egy termékkonfigurációs modell összetevőjéhez
-1. Kattintson a Termékkonfigurációs modellek lehetőségre.
-2. Keresse meg és jelölje ki a kívánt rekordot a listán.
-3. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-4. Kattintson a Szerkesztés lehetőségre.
-5. Válassza az Igen lehetőséget a Konfiguráció elnevezési rendszerének használata mezőben.
-6. Kattintson a Hozzáadás gombra.
-7. Kattintson az Attribútum értéke elemre.
-8. A listában jelölje meg a kiválasztott sort.
-9. Az Attribútum mezőben adjon meg vagy válasszon ki egy értéket.
-10. Kattintson a Hozzáadás gombra.
-11. Kattintson a Szöveges állandó elemre.
-12. A listában jelölje meg a kiválasztott sort.
-13. Írjon be egy értéket a Szöveg mezőbe.
-14. Kattintson a Hozzáadás gombra.
-15. Kattintson az Attribútum értéke elemre.
-16. A listában jelölje meg a kiválasztott sort.
-17. Az Attribútum mezőben adjon meg vagy válasszon ki egy értéket.
-18. Kattintson a Hozzáadás gombra.
-19. Kattintson a Szöveges állandó elemre.
-20. A listában jelölje meg a kiválasztott sort.
-21. Írjon be egy értéket a Szöveg mezőbe.
-22. Kattintson a Hozzáadás gombra.
-23. Kattintson az Attribútum értéke elemre.
-24. A listában jelölje meg a kiválasztott sort.
-25. Az Attribútum mezőben adjon meg vagy válasszon ki egy értéket.
-26. Kattintson a Hozzáadás gombra.
-27. Kattintson a Szöveges állandó elemre.
-28. A listában jelölje meg a kiválasztott sort.
-29. Írjon be egy értéket a Szöveg mezőbe.
-30. Kattintson a Hozzáadás gombra.
-31. Kattintson az Attribútum értéke elemre.
-32. A listában jelölje meg a kiválasztott sort.
-33. Az Attribútum mezőben adjon meg vagy válasszon ki egy értéket.
-34. Kattintson a Hozzáadás gombra.
-35. Kattintson a Szöveges állandó elemre.
-36. A listában jelölje meg a kiválasztott sort.
-37. Írjon be egy értéket a Szöveg mezőbe.
-38. Kattintson a Hozzáadás gombra.
-39. Kattintson a Számsorozat értéke elemre.
-40. A listában jelölje meg a kiválasztott sort.
-41. A Számsorrend mezőben adjon meg vagy válasszon ki egy értéket.
-42. Zárja be a lapot.
-43. Zárja be a lapot.
-44. Zárja be a lapot.
 
-
+1. Lépjen a **Termékinformáció-kezelés \> Termékek \> Termékkonfigurációs modellek** elemre.
+1. Keresse meg és jelölje ki a kívánt rekordot a listán.
+1. A listában válassza ki a kiválasztott sorból a hivatkozást.
+1. Válassza ki a **Szerkesztés** opciót.
+1. Válassza az *Igen* lehetőséget a **Konfiguráció elnevezési rendszerének használata** mezőben.
+1. Válassza a **Hozzáadás** lehetőséget.
+1. Válassza az **Attribútumérték** lehetőséget.
+1. A listában jelölje meg a kiválasztott sort.
+1. Az **Attribútum** mezőben adjon meg vagy válasszon ki egy értéket.
+1. Válassza a **Hozzáadás** lehetőséget.
+1. Válassza a **Szöveges állandó** elemet.
+1. A listában jelölje meg a kiválasztott sort.
+1. Írjon be egy értéket a **Szöveg** mezőbe.
+1. Válassza a **Hozzáadás** lehetőséget.
+1. Válassza az **Attribútumérték** lehetőséget.
+1. A listában jelölje meg a kiválasztott sort.
+1. Az **Attribútum** mezőben adjon meg vagy válasszon ki egy értéket.
+1. Válassza a **Hozzáadás** lehetőséget.
+1. Válassza a **Szöveges állandó** elemet.
+1. A listában jelölje meg a kiválasztott sort.
+1. Írjon be egy értéket a **Szöveg** mezőbe.
+1. Válassza a **Hozzáadás** lehetőséget.
+1. Válassza az **Attribútumérték** lehetőséget.
+1. A listában jelölje meg a kiválasztott sort.
+1. Az **Attribútum** mezőben adjon meg vagy válasszon ki egy értéket.
+1. Válassza a **Hozzáadás** lehetőséget.
+1. Válassza a **Szöveges állandó** elemet.
+1. A listában jelölje meg a kiválasztott sort.
+1. Írjon be egy értéket a **Szöveg** mezőbe.
+1. Válassza a **Hozzáadás** lehetőséget.
+1. Válassza az **Attribútumérték** lehetőséget.
+1. A listában jelölje meg a kiválasztott sort.
+1. Az **Attribútum** mezőben adjon meg vagy válasszon ki egy értéket.
+1. Válassza a **Hozzáadás** lehetőséget.
+1. Válassza a **Szöveges állandó** elemet.
+1. A listában jelölje meg a kiválasztott sort.
+1. Írjon be egy értéket a **Szöveg** mezőbe.
+1. Válassza a **Hozzáadás** lehetőséget.
+1. Válassza ki a **Számsorozat értéke** elemet.
+1. A listában jelölje meg a kiválasztott sort.
+1. A **Számsorrend** mezőben adjon meg vagy válasszon ki egy értéket.
+1. Zárja be a lapot.
+1. Zárja be a lapot.
+1. Zárja be a lapot.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

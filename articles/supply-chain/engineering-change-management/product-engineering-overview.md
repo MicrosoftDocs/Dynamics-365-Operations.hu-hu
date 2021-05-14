@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 964db71efc9dc81d60199e37de8668de9d667496
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d7c0839ffbea80904ca12d1cba7ba9880f721cdd
+ms.sourcegitcommit: 57668404d61359b33e0c0280f2f7c4eb829b1ed2
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5842081"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "5947520"
 ---
 # <a name="engineering-change-management-overview"></a>Tervezési változáskezelés áttekintése
 
@@ -48,7 +48,7 @@ A tervezési változáskezelés használata előtt engedélyeznie kell a *Tervez
 
 Először kapcsolja be a funkciókat a következő lépések végrehajtásával.
 
-1. Lépjen a [Funkciókezelés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) lehetőségre.
+1. Ugorjon a [Funkciókezelés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) munkaterületre.
 1. Keressen frissítéseket.
 1. Kapcsolja be a **Mérnöki módosításkezelés** szolgáltatást.
 1. Ha használni szeretné, kapcsolja be a **Termékdimenzió verziója** nevű szolgáltatást is.
@@ -57,9 +57,12 @@ Ezután kapcsolja be a konfigurációs kulcsokat a következő lépések végreh
 
 1. Állítsa a rendszert karbantartási módba a [Karbantartási mód](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md) alatt leírtak szerint.
 1. Lépjen a **Rendszerfelügyelet \> Beállítás \> Licenckonfiguráció** elemre.
-1. Bontsa ki a **Kereskedelem** csomópontot
-1. Jelölje be a **Tervezési változáskezelés** jelölőnégyzetet.
-1. Ha használni szeretné, jelölje be a **Termékdimenzió – Verzió** jelölőnégyzetet is.
+1. Bontsa ki a **Kereskedelem** csomópontot,
+1. A fő funkció konfigurációs kulcsának engedélyezéséhez jelölje be a **Mérnöki változások kezelése** jelölőnégyzetet. (Nem kell feltétlenül kibontania a csomópontot, hacsak nem szeretné letiltani az egyik vagy az összes alfunkcióját.)
+1. Ha használni szeretné a verziódimenziót is, jelölje be a **Termékdimenzió – Verzió** jelölőnégyzetet is. (Ez a jelölőnégyzet a listában lejjebb van, nem a **Műszaki módosítások kezelése** csomópont alatt.)
 1. Kapcsolja ki a karbantartási módot a [Karbantartási mód](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md) alatt leírtak szerint.
+
+> [!IMPORTANT]
+> 2022 áprilisától kezdve a **Mérnöki változások kezelése** és a **Termékdimenzió – Verzió** licenckulcsok alapértelmezés szerint engedélyezve lesznek minden új telepítés esetén, de szükség esetén továbbra is letilthatja őket.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

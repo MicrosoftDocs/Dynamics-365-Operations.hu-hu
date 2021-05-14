@@ -2,7 +2,7 @@
 title: 'Vászonalapú alkalmazások beágyazása a következőből: Power Apps'
 description: Ez a témakör azt mutatja be, hogyan végezhető el a vászonalapú alkalmazás Microsoft Power Apps szolgáltatásból az ügyfélbe történő beágyazása a termék funkcionalitásának kibővítése érdekében.
 author: jasongre
-ms.date: 11/03/2020
+ms.date: 04/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,33 +13,34 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: Platform update 14
-ms.openlocfilehash: 7b20d24f79bd84f516e005b9d4a0ecdf6ef848fc
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 18146ce5ab081b3a6376bf412805016b04da6a11
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752890"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944679"
 ---
 # <a name="embed-canvas-apps-from-power-apps"></a>Vászonalapú alkalmazások beágyazása a következőből: Power Apps
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 A Microsoft Power Apps egy olyan szolgáltatás, amely a fejlesztők és a nem műszaki felhasználók számára is lehetővé teszi egyedi üzleti alkalmazások megalkotását mobileszközökre, táblagépekre és internetre, kód írása nélkül. A Finance and Operations alkalmazások támogatják a Power Apps szolgáltatással való integrációt. A vászonalapú alkalmazások, amelyeket Ön, a szervezete vagy a szélesebb ökoszisztéma által kifejlesztett alkalmazások beilleszthetők a Finance and Operations alkalmazásokba, hogy kiterjesszék a termék funkcionalitását. Például létrehozhat egy Power Apps vászonalapú alkalmazást egy Finance and Operations alkalmazás kiegészítésére egy másik rendszerből lekért információkkal.
 
-Ha többet szeretne megtudni a Power Apps beágyazásáról, nézze meg a rövid [A Power Apps beágyazása a rendszerben](https://www.youtube.com/watch?v=x3qyA1bH-NY) videót.
+Ha többet szeretne megtudni a vászonalapú alkalmazások beágyazásáról, nézze meg a rövid [Vászonalapú alkalmazások beágyazása](https://www.youtube.com/watch?v=x3qyA1bH-NY) videót.
 
 ## <a name="adding-an-embedded-canvas-app-from-power-apps-to-a-page"></a>Beágyazott vászonalapú alkalmazás Power Apps megoldáshoz hozzáadása egy oldalhoz
 
 ### <a name="overview"></a>Áttekintés
 
-Mielőtt Power Apps-ból vászonalapú alkalmazást ágyazna be a kliensbe, meg kell találnia vagy létre kell hoznia egy alkalmazást a kívánt megjelenéssel vagy funkcionalitással. Ez a témakör nem tartalmazza az alkalmazások készítéséhez szükséges folyamat részletes leírását. Ha még nem járatos a Power Apps terén, akkor tekintse meg a [Power Apps-dokumentációt](https://docs.microsoft.com/powerapps/).
+Mielőtt Power Apps-ból vászonalapú alkalmazást ágyazna be a kliensbe, meg kell találnia vagy létre kell hoznia egy alkalmazást a kívánt megjelenéssel vagy funkcionalitással. Ez a témakör nem tartalmazza az alkalmazások készítéséhez szükséges folyamat részletes leírását. Ha még nem járatos a Power Apps terén, akkor tekintse meg a [Power Apps-dokumentációt](/powerapps/).
 
 Kétféle módszer érhető el egy adott vászonalapú alkalmazás számára egy oldalon, amikor készen áll az alkalmazás beágyazására. Kiválaszthatja, hogy melyik a megközelítés illik a legjobban az Ön helyzetéhez. Az első megközelítés a **Power Apps** gombot használja, amely hozzá lett adva a szokásos műveletpanelhez. Az ezzel a megközelítéssel hozzáadott alkalmazások a **Power Apps** menü gombjának elemeiként jelennek meg. Ha kiválaszt egyet az elemek közül, akkor megnyílik a beágyazott alkalmazást tartalmazó oldalsó ablaktábla. Másik lehetőségként választhatja az alkalmazás beágyazását közvetlenül egy oldalon új lap, gyorslap vagy lapát, illetve a munkaterület új szakasza formájában.
 
 A beágyazott alkalmazás konfigurálásakor a vászonalapú alkalmazásban kiválaszthat egyetlen olyan mezőt, amelyet el szeretne küldeni az alkalmazásba kontextusként. Ez a lépés lehetővé teszi, hogy az alkalmazás az aktuálisan megtekintett adatok alapján legyen válaszképes.
 
 > [!NOTE]
-> Ez a mechanizmus jelenleg nem használható a modellezett alkalmazások beágyazására.  
+> Ez a mechanizmus jelenleg nem használható a modellvezérelt alkalmazások beágyazására.  
 
 ### <a name="details"></a>Részletek
 
@@ -55,7 +56,8 @@ Az alábbi eljárás megmutatja, hogyan történik a vászonalapú alkalmazás P
 
     - A **Név** mező jelzi annak a gombnak vagy lapnak a megjelenő szövegét, amely tartalmazza a beágyazott alkalmazást. Gyakran érdemes megismételni az alkalmazás nevét ebben a mezőben.
     - Az **Akalmazás aznonosítója** mező a beágyazni kívánt vászonalapú alkalmazás globálisan egyedi azonosítóját (GUID) adja meg. Az érték lekérdezéséhez keresse meg az alkalmazást a [make.powerapps.com](https://make.powerapps.com) oldalon, majd keresse meg az **Alkalmazás azonosítója** mezőt a **Részletek** alatt.
-    - Az **Alkalmazás kontextusának bevitele** elemnél kiválaszthatja azt a mezőt, amely az alkalmazás számára bemenetként továbbítandó adatokat tartalmazza. Lásd a következő című részt a témakör későbbi részében: [A Finance and Operations alkalmazásokból küldött adatokat használó alkalmazás felépítése](#building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps) arról, hogy az alkalmazás hogyan elérheti el a Finance and Operations alkalmazásból továbbított adatokat.
+    - Az **Alkalmazás kontextusának bevitele** elemnél kiválaszthatja azt a mezőt, amely az alkalmazás számára bemenetként továbbítandó adatokat tartalmazza. Ha szeretné megtudni, hogy a Finance and Operations alkalmazásokból küldött adatokhoz hogyan férhet hozzá az alkalmazás, lásd: [Olyan alkalmazás felépítése, amely a Finance and Operations alkalmazásokból továbbított adatokat használja ki](#building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps). 
+        - A 10.0.19-es verziótól kezdve az aktuális jogi személy is át lesz adva környezetként a vászonalapú alkalmazásnak a **cmp** URL-paraméterrel. Ez mindaddig nem lesz hatással a cél vászonalapú alkalmazására, amíg az alkalmazás fel nem használja ezeket az információkat. 
     - Válassza azt az **Alkalmazásméretet**, amely megfelel a beágyazott alkalmazás típusának. Válassza ki **Vékony** lehetőséget a mobileszközök számára épített alkalmazások, és a **Széles** lehetőséget a táblagépekhez létrehozott alkalmazások esetében. Ez biztosítja, hogy a beágyazott alkalmazás számára elegendő mennyiségű hely kerül kiosztásra.
     - A **Jogi személyek** gyorslap teszi lehetővé annak a kiválasztását, hogy melyik jogi személyekre nézve érhető el az alkalmazás. Alapértelmezés szerint a alkalmazás minden jogi személy számára hozzáférhető. Ez a lehetőség csak akkor érhető el, ha le van tiltva a [Mentett nézetek](saved-views.md) funkció. 
 
@@ -65,7 +67,7 @@ Az alábbi eljárás megmutatja, hogyan történik a vászonalapú alkalmazás P
 
 Miután beágyazott egy vászonalapú alkalmazást egy oldalra, és meggyőződött, hogy megfelelően működik az oldalról átadott adatkontextusokkal, érdemes megosztani a rendszer többi felhasználójával. Egy beágyazott vászonalapú alkalmazás megosztásához kövesse az alábbi lépéseket.
 
-1. [Ossza meg a vászonalapú alkalmazást](https://docs.microsoft.com/powerapps/maker/canvas-apps/share-app) a megfelelő felhasználókkal, hogy hozzáférhessenek az alkalmazáshoz a Power Apps szolgáltatásban. 
+1. [Ossza meg a vászonalapú alkalmazást](/powerapps/maker/canvas-apps/share-app) a megfelelő felhasználókkal, hogy hozzáférhessenek az alkalmazáshoz a Power Apps szolgáltatásban. 
 
 2. Győződjön meg róla, hogy a megcélzott felhasználók rendelkeznek a megfelelő testreszabásokkal, így a beágyazott alkalmazás akkor jelenik meg, amikor a felhasználók megtekintik az oldalt. A következő megközelítések közül választhat:
 
@@ -79,12 +81,14 @@ A termék személyre szabási funkcióival és a használatukkal kapcsolatos bő
 
 ## <a name="building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps"></a>A Finance and Operations alkalmazásokból küldött adatokat használó vászonalapú alkalmazás építése
 
-Amikor egy Finance and Operations alkalmazásba beágyazott vászonalapú alkalmazást hoz létre, akkor a folyamat egyik fontos része, hogy használja az adott Finance and Operations alkalmazásból származó bemeneti adatokat. A Power Apps fejlesztői élményből a Finance and Operations alkalmazás által átadott bemeneti adat a **Param(„EntityId”)** változó használatával érhető el.
+Amikor egy Finance and Operations alkalmazásba beágyazott vászonalapú alkalmazást hoz létre, akkor a folyamat egyik fontos része, hogy használja az adott Finance and Operations alkalmazásból származó bemeneti adatokat. A Power Apps fejlesztői élményből a Finance and Operations alkalmazás által átadott bemeneti adat a **Param(„EntityId”)** változó használatával érhető el. Továbbá a 10.0.19-es verziótól kezdve az aktuális jogi személy is át lesz adva a vászonalapú alkalmazásnak a **Param(„cmp”)** változóval. 
 
 Például az alkalmazás OnStart függvényében a Finance and Operations alkalmazásokból származó bemeneti adatokat egy változóra állíthatja be:
 
-```powerapps
+``` Power Apps
 If(!IsBlank(Param("EntityId")), Set(FinOpsInput, Param("EntityId")), Set(FinOpsInput, ""));
+
+If(!IsBlank(Param("cmp")), Set(FinOpsInput, Param("cmp")), Set(FinOpsLegalEntity, ""));
 ```
 
 ## <a name="viewing-a-canvas-app"></a>Vászonalapú alkalmazás megtekintése
@@ -112,6 +116,11 @@ Egy alkalmazás oldalba ágyazását követően szükség esetén kétféle mód
 - Mivel a beágyazott alkalmazás mentése személyre szabási adatokként történik, az oldal személyre szabásának törlése az összes az oldalba beágyazott alkalmazásokat szintén eltávolítja. Vegye figyelembe, hogy a lap személyre szabása végleges, és nem vonható vissza. Ha el szeretné távolítani egy lap személyes beállításait, válassza a **Lehetőségek** elemet, majd kattintson az **Oldal személyre szabása** elemre, végül kattintson a **Törlés** gombra. A böngésző frissítése után az oldal összes korábbi személyre szabási beállítása eltávolításra kerül. A lapok személyre szabással való optimalizációjával kapcsolatos további tudnivalók: [A felhasználói élmény testreszabása](personalize-user-experience.md).
 
 ## <a name="appendix"></a>Melléklet
+
+### <a name="developer-modeling-a-canvas-app-on-a-form"></a>[Fejlesztői] Vászonalapú alkalmazás modellezése egy űrlapon
+
+Miközben ez a témakör a személyre szabás során beágyazza a vászonalapú alkalmazásokat, a fejlesztőknek arra is lehetősége van, hogy a Visual Studio fejlesztői élmény segítségével hozzáadják a vászonalapú alkalmazásokat az űrlapokhoz. Ehhez egyszerűen adja hozzá a PowerAppsHostControl lehetőséget az űrlaphoz. A vezérlőhöz elérhető metaadat-tulajdonságok a személyre szabási élményekkel azonos lehetőségeket biztosítanak.
+
 
 ### <a name="developer-specifying-where-an-app-can-be-embedded"></a>[Fejlesztői] Egy alkalmazás beágyazásának helymeghatározása
 

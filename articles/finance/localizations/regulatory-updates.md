@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 2f235726d163b9262fabee4d0a1118600a60eee1
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 275a51620fad50f725dad7a37bd8ee776cf0ce4c
+ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5890776"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "5941140"
 ---
 # <a name="regulatory-updates"></a>Jogszabály-követési frissítések
 
@@ -47,6 +47,7 @@ A legújabb szabályozó frissítésekkel kapcsolatos tervekkel kapcsolatosan te
 |      Brazília         |   Október 2020.      | 10.0.16      |   DRCST nyilatkozat SC - SEF 262/2020   |
 |      Brazília         |   Október 2020.      | 10.0.16      |   SPED Fiscal ICMS / IPI rekord C176   |
 |      Brazília         |   december 2020.      | 10.0.17, 10.0.16HF, 10.0.15HF      |   NT-e NT2020.006 – A digitális platform közvetítőjének azonosítója (Elrendezési és ellenőrzési szabályok frissítései)   |
+|      Brazília         |   március 2021.         | 10.0.17, 10.0.18, 10.0.19         |    SPED REINF-elrendezés 1.5.1
 |      Európa        |   Január 2021.       | 10.0.17, 10.0.16HF, 10.0.15HF      |   Brexit – Észak-Írországi Protokoll hatása az EU-országok közösségen belüli kereskedelmi jelentéseire  |
 |      Németország        |   Január 2021.       | 10.0.16HF      |   Az ELSTER UstVA áfára vonatkozó előzetes értesítési formátumot két új mezővel bővítették (37,50) a behajthatatlan tartozások írásakor  |
 |      Németország        |   Január 2021.       | 10.0.17      |   Változások az ELSTER áfára vonatkozó előzetes értesítési XML-struktúrában (UstVA)  |

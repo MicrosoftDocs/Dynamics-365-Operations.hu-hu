@@ -2,7 +2,7 @@
 title: Elektronikus számlázás adminisztrációs összetevői
 description: Ez a témakör az Elektronikus számlázás adminisztrációval kapcsolatos összetevőiről nyújt tájékoztatást.
 author: gionoder
-ms.date: 03/29/2021
+ms.date: 04/29/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 2e859875e124796e49000cd5ea94cfb75ecd768a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 3ac4a03d75898680b5655421f3024dc6f666464c
+ms.sourcegitcommit: 54d3ec0c006bfa9d2b849590205be08551c4e0f0
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840028"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "5963191"
 ---
 # <a name="electronic-invoicing-administration-components"></a>Elektronikus számlázás adminisztrációs összetevői
 
@@ -87,10 +87,12 @@ Az Elektronikus számlázási szolgáltatás a felelős a vállalat tulajdonába
 - Az elektronikus számlák tárolásához szükséges Azure tárfiókot (Blob-tároló)
 - Egy Azure-kulcstartót a tanúsítványok és a tárolási fiók Uniform Resource Identifier (URI) tárolásához
 
-> [!NOTE]
-> A dedikált kulcstartót és a vevői tárfiókot kifejezetten az Elektronikus számlázással történő használatra kell felosztani.
 
-További információért lásd az [Azure tárfiók és kulcstartó létrehozása](e-invoicing-create-azure-storage-account-key-vault.md) lehetőséget.
+A dedikált kulcstartót és a vevői tárfiókot kifejezetten az Elektronikus számlázással történő használatra kell felosztani. További információért lásd az [Azure tárfiók és kulcstartó létrehozása](e-invoicing-create-azure-storage-account-key-vault.md) lehetőséget.
+
+Ha nyomon követi kulcstartójának állapotát, és figyelmeztetéseket kap, akkor konfigurálja az Azure Monitor for Key Vault szolgáltatást. A kulcstartó naplózásának engedélyezésével nyomon követheti, hogy mikor és ki érheti el a kulcstartókat. További információért lásd: [Az Azure Key Vault nyomon követése és figyelmeztetése](/azure/key-vault/general/alert), valamint [Kulcstartó naplózásának engedélyezése](/azure/key-vault/general/howto-logging?tabs=azure-cli).
+
+Ajánlott rendszeres időközönként cserélni a titkokat. További részletek a [Titkokkal kapcsolatos dokumentáció](/azure/key-vault/secrets/) részben találhatók.
 
 #### <a name="users"></a>Felhasználók
 

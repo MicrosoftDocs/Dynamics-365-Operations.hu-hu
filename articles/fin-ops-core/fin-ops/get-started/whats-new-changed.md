@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-09-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 67bac122593f53b1c43fcad74c39c2f40d091791
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 412a1f8d6aac597476fb2043caa72731e0437905
+ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750510"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923341"
 ---
 # <a name="whats-new-or-changed-in-finance-and-operations-apps-home-page"></a>Új vagy módosult elemek a Finance and Operations-alkalmazások kezdőlapján
 
@@ -33,7 +33,7 @@ Ha látni szeretné, hogy mi új vagy módosult a Finance and Operations-alkalma
 
 - **Pénzügy:** [Új vagy módosult elemek a Dynamics 365 Finance alkalmazásban](../../../finance/get-started/whats-new-home-page.md) 
 - **Supply Chain Management:** [Új vagy módosult elemek a Dynamics 365 Supply Chain Management alkalmazásban](../../../supply-chain/get-started/whats-new-home-page.md) 
-- **Kereskedelem:** [Új vagy módosult elemek a Dynamics 365 Commerce alkalmazásban](../../../retail/get-started/whats-new-home-page.md)
+- **Kereskedelem:** [Új vagy módosult elemek a Dynamics 365 Commerce alkalmazásban](../../../commerce/get-started/whats-new-home-page.md)
 - **Human Resources:** [Új vagy módosult elemek a Dynamics 365 Human Resources szolgáltatásban](../../../human-resources/hr-admin-whats-new.md)
 
 ## <a name="platform-updates"></a>Platformfrissítések

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0db1c35779a468d9a86d18eb6c849d40bc8c03a3
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 13053dd87242963586678b46c64493feb3383c4c
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5820082"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5920705"
 ---
 # <a name="create-a-bill-of-materials-for-a-dimension-based-product-master"></a>A dimenzión alapuló alaptermékre vonatkozó anyagjegyzék létrehozása
 
@@ -26,55 +26,56 @@ ms.locfileid: "5820082"
 
 Ehhez az eljáráshoz el kellett végeznie az előző 4 útmutatót a nyolc rögzítés sorrendjében. Az első 4 rögzítés beállítja azt az adatot, ami szükséges az eljárás végrehajtásához. Ez az eljárás az USMF bemutatócéget használja. Ezt a feladatot általában a termék tervező kezeli.
 
-
 ## <a name="select-the-product"></a>Válassza ki a terméket
-1. Kattintson a Kiadott termék karbantartása lehetőségre.
-2. Kattintson a Kibocsátott termék lehetőségre.
-3. A listában jelölje meg a kiválasztott sort.
+
+1. Kattintson a **Termékinformációk kezelése \> Termékek \> Kiadott termékek** lehetőségre.
+1. A listában jelölje meg a kiválasztott sort.
     * Keresse meg azt a dimenzión alapuló konfiguráció technológiájával kiadott alapterméket, amelyet az itt látható sorrendben hozott létre az első feladat útmutatójában.  
-4. A Művelet panelen kattintson a Mérnök elemre.
-5. Kattintson az Anyagjegyzék verziókra.
+1. A Műveleti ablaktáblán kattintson a **Mérnök** elemre.
+1. **DBJ-verziók** kiválasztása.
 
 ## <a name="create-new-bom-and-bom-version"></a>Hozzon létre új anyagjegyzéket és anyagjegyzék-verziót
-1. Kattintson az Új lehetőségre.
-2. Kattintson az Anyagjegyzék és az Anyagjegyzék verzió elemre.
-3. Írjon be egy értéket a Név mezőbe.
+
+1. Válassza az **Új** lehetőséget.
+1. Válassza ki a **DBJ és DBJ-verzió** elemet.
+1. Írjon be egy értéket a **Név** mezőbe.
     * Hely beállítása  
     * Ebben az eljárásban nem állítunk be egy adott helyet az anyagjegyzékre vonatkozóan.  
-4. Kattintson az OK gombra.
-5. Kattintson az Új lehetőségre.
+1. Válassza ki az **OK** lehetőséget.
+1. Válassza az **Új** lehetőséget.
     * Ebben az eljárásban négy sort adunk az Anyagjegyzékhez. Két sor a kábel beállításokat és két sor pedig kabinetfájl beállításokat jelöli.  
-6. A listában jelölje meg a kiválasztott sort.
-7. Az Elemszám mezőben adjon meg, vagy válasszon ki egy értéket.
+1. A listában jelölje meg a kiválasztott sort.
+1. Az **Cikkszám** mezőben adjon meg vagy válasszon ki egy értéket.
     * Válassza ki a A0001 -es cikkszámot, HDMI 6'-os kábelt.  
-8. A Konfigurációs csoport mezőben adjon meg, vagy válasszon ki egy értéket.
+1. A **Konfigurációs csoport** mezőben adjon meg, vagy válasszon ki egy értéket.
     * Válassza ki a 4-es útmutatóban létrehozott Kábel konfigurációs csoportot ebben a sorozatban.  
-9. Kattintson az Új lehetőségre.
+1. Válassza az **Új** lehetőséget.
     * Válassza ki a A0002-es cikkszámot, HDMI 12'-os kábelt.  
-10. A listában jelölje meg a kiválasztott sort.
-11. Az Elemszám mezőben adjon meg, vagy válasszon ki egy értéket.
-12. A Konfigurációs csoport mezőben adjon meg, vagy válasszon ki egy értéket.
+1. A listában jelölje meg a kiválasztott sort.
+1. Az **Cikkszám** mezőben adjon meg vagy válasszon ki egy értéket.
+1. A **Konfigurációs csoport** mezőben adjon meg, vagy válasszon ki egy értéket.
     * Válassza ki újból a Kábel konfigurációs csoportot.  
-13. Kattintson az Új lehetőségre.
-14. A listában jelölje meg a kiválasztott sort.
-15. Az Elemszám mezőben adjon meg, vagy válasszon ki egy értéket.
+1. Válassza az **Új** lehetőséget.
+1. A listában jelölje meg a kiválasztott sort.
+1. Az **Cikkszám** mezőben adjon meg vagy válasszon ki egy értéket.
     * Válassza ki a D0002 cikkszámú kabinetfájlt.  
-16. A Konfigurációs csoport mezőben adjon meg, vagy válasszon ki egy értéket.
-    * Válassza ki a Kabinetfájl konfigurációs csoportot ezen anyagjegyzék sorára vonatkozóan.  
-17. Kattintson az Új lehetőségre.
-18. A listában jelölje meg a kiválasztott sort.
-19. Az Elemszám mezőben adjon meg, vagy válasszon ki egy értéket.
+1. A **Konfigurációs csoport** mezőben adjon meg, vagy válasszon ki egy értéket.
+    * Válassza ki a kabinetfájl konfigurációs csoportot ezen anyagjegyzék sorára vonatkozóan.  
+1. Válassza az **Új** lehetőséget.
+1. A listában jelölje meg a kiválasztott sort.
+1. Az **Cikkszám** mezőben adjon meg vagy válasszon ki egy értéket.
     * Válassza ki az M0007 cikkszámú StandardCabinet elemet az utolsó Anyagjegyzék soraként.  
-20. A Konfigurációs csoport mezőben adjon meg, vagy válasszon ki egy értéket.
+1. A **Konfigurációs csoport** mezőben adjon meg, vagy válasszon ki egy értéket.
     * Válassza ki a Kabinetfájl konfigurációs csoportot az utolsó anyagjegyzék sorára vonatkozóan.  
 
 ## <a name="approve-and-activate"></a>Jóváhagyás és aktiválás
+
 1. Zárja be a lapot.
-2. Kattintson a Jóváhagyás lehetőségre.
-3. A Jóváhagyó mezőben adjon meg vagy válasszon ki egy értéket.
-4. A „Szeretné az anyagjegyzéket is jóváhagyni?” kérdésre válaszolva válassza ki az Igen lehetőséget.
-5. Kattintson az OK gombra.
-6. Kattintson az Aktiválás gombra.
+1. Válassza a **Jóváhagyás** lehetőséget.
+1. A **Jóváhagyó** mezőben adjon meg vagy válasszon ki egy értéket.
+1. A **Szeretné az anyagjegyzéket is jóváhagyni?** kérdésre válaszolva válassza ki az *Igen* lehetőséget.
+1. Válassza ki az **OK** lehetőséget.
+1. Válassza az **Aktiválás** lehetõséget.
 
 
 

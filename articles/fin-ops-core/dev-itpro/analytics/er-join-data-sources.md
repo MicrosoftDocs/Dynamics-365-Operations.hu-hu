@@ -2,7 +2,7 @@
 title: Több alkalmazási táblából származó adatok beolvasásához használja a JOIN adatforrásokat az ER-modell-leképezésekben.
 description: Ez a témakör bemutatja, hogyan használhatók JOIN típusú adatforrások elektronikus jelentésekhez (ER).
 author: NickSelin
-ms.date: 05/04/2020
+ms.date: 04/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-03-01
 ms.dyn365.ops.version: Release 10.0.1
-ms.openlocfilehash: d42016b914d7992b6f4ae1c573eb8f867ba87e22
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: be5646eaf395310c8b34586ef1274a41b5b97029
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5743977"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944718"
 ---
 # <a name="use-join-data-sources-to-get-data-from-multiple-application-tables-in-electronic-reporting-er-model-mappings"></a>Több alkalmazási táblából származó adatok beolvasásához használja a JOIN adatforrásokat az elektronikus jelentéskészítési (ER) modell-leképezésekben.
 
@@ -64,13 +64,13 @@ A jelen témakörben szereplő példák végrehajtásához a következők egyik�
 
 Mindemelett először el kell végeznie a [Konfigurációszolgáltató létrehozása, és megjelölés aktívként](tasks/er-configuration-provider-mark-it-active-2016-11.md) eljárás lépéseit.
 
-Előzetesen le kell töltenie a [Microsoft letöltőközpontból](https://go.microsoft.com/fwlink/?linkid=000000) a következő minta konfigurációs fájlokat, és helyben el kell mentenie azokat:
+Előzetesen le kell töltenie és mentenie kell a következő ER-konfigurációs fájlokat:
 
 | **Tartalom leírása**  | **Fájlnév**   |
 |--------------------------|-----------------|
-| A minta **ER-adatmodell** konfigurációs fájl, amelyeket a példákban adatforrásként használunk.| [Model to learn JOIN data sources.version.1.1.xml](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
-| A minta **ER-modelleképezés** konfigurációs fájl, amely az ER adatmodellt implementálja a példákhoz. | [Mapping to learn JOIN data sources.version.1.1.xml](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
-| Minta **ER-formátum** konfigurációs fájl. Ez a fájl leírja azokat az adatokat, amelyek a példákban szereplő ER formátumú összetevőt töltik fel. | [Format to learn JOIN data sources.version.1.1.xml](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| A minta **ER-adatmodell** konfigurációs fájl, amelyeket a példákban adatforrásként használunk.| [Model to learn JOIN data sources.version.1.1.xml](https://download.microsoft.com/download/5/c/1/5c1d8a57-6ebd-425b-bc5d-c71dde92c6af/ModeltolearnJOINdatasources.version.1.xml) |
+| A minta **ER-modelleképezés** konfigurációs fájl, amely az ER adatmodellt implementálja a példákhoz. | [Mapping to learn JOIN data sources.version.1.1.xml](https://user-images.githubusercontent.com/19827601/115923048-86b10400-a432-11eb-9e57-c37a02effcb4.png)|
+| Minta **ER-formátum** konfigurációs fájl. Ez a fájl leírja azokat az adatokat, amelyek a példákban szereplő ER formátumú összetevőt töltik fel. | [Format to learn JOIN data sources.version.1.1.xml](https://download.microsoft.com/download/f/f/8/ff8f1b48-14d0-4c73-9145-bcdf8b5265bc/FormattolearnJOINdatasources.version.1.1.xml) |
 
 ### <a name="activate-a-configurations-provider"></a>Konfigurációs szolgáltató aktiválása
 
@@ -128,13 +128,13 @@ Az ER modell-leképezési összetevő beállításainak áttekintése. Az össze
     3. A **ConfigurationTitle: String = @.'>Relations'.Solution.Name** kötése azt jelzi, hogy az ER konfiguráció neve a **Név** mezőből származik az **ERSolutionTable** táblából,amely egy a sokhoz kapcsolattal (**'>Kapcsolatok'**) használatával mér fel az **ERSolutionVersionTable** és **ERSolutionTable** táblák között. Az aktuális alkalmazáspéldány ER konfigurációinak nevei a konfigurációk lap **Konfigurációk** fájában jelennek meg.
     4. A **@.'>Relations'.Solution.'>Relations'.SolutionVendor.Name** kötése azt jelzi, hogy az konfigurációszolgáltató neve, aki az aktuális konfiguráció tulajdonosa a **Név** mezőből származik az **ERVendorTable** táblából,amely egy a sokhoz kapcsolattal ('>Kapcsolatok') használatával mér fel az **ERSolutionVersionTable** és **ERVendorTable** táblák között. Az ER konfigurációszolgáltatók nevei a **Konfigurációk** lapon az egyes konfigurációk oldalfejlécében jelennek meg. Az összes konfigurációs szolgáltató listája a **Szervezeti adminisztráció \> Elektronikus jelentéskészítés \> Konfigurációs szolgáltató** tábla lapján érhető el.
 
-    ![Elektronikus jelentéskészítés – modell-leképezés tervező oldal](./media/GER-JoinDS-Set1Review.PNG)
+    ![Az adatmodell-elemek kötésének listája az ER-modell-leképezés tervező oldalán](./media/GER-JoinDS-Set1Review.PNG)
 
 6. Bontsa ki a konfigurációk fastruktúrájában a **Set1.Summary** adatmodell-elemet:
 
     1. A **VersionsNumber: Integer = VersionsSummary.aggregated.VersionsNumber** társítása azt jelzi, hogy a **Set1.Summary.VersionsNumber** elem társítva van a **VersionsNumber** egyesített mezőjéhez a **VersionsSummary** adatforrásnak a **GroupBy** típus alatt, amely úgy van knfigurálva, hogy az **ERSolutionVersionTable** rekordajinak számát adja vissza a **Verziók** adatforráson keresztül.
 
-    ![GROUPBY adatforrás paraméterek lapja](./media/GER-JoinDS-Set1GroupByReview.PNG)
+    ![A „Csoportosítás alapja” paraméterek oldal szerkesztése](./media/GER-JoinDS-Set1GroupByReview.PNG)
 
 7. Zárja be a lapot.
 
@@ -144,11 +144,11 @@ Az ER modell-leképezési összetevő beállításainak áttekintése. Az össze
 
 1. Bontsa ki a konfigurációk fastruktúrájában a **Set2** és a **Set2.Details** adatmodell-elemeket. A **Details: Record list = Details** társítás azt jelzi, hogy a **Set2.Details** elem társítva van a **Részletek** adatforrással, amely az **Egyesítés** típus adatforrásaként van konfigurálva.
 
-    ![Elektronikus jelentéskészítés – modell-leképezés tervező oldal](./media/GER-JoinDS-Set2Review.PNG)
+    ![ER modell-leképezés tervezőlapja, amely mutatja a kibontott Set2:Record adatmodell-cikkeket](./media/GER-JoinDS-Set2Review.PNG)
 
     Az **Egyesítés** adatforrás a **Functions\Join** adatforrás kiválasztásával adható hozzá:
 
-    ![Elektronikus jelentéskészítés – modell-leképezés tervező oldal](./media/GER-JoinDS-AddJoinDS.PNG)
+    ![ER-modell-leképezés tervezőoldal, adatforrás-típus összekapcsolása](./media/GER-JoinDS-AddJoinDS.PNG)
 
 2. Válassza ki a **Részletek** adatforrást.
 3. Válassza az **Adatforrás** ablaktábla **Szerkesztés** elemét.
@@ -196,21 +196,21 @@ Az ER modell-leképezési összetevő beállításainak áttekintése. Az össze
 
     Ez a formátum úgy van kialakítva, hogy egy ER konfiguráció minden verziójának új sorával töltse fel a létrejövő szövegfájlt (**Verzió** sorozat). Minden létrehozott sor tartalmazni fogja az aktuális konfigurációt birtokló konfigurációszolgáltató nevét, a konfiguráció nevét és a konfiguráció verzióját pontosvesszővel elválasztva. A létrejövő fájlok végleges sora az ER konfigurációk felismert verzióinak számát fogja tartalmazni **( Összegzés** sorozat).
 
-    ![ER-formátumtervező oldal](./media/GER-JoinDS-FormatReview.PNG)
+    ![ER-formátumtervező lap, formátum fül](./media/GER-JoinDS-FormatReview.PNG)
 
     Az **Adatok** és az **Összegzés** adatforrások a konfigurációs verziók adatainak a létrejövő fájlra történő feltöltésekor használatosak:
 
     - A **Set1** adatmodellből származó adatokat akkor használja a program , ha a felhasználó párbeszédpanelén a **Nem** lehetőséget választja a **Kiválasztó** adatforrás számára, amikor az ER formátumot futtatja.
     - A **Set2** adatmodellből származó adatokat akkor használja a program , ha a felhasználó párbeszédpanelén az **Igen** lehetőséget választja a **Kiválasztó** adatforrás számára, amikor az ER formátumot futtatja.
 
-    ![ER-formátumtervező oldal](./media/GER-JoinDS-FormatMappingReview.PNG)
+    ![ER-formátumtervező lap, leképezési fül](./media/GER-JoinDS-FormatMappingReview.PNG)
 
 9. Válassza a **Futtatás** parancsot.
 10. Válassza a párbeszédpanel lap **nem** elemét a **JOIN adatforrás használata** mezőben.
 11. Válassza ki az **OK** lehetőséget.
 12. Előállított fájl megtekintése.
 
-    ![ER felhasználói párbeszédpanel](./media/GER-JoinDS-Set1Run.PNG)
+    ![Az elektronikus jelentés paramétereinek létrehozott fájlja nem használja a JOIN adatforrást](./media/GER-JoinDS-Set1Run.PNG)
 
 #### <a name="analyze-er-format-execution-trace"></a>Az ER formátum végrehajtási nyomkövetésének elemzése
 
@@ -224,7 +224,7 @@ Az ER modell-leképezési összetevő beállításainak áttekintése. Az össze
     - Az **ERSolutionTable** meghívása ugyanannyiszor történik, mint ahány konfigurációs verzió rekordja van az **ERSolutionVersionTable** táblában, ugyanakkor az ilyen meghívások száma csökkenthető a teljesítmény javítása érdekében.
     - Az **ERVendorTable** meghívása kétszer történik minden felfedezett konfigurációs verzió rekordjához az **ERSolutionVersionTable** táblában, ugyanakkor az ilyen meghívások száma is csökkenthető.
 
-    ![Elektronikus jelentéskészítés – modell-leképezés tervező oldal](./media/GER-JoinDS-Set1Run2.PNG)
+    ![Végrehajtási statisztika az ER-modell-leképezés tervező oldalán](./media/GER-JoinDS-Set1Run2.PNG)
 
 5. Zárja be a lapot.
 
@@ -236,7 +236,7 @@ Az ER modell-leképezési összetevő beállításainak áttekintése. Az össze
 4. Válassza ki az **OK** lehetőséget.
 5. Előállított fájl megtekintése.
 
-    ![ER felhasználói párbeszédpanel](./media/GER-JoinDS-Set2Run.PNG)
+    ![Az elektronikus jelentés paramétereinek létrehozott fájlja használja a JOIN adatforrást](./media/GER-JoinDS-Set2Run.PNG)
 
 #### <a name="analyze-er-format-execution-trace"></a><a name="analyze"></a> Az ER formátum végrehajtási nyomkövetésének elemzése
 
@@ -249,11 +249,11 @@ Az ER modell-leképezési összetevő beállításainak áttekintése. Az össze
 
     - Az alkalmazás-adatbázis hívása egyszer megtörtént az **ERVendorTable**, **ERSolutionTable** és **ERSolutionVersionTable** táblák rekordjainak lekéréséhez a szükséges mezők eléréséhez.
 
-    ![Elektronikus jelentéskészítés – modell-leképezés tervező oldal](./media/GER-JoinDS-Set2Run2.PNG)
+    ![ER-modell-leképezés tervező oldal teljesítménystatisztika részletei](./media/GER-JoinDS-Set2Run2.PNG)
 
     - Az alkalmazás-adatbázis hívása egyszer történik a konfigurációs verziók számának kiszámításához a **Részletek** adatforrásban megadott egyesítések segítségével.
 
-    ![Elektronikus jelentéskészítés – modell-leképezés tervező oldal](./media/GER-JoinDS-Set2Run3.PNG)
+    ![Az alkalmazás adatbázis-hívásokat megjelenítő ER modell-leképezés tervezőoldala](./media/GER-JoinDS-Set2Run3.PNG)
 
 ## <a name="limitations"></a>Korlátozások
 

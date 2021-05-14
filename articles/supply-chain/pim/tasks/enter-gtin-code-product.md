@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 18df36fe2d147ce395c113eacaf69d8016b38303
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: c0163844d7999468e288ba2d612662d1dd6f22df
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818061"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5921389"
 ---
 # <a name="enter-the-gtin-code-for-a-product"></a>Adja meg a GTIN-kódot a termékhez
 
@@ -26,18 +26,17 @@ ms.locfileid: "5818061"
 
 A GTIN-kódok kiosztását a GS1 szervezet végzi. Ebben a példában termékszámként az M0001 kódot adja meg az USMF bemutatócég számára.
 
-1. Kattintson a Kiadott termék karbantartása lehetőségre.
-2. Kattintson a Kibocsátott termék lehetőségre.
-3. Bontsa ki a Termék kép Adatterület lehetőséget.
-4. A kívánt rekord megkeresése és kijelölése a listán
-5. A Művelet panelen kattintson a Készletkezelés elemre.
-6. Kattintson a GTIN-kódokra.
-7. Kattintson az Új elemre.
-8. A listában jelölje meg a kiválasztott sort.
-9. Az Egység mezőben adjon meg vagy válasszon ki egy értéket.
-10. A GTIN-kód mezőben válasszon lehetőséget.
-11. Az GTIN mezőben adjon meg egy értéket.
-12. Zárja be a lapot.
+1. Kattintson a **Termékinformációk kezelése \> Termékek \> Kiadott termékek** lehetőségre.
+1. Bontsa ki a **Termékkép** adatterület lehetőséget.
+1. Keresse meg és jelölje ki a kívánt rekordot a listán.
+1. A Művelet panelen kattintson a **Készletkezelés** elemre.
+1. **GTIN-kódok** kiválasztása.
+1. Válassza az **Új** lehetőséget.
+1. A listában jelölje meg a kiválasztott sort.
+1. Az **Egység** mezőben adjon meg vagy válasszon ki egy értéket.
+1. A **GTIN-kód** mezőben válasszon ki egy lehetőséget.
+1. A **GTIN mezőben** adjon meg egy értéket.
+1. Zárja be a lapot.
 
 
 

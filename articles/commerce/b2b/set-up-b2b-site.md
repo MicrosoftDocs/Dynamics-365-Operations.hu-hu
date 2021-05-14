@@ -2,7 +2,8 @@
 title: B2B e-kereskedelmi webhely beállítása
 description: Ez a témakör azt mutatja be, hogyan lehet beállítani egy B2B e-kereskedelmi webhelyet a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: josaw1
-ms.date: 01/20/2021
+manager: AnnBe
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +15,17 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 3c6ea6118c3ba0ab77fea91b2eafa75c89b8d71d
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: db33bf941303c6a74f9c6b2d5a782762f7180f1b
+ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799757"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "5937506"
 ---
 # <a name="set-up-a-b2b-e-commerce-site"></a>B2B e-kereskedelmi webhely beállítása
 
 [!include [banner](../../includes/banner.md)]
+[!include [banner](../../includes/preview-banner.md)]
 
 A vállalatok közötti (B2B) e-kereskedelmi webhelyek néhány olyan kulcsfontosságú lehetőséget kínálnak, amelyek optimalizálják a munkafolyamatot egy B2B-felhasználó számára. Ez a témakör azt mutatja be, hogyan lehet beállítani egy B2B e-kereskedelmi webhelyet a Microsoft Dynamics 365 Commerce alkalmazásban. Végigmegy a modulokon és a webhelybeállításokon, amelyeket a B2B-specifikus helyzetek engedélyezéséhez kell konfigurálni.
 
@@ -283,9 +285,35 @@ Ha számlarészletező oldalt szeretne létrehozni a webhelykészítőben, hajts
 1. Válassza a **Mentés** elemet, válassza a **Szerkesztés befejezése** parancsot az oldal ellenőrzéséhez, majd a **Közzététel** elemet a közzétételhez.
 1. Az oldal URL-címének közzététele.
 
+## <a name="add-a-quick-add-module-to-the-cart-page"></a>Gyorshozzáadási modul hozzáadása a kosároldalhoz
+
+A gyorshozzáadási modul segítségével gyorsan hozzá lehet adni több cikket a kosárhoz a cikkazonostó (más néven termékraktározási egység \[SKU\] azonosítók) használatával. A gyors hozzáadási modul felkerül a webhely kosároldalára.
+
+A gyorshozzáadási modulnak a kosároldalhoz való hozzáadásához a Commerce webhelykészítő felületén hajtsa végre az alábbi lépéseket.
+
+1. Menjen a **Sablonok** lapra, és válassza ki a webhely kosarának lapsablonját.
+1. Válassza ki a **Szerkesztés** opciót.
+1. Az **Alapértelmezett lap** modul **Fő** helyén válassza ki a három pont (**…**) gombot, majd válassza a **Modul hozzáadása** elemet.
+1. A **Modul hozzáadása** párbeszédpanelen válassza ki az **Tároló** modult, majd kattintson az **OK** gombra.
+1. Az **Tároló** helyben válassza a három pont (**…**) gombot, majd válassza az **Modul hozzáadása** elemet.
+1. A **Modul hozzáadása** párbeszédpanelen válassza ki a **Gyors hozzáadás** modult, majd kattintson az **OK** gombra.
+1. Válassza a **Mentés** elemet, válassza a **Szerkesztés befejezése** parancsot a sablon ellenőrzéséhez, majd a **Közzététel** elemet a közzétételhez.
+1. Menjen az **Oldalak** lapra, és válassza ki a webhely kosarát.
+1. Az **Alapértelmezett lap** modul **Fő** helyén válassza ki a három pont (**…**) gombot, majd válassza a **Modul hozzáadása** elemet.
+1. A **Modul hozzáadása** párbeszédpanelen válassza ki az **Tároló** modult, majd kattintson az **OK** gombra.
+1. A **Tároló** modul tulajdonságlapján a **Szélesség** tulajdonságot állítsa **Tároló kitöltése** értékre.
+1. Az **Tároló** helyben válassza a három pont (**…**) gombot, majd válassza az **Modul hozzáadása** elemet.
+1. A **Modul hozzáadása** párbeszédpanelen válassza ki a **Gyors hozzáadás** modult, majd kattintson az **OK** gombra.
+1. Válassza a **Mentés** elemet, válassza a **Szerkesztés befejezése** parancsot az oldal ellenőrzéséhez, majd a **Közzététel** elemet a közzétételhez.
+
+> [!NOTE] 
+> A gyorshozzáadás modul a Commerce 10.0.17-es verziójának kiadásaként érhető el. Ha a Commerce egy korábbi verziójáról frissít, akkor manuálisan kell frissítenie az appsettings.json fájlt. Az utasításokat lásd itt: [SDK- és modultár-frissítések](../e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
+
 ## <a name="additional-resources"></a>További erőforrások
 
 [Modultár áttekintése](../starter-kit-overview.md)
+
+[SDK- és modultár-frissítések](../e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file)
 
 [Szerkesztési oldal áttekintése](../authoring-home-overview.md)
 
@@ -299,7 +327,7 @@ Ha számlarészletező oldalt szeretne létrehozni a webhelykészítőben, hajts
 
 [Tartalomblokk-modul](../add-hero-module.md)
 
-[Termékgyűjtemény](../product-collection-module-overview.md)
+[Termékgyűjtési modul](../product-collection-module-overview.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0f54d0ea87d8ce5ffdf5600995004e558ddd86fa
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0c30c520e7265c2676937f5191844f6789c364e6
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5833257"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5921241"
 ---
 # <a name="set-up-attribute-based-pricing-for-configurable-products"></a>Állítsa be a konfigurálható termékek attribútum-alapú árképzését
 
@@ -28,17 +28,18 @@ Ez a témakör azt ismerteti, hogyan állítható be az attribútumalapú árké
 
 
 ## <a name="create-a-new-price-model"></a>Új ármodell létrehozása
-1. Válassza ki a **Termékváltozat modelldefiníciója** elemet a kezdőlapon.
-2. Válassza ki a **Termékkonfigurációs modellek** lehetőséget a **hivatkozások** részben.
-3. A listában válassza ki a **High End hangszóró** sort, de ne válassza ki a név hivatkozását.
-4. A Műveleti ablaktáblán kattintson a **Modell** elemre.
-5. Válassza ki az **Ármodellek** lehetőséget.
-6. Válassza az **Új** lehetőséget.
-7. Írjon be egy értéket az **Ármodell neve** mezőbe. Olyan nevet használjon, amelyik könnyen azonosíthatóvá teszi a modellt.  
-8. Írjon egy értéket a **Leírás** mezőbe.
-9. Válassza a **Mentés** lehetőséget.
+
+1. Lépjen a **Termékinformáció-kezelés \> Termékek \> Termékkonfigurációs modellek** elemre.
+1. A listában válassza ki a **High End hangszóró** sort, de ne válassza ki a név hivatkozását.
+1. A Műveleti ablaktáblán kattintson a **Modell** elemre.
+1. Válassza ki az **Ármodellek** lehetőséget.
+1. Válassza az **Új** lehetőséget.
+1. Írjon be egy értéket az **Ármodell neve** mezőbe. Olyan nevet használjon, amelyik könnyen azonosíthatóvá teszi a modellt.  
+1. Írjon egy értéket a **Leírás** mezőbe.
+1. Válassza a **Mentés** lehetőséget.
 
 ## <a name="add-price-elements"></a>Árelem hozzáadása
+
 1. Válassza ki a **Szerkesztés** opciót. A termékmodell minden egyes összetevőjéhez tartozhat egy alapár elem és tetszőleges számú árkifejezés-szabály. Különböző pénznemben szereplő árak is hozzáadhatók.  
 2. Írjon be egy értéket az **Alapár kifejezése** mezőbe. Például írja be a „100” értéket. Az alapár kifejezése numerikus érték lehet, vagy számítás, amely magában foglal egy vagy több attribútumot.  
 3. Válassza a **Hozzáadás** lehetőséget.

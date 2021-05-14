@@ -2,7 +2,7 @@
 title: A felhasználói élmény testreszabása
 description: Ez a témakör bemutatja, hogyan lehet személyre szabni az alkalmazást.
 author: jasongre
-ms.date: 09/11/2020
+ms.date: 04/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: efc5afc9d685954bf736686bbed3e7575f76e7e7
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 764444442aedcbf0934f1c636d7440bc0d277043
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744693"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944533"
 ---
 # <a name="personalize-the-user-experience"></a>A felhasználói élmény testreszabása
 
@@ -98,7 +98,7 @@ A tulajdonságablak segítségével egy elem testreszabása a következőképpen
 
 A tulajdonságablak szerepeltethet egyéb személyre szabása funkciókat az elemtől függően. Például egy csempe a tulajdonságablak előfordulhat, hogy lehetővé teszik és támogatják ezt a csempét az irányítópulton, illetve a tulajdonságablakok az elemek alapértelmezett irányítópultjához előfordulhat, hogy lehetővé teszik egy új, egyéni munkaterület létrehozását.
 
-### <a name="the-personalization-toolbar"></a>Személyre szabási eszköztár
+### <a name="personalization-toolbar"></a>Személyre szabási eszköztár
 
 Ha több módosítást is szeretne végrehajtani egy lapon, illetve olyan módosításokat szeretne végrehajtani, amelyek nem érhetők el más mechanizmusokon keresztül (például elemeket szeretne újrarendezni), használhatja a **Testreszabás** eszköztárat. A **Testreszabás** eszköztár megnyitásához hajtsa végre a következő lépések valamelyikét:
 
@@ -173,7 +173,90 @@ Az irányítópulton elérhető egyedi személyre szabási lehetőséggel adhat 
 
 ## <a name="sharing-personalizations"></a>Személyre szabások megosztása
 
-Az oldal személyre szabása után más felhasználókkal is megoszthatja a személyes beállításait a személyre szabott oldal exportálásával. Ezután más felhasználóktól kérheti a személyre szabási fájlok importálását. Másik lehetőségként a személyre szabásokat adhat a rendszergazdai jogokkal rendelkező felhasználónak. Ez a felhasználó ezután alkalmazhatja a személyre szabási fájljait egyszerre több felhasználóra a **Személyre szabás** adminisztrációs lap használatával.
+Az oldal személyre szabása után számos módszerrel oszthatja meg más felhasználókkal a személyre szabásait. A következő listában a módszerek az ajánlottaktól a legkevésbé ajánlottakig vannak rangsorolva.
+
+1. Nézetek közzététele felhasználók számára.
+2. Nézetek vagy személyre szabás másolása a felhasználóknak.
+3. Nézetek és személyre szabások exportálása és importálása.
+
+### <a name="publish-views-to-users"></a>Nézetek közzététele felhasználók számára
+
+Ha a [Mentett nézetek](saved-views.md) funkció be van kapcsolva, és az oldal támogatja a nézeteket, akkor a személyre szabás más felhasználókkal való megosztásának legjobb módja a nézet közzététele az egy vagy több biztonsági szerepkört használó felhasználók számára. További információ: [Nézetek közzététele](saved-views.md#publishing-views).
+
+### <a name="copy-views-or-personalizations-to-users"></a>Nézetek vagy személyre szabás másolása a felhasználóknak
+
+Ha a [Mentett nézetek](saved-views.md) funkció ki van kapcsolva, vagy az oldal nem támogatja a nézeteket, akkor a személyre szabás megosztásának javasolt módja a felhasználók közötti másolás. Ez a módszer csak jogosultsággal rendelkező felhasználók (például rendszergazdák) számára érhető el. A rendszergazdák azonban megtekinthetik egy adott felhasználó személyre szabási beállításait a rendszerben (beleértve a felhasználó személyes nézetét is, ha engedélyezve vannak a mentett nézetek), és átmásolják a konfigurációt más felhasználókhoz.
+
+Ha engedélyezve vannak a mentett nézetek, akkor a személyre szabás másolása érdekében kövesse az alábbi lépéseket.
+
+1. Menjen a **Rendszerfelügyelet \> Beállítás \> Személyre szabás** elemre.
+2. A személyes nézetek másolásához kövesse az alábbi lépéseket:
+
+    1. **Személyes nézetek** kiválasztása.
+    2. Válassza ki a kívánt nézeteket a listából.
+    3. Válassza a **Másolás a felhasználóknak** lehetőséget.
+    4. Válassza ki azokat a felhasználókat, akik számára megosztja a nézeteket.
+
+    A következő lépések követésével másolhatja a személyre szabásokat az olyan lapokra, amelyek nem támogatják a nézeteket:
+
+    1. Válassza a **Felhasználói beállítások** lehetőséget.
+    2. Válassza ki a felhasználót, akivel meg szeretné osztani a személyre szabást.
+    3. Válassza az **Összes személyre szabás kezelése** lehetőséget.
+    4. Válassza ki a kívánt személyre szabást a listából.
+    5. Válassza a **Másolás a felhasználóknak** lehetőséget.
+    6. Válassza ki azokat a felhasználókat, akik számára megosztja a személyre szabásokat.
+
+Ha nincsenek engedélyezve a mentett nézetek, akkor a személyre szabások másolása érdekében kövesse az alábbi lépéseket.
+
+1. Menjen a **Rendszerfelügyelet \> Beállítás \> Személyre szabás** elemre.
+2. Válassza az **Alkalmazás** lehetőséget.
+3. Válassza ki azokat a felhasználókat, akik számára megosztja a személyre szabást.
+4. **Meglévő személyre szabás** kiválasztása.
+5. Keresse meg és válassza ki azt (az egyetlen) személyre szabási lehetőséget, amely érdekli.
+6. Válassza ki az **OK** lehetőséget.
+
+### <a name="export-and-import-views-or-personalizations"></a>Nézetek és személyre szabások exportálása és importálása
+
+A személyre szabás egy másik módja az exportálás és importálás. Az egyes felhasználók, illetve a nevükben eljáró rendszergazdák ezt a módszert használhatják a személyre szabásuk vagy nézeteik exportálására, majd átadhatja az exportált fájlt más felhasználóknak importálás céljából. A felhasználók exportált személyre szabásokat adhatnak meg egy olyan felhasználónak, aki rendszergazdai jogosultságokkal rendelkezik, és ezt követően a **Személyre szabás** felügyelete lapon alkalmazhatja a személyre szabási fájlt egyszerre több felhasználóra is.
+
+#### <a name="export"></a>Export
+
+Általában a saját nézeteit vagy személyre szabásait a megfelelő lap megnyitásával, a **Személyre szabás** eszköztár megnyitásával, majd az **Exportálás** lehetőség kiválasztásával exportálhatja. Az eszköztárral kapcsolatos további információt a témakör korábbi, [Személyre szabási eszköztár](#personalization-toolbar) szakasza tartalmaz. Ha engedélyezve van a [mentett nézetek](saved-views.md), akkor a **Beállítások \> Felhasználói beállítások \> Személyre szabás** funkcióval megtekintheti a rendszer személyre szabási beállításainak listáját. Ezután kiválaszthatja az exportálni kívánt nézeteket vagy személyre szabásokat, majd válassza az **Exportálás** lehetőséget.
+
+A következő lépésekkel a rendszergazdák exportálják más felhasználók személyre szabási adatait is.
+
+1. Menjen a **Rendszerfelügyelet \> Beállítás \> Személyre szabás** elemre.
+2. A **Felhasználók** fülön válassza ki a kívánt felhasznált.
+3. Keresse meg és válassza ki azt a nézetet vagy személyre szabási lehetőséget, amely érdekli.
+4. Válassza az **Exportálás** lehetőséget.
+
+#### <a name="import"></a>Importálás
+
+Nézet vagy személyre szabás importálása esetén nyissa meg a **Személyre szabás** eszköztárat, és válassza az **Importálás** lehetőséget. Ezenkívül a rendszergazdák importálhatnak egy fájlt, és azonnal átadhatják egy vagy több felhasználónak.
+
+Ha engedélyezve vannak a mentett nézetek, akkor kövesse az alábbi lépéseket.
+
+1. Menjen a **Rendszerfelügyelet \> Beállítás \> Személyre szabás** elemre.
+2. A műveleti ablaktáblán válassza a **Nézteket importálása \> Felhasználói nézetek** lehetőséget.
+3. Válassza ki az importálási módot:
+
+    - **Adott felhasználók kiválasztása** – Megtekintés vagy személyre szabás adása a kiválasztott felhasználók számára.
+    - **Importálás egy az egyben** – A nézet vagy a személyre szabás importálása ugyanannak a felhasználónak, aki exportálta.
+
+4. Válassza a **Tallózás** elemet, majd keresse meg és válassza ki a személyre szabást.
+5. Válassza ki **Következő** lehetőséget.
+6. Ha a 3. lépésben kiválasztotta az **Adott felhasználók kiválasztása** lehetőséget, akkor válassza ki azokat a felhasználókat, akikhez importálni szeretné a személyre szabást.
+7. Válassza az **Importálás** lehetőséget.
+8. Szükség szerint oldja fel az ütközéseket.
+
+Ha nincsenek engedélyezve a mentett nézetek, akkor kövesse az alábbi lépéseket.
+
+1. Menjen a **Rendszerfelügyelet \> Beállítás \> Személyre szabás** elemre.
+2. Válassza az **Alkalmazás** lehetőséget.
+3. Válassza ki azokat a felhasználókat, akik számára megosztja a személyre szabást.
+4. Válassza ki a **Személyre szabások importálása fájlból** lehetőséget.
+5. Válassza a **Tallózás** elemet, majd keresse meg és válassza ki a személyre szabást.
+6. Válassza ki az **OK** lehetőséget.
 
 ## <a name="administration-of-personalizations"></a>Testreszabások adminisztrálása
 
@@ -184,8 +267,11 @@ Azon vevők esetében, akik bekapcsolták a **Mentett nézetek** funkciót, teki
 Azoknak a vevőknek, akik még nem kapcsolták be a [Mentett nézetek](saved-views.md) lehetőséget, ennek a weboldalnak négy lapja van:
 
 - **Alkalmazás** – Importálhat vagy kiválaszthat egy személyre szabási beállítást egy vagy több felhasználó számára. A személyre szabás alkalmazásához egy vagy több felhasználóra, először jelölje ki a szerepkört és az adott szerepkörrel rendelkező felhasználókat. Válasszon egy meglévő személyre szabást vagy importáljon egy személyre szabási fájlt a kiválasztott felhasználókra történő alkalmazáshoz. A rendszer ellenőrzi a személyre szabást, és alkalmazza az összes kijelölt felhasználóra, amikor azok legközelebb megnyitják a kijelölt lapot.
+
 - **Törlés** – A lap vagy a munkaterület összes személyre szabása egy vagy több felhasználó esetében is törölhető. Először válasszon egy oldalt vagy munkaterületet, hogy megtekinthesse azon felhasználók listáját, akik személyre szabták ezt az oldalt. Ezután válassza ki azokat a felhasználókat, akiknek az adott oldalhoz vagy munkaterülethez tartozó személyre szabását törölni kell, majd válassza a **Törlés** elemet. A kiválasztott felhasználók által a kiválasztott lapra vagy munkaterületre alkalmazott valamennyi személyre szabási beállítás törlődik. Ez a művelet nem vonható vissza. Ugyanakkor ha a lapnak vagy a munkaterületnek létezik mentett személyre szabási beállítása, ez a beállítás visszaimportálható.
+
 - **Felhasználók** – Válasszon egy felhasználót, hogy megtekinthesse a felhasználó által személyre szabott oldalak listáját. Ezután kiválaszthatja, hogy engedélyezze vagy letiltsa a kiválasztott felhasználónak a személyre szabott képességek használatát bizonyos oldalakon vagy az egész rendszerben. Emellett törölhet, importálhat és exportálhat személyre szabásokat a felhasználó számára. Ezenkívül a felhasználó számára alaphelyzetbe állíthatók a funkció-ábrafeliratok. Ebben az esetben, ha a felhasználó korábban elutasította az új funkciókat bemutató előugró ablakokat, ezek legközelebb újra megjelennek a felhasználó számra
+
 - **Rendszer:** – Itt tudja ideiglenesen kikapcsolni a rendszerben személyre szabásokat az összes felhasználó számára. Ebben az esetben minden személyre szabás minden felhasználónál törlődik, és az összes lap visszaáll az alapértelmezett állapotába. Amennyiben később újra bekapcsolja a személyre szabásokat, a rendszer minden személyre szabást újra alkalmaz. Véglegesen is törölheti a rendszerben szereplő személyes beállításokat az összes felhasználó számára. A törölt személyes beállításokat nem lehet visszaállítani. Ezért a lépés végrehajtása előtt ellenőrizze, hogy exportálta mindazokat a személyes beállításokat, amelyeket később esetleg importálni szeretne.
 
 ## <a name="personalizing-inventory-dimensions"></a>A készletdimenziók személyre szabása

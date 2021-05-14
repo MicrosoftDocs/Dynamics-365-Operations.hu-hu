@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: fb71d941a5cd58701f723e56a07c6b6cca6689bb
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 56446e6a8abfcab83772e446dc7f01c529404b23
+ms.sourcegitcommit: 05210ceefd8816b889019b2a6554855f3c5b2a6c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5830028"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "5954645"
 ---
 # <a name="manage-changes-to-engineering-products"></a>A mérnöki termékek módosításának kezelése
 
@@ -139,13 +139,14 @@ A módosítás iránti kérelem megtekintése közben a művelet ablaktáblán, 
 
 Amint az a [Mérnöki vállalatok és az adatok tulajdonlásának szabályai](engineering-org-data-ownership-rules.md) részben bemutatásra került, a módosítható termékadatok attól függően változnak, hogy milyen típusú jogi személyben dolgozik (egy mérnöki vállalat vagy egy üzemeltető vállalat). Az adattulajdonlási szabályok a mérnöki módosítási rendelésekre is vonatkoznak. Ennek megfelelően attól függően, hogy milyen jogi személyben hoz létre a mérnöki módosítási rendelés, különböző típusú változtatásokat lehet végrehajtani. Íme néhány példa:
 
-- A **mérnöki vállalatok** mérnöki módosítási rendelései esetében alapvető változtatásokat lehet végezni a mérnöki adatokon. Létrehozhat például új termékverziókat, módosíthatja a termék szerkezetét az anyagjegyzéken keresztül, valamint módosíthatja a mérnöki attribútumok értékeit. Minden érintett terméknél válassza a következő értékek egyikét a **Hatás** mezőben:
+- A *mérnöki vállalatok* mérnöki módosítási rendelései esetében alapvető változtatásokat lehet végezni a mérnöki adatokon. Létrehozhat például új termékverziókat, módosíthatja a termék szerkezetét az anyagjegyzéken keresztül, valamint módosíthatja a mérnöki attribútumok értékeit. Minden érintett terméknél válassza a következő értékek egyikét a **Hatás** mezőben:
 
     - **Nincs** – a létező termék verziójának frissítése (verzión belüli frissítés).
     - **Új verzió** – hozzon létre egy új verziót, amely a kiválasztott termékverzión alapul.
-    - **Új termék** – hozzon létre egy teljesen új terméket vagy termékváltozatot, amely a kiválasztott termékverzión alapul.
+    - **Új termék** – hozzon létre egy teljesen új terméket, amely a kiválasztott termékverzión alapul.
+    - **Új változat** – hozzon létre egy új változatot, amely a kiválasztott termékverzión alapul. Az anyagjegyzékre és útvonalra vonatkozó adatok át lesznek másolva.
 
-- Egy **operatív vállalat** mérnöki módosítási rendeléseihez módosíthatja a termék logisztikai adatait. Bővítheti például a meglévő anyagjegyzéket a beszerzés, a helyi útvonalak és a helyi anyagjegyzékek hozzáadásával, valamint az anyagjegyzéket akár úgy is bővítheti, hogy új anyagjegyzék-sorokat ad hozzá a helyi csomagolási anyagok, kenőanyagok vagy a helyi nyelvű utasítások számára. Az operatív vállalat felhasználói által végzett bővítések megmaradnak, amikor a mérnöki vállalat új frissítéseket küld. További tájékoztatás: [Mérnöki vállalatok és az adatok tulajdonlásának szabályai](engineering-org-data-ownership-rules.md).
+- Egy *operatív vállalat* mérnöki módosítási rendeléseihez módosíthatja a termék logisztikai adatait. Bővítheti például a meglévő anyagjegyzéket a beszerzés, a helyi útvonalak és a helyi anyagjegyzékek hozzáadásával, valamint az anyagjegyzéket akár úgy is bővítheti, hogy új anyagjegyzék-sorokat ad hozzá a helyi csomagolási anyagok, kenőanyagok vagy a helyi nyelvű utasítások számára. Az operatív vállalat felhasználói által végzett bővítések megmaradnak, amikor a mérnöki vállalat új frissítéseket küld. További tájékoztatás: [Mérnöki vállalatok és az adatok tulajdonlásának szabályai](engineering-org-data-ownership-rules.md).
 
     Amikor a mérnöki rendeléseket a mérnöki vállalatban dolgozzák fel, a termékeket csak a mérnöki vállalatnál lehet létrehozni és/vagy frissíteni. Ha tehát a termék alapadatainak frissítésére is szükség van, akkor a termékeket az operatív vállalatok számára is ki kell adnia.
 

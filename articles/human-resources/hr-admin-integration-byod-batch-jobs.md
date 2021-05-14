@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-08-10
 ms.dyn365.ops.version: Platform update 36
-ms.openlocfilehash: a63ff89a6fcbffc57eff14f310a080a35521ef34
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 0c29d68b29475c2c7040d06e60f7624c49a42002
+ms.sourcegitcommit: 6c2f5c3b038f696532c335e20b0fbafa155d6858
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5890076"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "5951932"
 ---
 # <a name="optimize-byod-scheduled-batch-jobs"></a>BYOD ütemezett kötegelt feladatok optimalizálása
 
@@ -89,6 +89,12 @@ A BYOD-funkciónak a következő korlátai vannak:
 **Probléma:** Ha egy entitáshoz teljes küldést hajt végre, akkor a rekordok nagy készlete jelenik meg a BYOD,-ban amikor egy **kiválasztás** működési utasítást alkalmaz. Ha viszont egy növekményes küldést hajt végre, akkor csak néhány rekord jelenik meg a BYOD-ben. Úgy tűnik, mintha a növekményes küldés törölte az összes rekordot, és csak a módosított rekordokat adta volna hozzá a BYOD-hez.
 
 **Megoldás:** Előfordulhat, hogy az SQL változáskövetési táblák nem a várt állapotban vannak. Ilyen típusú esetekben ajánlott kikapcsolni az entitás módosításának nyomon követését, majd újra bekapcsolni azt. A további tudnivalókat lásd [A változások nyomon követésének engedélyezése az entitásokhoz](../fin-ops-core/dev-itpro/data-entities/entity-change-track.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json).
+
+### <a name="staging-tables-arent-clearing"></a>Az előkészítő táblák nem törlődnek
+
+**Probléma**: A projekt előkészítésének használatakor az előkészítési táblák nem törlődnek megfelelően. Ezután a táblák adatai tovább nőnek, és teljesítménybeli problémákat okoznak.
+
+**Megoldás:** Az előző hét nap előzményeinek száma az előkészítési táblákban van karbantartva. Az **Importálás, exportálása előkészítésének törlése** kötegelt feladat automatikusan törli a hét napnál régebbi előzményadatokat az előkészítési táblákból. Ha a feladat beragad, a táblák nem fognak megfelelően törlődni. A kötegelt feladat újraindítása folytatja az előkészítési táblák automatikus törlését.
 
 ## <a name="see-also"></a>Lásd még
 

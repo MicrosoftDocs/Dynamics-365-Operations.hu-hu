@@ -9,15 +9,15 @@ ms.technology: ''
 audience: Application User
 ms.reviewer: rhaertle
 ms.search.region: Global
-ms.author: riluan
+ms.author: rhaertle
 ms.search.validFrom: 2020-11-11
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: fcbede8b1a0a9a1dfcb9acbfd7cadb49eb48eecd
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 2c27f06524b91f91d95ef4b901740e7761232c28
+ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750690"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "5941109"
 ---
 # <a name="integrate-procurement-between-supply-chain-management-and-field-service"></a>A beszerzés integrálása a Supply Chain Management és a Field Service között
 
@@ -46,7 +46,7 @@ A Supply Chain Management szolgáltatás Field Service szolgáltatással törté
 ### <a name="prerequisites"></a>Előfeltételek
 
 - **Kettős írás** – a további tudnivalókat lásd: [kettős írás kezdőlapja](dual-write-home-page.md#dual-write-setup).
-- **Dynamics 365 Field Service** – További információ: [A Dynamics 365 Field Service telepítése](https://docs.microsoft.com/dynamics365/field-service/install-field-service#step-1-install-dynamics-365-field-service).
+- **Dynamics 365 Field Service** – További információ: [A Dynamics 365 Field Service telepítése](/dynamics365/field-service/install-field-service#step-1-install-dynamics-365-field-service).
 
 Ha engedélyezve van a Microsoft Dataverse szolgáltatásban, a kettős írás és a Field Service több megoldásréteget is bevezet, amelyek új metaadatokkal, képernyőkkel, nézetekkel és logikával bővítik a környezetet. Ezek a megoldások bármilyen sorrendben engedélyezhetők, bár általában az itt megadott sorrendben kell telepíteni őket:
 

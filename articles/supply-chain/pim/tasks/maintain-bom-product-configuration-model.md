@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 49aa17aa376f8536e9d2290292f877d314c2c078
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: b4ad73265e321b6339c061a7866b55cb2769954b
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818013"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5921317"
 ---
 # <a name="maintain-bom-for-a-product-configuration-model"></a>Termékkonfigurációs modell anyagjegyzékének karbantartása
 
@@ -26,35 +26,34 @@ ms.locfileid: "5818013"
 
 Ezen eljárás futtatásához szükség van egy már létező termékkonfigurációs modellre. Ezen eljárás az USMF bemutatócég felső kategóriás hangszóró modelljét használva készült.
 
-
 ## <a name="add-a-bom-line"></a>Anyagjegyzéksor hozzáadása
-1. Kattintson a Termékváltozat modelldefinícióra.
-2. Kattintson a Termékkonfigurációs modellek lehetőségre.
-3. Keresse meg és jelölje ki a kívánt rekordot a listán.
+
+1. Lépjen a **Termékinformáció-kezelés \> Termékek \> Termékkonfigurációs modellek** elemre.
+1. Keresse meg és jelölje ki a kívánt rekordot a listán.
     * Válassza ki a Felső kategóriás hangszóró lehetőséget ehhez az eljáráshoz.  
-4. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-5. Bontsa ki az Anyagjegyzéksorok szakaszt.
-6. Kattintson a Hozzáadás gombra.
-7. Írjon be egy értéket a Név mezőbe.
-8. A Leírás mezőben adjon meg egy értéket.
-9. Kattintson a Mentés gombra.
+1. A listában válassza ki a kiválasztott sorból a hivatkozást.
+1. Bontsa ki az **Anyagjegyzéksorok** szakaszt.
+1. Válassza a **Hozzáadás** lehetőséget.
+1. Írjon be egy értéket a **Név** mezőbe.
+1. Írjon egy értéket a **Leírás** mezőbe.
+1. Válassza a **Mentés** lehetőséget.
 
 ## <a name="add-bom-line-details"></a>Anyagjegyzéksor-részletek hozzáadása
-1. Kattintson az Anyagjegyzéksor részletei lehetőségre.
-2. Az Elemszám mezőben adjon meg, vagy válasszon ki egy értéket.
+
+1. Válassza ki az **Anyagjegyzéksor részletei** lehetőséget.
+2. Az **Cikkszám** mezőben adjon meg vagy válasszon ki egy értéket.
     * Használhatja például az M0055 cikket.  
     * Minden anyagjegyzéksor-tulajdonság esetében ki lehet választani, hogy rögzített értéke legyen vagy egy attribútum legyen hozzárendelve.  
-3. Jelölje be a Beállít jelölőnégyzetet.
-4. Válassza ki az Igen lehetőséget a Számítás mezőben.
-    * A Számítás tulajdonság beállítása Igen értékre biztosítja, hogy az Anyagjegyzéksor szereplejen a költségszámításokban.  
-5. Kattintson a Beállítás fülre.
-6. Jelölje be a Beállít jelölőnégyzetet.
-7. Adjon meg egy számot a Mennyiség mezőben.
+3. Jelölje be a **Beállít** jelölőnégyzetet.
+4. Válassza ki az *Igen* lehetőséget a **Számítás** mezőben.
+    * A **Számítás** tulajdonság beállítása *Igen* értékre biztosítja, hogy az Anyagjegyzéksor szereplejen a költségszámításokban.  
+5. Válassza ki a **Beállítás** fület.
+6. Jelölje be a **Beállít** jelölőnégyzetet.
+7. Adjon meg egy számot a **Mennyiség** mezőben.
     * A mennyiség mező határozza meg, hogy az adott cikkből mennyi szereplejen az anyagjegyzékben. Ez egy nyilvánvaló jelölt lehet attribútum-hozzárendeléshez.  
-8. Kattintson a Dimenziók fülre.
+8. Válassza ki a **Dimenzió** fület.
     * Győződjön meg róla, hogy aktív-e valamelyik termékdimenzió és ezért szükséges beállítani egy értéket vagy hozzárendelni egy attribútumot.  
-9. Kattintson az OK gombra.
-
+9. Válassza ki az **OK** lehetőséget.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

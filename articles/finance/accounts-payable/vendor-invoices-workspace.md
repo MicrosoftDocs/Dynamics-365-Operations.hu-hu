@@ -1,5 +1,5 @@
 ---
-title: Szállítói számla bevitele munkaterület
+title: Szállítói számla automatizálási munkaterülete
 description: Ez a témakör azt mutatja be, hogyan lehet beállítani a szállítói számlákkal kapcsolatos munkaterületet, valamint bemutatja a Microsoft Power BI szolgáltatáson keresztül elérhető adatokat.
 author: abruer
 ms.date: 09/28/2020
@@ -14,14 +14,14 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2020-09-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: bac57056af6d85bb30600e13628279801508741d
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 7216c2f6e593e3ca11d78903f318d5f217b19674
+ms.sourcegitcommit: 375dd11a9e4076394a33e99f11371ab53e80c337
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837256"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "5954135"
 ---
-# <a name="vendor-invoice-entry-workspace"></a>Szállítói számla bejegyzésének munkaterülete
+# <a name="vendor-invoice-automation-workspace"></a>Szállítói számla automatizálási munkaterülete
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
@@ -30,11 +30,11 @@ Ez a témakör azt mutatja be, hogyan lehet beállítani a szállítói számlá
 
 ## <a name="overview"></a>Áttekintés
 
-A **Szállítói számla bevitele** munkaterület a szállítói számlák feldolgozásához kapcsolódó információkat jeleníti meg. Tartalmaz egy **Saját munka** és egy **Elemzés – az összes vállalat** nézetet. A **Saját munka** nézet összesítő lapokat, szállítói tranzakciórácsokat és a kapcsolódó szállítói adatokat jeleníti meg. Az **Elemzés - az összes vállalat** lap a Power BI lehetőségeit kihasználva a szállítói számlákkal kapcsolatos vizualizációkat jelenít meg.
+A **Szállítói számla automatizálása** munkaterület a szállítói számlák feldolgozásához kapcsolódó információkat jeleníti meg. Tartalmaz egy **Saját munka** és egy **Elemzés – az összes vállalat** nézetet. A **Saját munka** nézet összesítő lapokat, szállítói tranzakciórácsokat és a kapcsolódó szállítói adatokat jeleníti meg. Az **Elemzés - az összes vállalat** lap a Power BI lehetőségeit kihasználva a szállítói számlákkal kapcsolatos vizualizációkat jelenít meg.
 
 ## <a name="set-up-the-workspace-to-show-power-bi-content"></a>A munkaterület beállítása a Power BI-tartalom megjelenítésére
 
-Ezt a beállítást végre kell hajtania, mielőtt a Power BI a **Szállítói számla bevitele** munkaterületen megjeleníthetné az adatokat.
+Ezt a beállítást végre kell hajtania, mielőtt a Power BI a **Szállítói számla automatizálása** munkaterületen megjeleníthetné az adatokat.
 
 1. A **Funkciókezelés** munkaterületen szűrje a listát, és keresse meg a **Szállítói számla automatizálása** funkciót.
 3. Válassza az **Engedélyezés most** lehetőséget.
@@ -54,7 +54,7 @@ Ha meg szeretné tekinteni a munkaterületen megjelenő adatokat, rendelkeznie k
 
 ### <a name="company-selection"></a>Vállalat választása
 
-Amikor a **Szállítói számlák automatizálása** funkciót bekapcsolta, a munkaterület felső részén megjelenik egy **Vállalat** mező. A **Vállalat** mezőben kiválasztott érték a munkaterületen megjelenített összes adatot érinti. Alapértelmezetten a nézet annak a vállalatnak az adatait jeleníti meg, amelyikbe bejelentkezett. Ha egy másik vállalatot választ ki a **Vállalat** mezőben, akkor a munkaterületen megjelenítheti a vállalat adatait. Ezután kiválaszthat egy csempét a munkaterületen, ha a kiválasztott vállalat kapcsolódó lapjára lépjen.
+Amikor a **Szállítói számla automatizálása** funkciót bekapcsolta, a munkaterület felső részén megjelenik egy **Vállalat** mező. A **Vállalat** mezőben kiválasztott érték a munkaterületen megjelenített összes adatot érinti. Alapértelmezetten a nézet annak a vállalatnak az adatait jeleníti meg, amelyikbe bejelentkezett. Ha egy másik vállalatot választ ki a **Vállalat** mezőben, akkor a munkaterületen megjelenítheti a vállalat adatait. Ezután kiválaszthat egy csempét a munkaterületen, ha a kiválasztott vállalat kapcsolódó lapjára lépjen.
 
 ### <a name="summary-tiles"></a>Összesítő csempék
 

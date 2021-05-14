@@ -2,7 +2,7 @@
 title: Alapadat-keresés környezetének beállítása
 description: Ez a témakör bemutatja, hogy hogyan lehet beállítani a környezetet az adószámítási alapadat-keresési funkció használatához.
 author: kai-cloud
-ms.date: 03/31/2021
+ms.date: 04/21/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,31 +16,43 @@ ms.search.region: Global
 ms.author: pashao
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: eda093a75898bace2f3c7968933b83ccafa7fabb
-ms.sourcegitcommit: 66095f1b7e0fd2756aa29fd7deb9ce5392b7e0b2
+ms.openlocfilehash: 9f9b385df1db60b27698d90281c43fabb574af49
+ms.sourcegitcommit: 5f5afb46431e1abd8fb6e92e0189914b598dc7fd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "5869070"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5924154"
 ---
 # <a name="set-up-an-environment-for-master-data-lookup"></a>Alapadat-keresés környezetének beállítása
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
-
 Ez a témakör bemutatja, hogy hogyan lehet beállítani a környezetet az adószámítási alapadat-keresési funkció használatához.
 
 1. A Power Platform integráció beállítása a Lifecycle Services (LCS) szolgáltatásban. További informáciért lásd: [Microsoft Power Platform integráció – Bővítmények áttekintése](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md).
 2. Dynamics 365 Finance és Microsoft Dataverse beállítása. A további tudnivalókat lásd [A megoldás beszerzése](../../fin-ops-core/dev-itpro/power-platform/admin-reference.md#getting-the-solution), valamint [Hitelesítés és engedélyezés ](../../fin-ops-core/dev-itpro/power-platform/admin-reference.md#authentication-and-authorization).
-3. Importálja az *Előfeltétel-adó szolgáltatás virtuális entitás megoldást* az [Adószolgáltatás virtuális entitásból](https://go.microsoft.com/fwlink/?linkid=2158160).
+3. Állítsa be a következő entitásokat: További tudnivalókért lásd: [Virtuális entitások engedélyezése](../../fin-ops-core/dev-itpro/power-platform/admin-reference.md#enabling-virtual-entities).
+      - CompanyInfoEntity
+      - CurrencyEntity
+      - CustCustomerV3Entity
+      - DeliveryTermsEntity
+      - EcoResProductCategoryEntity
+      - EcoResReleasedProductV2Entity
+      - LogisticsAddressCityEntity
+      - LogisticsAddressCountryRegionTranslationEntity
+      - LogisticsAddressStateEntity
+      - PurchProcurementChargeCDSEntity
+      - SalesChargeCDSEntity
+      - TaxGroupEntity
+      - TaxItemGroupHeadingEntity
+      - VendVendorV2Entity
 4. A Dynamics 365 Regulatory Configuration Service (RCS) beállítása. 
 5. Szolgáltatáskérés létrehozása a Microsoft számára a következő funkciók tesztelésének engedélyezéséhez:
 
       - ERCdsFeature
       - TaxServiceCDSFeature
 
-6. Engedélyezze a következő funkciót a **Funkció kezelése** munkaterületen a Finance megoldásban:
+6. A **Funkció kezelése** munkaterületen engedélyezze a következő funkciókat:
 
       - (Előnézet) Elektronikus jelentés Dataverse-adatforrások támogatása
       - (Előzetes verzió) Adószolgáltatás Dataverse-adatforrásainak támogatása

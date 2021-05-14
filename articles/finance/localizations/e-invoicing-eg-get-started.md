@@ -2,7 +2,7 @@
 title: Első lépések az Egyiptomra vonatkozó elektronikus számlázási használata során
 description: Ez a témakör olyan információkat tartalmaz, amelyek bemutatják az Első lépéseket az egyiptomi elektronikus számlázás Finance és Supply Chain Management szolgáltatásban való használatát.
 author: gionoder
-ms.date: 03/29/2021
+ms.date: 04/20/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,16 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: f6175a50a88d2d636bfafc5988265b8657630758
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: abae35db7e37e65950c05c8e21b8e8555edbf3be
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840196"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5920781"
 ---
 # <a name="get-started-with-electronic-invoicing-for-egypt"></a>Első lépések az Egyiptomra vonatkozó elektronikus számlázási használata során
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 Ez a témakör olyan információkat tartalmaz, amelyek bemutatják az egyiptomi Elektronikus számlázással kapcsolatos első lépéseket. Ez a témakör végigvezeti a Regulatory Configuration Services (RCS) országfüggő konfigurációs lépésein, amelyek kiegészítik az [Első lépések az elektronikus számlázás használata során](e-invoicing-get-started.md) részben leírt lépéseket.
 

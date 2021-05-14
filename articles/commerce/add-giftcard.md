@@ -2,7 +2,7 @@
 title: Ajándékutalvány-modul
 description: Ez a témakör az ajándékutalvány-modulokkal foglalkozik, és bemutatja, hogy hogyan lehet őket hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: anupamar-ms
-ms.date: 09/15/2020
+ms.date: 04/29/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: a4e4e06ab7032d68fcd36a8e80bc714ebaaac821
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 8db7e597241f1fd552f6b960c2b57b0ba83da949
+ms.sourcegitcommit: efde05c758b2e02960760d875569d780d77d5550
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797671"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "5962763"
 ---
 # <a name="gift-card-module"></a>Ajándékutalvány modul
 
@@ -63,6 +63,26 @@ A Commerce webhelykészítő **Webhelybeállítások \> Bővítmények** terüle
 
 > [!IMPORTANT]
 > Ezek a beállítások a Dynamics 365 Commerce 10.0.11-es verziójában érhetők el, és csak akkor szükségesek, ha támogatásra van szüksége az SVS- vagy Givex-ajándékutalványok használatakor. Ha a Dynamics 365 Commerce egy korábbi verziójáról frissít, akkor manuálisan kell frissítenie az appsettings.json fájlt. Az appsettings.json fájlok frissítésével kapcsolatos tudnivalókat lásd az [SDK- és modulkönyvtár-frissítések](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file) témakörben. 
+
+## <a name="extend-internal-gift-cards-for-use-in-e-commerce-storefronts"></a>Belső ajándékutalványok kiterjesztése az e-kereskedelmi áruházakban való használatra
+
+Alapértelmezés szerint a belső ajándékutalványok nincsenek az e-kereskedelmi üzletben való használatra optimalizálva. Ezért mielőtt engedélyezné, hogy a belső ajándékutalványok használhatók legyenek fizetésre, be kell állítania azokat a bővítményeket, amelyek biztonságossá teszik őket. Itt vannak azok az ajándékutalvány-területek, amelyek a belső ajándékutalványok termelésben való használatának engedélyezése előtt bővítenie kell:
+
+- **Ajándékutalvány száma** – A számsorozatok a belső ajándékutalványok ajándékutalvány-számának előállítására használhatók. Mivel a számsorozatok könnyen kitalálhatók, ki kell terjesztenie az ajándékutalvány-számok létrehozását úgy, hogy a kiadott ajándékutalvány-számokhoz véletlenszerű, kriptográfiai szempontból biztonságos sztringeket használjon.
+- **GetBalance** – a **GetBalance** API használatával lehet megkeresni az ajándékutalvány-egyenlegeket. Alapértelmezés szerint ez az API nyilvános. Ha nincs szükség PIN-kódra az ajándékutalvány-egyenlegek kereséséhez, kockázatot jelent, hogy a találgatásos támadások a **GetBalance** API-t használják az egyenleget tartalmazó ajándékutalványok számainak megkereséséhez. A belső ajándékutalványokra és API-szabályozásra vonatkozó PIN-követelmények megvalósításával csökkenthető a kockázat.
+- **PIN** - Alapértelmezés szerint a belső ajándékutalványok nem támogatják a PIN-kódokat. A belső ajándékutalványokat ki kell terjeszteni, hogy az egyenlegek ellenőrzéséhez PIN-kód legyen szükséges. Ez a funkció az ajándékutalványok zárolására is használható, ha egymás után több helytelen kísérlet történt a PIN-kód megadására.
+
+## <a name="enable-gift-card-payments-for-guest-checkout"></a>Ajándékutalványos fizetések engedélyezése vendégkifizetéshez
+
+Alapértelmezés szerint a vendég (névtelen) fizetésnél az ajándékutalványos fizetések nem engedélyezettek. Kövesse az alábbi lépéseket az engedélyezésükhöz.
+
+1. A Commerce központi felületén lépjen a **Kiskereskedelem és kereskedelem \> Csatornabeállítás \> Pénztárbeállítás \> Pénztár \> Pénztárműveletek** elemre.
+1. Válassza ki és tartsa lenyomva a rács fejlécét (vagy kattintson rá a jobb gombbal), majd válassza az **Oszlopok beszúrása** lehetőséget.
+1. Az **Oszlopok beszúrása** párbeszédpanelen jelölje be az **AllowAnonymousAccess** jelölőnégyzetet.
+1. Válassza ki a **Frissítés** lehetőséget.
+1. Az **520** (Ajándékutalván egyenlege) és **214** műveleteknél állítsa az **AllowAnonymousAccess** értékét **1**-re.
+1. Válassza a **Mentés** lehetőséget.
+1. Futtassa az **1090** ütemezési feladatot a módosítások szinkronizálására a csatornaadatbázisba. 
 
 ## <a name="add-a-gift-card-module-to-a-page"></a>Ajándékutalvány-modul felvétele egy oldalra
 

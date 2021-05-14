@@ -2,7 +2,8 @@
 title: Médiatár modul
 description: Ez a témakör a médiatár modulokkal foglalkozik, és bemutatja, hogy hogyan lehet őket hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: anupamar-ms
-ms.date: 09/15/2020
+manager: annbe
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +15,17 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: b0b1ec7324ff60ee7cdd01c97c8c08260bd8c947
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: de0bc650393b035adea4570c5e64ecb76283117e
+ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5802815"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "5937386"
 ---
 # <a name="media-gallery-module"></a>Médiagaléria modul
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Ez a témakör a médiatár modulokkal foglalkozik, és bemutatja, hogy hogyan lehet őket hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
 
@@ -49,11 +51,13 @@ A következő ábrán szereplő példában egy médiatár modul segítségével 
 |---------------|--------|-------------|
 | Képforrás | **Oldalkontextus** vagy **Termékazonosító** | Az alapértelmezett érték az **Oldalkontextus**. Ha az **Oldalkontextus** ki van jelölve, akkor a modul elvárja, hogy az oldalon adja meg a termékazonosító adatait. Ha a **Termékazonosító** kivan jelölve, akkor a kép termékazonosítóját meg kell adni a **Termékazonosító** tulajdonság értéknél. Ez a funkció a Commerce 10.0.12 verzióban érhető el. |
 | Termékazonosító | Egy termékazonosító | Ez a tulajdonság csak akkor használható, ha a **Kép erőforrása** tulajdonság értéke **Termékazonosító**. |
-| Kép nagyítása | **Szövegköz** vagy **Tároló** | Ez a tulajdonság lehetővé teszi a felhasználó számára a médiatár modulban a nagyítást. A kép egy szövegközi, vagy akár egy különálló tárolóban, a kép mellett is nagyítható. Ez a képesség a 10.0.12-es verzióban érhető el |
-| Nagyítás méretezése | Egy tizedesérték | Ez a tulajdonság a képek nagyításának nagyságrendi tényezőjét határozza meg. Ha például az értéket **2,5**-re állítjék, a képeket 2,5-szörösen nagyítják fel.|
-| Teljes képernyő | **Igaz** vagy **Hamis** | Ez a tulajdonság azt határozza meg, hogy a képeket meg lehet-e teljes képernyős módban jeleníteni. Teljes képernyős módban a képeket tovább is lehet nagyíthatani, ha a nagyítási képesség be van kapcsolva. Ez a funkció a Commerce 10.0.13 verzióban érhető el. |
+| Kép nagyítása | **Szövegköz** vagy **Tároló** | Ez a tulajdonság lehetővé teszi a felhasználó számára a médiatár modulban a nagyítást. A kép egy szövegközi, vagy akár egy különálló tárolóban, a kép mellett is nagyítható. Ez a képesség a 10.0.12-es verzióban érhető el. |
+| Nagyítási tényező | Egy tizedesérték | Ez a tulajdonság a képek nagyításának nagyságrendi tényezőjét határozza meg. Ha például az értéket **2,5**-re állítjék, a képeket 2,5-szörösen nagyítják fel. |
+| Teljes képernyő | **Igaz** vagy **Hamis** | Ez a tulajdonság azt határozza meg, hogy a képeket meg lehet-e teljes képernyős módban jeleníteni. Teljes képernyős módban a képeket tovább is lehet nagyíthatani, ha a nagyítási képesség be van kapcsolva. Ez a képesség elérhető a Commerce alkalmazás 10.0.13-ös kiadásában. |
+| Nagyított képminőség | Az 1 és 100 közötti szám egy százalékot jelez, amelyet a kurzorral választhat ki | Ez a tulajdonság határozza meg a nagyított képek képminőségét. 100 százalékra is beállítható, hogy a nagyított képek mindig a legnagyobb felbontást használják. Ez a tulajdonság nem alkalmazható PNG-fájlokra, mert veszteségmentes formátumot használnak. Ez a képesség elérhető a Commerce alkalmazás 10.0.19-ös kiadástól. |
 | Képek | Webhelykészítő médiatárból kiválasztott képek | A termékből való renderelésen kívül a képek a médiatár modulban is összeválogathatók. Ezeket a képeket a program hozzáfűzi az elérhető termékképekhez. Ez a funkció a Commerce 10.0.12 verzióban érhető el. |
 | Miniatűr tájolása | **Vízszintes** vagy **Függőleges** | Ez a tulajdonság azt határozza meg, hogy a miniatűrök képei függőleges vagy vízszintes csíkban jelenjenek-e meg. |
+| Alaptermék képének elrejtése a változónál | **Igaz** vagy **Hamis** | Ha ez a tulajdonság **Igaz** értékre van állítva, ha egy változó ki van választva, az alaptermék képei rejtve maradnak, hacsak a változónak nincsenek képei. Ez a tulajdonság nincs hatással a változókkal nem rendelkező termékekre. |
 
 A következő ábra egy olyan médiatár-modult mutat be, amelyben elérhetők a teljes képernyős és a nagyítási lehetőségek.
 

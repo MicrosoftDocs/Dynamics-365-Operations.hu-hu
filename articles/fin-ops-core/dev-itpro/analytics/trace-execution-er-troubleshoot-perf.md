@@ -2,7 +2,7 @@
 title: Az ER-formátumok végrehajtásának nyomon követése a teljesítménnyel kapcsolatos problémák elhárítása érdekében
 description: Ez a témakör azt mutatja be, hogyan kell használni az Elektronikus jelentéskészítés (ER) teljesítményfigyelő funkcióját a teljesítménnyel kapcsolatos problémák elhárításához.
 author: NickSelin
-ms.date: 06/12/2019
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 0cf76a9b9af0fc648cb61cefbe92dc7aaa436692
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 13e631d3330eefed09111eca70a5aa111e88274f
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754216"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944653"
 ---
 # <a name="trace-the-execution-of-er-formats-to-troubleshoot-performance-issues"></a>Az ER-formátumok végrehajtásának nyomon követése a teljesítménnyel kapcsolatos problémák elhárításához
 
@@ -47,10 +47,10 @@ A következő fájlokat is le kell töltenie és helyben tárolnia.
 
 | Fájl                                  | Tartalom                               |
 |---------------------------------------|---------------------------------------|
-| Teljesítmény-nyomonkövetési modell.verzió.1     | [Minta ER-adatmodell konfigurációja](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg)    |
-| Teljesítmény-nyomonkövetési metaadat.verzió.1  | [Minta ER-metaadat konfigurációja](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg)      |
-| Teljesítmény-nyomonkövetési leképezés.verzió.1.1 | [Minta ER-adatmodell leképezési konfigurációja](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
-| Teljesítmény-nyomonkövetési formátum.verzió.1.1  | [Minta ER-formátum konfigurációja](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg)       |
+| Teljesítmény-nyomonkövetési modell.verzió.1     | [Minta ER-adatmodell konfigurációja](https://download.microsoft.com/download/0/a/a/0aa84e48-8040-4c46-b542-e3bf15c9b2ad/Performancetracemodelversion.1.xml)    |
+| Teljesítmény-nyomonkövetési metaadat.verzió.1  | [Minta ER-metaadat konfigurációja](https://download.microsoft.com/download/a/9/3/a937e8c4-1f8a-43e4-83ee-7d599cf7d983/Performancetracemetadataversion.1.xml)      |
+| Teljesítmény-nyomonkövetési leképezés.verzió.1.1 | [Minta ER-adatmodell leképezési konfigurációja](https://download.microsoft.com/download/7/7/3/77379bdc-7b22-4cfc-9b64-a9147599f931/Performancetracemappingversion1.1.xml) |
+| Teljesítmény-nyomonkövetési formátum.verzió.1.1  | [Minta ER-formátum konfigurációja](https://download.microsoft.com/download/8/6/8/868ba581-5a06-459e-b173-fb00f038b37f/Performancetraceformatversion1.1.xml)       |
 
 ### <a name="configure-er-parameters"></a>ER-paraméterek konfigurálása
 
@@ -84,7 +84,7 @@ Ahhoz, hogy elérhető legyen az **Egyebek** keresési mezőben, a DM-dokumentum
 Tegyük fel, hogy egy új ER-megoldást tervez, amellyel szállítói tranzakciókat bemutató új jelentést hozhat létre. Jelenleg a kiválasztott szállítóhoz tartozó tranzakciókat a **Szállítói tranzakciók** oldalon találja (lépjen a **Kötelezettségek \> Szállítók \> Minden szállító** pontra, válasszon a szállítók közül, majd a Műveleti ablaktábla **Szállító lapján**, a **Tranzakciók** csoportban válassza a **Tranzakciók** elemet). Önnek azonban az összes szállítói tranzakció megjelenítésére van szükség, ugyanabban a pillanatban, egyetlen elektronikus dokumentumban, XML formátumban. Ez a megoldás több olyan ER-konfigurációt is magában foglal, amelyek a szükséges adatmodell-, metaadat-, modell-hozzárendelési és formátum-összetevőket tartalmazzák.
 
 1. Jelentkezzen be a vállalata részére biztosított RCS-példányba.
-2. Ebben az oktatóanyagban létrehozzuk és módosítjuk a konfigurációkat a **Litware, Inc.** mintavállalatra vonatkozóan. Ezért győződjön meg róla, hogy ezt a konfigurációszolgáltatót hozzáadták az RCS-szolgáltatáshoz, és aktívként kijelölték. További útmutatásért tekintse át a [Konfigurációszolgáltatók létrehozása és megjelölése aktívként](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11) eljárást.
+2. Ebben az oktatóanyagban létrehozzuk és módosítjuk a konfigurációkat a **Litware, Inc.** mintavállalatra vonatkozóan. Ezért győződjön meg róla, hogy ezt a konfigurációszolgáltatót hozzáadták az RCS-szolgáltatáshoz, és aktívként kijelölték. További útmutatásért tekintse át a [Konfigurációszolgáltatók létrehozása és megjelölése aktívként](tasks/er-configuration-provider-mark-it-active-2016-11.md) eljárást.
 3. Az **Elektronikus jelentéskészítés** munkaterületen válassza ki a **Jelentéskészítési konfiguráció** csempét.
 4. A **Konfigurációk** lapon importálja az előfeltételként az RCS-be letöltött ER-konfigurációkat, a következő sorrendben: adatmodell, metaadat, modell-hozzárendelés, formátum. Minden konfiguráció esetén hajtsa végre az alábbi lépéseket:
 
@@ -101,7 +101,7 @@ Tegyük fel, hogy befejezte az ER-megoldás első verziójának tervezését. Ez
 ### <a name="import-an-er-configuration-from-rcs-into-finance-and-operations"></a><a id='import-configuration'></a>ER konfigurációk importálása RCS-ből a Finance and Operations-alkalmazásba
 
 1. Jelentkezzen be az alkalmazás példányába.
-2. Ebben az oktatóanyagban konfigurációkat importálunk az RCS-példányból (ahol az ER-összetevőket tervezzük) az Ön példányába (ahol teszteljük és használjuk majd őket). Ezért győződjön meg arról, hogy az összes szükséges műterméket előkészítette. További útmutatásért tekintse át az [Elektronikus jelentéskészítési (ER) konfigurációk importálása a Regulatory Configuration Service (RCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/rcs-download-configurations) eljárást.
+2. Ebben az oktatóanyagban konfigurációkat importálunk az RCS-példányból (ahol az ER-összetevőket tervezzük) az Ön példányába (ahol teszteljük és használjuk majd őket). Ezért győződjön meg arról, hogy az összes szükséges műterméket előkészítette. További útmutatásért tekintse át az [Elektronikus jelentéskészítési (ER) konfigurációk importálása a Regulatory Configuration Service (RCS)](rcs-download-configurations.md) eljárást.
 3. A következő lépések végrehajtásával importálhatja a konfigurációkat az RCS szolgáltatásból az alkalmazásba:
 
     1. Az **Elektronikus jelentéskészítés** munkaterületen, a **Litware, Inc.** konfigurációszolgáltató csempéjén válassza ki a **Tárházak** elemet.

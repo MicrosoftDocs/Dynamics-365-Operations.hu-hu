@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ad1221bb57aea4c93cb60fc29caec2d3b41798f9
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 592b3d0265a3be92a5a823c6aabdd40b4e3f0a27
+ms.sourcegitcommit: 890a0b3eb3c1f48d786b0789e5bb8641e0b8455e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5836398"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5919941"
 ---
 # <a name="create-a-new-trade-agreement"></a>Új kereskedelmi szerződés létrehozása
 
@@ -26,8 +26,8 @@ ms.locfileid: "5836398"
 
 Ez az eljárás bemutatja, hogyan hozhat létre egy kereskedelmi megállapodást, amelyben regisztrálhat egy új termékeladási árat, amelyben egy adott vevővel megállapodott. Ezt a folyamatot az USMF bemutatócéggel vagy saját adataival is futtathatja. Saját adatok használatakor az útmutató használatának megkezdése előtt győződjön meg róla, hogy a Kereskedelmi megállapodások napló neve létezik, ahol az Alapértelmezett viszony az "Ár (eladási)".
 
-
 ## <a name="create-and-post-a-new-trade-agreement-journal"></a>Hozzon létre és tegyen közzé egy új kereskedelmi megállapodási naplót
+
 1. Ugorjon a **Navigációs lap > Modulok >Értékesítés és marketing > Árak és engedmények > Kereskedelmi megállapodási naplók** elemre.
 2. Kattintson az **Új** elemre.
 3. A **Név** mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
@@ -58,22 +58,26 @@ Ez az eljárás bemutatja, hogyan hozhat létre egy kereskedelmi megállapodást
 20. Kattintson az **OK** gombra.
 
 ## <a name="view-trade-agreements-for-a-product"></a>Termékkel kapcsolatos kereskedelmi megállapodások megtekintése
+
 1. Kattintson ide: **Navigációs ablaktábla > Modulok > Termékinformációk kezelése > Termékek > Kiadott termékek**.
 2. A listában keresse meg és válassza ki a terméket, amelynek éppen frissítette az árát.
 3. A **Művelet panelen** kattintson az **Értékesítés** elemre.
 4. Kattintson a **Kereskedelmi megállapodások megtekintése** pontra.
     
-    Tekintse át az imént létrehozott ármegállapodás részletes adatait.    
+    Tekintse át az imént létrehozott ármegállapodás részletes adatait.
 
 5. Zárja be a lapot.
 
 ## <a name="additional-resources"></a>További erőforrások
 
 ### <a name="whitepaper"></a>Tanulmány
+
 További tudnivalókért töltse le a következő (az AX 2012 támogatásához készült, de még a Dynamics 365 Supply Chain Management esetében is érvényes) tanulmányt
-- [Kereskedelmi megállapodások](https://mbs.microsoft.com/files/public/CS/AX2012R3/TradeagreementsinAX.pdf)
+
+- [Kereskedelmi megállapodások](https://download.microsoft.com/download/0/2/9/02972c8b-0159-4936-a3ef-1e64252b2d2f/TradeAgreementsInAX.pdf)
 
 ### <a name="community-blogs"></a>Közösségi blogok
+
 - [Értékesítési árak a Dynamics 365 for Finance and Operations szolgáltatásban](https://financefunction.tech/2018/11/14/sales-prices-in-dynamics-365-for-finance-and-operations/#sales_price_in_trade_agreements)
 
 

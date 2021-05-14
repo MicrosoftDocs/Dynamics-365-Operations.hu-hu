@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 54117c009cfeb7307938cc6bd43e774ccfedcfb1
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 60e4d69157d7b73bd9e47310adae320687230080
+ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908830"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "5941226"
 ---
 # <a name="configuration-for-finance-insights-preview"></a>Pénzügyi információk konfigurációja (előzetes verzió)
 
@@ -42,228 +42,36 @@ A környezetek üzembe helyezéséhez kövesse az alábbi lépéseket.
 
 ## <a name="configure-dataverse"></a>Dataverse konfigurálása
 
-Végrehajthatja a manuális konfigurációs lépéseket, vagy felgyorsíthatja a konfigurációs folyamatot a rendelkezésre álló Windows PowerShell-parancsfájl használatával. Ha a PowerShell-parancsfájl futása befejeződött, a Pénzügyi információk konfigurálásához használható értékeket ad. 
+A következő lépések segítségével konfigurálhatja a Dataverse-t a Finance Insightshez.
 
+1. Nyissa meg a környezet oldalát az LCS-ben, és ellenőrizze, hogy az **Power Platform-Integráció** szakasz már be van-e állítva.
+    1. Ha már be van állítva, akkor a Dynamics 365 Finance-környezethez kapcsolt Dataverse-környezet nevének szerepelnie kell a listában. Másolja a Dataverse-környezet nevét.
+    2. Ha nincs beállítva, kövesse a következő lépéseket:
+        1. Válassza a **Beállítás** gombot a Power Platform-integráció szakaszban. A környezet beállítása akár egy óráig is eltarthat.
+        2. Ha a Dataverse-környezet sikeresen be van állítva, akkor a Dynamics 365 Finance-környezethez kapcsolt Dataverse-környezet nevének szerepelnie kell a listában. Másolja a Dataverse-környezet nevét.
 > [!NOTE]
-> Nyissa meg a PowerShellt a számítógépen a parancsfájl futtatásához. Lehet, hogy szüksége van a PowerShell 5-ös verziójára. Előfordulhat, hogy a Microsoft Azure CLI „Próbálja ki” opció nem működik.
+> A környezet beállítása után **NE** válassza ki a **Hivatkozás a CDS for Appshoz** gombot. Ez nem szükséges a Finance Insightshoz, és letiltja az LCS-kben szükséges környezeti bővítmények befejezéséhez szükséges képességet.
 
-# <a name="manual-configuration-steps"></a>[Manuális konfigurációs lépések](#tab/configuration-steps)
-
-1. Nyissa meg a [Power Platform felügyeleti központot](https://admin.powerplatform.microsoft.com/), és az alábbi lépések végrehajtásával hozzon létre egy új Dataverse környezetet ugyanabban az Active Directory-bérlőben:
+2. Nyissa meg a [Power Platform felügyeleti központot](https://admin.powerplatform.microsoft.com/), és az alábbi lépések végrehajtásával hozzon létre egy új Dataverse környezetet ugyanabban az Active Directory-bérlőben:
 
     1. Nyissa meg a **Környezetek** oldalt.
 
         [![Környezetek oldal](./media/power-pltfrm-admin-center.png)](./media/power-pltfrm-admin-center.png)
 
-    2. Válassza ki az **Új környezet** lehetőséget.
-    3. A **Típus** mezőben válassza ki a **Tesztkörnyezet** lehetőséget.
-    4. Állítsa az **Adatbázis létrehozása** beállítást **Igen** értékre.
-    5. Válassza ki **Következő** lehetőséget.
-    6. Válassza ki a szervezet nyelvét és pénznemét.
-    7. A többi mezőben hagyja meg az alapértelmezett értékeket.
-    8. Válassza a **Mentés** lehetőséget.
-    9. Frissítse a **Környezetek** oldalt.
-    10. Várjon, amíg az **Állapot** mező értéke **Kész** állapotra nem frissül.
-    11. Jegyezze fel a Dataverse szervezetazonosítót.
-    12. Válassza ki a környezetet, majd válassza a **Beállítás** lehetőséget.
-    13. Válassza az **Erőforrások \> Minden örökölt beállítás** lehetőséget.
-    14. A felső navigációs sávon válassza a **Beállítások**, majd a **Testreszabás** lehetőséget.
-    15. Válassza a **Fejlesztői erőforrások** lehetőséget.
-    16. Másolja a **Dataverse szervezetazonosító** értékét.
-    17. A böngésző címsorában jegyezze fel a Dataverse szervezet URL-címét. Az URL-cím lehet például `https://org42b2b3d3.crm.dynamics.com`.
+    2. Válassza ki a fent létrehozott Dataverse-környezetet, majd válassza a **Beállítások** lehetőséget.
+    3. Válassza az **Erőforrások \> Minden örökölt beállítás** lehetőséget.
+    4. A felső navigációs sávon válassza a **Beállítások**, majd a **Testreszabás** lehetőséget.
+    5. Válassza a **Fejlesztői erőforrások** lehetőséget.
+    6. Másolja a **Dataverse szervezetazonosító** értékét.
+    7. A böngésző címsorában jegyezze fel a Dataverse szervezet URL-címét. Az URL-cím lehet például `https://org42b2b3d3.crm.dynamics.com`.
 
-2. Ha a Pénzforgalmi előrejelzések vagy a Költségvetési előrejelzések funkciót kívánja használni, kövesse az alábbi lépéseket a szervezet címjegyzetkorlátjának legalább 50 megabájtra (MB) történő frissítéséhez:
+3. Ha a Pénzforgalmi előrejelzések vagy a Költségvetési előrejelzések funkciót kívánja használni, kövesse az alábbi lépéseket a szervezet címjegyzetkorlátjának legalább 50 megabájtra (MB) történő frissítéséhez:
 
     1. Nyissa meg a [Power Apps portált](https://make.powerapps.com).
     2. Válassza ki az imént létrehozott környezetet, majd a **Speciális beállítások** lehetőséget.
     3. Válassza a **Beállítások \> E-mail konfigurációja** lehetőséget.
     4. Módosítsa a **Maximális fájlméret** mező értékét **51,200-ra**. (Az értéket kilobájtban \[KB\] kell kifejezni.)
     5. A módosítás mentéséhez kattintson az **OK** gombra.
-
-# <a name="windows-powershell-configuration-script"></a>[Windows PowerShell konfigurációs parancsfájl](#tab/powershell-configuration-script)
-
-```azurecli-interactive
-Write-Output 'The following modules need to be present for execution of this script:'
-Write-Output '  Microsoft.PowerApps.Administration.PowerShell'
-Write-Output '  Microsoft.PowerApps.PowerShell'
-Write-Output '  Microsoft.Xrm.Tooling.CrmConnector.PowerShell'
-
-try {
-    $moduleConsent = Read-Host 'Is it ok to install or update these modules as needed? (yes/no)'
-    if ($moduleConsent -ne 'yes' -and $moduleConsent -ne 'y') {
-        Write-Warning 'User declined to install required modules.'
-        return
-    }
-
-    $module = 'Microsoft.PowerApps.Administration.PowerShell'
-    if (-not (Get-InstalledModule -Name $module -MinimumVersion '2.0.61' -ErrorAction SilentlyContinue)) {
-        Install-Module -Name $module -MinimumVersion '2.0.61' -Force
-        Write-Output ('Installed {0} module.' -f $module)
-    }
-    else {
-        Write-Output ('{0} module found.' -f $module)
-    }
-
-    $module = 'Microsoft.PowerApps.PowerShell'
-    if (-not (Get-InstalledModule -Name $module -MinimumVersion '1.0.9' -ErrorAction SilentlyContinue)) {
-        Install-Module -Name $module -MinimumVersion '1.0.9' -AllowClobber -Force
-        Write-Output ('Installed {0} module.' -f $module)
-    }
-    else {
-        Write-Output ('{0} module found.' -f $module)
-    }
-
-    $module = 'Microsoft.Xrm.Tooling.CrmConnector.PowerShell'
-    if (-not (Get-InstalledModule -Name $module -MinimumVersion '3.3.0.892' -ErrorAction SilentlyContinue)) {
-        Install-Module -Name $module -MinimumVersion '3.3.0.892' -Force
-        Write-Output ('Installed {0} module.' -f $module)
-    }
-    else {
-        Write-Output ('{0} module found.' -f $module)
-    }
-
-    Write-Output '================================================================================='
-
-    $useMfa = $false
-    $useMfaPrompt = Read-Host "Does your organization require the use of multi-factor authentication? (yes/no)"
-    if ($useMfaPrompt -eq 'yes' -or $useMfaPrompt -eq 'y') {
-        $useMfa = $true
-    }
-    if(-not $useMfa) {
-        $credential = Get-Credential -Message 'Power Apps Credential'
-    }
-
-    $orgFriendlyName = Read-Host "Enter the name of the CDS Organization to use or create: (blank for 'FinanceInsightsOrg')"
-    if ($orgFriendlyName.Trim() -eq '') {
-        $orgFriendlyName = 'FinanceInsightsOrg'
-    }
-
-    $isDefaultOrgPrompt = Read-Host ("Is '" + $orgFriendlyName + "' the default organization for your tenant? (yes/no)")
-    if ($isDefaultOrgPrompt -eq 'yes' -or $isDefaultOrgPrompt -eq 'y') {
-        $isDefaultOrg = $true
-    }
-
-    if ($credential) {
-        Add-PowerAppsAccount -Username $credential.UserName -Password $credential.Password
-    }
-    else {
-        Add-PowerAppsAccount
-    }
-
-    if ($isDefaultOrg) {
-        $orgMatch = ('(default)')
-        $environment = (Get-AdminPowerAppEnvironment | Where-Object { $_.IsDefault -eq $true })
-    }
-    else {
-        $orgMatch = ('{0} (*)' -f $orgFriendlyName)
-        $environment = (Get-AdminPowerAppEnvironment | Where-Object { ($_.IsDefault -eq $false -and ($_.DisplayName -eq $orgFriendlyName -or $_.DisplayName -like $orgMatch)) })
-    }
-
-    $getCrmOrgParams = @{ 'OnlineType' = 'Office365' }
-    if ($credential) {
-        $getCrmOrgParams.Credential = $credential
-    }
-
-    if ($null -eq $environment) {
-        Write-Output '================================================================================='
-        Write-Output 'PowerApps environment not found. A new one will be provisioned.'
-
-        $invalid = 'invalid'
-
-        $location = $invalid
-        $cdsLocations = (Get-AdminPowerAppEnvironmentLocations | Select-Object LocationName).LocationName
-        while (-not ($location -in $cdsLocations)) {
-            $location = (Read-Host -Prompt "Enter the location in which to create the new PowerApps environment: ('help' to see values)")
-            if ($location -eq 'help') {
-                $cdsLocations
-            }
-        }
-
-        $currency = $invalid
-        $cdsCurrencies = (Get-AdminPowerAppCdsDatabaseCurrencies -Location $location | Select-Object CurrencyName).CurrencyName
-        while ($currency -ne '' -and -not ($currency -in $cdsCurrencies)) {
-            $currency = (Read-Host -Prompt "Enter the currency to use for the new PowerApps environment: ('help' to see values, blank for default)")
-            if ($currency -eq 'help') {
-                $cdsCurrencies
-            }
-        }
-
-        $language = $invalid
-        $cdsLanguages = (Get-AdminPowerAppCdsDatabaseLanguages -Location $location | Select-Object LanguageName, LanguageDisplayName)
-        while ($language -ne '' -and -not ($language -in $cdsLanguages.LanguageName)) {
-            $language = (Read-Host -Prompt "Enter the language name to use for the new PowerApps environment: ('help' to see values, blank for default)")
-            if ($language -eq 'help') {
-                $cdsLanguages | Format-Table -Property LanguageName, LanguageDisplayName
-            }
-        }
-
-        Write-Output 'Provisioning PowerApps environment. This may take several minutes.'
-
-        $sleep = 15
-
-        $envParams = @{ 'DisplayName' = $orgFriendlyName; 'EnvironmentSku' = 'Sandbox'; 'ProvisionDatabase' = $true; 'Location' = $location; 'WaitUntilFinished' = $true }
-        if ($language.Trim() -ne '') {
-            $envParams.LanguageName = $language
-        }
-        if ($currency.Trim() -ne '') {
-            $envParams.CurrencyName = $currency
-        }
-        $newEnvResult = New-AdminPowerAppEnvironment @envParams
-        if (($null -eq $newEnvResult) -or ($newEnvResult.CommonDataServiceDatabaseProvisioningState -ne 'Succeeded')) {
-            Write-Warning 'Failed to create to PowerApps environment'
-            if ($null -ne $newEnvResult) {
-                $newEnvResult
-            }
-        }
-        else {
-            $environment = $null
-            $retryCount = 0
-            while (($null -eq $environment) -and ($retryCount -lt 5)) {
-                Start-Sleep -Seconds $sleep
-                $environment = (Get-AdminPowerAppEnvironment | Where-Object { ($_.DisplayName -like $orgMatch) })
-            }
-            Write-Output ("Provisioned PowerApps environment with name: '" + $environment.DisplayName + "'")
-        }
-
-        Write-Output 'Waiting for CDS organization provisioning. This may take several minutes.'
-        if (-not $credential) {
-            $sleep = 120
-            Write-Output 'You may be prompted for credentials multiple times while checking the status of the provisioning.'
-        }
-
-        while ($null -eq $crmOrg) {
-            Start-Sleep -Seconds $sleep
-            $crmOrg = (Get-CrmOrganizations @getCrmOrgParams) | Where-Object { $_.FriendlyName -eq $orgFriendlyName }
-        }
-    }
-    else {
-        $crmOrgs = Get-CrmOrganizations @getCrmOrgParams
-        if ($UseDefaultOrganization -eq $true) {
-            $crmOrg = $crmOrgs | Where-Object { $_.FriendlyName -match $orgMatch }
-        }
-        else {
-            $crmOrg = $crmOrgs | Where-Object { $_.FriendlyName -eq $orgFriendlyName }
-        }
-    }
-
-    Write-Output '================================================================================='
-    Write-Output 'Values for PowerAI LCS Add-In:'
-    Write-Output ("  CDS organization url:             " + $crmOrg.WebApplicationUrl)
-    Write-Output ("  CDS organization ID:              " + $crmOrg.OrganizationId)
-}
-catch {
-    Write-Error $_.Exception.Message
-    Write-Warning $_.Exception.StackTrace
-    $inner = $_.Exception.InnerException
-    while ($null -ne $inner) {
-        Write-Output 'Inner Exception:'
-        Write-Error $_.Exception.Message
-        Write-Warning $_.Exception.StackTrace
-        $inner = $inner.InnerException
-    }
-}
-```
----
 
 ## <a name="configure-the-azure-setup"></a>Az Azure beállítások konfigurálása
 
@@ -295,11 +103,14 @@ Kövesse az alábbi lépéseket az Azure konfigurálásához a Windows PowerShel
 
 1. Az [Azure-portálon](https://portal.azure.com) nyissa meg a cél Azure-előfizetés. Válassza a **Keresés** mezőtől jobbra lévő **Cloud Shell** gombot.
 2. Válassza a **PowerShell** lehetőséget.
-3. Hozzon létre tárhelyet, ha a rendszer erre kéri. Ezután töltse fel a Windows PowerShell-parancsfájlt a munkamenetbe.
-4. Parancsfájl futtatása.
-5. A parancsfájl futtatásához kövesse az utasításokat.
-6. A parancsfájl kimenetéből származó információk segítségével telepítse az **Exportálás a Data Lake-be** bővítményt az LCS-ben.
-7. A parancsfájl kimenetéből származó információk segítségével engedélyezze az entitás tárolását a Pénzügy (**Rendszerfelügyelet \> Rendszer paraméterei \> Adatkapcsolatok**) **Adatkapcsolatok** lapján.
+3. Hozzon létre tárhelyet, ha a rendszer erre kéri.
+4. Menjen az **Azure parancssori felület** lapra, és válassza a **Másolás** parancsot.  
+5. Nyissa meg a Jegyzettömböt, és illessze be a PowerShell-parancsfájlt. Mentse a fájlt ConfigureDataLake.ps1 néven.
+6. Töltse fel a Windows PowerShell-parancsfájlt a munkamenetbe a Cloud Shellben a feltöltésre szolgáló menülehetőséggel.
+7. Futtassa a parancsfájlt: .\ConfigureDataLake.ps1.
+8. A parancsfájl futtatásához kövesse az utasításokat.
+9. A parancsfájl kimenetéből származó információk segítségével telepítse az **Exportálás a Data Lake-be** bővítményt az LCS-ben.
+10. A parancsfájl kimenetéből származó információk segítségével engedélyezze az entitás tárolását a Pénzügy (**Rendszerfelügyelet \> Rendszer paraméterei \> Adatkapcsolatok**) **Adatkapcsolatok** lapján.
 
 ### <a name="manual-setup"></a>Manuális beállítás
 
@@ -975,24 +786,24 @@ A bővítményt néhány percen belül telepíti a program.
 
     | Érték                                                    | Leírás |
     |----------------------------------------------------------|-------------|
-    | CDS szervezet URL-címe                                     | A Dataverse szervezet URL-címe a Dataverse-példányból. Ha meg szeretné találni ezt az értéket, nyissa meg a [Power Apps-portált](https://make.powerapps.com), és válassza a jobb felső sarokban látható **Beállítások** gombot (fogaskerék szimbólum), válassza ki a **Speciális beállításokat**, majd másolja az URL-címet. (Az URL-cím a következőre végződik: „dynamics.com”). |
-    | CDS szerv. azon.                                               | A Dataverse-példány környezeti azonosítója. Ha meg szeretné találni ezt az értéket, nyissa meg a [Power Apps-portált](https://make.powerapps.com), és válassza a jobb felső sarokban látható **Beállítások** gombot (fogaskerék szimbólum), válassza ki a **Testreszabás \> Fejlesztői erőforrások \> Példány hivatkozási információja lehetőséget**, majd másolja az **azonosító** értéket. |
-    | CDS-bérlő azonosítója (címtárazonosító az AAD-ből)               | A Dataverse-példány bérlőazonosítója. Ha meg szeretné találni ezt az értéket, nyissa meg az [Azure-portál](https://portal.azure.com) lehetőséget, menjen ide: **Azure Active Directory**, és másolja át a **Bérlőazonosító** értéket. |
-    | Adja meg a rendszergazdai szerepkörrel rendelkező felhasználó objektumazonosítóját | Az Azure AD-felhasználó felhasználói objektumazonosítója a Dataverse-ben. Ennek a felhasználónak a Dataverse-példány rendszergazdájának kell lennie. Ha meg szeretné találni ezt az értéket, nyissa meg az [Azure-portál](https://portal.azure.com) lehetőséget, menjen a **Azure Active Directory \> Felhasználók** lehetőségre, válassza ki a felhasználót, majd az **Identitás** szakaszba másolja be az **Objektumazonosító** értékét. |
-    | Ez az alapértelmezett CDS-környezet a bérlő számára?      | Ha a Dataverse-példány a létrehozott első termelési példány, jelölje be ezt a jelölőnégyzetet. Ha a Dataverse-példányt manuálisan hozták létre, törölje a jelet a jelölőnégyzetből. |
-
+    | CDS szervezet URL-címe                                     | A Dataverse-szervezet URL-címe felülről másolva. |
+    | CDS szerv. azon.                                               | A Dataverse-szervezet azonosítója felülről másolva. |
+5. Engedélyezze az **Ez az alapértelmezett CDS-környezet a bérlő számára?** elemet.
+    
 ## <a name="configure-the-entity-store"></a>Az entitásáruház konfigurálása
 
 Hajtsa végre az alábbi lépéseket, ha be szeretné állítani az entitásáruházat a Pénzügy környezetben.
 
 1. Lépjen a **Rendszerfelügyelet \> Beállítás \> Rendszerparaméterek \> Adatkapcsolatok** elemre.
-2. Állíts a **Data Lake-integráció engedélyezése** elemet **Igen** értékre.
-3. A következő Key Vault-mezők beállítása:
+2. A következő Key Vault-mezők beállítása:
 
     - **Alkalmazás (kliens) azonosítója** – Adja meg a korábban létrehozott alkalmazáskliens azonosítóját.
     - **Alkalmazás titkos kódja** – adja meg azt a titkos kódot, amelyet a korábban létrehozott alkalmazáshoz mentett.
     - **DNS neve** – A korábban létrehozott alkalmazásnál megkeresheti a tartománynév-rendszer (DNS) nevét.
     - **Titkos kód neve** – Adja meg a **storage-account-connection-string** értéket.
+3. Engedélyezze a **Data Lake-integráció engedélyezése** elemet.
+4. Válassza ki az **Azure Key Vault – Teszt** elemet, és ellenőrizze, hogy nincsenek hibák.
+5. Válassza ki az **Azure-tárhely – Teszt** elemet, és ellenőrizze, hogy nincsenek hibák.
 
 ## <a name="feedback-and-support"></a>Visszajelzés és támogatás
 

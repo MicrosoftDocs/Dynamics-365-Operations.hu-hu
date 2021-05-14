@@ -2,25 +2,25 @@
 title: Áfa számítása az általános naplósorokhoz
 description: Ez a témakör azt mutatja be, hogy hogyan történik az ÁFA számítása a főkönyvi naplósorokban a különböző típusú számlákhoz (szállító, vevő, főkönyv és projekt).
 author: EricWang
-ms.date: 08/14/2019
+ms.date: 04/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: TaxTable
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
-ms.author: roschlom
+ms.author: EricWang
 ms.search.validFrom: 2019-08-14
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: e4d367fe6cb729c9c5658a9bbbac04e53fdf9644
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d0cb4b282fe2bd5c68af17c741787c4caca98003
+ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5815332"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "5937306"
 ---
 # <a name="sales-tax-calculation-on-general-journal-lines"></a>Áfa számítása az általános naplósorokhoz
 [!include [banner](../includes/banner.md)]
@@ -117,7 +117,7 @@ Ez a szakasz bemutatja az áfa összeg jel kiszámításának módját.
 
 ![Áfatranzakciók lap](media/sales-tax-amount-sign.jpg)
 
-A következő táblázat bemutatja az általános szabályt, amely meghatározza az áfa összegének az ideiglenes áfa táblába történő megjelölését.
+A következő táblázat bemutatja az általános szabályt, amely meghatározza az áfa irányát és az áfa összegének az ideiglenes áfa táblába történő megjelölését.
 
 | Naplósor összege | Áfa iránya  | Áfaösszeg jel |
 |---------------------|----------------------|-----------------------|
@@ -126,7 +126,7 @@ A következő táblázat bemutatja az általános szabályt, amely meghatározza
 | Negatív            | Visszaigényelhető áfa | Negatív              |
 | Negatív            | Fizetendő áfa    | Pozitív              |
 
-Speciális szabály van az olyan bizonylatokhoz, amelyeknél csak **Projekt** vagy **Főkönyv** sor van, amikor a **Főkönyv** sorban be van jelölve egy áfacsoport vagy egy cikkáfacsoport. Ezt a szabályt a független áfaszámítási funkciónak a főkönyvi naplókhoz való engedélyezése vezérli. Ha ez a funkció le van tiltva, akkor a **Főkönyv** sor áfaösszege a **projekt** sorában szereplő tartozik/követel irányt használja. Ha ez a funkció be van kapcsolva, akkor a **Főkönyv** sor áfaösszege a saját tartozik/követel irányát használja. A következő táblázatokban mindegyik eset szabálya látható. 
+Speciális szabály van az olyan bizonylatokhoz, amelyeknél csak **Projekt** vagy **Főkönyv** sor van, amikor a **Főkönyv** sorban be van jelölve egy áfacsoport vagy egy cikkáfacsoport. Ezt a szabályt a **Független áfaszámítási funkciónak a főkönyvi naplókhoz való engedélyezése** funkció vezérli. Ha ez a funkció le van tiltva, akkor a **Főkönyv** sor áfaösszege a **projekt** sorában szereplő tartozik/követel irányt használja. Ha ez a funkció be van kapcsolva, akkor a **Főkönyv** sor áfaösszege a saját tartozik/követel irányát használja. A következő táblázatokban mindegyik eset szabálya látható. 
 
 **Szabály, amikor a funkció be van kapcsolva**
 

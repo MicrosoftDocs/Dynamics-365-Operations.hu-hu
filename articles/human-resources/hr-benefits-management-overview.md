@@ -2,7 +2,7 @@
 title: Juttatáskezelés áttekintése
 description: A juttatáskezelés funkció áttekintése a Dynamics 365 Human Resources alkalmazásban. Az alkalmazottak számára kiterjesztett juttatási lehetőségeket kínálhat könnyen használható online felületen.
 author: andreabichsel
-ms.date: 09/17/2020
+ms.date: 04/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 34b0916e0bf618590bcc56a9a3bc7c61576361cc
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 4ad94d81d7e8bedd3622b3e073e431bc4abaafff
+ms.sourcegitcommit: 5f5afb46431e1abd8fb6e92e0189914b598dc7fd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5805778"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5924230"
 ---
 # <a name="benefits-management-overview"></a>Juttatáskezelés – áttekintés
 
@@ -40,6 +40,10 @@ A versenyképesség megőrzéséhez juttatások széles választékát kell nyú
 - A minősített életesemények feldolgozása támogatja a jövőbeli életeseményeket.
 
 Ha szeretne hozzáférni a bemutató adatokhoz, újra kell telepítenie a tesztkörnyezetét.
+
+>[!NOTE]
+>Most már testre szabhatja a Juttatások kezelése űrlapot. A juttatási tervek **Fedezeti beállítás** űrlapjához mostantól a fedezeti díjakkal kapcsolatos egyéni mezőket is hozzáadhatja. További információkért az egyéni mezők felhasználásáról lásd: [Egyéni mezők](hr-developer-custom-fields.md).
+>![Juttatások kezelésében egyéni mezők](media/hr-benefits-management-custom-fields.png)
 
 ## <a name="enable-benefits-management"></a>Juttatáskezelés engedélyezése
 

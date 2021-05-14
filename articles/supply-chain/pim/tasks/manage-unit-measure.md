@@ -1,8 +1,8 @@
 ---
-title: Mértékegység kezelése
-description: Ez az eljárás bemutatja, hogyan lehet meghatározni egy mértékegységet, meghatározni fordításokat a mértékegységhez és a leírását, és átváltási szabályokat megadni a kapcsolódó egységekhez.
+title: Mértékegységek kezelése
+description: Ez a témakör leírja, hogyan lehet meghatározni egy mértékegységet, meghatározni fordításokat a mértékegységhez és a leírását, és átváltási szabályokat megadni a kapcsolódó egységekhez.
 author: sorenva
-ms.date: 07/08/2018
+ms.date: 04/09/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -13,53 +13,115 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 966e189e7395bec15d2c62735c6df3df2ab34b8a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d36839cd8e3398225d3421bf0f268068599ca49f
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5817965"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5921341"
 ---
-# <a name="manage-unit-of-measure"></a>Mértékegység kezelése
+# <a name="manage-units-of-measure"></a>Mértékegységek kezelése
 
 [!include [banner](../../includes/banner.md)]
 
-Ez az eljárás bemutatja, hogyan lehet meghatározni egy mértékegységet, meghatározni fordításokat a mértékegységhez és a leírását, és átváltási szabályokat megadni a kapcsolódó egységekhez. Ezt a folyamatot bemutatóadatokkal vagy saját adatokkal is elvégezheti.
+Ez a témakör leírja, hogyan lehet meghatározni egy mértékegységet, meghatározni fordításokat a mértékegységhez és a leírását, és átváltási szabályokat megadni a kapcsolódó egységekhez.
 
-1. Kattintson ide: **Navigációs ablaktábla > Modulok > Termékinformációk kezelése > Termékek > Kiadott termékek karbantartása**.
-2. Kattintson a **Mértékegységek** elemre.
+## <a name="open-the-units-page"></a>Nyissa meg az Egységek lapot
 
-## <a name="create-a-unit-of-measure"></a>Mértékegység létrehozása
-1. Kattintson az **Új** elemre.
-2. Írjon be egy értéket a **Mértékegység** mezőbe. Adja meg a mértékegységre történő hivatkozás során használt azonosítót vagy szimbólumot.  
-3. Írjon egy értéket a **Leírás** mezőbe. Írjon be egy jellemző nevet a mértékegységnek a rendszer nyelvén.  
-4. Válasszon ki egy lehetőséget a **Mértékegységosztály** mezőben. Az egységosztály határozza meg, hogy milyen logikai csoport, például terület, tömeg vagy mennyiség része a mértékegység.  
-5. A **Tizedes pontosság** mezőben meg kell adnia egy számot. Adja meg a tizedesek számát, amelyre az átalakított mértékegységet kerekíteni kell a mértékegység számítás befejeztével.  
-6. Kattintson a **Mentés** gombra.
+A rendszerben elérhető mértékegységek létrehozásához és a velük való munkához kattintson a **Szervezet felügyelete \> Beállítás \> Mértékegységek\>** gombra.
+
+A témakör további részei leírják, hogy miket tud megtenni a **Mértékegységek** lapon.
+
+## <a name="create-standard-units-and-conversions"></a>Szabványos mértékegységek és átváltások létrehozása
+
+Ha a rendszer még nem tartalmazza a leggyakrabban használt mértékegységeket a metrikus rendszerhez és/vagy az USA-mértékegységrendszerhez (USCS), akkor az egységbeállítási varázsló segítségével gyorsan megismerkedhet az alapvető egységdefiníciókat és átváltásokat. A varázsló befejezéséhez válassza az **Egységlétrehozási varázsló** lehetőséget a munkaablakban, majd kövesse a képernyőn látható utasításokat.
+
+## <a name="create-or-edit-a-unit-of-measure"></a>Mértékegység létrehozása vagy szerkesztése
+
+A mértékegységek létrehozásához vagy szerkesztéséhez kövesse a következő lépéseket.
+
+1. Tegye a következők egyikét:
+
+    - Meglévő egység szerkesztéséhez jelölje ki azt a listaablakban.
+    - Új egység létrehozásához válassza az **Új** lehetőséget a Művelet panelben.
+
+1. A rekord fejlécen állítsa be a következő mezőket:
+
+    - **Egység** – Adja meg a rendszer nyelvén az egységre való hivatkozási azonosítót vagy szimbólumot. Ez az azonosító vagy szimbólum általában az egység általános rövidítése, például az *ea* az egyes, a *cm* pedig a centiméter rövidítése.
+    - **Leírás** – Írjon be egy jellemző nevet az egységnek a rendszer nyelvén. Ez a név általában az egység teljes neve, például *Egyes* vagy *Centiméter*.
+
+1. Az **Általános** gyorslapon állítsa be a következő mezőket:<!-- KFM: confirm this:    - **Fixed unit assignment** and **Fixed unit** – These fields have an effect only if you're using the Microsoft Retail Essentials product. If the current unit can be mapped to one of the fixed units that are used by Retail Essentials, set the **Fixed unit assignment** option to *Yes*. Then select the fixed unit in the **Fixed unit** field. -->
+
+    - **Egységosztály** – Válassza ki azt a tulajdonságot, amit az egység mér (például hossz, terület, tömeg vagy mennyiség).
+    - **Mértékegységrendszer** – Válassza ki azt a mértékegységrendszert, amelyhez az egység tartozik (*Metrikus egységek* vagy *Egyesült államokbeli szokásos egységek*).
+    - **Alapegység** – Akkor állítsa *Igen* értékre ezt a lehetőséget, ha az aktuális egységet használja az egységosztály alapegységeként. Ebben az esetben csak az alapegység és az egységosztályban található egyes további egységek közötti átváltási tényezőt kell megadni. A rendszer ezután átválthat az egységosztályban található összes egység között. Ezért könnyebb az átváltások beállítása.
+
+        Ha például a gallon a *Térfogat* egységosztály alapegysége, akkor csak literből gallonba és pintből gallonba kell átváltási tényezőket beállítani. A rendszer ezután literből pintbe is tud átváltani.
+
+        Egységosztályonként csak egy alapegység lehet.
+
+    - **Rendszeregység** – Akkor állítsa *Igen* értékre ezt a lehetőséget, ha a becsült egységet használja az egységosztály összes meghatározatlan egységeként. Ha például egy mező, amibe eddig be lehetett írni mennyiséget nem teszi lehetővé az egység beállítását (ha a felhasználó nem választ ki egységet), akkor a rendszer azt az egységet használja, amely a *Mennyiség* egységosztály rendszeregységeként van beállítva. Egységosztályonként csak egy rendszeregység lehet.
+    - **Tizedes pontosság** – Adja meg, hogy hány tizedesjegyre kell kerekíteni az aktuális egység számára megadott vagy az arra átalakítandó értékeket.
+
+1. A műveleti ablaktáblán válassza a **Mentés** lehetőséget.
 
 ## <a name="define-unit-translations"></a>Egység fordításainak meghatározása
-1. A **Művelet panelen** kattintson az **Egységleírások** elemre.
-2. Kattintson az **Új** elemre. Használjon egységes szöveget az azonosító fordítására vagy egy mértékegységet képviselő szimbólumot külső dokumentumokhoz vevő vagy szállító-specifikus nyelveken.  
-3. A **Nyelv** mezőben adjon meg vagy válasszon ki egy értéket.
-4. Írjon be egy értéket a **Szöveg** mezőbe.
-5. Kattintson a **Mentés** gombra.
-6. Zárja be a lapot.
-7. A **Művelet panelen** kattintson az **Lefordított egységleírások** elemre.
-8. Kattintson az **Új** elemre. Határozzon meg nyelvspecifikus leírásokat a mértékegységhez.  
-9. A **Nyelv** mezőben adjon meg vagy válasszon ki egy értéket.
-10. Írjon egy értéket a **Leírás** mezőbe.
-11. Kattintson a **Mentés** gombra.
-12. Zárja be a lapot.
+
+A következő lépések követésével definiálhatja az azonosító vagy szimbólum fordítását, valamint a mértékegység leírását.
+
+1. A fordítások létrehozásához használt egység létrehozása vagy kiválasztása.
+1. Válassza a Művelet panelen az **Egységszövegek** lehetőséget.
+
+    Megjelenik az **Egységszövegek** lap. Ezen a lapon meghatározhatja a kiválasztott egység azonosítójának vagy szimbólumának fordítását. Ezek a fordítások felhasználhatók a külső dokumentumokon a vevő- vagy szállítóspecifikus nyelveken.
+
+1. A Műveleti ablaktáblán kattintson az **Új** elemre.
+1. A **Nyelv** mezőben adja azt a nyelvet, amire le szeretné fordíttatni az egység azonosítóját vagy szimbólumát.
+1. A **Szöveg** mezőbe írja be az egységazonosító vagy szimbólum fordítását a kiválasztott nyelven.
+1. A műveleti ablaktáblán válassza a **Mentés** lehetőséget.
+1. Zárja be a lapot.
+1. A **Művelet panelen** válassza az **Lefordított egységleírások** elemet.
+
+    Megjelenik a **Lefordított egységleírások** lap. Ezen a lapon lehet a kiválasztott egység nyelvspecifikus leírását definiálni.
+
+1. A Műveleti ablaktáblán kattintson az **Új** elemre.
+1. A **Nyelv** mezőben adja azt a nyelvet, amire le szeretné fordíttatni az egység leírását.
+1. A **Leírás** mezőbe írja be az egységleírás fordítását a kiválasztott nyelven.
+1. A műveleti ablaktáblán válassza a **Mentés** lehetőséget.
+1. Zárja be a lapot.
 
 ## <a name="define-unit-conversion-rules"></a>Egység átváltási szabályok definiálása
-1. A **Művelet panelen** kattintson az **Egységek átváltása** elemre. Adjon meg szabályokat a mértékegységek átalakításához más mértékegységekről és -re a kijelölt egységosztályban.  
-2. Az **Új** gombra kattintva nyissa meg a legördülő párbeszédpanelt.
-3. A **Tényező** mezőben adjon meg egy számot. Átszámítási arány a forrás és a cél mértékegység között. Például a centiméterről méterre való átváltási arány 100, mert egy méter 100 centiméterből áll.  
-4. A **Cél egység** mezőben adjon meg vagy válasszon ki egy értéket.
-5. A **Kerekítés** mezőben válasszon egy lehetőséget. Határozza meg, hogyan kell kerekíteni a konvertált értéket.  
-6. Kattintson az **OK** gombra.
-7. Zárja be a lapot.
 
+A mértékegységek közötti átváltási szabályok meghatározásához kövesse ezeket a lépéseket.
 
+1. Az átváltási szabályok mehatározásához használt egység létrehozása vagy kiválasztása.
+1. Válassza a Művelet panelen az **Egységátváltás** lehetőséget.
+
+    Megjelenik a **Mértékegység-átváltások** oldal. Arra használhatja ezt az oldalt, hogy szabályokat adjon meg a kiválasztott egységek átváltásához más egységekről és egységekre az egységosztályban.
+
+1. A következő lapok közül választhat a beállítani kívánt átváltás típusától függően:
+
+    - **Standard átváltások** – Az összes termékre vonatkozó normál átváltási szabályok beállítása.
+    - **Osztályon belüli átváltások** – Termékspecifikus átváltási szabályok beállítása az ugyanabban az egységosztályban található egységekre.
+    - **Osztályok közötti átváltások** – Termékspecifikus átváltási szabályok beállítása az egységosztályok között.
+
+1. Tegye a következők egyikét:
+
+    - Új átváltás létrehozásához válassza az **Új** lehetőséget az eszközsávban.
+    - Meglévő átváltás szerkesztéséhez jelölje ki az átváltást a rácson, majd válassza az eszköztár **Szerkesztés** lehetőségét.
+
+1. A legördülő párbeszédpanelen a következő mezőket állítsa be:
+
+    - **Termék** – Válassza ki azt a terméket, amelyre az átváltás vonatkozik. Ez a mező csak osztályon belüli és osztályközi átalakítások esetén érhető el.
+    - **Receptúraelrendezés** – Hagyja ezt a mezőt *Egyszerű* beállításban, és adjon meg egy egyszerű átváltási tényezőt. Állítsa *Speciális* értékre egy összetettebb egyenlet beállításhoz. A speciális egyenletek formátuma az egységosztálytól függően eltérő lehet.
+    - **Kezdő egység** – Ez a mező a kiválasztott egységet mutatja. Általában nem szabad módosítani az értéket. (Ha módosítja az értéket, meg kell nyitnia az **Egységátváltási** lapot a kiválasztott egységhez, hogy megtekinthesse az új átváltást a mentés után.)
+    - **Cél egység** – Válassza ki azt az egységet, amelybe át kell váltani.
+    - **Kerekítés** – Válassza ki, hogyan legyenek kerekítve a törtek a kiválasztott egység **Tizedes pontosság** értéke alapján (*Legközelebbi*, *Fel* és *Le*).
+    - **Átváltási képlet** – A legördülő párbeszédpanel tetején található további mezők használatával megadhatja a két egység közötti átváltási képletet. A választható mezők a kiválasztott egységosztálytól és receptúraelrendezéstől függően eltérőek.
+
+1. Válassza ki az **OK** lehetőséget.
+1. Zárja be a lapot.
+
+> [!TIP]
+> Termékváltozatonkénti egységátváltásokat is be lehet állítani. További információért lásd: [Mértékegység-átváltás termékváltozatonként](../uom-conversion-per-product-variant.md).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,7 +2,7 @@
 title: Kiskereskedelmi csatorna beállítása
 description: Ez a témakör azt mutatja be, hogyan lehet egy új kiskereskedelmi csatornát létrehozni a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: samjarawan
-ms.date: 01/27/2020
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 713cbe68c151b6893519843611089941cabf0e70
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 3f1f5dc2c8402d9b6b68a049f804932812eb74c0
+ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5800591"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "5937534"
 ---
 # <a name="set-up-a-retail-channel"></a>Retail-csatorna beállítása
 
@@ -34,7 +34,7 @@ A kiskereskedelmi csatorna létrehozása előtt győződjön meg arról, hogy k�
 ## <a name="create-and-configure-a-new-retail-channel"></a>Új kiskereskedelmi csatorna létrehozása és konfigurálása
 
 1. A navigációs ablaktáblán lépjen a **Modulok \> Csatornák \> Áruházak \> Minden áruház** részhez.
-1. A műveleti ablaktáblán kattintson az **Új** elemre.
+1. A Műveleti ablaktáblán kattintson az **Új** elemre.
 1. A **Név** mezőben adja meg az új csatorna nevét.
 1. Az **Üzlet száma** mezőben adjon meg egy egyedi üzletszámot. A számnak alfanumerikusnak kell lennie, legfeljebb 10 karakterrel.
 1. A **jogi személy** legördülő listában adja meg a megfelelő jogi személyt.
@@ -68,7 +68,7 @@ A következő kép egy példát mutat a kiskereskedelmi csatorna beállítási k
 
 ## <a name="additional-channel-set-up"></a>További csatornák beállítása
 
-További cikkek szükségesek, amelyeket be kell állítani egy olyan csatornához, amely a **Művelet ablaktáblán** található a **beállítás** szakaszban.
+További cikkek szükségesek, amelyeket be kell állítani egy olyan csatornához, amely a Művelet ablaktáblán található a **Beállítás** szakaszban.
 
 Az online csatorna beállításához szükséges további feladatok közé tartozik a fizetési módok, a készpénzbevallások, a szállítási módok, a bevételi/kiadási számlák, a szakaszok, a teljesítési csoport hozzárendelésének és a széfek beállítása.
 
@@ -81,7 +81,7 @@ A következő képen a kiskereskedelmi csatorna beállításainak különböző 
 A fizetési módok beállításához a csatornán támogatott valamennyi fizetési típusnál kövesse az alábbi lépéseket.
 
 1. A műveleti ablaktáblán válassza a **Beállítás** lapot, majd válassza ki a **Fizetési módokat**.
-1. A műveleti ablaktáblán kattintson az **Új** elemre.
+1. A Műveleti ablaktáblán kattintson az **Új** elemre.
 1. A navigációs ablakban válassza ki a kívánt fizetési módot.
 1. Az **általános** szakaszban adjon meg egy **művelet nevét**, és adja meg a kívánt beállításokat.
 1. Adja meg a fizetési típushoz szükséges további beállításokat.
@@ -102,7 +102,7 @@ A következő kép egy példát mutat a készpénzelszámolásra.
 
 ### <a name="set-up-modes-of-delivery"></a>Szállítási módok beállítása
 
-A konfigurált szállítási módokat a **Szállítási módok** kiválasztásával tekintheti meg a **Beállítás** lapon a **Műveleti ablaktáblán**.  
+A konfigurált szállítási módokat a **Szállítási módok** kiválasztásával tekintheti meg a **Beállítás** lapon a Műveleti ablaktáblán.  
 
 Szállítási mód módosításához vagy hozzáadásához kövesse az alábbi lépéseket.
 
@@ -119,7 +119,7 @@ A következő kép egy példát mutat a szállítási módra.
 A bevétel/kiadási számla beállításához kövesse az alábbi lépéseket.
 
 1. A műveleti ablaktáblán válassza a **Beállítás** lapot, és válassza ki a **Bevételi/kiadási számla**.
-1. A műveleti ablaktáblán kattintson az **Új** elemre.
+1. A Műveleti ablaktáblán kattintson az **Új** elemre.
 1. A **Név** mezőbe írjon be egy nevet.
 1. A **Keresési név** mezőbe írjon be egy keresési nevet.
 1. A **Számlatípus** részben adja meg a számlatípust.
@@ -136,7 +136,7 @@ A következő kép egy példát mutat egy bevételi/kiadási számlára.
 A szakaszok beállításához kövesse az alábbi lépéseket.
 
 1. A műveleti ablaktáblán válassza a **Beállítás** lapot, és válassza ki a **Szakaszok**.
-1. A műveleti ablaktáblán kattintson az **Új** elemre.
+1. A Műveleti ablaktáblán kattintson az **Új** elemre.
 1. A **szakasz száma** mezőbe írja be a szakasz számát.
 1. Adjon meg egy leírást a **Leírás** alatt.
 1. A **szakaszméret** mezőbe írja be a szakaszméretet.
@@ -148,7 +148,7 @@ A szakaszok beállításához kövesse az alábbi lépéseket.
 A teljesítési csoport hozzárendelésének beállításához tegye a következőket.
 
 1. A műveleti ablaktáblán válassza a **Beállítás** lapot, és válassza ki a **Teljesítési csoport hozzárendelése**.
-1. A műveleti ablaktáblán kattintson az **Új** elemre.
+1. A Műveleti ablaktáblán kattintson az **Új** elemre.
 1. A **teljesítési csoport** legördülő listából válassza ki a teljesítési csoportot.
 1. Ha a **Leírás** legördülő listában adjon meg egy leírást.
 1. A műveleti ablaktáblán válassza a **Mentés** lehetőséget
@@ -161,16 +161,47 @@ A következő kép egy példát mutat be a teljesítési csoport hozzárendelés
 
 A széfek beállításához kövesse az alábbi lépéseket.
 
-1. A műveleti ablaktáblán válassza a **Beállítás** lapot, és válassza ki a **széfek**.
-1. A műveleti ablaktáblán kattintson az **Új** elemre.
+1. A Műveleti ablaktáblán válassza a **Beállítás** lapot, és válassza ki a **széfek**.
+1. A Műveleti ablaktáblán kattintson az **Új** elemre.
 1. Adja meg a széf nevét.
 1. A műveleti ablaktáblán válassza a **Mentés** lehetőséget.
+
+### <a name="ensure-unique-transaction-ids"></a>Egyedi tranzakcióazonosítók biztosítása
+
+A Commerce 10.0.18-as verziójától kezdve a pénztár számára generált tranzakcióazonosítók egymást követőek, és a következő részekből állnak:
+
+- Rögzített rész, amely az üzletazonosító és a terminálazonosító éke. 
+- Követést jelző rész, ami egy számsorozat. 
+
+Pontosabban a formátum a következő: *{store}-{terminal}-{numbersequence}*. 
+
+Mivel a tranzakcióazonosítók offline és online módban is generálhatók, előfordult, hogy a rendszer ismétlődő tranzakcióazonosítókat hozott létre. Az ismétlődő tranzakcióazonosítók megszüntetése sok manuális adatjavítást igényel. 
+
+A Commerce 10.0.19-es verziója esetén a tranzakcióazonosító formátuma frissült, hogy eltávolítsa a követést jelző részt, és egy 13-jegyű számot használ, amely az idő 1970 óta ezredmásodpercekben eltelt idő kiszámításával jött létre. Ezzel a módosítással az új tranzakcióazonosító-formátum: *{store}-{terminal}-{millisecondsSince1970}*. Ezzel a frissítéssel a tranzakcióazonosítók nem egymást követőek, és biztosítja, hogy a tranzakcióazonosítók mindig egyediek. 
+
+> [!NOTE]
+> A tranzakcióazonosítókat csak a belső rendszer használja, így nem szükséges, hogy egymást követők legyenek. Sok ország azonban megköveteli, hogy a nyugtaazonosítók egymást követőek legyenek.
+
+Az új tranzakcióazonosító-formátum funkciót a **Funkciókezelés** munkaterületről lehet engedélyezni. 
+
+Az új tranzakcióazonosítók engedélyezéséhez hajtsa végre a következő lépéseket:
+
+1. A Commerce-központban lépjen a **Rendszerfelügyelet \> Munkaterületek \> Funkciókezelés** részre.
+1. Szűrjön a „kiskereskedelem és kereskedelem” modulra.
+1. Keressen rá **Az új tranzakcióazonosító engedélyezése a tranzakcióazonosítók ismétlődésének elkerülése érdekében** funkció nevére.
+1. Válassza ki a funkciót, majd a jobb oldali ablaktáblán válassza az **Engedélyezés most** lehetőséget.  
+1. Ugorjon a **Kiskereskedelem és kereskedelem \> Kiskereskedelem és kereskedelem informatika \> Elosztási ütemezés** pontra.
+1. Futtassa a **1070 csatornakonfiguráció** és a **1170 pénztár feladatrögzítő** feladatokat az engedélyezett funkció üzletekkel való szinkronizálása érdekében.
+1. Miután a módosításokat elküldte az üzleteknek, a pénztárterminálokat be kell zárni, majd újra meg kell nyitni, hogy az új tranzakcióazonosító-formátumot használják. 
+
+> [!NOTE]
+> Az új tranzakcióazonosító-formátum funkció engedélyezése után nem tilthatja le ezt a funkciót. Ha le kell tiltani, forduljon a Commerce-ügyfélszolgálathoz.
 
 ## <a name="additional-resources"></a>További erőforrások
 
 [Csatornák áttekintése](channels-overview.md)
 
-[Csatornák beállításának előfeltételei](channels-prerequisites.md)
+[Csatorna beállításainak előfeltételei](channels-prerequisites.md)
 
 [Online csatorna beállítása](channel-setup-online.md)
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 0318814f421ab862559965bb4b003308d6279812
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: d4a1c2f45d77c3ff9a7bb4dffaf12d877dc04e69
+ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799445"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5936780"
 ---
 # <a name="set-up-custom-pages-for-user-sign-ins"></a>Felhasználói bejelentkezéshez használt egyéni oldalak beállítása
 
@@ -32,7 +32,7 @@ A Dynamics 365 Commerce alkalmazásban létrehozott egyéni lapok felhasználói
 Az egyéni Commerce-lapok a bejelentkezés, a regisztráció, a számlaprofil szerkesztése, az új jelszó beállítása vagy általános AAD-modulok használatával hozhatók létre. Az ilyen egyéni lapokhoz közzétett lap URL-címeit az Azure AD B2C házirend-konfigurációi között kell megadni az Azure-portálon.
 
 > [!WARNING] 
-> Az Azure AD B2C megszünteti a régi (örökölt) felhasználói folyamatokat 2021. augusztus 1-jéig. Ezért érdemes megterveznie a felhasználói folyamatai áttelepítését az új, ajánlott verzióba. Az új verzió funkcióparitást és új funkciókat biztosít. További információért lásd: [Felhasználói folyamatok az Azure Active Directory B2C-ben](https://docs.microsoft.com/azure/active-directory-b2c/user-flow-overview).
+> Az Azure AD B2C megszünteti a régi (örökölt) felhasználói folyamatokat 2021. augusztus 1-jéig. Ezért érdemes megterveznie a felhasználói folyamatai áttelepítését az új, ajánlott verzióba. Az új verzió funkcióparitást és új funkciókat biztosít. További információért lásd: [Felhasználói folyamatok az Azure Active Directory B2C-ben](/azure/active-directory-b2c/user-flow-overview).
 
 >A Commerce 10.0.15-ös vagy újabb verziójának modulkönyvtárát az ajánlott B2C felhasználói folyamatokkal kell használni. Az Azure AD B2C-ben kínált alapértelmezett felhasználói irányelvoldalak is használhatók, és lehetővé teszik a vállalati márkajelzéssel kapcsolatos háttérkép-, embléma- és háttérszínváltozásokat. Bár a tervezési lehetőségek korlátozottabbak, az alapértelmezett felhasználói irányelvoldalak Azure AD B2C-irányelvfunkciókat biztosítanak dedikált egyéni oldalak létrehozása és konfigurálása nélkül. 
 

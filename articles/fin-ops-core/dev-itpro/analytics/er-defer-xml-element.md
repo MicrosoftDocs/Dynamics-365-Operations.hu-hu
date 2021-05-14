@@ -2,7 +2,7 @@
 title: A XML-elemek végrehajtásának elhalasztása az ER-formátumokban
 description: Ez a témakör azt mutatja be, hogyan lehet elhalasztani egy XML-elem végrehajtását egy elektronikus jelentési (ER) formátumban.
 author: NickSelin
-ms.date: 03/17/2020
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 361e16b0dba3aa46c71477efaa89a2661a3bcd75
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 07b1d95572fb0b6bbfd34756bf1ecded7b9ff35c
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5894052"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944485"
 ---
 # <a name="defer-the-execution-of-xml-elements-in-er-formats"></a>A XML-elemek végrehajtásának elhalasztása az ER-formátumokban
 
@@ -59,14 +59,14 @@ Ha még nem végezte el a példát a következő témakörben: [A szekvenciaelem
 
 | Tartalom leírása            | Fájlnév |
 |--------------------------------|-----------|
-| ER-adatmodell konfigurációja    | [Model to learn deferred elements.version.1.xml](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
-| ER-modell leképzési konfigurációja | [Mapping to learn deferred elements.version.1.1.xml](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| ER-adatmodell konfigurációja    | [Model to learn deferred elements.version.1.xml](https://download.microsoft.com/download/7/6/0/760933ca-4ac3-4f50-bc0c-c35e596ee066/Modeltolearndeferredelements.version.1.xml) |
+| ER-modell leképzési konfigurációja | [Mapping to learn deferred elements.version.1.1.xml](https://download.microsoft.com/download/c/9/c/c9c4b9dd-b700-4385-a087-a84ce9fc1d0f/Mappingtolearndeferredelements.version.1.1.xml) |
 
 A kezdés előtt le kell tölteni és menteni kell a minta ER-megoldás következő konfigurációját a helyi számítógépre.
 
 | Tartalom leírása     | Fájlnév |
 |-------------------------|-----------|
-| ER-formátum konfigurációja | [Format to learn deferred XML elements.version.1.1.xml](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| ER-formátum konfigurációja | [Format to learn deferred XML elements.version.1.1.xml](https://download.microsoft.com/download/4/7/8/478fa846-22e9-4fa0-89b1-d3aeae660067/FormattolearndeferredXMLelements.version.1.1.xml) |
 
 ### <a name="import-the-sample-er-configurations"></a>Minta ER-konfigurációk importálása
 
@@ -164,7 +164,7 @@ Ellenőrizze az ER-modellhozzárendelési összetevő beállítását, amely az 
 1. A **Formátumtervező** oldalon válassza a **Futtatás** elemet.
 2. Töltse le a webböngészőből a felkínált fájlt, és nyissa meg ellenőrzésre.
 
-    ![Letöltött fájl](./media/ER-DeferredXml-Run.png)
+    ![Importált formátum letöltött fájlja](./media/ER-DeferredXml-Run.png)
 
 Figyelje meg, hogy az összesítő csomópont a feldolgozott tranzakciók adózási értékeinek összegét jeleníti meg. Mivel a formátum a **model.Data.Summary.Total** használatára van beállítva, az összeg visszaadására konfigurálva, a rendszer az összeget úgy számítja ki, hogy meghívja a **TotalSum** aggregációját az **Összesített** adatforrásnak a *GroupBy* típusból a modell hozzárendelésben. Ha ezt az összesítést szeretné kiszámítani, akkor a modell-hozzárendelés minden olyan tranzakciót megismétel, amely ki van választva a **Szűrt** adatforrásban. Az összesítő csomópont és az utolsó rekord csomópont végrehajtási idejének összehasonlításával meghatározhatja, hogy az összeg számítása 12 ezredmásodpercig (ms) tartott. Az első és utolsó rekord csomópont végrehajtási idejének összehasonlításával meghatározhatja, hogy az összes rekord csomópont generálása 9 ezredmásodpercet igényelt. Ezért összesen 21 ezredmásodperc szükséges.
 
@@ -196,7 +196,7 @@ Ha a tranzakció mennyisége jóval nagyobb, mint az aktuális példában szerep
 11. Válassza a **Mentés** parancsot, majd válassza a **Futtatás** elemet.
 12. Töltse le és ellenőrizze a webböngészőből a felkínált fájlt.
 
-    ![Letöltött fájl](./media/ER-DeferredXml-Run1.png)
+    ![Adóérték létrehozott listája az összértékkel együtt](./media/ER-DeferredXml-Run1.png)
 
     Az utolsó rekord csomópont tartalmazza az összes feldolgozott tranzakcióhoz kiszámított adóbevallások teljes összegét, amely a létrejövő kimenetet adatforrásként használja. Ez az adatforrás a jelentés elejétől kezdődik, és folytatódik a legutóbbi adózási tranzakcióig. Az összegzés csomópont a *GroupBy* típus adatforrásának felhasználásával minden feldolgozott tranzakció adózási értékének összegét tartalmazza. Figyelje meg, hogy ezek az értékek egyenlőek. Ezért a **GroupBy** helyett a kimenet alapú összegzés használható. Az első rekord csomópont és az összegzés csomópont végrehajtási idejének összehasonlításával meghatározhatja, hogy az összes rekord csomópont generálása és összegzése 11 ezredmásodpercet igényelt. Ennélfogva a rekord csomópontok létrehozásához és az adózási értékek összegzéséhez a módosított formátum megközelítőleg kétszer gyorsabb, mint az eredeti formátum.
 
@@ -205,7 +205,7 @@ Ha a tranzakció mennyisége jóval nagyobb, mint az aktuális példában szerep
 15. Válassza a **Mentés** parancsot, majd válassza a **Futtatás** elemet.
 16. Töltse le és ellenőrizze a webböngészőből a felkínált fájlt.
 
-    ![Letöltött fájl](./media/ER-DeferredXml-Run2.png)
+    ![Adóértékek létrehozott listája szerkesztett képlettel](./media/ER-DeferredXml-Run2.png)
 
     Figyelje meg, hogy a legutóbbi rekord csomópontban szereplő adózási értékek teljes összege most megegyezik az összesítő csomópontban szereplő összeggel.
 
@@ -218,7 +218,7 @@ Ha például meg kell adnia a jelentés fejlécében szereplő adóértékek ös
 3. Válassza a **Mentés** parancsot, majd válassza a **Futtatás** elemet.
 4. Töltse le és ellenőrizze a webböngészőből a felkínált fájlt.
 
-    ![Letöltött fájl](./media/ER-DeferredXml-Run3.png)
+    ![A jelentésfejlécben található adóértékek letöltött fájlja](./media/ER-DeferredXml-Run3.png)
 
     Figyelje meg, hogy az összesítő csomópont adóértékeinek összege most 0 (nulla), mert ez az összeg már ki van számítva a létrejövő kimenet alapján. Az első rekord csomópont létrehozásakor a létrehozott kimenet még nem tartalmaz tranzakciós adatokat tartalmazó rekord csomópontokat. A formátumot úgy konfigurálhatja, hogy elhalasztja a **Jelentés\\Üzenet\\Összesítő** sorozata elem végrehajtását mindaddig, amíg a **Jelentés\\Üzenet\\Rekord** szekvencia elemét minden adózási tranzakció esetében le nem futtatták.
 
@@ -232,7 +232,7 @@ Ha például meg kell adnia a jelentés fejlécében szereplő adóértékek ös
 3. Válassza a **Mentés** parancsot, majd válassza a **Futtatás** elemet.
 4. Töltse le és ellenőrizze a webböngészőből a felkínált fájlt.
 
-    ![Letöltött fájl](./media/ER-DeferredXml-Run4.png)
+    ![A halasztott végrehajtás letöltött fájlja](./media/ER-DeferredXml-Run4.png)
 
     A **Jelentés\\Üzenet\\Összegzés** szekvenciaelemet csak azután futtatja a program, hogy minden más, a szülő elemhez beágyazott elem **Jelentés\\Üzenet** lefutott. Ezért akkor fut le, ha a **Jelentés\\Üzenet\\Rekord** szekvenciaelem lefutott az összes adóügyi tranzakcióra a **model.Data.List** adatforrásra. Az első és az utolsó rekord csomópontjainak, valamint a fejléc és az összesítő csomópontok végrehajtási ideje ezt a tényt fedi fel.
 

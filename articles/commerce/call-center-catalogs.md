@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: a091e059d4528c356a5038c750cac3a3f31a7edb
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 3758ff51de8217a209b40d7dd461e42ea9632f0a
+ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799648"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5936882"
 ---
 # <a name="call-center-catalogs"></a>Hívásközpont-katalógusok
 
@@ -39,7 +39,7 @@ A "közvetlenül a fogyasztónak" marketingvállalatok szorosan követik a vevő
 
 Lépjen a **Kiskereskedelem és kereskedelem** \> **Katalógusok és szortimentek** \> **Minden katalógus** ponthoz a katalógus konfigurálásához.
 
-Új katalógus létrehozásakor először a katalógust hozzá kell rendelnie egy vagy több csatornához. Ezt a **Kereskedelmi csatornák** gyorslapon teheti meg a **Katalógusbeállítások** űrlapon. Kattintson a **Hozzáadás** lehetőségre, és válasszon ki egy vagy több csatornát. Csak a kiválasztott csatorna [szortimenthez](https://docs.microsoft.com/dynamics365/unified-operations/retail/assortments) kapcsolt elemeket használhatja a katalógus létrehozásakor.
+Új katalógus létrehozásakor először a katalógust hozzá kell rendelnie egy vagy több csatornához. Ezt a **Kereskedelmi csatornák** gyorslapon teheti meg a **Katalógusbeállítások** űrlapon. Kattintson a **Hozzáadás** lehetőségre, és válasszon ki egy vagy több csatornát. Csak a kiválasztott csatorna [szortimenthez](/dynamics365/unified-operations/retail/assortments) kapcsolt elemeket használhatja a katalógus létrehozásakor.
 
 Ha termékeket szeretne hozzáadni a katalógushoz, ki kell választania a navigációs hierarchiát. A navigációs hierarchia célja a katalógus a kategóriaszerkezetének támogatása. Választania kell egyet a **Katalógus** oldal **Kereskedelmi csatornák** gyorslapon a kiválasztott csatornákhoz kapcsolt navigációs hierarchiák közül. Ha egy navigációs csatorna korábban nem volt hozzákapcsolva egy csatornához, lépjen a **Kiskereskedelem és kereskedelem** \> **Csatorna beállítása** \> **Csatornakategóriák és termékattribútumok** lehetőséghez, ahol hozzákapcsolhat egy alapértelmezett navigációs hierarchiát minden egyes csatornához.
 

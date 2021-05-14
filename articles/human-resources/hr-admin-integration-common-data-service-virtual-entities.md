@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ae36f1436ddd7f41bf0c3510b47cbc440224f484
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 04997aba427ae6013c8154593b09ae1a45a580c3
+ms.sourcegitcommit: 9283caad2d0636f98579c995784abec19fda2e3f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5890052"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5935753"
 ---
 # <a name="configure-dataverse-virtual-tables"></a>Dataverse-virtuális táblák konfigurálása
 
@@ -102,27 +102,15 @@ Először az Azure Portal webhelyen kell regisztrálnia a Human Resources péld�
 
 Telepítse a Dynamics 365 HR Virtual Table alkalmazást a saját Power Apps környezetében, hogy a virtuális tábla megoldáscsomagot telepíthesse a Dataverse szolgáltatáshoz.
 
-1. Nyissa meg a [Power Platform felügyeleti központot](https://admin.powerplatform.microsoft.com).
+1. A HR-modulban nyissa meg a **Microsoft Dataverse integrációja** oldalt.
 
-2. A **Környezetek** listán válassza ki a saját HR-instanciájához társított Power Apps környezetet.
+2. Válassza ki a **Virtuális táblák** lapot.
 
-3. Az oldal **Erőforrások** részében válassza ki a **Dynamics 365 alkalmazások** elemet.
+3. Válassza a **Virtuális táblaalkalmazás telepítése** lehetőséget.
 
-4. Válassza ki az **Alkalmazás telepítése** műveletet.
+### <a name="configure-the-virtual-table-data-source"></a>A virtuális tábla adatforrásának konfigurálása
 
-5. Válassza ki a **Dynamics 365 HR Virtual Table** elemet, majd pedig a **Tovább** elemet.
-
-6. Olvassa át, majd pedig kijelöléssel jelezze, hogy elfogadja-e a szolgáltatási feltételeket.
-
-7. Válassza a **Telepítés** parancsot.
-
-A telepítés néhány percet igényel. Befejezéskor folytassa a következő lépésekkel.
-
-![A Dynamics 365 HR Virtual Table alkalmazás telepítése a Power Platform felügyeleti központból](./media/hr-admin-integration-virtual-entities-power-platform-install.jpg)
-
-### <a name="configure-the-virtual-table-data-source"></a>A virtuális tábla adatforrásának konfigurálása 
-
-A következő lépésben a virtuális tábla adatforrásának a Power Apps környezetben történő konfigurálása történik. 
+A következő lépésben a virtuális tábla adatforrásának a Power Apps környezetben történő konfigurálása történik.
 
 1. Nyissa meg a [Power Platform felügyeleti központot](https://admin.powerplatform.microsoft.com).
 
@@ -133,6 +121,9 @@ A következő lépésben a virtuális tábla adatforrásának a Power Apps körn
 4. A **Megoldás-állapotfelügyeleti központ** felületén válassza ki az alkalmazásoldal jobb felső sarkában található **Összetett keresés** ikont.
 
 5. Az **Összetett keresés** oldalon, az **Elem keresése** legördülő listán válassza ki a **Finance and Operations virtuális adatforrás konfigurációi** elemet.
+
+   > [!NOTE]
+   > Az előző beállítási lépés virtuális tábla alkalmazás telepítése néhány percig is eltarthat. Ha a **Finance and Operations virtuális adatforrás konfigurációi** nem érhetők el a listában, várjon egy percet, és frissítse a listát.
 
 6. Válassza az **Eredmények** lehetőséget.
 
@@ -186,7 +177,7 @@ Engedélyek kiosztása a HR-ben lévő két Azure AD-alkalmazáshoz:
 
 A telepítés befejezését követően kiválaszthatja, hogy mely virtuális táblákat szeretné létrehozni és engedélyezni a saját Dataverse-példányában.
 
-1. A HR-modulban nyissa meg a **Dataverse integrációja** oldalt.
+1. A HR-modulban nyissa meg a **Microsoft Dataverse integrációja** oldalt.
 
 2. Válassza ki a **Virtuális táblák** lapot.
 
@@ -197,7 +188,7 @@ A telepítés befejezését követően kiválaszthatja, hogy mely virtuális tá
 
 4. Válassza a **Létrehozás/frissítés** lehetőséget.
 
-![Dataverse-integráció](./media/hr-admin-integration-common-data-service-integration.jpg)
+![Dataverse-integráció](./media/hr-admin-integration-dataverse-integration.png)
 
 ## <a name="check-table-generation-status"></a>Táblagenerálási állapot ellenőrzése
 

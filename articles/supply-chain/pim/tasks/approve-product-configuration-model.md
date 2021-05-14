@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4767d5dc3944d2595a5b2a74a6d5c7c0ea0c849a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 2c945756997b0580ac7ffb19261f9184e53a1c10
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5809446"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5920507"
 ---
 # <a name="approve-a-product-configuration-model"></a>Termékkonfigurációs modell jóváhagyása
 
@@ -26,25 +26,24 @@ ms.locfileid: "5809446"
 
 Ezen eljárás futtatásához szükség van legalább egy elérhető termékkonfigurációs modellre. Ezen eljárás az USMF bemutatócég felső kategóriás hangszóró modelljét használja. Fontos megjegyezni, hogy a modell már jóvá van hagyva, de az eljárás végigvezeti a teljes folyamaton.
 
-1. Kattintson a Termékváltozat modelldefinícióra.
-2. Kattintson a Termékkonfigurációs modellek lehetőségre.
-3. Keresse meg és jelölje ki a kívánt rekordot a listán.
+1. Lépjen a **Termékinformáció-kezelés \> Termékek \> Termékkonfigurációs modellek** elemre.
+1. Keresse meg és jelölje ki a kívánt rekordot a listán.
     * Válassza ki a Felső kategóriás modellt ehhez az eljáráshoz.  
-4. Kattintson a Verziókra.
-5. Kattintson az Új lehetőségre.
-6. A Termékszám mezőben adjon meg, vagy válasszon ki egy értéket.
+1. Válassza a **Verziók** lehetőséget.
+1. Válassza az **Új** lehetőséget.
+1. A **Termékszám** mezőben adjon meg, vagy válasszon ki egy értéket.
     * A termékre mutató hivatkozás a termékkonfigurációs modell egy verziójának felel meg. Ez a lista csak olyan alaptermékeket jelenít meg, amelyek a megszorításon alapuló konfigurációs technológiát alkalmazzák.  
-7. Adjon meg egy dátumot a Kezdő dátum mezőben.
+1. Adjon meg egy dátumot a **Kezdő dátum** mezőben.
     * Válassza ki, hogy mikor lesz elérhető a termékmodell-verzió.  
-8. Adja meg a dátumot a „Záró dátum” mezőben.
+1. Adjon meg egy dátumot a **Záró dátum** mezőben.
     * Válassza ki a záró dátumot, amikor a termékmodell-verzió lejár, vagy válassza a Soha lehetőséget.  
-9. A Jóváhagyás gombra kattintva megnyithatja a legördülő párbeszédablakot.
-10. A Jóváhagyó mezőben adjon meg vagy válasszon ki egy értéket.
+1. A **Jóváhagyás** gombra kattintva megnyithatja a legördülő párbeszédablakot.
+1. A **Jóváhagyó** mezőben adjon meg vagy válasszon ki egy értéket.
     * Válassza ki a termékmodellek műveletekben történő használatának jóváhagyásáért felelős személyt.  
-11. Kattintson az OK gombra.
-12. Válassza ki valamelyik lehetőséget az Árazási mód mezőben.
+1. Válassza ki az **OK** lehetőséget.
+1. Válassza ki valamelyik lehetőséget az **Árazási mód** mezőben.
     * Aktiválja a termékmodell-verziót. Egyszerre csak egy termék lehet aktív egy termékmodell esetében.  
-13. Zárja be a lapot.
+1. Zárja be a lapot.
 
 
 

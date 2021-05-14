@@ -1,8 +1,8 @@
 ---
 title: Költségvetés áttekintése
 description: Majdnem minden vállalatnak, amely használja a Pénzügy funkciót a Microsoft Dynamics 365 Finance rendszerben, képesnek kell lennie előirányzatot és tényleges adatokat összehasonlító jelentések készítésére. Ez a cikk ismerteti a minimális konfigurációt, amely költségvetések létrehozásához vagy külső programból történő betöltéséhez szükséges a Finance and Operations rendszerben.
-author: ShylaThompson
-ms.date: 01/11/2018
+author: panolte
+ms.date: 04/29/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.reviewer: roschlom
 ms.custom: 60113
 ms.assetid: 28a9793e-d376-47af-a345-69046bad17df
 ms.search.region: global
-ms.author: sigitac
+ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 70428d6603939d8a36c0d3452e6ffdc6e3864865
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 02122d9145552952412c239a7f541e6a727f061e
+ms.sourcegitcommit: fd15b02fc9caa1c05e56abdc276a7f4b23b0d8f3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5827458"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "5960049"
 ---
 # <a name="budgeting-overview"></a>Költségvetés készítésének áttekintése
 
@@ -71,7 +71,7 @@ A Microsoft Dynamics 365 Finance 10.0.7 verzióban (2020 január) bevezetett fun
 
 A **Költségvetési tételjegyzék-bejegyzések csak mennyiséghez** esetén csak mennyiségi értékkel adhatók fel olyan költségvetési tételjegyzék-bejegyzések. Például feladhat egy 32 és egy nulla árat tartalmazó költségvetési bejegyzést, ami nulla összeggel jár. Ezt a mennyiséget egy pénzügyi jelentés keretein belül használhatja, hogy meghatározza a mennyiségre jutó árat. Ne feledje, hogy a funkció részeként nem lettek frissítve a lekérdezések és a jelentések. Ez a funkció csak nulla összeg feladását teszi lehetővé.
 
-A **Költségvetési tételjegyzék-bejegyzések az összegtípus alapján** lehetővé teszi au alapértelmezett összegtípus számára, hogy a költségregiszter bejegyzésben a kiadástól eltérő összegtípus legyen. A költségvetési tételjegyzék-bejegyzés sora most alapértelmezetten költségként jelenik meg, amikor a fő számla típusa költség; alapértelmezetten bevételként jelenik meg, ha a fő számla típusa költség; és az alapértelmezett költség lesz az összes többi számlatípus esetében.
+A **Költségvetési tételjegyzék-bejegyzések az összegtípus alapján** lehetővé teszi au alapértelmezett összegtípus számára, hogy a költségregiszter bejegyzésben a kiadástól eltérő összegtípus legyen. A költségvetési tételjegyzék-bejegyzés sora most alapértelmezetten költségként jelenik meg, amikor a fő számla típusa költség; alapértelmezetten bevételként jelenik meg, ha a fő számla típusa bevétel; és az alapértelmezett költség lesz az összes többi számlatípus esetében.
 
 ## <a name="using-workspaces-and-inquiry-pages-to-track-budget-vs-actuals"></a>Munkaterületek és a lekérdezési lapok segítségével nyomon követheti a költségvetés-tényleges
 A költségvetés-kezelő tekintheti meg a költségvetés aktuális állapotát a **főkönyvi költségvetések és az előrejelzések** munkaterület. A **túllépő útiköltség költségvetési** és **a költségvetést bevétel** lapok biztosítja a gyors pénzügyi dimenziókombinációk Ha költségvetési tervek nem felelnek, vagy a program hamarosan eléri a küszöbértéket. A költségvetési küszöbértéket, és a Dimenziófókuszok kattintva a lapokon használt személyre szabható **konfigurálása a munkaterület**. Rákattinthat **egységvezetőket** ellenőrizhető, hogy az adott pénzügyi dimenziókombinációk ezen a lapon kiválasztott felelős dolgozók. Például ha látja, hogy a műveletek részleg a kiadási költségvetés lesz a költségvetési küszöbértéket meghaladó, egyszerűen található, és lépjen kapcsolatba a kiadás megvitatására üzemvezető részleg. 

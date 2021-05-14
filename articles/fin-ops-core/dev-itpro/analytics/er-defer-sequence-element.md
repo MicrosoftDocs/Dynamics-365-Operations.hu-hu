@@ -2,7 +2,7 @@
 title: A szekvenciaelemek végrehajtásának elhalasztása az ER-formátumokban
 description: Ez a témakör azt mutatja be, hogyan lehet elhalasztani egy szekvenciaelem végrehajtását egy elektronikus jelentési (ER) formátumban.
 author: NickSelin
-ms.date: 03/17/2020
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-07-01
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: cdcbc828fadce641cbee2cc6135be819a03275c9
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: a7904924d1c2830287e26eb9fb71bd9a03f210d9
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5894100"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944509"
 ---
 # <a name="defer-the-execution-of-sequence-elements-in-er-formats"></a>A szekvenciaelemek végrehajtásának elhalasztása az ER-formátumokban
 
@@ -57,14 +57,14 @@ Ha még nem végezte el a példát a következő témakörben: [Az XML-elemek v�
 
 | Tartalom leírása            | Fájlnév |
 |--------------------------------|-----------|
-| ER-adatmodell konfigurációja    | [Model to learn deferred elements.version.1.xml](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
-| ER-modell leképzési konfigurációja | [Mapping to learn deferred elements.version.1.1.xml](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| ER-adatmodell konfigurációja    | [Model to learn deferred elements.version.1.xml](https://download.microsoft.com/download/7/6/0/760933ca-4ac3-4f50-bc0c-c35e596ee066/Modeltolearndeferredelements.version.1.xml) |
+| ER-modell leképzési konfigurációja | [Mapping to learn deferred elements.version.1.1.xml](https://download.microsoft.com/download/c/9/c/c9c4b9dd-b700-4385-a087-a84ce9fc1d0f/Mappingtolearndeferredelements.version.1.1.xml) |
 
 A kezdés előtt le kell tölteni és menteni kell a minta ER-megoldás következő konfigurációját.
 
 | Tartalom leírása     |Fájlnév |
 |-------------------------|----------|
-| ER-formátum konfigurációja | [Format to learn deferred sequences.version.1.1.xml](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| ER-formátum konfigurációja | [Format to learn deferred sequences.version.1.1.xml](https://download.microsoft.com/download/0/f/5/0f55c341-8285-4d92-a46d-475d9a010927/Formattolearndeferredsequences.version.1.1.xml) |
 
 ### <a name="import-the-sample-er-configurations"></a>Minta ER-konfigurációk importálása
 
@@ -169,7 +169,7 @@ Ellenőrizze az ER-modellhozzárendelési összetevő beállítását, amely az 
 1. A **Formátumtervező** oldalon válassza a **Futtatás** elemet.
 2. Töltse le a webböngészőből a felkínált fájlt, és nyissa meg ellenőrzésre.
 
-    ![Letöltött fájl](./media/ER-DeferredSequence-Run.png)
+    ![Letöltött minta jelentésfájl](./media/ER-DeferredSequence-Run.png)
 
 Figyelje meg, hogy a 22-es összesítő sor a feldolgozott tranzakciók adózási értékeinek összegét jeleníti meg. Mivel a formátum a **model.Data.Summary.Total** használatára van beállítva, az összeg visszaadására konfigurálva, a rendszer az összeget úgy számítja ki, hogy meghívja a **TotalSum** aggregációját az **Összesített** adatforrásnak a *GroupBy* típusból, amely a modell hozzárendelését használja. Ha ezt az összesítést szeretné kiszámítani, akkor a modell-hozzárendelés minden olyan tranzakciót megismétel, amely ki van választva a **Szűrt** adatforrásban. A 21-es és 22-es sor végrehajtási idejének összehasonlításával meghatározhatja, hogy az összeg számítása 10 ezredmásodpercet (MS) igényelt. A 2-es és 21-es sor végrehajtási idejének összehasonlításával meghatározhatja, hogy az összes tranzakciós sor számítása 7 ezredmásodpercet igényelt. Ezért összesen 17 ezredmásodperc szükséges.
 
@@ -202,7 +202,7 @@ Ha a tranzakciók mennyisége jóval nagyobb, mint az aktuális példában szere
 12. Válassza a **Mentés** parancsot, majd válassza a **Futtatás** elemet.
 13. Töltse le és ellenőrizze a webböngészőből a felkínált fájlt.
 
-    ![Letöltött fájl](./media/ER-DeferredSequence-Run1.png)
+    ![Letöltött fájl – Összegzett adóértékek](./media/ER-DeferredSequence-Run1.png)
 
     A 21-es sor tartalmazza az összes feldolgozott tranzakcióhoz kiszámított adóbevallások teljes összegét, amely a létrejövő kimenetet adatforrásként használja. Ez az adatforrás a jelentés elejétől kezdődik, és folytatódik a legutóbbi adózási tranzakcióig. A 22-es sor a *GroupBy* típus adatforrásának felhasználásával minden feldolgozott tranzakció adózási értékének összegét tartalmazza. Figyelje meg, hogy ezek az értékek egyenlőek. Ezért a **GroupBy** helyett a kimenet alapú összegzés használható. A 2-es és 21-es sor végrehajtási idejének összehasonlításával meghatározhatja, hogy az összes tranzakciós sor generálása és összegzése 9 ezredmásodpercet igényelt. Ennélfogva a részletes sorok létrehozásához és az adózási értékek összegzéséhez a módosított formátum megközelítőleg kétszer gyorsabb, mint az eredeti formátum.
 
@@ -211,7 +211,7 @@ Ha a tranzakciók mennyisége jóval nagyobb, mint az aktuális példában szere
 16. Válassza a **Mentés** parancsot, majd válassza a **Futtatás** elemet.
 17. Töltse le és ellenőrizze a webböngészőből a felkínált fájlt.
 
-    ![Letöltött fájl](./media/ER-DeferredSequence-Run2.png)
+    ![Letöltött fájl szerkesztett képlettel](./media/ER-DeferredSequence-Run2.png)
 
     Figyelje meg, hogy a legutóbbi tranzakció részletei sorban szereplő adózási értékek teljes összege most megegyezik az összesítő sorban szereplő összeggel.
 
@@ -224,7 +224,7 @@ Ha például meg kell adnia a jelentés fejlécében szereplő adóértékek ös
 3. Válassza a **Mentés** parancsot, majd válassza a **Futtatás** elemet.
 4. Töltse le és ellenőrizze a webböngészőből a felkínált fájlt.
 
-    ![Letöltött fájl](./media/ER-DeferredSequence-Run3.png)
+    ![Letöltött fájl a jelentésfejlécben való összegzéshez](./media/ER-DeferredSequence-Run3.png)
 
     Figyelje meg, hogy a 2. összesítő sor adóértékeinek összege most 0 (nulla), mert ez az összeg már ki van számítva a létrejövő kimenet alapján. A 2. sor létrehozásakor a létrehozott kimenet még nem tartalmaz tranzakciós adatokat tartalmazó sorokat. A formátumot úgy konfigurálhatja, hogy elhalasztja a **Jelentés\\Sorok\\Összesítő** sorozata elem végrehajtását mindaddig, amíg a **Jelentés\\Sorok\\Rekord** szekvencia elemét minden adózási tranzakció esetében le nem futtatták.
 
@@ -238,7 +238,7 @@ Ha például meg kell adnia a jelentés fejlécében szereplő adóértékek ös
 3. Válassza a **Mentés** parancsot, majd válassza a **Futtatás** elemet.
 4. Töltse le és ellenőrizze a webböngészőből a felkínált fájlt.
 
-    ![Letöltött fájl](./media/ER-DeferredSequence-Run4.png)
+    ![Letöltött fájl – halasztott végrehajtás](./media/ER-DeferredSequence-Run4.png)
 
     A **Jelentés\\Sorok\\Összegzés** szekvenciaelemet csak azután futtatja a program, hogy minden más, a szülő elemhez beágyazott elem **Jelentés\\Sorok** lefutott. Ezért akkor fut le, ha a **Jelentés\\Sorok\\Rekord** szekvenciaelem lefutott az összes adóügyi tranzakcióra a **model.Data.List** adatforrásra. Az 1., 2. és 3. sor, valamint az utolsó sor, a 22-es sor végrehajtási időpontja megmutatja ezt a tényt.
 

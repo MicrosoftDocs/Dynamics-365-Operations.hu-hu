@@ -1,5 +1,5 @@
 ---
-title: A Dynamics 365 Supply Chain Management 10.0.18. előzetes verziója (2021. május)
+title: Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.18-as verziójában (2021. május)
 description: Ez a témakör a Dynamics 365 Supply Chain Management 10.0.18 új vagy módosított szolgáltatásait írja le.
 author: kamaybac
 ms.date: 03/01/2021
@@ -15,19 +15,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: ae65afbcaca1f2f390520e1108d8363c3e248c60
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: d84520b8f551df847cb5d77d8dcbce1701d3795b
+ms.sourcegitcommit: d77b2175a3364694b5c74e0062e317f612416796
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5909353"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5934967"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10018-may-2021"></a>A Dynamics 365 Supply Chain Management 10.0.18. előzetes verziója (2021. május)
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-version-10018-may-2021"></a>Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.18-as verziójában (2021. május)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-Ez a témakör a Microsoft Dynamics 365 Supply Chain Management 10.0.18 előzetes kiadásának új vagy módosított szolgáltatásait írja le. Ennek a verziónak 10.0.793 a buildszáma, és a következő módon érhető el:
+Ez a témakör a Microsoft Dynamics 365 Supply Chain Management 10.0.18 új vagy módosított szolgáltatásait sorolja fel. Ennek a verziónak 10.0.793 a buildszáma, és a következő módon érhető el:
 
 - **Kiadás előzetes verziója:** 2021. március
 - **A kiadás általános elérhetővé tétele (saját frissítés):** 2021. április
@@ -43,9 +42,17 @@ Ez a kiadás a következő funkciókat tartalmazza: Kövesse a [kiadási tervet]
 
 - [Visszatérítések kezelése](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/rebate-management)<br> - További információkért lásd: [Visszatérítés-kezelési modul áttekintése](../rebate-management/rebate-management-overview.md)
 
+- [Értékesítési adatentitás exportálásának beállítási irányelve](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/sales-data-entity-export-setup-policy)
+
+- [Értékesítési visszárurendelés-sor regisztrálása decimális pontossággal, tényleges súllyal vagy anélkül](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/sales-return-order-line-registration-decimal-precision-without-catch-weight)
+
+- [Egykattintásos értékesítésirendelés-megerősítés](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/single-click-sales-order-confirmation)
+
+- [Értékesítési rendelésről beszerzésirendelés-sorra mutató hivatkozás esetén érvényes törlési irányelv](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/sales-order-purchase-order-line-deletion-policy)
+
 - Egyszerűsített felület a csak érkezéskori és távozáskori blokkoláshoz (a [Továbbfejlesztett termelési üzem végrehajtási felület gyártáshoz](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enhanced-production-floor-execution-interface-manufacturing) továbbfejlesztett változata)<br> - További információk: [A termelési üzem végrehajtási felületének konfigurálása](../production-control/production-floor-execution-configure.md).
 
-Ezen szolgáltatások többségét a használat előtt engedélyezni kell a [Funkciók kezelése](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) alatt. A felsorolt szolgáltatások egy része továbbra is előnézeti módban van, mások azonban már általánosan elérhetők. 
+Ezen szolgáltatások többségét a használat előtt engedélyezni kell a [Funkciók kezelése](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) alatt.
 
 ## <a name="new-and-updated-documentation-resources"></a>Új és frissített dokumentáció-erőforrások
 

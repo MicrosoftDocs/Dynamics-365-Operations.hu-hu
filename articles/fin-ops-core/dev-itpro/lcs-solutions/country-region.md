@@ -14,19 +14,19 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 95989a395781e790da6aedc9079c3aaebf98f9ae
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: b3e7ba3405b6113bf612c685c4cccd9cf50f1187
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748465"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5920857"
 ---
 # <a name="globalization-resources"></a>Globalizációs erőforrások
 
 ## <a name="local-and-regional-deployments"></a>Helyi és regionális telepítések
 Ha a kormányzati szabályozás előírja, hogy az adatokat a többi országtól/régiótól eltérően kell tárolni vagy karbantartani, előfordulhat, hogy az adott országban/régióban érvényes követelményeknek kell megfelelni a rendszer telepítésekor. Vegye figyelembe a következő erőforrásokat, amelyek fontosak lehetnek az Ön számára:
 
-[Finance and Operations alkalmazások, amelyeket a 21Vianet működtet Kínában](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/china-local-deployment)
+[Finance and Operations-alkalmazások, amelyeket a 21Vianet működtet Kínában](../deployment/china-local-deployment.md)
 
 ## <a name="localization-and-regulatory-features"></a>Honosítási és szabályozási funkciók
 
@@ -60,7 +60,7 @@ A következő erőforrások a tervezett és új honosítási funkciókat ismerte
 -   [Figyelmeztetések elküldése az ország/régióspecifikus jogszabályban előírt funkciókkal kapcsolatban](submit-localization-alerts.md)
 
 #### <a name="dynamics-365-release-plans"></a>Dynamics 365 programverzióra vonatkozó kiadási tervek
-A [Dynamics 365 programverzióra vonatkozó kiadási tervek](https://docs.microsoft.com/business-applications-release-notes/) ismertetik a Dynamics 365 üzleti alkalmazások és az alkalmazásplatformok tervezett új és továbbfejlesztett képességeit. 
+A [Dynamics 365 programverzióra vonatkozó kiadási tervek](/business-applications-release-notes/) ismertetik a Dynamics 365 üzleti alkalmazások és az alkalmazásplatformok tervezett új és továbbfejlesztett képességeit. 
 
 #### <a name="finance-and-operations-apps-whats-new"></a>Finance and Operations alkalmazások újdonságai
 Az [Új és módosult elemek szakasz a Finance and Operations kezdőlapján](../../fin-ops/get-started/whats-new-changed.md) felsorolja azokat a funkciókat, amelyek a Finance and Operations-alkalmazások meghatározott kiadásaiban szerepelnek.

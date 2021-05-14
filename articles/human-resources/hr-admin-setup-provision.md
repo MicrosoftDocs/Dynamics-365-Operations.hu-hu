@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 177586068ddb86943f8013722e1be9e63c53fa0f
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: fee496157db581bf77f444674ca858aa4383e27c
+ms.sourcegitcommit: 54d3ec0c006bfa9d2b849590205be08551c4e0f0
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5889788"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "5963215"
 ---
 # <a name="provision-human-resources"></a>Emberi erőforrások létesítése
 
@@ -55,6 +55,9 @@ A további környezetekkel kapcsolatos szempontok többek között a következő
 Az LCS-nek a Human Resources kezelésére való használatához előbb egy LCS-projektet kell létrehozni.
 
 1. Jelentkezzen be az [LCS](https://lcs.dynamics.com/Logon/Index)-be azzal a fiókkal, amelyet a Human Resources szolgáltatásra való feliratkozáshoz használt.
+
+   > [!NOTE]
+   > A sikeres üzembe helyezés érdekében az Emberi erőforrások környezet építéséhez használt fiókot hozzá kell rendelni vagy a **Rendszergazda** vagy a **Rendszer testre szabó** szerepkörhöz, amely az Emberi erőforrások Power Apps környezethez hozzá van rendelve. A Power Platformon való biztonsági szerepkörök felhasználókhoz való hozzárendelésével kapcsolatos további információért lásd: [Felhasználói biztonság konfigurálása az erőforrásokhoz](https://docs.microsoft.com/power-platform/admin/database-security).
 
 2. Válassza ki a pluszjelet (**+**) projekt létrehozásához.
 
@@ -115,13 +118,30 @@ Kövesse az alábbi útmutatást, amikor azt állapítja meg, hogy melyik Power 
    
     - **Próbakörnyezetek** – ezek a környezetek lejárati dátummal jönnek létre. A lejárat után a program automatikusan eltávolítja az Ön környezetét és a benne található összes Human Resources-példányt.
    
-    - **Nem támogatott régiók** – Jelenleg a Human Resources csak a következő régiókban támogatott: Egyesült Államok, Európa, Egyesült Királyság, Ausztrália, Kanada és Ázsia.
-
-    > [!NOTE]
-    > A Human Resources környezetet ugyanabban a régióban kell létesíteni, amelyben a Power Apps környezet létesítése történt. A Human Resources környezet egy másik régióba történő áttelepítése nem támogatott.
+    - **Nem támogatott földrajzi területek** - A környezetnek támogatott földrajzi területnek kell lennie. A további tudnivalókat lásd: [Támogatott földrajzi területek](hr-admin-setup-provision.md#supported-geographies).
 
 6. Miután meghatározta a használandó a helyes környezetet, folytathatja a létesítési folyamat. 
- 
+
+### <a name="supported-geographies"></a>Támogatott földrajzi területek
+
+Az Emberi erőforrások jelenleg a következő földrajzi területeket támogatja:
+
+- Amerikai Egyesült Államok
+- Európa
+- Egyesült Királyság
+- Ausztrália
+- Kanada
+- Ázsia 
+
+Az Emberi erőforrások környezet létrehozásakor ki kell választania a Power Apps környezetet, hogy társíthassa az Emberi erőforrások környezethez. Az Emberi erőforrások környezet ezzel egy időben létesített Azure földrajzi területe megegyezik a kiválasztott Power Apps környezettel. Az Emberi erőforrások környezetét és az adatbázis fizikai helyét kiválaszthatja, az emberi erőforrások Power Apps környezethez társításakor a földrajzi terület kijelölésével.
+
+Kiválaszthatja azt az Azure *földrajzi területet*, amelyben a környezet felül van vizsgálva, de nem tudja meghatározni az adott Azure *régiót*. Az automatizálás határozza meg a földrajzi terület adott régióját, amelyben a környezet a terheléselosztás és a teljesítmény optimalizálása érdekében lett létrehozva. Az Azure földrajzi területekre és régiókra vonatkozó információkat az [Azure földrajzi területek](https://azure.microsoft.com/global-infrastructure/geographies) dokumentációjában találja.
+
+Az Emberi erőforrások környezet adatai mindig abban az Azure földrajzi területben találhatók, amelyben létre lettek hozva. Azonban nem mindig lesz ugyanabban az Azure-régióban. A természeti erőforrások vészhelyreállítás céljából az adatok másolva lesznek mind az elsődleges Azure-régióba, mind a földrajzi régió másodlagos feladatátvételi régiójába.
+
+ > [!NOTE]
+ > Az Emberi erőforrások környezet egy Azure-régióból történő áttelepítése nem támogatott.
+
 ## <a name="grant-access-to-the-environment"></a>Hozzáférés biztosítása a környezethez
 
 Alapértelmezés szerint a környezetet csak az a globális rendszergazda érheti el, aki létrehozta. Az alkalmazás további felhasználóinak kifejezett módon engedélyezni kell a hozzáférést. Fel kell vennie a felhasználókat, és hozzájuk kell rendelnie a megfelelő szerepköröket a Human Resources környezetben. A Human Resources szolgáltatást telepítő globális rendszergazdának el kell indítania az Attract és az Onboard alkalmazást is ahhoz, hogy befejezze az inicializálást, és engedélyezze a hozzáférést más bérlő felhasználók számára is. Amíg erre nem kerül sor, más felhasználók nem tudják elérni az Attract és Onboard alkalmazást, és hozzáférési hibákra vonatkozó üzeneteket fognak kapni. További tudnivalókért lásd: [Új felhasználók létrehozása](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) és [Felhasználók hozzárendelése biztonsági szerepkörökhöz](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles). 

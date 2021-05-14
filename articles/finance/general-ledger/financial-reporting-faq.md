@@ -14,78 +14,57 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: a0718db77399901acc8c88278c5b373b77b3cb16
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 023354b0e2973f63411bf81cbeb0344333c49112
+ms.sourcegitcommit: d63e7e0593084a61362a6cad3937b1fd956c384f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811309"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923025"
 ---
 # <a name="financial-reporting-faq"></a>Pénzügyi jelentéskészítés – GYIK 
 
-Ebben a témakörben más felhasználóknál a pénzügyi jelentéskészítéssel kapcsolatban felmerült kérdésekre adunk választ. 
+Ez a témakör a pénzügyi jelentéskészítéssel kapcsolatos gyakran ismételt kérdésekre ad választ. 
 
+## <a name="how-do-i-restrict-access-to-a-report-using-tree-security"></a>Hogyan lehet korlátozni a jelentésekhez való hozzáférést a fa biztonsági beállítással?
 
-## <a name="how-do-i-restrict-access-to-a-report-using-tree-security"></a>Hogyan lehet korlátozni a jelentésekhez való hozzáférést a Fa biztonsági beállítással?
+A következő példák bemutatják, hogyan lehet korlátozni a jelentésekhez való hozzáférést a fa biztonsági beállítással.
 
-Eset: Az USMF bemutatóvállalat mérlegkimutatás készít, és nem szeretné, hogy a pénzügyi jelentéskészítési funkció minden felhasználója megtekinthesse a kimutatást a D365-ben. Megoldás: A Fa biztonsági beállítással korlátozhatja az adott jelentéshez való hozzáférést, amelyet így csak bizonyos felhasználók érhetnek el. 
+Az USMF bemutatóvállalat mérlegkimutatás készít, amelyhez a pénzügyi jelentéskészítési funkció nem minden felhasználójának kellene hozzáférnie. A hozzáférés korlátozása érdekében a fa biztonsági beállítással korlátozhatja az adott jelentéshez való hozzáférést, amelyet így csak bizonyos felhasználók érhetnek el. A hozzáférés korlátozásához kövesse az alábbi lépéseket: 
 
-1.  Jelentkezzen be a Pénzügyi jelentés – Jelentéstervező alkalmazásba.
+1. Jelentkezzen be a Pénzügyi jelentés – Jelentéstervező alkalmazásba.
+2. Hozzon létre új fadefiníciót. Lépjen a **Fájl > Új > Fadefiníció** lehetőségre.
+3. Kattintson duplán az **Összegzés** sorra az **Egység biztonsága** oszlopban.
+4. Válassza ki a **Felhasználók és csoportok** lehetőséget.  
+5. Válassza ki azokat a felhasználókat vagy csoportokat, amelyeknek hozzá kell férnie ehhez a jelentéshez. 
+6. Válassza a **Mentés** lehetőséget.
+7. A jelentésdefinícióban adja meg az új fadefiníciót.
+8. A fadefinícióban válassza ki a **Beállítások** lehetőséget. A **Jelentési egység kiválasztása** pont alatt válassza az **Összes egységgel együtt** lehetőséget.
 
-2.  Hozzon létre egy új fadefiníciót (Fájl | Új | Fadefiníció). a.    Kattintson duplán az **Összegzés** sorra az **Egység biztonsága** oszlopban.
-  i.    Kattintson a Felhasználók és csoportok elemre.  
-          1. Válassza ki azokat a felhasználókat vagy csoportokat, amelyeknek szeretne hozzáférést adni a jelentéshez. 
-          
-[![felhasználói képernyő](./media/FR-FAQ_users.png)](./media/FR-FAQ_users.png)
+## <a name="how-do-i-identify-which-accounts-do-not-match-my-balances"></a>Hogyan tudom meghatározni, hogy mely számlák nem egyeznek meg az egyenlegeimmel?
 
-[![biztonsági képernyő](./media/FR-FAQ_security.jpg)](./media/FR-FAQ_security.jpg)
+Ha a jelentés egyenlegei nem egyeznek meg, az alábbi lépésekkel azonosíthatja a számlákat és az eltéréseket. 
 
-  b.    Kattintson a **Mentés** gombra.
-  
-[![mentés gomb](./media/FR-FAQ_save.png)](./media/FR-FAQ_save.png)
+**A Pénzügyi jelentés – Jelentéstervező alkalmazás**
+1. A Pénzügyi jelentés – Jelentéstervező alkalmazásban hozzon létre egy új sordefiníciót. 
+2. Válassza ki a **Szerkesztés > Sorok beszúrása dimenziókból** lehetőséget.
+3. Válassza ki a **Főszámla** lehetőséget.  
+4. Válassza ki az **OK** lehetőséget.
+5. Mentse a sordefiníciót.
+6. Hozzon létre egy új oszlopdefiníciót
+7. Hozzon létre új jelentésdefiníciót.
+8. Válassza ki a **Beállítások** lehetőséget és törölje az opció kijelölését.  
+9. Hozza létre a jelentést. 
+10. Exportálja a jelentést a Microsoft Excel szoftverbe.
 
-3.  A Jelentésdefiníció résznél adja meg az új fadefiníciót.
+**Dynamics 365 Finance** 
+1. A Dynamics 365 Finance szolgáltatásban lépjen a **Főkönyv > Lekérdezések és jelentések > Főkönyvi kivonat** lehetőségre.
+2. A következő paraméterek beállítása:
+   - **Kezdő dátum** – Adja meg a pénzügyi év kezdetét.
+   - **Záró dátum** – Adja meg a dátumot, amelyhez létrehozza a jelentést.
+   - **Pénzügyi dimenzió** – Állítsa ezt a mezőt a **Fő számlakészet** lehetőségre.
+ 3. Válassza ki a **Számítás** lehetőséget.
+ 4. Exportálja a jelentést a Microsoft Excel szoftverbe.
 
-[![fadefiníció űrlapja](./media/FR-FAQ_tree-definition.jpg)](./media/FR-FAQ_tree-definition.jpg)
-
-A.  A fadefinícióban kattintson a Beállítás elemre, és a „Jelentési egység kiválasztása” résznél jelölje be „Az összes egységgel együtt” jelölőnégyzetet.
-
-[![jelentési egység kiválasztása űrlap](./media/FR-FAQ_reporting-unit-selection.jpg)](./media/FR-FAQ_reporting-unit-selection.jpg)
-
-**Előtte:** [![előtte képernyőkép](./media/FR-FAQ_before.png)](./media/FR-FAQ_before.png)
-
-**Utána:** [![utána képernyőkép](./media/FR-FAQ_after.png)](./media/FR-FAQ_after.png)
-
-Megjegyzés: A fenti üzenet oka az, hogy a felhasználónak az Egység biztonsága alkalmazása után nincs hozzáférése a jelentéshez.
-
-
-
-## <a name="how-do-i-determine-which-accounts-do-not-matching-my-balances-in-d365"></a>Hogyan tudom meghatározni, hogy mely számlák nem egyeznek meg az egyenlegeimmel a D365-ben?
-
-Ha a jelentés értékei nem egyeznek a D365-ben várt értékekkel, az alábbi lépésekkel azonosíthatja az ilyen számlákat, valamint az eltéréseket. 
-
-### <a name="in-financial-reporter-report-designer"></a>A Pénzügyi jelentés – Jelentéstervező alkalmazásban
-
-1.  Hozzon létre egy új sordefiníciót. a.    Kattintson a Szerkesztés | Sorok beszúrása dimenziókból lehetőségre. i.  Válassza a MainAccount lehetőséget [![Válassza a Főképernyő lehetőséget_](./media/FR-FAQ_selectmain_.png)](./media/FR-FAQ_selectmain_.png)
-    
-    ii. Kattintson az OK gombra. b.    Mentse a sordefiníciót.
-
-2.  Hozzon létre új oszlopdefiníciót.     [![Hozzon létre új oszlopdefiníciót](./media/FR-FAQ_column.png)](./media/FR-FAQ_column.png)
-
-3.  Hozzon létre új jelentésdefiníciót. a.    Kattintson a Beállítások gombra, és törölje a következőt: [![Beállítási űrlap](./media/FR-FAQ_settings.png)](./media/FR-FAQ_settings.png)
-   
-4.  Hozza létre a jelentést. 
-
-5.  Exportálja a jelentést Excelbe.
-
-### <a name="in-d365"></a>A D365-ben: 
-1.  Kattintson a Főkönyv | Lekérdezések és jelentések | Főkönyvi kivonat lehetőségre. a.    Paraméterek. i.  Kezdő dátum: a pénzügyi év kezdete. ii. Záró dátum: a jelentés létrehozásának dátuma. iii.    Pénzügyi dimenziókészlet, „Fő számlakészet” [![Fő számla űrlapja](./media/FR-FAQ_mainacct.png)](./media/FR-FAQ_mainacct.png)
-      
-  b.    Kattintson a Számítás lehetőségre.
-
-2.  Exportálja a jelentést Excelbe.
-
-Most már a D365 főkönyvi kivonati jelentésébe másolhatja az Excelben létrehozott pénzügyi jelentés, és összehasonlíthatja a „Záró egyenleg” oszlopokat.
-
+Most már a főkönyvi kivonati jelentésbe másolhatja az Excelben létrehozott pénzügyi jelentést, hogy összehasonlítsa a **Záró egyenleg** oszlopokat.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

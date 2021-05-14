@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 138bf58e07d4d6df3c2106e4176e02fcdb0a6dba
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 4f50dfa5c2914ce2131cdc44582588be69b35335
+ms.sourcegitcommit: 2eb7a9ae544f504155657c5c584cbac66c21dba4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5820418"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "5961705"
 ---
 # <a name="master-planning-with-purchase-trade-agreements"></a>Alaptervezés a beszerzésre vonatkozó kereskedelmi megállapodásokkal
 
@@ -67,7 +67,7 @@ Miután a rendszer készen áll az előző szakaszban ismertetett módon, köves
 1. Ismételje meg az eljárást minden érintett termék esetén.
 
 > [!NOTE]
-> A beszerzési kereskedelmi megállapodási sorban szereplő pénznemnek meg kell egyeznie a kiválasztott szállító pénznemével. Az alaptervezés csak olyan beszerzési kereskedelmi megállapodási sorokból származó adatokat dolgoz fel, amelyeknél a pénznem megfelel a szállító pénznemének.
+> A több pénznemű beszerzési kereskedelmi megállapodások tervezésének optimalizálása. Amikor a **Legalacsonyabb egységár** beállítás használatával keres kereskedelmi megállapodást, a rendszer figyelembe veszi a különböző pénznemekkel rendelkező kereskedelmi megállapodási sorokat, amennyiben a kereskedelmi megállapodási sor pénzneméhez és a jogi személy könyvelési pénzneméhez meg lett határozva egy árfolyam. Ellenkező esetben a rendszer figyelmen kívül hagyja a kereskedelmi megállapodás sorát, és hibaüzenetet jelenik meg az alaptervezés során. Emiatt az alaptervezés minden olyan beszerzési kereskedelmi megállapodási sor adatát tartalmazni fogja, amelyekben az árak átválthatók a könyvelési pénznemre.
 
 ## <a name="examples-of-how-planning-optimization-finds-vendor-and-lead-times"></a>A példák arra, ahogy a tervezés optimalizálása a szállítói és az átfutási időket észleli
 

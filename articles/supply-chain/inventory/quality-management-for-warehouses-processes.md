@@ -2,7 +2,7 @@
 title: Raktári folyamatok minőségkezelése
 description: A témakör raktárfolyamatok funkcióhoz tartozó minőségkezelési folyamatról tartalmaz információkat. Ez a funkció kiterjeszti a minőségkezelési funkciókat, és lehetővé teszi a felhasználók számára, hogy a speciális raktárkezelés modul segítségével cikk-mintavételezési funkciókat integráljanak a raktárba.
 author: Henrikan
-ms.date: 04/02/2020
+ms.date: 03/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-04-02
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: a049a7832e02dbd2debdd016a6b723726cc25df0
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: db23ffcea4da28fa309ccca12540e0edaf00ad6c
+ms.sourcegitcommit: 8362f3bd32ce8b9a5af93c8e57daef732a93b19e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5834265"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "5956082"
 ---
 # <a name="quality-management-for-warehouse-processes"></a>Raktári folyamatok minőségkezelése
 
@@ -620,5 +620,8 @@ A 51 raktárhoz beállította a munka- és a helyadatokat, hogy biztosítsa a mu
 > [!NOTE]
 > Fontolja meg a kimenő minőség bejegyzés hozzáadását egy mobileszköz-menüelemhez, ahol a tevékenység kódja *Nyitott munkalista megjelenítése*. Példaként megtekintheti a **Munkalista** nevű mobileszköz munkaelemet a demóadatok között. A *Minőségi rendelés* munkaosztályt először adja hozzá felhasználó által irányított menüelemhez adja hozzá, mivel ez a munkaosztály szükséges munka megjelenítéséhez a munkalistában. Ezután vegye fel a *Minőségi rendelés* munkaosztályt a **Munkalista** menüelembe. Azok a felhasználóknak, akik hozzáférnek a munkalistához, ezután ki tudják választani és fel tudják dolgozni a minőségi rendelés ellenőrzése által automatikusan létrehozott munkát.
 
+## <a name="additional-resources"></a>További erőforrások
+
+- [A minőség- és a szabálytalanságkezelés áttekintése](quality-management-processes.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
