@@ -361,13 +361,11 @@
                   href: asset-management/objects/object-timeline.md
                 - name: Eszköznézet
                   href: asset-management/objects/object-view.md
-                - name: Eszköz attribútumának áttekintése
+                - name: Eszközattribútum áttekintése
                   href: asset-management/objects/object-specification-overview.md
             - name: Beállítások karbantartási kérésekhez
               items:
-                - name: Karbantartási kérések
-                  href: asset-management/setup-for-maintenance-requests/requests.md
-                - name: Karbantartási kérések életciklus-állapotai
+                - name: Karbantartási kérés életciklus-állapotai
                   href: asset-management/setup-for-maintenance-requests/request-stages.md
                 - name: Karbantartási kérések típusai
                   href: asset-management/setup-for-maintenance-requests/request-types.md
@@ -3343,8 +3341,94 @@
               href: inventory/extend-on-hand-entities.md
         - name: Hibaelhárítás
           items:
+            - name: Költségkezelés
+              items:
+                - name: Mezőbeállítások hiányoznak a cikkmodellcsoportok másik jogi személybe történő másolása során
+                  href: troubleshooting/costing/copying-item-model-groups.md
+                - name: A „Közvetett költségek a folyamatban” jelentésben törölt termelési rendelések szerepelnek
+                  href: troubleshooting/costing/indirect-costs-in-pr.md
+                - name: Nulla összegű beszerzési elhatárolás lett feladva nulla értékű termékbevételezéshez
+                  href: troubleshooting/costing/posting-to-purchase.md
+                - name: A ténylegesen bevételezett beszerzési rendelések nem jelennek meg a készletzárási jelentésben
+                  href: troubleshooting/costing/purchase-orders-rece.md
+                - name: Nem található Kezdő dátum a Cikkár oldal Aktív árak lapján
+                  href: troubleshooting/costing/there-is-no-from-dat.md
+            - name: Készletgazdálkodás
+              items:
+                - name: Több készlettranzakció egyes kötegszámokhoz „Tényleges frissítés esetén” nélkül
+                  href: troubleshooting/inventory/multiple-inventory-t.md
+                - name: Jelentés készként való visszavonása váratlan nyitott tranzakciót okoz
+                  href: troubleshooting/inventory/reverse-report-as-fi.md
+                - name: Nem jeleníthetők meg a kitárolási lista jelentésében található naplóhoz csatolt új jegyzetek
+                  href: troubleshooting/inventory/unable-to-print-the.md
+                - name: 'Az elindított karanténrendelésen lévő mennyiség nem frissül, ha a rendelés fel van osztva'
+                  href: troubleshooting/inventory/quantity-on-a-start.md
+                - name: Az „Utolsó tesztelés dátuma” mező nem frissül több minőségi rendelés létrehozásakor
+                  href: troubleshooting/inventory/the-field-last-test.md
+                - name: Ténylegessúly-mennyiség felosztása során a nominális mennyiség helyett a minimumot használják
+                  href: troubleshooting/inventory/while-splitting-the.md
+            - name: Alaptervezés
+              items:
+                - name: 'A közvetlenül származtatott, megerősített megrendeléseket egy felülvizsgálat alatt álló munkafolyamat dolgozza fel'
+                  href: troubleshooting/planning/firmed-directly-deri.md
+                - name: Az alaptervezés fantomtermékekhez hoz létre tervezett rendeléseket
+                  href: troubleshooting/planning/planned-orders-are-g.md
+                - name: 'Tervezett beszerzési rendelés jön létre, amikor egy beszerzés negatív napokon belül található'
+                  href: troubleshooting/planning/planning-optimisatio.md
+                - name: Az önköltségi ár nem tölthető fel az igény-előrejelzési bejegyzésekben
+                  href: troubleshooting/planning/unable-to-upload-the.md
+                - name: Nem távolítható el a raktári igény-előrejelzési dimenzió az előrejelzési sorokból
+                  href: troubleshooting/planning/warehouse-removal-fr.md
+            - name: Beszerzés
+              items:
+                - name: Vevő számára is látható értékesítési rendelés nem számlázható a VEL vállalatban
+                  href: troubleshooting/procurement/not-able-to-invoice-.md
+                - name: Nem adható hozzá sor a beszerzési igényléshez módosítás kérése után
+                  href: troubleshooting/procurement/purchase-requisition.md
+            - name: Termékinformáció-kezelés
+              items:
+                - name: Nem alkalmazható sablon kiadott termék létrehozásához
+                  href: troubleshooting/products/apply-template-in-re.md
+                - name: Nem importálható egy cikk a Kiadott termékek V2 entitás használatával
+                  href: troubleshooting/products/cannot-import-with-r.md
+                - name: A beszerzési rendelésben nem jelenik meg a lefordított termékszöveg
+                  href: troubleshooting/products/when-the-customer-ad.md
+            - name: Gyártásvezérlés
+              items:
+                - name: A rendszer nem veszi figyelembe az ürítési elv beállításait a DBJ sorain
+                  href: troubleshooting/production/flushing-principle-n.md
+                - name: A kötegszám törlődik az új adagazonosító kiválasztásakor
+                  href: troubleshooting/production/when-customer-is-try.md
+                - name: A rendszer nem veszi figyelembe a késői kiválasztást a termelési rendelések kötegelt feladattal való alaphelyzetbe állításával
+                  href: troubleshooting/production/late-selection-is-no.md
+                - name: 'A felhasználók visszavonhatják olyan termékek anyagsorainak kitárolását, amelyeket készként jelöltek'
+                  href: troubleshooting/production/raw-material-lines-a.md
+                - name: Hiba a jelentés kész naplóként történő feladása során
+                  href: troubleshooting/production/posting-report-as-.md
+                - name: A kitárolási lista naplójában szereplő raktár nem frissül a DBJ során
+                  href: troubleshooting/production/the-warehouse-in-pic.md
+            - name: Visszatérítés-kezelés
+              items:
+                - name: Sikertelen a vevői visszatérítések összesítése cikkvisszatérítési csoportok használatával
+                  href: troubleshooting/rebates/cumulating-customer-.md
+            - name: Értékesítés és marketing
+              items:
+                - name: 'A rendszergazdák nem tudják törölni a rendelés várakoztatását, mert nem engedélyezettek'
+                  href: troubleshooting/sales/system-administrator.md
+            - name: Szállításkezelés
+              items:
+                - name: Csak egyeztetési okokból adhatja hozzá a fő számlát jóváírási számlaként
+                  href: troubleshooting/transportation/reconciliation-reaso.md
             - name: Raktárkezelés
               items:
+                - name: Hiba merül fel a hely kiválasztásakor a kitárolási lista regisztrációja során
+                  href: troubleshooting/warehousing/error-cannot-update.md
+                - name: A csomagolóállomáson nem jelennek meg a termékekkel kapcsolatos megjegyzések
+                  href: troubleshooting/warehousing/packing-station-not-.md
+                - name: 'A helyprofil tiltja a negatív készletet, de a negatív tényleges készlet megengedett'
+                  href: troubleshooting/warehousing/location-profile-set.md
+                - name: Az egyetlen bizonylaton található több munkafejléc esetén csak egy címke kerül nyomtatásra
+                  href: troubleshooting/warehousing/when-receipting-prod.md
                 - name: 'Nem erősítheti meg a szállítmányt, mert probléma adódott a naptárral'
                   href: troubleshooting/warehousing/load-has-active-appo.md
                 - name: Nem erősítheti meg a szállítmányt hiányos vagy nem teljes munka miatt
