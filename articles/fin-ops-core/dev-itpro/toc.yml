@@ -84,7 +84,7 @@
               href: dev-tools/version-models-build.md
         - name: Adatintegrálás
           items:
-            - name: Adatintegrálási (importálási/exportálási) stratégia kiválasztása
+            - name: A Finance and Operations-alkalmazások és külső fejlesztésű szolgáltatások közötti integráció
               href: data-entities/integration-overview.md
             - name: Prioritásalapú szabályozás
               hreF: data-entities/priority-based-throttling.md
@@ -126,196 +126,62 @@
                       href: data-entities/tasks/create-record-template-facilitate-data-entry.md
                     - name: Rekordok létrehozása rekordsablonokkal
                       href: data-entities/tasks/use-record-template-new-record.md
-                - name: Adatintegráció a Dataverse használatával
+                - name: Adatintegrátor
                   items:
-                    - name: Adatintegráció a Dataverse használatával – áttekintés
-                      href: data-entities/data-integration-cds.md
-                    - name: Kettős írás integrációja
+                    - name: Potenciális vevő készpénzre váltási esetének konfigurálása
                       items:
-                        - name: Kettős írás kezdőlapja
-                          href: data-entities/dual-write/dual-write-home-page.md
-                        - name: Új vagy módosult elemek a kettős írás szolgáltatásban
-                          href: data-entities/dual-write/whats-new-dual-write.md
-                        - name: Kettős írás – áttekintés
-                          href: data-entities/dual-write/dual-write-overview.md
-                        - name: Kettős írás beállítása
-                          items:
-                            - name: A kettős írás rendszerkövetelményei
-                              href: data-entities/dual-write/dual-write-system-req.md
-                            - name: Útmutató a kettős írás beállításához
-                              href: data-entities/dual-write/connection-setup.md
-                            - name: Szempontok a kezdeti szinkronizáláshoz
-                              href: data-entities/dual-write/initial-sync-guidance.md
-                            - name: Kettős írás beállítása a Lifecycle Services szolgáltatásból
-                              href: data-entities/dual-write/lcs-setup.md
-                            - name: A kettős írás engedélyezése a meglévő Finance and Operations alkalmazásoknál
-                              items:
-                                - name: A kettős írás engedélyezése a meglévő Finance and Operations alkalmazásoknál
-                                  href: data-entities/dual-write/enable-dual-write.md
-                                - name: Rendszerkövetelmények és előfeltételek
-                                  href: data-entities/dual-write/requirements-and-prerequisites.md
-                                - name: A kettős írás varázsló használata a környezeteinek összekapcsolásához
-                                  href: data-entities/dual-write/link-your-environment.md
-                                - name: Entitásleképezés engedélyezése a kettős íráshoz
-                                  href: data-entities/dual-write/enable-entity-map.md
-                            - name: Pénznem-adattípus áttelepítése a kettős íráshoz
-                              href: data-entities/dual-write/currrency-decimal-places.md
-                            - name: Az értékesítési rendelés állapotmezőihez tartozó leképezés beállítása
-                              href: data-entities/dual-write/sales-status-map.md
-                            - name: Vállalatközi rendelések szűrése a Rendelések és a RendelésiSorok szinkronizálásának elkerülése érdekében
-                              href: data-entities/dual-write/filtering-intercompany-orders.md
-                        - name: A kettős írás kezelése
-                          items:
-                            - name: Entitás- és mezőleképezések testreszabása
-                              href: data-entities/dual-write/customizing-mappings.md
-                            - name: Több entitásleképezés kezelése
-                              href: data-entities/dual-write/multiple-entity-maps.md
-                            - name: Jogi személy szerkesztése a kettős írás beállítása után
-                              href: data-entities/dual-write/edit-legal-entity.md
-                            - name: Hibakezelő és riasztási értesítések
-                              href: data-entities/dual-write/errors-and-alerts.md
-                            - name: Alkalmazáséletciklus-kezelés
-                              href: data-entities/dual-write/app-lifecycle-management.md
-                        - name: Alkalmazások közötti koncepciómegfeleltetések
-                          items:
-                            - name: Integrált vevői alapadat
-                              href: data-entities/dual-write/customer-mapping.md
-                            - name: Szállítói integráció
-                              items:
-                                - name: Integrált szállítói alapadat
-                                  href: data-entities/dual-write/vendor-mapping.md
-                                - name: Váltás a szállítói arculatok között
-                                  href: data-entities/dual-write/vendor-switch.md
-                            - name: Vevői hűségkártyák és hűségpontok
-                              href: data-entities/dual-write/loyalty-mapping.md
-                            - name: Termékintegráció
-                              items:
-                                - name: Egységesített terméktapasztalat
-                                  href: data-entities/dual-write/product-mapping.md
-                                - name: Integrált telephelyek és raktárak
-                                  href: data-entities/dual-write/sites-warehouses-mapping.md
-                            - name: Vállalati integráció
-                              items:
-                                - name: Vállalati koncepció a Dataverse szolgáltatásban
-                                  href: data-entities/dual-write/company-data.md
-                                - name: Vállalati adatok inicializálása
-                                  href: data-entities/dual-write/bootstrap-company-data.md
-                            - name: Szervezeti hierarchia a Dataverse szolgáltatásban
-                              href: data-entities/dual-write/organization-mapping.md
-                            - name: Pénzügyi és adóügyi adatok
-                              items:
-                                - name: A pénzügyi és adóügyi hivatkozási adatokhoz való hozzáférés
-                                  href: data-entities/dual-write/finance-tax-reference.md
-                                - name: Integrált főkönyv
-                                  href: data-entities/dual-write/ledger-mapping.md
-                                - name: Integrált adózási alapadat
-                                  href: data-entities/dual-write/tax-mapping.md
-                            - name: A beszerzési műveletek integrálása a Supply Chain Management szolgáltatásban a Field Service segítségével
-                              href: data-entities/dual-write/scm-field-service-procurement.md
-                            - name: Igény szerinti szinkronizálás a Supply Chain Management árképzési motorjával
-                              href: data-entities/dual-write/pricing-engine.md
-                            - name: Potenciális vevők készpénzre váltása a kettős írás szolgáltatásban
-                              href: data-entities/dual-write/dual-write-prospect-to-cash.md
-                            - name: A Dynamics 365 Commerce díjszabási motorjának használata a Dynamics 365 Sales alkalmazással
-                              href: data-entities/dual-write/commerce-pricing.md
-                            - name: Házon belüli eszközök szervizelése
-                              href: data-entities/dual-write/in-house-assets.md
-                            - name: Készlet rendelkezésre állása
-                              href: data-entities/dual-write/inventory-availability.md
-                            - name: 'Integrált dolgozó, feladat és beosztás'
-                              href: data-entities/dual-write/integrated-hr.md
-                            - name: Fél és globális címjegyzék
-                              href: data-entities/dual-write/party-gab.md
-                            - name: A Power Portal használata a Fél adatmodelljével
-                              href: data-entities/dual-write/party-gab-portal.md
-                            - name: Frissítés a fél és globális címjegyzék modelljére
-                              href: data-entities/dual-write/upgrade-party-gab.md
-                            - name: Jegyzetintegráció
-                              href: data-entities/dual-write/notes-integration.md
-                            - name: Leképezési hivatkozás
-                              href: data-entities/dual-write/mapping-reference.md
-                        - name: A kettős írás támogatása
-                          items:
-                            - name: A Field Service és a Project Service Automation megoldások támogatása
-                              href: data-entities/dual-write/field-service-project-service-automation.md
-                            - name: A Potenciális vevők készpénzre váltása megoldás adatainak migrálása az adatintegrátor megoldásból a kettős írás szolgáltatásba
-                              href: data-entities/dual-write/migrate-prospect-to-cash.md
-                            - name: Hibaelhárítás
-                              items:
-                                - name: A kettős írás konfigurációjának ellenőrzése a Finance and Operations alkalmazásokban és a Dataverse szolgáltatásban
-                                  href: data-entities/dual-write/dual-write-troubleshooting-verify-config.md
-                                - name: Problémák elhárítása a kezdeti beállításkor
-                                  href: data-entities/dual-write/dual-write-troubleshooting-initial-setup.md
-                                - name: Problémák elhárítása a kezdeti szinkronizációkor
-                                  href: data-entities/dual-write/dual-write-troubleshooting-initial-sync.md
-                                - name: A kettős írással kapcsolatos hibaelhárítás a Finance and Operations alkalmazásokban
-                                  href: data-entities/dual-write/dual-write-troubleshooting-dual-write-module.md
-                                - name: Élő szinkronizálási problémák elhárítása
-                                  href: data-entities/dual-write/dual-write-troubleshooting-live-sync.md
-                                - name: A megoldások érzékenységével kapcsolatos problémák elhárítása
-                                  href: data-entities/dual-write/dual-write-troubleshooting-solution-awareness.md
-                                - name: A Finance and Operations alkalmazások frissítése miatti problémák elhárítása
-                                  href: data-entities/dual-write/dual-write-troubleshooting-finops-upgrades.md
-                                - name: Általános hibaelhárítás
-                                  href: data-entities/dual-write/dual-write-troubleshooting.md
-                        - name: Kettős írás – gyakori kérdések
-                          href: data-entities/dual-write/dual-write-faq.md
-                    - name: Integráció a Power Platform alkalmazással
+                        - name: Potenciális vevők készpénzre váltása
+                          href: ../../supply-chain/sales-marketing/prospect-to-cash.md
+                        - name: A Sales-partnerek közvetlen szinkronizálása a Finance and Operations-ügyfelekhez
+                          href: ../../supply-chain/sales-marketing/accounts-template-mapping-direct.md
+                        - name: A termékek közvetlen szinkronizálása a Finance and Operations Sales-termékekre
+                          href: ../../supply-chain/sales-marketing/products-template-mapping-direct.md
+                        - name: A Sales-kapcsolatok közvetlen szinkronizálása a kapcsolatokra vagy ügyfelekre Finance and Operations
+                          href: ../../supply-chain/sales-marketing/contacts-template-mapping-direct.md
+                        - name: Értékesítésiajánlat-fejlécek és -sorok szinkronizálása közvetlenül a Sales szolgáltatásból a Finance and Operations szolgáltatásba
+                          href: ../../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md
+                        - name: Értékesítési rendelések közvetlen szinkronizálása a Sales és a Finance and Operations szolgáltatások között
+                          href: ../../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md
+                        - name: Értékesítésszámla-fejlécek és -sorok szinkronizálása közvetlenül a Sales szolgáltatásból a Finance and Operations Sales szolgáltatásba
+                          href: ../../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md
+                    - name: A Field Service szolgáltatással való integráció konfigurálása
                       items:
-                        - name: Potenciális vevő készpénzre váltási esetének konfigurálása
-                          items:
-                            - name: Potenciális vevők készpénzre váltása
-                              href: ../../supply-chain/sales-marketing/prospect-to-cash.md
-                            - name: A Sales-számlák közvetlen szinkronizálása a Finance and Operations-ügyfelekre
-                              href: ../../supply-chain/sales-marketing/accounts-template-mapping-direct.md
-                            - name: A termékek közvetlen szinkronizálása a Finance and Operations Sales-termékekre
-                              href: ../../supply-chain/sales-marketing/products-template-mapping-direct.md
-                            - name: A Sales-kapcsolatok közvetlen szinkronizálása a kapcsolatokra vagy ügyfelekre Finance and Operations
-                              href: ../../supply-chain/sales-marketing/contacts-template-mapping-direct.md
-                            - name: Értékesítésiajánlat-fejlécek és -sorok szinkronizálása közvetlenül a Sales szolgáltatásból a Finance and Operations szolgáltatásba
-                              href: ../../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md
-                            - name: Értékesítési rendelések közvetlen szinkronizálása a Sales és a Finance and Operations szolgáltatások között
-                              href: ../../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md
-                            - name: Értékesítésszámla-fejlécek és -sorok szinkronizálása közvetlenül a Sales szolgáltatásból a Finance and Operations Sales szolgáltatásba
-                              href: ../../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md
-                        - name: A Field Service szolgáltatással való integráció konfigurálása
-                          items:
-                            - name: A Field Service szolgáltatással való integráció konfigurálása – áttekintés
-                              href: ../../supply-chain/sales-marketing/field-service.md
-                            - name: A termékek szinkronizálása Finance and Operations a Field Service szolgáltatásokban lévő termékekkel
-                              href: ../../supply-chain/sales-marketing/field-service-product.md
-                            - name: A Field Service szolgáltatásokban lévő munkarendelések szinkronizálása az értékesítési rendeléseivel Finance and Operations
-                              href: ../../supply-chain/sales-marketing/field-service-work-order.md
-                            - name: 'A Field Service szolgáltatásokban lévő, szerződéshez kapcsolódó számlák szinkronizálása a szabadszöveges számláival Finance and Operations'
-                              href: ../../supply-chain/sales-marketing/field-service-invoice.md
-                            - name: Készletátvitelek és -kiigazítások szinkronizálása a Field Service alkalmazásból az alkalmazásba Finance and Operations
-                              href: ../../supply-chain/sales-marketing/synchronize-inventory-adjustments.md
-                            - name: Készletszintű információk szinkronizálása az alkalmazásból a Finance and Operations Field Service alkalmazásba
-                              href: ../../supply-chain/sales-marketing/synchronize-inventory-level-info.md
-                            - name: Készletegységgel rendelkező termékek szinkronizálása az alkalmazásból a Finance and Operations Field Service alkalmazásba
-                              href: ../../supply-chain/sales-marketing/synchronize-products-inv-unit.md
-                            - name: Projektlista szinkronizálása az alkalmazásból a Finance and Operations Field Service alkalmazásba
-                              href: ../../supply-chain/sales-marketing/synchronize-project-list.md
-                            - name: Raktárak szinkronizálása az alkalmazásból a Finance and Operations Field Service alkalmazásba
-                              href: ../../supply-chain/sales-marketing/synchronize-warehouse.md
-                            - name: Munkarendelések szinkronizálása projekttel az alkalmazásból a Field Service alkalmazásba Finance and Operations
-                              href: ../../supply-chain/sales-marketing/synchronize-work-orders.md
-                        - name: Project Service Automation integráció konfigurálása
-                          items:
-                            - name: A Project Service Automation áttekintése
-                              href: /dynamics365/project-operations/prod-pma/PSA-integration
-                            - name: Project Service Automation integráció paraméterei
-                              href: /dynamics365/project-operations/prod-pma/PSA-parameters
-                            - name: Projektszerződések és projektek szinkronizálása
-                              href: /dynamics365/project-operations/prod-pma/project-contracts-templates
-                            - name: Projektfeladatok szinkronizálása
-                              href: /dynamics365/project-operations/prod-pma/project-tasks-template
-                            - name: Projektköltség-kategóriák szinkronizálása
-                              href: /dynamics365/project-operations/prod-pma/project-categories-templates
-                            - name: Projektbecslések szinkronizálása a projektelőrejelzésekkel
-                              href: /dynamics365/project-operations/prod-pma/project-estimates-templates
-                            - name: A projekt tényleges adatainak szinkronizálása a projektintegrációs naplóval
-                              href: /dynamics365/project-operations/prod-pma/project-actuals-templates
+                        - name: A Field Service szolgáltatással való integráció konfigurálása – áttekintés
+                          href: ../../supply-chain/sales-marketing/field-service.md
+                        - name: A termékek szinkronizálása Finance and Operations a Field Service szolgáltatásokban lévő termékekkel
+                          href: ../../supply-chain/sales-marketing/field-service-product.md
+                        - name: A Field Service szolgáltatásokban lévő munkarendelések szinkronizálása az értékesítési rendeléseivel Finance and Operations
+                          href: ../../supply-chain/sales-marketing/field-service-work-order.md
+                        - name: 'A Field Service szolgáltatásokban lévő, szerződéshez kapcsolódó számlák szinkronizálása a szabadszöveges számláival Finance and Operations'
+                          href: ../../supply-chain/sales-marketing/field-service-invoice.md
+                        - name: Készletátvitelek és -kiigazítások szinkronizálása a Field Service alkalmazásból az alkalmazásba Finance and Operations
+                          href: ../../supply-chain/sales-marketing/synchronize-inventory-adjustments.md
+                        - name: Készletszintű információk szinkronizálása az alkalmazásból a Finance and Operations Field Service alkalmazásba
+                          href: ../../supply-chain/sales-marketing/synchronize-inventory-level-info.md
+                        - name: Készletegységgel rendelkező termékek szinkronizálása az alkalmazásból a Finance and Operations Field Service alkalmazásba
+                          href: ../../supply-chain/sales-marketing/synchronize-products-inv-unit.md
+                        - name: Projektlista szinkronizálása az alkalmazásból a Finance and Operations Field Service alkalmazásba
+                          href: ../../supply-chain/sales-marketing/synchronize-project-list.md
+                        - name: Raktárak szinkronizálása az alkalmazásból a Finance and Operations Field Service alkalmazásba
+                          href: ../../supply-chain/sales-marketing/synchronize-warehouse.md
+                        - name: Munkarendelések szinkronizálása projekttel az alkalmazásból a Field Service alkalmazásba Finance and Operations
+                          href: ../../supply-chain/sales-marketing/synchronize-work-orders.md
+                    - name: Project Service Automation integráció konfigurálása
+                      items:
+                        - name: A Project Service Automation áttekintése
+                          href: /dynamics365/project-operations/prod-pma/PSA-integration
+                        - name: Project Service Automation integráció paraméterei
+                          href: /dynamics365/project-operations/prod-pma/PSA-parameters
+                        - name: Projektszerződések és projektek szinkronizálása
+                          href: /dynamics365/project-operations/prod-pma/project-contracts-templates
+                        - name: Projektfeladatok szinkronizálása
+                          href: /dynamics365/project-operations/prod-pma/project-tasks-template
+                        - name: Projektköltség-kategóriák szinkronizálása
+                          href: /dynamics365/project-operations/prod-pma/project-categories-templates
+                        - name: Projektbecslések szinkronizálása a projektelőrejelzésekkel
+                          href: /dynamics365/project-operations/prod-pma/project-estimates-templates
+                        - name: A projekt tényleges adatainak szinkronizálása a projektintegrációs naplóval
+                          href: /dynamics365/project-operations/prod-pma/project-actuals-templates
             - name: Külső webszolgáltatások használata
               href: data-entities/consume-external-web-service.md
             - name: Elektronikus üzenetküldés
@@ -496,6 +362,8 @@
                       href: deployment/updateenvironment-newinfrastructure.md
                     - name: Önkiszolgáló központi telepítéssel üzembe helyezett környezetekkel kapcsolatos hibaelhárítás
                       href: deployment/troubleshoot-newinfrastructure.md
+                    - name: Tervezett karbantartás önkiszolgáló környezetekben – GYIK
+                      href: deployment/plannedmaintenance-selfservice.md
                 - name: Azure Resource Manager felvételi folyamat teljesítése
                   href: deployment/arm-onboarding.md
                 - name: Azure ExpressRoute és Finance and Operations
@@ -1150,8 +1018,140 @@
           items:
             - name: Microsoft Power Platform-integráció a Finance and Operations alkalmazással
               href: power-platform/overview.md
+            - name: Kettős írás
+              items:
+                - name: Kettős írás kezdőlapja
+                  href: data-entities/dual-write/dual-write-home-page.md
+                - name: Új vagy módosult elemek a kettős írás szolgáltatásban
+                  href: data-entities/dual-write/whats-new-dual-write.md
+                - name: Kettős írás – áttekintés
+                  href: data-entities/dual-write/dual-write-overview.md
+                - name: Kettős írás beállítása
+                  items:
+                    - name: A kettős írás rendszerkövetelményei
+                      href: data-entities/dual-write/dual-write-system-req.md
+                    - name: Útmutató a kettős írás beállításához
+                      href: data-entities/dual-write/connection-setup.md
+                    - name: Szempontok a kezdeti szinkronizáláshoz
+                      href: data-entities/dual-write/initial-sync-guidance.md
+                    - name: Kettős írás beállítása a Lifecycle Services szolgáltatásból
+                      href: data-entities/dual-write/lcs-setup.md
+                    - name: A kettős írás engedélyezése a meglévő Finance and Operations alkalmazásoknál
+                      items:
+                        - name: A kettős írás engedélyezése a meglévő Finance and Operations alkalmazásoknál
+                          href: data-entities/dual-write/enable-dual-write.md
+                        - name: Rendszerkövetelmények és előfeltételek
+                          href: data-entities/dual-write/requirements-and-prerequisites.md
+                        - name: A kettős írás varázsló használata a környezeteinek összekapcsolásához
+                          href: data-entities/dual-write/link-your-environment.md
+                        - name: Entitásleképezés engedélyezése a kettős íráshoz
+                          href: data-entities/dual-write/enable-entity-map.md
+                    - name: Pénznem-adattípus áttelepítése a kettős íráshoz
+                      href: data-entities/dual-write/currrency-decimal-places.md
+                    - name: Az értékesítési rendelés állapotmezőihez tartozó leképezés beállítása
+                      href: data-entities/dual-write/sales-status-map.md
+                    - name: Vállalatközi rendelések szűrése a Rendelések és a RendelésiSorok szinkronizálásának elkerülése érdekében
+                      href: data-entities/dual-write/filtering-intercompany-orders.md
+                - name: A kettős írás kezelése
+                  items:
+                    - name: Entitás- és mezőleképezések testreszabása
+                      href: data-entities/dual-write/customizing-mappings.md
+                    - name: Több entitásleképezés kezelése
+                      href: data-entities/dual-write/multiple-entity-maps.md
+                    - name: Jogi személy szerkesztése a kettős írás beállítása után
+                      href: data-entities/dual-write/edit-legal-entity.md
+                    - name: Hibakezelő és riasztási értesítések
+                      href: data-entities/dual-write/errors-and-alerts.md
+                    - name: Alkalmazáséletciklus-kezelés
+                      href: data-entities/dual-write/app-lifecycle-management.md
+                - name: Alkalmazások közötti koncepciómegfeleltetések
+                  items:
+                    - name: Integrált vevői alapadat
+                      href: data-entities/dual-write/customer-mapping.md
+                    - name: Szállítói integráció
+                      items:
+                        - name: Integrált szállítói alapadat
+                          href: data-entities/dual-write/vendor-mapping.md
+                        - name: Váltás a szállítói arculatok között
+                          href: data-entities/dual-write/vendor-switch.md
+                    - name: Vevői hűségkártyák és hűségpontok
+                      href: data-entities/dual-write/loyalty-mapping.md
+                    - name: Termékintegráció
+                      items:
+                        - name: Egységesített terméktapasztalat
+                          href: data-entities/dual-write/product-mapping.md
+                        - name: Integrált telephelyek és raktárak
+                          href: data-entities/dual-write/sites-warehouses-mapping.md
+                    - name: Vállalati integráció
+                      items:
+                        - name: Vállalati koncepció a Dataverse szolgáltatásban
+                          href: data-entities/dual-write/company-data.md
+                        - name: Vállalati adatok inicializálása
+                          href: data-entities/dual-write/bootstrap-company-data.md
+                    - name: Szervezeti hierarchia a Dataverse szolgáltatásban
+                      href: data-entities/dual-write/organization-mapping.md
+                    - name: Pénzügyi és adóügyi adatok
+                      items:
+                        - name: A pénzügyi és adóügyi hivatkozási adatokhoz való hozzáférés
+                          href: data-entities/dual-write/finance-tax-reference.md
+                        - name: Integrált főkönyv
+                          href: data-entities/dual-write/ledger-mapping.md
+                        - name: Integrált adózási alapadat
+                          href: data-entities/dual-write/tax-mapping.md
+                    - name: A beszerzési műveletek integrálása a Supply Chain Management szolgáltatásban a Field Service segítségével
+                      href: data-entities/dual-write/scm-field-service-procurement.md
+                    - name: Igény szerinti szinkronizálás a Supply Chain Management árképzési motorjával
+                      href: data-entities/dual-write/pricing-engine.md
+                    - name: Potenciális vevők készpénzre váltása a kettős írás szolgáltatásban
+                      href: data-entities/dual-write/dual-write-prospect-to-cash.md
+                    - name: A Dynamics 365 Commerce díjszabási motorjának használata a Dynamics 365 Sales alkalmazással
+                      href: data-entities/dual-write/commerce-pricing.md
+                    - name: Házon belüli eszközök szervizelése
+                      href: data-entities/dual-write/in-house-assets.md
+                    - name: Készlet rendelkezésre állása
+                      href: data-entities/dual-write/inventory-availability.md
+                    - name: 'Integrált dolgozó, feladat és beosztás'
+                      href: data-entities/dual-write/integrated-hr.md
+                    - name: Fél és globális címjegyzék
+                      href: data-entities/dual-write/party-gab.md
+                    - name: A Power Portal használata a Fél adatmodelljével
+                      href: data-entities/dual-write/party-gab-portal.md
+                    - name: Frissítés a fél és globális címjegyzék modelljére
+                      href: data-entities/dual-write/upgrade-party-gab.md
+                    - name: Jegyzetintegráció
+                      href: data-entities/dual-write/notes-integration.md
+                    - name: Leképezési hivatkozás
+                      href: data-entities/dual-write/mapping-reference.md
+                - name: A kettős írás támogatása
+                  items:
+                    - name: A Field Service és a Project Service Automation megoldások támogatása
+                      href: data-entities/dual-write/field-service-project-service-automation.md
+                    - name: A Potenciális vevők készpénzre váltása megoldás adatainak migrálása az adatintegrátor megoldásból a kettős írás szolgáltatásba
+                      href: data-entities/dual-write/migrate-prospect-to-cash.md
+                    - name: Hibaelhárítás
+                      items:
+                        - name: A kettős írás konfigurációjának ellenőrzése a Finance and Operations alkalmazásokban és a Dataverse szolgáltatásban
+                          href: data-entities/dual-write/dual-write-troubleshooting-verify-config.md
+                        - name: Problémák elhárítása a kezdeti beállításkor
+                          href: data-entities/dual-write/dual-write-troubleshooting-initial-setup.md
+                        - name: Problémák elhárítása a kezdeti szinkronizációkor
+                          href: data-entities/dual-write/dual-write-troubleshooting-initial-sync.md
+                        - name: A kettős írással kapcsolatos hibaelhárítás a Finance and Operations alkalmazásokban
+                          href: data-entities/dual-write/dual-write-troubleshooting-dual-write-module.md
+                        - name: Élő szinkronizálási problémák elhárítása
+                          href: data-entities/dual-write/dual-write-troubleshooting-live-sync.md
+                        - name: A megoldások érzékenységével kapcsolatos problémák elhárítása
+                          href: data-entities/dual-write/dual-write-troubleshooting-solution-awareness.md
+                        - name: A Finance and Operations alkalmazások frissítése miatti problémák elhárítása
+                          href: data-entities/dual-write/dual-write-troubleshooting-finops-upgrades.md
+                        - name: Általános hibaelhárítás
+                          href: data-entities/dual-write/dual-write-troubleshooting.md
+                - name: Kettős írás – gyakori kérdések
+                  href: data-entities/dual-write/dual-write-faq.md
             - name: Virtuális entitások
               items:
+                - name: Virtuális entitások áttekintése
+                  href: power-platform/virtual-entities-overview.md
                 - name: Entitásmodellezés
                   href: power-platform/entity-modeling.md
                 - name: Alkalmazáséletciklus-kezelés
