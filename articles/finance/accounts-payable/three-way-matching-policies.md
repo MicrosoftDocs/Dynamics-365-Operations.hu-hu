@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 829c9c5549c337c5c2b118f3027111831f2632ca
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 41f863d85a1ad52d8fa11a458054728728858d27
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814296"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027794"
 ---
 # <a name="three-way-matching-policies"></a>Háromirányú egyeztetési irányelvek
 
@@ -39,7 +39,7 @@ Az ebben a példában szereplő számlaegyeztetési irányelvek segítik a köve
 
 -   Ken a Fabrikam vállalat vezetője. Ken segíthet szervezete dolgozóinak felismerni és korrigálni a rendeléssel, átvétellel és az eszközök és szolgáltatások kifizetésével kapcsolatos problémákat.
 -   Phyllis és April könyvelők a Fabrikam Egyesült Államokbeli részlegénél a Kötelezettségek osztályon. Ők tartatják be a vállalat irányelveit és biztosítják, hogy a kifizetések csak azután történjenek meg, hogy egyeztetve lettek a beszerzési rendelésekkel, valamint az eszközök és a szolgáltatások nyugtáival.
--   Tony a termelési felügyelő a Fabrikam Egyesült Államokbeli részlegén. Ő és a gyártó személyzet többi tagja teszik lehetővé az eszközrendelések zavartalan lefolyását és ők a felelősek azért is, hogy a személyzet mindent megkapjon ami a munkájukhoz szükséges.
+-   Tony a termelési felügyelő a Fabrikam Egyesült Államokbeli részlegén. Tony és a gyártó személyzet többi tagja teszik lehetővé az eszközrendelések zavartalan lefolyását és ők a felelősek azért is, hogy a személyzet mindent megkapjon ami a munkájukhoz szükséges.
 
 ### <a name="prerequisites"></a>Előfeltételek
 
@@ -57,7 +57,7 @@ Az ebben a példában szereplő számlaegyeztetési irányelvek segítik a köve
 
 ### <a name="scenario"></a>Eset
 
-1.  Sammy, a Fabrikam bevételezési osztályának dolgozója, kapja meg az összes gépet amit a Contosotól leszállítottak. A termék bevételezésen szereplő mennyiséghez 5-öt ír. mivel a beszerzési rendelés teljesen megérkezett, a beszerzési rendelés változásai állapotot Teljesítettre állítja.
+1.  Sammy, a Fabrikam bevételezési osztályának dolgozója, kapja meg az összes gépet amit a Contosotól leszállítottak. Sammy termék bevételezésen szereplő mennyiséghez 5-öt ír. mivel a beszerzési rendelés teljesen megérkezett, a beszerzési rendelés változásai állapotot Teljesítettre állítja.
 2.  April, a Fabrikam kötelezettségek koordinátora, belép és érvényesíti a Contoso által kiállított számlát. A következő információkat ellenőrzi:
     -   A háromirányú egyeztetést igénylő eszközök esetén a számlasoron található mennyiséget a kapott mennyiséggel egyezteti. A kapott mennyiség a termék bevételezésen van feltüntetve és egyeztetve van a számlával.
     -   Azon eszközök esetében, melyek két- vagy háromirányú egyeztetést igényelnek, a számlasoron feltüntetett áraknak a Microsoft Dynamics 365 Finance által meghatározott toleranciaszinten belül kell lenniük. Ezek a következő típusú áregyeztetéseket jelentik:
@@ -66,7 +66,7 @@ Az ebben a példában szereplő számlaegyeztetési irányelvek segítik a köve
 
 A Contosotól kapott papíralapú számla a következő információkat tartalmazza.
 
-| Cikk                        | Mennyiség | Egységár | Nettó összeg |
+| Tétel                        | Mennyiség | Egységár | Nettó összeg |
 |-----------------------------|----------|------------|------------|
 | 1500 – CNC Milicron Gépezet. | 5        | 8,100.00   | 40,500.00  |
 | Szállítás és kezelés       |          |            | 4,000.00   |
@@ -115,7 +115,7 @@ Az ebben a példában szereplő számlaegyeztetési irányelvek segítik a köve
 
 A Contosotól kapott papíralapú számla a következő információkat tartalmazza.
 
-| Cikk                  | Mennyiség | Egységár | Nettó összeg |
+| Tétel                  | Mennyiség | Egységár | Nettó összeg |
 |-----------------------|----------|------------|------------|
 | PH2500 – Számítógép     | 2        | 2,500.00   | 5,000.00   |
 | MM01 – Vezeték nélküli egér | 2        | 41.00      | 82.00      |

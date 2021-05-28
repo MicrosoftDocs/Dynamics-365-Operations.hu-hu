@@ -15,20 +15,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: d6f0a155b38b1d732d17bd2f964677862ff363e2
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: c09dee94891fb78c22e8cf9f203cb7f5531bb968
+ms.sourcegitcommit: 51cad1ce3ed44ebf7eb9bdf553ee2df4c1f03135
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5808664"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "6016132"
 ---
 # <a name="cost-and-date-control"></a>Költség- és dátumellenőrzés
 
 [!include [banner](../../includes/banner.md)]
 
- 
-
-Az eszközkezelésben kiszámíthatja a költségeket, és így áttekintést kaphat a tényleges költségekről a költségvetésben meghatározott költségekkel szemben az eszközökön, munkavégzési helyszínekn vagy munkarendeléseken. A tényleges költségek a feladott tranzakciókon alapulnak. 
+Az eszközkezelésben kiszámíthatja a költségeket, és így áttekintést kaphat a tényleges költségekről a költségvetésben meghatározott költségekkel szemben az eszközökön, munkavégzési helyszínekn vagy munkarendeléseken. A tényleges költségek a feladott tranzakciókon alapulnak.
 
 Ha a munkarendelések tényleges kezdési és befejezési dátumaival szeretné összehasonlítani az ütemezett kezdési és befejezési dátumokat, akkor dátumszámítást is végezhet.
 
@@ -46,8 +44,8 @@ Az eszközökre, munkavégzési helyszínekre és munkarendelésekre vonatkozó 
 
 5. A **Szint** mezőben megadhatja, hogy a költségellenőrzési sorok milyen részletesen jelenítsék meg a munkavégzési helyszíneket. 
 
-    Ha például az „1” értéket adja meg a mezőben, és többszintű struktúrát használ a munkavégzési helyszínek hierarchiájához, akkor a munkavégzési helyszínekhez tartozó költségellenőrzési sorok a legfelső szinten jelennek meg, így a sorban szereplő órák hozzáadhatók az alacsonyabb szinten található munkavégzési helyszínekből. 
-    
+    Ha például az „1” értéket adja meg a mezőben, és többszintű struktúrát használ a munkavégzési helyszínek hierarchiájához, akkor a munkavégzési helyszínekhez tartozó költségellenőrzési sorok a legfelső szinten jelennek meg, így a sorban szereplő órák hozzáadhatók az alacsonyabb szinten található munkavégzési helyszínekből.
+
     Ha a „0” értéket adja meg a **Szint** mezőben, akkor részletes eredmény jelenik meg, amely az költségellenőrzés minden sorát megjeleníti az összes olyan munkavégzési helyszín szintnél, amelyhez a sor kapcsolódik.
 
 6. Ha a számításban szerepeltetni szeretné ezt az oszlopot, válassza az „Igen” beállítást a **Nyitott vállalt költség megjelenítése** gombbal.
@@ -64,7 +62,7 @@ Az eszközökre, munkavégzési helyszínekre és munkarendelésekre vonatkozó 
 
 10. Az **Eszközköltségek ellenőrzése** lapon a **Csoportosítási szempont...** műveleti ablaktáblacsoportjaiban kattintson a megfelelő gombokra a költségszámításhoz kívánt részletességi szintjének a megjelenítéséhez. A kiválasztott **Csoportosítási szempont…** ablaktáblacsoport gombjai ki vannak emelve. A gombra kattintva aktiválhatja vagy inaktiválhatja a funkciót.
 
-## <a name="example"></a>Példa
+## <a name="example-of-calculation-results-in-asset-cost-control"></a>Példa számítási eredmények az eszköz költségének ellenőrzéséhez
 
 Az alábbi képernyőfotón az **Eszközköltség kontrollja** számítási eredmény egyik példája látható.
 
@@ -76,7 +74,6 @@ Az alábbi képernyőfotón az **Eszközköltség kontrollja** számítási ered
 ![Példa számítási eredmények az Eszköz költségének ellenőrzéséhez](media/02-controlling-and-reporting.png)
 
 A költség számításának másik módja az, ha többszörös kiválasztással kiválasztja az eszközöket az **Összes eszköz** vagy **Aktív eszközök** pontban. Ezután kattintson a **Költségellenőrzés** gombra az **Általános** lapon. Az **Eszközköltség ellenőrzése** párbeszédpanelen a program automatikusan beilleszti a kiválasztott eszközöket az **Eszköz** mezőbe a **Belefoglalandó rekordok** gyorslapon. Kattintson az **OK** gombra, és megjelenik a kiválasztott eszközökre vonatkozó költségszámítás. Ugyanez az eljárás hajtható végre az **Összes munkavégzési helyszín** vagy **Aktív munkavégzési helyszínek** pontban található munkavégzési helyszíneknél, valamint a munkarendeléseknél az **Összes munkarendelés** vagy **Aktív munkarendelések** pontban.
-
 
 ## <a name="work-order-date-control"></a>Munkarendelési dátum ellenőrzése
 
@@ -94,7 +91,7 @@ Ezen a lapon áttekintést kaphat a munkarendelések várható kezdő és befeje
 
 6. Kattintson a **Csoportosítási szempont...** gombokra a költségszámításhoz kívánt részletességi szintjének a megjelenítéséhez. A kiválasztott **Csoportosítási szempont…** ablaktáblacsoport gombjai ki vannak emelve. A gombra kattintva aktiválhatja vagy inaktiválhatja a funkciót.
 
-## <a name="example"></a>Példa
+## <a name="example-of-calculation-results-in-work-order-date-control"></a>Példa számítási eredmények a munkarendelés dátumának ellenőrzéséhez
 
 Az alábbi képernyőfotón a **Munkarendelés dátumkontrollja** számítási eredmény egyik példája látható.
 

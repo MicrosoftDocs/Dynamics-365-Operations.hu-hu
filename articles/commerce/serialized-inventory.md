@@ -13,12 +13,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-08-01
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 45376e43c00116d403f00c58772aefba6fa33eeb
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: fbd1d9c71ece77cbf4c6ecb741eb6d5e3e3455d9
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5794018"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6028155"
 ---
 # <a name="point-of-sale-pos-improvements-for-serialized-products"></a>Pénztár (POS) javítások szerializált termékekhez
 
@@ -30,7 +30,7 @@ A Commerce központokban megadott beállítások alapján a termékek lehetnek s
 
 ## <a name="pos-improvements"></a>Pénztári fejlesztések
 
-- **Sorozatszámokra nincs szükség a fizetésig** – korábban a pénztárosnak, aki szerializált terméket adott hozzá a tranzakcióhoz, meg kellett adnia egy sorozatszámot. Ennek a követelménynek hátránya volt vevőkezelési helyzetekben, amikor a pénztárosoknak és értékesítési munkatársaknak lehetőségük nyílt értéknövelő termékek értékesítésére. A kifizetési lépésig a terméket gyakran frissíteni kellett a kosárban. Ezért minden alkalommal, amikor a pénztáros új terméket adott hozzá, a rendszer kérte a sorozatszámot. A sorozatszám párbeszédpanelen mostantól látható egy **Hozzáadás később** gomb. Így az értékesítési munkatárs felveheti a cikket a tranzakcióba, de később is megadhatja a sorozatszámot. Az értékesítési munkatársak gyorsan hozzáadhatnak és szerializálhatnak cikkeket a kosárhoz, és elég a sorozatszámot csak a fizetés előtt megadni. Ha a sorozatszám egy szerializált termékhez nincs megadva, a tranzakciót végrehajtó pénztáros hibaüzenetet kap. Ez az üzenet jelzi, hogy a folytatás előtt a pénztárosnak meg kell adnia a hiányzó sorozatszámokat.
+- **Sorozatszámokra nincs szükség a fizetésig** – korábban a pénztárosnak, aki szerializált terméket adott hozzá a tranzakcióhoz, meg kellett adnia egy sorozatszámot. Ennek a követelménynek hátránya volt vevőkezelési helyzetekben, amikor a pénztárosoknak és értékesítési munkatársaknak lehetőségük nyílt értéknövelő termékek értékesítésére. A kifizetési lépésig a terméket gyakran frissíteni kellett a kosárban. Ezért minden alkalommal, amikor a pénztáros új terméket adott hozzá, a rendszer kérte tőle a sorozatszámot. A sorozatszám párbeszédpanelen mostantól látható egy **Hozzáadás később** gomb. Így az értékesítési munkatárs felveheti a cikket a tranzakcióba, de később is megadhatja a sorozatszámot. Az értékesítési munkatársak gyorsan hozzáadhatnak és szerializálhatnak cikkeket a kosárhoz, és elég a sorozatszámot csak a fizetés előtt megadni. Ha a sorozatszám egy szerializált termékhez nincs megadva, a tranzakciót végrehajtó pénztáros hibaüzenetet kap. Ez az üzenet jelzi, hogy a folytatás előtt a pénztárosnak meg kell adnia a hiányzó sorozatszámokat.
 
     Minden egyes szerializált cikkhez, ahol a sorozatszám ki lett hagyva, megjegyzés jelenik meg a tranzakciósor alatt. Ez a megjegyzés azt jelzi, hogy a sorozatszám a cikkhez még nem lett megadva. A pénztáros így gyorsan megtalálhatja a cikkeket, amelyekhez még nem tartozik sorozatszám.
 

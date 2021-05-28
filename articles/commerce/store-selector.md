@@ -2,7 +2,6 @@
 title: Üzletkiválasztó modul
 description: Ez a témakör az üzletválasztó modullal foglalkozik, és bemutatja, hogy hogyan lehet azt hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: anupamar-ms
-manager: annbe
 ms.date: 04/02/2021
 ms.topic: article
 ms.prod: ''
@@ -16,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 22ec78c8e0545698f05f8f8ec261b5e927d698c7
-ms.sourcegitcommit: 74f5b04b482b2ae023c728e0df0eb78305493c6a
+ms.openlocfilehash: 5a9311435264119e8287f1b7da2d0456552231f3
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "5853417"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6021464"
 ---
 # <a name="store-selector-module"></a>Üzletválasztó modul
 
@@ -62,7 +61,7 @@ Az üzlet helyének földrajzi hosszúságának és szélességének beállítá
 
 ## <a name="bing-maps-integration"></a>Bing Maps – integráció
 
-Az üzletválasztó modul integrálva van a [Bing Maps REST alkalmazásfejlesztési felületei (API)](https://docs.microsoft.com/bingmaps/rest-services/) funkcióval a Bing geokódolási és az Automatikus javaslat szolgáltatásainak használatához. A Bing Maps API-kulcsot kötelező megadni, és hozzá kell adni a Commerce központ megosztott paraméterei oldalhoz. A geokódolási API a helyet a hosszúsági és a szélességi adatok alapján alakítja értékekre. Az automatikusan javasolt API-val való integráció a keresési javaslatok megjelenítésére szolgál, amikor a felhasználók helyeket adnak meg a keresési mezőben.
+Az üzletválasztó modul integrálva van a [Bing Maps REST alkalmazásfejlesztési felületei (API)](/bingmaps/rest-services/) funkcióval a Bing geokódolási és az Automatikus javaslat szolgáltatásainak használatához. A Bing Maps API-kulcsot kötelező megadni, és hozzá kell adni a Commerce központ megosztott paraméterei oldalhoz. A geokódolási API a helyet a hosszúsági és a szélességi adatok alapján alakítja értékekre. Az automatikusan javasolt API-val való integráció a keresési javaslatok megjelenítésére szolgál, amikor a felhasználók helyeket adnak meg a keresési mezőben.
 
 Az Autosuggest REST API esetében gondoskodni kell arról, hogy a webhely tartalmának biztonsági házirendjében (CSP) a következő leképezési URL-címeket engedélyezzék. Ez a beállítás a Commerce webhelykészítőben végezhető el azzal, ha engedélyezett URL-címeket ad a webhely CSP-utasításokhoz (például **img-src**). További információ: [Tartalomra vonatkozó biztonsági irányelv (CSP)](manage-csp.md). 
 
@@ -78,14 +77,14 @@ Az üzletválasztó modul támogatja a **Felvétel az üzletben** módot, amely 
 
 Az üzletválasztó modul hozzáadható a PDP, amelyben megtekinthetők azok az üzletek, amelyekben a termék rendelkezésre áll felvételre. A kosár modulhoz is hozzáadhatók. Ebben az esetben az üzletválasztó modul a kosár minden sorához megjeleníti a felvételi beállításokat. Az üzletválasztó modul hozzáadható más oldalakhoz vagy modulokhoz a bővítményeken és a testreszabásokon keresztül.
 
-A forgatókönyv működéséhez a termékeket az **átvétel** szállítási móddal kell használni. Máskülönben a modul nem fog megjelenni a megfelelő termékoldalakon. A szállítási mód konfigurálásával kapcsolatos további információkat lásd: [Szállítási módok beállítása](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
+A forgatókönyv működéséhez a termékeket az **átvétel** szállítási móddal kell használni. Máskülönben a modul nem fog megjelenni a megfelelő termékoldalakon. A szállítási mód konfigurálásával kapcsolatos további információkat lásd: [Szállítási módok beállítása](/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
 
 A következő kép a PDP-ben használt üzletválasztó modul egy példáját jeleníti meg.
 
 ![Példa egy üzletválasztó modulra, ami a PDP-ben van használva](./media/BOPIS.PNG)
 
 > [!NOTE]
-> A 10.0.16-os és újabb verzióban egy új funkció engedélyezhető, amely lehetővé teszi a szervezet számára, hogy több szállítási módot határozzon meg az ügyfelek számára.  Ha ez a funkció engedélyezve van, az áruházválasztó és az e-kereskedelem egyéb moduljai javulni fognak, hogy a vásárló a potenciálisan több felvételi szállítási lehetőség közül választhasson, ha be van állítva.  A funkcióról többet is megtudhat, olvassa el [ezt a dokumentációt](https://docs.microsoft.com/dynamics365/commerce/multiple-pickup-modes). 
+> A 10.0.16-os és újabb verzióban egy új funkció engedélyezhető, amely lehetővé teszi a szervezet számára, hogy több szállítási módot határozzon meg az ügyfelek számára.  Ha ez a funkció engedélyezve van, az áruházválasztó és az e-kereskedelem egyéb moduljai javulni fognak, hogy a vásárló a potenciálisan több felvételi szállítási lehetőség közül választhasson, ha be van állítva.  A funkcióról többet is megtudhat, olvassa el [ezt a dokumentációt](./multiple-pickup-modes.md). 
 
 ## <a name="find-stores-mode"></a>Üzletek keresése mód
 
@@ -157,11 +156,11 @@ Ha az üzlethelyekhez szeretné konfigurálni az üzletválasztó modult az elé
 
 [A kosár és a pénztár rövid bemutatása](quick-tour-cart-checkout.md)
 
-[Szállítási módok beállítása](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery)
+[Szállítási módok beállítása](/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery)
 
 [A szervezetéhez tartozó Bing Térképek kezelése](dev-itpro/manage-bing-maps.md)
 
-[Bing Térképek REST API-k](https://docs.microsoft.com/bingmaps/rest-services/)
+[Bing Térképek REST API-k](/bingmaps/rest-services/)
 
 [Térképek modul](map-module.md)
 

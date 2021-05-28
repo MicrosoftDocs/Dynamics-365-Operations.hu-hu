@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e68ef15fed1841bcbf006929f3c6441d62798fc8
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 56d74b6700b48a8c523d02a1affc421ee370215e
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5819914"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027746"
 ---
 # <a name="use-one-payment-to-settle-invoices-that-span-multiple-discount-periods"></a>Több, eltérő engedményidőszakra vonatkozó számla kiegyenlítése egy vevői kifizetéssel
 
@@ -66,7 +66,7 @@ Anna a július 1 ezeket a számlákat teljesen kiegyenlítendő kifizetési napl
 | Kiválasztva és kiemelve | Normál            | FTI-10042 | 4032    | 2015-06-25 | 2015/07/25 | 10042   | 1000,00                             |                                       | dollár      | 990,00           |
 
 ## <a name="partial-settlement-on-june-29"></a>Részleges kiegyenlítés függőben június 29-én
-Vevői 4032 kifizethet a részleges összeget, például minden egyes számlához felét. Anna létrehoz egy kifizetést a vevő 4032 és megnyílik az **Tranzakciók kiegyenlítése** oldalon. A **Tranzakciók kiegyenlítése** lapon Anna megjelölése kiegyenlítésre három számla egyes sorai. Az egyes sorokban felviszi a kiegyenlítendő összeg alapján, ha a vevő által adott utasításokat. Anna kiválaszt egy sort, ha a sor engedményösszege és a készpénzfizetési engedmény összege, amely látja. Fél a számlát a vevő fizeti, mert Anna fér hozzá, amelyek értéke a **készpénzfizetési engedmény összege** mező FTI-10042 értéke **20,00**, de az érték a **alkalmazott készpénzfizetési engedmény** mező **10,00**. A kifizetés összege 1485,00.
+Vevői 4032 kifizethet a részleges összeget, például minden egyes számlához felét. Anna létrehoz egy kifizetést a vevő 4032 és megnyílik az **Tranzakciók kiegyenlítése** oldalon. A **Tranzakciók kiegyenlítése** lapon Anna megjelölése kiegyenlítésre három számla egyes sorai. Az egyes sorokban Arnie felviszi a kiegyenlítendő összeg alapján, ha a vevő által adott utasításokat. Arnie kiválaszt egy sort, ha a sor engedményösszege és a készpénzfizetési engedmény összege, amely látja. Fél a számlát a vevő fizeti, mert Anna fér hozzá, amelyek értéke a **készpénzfizetési engedmény összege** mező FTI-10042 értéke **20,00**, de az érték a **alkalmazott készpénzfizetési engedmény** mező **10,00**. A kifizetés összege 1485,00.
 
 | Jelölés                     | Készpénzfizetési engedmény használata | Bizonylat   | Fiók | Dátum      | Fiz. határidő  | Számla | Összeg a tranzakció pénznemtartozásában | Összeg a tranzakció pénznemtartozásában | Pénznem | Kiegyenlítendő összeg |
 |--------------------------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------------|---------------------------------------|----------|------------------|
@@ -74,11 +74,11 @@ Vevői 4032 kifizethet a részleges összeget, például minden egyes számláho
 | Kijelölve                 | Normál            | FTI-10041 | 4032    | 2015-06-25 | 2015/07/25 | 10041   | 1000,00                             |                                       | dollár      | 495,00           |
 | Kiválasztva és kiemelve | Normál            | FTI-10042 | 4032    | 2015-06-25 | 2015/07/25 | 10042   | 1000,00                             |                                       | dollár      | 490.00           |
 
-Anna manuálisan is megadhatja a 1485,00 értékű kifizetés összegét, mielőtt megnyitná a **Tranzakciók kiegyenlítése** oldalt. Ha Anna kézzel beírja a kifizetés összegét, és megjelöli a három tranzakciót, de nem módosítja az értéket a **Kiegyenlítendő összeg** mezőben minden tranzakciónál, akkor a következő üzenetet kapja a lap bezárásakor:
+Arnie manuálisan is megadhatja a 1485,00 értékű kifizetés összegét, mielőtt megnyitná a **Tranzakciók kiegyenlítése** oldalt. Ha Arnie kézzel beírja a kifizetés összegét, és megjelöli a három tranzakciót, de nem módosítja az értéket a **Kiegyenlítendő összeg** mezőben minden tranzakciónál, akkor a következő üzenetet kapja a lap bezárásakor:
 
 > A jelölt tranzakciók összege eltér a napló összegétől. Módosítja a napló összegét?
 
-Ha a kifizetés összege csak 1485,00 kell Anna, kattint **Nem** , és ezt követően feladja a naplót. A tranzakció kiegyenlítése a következőképpen történik:
+Ha a kifizetés összege csak 1485,00 kell Arnie, kattint **Nem** , és ezt követően feladja a naplót. A tranzakció kiegyenlítése a következőképpen történik:
 
 1.  Számla FTI-10040 teljesen ki van egyenlítve az 1000,00, mert május 15-én rögzítettek, és a legrégebbi számla. Alkalmazott készpénzfizetési engedmény a következőben. A fennmaradó összeg a tranzakció pénznemében 485,00.
 2.  Számla FTI-10041 a egyáltalán nincs kiegyenlítve. Számlák FTI-10041 és FTI-10042 ugyanazon a napon írt be. Azonban 1%-os engedményt a számla FTI-10041 érhető el, és a 2 százalékos engedményt a számla FTI-10042 érhető el. Jobb engedményt és a számla FTI-10042 érhető el, mert a fennmaradó 485,00 FTI-10042 számla kiegyenlítése.

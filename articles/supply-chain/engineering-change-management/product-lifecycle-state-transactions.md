@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 421fae6eab20eea50b9ce677a1ae7993add6cb93
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 8bb3d5848b7e2c50a8fdaba1c6a1a7c0087d1390
+ms.sourcegitcommit: b67665ed689c55df1a67d1a7840947c3977d600c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5842057"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6016956"
 ---
 # <a name="product-lifecycle-states-and-transactions"></a>A termék életciklusának állapotai és tranzakciói
 
@@ -74,5 +74,24 @@ A következő mezők érhetők el az **Engedélyezett üzleti folyamatok** gyors
 
 Ha további életciklusállapot-szabályokat ad hozzá testreszabásként, ezeket a szabályokat a felhasználói felületen (UI) tekintheti meg, ha a felső ablaktáblában a **Folyamatok frissítése** lehetőséget választja. A **Folyamatok frissítése** gomb csak rendszergazdák számára érhető el.
 
+## <a name="lifecycle-states-for-released-products-and-product-variants"></a>A kiadott termékek és termékváltozatok életciklus-állapotai
+
+Egy olyan termék esetében, amelynek változatai (alaptermék és változatai) vannak, a termék (alaptermék) életciklus-állapottal rendelkezik, és mindegyik változat eltérő életciklus-állapotú lehet.
+
+Bizonyos folyamatok esetében, ha a változat vagy a termék blokkolva van, akkor a folyamat is blokkolva lesz. Pontosabban annak meghatározására, hogy egy folyamat blokkolva van-e, a rendszer a következő ellenőrzéseket hajtja végre:
+
+- Mérnöki vezérlésű termékek esetében:
+  - Ha az aktuális mérnöki verzió blokkolva van, akkor blokkolja a folyamatot.
+  - Ha a változat blokkolva van, akkor blokkolja a folyamatot.
+  - Ha a kiadott termék blokkolva van, akkor blokkolja a folyamatot.
+- Standard termékek esetében:
+  - Ha a változat blokkolva van, akkor blokkolja a folyamatot.
+  - Ha a kiadott termék blokkolva van, akkor blokkolja a folyamatot.
+
+Tegyük fel például, hogy csak egy adott termék (póló) egy változatát (pirosát) szeretné eladni, és egyelőre blokkolni szeretné az összes többi változat értékesítését. Ezt a következő beállítással valósíthatja meg:
+
+- Rendelje hozzá a terméket egy életciklus-állapothoz, amely lehetővé teszi a folyamatot. Például rendelje hozzá a pólóterméket az *Értékesíthető* életciklus-állapothoz, amely lehetővé teszi az *Értékesítési rendelés* üzleti folyamatot.
+- Rendelje hozzá az értékesíthető változatot egy életciklus-állapothoz, amely lehetővé teszi a folyamatot. Például rendelje hozzá a piros változatot is az *Értékesíthető* életciklus állapothoz.
+- Az összes többi változathoz egy másik életciklus-állapotot kell hozzárendelni, ahol a folyamat blokkolva van. Például rendelje hozzá a fehér változatot (és az összes többi változatot) a *Nem értékesíthető* életciklus állapothoz, ami blokkolja az *Értékesítési rendelés* üzleti folyamatát.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

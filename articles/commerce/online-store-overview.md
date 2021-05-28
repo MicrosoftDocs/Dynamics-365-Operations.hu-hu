@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: stuharg
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: b0c7aa3bc1d4eef7b557bd9b07b31196faab273d
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 55c40029082e49c1fbc9d9d5e9361218e5ddc5a0
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791078"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6022472"
 ---
 # <a name="e-commerce-site-overview"></a>E-kereskedelmi webhely áttekintése
 
@@ -37,11 +37,11 @@ A Dynamics 365 Commerce alkalmazásban egy online üzlet csatorna használatáva
 
 Csak egy online üzlet csatornát kell beállítani a Dynamics 365 Commerce használatának megkezdéshez. Egyetlen e-kereskedelmi webhely azonban több online áruház számára is képes biztosítani az online élményt. Ha például több online áruház van beállítva különböző földrajzi régió támogatására, akkor az e-kereskedelmi oldalak egyetlen csoportja használható az egyes üzletek által meghatározott egyedi élmények biztosítására. További információt arról, hogy miként állíthat be egy webhelyet több online áruház támogatásához, az [Online webhely társítása csatornával](associate-site-online-store.md) című témakörben talál.
 
-Miután beállított egy online áruházat, társíthatja azt a Dynamics 365 Commerce webhellyel, amely online kirakatként szolgál majd. További információ az online áruházakról és a beállításuk módjáról az [Online áruházak beállítása](https://docs.microsoft.com/dynamics365/unified-operations/retail/online-stores) című témakörben található.
+Miután beállított egy online áruházat, társíthatja azt a Dynamics 365 Commerce webhellyel, amely online kirakatként szolgál majd. További információ az online áruházakról és a beállításuk módjáról az [Online áruházak beállítása](/dynamics365/unified-operations/retail/online-stores) című témakörben található.
 
 ## <a name="deploy-a-new-e-commerce-tenant"></a>Új e-kereskedelmi bérlő telepítése
 
-Az e-kereskedelmi webhely inicializálása során a rendszer tartománynevet kér. A Commerce-ben használt tartományokkal kapcsolatos további információkért lásd: [Tartománynév konfigurálása](configure-your-domain-name.md) és [Tartományok a Dynamics 365 Commerce rendszerben](domains-commerce.md). Ha új e-kereskedelmi bérlőt szeretne telepíteni a [Microsoft Dynamics Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide) használatával, kövesse az [Új e-kereskedelmi bérlő telepítése](deploy-ecommerce-site.md) című részben leírt lépéseket. Miután az e-kereskedelmi bérlő be van állítva az LCS-ben, a rendszer egy linket biztosít a Commerce webhelyépítőjéhez. Ezután a Commerce webhelyszerkesztővel inicializálhatja és konfigurálhatja az e-kereskedelmi webhelyeket.
+Az e-kereskedelmi webhely inicializálása során a rendszer tartománynevet kér. A Commerce-ben használt tartományokkal kapcsolatos további információkért lásd: [Tartománynév konfigurálása](configure-your-domain-name.md) és [Tartományok a Dynamics 365 Commerce rendszerben](domains-commerce.md). Ha új e-kereskedelmi bérlőt szeretne telepíteni a [Microsoft Dynamics Lifecycle Services (LCS)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide) használatával, kövesse az [Új e-kereskedelmi bérlő telepítése](deploy-ecommerce-site.md) című részben leírt lépéseket. Miután az e-kereskedelmi bérlő be van állítva az LCS-ben, a rendszer egy linket biztosít a Commerce webhelyépítőjéhez. Ezután a Commerce webhelyszerkesztővel inicializálhatja és konfigurálhatja az e-kereskedelmi webhelyeket.
 
 ## <a name="initialize-your-e-commerce-site"></a>Az e-kereskedelmi webhely inicializálása
 

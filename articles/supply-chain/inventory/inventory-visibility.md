@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: d09c7be5de75511b10d7a69d4b8ac12917b0dbe8
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 84f5e949f0c81f840c8a9086d05bbcfc576e42aa
+ms.sourcegitcommit: b67665ed689c55df1a67d1a7840947c3977d600c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5910425"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6017006"
 ---
 # <a name="inventory-visibility-add-in"></a>Készlet láthatósága bővítmény
 
@@ -41,20 +41,23 @@ Telepítenie kell a Készlet láthatósága bővítményt a Microsoft Dynamics L
 
 További tudnivalókért lásd: [Lifecycle Services-erőforrások](../../fin-ops-core/dev-itpro/lifecycle-services/lcs.md).
 
-### <a name="prerequisites"></a>Előfeltételek
+### <a name="inventory-visibility-add-in-prerequisites"></a>Készletláthatósági bővítmény előfeltételei
 
 A Készlet láthatósága bővítmény telepítése előtt a következőket kell tennie:
 
 - Szerezzen be egy LCS-megvalósítási projektet legalább egy üzembe helyezett környezettel.
 - Győződjön meg arról, hogy be vannak fejezve a [Bővítmények áttekintése](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md) részben megadott bővítmények beállításának előfeltételei. A Készlet láthatósága nem igényel kettős írású csatolást.
 - Lépjen kapcsolatba a Készlet láthatósági csapatával [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) a következő három szükséges fájl beszerzéséhez:
-    - `Inventory Visibility Dataverse Solution.zip`
-    - `Inventory Visibility Configuration Trigger.zip`
-    - `Inventory Visibility Integration.zip` (ha a Supply Chain Management által futtatott verzió korábbi, mint a 10.0.18)
+  - `Inventory Visibility Dataverse Solution.zip`
+  - `Inventory Visibility Configuration Trigger.zip`
+  - `Inventory Visibility Integration.zip` (ha a Supply Chain Management által futtatott verzió korábbi, mint a 10.0.18)
+- Másik lehetőségként lépjen kapcsolatba a Készlet láthatósági csapatával [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) a Package Deployer-csomagok beszerzéséhez. Ezeket a csomagokat egy hivatalos Package Deployer eszköz használhatja.
+  - `InventoryServiceBase.PackageDeployer.zip`
+  - `InventoryServiceApplication.PackageDeployer.zip` (ez a csomag tartalmazza a `InventoryServiceBase` csomag összes módosítását, valamint további felhasználói felületi alkalmazáskomponenseket)
 - Kövesse az itt megadott utasításokat: [Rövid útmutató: Alkalmazások regisztrálása a Microsoft Identity platformmal](/azure/active-directory/develop/quickstart-register-app), hogy regisztráljon egy alkalmazást, és adjon hozzá egy ügyféltitkot az AAD-hez az Azure-előfizetés alatt.
-    - [Alkalmazás regisztrálása](/azure/active-directory/develop/quickstart-register-app)
-    - [Titkos ügyfélkód hozzáadása](/azure/active-directory/develop/quickstart-register-app#add-a-certificate)
-    - Az **alkalmazás(ügyfél) azonosítója**, az **ügyfél titkos azonosítója** és a **bérlőazonosító** a következő lépésekben lesz használva.
+  - [Alkalmazás regisztrálása](/azure/active-directory/develop/quickstart-register-app)
+  - [Titkos ügyfélkód hozzáadása](/azure/active-directory/develop/quickstart-register-app#add-a-certificate)
+  - Az **Alkalmazás(ügyfél) azonosítója**, az **ügyfél titkos azonosítója** és a **bérlőazonosító** a következő lépésekben lesz használva.
 
 > [!NOTE]
 > A jelenleg támogatott országok és régiók: Kanada, az Egyesült Államok és az Európai Unió (EU).
@@ -63,18 +66,49 @@ Ha bármilyen kérdése van ezekkel az előfeltételekkel kapcsolatban, kérjük
 
 ### <a name="set-up-dataverse"></a><a name="setup-microsoft-dataverse"></a>Dataverse beállítása
 
-A Dataverse beállításához kövesse az alábbi lépéseket.
+A Dataverse beállításához a Készlet láthatósága használatához először elő kell készítenie az előfeltételeket, majd el kell döntenie, hogy a Package Deployer eszközzel vagy a megoldások manuális importálásával szeretne-e beállítani Dataverse-t (nem kell mindkettőt megtennie). Majd telepítse a Készlet láthatósága bővítményt. A következő alfejezetek ismertetik az egyes feladatok elvégzésének módját.
 
-1. Adjon hozzá egy szolgáltatási elvet a bérlőhöz:
+#### <a name="prepare-dataverse-prerequisites"></a>A Dataverse-előfeltételek előkészítése
 
-    1. Telepítse az Azure AD PowerShell modul v2 verzióját az [Azure Active Directory PowerShell for Graph telepítése](/powershell/azure/active-directory/install-adv2) részben leírtak szerint.
-    1. Futtassa a következő PowerShell-parancsot.
+A Dataverse beállításának megkezdése előtt adjon hozzá egy szolgáltatásnevet a bérlőhöz az alábbiak szerint:
 
-        ```powershell
-        Connect-AzureAD # (open a sign in window and sign in as a tenant user)
+1. Telepítse az Azure AD PowerShell modul v2 verzióját az [Azure Active Directory PowerShell for Graph telepítése](/powershell/azure/active-directory/install-adv2) részben leírtak szerint.
 
-        New-AzureADServicePrincipal -AppId "3022308a-b9bd-4a18-b8ac-2ddedb2075e1" -DisplayName "d365-scm-inventoryservice"
-        ```
+1. Futtassa a következő PowerShell-parancsot:
+
+    ```powershell
+    Connect-AzureAD # (open a sign in window and sign in as a tenant user)
+    
+    New-AzureADServicePrincipal -AppId "3022308a-b9bd-4a18-b8ac-2ddedb2075e1" -DisplayName "d365-scm-inventoryservice"
+    ```
+
+#### <a name="set-up-dataverse-using-the-package-deployer-tool"></a>A Dataverse beállítása a Package Deployer-eszközzel
+
+Miután rendelkezik az előfeltételekkel, használja a következő eljárást, ha inkább a Package Deployer eszközzel szeretne beállítani a Dataverse-t. A megoldás manuális importálásának részleteiről lásd a következő részt (ne tegye mindkettőt).
+
+1. Fejlesztői eszközök telepítése az [Eszközök letöltése a NuGet-ből](/dynamics365/customerengagement/on-premises/developer/download-tools-nuget) rész alapján.
+
+1. Az üzleti igények alapján válassza ki a `InventoryServiceBase` vagy az `InventoryServiceApplication` csomagot.
+
+1. Importálja a megoldásokat:
+    1. Az `InventoryServiceBase`-csomag esetében:
+        - Csomagolja ki: `InventoryServiceBase.PackageDeployer.zip`
+        - Keresse meg az `InventoryServiceBase` mappát, `[Content_Types].xml`-fájl `Microsoft.Dynamics.InventoryServiceBase.PackageExtension.dll`-fájl `Microsoft.Dynamics.InventoryServiceBase.PackageExtension.dll.config`-fájl és `Microsoft.Dynamics.InventoryServiceBase.PackageExtension.dll.config`-fájl. 
+        - Másolja ezeket a mappákat és fájlokat a `.\Tools\PackageDeployment` könyvtárba, amely a fejlesztői eszközök telepítésekor jött létre.
+    1. Az `InventoryServiceApplication`-csomag esetében:
+        - Csomagolja ki: `InventoryServiceApplication.PackageDeployer.zip`
+        - Keresse meg az `InventoryServiceApplication` mappát, `[Content_Types].xml`-fájl `Microsoft.Dynamics.InventoryServiceApplication.PackageExtension.dll`-fájl `Microsoft.Dynamics.InventoryServiceApplication.PackageExtension.dll.config`-fájl és `Microsoft.Dynamics.InventoryServiceApplication.PackageExtension.dll.config`-fájl.
+        - Másolja ezeket a mappákat és fájlokat a `.\Tools\PackageDeployment` könyvtárba, amely a fejlesztői eszközök telepítésekor jött létre.
+    1. Végrehajtás: `.\Tools\PackageDeployment\PackageDeployer.exe`. Kövesse a képernyőn megjelenő utasításokat a megoldások importálásához.
+
+1. Biztonsági szerepkör hozzárendelése az alkalmazásfelhasználóhoz.
+    1. Nyissa meg a Dataverse környezete URL-címét.
+    1. Lépjen a **Speciális beállítás \> Rendszer \> Biztonság \> Felhasználók** beállításához, és keresse meg a **# InventoryVisibility** nevű felhasználót.
+    1. Válassza a **Szerepkör hozzárendelése**, majd a **Rendszergazda** lehetőséget. Ha van **Common Data Service-felhasználó** nevű szerepkör, válassza ki azt is.
+
+#### <a name="set-up-dataverse-manually-by-importing-solutions"></a>A Dataverse manuális beállítása megoldások importálásával
+
+Miután rendelkezik az előfeltételekkel, használja a következő eljárást, ha inkább a magoldások manuális importálásával szeretne beállítani a Dataverse-t. A Package Deployer eszköz használatáról az előző részben talál részletes információkat (ne tegye mindkettőt).
 
 1. Hozzon létre egy alkalmazásfelhasználót a Készlet láthatósága számára a Dataverse rendszerben:
 

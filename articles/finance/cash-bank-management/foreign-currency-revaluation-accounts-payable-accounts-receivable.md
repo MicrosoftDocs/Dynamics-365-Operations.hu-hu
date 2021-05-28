@@ -1,6 +1,6 @@
 ---
 title: A Kötelezettségek és a Kinnlevőségek modul devizaátértékelése
-description: Az árfolyamok ingadozásai a devizában megadott nyitott tranzakciók elméleti értékét (könyv szerinti értéke) az idők során megváltoztatják. Ez a cikk tájékoztatást nyújt arról a devizaátértékelési folyamatról, amely a Kötelezettségek és Kinnlevőségek nyitott tranzakciók értékének frissítését elvégzik.
+description: Ez a témakör tájékoztatást nyújt arról a devizaátértékelési folyamatról, amely a Kötelezettségek és Kinnlevőségek nyitott tranzakciók értékének frissítését elvégzik.
 author: kweekley
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0df0ae1aa0e75eb8c64d5ca31fcd3605b5112cdd
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9d4e9a4bfdad4e69b13d7b0324f4978f13d6d295
+ms.sourcegitcommit: c011a2ef66b38e71ddaf003f7d243677bb2707c5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5815908"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6026157"
 ---
 # <a name="currency-revaluation-for-accounts-payable-and-accounts-receivable"></a>A Kötelezettségek és a Kinnlevőségek modul devizaátértékelése
 
 [!include [banner](../includes/banner.md)]
 
-Az árfolyamok ingadozásai a devizában megadott nyitott tranzakciók elméleti értékét (könyv szerinti értéke) az idők során megváltoztatják. Ez a cikk tájékoztatást nyújt arról a devizaátértékelési folyamatról, amely a Kötelezettségek és Kinnlevőségek nyitott tranzakciók értékének frissítését elvégzik. 
+Az árfolyamok ingadozásai a devizában megadott nyitott tranzakciók elméleti értékét (könyv szerinti értéke) az idők során megváltoztatják. Ez a témakör tájékoztatást nyújt arról a devizaátértékelési folyamatról, amely a Kötelezettségek és Kinnlevőségek nyitott tranzakciók értékének frissítését elvégzik. 
 
 A nyitott szállítói tranzakciók devizában megadott elméleti értéke (könyv szerinti értéke) az idők során az árfolyam ingadozásának megfelelően változik. A kötelezettségek és Kinnlevőségek nyitott tranzakciók értékét frissítik, futtassa a deviza-átértékelési folyamat. A kötelezettségek és Kinnlevőségek árfolyam-korrekció. A folyamat átértékelni a nyitott összeg az új árfolyam használatával, vagy a Kiegyenlítetlen összegek, a megadott dátumon. Az eredetileg feladott összegek és az újraszámított összegek közötti különbségek azt eredményezik, hogy nem realizált nyereség vagy veszteség keletkezik minden nyitott tranzakciónál. A Kötelezettségek és Kinnlevőségek részkönyvszámlák ezután a nem realizált nyereséget vagy veszteséget tükrözve frissülnek, és egy könyvelési tétel kerül feladásra a főkönyvbe.
 
@@ -55,7 +55,7 @@ Használja a **Devizaátértékelés** oldalt az **Időszakos feladatok** részb
     -   **Feladás** – A vevői tranzakció feladási profilját használja a rendszer.
     -   **Választás** – A feladási profilt a **Feladási sablon** mezőben szereplő feladási profil határozza meg.
 -   **Használt feladási profil** – Ha a **Használt feladási profil** helye mezőben a **Kiválasztás** érték szerepel, a devizaátértékelési tranzakciók feladási profilját az ebben a mezőben szereplő feladási profil határozza meg.
--   **Pénzügyi dimenziók** – A Tábla opció azt jelenti, hogy a vevőkód pénzügyi dimenziói lesznek feladva a devizaátértékelési tranzakcióra.
+-   **Pénzügyi dimenziók** – A Tábla opció azt jelenti, hogy a vevőkód pénzügyi dimenziói lesznek feladva a devizaátértékelési tranzakcióra. A pénzügyi dimenziók érvényesítése nem a számlastruktúra szabályai szerint történt. Lehet, hogy a számlák feladásakor érvényes számlastruktúra nem azonos a kiértékelés befejezésekor érvényes szabályokkal. Az átértékelési folyamatban nincs lehetőség meghatározott pénzügyi dimenziók kiválasztására, ezért a program kihagyja a számlastruktúra érvényesség-ellenőrzést.  
     -   **Nincs** – nem pénzügyi dimenziói vannak feladva. Ha szükséges, a pénzügyi dimenziók a számlastruktúrában, az átértékelési folyamat továbbra is fut, és, amelyeknél nincsenek dimenziók könyvelési tételeket hoz létre. Egy figyelmeztető üzenetet kap, úgy, hogy vissza tudja vonni az átértékelés.
     -   **Tábla** – A Tábla opció azt jelenti, hogy a vevőkód pénzügyi dimenziói lesznek feladva a devizaátértékelési tranzakcióra.
     -   **Feladás** – A Feladás opció azt jelenti, hogy az átértékelt tranzakció pénzügyi dimenziói lesznek feladva a devizaátértékelési tranzakcióra. Alapértelmezés szerint a pénzügyi dimenziók az eredeti tranzakció vevői/szállítói főkönyvi számláról az átértékelési tranzakció vevői/szállítói fő számla lesz, és az átértékelési tranzakció nem realizált nyereség/veszteség főszámla használandó pénzügyi dimenziókat az eredeti tranzakció költség/tárgyi eszköz/bevétel főkönyvi számláról.

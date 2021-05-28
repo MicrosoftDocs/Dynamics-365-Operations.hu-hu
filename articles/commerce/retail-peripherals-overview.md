@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 6f60d2e654d37b86d92478b6cd961b917711ef8c
-ms.sourcegitcommit: 011468a6cffea8641bebc2922e0676d9f44b36fc
+ms.openlocfilehash: 91f1963f2bbc01fc4d3a9282d6ac7705bc5287c2
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "5857273"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6018831"
 ---
 # <a name="peripherals"></a>Perifériák
 
@@ -158,7 +158,7 @@ Hálózati címmel rendelkező pénzfiókok, nyugtanyomtatók és fizetési term
 
 ### <a name="dedicated"></a>Kijelölt
 
-A korszerű POS-ügyfelek esetében a Windows és az Android **Dedikált** vagy beépített hardverállomásokat tartalmaz. Ezek az ügyfelek közvetlenül tudnak kommunikálni a perifériákkal az alkalmazásokba épített üzleti logikát használva. Az Android alkalmazás csak hálózati eszközöket támogat. Ha további tájékoztatást szeretne a perifériás támogatással kapcsolatban az Android esetében, látogassa meg a [POS Hybrid alkalmazás beállítása Android vagy iOS rendszerre](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/hybridApp) cikket.
+A korszerű POS-ügyfelek esetében a Windows és az Android **Dedikált** vagy beépített hardverállomásokat tartalmaz. Ezek az ügyfelek közvetlenül tudnak kommunikálni a perifériákkal az alkalmazásokba épített üzleti logikát használva. Az Android alkalmazás csak hálózati eszközöket támogat. Ha további tájékoztatást szeretne a perifériás támogatással kapcsolatban az Android esetében, látogassa meg a [POS Hybrid alkalmazás beállítása Android vagy iOS rendszerre](./dev-itpro/hybridapp.md) cikket.
 
 A dedikált hardverállomás használatához hardverprofilt kell hozzárendelni egy pénztárgéphez, amely a Modern POS for Windows vagy Android alkalmazást fogja használni. Ezután hozzon létre egy **Dedikált** típusú hardverállomást az üzlethez, ahol a pénztárgépet használni fogja. A korszerű POS-t ne fiókos módban indítsa el, és a **Hardveres állomások kezelése** művelet használatával kapcsolja be a hardveres állomás képességeit; a dedikált hardvereszköz alapértelmezés szerint aktív lesz. Ezután jelentkezzen ki a Modern POS rendszerből, majd jelentkezzen be újra, nyisson meg egy műszakot, és a hardverprofilban konfigurált perifériák használhatók lesznek. 
 
@@ -199,7 +199,7 @@ További információ: [A (MPOS) konfigurálása, telepítése és aktiválása]
 
 ### <a name="modern-pos-for-android-and-ios-setup-and-configuration"></a>Modern POS for Android és iOS telepítése és beállítása
 
-További információk: [POS Hybrid alkalmazás beállítása Android és iOS rendszerre](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/hybridApp).
+További információk: [POS Hybrid alkalmazás beállítása Android és iOS rendszerre](./dev-itpro/hybridapp.md).
 
 ### <a name="opos-device-setup-and-configuration"></a>OPOS-eszköz telepítése és beállítása
 
@@ -494,7 +494,7 @@ Ez a konfigurációban a leggyakoribb konfiguráció a hagyományos, rögzített
 
 ### <a name="modern-pos-for-android-with-an-ipc-built-in-hardware-station"></a>Modern POS for Android IPC (beépített) hardverállomással
 
-**Újdonság a 10.0.8 verzióban** – Az Epson hálózati nyomtatókat és a DK porton keresztül csatlakoztatott pénzeszközöket jelenleg a modern POS for Android alkalmazás támogatja. A részleteket lásd a [POS Hybrid alkalmazás telepítése Android és iOS rendszerre](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/hybridApp) cikkben.
+**Újdonság a 10.0.8 verzióban** – Az Epson hálózati nyomtatókat és a DK porton keresztül csatlakoztatott pénzeszközöket jelenleg a modern POS for Android alkalmazás támogatja. A részleteket lásd a [POS Hybrid alkalmazás telepítése Android és iOS rendszerre](./dev-itpro/hybridapp.md) cikkben.
 
 ### <a name="all-modern-pos-clients-that-have-a-committed-shared-iis-hardware-station"></a>Minden Modern POS-ügyfél, amely vállalt, megosztott IIS hardverállomással rendelkezik
 
@@ -614,6 +614,9 @@ A következő perifériákat a Modern POS for Windows beépített IPC-hardverál
 | Star         | TSP650II | Egyéni    | Hálózaton keresztül csatlakozó   |
 | Star         | mPOP     | OPOS      | Bluetooth-kapcsolattal csatlakozó |
 | HP           | F7M67AA  | OPOS      | Tápellátású USB             |
+
+> [!NOTE]
+> A beépített hardverállomás esetén a TSP 100 nyomtató nem támogatott. A beépített hardverállomás 64 bites folyamatot használ, amely nem kompatibilis a meglévő Star TP 100-illesztőprogramokkal. 
 
 #### <a name="bar-code-scanner"></a>Vonalkódolvasó
 

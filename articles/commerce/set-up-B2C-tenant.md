@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f062f40c9eb883d02c4a0ee06c797ed1b0b22665
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 84b3a3630d3809c05f87242784207c3c4af160ce
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5793995"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6018580"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>B2C-bérlő beállítása a Commerce-ben
 
@@ -30,7 +30,7 @@ Ez a témakör azt mutatja be, hogyan lehet beállítani az Azure Active Directo
 A Dynamics 365 Commerce az Azure AD B2C protokollt használja a felhasználók hitelesítő adatainak és hitelesítési folyamatainak támogatásához. A felhasználó ezeket a folyamatokat feliratkozhat, bejelentkezhet és alaphelyzetbe állíthatja jelszavát. Az Azure AD B2C érzékeny természetű felhasználói hitelesítési adatokat, például a felhasználónevet és a jelszót tárolja. A B2C-bérlőben a felhasználói rekordja a B2C helyi fiók rekordját vagy a B2C társadalmi identitásszolgáltatói rekordját fogja tárolni. Ezek a B2C rekordoknak a vevői rekordra mutatnak vissza a Commerce környezetben.
 
 > [!WARNING] 
-> Az Azure AD B2C megszünteti a régi (örökölt) felhasználói folyamatokat 2021. augusztus 1-jéig. Ezért érdemes megterveznie a felhasználói folyamatai áttelepítését az új, ajánlott verzióba. Az új verzió funkcióparitást és új funkciókat biztosít. A Commerce 10.0.15-ös vagy újabb verziójának modulkönyvtárát az ajánlott B2C felhasználói folyamatokkal kell használni. További információért lásd: [Felhasználói folyamatok az Azure Active Directory B2C-ben](https://docs.microsoft.com/azure/active-directory-b2c/user-flow-overview).
+> Az Azure AD B2C megszünteti a régi (örökölt) felhasználói folyamatokat 2021. augusztus 1-jéig. Ezért érdemes megterveznie a felhasználói folyamatai áttelepítését az új, ajánlott verzióba. Az új verzió funkcióparitást és új funkciókat biztosít. A Commerce 10.0.15-ös vagy újabb verziójának modulkönyvtárát az ajánlott B2C felhasználói folyamatokkal kell használni. További információért lásd: [Felhasználói folyamatok az Azure Active Directory B2C-ben](/azure/active-directory-b2c/user-flow-overview).
  
  > [!NOTE]
  > A kereskedelmi értékelési környezetek egy előre betöltött Azure AD B2C bérlővel érkeznek demonstrációs célokra. Az értékelési környezetek esetén nincs szükség saját Azure AD B2C-bérlő betöltésére az alábbi lépésekkel.
@@ -88,7 +88,7 @@ A B2C alkalmazás létrehozásához kövesse az alábbi lépéseket.
 1. Az **Implicit engedély** alatt válassza ki a **Hozzáférési jogkivonat** és az **Azonosítói jogkivonat** elemeket, így engedélyezheti őket az alkalmazás számára. Válassza a **Mentés** lehetőséget.
 1. Lépjen az Azure Portal **Áttekintés** menüjébe, és másolja be az **Alkalmazás (ügyfél) azonosítóját**. Jegyezze fel ezt az azonosítót a későbbi beállítási lépésekhez (később **Ügyfél GUID azonosítóként** hivatkoznak rá).
 
-Az Azure AD B2C alkalmazásregisztrációiról további információt az [Azure Active Directory B2C új alkalmazásregisztrációs élménye](https://docs.microsoft.com/azure/active-directory-b2c/app-registrations-training-guide) részben talál
+Az Azure AD B2C alkalmazásregisztrációiról további információt az [Azure Active Directory B2C új alkalmazásregisztrációs élménye](/azure/active-directory-b2c/app-registrations-training-guide) részben talál
 
 ### <a name="reply-urls"></a>Válasz URL-címek
 
@@ -110,7 +110,7 @@ Az Azure AD B2C három alapvető felhasználói folyamatot kínál:
 
 Választhatja az Azure AD alapértelmezett felhasználói folyamatainak használatát , amelyek az AAD B2C által kezelt lapot jelenítik meg. Másik megoldásként HTML-lapot is létrehozhat, amellyel szabályozhatja a felhasználói folyamatok megjelenését és érzetét. 
 
-A felhasználói irányelvek oldalainak Dynamics 365 Commerce alkalmazásban létrehozott oldalakkal való testreszabásáról lásd: [Felhasználói bejelentkezéshez használt egyéni lapok beállítása](custom-pages-user-logins.md). További tájékoztatás: [A felhasználói élmények kezelőfelületének testreszabása az Azure Active Directory B2C-ben](https://docs.microsoft.com/azure/active-directory-b2c/tutorial-customize-ui).
+A felhasználói irányelvek oldalainak Dynamics 365 Commerce alkalmazásban létrehozott oldalakkal való testreszabásáról lásd: [Felhasználói bejelentkezéshez használt egyéni lapok beállítása](custom-pages-user-logins.md). További tájékoztatás: [A felhasználói élmények kezelőfelületének testreszabása az Azure Active Directory B2C-ben](/azure/active-directory-b2c/tutorial-customize-ui).
 
 ### <a name="create-a-sign-up-and-sign-in-user-flow-policy"></a>Feliratkozás és bejelentkezés felhasználóifolyamat-házirend létrehozása
 
@@ -197,15 +197,15 @@ Ha a közösségi identitásszolgáltatói hitelesítés hozzá van adva, és a 
 
 A közösségi identitásszolgáltató hitelesítéshez történő hozzáadásához el kell látogatnia az identitásportálra és egy identitásszolgáltatói alkalmazást kell beállítania az Azure AD B2C dokumentációja utasításai alapján. A dokumentációra mutató hivatkozások listáját alább találja.
 
-- [Amazon](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-setup-amzn-app)
-- [Azure AD (egy bérlő)](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-setup-oidc-azure-active-directory)
-- [Microsoft-fiók](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-setup-msa-app)
-- [Facebook](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-setup-fb-app)
-- [GitHub](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-setup-github-app)
-- [Google](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-setup-goog-app)
-- [LinkedIn](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-setup-li-app)
-- [OpenID Connect](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-setup-oidc-idp)
-- [Twitter](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-setup-twitter-app)
+- [Amazon](/azure/active-directory-b2c/active-directory-b2c-setup-amzn-app)
+- [Azure AD (egy bérlő)](/azure/active-directory-b2c/active-directory-b2c-setup-oidc-azure-active-directory)
+- [Microsoft-fiók](/azure/active-directory-b2c/active-directory-b2c-setup-msa-app)
+- [Facebook](/azure/active-directory-b2c/active-directory-b2c-setup-fb-app)
+- [GitHub](/azure/active-directory-b2c/active-directory-b2c-setup-github-app)
+- [Google](/azure/active-directory-b2c/active-directory-b2c-setup-goog-app)
+- [LinkedIn](/azure/active-directory-b2c/active-directory-b2c-setup-li-app)
+- [OpenID Connect](/azure/active-directory-b2c/active-directory-b2c-setup-oidc-idp)
+- [Twitter](/azure/active-directory-b2c/active-directory-b2c-setup-twitter-app)
 
 ### <a name="add-and-set-up-a-social-identity-provider"></a>Közösségi identitásszolgáltató hozzáadása és beállítása
 
@@ -346,11 +346,11 @@ A B2C alkalmazás társításához a webhelyéhez és a csatornához kövesse az
 
 Ha egy korábbi identitásszolgáltatói platformról szeretné áttelepíteni a vevői rekordokat, forduljon a Dynamics 365 Commerce csapathoz a vevői áttelepítéssel kapcsolatosa igényei áttelepítéséhez.
 
-A vevői áttelepítéssel kapcsolatos további Azure AD B2C dokumentációkat lásd: [Felhasználók áttelepítése az Azure Active Directory B2C megoldásba](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-user-migration).
+A vevői áttelepítéssel kapcsolatos további Azure AD B2C dokumentációkat lásd: [Felhasználók áttelepítése az Azure Active Directory B2C megoldásba](/azure/active-directory-b2c/active-directory-b2c-user-migration).
 
 ### <a name="custom-policies"></a>Egyéni házirendek
 
-További tájékoztatás az Azure AD B2C által kínált interakciók és irányelvfolyamatok testreszabásával a B2C szabványos házirendjein túl, lásd: [Egyéni házirendek az Azure Active Directory B2C megoldásban](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-overview-custom). 
+További tájékoztatás az Azure AD B2C által kínált interakciók és irányelvfolyamatok testreszabásával a B2C szabványos házirendjein túl, lásd: [Egyéni házirendek az Azure Active Directory B2C megoldásban](/azure/active-directory-b2c/active-directory-b2c-overview-custom). 
 
 ### <a name="secondary-admin"></a>Másodlagos adminisztrátor
 

@@ -5,7 +5,6 @@ author: RamaKrishnamoorthy
 ms.date: 02/22/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
@@ -17,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2021-02-22
-ms.openlocfilehash: beab7f2fc4fd96ce7a28734d2449445b3b5d4451
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: ed068f4264269334babec9acd59d9d58551333b4
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750836"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6018386"
 ---
 # <a name="note-integration"></a>Megjegyzésintegráció
 
@@ -36,7 +35,7 @@ A vevői adatok a következőképpen osztályozhatók:
 
 + **Egy Dynamics 365-felhasználó által a vevő nevében kezelhető információk** – például a Contoso (Dynamics 365-ös felhasználó) játékbemutatót vezet. A Contoso egyik ügyfele (egy vevő) részt szeretne venni a játékbemutatón. A vevő megkéri a Contoso egyik alkalmazottját, hogy foglaljon helyet neki a bemutatón. A foglalás a Contoso rendezvény résztvevőinek naptárában történik.
 + **A Dynamics 365 felhasználója esetében kezelhető adatok** – például egy olyan vevő, aki egy Felületi egységet vásárol, különleges utasításokat ad meg, amelyek azt jelzik, hogy az eszközt ajándékcsomagolással kell ellátni a szállítás előtt. Ezek az utasítások olyan kezelhető információkat tartalmaznak, amelyet a csomagolásért felelős Contoso alkalmazottnak kell kezelnie.
-+ **Nem műveletre használható adatok** – például egy vevő felkeresi a Contoso üzletét, és az üzlet egyik munkatársával folytatott beszélgetés során kifejezi érdeklődését a *Halo* játék és különböző videojáték-kiegészítők iránt. Az üzlet munkatársa feljegyzi ezt az információt. A termékajánlási motor ezt arra használja, hogy ajánlatokat jelenítsen meg a vevőnek.
++ **Nem használható adatok** – például egy vevő felkeresi a Contoso üzletét, és az üzlet egyik munkatársával folytatott beszélgetés során kifejezi érdeklődését a *Halo* játékok és különböző videojáték-kiegészítők iránt. Az üzlet munkatársa feljegyzi ezt az információt. A termékajánlási motor ezt arra használja, hogy ajánlatokat jelenítsen meg a vevőnek.
 
 Általános szabály, hogy a használható adatok *tevékenységekként* vannak rögzítve a Finance and Operations alkalmazásokban és az ügyfélkapcsolati alkalmazásokban. A nem használható adatok *megjegyzésekként* vannak rögzítve a Finance and Operations alkalmazásokban és *jegyzetekként* az ügyfélkapcsolati alkalmazásokban.
 

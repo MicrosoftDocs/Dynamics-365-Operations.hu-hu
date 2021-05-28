@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e785d591c25669d90c91ca1b676388522da3da36
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: b1296dc994e43d75fd9b834acf345134494b4810
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835172"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027504"
 ---
 # <a name="settle-a-partial-customer-payment-that-has-discounts-on-credit-notes"></a>Részleges szállítói kifizetés rendezése, amely szállítói jóváírásokra vonatkozó engedménnyel rendelkezik
 
@@ -39,7 +39,7 @@ A gyár lehetővé teszi a felhasználóknak a készpénzfizetési engedmények 
 | CCRN-10050 | Jóváírás      | 2015/6/28 | CR-10050 |                                      | 100,00                                | -100,00  | dollár      |
 
 ## <a name="settle-a-credit-note-with-an-invoice"></a>Egy jóváírást a számla kiegyenlítése
-A **Vevői tranzakciók** oldalon April megnyitja a **Tranzakciók kiegyenlítése** lapot. A **Tranzakciók kiegyenlítése** lapon megjelöli a kiegyenlítéshez tartozó jóváírást és számlát is. A kiegyenlítési folyamat részeként akkor megjeleníti a készpénzfizetési engedmény dátumát és összegét. Ő jelöli meg két dokumentumot, és majd kattint **Feladása** tranzakcióinak kiegyenlítéséhez. Nincs -1.00 a jóváíráson engedményt, mert a gyár lehetővé teszi, hogy az engedmények a jóváírásokra a számlaadatokat.
+A **Vevői tranzakciók** oldalon April megnyitja a **Tranzakciók kiegyenlítése** lapot. Arnie a **Tranzakciók kiegyenlítése** lapon megjelöli a kiegyenlítéshez tartozó jóváírást és számlát is. A kiegyenlítési folyamat részeként Arnie megjeleníti a készpénzfizetési engedmény dátumát és összegét. Arnie jelöli meg két dokumentumot, és majd kattint **Feladása** tranzakcióinak kiegyenlítéséhez. Nincs -1.00 a jóváíráson engedményt, mert a gyár lehetővé teszi, hogy az engedmények a jóváírásokra a számlaadatokat.
 
 | Jelölés     | Készpénzfizetési engedmény használata | Bizonylat    | Fiók | Dátum      | Fiz. határidő  | Számla  | Összeg a tranzakció pénznemében. | Pénznem | Kiegyenlítendő összeg |
 |----------|-------------------|------------|---------|-----------|-----------|----------|--------------------------------|----------|------------------|

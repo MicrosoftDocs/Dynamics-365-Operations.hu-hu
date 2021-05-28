@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: aamiral
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 9bec213cd4954f69605387ae2801d8af98a8111c
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 7ac7eec69bda7ad2fa41a7311a71a969eddeafb6
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791895"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6021488"
 ---
 # <a name="time-and-attendance-management-in-retail"></a>A munkaidő és a jelenlét-nyilvántartás kezelése a Retail alkalmazásban
 
@@ -38,9 +38,9 @@ Ez a témakör ismerteti az olyan helyzeteket, amelyek kezeléséhez használhat
 
 ### <a name="plan-worker-schedules"></a>Tervezze meg a dolgozói beosztásokat
 
-- Alkalmazzon profilokat a munkatervező segítségével. További információ: [Profil alkalmazása a munkatervezővel](https://technet.microsoft.com/library/aa551234.aspx).
+- Alkalmazzon profilokat a munkatervező segítségével. További információ: [Profil alkalmazása a munkatervezővel](/dynamicsax-2012/appuser-itpro/apply-profiles-using-work-planner).
 
-A konfiguráció lépéseivel kapcsolatos további információért, lásd: [Munkaidő és jelenlét beállítása](https://technet.microsoft.com/library/aa496971.aspx).
+A konfiguráció lépéseivel kapcsolatos további információért, lásd: [Munkaidő és jelenlét beállítása](/dynamicsax-2012/appuser-itpro/setting-up-time-and-attendance).
 
 ### <a name="commerce-specific-configuration"></a>Kereskedelemspecifikus konfigurálás
 
@@ -135,7 +135,7 @@ A Commerce felhasználója követi a munkafolyamatot, hogy kiszámolja, jóváha
 - Szállítmány kicsekkolás
 - Távollét regisztrálása
 
-Az Idő és jelenlét regisztrációkkal kapcsolatos további tudnivalókat lásd: [Feldolgozási idő és jelenlét nyilvántartása](https://technet.microsoft.com/library/aa573180.aspx).
+Az Idő és jelenlét regisztrációkkal kapcsolatos további tudnivalókat lásd: [Feldolgozási idő és jelenlét nyilvántartása](/dynamicsax-2012/appuser-itpro/process-time-and-attendance-registrations).
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

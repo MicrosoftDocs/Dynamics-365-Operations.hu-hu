@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 4f50dfa5c2914ce2131cdc44582588be69b35335
-ms.sourcegitcommit: 2eb7a9ae544f504155657c5c584cbac66c21dba4
+ms.openlocfilehash: 570b0995821dcaa2e180b48c25facee01e98f8e3
+ms.sourcegitcommit: 51cad1ce3ed44ebf7eb9bdf553ee2df4c1f03135
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "5961705"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "6015901"
 ---
 # <a name="master-planning-with-purchase-trade-agreements"></a>Alaptervezés a beszerzésre vonatkozó kereskedelmi megállapodásokkal
 
@@ -67,7 +67,7 @@ Miután a rendszer készen áll az előző szakaszban ismertetett módon, köves
 1. Ismételje meg az eljárást minden érintett termék esetén.
 
 > [!NOTE]
-> A több pénznemű beszerzési kereskedelmi megállapodások tervezésének optimalizálása. Amikor a **Legalacsonyabb egységár** beállítás használatával keres kereskedelmi megállapodást, a rendszer figyelembe veszi a különböző pénznemekkel rendelkező kereskedelmi megállapodási sorokat, amennyiben a kereskedelmi megállapodási sor pénzneméhez és a jogi személy könyvelési pénzneméhez meg lett határozva egy árfolyam. Ellenkező esetben a rendszer figyelmen kívül hagyja a kereskedelmi megállapodás sorát, és hibaüzenetet jelenik meg az alaptervezés során. Emiatt az alaptervezés minden olyan beszerzési kereskedelmi megállapodási sor adatát tartalmazni fogja, amelyekben az árak átválthatók a könyvelési pénznemre.
+> A több pénznemű beszerzési kereskedelmi megállapodások tervezésének optimalizálása. Amikor a **Legalacsonyabb egységár** beállítás használatával keres kereskedelmi megállapodást, a rendszer figyelembe veszi a különböző pénznemekkel rendelkező kereskedelmi megállapodási sorokat, amennyiben a kereskedelmi megállapodási sor pénzneméhez és a jogi személy könyvelési pénzneméhez meg lett határozva egy árfolyam. Ellenkező esetben a rendszer figyelmen kívül hagyja a kereskedelmi megállapodás sorát, és hibaüzenetet jelenik meg az alaptervezés során. Emiatt az alaptervezés minden olyan beszerzési kereskedelmi megállapodási sor adatát tartalmazni fogja, amelyekben az árak átválthatók a könyvelési pénznemre. Fontos megjegyezni, hogy a kerekítési szabályokat nem veszik figyelembe a kereskedelmi megállapodás sorárának átalakítása során.
 
 ## <a name="examples-of-how-planning-optimization-finds-vendor-and-lead-times"></a>A példák arra, ahogy a tervezés optimalizálása a szállítói és az átfutási időket észleli
 

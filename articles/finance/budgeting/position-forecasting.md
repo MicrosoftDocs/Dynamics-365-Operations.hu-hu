@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 03a195c725854eff1fe6d6fa20bb815673e2e307
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d3ff7ac15a64196d7839177ded5515386184e268
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5827339"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6028227"
 ---
 # <a name="position-forecasting"></a>Beosztás előre jelzése
 
@@ -67,9 +67,9 @@ Jodi szervezete egy alkalmazott fizetési díjalapjának 5 százalékát biztos�
 
 Jodi nem szeretné, hogy a vezetők megváltoztassák a juttatás mennyiségét. Ezért tehát kiválasztja **Költségváltozások tiltása** lehetőséget a **Előre jelzett beosztás felülírása** mezőben. A szervezet azt szeretné, hogy ez a költség minden hónaphoz egyenlő módon legyen hozzárendelve. Ezért Jodi kiválasztja a **Negyedéves** opciót a **Felosztási mód** mezőben. 
 
-Ezután Jodi hozzáad egy költségszámítási sort, beállítja a dátumokat és egy fő számlát és **5,00** értéket ad meg százalékként. Szervezete évi 5000 dolláros felső határral rendelkezik erre a juttatásra. Ezért Jodi ezt az összeget éves korlátként határozza meg. 
+Ezután Jodi hozzáad egy költségszámítási sort, beállítja a dátumokat és egy fő számlát és **5,00** értéket ad meg százalékként. A szervezet évi 5000 dolláros felső határral rendelkezik erre a juttatásra. Ezért Jodi ezt az összeget éves korlátként határozza meg. 
 
-Végül a Jodi hozzáad minden kereseti költségösszetevőt, amelyek számítási alapként használatosak a fizetési díjalaphoz. Jodi költségvetési költségösszetevője készen áll a használatra.
+Végül a Jodi hozzáad minden kereseti költségösszetevőt, amelyek számítási alapként használatosak a fizetési díjalaphoz. A költségvetési költségösszetevője készen áll a használatra.
 
 ### <a name="compensation-groups"></a>Kompenzációs csoportok
 
@@ -137,7 +137,7 @@ A költségvetési költségösszetevő sorokat újra kell számolni, ha megvál
 
 **Példa** 
 
-A szervezet két lehetőséget fontolgat egy könyvelői beosztás költségeinek csökkentéséhez. Egy lehetőség a beosztás megszüntetése évközben. A másik lehetőség a beosztás átállítása részmunkaidőre az egész évre. Brad létrehozott egy előre jelzett beosztást a létező könyvelői beosztásra a kiindulási változatban. Ezt a kiindulási előre jelzett beosztást átmásolja az A változatba, a visszavonás dátumát május 31-re állítja be, és újraszámítja a költségeket. Ezután Brad a kiindulási előre jelzett beosztást a B változatba másolja, az FTE értéket **0,50** értékre módosítja, és újraszámol. Brad így három verzióval rendelkezik, amelyek mindegyikének megvan a saját összes költsége, amelyek hozzá vannak rendelve az opcióihoz.
+A szervezet két lehetőséget fontolgat egy könyvelői beosztás költségeinek csökkentéséhez. Egy lehetőség a beosztás megszüntetése évközben. A másik lehetőség a beosztás átállítása részmunkaidőre az egész évre. Brad létrehozott egy előre jelzett beosztást a létező könyvelői beosztásra a kiindulási változatban. Brad ezt a kiindulási előre jelzett beosztást átmásolja az A változatba, a visszavonás dátumát május 31-re állítja be, és újraszámítja a költségeket. Ezután Brad a kiindulási előre jelzett beosztást a B változatba másolja, az FTE értéket **0,50** értékre módosítja, és újraszámol. Brad így három verzióval rendelkezik, amelyek mindegyikének megvan a saját összes költsége, amelyek hozzá vannak rendelve az opcióihoz.
 
 #### <a name="assigning-a-compensation-group"></a>Kompenzációs csoport hozzárendelése
 

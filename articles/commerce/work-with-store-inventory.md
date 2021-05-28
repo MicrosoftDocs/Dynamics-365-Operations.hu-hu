@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: c4891f9dcb031f4cb8dfb91f3fe1a301aad9838e
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 64106cb1aeea01f1f227247d32b8b1dfdea98362
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5793873"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6020195"
 ---
 # <a name="commerce-inventory-management"></a>Commerce-árukészlet kezelése
 
@@ -39,11 +39,11 @@ A CSU-n futó Commerce-alkalmazások nem támogatják a következő nyomonkövet
 
 - A pénztáralkalmazás korlátozott támogatást nyújt a következő dimenziókhoz. A pénztár ezen dimenziók némelyikét automatikusan megadhatja a készlettranzakciókban a raktár konfigurációja vagy az üzlet beállítása alapján. A pénztár azonban nem teljes mértékben támogatja a dimenziókat, olyan módon, mintha az értékesítési tranzakció manuálisan lenne megadva a Commerce központi felületén. 
 
-- **Raktári hely** – Az új [Bejövő művelet](https://docs.microsoft.com/dynamics365/commerce/pos-inbound-inventory-operation) és [Kimenő művelet](https://docs.microsoft.com/dynamics365/commerce/pos-outbound-inventory-operation) POS-műveleteinek használata esetén a felhasználók kiválaszthatnak egy raktárkészlet-helyet, amelyben cikkeket fogadnak vagy amelyekből a kimenő szállítási rendelés cikkeit kiszállítják. Ha az elavult **Kitárolás és bevételezés** műveletet alkalmazzák, a bevételezéshez és a kimenő áthelyezések szállításához korlátozott helykezelési támogatás áll rendelkezésre. Ez a támogatás csak akkor érhető el, ha a **Raktárkezelési folyamatok alkalmazása** beállítás be van kapcsolva a cikkhez és az üzlet raktárához. A készlethely nem használható jelenleg a **Leltár** művelettel vagy a **Készletkeresés** művelettel.
+- **Raktári hely** – Az új [Bejövő művelet](./pos-inbound-inventory-operation.md) és [Kimenő művelet](./pos-outbound-inventory-operation.md) POS-műveleteinek használata esetén a felhasználók kiválaszthatnak egy raktárkészlet-helyet, amelyben cikkeket fogadnak vagy amelyekből a kimenő szállítási rendelés cikkeit kiszállítják. Ha az elavult **Kitárolás és bevételezés** műveletet alkalmazzák, a bevételezéshez és a kimenő áthelyezések szállításához korlátozott helykezelési támogatás áll rendelkezésre. Ez a támogatás csak akkor érhető el, ha a **Raktárkezelési folyamatok alkalmazása** beállítás be van kapcsolva a cikkhez és az üzlet raktárához. A készlethely nem használható jelenleg a **Leltár** művelettel vagy a **Készletkeresés** művelettel.
 
-- **Azonosítótábla** – Azonosítótábla csak akkor van használatban, ha a **Raktárkezelési folyamatok alkalmazása** beállítás engedélyezve van a cikkhez és az áruházi raktárban. Abban az esetben, ha a készletet a **Bejövő művelet** művelettel vagy olyan **Kitárolás és bevételezés** művelettel kerül bevételezésre egy raktárban, ahol a raktárkezelési folyamat be van kapcsolva, és ha a cikk bevételezéséhez kiválasztott hely azonosítótábla-ellenőrzést igénylő helyprofilhoz kapcsolódik, a POS-alkalmazás szisztematikusan egy azonosítótáblát alkalmaz a fogadó sorban. A POS-felhasználók nem tudják módosítani vagy kezelni ezt az azonosítótábla-adatot. Ha szükséges az azonosítótáblák teljes körű kezelése, akkor javasolt, hogy az üzlet a [raktározási alkalmazást](https://docs.microsoft.com/dynamics365/supply-chain/warehousing/install-configure-warehousing-app) vagy a back office ügyfelet használja a cikkek fogadásának kezelésére.
+- **Azonosítótábla** – Azonosítótábla csak akkor van használatban, ha a **Raktárkezelési folyamatok alkalmazása** beállítás engedélyezve van a cikkhez és az áruházi raktárban. Abban az esetben, ha a készletet a **Bejövő művelet** művelettel vagy olyan **Kitárolás és bevételezés** művelettel kerül bevételezésre egy raktárban, ahol a raktárkezelési folyamat be van kapcsolva, és ha a cikk bevételezéséhez kiválasztott hely azonosítótábla-ellenőrzést igénylő helyprofilhoz kapcsolódik, a POS-alkalmazás szisztematikusan egy azonosítótáblát alkalmaz a fogadó sorban. A POS-felhasználók nem tudják módosítani vagy kezelni ezt az azonosítótábla-adatot. Ha szükséges az azonosítótáblák teljes körű kezelése, akkor javasolt, hogy az üzlet a [raktározási alkalmazást](../supply-chain/warehousing/install-configure-warehousing-app.md) vagy a back office ügyfelet használja a cikkek fogadásának kezelésére.
 
-- **Sorozatszám** – A POS-alkalmazás korlátozottan támogatja egy sorozatszám regisztrálását az értékesítési tranzakciók sorához olyan rendelések esetében, amelyek a pénztárban, sorszámozott cikkekkel lettek létrehozva. Ez a sorozatszám nincs ellenőrizve a már készleten lévő regisztrált sorozatszámokkal szemben. Ha egy értékesítési rendelést a hívásközpont-csatornában hoztak létre, vagy a vállalati erőforrás-tervezési (ERP) rendszeren keresztül van teljesítve, és több sorozatszám lesz regisztrálva egy értékesítési sorhoz az ERP teljesítési folyamata során, akkor ezek a sorozatszámok nem lesznek alkalmazhatók vagy ellenőrizhetők, ha visszárut dolgoznak fel a pénztárban ezekhez a rendelésekhez. Ha a készletet a **Bejövő művelet** használatával bevételezik, a felhasználók [regisztrálhatják vagy megerősíthetik a fogadott sorozatszámokat](https://docs.microsoft.com/dynamics365/commerce/pos-serialized-items).
+- **Sorozatszám** – A POS-alkalmazás korlátozottan támogatja egy sorozatszám regisztrálását az értékesítési tranzakciók sorához olyan rendelések esetében, amelyek a pénztárban, sorszámozott cikkekkel lettek létrehozva. Ez a sorozatszám nincs ellenőrizve a már készleten lévő regisztrált sorozatszámokkal szemben. Ha egy értékesítési rendelést a hívásközpont-csatornában hoztak létre, vagy a vállalati erőforrás-tervezési (ERP) rendszeren keresztül van teljesítve, és több sorozatszám lesz regisztrálva egy értékesítési sorhoz az ERP teljesítési folyamata során, akkor ezek a sorozatszámok nem lesznek alkalmazhatók vagy ellenőrizhetők, ha visszárut dolgoznak fel a pénztárban ezekhez a rendelésekhez. Ha a készletet a **Bejövő művelet** használatával bevételezik, a felhasználók [regisztrálhatják vagy megerősíthetik a fogadott sorozatszámokat](./pos-serialized-items.md).
 
 - **Kötegazonosító** – a pénztáralkalmazás korlátozott támogatást nyújt a kimutatásfeladás során, ha kötegvezérelt cikket értékesít, de a pénztár-felhasználók nem tudják meghatározni az eladott vagy kitárolt kötegazonosítót a pénztáralkalmazás használata esetén.
 
@@ -56,11 +56,11 @@ A CSU-n futó Commerce-alkalmazások nem támogatják a következő nyomonkövet
 
 ## <a name="purchase-orders"></a>Beszerzési rendelések
 
-A beszerzési rendelések a Commerce-központban jönnek létre. Ha az üzlet raktára szerepel a beszerzési rendelés fejlécében vagy a beszerzési rendelés soraiban, akkor a sorok fogadása az áruháznál történhet a POS [Bejövő művelet](https://docs.microsoft.com/dynamics365/commerce/pos-inbound-inventory-operation) műveletével. 
+A beszerzési rendelések a Commerce-központban jönnek létre. Ha az üzlet raktára szerepel a beszerzési rendelés fejlécében vagy a beszerzési rendelés soraiban, akkor a sorok fogadása az áruháznál történhet a POS [Bejövő művelet](./pos-inbound-inventory-operation.md) műveletével. 
 
 ## <a name="transfer-orders"></a>Átmozgatási rendelések
 
-Az átmozgatási rendelések a Commerce-központban hozhatók létre, illetve a [Bejövő művelet](https://docs.microsoft.com/dynamics365/commerce/pos-inbound-inventory-operation) vagy a [Kimenő művelet](https://docs.microsoft.com/dynamics365/commerce/pos-outbound-inventory-operation) művelettel a POS-rendszerben. A **Bejövő művelet** POS-művelet használatával hozhat létre egy átmozgatási rendelést, amellyel készletet küldhet egy üzletbe egy másik raktárból vagy üzlethelyről. A **Kimenő művelet** POS-művelet használatával hozhat létre egy átmozgatási rendelést, amellyel készletet küldhet egy üzletből egy másik raktárba vagy üzlethelyre. Ha egy üzlethez átmozgatási rendelést hoz létre, az üzlet a pénztár **Bejövő művelet** műveletével kezelheti az átmozgatási rendeléshez tartozó készletbevételezést. Ha az üzlet egy másik helyre szállítja a készletet, a pénztár **Kimenő művelet** művelete használható az üzlet kimenő szállítási folyamatának kezelésére.
+Az átmozgatási rendelések a Commerce-központban hozhatók létre, illetve a [Bejövő művelet](./pos-inbound-inventory-operation.md) vagy a [Kimenő művelet](./pos-outbound-inventory-operation.md) művelettel a POS-rendszerben. A **Bejövő művelet** POS-művelet használatával hozhat létre egy átmozgatási rendelést, amellyel készletet küldhet egy üzletbe egy másik raktárból vagy üzlethelyről. A **Kimenő művelet** POS-művelet használatával hozhat létre egy átmozgatási rendelést, amellyel készletet küldhet egy üzletből egy másik raktárba vagy üzlethelyre. Ha egy üzlethez átmozgatási rendelést hoz létre, az üzlet a pénztár **Bejövő művelet** műveletével kezelheti az átmozgatási rendeléshez tartozó készletbevételezést. Ha az üzlet egy másik helyre szállítja a készletet, a pénztár **Kimenő művelet** művelete használható az üzlet kimenő szállítási folyamatának kezelésére.
 
 ## <a name="stock-counts"></a>Leltárok
 
@@ -68,7 +68,7 @@ A leltárok lehetnek ütemezettek és nem tervezettek is. Az ütemezett leltáro
 
 ## <a name="inventory-lookup"></a>Keresés a készletben
 
-A több üzlet és raktár számára elérhető aktuális készleten levő termékmennyiséget a **Keresés a készletben** lapon tekintheti meg. Az aktuális készleten levő mennyiségen túl az ígérethez rendelkezésre álló (ATP) mennyiségek az egyes üzletek esetében tekinthetők meg. Válassza ki az üzletet, amelynek ígérethez rendelkezésre álló mennyiségeit meg szeretné tekinteni, és válassza ki az **Üzlet elérhetőségének megjelenítése** lehetőséget. A rendelkezésre álló konfigurációs beállításokkal kapcsolatos további tudnivalókat lásd: [Kiskereskedelmi csatornák készletelérhetőségének kiszámítása](https://docs.microsoft.com/dynamics365/commerce/calculated-inventory-retail-channels).
+A több üzlet és raktár számára elérhető aktuális készleten levő termékmennyiséget a **Keresés a készletben** lapon tekintheti meg. Az aktuális készleten levő mennyiségen túl az ígérethez rendelkezésre álló (ATP) mennyiségek az egyes üzletek esetében tekinthetők meg. Válassza ki az üzletet, amelynek ígérethez rendelkezésre álló mennyiségeit meg szeretné tekinteni, és válassza ki az **Üzlet elérhetőségének megjelenítése** lehetőséget. A rendelkezésre álló konfigurációs beállításokkal kapcsolatos további tudnivalókat lásd: [Kiskereskedelmi csatornák készletelérhetőségének kiszámítása](./calculated-inventory-retail-channels.md).
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

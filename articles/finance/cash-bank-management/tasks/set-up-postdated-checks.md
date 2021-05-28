@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2adb8b969a6e86becaa3c0a3b59d8f8f259e5a64
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d0d4afd74f9a0f9018629fa92ab6595bfa94f973
+ms.sourcegitcommit: c011a2ef66b38e71ddaf003f7d243677bb2707c5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5834596"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6026205"
 ---
 # <a name="set-up-postdated-checks"></a>Jövőben esedékes csekkek beállítása
 
@@ -53,7 +53,11 @@ Ezen eljárás szerepköre: Pénztáros. Ez az eljárás az USMF bemutatócéget
     * Válassza ki a számlaösszeg levonására szolgáló bankszámlát.  
 18. Kattintson a Mentés gombra.
 19. Zárja be a lapot.
-
-
+> [!NOTE]
+> Ahhoz, hogy a jövőben esedékes csekkeket fel tudja tenni egy bankszámlára, amikor a munkamenet dátuma az esedékességi dátumnál későbbi vagy azzal megegyező, engedélyeznie kell az **Esedékesség dátumának ellenőrzése a fizetési napló feladásakor későbbre dátumozott csekkekkel bankszámlához** funkciót. Ez a funkció lehetővé teszi, hogy fizetési naplókat adjon fel a jövőben esedékes csekkekkel szállítókhoz vagy vevőkhöz, ha a munkamenet dátuma megegyezik vagy később van, mint az esedékesség dátuma.
+> 
+> A **Fizetési mód** (**Kötelezettségek > Kifizetés beállítása > Fizetési módok**) beállításakor ne töltse ki az **Áthidaló számlát**. Ebben az esetben az ellenszámla van kitöltve a bankszámlával, amely a **Fizetési módban** van beállítva.
+>  
+> Ha a funkció engedélyezve van, és a munkamenet dátuma kisebb az esedékesség dátumánál, a fizetési napló feladása során a következő hibaüzenet jelenik meg: "Az esedékességi dátum nem lehet a munkamenet dátumával megegyező vagy korábbi, ha az ellenszámla Bank típusú". Ha a funkció nincs engedélyezve, akkor a jövőben esedékes csekkre vonatkozó fizetési naplót akkor lehet feladni, ha a munkamenet dátuma az esedékességi dátumnál korábbi.    
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

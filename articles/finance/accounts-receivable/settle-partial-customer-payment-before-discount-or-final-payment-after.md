@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dd10e0c6e426d95aa5e96c4b9b59a8a81017b540
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 4df5ebaf6e8ae8414515bd11087adcd05a88e581
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835147"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027528"
 ---
 # <a name="settle-partial-payment-before-discount-date-with-final-payment-after-discount-date"></a>Részleges vevői kifizetés rendezése az engedmény dátuma előtt, végső fizetés az engedmény bevezetésének dátuma után
 
@@ -38,7 +38,7 @@ Június 25-én Arnie egy 1.000,00 értékű számlát rögzít és ad fel 4027-e
 | FTI-10020 | Számla          | 2015-06-25 | 10020   | 1000,00                             |                                       | 1000,00 | dollár      |
 
 ## <a name="partial-payment-before-the-cash-discount-date"></a>Részleges kifizetés a készpénzfizetési engedmény dátuma előtt
-Július 2-án a 4027.-es számú vevő elvégzi a 297.00 értékű részfizetést a számlához. A fizetés jogosult készpénzfizetési kedvezményre, mivel a FabriKam készpénzfizetési kedvezményt kínál a részfizetésekre, valamint a részfizetés a készpénzfizetési kedvezmény előtt történt. Emiatt a 4027.-es számú vevő 3.00 értékű készpénzfizetési kedvezményben részesül. Anna a Kifizetési naplóba rögzíti a 4027.-es számú vevő fizetését. Anna ezután megnyitja a **Tranzakciók kiegyenlítése** oldalt, hogy a számlát kiegyenlítettnek jelölje.
+Július 2-án a 4027.-es számú vevő elvégzi a 297.00 értékű részfizetést a számlához. A fizetés jogosult készpénzfizetési kedvezményre, mivel a FabriKam készpénzfizetési kedvezményt kínál a részfizetésekre, valamint a részfizetés a készpénzfizetési kedvezmény előtt történt. Emiatt a 4027.-es számú vevő 3.00 értékű készpénzfizetési kedvezményben részesül. Anna a Kifizetési naplóba rögzíti a 4027.-es számú vevő fizetését. Arnie ezután megnyitja a **Tranzakciók kiegyenlítése** oldalt, hogy a számlát kiegyenlítettnek jelölje.
 
 | Jelölés     | Készpénzfizetési engedmény használata | Bizonylat   | Fiók | Dátum      | Fiz. határidő  | Számla | Összeg a tranzakció pénznemtartozásában | Pénznem | Kiegyenlítendő összeg |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------------|----------|------------------|
@@ -95,7 +95,7 @@ Az engedményadatok a **Nyitott tranzakciók kiegyenlítése** lap alján jelenn
 | Alkalmazott készpénzfizetési engedmény          | 3,00      |
 | Alkalmazandó készpénzfizetési engedmény összege | 7:00      |
 
-Anna a **Készpénzfizetési engedmény használata** mezőt visszaállítja **Normál** értékre, mert nem engedi, hogy a vevő a fennmaradó, 7.00 értékű készpénzfizetési engedményt igénybe vegye. Anna ezután feladja ezt a fizetést. Amikor Anna megnyitja a **Vevőtranzakciók** lapot, azt látja, hogy a számla egyenlege 0,00 érték. Azt is látja, hogy van két kifizetés. Az egyik kifizetés 297.00 értékű és tartozik hozzá egy 3.00 értékű készpénzfizetési kedvezmény. A másik kifizetés 700.00 értékű.
+Arnie a **Készpénzfizetési engedmény használata** mezőt visszaállítja **Normál** értékre, mert nem engedi, hogy a vevő a fennmaradó, 7,00 értékű készpénzfizetési engedményt igénybe vegye. Anna ezután feladja ezt a fizetést. Amikor Arnie megnyitja a **Vevőtranzakciók** lapot, azt látja, hogy a számla egyenlege 0,00 érték. Két kifizetés létezik: Az egyik kifizetés 297.00 értékű és tartozik hozzá egy 3.00 értékű készpénzfizetési kedvezmény. A másik kifizetés 700.00 értékű.
 
 | Bizonylat    | Tranzakció típusa | Dátum      | Számla | Összeg a tranzakció pénznemtartozásában | Összeg a tranzakció pénznemtartozásában | Egyenleg | Pénznem |
 |------------|------------------|-----------|---------|--------------------------------------|---------------------------------------|---------|----------|

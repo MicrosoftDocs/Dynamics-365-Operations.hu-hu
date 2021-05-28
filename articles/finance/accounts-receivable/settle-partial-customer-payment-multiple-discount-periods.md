@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1a15f952671152ac9e8b88e7394ec41220f964c0
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 21600c0815da99314dcbb8f123449c2ae93a3c1a
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835100"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027480"
 ---
 # <a name="settle-a-partial-customer-payment-that-has-multiple-discount-periods"></a>Vevői kifizetés egy részének rendezése, amely több kedvezményes időszakkal rendelkezik
 
@@ -31,7 +31,7 @@ Ez a cikk ismerteti, hogy a részleges vevői kifizetések hogyan kerülnek kieg
 A Fabrikam 4031. számú vevőjének két készpénzfizetési engedményes időszakot is kínál. A vevő 2 százalékos készpénzfizetési engedményt kap, ha a számlát öt napon belül kifizeti, és 1 százalékot, ha a számlát 14 napon belül kifizeti. A Fabrikam emellett a részleges kifizetésekra is nyújt készpénzfizetési engedményt. A Kiegyenlítési paraméterek a **Kinnlevőségek paraméterei** oldalon találhatóak.
 
 ## <a name="invoice"></a>Számla
-Június 25-én Arnie egy 1.000,00 értékű számlát rögzít és ad fel 4031-es vevő számára. mikor megnézi a számlára vonatkozó készpénzfizetési engedményeket, azt látja, hogy a vevő 20,00 engedményt kap, ha június 30.-ig fizet. Ha a számla teljes összegét kifizeti július 9.-ig, akkor 10,00 értékű engedményt kap.
+Június 25-én Arnie egy 1.000,00 értékű számlát rögzít és ad fel 4031-es vevő számára. Amikor Arnie megnézi a számlára vonatkozó készpénzfizetési engedményeket, azt látja, hogy a 4031-es vevő 20,00 engedményt kap, ha június 30-ig fizet. Ha a számla teljes összegét kifizeti július 9.-ig, akkor 10,00 értékű engedményt kap.
 
 | Készpénzfizetési engedmény dátuma | Készpénzfizetési engedmény összege | Összeg a tranzakció pénznemében. |
 |--------------------|----------------------|--------------------------------|

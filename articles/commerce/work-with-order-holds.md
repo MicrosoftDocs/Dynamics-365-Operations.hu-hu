@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 61a73f10c8a8b3386826f08184028d8d5e6508a4
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 2066e0841658917cb0e6ddc0fbacf98d52098da8
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5800383"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027456"
 ---
 # <a name="configure-and-work-with-call-center-order-holds"></a>Hívásközpont rendeléseinek várakoztatása – konfigurálás és használat
 
@@ -53,7 +53,7 @@ Miután a várakoztatási adatokat bevitték és mentették, a felhasználó bez
 
 Ha a **Rendeléskiegészítés engedélyezése** megjelölés be van kapcsolva a hívásközponti csatornában, nem kell kifizetést alkalmazni egy rendeléshez, amely várakoztatott állapotban van. Ezzel szemben a nem várakoztatott értékesítési rendelések esetében a felhasználók nem hagyhatják az értékesítési rendelés beviteli lapját üresen mindaddig, amíg nem kerül sor fizetés alkalmazására. Természetesen a fizetés el kell végezni, mielőtt a rendelés várakoztatása fel lesz oldva.
 
-A hívásközpont felhasználói ezenkívül a valamilyen okból gyanús rendeléseket manuálisan is várakoztathatják csalás miatt. A rendelések automatikusan is várakoztathatók, amikor egyezést mutatnak az aktív csalási feltételekkel és szabályokkal. További tájékoztatás az ilyen típusú rendelés várakoztatásának kapcsolatban itt található [csalásellenőrzési figyelmeztetések beállítása](https://docs.microsoft.com/dynamics365/unified-operations/retail/set-up-fraud-alerts).
+A hívásközpont felhasználói ezenkívül a valamilyen okból gyanús rendeléseket manuálisan is várakoztathatják csalás miatt. A rendelések automatikusan is várakoztathatók, amikor egyezést mutatnak az aktív csalási feltételekkel és szabályokkal. További tájékoztatás az ilyen típusú rendelés várakoztatásának kapcsolatban itt található [csalásellenőrzési figyelmeztetések beállítása](/dynamics365/unified-operations/retail/set-up-fraud-alerts).
 
 ## <a name="viewing-and-managing-orders-that-are-on-hold"></a>Várakoztatott rendelések megtekintése és kezelése
 

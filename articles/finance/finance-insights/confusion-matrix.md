@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-14
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: d6e8f63ef00f714109ae650d3cedaf19e5159325
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: a9642bd21ffc0770be61677220e0e72986586047
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818752"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6028203"
 ---
 # <a name="results-of-machine-learning-models-preview"></a>Gépi tanulási modellek eredményei (előzetes verzió)
 
@@ -63,8 +63,8 @@ A kérdés elkezdéséhez a naiv becslés pontosságát kell figyelembe venni. A
 
 Egy másik szempontot is érdemes megjegyezni. Gondoljon egy olyan forgatókönyvre, amikor egy orvosi tesztet használnak egy páciens betegségének kimutatására. Ez a probléma egy bináris besorolási probléma, ahol a pozitív eredmény azt jelzi, hogy a páciens beteg. Ebben a forgatókönyvben a következő hibák hatásait kell megfontolni:
 
-- Hamis pozitív, amikor a teszt azt mutatja, hogy a páciens beteg, de valójában nem is az
-- Hamis negatív, amikor a teszt azt mutatja, hogy a páciens nem beteg, de valójában az
+- Hamis pozitív, amikor a teszt azt mutatja, hogy a páciens beteg, de valójában nem is az.
+- Hamis negatív, amikor a teszt azt mutatja, hogy a páciens nem beteg, de valójában az.
 
 Nyilvánvalóan egy típusú hiba sem kívánatos, de melyik a rosszabb? Ez ismét a helyzettől függ. Abban az esetben, ha egy életveszélyes betegség gyors kezelést igényel, a hamis negatívok minimalizálása (remélhetőleg további teszteket is elvégeznek) élvez prioritást. Más, kevésbé kritikus helyzetek esetén a modell létrehozói csökkenthetik a hamis pozitív értéket. Egy észszerű következtetés szerint a modell minőségi meghatározásához több információra van szükség, mint a pontossági metrika.
 

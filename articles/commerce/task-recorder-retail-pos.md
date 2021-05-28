@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: d4bb8ce1abc07bc57e90e893e7e327761131d52a
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 02e8bb1bfb088a877ef23b7a81982868700f4ae2
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795213"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6028107"
 ---
 # <a name="task-recorder-and-help-for-retail-modern-pos-mpos-and-cloud-pos"></a>Feladatrögzítő és Súgó a Retail Modern POS (MPOS) rendszerhez és a Cloud POS-hez
 
@@ -129,13 +129,13 @@ A **Szövegek** és **Megjegyzések** mezők segítségével olyan szöveget adh
 
 A **Szöveg** mezőben beírt szöveg a lépés szövege *felett* jelenik meg a Feladat-útmutatóban. Ez a hely olyan szöveg számára megfelelő, amelyiket a felhasználónak a lépés végrehajtása előtt kell elolvasnia.
 
-#### <a name="notes"></a>Megjegyzések
+#### <a name="notes"></a>Jegyzetek
 
 A **Megjegyzések** mezőben beírt szöveg a lépés szövege *alatt* jelenik meg a Feladat-útmutatóban. A megjegyzés szövegének elolvasásához a felhasználónak ki kell bontania a lépés szövegét az előugró ablakban. Ez a hely megfelelő további anyagok vagy egyéb olyan információ elolvasásához, amely hasznos lehet a felhasználó számára, de a felhasználó számára ez nem kötelező a művelet végrehajtásához.
 
 ## <a name="help-in-retail-modern-pos-and-cloud-pos"></a>A Retail Modern POS és a Cloud POS súgója
 
-A saját feladatrögzítéseinek a Retail Modern POS és a felhőalapú POS Súgó ablakaiban való megjelenítéséhez annak érdekében, hogy ezáltal szövegként megtekinthetőek legyenek, a feladatrögzítést a saját BPM-tárába kell mentenie, majd ezután a súgórendszer paramétereit be kell állítania, hogy azok a BPM-tárára mutassanak. További tájékoztatást a következő témakörben talál: [Súgórendszer csatlakoztatása](../fin-and-ops/get-started/help-connect.md). A Retail Modern POS és a felhőalapú POS Súgó valós időben keres az LCS-ben. Az összes olyan BPM könyvtárban keres, amelyet kijelöltek a Commerce Súgó rendszerparaméterei között, és megjeleníti a releváns találatokat. A **Súgó** menü eléréséhez kattintson a **Súgó** gombra (kérdőjel) a képernyő tetején, majd írja be a folyamata nevét a keresőmezőbe, és nyomja le a Keresés gombot.
+A saját feladatrögzítéseinek a Retail Modern POS és a felhőalapú POS Súgó ablakaiban való megjelenítéséhez annak érdekében, hogy ezáltal szövegként megtekinthetőek legyenek, a feladatrögzítést a saját BPM-tárába kell mentenie, majd ezután a súgórendszer paramétereit be kell állítania, hogy azok a BPM-tárára mutassanak. További tájékoztatást a következő témakörben talál: [Súgórendszer csatlakoztatása](../fin-ops-core/fin-ops/get-started/help-connect.md). A Retail Modern POS és a felhőalapú POS Súgó valós időben keres az LCS-ben. Az összes olyan BPM könyvtárban keres, amelyet kijelöltek a Commerce Súgó rendszerparaméterei között, és megjeleníti a releváns találatokat. A **Súgó** menü eléréséhez kattintson a **Súgó** gombra (kérdőjel) a képernyő tetején, majd írja be a folyamata nevét a keresőmezőbe, és nyomja le a Keresés gombot.
 
 [![Súgó gomb](./media/help.jpg)](./media/help.jpg)
 

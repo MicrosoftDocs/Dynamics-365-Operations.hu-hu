@@ -6,7 +6,7 @@ ms.date: 04/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: PurchTable, SysSecRolesEditUsers
+ms.search.form: PurchTable, SysSecRolesEditUsers, SysWorkloadDuplicateRecord
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: ''
@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 9bdb9529c8b630182a2036e9d116909f9e92bb83
-ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
+ms.openlocfilehash: 3d9bbc91b90cc675f500a990cf36e2aee6c6bccb
+ms.sourcegitcommit: 35fdcc6501e099c54a58583b1e3aba16f02a5ccc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "5944413"
+ms.lasthandoff: 05/04/2021
+ms.locfileid: "5980949"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Raktérkezelés munkaterhelései felhőalapú és peremhálózat-lépték szerinti egységekhez
 
@@ -58,7 +58,10 @@ A skálázási egységek a következő adatokat birtokolják:
   - **Átmozgatási rendelések** (csak kimenő egyszerű kitárolási és berakodási munka esetén)
 
 - **Raktári rendelés bevételezési adatai** – ezeket az adatokat csak olyan beszerzési rendelésekhez használja a program, amelyeket kiadtak a raktárba.
-- **Azonosítótábla-adatok** – a központon és a skálázási egységen azonosítótáblák hozhatók létre. Dedikált ütközés-kezelés van megadva. Ne feledje, hogy ez az adat nem a raktárra jellemző.
+- **Azonosítótábla-adatok** – a központon és a skálázási egységeken azonosítótáblák hozhatók létre. Dedikált ütközés-kezelés van megadva. 
+
+    > [!IMPORTANT]
+    > Az azonosítótábla-adat nem a raktárspecifikus. Ha ugyanaz az azonosítótábla-szám jön létre mind a központban, mind a skálázási egységen ugyanabban a szinkronizálási ciklusban, a következő szinkronizálás sikertelen lesz. Ha ez megtörténik, lépjen a **Rendszerfelügyelet > Lekérdezések > Munkaterhelés lekérdezések > Duplikált rekordok** helyre, ahol megtekintheti és egyesítheti az adatokat.
 
 ## <a name="outbound-process-flow"></a>Kimenő feldolgozási folyamat
 

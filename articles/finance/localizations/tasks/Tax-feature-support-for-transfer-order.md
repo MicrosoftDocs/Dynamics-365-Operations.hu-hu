@@ -5,7 +5,6 @@ author: kailiang
 ms.date: 04/20/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application user
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: d1b99046b0e439c9dadbb240050e270a7b2a6914
-ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
+ms.openlocfilehash: 3a5c2b6fb48d98ba045c77ed034d976f7d89af98
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "5920955"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6021369"
 ---
 # <a name="tax-feature-support-for-transfer-orders"></a>Adófunkció támogatása átmozgatási rendelésekhez
 
@@ -41,7 +40,7 @@ Az átmozgatási rendelésben érintett adó beállítását az alábbi lépése
 
 1. Az **Adófunkciók** oldalon a **Verziók** lapon jelölje ki a vázlat funkcióverziót, majd kattintson a **Szerkesztés** gombra.
 
-    ![Szerkesztés kiválasztása](../media/image1.png)
+    ![Szerkesztés kiválasztása](../media/tax-feature-support-01.png)
 
 2. Az **Adófunkciók beállítása** oldal **Adókódok** lapján válassza a **Hozzáadás** lehetőséget új adókódok létrehozásához. Ebben a példában három adókód jön létre: **NL-Exempt**, **BE-RC-21** és **BE-RC+21**.
 
@@ -54,7 +53,7 @@ Az átmozgatási rendelésben érintett adó beállítását az alábbi lépése
         4. A **Díj** táblában válassza a **Hozzáadás** lehetőséget.
         5. Kapcsolja az **Adómentes** lehetőséget **Igen** értékre az **Általános** részben.
 
-        ![NL adómentes adókód](../media/image2.png)
+        ![NL adómentes adókód](../media/tax-feature-support-02.png)
 
     - Amikor átmozgatási rendelés megérkezik egy belgiumi raktárba, a fordított adózás mechanizmusa a **BE-RC-21** és **BE-RC+21** adókódok használatával kerül alkalmazásra.
         
@@ -67,7 +66,7 @@ Az átmozgatási rendelésben érintett adó beállítását az alábbi lépése
         6. Kapcsolja a **Fordított áfás** lehetőséget **Igen** értékre az **Általános** részben.
         7. Válassza a **Mentés** lehetőséget.
 
-        ![BE-RC-21 adókód a fordított áfához](../media/image3.png)
+        ![BE-RC-21 adókód a fordított áfához](../media/tax-feature-support-03.png)
         
         Hozza létre a **BE-RC+21** adókódot.
         1. Válassza a **Hozzáadás** lehetőséget, írja be a **BE-RC-21** értéket az **Adókód** mezőbe.
@@ -77,7 +76,7 @@ Az átmozgatási rendelésben érintett adó beállítását az alábbi lépése
         5. Adja meg a **21** értéket az **Adókulcs** mezőbe.
         6. Válassza a **Mentés** lehetőséget.
 
-        ![BE-RC+21 adókód a fordított áfához](../media/image4.png)
+        ![BE-RC+21 adókód a fordított áfához](../media/tax-feature-support-04.png)
 
 3. Adja meg az adókódok alkalmazhatóságát.
 

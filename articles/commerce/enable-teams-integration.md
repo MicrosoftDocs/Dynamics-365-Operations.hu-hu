@@ -2,11 +2,9 @@
 title: A Dynamics 365 Commerce és a Microsoft Teams integrációjának engedélyezése
 description: Ez a témakör a Microsoft Dynamics 365 Commerce és a Microsoft Teams integrációjának engedélyezését ismerteti.
 author: gvrmohanreddy
-manager: annbe
 ms.date: 03/31/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: c4d596f27ffe15a97dc04e2ce7e85d21f8e7161f
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: eb0b8b419b302fbd0bc107bca22f8b26774ba3c7
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908395"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6019835"
 ---
 # <a name="enable-dynamics-365-commerce-and-microsoft-teams-integration"></a>A Dynamics 365 Commerce és a Microsoft Teams integrációjának engedélyezése
 
@@ -39,9 +37,9 @@ A Microsoft Teams és a Commerce integrációjának engedélyezése előtt regis
 
 A Teams alkalmazásnak a bérlővel való regisztrálásához az Azure Portalon, kövesse az alábbi lépéseket.
 
-1. A Teams alkalmazás Azure Portalon található bérlőjével történő regisztrálásához kövesse a következő lépéseit: [Rövid útmutató: Alkalmazások regisztrálása a Microsoft Identity platformmal](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
+1. A Teams alkalmazás Azure Portalon található bérlőjével történő regisztrálásához kövesse a következő lépéseit: [Rövid útmutató: Alkalmazások regisztrálása a Microsoft Identity platformmal](/azure/active-directory/develop/quickstart-register-app).
 1. Másolja az **Alkalmazás (ügyfél) azonosítója** értékét a regisztrált alkalmazás **Áttekintés** lapjára. Ezt az értéket arra fogja használni, hogy lehetővé tegye a Teams integrációját a Commerce központi felületén.
-1. Másolja a tanúsítvány értékét, amely az 1. lépésben, a [tanúsítvány hozzáadásakor](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app#add-a-certificate) lett megadva. A tanúsítvány nyilvános kulcsként vagy alkalmazáskulcsként is ismert. Ezt az értéket arra fogja használni, hogy lehetővé tegye a Teams integrációját a Commerce központi felületén.
+1. Másolja a tanúsítvány értékét, amely az 1. lépésben, a [tanúsítvány hozzáadásakor](/azure/active-directory/develop/quickstart-register-app#add-a-certificate) lett megadva. A tanúsítvány nyilvános kulcsként vagy alkalmazáskulcsként is ismert. Ezt az értéket arra fogja használni, hogy lehetővé tegye a Teams integrációját a Commerce központi felületén.
 
 A Teams integráció engedélyezéséhez a Commerce központi felületén kövesse az alábbi lépéseket.
 

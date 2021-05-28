@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: bd93744cf947dcc343d2b31d3d52b2b748c062a9
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 212f425dc3603f838ce030d9ed86f2e418bef29a
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792871"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6019933"
 ---
 # <a name="e-commerce-digital-gift-cards"></a>E-kereskedelmi digitális ajándékutalványok
 
@@ -51,12 +51,12 @@ A digitális ajándékutalvány típusú termékeket a Commerce központi felül
 
     ![Ajándékutalvány-termék mező a Commerce központi felületén](./media/PostGiftcard.png)
 
-- Ha az ajándékutalványnak több előre definiált összeget (például $25, $50, vagy $100) kell támogatnia, akkor az előre megadott összegek beállításához a **Méret** dimenziót kell használni. Minden előre definiált összeg egy variáns lesz. További információ: [Termékdimenziók](https://docs.microsoft.com/dynamics365/supply-chain/pim/product-dimensions?toc=/dynamics365/retail/toc.json).
+- Ha az ajándékutalványnak több előre definiált összeget (például $25, $50, vagy $100) kell támogatnia, akkor az előre megadott összegek beállításához a **Méret** dimenziót kell használni. Minden előre definiált összeg egy variáns lesz. További információ: [Termékdimenziók](../supply-chain/pim/product-dimensions.md?toc=%2fdynamics365%2fretail%2ftoc.json).
 - Ha az ügyfélnek képesnek kell lennie arra, hogy egyéni összeget adjon meg egy ajándékutalványhoz, először állítson be egy olyan variánst, amely lehetővé teszi az egyéni összeg megadását. Ezután nyissa meg a terméket a **Kiadott termékek ebben a kategóriában** oldalon, majd a **Commerce** gyorslapon állítsa az **Ár beírása billentyűvel** mezőt **Be kell írni az új árat** mezőjére – ezt az alábbi ábra mutatja. Ez a beállítás gondoskodik arról, hogy a vevők megadjanak egy árat, amikor PDP-n böngészik a terméket.
 
     ![Ár beírása billentyűvel a Commerce központi felületén](./media/KeyInPrice.png)
 
-- A digitális ajándékutalványok szállítási módját **Elektronikus** beállításra kell állítani. A **Szállítási módok** oldalon (**Kiskereskedelem és kereskedelem \> Csatorna beállítása \> Szállítási módok**) a listaablakban válassza ki az **Elektronikus** szállítási mód beállítást, majd adja hozzá a digitális ajándékutalvány-terméket a **Termékek** gyorslap rácsához, amint azt az alábbi ábra mutatja. További információkért lásd: [Szállítási módok beállítása](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
+- A digitális ajándékutalványok szállítási módját **Elektronikus** beállításra kell állítani. A **Szállítási módok** oldalon (**Kiskereskedelem és kereskedelem \> Csatorna beállítása \> Szállítási módok**) a listaablakban válassza ki az **Elektronikus** szállítási mód beállítást, majd adja hozzá a digitális ajándékutalvány-terméket a **Termékek** gyorslap rácsához, amint azt az alábbi ábra mutatja. További információkért lásd: [Szállítási módok beállítása](/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
 
     ![Digitális ajándékutalvány-termékek a Commerce központi felületének Szállítási mód oldalán](./media/ElectronicMode.PNG)
 
@@ -89,9 +89,9 @@ A Commerce webhelykészítőben a digitális ajándékutalványok egyéni össze
 
 [Új termék létrehozása a Commerce szolgáltatásban](create-new-product-commerce.md)
 
-[Szállítási módok beállítása](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery)
+[Szállítási módok beállítása](/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery)
 
-[Termékdimenziók](https://docs.microsoft.com/dynamics365/supply-chain/pim/product-dimensions?toc=/dynamics365/retail/toc.json)
+[Termékdimenziók](../supply-chain/pim/product-dimensions.md?toc=%2fdynamics365%2fretail%2ftoc.json)
 
 [E-mail-értesítési profil beállítása](email-notification-profiles.md)
 

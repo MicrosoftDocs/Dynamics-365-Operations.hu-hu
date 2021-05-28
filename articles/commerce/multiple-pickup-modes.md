@@ -12,12 +12,12 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: c32ffc8435c05c644bf836bb184400d067269208
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 124765a3d4d2ebd01e200b76fc862e2c37073b8e
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796877"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6020651"
 ---
 # <a name="enable-multiple-pickup-delivery-modes-for-customer-orders"></a>Több felvételi szállítási mód engedélyezése a vevői rendelésekhez
 
@@ -82,7 +82,7 @@ Ha egy csatornához több felvételi kézbesítési mód is rendelkezésre áll,
 
 ## <a name="considerations-for-distributed-order-management"></a>A felosztott rendeléskezelés szempontjai
 
-A Commerce [felosztott rendeléskezelési (DOM)](https://docs.microsoft.com/dynamics365/commerce/dom) funkciói figyelmen kívül hagyják az üzleti felvételre megjelölt értékesítési sorokat. Ezek a funkciók frissültek annak érdekében, hogy a konfigurált átvételi szállítási módokhoz kapcsolódó értékesítési sorok megkerüljék a DOM logikát, és ne kerüljenek át egy új teljesítési raktárba.
+A Commerce [felosztott rendeléskezelési (DOM)](./dom.md) funkciói figyelmen kívül hagyják az üzleti felvételre megjelölt értékesítési sorokat. Ezek a funkciók frissültek annak érdekében, hogy a konfigurált átvételi szállítási módokhoz kapcsolódó értékesítési sorok megkerüljék a DOM logikát, és ne kerüljenek át egy új teljesítési raktárba.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

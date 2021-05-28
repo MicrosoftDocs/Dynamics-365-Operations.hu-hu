@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: dac3eb0da704e06376d8ca969e06fb177ce15a6b
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 6b02f94bb2217729f35f0593fe99807273608811
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804281"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027648"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Online és offline pénztár (POS) műveletek
 
@@ -64,7 +64,7 @@ A következő oszlopok megadása, amennyiben a műveletek meghívhatók:
 | 642 | Összes termék elvégzése | Az összes sor a szállítási mód beállítása **Carryout**. | Igen | Igen | Nincs | Igen\* | Nincs |
 | 641 | Kiválasztott termékek elvégzése | Az összes sor a szállítási mód beállítása a kijelölt **Carryout**. | Igen | Igen | Nem | Igen\* | Nem |
 | 647 | Szállítási mód módosítása | Szállítási mód módosítása az előre konfigurált szállítási értékesítési sorokhoz. | Igen | Igen | Nem | Nem| Nem |
-| 1215 | Jelszó módosítása | Ez a művelet lehetővé teszi, hogy a POS felhasználó módosíthatja a jelszavát. | Igen | Igen | Igen | Nincs | Nincs |
+| 1215 | Jelszó módosítása | Ez a művelet lehetővé teszi, hogy a POS felhasználó módosítsa a jelszavát. | Igen | Igen | Igen | Nincs | Nincs |
 | 123 | Mértékegység módosítása | A kijelölt sortétel mértékegysége nem módosítható. | Igen | Igen | Nincs | Igen | Nincs |
 | 639 | Alapértelmezett üzletkötő törlése a tranzakcióban | Távolítsa el a jutalék értékesítési csoportja (Üzletkötő), a tranzakció nem. | Igen | Igen | Nincs | Igen | Nincs |
 | 106 | Mennyiség törlése | A jelenleg kijelölt rendeléssorban szereplő mennyiségtől alaphelyzetbe **1**. | Igen | Igen | Nincs | Igen | Nincs |

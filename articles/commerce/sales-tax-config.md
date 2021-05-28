@@ -2,7 +2,6 @@
 title: Az online rendelések áfájának konfigurálása
 description: Ez a témakör áttekintést nyújt a különböző online rendeléstípusok áfacsoportjának kiválasztásáról a Dynamics 365 Commerce alkalmazásban.
 author: gvrmohanreddy
-manager: AnnBe
 ms.date: 04/02/2021
 ms.topic: article
 ms.prod: ''
@@ -16,12 +15,12 @@ ms.search.industry: Retail
 ms.author: gmohanv
 ms.search.validFrom: 2020-11-01
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 8df939c1a566fb63bc53e455cc6c2aa85956ac79
-ms.sourcegitcommit: 583801af75c50915ea5ffc60e831fb617d045533
+ms.openlocfilehash: fff4f39703a146412b460dacc3805fde097ab756
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "5853811"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6021440"
 ---
 # <a name="configure-sales-tax-for-online-orders"></a>Az online rendelések áfájának konfigurálása
 
@@ -41,7 +40,7 @@ Online rendelés leadásakor a Commerce adómotor a rendelés minden sorcikk sz�
 
 ### <a name="order-pick-up-in-store"></a>Rendelésfelvétel az üzletben
 
-Az üzletbeli vagy a járdaszéli felvétellel megadott csomagfelvételeket megadó rendeléssorok esetén a kiválasztott átvételi áruház adócsoportja lesz alkalmazva. Az áfa beállításáról az [Üzletek egyéb adóbeállításainak megadása](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-other-tax-options-for-stores) című témakörben talál további tudnivalókat.
+Az üzletbeli vagy a járdaszéli felvétellel megadott csomagfelvételeket megadó rendeléssorok esetén a kiválasztott átvételi áruház adócsoportja lesz alkalmazva. Az áfa beállításáról az [Üzletek egyéb adóbeállításainak megadása](/dynamicsax-2012/appuser-itpro/set-other-tax-options-for-stores) című témakörben talál további tudnivalókat.
 
 ## <a name="customer-account-based-taxes-for-online-orders"></a>Online rendelések vevői számlán alapuló adói
 
@@ -71,15 +70,15 @@ A következő táblázat bemutatja, hogy a célon alapuló adók és a vevői sz
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[Online áruházak adóinak beállítása cél alapján](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-taxes-for-online-stores-based-on-destination)
+[Online áruházak adóinak beállítása cél alapján](/dynamicsax-2012/appuser-itpro/set-up-taxes-for-online-stores-based-on-destination)
 
-[Áfa áttekintése](https://docs.microsoft.com/dynamics365/finance/general-ledger/indirect-taxes-overview?toc=/dynamics365/commerce/toc.json) 
+[Áfa áttekintése](../finance/general-ledger/indirect-taxes-overview.md?toc=%2fdynamics365%2fcommerce%2ftoc.json) 
 
-[Áfaszámítási módok a Kiindulás mezőben](https://docs.microsoft.com/dynamics365/finance/general-ledger/sales-tax-calculation-methods-origin-field?toc=/dynamics365/commerce/toc.json) 
+[Áfaszámítási módok a Kiindulás mezőben](../finance/general-ledger/sales-tax-calculation-methods-origin-field.md?toc=%2fdynamics365%2fcommerce%2ftoc.json) 
 
-[Áfa-hozzárendelés és felülbírálások](https://docs.microsoft.com/dynamics365/supply-chain/procurement/tasks/sales-tax-assignment-overrides?toc=/dynamics365/commerce/toc.json) 
+[Áfa-hozzárendelés és felülbírálások](../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md?toc=%2fdynamics365%2fcommerce%2ftoc.json) 
 
-[Teljesösszeg- és intervallumszámítási opciók áfakódokhoz](https://docs.microsoft.com/dynamics365/finance/general-ledger/whole-amount-interval-options-sales-tax-codes?toc=/dynamics365/commerce/toc.json) 
+[Teljesösszeg- és intervallumszámítási opciók áfakódokhoz](../finance/general-ledger/whole-amount-interval-options-sales-tax-codes.md?toc=%2fdynamics365%2fcommerce%2ftoc.json) 
 
 [Adómentesség számítása](tax-exempt-price-inclusive.md) 
 

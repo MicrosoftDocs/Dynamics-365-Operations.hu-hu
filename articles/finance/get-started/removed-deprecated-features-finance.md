@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 93d025759f86ffeb0ee1f1e6e6e2aeb3ab341b75
-ms.sourcegitcommit: 4ba25601eba295bd9057f7fb5e85f1f6764f5a27
+ms.openlocfilehash: 8cacf2fbef8873288493f71b43d22dc186e6d18e
+ms.sourcegitcommit: 35fdcc6501e099c54a58583b1e3aba16f02a5ccc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "5965310"
+ms.lasthandoff: 05/04/2021
+ms.locfileid: "5980897"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Eltávolított vagy elavult funkciók a Dynamics 365 Finance szolgáltatásban
 
@@ -35,7 +35,7 @@ Ez a lista segít figyelembe venni az elavult és eltávolított szolgáltatáso
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10020-release"></a>Eltávolított vagy elavult szolgáltatások a Finance 10.0.20 kiadásában
 
-### <a name="rtir-query-invoice-data-request-hu-format-configuration"></a>RTIR lekérdezési számlaadat-kérelem (HU) formátumkonfiguráció
+### <a name="rtir-query-invoice-data-request-hu-electronic-reporting-er-format-configuration"></a>"RTIR lekérdezési számlaadat-kérelem (HU)" Elektronikus jelentéskészítés (ER) formátumkonfiguráció
 
 | &nbsp; | &nbsp; |
 |------------|--------------------|
@@ -45,6 +45,15 @@ Ez a lista segít figyelembe venni az elavult és eltávolított szolgáltatáso
 | **Telepítési beállítás**              | Összes |
 | **Állapot**                         | Elavult: 2022. április 15-re már nem lesz támogatva az „RTIR lekérdezési számlaadat-kérelem (HU)” formátumkonfiguráció. |
 
+### <a name="french-fec-audit-file-electronic-reporting-er-format-for-france-under-german-audit-file-output-format"></a>"Francia FEC ellenőrzési fájl" Elektronikus jelentési (ER) formátum Franciaország számára "Német audit fájlkimenet" formátumban
+
+| &nbsp; | &nbsp; |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | Helyébe az új "FEC auditfájl (FR)" formátum lép |
+| **Felváltotta másik szolgáltatás?**   | Igen |
+| **Érintett területek**         | Pályázat |
+| **Telepítési beállítás**              | Összes |
+| **Állapot**                         | Elavult: 2022. május 1-től nem tervezzük támogatni a "francia FEC auditfájl" elektronikus jelentési (ER) formátumot Franciaország számára "Német ellenőrzési fájlkimenet" formátumban. Ehelyett az "Adatexport modell" alatt új FEC auditfájl (FR) formátum kerül bevezetésre. |
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10017-release"></a>Eltávolított vagy elavult szolgáltatások a Finance 10.0.17 kiadásában
 

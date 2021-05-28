@@ -2,11 +2,9 @@
 title: Microsoft Teams kiépítése a Dynamics 365 Commerce rendszerből
 description: Ez a témakör azt ismerteti, hogyan lehet a Dynamics 365 Commerce szervezeti adatainak használatával Microsoft Teams alkalmazást kiépíteni.
 author: gvrmohanreddy
-manager: annbe
 ms.date: 03/31/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: ba7c74942735b723d1015dc4da0068fbb631bc6b
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 1cb28fb50bdc972d1dae6d03a45f70a2f3a63357
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908904"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6022446"
 ---
 # <a name="provision-microsoft-teams-from-dynamics-365-commerce"></a>Microsoft Teams kiépítése a Dynamics 365 Commerce rendszerből
 
@@ -75,9 +73,9 @@ Ha fel szeretne tölteni egy Commerce szervezeti hierarchiát a Teamsbe, kövess
     
 1. A Commerce központi felületén lépjen a **Retail és Commerce \> Csatornabeállítás \> Microsoft Teams-intergráció konfigurációja** elemre.
 1. Válassza a **Célzási hierarchia letöltése** lehetőséget, majd a szervezeti hierarchia vesszővel elválasztott értékfájlja (CSV) letöltéséhez válassza a **Kiskereskedelmi üzletek régiónként** lehetőséget.
-1. Telepítse a Microsoft Teams PowerShell modult a [Microsoft Teams PowerShell telepítése](https://docs.microsoft.com/microsoftteams/teams-powershell-install) lépéseit követve.
+1. Telepítse a Microsoft Teams PowerShell modult a [Microsoft Teams PowerShell telepítése](/microsoftteams/teams-powershell-install) lépéseit követve.
 1. Amikor a rendszer kéri a Teams PowerShell ablakban, jelentkezzen be az Azure AD-bérlő rendszergazdai fiókjával.
-1. Kövesse a [Csoportcélzási hierarchia beállítása](https://docs.microsoft.com/microsoftteams/set-up-your-team-hierarchy) lépéseit a célzási hierarchia CSV-fájljának feltöltéséhez.
+1. Kövesse a [Csoportcélzási hierarchia beállítása](/microsoftteams/set-up-your-team-hierarchy) lépéseit a célzási hierarchia CSV-fájljának feltöltéséhez.
 
 ## <a name="verify-that-the-organizational-hierarchy-was-uploaded-to-teams"></a>Annak ellenőrzése, hogy a szervezeti hierarchia fel van-e töltve a Teamsbe
 
