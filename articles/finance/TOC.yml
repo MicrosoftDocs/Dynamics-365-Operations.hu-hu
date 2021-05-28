@@ -78,8 +78,6 @@
                       href: get-started/whats-new-changed-10-0-18.md
                     - name: Finance 10.0.17 (2021. április)
                       href: get-started/whats-new-changed-10-0-17.md
-                    - name: Finance 10.0.16 (2021. február)
-                      href: get-started/whats-new-changed-10-0-16.md
             - name: Eltávolított vagy elavult funkciók
               items:
                 - name: Eltávolított vagy elavult funkciók a kezdőlapon
@@ -426,8 +424,10 @@
                   href: accounts-receivable/settle-partial-customer-payment-before-discount-or-final-payment-after.md
                 - name: 'Részleges vevői kifizetés rendezése, amely szállítói jóváírásokra vonatkozó engedménnyel rendelkezik'
                   href: accounts-receivable/settle-partial-customer-payment-discounts-credit-notes.md
-                - name: 'Részleges vevői kifizetés egy részének rendezése, amely több engedményes időszakkal rendelkezik'
+                - name: 'Részleges vevői kifizetés rendezése, amely több engedményes időszakkal rendelkezik'
                   href: accounts-receivable/settle-partial-customer-payment-multiple-discount-periods.md
+                - name: Vevői előlegek
+                  href: accounts-receivable/customer-prepayments.md
                 - name: Visszatérítés vevőknek
                   href: accounts-receivable/reimburse-customers.md
                 - name: Vevői kifizetések egy részösszegre vonatkozóan
@@ -484,7 +484,9 @@
               href: accounts-receivable/process-collection-letters-example.md
             - name: Kinnlevőségek korosítási adatainak beállítása és létrehozása
               href: accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
-            - name: Vevők korosítási jelentése
+            - name: Vevő korosítási pillanatképe
+              href: accounts-receivable/customer-aging-snapshot.md
+            - name: Vevő korosítási jelentése
               href: accounts-receivable/customer-aging.md
             - name: Leírási napló létrehozása vevőhöz
               href: accounts-receivable/tasks/create-write-off-journal-customer.md
@@ -510,11 +512,13 @@
               href: budgeting/position-forecasting.md
             - name: Költségvetés-tervezés igazoló dokumentumai
               href: budgeting/budget-planning-justification-docs.md
-            - name: Költségvetés létrehozása tranzakciószámlákra vagy összegző számlákra
+            - name: Költségvetés létrehozása tranzakciószámlákból vagy összegző számlákból
               href: budgeting/create-budget-transaction-accounts-total-accounts.md
+            - name: Költségvetési terv narratívája
+              href: budgeting/budget-narrative.md
             - name: Költségvetés-tervezési sablonok az Excel programhoz
               href: budgeting/budget-planning-excel-templates.md
-            - name: A költségvetés-tervezési elrendezés kiterjesztése
+            - name: A költségvetés-tervezési elrendezés kibővítése
               href: budgeting/extending-budget-planning-layout.md
             - name: Beosztás-költségvetéskészítés – hibaelhárítás
               href: budgeting/position-budgeting-set-up-issues.md
@@ -1142,10 +1146,20 @@
               items:
                 - name: Könyvvizsgálati irányelvszabályok
                   href: general-ledger/audit-policy-rules.md
-                - name: Könyvvizsgálati irányelvsértések és esetek
+                - name: Könyvvizsgálati irányelvek megsértései és esetek
                   href: general-ledger/audit-policy-violations-cases.md
-                - name: Könyvvizsgálati irányelvek meghatározása a forrásbizonylatok számára
+                - name: Könyvvizsgálati irányelvek meghatározása forrásbizonylatok számára
                   href: general-ledger/tasks/define-audit-policies-source-documents.md
+            - name: Hibaelhárítás
+              items:
+                - name: Könyvelési vagy jelentési pénznem módosítása
+                  href: general-ledger/add-change-acctg-rprtg-crrncy.md
+                - name: Főkönyvi naptár módosítása vagy újbóli hozzárendelése
+                  href: general-ledger/change-mdfy-clndr-to-ledger.md
+                - name: Naplók és sorok sztornírozási beállításai
+                  href: general-ledger/rvrs-settgs-on-jrnls-lines.md
+                - name: Év végi záráskor hiányzó nyitó egyenlegek
+                  href: general-ledger/yec-mssng-open-blnces.md
         - name: Pénzügyi jelentéskészítés
           items:
             - name: Első lépések a Pénzügyi jelentéskészítéssel
@@ -1648,8 +1662,16 @@
                       href: localizations/bra-use-tax-exemption-nf-e.md
                 - name: SPED ECD
                   href: localizations/latam-bra-sped-ecd.md
-                - name: SPED-Reinf adókimutatás
-                  href: localizations/latam-bra-sped-reinf.md
+                - name: SPED-Reinf
+                  items:
+                    - name: SPED-Reinf – áttekintés
+                      href: localizations/latam-bra-sped-reinf-overview.md
+                    - name: Elektronikus üzenet beállítása
+                      href: localizations/latam-bra-sped-reinf-electronic-messages.md
+                    - name: Adóügyi könyvek beállítása
+                      href: localizations/latam-bra-sped-reinf-setup-fiscal-books.md
+                    - name: Események
+                      href: localizations/latam-bra-sped-reinf.md
                 - name: SPED pénzügyi rendezés 13/2019 RJ
                   href: localizations/latam-bra-resolution-13-2019-RJ.md
                 - name: SPED fiscal 2020 – Kiegészítő információk az ICMS-ST és SPED pénzügy 014-es elrendezéséhez
@@ -1782,6 +1804,8 @@
                   href: localizations/tasks/user-operation-log-china-working-rule.md
                 - name: Vevői áfaszámlák GYIK
                   href: localizations/apac-chn-tax-integration-vat-customer-invoices.md
+                - name: GB/T 24589-2010 exportálása
+                  href: localizations/apac-chn-gbt-24589-2010.md
             - name: Cseh Köztársaság
               items:
                 - name: Cseh Köztársaság
@@ -2036,10 +2060,20 @@
                       href: localizations/emea-fra-vendor-invoice-payment-holds-public-sector.md
                 - name: Váltókiállítás jóváhagyása és feladása
                   href: localizations/tasks/fr-00004-approve-post-draw-bill-exchange.md
-                - name: Számlák és bizonylatok kronológiai sorrendben
+                - name: Számlák és bizonylatok időrendi sorrendben
                   href: localizations/emea-fra-chronological-invoices-vouchers.md
-                - name: Szabványos könyvvizsgálati fájl létrehozása Franciaország (FEC) esetén
-                  href: localizations/emea-fra-fec-audit-file.md
+                - name: Könyvvizsgálati fájl Franciaország esetén
+                  items:
+                    - name: Könyvvizsgálati fájl Franciaország esetén (FEC) – áttekintés
+                      href: localizations/emea-fra-fec-audit-file.md
+                    - name: FEC könyvvizsgálati fájl létrehozásának előfeltételei Franciaországban
+                      href: localizations/emea-fra-fec-audit-file-pre-requisites.md
+                    - name: A Finance-adatforrások struktúrája az FEC-hez
+                      href: localizations/emea-fra-fec-audit-file-structure.md
+                    - name: Környezet előkészítése FEC létrehozásához
+                      href: localizations/emea-fra-fec-audit-file-setup.md
+                    - name: FEC létrehozása a Dynamics 365 Finance szolgáltatásban
+                      href: localizations/emea-fra-fec-audit-file-generation.md
                 - name: Vevői és szállítói számlakivonat
                   href: localizations/tasks/fr-00002-customer-vendor-account-statements.md
                 - name: A megkésett fizetésekre és egyösszegű elemekre vonatkozó napi kamatszámítás a számlákon és a fizetési felszólításokon
@@ -2388,10 +2422,88 @@
                       href: localizations/tasks/apac-ind-day-based-calendar.md
                     - name: Paraméterek beállítása értékcsökkenés számításához
                       href: localizations/tasks/apac-ind-set-up-depreciation.md
-                    - name: Eszközcsoport értékcsökkenésének beállítása értékcsökkenés-könyvekhez
+                    - name: Eszközcsoport értékcsökkenésének beállítása értékcsökkenési könyvekhez
                       href: localizations/tasks/apac-ind-set-up-asset-group-dep.md
                     - name: Tőkeelemek átvitele a tárgyi eszközre
                       href: localizations/tasks/apac-ind-transfer-capital-items.md
+                - name: India TDS
+                  items:
+                    - name: Indiai forrásnál levont adó (TDS) – áttekintés
+                      href: localizations/apac-ind-TDS-India-TDS-overview.md
+                    - name: A TDS alapszintű beállítása
+                      items:
+                        - name: TDS-paraméterek beállítása
+                          href: localizations/apac-ind-TDS-TDS-parameter-activation.md
+                        - name: TDS-főkönyvi számlák beállítása
+                          href: localizations/apac-ind-TDS-TDS-ledger-accounts-setup.md
+                        - name: TDS nyilvántartási számok beállítása jogi személyekhez
+                          href: localizations/apac-ind-TDS-TDS-registration-numbers-setup-for-legal-entities.md
+                        - name: Adóelőleg-hatóságok beállítása a TDS-adótípushoz
+                          href: localizations/apac-ind-TDS-Withholding-tax-authorities-setup-for-TDS-tax-type.md
+                        - name: Adóösszetevők beállítása a TDS-adótípushoz
+                          href: localizations/apac-ind-TDS-Tax-components-setup-for-TDS-tax-type.md
+                        - name: Adóelőlegkódok beállítása a TDS-adótípushoz
+                          href: localizations/apac-ind-TDS-Withholding-tax-authorities-setup-for-TDS-tax-type.md
+                        - name: Adóelőleg-elszámolási időszakok beállítása a TDS-adótípushoz
+                          href: localizations/apac-ind-TDS-Withholding-tax-settlement-periods-setup-for-TDS-tax-type.md
+                        - name: Adóelőleg-jelentési kódok beállítása a TDS-adótípushoz
+                          href: localizations/apac-ind-TDS-Withholding-tax-reporting-codes-setup-for-TDS-tax-type.md
+                        - name: Adóelőlegkódok beállítása a TDS-adótípushoz
+                          href: localizations/apac-ind-TDS-Withholding-tax-codes-setup-for-TDS-tax-type.md
+                        - name: TDS-adókódok csatolása a TDS-adócsoportokhoz és a TDS kiszámítására vonatkozó képlet meghatározása
+                          href: localizations/apac-ind-TDS-Attach-TDS-tax-codes-to-TDS-tax-groups-and-define-formula-to-calculate-TDS.md
+                        - name: TDS-hez tartozó koncessziós tanúsítvány számának rögzítése
+                          href: localizations/apac-ind-TDS-Record-TDS-concession-certificate-numbers.md
+                        - name: TDS-paraméterek beállítása a Kötelezettség és a Kinnlevőségek modulokban
+                          href: localizations/apac-ind-TDS-TDS-parameters-setup-in-accounts-payable-parameters-and-accounts-receivable-parameters.md
+                        - name: Fizetési ütemezések beállítása TDS-felosztással
+                          href: localizations/apac-ind-TDS-Payment-schedule-setup-with-TDS-allocation.md
+                        - name: TDS-hatósági kifizetések kifizetési díjainak beállítása
+                          href: localizations/apac-ind-TDS-Payment-fee-setup-to-charge-payment-fee-for-TDS-authority-payments.md
+                        - name: 'TDS-csoport, PAN és TAN információk beállítása szállítókhoz és vevőkhöz'
+                          href: localizations/apac-ind-TDS-TDS-group-PAN-and-TAN-information-setup-for-vendors-and-customers.md
+                    - name: Képlettervező és küszöbérték a TDS kiszámításához
+                      items:
+                        - name: Képlettervező TDS-számításokhoz
+                          href: localizations/apac-ind-TDS-Formula-designer.md
+                        - name: Küszöbérték és kivételes küszöbérték
+                          href: localizations/apac-ind-TDS-Threshold-limit-and-exception-threshold-limit.md
+                    - name: TDS kiszámítása számlákon
+                      items:
+                        - name: TDS kiszámítása számlákon
+                          href: localizations/apac-ind-TDS-TDS-calcuation-on-invoice.md
+                        - name: TDS kiszámítása számlákon naplók segítségével
+                          href: localizations/apac-ind-TDS-Calculate-TDS-on-invoices-using-journals.md
+                        - name: TDS-számlák kiszámítása beszerzési rendelési űrlap és értékesítési rendelési űrlap segítségével
+                          href: localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md
+                        - name: TDS kiszámítása a szabadszöveges számlaoldalról származó számlákon
+                          href: localizations/apac-ind-TDS-TDS-calculation-on-invoices-using-free-text-invoice-form.md
+                        - name: Számlafelosztási funkció
+                          href: localizations/apac-ind-TDS-Split-invoice-functionality.md
+                    - name: TDS kiszámítása a kifizetéseken és kötelezvényeken
+                      href: localizations/apac-ind-TDS-TDS-calculation-on-payments-and-promissory-notes.md
+                    - name: TDS kiszámítása vállalatközi tranzakciókon
+                      href: localizations/apac-ind-TDS-TDS-calculation-on-intercompany-transactions.md
+                    - name: TDS elszámolási folyamata
+                      items:
+                        - name: TDS kiszámítása a kifizetéseken és kötelezvényeken
+                          href: localizations/apac-ind-TDS-TDS-calculation-on-payments-and-promissory-notes.md
+                        - name: TDS kiszámítása vállalatközi tranzakciókon
+                          href: localizations/apac-ind-TDS-TDS-calculation-on-intercompany-transactions.md
+                        - name: TDS elszámolási folyamata
+                          items:
+                            - name: Az időszakos TDS-elszámolási folyamat futtatása
+                              href: localizations/apac-ind-TDS-Run-the-periodic-TDS-settlement-process.md
+                            - name: TDS-kifizetések elszámolása a TDS hatósági szállítóknak és TDS challan létrehozása
+                              href: localizations/apac-ind-TDS-Settle-TDS-payments-to-TDS-authority-vendors-and-generate-TDS-challan.md
+                            - name: Feladott TDS-kifizetések és -tranzakciók megtekintése TDS-elszámolási időszakra vonatkozóan
+                              href: localizations/apac-ind-TDS-View-TDS-payments-and-TDS-transactions-posted-for-a-TDS-settlement-period.md
+                        - name: TDS-tanúsítványszámok és dátumok rögzítése és frissítése
+                          items:
+                            - name: TDS-hez tartozó visszatéríthető tanúsítvány számának rögzítése
+                              href: localizations/apac-ind-TDS-Record-TDS-recoverable-certificate-numbers.md
+                            - name: Tanúsítványszámok és dátumok frissítése TDS-tranzakciókhoz
+                              href: localizations/apac-ind-TDS-Update-certificate-numbers-and-dates-for-TDS-transactions.md
             - name: Olaszország
               items:
                 - name: Olaszország – áttekintés

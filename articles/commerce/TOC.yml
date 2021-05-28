@@ -380,8 +380,6 @@
                       href: ../supply-chain/pim/search-products-product-variants.md?toc=/dynamics365/commerce/toc.json
                     - name: Készpénzkezelés fejlesztései
                       href: cash-mgmt.md
-                    - name: Készletkeresés a pénztárban
-                      href: product-variants-POS.md
                     - name: Tranzakciók felfüggesztése és újraindítása a pénztárban
                       href: pos-suspend-recall-transactions.md
                     - name: Kapcsolat nélküli pénztár funkciói
@@ -714,6 +712,8 @@
                       href: pos-outbound-inventory-operation.md
                     - name: Kiskereskedelmi csatornák készletelérhetőségének kiszámítása
                       href: calculated-inventory-retail-channels.md
+                    - name: Készletkeresési műveletek a pénztárban
+                      href: pos-inventory-lookup-operation.md
                 - name: Beszerzési rendelések
                   items:
                     - name: Beszerzési rendelések – áttekintés
@@ -2444,14 +2444,38 @@
                   items:
                     - name: Pénztárbővítmény áttekintése
                       href: dev-itpro/pos-extension/pos-extension-overview.md
-                    - name: Első lépések a pénztárbővítményben
+                    - name: Első lépések a pénztárbővítményekben
                       href: dev-itpro/pos-extension/pos-extension-getting-started.md
-                    - name: Csomagprojekt létrehozása a pénztárbővítményben
+                    - name: Csomagprojekt létrehozása a pénztárbővítményekben
                       href: dev-itpro/pos-extension/create-pos-extension-package.md
-                    - name: Appx-fájl létrehozása a Modern POS-bővítményben
+                    - name: Egy .appx-fájl létrehozása a Modern POS-bővítménycsomaghoz
                       href: dev-itpro/pos-extension/create-pos-extension-appx.md
-                    - name: Pénztárbővítmény hibakeresése
+                    - name: Pénztárbővítmények hibakeresése
                       href: dev-itpro/pos-extension/debug-pos-extension.md
+                    - name: Bővítmény csomagolása és üzembe helyezése
+                      items:
+                        - name: Modern POS-bővítménycsomag létrehozása
+                          href: dev-itpro/pos-extension/mpos-extension-packaging.md
+                        - name: Modern POS (MSIX) bővítménycsomag kódaláírása
+                          href: dev-itpro/pos-extension/mpos-extension-signing.md
+                        - name: Cloud POS-bővítménycsomag létrehozása
+                          href: dev-itpro/pos-extension/cpos-extension-package.md
+                    - name: Pénztárbővítmény áttelepítése a független csomagolási modellre
+                      href: dev-itpro/pos-extension/migrate-pos-extension.md
+                    - name: Pénztárbővítmény fejlesztési útmutatója
+                      items:
+                        - name: Pénztárbővítmény alapjai
+                          href: dev-itpro/pos-extension/pos-extension-basics.md
+                        - name: Egyéni nézet létrehozása a pénztárban
+                          href: dev-itpro/pos-extension/custom-pos-view.md
+                        - name: Pénztárvezérlők használata bővítményekben
+                          href: dev-itpro/pos-extension/controls-pos-extension.md
+                        - name: Feladatok
+                          items:
+                            - name: A Knockout.js használata pénztárbővítményekben
+                              href: dev-itpro/pos-extension/knockout-pos-extension.md
+                            - name: Egyéni nem központosított Commerce API-k felhasználása
+                              href: dev-itpro/pos-extension/consume-apis-pos.md
             - name: Hardware Station bővíthetősége
               items:
                 - name: Hardware Station és bővíthetősége
