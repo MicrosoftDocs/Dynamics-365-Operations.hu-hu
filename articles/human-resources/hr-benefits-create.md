@@ -8,50 +8,49 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: HcmBenefitElementSetup, HcmBenefit, HcmBenefitNewBenefit, HcmBenefitPlanLookup, BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Version 7.0.0, Human Resources
-ms.openlocfilehash: 7ca390e296b28d1d22fc7bab85bac83fbffcead8
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: d476e8e7f116ca998f466d21a8d0eec33a11bf8f
+ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5805970"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6053177"
 ---
-# <a name="create-a-new-benefit"></a><span data-ttu-id="5e51d-103">Új juttatás létrehozása</span><span class="sxs-lookup"><span data-stu-id="5e51d-103">Create a new benefit</span></span>
+# <a name="create-a-new-benefit"></a><span data-ttu-id="0e2cb-103">Új juttatás létrehozása</span><span class="sxs-lookup"><span data-stu-id="0e2cb-103">Create a new benefit</span></span>
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-<span data-ttu-id="5e51d-104">A feladat bemutatja, hogyan hozhat létre juttatási elemeket, amelyeket az új juttatás létrehozása során használni fog.</span><span class="sxs-lookup"><span data-stu-id="5e51d-104">This task will show you how to create benefit elements which will be used when creating a new benefit.</span></span> <span data-ttu-id="5e51d-105">A feladat létrehozásához az USMF bemutató vállalatot használtuk példaként.</span><span class="sxs-lookup"><span data-stu-id="5e51d-105">The demo data company used to create this task is USMF.</span></span> <span data-ttu-id="5e51d-106">A feladat a Kompenzációkért és juttatásokért felelős vezetőnek szól.</span><span class="sxs-lookup"><span data-stu-id="5e51d-106">This task is intended for a Compensation and Benefits manager.</span></span>
+<span data-ttu-id="0e2cb-104">A feladat bemutatja, hogyan hozhat létre juttatási elemeket, amelyeket az új juttatás létrehozása során használni fog.</span><span class="sxs-lookup"><span data-stu-id="0e2cb-104">This task will show you how to create benefit elements which will be used when creating a new benefit.</span></span> <span data-ttu-id="0e2cb-105">A feladat létrehozásához az USMF bemutató vállalatot használtuk példaként.</span><span class="sxs-lookup"><span data-stu-id="0e2cb-105">The demo data company used to create this task is USMF.</span></span> <span data-ttu-id="0e2cb-106">A feladat a Kompenzációkért és juttatásokért felelős vezetőnek szól.</span><span class="sxs-lookup"><span data-stu-id="0e2cb-106">This task is intended for a Compensation and Benefits manager.</span></span>
 
 
-## <a name="create-benefit-elements"></a><span data-ttu-id="5e51d-107">Juttatás elemeinek létrehozása</span><span class="sxs-lookup"><span data-stu-id="5e51d-107">Create benefit elements</span></span>
-1. <span data-ttu-id="5e51d-108">Ugorjon az Emberi erőforrások > Juttatások > Beállítás > Juttatás elemei pontra.</span><span class="sxs-lookup"><span data-stu-id="5e51d-108">Go to Human resources > Benefits > Setup > Benefit elements.</span></span>
-2. <span data-ttu-id="5e51d-109">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="5e51d-109">Click New.</span></span>
-3. <span data-ttu-id="5e51d-110">Írja be a most létrehozott juttatástípus nevét a Típus mezőbe.</span><span class="sxs-lookup"><span data-stu-id="5e51d-110">In the Type field, Enter the name of the type of benefit you are creating..</span></span>
-4. <span data-ttu-id="5e51d-111">A Leírás mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="5e51d-111">In the Description field, type a value.</span></span>
-5. <span data-ttu-id="5e51d-112">Egy lehetőség kiválasztása az Egyidejű belépés mezőben.</span><span class="sxs-lookup"><span data-stu-id="5e51d-112">In the Concurrent enrollment field, select an option.</span></span>
-    * <span data-ttu-id="5e51d-113">Annak érdekében, hogy korlátozza az alkalmazottak több egészségügyi konstrukcióba való felvételét, válassza ki a Típusonként egy felvétel lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="5e51d-113">To restrict employees' ability to enroll in multiple medical plans, select One enrollment per type.</span></span>  
-6. <span data-ttu-id="5e51d-114">Egy lehetőség kiválasztása a Bérlista kategóriája mezőben.</span><span class="sxs-lookup"><span data-stu-id="5e51d-114">In the Payroll category field, select an option.</span></span>
-7. <span data-ttu-id="5e51d-115">Kattintson a Konstrukció fülre.</span><span class="sxs-lookup"><span data-stu-id="5e51d-115">Click the Plans tab.</span></span>
-8. <span data-ttu-id="5e51d-116">Kattintson az Új elemre.</span><span class="sxs-lookup"><span data-stu-id="5e51d-116">Click New.</span></span>
-9. <span data-ttu-id="5e51d-117">Érték beírása a Konstrukció mezőbe.</span><span class="sxs-lookup"><span data-stu-id="5e51d-117">In the Plan field, type a value.</span></span>
-10. <span data-ttu-id="5e51d-118">A Leírás mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="5e51d-118">In the Description field, type a value.</span></span>
-11. <span data-ttu-id="5e51d-119">A Típus mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="5e51d-119">In the Type field, enter or select a value.</span></span>
-12. <span data-ttu-id="5e51d-120">Egy lehetőség kiválasztása a Bérlista hatása mezőben.</span><span class="sxs-lookup"><span data-stu-id="5e51d-120">In the Payroll impact field, select an option.</span></span>
-13. <span data-ttu-id="5e51d-121">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="5e51d-121">Click Save.</span></span>
+## <a name="create-benefit-elements"></a><span data-ttu-id="0e2cb-107">Juttatás elemeinek létrehozása</span><span class="sxs-lookup"><span data-stu-id="0e2cb-107">Create benefit elements</span></span>
+1. <span data-ttu-id="0e2cb-108">Ugorjon az Emberi erőforrások > Juttatások > Beállítás > Juttatás elemei pontra.</span><span class="sxs-lookup"><span data-stu-id="0e2cb-108">Go to Human resources > Benefits > Setup > Benefit elements.</span></span>
+2. <span data-ttu-id="0e2cb-109">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="0e2cb-109">Click New.</span></span>
+3. <span data-ttu-id="0e2cb-110">Írja be a most létrehozott juttatástípus nevét a Típus mezőbe.</span><span class="sxs-lookup"><span data-stu-id="0e2cb-110">In the Type field, Enter the name of the type of benefit you are creating..</span></span>
+4. <span data-ttu-id="0e2cb-111">A Leírás mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="0e2cb-111">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="0e2cb-112">Egy lehetőség kiválasztása az Egyidejű belépés mezőben.</span><span class="sxs-lookup"><span data-stu-id="0e2cb-112">In the Concurrent enrollment field, select an option.</span></span>
+    * <span data-ttu-id="0e2cb-113">Annak érdekében, hogy korlátozza az alkalmazottak több egészségügyi konstrukcióba való felvételét, válassza ki a Típusonként egy felvétel lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="0e2cb-113">To restrict employees' ability to enroll in multiple medical plans, select One enrollment per type.</span></span>  
+6. <span data-ttu-id="0e2cb-114">Egy lehetőség kiválasztása a Bérlista kategóriája mezőben.</span><span class="sxs-lookup"><span data-stu-id="0e2cb-114">In the Payroll category field, select an option.</span></span>
+7. <span data-ttu-id="0e2cb-115">Kattintson a Konstrukció fülre.</span><span class="sxs-lookup"><span data-stu-id="0e2cb-115">Click the Plans tab.</span></span>
+8. <span data-ttu-id="0e2cb-116">Kattintson az Új elemre.</span><span class="sxs-lookup"><span data-stu-id="0e2cb-116">Click New.</span></span>
+9. <span data-ttu-id="0e2cb-117">Érték beírása a Konstrukció mezőbe.</span><span class="sxs-lookup"><span data-stu-id="0e2cb-117">In the Plan field, type a value.</span></span>
+10. <span data-ttu-id="0e2cb-118">A Leírás mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="0e2cb-118">In the Description field, type a value.</span></span>
+11. <span data-ttu-id="0e2cb-119">A Típus mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="0e2cb-119">In the Type field, enter or select a value.</span></span>
+12. <span data-ttu-id="0e2cb-120">Egy lehetőség kiválasztása a Bérlista hatása mezőben.</span><span class="sxs-lookup"><span data-stu-id="0e2cb-120">In the Payroll impact field, select an option.</span></span>
+13. <span data-ttu-id="0e2cb-121">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="0e2cb-121">Click Save.</span></span>
 
-## <a name="create-a-benefit"></a><span data-ttu-id="5e51d-122">Juttatás létrehozása</span><span class="sxs-lookup"><span data-stu-id="5e51d-122">Create a benefit</span></span>
-1. <span data-ttu-id="5e51d-123">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="5e51d-123">Close the page.</span></span>
-2. <span data-ttu-id="5e51d-124">Ugorjon az Emberi erőforrások > Juttatások > Juttatások pontra.</span><span class="sxs-lookup"><span data-stu-id="5e51d-124">Go to Human resources > Benefits > Benefits.</span></span>
-3. <span data-ttu-id="5e51d-125">Az Új gombra kattintva nyissa meg a legördülő párbeszédpanelt.</span><span class="sxs-lookup"><span data-stu-id="5e51d-125">Click New to open the drop dialog.</span></span>
-4. <span data-ttu-id="5e51d-126">A Terv mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="5e51d-126">In the Plan field, enter or select a value.</span></span>
-5. <span data-ttu-id="5e51d-127">A Lehetőség mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="5e51d-127">In the Option field, enter or select a value.</span></span>
-6. <span data-ttu-id="5e51d-128">Az Érvényesség mezőben adjon meg dátumot és időt.</span><span class="sxs-lookup"><span data-stu-id="5e51d-128">In the Effective field, enter a date and time.</span></span>
-7. <span data-ttu-id="5e51d-129">Kattintson a Juttatás létrehozása hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="5e51d-129">Click Create benefit.</span></span>
+## <a name="create-a-benefit"></a><span data-ttu-id="0e2cb-122">Juttatás létrehozása</span><span class="sxs-lookup"><span data-stu-id="0e2cb-122">Create a benefit</span></span>
+1. <span data-ttu-id="0e2cb-123">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="0e2cb-123">Close the page.</span></span>
+2. <span data-ttu-id="0e2cb-124">Ugorjon az Emberi erőforrások > Juttatások > Juttatások pontra.</span><span class="sxs-lookup"><span data-stu-id="0e2cb-124">Go to Human resources > Benefits > Benefits.</span></span>
+3. <span data-ttu-id="0e2cb-125">Az Új gombra kattintva nyissa meg a legördülő párbeszédpanelt.</span><span class="sxs-lookup"><span data-stu-id="0e2cb-125">Click New to open the drop dialog.</span></span>
+4. <span data-ttu-id="0e2cb-126">A Terv mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="0e2cb-126">In the Plan field, enter or select a value.</span></span>
+5. <span data-ttu-id="0e2cb-127">A Lehetőség mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="0e2cb-127">In the Option field, enter or select a value.</span></span>
+6. <span data-ttu-id="0e2cb-128">Az Érvényesség mezőben adjon meg dátumot és időt.</span><span class="sxs-lookup"><span data-stu-id="0e2cb-128">In the Effective field, enter a date and time.</span></span>
+7. <span data-ttu-id="0e2cb-129">Kattintson a Juttatás létrehozása hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="0e2cb-129">Click Create benefit.</span></span>
 
 
 

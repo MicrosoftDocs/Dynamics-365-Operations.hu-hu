@@ -7,31 +7,30 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4adab0225190b4dea5213dccf297eaab33efc863
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 9c0da21c0074468c5942bf853df701151ef7ee95
+ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021320"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6055076"
 ---
-# <a name="generate-payroll-entities"></a><span data-ttu-id="fd2f3-103">Bérlistaentitások létrehozása</span><span class="sxs-lookup"><span data-stu-id="fd2f3-103">Generate payroll entities</span></span>
+# <a name="generate-payroll-entities"></a><span data-ttu-id="298be-103">Bérlistaentitások létrehozása</span><span class="sxs-lookup"><span data-stu-id="298be-103">Generate payroll entities</span></span>
 
-<span data-ttu-id="fd2f3-104">Ezzel az OData funkcióval lehet létrehozni a bérlista-integrációhoz szükséges entitásokat.</span><span class="sxs-lookup"><span data-stu-id="fd2f3-104">Use this OData function to generate the entities needed for payroll integration.</span></span> <span data-ttu-id="fd2f3-105">Ha ezen entitások bármilyen változtatása történik az emberi erőforrásokban, például egyéni mezők hozzáadása, akkor a funkció újra meghívható, hogy frissítse az egyes entitások metaadatait.</span><span class="sxs-lookup"><span data-stu-id="fd2f3-105">If any changes are made to these entities in Human Resources, such as adding custom fields, this function can be called again to refresh the metadata of each entity.</span></span> <span data-ttu-id="fd2f3-106">A válasz egy műveletazonosítót tartalmaz, amelyet figyelemmel kísérhet, így tudhatja, hogy mikor fejeződött be a generálás.</span><span class="sxs-lookup"><span data-stu-id="fd2f3-106">The response contains an operation ID that you can monitor so you know when the generation process has completed.</span></span>
+<span data-ttu-id="298be-104">Ezzel az OData funkcióval lehet létrehozni a bérlista-integrációhoz szükséges entitásokat.</span><span class="sxs-lookup"><span data-stu-id="298be-104">Use this OData function to generate the entities needed for payroll integration.</span></span> <span data-ttu-id="298be-105">Ha ezen entitások bármilyen változtatása történik az emberi erőforrásokban, például egyéni mezők hozzáadása, akkor a funkció újra meghívható, hogy frissítse az egyes entitások metaadatait.</span><span class="sxs-lookup"><span data-stu-id="298be-105">If any changes are made to these entities in Human Resources, such as adding custom fields, this function can be called again to refresh the metadata of each entity.</span></span> <span data-ttu-id="298be-106">A válasz egy műveletazonosítót tartalmaz, amelyet figyelemmel kísérhet, így tudhatja, hogy mikor fejeződött be a generálás.</span><span class="sxs-lookup"><span data-stu-id="298be-106">The response contains an operation ID that you can monitor so you know when the generation process has completed.</span></span>
 
-<span data-ttu-id="fd2f3-107">**Kérelem**</span><span class="sxs-lookup"><span data-stu-id="fd2f3-107">**Request**</span></span>
+<span data-ttu-id="298be-107">**Kérelem**</span><span class="sxs-lookup"><span data-stu-id="298be-107">**Request**</span></span>
 
 ```http
 GET [Organizaton URI]/api/data/v9.1/RefreshHumanResourcesVirtualEntities
 ```
 
-<span data-ttu-id="fd2f3-108">**törzs**</span><span class="sxs-lookup"><span data-stu-id="fd2f3-108">**body**</span></span>
+<span data-ttu-id="298be-108">**törzs**</span><span class="sxs-lookup"><span data-stu-id="298be-108">**body**</span></span>
 
 ```json
 {
@@ -39,7 +38,7 @@ GET [Organizaton URI]/api/data/v9.1/RefreshHumanResourcesVirtualEntities
 }
 ```
 
-<span data-ttu-id="fd2f3-109">**Válasz**</span><span class="sxs-lookup"><span data-stu-id="fd2f3-109">**Response**</span></span>
+<span data-ttu-id="298be-109">**Válasz**</span><span class="sxs-lookup"><span data-stu-id="298be-109">**Response**</span></span>
 
 ```json
 {
@@ -47,17 +46,17 @@ GET [Organizaton URI]/api/data/v9.1/RefreshHumanResourcesVirtualEntities
 }
 ```
 
-## <a name="review-payroll-entities"></a><span data-ttu-id="fd2f3-110">Bérlistaentitások áttekintése</span><span class="sxs-lookup"><span data-stu-id="fd2f3-110">Review payroll entities</span></span>
+## <a name="review-payroll-entities"></a><span data-ttu-id="298be-110">Bérlistaentitások áttekintése</span><span class="sxs-lookup"><span data-stu-id="298be-110">Review payroll entities</span></span>
 
-<span data-ttu-id="fd2f3-111">Az API-val beolvashatja azon entitások listáját, amelyek sikeresen létre vannak hozva, és használatra készek.</span><span class="sxs-lookup"><span data-stu-id="fd2f3-111">Use this API to retrieve a list of the entities that have been successfully generated and are ready for use.</span></span>
+<span data-ttu-id="298be-111">Az API-val beolvashatja azon entitások listáját, amelyek sikeresen létre vannak hozva, és használatra készek.</span><span class="sxs-lookup"><span data-stu-id="298be-111">Use this API to retrieve a list of the entities that have been successfully generated and are ready for use.</span></span>
 
-<span data-ttu-id="fd2f3-112">**Kérelem**</span><span class="sxs-lookup"><span data-stu-id="fd2f3-112">**Request**</span></span>
+<span data-ttu-id="298be-112">**Kérelem**</span><span class="sxs-lookup"><span data-stu-id="298be-112">**Request**</span></span>
 
 ```http
 GET [Organizaton URI]/api/data/v9.1/mshr_hrvirtualentitycatalogs?$filter=mshr_hasbeengenerated eq true
 ```
 
-<span data-ttu-id="fd2f3-113">**Válasz**</span><span class="sxs-lookup"><span data-stu-id="fd2f3-113">**Response**</span></span>
+<span data-ttu-id="298be-113">**Válasz**</span><span class="sxs-lookup"><span data-stu-id="298be-113">**Response**</span></span>
 
 ```json
 {
