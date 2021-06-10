@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: ilyako
 ms.search.validFrom: 2021-05-05
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 7761366c0372c105ecbd4281c7bafa44bf6cf7b5
-ms.sourcegitcommit: 905a8c7a0c1bc06ada2acfba913dfe5f7b44ea16
+ms.openlocfilehash: b88d3fe97d14d3e2f766367de501148063582000
+ms.sourcegitcommit: 16376a301a0f121f384d77f9976638f701f8e88e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/14/2021
-ms.locfileid: "6039927"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6123362"
 ---
 # <a name="customer-aging-snapshots"></a>Vevő korosítási pillanatképek
 
@@ -28,6 +28,8 @@ ms.locfileid: "6039927"
 Ez a témakör a vevőkorosítási pillanatképekkel kapcsolatban tartalmaz információkat. A korosítási pillanatkép kiszámítja egy vevőcsoport korosított egyenlegeit egy időpontra. Létrehozhat korosítási pillanatképrekordokat minden vevőre vagy egy adott vevőgyűjtőben levő vevőkre vonatkozóan.
 
 A korosítási pillanatkép információ megjelennek a **Korosított egyenlegek** listaoldalon és a **Beszedés** lapon. A listalap használatához előbb létre kell hozni egy korosítási pillanatképet a **Korosított egyenlegek** listaoldalon. A listaoldal csak olyan vevőkről sorol fel információt, amelyek számára lett korosítási pillanatkép készítve.
+
+A **Vevői jóváírások és beszedések** munkaterületen a vevők korosítása is látható. A további tudnivalókat lásd a [Jóváírás- és beszedéskezelés Power BI-tartalomban](credit-collections-power-bi.md).
 
 > [!NOTE]
 > A korosítási pillanatképek létrehozásához szükséges idő csökkentése érdekében kapcsolja be a **Vevőkorosítási teljesítmény javítása** funkciót a **Szolgáltatáskezelés** munkaterületen. Ha viszont be van kapcsolva ez a funkció, ne használjon vevőgyűjtőket. Ha egy vevőgyűjtő van kiválasztva, a funkció nem működik, de így is létrehozhat korosítási pillanatképet.
@@ -62,4 +64,3 @@ Javasoljuk, hogy ezt a folyamatot kötegben futtáshoz ütemezze.
 > [!NOTE]
 > A kötegteljesítmény javításához a korosítási pillanatképek létrehozásakor, írjon be egy számot a **Kötegfeladatok maximális száma** mezőben a **Beszedések alapértékei** gyorslapon a **Beszedések** lapon a **Kinnlévőségek paraméterei** oldalon. A **Vevői egyenlegek korosítása** mezőben ajánlott a **100**-as alapértelmezett értékkel kezdődni, majd az érték módosításával optimalizálni a feldolgozást az ön helyzetéhez.
 
-A **Vevői jóváírások és beszedések** munkaterületen a vevők korosítása is látható. A további tudnivalókat lásd a [Jóváírás- és beszedéskezelés Power BI-tartalomban](credit-collections-power-bi.md).

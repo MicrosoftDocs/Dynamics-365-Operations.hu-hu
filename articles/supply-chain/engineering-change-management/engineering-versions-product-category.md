@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: d6e5725255c43b808d656a46cbcdeca4d200b768
-ms.sourcegitcommit: 890a0b3eb3c1f48d786b0789e5bb8641e0b8455e
+ms.openlocfilehash: 3509763c03ecc0e847c72828d14b172401df75b0
+ms.sourcegitcommit: 588f8343aaa654309d2ff735fd437dba6acd9d46
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "5920157"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6115145"
 ---
 # <a name="engineering-versions-and-engineering-product-categories"></a>Mérnöki változatok és mérnöki termékkategóriák
 
@@ -48,7 +48,8 @@ A mérnöki termékek használatakor minden termék rendelkezik legalább egy m�
 - A terméket létrehozó és birtokló mérnöki vállalat (A mérnöki vállalatokkal és az operatív vállalatokkal kapcsolatos további tudnivalókat lásd a [Mérnöki vállalatok és az adatok tulajdonlásának szabályai](engineering-org-data-ownership-rules.md) részben.)
 - Kapcsolódó mérnöki dokumentumok, például összeállítási kézikönyv, felhasználói utasítások, képek és hivatkozások
 - A mérnöki attribútumok (További információ: [Mérnöki attribútumok és mérnöki attribútumok keresése](engineering-attributes-and-search.md).)
-- A mérnöki anyagjegyzékek
+- Anyagjegyzék tervezési termékekhez
+- Folyamatszerű gyártással előállított termékekhez használatos képletek
 - A mérnöki útvonalak
 
 Ezeket az adatokat egy meglévő verzión frissítheti, vagy létrehozhat egy új verziót egy *mérnöki módosítási rendelés* használatával. (További információ: [A mérnöki termékek módosításának kezelése](engineering-change-management.md).) Ha egy termék új verzióját hozza létre, a rendszer az összes műszaki szempontból releváns adatot átmásolja az adott új verzióra. Ezután módosíthatja az új verzió adatait. Ily módon nyomon követheti az egyes egymást követő verziók konkrét adatait. Az egymást követő mérnöki verziók közötti különbségek összehasonlításához vizsgálja meg a mérnöki módosítási rendelést, amely tartalmazza az összes változást jelző módosítástípusokat.
@@ -110,6 +111,8 @@ A mérnöki termékkategóriák kezeléséhez lépjen a **Mérnöki változtatá
 | Mező | Leírás |
 |---|---|
 | Terméktípus | Adja meg, hogy a kategória vonatkozik-e a termékekre vagy szolgáltatásokra. |
+| Termelés típusa | Ez a mező csak akkor látható, ha engedélyezte a [receptúrák változásának kezelését](manage-formula-changes.md). Válassza ki azt a termelési típust, amelyre ez a tervezési termékkategória vonatkozik:<ul><li>**Tervezési cikk** – ezzel a tervezési kategóriával a tervezési cikkek receptúráinak változásai kezelhetők. A tervezési cikkek receptúrákat használnak. Hasonlítanak a receptúrás cikkekhez, de csak társ- és melléktermékek előállításához használatosak, késztermékekéhez nem. A receptúrák a folyamatszerű gyártás során használatosak.</li><li>**Anyagjegyzék** – ezzel a tervezési kategóriával az olyan tervezési termékek kezelhetők, amelyek nem használnak receptúrát, és jellemzően (de nem feltétlenül) anyagjegyzékeket tartalmaznak.</li><li>**Receptúra** – ezzel a tervezési kategóriával a befejezett termékek receptúráinak változásai kezelhetők. Ezek a cikkek majd rendelkeznek receptúrával, anyagjegyzékkel viszont nem. A receptúrák a folyamatszerű gyártás során használatosak.</li></ul> |
+| Tényleges súly | Ez a beállítás csak akkor látható, ha engedélyezte a [receptúrák változásának kezelését](manage-formula-changes.md). Csak akkor érhető el, ha a **Termelés típusa** mező értéke *Tervezési cikk* vagy *Receptúra*. A beállításnál adja meg az *Igen* értéket, ha ezt a tervezési kategóriát a tényleges súly támogatását igénylő cikkek kezelésére szeretné használni. |
 | A tranzakciók verziójának nyomon követése | Válassza ki, hogy a termék verzióját minden tranzakcióra rá kell-e bélyegezni (logisztikai hatás). Ha például nyomon követi a verziót a tranzakciókban, minden értékesítési rendelés megmutatja, hogy a termék melyik verzióját értékesítették az adott értékesítési rendelésben. Ha nem követi nyomon a verziót a tranzakciókban, az értékesítési rendelések nem jelenítik meg, hogy melyik verziót értékesítették. Ehelyett mindig a legújabb verziót jelenítik meg.<ul><li>Ha ez a beállítás *Igen*, akkor a termék alapterméke létrejön, és a termék minden verziója a *verzió* termékdimenziót használó változat lesz. A **Termék altípusa** mező automatikusan *Alaptermék* értékre van állítva, és a **Termékdimenzió csoport** mezőben ki kell választania egy termékdimenzió csoportot, ahol a *verzió* dimenzió aktív. Csak azok a termékdimenzió-csoportok jelennek meg, ahol a *verzió* aktív dimenzió. Új termékdimenzió-csoportokat a **Szerkesztés** gombra (ceruza szimbólum) kattintva hozhat létre.</li><li>Ha ez a beállítás *Nem*, a *verzió* termékdimenzió nem lesz használva. Ezután kiválaszthatja, hogy más dimenziókat használó terméket vagy alapterméket szeretne-e létrehozni.</li></ul><p>Ezt a beállítást gyakran használják olyan termékeknél, amelyek költségkülönbséggel rendelkeznek a verziók között, vagy olyan termékeknél, amelyeknél eltérő feltételek vonatkoznak a vevőre. Ezért fontos jelezni, hogy melyik verziót használták az egyes tranzakciókban.</p> |
 | Termékaltípus | Válassza ki, hogy a kategóriában lesznek-e termékek vagy alaptermékek. Az alaptermékek esetében termékdimenziókat kell használni.
 | Termékdimenzió-csoport | A **Tranzakciók verzióinak nyomon követése** beállítás segít kiválasztani a termék dimenziócsoportját. Ha megadta, hogy nyomon szeretné követni a verziót a tranzakciókban, akkor megjelennek azok a termékdimenzió-csoportok, ahol a *verzió* dimenziót használják. Egyébként csak azok a termékdimenzió-csoportok jelennek meg, ahol a *verzió* dimenzió nincs használatban. |
@@ -139,7 +142,10 @@ A rácshoz hozzáadott minden egyes sorhoz állítsa be a következő mezőket.
 
 ### <a name="readiness-policy-fasttab"></a>Készenléti házirend gyorslap
 
-A **Termékkészenléti házirend** mezőben választhatja ki az ebbe a kategóriába tartozó termékekre vonatkozó készenléti házirendet. További információ: [Termékkészenlét](product-readiness.md).
+A **Termékkészenléti házirend** mezőben válassza ki az ezen tervezési kategória alapján létrehozott termékekre alkalmazandó készenléti házirendet. További információ: [Termékkészenlét](product-readiness.md).
+
+> [!NOTE]
+> A **Termékkészenléti házirend** mező kissé eltérően működik, ha bekapcsolja a *Termék készenléti ellenőrzései* funkciót. (Ezzel a funkcióval a szokásos, \[nem tervezési\] termékekre vonatkozó vonatkozó készenléti házirendek alkalmazhatók.) További információ: [Készenléti házirendek hozzárendelése a szokásos és a tervezési termékekhez](product-readiness.md#assign-policy).
 
 ### <a name="release-policy-fasttab"></a>Kiadási házirend gyorslap
 

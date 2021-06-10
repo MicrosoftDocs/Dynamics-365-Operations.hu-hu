@@ -9,12 +9,12 @@ ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-31
-ms.openlocfilehash: 95472a00d34ba939ac89b4e2484f34d50bee3088
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 90ddbe704ab21d62752b581a813601e8986c2103
+ms.sourcegitcommit: 180548e3c10459776cf199989d3753e0c1555912
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018312"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6112673"
 ---
 # <a name="upgrade-to-the-party-and-global-address-book-model"></a>Frissítés a fél és globális címjegyzék modelljére
 
@@ -22,28 +22,29 @@ ms.locfileid: "6018312"
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Az [Azure Data Factory sablon](https://aka.ms/dual-write-gab-adf) segít frissíteni a partner és a globális címjegyzék modellbe a kettős írású, meglévő **Partner**, **Kapcsolattartó** és **Szállító** táblaadatokat. A sablon az Finance and Operations alkalmazásokból és az ügyfélkapcsolati alkalmazásokból származó adatokat is egyezteti. A folyamat végén a **Partner** rekordjaihoz tartozó **Partner** és **Kapcsolattartó** mezők létrejönnek, és társítva lesznek az ügyfélkapcsolati pályázatok **Számla**, **Kapcsolattartó** és **Szállító** rekordjaihoz. A rendszer .csv fájlt (`FONewParty.csv`) hoz létre, hogy új **Partner** rekordokat hozzon létre az Finance and Operations alkalmazáson belül. Ez a témakör az adat-előállító sablon használatára és az adatok frissítésére vonatkozó útmutatást tartalmaz.
+A [Microsoft Azure Data Factory sablon](https://aka.ms/dual-write-gab-adf) segít frissíteni a kettős írású **Fiók**, **Kapcsolattartó** és **Szállító** táblaadatokat a partneri és a globális címjegyzék modelljére. A sablon a Finance and Operations- és a Customer Engagement-alkalmazásokból származó adatokat is egyezteti. A folyamat végén a **Partner** rekordjaihoz tartozó **Partner** és **Kapcsolattartó** mezők létrejönnek, és társítva lesznek az ügyfélkapcsolati pályázatok **Számla**, **Kapcsolattartó** és **Szállító** rekordjaihoz. A rendszer .csv fájlt (`FONewParty.csv`) hoz létre, hogy új **Partner** rekordokat hozzon létre a Finance and Operations-alkalmazáson belül. Ez a témakör a Data Factory-sablon használatára és az adatok frissítésére vonatkozó útmutatást tartalmaz.
 
 Ha nincsenek testreszabásai, a sablont használhatja úgy, ahogy van. Ha testreszabott beállításai vannak a **számlához**, a **kapcsolattartóhoz** és a **szállítóhoz**, akkor a következő útmutatásokkal kell módosítania a sablont.
 
-> [!Note]
+> [!NOTE]
 > A sablon csak a **Partner** adatait frissíti. Egy későbbi verzióban a postai és az elektronikus címek is szerepelni fognak.
 
 ## <a name="prerequisites"></a>Előfeltételek
 
-Ezek az előfeltételek kötelezők:
+A partneri és a globális címjegyzék modelljére való frissítéséhez a következő előfeltételek szükségesek:
 
 + [Azure-előfizetés](https://portal.azure.com/)
 + [Hozzáférés a sablonhoz](https://aka.ms/dual-write-gab-adf)
-+ Ön már kettős írási ügyfél.
++ Önnek kettős írású ügyfélnek kell lennie.
 
 ## <a name="prepare-for-the-upgrade"></a>Felkészülés a frissítésre
+A frissítés előkészítéséhez a következő tevékenységek szükségesek:
 
-+ **Teljesen szinkronizálva:** Mindkét környezet teljesen szinkronizált állapotban van a **számla (vevő)**, a **kapcsolattartó** és a **szállító** esetében.
++ **Teljesen szinkronizálva:** Mindkét környezet teljesen szinkronizálva van a **Számla (vevő)**, a **Kapcsolattartó** és a **Szállító** esetében.
 + **Integrációs kulcsok**: a **Számla (Vevő)**, a **Kapcsolattartó** és a **Szállító** tábla az ügyfélkapcsolati alkalmazásokban a gyárilag beépített integrációs kulcsokat használja. Ha testre szabta az integrációs kulcsokat, testre kell szabni a sablont.
 + **Partnerszámszám**: a frissítésre sorra kerülő összes **Számla (Vevő)**, **Kapcsolattartó** és **Szállító** rekordnak van **partnerszáma**. A **Partnerszám** nélküli rekordokat figyelmen kívül hagyja a rendszer. Ha frissíteni szeretné ezeket a rekordokat, a frissítési folyamat kezdete előtt adjon hozzá egy **Partnerszámot**.
-+ **Rendszerszünet**: A frissítési folyamat során mind a Finance and Operations, mind az ügyfélkapcsolati környezeteket kapcsolat nélkül módba kell vinni.
-+ **Pillanatkép**: Pillanatkép készítése mind a Finance and Operations, mind az ügyfélkapcsolati alkalmazásokról. A pillanatképek segítségével szükség esetén visszaállíthatja az előző állapotot.
++ **Rendszerszünet**: A frissítési folyamat során mind a Finance and Operations-, mind a Customer Engagement-környezeteket kapcsolat nélkül módba kell vinni.
++ **Pillanatkép**: Pillanatkép készítése mind a Finance and Operations-, mind a Customer Engagement-alkalmazásokról. A pillanatképek segítségével szükség esetén visszaállíthatja az előző állapotot.
 
 ## <a name="deployment"></a>Telepítés
 
@@ -78,15 +79,19 @@ Ezek az előfeltételek kötelezők:
     FO összekapcsolt Service_properties_type Properties_tenant | Adja meg azt a bérlői információt (tartománynevet vagy bérlőazonosítót), amely alatt az alkalmazás található.
     FO összekapcsolt Service_properties_type Properties_aad Resource Id | `https://sampledynamics.sandboxoperationsdynamics.com`
     FO összekapcsolt Service_properties_type Properties_service Principal Id | Az alkalmazás ügyfélazonosítójának megadása.
-    Dynamics Crm csatolt Service_properties_type Properties_username | A Dynamics-csatlakozáshoz használt felhasználónév.
+    Dynamics Crm csatolt Service_properties_type Properties_username | A Dynamics 365-csatlakozáshoz használt felhasználónév.
 
-    A további tudnivalókat lásd: [Erőforrás-kezelő sablon manuális promóciója az egyes környezetek számára](/azure/data-factory/continuous-integration-deployment#manually-promote-a-resource-manager-template-for-each-environment), a [Kapcsolt szolgáltatás tulajdonságai](/azure/data-factory/connector-dynamics-ax#linked-service-properties), valamint [Adatok másolása az Azure Data Factory segítségével](/azure/data-factory/connector-dynamics-crm-office-365#dynamics-365-and-dynamics-crm-online)
+    További tájékoztatás a következő témakörökben található: 
+    
+    - [Erőforrás-kezelő sablon manuális promóciója az egyes környezetek számára](/azure/data-factory/continuous-integration-deployment#manually-promote-a-resource-manager-template-for-each-environment)
+    - [Kapcsolt szolgáltatás tulajdonságai](/azure/data-factory/connector-dynamics-ax#linked-service-properties)
+    - [Adatok másolása az Azure Data Factory segítségével](/azure/data-factory/connector-dynamics-crm-office-365#dynamics-365-and-dynamics-crm-online)
 
 10. A telepítést követően ellenőrizze az adattárat, az adatáramlást és az adat-előállító kapcsolt szolgáltatását.
 
    ![Adatkészletek, adatáramlás és csatolt szolgáltatás](media/data-factory-validate.png)
 
-11. Lépjen a **Kezelés** elemre. A **Kapcsolatok** alatt válassza a **Csatolt szolgáltatás** lehetőséget. Válassza a **DynamicsCrmLinkedService** elemet. A **Csatolt szolgáltatás szerkesztése képernyőn (Dynamics CRM)** írja be a következő értékeket:
+11. Lépjen a **Kezelés** elemre. A **Kapcsolatok** alatt válassza a **Csatolt szolgáltatás** lehetőséget. Válassza a **DynamicsCrmLinkedService** elemet. A **Csatolt szolgáltatás szerkesztése (Dynamics CRM)** űrlapon írja be a következő értékeket.
 
     Mező | Érték
     ---|---
@@ -102,7 +107,7 @@ Ezek az előfeltételek kötelezők:
 
 ## <a name="run-the-template"></a>Futtassa a sablont
 
-1. A következő **Számla**, **Kapcsolattartó** és **Szállító** kettős írásának leállítása az Finance and Operations alkalmazás segítségével.
+1. Állítsa le a következő **Számla**, **Kapcsolattartó** és **Szállító** kettős írású leképezését a Finance and Operations alkalmazás segítségével.
 
     + Vevők V3 .(partnerek)
     + Vevők V3(kapcsolattartók)
@@ -114,7 +119,7 @@ Ezek az előfeltételek kötelezők:
 
 3. [Kettős írású fél és globális címjegyzék megoldások](https://aka.ms/dual-write-gab) telepítése innen: AppSource.
 
-4. Az Finance and Operations alkalmazásban, ha a következő táblák adatokat tartalmaznak, futtassa az **Kezdeit szinkronizálás** műveletet.
+4. Ha a Finance and Operations alkalmazásban a következő táblák adatokat tartalmaznak, futtassa a **Kezdeti szinkronizálás** műveletet.
 
     + Üdvözlések
     + Személyes karaktertípusok
@@ -123,7 +128,7 @@ Ezek az előfeltételek kötelezők:
     + Döntéshozatali szerepkörök
     + Hűségszintek
 
-5. Az ügyfélkapcsolati alkalmazásban tiltsa le a következő beépülőmodul-lépéseket.
+5. A Customer Engagement alkalmazásban tiltsa le a következő beépülőmodul-lépéseket.
 
     + Számla frissítése
          + Microsoft.Dynamics.GABExtended.Plugins.UpdatePartyAttributesFromAccountEntity: Számla frissítése
@@ -152,16 +157,16 @@ Ezek az előfeltételek kötelezők:
     ![Futtatás kiváltása](media/data-factory-trigger.png)
 
     > [!NOTE]
-    > Ha testreszabott beállításai vannak a **számlához**, a **kapcsolattartóhoz** és a **szállítóhoz**, módosítania kell a sablont.
+    > Ha testre szabott beállításai vannak a **Számlához**, a **Kapcsolattartóhoz** és a **Szállítóhoz**, módosítania kell a sablont.
 
 8. Importálja az új **Partner** rekordjait az Finance and Operations alkalmazásból.
 
     + Töltse le a `FONewParty.csv` fájlt az Azure blobtárolóból. Elérési út a következő: `partybootstrapping/output/FONewParty.csv`.
-    + Konvertálja a `FONewParty.csv` fájlt Excel-fájlba és az Excel-fájlt importálja az Finance and Operations alkalmazásba.  Ha a csv import megfelelő, akkor közvetlenül importálhatja a csv fájlt. Az importálás az adatmennyiségtől függően néhány óráig is igénybe vehet. A további tudnivalókat lásd: [Adatimportálási és -exportálási feladatok áttekintése](../data-import-export-job.md).
+    + Konvertálja a `FONewParty.csv` fájlt Excel-fájlba, és az Excel-fájlt importálja a Finance and Operations alkalmazásba. Ha a csv import megfelelő, akkor közvetlenül importálhatja a csv fájlt. Az importálás az adatmennyiségtől függően néhány óráig is igénybe vehet. A további tudnivalókat lásd: [Adatimportálási és -exportálási feladatok áttekintése](../data-import-export-job.md).
 
     ![A Datavers fél rekordjainak importálása](media/data-factory-import-party.png)
 
-9. Az ügyfélkapcsolati alkalmazásokban engedélyezze a következő beépülőmodul-lépéseket:
+9. A Customer Engagement-alkalmazásokban engedélyezze a következő beépülőmodul-lépéseket:
 
     + Számla frissítése
          + Microsoft.Dynamics.GABExtended.Plugins.UpdatePartyAttributesFromAccountEntity: Számla frissítése
@@ -198,4 +203,4 @@ Ezek az előfeltételek kötelezők:
 
 ## <a name="learn-more-about-the-template"></a>További tudnivalók a sablonról
 
-A sablonhoz tartozó megjegyzések a [readme.md](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Dual-write/Upgrade%20data%20to%20dual-write%20Party-GAB%20schema/readme.md) fájlban találhatók.
+További információk a sablonról: [Az Azure Data Factory-sablonra vonatkozó megjegyzések, readme](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Dual-write/Upgrade%20data%20to%20dual-write%20Party-GAB%20schema/readme.md).

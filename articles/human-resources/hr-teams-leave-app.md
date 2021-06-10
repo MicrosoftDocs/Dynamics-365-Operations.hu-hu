@@ -2,13 +2,12 @@
 title: Szabadság- és távollétkérelmek kezelése a Teams alkalmazásban
 description: Ez a témakör azt mutatja be, hogyan lehet szabadságot kérelmezni a Dynamics 365 Human Resources alkalmazásban a Microsoft Teams rendszerben.
 author: andreabichsel
-ms.date: 02/23/2021
+ms.date: 05/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: LeaveAbsenceWorkspace
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2ea495259ba29f302753991e260d5a8fa990322b
-ms.sourcegitcommit: e3f11fc9a9dae416a490437678bb482a0094f9a9
+ms.openlocfilehash: 661bb8369fe4dbe6cdf6ee0fb05d16f4350ecf5a
+ms.sourcegitcommit: c5c8f19a696ad4a3d68dffd63bfe7b484b999d2b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "5953412"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "6097259"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Szabadságkérelmek kezelése a Teamsben
 
@@ -33,21 +32,13 @@ A Dynamics 365 Human Resources alkalmazás a Microsoft Teams rendszerben lehető
 
 A Dynamics 365 Human Resources alkalmazás a Teams áruházban található.
 
-1. A Microsoft Teams rendszerben válassza ki a három pontot.
-
-   ![Human Resources Teams szabadságkezelő alkalmazás három pontja](./media/hr-teams-leave-app-ellipses.png)
+1. A Microsoft Teamsben lépjen az alkalmazások listájához.
  
 2. Keresse meg a Dynamics 365 Human Resources alkalmazást, majd válassza ki a **Human Resources** címet.
 
-   ![Human Resources Teams szabadságkezelő alkalmazás HR címe](./media/hr-teams-leave-app-human-resources-tile.png)
-
 3. Válassza a **Hozzáadás** gombot az alkalmazás telepítéséhez.
 
-   ![Human Resources Teams szabadságkezelő alkalmazás telepítése](./media/hr-teams-leave-app-in-store.png)
-
 Ha az alkalmazás nem lépteti be automatikusan, válassza a **Beállítás** lapot a bejelentkezéshez.
-
-![Human Resources Teams szabadságkezelő alkalmazás Beállítások lap](./media/hr-teams-leave-app-settings-tab.png)
 
 > [!NOTE]
 > Ha nem jelenik meg a bejelentkezési párbeszédpanel, ellenőrizze, hogy az előugró ablakok engedélyezve vannak-e a böngésző beállításaiban. 
@@ -61,20 +52,24 @@ Ha egynél több Human Resources-példányhoz van hozzáférése, akkor a **Beá
 
 Az alkalmazás telepítése után egy üdvözlő üzenet jelenik meg, amely ismerteti, hogy milyen típusú intézkedéseket tehet a robot az Ön nevében.
 
-![Human Resources Teams szabadságkezelő alkalmazás robot üdvözlőüzenete](./media/hr-teams-leave-app-bot.png)
- 
 > [!NOTE]
 > A robottal való első interakciót követően szükség lehet a bejelentkezésre. Ha nem jelenik meg a bejelentkezési párbeszédpanel, ellenőrizze, hogy az előugró ablakok engedélyezve vannak-e a böngésző beállításaiban.
 
 A robot a következőre kérhető:
 
-- Szabadságkérelem indítása az Ön számára.
+- Az aktuális szabadságegyenlegek megtekintése. Elküldheti például a következő üzenetet: „Tekintse meg a szabadságegyenlegeket”.
+
+- Szabadságkérelem indítása az Ön számára. Ha konkrétabb szabadságkérelmet szeretne a szabadság típusához, elküldheti például a következő üzenetet: „Szabadságot kérek a következő csütörtökre és péntekre”. 
 
   ![Szabadságkérés indítása a Teams-csevegésben](./media/hr-teams-leave-app-initiate.png)
 
 - A csevegőrobot automatikusan kitölti a szabadságra vonatkozó kérést. Válassza ki a **Távollét kérelmezése** lehetőséget, és szerkessze a kérés részleteit.
 
-  ![Szabadságkérelem részletes adatainak szerkesztése](./media/hr-teams-leave-app-details.png)
+   Ha ugyanahhoz a dátumhoz több szabadságtípusra vonatkozóan szeretne szabadságkérelmet küldeni, válassza a **Nap felosztása a következővel** elemet a **További beállítások** menüben. 
+
+   Ha a szabadságkérelem napokban van megadva, de Ön félnapos szabadságot választ, megadhatja, hogy a nap első vagy második felére kéri a szabadságot. Ehhez válassza ki a **Félnapos meghatározás** elemet a **További beállítások** menüben.
+   
+   ![Félnapos meghatározások](./media/HalfDayDefinitions.png)
 
 - Ha végzett a szabadságkérés részleteinek szerkesztésével, a **Küldés** gombot kiválasztva küldje el jóváhagyásra.
 
@@ -91,42 +86,36 @@ A **Szabadság** lapon a következők jeleníthetők meg:
 - Szabadságkérelmek
 
 - Vázlat szabadságkérelmek
-
-![Human Resources Teams szabadságkezelő alkalmazás Szabadság lap](./media/hr-teams-leave-app-timeoff-tab.png)
  
 ### <a name="create-a-new-request"></a>Új kérelem létrehozása
 
 1. Új szabadségkérelem létrehozásához válassza az **Új kérelem** lehetőséget.
 
-   ![Human Resources Teams szabadságkezelő alkalmazás Új kérelem](./media/hr-teams-leave-app-timeoff-tab-new.png)
-
 2. Adja meg a kivenni kívánt napot vagy napokat, majd válassza a **Hozzáadás** lehetőséget.
 
-   ![Human Resources Teams szabadságkezelő alkalmazás szabadság hozzáadása](./media/hr-teams-leave-app-timeoff-tab-add.png)
+   ![Human Resources Teams szabadságkezelő alkalmazás szabadság hozzáadása](./media/TimeOffHours.png)
 
 3. Ha szükséges, írjon be egy okkódot. Adjon meg bármilyen megjegyzést, és vegyen fel hozzá mellékleteket.
 
-4. Ha befejezte az adatok megadását, írja be az **Elküldés** kifejezést, hogy elküldje jóváhagyásra. Beírhatja a **Mentés piszkozatként** kifejezést is, hogy később visszatérhessen hozzá.
+4. Ha több, különböző típusú távolléti kérelmet szeretne ugyanahhoz a dátumhoz kérni, válassza a **Nap felosztása a következővel** elemet a **További beállítások** menüben.
+
+5. Annak meghatározásához, hogy az első vagy a második fél napot szeretné szabadságként kérni, válassza a **Félnapos meghatározás** lehetőséget. Ez a beállítás akkor érhető el, ha a szabadság kérelemegysége nap, és a kért mennyiség 0,5 nap.
+
+6. Ha befejezte az adatok megadását, válassza az **Elküldés** lehetőséget, hogy elküldje jóváhagyásra. Beírhatja a **Mentés piszkozatként** kifejezést is, ha később vissza szeretne térni.
 
 ### <a name="manage-draft-requests"></a>Vázlat kérelmek kezelése
 
 1. Válassza ki a **Vázlatok** lapot.
 
-   ![Human Resources Teams szabadságkezelő alkalmazás Vázlatok lap](./media/hr-teams-leave-app-drafts-tab.png)
-
 2. A kérelem szerkesztéséhez válassza ki a ceruzát, vagy válassza ki a szemétkosarat a kérelem törléséhez.
 
 3. Hajtsa végre a szükséges módosításokat. Ha befejezte az adatok megadását, írja be az **Elküldés** kifejezést, hogy elküldje jóváhagyásra. Választhatja a **Mentés piszkozatként** lehetőséget is, hogy később visszatérhessen hozzá.
-
-   ![Human Resources Teams szabadságkezelő alkalmazás vázlat szerkesztése](./media/hr-teams-leave-app-drafts-edit.png)
    
 ### <a name="respond-to-teams-notifications"></a>Válaszadás a Teams értesítéseire
 
 Ha Ön vagy egy olyan dolgozó, akinek Ön jóváhagyója a szabadságkérelmet küld be, akkor a Teamsben értesítést kap a Human Resources alkalmazásban. A megtekintéséhez kiválaszthatja az értesítést. Az értesítések megjelennek a **Csevegés** területen is.
 
 Ha a jóváhagyó, akkor az értesítésben kiválaszthatja a **Jóváhagyás** vagy **Elutasítás** lehetőséget. Egy opcionális üzenetet is megadhat.
-
-![Szabadságkérelem értesítése a Human Resources Teams alkalmazásban](./media/hr-teams-leave-app-notification.png)
 
 ## <a name="send-upcoming-time-off-information-to-your-coworkers"></a>Várható szabadságadatok küldése a munkatársai számára
 
@@ -138,15 +127,9 @@ Miután telepítette az Human Resources alkalmazást a Teams számára, egyszer�
 
 2. Válassza ki a megosztani kívánt szabadságkérelmet. Ha meg szeretné osztani egy vázlat szabadságkérelmet, először válassza a **Vázlatok** lehetőséget.
 
-   ![Egy közelgő szabadságkérelem kiválasztása megosztásra](./media/hr-teams-leave-app-chat-search.png)
-
 A szabadságkérelem a csevegésben fog megjelenni.
 
-![A Human Resources szabadságkérelem kártya](./media/hr-teams-leave-app-chat-card.png)
-
-Ha megosztott egy vázlat állapotú kérelmet, akkor a program vázlatként jeleníti meg:
-
-![A Human Resources vázlat szabadságkérelem kártya](./media/hr-teams-leave-app-chat-draft-card.png)
+Ha megosztott egy vázlat állapotú kérelmet, akkor a program vázlatként jeleníti meg.
 
 ## <a name="view-your-teams-leave-calendar"></a>A csapata szabadságnaptárának megtekintése
 
@@ -155,8 +138,6 @@ Ha Ön közvetlen beosztottakkal rendelkező vezető, akkor megtekintheti a csop
 1. A Teamsben a Human Resources alkalmazásban válassza a **Távollét** lehetőséget.
 
 2. Válassza ki a **Csoport naptárát**. A naptárban a közvetlen beosztottjai jóváhagyott és a függőben lévő távollétei láthatók.
-
-   ![Naptár megtekintése a Human Resources Teams alkalmazásban](./media/hr-teams-leave-app-view-calendar.png)
 
    > [!NOTE]
    > Ha nem látja a csapatnaptárat, kérje meg a rendszergazdát, hogy engedélyezze. További információ: [Telepítés és beállítás](hr-admin-teams-leave-app.md#install-and-setup).

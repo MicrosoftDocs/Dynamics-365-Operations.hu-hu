@@ -1,8 +1,8 @@
 ---
 title: Főkönyvi kivonat pénzügyi jelentés
 description: Ez a cikk a főkönyvi kivonatok alapértelmezett jelentéseit mutatja be. Ismerteti továbbá azokat az építőelemeket, amelyek ezekhez a jelentésekhez kapcsolódnak, illetve beszámol arról, hogy miként módosíthatja a jelentéseket, hogy azok megfeleljenek az üzleti követelményeinek.
-author: jcart1106
-ms.date: 06/20/2017
+author: jinniew
+ms.date: 05/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6a9902471101b752c4b09d8ae28eb673743b7a53
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 26ec03422315a280f7e779f992cf694eb5f845ea
+ms.sourcegitcommit: 365092f735310990e82516110141d42aaf04e654
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5816931"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "6103658"
 ---
 # <a name="trial-balance-financial-reports"></a>Főkönyvi kivonat pénzügyi jelentés
 
@@ -28,8 +28,7 @@ ms.locfileid: "5816931"
 
 Ez a cikk a főkönyvi kivonatok alapértelmezett jelentéseit mutatja be. Ismerteti továbbá azokat az építőelemeket, amelyek ezekhez a jelentésekhez kapcsolódnak, illetve beszámol arról, hogy miként módosíthatja a jelentéseket, hogy azok megfeleljenek az üzleti követelményeinek. 
 
-<a name="default-trial-balance-reports"></a>Alapértelmezett főkönyvi kivonat jelentés
------------------------------
+## <a name="default-trial-balance-reports"></a>Alapértelmezett főkönyvi kivonat jelentés
 
 A Pénzügyi jelentéskészítésben három főkönyvi kivonatra vonatkozó jelentés áll rendelkezésre.
 
@@ -47,6 +46,9 @@ A főkönyvi kivonat pénzügyi jelentések a következő építőelemekből ál
 | Részletes főkönyvi kivonat – Alapértelmezett               | Főkönyvi kivonat – Alapértelmezett | Részletes főkönyvi kivonat – Alapértelmezett               |
 | Összegző főkönyvi kivonat – Alapértelmezett                | Főkönyvi kivonat – Alapértelmezett | Összegző főkönyvi kivonat – Alapértelmezett                |
 | Éves összegző főkönyvi kivonat – Alapértelmezett | Főkönyvi kivonat – Alapértelmezett | Éves összegző főkönyvi kivonat – Alapértelmezett |
+
+> [!NOTE] 
+> Amikor a Financial Reporting szolgáltatásban futtatja a **Főkönyvi kivonat** jelentést, akkor legyen bejelölve az **Összegek nélküli sorok megjelenítése** és az **Aktív sorok nélküli jelentések megjelenítése** jelölőnégyzetet a **Beállítások** lapon.
 
 ### <a name="row-definition"></a>Sor definíciója
 
@@ -94,10 +96,7 @@ Minden egyes főkönyvi kivonati jelentés külön oszlopdefiníciót használ. 
     -   **FD** – A előző évre csak kötelezettségeket tartalmazó pénzügyi adatok
     -   **FD** – A előző évre csak jóváírásokat tartalmazó pénzügyi adatok
 
-
-
-<a name="additional-resources"></a>További erőforrások
---------
+## <a name="additional-resources"></a>További erőforrások
 
 [Pénzügyi jelentéskészítés – áttekintés](financial-reporting-getting-started.md)
 

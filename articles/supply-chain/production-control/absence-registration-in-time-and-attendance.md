@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-09-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b765ae63cfb17e26439758f2a0ed64770ef70881
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: a94df9dd706c2540779db70e794e4a0a3f2dd186
+ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5809278"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "6103022"
 ---
 # <a name="absence-registration-in-time-and-attendance"></a>Munkaidő és jelenlét távollét regisztrálása
 
@@ -101,7 +101,7 @@ A dolgozó időregisztrációt ki kell számítani és jóvá kell hagyni, miel�
 
 A jóváhagyó módosíthatja a dolgozó időregisztrációit. A jóváhagyó bármilyen, a dolgozó által regisztrált távollétet is módosíthat. Ha a jóváhagyó kézzel beír egy időszakot, amelynek távolléti kódja van, az adott időszakra vonatkozó távolléti kódot nem bírálja felül a munkaidő és jelenlét oldal paramétereinek alapértelmezett távolléti kódja.
 
-Például egy dolgozó 10:00 órakor blokkol be, és kiválaszt egy távolléti kódot, amely azt jelzi, hogy késik. Később a dolgozó tájékoztatja a felettesét, hogy 08:00 és 10:00 között orvosnál volt. Az orvos vizsgálat nem okozhat levonást a dolgozó fizetéséből. Ezért ebben az esetben a felügyelő módosíthatja a két órás távollétet 08:00 és 10:00 között kézzel beírva egy távolléti kódot, amely azt jelzi, hogy a két óra oka betegség volt.
+Egy dolgozó például 10:00 órakor blokkol be, és kiválaszt egy távolléti kódot, amely azt jelzi, hogy késik. Később a dolgozó tájékoztatja a felettesét, hogy 08:00 és 10:00 között orvosnál volt. Az orvos vizsgálat nem okozhat levonást a dolgozó fizetéséből. Ezért ebben az esetben a felügyelő módosíthatja a két órás távollétet 08:00 és 10:00 között kézzel beírva egy távolléti kódot, amely azt jelzi, hogy a két óra oka betegség volt.
 
 ### <a name="calculate-and-approve-absence"></a>Távollét kiszámítására és a jóváhagyása
 

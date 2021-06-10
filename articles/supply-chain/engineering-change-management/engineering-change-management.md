@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 56446e6a8abfcab83772e446dc7f01c529404b23
-ms.sourcegitcommit: 05210ceefd8816b889019b2a6554855f3c5b2a6c
+ms.openlocfilehash: d31c73964877aeb1556c93b03d276698e8d84d30
+ms.sourcegitcommit: 588f8343aaa654309d2ff735fd437dba6acd9d46
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "5954645"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6114999"
 ---
 # <a name="manage-changes-to-engineering-products"></a>A mérnöki termékek módosításának kezelése
 
@@ -92,9 +92,13 @@ Ez a lista csak tájékoztatásra szolgál. Ezért tetszőleges mennyiségű kap
 
 A **Forrás** gyorslap segítségével nyomon követheti a módosítási kérelem kezdőpontját. Ez például akkor lehet hasznos, ha látni szeretné, hogy a módosítás iránti kérelem egy értékesítési rendelésből jött-e létre, ki hozta létre, és melyik vállalatban jött létre.
 
-### <a name="evaluate-the-business-impact-of-a-change-request"></a>Módosítási kérelem üzleti hatásának kiértékelése
+### <a name="evaluate-the-business-impact-of-a-change-request-and-send-notifications"></a>A módosítási kérelmek és az értesítésküldések üzleti hatásának kiértékelése
 
-A módosítás iránti kérelem felülvizsgálatakor lehetőség van a függőségek megkeresésére. Ily módon mérhető a kért módosítás hatása a nyitott tranzakciókra, például az értékesítési rendelésekre, a termelési rendelésekre és az aktuális készletre.
+A módosítás iránti kérelem felülvizsgálatakor lehetőség van a függőségek megkeresésére. Ily módon mérhető a kért módosítás hatása a nyitott tranzakciókra, például az értékesítési rendelésekre, a termelési rendelésekre és az aktuális készletre. A módosítási kérelmek áttekintése során értesítést küldhet a kapcsolódó rendelések különböző típusainak teljesítéséért felelős személyeknek.
+
+#### <a name="review-affected-transactions-block-selected-transactions-and-send-notifications"></a>Az érintett tranzakciók áttekintése, a kijelölt tranzakciók blokkolása és értesítések küldése
+
+Az érintett tranzakciók áttekintéséhez, a kijelölt tranzakciók blokkolásához és az értesítések küldéséhez hajtsa végre az alábbi lépéseket.
 
 1. Lépjen a **Mérnöki változtatások kezelése \> Általános \> Mérnöki változtatások kezelése \> Mérnöki változtatási kérelmek** lehetőségre.
 1. Nyisson meg egy meglévő módosítási kérést, vagy új módosítási kérés létrehozásához válassza az **Új** parancsot a műveleti ablaktáblán.
@@ -103,7 +107,30 @@ A módosítás iránti kérelem felülvizsgálatakor lehetőség van a függős�
     - **Keresés** – az összes nyitott tranzakciót megvizsgálja, majd megnyitja az **Üzleti hatások a nyitott tranzakciókra** párbeszédpanelt, amely felsorolja azokat a tranzakciókat, amelyekre a módosítás hatással lesz.
     - **Előző keresés megtekintése** – megnyitja az **Üzleti hatások a nyitott tranzakciókra** párbeszédpanelt, amely felsorolja az előző keresés eredményét. (Az új keresés nem történt meg.)
 
-1. Ha a módosítást igénylő kiadás kritikus, akkor zárolhatja a nyitott tranzakciókat, vagy az **Üzleti hatások a nyitott tranzakciókra** párbeszédpanel eszközsávjának gombjaival értesítheti a felelős felhasználót.
+1. Az **Üzleti hatások a nyitott tranzakciókra** párbeszédpanelen lévő lapokon adott típusba tartozó érintett tranzakciók listája látható (**Értékesítési rendelések**, **Beszerzési rendelések**, **Termelési rendelések**, **Készlet**, stb.). Minden lapon látható, hogy hány érintett tranzakció tartozik az adott típusba. A megfelelő lista megtekintéséhez lépjen egy lapra.
+1. A listán lévő tranzakció használatához jelölje ki az elemet, majd válassza ki az eszköztáron a következő gombok valamelyikét:
+
+    - **Tranzakció megtekintése** – a kiválasztott tranzakciórekord megnyitása.
+    - **Rendelés zárolása** – ez a gomb csak az **Értékesítési rendelések** lapon érhető el. A gombbal zárolhatja a kijelölt értékesítési rendelést.
+    - **Sor zárolása** – ez a gomb csak a **Beszerzési rendelések** lapon érhető el. A gombbal zárolhatja a beszerzési rendelés kijelölt sorát.
+    - **Felelős értesítése** – ez a gomb csak az **Értékesítési rendelések** lapon érhető el. A használatával értesítést küldhet a kiválasztott értékesítési rendelésnél felelősként beállított felhasználónak.
+    - **Megrendelő értesítése** – ez a gomb csak az **Beszerzési rendelések** lapon érhető el. A használatával értesítést küldhet a kiválasztott beszerzési rendelésnél beállított megrendelőnek.
+    - **Termelés értesítése** – ez a gomb csak a **Termelési rendelések** lapon érhető el. Az értékesítési és a beszerzési rendelésektől eltérően a termelési rendelések esetében nincsen egyetlen olyan felhasználó, aki be lenne állítva a teljes rendeléshez felelősként. Ehelyett általában a különböző felügyelők vagy tervezők tulajdonában van egy adott hely vagy a termelés adott része (például konkrét erőforrások vagy erőforráscsoportok). Ennek megfelelően a gombra kattintás után minden olyan felhasználó, aki felelős a kiválasztott termelési rendeléshez kapcsolódó valamelyik erőforrásért, értesítést kap a módosításról.
+    - **Készítő értesítése** – ez a gomb csak az **Beszerzési igénylés** lapon érhető el. A használatával értesítést küldhet a kiválasztott beszerzési igénylésnél beállított készítőnek.
+    - **Értékesítési felelős értesítése** – ez a gomb csak az **Árajánlatok** lapon érhető el. A használatával értesítést küldhet a kiválasztott értékesítési rendelésnél felelősként beállított felhasználónak.
+    - **Selejt** – ez a gomb csak a **Készlet** lapon érhető el. A használatával a kiválasztott készletet selejtezheti le.
+    - **Előzmények megtekintése** – a kijelölt tranzakcióval kapcsolatos műveletek előzményeinek megnyitása az **Üzleti hatások a nyitott tranzakciókra** párbeszédpanelen. (Az előzményekben például látható, hogy az értesítések el lettek-e küldve, vagy a tranzakciók zárolva lettek-e.) 
+    - **Az összes tranzakció megjelenítése** – az összes tranzakciót (nem csak a nyitottakat) tartalmazó lista megnyitása.
+
+#### <a name="review-and-process-change-notifications-for-transactions"></a>A tranzakciók értesítéseinek áttekintése és feldolgozása
+
+A kapott módosítási értesítéseket a következőképpen olvashatja át és dolgozhatja fel:
+
+- A termelési rendelések kivételével az olyan módosítási értesítések, amelyek esetében Ön a felelős, a Műveletközpontban jelennek meg. A navigációs sáv jobb oldalán található **Üzenetek megjelenítése** gomb (harang szimbólum) jelzi, ha Műveletközpontban Önnek szóló üzenet látható. Az **Üzenetek megjelenítése** gombbal nyithatja meg a Műveletközpontot az üzenetek megtekintéséhez.
+- Az összes olyan termelési rendelés, amelyhez tervezési értesítés lett kiküldve, a **Termelési rendelések \> Termelési rendelések \> Minden termelési rendelés** részen tekinthető meg. A Műveleti panel **Termelési rendelés** lapján lévő **Tervezési módosítási kérelem** csoportban válassza a **Tervezési értesítések** elemet a **Tervezési értesítések** oldal megnyitásához.
+- Termelési rendelések esetén kiválaszthatja, hogy csak az Ön által kezelt termelési erőforrásokra vonatkozó módosítási értesítéseket szeretné-e áttekinteni. A Műveleti panel **Termelési szint kezelése** munkaterületén lévő **Munkaterület konfigurálása** lehetőség kiválasztásával úgy szűrheti az oldalt, hogy csak az Ön által kezelt termelési egységekre, csoportokra és/vagy erőforrásokra vonatkozó adatok jelenjenek meg. Az **Összegzés** szakaszban lévő **Módosított termékekkel rendelkező termelési rendelések** csempén látható a megadott szűrőbeállításoknak megfelelő értesítések száma. A csempe kiválasztásával megnyithatja a **Tervezési értesítések** lapot, amelyen megtekintheti a szűrő feltételeinek megfelelő tranzakciók teljes listáját.
+
+A termelési rendelés értesítéseinek **Tervezési értesítések** oldalon történő áttekintése során követheti a kapcsolódó változási vagy termelési rendelésekre mutató hivatkozásokat. Ehhez válassza ki az oszlop értékeit vagy a kapcsolódó parancsokat a Művelet panelen. Miután befejezte a módosítások kiértékelét, és miután igény szerint visszavonta vagy módosította a termelési rendeléseket, az értesítéseket megjelölheti megoldottként. Válassza ki az értesítést, majd a Művelet panelen válassza a **Megoldás** lehetőséget. Az értesítést az összes felhasználó nézetéből eltávolítja a rendszer.
 
 ### <a name="create-a-change-order-from-a-change-request"></a>Módosítási rendelés létrehozása módosítási kérelemből
 

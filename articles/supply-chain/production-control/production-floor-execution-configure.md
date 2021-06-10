@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 79e21977e4ef8bce88c97a8fb253345ccc8d6b4f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 84d845055e175e6f4b8078fabeb3307ee96826f2
+ms.sourcegitcommit: 588f8343aaa654309d2ff735fd437dba6acd9d46
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814730"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6115023"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>A termelési üzem végrehajtási felületének konfigurálása
 
@@ -71,6 +71,14 @@ Ez a funkció egy eszközkezelési lapot ad hozzá a termelési üzem végrehajt
 
 - A termelési üzem végrehajtási felületére vonatkozó eszközkezelési funkció
 
+### <a name="enable-job-search"></a>A feladatkeresés engedélyezése
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+
+Ezzel a funkcióval keresőmezőt adhat a feladatok listájához. A dolgozók a feladatazonosító megadásával rákereshetnek egy adott feladatra, vagy a rendelés azonosítójának megadásával megkereshetik egy adott rendelés összes feladatát. A dolgozók a billentyűzettel írhatják be vagy vonalkód beolvasásával adhatják meg az azonosítót. Ha használni szeretné, kapcsolja be a következő funkciót a [funkciókezelésben](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+
+- Feladatkeresés a gyártóüzem végrehajtási interfészén
+
 ## <a name="work-with-production-floor-execution-configurations"></a>A termelési üzem végrehajtási konfiguációinak használata
 
 Az eszközök konfigurációinak létrehozásához és karbantartásához nyissa meg a **Termelési vezérlő \> Beállítások \> Gyártásvégrehajtás \> Termelési üzem végrehajtásának konfigurálása** elemet. A **Termelési üzem végrehajtásának konfigurálása** lapon látható a meglévő konfigurációk listája. Ezen az oldalon az alábbi műveleteket végezheti:
@@ -81,6 +89,7 @@ Az eszközök konfigurációinak létrehozásához és karbantartásához nyissa
 Ezután konfigurálja a különböző beállításokat a kiválasztott eszköz konfigurációjában. Az alábbi mezők állnak rendelkezésre:
 
 - **Csak érkezéskori és távozáskori blokkolás** – állítsa ezt a lehetőséget az *Igen* értékre, hogy olyan egyszerűsített inferfészt hozzon létre, amely csak érkezéskori és távozáskori blokkolási funkciót biztosít. Ez letiltja az oldal beállításainak többségét is. A beállítás engedélyezése előtt el kell távolítania minden sort a **Lapkijelölés** gyorslapról.
+- **Keresés engedélyezése** – ha a feladatlistánál szeretne keresési mezőt szerepeltetni, adja meg az *Igen* értéket a beállításnál. A dolgozók a feladatazonosító megadásával rákereshetnek egy adott feladatra, vagy a rendelés azonosítójának megadásával megkereshetik egy adott rendelés összes feladatát. A dolgozók a billentyűzettel írhatják be vagy vonalkód beolvasásával adhatják meg az azonosítót.
 - **Mennyisége jelentése távozáskori blokkoláskor** – Ezt állítsa *Igen* értékre, és megkérheti a dolgozókat, hogy adjanak visszajelzést a folyamatban lévő munkákról a távozáskori blokkoláskor. Ha *Nem* értékre van állítva, akkor a dolgozókat nem figyelmezteti a rendszer.
 - **Alkalmazott zárolása** – Ha a beállítás értéke *Nem*, akkor a program közvetlenül a regisztráció után (például új feladat) kilépteti a dolgozókat. Az eszköz visszatér a bejelentkezési oldalra. Ha a beállítás értéke *Igen*, akkor a dolgozók bejelentkezve maradnak a feladatkártya-eszközbe. Előfordulhat azonban, hogy egy dolgozó manuálisan kijelentkezik annak érdekében, hogy egy másik dolgozó jelentkezzen be, miközben a feladatkártya-eszköz továbbra is ugyanazon a rendszerszintű felhasználói fiókon fut. A fiókok típusairól a [Hozzárendelt felhasználók](config-job-card-device.md#assigned-users) című témakörben olvashat bővebben.
 - **A regisztráció tényleges időpontjának használata** – Ezt a beállítást *Igen* értékre állíthatja, ha azt szeretné, hogy az egyes új regisztrációk időpontja megegyezzen a dolgozó által benyújtott regisztráció pontos időpontjával. Ha a beállítás értéke *Nem*, akkor a bejelentkezési időt használja a rendszer. Ezt a beállítást általában *Igen* értékre kell állítani, ha *Igen* értékre állította az **Alkalmazott zárolása** és/vagy az **Egy dolgozó** beállítást, aminek következtében a dolgozók általában hosszabb ideig bejelentkezve maradnak.

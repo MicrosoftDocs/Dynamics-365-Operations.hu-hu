@@ -2,7 +2,7 @@
 title: Online számlázási rendszer
 description: Ez a témakör azt mutatja be, hogyan lehet beállítani az elektronikus jelentéskészítési (ER) konfigurációkat, valamint azt, hogy hogyan lehet beállítani és használni az elektronikus üzenetküldési funkciókat (EM) a valós idejű számlajelentéshez (RTIR).
 author: anasyash
-ms.date: 03/19/2021
+ms.date: 05/27/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Hungary
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 343375641897894589ee0932cc33402ce22dde9e
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: c7a86dc0e8a760c98337d342245536b05100ec06
+ms.sourcegitcommit: 53b797ff1b524f581046b48cdde42f50b37495bc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5894762"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6117121"
 ---
 # <a name="online-invoicing-system"></a>Online számlázási rendszer
 
@@ -312,8 +312,7 @@ Az adatentitások adatbázisba importálását követően hajtsa végre az aláb
 
     ![Üzenetfeldolgozási műveletek lap, "EM" létrehozása lap](media/8_actions.png)
 
-15. Nyissa meg az **Adó** \> **Beállítások** \> **Elektronikus üzenetek** \> **Elektronikus üzenetfeldolgozás** menüpontot, válassza ki az **Online számlázás** feldolgozását, majd a **Köteg** gyorslapon válassza ki a **Köteg létrehozása** elemet.
-16. Biztonsági szerepkörök beállítása az **Online számlázás** feldolgozásához. Előfordulhat, hogy a felhasználók különböző csoportjainak kell hozzáféréstadni **Online számlázás** feldolgozásához. A feldolgozáshoz való hozzáférést korlátozhatja a rendszerben megadott biztonsági csoportok alapján. Nyissa meg az **Adó** \> **Beállítás** \> **Elektronikus üzenetek** \> **Elektronikus üzenetek feldolgozása** menüpontot, válassza ki az **Online számlázás feldolgozása** lehetőséget, és adja hozzá azokat a biztonsági csoportokat, amelyeknek dolgozniuk kell a feldolgozással kapcsolatosan. Ha nincs definiálva biztonsági csoport a feldolgozáshoz, akkor csak a rendszergazda láthatja a feldolgozást az **Elektronikus üzenetek** oldalon.
+15. Állítson be biztonsági szerepköröket a számlázás online feldolgozásához. Előfordulhat, hogy felhasználók különböző csoportjainak kell hozzáférést adni a számlázás online feldolgozásához. A feldolgozáshoz való hozzáférést korlátozhatja a rendszerben megadott biztonsági csoportok alapján. Nyissa meg az **Adó** \> **Beállítás** \> **Elektronikus üzenetek** \> **Elektronikus üzenetek feldolgozása** menüpontot, válassza ki az **Online számlázás** lehetőséget, és adja hozzá azokat a biztonsági csoportokat, amelyeknek működniük kell a feldolgozás esetében. Ha nincs definiálva biztonsági csoport a feldolgozáshoz, akkor csak a rendszergazda láthatja a feldolgozást az **Elektronikus üzenetek** oldalon.
 
 ## <a name="set-up-financial-reasons-for-rtir"></a>Pénzügyi okok beállítása az RTIR-hez
 
@@ -347,7 +346,7 @@ Minden üzenetelem további, a feldolgozáshoz szükséges mezőkkel rendelkezik
 | Művelet                  | Az értékek többek között a **Létrehozás**, **Helyesbítés** és **Sztornó**. A Finance a kiegészítő mező értékét az **EM elemek kiértékelése** művelet végrehajtása során állítja be. A **Művelethez** tartozó további mező értéke automatikusan vagy a számlán szereplő pénzügyi indokkal definiálható. További tudnivalókért lásd a [Pénzügyi okok beállítása az RTIR-hez](#set-up-financial-reasons-for-rtir) című részt, a témakör korábbi részében. |
 | Eredeti üzenetelem      | Ha a **Művelet** kiegészítő mező **Helyesbítés** vagy **Sztornó** értékre van beállítva , akkor az **Eredeti üzenetelem** kiegészítő mezőt be kell állítani. Ha a rendszer nem tudja beállítani ezt a mezőt, a kapcsolódó üzenet elemét **Manuális szerkesztés** értékre állítja , és ezt a mezőt manuálisan kell beállítania. |
 | Index                      | Ez a kiegészítő mező meghatározza a számla pozícióját a kérelemben (a számlák csomagja). Az érték jelentése a **ManageInvoiceRequest.xml** fájl **\<index\>** elemében történik. Ezt a kiegészítő mezőt a program automatikusan kitölti, amikor a **Számlázási kérelem létrehozása** művelet fut. |
-| Módosítási index         | Ez a további mező az eredeti számlára (a módosító bizonylat sorszámára) hivatkozó egyedi sorszámot adja meg. Ez az érték a **Módosítás** vagy **Sztornó** művelettípusú üzenetelemek **\<modificationIndex\>** elemében jelenik meg. Ezt a kiegészítő mezőt a program automatikusan kitölti, amikor az **EM-elemek értékelése** művelet fut. |
+| Módosítási index         | Ez a további mező az eredeti számlára (a módosító dokumentum sorszámára) hivatkozó egyedi sorszámot adja meg. Ez az érték a **Módosítás** vagy **Sztornó** művelettípusú üzenetelemek **\<modificationIndex\>** elemében jelenik meg. Ezt a kiegészítő mezőt a program automatikusan kitölti, amikor az **EM-elemek értékelése** művelet fut. |
 | Utolsó sor hivatkozási száma | A **Létrehozás** művelettípusú üzenetelemeknél ez a kiegészítő mező a számla utolsó számát (a számlasor száma) tartalmazza. A **Módosítás** vagy **Sztornó** művelettípusú üzenetelemei esetén ez a további mező az utolsó sorszámot tartalmazza a teljes dokumentumláncon belül az eredeti számlától kezdve figyelembe véve annak minden módosítását. Ez az érték a **Módosítás** vagy **Sztornó** művelettípusú üzenetelemek **\<lineNumberReference\>** által jelentett érték kiszámításához használatos. Ezt a kiegészítő mezőt a program automatikusan kitölti, amikor az **EM-elemek értékelése** művelet fut. |
 
 ### <a name="run-online-invoicing-processing"></a>Online számlázás feldolgozásának futtatása
@@ -378,6 +377,10 @@ A számlák RTIR-be történő jelentésének elhalasztásához kövesse az alá
 4. További feltételek meghatározása a **Rekordok belefoglalása** gyorslap használatával, annak meghatározásához, hogy mely számlák jelentését kell elhalasztani.
 
 Az üzenetelemek **Kizárt** vagy **Elhalasztott** állapotát bármikor vissza lehet állítani a **Frissítés a kezdeti állapotra** lehetőség kiválasztásával.
+
+### <a name="run-online-invoicing-processing-in-batch-mode"></a>Online számlázás feldolgozásának futtatása kötegelt módban
+
+A számlázás online feldolgozása futtatható kötegelt módban. A kötegelt feldolgozás paramétereit a **Feldolgozás futtatása** párbeszédpanel **Futtatás a háttérben** gyorslapján adhatja meg. További tudnivalók a kötegelt feldolgozásról: [A kötegelt feldolgozás áttekintése](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md).
 
 ## <a name="appendix-1-electronic-message-setup-for-rtir"></a>1. függelék: Elektronikus üzenetek beállítása az RTIR-hez
 
@@ -498,7 +501,7 @@ Az **XSD 3.0-s verziójától** az Online Számla rendszer megköveteli a **cust
 | Érték           | Leírás |
 |-----------------|-------------|
 | BELFÖLDI        | A vevő olyan belföldi vevő, aki az áfa hatálya alá tartozik. |
-| MAGÁN\_SZEMÉLY | A vevő olyan belföldi vagy külföldi természetes személy, aki nem tartozik az áfa hatálya alá. |
+| MAGÁN\_SZEMÉLY | A vevő olyan belföldi vagy külföldi természetes személy, akinek nem kell áfát fizetnie. |
 | EGYÉB           | A vevőnek más státusza van. A vevő például olyan belföldi nem természetes személy, aki nem tartozik áfa hatálya alá, külföldi nem természetes személy, aki áfa hatálya alá tartozik, vagy külföldi nem természetes személy, aki nem tartozik az áfa hatálya alá. |
 
 Az Online számlázási rendszer XSD 3.0-s verziójának támogatására kiadott **94.50-es verziótól** az **RTIR Számlaadatok (HU)** formátum a következő algoritmust támogatja a **customerVatStatus** értékének meghatározásához.
@@ -536,7 +539,7 @@ A Dynamics 365 Finance megoldásában magyar Online számlázási rendszerhez t�
     > [!NOTE]
     > Az Online Számla rendszerben a helyes jelentéskészítés érdekében ne kapcsoljon több számlát ugyanazon értékesítési rendelésen több előlegszámlához.
 
-    A könyvelt végső számla jelentve van az Online Számláza rendszernek. Tartalmazza a hivatkozási információkat a **\<advancePaymentData\>** csomópontban és az összegeket az összefoglalásban, amelyek csökkentve vannak az előlegekhez kapcsolat áfával, amelyek ugyanahhoz az előlegszámlához vannak kapcsolva. Az előlegszámla árfolyama a hivatkozott előlegszámla-adatokhoz van jelentve. Ha azonban az előlegszámla pénzneme eltér a záró bizonylat pénznemétől, az előlegszámla minden sora negatív összegként lesz jelentve a végső számlára, és a végleges bizonylat pénznemében újra lesznek számítva..
+    A könyvelt végső számla jelentve van az Online Számláza rendszernek. Tartalmazza a **\<advancePaymentData\>** csomópontban lévő hivatkozási információkat, illetve az összegzésben lévő, az ugyanahhoz az előlegszámlához kapcsolt előlegekből származó feladott adókkal csökkentett összegeket. Az előlegszámla árfolyama a hivatkozott előlegszámla-adatokhoz van jelentve. Ha azonban az előlegszámla pénzneme eltér a záró bizonylat pénznemétől, az előlegszámla minden sora negatív összegként lesz jelentve a végső számlára, és a végleges bizonylat pénznemében újra lesznek számítva..
 
 #### <a name="scenario-2-a-prepayment-that-has-no-sales-tax-transactions-is-posted-accounts-receivable-module"></a>2. forgatókönyv: Áfatranzakciókat nem tartalmazó előleget könyvelnek (Követelések modul)
 
@@ -554,7 +557,7 @@ A Dynamics 365 Finance megoldásában magyar Online számlázási rendszerhez t�
     > [!NOTE]
     > Az Online Számla rendszerben a helyes jelentéskészítés érdekében ne kapcsoljon több számlát ugyanazon értékesítési rendelésen több előlegszámlához.
 
-    A könyvelt végső számla jelentve van az Online Számláza rendszernek. Tartalmazza a hivatkozási információkat a **\<advancePaymentData\>** csomópontban és az összegeket az összefoglalásban, amelyek csökkentve vannak az előlegekhez kapcsolat áfával, amelyek ugyanahhoz az előlegszámlához vannak kapcsolva. Az előlegszámla árfolyama a hivatkozott előlegszámla-adatokhoz van jelentve. Ha azonban az előlegszámla pénzneme eltér a záró bizonylat pénznemétől, az előlegszámla minden sora negatív összegként lesz jelentve a végső számlára, és a végleges bizonylat pénznemében újra lesznek számítva..
+    A könyvelt végső számla jelentve van az Online Számláza rendszernek. Tartalmazza a **\<advancePaymentData\>** csomópontban lévő hivatkozási információkat, illetve az összegzésben lévő, az ugyanahhoz az előlegszámlához kapcsolt előlegekből származó feladott adókkal csökkentett összegeket. Az előlegszámla árfolyama a hivatkozott előlegszámla-adatokhoz van jelentve. Ha azonban az előlegszámla pénzneme eltér a záró bizonylat pénznemétől, az előlegszámla minden sora negatív összegként lesz jelentve a végső számlára, és a végleges bizonylat pénznemében újra lesznek számítva..
 
 #### <a name="scenario-3-an-advance-invoice-is-posted-by-using-the-customer-advance-on-a-project-project-management-and-accounting-module"></a>3. forgatókönyv: Előlegszámla feladása vevői előlegével egy projekthez (Projektvezetés és könyvelési modul)
 

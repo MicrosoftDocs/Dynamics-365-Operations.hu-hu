@@ -2,7 +2,7 @@
 title: Cookie-k megfelelősége
 description: Ez a témakör a cookie-megfelelőséggel és a Microsoft Dynamics 365 Commerce által tartalmazott alapértelmezett irányelvekkel kapcsolatos szempontokat ismerteti.
 author: BrianShook
-ms.date: 04/16/2021
+ms.date: 05/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: efc84bcea2fb6c28c0b13d4469e858e82cc1c073
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 8eb610eb819dee09a30368257e36dc88f855e985
+ms.sourcegitcommit: 8c5b3e872825953853ad57fc67ba6e5ae92b9afe
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908184"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "6088387"
 ---
 # <a name="cookie-compliance"></a>Cookie-k megfelelősége
 
@@ -52,8 +52,7 @@ A következő táblázat felsorolja a Dynamics 365 Commerce helyek által felado
 | x-ms-cpim-trans                             | A tranzakciók nyomon követésére szolgál (azoknak a nyitott lapoknak a száma, amelyeknek hitelesítése vállalatok közötti (B2C) helyhez történik), az aktuális tranzakciót is beleértve. |
 | \_msdyn365___muid_                            | Akkor használatos, ha a Kísérletezés aktiválva van a környezetben: a kísérletezési célok felhasználóazonosítójához használatos. |
 | \_msdyn365___exp_                             | Akkor használatos, ha a Kísérletezés aktiválva van a környezetben: a teljesítmény terheléselosztásának mérésére használatos.         |
-
-
+| d365mkt                                       | Akkor használatos, ha az üzlet helyjavaslataizoz tartozó felhasználói IP-cím nyomon követésének hely alapú észlelési szolgáltatása engedélyezve van a Commerce webhely-szerkesztőjében, a **Webhelybeállítások > Általános > Helyalapú áruházészlelés engedélyezése** részen.      |
 
 Ha egy webhely felhasználója a webhely bármelyik közösségi média hivatkozását kiválasztja, az alábbi táblában található cookie-k is nyomon lesznek követve a böngészőikben.
 
