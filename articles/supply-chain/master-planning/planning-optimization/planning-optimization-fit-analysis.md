@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 871ac40ea73c8a72e20ff495b9b7e6fe5a12159e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 60f63a49222b3d0f13850b0f39764c6c848aba15
+ms.sourcegitcommit: 3c15a26e9708adc9a75082dc551f0a3a0a7d89f4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5812979"
+ms.lasthandoff: 05/17/2021
+ms.locfileid: "6049436"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Tervezési optimalizálás igazítási elemzése
 
@@ -89,13 +89,13 @@ A következő táblázat bemutatja, hogy milyen eredmények jelenhetnek meg az i
 | Termelés | Sorrendbe állítást tartalmazó tervek: _\#_ | Ez a funkció függőben van. Jelenleg a sorrendbe állítás figyelmen kívül marad, ha a tervezés optimalizálása engedélyezve van a beállítástól függetlenül. | 2021. október – 2022. április |
 | Termelés | Nem megkezdett, kiadott termelési rendelések, amelyeket a mai napnál korábbi kezdéssel ütemeztek: _\#_ | Ez a funkció függőben van. Jelenleg a termelési rendelés késése esetén az alaptervezés azt feltételezi, hogy a mai napon be lesz fejezve. Ez olyan engedélyezett termelési rendelések esetében releváns amelyeknél a szállítási dátum már elmúlt, de még nem fejeződött be. | 2021. október – 2022. április |
 | Termelés | Véges kapacitással ütemezett erőforrások: _\#_ | Ez a funkció függőben van. Jelenleg a véges kapacitással ütemezett erőforrások figyelmen kívül maradnak, amikor a tervezés optimalizálása engedélyezve van. Az ütemezés a termék alapértelmezett átfutási ideje alapján történik. | Végtelen: 2021. június, véges: 2021. október |
-| Termelés | A tervezésben használt útvonalak: _\#_ | Ez a funkció függőben van. A tervezés optimalizálása során a program figyelmen kívül hagyja az útvonalakat. A termék alapértelmezett átfutási ideje használatban van. | június 2021. |
+| Termelés | A tervezésben használt útvonalak: _\#_ | Ez a funkció függőben van. A tervezés optimalizálása során a program figyelmen kívül hagyja az útvonalakat. A termék alapértelmezett átfutási ideje használatban van. | július 2021. |
 | Termelés | Értékesítési sor foglalása alábontás használatával: _\#_ | A alábontást használó értékesítési sor foglalása nem támogatott, ha a tervezés optimalizálása engedélyezve van. | Október 2021. |
 | Termelés | A termelési rendelések alábontásával történt ütemezés: _\#_ | A termelési rendelések alábontását használó ütemezés nem támogatott, ha a tervezés optimalizálása engedélyezve van. A termelési rendelések ütemezése egyenként végezhető el. | Október 2021. |
 | Ajánlatkérések | Olyan alaptervek, amelyeknél engedélyezve van az ajánlatkérés: _\#_ | Ez a funkció függőben van. Jelenleg az ajánlatkérés (ajánlatkérések) nem tekintendő igénynek, ha a tervezés optimalizálása engedélyezve van. A program figyelmen kívül hagyja ezeket, a beállítástól függetlenül. | 2021. október – 2022. április |
 | Igénylések | Olyan alaptervek, amelyeknél engedélyezve vannak az igénylések: _\#_ | Ez a funkció már támogatott. További információk: [Beszerzési igénylések](purchase-requisitions.md) | Támogatott |
-| Biztonsági határok | Biztonsági időtartalékkal rendelkező lefedettségi csoportok: _\#_ | Ez a funkció már részben támogatott. További információkért lásd: [Biztonsági határok](safety-margins.md) | Bevételezési időtartalék: Támogatott. Újrarendelési és kiadási időtartalék: 2021. április |
-| Biztonsági határok | Biztonsági időkorláttal rendelkező alaptervek: _\#_ | Ez a funkció már részben támogatott. További információkért lásd: [Biztonsági határok](safety-margins.md) | Bevételezési időtartalék: Támogatott. Újrarendelési és kiadási időtartalék: 2021. április |
+| Biztonsági határok | Biztonsági időtartalékkal rendelkező lefedettségi csoportok: _\#_ | Ez a funkció már részben támogatott. További információkért lásd: [Biztonsági határok](safety-margins.md) | Bevételezési időtartalék: Támogatott. Újrarendelési és kiadási időtartalék: 2021. április–október |
+| Biztonsági határok | Biztonsági időkorláttal rendelkező alaptervek: _\#_ | Ez a funkció már részben támogatott. További információkért lásd: [Biztonsági határok](safety-margins.md) | Bevételezési időtartalék: Támogatott. Újrarendelési és kiadási időtartalék: 2021. április–október |
 | Biztonsági készlet teljesítése | A „Minimum teljesítése” beállítással rendelkező cikkfedezeti rekordok, amelyek eltérnek a „Mai dátum + beszerzési idő” értékétől: _\#_ | A tervezés optimalizálása mindig a *mai dátum + beszerzési időt* használja. Ennek a módosításnak az a célja, hogy előkészüljön egy jövőbeli egyszerűsített tervezési beállításra, és hogy a művelet eredményét biztosítsa. Ha a beszerzési idő nem szerepel a biztonsági készletben, akkor az aktuális alacsony raktárkészlethez létrehozott tervezett rendeléseket mindig az átfutási idő miatt késlelteti a program. Ez a viselkedés jelentős zajt és nemkívánatos tervezett rendeléseket eredményezhet. A legjobb módszer a beállítás módosítása, hogy a *mai dátum + beszerzési idő* legyen használatban. Az alapadatok frissítése a figyelmeztetések elkerüléséhez. | N.a. |
 | Értékesítési ajánlatok | Olyan alaptervek, amelyeknél engedélyezve vannak az értékesítési ajánlatok: _\#_ | Ez a funkció függőben van. A tervezés optimalizálás engedélyezése során a program figyelmen kívül hagyja az árajánlatokat. A program figyelmen kívül hagyja ezeket, a beállítástól függetlenül. | 2021. október – 2022. április |
 | Eltarthatósági idő | Olyan alaptervek, amelyeknél engedélyezve van az eltarthatósági idő: _\#_ | Ez a funkció függőben van. Jelenleg az eltarthatósági idő figyelmen kívül marad, ha a tervezés optimalizálása engedélyezve van a beállítástól függetlenül. | Október 2021. |

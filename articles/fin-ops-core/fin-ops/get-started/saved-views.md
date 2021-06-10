@@ -2,7 +2,7 @@
 title: Mentett nézetek
 description: Ez a témakör azt mutatja be, hogyan lehet használni a mentett nézetek funkcióit.
 author: jasongre
-ms.date: 01/22/2021
+ms.date: 05/17/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 25b59400cdd62f8728f03683d51c86c671edd9de
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 8a5daee72f4f339fbebffb5c1d64814959775340
+ms.sourcegitcommit: 13fa6385d8f3bb18df5a52fd2b0f4ad3484ad0ba
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744615"
+ms.lasthandoff: 05/17/2021
+ms.locfileid: "6050556"
 ---
 # <a name="saved-views"></a>Mentett nézetek
 
@@ -126,17 +126,26 @@ A nézet közzétételéhez kövesse az alábbi lépéseket:
 5. **A 10.0.17-es vagy újabb verzió frissítése:** Ha az **(Előzetes verzió) Szervezetnézetek fordításának támogatása** be van kapcsolva, a szervezet által megkövetelt több nyelven is hozzáadhat fordításokat a nézetnévhez, ha a **Név** mező melletti **Fordítások** gombra kattint. A nézet neve megjelenik a felhasználók számára az aktuális nyelven. Beállíthatja az alapértelmezett nyelvet is, hogy megadja azt a fordítást, amely azon felhasználók számára jelenik meg, akik olyan nyelveket futtatnak, amelyekhez nincs megadva fordítás.
 5. Nem kötelező: Adja meg a nézet leírását, hogy a nézetet megkapó felhasználók jobban megértsék a nézet célját. 
 6. Határozza meg, hogy a nézet a kiválasztott felhasználók számára alapértelmezett nézetként legyen-e közzétéve. Amikor egy nézetet alapértelmezettnek állítanak be, a felhasználók a céloldal legközelebbi megnyitásakor ezt a nézetet fogják látni. Minden célfelhasználó egyetlen globálisan alapértelmezett nézete fog változni. A felhasználók azonban továbbra is módosíthatják a saját alapértelmezett nézetüket a közzététel után.
-7. Adja hozzá azokat a biztonsági szerepköröket, amelyek kapcsolódnak a nézetettel megcélzott felhasználókhoz. 
-8. Határozza meg, hogy a nézetet szeretné-e közzétenni a kiválasztott biztonsági szerepkör alárendelt szerepköreihez. Ha ezt a lehetőséget választja, akkor a megfelelő biztonsági szerepkörök sorában jelölje be az **Alárendelt szerepkörökkel együtt** jelölőnégyzetet. Ne feledje, hogy ez a jelölőnégyzet nem érhető el olyan szerepkörök esetében, amelyek nem rendelkeznek alárendelt szerepkörökkel.
-9. Adja hozzá azokat a jogi személyeket, amelyeknek számára ez a nézet elérhető kell legyen. 
-10. Válassza a **Közzététel** lehetőséget.
+
+    > [!NOTE]
+    > Amikor egy nézetet alapértelmezettként tesz közzé, ügyeljen a következőkre: 
+    > -  Ha egy nézetet néhány vagy az összes jogi személy számára alapértelmezett nézetként tesz közzé, akkor minden megcélzott felhasználó egyetlen **globális** alapértelmezett nézetét módosítja. 
+    > -  Ha egy felhasználónak több olyan nézete van, amelyek alapértelmezett nézetként vannak közzétéve, akkor a legutóbb közzétett nézet lesz a felhasználó alapértelmezett nézete. 
+
+8. Adja hozzá azokat a biztonsági szerepköröket, amelyek kapcsolódnak a nézetettel megcélzott felhasználókhoz. 
+9. Határozza meg, hogy a nézetet szeretné-e közzétenni a kiválasztott biztonsági szerepkör alárendelt szerepköreihez. Ha ezt a lehetőséget választja, akkor a megfelelő biztonsági szerepkörök sorában jelölje be az **Alárendelt szerepkörökkel együtt** jelölőnégyzetet. Ne feledje, hogy ez a jelölőnégyzet nem érhető el olyan szerepkörök esetében, amelyek nem rendelkeznek alárendelt szerepkörökkel.
+10. Adja hozzá azokat a jogi személyeket, amelyeknek számára ez a nézet elérhető kell legyen. 
+
+    > [!NOTE]
+    > A nézet jogi személyek számára való közzétételekor ügyeljen a következőkre.
+    > 
+    > Ha jogi személynek teszi közzé a nézetet, de nem alapértelmezett nézetként teszi közzé, akkor csak a megadott jogi személy felhasználók fogják látni a nézetválasztóban. A nézet első betöltése után azonban mindig a felhasználó nézetválasztójának oldalán jelenik meg, a jogi személytől függetlenül.
+
+11. Válassza a **Közzététel** lehetőséget.
 
 Ne feledje, hogy bizonyos környezetekben előfordulhat, hogy egy ideig (legfeljebb egy óráig) eltarthat, mielőtt a felhasználók megtekinthetik a közzétett nézetet.
 
-> [!NOTE]
-> Vegye figyelembe a következő elvárásokat, amikor a nézetet közzéteszi egy jogi személynek, vagy amikor a nézetet alapértelmezett nézetként teszi közzé.
-> - Ha egy vagy több jogi személy számára látható nézetet tesz közzé, akkor minden egyes célfelhasználó egyetlen globálisan alapértelmezett nézetét módosítja. Ha egy felhasználónak több olyan nézete van, amelyek alapértelmezett nézetként vannak közzétéve, akkor a legutóbb közzétett nézet lesz a felhasználó alapértelmezett nézete. 
-> - Ha jogi személynek teszi közzé a nézetet, de nem alapértelmezett nézetként teszi közzé, akkor csak a megadott jogi személy felhasználók fogják látni a nézetválasztóban. A nézet első betöltése után azonban mindig a felhasználó nézetválasztójának oldalán jelenik meg, a jogi személytől függetlenül. 
+ 
 
 ## <a name="modifying-a-published-view"></a>Közzétett nézet módosítása
 
