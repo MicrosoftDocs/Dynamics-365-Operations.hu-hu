@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2021-05-05
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 38b2cdb618d92dca7909a145e7fc07ddfc5f4d45
-ms.sourcegitcommit: b67665ed689c55df1a67d1a7840947c3977d600c
+ms.openlocfilehash: 0435deb009173684c7faaf5340e8095c019ec71c
+ms.sourcegitcommit: 2cd82983357b32f70f4e4a0c15d4d1f69e08bd54
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6017055"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "6085474"
 ---
 # <a name="change-the-accounting-or-reporting-currency"></a>Könyvelési vagy jelentési pénznem módosítása
 
@@ -31,12 +31,12 @@ Ez a témakör azt ismerteti, hogyan módosítható a könyvelési vagy jelenté
 Módosítani szeretné a könyvelési vagy jelentési pénznemet, illetve jelentési pénznemet hozzá szeretne adni egy főkönyv beállításához. Ez általában a következő forgatókönyvek esetén fordul elő:
 
 - A jogi személy beállításakor helytelen könyvelési vagy jelentési pénznemet adtak meg. Most meg szeretné változtatni az adott pénznemet.
-- A jogi személy beállításakor nem adtak meg jelentési pénznemet. (A jelentési pénznem megadása nem kötelező.) Most szeretne jelentési pénznemet hozzáadni.
+- A jelentési pénznemet a jogi személy létrehozásakor meghatározták, de a szervezet most el szeretné távolítani a jelentési pénznemet.
+- A szervezet frissíti a szolgáltatást, vagy át szeretne települni a Microsoft Dynamics 365 Finance szolgáltatásba, és szeretné módosítani a könyvelési vagy jelentési pénznemet.
 
 Egy olyan szervezet, amely korábban nem használta a kettős pénznem funkciót, el szeretné kezdeni használni. Ez a probléma általában a következő forgatókönyvek esetén fordul elő.
 
-- A jelentési pénznemet a jogi személy létrehozásakor meghatározták, de a szervezet most el szeretné távolítani a jelentési pénznemet.
-- A szervezet frissíti a szolgáltatást, vagy át szeretne települni a Microsoft Dynamics 365 Finance szolgáltatásba, és szeretné módosítani a könyvelési vagy jelentési pénznemet.
+- A jogi személy beállításakor nem adtak meg jelentési pénznemet. (A jelentési pénznem megadása nem kötelező.) Most szeretne jelentési pénznemet hozzáadni.
 
 ## <a name="resolution"></a>Megoldás
 

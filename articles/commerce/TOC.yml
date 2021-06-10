@@ -94,7 +94,9 @@
                   items:
                     - name: Újdonságok vagy változások a Commerce kezdőlapján
                       href: get-started/whats-new-home-page.md
-                    - name: Commerce 10.0.19 (2021. július)
+                    - name: Commerce 10.0.20 (2021. július)
+                      href: get-started/whats-new-commerce-10-0-20.md
+                    - name: Commerce 10.0.19 (2021. június)
                       href: get-started/whats-new-commerce-10-0-19.md
                     - name: Commerce 10.0.18 (2021. május)
                       href: get-started/whats-new-commerce-10-0-18.md
@@ -556,6 +558,8 @@
                   href: dev-itpro/manage-bing-maps.md
                 - name: Időközök létrehozása és frissítése a vevői átvételhez
                   href: dev-itpro/pickup-timeslots.md
+                - name: Termékdimenzió-értékek beállítása kapcsolóként
+                  href: dev-itpro/dimensions-swatch.md
         - name: A termékek és szolgáltatások árusítása
           items:
             - name: 'Kategóriák, termékek és szortimentek'
@@ -932,6 +936,8 @@
                   href: web-activity-opt-out.md
                 - name: Mértékegységre vonatkozó beállítás alkalmazása
                   href: unit-of-measure.md
+                - name: Termékdimenziók megjelenítési beállításainak alkalmazása
+                  href: dimension-settings.md
             - name: Saját webhelytartalom kezelése
               items:
                 - name: A tartalom hozzáadásának módjai
@@ -1206,7 +1212,7 @@
               href: store-performance-information.md
             - name: 'Frissesség, gyakoriság és pénzügyi szempont szerinti (Recency, Frequency, Monetary, RFM) elemzés beállítása'
               href: set-up-rfm-analysis.md
-            - name: Microsoft Clarity in Dynamics 365 Commerce beállítása
+            - name: Microsoft Clarity beállítása a Dynamics 365 Commerce alkalmazásban
               href: set-up-clarity.md
         - name: Globalizáció
           items:
@@ -1946,7 +1952,7 @@
                   items:
                     - name: A létrehozott jelentés eredményeinek nyomon követése és összehasonlításuk a kiindulási értékekkel
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/dynamics365/commercetoc.json
-                    - name: A létrehozott ER-jelentések eredmények nyomon követésében és a kiindulási értékekkel való összehasonlításukban végzett fejlesztések
+                    - name: A létrehozott ER-jelentéseredmények nyomon követésének fejlesztése a kiindulási értékekkel való összehasonlításuk érdekében
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/dynamics365/commerce/toc.json
                     - name: Tesztelés automatizálása ER segítségével
                       href: ../fin-ops-core/dev-itpro/analytics/er-automate-testing.md?toc=/dynamics365/commerce/toc.json
@@ -2262,6 +2268,8 @@
                       href: e-commerce-extensibility/request-properties-object.md
                     - name: Alkalmazásbeállítások
                       href: e-commerce-extensibility/app-settings.md
+                    - name: Webhelykészítő globális konfigurációs beállításainak konfigurálása az engedélyezett funkciók alapján
+                      href: e-commerce-extensibility/config-settings-for-features.md
                     - name: Platformbeállításokat tartalmazó fájl
                       href: e-commerce-extensibility/platform-settings.md
                     - name: Moduldefiníció kiterjesztése
@@ -2366,6 +2374,8 @@
                   href: dev-itpro/UpcomingSDKChanges.md
                 - name: Fejlesztések és ALM-változások a 10.0.10 és a 10.0.13 verzió között
                   href: dev-itpro/dev-changes-10-13.md
+                - name: Buildelési folyamat beállítása a független csomagolási SDK számára
+                  href: dev-itpro/build-pipeline.md
                 - name: A Commerce és Finance and Operations buildrendszereinek egyesítése
                   href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
                 - name: A Retail szoftverfejlesztői készlet (SDK) áttelepítése a Visual Studio 2015 szolgáltatásból a Visual Studio 2017 szolgáltatásba
@@ -2386,6 +2396,8 @@
               items:
                 - name: Pénztár képernyő-elrendezései
                   href: pos-screen-layouts.md
+                - name: Store Commerce alkalmazás a Microsoft Dynamics 365 Commerce szolgáltatásban
+                  href: dev-itpro/store-commerce.md
                 - name: URL megnyitása a pénztárban
                   href: Open-URL-in-POS.md
                 - name: A pénztárelrendezés-tervező telepítése

@@ -5,6 +5,8 @@
       items:
         - name: Újdonságok és változások a Human Resources szolgáltatásban
           href: hr-admin-whats-new.md
+        - name: 2021. május 20.
+          href: hr-whats-new-2021-05-20.md
         - name: 2021. május 3.
           href: hr-whats-new-2021-05-03.md
         - name: 2021. április 19.
@@ -785,8 +787,14 @@
           items:
             - name: Teljesítménykezelés – áttekintés
               href: hr-develop-performance-management-overview.md
-            - name: Munkaerő-készségek összehangolása
-              href: hr-develop-skills.md
+            - name: Szakértelem
+              items:
+                - name: Szakértelem konfigurálása
+                  href: hr-develop-skills.md
+                - name: Szakértelem beírása
+                  href: hr-develop-enter-skills.md
+                - name: Szakértelembeli feltérképezése
+                  href: hr-develop-map-skills.md
             - name: Hozzáadás a teljesítménynaplóhoz
               href: hr-develop-add-performance-journal.md
             - name: Cél létrehozása

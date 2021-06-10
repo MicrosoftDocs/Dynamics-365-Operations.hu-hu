@@ -72,6 +72,8 @@
                   items:
                     - name: Újdonságok és változások a Finance kezdőlapján
                       href: get-started/whats-new-home-page.md
+                    - name: Finance 10.0.20 (2021. július)
+                      href: get-started/whats-new-changed-10-0-20.md
                     - name: Finance 10.0.19 (2021. július)
                       href: get-started/whats-new-changed-10-0-19.md
                     - name: Finance 10.0.18 (2021. május)
@@ -1160,6 +1162,8 @@
                   href: general-ledger/rvrs-settgs-on-jrnls-lines.md
                 - name: Év végi záráskor hiányzó nyitó egyenlegek
                   href: general-ledger/yec-mssng-open-blnces.md
+                - name: Pénzügyi naplósablonok megnyitása az Office programban
+                  href: general-ledger/open-fincl-jrnls-in-office.md
         - name: Pénzügyi jelentéskészítés
           items:
             - name: Első lépések a Pénzügyi jelentéskészítéssel
@@ -1502,10 +1506,20 @@
                       href: localizations/tax-service-add-data-fields-tax-configurations.md?toc=/dynamics365/finance/toc.json
                     - name: Adatmezők hozzáadása az adóintegrációhoz bővítmények használatával
                       href: localizations/tax-service-add-data-fields-tax-integration-by-extension.md?toc=/dynamics365/finance/toc.json
-                    - name: Több adószám
-                      href: localizations/emea-multiple-vat-registration-numbers.md?toc=/dynamics365/finance/toc.json
                     - name: Alapadat-keresés környezetének beállítása
                       href: localizations/tax-service-set-up-environment-master-data-lookup.md?toc=/dynamics365/finance/toc.json
+                    - name: Több adószám
+                      href: localizations/emea-multiple-vat-registration-numbers.md
+                    - name: Jelentés több áfaregisztrációhoz
+                      items:
+                        - name: Jelentés több áfaregisztrációhoz
+                          href: localizations/emea-reporting-for-multiple-vat-registrations.md
+                        - name: Hollandiai jelentés
+                          items:
+                            - name: Áfabevallás
+                              href: localizations/emea-nl-vat-declaration-netherlands.md
+                            - name: EU értékesítési lista
+                              href: localizations/emea-nl-eu-sales-list.md
             - name: Jogszabálykövetési frissítések
               href: localizations/regulatory-updates.md
             - name: Ausztrália
@@ -2388,6 +2402,20 @@
                               href: localizations/apac-ind-GST-tax-returns.md
                             - name: GSTR-jelentésekre vonatkozó több köteges feldolgozás engedélyezése
                               href: localizations/apac-ind-gst-multi-batch-processing-gstr-return.md
+                        - name: GST hibaelhárítás
+                          items:
+                            - name: Helytelen adóösszeg számítás után
+                              href: localizations/apac-ind-GST-troubleshooting-tax-amount-wrong-after-calculation.md
+                            - name: Adókonfigurációs hibák
+                              href: localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md
+                            - name: Adó nincs kiszámítva
+                              href: localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md
+                            - name: Visszatérítési szabályok aktiválása hosszabb a vártnál
+                              href: localizations/apac-ind-GST-troubleshooting-setoff-rule-activate-take-long-time.md
+                            - name: TaxTrans vagy bizonylat nem jön létre
+                              href: localizations/apac-ind-GST-troubleshooting-taxtrans-or-voucher-not-generated.md
+                            - name: Adótranzakció azonosítója helytelen
+                              href: localizations/apac-ind-GST-troubleshooting-tax-transaction-id-incorrect.md
                 - name: Közvetlen adók
                   items:
                     - name: India – Adóelőleg
@@ -2844,6 +2872,10 @@
                   href: localizations/tasks/nl-00003-semansys-xbrl-integration.md
                 - name: Könyvvizsgálati fájl (XML Auditfile Financieel XAF)
                   href: localizations/emea-nl-audit-file.md
+                - name: Áfabevallás (Hollandia)
+                  href: localizations/emea-nl-vat-declaration-netherlands.md
+                - name: EU értékesítési lista
+                  href: localizations/emea-nl-EU-sales-list.md
             - name: Norvégia
               items:
                 - name: Norvégia – áttekintés
@@ -4123,7 +4155,7 @@
                   items:
                     - name: A létrehozott jelentés eredményeinek nyomon követése és összehasonlításuk a kiindulási értékekkel
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/dynamics365/finance/toc.json
-                    - name: A létrehozott ER-jelentések eredmények nyomon követésében és a kiindulási értékekkel való összehasonlításukban végzett fejlesztések
+                    - name: A létrehozott ER-jelentéseredmények nyomon követésének fejlesztése a kiindulási értékekkel való összehasonlításuk érdekében
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/dynamics365/finance/toc.json
                     - name: Tesztelés automatizálása ER segítségével
                       href: ../fin-ops-core/dev-itpro/analytics/er-automate-testing.md?toc=/dynamics365/finance/toc.json

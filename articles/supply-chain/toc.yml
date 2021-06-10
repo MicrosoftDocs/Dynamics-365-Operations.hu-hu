@@ -72,7 +72,9 @@
                   items:
                     - name: Újdonságok és változások a Supply Chain Management kezdőlapján
                       href: get-started/whats-new-home-page.md
-                    - name: Supply Chain Management 10.0.19 (2021. július)
+                    - name: Supply Chain Management 10.0.20 (2021. július)
+                      href: get-started/whats-new-scm-10-0-20.md
+                    - name: Supply Chain Management 10.0.19 (2021. június)
                       href: get-started/whats-new-scm-10-0-19.md
                     - name: Supply Chain Management 10.0.18 (2021. május)
                       href: get-started/whats-new-scm-10-0-18.md
@@ -387,7 +389,7 @@
                   href: asset-management/manage-maintenance-requests/maintenance-request-reports.md
             - name: Munkarendelések beállítása
               items:
-                - name: 'Karbantartásifeladat-típusok kategóriái és karbantartásifeladat-típusok, karbantartásifeladat-típusok változatai, karbantartási szakmák és karbantartási ellenőrző listák'
+                - name: 'Karbantartási feladattípusok, kategóriák, változatok, szakágak és ellenőrzőlisták'
                   href: asset-management/setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md
                 - name: Munkarendelés életciklus-állapotai
                   href: asset-management/setup-for-work-orders/work-order-lifecycle-states.md
@@ -1371,7 +1373,7 @@
                   items:
                     - name: A létrehozott jelentés eredményeinek nyomon követése és összehasonlításuk a kiindulási értékekkel
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: A létrehozott ER-jelentések eredmények nyomon követésében és a kiindulási értékekkel való összehasonlításukban végzett fejlesztések
+                    - name: A létrehozott ER-jelentéseredmények nyomon követésének fejlesztése a kiindulási értékekkel való összehasonlításuk érdekében
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Tesztelés automatizálása ER segítségével
                       href: ../fin-ops-core/dev-itpro/analytics/er-automate-testing.md?toc=/dynamics365/supply-chain/toc.json
@@ -2225,6 +2227,8 @@
               href: engineering-change-management/engineering-attributes-and-search.md
             - name: Tervezési verziók és tervezési termékkategóriák
               href: engineering-change-management/engineering-versions-product-category.md
+            - name: Receptúrák és összetevők változásainak kezelése
+              href: engineering-change-management/manage-formula-changes.md
             - name: Változáskezelés engedélyezése meglévő termékek esetében
               href: engineering-change-management/change-management-existing-products.md
             - name: Termékéletciklus-állapot és tranzakciók
@@ -2247,6 +2251,8 @@
               href: production-control/manage-subcontract-work-production.md
             - name: Egyesített számsorozat a feladatazonosítók esetén
               href: production-control/unified-job-ids.md
+            - name: Folyamatautomatizációs folyamatok kezdeményezése minőségi rendelések létrehozása érdekében
+              href: production-control/process-automation-quality-orders.md
             - name: Árucikkgyártás
               items:
                 - name: Termelési alapadatok karbantartása
@@ -2337,7 +2343,7 @@
                           href: production-control/production-floor-execution-setup.md
                         - name: A termelési üzem végrehajtási felületének használata dolgozók számára
                           href: production-control/production-floor-execution-use.md
-                        - name: Felhasználói felület vezérlőinek stílusai a termelési üzem végrehajtásához
+                        - name: A termelési üzem végrehajtási felületének kialakítása
                           href: production-control/production-floor-execution-styles.md
                     - name: Feladatkártya konfigurálása az eszközökhöz
                       href: production-control/config-job-card-device.md
@@ -3139,11 +3145,11 @@
                       href: warehousing/about-shipment-consolidation-policies.md
                     - name: Szállítmánykonszolidációs irányelvek konfigurálása
                       href: warehousing/configure-shipment-consolidation-policies.md
-                    - name: '1. eset – Szállítmányok konszolidálása, amikor kiadják őket a raktárba az értékesítési rendelések automatikus kiadásával'
+                    - name: 1. eset – A raktárba kiadott szállítmányok konszolidálása az értékesítési rendelések automatikus kiadásával
                       href: warehousing/consolidate-shipments-automatic.md
-                    - name: '2. eset – Szállítmányok konszolidálása, amikor a szállítmány-konszolidációs irányelvet felülírják a Raktárba kiadás oldalról'
+                    - name: '2. eset – Szállítmányok konszolidálása, amikor a szállítmány-konszolidációs irányelvet felülírják'
                       href: warehousing/consolidate-shipments-release-to-warehouse-override.md
-                    - name: 3. eset – Szállítmányok konszolidálása a rakománytervezés munkaterületről a Raktárba kiadás használatával
+                    - name: 3. eset – Szállítmányok konszolidálása a rakománytervezés munkaterületről a Raktárba való kiadásával
                       href: warehousing/consolidate-shipments-load-planning-workbench.md
                     - name: 4. eset – Szállítmányok konszolidálása a szállítmány konszolidációs munkaterület használatával
                       href: warehousing/consolidate-shipments-manual-workbench.md
@@ -3297,13 +3303,15 @@
                       href: warehousing/install-configure-warehousing-app.md
                     - name: Vonalkódok beolvasása a Raktárkezelés mobilalkalmazás kamerája segítségével
                       href: warehousing/scan-bar-codes-using-a-camera.md
-                    - name: A Raktárkezelés mobilalkalmazás mezőinek konfigurálása
+                    - name: A Warehouse Management mobilalkalmazás mezőinek konfigurálása
                       href: warehousing/configure-app-field-names-priorities-warehouse.md
                     - name: Mobileszközök beállítása raktári munkához
                       href: warehousing/configure-mobile-devices-warehouse.md
+                    - name: Lépésikonok és -címek hozzárendelése
+                      href: warehousing/step-icons-titles.md
                     - name: Raktározási alkalmazás eseményeinek feldolgozása
                       href: warehousing/warehouse-app-events.md
-                    - name: Azonosítótábla-bevételezés a Raktárkezelés mobilalkalmazás használatával
+                    - name: Azonosítótábla-bevételezés a Warehouse Management mobilalkalmazás használatával
                       href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
                     - name: Mobileszköz-menüelem beállítása a beszerzési rendelés munkájának befejezéséhez
                       href: warehousing/tasks/set-up-mobile-device-menu.md
@@ -3345,7 +3353,7 @@
               items:
                 - name: Mezőbeállítások hiányoznak a cikkmodellcsoportok másik jogi személybe történő másolása során
                   href: troubleshooting/costing/copying-item-model-groups.md
-                - name: A „Közvetett költségek a folyamatban” jelentésben törölt termelési rendelések szerepelnek
+                - name: A Közvetett költségek a folyamatban jelentésben törölt termelési rendelések szerepelnek
                   href: troubleshooting/costing/indirect-costs-in-pr.md
                 - name: Nulla összegű beszerzési elhatárolás lett feladva nulla értékű termékbevételezéshez
                   href: troubleshooting/costing/posting-to-purchase.md
@@ -3359,11 +3367,11 @@
                   href: troubleshooting/inventory/multiple-inventory-t.md
                 - name: Jelentés készként való visszavonása váratlan nyitott tranzakciót okoz
                   href: troubleshooting/inventory/reverse-report-as-fi.md
-                - name: Nem jeleníthetők meg a kitárolási lista jelentésében található naplóhoz csatolt új jegyzetek
+                - name: A kitárolási lista jelentése nem mutatja a naplóhoz csatolt új jegyzeteket
                   href: troubleshooting/inventory/unable-to-print-the.md
                 - name: 'Az elindított karanténrendelésen lévő mennyiség nem frissül, ha a rendelés fel van osztva'
                   href: troubleshooting/inventory/quantity-on-a-start.md
-                - name: Az „Utolsó tesztelés dátuma” mező nem frissül több minőségi rendelés létrehozásakor
+                - name: Az Utolsó tesztelés dátuma mező nem frissül több minőségi rendelés létrehozásakor
                   href: troubleshooting/inventory/the-field-last-test.md
                 - name: Ténylegessúly-mennyiség felosztása során a nominális mennyiség helyett a minimumot használják
                   href: troubleshooting/inventory/while-splitting-the.md
@@ -3371,17 +3379,21 @@
               items:
                 - name: 'A közvetlenül származtatott, megerősített megrendeléseket egy felülvizsgálat alatt álló munkafolyamat dolgozza fel'
                   href: troubleshooting/planning/firmed-directly-deri.md
+                - name: Az alaptervezés cikkei nem szűrhetők a vonatkozó fedezetcsoport-értékeik szerint
+                  href: troubleshooting/planning/master-planning-batc.md
                 - name: Az alaptervezés fantomtermékekhez hoz létre tervezett rendeléseket
                   href: troubleshooting/planning/planned-orders-are-g.md
                 - name: 'Tervezett beszerzési rendelés jön létre, amikor egy beszerzés negatív napokon belül található'
                   href: troubleshooting/planning/planning-optimisatio.md
-                - name: Az önköltségi ár nem tölthető fel az igény-előrejelzési bejegyzésekben
+                - name: Az előre jelzett egységköltség nem frissíthető az igény-előrejelzési rekordok importálása során
                   href: troubleshooting/planning/unable-to-upload-the.md
                 - name: Nem távolítható el a raktári igény-előrejelzési dimenzió az előrejelzési sorokból
                   href: troubleshooting/planning/warehouse-removal-fr.md
+                - name: 'Menteni kell a cikkfedezeti beállításokat, pedig nem eszközölt változtatásokat'
+                  href: troubleshooting/planning/when-importing-to-th.md
             - name: Beszerzés
               items:
-                - name: Vevő számára is látható értékesítési rendelés nem számlázható a VEL vállalatban
+                - name: Vevő által értékesített értékesítési rendelést nem lehet számlázni
                   href: troubleshooting/procurement/not-able-to-invoice-.md
                 - name: Nem adható hozzá sor a beszerzési igényléshez módosítás kérése után
                   href: troubleshooting/procurement/purchase-requisition.md
@@ -3403,7 +3415,7 @@
                   href: troubleshooting/production/late-selection-is-no.md
                 - name: 'A felhasználók visszavonhatják olyan termékek anyagsorainak kitárolását, amelyeket készként jelöltek'
                   href: troubleshooting/production/raw-material-lines-a.md
-                - name: Hiba a jelentés kész naplóként történő feladása során
+                - name: Hiba a Készre jelentés napló feladás a során
                   href: troubleshooting/production/posting-report-as-.md
                 - name: A kitárolási lista naplójában szereplő raktár nem frissül a DBJ során
                   href: troubleshooting/production/the-warehouse-in-pic.md

@@ -14,7 +14,9 @@
               items:
                 - name: Újdonságok és változások a Platformfrissítések kezdőlapján
                   href: get-started/whats-new-home-page.md
-                - name: Platformfrissítés a 10.0.19-es verzióhoz (2021. július)
+                - name: Platformfrissítés a 10.0.20-es verzióhoz (2021. július)
+                  href: get-started/whats-new-platform-updates-10-0-20.md
+                - name: Platformfrissítés a 10.0.19-es verzióhoz (2021. június)
                   href: get-started/whats-new-platform-updates-10-0-19.md
                 - name: Platformfrissítések a 10.0.18-es verzióhoz (2021. május)
                   href: get-started/whats-new-platform-updates-10-0-18.md
@@ -940,8 +942,6 @@
                   href: lifecycle-services/getting-started-lcs.md
                 - name: Új vagy módosult elemek a Lifecycle Services szolgáltatásban
                   href: lifecycle-services/whats-new-lcs.md
-                - name: A Lifecycle Services (LCS) szolgáltatás eltávolított vagy elavult funkciói
-                  href: lifecycle-services/removed-deprecated-features.md
             - name: Lifecycle Services használati útmutató
               href: lifecycle-services/lcs-user-guide.md
             - name: Projekt felvétele
@@ -1064,6 +1064,10 @@
                       href: data-entities/dual-write/errors-and-alerts.md
                     - name: Alkalmazáséletciklus-kezelés
                       href: data-entities/dual-write/app-lifecycle-management.md
+                    - name: Felhasználó által megadott csapattulajdonos
+                      href: data-entities/dual-write/user-specified-team-owner.md
+                    - name: Kettős írásos környezetek leválasztása és összekapcsolása
+                      href: data-entities/dual-write/relink-environments.md
                 - name: Alkalmazások közötti koncepciómegfeleltetések
                   items:
                     - name: Integrált vevői alapadat
@@ -1158,7 +1162,7 @@
                   href: power-platform/application-lifecycle-management.md
                 - name: Finance and Operations és Dataverse rendszergazdai hivatkozás
                   href: power-platform/admin-reference.md
-                - name: Power Apps portálok a Finance and Operations alkalmazáshoz
+                - name: Power Apps-portálok a Finance and Operations alkalmazáshoz
                   href: power-platform/power-portal-reference.md
                 - name: Finance and Operations virtuális entitások GYIK
                   href: power-platform/faq.md
@@ -1166,6 +1170,8 @@
               items:
                 - name: Bővítmények áttekintése
                   href: power-platform/add-ins-overview.md
+            - name: Irányelvek és kommunikáció
+              href: /power-platform/admin/policies-communications?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json
         - name: Mobilplatform
           items:
             - name: Mobilplatform erőforrásai
@@ -1446,7 +1452,7 @@
                   href: lcs-solutions/apply-country-context.md
                 - name: Jogszabályban előírt tanúsítványinformációk a funkciók nevében
                   href: lcs-solutions/regulatory-certifications.md
-                - name: Jogszabály-követési frissítések
+                - name: Jogszabálykövetési frissítések
                   href: lcs-solutions/regulatory-watch-communication.md
                 - name: Honosítási modellek elválasztása
                   href: lcs-solutions/separate-localization-models.md
