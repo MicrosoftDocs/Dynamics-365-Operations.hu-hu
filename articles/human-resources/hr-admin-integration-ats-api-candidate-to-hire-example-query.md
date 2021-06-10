@@ -7,38 +7,37 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a8c3655e7ff609eedbf92fa90a36b65002f40306
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: efec8c0a8eb75f818acd4ed02632f1db96719d81
+ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893472"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6054716"
 ---
-# <a name="example-query-for-candidate-to-hire"></a><span data-ttu-id="a0413-103">Példa lekérdezésre a Felvenni kívánt jelölt esetében</span><span class="sxs-lookup"><span data-stu-id="a0413-103">Example query for Candidate to hire</span></span>
+# <a name="example-query-for-candidate-to-hire"></a><span data-ttu-id="db42d-103">Példa lekérdezésre a Felvenni kívánt jelölt esetében</span><span class="sxs-lookup"><span data-stu-id="db42d-103">Example query for Candidate to hire</span></span>
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-<span data-ttu-id="a0413-104">Ez a témakör példalekérdezést tartalmaz a Felvenni kívánt jelölt entitásra vonatkozóan a Dynamics 365 Human Resources rendszerben.</span><span class="sxs-lookup"><span data-stu-id="a0413-104">This topic provides an example query for the Candidate to hire entity in Dynamics 365 Human Resources.</span></span>
+<span data-ttu-id="db42d-104">Ez a témakör példalekérdezést tartalmaz a Felvenni kívánt jelölt entitásra vonatkozóan a Dynamics 365 Human Resources rendszerben.</span><span class="sxs-lookup"><span data-stu-id="db42d-104">This topic provides an example query for the Candidate to hire entity in Dynamics 365 Human Resources.</span></span>
 
-<span data-ttu-id="a0413-105">Ez a témakör egy példán keresztül bemutatja, hogyan használhatja a *mély beszúrásokat* egy új jelöltrekord minden részletének létrehozásához egyetlen API-műveletben.</span><span class="sxs-lookup"><span data-stu-id="a0413-105">This topic provides an example demonstrating how you can use *deep inserts* to create all the detail of a new candidate record in a single API operation.</span></span> <span data-ttu-id="a0413-106">A mély beszúrásokról további információt a [Kapcsolódó entitásrekordok létrehozása egyetlen műveletben](/powerapps/developer/data-platform/webapi/create-entity-web-api#create-related-entity-records-in-one-operation) című témakörben talál.</span><span class="sxs-lookup"><span data-stu-id="a0413-106">For more information about deep inserts, see [Create related entity records in one operation](/powerapps/developer/data-platform/webapi/create-entity-web-api#create-related-entity-records-in-one-operation).</span></span>
+<span data-ttu-id="db42d-105">Ez a témakör egy példán keresztül bemutatja, hogyan használhatja a *mély beszúrásokat* egy új jelöltrekord minden részletének létrehozásához egyetlen API-műveletben.</span><span class="sxs-lookup"><span data-stu-id="db42d-105">This topic provides an example demonstrating how you can use *deep inserts* to create all the detail of a new candidate record in a single API operation.</span></span> <span data-ttu-id="db42d-106">A mély beszúrásokról további információt a [Kapcsolódó entitásrekordok létrehozása egyetlen műveletben](/powerapps/developer/data-platform/webapi/create-entity-web-api#create-related-entity-records-in-one-operation) című témakörben talál.</span><span class="sxs-lookup"><span data-stu-id="db42d-106">For more information about deep inserts, see [Create related entity records in one operation](/powerapps/developer/data-platform/webapi/create-entity-web-api#create-related-entity-records-in-one-operation).</span></span>
 
-<span data-ttu-id="a0413-107">A **mshr_hcmcandidatetohireentity** entitás egyedi, mert kapcsolatban áll a **mshr_dirpersonentity** entitással.</span><span class="sxs-lookup"><span data-stu-id="a0413-107">The **mshr_hcmcandidatetohireentity** entity is unique because of its relationship to the **mshr_dirpersonentity** entity.</span></span> <span data-ttu-id="a0413-108">A **mshr_hcmcandidatetohireentity** számos tulajdonsága (például **mshr_firstname**, **mshr_lastname** és **mshr_birthdate**) a **mshr_dirpersonentity** rekordból származik.</span><span class="sxs-lookup"><span data-stu-id="a0413-108">Many of the properties on the **mshr_hcmcandidatetohireentity** (for example, **mshr_firstname**, **mshr_lastname**, and **mshr_birthdate**) are derived from the **mshr_dirpersonentity** record.</span></span> <span data-ttu-id="a0413-109">Ha mély beszúrások használata nélkül ad fel új jelöltrekordot a **mshr_hcmcandidatetohireentity** entitáshoz, ezen tulajdonságok értékeit közvetlenül a **mshr_hcmcandidatetohireentity** rekordban határozhatja meg.</span><span class="sxs-lookup"><span data-stu-id="a0413-109">If you post a new candidate record to **mshr_hcmcandidatetohireentity** without using deep inserts, you can define values for these properties directly on the **mshr_hcmcandidatetohireentity** record.</span></span> <span data-ttu-id="a0413-110">A társított **mshr_dirpersonentity rekord** implicit módon jön létre a tulajdonságokhoz meghatározott értékekkel.</span><span class="sxs-lookup"><span data-stu-id="a0413-110">The associated **mshr_dirpersonentity** record is created implicitly with the defined values for the properties.</span></span> <span data-ttu-id="a0413-111">Ezután létrehozhat bármely más kapcsolódó entitásrekordokat (például készségeket vagy végzettséget) külön API-hívásként.</span><span class="sxs-lookup"><span data-stu-id="a0413-111">You can then create any other related entity records (such as skills or education) as separate API calls.</span></span>
+<span data-ttu-id="db42d-107">A **mshr_hcmcandidatetohireentity** entitás egyedi, mert kapcsolatban áll a **mshr_dirpersonentity** entitással.</span><span class="sxs-lookup"><span data-stu-id="db42d-107">The **mshr_hcmcandidatetohireentity** entity is unique because of its relationship to the **mshr_dirpersonentity** entity.</span></span> <span data-ttu-id="db42d-108">A **mshr_hcmcandidatetohireentity** számos tulajdonsága (például **mshr_firstname**, **mshr_lastname** és **mshr_birthdate**) a **mshr_dirpersonentity** rekordból származik.</span><span class="sxs-lookup"><span data-stu-id="db42d-108">Many of the properties on the **mshr_hcmcandidatetohireentity** (for example, **mshr_firstname**, **mshr_lastname**, and **mshr_birthdate**) are derived from the **mshr_dirpersonentity** record.</span></span> <span data-ttu-id="db42d-109">Ha mély beszúrások használata nélkül ad fel új jelöltrekordot a **mshr_hcmcandidatetohireentity** entitáshoz, ezen tulajdonságok értékeit közvetlenül a **mshr_hcmcandidatetohireentity** rekordban határozhatja meg.</span><span class="sxs-lookup"><span data-stu-id="db42d-109">If you post a new candidate record to **mshr_hcmcandidatetohireentity** without using deep inserts, you can define values for these properties directly on the **mshr_hcmcandidatetohireentity** record.</span></span> <span data-ttu-id="db42d-110">A társított **mshr_dirpersonentity rekord** implicit módon jön létre a tulajdonságokhoz meghatározott értékekkel.</span><span class="sxs-lookup"><span data-stu-id="db42d-110">The associated **mshr_dirpersonentity** record is created implicitly with the defined values for the properties.</span></span> <span data-ttu-id="db42d-111">Ezután létrehozhat bármely más kapcsolódó entitásrekordokat (például készségeket vagy végzettséget) külön API-hívásként.</span><span class="sxs-lookup"><span data-stu-id="db42d-111">You can then create any other related entity records (such as skills or education) as separate API calls.</span></span>
 
-<span data-ttu-id="a0413-112">Ha azonban mély beszúrások használatával szeretné létrehozni az összes kapcsolódó entitást egy műveletben, akkor a **mshr_dirpersonentity** entitásra jellemző tulajdonságokat a művelet adott beágyazott szintjén kell definiálni.</span><span class="sxs-lookup"><span data-stu-id="a0413-112">If, however, you want to use deep inserts to create all related entities in one operation, the properties specific to the **mshr_dirpersonentity** entity must be defined on that nested level of the operation.</span></span>
+<span data-ttu-id="db42d-112">Ha azonban mély beszúrások használatával szeretné létrehozni az összes kapcsolódó entitást egy műveletben, akkor a **mshr_dirpersonentity** entitásra jellemző tulajdonságokat a művelet adott beágyazott szintjén kell definiálni.</span><span class="sxs-lookup"><span data-stu-id="db42d-112">If, however, you want to use deep inserts to create all related entities in one operation, the properties specific to the **mshr_dirpersonentity** entity must be defined on that nested level of the operation.</span></span>
 
-<span data-ttu-id="a0413-113">Ez a példa bemutatja, hogyan hozhat létre egy jelöltrekordot, a társított személyes rekordot, valamint a személy képességeit és végzettségét három egymásba ágyazott szinten, mély beszúrásokkal egyetlen API-műveletben.</span><span class="sxs-lookup"><span data-stu-id="a0413-113">This example shows how you can create a candidate record, the associated person record, and the person's skills and education in three nested levels using deep inserts in a single API operation.</span></span>
+<span data-ttu-id="db42d-113">Ez a példa bemutatja, hogyan hozhat létre egy jelöltrekordot, a társított személyes rekordot, valamint a személy képességeit és végzettségét három egymásba ágyazott szinten, mély beszúrásokkal egyetlen API-műveletben.</span><span class="sxs-lookup"><span data-stu-id="db42d-113">This example shows how you can create a candidate record, the associated person record, and the person's skills and education in three nested levels using deep inserts in a single API operation.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="a0413-114">A példa nem tartalmazza az API-entitások összes tulajdonságát.</span><span class="sxs-lookup"><span data-stu-id="a0413-114">The example does not include all properties of each of the API entities.</span></span> <span data-ttu-id="a0413-115">A példa demonstrációs célok érdekében le van egyszerűsítve.</span><span class="sxs-lookup"><span data-stu-id="a0413-115">It is simplified for demonstration purposes.</span></span>
+> <span data-ttu-id="db42d-114">A példa nem tartalmazza az API-entitások összes tulajdonságát.</span><span class="sxs-lookup"><span data-stu-id="db42d-114">The example does not include all properties of each of the API entities.</span></span> <span data-ttu-id="db42d-115">A példa demonstrációs célok érdekében le van egyszerűsítve.</span><span class="sxs-lookup"><span data-stu-id="db42d-115">It is simplified for demonstration purposes.</span></span>
 
-<span data-ttu-id="a0413-116">**Kérelem**</span><span class="sxs-lookup"><span data-stu-id="a0413-116">**Request**</span></span>
+<span data-ttu-id="db42d-116">**Kérelem**</span><span class="sxs-lookup"><span data-stu-id="db42d-116">**Request**</span></span>
 
 ```http
 
@@ -100,7 +99,7 @@ Accept: application/json
 }
 ```
 
-<span data-ttu-id="a0413-117">**Válasz**</span><span class="sxs-lookup"><span data-stu-id="a0413-117">**Response**</span></span>
+<span data-ttu-id="db42d-117">**Válasz**</span><span class="sxs-lookup"><span data-stu-id="db42d-117">**Response**</span></span>
 
 ```http
 
@@ -110,9 +109,9 @@ OData-EntityId: [Organization URI]/api/data/v9.1/mshr_hcmcandidatetohireentities
 
 ```
 
-## <a name="see-also"></a><span data-ttu-id="a0413-118">Lásd még</span><span class="sxs-lookup"><span data-stu-id="a0413-118">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="db42d-118">Lásd még</span><span class="sxs-lookup"><span data-stu-id="db42d-118">See also</span></span>
 
-[<span data-ttu-id="a0413-119">Pályázó követésrendszer integrációs API bevezetése</span><span class="sxs-lookup"><span data-stu-id="a0413-119">Applicant Tracking System integration API introduction</span></span>](hr-admin-integration-ats-api-introduction.md)<br>
+[<span data-ttu-id="db42d-119">Pályázó követésrendszer integrációs API bevezetése</span><span class="sxs-lookup"><span data-stu-id="db42d-119">Applicant Tracking System integration API introduction</span></span>](hr-admin-integration-ats-api-introduction.md)<br>
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

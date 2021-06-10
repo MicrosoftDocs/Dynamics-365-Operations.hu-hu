@@ -1,7 +1,7 @@
 ---
 title: A tároló tömegének és térfogatának feltüntetése a rakományon
 description: Ez a témakör a tároló tömegének és térfogatának feltüntetése a rakományon funkció beállítását és alkalmazását írja le.
-author: pjacobse
+author: Henrikan
 ms.date: 05/26/2017
 ms.topic: article
 ms.prod: ''
@@ -11,37 +11,37 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.custom: 269384
 ms.search.region: Global
-ms.author: pjacobse
+ms.author: henrikan
 ms.search.validFrom: 2017-09-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8d747d2cdafeedf77b8b2df1cbc8debdc0675729
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9196e9c4ce1a8aa629400b8bf379e7164a797b85
+ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5824052"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "6102639"
 ---
-# <a name="include-container-weight-and-volume-on-load"></a><span data-ttu-id="b70fb-103">A tároló tömegének és térfogatának feltüntetése a rakományon</span><span class="sxs-lookup"><span data-stu-id="b70fb-103">Include container weight and volume on load</span></span>
+# <a name="include-container-weight-and-volume-on-load"></a><span data-ttu-id="bed62-103">A tároló tömegének és térfogatának feltüntetése a rakományon</span><span class="sxs-lookup"><span data-stu-id="bed62-103">Include container weight and volume on load</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="b70fb-104">A tároló tömegének és térfogatának feltüntetése a rakományon funkció világosan jelzi a rakományba bekerülő tárolók összsúlyát és térfogatát.</span><span class="sxs-lookup"><span data-stu-id="b70fb-104">The functionality for including the container weight and volume on a load gives a clear representation of the total weight and volume of containers and items that are going on a load.</span></span>
+<span data-ttu-id="bed62-104">A tároló tömegének és térfogatának feltüntetése a rakományon funkció világosan jelzi a rakományba bekerülő tárolók összsúlyát és térfogatát.</span><span class="sxs-lookup"><span data-stu-id="bed62-104">The functionality for including the container weight and volume on a load gives a clear representation of the total weight and volume of containers and items that are going on a load.</span></span>
 
-<span data-ttu-id="b70fb-105">A rakomány egyetlen szállítmányt vagy több szállítmányt tartalmaz, és ezek a szállítmányok egy vagy több értékesítési rendeléshez tartozó egyedi cikkeket tartalmaznak.</span><span class="sxs-lookup"><span data-stu-id="b70fb-105">A load contains a single shipment or multiple shipments, and these shipments contain distinct items that belong to a single sales order or multiple sales orders.</span></span> <span data-ttu-id="b70fb-106">A cikkek tárolása tárolón belül történik, a tárolókat rakományba töltjük be.</span><span class="sxs-lookup"><span data-stu-id="b70fb-106">The items are stored inside a container, and containers are loaded on a load.</span></span> <span data-ttu-id="b70fb-107">A rakomány tárolón kívüli cikkeket is tartalmazhat.</span><span class="sxs-lookup"><span data-stu-id="b70fb-107">Items that are outside a container can also be part of a load.</span></span> <span data-ttu-id="b70fb-108">Ezek a feltételek alapján a rendszer kiszámítja a rakomány súlyát és térfogatát, figyelembe véve a tárolók és a cikkek mennyiségét és súlyát egyaránt.</span><span class="sxs-lookup"><span data-stu-id="b70fb-108">Based on these conditions, the system calculates values for the weight and volume on the load by considering the weight and volume of both containers and items.</span></span>
+<span data-ttu-id="bed62-105">A rakomány egyetlen szállítmányt vagy több szállítmányt tartalmaz, és ezek a szállítmányok egy vagy több értékesítési rendeléshez tartozó egyedi cikkeket tartalmaznak.</span><span class="sxs-lookup"><span data-stu-id="bed62-105">A load contains a single shipment or multiple shipments, and these shipments contain distinct items that belong to a single sales order or multiple sales orders.</span></span> <span data-ttu-id="bed62-106">A cikkek tárolása tárolón belül történik, a tárolókat rakományba töltjük be.</span><span class="sxs-lookup"><span data-stu-id="bed62-106">The items are stored inside a container, and containers are loaded on a load.</span></span> <span data-ttu-id="bed62-107">A rakomány tárolón kívüli cikkeket is tartalmazhat.</span><span class="sxs-lookup"><span data-stu-id="bed62-107">Items that are outside a container can also be part of a load.</span></span> <span data-ttu-id="bed62-108">Ezek a feltételek alapján a rendszer kiszámítja a rakomány súlyát és térfogatát, figyelembe véve a tárolók és a cikkek mennyiségét és súlyát egyaránt.</span><span class="sxs-lookup"><span data-stu-id="bed62-108">Based on these conditions, the system calculates values for the weight and volume on the load by considering the weight and volume of both containers and items.</span></span>
 
-<span data-ttu-id="b70fb-109">Ha a számított értékek nem pontosak, módosíthatja őket – írja be a rakomány súlyának és térfogatának tényleges értékét.</span><span class="sxs-lookup"><span data-stu-id="b70fb-109">If the calculated values aren’t precise, you can adjust them by entering the actual values for the weight and volume on the load.</span></span> <span data-ttu-id="b70fb-110">A súly és térfogat értéke szállításkezelő folyamatokban használatos.</span><span class="sxs-lookup"><span data-stu-id="b70fb-110">The values for the weight and volume are used in transportation management processes.</span></span> <span data-ttu-id="b70fb-111">Például az értékek szerepelnek a díj és útvonal munkaterületen, ahol segítségével meghatározható a rakományok díja és útvonala, illetve használatos szállítási ajánlatoknál és járművezetői bejelentkezéseknél is.</span><span class="sxs-lookup"><span data-stu-id="b70fb-111">For example, the values are used in the rate route workbench, where they help define the rate and route for loads, and they are also used for transportation tenders and driver check-in.</span></span>
+<span data-ttu-id="bed62-109">Ha a számított értékek nem pontosak, módosíthatja őket – írja be a rakomány súlyának és térfogatának tényleges értékét.</span><span class="sxs-lookup"><span data-stu-id="bed62-109">If the calculated values aren’t precise, you can adjust them by entering the actual values for the weight and volume on the load.</span></span> <span data-ttu-id="bed62-110">A súly és térfogat értéke szállításkezelő folyamatokban használatos.</span><span class="sxs-lookup"><span data-stu-id="bed62-110">The values for the weight and volume are used in transportation management processes.</span></span> <span data-ttu-id="bed62-111">Például az értékek szerepelnek a díj és útvonal munkaterületen, ahol segítségével meghatározható a rakományok díja és útvonala, illetve használatos szállítási ajánlatoknál és járművezetői bejelentkezéseknél is.</span><span class="sxs-lookup"><span data-stu-id="bed62-111">For example, the values are used in the rate route workbench, where they help define the rate and route for loads, and they are also used for transportation tenders and driver check-in.</span></span>
 
-## <a name="where-it-applies"></a><span data-ttu-id="b70fb-112">Alkalmazási kör</span><span class="sxs-lookup"><span data-stu-id="b70fb-112">Where it applies</span></span>
+## <a name="where-it-applies"></a><span data-ttu-id="bed62-112">Alkalmazási kör</span><span class="sxs-lookup"><span data-stu-id="bed62-112">Where it applies</span></span>
 
-<span data-ttu-id="b70fb-113">A tároló tömegének és térfogatának feltüntetése a rakományon funkció a szállításkezelési folyamatokra vonatkozik, például a díj és útvonal munkaterületen, szállítási ajánlatoknál és járművezetők bejelentkezésénél.</span><span class="sxs-lookup"><span data-stu-id="b70fb-113">The functionality for including the container weight and volume on a load applies in transportation management processes, such as the rate route workbench, transportation tenders, and driver check-in.</span></span>
+<span data-ttu-id="bed62-113">A tároló tömegének és térfogatának feltüntetése a rakományon funkció a szállításkezelési folyamatokra vonatkozik, például a díj és útvonal munkaterületen, szállítási ajánlatoknál és járművezetők bejelentkezésénél.</span><span class="sxs-lookup"><span data-stu-id="bed62-113">The functionality for including the container weight and volume on a load applies in transportation management processes, such as the rate route workbench, transportation tenders, and driver check-in.</span></span>
 
-## <a name="how-it-is-set-up"></a><span data-ttu-id="b70fb-114">Hogyan van beállítva</span><span class="sxs-lookup"><span data-stu-id="b70fb-114">How it is set up</span></span>
+## <a name="how-it-is-set-up"></a><span data-ttu-id="bed62-114">Hogyan van beállítva</span><span class="sxs-lookup"><span data-stu-id="bed62-114">How it is set up</span></span>
 
-<span data-ttu-id="b70fb-115">A rakománynál figyelembe veendő tárolók számának kiszámítása a tároló súlya és térfogata és a tároló százalékos kihasználtsága alapján történik.</span><span class="sxs-lookup"><span data-stu-id="b70fb-115">The number of containers that should be considered for a load is calculated based on the weight and volume of the container, and on the percentage of the container is used.</span></span>
+<span data-ttu-id="bed62-115">A rakománynál figyelembe veendő tárolók számának kiszámítása a tároló súlya és térfogata és a tároló százalékos kihasználtsága alapján történik.</span><span class="sxs-lookup"><span data-stu-id="bed62-115">The number of containers that should be considered for a load is calculated based on the weight and volume of the container, and on the percentage of the container is used.</span></span>
 
--   <span data-ttu-id="b70fb-116">A tároló súlyának és térfogatának beállításához kattintson **Raktárkezelés** \> **Beállítás** \> **Tárolók** \> **Tárolótípusok** elemre.</span><span class="sxs-lookup"><span data-stu-id="b70fb-116">To set the weight and volume for a container, click **Warehouse management** \> **Setup** \> **Containers** \> **Container types**.</span></span>
+-   <span data-ttu-id="bed62-116">A tároló súlyának és térfogatának beállításához kattintson **Raktárkezelés** \> **Beállítás** \> **Tárolók** \> **Tárolótípusok** elemre.</span><span class="sxs-lookup"><span data-stu-id="bed62-116">To set the weight and volume for a container, click **Warehouse management** \> **Setup** \> **Containers** \> **Container types**.</span></span>
 
--   <span data-ttu-id="b70fb-117">A tároló százalékos kihasználtsága beállításához kattintson a **Raktárkezelés** \> **Beállítás** \> **Tárolók** \> **Tárolócsoportok** elemre, majd írjon be egy értéket a **Tároló százalékos kihasználtsága** mezőbe.</span><span class="sxs-lookup"><span data-stu-id="b70fb-117">To set the container utilization percentage, click **Warehouse management** \> **Setup** \> **Containers** \> **Container groups**, and then enter a value in the **Container utilization percentage** field.</span></span>
+-   <span data-ttu-id="bed62-117">A tároló százalékos kihasználtsága beállításához kattintson a **Raktárkezelés** \> **Beállítás** \> **Tárolók** \> **Tárolócsoportok** elemre, majd írjon be egy értéket a **Tároló százalékos kihasználtsága** mezőbe.</span><span class="sxs-lookup"><span data-stu-id="bed62-117">To set the container utilization percentage, click **Warehouse management** \> **Setup** \> **Containers** \> **Container groups**, and then enter a value in the **Container utilization percentage** field.</span></span>
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
