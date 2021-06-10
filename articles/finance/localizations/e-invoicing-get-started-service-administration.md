@@ -2,7 +2,7 @@
 title: Első lépések az elektronikus számlázási szolgáltatás adminisztrálása során
 description: Ez a témakör bemutatja az Elektronikus számlázás szolgáltatásfelügyeletének használatának első lépéseit.
 author: gionoder
-ms.date: 05/04/2021
+ms.date: 05/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: f389e111006327fe8d82581d01140b4cff2e200d
-ms.sourcegitcommit: 35fdcc6501e099c54a58583b1e3aba16f02a5ccc
+ms.openlocfilehash: 7c4d69edd4a8f7c7acc2ac1bc22c1ba6eaba25ae
+ms.sourcegitcommit: 90a289962598394ad98209026013689322854b7b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2021
-ms.locfileid: "5980975"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "6092406"
 ---
 # <a name="get-started-with-electronic-invoicing-service-administration"></a>Első lépések az elektronikus számlázási szolgáltatás adminisztrálása során
 
@@ -44,18 +44,14 @@ Mielőtt teljesítené az ebben a témakörben ismertetett eljárásokat, a köv
 
 ## <a name="install-the-add-in-for-microservices-in-lifecycle-services"></a>A mikroszolgáltatások bővítményének telepítése a Lifecycle Services szolgáltatásba
 
-1. Jelentkezzen be a LCS-fiók.
-2. Válassza az **Előzetes funkció kezelése** csempe lehetőséget.
-3. A **Nyilvános előzetes verzió** szakaszban válassza az **Elektronikus számlázás** lehetőséget.
-4. Ellenőrizze, hogy az **Előzetes funkció engedélyezve** értéke **Igen** értékre van-e állítva.
-5. Válassza ki az LCS-projektet az LCS-irányítópulton.
-6. Az LCS-projektben az LCS-környezet irányítópultján válassza ki az LCS-telepítési projektet. Az LCS telepítési projektnek futnia kell.
-7. A **Power Platform Integráció** lapon a **Környezeti bővítmények** mezőcsoportban válassza az **Új bővítmény telepítése** lehetőséget.
-8. Válassza az **Elektronikus számlázás** lehetőséget.
-9. Az **AAD-alkalmazásazonosító** mezőbe írja: **091c98b0-a1c9-4b02-b62c-7753395ccabe**. Ez egy rögzített érték.
-10. Az **AAD-bérlőazonosító** mezőbe írja be az Azure előfizetési fiókja bérlőazonosítóját.
-11. Olvassa el az Általános Szerződési Feltételeket, majd jelölje be a jelölőnégyzetet.
-12. Válassza a **Telepítés** parancsot.
+1. Jelentkezzen be az LCS-fiókba, és az LCS projekt irányítópultján válasszon ki egy LCS-projektet.
+2. A projektben, akörnyezet irányítópultján válassza ki az LCS-telepítési projektet. A kiválasztott projektnek futnia kell.
+3. A **Power Platform Integráció** lapon a **Környezeti bővítmények** mezőcsoportban válassza az **Új bővítmény telepítése** lehetőséget.
+4. Válassza az **Elektronikus számlázás** lehetőséget.
+5. Az **AAD-alkalmazásazonosító** mezőbe írja: **091c98b0-a1c9-4b02-b62c-7753395ccabe**. Ez egy rögzített érték.
+6. Az **AAD-bérlőazonosító** mezőbe írja be az Azure előfizetési fiókja bérlőazonosítóját.
+7. Olvassa el az Általános Szerződési Feltételeket, majd jelölje be a jelölőnégyzetet.
+8. Válassza a **Telepítés** parancsot.
 
 
 ## <a name="set-up-the-parameters-for-rcs-integration-with-electronic-invoicing"></a>RCS-integráció paramétereinek beállítása az Elektronikus számlázással

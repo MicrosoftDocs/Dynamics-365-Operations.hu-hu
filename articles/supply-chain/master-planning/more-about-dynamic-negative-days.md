@@ -1,27 +1,21 @@
 ---
 title: Negatív napok és dinamikus negatív napok
 description: Ez a témakör a negatív napokkal és a dinamikus negatív napokkal kapcsolatos tudnivalókat ismerteti, és azt, hogyan segítik az ilyen napok vállalkozása működését.
-author: t-benebo
-ms.date: 06/06/2019
+author: ChristianRytt
+ms.date: 05/25/2021
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: 72704
-ms.assetid: e7c5d44e-07bc-40b1-a4b3-8ba46483ef9e
-ms.search.region: global
-ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.search.region: Global
+ms.author: crytt
 ms.search.validFrom: 2019-06-07
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7440a6a0b9093664a0d717b3bfa011ee3100639f
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 37ae6ebd4347d3bbb414b7f1e4e0d54150878c02
+ms.sourcegitcommit: c5c8f19a696ad4a3d68dffd63bfe7b484b999d2b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5907741"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "6097234"
 ---
 # <a name="negative-days-and-dynamic-negative-days"></a>Negatív napok és dinamikus negatív napok
 
@@ -45,7 +39,7 @@ Az igény beérkezhet jóval azelőtt, hogy a cikk átfutási ideje elkezdődik,
 - A DemoProduct cikkhez hatnapos beszerzési átfutási idő tartozik.
 - A nulladik napon (január 1.) a DemoProduct cikk készletszintje 0 (nulla).
 - A nulladik napon (január 1.) értékesítési rendelést kap 10 darab DemoProduct cikkre.
-- A hetedik napon (január 7.) már van egy meglévő beszerzési rendelés a DemoProduct 10 darabos cikkmennyiségéhez.
+- A hetedik napon (január 8.) már van egy meglévő beszerzési rendelés a DemoProduct 10 darabos cikkmennyiségéhez.
 
 Az alábbi ábra bemutatja a forgatókönyv grafikus nézetét.
 
@@ -112,7 +106,7 @@ Előfordulhat, hogy a cikk átfutási ideje alatt érkezik be igény. Példa err
 
 Az alábbi ábra bemutatja a forgatókönyv grafikus nézetét.
 
-![Az 1. forgatókönyv grafikus nézete](./media/negative-days-8.png)
+![Az 2. forgatókönyv grafikus nézete](./media/negative-days-8.png)
 
 ### <a name="case-a-negative-days-are-less-than-the-items-lead-time"></a>A eset: a negatív nap kevesebb, mint a cikk átfutási ideje.
 
@@ -157,7 +151,7 @@ Előfordulhat, hogy az igény a cikk átfutási időszaka után érkezik be. Pé
 - A DemoProduct cikkhez hatnapos beszerzési átfutási idő tartozik.
 - A nulladik napon (január 1.) a DemoProduct cikk készletmennyisége 0 (nulla).
 - A hetedik napon (január 8.), amely az átfutási időn kívül van, értékesítési rendelést kap 10 darab DemoProduct cikkre.
-- A tízedik napon (január 11.) már van egy beszerzési rendelés a DemoProduct 10 darabos cikkmennyiségéhez.
+- A tizedik napon (január 11.) már van egy beszerzési rendelés a DemoProduct 10 darabos cikkmennyiségéhez.
 
 Az alábbi ábra bemutatja a forgatókönyv grafikus nézetét.
 
@@ -219,8 +213,8 @@ A negatív napokat hosszú időkorlátra is beállíthatja, és ezt követően a
 - A DemoProduct cikkhez hatnapos beszerzési átfutási idő tartozik.
 - A nulladik napon (január 1.) a DemoProduct cikk készletmennyisége 0 (nulla).
 - A nulladik napon (január 1.) értékesítési rendelést kap 10 darab DemoProduct cikkre.
-- A tízedik napon (január 10.) értékesítési rendelést kap 10 darab DemoProduct cikkre.
-- A tizenkettedik napon (január 12.) már van egy beszerzési rendelés 10 darab DemoProduct cikkre.
+- A kilencedik napon (január 10.) értékesítési rendelést kap 10 darab DemoProduct cikkre.
+- A tizenegyedik napon (január 12.) már van egy beszerzési rendelés a DemoProduct 10 darabos cikkmennyiségéhez.
 - A negatív napok beállítása **20**, ami jóval több, mint a cikk átfutási ideje.
 
 Az alábbi ábra grafikus nézetben mutatja be, mi történik ebben az esetben.
@@ -229,7 +223,7 @@ Az alábbi ábra grafikus nézetben mutatja be, mi történik ebben az esetben.
 
 Az MRP a következő eredményeket produkálja.
 
-![Eredmények](./media/negative-days-20.png)
+![Eredmények, 1. példa](./media/negative-days-20.png)
 
 Az előző képernyőképen az értékesítési rendelés igénylésének dátuma január 9., nem pedig január 10. Mivel ez a képernyőkép 2015-ben készült, amikor január 10-e szombatra esett, a rendelés igénylési dátumának az előző munkanapra, péntekre, azaz január 9-re kell esnie.
 
@@ -239,7 +233,7 @@ Az eredmények nem hibásak, de előfordulhat, hogy az MRP futási ideje hosszab
 
 Ha Ön csökkenti a negatív napokat a cikk átfutási idejéhez közelebb eső számra, és dinamikus negatív napokat használ, akkor az MRP a következő eredményeket hozza létre.
 
-![Eredmények](./media/negative-days-21.png)
+![Eredmények, 2. példa](./media/negative-days-21.png)
 
 Az MRP létrehoz egy tervezett rendelést, amely az első értékesítési rendeléshez van csatolva. Ezt követően az elvárásoknak megfelelően a rendszer a második értékesítési rendelést a negatív napok beállításától függően a meglévő beszerzési rendeléshez rögzíti. Ez a tervezési eredmény is helyes, és az MRP futási ideje rövidebb lehet. Ebben az esetben nem feltétlenül szükséges a műveletkérő üzenetek megértése és az, hogy tudja, hogyan kell dolgoznia velük.
 

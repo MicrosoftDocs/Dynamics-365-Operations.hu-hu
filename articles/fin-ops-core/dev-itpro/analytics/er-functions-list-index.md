@@ -2,7 +2,7 @@
 title: INDEX ER-függvény
 description: A témakör tájékoztatást nyújt az INDEX Elektronikus jelentéskészítési (ER) függvény használatának módjáról.
 author: NickSelin
-ms.date: 12/12/2019
+ms.date: 05/20/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 14f10359a3f20fb9d23639babce764b9ef64243d
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 5a0fdb8958670efe8e2a37cee183bf836fa6c7e8
+ms.sourcegitcommit: 047b0503868cc7d7b21868e24405d76af35db747
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750460"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "6087751"
 ---
 # <a name="index-er-function"></a>INDEX ER-függvény
 
@@ -44,7 +44,10 @@ A *Rekordlista* adattípus adatforrásának érvényes elérési útja.
 
 Numerikus index, amely a kívánt rekord pozícióját jelzi a megadott listában.
 
-## <a name="return-values"></a>Visszaadott értékek
+> [!NOTE]
+> Mivel ehhez a funkcióhoz egyen alapuló számozást kell használni, a megadott lista első rekordjának visszaadásához adja meg az **1** értéket.
+
+## <a name="return-values"></a>Visszatérési értékek
 
 *Tároló (rekord)*
 

@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: f3066741781bd9058e09d7f577a35df4c9b453d4
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 21a77a0289055285f47323803a484c012e662e3a
+ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5819208"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "6102734"
 ---
 # <a name="synchronize-agreement-invoices-in-field-service-to-free-text-invoices-in-supply-chain-management"></a>Field Service megállapodási számlák szinkronizálása Supply Chain Management szabadszöveges számlákká
 
@@ -68,7 +68,7 @@ A **Szerződéses eredetet tartalmaz** oszlop hozzá lett adva a **Számlasor** 
 A **Számla dátuma** kötelező mező a Supply Chain Management szolgáltatásban. Ebből következően az oszlopnak értékkel kell rendelkeznie a Field Service szolgáltatásban a szinkronizálás előtt. E követelmény teljesítéséhez a következő logika került hozzáadásra:
 
 - Ha a **Számladátum** oszlop üres a **Számla** táblában (azaz nincs értéke), akkor szerződésből eredő számlasor hozzáadásánál az aktuális dátumra kerül beállításra.
-- A felhasználó módosíthatja a **Számladátum** oszlopot. Ha azonban a felhasználó megpróbál egy szerződésből eredő számlát menteni, üzletifolyamat-hibát kap, ha a **Számladátum** oszlop üres a számlán.
+- A felhasználó módosíthatja a **Számladátum** oszlopot. Ha azonban a felhasználó megpróbál egy szerződésből eredő számlát menteni, az üzleti folyamatra vonatkozó hibát kap, ha a **Számladátum** oszlop üres a számlán.
 
 ## <a name="prerequisites-and-mapping-setup"></a>Előfeltételek és hozzárendelési beállítás
 
@@ -100,11 +100,11 @@ Az alábbi ábrákon látható a sablonleképezés az Adatintegrálásban.
 
 ### <a name="agreement-invoices-field-service-to-supply-chain-management-invoice-headers"></a>Szerződéses számlák (Field Service-ből Supply Chain Managementbe): Számlafejlécek
 
-[![Sablonleképezés az adatintegrátorban](./media/FSFreeTextInvoice1.png)](./media/FSFreeTextInvoice1.png)
+[![Sablonleképezés a számlafejlécek adatintegrációjában](./media/FSFreeTextInvoice1.png)](./media/FSFreeTextInvoice1.png)
 
 ### <a name="agreement-invoices-field-service-to-supply-chain-management-invoice-lines"></a>Szerződéses számlák (Field Service-ből Supply Chain Managementbe): Számlasorok
 
-[![Sablonleképezés az adatintegrátorban](./media/FSFreeTextInvoice2.png)](./media/FSFreeTextInvoice2.png)
+[![Sablonleképezés a számlasorok adatintegrációjában](./media/FSFreeTextInvoice2.png)](./media/FSFreeTextInvoice2.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

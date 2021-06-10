@@ -2,7 +2,7 @@
 title: Egyéni mezők létrehozása és használata
 description: Ez a témakör bemutatja, hogyan hozhat létre egyéni mezőket a felhasználói felületen, hogy az alkalmazást saját cégük igényeire szabhassa.
 author: jasongre
-ms.date: 03/09/2020
+ms.date: 05/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-1-31
 ms.dyn365.ops.version: Platform update 13
-ms.openlocfilehash: a07c1a81f0436664acdfd23975a99c6670c6fb1c
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 1acbcbc49be6b764481e151d0fb3f12bf3cf5554
+ms.sourcegitcommit: 90a289962598394ad98209026013689322854b7b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754752"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "6092348"
 ---
 # <a name="create-and-work-with-custom-fields"></a>Egyéni mezők létrehozása és használata
 
@@ -26,7 +26,7 @@ ms.locfileid: "5754752"
 
 Bár a mezők sokasága áll rendelkezésre az üzleti folyamatok széles körének kezeléséhez, néha szükség van arra, hogy a vállalat a rendszerben lévő további információkat is nyomon kövessen. Noha a programozók felhasználhatják ezeket a mezőket bővítményként a fejlesztőeszközökben, az egyéni mezők funkció lehetővé teszi a mezők közvetlen hozzáadását a felhasználói felületről, így a webböngészővel testreszabhatja az alkalmazást, hogy illeszkedjen a vállalkozáshoz.
 
-Az egyéni mezők hozzáadásának funkciója a 13-as platformfrissítéstől kezdve érhető el. Csak a különleges jogosultságú felhasználók férhetnek hozzá ehhez a funkcióhoz.
+*Csak a különleges jogosultságú felhasználók férhetnek hozzá ehhez a funkcióhoz.*
 
 Ez a videó megmutatja, milyen egyszerű egy Egyéni mező hozzáadása az oldalhoz: [Egyéni mező hozzáadása](https://www.youtube.com/watch?v=gWSGZI9Vtnc).
 
@@ -46,8 +46,9 @@ A következő lépések leírják az egyéni mező létrehozásának és a mező
     Ha nem látja az **Új mező létrehozása** gombot, nem rendelkezik a szükséges engedélyekkel a funkció használatához.
 
 7. Az **Új mező létrehozása** párbeszédpanelen adja meg a következő adatokat.
-
+   
     1. Válassza ki az adatbázistáblát, amelyhez ezt a mezőt hozzá kívánja adni. Ne feledje, hogy csak az egyéni mezőket támogató táblák jelennek meg a legördülő listában. A támogatott táblázatok technikai részleteit az alábbi részben találja.
+
     2. Válassza ki az új mező adattípusát. Az elérhető adattípusok: jelölőnégyzet, dátum, dátum és időpont, tizedes szám, szám, választólista és szöveg.
 
         - Ha a szöveg adattípust választja, megadhatja a mezőben megadható szöveg maximális hosszát is.
@@ -60,11 +61,15 @@ A következő lépések leírják az egyéni mező létrehozásának és a mező
 10. Kattintson a **Beillesztés** elemre a megjelölt mező a képernyő kijelölt területére történő beszúrásához.
 11. **Opcionális lehetőség:** Engedélyezze az **Áthelyezés** módot a személyre szabási eszköztáron az új mezők a kijelölt terület kívánt helyére való áthelyezéséhez. Lásd [A felhasználói felület testreszabása](personalize-user-experience.md) című részt a képernyők személyes használatra való optimalizálására szolgáló személyre szabási szolgáltatások használatáról.
 
+> [!WARNING]
+> Hogy egy oldalhoz hozzáadott egyéni mezőkben lehet-e értékeket megadni, az attól függ, hogy az egyéni mezőhöz társított tábla szerkeszthető-e vagy írásvédett. Ha a társított tábla írásvédett, akkor a hozzá kapcsolódó összes mező (az egyéni mezők is) írásvédett.
+
+
 ## <a name="sharing-custom-fields-with-other-users"></a>Egyéni mezők megosztása más felhasználókkal
 
-Miután létrehozott egy egyéni mezőt, és megjelenítette egy képernyőn, érdemes lehet megadnia ezt az új mezőt is tartalmazó frissített oldalnézetet a rendszer többi felhasználójának. Ez kétféleképpen érhető el a termék személyre szabási képességeinek használatával:
+Miután létrehozott egy egyéni mezőt, és megjelenítette egy oldalon, érdemes megadnia ezt az új mezőt is tartalmazó frissített oldalnézetet a rendszer többi felhasználójának. Ez kétféleképpen érhető el a termék személyre szabási képességeinek használatával:
 
-- Az ajánlott útvonal a rendszergazdán keresztüli lebonyolítás, aki a személyre szabást közzéteheti az összes felhasználónak vagy a felhasználók egy részhalmazának. A további részletekhez lásd: [A felhasználói élmény testreszabása](personalize-user-experience.md).
+- A javasolt útvonal **egy olyan egyéni mezőt tartalmazó [mentett nézet](saved-views.md) közzététele**, amelyet az oldalon felvettek a megfelelő felhasználócsoport számára. Ha a mentett nézetek funkció nincs engedélyezve, a rendszergazda a Személyre szabás űrlapon alkalmazhatja a személyre szabást a kívánt felhasználók számára. További részletek: [A felhasználói élmény testreszabása](personalize-user-experience.md).
 - Alternatívaként exportálhatja a módosításokat (úgynevezett *személyre szabásokat*), elküldheti őket egy vagy több felhasználónak, és e felhasználók mindegyike importálhatja a módosításokat. A személyre szabási eszköztáron található **Kezelése** opcióval bonyolítható a személyes beállítások exportálása és importálása.
 
 ## <a name="managing-custom-fields"></a>Egyéni mezők kezelése
@@ -134,6 +139,10 @@ Bizonyos ritka esetekben dönthet úgy, hogy egy egyéni mezőre már nincs töb
 > Ezt a műveletet nem lehet visszavonni, és a mezőhöz társított adatok véglegesen törlődnek az adatbázisból.
 
 ## <a name="appendix"></a>Melléklet
+
+### <a name="why-cant-i-enter-a-value-in-my-custom-field"></a>Miért nem lehet értéket megadni az egyéni mezőben? 
+
+Ha az oldal szerkesztési módban van, de mégsem tud beírni értéket az egyéni mezőbe, akkor lehet, hogy a mezőhöz hozzáadott tábla jelenleg írásvédett. Egy tábla minden mezője írásvédett lesz, ha a biztonsági tábla írásvédettként van konfigurálva az oldalon.   
 
 ### <a name="who-can-create-custom-fields"></a>Ki hozhat létre egyedi mezőket?
 

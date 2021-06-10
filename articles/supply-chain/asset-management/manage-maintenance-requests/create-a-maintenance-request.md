@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: af67d320f14fc6c3d28eec47de402ba645eea06d
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 147388d5052bd14851bbddfbb7fe25297a43f104
+ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5836782"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "6102974"
 ---
 # <a name="create-maintenance-requests"></a>Karbantartási kérések létrehozása
 
@@ -30,7 +30,7 @@ ms.locfileid: "5836782"
 
 A karbantartási kérések akkor használhatók, ha a karbantartás dolgozók vagy a termelési dolgozók felfedezik, hogy a felszerelés javítása szükséges, de a javítási feladat nem hajtható végre azonnal.
 
-**Példa:** Amíg a karbantartó dolgozó javítási munkát végez, rájön, hogy egy másik eszközt is szervizelni kell ugyanazon a helyszínen. Azonban a karbantartási dolgozónak nincs ideje vagy a pótalkatrészek szükségesek a javítási feladat végrehajtásához. Ezért létrehoz egy karbantartási kérelmet a tárgyi eszközhöz, és beírja a probléma rövid leírását.
+**Példa:** Amikor a karbantartási dolgozó javítási munkát végez, észreveszi, hogy egy másik eszközt is szervizelni kell ugyanazon a helyen. Azonban a karbantartási dolgozónak nincs ideje vagy a pótalkatrészek szükségesek a javítási feladat végrehajtásához. Ezért létrehoz egy karbantartási kérést az eszközhöz, és megadja a probléma rövid leírását.
 
 Az **Aktív karbantartási kérések** részben a **Kapcsolódó információk** ablaktáblán az **Összes eszköz** vagy **Összes eszköz** oldal jobb oldalán (**Eszközök kezelése** \> **Közös** \> **Eszközök** \> **Összes eszköz** vagy **Aktív eszközök**) láthatók a kijelölt eszközhöz csatolt karbantartási kérések.
 

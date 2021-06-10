@@ -8,18 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: EssWorkspace, HcmGoal, HcmMeasurementDetailDialog, HcmPerfJournalAdd, HcmGoalChangeSettings, HcmEmployeeDevelopmentWorkspace
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 82104e401f21c459081f48a5d1f9a0a264288106
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: c6e329c2219c57f83ef02f9fa224bcac84fb83fa
+ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5794829"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6055460"
 ---
 # <a name="create-a-goal"></a>Cél létrehozása
 
@@ -29,9 +28,9 @@ Létrehozhat célokat, tevékenységeket adhat hozzá a célokhoz, nyomon követ
 
 1. Lépjen a Minden munkaterület > Alkalmazotti önkiszolgáló rendszer pontra.
 2. Kattintson az Összes cél megtekintése elemre.
-3. Kattintson az Új lehetőségre.
+3. Kattintson az Új elemre.
 4. A Név mezőbe írja be „A Contoso projekt befejezése” értéket.
-5. Az Áttekintés mezőbe írja be: "30 napon belül befejezem a Contoso projektet".
+5. Az Áttekintés mezőbe írja be: „30 napon belül befejezem a Contoso projektet”.
     * A célok vonatkozhatnak személyre, csapatra, akár vállalatra is. Az Alkalmazotti célok alapértelmezett értéke az Egyedi.  
 6. A Célkategória mezőben adjon meg vagy válasszon ki egy értéket.
 7. A Kezdő dátum mezőben módosítsa a látható dátumot.

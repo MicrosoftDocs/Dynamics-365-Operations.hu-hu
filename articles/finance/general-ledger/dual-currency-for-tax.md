@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 0a3245febe31857181d17bba42e12b65f4ebb40f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 3673642729aa41fa3c00a09fe8fe205edd0624c7
+ms.sourcegitcommit: 8c5b3e872825953853ad57fc67ba6e5ae92b9afe
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5832970"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "6088465"
 ---
 # <a name="dual-currency-support-for-sales-tax"></a>Kettős pénznemtámogatás áfa esetén
 [!include [banner](../includes/banner.md)]
@@ -42,8 +42,9 @@ A kettős pénznemmel kapcsolatos további tudnivalókat lásd: [Kettős pénzne
 A kettős pénznemek támogatásának következményeként két új funkció érhető el a funkciókezelésben: 
 
 - Áfa átváltása (új a 10.0.13-es verzióban)
+- Pénzügyi dimenziók megadása a realizált pénznemkorrekció eredményszámláira az áfafizetéshez (újdonság a 10.0.17-es verzióban)
 
-Az áfa kettős pénznemre vonatkozó támogatása biztosítja, hogy az adókat helyesen számítsák ki az adó pénznemében, és hogy az áfaelszámolási egyenleg kiszámítása mind a könyvelési pénznemben, mind a jelentési pénznemben pontos. 
+Az áfa kettős pénznemre vonatkozó támogatása biztosítja az adók helyes kiszámítását az adó pénznemében, és azt, hogy az áfaelszámolási egyenleg kiszámítása mind a könyvelési pénznemben, mind a jelentési pénznemben pontos legyen.
 
 ## <a name="sales-tax-conversion"></a>Áfa-konverzió
 
@@ -88,6 +89,10 @@ Ez a funkció csak az új tranzakciókra lesz alkalmazva. A TAXTRANS táblában 
 
 Az előző eset megakadályozása érdekében ajánlott módosítani ezt a paramétert egy olyan új (tiszta) adóelszámolási időszakban, amely nem tartalmaz kiegyenlítetlen adózási tranzakciókat. Ha módosítani kívánja ezt az értéket egy adózási időszak közepén, futtassa "az áfa kiegyenlítése és feladása" programot a jelenlegi adózási időszakra, mielőtt módosítaná a paraméter értékét.
 
+Ez a funkció olyan könyvelési tételeket vesz fel, amelyek egyértelművé teszik a pénznemek közötti átváltásból származó nyereségeket és veszteségeket. Amikor az áfafizetés során újraértékelés történik, a bejegyzéseket a realizált pénznemkorrekció eredményszámláira könyveli a program. További információ ennek a témakörnek a későbbi részén lévő, [Adóelszámolás automatikus egyenlege a jelentési pénznemben](#tax-settlement-auto-balance-in-reporting-currency) című szakaszában található.
+
+> [!NOTE]
+> Az áfafizetés során a pénzügyi dimenziók adatai az adóügyi számlákból (a mérlegszámlákból) származnak, és az adatok a pénznemkorrekció – nyereséget vagy a veszteséget mutató – eredményszámláira kerülnek. Mivel a pénzügyi dimenziók értékére vonatkozó korlátozások eltérnek a mérlegszámlák és az eredményszámlák között, a forgalmi adó rendezése és feladása között hiba történhet. Ha el szeretné kerülni a számlastruktúrák módosítását bekapcsolhatja a „Pénzügyi dimenziók kitöltése a realizált pénznemkorrekció eredményszámláin az áfafizetéshez” funkciót. Ez a funkció kényszeríti a pénzügyi dimenziók pénznemkorrekciós eredményszámlákra történő származtatását. 
 
 ## <a name="track-reporting-currency-tax-amount"></a>Adó összegének nyomon követése jelentési pénznemben
 
@@ -107,14 +112,14 @@ Ez a kiadás nem tartalmaz módosításokat a jelentésekhez és űrlapokhoz, am
 
 Ha az adókiegyenlítés nincs egyensúlyban a jelentési pénznemben valamilyen okból, például az áfa-átváltás útvonala „Könyvelési pénznem”, vagy az árfolyam módosulása egyetlen adókiegyenlítési időszakon belül, a rendszer automatikusan létrehoz olyan könyvelési bejegyzéseket, amelyekkel módosítható az adóösszeg eltérése, és eltolható a realizált árfolyamnyereségi/veszteségi számlával szemben, amely a Főkönyv beállításaiban konfigurálható.
 
-Az előző példával bemutatható a funkció, feltéve, hogy a TAXTRANS tábla adatai a feladás időpontjában a következők.
+Ha a TAXTRANS tábla adatai a feladás időpontjában az alábbiak, akkor az előző példán keresztül bemutatható a funkció.
 
 | Áfa átváltási paraméterei | Tranzakció pénzneme (EUR) | Könyvelési pénznem (USD) | Jelentési pénznem (GBP) | Adó pénzneme (GBP) |
 | ------------------------------- | -------------------------- | ------------------------- | ------------------------ | ------------------ |
 | Könyvelési pénznem             | 100                        | 111                       | 83                       | **83.25**          |
 | Jelentési pénznem              | 100                        | 111                       | 83                       | **83**             |
 
-Ha az áfa-kiegyenlítési programot a hónap végén futtatja, a könyvelési bejegyzés a következő lesz:
+Ha az áfakiegyenlítési programot a hónap végén futtatja, a könyvelési bejegyzés a következő lesz.
 #### <a name="scenario-sales-tax-conversion--accounting-currency"></a>Forgatókönyv: áfa átváltása = „könyvelési pénznem”
 
 | Fő számla           | Tranzakció pénzneme (GBP) | Könyvelési pénznem (USD) | Jelentési pénznem (GBP) |

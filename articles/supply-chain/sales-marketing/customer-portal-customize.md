@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 6d4cc52a90b25406080032c7a98caa59f53ce188
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: ea1fe6ba374c77784c88cf8202bff2eace217b6a
+ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5909000"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "6102687"
 ---
 # <a name="customize-and-use-the-customer-portal"></a>Ügyfélportál testre szabása és használata
 
@@ -44,7 +44,7 @@ A következő témakörökben megismerkedhet a Power Apps portálok alapjaival �
 
 ## <a name="customize-the-order-creation-process"></a>A rendelés létrehozási folyamatának testreszabása
 
-Amikor egy felhasználó a Ügyfélportál segítségével elküld egy rendelést, a program automatikusan szinkronizálja a rendelést a megfelelő Dynamics 365 Supply Chain Management-környezettel. Mivel a felhasználó egy külső vevő, néhány szükséges adatot szándékosan elrejtettek előle. Ezt az információt a program automatikusan kitölti az űrlap elküldésekor.
+Amikor egy felhasználó a Ügyfélportál segítségével elküld egy rendelést, a program automatikusan szinkronizálja a rendelést a megfelelő Dynamics 365 Supply Chain Management-környezettel. Mivel a felhasználó külső vevő, néhány szükséges adatot szándékosan elrejtettek előle. Ezt az információt a program automatikusan kitölti az űrlap elküldésekor.
 
 Ez a szakasz bemutatja, hogyan kell beállítani a kapcsolattartókat a hibák elkerülése érdekében. Ez a rész automatikusan beállított mezőket és a mezők értékének esetlegesen módosításának folyamatát írja le.
 
@@ -82,7 +82,7 @@ Itt megtekintheti a rendelésnek az Ügyfélportálról történő elküldésér
 1. Amikor befejezte a cikkek hozzáadását, válassza a **Tovább** lehetőséget a **Cikkek** oldalon.
 1. A **Rendelés adatai** lap a rendelés összesítését tartalmazza. A rendelés tartalmának és a szállítási adatoknak az áttekintése. Ha minden megfelelőnek látszik, akkor a rendelés elküldéséhez válassza az **Elküldés** lehetőséget.
 
-    ![Rendelés adatai lap](media/customer-portal-order-submit.png "Rendelés adatai lap")
+    ![Befejezett rendelés adatai lap](media/customer-portal-order-submit.png "Befejezett rendelés adatai lap")
 
 ### <a name="standard-data-setup"></a>Standard adatbeállítás
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 48830c975f1bdfd953f57e7c0b6601a78e3a521b
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 3ff153d9c16b219158c12f4bb49eb0a0c5d401ac
+ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5910039"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "6102902"
 ---
 # <a name="requests-for-quotation-rfqs-overview"></a>Ajánlatkérések (RFQ-k) áttekintése
 
@@ -83,7 +83,7 @@ A szállítóknak elküldött e-mailes értesítés sablonját a **Beszerzési �
 - %Expiry Date Time%
 - %Date%
 
-Az %Ajánlat visszaküldésének oka% és %Módosítás oka% tokeneket a rendszer olyan szöveggel helyettesíti, amelyet a beszerző adhat meg a **Módosítás** varázslóban elvégzett módosítások befejezésével. Az %A módosítást készítette% és %Company% tokeneket a rendszer automatikusan az árajánlatkérés alapján tölti ki. A %Date% token helyére az aktuális dátum kerül.
+Az %Ajánlat visszaküldésének oka% és a %Módosítás oka% tokent a rendszer olyan szöveggel helyettesíti, amelyet a beszerző adhat meg a **Módosítás** varázslóban elvégzett módosítások befejezésével. Az %A módosítást készítette% és %Company% tokeneket a rendszer automatikusan az árajánlatkérés alapján tölti ki. A %Date% token helyére az aktuális dátum kerül.
 
 Ha vissza szeretne vonni egy ajánlatkérést az elküldés után, ezt az ajánlatkérési esetben teheti meg. A visszavonáshoz egy e-mail sablon szükséges, amellyel elküldheti az érvénytelenítési értesítést a szállítói kapcsolattartóknak. A sablont ki kell jelölni a **Beszerzési és forrásparaméterek** lapon. A létrehozott sablon az alábbi helyettesítő tokeneket tartalmazhatja:
 

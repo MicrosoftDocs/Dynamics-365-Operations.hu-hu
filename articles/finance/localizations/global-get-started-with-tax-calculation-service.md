@@ -2,7 +2,7 @@
 title: Az adószámítás első lépései
 description: Ez a témakör bemutatja, hogyan állítsuk be az adószámítást.
 author: wangchen
-ms.date: 04/12/2021
+ms.date: 05/17/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 43a7c7133156d199da7b5ba16d48652359098c74
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 3f8aa791cee1926afe6be347331d47902a3b7304
+ms.sourcegitcommit: f4dc09601bceb5cdc88ee184ce7c8f369e3e6e86
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018879"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "6060563"
 ---
 # <a name="get-started-with-the-tax-calculation-preview"></a>Első lépések az adószámításban (előzetes verzió)
 
@@ -41,7 +41,7 @@ A beállítás négy fő lépésből áll:
 
 Mielőtt elvégezhetné az ebben a témakörben ismertetett eljárásokat, a következő előfeltételeknek kell megfelelnie:
 
-- Hozzáférése van az LCS-fiókjához, és telepített egy LCS-projektet egy 2. vagy magasabb szintű környezettel, amelyik a Dynamics 365 10.0.18-as vagy újabb verzióját futtatja.
+- Hozzáférése van az LCS-fiókjához, és telepített egy olyan LCS-projektet 2. vagy magasabb szintű környezettel, amelyik a Dynamics 365 10.0.18-as vagy újabb verzióját futtatja a [KB4616360](https://fix.lcs.dynamics.com/Issue/Details?kb=4616360&bugId=568738&dbType=3&qc=1f1c04ff39adad74ef871f539e8d73e14c1893ef7cc4b6e3f7d5c5864ec2781a) használatával.
 - Hozzáférése van az RCS-fiókjához.
 - Felvette a kapcsolatot a Microsofttal, hogy engedélyezze a tesztelést az üzembe helyezett Finance vagy Supply Chain Management környezetben.
 
@@ -127,7 +127,7 @@ Az RCS beállításainak befejezése után – az előző szakaszban leírtak sz
 
 Az ebben a szakaszban található beállításokat jogi személy végzi. Be kell állítania mindegyik jogi személyhez, amelynél engedélyezni szeretné az adószámítást a Finance-ben.
 
-1. A Finiance-ben válassza az **Adó** \> **Beállítás** \> **Adókonfiguráció** \> **Adószámítási beállítása (előzetes verzió)** lehetőséget.
+1. A Finance-ben válassza az **Adó** \> **Beállítás** \> **Adókonfiguráció** \> **Adószámítás beállítása (előzetes verzió)** lehetőséget.
 2. Az **Általános** lapon állítsa be a következő mezőket:
 
     - **Adószámítás engedélyezése** – akkor jelölje be ezt a jelölőnégyzetet, ha engedélyezni szeretné az adószámítási bővítményt a jogi személyhez. Ha az aktuális jogi személyhez nincs engedélyezve, a jogi személy továbbra is a meglévő adómotor használatával határozza meg és számítja ki az adót.

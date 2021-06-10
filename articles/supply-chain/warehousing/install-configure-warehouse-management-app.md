@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: f46c5d4ec78a1e5ed708687e8da6eb379697d5f4
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 810592bcbe11b03753c12ab7bfe6160d3e9233ee
+ms.sourcegitcommit: c53de2c09b9296b41653e739178edf29f79e0679
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908952"
+ms.lasthandoff: 05/17/2021
+ms.locfileid: "6049316"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>A Raktárkezelés mobilalkalmazás telepítése és csatlakoztatása
 
@@ -295,5 +295,9 @@ Ha egy eszköz elveszett vagy a biztonsága sérült, el kell távolítania az e
 1. Válassza az eszköztár **Törlés** elemét.
 1. A megerősítő üzenetben válassza az **Igen** gombot.
 
+## <a name="additional-resources"></a>További erőforrások
+
+- [Mobileszköz felhasználói beállításai](mobile-device-user-settings.md)
+- [Lépésikonok és címek hozzárendelése a Warehouse Management mobilalkalmazáshoz](step-icons-titles.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
