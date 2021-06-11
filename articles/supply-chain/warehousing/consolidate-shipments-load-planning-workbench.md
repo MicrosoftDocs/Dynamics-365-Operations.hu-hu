@@ -1,5 +1,5 @@
 ---
-title: Szállítmányok konszolidálása a Kiadás a raktárba lehetőség használatával a Rakománytervező munkaterület oldalról
+title: A raktárba a rakománytervezési munkaterületről kiadott szállítmányok összesítése
 description: Ez a témakör egy olyan esetet mutat be, amikor több rendelést adnak ki a raktárba ugyanabban a rakományban, amelyeket a rendszer automatikusan szállítmányokká konszolidál.
 author: GarmMSFT
 ms.date: 05/12/2020
@@ -13,251 +13,251 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 58a1f6237e37815dd0b4ae3d7a0d46157db5a808
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 30824bf1c8e84bab08b6885ee812ed5e3e9937bb
+ms.sourcegitcommit: 53b797ff1b524f581046b48cdde42f50b37495bc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5831338"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6117181"
 ---
-# <a name="consolidate-shipments-by-using-release-to-warehouse-from-the-load-planning-workbench"></a><span data-ttu-id="4d41b-103">Szállítmányok konszolidálása a Kiadás a raktárba lehetőség használatával a Rakománytervező munkaterület oldalról</span><span class="sxs-lookup"><span data-stu-id="4d41b-103">Consolidate shipments by using Release to warehouse from the load planning workbench</span></span>
+# <a name="consolidate-shipments-by-releasing-to-warehouse-from-the-load-planning-workbench"></a><span data-ttu-id="4c915-103">A raktárba a rakománytervezési munkaterületről kiadott szállítmányok összesítése</span><span class="sxs-lookup"><span data-stu-id="4c915-103">Consolidate shipments by releasing to warehouse from the load planning workbench</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="4d41b-104">Ez a témakör egy olyan esetet mutat be, amikor több rendelést adnak ki a raktárba ugyanabban a rakományban, amelyeket a rendszer automatikusan szállítmányokká konszolidál.</span><span class="sxs-lookup"><span data-stu-id="4d41b-104">This topic presents a scenario where multiple orders are released to the warehouse in the same load and are then automatically consolidated into shipments.</span></span>
+<span data-ttu-id="4c915-104">Ez a témakör egy olyan esetet mutat be, amikor több rendelést adnak ki a raktárba ugyanabban a rakományban, amelyeket a rendszer automatikusan szállítmányokká konszolidál.</span><span class="sxs-lookup"><span data-stu-id="4c915-104">This topic presents a scenario where multiple orders are released to the warehouse in the same load and are then automatically consolidated into shipments.</span></span>
 
-## <a name="make-demo-data-available"></a><span data-ttu-id="4d41b-105">A bemutató adatok elérhetővé tétele</span><span class="sxs-lookup"><span data-stu-id="4d41b-105">Make demo data available</span></span>
+## <a name="make-demo-data-available"></a><span data-ttu-id="4c915-105">A bemutató adatok elérhetővé tétele</span><span class="sxs-lookup"><span data-stu-id="4c915-105">Make demo data available</span></span>
 
-<span data-ttu-id="4d41b-106">Az ebben a témakörben szereplő minden egyes forgatókönyv olyan értékekre és rekordokra hivatkozik, amelyek szerepelnek a Microsoft Dynamics 365 Supply Chain Management szolgáltatáshoz biztosított standard bemutatóadatokban.</span><span class="sxs-lookup"><span data-stu-id="4d41b-106">The scenario in this topic references values and records that are included in the standard demo data that is provided for Microsoft Dynamics 365 Supply Chain Management.</span></span> <span data-ttu-id="4d41b-107">Ha azt szeretné, hogy az itt megadott értékeket használja a feladatok végrehajtásához, akkor győződjön meg róla, hogy olyan környezetben dolgozik, ahol a bemutatóadatokat telepítették, és a jogi személy beállítása legyen **USMF**.</span><span class="sxs-lookup"><span data-stu-id="4d41b-107">If you want to use the values that are provided here as you do the exercises, be sure to work in an environment where the demo data is installed, and set the legal entity to **USMF** before you begin.</span></span>
+<span data-ttu-id="4c915-106">Az ebben a témakörben szereplő minden egyes forgatókönyv olyan értékekre és rekordokra hivatkozik, amelyek szerepelnek a Microsoft Dynamics 365 Supply Chain Management szolgáltatáshoz biztosított standard bemutatóadatokban.</span><span class="sxs-lookup"><span data-stu-id="4c915-106">The scenario in this topic references values and records that are included in the standard demo data that is provided for Microsoft Dynamics 365 Supply Chain Management.</span></span> <span data-ttu-id="4c915-107">Ha azt szeretné, hogy az itt megadott értékeket használja a feladatok végrehajtásához, akkor győződjön meg róla, hogy olyan környezetben dolgozik, ahol a bemutatóadatokat telepítették, és a jogi személy beállítása legyen **USMF**.</span><span class="sxs-lookup"><span data-stu-id="4c915-107">If you want to use the values that are provided here as you do the exercises, be sure to work in an environment where the demo data is installed, and set the legal entity to **USMF** before you begin.</span></span>
 
-## <a name="set-up-shipment-consolidation-policies-and-product-filters"></a><span data-ttu-id="4d41b-108">Szállítmánykonszolidációs irányelvek és a termékszűrők beállítása</span><span class="sxs-lookup"><span data-stu-id="4d41b-108">Set up shipment consolidation policies and product filters</span></span>
+## <a name="set-up-shipment-consolidation-policies-and-product-filters"></a><span data-ttu-id="4c915-108">Szállítmánykonszolidációs irányelvek és a termékszűrők beállítása</span><span class="sxs-lookup"><span data-stu-id="4c915-108">Set up shipment consolidation policies and product filters</span></span>
 
-<span data-ttu-id="4d41b-109">Az itt ismertetett eset feltételezi, hogy már be van kapcsolva a funkció, és végrehajtotta a [Szállítmánykonszolidációs irányelvek konfigurálása](configure-shipment-consolidation-policies.md) részben szereplő gyakorlatokat, és létrehozta az ott ismertetett irányelveket és más rekordokat.</span><span class="sxs-lookup"><span data-stu-id="4d41b-109">The scenario that is described here assumes that you've already turned on the feature, done the exercises in [Configure shipment consolidation policies](configure-shipment-consolidation-policies.md), and created the policies and other records that are described there.</span></span> <span data-ttu-id="4d41b-110">A jelen forgatókönyv végrehajtása előtt győződjön meg arról, hogy elvégezte azokat a gyakorlatokat.</span><span class="sxs-lookup"><span data-stu-id="4d41b-110">Be sure to do those exercises before you continue with this scenario.</span></span>
+<span data-ttu-id="4c915-109">Az itt ismertetett eset feltételezi, hogy már be van kapcsolva a funkció, és végrehajtotta a [Szállítmánykonszolidációs irányelvek konfigurálása](configure-shipment-consolidation-policies.md) részben szereplő gyakorlatokat, és létrehozta az ott ismertetett irányelveket és más rekordokat.</span><span class="sxs-lookup"><span data-stu-id="4c915-109">The scenario that is described here assumes that you've already turned on the feature, done the exercises in [Configure shipment consolidation policies](configure-shipment-consolidation-policies.md), and created the policies and other records that are described there.</span></span> <span data-ttu-id="4c915-110">A jelen forgatókönyv végrehajtása előtt győződjön meg arról, hogy elvégezte azokat a gyakorlatokat.</span><span class="sxs-lookup"><span data-stu-id="4c915-110">Be sure to do those exercises before you continue with this scenario.</span></span>
 
-## <a name="create-the-sales-orders-for-this-scenario"></a><span data-ttu-id="4d41b-111">Értékesítési rendelések létrehozása ehhez a forgatókönyvhöz</span><span class="sxs-lookup"><span data-stu-id="4d41b-111">Create the sales orders for this scenario</span></span>
+## <a name="create-the-sales-orders-for-this-scenario"></a><span data-ttu-id="4c915-111">Értékesítési rendelések létrehozása ehhez a forgatókönyvhöz</span><span class="sxs-lookup"><span data-stu-id="4c915-111">Create the sales orders for this scenario</span></span>
 
-<span data-ttu-id="4d41b-112">Első lépésként hozza létre a munkához használni kívánt értékesítési rendelések gyűjteményét.</span><span class="sxs-lookup"><span data-stu-id="4d41b-112">Start by creating a collection of sales orders that you can work with.</span></span> <span data-ttu-id="4d41b-113">A speciális raktár (WMS) folyamataihoz engedélyezett raktárral kell dolgoznia.</span><span class="sxs-lookup"><span data-stu-id="4d41b-113">You must work with a warehouse that is enabled for advanced warehouse (WMS) processes.</span></span> <span data-ttu-id="4d41b-114">Ha külön nem említik a másik raktárat, akkor ugyanazt a raktárat kell használni a következő rendelések mindegyikéhez.</span><span class="sxs-lookup"><span data-stu-id="4d41b-114">Unless a different warehouse is explicitly mentioned, that same warehouse must be used for each of the following sets of orders.</span></span>
+<span data-ttu-id="4c915-112">Első lépésként hozza létre a munkához használni kívánt értékesítési rendelések gyűjteményét.</span><span class="sxs-lookup"><span data-stu-id="4c915-112">Start by creating a collection of sales orders that you can work with.</span></span> <span data-ttu-id="4c915-113">A speciális raktár (WMS) folyamataihoz engedélyezett raktárral kell dolgoznia.</span><span class="sxs-lookup"><span data-stu-id="4c915-113">You must work with a warehouse that is enabled for advanced warehouse (WMS) processes.</span></span> <span data-ttu-id="4c915-114">Ha külön nem említik a másik raktárat, akkor ugyanazt a raktárat kell használni a következő rendelések mindegyikéhez.</span><span class="sxs-lookup"><span data-stu-id="4c915-114">Unless a different warehouse is explicitly mentioned, that same warehouse must be used for each of the following sets of orders.</span></span>
 
-<span data-ttu-id="4d41b-115">Nyissa meg a **Kinnlevőségek \> Rendelések \> Összes értékesítési rendelés** pontot, és hozza létre az értékesítési rendelések gyűjteményét, amelyek a következő alszakaszokban szereplő beállításokkal rendelkeznek.</span><span class="sxs-lookup"><span data-stu-id="4d41b-115">Go to **Accounts receivable \> Orders \> All sales orders**, and create a collection of sales orders that have the settings that are described in the following subsections.</span></span>
+<span data-ttu-id="4c915-115">Nyissa meg a **Kinnlevőségek \> Rendelések \> Összes értékesítési rendelés** pontot, és hozza létre az értékesítési rendelések gyűjteményét, amelyek a következő alszakaszokban szereplő beállításokkal rendelkeznek.</span><span class="sxs-lookup"><span data-stu-id="4c915-115">Go to **Accounts receivable \> Orders \> All sales orders**, and create a collection of sales orders that have the settings that are described in the following subsections.</span></span>
 
-### <a name="create-order-set-1"></a><span data-ttu-id="4d41b-116">1. rendeléskészlet létrehozása</span><span class="sxs-lookup"><span data-stu-id="4d41b-116">Create order set 1</span></span>
+### <a name="create-order-set-1"></a><span data-ttu-id="4c915-116">1. rendeléskészlet létrehozása</span><span class="sxs-lookup"><span data-stu-id="4c915-116">Create order set 1</span></span>
 
-#### <a name="sales-order-1-1"></a><span data-ttu-id="4d41b-117">1-1. értékesítési rendelés</span><span class="sxs-lookup"><span data-stu-id="4d41b-117">Sales order 1-1</span></span>
+#### <a name="sales-order-1-1"></a><span data-ttu-id="4c915-117">1-1. értékesítési rendelés</span><span class="sxs-lookup"><span data-stu-id="4c915-117">Sales order 1-1</span></span>
 
-1. <span data-ttu-id="4d41b-118">Hozzon létre egy olyan értékesítési rendelést, amelynek beállításai a következők:</span><span class="sxs-lookup"><span data-stu-id="4d41b-118">Create a sales order that has the following settings:</span></span>
+1. <span data-ttu-id="4c915-118">Hozzon létre egy olyan értékesítési rendelést, amelynek beállításai a következők:</span><span class="sxs-lookup"><span data-stu-id="4c915-118">Create a sales order that has the following settings:</span></span>
 
-    - <span data-ttu-id="4d41b-119">**Vevőkód** *US-001*</span><span class="sxs-lookup"><span data-stu-id="4d41b-119">**Customer account:** *US-001*</span></span>
-    - <span data-ttu-id="4d41b-120">**Szállítási mód:** *Légitá-légi*</span><span class="sxs-lookup"><span data-stu-id="4d41b-120">**Mode of delivery:** *Airwa-Air*</span></span>
+    - <span data-ttu-id="4c915-119">**Vevőkód** *US-001*</span><span class="sxs-lookup"><span data-stu-id="4c915-119">**Customer account:** *US-001*</span></span>
+    - <span data-ttu-id="4c915-120">**Szállítási mód:** *Légitá-légi*</span><span class="sxs-lookup"><span data-stu-id="4c915-120">**Mode of delivery:** *Airwa-Air*</span></span>
 
-1. <span data-ttu-id="4d41b-121">Adjon hozzá egy olyan rendelési sort, amelynek beállításai a következők:</span><span class="sxs-lookup"><span data-stu-id="4d41b-121">Add an order line that has the following settings:</span></span>
+1. <span data-ttu-id="4c915-121">Adjon hozzá egy olyan rendelési sort, amelynek beállításai a következők:</span><span class="sxs-lookup"><span data-stu-id="4c915-121">Add an order line that has the following settings:</span></span>
 
-    - <span data-ttu-id="4d41b-122">**Cikkszám:** *A0001* (olyan cikk, amelyhez nem tartozik **4.kód** szűrő)</span><span class="sxs-lookup"><span data-stu-id="4d41b-122">**Item number:** *A0001* (an item that no **Code 4** filter is assigned to)</span></span>
-    - <span data-ttu-id="4d41b-123">**Mennyiség:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="4d41b-123">**Quantity:** *1.00*</span></span>
+    - <span data-ttu-id="4c915-122">**Cikkszám:** *A0001* (olyan cikk, amelyhez nem tartozik **4.kód** szűrő)</span><span class="sxs-lookup"><span data-stu-id="4c915-122">**Item number:** *A0001* (an item that no **Code 4** filter is assigned to)</span></span>
+    - <span data-ttu-id="4c915-123">**Mennyiség:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="4c915-123">**Quantity:** *1.00*</span></span>
 
-1. <span data-ttu-id="4d41b-124">Válassza a **Készlet \> Foglalás** elemet, majd a műveleti panelen válassza az **Adag foglalása** elemet a rendelési sor foglalásához.</span><span class="sxs-lookup"><span data-stu-id="4d41b-124">Select **Inventory \> Reservation**, and then, on the Action Pane, select **Reserve lot** to reserve the order line.</span></span>
+1. <span data-ttu-id="4c915-124">Válassza a **Készlet \> Foglalás** elemet, majd a műveleti panelen válassza az **Adag foglalása** elemet a rendelési sor foglalásához.</span><span class="sxs-lookup"><span data-stu-id="4c915-124">Select **Inventory \> Reservation**, and then, on the Action Pane, select **Reserve lot** to reserve the order line.</span></span>
 
-#### <a name="sales-order-1-2"></a><span data-ttu-id="4d41b-125">1-2. értékesítési rendelés</span><span class="sxs-lookup"><span data-stu-id="4d41b-125">Sales order 1-2</span></span>
+#### <a name="sales-order-1-2"></a><span data-ttu-id="4c915-125">1-2. értékesítési rendelés</span><span class="sxs-lookup"><span data-stu-id="4c915-125">Sales order 1-2</span></span>
 
-1. <span data-ttu-id="4d41b-126">Hozzon létre egy olyan értékesítési rendelést, amelynek beállításai a következők:</span><span class="sxs-lookup"><span data-stu-id="4d41b-126">Create a sales order that has the following settings:</span></span>
+1. <span data-ttu-id="4c915-126">Hozzon létre egy olyan értékesítési rendelést, amelynek beállításai a következők:</span><span class="sxs-lookup"><span data-stu-id="4c915-126">Create a sales order that has the following settings:</span></span>
 
-    - <span data-ttu-id="4d41b-127">**Vevőkód** *US-001*</span><span class="sxs-lookup"><span data-stu-id="4d41b-127">**Customer account:** *US-001*</span></span>
-    - <span data-ttu-id="4d41b-128">**Szállítási mód:** *Légitá-légi*</span><span class="sxs-lookup"><span data-stu-id="4d41b-128">**Mode of delivery:** *Airwa-Air*</span></span>
+    - <span data-ttu-id="4c915-127">**Vevőkód** *US-001*</span><span class="sxs-lookup"><span data-stu-id="4c915-127">**Customer account:** *US-001*</span></span>
+    - <span data-ttu-id="4c915-128">**Szállítási mód:** *Légitá-légi*</span><span class="sxs-lookup"><span data-stu-id="4c915-128">**Mode of delivery:** *Airwa-Air*</span></span>
 
-1. <span data-ttu-id="4d41b-129">Adjon hozzá egy olyan rendelési sort, amelynek beállításai a következők:</span><span class="sxs-lookup"><span data-stu-id="4d41b-129">Add an order line that has the following settings:</span></span>
+1. <span data-ttu-id="4c915-129">Adjon hozzá egy olyan rendelési sort, amelynek beállításai a következők:</span><span class="sxs-lookup"><span data-stu-id="4c915-129">Add an order line that has the following settings:</span></span>
 
-    - <span data-ttu-id="4d41b-130">**Cikkszám:** *A0001* (olyan cikk, amelyhez nem tartozik **4.kód** szűrő)</span><span class="sxs-lookup"><span data-stu-id="4d41b-130">**Item number:** *A0001* (an item that no **Code 4** filter is assigned to)</span></span>
-    - <span data-ttu-id="4d41b-131">**Mennyiség:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="4d41b-131">**Quantity:** *1.00*</span></span>
+    - <span data-ttu-id="4c915-130">**Cikkszám:** *A0001* (olyan cikk, amelyhez nem tartozik **4.kód** szűrő)</span><span class="sxs-lookup"><span data-stu-id="4c915-130">**Item number:** *A0001* (an item that no **Code 4** filter is assigned to)</span></span>
+    - <span data-ttu-id="4c915-131">**Mennyiség:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="4c915-131">**Quantity:** *1.00*</span></span>
 
-1. <span data-ttu-id="4d41b-132">Válassza a **Készlet \> Foglalás** elemet, majd a műveleti panelen válassza az **Adag foglalása** elemet a rendelési sor foglalásához.</span><span class="sxs-lookup"><span data-stu-id="4d41b-132">Select **Inventory \> Reservation**, and then, on the Action Pane, select **Reserve lot** to reserve the order line.</span></span>
+1. <span data-ttu-id="4c915-132">Válassza a **Készlet \> Foglalás** elemet, majd a műveleti panelen válassza az **Adag foglalása** elemet a rendelési sor foglalásához.</span><span class="sxs-lookup"><span data-stu-id="4c915-132">Select **Inventory \> Reservation**, and then, on the Action Pane, select **Reserve lot** to reserve the order line.</span></span>
 
-#### <a name="sales-order-1-3"></a><span data-ttu-id="4d41b-133">1-3. értékesítési rendelés</span><span class="sxs-lookup"><span data-stu-id="4d41b-133">Sales order 1-3</span></span>
+#### <a name="sales-order-1-3"></a><span data-ttu-id="4c915-133">1-3. értékesítési rendelés</span><span class="sxs-lookup"><span data-stu-id="4c915-133">Sales order 1-3</span></span>
 
-1. <span data-ttu-id="4d41b-134">Hozzon létre egy olyan értékesítési rendelést, amelynek beállításai a következők:</span><span class="sxs-lookup"><span data-stu-id="4d41b-134">Create a sales order that has the following settings:</span></span>
+1. <span data-ttu-id="4c915-134">Hozzon létre egy olyan értékesítési rendelést, amelynek beállításai a következők:</span><span class="sxs-lookup"><span data-stu-id="4c915-134">Create a sales order that has the following settings:</span></span>
 
-    - <span data-ttu-id="4d41b-135">**Vevőkód** *US-001*</span><span class="sxs-lookup"><span data-stu-id="4d41b-135">**Customer account:** *US-001*</span></span>
-    - <span data-ttu-id="4d41b-136">**Szállítás módja:** *10*</span><span class="sxs-lookup"><span data-stu-id="4d41b-136">**Mode of delivery:** *10*</span></span>
+    - <span data-ttu-id="4c915-135">**Vevőkód** *US-001*</span><span class="sxs-lookup"><span data-stu-id="4c915-135">**Customer account:** *US-001*</span></span>
+    - <span data-ttu-id="4c915-136">**Szállítás módja:** *10*</span><span class="sxs-lookup"><span data-stu-id="4c915-136">**Mode of delivery:** *10*</span></span>
 
-1. <span data-ttu-id="4d41b-137">Adjon hozzá egy olyan rendelési sort, amelynek beállításai a következők:</span><span class="sxs-lookup"><span data-stu-id="4d41b-137">Add an order line that has the following settings:</span></span>
+1. <span data-ttu-id="4c915-137">Adjon hozzá egy olyan rendelési sort, amelynek beállításai a következők:</span><span class="sxs-lookup"><span data-stu-id="4c915-137">Add an order line that has the following settings:</span></span>
 
-    - <span data-ttu-id="4d41b-138">**Cikkszám:** *A0001* (olyan cikk, amelyhez nem tartozik **4.kód** szűrő)</span><span class="sxs-lookup"><span data-stu-id="4d41b-138">**Item number:** *A0001* (an item that no **Code 4** filter is assigned to)</span></span>
-    - <span data-ttu-id="4d41b-139">**Mennyiség:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="4d41b-139">**Quantity:** *1.00*</span></span>
+    - <span data-ttu-id="4c915-138">**Cikkszám:** *A0001* (olyan cikk, amelyhez nem tartozik **4.kód** szűrő)</span><span class="sxs-lookup"><span data-stu-id="4c915-138">**Item number:** *A0001* (an item that no **Code 4** filter is assigned to)</span></span>
+    - <span data-ttu-id="4c915-139">**Mennyiség:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="4c915-139">**Quantity:** *1.00*</span></span>
 
-1. <span data-ttu-id="4d41b-140">Válassza a **Készlet \> Foglalás** elemet, majd a műveleti panelen válassza az **Adag foglalása** elemet a rendelési sor foglalásához.</span><span class="sxs-lookup"><span data-stu-id="4d41b-140">Select **Inventory \> Reservation**, and then, on the Action Pane, select **Reserve lot** to reserve the order line.</span></span>
-1. <span data-ttu-id="4d41b-141">Adjon hozzá egy második rendelési sort, amelynek beállításai a következők:</span><span class="sxs-lookup"><span data-stu-id="4d41b-141">Add a second order line that has the following settings:</span></span>
+1. <span data-ttu-id="4c915-140">Válassza a **Készlet \> Foglalás** elemet, majd a műveleti panelen válassza az **Adag foglalása** elemet a rendelési sor foglalásához.</span><span class="sxs-lookup"><span data-stu-id="4c915-140">Select **Inventory \> Reservation**, and then, on the Action Pane, select **Reserve lot** to reserve the order line.</span></span>
+1. <span data-ttu-id="4c915-141">Adjon hozzá egy második rendelési sort, amelynek beállításai a következők:</span><span class="sxs-lookup"><span data-stu-id="4c915-141">Add a second order line that has the following settings:</span></span>
 
-    - <span data-ttu-id="4d41b-142">**Cikkszám:** *A0002* (olyan cikk, amelyhez nem tartozik **4.kód** szűrő)</span><span class="sxs-lookup"><span data-stu-id="4d41b-142">**Item number:** *A0002* (an item that no **Code 4** filter is assigned to)</span></span>
-    - <span data-ttu-id="4d41b-143">**Mennyiség:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="4d41b-143">**Quantity:** *1.00*</span></span>
-    - <span data-ttu-id="4d41b-144">**Szállítási mód:** *Légitá-légi*</span><span class="sxs-lookup"><span data-stu-id="4d41b-144">**Mode of delivery:** *Airwa-Air*</span></span>
+    - <span data-ttu-id="4c915-142">**Cikkszám:** *A0002* (olyan cikk, amelyhez nem tartozik **4.kód** szűrő)</span><span class="sxs-lookup"><span data-stu-id="4c915-142">**Item number:** *A0002* (an item that no **Code 4** filter is assigned to)</span></span>
+    - <span data-ttu-id="4c915-143">**Mennyiség:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="4c915-143">**Quantity:** *1.00*</span></span>
+    - <span data-ttu-id="4c915-144">**Szállítási mód:** *Légitá-légi*</span><span class="sxs-lookup"><span data-stu-id="4c915-144">**Mode of delivery:** *Airwa-Air*</span></span>
 
-1. <span data-ttu-id="4d41b-145">Válassza a **Készlet \> Foglalás** elemet, majd a műveleti panelen válassza az **Adag foglalása** elemet a második rendelési sor foglalásához.</span><span class="sxs-lookup"><span data-stu-id="4d41b-145">Select **Inventory \> Reservation**, and then, on the Action Pane, select **Reserve lot** to reserve the second order line.</span></span>
+1. <span data-ttu-id="4c915-145">Válassza a **Készlet \> Foglalás** elemet, majd a műveleti panelen válassza az **Adag foglalása** elemet a második rendelési sor foglalásához.</span><span class="sxs-lookup"><span data-stu-id="4c915-145">Select **Inventory \> Reservation**, and then, on the Action Pane, select **Reserve lot** to reserve the second order line.</span></span>
 
-### <a name="create-order-set-2"></a><span data-ttu-id="4d41b-146">2. rendeléskészlet létrehozása</span><span class="sxs-lookup"><span data-stu-id="4d41b-146">Create order set 2</span></span>
+### <a name="create-order-set-2"></a><span data-ttu-id="4c915-146">2. rendeléskészlet létrehozása</span><span class="sxs-lookup"><span data-stu-id="4c915-146">Create order set 2</span></span>
 
-#### <a name="sales-orders-2-1-and-2-2"></a><span data-ttu-id="4d41b-147">2-1. és 2-2. értékesítési rendelések</span><span class="sxs-lookup"><span data-stu-id="4d41b-147">Sales orders 2-1 and 2-2</span></span>
+#### <a name="sales-orders-2-1-and-2-2"></a><span data-ttu-id="4c915-147">2-1. és 2-2. értékesítési rendelések</span><span class="sxs-lookup"><span data-stu-id="4c915-147">Sales orders 2-1 and 2-2</span></span>
 
-1. <span data-ttu-id="4d41b-148">Hozzon létre két egyforma olyan értékesítési rendelést, amelynek beállításai a következők:</span><span class="sxs-lookup"><span data-stu-id="4d41b-148">Create two identical sales orders that have the following settings:</span></span>
+1. <span data-ttu-id="4c915-148">Hozzon létre két egyforma olyan értékesítési rendelést, amelynek beállításai a következők:</span><span class="sxs-lookup"><span data-stu-id="4c915-148">Create two identical sales orders that have the following settings:</span></span>
 
-    - <span data-ttu-id="4d41b-149">**Vevőkód** *US-002*</span><span class="sxs-lookup"><span data-stu-id="4d41b-149">**Customer account:** *US-002*</span></span>
+    - <span data-ttu-id="4c915-149">**Vevőkód** *US-002*</span><span class="sxs-lookup"><span data-stu-id="4c915-149">**Customer account:** *US-002*</span></span>
 
-1. <span data-ttu-id="4d41b-150">Adjon hozzá egy olyan rendelési sort, amelynek beállításai a következők:</span><span class="sxs-lookup"><span data-stu-id="4d41b-150">Add an order line that has the following settings:</span></span>
+1. <span data-ttu-id="4c915-150">Adjon hozzá egy olyan rendelési sort, amelynek beállításai a következők:</span><span class="sxs-lookup"><span data-stu-id="4c915-150">Add an order line that has the following settings:</span></span>
 
-    - <span data-ttu-id="4d41b-151">**Cikkszám:** *M9200* (olyan cikk, amelynél a **4.kód** szűrő beállítása *Gyúlékony*)</span><span class="sxs-lookup"><span data-stu-id="4d41b-151">**Item number:** *M9200* (an item where the **Code 4** filter is set to *Flammable*)</span></span>
-    - <span data-ttu-id="4d41b-152">**Mennyiség:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="4d41b-152">**Quantity:** *1.00*</span></span>
+    - <span data-ttu-id="4c915-151">**Cikkszám:** *M9200* (olyan cikk, amelynél a **4.kód** szűrő beállítása *Gyúlékony*)</span><span class="sxs-lookup"><span data-stu-id="4c915-151">**Item number:** *M9200* (an item where the **Code 4** filter is set to *Flammable*)</span></span>
+    - <span data-ttu-id="4c915-152">**Mennyiség:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="4c915-152">**Quantity:** *1.00*</span></span>
 
-1. <span data-ttu-id="4d41b-153">Válassza a **Készlet \> Foglalás** elemet, majd a műveleti panelen válassza az **Adag foglalása** elemet a rendelési sor foglalásához.</span><span class="sxs-lookup"><span data-stu-id="4d41b-153">Select **Inventory \> Reservation**, and then, on the Action Pane, select **Reserve lot** to reserve the order line.</span></span>
-1. <span data-ttu-id="4d41b-154">Adjon hozzá egy második rendelési sort, amelynek beállításai a következők:</span><span class="sxs-lookup"><span data-stu-id="4d41b-154">Add a second order line that has the following settings:</span></span>
+1. <span data-ttu-id="4c915-153">Válassza a **Készlet \> Foglalás** elemet, majd a műveleti panelen válassza az **Adag foglalása** elemet a rendelési sor foglalásához.</span><span class="sxs-lookup"><span data-stu-id="4c915-153">Select **Inventory \> Reservation**, and then, on the Action Pane, select **Reserve lot** to reserve the order line.</span></span>
+1. <span data-ttu-id="4c915-154">Adjon hozzá egy második rendelési sort, amelynek beállításai a következők:</span><span class="sxs-lookup"><span data-stu-id="4c915-154">Add a second order line that has the following settings:</span></span>
 
-    - <span data-ttu-id="4d41b-155">**Cikkszám:** *M9201* (olyan cikk, amelynél a **4.kód** szűrő beállítása *Robbanásveszélyes*)</span><span class="sxs-lookup"><span data-stu-id="4d41b-155">**Item number:** *M9201* (an item where the **Code 4** filter is set to *Explosive*)</span></span>
-    - <span data-ttu-id="4d41b-156">**Mennyiség:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="4d41b-156">**Quantity:** *1.00*</span></span>
-    - <span data-ttu-id="4d41b-157">**Szállítási mód:** *Légitá-légi*</span><span class="sxs-lookup"><span data-stu-id="4d41b-157">**Mode of delivery:** *Airwa-Air*</span></span>
+    - <span data-ttu-id="4c915-155">**Cikkszám:** *M9201* (olyan cikk, amelynél a **4.kód** szűrő beállítása *Robbanásveszélyes*)</span><span class="sxs-lookup"><span data-stu-id="4c915-155">**Item number:** *M9201* (an item where the **Code 4** filter is set to *Explosive*)</span></span>
+    - <span data-ttu-id="4c915-156">**Mennyiség:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="4c915-156">**Quantity:** *1.00*</span></span>
+    - <span data-ttu-id="4c915-157">**Szállítási mód:** *Légitá-légi*</span><span class="sxs-lookup"><span data-stu-id="4c915-157">**Mode of delivery:** *Airwa-Air*</span></span>
 
-1. <span data-ttu-id="4d41b-158">Válassza a **Készlet \> Foglalás** elemet, majd a műveleti panelen válassza az **Adag foglalása** elemet a második rendelési sor foglalásához.</span><span class="sxs-lookup"><span data-stu-id="4d41b-158">Select **Inventory \> Reservation**, and then, on the Action Pane, select **Reserve lot** to reserve the second order line.</span></span>
+1. <span data-ttu-id="4c915-158">Válassza a **Készlet \> Foglalás** elemet, majd a műveleti panelen válassza az **Adag foglalása** elemet a második rendelési sor foglalásához.</span><span class="sxs-lookup"><span data-stu-id="4c915-158">Select **Inventory \> Reservation**, and then, on the Action Pane, select **Reserve lot** to reserve the second order line.</span></span>
 
-### <a name="create-order-set-3"></a><span data-ttu-id="4d41b-159">3. rendeléskészlet létrehozása</span><span class="sxs-lookup"><span data-stu-id="4d41b-159">Create order set 3</span></span>
+### <a name="create-order-set-3"></a><span data-ttu-id="4c915-159">3. rendeléskészlet létrehozása</span><span class="sxs-lookup"><span data-stu-id="4c915-159">Create order set 3</span></span>
 
-#### <a name="sales-orders-3-1-and-3-2"></a><span data-ttu-id="4d41b-160">3-1. és 3-2. értékesítési rendelések</span><span class="sxs-lookup"><span data-stu-id="4d41b-160">Sales orders 3-1 and 3-2</span></span>
+#### <a name="sales-orders-3-1-and-3-2"></a><span data-ttu-id="4c915-160">3-1. és 3-2. értékesítési rendelések</span><span class="sxs-lookup"><span data-stu-id="4c915-160">Sales orders 3-1 and 3-2</span></span>
 
-1. <span data-ttu-id="4d41b-161">Hozzon létre két egyforma olyan értékesítési rendelést, amelynek beállításai a következők:</span><span class="sxs-lookup"><span data-stu-id="4d41b-161">Create two identical sales orders that have the following settings:</span></span>
+1. <span data-ttu-id="4c915-161">Hozzon létre két egyforma olyan értékesítési rendelést, amelynek beállításai a következők:</span><span class="sxs-lookup"><span data-stu-id="4c915-161">Create two identical sales orders that have the following settings:</span></span>
 
-    - <span data-ttu-id="4d41b-162">**Vevőkód** *US-001*</span><span class="sxs-lookup"><span data-stu-id="4d41b-162">**Customer account:** *US-001*</span></span>
-    - <span data-ttu-id="4d41b-163">**Vevői igénylés:** *1*</span><span class="sxs-lookup"><span data-stu-id="4d41b-163">**Customer requisition:** *1*</span></span>
+    - <span data-ttu-id="4c915-162">**Vevőkód** *US-001*</span><span class="sxs-lookup"><span data-stu-id="4c915-162">**Customer account:** *US-001*</span></span>
+    - <span data-ttu-id="4c915-163">**Vevői igénylés:** *1*</span><span class="sxs-lookup"><span data-stu-id="4c915-163">**Customer requisition:** *1*</span></span>
 
-1. <span data-ttu-id="4d41b-164">Adjon hozzá egy olyan rendelési sort, amelynek beállításai a következők:</span><span class="sxs-lookup"><span data-stu-id="4d41b-164">Add an order line that has the following settings:</span></span>
+1. <span data-ttu-id="4c915-164">Adjon hozzá egy olyan rendelési sort, amelynek beállításai a következők:</span><span class="sxs-lookup"><span data-stu-id="4c915-164">Add an order line that has the following settings:</span></span>
 
-    - <span data-ttu-id="4d41b-165">**Cikkszám:** *A0001* (olyan cikk, amelyhez nem tartozik **4.kód** szűrő)</span><span class="sxs-lookup"><span data-stu-id="4d41b-165">**Item number:** *A0001* (an item that no **Code 4** filter is assigned to)</span></span>
-    - <span data-ttu-id="4d41b-166">**Mennyiség:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="4d41b-166">**Quantity:** *1.00*</span></span>
+    - <span data-ttu-id="4c915-165">**Cikkszám:** *A0001* (olyan cikk, amelyhez nem tartozik **4.kód** szűrő)</span><span class="sxs-lookup"><span data-stu-id="4c915-165">**Item number:** *A0001* (an item that no **Code 4** filter is assigned to)</span></span>
+    - <span data-ttu-id="4c915-166">**Mennyiség:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="4c915-166">**Quantity:** *1.00*</span></span>
 
-1. <span data-ttu-id="4d41b-167">Válassza a **Készlet \> Foglalás** elemet, majd a műveleti panelen válassza az **Adag foglalása** elemet a rendelési sor foglalásához.</span><span class="sxs-lookup"><span data-stu-id="4d41b-167">Select **Inventory \> Reservation**, and then, on the Action Pane, select **Reserve lot** to reserve the order line.</span></span>
+1. <span data-ttu-id="4c915-167">Válassza a **Készlet \> Foglalás** elemet, majd a műveleti panelen válassza az **Adag foglalása** elemet a rendelési sor foglalásához.</span><span class="sxs-lookup"><span data-stu-id="4c915-167">Select **Inventory \> Reservation**, and then, on the Action Pane, select **Reserve lot** to reserve the order line.</span></span>
 
-#### <a name="sales-orders-3-3-and-3-4"></a><span data-ttu-id="4d41b-168">3-3. és 3-4. értékesítési rendelések</span><span class="sxs-lookup"><span data-stu-id="4d41b-168">Sales orders 3-3 and 3-4</span></span>
+#### <a name="sales-orders-3-3-and-3-4"></a><span data-ttu-id="4c915-168">3-3. és 3-4. értékesítési rendelések</span><span class="sxs-lookup"><span data-stu-id="4c915-168">Sales orders 3-3 and 3-4</span></span>
 
-1. <span data-ttu-id="4d41b-169">Hozzon létre két egyforma olyan értékesítési rendelést, amelynek beállításai a következők:</span><span class="sxs-lookup"><span data-stu-id="4d41b-169">Create two identical sales orders that have the following settings:</span></span>
+1. <span data-ttu-id="4c915-169">Hozzon létre két egyforma olyan értékesítési rendelést, amelynek beállításai a következők:</span><span class="sxs-lookup"><span data-stu-id="4c915-169">Create two identical sales orders that have the following settings:</span></span>
 
-    - <span data-ttu-id="4d41b-170">**Vevőkód** *US-001*</span><span class="sxs-lookup"><span data-stu-id="4d41b-170">**Customer account:** *US-001*</span></span>
-    - <span data-ttu-id="4d41b-171">**Vevői igénylés:** *2*</span><span class="sxs-lookup"><span data-stu-id="4d41b-171">**Customer requisition:** *2*</span></span>
+    - <span data-ttu-id="4c915-170">**Vevőkód** *US-001*</span><span class="sxs-lookup"><span data-stu-id="4c915-170">**Customer account:** *US-001*</span></span>
+    - <span data-ttu-id="4c915-171">**Vevői igénylés:** *2*</span><span class="sxs-lookup"><span data-stu-id="4c915-171">**Customer requisition:** *2*</span></span>
 
-1. <span data-ttu-id="4d41b-172">Adjon hozzá egy olyan rendelési sort, amelynek beállításai a következők:</span><span class="sxs-lookup"><span data-stu-id="4d41b-172">Add an order line that has the following settings:</span></span>
+1. <span data-ttu-id="4c915-172">Adjon hozzá egy olyan rendelési sort, amelynek beállításai a következők:</span><span class="sxs-lookup"><span data-stu-id="4c915-172">Add an order line that has the following settings:</span></span>
 
-    - <span data-ttu-id="4d41b-173">**Cikkszám:** *A0001* (olyan cikk, amelyhez nem tartozik **4.kód** szűrő)</span><span class="sxs-lookup"><span data-stu-id="4d41b-173">**Item number:** *A0001* (an item that no **Code 4** filter is assigned to)</span></span>
-    - <span data-ttu-id="4d41b-174">**Mennyiség:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="4d41b-174">**Quantity:** *1.00*</span></span>
+    - <span data-ttu-id="4c915-173">**Cikkszám:** *A0001* (olyan cikk, amelyhez nem tartozik **4.kód** szűrő)</span><span class="sxs-lookup"><span data-stu-id="4c915-173">**Item number:** *A0001* (an item that no **Code 4** filter is assigned to)</span></span>
+    - <span data-ttu-id="4c915-174">**Mennyiség:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="4c915-174">**Quantity:** *1.00*</span></span>
 
-1. <span data-ttu-id="4d41b-175">Válassza a **Készlet \> Foglalás** elemet, majd a műveleti panelen válassza az **Adag foglalása** elemet a rendelési sor foglalásához.</span><span class="sxs-lookup"><span data-stu-id="4d41b-175">Select **Inventory \> Reservation**, and then, on the Action Pane, select **Reserve lot** to reserve the order line.</span></span>
+1. <span data-ttu-id="4c915-175">Válassza a **Készlet \> Foglalás** elemet, majd a műveleti panelen válassza az **Adag foglalása** elemet a rendelési sor foglalásához.</span><span class="sxs-lookup"><span data-stu-id="4c915-175">Select **Inventory \> Reservation**, and then, on the Action Pane, select **Reserve lot** to reserve the order line.</span></span>
 
-### <a name="create-order-set-4"></a><span data-ttu-id="4d41b-176">4. rendeléskészlet létrehozása</span><span class="sxs-lookup"><span data-stu-id="4d41b-176">Create order set 4</span></span>
+### <a name="create-order-set-4"></a><span data-ttu-id="4c915-176">4. rendeléskészlet létrehozása</span><span class="sxs-lookup"><span data-stu-id="4c915-176">Create order set 4</span></span>
 
-#### <a name="sales-orders-4-1-and-4-2"></a><span data-ttu-id="4d41b-177">4-1. és 4-2. értékesítési rendelések</span><span class="sxs-lookup"><span data-stu-id="4d41b-177">Sales orders 4-1 and 4-2</span></span>
+#### <a name="sales-orders-4-1-and-4-2"></a><span data-ttu-id="4c915-177">4-1. és 4-2. értékesítési rendelések</span><span class="sxs-lookup"><span data-stu-id="4c915-177">Sales orders 4-1 and 4-2</span></span>
 
-1. <span data-ttu-id="4d41b-178">Hozzon létre két egyforma olyan értékesítési rendelést, amelynek beállításai a következők:</span><span class="sxs-lookup"><span data-stu-id="4d41b-178">Create two identical sales orders that have the following settings:</span></span>
+1. <span data-ttu-id="4c915-178">Hozzon létre két egyforma olyan értékesítési rendelést, amelynek beállításai a következők:</span><span class="sxs-lookup"><span data-stu-id="4c915-178">Create two identical sales orders that have the following settings:</span></span>
 
-    - <span data-ttu-id="4d41b-179">**Vevőkód** *US-003*</span><span class="sxs-lookup"><span data-stu-id="4d41b-179">**Customer account:** *US-003*</span></span>
+    - <span data-ttu-id="4c915-179">**Vevőkód** *US-003*</span><span class="sxs-lookup"><span data-stu-id="4c915-179">**Customer account:** *US-003*</span></span>
 
-1. <span data-ttu-id="4d41b-180">Adjon hozzá egy olyan rendelési sort, amelynek beállításai a következők:</span><span class="sxs-lookup"><span data-stu-id="4d41b-180">Add an order line that has the following settings:</span></span>
+1. <span data-ttu-id="4c915-180">Adjon hozzá egy olyan rendelési sort, amelynek beállításai a következők:</span><span class="sxs-lookup"><span data-stu-id="4c915-180">Add an order line that has the following settings:</span></span>
 
-    - <span data-ttu-id="4d41b-181">**Cikkszám:** *A0001* (olyan cikk, amelyhez nem tartozik **4.kód** szűrő)</span><span class="sxs-lookup"><span data-stu-id="4d41b-181">**Item number:** *A0001* (an item that no **Code 4** filter is assigned to)</span></span>
-    - <span data-ttu-id="4d41b-182">**Mennyiség:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="4d41b-182">**Quantity:** *1.00*</span></span>
+    - <span data-ttu-id="4c915-181">**Cikkszám:** *A0001* (olyan cikk, amelyhez nem tartozik **4.kód** szűrő)</span><span class="sxs-lookup"><span data-stu-id="4c915-181">**Item number:** *A0001* (an item that no **Code 4** filter is assigned to)</span></span>
+    - <span data-ttu-id="4c915-182">**Mennyiség:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="4c915-182">**Quantity:** *1.00*</span></span>
 
-1. <span data-ttu-id="4d41b-183">Válassza a **Készlet \> Foglalás** elemet, majd a műveleti panelen válassza az **Adag foglalása** elemet a rendelési sor foglalásához.</span><span class="sxs-lookup"><span data-stu-id="4d41b-183">Select **Inventory \> Reservation**, and then, on the Action Pane, select **Reserve lot** to reserve the order line.</span></span>
+1. <span data-ttu-id="4c915-183">Válassza a **Készlet \> Foglalás** elemet, majd a műveleti panelen válassza az **Adag foglalása** elemet a rendelési sor foglalásához.</span><span class="sxs-lookup"><span data-stu-id="4c915-183">Select **Inventory \> Reservation**, and then, on the Action Pane, select **Reserve lot** to reserve the order line.</span></span>
 
-#### <a name="sales-orders-4-3-and-4-4"></a><span data-ttu-id="4d41b-184">4-3. és 4-4. értékesítési rendelések</span><span class="sxs-lookup"><span data-stu-id="4d41b-184">Sales orders 4-3 and 4-4</span></span>
+#### <a name="sales-orders-4-3-and-4-4"></a><span data-ttu-id="4c915-184">4-3. és 4-4. értékesítési rendelések</span><span class="sxs-lookup"><span data-stu-id="4c915-184">Sales orders 4-3 and 4-4</span></span>
 
-1. <span data-ttu-id="4d41b-185">Hozzon létre két egyforma olyan értékesítési rendelést, amelynek beállításai a következők:</span><span class="sxs-lookup"><span data-stu-id="4d41b-185">Create two identical sales orders that have the following settings:</span></span>
+1. <span data-ttu-id="4c915-185">Hozzon létre két egyforma olyan értékesítési rendelést, amelynek beállításai a következők:</span><span class="sxs-lookup"><span data-stu-id="4c915-185">Create two identical sales orders that have the following settings:</span></span>
 
-    - <span data-ttu-id="4d41b-186">**Vevőkód** *US-004*</span><span class="sxs-lookup"><span data-stu-id="4d41b-186">**Customer account:** *US-004*</span></span>
+    - <span data-ttu-id="4c915-186">**Vevőkód** *US-004*</span><span class="sxs-lookup"><span data-stu-id="4c915-186">**Customer account:** *US-004*</span></span>
 
-1. <span data-ttu-id="4d41b-187">Adjon hozzá egy olyan rendelési sort, amelynek beállításai a következők:</span><span class="sxs-lookup"><span data-stu-id="4d41b-187">Add an order line that has the following settings:</span></span>
+1. <span data-ttu-id="4c915-187">Adjon hozzá egy olyan rendelési sort, amelynek beállításai a következők:</span><span class="sxs-lookup"><span data-stu-id="4c915-187">Add an order line that has the following settings:</span></span>
 
-    - <span data-ttu-id="4d41b-188">**Cikkszám:** *A0001* (olyan cikk, amelyhez nem tartozik **4.kód** szűrő)</span><span class="sxs-lookup"><span data-stu-id="4d41b-188">**Item number:** *A0001* (an item that no **Code 4** filter is assigned to)</span></span>
-    - <span data-ttu-id="4d41b-189">**Mennyiség:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="4d41b-189">**Quantity:** *1.00*</span></span>
+    - <span data-ttu-id="4c915-188">**Cikkszám:** *A0001* (olyan cikk, amelyhez nem tartozik **4.kód** szűrő)</span><span class="sxs-lookup"><span data-stu-id="4c915-188">**Item number:** *A0001* (an item that no **Code 4** filter is assigned to)</span></span>
+    - <span data-ttu-id="4c915-189">**Mennyiség:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="4c915-189">**Quantity:** *1.00*</span></span>
 
-1. <span data-ttu-id="4d41b-190">Válassza a **Készlet \> Foglalás** elemet, majd a műveleti panelen válassza az **Adag foglalása** elemet a rendelési sor foglalásához.</span><span class="sxs-lookup"><span data-stu-id="4d41b-190">Select **Inventory \> Reservation**, and then, on the Action Pane, select **Reserve lot** to reserve the order line.</span></span>
+1. <span data-ttu-id="4c915-190">Válassza a **Készlet \> Foglalás** elemet, majd a műveleti panelen válassza az **Adag foglalása** elemet a rendelési sor foglalásához.</span><span class="sxs-lookup"><span data-stu-id="4c915-190">Select **Inventory \> Reservation**, and then, on the Action Pane, select **Reserve lot** to reserve the order line.</span></span>
 
-#### <a name="sales-orders-4-5-and-4-6"></a><span data-ttu-id="4d41b-191">4-5. és 4-6. értékesítési rendelések</span><span class="sxs-lookup"><span data-stu-id="4d41b-191">Sales orders 4-5 and 4-6</span></span>
+#### <a name="sales-orders-4-5-and-4-6"></a><span data-ttu-id="4c915-191">4-5. és 4-6. értékesítési rendelések</span><span class="sxs-lookup"><span data-stu-id="4c915-191">Sales orders 4-5 and 4-6</span></span>
 
-1. <span data-ttu-id="4d41b-192">Hozzon létre két egyforma olyan értékesítési rendelést, amelynek beállításai a következők:</span><span class="sxs-lookup"><span data-stu-id="4d41b-192">Create two identical sales orders that have the following settings:</span></span>
+1. <span data-ttu-id="4c915-192">Hozzon létre két egyforma olyan értékesítési rendelést, amelynek beállításai a következők:</span><span class="sxs-lookup"><span data-stu-id="4c915-192">Create two identical sales orders that have the following settings:</span></span>
 
-    - <span data-ttu-id="4d41b-193">**Vevőkód** *US-007*</span><span class="sxs-lookup"><span data-stu-id="4d41b-193">**Customer account:** *US-007*</span></span>
-    - <span data-ttu-id="4d41b-194">**Telephely:** *6*</span><span class="sxs-lookup"><span data-stu-id="4d41b-194">**Site:** *6*</span></span>
-    - <span data-ttu-id="4d41b-195">**Raktár:** *61*</span><span class="sxs-lookup"><span data-stu-id="4d41b-195">**Warehouse:** *61*</span></span>
-    - <span data-ttu-id="4d41b-196">**Gyűjtő:** *ShipCons*</span><span class="sxs-lookup"><span data-stu-id="4d41b-196">**Pool:** *ShipCons*</span></span>
+    - <span data-ttu-id="4c915-193">**Vevőkód** *US-007*</span><span class="sxs-lookup"><span data-stu-id="4c915-193">**Customer account:** *US-007*</span></span>
+    - <span data-ttu-id="4c915-194">**Telephely:** *6*</span><span class="sxs-lookup"><span data-stu-id="4c915-194">**Site:** *6*</span></span>
+    - <span data-ttu-id="4c915-195">**Raktár:** *61*</span><span class="sxs-lookup"><span data-stu-id="4c915-195">**Warehouse:** *61*</span></span>
+    - <span data-ttu-id="4c915-196">**Gyűjtő:** *ShipCons*</span><span class="sxs-lookup"><span data-stu-id="4c915-196">**Pool:** *ShipCons*</span></span>
 
-1. <span data-ttu-id="4d41b-197">Adjon hozzá egy olyan rendelési sort, amelynek beállításai a következők:</span><span class="sxs-lookup"><span data-stu-id="4d41b-197">Add an order line that has the following settings:</span></span>
+1. <span data-ttu-id="4c915-197">Adjon hozzá egy olyan rendelési sort, amelynek beállításai a következők:</span><span class="sxs-lookup"><span data-stu-id="4c915-197">Add an order line that has the following settings:</span></span>
 
-    - <span data-ttu-id="4d41b-198">**Cikkszám:** *A0001* (olyan cikk, amelyhez nem tartozik **4.kód** szűrő)</span><span class="sxs-lookup"><span data-stu-id="4d41b-198">**Item number:** *A0001* (an item that no **Code 4** filter is assigned to)</span></span>
-    - <span data-ttu-id="4d41b-199">**Mennyiség:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="4d41b-199">**Quantity:** *1.00*</span></span>
+    - <span data-ttu-id="4c915-198">**Cikkszám:** *A0001* (olyan cikk, amelyhez nem tartozik **4.kód** szűrő)</span><span class="sxs-lookup"><span data-stu-id="4c915-198">**Item number:** *A0001* (an item that no **Code 4** filter is assigned to)</span></span>
+    - <span data-ttu-id="4c915-199">**Mennyiség:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="4c915-199">**Quantity:** *1.00*</span></span>
 
-1. <span data-ttu-id="4d41b-200">Válassza a **Készlet \> Foglalás** elemet, majd a műveleti panelen válassza az **Adag foglalása** elemet a rendelési sor foglalásához.</span><span class="sxs-lookup"><span data-stu-id="4d41b-200">Select **Inventory \> Reservation**, and then, on the Action Pane, select **Reserve lot** to reserve the order line.</span></span>
+1. <span data-ttu-id="4c915-200">Válassza a **Készlet \> Foglalás** elemet, majd a műveleti panelen válassza az **Adag foglalása** elemet a rendelési sor foglalásához.</span><span class="sxs-lookup"><span data-stu-id="4c915-200">Select **Inventory \> Reservation**, and then, on the Action Pane, select **Reserve lot** to reserve the order line.</span></span>
 
-#### <a name="sales-orders-4-7-and-4-8"></a><span data-ttu-id="4d41b-201">4-7. és 4-8. értékesítési rendelések</span><span class="sxs-lookup"><span data-stu-id="4d41b-201">Sales orders 4-7 and 4-8</span></span>
+#### <a name="sales-orders-4-7-and-4-8"></a><span data-ttu-id="4c915-201">4-7. és 4-8. értékesítési rendelések</span><span class="sxs-lookup"><span data-stu-id="4c915-201">Sales orders 4-7 and 4-8</span></span>
 
-1. <span data-ttu-id="4d41b-202">Hozzon létre két egyforma olyan értékesítési rendelést, amelynek beállításai a következők:</span><span class="sxs-lookup"><span data-stu-id="4d41b-202">Create two identical sales orders that have the following settings:</span></span>
+1. <span data-ttu-id="4c915-202">Hozzon létre két egyforma olyan értékesítési rendelést, amelynek beállításai a következők:</span><span class="sxs-lookup"><span data-stu-id="4c915-202">Create two identical sales orders that have the following settings:</span></span>
 
-    - <span data-ttu-id="4d41b-203">**Vevőkód** *US-007*</span><span class="sxs-lookup"><span data-stu-id="4d41b-203">**Customer account:** *US-007*</span></span>
-    - <span data-ttu-id="4d41b-204">**Telephely:** *6*</span><span class="sxs-lookup"><span data-stu-id="4d41b-204">**Site:** *6*</span></span>
-    - <span data-ttu-id="4d41b-205">**Raktár:** *61*</span><span class="sxs-lookup"><span data-stu-id="4d41b-205">**Warehouse:** *61*</span></span>
-    - <span data-ttu-id="4d41b-206">**Gyűjtő:** Ezt a mezőt hagyja üresen.</span><span class="sxs-lookup"><span data-stu-id="4d41b-206">**Pool:** Leave this field blank.</span></span>
+    - <span data-ttu-id="4c915-203">**Vevőkód** *US-007*</span><span class="sxs-lookup"><span data-stu-id="4c915-203">**Customer account:** *US-007*</span></span>
+    - <span data-ttu-id="4c915-204">**Telephely:** *6*</span><span class="sxs-lookup"><span data-stu-id="4c915-204">**Site:** *6*</span></span>
+    - <span data-ttu-id="4c915-205">**Raktár:** *61*</span><span class="sxs-lookup"><span data-stu-id="4c915-205">**Warehouse:** *61*</span></span>
+    - <span data-ttu-id="4c915-206">**Gyűjtő:** Ezt a mezőt hagyja üresen.</span><span class="sxs-lookup"><span data-stu-id="4c915-206">**Pool:** Leave this field blank.</span></span>
 
-1. <span data-ttu-id="4d41b-207">Adjon hozzá egy olyan rendelési sort, amelynek beállításai a következők:</span><span class="sxs-lookup"><span data-stu-id="4d41b-207">Add an order line that has the following settings:</span></span>
+1. <span data-ttu-id="4c915-207">Adjon hozzá egy olyan rendelési sort, amelynek beállításai a következők:</span><span class="sxs-lookup"><span data-stu-id="4c915-207">Add an order line that has the following settings:</span></span>
 
-    - <span data-ttu-id="4d41b-208">**Cikkszám:** *A0001* (olyan cikk, amelyhez nem tartozik **4.kód** szűrő)</span><span class="sxs-lookup"><span data-stu-id="4d41b-208">**Item number:** *A0001* (an item that no **Code 4** filter is assigned to)</span></span>
-    - <span data-ttu-id="4d41b-209">**Mennyiség:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="4d41b-209">**Quantity:** *1.00*</span></span>
+    - <span data-ttu-id="4c915-208">**Cikkszám:** *A0001* (olyan cikk, amelyhez nem tartozik **4.kód** szűrő)</span><span class="sxs-lookup"><span data-stu-id="4c915-208">**Item number:** *A0001* (an item that no **Code 4** filter is assigned to)</span></span>
+    - <span data-ttu-id="4c915-209">**Mennyiség:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="4c915-209">**Quantity:** *1.00*</span></span>
 
-1. <span data-ttu-id="4d41b-210">Válassza a **Készlet \> Foglalás** elemet, majd a műveleti panelen válassza az **Adag foglalása** elemet a rendelési sor foglalásához.</span><span class="sxs-lookup"><span data-stu-id="4d41b-210">Select **Inventory \> Reservation**, and then, on the Action Pane, select **Reserve lot** to reserve the order line.</span></span>
+1. <span data-ttu-id="4c915-210">Válassza a **Készlet \> Foglalás** elemet, majd a műveleti panelen válassza az **Adag foglalása** elemet a rendelési sor foglalásához.</span><span class="sxs-lookup"><span data-stu-id="4c915-210">Select **Inventory \> Reservation**, and then, on the Action Pane, select **Reserve lot** to reserve the order line.</span></span>
 
-## <a name="use-the-load-planning-workbench-to-create-loads-and-release-them-to-the-warehouse"></a><span data-ttu-id="4d41b-211">A rakománytervezési munkaterület használata a rakományok létrehozásához és kiadásához a raktárba</span><span class="sxs-lookup"><span data-stu-id="4d41b-211">Use the load planning workbench to create loads and release them to the warehouse</span></span>
+## <a name="use-the-load-planning-workbench-to-create-loads-and-release-them-to-the-warehouse"></a><span data-ttu-id="4c915-211">A rakománytervezési munkaterület használata a rakományok létrehozásához és kiadásához a raktárba</span><span class="sxs-lookup"><span data-stu-id="4c915-211">Use the load planning workbench to create loads and release them to the warehouse</span></span>
 
-<span data-ttu-id="4d41b-212">A következő lépések végrehajtásával rakományt hozhat létre az egyes rendeléskészletekhez, amelyeket ehhez az esethez készített, majd kiadhatja azt a raktárnak.</span><span class="sxs-lookup"><span data-stu-id="4d41b-212">Follow these steps to create a load for each order set that you created for this scenario and then release it to the warehouse.</span></span>
+<span data-ttu-id="4c915-212">A következő lépések végrehajtásával rakományt hozhat létre az egyes rendeléskészletekhez, amelyeket ehhez az esethez készített, majd kiadhatja azt a raktárnak.</span><span class="sxs-lookup"><span data-stu-id="4c915-212">Follow these steps to create a load for each order set that you created for this scenario and then release it to the warehouse.</span></span>
 
-1. <span data-ttu-id="4d41b-213">Ugorjon a **Raktárkezelés \> Rakományok \> Rakománytervező munkaterület** elemre.</span><span class="sxs-lookup"><span data-stu-id="4d41b-213">Go to **Warehouse management \> Loads \> Load planning workbench**.</span></span>
-1. <span data-ttu-id="4d41b-214">Az **Értékesítési sorok** lapon megkeresheti és kiválaszthatja az adott esethez létrehozott rendeléskészletek egyikének összes értékesítési rendelési sorait.</span><span class="sxs-lookup"><span data-stu-id="4d41b-214">On the **Sales lines** tab, find and select all the sales order lines from one of the order sets that you created for this scenario.</span></span>
-1. <span data-ttu-id="4d41b-215">A művelet ablaktábla **Kereslet és kínálat** lapján válassza a **Hozzáadás \> Új rakományhoz** lehetőséget, amellyel a kiválasztott rendelési sorokat új rakományhoz adhatja.</span><span class="sxs-lookup"><span data-stu-id="4d41b-215">On the Action Pane, on the **Supply and demand** tab, select **Add \> To new load** to add the selected order lines to a new Load.</span></span>
-1. <span data-ttu-id="4d41b-216">A **Rakománysablon hozzárendelése** párbeszédablakban a **Rakománysablon azonosítója** mezőben válassza ki a rakománysablont, pl. a *Normál rakománysablon* elemet.</span><span class="sxs-lookup"><span data-stu-id="4d41b-216">In the **Load template assignment** dialog box, in the **Load template ID** field, select a load template, such as *Stnd Load Template*.</span></span>
-1. <span data-ttu-id="4d41b-217">Az **OK** gombbal zárja be a párbeszédpanelt.</span><span class="sxs-lookup"><span data-stu-id="4d41b-217">Select **OK** to close the dialog box.</span></span> 
-1. <span data-ttu-id="4d41b-218">A **Rakomány** szakaszban keresse meg és válassza ki az imént létrehozott rakományt.</span><span class="sxs-lookup"><span data-stu-id="4d41b-218">In the **Loads** section, find and select the load that you just created.</span></span>
-1. <span data-ttu-id="4d41b-219">A kiválasztott rakomány raktárba történő kiadásához válassza a **Kiadás \> Kiadás a raktárba** elemet.</span><span class="sxs-lookup"><span data-stu-id="4d41b-219">Select **Release \> Release to warehouse** to release the selected load to the warehouse.</span></span>
-1. <span data-ttu-id="4d41b-220">Ismételje meg ezt az eljárást a három további rendeléskészletnél, amelyet az adott esethez létrehozott.</span><span class="sxs-lookup"><span data-stu-id="4d41b-220">Repeat this procedure for the other three order sets that you created for this scenario.</span></span>
+1. <span data-ttu-id="4c915-213">Ugorjon a **Raktárkezelés \> Rakományok \> Rakománytervező munkaterület** elemre.</span><span class="sxs-lookup"><span data-stu-id="4c915-213">Go to **Warehouse management \> Loads \> Load planning workbench**.</span></span>
+1. <span data-ttu-id="4c915-214">Az **Értékesítési sorok** lapon megkeresheti és kiválaszthatja az adott esethez létrehozott rendeléskészletek egyikének összes értékesítési rendelési sorait.</span><span class="sxs-lookup"><span data-stu-id="4c915-214">On the **Sales lines** tab, find and select all the sales order lines from one of the order sets that you created for this scenario.</span></span>
+1. <span data-ttu-id="4c915-215">A művelet ablaktábla **Kereslet és kínálat** lapján válassza a **Hozzáadás \> Új rakományhoz** lehetőséget, amellyel a kiválasztott rendelési sorokat új rakományhoz adhatja.</span><span class="sxs-lookup"><span data-stu-id="4c915-215">On the Action Pane, on the **Supply and demand** tab, select **Add \> To new load** to add the selected order lines to a new Load.</span></span>
+1. <span data-ttu-id="4c915-216">A **Rakománysablon hozzárendelése** párbeszédablakban a **Rakománysablon azonosítója** mezőben válassza ki a rakománysablont, pl. a *Normál rakománysablon* elemet.</span><span class="sxs-lookup"><span data-stu-id="4c915-216">In the **Load template assignment** dialog box, in the **Load template ID** field, select a load template, such as *Stnd Load Template*.</span></span>
+1. <span data-ttu-id="4c915-217">Az **OK** gombbal zárja be a párbeszédpanelt.</span><span class="sxs-lookup"><span data-stu-id="4c915-217">Select **OK** to close the dialog box.</span></span> 
+1. <span data-ttu-id="4c915-218">A **Rakomány** szakaszban keresse meg és válassza ki az imént létrehozott rakományt.</span><span class="sxs-lookup"><span data-stu-id="4c915-218">In the **Loads** section, find and select the load that you just created.</span></span>
+1. <span data-ttu-id="4c915-219">A kiválasztott rakomány raktárba történő kiadásához válassza a **Kiadás \> Kiadás a raktárba** elemet.</span><span class="sxs-lookup"><span data-stu-id="4c915-219">Select **Release \> Release to warehouse** to release the selected load to the warehouse.</span></span>
+1. <span data-ttu-id="4c915-220">Ismételje meg ezt az eljárást a három további rendeléskészletnél, amelyet az adott esethez létrehozott.</span><span class="sxs-lookup"><span data-stu-id="4c915-220">Repeat this procedure for the other three order sets that you created for this scenario.</span></span>
 
-## <a name="verify-the-shipments"></a><span data-ttu-id="4d41b-221">Szállítmányok ellenőrzése</span><span class="sxs-lookup"><span data-stu-id="4d41b-221">Verify the shipments</span></span>
+## <a name="verify-the-shipments"></a><span data-ttu-id="4c915-221">Szállítmányok ellenőrzése</span><span class="sxs-lookup"><span data-stu-id="4c915-221">Verify the shipments</span></span>
 
-<span data-ttu-id="4d41b-222">A következő eljárással ellenőrizhetők a szállítmánykonszolidálás eredményeképpen létrehozott vagy frissített szállítmányok.</span><span class="sxs-lookup"><span data-stu-id="4d41b-222">The following procedure lets you verify the shipments that have been created or updated as a result of shipment consolidation.</span></span> <span data-ttu-id="4d41b-223">Ennek segítségével ellenőrizheti az adott esethez létrehozott összes rendeléskészletet, majd megtekintheti a következő részszakaszokat, amellyel meggyőződhet arról, hogy a várt eredményeket kapta.</span><span class="sxs-lookup"><span data-stu-id="4d41b-223">Use it to review each order set that you created for this scenario, and then review the subsections that follow to make sure that you've obtained the expected results.</span></span>
+<span data-ttu-id="4c915-222">A következő eljárással ellenőrizhetők a szállítmánykonszolidálás eredményeképpen létrehozott vagy frissített szállítmányok.</span><span class="sxs-lookup"><span data-stu-id="4c915-222">The following procedure lets you verify the shipments that have been created or updated as a result of shipment consolidation.</span></span> <span data-ttu-id="4c915-223">Ennek segítségével ellenőrizheti az adott esethez létrehozott összes rendeléskészletet, majd megtekintheti a következő részszakaszokat, amellyel meggyőződhet arról, hogy a várt eredményeket kapta.</span><span class="sxs-lookup"><span data-stu-id="4c915-223">Use it to review each order set that you created for this scenario, and then review the subsections that follow to make sure that you've obtained the expected results.</span></span>
 
-1. <span data-ttu-id="4d41b-224">Lépjen a **Raktárkezelés \> Szállítmányok \> Minden szállítmány** elemhez.</span><span class="sxs-lookup"><span data-stu-id="4d41b-224">Go to **Warehouse management \> Shipments \> All shipments**.</span></span>
-1. <span data-ttu-id="4d41b-225">Keresse meg és válassza ki a kívánt szállítmányt.</span><span class="sxs-lookup"><span data-stu-id="4d41b-225">Find and select the required shipment.</span></span>
-1. <span data-ttu-id="4d41b-226">Ha a szállítmány létrehozásakor használt konszolidációs irányelvet létrehozzák vagy frissítik, akkor meg kell jelennie a **Szállítmánykonszolidációs irányelv** mezőben.</span><span class="sxs-lookup"><span data-stu-id="4d41b-226">If a consolidation policy was used when the shipment was created or updated, you should see it in the **Shipment consolidation policy** field.</span></span>
+1. <span data-ttu-id="4c915-224">Lépjen a **Raktárkezelés \> Szállítmányok \> Minden szállítmány** elemhez.</span><span class="sxs-lookup"><span data-stu-id="4c915-224">Go to **Warehouse management \> Shipments \> All shipments**.</span></span>
+1. <span data-ttu-id="4c915-225">Keresse meg és válassza ki a kívánt szállítmányt.</span><span class="sxs-lookup"><span data-stu-id="4c915-225">Find and select the required shipment.</span></span>
+1. <span data-ttu-id="4c915-226">Ha a szállítmány létrehozásakor használt konszolidációs irányelvet létrehozzák vagy frissítik, akkor meg kell jelennie a **Szállítmánykonszolidációs irányelv** mezőben.</span><span class="sxs-lookup"><span data-stu-id="4c915-226">If a consolidation policy was used when the shipment was created or updated, you should see it in the **Shipment consolidation policy** field.</span></span>
 
-### <a name="release-order-set-1-in-one-load"></a><span data-ttu-id="4d41b-227">1. rendeléskészlet kiadása egy rakományban</span><span class="sxs-lookup"><span data-stu-id="4d41b-227">Release order set 1 in one load</span></span>
+### <a name="release-order-set-1-in-one-load"></a><span data-ttu-id="4c915-227">1. rendeléskészlet kiadása egy rakományban</span><span class="sxs-lookup"><span data-stu-id="4c915-227">Release order set 1 in one load</span></span>
 
-<span data-ttu-id="4d41b-228">Két szállítmányt kellett létrehozni:</span><span class="sxs-lookup"><span data-stu-id="4d41b-228">Two shipments should have been created:</span></span>
+<span data-ttu-id="4c915-228">Két szállítmányt kellett létrehozni:</span><span class="sxs-lookup"><span data-stu-id="4c915-228">Two shipments should have been created:</span></span>
 
-- <span data-ttu-id="4d41b-229">Az első szállítmány három sort tartalmaz, és a *CustomerMode* szállítmánykonszolidációs irányelv használatával jött létre.</span><span class="sxs-lookup"><span data-stu-id="4d41b-229">The first shipment contains three lines and was created by using the *CustomerMode* shipment consolidation policy.</span></span>
-- <span data-ttu-id="4d41b-230">A második szállítmányt, amely nem a *Légitársaságok* szállítási módot használja, a *CustomerOrderNo* szállítmánykonszolidációs irányelv használatával hozták létre.</span><span class="sxs-lookup"><span data-stu-id="4d41b-230">The second shipment, which doesn't use the *Airways* transportation mode of delivery, was created by using the *CustomerOrderNo* shipment consolidation policy.</span></span>
+- <span data-ttu-id="4c915-229">Az első szállítmány három sort tartalmaz, és a *CustomerMode* szállítmánykonszolidációs irányelv használatával jött létre.</span><span class="sxs-lookup"><span data-stu-id="4c915-229">The first shipment contains three lines and was created by using the *CustomerMode* shipment consolidation policy.</span></span>
+- <span data-ttu-id="4c915-230">A második szállítmányt, amely nem a *Légitársaságok* szállítási módot használja, a *CustomerOrderNo* szállítmánykonszolidációs irányelv használatával hozták létre.</span><span class="sxs-lookup"><span data-stu-id="4c915-230">The second shipment, which doesn't use the *Airways* transportation mode of delivery, was created by using the *CustomerOrderNo* shipment consolidation policy.</span></span>
 
-### <a name="release-order-set-2-in-one-load"></a><span data-ttu-id="4d41b-231">2. rendeléskészlet kiadása egy rakományban</span><span class="sxs-lookup"><span data-stu-id="4d41b-231">Release order set 2 in one load</span></span>
+### <a name="release-order-set-2-in-one-load"></a><span data-ttu-id="4c915-231">2. rendeléskészlet kiadása egy rakományban</span><span class="sxs-lookup"><span data-stu-id="4c915-231">Release order set 2 in one load</span></span>
 
-<span data-ttu-id="4d41b-232">Három szállítmányt kellett létrehozni:</span><span class="sxs-lookup"><span data-stu-id="4d41b-232">Three shipments should have been created:</span></span>
+<span data-ttu-id="4c915-232">Három szállítmányt kellett létrehozni:</span><span class="sxs-lookup"><span data-stu-id="4c915-232">Three shipments should have been created:</span></span>
 
-- <span data-ttu-id="4d41b-233">Az első szállítmány a *Gyúlékony* cikkeket tartalmazza.</span><span class="sxs-lookup"><span data-stu-id="4d41b-233">The first shipment contains the *Flammable* items.</span></span>
-- <span data-ttu-id="4d41b-234">A másik két szállítmány mindegyike egy sort tartalmaz, amelyben a *Robbanásveszélyes* cikk szerepel.</span><span class="sxs-lookup"><span data-stu-id="4d41b-234">Each of the other two shipments contains one line that has the *Explosive* item.</span></span>
+- <span data-ttu-id="4c915-233">Az első szállítmány a *Gyúlékony* cikkeket tartalmazza.</span><span class="sxs-lookup"><span data-stu-id="4c915-233">The first shipment contains the *Flammable* items.</span></span>
+- <span data-ttu-id="4c915-234">A másik két szállítmány mindegyike egy sort tartalmaz, amelyben a *Robbanásveszélyes* cikk szerepel.</span><span class="sxs-lookup"><span data-stu-id="4c915-234">Each of the other two shipments contains one line that has the *Explosive* item.</span></span>
 
-### <a name="release-order-set-3-in-one-load"></a><span data-ttu-id="4d41b-235">3. rendeléskészlet kiadása egy rakományban</span><span class="sxs-lookup"><span data-stu-id="4d41b-235">Release order set 3 in one load</span></span>
+### <a name="release-order-set-3-in-one-load"></a><span data-ttu-id="4c915-235">3. rendeléskészlet kiadása egy rakományban</span><span class="sxs-lookup"><span data-stu-id="4c915-235">Release order set 3 in one load</span></span>
 
-<span data-ttu-id="4d41b-236">Két szállítmányt kellett létrehozni:</span><span class="sxs-lookup"><span data-stu-id="4d41b-236">Two shipments should have been created:</span></span>
+<span data-ttu-id="4c915-236">Két szállítmányt kellett létrehozni:</span><span class="sxs-lookup"><span data-stu-id="4c915-236">Two shipments should have been created:</span></span>
 
-- <span data-ttu-id="4d41b-237">Az első szállítmány azon értékesítési rendelés sorait tartalmazza, amelynél a **Vevői igénylés** mező értéke *1*.</span><span class="sxs-lookup"><span data-stu-id="4d41b-237">The first shipment contains order lines from the sales order where the **Customer requisition** field is set to *1*.</span></span>
-- <span data-ttu-id="4d41b-238">A második szállítmány azon értékesítési rendelés sorait tartalmazza, amelynél a **Vevői igénylés** mező értéke *2*.</span><span class="sxs-lookup"><span data-stu-id="4d41b-238">The second shipment contains order lines from sales order where the **Customer requisition** field is set to *2*.</span></span>
+- <span data-ttu-id="4c915-237">Az első szállítmány azon értékesítési rendelés sorait tartalmazza, amelynél a **Vevői igénylés** mező értéke *1*.</span><span class="sxs-lookup"><span data-stu-id="4c915-237">The first shipment contains order lines from the sales order where the **Customer requisition** field is set to *1*.</span></span>
+- <span data-ttu-id="4c915-238">A második szállítmány azon értékesítési rendelés sorait tartalmazza, amelynél a **Vevői igénylés** mező értéke *2*.</span><span class="sxs-lookup"><span data-stu-id="4c915-238">The second shipment contains order lines from sales order where the **Customer requisition** field is set to *2*.</span></span>
 
-### <a name="release-order-set-4-in-one-load"></a><span data-ttu-id="4d41b-239">4. rendeléskészlet kiadása egy rakományban</span><span class="sxs-lookup"><span data-stu-id="4d41b-239">Release order set 4 in one load</span></span>
+### <a name="release-order-set-4-in-one-load"></a><span data-ttu-id="4c915-239">4. rendeléskészlet kiadása egy rakományban</span><span class="sxs-lookup"><span data-stu-id="4c915-239">Release order set 4 in one load</span></span>
 
-<span data-ttu-id="4d41b-240">Négy szállítmányt kellett létrehozni:</span><span class="sxs-lookup"><span data-stu-id="4d41b-240">Four shipments should have been created:</span></span>
+<span data-ttu-id="4c915-240">Négy szállítmányt kellett létrehozni:</span><span class="sxs-lookup"><span data-stu-id="4c915-240">Four shipments should have been created:</span></span>
 
-- <span data-ttu-id="4d41b-241">Az *US-003* vevői számla két rendelésének sorait egyetlen szállítmányba csoportosították a *Rendelésgyűjtő* szállítmánykonszolidációs irányelv használatával.</span><span class="sxs-lookup"><span data-stu-id="4d41b-241">Lines from two orders for customer account *US-003* were grouped into one shipment by using the *Order pool* shipment consolidation policy.</span></span>
-- <span data-ttu-id="4d41b-242">Az *US-004* vevői számla két rendelésének sorait egyetlen szállítmányba csoportosították a *Rendelésgyűjtő* szállítmánykonszolidációs irányelv használatával.</span><span class="sxs-lookup"><span data-stu-id="4d41b-242">Lines from two orders for customer account *US-004* were grouped into one shipment by using the *Order pool* shipment consolidation policy.</span></span>
-- <span data-ttu-id="4d41b-243">Az *US-007* vevői számla 4-5. és 4-6. értékesítési rendelésének sorait egyetlen szállítmányba csoportosították a *Rendelésgyűjtő* szállítmánykonszolidációs irányelv használatával.</span><span class="sxs-lookup"><span data-stu-id="4d41b-243">Lines from sales orders 4-5 and 4-6 for customer account *US-007* were grouped into one shipment by using the *Order pool* shipment consolidation policy.</span></span>
-- <span data-ttu-id="4d41b-244">Az *US-007* vevői számla 4-7. és 4-8. értékesítési rendelésének sorait egyetlen szállítmányba csoportosították a *CrossOrder* szállítmánykonszolidációs irányelv használatával.</span><span class="sxs-lookup"><span data-stu-id="4d41b-244">Lines from sales orders 4-7 and 4-8 for customer account *US-007* were grouped into one shipment by using the *CrossOrder* shipment consolidation policy.</span></span>
+- <span data-ttu-id="4c915-241">Az *US-003* vevői számla két rendelésének sorait egyetlen szállítmányba csoportosították a *Rendelésgyűjtő* szállítmánykonszolidációs irányelv használatával.</span><span class="sxs-lookup"><span data-stu-id="4c915-241">Lines from two orders for customer account *US-003* were grouped into one shipment by using the *Order pool* shipment consolidation policy.</span></span>
+- <span data-ttu-id="4c915-242">Az *US-004* vevői számla két rendelésének sorait egyetlen szállítmányba csoportosították a *Rendelésgyűjtő* szállítmánykonszolidációs irányelv használatával.</span><span class="sxs-lookup"><span data-stu-id="4c915-242">Lines from two orders for customer account *US-004* were grouped into one shipment by using the *Order pool* shipment consolidation policy.</span></span>
+- <span data-ttu-id="4c915-243">Az *US-007* vevői számla 4-5. és 4-6. értékesítési rendelésének sorait egyetlen szállítmányba csoportosították a *Rendelésgyűjtő* szállítmánykonszolidációs irányelv használatával.</span><span class="sxs-lookup"><span data-stu-id="4c915-243">Lines from sales orders 4-5 and 4-6 for customer account *US-007* were grouped into one shipment by using the *Order pool* shipment consolidation policy.</span></span>
+- <span data-ttu-id="4c915-244">Az *US-007* vevői számla 4-7. és 4-8. értékesítési rendelésének sorait egyetlen szállítmányba csoportosították a *CrossOrder* szállítmánykonszolidációs irányelv használatával.</span><span class="sxs-lookup"><span data-stu-id="4c915-244">Lines from sales orders 4-7 and 4-8 for customer account *US-007* were grouped into one shipment by using the *CrossOrder* shipment consolidation policy.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="4d41b-245">További erőforrások</span><span class="sxs-lookup"><span data-stu-id="4d41b-245">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="4c915-245">További erőforrások</span><span class="sxs-lookup"><span data-stu-id="4c915-245">Additional resources</span></span>
 
-- [<span data-ttu-id="4d41b-246">Szállítmánykonszolidációs irányelvek</span><span class="sxs-lookup"><span data-stu-id="4d41b-246">Shipment consolidation policies</span></span>](about-shipment-consolidation-policies.md)
-- [<span data-ttu-id="4d41b-247">Szállítmánykonszolidációs irányelvek konfigurálása</span><span class="sxs-lookup"><span data-stu-id="4d41b-247">Configure shipment consolidation policies</span></span>](configure-shipment-consolidation-policies.md)
+- [<span data-ttu-id="4c915-246">Szállítmánykonszolidációs irányelvek</span><span class="sxs-lookup"><span data-stu-id="4c915-246">Shipment consolidation policies</span></span>](about-shipment-consolidation-policies.md)
+- [<span data-ttu-id="4c915-247">Szállítmánykonszolidációs irányelvek konfigurálása</span><span class="sxs-lookup"><span data-stu-id="4c915-247">Configure shipment consolidation policies</span></span>](configure-shipment-consolidation-policies.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

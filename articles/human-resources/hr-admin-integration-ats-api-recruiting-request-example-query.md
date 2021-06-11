@@ -7,35 +7,34 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e3bba96988f3ccef9ef54c1dad2a4c63e829198f
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 24c94aeb743aa1c9267b63472db2ac68badd0130
+ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5789708"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6057406"
 ---
-# <a name="example-query-for-recruiting-request"></a><span data-ttu-id="591cf-103">Példa lekérdezésre Toborzási kérelemmel kapcsolatban</span><span class="sxs-lookup"><span data-stu-id="591cf-103">Example query for Recruiting request</span></span>
+# <a name="example-query-for-recruiting-request"></a><span data-ttu-id="d41a1-103">Példa lekérdezésre Toborzási kérelemmel kapcsolatban</span><span class="sxs-lookup"><span data-stu-id="d41a1-103">Example query for Recruiting request</span></span>
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-<span data-ttu-id="591cf-104">Ez a témakör példalekérdezést tartalmaz a Toborzási kérelem entitásra vonatkozóan a Dynamics 365 Human Resources rendszerben.</span><span class="sxs-lookup"><span data-stu-id="591cf-104">This topic provides an example query for the Recruiting request entity in Dynamics 365 Human Resources.</span></span>
+<span data-ttu-id="d41a1-104">Ez a témakör példalekérdezést tartalmaz a Toborzási kérelem entitásra vonatkozóan a Dynamics 365 Human Resources rendszerben.</span><span class="sxs-lookup"><span data-stu-id="d41a1-104">This topic provides an example query for the Recruiting request entity in Dynamics 365 Human Resources.</span></span>
 
-<span data-ttu-id="591cf-105">A következő lekérdezés bemutatja, hogy hogyan használhatja a lekérdezés bővítése lehetőséget egy GET-műveletben egy megadott toborzási kérelem rekordjának és az ahhoz kapcsolódó beosztások, szükséges szakértelem és végzettségi követelmények lekérdezésére az adott kérelemhez kapcsolódóan.</span><span class="sxs-lookup"><span data-stu-id="591cf-105">The following query shows how you can use the $expand query option in a GET operation to retrieve a specified recruiting request record and all associated positions, required skills, and educational requirements for the specified request.</span></span> <span data-ttu-id="591cf-106">A példaként bemutatott válasz két beosztásra vonatkozó toborzási kérelmet, valamint a szükséges szakértelmet és végzettségeket jeleníti meg a kért beosztásokhoz.</span><span class="sxs-lookup"><span data-stu-id="591cf-106">The example response shows a recruiting request for two positions, and the required skills and education for the requested positions.</span></span>
+<span data-ttu-id="d41a1-105">A következő lekérdezés bemutatja, hogy hogyan használhatja a lekérdezés bővítése lehetőséget egy GET-műveletben egy megadott toborzási kérelem rekordjának és az ahhoz kapcsolódó beosztások, szükséges szakértelem és végzettségi követelmények lekérdezésére az adott kérelemhez kapcsolódóan.</span><span class="sxs-lookup"><span data-stu-id="d41a1-105">The following query shows how you can use the $expand query option in a GET operation to retrieve a specified recruiting request record and all associated positions, required skills, and educational requirements for the specified request.</span></span> <span data-ttu-id="d41a1-106">A példaként bemutatott válasz két beosztásra vonatkozó toborzási kérelmet, valamint a szükséges szakértelmet és végzettségeket jeleníti meg a kért beosztásokhoz.</span><span class="sxs-lookup"><span data-stu-id="d41a1-106">The example response shows a recruiting request for two positions, and the required skills and education for the requested positions.</span></span>
 
-<span data-ttu-id="591cf-107">**Kérelem**</span><span class="sxs-lookup"><span data-stu-id="591cf-107">**Request**</span></span>
+<span data-ttu-id="d41a1-107">**Kérelem**</span><span class="sxs-lookup"><span data-stu-id="d41a1-107">**Request**</span></span>
 
 ```http
 GET [Organizaton URI]/api/data/v9.1/mshr_hcmrecruitingrequestentities(<recruiting request entity ID>)?$expand=mshr_FK_HcmRecruitingRequestPositionEntity_RecruitingRequest,mshr_FK_HcmRecruitingRequestSkillEntity_RecruitingRequest,mshr_FK_HcmRecruitingRequestEducationEntity_RecruitingRequest
 ```
 
-<span data-ttu-id="591cf-108">**Válasz**</span><span class="sxs-lookup"><span data-stu-id="591cf-108">**Response**</span></span>
+<span data-ttu-id="d41a1-108">**Válasz**</span><span class="sxs-lookup"><span data-stu-id="d41a1-108">**Response**</span></span>
 
 ```json
 {
@@ -180,8 +179,8 @@ GET [Organizaton URI]/api/data/v9.1/mshr_hcmrecruitingrequestentities(<recruitin
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="591cf-109">Lásd még</span><span class="sxs-lookup"><span data-stu-id="591cf-109">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="d41a1-109">Lásd még</span><span class="sxs-lookup"><span data-stu-id="d41a1-109">See also</span></span>
 
-[<span data-ttu-id="591cf-110">Pályázó követésrendszer integrációs API bevezetése</span><span class="sxs-lookup"><span data-stu-id="591cf-110">Applicant Tracking System integration API introduction</span></span>](hr-admin-integration-ats-api-introduction.md)<br>
+[<span data-ttu-id="d41a1-110">Pályázó követésrendszer integrációs API bevezetése</span><span class="sxs-lookup"><span data-stu-id="d41a1-110">Applicant Tracking System integration API introduction</span></span>](hr-admin-integration-ats-api-introduction.md)<br>
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
