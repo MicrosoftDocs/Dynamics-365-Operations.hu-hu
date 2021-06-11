@@ -2,7 +2,7 @@
 title: Eltávolított vagy elavult funkciók kezdőlap
 description: Ez a témakör a Finance and Operations alkalmazások eltávolított és elavult funkcióival kapcsolatos súgótémakörök listáját tartalmazza.
 author: sericks007
-ms.date: 03/10/2021
+ms.date: 05/27/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2021-03-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 0827daafb71fd248980c72626e10b8b52016664d
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: b53b7c0577f7934e5bb7e03ce43cc66cafebee47
+ms.sourcegitcommit: 180548e3c10459776cf199989d3753e0c1555912
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018906"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6112649"
 ---
 # <a name="removed-or-deprecated-features-home-page"></a>Eltávolított vagy elavult funkciók kezdőlap
 
@@ -30,7 +30,6 @@ Az alábbi témakörök a Finance and Operations alkalmazások eltávolított é
 - [Eltávolított vagy elavult funkciók a Dynamics 365 Finance szolgáltatásban](../../../finance/get-started/removed-deprecated-features-finance.md)
 - [Eltávolított vagy elavult funkciók a Dynamics 365 Supply Chain Management szolgáltatásban](../../../supply-chain/get-started/removed-deprecated-features-scm-updates.md)
 - [A platform eltávolított vagy elavult funkciói](../../dev-itpro/get-started/removed-deprecated-features-platform-updates.md)
-- [A Lifecycle Services (LCS) szolgáltatás eltávolított vagy elavult funkciói](../../dev-itpro/lifecycle-services/removed-deprecated-features.md)
 - [Eltávolított vagy elavult funkciók a korábbi kiadásokban](../../dev-itpro/migration-upgrade/deprecated-features.md)
 
 ## <a name="deprecations-in-the-microsoft-power-platform"></a>Elavult funkciók a Microsoft Power Platform rendszerben

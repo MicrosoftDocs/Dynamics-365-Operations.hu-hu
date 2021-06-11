@@ -2,7 +2,7 @@
 title: Első lépések a tervezési optimalizálással
 description: Ez a témakör bemutatja, hogyan kezdje el használni a tervezési optimalizáció funkciót.
 author: ChristianRytt
-ms.date: 10/09/2020
+ms.date: 05/20/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: d346251e82737624edfce88dc7b2ee10280f6877
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: d12e1908e234c841fb705266b2255c6c5e2140e1
+ms.sourcegitcommit: 365092f735310990e82516110141d42aaf04e654
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5907667"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "6103593"
 ---
 # <a name="get-started-with-planning-optimization"></a>Tervezési optimalizálás kezdő lépései
 
@@ -58,7 +58,7 @@ Mielőtt telepítené a Tervezési optimalizálási bővítményt, a következő
 
 - A Supply Chain Management rendszert egy 2. szintű vagy magasabb szintű, LCS-kompatibilis magas rendelkezésre állású környezeten kell futtatnia (nem OneBox környezet), a Dynamics 365 Supply Chain Management 10.0.7-es vagy újabb verziójával. Ha OneBox- környezetbe próbálja meg telepíteni a bővítményt, akkor a telepítés nem fejeződik be, és a telepítést vissza kell vonni.
 
-- Be kell állítani a rendszert a Power Platform-integrációhoz. A további tudnivalókat lásd: [Bővítmények előfeltételei és telepítésük](../../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md#prerequisites-for-setting-up-add-ins) és [Bővítmények beállítása](../../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md#set-up-add-ins).
+- Be kell állítani a rendszert a Power Platform-integrációhoz. További információ: [A Microsoft Power Platform integrálása Finance and Operations-alkalmazásokkal](../../../fin-ops-core/dev-itpro/power-platform/overview.md).
 
 ### <a name="enable-the-planning-optimization-license"></a>A Tervezési optimalizálás licencének engedélyezése
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ce49835f167881417000b066fd4a351d26ca0909
-ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
+ms.openlocfilehash: 11528560ecabb848f2703d11c0a705b2a25d7614
+ms.sourcegitcommit: 180548e3c10459776cf199989d3753e0c1555912
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "5921423"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6112621"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>Eltávolított vagy elavult funkciók a korábbi kiadásokban
 
@@ -104,6 +104,39 @@ A Finance and Operations alkalmazások objektumaival kapcsolatban a [Technikai r
 | **Telepítési beállítás**              | Összes |
 | **Állapot**                         | Elavult: 2020 október 1-től azt tervezzük, hogy már nem támogatjuk a **Belföldi adójelentés (IT) – Funkcióhivatkozás IT-00003** elemet. |
 
+## <a name="october-2019-deprecation-announcement"></a>Elavulással kapcsolatos közlemény; 2019. október
+
+### <a name="flowchart-diagrams-in-business-process-modeler"></a>Az üzletifolyamat-modellező folyamatábra-diagramjai
+
+<table>
+<tbody>
+<tr>
+<td><strong>Elavulás/eltávolítás oka</strong></td>
+<td>Elavulttá fog válni a folyamatábra-diagramok összetevője az Üzletifolyamat-modellezőben (BPM), mert az örökölt kialakítás alacsony kihasználtságot eredményezett.</td>
+</tr>
+<tr>
+<td><strong>Felváltotta másik szolgáltatás?</strong></td>
+<td>Nem</td>
+</tr>
+<tr>
+<td><strong>Érintett területek</strong></td>
+<td>Üzletifolyamat-modellező</td>
+</tr>
+<tr>
+<td><strong>Állapot</strong></td>
+<td>Elavult: A BPM folyamatábra összetevője várhatóan 2020-ban eltávolításra kerül. A következők funkciók nem lesznek elérhetők:
+<ul>
+<li>Minden folyamatábra csak olvasható, és nem érhető el szerkesztésre. A folyamatábra-tevékenységekhez társított alakzattulajdonságok sem lesznek elérhetők. Ezek a folyamatábrák tartalmazzák továbbá az alapértelmezett folyamatábrákat, amelyek automatikusan létrejönnek és a testreszabott folyamatábrákat, amelyeket az alapértelmezett folyamatábrák alapján módosítottak.</li>
+<li>A folyamat lépései csak olvashatók, és nem érhető el szerkesztésre.</li>     
+<li>Az örökölt illeszkedés-/hiányelemzés nem lesz elérhető. Ezért a program automatikusan nem hozhat létre vagy bocsájthat rendelkezésre exportáláshoz hiánylistát.
+<p><strong>Megjegyzés:</strong> Ez a funkció korábban már elavult és helyébe a Microsoft Azure DevOps integrációk léptek.</p>
+</li>
+<li>A folyamatábra verzióelőzményei nem lesznek elérhetők.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## <a name="finance-and-operations-1005-with-platform-update-29"></a>Finance and Operations 10.0.5 és 29-as platformfrissítés
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 62317f7e42c5392dce32a667f05f22e5c970abc7
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 0c1e6a9490fba0becb4840cbec9d04c22d482511
+ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5910015"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "6103168"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>Beszerzési rendelések bejövő rakományának kezelése a raktárban
 
@@ -127,7 +127,7 @@ Az alábbi táblázatban a **Terhelés túlbevételezése** mezőhöz rendelkez�
 | Érték | Leírás |
 |---|---|
 | Engedélyezés | A dolgozók regisztrálhatják azokat a mennyiségeket, amelyek meghaladják a fennmaradó nem regisztrált mennyiséget a kiválasztott rakományhoz, de csak akkor, ha a teljes regisztrált mennyiség nem haladja meg a rakományhoz társított beszerzésirendelés-sor mennyiségét (a túlszállítás százalék módosítását követően). |
-| Zárolás | <p>A dolgozók nem regisztrálhatják az olyan mennyiségek bevételezését, amelyek meghaladják a kiválasztott rakomány fennmaradó nem regisztrált mennyiségét (a túlszállítási százalékhoz igazítás után). Az a dolgozó, aki megpróbálja regisztrálni a beérkezőket hibaüzenetet kap, és mindaddig nem fog tudni folytatni, amíg nem jegyez be olyan mennyiséget, amely nem egyezik meg vagy nem kevesebb a fennmaradó nem regisztrált rakomány mennyiségénél.</p><p>Alapértelmezés szerint a program átmásolja a terhelési sor túlszállítási százalékértékét a kapcsolódó beszerzési rendelési sorból. Amikor a <b>Terhelés túlbevételezése</b> mező értéke <i>Zárolás</i>, a rendszer a túlszállítás százalékos értéke alapján számítja ki a terhelési sorhoz regisztrálható teljes mennyiséget. Ez az érték azonban a szükség esetén felülírható az egyes rakományokhoz. Ez a viselkedés akkor válik hasznossá, amikor olyan folyamatokat kap, amelyekben túlzott mennyiség, amely megfelel a túlszállítás százalékának aránytalanul van elosztva több rakomány között. Egy példaforgatókönyv:</p><ul><li>Több rakomány van egy beszerzésirendelés-sorhoz.</li><li>A beszerzési rendelés sorának túlszállítási százaléka több, mint 0 (nulla).</li><li>Mennyiségek lettek már regisztrálva van egy vagy több rakománnyal szemben a túlszállítási százalék figyelembe vétele nélkül.</li><li>A túlszállítási mennyiség a legutóbbi rakományhoz érkezik.</li></ul><p>Ebben a helyzetben egy mobileszköz csak akkor használható, ha az utolsó rakományhoz tartozó túlmennyiség regisztrálásához ha a raktári felügyelő a megfelelő terhelési sorhoz az alapértelmezett értékről olyan értékre növeli a túlszállítási százalékot, amely elég nagy ahhoz, hogy a teljes túlszállítás regisztrálható legyen a végső rakományhoz.</p> |
+| Zárolás | <p>A dolgozók nem regisztrálhatják az olyan mennyiségek bevételezését, amelyek meghaladják a kiválasztott rakomány fennmaradó nem regisztrált mennyiségét (a túlszállítási százalékhoz igazítás után). Az a dolgozó, aki megpróbálja regisztrálni a nyugtákat, hibaüzenetet kap, és mindaddig nem tudja folytatni a munkát, amíg nem regisztrál olyan mennyiséget, amely nem nagyobb a fennmaradó nem regisztrált rakomány mennyiségénél.</p><p>Alapértelmezés szerint a program átmásolja a terhelési sor túlszállítási százalékértékét a kapcsolódó beszerzési rendelési sorból. Amikor a <b>Terhelés túlbevételezése</b> mező értéke <i>Zárolás</i>, a rendszer a túlszállítás százalékos értéke alapján számítja ki a terhelési sorhoz regisztrálható teljes mennyiséget. Ez az érték azonban a szükség esetén felülírható az egyes rakományokhoz. Ez a viselkedés akkor válik hasznossá, amikor olyan folyamatokat kap, amelyekben túlzott mennyiség, amely megfelel a túlszállítás százalékának aránytalanul van elosztva több rakomány között. Egy példaforgatókönyv:</p><ul><li>Több rakomány van egy beszerzésirendelés-sorhoz.</li><li>A beszerzési rendelés sorának túlszállítási százaléka több, mint 0 (nulla).</li><li>Mennyiségek lettek már regisztrálva van egy vagy több rakománnyal szemben a túlszállítási százalék figyelembe vétele nélkül.</li><li>A túlszállítási mennyiség a legutóbbi rakományhoz érkezik.</li></ul><p>Ebben a helyzetben egy mobileszköz csak akkor használható, ha az utolsó rakományhoz tartozó túlmennyiség regisztrálásához ha a raktári felügyelő a megfelelő terhelési sorhoz az alapértelmezett értékről olyan értékre növeli a túlszállítási százalékot, amely elég nagy ahhoz, hogy a teljes túlszállítás regisztrálható legyen a végső rakományhoz.</p> |
 | Zárolás csak a lezárt rakományokhoz | A dolgozók túlfogadhatják a nyitott rakományokhoz tartozó rakománysor mennyiségeket, de olyan terhelésekhez nem, amelyek állapota _Fogadott_. |
 
 > [!NOTE]
@@ -216,7 +216,7 @@ További regisztrált rakománymennyiségek termékbevételezés-feladásához e
 
 ### <a name="post-registered-quantities-from-the-purchase-order-page"></a>Regisztrált mennyiségek feladása a Beszerzési rendelés oldalról
 
-Regisztrált mennyiségek termékbevételezés-feladásához a **Beszerzési rendelés** oldalról a felhasználó a következő feladatokat hajtja végre, mielőtt kiválasztja a **Termékbevételezés** műveletet:
+Ha regisztráció utáni mennyiségekhez szeretne nyugtát készíteni a **Beszerzési rendelés** oldalról, a felhasználónak végre kell hajtania a következő feladatokat, mielőtt kiválaszthatná a **Termékbevételezés** műveletet:
 
 - A **Mennyiség** mezőt a **Paraméterek** szakaszban a **Beállítások** lapon _Regisztrált mennyiség_ értékre állítja.
 - A **Termékbevételezés** mezőbe beírja a feladás során szerepeltetett beszerzési rendelések számát.
@@ -347,7 +347,7 @@ Amikor a rakomány megérkezik a raktárba, a fogadó adminisztrátor regisztrá
 
 1. Folytassa tovább a munkafolyamatot, hagyja üresen az összes többi mezőt, vagy állítsa be az alapértelmezett értékeket, amíg az eszköz tájékoztat arról, hogy a munka be van fejezve.
 
-A rakomány fogadása feladat befejeződött, és a fogadó adminisztrátor a következő feladatára léphet tovább. A raktári befogadó személyzet azonban egy idő után felülvizsgálja a rakomány rekordját, és látni fogja, hogy a bevételezett mennyiség kisebb, mint a várt mennyiség. Ezután a következő eljárást fogják végrehajtani a webes ügyfélprogrammal.
+A rakomány fogadása feladat befejeződött, és a fogadó adminisztrátor továbbléphet a következő feladatra. A raktári befogadó személyzet azonban egy idő után felülvizsgálja a rakomány rekordját, és látni fogja, hogy a bevételezett mennyiség kisebb, mint a várt mennyiség. Ezután a következő eljárást fogják végrehajtani a webes ügyfélprogrammal.
 
 1. Lépjen a **Raktárkezelés \> Rakományok \> Minden rakomány** elemhez.
 1. A listában keresse meg az imént fogadott rakományt. (Előfordulhat, hogy be kell jelölnie a **Lezártak megjelenítése** jelölőnégyzetet, hogy a _Szállítva_ állapotú bejövő rakományok is szerepeljenek.) Ezt követően a rakomány megnyitásához válassza ki a hivatkozást a **Rakomány azonosítója** oszlopban.

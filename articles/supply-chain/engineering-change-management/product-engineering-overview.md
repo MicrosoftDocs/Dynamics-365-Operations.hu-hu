@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: d7c0839ffbea80904ca12d1cba7ba9880f721cdd
-ms.sourcegitcommit: 57668404d61359b33e0c0280f2f7c4eb829b1ed2
+ms.openlocfilehash: d9430fe02abe58f37d2bfd1431b4da61527d0834
+ms.sourcegitcommit: 588f8343aaa654309d2ff735fd437dba6acd9d46
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "5947520"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6115049"
 ---
 # <a name="engineering-change-management-overview"></a>Tervezési változáskezelés áttekintése
 
@@ -50,15 +50,20 @@ Először kapcsolja be a funkciókat a következő lépések végrehajtásával.
 
 1. Ugorjon a [Funkciókezelés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) munkaterületre.
 1. Keressen frissítéseket.
-1. Kapcsolja be a **Mérnöki módosításkezelés** szolgáltatást.
-1. Ha használni szeretné, kapcsolja be a **Termékdimenzió verziója** nevű szolgáltatást is.
+1. Kapcsolja be a *Mérnöki módosításkezelés* szolgáltatást.
+1. Ha használni szeretné, kapcsolja be a *Termékdimenzió verziója* nevű szolgáltatást is.
 
 Ezután kapcsolja be a konfigurációs kulcsokat a következő lépések végrehajtásával.
 
 1. Állítsa a rendszert karbantartási módba a [Karbantartási mód](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md) alatt leírtak szerint.
 1. Lépjen a **Rendszerfelügyelet \> Beállítás \> Licenckonfiguráció** elemre.
 1. Bontsa ki a **Kereskedelem** csomópontot,
-1. A fő funkció konfigurációs kulcsának engedélyezéséhez jelölje be a **Mérnöki változások kezelése** jelölőnégyzetet. (Nem kell feltétlenül kibontania a csomópontot, hacsak nem szeretné letiltani az egyik vagy az összes alfunkcióját.)
+1. A fő funkció konfigurációs kulcsának engedélyezéséhez jelölje be a **Mérnöki változások kezelése** jelölőnégyzetet.
+1. Bontsa ki a **Tervezési változáskezelés** csomópontot, és szükség szerint jelölje be a következő jelölőnégyzeteket, vagy törölje belőlük a jelet (a használni kívánt funkcióktól függően):
+
+    - **Attribútumkeresés**  – az [attribútumkeresési funkció](engineering-attributes-and-search.md) engedélyezéséhez jelölje be ezt a jelölőnégyzetet. Javasoljuk, hogy engedélyezze ezt a funkciót; ha nem használja, akkor törölheti a jelölést ebből a jelölőnégyzetből.
+    - **Változáskezelés a folyamatszerű gyártáshoz** – jelölje be ezt a jelölőnégyzetet, ha a Tervezési változáskezelés funkcióival szeretné kezelni a folyamatszerű gyártáshoz használatos receptúrák módosításait. Ha nem kell receptúrákat kezelnie, akkor törölheti a jelet a jelölőnégyzetből. További tudnivalók: [Receptúrák és receptúra-összetevők változásainak kezelése](manage-formula-changes.md).
+
 1. Ha használni szeretné a verziódimenziót is, jelölje be a **Termékdimenzió – Verzió** jelölőnégyzetet is. (Ez a jelölőnégyzet a listában lejjebb van, nem a **Műszaki módosítások kezelése** csomópont alatt.)
 1. Kapcsolja ki a karbantartási módot a [Karbantartási mód](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md) alatt leírtak szerint.
 

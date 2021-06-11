@@ -2,26 +2,20 @@
 title: Kettős írás beállítása a Lifecycle Services szolgáltatásból
 description: Ez a témakör bemutatja, hogyan lehet kettős írású kapcsolatot beállítani a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásból.
 author: RamaKrishnamoorthy
-ms.date: 01/06/2020
+ms.date: 05/11/2021
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: e51b4ef1e309e5f89dc82a3776b88c505dc6593d
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: eb4170ef6cb09c862f6a4163670c519d5d8077fb
+ms.sourcegitcommit: 365092f735310990e82516110141d42aaf04e654
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748541"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "6103569"
 ---
 # <a name="dual-write-setup-from-lifecycle-services"></a>Kettős írás beállítása a Lifecycle Services szolgáltatásból
 
@@ -29,64 +23,48 @@ ms.locfileid: "5748541"
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Ez a témakör azt mutatja be, hogyan lehet beállítani egy kettős írási kapcsolatot egy új Finance and Operations környezet és egy új Dataverse környezet között a Microsoft Dynamics Lifecycle Services (LCS) megoldásból.
+Ez a témakör bemutatja, hogyan lehet engedélyezni a kettős írást a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásból.
 
 ## <a name="prerequisites"></a>Előfeltételek
 
-A kettős írási kapcsolatot csak akkor lehet létrehozni, ha Ön adminisztrátor.
+A következő témakörökben leírtak szerint végre kell hajtani a Power Platform-integrációt:
 
-+ Hozzáféréssel kell rendelkeznie a bérlőhöz.
-+ Mind a Finance and Operations, mind a Dataverse környezetek esetében adminisztrátornak kell lennie.
++ [Power Platform-integráció – engedélyezés a környezet telepítése során](../../power-platform/overview.md#enable-during-environment-deployment)
++ [Power Platform-integráció – beállítás a környezet telepítése után](../../power-platform/overview.md#set-up-after-environment-deployment)
 
-## <a name="set-up-a-dual-write-connection"></a>Kettős írási kapcsolat beállítása
+## <a name="set-up-dual-write-for-new-dataverse-environments"></a>Kettős írás beállítása az új Dataverse-környezetekhez
 
-A kettős írási kapcsolat beállításához kövesse az alábbi lépéseket.
+A kettős írás **Környezet részletes adatai** LCS-oldalról történő beállításához hajtsa végre a következő lépéseket:
 
-1. Az LCS_ben lépjen a projektjére.
-2. A **Konfigurálás** kiválasztásával új környezetet telepíthet.
-3. Válassza ki a verziót. 
-4. Válassza ki a topológiát. Ha csak egy topológia érhető el, akkor automatikusan ki van jelölve.
-5. Hajtsa végre a **Telepítési beállítások** varázsló első lépéseit.
-6. A **Dataverse** lapon tegye a következők egyikét:
+1. A **Környezet részletes adatai** oldalon bontsa ki a **Power Platform-integráció** szakaszt.
 
-    - Ha már egy Dataverse környezet létesítve van a bérlő számára, akkor kiválaszthatja azt.
+2. Kattintson a **Kettős írású alkalmazás** gombra.
 
-        1. Állítsa a **Dataverse** konfigurálása beállítást **Igen** értékre.
-        2. Az **Elérhető környezetek** oszlopban válassza ki azt a környezetet, amellyel integrálni szeretné a Finance and Operations-adatokat. A lista minden olyan környezetet tartalmaz, amelyen adminisztrátori jogosultságai vannak.
-        3. Jelölje be az **Elfogadom** jelölőnégyzetet, annak jelzéséhez, hogy elfogadja-e a feltételeket.
+    ![Power Platform-integráció](media/powerplat_integration_step2.png)
 
-        ![A Dataverse lap, ha már egy Dataverse környezet létesítve van a bérlő számára](../dual-write/media/lcs_setup_1.png)
+3. Olvassa el az Általános Szerződési Feltételeket, majd válassza a **Konfigurálás** lehetőséget.
 
-    - Ha a bérlő még nem rendelkezik Dataverse-környezettel, akkor az új környezet lesz létesítve.
+4. A folytatáshoz válassza az **OK** lehetőséget.
 
-        1. Állítsa a **Dataverse** konfigurálása beállítást **Igen** értékre.
-        2. Adja meg egy nevet a Dataverse környezetnek.
-        3. Válassza ki azt a régiót, amelybe a környezetet szeretné létesíteni.
-        4. Válassza ki a környezetre vonatkozó alapértelmezett nyelvet és pénznemet.
+5. A haladás nyomon követéséhez időnként frissítse a Környezet részletes adatai odalt. A telepítéshez általában nem kell 30 percnél hosszabb idő.  
 
-            > [!NOTE]
-            > Később nem módosíthatja a nyelvet és a pénznemet.
+6. Ha a telepítés befejeződött, egy üzenet tájékoztatja arról, hogy a folyamat sikeres volt-e, vagy történt-e hiba. Ha a beállítás sikertelen, erre vonatkozó hibaüzenet jelenik meg. Csak akkor léphet tovább a következő lépésre, ha kijavítja az esetleges hibákat.
 
-        5. Jelölje be az **Elfogadom** jelölőnégyzetet, annak jelzéséhez, hogy elfogadja-e a feltételeket.
+7. Válassza az **Összekapcsolás Power Platform-környezettel** a Dataverse és az aktuális környezet adatbázisainak összekapcsolásához. Ehhez általában nem kell 5 percnél hosszabb idő.
 
-        ![A Dataverse lap, amikor a bérlő még nem rendelkezik Dataverse-környezettel](../dual-write/media/lcs_setup_2.png)
+    :::image type="content" source="media/powerplat_integration_step3.png" alt-text="Összekapcsolás Power Platform-környezettel":::
 
-7. Hajtsa végre a **Telepítési beállítások** varázsló fennmaradó lépéseit.
-8. Miután a környezet állapota már **Telepített**, nyissa meg a környezeti részletek lapot. Az **Power Platform Integráció** szakasz az összekapcsolt Finance and Operations környezet és Dataverse környezet nevét jeleníti meg.
+8. Ha befejeződött az összekapcsolás, megjelenik egy hivatkozás. A hivatkozásra kattintva jelentkezzen be a Finance and Operations-környezet kettős íráshoz használatos felügyeleti területére. Itt beállíthatja az entitások leképezését.
 
-    ![Power Platform Integráció szakasz](../dual-write/media/lcs_setup_3.png)
+## <a name="set-up-dual-write-for-an-existing-dataverse-environment"></a>Kettős írás beállítása meglévő Dataverse-környezetekhez
 
-9. A Finance and Operations környezethez tartozó adminisztrátornak be kell jelentkeznie a LCS-be, és ki kell választania a **CDS csatolása alkalmazásokhoz** hivatkozást az összekapcsolása befejezéséhez. A környezeti részletek lap az adminisztrátor kapcsolattartási adatait jeleníti meg.
+Ha meglévő Dataverse-környezetben szeretne kettős írást beállítani, [támogatási jegyet](../../lifecycle-services/lcs-support.md) kell küldenie a Microsoftnak. A jegynek a következőket kell tartalmaznia:
 
-    Az összekapcsolás befejezését követően a program frissíti a állapotot **Környezet-összekapcsolás sikeresen befejezve** értékre.
-
-10. Az **Adatintegrációs** munkaterület megnyitásához a Finance and Operations környezetben és a rendelkezésre álló sablonok ellenőrzéséhez válassza a **CDS csatolása alkalmazásokhoz** lehetőséget.
-
-    ![A CDS csatolása alkalmazásokhoz gomb az Power Platform Integráció területen](../dual-write/media/lcs_setup_4.png)
++ A Finance and Operations-környezet azonosítója.
++ A környezet neve a Lifecycle Services szolgáltatásból.
++ A Dataverse-szervezetazonosító, vagy a Power Platform-környezetazonosító a Power Platform Adminisztrációs központjából. A jegyben kérje, hogy az azonosító legyen a Power Platform-integrációhoz használt példány.
 
 > [!NOTE]
 > A környezetek nem csatolhatók le az LCS használatával. Egy környezet kapcsolatának megszüntetése érdekében nyissa meg az **Adatintegráció** munkaterületet a Finance and Operations környezetben , majd válassza a **Csatolás megszüntetése** parancsot.
-
-
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

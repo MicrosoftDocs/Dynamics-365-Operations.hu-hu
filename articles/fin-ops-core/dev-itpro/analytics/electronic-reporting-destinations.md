@@ -2,7 +2,7 @@
 title: Elektronikus jelentéskészítés (ER) céljai
 description: Ez a témakör az Elektronikus jelentéskészítés rendeltetési helyeinek kezelésével, a támogatott célhelyek típusaival, valamint a biztonsági szempontokkal kapcsolatban tartalmaz tájékoztatást.
 author: nselin
-ms.date: 02/24/2021
+ms.date: 05/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: fe0c3bc94359c7e6a3eb2476b8096a8a2339ee9d
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 088f1b13e20602345dbec5179c343e27be9cec44
+ms.sourcegitcommit: 2cd82983357b32f70f4e4a0c15d4d1f69e08bd54
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893604"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "6085500"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Elektronikus jelentéskészítés (ER) céljai
 
@@ -199,6 +199,34 @@ Ha Excel-formátumban generál egy Elektronikus jelenrés konfigurációt, és P
 > A kiválasztott laptájolás minden olyan ER-konfigurációra vonatkozik, amely Excel-formátumban jön létre, majd PDF formátumra lesz konvertálva.
 >
 > Ha egy Word-formátumú ER-konfigurációt konvertálnak PDF-formátumban, akkor a program a Word-dokumentumból veszi át a PDF-dokumentum laptájolását.
+
+## <a name="output-unfolding"></a>Kimenet kibontása
+
+Amikor az elektronikus jelentéskészítési formátum **Mappa** összetevőjéhez konfigurál egy célhelyet, megadhatja, hogy az összetevő kimenete hogyan legyen kézbesítve a konfigurált célhelyre.
+
+### <a name="make-output-unfolding-available"></a>Kimenet kibontásának elérhetővé tétele
+
+A kimenet kibontására szolgáló aktuális Finance-példányban való elérhetővé tételéhez nyissa meg a **Funkciókezelés** munkaterületet, és kapcsolja be **Az elektronikus jelentéskészítés célhelyeinek engedélyezése a mappák tartalmának külön fájlba való küldéséhez** funkciót.
+
+### <a name="applicability"></a>Alkalmazhatóság
+
+A kimenet kibontása beállítás csak a **Mappa** típus formátumösszetevőihez konfigurálható. Amikor megkezdi egy **Mappa** összetevő konfigurálását, az **Általános** gyorslap elérhetővé válik az **Elektronikus jelentéskészítés célja** oldalon. 
+
+### <a name="use-the-output-unfolding-option"></a>A kimenet kibontásának használata
+
+Az **Általános** gyorslap **Mappa küldése a következőként** mezőjében válassza ki a következő értékek valamelyikét:
+
+- **ZIP-archívum** – A létrehozott fájl zip-fájlként kézbesíti.
+- **Külön fájlok** – Egy létrehozott zip-fájl összes létrehozott fájlját külön fájlként kézbesíti.
+
+    > [!NOTE]
+    > Ha a **Külön fájlok** beállítást választja, a létrehozott kimenetet tömörített állapotban tárolja a rendszer a memóriában. Emiatt a rendszer maximális [fájlméretet](er-compress-outbound-files.md) alkalmaz a tömörített kimenetre, ha a valós fájlméret meghaladhatja ezt a maximális korlátot. Azt javasoljuk, hogy akkor válassza ezt az értéket, ha a létrehozott kimenet várhatóan túl nagy lesz.
+
+[![Célhely konfigurálása Mappa formátum-összetevőhöz](./media/er_destinations-set-unfolding-option.png)](./media/er_destinations-set-unfolding-option.png)
+
+### <a name="limitations"></a>Korlátozások
+
+Ha a **Mappa küldése a következőként** mezőben a **Külön fájlok** értéket adja meg a más beágyazott **Mappa** összetevőket tartalmazó **Mappa** összetevőhöz, akkor a rendszer nem alkalmazza a beállítást rekurzív módon a többi **Mappa** összetevőre.
 
 ## <a name="security-considerations"></a>Biztonsági megfontolások
 

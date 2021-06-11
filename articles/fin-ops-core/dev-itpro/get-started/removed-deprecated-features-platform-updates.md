@@ -2,7 +2,7 @@
 title: Eltávolított vagy elavult Platform-funkciók
 description: Ez a témakör azokat a funkciókat ismerteti, amelyek el lettek távolítva a platformfrissítésekben a Finance and Operations alkalmazásokból vagy az eltávolításuk be van tervezve.
 author: sericks007
-ms.date: 02/16/2021
+ms.date: 05/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 782a147794bc30251ad60f5d788d1255a9d02b5f
-ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
+ms.openlocfilehash: 435f7f0090ca16a9e8cfee2d1ceb65bec8457d09
+ms.sourcegitcommit: eff3da7ea98758f100d44ff7feec17157afc2e80
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "5923538"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "6111724"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Eltávolított vagy elavult Platform-funkciók
 
@@ -31,6 +31,19 @@ Ez a témakör azokat a funkciókat ismerteti, amelyek el lettek távolítva a p
 Ez a lista segít figyelembe venni az elavult és eltávolított szolgáltatásokat a saját tervezése elősegítésére. 
 
 A Finance and Operations alkalmazások objektumaival kapcsolatban a [Technikai referenciajelentésekben](/dynamics/s-e/global/axtechrefrep_61) talál részletes információkat. Ezen jelentések különböző verzióit összehasonlíthatja, hogy megismerje azokat az objektumokat, melyek módosítva lettek vagy el lettek távolítva a Finance and Operations alkalmazások egyes verzióiban.
+
+## <a name="feature-deprecation-notice-effective-may-2021"></a>Funkciók eltávolításával kapcsolatos értesítés; 2021 májusától érvényes
+
+### <a name="globalization-portal-in-lifecycle-services-lcs"></a>A Lifecycle Services (LCS) globalizációs portálja
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | Az LCS globalizációs portálja elavult, mert ezt a funkciót már más LCS-alapú szolgáltatások biztosítják. |
+| **Felváltotta másik szolgáltatás?**   | Igen, ennek a funkciónak az LCS [Megoldáskereső](../lifecycle-services/issue-search-lcs.md) és [a Dynamics szabályozó figyelmeztetések külésére szolgáló szolgáltatása](../lcs-solutions/submit-localization-alerts.md) lépett a helyére. |
+| **Érintett területek**         | Az LCS globalizációs portálja|
+| **Telepítési beállítás**              | Felhőbeli telepítés |
+| **Állapot**                         | Elavult: A tervezett eltávolítási dátum 2022 májusa. |
+
 
 ## <a name="feature-removed-effective-january-28-2021"></a>A funkció eltávolítva 2021. január 28-án
 
@@ -56,7 +69,7 @@ A Finance and Operations alkalmazások objektumaival kapcsolatban a [Technikai r
 | **Felváltotta másik szolgáltatás?**   | A Visual Studio 2017 váltja a Visual Studio 2015 verziót a telepített és szükséges verzióként. |
 | **Érintett területek**         | Visual Studio fejlesztőeszközök |
 | **Telepítési beállítás**              | Összes |
-| **Állapot**                         | Elavult. Frissítéskor a korábbi X++ eszközök törlődnek a Visual Studio 2015-ből, és a frissített eszközöket nem telepíti a rendszer a Visual Studio 2015-re. Ez nincs hatással a tárolt buildekre. Buildelt virtuális gépek esetében a buildelési folyamatot (builddefiníciót) manuálisan kell frissíteni, hogy a függőség az MSBuild 14.0 (Visual Studio 2015) verzióról az MSBuild 15.0 (Visual Studio 2017) módosuljon, lásd: [Örökölt folyamat frissítése az Azure Pipelines szolgáltatásban](../dev-tools/pipeline-msbuild-update.md). |
+| **Állapot**                         | Elavult: Frissítéskor a korábbi X++-eszközök törlődnek a Visual Studio 2015-ből, és a frissített eszközöket nem telepíti a rendszer a Visual Studio 2015-ön. Ez nincs hatással a tárolt buildekre. Buildelt virtuális gépek esetében a buildelési folyamatot (builddefiníciót) manuálisan kell frissíteni, hogy a függőség az MSBuild 14.0 (Visual Studio 2015) verzióról az MSBuild 15.0 (Visual Studio 2017) módosuljon, lásd: [Örökölt folyamat frissítése az Azure Pipelines szolgáltatásban](../dev-tools/pipeline-msbuild-update.md). |
 
 ### <a name="user-avatar"></a>Felhasználó 
 
@@ -76,7 +89,7 @@ A Finance and Operations alkalmazások objektumaival kapcsolatban a [Technikai r
 | **Felváltotta másik szolgáltatás?**   | Nincs |
 | **Érintett területek**         | Webes ügyfél |
 | **Telepítési beállítás**              | Összes |
-| **Állapot**                         | Elavult. Az összes EP-kód eltávolítása a 2021. októberi kiadásban van ütemezve. |
+| **Állapot**                         | Elavult: Az összes EP-kód eltávolítása a 2021. októberi kiadásban van ütemezve. |
 
 ## <a name="platform-updates-for-version-10015-of-finance-and-operations-apps"></a>Platform-frissítések az Finance and Operations alkalmazások 10.0.15 verziójához
 
@@ -88,7 +101,7 @@ A Finance and Operations alkalmazások objektumaival kapcsolatban a [Technikai r
 | **Felváltotta másik szolgáltatás?**   | Azt ajánljuk, hogy a vevők térjenek át a Microsoft Edgere.|
 | **Érintett területek**         | Az összes Dynamics 365 termék |
 | **Telepítési beállítás**              | Összes|
-| **Állapot**                         | Elavult. Az Internet Explorer 11 támogatottsága 2021. augusztus után megszűnik.|
+| **Állapot**                         | Elavult: Az Internet Explorer 11 támogatása 2021. augusztusban megszűnik.|
 
 
 ### <a name="visual-studio-add-in-to-apply-metadata-hotfixes"></a>Visual Studio-bővítmény a metaadatok gyorsjavításának alkalmazásához
@@ -181,7 +194,7 @@ A Finance and Operations alkalmazások objektumaival kapcsolatban a [Technikai r
 | **Felváltotta másik szolgáltatás?**   | További információ: [Azure Active Directory feltételez hozzáférés konfigurálása](/appcenter/general/configuring-aad-conditional-access).|
 | **Érintett területek**         | Biztonság |
 | **Telepítési beállítás**              | Felhőbeli |
-| **Állapot**                         | **Elavult:** Ez a funkció teljes mértékben elavult az önkiszolgáló telepítések esetében. |
+| **Állapot**                         | Elavult: Ez a funkció teljes mértékben elavult az önkiszolgáló telepítések esetében. |
 
 ### <a name="visual-studio-2015"></a>Visual Studio2015
 
@@ -201,7 +214,7 @@ A Finance and Operations alkalmazások objektumaival kapcsolatban a [Technikai r
 | **Felváltotta másik szolgáltatás?**   | Ez a fordítóhiba véglegesen lecseréli a fordítói figyelmeztetését.  |
 | **Érintett területek**         | Visual Studio fejlesztőeszközök |
 | **Telepítési beállítás**              | Összes |
-| **Állapot**                         | **Elavult:** A fordítói figyelmeztetés fordítói hiba a Finance and Operations alkalmazások 10.0.11 verziójának platformfrissítéseiben. |
+| **Állapot**                         | Elavult: A fordítói figyelmeztetés fordítói hiba a Finance and Operations-alkalmazások 10.0.11 verziójának platformfrissítéseiben. |
 
 ### <a name="isv-licenses-created-by-using-the-sha1-hashing-algorithm"></a>Az SHA1 kivonatolási algoritmussal létrehozott ISV-licencek
 
@@ -211,7 +224,7 @@ A Finance and Operations alkalmazások objektumaival kapcsolatban a [Technikai r
 | **Felváltotta másik szolgáltatás?**   | Igen. Licencek létrehozása a Windows PowerShell használatával. |
 | **Érintett területek**         | Visual Studio fejlesztőeszközök |
 | **Telepítési beállítás**              | Összes |
-| **Állapot**                         | <strong>Elavult:</strong> Az SHA1 kivonatolási algoritmussal létrehozott ISV-licencek. Ez az algoritmus a MakeCert segédprogrammal létrehozott tanúsítványokra épített, és ez a segédprogram elavult.<p><strong>Elavult:</strong> Az SHA1 használata biztonsági vagy kivonatolási célokra. Az SHA1 2021 elejétől nem működik majd. Ezért a továbbiakban nem használható.<p><strong>Eltávolítva</strong> : A Transport Layer Security (TLS) 1.0 és TLS 1.1 támogatása a bejövő vagy kimenő kérésekhez. |
+| **Állapot**                         | Elavult: Az SHA1 kivonatolási algoritmussal létrehozott ISV-licencek. Ez az algoritmus a MakeCert segédprogrammal létrehozott tanúsítványokra épített, és ez a segédprogram elavult.<br><br>Elavult: Az SHA1 használata biztonsági vagy kivonatolási célokra. Az SHA1 2021 elejétől nem működik majd. Ezért a továbbiakban nem használható.<br><br>Eltávolítva : A Transport Layer Security (TLS) 1.0 és TLS 1.1 támogatása a bejövő vagy kimenő kérésekhez. |
 
 ## <a name="platform-update-32"></a>Platform update 32
 

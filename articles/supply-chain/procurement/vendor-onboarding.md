@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 12be18aa245757991daa418d5875d7497939d223
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5c038462bb84c7fe68acc3825482286581e55358
+ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5841431"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "6103070"
 ---
 # <a name="onboard-vendors"></a>Szállítók felvétele
 
@@ -33,7 +33,7 @@ A folyamat az alábbi lépésekből áll, amik közben a különböző szerepek 
 1. **Adatkezelés OData** – Entitásimportálás - Az eredeti kérelem a potenciális szállító regisztrációs kérelme. A kérés általában olyan forrásból jön, amely engedélyezi a névtelen hozzáférést, mint például egy vevő által üzemeltetett webhely. A szállítók regisztrálhatnak az alapvető adatok megadása által, mint például a szállító neve, indoklása, szervezeti száma, és a kapcsolattartó személy neve és e-mail címe. A kérelmek importálása az adatkezelési felületen keresztül történik.
 2. **Potenciális szállító regisztrációs kérelmének listaoldala** - A potenciális szállító regisztrációs kérelmében megadott információk alapján egy beszerző eldönti, hogy fel kell-e venni a szállítót. A beszerző megtekinti a beérkező kérelmet a **Potenciális szállító regisztrációs kérelmei** listaoldalon.
 3. **Felhasználólétesítési munkafolyamat** – Ha a beszerző ellenőrizte az beérkező kérelemben található információkat és a felvételi folyamat folytatása mellett döntött, akkor a felhasználói kérelem munkafolyamat egy új felhasználót létesít, és küld egy meghívó e-mailt a kapcsolattartó személy hitelesített Microsoft Dynamics 365 felhasználóként való elfogadásának érdekében.
-4. **Szállító regisztrációs varázsló** – a szállító kapcsolattartója bejelentkezik az új felhasználói fiók használatával. Ő befejezi a szállító regisztrációs varázslót, és ezzel olyan információkat nyújt, mint a címek, az üzleti adatok, a beszerzési kategóriák és a kérdőívekre adott válaszok.
+4. **Szállító regisztrációs varázsló** – a szállító kapcsolattartója bejelentkezik az új felhasználói fiók használatával. Befejezi a szállítói regisztrációs varázslót, és ezzel olyan információkat ad meg, mint a címek, az üzleti adatok, a beszerzési kategóriák és a kérdőívekre adott válaszok.
 5. **Jóváhagyási munkafolyamat** - Egy olyan szállítókérés jön létre, amely tartalmazza a regisztrációs információkat. A rendszer ezt a szállítókérést egy munkafolyamathoz küldi, és továbbítja felülvizsgálat és jóváhagyás céljából.
 6. **Szállítói alapadatok létrehozása és a felhasználói szerepkör módosítása** - Ha a szállítókérés jóváhagyásra kerül, akkor egy új szállítói rekord jön létre. A szállító kapcsolattartójának felhasználói fiókja vagy megkapja a szállítói együttműködési engedélyt, vagy inaktiválásra kerül.
 
@@ -72,7 +72,7 @@ A potenciális szállító regisztrációs kérelmének importálása után az m
 
 ## <a name="submitting-a-prospective-vendor-user-request"></a>Potenciális szállító felhasználói kérelmének elküldése
 
-A potenciális szállító felhasználói kérelmének célja az eredeti kérést küldő személy létesítése, hogy ő bejelentkezhessen a Supply Chain Management rendszerbe a potenciális szállító regisztrációs kérelmében megadott e-mail-fiók használatával.
+A potenciális szállító felhasználói kérelmének célja az eredeti kérést küldő személy ellátása, hogy ő bejelentkezhessen a Supply Chain Management rendszerbe a potenciális szállító regisztrációs kérelmében megadott e-mail-fiók használatával.
 
 A potenciális szállító felhasználói kérelmét a felhasználói kérelem munkafolyamata dolgozza fel. Ez a munkafolyamat az Azure AD B2B együttműködésen keresztül kommunikál. Egy olyan felhasználót hoz létre a Supply Chain Management rendszerben, amely rendelkezik a megfelelő biztonsági beállításokkal.
 
@@ -87,7 +87,7 @@ Az e-maillel, és általában a munkafolyamat konfigurációjával kapcsolatos i
 
 ## <a name="vendor-registration"></a>Szállító regisztrálása
 
-A Supply Chain Management rendszerbe bejelentkező potenciális szállítói felhasználó a szállítói regisztrációs varázsló első oldalát láthatja, ahol ő megadhatja a szállító információit.
+A Supply Chain Management rendszerbe bejelentkező potenciális szállítói felhasználó a szállítói regisztrációs varázsló első oldalát láthatja, ahol megadhatja a szállító információit.
 
 A varázsló tükrözi a szállítói kérelem konfigurációját. Az ország vagy régió, ahol a szállító dolgozik meghatározza, hogy a varázsló milyen adatokat kérvényez, és milyen adatokat kötelező megadni.
 

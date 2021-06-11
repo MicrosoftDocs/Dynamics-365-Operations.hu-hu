@@ -15,16 +15,18 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bf3b842f018b4386d5ab4769143d4f7f0907873e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: bd30e7128c688a0880727380e601069a95a28dcd
+ms.sourcegitcommit: eff3da7ea98758f100d44ff7feec17157afc2e80
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5841261"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "6111694"
 ---
 # <a name="vendor-invoices-overview"></a>Szállítói számlák áttekintése
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
+
 
 Ez a témakör a szállítói számlákkal kapcsolatos általános információkat tartalmazza. A szállítói számlák a bevételezett termékekért és szolgáltatásokért cserébe igényelt kifizetés kérelmei. A szállítói számlák vonatkozhatnak már folyamatban lévő szolgáltatásokra, vagy bizonyos termékek és szolgáltatások esetén beszerzési rendeléseken is alapulhatnak.
 
@@ -71,7 +73,9 @@ A következőkben többféle módot ismerhet meg, amelyekkel megakadályozhatja,
 
 - **A számla nem hozzárendelt költségeket tartalmaz.** A számlát benyújtó személy figyelmeztetést kap, hogy a számlán hozzárendeletlen költségek találhatók, így a számlának a munkafolyamatba való újraküldése előtt javítani tudja a számlát. Ez a funkció akkor érhető el , ha a **Munkafolyamatba küldés tiltása, ha a szállítói számlán hozzárendeletlen költéségek találhatók** paraméter a **Funkciókezelés** oldalon be van kapcsolva.
 
-- **A számla sorszáma megegyezik egy másik feladott számla sorszámával.** A számlát benyújtó személy figyelmeztetést kap, hogy a számlán duplikált sorszám található, így a számlának a munkafolyamatba való újraküldése előtt javítani tudja azt. Ez a figyelmeztetés akkor jelenik meg, ha a Kötelezettségek pont **Használt számlaszám ellenőrzése** paraméterének beállítása **Ismétlődések tiltása**. Ez a funkció akkor érhető el **Munkafolyamatba küldés tiltása, ha a számlaszám már létezik egy feladott számlán, és az Ön rendszere nincs beállítva ismétlődő számlaszámok fogadására** paraméter a **Funkciókezelés** oldalon be van kapcsolva.  
+- **A számla sorszáma megegyezik egy másik feladott számla sorszámával.** A számlát beküldő személy üzenetet kap, amely tájékoztatja, hogy ismétlődő számú számla található. Az ismétlődő szám a számla munkafolyamatba való újrabevallása előtt kijavítható. Ez a figyelmeztetés akkor jelenik meg, ha a Kötelezettségek pont **Használt számlaszám ellenőrzése** paraméterének beállítása **Ismétlődések tiltása**. Ez a funkció akkor érhető el **Munkafolyamatba küldés tiltása, ha a számlaszám már létezik egy feladott számlán, és az Ön rendszere nincs beállítva ismétlődő számlaszámok fogadására** paraméter a **Funkciókezelés** oldalon be van kapcsolva.
+
+- **A számla olyan sort tartalmaz, ahol a számlázott mennyiség kisebb, mint az egyező termékbevételezési mennyiség.** A számlát beküldő vagy feladni próbáló személy üzenetet kap arról, hogy a mennyiségek nem egyeznek. Az üzenet lehetőséget biztosít az értékeknek a számla munkafolyamatba való újbóli beküldése előtti korrigálására. Ez a funkció akkor áll rendelkezésre, ha a **Szállítói számlák munkafolyamatba történő benyújtásának és feladásának blokkolása** paraméter be van kapcsolva a **Funkciókezelés** oldalon, és a **Munkafolyamatba történő benyújtás és feladás blokkolása** paraméter be van kapcsolva a **Kötelezettségek paraméterei** oldalon.  
 
 ## <a name="matching-vendor-invoices-to-product-receipts"></a>Szállítói számlák egyeztetése a termékbevételezésekkel
 

@@ -2,7 +2,7 @@
 title: Keresési eredmények modul
 description: Ez a témakör a keresési eredmények modulokkal foglalkozik, és bemutatja, hogy hogyan lehet őket hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: anupamar-ms
-ms.date: 01/28/2021
+ms.date: 05/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 3409e9e99329def55b173eb78cf03db4a6764c92
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 645022000d8746db3793a8a8611ab8f17c7bcc6e
+ms.sourcegitcommit: 53b797ff1b524f581046b48cdde42f50b37495bc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5794115"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6117133"
 ---
 # <a name="search-results-module"></a>Keresési eredmények modul
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Ez a témakör a keresési eredmények modulokkal foglalkozik, és bemutatja, hogy hogyan lehet őket hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
 
@@ -51,9 +52,12 @@ Az alábbi táblázat felsorolja a keresési eredmények modulok tulajdonságait
 | Kategóriahierarchia megjelenítésének elrejtése | **Igaz** vagy **Hamis** | Ha ez a tulajdonság **Igaz**, a kategóriahierarchia nem jelenik meg az oldalon. Ha az [útvonalkövető modult](add-breadcrumb.md) használja a kategóriahierarchia megjelenítéséhez, ezt a tulajdonságot **Igaz** értékre kell beállítani.|
 | Termékattribútumok hozzáadása a keresési eredményekhez | **Igaz** vagy **Hamis** | Ha a tulajdonság értéke **Igaz**, a keresési eredmények megjelenítik a termékek attribútumait. Bár ezek az attribútumok a Commerce webhelyen is megjeleníthetők, bővítményre van szükség.|
 | Fiókárak megjelenítése | **Igaz** vagy **Hamis** | Ha ez a tulajdonság **Igaz**, a termékek fiókárai megjelennek a keresési eredményekben, amikor egy bejelentkezett felhasználó tallóz az oldalon. |
+| A finomító panel frissítése | **Igaz** vagy **Hamis** | Ha ennek a tulajdonságnak az értéke **Igaz**, akkor a finomító panel frissül a finomítók kiválasztásakor. Ebben a módban a finomító panel frissítése esetén bizonyos többszörös kiválasztású finomítók úgy fognak viselkedni, mint az egyszeres kiválasztású finomítók. |
 
 > [!IMPORTANT]
-> A Dynamics 365 Commerce 10.0.16-os és későbbi kiadásában a **Fiókárak megjelenítése** konfiguráció használható a fiókárak oldalon történő megjelenítésére.
+> A Commerce 10.0.16-os és későbbi kiadásában a **Fiókárak megjelenítése** konfiguráció használható a fiókárak oldalon történő megjelenítésére.
+>
+> A Commerce 10.0.20-as és újabb kiadásában **A finomító panel frissítése** konfigurációval frissíthető a finomító panel a finomító kiválasztásakor.
 
 ## <a name="supported-modules"></a>Támogatott modulok
 

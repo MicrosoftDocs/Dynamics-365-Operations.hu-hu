@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 36eb939d2539653fdcde78a6044cf1a87e8e3280
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: cf9d3fd905a90a2937bfac97c8e44ea13be4f42e
+ms.sourcegitcommit: 16376a301a0f121f384d77f9976638f701f8e88e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811387"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6123390"
 ---
 # <a name="cash-position-preview"></a>Készpénzpozíció (előzetes verzió)
 
@@ -31,7 +31,7 @@ A készpénzpozíció a pénzforgalom előrejelzése, amely a közeljövőben v�
 
 Amikor a rendszer vevői kifizetéseket jósol, a kifizetési előrejelzéseket a vevői kifizetési előrejelzés funkcióból veszi át. A kifizetési előrejelzések nélkül a vevői számla minden vevő számára történő kifizetéséhez szükséges átlagos időt kell használni a kifizetés dátumának kiszámításához. Kinnlévő vevői rendeléseknél a rendszer a számlázási dátumot a vevők által számlázott rendelési sorok átlagos számának alapján számítja ki. Ezt követően a számla dátumát használja a fizetési előrejelzési funkció bemenetként. A vevői kifizetési előrejelzés funkció minden rendelési sorhoz kiszámítja a fizetési dátumot. 
 
-<*Szükség van a Jarek vagy Dave szövegére a kifizetési előrejelzések dátumra történő átváltásához*> A kinnlévő számlák kifizetési dátumának közelítési [*becslése*] a kifizetési előrejelzések alapján azzal, hogy kitárol egy dátumot, amely megfelel az előre jelzett gyűjtő valószínűségével kapott halmozott elosztási funkció ötvenedik százalékos értékének.
+A kinnlévő számlák kifizetési dátumának becslése a kifizetési előrejelzések alapján úgy, hogy választ egy olyan dátumot, amely megfelel az előrejelzett gyűjtő valószínűsége alapján kapott kumulatív elosztási függvény ötvenedik percentilisének.
 
 Hasonló megközelítést alkalmaz a szállítóknak történő kifizetések előrejelzésére. A rendszer minden szállítónál kiszámítja a szállítói számla kifizetéshez történő átalakításához szükséges átlagos időt. A napok számát ezután arra használják, hogy kiszámolják a kifizetés dátumát. A nyitott szállítói rendelések esetében a rendszer a számlázási dátumot úgy számolja ki, hogy figyelembe veszi, hogy hány nap szükséges a rendelési sorok számlára való átalakításához az egyes szállítóknál. A rendszer ezután kiszámítja a kifizetési dátumot minden szállítói számla kifizetéshez történő átalakítás átlagos idejének felhasználásával.
 

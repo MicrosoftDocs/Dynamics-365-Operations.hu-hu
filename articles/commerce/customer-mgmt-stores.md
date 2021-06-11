@@ -2,7 +2,7 @@
 title: Vevők kezelése az üzletekben
 description: Ez a témakör bemutatja, hogyan engedélyezhetik a kiskereskedők a vevőkezelési képességeket a pénztárnál (POS) a Microsoft Dynamics 365 Commerce szolgáltatásban.
 author: josaw1
-ms.date: 03/05/2021
+ms.date: 05/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: e43f8f5b91f729dc93eccb9e9e4ee21b5a5d1596
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: dd17593d84a8bf262712a84b11829f8ec6c49049
+ms.sourcegitcommit: c5c8f19a696ad4a3d68dffd63bfe7b484b999d2b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019987"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "6097208"
 ---
 # <a name="customer-management-in-stores"></a>Vevők kezelése az üzletekben
 
@@ -35,7 +35,10 @@ Az értékesítési munkatárs másodlagos e-mail-címeket és telefonszámokat 
 
 ## <a name="default-customer-properties"></a>Alapértelmezett vevőtulajdonságok
 
-A kiskereskedők használhatják az **Összes üzlet** oldalt a Commerce központi felületén (**Retail és Commerce \> Csatornák \> Üzletek**) arra, hogy egy alapértelmezett vevőt társítsanak az egyes üzletekhez. A Commerce rendszer ezután átmásolja az alapértelmezett vevőhöz meghatározott tulajdonságokat az összes létrehozott új vevőrekordba. Például a **Vevő létrehozása** párbeszédpanelen azok a tulajdonságok jelennek meg, amelyek az üzlethez társított alapértelmezett vevőhöz vannak társítva. Ilyen tulajdonságok például a vevő típusa, a vevőcsoport, a kívánt nyugta, a pénznem és a nyelv. A fiókok (vevői csoportok) is az alapértelmezett vevőtől öröklődnek. A pénzügyi dimenziók azonban attól a vevői csoporttól öröklődnek, amely az alapértelmezett vevőhöz van társítva, nem pedig magától az alapértelmezett vevőtől.
+A kiskereskedők használhatják az **Összes üzlet** oldalt a Commerce központi felületén (**Retail és Commerce \> Csatornák \> Üzletek**) arra, hogy egy alapértelmezett vevőt társítsanak az egyes üzletekhez. A Commerce rendszer ezután átmásolja az alapértelmezett vevőhöz meghatározott tulajdonságokat az összes létrehozott új vevőrekordba. Például a **Vevő létrehozása** párbeszédpanelen azok a tulajdonságok jelennek meg, amelyek az üzlethez társított alapértelmezett vevőhöz vannak társítva. Ilyen tulajdonságok például a **vevő típusa**, a **vevőcsoport**, a **nyugta beállítása**, a **nyugtaként kapott e-mail**, a **pénznem** és a **nyelv**. A **fiókok** (vevői csoportok) is az alapértelmezett vevőtől öröklődnek. A **pénzügyi dimenziók** azonban attól a vevői csoporttól öröklődnek, amely az alapértelmezett vevőhöz van társítva, nem pedig magától az alapértelmezett vevőtől.
+
+> [!NOTE]
+> A **nyugtaként kapott e-mail** értékét csak akkor az alapértelmezett vevőtől másolja át a rendszer, ha az újonnan létrehozott vevőknél nem áll rendelkezésre a nyugtaként kapott e-mail azonosítója. Ez azt jelenti, hogy ha az alapértelmezett vevőnél megtalálható a nyugtaként kapott e-mail azonosítója, akkor az e-kereskedelmi webhelyről létrehozott valamennyi vevő a nyugtaként kapott e-mail ugyanazon azonosítóját fogja kapni, mivel a felhasználói felületen nem rögzíthető a nyugtaként kapott e-mail vevőtől származó azonosítója. Javasoljuk, hogy az üzlet alapértelmezett vevőjénél tartsa üresen a **nyugtaként kapott e-mail** mezőt. Csak olyan üzleti folyamat esetén használja ezt a mezőt, amelynél szükség van a nyugtához tartozó e-mail-címre. 
 
 Az értékesítési munkatársak több címet is rögzíthetnek egy vevőhöz. A vevő neve és telefonszáma az egyes címekhez társított kapcsolattartási adatokból öröklődik. A vevőrekord **Címek** gyorslapja tartalmaz egy **Cél** mezőt, amelyet az értékesítési munkatársak módosíthatnak. Ha a vevő típusa **Személy**, az alapértelmezett érték a **Kezdőlap**. Ha a vevő típusa **Szervezet**, az alapértelmezett érték a **Vállalat**. A mező által támogatott egyéb értékek közé tartozik a **Kezdőlap**, az **Iroda** és a **Postaláda**. A cím **Ország** mezőjének értéke abból az elsődleges címből öröklődik, amely a Commerce központi felületében az **Üzemi egység** oldalon van megadva a **Szervezeti adminisztráció \> Szervezetek \> Üzemi egységek** pontban.
 

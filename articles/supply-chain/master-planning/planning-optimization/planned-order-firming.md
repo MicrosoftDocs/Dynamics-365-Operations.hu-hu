@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: a4f882f1abc9f758aca77b137b28aa973f925ea9
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: ac8b63b98c37c7429cee792b85f492f3ca1d57c7
+ms.sourcegitcommit: 365092f735310990e82516110141d42aaf04e654
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019494"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "6103628"
 ---
 # <a name="firm-planned-orders"></a>Biztosra tervezett rendelések
 
@@ -77,6 +77,7 @@ A rendelések manuális biztosra tervezése érdekében keresse meg és válassz
 
     - **Szállítók szerinti csoportosítás** – Állítsa ezt a lehetőséget *Igen* értékre a megerősítés közbeni tervezett beszerzési rendelések csoportosítása és a szállítónként egy beszerzési rendelés létrehozása érdekében. Az a másik lehetőség, hogy minden tervezett rendeléshez létrehoz egy egysoros beszerezési rendelést.
     - **Csoportosítás beszerzői csoportok szerint** – Állítsa ezt a lehetőséget *Igen* értékre a tervezett beszerzési rendelések csoportosításához, és hozzon létre egy a szállítót és a beszerzői csoportot egyesítő beszerzési rendelést. Ez a beállítás csak akkor használható, ha a **Szállítók szerinti csoportosítás** lehetőség *Igen* értékre van állítva.
+    - **Beszerzési szerződés szerinti csoportosítás** – Az *Igen* beállítással úgy csoportosíthatja a tervezett beszerzési rendeléseket, hogy ugyanaz a szállító szerepeljen rajtuk, mint a meglévő beszerzési szerződéseken, és beszerzési szerződésenként egy beszerzési rendelést hozhat létre. Ha a **Szállítók szerinti csoportosítás** engedélyezve van, ez a beállítás automatikusan engedélyezve van. A **Beszerzési szerződés szerinti csoportosítás** használatához a **Beszerzési szerződések keresése** beállításnál az *Igen* értéket kell megadni az **Alaptervezés paraméterei** oldalon.
     - **Csoportosítás időszak szerint** (a **Beszerzési rendelések** szakaszban) – Válassza ki azt az időszakot, amely szerint csoportosítani szeretné a tervezett beszerzési rendeléseket. Ez a beállítás csak akkor használható, ha be van jelölve a **Szállítók szerinti csoportosítás** opció is.
     - **Csoportosítás időszak szerint** (az **Átmozgatások** szakaszban) – Válassza ki azt az időszakot, amely szerint csoportosítani szeretné a tervezett átmozgatási rendeléseket. A rendelések a **Raktárból** és a **Raktárba** értékek alapján lesznek csoportosítva.
 
