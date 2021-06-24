@@ -16,12 +16,12 @@ ms.search.industry: Public sector
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4c4b7221cb5b0ea1fdbb4e05831cdd6dd482e321
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d24035aa326c2232cc77a576d24c15b3a8f9d93b
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5823539"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188347"
 ---
 # <a name="public-sector-home-page"></a>Állami szektor – kezdőlap
 
@@ -63,8 +63,7 @@ Az alábbi táblázatban arról talál információt, hogy ez a konfigurációs 
 | Gyermekkulcs | **Speciális főkönyvi bejegyzés** konfigurációs kulcs (AdvancedLedgerEntry) **Állami szektor 1099G** konfigurációs kulcs (Tax1099G) **Állami szektor 1099S** konfigurációs kulcs (Tax1099S) **Francia jogszabályok** konfigurációs kulcs |
 
 
-<a name="additional-resources"></a>További erőforrások
---------
+## <a name="additional-resources"></a>További erőforrások
 
 [Az Állami szektor funkció tervezése](plan-public-sector-functionality.md)
 

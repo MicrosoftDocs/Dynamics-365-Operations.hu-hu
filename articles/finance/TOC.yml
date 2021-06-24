@@ -72,13 +72,11 @@
                   items:
                     - name: Újdonságok és változások a Finance kezdőlapján
                       href: get-started/whats-new-home-page.md
-                    - name: Finance 10.0.20 (2021. július)
+                    - name: Finance 10.0.20 (2021. augusztus)
                       href: get-started/whats-new-changed-10-0-20.md
-                    - name: Finance 10.0.19 (2021. július)
+                    - name: Finance 10.0.19 (2021. június)
                       href: get-started/whats-new-changed-10-0-19.md
                     - name: Finance 10.0.18 (2021. május)
-                      href: get-started/whats-new-changed-10-0-18.md
-                    - name: Finance 10.0.17 (2021. április)
                       href: get-started/whats-new-changed-10-0-17.md
             - name: Eltávolított vagy elavult funkciók
               items:
@@ -1216,7 +1214,9 @@
               href: finance-insights/finance-insights-home-page.md
             - name: Konfiguráció és adminisztráció
               items:
-                - name: Pénzügyi információk konfigurálása
+                - name: A Finance Insights konfigurálása nyilvános előzetes verzióhoz
+                  href: finance-insights/configure-for-fin-insites-PubPrvw.md
+                - name: A Finance Insights konfigurálása
                   href: finance-insights/configure-for-fin-insites.md
                 - name: Vevői fizetési előrejelzések engedélyezése
                   href: finance-insights/enable-cust-paymnt-prediction.md
@@ -1464,6 +1464,8 @@
                       href: localizations/rcs-globalization-feature.md?toc=/dynamics365/finance/toc.json
                     - name: 'Hozzon létre ER-konfigurációkat a Regulatory Configuration Service szolgáltatásban, és töltse fel őket a globális adattárba'
                       href: localizations/rcs-global-repo-upload.md?toc=/dynamics365/finance/toc.json
+                    - name: Regulatory Configuration Service – Lifecycle Services-tárhely elavulása
+                      href: localizations/rcs-lcs-repo-dep-faq.md?toc=/dynamics365/finance/toc.json
                 - name: Elektronikus számlázás
                   items:
                     - name: Elektronikus számlázás áttekintése
@@ -1476,6 +1478,8 @@
                       href: localizations/e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md?toc=/dynamics365/finance/toc.json
                     - name: Azure-tárfiók és Key Vault létrehozása
                       href: localizations/e-invoicing-create-azure-storage-account-key-vault.md?toc=/dynamics365/finance/toc.json
+                    - name: Felhasználáskezelési irányítópult
+                      href: localizations/e-invoicing-usage-management-dashboard.md?toc=/dynamics365/finance/toc.json
                     - name: Első lépések
                       items:
                         - name: Első lépések az elektronikus számlázási szolgáltatás adminisztrálása során
@@ -2416,18 +2420,102 @@
                               href: localizations/apac-ind-GST-troubleshooting-taxtrans-or-voucher-not-generated.md
                             - name: Adótranzakció azonosítója helytelen
                               href: localizations/apac-ind-GST-troubleshooting-tax-transaction-id-incorrect.md
+                            - name: Hibás mezőértékek a GSTR-jelentésben
+                              href: localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md
+                            - name: Hibás mezőérték egy számlanaplóban vagy bizonylaton
+                              href: localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md
+                            - name: Hibás főkönyvi számla a bizonylaton
+                              href: localizations/apac-ind-GST-troubleshooting-ledger-account-voucher-wrong.md
+                            - name: Az aktuális adókonfiguráció tervezőjének megnyitása
+                              href: localizations/apac-ind-GST-troubleshooting-open-designer-current-used-tax-configuration.md
+                            - name: A GSTR-jelentésen nem jelennek meg a rekordok és a mezők
+                              href: localizations/apac-ind-GST-troubleshooting-records-fields-not-showing-GSTR-report.md
+                            - name: Visszatérítési szabályhiba az adókiegyenlítés futtatásakor
+                              href: localizations/apac-ind-GST-troubleshooting-setoff-rule-error-transactions-on-voucher-not%20balance.md
                 - name: Közvetlen adók
                   items:
                     - name: India – Adóelőleg
                       items:
-                        - name: A GST belefoglalása az adólevonások kiszámításakor
-                          href: localizations/apac-ind-GST-include-gst-calculating-tax-deductions.md
-                        - name: A GST belefoglalása az adóbeszedés kiszámításakor
-                          href: localizations/apac-ind-GST-include-gst-calculating-tax-collections.md
                         - name: Adóküszöbértékekre vonatkozó GYIK
                           href: localizations/apac-ind-tax-thresholds.md
-                        - name: TCS áruértékesítés esetén
-                          href: localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md
+                        - name: India TCS
+                          items:
+                            - name: TCS áruértékesítés esetén
+                              href: localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md
+                            - name: A GST belefoglalása az adóbeszedés kiszámításakor
+                              href: localizations/apac-ind-GST-include-gst-calculating-tax-collections.md
+                        - name: India TDS
+                          items:
+                            - name: Indiai forrásnál levont adó (TDS) – áttekintés
+                              href: localizations/apac-ind-TDS-India-TDS-overview.md
+                            - name: A GST belefoglalása az adólevonások kiszámításakor
+                              href: localizations/apac-ind-GST-include-gst-calculating-tax-deductions.md
+                            - name: A TDS alapszintű beállítása
+                              items:
+                                - name: TDS-paraméterek beállítása
+                                  href: localizations/apac-ind-TDS-TDS-parameter-activation.md
+                                - name: TDS-főkönyvi számlák beállítása
+                                  href: localizations/apac-ind-TDS-TDS-ledger-accounts-setup.md
+                                - name: TDS nyilvántartási számok beállítása jogi személyekhez
+                                  href: localizations/apac-ind-TDS-TDS-registration-numbers-setup-for-legal-entities.md
+                                - name: Adóelőleg-hatóságok beállítása a TDS-adótípushoz
+                                  href: localizations/apac-ind-TDS-Withholding-tax-authorities-setup-for-TDS-tax-type.md
+                                - name: Adóösszetevők beállítása a TDS-adótípushoz
+                                  href: localizations/apac-ind-TDS-Tax-components-setup-for-TDS-tax-type.md
+                                - name: Adóelőlegkódok beállítása a TDS-adótípushoz
+                                  href: localizations/apac-ind-TDS-Withholding-tax-authorities-setup-for-TDS-tax-type.md
+                                - name: Adóelőleg-elszámolási időszakok beállítása a TDS-adótípushoz
+                                  href: localizations/apac-ind-TDS-Withholding-tax-settlement-periods-setup-for-TDS-tax-type.md
+                                - name: Adóelőleg-jelentési kódok beállítása a TDS-adótípushoz
+                                  href: localizations/apac-ind-TDS-Withholding-tax-reporting-codes-setup-for-TDS-tax-type.md
+                                - name: Adóelőlegkódok beállítása a TDS-adótípushoz
+                                  href: localizations/apac-ind-TDS-Withholding-tax-codes-setup-for-TDS-tax-type.md
+                                - name: TDS-adókódok csatolása a TDS-adócsoportokhoz és a TDS kiszámítására vonatkozó képlet meghatározása
+                                  href: localizations/apac-ind-TDS-Attach-TDS-tax-codes-to-TDS-tax-groups-and-define-formula-to-calculate-TDS.md
+                                - name: TDS-hez tartozó koncessziós tanúsítvány számának rögzítése
+                                  href: localizations/apac-ind-TDS-Record-TDS-concession-certificate-numbers.md
+                                - name: TDS-paraméterek beállítása a Kötelezettség és a Kinnlevőségek modulokban
+                                  href: localizations/apac-ind-TDS-TDS-parameters-setup-in-accounts-payable-parameters-and-accounts-receivable-parameters.md
+                                - name: Fizetési ütemezések beállítása TDS-felosztással
+                                  href: localizations/apac-ind-TDS-Payment-schedule-setup-with-TDS-allocation.md
+                                - name: TDS-hatósági kifizetések kifizetési díjainak beállítása
+                                  href: localizations/apac-ind-TDS-Payment-fee-setup-to-charge-payment-fee-for-TDS-authority-payments.md
+                                - name: 'TDS-csoport, PAN és TAN információk beállítása szállítókhoz és vevőkhöz'
+                                  href: localizations/apac-ind-TDS-TDS-group-PAN-and-TAN-information-setup-for-vendors-and-customers.md
+                                - name: Képlettervező és küszöbérték a TDS kiszámításához
+                                  items: null
+                                - name: Képlettervező TDS-számításokhoz
+                                  href: localizations/apac-ind-TDS-Formula-designer.md
+                                - name: Küszöbérték és kivételes küszöbérték
+                                  href: localizations/apac-ind-TDS-Threshold-limit-and-exception-threshold-limit.md
+                            - name: TDS kiszámítása számlákon
+                              items:
+                                - name: TDS kiszámítása számlákon
+                                  href: localizations/apac-ind-TDS-TDS-calcuation-on-invoice.md
+                                - name: TDS kiszámítása számlákon naplók segítségével
+                                  href: localizations/apac-ind-TDS-Calculate-TDS-on-invoices-using-journals.md
+                                - name: TDS-számlák kiszámítása beszerzési rendelési űrlap és értékesítési rendelési űrlap segítségével
+                                  href: localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md
+                                - name: TDS kiszámítása a szabadszöveges számlaoldalról származó számlákon
+                                  href: localizations/apac-ind-TDS-TDS-calculation-on-invoices-using-free-text-invoice-form.md
+                                - name: Számlafelosztási funkció
+                                  href: localizations/apac-ind-TDS-Split-invoice-functionality.md
+                            - name: TDS kiszámítása a kifizetéseken és kötelezvényeken
+                              href: localizations/apac-ind-TDS-TDS-calculation-on-payments-and-promissory-notes.md
+                            - name: TDS kiszámítása vállalatközi tranzakciókon
+                              href: localizations/apac-ind-TDS-TDS-calculation-on-intercompany-transactions.md
+                            - name: TDS elszámolási folyamata
+                              items:
+                                - name: TDS kiszámítása a kifizetéseken és kötelezvényeken
+                                  href: localizations/apac-ind-TDS-TDS-calculation-on-payments-and-promissory-notes.md
+                                - name: TDS kiszámítása vállalatközi tranzakciókon
+                                  href: localizations/apac-ind-TDS-TDS-calculation-on-intercompany-transactions.md
+                                - name: Az időszakos TDS-elszámolási folyamat futtatása
+                                  href: localizations/apac-ind-TDS-Run-the-periodic-TDS-settlement-process.md
+                                - name: TDS-kifizetések elszámolása a TDS hatósági szállítóknak és TDS challan létrehozása
+                                  href: localizations/apac-ind-TDS-Settle-TDS-payments-to-TDS-authority-vendors-and-generate-TDS-challan.md
+                                - name: Feladott TDS-kifizetések és -tranzakciók megtekintése TDS-elszámolási időszakra vonatkozóan
+                                  href: localizations/apac-ind-TDS-View-TDS-payments-and-TDS-transactions-posted-for-a-TDS-settlement-period.md
                 - name: Tárgyi eszközök
                   items:
                     - name: India – tárgyi eszközök áttekintése
@@ -2454,84 +2542,12 @@
                       href: localizations/tasks/apac-ind-set-up-asset-group-dep.md
                     - name: Tőkeelemek átvitele a tárgyi eszközre
                       href: localizations/tasks/apac-ind-transfer-capital-items.md
-                - name: India TDS
-                  items:
-                    - name: Indiai forrásnál levont adó (TDS) – áttekintés
-                      href: localizations/apac-ind-TDS-India-TDS-overview.md
-                    - name: A TDS alapszintű beállítása
+                    - name: TDS-tanúsítványszámok és dátumok rögzítése és frissítése
                       items:
-                        - name: TDS-paraméterek beállítása
-                          href: localizations/apac-ind-TDS-TDS-parameter-activation.md
-                        - name: TDS-főkönyvi számlák beállítása
-                          href: localizations/apac-ind-TDS-TDS-ledger-accounts-setup.md
-                        - name: TDS nyilvántartási számok beállítása jogi személyekhez
-                          href: localizations/apac-ind-TDS-TDS-registration-numbers-setup-for-legal-entities.md
-                        - name: Adóelőleg-hatóságok beállítása a TDS-adótípushoz
-                          href: localizations/apac-ind-TDS-Withholding-tax-authorities-setup-for-TDS-tax-type.md
-                        - name: Adóösszetevők beállítása a TDS-adótípushoz
-                          href: localizations/apac-ind-TDS-Tax-components-setup-for-TDS-tax-type.md
-                        - name: Adóelőlegkódok beállítása a TDS-adótípushoz
-                          href: localizations/apac-ind-TDS-Withholding-tax-authorities-setup-for-TDS-tax-type.md
-                        - name: Adóelőleg-elszámolási időszakok beállítása a TDS-adótípushoz
-                          href: localizations/apac-ind-TDS-Withholding-tax-settlement-periods-setup-for-TDS-tax-type.md
-                        - name: Adóelőleg-jelentési kódok beállítása a TDS-adótípushoz
-                          href: localizations/apac-ind-TDS-Withholding-tax-reporting-codes-setup-for-TDS-tax-type.md
-                        - name: Adóelőlegkódok beállítása a TDS-adótípushoz
-                          href: localizations/apac-ind-TDS-Withholding-tax-codes-setup-for-TDS-tax-type.md
-                        - name: TDS-adókódok csatolása a TDS-adócsoportokhoz és a TDS kiszámítására vonatkozó képlet meghatározása
-                          href: localizations/apac-ind-TDS-Attach-TDS-tax-codes-to-TDS-tax-groups-and-define-formula-to-calculate-TDS.md
-                        - name: TDS-hez tartozó koncessziós tanúsítvány számának rögzítése
-                          href: localizations/apac-ind-TDS-Record-TDS-concession-certificate-numbers.md
-                        - name: TDS-paraméterek beállítása a Kötelezettség és a Kinnlevőségek modulokban
-                          href: localizations/apac-ind-TDS-TDS-parameters-setup-in-accounts-payable-parameters-and-accounts-receivable-parameters.md
-                        - name: Fizetési ütemezések beállítása TDS-felosztással
-                          href: localizations/apac-ind-TDS-Payment-schedule-setup-with-TDS-allocation.md
-                        - name: TDS-hatósági kifizetések kifizetési díjainak beállítása
-                          href: localizations/apac-ind-TDS-Payment-fee-setup-to-charge-payment-fee-for-TDS-authority-payments.md
-                        - name: 'TDS-csoport, PAN és TAN információk beállítása szállítókhoz és vevőkhöz'
-                          href: localizations/apac-ind-TDS-TDS-group-PAN-and-TAN-information-setup-for-vendors-and-customers.md
-                    - name: Képlettervező és küszöbérték a TDS kiszámításához
-                      items:
-                        - name: Képlettervező TDS-számításokhoz
-                          href: localizations/apac-ind-TDS-Formula-designer.md
-                        - name: Küszöbérték és kivételes küszöbérték
-                          href: localizations/apac-ind-TDS-Threshold-limit-and-exception-threshold-limit.md
-                    - name: TDS kiszámítása számlákon
-                      items:
-                        - name: TDS kiszámítása számlákon
-                          href: localizations/apac-ind-TDS-TDS-calcuation-on-invoice.md
-                        - name: TDS kiszámítása számlákon naplók segítségével
-                          href: localizations/apac-ind-TDS-Calculate-TDS-on-invoices-using-journals.md
-                        - name: TDS-számlák kiszámítása beszerzési rendelési űrlap és értékesítési rendelési űrlap segítségével
-                          href: localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md
-                        - name: TDS kiszámítása a szabadszöveges számlaoldalról származó számlákon
-                          href: localizations/apac-ind-TDS-TDS-calculation-on-invoices-using-free-text-invoice-form.md
-                        - name: Számlafelosztási funkció
-                          href: localizations/apac-ind-TDS-Split-invoice-functionality.md
-                    - name: TDS kiszámítása a kifizetéseken és kötelezvényeken
-                      href: localizations/apac-ind-TDS-TDS-calculation-on-payments-and-promissory-notes.md
-                    - name: TDS kiszámítása vállalatközi tranzakciókon
-                      href: localizations/apac-ind-TDS-TDS-calculation-on-intercompany-transactions.md
-                    - name: TDS elszámolási folyamata
-                      items:
-                        - name: TDS kiszámítása a kifizetéseken és kötelezvényeken
-                          href: localizations/apac-ind-TDS-TDS-calculation-on-payments-and-promissory-notes.md
-                        - name: TDS kiszámítása vállalatközi tranzakciókon
-                          href: localizations/apac-ind-TDS-TDS-calculation-on-intercompany-transactions.md
-                        - name: TDS elszámolási folyamata
-                          items:
-                            - name: Az időszakos TDS-elszámolási folyamat futtatása
-                              href: localizations/apac-ind-TDS-Run-the-periodic-TDS-settlement-process.md
-                            - name: TDS-kifizetések elszámolása a TDS hatósági szállítóknak és TDS challan létrehozása
-                              href: localizations/apac-ind-TDS-Settle-TDS-payments-to-TDS-authority-vendors-and-generate-TDS-challan.md
-                            - name: Feladott TDS-kifizetések és -tranzakciók megtekintése TDS-elszámolási időszakra vonatkozóan
-                              href: localizations/apac-ind-TDS-View-TDS-payments-and-TDS-transactions-posted-for-a-TDS-settlement-period.md
-                        - name: TDS-tanúsítványszámok és dátumok rögzítése és frissítése
-                          items:
-                            - name: TDS-hez tartozó visszatéríthető tanúsítvány számának rögzítése
-                              href: localizations/apac-ind-TDS-Record-TDS-recoverable-certificate-numbers.md
-                            - name: Tanúsítványszámok és dátumok frissítése TDS-tranzakciókhoz
-                              href: localizations/apac-ind-TDS-Update-certificate-numbers-and-dates-for-TDS-transactions.md
+                        - name: TDS-hez tartozó visszatéríthető tanúsítvány számának rögzítése
+                          href: localizations/apac-ind-TDS-Record-TDS-recoverable-certificate-numbers.md
+                        - name: Tanúsítványszámok és dátumok frissítése TDS-tranzakciókhoz
+                          href: localizations/apac-ind-TDS-Update-certificate-numbers-and-dates-for-TDS-transactions.md
             - name: Olaszország
               items:
                 - name: Olaszország – áttekintés
@@ -4159,14 +4175,18 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/dynamics365/finance/toc.json
                     - name: Tesztelés automatizálása ER segítségével
                       href: ../fin-ops-core/dev-itpro/analytics/er-automate-testing.md?toc=/dynamics365/finance/toc.json
-                - name: Üzleti folyamatok automatizálása Elektronikus jelentéskészítési konfigurációk segítségével
+                - name: Üzleti folyamatok automatizálása elektronikus jelentéskészítési konfigurációk segítségével
                   items:
                     - name: ER konfigurálása az adatok Power BI szolgáltatásba való lehívásához
                       href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/dynamics365/finance/toc.json
                     - name: Nyomtatható szabadszöveges számla (FTI) űrlapok létrehozása
                       href: ../fin-ops-core/dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/dynamics365/finance/toc.json
-                - name: Az ER-formátumok végrehajtásának nyomon követése a teljesítménnyel kapcsolatos problémák elhárítása érdekében
-                  href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/finance/toc.json
+                - name: Hatékony ER-megoldások tervezése
+                  items:
+                    - name: Az ER-formátumok végrehajtásának nyomon követése a teljesítménnyel kapcsolatos problémák elhárítása érdekében
+                      href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/finance/toc.json
+                    - name: Az ER-konfigurációk teljesítményproblémáinak elhárítása
+                      href: ../fin-ops-core/dev-itpro/analytics/er-troubleshoot-perf-issues-in-configurations.md?toc=/dynamics365/finance/toc.json
                 - name: Üzleti dokumentumok kezelése (BDM)
                   items:
                     - name: BDM áttekintése

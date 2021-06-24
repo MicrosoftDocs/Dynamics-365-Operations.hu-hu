@@ -14,11 +14,11 @@
               items:
                 - name: Újdonságok és változások a Platformfrissítések kezdőlapján
                   href: get-started/whats-new-home-page.md
-                - name: Platformfrissítés a 10.0.20-es verzióhoz (2021. július)
+                - name: Platformfrissítés a 10.0.20-as verzióhoz (2021. augusztus)
                   href: get-started/whats-new-platform-updates-10-0-20.md
                 - name: Platformfrissítés a 10.0.19-es verzióhoz (2021. június)
                   href: get-started/whats-new-platform-updates-10-0-19.md
-                - name: Platformfrissítések a 10.0.18-es verzióhoz (2021. május)
+                - name: Platformfrissítések a 10.0.18-as verzióhoz (2021. május)
                   href: get-started/whats-new-platform-updates-10-0-18.md
                 - name: Platformfrissítések a 10.0.17-es verzióhoz (2021. április)
                   href: get-started/whats-new-platform-updates-10-0-17.md
@@ -850,12 +850,10 @@
               items:
                 - name: Nyomon követés a Trace Parser használatával
                   href: perf-test/trace-trace-tutorial.md
-                - name: Egyfelhasználós tesztelés a Feladatrögzítő és a Teljesítmény SDK segítségével
+                - name: Egyfelhasználós tesztelés a Teljesítmény SDK és a Feladatrögzítő segítségével
                   href: perf-test/single-user-test-perf-sdk.md
-                - name: Többfelhasználás tesztelés a Teljesítmény SDK és a helyi tesztvezérlő segítségével
-                  href: perf-test/multi-user-testing-local-test-controller.md
-                - name: Többfelhasználós tesztelés a Teljesítmény SDK és az Azure DevOps segítségével
-                  href: perf-test/multi-user-testing-perfsdk-azuredevops.md
+                - name: Többfelhasználós tesztelés a Teljesítmény SDK segítségével
+                  href: perf-test/perfsdk-multi-user-testing.md
                 - name: Hibaelhárítási útmutató a Teljesítmény SDK-val történő teszteléshez
                   href: perf-test/troubleshoot-perf-sdk-user-testing.md
                 - name: Teljesítmény SDK és többfelhasználós tesztelés helyszíni környezetben
@@ -1538,6 +1536,8 @@
                   href: sysadmin/batch-server-overview.md
                 - name: Kötegelt feladatok létrehozása
                   href: sysadmin/tasks/create-batch-job.md
+                - name: Kötegelt feladatok automatikus újrapróbálásának engedélyezése
+                  href: sysadmin/retryable-batch.md
                 - name: Kötegelt feladat másolása
                   href: sysadmin/copy-batch-job.md
                 - name: Aktív kötegidőszakok
@@ -1584,19 +1584,17 @@
                   href: migration-upgrade/analyze-code-upgrade.md
                 - name: AX 2012 frissítés – Bemutatókörnyezet telepítése elemzéshez
                   href: migration-upgrade/analysis-sandbox.md
-                - name: AX 2012 frissítés – Adatfrissítés fejlesztői környezetben
+                - name: AX 2012 frissítése – Adatfrissítés fejlesztői környezetben
                   href: migration-upgrade/data-upgrade-2012.md
-                - name: AX 2012 frissítés – Frissítés előtti ellenőrzőlista az adatfrissítéshez
+                - name: AX 2012 frissítése – Frissítés előtti ellenőrzőlista az adatfrissítéshez
                   href: migration-upgrade/prepare-data-upgrade.md
-                - name: AX 2012 frissítés – Adatfrissítés tesztkörnyezetekben a DACPAC-folyamat használatával
-                  href: migration-upgrade/upgrade-data-sandbox-dacpac.md
                 - name: Frissítés AX 2012 megoldásról – SQL tranzakciós replikáció
                   href: database/replication-setup.md
-                - name: AX 2012 frissítés – Adatfrissítés tesztkörnyezetekben
-                  href: migration-upgrade/upgrade-data-sandbox.md
-                - name: AX 2012 frissítés – Helyszíni környezetek
+                - name: Frissítés AX 2012 megoldásról – Adatfrissítés önkiszolgáló környezetekben
+                  href: migration-upgrade/data-upgrade-self-service.md
+                - name: AX 2012 frissítése – Helyszíni környezetek
                   href: migration-upgrade/on-prem-upgrade-2012.md
-                - name: AX 2012 frissítés – Átállásteszt
+                - name: AX 2012 frissítése – Átállásteszt
                   href: migration-upgrade/upgrade-cutover-testing.md
                 - name: AX 2012 frissítés – Frissítés utáni feladatok
                   href: migration-upgrade/app-validation-process.md

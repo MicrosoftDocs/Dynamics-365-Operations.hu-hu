@@ -94,7 +94,7 @@
                   items:
                     - name: Újdonságok vagy változások a Commerce kezdőlapján
                       href: get-started/whats-new-home-page.md
-                    - name: Commerce 10.0.20 (2021. július)
+                    - name: Commerce 10.0.20 (2021. augusztus)
                       href: get-started/whats-new-commerce-10-0-20.md
                     - name: Commerce 10.0.19 (2021. június)
                       href: get-started/whats-new-commerce-10-0-19.md
@@ -244,25 +244,25 @@
                   href: arch-auth-flow.md
                 - name: Dynamics 365 Commerce-összetevők verziószámozási követelményei
                   href: arch-component-versioning.md
-                - name: Commerce Scale Unit architektúra
+                - name: Nem központosított Commerce-motorarchitektúra
                   href: dev-itpro/retail-server-architecture.md
                 - name: Válasszon áruházi topológiát
                   href: dev-itpro/retail-in-store-topology.md
                 - name: Commerce Data Exchange
                   items:
-                    - name: Commerce Data Exchange gyakorlati tanácsok
+                    - name: Commerce Data Exchange – gyakorlati tanácsok
                       href: dev-itpro/CDX-Best-Practices.md
                     - name: Commerce Data Exchange és a kereskedelmi csatorna kommunikációi
                       href: dev-itpro/define-retail-channel-communications-cdx.md
-                    - name: Commerce Data Exchange hibaelhárítás
+                    - name: Commerce Data Exchange – hibaelhárítás
                       href: dev-itpro/CDX-Troubleshooting.md
                 - name: Modern POS-architektúra
                   href: dev-itpro/retail-modern-pos-architecture.md
-                - name: Online áruház közzétételi architektúrája
+                - name: Online áruház csatornájának közzététele
                   href: dev-itpro/retail-online-store-publishing-architecture.md
                 - name: Retail Channel Performance Power BI-tartalom
                   href: ../fin-ops-core/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/dynamics365/commerce/toc.json
-                - name: Fizetési alkalmazás adatbiztonsági szabványok (PA-DSS) tanúsítványa
+                - name: Fizetési alkalmazás adatbiztonsági szabványainak (PA-DSS) tanúsítványa
                   href: dev-itpro/PA-DSS-Certification.md
                 - name: A helyszíni telepítéseknél rendelkezésre álló Commerce-lehetőségek
                   href: retail-onprem.md
@@ -546,6 +546,8 @@
                       href: paypal.md
                     - name: Pénztárcás fizetés támogatása
                       href: wallets.md
+                    - name: Továbbfejlesztett kifizetések az üzletben történő fizetésnél
+                      href: dev-itpro/enhanced-sca.md
                     - name: Kifizetésekkel kapcsolatos GYIK
                       href: dev-itpro/payments-retail.md
                 - name: E-mail és értesítések
@@ -770,10 +772,14 @@
                   href: notifications-pos.md
                 - name: Folytonossági programok eladása és értékesítési rendelések feldolgozása
                   href: tasks/use-continuity-program.md
-                - name: Ügyfélbejelentkezési értesítések engedélyezése a pénztárban (POS)
+                - name: Ügyfél-bejelentkezési értesítések engedélyezése a pénztárban
                   href: enable-customer-check-in.md
-            - name: Visszáruk
+            - name: Visszáruk és visszatérítések
               items:
+                - name: Visszáruk létrehozása a pénztárban
+                  href: POS-returns.md
+                - name: Sorozatszámmal vezérelt termékek visszavétele a pénztárban
+                  href: POS-serial-returns.md
                 - name: Csatolt visszatérítések
                   href: dev-itpro/linked-refunds.md
                 - name: Egy áruház szortimentjében nem szereplő termékek eladása és visszavétele
@@ -1230,6 +1236,8 @@
                   href: ../finance/localizations/rcs-globalization-feature.md?toc=/dynamics365/commerce/toc.json
                 - name: 'Hozzon létre ER-konfigurációkat a Regulatory Configuration Service szolgáltatásban, és töltse fel őket a globális adattárba'
                   href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/commerce/toc.json
+                - name: Regulatory Configuration Service – Lifecycle Services-tárhely elavulása
+                  href: ../finance/localizations/rcs-lcs-repo-dep-faq.md?toc=/dynamics365/commerce/toc.json
             - name: Ausztria
               items:
                 - name: Pénzügyi regisztrációs szolgáltatás integrációját bemutató minta Ausztriára vonatkozóan
@@ -1238,6 +1246,8 @@
               items:
                 - name: Commerce honosítása Brazíliára vonatkozóan
                   href: localizations/latam-bra-commerce-localization.md
+                - name: A Commerce honosításának beállítása és telepítése Brazíliára vonatkozóan
+                  href: localizations/latam-bra-deployment.md
             - name: Kelet-Európa
               items:
                 - name: Általános
@@ -1962,8 +1972,12 @@
                       href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/dynamics365/commerce/toc.json
                     - name: Nyomtatható szabadszöveges számla (FTI) űrlapok létrehozása
                       href: ../fin-ops-core/dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/dynamics365/commerce/toc.json
-                - name: Az ER-formátumok végrehajtásának nyomon követése a teljesítménnyel kapcsolatos problémák elhárítása érdekében
-                  href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/commerce/toc.json
+                - name: Hatékony ER-megoldások tervezése
+                  items:
+                    - name: Az ER-formátumok végrehajtásának nyomon követése a teljesítménnyel kapcsolatos problémák elhárítása érdekében
+                      href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/commerce/toc.json
+                    - name: Az ER-konfigurációk teljesítményproblémáinak elhárítása
+                      href: ../fin-ops-core/dev-itpro/analytics/er-troubleshoot-perf-issues-in-configurations.md?toc=/dynamics365/commerce/toc.json
                 - name: Üzleti dokumentumok kezelése (BDM)
                   items:
                     - name: BDM áttekintése
@@ -2392,7 +2406,7 @@
                   href: dev-itpro/retail-sdk/sdk-github.md
                 - name: Retail szoftverfejlesztői készlet (SDK) GYIK
                   href: dev-itpro/retail-sdk/sdk-faq.md
-            - name: Pénztár bővíthetősége
+            - name: Pénztár (POS) bővíthetősége
               items:
                 - name: Pénztár képernyő-elrendezései
                   href: pos-screen-layouts.md
