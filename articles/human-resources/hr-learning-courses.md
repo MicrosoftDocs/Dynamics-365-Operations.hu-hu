@@ -15,122 +15,120 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: f573dadeab88ead57fdb4b91ade21c244325058c
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 818d96b14e32716e95b57391df5a90f7d32c4bb0
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6054019"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6190232"
 ---
-# <a name="set-up-training-courses"></a><span data-ttu-id="baea9-103">Tanfolyamok beállítása</span><span class="sxs-lookup"><span data-stu-id="baea9-103">Set up training courses</span></span>
+# <a name="set-up-training-courses"></a><span data-ttu-id="a06ef-103">Tanfolyamok beállítása</span><span class="sxs-lookup"><span data-stu-id="a06ef-103">Set up training courses</span></span>
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-<span data-ttu-id="baea9-104">Az emberi erőforrások-rendszergazdák és a vezetők a tanfolyamok szolgáltatások segítségével karbantartják a dolgozóknak nyújtott képzések információit.</span><span class="sxs-lookup"><span data-stu-id="baea9-104">Human resources administrators and managers can use the courses features to maintain information about the training that's offered to workers.</span></span>
+<span data-ttu-id="a06ef-104">Az emberi erőforrások-rendszergazdák és a vezetők a tanfolyamok szolgáltatások segítségével karbantartják a dolgozóknak nyújtott képzések információit.</span><span class="sxs-lookup"><span data-stu-id="a06ef-104">Human resources administrators and managers can use the courses features to maintain information about the training that's offered to workers.</span></span>
 
- <a name="set-up-prerequisites"></a><span data-ttu-id="baea9-105"> A telepítés előfeltételei</span><span class="sxs-lookup"><span data-stu-id="baea9-105">Set up prerequisites</span></span>
----------------------
+##  <a name="set-up-prerequisites"></a><span data-ttu-id="a06ef-105"> A telepítés előfeltételei</span><span class="sxs-lookup"><span data-stu-id="a06ef-105">Set up prerequisites</span></span>
 
-<span data-ttu-id="baea9-106">A következő adatokat kötelező megadni, és be kell állítani a tanfolyamok létrehozása előtt.</span><span class="sxs-lookup"><span data-stu-id="baea9-106">The following information is required and must be set up before you create courses.</span></span>
--   <span data-ttu-id="baea9-107">**Tanfolyamtípusok**</span><span class="sxs-lookup"><span data-stu-id="baea9-107">**Course types**</span></span>
+<span data-ttu-id="a06ef-106">A következő adatokat kötelező megadni, és be kell állítani a tanfolyamok létrehozása előtt.</span><span class="sxs-lookup"><span data-stu-id="a06ef-106">The following information is required and must be set up before you create courses.</span></span>
+-   <span data-ttu-id="a06ef-107">**Tanfolyamtípusok**</span><span class="sxs-lookup"><span data-stu-id="a06ef-107">**Course types**</span></span>
 
-<span data-ttu-id="baea9-108">A következő adatokat nem kötelezően megadandó információt, amelyet meg lehet adni, a tanfolyamok.</span><span class="sxs-lookup"><span data-stu-id="baea9-108">The following information is optional information that you can specify for courses.</span></span> <span data-ttu-id="baea9-109">Ha tudja, hogy ki fogja bevinni tanfolyamok ezt az információt, akkor ezeket az adatokat kell beállítani, tanfolyam rekordok létrehozása előtt.</span><span class="sxs-lookup"><span data-stu-id="baea9-109">If you know that you will be entering this information for courses, you should set up this information before you create course records.</span></span>
--   <span data-ttu-id="baea9-110">**Oktatótermi csoportok**</span><span class="sxs-lookup"><span data-stu-id="baea9-110">**Classroom groups**</span></span>
--   <span data-ttu-id="baea9-111">**Tanfolyami csoportok**</span><span class="sxs-lookup"><span data-stu-id="baea9-111">**Course groups**</span></span>
--   <span data-ttu-id="baea9-112">**Tanfolyami helyszínek**</span><span class="sxs-lookup"><span data-stu-id="baea9-112">**Course locations**</span></span>
--   <span data-ttu-id="baea9-113">**Oktatótermek**</span><span class="sxs-lookup"><span data-stu-id="baea9-113">**Classrooms**</span></span>
--   <span data-ttu-id="baea9-114">**Oktatók**</span><span class="sxs-lookup"><span data-stu-id="baea9-114">**Instructors**</span></span>
+<span data-ttu-id="a06ef-108">A következő adatokat nem kötelezően megadandó információt, amelyet meg lehet adni, a tanfolyamok.</span><span class="sxs-lookup"><span data-stu-id="a06ef-108">The following information is optional information that you can specify for courses.</span></span> <span data-ttu-id="a06ef-109">Ha tudja, hogy ki fogja bevinni tanfolyamok ezt az információt, akkor ezeket az adatokat kell beállítani, tanfolyam rekordok létrehozása előtt.</span><span class="sxs-lookup"><span data-stu-id="a06ef-109">If you know that you will be entering this information for courses, you should set up this information before you create course records.</span></span>
+-   <span data-ttu-id="a06ef-110">**Oktatótermi csoportok**</span><span class="sxs-lookup"><span data-stu-id="a06ef-110">**Classroom groups**</span></span>
+-   <span data-ttu-id="a06ef-111">**Tanfolyami csoportok**</span><span class="sxs-lookup"><span data-stu-id="a06ef-111">**Course groups**</span></span>
+-   <span data-ttu-id="a06ef-112">**Tanfolyami helyszínek**</span><span class="sxs-lookup"><span data-stu-id="a06ef-112">**Course locations**</span></span>
+-   <span data-ttu-id="a06ef-113">**Oktatótermek**</span><span class="sxs-lookup"><span data-stu-id="a06ef-113">**Classrooms**</span></span>
+-   <span data-ttu-id="a06ef-114">**Oktatók**</span><span class="sxs-lookup"><span data-stu-id="a06ef-114">**Instructors**</span></span>
 
-## <a name="course-types"></a><span data-ttu-id="baea9-115">Tanfolyamtípusok</span><span class="sxs-lookup"><span data-stu-id="baea9-115">Course types</span></span>
-<span data-ttu-id="baea9-116">Tanfolyamtípusok a tanfolyamok elosztását a szerkezetben, és a tanfolyam tartalma csoportosítására használhatók.</span><span class="sxs-lookup"><span data-stu-id="baea9-116">You can use course types to categorize courses according to the structure or content of the course.</span></span> <span data-ttu-id="baea9-117">Tanfolyam típusokat hozhat létre a **Kurzus típusok** oldalon.</span><span class="sxs-lookup"><span data-stu-id="baea9-117">You can create course types on the **Course types** page.</span></span> <span data-ttu-id="baea9-118">Tanfolyam rekord létrehozásakor ki kell választania egy tanfolyamtípus.</span><span class="sxs-lookup"><span data-stu-id="baea9-118">You must select a course type when you create a course record.</span></span>
+## <a name="course-types"></a><span data-ttu-id="a06ef-115">Tanfolyamtípusok</span><span class="sxs-lookup"><span data-stu-id="a06ef-115">Course types</span></span>
+<span data-ttu-id="a06ef-116">Tanfolyamtípusok a tanfolyamok elosztását a szerkezetben, és a tanfolyam tartalma csoportosítására használhatók.</span><span class="sxs-lookup"><span data-stu-id="a06ef-116">You can use course types to categorize courses according to the structure or content of the course.</span></span> <span data-ttu-id="a06ef-117">Tanfolyam típusokat hozhat létre a **Kurzus típusok** oldalon.</span><span class="sxs-lookup"><span data-stu-id="a06ef-117">You can create course types on the **Course types** page.</span></span> <span data-ttu-id="a06ef-118">Tanfolyam rekord létrehozásakor ki kell választania egy tanfolyamtípus.</span><span class="sxs-lookup"><span data-stu-id="a06ef-118">You must select a course type when you create a course record.</span></span>
 
-## <a name="course-setup-type"></a><span data-ttu-id="baea9-119">Tanfolyamtípus - szakértelem</span><span class="sxs-lookup"><span data-stu-id="baea9-119">Course setup type</span></span>
-<span data-ttu-id="baea9-120">Az alábbi táblázat felsorolja azokat a tanfolyamok háromféle beállítása.</span><span class="sxs-lookup"><span data-stu-id="baea9-120">The following table lists the three setup types for courses.</span></span> <span data-ttu-id="baea9-121">Beállítási típusok határozzák meg, hogy a Tanfolyam felépítése.</span><span class="sxs-lookup"><span data-stu-id="baea9-121">Setup types determine the structure of the course.</span></span>
+## <a name="course-setup-type"></a><span data-ttu-id="a06ef-119">Tanfolyamtípus - szakértelem</span><span class="sxs-lookup"><span data-stu-id="a06ef-119">Course setup type</span></span>
+<span data-ttu-id="a06ef-120">Az alábbi táblázat felsorolja azokat a tanfolyamok háromféle beállítása.</span><span class="sxs-lookup"><span data-stu-id="a06ef-120">The following table lists the three setup types for courses.</span></span> <span data-ttu-id="a06ef-121">Beállítási típusok határozzák meg, hogy a Tanfolyam felépítése.</span><span class="sxs-lookup"><span data-stu-id="a06ef-121">Setup types determine the structure of the course.</span></span>
 
 <table>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="baea9-122">Ellátási típus beállítása</span><span class="sxs-lookup"><span data-stu-id="baea9-122">Setup type</span></span></th>
-<th><span data-ttu-id="baea9-123">Leírás</span><span class="sxs-lookup"><span data-stu-id="baea9-123">Description</span></span></th>
+<th><span data-ttu-id="a06ef-122">Ellátási típus beállítása</span><span class="sxs-lookup"><span data-stu-id="a06ef-122">Setup type</span></span></th>
+<th><span data-ttu-id="a06ef-123">Leírás</span><span class="sxs-lookup"><span data-stu-id="a06ef-123">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><span data-ttu-id="baea9-124"><strong>Normál</strong></span><span class="sxs-lookup"><span data-stu-id="baea9-124"><strong>Standard</strong></span></span></td>
-<td><span data-ttu-id="baea9-125">Jelölje be ezt a típust, amelyet nem kell minden naphoz napirendet tanfolyamok.</span><span class="sxs-lookup"><span data-stu-id="baea9-125">Select this type for courses that will not have a daily agenda.</span></span> <span data-ttu-id="baea9-126">Új terv létrehozása esetén az alapértelmezett állapot Létrehozva.</span><span class="sxs-lookup"><span data-stu-id="baea9-126">This is the default setup type when you create a new course.</span></span></td>
+<td><span data-ttu-id="a06ef-124"><strong>Normál</strong></span><span class="sxs-lookup"><span data-stu-id="a06ef-124"><strong>Standard</strong></span></span></td>
+<td><span data-ttu-id="a06ef-125">Jelölje be ezt a típust, amelyet nem kell minden naphoz napirendet tanfolyamok.</span><span class="sxs-lookup"><span data-stu-id="a06ef-125">Select this type for courses that will not have a daily agenda.</span></span> <span data-ttu-id="a06ef-126">Új terv létrehozása esetén az alapértelmezett állapot Létrehozva.</span><span class="sxs-lookup"><span data-stu-id="a06ef-126">This is the default setup type when you create a new course.</span></span></td>
 </tr>
 <tr class="even">
-<td><span data-ttu-id="baea9-127"><strong>Napirend</strong></span><span class="sxs-lookup"><span data-stu-id="baea9-127"><strong>Agenda</strong></span></span></td>
-<td><span data-ttu-id="baea9-128">Válassza ezt atípust egy kurzus minden egyes napjának részleteinek megtervezéséhez, amely több napon keresztül folyik le.</span><span class="sxs-lookup"><span data-stu-id="baea9-128">Select this type to plan the details of each day of a course that takes place over multiple days.</span></span></td>
+<td><span data-ttu-id="a06ef-127"><strong>Napirend</strong></span><span class="sxs-lookup"><span data-stu-id="a06ef-127"><strong>Agenda</strong></span></span></td>
+<td><span data-ttu-id="a06ef-128">Válassza ezt atípust egy kurzus minden egyes napjának részleteinek megtervezéséhez, amely több napon keresztül folyik le.</span><span class="sxs-lookup"><span data-stu-id="a06ef-128">Select this type to plan the details of each day of a course that takes place over multiple days.</span></span></td>
 </tr>
 <tr class="odd">
-<td><span data-ttu-id="baea9-129"><strong>Munkamenet + Napirend</strong></span><span class="sxs-lookup"><span data-stu-id="baea9-129"><strong>Agenda + session</strong></span></span></td>
-<td><span data-ttu-id="baea9-130">A tanfolyamok összetettebb típusának kiválasztása</span><span class="sxs-lookup"><span data-stu-id="baea9-130">Select this type for the more complex courses.</span></span> <span data-ttu-id="baea9-131">A tanfolyam napirendjét osztása például szekciókat és munkameneteket.</span><span class="sxs-lookup"><span data-stu-id="baea9-131">For example, you can divide the agenda for the course into tracks and sessions.</span></span>
+<td><span data-ttu-id="a06ef-129"><strong>Munkamenet + Napirend</strong></span><span class="sxs-lookup"><span data-stu-id="a06ef-129"><strong>Agenda + session</strong></span></span></td>
+<td><span data-ttu-id="a06ef-130">A tanfolyamok összetettebb típusának kiválasztása</span><span class="sxs-lookup"><span data-stu-id="a06ef-130">Select this type for the more complex courses.</span></span> <span data-ttu-id="a06ef-131">A tanfolyam napirendjét osztása például szekciókat és munkameneteket.</span><span class="sxs-lookup"><span data-stu-id="a06ef-131">For example, you can divide the agenda for the course into tracks and sessions.</span></span>
 <ul>
-<li><span data-ttu-id="baea9-132"><strong>Követés</strong>– A szekciók a tanfolyamhoz meghatározott tárgyterületek.</span><span class="sxs-lookup"><span data-stu-id="baea9-132"><strong>Track</strong> – Tracks are specific subject areas for a course.</span></span></li>
-<li><span data-ttu-id="baea9-133"><strong>Munakmenetek</strong> – A munkamenetek felosztják a szekciókat és segítenek a foglalkozhatnak az egyes szekciókhoz tartozó műveletek és technikák azonosításában.</span><span class="sxs-lookup"><span data-stu-id="baea9-133"><strong>Sessions</strong> – Sessions divide up tracks and help identify specific processes or techniques that are relevant to the track.</span></span></li>
+<li><span data-ttu-id="a06ef-132"><strong>Követés</strong>– A szekciók a tanfolyamhoz meghatározott tárgyterületek.</span><span class="sxs-lookup"><span data-stu-id="a06ef-132"><strong>Track</strong> – Tracks are specific subject areas for a course.</span></span></li>
+<li><span data-ttu-id="a06ef-133"><strong>Munakmenetek</strong> – A munkamenetek felosztják a szekciókat és segítenek a foglalkozhatnak az egyes szekciókhoz tartozó műveletek és technikák azonosításában.</span><span class="sxs-lookup"><span data-stu-id="a06ef-133"><strong>Sessions</strong> – Sessions divide up tracks and help identify specific processes or techniques that are relevant to the track.</span></span></li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
-## <a name="course-tasks"></a><span data-ttu-id="baea9-134">Tanfolyami tevékenységek</span><span class="sxs-lookup"><span data-stu-id="baea9-134">Course tasks</span></span>
-<span data-ttu-id="baea9-135">Például a következő műveleteket végezheti:</span><span class="sxs-lookup"><span data-stu-id="baea9-135">For each course, you can complete the following tasks.</span></span>
-- <span data-ttu-id="baea9-136">Résztvevők regisztrálása</span><span class="sxs-lookup"><span data-stu-id="baea9-136">Register participants</span></span>
-- <span data-ttu-id="baea9-137">A regisztráció határidejének beállítása</span><span class="sxs-lookup"><span data-stu-id="baea9-137">Specify a registration deadline</span></span>
-- <span data-ttu-id="baea9-138">A résztvevők minimális és maximális számának beállítása</span><span class="sxs-lookup"><span data-stu-id="baea9-138">Define the minimum and maximum number of participants</span></span>
-- <span data-ttu-id="baea9-139">A tanfolyam helyszínének és tantermének kiválasztása</span><span class="sxs-lookup"><span data-stu-id="baea9-139">Assign a course location and classroom</span></span>
-- <span data-ttu-id="baea9-140">Ajánlott szállodák a tanfolyam résztvevőinek</span><span class="sxs-lookup"><span data-stu-id="baea9-140">Recommend hotels to course participants</span></span>
-- <span data-ttu-id="baea9-141">A tanfolyam leírásának létrehozása, amelyet közzé lehet tenni az Alkalmazott önkiszolgáló rendszerben</span><span class="sxs-lookup"><span data-stu-id="baea9-141">Create a course description, which you can then advertise on Employee self service</span></span>
+## <a name="course-tasks"></a><span data-ttu-id="a06ef-134">Tanfolyami tevékenységek</span><span class="sxs-lookup"><span data-stu-id="a06ef-134">Course tasks</span></span>
+<span data-ttu-id="a06ef-135">Például a következő műveleteket végezheti:</span><span class="sxs-lookup"><span data-stu-id="a06ef-135">For each course, you can complete the following tasks.</span></span>
+- <span data-ttu-id="a06ef-136">Résztvevők regisztrálása</span><span class="sxs-lookup"><span data-stu-id="a06ef-136">Register participants</span></span>
+- <span data-ttu-id="a06ef-137">A regisztráció határidejének beállítása</span><span class="sxs-lookup"><span data-stu-id="a06ef-137">Specify a registration deadline</span></span>
+- <span data-ttu-id="a06ef-138">A résztvevők minimális és maximális számának beállítása</span><span class="sxs-lookup"><span data-stu-id="a06ef-138">Define the minimum and maximum number of participants</span></span>
+- <span data-ttu-id="a06ef-139">A tanfolyam helyszínének és tantermének kiválasztása</span><span class="sxs-lookup"><span data-stu-id="a06ef-139">Assign a course location and classroom</span></span>
+- <span data-ttu-id="a06ef-140">Ajánlott szállodák a tanfolyam résztvevőinek</span><span class="sxs-lookup"><span data-stu-id="a06ef-140">Recommend hotels to course participants</span></span>
+- <span data-ttu-id="a06ef-141">A tanfolyam leírásának létrehozása, amelyet közzé lehet tenni az Alkalmazott önkiszolgáló rendszerben</span><span class="sxs-lookup"><span data-stu-id="a06ef-141">Create a course description, which you can then advertise on Employee self service</span></span>
 
-  ><span data-ttu-id="baea9-142">**Megjegyzés** Csak akkor törölhet egy tanfolyamot, ha nincs hozzá regisztráció.</span><span class="sxs-lookup"><span data-stu-id="baea9-142">**Note** You can delete a course only if no one has registered for it.</span></span> 
+  ><span data-ttu-id="a06ef-142">**Megjegyzés** Csak akkor törölhet egy tanfolyamot, ha nincs hozzá regisztráció.</span><span class="sxs-lookup"><span data-stu-id="a06ef-142">**Note** You can delete a course only if no one has registered for it.</span></span> 
 
-## <a name="course-statuses"></a><span data-ttu-id="baea9-143">Tanfolyam állapota</span><span class="sxs-lookup"><span data-stu-id="baea9-143">Course statuses</span></span>
-<span data-ttu-id="baea9-144">Az alábbi táblázat felsorolja a tanfolyam lehetséges állapotok és a műveleteket hajthatja végre, ha a tanfolyamhoz meghatározott állapota.</span><span class="sxs-lookup"><span data-stu-id="baea9-144">The following table lists the possible course statuses and the actions that you can complete when the course has a specific status.</span></span>
+## <a name="course-statuses"></a><span data-ttu-id="a06ef-143">Tanfolyam állapota</span><span class="sxs-lookup"><span data-stu-id="a06ef-143">Course statuses</span></span>
+<span data-ttu-id="a06ef-144">Az alábbi táblázat felsorolja a tanfolyam lehetséges állapotok és a műveleteket hajthatja végre, ha a tanfolyamhoz meghatározott állapota.</span><span class="sxs-lookup"><span data-stu-id="a06ef-144">The following table lists the possible course statuses and the actions that you can complete when the course has a specific status.</span></span>
 
 <table>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="baea9-145">Állapot</span><span class="sxs-lookup"><span data-stu-id="baea9-145">Status</span></span></th>
-<th><span data-ttu-id="baea9-146">Műveletek</span><span class="sxs-lookup"><span data-stu-id="baea9-146">Actions</span></span></th>
+<th><span data-ttu-id="a06ef-145">Állapot</span><span class="sxs-lookup"><span data-stu-id="a06ef-145">Status</span></span></th>
+<th><span data-ttu-id="a06ef-146">Műveletek</span><span class="sxs-lookup"><span data-stu-id="a06ef-146">Actions</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><span data-ttu-id="baea9-147"><strong>Létrehozva</strong></span><span class="sxs-lookup"><span data-stu-id="baea9-147"><strong>Created</strong></span></span></td>
+<td><span data-ttu-id="a06ef-147"><strong>Létrehozva</strong></span><span class="sxs-lookup"><span data-stu-id="a06ef-147"><strong>Created</strong></span></span></td>
 <td><ul>
-<li><span data-ttu-id="baea9-148">Tanfolyami adatok megadása és szerkesztése.</span><span class="sxs-lookup"><span data-stu-id="baea9-148">Enter and modify course information.</span></span></li>
-<li><span data-ttu-id="baea9-149">Módosítsa a tanfolyam állapotát <strong>Nyitottra</strong> így a munkavállalók regisztrálhatnak a tanfolyamra.</span><span class="sxs-lookup"><span data-stu-id="baea9-149">Change the course status to <strong>Open</strong> so that workers can register for the course.</span></span></li>
+<li><span data-ttu-id="a06ef-148">Tanfolyami adatok megadása és szerkesztése.</span><span class="sxs-lookup"><span data-stu-id="a06ef-148">Enter and modify course information.</span></span></li>
+<li><span data-ttu-id="a06ef-149">Módosítsa a tanfolyam állapotát <strong>Nyitottra</strong> így a munkavállalók regisztrálhatnak a tanfolyamra.</span><span class="sxs-lookup"><span data-stu-id="a06ef-149">Change the course status to <strong>Open</strong> so that workers can register for the course.</span></span></li>
 </ul></td>
 </tr>
 <tr class="even">
-<td><span data-ttu-id="baea9-150"><strong>Megnyitás</strong></span><span class="sxs-lookup"><span data-stu-id="baea9-150"><strong>Open</strong></span></span></td>
+<td><span data-ttu-id="a06ef-150"><strong>Megnyitás</strong></span><span class="sxs-lookup"><span data-stu-id="a06ef-150"><strong>Open</strong></span></span></td>
 <td><ul>
-<li><span data-ttu-id="baea9-151">Résztvevő regisztrálása a tanfolyamra</span><span class="sxs-lookup"><span data-stu-id="baea9-151">Register participants for the course.</span></span></li>
-<li><span data-ttu-id="baea9-152">A tanfolyam résztvevőinek eltávolítása.</span><span class="sxs-lookup"><span data-stu-id="baea9-152">Remove participants from the course.</span></span></li>
-<li><span data-ttu-id="baea9-153">Résztvevő regisztrálása a tanfolyamra</span><span class="sxs-lookup"><span data-stu-id="baea9-153">Confirm participants for the course.</span></span></li>
-<li><span data-ttu-id="baea9-154">A tanfolyam<strong> Zárt</strong> vagy <strong>Törölt</strong>állapotra történő változtatása.</span><span class="sxs-lookup"><span data-stu-id="baea9-154">Change the course status to <strong>Closed</strong> or <strong>Canceled</strong>.</span></span></li>
-<li><span data-ttu-id="baea9-155">Kérdőívek tervezése <strong>Visszaigazolt</strong>állapotú résztvevők számára.</span><span class="sxs-lookup"><span data-stu-id="baea9-155">Plan questionnaires for participants whose status is <strong>Confirmed</strong>.</span></span></li>
+<li><span data-ttu-id="a06ef-151">Résztvevő regisztrálása a tanfolyamra</span><span class="sxs-lookup"><span data-stu-id="a06ef-151">Register participants for the course.</span></span></li>
+<li><span data-ttu-id="a06ef-152">A tanfolyam résztvevőinek eltávolítása.</span><span class="sxs-lookup"><span data-stu-id="a06ef-152">Remove participants from the course.</span></span></li>
+<li><span data-ttu-id="a06ef-153">Résztvevő regisztrálása a tanfolyamra</span><span class="sxs-lookup"><span data-stu-id="a06ef-153">Confirm participants for the course.</span></span></li>
+<li><span data-ttu-id="a06ef-154">A tanfolyam<strong> Zárt</strong> vagy <strong>Törölt</strong>állapotra történő változtatása.</span><span class="sxs-lookup"><span data-stu-id="a06ef-154">Change the course status to <strong>Closed</strong> or <strong>Canceled</strong>.</span></span></li>
+<li><span data-ttu-id="a06ef-155">Kérdőívek tervezése <strong>Visszaigazolt</strong>állapotú résztvevők számára.</span><span class="sxs-lookup"><span data-stu-id="a06ef-155">Plan questionnaires for participants whose status is <strong>Confirmed</strong>.</span></span></li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td><span data-ttu-id="baea9-156"><strong>Lezárva</strong></span><span class="sxs-lookup"><span data-stu-id="baea9-156"><strong>Closed</strong></span></span></td>
-<td><span data-ttu-id="baea9-157">A tanfolyam anyaga:</span><span class="sxs-lookup"><span data-stu-id="baea9-157">You can reopen the course.</span></span></td>
+<td><span data-ttu-id="a06ef-156"><strong>Lezárva</strong></span><span class="sxs-lookup"><span data-stu-id="a06ef-156"><strong>Closed</strong></span></span></td>
+<td><span data-ttu-id="a06ef-157">A tanfolyam anyaga:</span><span class="sxs-lookup"><span data-stu-id="a06ef-157">You can reopen the course.</span></span></td>
 </tr>
 <tr class="even">
-<td><span data-ttu-id="baea9-158"><strong>Érvénytelenítve</strong></span><span class="sxs-lookup"><span data-stu-id="baea9-158"><strong>Canceled</strong></span></span></td>
-<td><span data-ttu-id="baea9-159">A tanfolyam anyaga:</span><span class="sxs-lookup"><span data-stu-id="baea9-159">You can reopen the course.</span></span></td>
+<td><span data-ttu-id="a06ef-158"><strong>Érvénytelenítve</strong></span><span class="sxs-lookup"><span data-stu-id="a06ef-158"><strong>Canceled</strong></span></span></td>
+<td><span data-ttu-id="a06ef-159">A tanfolyam anyaga:</span><span class="sxs-lookup"><span data-stu-id="a06ef-159">You can reopen the course.</span></span></td>
 </tr>
 </tbody>
 </table>
 
-## <a name="course-participants"></a><span data-ttu-id="baea9-160">Tanfolyam résztvevői</span><span class="sxs-lookup"><span data-stu-id="baea9-160">Course participants</span></span>
-<span data-ttu-id="baea9-161">A tanfolyam résztvevői olyan munkavállalók, akik részt vesznek egy tanfolyamon vagy eseményen.</span><span class="sxs-lookup"><span data-stu-id="baea9-161">Course participants are workers who participate in a training course or event.</span></span> <span data-ttu-id="baea9-162">Csak nyitott tanfolyamok résztvevőinek is regisztrálható.</span><span class="sxs-lookup"><span data-stu-id="baea9-162">You can only register participants for open courses.</span></span> <span data-ttu-id="baea9-163">A tanfolyamra regisztrálható résztvevők minimális és maximális számát az **Általános** gyorslapon a **Tanfolyamok** lapján határozhatja meg.</span><span class="sxs-lookup"><span data-stu-id="baea9-163">The minimum and maximum number of participants that you can register for a course is defined on the **General** FastTab on the **Courses** page.</span></span>
+## <a name="course-participants"></a><span data-ttu-id="a06ef-160">Tanfolyam résztvevői</span><span class="sxs-lookup"><span data-stu-id="a06ef-160">Course participants</span></span>
+<span data-ttu-id="a06ef-161">A tanfolyam résztvevői olyan munkavállalók, akik részt vesznek egy tanfolyamon vagy eseményen.</span><span class="sxs-lookup"><span data-stu-id="a06ef-161">Course participants are workers who participate in a training course or event.</span></span> <span data-ttu-id="a06ef-162">Csak nyitott tanfolyamok résztvevőinek is regisztrálható.</span><span class="sxs-lookup"><span data-stu-id="a06ef-162">You can only register participants for open courses.</span></span> <span data-ttu-id="a06ef-163">A tanfolyamra regisztrálható résztvevők minimális és maximális számát az **Általános** gyorslapon a **Tanfolyamok** lapján határozhatja meg.</span><span class="sxs-lookup"><span data-stu-id="a06ef-163">The minimum and maximum number of participants that you can register for a course is defined on the **General** FastTab on the **Courses** page.</span></span>
 
-<a name="workflow"></a><span data-ttu-id="baea9-164">Munkafolyamat</span><span class="sxs-lookup"><span data-stu-id="baea9-164">Workflow</span></span>
---------
+## <a name="workflow"></a><span data-ttu-id="a06ef-164">Munkafolyamat</span><span class="sxs-lookup"><span data-stu-id="a06ef-164">Workflow</span></span>
 
-<span data-ttu-id="baea9-165">Azok az alkalmazottak regisztrációja, akik a tanfolyamra az **Alkalmazotti önkiszolgáló rendszer** oldalán keresztül regisztrálnak, jóváhagyási munkafolyamaton mehet keresztül.</span><span class="sxs-lookup"><span data-stu-id="baea9-165">Employees who register for a course through the **Employee self service** page can have their registration routed through workflow for approval.</span></span> <span data-ttu-id="baea9-166">Munkafolyamatot tanfolyamhoz a **Tanfolyamok** oldal **Általános** gyorslapján lehet hozzárendelni.</span><span class="sxs-lookup"><span data-stu-id="baea9-166">You can assign a workflow to a course on the **General** FastTab on the **Courses** page.</span></span>
+<span data-ttu-id="a06ef-165">Azok az alkalmazottak regisztrációja, akik a tanfolyamra az **Alkalmazotti önkiszolgáló rendszer** oldalán keresztül regisztrálnak, jóváhagyási munkafolyamaton mehet keresztül.</span><span class="sxs-lookup"><span data-stu-id="a06ef-165">Employees who register for a course through the **Employee self service** page can have their registration routed through workflow for approval.</span></span> <span data-ttu-id="a06ef-166">Munkafolyamatot tanfolyamhoz a **Tanfolyamok** oldal **Általános** gyorslapján lehet hozzárendelni.</span><span class="sxs-lookup"><span data-stu-id="a06ef-166">You can assign a workflow to a course on the **General** FastTab on the **Courses** page.</span></span>
 
 
 
