@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 11528560ecabb848f2703d11c0a705b2a25d7614
-ms.sourcegitcommit: 180548e3c10459776cf199989d3753e0c1555912
+ms.openlocfilehash: f6a2bf4b15a067fd98059ecc41dfd62e4a91862e
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6112621"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193566"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>Eltávolított vagy elavult funkciók a korábbi kiadásokban
 
@@ -92,7 +92,7 @@ A Finance and Operations alkalmazások objektumaival kapcsolatban a [Technikai r
 | **Felváltotta másik szolgáltatás?**   | Nem |
 | **Érintett területek**         | Olasz lokalizáció |
 | **Telepítési beállítás**              | Összes |
-| **Állapot**                         | Elavult: 2020 október 1-től azt tervezzük, hogy már nem támogatjuk a **Feketelista jelentés (IT)- Funkcióhivatkozás IT-00001** elemet. |
+| **Állapot**                         | Elavult: 2020. október 1-től ennek a jelentésnek a támogatását nem tervezzük. |
 
 ### <a name="domestic-tax-report--feature-reference-it-00003"></a>Belföldi adóbevallás – Funkcióhivatkozás IT-00003
 
@@ -365,6 +365,16 @@ Ez a funkció az új nyereségadó-jegyzékekhez tartozó sablonok létrehozás�
 | **Telepítési beállítás**              | Összes |
 | **Állapot**                         | Eltávolítva a Finance and Operations 8.1-es verzió és Platform update 20 után. |
 
+### <a name="payroll-and-human-resources-for-russia"></a>Oroszországi Bérlista és Emberi erőforrások
+Orosz országspecifikus modul a személyzeti ügyintézési adatok kezeléséhez, az alkalmazottak időnyilvántartásának részleteihez, a bérelszámoláshoz és a fizetési kimutatások létrehozásához. 
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | A bérlista nem szerepel a Dynamics 365 portfólió globális stratégiai fókuszában. A partnerek és független szoftvergyártók jelentik a legjobb megoldást, hogy a helyi szabályozásnak és adófrissítésnek megfelelő bérszámfejtési funkciókhoz.|
+| **Felváltotta másik szolgáltatás?**   | Nincs|
+| **Érintett területek**         | Oroszországi Bérlista és Emberi erőforrások kezelés |
+| **Telepítési beállítás**              | Összes |
+| **Állapot**                         | Elavult: A funkció eltávolításának cél időkerete a 10.0-s verzió egyik frissítése. |
 
 ## <a name="finance-and-operations-80-with-platform-update-15"></a>Finance and Operations 8.0 és 15-as platformfrissítés
 Nincsenek funkciók eltávolítva vagy elavulttá nyilvánítva ebben a kiadásban. A 15-ös platformfrissítés halmozott és tartalmazza a 13-as platformfrissítés, a 14-es platformfrissítés a 15-ös platformfrissítés új vagy módosított szolgáltatásait.

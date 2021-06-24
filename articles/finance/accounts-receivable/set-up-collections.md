@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c5e08832d39f0428590780d47fd6b686048889cd
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 1ce37a85477d65b9592a32dcbe430d09f9dde62b
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835220"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189469"
 ---
 # <a name="set-up-collections"></a>Beszedések beállítása
 
@@ -40,8 +40,7 @@ Ez a cikk a beszedési funkciók beállítását ismerteti. A beszedési képess
 
 Ezeknek a pontoknak a részletesebb leírását a témakör többi része tartalmazza. 
 
-<a name="set-up-aging-period-definitions"></a>Korosítási időszakok definícióinak beállítása
--------------------------------
+## <a name="set-up-aging-period-definitions"></a>Korosítási időszakok definícióinak beállítása
 
 Állítson be egy korosítási időszak meghatározást. Egy korosításiidőszak-definíció meghatározza az oszlopokat, amelyek megjelennek a **Korosított egyenlegek**, **beszedési tevékenységek**, és **beszedési esetek** listaoldalon. Meghatározza továbbá a **beszedés** lapon megjelenő időszakokat. Ha be van állítva a vevőgyűjtő, akkor az ahhoz megadott definíció szerinti korosítási időszakok lesznek használatban. Ha nincsenek beállítva gyűjtők, akkor az alapértelmezett korosításiidőszak-definíció kerül használatra, amely a **Kinnlevőségek paraméterei** lapon van megadva. Ha nincs megadva alapértelmezett korosításiidőszak-definíció, akkor a **korosításiidőszak-definíciók** lapon található első korosításiidőszak-definíció kerül használatra.
 

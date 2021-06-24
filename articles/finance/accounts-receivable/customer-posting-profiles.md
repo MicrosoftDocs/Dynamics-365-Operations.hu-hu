@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b03d176791ee476ccddbf519471becafd086b0b7
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 07acb7ef5565fa4a63607f6828e46c1fcf8110cc
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826371"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193618"
 ---
 # <a name="customer-posting-profiles"></a>Vevői feladási profilok
 
@@ -28,8 +28,7 @@ ms.locfileid: "5826371"
 
 A vevői feladási profilok a vevői tranzakciók főkönyvbe történő feladását szabályozzák.
 
-<a name="customer-posting-profiles"></a>Vevői feladási profilok
--------------------------
+## <a name="customer-posting-profiles"></a>Vevői feladási profilok
 
 Vevői feladási profilok lehetővé teszik az Ön számára, hogy a főkönyvi számlákat és dokumentumbeállításokat az összes vevőhöz, vevő csoporthoz vagy egyetlen vevőhöz rendelhesse. Ezeket a beállításokat akkor használják értékesítési rendelés, szabadszöveges számlák, készpénz kifizetések, fizetési felszólítások és kamatlevelek létrehozása során. Néhány tranzakcióhoz feladói profilt választhat ki, ami különböző és elsőbbséget élvez azokkal a feladói profilokkal szemben, amelyek a tranzakcióhoz be vannak állítva ezen az oldalon. 
 
@@ -118,7 +117,6 @@ Ha azt szeretné, hogy a vevői tranzakciók feladási profiljai megegyezzenek, 
 </tbody>
 </table>
 
-### 
 
 ### <a name="table-restrictions"></a>**Táblakorlátozások**
 

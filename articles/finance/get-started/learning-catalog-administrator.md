@@ -12,12 +12,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: c3c69781aa7a67d22fe7d0fc70b1349673c5867c
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 289b51c1dcb2a30a09c643d7cc419af0627bd8d8
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897260"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193355"
 ---
 # <a name="learning-catalog-for-dynamics-365-finance-administrators"></a>Képzési katalógus Dynamics 365 Finance adminisztrátorok számára
 
@@ -60,6 +60,7 @@ A következő katalógus az alapismeretekből a meghatározott tartományokra, a
 
 | Tartalom | Leírás  | Formátum | Hossz    |
 |---------|--------------|--------|-----------|
+| [A Dynamics AX 2012 frissítése Finance and Operations alkalmazásokra](https://docs.microsoft.com/learn/paths/upgrade-ax-2012-finance-operations/) | Ismerje meg a Dynamics 2012 AX megoldásnak az Finance and Operations alkalmazásokra történő sikeres frissítéséhez szükséges legfontosabb elemeket és gyakorlati tanácsokat. A kulcs architektúrabeli különbségek kielemzésének első lépéseitől, a frissítési folyamattal, valamint a kód- és adatfrissítési eszközökkel való ismerkedéstől az integrációk, analitika és a legújabb lehetőségeken alapuló jelentéskészítés legjobb újratervezésének lehetőségéig. | Ingyenes, saját tempójú online tanulási útvonal | 7 óra |
 | [Finance and Operations: Frissítés 7.x-ről 8+-ra (DYN519PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-upgrading-from-7-x-to-8-10-30-18) | Csatlakozzon a következő TechTalkhoz, amely a 7.X – 8.X frissítési folyamatról fog szólni. Megvitatjuk a különböző forgatókönyveket és lépéseket a kód frissítésére és az adatok frissítésére. A bővíthetőségi kérelmekkel kapcsolatos eseteket, valamint a rájuk adott esetben a szükséges emeléseket is le fogjuk fedni. | Webes konferencia szabad rögzítése | 61 perc |
 | [7.0 (RTW)/7.1 (Release 1611) verzióról 7.2 (2017. június) verzióra frissítés (DYN338PAL2)](https://community.dynamics.com/365/b/techtalks/posts/how-to-upgrade-to-7-2-july-2017-from-7-0-rtw-7-1-release-1611-august-3-2017) | Ebben a munkamenetben elmagyarázzák, hogyan kell frissíteni a Dynamics 365 Finance and Operations alkalmazás 7.0 (RTW) és 7.1 (1611) verziókról a 7.2 (2017. július) verzióra. Egyértelmű megkülönböztetést teszünk az élő vevők és a folyamatban lévő projektek (még nem élők) között. | Webes konferencia szabad rögzítése | 58 perc |
 | [AX2012 – Dynamics 365 for Operations frissítés (VIR817PAL2) ](https://community.dynamics.com/365/b/techtalks/posts/ax2012-to-dynamics-365-for-operations-upgrade-april-20-2017) | Ez a Tech Talk áttekintést nyújt arról, hogyan lehet frissíteni a kódot és az adatokat a Dynamics AX 2012 rendszerről a Dynamics 365 for Operations rendszerre. | Webes konferencia szabad rögzítése | 45 perc |

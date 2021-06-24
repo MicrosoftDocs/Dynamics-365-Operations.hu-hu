@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4d2f1820f79798488c73f20f9c688fa877af4f1b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 4960e8418de473d20c9a1948ca606ae76ad1ac19
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5816532"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189716"
 ---
 # <a name="demand-forecasting-setup"></a>Igény-előrejelzési beállítások
 
@@ -88,8 +88,7 @@ A **Felosztási kulcsok** lapon beállíthatja az **Előrejelzési algoritmus pa
 - **Szezonalitás tipp**: A szezonális adatokhoz az előrejelzési pontosság javítása érdekében adjon meg egy tippet az előrejelzési modellhez. Formátum: egész szám, amely az időszakok számát, jelenti, amikor egy minta ismétlése szükséges. Például a "6" értéket írja be a 6 havonta önmagukat ismétlő adatokhoz.
 - **Tesztkészlet mérete százalékban**: Az előrejelzés pontosságának számításához tesztkészletként használni kívánt előzményadatok százaléka. 
 
-<a name="additional-resources"></a>További erőforrások
---------
+## <a name="additional-resources"></a>További erőforrások
 
 [Igény-előrejelzés áttekintése](introduction-demand-forecasting.md)
 

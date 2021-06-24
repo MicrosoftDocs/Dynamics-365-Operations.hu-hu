@@ -1,8 +1,8 @@
 ---
 title: Tárgyi eszközök beállítása
 description: Ez a témakör áttekintést nyújt a Tárgyi eszközök modul beállításához.
-author: ShylaThompson
-ms.date: 01/12/2018
+author: moaamer
+ms.date: 06/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,24 +15,20 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ff025984307f979ce98947f2225971041ebbdbae
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: f624ddc2e7b8f59a2ba002d757ce68ee222a7223
+ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818536"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "6216586"
 ---
 # <a name="set-up-fixed-assets"></a>Tárgyi eszközök beállítása
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör áttekintést nyújt a **Tárgyi eszközök** modul beállításához.
+Ez a témakör áttekintést nyújt a **Tárgyi eszközök** modul beállításához. 
 
-## <a name="overview"></a>Áttekintés
-
-A Tárgyi eszközök lehetőségen belül a paraméterek az általános viselkedést szabályozzák.
-
-A tárgyieszköz-csoportok lehetővé teszik az eszközök csoportosítását, valamint alapértelmezett attribútumok meghatározását egy csoporthoz rendelt minden eszköz esetén. A tárgyieszköz-csoportokhoz a rendszer könyveket társít. A könyvek nyomon követik egy tárgyi eszköz időben változó pénzügyi értékét az értékcsökkenési profil értékcsökkenési konfigurációjának használatával.
+A Tárgyi eszközök lehetőségen belül a paraméterek az általános viselkedést szabályozzák. A tárgyieszköz-csoportok lehetővé teszik az eszközök csoportosítását, valamint alapértelmezett attribútumok meghatározását egy csoporthoz rendelt minden eszköz esetén. A tárgyieszköz-csoportokhoz a rendszer könyveket társít. A könyvek nyomon követik egy tárgyi eszköz időben változó pénzügyi értékét az értékcsökkenési profil értékcsökkenési konfigurációjának használatával.
 
 A tárgyi eszközök létrehozásukkor egy cikkcsoporthoz társulnak. Alapértelmezés szerint a tárgyieszköz-csoporthoz rendelt könyveket a tárgyi eszközhöz társítja a rendszer. A főkönyvbe történő feladásra konfigurált könyveket a rendszer egy feladási profillal társítja. A főkönyvi számlákat a feladási profilban határozza meg a rendszer könyvenként, és a tárgyieszköz-tranzakciók feladásakor használja őket.
 
@@ -49,6 +45,8 @@ Az értékcsökkenési profilok beállítása után létre kell hoznia az eszkö
 Az elsődleges értékcsökkenési profil minden könyvhöz hozzá van rendelve. A könyveknek alternatív vagy alternatív értékcsökkenési profiljuk is van, ha az ilyen típusú profilt kell alkalmazni. Ha automatikusan fel akarja venni a tárgyi eszköz könyvet az értékcsökkenési futtatásba, engedélyeznie kell az **Értékcsökkenés kiszámítása** lehetőséget. Ha ez a beállítás nincs engedélyezve egy eszközhöz, az értékcsökkenési javaslat kihagyja az eszközt.
 
 Származtatott könyveket is beállíthat. A megadott származtatott tranzakciók az elsődleges tranzakció pontos másolataként lesznek feladva a származtatott könyvekkel szemben. Emiatt a származtatott tranzakciókat általában beszerzésekre és értékesítésekre állítják be, nem pedig értékcsökkenési tranzakciókra. További információkért lásd: [Értékmodellek beállítása](tasks/set-up-value-models.md).
+
+A **Tárgyi eszközök paraméterei** lapon elérhető beállítással be- és ki kapcsolhatja a zárolási funkciókat. Ezt az funkciót engedélyezheti a **Szolgáltatások kezelése munkaterületen**.
 
 ## <a name="fixed-asset-posting-profiles"></a>Tárgyieszköz-feladási profilok
 
@@ -73,6 +71,8 @@ Az utolsó lépés a tárgyi eszköz paramétereinek frissítése.
 A **Tőkésítési küszöbérték** mező határozza meg az értékcsökkenés által érintett eszközöket. Ha egy beszerzési sor tárgyi eszközként van jelölve, de nem felel meg a megadott tőkésítési küszöbértéknek, a tárgyi eszközt a rendszer továbbra is létrehozza vagy frissíti, de az **Értékcsökkenés számítása** beállítása **Nem**. Ezért az értékcsökkenés nem vonatkozik automatikusa az eszközre az értékcsökkenési javaslatok részeként.
 
 Egy fontos beállítás az **Értékcsökkenési kiigazítások automatikus létrehozása selejtezéskor**. Amikor ez a lehetőség **Igen**, ez a funkció automatikusan módosítja az eszköz értékcsökkenését az értékcsökkenési beállítások alapján az eszköz értékesítésének időpontjában. Készpénzfizetési engedmény levonására is van lehetőség a beszerzési összegből, amikor szállítói számla használatával tárgyi eszközt szerez be.
+
+Az **Eszközkönyvek zárolása az értékcsökkenési naplóban** paraméter segítségével zárolhatja az eszközkönyveket az értékcsökkenési naplókban. Értékcsökkenési tranzakciók feladása során a rendszer ellenőrzi, hogy ugyanazt az eszközkönyvet nem adta-e hozzá egynél több értékcsökkenési naplóhoz. Ha igen, az eszközkönyv zárolva lesz, és a feladás leáll. Ha egy eszközkönyv-azonosító zárolt naplóban van, zárolása automatikusan feloldódik, amikor az eredeti napló feladása befejeződik. A napló kézzel is feloldható. 
 
 A **Beszerzési rendelések** gyorslapon beállíthatja, hogyan szeretné létrehozni az eszközöket a beszerzési folyamat részeként. Az első lehetőség neve a **Beszerzés modulból való tárgyieszköz-beszerzés engedélyezése**. Ha ez a beállítás **Igen**, az eszközbeszerzésre a számla feladásakor kerül sor. Ha ez a beállítás **Nem**, akkor is beletehet egy tárgyi eszközt egy beszerzési rendelésbe és számlába, de a beszerzés nem lesz feladva. A feladást külön lépésként kell elvégezni a Tárgyieszköz-naplóban. A **Tárgyi eszköz létrehozása termékbevételezés vagy számla feladása közben** beállítással a feladás során „menet közben” új tárgyi eszközt hozhat létre. Ezért az eszközt nem kell a tranzakció előtt tárgyi eszközként létrehozni. Az utolsó beállítási lehetőség, a **Tárgyi eszközök létrehozásának ellenőrzése a sorok bevitelekor** csak a beszerzési igényekre alkalmazható.
 

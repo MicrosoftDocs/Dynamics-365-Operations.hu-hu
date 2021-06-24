@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4de7f7f5f501024b7698736ded80405b9291cb58
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 43ab01d36f032e36a0daed6f94897bba42f8a189
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897036"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188997"
 ---
 # <a name="get-started-with-financial-reporting"></a>Financial Reporting – első lépések 
 
@@ -28,8 +28,7 @@ ms.locfileid: "5897036"
 
 Ez a témakör azt ismerteti, hol érheti el a pénzügyi jelentéseket, és hogyan használhatja a pénzügyi jelentési szolgáltatásokat. Emellett az elérhető alapértelmezett pénzügyi jelentések leírását is tartalmazza.
 
-<a name="accessing-financial-reporting"></a>Pénzügyi jelentéskészítés elérése
------------------------------
+## <a name="accessing-financial-reporting"></a>Pénzügyi jelentéskészítés elérése
 
 A **Pénzügyi jelentéskészítés** menüt a következő helyen találhatja meg:
 

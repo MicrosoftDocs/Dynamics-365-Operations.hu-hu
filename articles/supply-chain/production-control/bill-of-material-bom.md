@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 037b6de9c23947b8b67faa12f2fc64afa089949c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: bb9b26eaedd9e9645209ce0b4b767170cccfdc48
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811774"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6190112"
 ---
 # <a name="bills-of-materials-and-formulas"></a>Anyagjegyzékek és receptúrák
 
@@ -29,8 +29,7 @@ ms.locfileid: "5811774"
 
 Ez a témakör a termékek és termékváltozatok meghatározásának alapvető részét képező anyagjegyzékekkel (AJ) és receptúrákkal kapcsolatban tartalmaz tájékoztatást. Az anyagjegyzékek és receptúrák határozzák meg az adott termékre vonatkozóan a szükséges anyagokat vagy összetevőket. A receptúrák emellett egy adott termelési környezetben kapott társ- és melléktermékeket is meghatároznak. 
 
-<a name="bills-of-materials"></a>Anyagjegyzékek
-------------------
+## <a name="bills-of-materials"></a>Anyagjegyzékek
 
 Az anyagjegyzék (AJ) határozza meg azokat az összetevőket, amelyek szükségesek egy termék előállításához. Az összetevők lehetnek nyersanyagok, félkész termékek vagy alapanyagok. Bizonyos esetekben a szolgáltatások hivatkozhatók az anyagjegyzékben. Azonban az anyagjegyzékek általában a szükséges *anyagi erőforrások* leírását tartalmazzák.  
 

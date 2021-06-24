@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 484a80d9eeb0b652a8363a9ea49f58f9780b6968
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 06e2439da464c53fd648aaf3e3659babdbc50acd
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908928"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188934"
 ---
 # <a name="routes-and-operations"></a>Útvonalak és műveletek
 
@@ -29,8 +29,7 @@ ms.locfileid: "5908928"
 
 Ez a témakör információkat nyújt az útvonalakkal és a műveletekkel kapcsolatban. Az útvonal határozza meg egy termék vagy termékváltozat előállításának folyamatát. Leírja az termelési folyamat minden egyes lépését (műveletét), valamint meghatározza a lépések végrehajtásának sorrendjét is. Az útvonal minden egyes lépés esetében meghatározza a szükséges üzemi erőforrásokat, beállítási időt és futtatási időt, továbbá azt, hogy miként kell számítani a költséget.
 
-<a name="overview"></a>Áttekintés
---------
+## <a name="overview"></a>Áttekintés
 
 Az útvonal leírja azoknak a műveleteknek a sorrendjét, amelyek egy termék vagy termékváltozat előállításához szükségesek. Az útvonal minden egyes műveletnél meghatározza azt is, hogy milyen üzemi erőforrások szükségesek, mennyi idő kell a művelet beállítására és végrehajtására továbbá azt is, hogy miként kell kiszámítani a költséget. Azonos útvonallal több termék is előállítható, de meghatározhat egyedi útvonalat is minden egyes termékhez vagy termékváltozathoz. Akár egyetlen termékhez is létrehozhat több útvonalat. Ebben az esetben az útvonal olyan tényezők alapján váltakozik, mint például az előállítandó mennyiség. Az útvonal meghatározása a Supply Chain Management szolgáltatásban négy olyan különálló elemből áll, amelyek együttesen leírják a termelési folyamatot:
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: b52a1720077c055d416f04cbbe9ec46cbcf319bc
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 808080d9e84c4af1b061d5a4ce76d5fa309e66f7
+ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020411"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "6216743"
 ---
 # <a name="rebate-management-posting-setup"></a>Visszatérítés-kezelés feladási beállítása
 
@@ -43,7 +43,7 @@ A következő táblázat leírja az egyes visszatérítés-kezelési feladási p
 | Leírás | Adja meg a profil leírását. |
 | Modul | A profilhoz társított visszatérítések és jogdíjak típusának kiválasztása (*Vevő* vagy *Szállító*). |
 | Típus | Válassza ki a profil típusát (*Visszatérítés* vagy *Jogdíj*). |
-| Kifizetés típusa | <p>Ez a mező a feladott visszatérítés kimenetének formátumát határozza meg.<p><p>Ha a **Típus** mező *Visszatérítésre* van állítva, a következő értékek érhetők el:</p><ul><li>*Nincs* – nincs alapértelmezett feladási típus. Ezért a feldolgozás során meg kell határozni a típust.</li><li>*Fizetés kötelezettségek használatával* – A visszatérítés feladása esetén a rendszer létrehoz egy szállítói számlát az átutalási szállítóhoz, amely be van állítva a visszatérítésben szereplő vevőn.</li><li>*Vevői levonások* – a visszatérítés feladásakor a rendszer létrehoz egy vevői levonási naplót a visszatérítést kapó vevőhöz.</li><li>*Adószámlavevő levonásai* – a visszatérítés feladásakor a rendszer létrehoz egy szabadszöveges számlát a visszatérítést kapó vevőhöz.</li><li>*Kereskedelmi kiadás* – a visszatérítés feladásakor a rendszer létrehoz egy vevői levonási naplót a visszatérítést kapó vevőhöz.</li><li>*Jelentéskészítés* – a visszatérítés feladásakor a rendszer létrehoz egy vevői levonási naplót a visszatérítést kapó vevőhöz.</li></ul><p>Ha a **Típus** mező *Jogdíjra* van állítva, a következő értékek érhetők el:</p><ul><li>*Nincs* – nincs alapértelmezett feladási típus. Ezért a feldolgozás során meg kell határozni a típust.</li><li>*Fizetés kötelezettségek használatával* – A visszatérítés feladása esetén a rendszer létrehoz egy szállítói számlát a visszatérítésben szereplő szállítói számlához.</li><li>*Jelentéskészítés* – A visszatérítés feladása esetén a rendszer létrehoz egy szállítói számlát a visszatérítésben szereplő szállítói számlához.</li></ul><p>További információkat a következő [Fizetési típusok](#payment-types) szakaszban találhat. |
+| Kifizetés típusa | <p>Ez a mező a feladott visszatérítés kimenetének formátumát határozza meg.<p><p>Ha a **Típus** mező *Visszatérítésre* van állítva, a következő értékek érhetők el:</p><ul><li>*Fizetés kötelezettségek használatával* – Az ügyfélvisszatérítés feladása esetén a rendszer létrehoz egy szállítói számlát az átutalási szállítóhoz, amely be van állítva a visszatérítésben szereplő vevőn. Az ügyfélvisszatérítés feladása esetén a rendszer létrehoz egy szállítói számlát a visszatérítésben szereplő szállítói számlához.</li><li>*Vevői levonások* – a visszatérítés feladásakor a rendszer létrehoz egy vevői levonási naplót a visszatérítést kapó vevőhöz.</li><li>*Adószámlavevő levonásai* – a visszatérítés feladásakor a rendszer létrehoz egy szabadszöveges számlát a visszatérítést kapó vevőhöz.</li><li>*Kereskedelmi kiadás* – a visszatérítés feladásakor a rendszer létrehoz egy vevői levonási naplót a visszatérítést kapó vevőhöz.</li><li>*Jelentéskészítés* – a visszatérítés feladásakor a rendszer létrehoz egy vevői levonási naplót a visszatérítést kapó vevőhöz.</li></ul><p>Ha a **Típus** mező *Jogdíjra* van állítva, a következő értékek érhetők el:</p><ul><li>*Fizetés kötelezettségek használatával* – A visszatérítés feladása esetén a rendszer létrehoz egy szállítói számlát a visszatérítésben szereplő szállítói számlához.</li><li>*Jelentéskészítés* – A visszatérítés feladása esetén a rendszer létrehoz egy szállítói számlát a visszatérítésben szereplő szállítói számlához.</li></ul><p>További információkat a következő [Fizetési típusok](#payment-types) szakaszban találhat. |
 | Cég | Válassza ki a vállalatot (jogi személyt), amelynél a fedezetek elhatárolása és a követelések kifizetése történik. |
 
 ### <a name="payment-types"></a>Kifizetéstípusok

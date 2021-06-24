@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b4c7b9426cc98f62cd7a62b841c0f90c7c57889d
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 82d94be7a0ce915b0a2b86fb3894435afdd6f37a
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821961"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6187844"
 ---
 # <a name="audit-policy-violations-and-cases"></a>A könyvvizsgálati irányelvmegsértések és esetek
 
@@ -28,8 +28,7 @@ ms.locfileid: "5821961"
 
 Ez a cikk bemutatja, hogyan jönnek létre a naplózási ügyek a naplózási irányelvszabályok megsértése által. Információkat tartalmaz továbbá arról, hogyan alkalmazzák a naplózási irányelvek a dokumentumok határidő-intervallum szerinti kiválasztását.
 
-<a name="how-audit-cases-are-generated"></a>Könyvvizsgálati esetek létrehozásának módja
------------------------------
+## <a name="how-audit-cases-are-generated"></a>Könyvvizsgálati esetek létrehozásának módja
 
 Könyvelési irányelvek használatával azonosítani lehet a költségjelentéseket, a beszerzési rendeléseket és a szállítói számlákat, amelyek nem felelnek meg az irányelvszabályként meghatározott és konfigurált üzleti szabályoknak. 
 

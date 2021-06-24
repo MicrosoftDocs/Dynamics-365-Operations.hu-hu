@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c8dcb5c9860cb617612dade03b55b8bd4a0983b6
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 41c64607f5dfbe00bd8a2e7cc80fb4771f11a6d1
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826618"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188440"
 ---
 # <a name="sales-tax-overview"></a>Áfa áttekintése
 
@@ -28,8 +28,7 @@ ms.locfileid: "5826618"
 
 Ez a témakör a forgalmiadó-rendszerről nyújt áttekintést. Bemutatja az áfa beállításának az elemeit, és azt, hogy ezek hogyan kapcsolódnak egymáshoz.
 
-<a name="overview"></a>Áttekintés
---------
+## <a name="overview"></a>Áttekintés
 
 A forgalmiadó-keretrendszer számos különböző típusú közvetett adót támogat, mint például a forgalmi adót, általános forgalmi adót (áfa), az áruk és szolgáltatások adóját (GST), darabszám szerinti díjakat és adóelőleget. Ezen adók kiszámítása és dokumentálása beszerzési és értékesítési tranzakciók során történik. Rendszeres időközönként be kell vallani és be kell fizetni őket az adóhatóságoknak. 
 

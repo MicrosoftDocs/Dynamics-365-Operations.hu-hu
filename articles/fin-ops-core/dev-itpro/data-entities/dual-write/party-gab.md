@@ -9,12 +9,12 @@ ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-02-22
-ms.openlocfilehash: e2b0abb2826f81ed87b4f0f37dba32c1d8d749c2
-ms.sourcegitcommit: 194d68b24cd36db21e9029044bed18983fd9810c
+ms.openlocfilehash: c62290506d32579d926ad1a1d6f090845c0d0f26
+ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "5937886"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "6216612"
 ---
 # <a name="party-and-global-address-book"></a>Fél és globális címjegyzék
 
@@ -143,16 +143,22 @@ Az elektronikus címek csak ebben a rácsban érhetők el. A későbbi verziókb
 
 ## <a name="setup"></a>Beállítás
 
-1. Telepítse a [Kettős írású alkalmazás vezérlési megoldásának](https://aka.ms/dual-write-app) (2.2.2.60 vagy újabb) legújabb verzióját.
+1. Nyissa meg az ügyfélkapcsolati alkalmazáskörnyezetét.
 
-2. [Kettős írású fél és globális címjegyzék megoldások](https://aka.ms/dual-write-gab) telepítése.
+2. Telepítse a [Kettős írású alkalmazás vezérlési megoldásának](https://aka.ms/dual-write-app) (2.2.2.60 vagy újabb) legújabb verzióját.
 
-3. Állítsa le a következő leképezéseket, mert már nem szükségesek. Ehelyett futtassa a `Contacts V2 (msdyn_contactforparties)` leképezést.
+3. [Kettős írású fél és globális címjegyzék megoldások](https://aka.ms/dual-write-gab) telepítése.
+
+4. Nyissa meg a Finance and Operations alkalmazást. Nyissa meg az Adatkezelés modult, és válassza a Kettős írás lapot. Megnyílik a kettős írás adminisztrációja lap.
+
+5. A 2. és a 3. lépésben telepített mindkét megoldást alkalmazza a [Megoldás alkalmazása](link-your-environment.md) funkcióval.
+
+6. Állítsa le a következő leképezéseket, mert már nem szükségesek. Ehelyett futtassa a `Contacts V2 (msdyn_contactforparties)` leképezést.
 
     + CDS Kapcsolattartók V2 és Kapcsolattartók (vevői kapcsolattartókra vonatkozik)
     + CDS Kapcsolattartók V2 és Kapcsolattartók (szállítói kapcsolattartókra vonatkozik)
 
-4. A felek funkcióira vonatkozó következő entitásleképezések frissülnek, ezért a legújabb verziót kell alkalmazni ezekre a leképezésekre.
+7. A felek funkcióira vonatkozó következő entitásleképezések frissülnek, ezért a legújabb verziót kell alkalmazni ezekre a leképezésekre.
 
     Megfeleltetés | Frissítés erre a verzióra | Változások
     ---|---|---
@@ -176,7 +182,7 @@ Az elektronikus címek csak ebben a rácsban érhetők el. A későbbi verziókb
     `Salutations (msdyn_salutations)` | 1.0.0.0 | Ez egy új leképezés, amely ezen kiadás részeként lett hozzáadva.
     `Employment job functions (msdyn_employmentjobfunctions)` | 1.0.0.0 | Ez egy új leképezés, amely ezen kiadás részeként lett hozzáadva.
 
-5. A fenti leképezések futtatása előtt manuálisan kell frissítenie az integrációs kulcsokat a következő lépéseknek megfelelően. Majd válassza a **Mentés** lehetőséget.
+8. A fenti leképezések futtatása előtt manuálisan kell frissítenie az integrációs kulcsokat a következő lépéseknek megfelelően. Majd válassza a **Mentés** lehetőséget.
 
     | Megfeleltetés | Kulcsok |
     |-----|------|
@@ -185,7 +191,7 @@ Az elektronikus címek csak ebben a rácsban érhetők el. A későbbi verziókb
     | Vevő/szállító kapcsolattartója | msdyn_contactforpartynumber [Fél kapcsolattartójának száma]<br>msdyn_associatedcompanyid.cdm_companycode [Társított vállalat (Vállalatkód)] |
     | Szállító | msdyn_vendoraccountnumber [Szállító számlaszáma]<br>msdyn_company.cdm_companycode [Vállalat (Vállalatkód)]|
 
-6. A Dataverse-ben az ismétlődések észlelési szabályaiban szereplő karakterkorlátok száma 450-ről 700 karakterre nő. Ezzel a korláttal egy vagy több kulcsot adhat hozzá az ismétlődések észlelési szabályaihoz. Bontsa ki a **Partnerek** tábla ismétlődések észlelési szabályát a következő mezők beállításával.
+9. A Dataverse-ben az ismétlődések észlelési szabályaiban szereplő karakterkorlátok száma 450-ről 700 karakterre nő. Ezzel a korláttal egy vagy több kulcsot adhat hozzá az ismétlődések észlelési szabályaihoz. Bontsa ki a **Partnerek** tábla ismétlődések észlelési szabályát a következő mezők beállításával.
 
     | Mező | Érték |
     |-------|-------|
@@ -201,7 +207,7 @@ Az elektronikus címek csak ebben a rácsban érhetők el. A későbbi verziókb
 
     ![Ismétlődő szabály a Számlákhoz](media/duplicate-rule-1.PNG)
 
-7. Bontsa ki a **Kapcsolattartók** tábla ismétlődések észlelési szabályát a következő mezők beállításával.
+10. Bontsa ki a **Kapcsolattartók** tábla ismétlődések észlelési szabályát a következő mezők beállításával.
 
     | Mező | Érték |
     |-------|-------|
@@ -217,9 +223,9 @@ Az elektronikus címek csak ebben a rácsban érhetők el. A későbbi verziókb
 
     ![Ismétlődő szabály a Kapcsolattartókhoz](media/duplicate-rule-2.PNG)
 
-8. Ha Ön kettős írású felhasználó, hajtsa végre a [Frissítés a fél és globális címjegyzék modelljére](upgrade-party-gab.md) megadott utasításokat, és frissítse az adatait.
+11. Ha Ön kettős írású felhasználó, hajtsa végre a [Frissítés a fél és globális címjegyzék modelljére](upgrade-party-gab.md) megadott utasításokat, és frissítse az adatait.
 
-9. Futtassa a leképezéseket a következő sorrendben. Ha a „Projektellenőrzés sikertelen. Hiányzó célmező...” hibaüzenet jelenik meg, akkor nyissa meg a leképezést, és válassza a **Táblák frissítése** lehetőséget. Ezután futtassa a leképezést.
+12. Futtassa a leképezéseket a következő sorrendben. Ha a „Projektellenőrzés sikertelen. Hiányzó célmező...” hibaüzenet jelenik meg, akkor nyissa meg a leképezést, és válassza a **Táblák frissítése** lehetőséget. Ezután futtassa a leképezést.
 
     Finance and Operations alkalmazás | Customer Engagement alkalmazás  
     ----------------------------|------------------------

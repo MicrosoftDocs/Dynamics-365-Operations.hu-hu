@@ -2,7 +2,7 @@
 title: Áfaszámítás (előzetes verzió)
 description: Ez a témakör az adószámítási funkció általános hatókörét és jellemzőit ismerteti.
 author: wangchen
-ms.date: 04/12/2021
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: b26472e195d9bdbba340a118c106de1a4dc79b34
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 9daa6e001200d03a2639974fb6de618d77ddf09d
+ms.sourcegitcommit: cb282e8d2306ab71adf80a84346a6863d2d019e8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021932"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "6184101"
 ---
 # <a name="tax-calculation-preview"></a>Áfaszámítás (előzetes verzió)
 
@@ -31,6 +31,9 @@ ms.locfileid: "6021932"
 Az adószámítás egy hiperskálázható több-bérlős szolgáltatás, amely lehetővé teszi a Global Tax Engine számára, hogy automatizálja és egyszerűsítse az adómeghatározási és számítási folyamatot. Az adómotor teljesen konfigurálható. A konfigurálható elemek közé tartozik többek között az adóköteles adatmodell, az adókód, az adóalkalmazási mátrix és az adószámítási képlet. Az adómotor a Microsoft Azure alapszolgáltatási platformon fut, és modern technológiát és exponenciális méretezhetőséget kínál.
 
 Az adószámítás integrálva van a Dynamics 365 Finance és a Dynamics 365 Supply Chain Management szolgáltatásokkal. Végül integrálva lesz a Dynamics 365 Project Operations, Dynamics 365 Commerce és más saját és harmadik féltől származó alkalmazásokkal is.
+
+> [!IMPORTANT]
+> Ha engedélyezi az Adószámítás szolgáltatást, a kapcsolódó adatokon bizonyos műveleteket a szolgáltatási adatokat karbantartó adatforrástól függően más adatközpontban is végre lehet hajtani. Az Adószámítási szolgáltatás engedélyezése előtt tekintse át a [Feltételeket és kikötéseket](../../fin-ops-core/fin-ops/get-started/public-preview-terms.md). Az Ön személyes adatainak védelme fontos a számunkra. További információt az [adatvédelmi nyilatkozatban találhat](https://go.microsoft.com/fwlink/?LinkId=521839).
 
 Az adószámítás egy mikroszolgáltatás-alapú adómotor, amely exponenciális méretezhetőséget kínál. A következő feladatok elvégzésében segíthet Önnek:
 

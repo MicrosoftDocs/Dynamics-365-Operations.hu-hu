@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2018-11-1
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: bc87972b1cd2e04d31a3d48132cd1de42353698d
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 2ac8dc8787ab0bdb796ec849f9ede3f697b09680
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5801917"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193644"
 ---
 # <a name="set-up-the-fiscal-integration-for-commerce-channels"></a>A Commerce csatornák pénzügyi integrálásának beállítása
 
@@ -86,7 +86,7 @@ Mielőtt a pénzügyi integráció funkciót használná, konfigurálja a követ
 
         **Példák**
 
-        |   | Formátum | Példa |
+        | Paraméter  | Formátum | Példa |
         |---|--------|---------|
         | **Áfaszázalékok beállítása** | value : VATrate | 1 : 2000, 2 : 1800 |
         | **Áfakódok leképezése** | VATcode : value | vat20 : 1, vat18 : 2 |

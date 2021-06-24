@@ -12,12 +12,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: fee455fe1e51ac99fe6f38a63b48c7b92d32ac7a
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 01d6d79c482871c9f39898298292b21367c9a48e
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897064"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193331"
 ---
 # <a name="learning-catalog-for-implementation-project-managers-working-with-dynamics-365-finance"></a>Megvalósítási projektmenedzsment képzési katalógus megvalósítása ezzel: Dynamics 365 Finance
 
@@ -88,10 +88,10 @@ A következő katalógus az alapismeretekből a meghatározott tartományokra, a
 
 ## <a name="exams"></a>Vizsgák<a name="exams"></a>
 
-| Tartalom  | Leírás  | Formátum   |
-|-------------|-----------------|-------------|
-| [Vizsga MB-300: Microsoft Dynamics 365 Unified Operations Core](/learn/certifications/exams/mb-300?wt.mc_id=learningredirect_certs-web-wwl) | Ez a vizsga a következő műszaki feladatok végrehajtásának képességét méri fel: gyakori funkciók és végrehajtási eszközök használata; a biztonság, a folyamatok és a beállítások konfigurálása; adatáttelepítés végrehajtása; a megoldás érvényesítése és támogatása. | Vizsga; a költség régiónként változik | |
-| [Vizsga MB-310: Microsoft Dynamics 365 for Finance and Operations, pénzügyek](/learn/certifications/exams/mb-310?wt.mc_id=learningredirect_certs-web-wwl) | Ez a vizsga a következő műszaki feladatok végrehajtásának képességét méri fel: a pénzügyi menedzsment beállítása és konfigurálása; közös folyamatok kezelése és alkalmazása; kötelezettségek és követelések végrehajtása és kezelése a költségvetés és a tárgyi eszközök kezelése. | Vizsga; a költség régiónként változik | |
+| Tartalom | Leírás | Formátum |
+|---|---|---|
+| [Vizsga MB-300: Microsoft Dynamics 365 Unified Operations Core](/learn/certifications/exams/mb-300?wt.mc_id=learningredirect_certs-web-wwl) | Ez a vizsga a következő műszaki feladatok végrehajtásának képességét méri fel: gyakori funkciók és végrehajtási eszközök használata; a biztonság, a folyamatok és a beállítások konfigurálása; adatáttelepítés végrehajtása; a megoldás érvényesítése és támogatása. | Vizsga; a költség régiónként változik |
+| [Vizsga MB-310: Microsoft Dynamics 365 for Finance and Operations, pénzügyek](/learn/certifications/exams/mb-310?wt.mc_id=learningredirect_certs-web-wwl) | Ez a vizsga a következő műszaki feladatok végrehajtásának képességét méri fel: a pénzügyi menedzsment beállítása és konfigurálása; közös folyamatok kezelése és alkalmazása; kötelezettségek és követelések végrehajtása és kezelése a költségvetés és a tárgyi eszközök kezelése. | Vizsga; a költség régiónként változik |
 | [Microsoft tanúsított: Dynamics 365 for Finance and Operations, pénzügyi funkciós konzulens munkatárs](https://www.microsoft.com/learning/d365-functional-consultant-financials.aspx) | Microsoft tanúsított: A Dynamics 365 for Finance and Operations, pénzügyi funkciós konzulensek egyesítik a globális pénzügyeket és műveleteket, és automatizálják a feladatokat és a munkafolyamatokat, egyszerűsítik a vevői rendelést, az értékesítést, a számlázást és a jelentéskészítést. | Tanúsítás; a költség régiónként változik |
 
 

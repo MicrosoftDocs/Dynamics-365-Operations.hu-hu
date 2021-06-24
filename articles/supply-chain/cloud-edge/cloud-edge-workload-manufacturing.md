@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: cabeln
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: a6d6979093c67d2d89b88678712f4c0205c63194
-ms.sourcegitcommit: 639175a39da38edd13e21eeb5a1a5ca62fa44d99
+ms.openlocfilehash: 9cd7dd8b9241171bdfdb3cc1379211a2fe99bbe1
+ms.sourcegitcommit: 8d50c905a0c9d4347519549b587bdebab8ffc628
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "5899095"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "6183996"
 ---
 # <a name="manufacturing-execution-workloads-for-cloud-and-edge-scale-units"></a>Gyártási végrehajtás munkaterhelései felhőalapú és peremhálózat-lépték szerinti egységekhez
 
@@ -72,6 +72,7 @@ A következő gyártási végrehajtási feladatok jelenleg futtathatók a szám�
 - Selejt jelentése
 - Közvetett tevékenység
 - Szünet
+- Készként jelentés és berakodása (a raktár végrehajtási terhelésének a skálázási egységen való futtatására is szükség van, lásd még a [Készként jelentés és betárolás skálázási egységen](#RAF))
 
 ## <a name="working-with-manufacturing-execution-workloads-on-the-hub"></a>Gyártási végrehajtási számítási feladatok használata a központban
 
@@ -108,6 +109,26 @@ A skálázási egységen feldolgozott gyártási feladatok előzményeinek átte
 ### <a name="manufacturing-hub-to-scale-unit-message-processor-job"></a>Gyártási központból a skálázási egységbe irányuló üzenetfeldolgozó
 
 A _Gyártási központból a skálázási egységbe irányuló üzenetfeldolgozó_ feladat feldolgozza a központból a skálázási egységbe érkező adatokat. Ez a feladat automatikusan elindul, amikor a gyártási végrehajtási számítási feladat telepítve van. Azonban manuálisan is futtathatja, ha a **Termelésvezérlés \> Időszakos feladatok \> Háttérirodai munkaterhelés-kezelés \> Gyártási központból a skálázási egységbe irányuló üzenetfeldolgozó** pontba lép.
+
+<a name="RAF"></a>
+
+## <a name="report-as-finished-and-putaway-on-a-scale-unit"></a>Készként jelentés és berakodás egy skálaegységre
+
+<!-- KFM: 
+This section describes how to enable the abilities to report as finished and then putaway finished items when you are using to a scale unit.
+
+### Enable and use report as finished and putaway on a scale unit -->
+
+A jelenlegi kiadásban a készre jelentés és betárolási műveletek (késztermékekhez, társtermékekhez és melléktermékekhez) támogatva vannak a [raktári végrehajtási terheléshez](cloud-edge-workload-warehousing.md) (nem a gyártási végrehajtási terheléshez). Ennek megfelelően ahhoz, hogy egy skálaegységhez kapcsolódva használni tudja ezt a funkciót, a következőket kell tenni:
+
+- A raktári végrehajtási számítási feladatot és a gyártási végrehajtási számítási feladatot is telepítse a skálaegységre.
+- A Warehouse Management mobilalkalmazás használatával készként jelenthető, és feldolgozható a berakodási munka. A termelési üzem végrehajtási felülete jelenleg nem támogatja ezeket a folyamatokat.
+
+<!-- KFM: API details needed
+
+### Customize report as finished and putaway functionality
+
+ -->
 
 [!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
 

@@ -2,7 +2,7 @@
 title: Áfabevallás – Egyiptom
 description: Ez a témakör bemutatja, hogyan kell konfigurálni és létrehozni az áfa-visszatérítési űrlapokat Egyiptom számára.
 author: sndray
-ms.date: 03/10/2021
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-06-20
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: bd48ee96a26c59183981fae879e3659711e70ce3
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 9c776cedb65804f8cadbe324082c2abac435f906
+ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021956"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6186614"
 ---
 #  <a name="vat-declaration-for-egypt-eg-00002"></a>Áfabevallás – Egyiptom (EG-00002)
 
@@ -85,6 +85,7 @@ A következő keresési konfigurációk a beszerzési és értékesítési áfak
 - **VATRateTypeLookup** > B oszlop: adótípus
 - **VATRateTypeLookup** > C oszlop: táblacikk típusa
 - **PurchaseOperationTypeLookup** > A oszlop: dokumentumtípus
+- **CustomerTypeLookup** > A oszlop: Dokumentumtípus
 - **SalesOperationTypeLookup** > N oszlop: művelettípus
 - **SalesItemTypeLookup** > O oszlop: cikk típusa
 
@@ -98,6 +99,8 @@ A következő lépések alapján beállíthatja a VAT bevallást és vonatkozó 
 6. Ismételje meg a 3–5. lépést az összes elérhető kereséssel.
 7. Válassza a **Hozzáadás** lehetőséget a végső rekordsor beemeléséhez, és a **Keresés eredménye** oszlopban válassza a **Nem alkalmazható** lehetőséget. 
 8. A többi oszlopban válassza a **Nem üres** lehetőséget. 
+9. Az **Állapot** mezőben válassza ki a **Befejeződött** értéket.
+10. Válassza a **Mentés** lehetőséget, majd zárja be az **Alkalmazáspecifikus paraméterek** lapot.
 
 > [!NOTE]
 > Az utolsó, **Nem alkalmazható** rekord hozzáadásakor a következő szabályt kell definiálni: Ha az áfacsoport, a cikkáfacsoport, az áfakód és az argumentumként átadott név nem felel meg a korábbi szabályoknak, akkor a tranzakciók nem szerepelnek az áfakönyvben. Bár ez a szabály nem használatos a jelentés generálása során, a szabály segít elkerülni a hibákat a jelentésgenerálóban, ha hiányzik egy szabálykonfiguráció.
@@ -138,7 +141,7 @@ Az alábbi táblák a leírt keresési konfigurációk javasolt konfigurációj�
 | Szolgáltatások       | 7    | VAT_SERV                | *Nem üres* | SaleExempt            |
 | Szolgáltatások       | 8    | VAT_SERV                | *Nem üres* | SalesExemptCreditNote |
 | Helyesbítések    | 9    | *Üres*                 | VAT_ADJ     | Értékesítés                 |
-| Helyesbítések    | 10   | *Üres*                 | VAT_ADJ     | Beszerzés              |
+| Helyesbítések    | 10   | *Üres*                 | VAT_ADJ     | SalesCreditNote       |
 | Nem alkalmazható | 11   | *Nem üres*             | *Nem üres* | *Nem üres*           |
 
 **PurchaseItemTypeLookup**
@@ -148,16 +151,14 @@ Az alábbi táblák a leírt keresési konfigurációk javasolt konfigurációj�
 | Áru                  | 1    | VAT_GOODS               | *Nem üres* | Beszerzés                 |
 | Áru                  | 2    | VAT_GOODS               | *Nem üres* | PurchaseCreditNote       |
 | Szolgáltatások               | 3    | VAT_SERV                | *Nem üres* | Beszerzés                 |
-| Szolgáltatások               | 4    | VAT_SERV                | *Nem üres*  | PurchaseCreditNote       |
+| Szolgáltatások               | 4    | VAT_SERV                | *Nem üres* | PurchaseCreditNote       |
 | Gép és berendezés  | 5    | VAT_M&E                 | *Nem üres* | Beszerzés                 |
 | Gép és berendezés  | 6    | VAT_M&E                 | *Nem üres* | PurchaseCreditNote       |
 | Gépalkatrészek         | 7    | ÁFA_ALKATRÉSZEK               | *Nem üres* | Beszerzés                 |
 | Gépalkatrészek         | 8    | ÁFA_ALKATRÉSZEK               | *Nem üres* | PurchaseCreditNote       |
 | Mentességek             | 9    | VAT_EXE                 | *Nem bank*  | PurchaseExempt           |
 | Mentességek             | 10   | VAT_EXE                 | *Nem üres* | PurchaseExemptCreditNote |
-| Nem alkalmazható         | 11   | *Üres*                 | VAT_ADJ     | *Nem üres*              |
-| Nem alkalmazható         | 12   | *Nem üres*             | *Nem üres* | *Nem üres*              |
-| Nem alkalmazható         | 13   | *Üres*                 | *Nem üres* | *Nem üres*              |
+| Nem alkalmazható         | 11   | *Nem üres*             | *Nem üres* | *Nem üres*              |
 
 **PurchaseOperationTypeLookup**
 
@@ -174,6 +175,17 @@ Az alábbi táblák a leírt keresési konfigurációk javasolt konfigurációj�
 | Helyesbítések    | 9    | *Üres*          | VAT_ADJ     | PurchaseCreditNote       |
 | Helyesbítések    | 10   | *Üres*          | VAT_ADJ     | Beszerzés                 |
 | Nem alkalmazható | 11   | *Nem üres*      | *Nem üres* | *Nem üres*              |
+
+**CustomerTypeLookup**
+
+|    Keresési eredmény    | Sor | Áfacsoport |
+|---------------------|------|-----------------|
+| Szervezet        |  1   | VAT_LOCAL       |
+| Szervezet        |  2   | VAT_EXPORT      |
+| Szervezet        |  3   | VAT_EXE         |
+| Végfelhasználó      |  4   | VAT_FINALC      |
+| Nyilvános szervezet |  5   | VAT_PUBLIO      |
+| Nem alkalmazható      |  6   | *Nem üres*     |
 
 **VATRateTypeLookup**
 

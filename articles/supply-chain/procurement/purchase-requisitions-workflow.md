@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 12497e4b6dde44cc7f3701cf6e00c90f109ff16c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5dcc562f46884cc5bf82611db9ed35436791045b
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825374"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188173"
 ---
 # <a name="purchase-requisition-workflow"></a>beszerzési igénylési munkafolyamat
 
@@ -105,8 +105,7 @@ Kiadásellenőröket a **Beszerzési igénylési kiadásellenőrök** oldalon tu
 
 A valamely munkafolyamatban beállított kiadásellenőrök használatához be kell állítania a **Résztvevő típusa** lehetőséget **Kiadások résztvevői** értékre kell állítania az érintett munkafolyamat összetevőre vonatkozó **Hozzárendelési** jellemzők között.
 
-<a name="additional-resources"></a>További erőforrások
---------
+## <a name="additional-resources"></a>További erőforrások
 
 [Felhasználási igénylés létrehozása](tasks/create-requisition-consumption.md)
 

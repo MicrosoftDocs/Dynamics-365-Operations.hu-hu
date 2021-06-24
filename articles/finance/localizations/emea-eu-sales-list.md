@@ -14,12 +14,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epopov
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 672bb37a4d191c4b4f72b234ba98766ffd223f69
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5d1df15462a39c17710c9300425561bba8b69fc7
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826129"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188384"
 ---
 # <a name="eu-sales-list-reporting"></a>EU értékesítési lista jelentés
 
@@ -27,8 +27,7 @@ ms.locfileid: "5826129"
 
 Ez a cikk az Európai Uniós (EU) értékesítési listáiról nyújt tájékoztatást.
 
-<a name="eu-sales-list-reporting"></a>EU értékesítési lista jelentése
------------------------
+## <a name="eu-sales-list-reporting"></a>EU értékesítési lista jelentése
 
 A szállítónak, aki Közösségen belül biztosít terméket vagy szolgáltatásokat olyan cégeknek, amiket az Európai Unióban (EU) hoztak létre, kötelessége benyújtani egy Közösségen belüli termék kiszállításáról szóló nyilatkozatot (EU értékesítési lista vagy ESL). Általában az ESL-t ben kell nyújtani az adóhatóságoknak, legkésőbb az ESL-t lefedő naptári időszakot követő hónap utolsó napjáig. A szállítónak fel kell tüntetnie az ESL-ben az általános forgalmi adó (áfa) azonosító számát és ügyfelenként külön az alábbi információkat:
 

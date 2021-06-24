@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: rubendel
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 962edb3fd0478a8f0281054abc00c35b732620f6
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 88665c70b05d9ecf8ec2641862d870d87604092f
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796414"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193155"
 ---
 # <a name="store-order-fulfillment"></a>Rendelésteljesítés az üzletben
 
@@ -33,7 +33,7 @@ A rendelés teljesítése művelet a pénztárban egységes munkaterületet bizt
 
 ## <a name="access-unified-order-fulfillment-in-the-point-of-sale"></a>Hozzáférés az egyesített rendelésteljesítéshez a pénztárban
 
-A rendelésteljesítés, [Művelet azonosítója 928](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-operations), használható az üzletben való rendelésteljesítés munkaterület elérésére a pénztárban.
+A rendelésteljesítés, [Művelet azonosítója 928](pos-operations.md), használható az üzletben való rendelésteljesítés munkaterület elérésére a pénztárban.
 
 A rendelés teljesítése művelet gyárilag nem rendelkezik saját engedéllyel, de a jövőben felhasználók fel tudják használni a **Rendelés beolvasásának engedélyezése** engedélyt a művelet meghívásához a pénztárban.
 
@@ -93,7 +93,7 @@ Egy rendelés elfogadása után a sorok kijelölhetők, és megjelölhetők a **
 
 A kitárolási listák kinyomtathatók a pénztárnál a kitárolási folyamatot végrehajtó dolgozók támogatása céljából. A nyomtatott kitárolási listát magával viheti a kitárolást végző dolgozó, és a termékek kitárolásakor a dolgozó manuálisan jelölheti meg őket kitároltként a kitárolási listán.
 
-A kitárolási lista formátumának konfigurálása a Commerce alkalmazásban történik, és hozzá van adva a nyugtaprofilhoz. A nyugtaprofilok beállításával kapcsolatos további tudnivalókat lásd: [Nyugta minták és nyomtatás](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing).
+A kitárolási lista formátumának konfigurálása a Commerce alkalmazásban történik, és hozzá van adva a nyugtaprofilhoz. A nyugtaprofilok beállításával kapcsolatos további tudnivalókat lásd: [Nyugta minták és nyomtatás](receipt-templates-printing.md).
 
 Ha sorok vannak kijelölve, és a kitárolási listát kinyomtatták ezekhez a sorokhoz, a sorok automatikusan frissülnek a **Kitárolás** állapotra.
 
@@ -119,7 +119,7 @@ A rendeléssorok bármikor csomagolhatók, miután a rendelési sor el lett foga
 - **Eredmény állapot:** Csomagolt vagy részben csomagolt
 - **Eredmény háttérirodai állapot:** Kiszállítva vagy részben kiszállítva
 
-Ez a művelet a sorokat megjelöli csomagolt vagy részben csomagolt állapotúként, és kinyomtatja a szállítólevelet. Szállítólevél nyomtatható az együtt csomagolt termékek ellenőrzéséhez. A szállítólevél formátumának konfigurálása a Commerce alkalmazásban történik, és hozzá van adva a nyugtaprofilhoz. A nyugtaprofilok beállításával kapcsolatos további tudnivalókat lásd: [Nyugta minták és nyomtatás](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing).
+Ez a művelet a sorokat megjelöli csomagolt vagy részben csomagolt állapotúként, és kinyomtatja a szállítólevelet. Szállítólevél nyomtatható az együtt csomagolt termékek ellenőrzéséhez. A szállítólevél formátumának konfigurálása a Commerce alkalmazásban történik, és hozzá van adva a nyugtaprofilhoz. A nyugtaprofilok beállításával kapcsolatos további tudnivalókat lásd: [Nyugta minták és nyomtatás](receipt-templates-printing.md).
 
 **Művelet: Megjelölés csomagoltként**
 

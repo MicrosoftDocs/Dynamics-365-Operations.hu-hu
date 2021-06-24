@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: b773b12b7eb3a8a59627d011f2469a98c5dde58a
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: d683b0b140592e4c93a68f7f58c7d13475b4c2a5
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6058920"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189601"
 ---
 # <a name="compensation-plans"></a>Kompenzációs konstrukciók
 
@@ -121,8 +121,7 @@ Az alábbi táblázat felsorolja azokat a kompenzációs folyamatokat, amelyek a
 ## <a name="process-events"></a>Feldolgozási események
 A feldolgozási esemény egy időszakra vonatkozóan az egyes fix és változó kompenzációs konstrukciókba sorolt alkalmazottak kompenzációit számítják ki. A feldolgozási események többször is futtathatók, például a számított kompenzációs eredmények tesztelése vagy frissítése céljából.
 
-<a name="compensation-events"></a>Kompenzációs események
--------------------
+## <a name="compensation-events"></a>Kompenzációs események
 
 Minden feldolgozási esemény futtatásakor létrejön egy kompenzációs esemény.  A kompenzációs események tartalmazzák az egyes alkalmazottak feldolgozási folyamat során érintett kompenzációs folyamatait.  Ha a számítások helyesek, akkor betöltheti a kompenzációs eseményt a feldolgozási eseményben érintett alkalmazottak kompenzációs rekordjainak frissítéséhez.
 

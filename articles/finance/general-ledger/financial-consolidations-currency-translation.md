@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 0af952c760a3a2039d3332f73544d0b7c45d7b09
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 87bb31d6456356342773f38699a412aa72ea458e
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811361"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193905"
 ---
 # <a name="financial-consolidations-and-currency-translation-overview"></a>Pénzügyi konszolidáció és pénznemátváltás áttekintése
 
@@ -165,7 +165,8 @@ Azok az ügyfelek, akik Pénzügyi jelentéseket használnak a pénzügyi konszo
 - **Gördülékeny devizaátváltás** – A Finance alkalmazással minimális beállítás után átválthatja bármelyik Pénzügyi jelentést bármelyik jelentési pénznembe amely be van állítva. Mindemellett a programban korlátlan számú jelentési pénznemet beállíthat.
 - **Eltávolításiok feladása a forrásnál** – Létrehozhat és nyomtathat eltávolítási jelentéseket az eltávolítási tranzakciók ellenőrzéséhez. Ezt követően feladhatja az új eltávolításokat szokásos vállalatközi tranzakcióként. Használhat eltávolítási jogi személyt minden olyan tranzakcióhoz használhatja, amelyekre nincs szüksége jogi személyeinél.
 
-## <a name="supported-consolidation-scenarios"></a>Támogatott konszolidációs esetek
+## <a name="supported-consolidation-scenarios-for-financial-reporting"></a>Támogatott konszolidációs esetek a pénzügyi jelentéskészítéshez
+
 Az alábbiakban néhány az konszolidációs esetet, amelyeket a Financial reporting támogat:
 
 - Egyszintű és többszintű konszolidáció jogi személyek között

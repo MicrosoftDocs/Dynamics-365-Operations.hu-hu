@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 2235545760899c0d945f08b5419154dfdbe4dffc
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 1137ee7938b378e5212e355580d005cd49b31dbb
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5815764"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189045"
 ---
 # <a name="cost-rollup-policy-and-overhead-calculation"></a>Költségösszesítési irányelv többletköltségek kiszámítása 
 
@@ -149,8 +149,7 @@ A költségfelosztási szabályokat a következőképpen lehet megadni.
 | CC001                                | Összesen         | **HR-szolgáltatások**        |
 | CC002                                | Összesen         | **Pénzügyi szolgáltatások** |
 
-<a name="brhow-cost-flows-between-cost-centers"></a><br>A költségek áramlása a költségközpontok között 
----------------------------------------------------
+## <a name="brhow-cost-flows-between-cost-centers"></a><br>A költségek áramlása a költségközpontok között 
 
 Ha meg szeretné tudni, hogyan megy végbe a költségforgalom a szervezet költséghelyei között, akkor költségelemeket hozhat létre **Másodlagos** típussal minden egyes költséghely számára. Ezeket a költségelemeket ezután a költségközpontok közötti egyenlegek átadására használják a járulékos költségek számítása során.
 

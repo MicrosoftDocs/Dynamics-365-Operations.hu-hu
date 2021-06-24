@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 62868c30d3ff60e51d99c71b743ab0bbb3c87451
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: fc986ea752d1482f618401058f7a0b18f13efd5f
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835196"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188710"
 ---
 # <a name="set-up-interest-rates-for-an-interest-code"></a>Kamatlábak beállítása kamatkódhoz
 
@@ -90,7 +90,6 @@ A tartomány adatait a következőképpen kell beállítani.
 
 
 ## <a name="example-2-interest-by-range--days"></a>2. példa: Kamat tartomány szerint = Napok
---------------------------------------------------
 
 Ön olyan kamatkódot állít be, amely kamatot számít fel 15 naponként egyszer azt követően, hogy a számla kifizetése túllépi a tranzakció esedékességi dátumát. A számítást összegként megadott kamatmértékre szeretné alapozni, sávos módon napi intervallumok szerint. A kamat mértéke 10,00 egység lesz 15 naponta az első 60 napban, 15,00 egység 15 naponta 61.–90. nap között, és 20,00 egység 15 naponta a 91. naptól kezdődően. A kamatkód mezőinek értékét a következőképpen kell beállítani.
 
@@ -111,7 +110,6 @@ A tartomány adatait a következőképpen kell beállítani.
 
 
 ## <a name="example-3-interest-by-range--months"></a>3. példa: Kamat tartomány szerint = Hónapok
-----------------------------------------------------
 
 Ön olyan kamatkódot állít be, amely kamatot számít fel minden hónapban egyszer azt követően, hogy a számla kifizetése túllépi a tranzakció esedékességi dátumát. A számítást százalékos kamatmértékre szeretné alapozni, sávos módon hónapok szerint. A kamat mértéke 1,5 százalék lesz havonta az első három késedelmes hónapban, 2,0 százalék havonta a második három hónapban, és 2,5 százalék havonta az első hat hónapot követő minden hónapban. A kamatkód mezőinek értékét a következőképpen kell beállítani.
 

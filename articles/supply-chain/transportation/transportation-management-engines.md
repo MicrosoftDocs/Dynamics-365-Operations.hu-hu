@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bf9c256c4b9ade408111a46899ee266b2eb0d651
-ms.sourcegitcommit: 890a0b3eb3c1f48d786b0789e5bb8641e0b8455e
+ms.openlocfilehash: 61c745802edc419cb2ae94df6bc293f839cd8a0a
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "5920109"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188848"
 ---
 # <a name="transportation-management-engines"></a>Szállításkezelő kalkulátorok
 
@@ -43,8 +43,7 @@ A következő táblázat az elérhető szállításkezelő kalkulátorokat mutat
 | **Fuvarlevél típusa**            | Szabványosítja a fuvarszámlát és a fuvarlevél sorait, ezenkívül a fuvarlevél automatikus egyeztetésére is használható.                                                                                                                                                                                                                |
 
 
-<a name="what-engines-must-be-configured-to-rate-a-shipment"></a>Mely kalkulátorokat kell konfigurálni egy szállítmány díjának kiszámításához?
----------------------------------------------------
+## <a name="what-engines-must-be-configured-to-rate-a-shipment"></a>Mely kalkulátorokat kell konfigurálni egy szállítmány díjának kiszámításához?
 
 Egy adott szállító szállítmányainak díjazásához több szállításkezelő kalkulátort kell konfigurálnia. A **Díjkalkulátor** kötelező, de a **Díjkalkulátor** támogatásához más szállításkezelő kalkulátorra is szükség lehet. Például a **Díjkalkulátor** segítségével rákereshet adatokra a **Távolságkalkulátor** részből a forrás és a cél közötti távolságon alapuló tarifa kiszámításához.
 
@@ -62,8 +61,7 @@ Az inicializációs adatok beállításához a legtöbb esetben elég a szállí
 |  <em>MileageEngineCode</em>  |                       Az adatbázisban a távolságkalkulátor rekordját azonosító távolságkalkulátor-kód.                        |
 | <em>ApportionmentEngine</em> |                        Az általános kalkulátor kódja, amely beazonosítja az arányosító kalkulátort az adatbázisban.                        |
 
-<a name="how-is-metadata-used-in-transportation-management-engines"></a>Hogyan használják a szállításkezelő kalkulátorok a metaadatokat?
-----------------------------------------------------------
+## <a name="how-is-metadata-used-in-transportation-management-engines"></a>Hogyan használják a szállításkezelő kalkulátorok a metaadatokat?
 
 A Supply Chain Management részben meghatározott adatokat használó szállításkezelő kalkulátorok más adatsémákat használhatnak. A szállításkezelő rendszer lehetővé teszi, hogy különböző szállításkezelő kalkulátorok ugyanazokat az általános, tényleges adatbázistáblákat használhassák. Annak érdekében, hogy a futási idő alatti kalkulátoradatok értelmezése megfelelő legyen, az adatbázis tábláihoz metaadatokat határozhat meg. Ezzel csökkenthetők egy új szállításkezelő kalkulátor felépítésének költségei, mivel az Operations rendszerben nincs szükség további tábla- és képernyőstruktúrákra.
 

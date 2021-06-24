@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 275a51620fad50f725dad7a37bd8ee776cf0ce4c
-ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
+ms.openlocfilehash: 24743bd15f77769e2d4ca81981284995ce3a576e
+ms.sourcegitcommit: 927574c77f4883d906e5c7bddf0af9b717e492bf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "5941140"
+ms.lasthandoff: 06/01/2021
+ms.locfileid: "6129777"
 ---
 # <a name="regulatory-updates"></a>Jogszabály-követési frissítések
 
@@ -38,37 +38,52 @@ A havi frissítés részeként kiadott szabályozói frissítéseket csak a kiad
 A legújabb szabályozó frissítésekkel kapcsolatos tervekkel kapcsolatosan tekintse meg az alábbi táblázatot.   
 
 |Ország/régió|Kiadás dátuma|Kiadás verziója|Jogszabály-követési frissítés|
-|--------------------|---------------|-------|-------|
-|      Ausztria         |   Szeptember 2020.      | 10.0.15      |   A 2020-es jelentéshez már módosult az U30 adóbevallás formátuma   |
-|      Belgium         |   december 2020.      | 10.0.16      |   Belgium: A Főkönyvi tranzakciók exportálása jelentés teljesítményének javítása a Dynamics 365 Finance rendszerben   |   
-|      Brazília         |   2020. november      | 10.0.15HF      |   SPED Fiscal ICMS/IPI – Record C176 - RS state   |
-|      Brazília         |   Október 2020.      | 10.0.16, 10.0.15HF      |   NF-e NT2019.001 v1.51 - Az ellenőrzési szabályok elfogadása a Distrito Federal juttatáskód alapján   |
-|      Brazília         |   2020. október, 2020. november      | 10.0.16, 10.0.15HF      |   SPED pénzügy – 015-es elrendezés   |
-|      Brazília         |   Október 2020.      | 10.0.16      |   DRCST nyilatkozat SC - SEF 262/2020   |
-|      Brazília         |   Október 2020.      | 10.0.16      |   SPED Fiscal ICMS / IPI rekord C176   |
-|      Brazília         |   december 2020.      | 10.0.17, 10.0.16HF, 10.0.15HF      |   NT-e NT2020.006 – A digitális platform közvetítőjének azonosítója (Elrendezési és ellenőrzési szabályok frissítései)   |
-|      Brazília         |   március 2021.         | 10.0.17, 10.0.18, 10.0.19         |    SPED REINF-elrendezés 1.5.1
-|      Európa        |   Január 2021.       | 10.0.17, 10.0.16HF, 10.0.15HF      |   Brexit – Észak-Írországi Protokoll hatása az EU-országok közösségen belüli kereskedelmi jelentéseire  |
-|      Németország        |   Január 2021.       | 10.0.16HF      |   Az ELSTER UstVA áfára vonatkozó előzetes értesítési formátumot két új mezővel bővítették (37,50) a behajthatatlan tartozások írásakor  |
+|--------------------|---------------|-------|-------| 
+|      Brazília         |   2021. május, 2020. december      | 10.0.20, 10.0.19, 10.0.17      |   NT-e NT2020.006 – A digitális platform közvetítőjének azonosítója (Elrendezési és ellenőrzési szabályok frissítései)   |
+|      Brazília         |   március 2021.         | 10.0.19         |    SPED REINF-elrendezés 1.5.1  |
+|      Brazília         |   február 2021.         | 10.0.18         |    SPED Fiscal 015 - RS szabályok |
+|      Brazília         |   március 2021.         | 10.0.17 HF       |    NFS-e brazil szolgáltatás (városi) elektronikus számla  |
+|      Brazília         |   április 2021.         | 10.0.20        |    SPED ECD Layout 9  |
+|      Brazília         |   május 2021.         | 10.0.20         |    SPED-hozzájárulások - 1.34-es verzióútmutató  |
+|      Egyiptom         |   február 2021.         | 10.0.17         |    Áfa-visszatérítés űrlap és jelentések  |
+|      Egyiptom        |   február 2021.         | 10.0.17         |    Számlaelrendezés konfigurációja  |
+|      Egyiptom         |   február 2021.         | 10.0.17         |    Adóelőleg-bevallási űrlap 41  |
+|      Egyiptom         |   február 2021.         | 10.0.17         |    Adóelőleg-bevallási űrlap 11  |
+|      Egyiptom         |   február 2021.         | 10.0.17         |    Hivatkozások az eredeti számlákra a jóváírásokban  |
+|      Európa        |   Január 2021.       | 10.0.17      |   Brexit – Észak-Írországi Protokoll hatása az EU-országok közösségen belüli kereskedelmi jelentéseire  |
+|      Franciaország        |   március 2021.       | 10.0.18      |   Retail - Tanúsított pénztári rendszer frissítése – Dynamics 365 Commerce  |
+|      Franciaország        |   április 2021.       | 10.0.20      |   Francia adatarchiválási export (FEC) javítása  |
 |      Németország        |   Január 2021.       | 10.0.17      |   Változások az ELSTER áfára vonatkozó előzetes értesítési XML-struktúrában (UstVA)  |
-|      Globális        |   Január 2021.       | 10.0.16      |   Fordított költségmechanizmus engedélyezése áfa/GST-sémához  |
-|      India         |   december 2020.      | 10.0.16, HF, 10.0.15HF      |   TCS a 206 9(1H) áruértékesítési szakasz módosítása a CBDT-sajtóközlemény alapján  |
+|      Németország        |   március 2021.       | 10.0.19      |   GDPDU bővítmények a tárgyi eszközök táblához és a tranzakciókhoz  |
+|      Németország        |   április 2021.       | 10.0.20HF      |   Az E-számlázási formátum (xRechnung) módosításai Németországban 2021 óta  |
+|      Globális        |   Január 2021.       | 10.0.17      |   Adóelőleg online szinten  |
+|      Globális        |   Január 2021.       | 10.0.17      |   Adóelőleg kifizetése  |
+|      Globális        |   Január 2021.       | 10.0.17      |   Adóelőleg az értékesítési rendelésekben  |
+|      Globális        |   Január 2021.       | 10.0.17      |   Adóelőleg küszöbértéke a számlaösszegen  |
+|      Globális        |   Január 2021.       | 10.0.17      |   Számladátum-kiadás ellenőrzése a csomagjegyzék feladása után, minden ország számára elérhetővé téve  |
+|      Magyarország        |   február 2021.       | 10.0.17HF, 10.0.18      |   Online számlázási rendszer v3.0  |
+|      India         |   február 2021.      | 10.0.17HF, 10.0.18      |   GST - e-számlák: eWay számlainformációk  |
+|      India         |   március 2021.      | 10.0.17HF, 10.0.18HF, 10.0.19      |   GST e-számlák: exportrendelések, feltételezett export, SEZ  |
+|      India         |   március 2021.      | 10.0.17HF, 10.0.18HF, 10.0.19      |   Dynamics QR-kód a B2C-számlán  |
+|      Olaszország         |   március 2021.      | 10.0.19      |   A számlák kommunikációja (Esterometro) formátummódosítások v.2.1.1  |
+|      Olaszország        |   május 2021.      | 10.0.17HF, 10.0.18HF, 10.0.19      |   Retail – Pénzügyi nyomtató integrációs mintafrissítése az XML RT 2.0 támogatásához  |
+|      Olaszország         |   március 2021.      | 10.0.19      |   Kiskereskedelem – kiskereskedelmi számlák engedélyezése, amelyek megsértik a kronológia feladás szabályait  |
+|      Olaszország         |   február 2021.      | 10.0.19      |   Egyedi minősítés – 2021  |
 |      Lettország         |   december 2020.      | 10.0.17      |   Az Intrastat formátum frissítése 2021-től  |
-|      Mexikó         |   december 2020.      | 10.0.17, 10.0.16, 10.0.15      |   „Monto” attribútum frissítése |
-|      Hollandia         |   Október 2020.      | 10.0.16     |   Az Intrastat formátum frissítése 2021-től |
-|      Hollandia         |   december 2020.      | 10.0.167     |   Holland rendszertan új verziója – NT15 |
-|      Lengyelország          |   Szeptember 2020.     | 10.0.15     |   Önkéntes felosztott fizetés javításai |
-|      Lengyelország          |   2020. november     | 10.0.16, 10.0.15     |   JPK-V7M (VDEK) – Értékesítési bizonylattípus FP és RO kiskereskedelmi tranzakciókhoz |
-|      Lengyelország          |   Szeptember 2020.     | 10.0.15     |   Lengyelország: JPK-V7M (VDEK) - oldja fel a lehetőséget a részenkénti jelentésgeneráció futtatásához |
-|      Lengyelország          |   Október 2020.     | 10.0.16     |   JPK-V7M (VDEK) jelentés – „Önkéntes felosztott fizetés” paraméterfeltöltés |
-|      Lengyelország          |   2020. november     | 10.0.16, 10.0.15HF     |   Kiskereskedelem – Számla kiállítása a kiskereskedelmi vevőnek kérésenként |
-|      Lengyelország          |   Január 2021.     | 10.0.17, 10.0.16HF, 10.0.15HF     |   Lengyelország: JPK_KR (SAF könyvelési könyvek) tisztázásai, 2021. januártól hatályos |
-|      Oroszország          |   2020. november     | 10.0.16    |   Az áfabevallás formátuma a 2020 negyedik negyedévi jelentéstől kezdődően 5.07-es verzióra frissül|
-|      Oroszország          |   Október 2020.     | 10.0.16    |   A PBU18 változásai a 2020-as könyvelési jelentésre vonatkozóan|
+|      Litvánia         |   március 2021.      | 10.0.18      |   SAF-T-jelentés verzió 2.01  |
+|      Mexikó         |   december 2020.      | 10.0.17      |   „Monto” attribútum frissítése |
+|      Hollandia         |   december 2020.      | 10.0.17     |   Holland rendszertan új verziója – NT15 |
+|      Lengyelország          |   Január 2021.     | 10.0.17     |   Lengyelország: JPK_KR (SAF könyvelési könyvek) tisztázásai, 2021. januártól hatályos |
 |      Oroszország          |   Január 2021.     | 10.0.17    |   A 2020-as jelentéshez az ingatlanadó-bevallás új formátuma (a 5.06-os helyett az 5.07-es verzió)|
+|      Oroszország          |   március 2021.     | 10.0.19    |   A 2020-as ingatlanadó-bevallásnak jeleznie kell a ingó tárgyi eszközök átlagos éves értékét|
+|      Oroszország          |   március 2021.     | 10.0.19HF    |   Nyereségadó-bevallás 5.09-es verziója a 2020-as jelentéshez|
+|      Oroszország          |   március 2021.     | 10.0.19    |   N 2200 21.12.2020 4 kormányzati rendelet 4. beadvány új szállítási számla szükséges|
 |      Spanyolország          |   2020. november     | 10.0.17    |   SII-frissítés ellenőrzése és hibák (2.1-es és későbbi verziók) 2021. január 1-től|
-|      Egyesült Királyság         |   december 2020.     | 10.0.17, 10.0.16, 10.0.15    |   Vállalati adószám regisztrálása a vevői számlákon (Brexit – Észak-Írországi Protokoll)|
-|      Egyesült Királyság          |   december 2020.     | 10.0.17, 10.0.16HF. 10.0.15HF    |   Brexit – Észak-Írországi Protokoll hatása mind a GB, mind az NI helyszíneken áruval kereskedő kereskedelmi vállalatokra|
+|      Thaiföld          |   február 2021.     | 10.0.17HF    |   Por Ngor Dor 53, 3 és 2 adóelőleg-űrlap |
+|      Egyesült Arab Emírségek   |   május 2021.     | 10.0.20    |   Jövőben esedékes csekkek kifizetési naplójának feladása a bankszámlára |
+|      Egyesült Királyság         |   december 2020.     | 10.0.17    |   Vállalati adószám regisztrálása a vevői számlákon (Brexit – Észak-Írországi Protokoll)|
+|      Egyesült Királyság          |   december 2020.     | 10.0.17    |   Brexit – Észak-Írországi Protokoll hatása mind a GB, mind az NI helyszíneken áruval kereskedő kereskedelmi vállalatokra|
+|      Egyesült Királyság          |   március 2021.     | 10.0.18    |   MTD-áfa> a módosítások az előnézeti nyomtatási elrendezésben (2,8,9 mezők) 2021|
 
 
 

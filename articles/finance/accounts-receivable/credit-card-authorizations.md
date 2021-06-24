@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e6b59d54df9427961e2c4fb6f1387646d6fe8dfc
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 502fe22aa0caafbcff059c9d0ae83c7cd030e8d0
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837129"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6190309"
 ---
 # <a name="credit-card-setup-authorization-and-capture"></a>Hitelkártya-beállítás, engedélyezés és rögzítés
 
@@ -28,8 +28,7 @@ ms.locfileid: "5837129"
 
 Ez a cikk a Microsoft Dynamics 365 Finance rendszer hitelkártya-engedélyezéséről nyújt tájékoztatást. A fizetési szolgáltatás beállításának módjáról, az értékesítési rendeléshez történő hitelkártya hozzáadásáról és az engedélyezés érvénytelenítéséről nyújt tájékoztatást.
 
-<a name="setting-up-the-credit-card-payment-service"></a>A hitelkártyás fizetési szolgáltatás beállítása
-------------------------------------------
+## <a name="setting-up-the-credit-card-payment-service"></a>A hitelkártyás fizetési szolgáltatás beállítása
 
 Hitelkártyák használatához állítson be és aktiváljon egy fizetési szolgáltatást a Fizetési szolgáltatások lapon. A fizetési szolgáltatás a jogi személy és a vevő hitelkártya-terheléseit feldolgozó bank közötti kapcsolatként működik. Olyan hitelkártya-szolgáltatóval kell együttműködnie, amely szerepel a Fizetési csatlakoztató mezőben, és ennél a szolgáltatónál kell egy számlát létrehoznia. Ezután további opciókat kell majd beállítania a Fizetési szolgáltatások oldalon, hitelkártyatípusokat kell beállítania az American Express, Discover, MasterCard és Discover számára a hitelkártya-típusok oldalon, és a szolgáltatót alapértelmezett szolgáltatóként kell beállítania. A beállítás befejezéséhez ezeket a lépéseket is be kell tartania:
 -   A Kinnlevőségek paraméteroldalon adja meg a paramétereket a hitelkártya-engedélyezések használatához.
@@ -39,13 +38,11 @@ Hitelkártyák használatához állítson be és aktiváljon egy fizetési szolg
 ## <a name="adding-a-new-credit-card"></a>Új hitelkártya hozzáadása
 Új hitelkártya-rekordokat a Vevők lapon a Vevő, Beállítás, Hitelkártya használatával hozhat létre. Hitelkártya-rekordokat értékesítési rendelések beírásakor is létrehozhat az Értékesítési rendelés oldalon, a Kezelés, Vevő, Hitelkártya, Jegyzék segítségével.
 
-<a name="adding-a-credit-card-to-a-sales-order"></a>Hitelkártya hozzáadása egy értékesítési rendeléshez
--------------------------------------
+## <a name="adding-a-credit-card-to-a-sales-order"></a>Hitelkártya hozzáadása egy értékesítési rendeléshez
 
 Hitelkártyát hozzáadhat egy értékesítési rendeléshez egy hitelkártya kiválasztásával a hitelkártya-keresőben az Ár és engedmények gyorslapon, az Értékesítési rendelés lapon. Az engedélyezési folyamat elindításához a Műveleti ablakban a Kezelés fülön válassza ki a Hitelkártyát és az Engedélyezést.
 
-<a name="authorizing-a-credit-card"></a>Hitelkártya engedélyezése
--------------------------
+## <a name="authorizing-a-credit-card"></a>Hitelkártya engedélyezése
 
 Amikor megtörténik a hitelkártya engedélyezése, a kártyaszám és a kártyabirtokos nevének ellenőrzése megy végbe, valamint megerősítést nyer a rendelkezésre álló hitelegyenleg. Másik lehetőségként a kártyaellenőrző kód és a kártyatulajdonos címének ellenőrzése megy végbe. Ezt követően a vevő rendelkezésre álló hitelegyenlege a számla összegével csökken. A fizetési szolgáltatás információt küld arról, hogy a hitelkártyát elfogadja-e, vagy elutasítja. Az értékesítési rendelés számlázásakor a hitelkártyán végbemegy a számlaösszeg terhelése (rögzítése).
 

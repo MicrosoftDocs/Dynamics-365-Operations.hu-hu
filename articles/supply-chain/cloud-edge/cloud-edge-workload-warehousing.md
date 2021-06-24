@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 3d9bbc91b90cc675f500a990cf36e2aee6c6bccb
-ms.sourcegitcommit: 35fdcc6501e099c54a58583b1e3aba16f02a5ccc
+ms.openlocfilehash: 30ccdf45d4993e9803f86025f8e789d4f75f64dc
+ms.sourcegitcommit: 8d50c905a0c9d4347519549b587bdebab8ffc628
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2021
-ms.locfileid: "5980949"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "6184022"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Raktérkezelés munkaterhelései felhőalapú és peremhálózat-lépték szerinti egységekhez
 
@@ -230,12 +230,12 @@ A következő táblázat bemutatja, hogy mely bejövő funkciók, és hol támog
 
 | Feldolgozás                                                          | Központ | WES számítási feladat egy skálázási egységben<BR>*(Az „Igen” jelölésű cikkek csak raktári rendelésekre vonatkoznak)*</p> |
 |------------------------------------------------------------------|-----|----------------------------------------------------------------------------------|
-| Forrásdokumentum feldolgozása                             | Igen | Nincs |
+| Forrásdokumentum&nbsp;feldolgozása                             | Igen | Nincs |
 | Rakomány és szállításkezelési folyamatok feldolgozása                    | Igen | Nincs |
 | Beérkező szállítmány megerősítése                                    | Igen | Nincs |
 | Beszerzési rendelés kiadása a raktárba (raktári rendelés feldolgozása) | Igen | Nincs |
 | Raktári rendelési sorok visszavonása<p>Ne feledje, hogy ez csak akkor támogatott, ha a sorhoz nem történt regisztráció</p> | Igen | Nincs |
-| Beszerzési rendelés – cikk bevételezése és eltárolása                       | <p>Igen, ha nincs raktári rendelés</p><p>Nem, ha van raktári rendelés</p> | <p>Igen, ha a beszerzési rendelés nem része egy <i>rakománynak</i></p> |
+| Beszerzési rendelés – cikk bevételezése és eltárolása                       | <p>Igen,&nbsp;ha&nbsp;nincs&nbsp;raktári rendelés</p><p>Nem, ha van raktári rendelés</p> | <p>Igen, ha a beszerzési rendelés nem része egy <i>rakománynak</i></p> |
 | Beszerzésirendelés-sor bevételezése és betárolása                       | <p>Igen, ha nincs raktári rendelés</p><p>Nem, ha van raktári rendelés</p> | <p>Igen, ha a beszerzési rendelés nem része egy <i>rakománynak</i></p></p> |
 | Visszárurendelés bevételezése és eltárolása                              | Igen | Nincs |
 | Vegyes azonosítótábla bevételezése és eltárolása                       | <p>Igen, ha nincs raktári rendelés</p><p>Nem, ha van raktári rendelés</p> | Nincs |
@@ -289,14 +289,15 @@ A következő táblázat bemutatja, hogy mely raktári műveletek és kivételke
 | Munkagyűjtő módosítása a munkán                           | Igen | Igen                          |
 | Munka megszakítása                                        | Igen | Igen                          |
 
-
 ### <a name="production"></a>Termelés
 
-A raktárkezelési termelési helyzetek jelenleg nem támogatottak a skálázási egység munkaterheléseken, a következő táblázatban jelzett módon.
+A következő táblázat összefoglalja, hogy mely raktárkezelési termelési helyzetek (nem) támogatottak jelenleg a skálázási egység munkaterheléseken, a következő táblázatban jelzett módon.
 
 | Feldolgozás | Központ | WES számítási feladat egy skálázási egységben |
 |---------|-----|------------------------------|
-| <p>A termeléshez kapcsolódó összes raktárkezelési folyamat. Íme néhány példa:</p><li>Kiadás raktárba</li><li>Termelés hullámfeldolgozása</li><li>Nyersanyag kitárolása</li><li>RAF és késztermékek betárolása</li><li>Társ- és melléktermék betárolása</li><li>Kanban betárolás</li><li>Kanban kitárolás</li><li>Termelési rendelés indítása</li><li>Termelési selejt</li><li>Termelés – utolsó raklap</li><li>Anyagfelhasználás regisztrálása</li><li>Üres kanban</li></ul> | Igen | Nincs |
+| Készként jelentés és késztermék betárolása | Igen | Igen |
+| Társ- és melléktermék betárolása | Igen | Igen |
+| <p>A termeléshez kapcsolódó összes egyéb raktárkezelési folyamat, beleértve:</p><li>Kiadás raktárba</li><li>Termelés hullámfeldolgozása</li><li>Nyersanyag kitárolása</li><li>Kanban betárolás</li><li>Kanban kitárolás</li><li>Termelési rendelés indítása</li><li>Termelési selejt</li><li>Termelés – utolsó raklap</li><li>Anyagfelhasználás regisztrálása</li><li>Üres kanban</li></ul> | Igen | Nincs |
 
 ## <a name="maintaining-scale-units-for-wes"></a>A WES skálázási egységeinek karbantartása
 

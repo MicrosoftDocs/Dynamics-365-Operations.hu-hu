@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 953069dfd39843d39cc92d99318f02819dc31ed0
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 513066a597620450f0b482e98e36d31c6f2c980a
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5820984"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189093"
 ---
 # <a name="accounting-distributions-and-journal-entries-for-vendor-invoices"></a>Könyvelési felosztások és naplóbejegyzések szállítói számlákhoz
 
@@ -28,8 +28,7 @@ ms.locfileid: "5820984"
 
 A könyvelési felosztások használatával lehet meghatározni, hogy hogyan lesz az összeg elszámolva, például hogyan lesznek könyvelve a kiadások, adó és költségek a szállítói számlán. Minden összegnek, amelyet könyvelni kell, amikor a szállítói számla naplózva van egy vagy több könyvelési felosztása van. 
 
-<a name="accounting-distributions"></a>Könyvelési felosztások 
--------------------------
+## <a name="accounting-distributions"></a>Könyvelési felosztások 
 
 A következő gombokat használhatja a Szállítói számla oldalon a szállítói számlán szereplő minden összeg könyvelési felosztásának megtekintéséhez és lehetséges módosításához.
 -   **Összegek felosztása** – Egy bizonyos sorhoz és alsorokhoz, például az adókhoz és díjakhoz tartozó könyvelési felosztások megtekintése és módosítása. Megtekintheti és módosíthatja a könyvelési felosztásokat az alárendelt sorra vonatkozóan a Forgalmi adó tranzakciók vagy a Költségtranzakciók lapon is.
@@ -227,8 +226,7 @@ Szállítói számla bevitelekor minden összeg felosztása a következőképpen
 </table>
 
 
-<a name="distributing-taxes"></a>Adó elosztása
-------------------
+## <a name="distributing-taxes"></a>Adó elosztása
 
 Az adókra vonatkozó könyvelési felosztások nem hozhatók létre, amíg az adókat ki nem számítja. Forgalmi adó kiszámításához fejezzen be egyet a következő feladatok közül a Szállítói számla lapon:
 -   Számla végösszegének megtekintése.

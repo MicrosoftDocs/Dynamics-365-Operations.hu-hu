@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 231c59cea2ca0bcb139079209d2e846e67eb7fed
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: b23edee0884b595a0da6ebd7eca0cf0391ff33f7
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839149"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6190088"
 ---
 # <a name="cross-docking-from-production-orders-to-outbound-docks"></a>Termelési rendelések áttárolása kiszállítási területekbe
 
@@ -28,8 +28,7 @@ ms.locfileid: "5839149"
 
 Ez a témakör leírja, hogyan kell kezelni az anyag áttárolásának folyamatát, amelyet egy gyártósorról befejezettnek jelentenek egy kimenő szállítási dokk felé.
 
-<a name="introduction"></a>Bevezetés
-------------
+## <a name="introduction"></a>Bevezetés
 
 A termelésből a kimenő helyre történő áttárolás fontos azoknál a gyártóknál, akik nagy mennyiséget termelnek, és ideális esetben a késztermékeket azonnal szeretnék szállítani, amint elkészülnek a gyártósorok. A cél az, hogy a termékeket olyan elosztóközpontokba szállítsák, amelyek fizikailag a vevői igényekhez közel helyezkednek el, ahelyett, hogy a készletet gyártási helyen halmoznák fel.
 

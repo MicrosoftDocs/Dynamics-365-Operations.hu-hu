@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-24
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 154c3d70b61869795edc25514e98a28389eeb244
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: cf2c41af6aa8e77eff819cfacc3459ead290642b
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6052241"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193431"
 ---
 # <a name="benefits-management-workspace"></a>Juttatáskezelési munkaterület
 
@@ -31,7 +31,7 @@ ms.locfileid: "6052241"
 Ez a témakör a Dynamics 365 Human Resources **Juttatáskezelési munkaterületét** részletezi.
 
 > [!NOTE]
-> A **Juttatáskezelés** munkaterület megtekintéséhez először engedélyeznie kell a Funkciókezelés **(Előzetes verzió) Juttatáskezelési munkaterület** funkcióját. Az előzetes funkciók aktiválásával kapcsolatos további részletekért tekintse meg a [Szolgáltatások kezelése](../hr-admin-manage-features.md) oldalt.<br><br>![Juttatáskezelési munkaterület engedélyezése](./media/hr-benefits-management-workspace-enable.png)
+> A **Juttatáskezelés** munkaterület megtekintéséhez először engedélyeznie kell a Funkciókezelés **(Előzetes verzió) Juttatáskezelési munkaterület** funkcióját. Az előzetes funkciók aktiválásával kapcsolatos további részletekért tekintse meg a [Szolgáltatások kezelése](hr-admin-manage-features.md) oldalt.<br><br>![Juttatáskezelési munkaterület engedélyezése](./media/hr-benefits-management-workspace-enable.png)
 
 A **Juttatáskezelés** munkaterület használatával gyorsan megtekinthetők azok a juttatások, amelyekre figyelni kell. Ezen az oldalon a következők láthatók:
 

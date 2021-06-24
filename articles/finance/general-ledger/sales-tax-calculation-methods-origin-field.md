@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7d322d0a59c2d1fe7be98b97bf25c6db8dec2d6e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: e57e97847c6aa7a775b0f2639dff93f1e3a9e7a2
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5815356"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189373"
 ---
 # <a name="sales-tax-calculation-methods-in-the-origin-field"></a>ÁFA-számítási módok kiválasztása az Kiindulás mezőben
 
@@ -52,8 +52,7 @@ Ha a nettó összeg 10,00, akkor az 1. ADÓ 1,00 (10.00 x 10%) a 2. ADÓ pedig 2
 | A tranzakciókhoz csak egy olyan adó használható, ahol Kiindulás = Bruttó összeg százaléka. Ha egynél több ilyen adókódot állít be egy tranzakcióhoz, úgy a rendszer arra vonatkozó hibaüzenetet jelenít meg, hogy az áfa kiszámítása nem lehetséges. |
 
 
-<a name="percentage-of-sales-tax"></a>Az áfa százaléka
------------------------
+## <a name="percentage-of-sales-tax"></a>Az áfa százaléka
 
 Ha az Kiindulás mezőben az Áfa százaléka lehetőséget választja, a rendszer az áfa mezőben kiválasztott Áfa kapcsán meghatározott áfa százalék alapján számítja ki az adót. Elsőként az áfa mezőben kiválasztott Áfa került kiszámításra. A második forgalmi adó kiszámítása az első forgalmi adó összege alapján történik.
 ### <a name="example"></a>Példa
@@ -119,8 +118,7 @@ Amennyiben a dokumentum / napló beállítása: Az összegek tartalmazzák az á
 
 
 
-<a name="additional-resources"></a>További erőforrások
---------
+## <a name="additional-resources"></a>További erőforrások
 
 [Áfaérték a Számítás alapja és a Számítási módszerek lapján](marginal-base-field.md)
 

@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 02122d9145552952412c239a7f541e6a727f061e
-ms.sourcegitcommit: fd15b02fc9caa1c05e56abdc276a7f4b23b0d8f3
+ms.openlocfilehash: 9ae13ce4038346cd5b101b5c40fe3b7c5e617fbf
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "5960049"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6187940"
 ---
 # <a name="budgeting-overview"></a>Költségvetés készítésének áttekintése
 
@@ -28,8 +28,7 @@ ms.locfileid: "5960049"
 
 Majdnem minden vállalatnak, amely használja a Pénzügy funkciót a Microsoft Dynamics 365 Finance rendszerben, képesnek kell lennie előirányzatot és tényleges adatokat összehasonlító jelentések készítésére. Ez a cikk ismerteti a minimális konfigurációt, amely költségvetések létrehozásához vagy külső programból történő betöltéséhez szükséges a Finance and Operations rendszerben.
 
-<a name="overview"></a>Áttekintés
---------
+## <a name="overview"></a>Áttekintés
 
 A jogi személy számára jóváhagyott költségvetés egy dokumentumban van vezetve, *költségvetésjegyzék bejegyzés* név alatt. A költségvetésjegyzék-bejegyzési dokumentumok sorai *költségvetési számlabejegyzésekként* ismertek, és pénzügyi dimenziókról tartalmaznak információkat, dátumokat és összegeket az elfogadott költségvetésből. A költségvetésjegyzék bejegyzési dokumentum integrálva van az alapvető pénzügyi dokumentumokba és lekérdezési oldalakba, ahol a főkönyv tényleges összege a költségvetés összegeivel van összehasonlítva. 
 

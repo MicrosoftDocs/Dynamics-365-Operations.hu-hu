@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6ce0a12aff70da1ec556b69198aa5210519b6af2
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 841b4b4bb3c2f98ac65491a21bb991945c9f4bc9
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5834740"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193929"
 ---
 # <a name="import-letter-of-credit"></a>Akkreditív importálása
 
@@ -128,7 +128,8 @@ Ez az eljárás az USMF bemutatócéget használja.
 12. Zárja be a lapot.
 13. Zárja be a lapot.
 
-## <a name="verify-import-letter-of-credit-status"></a>Ellenőrizze az Importakkreditív állapotát.
+## <a name="verify-import-letter-of-credit-status-and-printing"></a>Ellenőrizze az Importakkreditív állapotát és a nyomtatást
+
 1. Ugorjon a Készpénz- és bankkezelés > Akkreditívek > Importakkreditív és importbeszedvény pontra.
 2. Keresse meg és jelölje ki a kívánt rekordot a listán.
 3. A listában kattintson a kijelölt sorban lévő hivatkozásra.

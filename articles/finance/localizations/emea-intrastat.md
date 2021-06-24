@@ -14,12 +14,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: db97d05d79a100ebdcfb5b4931b37243b77bd352
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: bafbb908531e003d2184409bf5d09ed5848fc474
+ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814995"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "6216788"
 ---
 # <a name="intrastat-overview"></a>Intrastat – áttekintés
 
@@ -73,7 +73,7 @@ Az alábbi táblázatlista mutatja az Intrastat-jelentés előfeltételeit.
 </tr>
 <tr class="odd">
 <td>Termékkategória hierarchiája (értékesítési hierarchia, beszerzési hierarchia)</td>
-<td>Rendelje hozzá az Intrastat vámtarifakódokat a kategória-csomópontokhoz a <strong>Vámtarifakódok</strong> lapon, amely <strong>Kategóriahierarchia</strong> oldalon található. Ha vámtarifakódot rendel egy szülőkategória-csomóponthoz, a kód a gyermekkategória-csomópontokra is vonatkozni fog. A kiválasztott vámtarifakódok elérhetőek lesznek <strong>Kijelölt</strong> nézetben, amennyiben kiválaszt egy vámtarifakódot a megjelent termék részleteiben, és az értékesítési rendelés, a beszerzési rendelés, és átmozgatási rendelés sorban.</td>
+<td>Rendelje hozzá az Intrastat vámtarifakódokat a kategória-csomópontokhoz a <strong>Vámtarifakódok</strong> lapon, amely <strong>Kategóriahierarchia</strong> oldalon található. Ha vámtarifakódot rendel egy szülőkategória-csomóponthoz, a kód a gyermekkategória-csomópontokra is vonatkozni fog. A kiválasztott vámtarifakódok elérhetőek lesznek <strong>Kijelölt</strong> nézetben, amennyiben kiválaszt egy vámtarifakódot a kiadott termék részleteiben, és az értékesítési rendelés, a beszerzési rendelés, és átmozgatási rendelés sorban.</td>
 </tr>
 <tr class="even">
 <td>Megjelent termék részletei</td>
@@ -84,6 +84,7 @@ Az alábbi táblázatlista mutatja az Intrastat-jelentés előfeltételeit.
 <li><strong>Származási ország/régió</strong> – Válassza ki az alapértelmezett országot/régiót, ahol az árukat beszerezték vagy előállították.</li>
 <li><strong>Származási/rendeltetési állam/tartomány</strong> – Válassza ki az alapértelmezett célállamot/céltartományt az érkezéshez és a származási államot/tartományt az elküldéshez.</li>
 <li><strong>Nettó súly (kg)</strong></li>
+<li><strong>Kihagyás</strong> - annak engedélyezése, hogy ez a paraméter ne továbbítsa az ezzel a termékkel kapcsolatos tranzakciókat az Intrastat számára</li>
 </ul></td>
 </tr>
 <tr class="odd">

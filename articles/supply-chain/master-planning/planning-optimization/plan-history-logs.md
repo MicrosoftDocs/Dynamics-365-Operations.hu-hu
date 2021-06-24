@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 1726d127883f9849fe87888134c0c174377ecf2b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d7bba084b03f8698c8bf31d171d5e4e486ed06ad
+ms.sourcegitcommit: a7649b361ec54b49c0e9ee1c1c63a8815f320225
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5813027"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6187247"
 ---
 # <a name="view-plan-history-and-planning-logs"></a>Tervelőzmények és tervezési naplók megtekintése
 
@@ -31,19 +31,17 @@ Ez a témakör azt mutatja be, hogyan lehet megtekinteni a tervezés optimalizá
 
 A terv előzményeinek megtekintéséhez nyissa meg a tervet az **Alaptervezés** \> **Beállítás** \> **Tervek** \> **Alaptervek** pontban, majd válassza ki az **Előzmények** elemet. Az előzményben felsorolva láthatók a kiválasztott tervekhez tartozó feladatok. A lista tartalmazza a befejezett és az aktív feladatokat.
 
-A feladatok kezdési időpontjának és állapotának megtekintésén kívül az adott feladatra vonatkozó naplót is megtekintheti. A napló további információkat és figyelmeztetéseket tartalmaz. Nem minden feladatnak van naplója. A feladathoz tartozó napló megtekintéséhez válassza ki a **Napló** elemet.
+A Tervezési optimalizálási alaptervezés feladatelőzményei csak alaptervenként legfeljebb 60 rekordot tartnak fent. Amikor új alaptervezési számítást futtat, annak a tervnek a legkorábbi előzményrekordja törlődik.
+
+A feladatok kezdési időpontjának és állapotának megtekintésén kívül az adott feladatra vonatkozó naplót is megtekintheti. A napló további információkat és figyelmeztetéseket tartalmaz. Nem minden feladatnak van naplója. A feladathoz tartozó napló megtekintéséhez válassza ki a **Napló** elemet. A naplóbejegyzések csak a munka befejezése után 30 napig tárolódnak, azokat automatikusan törli a rendszer.
 
 ## <a name="related-resources"></a>Kapcsolódó erőforrások
 
-[Tervezés optimalizálása – áttekintés](planning-optimization-overview.md)
-
-[Első lépések a tervezési optimalizálással](get-started.md)
-
-[A tervezésoptimalizálása illeszkedési elemzése](planning-optimization-fit-analysis.md)
-
-[Szűrők alkalmazása egy tervre](plan-filters.md)
-
-[Tervezési feladat érvénytelenítése](cancel-planning-job.md)
+- [Tervezési optimalizálás áttekintése](planning-optimization-overview.md)
+- [Tervezési optimalizálás kezdő lépései](get-started.md)
+- [A tervezésoptimalizálása illeszkedési elemzése](planning-optimization-fit-analysis.md)
+- [Szűrők alkalmazása egy tervre](plan-filters.md)
+- [Tervezési feladat érvénytelenítése](cancel-planning-job.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

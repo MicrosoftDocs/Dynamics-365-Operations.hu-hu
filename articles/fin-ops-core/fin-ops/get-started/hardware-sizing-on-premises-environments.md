@@ -2,7 +2,7 @@
 title: Hardverméretezési követelmények helyszíni környezetekben
 description: Ez a témakör a hardverméretezési követelményekkel foglalkozik helyszíni környezetekben.
 author: sericks007
-ms.date: 11/27/2019
+ms.date: 06/02/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chwolf
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: c5e6e96ea1ce821233d7104bb9a7af8e793f4264
-ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
+ms.openlocfilehash: 1ef427ff57c79b64a2435edd902e09a7d99e81d9
+ms.sourcegitcommit: 4a508bd11267f24eeb774af57faa56369beacf51
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "5923480"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "6168729"
 ---
 # <a name="hardware-sizing-requirements-for-on-premises-environments"></a>Hardverméretezési követelmények helyszíni környezetekben
 
@@ -131,6 +131,8 @@ A legtöbb esetben a két csomópontot használó ajánlott minimális követelm
 ## <a name="sql-server-reporting-services"></a>SQL Server Reporting Services szolgáltatás
 
 Az általános elérhetőségű verzió esetén csak egy SSRS-csomópontot lehet telepíteni. Figyelje az SSRS-csomópontját tesztelés közben, és szükség szerint emelje az SSRS számára elérhető processzormagok számát. Győződjön meg arról, hogy rendelkezik a virtuális állomáson olyan előre konfigurált másodlagos csomóponttal, amely eltér az SSRS virtuális géptől. Ez akkor fontos, ha probléma van az SSRS-t tároló virtuális géppel vagy a virtuális állomással. Ez esetben ki kellene őket cserélni.
+
+A 10.0.17-es verziótól kezdve további SSRS-csomópontokat is be lehet állítani a nagyobb rendelkezésre állás érdekében. További információ: [Az SQL Server Reporting Services (SSRS) csomópontok magas rendelkezésre állásának konfigurálása](../../dev-itpro/deployment/onprem-ssrsha.md).
 
 ## <a name="environment-orchestrator"></a>Környezeti szervező
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9d1852eac49b4a26e0680d7a918d2a6d8af37031
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 6ab5e7a2675705cc2265b7f894d9b12d4465aea1
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838837"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6187820"
 ---
 # <a name="income-statement-financial-report"></a>Bevételkimutatás pénzügyi jelentés
 
@@ -28,8 +28,7 @@ ms.locfileid: "5838837"
 
 Ez a cikk a bevételkimutatások alapvető jelentését írja le. Emellett a jelentéshez tartozó építőelemeket is leírja. 
 
-<a name="default-income-statement-report"></a>Alapértelmezett bevételkimutatás jelentés
--------------------------------
+## <a name="default-income-statement-report"></a>Alapértelmezett bevételkimutatás jelentés
 
 | Alapértelmezett jelentés             | Mire szolgál?                                                                                              |
 |----------------------------|-----------------------------------------------------------------------------------------------------------|
@@ -57,8 +56,7 @@ Az oszlopdefiníciók tartalmaznak különböző típusú oszlopokot, a különb
 
 
 
-<a name="additional-resources"></a>További erőforrások
---------
+## <a name="additional-resources"></a>További erőforrások
 
 [Pénzügyi jelentéskészítés – áttekintés](financial-reporting-getting-started.md)
 

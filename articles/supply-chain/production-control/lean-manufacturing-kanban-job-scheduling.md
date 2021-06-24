@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 25d3de7d9d49cbd05f7d3d3daa42f51e60dc0f8e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0d0cbaf6b8440dbbb71146a34cbbe949cfe78d0c
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825843"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6190040"
 ---
 # <a name="kanban-job-scheduling-for-lean-manufacturing"></a>Kanbanfeladat ütemezése lean manufacturing céljára
 
@@ -65,8 +65,7 @@ A napi vagy heti elérhető kapacitást a munkacellához rendelt naptár defini�
 
 A **Kanbanfeladat ütemezése** listaoldal tartalmaz egy olyan adatterületet, amely a kiválasztott munkacella elérhető és lefoglalt kapacitását mutatja időszakokra vonatkoztatva. A termelési folyamatmodellben kiválasztott ütemezési időszakoktól függően az időszakok napok vagy hetek lehetnek.
 
-<a name="additional-resources"></a>További erőforrások
---------
+## <a name="additional-resources"></a>További erőforrások
 
 
 

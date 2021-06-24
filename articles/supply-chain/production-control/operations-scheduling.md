@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 09a420fcf5bb122b7ffa0c6ef8566efad86db4f6
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 16b05bfe2a8deec365bdccf56ddbb375e9c4becd
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5817869"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6190016"
 ---
 # <a name="operations-scheduling"></a>Műveletek ütemezése
 
@@ -74,8 +74,7 @@ Műveletütemezés futtatásakor törölheti az útvonal meghatározott részeit
 ## <a name="finite-materials"></a>Véges anyagmennyiség
 Ha véges anyagokkal dolgozik, az ütemezés a termeléshez szükséges anyagok rendelkezésre állásától is függ. Ha nincs elég elérhető összetevő a termeléshez, a termelés elhúzódhat. Az ütemezést az anyagok felhasználására alapozhatja úgy, hogy meghatározza, melyek a termeléshez feltétlenül szükséges anyagok. Ha az optimalizálás az erőforrások kapacitása és anyagok rendelkezésre állásától is függ, a rendszer a termelést ezen megszorítások alapján számolja ki. A termelési rendelés nem ütemezhető amíg a kapacitás és az anyagok egyszerre és a szükséges mennyiségben nem állnak rendelkezésre.
 
-<a name="additional-resources"></a>További erőforrások
---------
+## <a name="additional-resources"></a>További erőforrások
 
 [A műveletek ütemezésének beállításai](operation-scheduling-options.md)
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f9a4897f34d016da8dd03d3108069e8aaa1369f7
-ms.sourcegitcommit: fd15b02fc9caa1c05e56abdc276a7f4b23b0d8f3
+ms.openlocfilehash: 98331fa4dcafb87789e7ea80f28a16463d7f2e3e
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "5959969"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188045"
 ---
 # <a name="budget-control-overview"></a>Költségvetés-ellenőrzés áttekintése
 
@@ -28,8 +28,7 @@ ms.locfileid: "5959969"
 
 Ez a cikk bemutatja a költségvetés-ellenőrzést, és segítséget nyújt a költségvetés-ellenőrzés beállításához, úgy hogy kezelni tudja a pénzügyi erőforrásokat.
 
-<a name="overview"></a>Áttekintés
---------
+## <a name="overview"></a>Áttekintés
 
 A költségvetés-ellenőrzés funkció támogatja a szervezet pénzügyi forrásainak kezelését a számlatükrökön, munkafolyamaton, felhasználói csoportokon, forrásbizonylatokon, naplókon, konfigurálható források számításán, költségvetési ciklusokon és küszöbértékeken keresztül. Ha a szabályzók a helyén vannak, a szervezet megtervezheti, megmérheti, kezelheti és előre jelezheti a pénzügyi forrásokat a pénzügyi évben. 
 

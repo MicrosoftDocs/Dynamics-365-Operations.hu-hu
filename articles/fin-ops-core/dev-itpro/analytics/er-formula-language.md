@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d2015405f3c7f89ba36f811ca125f3a73bc13c38
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 470b4fa1c8b15ae4a9e9ebef81af9e4ca107422d
+ms.sourcegitcommit: 15aacd0e109b05c7281407b5bba4e6cd99116c28
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753264"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "6223986"
 ---
 # <a name="electronic-reporting-formula-language"></a>Elektronikus jelentéskészítés képletének nyelve
 
@@ -38,13 +38,13 @@ ER kifejezések bármennyi vagy az összes elemet tartalmazhatja a következő e
 - [Útvonalak](#Paths)
 - [Funkciók](#Functions)
 
-## <a name=""></a><a name="Constants">Állandók</a>
+## <a name="constants"></a><a name="Constants"></a>Állandók
 
 Amikor a kifejezéseket tervezi, használhat szöveges és a numerikus állandókat (nem számított értékeket). Például a `VALUE ("100") + 20` kifejezés **20** numerikus konstanst és **„100”** szövegkonstanst használ és megjeleníti a **120** numerikus értéket.
 
 Az ER képletszerkesztő támogatja a feloldó szakaszokat. Így meghatározhat olyan kifejezés-karakterláncot, amelyet eltérően kell kezelni. A `"Leo Tolstoy ""War and Peace"" Volume 1"` kifejezés például a következő karaktersorozatot adja eredményül: **Leo Tolsztoj „Háború és béke” 1. kötet**.
 
-## <a name=""></a><a name="Operators">Operátorok</a>
+## <a name="operators"></a><a name="Operators"></a>Operátorok
 
 Az alábbi táblázat bemutatja az aritmetikai operátorokat, amelyek segítségével elvégezheti a matematikai alapműveleteket, mint például összeadás, kivonás, szorzás és osztás.
 
@@ -88,9 +88,9 @@ Fontos a sorrend, amelyben az összetett kifejezés egy része kiértékelésre 
 
 Ha egy kifejezés olyan több egymást követő operátort tartalmaz, amelyek ugyanolyan elsőbbséget élveznek, akkor ezen műveletek kiértékelése balról jobbra történik. Például az `1 + 6 / 2 \* 3 > 5` kifejezés **igaz** választ jelenít meg. Ajánlatos a zárójelek használata a kifejezésekben található műveletek kívánt sorrendjének explicit módon történő jelzéséhez, illetve a kifejezések könnyebb olvasása és kezelése érdekében.
 
-## <a name=""></a><a name="References">Hivatkozások</a>
+## <a name="references"></a><a name="References"></a>Hivatkozások
 
-Egy kifejezés tervezése során elérhető jelenlegi ER komponens összes adatforrását elnevezett hivatkozásként lehet használni. A jelenlegi ER-komponens modell-hozzárendelés vagy formátum lehet. Például az aktuális ER modell-leképezés tartalmazza a **ReportingDate** adatforrást, amely megjeleníti a *DateTime* adattípus értékét. Annak érdekében, hogy a létrejövő dokumentumban megfelelően formázott értéket kapjon, a következőképpen hivatkozhat a kifejezésben szereplő adatforrásokra: `DATETIMEFORMAT (ReportingDate, "dd-MM-yyyy")`.
+Egy kifejezés tervezése során elérhető jelenlegi ER komponens összes adatforrását elnevezett hivatkozásként lehet használni. A jelenlegi ER-komponens modell-hozzárendelés vagy formátum lehet. Például az aktuális ER modell-leképezés tartalmazza a **ReportingDate** adatforrást, amely megjeleníti a [*DateTime*](er-formula-supported-data-types-primitive.md#datetime) adattípus értékét. Annak érdekében, hogy a létrejövő dokumentumban megfelelően formázott értéket kapjon, a következőképpen hivatkozhat a kifejezésben szereplő adatforrásokra: `DATETIMEFORMAT (ReportingDate, "dd-MM-yyyy")`.
 
 Az adatforrásra hivatkozó minden név minden olyan karaktere előtt, amely nem az ábécé egy betűjét jelöli, egyszeres idézőjelet (') kell használni. A hivatkozási adatforrás minden nevének, amely tartalmaz legalább egy szimbólumot, amely nem az ábécé egy betűjét jelenti, egyszeres idézőjelekben kell megjelennie. Ezek a nem alfabetikus szimbólumok lehetnek például írásjelek vagy más írott szimbólumok. Íme néhány példa:
 
@@ -99,7 +99,7 @@ Az adatforrásra hivatkozó minden név minden olyan karaktere előtt, amely nem
 
 Ha az alkalmazás-adatforrásainak metódusai paraméterekkel rendelkeznek, a következő szintaxist kell használni ezen metódusok meghívásához:
 
-- Ha a **Rendszer** adatforrás **isLanguageRTL** metódusa rendelkezik egy *Karakterlánc* adattípusú **EN-US** paraméterrel, erre a metódusra a következő módon kell hivatkozni az ER-kifejezésekben: `System.isLanguageRTL("EN-US")`.
+- Ha a **Rendszer** adatforrás **isLanguageRTL** metódusa rendelkezik egy [*Karakterlánc*](er-formula-supported-data-types-primitive.md#string) adattípusú **EN-US** paraméterrel, erre a metódusra a következő módon kell hivatkozni az ER-kifejezésekben: `System.isLanguageRTL("EN-US")`.
 - Az idézőjelek nem kötelezőek, ha egy metódus neve csak alfanumerikus szimbólumokat tartalmaz. Az olyan táblametódusok esetén viszont kötelezőek, amikor a név zárójeleket tartalmaz.
 
 Amikor a **Rendszer** adatforrás hozzá van adva egy ER-hozzárendeléshez, amelyik a **Globális** alkalmazásosztályra hivatkozik, a `System.isLanguageRTL("EN-US ")` kifejezés a **HAMIS** *logikai* értéket adja vissza. A módosított `System.isLanguageRTL("AR")` kifejezés az **IGAZ** *logikai* értéket adja eredményül.
@@ -107,9 +107,9 @@ Amikor a **Rendszer** adatforrás hozzá van adva egy ER-hozzárendeléshez, ame
 Az ilyen típusú metódusok paramétereinek átadott értékek átadásának módja korlátozható:
 
 - Csak állandók adhatók át ilyen típusú metódusoknak. Az állandók értékeit a tervezés során kell meghatározni.
-- Az ilyen típusú paraméterekhez csak egyszerű (alap) adattípusok támogatottak. Az egyszerű adattípusok: *Egész*, *Valós*, *Logikai* és *Karakterlánc*.
+- Az ilyen típusú paraméterekhez csak [egyszerű](er-formula-supported-data-types-primitive.md) (alap) adattípusok támogatottak. Az egyszerű adattípusok: *Egész*, *Valós*, *Logikai* és *Karakterlánc*.
 
-## <a name=""></a><a name="Paths">Útvonalak</a>
+## <a name="paths"></a><a name="Paths"></a>Útvonalak
 
 Amikor a kifejezés egy adatforrásra hivatkozik, az útvonal meghatározása segítségével kiválaszthatja az adatforrás egy megadott egyszerű elemének kiválasztásához. A pont karaktert (.) a strukturált adatforrás egyes elemeinek elkülönítésére használják. Például az aktuális ER modell-leképezés tartalmazza a **InvoiceTransactions** adatforrást, és ez az adatforrás rekordok listáját adja vissza. Az **InvoiceTransactions** rekordszerkezete tartalmazza az **AmountDebit** és **AmountCredit** mezőket, amelyek mindegyike numerikus értékeket ad vissza. Ezért a számlázott összeg kiszámításához a következő kifejezést tervezhetjük: `InvoiceTransactions.AmountDebit - InvoiceTransactions.AmountCredit`. A kifejezésben szereplő `InvoiceTransactions.AmountDebit` szerkezet a *Rekordlista* **InvoiceTransactions** adatforrásának **AmountDebit** mezőjének elérésére szolgáló útvonal.
 
@@ -129,7 +129,7 @@ Az abszolút elérési út maradék része is megjelenik az [ER képletszerkeszt
 
 További információ: [Relatív elérési út használata az ER-modellek és -formátumok adatkötéseiben](relative-path-data-bindings-er-models-format.md).
 
-## <a name=""></a><a name="Functions">Funkciók</a>
+## <a name="functions"></a><a name="Functions"></a>Funkciók
 
 A beépített ER függvények ER kifejezésekben használhatók. A kifejezéskörnyezet (aktuális ER modell-leképezés vagy ER formátum) minden adatforrása használható függvénymeghívási paraméterként a függvénymeghívási argumentumok listájával összhangban. Az állandók szintén használhatók függvények meghívásának paraméterként. Például az aktuális ER modell-leképezés tartalmazza a **InvoiceTransactions** adatforrást, és ez az adatforrás rekordok listáját adja vissza. Az **InvoiceTransactions** rekordszerkezete tartalmazza az **AmountDebit** és **AmountCredit** mezőket, amelyek mindegyike numerikus értékeket ad vissza. Ezért a számlázott összeg kiszámításához, megtervezheti azokat a következő kifejezéseket, amelyek az ER kerekítési funkciót használják: `ROUND (InvoiceTransactions.AmountDebit - InvoiceTransactions.AmountCredit, 2)`.
 
@@ -173,5 +173,8 @@ IF(COUNT (IntrastatTotals)=0, 0.0, IntrastatTotals.aggregated.'$AmountMSTRounded
 
 [Elektronikus jelentéskészítési funkciók listájának kibővítése](general-electronic-reporting-formulas-list-extension.md)
 
+[Támogatott egyszerű adattípusok](er-formula-supported-data-types-primitive.md)
+
+[Támogatott összetett adattípusok](er-formula-supported-data-types-composite.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

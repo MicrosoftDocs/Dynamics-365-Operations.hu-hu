@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 41f863d85a1ad52d8fa11a458054728728858d27
-ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
+ms.openlocfilehash: 87ab65469ec4a8154267b88fe45481b65ade5e7a
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "6027794"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189178"
 ---
 # <a name="three-way-matching-policies"></a>Háromirányú egyeztetési irányelvek
 
@@ -28,8 +28,7 @@ ms.locfileid: "6027794"
 
 Ez a témakör a háromirányú egyeztetésről nyújt tájékoztatást.
 
-<a name="example-three-way-matching-for-items"></a>Példa: Háromirányú egyeztetés, eszközök esetében
--------------------------------------
+## <a name="example-three-way-matching-for-items"></a>Példa: Háromirányú egyeztetés, eszközök esetében
 
 **Összegzés:** Ken a Fabrikam nevű jogi személy testületi vezetőségének az irányítója. Ken úgy dönt, hogy minden beszerzési rendelésen alapuló szállítói számlát egyeztetni kell a beszerzési rendelés sorokkal (kétirányú egyeztetés). A tárgyi eszközbeszerzések során, a számlákat egyeztetni kell mind a beszerzési rendeléssel, mind pedig a termék bevételezéssel (háromirányú egyeztetés).
 

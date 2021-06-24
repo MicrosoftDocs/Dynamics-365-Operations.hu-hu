@@ -2,26 +2,21 @@
 title: Termeléstervezés
 description: Ez a témakör a termelés tervezését írja le, és bemutatja, hogyan lehet módosítani a tervezett termelési rendeléseket a Tervezési optimalizálás segítségével.
 author: ChristianRytt
-ms.date: 12/15/2020
+ms.date: 06/01/2021
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: Global
-ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-12-15
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 22b78f44940f71097ca8b1cdb74edb06274bba75
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: ffee79f152141297ceb24e2d7a40523eac18ffaf
+ms.sourcegitcommit: 927574c77f4883d906e5c7bddf0af9b717e492bf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839223"
+ms.lasthandoff: 06/01/2021
+ms.locfileid: "6129753"
 ---
 # <a name="production-planning"></a>Termeléstervezés
 
@@ -79,11 +74,44 @@ Az **Alábontás** lap használatával elemezni lehet egy adott termelési rende
 
 ## <a name="filters"></a><a name="filters"></a>Szűrők
 
-A termelést is magukban foglaló tervezési eseteknél javasoljuk, hogy kerülje el a szűrt alaptervezési futtatásokat. Annak érdekében, hogy a tervezési optimalizálás a helyes eredmény kiszámításához szükséges információkat tartalmazza, minden olyan terméket bele kell foglalnia a tervezett rendelés teljes anyagjegyzék-struktúrájába, amely bármilyen kapcsolatban áll a termékekkel.
+Annak érdekében, hogy a tervezési optimalizálás a helyes eredmény kiszámításához szükséges információkat tartalmazza, minden olyan terméket bele kell foglalnia a tervezett rendelés teljes anyagjegyzék-struktúrájába, amely bármilyen kapcsolatban áll a termékekkel. A termelést is magukban foglaló tervezési eseteknél ezért azt javasoljuk, hogy kerülje el a szűrt alaptervezési futtatásokat.
 
-Bár a rendszer automatikusan észleli a függő gyermekeket, és bekerül az alaptervezésbe a beépített alaptervezési motor használata esetén, a tervezési optimalizálás nem végzi el ezt a műveletet.
+Bár a rendszer automatikusan észleli a függő gyermekeket, és bekerül az alaptervezésbe a beépített alaptervezési motor használata esetén, a tervezési optimalizálás jelenleg nem végzi el ezt a műveletet.
 
-Ha például az A termék anyagjegyzék-szerkezetében egy csavar a B termék előállítására is használatos, akkor a szűrőben szerepelnie kell az A és a B termék anyagjegyzék-szerkezetében található összes terméknek. Mivel nagyon bonyolult lehet annak biztosítása, hogy minden termék a szűrő része legyen, javasoljuk, hogy ne használjon szűrőt alaptervezési futtatásoknál termelési rendelések esetén.
+Ha például az A termék anyagjegyzék-szerkezetében egy csavar a B termék előállítására is használatos, akkor a szűrőben szerepelnie kell az A és a B termék anyagjegyzék-szerkezetében található összes terméknek. Mivel bonyolult lehet annak biztosítása, hogy minden termék a szűrő része legyen, javasoljuk, hogy ne használjon szűrőt alaptervezési futtatásoknál termelési rendelések esetén. Ellenkező esetben az alaptervezés nem kívánt eredményeket adhat.
 
+### <a name="reasons-to-avoid-filtered-master-planning-runs"></a>Okok az alaptervezés szűrt futtatásainak elkerülésére
+
+Amikor szűrt alaptervezést futtat egy termékhez, a Tervezési optimalizálás (ellentétben a beépített alaptervezési motorral) nem észleli az adott termék anyagjegyzék-szerkezetében az összes alterméket és nyersanyagot, ezért nem foglalja bele azokat az alaptervezés futtatásába. Bár a Tervezési optimalizálás azonosítja a termék anyagjegyzékszerkezetének első szintjét, nem tölt be termékbeállításokat (például az alapértelmezett rendeléstípust vagy cikkfedezetet) az adatbázisból.
+
+A Tervezés optimalizálásában a futtatás adatai előzőleg betöltődnek, és alkalmazza a szűrőket. Ez azt jelenti, hogy ha egy meghatározott termék alterméke vagy nyersanyaga nem része a szűrőnek, akkor az ezzel kapcsolatos adatokat nem rögzíti a rendszer a futtatás során. Ezenkívül ha az altermék vagy a nyersanyag szerepel egy másik termékben is, akkor egy olyan szűrt futtatás, amely csak az eredeti terméket és összetevőit tartalmazza, eltávolítja a másik termékhez létrehozott meglévő tervezett igényt.
+
+Ez a logika azt okozhatja, hogy a szűrt alaptervezési futtatások nem várt eredményt hoznak. A következő szakaszok példákat mutatnak be az esetleges a váratlan eredményekre.
+
+### <a name="example-1"></a>1. példa
+
+A késztermék *FG* a következő összetevőkből áll:
+
+- Nyersanyag *R*
+- Az *S1* altermék amely az *S2* altermékből áll
+
+Van aktuális készlet az *R* nyersanyaghoz, míg az *S1* altermék nincs jelen a készletben.
+
+Ha az *FG* késztermékek fő tervezését szűrten futtatja, akkor a késztermék *FG* számára tervezett termelési rendelést, az *R* nyersanyaghoz tervezett beszerzési rendelést, valamint az *S1* altermékhez tervezett beszerzési rendelést fog kapni. Ez azért nem kívánt eredmény, mert a Tervezési optimalizálás figyelmen kívül hagyta az *R* nyersanyag meglévő készletét, és azt, hogy az *S1* alterméket a közvetlenül rendelés helyett az *S2* használatával kell előállítani. Ez azért történt, mert a tervezési optimalizálás csak a befejezett késztermékek *FG* összetevőinek listáját tartalmazza, kapcsolódó információk, például az összetevők meglévő készlete vagy az alapértelmezett rendelési beállítások nélkül.
+
+### <a name="example-2"></a>2. példa
+
+Az előző példára építve egy további késztermék, az *FG2* is az *S1* alterméket használja. A befejezett *FG2* késztermékre tervezett rendelés létezik, és a tervezett igény az összes összetevőre, köztük az *S1*-re is létezik.
+
+Úgy dönt, hogy szűrt alaptervezés nem szükséges eredményeit az előző példából úgy küszöböli ki, hogy hozzáadja az összes alterméket és nyersanyagot az *FG* késztermék anyagjegyzék-struktúrájából a szűrőbe, majd teljes újragenerálást futtat.
+
+A teljes újragenerálás futtatásakor a rendszer törli az összes benne szereplő termék összes meglévő eredményét, majd az új számítások alapján újra létrehozza az eredményeket. Ez azt jelenti, hogy az *S1* termékhez már meglévő tervezett igényt törli a rendszer, és csak az *FG* késztermékek követelményeit veszi figyelembe, az *FG2* késztermékek követelményeit azonban figyelmen kívül hagyja. Ez azért fordul elő, mert a tervezési optimalizálás futtatásakor a tervezési optimalizálás nem foglalja magában a többi tervezett termelési rendelés tervezett igényét &mdash; csak a futtatás során generált tervezett igényt használja fel a rendszer.
+
+> [!NOTE]
+> Ha az *FG2* késztermék meglévő tervezett rendelése *Jóváhagyott* állapotú, a jóváhagyott tervezett igény akkor is szerepelni fog, ha a szülő termék nincs hozzáadva a szűrőhöz.
+
+Ezért hacsak nem ad hozzá minden összetevőt az *FG* késztermékhez, az *FG2* késztermék és minden más termék esetében, amelynek ezek az összetevők részei (az összetevőkkel együtt), a szűrt alaptervezés futtatása nem várt eredményt hoz.
+
+Mivel bonyolult lehet annak biztosítása, hogy minden termék a szűrő része legyen, javasoljuk, hogy ne használjon szűrőt alaptervezési futtatásoknál termelési rendelések esetén.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

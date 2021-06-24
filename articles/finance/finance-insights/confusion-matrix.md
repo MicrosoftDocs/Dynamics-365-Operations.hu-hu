@@ -2,7 +2,7 @@
 title: Gépi tanulási modellek eredményei (előzetes verzió)
 description: Ez a témakör a zavartság-mátrixokat, az osztályzási problémákat és a gépi tanulási (ML) modellek pontosságát tárgyalja. Az a cél, hogy jobban megértsék az ML előrejelzési eredményeinek pontosságát.
 author: ShivamPandey-msft
-ms.date: 06/05/2020
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-14
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: a9642bd21ffc0770be61677220e0e72986586047
-ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
+ms.openlocfilehash: fe652c32df9417f0f716242a24a26eabd1a16f65
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "6028203"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193540"
 ---
 # <a name="results-of-machine-learning-models-preview"></a>Gépi tanulási modellek eredményei (előzetes verzió)
 
@@ -129,16 +129,12 @@ A számítások egyszerűsítése érdekében a mintatömböket úgy építetté
 
 A számítás működésével kapcsolatos további részleteket a sklearn.metrics osztályozási jelentés az 1. modellhez részben talál. A három „Időben”, „Későn” és „Nagyon későn” állapotot az 1., 2. és 3. címkével ellátott sorok jelölik. A makró átlaga csak az „f1-pontszám” oszlop átlaga.
 
-|           | pontosság | visszahívás   | f1-pontszám |
+| &nbsp;    | pontosság | visszahívás   | f1-pontszám |
 |-----------|-----------|----------|----------|
 | **1**     | 0.83      | 0.80     | 0.82     |
 | **2**     | 0.68      | 0.71     | 0.69     |
 | **3**     | 0.50      | 0.50     | 0.50     |
 
 Ezek az eredmények azt mutatják, hogy a két modellhez közel azonos F1-es makrópontossági pontszám tartozik. Ebben és sok más esetben az F1 pontossága jobban jelzi a modell képességeit. A pontosság érdekében az eredmények értelmezése megköveteli, hogy a modellben figyelembe vegyék a legfontosabb tényezőt.
-
-#### <a name="privacy-notice"></a>Adatvédelmi nyilatkozat
-Az előzetes verziók (1) kevesebb adatvédelmi és biztonsági intézkedést alkalmazhatnak, mint a Dynamics 365 Finance and Operations szolgáltatás (2) és nem vonatkozik a szolgáltatásiszint-szerződés (SLA) ehhez a szolgáltatáshoz, (3) nem használhatók olyan személyes adatok vagy más adatok feldolgozásához, melyekhez törvényi vagy jogszabályi megfelelési követelmények tartoznak, és (4) korlátozott támogatás tartozik hozzá.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,7 +2,7 @@
 title: Regulatory Configuration Service
 description: Ez a témakör áttekintést nyújt a Regulatory Configuration Service (RCS) lehetőségeiről, és bemutatja a szolgáltatáshoz való hozzáférést.
 author: JaneA07
-ms.date: 04/07/2021
+ms.date: 06/04/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-02-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 1eeac7217290e0583fcecdf5b4b5b9153d266240
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 7f946988f124c814452e1774c700d5c7354f39b0
+ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019394"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "6216562"
 ---
 # <a name="regulatory-configuration-service"></a>Regulatory Configuration Service
 
@@ -59,9 +59,19 @@ Az RCS általában a következő régiókban érhető el:
 
 A régiók teljes listájáért lásd: [Dynamics 365 és Power Platform: Elérhetőség, adatok helye, nyelv és honosítás](https://aka.ms/dynamics_365_international_availability_deck).
 
+## <a name="rcs-default-company"></a>RCS alapértelmezett vállalat
+
+Az RCS által használt időtervezési funkciók az összes vállalat között meg vannak osztva. Nincsenek vállalatspecifikus funkciók. Ezért javasoljuk, hogy az RCS-környezetben egy vállalatot, a **DAT** vállalatot használja.
+
+Bizonyos helyzetekben azonban érdemes az ER-formátumokat egy adott jogi személyhez kapcsolódó paraméterekkel használni. Csak ilyen esetben érdemes az alapértelmezett vállalatváltót használni. Például lásd: [ER-formátum konfigurálása a jogi személyenként meghatározott paraméterek használatára](../../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md).
+
 ## <a name="related-rcs-documentation"></a>Kapcsolódó RCS-dokumentáció
 
-A következő dokumentációban bővebben olvashat a kapcsolódó összetevőkről:
+A következő témakörökben bővebben olvashat a kapcsolódó összetevőkről:
+
+- **RCS:**
+
+    - [Hozzon létre ER-konfigurációkat a RCS-ben, és töltse fel őket a globális tárházba](rcs-global-repo-upload.md)
 
 - **Globális adattár:**
 
@@ -70,7 +80,20 @@ A következő dokumentációban bővebben olvashat a kapcsolódó összetevőkr�
     - [Továbbfejlesztett szűrés a globális adattárban](enhanced-filtering-global-repo.md)
     - [ER-konfigurációk letöltése a globális adattárból](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md)
     - [Konfigurációk megszüntetése a globális adattárban](discontinuing-configurations-rcs-global-repo.md)
+    - [Regulatory Configuration Service (RCS) – Lifecycle Services (LCS) tárhely kivezetése](rcs-lcs-repo-dep-faq.md)
 
 - **Globalizációs funkciók:**
 
     - [Regulatory Configuration Service (RCS) – Globalizációs jellemzők](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/regulatory-configuration-service-simplified-globalization-feature-management-globalization-services)
+
+
+## <a name="troubleshooting-rcs-sign-up"></a>RCS feliratkozás hibaelhárítása
+
+Ha a szolgáltatási oldalról regisztrál RCS-re, akkor a következő, az Azure Active Directory (Azure AD) szolgáltatással kapcsolatos probléma merülhet fel. A kapott hibaüzenet azt jelzi, hogy az RCS regisztrációja jelenleg ki van kapcsolva, és be kell kapcsolni, mielőtt befejezheti a regisztrációt.
+
+![RCS -regisztráció hibaüzenete](media/01_RCSSignUpError.jpg)
+
+A probléma oka az, hogy blokkolva van az ad hoc előfizetés regisztrációja, ezért az `AllowAdHocSubscriptions` tulajdonságot engedélyezni kell a bérlőben. 
+
+- Ha az IT részleg kezeli a szervezet Azure-bérlőit, vegye fel a kapcsolatot az osztállyal, és jelentse a problémát.
+- Ha Ön felelős az Azure-bérlők kezeléséért, a problémákat javíthatja a [Mi az Önálló Azure Active Directory-regisztráció](/azure/active-directory/enterprise-users/directory-self-service-signup#how-do-i-control-self-service-settings) rész lépéseivel.

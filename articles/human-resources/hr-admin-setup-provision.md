@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: df06df63c28ca99bb9cb95e99b3498f70c54d97f
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: e354cec1fb5612afff6e265c4808f4fb2c237a9d
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6053659"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193724"
 ---
 # <a name="provision-human-resources"></a>Emberi erőforrások létesítése
 
@@ -56,7 +56,7 @@ Az LCS-nek a Human Resources kezelésére való használatához előbb egy LCS-p
 1. Jelentkezzen be az [LCS](https://lcs.dynamics.com/Logon/Index)-be azzal a fiókkal, amelyet a Human Resources szolgáltatásra való feliratkozáshoz használt.
 
    > [!NOTE]
-   > A sikeres üzembe helyezés érdekében az Emberi erőforrások környezet építéséhez használt fiókot hozzá kell rendelni vagy a **Rendszergazda** vagy a **Rendszer testre szabó** szerepkörhöz, amely az Emberi erőforrások Power Apps környezethez hozzá van rendelve. A Power Platformon való biztonsági szerepkörök felhasználókhoz való hozzárendelésével kapcsolatos további információért lásd: [Felhasználói biztonság konfigurálása az erőforrásokhoz](https://docs.microsoft.com/power-platform/admin/database-security).
+   > A sikeres üzembe helyezés érdekében az Emberi erőforrások környezet építéséhez használt fiókot hozzá kell rendelni vagy a **Rendszergazda** vagy a **Rendszer testre szabó** szerepkörhöz, amely az Emberi erőforrások Power Apps környezethez hozzá van rendelve. A Power Platformon való biztonsági szerepkörök felhasználókhoz való hozzárendelésével kapcsolatos további információért lásd: [Felhasználói biztonság konfigurálása az erőforrásokhoz](/power-platform/admin/database-security).
 
 2. Válassza ki a pluszjelet (**+**) projekt létrehozásához.
 

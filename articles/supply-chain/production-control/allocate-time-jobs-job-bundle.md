@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3e0df9177b63619787dba057e9aa532255e68bde
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 86fbc81de8ba59f0782bd9af5b50bfcf45d5621a
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811870"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193045"
 ---
 # <a name="allocate-time-to-jobs-in-a-job-bundle"></a>Idők hozzárendelése egy feladatköteg feladataihoz
 
@@ -80,7 +80,7 @@ Az alábbi táblázat bemutatja a felhasznált idő kiszámításának képleté
 ## <a name="net-time-allocation-key"></a>Nettó idő foglalási kulcs
 Az alábbi táblázat bemutatja a felhasznált idő kiszámításának képletét. A képlet: Jelentésenkénti számított idő = kötegidő ÷ feladatok száma
 
-|                              | 09:00–10:00 (1 óra) | 10:00–11:00 (1 óra) | 11:00–13:00 (2 óra) | 13:00–15:00 (2 óra) | Felhasznált idő |
+| Példa                       | 09:00–10:00 (1 óra) | 10:00–11:00 (1 óra) | 11:00–13:00 (2 óra) | 13:00–15:00 (2 óra) | Felhasznált idő |
 |------------------------------|----------------------|----------------------|-----------------------|-----------------------|----------------|
 | A kötegben található feladatok száma | 1                    | 3                    | 2                     | 1                     | Nem alkalmazható |
 | 1. feladat                        | 1 ÷ 1 = 1 óra       | 1 ÷ 3 = 0,33 óra    | Nem alkalmazható        | Nem alkalmazható        | 1,33 óra     |

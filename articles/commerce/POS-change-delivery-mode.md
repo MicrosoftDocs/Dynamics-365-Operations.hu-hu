@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2020-02-20
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: a88ca9cc8fc8cde6d738dbc4fcf474f1e27e05dd
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: fd69d82536047c06e94ba4a7e860ef54680619a4
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796390"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193131"
 ---
 # <a name="change-mode-of-delivery-in-pos"></a>Szállítási mód módosítása a pénztárban
 
@@ -31,7 +31,7 @@ A Dynamics 365 Commerce 10.0.10 és a későbbi verziókban **Szállítási mód
 
 A szállítási mód módosítása funkció a pénztári tranzakcióban egy vagy több szállítmányhoz konfigurált értékesítési sor szállítási módjának módosítását teszi lehetővé. A Commerce korábbi verzióiban végig kellett mennie a teljes **Össze szállítása** vagy **Kijelölt szállítása** konfigurációs folyamatokon ha a szállítási módot módosítani szerette volna egy olyan meglévő sorban, amely már be van állítva a szállításhoz. Ez a folyamat időigényes volt, és a sorhoz tartozó szállítási dátumok véletlen módosítását eredményezhette. Az új funkciók alternatív módszert biztosítanak a szállítási mód hatékony frissítésére az értékesítési sorokban.
 
-Ha további tájékoztatást szeretne arról, hogyan lehet hozzáadni egy műveletet a pénztári gombrács egy gombjához, tekintse meg a [Képernyő-elrendezések a pénztár (POS) számára](https://docs.microsoft.com/dynamics365/commerce/pos-screen-layouts) című cikket.
+Ha további tájékoztatást szeretne arról, hogyan lehet hozzáadni egy műveletet a pénztári gombrács egy gombjához, tekintse meg a [Képernyő-elrendezések a pénztár (POS) számára](pos-screen-layouts.md) című cikket.
 
 Ha ez a funkció a pénztárban be van állítva, és a **Szállításimód módosítása** lehetőséget választja, akkor egy lista jelenik meg, amely lehetővé teszi, hogy kiválassza azoknak a tranzakcióknak a sorait, amelyekhez a szállítási módot módosítani szeretné. Egy vagy az összes is kiválaszthatja, illetve módosítás nélkül kiléphet. A korábban szállítmányként konfigurált értékesítési sorok azok a sorok a listában, amelyeket módosíthat. Ha módosítani kívánja a felvételi vagy a kiszállítási sorokat akkor az **Összes szállítása** vagy a **Kijelöltek szállítása** műveleteket kell használnia. Ha viszont a szállítmányként kijelölt sort egy felvételi vagy kiszállításra szeretné módosítani, akkor az **Összes felvétele**, a **Kijelöltek felvétele**, **Összes kiszállítása** vagy **Kijelöltek kiszállítása** műveleteket kell választania.
 

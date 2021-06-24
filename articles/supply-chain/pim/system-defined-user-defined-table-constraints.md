@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7ddc7b9f0ccaa787b2297a253a7fdd9de11e9eee
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 35ea5b97708272edf50f09d892088bcd3e07402d
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5812681"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6187967"
 ---
 # <a name="system-defined-and-user-defined-table-constraints"></a>Rendszer által meghatározott és Felhasználó által meghatározott táblázat megszorítások
 
@@ -57,8 +57,7 @@ Rendszer által definiált táblamegszorítás létrehozásakor válasszon ki eg
 
 Mielőtt egy táblamegszorítás érvénybe lépne a termékkonfigurációs modellen, a táblamegszorítást tartalmaznia kell a modell összetevők egy megszorításának. Az eljárás az, hogy új megszorítást kell létrehozni. Ehhez válassza ki a táblázat megszorítás típusát, majd a táblázat megszorítás használni kívánt definícióját. Végül a táblamegszorítás összes mezőjének kapcsolódnia kell a termékkonfigurációs modell attribútumaihoz.
 
-<a name="additional-resources"></a>További erőforrások
---------
+## <a name="additional-resources"></a>További erőforrások
 
 [Termékkonfigurálási modellek áttekintése](product-configuration-models.md)
 

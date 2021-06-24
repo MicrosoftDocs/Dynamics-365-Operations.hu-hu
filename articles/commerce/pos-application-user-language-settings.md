@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 0c5087ee04030a76aef774871b88b7970391723c
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: bdd03dff359e7c2799eff53b0e999580ce8b1c06
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804381"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193103"
 ---
 # <a name="point-of-sale-pos-application-and-user-language-settings"></a>Pénztár (POS) alkalmazás és felhasználói nyelvi beállítások
 
@@ -57,7 +57,7 @@ A POS-felhasználó nyelvi beállítás határozza meg a felhasználói felület
 
 A POS felhasználói nyelv beállítása a **Minden dolgozó** helyről történik a **Dolgozó** lap **Kiskereskedelem és kereskedelem &gt; Nyelv** részében. Ez nem a fő profil lapon van beállítva. A pénztár nem használja ezt a beállítást. A felhasználó nyelve nincs beállítva, vagy a változó értéke egy nyelvet Ha fordítások nem állnak rendelkezésre, ha az üzlet nyelv visszaáll a POS-nál.
 
-|             | Felhasználói felület nyelv                | Adatok nyelv (termékek nyugtaformátumokat, sorkijelző, stb.) |
+| &nbsp;      | Felhasználói felület nyelv                | Adatok nyelv (termékek nyugtaformátumokat, sorkijelző, stb.) |
 |-------------|----------------------------|---------------------------------------------------------------|
 | **Vállalat** | Alapértelmezett                    | Alapértelmezett                                                       |
 | **Üzlet**   | Felülbírálja a vállalat          | Felülbírálja a vállalat                                             |

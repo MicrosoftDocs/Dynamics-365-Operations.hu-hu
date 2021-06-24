@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b0be27fc759c525dcc1ffe4f2717b2e2378c52a5
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: b07da82086696409b128d76d8845c61b241a34b0
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744163"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188075"
 ---
 # <a name="create-documentation-or-training-with-task-recorder"></a>Dokumentáció vagy képzés létrehozása Feladatrögzítő segítségével
 
@@ -31,8 +31,7 @@ Ez a témakör azt ismerteti, hogy mik azok a Feladatrögzítő és a feladat-ú
 > [!IMPORTANT]
 > Rögzítheti saját feladat-útmutatóit a Dynamics 365 Human Resources számára, de jelenleg nem mentheti őket az Üzletifolyamat-modellező (BPM) tárba, illetve nem nyithatja meg őket a Súgó ablaktáblából. Mentheti őket helyben vagy egy hálózati helyre, majd megnyithatja és újra lejátszhatja őket a Feladatrögzítő használatával. 
 
-<a name="learn-about-task-recorder"></a>További tudnivalók a Feladatrögzítőről
--------------------------
+## <a name="learn-about-task-recorder"></a>További tudnivalók a Feladatrögzítőről
 
 A Feladatrögzítő egy olyan eszköz, amellyel a termék felhasználói felületén (UI) elvégzett műveleteket jegyezheti fel. A Feladatrögzítő használatakor az összes, felhasználói felületben elvégzett, a szerveren végrehajtott esemény — beleértve az értékhozzáadást, beállítások megváltoztatását, adatok eltávolítását — rögzítésre kerül. A rögzített lépések összességét *feladatrögzítésnek* hívják. A Feladatrögzítő sokféleképpen használható:
 
@@ -111,8 +110,7 @@ Letöltheti és szerkesztheti a Microsoft feladatrögzítéseit a saját képzé
 
 
 
-<a name="additional-resources"></a>További erőforrások
---------
+## <a name="additional-resources"></a>További erőforrások
 
 [Súgórendszer](../../fin-ops/get-started/help-overview.md)
 

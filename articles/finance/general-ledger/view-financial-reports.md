@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2f729b1703a7703a8a604b007bd1c8d9e1f604a6
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 723e0fa52cd7a9377671795e039f5948ce9239f3
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897284"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6187794"
 ---
 # <a name="view-financial-reports"></a>Pénzügyi jelentések megtekintése
 
@@ -28,8 +28,7 @@ ms.locfileid: "5897284"
 
 Ez a témakör bemutatja, hogy hogyan tekintheti meg és hogyan böngészheti a pénzügyi jelentéseket. Azokról a különféle beállítási lehetőségekről nyújt tájékoztatást, amelyek segítségével módosíthatja a pénzügyi jelentések megjelenését, illetve a bennük lévő adatokat.
 
-<a name="financial-reporting-overview"></a>Pénzügyi jelentéskészítés – áttekintés
-----------------------------
+## <a name="financial-reporting-overview"></a>Pénzügyi jelentéskészítés – áttekintés
 
 ## <a name="open-a-financial-report"></a>Pénzügyi jelentés megnyitása
 A jelentés megnyitásához válassza ki a jelentés nevét. A jelentés első megnyitásakor, automatikusan létrejön a jelentés az előző hónapra. Például, ha 2015 augusztusában nyit meg egy jelentést először, a jelentés a 2015. július 31-i dátumhoz jön létre. Egy jelentés megnyitása után elkezdheti annak böngészését bizonyos adatok utáni leásással, illetve módosíthatja a jelentés beállításait.
@@ -76,8 +75,7 @@ Miután befejezte a nyomtatási beállítások megadását, kattintson a **Nyomt
 ## <a name="export-a-financial-report"></a>Pénzügyi jelentés exportálása
 Jelentés exportálásához kattintson a műveleti ablakon az **Exportálás** gombra. A jelentés Microsoft Excel fájlba lesz exportálva, majd a böngésző megkérdezi, hogy megnyitni vagy menteni akarja-e az exportált fájlt. Az exportálási beállítások, amik a jelentésre vonatkoznak, alkalmazva lesznek az exportált jelentésre.    
 
-<a name="additional-resources"></a>További erőforrások
---------
+## <a name="additional-resources"></a>További erőforrások
 
 [Pénzügyi jelentéskészítés](../../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md)
 

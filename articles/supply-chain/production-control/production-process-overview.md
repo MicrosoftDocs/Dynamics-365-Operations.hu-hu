@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dcdd8097279027df2fa5cf22cc38cc8a5e2a13e3
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5f3d82089d2917a0ec0b9ceead7cd1ec22457733
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814584"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188149"
 ---
 # <a name="production-process-overview"></a>Termelési folyamat áttekintése
 
@@ -74,8 +74,7 @@ Az alábbi lépések a gyártás életciklusában felléphetnek minden rendelés
 12. **Időszakzárás** – Bizonyos költségelszámolási elvek, például ismétlődő átlag, vissza-ürítés költségszámítási, FIFO vagy LIFO kötelezővé teheti az időszakos tevékenységeknek a készlet vagy a pénzügyi időszak zárását. Általában a rendszer megpróbálja jelenteni az összes erőforrás és anyagfogyasztást, továbbá a készlet és selejt korrekciókat, mielőtt az időszak lezárul. Ez a jelentés általában készletmozgási naplók vagy a készlethelyesbítési naplók segítségével történik. Célja, üzemi egység adott időszak alatti teljesítményének gazdasági értékelése. Néhány esetben, amikor hosszútávú rendeléseket használnak, amelyek tartalmazzák a pénzügyi jelentések időtartamait, akkor a termelési naplók segítségével jelenthető a termelési előrehaladás és az erőforrás felhasználás az időszak végéig.
 
 
-<a name="additional-resources"></a>További erőforrások
---------
+## <a name="additional-resources"></a>További erőforrások
 
 [Termelési visszajelzés](production-feedback.md)
 

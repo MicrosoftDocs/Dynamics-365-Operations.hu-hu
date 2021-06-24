@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 1279cd1eb0d495107515dd40f7d2e0f9dfd5e080
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 84e7017cb0bd799e27e19fc82009307d2955dea7
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6058824"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189750"
 ---
 # <a name="organize-your-workforce-by-using-departments-jobs-and-positions"></a>Munkaerő szervezése részlegek, feladatok és beosztások szerint
 
@@ -42,8 +42,7 @@ Az alábbi példa mutatja be a jelen cikkben leírt koncepciókat.
 |**Emberi erőforrások**|HR vezető (Közép)|HR vezető|
 
 
- <a name="departments"></a>Osztályok
-------------
+##  <a name="departments"></a>Osztályok
 
 A részleg egy olyan üzemi egység, amely a szervezet egy kategóriáját vagy funkcionális területét képviseli, amely a szervezet egy specifikus területéért felel, ilyen például az értékesítés vagy a könyvelés. A részlegekkel – amelyeknek profitjuk és veszteségi felelősségük lehet – funkcionális területekkel kapcsolatos jelentések tehetők. Emellett egy részleg költséghelyek egy csoportját is magában foglalhatja. Az értékesítés, a könyvelés és a HR csak néhány példa a szervezeten belüli részlegekre.
 
@@ -96,8 +95,7 @@ Feladattípusok segítségével a hasonló beosztások kategóriákba sorolható
 
 Alkalmazzon hatásköröket azon a szerepkörök, folyamatok, termékek és műveletek megjelöléséhez, amelyekért a dolgozó egy adott beosztásban felelős. A „Könyvelő” nevű beosztáshoz tartozó hatáskörre példa lehet a „Pénzügyi jelentés az A termékkel kapcsolatban”.
 
-<a name="positions"></a>Beosztások
-----------
+## <a name="positions"></a>Beosztások
 
 A beosztások szervezeti hierarchia alacsonyabb szintjének fontos részei. Egy beosztás egy feladat egyedi példánya. Például az „Értékesítési igazgató (Kelet)” pozíció csak egyike azon beosztásoknak, amelyek hozzárendelhetők az „Értékesítési igazgató” munkához. A pozíciók egy részlegen belül léteznek, és dolgozókhoz kerülnek hozzárendelésre.
 ### <a name="position-creation-and-maintenance"></a>Beosztások létrehozása és karbantartása

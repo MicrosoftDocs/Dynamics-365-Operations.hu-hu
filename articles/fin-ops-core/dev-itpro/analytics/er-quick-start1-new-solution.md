@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6a3e0e4a8389fdd6580f66004d86ef4b1980dd9f
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 0f5a3ac7cae58d17409ea081ec30f61cecf29ce9
+ms.sourcegitcommit: 15aacd0e109b05c7281407b5bba4e6cd99116c28
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5891793"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "6224034"
 ---
 # <a name="design-a-new-er-solution-to-print-a-custom-report"></a>Új ER-megoldás tervezése egyéni jelentés nyomtatásához
 
@@ -285,7 +285,7 @@ A folytatáshoz ugorja át a következő eljárást: [Új adatmodell-konfigurác
 
 A konfiguráció 1. verziójának állapota **Piszkozatról** **Befejezett** értékre módosul. Az 1. verzió a későbbiekben már nem módosítható. Ez a verzió tartalmazza a konfigurált adatmodellt, és a többi ER-konfiguráció alapjaként használható. A konfiguráció 2. változata létrejön **Piszkozat** állapottal. Ezt a verziót a **Kérdőív** adatmodell módosításával szerkesztheti.
 
-![A szerkeszthető ER-konfiguráció verziói a Konfigurációk oldalon](./media/er-quick-start1-model-configuration.png)
+![A szerkeszthető konfiguráció verziói a Konfigurációk oldalon](./media/er-quick-start1-model-configuration.png)
 
 További információ az ER-konfigurációk verziószámozásáról: [Elektronikus jelentéskészítés (ER) áttekintése](general-electronic-reporting.md#component-versioning).
 
@@ -799,7 +799,7 @@ A következő képen egy olyan Excel-formátumú létrehozott jelentés láthat�
 
 A konfiguráció 1.1. verziójának állapota **Piszkozatról** **Befejezett** értékre módosul. Az 1.1. verzió a későbbiekben már nem módosítható. Ez a verzió a konfigurált formátumot tartalmazza, és egyéni jelentés nyomtatására is használható. A konfiguráció 1.2. változata létrejön **Piszkozat** állapottal. Ezt a verziót a **Kérdőív** jelentés formátumának módosításával szerkesztheti.
 
-![A szerkeszthető ER-konfiguráció verziói a Konfigurációk oldalon](./media/er-quick-start1-format-configuration.png)
+![A szerkeszthető ER-konfiguráció a Konfigurációk oldalon](./media/er-quick-start1-format-configuration.png)
 
 > [!NOTE]
 > A konfigurált formátum az Ön kialakítása a **Kérdőív** jelentéshez, és nincs kapcsolata Finance-specifikus összetevőkkel.

@@ -1,8 +1,8 @@
 ---
-title: Pénzügyi információk konfigurációja (előzetes verzió)
-description: Ez a témakör azokat a konfigurációs lépéseket ismerteti, amelyek lehetővé teszik a rendszer számára a Pénzügyi információkban elérhető képességek használatát.
+title: A Finance Insights konfigurációja – 10.0.19 verzióig
+description: Ez a témakör azokat a konfigurációs lépéseket ismerteti, amelyek lehetővé teszik a rendszer számára a Finance Insights alkalmazásban elérhető képességek használatát a 10.0.19 verzióig.
 author: ShivamPandey-msft
-ms.date: 11/25/2020
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 60e4d69157d7b73bd9e47310adae320687230080
-ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
+ms.openlocfilehash: 6ad06bb6d041fc060b3a99538f6d4d0af333180f
+ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "5941226"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6186420"
 ---
 # <a name="configuration-for-finance-insights-preview"></a>Pénzügyi információk konfigurációja (előzetes verzió)
 
@@ -30,6 +30,9 @@ ms.locfileid: "5941226"
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
+> [!NOTE]
+> A Finance Insights beállításának következő eljárásai a Microsoft Dynamics 365 Finance 10.0.19 verziójáig érvényesek. "A Finance Insights10.0.20 és későbbi verziói beállításával kapcsolatosan lásd: : [Finance Insights (előzetes verzió) – 10.0.20 és újabb verziók](configure-for-fin-insites-PubPrvw.md).
+
 A Pénzügyi információk a Microsoft Dynamics 365 Finance és a Microsoft Dataverse, az Azure és az AI Builder funkcióit kombinálva hatékony előrejelző eszközöket biztosítanak a szervezet számára. Ez a témakör azokat a konfigurációs lépéseket ismerteti, amelyek lehetővé teszik a rendszer számára a Pénzügyi információkban elérhető képességek használatát.
 
 ## <a name="deploy-dynamics-365-finance"></a>Dynamics 365 Finance üzembe helyezése
@@ -38,7 +41,7 @@ A környezetek üzembe helyezéséhez kövesse az alábbi lépéseket.
 
 1. A Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásban hozzon létre vagy frissítse a Dynamics 365 Finance környezetet. A környezethez 10.0.11/Platform 35-ös vagy újabb alkalmazásverzióra van szükség.
 2. A környezetnek magas rendelkezésre állású (HA) környezetnek kell lennie a tesztkörnyezetben. (Az ilyen típusú környezetet 2. szintű környezetnek is nevezik.) További információ: [Környezettervezés](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
-3. Ha Contoso Contoso bemutató adatokat használ, további mintaadatokra lesz szüksége az Ügyfélfizetési előrejelzések, a Pénzforgalmi előrejelzések és a Költségvetés-előrejelzések funkciók használatához. 
+3. Ha a Finance Insights beállítása egy tesztkörnyezetben történik, lehet, hogy a termelési adatokat az adott környezetbe kell másolnia, hogy az előrejelzések működjenek. Az előrejelzési modell több évnyi adatból használatával készít előrejelzéseket. A Contoso demóadatok nem tartalmaznak elég előzményadatot az előrejelzési modell megfelelő képzéséhez. 
 
 ## <a name="configure-dataverse"></a>Dataverse konfigurálása
 

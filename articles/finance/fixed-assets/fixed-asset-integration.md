@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dc069743c1b28133540eeab98ae6dd5242a5e887
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0e6be2aeb263c339f4e733b98ea4e01194973a9f
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826834"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189784"
 ---
 # <a name="fixed-assets-integration"></a>Tárgyieszköz-integráció
 
@@ -28,8 +28,7 @@ ms.locfileid: "5826834"
 
 A tárgyi eszközök integrálhatók a főkönyvvel, a készletkezeléssel, a kinnlevőségekkel és a követelésekkel. A tárgyi eszközök emellett a beszerzési rendelésekkel integrálva is beállíthatók.
 
-<a name="general-ledger"></a>Főkönyv
---------------
+## <a name="general-ledger"></a>Főkönyv
 
 A Főkönyvön belül a tárgyi eszközök értékének összegzése általában több, a pénzügyi jelentések készítéséhez szükséges fő számlán történik. Azonban a **Tárgyi eszközök** lapon számos tárgyieszköz-rekordot létrehozhat. Ezek a rekordok tartalmazhatják például árat, az értékcsökkenést és az értékelést. Tárgyieszköz-tranzakció feladása esetén mindig a megfelelő fő számlát frissíti. A tárgyi eszközök fő számláin mindig a tárgyi eszközök frissített értékei láthatók.
 
