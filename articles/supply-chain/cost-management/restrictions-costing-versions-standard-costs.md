@@ -16,12 +16,12 @@ ms.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fdbe74f2f71d0fbd3c237cceb6b184747636e9a1
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d9d828e2413a20c4e61d162a31d3c2ed2b18718b
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821489"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6187674"
 ---
 #  <a name="restrictions-on-costing-versions-for-standard-costs"></a>Az elszámolóárakkal kapcsolatos költségszámítási verziókra vonatkozó korlátozások
 
@@ -39,8 +39,7 @@ A következő korlátozások segítenek biztosítani a szabványos költségszá
 
 Az elszámolóárakhoz tartozó cikk-költség adatokat át lehet másolni az elszámolóárakat vagy tervezett költségeket tartalmazó másik költségszámítási verzióba. A tervezett költségekre vonatkozó cikk-költség adatokat azonban olyan költségszámítási verzióba nem lehet másolni, amely elszámolóárakat tartalmaz, mert a témakörben feljebb ismertetett megkötések nem érvényesek a tervezett költségekre.
 
-<a name="related-topics"></a>Kapcsolódó témakörök
---------
+## <a name="related-topics"></a>Kapcsolódó témakörök
 
 [Költségszámítási verziók áttekintése](costing-versions.md)
 

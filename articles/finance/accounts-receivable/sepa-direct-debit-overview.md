@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cf3872a47a92509af5857c0c1aec0d4da4095d19
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5b1ec24c84d2b1a3dc88bf96ae6f52441b58a694
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835268"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188686"
 ---
 # <a name="sepa-direct-debit-overview"></a>SEPA beszedési megbízás – áttekintés
 
@@ -28,8 +28,7 @@ ms.locfileid: "5835268"
 
 Az egységes euro-pénzforgalmi övezet (SEPA) az Európai Bizottság által került meghatározásra, és szabályai előírják, hogy minden elektronikusan küldött kifizetés belföldinek számít, függetlenül az egyes személyek, vállalatok, szervezetek vagy bankok elhelyezkedésétől. Az országon belüli és a nemzetközi kifizetések között nincs különbség. A SEPA magában foglalja a 28 Európai Uniós (EU) tagállamot, csak úgy mint Izlandot, Liechtensteint, Norvégiát, Svájcot, Monacót és San Marinót. A SEPA egységes piacot teremt az Európai Gazdasági Térségen (EGT) belüli kifizetési tranzakciók számára. A várakozások szerint a SEPA csökkenteni fogja a bankok, vállalatok és személyek által használt és kezelt kifizetési formátumok számát.   
 
-<a name="what-is-the-goal-of-sepa-direct-debits"></a>Mi a SEPA beszedési megbízások célja?
----------------------------------------
+## <a name="what-is-the-goal-of-sepa-direct-debits"></a>Mi a SEPA beszedési megbízások célja?
 
 A SEPA beszedési megbízással egy hitelező pénzt szedhet be a vevő bankszámlájáról, ha a vevő aláírt felhatalmazást adott erre a hitelezőnek. A vevő aláír egy felhatalmazást, amellyel engedélyezi a hitelezőnek a fizetés beszedését, és saját bankjának utasítást ad a pénz kifzetésére. 
 

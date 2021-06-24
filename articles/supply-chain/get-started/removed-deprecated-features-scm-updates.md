@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: a7a06b5476302e43d107c448c139c235ea57b05b
-ms.sourcegitcommit: 57668404d61359b33e0c0280f2f7c4eb829b1ed2
+ms.openlocfilehash: a7a9fb619ce3488ad4e3e79292af7acc359b83c5
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "5947544"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193230"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-supply-chain-management"></a>Eltávolított vagy elavult funkciók a Dynamics 365 Supply Chain Management szolgáltatásban
 
@@ -38,7 +38,7 @@ Ez a lista segít figyelembe venni az elavult és eltávolított szolgáltatáso
 
 ### <a name="job-card-device"></a>Feladatkártya eszköze
 
-|   |   |
+| &nbsp;  | &nbsp;  |
 |---|---|
 | **Elavulás/eltávolítás oka** | A [feladatkártya eszközét](../production-control/config-job-card-device.md) lecseréli az [termelési üzem végrehajtási felület](../production-control/production-floor-execution-configure.md). |
 | **Felváltotta másik szolgáltatás?**   | Igen, a [feladatkártya eszközét](../production-control/config-job-card-device.md) lecseréli az [termelési üzem végrehajtási felület](../production-control/production-floor-execution-configure.md). |
@@ -50,7 +50,7 @@ Ez a lista segít figyelembe venni az elavult és eltávolított szolgáltatáso
 
 ### <a name="dynamics-365-for-finance-and-operations---warehousing-the-warehouse-app"></a>Dynamics 365 for Finance and Operations - Raktárkezelés (a raktár alkalmazás)
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | 2021 áprilisától a *Dynamics 365 for Finance and Operations – Raktárkezelés* (a raktár alkalmazás) elavult, és 2022 áprilisa után már nem támogatott. Ezt most felváltja a *Raktárkezelés mobilalkalmazás*, amelyet a Supply Chain Management 10.0.17-es verziójával adtunk ki. Az új alkalmazás egy teljeskörű helyettesítő alkalmazás, de ugyanazt a mögöttes keretrendszert használja, ami megkönnyíti az áttelepítést. Szükség esetén a két alkalmazás egymás mellett is használható, hogy a felhasználók fokozatosan alkalmazkodjanak az új alkalmazás használatához.<br><br>További információért az új Raktárkezelés mobilalkalmazásról lásd: [Raktárkezelés mobilalkalmazás](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-application) és a [Raktárkezelés mobilalkalmazás telepítése és összekapcsolása](../warehousing/install-configure-warehouse-management-app.md). |
 | **Felváltotta másik szolgáltatás?**   | Igen, ezt az új Raktárkezelés mobilalkalmazás váltotta le. |
@@ -62,7 +62,7 @@ Ez a lista segít figyelembe venni az elavult és eltávolított szolgáltatáso
 
 ### <a name="internet-explorer-11-support-for-dynamics-365-is-deprecated"></a>Internet Explorer 11 támogatás a Dynamics 365-höz elavult
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | A 2020 decemberétől hatályos Microsoft Internet Explorer 11 támogatás az összes Dynamics 365 termékre elavulttá válik, ezért az Internet Explorer 11 nem lesz támogatott 2021. augusztus után.<br><br>Ez hatással lesz azokra, akik Dynamics 365 termékeket használnak, amelyeket a Internet Explorer 11 interfészen való használatra terveztek. 2021. augusztus után az Internet Explorer 11 nem lesz támogatott az ilyen Dynamics 365 termékek esetében. |
 | **Felváltotta másik szolgáltatás?**   | Azt ajánljuk, hogy a vevők térjenek át a Microsoft Edgere.|
@@ -72,7 +72,7 @@ Ez a lista segít figyelembe venni az elavult és eltávolított szolgáltatáso
 
 ### <a name="use-of-built-in-supply-chain-management-master-planning-engine-for-manufacturing-scenarios"></a>A Supply Chain Management beépített tervezési motorjának használata gyártási forgatókönyvekhez
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | A teljesítmény fokozása és az SQL-adatbázis terhelésének minimalizálása érdekében alaptervezés futtatásakor a Supply Chain Management alaptervezési motorját leváltja a Tervezési optimalizálás. A Tervezési optimalizálás lehetővé teszi a gyors tervezésfuttatásokat, amelyek munkaidőben is elvégezhetők. Ez lehetővé teszi a tervezők számára, hogy azonnal reagáljanak az igény- vagy a tervezési paraméterek változásaira. |
 | **Felváltotta másik szolgáltatás?**   | Igen, a Tervezés optimalizálása átveszi a meglévő beépített Supply Chain Management alaptervezési motorjának szerepét. |
@@ -84,7 +84,7 @@ Ez a lista segít figyelembe venni az elavult és eltávolított szolgáltatáso
 
 ### <a name="use-of-built-in-supply-chain-management-master-planning-engine-for-distribution-scenarios"></a>A Supply Chain Management beépített tervezési motorjának használata elosztási forgatókönyvekhez
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | A teljesítmény fokozása és az SQL-adatbázis terhelésének minimalizálása érdekében alaptervezés futtatásakor a Supply Chain Management alaptervezési motorját leváltja a Tervezési optimalizálás. A Tervezési optimalizálás lehetővé teszi a gyors tervezésfuttatásokat, amelyek munkaidőben is elvégezhetők. Ez lehetővé teszi a tervezők számára, hogy azonnal reagáljanak az igény- vagy a tervezési paraméterek változásaira. |
 | **Felváltotta másik szolgáltatás?**   | Igen, a Tervezés optimalizálása átveszi a meglévő beépített Supply Chain Management alaptervezési motorjának szerepét. |

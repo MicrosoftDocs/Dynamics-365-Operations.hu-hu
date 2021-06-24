@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 37fb7d2623451313475a6c234e820c7c6295be40
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: e4b38fd137e6479493da79d4b62d0111b502a632
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835484"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189493"
 ---
 # <a name="vendor-posting-profiles"></a>Szállítói feladási profilok
 
@@ -28,8 +28,7 @@ ms.locfileid: "5835484"
 
 A szállítói feladási profilok a szállítói tranzakciók főkönyvbe történő feladását szabályozzák.
 
-<a name="vendor-posting-profiles"></a>Szállítói feladási profilok
------------------------
+## <a name="vendor-posting-profiles"></a>Szállítói feladási profilok
 
 A szállítói feladási profilok lehetővé teszik, hogy a főkönyvi számlákat és dokumentumbeállításokat az összes szállítóhoz, egy szállítói csoporthoz vagy egyetlen szállítóhoz rendelhesse. Ezek a beállítások a beszerzési rendelések, a szállítói számlák és a készpénzes fizetések létrehozásakor használatosak. Néhány tranzakcióhoz feladói profilt választhat ki, és elsőbbséget élvez azokkal a feladói profilokkal szemben, amelyeket ezen az oldalon állít be a tranzakciókhoz, illetve különbözik tőlük. Az alapértelmezett feladási profil a **Főkönyv és áfa** gyorslapon, a **Kötelezettségek paraméterei** lapon van megadva. Az alapértelmezett feladási profil automatikusan szerepel majd az új dokumentumok fejlécén, ahol szükség esetén módosíthatja egy másik feladási profilra.
 

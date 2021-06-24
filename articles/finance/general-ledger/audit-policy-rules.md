@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f1297f405e57c2de4f42f05f78ef52b2d763f0f8
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: f57c3405e03651798b7e0aaf1fab84d25f33f7cc
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821985"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6187868"
 ---
 # <a name="audit-policy-rules"></a>Könyvvizsgálati irányelvszabály
 
@@ -28,8 +28,7 @@ ms.locfileid: "5821985"
 
 Naplózási házirendek segítségével kiértékelhet költségjelentéseket, szállítói számlákat és beszerzési rendeléseket, hogy így meggyőződhessen arról, hogy azok megfelelnek-e az Ön által létrehozandó irányelvszabályoknak. Minden olyan szabály, amelyhez egy könyvvizsgálati irányelv van társítva, kötegelt módban van futtatva a megadott ütemezés szerint.  Minden egyes irányelvszabály egy irányelvszabály-típus egy példánya. Minden egyes irányelvszabály-típusra nézve csak egy irányelvszabály lehet aktív egyszerre. 
 
-<a name="queries-and-query-types"></a>Lekérdezések és a lekérdezéstípusok
------------------------
+## <a name="queries-and-query-types"></a>Lekérdezések és a lekérdezéstípusok
 
 Ha könyvvizsgálati irányelvszabályt hoz létre, először irányelvszabály-típust választ. Az irányelvszabály-típus megadja az irányelvszabályok létrehozásának kiinduló pontjaként használandó alkalmazásobjektum-fa (AOT) lekérdezést. Az irányelvszabályhoz használandó lekérdezés típusát is megadja. A lekérdezés meghatározza azt a forrásbizonylatot, amit az irányelvszabály kiértékel. Azokat a mezőket is megadja a forrásdokumentumban, amelyek mind a jogi személyt mind a használandó dátumot azonosítják, amikor dokumentumokat választanak ki ellenőrzésre. A lekérdezéstípus meghatározza a lekérdezési oldalon és a Könyvviteli irányelvszabály oldalon levő alapértelmezett mezőket. Az alábbi táblázatban az audit-irányelvszabályokhoz elérhető lekérdezéstípusok felsorolása található.
 
@@ -91,8 +90,7 @@ Az egy adott auditirányelvre vonatkozó összes irányelvszabály ugyanazon kö
 
 
 
-<a name="additional-resources"></a>További erőforrások
---------
+## <a name="additional-resources"></a>További erőforrások
 
 [Könyvvizsgálati irányelvmegsértések és esetek](audit-policy-violations-cases.md)
 [Naplózási házirendek meghatározása a forrásbizonylatok számára](tasks/define-audit-policies-source-documents.md)

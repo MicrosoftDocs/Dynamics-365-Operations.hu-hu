@@ -2,7 +2,7 @@
 title: Videók feltöltése
 description: Ez a témakör azt mutatja be, hogyan tölthet fel videókat a Microsoft Dynamics 365 Commerce webhelykészítőben.
 author: psimolin
-ms.date: 03/03/2020
+ms.date: 06/09/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 5ec20f8caee2f5a62230be05923dfd52600c1e35
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: e3579b54c58898b79c84406480a3b58f541c4621
+ms.sourcegitcommit: 257437a57e146496a49782bc8aad179c92fbf6e8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799205"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "6224538"
 ---
 # <a name="upload-videos"></a>Videók feltöltése
 
@@ -35,7 +35,7 @@ A Commerce webhelykészítő médiatára segítségével videókat tölthet fel.
 Videó feltöltésekor meg lehet adni a következő adatokat.
 
 - **Cím, leírás, kulcsszavak**: a videó metaadatai.
-- **Feliratok automatikus létrehozása**: meghatározza, hogy a rendszer automatikusan generálja-e a feliratokat a videóhoz.
+- **Feliratok automatikus létrehozása**: meghatározza, hogy a rendszer automatikusan generálja-e a feliratokat a videóhoz (csak az angol nyelv támogatott). 
 - **Felirat**: meghatározza a használandó feliratokat.
 - **Normál hang**: meghatározza a normál hangsáv használatát.
 - **Miniatűr**: meghatározza a videoklip mintaképét. Ha nincs megadva, a rendszer automatikusan létrehozza.

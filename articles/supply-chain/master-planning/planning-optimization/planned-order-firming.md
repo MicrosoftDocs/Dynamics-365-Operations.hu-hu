@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: ac8b63b98c37c7429cee792b85f492f3ca1d57c7
-ms.sourcegitcommit: 365092f735310990e82516110141d42aaf04e654
+ms.openlocfilehash: e2fc40e3e9874d47dd51e773628ba1ce75b8ebab
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "6103628"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193881"
 ---
 # <a name="firm-planned-orders"></a>Biztosra tervezett rendelések
 
@@ -102,7 +102,7 @@ Az automatikus megerősítéssel az Alaptervezési folyamat részeként megerős
 
 Mind a tervezés optimalizálása, mind a beépített tervezési motor használható a tervezett rendelések automatikus megerősítésére. Vannak azonban fontos eltérések. Mivel például a tervezés optimalizálása a rendelési dátumot (azaz a kezdő dátumot) használja a megerősítendő tervezett rendelések meghatározásához, a beépített tervezési motor a követelmény dátumát (azaz a záró dátumot) használja. Az alábbi táblázat összegzi a különbségeket.
 
-| | Tervezési optimalizálás | Beépített tervezőmotor |
+| Funkció | Tervezési optimalizálás | Beépített tervezőmotor |
 |---|---|---|
 | **Kiindulási dátum** | Az automatikus megerősítés a rendelés dátuma (kezdő dátum) alapján történik. | Az automatikus megerősítés a követelmény dátuma (záró dátum) alapján történik. |
 | **Átfutási idő** | Mivel a rendelés dátuma (kezdő dátum) indítja a megerősítést, nem kell figyelembe vennie az átfutási időt a megerősítési időkorlát részeként. | Ha biztosítani szeretné, hogy a rendelések időben meg legyenek erősítve, a megerősítés időtartamának hosszabbnak kell lennie, mint az átfutási idő. |

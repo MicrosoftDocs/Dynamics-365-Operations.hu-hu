@@ -2,7 +2,7 @@
 title: Pénzügyi információk kezdőlapja (előzetes verzió)
 description: A Pénzügyi információk konfigurálható és bővíthető modelleket biztosít, amelyek segítségével pontosan és intelligensen előrejelezheti a vállalat pénzforgalmát, előrejelezheti, hogy mikor kapja meg a fennmaradó kinnlévőségek kifizetését, és létrehoz egy költségvetési javaslatot, amely felgyorsíthatja a költségvetési folyamatot. Ezek a funkciók intelligens gépi tanulási modelleken alapulnak.
 author: ShivamPandey-msft
-ms.date: 07/20/2020
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 3a78a162469790d797344ce9311c55bfcecd19f4
-ms.sourcegitcommit: 273903b7b73ac726d447c50f7086e6d8b0f0f74e
+ms.openlocfilehash: 4876d2d4ad79dc09ce4b372eedf4c6ab31930957
+ms.sourcegitcommit: 655b0e16c7aef6182cd58bc816b901470e1bb2ce
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "6086989"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "6222510"
 ---
 # <a name="finance-insights-home-page-preview"></a>Pénzügyi információk kezdőlapja (előzetes verzió)
 
@@ -68,7 +68,9 @@ Az erőforrások létrehozásának és kezelésének ismerete az Azure-ban, Micr
 
 ## <a name="configure-finance-insights"></a>Pénzügyi információk konfigurálása
 
-A Pénzügyi információk használatához végre kell hajtson néhány konfigurációs lépést. A Pénzügyi elemzések konfigurálásáról a [Konfiguráció a pénzügyi elemzésekhez](configure-for-fin-insites.md) című témakörben talál további információt.
+A Pénzügyi információk használatához végre kell hajtson néhány konfigurációs lépést. További információ a Finance Insights konfigurálásáról:
+  - A 10.0.19-es verzióig: [Konfiguráció a Finance Insights alkalmazáshoz – 10.0.19 verzióig](configure-for-fin-insites.md).
+  - A 10.0.20-as és újabb verziók esetén: [A Finance Insights (előzetes verzió) konfigurálása – 10.0.20-as és újabb verziók](configure-for-fin-insites-PubPrvw.md).
 
 ## <a name="create-a-data-integrator-project"></a>Adatintegrációs projekt létrehozása
 
@@ -84,10 +86,7 @@ Ha bemutatóadatokat használ az ügyfelek fizetési előrejelzéseinek tesztel�
 Az ügyfelek fizetési előrejelzéseinek engedélyezéséhez végre kell hajtani egy sor lépést egy olyan gépi tanulási modell létrehozásához, amely a szervezet adataival a szervezet adatai alapján előrejelzéseket készít arról, hogy az ügyfelek valószínűleg mikor fizetnek ki kinnlévő számlákat, és mikor kell fizetnek ki bizonyos számlákat. További információkért és a végrehajtandó konkrét lépésekért olvassa el a [Vevői fizetési előrejelzések engedélyezése](enable-cust-paymnt-prediction.md) című témakört. 
 
 ### <a name="enable-cash-flow-forecasting"></a>Pénzforgalmi előrejelzés engedélyezése
-A pénzforgalmi előrejelzés engedélyezéséhez végre kell hajtson egy sor lépést egy olyan gépi tanulási modell létrehozásához, amely a szervezet adatait használja a szervezet adatai alapján a pénzforgalmi előrejelzések létrehozásához. További információkért és a végrehajtandó konkrét lépésekért olvassa el a [Pénzforgalmi előrejelzések engedélyezése](enable-cash-flow-forecasting.md) című témakört 
-
-### <a name="set-up-and-use-cash-flow-forecasting"></a>Pénzforgalmi előrejelzés beállítása és használata
-A pénzforgalmi előrejelzés beállításával és használatával kapcsolatos tudnivalókat lásd: [Pénzforgalmi előrejelzés engedélyezése](enable-cash-flow-forecasting.md). További tájékoztatás a képesség használatáról: [Pénzforgalmi előrejelzés](cash-flow-forecast-intro.md).
+A pénzforgalmi előrejelzés engedélyezéséhez végre kell hajtson egy sor lépést egy olyan gépi tanulási modell létrehozásához, amely a szervezet adatait használja pénzforgalmi előrejelzések létrehozásához. További információkért és a végrehajtandó konkrét lépésekért olvassa el a [Pénzforgalmi előrejelzések engedélyezése](enable-cash-flow-forecasting.md) című témakört.
 
 ### <a name="enable-budget-proposals"></a>Költségvetési javaslatok engedélyezése
 
@@ -111,14 +110,12 @@ A Pénzforgalmi előrejelzés funkció segítségével pontosabban megbecsülhet
 
 - A Pénzforgalmi előrejelzések új képességeiről a [Pénzforgalmi előrejelzés](cash-flow-forecast-intro.md) című témakörben olvashat.
 - A pénzforgalmi előrejelzésben szereplő külső adatok importálásáról a [Külső adatok használata a pénzforgalmi előrejelzésekben](external-data-in-cash-flow.md) című témakörben olvashat. 
-- Ha tudni szeretné, hogyan használható a hosszú távú pénzforgalom az AI-modell használatával, olvassa el a [Pénzforgalmi előrejelzések áttekintése](cash-position.md) című témakört.
+- Ha tudni szeretné, hogyan használható a rövid távú pénzforgalom az AI-modell használatával, olvassa el a [Készpénzpozíció](cash-position.md) című témakört.
 - A pénzforgalmi pozíciók és a pénzforgalmi előrejelzések pillanatképként való mentésével, valamint a pillanatképek tényleges adatokkal való összehasonlításáról a [Pillanatképek áttekintése](payment-snapshots.md) című témakörben olvashat.
 
 ### <a name="using-budget-proposal"></a>Költségvetési javaslatok használata
 
 A költségvetés létrehozásának felgyorsításáról a [Költségvetési javaslatok](budget-proposals.md) című témakörben talál további információt. 
-
-A költségvetési javaslat bemutatóadatai:
 
 ## <a name="feedback-and-support"></a>Visszajelzés és támogatás
 

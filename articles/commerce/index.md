@@ -9,6 +9,7 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: ''
 ms.custom: 260624
 ms.assetid: ''
 ms.search.region: global
@@ -16,17 +17,16 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f7ff7ea28f8417d4c35f87e0d8fef46d647f42e4
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 51fd8ca2ef7cdc43967ced8251b8377f3eaaf753
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019102"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193672"
 ---
 # <a name="commerce-home-page"></a>Commerce kezdőlap
 
 [!include [banner](includes/banner.md)]
-
 
 A bevált Dynamics 365 Retail-funkciókra épülő Dynamics 365 Commerce az irodát, az üzletet, a hívásközpontot és a digitális megoldásokat egyesítő általános többcsatornás megoldást kínál. A Dynamics 365 Commerce lehetővé teszi, hogy a személyre szabott vevői bevonáson alapuló márkahűség kialakítását, a beétel növelését az alkalmazottak hatékonyabbá tételével, a műveletek optimalizálását a költségcsökkentés és a hatékonyabb ellátási lánc kialakítása érdekében, így összességében jobb üzleti eredményeket biztosítva.
 
@@ -38,21 +38,23 @@ Ez a kiadás lehetővé teszi digitális élmények létrehozását a beépítet
 
 - **Rugalmas és intelligens többcsatornás élmény:** Egyesítse a fizikai és digitális kereskedelmet azáltal, hogy konzisztens élményt nyújt az ügyfeleknek a felhőalapú keresés és felfedezés, termékértékelések, kívánságlisták, ajándékkuponok és hűségprogramok terén. Lehetővé teszi a vásárlóknak , hogy akkor, olyan módon és ott vásároljanak minden eszközön, ahol szeretnének – mindeközben választás lehetőséget kínál a modern fizetési eszközök, termékátvétel és kiszállítás terén.
 
-- **Az Mi-t használó műveletek racionalizálása a felhőalapú szolgáltatásban:** Biztosítson többcsatornás kereskedelmi élményeket és integrált, optimalizált háttérműveleteket beágyazott, átható és környezetérzékeny felhőalapú intelligenciával. Használjon speciális értékesítést, készletkezelést, elosztott rendelés kezelést és árképzést, valamint promóciót hogy innovatív lehessen, és a versenytársak előtt maradhasson. A betekintés szerezhet a vállalat minden aspektusára kiterjedő átfogó és egységes adatok megjelenítésével és elemzésével. Az MI-vezérelt technológiák segítségével jól kezelhető webhelyeket biztosíthat, megvédheti a vállalatot a fizetési csalásokkal szemben, és hatékonyan moderálhatja a felhasználók által előállított tartalmat, például minősítéseket és értékeléseket. 
+- **Az Mi-t használó műveletek racionalizálása a felhőalapú szolgáltatásban:** Biztosítson többcsatornás kereskedelmi élményeket és integrált, optimalizált háttérműveleteket beágyazott, átható és környezetérzékeny felhőalapú intelligenciával. Használjon speciális értékesítést, készletkezelést, elosztott rendelés kezelést és árképzést, valamint promóciót hogy innovatív lehessen, és a versenytársak előtt maradhasson. A betekintés szerezhet a vállalat minden aspektusára kiterjedő átfogó és egységes adatok megjelenítésével és elemzésével. Az MI-vezérelt technológiák segítségével jól kezelhető webhelyeket biztosíthat, megvédheti a vállalatot a fizetési csalásokkal szemben, és hatékonyan moderálhatja a felhasználók által előállított tartalmat, például minősítéseket és értékeléseket.
 
 ## <a name="core-concepts-and-tasks"></a>Alapvető fogalmak és feladatok
 
 További információkért válasszon ki egy szolgáltatásterületet.
+
 - [Commerce előzetes verziós környezet konfigurálása](provisioning-guide.md)
 - [Commerce architektúra](./commerce-architecture.md)
 - [Saját csatornák beállítása](channels-overview.md)
-- [A termékek és szolgáltatások árusítása](set-up-retail-products.md)
+- [Saját termékek és szolgáltatások árusítása](set-up-retail-products.md)
 - [Rendelések kezelése](Order-fulfillment-overview.md)
 - [Saját vevők kezelése](set-up-customer-loyalty-program.md)
 - [Saját pénzügyek kezelése](retail-statements.md)
 - [Saját e-Commerce webhely kezelése](online-store-overview.md)
-- [Fraud Protection](dev-itpro/DFP.md)
+- [Csalás elleni védelem](dev-itpro/DFP.md)
 - [Kereskedelmi fejlesztés és bővíthetőség](dev-itpro/dev-retail-home-page.md)
 
+## <a name="elearning-courses"></a>eLearning-tanfolyamok
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+Az online tanfolyamokkal és tréningekkel kapcsolatban tekintse meg a következőt: [Dynamics 365 Commerce a Microsoft Learn szolgáltatásban](https://docs.microsoft.com/learn/browse/?expanded=dynamics-365&products=dynamics-commerce&resource_type=learning%20path).

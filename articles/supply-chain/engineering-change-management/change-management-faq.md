@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-03-25
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 69232eed8520bafeb734ffad43b333bf9e36909e
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 9c95c1f2342654ca2bbee57959becc85291eebbc
+ms.sourcegitcommit: a7649b361ec54b49c0e9ee1c1c63a8815f320225
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018685"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6187271"
 ---
 # <a name="engineering-change-management-faq"></a>Tervezési változáskezelés GYIK
 
@@ -46,7 +46,7 @@ Ez a lehetőség sokkal egyszerűbben kezelhető, mivel ha át szeretne váltani
 
 A legtöbb szervezet ezt a lehetőséget választja, mivel verzió- és változáskezelést biztosít, de nem adja hozzá a minden tranzakcióban való verziókövetés további többletköltségeit a készletben és az alaptervezés során.
 
-## <a name="which-fields-are-copied-to-the-released-item-template"></a>Mely mezőket másolja a rendszer a kiadott cikksablonba?
+## <a name="which-fields-are-copied-from-the-released-item-template"></a>Mely mezőket másolja a rendszer a kiadott cikksablonból?
 
 Amikor egy tervezési vállalat létrehoz egy tervezési terméket, az a termék egy kiadott termékként jön létre a tervezési vállalatban. A létrehozott kiadott termék a kiválasztott *kiadott cikksablonon* alapul. (A kiadott cikksablon maga egy létező kiadott termék.) A kiadott cikksablont akkor is használja a rendszer, amikor a terméket egy operatív vállalatnak kiadták. A kiadott cikksablon minden esetben meghatározza a kiadott termék mezőértékének nagy részét, és ezek az értékek a **Kiadott termék részletei** lapról származnak.
 

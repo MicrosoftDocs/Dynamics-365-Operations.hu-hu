@@ -2,7 +2,7 @@
 title: Több felvételi szállítási mód engedélyezése a vevői rendelésekhez
 description: Ez a témakör a Microsoft Dynamics 365 Commerce azon funkcióit ismerteti, amelyek lehetővé teszik vevői rendelések létrehozását az üzletben való felvételhez.
 author: hhainesms
-ms.date: 11/17/2020
+ms.date: 06/07/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 124765a3d4d2ebd01e200b76fc862e2c37073b8e
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: ae7df6679c261b5e5dcd39e4ca6fe0e21d993927
+ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020651"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "6216767"
 ---
 # <a name="enable-multiple-pickup-delivery-modes-for-customer-orders"></a>Több felvételi szállítási mód engedélyezése a vevői rendelésekhez
 
@@ -38,7 +38,7 @@ Miután bekapcsolta a **Több felvételi szállítási mód engedélyezése** fu
 
 A **Kiszállítási kézbesítési mód** és az **Elektronikus kézbesítési mód** mezők, valamint a **Csak szállítmányozói mód beállításainak megjelenítése kiszállítási rendelésekhez** beállítás átkerültek erre a gyorslapra.
 
-További felvételi kézbesítési módok konfigurálása előtt meg kell határoznia a kézbesítési módokat. A Commerce központ **Szállítási módok** lapján adja hozzá azokat a szállítási módokat, amelyeket átvételi szállítási módoknak kell tekinteni. Győződjön meg arról, hogy minden konfiguráció befejeződött. Például győződjön meg arról, hogy a kézbesítés módja megfelelő csatornákhoz és cikkekhez van kapcsolva. Ha végzett, futtassa a **Kézbesítési módok feldolgozása** feladatot a kézbesítési mód, a csatornák és a cikkek közötti kapcsolatok létrehozásához. Miután a feladat futása befejeződött, nyissa meg a **Terjesztési ütemezés** lapot a Commerce központban, és futtassa az **1120**-as terjesztési feladatot, hogy a megfelelő Commerce-csatorna-adatbázisok frissüljenek az új szállítási mód konfigurációjával.
+További felvételi kézbesítési módok konfigurálása előtt meg kell határoznia a kézbesítési módokat. A Commerce központ **Szállítási módok** lapján adja hozzá azokat a szállítási módokat, amelyeket átvételi szállítási módoknak kell tekinteni. Győződjön meg arról, hogy minden konfiguráció befejeződött. Ha például az online vásárlóknak bolt előtti szállítási lehetőséget kínál bizonyos üzletek számára, akkor egy új szállítási módot kell létrehoznia erre a célra. Ez a szállítási mód a "bolt előtti felvétel" leírással hozható létre. Ezután biztosítani kell azt, hogy a "bolt előtti felvétel" szállítási mód le legyen képezve az összes Commerce csatornához, amelyek ajánlhatják ezt beleértve azokat az online áruházakat is, amelyek ezt a lehetőséget kínálják, valamint az ezt a teljesítési módot kínáló egyes üzletcsatornákat. A szállítási módokat a termékekhez is kapcsolni kell. Ebben a példában, ha vannak olyan termékek, amelyek nem értékesíthetők az "üzlet előtti" használatával, meg kell győződni arról, hogy ezek a cikkek ki vannak zárva. Ha végzett az új szállítási módok hozzáadásával, futtassa a **Kézbesítési módok feldolgozása** feladatot a kézbesítési mód, a csatornák és a cikkek közötti kapcsolatok létrehozásához. Miután a feladatbefejeződött, nyissa meg a **Terjesztési ütemezés** lapot a Commerce központban, és futtassa az **1120**-as terjesztési feladatot, hogy a megfelelő Commerce-csatorna-adatbázisok frissüljenek az új szállítási mód konfigurációjával.
 
 ![Példa a bolt előtti felvétel szállítási konfigurációjának módjára](media/pickupmodes.png)
 

@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fdcb45918b404f8a47f27bcea7c02a8397c9336f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 236743277a95b8a1170ca05f93106575ea1cc8e4
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821441"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6187602"
 ---
 # <a name="standard-cost-conversion-overview"></a>Átalakítás elszámolóárra – áttekintés
 
@@ -92,8 +92,7 @@ A **Különbözetelemzési kimutatás** jelentés segítségével elemezheti az 
 -   Vizsgálja meg a visszadátumozott készletmozgásokat. A **Készletérték** jelentés segítségével megtekintheti az átalakítás után megadott visszadátumozott készletmozgásokat. A „Jelentés kezdő és záró dátumának meg kell fellelnie az átmenet kezdési dátumának és az átalakítást megelőző nap dátumának. A jelentés kiválasztási feltételeinek az átalakított cikkeket kell eredményül adnia. A jelentés megjeleníti azokat a készletmozgásokat, amelyeket az elszámolóárnál hoztak létre az átmeneti időszak során.
 
 
-<a name="additional-resources"></a>További erőforrások
---------
+## <a name="additional-resources"></a>További erőforrások
 
 [Az elszámolóárra való átalakítás előfeltételei](prerequisites-standard-cost-conversion.md)
 

@@ -2,7 +2,7 @@
 title: Pénzforgalmi előrejelzés engedélyezése (előzetes verzió)
 description: Ez a témakör azt mutatja be, hogyan lehet bekapcsolni a Pénzforgalmi előrejelzések funkcióját a pénzügyi elemzésekben.
 author: ShivamPandey-msft
-ms.date: 07/24/2020
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-24
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: f7c06eaeb79c1a2aa319cfa3d2ad8255bf716cd0
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: ba8acb2191291e2abed5cabf234c19fe09e6c8ff
+ms.sourcegitcommit: 655b0e16c7aef6182cd58bc816b901470e1bb2ce
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818728"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "6222558"
 ---
 # <a name="enable-cash-flow-forecasting-preview"></a>Pénzforgalmi előrejelzés engedélyezése (előzetes verzió)
 
@@ -37,7 +37,7 @@ Ez a témakör azt mutatja be, hogyan lehet bekapcsolni a Pénzforgalmi előreje
     `INSERT INTO SYSFLIGHTING (FLIGHTNAME, ENABLED) VALUES ('CashflowInsightsFeature', 1)`
 
     > [!NOTE]
-    > Ha a Microsoft Dynamics 365 Finance központi telepítése egy Service Fabric üzemelő példány, kihagyhatja ezt a lépést. A pénzügyi elemzési csoportnak már be kellett kapcsolnia a tesztelés kiadását az Ön számára. Ha nem látja a funkciókat a **Funkciókezelés** munkaterületen, vagy ha problémákat tapasztal, amikor megpróbálja bekapcsolni őket, keressen fel minket: <fiap@microsoft.com>.
+    > Hagyja ki ezt a lépést, ha a 10.0.20-as vagy újabb verziót használja, vagy ha Service Fabric-telepítést használ. A pénzügyi elemzési csoportnak már be kellett kapcsolnia a tesztelés kiadását az Ön számára. Ha nem látja a funkciót a **Funkciókezelés** munkaterületen, vagy ha problémákat tapasztal, amikor megpróbálja bekapcsolni, keressen fel minket: <fiap@microsoft.com>.
   
 2. Nyissa meg a **Funkciókezelés** munkaterületet, és kövesse az alábbi lépéseket:
 
@@ -60,10 +60,5 @@ Ez a témakör azt mutatja be, hogyan lehet bekapcsolni a Pénzforgalmi előreje
     2. Válassza az **Előrejelzési modell létrehozása** lehetőséget.
 
 A pénzforgalmi előrejelzés képesség beállításával kapcsolatos további tudnivalókat lásd: [Pénzforgalmi előrejelzés](cash-flow-forecast-intro.md).
-
-## <a name="privacy-notice"></a>Adatvédelmi nyilatkozat
-
-Az előzetes verziók (1) kevesebb adatvédelmi és biztonsági intézkedést alkalmazhatnak, mint a Dynamics 365 Finance and Operations szolgáltatás (2) és nem vonatkozik a szolgáltatásiszint-szerződés (SLA) ehhez a szolgáltatáshoz, (3) nem használhatók olyan személyes adatok vagy más adatok feldolgozásához, melyekhez törvényi vagy jogszabályi megfelelési követelmények tartoznak, és (4) korlátozott támogatás tartozik hozzá.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

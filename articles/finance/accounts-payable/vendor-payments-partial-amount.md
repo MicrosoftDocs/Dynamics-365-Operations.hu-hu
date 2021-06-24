@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a46ebb841b4abe6aa5bd8b06966f4197b27aeaee
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 2ee17aeb75e2bdc3b9c36d50914c24aa9d6218b7
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5841213"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189517"
 ---
 # <a name="vendor-payments-for-a-partial-amount"></a>Szállítói kifizetések részösszegre
 
@@ -28,8 +28,7 @@ ms.locfileid: "5841213"
 
 Bizonyos esetekben előfordulhat, hogy Ön kisebb összeget fizet ki a szállítónak, mint a számlán szereplő összeg. Ez a cikk az ilyen helyzetek megoldásait taglalja. Az Ön számára elérhető beállítások az ön üzleti igényeitől és konfigurációitól függenek. 
 
-<a name="cash-discount-amounts"></a>Készpénzfizetési engedmények
----------------------
+## <a name="cash-discount-amounts"></a>Készpénzfizetési engedmények
 
 Szállítója készpénzfizetési engedményt kínálhat cégének, ha a számla esedékességi dátuma előtt fizet. Példa: egy 100,00 értékű számlát rögzít, amely 2%-os készpénzfizetési engedményt biztosít, ha 10 napon belül kifizetik. A számla határideje 30 nap. Ha egy fizetési javaslatot készpénzfizetési engedményt használ feltételként a számla kiválasztásához, és a javaslatot a készpénzfizetési engedmény dátumánál nem később futtatják, a számla ki lesz jelölve fizetésre, és 98,00 értékű kifizetési javaslat jön létre. A készpénzfizetési engedmény egy manuálisan létrehozott egyszeri fizetésre is alkalmazható.
 

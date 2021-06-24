@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 15155a987094da6047dea9245f543b5ed38e3680
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 3e8c04275de6405a3f703d8ba9060f49405375de
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814056"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193254"
 ---
 # <a name="allocation-bases"></a>Felosztás alapjai 
 
@@ -212,7 +212,7 @@ A statisztikai mértékét adatforrásának feldolgozása után a Költségköny
 
 **Statisztikai bejegyzések**
 
-| Költségobjektum |    | Könyvelési dátum | Statisztikai dimenziótag |    Leírás          | Nagyság |
+| Költségobjektum | Név   | Könyvelési dátum | Statisztikai dimenziótag |    Leírás          | Nagyság |
 |-------------|----|-----------------|------------------------------|-------------------------|-----------|
 | CC001       | HR | 2017/01/31      | Villamos energia                  | Áramfogyasztás | 2,450.00  |
 | CC002       | FI | 2017/01/31      | Villamos energia                  | Áramfogyasztás | 4,100.00  |
@@ -404,7 +404,7 @@ Az Előnézet funkció lehetővé teszi a létrehozott képletletöltési alap �
 
 **Felosztási alap részletei**
 
-| Költségobjektum |    | Receptúra                                                                                                                             | Nagyság |
+| Költségobjektum |  Név  | Receptúra                                                                                                                             | Nagyság |
 |-------------|----|-------------------------------------------------------------------------------------------------------------------------------------|-----------|
 | CC001       | HR | ((2,450.00 \> 10.000.00) × ((10,000.00 × 0.75) + (2,450.00 – 10,000.00) × 1.15)) + ((2,450.00 \<= 10,000.00) × 2,450.00 × 0.75)     | 1,837.50  |
 | CC002       | FI | ((4,100.00 \> 10.000.00) × ((10,000.00 × 0.75) + (4,100.00 – 10,000.00) × 1.15)) + ((4,100.00 \<= 10,000.00) × 4,100.00 × 0.75)     | 3,075.00  |

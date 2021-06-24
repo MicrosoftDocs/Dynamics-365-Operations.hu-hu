@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: Release 10.0.6
-ms.openlocfilehash: dee9a6a7e2a5278f069958ce00689b1beb9b1bd7
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a243399536fec3f5361104289c38e550bf8b1144
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792147"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193282"
 ---
 # <a name="ratings-and-reviews-modules"></a>Minősítések és értékelések modulok
 
@@ -54,7 +54,11 @@ A következő ábra bemutatja, hogyan mutatja be a **Modul hozzáadása** párbe
 
 A vélemény írása modul egy **Vélemény írása** gombot tartalmaz, amely lehetővé teszi a felhasználók számára a bejelentkezést, egy értékelés hozzárendelését és a termékkel kapcsolatos vélemény megírását. Ez a modul azt is lehetővé teszi, hogy a felhasználók szerkesszék a korábban elküldött értékelést vagy véleményt. Ez a modul általában az értékelési hisztogram és a termékvélemények listájának moduljai fölött jelenik meg a PDP-ben.
 A következő ábra bemutatja, hogyan jeleníti meg a **Vélemény írása** párbeszédpanel, amikor a vevő a **Vélemény írása** lehetőséget választja. A vevő ezt a párbeszédpanelt használhatja az értékelés és vélemény elküldésére.
-![Értékelés írása párbeszédablak](media/rnr-eCommerce-write-review-module.png) A következő táblázat bemutatja a vélemény írása modul tulajdonságot, amelyet a szerkesztési eszközben konfigurálni kell.
+
+![Vélemény írása párbeszédpanel](media/rnr-eCommerce-write-review-module.png)
+
+A következő táblázat bemutatja a vélemény írása modul tulajdonságot, amelyet a szerkesztési eszközben konfigurálni kell.
+
 | Tulajdonság neve | Érték        | Tulajdonság leírása                 |
 |---------------|--------------|--------------------------------------|
 | Név          | Vélemény írása | A vélemény írása modul neve. |

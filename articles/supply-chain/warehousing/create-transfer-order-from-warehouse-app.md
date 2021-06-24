@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: f0238f46d28205fd6d0906030a1660ab3aa7225a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d8bab58727a7031f122864cb7465d9bc5983b467
+ms.sourcegitcommit: 1f2394be857afaefa8749f607cda62dfa00ba2c5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838370"
+ms.lasthandoff: 06/02/2021
+ms.locfileid: "6164846"
 ---
 # <a name="create-transfer-orders-from-the-warehouse-app"></a>Átmozgatási rendelések létrehozása a raktári alkalmazásból
 
@@ -330,7 +330,6 @@ Az átmozgatási rendelések létrehozása a **Szállítási dátum ellenőrzés
 
 #### <a name="can-i-use-a-license-plate-having-physical-negative-inventory-on-hand"></a>Használhatok negatív tényleges aktuális készlettel rendelkező azonosítótáblát?
 
-A funkció csak pozitív tényleges aktuális mennyiségeket támogat. Győződjön meg róla, hogy a raktárkészlet pozitív tényleges aktuális mennyiség, és ellenőrizze a készletállapotot, mielőtt az azonosítótáblát egy átmozgatási rendeléshez társítja.
-
+A funkció csak pozitív fizikai aktuális készletmennyiségeket támogat az azonosítótábla szintjén, de negatív fizikai aktuális készletmennyiségek is lehetnek a magasabb raktárban és készletállapot-szinteken, amikor az áthelyezési rendelésekhez társítják az azonosítótáblákat.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

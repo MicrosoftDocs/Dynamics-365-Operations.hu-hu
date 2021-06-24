@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: f573dadeab88ead57fdb4b91ade21c244325058c
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 818d96b14e32716e95b57391df5a90f7d32c4bb0
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6054019"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6190232"
 ---
 # <a name="set-up-training-courses"></a>Tanfolyamok beállítása
 
@@ -28,8 +28,7 @@ ms.locfileid: "6054019"
 
 Az emberi erőforrások-rendszergazdák és a vezetők a tanfolyamok szolgáltatások segítségével karbantartják a dolgozóknak nyújtott képzések információit.
 
- <a name="set-up-prerequisites"></a> A telepítés előfeltételei
----------------------
+##  <a name="set-up-prerequisites"></a> A telepítés előfeltételei
 
 A következő adatokat kötelező megadni, és be kell állítani a tanfolyamok létrehozása előtt.
 -   **Tanfolyamtípusok**
@@ -127,8 +126,7 @@ Az alábbi táblázat felsorolja a tanfolyam lehetséges állapotok és a művel
 ## <a name="course-participants"></a>Tanfolyam résztvevői
 A tanfolyam résztvevői olyan munkavállalók, akik részt vesznek egy tanfolyamon vagy eseményen. Csak nyitott tanfolyamok résztvevőinek is regisztrálható. A tanfolyamra regisztrálható résztvevők minimális és maximális számát az **Általános** gyorslapon a **Tanfolyamok** lapján határozhatja meg.
 
-<a name="workflow"></a>Munkafolyamat
---------
+## <a name="workflow"></a>Munkafolyamat
 
 Azok az alkalmazottak regisztrációja, akik a tanfolyamra az **Alkalmazotti önkiszolgáló rendszer** oldalán keresztül regisztrálnak, jóváhagyási munkafolyamaton mehet keresztül. Munkafolyamatot tanfolyamhoz a **Tanfolyamok** oldal **Általános** gyorslapján lehet hozzárendelni.
 

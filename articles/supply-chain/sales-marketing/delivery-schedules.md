@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2860ffb028c2d33f84e2e0796b2971e090454c90
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 3dbd66d499b5d5f9f8ef21c0ce3752031a5f4672
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840629"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193782"
 ---
 # <a name="delivery-schedules"></a>Szállítási ütemezések
 
@@ -28,11 +28,11 @@ ms.locfileid: "5840629"
 
 A szállítási ütemezések lehetővé teszik a rendeléssor mennyiségének nyomon követését, amikor több szállítást használ egyetlen értékesítési rendeléshez, értékesítési ajánlathoz vagy beszerzési rendeléshez.
 
-A szállítási ütemezés akkor használatos, ha egy rendeléshez vagy ajánlati sorhoz tartozó teljes mennyiséget több részletben kell szállítani. Az egyes szállítmányokat szállítási sorok jelölik. Két vagy több szállítási sor alkot egy szállítási ütemezést. A szállítási sorok különböző szállítási dátumokkal, mennyiségekkel, szállítási módokkal és tárolási dimenziókkal rendelkezhetnek, például hely és raktár.  
+A szállítási ütemezés akkor használatos, ha egy rendeléshez vagy ajánlati sorhoz tartozó teljes mennyiséget több részletben kell szállítani. Az egyes szállítmányokat szállítási sorok jelölik. Két vagy több szállítási sor alkot egy szállítási ütemezést. A szállítási sorok különböző szállítási dátumokkal, mennyiségekkel, szállítási módokkal és tárolási dimenziókkal rendelkezhetnek, például webhely és raktár.  
 
 **Példa szállítási ütemezésre**
 
-|                                   |                                          |
+| Tétel                              | Érték                                    |
 |-----------------------------------|------------------------------------------|
 | Teljes rendelés (eredeti rendelési sor) | 600 szék                               |
 | Kért kézbesítési ütemezés       | Havonta 100 szék                     |

@@ -1,5 +1,5 @@
 ---
-title: Igény-előrejelzés manuális módosítása
+title: 'Útmutató: Igény-előrejelzés manuális módosítása'
 description: Ez az cikk bemutatja egy cikk előrejelzésének módosítását
 author: ChristianRytt
 ms.date: 08/12/2019
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5da1d5b1fbd91964e695a704681b1c9ee513a2f1
-ms.sourcegitcommit: 4016c223a985c46e33f9941bf91ba5e1583e1cfd
+ms.openlocfilehash: 1e12ccf90b9971379e8931bd48d6243a855bb795
+ms.sourcegitcommit: 15aacd0e109b05c7281407b5bba4e6cd99116c28
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5889024"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "6224010"
 ---
-# <a name="modify-a-demand-forecast-manually"></a>Igény-előrejelzés manuális módosítása
+# <a name="guide-modify-a-demand-forecast-manually"></a>Útmutató: Igény-előrejelzés manuális módosítása
 
 [!include [banner](../../includes/banner.md)]
 
-Ez az eljárás bemutatja egy cikk előrejelzésének módosítását. Ez az eljárás az USMF bemutatócéget használja. Ezt az eljárást a termeléstervező használja.
+Ez az eljárás bemutatja egy cikk előrejelzésének módosítását. Ezt az eljárást a termeléstervező használja.
 
 ## <a name="modify-the-forecast-for-a-selected-item"></a>Egy kiválasztott cikk előrejelzésének módosítása
 
@@ -36,9 +36,9 @@ Egy kiválasztott cikk előrejelzésének módosítása:
 1. Töltse ki a egyéb mezőket, ha szükséges.
 1. A Művelet ablaktáblán válassza a **Mentés** lehetőséget.
 
-## <a name="modify-the-forecast-for-one-or-more-items-microsoft-excel"></a>Egy vagy több cikk előrejelzésének módosítása Microsoft Excel
+## <a name="modify-the-forecast-for-one-or-more-items-with-microsoft-excel"></a>Egy vagy több cikk előrejelzésének módosításához a Microsoft Excel segítségével
 
-Egy vagy több cikk előrejelzésének módosításához Microsoft Excel:
+Egy vagy több cikk előrejelzésének módosításához a Microsoft Excel segítségével:
 
 1. Válasszon az alábbi lehetőségek közül:
     - Nyissa meg bármelyik cikk **igény-előrejelzés** lapját (nem számít, melyiket) az előző szakaszban leírtak szerint.

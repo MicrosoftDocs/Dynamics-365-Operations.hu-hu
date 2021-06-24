@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-11-11
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 2c27f06524b91f91d95ef4b901740e7761232c28
-ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
+ms.openlocfilehash: c50aabf94ae37b7b7b214699160bf958ad3ea9fd
+ms.sourcegitcommit: 2cc14f6c537628e79ad2dd17dabf2c246deaa40d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "5941109"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "6219787"
 ---
 # <a name="integrate-procurement-between-supply-chain-management-and-field-service"></a>A beszerzés integrálása a Supply Chain Management és a Field Service között
 
@@ -196,23 +196,10 @@ A beszerzésekkel kapcsolatos dokumentumok integrálásához a következő sablo
 
 | Ellátásilánc-kezelés | Field Service | Leírás |
 |---|---|---|
-| Beszerzési rendelés V2 fejléce | msdyn\_Purchaseorders | Ez a tábla a beszerzési rendelés fejlécének megfelelő oszlopokat tartalmazza. |
-| Beszerzésirendelés-sor entitás | msdyn\_PurchaseOrderProducts | Ez a tábla a beszerzési rendelés sorainak megfelelő sorokat tartalmazza. A termékszám a szinkronizáláshoz használható. Ez a termékraktározási egységként (SKU) azonosítja a terméket, a termékdimenziókkal együtt. A Dataverse szolgáltatással történő termékintegrációval kapcsolatos további tudnivalókat lásd: [Egyesített termékkel kapcsolatos tapasztalat](product-mapping.md). |
-| Termékbevételezések fejléce | msdyn\_purchaseorderreceipts | Ez a tábla azokat a termékbevételezési fejléceket tartalmazza, amelyek a Supply Chain Management szolgáltatásban a termékbevételezés feladása során jönnek létre. |
-| Termékbevételezési sor | msdyn\_purchaseorderreceiptproducts | Ez a tábla azokat a termékbevételezési sorokat tartalmazza, amelyek a Supply Chain Management szolgáltatásban a termékbevételezés feladása során jönnek létre. |
-| Beszerzés rendelési sora – részben törölt entitás | msdyn\_purchaseorderproducts | Ez a tábla az olyan beszerzésirendelés-sorokról tartalmaz információkat, amelyek részben törölve vannak. A Supply Chain Management szolgáltatásban a beszerzésirendelés-sorok csak akkor törölhetők részlegesen, ha a beszerzési rendelést megerősítették vagy jóváhagyták, a változáskezelés bekapcsolt állapota esetén. A sor megtalálható a Supply Chain Management adatbázisban, és **Törölve** jelöléssel van ellátva. Mivel a Dataverse nem tartalmazza a részleges törlés koncepcióját, fontos, hogy ezek az adatok szinkronizálva legyenek a Dataverse szolgáltatással. Ily módon a Supply Chain Management szolgáltatásban részlegesen törölt sorok automatikusan törölhetők a Dataverse szolgáltatásból. Ebben az esetben a sorok Dataverse szolgáltatásból történő törlésének logikája a Supply Chain Management Extended szolgáltatásában található. |
-
-[!include [banner](../../includes/dual-write-symbols.md)]
-
-[!include [Currency](includes/productreceiptheader-msdyn-purchaseorderreceipts.md)]
-
-[!include [Currency](includes/productreceiptline-msdyn-purchaseorderreceiptproducts.md)]
-
-[!include [Currency](includes/purchaseorderheadersv2-msdyn-purchaseorders.md)]
-
-[!include [Currency](includes/purchaseorderlinesoftdeletedtable-msdyn-purchaseorderproducts.md)]
-
-[!include [Currency](includes/purchaseorderlinetable-msdyn-purchaseorderproducts.md)]
-
+| [Beszerzési rendelés V2 fejléce](mapping-reference.md#183) | msdyn\_Purchaseorders | Ez a tábla a beszerzési rendelés fejlécének megfelelő oszlopokat tartalmazza. |
+| [Beszerzésirendelés-sor entitás](mapping-reference.md#181) | msdyn\_PurchaseOrderProducts | Ez a tábla a beszerzési rendelés sorainak megfelelő sorokat tartalmazza. A termékszám a szinkronizáláshoz használható. Ez a termékraktározási egységként (SKU) azonosítja a terméket, a termékdimenziókkal együtt. A Dataverse szolgáltatással történő termékintegrációval kapcsolatos további tudnivalókat lásd: [Egyesített termékkel kapcsolatos tapasztalat](product-mapping.md). |
+| [Termékbevételezések fejléce](mapping-reference.md#185) | msdyn\_purchaseorderreceipts | Ez a tábla azokat a termékbevételezési fejléceket tartalmazza, amelyek a Supply Chain Management szolgáltatásban a termékbevételezés feladása során jönnek létre. |
+| [Termékbevételezési sor](mapping-reference.md#184) | msdyn\_purchaseorderreceiptproducts | Ez a tábla azokat a termékbevételezési sorokat tartalmazza, amelyek a Supply Chain Management szolgáltatásban a termékbevételezés feladása során jönnek létre. |
+| [Beszerzés rendelési sora – részben törölt entitás](mapping-reference.md#182) | msdyn\_purchaseorderproducts | Ez a tábla az olyan beszerzésirendelés-sorokról tartalmaz információkat, amelyek részben törölve vannak. A Supply Chain Management szolgáltatásban a beszerzésirendelés-sorok csak akkor törölhetők részlegesen, ha a beszerzési rendelést megerősítették vagy jóváhagyták, a változáskezelés bekapcsolt állapota esetén. A sor megtalálható a Supply Chain Management adatbázisban, és **Törölve** jelöléssel van ellátva. Mivel a Dataverse nem tartalmazza a részleges törlés koncepcióját, fontos, hogy ezek az adatok szinkronizálva legyenek a Dataverse szolgáltatással. Ily módon a Supply Chain Management szolgáltatásban részlegesen törölt sorok automatikusan törölhetők a Dataverse szolgáltatásból. Ebben az esetben a sorok Dataverse szolgáltatásból történő törlésének logikája a Supply Chain Management Extended szolgáltatásában található. |
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

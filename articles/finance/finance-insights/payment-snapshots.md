@@ -2,7 +2,7 @@
 title: Pillanatképek áttekintése (előzetes verzió)
 description: Ez a témakör a pillanatképek funkciót ismerteti, amely lehetővé teszi a pénzforgalmi előrejelzés mentését elemzés vagy későbbi tényleges adatok összehasonlítása érdekében. Amikor pénzforgalmi előrejelzést hoz létre, az előrejelzést „pillanatképként” mentheti. Ezután a pillanatképek segítségével szerkesztheti az előrejelzésben szereplő fiókokat, vagy összehasonlíthatja a pillanatképen szereplő előrejelzést a tényleges adatokkal.
 author: ShivamPandey-msft
-ms.date: 05/19/2020
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-19
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 07854d47fa2e42ea0d49cde193a2040415acf089
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 593d6fa8efdecf1b64ef802e6861783d6f85489c
+ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5827242"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6186590"
 ---
 # <a name="snapshots-overview-preview"></a>Pillanatképek áttekintése (előzetes verzió)
 
@@ -42,9 +42,5 @@ A pillanatképek pénzbe- és kiáramlásai bármikor szerkeszthetők. Ha egy be
 Ha több pillanatképet szeretne összehasonlítani, válassza a **Pillanatképek összehasonlítása** elemet. Egyszerre két pillanatképet lehet összehasonlítani. Válassza ki az összehasonlítani kívánt két pillanatképeket, majd kattintson az **OK** gombra. A **Pillanatképek összehasonlítása** lap a kiválasztott pillanatfelvételek összehasonlítását jeleníti meg. A lap felső részén található diagram bemutatja a pénzbeáramlások, a pénzkiáramlások és a banki egyenlegek összehasonlítását a két pillanatfelvétel közötti átfedésben lévő időszakok között. Az alsó részen látható rács a likviditási összegekhez tartozó két előrejelzés részletes összehasonlítását tartalmazza. Az **Eltérés** oszlopa egy adott időszak egyenlegeinek különbségét mutatja.
 
 Ha egy olyan előrejelzéssel szeretné összehasonlítani a tényleges pénzügyi eredményt, amelyet pillanatfelvételként mentettek, válassza az **Összehasonlítás a tényleges adatokkal** elemet. A **Pillanatképek összehasonlítás** lap a tényleges összegek és az előrejelzés összehasonlítását jeleníti meg. A lap felső részén található diagram bemutatja a pénzbeáramlások, a pénzkiáramlások és a banki egyenlegek összehasonlítását a két pillanatfelvétel közötti átfedésben lévő időszakok között. Az alsó részen látható rács a likviditási összegekhez tartozó időszakonkénti tényleges egyenlegek és az előrejelzett egyenleg. Az **Eltérés** oszlopa egy adott időszak tényleges egyenleg és az előrejelzett egyenleg különbségét mutatja.
-
-#### <a name="privacy-notice"></a>Adatvédelmi nyilatkozat
-Az előzetes verziók (1) kevesebb adatvédelmi és biztonsági intézkedést alkalmazhatnak, mint a Dynamics 365 Finance and Operations szolgáltatás (2) és nem vonatkozik a szolgáltatásiszint-szerződés (SLA) ehhez a szolgáltatáshoz, (3) nem használhatók olyan személyes adatok vagy más adatok feldolgozásához, melyekhez törvényi vagy jogszabályi megfelelési követelmények tartoznak, és (4) korlátozott támogatás tartozik hozzá.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
