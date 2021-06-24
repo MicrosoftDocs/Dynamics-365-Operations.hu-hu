@@ -72,7 +72,7 @@
                   items:
                     - name: Újdonságok és változások a Supply Chain Management kezdőlapján
                       href: get-started/whats-new-home-page.md
-                    - name: Supply Chain Management 10.0.20 (2021. július)
+                    - name: Supply Chain Management 10.0.20 (2021. augusztus)
                       href: get-started/whats-new-scm-10-0-20.md
                     - name: Supply Chain Management 10.0.19 (2021. június)
                       href: get-started/whats-new-scm-10-0-19.md
@@ -222,6 +222,8 @@
                       href: ../finance/localizations/rcs-globalization-feature.md?toc=/dynamics365/supply-chain/toc.json
                     - name: 'Hozzon létre ER-konfigurációkat a Regulatory Configuration Service szolgáltatásban, és töltse fel őket a globális adattárba'
                       href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Regulatory Configuration Service – Lifecycle Services-tárhely elavulása
+                      href: ../finance/localizations/rcs-lcs-repo-dep-faq.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Elektronikus számlázás
                   items:
                     - name: Elektronikus számlázás áttekintése
@@ -234,6 +236,8 @@
                       href: ../finance/localizations/e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Azure-tárfiók és Key Vault létrehozása
                       href: ../finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Felhasználáskezelési irányítópult
+                      href: ../finance/localizations/e-invoicing-usage-management-dashboard.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Első lépések
                       items:
                         - name: Első lépések az elektronikus számlázási szolgáltatás adminisztrálása során
@@ -1383,8 +1387,12 @@
                       href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Nyomtatható szabadszöveges számla (FTI) űrlapok létrehozása
                       href: ../fin-ops-core/dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Az ER-formátumok végrehajtásának nyomon követése a teljesítménnyel kapcsolatos problémák elhárítása érdekében
-                  href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Hatékony ER-megoldások tervezése
+                  items:
+                    - name: Az ER-formátumok végrehajtásának nyomon követése a teljesítménnyel kapcsolatos problémák elhárítása érdekében
+                      href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Az ER-konfigurációk teljesítményproblémáinak elhárítása
+                      href: ../fin-ops-core/dev-itpro/analytics/er-troubleshoot-perf-issues-in-configurations.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Üzleti dokumentumok kezelése (BDM)
                   items:
                     - name: BDM áttekintése
@@ -1675,30 +1683,38 @@
                   href: master-planning/tasks/view-outbound-planned-intercompany-demand.md
                 - name: Együttműködés a belső ellátási lánc vevőivel
                   href: master-planning/tasks/collaborate-internal-supply-chain-customers.md
-            - name: Igény-előrejelzés
+            - name: Előrejelzés
               items:
-                - name: Igény-előrejelzés áttekintése
-                  href: master-planning/introduction-demand-forecasting.md
-                - name: Igény-előrejelzés beállítása
-                  href: master-planning/demand-forecasting-setup.md
-                - name: Előzményadatok importálása az igény-előrejelzésekhez
-                  href: master-planning/import-historical-data.md
-                - name: Statisztikai kiinduló előrejelzés létrehozása
-                  href: master-planning/generate-statistical-baseline-forecast.md
-                - name: Manuális kiigazítás a kiinduló előrejelzésen
-                  href: master-planning/manual-adjustments-baseline-forecast.md
-                - name: Módosított előrejelzés engedélyezése
-                  href: master-planning/authorize-adjusted-forecast.md
-                - name: Előrejelzés pontosságának követése
-                  href: master-planning/monitor-forecast-accuracy.md
-                - name: Kiugró értékek eltávolítása a tranzakciók előzményadataiból igény-előrejelzés számításakor
-                  href: master-planning/remove-historical-outliers-calculating-demand-forecast.md
-                - name: Csökkentési kulcsok
-                  href: master-planning/reduction-keys.md
-                - name: Kiinduló előrejelzés létrehozása
-                  href: master-planning/tasks/create-baseline-forecast.md
-                - name: Igény-előrejelzés manuális módosítása
-                  href: master-planning/tasks/modify-demand-forecast-manually.md
+                - name: Igény- és ellátási előrejelzés
+                  items:
+                    - name: Készlet-előrejelzések
+                      href: master-planning/inventory-forecast.md
+                    - name: 'Útmutató: Igény-előrejelzés manuális módosítása'
+                      href: master-planning/tasks/modify-demand-forecast-manually.md
+                - name: Igény-előrejelzés
+                  items:
+                    - name: Igény-előrejelzés áttekintése
+                      href: master-planning/introduction-demand-forecasting.md
+                    - name: Igény-előrejelzés beállítása
+                      href: master-planning/demand-forecasting-setup.md
+                    - name: Statisztikai kiinduló előrejelzés létrehozása
+                      href: master-planning/generate-statistical-baseline-forecast.md
+                    - name: Manuális kiigazítás a kiinduló előrejelzésen
+                      href: master-planning/manual-adjustments-baseline-forecast.md
+                    - name: Módosított előrejelzés engedélyezése
+                      href: master-planning/authorize-adjusted-forecast.md
+                    - name: Előzményadatok importálása az igény-előrejelzésekhez
+                      href: master-planning/import-historical-data.md
+                    - name: Kiugró értékek eltávolítása a tranzakciók előzményadataiból igény-előrejelzés számításakor
+                      href: master-planning/remove-historical-outliers-calculating-demand-forecast.md
+                    - name: Előrejelzés pontosságának követése
+                      href: master-planning/monitor-forecast-accuracy.md
+                    - name: 'Útmutató: Kiinduló előrejelzés létrehozása'
+                      href: master-planning/tasks/create-baseline-forecast.md
+                - name: Alaptervezés előrejelzéssel
+                  items:
+                    - name: Előrejelzés-csökkentési kulcsok
+                      href: master-planning/reduction-keys.md
             - name: Alaptervezés – hibaelhárítás
               href: master-planning/troubleshoot-masterplanning.md
         - name: Mobilalkalmazás
@@ -3425,7 +3441,9 @@
                   href: troubleshooting/rebates/cumulating-customer-.md
             - name: Értékesítés és marketing
               items:
-                - name: 'A rendszergazdák nem tudják törölni a rendelés várakoztatását, mert nem engedélyezettek'
+                - name: A mennyiség nem csökkenthető értékesítési rendelés érvénytelenítésekor
+                  href: troubleshooting/sales/quantity-cannot-be-reduced.md
+                - name: 'A rendszergazdák nem tudják törölni a rendelés várakoztatását, mert nem rendelkeznek megfelelő jogosultsággal'
                   href: troubleshooting/sales/system-administrator.md
             - name: Szállításkezelés
               items:
