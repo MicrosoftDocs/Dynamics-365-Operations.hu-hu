@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 86ca63b1703faa6f57ed2e5591c89a5e84363481
-ms.sourcegitcommit: 318e406b84d43381d450272eb83c5eea9c5cf1c0
+ms.openlocfilehash: ddd4c55f6ebfbe91fb949a92cb379f51d826c465
+ms.sourcegitcommit: cee7887282d372c756c5c11f76684315f249bba5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6059473"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6303464"
 ---
 # <a name="accrue-leave-and-absence-plans"></a>Szabadság- és távolléti tervek halmozódása
 
@@ -104,11 +104,9 @@ Törli az adott tervhez és dátumtartományhoz tartozó elhatárolási rekordok
 
 2. A **Szabadság kezelése** alatt válassza a **Szabadságelhatárolás auditálásának törlése** lehetőséget.
 
-## <a name="preview-leave-accrual-transaction-auditing"></a>(Előzetes verzió) Szabadságelhatárolási tranzakció auditálása
+## <a name="leave-accrual-transaction-auditing"></a>Szabadságelhatárolási tranzakció auditálása
 
-[!include [Preview feature](includes/preview-feature.md)]
-
-Ez az előzetes verziójú funkció segít a szabadságokat és a távolléteket kezelőknek áttekinteni a szabadság- és a távollétkönyvelési tranzakciókat, amelyek egy alkalmazott távolléti egyenlegével kapcsolatosak egy adott távolléttípusnál.
+Ez a verziójú funkció segít a szabadságokat és a távolléteket kezelőknek áttekinteni a szabadság- és a távollétkönyvelési tranzakciókat, amelyek egy alkalmazott távolléti egyenlegével kapcsolatosak egy adott távolléttípusnál.
 
 A tranzakció részleteinek megtekintése:
 

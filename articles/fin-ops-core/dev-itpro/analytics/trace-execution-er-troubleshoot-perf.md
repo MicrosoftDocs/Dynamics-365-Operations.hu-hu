@@ -2,7 +2,7 @@
 title: Az ER-formátumok végrehajtásának nyomon követése a teljesítménnyel kapcsolatos problémák elhárítása érdekében
 description: Ez a témakör azt mutatja be, hogyan kell használni az Elektronikus jelentéskészítés (ER) teljesítményfigyelő funkcióját a teljesítménnyel kapcsolatos problémák elhárításához.
 author: NickSelin
-ms.date: 04/23/2021
+ms.date: 06/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 13e631d3330eefed09111eca70a5aa111e88274f
-ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
+ms.openlocfilehash: 7fbec962fea374afdbabaad48a42dad380708678
+ms.sourcegitcommit: dbffde1944b9d037124415c28053036c9ef1ecb7
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "5944653"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "6295573"
 ---
 # <a name="trace-the-execution-of-er-formats-to-troubleshoot-performance-issues"></a>Az ER-formátumok végrehajtásának nyomon követése a teljesítménnyel kapcsolatos problémák elhárításához
 
@@ -119,12 +119,27 @@ Az adatmodell- és modell-hozzárendelési konfigurációk megfelelő verzióit 
 2. A **Konfigurációk** oldal műveleti ablaktábláján, a **Konfigurációk** lapon, a **Speciális beállítások** csoportban válassza a **Felhasználói paraméterek** lehetőséget.
 3. A **Felhasználói paraméterek** párbeszédablakban a **Végrehajtás nyomon követése** szakaszban kövesse az alábbi lépéseket:
 
-    1. A **Végrehajtási nyomkövetés formátuma** mezőben válassza a **Nyomkövetési formátum hibakeresése** elemet, amellyel megkezdheti az ER-formátum végrehajtásához tartozó adatok gyűjtését. Ha az érték ki van jelölve, akkor a teljesítmény-nyomkövetés adatokat gyűjt az időről, amelyet a következő műveletekre fordít:
+    1. A **Végrehajtás nyomkövetésének formátuma** mezőben meghatározhatja a létrejövő teljesítmény-nyomkövetés formátumát, amelyben a végrehajtás részleteit tárolni kell az ER-formátumhoz és leképezési elemekhez:
 
-        - Minden adatforrás futtatása a modell-hozzárendelésben, amelyet az adatok lekéréséhez behív a rendszer
-        - Minden egyes formátumelem feldolgozása a létrejövő kimeneti fájlba való adatbevitel érdekében
+        - **Nyomkövetési formátum hibakeresése** – akkor válassza ezt az értéket, ha azt tervezi, hogy interaktív módon olyan ER-formátumot futtat, amely rövid végrehajtási idővel rendelkezik. Ezután megkezdődik az ER-formátum végrehajtásával kapcsolatos részletek gyűjtése. Ha az érték ki van választva, akkor a teljesítmény-nyomkövetés adatokat gyűjt arról az időről, amelyet a következő műveletekre fordít:
 
-        A **Végrehajtás nyomkövetésének formátuma** mező használatával meghatározhatja a létrejövő teljesítmény-nyomkövetés formátumát, amelyben a végrehajtás részleteit tárolják az ER-formátumhoz és leképezési elemekhez. A **Hibakeresési nyomkövetés formátuma** értékként történő kiválasztásával lehetősége nyílik a nyomkövetés tartalmának elemzésére az ER Művelettervezőben, és megtekintheti a nyomkövetésben említett ER-formátum vagy leképezés elemeit.
+            - Minden adatforrás futtatása a modell-hozzárendelésben, amelyet az adatok lekéréséhez behív a rendszer
+            - Minden egyes formátumelem feldolgozása a létrejövő kimeneti fájlba való adatbevitel érdekében
+
+            Ha a **Nyomkövetési formátum hibakeresése** értékét választja, az ER-művelettervezőben elemezheti a nyomkövetés tartalmát. Itt megtekintheti a nyomkövetésben említett ER-formátumot vagy leképezési elemeket.
+
+        - **Összesített nyomkövetési formátum** – akkor válassza ezt az értéket, ha azt tervezi, hogy interaktív módon olyan ER-formátumot futtat, amely hosszú végrehajtási idővel rendelkezik kötegelt módban. Ezután megkezdődik az ER-formátum végrehajtásával kapcsolatos összesített részletek gyűjtése. Ha az érték ki van választva, akkor a teljesítmény-nyomkövetés adatokat gyűjt arról az időről, amelyet a következő műveletekre fordít:
+
+            - Minden adatforrás futtatása a modell-hozzárendelésben, amelyet az adatok lekéréséhez behív a rendszer
+            - Minden adatforrás futtatása abban a formátumleképezésben, amelyet az adatok lekéréséhez meghív a rendszer
+            - Minden egyes formátumelem feldolgozása a létrejövő kimeneti fájlba való adatbevitel érdekében
+
+            Az **Összesített nyomkövetési formátum** értéke a Microsoft Dynamics 365 Finance 10.0.20-as és újabb verzióiban érhető el.
+
+            Az ER-formátumtervezőben és az ER-modell leképezéstervezőjében megtekinthető a teljes végrehajtási idő egy adott összetevőhöz. Ezenkívül a nyomkövetés részletes adatokat tartalmaz a végrehajtásról, például a végrehajtások számát, valamint az egyes végrehajtások minimális és maximális idejéről.
+
+            > [!NOTE]
+            > Ezt a nyomkövetést a rendszer a nyomon követett összetevők elérési útja alapján gyűjti össze. Emiatt előfordulhat, hogy a statisztika helytelen, ha egyetlen szülőösszetevő több, név nélküli gyermekösszetevőt tartalmaz, vagy ha több gyermekösszetevőnek ugyanaz a neve.
 
     2. Ha a következő beállításokat **Igen** értékre állítja, akkor specifikus adatokat gyűjthet az ER modell-hozzárendelés és az ER-formátum összetevőinek végrehajtásáról:
 

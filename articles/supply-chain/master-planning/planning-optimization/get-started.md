@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: d12e1908e234c841fb705266b2255c6c5e2140e1
-ms.sourcegitcommit: 365092f735310990e82516110141d42aaf04e654
+ms.openlocfilehash: 2867a4f9418e9435e2980fc24314914595ec44d0
+ms.sourcegitcommit: cbbb35c71ab4ff1ae08fa4f7cc97019b207246be
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "6103593"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "6301674"
 ---
 # <a name="get-started-with-planning-optimization"></a>Tervezési optimalizálás kezdő lépései
 
@@ -109,6 +109,8 @@ A **Tervezés optimalizálása használata** beállítás határozza meg, hogy m
 
 - **Igen** – a tervezésoptimalizálás az alaptervezéshez használatos.
 - **Nem** – Az alaptervezéshez a Supply Chain Management beépített tervezési motorja használatos.
+
+Ez a beállítás minden jogi személyre (vállalatra) vonatkozik. Egyes jogi személyeknél és más jogi személyek beépített alaptervezésében nem lehet a Tervezési optimalizálást használni.
 
 > [!NOTE]
 > Ha meglévő tervezett kötegelt feladatok, amelyeket a beépített Supply Chain Management tervezési morothoz hoztak létre, elindulnak, miközben a **Tervezésoptimalizálás használata** beállítás értéke **Igen**, a feladatok sikertelenek lesznek.

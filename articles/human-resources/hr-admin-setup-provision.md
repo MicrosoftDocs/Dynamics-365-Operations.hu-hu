@@ -1,8 +1,8 @@
 ---
-title: Emberi erőforrások létesítése
-description: Ez a cikk végigvezeti Önt az új termelési környezet létesítésén a Microsoft Dynamics 365 Human Resources számára.
+title: Human Resources kiépítése
+description: Ez a témakör végigvezeti Önt az új termelési környezet létesítésén a Microsoft Dynamics 365 Human Resources számára.
 author: andreabichsel
-ms.date: 04/23/2020
+ms.date: 06/14/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,22 +15,28 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e354cec1fb5612afff6e265c4808f4fb2c237a9d
-ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
+ms.openlocfilehash: 2632616834e405d31facdcf3853baaf96066e9aa
+ms.sourcegitcommit: e6437d994c3be0c5bb4a9263af3aa8351020d83a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "6193724"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "6248821"
 ---
-# <a name="provision-human-resources"></a>Emberi erőforrások létesítése
+# <a name="provision-human-resources"></a>Human Resources kiépítése
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Ez a cikk végigvezeti Önt az új termelési környezet létesítésén a Microsoft Dynamics 365 Human Resources számára. Ez a cikk feltételezi, hogy a Human Resources rendszert felhőalapú szolgáltatón (CSP) keresztül vagy vállalati architektúra (EA) megállapodás részeként vásárolta. Ha rendelkezik meglévő Microsoft Dynamics 365-licenccel, amely már tartalmazza a Human Resources szolgáltatási konstrukciót, és nem tudja elvégezni a cikkben szereplő lépéseket, forduljon a támogatási szolgálathoz.
+Ez a témakör végigvezeti Önt az új termelési környezet létesítésén a Microsoft Dynamics 365 Human Resources számára. Ez a téma feltételezi, hogy a Human Resources rendszert felhőalapú szolgáltatón (CSP) keresztül vagy vállalati architektúra (EA) megállapodás részeként vásárolta. Ha rendelkezik meglévő Microsoft Dynamics 365-licenccel, amely már tartalmazza a Human Resources szolgáltatási konstrukciót, és nem tudja elvégezni a cikkben szereplő lépéseket, forduljon a támogatási szolgálathoz.
 
 Első lépésként a globális rendszergazdának be kell jelentkeznie a [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com) (LCS) szolgáltatásba, és létre kell hoznia egy új Human Resources projektet. Ha licencelési probléma nem akadályozza meg a Human Resources létesítését, a támogatás vagy a Dynamics Service Engineering (DSE) képviselőinek segítségére nincsen szükség.
+
+## <a name="provision-a-human-resources-trial-environment"></a>Az Emberi erőforrások próbakörnyezetének kiépítése
+
+Az első üzenetkészlet vagy termelési környezet létesítása előtt szükség lehet egy Emberi erőforrások próbakörnyezet építésére, hogy érvényes legyen az [Emberi erőforrások próbakörnyezet](https://go.microsoft.com/fwlink/p/?LinkId=2115962) Emberi erőforrások szolgáltatás. A próbakörnyezetek olyan kitalált adatokat tartalmaznak, amelyek segítségével biztonságosan fel lehet fedezni a programot. Bár a próbakörnyezetek tulajdonosa az a felhasználó, aki kérte pket, más felhasználók is meghívhatók a Human Resources környezet rendszergazdai felületén keresztül. 
+
+A próbaverzió környezetet nem úgy tervezték, hogy termelési környezetekben használják őket. Csak a 60 napos próbaidőszakra korlátozódnak. A próbaidőszak lejártakor a környezet és az abban lévő összes adat törlődik, és nem állítható helyre. A környezet nem alakítható tesztkörnyezetté és éles környezetté. Regisztrálhat egy új próbakörnyezetre, miután lejárt a meglévő környezet.
 
 ## <a name="plan-human-resources-environments"></a>A Human Resources-környezetek megtervezése
 
@@ -94,8 +100,6 @@ Miután létrehozott egy LCS-projektet, elvégezheti a Human Resources létesít
 
     > [!NOTE]
     > Ha még nem hagyta jóvá a végső követelményeket, a Human Resources tesztpéldányát telepítheti a projektben. Ezután ezt a példányt használhatja a megoldás tesztelésére mindaddig, amíg alá nem ír. Ha az új környezet teszteléshez használja, ismételje meg ezt az eljárást, hogy létrehozzon egy éles környezetet.
-
-    > Érdemes lehet kihasználni a 60 napos ingyenes [Human Resources próbakörnyezetet](https://go.microsoft.com/fwlink/p/?LinkId=2115962). Bár a próbakörnyezetek tulajdonosa az a felhasználó, aki kérte pket, más felhasználók is meghívhatók a Human Resources környezet rendszergazdai felületén keresztül. A próbakörnyezetek olyan kitalált adatokat tartalmaznak, amelyek segítségével biztonságosan fel lehet fedezni a programot. Nem úgy tervezték, hogy termelési környezetekben használják őket. Kérjük, vegye figyelembe, hogy amikor a próbakörnyezet 60 nap elteltével lejár, a benne lévő minden adat törlődik, és azok nem is állíthatók helyre. Regisztrálhat egy új próbakörnyezetre, miután lejárt a meglévő környezet.
 
 ## <a name="select-a-power-apps-environment"></a>Power Apps-környezet kiválasztása
 

@@ -1,5 +1,5 @@
 ---
-title: A Dynamics 365 Supply Chain Management 10.0.19 előzetes verziója (2021. június)
+title: Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.19-es verziójában (2021. június)
 description: Ez a témakör a Dynamics 365 Supply Chain Management 10.0.19 új vagy módosított szolgáltatásait írja le.
 author: kamaybac
 ms.date: 04/23/2021
@@ -10,19 +10,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-04-23
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: f0af22dc07e8045546f11d9e58a10c7cb0bfea90
-ms.sourcegitcommit: 588f8343aaa654309d2ff735fd437dba6acd9d46
+ms.openlocfilehash: 7f98eee2a821191cefc27abbbd59373084c8b50c
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6114975"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6271449"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10019-june-2021"></a>A Dynamics 365 Supply Chain Management 10.0.19 előzetes verziója (2021. június)
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-version-10019-june-2021"></a>Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.19-es verziójában (2021. június)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-Ez a témakör a Microsoft Dynamics 365 Supply Chain Management 10.0.19 előzetes kiadásának új vagy módosított szolgáltatásait írja le. Ennek a verziónak 10.0.837 a buildszáma, és a következő módon érhető el:
+Ez a témakör a Microsoft Dynamics 365 Supply Chain Management 10.0.19 változatának új vagy módosított szolgáltatásait írja le. Ennek a verziónak 10.0.837 a buildszáma, és a következő módon érhető el:
 
 - **Előzetes kiadás**: 2021. április
 - **A kiadás általános elérhetővé tétele (saját frissítés):** 2021. június
@@ -32,7 +31,7 @@ Ez a témakör a Microsoft Dynamics 365 Supply Chain Management 10.0.19 előzete
 
 Ez a kiadás a következő táblázatban felsorolt funkciókat tartalmazza: A *Funkció* oszlop a [kiadási tervre](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features) mutató hivatkozásokat tartalmaz, amelyeken látható az egyes funkciók hivatalos kiadási dátuma. A *További tudnivalók* oszlopban további részletek és/vagy a kapcsolódó dokumentációra mutató hivatkozások találhatóak.
 
-Ezen szolgáltatások többségét a használat előtt engedélyezni kell a [Funkciók kezelése](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) alatt. A felsorolt szolgáltatások egy része továbbra is előnézeti módban van, mások azonban már általánosan elérhetők.
+Ezen szolgáltatások többségét a használat előtt engedélyezni kell a [Funkciók kezelése](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) alatt.
 
 | Szolgáltatásterület | Funkció | További információ |
 |---|---|---|

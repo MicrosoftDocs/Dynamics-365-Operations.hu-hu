@@ -1,8 +1,8 @@
 ---
-title: Mikor kell alaphelyzetbe állítani az adatpiacot?
-description: Ez a témakör azokat a körülményeket sorolja fel, amelyek egy adatpiac visszaállításával tovább javíthatók és azokat, amelyeknél nem valószínű, hogy segít az adatpiac alaphelyzetbe állítása.
+title: Az adatpiac alaphelyzetbe állítása – GYIK
+description: Ez a témakör az adatpiac alaphelyzetbe állításával kapcsolatos néhány gyakran ismételt kérdésre ad választ.
 author: jinniew
-ms.date: 05/06/2021
+ms.date: 06/09/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,40 +14,47 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2021-05-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: bc2c4ee490f3bebd6e7c91609a06f8dfedfcb628
-ms.sourcegitcommit: 5916ea2a94ab9af7aac21f0fc44e194d5ce82917
+ms.openlocfilehash: 7cd96c7bc698986ef1ef07ca88479a3d49f22924
+ms.sourcegitcommit: ecabf43282a3e55f1db40341aa3f3c7950b9e94c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "5988992"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "6266609"
 ---
-# <a name="when-to-reset-a-data-mart"></a>Mikor kell alaphelyzetbe állítani az adatpiacot?
+# <a name="data-mart-resets-faq"></a>Az adatpiac alaphelyzetbe állítása – GYIK
 
-Az adatpiac alaphelyzetbe állítása sok időt vehet igénybe. A körülményektől függően előfordulhat, hogy ez a művelet nem a szükséges megoldás. Ez a témakör azokat a körülményeket sorolja fel, amelyek egy adatpiac visszaállításával tovább javíthatók, valamint azokat, amelyeknél nem valószínű, hogy segít az adatpiac alaphelyzetbe állítása.  
+Ez a témakör az adatpiac alaphelyzetbe állításával kapcsolatos néhány gyakran ismételt kérdésre ad választ. Az adatpiac alaphelyzetbe állítása időigényes folyamat lehet, és a körülményektől függően előfordulhat, hogy nem ez a megoldás szükséges. Ennek megfelelően ez a témakör tájékoztatást nyújt az olyan körülményekről, amikor az adatpiac alaphelyzetbe állítása segíthet, illetve az olyan körülményekről, amikor valószínűleg nem segít.
 
-## <a name="when-do-i-need-to-do-a-data-mart-reset"></a>Mikor kell alaphelyzetbe állítanom az adatpiacot?
-Az adatpiac alaphelyzetbe állítása előtt vegye figyelembe a következő kérdéseket. Ha egy vagy több kérdésre igen a válasz, azt jelezheti, hogy a szervezet számára előnyös lehet az adatpiac alaphelyzetbe állítása.
-
-- Az alkalmazás-adatbázis vissza lett állítva?
-- Ha egy támogatási eseményt nyitott meg, és egy ügyfélszolgálati szakértő arra utasítja, hogy állítsa vissza az adatpiacot egy hibaelhárítási lépés részeként?
- 
-## <a name="when-is-it-not-appropriate-to-reset-a-data-mart"></a>Mikor nem célszerű alaphelyzetbe állítani az adatpiacot?
-Bizonyos körülmények között nem ajánljuk az adatpiac alaphelyzetbe állítását. Ezek közé tartoznak a következők. 
-
-- Adatszinkronizáláshoz kapcsolódó teljesítményproblémákat tapasztal. 
-- Ha a következő okok valamelyike miatt ismétlődik az alaphelyzetbe állítás: 
-  - **Hiányzó adatok** 
-  - **Elakadt integrációs állapot** 
-  - **Elavult rekordok** – Az elavult rekordok önmagukban nem feltétlenül igazolják az adatpiac alaphelyzetbe állítását. Ha nagy adathalmaz van beállítva, az alaphelyzetbe állítási folyamat futása időt fog igénybe venni, de nem valószínű, hogy ez javulást eredményez.
- 
 ## <a name="what-is-a-data-mart-reset"></a>Mit jelent az adatpiac alaphelyzetbe állítása?
-- A visszaállítás csak akkor indul el, ha a meglévő feladatok befejeződnek. Így garantálható, hogy a régi adatok nem lesznek beillesztve. Ezen a ponton olyan üzenetet láthat, mint például: "Az adatpiac visszaállítását egy aktív feladat miatt nem sikerült feldolgozni. Próbálkozzon újra később."
-- A visszaállítás letiltja az integrációs feladatokat, és törli az adatpiac összes adatát. Az integráció újra engedélyezve van.
 
-## <a name="if-i-reset-the-data-mart-will-i-lose-reports-that-ive-already-designed"></a>Ha alaphelyzetbe állítom az adatpiacot, elvesznek a már megtervezett jelentések? 
-Nem, a jelentések SQL-táblákban vannak tárolva, és az adatpiac alaphelyzetbe állítása nem befolyásolja őket. Ha aggódik a megtervezett jelentések elvesztése miatt, készíthet biztonsági jelentést a megőrizni kívánt tervekről. A biztonsági mentéshez nyissa meg a Jelentéstervezőt, és nyissa meg a **Vállalat > Vállalatok > Építőelemek > Exportálás** menüpontot.
+Az adatpiac alaphelyzetbe állítása letiltja az integrációs feladatokat, törli az adatpiac összes adatát, majd újra engedélyezi az integrációt.
+
+Annak érdekében, hogy a rendszer ne szúrjon be régi adatokat, az adatpiac visszaállítása csak a meglévő feladatok befejeződése után kezdődik el. Ha az összes feladat befejezése előtt próbálja alaphelyzetbe állítani az adatpiacot, a következőhöz hasonló üzenet jelenik meg: „Az adatpiac visszaállítását egy aktív feladat miatt nem sikerült feldolgozni. Próbálkozzon újra később.”
+
+## <a name="when-do-i-have-to-do-a-data-mart-reset"></a>Mikor kell alaphelyzetbe állítanom az adatpiacot?
+
+Ha a következők közül egy vagy több érvényes, akkor a szervezete számára hasznos lehet az adatpiac alaphelyzetbe állítása:
+
+- Az alkalmazás-adatbázis vissza lett állítva.
+- Támogatási jegyet nyitott meg, és egy ügyfélszolgálati szakértő arra utasítja, hogy állítsa vissza az adatpiacot egy hibaelhárítási lépés részeként.
  
-## <a name="is-it-necessary-for-all-users-to-exit-the-system-to-reset-the-data-mart"></a>Szükséges, hogy minden felhasználó kilépjen a rendszerből az adatpiac alaphelyzetbe állításához?
-Nem, a felhasználók továbbra is dolgoznak a rendszerben az adatpiac alaphelyzetbe állítása során. Nem férhetnek azonban hozzá a Pénzügyi jelentés alkalmazással létrehozott jelentésekhez, amíg be nem fejeződik az alaphelyzetbe állítás. 
+## <a name="when-is-a-data-mart-reset-inappropriate"></a>Mikor nem megfelelő lépés az adatpiac alaphelyzetbe állítása?
+
+Az alábbi körülmények között nem ajánljuk az adatpiac alaphelyzetbe állítását:
+
+- Adatszinkronizálással kapcsolatos teljesítményproblémákat tapasztal.
+- A következő okok valamelyike miatt ismétlődik az alaphelyzetbe állítás:
+
+    - **Hiányzó adatok** – ha azt veszi észre, hogy adatok hiányoznak, nyisson támogatási jegyet a Microsofttal, hogy ellenőrizze a jelentés formátumát és az esetleges szinkronizálási problémákat.
+    - **Elakadt integrációs állapot**
+    - **Elavult rekordok** – Az elavult rekordok önmagukban nem feltétlenül igazolják az adatpiac alaphelyzetbe állítását. Ha nagy adatkészlet van beállítva, az alaphelyzetbe állítási folyamat futása időt vesz igénybe, de nem valószínű, hogy ez javulást eredményez.
+
+## <a name="if-i-reset-the-data-mart-will-i-lose-reports-that-ive-already-designed"></a>Ha alaphelyzetbe állítom az adatpiacot, elvesznek a már megtervezett jelentések?
+
+Nem. A jelentések olyan SQL-táblákban vannak tárolva, amelyekre nincs hatással az adatpiac alaphelyzetbe állítása. Ha aggódik a megtervezett jelentések elvesztése miatt, biztonsági másolatot készíthet a megőrizni kívánt tervekről. A tervek biztonsági mentéséhez nyissa meg a Report Designert, és lépjen a **Vállalat \> Vállalatok \> Építőelemek \> Exportálás** részre.
+ 
+## <a name="do-all-users-have-to-exit-the-system-before-i-can-reset-the-data-mart"></a>Minden felhasználónak ki kell lépnie a rendszerből az adatpiac alaphelyzetbe állításához?
+
+Nem. A felhasználók dolgozhatnak a rendszerben az adatpiac alaphelyzetbe állítása során. Az alaphelyzetbe állítás befejeződéséig azonban nem férhetnek hozzá a Financial Reporter használatával létrehozott jelentésekhez.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

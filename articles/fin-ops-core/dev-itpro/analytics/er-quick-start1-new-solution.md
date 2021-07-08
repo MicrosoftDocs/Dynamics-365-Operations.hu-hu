@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0f5a3ac7cae58d17409ea081ec30f61cecf29ce9
-ms.sourcegitcommit: 15aacd0e109b05c7281407b5bba4e6cd99116c28
+ms.openlocfilehash: 90e5381c2d30753e3ad82a38d7361b411f1d7a87
+ms.sourcegitcommit: 3673eeca1ada0f3e4ec277176515a946706f8a41
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "6224034"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6304393"
 ---
 # <a name="design-a-new-er-solution-to-print-a-custom-report"></a>Új ER-megoldás tervezése egyéni jelentés nyomtatásához
 
@@ -185,7 +185,7 @@ Az [Új adatmodell-konfiguráció importálása](#ImportDataModel) szakasz lép�
 
 ### <a name="import-a-new-data-model-configuration"></a><a name="ImportDataModel"></a>Új adatmodell-konfiguráció importálása
 
-1. Töltse le a [Questionnaires model.version.1.xml](https://go.microsoft.com/fwlink/?linkid=851448) fájlt, és mentse a helyi számítógépen.
+1. Töltse le a [Questionnaires model.version.1.xml](https://download.microsoft.com/download/b/6/3/b633bd34-d200-4422-96d9-8f62eb5218f8/Questionnaires_model.version.1.xml) fájlt, és mentse a helyi számítógépen.
 2. Ugorjon a **Szervezeti adminisztráció** \> **Munkaterületek** \> **Elektronikus jelentés** pontra.
 3. Az **Elektronikus jelentéskészítés** munkaterületen válassza ki a **Jelentéskészítési konfiguráció** lehetőséget.
 4. A Műveleti ablaktáblában válassza az **Átváltás** \> **Betöltés XML-fájlból** elemet.
@@ -300,7 +300,7 @@ Az alábbi [Új modell-leképezési konfiguráció importálása](#ImportModelMa
 
 ### <a name="import-a-new-model-mapping-configuration"></a><a name="ImportModelMapping"></a>Új modell-leképezési konfiguráció importálása
 
-1. Töltse le a [Questionnaires mapping.version.1.1.xml](https://go.microsoft.com/fwlink/?linkid=851448) fájlt, és mentse a helyi számítógépen.
+1. Töltse le a [Questionnaires mapping.version.1.1.xml](https://download.microsoft.com/download/7/b/2/7b258e4e-4bd5-46a4-8114-27419ae4acd8/Questionnaires_mapping.version.1.1.xml) fájlt, és mentse a helyi számítógépen.
 2. Ugorjon a **Szervezeti adminisztráció** \> **Munkaterületek** \> **Elektronikus jelentés** pontra.
 3. Az **Elektronikus jelentéskészítés** munkaterületen válassza ki a **Jelentéskészítési konfiguráció** lehetőséget.
 4. A Műveleti ablaktáblában válassza az **Átváltás** \> **Betöltés XML-fájlból** elemet.
@@ -366,7 +366,7 @@ Az adatforrásokat konfigurálni kell, hogy elérjék a kérdőív részleteit t
     2. Válassza a **Hozzáadás** lehetőséget.
     3. A párbeszédpanel **Név** mezőjébe írja be a következőt: **\$ResultGroup**.
     4. Válassza a **Képlet szerkesztése** elemet.
-    5. Az [ER-receptúraszerkesztő](general-electronic-reporting-formula-designer.md) **Receptúra** mezőjében adja meg a **FIRSTORNULL(\@.'\<Relations'.KMQuestionResultGroup)** képletet a KMCollection és a KMQuestionResultGroup tábla közötti egy-a-többhöz kapcsolat [elérési útjának](er-formula-language.md#paths) használatához.
+    5. Az [ER-receptúraszerkesztő](general-electronic-reporting-formula-designer.md) **Receptúra** mezőjében adja meg a **FIRSTORNULL(\@.'\<Relations'.KMQuestionResultGroup)** képletet a KMCollection és a KMQuestionResultGroup tábla közötti egy-a-többhöz kapcsolat [elérési útjának](er-formula-language.md#Paths) használatához.
     6. Válassza a **Mentés** gombot, majd zárja be a receptúraszerkesztőt.
     7. Az új számított mező hozzáadásához kattintson az **OK** gombra.
 
@@ -547,7 +547,7 @@ A konfiguráció 1.1. verziójának állapota **Piszkozatról** **Befejezett** �
 
 Az ER keretrendszer előre definiált sablonok használatával készít jelentéseket Microsoft Office-formátumban (Excel-munkafüzetek vagy Word-dokumentumok). A szükséges jelentés létrehozása során a program a konfigurált adatfolyamnak megfelelően kitölti a szükséges adatokkal a sablont. Ennek megfelelően először egy sablont kell terveznie a saját egyéni jelentéséhez. Ezt a sablont Excel-munkafüzetként kell megtervezni; a szerkezet képezi le az egyéni jelentés elrendezését. Minden olyan Excel-tételt meg kell neveznie, amelyet fel szeretne tölteni a szükséges adatokkal.
 
-1. Töltse le a [Questionnaires report template.xslx](https://go.microsoft.com/fwlink/?linkid=851448) fájlt, és mentse a helyi számítógépen.
+1. Töltse le a [Questionnaires report template.xlsx](https://download.microsoft.com/download/3/8/2/382c3cf0-87bb-473f-b7bb-3015b4facb74/Questionnaires_report_template.xlsx) fájlt, és mentse a helyi számítógépen.
 2. Nyissa meg a fájlt az Excel programban, és tekintse át a munkafüzet struktúráját.
 
 Ahogy a következő ábrán látható, a letöltött sablon úgy lett kialakítva, hogy olyan konkrét kérdőíveket lehessen vele kinyomtatni, amelyek tartalmazzák a kérdőív kérdéseit és a megfelelő válaszokat.
@@ -572,7 +572,7 @@ A [Megtervezett formátumkonfiguráció importálása](#FormatImport) szakasz l�
 
 ### <a name="import-a-designed-format-configuration"></a><a name="FormatImport"></a>Megtervezett formátumkonfiguráció importálása
 
-1. Töltse le a [Questionnaires format.version.1.1.xml](https://go.microsoft.com/fwlink/?linkid=851448) fájlt, és mentse a helyi számítógépen.
+1. Töltse le a [Questionnaires format.version.1.1.xml](https://download.microsoft.com/download/1/b/a/1ba39ec2-257a-44d8-972f-25bf7d18fb41/Questionnaires_format.version.1.1.xml) fájlt, és mentse a helyi számítógépen.
 2. Ugorjon a **Szervezeti adminisztráció** \> **Munkaterületek** \> **Elektronikus jelentés** pontra.
 3. Az **Elektronikus jelentéskészítés** munkaterületen válassza ki a **Jelentéskészítési konfiguráció** lehetőséget.
 4. A Művelet ablaktáblában válassza az **Átváltás** \> **Betöltés XML-fájlból** elemet.

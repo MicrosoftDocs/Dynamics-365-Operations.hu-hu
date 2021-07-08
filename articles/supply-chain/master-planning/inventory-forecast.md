@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-06-08
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0a7ed310ebdef130b0fb09c5db19397398dc5042
-ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
+ms.openlocfilehash: 7901bcfc239885aa53863729e573d1f37ba67f81
+ms.sourcegitcommit: f21659f1c23bc2cd65bbe7fb7210910d5a8e1cb9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "6216842"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6306415"
 ---
 # <a name="inventory-forecasts"></a>Készlet előrejelzések
 
@@ -353,20 +353,46 @@ Használja ezt az eljárást a meglévő előrejelzési tranzakciósorok feldolg
 1. Az előrejelzési sorok pénzügyi dimenzióinak frissítésére használja a **Pénzügyi dimenziók** szakaszt. Válassza ki a módosítani kívánt pénzügyi dimenziókat, majd adja meg a kiválasztott dimenziókra alkalmazandó értéket.
 1. A módosítások alkalmazásához kattintson az **OK** gombra.
 
-## <a name="run-forecast-planning"></a>Előrejelzési tervezés futtatása
+## <a name="use-forecasts-with-master-planning"></a>Előrejelzések használata az alaptervezéssel
 
-Miután megadta az igény-előrejelzést és/vagy ellátási előrejelzés-tervezést futtathat a bruttó anyag- és kapacitásigény kiszámítása és a tervezett megrendelések létrehozása érdekében.
+Az igény-előrejelzés és/vagy az ellátási előrejelzés megadása után az előrejelzéseket az alaptervezés során figyelembe lehet venni az alaptervezés futtatása során várható igénynél és/vagy ellátásnál. Ha az alaptervezés során előrejelzéseket is használ, akkor a program kiszámítja az bruttó anyag- és kapacitásigényt, és tervezett rendeléseket generál.
 
-1. Ugrás az **Alaptervezés \> Előrejelzési tervezés \> helyre**.
-1. Az **Előrejelzési terv** mezőben válasszon egy előrejelzési tervet.
-1. A **Feldolgozási idő nyomon követése** engedélyezésével az egyes tervezési feladatok feldolgozási időtartamát rögzítheti.
-1. Adjon meg egy értéket a **Szálak száma** mezőben. (További tájékoztatás: [Alaptervezés teljesítményének javítása](master-planning-performance.md).)
-1. A **Megjegyzés** mezőben adja meg a szöveget a szükséges további adatok rögzítéséhez.
-1. A **Szerepeltetni kívánt rekordok** gyorslapján válassza a **Szűrő** parancsot, hogy korlátozza az elemek kiválasztását.
-1. A **Futtatás a háttérben** gyorslapon adja meg a köteg paramétereit.
+### <a name="set-up-a-master-plan-to-include-an-inventory-forecast"></a>A készlet-előrejelzést tartalmazó alapterv beállítása
+
+Ha egy alaptervet úgy kíván beállítani, hogy az készlet-előrejelzést tartalmazzon, hajtsa végre az alábbi lépéseket.
+
+1. Válassz az **Alaptervezés \> Beállítás \> Tervek \> Alaptervezések** lehetőséget.
+1. Válasszon ki egy meglévő tervet, vagy hozzon létre egy új tervet.
+1. Az **Általános** gyorslapon állítsa be a következő mezőket:
+
+    - **Előrejelzési modell** – Válassza ki az alkalmazni kívánt előrejelzési modellt. Ezt a modellt akkor kell figyelembe venni, amikor az aktuális alaptervhez létrejön egy ellátási javaslat.
+    - **Készlet-előrejelzéssel együtt** – Állítsa ezt a beállítást *Igen* értékre a készlet-előrejelzés aktuális alaptervben való szerepeltetéséhez. Ha *Nem* értékre állítja be, a készlet-előrejelzési tranzakciók nem fognak szerepelni az alaptervben.
+    - **Igény-előrejelzéssel együtt** – Állítsa ezt a beállítást *Igen* értékre az igény-előrejelzés aktuális alaptervben való szerepeltetéséhez. Ha *Nem* értékre állítja be, az igény-előrejelzési tranzakciók nem fognak szerepelni az alaptervben.
+    - **Előrejelzési követelmények csökkentéséhez használt módszer** – Válassza ki az előrejelzési követelmények csökkentéséhez használandó módszert. További információ: [Előrejelzés-csökkentési kulcsok](planning-optimization/demand-forecast.md#reduction-keys).
+
+1. Az **Időkorlát napokban** gyorslapon a következő mezőkkel adhatja meg azt az időszakot, amelyen az előrejelzés szerepel:
+
+    - **Előrejelzési terv** – Ezt a beállítást *Igen* értékre állítva felülbírálhatja az egyes fedezeti csoportoktól származó előrejelzési terv időkorlátját. A *Nem* értékre állítása esetén az aktuális alaptervhez tartozó egyes fedezeti csoportok értékeit kell használni.
+    - **Előrejelzési időszak** – Ha az **Előrejelzési terv** beállítás *Igen* értékre van állítva, adja meg, hogy hány napig (a mai dátumtól) kell alkalmazni az igény-előrejelzést.
+
+    > [!IMPORTANT]
+    > A Tervezés optimalizálása még nem támogatja az **Előrejelzési terv** beállítást.
+
+### <a name="run-a-master-plan-that-includes-an-inventory-forecast"></a>Készlet-előrejelzést tartalmazó alapterv futtatása
+
+Ha egy alaptervet úgy kíván futtatni, hogy az készlet-előrejelzést tartalmazzon, hajtsa végre az alábbi lépéseket.
+
+1. Lépjen az **Alaptervezés \> Munkaterületek \> Alaptervezés** részre.
+1. Az **Alapterv** mezőben írja be vagy válassza ki azt az alaptervet, amelyet az előző eljárás során beállított.
+1. Az **Alaptervezés** csempén válassza a **Futtatás** lehetőséget.
+1. Az **Alaptervezés** párbeszédpanelen állítsa a **Feldolgozási idő nyomon követése** beállítás értékét *Igenre*.
+1. Adjon meg egy számot a **Szálak száma** mezőben.
+1. **A szerepeltetni kívánt rekordok** gyorslapján válassza a **szűrő** elemet.
+1. Megjelenik egy szabványos lekérdezésszerkesztő párbeszédpanelje. A **Tartomány** lapon válassza ki azt a sort, amelyben a **Mező** mező értéke *Cikkszám*.
+1. A **Feltételek** mezőben válassza ki a tervben szerepeltetni kívánt cikkszámot.
 1. Válassza ki az **OK** lehetőséget.
 
-A kiszámított követelmények megtekintéséhez nyissa meg a **Bruttó szükséglet** lapot. Például a **Kiadott termékek** oldalon, a **Terv** lapon, a **Követelmények** szakaszban válassza a **Bruttó követelmény** lehetőséget.
+A kiszámított követelmények megtekintéséhez nyissa meg a **Bruttó szükséglet** lapot. Például a Művelet panel **Kiadott termékek** oldalán, a **Terv** lapon, a **Követelmények** csoportban válassza a **Bruttó követelmény** lehetőséget.
 
 A létrehozott tervezett rendelések megtekintéséhez menjen az **Alaptervezés \> Közös \> Tervezett rendelések** menübe és válassza ki a megfelelő előrejelzési tervet.
 
@@ -376,5 +402,6 @@ A létrehozott tervezett rendelések megtekintéséhez menjen az **Alaptervezés
 - [Igény-előrejelzés beállítása](demand-forecasting-setup.md)
 - [Statisztikai kiinduló előrejelzés létrehozása](generate-statistical-baseline-forecast.md)
 - [A kiinduló előrejelzés manuális kiigazítása](manual-adjustments-baseline-forecast.md)
+- [Alaptervezés az igény-előrejelzésekkel](planning-optimization/demand-forecast.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

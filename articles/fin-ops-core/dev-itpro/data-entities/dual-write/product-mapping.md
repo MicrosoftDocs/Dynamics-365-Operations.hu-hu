@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 824f7eb66c1d3f03df74a706e8214bcfe1d8efd9
-ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
+ms.openlocfilehash: 6941a38e96520befd3bdba65956d45a6bbaee4be
+ms.sourcegitcommit: f21659f1c23bc2cd65bbe7fb7210910d5a8e1cb9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "5941196"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6306389"
 ---
 # <a name="unified-product-experience"></a>Egységes terméktapasztalat
 
@@ -124,7 +124,7 @@ Termékdimenziók olyan jellemzők, amelyek termékváltozat azonosítására sz
 
 Ha egy terméknek különböző a termékdimenziói vannak (például a az alaptermék mérete és szín termékdimenziók tartoznak), akkor mindegyik különböző termék (azaz a termék variánsa) ezen termékdimenziók kombinációja. A B0001 termékszámű termék például egy extra kis méretűfekete póló, és a B0002 termékszám egy kis fekete póló. Ebben az esetben a termékdimenziók meglévő kombinációinak meghatározása történik. Például az előző példából származó póló lehet extra kicsi és fekete, kicsi és fekete, közepes és fekete, illetve nagy és fekete, de nem lehet extra nagy és fekete. Más szóval az a termékdimenziók, amelyek az alaptermékhez tartozhatnak meghatározottak, és a változatokat ezen értékek alapján lehet kiadni.
 
-Annak érdekében, hogy nyomon követhesse a termékdimenziókat, amit egy alaptermék felvehet a következő táblák jönnek létre és lesznek leképezve a Dataverse szolgáltatásban az egyes termékdimenziókhoz. További információ a [Termékinformációk áttekintése](../../../supply-chain/pim/product-information.md) témakörben található.
+Annak érdekében, hogy nyomon követhesse a termékdimenziókat, amit egy alaptermék felvehet a következő táblák jönnek létre és lesznek leképezve a Dataverse szolgáltatásban az egyes termékdimenziókhoz. A további tudnivalókat lásd: [Termékinformációk áttekintése](../../../../supply-chain/pim/product-information.md). 
 
 [!include [product colors](includes/EcoResProductMasterColorEntity-msdyn-sharedproductcolors.md)]
 

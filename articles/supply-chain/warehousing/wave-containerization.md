@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: c62e2d1b361e0ed1ab1ced42997add157b30c828
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 88e38989e3d3e46d0c43779659bc6ea2e29f08e2
+ms.sourcegitcommit: 8e846b52763f90d2232ec7d427839f4722570bce
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019051"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "6292737"
 ---
 # <a name="containerization"></a>Tárolóra bontás
 
@@ -108,6 +108,8 @@ Tárolóépítési sablon beállításához kövesse az alábbi lépéseket.
 
       - **Csomagolás az összes nyitott tárolóba** – A rendszer kiértékeli, hogy a felosztási sor befér-e valamelyik, a tárolóra bontási ciklus során létrejött tárolóba.
       - **Csomagolás csak az aktuális tárolóba** – A rendszer csak azt vizsgálja meg, hogy a felosztási sor belefér-e a legutóbb létrehozott tárolóba.
+
+    További információk és a tárolócsomagolási stratégiák használatára vonatkozó példák: [Tárolócsomagolási stratégiák](container-packing-strategy-overview.md).
 
 1. A szabályok felállításához a felosztási sorok tárolóba való csomagolásához válassza a **Vegyítési logika felbontásai**. Például létrehozhat olyan szabályt, amely alapján a dolgozók két különböző tétel felosztási sorait is becsomagolhatják ugyanabba a tárolóba. Vegyítési szabály megadásához tegye a következőket:
 

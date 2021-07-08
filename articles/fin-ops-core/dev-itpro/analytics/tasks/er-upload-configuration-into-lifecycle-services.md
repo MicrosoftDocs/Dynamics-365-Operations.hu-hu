@@ -2,7 +2,7 @@
 title: A konfiguráció feltöltése a Lifecycle Services szolgáltatásba
 description: Ez a témakör egy új Elektronikus jelentéskészítési (ER) konfiguráció létrehozására és Microsoft Dynamics Lifecycle Services (LCS) rendszerbe való feltöltésére szolgáló folyamatot mutatja be.
 author: NickSelin
-ms.date: 09/14/2020
+ms.date: 06/17/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -13,18 +13,21 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0211fea7af303fe1dd7dce26f887bed4ed3b0f1e
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 41a8fcf2592bde4901aba703e0cd124b1155dac6
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744915"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6270559"
 ---
 # <a name="upload-a-configuration-into-lifecycle-services"></a>A konfiguráció feltöltése a Lifecycle Services szolgáltatásba
 
 [!include [banner](../../includes/banner.md)]
 
 Ez a témakör leírja, hogy a Rendszergazda vagy az Elektronikus jelentések fejlesztője szerepkörrel rendelkező felhasználó miként hozhat létre új [Elektronikus jelentés (ER) konfigurációt](../general-electronic-reporting.md#Configuration) , és hogyan töltheti fel a [projektszintű Eszközkönyvtárba](../../lifecycle-services/asset-library.md) a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásban.
+
+> [!IMPORTANT]
+> Az LCS tárolási adattárként való használata az ER-konfigurációknál [elavult](../../../../finance/get-started/removed-deprecated-features-finance.md#features-removed-or-deprecated-in-the-finance-10017-release). További információért lásd a [Regulatory Configuration Service (RCS) – Lifecycle Services (LCS) tárhely elavulása](../../../../finance/localizations/rcs-lcs-repo-dep-faq.md) részt.
 
 Ebben a példában a mintavállalatra, a Litware-ra, Inc.-re vonatkozóan létrehoz egy konfigurációs szolgáltatót, és feltölti az LCS rendszerbe. Ezek a lépések bármely vállalatnál elvégezhetők, mivel az ER-konfigurációk meg vannak osztva a vállalatok között. Az alábbi lépések végrehajtásához először hajtsa végre a [Konfigurációszolgáltatók létrehozása és megjelölése aktívként](er-configuration-provider-mark-it-active-2016-11.md) témakör lépéseit. Az LCS-hez való hozzáférés is szükséges.
 

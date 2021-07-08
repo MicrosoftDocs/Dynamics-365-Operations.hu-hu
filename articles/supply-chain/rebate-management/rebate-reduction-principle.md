@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: f586e0f40b5362510333263a985eada39d3c53f5
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: a0cde0c22b69e7605708a647d47530840ce823b1
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020363"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6270933"
 ---
 # <a name="rebate-reduction-principles"></a>Visszatérítés-csökkentési elvek
 
@@ -45,7 +45,7 @@ A visszatérítések csökkentési elveinek használatához lépjen a **Visszat�
 
 Az alábbi táblázat a visszatérítések csökkentési elvének jellemző beállításait mutatja be. A **Leírás** mező értéke mindegyik visszatérítés-csökkentési alapelvnél leírja a visszatérítés-csökkentési elv célját.
 
-| visszatérítés-csökkentési elv | Leírás | Csökkentés alkalmazása | Csökkentési alap | Kihagyás a csökkentésből |
+| Visszatérítés-csökkentési elv | Leírás | Csökkentés alkalmazása | Csökkentési alap | Kihagyás a csökkentésből |
 |---|---|---|---|---|
 | Halasztott | Visszatérítés csökkentése | Igen | Mindkettő | Nincs |
 | Exclreb | Visszatérítés kihagyása | Igen | Visszatérítés | Igen |

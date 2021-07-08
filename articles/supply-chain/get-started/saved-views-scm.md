@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 1636d37b40c826fb9b922636d68c56963a791af5
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 1b1077fdb4707bf2c019e86cb073b30465817577
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821249"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6270659"
 ---
 # <a name="standard-saved-views-for-supply-chain-management"></a>A Supply Chain Management szabványos mentett nézetei
 
@@ -79,16 +79,14 @@ Az alábbi táblázat leírja a Beszerzés és forrás modulban elérhető mente
 
 ## <a name="saved-views-for-the-production-control-module"></a>A Gyártásvezérlési modul mentett nézetei
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-
 Az alábbi táblázat leírja a Gyártásvezérlési modulban elérhető mentett nézeteket.
 
 | Oldal | Nézet neve | A leírás megtekintése | Funkció neve |
 |---|---|---|---|
-| Termelési rendelés darabjegyzékoldala | Egyszerűsített | Ez az egyszerűsített nézet csak a leggyakrabban használt mezőket tartalmazza. Ily módon gyorsabb áttekintést és egyszerűbb munkafolyamatot nyújt. | (Előzetes verzió) Mentett nézetek a gyártásvezérléshez |
-| Termelési rendelés részleteit tartalmazó oldal | Egyszerűsített | Ez az egyszerűsített nézet csak a leggyakrabban használt mezőket tartalmazza. Ily módon gyorsabb áttekintést és egyszerűbb munkafolyamatot nyújt. | (Előzetes verzió) Mentett nézetek a gyártásvezérléshez |
-| Termelési rendelés – kitárolásilista-oldal | Egyszerűsített | Ez az egyszerűsített nézet csak a leggyakrabban használt mezőket tartalmazza. Ily módon gyorsabb áttekintést és egyszerűbb munkafolyamatot nyújt. | (Előzetes verzió) Mentett nézetek a gyártásvezérléshez |
-| Termelési rendelések listaoldala | Egyszerűsített | Ez az egyszerűsített nézet csak a leggyakrabban használt mezőket tartalmazza. Ily módon gyorsabb áttekintést és egyszerűbb munkafolyamatot nyújt. | (Előzetes verzió) Mentett nézetek a gyártásvezérléshez |
+| Termelési rendelés darabjegyzékoldala | Egyszerűsített | Ez az egyszerűsített nézet csak a leggyakrabban használt mezőket tartalmazza. Ily módon gyorsabb áttekintést és egyszerűbb munkafolyamatot nyújt. | A gyártásvezérlés mentett nézetei |
+| Termelési rendelés részleteit tartalmazó oldal | Egyszerűsített | Ez az egyszerűsített nézet csak a leggyakrabban használt mezőket tartalmazza. Ily módon gyorsabb áttekintést és egyszerűbb munkafolyamatot nyújt. | A gyártásvezérlés mentett nézetei |
+| Termelési rendelés – kitárolásilista-oldal | Egyszerűsített | Ez az egyszerűsített nézet csak a leggyakrabban használt mezőket tartalmazza. Ily módon gyorsabb áttekintést és egyszerűbb munkafolyamatot nyújt. | A gyártásvezérlés mentett nézetei |
+| Termelési rendelések listaoldala | Egyszerűsített | Ez az egyszerűsített nézet csak a leggyakrabban használt mezőket tartalmazza. Ily módon gyorsabb áttekintést és egyszerűbb munkafolyamatot nyújt. | A gyártásvezérlés mentett nézetei |
 
 ## <a name="saved-views-for-the-sales-and-marketing-module"></a>Az Értékesítés és marketing modul mentett nézetei
 

@@ -15,12 +15,12 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 438e8ba38726a25a2464490f4098f96095b4d5c6
-ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
+ms.openlocfilehash: 2164c07d1a179a0aa15611b742084d872f41bbfc
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "5923307"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6270813"
 ---
 # <a name="feature-management-overview"></a>Funkciókezelés áttekintése
 
@@ -160,8 +160,8 @@ Az alapelv az, hogy minden új funkció egy 12 hónapos időszakban választhat�
 ### <a name="why-isnt-there-a-specific-mandatory-enabled-date"></a>Miért nem létezik konkrét „kötelezően engedélyezett dátum”? 
 A frissítések kiadásának ütemezése változó, a környezet frissítésének ütemezése is változó, és az ügyfelek dönthetnek úgy, hogy kihagynak egyes frissítéseket. Ennek eredményeképpen nehéz meghatározni adott dátumokat. 
 
-### <a name="wheres-the-documentation-for-features-that-are-being-made-mandatory"></a>Hol található a kötelezővé tett szolgáltatások dokumentációját? 
-Ez a dokumentáció az alkalmazáscsoportoktól származik. Ezek gyakran meg vannak említve az [Eltávolított és az elavult szolgáltatások](../../../dev-itpro/migration-upgrade/deprecated-features.md) dokumentumokban. 
+### <a name="wheres-the-documentation-for-features-that-are-mandatory"></a>Hol található a kötelező szolgáltatások dokumentációját? 
+Ez a dokumentáció az egyes Dynamics 365 alkalmazáscsoportoktól származik. Gyakran előfordul, hogy ezek a szolgáltatások az [Ügyfél funkcióinak frissítései](/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/updates-client-feature-states) vagy az [Eltávolított vagy elavult funkciók között](../../../dev-itpro/migration-upgrade/deprecated-features.md) említettek. 
 
 ### <a name="is-there-an-in-product-notification-or-signal-that-a-feature-is-going-to-be-mandatory-enabled"></a>Megjelenik a termékben értesítés vagy jelzés, hogy a funkció engedélyezése kötelező lesz? 
 A szolgáltatás kötelezővé tételéhez kapcsolódó értesítési mechanizmus jelenleg nem létezik.

@@ -2,7 +2,7 @@
 title: Szabadság- és távolléttípusok konfigurálása
 description: Beállíthatja, hogy az alkalmazottak milyen típusú szabadságot vehetnek igénybe a Dynamics 365 Human Resources alkalmazásban.
 author: andreabichsel
-ms.date: 06/01/2020
+ms.date: 06/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 098f614da80a1e7e3e31b30cea707ecfbd5b0a70
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 39e4c4b9c83ca648c21ac20bd20b739af8a6b9ed
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6056612"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6271127"
 ---
 # <a name="configure-leave-and-absence-types"></a>Szabadság- és távolléttípusok konfigurálása
 
@@ -71,7 +71,7 @@ A Dynamics 365 Human Resources szabadságtípusai határozzák meg az alkalmazot
    
  3. Állítsa be a szabadság típusaként az **Átvihető szabadságtípust**. Ha ezt a lehetőséget választja, akkor az átvitt egyenlegek átkerülnek a megadott szabadságtípusba. Az átvitt szabadságtípust is figyelembe kell venni a szabadság- és a távolléti tervben. 
  
- 4. Adja meg a szabadságtípus **Lejárati szabályait**. Ha beállítja ezt a lehetőséget, akkor a napok vagy hónapok egységét is megadhatja, és megadhatja a lejárat időtartamát. Beállíthatja a lejárat szabályának érvényességi dátumát is. Az érvényességi dátum annak meghatározására használható, hogy mikor kell elkezdeni a szabadság lejáratát feldolgozó kötegelt feladat futtatását, vagy azt a dátumot, amikor a szabály hatályba lép. A lejárat maga mindig meg fog történni a szabadságterv kezdő dátumán, ha a kötegelt feladat feldolgozásra van beállítva. Például előfordulhat, hogy a terv kezdő dátuma 2020. 01. 01., de a szabályt csak 2020. 01. 06-án hozták létre. Ha a hatályba lépés dátumát 2020. 01. 06-ra állítják, a szabályt a következő év határán lesz feldolgozva, így 2021. 01. 01-jén. A lejárati időpontokban meglévő szabadságegyenlegeket a szabadság típusából kivonja a program, és ez a szabadságegyenlegében tükröződik. 
+4. Adja meg a szabadságtípus **Lejárati szabályait**. Ha beállítja ezt a lehetőséget, akkor a napok vagy hónapok egységét is megadhatja, és megadhatja a lejárat időtartamát. A lejárati szabály hatálybalépésének dátumát arra használjuk, hogy meghatározzuk, mikor kell elindítani a szabadság lejáratát feldolgozó kötegelt feladatot, vagy amikor a szabály hatályba lép. Maga a lejárat mindig az elhatárolás kezdetének napján következik be. Ha például a könyvelési időszak kezdő dátuma 2021. augusztus 3., és a lejárati szabály 6 hónapra van beállítva, akkor a rendszer a könyvelési időszak kezdő dátumához megadott lejárati ellenszámla alapján fogja feldolgozni, tehát 2022. február 3-án lesz végrehajtva. A lejárati időpontokban meglévő szabadságegyenlegeket a szabadság típusából kivonja a program, és ez a szabadságegyenlegében tükröződik.
  
 ## <a name="see-also"></a>Lásd még
 
@@ -79,6 +79,7 @@ A Dynamics 365 Human Resources szabadságtípusai határozzák meg az alkalmazot
 - [Szabadság- és távolléti terv létrehozása](hr-leave-and-absence-plans.md)
 - [Munkaidőnaptár létrehozása](hr-leave-and-absence-working-time-calendar.md)
 - [Szabadság felfüggesztése](hr-leave-and-absence-suspend-leave.md)
+- [Szabadság vásárlására és eladására irányuló kérelem munkafolyamatának létrehozása](hr-leave-and-absence-buy-sell-workflow.md)
 
 
 

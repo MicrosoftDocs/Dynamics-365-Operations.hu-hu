@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: e2fc40e3e9874d47dd51e773628ba1ce75b8ebab
-ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
+ms.openlocfilehash: 2df579bfb820f871bfcc9c18bd8e5681cdf42447
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "6193881"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6271208"
 ---
 # <a name="firm-planned-orders"></a>Biztosra tervezett rendelések
 
@@ -123,8 +123,6 @@ Az automatikus megerősítés időkorlátját a megfelelő fedezeti beállítás
 Ha az összes korábban említett időkorlátot *0* (nulla) értékre állítja, az automatikus megerősítés ténylegesen le lesz tiltva a vonatkozó fedezett cikkeknél.
 
 ## <a name="firm-planned-orders-by-using-a-query"></a>Biztosra tervezett rendelések lekérdezés használatával
-
-[!INCLUDE [preview-banner-section](../../../includes/preview-banner-section.md)]
 
 A lekérdezésalapú megerősítés lehetővé teszi a megerősítés előre meghatározott feltételek alapján történő tervezését. Az automatikus megerősítéstől eltérően a lekérdezésalapú megerősítés lehetővé teszi a rendelések különböző alkészleteinek automatikus, időben történő megerősítését. Ezenkívül a manuális és automatizált műveletek használatával is meg lehet erősíteni a különféle típusú tervezett rendeléseket. Megtekintheti azt is, hogy mely megerősített rendelések vannak kiválasztva a saját beállításai alapján. Ebből következően megerősítheti, hogy a választás megfelel-e az elvárásainak.
 

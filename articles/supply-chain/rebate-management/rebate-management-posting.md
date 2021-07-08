@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: 808080d9e84c4af1b061d5a4ce76d5fa309e66f7
-ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
+ms.openlocfilehash: e77022bde6e612392c80cf5fe2b4c1e75ec5775d
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "6216743"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6271005"
 ---
 # <a name="rebate-management-posting-setup"></a>Visszatérítés-kezelés feladási beállítása
 
@@ -41,7 +41,7 @@ A következő táblázat leírja az egyes visszatérítés-kezelési feladási p
 |---|---|
 | Feladási profil | Adjon meg egyedi nevet a profilhoz. |
 | Leírás | Adja meg a profil leírását. |
-| Modul | A profilhoz társított visszatérítések és jogdíjak típusának kiválasztása (*Vevő* vagy *Szállító*). |
+| Modul | A profilhoz társított visszatérítések és jogdíjak moduljának kiválasztása (*Vevő* vagy *Szállító*). |
 | Típus | Válassza ki a profil típusát (*Visszatérítés* vagy *Jogdíj*). |
 | Kifizetés típusa | <p>Ez a mező a feladott visszatérítés kimenetének formátumát határozza meg.<p><p>Ha a **Típus** mező *Visszatérítésre* van állítva, a következő értékek érhetők el:</p><ul><li>*Fizetés kötelezettségek használatával* – Az ügyfélvisszatérítés feladása esetén a rendszer létrehoz egy szállítói számlát az átutalási szállítóhoz, amely be van állítva a visszatérítésben szereplő vevőn. Az ügyfélvisszatérítés feladása esetén a rendszer létrehoz egy szállítói számlát a visszatérítésben szereplő szállítói számlához.</li><li>*Vevői levonások* – a visszatérítés feladásakor a rendszer létrehoz egy vevői levonási naplót a visszatérítést kapó vevőhöz.</li><li>*Adószámlavevő levonásai* – a visszatérítés feladásakor a rendszer létrehoz egy szabadszöveges számlát a visszatérítést kapó vevőhöz.</li><li>*Kereskedelmi kiadás* – a visszatérítés feladásakor a rendszer létrehoz egy vevői levonási naplót a visszatérítést kapó vevőhöz.</li><li>*Jelentéskészítés* – a visszatérítés feladásakor a rendszer létrehoz egy vevői levonási naplót a visszatérítést kapó vevőhöz.</li></ul><p>Ha a **Típus** mező *Jogdíjra* van állítva, a következő értékek érhetők el:</p><ul><li>*Fizetés kötelezettségek használatával* – A visszatérítés feladása esetén a rendszer létrehoz egy szállítói számlát a visszatérítésben szereplő szállítói számlához.</li><li>*Jelentéskészítés* – A visszatérítés feladása esetén a rendszer létrehoz egy szállítói számlát a visszatérítésben szereplő szállítói számlához.</li></ul><p>További információkat a következő [Fizetési típusok](#payment-types) szakaszban találhat. |
 | Cég | Válassza ki a vállalatot (jogi személyt), amelynél a fedezetek elhatárolása és a követelések kifizetése történik. |
@@ -66,7 +66,7 @@ Az alábbi táblázat összefoglalja, hogy a **Kifizetés típusa** mező külö
 > Vegye figyelembe a következő pontokat a [Visszatérítés-kezelési ügyletek](rebate-management-deals.md) beállításakor:
 >
 > - Olyan ügyletekhez, amelyekben az **Egyeztetés a következő szerint:** mező értéke *Ügylet*, nem használhatja a dinamikus ügyletszámlát a feladás során. A megadott vevő- vagy szállítói számlát kell használnia.
-> - Olyan ügyletekhez, amelyekben az **Egyeztetés a következő szerint:** mező értéke *Sor*, használhat olyan feladási profilt, amely dinamikus ügyletszámlára végez eltolást az ügyletsoron, mert a vevő beállítása ügyletsoronkénti.
+> - Az olyan ügyletekhez, amelyekben az **Egyeztetés a következő szerint:** mező értéke *Sor*, használhat olyan feladási profilt, amely dinamikus ügyletszámlára végez eltolást az ügyletsoron, mert a vevő vagy a szállító beállítása ügyletsoronkénti.
 
 ## <a name="posting-fasttab"></a>Feladási gyorslap
 
@@ -74,15 +74,15 @@ A következő táblázat leírja az egyes visszatérítés-kezelési feladási p
 
 | Mező | Leírás |
 |---|---|
-| Hitelkeret típusa | Válassza ki, hogy főkönyvi számlára, vevőre vagy szállítóra kell-e jóváírást könyvelni. |
-| Követel számla | Az a számla, amelyre a jóváírási összegeket feladja a visszatérítési fedezetek létrehozása esetén. Ezt a számlát használja a program tartozik számlaként is, amikor a visszatérítést feladja a vevői jóváírás céljából. |
+| Hitelkeret típusa | Válassza ki, hogy főkönyvi számlára vagy vevőre kell-e a jóváírást könyvelni. Ha a fejléc **Kifizetés típusa** mezőjének beállítása *Adószámlavevő levonásai*, a jelen mező értéke *Főkönyvi számla* lesz. A szállítói visszatérítések esetében ennek a mezőnek *Főkönyvi számla* az értéke. |
+| Követel számla | Válassza ki azt a számlát, amelyre a jóváírási összegeket feladja a visszatérítési fedezetek létrehozása esetén. Ezt a számlát használja a program ellenszámlaként is, amikor a visszatérítést feladja a vevői jóváíráshoz vagy a szállítói kötelezettséghez. |
 | Napló neve<br>(A **Fedezet** szakaszban) | A feladott tartalék rögzítésére használt napló nevének kiválasztása. |
 | Típus | Válassza ki, hogy főkönyvi számlára, vevőre vagy szállítóra kell-e visszatérítést feladni. Ha a fejléc **Kifizetés típusa** mezőjének beállítása *Adószámlavevő levonásai*, a jelen mező értéke *Vevő/szállító* lesz. |
-| Számla forrásának használata | <p>Válasszon a következő értékek közül:</p><ul><li>*Nincs* – ha ezt az értéket választja, meg kell adnia egy számlát a **Visszatérítési számla** mezőben.</li><li>*Ügyletszámla* – A visszatérítési sorban megadott vevői vagy szállítói számla használata. Ez az érték csak olyan ügyleteknél választható, ahol az **Egyeztetés a következő szerint:** mező értéke *Sor*, és az olyan ügyletsoroknál, ahol a **Számlakód** mező értéke *Tábla*. Vevői jogdíjfeladási profilokra nem vonatkozik.</li></ul> |
+| Számla forrásának használata | <p>Válasszon a következő értékek közül:</p><ul><li>*Rögzített számla* – ha ezt az értéket választja, meg kell adnia egy számlát a **Visszatérítési számla** mezőben.</li><li>*Ajánlatsor számlája* – A visszatérítési sorban megadott vevői vagy szállítói számla használata. Ez az érték csak olyan ügyleteknél választható, ahol az **Egyeztetés a következő szerint:** mező értéke *Sor*, és az olyan ügyletsoroknál, ahol a **Számlakód** mező értéke *Tábla*. Ez nem vonatkozik a vevői jogdíj feladási profiljaira és az értékesítési rendeléseken alapuló szállítói visszatérítésekre.</li></ul> |
 | Visszatérítési számla | Erre a számlára lesz feladva a tényleges visszatérítési költség. |
-| Napló neve<br>(A **Visszatérítés-kezelés** szakaszban) | Válassza ki annak a naplónak a nevét, amellyel a jóváírást adhat fel a visszatérítés összegére vonatkozóan a vevőnek. Ez a mező nem elérhető, ha a fejléc **Kifizetés típusa** mezőjének beállítása *Adószámlavevő levonásai*. |
+| Napló neve<br>(A **Visszatérítés-kezelés** mezőcsoportban) | Válassza ki annak a naplónak a nevét, amellyel jóváírást adhat fel a visszatérítés összegére vonatkozóan a vevőnek vagy a szállítónak. Ez a mező nem elérhető, ha a fejléc **Kifizetés típusa** mezőjének beállítása *Adószámlavevő levonásai*. A vevői visszatérítések számára elérhetővé válnak a *Napi* naplótípus naplónevei. A vevői jogdíjak és a szállítói visszatérítések számára elérhetővé válnak a *Szállítói számla rögzítése* naplótípus naplónevei. |
 | Cikkáfacsoport | Adja meg, hogy a visszatérítés adóköteles-e. |
-| Napló neve<br>(A **Leírás** szakaszban) | Ha a feladott visszatérítés nem egyenlő a tartalékkal, le lehet írni a különbözetet. A feladott leírás rögzítésére használt napló nevének kiválasztása. |
+| Napló neve<br>(A **Leírás** mezőcsoportban) | Ha a feladott visszatérítés nem egyenlő a tartalékkal, le lehet írni a különbözetet. A feladott leírás rögzítésére használt napló nevének kiválasztása. |
 
 ## <a name="posting-by-company-fasttab"></a>Feladás vállalat szerint gyorslap
 
@@ -92,6 +92,6 @@ Az eszköztár gombjaival hozzáadhat vállalatokat a rácshoz, illetve eltávol
 
 Válassza ki az egyes vállalat sorát, majd írja be a következő adatokat a rács alatti mezők segítségével:
 
-- **Terhelés típusa** – Válassza ki, hogy főkönyvi számlára, vevőre vagy szállítóra kell-e terhelést könyvelni.
+- **Terhelés típusa** – Válassza ki, hogy főkönyvi számlára vagy szállítóra kell-e terhelést könyvelni. Vevői visszatérítések és jogdíjak esetében ennek a mezőnek *Főkönyvi számla* az értéke.
 - **Tartozik számla** – Adja meg a számlát, amelyre a visszatérítési tartalékok létrehozásakor a terhelés összegét feladják.
 - **Fő számla** – válassza ki a fő számlát a leírásokhoz.

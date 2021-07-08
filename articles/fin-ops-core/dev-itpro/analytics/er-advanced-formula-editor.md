@@ -2,7 +2,7 @@
 title: Elektronikus jelentéskészítés speciális képlet-szerkesztő
 description: Ez a témakör azt mutatja be, hogyan használható a speciális receptúraszerkesztő kifejezések konfigurálására az elektronikus jelentési (ER) modell hozzárendelési és formátum összetevőiben.
 author: NickSelin
-ms.date: 04/10/2020
+ms.date: 06/17/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: d18aeedb2f21176ffe964b926168d4bf088a093b
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: f7f80928e1d3f5d4892f72d4bd2fd09b70a26c1f
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751208"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6270707"
 ---
 # <a name="electronic-reporting-advanced-formula-editor"></a>Elektronikus jelentéskészítés speciális képlet-szerkesztő
 
@@ -45,16 +45,29 @@ A következő lépések végrehajtásával kezdheti el használni Microsoft Dyna
 2.  A **Konfigurációk** oldal műveleti ablaktábláján, a **Konfigurációk** lapon, a **Speciális beállítások** csoportban válassza a **Felhasználói paraméterek** lehetőséget.
 3.  A **Felhasználói paraméterek** párbeszédpanel **Végrehajtási nyomkövetés** szakaszában állítsa **A speciális receptúraszerkesztő aktiválása** paramétert **Igen** értékre.
 
-[![ER-konfigurációk oldal](./media/ER-AdvEditor-Activate.png)](./media/ER-AdvEditor-Activate.png)
+[![Felhasználói paraméterek párbeszédpanel, Speciális képletszerkesztő paraméter engedélyezése kiemelve](./media/ER-AdvEditor-Activate.png)](./media/ER-AdvEditor-Activate.png)
 
 > [!NOTE]
 > Ne feledje, hogy ez a paraméter a felhasználó- és a vállalatspecifikus.
+
+A Microsoft Dynamics 365 Finance 10.0.19-es verziójától kezdve szabályozható, hogy alapértelmezés szerint milyen ER receptúraszerkesztőt kínálnak. A következő lépések segítségével engedélyezheti a speciális képletszerkesztőt az aktuális Pénzügyi példány összes felhasználója és vállalata számára.
+
+1.  Nyissa meg a **Funkciókezelés** munkaterületet.
+2.  Keresse meg és válassza ki a listában található **Összes felhasználó alapértelmezettként az ER speciális képletszerkesztő beállítása** funkciót, majd válassza az **Engedélyezés most** lehetőséget.
+3.  Nyissa meg a következőt: **Szervezeti adminisztráció** > **Elektronikus jelentés** > **Konfigurációk**.
+4.  A **Konfigurációk** oldal műveleti ablaktábláján, a **Konfigurációk** lapon, a **Speciális beállítások** csoportban válassza a **Felhasználói paraméterek** lehetőséget.
+5.  A **Felhasználói paraméterek** párbeszédpanelen keresse meg a **Speciális képletszerkesztő letiltása** paramétert, és ellenőrizze, hogy a **Nem** beállítás van-e megadva.
+
+[![Felhasználói paraméterek párbeszédpanel, Speciális képletszerkesztő paraméter letiltása kiemelve](./media/ER-AdvEditor-Activate2.png)](./media/ER-AdvEditor-Activate2.png)
+
+> [!NOTE]
+> A **Speciális receptúra-szerkesztő engedélyezése** és a **Speciális receptúraszerkesztő letiltása** paraméterértékek minden felhasználónál külön maradnak, és a **Felhasználói paraméterek** párbeszédpanelen jelennek meg, az **ER speciális receptúra-szerkesztő beállítása** alapértelmezettként való beállításának állapotától függően minden felhasználó funkciónál.
 
 ## <a name=""></a><a name="Autoformatting">Kód automatikus formázása</a>
 
 Ha egy összetett kifejezést ír be, amely több kódsorból áll, akkor az új megadott sor behúzása automatikusan az előző sor behúzása alapján történik. Kiválaszthatja a sorokat, és megváltoztathatja a behúzást a **Tab** vagy a **Shift+Tab** megnyomásával.
 
-[![ER-receptúraszerkesztő](./media/ER-AdvEditor-Indentation.gif)](./media/ER-AdvEditor-Indentation.gif)
+[![ER képletszerkesztő gif megjelenítése sorok kiválasztásával és a behúzás módosításával](./media/ER-AdvEditor-Indentation.gif)](./media/ER-AdvEditor-Indentation.gif)
 
 Az automatikus formázás lehetővé teszi a teljes kifejezés megfelelő formázását a további karbantartás megkönnyítésére, valamint a konfigurált logika megértésének egyszerűsítésére.
 
@@ -62,7 +75,7 @@ Az automatikus formázás lehetővé teszi a teljes kifejezés megfelelő formá
 
 A szerkesztő a szavak kiegészítését nyújtja, segítve a kifejezés írását és az elgépelés elkerülését. Új szöveg hozzáadásának elkezdése esetén a szerkesztő automatikusan felkínálja a megadott karaktereket tartalmazó funkciókban használható ER-funkciók listáját. A **Ctrl+Szóköz** beírásával a konfigurált kifejezés tetszőleges pontján aktiálható az IntelliSense.
 
-[![ER-receptúraszerkesztő](./media/ER-AdvEditor-Intelisense.gif)](./media/ER-AdvEditor-Intelisense.gif)
+[![ER receptúraszerkesztő GIF-fájlja, amely az IntelliSense eseményindítót mutatja](./media/ER-AdvEditor-Intelisense.gif)](./media/ER-AdvEditor-Intelisense.gif)
 
 ## <a name=""></a><a name="CodeCompletion">Kódkiegészítés</a>
 
@@ -72,7 +85,7 @@ A szerkesztő automatikusan elvégzi a kód kiegészítését:
 - A második idézőjel szimbólum beszúrása az első beírásakor, a kurzort az idézőjeleken belül tartva.
 - A második dupla idézőjel szimbólum beszúrása az első beírásakor, a kurzort az idézőjeleken belül tartva.
 
-[![ER-receptúraszerkesztő](./media/ER-AdvEditor-CodeCompletion.gif)](./media/ER-AdvEditor-CodeCompletion.gif)
+[![AZ ER képletszerkesztő gif-fájlja mutatja, hogy a szerkesztő automatikusan biztosítja a kód kiegészítését](./media/ER-AdvEditor-CodeCompletion.gif)](./media/ER-AdvEditor-CodeCompletion.gif)
 
 Ha kijelöli a begépelt zárójelet, akkor a páros második zárójele automatikusan kiemelődik az általuk támogatott konstrukciót megmutatva.
 
@@ -88,7 +101,7 @@ A **8.** sorra történő ugráshoz például tegye a következőket:
 
 - Nyomja le az **F1** billentyűt, írja be: **G**, válassza az **Ugrás a sorhoz** elemet, írja be a **8** értéket, majd nyomja meg az **Enter** billentyűt.
 
-[![ER-receptúraszerkesztő](./media/ER-AdvEditor-Goto.gif)](./media/ER-AdvEditor-Goto.gif)
+[![AZ ER képletszerkesztő GIF-fájlja, amely megmutatja, hogyan keresse meg a kifejezés egyes részeit a parancspaletta segítségével](./media/ER-AdvEditor-Goto.gif)](./media/ER-AdvEditor-Goto.gif)
 
 ## <a name=""></a><a name="CodeStructuring">Kód strukturálása</a>
 
@@ -110,7 +123,7 @@ Az összes régió kibontásához tegye a következőket:
   
 - Nyomja le az **F1** billentyűt, írja be: **UN** billentyűt, nyomja meg az **Összes kibontása** elemet, majd nyomja le az **Enter** billentyűt
 
-[![ER-receptúraszerkesztő](./media/ER-AdvEditor-ToggleFold.gif)](./media/ER-AdvEditor-ToggleFold.gif)
+[![ER receptúraszerkesztő GIF-fájlja, amely a kód kihajtását mutatja](./media/ER-AdvEditor-ToggleFold.gif)](./media/ER-AdvEditor-ToggleFold.gif)
 
 ## <a name=""></a><a name="FindAndReplace">Keresés és csere</a>
 
@@ -138,13 +151,13 @@ Bizonyos szövegek összes előfordulásának cseréjéhez jelölje ki a kifejez
   
 - Nyomja le az **F1** billentyűt, írja be a **C** karaktert, majd válassza ki a kívánt beállítást a kiválasztott szöveg módosításához. Írja be a helyettesítő szöveget.
 
-[![ER-receptúraszerkesztő](./media/ER-AdvEditor-Find.gif)](./media/ER-AdvEditor-Find.gif)
+[![ER receptúraszerkesztő GIF-fájlja, amely a keresést és helyettesítését mutatja](./media/ER-AdvEditor-Find.gif)](./media/ER-AdvEditor-Find.gif)
 
 ## <a name=""></a><a name="DataPasting">Az adatforrások és a funkciók beillesztése</a>
 
 Kiválaszthatja az **Adatforrás hozzáadását**, amely az aktuális kifejezéshez beszúrja az adatforrást, amely az **Adatforrás** bal oldali paneljén jelenleg kiválasztott. Hasonlóan, kiválaszthatja a **Funkció hozzáadását**, amely az aktuális kifejezéshez beszúrja a funkciót, amely a **Funkciók** jobb oldali paneljén jelenleg kiválasztott. Ha használja az ER-receptúraszerkesztőt, akkor egy kiválasztott funkció vagy egy kiválasztott adatforrás mindig beillesztődik a konfigurált kifejezés végére. Ha használja a speciális ER-receptúraszerkesztőt, akkor egy kiválasztott funkció vagy egy kiválasztott adatforrás beilleszthető a konfigurált kifejezés bármelyik részébe. A kurzor segítségével megadhatja, hogy hová szeretné beilleszteni az adatokat.
 
-[![ER-receptúraszerkesztő](./media/ER-AdvEditor-PasteValue.gif)](./media/ER-AdvEditor-PasteValue.gif)
+[![AZ ER képletszerkesztő gif-fájlja adatforrás hozzáadását és funkció beillesztését mutatja](./media/ER-AdvEditor-PasteValue.gif)](./media/ER-AdvEditor-PasteValue.gif)
 
 ## <a name=""></a><a name="SyntaxColorization">Szintaxis szerinti színezés</a>
 

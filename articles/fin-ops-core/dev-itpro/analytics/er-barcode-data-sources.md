@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: Version 10.0.13
-ms.openlocfilehash: cbc2b5870e855ff4d4a099a51cbb6887dd30bba7
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: f72ef77a35c484a40e1384baf69001bba6a333f6
+ms.sourcegitcommit: ec272aa133189569abaf4c09b03230611b5a756f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893552"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "6274536"
 ---
 # <a name="use-barcode-data-sources-to-generate-bar-code-images"></a>Vonalkód-adatforrások használata vonalkód-képek létrehozásához
 
@@ -116,14 +116,14 @@ Ha még nem végezte el a példát a következő témakörben: [Beágyazott kép
 
 | Tartalom leírása         | Fájlnév                   |
 |-----------------------------|-----------------------------|
-| ER-adatmodell konfigurációja | Model for cheques.xml       |
-| ER-formátum konfigurációja     | Cheques printing format.xml |
+| ER-adatmodell konfigurációja | [Model for cheques.xml](https://download.microsoft.com/download/6/e/a/6ea166fd-1382-4fdb-8dcb-0f13379f9c8e/Modelforcheques.xml)      |
+| ER-formátum konfigurációja     | [Cheques printing format.xml](https://download.microsoft.com/download/1/7/c/17c301e3-c4ee-4886-ae75-440fcc002c8c/Chequesprintingformat.xml) |
 
 Ezenkívül töltse le a következő Excel-fájlt, amely tartalmazza a megadott ER-megoldás módosított sablonját.
 
 | Tartalom leírása | Fájlnév                 |
 |---------------------|---------------------------|
-| Jelentéssablon     | Check template Excel.xlsx |
+| Jelentéssablon     | [Check template Excel.xlsx](https://download.microsoft.com/download/1/f/6/1f671963-73aa-48d5-ae69-45f21fe7dfb4/Cheque%20template.xlsx) |
 
 ### <a name="activate-a-configuration-provider"></a><a name="ExampleProvider"></a>Konfigurációszolgáltató aktiválása
 

@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 86f231b9ae85d136b0e963757d9561a7abda4edc
-ms.sourcegitcommit: cd9016e9787169cb800889d335b9c5919ddbe4af
+ms.openlocfilehash: 24c322712edf1277eabfdd708f528d89bcf43640
+ms.sourcegitcommit: 4cbd83e21a78459e4711a2dedba0f5a7acc3c841
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "5938300"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "6261746"
 ---
 # <a name="cloud-and-edge-scale-units-for-manufacturing-and-warehouse-management-workloads"></a>Felhőalapú és peremhálózat-léptékű egységek gyártási és raktárkezelési munkaterhelésekhez
 
@@ -24,7 +24,7 @@ ms.locfileid: "5938300"
 > [!IMPORTANT]
 > A Microsoft Dynamics 365 Supply Chain Management skálázási egysége a szolgáltatás használatát szabályozó feltételekkel érhető el az Ön számára. A további tudnivalókat lásd: [Microsoft Dynamics Jogi információk](https://go.microsoft.com/fwlink/?LinkID=290927).
 >
-> A felhő és peremhálózati skálázáso egységek esetén megerősíti, hogy meggértette, hogy a konfigurációval és a felhőbeli és peremhálózati skálázási egységek feldolgozásával kapcsolatos adatok egy részét az USA-ban található adatközpontban tárolhatjuk. Ha további információkat szeretne megtudni a felhő- és szélskálázi egységek adatainak feldolgozásával kapcsolatban, tekintse meg az [Adatfeldolgozás a skálázási egységek kezelése során](#data-processing-management) témakör későbbi részét.
+> A felhő- és peremhálózati egységek engedélyezésekor meg kell erősítenie, hogy megértette, hogy a felhő- és peremhálózati egységek konfigurálásához és feldolgozásához kapcsolódó egyes adatokat az Egyesült Államokban található adatközpontban lehet tárolni. Ha további információkat szeretne megtudni a felhő- és szélskálázi egységek adatainak feldolgozásával kapcsolatban, tekintse meg az [Adatfeldolgozás a skálázási egységek kezelése során](#data-processing-management) témakör későbbi részét.
 
 ## <a name="core-value-proposition-for-scale-units"></a>Alapvető értékajánlat a skálázási egységekhez
 

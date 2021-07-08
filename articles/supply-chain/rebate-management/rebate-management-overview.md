@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: 7afad911454916c49cda47253736defdd7e9b16b
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: d271d70791a8fe4ad1581ae8a150ad13bffc7a94
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020459"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6271053"
 ---
 # <a name="rebate-management-module-overview"></a>Visszatérítés-kezelő modul áttekintése
 
@@ -70,7 +70,7 @@ A visszatérítések számos különböző paraméter alapján konfigurálhatók
 
 A visszatérítési számítás eredményei más visszatérítésekkel is csökkenthetők, attól függően, hogy a visszatérítést a nettó összeg alapján kell-e kiszámítani.
 
-A szállítói oldalon a visszatérítések kiszámíthatják az árat az először be, először ki (FIFO) szabály, a legutóbbi vételár, az átlagos vételár vagy az eladási ár alapján.
+A szállítói oldalon az értékelés rendeléseken alapuló visszatérítések kiszámíthatják az árat az először be, először ki (FIFO) szabály, a legutóbbi vételár, az átlagos vételár vagy az eladási ár alapján.
 
 ## <a name="rebate-target-transactions"></a>Visszatérítési céltranzakciók
 
@@ -84,11 +84,12 @@ A cikk-kimenetek ingyenes cikkértékesítési rendelést hoznak létre a vevői
 
 A társított ügyletek kombinációja, a számítások gyakorisága, a számítási alap és a kiválasztott számítási módszer határozza meg a visszatérítési számítások pontosságát és precizitását. A visszatérítési fedezetek felhasználhatók a feladott és igényelt értékek elhatárolására.
 
-A céltartalékok naponta vagy havonta kezelhetők. A funkció azonban bármely meghatározott gyakorisággal lefoglalhatja vagy kifizetheti a visszatérítést, vagy bevételezheti a kifizetést. A felhasználók a kifizetés során bármikor könnyedén módosíthatnak egy csomagot vagy kifizetési összeget.
+A fedezetek napi, heti, havi vagy egyéni időszak szerint kezelhetők. A funkció azonban bármilyen olyan gyakorisággal lefoglalhatja vagy kifizetheti a visszatérítést, illetve fogadhatja a visszatérítési amely ugyanolyan hosszú, mint a fedezet gyakorisága, vagy hosszabb nála. A leírás a visszatérítés gyakoriságával egyező gyakoriságot használ. A felhasználók a kifizetés során bármikor könnyedén módosíthatnak egy csomagot vagy kifizetési összeget.
 
-A felhasználóknak már nem kell két lépésben kezelniük az ajánlatokat vagy fedezeteket. A fedezetek és leírások közvetlenül a főkönyvbe vannak feladva. Ezenkívül a jóváírások automatikusan létrehozhatók. Ezért teljes mértékben integrálható a kötelezettségekkel és a követelésekkel. A feldolgozás során a számítások figyelembe veszik a kiegyenlítési engedményeket, a kifizetett számlákat, a fizetési engedményeket és a meglévő jóváírásokat, hogy biztosítsák az összegek és értékek pontos kiszámítását.
+A felhasználóknak már nem kell két lépésben kezelniük az ajánlatokat vagy fedezeteket. A fedezetek és leírások közvetlenül a főkönyvbe vannak feladva. Ezenkívül a jóváírások automatikusan létrehozhatók. Ezért teljes mértékben integrálható a kötelezettségekkel és a követelésekkel. A feldolgozás során a számítások figyelembe vehetik a kiegyenlítési engedményeket, a kifizetett számlákat, a fizetési engedményeket és a meglévő jóváírásokat, hogy biztosítsák az összegek és értékek pontos kiszámítását.
 
-A visszatérítések kiszámításakor a folyamat olyan tranzakciókat hoz létre, amelyek a feladás előtt felülvizsgálhatók. Ezután létre lehet hozni egy napló-, jóváírás- vagy tartozik tranzakciót. Egy külön folyamattal adhatók fel visszatérítési és levonási tranzakciók. A megfelelőség, a hatékonyság és az átláthatóság biztosítása érdekében jelentési kimutatások és tranzakciólisták kérhetők le.
+A visszatérítések kiszámításakor a folyamat olyan tranzakciókat hoz létre, amelyek a feladás előtt felülvizsgálhatók. A visszatérítés-kezelési tranzakciókat külön folyamat adja fel. Ezt követően a javasolt tranzakciókba való feladás során létre lehet hozott naplót, jóváírást vagy terhelési tranzakciót. A megfelelőség, a hatékonyság és az átláthatóság biztosítása érdekében jelentési kimutatások és tranzakciólisták kérhetők le.
+
 
 ## <a name="guaranteed-royalty-payments"></a>Garantált jogdíjfizetések
 

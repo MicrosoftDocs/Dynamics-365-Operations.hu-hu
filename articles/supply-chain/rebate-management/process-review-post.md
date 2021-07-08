@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: 5188fa271cd9eb24140a9edcf507a3da72b61074
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 82b8a4e6ba7ebea7df9f5dad5abc3dfc3ce2687d
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020531"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6270761"
 ---
 # <a name="process-review-and-post-rebates"></a>Visszatérítések feldolgozása, felülvizsgálata és feladása
 
@@ -55,9 +55,9 @@ Az ajánlat feldolgozásakor a rendszer kiszámítja az összes beállított von
 1. Jelölje ki a feldolgozni kívánt ajánlat sorát (vagy nyissa meg a feldolgozni kívánt ajánlatot).
 1. A Művelet panel **Visszatérítés-kezelési ajánlatok** lapján, a **Létrehozás** csoportban válassza ki az alábbi parancsok egyikét:
 
-    - **Feldolgozás \> Létesítés** – Létesítsen egy elhatároláskészletet az egyes releváns visszatérítési ajánlatokhoz, de ne tegye közzé azokat.
+    - **Feldolgozás \> Létesítés** – Létesítsen egy elhatároláskészletet az egyes releváns visszatérítési ajánlatokhoz, de ne tegye közzé azokat. Ez a menüpont nem érhető el olyan ajánlatoknál, ahol a **Visszatérítési kimenet** mező értéke *Cikk*.
     - **Feldolgozás \> Visszatérítés-kezelés** – Olyan tranzakciók sorozatának feldolgozása, amelyek az egyes ajánlatokra vonatkozó visszatérítés értékét adják meg.
-    - **Feldolgozás \> Leírás** – A korábban könyvelt tranzakciók sztornírozása a leírásukhoz, hogy az új visszatérítési ajánlattranzakciók kiszámíthatók legyenek.
+    - **Folyamat \> Leírás** – A visszatérítési ügylethez és a meghatározott időszakhoz tartozó minden forrásügylet esetében feldolgozza az ellátshoz és a visszatérítés-kezeléshez feladott összegek közötti eltérést. Ez a menüpont nem érhető el olyan ajánlatoknál, ahol a **Visszatérítési kimenet** mező értéke *Cikk*.
 
 1. A megjelenő párbeszédpanelen állítsa be a **Kezdő dátum** és a **Záró dátum** mezőt a számítás dátumtartományának meghatározásához.
 1. A számítás futtatásához válassza az **OK** lehetőséget.
@@ -70,9 +70,9 @@ Az ajánlat feldolgozásakor a rendszer kiszámítja az összes beállított von
 1. A **Visszatérítés-kezelés** gyorslapon jelölje ki a feldolgozni kívánt ajánlatsorok sorát.
 1. A **Visszatérítés-kezelés** gyorslap eszköztárán válasszon az alábbi parancsok közül. (Ezek a parancsok csak olyan ajánlatokhoz érhetők el, ahol az **Egyeztetés a következő szerint:** mező *Sor* értékre van állítva.)
 
-    - **Feldolgozás \> Létesítés** – Létesítsen egy elhatároláskészletet az egyes releváns visszatérítési ajánlatsorokhoz, de ne tegye közzé azokat.
+    - **Feldolgozás \> Létesítés** – Létesítsen egy elhatároláskészletet az egyes releváns visszatérítési ajánlatsorokhoz, de ne tegye közzé azokat. Ez a menüpont nem érhető el olyan ajánlatoknál, ahol a **Visszatérítési kimenet** mező értéke *Cikk*.
     - **Feldolgozás \> Visszatérítés-kezelés** – Olyan tranzakciók sorozatának feldolgozása, amelyek az egyes ajánlatsorokra vonatkozó visszatérítés értékét adják meg.
-    - **Feldolgozás \> Leírás** – A korábban könyvelt tranzakciók sztornírozása a leírásukhoz, hogy az új visszatérítési ajánlattranzakciók kiszámíthatók legyenek.
+    - **Folyamat \> Leírás** – A visszatérítési ügylethez és a meghatározott időszakhoz tartozó minden forrásügylet esetében feldolgozza az ellátshoz és a visszatérítés-kezeléshez feladott összegek közötti eltérést. Ez a menüpont nem érhető el olyan ajánlatoknál, ahol a **Visszatérítési kimenet** mező értéke *Cikk*. 
 
 1. A megjelenő párbeszédpanelen állítsa be a **Kezdő dátum** és a **Záró dátum** mezőt a számítás dátumtartományának meghatározásához.
 1. A számítás futtatásához válassza az **OK** lehetőséget.
@@ -115,26 +115,26 @@ Egy vagy több ajánlat feldolgozásakor a rendszer olyan tranzakciókat hoz lé
         - **Nem igényelt beállítása \> Összes** – Az összes tranzakciót nem igényeltként jelöli meg.
         - **Nem gényelt beállítása \> Kiválasztott** – A kijelölt tranzakciókat nem igényeltként jelöli meg.
 
-    - Egy vagy több sor igénylésének feladáshoz jelölje ki a megfelelő sorokat, majd a Művelet panelen válassza a **Feladás** lehetőséget. (A **Feladás** gomb csak visszatérítési tranzakciók esetén érhető el. Nem érhető el fedezeti és leírási tranzakciókhoz.) A **Feladás** párbeszédpanelen a **Kezdő dátum** és a **Záró dátum** mező automatikusan be van állítva. Állítsa be a **Feladás dátuma** mezőt, majd kattintson az **OK** lehetőségre.
+    - Az összes vonatkozó sorra vonatkozó jogcím feladásához válassza **Feladás** lehetőséget a Művelet panelen. Ha igénylési folyamatot használ (ha az **Igénylési folyamat használata** beállítás engedélyezve van a **Visszatérítés-kezelés paraméterei** lapon), csak az **Igényelt** sorok kerülnek feladásra. Ellenkező esetben a kiválasztott visszatérítési tranzakció összes forrástranzakciója fel lesz adva. A **Feladás** gomb csak visszatérítési tranzakciók esetén érhető el. Ellátási és leírási tranzakciókhoz nem használható. A **Feladás** párbeszédpanel **Kezdő dátum** és **Záró dátum** mezője automatikusan be van állítva. Állítsa be a **Feladás dátuma** mezőt, majd kattintson az **OK** lehetőségre.
     - A nyitott vagy fel nem adott tranzakciók összegének módosításához jelölje ki a tranzakciót, majd kövesse az alábbi lépések egyikét:
 
         - Módosítsa az értéket a **Korrigált összeg** mezőben.
         - Válassza a Művelet panelen a **Korrekció beállítása** lehetőséget. Ezután a **Javított összeg** mezőben megjelenő legördülő párbeszédpanelen adjon meg egy értéket.
 
 > [!NOTE]
-> A következő időszak feldolgozásakor a tranzakciólista tartalmazza az előző feladásból származó nem igényelt tranzakciókat, valamint a kiválasztott időszakra vonatkozó új tranzakciókat.
+> Ha igénylési folyamatot használ, a következő időszak feldolgozásakor a tranzakciólista tartalmazza az előző feladásból származó nem igényelt tranzakciókat, valamint a kiválasztott időszakra vonatkozó új tranzakciókat.
 
 ## <a name="post-rebates-transactions"></a>Visszatérítési tranzakciók feladása
 
-A visszatérítések és levonások értékének feladásához futtatnia kell a feladási folyamatot, kivéve, ha beállította a rendszert az automatikus feladásukra.
+A feldolgozott fedezet értékéhez, a visszatérítés-kezelés összegéhez és a leíráshoz tartozó érték feladásához a feladási folyamatot kell futtatni. A feladási folyamat úgy jelöli meg a fedezetet, a visszatérítés-kezelést vagy a leírási tranzakciókat, ahogy fel lettek adva, és létrehozza a céltranzakciót. Ha nem kell ellenőrizni a céltranzakciót, ezeket a tranzakciókat úgy állíthatja be, hogy automatikusan megtörténjen a feladásuk.
 
-### <a name="set-up-the-system-to-post-all-transactions-automatically"></a>A rendszer beállítása az összes tranzakció automatikus feladására
+### <a name="set-up-the-system-to-post-all-target-transactions-automatically"></a>A rendszer beállítása az összes céltranzakció automatikus feladására
 
-Annak beállításához, hogy a rendszer feladja az összes tranzakciót a létrehozásuk után, kapcsolja be a **Naplók automatikus feladása** és/vagy a **Szabadszöveges számlák automatikus feladása** lehetőséget a **Visszatérítés-kezelési paraméterek** lapon. További információkért lásd: [Visszatérítés-kezelési paraméterek](rebate-management-parameters.md).
+Annak beállításához, hogy a rendszer egyből feladja az összes céltranzakciót, amikor egy feladási fedezet, visszatérítés-kezelési összeg és leírás létrehozza őket, kapcsolja be a **Naplók automatikus feladása** és/vagy a **Szabadszöveges számlák automatikus feladása** lehetőséget a **Visszatérítés-kezelési paraméterek** lapon. További információkért lásd: [Visszatérítés-kezelési paraméterek](rebate-management-parameters.md).
 
 ### <a name="post-transactions-for-all-lines-for-one-or-more-deals"></a>Egy vagy több ajánlat összes sorához tartozó tranzakciók feladása
 
-Ha nem használ automatikus feladást, a vonatkozó ajánlatok feldolgozása után kövesse az alábbi lépéseket egy vagy több ajánlat összes sorához létrehozott tranzakciók áttekintéséhez és feladásához.
+A vonatkozó ajánlatok feldolgozása után kövesse az alábbi lépéseket egy vagy több ajánlat összes sorához létrehozott tranzakciók áttekintéséhez és feladásához.
 
 1. Nyissa meg a megfelelő [visszatérítési ajánlatok listaoldalát](rebate-management-deals.md) a kezelni kívánt ajánlattípushoz.
 1. Jelölje ki a feladni kívánt ajánlat sorát (vagy nyissa meg a feladni kívánt ajánlatot).
@@ -149,7 +149,7 @@ Ha nem használ automatikus feladást, a vonatkozó ajánlatok feldolgozása ut�
 
 ### <a name="post-transactions-for-one-or-more-specific-deal-lines-for-a-selected-deal"></a>Egy vagy több konkrét ajánlatsor tranzakcióinak feladása egy kiválasztott ajánlathoz
 
-Ha nem használ automatikus feladást, a vonatkozó ajánlatok feldolgozása után kövesse az alábbi lépéseket egy kiválasztott ajánlat egy vagy több adott ajánlatsorához létrehozott tranzakciók áttekintéséhez és feladásához.
+A vonatkozó ajánlatok feldolgozása után kövesse az alábbi lépéseket a kiválasztott ajánlat egy vagy több sorához létrehozott tranzakciók áttekintéséhez és feladásához. Ezek az eljárás csak olyan ajánlatokhoz használható, ahol az **Egyeztetés a következő szerint:** mező *Sor* értékre van állítva.
 
 1. Nyissa meg a megfelelő [visszatérítési ajánlatok listaoldalát](rebate-management-deals.md) a kezelni kívánt ajánlattípushoz.
 1. Nyissa meg az ajánlatot, amelynek a sorához tranzakciókat szeretne feladni.
@@ -174,7 +174,7 @@ Adott ajánlatok vagy ajánlatsorok tranzakcióinak feladása helyett kötegelt 
     - Lépjen a **Visszatérítés-kezelés \> Ismétlődő feladatok \> Feladás \> Visszatérítés-kezelés** lehetőségre a rendelkezésre álló, létrehozott visszatérítési tranzakciók feladásához.
     - Lépjen a **Visszatérítés-kezelés \> Ismétlődő feladatok \> Feladás \> Leírás** lehetőségre a rendelkezésre álló, létrehozott leírási tranzakciók feladásához.
 
-1. A **Paraméterek** gyorslap **Időszak** szakaszában megjelenő párbeszédpanelen állítsa be a **Feladási dátum** mezőt. Ezután állítsa be a **Kezdő dátum** és a **Záró dátum** mezőt a feladni kívánt tranzakciók dátumtartományának meghatározásához. 
+1. A **Paraméterek** gyorslap **Időszak** szakaszában megjelenő párbeszédpanelen állítsa be a **Feladási dátum** mezőt. Ezután állítsa be a **Kezdő dátum** és a **Záró dátum** mezőt a feladni kívánt tranzakciók dátumtartományának meghatározásához.
 1. A **Garancia időszaka** szakaszban állítsa be a **Kezdő dátum** és a **Záró dátum** mezőt a feladni kívánt garanciák dátumtartományának meghatározásához.
 1. A **Szerepeltetni kívánt rekordok** gyorslapon beállíthat szűrőket a kötegelt feladat által feldolgozott ajánlatok halmazának korlátozásához. Ezek a beállítások ugyanúgy működnek, mint más típusú kötegelt feladatok esetében.
 1. A **Futtatás a háttérben** gyorslapon szükség szerint kötegelt feldolgozást és ütemezési lehetőségeket is megadhat. Ezek a beállítások ugyanúgy működnek, mint más típusú kötegelt feladatok esetében.
@@ -182,17 +182,17 @@ Adott ajánlatok vagy ajánlatsorok tranzakcióinak feladása helyett kötegelt 
 
 ## <a name="review-rebate-management-journals"></a>Visszatérítés-kezelési naplók áttekintése
 
-A tranzakciók feladása után áttekintheti az eredményül kapott naplókat, dokumentumokat vagy cikkeket. A visszatérítések és jogdíjak céltranzakciói a feladási profilban beállított fizetési típuson és a visszatérítés kimeneti típusán alapulnak. Ha például a visszatérítés kimenete *Cikk* értékre van állítva, a program létrehoz egy értékesítési rendelést, amely a céltranzakciókon keresztül tekinthető meg. Másik lehetőségként, ha a kifizetés a Kötelezettségek használatára van beállítva, a vevőn beállított szállítóhoz szállítói számla jön létre a vevői visszatérítések esetében.
+A tranzakciók feladása után áttekintheti az eredményül kapott naplókat, dokumentumokat vagy cikkeket. A visszatérítések és jogdíjak céltranzakciói a feladási profilban beállított fizetési típuson és a visszatérítés kimeneti típusán alapulnak. Ha például a visszatérítés kimenete *Cikk*, akkor a rendszer a vevői visszatérítésekhez létrehoz egy-egy értékesítési rendelést, és a szállítói visszatérítésekhez létrehoz egy-egy beszerzési rendelést. Ezek a rendelések a céltranzakciókon keresztül tekinthetők meg. Másik lehetőségként, ha a kifizetés a Kötelezettségek használatára van beállítva, a vevőn beállított szállítóhoz szállítói számla jön létre a vevői visszatérítések esetében.
 
 A visszatérítés-kezelési ajánlathoz társított naplóbejegyzések áttekintéshez kövesse az alábbi lépéseket.
 
 1. Nyissa meg a megfelelő [visszatérítési ajánlatok listaoldalát](rebate-management-deals.md) a kezelni kívánt ajánlattípushoz.
 1. Válassza ki azt az ügyletet, amelynek a naplóbejegyzéseit meg kívánja vizsgálni.
-1. A Művelet panelen, a **Visszatérítés-kezelési ajánlatok** lap **Tranzakciók** csoportjában válassza a **Tranzakciók** vagy **Visszatérítési tranzakciók** lehetőséget a megtekinteni kívánt tranzakciók típusától függően.
+1. A Művelet panelen, a **Visszatérítés-kezelési ajánlatok** lap **Tranzakciók** csoportjában válassza a **Tranzakciók** vagy **Garanciatranzakciók** lehetőséget a megtekinteni kívánt tranzakciók típusától függően.
 1. Győződjön meg arról, hogy a **Megjelenítés** mező *Összes* vagy *Feladott* értékre van állítva.
 1. Keresse meg és jelölje ki a ellenőrizni kívánt tranzakciógyűjteményt, majd a Művelet panelen válassza az alábbi gombok egyikét. (Ezek a gombok csak akkor érhetők el, ha a kiválasztott tranzakciógyűjteményhez megfelelő feladások léteznek.)
 
     - **Céltranzakciók** – A kijelölt ajánlat által létrehozott releváns naplók és egyéb típusú dokumentumok áttekintése.
-    - **Cikkek** – A kijelölt ajánlat által létrehozott releváns cikkek áttekintése.
+    - **Cikkek** – A kiválasztott ügylet által generált releváns értékesítési megrendelések vagy beszerzési megbízások áttekintése.
 
 1. Megjelenik a megfelelő naplók, dokumentumok vagy cikkek listája. Ha további információt szeretne megtekinteni bármely naplóról, dokumentumról vagy cikkről, jelölje ki a sorát, majd a Művelet panelen válassza a **Részletek megtekintése** lehetőséget.

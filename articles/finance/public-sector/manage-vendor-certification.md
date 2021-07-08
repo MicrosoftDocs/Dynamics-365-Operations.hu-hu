@@ -10,17 +10,16 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2021-02-09
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 06f4a0feda82d20e5ec01fd75e4bb8a597a6d09b
-ms.sourcegitcommit: 5916ea2a94ab9af7aac21f0fc44e194d5ce82917
+ms.openlocfilehash: b6e4194a4b3463476a32679ff11b35affc131faa
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "5989016"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6270504"
 ---
 # <a name="maintain-vendor-certification"></a>Szállítói minősítés karbantartása
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Ez a témakör azokat a lépéseket ismerteti, amelyek segítségével a szállítói a **Szállítói együttműködési munkaterületen** karbantarthatják a tanúsítványukat. A minősítési példák között lehet Női üzleti vállalkozás (WBE) vagy Energia- és környezettervezésben vezető (LEED) vállalat. A szállítóknak meg kell adniuk a minősítési információkat a **Szállítói adatok** munkaterületen. Ezután a szállítók kiválasztják a **További részleteket**, majd a **Minősítéseket**.
 

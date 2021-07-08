@@ -1464,6 +1464,8 @@
                       href: localizations/rcs-globalization-feature.md?toc=/dynamics365/finance/toc.json
                     - name: 'Hozzon létre ER-konfigurációkat a Regulatory Configuration Service szolgáltatásban, és töltse fel őket a globális adattárba'
                       href: localizations/rcs-global-repo-upload.md?toc=/dynamics365/finance/toc.json
+                    - name: Regulatory Configuration Service – RCS-környezet törlése
+                      href: localizations/rcs-delete-environment.md
                     - name: Regulatory Configuration Service – Lifecycle Services-tárhely elavulása
                       href: localizations/rcs-lcs-repo-dep-faq.md?toc=/dynamics365/finance/toc.json
                 - name: Elektronikus számlázás
@@ -1524,6 +1526,10 @@
                               href: localizations/emea-nl-vat-declaration-netherlands.md
                             - name: EU értékesítési lista
                               href: localizations/emea-nl-eu-sales-list.md
+                        - name: Egyesült királyságbeli jelentés
+                          items:
+                            - name: Felkészülés az MTD-vel való áfaintegrációra
+                              href: localizations/emea-gbr-mtd-vat-integration.md
             - name: Jogszabálykövetési frissítések
               href: localizations/regulatory-updates.md
             - name: Ausztrália
@@ -3176,6 +3182,8 @@
                       href: localizations/rus-rated-expenses-registers.md
                     - name: Kötelezettségek adónyilvántartásai és a tartozások leírásai
                       href: localizations/rus-accounts-payable-debt-tax-registers-and-debt-write-offs.md
+                    - name: Behajthatatlan tartozási tartalékok a kinnlevőségek között
+                      href: localizations/rus-bad-debts.md
             - name: Szaúd-Arábia
               items:
                 - name: Szaúd-Arábia – áttekintés
@@ -3292,11 +3300,9 @@
                       href: localizations/tasks/gb-00002-reverse-charge-vat-item-groups.md
                     - name: A fordított áfafizetésnél alkalmazott áfacsoportok beállítása
                       href: localizations/tasks/gb-00002-sales-tax-groups-reverse-charge-vat.md
-                - name: Adó digitalizálása az áfára vonatkozóan
-                  href: localizations/emea-gbr-mtd-vat-integration.md
                 - name: Kifizetési gyakorlatok statisztikai adataival kapcsolatos jelentés
                   href: localizations/emea-gbr-statistics-on-payment-practices-report.md
-            - name: Amerikai Egyesült Államok
+            - name: Egyesült Államok
               items:
                 - name: Egyesült Államok – áttekintés
                   href: localizations/united-states.md
@@ -3665,6 +3671,12 @@
               items:
                 - name: Képlet nyelve
                   href: ../fin-ops-core/dev-itpro/analytics/er-formula-language.md?toc=/dynamics365/finance/toc.json
+                - name: Az ER-képletek által támogatott adattípusok
+                  items:
+                    - name: Primitív adattípusok
+                      href: ../fin-ops-core/dev-itpro/analytics/er-formula-supported-data-types-primitive.md?toc=/dynamics365/finance/toc.json
+                    - name: Összetett adattípusok
+                      href: ../fin-ops-core/dev-itpro/analytics/er-formula-supported-data-types-composite.md?toc=/dynamics365/finance/toc.json
                 - name: Függvények
                   items:
                     - name: Tároló
@@ -3929,12 +3941,12 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-text.md?toc=/dynamics365/finance/toc.json
             - name: ER-formátumok tervezése kimenő dokumentumok különböző formátumokban történő létrehozásához
               items:
+                - name: Az OPENXML formátumban létrejövő jelentésekre vonatkozó konfigurációk tervezése
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/dynamics365/finance/toc.json
                 - name: Konfigurációk tervezése a kimenő dokumentumok Excel-formátumban történő létrehozásához
                   items:
                     - name: Tervezzen konfigurációkat a kimenő dokumentumok Excel-formátumban történő létrehozásához
                       href: ../fin-ops-core/dev-itpro/analytics/er-fillable-excel.md?toc=/dynamics365/finance/toc.json
-                    - name: Példa a jelentések OPENXML-formátumban történő létrehozásához
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/dynamics365/finance/toc.json
                     - name: ER (elektronikus jelentés) formátum módosítása Excel-sablonok újbóli alkalmazásával
                       href: ../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/dynamics365/finance/toc.json
                     - name: Oszlopok dinamikus hozzáadása Excel-jelentésekhez vízszintesen bővíthető tartományokként
@@ -4211,12 +4223,16 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-11.md?toc=/dynamics365/finance/toc.json
                     - name: 10.0.17-es alkalmazásfrissítés
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-17.md?toc=/dynamics365/finance/toc.json
+                    - name: 10.0.19-es alkalmazásfrissítés
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-19.md?toc=/dynamics365/finance/toc.json
                 - name: Egyéni tárhely meghatározása a létrehozott dokumentumoknak
                   items:
                     - name: 'Feliratkozás egy eseményre, hogy választ kérjen a feliratkozáskezelőtől'
                       href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/dynamics365/finance/toc.json
                     - name: ER-cél létrehozásának delegálása egyéni célgyárba
                       href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-files.md?toc=/dynamics365/finance/toc.json
+                    - name: Egyéni célhely megvalósítása a létrehozott dokumentumoknak
+                      href: ../fin-ops-core/dev-itpro/analytics/er-custom-file-destination.md?toc=/dynamics365/finance/toc.json
                 - name: A USER INPUT PARAMETER típusú adatforrásértékek kezdeményezése forráskódból
                   href: ../fin-ops-core/dev-itpro/analytics/er-initiate-uip-data-source-value-from-source-code.md?toc=/dynamics365/finance/toc.json
         - name: Mobilalkalmazás

@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: c9e1cadae97bd8f0dea270deaa1a8e09bb28eb4b
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: ee5a195b3d2881ff70fb1f0d4063ed681e874648
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020483"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6271077"
 ---
 # <a name="rebate-management-groups"></a>Visszatérítés-kezelési csoportok
 
 [!include [banner](../includes/banner.md)]
 
-A visszatérítési és levonási számításokat a csoportok vezérelhetik. A visszatérítés-kezelési csoportok vevők, szállítók és cikkek számára is létrehozhatók. Ezek főrekordhoz csatolhatók.
+A visszatérítés-kezelési számításokat vezérelhetők csoportok szerint. A visszatérítés-kezelési csoportok vevők, szállítók és cikkek számára is létrehozhatók. Ezek főrekordhoz csatolhatók.
 
 ## <a name="rebate-management-customer-groups"></a>Visszatérítés-kezelési vevőcsoportok
 
@@ -49,10 +49,9 @@ A kijelölt csoport vevőinek megtekintéséhez, hozzáadásához vagy eltávol�
 1. Lépjen a **Visszatérítés-kezelés \> Visszatérítés-kezelési csoportok beállítása \> Vevőcsoportok** lehetőségre.
 1. Jelölje ki a kezelni kívánt csoportot.
 1. A Műveleti ablaktáblán válassza ki a **Vevők** lehetőséget. Megjelenik a **Visszatérítés-kezelési csoportok** oldal, és megjelenik azoknak a vevőknek a listája, akik már tagjai a kiválasztott csoportnak.
-1. Ha új vevőt szeretne hozzáadni a csoporthoz, a Művelet panelen válassza az **Új** lehetőséget egy új sor rácshoz való hozzáadásához. Ezután új sorhoz állítsa be a következő mezőket:
+1. Ha új vevőt szeretne hozzáadni a csoporthoz, a Művelet panelen válassza az **Új** lehetőséget egy új sor rácshoz való hozzáadásához. Ezután az új sorhoz állítsa be a következő mezőt:
 
     - **Vevői számla** – Válassza ki a vevői számla azonosítóját.
-    - **Név** – Adja meg a vevő nevét és/vagy leírását.
 
 1. Ha el szeretne távolítani egy vevőt a csoportból, jelölje ki a vevőt, majd válassza a Művelet ablaktáblán a **Törlés** lehetőséget.
 
@@ -61,10 +60,9 @@ A kijelölt vevő csoport-hozzárendeléseinek megtekintéséhez, hozzáadásáh
 1. Nyissa meg a **Kinnlevőségek \> Vevők \> Minden vevő** lehetőséget.
 1. Válassza ki azt a vevőt, akit kezelni szeretne.
 1. A Művelet ablaktábla **Vevő** lapjának **Visszatérítés-kezelés** csoportjában válassza a **Visszatérítés-kezelési csoportok** elemet. Megjelenik a **Visszatérítés-kezelési csoportok** oldal, és megjelenik azoknak a csoportoknak a listája, amelyekhez a kiválasztott vevő már tartozik.
-1. Ha a vevőt új csoporthoz szeretné hozzáadni, a Művelet panelen válassza az **Új** lehetőséget egy új sor rácshoz való hozzáadásához. Ezután új sorhoz állítsa be a következő mezőket:
+1. Ha a vevőt új csoporthoz szeretné hozzáadni, a Művelet panelen válassza az **Új** lehetőséget egy új sor rácshoz való hozzáadásához. Ezután az új sorhoz állítsa be a következő mezőt:
 
     - **Visszatérítés-kezelési csoport** – Válassza ki azt a csoportot, amelyhez hozzá kívánja adnia a vevőt.
-    - **Leírás** – Adja meg a csoport leírását (például annak magyarázatához, hogy a vevő miért tagja).
 
 1. Ha el szeretne távolítani egy vevőt a csoportból, jelölje ki a csoportot, majd válassza a Művelet ablaktáblán a **Törlés** lehetőséget.
 
@@ -88,10 +86,9 @@ A kijelölt csoport szállítóinak megtekintéséhez, hozzáadásához vagy elt
 1. Lépjen a **Visszatérítés-kezelés \> Visszatérítés-kezelési csoportok beállítása \> Szállítócsoportok** lehetőségre.
 1. Jelölje ki a kezelni kívánt csoportot.
 1. A Művelet panelen válassza a **Szállítók** lehetőséget. Megjelenik a **Visszatérítés-kezelési csoportok** oldal, és megjelenik azoknak a szállítóknak a listája, akik már tagjai a kiválasztott csoportnak.
-1. Ha az új szállítót a csoporthoz szeretné hozzáadni, a Művelet panelen válassza az **Új** lehetőséget egy új sor rácshoz való hozzáadásához. Ezután új sorhoz állítsa be a következő mezőket:
+1. Ha az új szállítót a csoporthoz szeretné hozzáadni, a Művelet panelen válassza az **Új** lehetőséget egy új sor rácshoz való hozzáadásához. Ezután az új sorhoz állítsa be a következő mezőt:
 
     - **Szállítói számla** – Válassza ki a szállítói számla azonosítóját.
-    - **Név** – Adja meg a szállító nevét és/vagy leírását.
 
 1. Ha el szeretne távolítani egy szállítót a csoportból, jelölje ki a szállítót, majd válassza a Művelet ablaktáblán a **Törlés** lehetőséget.
 
@@ -100,10 +97,9 @@ A kijelölt szállító csoport-hozzárendeléseinek megtekintéséhez, hozzáad
 1. Nyissa meg a következőt: **Kötelezettségek \> Szállítók \> Minden szállító**.
 1. Válassza ki azt a szállítót, akit kezelni szeretne.
 1. A Művelet ablaktábla **Szállító** lapjának **Visszatérítés-kezelés** csoportjában válassza a **Visszatérítés-kezelési csoportok** elemet. Megjelenik a **Visszatérítés-kezelési csoportok** oldal, és megjelenik azoknak a csoportoknak a listája, amelyekhez a kiválasztott szállító már tartozik.
-1. Ha a szállítót új csoporthoz szeretné hozzáadni, a Művelet panelen válassza az **Új** lehetőséget egy új sor rácshoz való hozzáadásához. Ezután új sorhoz állítsa be a következő mezőket:
+1. Ha a szállítót új csoporthoz szeretné hozzáadni, a Művelet panelen válassza az **Új** lehetőséget egy új sor rácshoz való hozzáadásához. Ezután az új sorhoz állítsa be a következő mezőt:
 
     - **Visszatérítés-kezelési csoport** – Válassza ki azt a csoportot, amelyhez hozzá kívánja adnia a szállítót.
-    - **Leírás** – Adja meg a csoport leírását (például annak magyarázatához, hogy a szállító miért tagja).
 
 1. Ha el szeretne távolítani egy szállítót a csoportból, jelölje ki a csoportot, majd válassza a Művelet ablaktáblán a **Törlés** lehetőséget.
 
@@ -127,10 +123,9 @@ A kijelölt csoport cikkeinek megtekintéséhez, hozzáadásához vagy eltávol�
 1. Lépjen a **Visszatérítés-kezelés \> Visszatérítés-kezelési csoportok beállítása \> Cikkcsoportok** lehetőségre.
 1. Jelölje ki a kezelni kívánt csoportot.
 1. A Művelet ablaktáblán kattintson a **Cikkek** elemre. Megjelenik a **Visszatérítés-kezelési csoportok** oldal, és megjelenik azoknak a cikkeknek a listája, amelyek már tagjai a kiválasztott csoportnak.
-1. Ha új cikket szeretne hozzáadni a csoporthoz, a Művelet panelen válassza az **Új** lehetőséget egy új sor rácshoz való hozzáadásához. Ezután új sorhoz állítsa be a következő mezőket:
+1. Ha új cikket szeretne hozzáadni a csoporthoz, a Művelet panelen válassza az **Új** lehetőséget egy új sor rácshoz való hozzáadásához. Ezután az új sorhoz állítsa be a következő mezőt:
 
     - **Cikkszámla** – Válassza ki a cikkszámla azonosítóját.
-    - **Terméknév** – Adja meg a cikk nevét és/vagy leírását.
 
 1. Ha el szeretne távolítani egy cikket a csoportból, jelölje ki a cikket, majd válassza a Művelet ablaktáblán a **Törlés** lehetőséget.
 
@@ -139,10 +134,9 @@ A kijelölt cikk csoport-hozzárendeléseinek megtekintéséhez, hozzáadásáho
 1. Kattintson a **Termékinformációk kezelése \> Termékek \> Kiadott termékek** lehetőségre.
 1. Válassza ki azt a cikket, amelyet kezelni szeretne.
 1. A Művelet ablaktábla **Termék** lapjának **Visszatérítés-kezelés** csoportjában válassza a **Visszatérítés-kezelési csoportok** elemet. Megjelenik a **Visszatérítés-kezelési csoportok** oldal, és megjelenik azoknak a csoportoknak a listája, amelyekhez a kiválasztott cikk már tartozik.
-1. Ha a cikket új csoporthoz szeretné hozzáadni, a Művelet panelen válassza az **Új** lehetőséget egy új sor rácshoz való hozzáadásához. Ezután új sorhoz állítsa be a következő mezőket:
+1. Ha a cikket új csoporthoz szeretné hozzáadni, a Művelet panelen válassza az **Új** lehetőséget egy új sor rácshoz való hozzáadásához. Ezután az új sorhoz állítsa be a következő mezőt:
 
     - **Visszatérítés-kezelési csoport** – Válassza ki azt a csoportot, amelyhez hozzá kívánja adnia a cikket.
-    - **Leírás** – Adja meg a csoport leírását (például annak magyarázatához, hogy a cikk miért tagja).
 
 1. Ha el szeretne távolítani egy cikket a csoportból, jelölje ki a csoportot, majd válassza a Művelet ablaktáblán a **Törlés** lehetőséget.
 
