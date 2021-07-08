@@ -78,8 +78,6 @@
                       href: get-started/whats-new-scm-10-0-19.md
                     - name: Supply Chain Management 10.0.18 (2021. május)
                       href: get-started/whats-new-scm-10-0-18.md
-                    - name: Supply Chain Management 10.0.17 (2021. április)
-                      href: get-started/whats-new-scm-10-0-17.md
                 - name: Eltávolított vagy elavult funkciók
                   items:
                     - name: Eltávolított vagy elavult funkciók a kezdőlapon
@@ -603,11 +601,25 @@
               href: ../fin-ops-core/dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/dynamics365/supply-chain/toc.json
             - name: Költségellenőrzési munkaterület alkalmazása Finance and Operations mobilalkalmazásban
               href: ../finance/cost-accounting/cost-controlling-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+        - name: Globális készletkönyvelés
+          items:
+            - name: Globális készletkönyvelési kezdőlapja
+              href: global-inventory-accounting/global-inventory-accounting-home.md
+            - name: A globális készletkönyvelés első lépései
+              href: global-inventory-accounting/get-started-with-gia.md
+            - name: A globális készletkönyvelés által támogatott üzleti dokumentumok
+              href: global-inventory-accounting/business-documents-supported.md
+            - name: A Power BI engedélyezése a globális készletkönyveléshez
+              href: global-inventory-accounting/enable-power-bi-for-gia.md
+            - name: Szabályok
+              href: global-inventory-accounting/conventions.md
+            - name: Globális készletkönyvelési főkönyv
+              href: global-inventory-accounting/global-inventory-accounting-ledger.md
         - name: Költségkezelés
           items:
-            - name: "Költségkezelés\_kezdőlapja"
+            - name: Költségkezelés kezdőlapja
               href: cost-management/cost-management-home-page.md
-            - name: Az elszámolóköltségek előfeltételei
+            - name: Az elszámolóárak előfeltételei
               items:
                 - name: Az elszámolóár előfeltételeinek áttekintése
                   href: cost-management/prerequisites-standard-costs.md
@@ -873,6 +885,12 @@
               items:
                 - name: Képlet nyelve
                   href: ../fin-ops-core/dev-itpro/analytics/er-formula-language.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Az ER-képletek által támogatott adattípusok
+                  items:
+                    - name: Primitív adattípusok
+                      href: ../fin-ops-core/dev-itpro/analytics/er-formula-supported-data-types-primitive.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Összetett adattípusok
+                      href: ../fin-ops-core/dev-itpro/analytics/er-formula-supported-data-types-composite.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Függvények
                   items:
                     - name: Tároló
@@ -1417,12 +1435,16 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-11.md?toc=/dynamics365/supply-chain/toc.json
                     - name: 10.0.17-es alkalmazásfrissítés
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-17.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: 10.0.19-es alkalmazásfrissítés
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-19.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Egyéni tárhely meghatározása a létrehozott dokumentumoknak
                   items:
                     - name: 'Feliratkozás egy eseményre, hogy választ kérjen a feliratkozáskezelőtől'
                       href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/dynamics365/supply-chain/toc.json
                     - name: ER-cél létrehozásának delegálása egyéni célgyárba
                       href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-files.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Egyéni célhely megvalósítása a létrehozott dokumentumoknak
+                  href: ../fin-ops-core/dev-itpro/analytics/er-custom-file-destination.md?toc=/dynamics365/supply-chain/toc.json
                 - name: A USER INPUT PARAMETER típusú adatforrásértékek kezdeményezése forráskódból
                   href: ../fin-ops-core/dev-itpro/analytics/er-initiate-uip-data-source-value-from-source-code.md?toc=/dynamics365/supply-chain/toc.json
         - name: Készletgazdálkodás
@@ -1593,6 +1615,8 @@
                   href: master-planning/planning-optimization/purchase-trade-agreement.md
                 - name: Biztonsági határok
                   href: master-planning/planning-optimization/safety-margins.md
+                - name: Késés tűréshatára (negatív napok)
+                  href: master-planning/planning-optimization/delay-tolerance.md
                 - name: Beszerzési igénylések
                   href: master-planning/planning-optimization/purchase-requisitions.md
                 - name: Termeléstervezés
@@ -1603,6 +1627,8 @@
                   href: master-planning/planning-optimization/Intercompany-planning.md
                 - name: Bizonyos termékéletciklus-állapotokkal rendelkező termékek kizárása
                   href: master-planning/planning-optimization/product-lifecycle-state.md
+                - name: Feltöltési módok és mennyiség módosítása
+                  href: master-planning/planning-optimization/replenishment-methods-quantity-modification.md
                 - name: Fedezeti időkorlátok
                   href: master-planning/planning-optimization/coverage-time-fence.md
                 - name: Tervezett rendelések jóváhagyása
@@ -3047,6 +3073,8 @@
                   href: warehousing/tasks/register-items-advanced-warehousing.md
                 - name: 'Cikkek regisztrálása alapvető raktározásra engedélyezett cikkre, cikkérkeztetési napló használatával'
                   href: warehousing/tasks/register-items-basic-warehousing.md
+                - name: Bejövő ASN-ek importálása a V2 adatentitáson keresztül
+                  href: warehousing/import-asn-v2-data-entity.md
                 - name: Termékek áttárolása a fogadó raktárból az üzletekbe
                   href: warehousing/tasks/cross-dock-products-receiving-warehouse-stores.md
                 - name: Helyutasítás beállítása beszerzési rendelés eltárolásához
@@ -3215,6 +3243,8 @@
                       href: warehousing/partial-location-cycle-counting.md
                     - name: Részleges ciklikus leltározásos helyfolyamat meghatározása
                       href: warehousing/tasks/define-partial-location-cycle-counting-process.md
+                    - name: Ciklikus leltározás – példa forgatókönyvek
+                      href: warehousing/cycle-counting-scenarios.md
                     - name: Raktárkezelés – készleten lévő elemek törlési feladata
                       href: warehousing/onhand-cleanup.md
                     - name: Készletnaplók
@@ -3241,6 +3271,52 @@
                       href: warehousing/mhax.md
                     - name: Raktári munka – hibaelhárítás
                       href: warehousing/troubleshoot-warehouse-work.md
+            - name: A raktáralkalmazás
+              items:
+                - name: 'Mobileszközök telepítése, beállítása és használata'
+                  items:
+                    - name: A Warehouse Management mobilalkalmazás újdonságai vagy változásai
+                      href: warehousing/whats-new-wma.md
+                    - name: A Raktárkezelés mobilalkalmazás telepítése és csatlakoztatása
+                      href: warehousing/install-configure-warehouse-management-app.md
+                    - name: A raktározási alkalmazás telepítése és csatlakoztatása
+                      href: warehousing/install-configure-warehousing-app.md
+                    - name: Vonalkódok beolvasása a Raktárkezelés mobilalkalmazás kamerája segítségével
+                      href: warehousing/scan-bar-codes-using-a-camera.md
+                    - name: Raktárkezelés mobilalkalmazás kapcsolódási problémáinak hibaelhárítása
+                      href: warehousing/troubleshoot-warehouse-app-connection.md
+                - name: Mobileszközök mezőinek és menüinek beállítása
+                  items:
+                    - name: A Warehouse Management mobilalkalmazás mezőinek konfigurálása
+                      href: warehousing/configure-app-field-names-priorities-warehouse.md
+                    - name: Mobileszközök beállítása raktári munkához
+                      href: warehousing/configure-mobile-devices-warehouse.md
+                    - name: Azonosítótábla-bevételezés a Warehouse Management mobilalkalmazás használatával
+                      href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
+                    - name: Mobileszköz-menüelem beállítása a beszerzési rendelés munkájának befejezéséhez
+                      href: warehousing/tasks/set-up-mobile-device-menu.md
+                    - name: Mobileszköz-menüelem beállítása a bevételezett elemek regisztrálásához
+                      href: warehousing/tasks/set-up-mobile-device-menu-item-register-received-items.md
+                    - name: Mobileszköz-menüelem beállítása kitárolási sor áttekintésének biztosításához
+                      href: warehousing/pick-line-overview.md
+                    - name: Menüelem létrehozása mobileszközhöz azonosítótábla-konszolidáláshoz
+                      href: warehousing/tasks/create-mobile-device-license-plate-consolidation.md
+                    - name: Vegyes azonosítótábla fogadása a mobileszközön
+                      href: warehousing/mixed-license-plate-receiving.md
+                    - name: Raktáron belüli régebbi kötegek megjelenítésének konfigurálása mobileszközön
+                      href: warehousing/display-older-batches-within-warehouses.md
+                    - name: Legrégebbi köteg kitárolása mobileszközön
+                      href: warehousing/pick-oldest-batch.md
+                - name: Mobileszköz felhasználói beállításai
+                  href: warehousing/mobile-device-user-settings.md
+                - name: Raktározási alkalmazás eseményeinek feldolgozása
+                  href: warehousing/warehouse-app-events.md
+                - name: A raktáralkalmazás testreszabása
+                  items:
+                    - name: Folyamatútmutató-keretrendszer
+                      href: warehousing/process-guide-framework.md
+                    - name: Lépésikonok és -címek hozzárendelése
+                      href: warehousing/step-icons-titles.md
             - name: Raktár beállítása
               items:
                 - name: Raktár konfigurálása
@@ -3277,8 +3353,12 @@
                           href: warehousing/wave-execution-notifications.md
                         - name: Hullámcímke nyomtatása
                           href: warehousing/configure-wave-label-printing.md
+                        - name: Hullámcímke-nyomtatás ütemezése hullám közben
+                          href: warehousing/configure-task-based-wave-label-printing.md
                         - name: Tárolóra bontás
                           href: warehousing/wave-containerization.md
+                        - name: Tároló csomagolási stratégiái
+                          href: warehousing/container-packing-strategy-overview.md
                     - name: Szállítmányok automatikus frissítése
                       href: warehousing/auto-update-shipment.md
                     - name: Helyprofil létrehozása
@@ -3309,44 +3389,6 @@
                       href: warehousing/transfer-orders-warehouse.md
                     - name: Raktár konfigurálása – hibaelhárítás
                       href: warehousing/troubleshoot-warehouse-configuration.md
-                - name: A Raktárkezelés mobilalkalmazás telepítése és konfigurálása
-                  items:
-                    - name: A Raktárkezelés mobilalkalmazás telepítése és csatlakoztatása
-                      href: warehousing/install-configure-warehouse-management-app.md
-                    - name: Mobileszköz felhasználói beállításai
-                      href: warehousing/mobile-device-user-settings.md
-                    - name: A raktározási alkalmazás telepítése és csatlakoztatása
-                      href: warehousing/install-configure-warehousing-app.md
-                    - name: Vonalkódok beolvasása a Raktárkezelés mobilalkalmazás kamerája segítségével
-                      href: warehousing/scan-bar-codes-using-a-camera.md
-                    - name: A Warehouse Management mobilalkalmazás mezőinek konfigurálása
-                      href: warehousing/configure-app-field-names-priorities-warehouse.md
-                    - name: Mobileszközök beállítása raktári munkához
-                      href: warehousing/configure-mobile-devices-warehouse.md
-                    - name: Lépésikonok és -címek hozzárendelése
-                      href: warehousing/step-icons-titles.md
-                    - name: Raktározási alkalmazás eseményeinek feldolgozása
-                      href: warehousing/warehouse-app-events.md
-                    - name: Azonosítótábla-bevételezés a Warehouse Management mobilalkalmazás használatával
-                      href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
-                    - name: Mobileszköz-menüelem beállítása a beszerzési rendelés munkájának befejezéséhez
-                      href: warehousing/tasks/set-up-mobile-device-menu.md
-                    - name: Mobileszköz-menüelem beállítása a bevételezett elemek regisztrálásához
-                      href: warehousing/tasks/set-up-mobile-device-menu-item-register-received-items.md
-                    - name: Mobileszköz-menüelem beállítása kitárolási sor áttekintésének biztosításához
-                      href: warehousing/pick-line-overview.md
-                    - name: Menüelem létrehozása mobileszközhöz azonosítótábla-konszolidáláshoz
-                      href: warehousing/tasks/create-mobile-device-license-plate-consolidation.md
-                    - name: Vegyes azonosítótábla fogadása a mobileszközön
-                      href: warehousing/mixed-license-plate-receiving.md
-                    - name: Raktáron belüli régebbi kötegek megjelenítésének konfigurálása mobileszközön
-                      href: warehousing/display-older-batches-within-warehouses.md
-                    - name: Legrégebbi köteg kitárolása mobileszközön
-                      href: warehousing/pick-oldest-batch.md
-                    - name: Folyamatútmutató-keretrendszer
-                      href: warehousing/process-guide-framework.md
-                    - name: Raktárkezelés mobilalkalmazás kapcsolódási problémáinak hibaelhárítása
-                      href: warehousing/troubleshoot-warehouse-app-connection.md
                 - name: Frissítés és áttelepítés
                   items:
                     - name: A raktárkezelési folyamatok frissítése Microsoft Dynamics AX 2012-ről Finance and Operations szolgáltatásra
@@ -3393,6 +3435,22 @@
                   href: troubleshooting/inventory/while-splitting-the.md
             - name: Alaptervezés
               items:
+                - name: Hiba jelenik meg a beépített alaptervezési motor futtatásakor
+                  href: troubleshooting/planning/deprecated-master-planning-error.md
+                - name: A cikkhez nem tartozhat anyagjegyzék vagy képlet
+                  href: troubleshooting/planning/item-cannot-have-bom-formula.md
+                - name: Az alapterv paraméterei nem léteznek
+                  href: troubleshooting/planning/no-parameters-for-master-plan.md
+                - name: A tervezett termelési rendelést megerősítés előtt ütemezni kell
+                  href: troubleshooting/planning/planned-order-must-be-scheduled.md
+                - name: A terméket várakoztatják tranzakciók esetén
+                  href: troubleshooting/planning/product-is-on-hold.md
+                - name: A választott receptúraszám nincs jóváhagyva kötegrendeléshez.
+                  href: troubleshooting/planning/selected-formula-not-approved.md
+                - name: A szállítókód nincs engedélyezve egy adott termékhez és dátumhoz
+                  href: troubleshooting/planning/vendor-code-not-authorized.md
+                - name: A tervezett rendelések megerősítésénél nincs megadva szállító
+                  href: troubleshooting/planning/vendor-not-specified.md
                 - name: 'A közvetlenül származtatott, megerősített megrendeléseket egy felülvizsgálat alatt álló munkafolyamat dolgozza fel'
                   href: troubleshooting/planning/firmed-directly-deri.md
                 - name: Az alaptervezés cikkei nem szűrhetők a vonatkozó fedezetcsoport-értékeik szerint
@@ -3451,6 +3509,20 @@
                   href: troubleshooting/transportation/reconciliation-reaso.md
             - name: Raktárkezelés
               items:
+                - name: A törölt terméknyugták nem frissítik a tranzakciók állapotát regisztráltra
+                  href: troubleshooting/warehousing/canceled-product-receipts.md
+                - name: A tényleges frissített mennyiség tizedesre kerekítése helytelen
+                  href: troubleshooting/warehousing/decimal-rounding-of-quantity.md
+                - name: A tényleges fennmaradó mennyiség az egységben nem lehet nulla
+                  href: troubleshooting/warehousing/physical-remaining-q.md
+                - name: A kitárolt mennyiség nem elegendő a szállítólevél létrehozása során
+                  href: troubleshooting/warehousing/picked-quantity-is-n.md
+                - name: A mennyiség meghaladja a szállítási többlet százalékos mennyiségét a szállítólevél létrehozása során
+                  href: troubleshooting/warehousing/quantity-exceeds-over-pack-slip.md
+                - name: A frissíteni próbált mennyiség meghaladja a bevételezett/szállított mennyiséget
+                  href: troubleshooting/warehousing/quantity-exceeds-rec-del.md
+                - name: A mennyiség meghaladja a szállítási hiány százalékos mennyiségét a szállítólevél létrehozása során
+                  href: troubleshooting/warehousing/quantity-exceeds-under-pack-slip.md
                 - name: Hiba merül fel a hely kiválasztásakor a kitárolási lista regisztrációja során
                   href: troubleshooting/warehousing/error-cannot-update.md
                 - name: A csomagolóállomáson nem jelennek meg a termékekkel kapcsolatos megjegyzések

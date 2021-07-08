@@ -100,8 +100,6 @@
                       href: get-started/whats-new-commerce-10-0-19.md
                     - name: Commerce 10.0.18 (2021. május)
                       href: get-started/whats-new-commerce-10-0-18.md
-                    - name: Commerce 10.0.17 (2021. április)
-                      href: get-started/whats-new-commerce-10-0-17.md
                 - name: Eltávolított vagy elavult funkciók
                   items:
                     - name: Eltávolított vagy elavult funkciók a kezdőlapon
@@ -244,7 +242,7 @@
                   href: arch-auth-flow.md
                 - name: Dynamics 365 Commerce-összetevők verziószámozási követelményei
                   href: arch-component-versioning.md
-                - name: Nem központosított Commerce-motorarchitektúra
+                - name: Nem központosított Commerce-architektúra
                   href: dev-itpro/retail-server-architecture.md
                 - name: Válasszon áruházi topológiát
                   href: dev-itpro/retail-in-store-topology.md
@@ -1248,6 +1246,16 @@
                   href: localizations/latam-bra-commerce-localization.md
                 - name: A Commerce honosításának beállítása és telepítése Brazíliára vonatkozóan
                   href: localizations/latam-bra-deployment.md
+                - name: 'A Commerce pénztárban lévő NFC-e pénzügyi dokumentum-funkciók, Brazíliára vonatkozóan'
+                  href: localizations/latam-bra-nfce.md
+                - name: 'Ügyfélinformációk kezelése a pénztárban, Brazíliára vonatkozóan'
+                  href: localizations/latam-bra-customer-information.md
+                - name: A Commerce-pénztárban lévő NFC-e dokumentumok törlése és visszaküldése Brazíliára vonatkozóan
+                  href: localizations/latam-bra-nfce-cancel-return.md
+                - name: Az offline készenléti módban kiadott NFC-e dokumentumok elhalasztott regisztrációja
+                  href: localizations/latam-bra-nfce-contingency-mode.md
+                - name: 'Brazil pénzügyi dokumentumok közzététele kiskereskedelmi kimutatások útján, a Commerce Headquartersben'
+                  href: localizations/latam-bra-retail-statements.md
             - name: Kelet-Európa
               items:
                 - name: Általános
@@ -1458,6 +1466,12 @@
               items:
                 - name: Képlet nyelve
                   href: ../fin-ops-core/dev-itpro/analytics/er-formula-language.md?toc=/dynamics365/commerce/toc.json
+                - name: Az ER-képletek által támogatott adattípusok
+                  items:
+                    - name: Primitív adattípusok
+                      href: ../fin-ops-core/dev-itpro/analytics/er-formula-supported-data-types-primitive.md?toc=/dynamics365/commerce/toc.json
+                    - name: Összetett adattípusok
+                      href: ../fin-ops-core/dev-itpro/analytics/er-formula-supported-data-types-composite.md?toc=/dynamics365/commerce/toc.json
                 - name: Függvények
                   items:
                     - name: Tároló
@@ -2002,12 +2016,16 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-11.md?toc=/dynamics365/commerce/toc.json
                     - name: 10.0.17-es alkalmazásfrissítés
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-17.md?toc=/dynamics365/commerce/toc.json
+                    - name: 10.0.19-es alkalmazásfrissítés
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-19.md?toc=/dynamics365/commerce/toc.json
                 - name: Egyéni tárhely meghatározása a létrehozott dokumentumoknak
                   items:
                     - name: 'Feliratkozás egy eseményre, hogy választ kérjen a feliratkozáskezelőtől'
                       href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/dynamics365/commerce/toc.json
                     - name: ER-cél létrehozásának delegálása egyéni célgyárba
                       href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-files.md?toc=/dynamics365/commerce/toc.json
+                - name: Egyéni célhely megvalósítása a létrehozott dokumentumoknak
+                  href: ../fin-ops-core/dev-itpro/analytics/er-custom-file-destination.md?toc=/dynamics365/commerce/toc.json
                 - name: A USER INPUT PARAMETER típusú adatforrásértékek kezdeményezése forráskódból
                   href: ../fin-ops-core/dev-itpro/analytics/er-initiate-uip-data-source-value-from-source-code.md?toc=/dynamics365/commerce/toc.json
         - name: Finance and Operations (Dynamics 365) mobilalkalmazás

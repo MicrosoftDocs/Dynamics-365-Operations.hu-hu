@@ -20,8 +20,6 @@
                   href: get-started/whats-new-platform-updates-10-0-19.md
                 - name: Platformfrissítések a 10.0.18-as verzióhoz (2021. május)
                   href: get-started/whats-new-platform-updates-10-0-18.md
-                - name: Platformfrissítések a 10.0.17-es verzióhoz (2021. április)
-                  href: get-started/whats-new-platform-updates-10-0-17.md
             - name: Eltávolított vagy elavult funkciók
               items:
                 - name: Eltávolított vagy elavult funkciók a kezdőlapon
@@ -278,6 +276,8 @@
               href: data-entities/finance-data-azure-data-lake.md
             - name: Entitástár elérhetővé tétele Data Lake alkalmazásként
               href: data-entities/entity-store-data-lake.md
+            - name: Adatok módosítása az Azure Data Lake-ben
+              href: data-entities/Azure-data-lake-Change-feeds.md
         - name: Adatbázis-áthelyezési műveletek
           items:
             - name: Áttekintés
