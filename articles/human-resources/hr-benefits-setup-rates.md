@@ -2,7 +2,7 @@
 title: Díjak konfigurálása
 description: A Microsoft Dynamics 365 Human Resources szolgáltatásban a mértékek határozzák meg, hogy a munkáltatók és az alkalmazottak mennyivel járulnak hozzá a juttatáshoz.
 author: andreabichsel
-ms.date: 06/22/2020
+ms.date: 06/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3d6018decbc429a5e6fbb658369d56a34439f6c7
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 2b6767df573260f32de8409e487f649bdc4779b0
+ms.sourcegitcommit: ecabf43282a3e55f1db40341aa3f3c7950b9e94c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6054980"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "6266657"
 ---
 # <a name="configure-rates"></a>Díjak konfigurálása
 
@@ -46,7 +46,7 @@ A mértékek használatával meghatározhatja, hogy az alkalmazottak és a munk�
    | **Lejárat** | A mérték záró dátuma. Az alapértelmezett érték a 2154. 12. 31., ami a „soha” megfelelője. |
    | **Szintek használata** | A juttatási mérték kiszámításához használandó szint. Szimpla szint az egyszintű juttatási mértékhez vagy dupla szint a kétszintű juttatási mértékhez. Dupla szint lehet például a nemen és az életkoron alapuló szint. |
    | **Fizetés gyakorisága** | A fizetési gyakoriság, amely meghatározza, hogy milyen gyakran történik a juttatási díj kifizetése a juttatási szolgáltató számára. Ha például a fizetés gyakorisága havonkénti, akkor a juttatási mérték havi kifizetett összeget jelent. |
-   | **Fizetési gyakoriság mértékének kerekítése** | Az árfolyam kerekítésének módja: normál vagy csonkolt. |
+   | **Fizetési gyakoriság mértékének kerekítése** | Az árfolyam kerekítési módjai: Standard, Csonkolt, Normál, Lefelé és Felkerekítés. </br></br><ul><li>**Standard** – Mindig felfelé kerekítés. A 10,611-es kerekítés például 10,62 lesz. -10,231 kerekítése -10,23-ra. </li><li>**Csonkolt** – Mindig lekerekítés. A 10,619-es kerekítés például 10,61 lesz. -10,231 kerekítése -10,24-ra. </li><li>**Normál** – Az 5-re vagy annál nagyobbra végződő tizedesértékek nulláról kerekítve lesznek. A 4-re vagy annál kisebbre végződő tizedesértékek nullára kerekítnek. A 10,615-es kerekítés például 10,62 lesz. -10,235 kerekítése -10,24-ra. 10,614 kerekítése 10,61-ra. -10,234 kerekítése -10,23-ra. </li><li>**Lefelé** – Kerekítés nullához. A 10,619-es kerekítés például 10,61 lesz. -10,231 kerekítése -10,23-ra. </li><li>**Felkerekítés** - Kerekítés nulláról. A 10,619-es kerekítés például 10,62 lesz. -10,231 kerekítése -10,24-ra. |
    | **Nem dohányzó alkalmazott összege** | A nem dohányzó alkalmazottnak a juttatásszolgáltató által adott díj összege. Ez az az összeg, amelyet a munkáltató fizet a juttatásszolgáltatónak, és a mértékbeállítás kifizetési gyakoriságán kell alapulnia. |
    | **Nem dohányzó munkáltató összege** | A nem dohányzó alkalmazottnak a juttatásszolgáltató által adott díj összege. Ez az az összeg, amelyet a munkáltató fizet a juttatásszolgáltatónak, és a mértékbeállítás kifizetési gyakoriságán kell alapulnia. |
    | **Dohányzó alkalmazott összege** | A dohányzó alkalmazottnak a juttatásszolgáltató által adott díj összege. Ez az az összeg, amelyet a munkáltató fizet a juttatásszolgáltatónak, és a mértékbeállítás kifizetési gyakoriságán kell alapulnia. |

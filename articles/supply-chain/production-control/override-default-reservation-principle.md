@@ -14,17 +14,16 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-10
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: a1b2dd204c9a507dba387b0295f3021253e02dc4
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: eb4200deed5407bef6861913cecdad7114ea68cc
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814802"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6270787"
 ---
 # <a name="override-the-default-reservation-principle-for-materials-in-production"></a>A termelésben felhasznált anyagok alapértelmezett foglalási elvének felülbírálása
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
 Az *Alapértelmezett termelési foglalás felülbírálása* funkcióval minden cikkmodellcsoporthoz alapértelmezett foglalási elvet állíthat be. Ezért automatikusan különböző foglalási elvek alkalmazhatók minden olyan cikkre, amely része egy termelési anyagjegyzéknek (BOM) vagy kötegrendelési receptúrának. Beállíthatja, hogy az egyes cikkmodellcsoportok felülbírálják-e a rendelésre beállított alapértelmezett foglalási elvet, és hogy melyik foglalási elvet használja helyette (*manuális*, *becslés*, *ütemezés*, *kiadás* vagy *indítás*).
 
@@ -37,7 +36,7 @@ Ha például nyersanyagokat vagy összetevőket használ, amelyekhez kitárolás
 A funkció használata előtt be kell azt kapcsolnia saját rendszerében. A rendszergazdák használhatják a [funkciókezelési](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) beállításokat a funkció állapotának ellenőrzéséhez, és bekapcsolásához. A **Funkció kezelése** munkaterületen a funkció a következő módon van listázva:
 
 - **Modul:** *Gyártásvezérlés*
-- **Funkció neve:** *(Előzetes verzió) Alapértelmezett termelési foglalás felülbírálása*
+- **Funkció neve:** *Alapértelmezett termelési foglalás felülbírálása*
 
 ## <a name="assign-a-production-reservation-policy-to-an-item-model-group"></a>Termelésfoglalási irányelv hozzárendelése cikkmodellcsoporthoz
 
