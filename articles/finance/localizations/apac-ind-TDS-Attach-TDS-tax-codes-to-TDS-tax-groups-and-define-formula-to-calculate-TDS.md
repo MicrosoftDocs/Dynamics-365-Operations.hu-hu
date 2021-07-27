@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: ec0d683153bd5ab731035159d32881fbdb352d70
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: f681018c27afbef8d34c88a518941d45aa9d72df
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023307"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358482"
 ---
 # <a name="attach-tds-tax-codes-to-tds-tax-groups-and-define-the-formula-for-calculating-tds"></a>TDS-adókódok csatolása a TDS-adócsoportokhoz, és a TDS kiszámításának képletének meghatározása
 
@@ -33,7 +33,7 @@ Kövesse ezeket a lépéseket a TDS-adócsoport beállításához, csatolja hozz
 
 1. Ugorjon az **Adó \> Közvetett adók \> Adóelőleg \> Adóelőlegcsoportok** elemre.
 
-    [![Adóelőleg-csoportok oldal](./media/apac-ind-TDS-29.png)](./media/apac-ind-TDS-29.png)
+    [![Adóelőleg-csoportok oldal.](./media/apac-ind-TDS-29.png)](./media/apac-ind-TDS-29.png)
 
 2. A Műveletablakban válassza az **Új** lehetőséget a TDS adóelőleg-csoportjának létrehozásához, és adja meg a szükséges adatokat.
 3. Az **Adó típusa** mezőben válassza ki a **TDS** lehetőséget.
@@ -43,7 +43,7 @@ Kövesse ezeket a lépéseket a TDS-adócsoport beállításához, csatolja hozz
 7. Jelölje be a **Mentesít** jelölőnégyzetet, ha meg akarja előzni, hogy az adócsoport a tranzakciókban kiszámításra kerüljön.
 8. A Műveletablakban válassza a **Tervező** lehetőséget a képlettervező megnyitásához, így meghatározhatja a TDS-adócsoport TDS-kiszámításának képletét. A **Tervező** lapon az **Adók** fülön láthatók a TDS-adócsoporthoz kiválasztott TDS-adókódok.
 
-    [![Tervező oldal](./media/apac-ind-TDS-30.png)](./media/apac-ind-TDS-30.png)
+    [![Tervező oldal.](./media/apac-ind-TDS-30.png)](./media/apac-ind-TDS-30.png)
 
 9. A **Számítás** fülön válassza az **Alt+N** lehetőséget egy sor létrehozásához. Az **azonosítómező** a TDS-számítás automatikusan generált prioritásazonosítóját mutatja.
 10. Az **Adókód** mezőben válassza ki a TDS-adókódját a képlet meghatározásához. A TDS-adócsoporthoz kiválasztott összes TDS-adókód választható ebben a mezőben.

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9d5e6bb5e070ebbcdb7e99b1b70010acd5fca5ac
-ms.sourcegitcommit: 15aacd0e109b05c7281407b5bba4e6cd99116c28
+ms.openlocfilehash: 4e1c70dd0fa89c6cc5a8b4778b073d1cf4a3dadd
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "6224095"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355322"
 ---
 # <a name="supported-primitive-data-types-for-electronic-reporting-formulas"></a>Támogatott egyszerű adattípusok az elektronikus jelentési képletekben
 
@@ -112,13 +112,13 @@ Az alkalmazás *enumerációja* bármely ER modellleképezés és ER-formátum k
 
 A következő ábra bemutatja, hogyan lehet hozzáadni a **CustVendCorrectiveReasonCode** modell enumerációt a szerkeszthető ER adatmodellhez.
 
-[![Modell enumerációjának konfigurálása az ER adatmodell-tervezőjében](./media/er-formula-supported-data-types-primitive-enum1.gif)](./media/er-formula-supported-data-types-primitive-enum1.gif)
+[![Modell enumerációjának konfigurálása az ER adatmodell-tervezőjében.](./media/er-formula-supported-data-types-primitive-enum1.gif)](./media/er-formula-supported-data-types-primitive-enum1.gif)
 
 A modell *enumerációja* bármely olyan ER modellleképezés és ER-formátum kifejezésében használható, amely egy olyan adatmodell alapján jött létre, amelyben az *enumerációt* bevezették.
 
 A következő ábra azt mutatja be, hogyan lehet hozzáadni a **Fordított Natura alkategóriák** fomátumfelsorolást a szerkeszthető ER-formátumhoz.
 
-[![Formátum enumerációjának konfigurálása az ER formátumtervezőjében](./media/er-formula-supported-data-types-primitive-enum2.gif)](./media/er-formula-supported-data-types-primitive-enum2.gif)
+[![Formátum enumerációjának konfigurálása az ER formátumtervezőjében.](./media/er-formula-supported-data-types-primitive-enum2.gif)](./media/er-formula-supported-data-types-primitive-enum2.gif)
 
 Formátum *enumeráció* csak abban az ER-formátumban használható, amelyben az *enumerációt* bevezették.
 
@@ -126,15 +126,15 @@ Ahhoz, hogy egy konfigurált ER-összetevőt konstansként vagy olyan értékké
 
 - Az alkalmazás enumerációi a **Dynamics 365 for Operations \ Felsorolás** és **Általános \ Felhasználói beviteli paraméterek** adatforrások használatával érhetők el. A következő ábra bemutatja, hogyan lehet hozzáadni a Szerkeszthető ER formátumhoz azokat az **appenumNoYes** és **uipNoYes** adatforrásokat, amelyek a **NoYes** alkalmazásenumerációra hivatkoznak.
 
-    [![Alkalmazás enumerációs adatforrások hozzáadása az ER-formátumtervezőben](./media/er-formula-supported-data-types-primitive-enum3a.gif)](./media/er-formula-supported-data-types-primitive-enum3a.gif)
+    [![Alkalmazás enumerációs adatforrások hozzáadása az ER-formátumtervezőben.](./media/er-formula-supported-data-types-primitive-enum3a.gif)](./media/er-formula-supported-data-types-primitive-enum3a.gif)
 
 - Az adatmodell enumerációi az **Adatmodell \ Felsorolás** és **Adatmodell \ Enumerációs felhasználói beviteli paraméterek** adatforrások használatával érhetők el. A következő ábra bemutatja, hogyan lehet hozzáadni a Szerkeszthető ER formátumhoz a **CustVendCorrectiveReasonCode** adatforrást, amely a **CustVendCorrectiveReasonCode** adatmodell enumerációra hivatkozik.
 
-    [![Modellenumerációs adatforrások hozzáadása az ER-formátumtervezőben](./media/er-formula-supported-data-types-primitive-enum3b.gif)](./media/er-formula-supported-data-types-primitive-enum3b.gif)
+    [![Modellenumerációs adatforrások hozzáadása az ER-formátumtervezőben.](./media/er-formula-supported-data-types-primitive-enum3b.gif)](./media/er-formula-supported-data-types-primitive-enum3b.gif)
 
 - A Formátum-enumerációk a **Formátum \ Enumeráció** és **Formátum \ Formátum felhasználói bemeneti paraméterek** adatforrások használatával érhetők el. A következő ábra bemutatja, hogyan lehet hozzáadni a Szerkeszthető ER formátumhoz a **NaturaReverseCharge** adatforrást, amely a **Natura fordított áfa alkategóriák** formátumenumerációra hivatkozik.
 
-    [![Formátumenumerációs adatforrások hozzáadása az ER-formátumtervezőben](./media/er-formula-supported-data-types-primitive-enum3c.gif)](./media/er-formula-supported-data-types-primitive-enum3c.gif)
+    [![Formátumenumerációs adatforrások hozzáadása az ER-formátumtervezőben.](./media/er-formula-supported-data-types-primitive-enum3c.gif)](./media/er-formula-supported-data-types-primitive-enum3c.gif)
 
 Az *enumeráció* nem rendelkezik implicit átalakításokkal. A [TEXT](er-functions-text-text.md) átváltási függvénnyel azonban a *felsorolás* szöveg karakterlánccá alakítható. Ez az átalakítás nem nyelvfüggő. A *felsorolás* értéknek a megfelelő nyelvspecifikus címkékhez való társításának a elsajátításáról a [LISTOFFIELDS](er-functions-list-listoffields.md) és a [GETENUMVALUEBYNAME](er-functions-text-getenumvaluebyname.md) függvényekkel kapcsolatos példákban olvashat bővebben.
 

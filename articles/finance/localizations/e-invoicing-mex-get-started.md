@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.custom: 97423
+ms.custom:
+- "97423"
+- intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: c1112ba8394afb3aa9c9b4f68249524498bd8b32
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 26091a068ed15ec9ff14c9194c3e0e0ad0779351
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5894883"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344782"
 ---
 # <a name="get-started-with-electronic-invoicing-for-mexico"></a>Első lépések a Mexikóra vonatkozó elektronikus számlázás használata során
 
@@ -56,7 +58,7 @@ Az RCS beállítása során a következő feladatokat kell elvégeznie:
     > [!NOTE]
     > Ha nem látható a funkció a listán, válassza a **Szinkronizálás** elemet, majd ismételje meg a 3. lépést.
 
-![A CFDI-számlák (MX) funkció importálása](media/e-Invoicing-services-get-started-MEX-Select-Import-CFDI-feature.png)
+![A CFDI-számlák (MX) importálása funkció.](media/e-Invoicing-services-get-started-MEX-Select-Import-CFDI-feature.png)
 
 A **CFDI-számlák (MX)** funkció Globális adattárból történő importálásakor az összes funkcióbeállítás – ideértve a konfigurációkat és a műveleteket is – importálva lesz.
 
@@ -66,13 +68,13 @@ A **CFDI-számlák (MX)** funkció Globális adattárból történő importálá
 
 - Az **e-számlázási funkciók** oldal **Verziók** lapján válassza az **Új** lehetőséget.
 
-![Új e-számlázási funkcióverzió hozzáadása](media/e-Invoicing-services-get-started-MEX-Select-New-e-Invoicing-feature.png)
+![Új e-számlázási funkcióverzió hozzáadása.](media/e-Invoicing-services-get-started-MEX-Select-New-e-Invoicing-feature.png)
 
 ### <a name="update-the-configuration-version"></a>A konfigurációverzió frissítése
 
 1. Az **e-számlázási funkciók** oldal **Konfigurációk** lapján válassza ki a **Hozzáadás** vagy a **Törlés** lehetőséget a konfigurációverziók (ER-fájlformátum-konfigurációk) kezeléséhez.
 
-    ![E-számlázás funkciókonfigurációk kezelése](media/e-Invoicing-services-get-started-MEX-Manage-e-Invoicing-feature-Configurations.png)
+    ![E-számlázás funkciókonfigurációk kezelése.](media/e-Invoicing-services-get-started-MEX-Manage-e-Invoicing-feature-Configurations.png)
 
     Új verzió létrehozásakor az összes konfiguráció a legutóbbi közzétett verzióból öröklődik. A CFDI-számlák feldolgozásához a következő konfigurációk szükségesek:
 
@@ -84,17 +86,17 @@ A **CFDI-számlák (MX)** funkció Globális adattárból történő importálá
 
 2. A listáról válassza ki a kívánt konfigurációverziót, majd a **Szerkesztés** vagy **Nézet** elemet kijelölve nyissa meg a **Formátumtervező** oldalt, amelyen szerkesztheti és megtekintheti a konfigurációt.
 
-    ![A Formátumtervező lap megnyitása](media/e-Invoicing-services-get-started-MEX-Configuration-ER-format-designer.png)
+    ![A Formátumtervező lap megnyitása.](media/e-Invoicing-services-get-started-MEX-Configuration-ER-format-designer.png)
 
 3. Az ER-formátum fájlkonfiguráció szerkesztéséhez és megtekintéséhez használja a **Formátumtervező** lapot. További információ: [Elektronikus dokumentum-konfigurációk létrehozása](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md).
 
-    ![Formátumtervező oldal](media/e-Invoicing-services-get-started-MEX-ER-format-designer.png)
+    ![Formátumtervező oldal.](media/e-Invoicing-services-get-started-MEX-ER-format-designer.png)
 
 ## <a name="manage-the-e-invoicing-feature-setups"></a>Kezelje az e-számlázás funkció beállításait
 
 - Az **e-számlázási funkciók** oldal **Beállítások** lapján válassza a **Hozzáadás**, **Törlés** vagy **Szerkesztés** parancsot az e-számlázási funkciók beállításainak kezeléséhez.
 
-![Az e-számlázás funkció beállításainak kezelése](media/e-Invoicing-services-get-started-MEX-Manage-e-Invoicing-feature-Setup.png)
+![Az e-számlázás funkció beállításainak kezelése.](media/e-Invoicing-services-get-started-MEX-Manage-e-Invoicing-feature-Setup.png)
 
 A CFDI-számlák engedélyezésre való beküldéséhez (XML-fájl létrehozásához, XML-fájl elküldéséhez és a válasz feldolgozásához) be kell állítani az **Értékesítési számla** funkciót.
 
@@ -105,11 +107,11 @@ A CFDI-számla érvénytelenítésre való beküldéséhez az **Érvénytelenít
 1. Az **e-számlázási funkciók** oldal **Beállítások** lapjának **Funkcióbeállítás** oszlopában válassza ki az **Értékesítési számla** lehetőséget.
 2. Válassza a **Szerkesztés** lehetőséget a műveletek, alkalmazhatósági szabályokat és a változók konfigurálásához.
 
-    ![Az e-számlázás funkció beállításainak szerkesztése](media/e-Invoicing-services-get-started-MEX-Edit-e-Invoicing-feature-setup.png)
+    ![Az e-számlázás funkció beállításainak szerkesztése.](media/e-Invoicing-services-get-started-MEX-Edit-e-Invoicing-feature-setup.png)
 
 3. A **Funkcióverzió beállítása** oldalon válassza ki a **Műveletek** lapot a műveletek listájának kezeléséhez. A műveletek határozzák meg azokat a műveleteket, amelyeket az esemény teljes végrehajtásához sorrendben kell végrehajtani.
 
-    ![Műveletek lap](media/e-Invoicing-services-get-started-MEX-Select-Actions.png)
+    ![Műveletek lap.](media/e-Invoicing-services-get-started-MEX-Select-Actions.png)
 
     | Műveletazonosító | Művelet                   | Művelet neve                                  | Művelet leírása                                          |
     |-----------|--------------------------|----------------------------------------------|-------------------------------------------------------------|
@@ -133,7 +135,7 @@ A CFDI-számla érvénytelenítésre való beküldéséhez az **Érvénytelenít
 3. A **Hatálybalépés dátuma** mezőben válassza ki azt a dátumot, amikortól a környezetnek hatályossá kell válnia.
 3. Válassza az **Engedélyezés** lehetőséget.
 
-![E-számlázási környezet engedélyezése](media/e-Invoicing-services-get-started-MEX-Enable-e-Invoicing-Environment.png)
+![E-számlázási környezet engedélyezése.](media/e-Invoicing-services-get-started-MEX-Enable-e-Invoicing-Environment.png)
 
 ## <a name="change-the-version-status-to-completed"></a>A verzió állapotának módosítása Befejezett értékre
 
@@ -149,7 +151,7 @@ A CFDI-számla érvénytelenítésre való beküldéséhez az **Érvénytelenít
 1. Az **e-számlázási funkciók** oldalon jelölje be a **Verziók** lapot a **CFDI-számlák (MX)** funkció állapotának kezeléséhez.
 2. A funkció állapotának módosításához jelölje be az **Állapot módosítésa** elemet.
 
-![Az e-számlázási funkció állapotának módosítása](media/e-Invoicing-services-get-started-MEX-Change-status-of-e-Invoicing-feature.png)
+![Az e-számlázási funkció állapotának módosítása.](media/e-Invoicing-services-get-started-MEX-Change-status-of-e-Invoicing-feature.png)
 
 ## <a name="set-up-electronic-invoicing--integration-in-finance"></a>Az Elektronikus számlázás integrációjának beállítása a Finance szolgáltatásban
 
@@ -171,7 +173,7 @@ Az Elektronikus számlázás Finance szolgáltatásban történő beállításá
 1. Menjen a **Szervezeti adminisztráció \> Beállítás \> Elektronikus dokumentumparaméterek** lehetőségre.
 2. A **Funkciók** lapon válassza ki az **Engedélyezés** jelölőnégyzetet az **MX-00010** és **MX-00016** funkcióhivatkozások soraiban.
 
-![A CFDI-számlák feldolgozására szolgáló funkció bekapcsolása](media/e-Invoicing-services-get-started-MEX-Enable-CFDI-feature.png)
+![A CFDI-számlák feldolgozására szolgáló funkció bekapcsolása.](media/e-Invoicing-services-get-started-MEX-Enable-CFDI-feature.png)
 
 ### <a name="import-er-configurations-and-set-up-the-response-types-for-updating-cfdi-invoices"></a>A választípusok beállítása a CFDI-számlák frissítésére, illetve az ER-konfigurációk importálása
 
@@ -221,7 +223,7 @@ A **Konfigurálható elektronikus számlázás integrációja** funkció bekapcs
 2. A dokumentumok első beküldésekor mindig **Nem** értékre kell állítania a **Dokumentumok újraküldése** lehetőséget. Ha a szolgáltatáson keresztül újra kell küldenie a dokumentumot, akkor ezt a beállítást állítsa **Igen** értékre.
 3. A **Szerepeltetni kívánt rekordok** gyorslapon válassza a **Szűrő** lehetőséget a **Lekérdezés** párbeszédpanel megnyitásához, amelyen létrehozhat egy lekérdezést, hogy milyen dokumentumok legyenek kiválasztva a beküldéshez.
 
-![CFDI-dokumentum beküldése](media/e-Invoicing-services-get-started-MEX-Submit-CFDI-document.png)
+![CFDI-dokumentum beküldése.](media/e-Invoicing-services-get-started-MEX-Submit-CFDI-document.png)
 
 > [!NOTE]
 > A dokumentum szolgáltatáson keresztüli beküldésének első kísérlete során a program rákérdez, hogy megerősíti-e a kapcsolatot az Elektronikus számlázással. Válassza a **Kattintson az Elektronikus dokumentumbeküldési szolgáltatáshoz való csatlakozáshoz**.
@@ -237,11 +239,11 @@ A **Konfigurálható elektronikus számlázás integráció** funkció bekapcsol
 1. Menjen a **Szervezeti adminisztráció \> Időszakos \> Elektronikus dokumentumok \> Elektronikus dokumentumbeküldési napló** lehetőségre.
 2. A **Dokumentumtípus** mezőben válassza ki a **Vevői számlanapló** lehetőséget a szükséges elektronikus dokumentumok szűréséhez.
 
-    ![A dokumentumtípus kiválasztása a beküldési naplók megtekintéséhez](media/e-Invoicing-services-get-started-MEX-Select-document-type-for-viewing-submission-log.png)
+    ![A dokumentumtípus kiválasztása a beküldési naplók megtekintéséhez.](media/e-Invoicing-services-get-started-MEX-Select-document-type-for-viewing-submission-log.png)
 
 3. A Művelet ablaktáblán válassza ki a **Lekérdezések \> Beküldések részletei** lehetőséget a beküldési végrehajtási naplók részleteinek megtekintéséhez.
 
-    ![A beküldési napló részleteinek megtekintése](media/e-Invoicing-services-get-started-MEX-View-submission-log-details.png)
+    ![A beküldési napló részleteinek megtekintése.](media/e-Invoicing-services-get-started-MEX-View-submission-log-details.png)
 
 A beküldési naplókban lévő adatok három gyorslap között vannak felosztva:
 
@@ -259,7 +261,7 @@ A **Konfigurálható elektronikus számlázás integrációja** funkció bekapcs
 2. Válasszon egy olyan CFDI-számlát, amelyet a **Konfigurálható elektronikus számlázás integrációja** funkció bekapcsolása után küldtek be.
 3. A Művelet panel **Előzmények** lapján válassza az **Elektronikus dokumentumnapló** menüpontot.
 
-![CFDI-számlákból származó beküldési naplók megtekintése](media/e-Invoicing-services-get-started-MEX-View-submission-log-from-CFDI-invoice.png)
+![CFDI-számlákból származó beküldési naplók megtekintése.](media/e-Invoicing-services-get-started-MEX-View-submission-log-from-CFDI-invoice.png)
 
 > [!NOTE]
 > Azon CFDI-számláknál, amelyeket a **Konfigurálható elektronikus számlázás integrációja** funkció bekapcsolása előtt küldtek be, elérhető az **Előzmények** gomb. Azon CFDI-számláknál, amelyeket a **Konfigurálható elektronikus számlázás integrációja** funkció bekapcsolása után küldtek be, nem elérhető az **Előzmények** gomb.
@@ -282,11 +284,11 @@ A **Konfigurálható elektronikus számlázás integrációja** funkció bekapcs
 
     A **Kapcsolódó beküldések** oldal egy adott CFDI-számla összes kapcsolódó beküldésér és beküldési állapotát megjeleníti. A következő ábrán az első sor azt a beküldést jelöli, amely a CFDI-számla jóváhagyását kérte. A második sor azt a beküldést jelöli, amely érvénytelenítette az adott CFDI-számlát.
 
-    ![Az érvénytelenítési beküldési naplók megtekintése](media/e-Invoicing-services-get-started-MEX-View-cancellation-submission-log.png)
+    ![Az érvénytelenítési beküldési naplók megtekintése.](media/e-Invoicing-services-get-started-MEX-View-cancellation-submission-log.png)
 
 4. A Művelet ablaktáblán válassza ki a **Lekérdezések \> Beküldések részletei** lehetőséget a beküldési végrehajtási naplók részleteinek megtekintéséhez.
 
-    ![Az érvénytelenítési beküldési napló részleteinek megtekintése](media/e-Invoicing-services-get-started-MEX-View-cancellation-submission-log-details.png)
+    ![Az érvénytelenítési beküldési napló részleteinek megtekintése.](media/e-Invoicing-services-get-started-MEX-View-cancellation-submission-log-details.png)
 
 ## <a name="privacy-notice"></a>Adatvédelmi nyilatkozat
 A **CFDI mexikói elektronikus számla (MX)** funkcióhoz korlátozott számú adat küldése válhat szükségessé, ideértve a szervezet adóregisztrációs azonosítóját. Ezek továbbítva lesznek az adóhatóság által kinevezett harmadik fél ügynökségekhez, az elektronikus számlák – kormányzati szervek webszolgáltatással való integrációhoz szükséges, előre meghatározott formátumban való – adott adóhatósághoz történő elküldése céljából. A rendszergazda engedélyezheti és letilthatja a **CFDI mexikói elektronikus számla (MX)** funkciót a **Szervezeti adminisztráció \> Beállítások \> Elektronikus dokumentumparaméterek** lehetőségre való navigálással. Válassza ki a **Funkciók** lapot, majd a **CFDI mexikói elektronikus száma (MX)** funkciókat tartalmazó sorokat, és végezze el a megfelelő kijelölést. A külső rendszerekből ebbe a Dynamics 365 online szolgáltatásba importált adatok az [Adatvédelmi nyilatkozatunk](https://go.microsoft.com/fwlink/?LinkId=512132) hatálya alá tartoznak. További tájékoztatásért olvassa el az országspecifikus funkciók dokumentációja szakaszokban található Adatvédelmi nyilatkozatot.

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-07-21
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: b53ecec4bb7593cb0a0cae72e4132c49d6ec6a68
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: bcb242214efab3fd632ea0b9e0f3329bb7821dc0
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826011"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354761"
 ---
 # <a name="inventory-journal-approval-workflows"></a>Készletnapló-jóváhagyási munkafolyamatok
 
@@ -55,7 +55,7 @@ A saját készletnapló-jóváhagyási munkafolyamatai létrehozásához:
     - **Készlet anyagjegyzék-napló**
     - **Készlethelyesbítési napló**
 
-    ![A Munkafolyamat létrehozása párbeszédpanel](media/journal-workflow-create-workflow.png "A Munkafolyamat létrehozása párbeszédpanel")
+    ![A Munkafolyamat létrehozása párbeszédpanel.](media/journal-workflow-create-workflow.png "A Munkafolyamat létrehozása párbeszédpanel")
 
 1. A munkafolyamat-szerkesztő alkalmazás elindul a gépén. (Előfordulhat, hogy a művelet jóváhagyását kérik.) Használja a munkafolyamat igény szerinti tervezéséhez. A munkafolyamat-szerkesztő használatáról a következő témakörben talál további tájékoztatást: [Munkafolyamat rendszer – áttekintés](../../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md).
 1. A munkafolyamat-szerkesztő alkalmazás mentését és bezárását követően ki kell választania, hogy aktiválja-e ezt a munkafolyamat-verziót, vagy inaktívan szeretné tartani.
@@ -73,7 +73,7 @@ Készletnapló-munkafolyamat hozzárendelése a készletnapló nevéhez:
 1. A Beállítások oldal megnyitásához válassza ki a napló nevét a lista oszlopból .
 1. Az **Általános** gyorslapon állítsa a **Jóváhagyási munkafolyamat** lehetőséget **Igen** értékre. Kattintson az **Igen** gombra, ha a rendszer a művelet jóváhagyását kéri.
 
-    ![Munkafolyamat hozzárendelése egy napló nevéhez](media/journal-workflow-journal-name.png "Munkafolyamat hozzárendelése egy napló nevéhez")
+    ![Munkafolyamat hozzárendelése egy napló nevéhez.](media/journal-workflow-journal-name.png "Munkafolyamat hozzárendelése egy napló nevéhez")
 
 1. Nyissa meg a **Munkafolyamat** legördülő listát és jelölje ki a megfelelő munkafolyamatot. Ez a lista minden olyan aktív munkafolyamatot megjelenít, amelyet a munkafolyamat-szerkesztő alkalmazással hozott létre.
 
@@ -87,7 +87,7 @@ Miután társította a készletnapló nevét a megfelelő készletnapló-jóváh
 1. Szükség szerint töltse ki a naplót.
 1. Amikor egy jóváhagyási munkafolyamattal társított készletnaplót hoz létre vagy nyit meg, akkor a **Munkafolyamat** gomb aktívvá válik a Művelet ablakban. Amikor készen áll, hogy elküldje a naplót jóváhagyásra, válassza ki a **Munkafolyamat** gombot a legördülő párbeszédpanel megnyitásához, majd válassza a **Küldés** lehetőséget. A jóváhagyási kérelem ezután a megfelelő jóváhagyóhoz fog menni, aki figyelmeztetést kap a munkafolyamathoz beállított értesítési módszerrel.
 
-    ![Napló küldése jóváhagyásra](media/journal-workflow-inventory-journal.png "Napló küldése jóváhagyásra")
+    ![Napló küldése jóváhagyásra.](media/journal-workflow-inventory-journal.png "Napló küldése jóváhagyásra")
 
 Egy jóváhagyási kérelem visszahívásához nyissa meg a megfelelő naplót, válassza ki a **Munkafolyamat**, majd a **Visszahívás** lehetőséget. Ezzel alaphelyzetbe állítja a munkafolyamatot.
 

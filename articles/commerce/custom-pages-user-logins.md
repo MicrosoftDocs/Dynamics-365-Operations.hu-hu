@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: d4a1c2f45d77c3ff9a7bb4dffaf12d877dc04e69
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: 214f99563f8bb08d8c051f904d0ca0a88267aa6b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5936780"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349650"
 ---
 # <a name="set-up-custom-pages-for-user-sign-ins"></a>Felhasználói bejelentkezéshez használt egyéni oldalak beállítása
 
@@ -40,7 +40,7 @@ Az egyéni Commerce-lapok a bejelentkezés, a regisztráció, a számlaprofil sz
 
 Miután beállította az Azure AD B2C-bérlőt, és társította a Commerce-környezethez, kattintson az **Azure AD B2C**-lapra az Azure-portálon, majd a menüben az **Irányelvek** alatt válassza a **Felhasználói folyamatok (házirendek)** parancsot.
 
-![Felhasználói folyamatok (irányelvek) parancs a menüben](./media/B2C_CustomPage_PoliciesMenu.png)
+![Felhasználói folyamatok (irányelvek) parancs a menüben.](./media/B2C_CustomPage_PoliciesMenu.png)
 
 Most konfigurálhatja a „Regisztráció és bejelentkezés”, „Profilszerkesztés” és „Új jelszó létrehozása” felhasználói bejelentkezési folyamatokat.
 
@@ -54,13 +54,13 @@ A „Regisztráció és bejelentkezés” irányelv konfigurálásához kövesse
 1. Az **Attribútum összegyűjtése** oszlopban jelölje be az **E-mail-cím**, az **Utónév** és a **Vezetéknév** jelölőnégyzetét.
 1. A **Visszatérítési igény** oszlopban válassza ki az **E-mail-címek**, **Utónév**, **Identitásszolgáltató**, **Vezetéknév** és **Felhasználó objektumazonosítója** jelölőnégyzeteket.
 
-    ![Kiválasztott attribútumok és igények](./media/B2C_SignInSignUp_Attributes.png)
+    ![Kiválasztott attribútumok és igények.](./media/B2C_SignInSignUp_Attributes.png)
 
 1. Az irányelv létrehozásához kattintson az **OK** lehetőségre.
 1. Kattintson duplán az új irányelv nevére, majd a navigációs ablakban válassza ki a **Tulajdonságok** lehetőséget.
 1. Adja meg a **Oldalelrendezés JavaScript általi érvényesítésének engedélyezése (előnézet)** lehetőség esetében a **Be** értéket.
 
-    ![Az új irányelv Tulajdonságok lapja](./media/B2C_SignInSignUp_EnableJavascript.png)
+    ![Az új irányelv Tulajdonságok lapja.](./media/B2C_SignInSignUp_EnableJavascript.png)
 
 > [!NOTE]
 > Az irányelv neve teljes hivatkozással jelenik meg a Commerce-környezetben. (A **B2C\_1\_** előtag szerepelni fog a hivatkozásban.) Az irányelveket a létrehozásuk után nem lehet átnevezni. Ha a Commerce-környezet egy meglévő irányelvét cseréli le, akkor törölheti az eredeti irányelvet, és összeállíthat egy azonos nevű új irányelvet. Ha a környezetet már létre lett hozva, akkor alternatív megoldásként egy szolgáltatási kérelem útján elküldheti az új irányelv nevét.
@@ -150,7 +150,7 @@ A „Regisztráció és bejelentkezés” irányelvnek az egyéni lap informáci
     1. Az **E-mail-cím**, **Utónév** és **Vezetéknév** attribútumok esetében válassza a **Nem** értéket az **Opcionális** oszlopban.
 1. Válassza a **Mentés** lehetőséget.
 
-    ![A helyi fiók regisztrációs lap irányelvének konfigurálása](./media/B2C_SignInSignUp_Recommended_PageLayoutExample.png)
+    ![A helyi fiók regisztrációs lap irányelvének konfigurálása.](./media/B2C_SignInSignUp_Recommended_PageLayoutExample.png)
 
 ### <a name="update-the-profile-editing-policy-with-custom-page-information"></a>A „Profilszerkesztés” irányelv frissítése az egyéni lap információival
 
@@ -188,11 +188,11 @@ A modulkönyvtárban a bejelentkezési modulok a címkék és leírások alapér
 
 Az elfelejtett jelszó hivatkozásának alapértelmezett szövege például **Elfelejtette a jelszót?**. A következőkben látható ez az alapértelmezett szöveg a bejelentkezési oldalon.
 
-![Alapértelmezett szöveg a bejelentkezési oldalon található elfelejtett jelszó hivatkozáshoz](./media/B2C_SignUp_ModuleFace.png)
+![Alapértelmezett szöveg a bejelentkezési oldalon található elfelejtett jelszó hivatkozáshoz.](./media/B2C_SignUp_ModuleFace.png)
 
 A modulkönyvtár bejelentkezési moduljának global.json fájljában azonban szerkesztheti a szöveget az **Elfelejtett jelszó?** értékre, ahogy az a következő ábrán látható.
 
-![Frissített hivatkozásszöveg a bejelentkezési modul global.json fájljában](./media/B2C_CustomizingStringsForModule.png)
+![Frissített hivatkozásszöveg a bejelentkezési modul global.json fájljában.](./media/B2C_CustomizingStringsForModule.png)
 
 A global.json fájl frissítése és a módosítások közzététele után az új hivatkozásszöveg megjelenik a bejelentkezési modulban, mind a Commerce, mind az éles bejelentkezési lapon.
 

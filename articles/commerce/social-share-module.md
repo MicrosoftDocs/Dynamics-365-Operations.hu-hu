@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: c34410a8c817de9fed350bf2cd2dd918a37c230f
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 0cd19f218e9fa05cd23c52fdf9bbdac6ad82a23b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795357"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357714"
 ---
 # <a name="social-share-module"></a>Közösségi megosztási modul
 
@@ -36,7 +36,7 @@ Minden közösségimédia-platform nyomon követhet a sütiket, így ez a modul 
 
 A következő ábra bemutatja a termék részletei oldalon használt közösségi megosztási modul egy példáját.
 
-![Példa egy közösségi megosztási modulra](./media/ecommerce-socialshare.png)
+![Példa egy közösségi megosztási modulra.](./media/ecommerce-socialshare.png)
 
 ## <a name="social-share-module-properties"></a>Közösségi megosztási modul tulajdonságai
 

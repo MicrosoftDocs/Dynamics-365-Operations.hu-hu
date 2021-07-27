@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 46e8fba0c1269aa8b81e0df8d415fe11b2307924
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 3b042374179de7aa5bbff73719cbe8546920132e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897308"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360688"
 ---
 # <a name="financial-dimensions-and-posting"></a>A pénzügyi dimenziók és a feladás 
 
@@ -71,29 +71,29 @@ Az emberekben gyakran felmerül az egyes elemek futtatásával kapcsolatos sorre
 
 A következő ábrán a rögzített alapértelmezett dimenzió látható, amely a 401100 fő számlán van beállítva.
 
-[![Alapértelmezett pénzügyi dimenziók](./media/default-dimensions.png)](./media/default-dimensions.png)
+[![Alapértelmezett pénzügyi dimenziók.](./media/default-dimensions.png)](./media/default-dimensions.png)
 
 Nagyon egyszerű példaként megadunk egy főkönyvi naplót, ahol a Részlegdimenziót a **023** (Műveletek) alapértelmezett érték használatára állítottuk be. Most beírunk és feladunk egy főkönyvi számlát. A következő ábrán az alapértelmezett pénzügyi dimenzió látható a főkönyv fejlécén.
 
-[![Általános naplók](./media/general-journal.png)](./media/general-journal.png)
+[![Általános naplók.](./media/general-journal.png)](./media/general-journal.png)
 
 A naplófejlécen levő alapértelmezett dimenzió következtében a 023 részleg alapértelmezés szerint alkalmazandó lesz az értékesítési számlasorban. A következő ábrák az általános naplósort jelenítik, ahol a rendszer alkalmazza a **023** alapértelmezett dimenzióértéket a fejlécből.
 
-[![Naplóbizonylat](./media/journal-voucher.png)](./media/journal-voucher.png)
+[![Naplóbizonylat.](./media/journal-voucher.png)](./media/journal-voucher.png)
 
 Azonban a sor feladásakor a rendszer a rögzített dimenziót alkalmazza, és a sort a 022 részlegnek adja fel. Az alábbi ábra a feladott bizonylatot jeleníti meg, amelyre a rendszer a rögzített dimenziót alkalmazta az értékesítési számlára.
 
-[![Rögzített dimenzióval alkalmazott bizonylattranzakciók](./media/voucher-transactions.png)](./media/voucher-transactions.png)
+[![Rögzített dimenzióval alkalmazott bizonylattranzakciók.](./media/voucher-transactions.png)](./media/voucher-transactions.png)
 
 ### <a name="example-2"></a>2. példa
 
 Ez a példa ugyanazt a beállítást használja, mint az első példa. Mi azonban egy második összetevőt adunk hozzá, a Részlegdimenziót pedig kiegyenlítő dimenzióként használjuk. Az alábbi példában a **Részleg** az USMF főkönyvhöz beállított kiegyenlítő pénzügyi dimenzió.
 
-[![A részleget kiegyenlítő pénzügyi dimenzióként megjelenítő ábra](./media/ledger.png)](./media/ledger.png)
+[![A részleget kiegyenlítő pénzügyi dimenzióként megjelenítő ábra.](./media/ledger.png)](./media/ledger.png)
 
 Ha a napló fejléce ugyanazt a beállítást használja, és ugyanazt a tranzakciót adja fel, először a rögzített dimenzió érvényesül. Ezután a kiegyenlítő logika következik, amely garantálja, hogy minden részleg kiegyensúlyozott tétellel rendelkezzen. Az alábbi ábra olyan bizonylattranzakciókat jelenít meg, amelyek tartalmazzák a rögzített dimenziók alkalmazása utáni kiegyenlítő bejegyzést.
 
-[![Bizonylattranzakciók a kiegyenlítő bejegyzés alkalmazása után](./media/voucher-transactions2.png)](./media/voucher-transactions2.png)
+[![Bizonylattranzakciók a kiegyenlítő bejegyzés alkalmazása után.](./media/voucher-transactions2.png)](./media/voucher-transactions2.png)
 
 ### <a name="example-3"></a>3. példa
 
@@ -101,11 +101,11 @@ Ebben a példában hozzáadunk egy speciális szabályt. A speciális szabály m
 
 Ez a példa a sorrend miatt fontos. A számlastruktúra meghatározása a fő számla megadása után történik. Ha a számlastruktúra beállítására hivatkozik, a rendszer meghatározhatja, hogy a fő számla, az üzleti részleg, a részleg és a költséghely relevánsak-e. Ezen a ponton a speciális szabályra még nem került sor, mert rögzített dimenziók alkalmazása nem történik meg mindaddig, amíg az alapértelmezett dimenziókat nem alkalmazták a naplóbizonylathoz a feladás során. Az alábbi példában a Vevő szegmens nincs jelen, mert a speciális szabály kritériumai nem teljesültek.
 
-[![Főkönyvi számla](./media/drop-down.png)](./media/drop-down.png)
+[![Főkönyvi számla.](./media/drop-down.png)](./media/drop-down.png)
 
 A feladás sikertelen lesz, mert a rögzített dimenziót a folyamat végén alkalmazták. A dimenzió ellenőrzése meghatározza, hogy a Vevő szegmensre akkor van szükség, ha a fő számla 401100, a részleg pedig 022. A feladás ellenőrzési hiba miatt nem hajtható végre. A következő ábrán látható az az üzenet, amely azután jelenik meg, hogy a dimenzió ellenőrzése meghatározza, hogy a Vevő szükséges szegmens.
 
-[![Üzenet részletei](./media/message.png)](./media/message.png)
+[![Üzenet részletei.](./media/message.png)](./media/message.png)
 
 Ebben a példában felül kell írni az alapértelmezett értéket úgy, hogy a speciális szabály elinduljon és megadhassa a Vevő szegmenst. Azonban ez a megoldás nem mindig lehetséges, és bizonyos felhasználók nem is tudnak a feladási szabályok létezéséről. Ezért fontos megérteni az alapértelmezett dimenziók alkalmazási sorrendjét a számlatükrök beállítása során.
 

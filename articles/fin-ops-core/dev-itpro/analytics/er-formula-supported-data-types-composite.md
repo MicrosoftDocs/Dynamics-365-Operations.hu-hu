@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c7ed9e62751b6be9fad6de3bf262d37d7977d192
-ms.sourcegitcommit: 15aacd0e109b05c7281407b5bba4e6cd99116c28
+ms.openlocfilehash: 2593f3128ec103248e109f3c80f48b9d7a035f54
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "6224094"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355346"
 ---
 # <a name="supported-composite-data-types-for-electronic-reporting-formulas"></a>Támogatott összetett adattípusok az elektronikus jelentési képletekben
 
@@ -43,11 +43,11 @@ Az *osztály* alapértelmezett értéke **null**.
 
 A következő ábra bemutatja, hogy a **Rendszerinformáció(xInfo)** adatforrást az **Osztály** típusból, hogyan van hozzáadva, hogy az **xInfo** alkalmazásosztály példányát létrehozza, és meghívja a **productName()** metódusát, hogy megkapja az aktuális alkalmazás nevét. Futási időben bekéri a rendszer az aktuális alkalmazás nevét az ER-adatmodell **Software name(SoftwareName)** mezőjéhez beállított `xInfo.productName` kötés végrehajtásával. Ez a kötés a jelenlegi modellleképezésben **system information(xInfo)** adatforrásként ábrázolt **xInfo** alkalmazásosztály `productName()`-metódusát hívja meg.
 
-[![Az Osztály-adatforrás konfigurálása az ER modell-leképezés tervezőben](./media/er-formula-supported-data-types-composite-class1.gif)](./media/er-formula-supported-data-types-composite-class1.gif)
+[![Az Osztály-adatforrás konfigurálása az ER modell-leképezés tervezőben.](./media/er-formula-supported-data-types-composite-class1.gif)](./media/er-formula-supported-data-types-composite-class1.gif)
 
 A következő ábra bemutatja, hogy hogyan van beállítva az ER-formátum, hogy a megadott alkalmazásnevet a generált dokumentumokba helyezze. A használt adatmodell **Szoftvernév(SoftwareName)** mezőjét az ER-formátum **softwareUsed** XML eleme alá beágyazott **Sztring** összetevőhöz kötötték. Tehát az aktuális alkalmazás neve futásidőben kerül a létrehozott dokumentum XML-formátumú **softwareUsed** XML eleméhez.
 
-[![Elektronikus kimenő dokumentum szerkezetének konfigurálása az ER formátumtervezőben](./media/er-formula-supported-data-types-composite-class2.png)](./media/er-formula-supported-data-types-composite-class2.png)
+[![Elektronikus kimenő dokumentum szerkezetének konfigurálása az ER formátumtervezőben.](./media/er-formula-supported-data-types-composite-class2.png)](./media/er-formula-supported-data-types-composite-class2.png)
 
 ## <a name="container"></a><a name="container"></a>Tároló
 
@@ -60,7 +60,7 @@ Az *tároló* alapértelmezett értéke **null**.
 
 A következő ábra bemutatja, hogy a **Tároló** típusú *Bitkép(kép)* mező hogyan van kötve az adatmodell **Embléma** mezőjéhez, ami **Tároló** típusú az **Értékesítési számla** modell-leképezésében. Ez a kötés teszi elérhetővé a vállalati emblémát bármely, a **SalesInvoice** gyökérdefinícióhoz készült ER-formátum számára, amely ezt a modell-leképezést használja futásidőben.
 
-[![Tároló típusú mező kötése az ER modell-leképezés-tervezőben](./media/er-formula-supported-data-types-composite-container.png)](./media/er-formula-supported-data-types-composite-container.png)
+[![Tároló típusú mező kötése az ER modell-leképezés-tervezőben.](./media/er-formula-supported-data-types-composite-container.png)](./media/er-formula-supported-data-types-composite-container.png)
 
 ## <a name="record"></a><a name="record"></a>Rögzítés
 
@@ -109,7 +109,7 @@ Egy *objektum* alapértelmezett értéke **null**.
 
 A következő ábra bemutatja, hogy az **Objektum** típus *ReportDataContract* adatforrása hogyan lesz hozzáadva a létrehozott számla forráskód-adatoknak a **Projektszámla** modell-leképzéshez való átküldéshez. Például a számlapéldány szövege a végrehajtási környezet részeként lesz átadva. Ezt a szöveget futásidőben, a forráskódból veszi a rendszer az ER adatmodell **Megjegyzés** mezőjéhez beállított `ReportDataContract.parmInvoiceInstanceText` kötés végrehajtásával. Ez a kötés a jelenlegi modellleképezésben **ReportDataContract** adatforrásként ábrázolt **PSAProjInvoiceContract** alkalmazásosztály `parmInvoiceInstanceText()`-metódusát hívja meg.
 
-[![Az Objektum adatforrás konfigurálása az ER modell-leképezés tervezőben](./media/er-formula-supported-data-types-composite-object.gif)](./media/er-formula-supported-data-types-composite-object.gif)
+[![Az Objektum adatforrás konfigurálása az ER modell-leképezés tervezőben.](./media/er-formula-supported-data-types-composite-object.gif)](./media/er-formula-supported-data-types-composite-object.gif)
 
 A végrehajtási környezet forráskódról a futó ER-megoldásra való áthűtési részleteiről az [Alkalmazás-összetevők fejlesztése a megtervezett jelentés meghívásához](er-quick-start1-new-solution.md#DevelopCustomCode) rész tartalmaz további tudnivalókat.
 

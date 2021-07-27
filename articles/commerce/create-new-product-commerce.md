@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 44a58da0be280b06d96cdeae6929042bb50ed4a6
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 057acf50f16bef3eea55e51571cb6f49b79c5ab1
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795715"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352422"
 ---
 # <a name="create-a-new-product-in-commerce"></a>Új termék létrehozása a Commerce szolgáltatásban
 
@@ -49,13 +49,13 @@ A terméket elsősorban a termékszáma, a neve és a leírása határozza meg. 
 
 A következő képen egy példaként hozzáadott termék jelenik meg.
 
-![Termék létrehozása](media/create-new-product.png)
+![Termék létrehozása.](media/create-new-product.png)
 
 A termék hozzáadását követően további adatok is megadhatók, például a **Termék leírása**, **Változatcsoportok**, **Dimenziócsoportok**, **Termékattribútumok** és **Kapcsolódó termékek**.
 
 A következő kép egy termék további részleteit jeleníti meg.
 
-![Termék részletei](media/create-new-product-2.png)
+![Termék részletei.](media/create-new-product-2.png)
 
 ### <a name="create-product-variants"></a>Termékváltozatok létrehozása
 
@@ -74,23 +74,23 @@ A termék értékesítéséhez először egy jogi személynek ki kell adni azt.
 
 1. A termék lapon válassza ki a **Termékek kiadása** lehetőséget.
 
-    ![Termék kiadása](media/create-new-product-3.png)
+    ![Termék kiadása.](media/create-new-product-3.png)
 
 1. Válassza ki a kiadni kívánt terméket, majd kattintsona **Tovább** gombra.
 
-    ![Válasszon egy terméket kiadásra](media/create-new-product-4.png)
+    ![Válasszon egy terméket a kiadáshoz.](media/create-new-product-4.png)
 
 1. Válassza ki a kiadni kívánt termékváltozatok készletét, majd kattintson a **Tovább** gombra.
 
-    ![Változatok kiválasztása kiadásra](media/create-new-product-5.png)
+    ![Változatok kiválasztása a kiadáshoz.](media/create-new-product-5.png)
 
 1. Válassza ki a jogi személyt, majd kattintsona **Tovább** gombra.
 
-    ![Jogi személy kiválasztása](media/create-new-product-6.png)
+    ![Válasszon jogi személyt.](media/create-new-product-6.png)
 
 1. Válassza a **Befejezés** lehetőséget.
 
-    ![Termékkiadás befejezése](media/create-new-product-7.png)
+    ![Termékkiadás befejezése.](media/create-new-product-7.png)
 
 ## <a name="configure-a-released-product"></a>Egy kiadott termék konfigurálása
 
@@ -105,13 +105,13 @@ Egy termék kiadása után a rendszer további konfigurációt igényel, amely t
 
 A következő kép egy példát mutat egy kiadott termék beállítási konfigurációjáról.
 
-![Kiadott termék konfigurálása](media/create-new-product-8.png)
+![Kiadott termék konfigurálása.](media/create-new-product-8.png)
 
 ## <a name="additional-resources"></a>További erőforrások
 
 [Jogi személyek létrehozása](channels-legal-entities.md)
 
-[Változatcsoport létrehozása](create-variant-group.md) 
+[Variánscsoport létrehozása](create-variant-group.md) 
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

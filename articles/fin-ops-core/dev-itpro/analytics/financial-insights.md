@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 982d835c6c0d9bf6e19aa0ec1b03bce9aa7d2e5d
-ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
+ms.openlocfilehash: 90622bb8fb6452e4b4002fa5aab491112e98d923
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "6193750"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345812"
 ---
 # <a name="financial-analysis"></a>Pénzügyi elemzés
 
@@ -60,7 +60,7 @@ A pénzügyi kimutatásokban való megjelenítéshez és a különféle egyéb v
 ## <a name="entity-store"></a>Entitástár
 A **Pénzügyi elemzés** adatainak lekérése az Entitástárból történik (**Rendszerfelügyelet** \> **Beállítás** \> **Entitástár**). Ha megnyitja a **Pénzügyi igazgató áttekintés** vagy **Pénzügyi elemzés** munkaterület, és a következő figyelmeztető üzenet jelenik meg a vizuális elemekben, frissítenie kell az entitásokat.
 
-![Figyelmeztetés](./media/Cantdisplay.png)
+![Figyelmeztetés.](./media/Cantdisplay.png)
 
 Frissítenie kell a következő entitásokat az adatok a **Pénzügyi elemzés** munkaterületen való megtekintéséhez:
 
@@ -124,7 +124,7 @@ A felhasználók a bal oldali **Szűrés** ablaktáblával szűrhetik a jelenté
 - **Vizuális elemszintű szűrők** – Ezek a szűrők csak a kiválasztott vizuális elemre vonatkoznak. Ezeket a szűrőket az oldalszintű szűrökön túlmenően alkalmazza a rendszer.
 - **Részletező szűrő** – Ez a szűrő olyan „forrás” vizuális elemből szűr, amelyet a jelenlegi vizuális elemre alkalmazott, amikor a forrás vizuális elemről a jelenlegi vizuális elemre részletezett.
 
-![Szűrési beállítások](./media/filter.png)
+![Szűrési beállítások.](./media/filter.png)
 
 Egy adott szűrőérték eltávolításához válassza a mellette látható radírszimbólumot. Ne az X kiválasztásával távolítsa el a szűrőt. Ha kiválasztja az X-et, akkor a szűrt mező törlődik a szűrőlehetőségek közül. Ha véletlenül eltávolít egy mezőt a szűrőből, zárja be a munkaterületet, majd nyissa meg újra. Az alapértelmezett szűrőbeállítások újra alkalmazásra kerülnek.
 
@@ -169,25 +169,25 @@ Különböző leásási szintek érhetők el a Power BI segítségével. Minden 
 
 Az alábbi példában a **Főkönyvi kivonat** kimutatás összecsukódik a sorhierarchia legmagasabb szintjére, amely a fő számla típusa.
 
-![Főkönyvi kivonat kimutatás](./media/trial-balance.png)
+![Főkönyvi kivonat kimutatás.](./media/trial-balance.png)
 
 Ha a hierarchia következő szintjét, a főszámla-kategóriákat szeretné megtekinteni, állítsa a **Leásás célja** mezőt **Sorok** értékre, és válassza a **Kibontás** gombot (a harmadik gomb a Leásás célja mező után). Most kibontva látja az összes főszámla-kategóriát. Jelenleg a Power BI nem teszi lehetővé, hogy csak egy sort vagy oszlopot bontson ki, de mégis lássa az összes többi sort vagy oszlopot.
 
-![Főkönyv leásás a sorokon](./media/trial-balance2.png)
+![Lefúrás a főkönyvi kivonat soraiban.](./media/trial-balance2.png)
 
 A fő számlák az összes sorra vonatkozó kibontásához újra használhatja a **Kibontás** gombot. Azonban, ha csak egy sornál szeretne leásni a fő számlákig, először válassza a **Leásás** gombot (az ablak jobb oldalán levő egyetlen lefelé mutató nyíl), majd válassza ki a sort, amelynél le szeretne ásni. Az alábbi ábrán az az eredmény látható, ha az **Értékesítés** sor van kiválasztva a **Leásás** gomb kiválasztása után.
 
-![Főkönyvi kivonat kibontása gomb](./media/trial-balance3.png)
+![Főkönyvi kivonat kibontása gomb.](./media/trial-balance3.png)
 
 Miután egy sornál leásott, több kattintás szükséges ahhoz, hogy visszatérjen a teljes főkönyvi kivonathoz. A **Felásás** gomb (az első gomb a **Leásás** mező után) csak az **Értékesítés** kategória környezetében ás felfelé, a következő ábrán látható módon.
 
-![A Főkönyvi kivonat lefúrás gombja](./media/trial-balance4.png)
+![A Főkönyvi kivonat felhatolási gombja.](./media/trial-balance4.png)
 
 Folytathatja a **Felásás** gomb használatát a sorok legmagasabb szintű összegzéséig.
 
 A Power BI egy olyan gombbal is rendelkezik, amely lehetővé teszi, hogy a hierarchiában a következő szintre lépjen (a második gomb a **Leásás célja** mező után). Ennek a gombnak a hatása különbözik a **Kibontás** gombétól (a harmadik gomb a **Leásás célja** mező után), amely a hierarchia kibontására használatos. A hierarchiát kibontva a jelentésben megmarad a hierarchia. Például, amint korábban bemutattuk, ha a fő számla típusára kibontva továbbra is megjelenik a fő számla típusa a jelentésben. Azonban a hierarchiában a következő szintre lépve a jelentés többé nem jeleníti meg a szülőt a hierarchiában, ahogyan az a következő ábrán látható.
 
-![A Főkönyvi kivonat vissza gombja](./media/trial-balance5.png)
+![A Főkönyvi kivonat vissza gombja.](./media/trial-balance5.png)
 
 Az összegzett egyenlegek mögötti tranzakció részleteinek megtekintéséhez kiválaszthat bizonyos összegeket a Financial and Operations alkalmazásba való visszaásáshoz.
 
@@ -226,7 +226,7 @@ Jelenleg a pénzügyi kimutatások nem támogatják az olyan szervezeti hierarch
 ## <a name="data-limitations"></a>Adatkorlátozások
 A pénzügyi kimutatási vizuális elemeknél a megjeleníthető sorok száma korlátozott. Jelenleg a korlát értéke 30 000. Ha meghaladja ezt a határértéket, akkor a vizuális elem figyelmeztető szimbólummal tájékoztatja a helyzetről.
 
-![Adatkorlátozások](./media/data-limit.png)
+![Adatkorlátozások.](./media/data-limit.png)
 
 A maximális érték túllépése esetén a pénzügyi kimutatásban megjelenő összegek helytelenek lesznek, mert nem minden sor kerül be a vizuális elembe.
 

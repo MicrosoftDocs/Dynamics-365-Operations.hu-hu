@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-12-01
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 203c9f0990051c1618660959dad0e184add68ffa
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: b3419d328e84c199fa32aeb13b54425a31e96ce7
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750484"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350256"
 ---
 # <a name="update-the-structure-of-a-business-document-template"></a>Üzleti dokumentumsablon szerkezetének frissítése 
 
@@ -58,7 +58,7 @@ Hajtsa végre a következő lépéseket az [Üzleti dokumentumkezelés áttekint
 
     Az új sablon szerkesztésre megnyílik az Excel Online beágyazott vezérlőben a sablonszerkesztő lapon.
 
-[![Üzleti dokumentumsablon szerkesztésének megkezdése az Üzleti dokumentumkezelő munkaterületen](./media/er-bdm-update-structure1.gif)](./media/er-bdm-update-structure1.gif)
+[![Üzleti dokumentumsablon szerkesztésének megkezdése az Üzleti dokumentumkezelő munkaterületen.](./media/er-bdm-update-structure1.gif)](./media/er-bdm-update-structure1.gif)
 
 ### <a name="review-the-current-structure-of-the-editable-template"></a>A szerkeszthető sablon aktuális szerkezetének áttekintése
 
@@ -68,7 +68,7 @@ Hajtsa végre a következő lépéseket az [Üzleti dokumentumkezelés áttekint
 4. A **Sablon szerkezete** ablaktáblán bontsa ki a **Jelentés \> Számla \> rptHeader \> rptHeaderPart1** elemet.
 5. Figyelje meg, hogy a sablonstruktúra a Finance-ban, a **rptHeaderCompLogo** elem a **Jelentés \> Számla \> rptHeader \> rptHeaderPart1** származtatott elemeként jelenik meg.
 
-[![Egy szerkeszthető sablon aktuális szerkezetének áttekintése az Üzleti dokumentumkezelés munkaterületen](./media/er-bdm-update-structure2.gif)](./media/er-bdm-update-structure2.gif)
+[![Egy szerkeszthető sablon aktuális szerkezetének áttekintése az Üzleti dokumentumkezelés munkaterületen.](./media/er-bdm-update-structure2.gif)](./media/er-bdm-update-structure2.gif)
 
 ### <a name="update-the-structure-of-a-business-document-template-by-deleting-a-picture"></a>Üzleti dokumentumsablon szerkezetének frissítése a kép törlésével
 
@@ -85,7 +85,7 @@ Hajtsa végre a következő lépéseket az [Üzleti dokumentumkezelés áttekint
 4. A **Sablon szerkezete** ablaktáblán bontsa ki a **Jelentés \> Számla \> rptHeader \> rptHeaderPart1** elemet.
 5. Figyelje meg, hogy az **rptHeaderCompLogo** elem tétel már nem szerepel a Finance sablonstruktúrájában.
 
-[![Üzleti dokumentumsablon egy képének törlése az Üzleti dokumentumkezelő munkaterületen](./media/er-bdm-update-structure3.gif)](./media/er-bdm-update-structure3.gif)
+[![Üzleti dokumentumsablon egy képének törlése az Üzleti dokumentumkezelő munkaterületen.](./media/er-bdm-update-structure3.gif)](./media/er-bdm-update-structure3.gif)
 
 ### <a name="update-the-structure-of-a-business-document-template-by-adding-a-picture"></a>Üzleti dokumentumsablon szerkezetének frissítése egy kép hozzáadásával
 
@@ -97,7 +97,7 @@ Hajtsa végre a következő lépéseket az [Üzleti dokumentumkezelés áttekint
 6. A **Sablon szerkezete** ablaktáblán bontsa ki a **Jelentés \> Számla \> rptHeader \> rptHeaderPart1** elemet.
 7. Figyelje meg, hogy az új kép immár elemként szerepel a Finance sablonstruktúrájában.
 
-[![Üzleti dokumentumsablonhoz kép hozzáadása az Üzleti dokumentumkezelő munkaterületen](./media/er-bdm-update-structure4.gif)](./media/er-bdm-update-structure4.gif)
+[![Üzleti dokumentumsablonhoz kép hozzáadása az Üzleti dokumentumkezelő munkaterületen.](./media/er-bdm-update-structure4.gif)](./media/er-bdm-update-structure4.gif)
 
 ## <a name="related-links"></a>Kapcsolódó hivatkozások
 

@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 31798508e4cc71e31a30dc91acebfdde8226b16c
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: de8840b92307ba63d6d0c2cfa90536bd00696ec3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5937062"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349674"
 ---
 # <a name="change-the-sort-order-for-merchandising-entities"></a>Árusítási entitások rendezési sorrendjének módosítása
 
@@ -51,9 +51,9 @@ Ennek a műveletnek az elvégzése előtt a demóadatokat telepítenie kell a k�
 
 A csatorna navigációs hierarchiájának megjelenítési sorrendje tükröződni fog a központ számára a kereskedelmi termékek hierarchiájában, és kategóriánként kiadott termékeknél.
 
-![A termékek hierarchiájának egyéni sorrendje negatív értékekkel](./media/RetailProductHierarchyCustomSortedWithNegativeValues.png)
+![A termékek hierarchiájának egyéni sorrendje negatív értékekkel.](./media/RetailProductHierarchyCustomSortedWithNegativeValues.png)
 
-![Közzétett termékek kategóriák szerint, a termékek hierarchiája alapján egyéni módon rendezve](./media/ReleasedProductsByCategoryCustomSortedBasedOnRetailProductHierarchy.png)
+![Közzétett termékek kategóriák szerint, a termékek hierarchiája alapján egyéni módon rendezve.](./media/ReleasedProductsByCategoryCustomSortedBasedOnRetailProductHierarchy.png)
 
 ## <a name="configure-the-display-order-for-categories-in-the-channel-navigation-hierarchy"></a>A csatornanavigáció hierarchiájában megjelenítési sorrend konfigurálása a kategóriákhoz
 
@@ -77,11 +77,11 @@ Ennek a műveletnek az elvégzése előtt a demóadatokat telepítenie kell a k�
 
 A csatorna navigációs hierarchiájának megjelenítési sorrendje a központ, katalógus és csatornákban is tükröződik.
 
-![Csatornanavigáció hierarchiája egyéni módon rendezve](./media/ChannelNavCustomSorted.png)
+![Csatornanavigáció hierarchiája egyéni módon rendezve.](./media/ChannelNavCustomSorted.png)
 
-![Katalógus-navigációs hierarchia egyéni módon rendezve a csatorna navigációs hierarchiája alapján](./media/CatalogNavHierarchyCustomSortedBasedOnChannelNav.png)
+![Katalógus-navigációs hierarchia egyéni módon rendezve a csatorna navigációs hierarchiája alapján.](./media/CatalogNavHierarchyCustomSortedBasedOnChannelNav.png)
 
-![Pénztár egyéni módon rendezett kategóriákkal](./media/POSChannelCategoriesCustomSorted.png)
+![Pénztár egyéni módon rendezett kategóriákkal.](./media/POSChannelCategoriesCustomSorted.png)
 
 > [!NOTE]
 > Alapértelmezés szerint az egyéni rendezési sorrend funkció ki van kapcsolva. Ennek a funkciónak és egyéb funkcióknak a bekapcsolásával kapcsolatosan lásd: [Funkciókezelés](/dynamics365/unified-operations/fin-and-ops/get-started/feature-management/feature-management-overview).

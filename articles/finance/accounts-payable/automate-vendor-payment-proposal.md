@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-04-08
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 238123f59c3d85b2b2c64aed9d94c7d8af27eaf2
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9f19a6ed70445791433c2db2559f6922b9715c5e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5820811"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350646"
 ---
 # <a name="automate-vendor-payment-proposals"></a>Szállítói fizetési javaslatok automatizálása
 
@@ -97,11 +97,11 @@ Azt ajánljuk, hogy a szükségletei alapján mérje fel, hogy az automatizálá
 
 Miután létrehozta a szállítói kifizetési javaslat automatizálási sorozatát, az egyes fizetések előfordulásai megjelennek a folyamatok automatizálásának heti nézetében. A szállítói kifizetésekhez a folyamatok automatizálása heti nézet hozzá lett adva a **Szállítói kifizetések** munkaterülethez és a **Feldolgozás automatizálása** laphoz.
 
-[![A folyamatautomatizálás heti nézete a Szállítói kifizetések munkaterületen](./media/vendor-payment-proposal-1.png)](./media/vendor-payment-proposal-1.png)
+[![A folyamatautomatizálás heti nézete a Szállítói kifizetések munkaterületen.](./media/vendor-payment-proposal-1.png)](./media/vendor-payment-proposal-1.png)
 
 A **Szállítói kifizetések** munkaterület a folyamatok automatizálásának heti nézete csak a szállítói fizetési javaslat automatizálásait jeleníti meg. Megjeleníti az aktuális hétre vonatkozó összes kifizetési előfordulást, minden olyan jogi személyhez, amelyhez a bejelentkezett felhasználó rendelkezik biztonsági engedélyekkel. Ha például az AP kifizetési adminisztrátor felelős a USMF és a USSI vállalatok kifizetéseiért, akkor a szállítói kifizetési javaslat automatizálását a két vállalathoz látja, de más vállalatok esetében nem.
 
-[![Folyamatautomatizálás heti nézete az USMF és USSI vállalatokhoz](./media/vendor-payment-proposal-2.png)](./media/vendor-payment-proposal-2.png)
+[![Folyamatautomatizálás heti nézete az USMF és USSI vállalatokhoz.](./media/vendor-payment-proposal-2.png)](./media/vendor-payment-proposal-2.png)
 
 Minden előfordulás azt a vállalatot jeleníti meg amelyben a kifizetési napló létre lett vagy létre lesz hozva. Ha a kifizetéseket központosított kifizetésekkel hozzák létre, akkor az a vállalat jelenik meg, amelyben a kifizetések létre lesznek hozva. Az előfordulás nem feltétlenül mutatja meg, hogy mely vállalatok számlái lesznek kifizetve.
 

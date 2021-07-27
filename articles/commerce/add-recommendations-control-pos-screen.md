@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 38099909f169391c17760ac381af07f0848fc384
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 219b82809087e3f5f185bc92836ca300d064fc71
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797479"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348344"
 ---
 # <a name="add-recommendations-to-the-transaction-screen"></a>Ajánlatok hozzáadása a tranzakció képernyőjéhez
 
@@ -43,7 +43,7 @@ A Commerce használata esetén megjeleníthet termékajánlásokat a pénztáres
 6. A bejelentkezéstkor az alábbihoz hasonló oldal jelenik meg. Az elrendezés a bolthoz végzett testreszabásoktól függően eltérő lesz.
 
 
-    [![Elrendezéstervező](./media/screenlayout-pic-1.png)](./media/screenlayout-pic-1.png)
+    [![Elrendezéstervező.](./media/screenlayout-pic-1.png)](./media/screenlayout-pic-1.png)
 
 ## <a name="choose-a-display-option"></a>Válasszon ki egy megjelenítési beállítást
 
@@ -58,11 +58,11 @@ Két konfigurációs lehetőség áll rendelkezlésre. Válassza azt a lehetős�
 1. Csökkentse a tranzakciós sorok részletei terület magasságát úgy, hogy a tőle balra eső ügyfélpanellel egyforma magas legyen.
 
 
-    [![A tranzakciós sorok részletezési területének magassága csökkentve](./media/screenlayout-pic-2.png)](./media/screenlayout-pic-2.png)
+    [![A tranzakciós sorok részletezési területének magassága csökkentve.](./media/screenlayout-pic-2.png)](./media/screenlayout-pic-2.png)
 
 2. A bal oldali menüből húzza az ajánlások vezérlőt a tranzakciós sor részletei terület és a tranzakciós képernyőn lent középen látható gombrács közé. Méretezze át a vezérlőt, hogy elférjen.
 
-    [![Javaslatok vezérlő az elrendezéshez adva](./media/screenlayout-pic-3.png)](./media/screenlayout-pic-3.png)
+    [![Javaslatok vezérlő az elrendezéshez adva.](./media/screenlayout-pic-3.png)](./media/screenlayout-pic-3.png)
 
 
 3. Az **X** gombra kattintva zárja be az Elrendezéstervezőt.
@@ -77,13 +77,13 @@ Két konfigurációs lehetőség áll rendelkezlésre. Válassza azt a lehetős�
 
 2. Kattintson a **Testreszabás** lehetőségre.
 
-    [![Testreszabás – Lapvezérlő párbeszédpanel](./media/pic-5.png)](./media/pic-5.png)
+    [![Testreszabás – Lapvezérlő párbeszédpanel.](./media/pic-5.png)](./media/pic-5.png)
 
 3. Kattintson az **Új lap** elemre.
 4. Keresse meg a most felvett új lapot. Ehhez lehet, hogy le kell görgetnie.
 5. A **Tartalom** legördülő menüben válassza az **Ajánlott termékek** elemet.
 
-    [![Javasolt termékek kiválasztása a Tartalmak mezőben](./media/pic-6.png)](./media/pic-6.png)
+    [![Javasolt termékek kiválasztása a Tartalmak mezőben.](./media/pic-6.png)](./media/pic-6.png)
 
 6. A **Címke** mezőben adjon meg egy nevet a javaslatok lapnak Például „Javasolt termékek”.
 7. A **Kép** mezőben válassza ki a lapon megjelenítendő képet.

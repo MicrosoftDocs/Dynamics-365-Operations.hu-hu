@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-09021
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 063701d5cd5714febeb32907346d9f6e5c2a2ca1
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 9428eda880d534c700646b52310c6b8befdebaf2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804405"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353804"
 ---
 # <a name="pickup-information-module"></a>Átvételi információ modul
 
@@ -40,7 +40,7 @@ Ha több cikket választ ki több üzletben történő felvételhez, a felvétel
 
 A következő ábra egy példát mutat be az idősáv kiválasztására a felvételi információs modulon keresztül a pénztár oldalon.
 
-![Példa egy átvételi információk modulra egy fizetési oldalon](./dev-itpro/media/Curbside_timeslot_eCommerce.PNG)
+![Példa egy átvételi információk modulra egy fizetési oldalon.](./dev-itpro/media/Curbside_timeslot_eCommerce.PNG)
 
 ## <a name="module-properties"></a>Modul tulajdonságai
 
@@ -56,7 +56,7 @@ Az átvételi információk modulnak a pénztár laphoz való hozzáadásával �
 
 A következő ábra egy e-kereskedelmi fizetési oldalt mutat be, amely időközöket tartalmaz a sorelemek átvételéhez.
 
-![Egy e-kereskedelmi fizetési oldal példája, amely időközöket tartalmaz a sorelemek átvételéhez](./dev-itpro/media/Curbside_timeslot_eCommerce_checkoutsummary.PNG)
+![Egy e-kereskedelmi fizetési oldal példája, amely időközöket tartalmaz a sorelemek átvételéhez.](./dev-itpro/media/Curbside_timeslot_eCommerce_checkoutsummary.PNG)
 
 ## <a name="additional-resources"></a>További erőforrások
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: 0af3e1d589fd99cc722d8aedeb9596388a9e2e8c
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 629662d274d88d59c9b73a9d6b0d5c178331fe73
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018286"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351914"
 ---
 # <a name="configure-er-formats-to-use-parameters-that-are-specified-per-legal-entity"></a>ER formátumok konfigurálása a jogi személyenként meghatározott paraméterek használatára
 
@@ -78,17 +78,17 @@ Ebben a példában egy konfigurációt hoz létre a Litware, Inc. mintavállalat
 
     A **Paraméterezett hívások tanulási formátuma** ER formátum célja az adókimutatás létrehozása XML formátumban, amely az adózás több szintjét megjeleníti (rendes, csökkentett és nincs). Minden szint különböző számú adatot tartalmaz.
 
-    ![Az ER-formátum több szintje, Formátum paraméterezett hívások tanulásához](./media/RCS-AppSpecParms-ReviewFormat.PNG)
+    ![Az ER-formátum több szintje, Formátum paraméterezett hívások tanulásához.](./media/RCS-AppSpecParms-ReviewFormat.PNG)
 
 5.  A **Leképezés** lapon bontsa ki a **Modell**, **Adat** és **Összesítés** elemeket.
 
     A **Model.Data.Summary** adatforrás az összes adótranzakciót felsorolja. Ezek a tranzakciók áfakód alapján vannak összesítve. Az adott adatforrásnál a **Model.Data.Summary.Level** számított mezőt úgy konfigurálták, hogy adja vissza az egyes összesített rekord adózási szintjéhez tartozó kódot. Bármely, a **Model.Data.Summary** adatforrásból futásidőben lekérhető adókód esetén a számított mező szöveges értékként visszaadja az adózási szint kódját (**Rendes**, **Csökkentett**, **Nincs** vagy **Egyéb**). A **Model.Data.Summary.LEvel** számított mező a **Model.Data.Summary** adatforrás rekordjainak szűrésére szolgál, és megadja a szűrt adatokat az egyes, adózási szintet képviselő XML-elemekben a **Model.Data2.Level1**, **Model.Data2.Level2** és **Model.Data2.Level3** mezők használatával.
 
-    ![A Model.Data.Summary adatforrás az összes adótranzakciót visszadja](./media/RCS-AppSpecParms-ReviewFormat-Data2Fld.PNG)
+    ![A Model.Data.Summary adatforrás az összes adótranzakciót visszadja.](./media/RCS-AppSpecParms-ReviewFormat-Data2Fld.PNG)
 
     A **Model.Data.Summary.Level** számított mezője úgy van beállítva, hogy a tartalmaz egy ER-kifejezést. Az adókódokat (**VAT19**, **InVAT19**, **VAT7**, **InVAT7**, **THIRD**, és **InVAT0**) beégették ebbe a konfigurációba. Ennek megfelelően ez az ER formátum függ attól a jogi személytől, ahol ezeket az adókódokat konfigurálták.
 
-    ![A Model.Data.Summary.Level számított mező előre megadott adókódokkal](./media/RCS-AppSpecParms-ReviewFormat-LevelFld.PNG)
+    ![A Model.Data.Summary.Level számított mező előre megadott adókódokkal.](./media/RCS-AppSpecParms-ReviewFormat-LevelFld.PNG)
 
     A következő lépések végrehajtásával támogathatja az egyes jogi személyekhez tartozó adókódok másik csoportját:
 
@@ -128,7 +128,7 @@ Ezután hozzáad egy új ER formátumfelsorolást. Ennek a formátumfelsorolásn
 12. Válassza ismét a **Hozzáadás** lehetőséget.
 13. A **Név** mezőbe írja be az **Egyéb** szót.
 
-    ![Új rekord a Formázási enumerációk oldalon](./media/RCS-AppSpecParms-ConfigureFormat-Enum.PNG)
+    ![Új rekord a Formázási enumerációk oldalon.](./media/RCS-AppSpecParms-ConfigureFormat-Enum.PNG)
 
     Mivel az üzleti felhasználók különböző nyelveket használnak a jogi személytől függő áfakódok cosportjának meghatározására, azt ajánljuk, hogy az ilyen felsorolási értékeit olyan nyelvekre fordítsa le, amelyek az adott Finance-felhasználók számára preferált nyelvként vannak konfigurálva.
 
@@ -141,7 +141,7 @@ Ezután hozzáad egy új ER formátumfelsorolást. Ennek a formátumfelsorolásn
 20. Írja be a szöveget a **Lefordított szöveg** mezőbe: **keine Besteuerung**.
 21. Válassza a **Fordítás** elemet.
 
-    ![Szöveg fordítás kicsúsztatása](./media/RCS-AppSpecParms-ConfigureFormat-EnumTranslate.PNG)
+    ![Szövegfordítás kicsúsztatása.](./media/RCS-AppSpecParms-ConfigureFormat-EnumTranslate.PNG)
 
 22. Válassza a **Mentés** lehetőséget.
 23. Zárja be a **Formátumfelsorolások** lapot.
@@ -168,13 +168,13 @@ Ezután új adatforrást ad hozzá, amellyel megadhatja, hogy az üzleti felhasz
 10. Válassza ki a **Model.Data.Tax.Code** elemet.
 11. Válassza a **Hozzáadás** gombot (a jobbra nyilat).
 
-    ![Oszlopok kicsúsztatása](./media/RCS-AppSpecParms-ConfigureFormat-Lookup1.PNG)
+    ![Oszlopok kicsúsztatása.](./media/RCS-AppSpecParms-ConfigureFormat-Lookup1.PNG)
 
     Most megadta, hogy minden egyes, az adott adatforrásban az adózási szint felismerésére megadott szabály esetén az üzleti felhasználónak ki kell választania feltételként az egyik adókódot. Az üzleti felhasználó számára kiválasztható adókódok listáját visszaadja a **Model.Data.Tax** adatforrás. Mivel ez az adatforrás a **Név** mezőt tartalmazza, az áfakód neve megjelenik az üzleti felhasználó számára a keresésben megjelenő minden egyes adókódértékhez.
     
 12. Válassza ki az **OK** lehetőséget.
 
-    ![Kereséstervező lap](./media/RCS-AppSpecParms-ConfigureFormat-Lookup2.PNG)
+    ![Kereséstervező lap.](./media/RCS-AppSpecParms-ConfigureFormat-Lookup2.PNG)
 
     Az üzleti felhasználók több szabályt is hozzáadhatnak az adatforrás rekordjaiként. Minden rekordot egy sorkóddal számoz a rendszer. A szabályok a sorszámok növekvő sorrendjében kerülnek kiértékelésre.
 
@@ -188,13 +188,13 @@ Ezután új adatforrást ad hozzá, amellyel megadhatja, hogy az üzleti felhasz
 
     Észreveheti, hogy hozzáadott egy új adatforrást, ami az adózási szintet az **Adózási szintek listája** formátumfelsorolás értékeként adja vissza bármely olyan adókód esetén, amelyet az adatforrásnak a **Karakterlánc** adattípusú **Kód** paraméter argumentumaként átadtak.
     
-    ![Tervező lap formázása új adatforrással](./media/RCS-AppSpecParms-ConfigureFormat-SelectorFld.PNG)
+    ![Tervező lap formázása új adatforrással.](./media/RCS-AppSpecParms-ConfigureFormat-SelectorFld.PNG)
 
     A konfigurált szabályok értékelése a szabályok feltételeinek meghatározására kiválasztott mezők adattípusától függ. Ha a **numerikus** vagy a **dátum** típusú adattípusú mezőként beállított mezőt választja, akkor a feltételek eltérnek a **Karakterlánc** adattípusnál korábban leírt feltételektől. A **numerikus** és a **dátum** típusú mezők esetében a szabályt értéktartományként kell megadni. A szabály feltétele akkor tekinthető teljesítettnek, ha egy adatforrásnak átadott érték a konfigurált tartományban van.
     
     A következő ábrán egy példa látható az ilyen típusú beállításra. A **Karakterlánc adattípus** **Model.Data.Tax.Code** mezőjén kívül a **Valódi** adattípus **Modell.Tax.Summary.Base** mezőjét is használhatja a keresési adatforrás feltételeinek megadására.
     
-    ![A kereséstervező lap további oszlopokkal](./media/RCS-AppSpecParms-ConfigureFormat-SelectorFld2.PNG)
+    ![A kereséstervező lap további oszlopokkal.](./media/RCS-AppSpecParms-ConfigureFormat-SelectorFld2.PNG)
 
     Mivel a **Model.Data.Tax.Code** és a **Model.Tax.Summary.Base** mezőket kiválasztották ehhez a keresési adatforráshoz, az adott adatforrás egyes szabályainak konfigurálása a következő módon történik:
     
@@ -223,7 +223,7 @@ Mivel az üzleti felhasználók különböző nyelveket használnak a jogi szem�
 9.  Válassza a **Fordítás** elemet.
 10. Válassza ki az **OK** lehetőséget.
 
-    ![Az adatforrás tulajdonságainak kicsúsztatása](./media/RCS-AppSpecParms-ConfigureFormat-SelectorFldTranslate.PNG)
+    ![Az adatforrás tulajdonságainak kicsúsztatása.](./media/RCS-AppSpecParms-ConfigureFormat-SelectorFldTranslate.PNG)
 
 ### <a name="add-a-new-field-to-consume-the-configured-lookup"></a>Új mező hozzáadása a konfigurált keresés felhasználásához
 
@@ -236,12 +236,12 @@ Mivel az üzleti felhasználók különböző nyelveket használnak a jogi szem�
 7.  A **Receptúra mezőbe** adja meg: **Model.Selector(Model.Data.Summary.Code)**.
 8.  Válassza a **Mentés** lehetőséget.
 
-    ![A Model.Selector(Model.Data.Summary.Code) hozzáadása a Képlettervező laphoz](./media/RCS-AppSpecParms-ConfigureFormat-AddLevelByLookupFld.PNG)
+    ![A Model.Selector(Model.Data.Summary.Code) hozzáadása a Képlettervező laphoz.](./media/RCS-AppSpecParms-ConfigureFormat-AddLevelByLookupFld.PNG)
 
 9.  Zárja be a **Képletszerkesztő** lapot.
 10. Válassza ki az **OK** lehetőséget.
 
-    ![Formátumtervező lap az új hozzáadott képlettel](./media/RCS-AppSpecParms-ConfigureFormat-AddLevelByLookupFld2.PNG)
+    ![Formátumtervező lap az új hozzáadott képlettel.](./media/RCS-AppSpecParms-ConfigureFormat-AddLevelByLookupFld2.PNG)
 
     Észreveheti, hogy a **LevelByLookup** számított mező, amit hozzáadott, visszaadja az adózási szintet az **Adózási szintek listája** formátumfelsorolás értékeként az egyes összesített adótranzakciós rekordhoz. A rendszer a rekord adókódját átadja a **Model.Selector** keresési adatforrásnak, és az adott adatforráshoz tartozó szabályok csoportjának használatával választja ki a megfelelő adózási szintet.
 
@@ -269,7 +269,7 @@ Ezután módosítani fogja a meglévő számított mezőt, hogy a beállított k
 
 4.  A **Receptúra** mezőben adja meg: **CASE(@.LevelByLookup, TaxationLevel.'Rendes adózás', "Rendes", TaxationLevel.'Csökkentett adózás', "Csökkentett", TaxationLevel.'Nincs adózás', "Nincs", "Egyéb")**.
 
-    ![ER-művelettervező oldal](./media/RCS-AppSpecParms-ConfigureFormat-ChangeLookupFld.PNG)
+    ![ER-művelettervező oldal.](./media/RCS-AppSpecParms-ConfigureFormat-ChangeLookupFld.PNG)
     
     Figyelje meg, hogy a **Model.Data.Summary.Level** mező kifejezése most az adózási szintet adja vissza, az aktuális rekord adókódja, valamint az üzleti felhasználó által a **Model.Data.Selector** keresési adatforrásban beállított szabálycsoport alapján.
     

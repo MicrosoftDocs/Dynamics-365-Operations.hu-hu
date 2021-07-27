@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: 1392b767815722c17b1cc72d27fe2bb8a7c32281
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: d562f97ecc3c442be4231470167a0aae86f84fe5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796366"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345160"
 ---
 # <a name="product-search-and-customer-search-in-the-point-of-sale-pos"></a>Termék- és vevőkeresés a pénztárban (POS)
 
@@ -36,7 +36,7 @@ A termékek keresése alapértelmezés szerint az üzletszortiment alapján tör
 
 A **Katalógus módosítása** oldalon az alkalmazottak egyszerűen kiválaszthatnak minden üzletet, illetve végezhetnek keresést termékekre minden üzletben.
 
-![A katalógus módosítása](./media/Changecatalog.png "A katalógus módosítása")
+![A katalógus módosítása.](./media/Changecatalog.png "A katalógus módosítása")
 
 A helyi termékkeresés a következő terméktulajdonságokon belül történik:
 
@@ -59,9 +59,9 @@ A helyi termékkeresés a következő terméktulajdonságokon belül történik:
 - A kiskereskedők a termékkeresést most úgy is beállíthatják, hogy keresési javaslatok jelenjenek meg a terméknevek beírása közben. A funkció egy új beállítása a pénztári funkcióprofilban, a **Termékkeresés** nevű csoportban érhető el. A beállítás neve **Keresési javaslatok mutatása gépelés közben**. A funkció segítségével az alkalmazottak gyorsan megtalálhatják a terméket, amelyet keresnek, mivel nem kell manuálisan beírniuk a teljes nevét.
 - A termékkeresési algoritmus mostantól a **Keresési név** terméktulajdonságban is keresi a keresési kifejezéseket.
 
-![Termékjavaslatok](./media/Productsuggestions.png "Termékjavaslatok")
+![Termékjavaslatok.](./media/Productsuggestions.png "Termékjavaslatok")
 
-## <a name="customer-search"></a>Vevőkeresés
+## <a name="customer-search"></a>Ügyfélkeresés
 
 A vevőkereséssel különböző célokkal kereshetők vevők. Például lehet, hogy a pénztáros szeretné megnézni egy vevő kívánságlistáját vagy beszerzési előzményeit, vagy hozzá akarja adni a vevőt egy tranzakcióhoz. A keresési algoritmus egyezteti a keresési kifejezéseket és a következő vevőtulajdonságokban szereplő értékeket:
 
@@ -83,7 +83,7 @@ Globális kereséshez, az alkalmazottak választhatják az **Eredmények szűré
 
 A vevőkód nem jelenik meg a más jogi személyektől lekérdezett vevők esetében, mert a jelenlegi vállalatnál nem jött létre vevőkód ezekhez a felekhez. Ha azonban az alkalmazott megnyitja a vevő adatlapot, a rendszer automatikusan létrehozza a vevőkódot az adott félnek, és az üzlet vevői címjegyzékét is társítja a vevővel. Így a vevő a későbbiekben végzett helyi keresésekben is látható lesz.
 
-![Globális vevők keresése](./media/Globalcustomersearch.png "Globális vevők keresése")
+![Globális vevők keresése.](./media/Globalcustomersearch.png "Globális vevők keresése")
 
 ### <a name="additional-local-customer-search-capabilities"></a>További helyi vevőkeresési funkciók
 
@@ -94,11 +94,11 @@ Amikor a felhasználó egy telefonszámot keres, a rendszer figyelmen kívül ha
 
 A hagyományos vevőkeresés időigényes lehet, mivel több mező között keres. Ehelyett a pénztárosok kereshetnek a vevő egyik tulajdonságra, például a névre, az e-mail-címre vagy a telefonszámra. A vevőkeresési algoritmus által használt tulajdonságok együttes neve: *vevőkeresési feltételek*. A rendszergazda egyszerűen konfigurálhat egy vagy több kritériumot olyan rövidítésként, amelyek megjelennek a pénztárban. Mivel a keresés egyetlen feltétel korlátozódik, csak a releváns keresési eredmények jelennek meg, és a teljesítmény sokkal nagyobb, mint a szokásos vevő keresés teljesítménye. Az alábbi ábra mutatja a pénztár vevőkeresési rövidítéseit.
 
-![Vevők keresése – parancsikonok](./media/SearchShortcutsPOS.png "Vevők keresése – parancsikonok")
+![Vevők keresése – parancsikonok.](./media/SearchShortcutsPOS.png "Vevők keresése – parancsikonok")
 
 Keresési feltételek parancsikonokként történő beállításához a rendszergazda nyissa meg a **Kereskedelmi paraméterek** oldalt a Commerce szolgáltatásban, majd a **Pénztári keresési feltételek** fülön válassza ki a feltételeket, amelyeket szeretne parancsikonokként megjeleníteni.
 
-![Keresési rövidítések konfigurálása](./media/ConfigureShortcutsAX.png "Keresési rövidítések konfigurálása")
+![Keresési rövidítések konfigurálása.](./media/ConfigureShortcutsAX.png "Keresési rövidítések konfigurálása")
 
 > [!NOTE]
 > Ha túl sok rövidítést ad hozzá, a pénztár keresés sávjának legördülő menüje zsúfolttá fog válni, ami hatással lehet a keresés használhatóságára az alkalmazott számára. Javasoljuk, hogy csak annyi rövidítést adjon hozzá, amennyire szüksége van.

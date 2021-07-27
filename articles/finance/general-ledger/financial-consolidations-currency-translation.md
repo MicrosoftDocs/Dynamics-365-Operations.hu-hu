@@ -9,16 +9,17 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
+ms.custom: intro-internal
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 87bb31d6456356342773f38699a412aa72ea458e
-ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
+ms.openlocfilehash: 4e8d4f28c42f44dc01c92e51b5e9a69fe7f40fa0
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "6193905"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345380"
 ---
 # <a name="financial-consolidations-and-currency-translation-overview"></a>Pénzügyi konszolidáció és pénznemátváltás áttekintése
 
@@ -66,13 +67,13 @@ Az alábbiakban talál néhány konszolidációs esetet, amelyeket az Online kon
 ## <a name="legal-entity-setup"></a>Jogi személy beállítása
 Mielőtt feldolgozná a konszolidációt, be kell állítania a jogi személyt. A konszolidációt tetszőleges számú alkalommal futtathatja és az összes adat át lesz váltva forrásvállalat könyvelési pénzneméről a konszolidációs vállalat pénznemére. Emiatt a következő szervezeti felépítés esetében, he először az összes Észak-Amerikai vállalatot át kel váltania amerikai dollárba (USD) majd euróba (EUR), a szülő vállalat pénznemébe, legalább két konszolidációs vállalat szükséges.
 
-![Szervezeti felépítés](./media/organizational-structure.png "Szervezeti felépítés")
+![Szervezeti felépítés.](./media/organizational-structure.png "Szervezeti felépítés")
 
 Az előző szervezeti felépítés esetében rendelkeznie kell egy jogi személlyel az Észak-amerikai konszolidációhoz mivel a konszolidáció során a konszolidáció mindig forrásvállalat könyvelési pénznemből a konszolidációs vállalat pénznemére történik. Ebben a példában, ha az összes vállalat egyetlen konszolidációba kerül, a Mexikói leányvállalat át lesz váltva mexikói pesóból (MXN) EUR-ba, és nem a MXN-ből USD-be, majd EUR-ba.
 
 A jogi személy létrehozásakor megadhatja, hogy a vállalat használatos lesz, mind a konszolidációs folyamathoz mind az eltávolítási folyamathoz, vagy csak egy folyamathoz. Az alábbi példában a vállalat mindkét folyamathoz használva lesz. Fontos megjegyezni, hogy a konszolidált vállalatban nem adhat fel napi naplókat de feladhatja azokat az eltávolítási vállalatban. Ezért érdemes lehet egy külön eltávolítási vállalatot létrehoznia.
 
-![A konszolidációhoz és az eltávolításhoz egyaránt használt jogi személy](./media/sep-elimination-company.png "A konszolidációhoz és az eltávolításhoz egyaránt használt jogi személy")
+![A konszolidációhoz és az eltávolításhoz egyaránt használt jogi személy.](./media/sep-elimination-company.png "A konszolidációhoz és az eltávolításhoz egyaránt használt jogi személy")
 
 ## <a name="main-accounts-and-consolidation-account-groups"></a>Fő számlák és konszolidációs számlacsoportok
 Ki kell választania a Számlatükör konszolidációkának módját. Fő számlák konszolidálása során három lehetősége van a konszolidálási folyamat során.
@@ -81,11 +82,11 @@ Az első lehetőség , hogy a fő számlákat a forrásvállalatoktól használj
 
 A mási lehetőség az alapértelmezett konszolidációs számla megadása a **Fő számlák** oldalon. A számlát ekkor hozzá lesz rendelve a konszolidációs számlához. Ez a beállítás akkor lehet hasznos, ha különböző számlatükrök vannak, illetve a központ által meghatározott számlatükröt kell hozzárendelni.
 
-![A fő számlák lapon megadott alapértelmezett konszolidációs számla](./media/main-accounts.png "A fő számlák lapon megadott alapértelmezett konszolidációs számla")
+![A fő számlák lapon megadott alapértelmezett konszolidációs számla.](./media/main-accounts.png "A fő számlák lapon megadott alapértelmezett konszolidációs számla")
 
 A harmadik lehetőség a konszolidációsszámla-csoportok használata. Tetszés szerinti számú konszolidációsszámla-csoportot határozhat meg. Majd, a **További konszolidációs számlák** lapon csak leképezheti a fő számlát a számlatükörből, ahhoz a számlához, amelyre szüksége van a csoporthoz.
 
-![Hozzárendelés a További konszolidációs számlák lapon](./media/additional-consolidation-accounts.png "Hozzárendelés a További konszolidációs számlák lapon")
+![Hozzárendelés a További konszolidációs számlák lapon.](./media/additional-consolidation-accounts.png "Hozzárendelés a További konszolidációs számlák lapon")
 
 ## <a name="consolidating-online"></a>Online konszolidáció
 Az online konszolidáció részleteinek megadásával kapcsolatosan lásd: [Online pénzügyi konszolidációk](./consolidate-online.md).
@@ -97,7 +98,7 @@ A konszolidáció eredményének megtekintésének többféle módja is van:
 - Ellenőrizze a **Főkönyvi kivonat** listaoldalt a konszolidációs vállalatban+.
 - Konszolidációs tranzakciók listájában a **Konszolidációk** oldalon megtekintheti a dátum szerint létrehozott egyenelegeket minden egyes forrásvállalathoz minden egyes időszakra.
 
-    ![Konszolidációs tranzakciók a Konszolidációk oldalon](./media/managing-consolidation-transactions.png "Konszolidációs tranzakciók a Konszolidációk oldalon")
+    ![Konszolidációs tranzakciók a Konszolidációk oldalon.](./media/managing-consolidation-transactions.png "Konszolidációs tranzakciók a Konszolidációk oldalon")
 
 A Konszolidáció újrafuttatásához egyszerűen feldolgozhatja a konszolidációt. Azt is megteheti, hogy először kijelöli a **Tranzakciók eltávolítása** lehetőséget a **Konszolidációk** oldalon.
 Abban az esetben, ha a konszolidált számlán szereplő egyenlegek nem pontosak, korrigálhatja őket a **Záró időszaki kiigazítások** lapon.
@@ -118,7 +119,7 @@ Az eltávolítási beállítások a **Beállítás** területen találhatók a *
 
 Igény szerint beállíthatja az eltávolítási szabály érvényessége kezdetének és lejáratának dátumát. Az **Aktív** lehetőséget **Igen** értékre kell állítania, ha azt szeretné, hogy az eltávolítási szabály elérhető legyen az eltávolítási javaslati folyamat során. Válassza ki az **Eltávolítás** típus naplónevét.
 
-![Eltávolítási szabály alapvető tulajdonságai](./media/ledger-elimination-rule-journal.png "Eltávolítási szabály alapvető tulajdonságai")
+![Eltávolítási szabály alapvető tulajdonságai.](./media/ledger-elimination-rule-journal.png "Eltávolítási szabály alapvető tulajdonságai")
 
 Az alapvető tulajdonságok megadása után a tényleges feldolgozási szabályokat a **Sorok** gombra elem kiválasztásával határozhatja meg. Két opció létezik eltávolításokhoz: a eltávolíthatja a nettó változás összegét, vagy meghatározhat egy rögzített összeget.
 
@@ -126,7 +127,7 @@ Válassza ki a forrásszámlákat. Helyettesítő karakterként használhat csil
 
 A forrásszámlák kiválasztása után a **Számla meghatározása** használatával határozza meg a célvállalat használt számláját. Válassza a **Forrás** lehetőséget, ha ugyanazt a fő számlát szeretné használni, mint ami a forrásszámlában van megadva. Ha a **Felhasználó által meghatározott** lehetőséget választja, akkor meg kell adnia egy célszámlát.
 
-![Főkönyvi eltávolítási szabálysor oldala](./media/ledger-elimination-rule-line.png "Főkönyvi eltávolítási szabálysor oldala")
+![Főkönyvi eltávolítási szabálysor oldala.](./media/ledger-elimination-rule-line.png "Főkönyvi eltávolítási szabálysor oldala")
 
 A **Dimenzió meghatározása** mező úgy működik, mint a **Számla meghatározása** mező. Válassza a **Forrás** lehetőséget, így ugyanazokat a dimenziókat fogja használni a célvállalatnál és a forrásvállalatnál. Ha a **Felhasználó által meghatározott** lehetőséget választja, a **Cél dimenziói** menüpont kiválasztásával meg kell adnia a célvállalat dimenzióit. Majd válassza ki a forrásdimenziókat és a pénzügyi dimenziókat, valamint az eltávolítás forrásához használt értékeket.
 

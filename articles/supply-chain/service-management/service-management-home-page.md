@@ -9,18 +9,18 @@ ms.technology: ''
 ms.search.form: SMAServiceOrderTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f1d7c6960dc48bb1bb780ecbbb36a58a1bbd7352
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 565f907dc68bcdeac948619b7a4ccafdadeefc31
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908208"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360352"
 ---
 # <a name="service-management-overview"></a>Szolgáltatáskezelés áttekintése
 
@@ -47,7 +47,7 @@ A jelentéskészítő eszközök használatával figyelheti a szervizrendelés �
 
 A következő ábra bemutatja a **Szogáltatáskezelés** magas szintű üzleti folyamatait és megmutatja, hol integrálódnak a szolgáltatási folyamatok más modulokba.
 
-[![Szolgáltatáskezelés üzleti folyamat ábrája](./media/sm_home_page.gif)](./media/sm_home_page.gif)
+[![Szolgáltatáskezelés üzleti folyamat ábrája.](./media/sm_home_page.gif)](./media/sm_home_page.gif)
 
 ## <a name="service-management-at-a-glance"></a>Szolgáltatáskezelés egyetlen pillantással
 

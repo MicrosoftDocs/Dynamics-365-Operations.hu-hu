@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: v-anamir
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: e6c5081f71a18dfac83b7aea950395436b42f50e
-ms.sourcegitcommit: d18d9cdb175c9d42eafbed66352c24b2aa94258b
+ms.openlocfilehash: e8a3782e5beb7d16accc0a56447d5db1f1376dd8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5881036"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350184"
 ---
 # <a name="microsoft-office-style-user-interface-in-business-document-management"></a>Microsoft Office stílusú felhasználói felület az Üzleti dokumentumkezelés modulban
 
@@ -51,18 +51,18 @@ Kövesse az alábbi lépéseket a funkció bekapcsolásához az összes jogi sze
 
 1. Az **Üzleti dokumentumkezelés** munkaterületen válassza az **Új dokumentum** elemet.
 
-    ![Üzletidokumentum-kezelés munkaterület](./media/BDM_overview_new_template1.png)
+    ![Üzletidokumentum-kezelés munkaterület.](./media/BDM_overview_new_template1.png)
 
 2. A **Kiválasztás** fülön válassza ki a sablonként használni kívánt dokumentumot, majd válassza a **Dokumentum létrehozása** elemet.
 
-    ![Üzleti dokumentumok párbeszédpanel](./media/BDM_overview_new_template2.png)
+    ![Üzleti dokumentumok párbeszédpanel.](./media/BDM_overview_new_template2.png)
 
 3. Az új párbeszédpanelen, a **Cím** mezőben, módosítsa a címet szükség szerint. A program az automatikusan létrehozott új ER-formátumkonfiguráció elnevezésére használja a címszöveget. A konfiguráció vázlatverziója (**Customer FTI report (GER) másolata**) tartalmazza a szerkesztett sablont, és az ER-formátum futtatásá lesz használva az aktuális felhasználóhoz. A rendszer alap ER formátumból származó nem módosított eredeti sablon alapján futtatja ezt az ER formátumot bármely más felhasználó számára.
 4. A **Név** mezőben módosítsa az automatikusan létrehozandó szerkeszthető sablon első verziójának nevét.
 5. A **Megjegyzés** mezőben módosítsa a szerkeszthető sablon automatikusan létrehozott verziójának megjegyzéseit.
 6. A szerkesztési folyamat kezdetének jóváhagyásához kattintson az **OK** gombra.
 
-    ![Dokumentum-létrehozás párbeszédpanel](./media/BDM_overview_new_template3.png)
+    ![Dokumentum-létrehozás párbeszédpanel.](./media/BDM_overview_new_template3.png)
 
 Az **Új dokumentum** gomb lehetővé teszi, hogy egy másik szolgáltató által biztosított elektronikus jelentési (ER) formátum konfigurációban hozzunk létre és szerkesszünk egy sablont. Ebben a példában a szolgáltató a Microsoft. Az **Új dokumentum** elem kiválasztásakor az aktuális és más szolgáltatók által birtokolt összes sablon látható. Miután kiválasztja a sablont, szerkesztésre megnyílik. Ezt követően a szerkesztett sablon egy új, automatikusan létrejövő ER formátumkonfigurációban lesz tárolva.
 
@@ -71,16 +71,16 @@ A sablon feltöltése előtt kövesse ezeket a lépéseket, és adja meg a szük
 
 1. Az **Üzleti dokumentumkezelés** munkaterületen válassza az **Új dokumentum** elemet.
 
-    ![Üzletidokumentum-kezelés munkaterület](./media/BDM_overview_new_template1.png)
+    ![Üzletidokumentum-kezelés munkaterület.](./media/BDM_overview_new_template1.png)
     
 2. Az **Új sablon létrehozása** lap **Feltöltés** fül **Sablon** fülén válassza a **Tallózás** lehetőséget, és válassza ki a sablonként használni kívánt Excel-fájlt. A **Sablon** szakasz **Cím** és **Leírás** mezőit a program automatikusan kitölti. Illetve meghatározza az automatikusan létrehozott új ER-formátum konfiguráció nevét és leírását. Igény szerint módosíthatja ezeket a mezőket.
 3. A **Dokumentumtípus** szakaszban, a **Név** mezőben adja meg az üzleti dokumentum típusát. Ez az érték lesz használva a helyes adatforrás kereséséhez (azaz ER modellkonfiguráció).
 
-    ![Sablon fül](./media/BDM_overview_new_UI_import_21.jpg)
+    ![Sablon fül.](./media/BDM_overview_new_UI_import_21.jpg)
 
 4. Az **Adatforrás** fül **Szűrő** gyorslapján válassza a **Szűrő alkalmazása** lehetőséget. Az **Adatforrás** szakaszban a rendszer automatikusan kitölti a **Név** mezőt, vagy manuálisan kiválaszthat egy értéket. A szűrő használatával név, leírás, ország/régiókód és üzleti dokumentumtípus szerint keresheti meg a megfelelő adatforrásnevet.
 
-    ![Adatforrás fül](./media/BDM_overview_new_UI_import_31.jpg)
+    ![Adatforrás fül.](./media/BDM_overview_new_UI_import_31.jpg)
     
     > [!NOTE]
     > A **Szűrő** gyorslapot a helyes adatforrás kereséséhez használják (azaz ER modellkonfiguráció). Az összes szűrőmező szerkesztésével megkeresheti a feltöltött dokumentumnak leginkább megfelelő adatforrást.
@@ -89,7 +89,7 @@ A sablon feltöltése előtt kövesse ezeket a lépéseket, és adja meg a szük
     
 5. Válassza a **Hozzárendelés** lap **Automatikus észlelés** elemét. A **Gyökér definíció** mezőt a rendszer automatikusan kitölti, vagy manuálisan kiválaszthat egy értéket. Ezen a fülön a sablon és a modell elemeinek záró leképezése látható.
 
-    ![Leképezési fül](./media/BDM_overview_new_UI_import_41.jpg)
+    ![Leképezési fül.](./media/BDM_overview_new_UI_import_41.jpg)
     
    > [!NOTE]
    > A **Sablonstruktúra** szakasz leképezése az adatforrás címkéinek vagy leírásának teljes egyezését használja a felhasználó nyelvén és a sablon cellanevében.
@@ -102,11 +102,11 @@ Ha nincs szolgáltató az Elektronikus jelentéskészítésben, létrehozhat egy
 
 - Szolgáltató létrehozásához módosítsa a szolgáltató nevét a **Név** mezőben, frissítse az új szolgáltató internetcímét az **Internetcím** mezőben, majd a megerősítéshez kattintson az **OK** gombra.
 
-    ![Új szolgáltató létrehozása a BDM-ben](./media/bdm_create_provider.png)
+    ![Új szolgáltató létrehozása a BDM-ben.](./media/bdm_create_provider.png)
     
 - A meglévő szolgáltató aktiválásához válassza ki a szolgáltató nevét a **Konfigurációszolgáltató** mezőben, és válassza az **OK** gombot, a szolgáltató aktiválásához.
 
-    ![Szolgáltató aktiválása a BDM-ben](./media/bdm_choose_provider.png)
+    ![Szolgáltató aktiválása a BDM-ben.](./media/bdm_choose_provider.png)
 
 > [!NOTE]
 > Minden egyes BDM-sablon a konfiguráció szerzőjeként hivatkozik a szolgáltatóra. Ezért van szükség egy aktív szolgáltatóra a sablonhoz.

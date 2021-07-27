@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: bb342e700c9390e1eb9f2a9e9d67b874b3e19b8e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d50955d510dca21c3de160fd280ff53ba54926a5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5808256"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356464"
 ---
 # <a name="service-level-and-description"></a>Szolgáltatási szint és leírás
 
@@ -45,7 +45,7 @@ Munkarendelések létrehozásakor megadhatja, hogy az adott munkarendelés milye
 8. Ha a munkarendelés záró időpontját is meg szeretné adni a záró dátumon kívül, állítsa a **Záró dátum beállítása** lehetőséget **Igen** értékre. Ezután írja be a záró időpontot a **Záró időpont** mezőbe. Ha a beállítást **Nem** értékre állítja, akkor a program az aktuális időpontot használja.
 9. Válassza a **Mentés** lehetőséget.
 
-![Munkarendelések szolgáltatási szintje oldal](media/19-setup-for-work-orders.png)
+![Munkarendelések szolgáltatási szintje oldal.](media/19-setup-for-work-orders.png)
 
 ## <a name="create-a-description"></a>Leírás létrehozása
 

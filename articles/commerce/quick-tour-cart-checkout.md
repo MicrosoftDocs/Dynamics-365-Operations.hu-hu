@@ -9,17 +9,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.custom: intro-internal
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: a574494784e9a534307cceff584e047d870dc401
-ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
+ms.openlocfilehash: 81cbabb2499fc0fdf3c043c9b15e4429b036e3c8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "6027939"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352036"
 ---
 # <a name="cart-and-checkout-pages-overview"></a>Kosár és pénztár oldalainak áttekintése
 
@@ -37,7 +38,7 @@ A kosár lap egy bevásárlókosárként szolgál, és minden olyan cikket tarta
 
 A következő ábra egy olyan kosár-lapot mutat be, amely a modulkönyvtár és a „gyár” téma alapján készült.
 
-![Példa a kosár oldalra](./media/cart2.PNG)
+![Példa a kosár oldalra.](./media/cart2.PNG)
 
 A kosár lap fő törzse minden olyan cikket megjelenít, amelyet egy vevő hozzáadott a kosárhoz. Minden vonatkozó kedvezmény megjelenítésre kerül. A kedvezmények között a összetett kedvezmények is szerepelnek. A példák között szerepel a "„Vásároljon 3 terméket, és kap 10% kedvezményt” vagy a „Vásároljon egy üveget és egy hátizsákot, hogy 10% kedvezményt kapjon”. A rendelésösszesítő modul az engedmények, a szállítási költség, az adók stb. alkalmazása utáni összeget jeleníti meg. Van egy promóciós kód modul is, amely lehetővé teszi, hogy a vevő hozzáadja vagy eltávolítsa a promóciós kódokat.
 
@@ -53,7 +54,7 @@ A pénztár oldalon a vevők a rendelés leadásához szükséges adatokat adjá
 
 A következő ábra egy olyan pénztár lapot mutat be, amely a modulkönyvtár és a „gyár” téma alapján készült.
 
-![Példa a pénztár oldalra](./media/Checkout.PNG)
+![Példa a pénztár oldalra.](./media/Checkout.PNG)
 
 A pénztári lap fő törzse az a rész, ahol minden rendelési adatot gyűjtenek. Ez az információ tartalmazza a szállítási címet, a szállítási lehetőségeket és a fizetési adatokat. A pénztári folyamatoknak meghatározott lépéseket kell követnie, mivel az adatokat meghatározott sorrendben kell megadni a feldolgozáshoz. Például a szállítási címet meg kell adni, mielőtt a szállítási költségek kiszámíthatók lennének, és a kifizetés engedélyezhető lenne.
 

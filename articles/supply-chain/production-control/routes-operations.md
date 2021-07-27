@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 06e2439da464c53fd648aaf3e3659babdbc50acd
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: bfcbeaa64aa00f19dc72cf5256ead47654808ed9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6188934"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350498"
 ---
 # <a name="routes-and-operations"></a>Útvonalak és műveletek
 
@@ -45,7 +45,7 @@ Az útvonal leírja azoknak a műveleteknek a sorrendjét, amelyek egy termék v
 
 Az egyszerű útvonalak szekvenciálisak, és az útvonal csak egy kezdőponttal rendelkezik.  
 
-[![Egyszerű útvonal](./media/routes-and-operations-1-simple-route.png)](./media/routes-and-operations-1-simple-route.png)  
+[![Egyszerű útvonal.](./media/routes-and-operations-1-simple-route.png)](./media/routes-and-operations-1-simple-route.png)  
 
 Ha csak az egyszerű útvonalakat engedélyezi a Gyártásvezérlési paramétereknél, akkor a Supply Chain Management automatikusan generálja a műveletszámokat (10, 20, 30 és így tovább) az útvonal meghatározásakor.
 
@@ -53,7 +53,7 @@ Ha csak az egyszerű útvonalakat engedélyezi a Gyártásvezérlési paraméter
 
 Ha engedélyezi az összetettebb útvonalhálózatokat a Gyártásvezérlési paramétereknél, akkor olyan útvonalakat is megadhat, amelyek több kezdőponttal rendelkeznek, illetve olyan műveleteket is, amelyek párhuzamosan futhatnak.  
 
-[![Útvonalhálózat](./media/routes-and-operations-2-route-network.png)](./media/routes-and-operations-2-route-network.png)  
+[![Útvonalhálózat.](./media/routes-and-operations-2-route-network.png)](./media/routes-and-operations-2-route-network.png)  
 
 > [!NOTE]
 > - Minden egyes művelethez csak egy következő művelet tartozhat, és a teljes útvonalnak egyetlen művelettel kell befejeződnie.
@@ -64,7 +64,7 @@ Ha engedélyezi az összetettebb útvonalhálózatokat a Gyártásvezérlési pa
 
 Néha több, különböző tulajdonságokkal rendelkező üzemi erőforrás kombinációja szükséges egy művelet elvégzéséhez. Egy összeszerelési művelethez például szükség lehet egy gépre, egy szerszámra, továbbá minden két géphez egy dolgozóra, aki felügyeli a működését. Ez a példa párhuzamos műveletek segítségével modellezhető, ahol egy művelet ki van jelölve elsődleges műveletként, a többi pedig másodlagosként.  
 
-[![Elsődleges és másodlagos műveleteket tartalmazó útvonal](./media/routes-and-operations-3-parallel-operations.png)](./media/routes-and-operations-3-parallel-operations.png)  
+[![Elsődleges és másodlagos műveleteket tartalmazó útvonal.](./media/routes-and-operations-3-parallel-operations.png)](./media/routes-and-operations-3-parallel-operations.png)  
 
 Az elsődleges művelet általában a szűk keresztmetszetű erőforrást jelöli ki, és megszabja a másodlagos műveletek futtatási idejét. Azonban az olyan ütemezés során, amely véges kapacitást foglal magába, a mind az elsődleges műveletre, mind a másodlagos műveletekre ütemezett erőforrásoknak egyidejűleg elérhetőnek kell lenniük, illetve szabad kapacitással kell rendelkezniük.  
 

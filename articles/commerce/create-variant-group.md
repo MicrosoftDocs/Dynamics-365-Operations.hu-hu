@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 0462958d8225de145a8d886b096f96cd3f2cb5c5
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: b47f38375fc8925288db36f066ed7820bab3fe9b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799541"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353156"
 ---
 # <a name="create-a-variant-group"></a>Variánscsoport létrehozása
 
@@ -61,11 +61,11 @@ Attribútum hozzáadásához egy méretcsoporthoz kövesse az alábbi lépéseke
 
 A következő kép egy példát mutat be az „utcai pólóméretek” méretcsoportjára.
 
-![Méretcsoport létrehozása](media/create-variant-group.png)
+![Méretcsoport létrehozása.](media/create-variant-group.png)
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[Termékek adatainak áttekintése](../supply-chain/pim/product-information.md?toc=/dynamics365/commerce/toc.json)
+[Termékadatok áttekintése](../supply-chain/pim/product-information.md?toc=/dynamics365/commerce/toc.json)
 
 [Retail termékek beállítása](set-up-retail-products.md)
 

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 23124d36389b08726defbedbd1bab9a7eb43c197
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 9ececb030432028512ff2d75a772761df4d416a7
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023309"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356609"
 ---
 # <a name="set-up-withholding-tax-component-groups-for-the-tds-tax-type"></a>Adóelőleg összetevőcsoportok beállítása a TDS adótípusokhoz
 
@@ -31,7 +31,7 @@ Ez a témakör elmagyarázza, hogyan állíthatja be az adóelőleg-összetevőc
 
 1. Lépjen az **Adó \> Beállítás \> Adóelőleg \> Adóelőleg összetevőcsoportok** részhez.
 
-    [![Adóelőleg-összetevőcsoportok oldal](./media/apac-ind-TDS-8.png)](./media/apac-ind-TDS-8.png)
+    [![Adóelőleg-összetevőcsoportok oldal.](./media/apac-ind-TDS-8.png)](./media/apac-ind-TDS-8.png)
 
 2. Az **Adótípus** mezőben válassza ki a **TDS** lehetőséget a TDS adótípus adóelőleg összetevőcsoportjainak beállításához.
 3. Jelölje be a műveleti ablakban az **Új** lehetőséget az új sor létrehozásához.
