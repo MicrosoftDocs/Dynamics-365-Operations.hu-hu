@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 6fce4e2cb8c5507769533a875e23ccc4531abf51
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 2bb1f22c33de52f9a7bc00b450ce131d4d58d200
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020139"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352834"
 ---
 # <a name="tax-calculation-performance-affects-transactions"></a>Az adószámítás teljesítménye hatással van a tranzakciókra
 
@@ -36,7 +36,7 @@ Ezután meghatározhatja, hogy teljesülnek-e a következő feltételek:
 - Több munkamenet ugyanazt a tranzakciós adószámítást egyszerre dolgozza fel.
 - A tranzakciónak több sora van, és a nézetek valós időben frissülnek. Például az **Általános napló** lap **Számított áfaösszeg** mezőjét a program valós időben frissíti, amikor egy sor mezői megváltoznak.
 
-   [![Számított áfaösszeg mezője a Naplóbizonylat oldalon](./media/tax-calculation-bad-performance-impacts-transaction-Picture1.png)](./media/tax-calculation-bad-performance-impacts-transaction-Picture1.png)
+   [![Számított áfaösszeg mezője a Naplóbizonylat oldalon.](./media/tax-calculation-bad-performance-impacts-transaction-Picture1.png)](./media/tax-calculation-bad-performance-impacts-transaction-Picture1.png)
 
 Ha bármelyik feltétel teljesül, késleltesse az adószámítást.
 
@@ -53,11 +53,11 @@ Tekintse át a hívásverem idősorát, és ellenőrizze, hogy felmerülnek-e a 
 
 - A tranzakció következtében a rendszer ne válaszol a munkamenet befejeződéséig. Emiatt a tranzakció nem tudja kiszámítani az adóeredményt. A következő ábra megjeleníti a "Munkamenet befejeződött" üzenetmezőt, ami megjelenik.
 
-    [![Munkamenet befejeződött üzenet](./media/tax-calculation-bad-performance-impacts-transaction-Picture2.png)](./media/tax-calculation-bad-performance-impacts-transaction-Picture2.png)
+    [![Munkamenet befejeződött üzenet.](./media/tax-calculation-bad-performance-impacts-transaction-Picture2.png)](./media/tax-calculation-bad-performance-impacts-transaction-Picture2.png)
 
 - A **TaxUncommitted** metódusok több időt vesznek igénybe, mint a többi metódus. Például, az alábbi ábrán a **TaxUncommitted::updateTaxUncommitted()** metódus 43 347,42 másodpercet vesz igénybe, a többi metódus azonban 0,09 másodpercet.
 
-    [![Metódusok időtartamai](./media/tax-calculation-bad-performance-impacts-transaction-Picture3.png)](./media/tax-calculation-bad-performance-impacts-transaction-Picture3.png)
+    [![Metódusok időtartamai.](./media/tax-calculation-bad-performance-impacts-transaction-Picture3.png)](./media/tax-calculation-bad-performance-impacts-transaction-Picture3.png)
 
 ## <a name="customizing-and-calling-tax-calculation"></a>Adószámítás testreszabása és hívása
 

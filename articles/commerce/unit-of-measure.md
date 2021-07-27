@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 7d338ba207c9a101f5e224ca66555b16a457bcbc
-ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
+ms.openlocfilehash: 076d4a68362dbf11c5fcf223a836f075d07e27a3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "6271401"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350328"
 ---
 # <a name="apply-unit-of-measure-settings"></a>Mértékegység-beállítások alkalmazása
 
@@ -32,7 +32,7 @@ A termék különböző egységekben értékesíthető, például "darab", "pár
 
 A következő példában a Commerce központban egy termékhez be van állítva egy **db** (darab) értékesítési egység.
 
-![Példa olyan termékre, amely a Commerce központban mértékegységgel van konfigurálva](./media/Productunit-headquarters.PNG)
+![Példa olyan termékre, amely a Commerce központban mértékegységgel van konfigurálva.](./media/Productunit-headquarters.PNG)
 
 > [!NOTE]
 > A mértékegység alkalmazásának és megjelenítésének támogatása a Commerce rendszer 10.0.19-es verziójának kiadásától áll rendelkezésre.
@@ -54,11 +54,11 @@ A mértékegység-beállításokat használó modulok közé tartozik a vásárl
 
 A következő példában a termék részletező lapja (PDP) megjeleníti a termékhez tartozó mértékegységet (**db**).
 
-![Példa a mértékegységet megjelenítő PDP-re](./media/Productunit-PDP.png)
+![Példa a mértékegységet megjelenítő PDP-re.](./media/Productunit-PDP.png)
 
 A következő példában a termékgyűjtemény modul megjeleníti a termékhez tartozó mértékegységet (**db**).
 
-![Példa a mértékegységet megjelenítő gyűjteménymodulra](./media/Productunit-productcollection.png)
+![Példa a mértékegységet megjelenítő gyűjteménymodulra.](./media/Productunit-productcollection.png)
 
 ## <a name="additional-resources"></a>További erőforrások
 

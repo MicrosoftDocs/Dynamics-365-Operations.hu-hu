@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-11-17
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 056808b7d4d490bc4d60aa058108d159c1d4867c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: b3a8fe37ae97cf3b14f5121274603cd30de3304b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826251"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356775"
 ---
 # <a name="reduce-balance-depreciation-after-a-split"></a>Degresszív értékcsökkenés felosztás után
 
@@ -37,7 +37,7 @@ Például a következő feltételek vannak érvényben:
 - Az első pénzügyi év értékcsökkenése 18.000 dollár, a havi értékcsökkenés 150 dollár, majd az eszköz értékcsökkenése 2019 novemberéig 738,75 dollár.
 - 2019 novemberében az eszköz 80 százaléka feloszlik egy másik tárgyi eszközre.
 
-[![Degresszív értékcsökkenés felosztás után](./media/reduce-balance-depreciation-after-split.png)](./media/reduce-balance-depreciation-after-split.png)
+[![Degresszív értékcsökkenés felosztás után.](./media/reduce-balance-depreciation-after-split.png)](./media/reduce-balance-depreciation-after-split.png)
 
 Az eredeti eszköz értékcsökkenésének összege 1.822,25 dollár. Ez az összeg megegyezik az NBV-vel a felosztásos tranzakció feladása előtt (9111,25 dollár), valamint a felosztásos tranzakció feladása során keletkező beszerzési helyesbítés (-8000 dollár), valamint a felosztásos tranzakció során keletkező értékcsökkenési helyesbítés (711 dollár). Ezért a második év értékcsökkenése (1.822,25 × 18 százalék) ÷ 12 = 27,33 dollár.
 

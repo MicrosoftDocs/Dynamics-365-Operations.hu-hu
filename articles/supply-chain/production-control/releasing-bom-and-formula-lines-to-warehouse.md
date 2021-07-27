@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 5917d3f6acf6db6b5e3ceee1b399839542ce1f6f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 99047bd30b04ccaaa24edbb2e28d5288ed2872f9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811678"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350546"
 ---
 # <a name="release-bom-and-formula-lines-to-the-warehouse"></a>Az anyagjegyzék- és receptúrasorok kiadása a raktárba
 
@@ -61,7 +61,7 @@ Az **Anyagjegyzék- és receptúrasorok automatikus kiadása** kötegelt feladat
 
 A következő ábrán egy olyan termelési rendelés látható, amelyhez két munka tartozik, 10 és 20, amelyek lefedik az összeállítást és a csomagolást a termelési rendeléshez. Mindegyik feladat bizonyos anyagmennyiség felhasználására van beállítva. Az ábrán a kiadási időkorlátja, amelyet a zöld nyíl jelez az idő sora alatt, megegyezik a **(LessThanDate())** feltételnél megadott napok számával. A **(LessThanDate(2))** például azt jelzi, hogy a feladatnak csak két napos időkorláton belül kell kiadatlan mennyiségeket keresnie.
 
-![Példa egy termelési rendelésre, amelyhez két kötegelt feladat tartozik](media/bach-job-setup.PNG)
+![Példa egy termelési rendelésre, amelyhez két kötegelt feladat tartozik.](media/bach-job-setup.PNG)
 
 ## <a name="releasing-material-per-operation-number-or-in-proportion-to-the-amount-of-finished-goods"></a>Anyagok kiadása műveletszám szerint, vagy a késztermékek mennyiségének arányában
 
@@ -78,7 +78,7 @@ Az anyag kiadását meghatározó műveletek szabályozására használja a **Ki
 
 A következő ábrán egy termelési rendelés látható, amelyhez két művelet tartozik, 10 és 20. Ebben a példában, ha a kiadást a 10-es műveletre korlátozza, csak az M9203 anyag kiadása történik meg.
 
-![Példa anyag kiadására műveletszám szerint](media/two-operations.PNG)
+![Példa anyag kiadására műveletszám szerint.](media/two-operations.PNG)
 
 Ha gyors áttekintést szeretne arról, hogyan lehet kiadni a késztermékek arányában anyagokat, nézze meg ezt a rövid -YouTube-videót [a termelési rendelés kiadási folyamatának fejlesztéseiről](https://www.youtube.com/watch?v=Rm3ojAz6Zu0).
 

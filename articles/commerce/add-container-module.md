@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 8e1d2d600a00ab71348fbef2bc2f30cc53bc5314
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 59887b058346d55341e68d553ec5dfbc6eb365d6
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797791"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347566"
 ---
 # <a name="container-module"></a>Tárolómodul
 
@@ -42,7 +42,7 @@ A tárolómoduloknak három típusa támogatott: tároló, tároló 2 hellyel é
 
 A következő kép egy olyan tároló modult mutat be, amely a Commerce webhelykészítő egy körhinta modulját tartalmazza. Ebben a példában a tároló modul **Szélesség** tulajdonsága **Képernyő kitöltése** értékre van állítva.
 
-![Példa egy tárolómodulra](./media/ecommerce-container.PNG)
+![Példa egy tárolómodulra.](./media/ecommerce-container.PNG)
 
 ## <a name="container-module-properties"></a>Tárolómodul tulajdonságai
 

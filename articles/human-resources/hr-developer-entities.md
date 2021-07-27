@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 325bd8a9de07e3978ff6c513975a0e8db22854e0
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: c405d933adff08e2a4ce12dc53329f10a9ae89b7
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6054356"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346298"
 ---
 # <a name="dataverse-tables"></a>Dataverse-táblák
 
@@ -156,23 +156,23 @@ A következő, Human Resources-entitásokon alapuló Dataverse-táblák érhető
 
 ### <a name="job-and-job-position"></a>Feladat és feladat beosztása
 
-![Feladat és feladat beosztása](./media/HCMCommon-job-and-job-position-entity-diagram.png)
+![Feladat és feladat beosztása.](./media/HCMCommon-job-and-job-position-entity-diagram.png)
 
-### <a name="benefits"></a>Előnyök
+### <a name="benefits"></a>Juttatások
 
-![Előnyök](./media/HCMCommon-benefits-entity-diagram.png)
+![Juttatások.](./media/HCMCommon-benefits-entity-diagram.png)
 
 ### <a name="compensation"></a>Kompenzáció
 
-![Kompenzáció](./media/HCMCommon-compensation-entity-diagram.png)
+![Kompenzáció.](./media/HCMCommon-compensation-entity-diagram.png)
 
-### <a name="leave"></a>Kilépés
+### <a name="leave"></a>Szabadság
 
-![Kilépés](./media/HCMCommon-leave-entity-diagram.png)
+![Szabadság.](./media/HCMCommon-leave-entity-diagram.png)
 
 ### <a name="work-calendar"></a>Munkanaptár
 
-![Munkanaptár](./media/HCMCommon-work-calendar-entity-diagram.png)
+![Munkanaptár.](./media/HCMCommon-work-calendar-entity-diagram.png)
 
 ## <a name="see-also"></a>Lásd még
 

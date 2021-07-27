@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 20120-02-28
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 47867447e6d16a0fb4542c17ab184068300b2c1c
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 8f5c8f104d8304cf9a54efcdf6e22efbc3b356b3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019957"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348268"
 ---
 # <a name="seamless-offline-switch-for-gift-card-and-credit-memo-operations"></a>Zökkenőmentes offline kapcsoló ajándékutalvány- és jóváírási műveletek esetén
 
@@ -36,7 +36,7 @@ Ha azonban a pénztár elveszíti a kapcsolatot, miután egy ajándékutalványt
 
 Ha szeretné bekapcsolni a funkciót, hogy offline állapotban is el lehessen végezni azajándékutalvány-tranzakciókat, nyissa meg a **Feladás** lapot a **Commerce Paraméterek** lapon. Az lapon keresse meg az **Ajándékutalvány** gyorslapot, és az **Ajándékutalvány-tranzakciók lebonyolításának engedélyezése offline módban** elemet állítsa **Igen** értékre.
 
-![Offline ajándékutalvány-beállítás](../media/gift.png)
+![Offline ajándékutalvány-beállítás.](../media/gift.png)
 
 A Commerce paraméterek általában a gyorsítótárazva vannak. Ennek megfelelően a paraméter beállításának frissítése után a program a módosítást a csatornára történő szinkronizálás céljából kezdeményezi, és a módosítás akár 24 óráig is eltarthat. A módosítás azonnali érvénybe lépéséhez állítsa alaphelyzetbe a Microsoft Internet Information Services (IIS) szolgáltatást.
 
@@ -46,7 +46,7 @@ A belső ajándékutalványokhoz hasonlóan a jóváírások is központilag a C
 
 Ha szeretné bekapcsolni a funkciót, hogy offline állapotban is el lehessen végezni a jóváírási-tranzakciókat, nyissa meg a **Feladás** lapot a **Commerce Paraméterek** lapon. Az lapon keresse meg a **Jóváírás** gyorslapot, és az **Jóváírási-tranzakciók lebonyolításának engedélyezése offline módban** elemet állítsa **Igen** értékre.
 
-![Offline jóváírás beállítása](../media/creditmemo.png)
+![Offline jóváírás beállítása.](../media/creditmemo.png)
 
 A Commerce paraméterek általában a gyorsítótárazva vannak. Ennek megfelelően a paraméter beállításának frissítése után a program a módosítást a csatornára történő szinkronizálás céljából kezdeményezi, és a módosítás akár 24 óráig is eltarthat. A módosítások azonnali érvénybe léptetéséhez állítsa vissza az IIS-t.
 

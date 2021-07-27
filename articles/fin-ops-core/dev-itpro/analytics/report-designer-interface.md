@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 8a20cd71c9729b492403f02f3b5576351169a6e2
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 0b2e2ead990332f1afd338a430406e6d1db95347
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754350"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350136"
 ---
 # <a name="report-designer-interface"></a>Jelentéstervező felület
 
@@ -171,24 +171,24 @@ A szokásos eszköztár gyors hozzáférést biztosít a fájl és szerkesztési
 
 | Gomb                                                                                       | Leírás |
 |----------------------------------------------------------------------------------------------|-------------|
-| [![Új gomb](./media/rowc130389.png)](./media/rowc130389.png)                              | Új (üres) sordefiníció, oszlopdefiníció, jelentési-fa definíció vagy jelentésdefiníció létrehozása. |
-| [![Megnyitás gomb](./media/openfolderc130389.png)](./media/openfolderc130389.png)               | Nyisson meg egy korábbi sordefiníciót, oszlopdefiníciót, jelentési-fa definíciót vagy jelentésdefiníciót. |
-| [![Mentés gomb](./media/savec130389.png)](./media/savec130389.png)                           | Mentse az aktuális sordefiníciót, oszlopdefiníciót, jelentési-fa definíciót vagy jelentésdefiníciót. |
-| [![Másolás gomb](./media/copyc130389.png)](./media/copyc130389.png)                           | A kijelölt szöveg másolása a vágólapra. |
-| [![Kivágás gomb](./media/cutc130389.png)](./media/cutc130389.png)                              | A kijelölt szöveg törlése és másolása a vágólapra. |
-| [![Beillesztés gomb](./media/pastec130389.png)](./media/pastec130389.png)                        | Szöveg beszúrása a vágólapról. |
-| [![Visszavonás gomb](./media/undoc130389.png)](./media/undoc130389.png)                           | Utolsó művelet visszavonása. |
-| [![Újra gomb](./media/redoc130389.png)](./media/redoc130389.png)                           | Utolsó művelet sztornírozása. |
-| [![Keresés gomb](./media/findc130389.png)](./media/findc130389.png)                           | Nyissa meg a **Keresés és csere** párbeszédpanelt, amelynek segítségével szövegre tud rákeresni, illetve azt cserélni tudja az aktív ablakban. |
-| [![Sor beszúrása gomb](./media/insertrowc130389.png)](./media/insertrowc130389.png)           | Üres sor beszúrása a sordefinícióba vagy egy üres fejlécsor beszúrása az oszlopdefinícióba. Ez a gomb egy sordefinícióban vagy oszlopdefinícióban érhető el. |
-| [![Oszlop beszúrása gomb](./media/insertcolumnc130389.png)](./media/insertcolumnc130389.png)  | Üres oszlop beszúrása az oszlopdefinícióba. Ez a gomb egy oszlopdefinícióban érhető el. |
-| [![Zárolás gomb](./media/lockc130389.png)](./media/lockc130389.png)                           | Jelszó alkalmazása az aktuális építőelemre. Ez a gomb **Tervező** vagy **Rendszergazda** szerepkörrel rendelkező felhasználók részére érhető el. |
-| [![Sorhivatkozás gomb](./media/rowlinkc130389.png)](./media/rowlinkc130389.png)                 | Nyissa meg a **Sorhivatkozások** párbeszédpanelt, ahol be tudja állítani a sordefiníciókban és jelentési-fa definíciókban szereplő adathivatkozások forrásait. Ez a gomb egy sordefinícióban érhető el. |
-| [![Előresorolás gomb](./media/promotec130389.png)](./media/promotec130389.png)                  | A jelentési-fa definíció egy egységének előresorolása. Ha gyermekegységet jelöl ki, majd az **Előresorolás** lehetőségre kattint, a gyermekegység ugyanarra a szintre, mint szülőegység kerül átmozgatásra. |
-| [![Hátrasorolás gomb](./media/demotec130389.png)](./media/demotec130389.png)                     | A jelentési-fa definíció egy egységének hátrasorolása. Ha egy egységet kijelöl, majd a **Hátrasorolás** lehetőségre kattint, úgy az egység az azt megelőző szülő gyermeke lesz. |
-| [![Kibontás gomb](./media/expandtreebuttonc130389.png)](./media/expandtreebuttonc130389.png) | A jelentési-fa definíció összes egységének, a kijelölt egység szintjén történő kibontása. |
-| [![Összecsukás gomb](./media/collapsec130389.png)](./media/collapsec130389.png)               | A jelentési fa összecsukása. |
-| [![Súgó gomb](./media/helpc130389.png)](./media/helpc130389.png)                           | Nyissa meg a Súgót. |
+| [![Új gomb.](./media/rowc130389.png)](./media/rowc130389.png)                              | Új (üres) sordefiníció, oszlopdefiníció, jelentési-fa definíció vagy jelentésdefiníció létrehozása. |
+| [![Megnyitás gomb.](./media/openfolderc130389.png)](./media/openfolderc130389.png)               | Nyisson meg egy korábbi sordefiníciót, oszlopdefiníciót, jelentési-fa definíciót vagy jelentésdefiníciót. |
+| [![Mentés gomb.](./media/savec130389.png)](./media/savec130389.png)                           | Mentse az aktuális sordefiníciót, oszlopdefiníciót, jelentési-fa definíciót vagy jelentésdefiníciót. |
+| [![Másolás gomb.](./media/copyc130389.png)](./media/copyc130389.png)                           | A kijelölt szöveg másolása a vágólapra. |
+| [![Kivágás gomb.](./media/cutc130389.png)](./media/cutc130389.png)                              | A kijelölt szöveg törlése és másolása a vágólapra. |
+| [![Beillesztés gomb.](./media/pastec130389.png)](./media/pastec130389.png)                        | Szöveg beszúrása a vágólapról. |
+| [![Visszavonás gomb.](./media/undoc130389.png)](./media/undoc130389.png)                           | Utolsó művelet visszavonása. |
+| [![Újra gomb.](./media/redoc130389.png)](./media/redoc130389.png)                           | Utolsó művelet sztornírozása. |
+| [![Keresés gomb.](./media/findc130389.png)](./media/findc130389.png)                           | Nyissa meg a **Keresés és csere** párbeszédpanelt, amelynek segítségével szövegre tud rákeresni, illetve azt cserélni tudja az aktív ablakban. |
+| [![Sor beszúrása gomb.](./media/insertrowc130389.png)](./media/insertrowc130389.png)           | Üres sor beszúrása a sordefinícióba vagy egy üres fejlécsor beszúrása az oszlopdefinícióba. Ez a gomb egy sordefinícióban vagy oszlopdefinícióban érhető el. |
+| [![Oszlop beszúrása gomb.](./media/insertcolumnc130389.png)](./media/insertcolumnc130389.png)  | Üres oszlop beszúrása az oszlopdefinícióba. Ez a gomb egy oszlopdefinícióban érhető el. |
+| [![Zárolás gomb.](./media/lockc130389.png)](./media/lockc130389.png)                           | Jelszó alkalmazása az aktuális építőelemre. Ez a gomb **Tervező** vagy **Rendszergazda** szerepkörrel rendelkező felhasználók részére érhető el. |
+| [![Sorhivatkozás gomb.](./media/rowlinkc130389.png)](./media/rowlinkc130389.png)                 | Nyissa meg a **Sorhivatkozások** párbeszédpanelt, ahol be tudja állítani a sordefiníciókban és jelentési-fa definíciókban szereplő adathivatkozások forrásait. Ez a gomb egy sordefinícióban érhető el. |
+| [![Előresorolás gomb.](./media/promotec130389.png)](./media/promotec130389.png)                  | A jelentési-fa definíció egy egységének előresorolása. Ha gyermekegységet jelöl ki, majd az **Előresorolás** lehetőségre kattint, a gyermekegység ugyanarra a szintre, mint szülőegység kerül átmozgatásra. |
+| [![Hátrasorolás gomb.](./media/demotec130389.png)](./media/demotec130389.png)                     | A jelentési-fa definíció egy egységének hátrasorolása. Ha egy egységet kijelöl, majd a **Hátrasorolás** lehetőségre kattint, úgy az egység az azt megelőző szülő gyermeke lesz. |
+| [![Kibontás gomb.](./media/expandtreebuttonc130389.png)](./media/expandtreebuttonc130389.png) | A jelentési-fa definíció összes egységének, a kijelölt egység szintjén történő kibontása. |
+| [![Összecsukás gomb.](./media/collapsec130389.png)](./media/collapsec130389.png)               | A jelentési fa összecsukása. |
+| [![Súgó gomb.](./media/helpc130389.png)](./media/helpc130389.png)                           | Nyissa meg a Súgót. |
 
 ### <a name="formatting-toolbar"></a>Formázás eszköztár
 
@@ -196,16 +196,16 @@ A formázás eszköztár egyszerű hozzáférést biztosít a stílus parancsokh
 
 | Gomb                                                                                                       | Leírás                                             |
 |--------------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
-| [![Betűstílus gomb](./media/formattingc130389.png)](./media/formattingc130389.png)                         | A kijelölt betűstílus alkalmazása az aktuális szövegre.      |
-| [![Betűtípus gomb](./media/fonttype.png)](./media/fonttype.png)                                                 | A kijelölt betűtípus alkalmazása az aktuális szövegre.              |
-| [![Betűméret gomb](./media/fontsize.png)](./media/fontsize.png)                                            | A kijelölt (pontban megadott) betűméret alkalmazása az aktuális szövegre. |
-| [![Félkövér gomb](./media/boldc130389.png)](./media/boldc130389.png)                                           | Az aktuális szöveg félkövérre állítása.                             |
-| [![Dőlt gomb](./media/italicsc130389.png)](./media/italicsc130389.png)                                   | Az aktuális szöveg dőltre állítása.                           |
-| [![Aláhúzás gomb](./media/underlinec130389.png)](./media/underlinec130389.png)                            | Az aktuális szöveg aláhúzása.                             |
-| [![Behúzás csökkentése gomb](./media/outdentlsc130389.png)](./media/outdentlsc130389.png)                      | Az aktuális szöveg behúzásának csökkentése.                |
-| [![Behúzás növelése gomb](./media/indentlsc130389.png)](./media/indentlsc130389.png)                        | Az aktuális szöveg behúzásának növelése.                |
-| [![Háttérszín gomb](./media/fillbackgroundcolorc130389.png)](./media/fillbackgroundcolorc130389.png) | Az aktuális cella háttérszínének módosítása.        |
-| [![Betűszín gomb](./media/fontcolorc130389.png)](./media/fontcolorc130389.png)                           | Az aktuális szöveg színének módosítása.                   |
+| [![Betűstílus gomb.](./media/formattingc130389.png)](./media/formattingc130389.png)                         | A kijelölt betűstílus alkalmazása az aktuális szövegre.      |
+| [![Betűtípus gomb.](./media/fonttype.png)](./media/fonttype.png)                                                 | A kijelölt betűtípus alkalmazása az aktuális szövegre.              |
+| [![Betűméret gomb.](./media/fontsize.png)](./media/fontsize.png)                                            | A kijelölt (pontban megadott) betűméret alkalmazása az aktuális szövegre. |
+| [![Félkövér gomb.](./media/boldc130389.png)](./media/boldc130389.png)                                           | Az aktuális szöveg félkövérre állítása.                             |
+| [![Dőlt gomb.](./media/italicsc130389.png)](./media/italicsc130389.png)                                   | Az aktuális szöveg dőltre állítása.                           |
+| [![Aláhúzás gomb.](./media/underlinec130389.png)](./media/underlinec130389.png)                            | Az aktuális szöveg aláhúzása.                             |
+| [![Behúzás csökkentése gomb.](./media/outdentlsc130389.png)](./media/outdentlsc130389.png)                      | Az aktuális szöveg behúzásának csökkentése.                |
+| [![Behúzás növelése gomb.](./media/indentlsc130389.png)](./media/indentlsc130389.png)                        | Az aktuális szöveg behúzásának növelése.                |
+| [![Háttérszín gomb.](./media/fillbackgroundcolorc130389.png)](./media/fillbackgroundcolorc130389.png) | Az aktuális cella háttérszínének módosítása.        |
+| [![Betűszín gomb.](./media/fontcolorc130389.png)](./media/fontcolorc130389.png)                           | Az aktuális szöveg színének módosítása.                   |
 
 ### <a name="report-designer-toolbar"></a>Jelentéstervező eszköztár
 
@@ -213,12 +213,12 @@ A Jelentéstervező eszköztár gyors hozzáférést biztosít a Jelentéstervez
 
 | Gomb                                                                                              | Leírás |
 |-----------------------------------------------------------------------------------------------------|-------------|
-| [![Jelentésdefiníció gomb](./media/reportc130389.png)](./media/reportc130389.png)                 | Az **Ablak** menüben felsorolt jelentésdefiníció megjelenítése. |
-| [![Sordefiníció gomb](./media/rowc130389.png)](./media/rowc130389.png)                          | Az aktív jelentésdefinícióhoz rendelt sordefiníció megjelenítése. |
-| [![Oszlopdefiníció gomb](./media/columnc130389.png)](./media/columnc130389.png)                 | Az aktív jelentésdefinícióhoz rendelt oszlopdefiníció megjelenítése. |
-| [![Jelentési fa definíció gomb](./media/treec130389.png)](./media/treec130389.png)             | Az aktív jelentésdefinícióhoz rendelt jelentési-fa definíció megjelenítése. |
-| [![Jelentésmegjelenítő gomb](./media/reportviewerc130389.png)](./media/reportviewerc130389.png)         | A Jelentésmegjelenítő megnyitása, és a létrehozott jelentés legfrissebb verziójának megjelenítése. Ez a gomb egy jelentésdefinícióban érhető el, ha már legalább egy jelentést létrehozott. |
-| [![Jelentés létrehozása gomb](./media/generate-to-ddvc130389.png)](./media/generate-to-ddvc130389.png) | Jelentés készítése az aktív jelentésdefiníció alapján. Ez a gomb a jelentésdefiníciókból érhető el. |
+| [![Jelentésdefiníció gomb.](./media/reportc130389.png)](./media/reportc130389.png)                 | Az **Ablak** menüben felsorolt jelentésdefiníció megjelenítése. |
+| [![Sordefiníció gomb.](./media/rowc130389.png)](./media/rowc130389.png)                          | Az aktív jelentésdefinícióhoz rendelt sordefiníció megjelenítése. |
+| [![Oszlopdefiníció gomb.](./media/columnc130389.png)](./media/columnc130389.png)                 | Az aktív jelentésdefinícióhoz rendelt oszlopdefiníció megjelenítése. |
+| [![Jelentési fa definíció gomb.](./media/treec130389.png)](./media/treec130389.png)             | Az aktív jelentésdefinícióhoz rendelt jelentési-fa definíció megjelenítése. |
+| [![Jelentésmegjelenítő gomb.](./media/reportviewerc130389.png)](./media/reportviewerc130389.png)         | A Jelentésmegjelenítő megnyitása, és a létrehozott jelentés legfrissebb verziójának megjelenítése. Ez a gomb egy jelentésdefinícióban érhető el, ha már legalább egy jelentést létrehozott. |
+| [![Jelentés létrehozása gomb.](./media/generate-to-ddvc130389.png)](./media/generate-to-ddvc130389.png) | Jelentés készítése az aktív jelentésdefiníció alapján. Ez a gomb a jelentésdefiníciókból érhető el. |
 
 ## <a name="additional-resources"></a>További erőforrások
 

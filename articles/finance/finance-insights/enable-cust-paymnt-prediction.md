@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: ae957f592ad9a1237817fec5d4172295f9a53020
-ms.sourcegitcommit: 655b0e16c7aef6182cd58bc816b901470e1bb2ce
+ms.openlocfilehash: a9b2e8d46debf8e065361d85f10162cda56b62e8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "6222585"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349034"
 ---
 # <a name="enable-customer-payment-predictions-preview"></a>Vevői fizetési előrejelzések engedélyezése (előzetes verzió)
 
@@ -51,7 +51,7 @@ Ez a témakör azt mutatja be, hogyan lehet bekapcsolni és konfigurálni a Vev�
 
     1. Nyissa meg a **Jóváírás és gyűjtemények \> Beállítás \> Pénzügyi elemzés \> Pénzügyi elemzés paraméterei** lehetőséget.
 
-        [![A Pénzügyi elemzés paraméterei lap a funkció konfigurálása előtt](./media/finance-insights-parameters.png)](./media/finance-insights-parameters.png)
+        [![A Pénzügyi elemzés paraméterei lap a funkció konfigurálása előtt.](./media/finance-insights-parameters.png)](./media/finance-insights-parameters.png)
 
     2. A **Pénzügyi elemzési paraméterek** lap **Ügyfélfizetési elemzések** lapján válassza az **Előrejelzési modellhivatkozásban használt adatmezők megtekintése** lehetőséget az **Előrejelzési modell adatai** lap megnyitásához. Itt megtekintheti a mesterséges intelligencia (AI) előrejelzési modelljének létrehozásához használt mezők alapértelmezett listáját az ügyfelek fizetési előrejelzéseihez.
 
@@ -77,7 +77,7 @@ Ez a témakör azt mutatja be, hogyan lehet bekapcsolni és konfigurálni a Vev�
 
 Miután a funkció be van kapcsolva és konfigurálva van, és az előrejelzési modell létrejött és működik, a **Pénzügyi elemzések paraméterei** lap **Előrejelzési modell** szakasza a modell pontosságát mutatja, ahogy az az alábbi ábrán is látható.
 
-[![Az előrejelzési modell pontossága a Pénzügyi elemzési paraméterek oldalon](./media/finance-insights-parameters-accuracy.png)](./media/finance-insights-parameters-accuracy.png)
+[![Az előrejelzési modell pontossága a Pénzügyi információk paraméterei oldalon.](./media/finance-insights-parameters-accuracy.png)](./media/finance-insights-parameters-accuracy.png)
 
 ## <a name="release-details"></a>Kiadás adatai
 

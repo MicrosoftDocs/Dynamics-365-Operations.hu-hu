@@ -9,17 +9,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.custom: intro-internal
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: c61686615495ac64efccf84c697e0e1d594dcaf9
-ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
+ms.openlocfilehash: 7efd9096a85ccafd114448f9ba7ca924c198aacb
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "6027963"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352060"
 ---
 # <a name="account-management-pages-overview"></a>A fiókkezelési oldalak áttekintése
 
@@ -35,7 +36,7 @@ Amikor egy vevő aláírja bejelentkezik, és kiválasztja a **Saját fiók** le
 
 A következő ábra a fiókkezelés kezdőoldalát szemlélteti.
 
-![Példa a fiókkezelés érkezési oldalára](./media/Account-Management.PNG)
+![Példa a fiókkezelés érkezési oldalára.](./media/Account-Management.PNG)
 
 ### <a name="my-profile-page"></a>Saját profillap
 
@@ -43,7 +44,7 @@ A **Saját profil** lap megjeleníti a vevő fiókjának adatait, például a ne
 
 A következő ábra egy olyan **Saját profil** lap példáját mutatja be, amely a modulkönyvtár és a „gyár” téma alapján készült.
 
-![Példa a Saját profil lapra](./media/Account-Management-MyProfile.PNG)
+![Példa a Saját profil lapra.](./media/Account-Management-MyProfile.PNG)
 
 ### <a name="addresses-page"></a>Címek lap
 
@@ -51,7 +52,7 @@ A **Címek** lap lehetővé teszi, hogy a vevő címeket adjon hozzá a saját f
 
 A következő ábra a **Címek** oldalt szemlélteti.
 
-![Példa egy Címek lapra](./media/Account-Management-Address.png)
+![Példa egy Címek lapra.](./media/Account-Management-Address.png)
 
 ### <a name="order-history-and-order-details-pages"></a>Rendelési előzmények és Rendelési részletek lapjai
 
@@ -59,11 +60,11 @@ A **Rendelési előzmények** lap az összes olyan rendelés összesítését je
 
 A következő ábra a **Rendelési előzmények** oldalt szemlélteti.
 
-![Példa egy Rendelési előzmények lapra](./media/Account-Management-OrderHistory.PNG)
+![Példa egy Rendelési előzmények lapra.](./media/Account-Management-OrderHistory.PNG)
 
 A következő ábra a **Rendelés részletei** oldalt szemlélteti.
 
-![Példa egy Rendelési részletei lapra](./media/Account-Management-OrderDetails.PNG)
+![Példa egy Rendelési részletei lapra.](./media/Account-Management-OrderDetails.PNG)
 
 ### <a name="loyalty-program-page"></a>Hűségprogram lap
 
@@ -71,7 +72,7 @@ A **Hűségprogram** lap lehetővé teszi, hogy a vevő belépjen egy hűségpro
 
 A következő ábrán a **Hűségprogram** lap egy példája látható.
 
-![Példa egy Hűségprogram lapra](./media/Account-Management-Loyalty.PNG)
+![Példa egy Hűségprogram lapra.](./media/Account-Management-Loyalty.PNG)
 
 ### <a name="wishlist-page"></a>Kívánságlista oldala
 
@@ -79,7 +80,7 @@ A **Kívánságlista** lap megjeleníti azoknak a cikkeknek a listáját, amelye
 
 A következő ábrán a **Kívánságlista** lap egy példája látható.
 
-![Példa a Kívánságlista lapra](./media/Account-Management-Wishlist.PNG)
+![Példa a Kívánságlista lapra.](./media/Account-Management-Wishlist.PNG)
 
 A fiókkezelés modulokkal és azok szerkesztésével kapcsolatban a következő témakör tartalmaz további tájékoztatást: [Fiókok kezelése](account-management.md).
 

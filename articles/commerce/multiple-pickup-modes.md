@@ -12,12 +12,12 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: ae7df6679c261b5e5dcd39e4ca6fe0e21d993927
-ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
+ms.openlocfilehash: 9516e9e1bd9725e8bd2eec81c5e2b70c8257bc7f
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "6216767"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353132"
 ---
 # <a name="enable-multiple-pickup-delivery-modes-for-customer-orders"></a>Több felvételi szállítási mód engedélyezése a vevői rendelésekhez
 
@@ -32,7 +32,7 @@ A funkció használatához kapcsolja be a **Több felvételi szállítási mód 
 
 A Commerce 10.0.15-ös és korábbi verziójában a szervezetek csak egy szállítási módot határozhatnak meg a kijelölt felvételi kézbesítési szállítási módként. Ez a definíció a **Kereskedelmi paraméterek** lapon történik. A 10.0.16-os és újabb verziókban, amikor bekapcsolja a **Több felvételi szállítási mód engedélyezése** funkciót, a **Kereskedelmi paraméterek** oldalon korábban a felvételi kézbesítési módként meghatározott kézbesítési mód automatikusan átkerül a felvételi kézbesítési módok új konfigurációjába.
 
-![Átvételi szállítási módok a Kereskedelmi paraméterek oldalon](media/multiplepickupparameter.png)
+![Átvételi szállítási módok a Kereskedelmi paraméterek oldalon.](media/multiplepickupparameter.png)
 
 Miután bekapcsolta a **Több felvételi szállítási mód engedélyezése** funkciót, a **Kereskedelmi paraméterek** lap **Vevői rendelések** lapjának **Szállítási módok** gyorslapján több felvételi szállítási módot is definiálhat az **Átvételi szállítási mód** rácsban.
 
@@ -40,7 +40,7 @@ A **Kiszállítási kézbesítési mód** és az **Elektronikus kézbesítési m
 
 További felvételi kézbesítési módok konfigurálása előtt meg kell határoznia a kézbesítési módokat. A Commerce központ **Szállítási módok** lapján adja hozzá azokat a szállítási módokat, amelyeket átvételi szállítási módoknak kell tekinteni. Győződjön meg arról, hogy minden konfiguráció befejeződött. Ha például az online vásárlóknak bolt előtti szállítási lehetőséget kínál bizonyos üzletek számára, akkor egy új szállítási módot kell létrehoznia erre a célra. Ez a szállítási mód a "bolt előtti felvétel" leírással hozható létre. Ezután biztosítani kell azt, hogy a "bolt előtti felvétel" szállítási mód le legyen képezve az összes Commerce csatornához, amelyek ajánlhatják ezt beleértve azokat az online áruházakat is, amelyek ezt a lehetőséget kínálják, valamint az ezt a teljesítési módot kínáló egyes üzletcsatornákat. A szállítási módokat a termékekhez is kapcsolni kell. Ebben a példában, ha vannak olyan termékek, amelyek nem értékesíthetők az "üzlet előtti" használatával, meg kell győződni arról, hogy ezek a cikkek ki vannak zárva. Ha végzett az új szállítási módok hozzáadásával, futtassa a **Kézbesítési módok feldolgozása** feladatot a kézbesítési mód, a csatornák és a cikkek közötti kapcsolatok létrehozásához. Miután a feladatbefejeződött, nyissa meg a **Terjesztési ütemezés** lapot a Commerce központban, és futtassa az **1120**-as terjesztési feladatot, hogy a megfelelő Commerce-csatorna-adatbázisok frissüljenek az új szállítási mód konfigurációjával.
 
-![Példa a bolt előtti felvétel szállítási konfigurációjának módjára](media/pickupmodes.png)
+![Példa a bolt előtti felvétel szállítási konfigurációjának módjára.](media/pickupmodes.png)
 
 Miután definiálta a további felvételi kézbesítési módokat, adja hozzá őket az **Átvételi szállítási mód** rácshoz a **Kereskedelmi paraméterek** oldalon. Ezután futtassa a megfelelő terjesztési feladatokat a megfelelő Commerce-csatorna-adatbázisok frissítéséhez a konfiguráció módosításával.
 
@@ -69,16 +69,16 @@ Ha egy csatornához több felvételi kézbesítési mód is rendelkezésre áll,
 
 - Az e-kereskedelmi csatornákban a vásárlók bármilyen érvényes átvételi szállítási módot választhatnak, amely elérhető. Például egy kiskereskedő két felvételi szállítási módot határoz meg (bolton belüli felvétel és útszéli felvétel), mindkettő az **Átvételi szállítási mód** rácsban van konfigurálva, és mindkettő érvényes a rendelésteljesítési csatornára és a termékre, amelyet a vásárló jelenleg vásárol. Ebben az esetben a vásárló kiválaszthatja a kívánt felvételi szállítási módot. A kiválasztott felvételi szállítási mód ezután az értékesítési rendelési sorhoz kapcsolódó szállítási móddá válik, amikor a rendelést létrehozzák a Commerce központban.
 
-    ![Felvételi lehetőség kiválasztása az e-kereskedelemben](media/pickupecommerce.png)
+    ![Felvételi lehetőség kiválasztása az e-kereskedelemben.](media/pickupecommerce.png)
 
 - Az áruházi csatornákban, ha a vevői rendelés felvételre jön létre a pénztári (POS) alkalmazáson keresztül, az értékesítési munkatársnak kell választania a rendelkezésre álló felvételi szállítási módok közül, ha van ilyen. Ha a csatornához és a cikkhez csak egy érvényes felvételi szállítási mód érhető el, az értékesítési munkatársnak nem kell kiválasztania azt. Ehelyett a rendelkezésre álló felvételi szállítási mód automatikusan alkalmazva lesz a rendelési sorokra.
 
-    ![Felvételi lehetőség kiválasztása a pénztár alkalmazásban](media/pickuppos.png)
+    ![Felvételi lehetőség kiválasztása a pénztár alkalmazásban.](media/pickuppos.png)
 
 - A hívásközpont-csatornákban, amikor a felhasználók felvételi rendeléseket hoznak létre, manuálisan kiválaszthatják a hívásközpont csatornához kapcsolódó bármely meghatározott felvételi kézbesítési módot. A rendszer ezután ellenőrzi, hogy a kiválasztott felvételi szállítási mód használható-e, amikor a hozzá kapcsolt cikket megrendeli. Ha a hívásközpont-csatornákban be van jelölve egy felvételi kézbesítési mód, az értékesítésirendelés-sorokat egy érvényes üzletraktárhoz kell kapcsolni. Ha egy nem bolti raktár van megadva egy hívásközpont értékesítési soron, akkor az átvételi szállítási mód nem állítható be az adott értékesítési soron.
 - Az értékesítési munkatársak a pénztár alkalmazásban a **Rendelés visszahívása** vagy a **Rendelés teljesítése** művelet segítségével lekérhetik az átvételre vonatkozó rendelések vagy rendeléssorok listáját. Ha egy értékesítési munkatárs egy előre definiált keresési szűrőt használ az aktuális üzletben felveendő összes rendelés megjelenítéséhez, a lekérdezések módosulnak annak érdekében, hogy a keresési eredmények tartalmazzák az összes olyan jogosult rendelést, amely bármely átvételi szállítási módot használja. A pénztár-felhasználók a meglévő szűrők segítségével is leszűkíthetik a rendelések listáját egy adott felvételi szállítási módra. Például megjeleníthetik csak a járdaszéli felvétellel rendelkező rendeléseket.
 
-    ![A visszahívási rendelések listájára alkalmazott felvételi kézbesítési módok szűrése](media/pickuprecallorder.png)
+    ![A visszahívási rendelések listájára alkalmazott felvételi kézbesítési módok szűrése.](media/pickuprecallorder.png)
 
 ## <a name="considerations-for-distributed-order-management"></a>A felosztott rendeléskezelés szempontjai
 

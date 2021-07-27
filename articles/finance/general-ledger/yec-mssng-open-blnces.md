@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 045d0bf11b11c9a353858ce3ca82c698dbceea7c
-ms.sourcegitcommit: 817716c2e96f24af0ef1d7d5323afdeccdc602f3
+ms.openlocfilehash: 4bebf35a8959d4f72d46d4b40e5487f499b2756d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "6028567"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356652"
 ---
 # <a name="year-end-close-missing-opening-balances"></a>Év végi záráskor hiányzó nyitó egyenlegek
 
@@ -44,17 +44,17 @@ Az év végi zárást úgy futtattam, hogy az **Előző zárás visszavonása** 
 
 ### <a name="resolution"></a>Megoldás
 
-Először ellenőrizze a kötegelt feladat állapotát. Az év lezárásához több különálló feladat tartozik, de a legkritikusabb lépés a **5.0.0. lépés** feladatleírással rendelkező kötegelt feladat. A nyitótranzakciók és opcionálisan a záró tranzakciók feladása a főkönyvbe ebben a lépésben történik. 
+Először ellenőrizze a kötegelt feladat állapotát. Az év lezárásához több különálló feladat tartozik, de a legkritikusabb lépés a **5.0.0. lépés** feladatleírással rendelkező kötegelt feladat. A nyitótranzakciók és opcionálisan a záró tranzakciók főkönyvbe történő feladása ebben a lépésben történik. 
 
-[![Kötegelőzmény-lista](./media/yec-mssng-open-blnces-01.png)](./media/yec-mssng-open-blnces-01.png)
+[![Kötegelőzmény-lista.](./media/yec-mssng-open-blnces-01.png)](./media/yec-mssng-open-blnces-01.png)
 
 Ha ez a lépés sikeresen befejeződött, de nem láthatók nyitó egyenlegek a **Főkönyvi kivonat lekérdezése** oldalon (**Főkönyv > Lekérdezések és jelentések > Főkönyvi kivonat**), vizsgálja meg az év végi zárás kötegelt feladatának eredményeit, hogy az Egyenlegek újbóli létrehozása lépés sikeresen befejeződött-e.
 
-[![Az év végi zárás kötegelt feladatának eredményei](./media/yec-mssng-open-blnces-02.png)](./media/yec-mssng-open-blnces-02.png)
+[![Az év végi zárás kötegelt feladatának eredményei.](./media/yec-mssng-open-blnces-02.png)](./media/yec-mssng-open-blnces-02.png)
 
 Ha ez a lépés bármilyen okból sikertelen volt, a nyitó (és opcionálisan a záró) tranzakciók feladása valószínűleg sikeres volt. A főkönyvi tranzakciók feladásának sikerességét a **Bizonylattranzakciók lekérdezése** oldal használatával ellenőrizheti, ha megadja a lezárt év év végi zárásakor megjelenő párbeszédablakán megadott bizonylat számát és dátumát (**Főkönyv > Lekérdezések és jelentések > Bizonylattranzakciók**).
 
-[![Bizonylattranzakciók lekérdezése](./media/yec-mssng-open-blnces-03.png)](./media/yec-mssng-open-blnces-03.png)
+[![Bizonylattranzakciók lekérdezése.](./media/yec-mssng-open-blnces-03.png)](./media/yec-mssng-open-blnces-03.png)
 
 Ha a nyitó (és opcionálisan a záró) bizonylatok jelen vannak, akkor nem kell újra futtatnia az év végi zárást. Ehelyett olvassa el a következő szakaszt a következő lépésekkel kapcsolatos információkért.
 
@@ -66,7 +66,7 @@ Az év végi zárás „Egyenlegek újbóli létrehozása” lépés sikertelen 
 
 Az Egyenlegek újbóli létrehozása lépés frissíti a Főkönyvi kivonat lekérdezésének létrehozása során használt Főkönyvi egyenlegek értékét.  Ez az év végi zárási folyamat utolsó lépése.  Ha ez a lépés az egyetlen sikertelen lépés, a főkönyvi tranzakciók feladása sikerült.  Nem szükséges újra futtatnia az év végi zárást. A folyamat futtatásával manuálisan újból létrehozhatja az egyenlegeket a **Pénzügyi dimenziókészletek** oldalon (**Főkönyv > Számlatükör > Dimenziók > Pénzügyi dimenziókészletek**).
 
-[![Egyenlegek újbóli létrehozása gomb a Pénzügyi dimenziókészletek oldalon](./media/yec-mssng-open-blnces-04.png)](./media/yec-mssng-open-blnces-04.png)
+[![Egyenlegek újbóli létrehozása gomb a Pénzügyi dimenziókészletek oldalon.](./media/yec-mssng-open-blnces-04.png)](./media/yec-mssng-open-blnces-04.png)
 
 Ha a lépés feldolgozása hosszú időt vesz igénybe, javasoljuk, hogy tekintse át a pénzügyi dimenziókészletekre vonatkozó gyakorlati tanácsokat a [Pénzügyi dimenziókészletek frissítésére vonatkozó gyakorlati tanácsok](https://community.dynamics.com/365/financeandoperations/b/dynamics-365-finance-blog/posts/best-practices-for-updating-financial-dimension-set-dimension-sets) részben. 
 

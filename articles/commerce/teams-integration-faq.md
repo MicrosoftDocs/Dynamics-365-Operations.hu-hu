@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 3fc7cff0a3f8d0fbfb196ec5951b138088afece7
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 45decb55ce5cf3399f48034df367e1565ab689bf
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019470"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347440"
 ---
 # <a name="dynamics-365-commerce-and-microsoft-teams-integration-faq"></a>Dynamics 365 Commerce- és Microsoft Teams-integráció GYIK
 
@@ -45,7 +45,7 @@ A következő lépések szerint rendelje hozzá a kiskereskedelmi feladatkezelő
 
 A Commerce központban minden szervezeti hierarchia egy vagy több célhoz van társítva. Győződjön meg róla, hogy a hierarchiához, amelyet a Microsoft Teams szolgáltatásba ki szeretne építeni, társítva van a **Kiskereskedelmi jelentéskészítés**, ahogy a következő mintaképen látható. 
 
-![Példa szervezeti hierarchia céljára a Commerce központ alkalmazásban](media/d365-commerce-organization-hierarchies-purpose.png)
+![Példa szervezeti hierarchia céljára a Commerce központ alkalmazásban.](media/d365-commerce-organization-hierarchies-purpose.png)
 
 ### <a name="how-do-i-enable-retail-store-workers-to-sign-in-to-commerce-point-of-sale-pos-using-azure-active-directory-azure-ad"></a>Hogyan lehet engedélyezni a kiskereskedelmi üzlet dolgozóinak, hogy az Azure Active Directory (Azure AD) használatával jelentkezzenek be a Commerce pénztár (POS) alkalmazásba?
 

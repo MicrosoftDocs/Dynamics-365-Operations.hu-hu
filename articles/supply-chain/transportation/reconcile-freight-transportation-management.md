@@ -16,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d523af235d645bd282af07d6a1f617bca5fba2dc
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 1794c297bef86a62ff5dc24524332df07ea26f39
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5809086"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345282"
 ---
 # <a name="reconcile-freight-in-transportation-management"></a>Szállítási költség egyeztetése a szállításkezelésben
 
@@ -35,13 +35,13 @@ Szállítási költség egyeztetés elvégezhető manuálisan vagy beállíthat�
 
 A szállítási díjakat a megfelelő szállítási fuvarozóval társított díjkalkulátor számítja ki. Rakomány megerősítése esetén a fuvarlevélszámla létrejön, és a szállítási díjak átvitele a fuvarlevélszámlára megtörténik. A fuvardíjak vegyes költségek szerint vannak arányosítva a vonatkozó forrásbizonylat (beszerzési rendelés, értékesítési rendelés és/vagy átmozgatási rendelés) alapján, a rendszeres számlázási folyamat beállításaitól függően. A szállítási költség egyeztetési folyamata elindítható, amint a fuvarszámla megérkezik a szállítmányozótól. A számla elektronikus úton vagy nyomtatott papíron érkezhet. Ha papíralapú számla érkezik, elektronikus számlát hozhat létre a fuvarlevelet használva sablonként.
 
-[![Fuvaregyeztetési folyamat](./media/freight-reconcilation-process.jpg)](./media/freight-reconcilation-process.jpg)
+[![Fuvaregyeztetési folyamat.](./media/freight-reconcilation-process.jpg)](./media/freight-reconcilation-process.jpg)
 
 ## <a name="manual-reconciliation"></a>Manuális egyeztetés
 
 Ha az egyeztetést manuálisan végzi, minden számlázási sorral minden fuvarlevélsort vagy a számlázandó rakománysort egyeztetnie kell. Ezt a **Fuvarlevél és számlaegyeztetés** oldalon végezheti el. Ha a számlasor összege nem egyezik meg a fuvardíj összegével, az eltérés egyeztetés okát kell kiválasztania. Ha több egyeztetési ok fordul elő, a nem egyeztetett összeget feloszthatja. Az egyeztetés oka határozza meg, hogyan kerülnek a különbözet összegei feladásra a főkönyvbe. Amikor a teljes számlaösszeg egyeztetése számba lett véve, jóváhagyás céljából elküldik és a napló feladásra kerül. Az alábbi ábra bemutatja, hogyan készíthető szállítási számla és hajtható végre a fuvarlevél-egyeztetés.
 
-[![Fuvaregyeztetési feladatok](./media/processflowforfreightreconciliation.jpg)](./media/processflowforfreightreconciliation.jpg)
+[![Fuvaregyeztetési feladatok.](./media/processflowforfreightreconciliation.jpg)](./media/processflowforfreightreconciliation.jpg)
 
 ## <a name="automatic-reconciliation"></a>Automatikus egyeztetés
 

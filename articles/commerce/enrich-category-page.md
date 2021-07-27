@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 5e18439fc0e91619cade33b83b87be0d5c4d1040
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 1d9470e4d517c5fb0b49ae2e26eb14220ea17aa3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799011"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349400"
 ---
 # <a name="enrich-a-category-landing-page"></a>Kategória céloldalának bővítése
 
@@ -31,7 +31,7 @@ A Commerce egy alapértelmezett kategória-nyitólapot biztosít, amely a kateg�
 
 Az alapértelmezett kategórialap használata helyett előfordulhat, hogy olyan „bővített” kategória-nyitólapot szeretne használni, amely több tartalmat és konkrétabb elemeket tartalmaz. A jellemző bővítéshez szükség lehet a kategória-specifikus marketinganyagok kategóriaoldalhoz. Ez a tartalom több keresztértékesítési célú keresztkategóriás termékelhelyezést, szerkesztői listákat, képeket, videókat és egyéb szöveget tartalmazhat. Vagy módosíthatja az alapértelmezett kategórialap, vagy meghatározható egy másik kategórialap egy adott kategóriához.
 
-![Bővített kategória-céloldal](./media/CategoryLandingPages.png)
+![Bővített kategória-céloldal.](./media/CategoryLandingPages.png)
 
 A Commerce webhelykészítőben a **Termékrk** lap a webhelyhez társított csatorna kategóriáinak listáját tartalmazza. Ha a **Bővített** állapot van kiválasztva egy kategórialap számára, akkor a kategórialap bővített. Ellenkező esetben az alapértelmezett kategórialap és tartalom kerül felhasználásra a kategóriához. A kategória nevére kattintva megtekintheti a kategória bővített és nem bővített kategórialapjait.
 

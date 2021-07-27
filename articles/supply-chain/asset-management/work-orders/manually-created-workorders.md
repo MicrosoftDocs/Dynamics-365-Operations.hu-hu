@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 8962cbbc8f413093eef0fb3783aa6ced22f7bc2d
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 6e16c0bcd9521f822d0f92681e2a545439b78acb
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839559"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354857"
 ---
 # <a name="manually-created-work-orders"></a>Manuálisan létrehozott munkarendelések
 

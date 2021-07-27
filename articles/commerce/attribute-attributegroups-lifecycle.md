@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application pdate 5, AX 8.0
-ms.openlocfilehash: a49a0d05a55e72b5dae17933d38d03287a01d5ee
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: dce26087a81e38c5618b07a9341fee195e3c98c9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5936804"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346804"
 ---
 # <a name="manage-attributes-and-attribute-groups"></a>Attribútumok és attribútumcsoportok kezelése
 
@@ -70,7 +70,7 @@ Az attribútumok az *attribútumtípusokon* alapulnak. Az attribútumtípus az a
     - Egy attribútumtípust nevezzen el így: **Lencsealakzat**, és adja meg a következő értéket: **Ovális**, **Szögletes** és **Négyszög**.
     - A másik attribútumtípust nevezze el így: **Napszemüvegmárka**, és adja meg a következő értéket: **Ray ban**, **Aviator** és **Oakley**.
 
-![Attribútumtípusok](media/AttributeType.png)
+![Attribútumtípusok.](media/AttributeType.png)
 
 ### <a name="set-up-an-attribute"></a>Attribútum beállítása
 
@@ -79,7 +79,7 @@ Az attribútumok az *attribútumtípusokon* alapulnak. Az attribútumtípus az a
 3. Hozzon létre egy **Lencsék** nevű attribútum.
 4. Állítsa az **Attribútumtípus** mezőt **Lencsealakzat** értékre.
 
-![Attribútumok](media/Attribute.png)
+![Attribútumok.](media/Attribute.png)
 
 ## <a name="attribute-metadata"></a>Attribútum metaadatai
 
@@ -142,7 +142,7 @@ Az attribútumok a definiálásuk után attribútumcsoportokhoz rendelhetők. A 
 
 Ezenfelül beállíthat alapértelmezett értékeket az attribútumokhoz, amelyek szerepelnek egy attribútumcsoportban. Például szín attribútum hozzáadása egy attribútumcsoporthoz, és a **kék** kiválasztása alapértelmezett attribútumértékeként. Ebben az esetben, amikor az attribútumcsoport hozzáadják egy termékekhez, amelyik az egyik attribútumként a színt is tartalmazza, a **kék** jelenik meg a termék alapértelmezett színeként.
 
-![Attribútumcsoportok](media/AttributeGroup.png)
+![Attribútumcsoportok.](media/AttributeGroup.png)
 
 ### <a name="create-an-attribute-group"></a>Attribútumcsoport létrehozása
 
@@ -155,7 +155,7 @@ Ezenfelül beállíthat alapértelmezett értékeket az attribútumokhoz, amelye
 
 Egy vagy több attribútumcsoport társítható a kategória-csomópontokkal a következő típusú kategóriahierarchiákban: kereskedelmi termékek hierarchiája, csatornák navigációs kategóriahierarchiája és kiegészítő termékek kategóriahierarchiája. Ezután, a kategorizálást követően, a termékek öröklik az attribútumcsoportba tartozó attribútumokat.
 
-![Termékek hierarchiája – Termékattribútum-csoportok](media/AGRetailProdHierarchy.PNG)
+![Termékek hierarchiája – Termékattribútum-csoportok.](media/AGRetailProdHierarchy.PNG)
 
 Kövesse az alábbi lépéseket attribútumcsoportok hozzárendeléséhez kategóriákhoz a kereskedelmi termékek hierarchiájában.
 
@@ -200,7 +200,7 @@ Egy vagy több attribútumcsoport társítható egy vagy több üzlethez a üzle
     3. Válassza ki a **Divatáru kiegészítők** kategória-csomópontot, válassza ki a **Divatnapszemüvegek** kategóriát, majd a **Csatorna termékattribútumok** gyorslapon jelölje be az **Attribútum befoglalása** lehetőséget minden attribútumra.
     4. Válassza ki a **Férfiruházat** kategória-csomópontot, válassza ki a **Nadrágok** kategóriát, majd a **Csatorna termékattribútumok** gyorslapon jelölje be az **Attribútum befoglalása** lehetőséget minden attribútumra.
 
-![Csatornakategóriák és termékattribútumok – Attribútumcsoportok](media/CCPAttrGrp.png)
+![Csatornakategóriák és termékattribútumok – attribútumcsoportok.](media/CCPAttrGrp.png)
 
 ## <a name="overriding-attribute-values"></a>Attribútumértékek felülbírálása
 
@@ -214,7 +214,7 @@ Az attribútumok alapértelmezett értéke felülírható az egyedi termékek es
 4. Jelölje be a kívánt terméket a rácsban. Ezután a műveleti ablaktáblán a **Termék** lapon a **Beállítás** csoportban válassza a **Termékattribútumok** lehetőséget.
 5. Jelöljön ki egy attribútumot a bal oldali ablakban, és frissítse az értékét a jobb oldali ablakban.
 
-![Termékadatok lap – Termékattribútum-csoportok](media/ProdDetailsProdAttrValues.png)
+![Termékadatok lap – termékattribútum-csoportok.](media/ProdDetailsProdAttrValues.png)
 
 ### <a name="override-the-attribute-values-of-products-in-a-catalog"></a>A termékek attribútumértékeinek felülbírálása a katalógusban
 
@@ -233,7 +233,7 @@ Az attribútumok alapértelmezett értéke felülírható az egyedi termékek es
     > [!NOTE]
     > Ha a megosztott termékhez tartozó média és a megosztott termékattribútumok létrehozása történik, azok minden termékre vonatkoznak.
 
-![Katalógus-termékattribútum csoportok](media/CatalogProdAttrValues.png)
+![Katalógus termékattribútum-csoportjai.](media/CatalogProdAttrValues.png)
 
 ### <a name="override-the-attribute-values-of-products-in-a-channel"></a>A termékek attribútumértékeinek felülbírálása egy csatornában
 

@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: d1378ae652ea70cba941316f4667052dcb05f717
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 71aefbc9c041074225b379d90db5cecf3849cb59
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5812907"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347710"
 ---
 # <a name="improve-scheduling-engine-performance"></a>Az ütemezési motor teljesítményének javítása
 
@@ -66,11 +66,11 @@ Például gondolja át a következő táblázatban és képen látható útvonal
 | 10 | Másodlagos&nbsp;1 | | | | 1 | 20 |
 | 20 | Elsődleges | | 3.00 | 1.00 | 3 | 0 |
 
-![Példaútvonal-diagram](media/scheduling-engine-route.png "Példaútvonal-diagram")
+![Példaútvonal-diagram.](media/scheduling-engine-route.png "Példaútvonal-diagram")
 
 A program ezt a motornak történő elküldésekor nyolc feladatra osztja fel, amint az a következő ábrán látható (válassza ki a képet a nagyításhoz).
 
-[![Motorfeladatok ütemezése](media/scheduling-engine-jobs.png "Ütemezési motor feladatok")](media/scheduling-engine-jobs-large.png)
+[![Ütemezési motor feladatok](media/scheduling-engine-jobs.png „Ütemezési motor feladatok.”](media/scheduling-engine-jobs-large.png)
 
 A két feladat közötti normál kapcsolat `FinishStart`, amely azt jelenti, hogy egy feladat befejezési időpontjának meg kell előznie egy másik feladat kezdési időpontját. Mivel a beállítást ugyanannak az erőforrásnak kell elvégeznie, amely a folyamatot később végrehajtja, a kettő között `OnSameResource` megszorítások vannak. A 10 elsődleges és másodlagos műveletéhez tartozó feladatok között van `StartStart` és `FinishFinish` hivatkozás van, ami azt jelenti, hogy a feladatoknak ugyanakkor kell kezdődniük és befejeződniük, és `NotOnSameResource` megszorítások is vannak, amelyek megakadályozzák, hogy az elsődleges és a másodlagos erőforrás azonos legyen.
 

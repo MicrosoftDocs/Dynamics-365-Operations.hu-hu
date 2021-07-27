@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 8dc312e66dc666ac6c23bac6b705ffc7893fd06b
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 09d4516c40833771d27db13eac8228bd8c5e0e4a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6187997"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355035"
 ---
 # <a name="overhead-calculation"></a>Járulékos költség számítása
 
@@ -48,7 +48,7 @@ A járulékos költség kiszámítása lefuttatja a költségkönyvelési irány
 
 A járulékos költség kiszámítása a verziótól függetlenül fut. Ezért a tényleges verzió előtt kiszámíthatja a költségvetési verziót. A járulékos költségek kiszámítása négy lépésből áll, a következő ábrán látható módon. Minden lépésnél létrejön egy naplófejléc naplóbejegyzésekkel. Ez a naplófejléc megtartja az egyes számítási lépések bemeneti adatait. Az irányelvek és szabályok minden egyes naplósorra érvényesek, és kimenetként költségbejegyzések jönnek létre. Ezáltal mindig teljes a nyomon követhetőség. 
 
-[![Járulékos költség számítása](./media/period-cost-calculation.png)](./media/period-cost-calculation.png)
+[![Járulékos költségek számítása.](./media/period-cost-calculation.png)](./media/period-cost-calculation.png)
 
 ## <a name="calculate-and-allocate-the-electricity-overhead-cost"></a>Az elektromos áram járulékos költségének kiszámítása és felosztása
 A pénzügyi könyvelésben egyes költségeket, így például az elektromos áram költségeit gyakran egy összegben regisztrálják. Ezért nem jön létre részletes vezetői betekintést a költségkönyvelésnél. A Költségkönyvelés során a szervezeti egységek és a szintek közötti megfelelő vezetői betekintés biztosításához költségeknek kell bekerülnie a szervezeti egységeken keresztül. A folyamatnak vagy a felhasználás pontos rekordján, vagy a helyes becslésén kell alapulnia. A főkönyvben az elektromos áram költségként feladható a következő táblázatban látható módon.
@@ -618,7 +618,7 @@ További információ: [Járulékosköltség-számítás végrehajtása](cost-ro
 
 A felosztást arra használják, hogy egy költségobjektum egyenlegét mások költségobjektumokhoz hozzárendeljék egy felosztási alap alkalmazásával. A Finance a reciprokális felosztási módszert támogatja. A reciprokális felosztási módszer esetében a segédköltség-objektumok által kicserélt kölcsönös szolgáltatások teljes mértékben elismertek. A rendszer automatikusan meghatározza a felosztások végrehajtásának megfelelő sorrendjét. A költségobjektumok egyenlegének felosztása egyetlen felosztási alap szerint történik. A rendszer támogatja a költségobjektum-dimenziók és a hozzájuk tartozó tagok közötti felosztásokat. A felosztás sorrendjét a költség ellenőrzőegysége vezérli. 
 
-[![Fordított módszer](./media/reciprocal-method.png)](./media/reciprocal-method.png)
+[![Fordított módszer.](./media/reciprocal-method.png)](./media/reciprocal-method.png)
 
 #### <a name="define-the-cost-allocation"></a>A költségfelosztás meghatározása
 

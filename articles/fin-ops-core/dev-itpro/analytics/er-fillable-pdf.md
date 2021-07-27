@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 7c1c21015a172d7ebaa3577d5d0e55c254ef871e
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 63994a4583e27b0197b9fc42c622f6c0e42c84ee
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753288"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355418"
 ---
 # <a name="design-er-configurations-to-fill-in-pdf-templates"></a>A PDF-sablonokat kitöltő ER-konfigurációk megtervezése
 
@@ -146,7 +146,7 @@ A következő ábra a jelentés további oldalainak PDF-sablonját jeleníti meg
 
 12. Válassza ki az **OK** lehetőséget.
 
-    ![Importálás PDF-fájlból párbeszédpanel](media/rcs-ger-filloutpdf-importtemplate.png)
+    ![Importálás PDF-fájlból párbeszédpanel.](media/rcs-ger-filloutpdf-importtemplate.png)
 
 13. A fastruktúrában bontsa ki a **Kimenet** csomópontot.
 
@@ -176,7 +176,7 @@ A következő ábra a jelentés további oldalainak PDF-sablonját jeleníti meg
 
     Figyelje meg, hogy az importált PDF-dokumentum a szerkesztett ER formátumhoz van csatolva.
 
-    ![PDF-melléklet előnézete](media/rcs-ger-filloutpdf-attachedtemplate.png)
+    ![PDF-melléklet előnézete.](media/rcs-ger-filloutpdf-attachedtemplate.png)
 
 19. A második PDF-sablon importálásával folytassa a formátum megtervezését, és adja hozzá a szükséges kötéseket az adatforrásokhoz, és így tovább.
 20. Válassza a **Mentés** lehetőséget.
@@ -215,7 +215,7 @@ Ezután importálja a korábban letöltött minta ER formátumot, amellyel PDF-f
 1. A **Formátumtervező** lapon válassza a **Hozzárendelés** fület.
 2. A fában bontsa ki a **Lapozás \> Oldalak** elemet.
 
-    ![Képlettervező lap, ahol a modell-fastruktúra ki van bontva](media/rcs-ger-filloutpdf-reviewformat.png)
+    ![Képlettervező lap, ahol a modell-fastruktúra ki van bontva.](media/rcs-ger-filloutpdf-reviewformat.png)
 
     Vegye figyelembe a következőket:
 
@@ -238,7 +238,7 @@ Ezután importálja a korábban letöltött minta ER formátumot, amellyel PDF-f
 
     Figyelje meg, hogy az adott formátumelem **Név** attribútuma **Javítás 1** néven van meghatározva. Azt is észreveheti, hogy a formátumelem **Név** kifejezése a következőként van meghatározva: **Paging.FldName("Javítás",\@.Number)**
 
-![Formátumtervező, ahol a hozzárendelés kiválasztható](media/rcs-ger-filloutpdf-reviewformat2.png)
+![Formátumtervező, ahol a hozzárendelés kiválasztható.](media/rcs-ger-filloutpdf-reviewformat2.png)
 
 Ne feledje, hogy a **Mező** formátumelemet annak a kitölthető PDF-dokumentumnak egyik egyéni mezője kitöltésére használják, amelyet a fölérendelt **PDF-fájl** fáromátumelem sablonjában meghatároztak. A **PDF-fájl** formátumelemének vagy beágyazott elemeinek kötése, ha beágyazott elemekkel rendelkezik, meghatározza a megfelelő PDF-mezőkben megadott értéket. A **Mező** formátumelem különböző tulajdonságai segítségével megadhatja, hogy egy egyéni formátumelem melyik PDF-mező kitöltésére használatos:
 
@@ -275,7 +275,7 @@ Következő lépésként betölti az **Intrastat (importálás Excel-fájlból)*
 
     Amikor az **Alapértelmezett a modell-hozzárendeléshez** beállítás **Igen** értékre van állítva, a rendszer az importált **Intrastat (importálás Excel-fájlból)** ER formátumot rendeli hozzá alapértelmezett adatforrásként az **Intrastat-jelentés (PDF)** formátumkonfigurációhoz. Ezután amikor az **Intrastat-jelentés (PDF)** formátumkonfiguráció fut, akkor az **Intrastat (importálás Excel-fájlból)** ER formátum által elemzett Excel.munkafüzet tartalma szimulálja a jelenteni szükséges külkereskedelmi tranzakciókat. A következő ábrán egy Excel-munkafüzet példája látható.
 
-    ![Mintaadatokat tartalmazó Excel-munkafüzet](media/rcs-ger-filloutpdf-excelworkbook.png)
+    ![Mintaadatokat tartalmazó Excel-munkafüzet.](media/rcs-ger-filloutpdf-excelworkbook.png)
 
 ### <a name="run-the-format-configuration"></a>A formátumkonfigurációjának futtatása
 
@@ -289,11 +289,11 @@ Következő lépésként betölti az **Intrastat (importálás Excel-fájlból)*
 
 A következő ábra egy példát mutat be a létrejövő jelentés első oldaláról.
 
-![A létrejövő jelentés első oldala](media/rcs-ger-filloutpdf-generatedreport.png)
+![A létrejövő jelentés első oldala.](media/rcs-ger-filloutpdf-generatedreport.png)
 
 A következő ábra egy példát mutat be a létrejövő jelentés egy másik oldaláról.
 
-![A létrejövő jelentés egy másik oldala](media/rcs-ger-filloutpdf-generatedreport2.png)
+![A létrejövő jelentés egy másik oldala.](media/rcs-ger-filloutpdf-generatedreport2.png)
 
 ## <a name="additional-resources"></a>További erőforrások
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 65adcd07f1649b2e4eb2e2528507bb15631782ce
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 69653d0dde2d3675a5af5cdc032a3c9c9462d705
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5816724"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354084"
 ---
 # <a name="work-orders-and-fixed-assets"></a>Munkarendelések és tárgyi eszközök
 

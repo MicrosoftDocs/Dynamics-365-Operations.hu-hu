@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 76dbf5f8f2fc3b33077d559ffcef580a5295adb2
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 59dda2207f002402f5153f9c77206b6c644f2679
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5815572"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352858"
 ---
 # <a name="general-journal-processing"></a>Általános napló feldolgozása
 
@@ -42,14 +42,14 @@ A **Naplónevek** lapon az alábbi elemeket állíthatja be:
 
 A naplónév csak módosításokra használható. Ebben az esetben megadhatja, hogy csak a **Főkönyv** számlatípus legyen érvényes minden vállalat esetében. 
 
-[![Napló-ellenőrzési számlatípusok](./media/journal-control-account-types1.png)](./media/journal-control-account-types1.png)
+[![Naplóellenőrzési számlatípusok.](./media/journal-control-account-types1.png)](./media/journal-control-account-types1.png)
 
 A naplónév csak egy adott szegmens vagy egy tartomány esetében használható fő számlákhoz. 
 
-[![Naplóellenőrzési szegmens](./media/journal-control-segment1.png)](./media/journal-control-segment1.png)
+[![Naplóellenőrzési szegmens.](./media/journal-control-segment1.png)](./media/journal-control-segment1.png)
 
 Az **Automatikus sztornírozás** lehetőség elérhető az általános naplók esetében. Tegyük fel például, hogy van egy elhatároláskiigazítása, ahol a tényleges dokumentum feldolgozása még nem történt meg (lásd az alábbi ábrán).
-[![Általános napló sztornírozása](./media/general-journal-reversing1.png)](./media/general-journal-reversing1.png) 
+[![Általános napló sztornírozása.](./media/general-journal-reversing1.png)](./media/general-journal-reversing1.png) 
 
 A Microsoft Excel-bővítmény naplóbejegyzésekhez még nagyobb automatizálást és egyszerűbb adatbevitelt tesz lehetővé. A **Sorok megnyitása az Excelben** művelet elérhető az **Általános napló** és **Naplóbizonylat** oldalakon. 
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-04-01
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: ed28928b0f07833d5906a68f780e3bb5bbe0bfe9
-ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
+ms.openlocfilehash: 03c9406d295fb0dbd22e8072c2695dbef419b706
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "5921217"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353540"
 ---
 # <a name="unit-of-measure-conversion-per-product-variant"></a>Mértékegység-átváltás termékváltozatonként
 
@@ -56,7 +56,7 @@ A következő lépésekkel konfigurálhat egy alapterméket, amely támogatja a 
     - **Termék** – Ha ezt az értéket választja, akkor beállíthatja a mértékegység-átváltást az alaptermékhez. Ez a mértékegység-átváltás tartalékként fog szerepelni az összes olyan termékváltozathoz, amelynél nincs beállítva mértékegység-átváltás.
     - **Termékváltozat** – Ha ezt az értéket választja, akkor beállíthatja a mértékegység-átváltást egy adott termékváltozathoz. Válassza ki a változatot a **Termékváltozat** mező segítségével.
 
-    ![Új mértékegység-átváltás hozzáadása](media/uom-new-conversion.png "Új mértékegység-átváltás hozzáadása")
+    ![Új mértékegység-átváltás hozzáadása.](media/uom-new-conversion.png "Új mértékegység-átváltás hozzáadása")
 
 1. A mértékegység-átváltás beállításához használja az egyéb megadott mezőket.
 1. Az új mértékegység-átalakítás mentéséhez kattintson az **OK** gombra.

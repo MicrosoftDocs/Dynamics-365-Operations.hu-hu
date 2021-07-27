@@ -13,12 +13,12 @@ ms.search.region: Czech Republic, Germany, Hungary, Latvia, Lithuania, Poland, R
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6e1d5b0ae6191204b7dd3be4e9c446d704263e67
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 95a9969650e4b7f0feac38caa05d672fa72ee7b6
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5832674"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348871"
 ---
 # <a name="storno-accounting"></a>Sztornókönyvelés
 
@@ -162,7 +162,7 @@ A Finance különlegesen kezeli a negatív naplóösszegeket. Általános napló
 
 Testreszabhatja a sztornírozás megjelenítését űrlapokban, rácsokban, oszlopokban és mezőkben. Például kikapcsolhatja az előjel megjelenítését vagy módosíthatja a negatív összegek kitöltését. Használhatja a **Javítás** mezőt minden képernyőbeállítással, ha a **Javítás** mezőben szerepel az "Igen", akkor egy sztornóbejegyzés.
 
-![Naplóösszegekben bejegyzés sztornírozása](./media/journal-storno.png)
+![Naplóösszegekben bejegyzés sztornírozása.](./media/journal-storno.png)
 
 ## <a name="how-documents-create-storno"></a>Sztornírozási dokumentumok létrehozása
 Egyes dokumentumokban lehetséges az érvénytelenítési tranzakciók létrehozása. Például a főkönyvi, a fizetendő számlák és a követelésekre vonatkozó deviza átértékelés megszünteti a nem realizált nyereséget és veszteséget. További részletek: [Főkönyvi devizaátértékelés](../general-ledger/foreign-currency-revaluation-general-ledger.md) vagy [A Kötelezettségek és a Kinnlevőségek modul devizaátértékelései](../cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable.md). Az érvénytelenítési tranzakció létrehozása után új tranzakciók jönnek létre a nem realizált nyereséggel és veszteséggel. Érvénytelenítési tranzakciók is létrejöhetnek a készlethez. További információ: [Készletzárás](../../supply-chain/cost-management/inventory-close.md). Vannak olyan dokumentumok, amelyek lehetővé teszik a korábban feladott dokumentum visszavonása. Például a felhasználó hozhat létre jóváírást ad fel, hogy egy korábban létrehozott számla érvénytelenítése. A dokumentumok meghatározott paramétereket használnak a fordított vagy sztornótranzakciók létrehozásához. Például a devizaátértékelés fordított vagy sztornótranzakciót hozhat létre a főkönyv javítási paramétere alapján. A vevői jóváírást hoz létre a fordított vagy számlák Kinnlevőségek jóváírás javítás paramétertől függő sztornótranzakciók.

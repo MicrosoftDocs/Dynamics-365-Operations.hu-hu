@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: fb2651644efd2cadfccb91e48c34dfddc8383e1f
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: e813b4f0c6408a8046fa8203007a0a356ca2c794
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021416"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347808"
 ---
 # <a name="process-collection-letters-example"></a>Fizetési felszólítások feldolgozása (példa)
 
@@ -40,7 +40,7 @@ Amikor befejezte, kövesse az alábbi lépéseket.
 
 A következő ábra a tábla azon adatait mutatja be, amelyek a **Fizetési felszólítás** oldalon jelennek meg. 
 
-[![Fizetésifelszólítás-sorozat beállítása](./media/Ignore-payments-creditmemos-1.PNG)](./media/Ignore-payments-creditmemos-1.PNG)
+[![Fizetésifelszólítás-sorozat beállítása.](./media/Ignore-payments-creditmemos-1.PNG)](./media/Ignore-payments-creditmemos-1.PNG)
 
  Most be kell állítania a példához szükséges két paramétert.
 
@@ -49,7 +49,7 @@ A következő ábra a tábla azon adatait mutatja be, amelyek a **Fizetési fels
     1. A **Követelések és beszedések** lapon állítsa a **Fizetések és jóváírások figyelmen kívül hagyása a fizetési felszólítás kódjának kiszámítása során** lehetőséget **Igen** értékre.
     2. Győződjön meg arról, hogy a **Fizetési felszólítás létrehozása a következő szerint:** mező értéke a **Vevő** legyen.
 
-    [![Kinnlevőségek paramétereinek beállítása a beszedésekhez](./media/Ignore-payments-creditmemos-2.PNG)](./media/Ignore-payments-creditmemos-2.PNG)
+    [![Kinnlevőségek paramétereinek beállítása a beszedésekhez.](./media/Ignore-payments-creditmemos-2.PNG)](./media/Ignore-payments-creditmemos-2.PNG)
 
 3. Lépjen a **Kinnlevőségek \> Számlák \> Kizárólag szabadszöveges számlák** lehetőségre, válassza az **Új** lehetőséget, majd kövesse a következő lépéseket:
 
@@ -74,7 +74,7 @@ A következő ábra a tábla azon adatait mutatja be, amelyek a **Fizetési fels
 5. Ismételje meg a 4. lépést, de írja a **-200,00** értéket az **Egységár** mezőbe.
 6. Menjen a **Kinnlevőségek \> Vevők \> Összes vevő** lehetőségre, és válassza ki az **US-045** vevőt. Ezután a műveleti ablaktáblán válassza a **Tranzakciók \> Tranzakciók** lehetőséget a korábban feladott vevői tranzakciók ellenőrzéséhez.
 
-    [![Feladott vevői tranzakciók ellenőrzése](./media/Ignore-payments-creditmemos-3.PNG)](./media/Ignore-payments-creditmemos-3.PNG)
+    [![Feladott vevői tranzakciók ellenőrzése.](./media/Ignore-payments-creditmemos-3.PNG)](./media/Ignore-payments-creditmemos-3.PNG)
 
     Most fizetési felszólításokat kell létrehoznia az US-045 vevőhöz.
 
@@ -93,7 +93,7 @@ A következő ábra a tábla azon adatait mutatja be, amelyek a **Fizetési fels
 
     1. Figyelje meg, hogy a fizetési felszólítás kódja a fejlécben és a tranzakciósorban is **1. fizetési felszólítás**, mivel ez a fizetési felszólítás a sorozat első fizetési felszólítása. (A tranzakciósorok megtekintéséhez lehet, hogy ki kell választania a **Tranzakciók** gyorslapot.)
 
-   [![Annak ellenőrzése, hogy ugyanaz a fizetésifelszólítás-kód jelenik-e meg a fejlécben és a sorokban](./media/Ignore-payments-creditmemos-4.PNG)](./media/Ignore-payments-creditmemos-4.PNG)
+   [![Annak ellenőrzése, hogy ugyanaz a fizetésifelszólítás-kód jelenik-e meg a fejlécben és a sorokban.](./media/Ignore-payments-creditmemos-4.PNG)](./media/Ignore-payments-creditmemos-4.PNG)
 
     2. A műveleti ablaktáblán válassza ki a **Feladás** elemet.
     3. A **Feladás dátuma** mezőbe írja be a következő értéket: **1/19/2021**.
@@ -115,7 +115,7 @@ A következő ábra a tábla azon adatait mutatja be, amelyek a **Fizetési fels
 
     1. Figyelje meg, hogy a fizetési felszólítás kódja a fejlécen: **1. fizetési felszólítás**. A tranzakciósorok kódja azonban **2. fizetési felszólítás**.
 
-   [![Annak ellenőrzése, hogy különböző fizetésifelszólítás-kódok jelennek-e meg a fejlécben és a sorokban](./media/Ignore-payments-creditmemos-5.PNG)](./media/Ignore-payments-creditmemos-5.PNG)
+   [![Annak ellenőrzése, hogy különböző fizetésifelszólítás-kódok jelennek-e meg a fejlécben és a sorokban.](./media/Ignore-payments-creditmemos-5.PNG)](./media/Ignore-payments-creditmemos-5.PNG)
 
   A kódok eltérőek, mivel a **Fizetések és jóváírások figyelmen kívül hagyása a fizetési felszólítás kódjának kiszámítása során** lehetőség **Igen** értékre van állítva.
 
@@ -123,7 +123,7 @@ A következő ábra a tábla azon adatait mutatja be, amelyek a **Fizetési fels
 
 11. Lépjen a **Követelések és beszedések \> Beállítás \> Kinnlevőségek paraméterei** pontra, majd a **Beszedések** lapon állítsa a **Fizetések és jóváírások figyelmen kívül hagyása a fizetési felszólítás kódjának kiszámítása során** lehetőséget **Nem** értékre.
 
-    [![Fizetések és jóváírások figyelmen kívül hagyása a fizetési felszólítás kódjának kiszámítása során beállítása Nem értékre](./media/Ignore-payments-creditmemos-6.PNG)](./media/Ignore-payments-creditmemos-6.PNG)
+    [![Fizetések és jóváírások figyelmen kívül hagyása a fizetési felszólítás kódjának kiszámítása során beállítása Nem értékre.](./media/Ignore-payments-creditmemos-6.PNG)](./media/Ignore-payments-creditmemos-6.PNG)
 
     Most ismét létre kell hoznia a fizetési felszólításokat az US-045 vevőhöz.
 
@@ -140,6 +140,6 @@ A következő ábra a tábla azon adatait mutatja be, amelyek a **Fizetési fels
 
 13. Lépjen a **Követelések és beszedések \> Fizetési felszólítás \> Fizetési felszólítások áttekintése és feldolgozása** pontra, és figyelje meg, hogy a fizetési felszólítás kódja a fejlécben és a tranzakciósorban is **2. fizetési felszólítás**.
 
-    [![Annak ismételt megjelenítése, hogy ugyanaz a fizetésifelszólítás-kód jelenik meg a fejlécben és a sorokban](./media/Ignore-payments-creditmemos-7.PNG)](./media/Ignore-payments-creditmemos-7.PNG)
+    [![Annak ismételt megjelenítése, hogy ugyanaz a fizetésifelszólítás-kód jelenik meg a fejlécben és a sorokban.](./media/Ignore-payments-creditmemos-7.PNG)](./media/Ignore-payments-creditmemos-7.PNG)
 
     Ugyanaz a kód jelenik meg mindkét helyen, mivel a **Fizetések és jóváírások figyelmen kívül hagyása a fizetési felszólítás kódjának kiszámítása során** lehetőség **Nem** értékre van állítva.

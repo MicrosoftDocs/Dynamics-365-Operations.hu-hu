@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f3d6f86c5052c845c9c8aad1e4437f4196f78b50
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 1b0c8b6a81fd863d66ca01689262f0ec08a94d76
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5808616"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354976"
 ---
 # <a name="maintenance-status"></a>Karbantartás állapota
 
@@ -57,13 +57,13 @@ Az Eszközkezelésben számítást végezhet, hogy egy adott időszakra vonatkoz
 
 Az alábbi képernyőfotón az **Év** és a **Hónap** gomb aktiválva látható. Ezen **Csoportosítási szempot…** beállítások kiválasztásával havi szinten általános áttekintést kaphat a karbantartási kérésekhez és a munkarendelésekhez kapcsolódó terhelésről és teljesítményről. 
 
-![Példa a havi terhelésre](media/13-controlling-and-reporting.png)
+![Példa a havi terhelésre.](media/13-controlling-and-reporting.png)
 
 ## <a name="example-2"></a>2. példa
 
 Az alábbi képernyőfotón a munkavégzési helyszínekkel kapcsolatos információk is hozzá lettek adva. Most összehasonlíthatja a többek között földrajzi helyeket, gyárakat vagy munkaterületeket jelölő munkavégzési helyszínek terhelését és teljesítményét. 
 
-![Példa a munkavégzési helyszíneket tartalmazó havi terhelésre](media/14-controlling-and-reporting.png)
+![Példa a munkavégzési helyszíneket tartalmazó havi terhelésre.](media/14-controlling-and-reporting.png)
 
 
 

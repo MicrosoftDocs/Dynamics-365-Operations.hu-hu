@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2019-08-17
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: d0e33128c37e970ebf5af87bd601ae30aef96952
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9a8dd3d8c6b92be9f22573f463aa96b13d9e3418
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818583"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355532"
 ---
 # <a name="half-year-depreciation-convention-methodology"></a>Féléves értékcsökkenési szabály módszertana
 
@@ -36,7 +36,7 @@ Az üzemelés első éve 2020 decemberében kezdődik ami azt jelenti, hogy az e
 > Évenkénti értékcsökkenés 50000/5 = 10 000 havi értékcsökkenés 10000/12 = 833,33 <br>
 > Első évi értékcsökkenés 10000/2 = 5 000 és az azt követő havi értékcsökkenés 5000/9 = 555,56
 
-   [![Féléves értékcsökkenési szabály értékcsökkenési ütemezése](./media/half-yr-dprectn-cnvntn.png)](./media/half-yr-dprectn-cnvntn.png)
+   [![Féléves értékcsökkenési szabály értékcsökkenési ütemezése.](./media/half-yr-dprectn-cnvntn.png)](./media/half-yr-dprectn-cnvntn.png)
 
 A féléves konvencióval hozzáadott meghosszabbított értékcsökkenési időszakok pontosabban osztják fel az értékcsökkenést. A hat hónapos szabály egyenletesebben képviseli az értékcsökkenést, ami az eredménykimutatásban történő jelentéshez hasznos.
 

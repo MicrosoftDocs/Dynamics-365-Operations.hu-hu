@@ -12,12 +12,12 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: e3837ccebca0e6644ac5ded98344a5135cfb5d7a
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 130f570646d73e37a790ab90ae9a1d6a48b0f8b8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799589"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351369"
 ---
 # <a name="refund-payment-processing-in-call-centers"></a>Visszatérítési fizetések feldolgozása hívásközpontoknál
 
@@ -37,7 +37,7 @@ A hívásközpont az eredeti rendelés fizetési módja alapján határozza meg 
 
     A következő ábra egy olyan helyzetet mutat be, amikor a vevő az USD pénznemhez kapcsolódó értékesítési rendelésből küld vissza termékeket, és amelyeket eredetileg a normál vagy csekkes fizetéstípussal fizettek ki. Ebben az esetben a rendszer létrehoz egy visszatérítési csekket, és a vevő ezen kapja meg a visszatérítést. A **REF-CHK** kinnlévőségek fizetési módot visszatérítési csekkes fizetéstípusként állították be.
 
-    ![Hívásközponti visszatérítési módok konfigurálása normál kifizetésekhez és eredeti kifizetések ellenőrzése](media/callcenterrefundmethods.png)
+    ![Hívásközponti visszatérítési módok konfigurálása normál kifizetésekhez és eredeti kifizetések ellenőrzése.](media/callcenterrefundmethods.png)
 
 - **Hitelkártya** – amikor a létrehozott visszárurendelés olyan eredeti rendelésre hivatkozik, amelyet hitelkártyával fizettek ki, akkor a visszatérítés hívásközponti logikája ugyanezt az eredeti hitelkártyát alkalmazza a visszárurendelésre is.
 - **Hűségkártya** – amikor a létrehozott visszárurendelés olyan eredeti rendelésre hivatkozik, amelyet vevői hűségkártyával fizettek ki, akkor a visszatérítés hívásközponti logikája ugyanezt a hűségkártyát alkalmazza a visszárurendelésre is.
@@ -48,7 +48,7 @@ Ha bármilyen ok miatt az eredeti rendelés fizetéstípusa ismeretlen, vagy ha 
 
 A következő ábra a **Hívásközponti paraméterek** oldal **RMA/Visszáru** lapján látható **Fizetési mód** mezőt mutatja.
 
-![A Hívásközponti paraméterek oldal RMA/Visszáru lapján látható Fizetési mód mező](media/callcenterrefundparameters.png)
+![A Hívásközponti paraméterek oldal RMA/Visszáru lapján látható Fizetési mód mező.](media/callcenterrefundparameters.png)
 
 > [!NOTE]
 > A korábban ismertetett visszatérítés-feldolgozási szabályok olyan rendelésekre és rendeléssorokra is vonatkoznak, amelyeket a hívásközponti felhasználók a Commerce központi felületén érvénytelenítenek. Ha egy rendelés vagy rendeléssor érvénytelenítése túlfizetést okoz, akkor a program ugyanezeket a szabályokat fogja használni a visszatérítési fizetési sorok generálása érdekében.
@@ -82,7 +82,7 @@ Az **Igen** beállítás a **Jóváírás alkalmazása** beállításnál csak a
 > [!NOTE]
 > Az olyan visszárurendelések esetén, amelyekhez nincs kapcsolt csererendelés, a **Jóváírás alkalmazása** **Igen** beállítása nem lesz hatással a visszárurendelési fizetési logikára, mivel ez a beállítás csak a csererendelésre vonatkozik.
 
-![A Hívásközponti paraméterek oldal RMA/Visszáru lapján látható Jóváírások alkalmazása fizetési mód mező](media/callcenterrefundparameters1.png)
+![A Hívásközponti paraméterek oldal RMA/Visszáru lapján látható Jóváírások alkalmazása fizetési mód mező.](media/callcenterrefundparameters1.png)
 
 > [!IMPORTANT]
 > Ha a csererendeléseket létrehozó felhasználók azt tervezik, hogy a **Jóváírás alkalmazása** lehetőséget használják, akkor nem kell futtatniuk a visszárurendelés **Befejezés** függvényét, mielőtt a **Jóváírás alkalmazása** lehetőséget **Igen** értékre állítják. A **Befejezés** függvény futtatása után a program kiszámítja és alkalmazza a visszatérítési kifizetést a visszárurendelésre. Ha azt követően próbálja **Igen** értékre állítani a **Jóváírás alkalmazása** lehetőséget, hogy már kiszámította és alkalmazta a visszatérítési fizetést, a rendszer nem indítja el a visszatérítési fizetés újraszámítását, és nem alkalmazza a **Jóváírások alkalmazása fizetési mód** mezőben kiválasztott fizetési módot. Ha ebben a környezetben a **Jóváírás alkalmazása** lehetőséget kell használni, a felhasználónak törölnie kell a csererendelést és az RMA-t, majd elölről kell kezdenie, és új RMA-t kell létrehoznia. Ezúttal a felhasználónak gondoskodnia kell arról, hogy a **Befejezés** függvény futtatása előtt a **Jóváírás alkalmazása** beállítás **Igen** értékre legyen állítva.
@@ -91,14 +91,14 @@ Az **Igen** beállítás a **Jóváírás alkalmazása** beállításnál csak a
 
 Bár a hívásközponti logika szisztematikusan határozza meg a visszatérítési fizetési módot a témakörben korábban ismertetett módon, előfordulhat, hogy a felhasználók időnként felül szeretnék bírálni ezeket a kifizetéseket. Például egy felhasználó szerkesztheti vagy eltávolíthatja a meglévő visszatérítési kifizetési sorokat, és új kifizetési sorokat alkalmazhat. A rendszer által kiszámított visszatérítési kifizetéseket csak azok a felhasználók módosíthatják, akik megfelelő felülbírálási engedélyekkel rendelkeznek. Ezek az engedélyek a Kiskereskedelem és kereskedelem rendszer **Engedélyek felülbírálása** lapján konfigurálhatók. Visszatérítési kifizetés felülbírálása esetén a felhasználót egy olyan biztonsági szerepkörhöz kell kapcsolni, ahol az **Alternatív fizetés engedélyezése** beállítás **Igen** értékre van állítva az **Engedélyek felülbírálása** lapon.
 
-![Alternatív fizetési beállítás engedélyezése az Engedélyek felülbírálása lapon](media/overridepermissions.png)
+![Alternatív fizetési beállítás engedélyezése az Engedélyek felülbírálása lapon.](media/overridepermissions.png)
 
 Másik lehetőségként a szervezet a **Fizetés felülbírálatának engedélyezése** lehetőséget **Igen** értékre állíthatja a **Hívásközponti paraméterek** oldal **RMA/Visszatérítés** lapján. Ebben az esetben a **Biztonsági felülbírálat kódja** mezőben ki kell választani egy biztonsági felülbírálati kódot. A biztonsági felülbírálati kód egy alfanumerikus kód, amelyet külsőleg kell kezelni, mert a felhasználók a beállítás után nem látják azt a Commerce központi felületén. A biztonsági felülbírálati kódot csak a szervezet néhány kulcsfontosságú, megbízható tagja ismeri. Ha a **Fizetés felülbírálatának engedélyezése** beállítás értéke **Igen**, ha a megfelelő szerepkör-engedélyekkel nem rendelkező felhasználók megpróbálják megváltoztatni a visszárurendelés fizetési módját, lehetőségük van arra, hogy beírják a biztonsági felülbírálati kódot. Ha nem ismerik a kódot, vagy ha egy felettesük vagy vezetőjük nem tudja beírni a kódot helyettük az oldalon, nem tudják felülbírálni a visszáru-kifizetési módot.
 
 > [!NOTE]
 > Ha a biztonsági felülbírálati kód elveszett vagy elfelejtették, a szervezetnek alaphelyzetbe kell állítania egy új biztonsági felülbírálati kód meghatározásával, amelyet a **Hívásközpontok paraméterei** oldal **RMA/Visszáru** lapjának **Biztonsági felülbírálati kód** mezőjében.
 
-![A Hívásközponti paraméterek oldal RMA/Visszáru lapján látható Fizetés-felülbírálati paraméterek mező](media/overridepaymentparameter.png)
+![A Hívásközponti paraméterek oldal RMA/Visszáru lapján látható Fizetés-felülbírálati paraméterek mező.](media/overridepaymentparameter.png)
 
 > [!IMPORTANT]
 > Mielőtt a szervezetek megpróbálják felülbírálni a hitelkártyás fizetéstípusokat használó visszatérítéseket, ellenőrizniük kell, hogy a hitelkártya-feldolgozójuk engedélyezi-e a kapcsolat nélküli visszatérítéseket. Számos feldolgozó esetében a visszatérítéseket az eredeti kártyára kell visszafizetni. Ha olyan kártyára próbál visszatérítést kifizetni, amelyet korábban nem rögzítettek, az feladási hibákat okozhat a feldolgozónál.

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 8d9b5e1248497ec74e1c7125b2395c0ed4c825c2
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: cafe28e0aa71d623a728829ff1bf71bef5a132b0
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5820521"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347200"
 ---
 # <a name="recognize-deferred-revenue"></a>Halasztott bevétel elszámolása
 
@@ -36,7 +36,7 @@ A bevételmegjelenítési ütemezés részletes adatait két módon lehet elérn
 - A bevételmegjelenítési ütemezés közvetlenül megnyitható a számlázott értékesítési rendelésekből. Ebben az esetben a program úgy szűri a bevételütemezés adatait, hogy csak a kiválasztott értékesítési rendelés részletei jelenjenek meg. Ez a módszer akkor hasznos, ha egy értékesítési rendelés ütemezésének a részleteit szeretné érvényesíteni.
 - A bevételmegjelenítési ütemezés a **Bevételkönyvelés \> Időszakos feladatok** lapon is megnyitható. Ezt a módot általában akkor használják, ha egy időszak végén kerül sor a bevétel megjelenítésére. Az oldal első megnyitásakor nem látható információ. A rács fölötti szűrőkkel adhatja meg az ütemezés megjelenítendő részleteire vonatkozó feltételeket. A számla dátumai szűrhetők: megadhat dátumtartományt, értékesítési rendelést, ügyfelet, projektazonosítót vagy állapotot.
 
-[![A Bevételek ütemezései oldalt bemutató kép](./media/revenue-recognition-schedule-page.png)](./media/revenue-recognition-schedule-page.png)
+[![A Bevételek ütemezései oldalt bemutató kép.](./media/revenue-recognition-schedule-page.png)](./media/revenue-recognition-schedule-page.png)
 
 A rács alatt lévő **Pénzügyi dimenzió** gyorslapon láthatók az értékesítési rendelés sorának pénzügyi dimenziói. Ezeket a dimenziókat vette figyelembe a rendszer a halasztott bevétel feladásakor. A bevétel megjelenítésekor ugyancsak figyelembe kell venni őket. A használt dimenzióértékek a bevételhez és a halasztott bevétel fő számláihoz rendelt számlastruktúrától függenek.
 
@@ -46,7 +46,7 @@ A bevétel a **Bevétel megjelenítése** oldal **Napló létrehozása** folyama
 
 A bevétel kiválasztásához és feladásához használt feltételek megadásához a **Napló létrehozása** lehetőség kiválasztásával nyissa meg a **Napló létrehozása** párbeszédpanelt.
 
-[![Naplólétrehozás paramétereinek megadása](./media/revenue-recognition-create-journal.png)](./media/revenue-recognition-create-journal.png)
+[![Naplólétrehozás paramétereinek megadása.](./media/revenue-recognition-create-journal.png)](./media/revenue-recognition-create-journal.png)
 
 A párbeszédpanelen a **Feldolgozás dátuma** mezőcsoport beállításaival adhatja meg a bevétel megjelenítésekor használt feladási dátumot. Ha a **Kiválasztott dátum** beállítást használja, akkor a **Tranzakció dátuma** mezőben megadhatja a feladási dátumot. Ha a **Bevétel ütemezési dátuma** lehetőséget választja, a program nem használja a tranzakció dátumát. A rendszer ehelyett az ütemezés egyes sorainak **Dátum felismerése** mezőjében szereplő értéket használja feladási dátumként.
 
@@ -56,11 +56,11 @@ Miután megadott minden dátumot, a párbeszédpanel **OK** gombjára kattintva 
 
 A folyamat futtatása után az ütemezés naplóba átvitt sorait **Feldolgozva** jelöléssel látja el a rendszer. A **Feldolgozva** jelölés azt mutatja, hogy a sorok átkerültek a naplóba – de feladottak vagy fel nem adottak egyaránt lehetnek. A **Feldolgozva** jelölést a bevételmegjelenítési napló feladása után sem távolítja el a rendszer. Ha viszont törli a bevételmegjelenítési naplót, vagy ha töröl egy sort, akkor a rendszer eltávolítja a **Feldolgozva** jelölést. Ilyenkor a sor akkor jeleníthető meg, ha a **Napló létrehozása** folyamat újra lefut.
 
-[![A Bevételmegjelenítés ütemezései oldal](./media/revenue-recognition-rev-recog-schedule-02.png)](./media/revenue-recognition-rev-recog-schedule-02.png)
+[![A Bevételmegjelenítés ütemezései oldal.](./media/revenue-recognition-rev-recog-schedule-02.png)](./media/revenue-recognition-rev-recog-schedule-02.png)
 
 Ha meg szeretné tekinteni, hogy milyen részletek megjelenítése van folyamatban, a **Bevételmegjelenítési napló** oldalon (**Bevételmegjelenítés \> Naplóbejegyzések \> Bevételmegjelenítési napló**) nyissa meg a **Sorok** részt. Az ütemezés éppen megjelenített soraihoz még akkor is mindig létrejön egy-egy külön tranzakció, ha az összes sor feladása ugyanazon a dátumon, ugyanazokkal a főkönyvi számlákkal történik.
 
-[![A Naplóbizonylat oldal](./media/revenue-recognition-journal-voucher.png)](./media/revenue-recognition-journal-voucher.png)
+[![A Naplóbizonylat oldal.](./media/revenue-recognition-journal-voucher.png)](./media/revenue-recognition-journal-voucher.png)
 
 A **Számla** oszlopban látható a halasztott bevétel főkönyvi számlája. Ez a főkönyvi számla nem szerkeszthető. Ez a korlátozás azt hivatott garantálni, hogy a megfelelő halasztott bevétel főkönyvi számlája legyen mentesítve. Ennek a főkönyvi számlának az érvényesítése nem a számlastruktúra szerint történik, mivel előfordulhat, hogy a főkönyvi számla módosult a bevétel hivatkozott főkönyvi számlájába történő legutóbbi feladása óta.
 
@@ -82,7 +82,7 @@ Az ütemezés sorainak néhány részlete szerkeszthető. A sorok következő me
 
 - **Várakoztatott** – ez a jelölő beállítható vagy törölhető a sor feldolgozása előtt. A jelölő törléséhez jelölje ki a sort, majd válassza a **Várakoztatás eltávolítása** lehetőséget. A várakoztatott sorok bevétele nem jeleníthető meg. Ha a bevétel ütemezését automatikus várakoztatáshoz állítja be, a sorok automatikusan várakoztathatók.
 
-    [![Bevételütemezések – az ütemezés sorainak szerkesztése](./media/revenue-recognition-rev-revenue-schedules.png)](./media/revenue-recognition-rev-revenue-schedules.png)
+    [![Bevételek ütemezései – az ütemezés sorainak szerkesztése.](./media/revenue-recognition-rev-revenue-schedules.png)](./media/revenue-recognition-rev-revenue-schedules.png)
 
 - **Megjelenítés dátuma** – a megjelenítés dátuma módosítható a sor feldolgozása előtt. Amikor a bevétel megjelenítésére szolgáló naplót létrehozó folyamat lefut, akkor a program felvesz egy dátumot a **Bevétel megjelenítése az adott dátumtól** mezőbe. A program összehasonlítja ezt a dátumot és a **Megjelenítés dátuma** mezőben megadott dátumot, hogy meghatározza a megjelenítendő sorokat.
 - **Felszabadítandó összeg** – a felszabadításra kerülő összeg módosítható a sor feldolgozása előtt. A bevétel megjelenített összegét csak csökkentheti; az összeg nem növelhető. Ebben a mezőben a szervezetek megjeleníthetik a bevétel egy részét a megjelenítés dátumán. Ha az összeg módosul, akkor a **Fennmaradó összeg** mezőben szereplő összeg mutatja, hogy mekkora bevételt kell még megjeleníteni.
@@ -94,18 +94,18 @@ A bevétel ütemezésének részletei a számla feladásakor az értékesítési
 
 Az ütemezés módosításához válassza ki a módosítani kívánt elem valamelyik ütemezési sorát. A következő ábrán a 12 hónapos bevételi ütemezés használatával feladott S0008 elemhez tartozó sor látszik kijelölve. A **Szerződési feltételek frissítése** lehetőség kiválasztásakor megjelenik a szerződés kezdő és záró dátumát, valamint a bevétel ütemezését tartalmazó párbeszédpanel.
 
-[![A szerződés kezdő és záró dátuma](./media/revenue-recognition-rev-revenue-schedule-update-cntrct-dates-schedule.png)](./media/revenue-recognition-rev-revenue-schedule-update-cntrct-dates-schedule.png)
+[![A szerződés kezdő és záró dátuma.](./media/revenue-recognition-rev-revenue-schedule-update-cntrct-dates-schedule.png)](./media/revenue-recognition-rev-revenue-schedule-update-cntrct-dates-schedule.png)
 
 Módosítsa úgy a szerződés kezdő és záró dátumát, hogy a dátumtartomány megfelelő legyen. A dátumtartomány módosításakor az **Ismétlődések száma** mezőben lévő értéknek meg kell egyeznie egy, a rendszerben megadott bevételi ütemezéssel. Mivel ebben a példában a szerződést 24 hónaposra módosítottuk, 24 hónapos bevételi ütemezést kell beállítani. Mivel létezik 24 hónapos bevételi ütemezés, a rendszer alapértelmezés szerint ezt adja meg, és a szerződés módosítható. Ha nem létezik olyan bevételi ütemezés, amely esetében egyezik az előfordulások száma, akkor a szerződés nem módosítható. Miután igény szerint frissítette a szerződési feltételeket és a bevételi ütemezést, a párbeszédpanel **OK** gombjára kattintva mentheti a módosításokat.
 
-[![Szerződés frissített dátumtartománya](./media/revenue-recognition-rev-revenue-schedule-update-cntrct-dates-schedule-02.png)](./media/revenue-recognition-rev-revenue-schedule-update-cntrct-dates-schedule-02.png)
+[![Szerződés frissített dátumtartománya.](./media/revenue-recognition-rev-revenue-schedule-update-cntrct-dates-schedule-02.png)](./media/revenue-recognition-rev-revenue-schedule-update-cntrct-dates-schedule-02.png)
 
 A szerződés módosításai a következő hatásokkal vannak a bevételi ütemezés részleteire:
 
 - Ha a termékhez nincs megjelenített bevétel, a program az összes megelőző ütemezési részletet eltávolítja, és az új bevételi ütemezés részleteivel helyettesíti őket. Az S0008 elemhez eredetileg például 12 sor tartozott az ütemezési részletek között. Ezt a 12 sort eltávolítja a program; az új bevételi ütemezés alapján 24 vonalra cseréli őket.
 - Ha a termékhez tartozik megjelenített bevétel, akkor néhány bevétel megjelenítése helytelen volt, mert a megjelenítés helytelen bevételi ütemezésen alapult. Ezeket a sorokat vissza kell vonni, és – az új ütemezés alapján – újra meg kell jeleníteni őket. Ebben az esetben olyan új bevételütemezési sorok jönnek létre, amelyek negatív összeggel rendelkeznek az eredeti megjelenítési dátumon. Ezután új sorok jönnek létre az összegek új bevételi ütemezés alapján történő megjelenítéséhez. 2019. augusztus 8-án például Ön megjelenített 10,53 USD bevételt. 2019. szeptember 8-án megjelenített 13,16 USD bevételt. Ennek megfelelően két új sor jön létre ugyanazon a napon. Egy sor -10,53 USD-hez, a másik sor pedig 13,16 USD-hez. Ezt követően huszonnégy új sor jön létre; a teljes halasztott bevételt (160,61 USD) közöttük osztja el a rendszer. A sztornírozási sorok a **Napló létrehozása** folyamat futtatásával adhatók fel.
 
-[![Bevételmegjelenítési ütemezés](./media/revenue-recognition-rev-recog-schedule-03.png)](./media/revenue-recognition-rev-recog-schedule-03.png)
+[![Bevételmegjelenítési ütemezés.](./media/revenue-recognition-rev-recog-schedule-03.png)](./media/revenue-recognition-rev-recog-schedule-03.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 15466699b94c284208330d50b840c874534b879c
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: ce5ddf863988475550584384f4cf26f1302768aa
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5910280"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355901"
 ---
 # <a name="synchronize-inventory-level-information-from-supply-chain-management-to-field-service"></a>Készletszintű információk szinkronizálása a Supply Chain Management alkalmazásból a Field Service alkalmazásba 
 
@@ -31,7 +31,7 @@ ms.locfileid: "5910280"
 
 Ez a témakör bemutatja a sablonokat és a mögöttes feladatokat, amelyek a Dynamics 365 Supply Chain Management készletszint-adatainak közvetlenül a Dynamics 365 Field Service szolgáltatásba történő szinkronizálására használatosak.
 
-[![Üzleti folyamatok szinkronizálása a Supply Chain Management és a Field Service között](./media/FSOnHandOW.png)](./media/FSOnHandOW.png)
+[![Üzleti folyamatok szinkronizálása a Supply Chain Management és a Field Service között.](./media/FSOnHandOW.png)](./media/FSOnHandOW.png)
 
 ## <a name="templates-and-tasks"></a>Sablonok és feladatok
 A következő sablonokat és alapul szolgáló feladatokat használják a tényleges készletszint szinkronizálásához a Supply Chain Management és a Field Service között:
@@ -89,7 +89,7 @@ Használhatja a speciális lekérdezés és szűrés szűrőit annak a vezérlé
 
 ### <a name="product-inventory-supply-chain-management-to-field-service-product-inventory"></a>Termékkészlet (Supply Chain Management alkalmazásból a Field Service alkalmazásba): Termékkészlet
 
-[![Sablonleképezés az adatintegrátorban](./media/FSinventoryLevel1.png)](./media/FSinventoryLevel1.png)
+[![Sablonleképezés az adatintegrátorban.](./media/FSinventoryLevel1.png)](./media/FSinventoryLevel1.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

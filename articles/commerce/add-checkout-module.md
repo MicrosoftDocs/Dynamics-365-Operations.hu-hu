@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: b1e86cbe1c2b9247f902a8f5777e73f7a9b37929
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: bda264a255a688d64e314d994dc281602c9324cc
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797815"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347590"
 ---
 # <a name="checkout-module"></a>Fizetésmodul
 
@@ -33,7 +33,7 @@ A fizetésmodul a kosár azonosítója alapján jeleníti meg az adatokat. Ezt a
 
 A következő kép egy Pénztár oldalon használt Fabrikam pénztár modul egy példáját jeleníti meg.
 
-![Példa egy pénztármodulra](./media/Checkout.PNG)
+![Példa egy pénztármodulra.](./media/Checkout.PNG)
 
 ## <a name="checkout-module-properties"></a>Fizetésmodul tulajdonságai
 
@@ -52,13 +52,13 @@ A fizetési modul a rendelés összesítését jeleníti meg, és biztosítja a 
 
     A következő kép egy Pénztár oldalon használt szállítási cím modul egy példáját jeleníti meg.
 
-    ![Példa a szállítási cím modulra](./media/ecommerce-shippingaddress.PNG)
+    ![Példa a szállítási cím modulra.](./media/ecommerce-shippingaddress.PNG)
 
 - **Szállítási lehetőségek** – Ez a modul lehetővé teszi a vevő számára, hogy kiválasszon egy szállítási módot rendeléséhez. A modullal kapcsolatos további tudnivalókért lásd: [Szállítási lehetőségek modul](delivery-options-module.md).
 
     A következő kép egy Pénztár oldalon használt szállítási lehetőségek modul egy példáját jeleníti meg.
  
-    ![Példa a szállítási lehetőségek modulra](./media/ecommerce-deliveryoptions.PNG)
+    ![Példa a szállítási lehetőségek modulra.](./media/ecommerce-deliveryoptions.PNG)
 
 - **Fizetési szakasz tárolója** – Ez a modul egy olyan tároló, amelyben több modult is elhelyezhet egy szakasz létrehozásához a fizetési folyamaton belül. Például az összes fizetéshez kapcsolódó modult elhelyezheti ebben a tárolóban, hogy egy szakaszként jelenjenek meg. Ez a modul csak a folyamat elrendezését érinti.
 
@@ -70,7 +70,7 @@ A fizetési modul a rendelés összesítését jeleníti meg, és biztosítja a 
 
     A következő képen egy példa látható az ajándékutalványra, a hűségpontokra és a fizetési modulokra a fizetési oldalon.
 
-    ![Példa az ajándékutalványra, a hűségpontokra és a fizetési modulokra a fizetési oldalon](./media/ecommerce-payments.PNG)
+    ![Példa az ajándékutalvány, a hűségpontok és a fizetési modulokra a fizetési oldalon.](./media/ecommerce-payments.PNG)
 
 - **Kapcsolattartási adatok** – Ez a modul lehetővé teszi a vevő számára, hogy megadja vagy módosítsa a rendeléshez tartozó kapcsolattartási adatokat (e-mail-cím).
 
@@ -80,7 +80,7 @@ A fizetési modul a rendelés összesítését jeleníti meg, és biztosítja a 
 
     A következő képen egy példa látható szerződési feltételekről egy fizetési oldalon.
 
-    ![Példa szerződési feltételekre egy fizetési oldalon](./media/ecommerce-checkout-terms.PNG)
+    ![Példa szerződési feltételekre egy fizetési oldalon.](./media/ecommerce-checkout-terms.PNG)
 
 ## <a name="commerce-scale-unit-interaction"></a>Commerce Scale Unit-interakció
 

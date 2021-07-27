@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 6f74602cafe3f0848a9e03f17300ca6242fe1545
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 53d01756d803a0ebc9eb366deded4bf3bef3b1f6
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893980"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351746"
 ---
 # <a name="download-er-configurations-from-the-global-repository-of-configuration-service"></a>ER-konfigurációk letöltése a konfigurációs szolgáltatás globális tárából
 
@@ -40,7 +40,7 @@ Ez a témakör azt mutatja be, hogyan lehet letölteni az [Elektronikus jelenté
 3. Jelölje be a **Microsoft** lapot a **Konfigurációs szolgáltatók** részben.
 3. Kattintson a **Tárak** lehetőségre a **Microsoft** lapon.
 
-    ![Elektronikus jelentések munkaterülete](./media/er-download-configurations-global-repo-er-workspace.png)
+    ![Elektronikus jelentések munkaterülete.](./media/er-download-configurations-global-repo-er-workspace.png)
 
 4. A **Konfigurációs tárak** lapon lévő rácson jelölje ki a **Globális** meglévő tárházát. Ha a tárház nem jelenik meg a rácson, tegye a következőket:
 
@@ -52,7 +52,7 @@ Ez a témakör azt mutatja be, hogyan lehet letölteni az [Elektronikus jelenté
 
 5. Kattintson a **Megnyitás** lehetőségre a kijelölt tárház ER-konfigurációk listájának megtekintéséhez.
 
-    ![Konfigurációs tárak oldal](./media/er-download-configurations-global-repo-repositories-list.png)
+    ![Konfigurációs tárak oldal.](./media/er-download-configurations-global-repo-repositories-list.png)
 
 ## <a name="import-a-single-configuration"></a>Egyetlen konfiguráció importálása
 
@@ -63,7 +63,7 @@ Ez a témakör azt mutatja be, hogyan lehet letölteni az [Elektronikus jelenté
     > [!NOTE]
     > Az **Importálás** gomb nem érhető el azon ER konfigurációs verziókhoz, amelyek már szerepelnek az aktuális Finance-példányban.
 
-    ![Konfigurációk tárháza oldal](./media/er-download-configurations-global-repo-repository-content.png)
+    ![Konfigurációk tárháza oldal.](./media/er-download-configurations-global-repo-repository-content.png)
 
 ## <a name="import-filtered-configurations"></a>Szűrt konfigurációk importálása
 
@@ -77,7 +77,7 @@ Ez a témakör azt mutatja be, hogyan lehet letölteni az [Elektronikus jelenté
 4. Válassza a **Konfigurációk** gyorslap **Importálás** parancsát a szűrt konfigurációknak a globális tárból a jelenlegi példányra történő letöltéséhez.
 5. Válassza a **Konfigurációk** gyorslap **Szűrő alaphelyzetbe állítása** parancsát a megadott kiválasztási feltételek törléséhez.
 
-    ![Konfigurációk tárháza oldal](./media/er-download-configurations-global-repo-filtered-configurations.png)
+    ![Konfigurációk tárháza oldal.](./media/er-download-configurations-global-repo-filtered-configurations.png)
 
 > [!NOTE]
 > Az ER beállításoktól függ a konfigurációk érvényesítése azok importálását követően. Előfordulhat, hogy bármilyen észlelt ellentmondásos problémáról értesítést kap. Ezeket a problémákat meg kell oldania az importált konfiguráció verziójának használata előtt. További információkért nézze meg a jelen témakörrel kapcsolatos erőforrások listáját.

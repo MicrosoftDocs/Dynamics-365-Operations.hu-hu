@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: f57a20ed56a761894b2cedf8835310dac098b098
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 7e6ac62b2b289ef818a083b9ae4d1d74946ae3fc
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750618"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346496"
 ---
 # <a name="integrated-vendor-master"></a>Integrált szállítói alapadat
 
@@ -39,11 +39,11 @@ Mindkét módszernél a szállítói adatok integrálva lesznek a Dynamics 365 S
 
 Használhatja az új szállító megoldást ha a szállítói adatokat nem szeretné a **Partner/kapcsolattartó** táblában tárolni a Dataverse megoldásban.
 
-![Szállítói adatok áramlása](media/dual-write-vendor-data-flow.png)
+![Szállítói adatok áramlása.](media/dual-write-vendor-data-flow.png)
 
 Ha a szállítói adatokat továbbra is a **Partner/kapcsolattartó** táblában szeretné tárolni, használhatja a kibővített szállítói megoldást. A kiterjesztett szállítói megoldás használatához konfigurálnia kell a szállítói munkafolyamatokat a kettős írás megoldási csomagjában. További információ: [Váltás a szállítói arculatok között](vendor-switch.md).
 
-![Bővített szállítói adatok áramlása](media/dual-write-vendor-detail.jpg)
+![Bővített szállítói adatok áramlása.](media/dual-write-vendor-detail.jpg)
 
 > [!TIP]
 > Ha önkiszolgáló szállítókhoz használ Power Apps portálokat, akkor a szállítói információ közvetlenül a Finance and Operations alkalmazásokba is áramoltathatók.

@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: c36948cc58291b56c1bbe8a3d5c3db52dccc8399
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: cca35be696c8dd9956176e54e77a60f0252e0760
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018606"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352180"
 ---
 # <a name="prorate-header-charges-to-matching-sales-lines"></a>Fejlécdíjak arányosítása a megfelelő értékesítési sorokhoz
 
@@ -56,9 +56,9 @@ Ez a forgatókönyv ismerteti, amikor az **Arányosítása a megfelelő értéke
 
 Ebben az esetben a szervezet definiált fejlécszintű díjakat a **99**-es szállításimód-kapcsolathoz és a **11**-es szállításimód-kapcsolathoz. Nincsnek automatikus díjak konfigurálva a **21**-es szállítási módhoz..
 
-![Automatikus-díjak a 99-es szállítási módhoz, az illeszkedő sorok arányosítása ki van kapcsolva](media/99_disabled.png)
+![Automatikus-díjak a 99-es szállítási módhoz, az illeszkedő sorok arányosítása ki van kapcsolva.](media/99_disabled.png)
 
-![Automatikus-díjak a 11-es szállítási módhoz, az illeszkedő sorok arányosítása ki van kapcsolva](media/11_disabled.png)
+![Automatikus-díjak a 11-es szállítási módhoz, az illeszkedő sorok arányosítása ki van kapcsolva.](media/11_disabled.png)
 
 A hívásközpont egy értékesítési rendelést hoz létre, és a szállítási mód értéke **99**. Ehhez a rendelés öt cikket tartalmaz. Két rendelési sor van ugyanazon **99**-es szállítási mód használatára konfigurálva, két sor **11**-es szállítási mód használatára konfigurálva, és egy sor úgy van beállítva, hogy a **21**-es a szállítási módot használja, amint azt a következő a táblázatban látható.
 
@@ -78,9 +78,9 @@ Ebben az esetben, ha a vevő visszaküld egyes cikkeket a rendelésből, és a [
 
 Ebben az esetben vannak fejlécszintű díjak konfigurálva a **99**-es szállításimód-kapcsolathoz és a **11**-es szállításimód-kapcsolathoz. Azonban az **Arányosítás a megfelelő értékesítési sorokhoz** beállítása **Igen** ezekhez az automatikus díjtáblázatokhoz.
 
-![Automatikus-díjak a 99-es szállítási módhoz, az illeszkedő sorok arányosítása be van kapcsolva](media/99_enabled.png)
+![Automatikus-díjak a 99-es szállítási módhoz, az illeszkedő sorok arányosítása be van kapcsolva.](media/99_enabled.png)
 
-![Automatikus-díjak a 11-es szállítási módhoz, az illeszkedő sorok arányosítása be van kapcsolva](media/11_enabled.png)
+![Automatikus-díjak a 11-es szállítási módhoz, az illeszkedő sorok arányosítása be van kapcsolva.](media/11_enabled.png)
 
 Ebben a példában ugyanazt az öt sort tartalmazó értékesítési rendelést használjuk. A rendelési fejlécben szereplő szállítási mód értéke **99**, de minden egyes cikkhez az értékesítési rendelésben a szállítási mód az alábbi táblázatban látható módon van konfigurálva.
 
@@ -130,9 +130,9 @@ Mivel az automatikus díjkonfiguráció úgy van beállítva, hogy arányosítso
     - Termék összértéke = $15
     - **Díj értéke = $0** (Nincsenek automatikus költségek konfigurálva vevő és a szállítási mód kombinációhoz.)
 
-    ![A Szállítási mód 11 díjai a kiemelt szinthez tartoznak](media/step2mode11.png)
+    ![A Szállítási mód 11 díjai a kiemelt szinthez tartoznak.](media/step2mode11.png)
 
-    ![A Szállítási mód 99 díjai a kiemelt szinthez tartoznak](media/step2mode99.png)
+    ![A Szállítási mód 99 díjai a kiemelt szinthez tartoznak.](media/step2mode99.png)
 
 3. A rendszer kiszámítja a díj értékét, amelyet minden sor esetében alkalmazni, az arányosítási logika alapján, amely figyelembe veszi a sor arányosított értékét a teljes termékértékhez képest.
 
@@ -163,7 +163,7 @@ Mivel az automatikus díjkonfiguráció úgy van beállítva, hogy arányosítso
 
 Ezért az ebben a példában a 81334 cikkhez $5,62 szállítási díj lesz hozzárendelve. Ezeket a költségeket a **Költségek karbantartása** lapon tekintheti meg az értékesítési sorhoz. Az alábbi ábra azt mutatja, hogyan néz ki ez az oldal 81334-es cikkhez.
 
-![Arányosított díjak a 81334-es cikk értékesítési sorához](media/proratedlinecharge.png)
+![Arányosított díjak a 81334-es cikk értékesítési sorához.](media/proratedlinecharge.png)
 
 Ezen számítási mód használatakor részleges visszáru esetén, ha a költségkód visszatéríthető, a díjnak csak a sorhoz hozzárendelt része lesz visszatérítve a cikk visszaküldése esetén.
 

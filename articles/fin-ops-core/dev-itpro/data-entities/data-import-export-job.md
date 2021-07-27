@@ -8,16 +8,17 @@ ms.prod: ''
 ms.technology: ''
 audience: Application user
 ms.reviewer: sericks
+ms.custom: intro-internal
 ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c660cf5aba786fb6f84776f6443f658ebbfa25d5
-ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
+ms.openlocfilehash: 12de6d70243bdcda5fc7887f24eecb462de23683
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "5937330"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351019"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Adatimportálási és -exportálási feladatok áttekintése
 
@@ -106,7 +107,7 @@ Két leképezési nézet van: **Megfeleltetés megjelenítése**, amely az alap�
 
 A **Forrásmegfeleltetések előállítása** kiválasztásával lehet létrehozni az oldalon egy leképezést. A létrehozott leképezés ugyanúgy viselkedik, mint az automatikus leképezése. Ezért manuálisan kell leképezni az esetleges le nem képezett mezőket.
 
-![Adatleképezés](./media/dixf-map.png)
+![Adatleképezés.](./media/dixf-map.png)
 
 ## <a name="verify-the-security-for-your-import-or-export-job"></a>Az importálási vagy az exportálási feladat biztonságának ellenőrzése
 A hozzáférés az **Adatkezelés** munkaterülethez korlátozható, hogy a rendszergazdai jogokkal nem rendelkező felhasználók csak meghatározott adatfeladatokhoz férhessenek hozzá. Az adatfeladathoz való hozzáférés azt jelenti, hogy teljes a hozzáférés az adott feladat végrehajtási előzményeihez, és az előkészítési táblákhoz is van hozzáférés. Ezért az adatfeladatok létrehozásakor gondoskodnia kell a megfelelő hozzáférés-szabályozás meglétéről.
@@ -132,7 +133,7 @@ A feladat meghatározása után a feladat futtatható egyszer az **Importálás*
 ## <a name="validate-that-the-job-ran-as-expected"></a>Ellenőrizze, hogy a feladat megfelelően futott le
 A feladatelőzmények hibaelhárítási és vizsgálati célra rendelkezésre állnak mind az importálási, mint az exportálási feladatoknál. Az előzményfeladat-futtatások időtartományok szerint vannak rendezve.
 
-![Feladat előzménytartományok](./media/dixf-job-history.md.png)
+![Feladat előzménytartományai.](./media/dixf-job-history.md.png)
 
 Minden lefuttatott feladat megadja a következő adatokat:
 

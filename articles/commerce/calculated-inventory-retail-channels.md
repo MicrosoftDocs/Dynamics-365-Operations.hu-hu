@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2020-02-11
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 96a600279b7a90d6626d23ee8868de13e9dd0f14
-ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
+ms.openlocfilehash: 2b6f9663ed08ab431ffc6ffe3154854250c1b092
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "6270885"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350474"
 ---
 # <a name="calculate-inventory-availability-for-retail-channels"></a>Kiskereskedelmi csatornák készletelérhetőségének kiszámítása
 
@@ -105,7 +105,7 @@ A Commerce 10.0.9-es és korábbi kiadásaiban a pénztár **Készletkeresés** 
 
 Amikor a csatornaoldali számítást helyesen konfigurálták és kezelték, megbízhatóbb becslést biztosíthat az aktuális üzletkészletről, mivel a Kereskedelmi csatorna-adatbázisban található tranzakciós adatokat használ, amelyről a központ még lehet, hogy nem tud. Ha például a pénztár készletkereséseire vonatkozó meglévő valós idejű szolgáltatáshívást használja, a központ valószínűleg még nem rendelkezik az információval a termékkel éppen történt készpénzzel fizetett és azonnal átvett értékesítésről. Így a központ által az adott termékre vonatkozóan visszadatott tényleges készlet értéke valószínűleg meghaladja az üzlet aktuális tényleges készletét egy egységgel. Ha viszont a csatornaoldali számítást használja, akkor a készpénzzel fizetett és azonnal átvett értékesítést a rendszer beleszámítja a számításba, és levonja a megjelenő tényleges értékből. Annak ellenére, hogy a csatornaoldali számítás és a valós idejű szolgáltatáshívások által biztosított értékek is csak a tényleges készlet becslését jelentik, a csatornaoldali számítás által adott érték nagyobb valószínűséggel pontos az aktuális üzletre nézve.
 
-Ha úgy szeretné konfigurálni a pénztár **Készletkeresés** műveletét a központban, hogy a csatornaoldali számítási logikát használja, és kikapcsolja a valós idejű szolgáltatáshívást, kövesse ezeket a lépéseket.
+Ha konfigurálni szeretné a pénztári **Készletkeresés** művelet a Commerce Headquarters rendszerében ahhoz, hogy használhassa a csatornaoldali számítási logikát és kikapcsolhassa a valós idejű szolgáltatáshívásokat, először engedélyeznie kell az **Optimalizált termékelérhetőségi számítás** funkciót a **Funkciókezelés** munkaterületen a Commerce Headquartersben, majd követnie kell ezeket a lépéseket.
 
 1. Ugorjon a következő elemre: **Retail és Commerce \>  Csatorna beállítása \> Pénztárbeállítás \>  Pénztárprofilok \> Funkcióprofilok**.
 1. Válasszon funkcióprofilt.

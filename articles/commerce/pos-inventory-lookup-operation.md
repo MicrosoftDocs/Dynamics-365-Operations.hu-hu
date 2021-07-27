@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application update 5, AX 8.0
-ms.openlocfilehash: 873c6413c14d2ee8315c149ee9c495bb59dbd930
-ms.sourcegitcommit: 11ca5863175150b6c39f47a9322caa2186727a26
+ms.openlocfilehash: c0f753febb0d347015fde1374148835f90df55a3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "6025448"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353780"
 ---
 # <a name="inventory-lookup-operation-in-pos"></a>Készletkeresés-művelet a pénztárban
 
@@ -45,7 +45,10 @@ A készletkeresési művelet egy készletkeresési listanézetet biztosít egy a
 
 A helyek listanézete tartalmaz minden üzletet és raktárat, amely az aktuális üzlethez kapcsolt teljesítési csoportokban van konfigurálva, mint azt a következő például szolgáló kép mutatja.
 
-![Készletkeresés-művelet listanézet](media/inventory-lookup-list-view.png)
+![Készletkeresés-művelet listanézet.](media/inventory-lookup-list-view.png)
+
+> [!NOTE]
+> Győződjön meg arról, hogy az aktuális üzlet szerepel a kapcsolódó teljesítési csoportokban.
 
 Az alábbi műveletek érhetők el a pénztár alkalmazássávján:
 
@@ -65,7 +68,7 @@ Az alábbi műveletek érhetők el a pénztár alkalmazássávján:
 - **Hozzáadás a tranzakcióhoz** – ez a művelet hozzáadja a terméket a kosárhoz, és átirányítja a felhasználót a tranzakciós képernyőre.
 
 > [!NOTE]
-> A hely alapú rendezéshez hely és az aktuális üzlet közötti távolságot a Commerce központban megadott koordináták (földrajzi szélesség és földrajzi hosszúság) határozzák meg. Üzletnél a helyadatokat az üzlethez társított üzemi egység elsődleges címe alapján van meghatározva. Nem üzlet raktár esetén a helyadatokat a raktár címe határozza meg. Ha az aktuális üzlet koordinátái nem megfelelően vannak megadva, a hely alapú rendezési beállítás az aktuális üzletet jeleníti meg a lista tetején, majd név szerint rendezi az egyéb helyeket.
+> A hely alapú rendezéshez hely és az aktuális üzlet közötti távolságot a Commerce központban megadott koordináták (földrajzi szélesség és földrajzi hosszúság) határozzák meg. Üzletnél a helyadatokat az üzlethez társított üzemi egység elsődleges címe alapján van meghatározva. Nem üzlet raktár esetén a helyadatokat a raktár címe határozza meg. Ha az aktuális üzlet koordinátái nincsenek megadva, a hely alapú rendezési beállítás az aktuális üzletet jeleníti meg a lista tetején, majd név szerint rendezi az egyéb helyeket.
 
 > [!NOTE]
 > Az **Üzlet elérhetőségének megjelenítése**, az **Üzlet helyének megjelenítése**, az **Átvétel üzletben** és a **Termék szállítása** műveletek nem érhetők el a nem üzleti helyeken.
@@ -76,7 +79,7 @@ A változatokkal rendelkező alaptermék készletkeresési művelete egy dimenzi
 
 A következő példaként bemutatja a készletkeresési mátrix nézetet a pénztárban.
 
-![Készletkeresés-művelet mátrixnézet](media/inventory-lookup-matrix-view.png)
+![Készletkeresés-művelet mátrixnézet.](media/inventory-lookup-matrix-view.png)
 
 A mátrix nézetben minden cella egy egyedi változatot jelenít meg, és megjeleníti a jobb alsó sarokban az aktuális készlet (elérhető fizikai) értékét, valamint a bal felső sarokban a **lefoglalt** (fizikailag lefoglalt) és a **megrendelt** (összes megrendelt) értékeket. Az alábbi táblázat bemutatja a különféle rendelkezésre álló értékek jelentését.
 
@@ -103,7 +106,7 @@ A pénztárfelhasználók a készletkeresés műveletet a POS más oldaláról i
 
 A következő példaként bemutatja a készletkeresési eredményeit a termékrészletek oldalról pénztárban.
 
-![Készletkeresés a termék részletek oldalról](media/inventory-lookup-from-product-details-page.png)
+![Készletkeresés a termék részletek oldalról.](media/inventory-lookup-from-product-details-page.png)
 
 Az alaptermék termék termékrészletek oldalán az alkalmazássáv **Összes változat megtekintése** műveletével elindíthatja a készletkeresés mátrixnézetét, amely megjeleníti az aktuális áruház készletelérhetőség-adatait a termék minden változatára. Egy adott termék esetében a termékrészletek oldal megjeleníti az adott termék aktuális készletének (rendelkezésre álló fizikai) értékét az aktuális áruházra vonatkozóan. Ezenkívül kiválaszthatja az **Egyéb áruházak készlete** hivatkozást a készletkeresési művelet elindításához, hogy ellenőrizze a termék rendelkezésre állását más üzletekben vagy raktárakban.
 

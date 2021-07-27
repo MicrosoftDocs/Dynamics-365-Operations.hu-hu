@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: ecdf4e5618d3397527bf83977857fbe3f8dbb265
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: de378edbd7d13626302c7129c605b1837ffb579e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799179"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349602"
 ---
 # <a name="create-a-default-customer"></a>Alapértelmezett vevő létrehozása
 
@@ -47,7 +47,7 @@ Ha még nem léteznek vevőcsoportok, létrehozhat egyet. A példák lehetnek a 
 
 A következő kép több konfigurált vevői csoportot mutat be.
 
-![Vevőcsoportok](media/customer-groups.png)
+![Vevőcsoportok.](media/customer-groups.png)
 
 ## <a name="create-a-customer-address-book"></a>Új ügyfélcímjegyzék létrehozása
 
@@ -63,7 +63,7 @@ A vevőnek címjegyzékhez kell tartoznia. Ha még nincs létrehozva, akkor lét
 
 A következő kép egy példát mutat a címjegyzékre.
 
-![Címjegyzék](media/address-book.png)
+![Címjegyzék.](media/address-book.png)
 
 ## <a name="create-a-default-customer&quot;></a>Alapértelmezett vevő létrehozása
 
@@ -86,11 +86,11 @@ Alapértelmezett ügyfél létrehozásához tegye a következőket.
 
 A következő kép egy példát mutat az ügyféllétrehozásra.
 
-![Alapértelmezett vevő létrehozása](media/default-customer-creation.png)
+![Alapértelmezett vevő létrehozása.](media/default-customer-creation.png)
 
 A következő kép egy alapértelmezett vevői konfigurációt mutat be.
 
-![Vevői mintakonfiguráció](media/default-customer-configuration1.png)
+![Vevői mintakonfiguráció.](media/default-customer-configuration1.png)
 
 A vevő részletek képernyőjén található alapértelmezett értékek többsége maradhat, de a két értéket módosítani kell.
 
@@ -100,13 +100,13 @@ A vevő részletek képernyőjén található alapértelmezett értékek többs�
 
 A következő kép egy példát mutat az ügyfélkonfigurációra.
 
-![Példa ügyfélkonfiguráció](media/default-customer-configuration2.png)
+![Példa ügyfélkonfiguráció.](media/default-customer-configuration2.png)
 
 ## <a name="additional-resources"></a>További erőforrások
 
 [Csatornák áttekintése](channels-overview.md)
 
-[Csatornák beállításának előfeltételei](channels-prerequisites.md)
+[Csatorna beállításainak előfeltételei](channels-prerequisites.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

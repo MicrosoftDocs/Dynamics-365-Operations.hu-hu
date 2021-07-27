@@ -9,12 +9,12 @@ ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-02-22
-ms.openlocfilehash: c62290506d32579d926ad1a1d6f090845c0d0f26
-ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
+ms.openlocfilehash: ce246a51c75cc322f1cfea70c47f00c7dd750ea2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "6216612"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346620"
 ---
 # <a name="party-and-global-address-book"></a>Fél és globális címjegyzék
 
@@ -41,7 +41,7 @@ A fél modellt gyakran használják a szervezetek és az emberek közötti köze
 
 A következő ábrán a fél adatmodellje látható.
 
-![Adatmodell a félhez](media/party-gab-image1.png)
+![Adatmodell a félhez.](media/party-gab-image1.png)
 
 > [!TIP]
 > Amikor új fiókrekordot próbál létrehozni, a **Fél** mezővel név szerint keresheti meg a rekordot. Így, ha a rekordot megtalálja, csak ki kell választania. A rendszer ezután automatikusan kitölti a fél összes adatát. Nem kell manuálisan beállítania az összes szükséges mezőt. Ez a viselkedés megtalálható a **Partner**, **Névjegy** és **Szállító** lapokon, amelyek gyárilag elérhetők.
@@ -58,7 +58,7 @@ Az üzleti környezettől függően előfordulhat, hogy egy személy vagy szerve
 
 A következő ábra a globális címjegyzék adatmodelljét mutatja be.
 
-![A globális címjegyzék adatmodellje](media/party-gab-image2.png)
+![A globális címjegyzék adatmodellje.](media/party-gab-image2.png)
 
 ## <a name="contact"></a>Kapcsolat
 
@@ -94,7 +94,7 @@ Ezeket a kapcsolatokat a Partner a **Fél kapcsolattartója** tábla tárolja. E
     + Ha a **Társított kapcsolattartó** mezőben kiválaszt egy értéket, akkor a **Személy** típusú csíkozott kapcsolattartót választja.
     + Ha a **Társított partner** vagy a **Társított szállító** mezőben választ értéket, akkor egy szervezetet jelöl ki.
 
-    ![Társított szervezetek fül a Kapcsolattartó lapon](media/party-gab-image3.png)
+    ![Társított szervezetek fül a Kapcsolattartó lapon.](media/party-gab-image3.png)
 
     Az Ön választásától függetlenül a társítás a felek szintjén jön létre, és a fél összes szerepkörére vonatkozik, és a **Fél kapcsolattartója** entitásban tárolódik.
 
@@ -109,7 +109,7 @@ Ha olyan **Kapcsolattartó** sort nyit meg, amelyben vagy a **Vevő** vagy a **S
 
 A **Partner**, **Kapcsolattartó** és **Szállító** lapokon egy új **Címek** fül került bevezetésre. Ez a fül több postai címet is támogat a rács használatával, lásd az alábbi ábrát.
 
-![A postai címek rácsa](media/party-gab-image4.png)
+![A postai címek rácsa.](media/party-gab-image4.png)
 
 A rács a következő oszlopokat tartalmazza:
 
@@ -121,7 +121,7 @@ A rács fölötti **Új cím** gombbal annyi postai címet hozhat létre, amenny
 
 A **Cím 1** és **Cím 2** mezők az **Összegzés** lapon a **Partner** lapon megfelelnek a **Szállítási** és **Számlázási** címeknek.
 
-![A postai címek összegző lapja](media/party-gab-image5.png)
+![A postai címek összegző lapja.](media/party-gab-image5.png)
 
 A **Cím 1**, **Cím 2** és **Cím 3** mezők az **Összegzés** lapon a **Kapcsolattartó** lapon megfelelnek a **Céges**, **Szállítási** és **Számlázási** címeknek.
 
@@ -129,7 +129,7 @@ A **Cím 1**, **Cím 2** és **Cím 3** mezők az **Összegzés** lapon a **Kapc
 
 A **Partner**, **Kapcsolattartó** és **Szállító** lapokon egy új **Elektronikus címek** fül került bevezetésre. Ez a fül több elektronikus címet is támogat a rács használatával, lásd az alábbi ábrát.
 
-![Az elektronikus címek rácsa](media/party-gab-image6.png)
+![Az elektronikus címek rácsa.](media/party-gab-image6.png)
 
 A rács a következő oszlopokat tartalmazza:
 
@@ -205,7 +205,7 @@ Az elektronikus címek csak ebben a rácsban érhetők el. A későbbi verziókb
     | Félazonosító (mező) | Pontos egyezés |
     | Kiválasztás (mező) | (üres) |
 
-    ![Ismétlődő szabály a Számlákhoz](media/duplicate-rule-1.PNG)
+    ![Ismétlődő szabály a Számlákhoz.](media/duplicate-rule-1.PNG)
 
 10. Bontsa ki a **Kapcsolattartók** tábla ismétlődések észlelési szabályát a következő mezők beállításával.
 
@@ -221,7 +221,7 @@ Az elektronikus címek csak ebben a rácsban érhetők el. A későbbi verziókb
     | Félazonosító (mező) | Pontos egyezés |
     | Kiválasztás (mező) | (üres) |
 
-    ![Ismétlődő szabály a Kapcsolattartókhoz](media/duplicate-rule-2.PNG)
+    ![Ismétlődő szabály a Kapcsolattartókhoz.](media/duplicate-rule-2.PNG)
 
 11. Ha Ön kettős írású felhasználó, hajtsa végre a [Frissítés a fél és globális címjegyzék modelljére](upgrade-party-gab.md) megadott utasításokat, és frissítse az adatait.
 
@@ -300,11 +300,11 @@ További tájékoztatás: [Kettős írású leképezési hivatkozás](mapping-re
 + A `msdyn_partyelectronicaddress` táblából származnak a **Partner**, **Kapcsolattartó** és **Szállító** űrlapok elektronikus cím fülében beállított elektronikus címek. Ezek az információk nem jutnak el a társított tranzakciókhoz, mint például az értékesítési rendeléshez, árajánlathoz vagy beszerzési rendeléshez. A probléma javítását a növekményes kiadásban tervezzük eszközölni. A számla és a kapcsolattartó rekord e-mail-cím mezőiben lévő adatok továbbra is működni fognak az olyan tranzakciókon, mint az értékesítési rendelés, az árajánlat és a beszerzési rendelés.
 + A Finance and Operations alkalmazásokban létrehozhat kapcsolattartórekordot a **Kapcsolattartó hozzáadása** űrlapról. Amikor a **Kapcsolattartó megtekintése** képernyőről megpróbál új kapcsolattartót létrehozni, a művelet sikertelen lesz. Ez egy ismert probléma.
 
-    ![Ismert probléma a Kapcsolattartó hozzáadásával kapcsolatban](media/party-gab-contact-issue.png)
+    ![Ismert probléma a Kapcsolattartó hozzáadásával kapcsolatban.](media/party-gab-contact-issue.png)
 
 + A **Kezdeti szinkronizálás** nem támogatja az **Elérhető űrlap** és **Elérhető** lehetőségeket a **ContactForParty** időmezőkön, mivel a DIXF egész szám helyett karakterlánccá alakítja az értéket. Az átalakítás a `Cannot convert the literal '<say 08:00:00>’ to the expected type edm.int32` hibát váltja ki.
 + Ha egy postai címet több célból használnak, például üzleti kommunikációs címként vagy számlázási címként, akkor a címnek a képen láthatóan, `Business;Invoice` kell megjelennie. Ha helyet ad az értékek közé, hibaüzenet jelenik meg.
 
-    ![Ismert probléma a Címmel kapcsolatban](media/party-gab-address-issue.png)
+    ![Ismert probléma a Címmel kapcsolatban.](media/party-gab-address-issue.png)
 
 + Nem írhat be jövőben lévő dátumú postai címet a kettős írással együtt használt Finance and Operations alkalmazással, mert a Dataverse nem támogatja az érvényességi dátumot. Ha egy alkalmazás segítségével ad meg egy jövőbeli dátumú postai címet a Finance and Operations alkalmazással, akkor teljesen szinkronizálja a Dataverse-be, és a cím azonnal megjelenik a felhasználói felületen. A rekord minden frissítése hibát eredményez, mivel jövőbeli és nem jelenlegi dátumú a Finance and Operations alkalmazásban.

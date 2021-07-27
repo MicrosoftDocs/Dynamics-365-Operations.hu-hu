@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 9e3f2a17e182c0e3efc8b90380eff74f350c3278
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: cce8cb6ef9e0cc74abf90f16ed0ee481b8274a03
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804649"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352988"
 ---
 # <a name="opt-in-to-use-ratings-and-reviews"></a>A minősítések és értékelések használatának bekapcsolása
 
@@ -43,7 +43,7 @@ A következő lépések végrehajtásával választhatja ki azt, hogy használni
 1. Állítsa be az **Értékelések és vélemények szolgáltatás engedélyezése** értékét **Igen** beállításra.
 1. Az **AAD biztonsági csoport értékelések és vélemények moderátora (biztonsági csoport-objektumazonosító)** mezőbe írja be annak a Microsoft Azure Active Directory (Azure AD) biztonsági csoportnak az azonosítóját, amely tartalmazza az értékelések és vélemények moderátorait.
 
-    ![A minősítések és ellenőrzések használatának bekapcsolása](media/LCS_RnR_Preference.png)
+    ![A minősítések és értékelések használatának bekapcsolása.](media/LCS_RnR_Preference.png)
 
 1. Az e-commerce inicializálási folyamat végrehajtása.
 

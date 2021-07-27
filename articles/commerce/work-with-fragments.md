@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 1fa55ab83562983273768895db61032ec7199fa6
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 017cdc76368ae4f80131471a289aa03ab06c99bf
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5793945"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350208"
 ---
 # <a name="work-with-fragments"></a>Töredékek használata 
 
@@ -62,7 +62,7 @@ Ha egy korábban konfigurált modult újra felhasználható töredékké szeretn
 1. A **Mentés töredékként** párbeszédpanelen adjon nevet a töredéknek.
 1. Az **OK** gombra kattintva mentheti a modulkonfigurációt olyan töredékként, amely más lapokhoz is hozzáadható.
 <!-- The following image shows how to save a module configuration as a fragment.-->
-<!--![A screen capture of how to save a module configuration as a fragment](./media/save-as-fragment.png)-->
+<!--![A screen capture of how to save a module configuration as a fragment.](./media/save-as-fragment.png)-->
 
 ### <a name="create-a-new-fragment"></a>Új töredék létrehozása
 
@@ -73,7 +73,7 @@ A következő lépésekkel hozhat létre új töredéket a Commerce webhelykész
 1. A modul típusának kiválasztása a töredékhez.
 
 <!-- The following image shows where to create a new fragment.-->
-<!-- ![A screen capture of where to create a new fragment](./media/fragment-nav-menu.png)-->
+<!-- ![A screen capture of where to create a new fragment.](./media/fragment-nav-menu.png)-->
 > [!TIP]
 > Egy általános tárolómodul-típus kiválasztásával a legrugalmasabban frissítheti és konfigurálhatja a töredéket később.
 
@@ -88,14 +88,14 @@ A következő lépésekkel adhat hozzá új töredéket egy oldalhoz a Commerce 
 1. A bal oldali vázlat ablaktáblán vagy közvetlenül a vizuális oldalkészítőben, válassza ki azt a tárolót vagy helyet, amelyhez hozzá szeretné adni a származtatott modulokat.
 1. Válassza ki a tároló vagy a hely neve melletti három pontot (**...**).  Másik lehetőségként, ha a vizuális oldalkészítőt használja, válassza ki a pluszjelet (**+**).  
 1. Válassza a **Töredék hozzáadása** lehetőséget.
-    <!-- ![A screen capture of how to add an existing fragment to a slot or container](./media/add-fragment.png)-->
+    <!-- ![A screen capture of how to add an existing fragment to a slot or container.](./media/add-fragment.png)-->
  
     > [!NOTE]
     > Ha a tároló vagy a bővítőhely nem támogatja az új származtatott modulokat, akkor a **Töredék hozzáadása** lehetőség nem érhető el.
     
 1. A **Töredék kiválasztása** párbeszédpanelen keressen meg és válasszon ki egy töredéket a hozzáadáshoz. Ha nincs elérhető töredék a listán, először létre kell hozni egy töredéket egy olyan modultípusból, amelyet a kiválasztott tároló vagy bővítőhely támogat.
 1. Válassza ki és adja hozzá a kívánt töredéket a tárolóhoz vagy helyhez a lapon.
-<!--    ![A screen capture of the fragment picker modal window](./media/fragment-picker.png)-->
+<!--    ![A screen capture of the fragment picker modal window.](./media/fragment-picker.png)-->
 
 > [!NOTE]
 > A tárolókban vagy bővítőhelyekben engedélyezett modulokat a lapsablonja vagy a modulok saját definíciói határozzák meg.

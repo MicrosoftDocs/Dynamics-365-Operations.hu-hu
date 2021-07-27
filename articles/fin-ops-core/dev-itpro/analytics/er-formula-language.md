@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 470b4fa1c8b15ae4a9e9ebef81af9e4ca107422d
-ms.sourcegitcommit: 15aacd0e109b05c7281407b5bba4e6cd99116c28
+ms.openlocfilehash: 1e48c02ecc9d69cf14ed257aae56081925cedfe9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "6223986"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355394"
 ---
 # <a name="electronic-reporting-formula-language"></a>Elektronikus jelentéskészítés képletének nyelve
 
@@ -117,15 +117,15 @@ Amikor a kifejezés egy adatforrásra hivatkozik, az útvonal meghatározása se
 
 Ha egy strukturált adatforrás elérési útja „kukac” jellel (@) kezdődik, akkor ez relatív útvonal. A „kukac” jel a használt hierarchikus fastruktúra abszolút elérési útjának fennmaradó része helyett jelenik meg. A következő ábrán egy példa látható. Itt a `Ledger.'accountingCurrency()'` abszolút útvonal azt jelzi, hogy a **Főkönyv** adatforrásból származó számviteli pénznem értéke bekerül az adatmodell **AccountingCurrency** mezőjébe.
 
-![Példa abszolút elérési útra az ER modell-leképezési tervező lapon](./media/ER-FormulaLanguage-AbsolutePath.png)
+![Példa abszolút elérési útra az ER modell-leképezési tervező lapon.](./media/ER-FormulaLanguage-AbsolutePath.png)
 
 Az alábbi ábrán látható példa szemlélteti, hogyan használja a rendszer a relatív elérési utat. A `@.AccountNum` relatív elérési út azt jelzi , hogy az **Intrastat** adatforrás **AccountNum** mezője (amely az adatmodell hierarchikus fájának **AccountNum** mezője felett egy szinttel feljebb jelenik meg) a vevő vagy szállító számlaszámának bevitelére szolgál az adatmodell **AccountNum** mezőjében.
 
-![Példa relatív elérési útra az ER modell-leképezési tervező lapon](./media/ER-FormulaLanguage-RelativePath1.png)
+![Példa relatív elérési útra az ER modell-leképezési tervező lapon.](./media/ER-FormulaLanguage-RelativePath1.png)
 
 Az abszolút elérési út maradék része is megjelenik az [ER képletszerkesztőben](general-electronic-reporting-formula-designer.md).
 
-![A teljes elérési út hátralévő része az ER képlettervező lapon](./media/ER-FormulaLanguage-RelativePath2.png)
+![A teljes elérési út hátralévő része az ER képlettervező lapon.](./media/ER-FormulaLanguage-RelativePath2.png)
 
 További információ: [Relatív elérési út használata az ER-modellek és -formátumok adatkötéseiben](relative-path-data-bindings-er-models-format.md).
 
