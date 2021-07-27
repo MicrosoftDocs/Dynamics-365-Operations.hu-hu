@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 14151
+ms.custom:
+- "14151"
+- intro-internal
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 9d7eca35d6e5ce8f434f923fef69a6d13a8ac1b3
-ms.sourcegitcommit: c9f55e64416d0bbedfdadafb00e4181921ad0f37
+ms.openlocfilehash: f0d709ef81fd43c009bf36aba2d4be949b1a737c
+ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "6261910"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "6338229"
 ---
 # <a name="finance-insights-home-page-preview"></a>Pénzügyi információk kezdőlapja (előzetes verzió)
 
@@ -29,9 +31,8 @@ ms.locfileid: "6261910"
 
 A Pénzügyi információk konfigurálható és bővíthető modelleket biztosít, amelyek segítségével pontosan és intelligensen előrejelezheti a vállalat pénzforgalmát, előrejelezheti, hogy mikor kapja meg a fennmaradó kinnlévőségek kifizetését, és létrehoz egy költségvetési javaslatot, amely felgyorsíthatja a költségvetési folyamatot. Ezek a funkciók intelligens gépi tanulási modelleken alapulnak. Amikor ezeket az új képességeket kombinálják a szállítói kifizetések és beszedések automatizálásával, gazdag és intelligens pénzügyi rendszert biztosítanak, amely ösztönzi a döntéshozatalt, és segít a jelenlegi és várható üzleti kihívások hatékony megválaszolásában.
 
-A Finance Insights előzetes verzió az Amerikai Egyesült Államokban, Európában és az Egyesült Királyságban is elérhető a próbaverzió telepítéshez. A Microsoft fokozatosan adja hozzá a további régiók támogatását.
-
-Az előzetes verziójú funkciók csak 2. szintű tesztkörnyezetekben szabad bekapcsolni. A tesztkörnyezetben létrehozott telepítési és mesterséges intelligencia-modellek (AI)nem telepíthetők át éles környezetbe. További információ: [A Microsoft Dynamics 365 előzetes verziók kiegészítő használati feltételei](/dynamics365/legal/supp-dynamics365-preview#:~:text=Supplemental%20Terms%20of%20Use%20for%20Microsoft%20Dynamics%20365,%28governing%20your%20use%20of%20Microsoft%20Dynamics%20365%20Online%29.).
+> [!NOTE]
+> A Finance Insights nyilvános előzetes verzió az Amerikai Egyesült Államokban, Kanadában, Európában és az Egyesült Királyságban, Ázsiában és a Csendes-óceáni térségben, Ausztráliában és Új-Zélandon is elérhető telepítéshez. A Microsoft fokozatosan adja hozzá a további régiók támogatását. A Finance insights termelési környezetekben való engedélyezéséhez először engedélyezni kell az [Exportálás a Data Lake rendszerbe](../../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md) képességeket a termelési környezetben.
 
 > [!NOTE]
 > Ezt a funkciót előnézeti funkciókként kínálják fel. Előnézeti funkcióként a kapott gépi oktatási modelleket nem szabad az üzleti döntések vagy a költségvetési javaslatok befolyásolása érdekében használni. A funkció használatát a [Kiegészítő használati feltételek](https://go.microsoft.com/fwlink/?linkid=2105274)szabályozzák.
@@ -46,7 +47,7 @@ Az előzetes verzióra való jelentkezéshez töltse ki a [Pénzügyi elemzési 
 
 ### <a name="system-requirements"></a>Rendszerkövetelmények
 
-A 2. szintű tesztkörnyezet (többdobozos) szükséges a pénzügyi elemzések előzetes verziójának megtekintéséhez. A környezetekkel kapcsolatos háttérbeli tudnivalókat lásd: [Környezet tervezése](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
+A 2. szintű környezet (többdobozos) szükséges a Finance Insights előzetes verziójának megtekintéséhez. A környezetekkel kapcsolatos háttérbeli tudnivalókat lásd: [Környezet tervezése](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
 
 ### <a name="version-requirements"></a>Verziókövetelmények
 
@@ -55,8 +56,6 @@ Ez a dokumentum a Finance and Operations-alkalmazások 10.0.11-es verziójára (
 ### <a name="historical-data-requirements"></a>Korábbi adatokra vonatkozó követelmények
 
 Legalább egy év értékű vevői számlákra van szükség a gépi tanulási modell megfelelő betanításához, amelyet a Vevői fizetési előrejelzések funkcióhoz használnak.
-
-Mintaadatok érhetők el a(z) Contoso bemutató adatkészlettel rendelkező bemutatórendszerekhez.
 
 ### <a name="role-and-permission-requirements"></a>Szerepkör- és engedélykövetelmények
 
@@ -72,7 +71,7 @@ Az erőforrások létrehozásának és kezelésének ismerete az Azure-ban, Micr
 ## <a name="configure-finance-insights"></a>Pénzügyi információk konfigurálása
 
 A Pénzügyi információk használatához végre kell hajtson néhány konfigurációs lépést. További információ a Finance Insights konfigurálásáról:
-  - A 10.0.19-es verzióig: [Konfiguráció a Finance Insights alkalmazáshoz – 10.0.19 verzióig](configure-for-fin-insites.md).
+  - A 10.0.19-es verzióig: [Konfiguráció a Finance Insights (előzetes verzió) alkalmazáshoz – 10.0.19 verzióig](configure-for-fin-insites.md).
   - A 10.0.20-as és újabb verziók esetén: [A Finance Insights (előzetes verzió) konfigurálása – 10.0.20-as és újabb verziók](configure-for-fin-insites-PubPrvw.md).
 
 ## <a name="create-a-data-integrator-project"></a>Adatintegrációs projekt létrehozása

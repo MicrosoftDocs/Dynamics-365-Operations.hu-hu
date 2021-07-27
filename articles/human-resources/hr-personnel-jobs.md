@@ -2,11 +2,11 @@
 title: Feladat összetevőinek beállítása
 description: Ez a cikk azt ismerteti, milyen fogalmi elemek alkothatnak egy feladatot, és példákat ad arra, hogyan használhatja ezen elemeket a szervezetben.
 author: andreabichsel
-ms.date: 06/20/2017
+ms.date: 06/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: HcmJob, HcmJobFunction, HcmJobTask, HcmTitle, HcmPersonnelManagementWorkspace
+ms.search.form: HcmJob, HcmJobFunction, HcmJobTask, HcmTitle, HcmPersonnelManagementWorkspace, HCMJobFamily
 audience: Application User
 ms.author: anbichse
 ms.search.scope: Human Resources
@@ -15,12 +15,12 @@ ms.assetid: 889a8fab-0eef-45c2-91fc-ff2f4d44d54f
 ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 88dc3cec4880fdcb4d4f8d54b03037f738d2a57a
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: d4e24e64f3fece0807df8fbf4fb206c4588c9332
+ms.sourcegitcommit: 43962e6fedaf55aab2f28f53bc38a69d2ff58403
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6056569"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "6333093"
 ---
 # <a name="set-up-the-components-of-a-job"></a>Feladat összetevőinek beállítása
 
@@ -37,14 +37,19 @@ A létrehozni kívánt beosztásokhoz titulusokat is be kell állítania. A poz�
 
 Beosztások karbantartásához használja a **Beosztások** oldalt, amely a keresés funkció segítségével nyitható meg. A **Beosztások** oldalon írja be a beosztásokat, amelyeket használni tervez a feladatokhoz.
 
-## <a name="job-types"></a>Beosztástípusok
+## <a name="job-types"></a>Feladattípusok
 Beosztástípusok segítségével a hasonló feladatok kategóriákba sorolhatók. A beosztástípusok használata nem kötelező, azonban ha a későbbiekben a kompenzációkezelés jogosultsági szabályainak beállításakor szeretne beosztástípusokat használni, ezeket még a beosztások előtt kell beállítania. Beosztástípusok például teljes és részmunkaidős, illetve a munkabéres és az órabéres. A beosztástípusok karbantartásához használja a **Beosztástípusok** oldalt. A **Beosztástípusok** oldalon adja meg a beosztástípus nevét és rövid leírását. A **Mentességi állapot** mezőben a következő lehetőségek közül választhat annak jelzésére az ilyen beosztástípusú feladatoknál, hogy az Egyesült Államok munkajogi törvénye (FLSA, Fair Labor Standards Act) ezekre a feladatokra nem vonatkozik:
 
 -   **Mentes** – A beosztásokhoz az FLSA szerint túlórapénz nem jár.
 -   **Nem mentes** – A beosztásokhoz az FLSA szerint túlórapénz jár.
 -   **Nem alkalmazható** – Az FLSA hatálya erre nem terjed ki.
 
-## <a name="job-functions"></a>Beosztások
+## <a name="job-family"></a>Feladatcsalád
+A feladatcsalád a hasonló munkát igénylő feladatok olyan csoportja, amely hasonló képzettséget, szakértelmet, tudást és tapasztalatot igényel. A feladatcsaládok összekapcsolhatók a **Feladatok** oldal **Feladatosztályozás** gyorslapján és a **Minden pozíció** oldal **Általános** gyorslapján lévő feladatokkal. A feladatcsaládok lehetnek általánosak vagy specifikusak az üzleti és a jelentési követelményektől függően. Az általános feladatcsaládokra jó példa a **Szakképzett munka** és a **Szakképzettséget nem igénylő munka**. Néhány példa a konkrét feladatcsaládokra a **Könyvelés**, a **Gyártás** és az **Értékesítés**.
+
+A feladatcsaládok karbantartásához használja a **Feladatcsaládok** oldalt, amelyet a keresési funkció segítségével nyithat meg. A **Feladatcsalád** oldalon adjon meg egy egyedi nevet a családnak, és adja meg a feladatokhoz használni tervezett részletes leírást.
+
+## <a name="job-functions"></a>Feladatfunkciók
 A beosztási funkciók magas szintű funkcionális kategóriákat írnak le magas szintű feladatokat írnak elő. A beosztási funkciók használata nem kötelező, A beosztási funkciókat és beosztási típusokat együttesen felhasználva az egyes feladatokhoz hozzá lehet szűrni a kompenzációs konstrukciókat. A feladatfunkciók és feladattípusok kompenzációs konstrukciókhoz társítása az **Alkalmazhatósági szabályok** oldalon, alkalmazhatósági szabályok felállításával történik. Ezen túlmenően a kompenzációs konstrukcióhoz hozzá lehet csatolni a szintek azon csoportját, amelyek az alkalmazhatósági szabály által behatárolt, adott feladattípus/feladatfunkció kombinációra vonatkoznak. (Ezek a funkciók mind a fix, mind a változó kompenzációs konstrukcióra vonatkoznak.) A beosztásfunkciók használata nem kötelező, azonban ha a későbbiekben a kompenzációkezelés jogosultsági szabályainak beállításakor szeretne beosztásfunkciókat használni, ezeket még a beosztások előtt kell beállítania. Az alábbi táblázatban látható néhány példa munkaköri beosztásokra.
 
 | Munka           | Beosztás         |
@@ -53,6 +58,14 @@ A beosztási funkciók magas szintű funkcionális kategóriákat írnak le maga
 | Könyvelő    | Szakemberek        |
 
 A beosztási funkciók karbantartásához használja a **Beosztási funkciók** oldalt. A **Beosztási funkciók** oldalon adja meg a beosztási funkció azonosító kódját és rövid leírását.
+
+## <a name="compensation"></a>Kompenzáció
+Ha fix kompenzációs konstrukciót szeretne hozzárendelni egy olyan alkalmazotthoz, aki egy adott beosztásban van egy adott feladaton belül, kompenzációs szinteket kell beállítania a feladathoz. A kompenzációs szintek akkor használatosak, amikor be van állítva a minimális, a középső és a maximális összeg egy kompenzációs struktúrában (kompenzációs rácsban). Fix kompenzációs konstrukció létrehozása esetén a kompenzációs szerkezetet kell kiválasztani. A kompenzációs struktúra tartalmazza a kompenzációs szintet is. Amikor egy alkalmazotthoz fix kompenzációs konstrukciót választ, a kiválasztható kompenzációs szintek az alkalmazott beosztásához hozzárendelt feladattól függenek. A kompenzáció beállításával kapcsolatos további információkért lásd: [Kompenzációs konstrukciók](hr-compensation-overview.md).
+
+## <a name="job-skills"></a>Feladat – szakértelem
+A feladathoz tartozó szakértelem írja le a feladat végrehajtásához szükséges készségeket. A feladat minden szakértelmi eleméhez társítani kell a szakértelem szintjét. A szakértelem szintjeit a felhasználó határozza meg. Jelzik, hogy milyen szintű tudás vagy jártasság szükséges az szakterületen. A vállalatok beállíthatnak például numerikus, 1-től 5-ig terjedő szintrendszert, amelyben az **1** a kezdő, az **5** pedig a szakértő szintet jelzi. Másik lehetőségként a vállalatok beállíthatnak **Kezdő**, **Haladó** és **Szakértő** jelölésű szinteket is. A szakértelem szintjének beállítása után a szakértelem fontossága is beállítható. Ha például egy könyvelőnek alapos Microsoft Excel-ismeretekkel kell rendelkezni, létrehozható egy **Excel-ismeretek** szakértelem. A szakértelemszinthez ezután beállítható a **Haladó** érték, míg a fontossághoz a **Legfontosabb** szint.
+
+A feladathoz tartozó szakértelmek felhasználható a szakértelem hozzárendeléséhez. A szakértelem hozzárendelése összehasonlíthatja a feladathoz szükséges szakértelemkészletet a dolgozóhoz társított szakértelmi elemekkel. Ezután az egyező elemek alapján kiszámít egy százalékos értéket. A szakértelem-hozzárendelésről a [Szakértelem konfigurálása](hr-develop-skills.md) című témakörben olvashat bővebben. 
 
 ## <a name="job-tasks"></a>Munkaköri feladatok
 A munkaköri feladatok bemutatják az adott pozíciójú dolgozótól elvárt alapvető feladatokat. Ugyanazon munkaköri feladatok több munkához, valamint a munkaköri feladatokat használó munkákkal kapcsolatos beosztásokhoz is hozzáadhatók. Az alábbi táblázatban látható néhány példa munkaköri feladatokra.

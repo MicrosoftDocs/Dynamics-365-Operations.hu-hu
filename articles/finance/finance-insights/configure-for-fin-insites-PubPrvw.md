@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-06-03
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: 613bd4816e2f0c4fbb56cf79779a08c6a09592bd
-ms.sourcegitcommit: 655b0e16c7aef6182cd58bc816b901470e1bb2ce
+ms.openlocfilehash: eeb3061f215666d0aeb32094b5d04a9ae6e618f2
+ms.sourcegitcommit: f6050b444e636ba662c00d0443c94a99f8ea0b0d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "6222612"
+ms.lasthandoff: 06/28/2021
+ms.locfileid: "6309665"
 ---
 # <a name="configuration-for-finance-insights-for-public-preview-preview---version-10020-and-later"></a>A Finance Insights konfigurálása nyilvános előzetes verzióhoz (előzetes verzió) – 10.0.20-as vagy újabb verzió
 
@@ -33,7 +33,7 @@ ms.locfileid: "6222612"
 A Pénzügyi információk a Microsoft Dynamics 365 Finance és a Dataverse, az Azure és az AI Builder funkcióit kombinálva hatékony előrejelző eszközöket biztosítanak a szervezet számára. Ez a témakör bemutatja, hogyan kell konfigurálni a Dynamics 365 Finance 10.0.20 verzióját a Finance Insights nyilvános előzetes verziójában elérhető képességek használatához.
 
 > [!NOTE]
-> Az ebben a témakörben ismertetett konfigurációs lépések csak a Finance 10.0.20-as és későbbi verzióira érvényesek. "A Finance Insights10.0.19-es és korábbi verziói beállításával kapcsolatosan lásd: : [Konfiguráció a Finance Insights alkalmazáshoz – 10.0.18 verzióig](configure-for-fin-insites.md).
+> Az ebben a témakörben ismertetett konfigurációs lépések csak a Finance 10.0.20-as és későbbi verzióira érvényesek. "A Finance Insights 10.0.19-es és korábbi verzióinak beállításával kapcsolatosan lásd: [Konfiguráció a Finance Insights alkalmazáshoz – 10.0.19 verzióig](configure-for-fin-insites.md).
 
 ## <a name="deploy-finance"></a>A Finance telepítése
 
@@ -748,6 +748,8 @@ A következő lépések szerint telepítheti a Finance Insights bővítményt.
 2. A **Környezeti bővítmények** szakaszban válassza az **Új bővítmény telepítése** lehetőséget.
 3. A **Finance Insights** bővítmény konfigurálása.
 4. Fogadja el a feltételeket, majd válassza a **Telepítés** lehetőséget.
+
+A bővítmény telepítése eltarthat néhány percig.
 
 ## <a name="feedback-and-support"></a>Visszajelzés és támogatás
 

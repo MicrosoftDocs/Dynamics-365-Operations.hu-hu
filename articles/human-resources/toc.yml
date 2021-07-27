@@ -355,6 +355,8 @@
           items:
             - name: Bevezetés
               href: hr-admin-integration-ats-api-introduction.md
+            - name: Kiszolgálók közötti hitelesítés az ATS-integrációhoz
+              href: hr-admin-integration-ats-api-s2s-auth.md
             - name: Toborzási kérelem és kapcsolódó entitások
               items:
                 - name: Toborzási kérelem
@@ -443,16 +445,40 @@
               href: hr-admin-integration-payroll-api-introduction.md
             - name: Bérlistaentitások létrehozása és áttekintése
               href: hr-admin-integration-payroll-api-generate-review-entities.md
-            - name: Bárlista alkalmazottja
-              href: hr-admin-integration-payroll-api-payroll-employee.md
-            - name: Bérlista dolgozói címe
-              href: hr-admin-integration-payroll-api-payroll-worker-address.md
-            - name: Fix kompenzációs konstrukció bérlistája
-              href: hr-admin-integration-payroll-api-payroll-fixed-compensation-plan.md
-            - name: Bérlista szerinti beosztás feladata
-              href: hr-admin-integration-payroll-api-payroll-position-job.md
-            - name: Bérlista szerinti beosztás
-              href: hr-admin-integration-payroll-api-payroll-position.md
+            - name: Bérlista-integráció paraméterei
+              href: hr-admin-integration-payroll-api-parameters.md
+            - name: Bérlistaentitás
+              items:
+                - name: Bárlista alkalmazottja
+                  href: hr-admin-integration-payroll-api-payroll-employee.md
+                - name: Bérlista dolgozói címe
+                  href: hr-admin-integration-payroll-api-payroll-worker-address.md
+                - name: Fix kompenzációs konstrukció bérlistája
+                  href: hr-admin-integration-payroll-api-payroll-fixed-compensation-plan.md
+                - name: Változó kompenzációs konstrukció bérlistája
+                  href: hr-admin-integration-payroll-api-payroll-variable-compensation-plan.md
+                - name: Bérlista szerinti beosztás
+                  href: hr-admin-integration-payroll-api-payroll-position.md
+                - name: Bérlista szerinti beosztás feladata
+                  href: hr-admin-integration-payroll-api-payroll-position-job.md
+            - name: Szabadsághoz és távolléthez kapcsolódó entitások
+              items:
+                - name: Szabadság egyenlege
+                  href: hr-admin-integration-payroll-api-leave-balance.md
+                - name: Szabadság típusa
+                  href: hr-admin-integration-payroll-api-leave-type.md
+                - name: Szabadságkérelem
+                  href: hr-admin-integration-payroll-api-leave-request.md
+            - name: Lehetőségkészletek
+              items:
+                - name: Nem
+                  href: hr-admin-integration-payroll-api-gender.md
+                - name: Nem Igen
+                  href: hr-admin-integration-payroll-api-no-yes.md
+                - name: Jutalom típusa
+                  href: hr-admin-integration-payroll-api-award-type.md
+                - name: Folyamat típusa
+                  href: hr-admin-integration-payroll-api-process-type.md
     - name: Használati útmutató
       items:
         - name: Áttekintés
@@ -593,12 +619,14 @@
               href: ../fin-ops-core/fin-ops/organization-administration/configure-document-management.md?toc=/dynamics365/human-resources/toc.json
             - name: E-mail konfigurálása és küldése
               href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/human-resources/toc.json
-            - name: Dátum/időadatok és időzónák
+            - name: Dátum-/időadatok és időzónák
               href: ../fin-ops-core/fin-ops/organization-administration/date-time-zones.md?toc=/dynamics365/human-resources/toc.json
         - name: Személyzet kezelése
           items:
             - name: Munkaerő-szervezés
               href: hr-personnel-departments-jobs-positions.md
+            - name: Munkaerő-kezelési munkaterület
+              href: hr-personnel-personnel-management-workspace.md
             - name: Feladat összetevőinek beállítása
               href: hr-personnel-jobs.md
             - name: Részlegek meghatározása
@@ -607,6 +635,8 @@
               href: hr-personnel-add-department-hierarchy.md
             - name: Feladatok meghatározása
               href: hr-personnel-define-jobs.md
+            - name: Beosztások
+              href: hr-personnel-positions.md
             - name: Munkaidőnaptár létrehozása
               href: hr-personnel-create-working-time-calendar.md
             - name: Jelöltek toborzása
@@ -833,7 +863,73 @@
               href: hr-employee-manager-self-service-custom-links.md
             - name: Alkalmazotti önkiszolgáló munkaterület nevének módosítása
               href: hr-employee-self-service-workspace-name.md
-            - name: Személyes információk szerkesztése
+            - name: Személyes adatok szerkesztése
               href: hr-employee-manager-self-service-edit-personal-information.md
             - name: A személyes adatok szerkesztésének korlátozása
               href: hr-employee-self-service-restrict-editing.md
+        - name: A munkafolyamat-rendszer használata
+          items:
+            - name: A munkafolyamat-rendszer áttekintése
+              href: ../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/human-resources/toc.json
+            - name: A munkafolyamat-rendszer felépítése
+              href: ../fin-ops-core/fin-ops/organization-administration/workflow-system-architecture.md?toc=/dynamics365/human-resources/toc.json
+            - name: Munkafolyamat-elemek
+              href: ../fin-ops-core/fin-ops/organization-administration/workflow-elements.md?toc=/dynamics365/human-resources/toc.json
+            - name: Munkafolyamat-műveletek
+              href: ../fin-ops-core/fin-ops/organization-administration/workflow-actions.md?toc=/dynamics365/human-resources/toc.json
+            - name: Munkafolyamatok létrehozása
+              items:
+                - name: Munkafolyamatok létrehozása – áttekintés
+                  href: ../fin-ops-core/fin-ops/organization-administration/create-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Munkafolyamat-tulajdonságok konfigurálása
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-workflow-properties.md?toc=/dynamics365/human-resources/toc.json
+                - name: Manuális feladatok konfigurálása
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-task-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Automatizált feladatok konfigurálása
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-automated-task-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Jóváhagyási folyamatok konfigurálása
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Jóváhagyási lépések konfigurálása
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-step-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Kiadásellenőrök konfigurálása
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-expenditure-reviewers.md?toc=/dynamics365/human-resources/toc.json
+                - name: Manuális döntések konfigurálása
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-decision-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Feltételes döntések konfigurálása
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-conditional-decision-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Párhuzamos tevékenységek konfigurálása
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-activity-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Párhuzamos ágak konfigurálása
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-branch-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Sortétel munkafolyamatainak konfigurálása
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-line-item-workflow.md?toc=/dynamics365/human-resources/toc.json
+            - name: A munkafolyamat-üzenetet feldolgozó kötegelt feladat konfigurálása kritikusként
+              href: ../fin-ops-core/fin-ops/organization-administration/workflow-batch-job-critical.md?toc=/dynamics365/human-resources/toc.json
+            - name: Egy munkafolyamat munkatételeinek delegálása
+              href: ../fin-ops-core/fin-ops/organization-administration/tasks/delegate-work-items-workflow.md?toc=/dynamics365/human-resources/toc.json
+            - name: Munkafolyamat-előzmények megtekintése
+              href: ../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md?toc=/dynamics365/human-resources/toc.json
+            - name: A rendszer konfigurálása munkafolyamattal kapcsolatos e-mailek küldéséhez a felhasználóknak
+              href: ../fin-ops-core/fin-ops/organization-administration/tasks/users-receive-workflow-related-email-messages.md?toc=/dynamics365/human-resources/toc.json
+            - name: Munkafolyamat-típusok
+              items:
+                - name: Munkafolyamat-típus létrehozása
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create.md?toc=/dynamics365/human-resources/toc.json
+                - name: Munkafolyamat-típus ellenőrzőlistája
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-checklist.md?toc=/dynamics365/human-resources/toc.json
+                - name: Munkafolyamat-kategória létrehozása
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-category.md?toc=/dynamics365/human-resources/toc.json
+                - name: Lekérdezés létrehozása munkafolyamat-típushoz
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-query.md?toc=/dynamics365/human-resources/toc.json
+                - name: Új munkafolyamat-típus létrehozása
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create-new.md?toc=/dynamics365/human-resources/toc.json
+                - name: Munkafolyamat-dokumentumosztály létrehozása
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-document-create.md?toc=/dynamics365/human-resources/toc.json
+                - name: Egy SubmitToWorkflow osztály létrehozása
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-submit-to-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Munkafolyamat-dokumentumosztály társítása munkafolyamat-típushoz
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-associate-document.md?toc=/dynamics365/human-resources/toc.json
+            - name: Munkafolyamat-típusok jelentése
+              href: ../fin-ops-core/fin-ops/organization-administration/workflow-types-report.md?toc=/dynamics365/human-resources/toc.json
+            - name: Munkafolyamat GYIK
+              href: ../fin-ops-core/fin-ops/organization-administration/workflow-FAQ.md?toc=/dynamics365/human-resources/toc.json

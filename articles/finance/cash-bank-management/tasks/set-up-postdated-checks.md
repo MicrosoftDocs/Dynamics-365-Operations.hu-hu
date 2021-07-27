@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d0d4afd74f9a0f9018629fa92ab6595bfa94f973
-ms.sourcegitcommit: c011a2ef66b38e71ddaf003f7d243677bb2707c5
+ms.openlocfilehash: 1d73a382f1786a73a5af917b28d00384ecc36aa8
+ms.sourcegitcommit: f6050b444e636ba662c00d0443c94a99f8ea0b0d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "6026205"
+ms.lasthandoff: 06/28/2021
+ms.locfileid: "6309766"
 ---
 # <a name="set-up-postdated-checks"></a>Jövőben esedékes csekkek beállítása
 
@@ -58,6 +58,7 @@ Ezen eljárás szerepköre: Pénztáros. Ez az eljárás az USMF bemutatócéget
 > 
 > A **Fizetési mód** (**Kötelezettségek > Kifizetés beállítása > Fizetési módok**) beállításakor ne töltse ki az **Áthidaló számlát**. Ebben az esetben az ellenszámla van kitöltve a bankszámlával, amely a **Fizetési módban** van beállítva.
 >  
-> Ha a funkció engedélyezve van, és a munkamenet dátuma kisebb az esedékesség dátumánál, a fizetési napló feladása során a következő hibaüzenet jelenik meg: "Az esedékességi dátum nem lehet a munkamenet dátumával megegyező vagy korábbi, ha az ellenszámla Bank típusú". Ha a funkció nincs engedélyezve, akkor a jövőben esedékes csekkre vonatkozó fizetési naplót akkor lehet feladni, ha a munkamenet dátuma az esedékességi dátumnál korábbi.    
+> Ha a funkció engedélyezve van, és a munkamenet dátuma kisebb az esedékesség dátumánál, a fizetési napló feladása során a következő hibaüzenet jelenik meg: "Az esedékességi dátum nem lehet a munkamenet dátumával megegyező vagy korábbi, ha az ellenszámla Bank típusú". Ha a funkció nincs engedélyezve, akkor a jövőben esedékes csekkre vonatkozó fizetési naplót akkor lehet feladni, ha a munkamenet dátuma az esedékességi dátumnál korábbi.
+> Ez a funkció elérhető a 10.0.21 vagy újabb verzióban.    
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

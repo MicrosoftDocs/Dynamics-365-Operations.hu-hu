@@ -2,7 +2,7 @@
 title: Személyzeti műveletekkel kapcsolatos GYIK
 description: Ez a cikk azokra a kérdésekre ad válaszokat, amelyek akkor merülhetnek fel, ha szervezete személyzeti műveleteket használ. A személyzeti műveletek olyan kiegészítő lépések, amelyeket bizonyos személyzeti feladatok végrehajtásakor kell elvégeznie.
 author: andreabichsel
-ms.date: 06/16/2017
+ms.date: 06/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: a458800788d8e0df6c1f937a639eff31dcbb2c06
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 05365eabe6f3c283f5828e468c9323c3fa897fb8
+ms.sourcegitcommit: 43962e6fedaf55aab2f28f53bc38a69d2ff58403
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6054548"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "6333019"
 ---
 # <a name="personnel-actions-faq"></a>Személyzeti műveletekkel kapcsolatos GYIK
 
@@ -42,7 +42,7 @@ A személyzeti műveleteket két típusra osztjuk:
 ## <a name="what-do-the-statuses-of-the-personnel-actions-mean"></a>Mit jelentenek a személyzeti műveletek állapotai?
 A személyzeti műveletek a következő állapotokat vehetik fel:
 
-- **Tervezet** – Ha munkafolyamatokat használ, akkor művelet még nem lett elküldve. Ha nem használ munkafolyamatokat, akkor művelet nem lett befejezve.
+- **Tervezet** – Ha munkafolyamatokat használ, akkor művelet még nem lett elküldve. Ha nem használ munkafolyamatokat, akkor a művelet nem lett befejezve.
 - **Ellenőrzés alatt** – A személyzeti műveletet beküldték a munkafolyamatba, de a munkafolyamat nem fejeződött be.
 - **Jóváhagyva várakozik** – A munkafolyamat befejeződött, de a módosítások még folyamatban vannak. Megszakítva – A munkafolyamatot megszakították, vagy a személyzeti műveletet visszavonták. Elutasítva – A műveletkérelmet a jóváhagyó elutasította.
 - **Művelet feldolgozása** – A műveletkérelmet jóváhagyták, a módosítások feldolgozás alatt állnak.
@@ -51,7 +51,7 @@ A személyzeti műveletek a következő állapotokat vehetik fel:
 - **Megtagadva** – A műveletkérelmet elutasította a jóváhagyó.
 
 ## <a name="can-i-delete-a-personnel-action"></a>Lehetséges személyzeti műveleteket törölni?
-Igen, törölheti az olyan személyzeti műveleteket, amelyek állapota **Tervezet**, **Hiba**, **Sikertelen** vagy **Megszakítva**.
+Igen, törölheti az olyan személyzeti műveleteket, amelyek állapota **Tervezet**, **Hiba**, **Sikertelen** vagy **Megszakítva**. Csak akkor törölhet **Befejeződött** állapotú személyzeti műveleteket, ha a **Befejeződött dolgozói műveletek törlésének engedélyezése** lehetőséget a **Human Resources megosztott paraméterei** oldalon **Igen** állapotúra állította.
 
 ## <a name="what-is-the-fastest-way-to-check-the-status-of-a-personnel-action-request"></a>Hogyan tudom a leggyorsabban ellenőrizni egy személyzeti művelet kérelmének állapotát?
 Nyissa meg bármelyik személyzeti művelet listaoldalát, majd válasszon egy műveletet.
