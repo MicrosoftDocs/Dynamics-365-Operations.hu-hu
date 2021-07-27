@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-11-13
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: f46d55bf7a670e983fb65a9ca303bc02568247ed
-ms.sourcegitcommit: bef7bd2aac00d7eb837fd275d383b7a5c3f1c1ee
+ms.openlocfilehash: a896953a5603d9766f2c4938158088fc9424d5bf
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "5911296"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6343748"
 ---
 # <a name="work-with-location-directives"></a>Helyutasítások kezelése
 
@@ -51,7 +51,7 @@ Mielőtt helyutasítási műveletet hozhatna létre, követnie kell az alábbi l
 
 A helyutasításokhoz beállítható mezők közül sok minden munkarendelés-típusban közös. Más mezők azonban adott munkarendelés-típusokra jellemzőek.
 
-![A helyutasítások munkarendelés-típusai](media/Location_Directives_Work_Order_Types.png "A helyutasítások munkarendelés-típusai")
+![A helyutasítások munkarendelés-típusai.](media/Location_Directives_Work_Order_Types.png "A helyutasítások munkarendelés-típusai")
 
 > [!NOTE]
 > Két munkarendelés-típust, a *Visszavont munkát* és a *Ciklikus leltározást* csak a rendszer használja. A helyutasítások nem hozhatók létre ezekhez a munkarendelés-típusokhoz.

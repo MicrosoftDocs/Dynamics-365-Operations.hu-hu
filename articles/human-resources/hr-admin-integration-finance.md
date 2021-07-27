@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5ed66bb2b2fce659e1e1f029fd60f74149b6526b
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 81b65d1aeeff6c4459fe0b2637013009958cfd55
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6055124"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360640"
 ---
 # <a name="configure-integration-with-finance"></a>A Finance szolgáltatással való integráció konfigurálása
 
@@ -30,7 +30,7 @@ ms.locfileid: "6055124"
 
 A Dynamics 365 Human Resources integrációjához Dynamics 365 Finance megoldással használhatja A Human Resources to Finance integrációs folyamat sablont az [Adatintegrátorban](/powerapps/administrator/data-integrator). A Human Resources to Finance sablon lehetővé teszi a feladatok, beosztások és dolgozók adatáramlását. A sablon lehetővé teszi, hogy az adatok a Human Resources alkalmazásból a Finance alkalmazásba áramoljanak de nem teszik lehetővé a Finance alkalmazásból a Human Resources alkalmazásba az áramlást.
 
-![A Human Resources to Finance integrációs folyamata](./media/hr-admin-integration-finance-flow.png)
+![A Human Resources to Finance integrációs folyamata.](./media/hr-admin-integration-finance-flow.png)
 
 A Human Resources to Finance megoldás a következő adatszinkronizálási típusokat tartalmazza:
 
@@ -253,6 +253,6 @@ A dolgozó címében használt helyazonosító nem része számsorozatnak. A dol
 
 Az alábbi ábrán látható egy példa az Adatintegrátorban való sablonleképezésre. 
 
-![Sablonleképezés](./media/IntegrationMapping.png)
+![Sablon-hozzárendelés.](./media/IntegrationMapping.png)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

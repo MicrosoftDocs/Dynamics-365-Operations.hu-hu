@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 2df579bfb820f871bfcc9c18bd8e5681cdf42447
-ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
+ms.openlocfilehash: 00cb05105c047989ea74bbba3360c067b1b98ce8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "6271208"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360376"
 ---
 # <a name="firm-planned-orders"></a>Biztosra tervezett rendelések
 
@@ -81,7 +81,7 @@ A rendelések manuális biztosra tervezése érdekében keresse meg és válassz
     - **Csoportosítás időszak szerint** (a **Beszerzési rendelések** szakaszban) – Válassza ki azt az időszakot, amely szerint csoportosítani szeretné a tervezett beszerzési rendeléseket. Ez a beállítás csak akkor használható, ha be van jelölve a **Szállítók szerinti csoportosítás** opció is.
     - **Csoportosítás időszak szerint** (az **Átmozgatások** szakaszban) – Válassza ki azt az időszakot, amely szerint csoportosítani szeretné a tervezett átmozgatási rendeléseket. A rendelések a **Raktárból** és a **Raktárba** értékek alapján lesznek csoportosítva.
 
-    ![Paraméterek gyorslap a Megerősítés párbeszédpanelben](./media/manual-firming.png "Paraméterek gyorslap a Megerősítés párbeszédpanelben")
+    ![Paraméterek gyorslap a Megerősítés párbeszédpanelben.](./media/manual-firming.png "Paraméterek gyorslap a Megerősítés párbeszédpanelben")
 
 1. A **Futtatás a háttérben** gyorslapon úgy állítsa be a feladatot, hogy kötegelt módban fusson. A manuális megerősítésnél azonban nincs értelme ismétlődő ütemezést beállítani. A mezők ugyanúgy működnek, mint a Supply Chain Management más, [háttérben futó feladattípusai](../../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md). A manuális megerősítéshez azonban a kötegelt feladat csak az aktuálisan kiválasztott tervezett rendeléseket fogja feldolgozni. Nem fog feldolgozni olyan rendeléseket, amelyek megfelelnek a lapon aktuálisan alkalmazott szűrőknek.
 1. Az **OK** gombra kattintva alkalmazza a beállításokat, és hozzon létre megerősített rendeléseket.
@@ -140,15 +140,15 @@ A rendelések lekérdezésen alapuló megerősítési folyamattal való biztosra
     - **Időkorlát napjainak megerősítése a jövőben** – Válassza ki, hogy az alaptervezés alapján a jövőben mennyire előretekintve kell számítani a különböző igényeket és egyéb szempontokat.
     - **Időkorlát napjainak megerősítése a múltban** – Válassza ki, hogy az alaptervezés alapján a múltban mennyire előretekintve kell számítani a különböző igényeket és egyéb szempontokat.
 
-    ![Paraméterek gyorslap a Tervezett rendelés megerősítése párbeszédpanelben](./media/planned-order-firming-main-1.png "Paraméterek gyorslap a Tervezett rendelés megerősítése párbeszédpanelben")
+    ![Paraméterek gyorslap a Tervezett rendelés megerősítése párbeszédpanelben.](./media/planned-order-firming-main-1.png "Paraméterek gyorslap a Tervezett rendelés megerősítése párbeszédpanelben")
 
 1. Annak megadásához, hogy mely rekordok szerepeljenek a rendelésben, válassza ki a **Szűrő** gombot a **Belefoglalandó rekordok** gyorslapon. Megjelenik egy standard lekérdezési párbeszédpanel, ahol meghatározhatja a kiválasztási feltételeket, a rendezési feltételeket és az illesztéseket. A mezők ugyanúgy működnek, mint a Supply Chain Management más lekérdezéstípusai. Az alábbi mezők írásvédettek, és a lekérdezéshez kapcsolódó értékeket is megmutatja.
 
-    ![Belefoglalandó rekordok gyorslap a Tervezett rendelés megerősítése párbeszédpanelben](./media/planned-order-firming-main-2.png "Belefoglalandó rekordok gyorslap a Tervezett rendelés megerősítése párbeszédpanelben")
+    ![Belefoglalandó rekordok gyorslap a Tervezett rendelés megerősítése párbeszédpanelben.](./media/planned-order-firming-main-2.png "Belefoglalandó rekordok gyorslap a Tervezett rendelés megerősítése párbeszédpanelben")
 
 1. Az **Előzetes verzió** kiválasztásával megtekintheti az eddig megadott beállításoknak megfelelő megerősített rendelés tartalmát. A tervezett rendelések listája megerősítése üzenetként fog megjelenni. Ezután a szükséges beállításokat addig módosíthatja, amíg az előzetes verzióban meg nem jelenik a megerősített rendelés.
 
-    ![Példa a megerősített rendelés előzetes verziójára](./media/planned-order-firming-preview.png "Példa a megerősített rendelés előzetes verziójára")
+    ![Példa a megerősített rendelés előzetes verziójára.](./media/planned-order-firming-preview.png "Példa a megerősített rendelés előzetes verziójára")
 
     > [!WARNING]
     > Ez a funkció a szűrési feltételeknek megfelelő összes tervezett rendelést meg fogja erősíteni. A tervezett rendelések nem kritikus megerősítése miatt több nem kívánt beszerzési, átmozgatási és termelési rendelést kell létrehozni. Mielőtt folytatja, mindig az **Előzetes verzió** gombra kattintva ellenőrizze a szerepeltetni kívánt rekordokat.

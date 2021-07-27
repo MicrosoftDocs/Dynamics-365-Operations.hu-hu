@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: athinesh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: e066deedcdb02237d6f492047e19100255dab84e
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: bd33158514de149ecc7da5823c799dd567aeee13
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795549"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357834"
 ---
 # <a name="set-up-and-manage-images-for-modern-pos-mpos"></a>Képek beállítása és kezelése az Modern POS (MPOS) esetében
 
@@ -46,11 +46,11 @@ Az alábbi eljárásokban a képek példaként a Katalógus entitásnál vannak 
 1. Nyissa meg a Commerce HQ-portált.
 2. Kattintson a **Retail és Commerce** &gt; **Csatorna beállítása** &gt; **Csatornaprofilok** lehetőségekre.
 
-    [![Navigáció](./media/channel-profile1.png)](./media/channel-profile1.png)
+    [![Navigáció.](./media/channel-profile1.png)](./media/channel-profile1.png)
 
 3. A csatornaprofilban, amelyet az üzlet az MPOS-nél használ, frissítse a **Média alap URL-cím** mezőt a médiakiszolgáló vagy a CDN alap URL-címére. Az alap URL-cím az URL-cím első része, amely a különböző entitások esetében az összes képmappánál ugyanaz.
 
-    [![Csatornaprofilok oldal](./media/channel-profile2.png)](./media/channel-profile2.png)
+    [![Csatornaprofilok oldal.](./media/channel-profile2.png)](./media/channel-profile2.png)
 
 ### <a name="define-the-media-template-for-an-entity"></a>A médiasablon meghatározása egy entitáshoz
 
@@ -68,7 +68,7 @@ Az alábbi eljárásokban a képek példaként a Katalógus entitásnál vannak 
 8. Futtassa le a szinkronizálási feladatokat, hogy az új sablon a csatorna-adatbázisba kerüljön, hogy az MPOS használhassa a sablont a képek eléréséhez.
 9. A katalógusképek médiasablonjának frissítéséhez a csatorna oldalon ügyeljen arra, hogy futtassa a **Katalógusfeladat 1150** opciót a **Retail és Commerce informatika** &gt; **Elosztási ütemezés** opciókból.
 
-    [![Médiasablon párbeszédpanel meghatározása](./media/catalog1.png)](./media/catalog1.png)
+    [![Médiasablon párbeszédpanel meghatározása.](./media/catalog1.png)](./media/catalog1.png)
 
 ## <a name="previewing-an-image-from-the-entity-level"></a>Az entitás szintről kép előzetes megtekintése
 
@@ -77,7 +77,7 @@ Az alábbi eljárásokban a képek példaként a Katalógus entitásnál vannak 
 3. A **Hozzáadás** és az **Eltávolítás** gombok használatával manuálisan módosíthatja az adott képhez használt és az implicit sablonon alapuló útvonalat. További tájékoztatásért lásd a [Médiasablon felülírása entitáscikkekhez](#overwriting-the-media-template-for-entity-items) részt a jelen cikk későbbi részében.
 4. Miután befejezte egy kép előnézetének megtekintését és a kívánt módosításokat, indítsa el az MPOS-folyamatot a megfelelő üzletnél, és nézze meg, hogy megjelennek-e katalógusképek.
 
-    [![Képek párbeszédpanel](./media/catalog4.png)](./media/catalog4.png)
+    [![Képek párbeszédpanel.](./media/catalog4.png)](./media/catalog4.png)
 
 > [!NOTE]
 > Ugyanezt az eljárást használhatja mind az öt támogatott entitás esetében: Dolgozó, Vevő, Katalógus, Kategória és Termékek. A „Katalógustermékek” (a katalógus szintjén beállított termékek) és a „Csatornatermékek” (a csatorna szintjén beállított termékek) a Termékek entitáshoz beállított médiasablont használják. A Termékek médiasablonhoz kiválaszthatja a termékenként megjelenítendő termékképek számát. Ezenfelül beállíthatja az alapértelmezett képet is egy adott termékhez. Ilyen módon elkerülheti az üres képek megjelenítését az MPOS-ben és meghatározhatja, hogy melyik kép legyen az alapértelmezett kép egy termék esetében. Az alábbi példában minden terméknek van öt képe, és az első kép van beállítva alapértelmezett képként. A termékváltozatokat a rendszer ugyanúgy kezeli, mint az alaptermékeket. A képfájl fájlnevének a termékszámon kell alapulnia. Néhány karaktert fel is old a rendszer, míg a fájlnév létrejön. Ezért célszerű ellenőrizni a fájlnevet a **Kép-URL-címek létrehozása az Excel számára** szakasz használatával. Lásd a [Felülírás az Excel Szerkesztés funkciójának használatával](#overwrite-by-using-edit-in-excel) szakaszt a cikk későbbi részében.
@@ -108,7 +108,7 @@ Az előző szakaszból tudjuk, hogy egy adott entitás médiasablonja csak egy k
 
     Megjelenik a kép-URL-címek előnézete, amely az utolsó elmentett médiasablon alapján jött létre.
 
-    [![Képek URL-címeinek létrehozása az Excel gyorslaphoz a Létrehozás kiválasztása után](./media/excel2.png)](./media/excel2.png)
+    [![Képek URL-címeinek létrehozása az Excel gyorslaphoz a Létrehozás kiválasztása után.](./media/excel2.png)](./media/excel2.png)
 
     > [!NOTE]
     > Az Excel számára generált URL-címek a definiált médiasablon útvonalát és konvencióit használják. Ezek a szabályok tartalmazzák a fájlnevekre vonatkozó szabályokat. Az elvárás, hogy a fizikai képeket a Commerce rendszeren kívül állította be, és a képek az URL-címeken keresztül érhetők el, melyeket a korábban definiált médiasablonból lehet beolvasni. Ezeket a beolvasott URL-eket az Excel Szerkesztés funkciójával írhatja fölül.
@@ -117,17 +117,17 @@ Az előző szakaszból tudjuk, hogy egy adott entitás médiasablonja csak egy k
 6. Miután megnyitotta a Microsoft Excel munkalapot, kattintson a **Szerkesztés engedélyezése** lehetőségre, mikor kéri a program.
 7. Mikor kéri a program, kattintson a **Bővítmény megbízható** lehetőségre a jobb oldali ablakban, és várjon a bővítmény telepítésének befejezéséig.
 
-    [![A bővítmény megbízható](./media/excel4.jpg)](./media/excel4.jpg)
+    [![A bővítmény megbízható.](./media/excel4.jpg)](./media/excel4.jpg)
 
 8. Ha megjelenik a bejelentkezés, adja meg a hitelesítési adatokat, amelyeket a központba való bejelentkezéshez használt.
 
-    [![Bejelentkezési kérdés](./media/excel5.png)](./media/excel5.png)
+    [![Bejelentkezési kérdés.](./media/excel5.png)](./media/excel5.png)
 
 9. Bejelentkezés után meg kell jelennie a kép-URL-címek listájának a különböző katalógus-bejegyzésekhez.
 10. A különféle entitáscikkek kép-URL-jeinek szerkesztése, hozzáadása és eltávolítása.
 11. Az összes entitásnál, kivéve a Termékeket, felülírhatja a kép-URL-címeket. Módosítsa a meglévő kép-URL-t, hogy az új elérési URL-t használja a rendszer a kép eléréséhez, és frissítse a fájlnevet a képfájl új fájlnevével. A fájlnévnek egyedinek kell lennie, hogy garantálja, hogy a rekord egyedi legyen.
 
-    [![Kép-URL-címek felülírása az Excel programban](./media/excel6.jpg)](./media/excel6.jpg)
+    [![Kép-URL-címek felülírása az Excel programban.](./media/excel6.jpg)](./media/excel6.jpg)
 
     > [!NOTE]
     > Ha kép-URL-eket ír felül a Termék entitások esetében az Excel Szerkesztés funkciójának használatával vagy az entitás cikkoldalon, az MPOS mindig az összes médiasablon kép-URL-t mutatja, együtt a felülírt kép-URL-ekkel.
@@ -153,11 +153,11 @@ A Termékek kivételével minden entitás esetében a kép-URL-t egy adott entit
 3. Ha szeretné megjeleníteni ezt a képet az MPOS-ben a katalógushoz, akkor beállíthatja alapértelmezett képként.
 4. Kattintson az **OK** gombra. A kép-URL frissül ehhez a katalógusképhez, és megjelenik az előnézet.
 
-    [![URL frissítve az Új kép párbeszédablakban](./media/preview3.png)](./media/preview3.png)
+    [![URL frissítve az Új kép párbeszédablakban.](./media/preview3.png)](./media/preview3.png)
 
 5. Az összes felülírt kép-URL képi előnézetét megtekintheti a **Katalógusképek** galérialapon.
 
-    [![Katalógusképek galérialapja](./media/preview-4.png)](./media/preview-4.png)
+    [![Katalógusképek galérialapja.](./media/preview-4.png)](./media/preview-4.png)
 
 > [!NOTE]
 > Jelenleg a galéria nem mutat előnézetet a médiasablon kép-URL-ekhez. A Katalógus, Dolgozó, Vevő és Kategória entitásokhoz, ha a felhasználó expliciten ezen az oldalon keresztül ad meg egy URL-t, ajánlott jelölni, hogy melyik kép az alapértelmezett, mert a Commerce Scale Unit kliensek csak egy képet mutatnak Katalógusonként, Vevőnként, Dolgozónként és Kategóriánként. Ha a felhasználó nem ad meg egy alapértelmezett képet, a rendszer határozza meg azt, és elküldi a Commerce szolgáltatás hívójára (MPOS vagy Elektronikus kereskedelem).
@@ -172,7 +172,7 @@ A Katalógustermék képeinek kép-URL-jeinek felülírásához az **Előnézet*
 4. Kattintson a **Hozzáadás** lehetőségre, majd írja felül a kép-URL-t egy új URL-címre.
 5. Kattintson az **OK** gombra. Most az új kép az előnézeti képe jelenik meg, és ezt beállíthatja alapértelmezett képként.
 
-    [![Kép előnézete az Új kép párbeszédablakban](./media/cat3.png)](./media/cat3.png)
+    [![Kép előnézete az Új kép párbeszédablakban.](./media/cat3.png)](./media/cat3.png)
 
 > [!NOTE]
 > A kategóriakép-társítás után közzé kell tennie a csatornát és le kell futtatnia a Csatornafeladatot, hogy a módosítások biztosan a csatorna-adatbázison legyenek közzétéve.
@@ -193,7 +193,7 @@ A Kapcsolat nélküli módban használandó termékképek úgy állíthatók be,
 6. Miközben MPOS Online módban van, futtassa a Katalógusfeladatot a HQ-ban, hogy az adatok legalább egyszer el legyenek küldve az offline adatbázisba.
 7. Tegye az MPOS-t Offline módba. Megjelenik az adott termékhez a feltöltött kép a HQ-ban.
 
-    [![Termékkép offline módban](./media/offline1.png)](./media/offline1.png)
+    [![Termékkép offline módban.](./media/offline1.png)](./media/offline1.png)
 
 ### <a name="set-up-catalog-category-employee-and-customer-images-to-appear-in-offline-mode-for-mpos"></a>Katalógus, kategória, alkalmazott és vevő képek beállítása az MPOS Kapcsolat nélküli módban való megjelenítésre
 
@@ -205,7 +205,7 @@ Katalógus, kategória, alkalmazott, és vevő képeket, amelyeket Kapcsolat né
 4. Futtassa le a Katalógusfeladatot. A kép most már az adott katalógushoz Kapcsolat nélküli képként lesz használatos az MPOS-ben.
 5. A többi entitás esetében is hasonló folyamatot kövessen, például a Kategória, Alkalmazott és Vevő esetében.
 
-    [![Offline kép](./media/offline2.png)](./media/offline2.png)
+    [![Offline kép.](./media/offline2.png)](./media/offline2.png)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

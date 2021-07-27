@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 52ca23e5aaeb7058853fed2241d5804180fa7f8d
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 99e873a07accd33aebfe010fbc8678cd8bc3ed9c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5798963"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349304"
 ---
 # <a name="preview-and-publish-an-experiment"></a>Kísérlet előnézetének megtekintése és közzététele
 
 Ez a témakör azt mutatja be, hogyan tekinthető meg és tehető közzé egy kísérlet a Dynamics 365 Commerce rendszerből, miután [csatlakoztatta a kísérletet és szerkesztette a változatokat](experimentation-connect-edit.md). A következő ábra azokat a lépéseket mutatja be, amelyekkel egy e-kereskedelmi webhelyhez tartozó kísérletet lehet létrehozni és futtatni a Dynamics 365 Commerce rendszerben. A további lépések külön témákban szerepelnek.
 
-[ ![Kísérletezés felhasználói interakciósorozata – Előnézet és közzététel](./media/experimentation_preview_publish.svg) ](./media/experimentation_preview_publish.svg#lightbox)
+[ ![Kísérletezés felhasználói interakciósorozata – előnézet és közzététel.](./media/experimentation_preview_publish.svg) ](./media/experimentation_preview_publish.svg#lightbox)
 
 ## <a name="preview-your-experiment-variations"></a>A kísérletek változatainak előnézete
 Megtekintheti a változatokat, és folytathatja a szerkesztést egészen addig, amíg azok el nem nyerik a tetszőleges állapotot.

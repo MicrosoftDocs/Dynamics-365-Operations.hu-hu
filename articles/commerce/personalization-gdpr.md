@@ -16,12 +16,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 1e7d0f505ce49bc9be0d027cbb0d636c9de0600b
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 75f41db74512ea758a83de56ffd2a9166712f5e2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804453"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352276"
 ---
 # <a name="opt-out-of-personalized-recommendations"></a>Személyre szabott ajánlatok kikapcsolása
 
@@ -44,11 +44,11 @@ A Commerce háttérrendszer Fiókkezelés részében a kereskedők elvégezhetik
 1. A háttérrendszer kezdőoldaláról keressen rá az **összes vevőre**.
 1. Keressen meg és válasszon ki egy vevőt, majd válassza ki a **Kiskereskedelem** gyorslapot.
 
-    ![Kiskereskedelem gyorslap](./media/Disablepersonalizationpart1.png)
+    ![Kiskereskedelem gyorslap.](./media/Disablepersonalizationpart1.png)
 
 1. Az **Adatvédelem** alatt állítsa a **Személyre szabás letiltása** beállítást **Igen** értékre.
 
-    ![Adatvédelmi beállítások](./media/Disablepersonalizationpart2.png)
+    ![Adatvédelmi beállítások.](./media/Disablepersonalizationpart2.png)
 
 1. Válassza a **Mentés** gombot, és zárja be az oldalt.
 

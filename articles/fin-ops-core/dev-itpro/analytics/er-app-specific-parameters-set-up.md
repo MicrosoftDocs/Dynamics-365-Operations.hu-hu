@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: 4003208a1f02db134bbec1ecf90c1cdd2973e67f
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 9276a633d560bc95c868b9c12438b4f625ed169a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751154"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351890"
 ---
 # <a name="set-up-the-parameters-of-an-er-format-per-legal-entity"></a>Az ER-formátum paramétereinek beállítása jogi személyenként
 
@@ -49,7 +49,7 @@ A jelen témakörben szereplő példák végrehajtásához hozzáféréssel kell
     
     A következő ábra bemutatja azokat a konfigurációkat, amelyekkel a befejezést követően rendelkeznie kell.
 
-    ![ER-konfigurációk oldal](./media/GER-AppSpecParms-ImportedConfigurations.PNG)
+    ![ER-konfigurációk oldal.](./media/GER-AppSpecParms-ImportedConfigurations.PNG)
 
 ## <a name="set-up-parameters-for-the-demf-company"></a>Paraméterek beállítása a DEMF vállalathoz
 
@@ -59,7 +59,7 @@ Az ER keretrendszerrel beállíthatja az alkalmazásra jellemző paramétereket 
 2.  A konfigurációs fában válassza ki a **LE adatok keresésének tanulási formátuma** formátumot.
 3.  A Műveleti ablaktáblán a **Konfigurációk** lapon a **Alkalmazásspecifikus paraméterek** csoportban válassza a **Beállítás** lehetőséget.
 
-    ![ER alkalmazásspecifikus paramétereinek oldala](./media/GER-AppSpecParms-LookupForm.PNG)
+    ![ER alkalmazásspecifikus paramétereinek oldala.](./media/GER-AppSpecParms-LookupForm.PNG)
     
     Az **alkalmazás-specifikus paraméterek** oldalon beállíthatja a **LE adatok keresésének tanulási formátuma** formátum **Választó** adatforrásra vonarkotó szabályokat.
     
@@ -75,14 +75,14 @@ Az ER keretrendszerrel beállíthatja az alkalmazásra jellemző paramétereket 
 
     A keresés megjeleníti a kiválasztható adókódok listáját. Ezt a listát visszaadja a **Model.Data.Tax** adatforrás, amelyet az adott ER formátumban konfigurált. Mivel az adatforrás tartalmazza a **Név** mezőt, a keresésben megjelenik az egyes adókódok neve.
 
-    ![ER alkalmazásspecifikus paramétereinek oldala](./media/GER-AppSpecParms-LookupForm-CodeFldPicker.PNG)
+    ![ER alkalmazásspecifikus paramétereinek oldala.](./media/GER-AppSpecParms-LookupForm-CodeFldPicker.PNG)
     
 7.  Válassza ki a **VAT19** áfakódot.
 8.  Az új rekord **Keresési eredmény** mezőjében kattintson a legördítő nyílra a keresőlista megnyitásához. A keresési lista felsorolja azokat a kiválasztható értékeket a TaxationLevel formátumfelsorolásához.
 
     Ne feledje, hogy ha a német a felhasználó preferált nyelve, amellyel be van jelentkezve, kakor a keresés értékeinek címkéi németül jelennek meg, feltéve, ha az alap ER formátumban ezeket lefordították. Ezenkívül ha a keresési adatforrás címkéjét már lefordították, akkor a címke a felhasználó preferált nyelvén jelenik meg a **Keresések** lapon.
 
-    ![ER alkalmazásspecifikus paramétereinek oldala](./media/GER-AppSpecParms-LookupForm-LookupFldPicker.PNG)
+    ![ER alkalmazásspecifikus paramétereinek oldala.](./media/GER-AppSpecParms-LookupForm-LookupFldPicker.PNG)
 
 9.  Válassza a **Rendes adózás** értéket.
 
@@ -120,7 +120,7 @@ Az ER keretrendszerrel beállíthatja az alkalmazásra jellemző paramétereket 
     
     Az utolsó rekord hozzáadásával megadhatja a következő szabályt: Valahányszor az arugmentumként átadott adókód nem teljesíti a korábbi szabályok egyikét sem, a keresési adatforrás **Egyéb** értéket ad vissza a kért adózási szintként.
 
-    ![ER alkalmazásspecifikus paramétereinek oldala](./media/GER-AppSpecParms-LookupForm-RulesSet.PNG)
+    ![ER alkalmazásspecifikus paramétereinek oldala.](./media/GER-AppSpecParms-LookupForm-RulesSet.PNG)
     
 16. Az **Állapot** mezőben válassza ki a **Befejeződött** értéket.
 
@@ -144,7 +144,7 @@ Az ER keretrendszerrel beállíthatja az alkalmazásra jellemző paramétereket 
 6.  Válassza ki a **InVAT7** áfakódot.
 7.  A műveleti ablaktáblán az **Áfakód** lapon a **Lekérdezések** csoportban válassza a **Feladott áfa** elemet, ahol információkat tekinthet meg az adó értékével és az adókódonként alkalmazott adókulccsal kapcsolatban.
 
-    ![Feladott áfa oldal](./media/GER-AppSpecParms-Statement.PNG)
+    ![Feladott áfa oldal.](./media/GER-AppSpecParms-Statement.PNG)
 
 8.  Zárja be a Feladott áfa oldalt.
 
@@ -160,7 +160,7 @@ Az ER keretrendszerrel beállíthatja az alkalmazásra jellemző paramétereket 
 
     A keresés megjeleníti az **USMF** vállalati adóhoz tartozó választható adókódok listáját.
 
-    ![ER alkalmazásspecifikus paramétereinek oldala](./media/GER-AppSpecParms-LookupForm-CodeFldPicker2.PNG)
+    ![ER alkalmazásspecifikus paramétereinek oldala.](./media/GER-AppSpecParms-LookupForm-CodeFldPicker2.PNG)
     
 8.  Válassza ki a **EXEMPT** áfakódot.
 9.  Az új rekord **keresési eredmény** mezőjében válassza ki a **Nincs adózás** értéket.
@@ -170,7 +170,7 @@ Az ER keretrendszerrel beállíthatja az alkalmazásra jellemző paramétereket 
 13. Az **Állapot** mezőben válassza ki a **Befejeződött** értéket.
 14. Válassza a **Mentés** lehetőséget.
 
-    ![ER alkalmazásspecifikus paramétereinek oldala](./media/GER-AppSpecParms-LookupForm-RulesSet2.PNG)
+    ![ER alkalmazásspecifikus paramétereinek oldala.](./media/GER-AppSpecParms-LookupForm-RulesSet2.PNG)
     
 15. Zárja be az **Alkalmazásspecifikus paraméterek** oldalt.
 
@@ -225,13 +225,13 @@ Az előző példában az ER keretrendszer használatával hozzáfért egy ER for
 
 1.  Vagy használja újra a meglévő **ERSolutionAppSpecificParametersDesigner** menüelemet, vagy hajtsa végre saját **ERSolutionAppSpecificParametersDesigner** menüelemét.
 
-    ![Visual Studio oldala](./media/GER-AppSpecParms-LookupForm-Access1.PNG)
+    ![Visual Studio oldala.](./media/GER-AppSpecParms-LookupForm-Access1.PNG)
     
 2.  Tegye a következők egyikét:
 
     1.  Hozzon létre egy új menüelemgombot, és csatolja a megfelelő rekordhoz az **ERSolutionTable** táblából az **Adatforrás** tulajdonságának **ERSolutionTable** értékre történő beállításával.
     
-        ![Visual Studio oldala](./media/GER-AppSpecParms-LookupForm-Access2.PNG)
+        ![Visual Studio oldala.](./media/GER-AppSpecParms-LookupForm-Access2.PNG)
         
     2.  Hozzon létre egy egyszerű gombot, és a következő példában bemutatott módon bírálja felül a **Rákattintva** módszert.
     

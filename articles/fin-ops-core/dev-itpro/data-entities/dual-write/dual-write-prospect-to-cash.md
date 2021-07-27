@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: 33ed1c7f69fa92bbd123042a139dd8fd0ee3e73a
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 7554189c779404559187ecd99f4bca4636054446
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754088"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6361395"
 ---
 # <a name="prospect-to-cash-in-dual-write"></a>Potenciális vevők készpénzre váltása kettős írásban
 
@@ -33,7 +33,7 @@ A legtöbb vállalat számára fontos cél a potenciális vevők konvertálása,
 
 Az alkalmazások kezelőfelületén a feldolgozási állapotok és a számlázási adatok valós időben érhetők el. Így könnyebben kezelhetők az olyan funkciók, mint a termékek készletezése, a készlet kezelése és a teljesítés a Supply Chain Management alkalmazásban anélkül, hogy újra létre kellene hozni az ajánlatokat és a rendeléseket.
 
-![Kettős írású adatfolyamat a potenciális vevők készpénzre váltása funkcióban](../dual-write/media/dual-write-prospect-to-cash[1].png)
+![Kettős írású adatfolyamat a potenciális vevők készpénzre váltása funkcióban.](../dual-write/media/dual-write-prospect-to-cash[1].png)
 
 A vevői és kapcsolattartói integrációval kapcsolatos tudnivalókat lásd: [Integrált vevői alapadatok](customer-mapping.md). A termékintegrációval kapcsolatos tudnivalókat lásd: [Egyesített termékkel kapcsolatos tapasztalat](product-mapping.md).
 

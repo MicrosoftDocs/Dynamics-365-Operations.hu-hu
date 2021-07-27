@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 5cb7f8b9a3107a7787c787ace71ab574457b1646
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: eb98f266a217fc16c56c38e2480b85f529fb1862
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5828490"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359837"
 ---
 # <a name="synchronize-project-list-from-supply-chain-management-to-field-service"></a>Projektlista szinkronizálása a Supply Chain Management alkalmazásból a Field Service alkalmazásba
 
@@ -29,7 +29,7 @@ ms.locfileid: "5828490"
 
 Ez a témakör bemutatja a sablonokat és a mögöttes feladatokat, amelyek a Dynamics 365 Supply Chain Management projektjeinek a Dynamics 365 Field Service szolgáltatásba történő szinkronizálására használatosak.
 
-[![Üzleti folyamatok szinkronizálása a Supply Chain Management és a Field Service között](./media/FSProjectOW.png)](./media/FSProjectOW.png)
+[![Üzleti folyamatok szinkronizálása a Supply Chain Management és a Field Service között.](./media/FSProjectOW.png)](./media/FSProjectOW.png)
 
 ## <a name="templates-and-tasks"></a>Sablonok és feladatok
 A következő sablonokat és alapul szolgáló feladatokat használják a projektszinkronizálás futtatásához a Supply Chain Management és a Field Service között:
@@ -63,7 +63,7 @@ A változáskövetés engedélyezése az Adatentitás projektekhez.
 
 ### <a name="projects-supply-chain-management-to-field-service-projects"></a>Projektek (Supply Chain Management és Field Service között): Projektek
 
-[![Sablonleképezés az adatintegrátorban](./media/FSProject1.png)](./media/FSProject1.png)
+[![Sablonleképezés az adatintegrátorban.](./media/FSProject1.png)](./media/FSProject1.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

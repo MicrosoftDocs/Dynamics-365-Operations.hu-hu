@@ -246,8 +246,6 @@
                           href: ../finance/localizations/e-invoicing-bra-get-started.md?toc=/dynamics365/supply-chain/toc.json
                         - name: Első lépések az Egyiptomra vonatkozó elektronikus számlázás használata során
                           href: ../finance/localizations/e-invoicing-eg-get-started.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Első lépések az Olaszországra vonatkozó elektronikus számlázás használata során
-                          href: ../finance/localizations/e-invoicing-ita-get-started.md?toc=/dynamics365/supply-chain/toc.json
                         - name: Első lépések a Mexikóra vonatkozó elektronikus számlázás használata során
                           href: ../finance/localizations/e-invoicing-mex-get-started.md?toc=/dynamics365/supply-chain/toc.json
                         - name: Az elektronikus számlázás beállítása
@@ -1603,10 +1601,12 @@
               items:
                 - name: Tervezési optimalizálás áttekintése
                   href: master-planning/planning-optimization/planning-optimization-overview.md
-                - name: Tervezési optimalizálás kezdő lépései
+                - name: A Tervezési optimalizálás kezdő lépései
                   href: master-planning/planning-optimization/get-started.md
-                - name: Tervezési optimalizálás igazítási elemzése
+                - name: A Tervezési optimalizálás igazítási elemzése
                   href: master-planning/planning-optimization/planning-optimization-fit-analysis.md
+                - name: A Tervezési optimalizálás által nem használt paraméterek
+                  href: master-planning/planning-optimization/not-used-parameters.md
                 - name: Szűrők alkalmazása egy tervre
                   href: master-planning/planning-optimization/plan-filters.md
                 - name: Alaptervezés igény-előrejelzéssel
@@ -1621,6 +1621,8 @@
                   href: master-planning/planning-optimization/purchase-requisitions.md
                 - name: Termeléstervezés
                   href: master-planning/planning-optimization/production-planning.md
+                - name: Ütemezés végtelen kapacitással
+                  href: master-planning/planning-optimization/infinite-capacity-planning.md
                 - name: Készletjelölés tervezési optimalizálással
                   href: master-planning/planning-optimization/marking.md
                 - name: Vállalatközi tervezés
@@ -1861,6 +1863,8 @@
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Jóváhagyási lépések konfigurálása
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-step-workflow.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Kiadásellenőrök konfigurálása
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-expenditure-reviewers.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Manuális döntések konfigurálása
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-decision-workflow.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Feltételes döntések konfigurálása

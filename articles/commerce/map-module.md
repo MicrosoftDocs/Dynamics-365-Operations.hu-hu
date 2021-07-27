@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 659211f3a74c38389f991cd2385366d175b0c7c0
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: ba6dadf7f96510ae55c41a74d53e3ca89f663ef8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020259"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344074"
 ---
 # <a name="map-module"></a>Térképmodul
 
@@ -38,13 +38,13 @@ A modul feltérképezése az üzletválasztó modullal együtt dolgozik a térk�
 
 A következő kép egy üzlet oldalán használt letérképezési modul egy példáját jeleníti meg.
 
-![Példa egy üzletválasztó modulra](./media/ecommerce-Storelocator.PNG)
+![Példa egy üzletválasztó modulra.](./media/ecommerce-Storelocator.PNG)
 
 ## <a name="module-properties"></a>Modul tulajdonságai
 
 | Tulajdonság neve             | Érték                 | Leírás |
 |---------------------------|-----------------------|-------------|
-| Címsor | Szöveg | A modul címe. |
+| Fejléc | Szöveg | A modul címe. |
 | A gombostű beállításai: alapértelmezett ikon | Kép | A térképeken megjelenített üzletekhez használandó gombostű szimbólum képe. |
 | A gombostű beállításai: aktív ikon | Kép | A térképeken kiválasztott üzlethez használandó gombostű szimbólum képe. |
 | A gombostű beállításai: alapértelmezett ikon színe | Karaktersztring | A gombostű szimbólumok színének szöveges vagy hexadecimális értékének beállítása a térképen. |

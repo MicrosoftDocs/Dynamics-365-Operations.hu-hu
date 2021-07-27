@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: BudgetPlanningWorkspace
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 106043
+ms.custom:
+- "106043"
+- intro-internal
 ms.assetid: 702f692e-ad1c-4798-8d3e-c3cf8591d3fa
 ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a2597dda47e3441d2c41497081849a2213974e55
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 9ced76e20a54d61fe96b5d2a5118adb0c5eb7ccf
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6187916"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355700"
 ---
 # <a name="budgeting-home-page"></a>Költségvetés-készítés – kezdőlap
 
@@ -32,7 +34,7 @@ Ez a témakör áttekinti a költségvetés-tervezési funkció összetevőit, a
 
 A vállalatok erőforrás-tervezési ciklusa általában tervezési, költségvetési és előrejelző tevékenységekből áll.
 
-[![A költségvetés-tervezési funkció összetevői](./media/budgeting-functionality-components.jpg)](./media/budgeting-functionality-components.jpg)
+[![A költségvetés-tervezési funkció összetevői.](./media/budgeting-functionality-components.jpg)](./media/budgeting-functionality-components.jpg)
 
 Mind a hosszú távú stratégiai tervezés, mind az éves költségvetés-tervezés folyamatait költségvetés-tervezési dokumentum segíti. A költségvetés-tervezési dokumentumok szorosan integrálódnak a Microsoft Excel alkalmazással. A felhasználók korlátlan számú monetáris és mennyiségi esetet konfigurálhatnak, és költségvetés-tervezési szervezeti hierarchiát is meghatározhatnak; a felülről lefelé, illetve az alulról fölfelé épülő költségvetés-tervezési módszereket egyaránt támogatja a rendszer. A költségvetés létrehozása és az alkalmazásban történő jóváhagyása után költségvetési tételjegyzék-bejegyzéssé konvertálhatja a költségvetési tervet. A költségvetési tételjegyzék-bejegyzésekkel karbantartható a költségvetés, és – költségvetési kódok segítségével – nyomon követhetők az összegek. A költségvetési tételjegyzék-bejegyzések segítségével felülvizsgálhatók az eredeti költségvetések, és áthozhatók az előző évi költségvetési összegek. A létrehozott költségvetés alapján a vállalat engedélyezheti a költségvetés-ellenőrzést. Az ellenőrzés szintje függ a szervezeti kultúrától és a szervezet érettségi szintjétől. Az alacsonyabb érettségi szintű szervezeteknél előfordulhat, hogy a költségvetést „adott állapotában” hagyják, és inkább reaktívan, mint proaktívan viselkednek, ha a költségvetés nem felel meg az elvárásoknak. Egyéb szervezeteknél előfordulhat olyan költségvetés-ellenőrzési irányelveket engedélyezhetnek, amelyek nem engedik a beszerzést a felhasználóknak, ha a költségvetési források nem érhetők el.
 
@@ -46,7 +48,7 @@ A nagyon strukturált szervezetek olyan szervezeti kultúrát is kialakíthatnak
 -   [Költségvetés-tervezési sablonok az Excel programhoz](budget-planning-excel-templates.md)
 
 ## <a name="budgeting-tools"></a>Költségvetés-készítési eszközök
-[![Költségvetés-készítési eszközök](./media/budgeting-tools.jpg)](./media/budgeting-tools.jpg) 
+[![Költségvetés-készítési eszközök.](./media/budgeting-tools.jpg)](./media/budgeting-tools.jpg) 
 
 A főkönyvi költségvetésbe beépítve további tervezési és költségvetés-készítési eszközök érhetők el.
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2021-01-04
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: bce824267f435d9de0acd43ca145e0d148dfe67c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9afc7786de16cb1cada982f43beb956e062777a4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5816268"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347782"
 ---
 # <a name="revenue-recognition-bundles"></a>Bevételelszámolási csomagok
 
@@ -59,15 +59,15 @@ Az összetevő cikkeknél a következő eladási alapárak vannak meghatározva:
 
 Bevisznek egy értékesítési rendelést az US-004, Cave Wholesales nevű vevőhöz. Csak a Laptop csomagcikkhez tartozó sort töltik ki. A szülősor alapértelmezett egységára számos helyről származhat, például a kereskedelmi szerződésből vagy az értékesítési alapárból. Ebben a példában a 2300 $ egységárat manuálisan adták meg.
 
-[![A „Laptop” csomagcikk egy értékesítési rendelésen](./media/bundle-01.png)](./media/bundle-01.png)
+[![A „Laptop” csomagcikk egy értékesítési rendelésen.](./media/bundle-01.png)](./media/bundle-01.png)
 
 Mivel az értékesítési rendelés csomagot tartalmaz, meg kell erősíteni. A megerősítő párbeszédpanelben láthatók a csomag összetevői.
 
-[![Az értékesítési rendelés megerősítésére szolgáló párbeszédpanel, amelyben megjelennek az összetevő cikkek](./media/bundle-02.png)](./media/bundle-02.png)
+[![Az értékesítési rendelés megerősítésére szolgáló párbeszédpanel, amelyben megjelennek az összetevő cikkek.](./media/bundle-02.png)](./media/bundle-02.png)
 
 A kinyomtatott megerősítési jelentésen azonban csak a csomag szülőcikke fog szerepelni, mivel ez a jelentés a vevőnek küldendő külső dokumentum.
 
-[![A megerősítési jelentés, amelyben csak a szülőcikk szerepel](./media/bundle-03.png)](./media/bundle-03.png)
+[![A megerősítési jelentés, amelyben csak a szülőcikk szerepel.](./media/bundle-03.png)](./media/bundle-03.png)
 
 Az értékesítési rendelés megerősítése után a szülőcikk továbbra is látható az értékesítési rendelésen, de állapota az **Érvénytelenítve** értékre módosul. Emellett a **Csomag nettó összege** mező jelzi a nettó összeget. Erre az összegre a számla kinyomtatásához van szükség, mert a számlán az összetevő cikkek helyett csak a szülőcikk szerepel.
 
@@ -85,7 +85,7 @@ Az összetevők összegének 2300 $-nek kell lennie. Így is van (1713,73 $ + 45
 
 Ha az összes összetevő cikknél módosításokra van szükség, a szülőcikk eltávolítható. Ebben az esetben a rendszer az összetevő cikkeket is eltávolítja. Ezt követően az értékelési rendelés megerősítése előtt ismét hozzáadhatja a szülőcikket, és elvégezheti a szükséges módosításokat.
 
-[![Az összetevő cikk módosításait tartalmazó csomagcikk](./media/bundle-04.png)](./media/bundle-04.png)
+[![Az összetevő cikk módosításait tartalmazó csomagcikk.](./media/bundle-04.png)](./media/bundle-04.png)
 
 Az értékesítési rendelés kiszedése és becsomagolása után a dokumentumok csak a csomag összetevőit fogják tartalmazni. A szállítólevélnek és a számlának a teljes csomagot kell tartalmaznia. Ellenkező esetben nem lehet őket feladni. A párbeszédpanelen például három összetevő cikk látható. Ha megpróbálja törölni valamelyiket, hibaüzenet jelenik meg, amely jelzi, hogy a számlázáshoz a csomagban található összes terméket ki kell szállítani.
 
@@ -95,19 +95,19 @@ Részleges mennyiséget csak akkor lehet szállítani és számlázni, ha a csom
 
 Az utolsó lépés az értékesítési rendelés kiszámlázása. A számlázás során a Számla párbeszédpanelen megjelennek az összetevő cikkek.
 
-[![A Számla párbeszédpanel, amelyen az összetevő cikkek láthatók](./media/bundle-06.png)](./media/bundle-06.png)
+[![A Számla párbeszédpanel, amelyen az összetevő cikkek láthatók.](./media/bundle-06.png)](./media/bundle-06.png)
 
 A kinyomtatott számlán azonban csak a szülőcikk fog szerepelni.
  
-[![A kinyomtatott számla, amelyen csak a szülőcikk szerepel](./media/bundle-07.png)](./media/bundle-07.png)
+[![A kinyomtatott számla, amelyen csak a szülőcikk szerepel.](./media/bundle-07.png)](./media/bundle-07.png)
 
 A feladás után létrehozott számlanapló nem tartalmazza a csomaghoz tartozó szülőcikket, mert a cikk állapota **Érvénytelenítve**.
 
-[![A számlanapló, amely nem tartalmazza a szülőcikket](./media/bundle-08.png)](./media/bundle-08.png)
+[![A számlanapló, amely nem tartalmazza a szülőcikket.](./media/bundle-08.png)](./media/bundle-08.png)
 
 Fontos, hogy a számlanapló ne tartalmazza a csomag szülőcikkét, mert a számla feladása után végrehajtott folyamatok a számlanaplón alapulnak. Ha például a Műveletpanel **Eladás** lapján létrehoz egy jóváírást, ez a jóváírás tartalmazni fogja az összetevő cikket, de a szülőcikket nem.
 
-[![A jóváírás, amely a szülőcikket nem, de az összetevő cikkeket tartalmazza](./media/bundle-09.png)](./media/bundle-09.png)
+[![A jóváírás, amely a szülőcikket nem, de az összetevő cikkeket tartalmazza.](./media/bundle-09.png)](./media/bundle-09.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

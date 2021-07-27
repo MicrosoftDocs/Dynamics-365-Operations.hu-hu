@@ -8,16 +8,17 @@ ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.custom: intro-internal
 ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 15edf61cba03a57b9b4d2c939228fd064b797942
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5f8c3dc084f4f260f8cc29b3957913e9bc1b762d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5829378"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356999"
 ---
 # <a name="hazardous-materials-overview"></a>Veszélyes anyagok áttekintése
 
@@ -27,7 +28,7 @@ A szállítási és szállítmányozási előírásoknak való megfelelés érde
 
 A következő ábra a veszélyes anyagok funkció beállításához és használatához szükséges lépéseket mutatja be.
 
-![A veszélyes anyagok funkció beállítása és használata](media/hazmat-overview.png "A veszélyes anyagok funkció beállítása és használata")
+![A veszélyes anyagok funkció beállítása és használata.](media/hazmat-overview.png "A veszélyes anyagok funkció beállítása és használata")
 
 A veszélyes anyagok funkció a Termékinformációk kezelésénél van beállítva, és olyan dokumentumokat biztosít, amelyek a Raktárkezelésen keresztül nyomtathatók. Ennek megfelelően túlnyomórészt a következő két fő területen tekinti át, állítja be és használja ennek a szolgáltatásnak a funkcióit:
 

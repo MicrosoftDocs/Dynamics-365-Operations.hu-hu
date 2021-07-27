@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2020-03-25
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 09da3c3a79b5540670db25d5466023132d2848f4
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0a9521d9be3c380795abf476646d2d0e1cd36e8e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5832274"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354785"
 ---
 # <a name="moving-average-fallback-cost-sequence"></a>Mozgóátlag tartalék költségsorrend
 
@@ -42,7 +42,7 @@ Az mozgóátlag-számítások költségsorozatának kiválasztásához hajtsa v�
     - **Aktív költség – Utolsó kiadás**
     - **Aktív költség – Cikkár** – A vállalatok teljesítménnyel kapcsolatos problémákat tapasztalhatnak, ha olyan üzleti folyamatokat alkalmaznak, amelyeknél a készlet rendszeres időközönként negatívba megy át, és ezzel egyidejűleg a tranzakciók mennyisége is magas. Ez a beállítás segít enyhíteni a teljesítménnyel kapcsolatos problémákat.
 
-![Készletkönyvelési paraméterek](media/inventory-accounting-parameters.png "Készletkönyvelési paraméterek")
+![Készletkönyvelési paraméterek.](media/inventory-accounting-parameters.png "Készletkönyvelési paraméterek")
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

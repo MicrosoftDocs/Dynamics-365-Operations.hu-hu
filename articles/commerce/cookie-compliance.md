@@ -2,7 +2,7 @@
 title: Cookie-k megfelelősége
 description: Ez a témakör a cookie-megfelelőséggel és a Microsoft Dynamics 365 Commerce által tartalmazott alapértelmezett irányelvekkel kapcsolatos szempontokat ismerteti.
 author: BrianShook
-ms.date: 05/21/2021
+ms.date: 07/01/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 8eb610eb819dee09a30368257e36dc88f855e985
-ms.sourcegitcommit: 8c5b3e872825953853ad57fc67ba6e5ae92b9afe
+ms.openlocfilehash: 71b2e0e8d0a7db6cbbc8b9b4024b067bd5c6a2a1
+ms.sourcegitcommit: 43962e6fedaf55aab2f28f53bc38a69d2ff58403
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "6088387"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "6333069"
 ---
 # <a name="cookie-compliance"></a>Cookie-k megfelelősége
 
@@ -33,26 +33,27 @@ Ha többet szeretne megtudni a Microsoft által a cookie-k megfelelősége eset�
 
 A következő táblázat felsorolja a Dynamics 365 Commerce helyek által feladott cookie-k jelenlegi hivatkozási listáját.
 
-| Cookie neve                               | Használat                                                        |
-| ------------------------------------------- | ------------------------------------------------------------ |
-| .AspNet.Cookies                             | Microsoft Azure Active Directory (Azure AD) hitelesítési cookie-k tárolása egyszeri bejelentkezéshez (SSO). A titkosított felhasználói adatok tárolása (név, vezetéknév, e-mail). |
-| &#95;msdyn365___cart&#95;                           | A kosárpéldányhoz hozzáadott termékek listájának beszerzésére használt üzletkosár-azonosító. |
-| &#95;msdyn365___ucc&#95;                            | A cookie-k megfelelőségi jóváhagyásának követése.                          |
-| ai_session                                  | Azt észleli, hogy a felhasználói tevékenységek számának hány munkafolyamata tartalmazza az alkalmazás bizonyos oldalait és szolgáltatásait. |
-| ai_user                                     | Észleli, hogy hány ember használta az alkalmazást és annak funkcióit. A felhasználókat anonim azonosítók alapján számítja a rendszer. |
-| b2cru                                       | Dinamikusan tárolja az átirányítási URL-t.                              |
-| JSESSIONID                                  | Az Adyen fizetési összekötő használja a felhasználói munkamenet tárolásához.       |
-| OpenIdConnect.nonce.&#42;                       | Hitelesítés                                               |
-| x-ms-cpim-cache:.&#42;                          | A kérelem állapotának fenntartására szolgál.                      |
-| x-ms-cpim-csrf                              | A webhelyközi kérések hamisítása (CRSF) jogkivonata, amely a CRSF-től történő védelemhez használatos.     |
-| x-ms-cpim-dc                                | A kérelmeknek a megfelelő termelési hitelesítési kiszolgálópéldány számára történő továbbítására szolgál. |
-| x-ms-cpim-rc.&#42;                              | A kérelmeknek a megfelelő termelési hitelesítési kiszolgálópéldány számára történő továbbítására szolgál. |
-| x-ms-cpim-slice                             | A kérelmeknek a megfelelő termelési hitelesítési kiszolgálópéldány számára történő továbbítására szolgál. |
-| x-ms-cpim-sso:rushmoreb2c.onmicrosoft.com_0 | Az SSO-munkamenet fenntartására szolgál.                        |
-| x-ms-cpim-trans                             | A tranzakciók nyomon követésére szolgál (azoknak a nyitott lapoknak a száma, amelyeknek hitelesítése vállalatok közötti (B2C) helyhez történik), az aktuális tranzakciót is beleértve. |
-| \_msdyn365___muid_                            | Akkor használatos, ha a Kísérletezés aktiválva van a környezetben: a kísérletezési célok felhasználóazonosítójához használatos. |
-| \_msdyn365___exp_                             | Akkor használatos, ha a Kísérletezés aktiválva van a környezetben: a teljesítmény terheléselosztásának mérésére használatos.         |
-| d365mkt                                       | Akkor használatos, ha az üzlet helyjavaslataizoz tartozó felhasználói IP-cím nyomon követésének hely alapú észlelési szolgáltatása engedélyezve van a Commerce webhely-szerkesztőjében, a **Webhelybeállítások > Általános > Helyalapú áruházészlelés engedélyezése** részen.      |
+| Cookie neve                               | Használat                                                        | Élettartam |
+| ------------------------------------------- | ------------------------------------------------------------ |  ------- |
+| .AspNet.Cookies                             | Microsoft Azure Active Directory (Azure AD) hitelesítési cookie-k tárolása egyszeri bejelentkezéshez (SSO). A titkosított felhasználói adatok tárolása (név, vezetéknév, e-mail). | Munkamenet |
+| \_msdyn365___cart_                           | A kosárpéldányhoz hozzáadott termékek listájának beszerzésére használt üzletkosár-azonosító. | Munkamenet |
+| \_msdyn365___checkout_cart_                           | A kizietési kosárpéldányhoz hozzáadott termékek listájának beszerzésére használt kifizetési üzletkosár-azonosító. | Munkamenet |
+| \_msdyn365___ucc_                            | A cookie-k megfelelőségi jóváhagyásának követése.                          | 1 év |
+| ai_session                                  | Azt észleli, hogy a felhasználói tevékenységek számának hány munkafolyamata tartalmazza az alkalmazás bizonyos oldalait és szolgáltatásait. | 30 perc |
+| ai_user                                     | Észleli, hogy hány ember használta az alkalmazást és annak funkcióit. A felhasználókat anonim azonosítók alapján számítja a rendszer. | 1 év |
+| b2cru                                       | Dinamikusan tárolja az átirányítási URL-t.                              | Munkamenet |
+| JSESSIONID                                  | Az Adyen fizetési összekötő használja a felhasználói munkamenet tárolásához.       | Munkamenet |
+| OpenIdConnect.nonce.&#42;                       | Hitelesítés                                               | 11 perc |
+| x-ms-cpim-cache:.&#42;                          | A kérelem állapotának fenntartására szolgál.                      | Munkamenet |
+| x-ms-cpim-csrf                              | A webhelyközi kérések hamisítása (CRSF) jogkivonata, amely a CRSF-től történő védelemhez használatos.     | Munkamenet |
+| x-ms-cpim-dc                                | A kérelmeknek a megfelelő termelési hitelesítési kiszolgálópéldány számára történő továbbítására szolgál. | Munkamenet |
+| x-ms-cpim-rc.&#42;                              | A kérelmeknek a megfelelő termelési hitelesítési kiszolgálópéldány számára történő továbbítására szolgál. | Munkamenet |
+| x-ms-cpim-slice                             | A kérelmeknek a megfelelő termelési hitelesítési kiszolgálópéldány számára történő továbbítására szolgál. | Munkamenet |
+| x-ms-cpim-sso:rushmoreb2c.onmicrosoft.com_0 | Az SSO-munkamenet fenntartására szolgál.                        | Munkamenet |
+| x-ms-cpim-trans                             | A tranzakciók nyomon követésére szolgál (azoknak a nyitott lapoknak a száma, amelyeknek hitelesítése vállalatok közötti (B2C) helyhez történik), az aktuális tranzakciót is beleértve. | Munkamenet |
+| \_msdyn365___muid_                            | Akkor használatos, ha a kísérletezés aktiválva van a környezetben: felhasználóazonosítóként használatos a kísérletezési célokhoz. | 1 év |
+| \_msdyn365___exp_                             | Akkor használatos, ha a kísérletezés aktiválva van a környezetben: a teljesítmény terheléselosztásának mérésére használatos.         | 1 óra |
+| d365mkt                                       | Akkor használatos, ha az üzlet helyjavaslataizoz tartozó felhasználói IP-cím nyomon követésének hely alapú észlelési szolgáltatása engedélyezve van a Commerce webhely-szerkesztőjében, a **Webhelybeállítások \> Általános \> Helyalapú áruházészlelés engedélyezése** részen.      | 1 óra |
 
 Ha egy webhely felhasználója a webhely bármelyik közösségi média hivatkozását kiválasztja, az alábbi táblában található cookie-k is nyomon lesznek követve a böngészőikben.
 

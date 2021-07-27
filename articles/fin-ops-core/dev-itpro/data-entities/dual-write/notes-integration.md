@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2021-02-22
-ms.openlocfilehash: ceb5b7c90cc7efa0049d0278e2c245228e5b52bd
-ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
+ms.openlocfilehash: 3ff40011ac60c47f6ed667adfcf01bc727334f13
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6186786"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358979"
 ---
 # <a name="note-integration"></a>Megjegyzésintegráció
 
@@ -51,23 +51,23 @@ Ha megjegyzést szeretne létrehozni egy ügyfélkapcsolati alkalmazásban, majd
 1. Nyissa meg egy vevő számlarekordját az ügyfélkapcsolati alkalmazásban.
 2. Az **Idősor** ablaktáblán válassza a pluszjelet (**+**), majd a **Megjegyzés** gombra kattintva hozzon létre egy megjegyzést.
 
-    ![Megjegyzés létrehozása az ügyfélkapcsolati alkalmazásban](media/notes-ce-1.png)
+    ![Megjegyzés létrehozása az ügyfélkapcsolati alkalmazásban.](media/notes-ce-1.png)
 
 3. Írja be a kívánt címet és leírást, majd válassza a **Megjegyzés hozzáadása** lehetőséget.
 
-    ![A kívánt cím és leírás megadása](media/notes-ce-2.png)
+    ![A kívánt cím és leírás megadása.](media/notes-ce-2.png)
 
     Az új megjegyzés hozzáadódik a vevői idősorhoz.
 
-    ![Új megjegyzés a vevői idősoron](media/notes-ce-3.png)
+    ![Új megjegyzés a vevői idősoron.](media/notes-ce-3.png)
 
 4. Jelentkezzen be a Finance and Operations alkalmazásba, és nyissa meg ugyanazt a vevői rekordot. Láthatja, hogy jobb felső sarokban látható **Mellékletek** gomb (gemkapocs szimbólum) jelzi, hogy a rekordhoz melléklet van csatolva.
 
-    ![Értesítés mellékletről](media/notes-ce-4.png)
+    ![Értesítés mellékletről.](media/notes-ce-4.png)
 
 5. Kattintson a **Mellékletek** gombra a **Mellékletek** oldal megnyitásához. Az ügyfélkapcsolati alkalmazásban meg kell találnia a létrehozott megjegyzést.
 
-    ![Megjegyzés az ügyfélkapcsolati alkalmazásból](media/notes-ce-5.png)
+    ![Megjegyzés az ügyfélkapcsolati alkalmazásból.](media/notes-ce-5.png)
 
 A megjegyzés frissítései oda-vissza szinkronizálódnak az alkalmazás és a Finance and Operations alkalmazás és az ügyfélkapcsolati alkalmazás között.
 
@@ -79,21 +79,21 @@ Ha megjegyzést szeretne létrehozni egy Finance and Operations alkalmazásban, 
 
 1. A Finance and Operations alkalmazásban a **Mellékletek** oldalon válassza az **Új** \> **Megjegyzés** lehetőséget.
 
-    ![Megjegyzés létrehozása a Finance and Operations alkalmazásban](media/notes-fo-1.png)
+    ![Megjegyzés létrehozása a Finance and Operations alkalmazásban.](media/notes-fo-1.png)
 
 2. Adjon meg egy címet és egy rövid utasításkészletet, majd válassza a **Mentés** lehetőséget.
 
-    ![A kívánt cím és az utasítások megadása](media/notes-fo-2.png)
+    ![A kívánt cím és az utasítások megadása.](media/notes-fo-2.png)
 
 3. Frissítse a rekordot az ügyfélkapcsolati alkalmazásban. Az új megjegyzésnek az idősorban kell lennie.
 
-    ![Új megjegyzés az ügyfélkapcsolati alkalmazás idősorán](media/notes-fo-3.png)
+    ![Új megjegyzés az ügyfélkapcsolati alkalmazás idősorán.](media/notes-fo-3.png)
 
 A megjegyzéseket belsőként és külsőként is osztályozhatja.
 
 - Nyissa meg a megjegyzést a Finance and Operations alkalmazásban a **Mellékletek** oldalon, majd a **Korlátozás** mezőben válassza a **Belső** vagy a **Külső** lehetőséget.
 
-    ![Korlátozás mező](media/notes-fo-4.png)
+    ![Korlátozás mező.](media/notes-fo-4.png)
 
 URL-címet is létrehozhat
 
@@ -101,13 +101,13 @@ URL-címet is létrehozhat
 2. Adja meg a címet és az URL-t.
 3. A **Korlátozás** mezőben válassza a **Belső** vagy a **Külső** lehetőséget.
 
-    ![URL létrehozása a Finance and Operations alkalmazásban](media/notes-fo-5.png)
+    ![URL létrehozása a Finance and Operations alkalmazásban.](media/notes-fo-5.png)
 
 4. Válassza a **Mentés** lehetőséget.
 
     Mivel az ügyfélkapcsolati alkalmazásoknak nincs URL-típusa, az URL-cím megjegyzésként kettős írással van integrálva.
 
-    ![URL megjegyzésként jelenik meg az ügyfélkapcsolati alkalmazásban](media/notes-ce-6.png)
+    ![URL megjegyzésként jelenik meg az ügyfélkapcsolati alkalmazásban.](media/notes-ce-6.png)
 
 > [!NOTE]
 > A fájlmellékletek nem támogatottak.

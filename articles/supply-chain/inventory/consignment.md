@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a41fb3118359ab9a597f3c3242759fcbcf1e090a
-ms.sourcegitcommit: 51cad1ce3ed44ebf7eb9bdf553ee2df4c1f03135
+ms.openlocfilehash: 742c6d1b713b8669dcc3544cf84eb340e3e9293b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "6015853"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360400"
 ---
 # <a name="set-up-consignment"></a>Bizomány beállítása
 
@@ -61,7 +61,7 @@ A szállítmány feltöltési rendelése olyan dokumentum, amely egy szállító
 
 A **Tulajdonos** dimenzió segítségével lehet különválasztani azokat az információkat, melyek alapján megállapítható, hogy melyik készlet tulajdonosa a szállító, és melyiknek a fogadó jogi személy. A szállítmányfeltöltési megrendelési sorok állapota **Nyitott rendelés** mindaddig, amíg a sorok teljes mennyisége nincs leszállítva vagy érvénytelenítve. Amikor a teljes mennyiség leszállításra vagy érvénytelenítésre kerül, az állapot **Kész** értékre változik. A szállítmány feltöltési rendeléséhez kapcsolódó, tényleges, aktuális készletet egy regisztrálási folyamat és egy termék-bevételezési frissítési folyamat segítségével lehet rögzíteni. A regisztrációt a cikk érkeztetési eljárásának segítségével vagy a rendeléssorok manuális frissítésével lehet elvégezni. A termék-bevételezési frissítési folyamatot használják, a termékbevételezési naplóban létrejön egy rekord, amellyel nyugtázni lehet az áruk átvételét a szállítók számára.
 
-[![Bizományosi feltöltési rendelések](./media/consignment-replenishment-order.png)](./media/consignment-replenishment-order.png)
+[![Bizományosi feltöltési rendelések.](./media/consignment-replenishment-order.png)](./media/consignment-replenishment-order.png)
 
 ## <a name="inventory-ownership-change-journal"></a>Készlettulajdonos-változás naplója
 
@@ -74,7 +74,7 @@ Csak olyan készlettranzakciók jönnek létre, amelyek a feladott naplóhoz kap
 
 A szállítmány beszerzési rendelésének soraiban szereplő mennyiséget nem lehet frissíteni a rendelés létrehozása után.
 
-[![Készlettulajdonos-változás naplója](./media/inventory-ownership-change-journal.png)](./media/inventory-ownership-change-journal.png)
+[![Készlettulajdonos változásnaplója.](./media/inventory-ownership-change-journal.png)](./media/inventory-ownership-change-journal.png)
 
 ## <a name="vendor-collaboration-in-consignment-processes"></a>Szállítói együttműködés a szállítmányozási folyamatokban.
 
@@ -90,13 +90,13 @@ A szállítóknak a szállítói együttműködésben való beállítására von
 
 Fizikai bejövő bizományosi készlet rögzítéséhez meg kell határozni a szállító-tulajdonost. Ez a **készlettulajdonos** oldalon történik. Ha bejelöli a **szállítói számlát**, ezzel létrehozza a **Név** és **Tulajdonos** mezők alapértelmezett értékeit. Az a **tulajdonos** mezőben lévő érték látható a szállító számára, ezért érdemes úgy módosítani, hogy a szállítói számla nevei ne legyenek könnyen felismerhetők külső felhasználók számára. A **tulajdonos** mezőt lehet módosítani, de csak addig a pontig, amikor menti a **készlettulajdonos** rekordot. A **Név** mezőt a rendszer automatikusan beírja annak a félnek a neve alapján, akihez a szállítói számla hozzá van rendelve, és ez nem módosítható.
 
-[![Készlettulajdonosok](./media/inventory-owners.png)](./media/inventory-owners.png)
+[![Készlettulajdonosok.](./media/inventory-owners.png)](./media/inventory-owners.png)
 
 ## <a name="tracking-dimension-group"></a>Nyomonkövetésidimenzió-csoport
 
 A bizományosi folyamatokban használandó cikkeket társítani kell egy **nyomon követési dimenziócsoporttal**, ahol a **tulajdonos** dimenzió értéke **aktív**. A tulajdonos dimenzió esetében a **leltár** és a **pénzügyi készlet** opció mindig ki van választva. A **fedezeti terv dimenziónként** soha nincs bejelölve.
 
-[![Nyomonkövetésidimenzió-csoport](./media/tracking-dimension-group.png)](./media/tracking-dimension-group.png)
+[![Nyomonkövetésidimenzió-csoport.](./media/tracking-dimension-group.png)](./media/tracking-dimension-group.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

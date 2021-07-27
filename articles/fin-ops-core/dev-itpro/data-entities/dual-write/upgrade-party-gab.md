@@ -9,12 +9,12 @@ ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-31
-ms.openlocfilehash: 90ddbe704ab21d62752b581a813601e8986c2103
-ms.sourcegitcommit: 180548e3c10459776cf199989d3753e0c1555912
+ms.openlocfilehash: 6662b6cad53c832e15fb27b435e277840afd8097
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6112673"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346546"
 ---
 # <a name="upgrade-to-the-party-and-global-address-book-model"></a>Frissítés a fél és globális címjegyzék modelljére
 
@@ -89,7 +89,7 @@ A frissítés előkészítéséhez a következő tevékenységek szükségesek:
 
 10. A telepítést követően ellenőrizze az adattárat, az adatáramlást és az adat-előállító kapcsolt szolgáltatását.
 
-   ![Adatkészletek, adatáramlás és csatolt szolgáltatás](media/data-factory-validate.png)
+   ![Adatkészletek, adatáramlás és csatolt szolgáltatás.](media/data-factory-validate.png)
 
 11. Lépjen a **Kezelés** elemre. A **Kapcsolatok** alatt válassza a **Csatolt szolgáltatás** lehetőséget. Válassza a **DynamicsCrmLinkedService** elemet. A **Csatolt szolgáltatás szerkesztése (Dynamics CRM)** űrlapon írja be a következő értékeket.
 
@@ -154,7 +154,7 @@ A frissítés előkészítéséhez a következő tevékenységek szükségesek:
 
 7. Az adat-előállítóban futtassa a sablont úgy, hogy kiválasztja a **Kiváltás most** elemet úgy, ahogy az a következő képen látható. Ez a folyamat az adatok mennyisége alapján néhány óráig is igénybe vehet.
 
-    ![Futtatás kiváltása](media/data-factory-trigger.png)
+    ![Futtatás kiváltása.](media/data-factory-trigger.png)
 
     > [!NOTE]
     > Ha testre szabott beállításai vannak a **Számlához**, a **Kapcsolattartóhoz** és a **Szállítóhoz**, módosítania kell a sablont.
@@ -164,7 +164,7 @@ A frissítés előkészítéséhez a következő tevékenységek szükségesek:
     + Töltse le a `FONewParty.csv` fájlt az Azure blobtárolóból. Elérési út a következő: `partybootstrapping/output/FONewParty.csv`.
     + Konvertálja a `FONewParty.csv` fájlt Excel-fájlba, és az Excel-fájlt importálja a Finance and Operations alkalmazásba. Ha a csv import megfelelő, akkor közvetlenül importálhatja a csv fájlt. Az importálás az adatmennyiségtől függően néhány óráig is igénybe vehet. A további tudnivalókat lásd: [Adatimportálási és -exportálási feladatok áttekintése](../data-import-export-job.md).
 
-    ![A Datavers fél rekordjainak importálása](media/data-factory-import-party.png)
+    ![A Datavers fél rekordjainak importálása.](media/data-factory-import-party.png)
 
 9. A Customer Engagement-alkalmazásokban engedélyezze a következő beépülőmodul-lépéseket:
 
@@ -199,7 +199,7 @@ A frissítés előkészítéséhez a következő tevékenységek szükségesek:
 3. Az adat-előállító vesszővel tagolt csv-fájlokon alapulva fut. Ha olyan mezőérték van, amelynél vessző van, akkor az hatással lehet az eredményre. El kell távolítania a vesszőket.
 4. A **Figyelés** lapon található tájékoztatás az összes lépésről és a feldolgozott adatokról. A hibakereséshez válasszon egy lépést.
 
-    ![Figyelés lap](media/data-factory-monitor.png)
+    ![Figyelés lap.](media/data-factory-monitor.png)
 
 ## <a name="learn-more-about-the-template"></a>További tudnivalók a sablonról
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-02-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: a138fd4b525077f12f6575f4b10f682728b71203
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 6b89c3feb9287b6f445b1dff7252899532df8819
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838719"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6361216"
 ---
 # <a name="create-er-configurations-in-regulatory-configuration-services-rcs-and-upload-them-to-the-global-repository"></a>ER-konfigurációk létrehozása a Regulatory Configuration Services (RCS) rendszerben, és feltöltésük a globális tárba
 
@@ -51,7 +51,7 @@ Ha van már RCS-környezet létesítve a vállalat számára, akkor az oldal URL
 5. Adjon meg egy nevet és egy leírást, majd válassza a **Konfiguráció létrehozása** lehetőséget egy új származtatott verzió létrehozásához.
 6. Válassza ki az újonnan származtatott konfigurációt, adja meg a verzió leírását, majd kattintson az **OK** gombra. A konfiguráció állapota **Kész** értékre módosul.
 
-![Új konfigurációverzió az RCS-ben](media/RCS_CompleteConfig.JPG)
+![Új konfigurációverzió az RCS-ben.](media/RCS_CompleteConfig.JPG)
 
 > [!NOTE]
 > A konfiguráció állapotának módosításakor előfordulhat, hogy a csatlakoztatott alkalmazásokhoz kapcsolódó ellenőrzési hibaüzenet jelenik meg. Ha ki szeretné kapcsolni a hitelesítést, válassza ki a Művelet panelen a **Konfigurációk** lapot, válassza a **Felhasználói paraméterek** lehetőséget, majd állítsa be a **Konfiguráció állapotváltozással és új alappal kapcsolatos érvényesítésének kihagyása** beállítást **Igen** értékre. 
@@ -63,7 +63,7 @@ Ha új vagy származtatott konfiguráció szeretne megosztani a szervezettel, ak
 1. Válassza ki a konfiguráció kész verzióját, majd válassza a **Feltöltés a tárba** parancsot.
 2. Válassza ki a **Globális (Microsoft)** beállítást, majd válassza a **Feltöltés** elemet.
 
-    ![Feltöltés a tárba beállításai](media/RCS_Upload_to_GlobalRepo_options.JPG)
+    ![Feltöltés a tárba beállításai.](media/RCS_Upload_to_GlobalRepo_options.JPG)
 
 3. A megerősítő párbeszédpanelen válassza az **Igen** gombot. 
 4. Szükség szerint frissítse a verzió leírását, majd kattintson az **OK** gombra. 
@@ -73,7 +73,7 @@ A konfiguráció állapota **Megosztás** értékre frissül, és a konfiguráci
 - Importálhatja a Dynamics 365-példányába. További információ: [(ER) Konfigurációk importálása RCS-ből](../../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md).
 - Megoszthatja egy harmadik féllel vagy külső szervezettel, lásd: [RCS elektronikus jelentéskészítési (ER) konfigurációk megosztása külső szervezetekkel](rcs-global-repo-share-configuration.md)
 
-    ![Származtatott Intrastat Contoso konfigurációverzió a globális tárban](media/RCS_Config_upload_GlobalRepo.JPG)
+    ![Származtatott Intrastat Contoso konfigurációverzió a globális tárban.](media/RCS_Config_upload_GlobalRepo.JPG)
 
 ## <a name="delete-a-configuration-from-the-global-repository"></a>Konfiguráció törlése a Globális adattárból
 Hajtsa végre a következő lépéseket a szervezete által létrehozott konfiguráció törléséhez.
@@ -84,11 +84,11 @@ Hajtsa végre a következő lépéseket a szervezete által létrehozott konfigu
 4. A **Szűrő** gyorslapon keresse meg azt a konfigurációt, amelyet törölni szeretne a **Szűrő** funkció segítségével.
 5. A **Verzió** gyorslapon válassza ki a törölni kívánt konfiguráció verziószámát, majd válassza a **Törlés** lehetőséget:
 
-    ![Konfiguráció törlése a globális adattárból](media/RCS_Delete_from_GlobalRepo.JPG)
+    ![Konfiguráció törlése a globális adattárból.](media/RCS_Delete_from_GlobalRepo.JPG)
 
 6. A megerősítő párbeszédpanelen válassza az **Igen** gombot.
 
-    ![Konfigurációverzió visszaigazolási üzenetének törlése](media/RCS_Delete_from_GlobalRepo_Msg.JPG)
+    ![Konfigurációverzió visszaigazolási üzenetének törlése.](media/RCS_Delete_from_GlobalRepo_Msg.JPG)
  
 A konfigurációverziót törölve lesz, és egy megerősítő üzenet jelenik meg. 
 

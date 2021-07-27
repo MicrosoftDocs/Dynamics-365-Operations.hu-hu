@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 985fedc13e28caee90c9db27b145e415d256208d
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: db025b3edb9daa2ffc19b5fc92930f76d8007dce
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5808291"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360101"
 ---
 # <a name="asset-lifecycle-states"></a>Eszköz életciklus-állapotai
 
@@ -61,9 +61,9 @@ Miután létrehozta a szükséges eszközéletciklus-állapotokat, beállíthat 
 
 5. Az **Életciklus-állapotok** gyorslapon válassza ki azokat az eszközéletciklus-állapotokat, amelyeket fel kell venni az eszközéletciklus-modellbe:
 
-    - A modellben használandó életciklus-állapotot válassza ki a **Hátralevő életciklus-állapotok** szakaszban, majd a jobbra nyíl ![Jobbra nyíl](media/15-setup-for-objects.png) gombbal helyezze át a **Kijelölt életciklus-állapotok** szakaszba.
-    - Ahhoz, hogy az összes elérhető életciklus-állapotot használhassa a modellhez, nyomja meg az **Összes elérhető életciklus-állapot** ![Összes elérhető életciklus-állapot](media/20-setup-for-objects.png) gombot. Az összes életciklus-állapot a **Kijelölt életciklus-állapotok** szakaszba kerül.
-    - Ha el kíván távolítani egy életciklus-állapotot a modellből, válassza ki az adott állapotot a **Kijelölt életciklus-állapotok** szakaszban, majd a Balra nyíl ![Balra nyíl](media/16-setup-for-objects.png) gombbal helyezze át a **Hátralévő életciklus-állapotok** szakaszba.
+    - Ha életciklus-állapotot szeretne használni a modellhez, válassza ki azt a **Hátralévő életciklus-állapotok** szakaszban, majd válassza a jobb nyílgombot ![Jobb nyíl.](media/15-setup-for-objects.png) elemet az áthelyezéshez az **Életciklus-állapotok kiválasztva** szakaszba.
+    - Ahhoz, hogy az összes elérhető életciklus-állapotot használhassa a modellhez, nyomja meg az **Összes elérhető életciklus-állapot** ![Összes elérhető életciklus-állapot.](media/20-setup-for-objects.png) gombot. Az összes életciklus-állapot a **Kijelölt életciklus-állapotok** szakaszba kerül.
+    - Ha életciklus-állapotot szeretne eltávolítani a modellből, válassza ki azt a **kiválasztott életciklus-állapotok** szakaszban, majd válassza a bal nyílgombot ![Bal nyíl.](media/16-setup-for-objects.png) elemet az áthelyezéshez a **Fennmaradó életciklus-állapotok** szakaszba.
 
 6. Válassza az **Életciklus-állapot frissítései** elemet, amellyel meghatározhatja a kijelölt életciklus-állapotot követő eszközéletciklus-állapotokat.
 7. Az **Eszközállapot** gyorslapon a javításra kapott eszközök kezelése használható. A **Bejövő/kimenő** szakaszban kiválaszthat eszközéletciklus-állapotokat, amelyekkel jelezheti a javításra kapott eszköz munkafolyamatát. Ha ügyfelei vagy részlegei számára hiteleszközöket kínál, akkor a **Kölcsön** részben kiválaszthatja a kölcsönzött eszközökre vonatkozó életciklus-állapotokat.

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 9ac64b0e40662f30cc615dfbd3f05aba5b37d862
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 88ae7faabe7af25f6e3b95c7217d91e440c94da2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838658"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346202"
 ---
 # <a name="work-hour-control"></a>Munkaóra-ellenőrzés
 
@@ -66,7 +66,7 @@ Az alábbi képernyőfotón az **Eszközórák ellenőrzése** számítás egyik
 - A **Tényleges órák** mező a munkarendeléseken feladott órákat jeleníti meg. 
 - A **Vállalt óraszám** mezőben az órák összes száma látható, amelyet a vállalat a munkarendelésekkel kapcsolatban vállalt.
 
-![Példa a tárgyi eszköz óraellenőrzési számítására](media/04-controlling-and-reporting.png)
+![Példa a tárgyi eszköz óraellenőrzési számítására.](media/04-controlling-and-reporting.png)
 
 Az órák számításának másik módja az, ha többszörös kiválasztással kiválasztja az eszközöket az **Összes eszköz** vagy **Aktív eszközök** pontban. Ezután kattintson az **Óraellenőrzés** gombra az **Általános** gyorslapon. A rendszer automatikusan beilleszti a kiválasztott eszközöket az **Eszköz** mezőbe a **Szerepeltetni kívánt rekordok** gyorslapon. Kattintson az **OK** gombra az **Eszközórák ellenőrzése** párbeszédablakban, és megjelenik a kiválasztott eszközökre vonatkozó számítás. Ugyanez az eljárás hajtható végre az **Összes munkavégzési helyszín** vagy **Aktív munkavégzési helyszínek** pontban található munkavégzési helyszíneknél, valamint a munkarendeléseknél az **Összes munkarendelés** vagy **Aktív munkarendelések** pontban.
 

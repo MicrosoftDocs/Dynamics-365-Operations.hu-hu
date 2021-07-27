@@ -9,19 +9,19 @@ ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 92dfb05addc1c791b24f129587b842d22423eb54
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 15fbab7d0260ed714edfbbb5ef54caddb69cae3c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908756"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360005"
 ---
 # <a name="master-planning-home-page"></a>Alaptervezés kezdőlap
 
@@ -50,7 +50,7 @@ Az alapütemezési tervek általában rövid távúak, az időtartamuk egy hét 
 
 A következő tanulási térkép fontos fogalmakat és feladatokat mutat be, amelyek az Alaptervezés modul keretét alkotják. Kattintson a hivatkozásra a [Gyorshivatkozások](#quick-links) szakaszban a modul használatának elsajátításához.
 
-[![Az alaptervezés tanulási térképe](./media/master-planning-learning-map.png)](./media/master-planning-learning-map.png)
+[![Az alaptervezés tanulási térképe.](./media/master-planning-learning-map.png)](./media/master-planning-learning-map.png)
 
 ## <a name="quick-links"></a>Gyorshivatkozások
 

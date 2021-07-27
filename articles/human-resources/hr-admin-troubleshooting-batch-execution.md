@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2021-03-19
 ms.dyn365.ops.version: Platform update 42
-ms.openlocfilehash: d0b12908993070a41d21ac57d6fb504fc6e3b06a
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: f236f861434eb2eaa26eab92e25a0b83a8026972
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6053515"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357337"
 ---
 # <a name="reset-stuck-batch-jobs"></a>Beragadt kötegelt feladatok alaphelyzetbe állítása
 
@@ -46,7 +46,7 @@ Ha egy kötegelt feldolgozás **Végrehajtás** vagy **Megszakítás** állapotb
 
 5. Az **Új állapot kiválasztása** lapon válassza a **Várakozás** lehetőséget, majd kattintson az **OK** gombra.
 
-   ![Új kötegelt feldolgozási állapot kiválasztása](./media/hr-admin-reset-batch-job-status.png)
+   ![Új kötegelt feldolgozási állapot kiválasztása.](./media/hr-admin-reset-batch-job-status.png)
 
 ## <a name="see-also"></a>Lásd még
 

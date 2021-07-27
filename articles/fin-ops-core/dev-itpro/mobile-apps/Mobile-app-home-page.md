@@ -8,18 +8,18 @@ ms.prod: ''
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
-ms.custom: 272853
+ms.custom: intro-internal
 ms.assetid: c99f818f-27b3-4e45-92b4-74272dad0e17
 ms.search.region: Global
 ms.author: cgarty
 ms.dyn365.ops.version: Platform update 4
 ms.search.validFrom: 2017-02-28
-ms.openlocfilehash: 469b03151f3113f44d932a2d6f4bf3fcfa059133
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: e13e99515d52e1e24970908a106ae99a7e8b0d80
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6188410"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360816"
 ---
 # <a name="mobile-app-home-page"></a>Mobilalkalmazás kezdőoldala
 
@@ -39,7 +39,7 @@ A mobilalkalmazás lehetővé teszi a szervezet számára, hogy üzleti folyamat
 ## <a name="elements-of-the-mobile-app"></a>A mobilalkalmazás elemei
 A mobilalkalmazásban történő navigáció négy egyszerű részből áll: ezek az irányítópult, a munkaterület, az oldalak és a műveletek. 
 
-[![A mobilalkalmazás navigációs fogalmai](./media/mobilephoneapp1-1024x536.png)](./media/mobilephoneapp1.png)
+[![A mobilalkalmazás navigációs fogalmai.](./media/mobilephoneapp1-1024x536.png)](./media/mobilephoneapp1.png)
 
 1. Az alkalmazás indításakor az **irányítópultra** kerül.
 2. Az irányítópulton látható a közzétett **Munkaterületek** listája.
@@ -53,7 +53,7 @@ A mobilalkalmazásban történő navigáció négy egyszerű részből áll: eze
 ## <a name="implementation-process"></a>Megvalósítási folyamat
 A következő ábra a Microsoft által biztosított, valamint az egyéni mobil munkaterületek implementálásának folyamatát mutatja. 
 
-[![Mobilalkalmazások megvalósítási folyamata](./media/Mobile-implementation-process-5.png)](./media/Mobile-implementation-process-5.png)
+[![Mobilalkalmazások megvalósítási folyamata.](./media/Mobile-implementation-process-5.png)](./media/Mobile-implementation-process-5.png)
 
 Az alábbi táblázat azokra az erőforrásokra mutató hivatkozásokat tartalmaz, amelyek segítenek a Microsoft által biztosított, valamint az egyéni mobil munkaterületek implementálásában. Az első oszlopban szereplő számok az előzőekben bemutatott számozott lépéseknek felelnek meg.
 

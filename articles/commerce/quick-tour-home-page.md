@@ -9,17 +9,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.custom: intro-internal
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: f083115f5dc0cfe0e9ba4786bf79ec4083ab7e78
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 3cd179483458dd3da3b69afaa464c21a11c3df8b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792195"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352012"
 ---
 # <a name="home-page-overview"></a>Kezdőlap – áttekintés
 
@@ -31,7 +32,7 @@ A kezdőlap az az alapértelmezett lap, amelyre a vásárlók kerülnek, amikor 
 
 A következő ábra egy olyan kezdőlapot mutat be, amely a modulkönyvtár és a „gyár” téma alapján készült.
 
-![Példa a kezdőlapra](./media/Homepage2.PNG)
+![Példa a kezdőlapra.](./media/Homepage2.PNG)
 
 A kezdőlap felső részén egy fejléc jelenik meg, amely az összes termékkategóriát és az egyéb olyan oldalakt, amelyet a kereskedő azt szeretné, hogy böngésznének. A kezdőlaplap alján van egy lábléc, amely gyorshivatkozásokat tartalmaz a különböző témájú témákhoz, amelyek érdekesek lehetnek a vevők számára.
 
@@ -41,13 +42,13 @@ A kezdőlap fő része a termékeket, kategóriákat vagy promóciókat jelenít
 
     A következő ábra egy olyan kezdőlap példáját mutatja be, amelynél a fő szakasz első eleme egy „Most érkezett” nevű tartalomblokk modul főkép-elrendezése.
 
-    ![Példa egy főkép modulra](./media/Hero.PNG)
+    ![Példa egy főkép modulra.](./media/Hero.PNG)
 
 - **Funkció** – a tartalomblokk modul funkcióelrendezése a termékek és a promóciók képek és szövegek kombinálásával történő forgalmazására szolgál. A funkcióelrendezések önállóan is használhatók, de elhelyezhetők forgótár modulban is.
 
     A következő ábra a kezdőlapon található tartalomblokk modul funkcióelrendezésére mutat be egy példát.
 
-    ![Példák a funkciómodulokra](./media/Feature.PNG)
+    ![Példák a funkciómodulokra.](./media/Feature.PNG)
 
 - **Csempe** – a tartalomblokk modul csempeelrendezése a különböző termékek vagy termékkategóriák megjelenítésére szolgál a képek és a szöveg kombinációjának használatával a többoszlopos elrendezésben. A jelen témakörben korábban bemutatott kezdőlap illusztráción egy csempeelrendezés van használva a **Vásárlás nőknek**, **Vásárlás férfiaknak** és **Kiegészítők vásárlása** háromoszlopos leképezéshez.
 - **Videolejátszó** – A videolejátszó modul videotartalom megjelenítésére használható a kezdőlapon. A témakörben korábban bemutatott Kezdőlap illusztrációja egy videolejátszó modult is tartalmaz.
@@ -56,7 +57,7 @@ A kezdőlap fő része a termékeket, kategóriákat vagy promóciókat jelenít
 
     A következő ábra a kezdőlapon található termékjavaslatok modulra mutat be egy példát.
 
-    ![Példák a termékjavaslatok modulokra](./media/Recommendations.PNG)
+    ![Példák a termékjavaslatok modulokra.](./media/Recommendations.PNG)
 
 > [!NOTE]
 > Minden itt felsorolt modul használható bármilyen a webhely összes oldalán. Azonban a kezdőlapon történő elhelyezésük fontos, mert ez az a lap, amellyel a vevők először találkoznak a webhelyen.

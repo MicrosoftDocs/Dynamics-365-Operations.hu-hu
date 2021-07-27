@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 3550b2b7b305702ffc337ba0a9bb79f60a9de120
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: db7bdfe102fa5e24816f2cfaf2b53351362cddd1
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023295"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358194"
 ---
 # <a name="set-up-tds-registration-numbers-for-legal-entities"></a>Jogi személyek TDS-regisztrációs számának beállítása
 
@@ -31,7 +31,7 @@ Ez a témakör elmagyarázza, hogyan lehet beállítani a jogi személyek regisz
 
 1. Nyissa meg a következőt: **Szervezeti adminisztráció \> Szervezetek \> Jogi személyek**.
 
-    [![Jogi személyek oldal](./media/apac-ind-TDS-4.png)](./media/apac-ind-TDS-4.png)
+    [![Jogi személyek oldal.](./media/apac-ind-TDS-4.png)](./media/apac-ind-TDS-4.png)
 
 2. Az **Adóinformációk** gyorslap **Állandó számlaszám** mezőjébe írja be a jogi személy állandó számlaszámát (PAN).
 3. A **Körszám** mezőbe írja be az TDS-hatóság körszámát.
@@ -41,11 +41,11 @@ Ez a témakör elmagyarázza, hogyan lehet beállítani a jogi személyek regisz
 7. Válassza a **Regisztrációs azonosítók** elemet a műveleti panelen a **Címek kezelése** oldal megnyitásához.
 8. Az **Adóinformációk** gyorslapon válassza a **Hozzáadás** vagy a **Szerkesztés** lehetőséget, hogy megnyíljon az **Adóinformációk kezelése** lap, ahol karbantarthatja az adóregisztrációs bejegyzést.
 
-    [![Címek kezelése lap](./media/apac-ind-TDS-5.png)](./media/apac-ind-TDS-5.png)
+    [![Címek kezelése lap.](./media/apac-ind-TDS-5.png)](./media/apac-ind-TDS-5.png)
 
 9. Adja meg a regisztrációs számot az **Adóelőleg** gyorslapon az **Adószámla száma (TAN)** mezőben. Ez a szám négy betűből, majd öt numerikus karakterből, majd egy betűből kell állnia. Egy példa: **AXDF87645F**.
 10. A **Név vagy leírás** mezőbe írja be az adóelőleg-regisztrációs szám leírását.
 
-    [![Adóinformációk kezelése lap](./media/apac-ind-TDS-5-1.png)](./media/apac-ind-TDS-5-1.png)
+    [![Adóinformációk kezelése lap.](./media/apac-ind-TDS-5-1.png)](./media/apac-ind-TDS-5-1.png)
 
 11. Zárja be a lapot.

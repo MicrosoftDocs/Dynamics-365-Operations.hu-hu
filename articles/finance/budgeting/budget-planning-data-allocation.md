@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bef79df8d9806771f87a6f77a0c9094887050646
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 112d3d37d1f70218265f264cda7ecefcb76f1f67
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5822203"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6343862"
 ---
 # <a name="budget-planning-data-allocation"></a>Költségvetés-tervezés – adatok megadása
 
@@ -36,28 +36,28 @@ Háromféle felosztási móddal (időszakok közötti felosztás, felosztás dim
 > [!NOTE] 
 > Az aggregációhoz olyan egyedi tervváltozatot kell használni, amely eltér a fölérendelt tervben korábban elvégzett felosztáshoz vagy más módosításokhoz használt tervváltozattól.  
 
-[![Időszakok közötti felosztás módja](./media/allocateacrossperiods-300x259.png)](./media/allocateacrossperiods.png)
+[![Időszakok közötti felosztás módja.](./media/allocateacrossperiods-300x259.png)](./media/allocateacrossperiods.png)
 **Időszakok közötti felosztás** – A költségvetési terv sorait a forrásként szolgáló költségvetési tervváltozatból időszaki felosztási kategória segítségével oszthatja fel a célváltozat pénzügyi időszakai között. A forrásösszeget a rendszer több sorhoz is hozzárendeli a célváltozatban az időszaki felosztókategóriában meghatározott százalék és dátumon szerint.         
 
-[![A dimenziókra való felosztás módja](./media/allocatetodimensions.jpg)](./media/allocatetodimensions.jpg)
+[![A dimenziókra való felosztás módja.](./media/allocatetodimensions.jpg)](./media/allocatetodimensions.jpg)
 **Felosztás dimenziókra** – A költségvetési terv sorai a forrásként szolgáló költségvetési tervváltozatból a célváltozat pénzügyi sorai között kerülnek felosztásra a kiválasztott költségvetés-felosztási feltételben meghatározott százalékok és pénzügyi dimenziók alapján.           
 
-![Összesítő diagram](./media/aggregatechart-300x230.png)
+![Összesítő diagram.](./media/aggregatechart-300x230.png)
 **Összesítés** – A költségvetési terv sorai a szülő költségvetési terv forrásként szolgáló költségvetési tervváltozatából a társított (gyermek) költségvetési terv célváltozatában kerülnek összesítésre. Ezzel a módszerrel a szervezet alsóbb szintjein elkészített költségvetési összegek magasabb szinten is konszolidálhatók.          
 
-[![Felosztási diagram](./media/distributechart-300x230.png)](./media/distributechart.png)
+[![Felosztási diagram.](./media/distributechart-300x230.png)](./media/distributechart.png)
 **Felosztás** – A költségvetési terv sorai a szülő költségvetési terv forrásként szolgáló költségvetési tervváltozatából kerülnek felosztásra a társított (gyermek) költségvetési tervek célváltozatával a társított tervek szervezeti egységeinek pénzügyi dimenziói alapján. Ezzel a módszerrel a szervezet magasabb szintjén elkészített költségvetési összegeket lokalizáltabb ellenőrzésre terjesztheti szét.           
 
-[![Főkönyvi felosztási szabályok](./media/ledgerallocationrules-300x202.png)](./media/ledgerallocationrules.png)
+[![Főkönyvi felosztási szabályok.](./media/ledgerallocationrules-300x202.png)](./media/ledgerallocationrules.png)
 **Főkönyvi felosztási szabályok használata** – A költségvetési terv sorai a forrásként szolgáló költségvetési tervváltozat soraiból a kiválasztott főkönyvi felosztási szabály alapján, a cél költségvetési tervváltozatba kerülnek felosztásra. 
 
-[![Másolás a költségvetési tervből](./media/copyfrombudgetplan-187x300.png)](./media/copyfrombudgetplan.png)
+[![Másolás a költségvetési tervből.](./media/copyfrombudgetplan-187x300.png)](./media/copyfrombudgetplan.png)
 **Másolás a költségvetési tervből** – A Felosztási mód elosztása eljáráshoz hasonlóan a költségvetési terv sorainak létrehozása itt is a célban történik, a kapcsolódó költségvetési terv sorai alapján. Ehhez a módszerhez ugyanakkor a forrás költségvetési tervnek nem muszáj szülőnek lenni, de lehet magasabban a hierarchiában. Ez a felosztási mód akkor hasznos, ha a konszolidált összegeket eredetileg jóval magasabb szinten irányozták elő, és azokat át kell adni a szervezet alacsonyabb szintjeire is részletes ellenőrzésre és kiigazításra a magasabb szintű jóváhagyás előtt.          
 
 ## <a name="using-allocation-methods-in-a-budget-plan"></a>Felosztási módszerek használata a költségvetési tervben
 Ha felosztásokat szeretne végrehajtani a költségvetési terv lapon, válassza ki a felosztani kívánt sorokat, majd kattintson a **Költségvetés felosztása** lehetőségre.
 
-[![Költségvetés felosztása gomb](./media/allocatebudgetbutton-300x84.png)](./media/allocatebudgetbutton.png) 
+[![Költségvetés felosztása gomb.](./media/allocatebudgetbutton-300x84.png)](./media/allocatebudgetbutton.png) 
 
 Ezután válasszon egy felosztási módszert. A többi mezőt a rendszer ezután a kiválasztott módszer alapján állítja be. Ezekben a mezőkben található a költségvetési terv adatainak forrása és célja, valamint egy beállítás, amellyel megadott tényezővel szorozhatja meg a forrást a célösszegek létrehozásakor a tömeges kiigazítás megkönnyítése érdekében. Ezenfelül beállíthatja a **Hozzáfűzés tervhez** lehetőséget. A meglévő költségvetésiterv-sorok felülírásához válassza a **Nem**, azok megtartásához az **Igen** lehetőséget, majd adjon hozzá új sorokat a felosztott összegekhez.
 
@@ -70,7 +70,7 @@ Ezután hozzon létre szakaszfelosztást a **Költségvetés-tervezési konfigur
 
 Végül hozzá kell adni egy automatizált feladatot a költségvetés-tervezési szakaszhoz a kívánt munkafolyamat-szakaszban. A következő példában két költségvetés-tervezési szakaszfelosztás (pirossal jelölve) került a munkafolyamatba.
 
-[![Költségvetés-tervezési szakasz felosztásai](./media/budgetplanningstageallocations-300x300.png)](./media/budgetplanningstageallocations.png)
+[![Költségvetés-tervezési szakasz felosztásai.](./media/budgetplanningstageallocations-300x300.png)](./media/budgetplanningstageallocations.png)
 
 
 

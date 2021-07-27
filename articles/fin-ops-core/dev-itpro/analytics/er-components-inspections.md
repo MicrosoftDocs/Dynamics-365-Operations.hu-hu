@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d164dfe10c9736d8b4529a32ffba765f94ad37d9
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 309e613b707222920936d5af995ac57c4c423b40
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753840"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357666"
 ---
 # <a name="inspect-the-configured-er-component-to-prevent-runtime-issues"></a>A konfigurált ER-összetevő ellenőrzése a futásidejű problémák megelőzése érdekében
 
@@ -242,7 +242,7 @@ A következő lépések a problémák előfordulásának módját mutatják be.
 1. Kezdje el az ER adatmodellt és az ER modell-leképezés összetevőit egyszerre kell konfigurálni.
 2. Az adatmodell-fában adjon hozzá egy **X** nevű mezőt , és válassza az **Egész szám** értéket adattípusként.
 
-    ![X mező és egész szám adattípus az Adatmodell lap adatmód fájához van hozzáadva](./media/er-components-inspections-01.png)
+    ![X mező és egész szám adattípus az Adatmodell lap adatmód fájához van hozzáadva.](./media/er-components-inspections-01.png)
 
 3. A modell-leképezés tervezőben az **Adatforrások** ablaktáblában adjon hozzá egy **Számított mező** típusú adatforrást.
 4. Nevezze el az új **Y** adatforrás-típust , és konfigurálja úgy, hogy a `INTVALUE(100)` kifejezést tartalmazza.
@@ -250,17 +250,17 @@ A következő lépések a problémák előfordulásának módját mutatják be.
 6. Az adatmodell-tervezőben módosítsa az **X** mező adattípusát **Egész szám** értékről **Int64** értékre.
 7. Válassza az **Ellenőrzés** lehetőséget , ha ellenőrizni szeretné a szerkeszthető modell-leképezési összetevőt a **Modell-leképezés tervező** oldalon.
 
-    ![A szerkeszthető modell-leképezési összetevő ellenőrzése a Modell-leképezés tervező oldalon](./media/er-components-inspections-01.gif)
+    ![A szerkeszthető modell-leképezési összetevő ellenőrzése a Modell-leképezés tervező oldalon.](./media/er-components-inspections-01.gif)
 
 8. Válassza az **Ellenőrzés** lehetőséfet, hogy megvizsgálja a kiválasztott ER konfiguráció modell-leképezési összetevőjét a **Konfigurációk** oldalon.
 
-    ![A modell-leképezési összetevő ellenőrzése a Konfigurációk oldalon](./media/er-components-inspections-01a.png)
+    ![A modell-leképezési összetevő ellenőrzése a Konfigurációk oldalon.](./media/er-components-inspections-01a.png)
 
 9. A következő ellenőrzési hiba jelentkezik. Az üzenet azt jelzi, hogy az **Egész szám** típusú érték, amelyet az **Y** adatforrás `INTVALUE(100)` kifejezése visszaad nem tárolható az **X** adatmodell **Int64** típusú mezőjében.
 
 A következő ábra bemutatja azt a futásidejű hibát, amely akkor jelentkezik, ha figyelmen kívül hagyja a figyelmeztetést, és a **Futtatás** parancsot választva futtatja a modell-leképezés használatára beállított formátumot.
 
-![Futásidejű hibák a Formátumtervező oldalon](./media/er-components-inspections-01b.png)
+![Futásidejű hibák a Formátumtervező oldalon.](./media/er-components-inspections-01b.png)
 
 ### <a name="automatic-resolution"></a>Automatikus megoldás
 
@@ -290,7 +290,7 @@ A következő lépések a problémák előfordulásának módját mutatják be.
 6. A Format struktúra fában módosítsa az **Y** formátumúelem adattípusát **Egész szám** értékről **Int64** értékre.
 7. Válassza az **Ellenőrzés** lehetőséget , ha ellenőrizni szeretné a szerkeszthető formátumösszetevőt a **Formátumtervező** oldalon.
 
-    ![A típus kompatibilitásának ellenőrzése a Formátumtervező oldalon](./media/er-components-inspections-02.gif)
+    ![A típus kompatibilitásának ellenőrzése a Formátumtervező oldalon.](./media/er-components-inspections-02.gif)
 
 8. A következő ellenőrzési hiba jelentkezik. Az üzenet azt jelzi, hogy a konfigurált kifejezés csak **Int64** értékeket képes fogadni. Ennek megfelelően az **X** **Egész szám** típusú adatmodell-mező értéke nem adható meg az **Y** formátumelemben.
 
@@ -317,7 +317,7 @@ A következő lépések a problémák előfordulásának módját mutatják be.
 1. Kezdje el az ER adatmodellt és az ER modell-leképezés összetevőit egyszerre kell konfigurálni.
 2. Az adatmodell-fában adjon hozzá egy **X** nevű mezőt , és válassza az **Egész szám** értéket adattípusként.
 
-    ![Adatmodell-fa X mezővel és Egész szám adattípus az Adatmodell oldalon](./media/er-components-inspections-01.png)
+    ![Adatmodell-fa X mezővel és Egész szám adattípus az Adatmodell oldalon.](./media/er-components-inspections-01.png)
 
 3. A modell-leképezés tervezőben az **Adatforrások** ablaktáblában adjon hozzá egy **Számított mező** típusú adatforrást.
 4. Nevezze el az új **Y** adatforrás-típust , és konfigurálja úgy, hogy a `INTVALUE(100)` kifejezést tartalmazza.
@@ -325,7 +325,7 @@ A következő lépések a problémák előfordulásának módját mutatják be.
 6. A modell-leképezés tervezőben **Adatforrások** ablaktáblában törölje az **Y** adatforrást.
 7. Válassza az **Ellenőrzés** lehetőséget , ha ellenőrizni szeretné a szerkeszthető modell-leképezési összetevőt a **Modell-leképezés tervező** oldalon.
 
-    ![A szerkeszthető modell-leképezési összetevő vizsgálata a Modell-leképezés tervező oldalon](./media/er-components-inspections-03.gif)
+    ![A szerkeszthető modell-leképezési összetevő vizsgálata a Modell-leképezés tervező oldalon.](./media/er-components-inspections-03.gif)
 
 8. A következő ellenőrzési hiba jelentkezik. Az üzenet azt jelzi, hogy az **X** adatmodellmező kötése tartalmazza az **Y** adatforrásra hivatkozó útvonalat, de ez az adatforrás nem található.
 
@@ -359,13 +359,13 @@ A következő lépések a problémák előfordulásának módját mutatják be.
 8. Nevezze el az új beágyazott mezőt **$AccNumber** néven adatforrást , és konfigurálja úgy, hogy a `TRIM(Vendor.AccountNum)` kifejezést tartalmazza.
 9. Válassza az **Ellenőrzés** lehetőséget , ha ellenőrizni szeretné a **Modell-leképezés tervező** lapjának szerkeszthető modell-leképezési összetevőjét , és ellenőrizze, hogy a **Szállító** adatforrás `FILTER(Vendor, Vendor.AccountNum="US-101")` kifejezését le lehet-e kérdezni.
 
-    ![A kifejezés ellenőrzése a modell-leképezés tervező lapján kérdezhető le](./media/er-components-inspections-04.gif)
+    ![A kifejezés ellenőrzése a modell-leképezés tervező lapján kérdezhető le.](./media/er-components-inspections-04.gif)
 
 10. Figyelje meg, hogy érvényesítési hiba lép fel, mert a **Szállító** adatforrás a **Számított mező** típusú beágyazott mezőt tartalmaz, amely nem teszi lehetővé a **FilteredVendor** adatforrás kifejezésének a közvetlen SQL utasításra történő lefordítását.
 
 A következő ábra bemutatja azt a futásidejű hibát, amely akkor jelentkezik, ha figyelmen kívül hagyja a figyelmeztetést, és a **Futtatás** parancsot választva futtatja a modell-leképezés használatára beállított formátumot.
 
-![Futásidejű hibák, amelyek a szerkeszthető formátumnak a Formátumtervező lapon történő futtatásakor fordulnak elő](./media/er-components-inspections-04a.png)
+![Futásidejű hibák, amelyek a szerkeszthető formátumnak a Formátumtervező lapon történő futtatásakor fordulnak elő.](./media/er-components-inspections-04a.png)
 
 ### <a name="automatic-resolution"></a>Automatikus megoldás
 
@@ -396,23 +396,23 @@ A következő lépések a problémák előfordulásának módját mutatják be.
     - Válassza ki a **Trans** adatforrást a csoportosítandó rekordok forrásaként.
     - A **Végrehajtási hely** mezőben válassza a **Lekérdezés** lehetőséget, ha meg szeretné adni, hogy az adatforrást adatbázis szintjén kívánja futtatni.
 
-    ![Az adatforrás konfigurálása a „Csoportosítás alapja” szerkesztése paraméterek lapon](./media/er-components-inspections-05a.gif)
+    ![Az adatforrás konfigurálása a „Csoportosítás alapja” szerkesztése paraméterek lapon.](./media/er-components-inspections-05a.gif)
 
 6. Válassza az **Ellenőrzés** lehetőséget , ha ellenőrizni szeretné a **Modell-leképezés tervező** lapjának szerkeszthető modell-leképezési összetevőjét , és ellenőrizze, hogy a konfigurált **GroupedTrans** adatforrás le lehet-e kérdezni.
 7. Módosítsa a **Trans** adatforrást úgy, hogy hozzáad egy **Számított mező** típusú beágyazott mezőt, hogy megkapja a rövidített szállítói számlaszámot.
 8. Nevezze el az új adatforrást **$AccNumber** néven, és konfigurálja úgy, hogy a `TRIM(Trans.AccountNum)` kifejezést tartalmazza.
 
-    ![Az adatforrás konfigurálása a modell-leképezés tervező oldalán](./media/er-components-inspections-05a.png)
+    ![Az adatforrás konfigurálása a modell-leképezés tervező oldalán.](./media/er-components-inspections-05a.png)
 
 9. Válassza az **Ellenőrzés** lehetőséget , ha ellenőrizni szeretné a **Modell-leképezés tervező** lapjának szerkeszthető modell-leképezési összetevőjét , és ellenőrizze, hogy a konfigurált **GroupedTrans** adatforrás le lehet-e kérdezni.
 
-    ![Az ER modell-leképezés összetevő hitelesítése és annak ellenőrzése, hogy a GroupedTrans adatforrás lekérdezhető-e a Modell-leképezés tervező oldalán](./media/er-components-inspections-05b.png)
+    ![Az ER modell-leképezés összetevő hitelesítése és annak ellenőrzése, hogy a GroupedTrans adatforrás lekérdezhető-e a Modell-leképezés tervező oldalán.](./media/er-components-inspections-05b.png)
 
 10. Figyelje meg, hogy érvényesítési hiba lép fel, mert a **Trans** adatforrás a **Számított mező** típusú beágyazott mezőt tartalmaz, amely nem teszi lehetővé a **GroupedTrans** adatforrás meghívásának a közvetlen SQL utasításra történő lefordítását.
 
 A következő ábra bemutatja azt a futásidejű hibát, amely akkor jelentkezik, ha figyelmen kívül hagyja a figyelmeztetést, és a **Futtatás** parancsot választva futtatja a modell-leképezés használatára beállított formátumot.
 
-![Futásidejű hibák, amelyek akkor fordulnak elő, ha a Formátumtervező oldalán a figyelmeztetést figyelmen kívül hagyják](./media/er-components-inspections-05c.png)
+![Futásidejű hibák, amelyek akkor fordulnak elő, ha a Formátumtervező oldalán a figyelmeztetést figyelmen kívül hagyják.](./media/er-components-inspections-05c.png)
 
 ### <a name="automatic-resolution"></a>Automatikus megoldás
 
@@ -448,21 +448,21 @@ A következő lépések a problémák előfordulásának módját mutatják be.
     2. Adja hozzá a **Vendor.FilteredTrans** adatforrást a második egyesítendő rekordként. A típusként válassza a **BELSŐ** lehetőséget.
     3. A **Végrehajtás** mezőben válassza a **Lekérdezés** lehetőséget, ha meg szeretné adni, hogy az adatforrást adatbázis szintjén kívánja futtatni.
 
-    ![Az adatforrás konfigurálása az Egyesítéstervező oldalán](./media/er-components-inspections-06a.gif)
+    ![Az adatforrás konfigurálása az Egyesítéstervező oldalán.](./media/er-components-inspections-06a.gif)
 
 10. Válassza az **Ellenőrzés** lehetőséget , ha ellenőrizni szeretné a **Modell-leképezés tervező** lapjának szerkeszthető modell-leképezési összetevőjét , és ellenőrizze, hogy a konfigurált **JoinedList** adatforrás le lehet-e kérdezni.
 11. Módosítsa a **Vendor.FilteredTrans** adatforrás kifejezését `FILTER(Trans, Trans.AccountNum=Vendor.AccountNum)` helyett `WHERE(Trans, Trans.AccountNum=Vendor.AccountNum)` értékre.
 12. Válassza az **Ellenőrzés** lehetőséget , ha ellenőrizni szeretné a **Modell-leképezés tervező** lapjának szerkeszthető modell-leképezési összetevőjét , és ellenőrizze, hogy a konfigurált **JoinedList** adatforrás le lehet-e kérdezni.
 
-    ![A szerkeszthető modell-leképezési összetevő validálása és annak ellenőrzése, hogy a JoinedList adatforrás lekérdezhető-e a Modell-leképezés tervező oldaláról](./media/er-components-inspections-06b.png)
+    ![A szerkeszthető modell-leképezési összetevő validálása és annak ellenőrzése, hogy a JoinedList adatforrás lekérdezhető-e a Modell-leképezés tervező oldaláról.](./media/er-components-inspections-06b.png)
 
 13. Figyelje meg, hogy érvényesítési hiba lép fel, mert a **Vendor.FilteredTrans** adatforrás kifejezése nem fordítható le a közvetlen SQL-hívásra. Emellett a közvetlen SQL-hívás nem teszi lehetővé a **JoinedList** adatforrás közvetlen SQL utasításra való fordítását.
 
-    ![Futásidejű hibák a JoinedList adatforrás sikertelen érvényesítése okán a Modell-leképezés tervező oldalon](./media/er-components-inspections-06c.png)
+    ![Futásidejű hibák a JoinedList adatforrás sikertelen érvényesítése okán a Modell-leképezés tervező oldalon.](./media/er-components-inspections-06c.png)
 
 A következő ábra bemutatja azt a futásidejű hibát, amely akkor jelentkezik, ha figyelmen kívül hagyja a figyelmeztetést, és a **Futtatás** parancsot választva futtatja a modell-leképezés használatára beállított formátumot.
 
-![A szerkeszthető formátum futtatása a Formátumtervező lapon](./media/er-components-inspections-06e.png)
+![A szerkeszthető formátum futtatása a Formátumtervező lapon.](./media/er-components-inspections-06e.png)
 
 ### <a name="automatic-resolution"></a>Automatikus megoldás
 
@@ -474,7 +474,7 @@ A hiba automatikus javítása nem lehetséges.
 
 Módosítsa vissza a **Vendor.FilteredTrans** adatforrás kifejezését `WHERE(Trans, Trans.AccountNum=Vendor.AccountNum)` helyett `FILTER(Trans, Trans.AccountNum=Vendor.AccountNum)` értékre, ahogy azt a figyelmeztetés tanácsolta.
 
-![Az adatforrás frissített kifejezése a modell-leképezés tervező oldalán](./media/er-components-inspections-06d.png)
+![Az adatforrás frissített kifejezése a modell-leképezés tervező oldalán.](./media/er-components-inspections-06d.png)
 
 #### <a name="option-2"></a>2. beállítás
 
@@ -497,11 +497,11 @@ A következő lépések a problémák előfordulásának módját mutatják be.
 9. Nevezze el az új **FilteredVendor** adatforrást , és konfigurálja úgy, hogy a `WHERE(Vendor, Vendor.AccountNum="US-101")` kifejezést tartalmazza.
 10. Válassza az **Ellenőrzés** lehetőséget , ha ellenőrizni szeretné a szerkeszthető modell-leképezési összetevőt a **Modell-leképezés tervező** oldalon.
 
-    ![A szerkeszthető modell-leképezési összetevőt a Modell-leképezés tervező oldalon vizsgálja meg](./media/er-components-inspections-07a.png)
+    ![A szerkeszthető modell-leképezési összetevőt a Modell-leképezés tervező oldalon vizsgálja meg.](./media/er-components-inspections-07a.png)
 
 11. Figyelje meg, hogy az érvényesítési figyelmeztetések azt javasolják, hogy a **SZŰRŐ** függvényt használja a **HOL** függvény helyett a **FilteredVendor** és a **FilteredTrans** adatforrásokhoz.
 
-    ![Javaslat a FILTER függvény használatára a WHERE függvény helyett a Modell-leképezés tervező oldalán](./media/er-components-inspections-07b.png)
+    ![Javaslat a FILTER függvény használatára a WHERE függvény helyett a Modell-leképezés tervező oldalán.](./media/er-components-inspections-07b.png)
 
 ### <a name="automatic-resolution"></a>Automatikus megoldás
 
@@ -509,7 +509,7 @@ Válassza a **Javítás** lehetőséget, ha automatikusan le szeretné cserélni
 
 Másik lehetőségként kijelölheti a sort egyetlen figyelmeztetéshez a rácsban, majd válassza a **Kijelölt javítása** lehetőséget. Ebben az esetben a kifejezés csak a kijelölt figyelmeztetésben említett adatforrásban módosul automatikusan.
 
-![A Javítás lehetőség kiválasztása, hogy a WHERE függvényt automatikusan a FILTER függvényre cserélje a Modell-leképezés tervező oldalán](./media/er-components-inspections-07c.png)
+![A Javítás lehetőség kiválasztása, hogy a WHERE függvényt automatikusan a FILTER függvényre cserélje a Modell-leképezés tervező oldalán.](./media/er-components-inspections-07c.png)
 
 ### <a name="manual-resolution"></a>Manuális megoldás
 
@@ -530,11 +530,11 @@ A következő lépések a problémák előfordulásának módját mutatják be.
 7. Nevezze el az új adatforrást **FilteredVendorTrans** néven , és konfigurálja úgy, hogy a `ALLITEMS(FilteredVendor.'<Relations'.'VendTrans.VendTable_AccountNum')` kifejezést tartalmazza.
 8. Válassza az **Ellenőrzés** lehetőséget , ha ellenőrizni szeretné a szerkeszthető modell-leképezési összetevőt a **Modell-leképezés tervező** oldalon.
 
-    ![A szerkeszthető modell-leképezési összetevő vizsgálata a Modell-leképezés tervező oldalon](./media/er-components-inspections-08a.png)
+    ![A szerkeszthető modell-leképezési összetevő vizsgálata a Modell-leképezés tervező oldalon.](./media/er-components-inspections-08a.png)
 
 9. A következő ellenőrzési figyelmeztetés jelentkezik. Az üzenet azt javasolja, hogy a **FilteredVendorTrans** adatforráshoz az **ALLITEMS** függvény helyett az **ALLITEMSQUERY** függvényt használja.
 
-    ![Javaslat az ALLITEMSQUERY függvény használatára az ALLITEMS függvény helyett a Modell-leképezés tervező oldalán](./media/er-components-inspections-08b.png)
+    ![Javaslat az ALLITEMSQUERY függvény használatára az ALLITEMS függvény helyett a Modell-leképezés tervező oldalán.](./media/er-components-inspections-08b.png)
 
 ### <a name="automatic-resolution"></a>Automatikus megoldás
 
@@ -542,7 +542,7 @@ Válassza a **Javítás** lehetőséget, ha automatikusan le szeretné cserélni
 
 Másik lehetőségként kijelölheti a sort egyetlen figyelmeztetéshez a rácsban, majd válassza a **Kijelölt javítása** lehetőséget. Ebben az esetben a kifejezés csak a kijelölt figyelmeztetésben említett adatforrásban módosul automatikusan.
 
-![A Kijelöltek javítása lehetőség kiválasztása a Modell-leképezés tervező oldalon](./media/er-components-inspections-08c.png)
+![A Kijelöltek javítása lehetőség kiválasztása a Modell-leképezés tervező oldalon.](./media/er-components-inspections-08c.png)
 
 ### <a name="manual-resolution"></a>Manuális megoldás
 
@@ -563,7 +563,7 @@ A következő lépések a problémák előfordulásának módját mutatják be.
     - Adjon hozzá egy **Karakterlánc** típusú beágyazott mezőt, és nevezze el **Név** néven.
     - Adjon hozzá egy **Karakterlánc** típusú beágyazott mezőt, és nevezze el **AccountNumber** néven.
 
-    ![Beágyazott mezők hozzáadása az Adatmodell lapon](./media/er-components-inspections-09a.png)
+    ![Beágyazott mezők hozzáadása az Adatmodell lapon.](./media/er-components-inspections-09a.png)
 
 6. A modell-leképezés tervezőben az **Adatforrások** ablaktáblában adjon hozzá egy **Dynamics 365 for Operations \\ Táblarekordok** típusú adatforrást.
 7. Adja a következő nevet az új adatforrásnak: **Szállító**. A **Tábla** mezőben válassza ki a **VendTable** elemet és adja meg, hogy ez az adatforrás igényelni fogja a VendTable táblát.
@@ -577,7 +577,7 @@ A következő lépések a problémák előfordulásának módját mutatják be.
     - A **FilteredVendor.AccountNum** kötése a **Vendor.AccountNumber** elemhez.
     - A **FilteredVendor.'name()'** kötése a **Vendor.Name** elemhez.
 
-    ![Az adatmodell-elemek kötése a modell-leképezés tervező oldalán](./media/er-components-inspections-09b.png)
+    ![Az adatmodell-elemek kötése a modell-leképezés tervező oldalán.](./media/er-components-inspections-09b.png)
 
 13. A formátumszerkezet-fában adja hozzá a következő elemeket, hogy a szállító adatait tartalmazó XML-formátumú kimenő dokumentumot hozzon létre:
 
@@ -595,15 +595,15 @@ A következő lépések a problémák előfordulásának módját mutatják be.
 
 15. Válassza az **Ellenőrzés** lehetőséget , ha ellenőrizni szeretné a szerkeszthető formátumösszetevőt a **Formátumtervező** oldalon.
 
-    ![Adatforrásokhoz kapcsolt formátumelemek validálása a Formátumtervező oldalon](./media/er-components-inspections-09c.png)
+    ![Adatforrásokhoz kapcsolt formátumelemek validálása a Formátumtervező oldalon.](./media/er-components-inspections-09c.png)
 
 16. A következő ellenőrzési hiba jelentkezik. Az üzenet tájékoztatja, hogy hiba jelentkezhet a konfigurált **Utasítás\\Fél\\Név** és **Utasítás\\Fél\\AccountNum** formátum-összetevőkhöz futásidőben, ha a `model.Vendor` lista üres.
 
-    ![Ellenőrzési hiba a konfigurált formátumösszetevők lehetséges hibájáról](./media/er-components-inspections-09d.png)
+    ![Ellenőrzési hiba a konfigurált formátumösszetevők lehetséges hibájáról.](./media/er-components-inspections-09d.png)
 
 A következő ábra bemutatja azt a futásidejű hibát, amely akkor jelentkezik, ha figyelmen kívül hagyja a figyelmeztetést, és a **Futtatás** paranccsal futtatja a formátumot és egy nem létező szállító számlaszámát választaja ki. Mivel a kért szállító nem létezik, a `model.Vendor` lista üres lesz (azaz nem tartalmaz rekordokat).
 
-![Futásidejű hibák, amelyek a formátumleképezés futtatásakor lépnek fel](./media/er-components-inspections-09e.png)
+![Futásidejű hibák, amelyek a formátumleképezés futtatásakor lépnek fel.](./media/er-components-inspections-09e.png)
 
 ### <a name="automatic-resolution"></a>Automatikus megoldás
 
@@ -615,7 +615,7 @@ A **Figyelmeztetések** lap rácsának kijelölt sorához válassza a **Kapcsol�
 
 Kapcsolhatja az **Utasítás\\Fél\\Név** formátumelemet a `model.Vendor` adatforrás elemhez. Futásidőben ez a kötés először meghívja a `model.Vendor` adatforrást. Amikor a `model.Vendor` üres rekordlistát ad vissza, a beágyazott formátumelemek nem futnak. Ezért nem jelennek meg érvényesítési figyelmeztetések ehhez a formátumkonfigurációhoz.
 
-![A formátumelem kötése az adatforrás-elemhez a Formátumtervező oldalon](./media/er-components-inspections-09e.gif)
+![A formátumelem kötése az adatforrás-elemhez a Formátumtervező oldalon.](./media/er-components-inspections-09e.gif)
 
 #### <a name="option-2"></a>2. beállítás
 
@@ -626,7 +626,7 @@ Módosítsa az **Utasítás\\Fél\\Név** formátumelemet `model.Vendor.Name` he
 
 Ezért nem fordulnak elő érvényesítési figyelmeztetések a **Utasítás\\Fél\\Név** formátumelemhez, ha az a `FIRSTORNULL(model.Vendor).Name` kifejezéshez van kötve.
 
-![A módosított kötés feloldja az érvényesítési figyelmeztetéseket a Formátumtervező lapon](./media/er-components-inspections-09f.gif)
+![A módosított kötés feloldja az érvényesítési figyelmeztetéseket a Formátumtervező lapon.](./media/er-components-inspections-09f.gif)
 
 #### <a name="option-3"></a>3. beállítás
 
@@ -653,17 +653,17 @@ A következő lépések a problémák előfordulásának módját mutatják be.
 7. Nevezze el az új **FilteredVendor** adatforrást , és konfigurálja úgy, hogy a `FILTER(Vendor, Vendor.AccountNum=RequestedAccountNum)` kifejezést tartalmazza.
 8. A konfigurált **Szállító** adatforrás megjelölése gyorsítótárazottként.
 
-    ![A modell-leképezési összetevő konfigurálása a Modell-leképezés tervező oldalon](./media/er-components-inspections-10a.gif)
+    ![A modell-leképezési összetevő konfigurálása a Modell-leképezés tervező oldalon.](./media/er-components-inspections-10a.gif)
 
 9. Válassza az **Ellenőrzés** lehetőséget , ha ellenőrizni szeretné a szerkeszthető modell-leképezési összetevőt a **Modell-leképezés tervező** oldalon.
 
-    ![A gyorsítótárazott Szállítói adatforrásra alkalmazott FILTER függvény validálása a Modell-leképezés tervező oldalon](./media/er-components-inspections-10a.png)
+    ![A gyorsítótárazott Szállítói adatforrásra alkalmazott FILTER függvény validálása a Modell-leképezés tervező oldalon.](./media/er-components-inspections-10a.png)
 
 10. A következő ellenőrzési hiba jelentkezik. Az üzenet kimondja, hogy a **SZŰRŐ** függvény nem alkalmazható a gyorsítótárazott **Szállító** adatforrásra.
 
 A következő ábra bemutatja azt a futásidejű hibát, amely akkor jelentkezik, ha figyelmen kívül hagyja a figyelmeztetést, és a **Futtatás** parancsot választva futtatja a formátumot.
 
-![Futásidejű hiba, amely formátumleképezésnek Formátumtervező lapon történő futtatásakor fordul elő](./media/er-components-inspections-10b.png)
+![Futásidejű hiba, amely formátumleképezésnek Formátumtervező lapon történő futtatásakor fordul elő.](./media/er-components-inspections-10b.png)
 
 ### <a name="automatic-resolution&quot;></a>Automatikus megoldás
 
@@ -694,7 +694,7 @@ A következő lépések a problémák előfordulásának módját mutatják be.
     - Adjon hozzá egy **Karakterlánc** típusú beágyazott mezőt, és nevezze el **Név** néven.
     - Adjon hozzá egy **Karakterlánc** típusú beágyazott mezőt, és nevezze el **AccountNumber** néven.
 
-    ![Beágyazott mezők hozzáadása a Szállítói elemhez az Adatmodell lapon](./media/er-components-inspections-11a.png)
+    ![Beágyazott mezők hozzáadása a Szállítói elemhez az Adatmodell lapon.](./media/er-components-inspections-11a.png)
 
 6. A modell-leképezés tervezőben az **Adatforrások** ablaktáblában adjon hozzá egy **Dynamics 365 for Operations \\ Táblarekordok** típusú adatforrást.
 7. Adja a következő nevet az új adatforrásnak: **Szállító**. A **Tábla** mezőben válassza ki a **VendTable** elemet és adja meg, hogy ez az adatforrás igényelni fogja a VendTable táblát.
@@ -710,7 +710,7 @@ A következő lépések a problémák előfordulásának módját mutatják be.
     > [!NOTE]
     > A **Vendor.Name** adatmodell mezője nem kötött marad.
 
-    ![A konfigurált adatforrásokhoz kötött adatmodell-elemek és a Modell-leképezés tervezője oldalon nem kötöttként megmaradó adatmodell-elem](./media/er-components-inspections-11b.png)
+    ![A konfigurált adatforrásokhoz kötött adatmodell-elemek és a Modell-leképezés tervezője oldalon nem kötöttként megmaradó adatmodell-elem.](./media/er-components-inspections-11b.png)
 
 13. A formátumszerkezet-fában adja hozzá a következő elemeket, hogy a lekérdezett szállítók adatait tartalmazó XML-formátumú kimenő dokumentumot hozzon létre:
 
@@ -729,15 +729,15 @@ A következő lépések a problémák előfordulásának módját mutatják be.
 
 15. Válassza az **Ellenőrzés** lehetőséget , ha ellenőrizni szeretné a szerkeszthető formátumösszetevőt a **Formátumtervező** oldalon.
 
-    ![Az ER formátumösszetevő validálása a Formátumtervező oldalon](./media/er-components-inspections-11c.png)
+    ![Az ER formátumösszetevő validálása a Formátumtervező oldalon.](./media/er-components-inspections-11c.png)
 
 16. A következő ellenőrzési figyelmeztetés jelentkezik. Az üzenet tájékoztatja, hogy a **model.Vendor.Name** adatforrás mező nincs kötve a modell-leképezés egyetlen olyan adatforrásához sem, amelyet a formátum a konfiguráció szerint használ. Ezért előfordulhat, hogy az **Utasítás\\Fél\\Név** formátum elem nincs kitöltve futásidőben, és futásidejű kivétel fordulhat elő.
 
-    ![Az ER formátumösszetevő ellenőrzése a Formátumtervező lapon](./media/er-components-inspections-11d.png)
+    ![Az ER formátumösszetevő ellenőrzése a Formátumtervező lapon.](./media/er-components-inspections-11d.png)
 
 A következő ábra bemutatja azt a futásidejű hibát, amely akkor jelentkezik, ha figyelmen kívül hagyja a figyelmeztetést, és a **Futtatás** parancsot választva futtatja a formátumot.
 
-![A szerkeszthető formátum futtatása a Formátumtervező lapon](./media/er-components-inspections-11e.png)
+![A szerkeszthető formátum futtatása a Formátumtervező lapon.](./media/er-components-inspections-11e.png)
 
 ### <a name="automatic-resolution"></a>Automatikus megoldás
 
@@ -766,7 +766,7 @@ A következő lépések a problémák előfordulásának módját mutatják be.
 5. Az **Excel\\Fájl** elemben jelölje ki az A munkafüzetfájlt.
 6. Válassza az **Ellenőrzés** lehetőséget , ha ellenőrizni szeretné a szerkeszthető formátumösszetevőt a **Formátumtervező** oldalon.
 
-    ![A munkafüzetfájl szerkeszthető formátumösszetevőjének érvényesítése a Formátumtervező lapon](./media/er-components-inspections-12a.gif)
+    ![A munkafüzetfájl szerkeszthető formátumösszetevőjének érvényesítése a Formátumtervező lapon.](./media/er-components-inspections-12a.gif)
 
 7. A következő ellenőrzési figyelmeztetés jelentkezik. Az üzenet tájékoztatja, hogy a B.xlsx munkafüzetfájl nem kapcsolódik egyetlen összetevőhöz sem, és a konfigurációs verzió állapotának módosítása után törlődik.
 
@@ -794,11 +794,11 @@ A következő lépések a problémák előfordulásának módját mutatják be.
 4. Adja hozzá a **Cím** **Excel\\Cella** elemet a **Jelentés** elem beágyazott elemeként. Az **Excel-tartomány** mezőbe írja be: **ReportTitle**.
 5. Válassza az **Ellenőrzés** lehetőséget , ha ellenőrizni szeretné a szerkeszthető formátumösszetevőt a **Formátumtervező** oldalon.
 
-    ![A beágyazott elemek és mezők validálása a Formátumtervező oldalon](./media/er-components-inspections-13a.png)
+    ![A beágyazott elemek és mezők validálása a Formátumtervező oldalon.](./media/er-components-inspections-13a.png)
 
 6. A következő ellenőrzési figyelmeztetés jelentkezik. Az üzenet tájékoztatja, hogy a **ReportTitle** nem létezik a használt Excel-sablon **Munka1** lapján.
 
-    ![Érvényesítési figyelmeztetés, hogy a ReportTitle név nem létezik az Excel-sablon Munka1 lapján](./media/er-components-inspections-13b.png)
+    ![Érvényesítési figyelmeztetés, hogy a ReportTitle név nem létezik az Excel-sablon Munka1 lapján.](./media/er-components-inspections-13b.png)
 
 ### <a name="automatic-resolution"></a>Automatikus megoldás
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-10-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4b8c1467368cbcbed5049561b52b29388ec21a5f
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 6e500125e1d96f6b595910e1168e2e1baeef0cd3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6055100"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360592"
 ---
 # <a name="integrate-with-linkedin-talent-hub"></a>Integráció a LinkedIn Talent Hub szolgáltatással
 
@@ -48,7 +48,7 @@ A rendszergazdának be kell fejeznie a beállítási feladatokat, hogy engedély
 
 5. A **Dynamics 365 Human Resources** lapon válassza ki a LinkedIn Talent Hub elemhez kapcsolandó környezetet, majd válassza a **Csatolás** lehetőséget.
 
-    ![LinkedIn Talent Hub előkészítés](./media/hr-admin-integration-talent-hub-onboarding.jpg)
+    ![LinkedIn Talent Hub előkészítés.](./media/hr-admin-integration-talent-hub-onboarding.jpg)
 
     > [!NOTE]
     > Csak olyan környezetekhez kapcsolódhat, amelyeknél a felhasználói fiók rendszergazdája hozzáférhet mind a Human Resources környezethez, mind a társított Power Apps-környezethez. Ha a Human Resources hivatkozáslapján nem szerepelnek környezetek, győződjön meg arról, hogy a bérlőn engedélyezve legyen a Human Resources környezet, valamint azt, hogy a hivatkozás lapra bejelentkezett felhasználó rendelkezzen rendszergazdai jogosultsággal mind a Human Resources környezethez, mind a Power Apps-környezethez.
@@ -91,7 +91,7 @@ Létre kell hozni egy alkalmazásfelhasználót a LinkedIn Talent Hub adapterhez
 
 6. A lista fölötti legördülő menü segítségével módosítsa az alapértelmezett **Engedélyezett felhasználók** nézetet erre: **Alkalmazásfelhasználók**.
 
-    ![Alkalmazásfelhasználók nézet](./media/hr-admin-integration-power-apps-application-users.jpg)
+    ![Alkalmazásfelhasználók nézet.](./media/hr-admin-integration-power-apps-application-users.jpg)
 
 7. Válassza ki az eszköztár **Új** gombját.
 
@@ -163,7 +163,7 @@ Miután a pályázó végigment a toborzási folyamaton, és már felvették, ex
     - A **Telephely** mezőbe írja be azt a telephelyet, ahol az alkalmazott alapvetően dolgozni fog.
     - Adja meg vagy ellenőrizze az alkalmazott e-mail-címét.
 
-![Exportálás a HRIS-be ablaktábla a LinkedIn Talent hub alkalmazásban](./media/hr-admin-integration-linkedin-talent-hub-export.jpg)
+![Exportálás a HRIS-be panel a LinkedIn Talent hub alkalmazásban.](./media/hr-admin-integration-linkedin-talent-hub-export.jpg)
 
 ## <a name="complete-onboarding-in-human-resources"></a>Előkészítés befejezése a Human Resources alkalmazásban
 

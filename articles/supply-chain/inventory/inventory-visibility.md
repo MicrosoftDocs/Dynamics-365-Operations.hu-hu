@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 84f5e949f0c81f840c8a9086d05bbcfc576e42aa
-ms.sourcegitcommit: b67665ed689c55df1a67d1a7840947c3977d600c
+ms.openlocfilehash: 8709b91b354fa4e1319b406c009bfdadeef48a41
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6017006"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358098"
 ---
 # <a name="inventory-visibility-add-in"></a>Készlet láthatósága bővítmény
 
@@ -143,7 +143,7 @@ Miután rendelkezik az előfeltételekkel, használja a következő eljárást, 
 
             Erről a változóról a témakör későbbi, [A készlet láthatóságának beállítása](#setup-inventory-visibility-integration) című szakasza nyújt további tájékoztatást.
 
-        ![Konfiguráció eseményindítója](media/configuration-trigger.png "Konfiguráció eseményindítója")
+        ![Konfiguráció eseményindítója.](media/configuration-trigger.png "Konfiguráció eseményindítója")
 
     1. Válassza a **Bekapcsolás** lehetőséget.
 
@@ -157,7 +157,7 @@ A Készlet láthatósága bővítmény telepítéséhez a következőket kell te
 1. A környezeti oldalon görgessen lefelé, amíg meg nem látja a **Környezeti bővítmények** szakaszt a **Power Platform-integráció** szakaszban, ahol a Dataverse-környezet neve található.
 1. A **Környezeti bővítmények** szakaszban válassza az **Új bővítmény telepítése** lehetőséget.
 
-    ![A környezeti oldal az LCS-ben](media/inventory-visibility-environment.png "A környezeti oldal az LCS-ben")
+    ![A környezeti oldal az LCS-ben.](media/inventory-visibility-environment.png "A környezeti oldal az LCS-ben")
 
 1. Válassza az **Új bővítmény telepítése** hivatkozást. Megnyílik az elérhető bővítmények listája.
 1. A listában válassza a **Készletláthatóság** elemet.
@@ -166,7 +166,7 @@ A Készlet láthatósága bővítmény telepítéséhez a következőket kell te
     - **AAD-alkalmazás (ügyfél) azonosítója**
     - **AAD bérlő azonosítója**
 
-    ![Hozzáadás a beállítási lapon](media/inventory-visibility-setup.png "Hozzáadás a beállítási lapon")
+    ![Hozzáadás a beállítási lapon.](media/inventory-visibility-setup.png "Hozzáadás a beállítási lapon")
 
 1. Fogadja el a feltételeket az **Általános Szerződési feltételek** jelölőnégyzet bejelölésével.
 1. Válassza a **Telepítés** parancsot. A bővítmény állapota **Telepítés** értékkel jelenik meg. Ha befejeződött, frissítse a lapot, hogy lássa, ahogy a **Telepített** állapotra változik.

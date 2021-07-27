@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c95704b944f86a1cfc0654f0ebf5bc7c79bbeec9
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 4b54b58a29dc23e19f5065363c331351f24267ac
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5808688"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360946"
 ---
 # <a name="maintenance-request-lifecycle-states"></a>Karbantartási kérések életciklus-állapotai
 
@@ -48,7 +48,7 @@ A karbantartási kérés életciklus-állapotai meghatározzák, hogy a kérés 
 
 A következő ábra a **Karbantartási kérések életciklus-állapotai** oldalt szemlélteti.
 
-![Karbantartási kérések életciklus-állapotai oldal](media/02-setup-for-requests.png)
+![Karbantartási kérések életciklus-állapotai oldal.](media/02-setup-for-requests.png)
 
 > [!NOTE]
 > A karbantartási kérések életciklus-állapotait, az életciklus-állapot csoportjait és típusait ugyanúgy használják, mint a munkarendelés életciklus-állapotait, csoportjait és típusai. 
@@ -66,9 +66,9 @@ Miután létrehozta a karbantartási kérésekhez szükséges életciklus-állap
 
 5. Az **Életciklus-állapotok** gyorslapon válassza ki azokat az életciklus-állapotokat, amelyeket fel kell venni az életciklus-modellbe:
 
-    - Az életciklus-modellben feltüntetendő életciklus-állapotot válassza ki a **Hátralevő életciklus-állapotok** szakaszban, majd a jobbra nyíl ![Jobbra nyíl](media/03-setup-for-requests.png) gombbal helyezze át a **Kijelölt életciklus-állapotok** szakaszba.
+    - Ha életciklus-állapotot szeretne használni az életciklus-modellhez, válassza ki azt a **Hátralévő életciklus-állapotok** szakaszban, majd válassza a jobb nyílgombot ![Jobb nyíl.](media/03-setup-for-requests.png) elemet az áthelyezéshez az **Életciklus-állapotok kiválasztva** szakaszba.
     - Ahhoz, hogy az összes elérhető életciklus-állapotot feltüntesse az életciklus-modellben, nyomja meg az **Összes elérhető állapot** ![Összes elérhető állapot](media/04-setup-for-requests.png) gombot. Az összes életciklus-állapot a **Kijelölt életciklus-állapotok** szakaszba kerül.
-    - Ha el kíván távolítani egy életciklus-állapotot az életciklus-modellből, válassza ki az adott állapotot a **Kijelölt életciklus-állapotok** szakaszban, majd a Balra nyíl ![Balra nyíl](media/05-setup-for-requests.png) gombbal helyezze át a **Hátralévő életciklus-állapotok** szakaszba.
+    - Ha életciklus-állapotot szeretne eltávolítani az életciklus-modellből, válassza ki azt a **Kiválasztott életciklus-állapotok** szakaszban, majd válassza a bal nyílgombot ![Bal nyíl.](media/05-setup-for-requests.png) elemet az áthelyezéshez a **Fennmaradó életciklus-állapotok** szakaszba.
 
 6. Az **Általános** gyorslapon a **Frissítések** szakasz mezői a relevánsak, ha raktárjavítást használ.
 
@@ -77,7 +77,7 @@ Miután létrehozta a karbantartási kérésekhez szükséges életciklus-állap
 
 A következő ábra a **Karbantartási kérések életciklusmodellek** oldalt szemlélteti.
 
-![Karbantartási kérés életciklusmodelljei oldal](media/06-setup-for-requests.png)
+![Karbantartási kérés életciklusmodelljei oldal.](media/06-setup-for-requests.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

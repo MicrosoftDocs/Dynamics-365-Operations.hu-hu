@@ -14,12 +14,12 @@ ms.search.region: Hungary
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: c7a86dc0e8a760c98337d342245536b05100ec06
-ms.sourcegitcommit: 53b797ff1b524f581046b48cdde42f50b37495bc
+ms.openlocfilehash: 5f93d01b53345b0e7eb3fed79dc041dd6cda93fd
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6117121"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348468"
 ---
 # <a name="online-invoicing-system"></a>Online számlázási rendszer
 
@@ -211,13 +211,13 @@ Az EM funkciónak a RTIR-hez történő beállításának folyamata számos lép
 10. Válassza a **Feltöltés és hozzáadás** lehetőséget , válassza ki a **HU RTIR setup.zip** fájlt a számítógépen, és töltse fel azt.
 11. Az adatentitások feltöltése után a műveleti ablaktáblán válassza az **Importálás** elemet.
 
-![Adatkezelési munkaterület](media/1_Setup_EM.png)
+![Adatkezelési munkaterület.](media/1_Setup_EM.png)
 
 Értesítést fog kapni az **Üzenetekben**, vagy a lap manuális frissítésével megtekintheti az adatimportálási folyamatokat. Az importálási folyamat befejezésekor a **Végrehajtási összesítő** lap az eredményeket jeleníti meg.
 
 A HU RTIR setup.zip csomag a Magyar online számlázási rendszerrel való együttműködésre képes **Online számlázás** feldolgozás beállítását teszi lehetővé. A következő ábra az **Online számlázás** feldolgozásának sémáját mutatja be.
 
-![Online számlázás feldolgozásának diagramja](media/2_Scema.png)
+![Online számlázás feldolgozásának diagramja.](media/2_Scema.png)
 
 A következő táblázat leírja az **Online számlázás** feldolgozásának feldolgozási műveleteit.
 
@@ -250,12 +250,12 @@ Az adatentitások adatbázisba importálását követően hajtsa végre az aláb
 2. A Műveleti panelen válassza a **Paraméterek** elemet.
 3. A párbeszédpanelen a **Szerepeltetni kívánt rekordok** gyorslapon határozza meg a lekérdezés paramétereinek értékeit.
 
-    ![Új elektronikus üzenetelemek hozzáadása párbeszédpanel](media/3_emea-hun-exec-class.png)
+    ![Új elektronikus üzenetelemek hozzáadása párbeszédpanel.](media/3_emea-hun-exec-class.png)
 
 4. Válassza ki az **OK** lehetőséget.
 5. A **Végrehajtható osztály beállításai** lapon válassza ki az **EMAdditionalFieldsEvaluationController_HU** végrehajtható osztály nevéhez **További mezők értékelése** lehetőséget válassza ki a **Paraméterek** elkemet a Műveleti ablaktáblán, majd a párbeszádpanelen határozza meg a végrehajtható osztály paramétereinek értékeit.
 
-    ![További mezők értékelési paramétereinek párbeszédpanel](media/4_Additional_fields.png)
+    ![További mezők értékelési paramétereinek párbeszédpanel.](media/4_Additional_fields.png)
 
     A paramétereknél a következő értékeket kell beállítani.
 
@@ -279,7 +279,7 @@ Az adatentitások adatbázisba importálását követően hajtsa végre az aláb
 7. Nyissa meg a **Rendszerfelügyelet** \> **Beállítások** \> **Rendszerparaméterek** lehetőséget , és állítsa be a **Speciális tanúsítványtároló használata** lehetőséget **Nem** értékre, ha szeretné helyben tárolni a kényes adatokat. A Key Vault-tárhely használatához válassza az **Igen** beállítást. A Key Vault beállításával kapcsolatos további tudnivalókat lásd: [Azure Key Vault-ügyfél beállítása](https://support.microsoft.com/help/4040305/setting-up-azure-key-vault-client) és [Azure Key Vault-tárhely karbantartása](https://support.microsoft.com/help/4040294/maintaining-azure-key-vault-storage).
 8. Ha a **Rendszerparaméterek** lap **Speciális tanúsítványtároló használata** beállítását **Igen** értékre állítja , akkor be kell állítania a Key Vault paramétereit a **Rendszerfelügyelet** \> **Beállítások** \> **Key Vault paraméterei** helyen.
 
-    ![Key Vault paraméterek oldala](media/5_Key_Vault.png)
+    ![Key Vault paraméterek oldala.](media/5_Key_Vault.png)
 
 9. Nyissa meg az **Adó** \> **Beállítások** \> **Paraméterek** \> **Online számlázási rendszer paraméterei** menüpontot, és adja meg a következő adatokat:
 
@@ -290,11 +290,11 @@ Az adatentitások adatbázisba importálását követően hajtsa végre az aláb
 
 10. Ha a **Rendszerparaméterek** lap **Speciális tanúsítványtároló használata** beállítását **Igen** értékre állítja , válassza a kapcsolódó titkokat az **Online számlázási rendszer paraméterei** lap **Általános** lapján.
 
-    ![Az online számlázási rendszer azon paraméterei, amelyeknél a Speciális tanúsítványtároló használata beállítás értéke Igen](media/6_Key_Vault.png)
+    ![Az online számlázási rendszer azon paraméterei, amelyeknél a Speciális tanúsítványtároló használata beállítás értéke Igen.](media/6_Key_Vault.png)
 
     Azt is megteheti, hogy ha a **Speciális tanúsítványtároló használata** beállítást **Nem** értékre állítja, és manuálisan adja meg a magyar online számlázási rendszerrel való együttműködéshez kapott technikai felhasználónevet és jelszót, illetve az aláírási kulcsot és a helyettesítő kulcsot. A további tudnivalókat lásd [Regisztrációs eljárással kapcsolatos információk](https://onlineszamla-test.nav.gov.hu/tajekoztatas_a_regisztraciorol).
 
-    ![Az online számlázási rendszer azon paraméterei, amelyeknél a Speciális tanúsítványtároló használata beállítás értéke Nem](media/7_system_parameters.png)
+    ![Az online számlázási rendszer azon paraméterei, amelyeknél a Speciális tanúsítványtároló használata beállítás értéke Nem.](media/7_system_parameters.png)
 
 11. Nyissa meg az **Adó** \> **Beállítások** \> **Paraméterek** \> **Elektronikus üzenetek** \> **Webszolgáltatás beállításai** lehetőséget, és adja meg a következő adatokat a webszolgáltatások internetcímének meghatározásához.
 
@@ -310,7 +310,7 @@ Az adatentitások adatbázisba importálását követően hajtsa végre az aláb
 13. Az **Üzenetek száma exportálásonként** mezőben határozza meg, hogy hány üzenetelemet lehet szerepeltetni egy üzenetben. Ez a szám nem lehet nagyobb, mint 100.
 14. A **Mellékelt elemek tömörítési típusa** mezőben adja meg a **Nincs** beállítást , és a **Fájlok csatolása a kimeneti archívumból az elemekhez** lehetőséget **Igen** értékre.
 
-    ![Üzenetfeldolgozási műveletek lap, "EM" létrehozása lap](media/8_actions.png)
+    ![Üzenetfeldolgozási műveletek oldal, EM létrehozása lap.](media/8_actions.png)
 
 15. Állítson be biztonsági szerepköröket a számlázás online feldolgozásához. Előfordulhat, hogy felhasználók különböző csoportjainak kell hozzáférést adni a számlázás online feldolgozásához. A feldolgozáshoz való hozzáférést korlátozhatja a rendszerben megadott biztonsági csoportok alapján. Nyissa meg az **Adó** \> **Beállítás** \> **Elektronikus üzenetek** \> **Elektronikus üzenetek feldolgozása** menüpontot, válassza ki az **Online számlázás** lehetőséget, és adja hozzá azokat a biztonsági csoportokat, amelyeknek működniük kell a feldolgozás esetében. Ha nincs definiálva biztonsági csoport a feldolgozáshoz, akkor csak a rendszergazda láthatja a feldolgozást az **Elektronikus üzenetek** oldalon.
 

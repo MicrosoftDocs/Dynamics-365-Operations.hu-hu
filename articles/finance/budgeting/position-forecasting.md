@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d3ff7ac15a64196d7839177ded5515386184e268
-ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
+ms.openlocfilehash: c76919c6289fe0c2367cedecc64bbdae9ee86e63
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "6028227"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358511"
 ---
 # <a name="position-forecasting"></a>Beosztás előre jelzése
 
@@ -30,7 +30,7 @@ A dolgozókhoz kapcsolódó kiadások gyakran a szervezet költségeinek nagy r�
 
 ## <a name="position-forecasting-in-budget-planning"></a>Pozíció-előrejelzés a költségvetési tervben
 
-[![A beosztás-előrejelzés összetevői](./media/graphic-top.png)](./media/graphic-top.png) 
+[![A beosztás-előrejelzés összetevői.](./media/graphic-top.png)](./media/graphic-top.png) 
 
 A pozíció-előrejelzés három fő összetevőt használ, hogy pontos költségvetési mennyiségeket adjon meg a pozíció-kiadásokhoz. Ezeket az összegeket ezután egy költségvetési tervbe lehet összefoglalni a költségvetési számításokhoz. 
 
@@ -42,14 +42,14 @@ A **kompenzációs csoport** opcionális beállítási komponens, amely olyan k�
 
 ### <a name="position-forecasting-processes"></a>Pozíció-előrejelzési folyamatok
 
-[![A beosztás-előrejelzési folyamatok ábrázolása](./media/graphic1b.png)](./media/graphic1b.png) 
+[![A beosztás-előrejelzési folyamatok ábrázolása.](./media/graphic1b.png)](./media/graphic1b.png) 
 
 Egy jellemző beosztás-előrejelzési folyamatban először létre kell hozni a beállítási komponenseket (költségvetési költségösszetevők és kompenzációs csoportok). Az előre jelzett beosztások generálása a meglévő beosztások alapján. A helyesbítések ekkor elvégezhetők. Például hozzáadhat vagy bezárhat pozíciókat, megváltoztathatja a fizetési díjalapokat és hozzáadhat béremeléseket. Egy előre jelzett beosztás több változatát is létrehozhatja, hogy könnyebben össze lehessen hasonlítani a különböző költségvetési előrejelzéseket. Ezután beleveheti az előrejelzési pozíciókat a költségvetési tervekbe, és az előrejelzési pozíciókból átviheti az összegeket a költségvetésiterv-sorokba.
 
 Létrehozhat további előre jelzett beosztásverziókat, ahogy a költségvetési terveket felülvizsgálja. Ezek az új verziók adják a felülvizsgálat alapját.
 
 ## <a name="position-forecasting-setup"></a>Pozíció-előrejelzés beállítása
-[![Illusztráció-kiemelés beállításai](./media/graphic2-1024x327.png)](./media/graphic2.png)
+[![Illusztráció-kiemelés beállításai.](./media/graphic2-1024x327.png)](./media/graphic2.png)
 
 ### <a name="budget-cost-elements"></a>Költségvetési költségösszetevők
 
@@ -86,7 +86,7 @@ A **Növelési ütemezés** és a **Növelés dátuma** mezők a kompenzációs 
 A kompenzációs csoporton kijelölt kereseti költségösszetevőt akkor kell használni, ha a csoportban keresetet hoz létre az előre jelzett pozíciókhoz, beleértve az alapfizetést és a lépcsőzetes növekedést. A **Fix kompenzációs terv** mező a kompenzációs csoportot egy fix kompenzációs tervhez köti az Emberi erőforrások modulban. Ez a hivatkozás rendelheti hozzá egy dolgozó fix kompenzációs információit egy előre jelzett beosztáshoz, és így pontosabbá teheti a költségvetés tervezését. Ne feledje, hogy a kompenzációs rács (szintek és lépések) a kompenzációs csoportra vonatkozó szerkezete meg kell, hogy egyezzen a fix kompenzációs terv szerkezetével. Ellenkező esetben a rendszer nem tudja helyesen összekapcsolni a kompenzációs csoportot és a fix kompenzációs tervet.
 
 ## <a name="creating-forecast-positions"></a>Előre jelzett beosztások létrehozása
-[![Illusztráció, kiemelve a „előrejelzési beosztások létrehozása” részt](./media/graphic3-1024x327.png)](./media/graphic3.png)
+[![Illusztráció, kiemelve az „előrejelzési beosztások létrehozása” részt.](./media/graphic3-1024x327.png)](./media/graphic3.png)
 
 ### <a name="creating-forecast-positions-for-existing-positions"></a>Előre jelzett beosztások létrehozása létező beosztásokhoz
 
@@ -115,7 +115,7 @@ Amikor egy előre jelzett beosztás be van jelölve, válassza a **Bejelölt el�
 Teljesen új előre jelzett beosztást is létrehozhat. Válasszon ki egy meglévő munkát, valamint a költségvetés-tervezési folyamatot és a költségvetési tervváltozatot. Ezután még további kívánt részleteket is megadhat. Az új beosztás ebben az esetben is létrejön a Humán erőforrások modulban is.
 
 ## <a name="working-with-forecast-positions"></a>Előre jelzett beosztásokkal való munka
-[![Illusztráció, kiemelve a „előrejelzési beosztások módosítása” részt](./media/graphic5-1024x327.png)](./media/graphic5.png)
+[![Illusztráció, kiemelve az „előrejelzési beosztások módosítása” részt.](./media/graphic5-1024x327.png)](./media/graphic5.png)
 
 ### <a name="multiple-versions-of-a-forecast-position"></a>Az előre jelzett beosztás több verziója
 
@@ -171,7 +171,7 @@ Az újraszámítási folyamat automatikusan végbemegy minden előre jelzett beo
 
 ## <a name="bringing-forecast-positions-into-budget-plans"></a>Előre jelzett beosztások költségvetési tervekbe építése
 
-[![Illusztráció, kiemelve a „Hozzáadás a költségvetési tervhez” részt](./media/graphic6-1024x327.png)](./media/graphic6.png)
+[![Illusztráció, kiemelve a „Hozzáadás a költségvetési tervhez” részt.](./media/graphic6-1024x327.png)](./media/graphic6.png)
 
 Az előre jelzett beosztások létrehozásának és módosításának célja, hogy hozzáadjuk őket költségvetési tervekhez, hogy azok a lehető legpontosabb költségvetési mennyiségeket tartalmazzák. Kétféleképpen lehet előre jelzett beosztást költségvetési tervhez hozzáadni. A költségvetési terven vagy egy generáló vagy egy kiválasztó folyamat használható.
 

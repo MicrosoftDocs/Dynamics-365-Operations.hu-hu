@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: Release 10.0.6
-ms.openlocfilehash: a243399536fec3f5361104289c38e550bf8b1144
-ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
+ms.openlocfilehash: 27e52a94208129aee0e33074e7fc3778de53733a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "6193282"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355829"
 ---
 # <a name="ratings-and-reviews-modules"></a>Minősítések és értékelések modulok
 
@@ -42,20 +42,20 @@ Három modul mutatja az értékelések és vélemények összesítését a PDP-k
  
 A következő ábra bemutatja, hogyan jelennek meg az értékelések és vélemények modulok egy PDP-n.
 
-![Értékelések és vélemények modulok a PDP-ken](media/rnr-eCommerce-pdp-reviews-modules_design.png)
+![Értékelések és vélemények modulok a PDP-ken.](media/rnr-eCommerce-pdp-reviews-modules_design.png)
 
 > [!TIP] 
 > Ha további tájékoztatást szeretne kapni a PDP-sablonok és -elrendezések optimalizálásával kapcsolatban, hogy az e-kereskedelmi webhelyének több PDP-je között megoszthassa az értékelések és vélemények modulok konfigurációit, tekintse meg a következőt: [Sablonok és elrendezések áttekintése](templates-layouts-overview.md).
 
 A következő ábra bemutatja, hogyan mutatja be a **Modul hozzáadása** párbeszédpanel az értékelések és vélemények modulokat a Dynamics 365 Commerce alkalmazásban.
-![Modul hozzáadása párbeszédpanel](media/rnr-eCommerce-pdp-adding-rnr-modules.png)
+![Modul hozzáadása párbeszédpanel.](media/rnr-eCommerce-pdp-adding-rnr-modules.png)
 
 ### <a name="write-review-module"></a>Vélemény írása modul
 
 A vélemény írása modul egy **Vélemény írása** gombot tartalmaz, amely lehetővé teszi a felhasználók számára a bejelentkezést, egy értékelés hozzárendelését és a termékkel kapcsolatos vélemény megírását. Ez a modul azt is lehetővé teszi, hogy a felhasználók szerkesszék a korábban elküldött értékelést vagy véleményt. Ez a modul általában az értékelési hisztogram és a termékvélemények listájának moduljai fölött jelenik meg a PDP-ben.
 A következő ábra bemutatja, hogyan jeleníti meg a **Vélemény írása** párbeszédpanel, amikor a vevő a **Vélemény írása** lehetőséget választja. A vevő ezt a párbeszédpanelt használhatja az értékelés és vélemény elküldésére.
 
-![Vélemény írása párbeszédpanel](media/rnr-eCommerce-write-review-module.png)
+![Vélemény írása párbeszédpanel.](media/rnr-eCommerce-write-review-module.png)
 
 A következő táblázat bemutatja a vélemény írása modul tulajdonságot, amelyet a szerkesztési eszközben konfigurálni kell.
 
@@ -82,11 +82,11 @@ A következő táblázat bemutatja a termékvélemények listája modul tulajdon
 
 A termékvélemények listája modul tartalmaz egy olyan helyet, ahol hozzáadhat egy értékelési hisztogram modult. A következő ábra azt mutatja be, hogyan lehet az értékelési hisztogram modult hozzáadni a termékvélemények listája modulhoz a Dynamics 365 Commerce alkalmazásban.
 
-![Értékelési hisztogram modul hozzáadása egy termékvélemények listája modulhoz](media/rnr-eCommerce-pdp-rating-histogram-summary.png)
+![Értékelési hisztogram modul hozzáadása egy termékvélemények listája modulhoz.](media/rnr-eCommerce-pdp-rating-histogram-summary.png)
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[Modulkönyvtár – áttekintés](starter-kit-overview.md)
+[Modultár áttekintése](starter-kit-overview.md)
 
 [Tárolómodul](add-container-module.md)
 

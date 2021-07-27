@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1e626daa89eecf838d7cda0663d00c1c2dbecb76
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: fa61f9ab9d38a748742733a4143e6d50b82caf4c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5816749"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351585"
 ---
 # <a name="functional-locations-and-assets"></a>Munkavégzési helyszínek és eszközök
 
@@ -34,13 +34,13 @@ Ez a cikk az Eszközkezelés munkavégzési helyszíneit és eszközeit ismertet
 
 Az Eszközkezelés a Finance and Operations alkalmazások számos moduljával zökkenőmentesen integrálva van. A következő ábra a más modulokkal való kapcsolatot mutatja be.
 
-![Az Eszközkezelés egyéb modulokkal való kapcsolódását mutató ábra](media/01-overview-image.png)
+![Az Eszközkezelés egyéb modulokkal való kapcsolódását mutató ábra.](media/01-overview-image.png)
 
 Az Eszközkezeléssel hatékonyan kezelhető és hajtható végre a cég különféle típusú felszerelésének kezelésére és szervizelésére szolgáló minden feladat. Felszerelés lehet minden gép, gyártóeszköz vagy jármű. Az Eszközkezelés több iparág megoldásait is támogatja.
 
 A következő képen az Eszközkezelés fő funkcióinak az áttekintése látható.
 
-![Az eszközkezelés fő funkcióit mutató ábra](media/02-overview-image.png)
+![Az Eszközkezelés fő funkcióit mutató ábra.](media/02-overview-image.png)
 
 ## <a name="functional-locations-and-assets"></a>Munkavégzési helyszínek és eszközök
 
@@ -50,11 +50,11 @@ Az eszközök költsége az eszköz helyét követi. Más szóval, ha új munkav
 
 A munkavégzési helyszínek hierarchiájának kialakítása attól függ, hogy a cég milyen követelményeket támaszt a belső vagy az ügyfeleknek szolgáltatott berendezésekkel kapcsolatban. A következő képen egy földrajzi helyeken alapuló munkavégzési helyszínre látható példa.
 
-![A földrajzi helyek alapján munkavégzési helyszíneket mutató ábra](media/03-overview-image.png)
+![A földrajzi helyek alapján munkavégzési helyszíneket mutató ábra.](media/03-overview-image.png)
 
 A következő képen egy ügyfeleken alapuló munkavégzési helyszínre látható példa.
 
-![Az ügyfelek alapján munkavégzési helyszíneket mutató ábra](media/04-overview-image.png)
+![Az ügyfelek alapján munkavégzési helyszíneket mutató ábra.](media/04-overview-image.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

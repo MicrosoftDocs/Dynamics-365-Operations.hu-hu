@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: aeb9675477e728c28c38b1ef43fa6055acd23360
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 913b20d73b87f03b4b1f80efdcf6e60bd07ce270
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5909379"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359485"
 ---
 # <a name="install-and-connect-the-warehouse-app"></a>A raktározási alkalmazás telepítése és csatlakoztatása
 
@@ -64,28 +64,28 @@ Ahhoz, hogy a raktári alkalmazás együttműködhessen a kívánt Supply Chain 
 1. Adja meg a felhasználó nevét és jelszavát, aki hozzáfér az Azure-előfizetéshez.
 1. Az Azure portálon a bal oldali navigációs panelen válassza az **Azure Active Directory** lehetőséget.
 
-    ![Azure Active Directory](media/app-connect-azure-aad.png "Azure Active Directory")
+    ![Azure Active Directory.](media/app-connect-azure-aad.png "Azure Active Directory")
 
 1. Győződjön meg róla, hogy az Azure AD Supply Chain Management által használt példányával dolgozik.
 1. A **Kezelés** listában válassza az **Alkalmazásregisztrációk** elemet.
 
-    ![Alkalmazásregisztrációk](media/app-connect-azure-register.png "Alkalmazásregisztrációk")
+    ![Alkalmazásregisztrációk.](media/app-connect-azure-register.png "Alkalmazásregisztrációk")
 
 1. Az eszköztáron válassza az **Új regisztráció** parancsot az **Alkalmazás regisztrálása** varázsló megnyitásához.
 1. Írjon be egy nevet az alkalmazás számára, válassza a **Számlák csak ebben a szervezeti könyvtárban** lehetőséget, majd válassza a **Regisztráció** lehetőséget.
 
-    ![Alkalmazás regisztrálása varázsló](media/app-connect-azure-register-wizard.png "Alkalmazás regisztrálása varázsló")
+    ![Alkalmazás regisztrálása varázsló.](media/app-connect-azure-register-wizard.png "Alkalmazás regisztrálása varázsló")
 
 1. Megnyílik az új alkalmazás regisztrációja. Jegyezze fel az **Alkalmazás (ügyfél) azonosító** értékét, mert később szüksége lesz rá. Erre az azonosítóra a témakör későbbi részében *ügyfélazonosítóként* hivatkozunk.
 
-    ![Alkalmazás (ügyfél) azonosítója](media/app-connect-azure-app-id.png "Alkalmazás (ügyfél) azonosítója")
+    ![Alkalmazás (ügyfél) azonosítója.](media/app-connect-azure-app-id.png "Alkalmazás (ügyfél) azonosítója")
 
 1. Válassza a **Tanúsítvány és titkok** lehetőséget a **Kezelés** listában. Ezt követően válassza ki a következő gombok egyikét, attól függően, hogy hogyan szeretné konfigurálni az alkalmazást hitelesítésre. (További információkért tekintse meg a [Hitelesítés tanúsítványok vagy titkos ügyfélkód használatával](#authenticate) fejezetet a témakör későbbi részében.)
 
     - **Tanúsítvány feltöltése** – A titkos kódként használt tanúsítvány feltöltése. Ezt a megközelítést ajánljuk, mert a biztonságosabb, és nagyobb mértékben automatizálható is. Ha Windows-eszközökön futtatja a raktári alkalmazást, jegyezze fel a tanúsítvány feltöltése után megjelenő **Ujjlenyomat** értéket. Erre az értékre akkor lesz szükségem amikor Windows-eszközökön konfigurálja a tanúsítványt.
     - **Új titkos ügyfélkód** – Hozzon létre egy kulcsot a kulcs leírásának és időtartamának megadásával a **Jelszavak** részben, majd válassza a **Hozzáadás** elemet. Készítsen másolatot a kulcsról, és tárolja biztonságosan.
 
-    ![Tanúsítvány és titkos kódok](media/app-connect-azure-authentication.png "Tanúsítvány és titkos kódok")
+    ![Tanúsítvány és titkos kódok.](media/app-connect-azure-authentication.png "Tanúsítvány és titkos kódok")
 
 Az Azure AD webszolgáltatási alkalmazásainak beállításával kapcsolatos további tudnivalókat lásd a következő forrásokban:
 
@@ -105,7 +105,7 @@ A következő lépésekkel engedélyezheti az Supply Chain Management számára 
     1. Hozzon létre egy felhasználót.
     1. Rendelje hozzá a raktározási mobileszköz felhasználóját.
 
-    ![Rendelje hozzá a raktározási mobileszköz felhasználóját](media/app-connect-app-users.png "Rendelje hozzá a raktározási mobileszköz felhasználóját")
+    ![Rendelje hozzá a raktározási mobileszköz felhasználóját.](media/app-connect-app-users.png "Rendelje hozzá a raktározási mobileszköz felhasználóját")
 
 1. Társítsa az Azure AD alkalmazást a raktári alkalmazás felhasználójával:
 
@@ -113,7 +113,7 @@ A következő lépésekkel engedélyezheti az Supply Chain Management számára 
     1. Hozzon létre egy sort.
     1. Írja be az előző szakaszban feljegyzett ügyfél-azonosítót, adja meg a nevet, és válassza ki az imént létrehozott felhasználót. Javasoljuk, hogy az összes eszközt címkézze fel. Ezt követően, ha elvesznek, egyszerűen eltávolíthatja a Supply Chain Management alkalmazáshoz való hozzáférést ezen az oldalon.
 
-    ![Azure Active Directory alkalmazások](media/app-connect-aad-apps.png "Azure Active Directory alkalmazások")
+    ![Azure Active Directory alkalmazások.](media/app-connect-aad-apps.png "Azure Active Directory alkalmazások")
 
 ## <a name="authenticate-by-using-a-certificate-or-client-secret"></a><a name="authenticate"></a>Hitelesítés tanúsítványok vagy titkos ügyfélkód használatával
 
@@ -201,26 +201,26 @@ Kövesse az alábbi lépéseket a csatlakozási beállítások egy fájlból vag
 1. Lépjen a **Kapcsolat beállításai** elemre.
 1. A **Bemutató mód használata** lehetőséget állítsa _Nem_ értékre.
 
-    ![Bemutató mód használata beállítás](media/app-connect-app-demo-mode.png "Bemutató mód használata beállítás")
+    ![Bemutató mód használata beállítás.](media/app-connect-app-demo-mode.png "Bemutató mód használata beállítás")
 
 1. Válassza ki a **Fájl kiválasztása** vagy **QR-kód beolvasása** lehetőséget, attól függően, hogy hogyan szeretné importálni a beállításokat:
 
     - Ha egy fájlból importálja a kapcsolatbeállításokat, előfordulhat, hogy az alkalmazás már megtalálta a fájlt, ha a mentéskor az alapértelmezett név és az alapértelmezett hely került felhasználásra. Ellenkező esetben jelölje be a **Fájl kiválasztása** lehetőséget, tallózással keresse meg a fájlt a helyi eszközön, majd válassza ki azt. Ha kiválaszt egy egyéni helyet, akkor az alkalmazás tárolja és automatikusan felhasználja a következő alkalommal.
     - Ha QR-kód beolvasásával importálja a kapcsolatbeállításokat, válassza a **QR-kód beolvasása** parancsot. A program engedélyt kér az eszköz kamerájának használatára. Miután megadta az engedélyt, a kamera elindul, így használható a szkenneléshez. Az eszköz kamerájának minőségétől és a QR-kód bonyolultságától függően előfordulhat, hogy nehéz megfelelően beolvasni. Ebben az esetben próbálja meg csökkenteni a QR-kód bonyolultságát úgy, hogy csak egy kapcsolatot generál QR-kódonként. (Jelenleg csak az eszköz kamerája használható a QR-kód beolvasására.)
 
-    ![A kapcsolat beállításainak importálása](media/app-connect-app-select-file.png "A kapcsolat beállításainak importálása")
+    ![A kapcsolat beállításainak importálása.](media/app-connect-app-select-file.png "A kapcsolat beállításainak importálása")
 
 1. Amikor a kapcsolatok beállításai sikeresen betöltődnek, válassza a **Vissza** (balra nyíl) gombot az oldal felső sarkában.
 
-    ![Kapcsolatbeállítások betöltve](media/app-connect-app-settings-loaded.png "Kapcsolatbeállítások betöltve")
+    ![Kapcsolatbeállítások betöltve.](media/app-connect-app-settings-loaded.png "Kapcsolatbeállítások betöltve")
 
 1. Ha Android-eszközt használ, és tanúsítványt használ a hitelesítéshez, az eszköz rákérdez a tanúsítvány kiválasztására.
 
-    ![Tanúsítvány választására szolgáló kérés egy Android-eszközön](media/app-connect-app-choose-cert.png "Tanúsítvány választására szolgáló kérés egy Android-eszközön")
+    ![Tanúsítvány választására szolgáló kérés egy Android-eszközön.](media/app-connect-app-choose-cert.png "Tanúsítvány választására szolgáló kérés egy Android-eszközön")
 
 1. Az alkalmazás összekapcsolja a Supply Chain Management-szerverrel, és a bejelentkezési oldalt jeleníti meg.
 
-    ![Bejelentkezési oldal](media/app-connect-sign-in.png "Bejelentkezési oldal")
+    ![Bejelentkezési oldal.](media/app-connect-sign-in.png "Bejelentkezési oldal")
 
 ## <a name="manually-configure-the-application"></a><a name="config-manually"></a>Az alkalmazás manuális konfigurálása
 
@@ -230,11 +230,11 @@ Manuálisan konfigurálhatja az alkalmazást az eszközön, hogy csatlakozni tud
 1. Lépjen a **Kapcsolat beállításai** elemre.
 1. A **Bemutató mód használata** lehetőséget állítsa _Nem_ értékre.
 
-    ![Bemutató mód kikapcsolva](media/app-connect-app-select-file.png "Bemutató mód kikapcsolva")
+    ![Bemutató mód kikapcsolva.](media/app-connect-app-select-file.png "Bemutató mód kikapcsolva")
 
 1. A **Kapcsolat kiválasztása** mezőben bontsa ki a kapcsolati adatok manuális megadásához szükséges beállításokat.
 
-    ![Manuális kapcsolati mezők](media/app-connect-manual-connect.png "Manuális kapcsolati mezők")
+    ![Manuális kapcsolati mezők.](media/app-connect-manual-connect.png "Manuális kapcsolati mezők")
 
 1. Adja meg a következő adatokat:
 

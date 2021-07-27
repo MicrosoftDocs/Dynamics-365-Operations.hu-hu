@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 899af54fbe34841c9b9b6e96b78db96773cf0203
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 5b58a9345b83219296a3570e7bf653ef8624b7a1
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5894172"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357642"
 ---
 # <a name="compress-large-documents-that-are-generated-in-electronic-reporting"></a>Elektronikus jelentésekben létrehozott nagyméretű dokumentumok tömörítése 
 
@@ -55,7 +55,7 @@ Mielőtt teljesítené az ebben a témakörben ismertetett eljárásokat, meg ke
 1. [Importált formátum futtatása](er-defer-xml-element.md#run-the-imported-format).
 2. Figyelje meg, hogy a létrejövő XML-formátumú dokumentum mérete 3 kilobájt (KB).
 
-    ![A tömörítetlen kimenő dokumentum előzetes verziója](./media/er-compress-outbound-files1.png)
+    ![A tömörítetlen kimenő dokumentum előzetes verziója.](./media/er-compress-outbound-files1.png)
 
 ### <a name="modify-the-format-to-compress-the-generated-output"></a>A létrehozott kimenet tömörítéséhez használandó formátum módosítása
 
@@ -80,7 +80,7 @@ Mielőtt teljesítené az ebben a témakörben ismertetett eljárásokat, meg ke
     > [!NOTE] 
     > A zip-fájl által birtokolt XML-fájl tömörítési aránya 87 százalék. A tömörítési arány a tömörített adatoktól függ.
 
-    ![A tömörített kimenő dokumentum előzetes verziója](./media/er-compress-outbound-files2.png)
+    ![A tömörített kimenő dokumentum előzetes verziója.](./media/er-compress-outbound-files2.png)
 
 > [!NOTE]
 > Ha be van konfigurálva a kimeneti ER [cél](electronic-reporting-destinations.md) a kimenetet létrehozó formátumelemhez (ebben a példában a **Jelentés** elem), akkor kihagyják a kimenet tömörítését.

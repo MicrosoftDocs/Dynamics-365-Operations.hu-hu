@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 5c2ddad10f9cbedd77a04fe0f42bdc217fd43344
-ms.sourcegitcommit: 54d3ec0c006bfa9d2b849590205be08551c4e0f0
+ms.openlocfilehash: d68587a88b52e95d1e11c64b9a2d51dbc8b70561
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "5963239"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357414"
 ---
 # <a name="create-an-azure-storage-account-and-a-key-vault"></a>Hozzon létre Azure tárfiókot és egy kulcstartót
 
@@ -49,7 +49,7 @@ Ebben a témakörben két fő lépést kell végrehajtania:
 5. Válassza ki a **Szabályzat hozzáadása** lehetőséget a tárolt hozzáférési szabályok hozzáadásához.
 6. Megfelelő módon adja állítsa be az **Azonosító** és az **Engedélyek** mezőt. Az **Engedélyek** mezőben válassza ki az összes engedélyt.
 
-    ![Blob-tárterület-engedély megadása](media/e-Invoicing-services-create-azure-resources-grant-blob-permissions.png)
+    ![Blob-tárterület-engedély megadása.](media/e-Invoicing-services-create-azure-resources-grant-blob-permissions.png)
 
 7. Adja meg a kezdő és lejárati dátumokat. A lejárati dátumnak jövőbeli dátumnak kell lennie.
 8. Válassza az **OK** gombot a szabályzat mentéséhez, majd mentse a módosításokat a tárolóba.
@@ -57,7 +57,7 @@ Ebben a témakörben két fő lépést kell végrehajtania:
 10. Kattintson a jobb egérgombbal a tárolóra, majd válassza a **Közös hozzáférésű jogosultságkód megszerzése** lehetőségre.
 11. A **Közös hozzáférésű jogosultságkód** párbeszédpanelen másolja és tárolja az értéket az **URI** mezőbe. Ezt az értéket használja a rendszer a következő eljárásban, és *Közös hozzáférésű jogosultságkód URI* néven fog rá hivatkozni.
 
-    ![Az URI-érték kiválasztása és másolása](media/e-Invoicing-services-create-azure-resources-select-and-copy-uri.png)
+    ![Az URI-érték kiválasztása és másolása.](media/e-Invoicing-services-create-azure-resources-select-and-copy-uri.png)
 
 ## <a name="set-up-the-key-vault-to-store-the-storage-account-uri"></a>A kulcstartó beállítása a tárfiók URI-azonosítójának tárolásához
 
@@ -69,11 +69,11 @@ Ebben a témakörben két fő lépést kell végrehajtania:
 6. Állítsa be a hozzáférési szabályzatot, hogy az Elektronikus számlázás megfelelő biztonsági hozzáférési szintet tudjon engedélyezni a létrehozott titoknak. Menjen a **Beállítások \> Hozzáférési szabályzat** lehetőségre, és válassza a **Hozzáférési szabályzat hozzáadása** elemet.
 7. Állítsa be a **Megszerzés** és a **Lista** műveleteihez tartozó titkos engedélyeket.
 
-    ![Szolgáltatáshozzáférés megadása](media/e-Invoicing-services-create-azure-resources-grant-service-access.png)
+    ![Szolgáltatáshozzáférés megadása.](media/e-Invoicing-services-create-azure-resources-grant-service-access.png)
 
 8. Állítsa be a **Megszerzés** és a **Lista** műveleteihez tartozó tanúsítványengedélyeket.
 
-    ![Tanúsítványengedély megadása](media/e-Invoicing-services-create-azure-resources-grant-certificate-permission.png)
+    ![Tanúsítványengedély megadása.](media/e-Invoicing-services-create-azure-resources-grant-certificate-permission.png)
 
 9. A **Rendszerbiztonsági tag kiválasztása** mezőben válassza a **Nincs kiválasztva** lehetőséget.
 10. A **Rendszerbiztonsági tag** párbeszédpanelen válassza ki a rendszerbiztonsági tagot az **e-számlázási szolgáltatás** hozzáadásával.

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validfrom: ''
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 1118d7334602e450e5d503632895f73ba19066a1
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: cb04502721740c48004b62bc96ff13ca063e06db
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814778"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360898"
 ---
 # <a name="phantom-items"></a>Látszólagos cikkek
 
@@ -27,12 +27,12 @@ ms.locfileid: "5814778"
 
 Ez a témakör részletesen leírja, hogyan használható a Látszólagos sortípus egy anyagjegyzék (BOM) sorainál, illetve egy képletben. A következő példában (a) a H termék és F, valamint G rész anyagjegyzéke, míg (b) a H termék és F rész útvonallapja.
 
-![H termék és F rész](media/product-H-part-F.png)
+![H termék és F rész.](media/product-H-part-F.png)
 
 
 Ez az ábra egy anyagjegyzék-struktúra példáját mutatja be két szinten. A H késztermék egy gépösszszerelés termékét jelöli. A gép két részből áll: egy elektromos egységből (F), amelynek két összetevője van (A és B) és csomagolóanyagok csoportjából (G), amelynek szintén két összetevője van (C és D). Egy másik anyagot (E) is felhasználnak a gép általános összeszerelése során.
 
-![H termék és F rész](media/product-H-part-B.png)
+![H termék és F rész.](media/product-H-part-B.png)
 
 Az előző ábra mutatja be a H termék Műszaki anyagjegyzékét. Ez a szerkezet jó áttekintést biztosít a teljes gépösszeszerelés részeiről és összetevőiről. Azonban annak ellenére, hogy a terméktervezők valószínűleg így szeretnék látni az anyagjegyzéket, előfordulhat, hogy ez a szerkezet nem jelöli megfelelően a gép üzemben történő összeszerelését. 
 
@@ -53,23 +53,23 @@ Az átmenet a műszaki anyagjegyzék és a gyártási anyagjegyzék közötti a 
 ## <a name="multilevel-phantom-bom-structures"></a>Többszintű látszólagos anyagjegyzék-struktúrák
 A Látszólagos sortípus többszintű anyagjegyzék-struktúráknál is használható, a következő ábrán látható módon. Ebben a példában (a) a G termék anyagjegyzéke, míg (b) az E és F rész, valamint a G termék útvonallapja. 
 
-![G termék és F rész útvonallapokkal](media/product-G-route-sheet-G.png)
+![G termék és F rész útvonallapokkal.](media/product-G-route-sheet-G.png)
 
 
 A következő ábrán az eredményként jelentkező gyártási anyagjegyzék és útvonallap látható, amennyiben az E és F részek anyagjegyzéksorai úgy vannak konfigurálva, hogy a sortípus a Látszólagos. Ezen az ábrán az (a) a G termékhez tartozó anyagjegyzék, a (b) pedig a G termék útvonallapja.
 
-![G termék](media/product-G.png)
+![G termék.](media/product-G.png)
 
 
 ## <a name="phantom-and-route-network"></a>Látszólagos anyagjegyzék és útvonalhálózat
 A látszólagos anyagjegyzékek olyan anyagjegyzéknél is használhatók, amely rendelkezik útvonalhálózattal. Az útvonalhálózatoknál egy vagy több művelet párhuzamosan futhat. A következő ábra bemutat egy példát egy olyan útvonalhálózatról, amelyet többszintű anyagjegyzékben használnak. Ebben a példában az (a) a G termék és F rész anyagjegyzéke, a (b) a G termék és F rész az útvonallapja, ahol szerepel útvonalhálózat.
 
-![G termék és F rész](media/product-G-part-F.png)
+![G termék és F rész.](media/product-G-part-F.png)
 
 
 A következő példában (a) a G termék és F rész anyagjegyzéke, míg (b) a G termék és F rész útvonallapja.
 
-![G termék és F rész útvonallapokkal](media/product-G-part-F-with-route-sheet.png)
+![G termék és F rész útvonallapokkal.](media/product-G-part-F-with-route-sheet.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
