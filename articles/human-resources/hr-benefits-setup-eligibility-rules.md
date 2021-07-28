@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1b4673631f9c7d2310d8bdb08e0b25027bc8dedf
-ms.sourcegitcommit: 4c880b152e81350f023b944c2ab13e60498e2c7b
+ms.openlocfilehash: f7679afa29e5e4ef8482c71558275297d7359362
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "6093920"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351657"
 ---
 # <a name="configure-eligibility-rules-and-options"></a>Jogosultsági szabályok és beállítások konfigurálása
 
@@ -137,20 +137,20 @@ Több feltétellel rendelkező szabályt is meg lehet határozni. Ha egy jogosul
 
 A fenti **Aktív alkalmazottak** szabályban például a következő feltételek vannak: Ahhoz, hogy az alkalmazott az **Aktív alkalmazottak** szabály alapján jogosult lehessen, az alkalmazottat az USMF jogi személynek kell alkalmaznia, *és* teljes munkaidős alkalmazottnak kell lennie.  
 
-![Jogosultsági szabályon belüli feltételek](media/CriteriaWithinAnEligibilityRule.png) 
+![Jogosultsági szabályon belüli feltételek.](media/CriteriaWithinAnEligibilityRule.png) 
  
 ### <a name="multiple-conditions-within-criteria"></a>Több feltétel a feltételeken belül
 
 A szabályok tovább bonthatóak, hogy egyetlen feltételen belül több feltételt használjanak. Az alkalmazott akkor lesz jogosult, ha legalább egy feltételnek megfelel. A fenti példa alapján az **Aktív alkalmazottak** szabály tovább tágítható, hogy a részmunkaidős alkalmazottak is szerepeljenek benne. Ez azt jelenti, hogy az alkalmazottnak az USMF alkalmazottjának *és* teljes vagy részmunkaidős alkalmazottnak kell lennie.  
 
-![Több feltétel a feltételeken belül](media/MultipleConditionsWithinCriteria.png) 
+![Több feltétel a feltételeken belül.](media/MultipleConditionsWithinCriteria.png) 
  
 ### <a name="eligibility-conditions-within-a-custom-field-criterion"></a>Jogosultsági feltételek egy egyéni mező feltételén belül 
 A fentiekhez hasonlóan, az egyéni mezők hasonlóan használhatók a jogosultsági szabályok létrehozása és a munka során. Előfordulhat például, hogy az internetre vonatkozó visszatérítést szeretne nyújtani a fargói és koppenhágai, otthonról dolgozó alkalmazottaknak, mivel az internetköltségek magasabbak ezeken a helyeken. Ehhez két egyéni mezőt kell létrehoznia: **Iroda helye** (választólista) és **Munkavégzés otthonról** (jelölőnégyzet). Ezután hozzon létre egy **WFH-alkalmazottak** nevű szabályt. A szabályhoz tartozó feltétel az, hogy az **Iroda helye = Fargo** vagy **Koppenhága** *és* a **Munkavégzés otthonról = Igen**.
 
 Az egyéni jogosultsági szabályokat a következő képen látható módon kell beállítani. 
 
-![Jogosultsági feltételek egy egyéni mező feltételén belül](media/EligibilityConditionsWithinACustomFieldCriterion.png) 
+![Jogosultsági feltételek egy egyéni mező feltételén belül.](media/EligibilityConditionsWithinACustomFieldCriterion.png) 
  
 ## <a name="configure-bundles"></a>Csomagok konfigurálása
 

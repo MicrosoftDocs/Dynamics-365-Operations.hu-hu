@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 563fa291754f7f795fa64d530de49b9fe4083c56
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9990df3e57d65c77a75913efaf30675528d411b4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821297"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6343700"
 ---
 # <a name="weighted-average-date"></a>Dátum szerinti súlyozott átlag
 
@@ -39,7 +39,7 @@ Súlyozott átlag = (\[Q1 × P1\] + \[Q2 × P2\] + \[Q *n* × P *n*\]) ÷ (Q1 +
 
 A készlet zárása során a számítás minden nap lefut a zárási időszak alatt, ahogy az alábbi ábrán is látható. 
 
-![Dátummal súlyozott átlagos napi számítási modell](./media/weightedaveragedatedailycalculationmodel.gif) 
+![Dátummal súlyozott átlagos napi számítási modell.](./media/weightedaveragedatedailycalculationmodel.gif) 
 
 A készletkiadásokat hagyó készlettranzakciók, például az értékesítési rendelések, készletnaplók, beszerzési jóváírások és termelési rendelések a feladás dátumakor becsült átlagos önköltségi áron kerülnek be a rendszerbe. Ezt a becsült önköltségi árat más néven mozgóátlagon alapuló önköltségi árnak is nevezik. A készletzárás napján a rendszer elemzi az előző időszak, előző napok és az adott nap készlettranzakcióit. Az elemzéssel meghatározható hogy az alábbiak közül melyik zárási elv használata szükséges:
 
@@ -72,7 +72,7 @@ A következő ábrán ezek a tranzakciók láthatók:
 -   2b. Pénzügyi kiadás készletről, 2 mennyiséggel, egyenként 10,00 USD áron.
 -   3. A közvetlen elszámolási módszer alkalmazásával készletzárás történik a pénzügyi készlet bevételezés elszámolására a pénzügyi készletkiadással szemben.
 
-![Dátummal súlyozott átlagot alkalmazó közvetlen elszámolás a Tényleges értékkel együtt beállítás nélkül](./media/weightedaveragedatedirectsettlementwithoutincludephysicalvalue.gif) 
+![Dátummal súlyozott átlagot alkalmazó közvetlen elszámolás a Tényleges értékkel együtt beállítás nélkül.](./media/weightedaveragedatedirectsettlementwithoutincludephysicalvalue.gif) 
 
 **Az ábra jelmagyarázata:**
 
@@ -126,7 +126,7 @@ A rendszer előállítja és feladja az összesített készletmozgási tranzakci
 
 Az alábbi ábrán ez a tranzakciósorozat, és a súlyozott átlag készletmodell használatának hatása látható, továbbá az összesített tartozáskiegyenlítés elv a **Tényleges értékkel együtt** lehetőség nélkül. 
 
-![Dátummal súlyozott átlagot alkalmazó összesített elszámolás a Tényleges értékkel együtt beállítás nélkül](./media/weightedaveragedatesummarizedsettlementwithoutincludephysicalvalue.gif) 
+![Dátummal súlyozott átlagot alkalmazó összesített elszámolás a Tényleges értékkel együtt beállítás nélkül.](./media/weightedaveragedatesummarizedsettlementwithoutincludephysicalvalue.gif) 
 
 **Az ábra jelmagyarázata**
 
@@ -175,7 +175,7 @@ Kiadási tranzakciót a tranzakció feladása előtt jelölhet hozzá egy nyugt�
 
 Az új, mozgóátlagon alapuló önköltségi ár a pénzügyileg és fizikailag frissített tranzakciók átlagának, azaz 27,50 USD összegnek felel meg. A következő ábrán a tranzakciók sorozata látható, és a súlyozott átlag dátumon alapuló készletmodell és jelölés folyamatra gyakorolt hatását ábrázolja.
 
-![Dátummal súlyozott átlag jelöléssel](./media/weightedaveragedatewithmarking.gif) 
+![Dátummal súlyozott átlag jelöléssel.](./media/weightedaveragedatewithmarking.gif) 
 
 **Az ábra jelmagyarázata:**
 

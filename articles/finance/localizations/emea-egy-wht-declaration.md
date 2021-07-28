@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-06-20
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 8c9aaa3868167806ce3189d724621991ec7e53eb
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: afb9f95458089e854335399ea3d14ba229c02bbd
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6022811"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349873"
 ---
 #  <a name="withholding-tax-declaration-for-egypt-eg-00005"></a>Adóelőleg-bevallás Egyiptom számára (EG-00005)
 
@@ -103,7 +103,7 @@ A WHT bevallás jelentéseinek Microsoft Excel alkalmazásban való létrehozás
 2. Az **Adóelőleg** lapon a **WHT bevallás formátum-hozzárendelése** mezőben válassza a **WHT bevallás Excel (EG)** lehetőséget. Ha üresen hagyja ezt a mezőt, a normál áfajelentés SSRS-formátumban jön létre.
 
 
-![Bevallás űrlapja](media/egypt-wht-declaration-setup1.png)
+![Bevallás űrlapja.](media/egypt-wht-declaration-setup1.png)
 
 ## <a name="generate-the-withholding-declaration-forms"></a>Adóelőleg-bevallás űrlapjainak létrehozása
 Az adóelőleg-bevallás egy adott időszakra történő elkészítésének és benyújtásának folyamata a kiegyenlítési és kifizetési feladási adóügyi feladat során feladott adóelőleg-tranzakcióin alapul. A globális adóelőleggel kapcsolatos további tudnivalókat lásd: [Globális adóelőleg](../general-ledger/global-withholding-tax-overview.md).

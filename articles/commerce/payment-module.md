@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 09c7504eda0d389738b9d13b73f33472dc8f5fe3
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 1d4aaa40ee0128a281fe76072e021774a52c9a9e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804479"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352324"
 ---
 # <a name="payment-module"></a>Fizetési modul
 
@@ -46,9 +46,9 @@ Az Adyen fizetési összekötő támogatja az erős vevőhitelesítést (SCA) is
 
 A következő ábrán egy példa látható az ajándékutalvány-, a hűség- és az Adyen fizetési modulokra a fizetési oldalon.
 
-![Példa az ajándékutalványra, a hűségpontokra és az Adyen fizetési modulokra a fizetési oldalon](./media/ecommerce-payments.PNG)
+![Példa az ajándékutalványra, a hűségpontokra és az Adyen fizetési modulokra a fizetési oldalon.](./media/ecommerce-payments.PNG)
 
-## <a name="dynamics-365-payment-connector-for-paypal"></a>Dynamics 365 fizetési összekötő a PayPal szolgáltatáshoz
+## <a name="dynamics-365-payment-connector-for-paypal"></a>Dynamics 365 Payment Connector a PayPal szolgáltatáshoz
 
 A Commerce 10.0.14 kiadásától a fizetési modul integrálva van a Dynamics 365 fizetési összekötővel a PayPalhoz. A fizetési összekötő telepítésével és konfigurálásával kapcsolatos további információkért lásd: [Dynamics 365 fizetési összekötő a PayPal szolgáltatáshoz](paypal.md).
  
@@ -59,10 +59,10 @@ Ha a fizetési modul a PayPal fizetési összekötő használatára van konfigur
 A PayPal fizetési összekötőhöz nem szükséges számlázási cím modul, mivel a számlázással kapcsolatos összes adatot a PayPal kezeli az iframe-en belül. Azonban a szállítási cím és a szállítási lehetőségek modulok szükségesek.
 
 A következő ábra egy példát mutat be két fizetési modulra a fizetési oldalon, az egyik az Adyen fizetési összekötővel, a másik pedig a PayPal fizetési összekötővel van konfigurálva.
-![Példa az Adyen fizetési modulokra és a PayPal modulokra a fizetési oldalon](./media/ecommerce-paypal.png)
+![Példa az Adyen fizetési modulokra és a PayPal modulokra a fizetési oldalon.](./media/ecommerce-paypal.png)
 
 A következő ábra egy példát mutat be a PayPal gombbal megmeghívott PayPal iframe-re. 
-![Példa Paypal iframe-re a pénztároldalon](./media/ecommerce-paypal-iframe.png)
+![Példa Paypal iframe-re a pénztároldalon.](./media/ecommerce-paypal-iframe.png)
 
 ## <a name="payment-module-properties"></a>Fizetési modul tulajdonságai
 
@@ -76,7 +76,7 @@ A következő ábra egy példát mutat be a PayPal gombbal megmeghívott PayPal 
 |Elsődleges fizetés|  **Igaz** vagy **Hamis** | Ha **Igaz**, a rendszer hibaüzeneteket hoz létre a fizetési oldalon található elsődleges fizetési összekötőből. Ha mind az Adyen, mind PayPal fizetési összekötők konfigurálva vannak, állítsa az Adyen értéket **Igaz** értékre, amely a 10.0.14 Commerce kiadásban lett hozzáadva.|
 
 A következő ábra egy példát mutat be, ahol a **Támogatott fizetőeszköz-típusok** érték "PayPal" értékre állítva a Commerce központ fizetési összekötő konfigurációjában.
-![Példa támogatott fizetőeszköz-típusokra a Commerce Központban](./media/ecommerce-paymenttendertypes.png)
+![Példa támogatott fizetőeszköz-típusokra a Commerce Központban.](./media/ecommerce-paymenttendertypes.png)
 
 ## <a name="billing-address"></a>Számlázási cím
 

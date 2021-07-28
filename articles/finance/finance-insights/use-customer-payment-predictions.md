@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-11-16
 ms.dyn365.ops.version: AX 10.0.14
-ms.openlocfilehash: 1349521d65511864747de6c2fed3a904dea8917e
-ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
+ms.openlocfilehash: 873a11f3151344de63ee0b01b586ccbffe0df51b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6186564"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355627"
 ---
 # <a name="use-customer-payment-predictions-preview"></a>Vevői fizetési előrejelzések használata (előzetes verzió)
 
@@ -38,13 +38,13 @@ A **Vevői jóváírás és gyűjtemények kezelése** munkaterület két új cs
 - A **Tranzakciónkénti fizetési előrejelzés** csempe azokat a nyitott vevői tranzakciókat jeleníti meg, amelyeknek a kifizetése 50 százalékban kisebb, mint az **Időben** gyűjtő. Ezt a mozaikot akkor válassza, ha a **Tranzakciónkénti fizetési előrejelzés** lapon nyithatja meg.
 - Az **Előre jelzett magas egyenlegű vevők** csempe száma azt jelzi, hogy a teljes egyenleg több mint fele (50 százaléka) várhatóan késve és/vagy túl későn lesz kifizetve. Ezt a mozaikot akkor válassza, ha a **Vevőnkénti fizetési előrejelzés** lapon nyithatja meg.
 
-[![Vevői jóváírás és gyűjtemények munkaterület](./media/manage-customer-credit-collections.png)](./media/manage-customer-credit-collections.png)
+[![Vevői jóváírás és gyűjtemények munkaterület.](./media/manage-customer-credit-collections.png)](./media/manage-customer-credit-collections.png)
 
 ### <a name="payment-predictions-per-transaction-list-page"></a>Tranzakciónkénti fizetési előrejelzések listaoldal
 
 A **Tranzakciónkénti fizetési előrejelzések** lapon megtekintheti a nyitott tranzakciók fizetésének valószínűségét az **Időben**, a **Későn** és a **Nagyon későn** gyűjtőkben. A rácsban lévő mindegyik tranzakcióhoz az **Idővalószínűség** oszlop jelzi, hogy a számla fizetése a határidőre vagy azt megelőzően történik. Ha egy időben történő fizetés valószínűsége 50 százaléknál kisebb, akkor egy piros kör jelenik meg az **Idővalószínűség** oszlop százalékos értéke mellett, hogy jelezze a késedelmes fizetés kockázatát.
 
-[![Tranzakcióoldalankénti fizetési előrejelzés](./media/payment-predictions-per-transaction.png)](./media/payment-predictions-per-transaction.png)
+[![Tranzakcióoldalankénti fizetési előrejelzés.](./media/payment-predictions-per-transaction.png)](./media/payment-predictions-per-transaction.png)
 
 A lap jobb oldalán található **Kapcsolódó** információ ablaktábla az előrejelzés részletes adatait tartalmazza:
 
@@ -54,13 +54,13 @@ A lap jobb oldalán található **Kapcsolódó** információ ablaktábla az el�
 
 A **Legfontosabb tényezők** szakasz adatai, valamint a **Customer Insights** és a **Vevői előzmények** gyorslapok segítenek a kifizetési előrejelzések elmagyarázásában. Az előrejelzések hatékonyságának növelése érdekében fokozhatja a megbízhatóságát.
 
-[![A kapcsolódó információ ablaktáblán látható kifizetési előrejelzések grafikai mutatói](./media/payment-prediction-gauges.png)](./media/payment-prediction-gauges.png)
+[![A kapcsolódó információ ablaktáblán látható kifizetési előrejelzések grafikai mutatói.](./media/payment-prediction-gauges.png)](./media/payment-prediction-gauges.png)
 
 ### <a name="payment-prediction-per-customer-list-page"></a>Vevői listaoldalonkénti fizetési előrejelzés
 
 A **Vevőnkénti fizetési előrejelzés** lista oldalon látható a teljes nyitott egyenleg és az előre jelzett összeg az **Időben**, a **Későn** és a **Nagyon későn** gyűjtők.
 
-[![Vevői listaoldalonkénti fizetési előrejelzések](./media/payment-predictions-per-transaction-02.png)](./media/payment-predictions-per-transaction-02.png)
+[![Vevői listaoldalonkénti fizetési előrejelzések.](./media/payment-predictions-per-transaction-02.png)](./media/payment-predictions-per-transaction-02.png)
 
 A program kiszámítja az egyes gyűjtők kifizetési összegét a tranzakció egyenlege súlyozott átlagának összegével. Ez az összeg számítása az egyes gyűjtők fizetési valószínűségei alapján történik.
 
@@ -92,11 +92,11 @@ A **Legfontosabb tényezők** szakasz adatai, valamint a **Customer Insights** �
 
 Megtekintheti a fizetési előrejelzések pontosságát a **Jóváírások és gyűjtemények \> Beállítás \> Pénzügyi információk \> Pénzügyi információ paraméterek** alapján. A **Vevői fizetési információk** lapon az **Előrejelzési modell** szakasz az előrejelzési modell pontosságát jeleníti meg százalékban.
 
-[![A kifizetési előrejelzések pontossága](./media/finance-insights-parameters-accuracy-2nd.png)](./media/finance-insights-parameters-accuracy-2nd.png)
+[![A kifizetési előrejelzések pontossága.](./media/finance-insights-parameters-accuracy-2nd.png)](./media/finance-insights-parameters-accuracy-2nd.png)
 
 Ha nem elégedett a pontossággal, akkor a **Modell pontosságának javítása** hivatkozásra kattintva nyissa meg az AI Builder bővítményélményt. Az AI Builder bővítményélményben kiválaszthatja vagy törölheti a kiválasztott mezőket mindaddig, amíg be nem jelölte azokat a mezőket, amelyeket úgy gondolja, hogy a fizetési valószínűségek pontos előrejelzéséhez a legfontosabbak. Ha befejezte a munkát, egyszerűen átrendezheti a előrejelzési modellt, majd feladhatja a változtatásokat. Az újonnan betanított előrejelzési modell automatikusan felveszi az előrejelzéseket a Dynamics 365 Finance-ben.
 
-[![AI Builder bővítményélmény](./media/ai-builder.png)](./media/ai-builder.png)
+[![AI Builder bővítményélmény.](./media/ai-builder.png)](./media/ai-builder.png)
 
 ## <a name="release-details"></a>Kiadás adatai
 

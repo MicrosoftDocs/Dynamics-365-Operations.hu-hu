@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-12-07
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 3340ea07414eb92997ab4a9d6fa46cd075f8f9db
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: ea0f60424ff1ee40a4231aa9cc129bb942fca519
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021007"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353564"
 ---
 # <a name="landed-cost-parameters-setup"></a>Partraszállítási költség paramétereinek beállítása
 
@@ -31,7 +31,7 @@ A **Partraszállítási költség paraméterei** oldal használatával általán
 
 A paraméterek kezeléséhez lépjen a **Partraszállítási költség \> Beállítás \> Partraszállítási költség paraméterei** lehetőségre, majd a következő alszakaszok szerint állítsa be a mezőket.
 
-![Partraszállítási költség paraméterei oldal](media/landed-cost-parameters.png "Partraszállítási költség paraméterei oldal")
+![Partraszállítási költség paraméterei oldal.](media/landed-cost-parameters.png "Partraszállítási költség paraméterei oldal")
 
 ## <a name="general-tab"></a>Általános fül
 

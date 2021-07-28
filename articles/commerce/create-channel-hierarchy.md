@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 5df46de9dadfa0b7160a9b340ef36fdf963a0ad3
-ms.sourcegitcommit: 6c2f5c3b038f696532c335e20b0fbafa155d6858
+ms.openlocfilehash: e43c4c00545dfecb2f9a2192f81cd25300e3d6e6
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "5951908"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352470"
 ---
 # <a name="create-a-channel-navigation-hierarchy"></a>Csatorna navigációs hierarchiájának létrehozása
 
@@ -49,7 +49,7 @@ Csatorna navigációs hierarchiájának létrehozásához kövesse az alábbi l�
 
 A következő képen egy gyökércsomópont példája látható.
 
-![Minta gyökércsomópont](media/create-channel-hierarchy-1.png)
+![Minta gyökércsomópont.](media/create-channel-hierarchy-1.png)
 
 ## <a name="create-navigation-category-nodes"></a>Navigációskategória-csomópontok létrehozása
 
@@ -65,7 +65,7 @@ További navigációskategória-csomópontok létrehozásához a csatornán szer
 
 A következő kép egy példát mutat be egy elkészített csatorna navigációs hierarchiára.
 
-![Minta csatornahierarchia](media/create-channel-hierarchy-2.png)
+![Minta csatornahierarchia.](media/create-channel-hierarchy-2.png)
 
 ## <a name="add-products-to-category-nodes"></a>Termékek hozzáadása a kategóriacsomópontokhoz
 
@@ -81,7 +81,7 @@ Termékek hozzáadásához a kategóriacsomópontokhoz hajtsa végre az alábbi 
 
 A következő képen egy csomópont példája láható, hozzáadott termékekkel.
 
-![Termékek hozzáadva egy kategóriacsomóponthoz](media/create-channel-hierarchy-3.png)
+![Termékek hozzáadva egy kategóriacsomóponthoz.](media/create-channel-hierarchy-3.png)
 
 ## <a name="add-product-attribute-groups-to-category-nodes"></a>Termékattribútumok-csoportok hozzáadása a kategóriacsomópontjokhoz
 
@@ -97,7 +97,7 @@ A következő lépésekkel lehet hozzáadni egy attribútumcsoportot egy kategó
 
 A következő képen egy csomópontminta láható, hozzáadott termékattribútum-csoportokkal.
 
-![Termékattribútum-csoportok egy csomóponton](media/create-channel-hierarchy-4.png)
+![Termékattribútum-csoportok egy csomóponton.](media/create-channel-hierarchy-4.png)
 
 ## <a name="additional-resources"></a>További erőforrások
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 014684595c7cd65383dc12d9eec2dd8ea7b8c20f
-ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
+ms.openlocfilehash: 872f4cfd968b70cb8a2087822870dcc76e83e92b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6186738"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349010"
 ---
 # <a name="evaluate-the-initial-customer-payment-prediction-model-preview"></a>A kezdeti vevői fizetési előrejelzési modell kiértékelése (előzetes verzió)
 
@@ -33,32 +33,32 @@ Ez a témakör azt mutatja be, hogyan lehet értékelni egy előrejelzési model
 
 A Microsoft Dynamics 365 Finance **Finance Insights paraméterei** lapon a **Modell pontosságának javítása** hivatkozás megjelenik a pontossági pontszám mellett.
 
-[![Modell pontosságának javítása hivatkozás](./media/prediction-model.png)](./media/prediction-model.png)
+[![Modell pontosságának javítása hivatkozás.](./media/prediction-model.png)](./media/prediction-model.png)
 
 Ez a link elviszi az AI Builderhez, ahol többet megtudhat az aktuális modellről, és lépéseket tehet a javítása érdekében. A következő ábrán egy megnyitott oldal látható.
 
-[![AI Builder](./media/what-to-predict.png)](./media/what-to-predict.png)
+[![AI Builder.](./media/what-to-predict.png)](./media/what-to-predict.png)
 
 A megnyitott oldal az alábbi információt mutatja:
 
 - A **Teljesítmény** szakaszban a modell teljesítményi osztálya biztosítja a modell minőségét. Ha további tájékoztatást szeretne erről az osztályról, tekintse meg az [Előrejelzési modell teljesítménye](/ai-builder/prediction-performance) részt az AI Builder dokumentációjában.
 - A **Legbefolyásosabb adat** szakasz bemutatja, hogy milyen fontos a különböző típusú adatok bevitele a modellhez. A lista és a megfelelő százalékok értékelésével meghatározhatja, hogy az adatok összhangban vannak-e a vállalattal és a piaccal kapcsolatos ismeretekkel.
 
-    [![Teljesítmény és legbefolyásosabb adatszakaszok az előrejelzési modellhez](./media/models.png)](./media/models.png)
+    [![Teljesítmény és legbefolyásosabb adatszakaszok az előrejelzési modellhez.](./media/models.png)](./media/models.png)
 
 - A **Teljesítmény** szakaszban válassza a **Részletek megjelenítése** lehetőséget, ha többet szeretne megtudni az osztályról és egyéb szempontokról. A következő ábrán a részletek azt mutatják, hogy a modell a javasoltnál kevesebb információt használ. A rendszer emiatt figyelmeztető üzenetet hozott létre.
 
-    [![A modell teljesítményével kapcsolatos figyelmeztetések](./media/details.png)](./media/details.png)
+    [![A modell teljesítményével kapcsolatos figyelmeztetések.](./media/details.png)](./media/details.png)
 
 ## <a name="digging-deeper"></a>Mélyebbre ásás
 
 Bár a pontosság jó kiindulópont egy modell kiértékeléséhez, és a teljesítmény osztálya biztosítja a távlatot, az AI Builder részletesebb metrikákat tartalmaz, amelyek az értékeléséhez használhat. A részletek letöltéséhez kattintson a **Teljesítmény** szakaszban a három pont gombra (**...**) a **Modell használata** gombra, majd válassza ki a **Részletes metrikák letöltése** lehetőségre.
 
-[![Részletes metrikák letöltése parancs](./media/performance.png)](./media/performance.png)
+[![Részletes metrikák letöltése parancs.](./media/performance.png)](./media/performance.png)
 
 A következő ábra bemutatja azt a formátumot, amelyen le lehet tölteni az adatokat.
 
-[![Letöltött adatok formátuma](./media/data-format.png)](./media/data-format.png)
+[![Letöltött adatok formátuma.](./media/data-format.png)](./media/data-format.png)
 
 Az eredmények mélyebb elemzéséhez egy jó kiindulási pontot kell áttekinteni a „zavartság-mátrix” metrikájában. Itt látható például az előző ábra ehhez a metrikához megjelenített adatai.
 

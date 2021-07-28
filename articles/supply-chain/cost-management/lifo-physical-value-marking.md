@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 294c7bbb328c31c6c3fdc16a72267224d7c71b27
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: dcac72a60eac6abb29a017eb4ce02a71dca572d3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5809734"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344544"
 ---
 # <a name="lifo-with-physical-value-and-marking"></a>LIFO tényleges értékkel és jelöléssel
 
@@ -53,7 +53,7 @@ Ebben a példában a cikkmodellcsoport nem tartalmazza a tényleges értéket. A
 
 Az új, mozgóátlagon alapuló önköltségi ár, a pénzügyileg frissített tranzakciók átlagának, azaz 15,00 USD összegnek felel meg. A következő illusztráció bemutatja, milyen hatása van a LIFO készletmodellnek erre a tranzakció sorozatra, ha a **Tényleges értékkel együtt** beállítás nincs beállítva. 
 
-![LIFO a tényleges értékkel nélkül](./media/lifowithoutincludephysicalvalue.gif) 
+![LIFO a tényleges értékkel nélkül.](./media/lifowithoutincludephysicalvalue.gif) 
 
 **Jelmagyarázat**
 
@@ -89,7 +89,7 @@ A 6a jelű tranzakció a 4b jelű bevételezési tranzakcióra lesz helyesbítve
 
 A következő ábra bemutatja, milyen hatása van a LIFO készletmodellnek, ha a **Tényleges értékkel együtt** beállítás be van kapcsolva. 
 
-![LIFO a tényleges értékkel együtt](./media/lifowithincludephysicalvalue.gif) 
+![LIFO a tényleges értékkel együtt.](./media/lifowithincludephysicalvalue.gif) 
 
 **Jelmagyarázat**
 
@@ -133,7 +133,7 @@ Az új, mozgóátlagon alapuló önköltségi ár a pénzügyileg és fizikailag
 
 A következő diagram a LIFO-elvű készletmodell hatását ábrázolja olyan tranzakciósorozatra, ahol kiadások és bevételezések vannak egymáshoz rendelve. 
 
-![LIFO jelöléssel](./media/lifowithmarking.gif) 
+![LIFO jelöléssel.](./media/lifowithmarking.gif) 
 
 **Jelmagyarázat**
 

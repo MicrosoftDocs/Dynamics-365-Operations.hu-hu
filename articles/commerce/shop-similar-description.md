@@ -16,12 +16,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: ce01ef1d4b916d955685b4d01dafd3d54d6fcebd
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: baf6064fbddc3b49cfb0d950896c0b448bddb560
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795405"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357786"
 ---
 # <a name="enable-shop-similar-description-recommendations"></a>„Hasonló leírású termékek vásárlása” javaslatok engedélyezése
 
@@ -79,7 +79,7 @@ Ahhoz, hogy a **Hasonló megvásárlása leírás** gombot hozzáadja a PDP-hez 
 
 A következő ábra bemutatja a **Hasonló megvásárlása hivatkozás engedélyezése** jelölőnégyzetet, és a **Hasonló megvásárlása leírás** gombot egy PDP-oldalon a webhelykészítőben.
 
-![A Hasonló megvásárlása hivatkozás engedélyezése jelölőnégyzeten és Hasonló megvásárlása leírás gomb egy PDP-oldalon a webhelykészítőben](./media/ter_site_builder_buybox_button.png)
+![A Hasonló megvásárlása hivatkozás engedélyezése jelölőnégyzeten és Hasonló megvásárlása leírás gomb egy PDP-oldalon a webhelykészítőben.](./media/ter_site_builder_buybox_button.png)
 
 ## <a name="additional-resources"></a>További erőforrások
 

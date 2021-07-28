@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jeffbl
 ms.search.validFrom: 2017-11-21
 ms.dyn365.ops.version: Application update 5
-ms.openlocfilehash: 74df8ac27c2028582b8909db0a7260b9b0ed38f5
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a81a779dd484d30397c89076d081413a72560f0b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797281"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348707"
 ---
 # <a name="assortment-management"></a>Szortiment kezelése
 
@@ -49,13 +49,13 @@ Másik lehetőségként hozzáadhatja az 1. üzletet a 2. szortimenthez.
 
 Az olyan helyzetekben, ahol több csatorna osztozik ugyanazon a termékszortimenteken, a szortimentek konfigurálhatók a Commerce szortimentszervezeti hierarchia használatával. Ha ebből a hierarchiából ad hozzá csomópontokat, a csomópontban és a gyermek csomópontjaiban levő összes csatorna szerepelni fog.
 
-![Szervezeti hierarchia](./media/Managing-assortments-figure4.png)
+![Szervezeti hierarchia.](./media/Managing-assortments-figure4.png)
 
 ### <a name="product-categories"></a>Termékkategóriák
 
 Ehhez hasonlóan a termékoldalon is felvehet termékcsoportokat a termék-kategóriahierarchiák használatával. A szortimentek konfigurálását elvégezheti egy vagy több kategóriahierarchia-csomópont hozzáadásával. Ebben az esetben a szortiment tartalmazni fogja az összes terméket a kategória-csomópontból és gyermek csomópontjaiból.
 
-![Termékkategóriák](./media/Managing-assortments-figure5.png)
+![Termékkategóriák.](./media/Managing-assortments-figure5.png)
 
 ### <a name="excluded-products-or-categories"></a>Kizárt termékek vagy kategóriák
 
@@ -64,7 +64,7 @@ A termékek és kategóriák szortimentekhez adásán kívül a kihagyás beáll
 > [!NOTE]
 > Ha egy termék egyszerre ki van zárva és be van véve egy vagy szortimentbe/szortimentből meghatározás szerint, a termék mindig kizártként lesz figyelembe véve.
 
-![Kizárt termékek](./media/Managing-assortments-figure6.png)
+![Kizárt termékek.](./media/Managing-assortments-figure6.png)
 
 ### <a name="global-and-released-products"></a>Globális és kiadott termékek
 

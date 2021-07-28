@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: fa174bbb257379f6ce906dd21180bbcb19f8bc3f
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 647060635813ad7e680ea88be76668818ff606d3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021127"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350354"
 ---
 # <a name="order-synchronization-error-related-to-the-default-payment-service"></a>Az alapértelmezett fizetési szolgáltatáshoz kapcsolódó rendelésszinkronizálási hiba
 
@@ -32,9 +32,9 @@ Ez a témakör olyan hibaelhárítási útmutatást tartalmaz, amely segítsége
 
 Online rendelés szinkronizálása esetén a következő hibaüzenet jelenik meg: „A hitelkártyás tranzakciók feldolgozásához szükség van egy alapértelmezett fizetési szolgáltatásra.”
 
-![Hiányzó alapértelmezett fizetési szolgáltatással kapcsolatos hiba](media/default-payment-method-error.jpg)
+![Hiányzó alapértelmezett fizetési szolgáltatással kapcsolatos hiba.](media/default-payment-method-error.jpg)
 
-## <a name="resolution"></a>Felbontás
+## <a name="resolution"></a>Megoldás
 
 ### <a name="confirm-or-set-the-default-payment-service-in-commerce-headquarters"></a>Az alapértelmezett fizetési szolgáltatás megerősítése vagy beállítása a Commerce központi felületén
 

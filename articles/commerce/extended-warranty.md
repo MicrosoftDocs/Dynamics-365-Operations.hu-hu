@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: sijoshi
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 567f102cfe78a92e2e6f1243fb531dd3366c9bf2
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 699c285ba0f92df4ccc05790b813ff423c01b62a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792463"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353828"
 ---
 # <a name="create-and-configure-extended-warranties"></a>Kiterjesztett garanciák létrehozása és konfigurálása
 
@@ -81,7 +81,7 @@ A garanciacikk létrehozásához a Commerce rendszerben hajtsa végre az alábbi
 
     Ha például két éves a garancia van, akkor az **Időegység** mezőt **Év(ek)** értékre, míg az **Időtartam** mezőt **2** értékre állítsa. Azt is megteheti, hogy az **Időegység** mezőt **Hónap(ok)** értékre állítja, és az **Időtartam** mezőt **24** értékre állítja , ahogy az a következő ábrán látható.
 
-    ![Egy garanciacikk termékazonosító lapja](./media/ew-time-properties.png)
+    ![Egy garanciacikk termékazonosító lapja.](./media/ew-time-properties.png)
 
 1. A garanciacikk mentéséhez válassza a **Mentés** parancsot.
 1. A garanciatermék kiadása a vállalatnak, hogy el lehessen azt adni. További információért lásd: [Kiskereskedelmi termékek beállítása](set-up-retail-products.md).
@@ -94,7 +94,7 @@ A garanciacikk létrehozásához a Commerce rendszerben hajtsa végre az alábbi
 
     A következő ábra például azt mutatja, hogy az **Ártartomány alapja** mező **Alapár** értékre van állítva , az **Alsó határ** mező értéke 500 dollár, és a **Felső határ** mező értéke 1000 dollár.
     
-    ![Egy garanciacikk kiadott-termékazonosító lapja](./media/ew-release-product-details.png)
+    ![Egy garanciacikk kiadott-termékazonosító lapja.](./media/ew-release-product-details.png)
 
 1. A garanciacikk hozzárendelése a csatornához, ahol az értékesítés történik. További információ: [Szortimentek beállítása](set-up-assortments.md).
 
@@ -161,11 +161,11 @@ Két pénztárművelet teszi lehetővé, hogy az értékesítési munkatársak v
 
 A következő ábra példát mutat be egy POS terminál lapjára, amelyen egy üzenet azt kérdezi, hogy hozzá szeretne-e adni egy garanciacikket az aktuálisan vásárolt garanciára jogosult cikkhez.
 
-![Példa egy garanciacikk hozzáadásával kapcsolatos üzenetre az aktuális vásárláshoz](./media/ew-sell-warranty.png)
+![Példa egy garanciacikk hozzáadásával kapcsolatos üzenetre az aktuális vásárláshoz.](./media/ew-sell-warranty.png)
 
 A következő ábra egy példát mutat be arra a funkcióra, amelyben garanciacikket lehet hozzáadni egy korábban vásárolt garanciára jogosult cikkhez.
 
-![Példa arra a funkcióra, amellyel garanciacikket adhat hozzá egy korábban értékesített garanciára jogosult cikkhez](./media/ew-add-warranty-existing.png)
+![Példa arra a funkcióra, amellyel garanciacikket adhat hozzá egy korábban értékesített garanciára jogosult cikkhez.](./media/ew-add-warranty-existing.png)
 
 ## <a name="process-warranty-transactions"></a>Garanciatranzakciók feldolgozása
 

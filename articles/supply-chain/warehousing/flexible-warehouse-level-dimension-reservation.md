@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-01-15
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: ed90e773e1b8c90afc119a471cf844941ad19226
-ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
+ms.openlocfilehash: eca0b61e1fa6760bfed1a9f9979deddccf6fb1a5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "6103046"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6343774"
 ---
 # <a name="flexible-warehouse-level-dimension-reservation-policy"></a>Rugalmas raktárszintű dimenzió foglalási irányelv
 
@@ -58,7 +58,7 @@ Bár a *Köteg alatti\[hely\]* foglalási hierarchia jól szolgálja a vállalat
 
 A *Köteg alatti\[hely\]* foglalási hierarchiához társított cikkek kötegelt foglalási viselkedésében szükséges rugalmasság elérése érdekében a **Készletfoglalási hierarchiák** lapon a készletkezelőnek be kell jelölnie az **Foglalás engedélyezése igény szerinti foglalásra** jelölőnyégyzetet a **Köteg száma** szinten.
 
-![A készletfoglalási hierarchia rugalmassá tétele](media/Flexible-inventory-reservation-hierarchy.png)
+![A készletfoglalási hierarchia rugalmassá tétele.](media/Flexible-inventory-reservation-hierarchy.png)
 
 Ha a hierarchiában kiválasztja a **Kötegszám** szintjét, akkor a program automatikusan kijelöli az illető szint fölötti és a **Hely** szintjén található összes dimenziót. (Alapértelmezetten szerint a **Hely** szint fölötti összes dimenzió előre be van jelölve.) Ez a viselkedés azt a logikát jelzi, amely szerint a kötegszám és a hely közötti tartományban található összes dimenziót a program automatikusan lefoglalja, miután a felhasználó lefoglalt egy meghatározott kötegszámot a rendelési sorban.
 
@@ -145,7 +145,7 @@ Ebben a példában a bemutatóadatokat kell telepíteni, és az **USMF** demó-a
 
 6. A **Köteg foglalása** lapon válassza ki a **B11** köteg sorát, majd válassza a **Sor foglalása** lehetőséget. Nincs kijelölt logika a helyek és a rendszámtáblák hozzárendelésére az automatikus foglalás során. A mennyiséget a **Foglalás** mezőbe manuálisan is beviheti. Figyelje meg, hogy a **Forrássorhoz vállalt kötegszámok** gyorslapon a **B11** köteg mellett a **Vállalt** szó látható.
 
-    ![Meghatározott kötegszám vállalása egy értékesítési rendelés sorába a Köteg foglalása oldalon](media/Batch-reservation-form-with-order-committed-reservation.png)
+    ![Meghatározott kötegszám véglegesítése egy értékesítési rendelés sorában a Köteg foglalása oldalon.](media/Batch-reservation-form-with-order-committed-reservation.png)
 
     > [!NOTE]
     > Az értékesítési rendelés sorában szereplő mennyiség lefoglalása több köteg esetén is megtehető. Hasonlóképpen, ugyanannak a kötegnek a lefoglalása több hely és rendszámtábla esetén is megtehető (ha a rendszámtáblákat engedélyezték az illető helyekre).
@@ -154,7 +154,7 @@ Ebben a példában a bemutatóadatokat kell telepíteni, és az **USMF** demó-a
 
 7. Kattintson a **Termékinformációk kezelése** \> **Termékek** \> **Kiadott termékek** lehetőségre. Válassza ki a kívánt elemet, majd válassza a **Készletkezelés** \> **Nézet** \> **Tranzakciók** elemet.
 
-    ![Rendelésben véglegesített foglalás készlettranzakció-típusként](media/Inventory-transactions-for-order-committed-reservation.png)
+    ![Rendelésben véglegesített foglalás készlettranzakció-típusként.](media/Inventory-transactions-for-order-committed-reservation.png)
 
 8. Tekintse át az értékesítési rendelés sorfoglalásához kapcsolódó készlettranzakciókat.
 
@@ -172,7 +172,7 @@ Ebben a példában a bemutatóadatokat kell telepíteni, és az **USMF** demó-a
     - A munka létrehozásához a rendszer munkasablonokat használ, de nem rendelkezik hellyel kapcsolatos irányelvekkel. A program a munkasablonokhoz meghatározott összes szabványos beállítást, például a kitárolási sorok maximális számát vagy egy konkrét mértékegységet alkalmazni fogja, hogy meghatározza, hogy mikor kell új munkát létrehozni. A kitárolási helyek azonosítására szolgáló hely irányelvvel kapcsolatos szabályokat azonban nem veszi figyelembe, mivel a rendelésben véglegesített foglalás már megadja az összes készlet dimenziót. Ezek a készletdimenziók tartalmazzák a raktárak tárolási szintjén levő dimenziókat. Ezért a munka a hellyel kapcsolatos irányelvek egyeztetése nélkül örökli ezeket a dimenziókat.
     - A kötegszám nem jelenik meg a kitárolási sorban (szemben a társított *Köteg fölötti\[hely\]* foglalási hierarchiát tartalmazó cikkek esetében létrejövő munkasorokkal). Ehelyett a Kezdő kötegszám és az összes többi tárolási dimenzió látható a munkasorban a társított készlettranzakciók alapján hivatkozott munkakészlet-tranzakcióban.
 
-        ![Raktári készlet tranzakciója olyan munkához, amely rendelésben véglegesített foglalásból származik](media/Work-inventory-transactions-for-order-committed-reservation.png)
+        ![Raktári készlet tranzakciója olyan munkához, amely rendelésben véglegesített foglalásból származik.](media/Work-inventory-transactions-for-order-committed-reservation.png)
 
     - Miután létrehozta a munkát, a program eltávolítja a cikk azon készlettranzakcióját, amely esetén a **Referencia** mező beállítása **Rendelésben véglegesített foglalás**. Az a készlettranzakció, amelyben a **Referencia** mező beállása **Munka**, most a tényleges foglalást tárolja az összes mennyiség raktárdimenziója esetén.
 
@@ -207,7 +207,7 @@ A rugalmas azonosítótábla-foglalás használata előtt két funkciót be kall
 
 Ha engedélyezni szeretné az azonosítótábla foglalását egy rendelésen, akkor ki kell választania a **Foglalás engedélyezése az igény szerinti rendelésnél** jelölőnégyzetet az **Azonosítótábla** szinten a megfelelő cikkel társított hierarchiához tartozó **Készletfoglalási hierarchiák** oldalon.
 
-![Készletfoglalási hierarchiák oldala a rugalmas azonosítótábla foglalási hierarchiához](media/Flexible-LP-reservation-hierarchy.png)
+![Készletfoglalási hierarchiák oldala a rugalmas azonosítótábla foglalási hierarchiához.](media/Flexible-LP-reservation-hierarchy.png)
 
 A rendeléshez tartozó azonosítótábla-foglalást a telepítés bármely pontján engedélyezheti. A módosítás nem fogja érinteni a módosítás előtt létrehozott foglalásokat vagy nyitott raktári munkákat. Azonban a **Foglalás engedélyezése az igény szerinti rendelésnél** jelölőnégyzetet nem tudja törölni, ha az adott foglalási hierarchiához társított egy vagy több cikk esetén a *Rendelésben*, *Foglalt tényleges* vagy *Megrendelve* állapotú nyitott, kimenő készlettranzakció-problémák léteznek.
 
@@ -227,7 +227,7 @@ Amikor a rendeléshez véglegesített azonosítótábla-foglalást használó é
 
 Ha egy raktári munkacikk olyan sorokból áll, amelyek egy teljes raklapnak felelnek meg, és rendelkeznek azonosítótáblával – véglegesített mennyiségekkel, akkor a kitárolási folyamatot egy olyan mobileszköz menüelemével optimalizálhatja, amin a **Kezelés azonosítótábla szerint** értéke *Igen*. A raktári dolgozó ezután a tárolási munka befejezéséhez beolvashatja az azonosítótáblát, és nem kell egyenként beolvasnia a cikkeket.
 
-![A mobileszköz menüeleme, amelyen a Kezelés azonosítótábla szerint lehetőség Igen értékre van állítva](media/Handle-by-LP-menu-item.png)
+![A mobileszköz menüeleme, amelyen a Kezelés azonosítótábla szerint lehetőség Igen értékre van állítva.](media/Handle-by-LP-menu-item.png)
 
 Mivel a **Kezelés azonosítótábla szerint** funkció nem támogatja a több raklapot magába foglaló munkát, jobb, ha külön munkaelemet használ a különböző azonosítótáblákhoz. Ennek a módszernek a használatához adja hozzá a **Munkasablon** oldalhoz munkafejlécként a **Rendeléshez véglegesített azonosítótábla azonosítója** mezőt.
 
@@ -249,7 +249,7 @@ Ez a forgatókönyv olyan értékekre és rekordokra hivatkozik, amelyek szerepe
 1. Adjon meg egy értéket a **Név** mezőben (pl. *FlexibleLP*).
 1. A **Leírás** mezőben adjon meg egy értéket (például: *Rugalmas LP foglalás*).
 1. A **Kiválasztott** listában válassza ki a **Kötegszám**, **Sorozatszám**, és **Tulajdonos** értéket.
-1. Válassza az **Eltávolítás** gomb ![vissza nyíl](media/backward-button.png) lehetőségét a kiválasztott rekordok **Elérhető** listára történő átmozgatásához.
+1. Válassza az **Eltávolítás** gombot a ![a vissza nyíllal.](media/backward-button.png) a kijelölt rekordok **Elérhető** listára helyezéséhez.
 1. Válassza ki az **OK** lehetőséget.
 1. Az **Azonosítótábla** dimenzió szintjének sorában jelölje be a **Foglalás engedélyezése igény szerinti rendelésnél** jelölőnégyzetet. A **Hely** szintje automatikusan be van jelölve, és a jelölőnégyzet nem törölhető.
 1. Válassza a **Mentés** lehetőséget.

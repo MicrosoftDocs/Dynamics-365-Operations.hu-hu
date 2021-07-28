@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2a9cdd16f0a1592690547a687a731de83a720018
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: ce87f14c17aa44d73de22e7f1711794a499c67de
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5830124"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352712"
 ---
 # <a name="weighted-average-with-physical-value-and-marking"></a>Súlyozott átlag tényleges értékkel és jelöléssel
 
@@ -65,7 +65,7 @@ Az alábbi esetben egy pénzügyi szempontból frissített bevételezés és kia
 
 A következő diagram bemutatja a tranzakciósorozatot, és a súlyozott átlag készletmodell, valamint a Tényleges értékkel együtt beállítás nélkül alkalmazott közvetlen kiegyenlítési elv hatását a folyamatra. 
 
-![Súlyozott átlagos közvetlen elszámolás a tényleges érték nélkül](./media/weightedaveragedirectsettlementwithoutincludephysicalvalue.gif) 
+![Súlyozott átlagos közvetlen elszámolás a tényleges érték nélkül.](./media/weightedaveragedirectsettlementwithoutincludephysicalvalue.gif) 
 
 **Jelmagyarázat**
 - A készlettranzakciókat függőleges nyilak jelölik.
@@ -99,7 +99,7 @@ Az alábbi ábra a következő tranzakciókat mutatja be:
 
 A következő diagram bemutatja a tranzakciósorozatot, és a súlyozott átlag készletmodell, valamint a Tényleges értékkel együtt beállítás nélkül alkalmazott közvetlen kiegyenlítési elv hatását a folyamatra. 
 
-![Súlyozott átlagos összegző elszámolás a tényleges érték nélkül    ](./media/weightedaveragesummarizedsettlementwithoutincludephysicalvalue.gif) 
+![Súlyozott átlagos összegző elszámolás a tényleges érték nélkül.](./media/weightedaveragesummarizedsettlementwithoutincludephysicalvalue.gif) 
 
 **Jelmagyarázat**
 - A készlettranzakciókat függőleges nyilak jelölik.
@@ -128,7 +128,7 @@ Az alábbi ábra a következő tranzakciókat mutatja be:
 
 A következő diagram bemutatja a tranzakciósorozatot, és a súlyozott átlag készletmodell, valamint a Tényleges értékkel együtt beállítás nélkül alkalmazott közvetlen kiegyenlítési elv hatását a folyamatra. 
 
-![Súlyozott átlagos közvetlen elszámolás a tényleges értékkel együtt](./media/weightedaveragedirectsettlementwithincludephysicalvalue.gif) 
+![Súlyozott átlagos közvetlen elszámolás a tényleges értékkel együtt.](./media/weightedaveragedirectsettlementwithincludephysicalvalue.gif) 
 
 **Jelmagyarázat**
 - A készlettranzakciókat függőleges nyilak jelölik.
@@ -161,7 +161,7 @@ Az alábbi ábra a következő tranzakciókat mutatja be:
 
 A következő diagram bemutatja a tranzakciósorozatot, és a súlyozott átlag készletmodell, valamint a Tényleges értékkel együtt beállítás nélkül alkalmazott közvetlen kiegyenlítési elv hatását a folyamatra. 
 
-![Súlyozott átlagos összegző elszámolás a tényleges értékkel együtt](./media/weightedaveragesummarizedsettlementwithincludephysicalvalue.gif) 
+![Súlyozott átlagos összegző elszámolás a tényleges értékkel együtt.](./media/weightedaveragesummarizedsettlementwithincludephysicalvalue.gif) 
 
 **Jelmagyarázat**
 - A készlettranzakciókat függőleges nyilak jelölik.
@@ -209,7 +209,7 @@ Az új, mozgóátlagon alapuló önköltségi ár a pénzügyileg és fizikailag
 
 A következő diagram a tranzakciók sorozatát, és a súlyozott átlagon alapuló készletmodell és jelölés folyamatra gyakorolt hatását ábrázolja. 
 
-![Súlyozott átlag jelöléssel    ](./media/weightedaveragewithmarking.gif) 
+![Súlyozott átlag jelöléssel.](./media/weightedaveragewithmarking.gif) 
 
 **Jelmagyarázat**
 - A készlettranzakciókat függőleges nyilak jelölik.

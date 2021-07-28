@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2019-09-18
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: acf5ead6ed90d4dbb41de08520cde8085a7f3935
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: c58a5bfbc140eb770415a96d1d9c5748e3e2d132
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5823716"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350024"
 ---
 # <a name="enable-delayed-tax-calculation-on-journals"></a>Késleltetett adószámítás engedélyezése a naplókban
 [!include [banner](../includes/banner.md)]
@@ -45,14 +45,14 @@ A rendszer prioritást ad a naplófejléc beállításának. Alapértelmezés sz
 1. Menjen a **Főkönyv \> Főkönyv beállítás \> Főkönyv paraméterei** pontra.
 2. Az **Áfa** lapon, az **Általános** gyorslapon állítsa a **Késleltetett adószámítás** beállítást **Igen** értékre.
 
-![Főkönyvi paraméterek képe](media/delayed-tax-calculation-gl.png)
+![Főkönyvi paraméterek képe.](media/delayed-tax-calculation-gl.png)
 
 ## <a name="turn-on-delayed-tax-calculation-at-the-journal-name-level"></a>A késleltetett adószámítás bekapcsolása a naplónév szintjén
 
 1. Menjen a **Főkönyv \> Naplóbeállítások \> Naplónevek** pontra.
 2. Az **Általános** gyorslapon az **Áfa** szakaszban állítsa a **Késleltetett adószámítás** beállítást **Igen** értékre.
 
-![Naplónevek képe](media/delayed-tax-calculation-journal-name.png)
+![Naplónevek képe.](media/delayed-tax-calculation-journal-name.png)
 
 ## <a name="turn-on-delayed-tax-calculation-at-the-journal-header-level"></a>A késleltetett adószámítás bekapcsolása a naplófejléc szintjén
 
@@ -61,7 +61,7 @@ A rendszer prioritást ad a naplófejléc beállításának. Alapértelmezés sz
 3. Válasszon egy naplónevet.
 4. A **Beállítás** lapon adja meg a **Késleltetett adószámítás** beállítását **Igen** értékre.
 
-![Általános naplólap képe](media/delayed-tax-calculation-journal-header.png)
+![Általános naplólap képe.](media/delayed-tax-calculation-journal-header.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

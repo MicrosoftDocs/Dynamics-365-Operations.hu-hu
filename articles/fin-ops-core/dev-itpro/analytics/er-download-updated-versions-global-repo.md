@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 724048991fc8864ef72a5155af66b9c709f4b875
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 5f7ae0888656dd452af17e33d600f7894b801b1d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893956"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351722"
 ---
 # <a name="import-updated-versions-of-er-configurations"></a>Az ER-konfigurációk frissített verzióinak importálása
 
@@ -41,11 +41,11 @@ Ez a témakör azt mutatja be, hogyan lehet importálni az ER-konfigurációk fr
 2. Ugorjon a **Szervezeti adminisztráció** \> **Munkaterületek** \> **Elektronikus jelentés** pontra.
 3. A **Honosítási konfigurációk** oldalon, a **Kapcsolódó hivatkozások** szakaszban, válassza a **Konfigurációk verziófrissítéseinek importálása** elemet.
 
-    ![Honosítási konfigurációk oldala](./media/er-download-updated-versions-global-repo1.png)
+    ![Lokalizációs konfigurációk oldala.](./media/er-download-updated-versions-global-repo1.png)
 
 4. Az **Elektronikus jelentéskészítési konfigurációk verziófrissítéseinek importálása** párbeszédpanel **Futtatási mód** mezőjében válassza a **Csak rendelkezésre álló frissítések megjelenítése** lehetőséget. Majd kattintson az **OK** lehetőségre. 
 
-    ![A Futtatási mód mező Csak rendelkezésre álló frissítések megjelenítése beállítással](./media/er-download-updated-versions-global-repo2.png)
+    ![A Futtatási mód mező Csak rendelkezésre álló frissítések megjelenítése beállítással.](./media/er-download-updated-versions-global-repo2.png)
 
 5. Tekintse át a kapott üzeneteket. Ezek az üzenetek a következő információkat tartalmazzák az aktuális Finance-példányban található ER-konfigurációkról, valamint a globális adattár tartalmának összehasonlításáról:
 
@@ -72,14 +72,14 @@ Ez a témakör azt mutatja be, hogyan lehet importálni az ER-konfigurációk fr
 4. Az **Elektronikus jelentéskészítési konfigurációk verziófrissítéseinek importálása** párbeszédpanel **Futtatási mód** mezőjében válassza a **Legújabb frissítések importálása** lehetőséget, ha a globális adattárból az ER-konfigurációk legfrissebb verzióit szeretné importálni az aktuális Finance-példányba.
 5. Ha ütemezni szeretne egy kötegelt feladatot az importáláshoz, a **Futtatás a háttérben** gyorslapon állítsa a **Kötegelt feldolgozás** beállítást **Igen** értékre. Ha időnként meg szeretné ismételni az importálást, konfigurálja a szükséges ismétlődést.
 
-    ![Futtatási mód mező a Legújabb frissítések importálása beállítással](./media/er-download-updated-versions-global-repo5.png)
+    ![Futtatási mód mező a Legújabb frissítések importálása beállítással.](./media/er-download-updated-versions-global-repo5.png)
 
 6. Válassza ki az **OK** lehetőséget.
 7. A következő lépések egyikével megtudhatja, hogy mely konfigurációverziók importálása történt meg:
 
     - Ha az importálást interaktívan futtatja a kötegelt feladat használata helyett, tekintse át a kapott üzeneteket.
 
-        ![Interaktív importálás futtatása közben kapott üzenetek](./media/er-download-updated-versions-global-repo6.png)
+        ![Interaktív importálás futtatása közben kapott üzenetek.](./media/er-download-updated-versions-global-repo6.png)
 
     - Ha kötegelt módban futtatja az importálást, hajtsa végre a következő lépéseket:
 
@@ -87,7 +87,7 @@ Ez a témakör azt mutatja be, hogyan lehet importálni az ER-konfigurációk fr
         2. Keresse meg és jelölje ki az **Elektronikus jelentéskészítési konfigurációk verziófrissítéseinek importálása** feladatot, majd a művelet ablaktáblán a **Kötegelt feladat** lapon válassza a **Kötegelt feladat előzményei** lehetőséget a feladatok előzményeinek megtekintéséhez.
         3. A **Kötegelt feladat előzményei** oldalon válassza a **Napló** lehetőséget. Ezután a megjelenő üzenetben válassza ki az **Üzenet részletei** hivatkozást a feladat naplójának megtekintéséhez.
 
-        ![Feladat naplója](./media/er-download-updated-versions-global-repo7.png)
+        ![Feladat naplója.](./media/er-download-updated-versions-global-repo7.png)
 
 > [!IMPORTANT]
 > A program nem javasolja ismétlődő kötegeltfeladat-ütemezést az ER-konfigurációk frissített verzióinak közvetlenül a globális adattárból a működési környezetbe való importálásához, mert az importált verziók azonnal használhatók. Ehelyett ennek a módszernek a segítségével egy tesztkörnyezetbe telepítse az ER-konfigurációk verzióit. Ezeket azután a tesztkörnyezetében lehet értékelni, mielőtt termelési környezetbe telepítené őket.

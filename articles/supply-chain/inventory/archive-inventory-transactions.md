@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: 8b61e65d3a641a1e3d73192853c832d57ed17401
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 23da08f982639c9ba0ef847990979f73b96cac22
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021271"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345524"
 ---
 # <a name="archive-inventory-transactions"></a>Készlettranzakciók archiválása
 
@@ -64,7 +64,7 @@ Készlettranzakciók archiválásához kövesse az alábbi lépéseket.
 
     Megjelenik a **Készlettranzakciók archívuma** oldal, és megjeleníti az archivált folyamatrekordok listáját.
 
-    ![Készlettranzakciók archívumának oldala](media/archive-inventory-empty.png "Készlettranzakciók archívumának oldala")
+    ![Készlettranzakciók archívumának oldala.](media/archive-inventory-empty.png "Készlettranzakciók archívumának oldala")
 
 1. A műveletpanelen válassza ki a **Készlettranzakciók archívumát** készlettranzakció-archívum létrehozásához.
 1. A **Készlettranzakciók archívuma** párbeszédpanel **Paraméterek** gyorslapján állítsa be a következő mezőket:
@@ -72,7 +72,7 @@ Készlettranzakciók archiválásához kövesse az alábbi lépéseket.
     - **Kezdési dátum lezárt főkönyvi időszakban** – Válassza ki a legkorábbi tranzakció dátumát, amit szerepeltetni szeretne az archívumban.
     - **Záró dátum lezárt főkönyvi időszakban** – Válassza ki a legkésőbbi tranzakció dátumát, amit szerepeltetni szeretne az archívumban.
 
-    ![Készlettranzakciók archívumának párbeszédablaka](media/archive-inventory-dates.png "Készlettranzakciók archívumának párbeszédablaka")
+    ![Készlettranzakciók archívumának párbeszédablaka.](media/archive-inventory-dates.png "Készlettranzakciók archívumának párbeszédablaka")
 
     > [!NOTE]
     > Csak az [előfeltételeknek](#prerequisites) megfelelő időszakok választhatók ki.
@@ -87,7 +87,7 @@ Készlettranzakciók archiválásához kövesse az alábbi lépéseket.
 
 A **Készlettranzakciók archívuma** oldal a teljes archiválási előzményeket mutatja. A rács minden sorában olyan adatok láthatók, mint például az archívum létrehozási dátuma, az a felhasználó, aki létrehozta, valamint annak állapota.
 
-![Készlettranzakciók archívumának oldalán található archiválási előzmények](media/archive-inventory-full.png "Készlettranzakciók archívumának oldalán található archiválási előzmények")
+![Készlettranzakciók archívumának oldalán található archiválási előzmények.](media/archive-inventory-full.png "Készlettranzakciók archívumának oldalán található archiválási előzmények")
 
 Az oldal tetején lévő legördülő listából válasszon a következő értékek közül a rácsban látható archívum szűréséhez:
 
@@ -109,7 +109,7 @@ A rács feletti eszköztár a következő gombokat tartalmazza, amelyek a kivál
 
 - **Archivált tranzakciók** – a kijelölt archívum részletes megjelenítése. A megjelenő **Archivált tranzakciók** oldal az archívum összes tranzakcióját megjeleníti.
 
-    ![Archivált tranzakciók oldala](media/archive-inventory-transactions.png "Archivált tranzakciók oldala")
+    ![Archivált tranzakciók oldala.](media/archive-inventory-transactions.png "Archivált tranzakciók oldala")
 
     Ha az **Archivált tranzakciók** lapon egy adott tranzakcióval kapcsolatban további információkat is meg kell jeleníteni, jelölje ki azt a rácsban, majd a műveleti ablaktáblán válassza ki az **Archivált tranzakció részletei** elemet. A megjelenő **Archivált tranzakció részletei** oldalon olyan adatok jelennek meg, mint a főkönyvi elszámolás, a kapcsolódó részfőkönyv hivatkozásai és a pénzügyi dimenziók.
 

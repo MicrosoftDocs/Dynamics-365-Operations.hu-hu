@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-06-20
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 9c776cedb65804f8cadbe324082c2abac435f906
-ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
+ms.openlocfilehash: f9953d1a996f6f68600a7fd04719e9b112494175
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6186614"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349897"
 ---
 #  <a name="vat-declaration-for-egypt-eg-00002"></a>Áfabevallás – Egyiptom (EG-00002)
 
@@ -77,7 +77,7 @@ Az alkalmazásspecifikus paraméterek segítségével meghatározhatja az áfatr
 
 Az egyiptomi bevételi és kiadási számlakönyvi jelentések olyan oszlopokat tartalmaznak, amelyek adott tranzakcióosztályozásnak felelnek meg, például az Egyiptomhoz kapcsolódó művelettípusok, terméktípusok és dokumentumtípusok. Ahelyett, hogy ezeket az új osztályozásokat új bejegyzési adatként határoznák meg a tranzakciók feladása során, az osztályozásokat a **Konfigurációk** > **Alkalmazásspecifikus paraméterek** > **Beállítás** pontban bevezetett különböző keresések alapján határozzák meg az egyiptomi áfajelentésekkel szemben támasztott követelményeknek való megfelelés érdekében. 
 
-![Alkalmazásspecifikus paraméterek oldal](media/egypt-vat-declaration-setup1.png)
+![Alkalmazásspecifikus paraméterek oldal.](media/egypt-vat-declaration-setup1.png)
 
 A következő keresési konfigurációk a beszerzési és értékesítési áfakönyvek tranzakcióinak osztályozására használhatók:
 
@@ -206,7 +206,7 @@ Az áfa-visszatérítési űrlap jelentéseinek Microsoft Excel formátumban val
 2. Az **Áfa** lapon az **Adózási beállítások** szakasz **Áfa-bevallás formátumleképezése** mezőben válassza az **Áfabevallás Excel (EG)** lehetőséget. Ha üresen hagyja ezt a mezőt, a normál áfajelentés SSRS-formátumban jön létre.
 3. Válassza ki a **Kategóriahierarchia** lehetőséget. Ez a kategória lehetővé teszi a vámtarifakódot a Külkereskedelem lap tranzakcióiban, lehetővé téve a felhasználók számára az áruk és szolgáltatások kiválasztását és osztályozását. Ennek az osztályozásnak a részletes leírása az értékesítési és beszerzési tranzakciók jelentéseiben található. Ez a konfiguráció nem kötelező.
 
-![Bevallás űrlapja](media/egypt-vat-declaration-setup2.png)
+![Bevallás űrlapja.](media/egypt-vat-declaration-setup2.png)
 
 
 ## <a name="generate-a-vat-return-report"></a>Áfa-visszatérítési jelentés létrehozása

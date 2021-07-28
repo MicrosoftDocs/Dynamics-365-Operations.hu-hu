@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 088f1b13e20602345dbec5179c343e27be9cec44
-ms.sourcegitcommit: 2cd82983357b32f70f4e4a0c15d4d1f69e08bd54
+ms.openlocfilehash: 3774a6258fcefb361c5c2ed709dd7700b1dc071d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "6085500"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351152"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Elektronikus jelentéskészítés (ER) céljai
 
@@ -62,7 +62,7 @@ Ha az **Igen** értékre állítja be a **Kötegelt feldolgozás** beállítást
 > [!NOTE]
 > Egy feladatleírás tájékoztatja Önt egy ER-formátumleképezés futtatásáról. A futtatott ER-komponens nevét is tartalmazza.
 
-[![ER-formátum futtatása](./media/ER_Destinations-RunInBatchMode.png)](./media/ER_Destinations-RunInBatchMode.png)
+[![ER-formátum futtatása.](./media/ER_Destinations-RunInBatchMode.png)](./media/ER_Destinations-RunInBatchMode.png)
 
 A feladattal kapcsolatos információk több helyen is megtalálhatók:
 
@@ -74,17 +74,17 @@ A feladattal kapcsolatos információk több helyen is megtalálhatók:
 
 - Az **Elektronikus jelentéskészítési feladatok** lapon jelölje be a **Fájlok megjelenítése** a feladatok végrehajtása során létrejövő hibák és figyelmeztetések listájának megtekintéséhez.
 
-    [![ER feladatok listájának áttekintése](./media/ER_Destinations-ReviewERJobs.png)](./media/ER_Destinations-ReviewERJobs.png)
+    [![ER-feladatok listájának áttekintése.](./media/ER_Destinations-ReviewERJobs.png)](./media/ER_Destinations-ReviewERJobs.png)
 
 ### <a name="user-configured-behavior"></a>Konfigurált viselkedés használata
 
 Az **Elektronikus jelentéskészítés célja** lapon felül lehet bírálni a konfiguráció alapértelmezett működését. Az importált konfigurációk az **Új** gombra kattintva, majd a **Hivatkozás** mezőben a létrehozandó célbeállításokhoz használni kívánt konfiguráció kiválasztásával jeleníthetők meg, korábban nem láthatók.
 
-[![Konfiguráció kiválasztása a Hivatkozás mezőben](./media/ER_Destinations-SelectFormat.png)](./media/ER_Destinations-SelectFormat.png)
+[![Konfiguráció kiválasztása a Hivatkozás mezőben.](./media/ER_Destinations-SelectFormat.png)](./media/ER_Destinations-SelectFormat.png)
 
 A hivatkozás létrehozása után létrehozható egy célhely a hivatkozott ER-formátum mindegyik **Mappa** vagy **Fájl** kimeneti összetevőjéhez.
 
-[![Fájlcél létrehozása](./media/ER_Destinations-ConfigureElementDestination.png)](./media/ER_Destinations-ConfigureElementDestination.png)
+[![Fájlcél létrehozása.](./media/ER_Destinations-ConfigureElementDestination.png)](./media/ER_Destinations-ConfigureElementDestination.png)
 
 Ezután be- és kikapcsolhatja a fájl egyes céljai az **Elérési út beállításai** párbeszédpanelen. A **Beállítások** gombbal egy kiválasztott fájl elérési útjának minden célja vezérelhető. Az **Útvonalbeállítások** párbeszédpanelen minden elérési utat külön vezérelhet a **Bekapcsolva** opcióval.
 
@@ -92,7 +92,7 @@ A Finance **10.0.9 előtti verzióiban** ugyanazon formátumú egyes eredményko
 
 Ezzel a lehetőséggel beállíthatja például, hogy az Excel-formátumú kimenő dokumentumok létrehozásához használt fájltípusok számára milyen célhelyek létezzenek. Egy cél ([Archív](er-destination-type-archive.md)) beállítható, hogy az eredeti Excel-fájlt az ER-feladatok arcihumában tároljon, és egy másik cél ([E-mail](er-destination-type-email.md)) konfigurálható, hogy egyidejűleg [konvertálja](#OutputConversionToPDF) az Excel-fájlt PDF formátumra, és elküldje a PDF-fájlt e-mailben.
 
-[![Több cél konfigurálása egyetlen formátumú elemhez](./media/ER_Destinations-SampleDestinations.png)](./media/ER_Destinations-SampleDestinations.png)
+[![Több cél konfigurálása egyetlen formátumú elemhez.](./media/ER_Destinations-SampleDestinations.png)](./media/ER_Destinations-SampleDestinations.png)
 
 ER-formátum futtatásakor a rendszer mindig futtat minden célt, amely a formátum összetevőihez van konfigurálva. Emellett a Finance **10.0.17-es és újabb verziókban** az ER-célokkal kapcsolatos funkciók tovább tökéletesítettek, és így különböző célkészleteket lehet konfigurálni egyetlen ER-formátumhoz. Ez a konfiguráció egy-egy adott felhasználói művelethez beállítottként jelöli meg a készleteket. Az ER API-t [kibővítettük](er-apis-app10-0-17.md), így a felhasználó által az ER-formátum futtatásával rendelkezésre áll egy művelet. A megadott műveletkód át van adni az ER-céloknak. A megadott műveletkódtól függően az ER-formátum különböző célokat futtathat. További tájékoztatás: [Műveletfüggő ER-célok konfigurálása](er-action-dependent-destinations.md).
 
@@ -116,11 +116,11 @@ A célokat csak importált ER konfigurációkhoz, és csak az **Elektronikus jel
 
 Ha egy kiválasztott formátumhoz a fájlok célhelyeit konfigurálja, akkor az egész formátumra konfigurálja őket.
 
-[![Konfiguráció hivatkozás](./media/ER_Destinations-ConfigurationLink.png)](./media/ER_Destinations-ConfigurationLink.png)
+[![Konfigurációs hivatkozás.](./media/ER_Destinations-ConfigurationLink.png)](./media/ER_Destinations-ConfigurationLink.png)
 
 Ugyanakkor előfordulhat, hogy az aktuális Palermo példányba importált formátumnak több [verziója](general-electronic-reporting.md#component-versioning) van. Megtekintheti őket, ha kiválasztja a **Konfiguráció** hivatkozást, amelyet a rendszer a **Referencia** mező kiválasztásakor ajánl fel.
 
-[![Konfigurációverziók](./media/ER_Destinations-ConfigurationVersions.png)](./media/ER_Destinations-ConfigurationVersions.png)
+[![Konfigurációverziók.](./media/ER_Destinations-ConfigurationVersions.png)](./media/ER_Destinations-ConfigurationVersions.png)
 
 Alapértelmezésként a konfigurált célhelyeket a rendszer csak akkor alkalmazza, ha olyan ER-formátumverziókat futtat, amelyeknek az állapota **Kész** vagy **Megosztott**. Előfordulhat azonban, hogy a konfigurált célhelyeket kell használni, amikor a program futtatja az ER- formátumának piszkozatát. Módosíthatja például a formátum piszkozatát, és a konfigurált célhelyek alapján tesztelni tudja a létrejövő kimenetet. Hajtsa végre az alábbi lépéseket, ha alkalmazni szeretné a célokat az ER-formátumra a piszkozat verzió futtatásakor.
 
@@ -128,7 +128,7 @@ Alapértelmezésként a konfigurált célhelyeket a rendszer csak akkor alkalmaz
 2. A **Konfigurációk** oldal műveleti ablaktábláján, a **Konfigurációk** lapon, a **Speciális beállítások** csoportban válassza a **Felhasználói paraméterek** lehetőséget.
 3. A **Célok használata piszkozat állapothoz** beállítása legyen **Igen** értékű.
 
-[![Célok használata piszkozat állapothoz](./media/ER_Destinations-UserSetting1.png)](./media/ER_Destinations-UserSetting1.png)
+[![Célok használata piszkozat állapothoz.](./media/ER_Destinations-UserSetting1.png)](./media/ER_Destinations-UserSetting1.png)
 
 Ha egy ER-formátum piszkozat verzióját kívánja használni, ennek megfelelően be kell jelölnie az ER-formátumot.
 
@@ -136,11 +136,11 @@ Ha egy ER-formátum piszkozat verzióját kívánja használni, ennek megfelelő
 2. A **Konfigurációk** oldal műveleti ablaktábláján, a **Konfigurációk** lapon, a **Speciális beállítások** csoportban válassza a **Felhasználói paraméterek** lehetőséget.
 3. Állítsa a **Beállítás futtatása** beállítást **Igen** lehetőségre.
 
-[![Beállítás futtatása opció](./media/ER_Destinations-UserSetting2.png)](./media/ER_Destinations-UserSetting2.png)
+[![Beállítás futtatása opció.](./media/ER_Destinations-UserSetting2.png)](./media/ER_Destinations-UserSetting2.png)
 
 Miután befejezte ezt a beállítást, elérhetővé válik a **Piszkozat futtatása** lehetőség a módosítható ER-formátumok esetében. Ennek a beállításnak az **Igen** értékre állítása esetén a formátum futtatásakor a formátum piszkozat verzióját használja a rendszer.
 
-[![Piszkozat futtatása opció](./media/ER_Destinations-FormatSetting.png)](./media/ER_Destinations-FormatSetting.png)
+[![Piszkozat futtatása opció.](./media/ER_Destinations-FormatSetting.png)](./media/ER_Destinations-FormatSetting.png)
 
 ## <a name="destination-failure-handling"></a><a name="DestinationFailure"></a>Rendeltetési hely meghibásodásának kezelése
 
@@ -148,7 +148,7 @@ A program általában egy adott üzleti folyamat hatókörén belül futtatja az
 
 Beállíthatja például a szállítói kifizetések feldolgozását úgy, hogy az **ISO20022-átutalás** ER-formátum fusson a kifizetési fájlok és a kiegészítő dokumentumok (például a kísérőlevél és az ellenőrzési jelentés) létrehozásához. Ha egy fizetést csak akkor kell figyelembe venni sikeres feldolgozásúként, ha a kísérőlevélet sikeresen kézbesítik e-mailben, be kell jelölnie a **Feldolgozás leállítása meghibásodáskor** jelölőnégyzetet a **CoveringLetter** összetevőnél a megfelelő célhelyen, a következő ábrán látható módon. Ebben az esetben a feldolgozásra kiválasztott kifizetés állapotát csak akkor állítja **Nem** állapotról **Elküldve** állapotra a program, ha a létrejövő kísérőlevél sikeresen elfogadásra kerül egy olyan e-mail szolgáltató esetében, amely a Finance példányban be van állítva.
 
-[![A fájlok rendeltetési helyének meghibásodásával kapcsolatos folyamatkezelés konfigurálása](./media/ER_Destinations-StopProcessingAtDestinationFailure.png)](./media/ER_Destinations-StopProcessingAtDestinationFailure.png)
+[![A fájlok rendeltetési helyének meghibásodásával kapcsolatos folyamatkezelés konfigurálása.](./media/ER_Destinations-StopProcessingAtDestinationFailure.png)](./media/ER_Destinations-StopProcessingAtDestinationFailure.png)
 
 Ha nem jelöli be a **Feldolgozás leállítása meghibásodáskor** jelölőnégyzetet a **CoveringLetter** összetevőnél a célhelyen, fizetést akkor is sikeres feldolgozásúként jelöli meg a rendszer, ha a kísérőlevélet nem kézbesítik sikeresen e-mailben. A kifizetés állapota **Nem** állapotról **Elküldve** állapotra módosul, még akkor is, ha a kísérőlevél nem küldhető el, mert például hiányzik vagy helytelen a címzett vagy a feladó e-mail-címe.
 
@@ -160,7 +160,7 @@ A PDF-átalakítási beállítással a Microsoft Office (Excel vagy Word) formá
 
 Ha azt szeretné, hogy a PDF-átalakítási beállítás elérhető legyen az aktuális Finance példányban, nyissa meg a **Funkciókezelés** munkaterületet, és kapcsolja be az **Elektronikus jelentéskészítési kimenő dokumentumok átalakítása Microsoft Office-formátumból PDF-formátumba** funkciót.
 
-[![A kimenő dokumentumok PDF-be konvertálási funkciójának bekapcsolása a Funkciókezelés modulban](./media/ER_Destinations-EnablePdfConversionFeature.png)](./media/ER_Destinations-EnablePdfConversionFeature.png)
+[![A kimenő dokumentumok PDF-be konvertálási funkciójának bekapcsolása a Funkciókezelés modulban.](./media/ER_Destinations-EnablePdfConversionFeature.png)](./media/ER_Destinations-EnablePdfConversionFeature.png)
 
 ### <a name="applicability"></a>Alkalmazhatóság
 
@@ -185,13 +185,13 @@ Csak a Windows operációs rendszer közös rendszerbetűkészletei használhat�
 
 Ha be kívánja kapcsolni a PDF-konverziót egy célhelyre, jelölje be a **Konvertálás PDF formátumba** jelölőnégyzetet.
 
-[![A PDF-konverzió bekapcsolása fájl célhelyére](./media/ER_Destinations-TurnOnPDFConversion.png)](./media/ER_Destinations-TurnOnPDFConversion.png)
+[![A PDF-konverzió bekapcsolása fájl célhelyére.](./media/ER_Destinations-TurnOnPDFConversion.png)](./media/ER_Destinations-TurnOnPDFConversion.png)
 
 ### <a name=""></a><a name="SelectPdfPageOrientation">Lap tájolásának kiválasztása PDF-konverzióhoz</a>
 
 Ha Excel-formátumban generál egy Elektronikus jelenrés konfigurációt, és PDF-formátumra szeretné átalakítani, akkor megadhatja a PDF-dokumentum tájolását. Ha bejelöli a **Konvertálás PDF formátumba** jelölőnégyzetet, hogy egy célhelyre bekapcsolja a PDF-konverziót egy Excel formátumú kimeneti fájl létrehozásához, akkor a **Lap tájolása** mező elérhetővé válik a **PDF-konverzió beállításai** gyorslapon. A **Lap tájolása** mezőben válassza ki a preferált tájolást.
 
-[![Lap tájolásának kiválasztása PDF-konverzióhoz](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)
+[![Lap tájolásának kiválasztása PDF-konverzióhoz.](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)
 
 > [!NOTE]
 > Ha azt szeretné, hogy a PDF laptájolása kiválasztható legyen, telepítenie kell a Finance 10.0.10 vagy újabb verzióját.
@@ -222,7 +222,7 @@ Az **Általános** gyorslap **Mappa küldése a következőként** mezőjében v
     > [!NOTE]
     > Ha a **Külön fájlok** beállítást választja, a létrehozott kimenetet tömörített állapotban tárolja a rendszer a memóriában. Emiatt a rendszer maximális [fájlméretet](er-compress-outbound-files.md) alkalmaz a tömörített kimenetre, ha a valós fájlméret meghaladhatja ezt a maximális korlátot. Azt javasoljuk, hogy akkor válassza ezt az értéket, ha a létrehozott kimenet várhatóan túl nagy lesz.
 
-[![Célhely konfigurálása Mappa formátum-összetevőhöz](./media/er_destinations-set-unfolding-option.png)](./media/er_destinations-set-unfolding-option.png)
+[![Célhely konfigurálása Mappa formátum-összetevőhöz.](./media/er_destinations-set-unfolding-option.png)](./media/er_destinations-set-unfolding-option.png)
 
 ### <a name="limitations"></a>Korlátozások
 

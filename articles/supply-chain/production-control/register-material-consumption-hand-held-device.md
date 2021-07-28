@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0313bd1a5adc0fdb7a4958c5dfa013cfdc51491a
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 2c70b6ecd284acc8817970e090583603d1b8e110
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6189642"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345404"
 ---
 # <a name="register-material-consumption-using-a-mobile-device"></a>Anyagfelhasználás regisztrálása mobileszköz segítségével
 
@@ -30,7 +30,7 @@ Ez a témakör olyan munkafolyamatot ír le, amely lehetővé teszi a nyersanyag
 
 ## <a name="introduction"></a>Bevezetés
 
-A munkafolyamat akkor releváns, ha az anyag nyomon követhetősége szigorú követelmény. Ebben az esetben az anyagok nyomonkövethetőségének megőrzése érdekében jelenteni kell a fogyasztás pontos időtartamát és mennyiségét. Ez a folyamat ellentétben áll az előzetes vagy utólagos kiürítési műveletekkel, ahol eltolás van a regisztrálás időpontja és a tényleges felhasználás időpontja között. Ez a magyarázata annak, hogy miért nem használható az automatikus felhasználási stratégia bizonyos anyagok nyomonkövethetőségi követelményeire. Nézzünk egy egyszerű forgatókönyvet, amely azt ismerteti, hogyan állítsunk be úgy egy munkafolyamatot, hogy lehetővé tegyük a nyersanyag-felhasználás termelés során történő regisztrálását egy kézi eszközzel. [![munkafolyamat beállítása nyersanyag-felhasználás kézi eszközzel történő rögzítéséhez](./media/scenario3.png)](./media/scenario3.png)
+A munkafolyamat akkor releváns, ha az anyag nyomon követhetősége szigorú követelmény. Ebben az esetben az anyagok nyomonkövethetőségének megőrzése érdekében jelenteni kell a fogyasztás pontos időtartamát és mennyiségét. Ez a folyamat ellentétben áll az előzetes vagy utólagos kiürítési műveletekkel, ahol eltolás van a regisztrálás időpontja és a tényleges felhasználás időpontja között. Ez a magyarázata annak, hogy miért nem használható az automatikus felhasználási stratégia bizonyos anyagok nyomonkövethetőségi követelményeire. Nézzünk egy egyszerű forgatókönyvet, amely azt ismerteti, hogyan állítsunk be úgy egy munkafolyamatot, hogy lehetővé tegyük a nyersanyag-felhasználás termelés során történő regisztrálását egy kézi eszközzel. [![munkafolyamat beállítása nyersanyag-felhasználás kézi eszközzel történő rögzítéséhez.](./media/scenario3.png)](./media/scenario3.png)
 
 ### <a name="scenario-details"></a>Forgatókönyv részletei
 

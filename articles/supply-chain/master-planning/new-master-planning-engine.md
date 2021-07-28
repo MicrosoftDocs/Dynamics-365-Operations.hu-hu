@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.search.validFrom: 2020-11-05
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: e227cabdd205b7a0c1fe784fc719b538e6ea4443
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: e9aa911ca22ca2beeffe6bec95f17f94142065e4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5907691"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348757"
 ---
 # <a name="migration-to-planning-optimization-for-master-planning"></a>Áttelepítés az alaptervezéshez használatos Tervezési optimalizálásra
 
@@ -65,7 +65,7 @@ A szükséges szolgáltatások elérhetővé válása után a Microsoft türelmi
 
 Az alábbi folyamatábra összefoglalja a témakörben található információkat, így gyorsan ki tudja találni, hogy kivételt kér-e. Ha kivételt kell kérnie, töltse ki és küldje el a [Tervezési optimalizálás áttelepítése és kivétel kérdőívet](https://go.microsoft.com/fwlink/?linkid=2144962).
 
-![Kivétel folyamatábra](media/exception-diagram.png "Kivétel folyamatábra")
+![Kivétel folyamatábra.](media/exception-diagram.png "Kivétel folyamatábra")
 
 > [!NOTE]
 > Kivételt csak olyan bérlők esetében lehet kérelmezni, akik jelenleg tartalmaznak vagy tartalmazni fognak éles környezetet, olyan bérlők esetén nem, akik csak tesztkörnyezetben vannak. Ha egy szolgáltatott infrastruktúra (IaaS) elvű tesztkörnyezetében le kell tiltania a Tervezési optimalizálás kivételi hibáját, futtassa a [tesztkörnyezetekben](#faq-sandbox) nyújtott SQL-lekérdezést.

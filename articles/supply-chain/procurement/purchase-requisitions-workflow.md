@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5dcc562f46884cc5bf82611db9ed35436791045b
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 4a8e3378a1d31101d111673cf66f75e807cd05a7
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6188173"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353468"
 ---
 # <a name="purchase-requisition-workflow"></a>beszerzési igénylési munkafolyamat
 
@@ -51,7 +51,7 @@ A következő ábra bemutatja, hogy egy beszerzési igénylés hogyan halad kere
 -   **Beszerző ügynök** – A felhasználó, aki beszerzési felülvizsgálatot hajt végre, és jóváhagyhatja a dokumentumot.
 -   **A kérelmező felettese** – A felhasználó, aki vezetői felülvizsgálatot hajt végre, és jóváhagyhatja a dokumentumot.
 
-![Beszerzési igénylési munkafolyamat ellenőrzésének folyamata](./media/purchreqworkflowoverview_submission.gif)  
+![Beszerzési igénylési munkafolyamat ellenőrzésének folyamata.](./media/purchreqworkflowoverview_submission.gif)  
 Ebben a példában, a beszerzési igénylés munkafolyamata a következő lépéseket tartalmazza:
 
 1.  A készítő benyújt egy beszerzési igénylést ellenőrzésre.
@@ -74,7 +74,7 @@ A következő szerepkörök szerepelnek a munkafolyamatban ebben a példában:
 -   **Részlegvezető** – A felhasználó, aki kiadási felülvizsgálatot hajt végre, és jóváhagyhatja a dokumentumot.
 -   **Csoportvezető** – A felhasználó, aki aláírás-felhatalmazási felülvizsgálatot hajt végre, és jóváhagyhatja a dokumentumot.
 
-![Beszerzési igénylési sor munkafolyamat ellenőrzésének folyamata](./media/purchreqlineworkflowoverview.gif)  
+![Beszerzési igénylési sor munkafolyamat ellenőrzésének folyamata.](./media/purchreqlineworkflowoverview.gif)  
 Ebben a példában, a beszerzési igénylés sorainak munkafolyamata a következő lépéseket tartalmazza:
 
 1.  A készítő benyújt egy beszerzési igénylést ellenőrzésre. Minden sor ahhoz az ellenőrhöz kerül, aki részére az a munkafolyamat folyamatában konfigurálásra kerül.

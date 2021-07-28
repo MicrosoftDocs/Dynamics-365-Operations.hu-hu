@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 4afc19ed103f204fec61ab20b88f767ad5f05b38
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 1af5676511c16d0492a7c3a61b7bf3a88b43758a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792535"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349256"
 ---
 # <a name="run-and-monitor-an-experiment"></a>Kísérlet futtatása és nyomon követése
 
@@ -28,7 +28,7 @@ Ez a témakör azt mutatja be, hogyan futtathatja és követheti nyomon a kísé
 
 A következő ábra azokat a lépéseket mutatja be, amelyekkel egy e-kereskedelmi webhelyhez tartozó kísérletet lehet létrehozni és futtatni a Dynamics 365 Commerce rendszerben. A további lépések külön témákban szerepelnek.
 
-[ ![Kísérletezés felhasználói interakciósorozata – Futtatás és nyomon követés](./media/experimentation_run_monitor.svg) ](./media/experimentation_run_monitor.svg#lightbox)
+[ ![Kísérletezés felhasználói interakciósorozata – Futtatás és nyomon követés.](./media/experimentation_run_monitor.svg) ](./media/experimentation_run_monitor.svg#lightbox)
 
 A változatok közzététele után végezze el a kísérletek futtatásához szükséges lépéseket a Commerce modulban. A következő lépés azt határozza meg, hogy melyik változat jelenjen meg az egyes felhasználóknak, amikor egy oldalt hívnak le. A harmadik fél szolgáltatás teszi ezt a meghatározást, de először aktiválni kell a kísérletet a szolgáltatáson belül. Mivel a kísérletek aktiválásának lépései szolgáltatásonként eltérők, a szolgáltatáshoz vagy a szolgáltatóhoz tartozó utasításokat kell követni. Ha a kísérlet nincs aktiválva, a felhasználók csak az oldal alapértelmezett változatát fogják látni – nem fognak megjelenni az eltérések.
 

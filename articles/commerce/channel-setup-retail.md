@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 3f1f5dc2c8402d9b6b68a049f804932812eb74c0
-ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
+ms.openlocfilehash: fe6262fa8a7fb27fda7642180f605376af726e54
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "5937534"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346058"
 ---
 # <a name="set-up-a-retail-channel"></a>Retail-csatorna beállítása
 
@@ -50,11 +50,11 @@ A kiskereskedelmi csatorna létrehozása előtt győződjön meg arról, hogy k�
 
 A következő kép bemutatja egy új kiskereskedelmi csatorna létrehozását.
 
-![Új kiskereskedelmi csatorna](media/channel-setup-retail-1.png)
+![Új kiskereskedelmi csatorna.](media/channel-setup-retail-1.png)
 
 A következő kép egy példát mutat a kiskereskedelmi csatornára.
 
-![Kiskereskedelmi csatorna példája](media/channel-setup-retail-2.png)
+![Példa kiskereskedelmi csatornára.](media/channel-setup-retail-2.png)
 
 ## <a name="other-settings"></a>Egyéb beállítások
 
@@ -64,7 +64,7 @@ Ezenkívül lásd [A pénztár (POS) képernyő-elrendezései](pos-screen-layout
 
 A következő kép egy példát mutat a kiskereskedelmi csatorna beállítási konfigurációjáról.
 
-![Kiskereskedelmi csatorna konfigurálása – példa](media/channel-setup-retail-3.png)
+![Kiskereskedelmi csatorna konfigurálása – példa.](media/channel-setup-retail-3.png)
 
 ## <a name="additional-channel-set-up"></a>További csatornák beállítása
 
@@ -74,7 +74,7 @@ Az online csatorna beállításához szükséges további feladatok közé tarto
 
 A következő képen a kiskereskedelmi csatorna beállításainak különböző beállításai láthatók a **beállítás** lapon.
 
-![Csatorna beállítása](media/channel-setup-retail-4.png)
+![Csatorna beállítása.](media/channel-setup-retail-4.png)
 
 ### <a name="set-up-payment-methods"></a>Fizetési módok beállítása
 
@@ -89,7 +89,7 @@ A fizetési módok beállításához a csatornán támogatott valamennyi fizeté
 
 A következő kép egy példát mutat a készpénzfizetési módra.
 
-![Fizetési módok – példa](media/channel-setup-retail-5.png)
+![Fizetési módok – példa.](media/channel-setup-retail-5.png)
 
 ### <a name="set-up-cash-declaration"></a>Készpénzelszámolás beállítása
 
@@ -98,7 +98,7 @@ A következő kép egy példát mutat a készpénzfizetési módra.
 
 A következő kép egy példát mutat a készpénzelszámolásra.
 
-![Készpénzelszámolások beállításai](media/channel-setup-retail-6.png)
+![Készpénzelszámolások beállításai.](media/channel-setup-retail-6.png)
 
 ### <a name="set-up-modes-of-delivery"></a>Szállítási módok beállítása
 
@@ -112,7 +112,7 @@ Szállítási mód módosításához vagy hozzáadásához kövesse az alábbi l
 
 A következő kép egy példát mutat a szállítási módra.
 
-![Szállítási módok beállítása](media/channel-setup-retail-7.png)
+![Szállítási módok beállítása.](media/channel-setup-retail-7.png)
 
 ### <a name="set-up-incomeexpense-account"></a>Bevételi/kiadási számla beállítása
 
@@ -129,7 +129,7 @@ A bevétel/kiadási számla beállításához kövesse az alábbi lépéseket.
 
 A következő kép egy példát mutat egy bevételi/kiadási számlára.
 
-![Bevételi/kiadási számlák beállítása](media/channel-setup-retail-8.png)
+![Bevételi/kiadási számlák beállítása.](media/channel-setup-retail-8.png)
 
 ### <a name="set-up-sections"></a>Szakaszok beállítása
 
@@ -155,7 +155,7 @@ A teljesítési csoport hozzárendelésének beállításához tegye a következ
 
 A következő kép egy példát mutat be a teljesítési csoport hozzárendelésének beállítására.
 
-![Teljesítési csoport hozzárendeléseinek beállítása](media/channel-setup-retail-9.png)
+![Teljesítési csoport hozzárendeléseinek beállítása.](media/channel-setup-retail-9.png)
 
 ### <a name="set-up-safes"></a>Széfek beállítása
 

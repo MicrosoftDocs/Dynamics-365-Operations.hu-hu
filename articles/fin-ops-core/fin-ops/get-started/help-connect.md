@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 82bb9a09e6d302b0d453ceb5131da039769b58fb
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 1a70a9771d5f9c1acea9274b8454a23c8dd7c1ed
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745689"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6343934"
 ---
 # <a name="configure-the-help-experience-for-finance-and-operations-apps"></a>A Finance and Operations alkalmazások súgóélményének konfigurálása
 
@@ -32,7 +32,7 @@ Ebben a témakörben egy áttekintést talál a Finance and Operations alkalmaz�
 
 A Finance and Operations alkalmazások fogalmi áttekintéseket és egyéb témaköröket tartalmaznak, amelyek a [https://docs.microsoft.com/dynamics365](/dynamics365/) webhelyen vannak közzétéve. Ez a tartalom később a termék **Súgó** paneljéből érthető el. A következő ábrán a súgórendszer részei láthatók.
 
-[![Súgó-architektúra](./media/help-architecture.png)](./media/help-architecture.png)
+[![Súgóarchitektúra.](./media/help-architecture.png)](./media/help-architecture.png)
 
 A terméken belüli súgórendszer a docs.microsoft.com webhelyről és egyéb kapcsolódó webhelyekről olvas be cikkeket. Ezenkívül a Microsoft Dynamics Lifecycle Services (LCS) Üzletifolyamat-modellező (BPM) alkalmazásában tárolt feladat-útmutatókat is beolvas.
 
@@ -47,14 +47,14 @@ A **Rendszerparaméterek** oldalon a rendszeradminisztrátorok konfigurálhatjá
 > - A Súgó konfigurálásához be kell lépnie egy ugyanattól a bérlőtől származó fiókba, amiben az alkalmazás is telepítve van.
 > - Helyi virtuális merevlemezen (VHD) futó alkalmazáspéldánnyal nem lehet csatlakozni az LCS könyvtárhoz.
 
-[![Rendszerparaméterek űrlap – súgó beállításai](./media/system-parameters_ops-1024x437.png)](./media/system-parameters_ops.png)
+[![Rendszerparaméterek űrlap – súgó beállításai.](./media/system-parameters_ops-1024x437.png)](./media/system-parameters_ops.png)
 
 A megoldás feladat-útmutatóinak konfigurálásához kövesse az alábbi lépéseket a **Rendszerparaméterek** oldalon.
 
 > [!IMPORTANT]
 > Amikor első alkalommal nyitja meg a **Súgó** lapot, kapcsolódnia kell a Lifecycle Services szolgáltatáshoz. Ügyeljen arra, hogy az űrlap közepén levő hivatkozásra kattintson, várja meg a kapcsolatot, zárja be a párbeszédpanelt, majd kattintson az **OK** gombra a **Rendszerparaméterek** oldal eléréséhez.
 >
-> [![Kapcsolódás az LCS szolgáltatáshoz](./media/connect-to-lcs-crop-1024x365.png "Kapcsolódás az LCS szolgáltatáshoz")](./media/connect-to-lcs-crop.png)
+> [![Kapcsolódás LCS-hez](./media/connect-to-lcs-crop-1024x365.png "Kapcsolódás LCS-hez."](./media/connect-to-lcs-crop.png)
 
 1. A csatlakozáshoz válassza ki a Lifecycle Services-projektet.
 2. Válassza ki a BPM könyvtárakat (a kiválasztott projekten belül) amelyekből szeretné előhívni a rögzítéseket.

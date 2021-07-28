@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.custom: 97423
+ms.custom:
+- "97423"
+- intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: a6a8ea3fcad980dc02f489e07a7b21fe1c1b5a5a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: c3a0cc24a77b29cedaa10ebb4d6e2ad2a4cbf629
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839980"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344758"
 ---
 # <a name="electronic-invoicing-overview"></a>Elektronikus számlázás áttekintése
 
@@ -98,7 +100,7 @@ Amikor az Elektronikus számlázás az LCS rendszerből telepíti, és a kötele
 
 A következő ábra bemutatja, hogyan áramlik ki és be az adat az elektronikus számlázásba.
 
-![Az Elektronikus számlázás adatfolyama](media/e-invoicing-service-data-flow-diagram-overview.png)
+![Az Elektronikus számlázás adatfolyama.](media/e-invoicing-service-data-flow-diagram-overview.png)
 
 ## <a name="privacy-notice"></a>Adatvédelmi nyilatkozat
 Az Elektronikus számlázás engedélyezése és használata korlátozott adatok küldését igényelheti, ideértve a szervezet adóregisztrációs azonosítóját. Ezek továbbítva lesznek az adóhatóságok által kinevezett harmadik fél ügynökségekhez, az elektronikus számlák – kormányzati szervek webszolgáltatásaival való integrációhoz szükséges, előre meghatározott formátumban való – elküldése céljából. A külső rendszerekből ebbe a Dynamics 365 online szolgáltatásba importált adatok az [Adatvédelmi nyilatkozatunk](https://go.microsoft.com/fwlink/?LinkId=512132) hatálya alá tartoznak. További tájékoztatásért olvassa el az országspecifikus funkciók dokumentációja szakaszokban található Adatvédelmi nyilatkozatot.

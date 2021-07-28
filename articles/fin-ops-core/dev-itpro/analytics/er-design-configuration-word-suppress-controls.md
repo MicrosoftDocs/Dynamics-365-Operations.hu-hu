@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: Version 10.0.6
-ms.openlocfilehash: 8c99203110cfdc7f8123c30488611d55f48e8f67
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: e6ab75c970c6c14d4977b6c739ba46e33f4962e9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753601"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348044"
 ---
 # <a name="suppress-word-content-controls-in-generated-reports"></a>Word tartalmi vezérlőelemek figyelmen kívül hagyása a létrehozott jelentésekben
 
@@ -63,7 +63,7 @@ Le kell tölteni és menteni a következő sablont is a mintajelentéshez:
     > [!NOTE]
     > Az ismétlődő tartalomvezérlőt az **Összefoglaló sorok** kulcs címkézi, amely megfelel annak az egyéni XML-rész mezőjének, amelyben lekérdezték.
 
-    ![Word-sablon elrendezés](./media/er-design-configuration-word-suppress-controls-image1.gif)
+    ![Word-sablon elrendezése.](./media/er-design-configuration-word-suppress-controls-image1.gif)
 
 ## <a name="select-the-existing-er-report-configuration"></a>Válassza ki a meglévő ER-jelentéskonfigurációt
 
@@ -98,7 +98,7 @@ Jelenleg a SampleVendPaymDocReportBounded.docx fájl használatos sablonként a 
 7. Válassza ki az **OK** lehetőséget.
 8. Az **Elektronikus jelentés paraméterei** párbeszédablakban kattintson az **OK** gombra, és elemezze a létrehozott kimenetet.
 
-    ![A feldolgozandó kifizetések hozzáadva a Szállítói fizetések lapon](./media/er-design-configuration-word-suppress-controls-image2.gif)
+    ![A feldolgozandó kifizetések hozzáadva a Szállítói fizetések lapon.](./media/er-design-configuration-word-suppress-controls-image2.gif)
 
     A kimenet Word-formátumban tekinthető meg, és tartalmazza az összegző szakaszt.
 
@@ -149,7 +149,7 @@ Ha az ER-formátumot futtató felhasználó kérése alapján el szeretné rejte
 
 9. A szerkeszthető formátum módosításainak mentéséhez válassza a **Mentés** elemet.
 
-    ![A létrehozott kimenet Word-formátumban](./media/er-design-configuration-word-suppress-controls-image3.gif)
+    ![A létrehozott kimenet Word-formátumban.](./media/er-design-configuration-word-suppress-controls-image3.gif)
 
 ## <a name="run-the-modified-format-to-create-word-output"></a>Módosított formátum futtatása Word-kimenet létrehozásához
 
@@ -163,7 +163,7 @@ Ha az ER-formátumot futtató felhasználó kérése alapján el szeretné rejte
 8. Az **Elektronikus jelentés paraméterei** párbeszédpanelben az **Összefoglaló szakasz figyelmen kívül hagyása** mezőben válassza az **Igen** lehetőséget.
 9. Kattintson az **OK** gombra, és elemezze a létrehozott kimenetet.
 
-    ![Létrehozott kimenet Word-formátumban](./media/er-design-configuration-word-suppress-controls-image4.gif)
+    ![Létrehozott kimenet Word-formátumban.](./media/er-design-configuration-word-suppress-controls-image4.gif)
 
     A kimenet nem tartalmazza az összesítő szakaszt, mert figyelmen kívül hagyta.
 

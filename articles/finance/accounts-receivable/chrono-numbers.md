@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: ilyako
 ms.search.validFrom: 2021-03-15
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: fe533052b0e5b04a7d27b954ba644761c631d6d7
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 1bddb76d17b65e3485680675b77750fca714407d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838861"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350072"
 ---
 # <a name="numbering-documents-and-vouchers-chronologically"></a>Dokumentumok és bizonylatok időrendi számozása
 
@@ -69,7 +69,7 @@ Számsorozatok meghatározásához lépjen a **Szervezeti adminisztráció** > *
 
 Minden számsorozathoz adjon meg egy vállalatot. A számsorozatok szegmenseit úgy kell meghatározni, hogy az időszakok időrendi sorrendben jelenjenek meg. A szegmensnevek tartalmazhatnak például egy speciális előtagot, amely az adott időszakot azonosítja.
 
-![Számsorozat beállítása](media/chrono-num-sequence.jpg)
+![Számsorozat beállítása.](media/chrono-num-sequence.jpg)
 
 ### <a name="configure-number-sequence-groups"></a>Számsorozatcsoportok konfigurálása
 
@@ -77,7 +77,7 @@ A számsorozatcsoportok konfigurálához kattintson a **Kinnlevőségek** > **Be
 
 Mindegyik csoportnál a **Hivatkozás** szakaszban válassza ki a támogatott dokumentumhivatkozások valamelyikét, és a **Számsorozatkód** mezőben hivatkozzon egy, a kapcsolódó időszakhoz korábban létrehozott számsorozatra.
 
-![Sorozatszámcsoport beállítása](media/chrono-num-sequence-group.jpg)
+![Sorozatszámcsoport beállítása.](media/chrono-num-sequence-group.jpg)
 
 Ehhez hasonlóan állítsa be a számsorozatcsoportokat a **Kötelezettségek** és a **Projektvezetés és könyvelés** modulban is.
 
@@ -85,7 +85,7 @@ Ehhez hasonlóan állítsa be a számsorozatcsoportokat a **Kötelezettségek** 
 
 A számsorozatcsoportok időrendi konfigurációját a **Szervezeti adminisztráció** > **Számsorozatok** > **Időrendi számsorozatcsoportok** pontban állítsa be. Határozza meg a számsorozatcsoportok alkalmazhatósági feltételeit.
 
-![Időrendi számok beállítása](media/chrono-num-sequence-group-period.jpg)
+![Időrendi számok beállítása.](media/chrono-num-sequence-group-period.jpg)
 
 | Mező            | Leírás                                                                                                                                                                                                                                                                                                                                                                                   |
 |---------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -98,7 +98,7 @@ A számsorozatcsoportok időrendi konfigurációját a **Szervezeti adminisztrá
 ## <a name="document-posting"></a>Dokumentum feladása
 Dokumentum feladásakor a program a dokumentum feladási dátuma alapján hozzárendeli a megfelelő számsorozatcsoportot a dokumentumhoz, majd az észlelt számsorozaton alapuló dokumentumszám előállítására használja. A rendszer üzenetet küld a számsorozatcsoport hozzárendelésével kapcsolatban.
 
-![Bizonylatszám](media/chrono-num-sequence-fti.jpg)
+![Bizonylat száma.](media/chrono-num-sequence-fti.jpg)
 
 > [!NOTE]
 > Egyes országokban már létezik a dokumentumszámozáshoz meghatározott logika. Ebben az esetben az országspecifikus logika felülbírálja az **Időrendi számozás** funkciót.

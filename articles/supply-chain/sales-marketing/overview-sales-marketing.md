@@ -8,18 +8,20 @@ ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: 92303
+ms.custom:
+- "92303"
+- intro-internal
 ms.assetid: 65ca9992-bbfa-4224-bf0e-067a25c7e6a4
 ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 42934a88065da015334455b6c37f57591611360f
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 92077c0d8a9c9f3820171fd4ffd8aedb02f59602
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6188125"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359861"
 ---
 # <a name="sales-and-marketing-overview"></a>Értékesítés és marketing – áttekintés
 
@@ -29,18 +31,18 @@ Az értékesítés és marketing segítségével beszerzése, tárolhatók és h
 
 ## <a name="marketing"></a>Marketing
 
-Marketing kampányok és tevékenységek segítségével megtalálhatja a potenciális ügyfeleket, valamint kapcsolatokat építhet ki velük, így a kezdeti interakciók üzleti kapcsolatokká fejlődhetnek. A következő folyamatábra a marketinghez kapcsolódó üzleti folyamatokat ábrázolja. [![Marketinghez kapcsolódó üzleti folyamatok](./media/marketing01.jpg)](./media/marketing01.jpg)
+Marketing kampányok és tevékenységek segítségével megtalálhatja a potenciális ügyfeleket, valamint kapcsolatokat építhet ki velük, így a kezdeti interakciók üzleti kapcsolatokká fejlődhetnek. A következő folyamatábra a marketinghez kapcsolódó üzleti folyamatokat ábrázolja. [![Marketinghez kapcsolódó üzleti folyamatok.](./media/marketing01.jpg)](./media/marketing01.jpg)
 
 ### <a name="relationships"></a>Kapcsolatok
 
-Az értékesítés és marketing folyamán a potenciális ügyfelekkel való kapcsolat kezdeti kialakítása számos módon lehetséges. Előfordulhat például, hogy egy kereskedelmi bemutatón talál rá a leendő vevőire, vagy az is lehetséges, hogy a vállalat által indított tömeges levélkampány után válnak a vevők érdeklődőkké. Nagyon fontos megérteni egy adott fél entitásváltozásainak folyamatát, amelynek végén az illető fél vevővé válik. Az alábbi ábra az entitáskapcsolatok alakulását mutatja egy potenciális vevő tényleges vevővé válása során. [![SalesandMarketing01](./media/salesandmarketing01.jpg)](./media/salesandmarketing01.jpg)
+Az értékesítés és marketing folyamán a potenciális ügyfelekkel való kapcsolat kezdeti kialakítása számos módon lehetséges. Előfordulhat például, hogy egy kereskedelmi bemutatón talál rá a leendő vevőire, vagy az is lehetséges, hogy a vállalat által indított tömeges levélkampány után válnak a vevők érdeklődőkké. Nagyon fontos megérteni egy adott fél entitásváltozásainak folyamatát, amelynek végén az illető fél vevővé válik. Az alábbi ábra az entitáskapcsolatok alakulását mutatja egy potenciális vevő tényleges vevővé válása során. [![SalesandMarketing01.](./media/salesandmarketing01.jpg)](./media/salesandmarketing01.jpg)
 
 ### <a name="campaigns"></a>Kampányok
 
 A kampányok az Ön által részvételre kiválasztott potenciális vevőkhöz, érdeklődőkhöz, lehetőségekhez, valamint vevőkhöz tartozó kapcsolatokat célozzák. A Supply Chain Management rendszerben a vevői potenciál maximalizálása érdekében többféle kampányt is létrehozhat, többek között telemarketing-, levél- és e-mail-kampányokat. A kampány előrehaladása során, pozitív visszajelzések beérkezése esetén megkezdheti az értékesítési folyamatot a pozitív választ adó ügyfelekkel.
 
 ## <a name="sales"></a>Értékesítés
-Az értékesítési funkció segítségével árajánlatokat, új és meglévő ügyfeleknek történő értéknövelt és párhuzamos értékesítéseket, továbbá értékesítési rendeléseket hozhat létre, valamint értékesítési számlákat készíthet a vevők számára. A következő folyamatábra az értékesítéshez kapcsolódó üzleti folyamatokat ábrázolja. [![Értékesítéshez kapcsolódó üzleti folyamatok](./media/sales01.jpg)](./media/sales01.jpg)
+Az értékesítési funkció segítségével árajánlatokat, új és meglévő ügyfeleknek történő értéknövelt és párhuzamos értékesítéseket, továbbá értékesítési rendeléseket hozhat létre, valamint értékesítési számlákat készíthet a vevők számára. A következő folyamatábra az értékesítéshez kapcsolódó üzleti folyamatokat ábrázolja. [![Értékesítéshez kapcsolódó üzleti folyamatok.](./media/sales01.jpg)](./media/sales01.jpg)
 
 ### <a name="sales-quotations"></a>Értékesítési ajánlatok
 

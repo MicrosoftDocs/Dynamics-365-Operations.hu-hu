@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 7e415bc0a4ced11c5bb8393fe5dfe03a5f7cdd6c
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 658396e87b3007216f6fa11c6ad3923daeb8a67d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5798987"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349328"
 ---
 # <a name="experimentation-in-dynamics-365-commerce"></a>Kísérletezés a Dynamics 365 Commerce szolgáltatásban
 A Dynamics 365 Commerce szolgáltatáson belüli kísérletezést az e-kereskedelmi oldalak hatékonyságával kapcsolatos hipotézisek igazolására, valamint adatokra alapozott döntések meghozatalára alkalmazhatja. A Commerce támogatja az oldalakon, modulokon és töredékeken végzendő A/B tesztelést, valamint lehetővé teszi a webhellyel összefüggésben javasolt változtatások hatásának felmérését.
@@ -39,7 +39,7 @@ A Commerce webhelykészítőben oldal- és tartalomkezeléseket hozhat létre, s
 ## <a name="experimentation-lifecycle"></a>A kísérletezés életciklusa
 A kísérletek beállítása, változatok létrehozása és a kísérletek lefolytatása egy ismétlődő folyamatot alkot. A következő ábra a kísérletezés életciklusát mutatja be a Commerce modulban és a harmadik fél szolgáltatásokban. 
 
-[ ![A kísérletezés életciklusa](./media/experimentation_lifecycle.svg) ](./media/experimentation_lifecycle.svg#lightbox)
+[ ![A kísérletezés életciklusa.](./media/experimentation_lifecycle.svg) ](./media/experimentation_lifecycle.svg#lightbox)
 
 A kísérletezési folyamat egyes lépéseivel kapcsolatos további tudnivalókat lásd a következő témakörökben.
 - [Hipotézis meghatározása és mérőszámok megadása egy kísérlethez](experimentation-identify.md)

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 6b493c6993ebd466c153e999fa2592105b78d0f2
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: ba8151e6f6b53f53e8ab54821d86a371b3341775
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825710"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347164"
 ---
 # <a name="asset-types"></a>Eszköztípusok
 
@@ -45,9 +45,9 @@ Először be kell állítani a szükséges eszközök típusát. Ezután hozza l
 7. Válassza a **Mentés** lehetőséget.
 8. A **Karbantartási feladat-típusok** gyorslapon válassza ki azokat a karbantartásifeladat-típusokat amelyek az adott eszköztípushoz kapcsolódnak:
 
-    - A karbantartásifeladat-típus kiválasztásához válassza ki a **Karbantartási feladattípusok** mezőben, majd kattintson a jobbra mutató nyílra ![Jobbra mutató nyíl](media/29-setup-for-objects.png), és mozgassa a **Kiválasztott Karbantartási feladattípusok** szakaszba.
-    - Az összes rendelkezésre álló karbantartási feladattípus kiválasztásához válassza az ![Összes átirányítása nyíl](media/30-setup-for-objects.png) gombot. A program minden feladattípust a **A fennmaradó karbantartási feladattípusok** mezőből átvisz a **Kiválasztott karbantartási feladattípusok** mezőbe.
-    - A karbantartási feladattípusok kiválasztásának visszavonásához válassza ki a **Kiválasztott karbantartási feladattípusok** mezőben, majd kattintson a balra mutató nyílra ![Balra mutató nyíl](media/31-setup-for-objects.png), és mozgassa a **Fennmaradó karbantartási feladattípusok** szakaszba.
+    - A karbantartási feladattípus kiválasztásához válassza ki a **Fennmaradó feladattípusok** mezőben, majd kattintson a jobbra mutató nyílra ![Jobbra mutató nyíl.](media/29-setup-for-objects.png) , és mozgassa a **Kiválasztott feladattípusok** szakaszba.
+    - Az összes rendelkezésre álló karbantartási feladattípus kiválasztásához válassza az ![Összes átirányítása nyíl.](media/30-setup-for-objects.png) gombot. A program minden feladattípust a **A fennmaradó karbantartási feladattípusok** mezőből átvisz a **Kiválasztott karbantartási feladattípusok** mezőbe.
+    - A karbantartási feladattípus kiválasztásának törléséhez válassza ki a **Kiválasztott karbantartási feladattípusok** mezőben, majd kattintson a balra mutató nyílra ![Balra mutató nyíl.](media/31-setup-for-objects.png) , és mozgassa a **Fennmaradó karbantartási feladattípusok** mezőbe.
 
 9. Ezután kiválaszthatja azokat az számlálókat, amelyek az eszköztípushoz kapcsolódnak. Az **számlálók** gyorslapon végezze el a kívánt beállításokat a 8. lépésben a karbantartási feladattípusok leírt módszerekkel. Az számlálók beállításával kapcsolatos további információkat lásd: [Számlálók](counters.md).
 10. Ezután kiválaszthatja azokat az attribútumtípusokat, amelyek az eszköztípushoz kapcsolódnak. Az **Attribútumtípusok** gyorslapon végezze el a kívánt beállításokat a 8. lépésben a karbantartási feladattípusoknál leírt módszerekkel. Ezután az attribútumtípusok preferált sorrendjének létrehozásához válasszon ki egy attribútumtípust a **Kiválasztott attribútumtípusok** mezőből, majd a fel és a le nyílgombokkal helyezze át. Az attribútumtípusok sorrendje az ilyen eszköztípust használó eszközöknél jelenik meg. Az eszközattribútumokról bővebben lásd: [Karbantartási attribútumtípusok](../setup-for-functional-locations/specification-types.md).

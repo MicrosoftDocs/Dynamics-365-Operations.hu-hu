@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 9430bc1386f127d02b598d6cad1b53f66e0cf2ba
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 12ba639ccf670997d4f16325172aa351732a5722
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023285"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348909"
 ---
 # <a name="set-up-withholding-tax-settlement-periods-for-the-tds-tax-type"></a>Az adóelőlegelemek kifizetési időszakainak beállítása TDS adótípushoz
 
@@ -31,7 +31,7 @@ Ez a témakör elmagyarázza, hogyan lehet beállítani az elszámolási idősza
 
 1. Ugorjon az **Adó \> Közvetett adók \> Adóelőleg \> Adóelőleg-kiegyenlítési időszakok** elemre.
 
-    [![Adóelőleg-kiegyenlítési időszakok oldala](./media/apac-ind-TDS-13.png)](./media/apac-ind-TDS-13.png)
+    [![Adóelőleg-kiegyenlítési időszakok oldala.](./media/apac-ind-TDS-13.png)](./media/apac-ind-TDS-13.png)
 
 2. Az **Adótípus** mezőben válassza ki a **TDS** lehetőséget a TDS adótípus adóelőleg kiegyenlítési időszakainak beállításához.
 3. Új sor létrehozásához válassza az **Új** elemet.
@@ -47,6 +47,6 @@ Ez a témakör elmagyarázza, hogyan lehet beállítani az elszámolási idősza
     > [!NOTE]
     > Az időszakos TDS-elszámolási folyamat futtatásához lépjen a **Főkönyv \> Időszakos \> Adóelőleg \> Adóelőleg-fizetés** lehetőségre.
 
-    [![Adóelőlegfizetés oldal](./media/apac-ind-TDS-15.png)](./media/apac-ind-TDS-15.png)
+    [![Adóelőlegfizetés oldal.](./media/apac-ind-TDS-15.png)](./media/apac-ind-TDS-15.png)
 
 12. Zárja be a lapot.

@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2021-05-17
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 9523492d766669e6c38579fba7b5ddd6b3d282fc
-ms.sourcegitcommit: c53de2c09b9296b41653e739178edf29f79e0679
+ms.openlocfilehash: a74847b50512d2f712e5a9a5125e520afc732591
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/17/2021
-ms.locfileid: "6049364"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344495"
 ---
 # <a name="assign-step-icons-and-titles-for-the-warehouse-management-mobile-app"></a>Lépésikonok és -címek hozzárendelése a Warehouse Management mobilalkalmazáshoz
 
@@ -25,7 +25,7 @@ Ez a témakör azt ismerteti, hogyan lehet lépésikonokat és lépéscímeket h
 
 A következő ábrákon az látható, hogyan jelennek meg a lépésikonok és -címek a Warehouse Management mobilalkalmazásban.
 
-![Példa lépésikonra és lépéscímre a Warehouse Management mobilalkalmazásban](media/step-icon-example.png "Példa lépésikonra és lépéscímre a Warehouse Management mobilalkalmazásban")
+![Példa lépésikonra és lépéscímre a Warehouse Management mobilalkalmazásban.](media/step-icon-example.png "Példa lépésikonra és lépéscímre a Warehouse Management mobilalkalmazásban")
 
 ## <a name="turn-on-this-feature-in-your-system"></a>A funkció bekapcsolása a rendszerben
 
@@ -350,13 +350,13 @@ Az alábbi példa bemutatja, hogyan állíthatók be lépésikonok és -címek e
 
 Ez a feladatfolyamat a következő ábrán látható.
 
-![Feladatfolyamat ábrája](media/step-icons-example-task-flow.png "Feladatfolyamat ábrája")
+![Feladatfolyamat ábrája.](media/step-icons-example-task-flow.png "Feladatfolyamat ábrája")
 
 ### <a name="create-a-step-class-for-the-container-input-page"></a>Lépésosztály létrehozása a tároló beviteli oldalához
 
 A tároló beviteli oldalán a dolgozó beolvashatja vagy beírhatja a tároló azonosítóját.
 
-![Tároló beviteli oldala](media/step-icons-example-container-input.png "Tároló beviteli oldala")
+![Tároló beviteli oldala.](media/step-icons-example-container-input.png "Tároló beviteli oldala")
 
 A tároló beviteli oldalán a beviteli mező vezérlőneve `ContainerId`. Mivel ez a vezérlőnév nem szerepel a [lépésazonosítók listájában](#step-ids-classes), nem található rajta alapuló lépés. Ezért létre kell hoznia egy olyan lépésosztályt, amely a lépést képviseli. Íme, egy példa.
 
@@ -382,7 +382,7 @@ Lépésikon hozzárendeléséhez állítsa be a témakör korábbi részén, az 
 
 A súlybeviteli oldalon a dolgozó súlyt adhat meg.
 
-![Súlybeviteli oldal](media/step-icons-example-weight-input.png "Súlybeviteli oldal")
+![Súlybeviteli oldal.](media/step-icons-example-weight-input.png "Súlybeviteli oldal")
 
 A súlybeviteli oldalon a beviteli mező vezérlőneve `Weight`, amely szerepel a [lépésazonosítók listájában](#step-ids-classes). Ezért ha a `WHSMobileAppStepWeight` osztályban meghatározott lépésikon és -cím elfogadható Önnek, akkor ennél a lépésnél semmit nem kell módosítania.
 

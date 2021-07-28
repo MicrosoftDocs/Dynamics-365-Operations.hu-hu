@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-06-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d5e0e671e624de2646a47647ef08d3567599b884
-ms.sourcegitcommit: 4cbd83e21a78459e4711a2dedba0f5a7acc3c841
+ms.openlocfilehash: d693d306929140c9640ed34d756399d70b81a12f
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "6261696"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347758"
 ---
 # <a name="replenishment-methods-and-quantity-modification"></a>Feltöltési módok és a mennyiség módosítása
 
@@ -34,15 +34,15 @@ A Tervezési optimalizálásban a következő fedezeti kódok használhatók:
 
 - **Időszak** – Ez a feltöltési módszer az adott időszakra vonatkozó összes igényt egy rendelésbe egyesíti a termékre vonatkozóan. A rendelés tervezése az időszak első napjához történik, és a rendelés mennyisége teljesíti a nettó szükségletet a meghatározott időszakban. Az időszak a termék első igényével kezdődik és a megadott időtartamra vonatkozik. A következő időszak a termék következő igényével kezdődik. Az *Időszak* fedezeti kód gyakran használatos előre nem jelezhető készletkérésre, szezonális termékekre vagy magas költségű termékekhez. A következő ábrán egy példa látható.
 
-    ![Példa az Időszak fedezeti kód használatára](./media/coverage-code-period.png "Példa az Időszak fedezeti kód használatára")
+    ![Példa az Időszak fedezeti kód használatára.](./media/coverage-code-period.png "Példa az Időszak fedezeti kód használatára")
 
 - **Igény** – A feltöltési módszerben a rendszer a termékre vonatkozó szükséglet alapján tervezett beszerzési, átmozgatási vagy termelési rendelést hoz létre. Ez a módszer olyan költséges termékeknél használatos, amelyekre időszakos igény van. Az *Igény* fedezeti kódot gyakran használják konfigurálható termékekhez és rendelésre történő gyártás esetén. A következő ábrán egy példa látható.
 
-    ![Példa az Igény fedezeti kód használatára](./media/coverage-code-requirement.png "Példa az Igény fedezeti kód használatára")
+    ![Példa az Igény fedezeti kód használatára.](./media/coverage-code-requirement.png "Példa az Igény fedezeti kód használatára")
 
 - **Min./max.** – A feltöltési módszer a készlet szintjén alapul. Ha az előrejelzett aktuális szint egy konkrét küszöbérték alatt van, akkor meghatározza a készlet adott szintig történő feltöltését. A feltöltési mennyiség a maximális szint és az előre jelzett aktuális szint közötti különbség lesz. A *Min./max.* fedezeti kódot gyakran használják kiszámítható készletkérésre, a legkeresettebb vagy a kevésbé drága termékeknél. A következő ábrán egy példa látható.
 
-    ![Példa a Min./max. fedezeti kód használatára](./media/coverage-code-min-max.png "Példa a Min./max. fedezeti kód használatára")
+    ![Példa a Min./max. fedezeti kód használatára.](./media/coverage-code-min-max.png "Példa a Min./max. fedezeti kód használatára")
 
 - **Manuális** – A feltöltési módszernél a rendszer nem javasol beszerzési, átviteli vagy termelési rendeléseket a termékhez. Ehelyett a termék tervezője felelős a termék feltöltéséhez szükséges rendelések létrehozásáért. A *Manuális* fedezeti kódot gyakran használják olyan termékekhez, amelyeknél nincs szükség rendszer által generált tervezett rendelésekre.
 

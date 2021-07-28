@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 5204fb80dcf3dc2342e9d37f18b9d4f587de1808
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: e84f882f69fbc7fceae8a6e0332716a82830dfdc
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754294"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344048"
 ---
 # <a name="row-definitions-in-financial-report-designer"></a>Sordefiníciók a pénzügyi jelentéstervezőben
 
@@ -158,7 +158,7 @@ A sordefinícióban meghatározott formázás felülír minden formázást, amel
 
 1. A Report Designer alkalmazásban nyissa meg a módosítani kívánt sordefiníciót.
 2. Válassza ki a formázandó cellákat. Több cella kijelöléséhez tartsa lenyomva a Ctrl gombot, amíg kijelöli a cellát.
-3. Kattintson a formátum eszköztári gombjára, hogy alkalmazza. Például egy sor behúzásához jelölje ki a sort, és kattintson a **Behúzás növelése** ![Behúzás növelése](media/indent.gif "Behúzás csökkentése") elemre az eszköztárban.
+3. Kattintson a formátum eszköztári gombjára, hogy alkalmazza. Például egy sor behúzásához jelölje ki a sort, és kattintson a **Behúzás növelése** ![Behúzás növelése.](media/indent.gif "Behúzás csökkentése") elemre az eszköztáron.
 
 ### <a name="adjust-columns-while-you-design-reports"></a>Oszlopok beállítása a jelentések tervezése közben
 

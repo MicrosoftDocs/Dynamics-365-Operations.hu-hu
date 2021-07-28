@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: c3414d6ef5f2df62f37f1ef2e7e2ff43ce040e5e
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: ac56dd8f6ecda669f32b298649da45634c5d83c9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752250"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360768"
 ---
 # <a name="invoice-approvals-mobile-workspace"></a>Számlajóváhagyások mobil munkaterület
 
@@ -72,7 +72,7 @@ A Finance and Operations mobilalkalmazás letöltése és telepítése:
 3.  Az első bejelentkezéskor a rendszer kéri a felhasználónevet és jelszót. Adja meg a hitelesítési adatait.
 4.  A bejelentkezést követően megjelennek a vállalata rendelkezésre álló munkaterületek. Vegye figyelembe, hogy ha a rendszergazda később teszi közzé az új munkaterületet, akkor Önnek frissítenie kell a mobil munkaterületek listáját.
 
-    [![Lekérés frissítéshez](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
+    [![Frissítés húzással.](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
 ## <a name="approve-invoices-by-using-the-invoice-approvals-mobile-workspace"></a>Számlák jóváhagyása a Számlajóváhagyások mobil munkaterület használatával
 1.  A mobileszközön válassza a **Számlajóváhagyások** munkaterületet.

@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: bbe7749e6c8293ded933611d6f1084b89223302c
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 447c5f580e5d925efbfeaabc3890e2d67f9688f5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5790982"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344347"
 ---
 # <a name="set-up-assortments"></a>Szortimentek beállítása
 
@@ -31,7 +31,7 @@ Ez a cikk leírja, hogy mi a szortiment, és elmagyarázza, hogyan kell beállí
 
 A választék olyan kapcsolódó termékek gyűjteménye, amelyeket egy kereskedelmi csatornához hozzárendelnek, például egy fizikai üzlethez vagy egy online áruházhoz. A kiskereskedelmi áruházban rendelkezésre álló termékek azonosítása. Szortiment termékkategóriák is tartozhat. A kijelölt kategóriához rendelt összes termék szerepel a szortimentben. A vállalatfüggő termékek és termékek meghatározott változatok szortiment is tartalmazhatnak. Szortiment beállításával rendelhet egyidejűleg több ezer terméket a kereskedelmi csatornáihoz, bármilyen kombinációban, amelyet az üzlet igényel. Tetszőleges számú termék szortimentek van szüksége, be lehet állítani. Megadhat egy vagy több szortimentet, és minden termék egy vagy több csatornához rendelhető hozzá. Például megadhatja egy szortiment, amelyek a termékek alapvető készletét tartalmazza. Az összes üzlet a szortimentet kapja. Egy másik szortiment csak nagy sporteseményekre berendezések tartalmazó majd határozza meg. A nagyobb üzletek a szortimentet kapja. A következő ábra bemutatja, hogyan rendelhetők a termékek szortimentekhez, és azok hogyan rendelhetők kereskedelmi csatornákhoz.
 
-![Szortiment terméksorai](./media/assortments_relationship.gif)
+![Szortiment terméksorai.](./media/assortments_relationship.gif)
 
 ## <a name="prerequisites"></a>Előfeltételek
 

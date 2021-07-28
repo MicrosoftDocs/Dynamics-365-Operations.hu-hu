@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 67af34d2c9c583d8c9befbd2675cee41a3db05e0
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: bda671923c79d028b77e255f6e5b0e829a63e466
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753408"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351770"
 ---
 # <a name="screen-destination"></a>Képernyő célja
 
@@ -30,7 +30,7 @@ Beállíthat egy képernyőt a kimenő dokumentumok létrehozásához konfigurá
 
 Ha az **Engedélyezve** elem **Igen** értékre van állítva, létrejön a kimenet előnézete. Bizonyos fájltípusok, például XML, TXT vagy PDF, közvetlenül a böngésző ablakában tekinthető meg. Más fájltípusoknál, például Microsoft Excel vagy Word esetén, a Microsoft Office Online szolgáltatás használatos.
 
-[![Célhely beállításai oldal](./media/ER_Destinations-EnableScreenDestination.png)](./media/ER_Destinations-EnableScreenDestination.png)
+[![Célhely beállításai oldal.](./media/ER_Destinations-EnableScreenDestination.png)](./media/ER_Destinations-EnableScreenDestination.png)
 
 ## <a name="additional-resources"></a>További erőforrások
 

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2020-03-01
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 23d02cf96faf3753303435acc148bf71e487d791
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: c38717ca9c57913ea22f2dd7712b49f39d2e556e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799912"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349698"
 ---
 # <a name="enable-and-configure-auto-charges-by-channel"></a>Automatikus költségek csatorna szerinti engedélyezése és konfigurálása
 
@@ -66,7 +66,7 @@ Ha egy alapértelmezett hierarchiát szeretné társítani egy szervezeti hierar
 1. A Műveleti ablaktáblán kattintson a **Futtatás most** elemre.
 1. A **1070** (**Csatorna-konfigurációja**) és a **1110** (**Globális konfiguráció**) feladatok futtatásához ismételje meg az előző két lépést.
 
-![A Kiskereskedelmi automatikus költség szervezeti hierarchia céljának konfigurálása](media/Auto-charges-org-hierarchy-purpose.png)
+![A Kiskereskedelmi automatikus költség szervezeti hierarchia céljának konfigurálása.](media/Auto-charges-org-hierarchy-purpose.png)
 
 ## <a name="define-auto-charges-by-channel"></a>Automatikus költségek definiálása csatornánként
 
@@ -86,7 +86,7 @@ A csatorna szerinti automatikus költségek definiálásához a Commerce alkalma
 1. A Műveleti ablaktáblán kattintson a **Futtatás most** elemre.
 1. A **1070** (**Csatorna-konfigurációja**) és a **1110** (**Globális konfiguráció**) feladatok futtatásához ismételje meg az előző két lépést.
     
-![Automatikus költségek csatornánként definiálva](media/Auto-charges-line-charge-by-channel.png)
+![Automatikus költségek csatornánként definiálva.](media/Auto-charges-line-charge-by-channel.png)
 
 ## <a name="example-scenario"></a>Példaforgatókönyv
 
@@ -94,7 +94,7 @@ A következő példa a termék konfigurálásához szükséges lépéseket írja
 
 A szervezet definiál egy **ÚJRAHASZNOSÍTÁS** nevű költségkódot a következő ábrán látható módon.
 
-![ÚJRAFELDOLGOZÁS költségkód](media/Auto-charges-charge-code.png)
+![ÚJRAFELDOLGOZÁS költségkód.](media/Auto-charges-charge-code.png)
 
 Az automatikus költséget a sor szintjén jön létre. Az alábbi konfiguráció jellemzi:
 
@@ -112,13 +112,13 @@ Létrejön egy automatikus költség sor. Az alábbi konfiguráció jellemzi:
 - A **Kategória** mező be van állítva **Rögzített** értékre.
 - A **Költésgek** mező beállítása **6,25 USD**.
 
-![A sor szintű automatikus költéségek és az automatikus költségek sora konfigurálása](media/Auto-charges-recyclingfee-line-fee.png)
+![A sorszintű automatikus költségek és az automatikus költségek sorának konfigurálása.](media/Auto-charges-recyclingfee-line-fee.png)
 
 A pénztár alkalmazásban létrejön egy értékesítési rendelés a **San Franciscó** üzlet csatornájában. A **Költségek** sor a **6,25 dolláros** újrahasznosítási díjat jeleníti meg.
 
 Ha kiválasztja a **Tranzakcióbeállítások \> Költségék \> Költésgek kezelése** lehetőséget a POS-alkalmazásban, akkor megtekintheti az újrahasznosítási díj költségkódját és leírását.
 
-![Újrahasznosítási díj a pénztár alkalmazásban](media/pos-auto-charges-recyclingfee-line-fee.png)
+![Újrahasznosítási díj a pénztár alkalmazásban.](media/pos-auto-charges-recyclingfee-line-fee.png)
 
 ## <a name="additional-resources"></a>További erőforrások
 

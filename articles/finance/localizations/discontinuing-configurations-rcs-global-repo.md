@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2021-02-02
 ms.dyn365.ops.version: AX 10.0.14
-ms.openlocfilehash: 2bd22e991de376cfd93f75158f1f29716d2559e1
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 1d25d583580af3d73a3ac1eaebc9f7d8413c6563
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018733"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360206"
 ---
 # <a name="discontinue-configurations-in-the-rcs-global-repository"></a>Konfigurációk megszüntetése az RCS Globális adattárban
 
@@ -45,7 +45,7 @@ A konfiguráció megszüntetéséhez kövesse az alábbi lépéseket.
 2. A **Megszüntetés** paramétert állítsa **Igen** értékre.
 3. A konfigurációk megszüntetéséhez kattintson az **OK** gombra. A módosítások mentésekor a rendszer kitölti a **Megszüntetési dátum** mezőt.
 
-![Konfigurációs adatok megszüntetése](media/Discontinue-details-2.png)
+![Konfigurációs adatok megszüntetése.](media/Discontinue-details-2.png)
   
 A konfiguráció bármikor visszaállítható a **Megosztott** beállításra, illetve bármikor módosíthatja a megszüntetési adatokat. Ha közös konfigurációt oszt meg, adja meg a **Támogatás határideje** dátumát és a megszüntetéshez kapcsolódó összes egyéb információt, hogy jelezze a jövőbeli megszüntetésre vonatkozó terveit.
 
