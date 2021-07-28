@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: cb3e09ad849b250ed3f1d7aec910b44d591cb88e
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: e1672ee1777150a7f78c03d07dc79df118a3632f
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751632"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347876"
 ---
 # <a name="organize-report-components-in-report-designer"></a>Jelentés-összetevők rendezése a jelentéstervezőben
 
@@ -47,7 +47,7 @@ Ezzel egy időben a jelentésdefiníciókat csoportosíthatja több jelentés k�
 ### <a name="create-a-report-group"></a>Jelentés csoport létrehozása
 
 1. A Jelentéstervező navigációs ablakában kattintson a **Jelentéscsoportok** lehetőségre.
-2. A **Fájl** menüben kattintson az **Új** &gt; **Jelentéscsoport-definíció** lehetőségre, hogy megnyisson egy új jelentéscsoportot a megjelenítő ablakban. Másik lehetőségként kattintson a **Jelentéscsoport** gombra ![Jelentéscsoport](media/report-group.gif "Jelentéscsoport") az eszköztáron.
+2. A **Fájl** menüben kattintson az **Új** &gt; **Jelentéscsoport-definíció** lehetőségre, hogy megnyisson egy új jelentéscsoportot a megjelenítő ablakban. Másik lehetőségként kattintson a **Jelentéscsoport** gombra ![Jelentéscsoport](media/report-group.gif "Jelentéscsoport") elemre az eszköztáron.
 3. Kattintson a **Jelentéscsoport** lapra. Ha felül szeretné bírálni ennek a jelentés létrehozásának egyes jelentésdefinícióban lévő információkat, jelölje be a **Az egyes jelentésdefiníciókból a vállalat, adat és dátumbeállítások felülbírálása** jelölőnégyzetet. A vállalat nevét, a részletezési szintet, az ideiglenes beállítást és dátum információkat automatikusan feltölti a rendszer, de végezhet rajtuk frissítéseket.
 4. Több jelentés létrehozásához, amelyek megmutatják a jelentési pénznemeket válassza ki a **Minden jelentési pénznem szerepeltetése** jelölőnégyzetet. Ezután több nézethez férhet hozzá, ha a **Pénznem** gombra kattint a böngészőben, a jelentés megtekintésekkor.
 5. A **Jelentések a csoportban** mezőben, kattintson a **Hozzáadás** gombra a jelentéscsoportba felvenni kívánt jelentések kiválasztásához. Több jelentés kijelöléséhez a **Hozzáadás** párbeszédablakban, tartsa lenyomva a Ctrl billentyűt, miközben kiválasztja az elemeket. Befejezése után jelölje ki a jelentéseket, és kattintson az **OK** gombra.
@@ -58,7 +58,7 @@ Ezzel egy időben a jelentésdefiníciókat csoportosíthatja több jelentés k�
 1. A Jelentéstervező navigációs ablakában kattintson a **Jelentéscsoportok** lehetőségre.
 2. Kattintson duplán a módosítani kívánt jelentéscsoportra.
 3. A **Jelentéscsoport** lapon, végezze el a kívánt módosításokat.
-4. A **Fájl** menüben kattintson a **Mentés** lehetőségre a módosított jelentéscsoport mentéséhez, vagy kattintson a **Mentés** gombra ![Mentés](media/save.gif "Mentés") az eszköztáron.
+4. A **Fájl** menüben kattintson a **Mentés** lehetőségre a módosított jelentéscsoport mentéséhez, vagy kattintson a **Mentés** gombra ![Mentés.](media/save.gif "Mentés") elemre az eszköztáron.
 
 > [MEGJEGYZÉS] Ha meghatározott időközönként létrehozott jelentéseket ütemezett, felülírhatja ezeket a beállításokat, és azonnal jelentéseket készíthet.
 
@@ -66,7 +66,7 @@ Ezzel egy időben a jelentésdefiníciókat csoportosíthatja több jelentés k�
 
 1. A Jelentéstervező navigációs ablakában kattintson a **Jelentéscsoportok** lehetőségre.
 2. Nyissa meg a jelentéscsoportot a jelentés készítéséhez.
-3. Kattintson a **Jelentés készítése** gombra ![Jelentés készítése](media/generate-report.gif "Jelentés létrehozása") jelentések készítéséhez.
+3. Kattintson a **Jelentés készítése** gombra ![Jelentés készítése.](media/generate-report.gif "Jelentés létrehozása") jelentések készítéséhez.
 
 ### <a name="delete-a-report-group"></a>Jelentéscsoport törlése
 

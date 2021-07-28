@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b7e5726f7e4beea1584b9a8e142212531ba1db56
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 6e87781762112955902d8a5807092a842f53f6af
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6051737"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356560"
 ---
 # <a name="understand-date-and-time-fields"></a>Dátum és Idő mezők ismertetése
 
@@ -36,13 +36,13 @@ A **Dátum és idő** mező időzóna-információt tartalmaz, míg a **Dátum**
 
 Amikor egy **Dátumot és idő** mezőben adatokat jeleníti meg, az Emberi erőforrások a **Felhasználói beállítások** képernyőn (**Közös > Beállítás > Felhasználói beállítások**) megadott időzóna alapján módosítja a dátumot és az időt. Előfordulhat, hogy a mezőben megadott dátum-és időadatok nem egyeznek meg az adatbázisba írt adatokkal.
 
-[![Felhasználói beállítások képernyő](./media/useroptionsform.png)](./media/useroptionsform.png)
+[![Felhasználói beállítások képernyő.](./media/useroptionsform.png)](./media/useroptionsform.png)
 
 ## <a name="understanding-date-and-time-fields-in-forms"></a>Dátum és Idő mezők képernyőkön 
 
 A **Dátum és idő** mezőben a képernyőn megjelenő adatok nem egyeznek meg az adatbázisban tárolt adatokkal, ha a felhasználó időzónája nem az univerzális világidő (UTC) szerint van állítva. A **Dátum és idő** mezők adatait mindig UTC-ben tárolja a program.
 
-[![Dolgozói űrlap UTC](./media/worker-form.png)](./media/worker-form.png)
+[![Dolgozó képernyő UTC.](./media/worker-form.png)](./media/worker-form.png)
 
 ## <a name="understand-date-and-time-fields-in-the-database"></a>A Dátum és Idő mezők működés az adatbázisban 
 
@@ -52,7 +52,7 @@ A fenti példában a kezdési időpont egy időpont, nem pedig egy adott dátum.
   
 Az alábbi példában a 000724 számú alkalmazott munkaviszonya az időzónatól függetlenül aktívvá válik ugyanabban az időpontban. Az alkalmazott aktív lesz 2019. 04. 30-án a GMT-időzónában, amely ugyanaz, mint a 2019. 05. 01. a GMT + 12:00 időzónában. Mindkettő ugyanarra az idő pontra hivatkozik, és nem egy adott dátumra. 
 
-[![Dolgozói űrlap GMT](./media/worker-form2.png)](./media/worker-form2.png)
+[![Dolgozó képernyő GMT.](./media/worker-form2.png)](./media/worker-form2.png)
 
 ## <a name="date-and-time-data-in-data-management-framework-excel-dataverse-and-power-bi"></a>Dátum-és időadatok az adatkezelési keretrendszerben, Excel programban, Dataverse és Power BI szolgáltatásokban 
 
@@ -68,27 +68,27 @@ Ha a DMF-hez hasonló külső forrásokat használ az adatok szerkesztéséhez v
 
 **Az Emberi erőforrások időzónája UTC értékre van állítva**
 
-[![Dolgozói űrlap UTC-formátumra állítva](./media/worker-form3.png)](./media/worker-form3.png)
+[![Dolgozói űrlap UTC-formátumra állítva.](./media/worker-form3.png)](./media/worker-form3.png)
 
 **Az Emberi erőforrások időzónája GMT +12:00 értékre van állítva** 
 
-[![Dolgozói űrlap GMT-formátumra állítva](./media/worker-form4.png)](./media/worker-form4.png)
+[![Dolgozói űrlap GMT-formátumra állítva.](./media/worker-form4.png)](./media/worker-form4.png)
 
 **Excel-OData-n keresztül**
 
-[![Excel-OData-n keresztül](./media/Excelviaodata.png)](./media/Excelviaodata.png)
+[![Excel-OData-n keresztül.](./media/Excelviaodata.png)](./media/Excelviaodata.png)
 
 **DMF-előkészítés**
 
-[![DMF-előkészítés](./media/DMFStaging.png)](./media/DMFStaging.png)
+[![DMF-előkészítés.](./media/DMFStaging.png)](./media/DMFStaging.png)
 
 **DMF-exportálás**
 
-[![DMF exportálása](./media/DMFexport.png)](./media/DMFexport.png)
+[![DMF-export.](./media/DMFexport.png)](./media/DMFexport.png)
 
 **Excel Dataverse szolgáltatáson keresztül**
 
-[![Excel Dataverse szolgáltatáson keresztül](./media/ExcelCDS.png)](./media/ExcelCDS.png)
+[![Excel Dataverse szolgáltatáson keresztül.](./media/ExcelCDS.png)](./media/ExcelCDS.png)
 
 ## <a name="see-also"></a>Lásd még
 

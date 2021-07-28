@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 07f103680cacc1273b2b28f6e4e905d6dabb006a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 14de281927fa3e6410627839005c6b81a93d89bc
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5820322"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347020"
 ---
 # <a name="hazardous-materials-inquiries-and-reports"></a>Veszélyes anyagokkal kapcsolatos lekérdezések és jelentések
 
@@ -29,7 +29,7 @@ Mindezek a jelentések – a **Multimodális veszélyes áruk** jelentés kivét
 
 A következő ábra azokat a tevékenységfolyamatokat jeleníti meg, amelyek akkor következnek be, amikor a rendszer a veszélyes anyagok jelentéseit hozza létre.
 
-![A veszélyes anyagok jelentéseihez kapcsolódó tevékenységek sorozata](media/hazmat-report-sequence.png "A veszélyes anyagok jelentéseihez kapcsolódó tevékenységek sorozata")
+![A veszélyes anyagok jelentéseihez kapcsolódó tevékenységek sorozata.](media/hazmat-report-sequence.png "A veszélyes anyagok jelentéseihez kapcsolódó tevékenységek sorozata")
 
 ## <a name="set-up-hazardous-materials-reporting"></a><a name="set-up"></a>Veszélyes anyagok jelentéseinek beállítása
 

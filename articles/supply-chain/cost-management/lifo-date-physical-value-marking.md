@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f6a9f21c6c329ef37d515fa0fbdaca57b4f3be0a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 744111a28256bb737246605ca8a259ff5a3d2b5d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821537"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344568"
 ---
 # <a name="lifo-date-with-physical-value-and-marking"></a>LIFO dátum tényleges értékkel és jelöléssel
 
@@ -55,7 +55,7 @@ Ebben a példában a cikkmodellcsoport nem tartalmazza a tényleges értéket. A
 
 Az új, mozgóátlagon alapuló önköltségi ár a pénzügyileg frissített tranzakciók átlagának, azaz 15,00 USD összegnek felel meg. 
 
-A következő ábra bemutatja, milyen hatása van a LIFO dátum készletmodellnek, ha a **Tényleges értékkel együtt** beállítás nincs bekapcsolva. ![LIFO dátum a tényleges értékkel együtt](./media/lifodatewithoutincludephysicalvalue.gif) 
+A következő ábra bemutatja, milyen hatása van a LIFO dátum készletmodellnek, ha a **Tényleges értékkel együtt** beállítás nincs bekapcsolva. ![LIFO dátum a tényleges értékkel együtt.](./media/lifodatewithoutincludephysicalvalue.gif) 
 
 **Jelmagyarázat**
 
@@ -90,7 +90,7 @@ A következő ábrán ezek a tranzakciók láthatók:
 
 Az új, mozgóátlagon alapuló önköltségi ár a pénzügyileg frissített tranzakciók átlagának, azaz 20,00 USD összegnek felel meg. 
 
-A következő ábra bemutatja, milyen hatása van a LIFO dátum készletmodellnek, ha a **Tényleges értékkel együtt** beállítás be van kapcsolva. ![LIFO dátum a tényleges értékkel együtt](./media/lifodatewithincludephysicalvalue.gif) 
+A következő ábra bemutatja, milyen hatása van a LIFO dátum készletmodellnek, ha a **Tényleges értékkel együtt** beállítás be van kapcsolva. ![LIFO dátum a tényleges értékkel együtt.](./media/lifodatewithincludephysicalvalue.gif) 
 
 **Jelmagyarázat**
 
@@ -136,7 +136,7 @@ A következő ábrán ezek a tranzakciók láthatók:
 
 Az új, mozgóátlagon alapuló önköltségi ár a pénzügyileg és fizikailag frissített tranzakciók átlagának, azaz 27,50 USD összegnek felel meg. 
 
-A következő ábra bemutatja, milyen hatása van a LIFO dátum készletmodellnek, ha a kiadások és bevételek közötti jelölés használva van. ![LIFO dátum jelöléssel](./media/lifodatewithmarking.gif) 
+A következő ábra bemutatja, milyen hatása van a LIFO dátum készletmodellnek, ha a kiadások és bevételek közötti jelölés használva van. ![LIFO dátum jelöléssel.](./media/lifodatewithmarking.gif) 
 
 **Jelmagyarázat**
 

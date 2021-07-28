@@ -2,7 +2,7 @@
 title: A Human Resources paramétereinek konfigurálása
 description: Ez a témakör ismerteti a vállalat-specifikus paraméterek beállítását a Dynamics 365 Human Resources alkalmazásban.
 author: andreabichsel
-ms.date: 02/03/2020
+ms.date: 06/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7c4c93e3d2644a380e3d5d2247961a8b6fb34568
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 24d30aa06805b530cc069be0517279a11dff9ed4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6052409"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356536"
 ---
 # <a name="configure-human-resources-parameters"></a>A Human Resources paramétereinek konfigurálása
 
@@ -30,7 +30,7 @@ A Human Resources egyes paramétereinek beállításait közösen használják a
 
 A Human Resources paraméterek beállítása két oldalon történik. A vállalatok között megosztott paraméterekhez az **Emberi erőforrások megosztott paraméterei** oldal használatos. A vállalatspecifikus (más szóval, a beállítások csak egy vállalatra vonatkoznak) paraméterekhez az **Emberierőforrás-paraméterek** oldal használatos.
 
-![Lépjen a Humar Resources paramétereihez](./media/hr-employee-self-service-human-resources-parameters.png)
+![Lépjen a Humar Resources paramétereihez.](./media/hr-employee-self-service-human-resources-parameters.png)
 
 Az **Emberierőforrás-paraméterek** oldalon a beállítások 6 lapra vannak szétosztva.
 
@@ -51,14 +51,15 @@ Minden lap egyetlen vállalatra vonatkozóan tartalmaz információkat.
 
 Az **Általános** lapon található beállítások határozzák meg a távolléttel, sérüléssel, betegséggel és új munkaerővel kapcsolatos információk megjelenését. Az ezen a lapon található beállítások meghatároznak néhány alapértelmezett tételt is, amelyek a munkavégzés során jelennek meg. Ez a lap a következőt teszi lehetővé:
 
-- A nyitott távolléti tranzakcióra alkalmazni kívánt szín megadása
-- A jelentésekhez használt stíluslap megadása
-- Tanfolyamok és távolléti regisztrációk közötti integráció engedélyezése
+- A nyitott távolléti tranzakcióra alkalmazni kívánt szín megadása.
+- A jelentésekhez használt stíluslap megadása.
+- Tanfolyamok és távolléti regisztrációk közötti integráció engedélyezése.
 - Az integráció szabályozásához használt távolléti kód kiválasztása.
 - Adja meg, mennyi ideig kell megőrizni a sérüléssel és betegséggel kapcsolatos eseményeket.
 - Adja meg az új dolgozó felvétele esetén megjelenő alapértelmezett azonosítószámot.
+- Adja meg a szolgáltatási évek kiszámításához használt dátumot. 
 
-![Általános fül](./media/hr-setup-parameters-general.png)
+![Általános fül.](./media/hr-setup-parameters-general.png)
 
 ## <a name="recruitment"></a>Munkaerő-felvétel
 
@@ -76,7 +77,7 @@ A Human Resources alkalmazásban a **Kompenzáció** lapon kiválaszthatja, hogy
 
 A kompenzációval kapcsolatos további információkért lásd: [Kompenzációs konstrukciók áttekintése](hr-compensation-overview.md).
 
-![Kompenzáció lap](./media/hr-setup-parameters-compensation.png)
+![Kompenzáció lap.](./media/hr-setup-parameters-compensation.png)
 
 ## <a name="number-sequences"></a>Számsorozatok
 
@@ -96,13 +97,13 @@ További információkért lásd: [Számsorozatok áttekintése](../fin-ops-core
 > [!NOTE]
 > A ledolgozott órák száma nem haladhatja meg az 1250-et, és a munkaviszony nem lehet hosszabb 12 hónapnál. Ezek a maximális értékek az Egyesült Államok szövetségi törvényének megfelelőek.
 
-![Számsorozatok lap](./media/hr-setup-parameters-number-sequences.png)
+![Számsorozatok lap.](./media/hr-setup-parameters-number-sequences.png)
 
 ## <a name="fmla"></a>FMLA
 
 Az FMLA lapon lehet beállítani az FMLA-alkalmazhatósági követelmények és az FMLA-jogosultsági órák beállítását. További tájékoztatás: [Szabadság és távolléti paraméterek konfigurálása](hr-leave-and-absence-parameters.md).
 
-![FMLA lap](./media/hr-setup-parameters-fmla.png)
+![FMLA lap.](./media/hr-setup-parameters-fmla.png)
 
 ## <a name="employee-self-service"></a>Alkalmazotti önkiszolgáló rendszer
 
@@ -115,7 +116,7 @@ Az **Alkalmazotti önkiszolgáló rendszer** lap beállításai befolyásolják,
 
 Az Alkalmazotti önkiszolgáló rendszer beállításával kapcsolatos további tudnivalókat lásd: [Alkalmazotti és vezetői önkiszolgáló rendszer áttekintése](hr-employee-manager-self-service-overview.md).
 
-![Alkalmazotti önkiszolgáló rendszer lap](./media/hr-setup-parameters-employee-self-service.png)
+![Alkalmazotti önkiszolgáló rendszer lap.](./media/hr-setup-parameters-employee-self-service.png)
 
 ## <a name="manager-self-service"></a>Vezetői önkiszolgáló rendszer
 
@@ -129,13 +130,13 @@ A **Vezetői önkiszolgáló rendszer** lapon megadott beállítások befolyáso
 
 A Vezetői önkiszolgáló rendszer beállításával kapcsolatos további tudnivalókat lásd: [Alkalmazotti és vezetői önkiszolgáló rendszer áttekintése](hr-employee-manager-self-service-overview.md).
 
-![Vezetői önkiszolgáló rendszer lap](./media/hr-setup-parameters-manager-self-service.png)
+![Vezetői önkiszolgáló rendszer lap.](./media/hr-setup-parameters-manager-self-service.png)
 
 ## <a name="benefits-management"></a>Juttatáskezelés
 
 A Juttatáskezelés lapon beállíthatja a Juttatáskezelése e-mail-beállításait. A Juttatáskezelés beállításával és használatával kapcsolatos további tudnivalókért lásd: [Juttatáskezelés áttekintése](hr-benefits-management-overview.md).
 
-![Juttatáskezelés lap](./media/hr-setup-parameters-benefits-management.png)
+![Juttatáskezelés lap.](./media/hr-setup-parameters-benefits-management.png)
 
 ## <a name="leave-and-absence"></a>Szabadság és távollét
 
@@ -145,7 +146,7 @@ A Szabadság és távollét beállításával és használatával kapcsolatos to
 
 A **Fizetési módok** lapon kiválaszthatja a szervezet által támogatott fizetési módokat. A kompenzáció konfigurálásával kapcsolatos további információkért lásd: [Kompenzációs konstrukciók áttekintése](hr-compensation-overview.md).
 
-![Fizetési módok lap](./media/hr-setup-parameters-payment-methods.png)
+![Fizetési módok lap.](./media/hr-setup-parameters-payment-methods.png)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2019-08-14
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 413847d350ca6b2bdd6153a598ea5b3f34a33818
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0e465594968ac860a9cb8f6f5d679084e5594457
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826275"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355605"
 ---
 # <a name="dispose-of-a-fixed-asset-as-scrap"></a>Tárgyi eszközök kivezetése selejtként
 
@@ -43,7 +43,7 @@ Ez a témakör azt mutatja be, hogyan lehet kiküszöbölni a tranzakciókat oly
 A tárgyi eszköz selejtezése előtt létre kell hoznia azokat a főkönyvi számlákat, amelyek a tárgyi eszköz beszerzési értékéhez, az aktuális évi értékcsökkenéshez, az előző évek értékcsökkenéséhez és az eszköz NKÉ-jéhez tartoznak. A tárgyieszköz-tranzakciók típusai a **Tárgyi eszközök feladási profiljai** lapon láthatók. Nyissa meg a **Tárgyi eszközök \> Beállítások \> Tárgyieszköz-feladási profilok** menüt, majd a **Selejtezés** gyorslapon válassza ki a **Selejt** lehetőséget a rács fölötti mezőben. A következő ábra a tárgyieszköz-tranzakciótípusok listáját mutatja a **Tárgyieszköz-feladási profilok** oldalon.
 
 
-[![Eszköz selejtezése selejtként, 1. ábra](./media/Fixed_asset_Disposal_scrap_scenario_1.png)](./media/Fixed_asset_Disposal_scrap_scenario_1.png)
+[![Eszköz selejtezése, 1. ábra.](./media/Fixed_asset_Disposal_scrap_scenario_1.png)](./media/Fixed_asset_Disposal_scrap_scenario_1.png)
 
 A következő példában a tárgyi eszköz a 2018. január 1-én került beszerzésre, és azt 2019 március 31-én selejtezték le.
 
@@ -58,27 +58,27 @@ Nettó könyv szerinti érték = Beszerzési ár – értékcsökkenés
 
 Ebben a példában a tárgyi eszköz beszerzése és avultatása 15 hónapig, 2018 januárjától 2019 márciusáig tartott. Ennek megfelelően az eszköz NKÉ-je 9000,00 USD (24 000,00 USD – 15 000,00 USD).
 
-[![Tárgyi eszköz avultatása példa](./media/Fixed_asset_Disposal_scrap_scenario_2.png)](./media/Fixed_asset_Disposal_scrap_scenario_2.png)
+[![Tárgyi eszköz avultatása példa.](./media/Fixed_asset_Disposal_scrap_scenario_2.png)](./media/Fixed_asset_Disposal_scrap_scenario_2.png)
 
 
 A kivezetési napló létrehozásához nyissa meg a **Tárgyi eszközök \> Naplóbejegyzések \> Tárgyi eszközök naplója** lehetőséget, majd a műveleti ablaktáblán válassza a **Sorok** lehetőséget. Válassza a **Kivezetés – selejt** lehetőséget, majd válassza ki a tárgyi eszköz azonosítóját. Az eszköz teljes mértékű kivezetéséhez ne írjon be értéket **Terhelés** vagy a **Jóváírás** mezőbe.
 
-[![Tárgyi eszközök naplója](./media/Fixed_asset_Disposal_scrap_scenario_3.png)](./media/Fixed_asset_Disposal_scrap_scenario_3.png)
+[![Tárgyi eszközök naplója.](./media/Fixed_asset_Disposal_scrap_scenario_3.png)](./media/Fixed_asset_Disposal_scrap_scenario_3.png)
 
 A tárgyi eszközök kivezetési tranzakciója a következő módon módosítja a tárgyi eszköz könyvének mezőértékeit:
 
 - Az **Egyenleg** szakaszban az **Állapot** mező a **selejtezettre** módosul.
 - A **Kiadás** szakaszban a **Kivezetés dátuma** mező az eszköz selejtezésének dátumát adja meg.
 
-[![Tárgyieszköz-napló részletei](./media/Fixed_asset_Disposal_scrap_scenario_4.png)](./media/Fixed_asset_Disposal_scrap_scenario_4.png)
+[![Tárgyieszköz-napló részletei.](./media/Fixed_asset_Disposal_scrap_scenario_4.png)](./media/Fixed_asset_Disposal_scrap_scenario_4.png)
 
 A következő ábra a tárgyi eszköz egyenlegét jeleníti meg.
 
-[![Tárgyieszköz egyenleg](./media/Fixed_asset_Disposal_scrap_scenario_5.png)](./media/Fixed_asset_Disposal_scrap_scenario_5.png)
+[![Tárgyieszköz-egyenleg.](./media/Fixed_asset_Disposal_scrap_scenario_5.png)](./media/Fixed_asset_Disposal_scrap_scenario_5.png)
 
 A következő ábrán egy feladott bizonylat látható.
 
-[![Nettó könyv szerinti érték](./media/Fixed_asset_Disposal_scrap_scenario_6.png)](./media/Fixed_asset_Disposal_scrap_scenario_6.png)
+[![Könyv szerinti nettó érték.](./media/Fixed_asset_Disposal_scrap_scenario_6.png)](./media/Fixed_asset_Disposal_scrap_scenario_6.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

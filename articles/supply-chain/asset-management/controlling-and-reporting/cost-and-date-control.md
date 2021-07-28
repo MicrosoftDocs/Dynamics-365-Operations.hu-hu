@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: c09dee94891fb78c22e8cf9f203cb7f5531bb968
-ms.sourcegitcommit: 51cad1ce3ed44ebf7eb9bdf553ee2df4c1f03135
+ms.openlocfilehash: 4fd08d9eeb9bb6ac9e3c19ff3c8592086c050182
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "6016132"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354953"
 ---
 # <a name="cost-and-date-control"></a>Költség- és dátumellenőrzés
 
@@ -58,7 +58,7 @@ Az eszközökre, munkavégzési helyszínekre és munkarendelésekre vonatkozó 
 
     Az alábbi ábrán az **Eszközköltség ellenőrzése** párbeszédpanel egyik példája látható.
 
-    ![Eszköz költségének ellenőrzése párbeszédpanel](media/01-controlling-and-reporting.png)
+    ![Eszköz költségének ellenőrzése párbeszédpanel.](media/01-controlling-and-reporting.png)
 
 10. Az **Eszközköltségek ellenőrzése** lapon a **Csoportosítási szempont...** műveleti ablaktáblacsoportjaiban kattintson a megfelelő gombokra a költségszámításhoz kívánt részletességi szintjének a megjelenítéséhez. A kiválasztott **Csoportosítási szempont…** ablaktáblacsoport gombjai ki vannak emelve. A gombra kattintva aktiválhatja vagy inaktiválhatja a funkciót.
 
@@ -71,7 +71,7 @@ Az alábbi képernyőfotón az **Eszközköltség kontrollja** számítási ered
 - A **Nyitott vállalt költség** mező a megrendelt vagy bevételezett, de még ki nem fizetett cikkek, órák vagy szolgáltatások kifizetésére vonatkozó kötelezettségeket mutatja. 
 - Miután minden felhasználási regisztráció fel van adva, a kapcsolódó költségek a **Tényleges költség** mezőben szerepelnek.
 
-![Példa számítási eredmények az Eszköz költségének ellenőrzéséhez](media/02-controlling-and-reporting.png)
+![Példa számítási eredmények az Eszköz költségének ellenőrzéséhez.](media/02-controlling-and-reporting.png)
 
 A költség számításának másik módja az, ha többszörös kiválasztással kiválasztja az eszközöket az **Összes eszköz** vagy **Aktív eszközök** pontban. Ezután kattintson a **Költségellenőrzés** gombra az **Általános** lapon. Az **Eszközköltség ellenőrzése** párbeszédpanelen a program automatikusan beilleszti a kiválasztott eszközöket az **Eszköz** mezőbe a **Belefoglalandó rekordok** gyorslapon. Kattintson az **OK** gombra, és megjelenik a kiválasztott eszközökre vonatkozó költségszámítás. Ugyanez az eljárás hajtható végre az **Összes munkavégzési helyszín** vagy **Aktív munkavégzési helyszínek** pontban található munkavégzési helyszíneknél, valamint a munkarendeléseknél az **Összes munkarendelés** vagy **Aktív munkarendelések** pontban.
 
@@ -99,7 +99,7 @@ Az alábbi képernyőfotón a **Munkarendelés dátumkontrollja** számítási e
 - Az **Átlagos záró késleltetés** mező a munkarendelés tervezett záró dátuma és a tényleges záró dátum közötti különbséget jeleníti meg napokban. Ha például a tényleges záró dátum három nappal az ütemezett kezdési dátum után volt, akkor ebben a mezőben a „3” jelenik meg.  
 - Az **Előfordulások** mező mutatja, hogy hányszor fordulnak elő eltérések az ütemezett és a tényleges kezdési dátumra nézve, valamint az ütemezett és a tényleges befejezési dátumra nézve a munkarendelésen.
 
-![Példa számítási eredmények a Munkarendelés dátumának ellenőrzéséhez](media/03-controlling-and-reporting.png)
+![Példa számítási eredmények a Munkarendelés dátumának ellenőrzéséhez.](media/03-controlling-and-reporting.png)
 
 
 

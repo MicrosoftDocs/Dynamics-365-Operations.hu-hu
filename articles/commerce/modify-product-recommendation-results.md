@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: dfe04881e71558ed326025d8f2545c3c611df3aa
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 6a319007b32a8a52bd4a0c0af337ed8fd4062cfa
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796970"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346668"
 ---
 # <a name="adjust-ai-ml-based-product-recommendation-results"></a>AI-ML-alapú termékajánlás eredményeinek kiigazítása
 
@@ -51,7 +51,7 @@ A vállalattól függően a "Legkelendőbb" lista eltérő eredményt adhat, min
 
 A "Legkelendőbb" terméklista egyetlen módosítható paraméterrel rendelkezik:
 
-![Példa a Legkelendőbb lista alapértelmezett paraméterére](./media/examplebestsellingparameters.PNG)
+![Példa a Legkelendőbb lista alapértelmezett paraméterére.](./media/examplebestsellingparameters.PNG)
 
 1. **Értékesítések belefoglalása a legutóbbi X napból** – Azok az értékesítési tranzakciók, amelyek az aktuális dátumtól számított megadott számú napon belül történtek használhatók a termékek rendezéséhez. A fenti alapértelmezett érték azt sugallja, hogy az elmúlt 30 napban a termékhez tartozó összes vásárlás lenne felhasználva a termék helyének meghatározásához a Legkelendőbb termékek listáján. 
 
@@ -65,13 +65,13 @@ A "Legkelendőbb" terméklista egyetlen módosítható paraméterrel rendelkezik
 1.  Ha termékeket szeretne hozzáadni a táblázathoz, válassza a **Sor hozzáadása** lehetőséget. 
 1.  A Termék oszlopban keressen egy terméket **Név** vagy **Termékszám** alapján.
 
-    ![Példa a termék keresésére az Új terméklistán](./media/examplenewlistconfiguration1.png)
+    ![Példa a termék keresésére az Új terméklistán.](./media/examplenewlistconfiguration1.png)
 
 1.  A Sor típusa oszlopban válassza ki a két beállítás egyikét:
     -   **Belefoglalás** – egy terméket a lista elejére kényszerít
     -   **Kizárás** – eltávolít egy terméket a listából.
     
-    ![Példa a termékeknek az Új terméklistára való felvételére vagy Új terméklistáról való kihagyására](./media/examplenewlistconfiguration2.png)
+    ![Példa a termékeknek az Új terméklistára való felvételére vagy Új terméklistáról való kihagyására.](./media/examplenewlistconfiguration2.png)
 
 1.  A **Megjelenítési sorrend** módosítása megváltoztatja azt, hogy a **belefoglalásra** megjelölt termékek milyen sorendben jelenjenek meg a listában.
     - Ha két terméknél ugyanaz **megjelenítési sorrend** értéke, akkor a két eredmény végső sorrendje eltérhet a háttéroldaltól.
@@ -87,11 +87,11 @@ A *megtekintett termék* az a termék, amelyhez az eredményeket generálni szer
 A következő lépések végrehajtásával manuálisan adhat hozzá vagy távolíthat el eredményeket egy alaptermékhez:
 1.  Válassza ki a **Kiinduló terméket**. 
 1.  A **Termék** oszlopban keressen egy terméket **Név** vagy **Cikkszám alapján.**
-![Példa a termék keresésére a Gyakran együtt vásárolt listában](./media/exampleFBTlistconfiguration1.png)
+![Példa a termék keresésére a Gyakran együtt vásárolt listában.](./media/exampleFBTlistconfiguration1.png)
 1. A **Sor típusa** oszlopban válassza ki a két beállítás egyikét:
     - **Belefoglalás** – egy terméket a lista elejére kényszerít
     - **Kizárás** – eltávolít egy terméket a listából.     
-![Példa egy termék belefoglalására vagy kizárására a Gyakran együtt vásárolt listában](./media/exampleFBTlistconfiguration2.png)
+![Példa egy termék belefoglalására vagy kizárására a Gyakran együtt vásárolt listában.](./media/exampleFBTlistconfiguration2.png)
 1.  Termékek eltávolításához a táblázatból: válassza ki a törölni kívánt sort, és válassza az Eltávolítás elemet.
 
 

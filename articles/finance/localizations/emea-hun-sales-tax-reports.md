@@ -13,12 +13,12 @@ ms.search.region: Hungary
 ms.author: roschlom
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 5ffe6ee54e7503b58046c9123878247147a10407
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9f944cd4dfb36388a2bd5e1fffd6df865bab397b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5815009"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348466"
 ---
 # <a name="sales-tax-reports-for-hungary"></a>Áfajelentések Magyarországról
 
@@ -62,7 +62,7 @@ Ez a jelentés az egyes partnerekre vonatkozóan is tartalmazza ugyanazokat az i
 1. Nyissa meg **Adó** \> **Időszakos feladatok** \> **Áfajelentés** lehetőséget.
 2. Az **Áfajelentés** lap felső részén állítsa be a **Dátum** és **Kiegyenlítési időszak** mezőket. A rács az áfajelentéshez rendelkezésre álló kiegyenlítési időszakokat jeleníti meg.
 
-    ![Áfabevallási oldal](media/HU-sales-tax-reports-1.png)
+    ![Áfabevallási oldal.](media/HU-sales-tax-reports-1.png)
 
 3. Válassza ki a kívánt kiegyenlítési időszak sorát, majd válassza a **Jelentés létrehozása** lehetőséget.
 4. Az **Áfabevallásra vonatkozó információk** párbeszédpanelen a következő mezőket állítsa be.

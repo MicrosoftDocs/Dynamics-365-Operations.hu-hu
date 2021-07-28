@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: e7cadc20cc8fd52ecc8c4ab5c2f6c9dc62c2f68b
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: b6feb5319290cc53d82feb28ffa8c049bfadd29b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897576"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355083"
 ---
 # <a name="dimension-hierarchy"></a>Dimenzióhierarchia
 
@@ -39,7 +39,7 @@ A dimenzióhierarchiákat a Költségkönyvelés különböző helyein használh
 
 Íme, egy példa a dimenzióhierarchiára.
 
-![A dimenzióhierarchia egy példája](./media/dimension-hierarchy.png)
+![A dimenzióhierarchia egy példája.](./media/dimension-hierarchy.png)
 
 A dimenzióhierarchia a következő dimenziótípusokhoz hozható létre:
 
@@ -80,7 +80,7 @@ A dimenzióhierarchiát olyan fastruktúrának hozzák létre, amely csomópont-
 
 Egy kis cég a következő szervezeti struktúrával rendelkezik, ahol a Pénzügy és a Humán erőforrások az Adminisztráció alatt állnak, a Szerelés és a Csomagolás pedig a Termelés részlegei.
 
-![Példa szervezeti felépítésre](./media/dimension-hierarchy-org.png)
+![Példa szervezeti felépítésre.](./media/dimension-hierarchy-org.png)
 
 A költségobjektum dimenziója a szervezet összes költségközpontját jelenti.
 

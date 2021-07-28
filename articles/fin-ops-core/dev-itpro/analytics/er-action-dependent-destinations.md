@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 7decdb1d759284c616ecf928c10f99098627472d
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: e9c9143bdbab450b1793b15937d123607361add6
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893578"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358669"
 ---
 # <a name="configure-action-dependent-er-destinations"></a>Műveletfüggő ER-célok konfigurálása
 
@@ -73,7 +73,7 @@ A következő ábra bemutatja, hogy hogyan lehet elérni ezt a konfigurált ER-c
 
 A következő ábra bemutatja, hogy hogyan lehet elérni ugyanazon alternatív módon konfigurált ER-célokat egyedi célrekordok készleteként, amikor minden rekordot egy adott célhoz konfigurálnak:
 
-![Elektronikus jelentési céloldal, amely műveletfüggő célbeállításokkal rendelkezik egy ER-formátumhoz, ha minden célrekord konfigurálva van egy célhoz](./media/er-destination-action-dependent-01a.png)
+![Elektronikus jelentési céloldal, amely műveletfüggő célbeállításokkal rendelkezik egy ER-formátumhoz, ha minden célrekord konfigurálva van egy célhoz.](./media/er-destination-action-dependent-01a.png)
 
 > [!NOTE]
 > Ha a futó ER-formátumhoz meg van adva egy műveletkódot, de az adott műveletkódhoz nincsenek beállítva célok, a program az [alapértelmezett](electronic-reporting-destinations.md#default-behavior) célviselkedést alkalmazza.
@@ -84,7 +84,7 @@ Ha ER-formátumot futtat, és olyan felhasználók létesítenek felhasználói 
 
 A következő ábra az **Elektronikus jelentési formátum célokat** bemutató párbeszédpanel egy példáját mutatja be, amely a szabadszöveges számla [feladása](../../../finance/accounts-receivable/create-free-text-invoice-new.md) esetén jelenik meg, és a **Szabadszöveges számla (Excel)** ER-formátumának futtatásával generálja ezt a dokumentumot, ha a **Nyomtató** művelet létesítve van, és az ER-célok erre a formátumra vannak konfigurálva, amint az ebben a témakörben korábban látható.
 
-![Párbeszédpanel, amely lehetőséget ad a kezdetben konfigurált ER-célok megváltoztatására a futó ER-formátumhoz](./media/er-destination-action-dependent-02.gif)
+![Párbeszédpanel, amely lehetőséget ad a kezdetben konfigurált ER-célok megváltoztatására a futó ER-formátumhoz.](./media/er-destination-action-dependent-02.gif)
 
 > [!NOTE]
 > Ha az ER-célokat a futó ER-formátum több összetevőjéhez konfigurálta, akkor a rendszer az ER-formátum minden konfigurált összetevőjét külön fel fog kínálni egy opciót.

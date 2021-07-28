@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-04-02
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 42280c811e1f4ed5d33c66f5a8634417a61be905
-ms.sourcegitcommit: f9b145ef4a81cec81f420871b4130b05db4f4500
+ms.openlocfilehash: 79eb7d750869ef365ad117ecc024afc8db2edbf7
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "6301329"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348829"
 ---
 # <a name="quality-management-for-warehouse-processes"></a>Raktári folyamatok minőségkezelése
 
@@ -43,7 +43,7 @@ A _Raktári folyamatok minőségkezelése_ funkció automatikusan hoz létre a m
 
 Amikor be van kapcsolva a _Raktári folyamatok minőségkezelése_ funkció, az megváltoztatja a központi raktárkezelés és a minőségirányítási entitások beállítását. A következő ábra áttekintést nyújt azokról az entitásokról, amelyek a raktári folyamatokhoz minőségi rendeléseket engedélyeznek. A zárójelben lévő szöveg javasolt műveleteket jelez , amikor a minsőégkezelés azelőtt lett alkalmazva, hogy a _Raktári folyamatok minőségkezelése_ funkciót bekapcsolták volna.
 
-![Minőségkezelési entitások](media/quality-management-entity-diagram.png "Minőségkezelési entitások")
+![Minőségkezelési entitások.](media/quality-management-entity-diagram.png "Minőségkezelési entitások")
 
 ## <a name="enablers-the-quality-item-sampling-and-quality-order-work-order-types"></a>Előmozdítók: A Minőségi cikk-mintavételezés és Minőségi rendelés munkarendelés munkatípusok
 

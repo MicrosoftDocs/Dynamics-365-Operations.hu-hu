@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 615e22234323e2235fba002c50f9ab9c230c021e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 888ce67f1feba9876f71d2988268b47c9a4ca1dd
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5827890"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358881"
 ---
 # <a name="project-cost-accrual-on-purchase-receipts"></a>Projektköltségek könyvelése beszerzési elismervényekkel
 
@@ -37,20 +37,20 @@ A Contoso Consulting elindított egy új felhőtelepítési projektet. A beszerz
 Az elhatárolt költséget jelentési célokra pénzügyi szinten és a projekt szintjén is rögzíteni kell. A termékbevételezés pénzügyi frissítése a cikk és a beszerzés kategóriákban követhető nyomon. 
 
 A cikkek esetében a **Kötelezettségek paraméterei** lapon válassza a **Termékbevételezés feladása a főkönyvben** lehetőséget.
-[![Kötelezettségek paramétereinek oldala](./media/accruals1-1024x409.png)](./media/accruals1.png) 
+[![Kötelezettségek paramétereinek oldala.](./media/accruals1-1024x409.png)](./media/accruals1.png) 
 
 A beszerzési kategóriák esetében a **Kategória-irányelvszabály** lapon adja meg a **Beszerzés** házirendet, és válassza ki a **Nyugta szerinti beszerzési költség** lehetőséget minden beszerzési kategóriához.
-[![Kategória irányelvszabályának oldala](./media/accruals2-1024x569.png)](./media/accruals2.png) 
+[![Kategória irányelvszabályának oldala.](./media/accruals2-1024x569.png)](./media/accruals2.png) 
 
 A rendszer a **Beszerzési kiadás, nem számlázott** és a **Beszerzés, elhatárolás** számlákat használja a **Feladás beállítása** részben a termékbevételezéshez kapcsolódó bizonylatok feladásakor.
 
 Ugyanazt a forgatókönyvet használva nézzük meg, hogyan befolyásolja egy termékbevételezés feladása a főkönyv és a projekt adatait. 
 
 **1. lépés:** Új beszerzési rendelés létrehozása és megerősítése a projekt számára a következő rögzítéséhez: számítógép vásárlása 1500 USA dollárért, valamint telepítési szolgáltatás 150 USA dollárért.
-[![Új beszerzési rendelés létrehozása](./media/accruals4-1024x497.png)](./media/accruals4.png) 
+[![Új beszerzési rendelés létrehozása.](./media/accruals4-1024x497.png)](./media/accruals4.png) 
 
 Amikor a beszerzési rendelés megerősítést nyer, a vállalt költségekhez tranzakciók jönnek létre a projekthez. 
-[![Létrehozott tranzakciók](./media/accruals5-1024x219.png)](./media/accruals5.png) 
+[![Létrehozott tranzakciók.](./media/accruals5-1024x219.png)](./media/accruals5.png) 
 
 > [!NOTE]
 > A vállalt költség tranzakciókhoz a **Tranzakció eredete** mező értéke **Beszerzési rendelés** lesz. A beszerzési rendelés létrehozása és megerősítése nem hoz létre tranzakciókat a projekthez. 
@@ -58,23 +58,23 @@ Amikor a beszerzési rendelés megerősítést nyer, a vállalt költségekhez t
 **2. lépés:** Az árukat és szolgáltatásokat leszállítják, és egy szállítólevél regisztrálása történik. 
 
 A termékbevételezés feladása bizonylat létrehozását főkönyvbe való feladását váltja ki. A bizonylat tartozik elemként kerül fel a beszerzési kiadások, nem számlázott kiadások és beszerzési jóváírás elhatárolása számlára. 
-[![Bizonylattranzakciók](./media/accruals6-1024x214.png)](./media/accruals6.png)
+[![Bizonylattranzakciók.](./media/accruals6-1024x214.png)](./media/accruals6.png)
 
 > [!NOTE]
 > A termékbevételezés feladása a beszerzési kategóriák és a termékek feladási beállítását használja, és nem a projektkategóriák feladási beállítását. Annak érdekében, hogy megfelelően tükröződjön a beszerzési elhatárolások pénzügyi hatása, a beállítást igazítani kell. 
 
 A **Beszerzési kategória** oldalon elvégezhető a projektkategóriák és a beszerzési kategóriák leképezése.
-[![Beszerzési kategória oldala](./media/accruals7-1024x390.png)](./media/accruals7.png)
+[![Beszerzési kategória oldala.](./media/accruals7-1024x390.png)](./media/accruals7.png)
 
 **3. lépés:** Szállítóiszámla-tervezet létrehozása. 
 
 Egy termékbevételezés feladása nincs hatással a projektinformációkra. Megkerülő megoldásként közvetlenül a termékbevételezés feladása után létrehozható egy szállítóiszámla-tervezet. Keresse fel a következőt: **Beszerzési rendelés** lap &gt; **Számla lap** &gt; **Létrehozás** &gt; **Számla**. Ez létrehoz egy függőben lévő számladokumentumot, amely frissíti a projekt adatait. 
 
 A szállítóiszámla-tervezet létrehozása függő projekttranzakciókat hoz létre. 
-[![Függő projekttranzakciók](./media/accruals8-1024x225.png)](./media/accruals8.png) 
+[![Függő projekttranzakciók.](./media/accruals8-1024x225.png)](./media/accruals8.png) 
 
 A **Vállalt költség** lapon, az 1. lépésben létrehozott bejegyzéseket a rendszer lezárja, és új rekordokat hoz létre, hogy tükrözze a függőben lévő szállítói számláról származó költség-kötelezettségvállalás. A **Tranzakció eredete** mező beállítása a vállalt költséghez **Szállítói számla** lesz.
-[![Vállalt költségek oldala](./media/accruals9-1024x200.png)](./media/accruals9.png)
+[![Vállalt költségek oldala.](./media/accruals9-1024x200.png)](./media/accruals9.png)
 
 A szállítói számla függő állapotban marad, amíg a tényleges szállítói számla megérkezik.
 

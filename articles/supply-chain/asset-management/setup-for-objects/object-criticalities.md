@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bb2da2d58b7f98fad80d0ea63bf4445ec4d08163
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: baf2c279a656bd67a0850ef9178e1bc984bb9b8b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5808352"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351489"
 ---
 # <a name="asset-criticality-types"></a>Eszközkritikusságok típusai
 
@@ -40,7 +40,7 @@ A kritikusság beállításához először létre kell hozni a kritikusságtípu
 4. A **Név** mezőbe írja be a kritikussátípus nevét.
 5. A **Szorzó** mezőben adjon meg egy szorzót. A rendszer ezt a szorzót használja a munkarendelés-ütemezés számítása során, amellyel megállapítja a használandó kritikusságrekordot. (A rendszer mindig a legmagasabb szorzójú rekordot használja.) Ez a beállítás akkor releváns, ha – ahogy a következő ábrán látható – olyan kritikussági sorokat hoznak létre, amelyek kritikussági értéke megegyezik.
 
-    ![Kritikussági típusok oldal](media/23-setup-for-objects.png)
+    ![Kritikussági típusok oldal.](media/23-setup-for-objects.png)
 
 ## <a name="set-up-asset-criticalities"></a>Eszközkritikusságok beállítása
 

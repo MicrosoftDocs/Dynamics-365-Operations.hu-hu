@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Platform update 13
-ms.openlocfilehash: 001795914c683a6182b885b79be7e225ad80e5cd
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 1fcf9f45eb7f3ef111d66c2c30ec529269b0685b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750564"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352912"
 ---
 # <a name="data-templates-with-multiple-worksheets"></a>Adatsablonok több munkalappal
 
@@ -32,13 +32,13 @@ Lássunk egy példát, amelyben egy Excel-fájl szerepel két munkalappal, amely
 
 Ha a második entitást, a **Raktárakat** a **Fájl hozzáadása** képernyő elhagyása nélkül adjuk hozzá, a munkalap-keresés lehetővé teszi a **Raktárak** munkalap hozzáadását anélkül, hogy újra fel kellene tölteni a fájlt. Csak akkor kellene új fájlt feltölteni, ha a **Raktárak** adatai egy másik fájlban lennének.
 
-![Több munkalap](./media/AddFileMultipleWorkSheets.png)
+![Több munkalap.](./media/AddFileMultipleWorkSheets.png)
 
 ## <a name="fix-worksheet-to-entity-mapping"></a>A munkalap és az entitás közötti megfeleltetés kijavítása
 
 A munkalap és az adatentitás közötti megfeleltetés az importálási feladatban a rácsban javítható ki. A **Munkalap** rácsbeli oszlop mutatja a megfeleltetett fájlból származó a munkalapokat. A legördülő menüből választhat egy másik munkalapot. Ha a kiválasztott munkalap már hozzá van rendelve egy entitáshoz az adatprojektben, a rendszer megkérdezi, hogy jóváhagyja-e a módosítást. Azt ajánljuk, hogy a rácsban javítsa ki az összes megfeleltetést.
 
-![Munkalap-megfeleltetés frissítése](./media/UpdateMappings.png)
+![Munkalap-megfeleltetés frissítése.](./media/UpdateMappings.png)
 
 ## <a name="re-map-to-a-new-file"></a>Ismételt hozzárendelés egy új fájlhoz
 

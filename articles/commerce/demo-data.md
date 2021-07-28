@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2017-10-05
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: a3daa2286eb444d3aaad1fd29eb6be5737415a08
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: c3670cc1f690e8b65b53beb9128554216b2a95f4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5801975"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350426"
 ---
 # <a name="demo-data-screen-layouts-in-modern-pos-mpos-and-cloud-pos"></a>A Modern POS (MPOS) bemutató adatképernyő-elrendezései
 
@@ -33,13 +33,13 @@ Ez a témakör a Dynamics 365 Commerce pénztári bemutató adatkészleteinek r�
 
 Bemutató adatokhoz mellékelt Commerce minta képernyő-elrendezések különböző kiskereskedelmi szegmensekhez, áruházi dolgozói szerepkörökhöz és eszközökhöz optimalizált tartalmakat nyújtanak. Egyetlen elrendezés több elrendezésméretet és gombrácsok kombinációit tartalmazhatja, a fedezet biztosítása érdekében, miközben a dolgozók az eszközök és az állomások között mozognak. Ez a témakör ismerteti az elrendezések közötti különbségeket, a műveleteket, amelyeket elérhetővé tesznek, valamint a teljes felhasználói élményt, amelyet nyújtanak.
 
-![Párhuzamos eszközök bemutatóadat-elrendezések](../commerce/media/demo-screen-layouts-fig-1-1.png)
+![Párhuzamos eszközök bemutatóadat-elrendezései.](../commerce/media/demo-screen-layouts-fig-1-1.png)
 
 ## <a name="anatomy-of-a-screen-layout-id"></a>Képernyő-elrendezés azonosítójának szerkezete
 
 A képernyő-elrendezések megkereséséhez kattintson a **Retail és Commerce** \> **Csatorna beállításai** \> **POS-beállítás** \> **POS** \> **Képernyő-elrendezések** lehetőségre.
 
-![Képernyő-elrendezések lap](../commerce/media/demo-screen-layouts-fig-2-1.png)
+![Képernyő-elrendezések oldal.](../commerce/media/demo-screen-layouts-fig-2-1.png)
 
 A képernyő-elrendezés azonosítója legfeljebb 10 karaktert tartalmazhat. Az azonosító karakterlánc, amely három különböző adatot tartalmaz, a következő sorrendben:
 
@@ -51,9 +51,9 @@ A képernyő-elrendezés azonosítója legfeljebb 10 karaktert tartalmazhat. Az 
 
 | Levél | Cég         |
 |--------|-----------------|
-| A      | Kalandorbolt |
-| G      | Gyár        |
-| t      | Contoso         |
+| A      | Adventure Works |
+| P      | Fabrikam        |
+| K      | Contoso         |
 
 ### <a name="layout-version"></a>Elrendezésverzió
 
@@ -79,7 +79,7 @@ F4MGR
 
 A következő ábrán a Gyár üzletvezetőjének üdvözlőképernyője látható.
 
-![A Gyár üzletvezetőjének üdvözlőképernyője](../commerce/media/demo-screen-layouts-fig-2-2.png)
+![A Fabrikam üzletvezetőjének üdvözlőképernyője.](../commerce/media/demo-screen-layouts-fig-2-2.png)
 
 ## <a name="layout-sizes"></a>Elrendezési méretek
 
@@ -108,7 +108,7 @@ Az alábbi táblázat bemutatja a jellemző képernyőfelbontásokhoz rendelkez�
 > [!TIP]
 > A pénztár automatikusan kiválasztja az elrendezésméreteket, az aktuális alkalmazásablak képernyőfelbontásához elérhető legközelebbi méret alapján. A jelenleg használt képernyőelrendezés-azonosító és elrendezésfelbontás megkereséséhez a Modern POS (MPOS) vagy Retail Cloud POS (CPOS) esetében nyissa meg a **Beállítások** oldalt, majd tekintse meg a **Munkamenet adatai** szakaszt. A jelenlegi alkalmazás vagy böngészőkeret tényleges ablakfelbontása is megtekinthető. Ezeket az adatokat begyűjtve az elrendezéstartalom forrásának megkereséséhez menjen a **Csatorna beállítása** \> **POS beállítása** \> **POS** \> **Képernyő-elrendezések** menübe.
 
-![Képernyő-elrendezések és elrendezésfelbontások/méretek a Commerce és a POS esetében](../commerce/media/demo-screen-layouts-fig-3-1.png)
+![Képernyő-elrendezések és elrendezésfelbontások/méretek a Commerce és a POS esetében.](../commerce/media/demo-screen-layouts-fig-3-1.png)
 
 ## <a name="companies-and-brands"></a>Vállalatok és márkák
 
@@ -127,21 +127,21 @@ Minden fiktív vállalat eltérő kiskereskedelmi szegmenst céloz, és termékk
 
 Az alábbi ábrákon a három fiktív vállalat üdvözlőoldalára és tranzakciós lapjára láthatók példák.
 
-### <a name="adventure-works"></a>Kalandorbolt
+### <a name="adventure-works"></a>Adventure Works
 
-![Bemutató adatok – a Kalandorbolt üdvözlőoldala](../commerce/media/demo-screen-layouts-fig-4-1a.png)
+![Bemutató adatok – az Adventure Works üdvözlőoldala.](../commerce/media/demo-screen-layouts-fig-4-1a.png)
 
-![Bemutató adatok – a Kalandorbolt tranzakciós lapja](../commerce/media/demo-screen-layouts-fig-4-1b.png)
+![Bemutató adatok – az Adventure Works tranzakciós oldala.](../commerce/media/demo-screen-layouts-fig-4-1b.png)
 
-### <a name="fabrikam"></a>Gyár
+### <a name="fabrikam"></a>Fabrikam
 
-![Bemutató adatok – a Gyár üdvözlőoldala](../commerce/media/demo-screen-layouts-fig-4-2a.png)
+![Bemutató adatok – a Fabrikam üdvözlőoldala.](../commerce/media/demo-screen-layouts-fig-4-2a.png)
 
-![Bemutató adatok – a Gyár tranzakciós lapja](../commerce/media/demo-screen-layouts-fig-4-2b.png)
+![Bemutató adatok – a Fabrikam tranzakciós oldala.](../commerce/media/demo-screen-layouts-fig-4-2b.png)
 
 ### <a name="contoso"></a>Contoso
 
-![Bemutató adatok – Contoso elrendezések](../commerce/media/demo-screen-layouts-fig-4-3.png)
+![Bemutató adatok – Contoso-elrendezések.](../commerce/media/demo-screen-layouts-fig-4-3.png)
 
 ## <a name="user-sign-in-matrix"></a>Felhasználói bejelentkezési mátrix
 
@@ -168,7 +168,7 @@ A különböző képernyő-elrendezésekhez felhasználókat is rendelkezésre b
 
 <!-- The screen layouts, button grids, and visual profiles were created using images and icons that can be found in **Retail and Commerce \> Channel setup \> POS setup \> POS \> Images**. -->
 
-<!-- ![Images in Dynamics 365 Commerce](../commerce/media/demo-screen-layouts-fig-5-1.png) -->
+<!-- ![Images in Dynamics 365 Commerce.](../commerce/media/demo-screen-layouts-fig-5-1.png) -->
 
 <!-- Use the [POS Icon and Image Mapping](../commerce/media/POS_Icon_and_Image_Mapping.xlsx) reference spreadsheet to locate operation icons, reference photos, swap logos, or provide new images of your own that can be referenced in custom designs. -->
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.dyn365.ops.version: 10.0.5
 ms.search.validFrom: 2019-08-31
-ms.openlocfilehash: 98f935a11ad8a5272cde0270f9ae0471411b914a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: fb4e2843ecb30b75d2a8d97ceff5b5825e0bd704
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837945"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360125"
 ---
 # <a name="use-the-asset-management-mobile-workspace"></a>Eszközkezelés mobil munkaterület használata
 
@@ -60,7 +60,7 @@ Töltse le és telepítse a Dynamics 365 for Unified Operations mobilalkalmazás
 
 1. A bejelentkezést követően megjelennek a vállalata rendelkezésre álló munkaterületek. Vegye figyelembe, hogy ha a rendszergazda később teszi közzé az új munkaterületet, akkor Önnek frissítenie kell a mobil munkaterületek listáját.
 
-    ![Válasszon munkaterületet](media/am-mobile-01.png "Válasszon munkaterületet")
+    ![Válasszon munkaterületet.](media/am-mobile-01.png "Válasszon munkaterületet")
 
 ## <a name="view-assigned-work-order-jobs-in-calendar-view"></a>A hozzárendelt munkarendelési feladatok megtekintése naptár nézetben.
 
@@ -90,7 +90,7 @@ Töltse le és telepítse a Dynamics 365 for Unified Operations mobilalkalmazás
 
 1. Válassza a **Kész** lehetőséget.
 
-    ![A Sor hozzáadása képernyő](media/am-mobile-03.png "A Sor hozzáadása képernyő")
+    ![A Sor hozzáadása képernyő.](media/am-mobile-03.png "A Sor hozzáadása képernyő")
 
 
 ## <a name="add-attachment-to-a-work-order-job"></a>Melléklet hozzáadása munkarendelési feladathoz
@@ -112,7 +112,7 @@ Töltse le és telepítse a Dynamics 365 for Unified Operations mobilalkalmazás
 
 1. Válassza a **Kész** lehetőséget.
 
-    ![Munkarendelési feladat mellékletének megtekintése és hozzáadása](media/am-mobile-04.png "Munkarendelési feladat mellékletének megtekintése és hozzáadása")
+    ![Munkarendelési feladat mellékletének megtekintése és hozzáadása.](media/am-mobile-04.png "Munkarendelési feladat mellékletének megtekintése és hozzáadása")
 
 ## <a name="view-maintenance-checklist-on-a-work-order-job"></a>Karbantartási ellenőrzőlista megtekintése egy munkarendelési feladaton
 
@@ -129,7 +129,7 @@ Töltse le és telepítse a Dynamics 365 for Unified Operations mobilalkalmazás
 
 1. Válassza ki a Vissza gombot (**<**) az előző oldalhoz való visszatéréshez.
 
-    ![Karbantartási ellenőrző lista és soradatok](media/am-mobile-05.png "Karbantartási ellenőrző lista és soradatok")
+    ![Karbantartási ellenőrző lista és soradatok.](media/am-mobile-05.png "Karbantartási ellenőrző lista és soradatok")
 
 ## <a name="view-and-update-asset-counters-on-a-work-order-job"></a>A munkarendelési feladathoz tartozó eszközszámlálók megtekintése és frissítése
 
@@ -146,7 +146,7 @@ Töltse le és telepítse a Dynamics 365 for Unified Operations mobilalkalmazás
 
 1. Írjon be egy új számlálóértéket, majd válassza a **Kész** lehetőséget.
 
-    ![Eszközszámlálók megtekintése és frissítése](media/am-mobile-06.png "Eszközszámlálók megtekintése és frissítése")
+    ![Eszközszámlálók megtekintése és frissítése.](media/am-mobile-06.png "Eszközszámlálók megtekintése és frissítése")
 
 ## <a name="register-consumption-on-a-work-order-job"></a>Felhasználás regisztrálása egy munkarendelési feladathoz
 
@@ -178,7 +178,7 @@ Töltse le és telepítse a Dynamics 365 for Unified Operations mobilalkalmazás
     1. **Önköltségi ár** megadása a költségregisztrációhoz.
     1. Válassza a **Kész** lehetőséget.
 
-    ![Munkarendelési napló frissítése](media/am-mobile-07.png "Munkarendelési napló frissítése")
+    ![Munkarendelési napló frissítése.](media/am-mobile-07.png "Munkarendelési napló frissítése")
 
 ## <a name="update-lifecycle-state-on-a-work-order"></a>Egy munkarendelés életciklus-állapotának frissítése.
 
@@ -216,7 +216,7 @@ Töltse le és telepítse a Dynamics 365 for Unified Operations mobilalkalmazás
 
 1. Válassza a **Kész** lehetőséget.
 
-    ![Új karbantartási kérés létrehozása](media/am-mobile-09.png "Új karbantartási kérés létrehozása")
+    ![Új karbantartási kérés létrehozása.](media/am-mobile-09.png "Új karbantartási kérés létrehozása")
 
 ## <a name="add-attachment-to-a-maintenance-request"></a>Melléklet hozzáadása a karbantartási kéréshez
 
@@ -236,7 +236,7 @@ Töltse le és telepítse a Dynamics 365 for Unified Operations mobilalkalmazás
 
 1. Válassza a **Kész** lehetőséget.
 
-    ![Melléklet hozzáadása a karbantartási kéréshez](media/am-mobile-10.png "Melléklet hozzáadása a karbantartási kéréshez")
+    ![Melléklet hozzáadása a karbantartási kéréshez.](media/am-mobile-10.png "Melléklet hozzáadása a karbantartási kéréshez")
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

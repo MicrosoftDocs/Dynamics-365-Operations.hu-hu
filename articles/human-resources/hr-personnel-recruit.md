@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-12-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 529f419a4e3e4e8807c6938fd2425ae01ce282f9
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: dc883606b832dc75b28f6209b05c0e35a51036b8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6051809"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359677"
 ---
 # <a name="recruit-job-candidates"></a>Állásjelöltek toborzása
 
@@ -61,13 +61,13 @@ Ha a szervezetnek több helyszíne van, hozzáadhatja őket, így a kérelmezők
 
 3. A **Toborzási kérelem helye** mezőben adja meg a hely nevét.
 
-   ![Toborzási kérelem helyének hozzáadása](./media/hr-recruit-0a-add-location.png)
+   ![Toborzási kérelem helyének hozzáadása.](./media/hr-recruit-0a-add-location.png)
 
 4. A **Leírás** mezőben adja meg a hely leírását.
 
 5. A **Hely** alatt válassz a **Hozzáadás** lehetőséget. Ha megjelenik az **Új cím** előugró ablak, adja meg a hely címét.
 
-   ![Cím megadása](./media/hr-recruit-0b-address.png)
+   ![Cím megadása.](./media/hr-recruit-0b-address.png)
 
 6. A **Kapcsolattartási adatok** alatt adja meg a hely kapcsolattartójának adatait.
 
@@ -83,11 +83,11 @@ A vezetők toborzási kérelmeket nyújthatnak be a Human Resources alkalmazásb
 
 3. Válassza a **Toborzás kérése** lehetőséget.
 
-   ![Toborzási kérelem indítása](./media/hr-recruit-1-request-to-recruit.png)
+   ![Toborzási kérelem indítása.](./media/hr-recruit-1-request-to-recruit.png)
 
 4. Töltse ki a **Leírás**, **Munka** és a **Becsült kezdési dátum** mezőket.
 
-   ![A toborzási kérelem befejezése](./media/hr-recruit-2-request-to-recruit.png)
+   ![A toborzási kérelem befejezése.](./media/hr-recruit-2-request-to-recruit.png)
 
 5. Válassza **Folytatás** parancsot. Megjelenik a toborzási kérelem a pozíciójához.
 
@@ -95,7 +95,7 @@ A vezetők toborzási kérelmeket nyújthatnak be a Human Resources alkalmazásb
 
 7. A **Munka** részben szükség szerint módosítsa az adatokat, majd válassza a **Részletek létrehozása a munkából** lehetőséget.
 
-   ![Részletek létrehozása a feladatból](./media/hr-recruit-3-create-details-from-job.png)
+   ![Részletek létrehozása a feladatból.](./media/hr-recruit-3-create-details-from-job.png)
 
    A toborzási kérelem többi része ki lesz töltve a megadott munka alapértelmezett adataival.
 
@@ -103,13 +103,13 @@ A vezetők toborzási kérelmeket nyújthatnak be a Human Resources alkalmazásb
 
 9. A **Pozíciók** részben válassza a **Hozzáadás** lehetőséget, majd válassza ki a toborzási kérelemhez tartozó beosztást.
 
-   ![Pozíció hozzáadása](./media/hr-recruit-4-select-position.png)
+   ![Pozíció hozzáadása.](./media/hr-recruit-4-select-position.png)
 
 10. A **Szakértelmek** részben válassza a **Hozzáadás** lehetőséget, majd válasszon ki egy szakértelmet.
 
 11. Az **Oktatási követelmények** csoportban válassza a **Hozzáadás** lehetőséget, majd válasszon értékeket a **Végzettség** és az **Végzettség szintje** legördülő menüből.
 
-   ![Végzettségi követelmények hozzáadása](./media/hr-recruit-5-select-educational-requirements.png)
+   ![Végzettségi követelmények hozzáadása.](./media/hr-recruit-5-select-educational-requirements.png)
 
 12. A **Megjegyzés** részben szükség szerint fűzzön hozzá megjegyzéseket.
 
@@ -117,7 +117,7 @@ A vezetők toborzási kérelmeket nyújthatnak be a Human Resources alkalmazásb
 
 14. Amikor a toborzási kérelem elkészült, és készen áll a toborzási folyamat elindítására, válassza az **Aktiválás** lehetőséget a menüsorban.
 
-   ![Toborzási kérelem aktiválása](./media/hr-recruit-6-activate-recruit-request.png)
+   ![Toborzási kérelem aktiválása.](./media/hr-recruit-6-activate-recruit-request.png)
 
 15. Válassza a **Mentés** lehetőséget.
 
@@ -131,7 +131,7 @@ Ha Ön vezető, és szeretné megtekinteni a saját kéréseit:
 
 3. A **Saját csapat adatai** területen válassza a **Toborzási kérelmek** lapot.
 
-   ![Toborzási kérelmek lap kiválasztása](./media/hr-recruit-7-recruiting-requests.png)
+   ![Toborzási kérelmek lap kiválasztása.](./media/hr-recruit-7-recruiting-requests.png)
 
 4. A toborzási kérelem megtekintéséhez vagy szerkesztéséhez jelölje ki azt a rácsban.
 
@@ -141,7 +141,7 @@ Ha Ön HR-szakember, és szeretné megtekinteni az összes toborzási kérelmet:
 
 2. Válassza a **Toborzási kérelmek** lehetőséget.
 
-   ![Toborzási kérelmek megtekintése a Személyzetkezelésben](./media/hr-recruit-8-recruiting-requests-personnel-management.png)
+   ![Toborzási kérelmek megtekintése a Személyzetkezelésben.](./media/hr-recruit-8-recruiting-requests-personnel-management.png)
 
 3. A toborzási kérelem megtekintéséhez vagy szerkesztéséhez jelölje ki azt a rácsban.
 
@@ -155,7 +155,7 @@ Ha a szervezet integrált egy másik alkalmazást a toborzási kérelmek kezelé
 
 3. A **Toborzás** csoportban válassza a **Jelöltek** lehetőséget.
 
-   ![Jelentkezők megtekintése](./media/hr-recruit-9-candidates.png)
+   ![Jelentkezők megtekintése.](./media/hr-recruit-9-candidates.png)
 
 4. Jelölt hozzáadásához válassza az **Új** lehetőséget. Meglévő jelentkező szerkesztéséhez jelölje ki a jelentkezőt a listában, majd válassza a **Szerkesztés** lehetőséget. Megjelenik a jelölt profilja.
 
@@ -163,7 +163,7 @@ Ha a szervezet integrált egy másik alkalmazást a toborzási kérelmek kezelé
 
 6. A **Toborzási kérelem** alatt válassza ki azt a toborzási kérelmet, amelyhez a jelöltet kapcsolni szeretné. Ezután töltse ki a **Becsült kezdési dátum**, **Felvételi vezető**, **Beosztás** és **Leírás** mezőket igény szerint.
 
-   ![Toborzási kérelemre mutató hivatkozás](./media/hr-recruit-10-link-to-recruiting-request.png)
+   ![Toborzási kérelemre mutató hivatkozás.](./media/hr-recruit-10-link-to-recruiting-request.png)
 
 7. Töltse ki az összes információt a következő területeken, amelyeket fel szeretne venni a jelölt rekordjába:
    - **Megjegyzések**
@@ -182,11 +182,11 @@ Ha készen áll egy jelölt felvételére, kövesse ezt az eljárást a jelölt 
 
 1. A jelölt űrlapon válassza a **Felvétel** l ehetőséget.
 
-   ![Jelentkező felvétele](./media/hr-recruit-11-hire.png)
+   ![Jelentkező felvétele.](./media/hr-recruit-11-hire.png)
 
 2. Az **Új dolgozó felvétele** képernyő **Részletek** csoportban töltse ki az összes mezőt.
 
-   ![Új felvétel adatainak megadása](./media/hr-recruit-12-hire-new-worker.png)
+   ![Új felvétel adatainak megadása.](./media/hr-recruit-12-hire-new-worker.png)
 
 3. A **Pozíció részletei** részben szükség szerint ellenőrizze és módosítsa az adatokat.
 
@@ -203,7 +203,7 @@ Ha úgy dönt, hogy nem vesz fel jelöltet, kövesse ezt az eljárást, hogy tá
 
 1. A jelölt űrlapon válassza a **Nincs felvétel** lehetőséget.
 
-   ![Nem vesz fel jelentkezőt](./media/hr-recruit-13-do-not-hire.png)
+   ![Nem vesz fel jelentkezőt.](./media/hr-recruit-13-do-not-hire.png)
 
 2. Válasszon ki egy **Okkódot**, és adja meg a megjegyzéseket.
 
@@ -215,7 +215,7 @@ Szükség esetén a felvétel után elbocsáthat egy jelöltet. Előfordulhat p�
 
 - A jelölt űrlapon válassza a **Jelölt elvetése** lehetőséget.
 
-  ![Jelölt elutasítása](./media/hr-recruit-14-dismiss-candidate.png)
+  ![Jelölt elutasítása.](./media/hr-recruit-14-dismiss-candidate.png)
 
 ## <a name="see-also"></a>Lásd még
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-12-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 2d961cb4eedda6265b4acd8dbd6f82e8026373fa
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 37c3da576b79d3ae9f6983b5046343a7c8120de6
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5820569"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356125"
 ---
 # <a name="revenue-recognition-reallocation"></a>Bevételelszámolás újbóli felosztása
 
@@ -48,7 +48,7 @@ Mivel az újbóli felosztást a részben vagy teljesen kiszámlázott értékes�
 
 Minden szervezetnek el kell döntenie, hogy a korrekció csak a főkönyvet frissítse vagy a kinnlevőségeket is. Ennek alapján ki kell választani a megfelelő beállításokat a **Számlajavítások feladása a Kinnlevőségekbe** lehetőségnél, amely a **Bevételelszámolás** lapon, a **Főkönyvi paraméterek** oldalon található (**Bevételelszámolás \> Beállítás \> Főkönyvi paraméterek**). A megfelelő beállítás az adott esettől függ. A lehetséges esetekkel kapcsolatos további információkért nyissa meg a témakör későbbi részében, az [Újbóli felosztáshoz kapcsolódó esetek](#scenarios-for-reallocation) című szakaszában található hivatkozásokat.
 
-[![A Bevételelszámolás lap a Főkönyvi paraméterek oldalon](./media/01_RevRecScenarios.png)](./media/01_RevRecScenarios.png)
+[![A Bevételelszámolás lap a Főkönyvi paraméterek oldalon.](./media/01_RevRecScenarios.png)](./media/01_RevRecScenarios.png)
 
 Ha a **Számlajavítások feladása a Kinnlevőségekbe** lehetőségnél az **Igen** értéket választja, az újbóli felosztási folyamat a következő eredménnyel zárul:
 
@@ -76,7 +76,7 @@ Ahogy említettük, beállíthatja, hogy a rendszer csak a főkönyvet, vagy a f
 
 Az újbóli felosztási folyamat elindításához válassza **Az ár újrafelosztása új rendelési sorokba** lehetőséget minden olyan értékesítési rendelésnél, amelynél szeretne újbóli felosztást végezni. Másik lehetőség: lépjen a **Bevételelszámolás \> Időszakos feladatok \> Az ár újrafelosztása új rendelési sorokba** menüpontba, és adja meg a megfelelő szűrőket, például a vevői számlát.
 
-[![Az ár újrafelosztása új rendelési sorokba oldal](./media/02_RevRecScenarios.png)](./media/02_RevRecScenarios.png)
+[![Az ár újrafelosztása új rendelési sorokba oldal.](./media/02_RevRecScenarios.png)](./media/02_RevRecScenarios.png)
 
 **Az ár újrafelosztása új rendelési sorokba** oldal felső rácsának neve **Értékesítés**. Itt láthatja a vevőhöz tartozó értékesítési rendeléseket. Válassza ki az újból felosztani kívánt értékesítési rendeléseket. Projekthez tartozó értékesítési rendeléseket nem választhat ki, mert ezeket nem lehet újból felosztani. Olyan értékesítési rendeléseket sem jelölhet ki, amelyekhez már tartozik újrafelosztási azonosító, mert a nem projekthez tartozó értékesítési rendeléseket is csak egyszer lehet újból felosztani. Ha valamelyik értékesítési rendeléshez már tartozik újrafelosztási azonosító, ezt a rendelést egy másik felhasználó már megjelölte újbóli felosztásra.
 
@@ -86,11 +86,11 @@ Ha végzett a szükséges értékesítésirendelés-sorok kijelölésével, az a
 
 - **Újbóli felosztás frissítése** – Az új bevételi árak kiszámítása a kiválasztott értékesítésirendelés-sorok esetében. Ha egy sort eltávolítottak vagy töröltek, a rendszer csak a kiválasztott sorokon hajtja végre az újbóli felosztást. Az alábbi illusztráción az értékesítésirendelés-sorok állapota látható az újbóli felosztás frissítése előtt.
 
-    [![Értékesítésirendelés-sorok az újbóli felosztás frissítése előtt](./media/03_RevRecScenarios.png)](./media/03_RevRecScenarios.png)
+    [![Értékesítésirendelés-sorok az újbóli felosztás frissítése előtt.](./media/03_RevRecScenarios.png)](./media/03_RevRecScenarios.png)
 
     Az új bevételi árak az **Újból felosztott összeg** oszlopban láthatók a **Sorok** rácsban. Ekkor a rendszer már feldolgozta az újbóli felosztást, de még nem számította ki. Az alábbi illusztráción az újbóli felosztás frissítése utáni értékesítésirendelés-sorok láthatók.
 
-    [![Értékesítésirendelés-sorok az újbóli felosztás frissítése után](./media/04_RevRecScenarios.png)](./media/04_RevRecScenarios.png)
+    [![Értékesítésirendelés-sorok az újbóli felosztás frissítése után.](./media/04_RevRecScenarios.png)](./media/04_RevRecScenarios.png)
 
 - **Feldolgozás** – Az újbóli felosztás szerinti bevételi árak feldolgozása vagy feladása. A gomb kiválasztása után az újbóli felosztást már nem lehet sztornírozni. Ha nem választotta ki az **Újbóli felosztás frissítése** lehetőséget, és így aktiválja a **Feldolgozás** funkciót, a rendszer automatikusan lefuttatja az újbóli felosztást.
 
@@ -100,7 +100,7 @@ Ha végzett a szükséges értékesítésirendelés-sorok kijelölésével, az a
 - **Várható bizonylat** – A kiszámlázott értékesítésirendelés-sorokhoz létrehozott könyvelési tételek előnézetének megjelenítése. Itt csak akkor szerepel valami, ha már van kiszámlázott sor. Ha nem választotta ki az **Újbóli felosztás frissítése** lehetőséget a **Várható bizonylat** kiválasztása előtt, a rendszer automatikusan lefuttatja az újbóli felosztást.
 - **Bevétel újbóli felosztása** – Megnyílik egy oldal, amelyen megtekintheti a kiválasztott sorokhoz tartozó bevételiár-felosztást. Az oldalon szereplő adatokat nem módosíthatja. Az újbóli felosztáshoz használt sorösszegek is láthatók az oldalon.
 
-    [![Az újbóli felosztáshoz használt sorösszegek](./media/05_RevRecScenarios.png)](./media/05_RevRecScenarios.png)
+    [![Az újbóli felosztáshoz használt sorösszegek.](./media/05_RevRecScenarios.png)](./media/05_RevRecScenarios.png)
 
 - **Adatok alaphelyzetbe állítása a kiválasztott vevőnél** – Ha az újbóli felosztási folyamatot elkezdték, de nem fejezték be, akkor ezzel a funkcióval törölheti az újbóli felosztási táblában szereplő adatokat a kiválasztott vevőnél. Például Ön több értékesítésirendelés-sort is kijelöl újbóli felosztásra, és megnyitva hagyja az oldalt, de nem választja ki a **Feldolgozás** lehetőséget, ezért a rendszer időtúllépés miatt kilép. Ebben az esetben az értékesítésirendelés-sorok megjelölve maradnak, de más felhasználó nem éri el őket, és nem tudja elvégezni az újbóli felosztást. Az is elképzelhető, hogy az oldal megnyitáskor üresen jelenik meg. Ebben a helyzetben az **Adatok alaphelyzetbe állítása a kiválasztott vevőnél** gombbal törölheti a fel nem dolgozott értékesítési rendeléseket, hogy egy másik felhasználó befejezhesse az újbóli felosztási folyamatot.
 

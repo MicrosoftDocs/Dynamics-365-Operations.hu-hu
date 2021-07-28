@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: ilyako
 ms.search.validFrom: 2021-03-19
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 8d7f32c5d3d29be8d1d2742c4017c1719cbd47a8
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 798e38d7fea53a13d713734dd0521552974176ea
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897332"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347834"
 ---
 # <a name="references-to-original-invoices-in-credit-notes"></a>Hivatkozások eredeti számlákra a jóváírásokban
 
@@ -51,7 +51,7 @@ A következő lépések segítségével beállíthatja azt a paramétert, amely 
 1. Lépjen a **Kinnlevőségek** \> **Beállítások** \> **Kinnlevőségek paraméterei** pontra.
 2. A **Számla** gyorslap **Frissítések** lapján állítsa a **Jóváírás-számlázási elrendezés alkalmazása értékesítési és projektszámla-jelentésekre** lehetőséget **Igen** értékre.
 
-![A Kinnlevőségek paraméterei konfigurálása](media/original-invoice-number-in-credit-note.jpg)
+![A Kinnlevőségek paraméterei konfigurálása.](media/original-invoice-number-in-credit-note.jpg)
 
 ## <a name="define-references-to-original-invoices"></a>Eredeti számlákra mutató hivatkozások meghatározása
 
@@ -65,7 +65,7 @@ A következő eljárásnak megfelelően a dokumentumtípus alapján meghatározh
 4. A Műveleti ablaktábla **Számla** lapján a **Függvények** csoportban válassza a **Jóváírás számlázása** lehetőséget.
 5. Írja be az eredeti számlára való hivatkozást, és válassza ki a javítás okát.
 
-![Szabadszöveges számla hivatkozásának meghatározása](media/reference-original-invoice-FTI.jpg)
+![Szabadszöveges számla hivatkozásának meghatározása.](media/reference-original-invoice-FTI.jpg)
 
 ### <a name="customer-credit-note"></a>Vevői jóváírás
 
@@ -74,7 +74,7 @@ A következő eljárásnak megfelelően a dokumentumtípus alapján meghatározh
 3. A Műveleti ablaktábla **Értékesítés** lapján a **Jóváírás** csoportban válassza a **Jóváírás** lehetőséget.
 4. Adja meg a javítás okát. Az eredeti számlára való hivatkozás automatikusan létrejön.
 
-![Értékesítési rendelés hivatkozásának meghatározása](media/reference-original-invoice-SO.jpg)
+![Értékesítési rendelés hivatkozásának meghatározása.](media/reference-original-invoice-SO.jpg)
 
 ### <a name="project-credit-note"></a>Projekt jóváírása
 
@@ -84,13 +84,13 @@ A következő eljárásnak megfelelően a dokumentumtípus alapján meghatározh
 4. Válassza a **Jóváírás számlázása** lehetőséget.
 5. Adja meg a javítás okát. Az eredeti számlára való hivatkozás automatikusan létrejön.
 
-![Projektszámla hivatkozásának meghatározása](media/reference-original-invoice-project.jpg)
+![Projektszámla hivatkozásának meghatározása.](media/reference-original-invoice-project.jpg)
 
 ## <a name="printing-credit-notes"></a>Jóváírások nyomtatása
 
 Szabadszöveges, vevői és projektjóváírások nyomtatása esetén a jóváírások az eredeti számlára való hivatkozást és a javítás okát is tartalmazzák.
 
-![Kinyomtatott jóváírás](media/credit-note-FTI.jpg)
+![Kinyomtatott jóváírás.](media/credit-note-FTI.jpg)
 
 > [!NOTE]
 > Győződjön meg arról, hogy a dokumentumok nyomtatható formátumai helyesen legyenek konfigurálva, feltételezve, hogy az eredeti számlákra mutató hivatkozásokat ki fogják nyomtatni.

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1e6f5ffbebdfcd9f945e6237904d80e8734b0220
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 15f564ec0b4639ba7a27c6f3f989304c71695ee4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752436"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356343"
 ---
 # <a name="er-use-financial-dimensions-as-a-data-source-part-2---model-mapping"></a>ER Pénzügyi dimenziók használata adatforrásként (2. rész – Modell hozzárendelése)
 
@@ -56,14 +56,14 @@ A lépések végrehajtásához először hajtsa végre az „ER Pénzügyi dimen
 21. Válassza az Igen lehetőséget a Fő számla kérése mezőben.
     * A „Fő számla kérése” lehetőséget állítsa Igen értékre, ha engedélyezni szeretné a felhasználók számára a fő számla kiválasztását a dimenziók listájának részeként.   Ha a beállítása Nem, a fő számla nem lesz része a dimenziók listájának, és „A fő számla kötelező” beállítás engedélyezve van. Ha „A fő számla kötelező” beállítása Igen, a fő számla része lesz a dimenziók listájának, a felhasználói kiválasztástól függetlenül.  
 22. Kattintson az OK gombra.
-![Elektronikus jelentéskészítés – modell-leképezés tervező oldal](../media/er-financial-dimensions-guides-model-mapping1.png)
+![Elektronikus jelentéskészítés – modell-leképezés tervező oldal.](../media/er-financial-dimensions-guides-model-mapping1.png)
 23. A fastruktúrában válassza ki a következőt: „Dynamics 365 for Operations\Tábla rekordjai” csomópont.
 24. Kattintson a Gyökér hozzáadása gombra.
 25. A Név mezőbe írja be a „LedgerJournal” szöveget.
 26. Válassza az Igen lehetőséget a Lekérdezés kérése mezőben.
 27. Írja be a Tábla mezőbe a „LedgerJournalTable” szöveget.
 28. Kattintson az OK gombra.
-![Elektronikus jelentéskészítés – modell-leképezés tervező oldal](../media/er-financial-dimensions-guides-model-mapping2.png)
+![Elektronikus jelentéskészítés – modell-leképezés tervező oldal.](../media/er-financial-dimensions-guides-model-mapping2.png)
 
 ## <a name="map-data-model-elements-to-added-data-sources"></a>Adatmodell-elemek leképezése a hozzáadott adatforrásokra
 1. A fastruktúrában bontsa ki ezt: „Napló”.
@@ -94,7 +94,7 @@ A lépések végrehajtásához először hajtsa végre az „ER Pénzügyi dimen
 25. A fastruktúrában válassza ki a „LedgerJournal\<Kapcsolatok\LedgerJournalTrans\Account.Dimension(LedgerDimension.Dimension)\Fő számla és dimenziók” elemet.
 26. A fastruktúrában válassza ki ezt: „Napló\Tranzakció\Dimenzióadat”.
 27. Kattintson a Kötés gombra.
-![Elektronikus jelentéskészítés – modell-leképezés tervező oldal](../media/er-financial-dimensions-guides-model-mapping3.png)
+![Elektronikus jelentéskészítés – modell-leképezés tervező oldal.](../media/er-financial-dimensions-guides-model-mapping3.png)
 28. A fastruktúrában válassza ki a „LedgerJournal\<Kapcsolatok\LedgerJournalTrans\Debit(AmountCurDebit)” elemet.
 29. A fastruktúrában válassza ki a „Napló\Tranzakció\Tartozik” elemet.
 30. Kattintson a Kötés gombra.
@@ -133,7 +133,7 @@ A lépések végrehajtásához először hajtsa végre az „ER Pénzügyi dimen
 63. Írja be a Company.'find()'.'name()' szöveget az expressionAsStringText mezőbe.
     * Company.'find()'.'name()'  
 64. Kattintson a Mentés gombra.
-![Elektronikus jelentéskészítés – modell-leképezés tervező oldal](../media/er-financial-dimensions-guides-model-mapping4.png)
+![Elektronikus jelentéskészítés – modell-leképezés tervező oldal.](../media/er-financial-dimensions-guides-model-mapping4.png)
 65. Zárja be a lapot.
 66. Kattintson a Mentés gombra.
 67. Zárja be a lapot.
@@ -144,7 +144,7 @@ A lépések végrehajtásához először hajtsa végre az „ER Pénzügyi dimen
 3. Kattintson az Állapot módosítása elemre.
 4. Kattintson a Befejezés gombra.
 5. Kattintson az OK gombra.
-![Elektronikus jelentéskészítés – modell-leképezés tervező oldal](../media/er-financial-dimensions-guides-model-mapping5.png)
+![Elektronikus jelentéskészítés – modell-leképezés tervező oldal.](../media/er-financial-dimensions-guides-model-mapping5.png)
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

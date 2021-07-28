@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: a194e14c76827650e6752f331081ebe0c2130a13
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: d932a0c10df72dbadcc65d7ef78eb8ad05645bd5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866156"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357518"
 ---
 # <a name="regression-suite-automation-tool-tutorial"></a>Regression Suite Automation Tool-oktatóanyag
 
@@ -67,11 +67,11 @@ A RSAT használatával több feladatrögzítést is felhasználhat több tesztes
 
 Ez a funkció annak ellenőrzésére használható, hogy történt-e művelet. Például egy termelési rendelés létrehozása, becslése, majd elindítása történt, megjelenik a „Termelés – Indítás” üzenetet, amellyel értesíti, hogy a termelési rendelés elindult.
 
-![Termelés – Indítás értesítés](./media/use_rsa_tool_05.png)
+![Termelés – Indítás értesítés.](./media/use_rsa_tool_05.png)
 
 Ezt az üzenetet a RSAT programon keresztül ellenőrizni lehet, ha megadja az üzenet szövegét a megfelelő rögzítéshez tartozó Excel paraméterfájl **MessageValidation** lapján.
 
-![Üzenet ellenőrzése lap](./media/use_rsa_tool_06.png)
+![Üzenet ellenőrzése lap.](./media/use_rsa_tool_06.png)
 
 Miután lefutott a teszteset, az Excel-paraméterfájlban szereplő üzenetet a program összehasonlítja az üzenettel. Ha az üzenetek nem egyeznek, a teszteset nem fog sikerülni.
 
@@ -104,15 +104,15 @@ Amikor futtatja a tesztesetet, az RSAT pillanatképeket (képeket) fog generáln
 
 A következő ábra bemutatja az adott eset folyamatát.
 
-![A bemutató eset folyamata](./media/use_rsa_tool_14.png)
+![A bemutató eset folyamata.](./media/use_rsa_tool_14.png)
 
 A következő ábra bemutatja az üzleti folyamatok hierarchiáját ehhez a forgatókönyvhöz az LCS Üzletifolyamat-modellező moduljában.
 
-![A bemutató eset üzleti folyamatai](./media/use_rsa_tool_15.png)
+![A bemutató eset üzleti folyamatai.](./media/use_rsa_tool_15.png)
 
 ## <a name="strategy--key-learning"></a>Stratégia – Kulcsfontosságú tanulási pontok
 
-### <a name="data"></a>Adat
+### <a name="data"></a>Adatok
 
 - Győződjön meg róla, hogy rendelkezik reprezentatív adatmennyiséggel (termelési/arany konfigurációs adatok másolata és áttelepített adatok).
 - Amikor a feladatrögzítőn keresztül új adatokat hoz létre, olyan tesztneveket hozzon létre, amelyek nem ütköznek a meglévő nevekkel (például használjon **RSATxxx** előtagot).

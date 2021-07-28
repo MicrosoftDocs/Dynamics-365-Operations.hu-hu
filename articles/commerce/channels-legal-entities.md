@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 225fd6a07fee29414ac30a4602b4dfccdc4d742b
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 698c556b8839ae1d657ef02796fe08ab9cd3621e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5800615"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346034"
 ---
 # <a name="create-legal-entities"></a>Jogi személyek létrehozása
 
@@ -44,7 +44,7 @@ Csatorna létrehozásakor meg kell adnia, hogy melyik jogi személy tartozik a c
 1. Az **Ország/régió** mezőben adjon meg vagy válasszon ki egy értéket.
 1. Válassza ki az **OK** lehetőséget. 
 
-   ![Jogi személy létrehozása](media/legal-entities.png)
+   ![Jogi személy létrehozása.](media/legal-entities.png)
 
 1. Az **Általános** szakaszban adja meg a következő általános információkat a jogi személyről: 
    1. Szükség esetén írja be a keresési nevet. A keresési név olyan másodlagos név, amelynek használatával elvégezheti a keresést a jogi személyre vonatkozóan. 
@@ -67,7 +67,7 @@ Csatorna létrehozásakor meg kell adnia, hogy melyik jogi személy tartozik a c
 
 A következő kép egy példa jogi személy részleteit mutatja.
 
-![Jogi személy általános szakasza](media/legal-entities-general.png)
+![Jogi személy általános szakasza.](media/legal-entities-general.png)
    
 ## <a name="additional-resources"></a>További erőforrások
 

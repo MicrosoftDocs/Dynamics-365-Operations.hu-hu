@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: cabeln
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: b1e2006c0d9b9effe331a644aaaa9fa33ff2fb7c
-ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
+ms.openlocfilehash: da19066f647c17e934a11e4dab7cb370baabfb5c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "6270535"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352736"
 ---
 # <a name="manufacturing-execution-workloads-for-cloud-and-edge-scale-units"></a>Gyártási végrehajtás munkaterhelései felhőalapú és peremhálózat-lépték szerinti egységekhez
 
@@ -44,7 +44,7 @@ Ez a témakör ismerteti, hogyan működnek a gyártási végrehajtási számít
 
 Ahogy az alábbi ábra is mutatja, a gyártási életciklus három fázisra oszlik: *Tervezés*, *Végrehajtás* és *Véglegesítés*.
 
-[![Gyártási végrehajtási fázisok egyetlen környezet használata során](media/mes-phases.png "Gyártási végrehajtási fázisok egyetlen környezet használata során")](media/mes-phases-large.png)
+[![Gyártási végrehajtási fázisok egyetlen környezet használatakor](media/mes-phases.png "Gyártási végrehajtási fázisok egyetlen környezet használatakor."](media/mes-phases-large.png)
 
 A _Tervezés_ fázis tartalmazza a termékdefiníciót, a tervezést, a rendelés létrehozását és ütemezését, valamint a kiadást. A kiadási lépés a _Terv_ fázisról a _Végrehajtás_ fázisra való áttérést jelzi. A termelési rendelés kiadásakor a termelési rendelési feladatok láthatók lesznek a termelési szinten, és készen állnak a végrehajtásra.
 
@@ -54,7 +54,7 @@ Ha egy termelési feladat befejezettként van megjelölve, a _Végrehajtás_ fá
 
 Ahogy a következő ábra is mutatja, skálázási egységek használata esetén a _Végrehajtás_ fázis külön számítási feladatként van felosztva.
 
-[![Gyártási végrehajtási fázisok skálázási egységek használata esetén](media/mes-phases-workloads.png "Gyártási végrehajtási fázisok skálázási egységek használata esetén")](media/mes-phases-workloads-large.png)
+[![Gyártási végrehajtási fázisok skálázási egységek használatakor](media/mes-phases-workloads.png "Gyártási végrehajtási fázisok skálázási egységek használatakor."](media/mes-phases-workloads-large.png)
 
 A modell most egy egypéldányos telepítésből egy olyan modellre kerül, amely a központon és a skálázási egységeken alapul. A _Tervezés_ és a _Véglegesítés_ fázisok háttérirodai műveletekként futnak a központban, és a gyártási végrehajtási számítási feladat a skálázási egységeken fut. Az adatok átvitele aszinkron módon történik a központ és a skálázási egységek között.
 
@@ -87,7 +87,7 @@ Bár a feladat általában automatikusan fut, manuálisan bármikor futtathatja,
 
 A regisztrációs feldolgozási napló áttekintéséhez jelentkezzen be a központba, és lépjen a **Termelésvezérlés \> Időszakos feladatok \> Háttérirodai munkaterhelés-kezelés \> Nyers regisztrációs feldolgozási napló** pontba. A **Nyers regisztrációs feldolgozási napló** lap a feldolgozott nyers regisztrációk listáját és az egyes regisztrációk állapotát jeleníti meg.
 
-![A nyers regisztrációs feldolgozási napló oldala](media/mes-processing-log.png "A nyers regisztrációs feldolgozási napló oldala")
+![A nyers regisztrációs feldolgozási napló oldala.](media/mes-processing-log.png "A nyers regisztrációs feldolgozási napló oldala")
 
 A lista bármely regisztrációján úgy dolgozhat, hogy kijelöli, majd a műveletpanelen az alábbi gombok egyikét választja:
 

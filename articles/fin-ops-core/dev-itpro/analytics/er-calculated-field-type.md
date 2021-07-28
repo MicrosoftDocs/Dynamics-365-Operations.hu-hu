@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 897133a27f9d3da2f576ce675c0949f824cde881
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: fb09e1ccd4b2be08e43784330adf4092ca25f5a6
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749489"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349160"
 ---
 # <a name="support-parameterized-calls-of-er-data-sources-of-the-calculated-field-type"></a>ER adatforrások paraméterezett hívásainak támogatása a Számított mezőtípusban
 
@@ -86,7 +86,7 @@ Ebben a példában létrehozzuk egy konfigurációt a Litware, Inc. mintavállal
 
     A modell-leképezés ebben a konfigurációban implementálása az alap adatmodellt bármely ER formátumhoz, amely ehhez a modellhez lett készítve és a Finance and Operations által lett végrehajtva. Ennek eredményeképpen az **Adó** és **Gr** -adatforrások tartalma ER-formátumoknak, például absztrakt adatforrásoknak van kitéve.
 
-    ![Modell-hozzárendelés tervező lapja au Adó és Gr adatforrásokat jeleníti meg.](media/er-calculated-field-type-01.png)
+    ![Modell-hozzárendelés tervező lapja az Adó és Gr adatforrásokat jeleníti meg.](media/er-calculated-field-type-01.png)
 
 5.  Zárja be a **Modell-hozzárendelési tervező** lapot.
 6.  Zárja be a **Modell-hozzárendelés** lapot.
@@ -101,7 +101,7 @@ Ebben a példában létrehozzuk egy konfigurációt a Litware, Inc. mintavállal
     - Az adóbevallásban a következő adómértékeket megjeleníti: normál, csökkentett és nincs.
     - Minden adózási szinten több részletet mutat be, amelyek mindegyik szintjén különböző számú adat szerepel.
 
-    ![Formátumtervező oldal](media/er-calculated-field-type-02.png)
+    ![Formátumtervező oldal.](media/er-calculated-field-type-02.png)
 
 4. Válassza ki **Hozzárendelés** lehetőséget.
 5. Bontsa ki a **Modell**, **Adatok** és **Összegzés** elemeket. 
@@ -155,7 +155,7 @@ A megadott formátumot úgy javíthatja, hogy egy számított mezőt ad hozzá a
 
     Az egyetlen számított mezőhöz meghatározható paraméterek maximális száma 8.
 
-    ![Paraméter adatforráslistája](media/er-calculated-field-type-05.png)
+    ![Paraméter adatforráslistája.](media/er-calculated-field-type-05.png)
 
 5. Válassza ki az **OK** lehetőséget.
 
@@ -165,7 +165,7 @@ Ennek a paraméternek a hozzáadásával megadhatja azt a feltételt, amely a ki
 
    A konfigurált paraméter elérhető a számított mezőhöz tartozó adatforrásainak listáján. A konfigurált kifejezéshez úgy vehet fel paramétert, hogy az **Adatforrás hozzáadása** lehetőséget választja.
 
-   ![Adatforrásmezők](media/er-calculated-field-type-06.png)
+   ![Adatforrásmezők.](media/er-calculated-field-type-06.png)
 
 ### <a name="define-an-expression-for-adding-a-calculated-field"></a>Kifejezés definiálása számított mező hozzáadásához
 
@@ -181,7 +181,7 @@ Ennek a paraméternek a hozzáadásával megadhatja azt a feltételt, amely a ki
 
 5. Válassza a **Mentés** lehetőséget.
 
-    ![Adatforrás mező adatai](media/er-calculated-field-type-07.png)
+    ![Adatforrás mező adatai.](media/er-calculated-field-type-07.png)
 
 6. Zárja be a **Képlettervező** lapot.
 
@@ -191,7 +191,7 @@ Ennek a paraméternek a hozzáadásával megadhatja azt a feltételt, amely a ki
 
 A **Formátumtervező** lapon a **Szintek** konfigurált paraméterezett számított mező **Karakterlánc** argumentumot igényel.
 
-![Számított mezők szintjeinek kibontott listája](media/er-calculated-field-type-08.png)
+![Számított mezők szintjeinek kibontott listája.](media/er-calculated-field-type-08.png)
 
 ### <a name="use-the-configured-calculated-field-for-binding-format-elements"></a>A konfigurált számított mező használata formátumelemek kapcsolásához
 
@@ -220,7 +220,7 @@ A paraméterezett számított mezők ismétlődő meghívása nem támogatott.
 
 Kiválaszthatja a **Képlet szerkesztése** elemet, és módosíthatja a paraméterezett számított mező alapértelmezetten alkalmazott argumentumát a kiválasztott társításhoz. Ha hiányzik ez az argumentum, az futásidőben hibákat okozhat – a felhasználókat tájékoztatni kell erről a helyzetről, amikor az aktuális formátumot validálják.
 
-![Ellenőrzési figyelmeztetés értesítése](media/er-calculated-field-type-10.png)
+![Ellenőrzési figyelmeztetés értesítése.](media/er-calculated-field-type-10.png)
 
 ## <a name="configure-a-parameterized-calculated-field-to-return-a-record"></a>Rekordot visszaadó paraméterezett számított mező konfigurálása
 Ha egy paraméterezett számított mező rekordot ad vissza, akkor támogatnia kell a rekord egyedi mezőinek társítását formátumelemekhez. Ilyen esetekben nem lesz olyan szülő társítás amely argumentum értékét tartalmazza egy paraméterezett számított mező meghívására – ezt az értéket egyetlen rekord mezőjének társítása során kell meghatározni.
@@ -272,7 +272,7 @@ Ha egy paraméterezett számított mező rekordot ad vissza, akkor támogatnia k
 8. Válassza a **Képlet szerkesztése** elemet.
 9. A kifejezés módosítása a következőre: **Model.Data2.LevelRecord("None").aggregated.Base**.
 
-![Frissített kifejezés](media/er-calculated-field-type-11.png)
+![Frissített kifejezés.](media/er-calculated-field-type-11.png)
 
 ## <a name="remove-calculated-fields-that-are-not-used"></a>Nem használt számított mezők eltávolítása
 

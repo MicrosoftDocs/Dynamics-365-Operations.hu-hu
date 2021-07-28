@@ -9,18 +9,18 @@ ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: d780c7a52570e8e8dbd0c42c6d1aa8e41d2d4819
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 164926714717addc486a69f4ae913dcef2bc4c41
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5809878"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6361144"
 ---
 # <a name="asset-management-overview"></a>Eszközkezelés – áttekintés
 
@@ -32,7 +32,7 @@ Az Eszközkezelés az eszközök és a karbantartási feladatok Dynamics 365 Sup
 
 A következő ábra a Finance and Operations moduljaival való kapcsolatot mutatja be.
 
-![Az Eszközkezelés integrálási módjának áttekintése](media/overview-integrate2.jpg)
+![Az Eszközkezelés integrálási módjának áttekintése.](media/overview-integrate2.jpg)
 
 Az Eszközkezeléssel hatékonyan kezelhető és hajtható végre a cég különféle típusú felszerelésének (pl. gépek, gyártási felszerelések, járművek) kezelésére és szervizelésére szolgáló összes feladat. Az Eszközkezelés több iparág megoldását támogatja.
 

@@ -9,19 +9,21 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.custom: 260624
+ms.custom:
+- "260624"
+- intro-internal
 ms.assetid: a4f9d315-9951-451c-8ee6-37f9b3b15ef0
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: Version 10.0.7
-ms.openlocfilehash: b680ec227ecd70893999950a8be2ad152c476575
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: 598145bccadbeb44d33adb96388f6af5a8a45f5d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5937012"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352688"
 ---
 # <a name="clienteling-overview"></a>Ügyfélkör áttekintése
 
@@ -68,7 +70,7 @@ Ha be szeretné kapcsolni az Ügyfélkör funkciót, hajtsa végre az alábbi l�
 
 1. A **Funkciókezelés** munkaterületen szűrje a modulokat a **Kiskereskedelem és kereskedelem** modul szerint.
 
-    ![Az Ügyfélkör a Commerce modul szolgáltatásainak listájában](./media/Enable_clienteling.png "Az Ügyfélkör a Kiskereskedelem és kereskedelem modul szolgáltatásainak listájában")
+    ![Az Ügyfélkör a Commerce modul szolgáltatásainak listájában.](./media/Enable_clienteling.png "Az Ügyfélkör a Kiskereskedelem és kereskedelem modul szolgáltatásainak listájában")
 
 2. Kapcsolja be az **Ügyfélkör** funkciót az **Engedélyezés most** lehetőséggel.
 3. A **Kereskedelmi paraméterek** oldal **Számsorozat** lapján válassza ki az **Ügyfélkönyv azonosítója** sort. A **Számsorozat kódja** mezőben válasszon ki egy számsorozatot. A rendszer ezt a számsorozatot fogja használni az ügyfélkönyvekhez tartozó azonosítók hozzárendeléséhez.
@@ -83,7 +85,7 @@ Ha be szeretné kapcsolni az Ügyfélkör funkciót, hajtsa végre az alábbi l�
 
 6. A **Kereskedelmi paraméterek** oldal **ügyfélkör** lapjának **Ügyfélkönyv attribútumcsoportja** mezőjében válassza ki az éppen létrehozott attribútumcsoportot.
 
-    ![Ügyfélkönyv kijelölt attribútumcsoportja](./media/Client%20book%20attributes.png "Ügyfélkönyv kijelölt attribútumcsoportja")
+    ![Ügyfélkönyv kijelölt attribútumcsoportja.](./media/Client%20book%20attributes.png "Ügyfélkönyv kijelölt attribútumcsoportja")
 
 7. Ha rögzíteni szeretné a pénztári tevékenységeket, határozza meg a tevékenységtípusokat a **Tevékenységtípusok** oldalon (**Kiskereskedelem és kereskedelem \> Vevők \> Tevékenységtípusok**).
 
@@ -95,7 +97,7 @@ Ha be szeretné kapcsolni az Ügyfélkör funkciót, hajtsa végre az alábbi l�
 
 Miután elvégezte ezt az eljárást, az értékesítési munkatársak meg tudják nyitni a vevő részleteit tartalmazó lapot a pénztárban, és hozzá tudnak adni vevőket az ügyfélkönyvhöz, megtekinthetik és rögzíthetik a vevőkhöz tartozó tevékenységeket és jegyzeteket, valamint a vevők és az ügyfélkönyv attribútumaival megcélozhatnak vevőket az ügyfélkönyv szűrésére. A következő ábrán az ügyfélkönyv képe látható.
 
-![Példa ügyfélkönyvre](./media/client_book.png "Példa ügyfélkönyvre")
+![Példa ügyfélkönyvre.](./media/client_book.png "Példa ügyfélkönyvre")
 
 ## <a name="turn-on-the-integration-of-customer-insights-with-commerce"></a>A Customer Insights és a Commerce integrációjának bekapcsolása
 

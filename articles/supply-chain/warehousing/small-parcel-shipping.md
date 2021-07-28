@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-08
 ms.dyn365.ops.version: Release 10.0.16
-ms.openlocfilehash: 3e72959d79e9b3b03e061a0f26750e3bd025219e
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: d6b24446a5944eb82334dc5dc1f0b15656f83a12
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5910209"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358026"
 ---
 # <a name="small-parcel-shipping"></a>Kis csomagok szállítása
 
@@ -274,7 +274,7 @@ A szállítmány csomagolásához kövesse az alábbi lépéseket.
 
     A korábban kiválasztott ZPL-nyomtatóra most rá kell nyomtatni a levélcímkét. Az alábbi példához hasonlóan jelenik meg.
 
-    ![Példa levélcímkére](media/sps-label-example.png "Példa levélcímkére")
+    ![Példa levélcímkére.](media/sps-label-example.png "Példa levélcímkére")
 
 1. Figyelje meg, hogy a **Tároló jegyzékfájl-azonosítója** és a **Teljes fuvar** érték hozzá lett adva a címkéhez.
 

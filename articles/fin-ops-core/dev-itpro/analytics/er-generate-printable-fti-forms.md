@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 9e64899e0bbdb5a9d8899e865de9ee32aae59382
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: f5556195a1a787420061fbcaef5d97ac47823221
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751656"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359005"
 ---
 # <a name="generate-printable-fti-forms"></a>Nyomtatható FTI-űrlapok generálása
 
@@ -77,7 +77,7 @@ Az FTI-űrlapok létrehozásához ER keretrendszer használatával ugyanúgy ren
 3. A Számlák feldolgozási körének meghatározásához válasszon dokumentumszintet.
 4. Válassza ki az ER formátumot a megadott dokumentumszinthez.
 
-![Nyomtatáskezelési beállítások](media/FTIbyGER-PMSetting.png)
+![Nyomtatáskezelési beállítások.](media/FTIbyGER-PMSetting.png)
 
 > [!NOTE]
 > Az ER formátumok, melyek a **FreeTextInvoice** gyökérszintű leíróját használják a **CustomersInvoicing** adatmodellnek megjelennek a **Jelentésformátum keresése** mezőt a kijelölt formátumhoz.
@@ -87,9 +87,9 @@ Az FTI-űrlapok az ER keretrendszerben lesznek generálva ugyanúgy, mint az SSR
 
 FTI-űrlapok létrehozására választhat számlákat tartomány alapján vagy kiválasztással. 
 
-![Számlakiválasztás](media/FTIbyGER-InvoiceSelection.png)
+![Számlakiválasztás.](media/FTIbyGER-InvoiceSelection.png)
 
-![Számlaelőnézet](media/FTIbyGER-InvoiceExcelPreview.png)
+![Számlaelőnézet.](media/FTIbyGER-InvoiceExcelPreview.png)
 
 Ha ilyen módon nyomtat FTI-űrlapokat ER formátumok használatával, az alapértelmezett ER fájlcélok használatosak. A cél nem módosítható. Az ER-formátumokhoz tartozó ER-célok beállításával kapcsolatos további tudnivalókat lásd: [Elektronikus jelentéskészítés (ER) céljai](electronic-reporting-destinations.md).
 
@@ -101,9 +101,9 @@ Generálhat FTI-űrlapokat akkor is, ha FTI-t tesz közzé a **Számla nyomtatá
 > - **Név:** ERFormatDestinationRuntimeMaintain
 > - **Címke:** Elektronikus jelentéskészítési formátum céljának karbantartása futásidőben
 
-![Elektronikus jelentéskészítés célja](media/FTIbyGER-ERFileDestinationSetting.png)
+![Elektronikus jelentéskészítés célja.](media/FTIbyGER-ERFileDestinationSetting.png)
 
-![Elektronikus jelentéskészítési formátum célja](media/FTIbyGER-ERFileDestinationUsage.png)
+![Elektronikus jelentéskészítési formátum célja.](media/FTIbyGER-ERFileDestinationUsage.png)
 
 Az ER keretrendszer jelenleg támogatja a következő helyeket a létrehozott dokumentumokhoz:
 
@@ -128,7 +128,7 @@ Minta ER konfigurációkat tölthet le, melyeket sablonként használhat FTI meg
 ### <a name="features-that-are-implemented-in-the-sample-er-format"></a>Minta ER formátumban megvalósított funkciók
 Minta ER formátum konfigurációjában egy Excel-fájl használatos sablonként az FTI űrlapok létrehozásához.
 
-![Formátumtervező](media/FTIbyGER-ERFormat.png)
+![Formátumtervező.](media/FTIbyGER-ERFormat.png)
 
 Ez minta ER formátum jelenleg FTI űrlapok létrehozásához a következő funkciókat támogatja:
 
@@ -179,7 +179,7 @@ A létrehozott számlaképernyőn kívül Zsíróátutalási bizonylatok hozhat�
 - Jogi személyhez, mely Finnországhoz tartozó ország/régió összefüggést használ és van legalább egy bankszámla **Zsírószámlaként** és **Bank vonalkódjaként** van megjelölve. 
 - Egy számla, amely be van jelölve, hogy szükséges a **finn** kapcsolódó fizetési melléklethez.
 
-![Zsíróátutalási bizonylat](media/FTIbyGER-GiroSlip.PNG)
+![Zsíróátutalási bizonylat.](media/FTIbyGER-GiroSlip.PNG)
 
 > [!NOTE]
 > Minta ER formátum konfigurálva lett, hogy opcionálisan generálja a Zsíróalapú átutalási bizonylatokat külön munkalapon.
@@ -194,7 +194,7 @@ A minta ER formátum következő elemeit használja az e-mail célok beállítá
 - A következő ER kifejezés keresztül elérhető az e-mail tárgya: **Emailing.TxtToUse.Subject**.
 - A következő ER kifejezésen keresztül elérhető az e-mail törzse: **Emailing.TxtToUse.Body**.
 
-![Cél beállításai](media/FTIbyGER-ERFileDestinationSettingEmail.png)
+![Cél beállításai.](media/FTIbyGER-ERFileDestinationSettingEmail.png)
 
 Az e-mail tárgyának és törzsének meghatározása a minta ER-formátumban történik. A nyelv a formátum címkéitől függ. Ez az alapértelmezett szöveg lesz használva, ha egy egyéni szervezeti e-mail-sablon lett hozzáadva, amelynek az előre definiált **ERFTITMP** azonosítója nincs hozzáadva .
 
@@ -203,9 +203,9 @@ Az e-mail tárgyának és törzsének meghatározása a minta ER-formátumban t�
 
 Ha a szervezet e-mail-sablont, amelynek az előre definiált **ERFTITMP** azonosító hozzá van adva a jogi személyhez, melyhez feldolgozza a számlát, az e-mail tárgyának és szövegének sablonja lesz használva az e-mail generálásához. 
 
-![Szervezeti e-mail sablonok](media/FTIbyGER-EmailTemplate.png)
+![Szervezeti e-mail-sablonok.](media/FTIbyGER-EmailTemplate.png)
 
-![E-mail sablon feltöltése](media/FTIbyGER-EmailTemplateBody.png)
+![E-mail-sablon feltöltése.](media/FTIbyGER-EmailTemplateBody.png)
 
 Az **Emailing.TxtToUse.Subject** ER kifejezés a minta ER formátumban úgy van beállítva, hogy a(z) %1 helyőrző minden előfordulását lecseréli a feldolgozási számla azonosítójára.
 
@@ -218,7 +218,7 @@ Az **Emailing.TxtToUse.Body** kifejezés a minta formátumban a helyőrzők alá
 - "%5" a vállalat kapcsolattartó személyének beosztására lesz cserélve.
 - "%6" a vállalat kapcsolattartó személyének e-mail-címére lesz cserélve.
 
-![E-mail-cím](media/FTIbyGER-Email.PNG)
+![E-mail-cím.](media/FTIbyGER-Email.PNG)
 
 ## <a name="additional-resources"></a>További erőforrások
 [Elektronikus jelentéskészítés (ER) áttekintése](general-electronic-reporting.md)

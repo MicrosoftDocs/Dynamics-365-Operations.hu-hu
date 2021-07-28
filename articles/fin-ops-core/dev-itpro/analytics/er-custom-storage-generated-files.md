@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: bd979bf5369b6878caaee82fc9c6a40d363cc165
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: c9dfad3615cfe4f9937f0dc30c4684cd14f420c1
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5894148"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348140"
 ---
 # <a name="specify-custom-storage-locations-for-generated-documents"></a>Egyéni tárhelyek meghatározása a létrehozott dokumentumoknak
 
@@ -41,7 +41,7 @@ A témakörben szereplő összes feladat elvégezhető az **USMF** vállalatnál
 
 Az egyéni tárolási helyhez hozzáadására szánt dokumentumok létrehozásához [importálja](er-download-configurations-global-repo.md) a **Tárgyieszköz-meghosszabbítás** ER formátumkonfigurációt az aktuális topológiába.
 
-![Konfigurációk tárháza oldal](./media/er-custom-storage-generated-files-import-format.png)
+![Konfigurációk tárháza oldal.](./media/er-custom-storage-generated-files-import-format.png)
 
 ## <a name="run-the-fixed-asset-roll-forward-report"></a>Jelentés tárgyi eszközök előregörgetéséről futtatása
 
@@ -52,7 +52,7 @@ Az egyéni tárolási helyhez hozzáadására szánt dokumentumok létrehozásá
 5. A **Formátumleképezés** mezőben válassza a **Tárgyi eszköz előregörgetés** lehetőséget.
 6. Válassza ki az **OK** lehetőséget.
 
-![Futásidejű párbeszédpanel a Tárgyi eszköz előregörgetése jelentéshez](./media/er-custom-storage-generated-files-runtime-dialog.png)
+![Futásidejű párbeszédpanel a Tárgyi eszköz előregörgetése jelentéshez.](./media/er-custom-storage-generated-files-runtime-dialog.png)
 
 A Microsoft Excel alkalmazásban tekintse át a létrehozott és letölthető kimenő dokumentumot. Ez a viselkedés az [alapértelmezett viselkedés](electronic-reporting-destinations.md#default-behavior) egy olyan ER-formátumnál, amelyhez nincsenek [célhelyek](electronic-reporting-destinations.md) konfigurálva, és amely interaktív módban fut.
 

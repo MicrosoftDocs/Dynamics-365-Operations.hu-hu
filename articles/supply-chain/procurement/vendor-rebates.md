@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 2012
-ms.openlocfilehash: e56bf86a11eb34679269eae5ca093d7cc379932b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 42c35fcca90b7dc55c8ef2985283d2ce92c4c8bc
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5822467"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344220"
 ---
 # <a name="vendor-rebates"></a>Szállítói visszatérítések
 
@@ -53,7 +53,7 @@ A szállítói visszatérítési megállapodásban egy szállítóval kötött s
 
 A **szállítói visszatérítési megállapodások** oldal megnyitásához válassza a **Beszerzés és forrás** &gt; **Szállítói visszatérítések** &gt; **Visszatérítési megállapodások** elemet.
 
-![Beszerzési szerződés](media/purchase-agreement.PNG)
+![Beszerzési szerződés.](media/purchase-agreement.PNG)
 
 A **Szállítói visszatérítési megállapodások** lapon megtekintheti az adott szállítói szerződés egyeztetett feltételeinek részleteit.
 
@@ -129,7 +129,7 @@ Az igények jóváhagyást követően feldolgozhatók a Kötelezettségek (A/P) 
 
     Egy visszatérítési könyvelési napló feladásra kerül a követelés összegével. Ez a feladás tartozik tételként kerül az Elhatárolt szállítói visszatérítés-követelések számlára a várt szállítói jóváírás alapján és követel tételként az ideiglenes Elhatárolt szállítói visszatérítés-kiegyenlítések számlára a várható nyereséget illetően.
 
-    ![Üzenet](media/message.png)
+    ![Üzenet.](media/message.png)
 
 5. A visszatérítési listában válassza ki a sort, majd ezután a műveleti ablakban válassza a **Visszatérítési tranzakciók** elemet az elhatárolt visszatérítéshez tartozó naplókötegszám megjelenítéséhez és kikereséséhez.
 

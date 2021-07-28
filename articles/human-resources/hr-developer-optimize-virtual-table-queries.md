@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-04-02
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 66fb9f2b50079b5eb4eb16da17b8a473d687d354
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 17316081501ab29aafac476d13947774ecbb61e5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6054908"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346274"
 ---
 # <a name="optimize-dataverse-virtual-table-queries"></a>Virtuális Dataverse-táblák lekérdezéseinek optimalizálása
 
@@ -50,13 +50,13 @@ Ilyen hatás például a dolgozóra (**mshr_hcmworkerentity**) vagy az alap dolg
 - **Lekérdezés időtúllépése**: A lekérdezés időtúllépést okozhat, és a következő hibát adja vissza: „Token beszerezve Finance and Operations meghívására, de Finance and Operations InternalServerError típusú hibát adott vissza.”
 - **Váratlan hiba**: A lekérdezés 400-as hibatípust ad vissza a következő üzenettel: „Váratlan hiba történt.”
 
-  ![400-as hibatípus a HcmWorkerBaseEntity esetében](./media/HcmWorkerBaseEntityErrorType400.png)
+  ![400-as hibatípus a HcmWorkerBaseEntity esetében.](./media/HcmWorkerBaseEntityErrorType400.png)
 
 - **Szabályozás**: A lekérdezés túlhasználhatja a kiszolgáló erőforrásait, és szabályozás tárgya lehet. Ebben az esetben a lekérdezés a következő hibát adja vissza: „Token beszerezve Finance and Operations meghívására, de Finance and Operations 429-es típusú hibát adott vissza.” A Human Resources szabályozásával kapcsolatos további tudnivalókat lásd: [Szabályozás – GYIK](./hr-admin-integration-throttling-faq.md).
 
-  ![429-as hibatípus a HcmWorkerBaseEntity esetében](./media/HcmWorkerBaseEntityErrorType429.png)
+  ![429-as hibatípus a HcmWorkerBaseEntity esetében.](./media/HcmWorkerBaseEntityErrorType429.png)
 
-## <a name="resolution"></a>Felbontás
+## <a name="resolution"></a>Megoldás
 
 ### <a name="limit-the-number-of-columns-included-in-your-data-query"></a>Az adatlekérdezésben szereplő oszlopok számának korlátozása
 
@@ -96,7 +96,7 @@ Ha a Dataverse virtuális táblára irányuló Power BI jelentés készítése s
 2. Az **Adat bekeresése** ablakban írja be: **Common Data Service** a keresőmezőbe, válassza ki a **Common Data Service** csatlakoztatót, majd válassza a **Csatlakozás** lehetőséget.
 3. Az Common Data Service ablakának **Kiszolgáló URL** mezőjében adja meg a Dataverse környezethez tartozó szervezeti URI-t, és válassza az **OK** gombot.
   
-   ![Adja meg az URI-nevét a Dataverse környezetnek](./media/PowerBIDataverseURLSetup.png)
+   ![Adja meg a Dataverse környezet URI-ját.](./media/PowerBIDataverseURLSetup.png)
   
 4. Bontsa ki az **Entitások** csomópontot a navigátor ablakban.
 5. A keresési mezőbe írja be: **mshr_hcmworkerbaseentity**, majd válassza ki az entitást.
@@ -113,7 +113,7 @@ Ha a Dataverse virtuális táblára irányuló Power BI jelentés készítése s
    in
      selectedWorkerBaseEntityColumns
    ```
-   ![A lekérdezés frissítése a Power Query Editor speciális szerkesztőjével](./media/HcmWorkerBaseEntityPowerQueryEditor.png)
+   ![A lekérdezés frissítése a Power Query Editor speciális szerkesztőjével.](./media/HcmWorkerBaseEntityPowerQueryEditor.png)
 
 9. Válassza a **Kész** lehetőséget.
 
@@ -138,7 +138,7 @@ Ha például az alkalmazás egy lapján található egyik adatmező másik tábl
 
 A [Power Apps monitor](/powerapps/maker/monitor-overview) segítségével gondoskodhat arról, hogy a lekérdezésben csak a szükséges oszlopok szerepeljenek az adatok Power Appból történő lekéréséhez. A getRows művelethez létrehozott URL-t megtekintheti annak a biztosításához, hogy az alkalmazáshoz kiválasztott oszlopok optimálisak legyenek az adatok beolvasásához.
 
-![A getData művelet elemzéséhez használja a Power Apps monitort.](./media/HcmWorkerBaseEntityPowerAppsMonitor.png)
+![A getData művelet elemzéséhez használja a Power Apps Monitort.](./media/HcmWorkerBaseEntityPowerAppsMonitor.png)
 
 ### <a name="filtering-the-data-query"></a>Az adatlekérdezés szűrése
 

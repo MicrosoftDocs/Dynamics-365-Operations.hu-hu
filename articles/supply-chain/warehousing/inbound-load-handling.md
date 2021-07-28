@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 0c1e6a9490fba0becb4840cbec9d04c22d482511
-ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
+ms.openlocfilehash: e0b0eb1466d962fb04566b936322db1e4c28f830
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "6103168"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359787"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>Beszerzési rendelések bejövő rakományának kezelése a raktárban
 
@@ -30,7 +30,7 @@ Minden bejövő rakományhoz a rendszernek már tartalmaznia kell egy kapcsolód
 
 A következő ábra a beszerzésirendelési-mennyiséggel rendelkező bejövő rakományok kezelésének jellemző folyamatát mutatja, amikor azok a raktárba érkeznek.
 
-![A bejövő rakományok kezelési folyamata](media/inbound-process.png "A bejövő rakományok kezelési folyamata")
+![A bejövő rakományok kezelési folyamata.](media/inbound-process.png "A bejövő rakományok kezelési folyamata")
 
 1. **A szállító megerősíti a beszerzési rendelést.**
 
@@ -293,7 +293,7 @@ Ebben a szakaszban egy mobileszköz menüelemet hoz létre, és hozzáadja azt e
 
     Az összes többi beállítást az alapértelmezett értéken hagyhatja.
 
-    ![Mobileszköz menüelem-beállításai](media/inbound-mobile-menu-items.png "Mobileszköz menüelem-beállításai")
+    ![Mobileszköz menüelem-beállításai.](media/inbound-mobile-menu-items.png "Mobileszköz menüelem-beállításai")
 
     A mobileszköz-menüelemek beállításával kapcsolatos további tudnivalókat lásd: [Mobileszközök beállítása raktári munkához](configure-mobile-devices-warehouse.md).
 
@@ -328,7 +328,7 @@ Ebben az eljárásban manuálisan létrehoz egy beszerzési rendelést és egy k
     - A **Rakomány** gyorslapon a **Rakomány állapota** mező _Nyitott_ értékre van állítva.
     - A **Rakománysorok** szakaszban egyetlen olyan sor van, amelyben a **Mennyiség** mező értéke _10_, és a **Munka létrehozva mennyiség** mező értéke _0_ (nulla).
 
-    ![Rakomány részletei](media/inbound-load-details.png "Rakomány részletei")
+    ![Rakomány részletei.](media/inbound-load-details.png "Rakomány részletei")
 
 1. A műveleti ablaktábla **Szállítás és fogadás** lapján válassz a **Megerősítés \> Bejövő szállítmány** lehetőséget. Figyelje meg, hogy a **Rakomány állapota** _Szállított_ értékre változott.
 1. Jegyezze fel a **Rakományazonosító** értékét, hogy a következő eljárásban használhassa.

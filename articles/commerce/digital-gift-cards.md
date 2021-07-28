@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 212f425dc3603f838ce030d9ed86f2e418bef29a
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 6c4cf4e94e6271843d55b4ca7a0fb3ffaffc9542
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019933"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344395"
 ---
 # <a name="e-commerce-digital-gift-cards"></a>E-kereskedelmi digitális ajándékutalványok
 
@@ -34,13 +34,13 @@ A digitális ajándékutalványok vásárlása a Dynamics 365 Commerce 10.0.16-o
 
 A következő ábra példaként mutatja be egy digitális ajándékutalvány esetében a termék részleteit tartalmazó oldalt (PDP) a Fabrikam e-kereskedelmi webhelyén.
 
-![Példa digitális ajándékutalvány termék részleteit tartalmazó oldalára a Fabrikam e-kereskedelmi webhelyén](./media/GiftcardPDP.PNG)
+![Példa digitális ajándékutalvány termék részleteit tartalmazó oldalára a Fabrikam e-kereskedelmi webhelyén.](./media/GiftcardPDP.PNG)
 
 ## <a name="turn-on-the-digital-gift-card-feature-in-commerce-headquarters"></a>A digitális ajándékutalvány funkció bekapcsolása a Commerce központi felületén
 
 Ahhoz, hogy a digitális ajándékutalványok beszerzési folyamata működjön a Dynamics 365 Commerce rendszerben, a Commerce központi felületén be kell kapcsolni az **Ajándékutalvány vásárlása az e-kereskedelem funkción** nevű funkciót. A funkciót a **Funkciókezelés** munkaterületen találja meg a Commerce központi felületén.
 
-![Funkciókezelés munkaterület a Commerce központi felületén](./media/Featureflag.PNG)
+![Funkciókezelés munkaterület a Commerce központi felületén.](./media/Featureflag.PNG)
 
 ## <a name="configure-a-digital-gift-card-in-commerce-headquarters"></a>Digitális ajándékutalvány konfigurálása a Commerce központi felületén
 
@@ -49,16 +49,16 @@ A digitális ajándékutalvány típusú termékeket a Commerce központi felül
 - Amikor a digitális ajándékutalványokat konfigurál az **Új termék** párbeszédpanelben, állítsa a **Terméktípus** mezőt **Szolgáltatás** beállításra. (A párbeszédpanel megnyitásához nyissa meg a következőt: **Kiskereskedelem és kereskedelem \> Termékek és kategóriák \> Termékek kategória szerint**, és válassza az **Új** lehetőséget.) A **Szolgáltatás** típusú termékek esetében a rendszer nem ellenőrzi az elérhető készletet a rendelés leadása előtt. További információ: [Új termék létrehozása](create-new-product-commerce.md#create-a-new-product).
 - A **Commerce paraméterek** oldal **Feladás** lapján az **Ajándékutalvány-termék** mezőt **Digitális ajándékutalvány** értékre kell állítani – ezt az alábbi ábra mutatja. Ha a termék külső ajándékutalvány, a további tudnivalókat lásd a [Támogatás külső ajándékutalványokhoz](./dev-itpro/gift-card.md) oldalon.
 
-    ![Ajándékutalvány-termék mező a Commerce központi felületén](./media/PostGiftcard.png)
+    ![Ajándékutalvány-termék mező a Commerce központi felületén.](./media/PostGiftcard.png)
 
 - Ha az ajándékutalványnak több előre definiált összeget (például $25, $50, vagy $100) kell támogatnia, akkor az előre megadott összegek beállításához a **Méret** dimenziót kell használni. Minden előre definiált összeg egy variáns lesz. További információ: [Termékdimenziók](../supply-chain/pim/product-dimensions.md?toc=%2fdynamics365%2fretail%2ftoc.json).
 - Ha az ügyfélnek képesnek kell lennie arra, hogy egyéni összeget adjon meg egy ajándékutalványhoz, először állítson be egy olyan variánst, amely lehetővé teszi az egyéni összeg megadását. Ezután nyissa meg a terméket a **Kiadott termékek ebben a kategóriában** oldalon, majd a **Commerce** gyorslapon állítsa az **Ár beírása billentyűvel** mezőt **Be kell írni az új árat** mezőjére – ezt az alábbi ábra mutatja. Ez a beállítás gondoskodik arról, hogy a vevők megadjanak egy árat, amikor PDP-n böngészik a terméket.
 
-    ![Ár beírása billentyűvel a Commerce központi felületén](./media/KeyInPrice.png)
+    ![Ár beírása billentyűvel a Commerce központi felületén.](./media/KeyInPrice.png)
 
 - A digitális ajándékutalványok szállítási módját **Elektronikus** beállításra kell állítani. A **Szállítási módok** oldalon (**Kiskereskedelem és kereskedelem \> Csatorna beállítása \> Szállítási módok**) a listaablakban válassza ki az **Elektronikus** szállítási mód beállítást, majd adja hozzá a digitális ajándékutalvány-terméket a **Termékek** gyorslap rácsához, amint azt az alábbi ábra mutatja. További információkért lásd: [Szállítási módok beállítása](/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
 
-    ![Digitális ajándékutalvány-termékek a Commerce központi felületének Szállítási mód oldalán](./media/ElectronicMode.PNG)
+    ![Digitális ajándékutalvány-termékek a Commerce központi felületének Szállítási mód oldalán.](./media/ElectronicMode.PNG)
 
 - Győződjön meg arról, hogy létrehozott egy online funkcióprofilt, és az társítva van a Commerce központi felületén lévő online áruházához. A funkcióprofilban állítsa a **Termékek összesítése** lehetőséget **Igen** beállításra. Ez a beállítás gondoskodik arról, hogy az ajándékutalványok kivételével minden cikket összesítsen a rendszer. További tájékoztatás: [Online funkcióprofil létrehozása](online-functionality-profile.md).
 - Annak érdekében, hogy az ajándékutalvány kiszámlázása után a vevők e-mailt kapjanak, hozzon létre egy új e-mailes értesítési típust az **E-mailes értesítési profilok** oldalon, és állítsa az **E-mailes értesítés típusa** mezőt **Ajándékutalvány kiállítása** értékre. További információt az [E-mailes értékesítési profil beállítása](email-notification-profiles.md) című témakörben talál.

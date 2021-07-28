@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-02-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: ace62319bbfa38bcf4be7157882dd0c8989e25bc
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 530cb77ccbca1b6946b5a96cee4e6226ed3467e9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838745"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6361258"
 ---
 # <a name="share-electronic-reporting-er-configurations-in-regulatory-configuration-services-rcs-global-repository-with-external-organizations"></a>A Regulatory Configuration Services (RCS) globális tár elektronikus jelentéskészítési (ER) konfigurációinak megosztása külső szervezetekkel.
 
@@ -47,7 +47,7 @@ Hajtsa végre az alábbi lépéseket, és győződjön meg arról, hogy a megosz
 
 1. Az **Elektronikus jelentés** munkaterületen válassza ki a **Tárak** lehetőséget a konfigurációszolgáltatój esetében.
 
-    ![Konfigurációszolgáltatók](media/1_RCS_Repo_for_config_provider.JPG)
+    ![Konfigurációszolgáltatók.](media/1_RCS_Repo_for_config_provider.JPG)
 
 2. Válassza ki a **Globális tár** \> **Megnyitás** lehetőséget.
 3. Keresse meg a megosztani kívánt konfigurációt. A szűrő mező segítségével tovább szűkítheti a keresés eredményeit. Ha nem találja a konfigurációt a globális tárban, hajtsa végre az [Elektronikus jelentéskészítési (ER) konfiguráció új verziójának létrehozása és feltöltése](rcs-global-repo-upload.md) rész lépéseit.
@@ -61,11 +61,11 @@ Miután létrehozta a konfigurációt a konfigurációszolgáltatója alatt, a *
 3. Válassza ki a megosztani kívánt konfigurációt.
 4. Az **Megosztva a következővel:** gyorslapon válassza a **Szervezet** lehetőséget.
 
-    ![Megosztás gyorslappal](media/1_RCS_Repo_for_Share_with_org.JPG)
+    ![Megosztás gyorslappal.](media/1_RCS_Repo_for_Share_with_org.JPG)
 
 5. A párbeszédpanelen írja be a külső szervezet domainnevét, majd kattintson az **OK** gombra.
 
-    ![Mentse a konfiguráció verzióját a külső szervezet párbeszédpanellel](media/1_RCS_Repo_for_Share_with_form.JPG)
+    ![Mentse a konfiguráció verzióját a külső szervezet párbeszédpanellel.](media/1_RCS_Repo_for_Share_with_form.JPG)
 
 A konfiguráció megosztásra kerül a külső szervezettel, és a szervezet számára elérhető a globális tárban. Innen importálható a szervezet RCS-példányába vagy Finance and Operations alkalmazásainak példányaiba.
 

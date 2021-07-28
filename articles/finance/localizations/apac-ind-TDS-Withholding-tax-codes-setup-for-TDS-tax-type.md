@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: d56a23f7af7633e1761a8a7c48f71381d6f14df2
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 57de382c6d363a6c1d87cf734e9aedb32d6009a9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023310"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349928"
 ---
 # <a name="set-up-withholding-tax-codes-for-the-tds-tax-type"></a>Adóelőlegkódok beállítása a TDS adótípusokhoz
 
@@ -31,7 +31,7 @@ Ez a témakör elmagyarázza, hogyan kell adókódokat beállítani a forrásná
 
 1. Ugorjon az **Adó \> Közvetett adók \> Adóelőleg \> Adóelőlegkódok elemre**.
 
-    [![Adóelőlegkódok oldal](./media/apac-ind-TDS-17.png)](./media/apac-ind-TDS-17.png)
+    [![Adóelőlegkódok oldal.](./media/apac-ind-TDS-17.png)](./media/apac-ind-TDS-17.png)
 
 2. A Műveletablakban válassza az **Új** lehetőséget a TDS adóelőlegkód létrehozásához, és adja meg a szükséges adatokat.
 3. Az **Általános** gyorslapon mezőben az **Adótípusa** mezőben válassza a **TDS** lehetőséget az adókód TDS adókódként való kategorizálásához.

@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 0eb1f112430005945b4f82b99ef9cc718c56de65
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 0ff85acfbe16fc28afb2fbcee0baf4b12b1f3e9e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6022707"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353060"
 ---
 # <a name="omni-channel-advanced-auto-charges"></a>Többcsatornás speciális automatikus költségek
 
@@ -43,7 +43,7 @@ A speciális automatikus költségek funkcióval a POS-felhasználó számítás
 
 A **Retail és Commerce \> Központ beállítása \> Paraméterek \> Commerce paraméterek** oldalon lépjen a **Vevői rendelések** lapra. A **Költségek** gyorslapon állítsa a **Speciális automatikus költségek használata** beállítást **Igen** értékre.
 
-![Speciális automatikus költségek paraméter](media/advancedchargesparameter.png)
+![Speciális automatikus költségek paraméter.](media/advancedchargesparameter.png)
 
 Ha a speciális automatikus költségek engedélyezve vannak, a felhasználókat már nem szólítja fel a rendszer, hogy manuálisan adja meg a POS terminálon a szállítási költséget összes szállítása vagy kiválasztottak szállítása típusú vevői rendelés létrehozásakor. A pénztár rendelési költségeket a rendszer szisztematikusan kiszámítja és hozzáadja a pénztártranzakcióhoz (ha megtalálható a megfelelő automatikus költségek tábla, amely megfelel a létrehozott rendelés feltételének). A felhasználók hozzáadhatnak vagy karbantarthatnak fejléc- vagy sorszintű költségeket manuálisan az újonnan hozzáadott pénztárműveleteken keresztül, amelyeket hozzá lehet adni a pénztár képernyő-elrendezésekhez.
 
@@ -86,7 +86,7 @@ Két különböző fejléc szintű automatikus költséget konfiguráljon. Áll�
 
 A földi szállítási költségekhez az **Automatikus költségek** oldal sorokat tartalmazó szakaszában határozza meg a költséget 10 USD-nak, amelyeket a 0,01 és 100 dollár közti rendelésekhez alkalmaz. Hozzon létre egy másik költségek sort, ahol jelzi, hogy a 100,01 USD feletti rendeléseknek nincs költsége.
 
-![Példa két automatikus költség táblára](media/headerchargesexample.png)
+![Példa két automatikus költség táblára.](media/headerchargesexample.png)
 
 A légi szállítási költségekhez az Automatikus költségek képernyő sorokat tartalmazó szakaszában határozza meg a költséget 20 USD-nak, amelyeket mindent rendeléshez alkalmaz (0,01 és 9 999 999 USD közti érték esetén).
 
@@ -116,7 +116,7 @@ Ugorjon a **Kinnlevőségek \> Költségek beállítása \> Automatikus költsé
 
 Állítsa a **Szint** legördülő menüt **Sor** értékre, és hozzon létre egy új automatikus költségek rekordot az összes vevőre és az adott termékre vagy termékcsoportra vonatkozóan, ahol a beállítási díjakat kell fizetnie.
 
-![Példa egy sor szintű automatikus költség táblára](media/linechargesexample.png)
+![Példa egy sor szintű automatikus költség táblára.](media/linechargesexample.png)
 
 Küldje el a díjakat a Commerce Scale Unit/csatorna-adatbázishoz, hogy a pénztár használhassa őket a **1040 elosztási ütemezés** feladat futtatásával.
 
@@ -136,7 +136,7 @@ A kiskereskedő kivételt tett a jellemző folyamatokban, amikor termékek speci
 
 Győződjön meg róla, hogy az ebben az esetben használandó költségkód megfelelően van beállítva: nyissa meg a **Kinnlevőségek \> Költségek beállítása \> Költségek** lapot az esethez megfelelő költségkód meghatározásához.
 
-![Költségek példa](media/chargesexample.png)
+![Költségek példa.](media/chargesexample.png)
 
 Ha a költséget „szállításhoz” kapcsolódó költségként kell figyelembe venni, szállítási engedmény vagy promóció céljából, a költségkód **Szállítási költség** beállítását állítsa **Igen** értékre. Ha ezt a költséget jogosult a pénztáralkalmazásban a rendszer egy visszáru-tranzakció feldolgozása során szisztematikusan visszatéríteni, állítsa a **Visszatéríthető** beállítást **Igen** értékre. A **Visszatéríthető** jelző csak akkor alkalmazható, amikor a **Speciális automatikus költségek használata** paraméter értéke **Igen**.
 

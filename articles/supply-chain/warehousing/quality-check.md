@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 60d566e3ef1fa4bc0cea960f7c75094f51823550
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 4ff6b8495f3ef0d75ffc8f829a9f332f507789d0
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838226"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358050"
 ---
 # <a name="quality-check"></a>Minőség-ellenőrzés
 
@@ -310,7 +310,7 @@ A beszerzési rendelés létrehozása után a program a **Beszerzési rendelési
 
     A megjelenő **Minőségellenőrzés** lap nem tartalmaz bejegyzési mezőket. Csak a megerősítés (pipa) gombot alul, és a Menü gombot (**≡**) felül. (A Menü gombot néha hamburgernek vagy a hamburger gombnak is nevezik.) A minőségellenőrzési folyamat meggyorsításához – amikor a raklap átmegy a minőségellenőrzésen – a felhasználónak csak meg kell erősítenie a **Minőségellenőrzés** lapot.
 
-    ![Minőségellenőrzés lap](media/quality-check.png "Minőségellenőrzés lap")
+    ![Minőségellenőrzés lap.](media/quality-check.png "Minőségellenőrzés lap")
 
 1. Válassza ki a megerősítés gombot, ha az 1. sorban lévő 1. raklap átment a minőségellenőrzésen.
 

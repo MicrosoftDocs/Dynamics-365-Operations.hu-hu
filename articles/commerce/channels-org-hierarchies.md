@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 4238d1aa277bf2f1df30825ef20dbf3095d13ebc
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: f6e791ffd15128d2076340515a08b5ea6be70dae
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5800567"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346008"
 ---
 # <a name="set-up-organization-hierarchies"></a>Szervezeti hierarchiák létrehozása
 
@@ -54,7 +54,7 @@ A szervezeti hierarchia létrehozásához kövesse az alábbi lépéseket.
 
 A következő kép egy fiktív "Adventure Works" üzletcsoport számára létrehozott példa szervezeti hierarchiát mutat be.
 
-![Szervezeti hierarchia - példa](media/organizational-hierarchies.png)
+![Szervezeti hierarchia – példa.](media/organizational-hierarchies.png)
 
 ### <a name="add-organizations-to-a-hierarchy"></a>Szervezetek felvétele a hierarchiába
 
@@ -67,7 +67,7 @@ A szervezetek hierarchiához való hozzáadásához kövesse az alábbi lépése
 
 A következő kép azt jeleníti meg, hogy milyen jogi személy van hozzáadva a hierarchia gyökerében, négy költséghely hozzáadásával a "Áruház", "Kifutó", "online" és a "Hívásközpont" csatornákhoz. Ezután a különböző kiskereskedelmi, hívásközponti és online csatornák mindegyikhez hozzáadhatók.
 
-![Hierarchiatervező - példa](media/hierarchy-designer.png)
+![Hierarchiatervező – példa.](media/hierarchy-designer.png)
 
 ## <a name="additional-resources"></a>További erőforrások
 

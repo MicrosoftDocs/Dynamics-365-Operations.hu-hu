@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 59277323e0995f59d3a451395a038fa3708274eb
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: 85ca468fe6c440fb333b4c32f59f1d41eb89f4e6
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5936830"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346828"
 ---
 # <a name="add-support-for-a-content-delivery-network-cdn"></a>Tartalomkézbesítési hálózat (CDN) támogatásának hozzáadása
 
@@ -74,11 +74,11 @@ Kövesse az alábbi lépéseket háttérkészlet konfigurálásához az Azure Fr
 
 A következő ábra a **Háttéralkalmazás hozzáadása** párbeszédpanelt mutatja az Azure Front Door Service szolgáltatásban a megadott háttéralkalmazás állomásnevét.
 
-![Háttérkészlet hozzáadása párbeszédpanel](./media/CDN_BackendPool.png)
+![Háttérkészlet hozzáadása párbeszédpanel.](./media/CDN_BackendPool.png)
 
 A következő ábra a **Háttérkészlet hozzáadása** párbeszédpanelt mutatja az Azure Front Door Service szolgáltatásban az alapértelmezett terheléselosztási értékeket.
 
-![Háttérkészlet párbeszédpanel hozzáadása folytatva](./media/CDN_BackendPool_2.png)
+![Háttérkészlet párbeszédpanel hozzáadása folytatva.](./media/CDN_BackendPool_2.png)
 
 > [!NOTE]
 > Győződjön meg róla, hogy letiltja az **Állapotellenőrzések** funkciót a saját Azure Front Door Service beállításakor a Commerce számára.
@@ -107,13 +107,13 @@ Ha a tartománya új, és nem egy korábban létező élő tartomány, akkor a s
 
 A következő ábra a **CNAME konfigurálása** párbeszédpanelt mutatja az Azure Front Door Service szolgáltatásban.
 
-![CNAME konfiguráció párbeszédpanel](./media/CNAME_Configuration.png)
+![CNAME-konfiguráció párbeszédpanel.](./media/CNAME_Configuration.png)
 
 A tanúsítványt kezelheti az Azure Front Door Service szolgáltatásával, vagy használhatja az egyéni tartományhoz tartozó saját tanúsítványát.
 
 A következő ábra az **Egyéni tartomány HTTPS** párbeszédpanelt mutatja az Azure Front Door Service szolgáltatásban.
 
-![Egyéni tartomány HTTPS párbeszédpanel](./media/Custom_Domain_HTTPS.png)
+![Egyéni tartomány HTTPS párbeszédpanel.](./media/Custom_Domain_HTTPS.png)
 
 Az Azure Front Doorhoz való egyéni tartományok hozzáadásával kapcsolatos további információkat lásd az [Egyéni tartomány hozzáadása a Front Doorhoz](/azure/frontdoor/front-door-custom-domain) menüpontot.
 
